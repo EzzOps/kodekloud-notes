@@ -32,9 +32,7 @@ Centralized management is provided through a unified console that simplifies the
 
 Azure Endpoint Protection seamlessly integrates with Microsoft Defender for Cloud (formerly Azure Security Center) to deliver comprehensive security insights. This integration not only quarantines malicious files but also updates threat intelligence to help prevent similar attacks. For instance, if a vulnerability is discovered and exploited, real-time updates facilitate prompt protective measures.
 
-<Callout icon="lightbulb">
-  For enhanced protection, always ensure that your Azure environment is integrated with Microsoft Defender for Cloud to benefit from its advanced threat detection and response capabilities.
-</Callout>
+> **lightbulb** For enhanced protection, always ensure that your Azure environment is integrated with Microsoft Defender for Cloud to benefit from its advanced threat detection and response capabilities.
 
 ## Enabling Endpoint Protection in the Azure Portal
 
@@ -52,31 +50,23 @@ Within the Azure portal, you will see various endpoint protection extensions. Op
 
 During deployment, the extension is installed on your virtual machine, providing immediate real-time protection and initiating regular scans.
 
-<Frame>
-  ![The image shows a configuration page for the Microsoft Antimalware Extension in the Microsoft Azure portal, where users can set exclusions, enable real-time protection, and schedule scans.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881877/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-endpoint-protection/microsoft-antimalware-azure-configuration.jpg)
-</Frame>
+![The image shows a configuration page for the Microsoft Antimalware Extension in the Microsoft Azure portal, where users can set exclusions, enable real-time protection, and schedule scans.](https://kodekloud.com/kk-media/image/upload/v1752881877/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-endpoint-protection/microsoft-antimalware-azure-configuration.jpg)
 
 After deployment, you can monitor the installation progress:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page where a deployment named "microsoft.antimalware-windows-20231002122528" is in progress. It includes details such as the subscription, resource group, and deployment status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881879/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-endpoint-protection/azure-portal-deployment-progress.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page where a deployment named "microsoft.antimalware-windows-20231002122528" is in progress. It includes details such as the subscription, resource group, and deployment status.](https://kodekloud.com/kk-media/image/upload/v1752881879/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-endpoint-protection/azure-portal-deployment-progress.jpg)
 
 ### Monitoring Endpoint Protection with Microsoft Defender for Cloud
 
 Microsoft Defender for Cloud continuously analyzes your environment and provides actionable recommendations for endpoint protection. To view these insights, navigate to the "Recommendations" section and search for "endpoint" to identify any endpoints missing the necessary protection.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying security recommendations from Microsoft Defender for Cloud. It includes active recommendations categorized by severity and resource health status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881880/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-endpoint-protection/azure-portal-security-recommendations.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying security recommendations from Microsoft Defender for Cloud. It includes active recommendations categorized by severity and resource health status.](https://kodekloud.com/kk-media/image/upload/v1752881880/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-endpoint-protection/azure-portal-security-recommendations.jpg)
 
 ### Verifying Deployment on a Windows Machine
 
 Return to your virtual machine's "Extensions and Applications" section to confirm that the IaaS Anti-malware extension has been successfully installed and is active.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying the "Extensions + applications" section for a virtual machine named "win-demo," with an extension called "IaaSAntimalware" listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881881/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-endpoint-protection/azure-portal-extensions-win-demo.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying the "Extensions + applications" section for a virtual machine named "win-demo," with an extension called "IaaSAntimalware" listed.](https://kodekloud.com/kk-media/image/upload/v1752881881/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-endpoint-protection/azure-portal-extensions-win-demo.jpg)
 
 ### Third-Party Solutions for Linux Machines
 
@@ -97,6 +87,4 @@ Next, we will explore strategies for managing privileged access devices. In the 
 
 For more information on securing your cloud environment, visit [Microsoft Defender for Cloud Documentation](https://learn.microsoft.com/en-us/azure/defender-for-cloud/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d8d70777-3d80-4e41-803e-0929352de5e7/lesson/093c855d-a37e-4f15-b41f-717f8246bb7a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d8d70777-3d80-4e41-803e-0929352de5e7/lesson/093c855d-a37e-4f15-b41f-717f8246bb7a)

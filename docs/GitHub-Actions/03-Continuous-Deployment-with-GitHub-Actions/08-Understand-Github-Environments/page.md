@@ -33,22 +33,18 @@ curl http://dev.my-app.example.com/health
 
 A `200 OK` response confirms that the application is operating correctly in the development cluster.
 
-<Callout icon="lightbulb">
-  Ensure your Kubernetes context is set to the development cluster:
+> **lightbulb** Ensure your Kubernetes context is set to the development cluster:
 
   ```bash theme={null}
   kubectl config use-context dev-cluster
   ```
-</Callout>
 
 ## Manual Approval Gate
 
 Before proceeding to production, implement a manual approval step in your CI/CD workflow. This prevents unintentional releases.
 
-<Callout icon="triangle-alert">
-  An administrator must review the integration test results and approve the release.\
+> **triangle-alert** An administrator must review the integration test results and approve the release.\
   Skipping this step can lead to unverified changes reaching production.
-</Callout>
 
 ## Production Deployment
 
@@ -81,9 +77,7 @@ In the next lesson, we’ll cover Kubernetes fundamentals in depth and build aut
 * [Docker Hub](https://hub.docker.com/)
 * [CI/CD Best Practices](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/github-actions/module/92928734-1d5a-462d-9414-2d3865f5ef79/lesson/fa0d124d-feb8-48a0-b10e-0cf45d876932" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/github-actions/module/92928734-1d5a-462d-9414-2d3865f5ef79/lesson/fa0d124d-feb8-48a0-b10e-0cf45d876932)
 
 
 # Understand Github Environments
@@ -113,13 +107,9 @@ GitHub Actions supports two levels of secret storage:
 
 By keeping sensitive information—like API keys or database passwords—out of your workflow files, you centralize secret management and reduce the risk of accidental disclosure.
 
-<Frame>
-  ![The image shows two sections labeled "Repository secrets" and "Environment secrets," each containing entries for passwords like "DOCKER\_PASSWORD" and "DATABASE\_PASSWORD" associated with different environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876462/notes-assets/images/GitHub-Actions-Understand-Github-Environments/repository-secrets-environment-secrets-passwords.jpg)
-</Frame>
+![The image shows two sections labeled "Repository secrets" and "Environment secrets," each containing entries for passwords like "DOCKER\_PASSWORD" and "DATABASE\_PASSWORD" associated with different environments.](https://kodekloud.com/kk-media/image/upload/v1752876462/notes-assets/images/GitHub-Actions-Understand-Github-Environments/repository-secrets-environment-secrets-passwords.jpg)
 
-<Callout icon="lightbulb">
-  Environment secrets override repository secrets when they share the same name. Plan your naming conventions and access levels accordingly.
-</Callout>
+> **lightbulb** Environment secrets override repository secrets when they share the same name. Plan your naming conventions and access levels accordingly.
 
 ### Repository vs. Environment Secrets
 
@@ -130,9 +120,7 @@ By keeping sensitive information—like API keys or database passwords—out of 
 | Accessibility | Available to all jobs in a workflow   | Only available to jobs that reference that environment |
 | Precedence    | Lower if an environment secret exists | Overrides repository secrets when names collide        |
 
-<Frame>
-  ![The image is a comparison chart between "Repository Secrets" and "Environment Secrets," highlighting features and their corresponding levels of access and visibility. It includes icons and numbered labels for each feature.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876463/notes-assets/images/GitHub-Actions-Understand-Github-Environments/repository-secrets-vs-environment-secrets-chart.jpg)
-</Frame>
+![The image is a comparison chart between "Repository Secrets" and "Environment Secrets," highlighting features and their corresponding levels of access and visibility. It includes icons and numbered labels for each feature.](https://kodekloud.com/kk-media/image/upload/v1752876463/notes-assets/images/GitHub-Actions-Understand-Github-Environments/repository-secrets-vs-environment-secrets-chart.jpg)
 
 ## Referencing an Environment in Your Workflow
 
@@ -161,9 +149,7 @@ Environments in GitHub Actions let you enforce rules before workflows proceed. Y
 2. Select **Environments**, then choose or create an environment.
 3. Under **Deployment protection rules**, add your constraints.
 
-<Frame>
-  ![The image shows a configuration screen for "Deployment Protection Rules" in a software environment, detailing options for required reviewers and a wait timer. It includes fields to add reviewers and set a wait time before deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876464/notes-assets/images/GitHub-Actions-Understand-Github-Environments/deployment-protection-rules-configuration.jpg)
-</Frame>
+![The image shows a configuration screen for "Deployment Protection Rules" in a software environment, detailing options for required reviewers and a wait timer. It includes fields to add reviewers and set a wait time before deployment.](https://kodekloud.com/kk-media/image/upload/v1752876464/notes-assets/images/GitHub-Actions-Understand-Github-Environments/deployment-protection-rules-configuration.jpg)
 
 ### Common Rule Types
 
@@ -179,13 +165,9 @@ When a workflow references an environment with protection rules, it will:
 2. Enforce any **wait timer** before continuing.
 3. Check that the workflow branch meets **branch restrictions**.
 
-<Frame>
-  ![The image shows a diagram of "Deployment Protection Rules" with sections for restricting deployment branches and setting deployment protection rules, including events and environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876465/notes-assets/images/GitHub-Actions-Understand-Github-Environments/deployment-protection-rules-diagram.jpg)
-</Frame>
+![The image shows a diagram of "Deployment Protection Rules" with sections for restricting deployment branches and setting deployment protection rules, including events and environments.](https://kodekloud.com/kk-media/image/upload/v1752876465/notes-assets/images/GitHub-Actions-Understand-Github-Environments/deployment-protection-rules-diagram.jpg)
 
-<Callout icon="triangle-alert">
-  Over-privileged environments or weak approval policies can expose production data. Review access controls regularly and follow the principle of least privilege.
-</Callout>
+> **triangle-alert** Over-privileged environments or weak approval policies can expose production data. Review access controls regularly and follow the principle of least privilege.
 
 ***
 
@@ -197,6 +179,4 @@ By structuring your CI/CD pipeline with GitHub Environments, you gain fine-grain
 * [Managing secrets in GitHub](https://docs.github.com/actions/security-guides/encrypted-secrets)
 * [GitHub Actions documentation](https://docs.github.com/actions)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/github-actions/module/92928734-1d5a-462d-9414-2d3865f5ef79/lesson/02ef7603-94d0-4be3-97f1-86ae2c14ac83" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/github-actions/module/92928734-1d5a-462d-9414-2d3865f5ef79/lesson/02ef7603-94d0-4be3-97f1-86ae2c14ac83)

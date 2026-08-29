@@ -6,9 +6,7 @@ This article explores verifying arithmetic operations functionality using automa
 
 In this article, we explore how to verify the functionality of arithmetic operations using automated tests. We demonstrate testing a simple add function first and then expand our coverage to include subtract, multiply, and divide functions. This guide will walk you through setting up tests, interpreting pytest outputs, and troubleshooting common issues.
 
-<Callout icon="lightbulb">
-  Automated tests help ensure code reliability and quickly catch regressions or bugs introduced during development.
-</Callout>
+> **lightbulb** Automated tests help ensure code reliability and quickly catch regressions or bugs introduced during development.
 
 ## Arithmetic Functions Overview
 
@@ -98,9 +96,7 @@ tests/test_calculations.py ...                                            [100%]
 4 passed in 0.07s
 ```
 
-<Callout icon="lightbulb">
-  If you are new to pytest, consider referring to the [pytest documentation](https://docs.pytest.org/en/stable/) for more detailed guidance and best practices.
-</Callout>
+> **lightbulb** If you are new to pytest, consider referring to the [pytest documentation](https://docs.pytest.org/en/stable/) for more detailed guidance and best practices.
 
 ## Introducing a Bug and Catching It with Tests
 
@@ -123,14 +119,10 @@ FAILED tests/test_calculations.py::test_add - assert 9 == 8
 
 This output clearly flags the error, allowing developers to promptly locate and fix the issue.
 
-<Callout icon="triangle-alert">
-  Always run your test suite after making changes to critical functions. Automated testing is key to maintaining code stability and quickly catching unwanted bugs.
-</Callout>
+> **triangle-alert** Always run your test suite after making changes to critical functions. Automated testing is key to maintaining code stability and quickly catching unwanted bugs.
 
 After correcting the bug, all tests should pass successfully, providing confidence in the reliability of the arithmetic functions.
 
 Happy testing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/68f4e08d-efa6-4102-8d94-dbd1b66fe680" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/68f4e08d-efa6-4102-8d94-dbd1b66fe680)

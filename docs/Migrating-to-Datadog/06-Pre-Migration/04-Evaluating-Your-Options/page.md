@@ -30,9 +30,7 @@ Use this table to summarize findings for stakeholders:
 | Security         | Network segmentation, SSO, secrets management                    | SAML/SSO, VPC peering, centralized KMS       |
 | Business metrics | KPIs and success criteria                                        | Reduce MTTR by 30%, lower alert count by 40% |
 
-<Callout icon="lightbulb">
-  Involve security, compliance, and business stakeholders early. Their requirements frequently determine acceptable architectures, data retention policies, and vendor restrictions.
-</Callout>
+> **lightbulb** Involve security, compliance, and business stakeholders early. Their requirements frequently determine acceptable architectures, data retention policies, and vendor restrictions.
 
 <Frame>
   <img alt="The image is a flowchart titled &#x22;Evaluating Your Options,&#x22; outlining steps for internal research: Current Needs, Future Roadmap, Compliance, Security, and Business Requirements." />
@@ -90,9 +88,7 @@ Vendor evaluation checklist (example):
 | Operational overhead  | How much SRE effort to operate?                      | Automation and APIs provided                     |
 | Cost & licensing      | Pricing model fits usage profile                     | Predictable TCO, no hidden fees                  |
 
-<Callout icon="warning">
-  Avoid picking a solution solely on short-term feature fit. Overlooking retention costs, data egress, or vendor lock-in can cause significant operational and financial pain later.
-</Callout>
+> **warning** Avoid picking a solution solely on short-term feature fit. Overlooking retention costs, data egress, or vendor lock-in can cause significant operational and financial pain later.
 
 <Frame>
   <img alt="The image is a flowchart titled &#x22;Evaluating Your Options,&#x22; illustrating a step-by-step process for selecting a new solution, including stages like internal research, market research, and vendor negotiation." />
@@ -128,6 +124,4 @@ Following this structured approach—internal research, market research, targete
 
 That concludes this lesson. I hope you found it useful, and I look forward to the next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/0aabfac6-819a-45d7-8d16-ec24dc41d982" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/0aabfac6-819a-45d7-8d16-ec24dc41d982)

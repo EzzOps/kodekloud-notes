@@ -5,9 +5,7 @@
 
 Roles define the SQL statements Vault runs to create and grant permissions to a dynamic user. Each role is tied to a configured database connection.
 
-<Frame>
-  ![The image illustrates a "Database Secrets Engine - Roles" concept, showing a central icon connected to three databases labeled "prod-sql-01," "oracle-db-22," and "mysql-dev-03," with a note to configure roles based on required permissions. A cartoon character is also present in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878412/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Database-Secrets-Engine/database-secrets-engine-roles-diagram.jpg)
-</Frame>
+![The image illustrates a "Database Secrets Engine - Roles" concept, showing a central icon connected to three databases labeled "prod-sql-01," "oracle-db-22," and "mysql-dev-03," with a note to configure roles based on required permissions. A cartoon character is also present in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878412/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Database-Secrets-Engine/database-secrets-engine-roles-diagram.jpg)
 
 ### Example: Dynamic Role
 
@@ -26,9 +24,7 @@ vault write database/roles/app-hcvop \
 * `creation_statements`: templated SQL for creating and granting privileges.
 * `default_ttl` / `max_ttl`: control lease duration and renewability.
 
-<Frame>
-  ![The image illustrates a diagram of a Database Secrets Engine, showing roles and their permissions required for accessing different databases. It includes a list of roles and arrows indicating access paths to various database servers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878413/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Database-Secrets-Engine/database-secrets-engine-roles-permissions-diagram.jpg)
-</Frame>
+![The image illustrates a diagram of a Database Secrets Engine, showing roles and their permissions required for accessing different databases. It includes a list of roles and arrows indicating access paths to various database servers.](https://kodekloud.com/kk-media/image/upload/v1752878413/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Database-Secrets-Engine/database-secrets-engine-roles-permissions-diagram.jpg)
 
 ### Static Roles
 
@@ -38,21 +34,15 @@ For applications that require a fixed username (e.g., `ecommerce_user`), use a *
 
 Vault auto-generates strong passwords by default (20 characters, mixed case, numbers, dash). You can attach a custom Vault policy to match your database’s requirements.
 
-<Frame>
-  ![The image outlines password policies for databases, specifying a default policy of 20 characters with at least one uppercase, one lowercase, one number, and one dash. It also notes that credentials from different plugins may vary based on the platform.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878414/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Database-Secrets-Engine/password-policies-database-credentials-outline.jpg)
-</Frame>
+![The image outlines password policies for databases, specifying a default policy of 20 characters with at least one uppercase, one lowercase, one number, and one dash. It also notes that credentials from different plugins may vary based on the platform.](https://kodekloud.com/kk-media/image/upload/v1752878414/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Database-Secrets-Engine/password-policies-database-credentials-outline.jpg)
 
-<Callout icon="triangle-alert">
-  Ensure your password policy adheres to backend constraints such as maximum length and allowed characters.
-</Callout>
+> **triangle-alert** Ensure your password policy adheres to backend constraints such as maximum length and allowed characters.
 
 ## Generating Dynamic Credentials
 
 Applications request credentials by reading from the role’s path. Vault creates the user, returns the credentials, and sets the lease TTL:
 
-<Frame>
-  ![The image illustrates the process of generating dynamic credentials using a database secrets engine, involving a Vault, a web application, and a database table. It shows the flow of requests and credentials between these components, with a focus on security and credential expiration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878416/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Database-Secrets-Engine/dynamic-credentials-database-secrets-engine.jpg)
-</Frame>
+![The image illustrates the process of generating dynamic credentials using a database secrets engine, involving a Vault, a web application, and a database table. It shows the flow of requests and credentials between these components, with a focus on security and credential expiration.](https://kodekloud.com/kk-media/image/upload/v1752878416/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Database-Secrets-Engine/dynamic-credentials-database-secrets-engine.jpg)
 
 ```bash theme={null}
 vault read database/creds/app-hcvop
@@ -92,9 +82,7 @@ With Vault’s Database Secrets Engine, you can automate the lifecycle of databa
 * [Custom Database Plugin](https://www.vaultproject.io/docs/secrets/plugins)
 * [Vault Secrets Engines Overview](https://www.vaultproject.io/docs/secrets)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/0f2caef8-381e-4725-85dc-7512758c66f6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/0f2caef8-381e-4725-85dc-7512758c66f6)
 
 
 # Demo Database Secrets Engine
@@ -220,9 +208,7 @@ password_policy           n/a
 root_credentials_rotate_statements []
 ```
 
-<Callout icon="lightbulb">
-  Vault does **not** show the stored `username` and `password` for security reasons.
-</Callout>
+> **lightbulb** Vault does **not** show the stored `username` and `password` for security reasons.
 
 ***
 
@@ -274,9 +260,7 @@ vault write -f database/rotate-root/hcvop-db
 Success! Data written to: database/rotate-root/hcvop-db
 ```
 
-<Callout icon="triangle-alert">
-  After rotation, the old admin credentials become invalid immediately. Update any systems relying on these credentials.
-</Callout>
+> **triangle-alert** After rotation, the old admin credentials become invalid immediately. Update any systems relying on these credentials.
 
 ***
 
@@ -326,8 +310,6 @@ Vault will run the appropriate SQL to drop the dynamic users in your database.
 * [AWS RDS for PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html)
 * [HashiCorp Vault CLI](https://www.vaultproject.io/docs/commands)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/91b40042-d98d-48e8-be99-8b4c8d78e92b" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/91b40042-d98d-48e8-be99-8b4c8d78e92b)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/974a425b-c165-4ef1-b492-9c8935d70a39" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/974a425b-c165-4ef1-b492-9c8935d70a39)

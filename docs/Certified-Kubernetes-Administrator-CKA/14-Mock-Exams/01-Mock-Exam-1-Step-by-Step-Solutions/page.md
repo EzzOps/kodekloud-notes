@@ -12,7 +12,7 @@ In this article, we walk through the solutions for Mock Exam 1. Each section cor
 
 You must create a pod named **mc-pod** in the **MC** namespace that includes three containers. You can either consult the documentation for an example pod configuration or use an imperative command with `kubectl run` and then modify the generated YAML file.
 
-![The image shows a task description for creating a Kubernetes Pod with three containers, each with specific requirements, alongside a terminal window for command input.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869815/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Mock-Exam-1-Step-by-Step-Solutions/kubernetes-pod-task-description.jpg)
+![The image shows a task description for creating a Kubernetes Pod with three containers, each with specific requirements, alongside a terminal window for command input.](https://kodekloud.com/kk-media/image/upload/v1752869815/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Mock-Exam-1-Step-by-Step-Solutions/kubernetes-pod-task-description.jpg)
 
 Below is an example of using `kubectl run` with the `--overrides` flag to add container definitions. The `--dry-run=client` flag outputs the YAML for further editing:
 
@@ -140,7 +140,7 @@ After generating the file, update it as follows:
 
 After saving and applying this configuration, verify the pod’s status and check the logs of container **mc-pod-3**. Its output should display the continuously appended date entries from container **mc-pod-2**.
 
-![The image shows a Kubernetes task description on the left, detailing the creation of a pod with three containers, and a terminal on the right displaying a continuous log of date and time entries.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869816/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Mock-Exam-1-Step-by-Step-Solutions/kubernetes-pod-creation-log.jpg)
+![The image shows a Kubernetes task description on the left, detailing the creation of a pod with three containers, and a terminal on the right displaying a continuous log of date and time entries.](https://kodekloud.com/kk-media/image/upload/v1752869816/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Mock-Exam-1-Step-by-Step-Solutions/kubernetes-pod-creation-log.jpg)
 
 ***
 

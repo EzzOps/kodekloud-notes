@@ -18,7 +18,7 @@ Azure provides two distinct types of managed identities:
 
 Below is a visual comparison of system-assigned and user-assigned managed identities in Azure, detailing their creation, lifecycle, and the ability to be shared among resources:
 
-![The image is a table comparing system-assigned and user-assigned managed identities in Azure, detailing their creation, lifecycle, and sharing capabilities across resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866663/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Managed-Identities/azure-managed-identities-comparison-table.jpg)
+![The image is a table comparing system-assigned and user-assigned managed identities in Azure, detailing their creation, lifecycle, and sharing capabilities across resources.](https://kodekloud.com/kk-media/image/upload/v1752866663/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Managed-Identities/azure-managed-identities-comparison-table.jpg)
 
 > **lightbulb** System-assigned managed identities are ideal when an identity is needed only for a single resource, while user-assigned managed identities offer flexibility by allowing a single identity to be shared across multiple resources.
 
@@ -28,7 +28,7 @@ For instance, if you have several web applications requiring access to a central
 
 Managed identities are particularly useful when you need Azure resources—such as virtual machines, App Services, Container Instances, Container Apps, or Azure Kubernetes Service—to access other Azure services securely and without manual credential management. Any service supporting Azure AD (or Microsoft Entra ID) authentication can benefit from this setup.
 
-![The image is a diagram explaining when to use managed identities, showing a source with Azure resources accessing a target that supports Azure Active Directory Authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866664/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Managed-Identities/managed-identities-azure-diagram.jpg)
+![The image is a diagram explaining when to use managed identities, showing a source with Azure resources accessing a target that supports Azure Active Directory Authentication.](https://kodekloud.com/kk-media/image/upload/v1752866664/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Managed-Identities/managed-identities-azure-diagram.jpg)
 
 Consider an application that previously relied on client credentials stored in environment variables to obtain a token from Azure AD and then access the Azure Key Vault. By assigning a managed identity directly to a Function App and granting it the appropriate Key Vault permissions, you achieve secure, credential-free access to the Key Vault. This not only bolsters application security by removing sensitive credential storage but also streamlines the management of access permissions.
 

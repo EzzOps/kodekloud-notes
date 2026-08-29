@@ -45,14 +45,12 @@ policies                 ["bryan" "default"]
 token_meta_username      bryan@krausen.io
 ```
 
-<Callout icon="lightbulb">
-  Vault stores this token in the helper file (`$HOME/.vault-token` on Linux/macOS or `C:\Users\<User>\.vault-token` on Windows). You can verify it with:
+> **lightbulb** Vault stores this token in the helper file (`$HOME/.vault-token` on Linux/macOS or `C:\Users\<User>\.vault-token` on Windows). You can verify it with:
 
   ```powershell theme={null}
   PS C:\> Get-Content $HOME\.vault-token
   s.WVWlWxsVF9X6lXmhaJaKrYiz
   ```
-</Callout>
 
 ***
 
@@ -87,9 +85,7 @@ PS C:\> vault write auth/approle/login \
 
 You’ll receive a token and metadata in a similar table format.
 
-<Callout icon="triangle-alert">
-  Keep your `secret_id` secure and rotate it regularly. Do not commit your credentials to version control.
-</Callout>
+> **triangle-alert** Keep your `secret_id` secure and rotate it regularly. Do not commit your credentials to version control.
 
 ***
 
@@ -133,6 +129,4 @@ Success! Enabled azure auth method at: azure/
 
 You now have a solid understanding of using various authentication methods with the Vault CLI.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/05faae12-5f30-4f13-b196-353d2e305409" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/05faae12-5f30-4f13-b196-353d2e305409)

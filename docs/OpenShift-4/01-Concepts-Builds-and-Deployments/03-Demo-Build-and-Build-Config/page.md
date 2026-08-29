@@ -12,13 +12,9 @@ First, log in to the OpenShift console and navigate to the Builds section. Under
 
 When you click on *Build Configs* and then *Create Build Config*, you will see an example Build Config that you can use as a starting point for building the Sock Shop application.
 
-<Frame>
-  ![The image shows the Red Hat OpenShift Container Platform dashboard, featuring navigation options like Operators, Workloads, and Networking, with a focus on "BuildConfigs" under the Builds section. A warning at the top indicates the cluster is for development and testing purposes only.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882575/notes-assets/images/OpenShift-4-Demo-Build-and-Build-Config/openshift-dashboard-buildconfigs-warning.jpg)
-</Frame>
+![The image shows the Red Hat OpenShift Container Platform dashboard, featuring navigation options like Operators, Workloads, and Networking, with a focus on "BuildConfigs" under the Builds section. A warning at the top indicates the cluster is for development and testing purposes only.](https://kodekloud.com/kk-media/image/upload/v1752882575/notes-assets/images/OpenShift-4-Demo-Build-and-Build-Config/openshift-dashboard-buildconfigs-warning.jpg)
 
-<Callout icon="lightbulb">
-  Click the code button to copy the HTTPS link provided. The YAML displayed under the `spec` section defines the source using Git.
-</Callout>
+> **lightbulb** Click the code button to copy the HTTPS link provided. The YAML displayed under the `spec` section defines the source using Git.
 
 ## Reviewing the Example Build Config YAML
 
@@ -74,17 +70,13 @@ In this updated Build Config:
 
 Additionally, there is a "From" section (not shown in the snippet) that specifies the image stream tag. This tag indicates the container image used during the build process, effectively nesting container image builds.
 
-<Callout icon="lightbulb">
-  After updating your Build Config, click the **Create** button to generate the configuration. You can confirm the process by reviewing the build details and logs within the OpenShift console.
-</Callout>
+> **lightbulb** After updating your Build Config, click the **Create** button to generate the configuration. You can confirm the process by reviewing the build details and logs within the OpenShift console.
 
 ## Viewing the Build Process
 
 Once the Build Config is created, the build process commences automatically, linking the application to its GitHub repository. Navigate to the Build details page to review the logs and confirm that the container image is created successfully.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Container Platform interface displaying build details for a project named "sockshop-1," with the build status marked as complete. The interface includes tabs for details, metrics, YAML, environment, logs, and events.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882576/notes-assets/images/OpenShift-4-Demo-Build-and-Build-Config/openshift-sockshop-build-details.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Container Platform interface displaying build details for a project named "sockshop-1," with the build status marked as complete. The interface includes tabs for details, metrics, YAML, environment, logs, and events.](https://kodekloud.com/kk-media/image/upload/v1752882576/notes-assets/images/OpenShift-4-Demo-Build-and-Build-Config/openshift-sockshop-build-details.jpg)
 
 Check the **Events** tab to ensure that all components were created correctly. Any errors during the process will be listed in this section.
 
@@ -123,9 +115,7 @@ oc start-build sock
 
 After triggering the build, you will see a new build (e.g., sockshop-3) start running.
 
-<Frame>
-  ![The image shows the Red Hat OpenShift Container Platform interface, displaying a list of builds with their statuses, where "sockshop-1" is complete and "sockshop-3" is running.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882577/notes-assets/images/OpenShift-4-Demo-Build-and-Build-Config/openshift-container-platform-builds-status.jpg)
-</Frame>
+![The image shows the Red Hat OpenShift Container Platform interface, displaying a list of builds with their statuses, where "sockshop-1" is complete and "sockshop-3" is running.](https://kodekloud.com/kk-media/image/upload/v1752882577/notes-assets/images/OpenShift-4-Demo-Build-and-Build-Config/openshift-container-platform-builds-status.jpg)
 
 ## Summary
 
@@ -139,6 +129,4 @@ Following these steps ensures that deploying applications like Sock Shop in Open
 
 For further details on OpenShift and container builds, refer to the [OpenShift Documentation](https://docs.openshift.com/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/3200131b-dec7-4422-9e05-68c751bc4213/lesson/ee7df079-8cff-4fd8-802e-9fd7252b87ab" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/3200131b-dec7-4422-9e05-68c751bc4213/lesson/ee7df079-8cff-4fd8-802e-9fd7252b87ab)

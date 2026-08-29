@@ -95,9 +95,7 @@ Hey guys, add your important notes here.
 </html>
 ```
 
-<Callout icon="lightbulb">
-  Remember that port forwarding is temporary—it lasts as long as your terminal session remains active.
-</Callout>
+> **lightbulb** Remember that port forwarding is temporary—it lasts as long as your terminal session remains active.
 
 ## Verifying Service Configuration
 
@@ -161,9 +159,7 @@ For added flexibility, you can also create service account tokens when needed. T
 kubectl -n NAMESPACE create-token SERVICE_ACCOUNT
 ```
 
-<Callout icon="triangle-alert">
-  Use service account tokens cautiously—ensure they are stored securely and only used in trusted contexts.
-</Callout>
+> **triangle-alert** Use service account tokens cautiously—ensure they are stored securely and only used in trusted contexts.
 
 ## Summary
 
@@ -178,6 +174,4 @@ For further reading on Kubernetes concepts and commands, check out these resourc
 
 This concludes our comprehensive explanation of kubectl port-forward and its many practical applications in managing Kubernetes clusters.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/a588cc9f-65fd-44e5-8275-ea4d9d4dfd54" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/a588cc9f-65fd-44e5-8275-ea4d9d4dfd54)

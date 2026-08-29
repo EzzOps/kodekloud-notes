@@ -36,7 +36,7 @@ Once loaded, you will see two main sections:
 
 Below is an image illustrating the practice test interface:
 
-![The image shows a practice test demo interface with a question about the number of pods in a system, alongside a terminal window.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869734/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Practice-Test-Introduction/frame_50.jpg)
+![The image shows a practice test demo interface with a question about the number of pods in a system, alongside a terminal window.](https://kodekloud.com/kk-media/image/upload/v1752869734/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Practice-Test-Introduction/frame_50.jpg)
 
 ## Structure of the Practice Test
 
@@ -80,7 +80,7 @@ You can retake these tests as many times as needed until you feel confident. How
 
 Below is an image that reminds you of the temporary nature of the lab environment:
 
-![The image is a note stating that the interface is not the actual exam, can be accessed multiple times, is temporary for one hour, and requires no personal details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869735/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Practice-Test-Introduction/frame_290.jpg)
+![The image is a note stating that the interface is not the actual exam, can be accessed multiple times, is temporary for one hour, and requires no personal details.](https://kodekloud.com/kk-media/image/upload/v1752869735/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Practice-Test-Introduction/frame_290.jpg)
 
 ## Practice and Learning
 
@@ -90,7 +90,7 @@ If any task or question remains unclear, please reach out for further assistance
 
 Below is an additional image showing a Kubernetes practice test interface:
 
-![The image shows a practice test interface for Kubernetes pods, with a question about pod count and a terminal window for command input.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869737/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Practice-Test-Introduction/frame_340.jpg)
+![The image shows a practice test interface for Kubernetes pods, with a question about pod count and a terminal window for command input.](https://kodekloud.com/kk-media/image/upload/v1752869737/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Practice-Test-Introduction/frame_340.jpg)
 
 For further learning, consider exploring:
 

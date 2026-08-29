@@ -84,13 +84,9 @@ Commitments lower cost but add risk if workloads change. Use a staged, measurabl
   <img alt="The image outlines Step 3 of a Risk Management process, detailing a strategic implementation and review timeline with four stages: Start Conservative, Phase Approach, Review Cadence, and Exit Strategy. Each stage includes a brief description of the actions to be taken." />
 </Frame>
 
-<Callout icon="warning">
-  Commitments can become sunk cost quickly if left unmanaged. Put automation and alerts in place to surface low-utilization reserved capacity and unexpected topology changes.
-</Callout>
+> **warning** Commitments can become sunk cost quickly if left unmanaged. Put automation and alerts in place to surface low-utilization reserved capacity and unexpected topology changes.
 
-<Callout icon="lightbulb">
-  Monthly reviews are essential—buying commitments and forgetting them is the fastest route to wasted spend. Use automated reports and dashboards to track utilization and coverage.
-</Callout>
+> **lightbulb** Monthly reviews are essential—buying commitments and forgetting them is the fastest route to wasted spend. Use automated reports and dashboards to track utilization and coverage.
 
 ## Success metrics — how you know you’re winning
 
@@ -137,6 +133,4 @@ See you in the next lesson.
 * [Azure Savings Plans](https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/savings-plans)
 * [Azure Spot VMs / Preemptible](https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/bd955480-276f-44e3-9c9a-b9f0194f84ff" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/bd955480-276f-44e3-9c9a-b9f0194f84ff)

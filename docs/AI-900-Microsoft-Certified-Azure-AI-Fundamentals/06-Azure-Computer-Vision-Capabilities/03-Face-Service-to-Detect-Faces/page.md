@@ -34,7 +34,7 @@ Noise detection identifies random specks or distortions in the image. Excessive 
 
 Occlusion detection recognizes when a face is partially covered by objects such as masks, hands, or hats. Since occlusions can hide important facial features, the system flags such instances to either process only fully visible faces or inform users about potential issues.
 
-![The image is an infographic titled "Face Service to Detect Faces," explaining various factors like blur, exposure, glasses, head pose, noise, and occlusion that affect face detection. It includes a photo of a person on the right side.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856886/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Face-Service-to-Detect-Faces/face-detection-infographic-factors.jpg)
+![The image is an infographic titled "Face Service to Detect Faces," explaining various factors like blur, exposure, glasses, head pose, noise, and occlusion that affect face detection. It includes a photo of a person on the right side.](https://kodekloud.com/kk-media/image/upload/v1752856886/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Face-Service-to-Detect-Faces/face-detection-infographic-factors.jpg)
 
 ## Advanced Face Recognition Features
 
@@ -48,7 +48,7 @@ This feature compares faces to determine if they belong to the same person, whic
 
 Building on similarity matching, identity verification confirms a person's identity by comparing the detected face against a stored, trusted image. This capability is valuable for high-security environments such as secure building access.
 
-![The image is an infographic about Microsoft's facial recognition capabilities, highlighting "Similarity Matching" and "Identity Verification" features, with a photo of people in a meeting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856887/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Face-Service-to-Detect-Faces/microsoft-facial-recognition-infographic.jpg)
+![The image is an infographic about Microsoft's facial recognition capabilities, highlighting "Similarity Matching" and "Identity Verification" features, with a photo of people in a meeting.](https://kodekloud.com/kk-media/image/upload/v1752856887/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Face-Service-to-Detect-Faces/microsoft-facial-recognition-infographic.jpg)
 
 > **lightbulb** The Face Service in Azure integrates both detection and recognition functionalities. It addresses fundamental image quality issues and provides advanced tools for identity confirmation, making it a versatile solution for a variety of applications including security and customer insights.
 
@@ -64,7 +64,7 @@ Open the Azure portal and navigate to AI Studio. Here’s how to start:
 * Choose an image file from the dataset.
 * The system will automatically detect all faces present in the image.
 
-![The image shows a webpage from Azure AI Studio with a section for detecting faces in an image. Below, there is a photo of a diverse group of people with detected faces highlighted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856888/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Face-Service-to-Detect-Faces/azure-ai-studio-face-detection.jpg)
+![The image shows a webpage from Azure AI Studio with a section for detecting faces in an image. Below, there is a photo of a diverse group of people with detected faces highlighted.](https://kodekloud.com/kk-media/image/upload/v1752856888/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Face-Service-to-Detect-Faces/azure-ai-studio-face-detection.jpg)
 
 ### 2. Exploring Advanced Features via Vision Studio
 
@@ -82,13 +82,13 @@ Within the Azure portal:
 * Name your resource (e.g., Face API AI 900) and select the free pricing tier.
 * Click "Review and Create" to deploy the resource.
 
-![The image shows a Microsoft Azure portal page for creating a Face API instance, with fields for project and instance details such as subscription, resource group, region, name, and pricing tier.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856889/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Face-Service-to-Detect-Faces/azure-portal-face-api-instance.jpg)
+![The image shows a Microsoft Azure portal page for creating a Face API instance, with fields for project and instance details such as subscription, resource group, region, name, and pricing tier.](https://kodekloud.com/kk-media/image/upload/v1752856889/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Face-Service-to-Detect-Faces/azure-portal-face-api-instance.jpg)
 
 ### 4. Additional Vision Services
 
 For functionalities like Smart Crop or background removal, create a Computer Vision resource. Other capabilities, including liveness detection and portrait processing, are available under the Face API umbrella.
 
-![The image shows a webpage from Azure AI Vision Studio, featuring various AI tools for image processing tasks like removing backgrounds, adding captions, detecting objects, and more. Each tool is presented with a brief description and a "Try it out" option.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856890/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Face-Service-to-Detect-Faces/azure-ai-vision-tools-webpage.jpg)
+![The image shows a webpage from Azure AI Vision Studio, featuring various AI tools for image processing tasks like removing backgrounds, adding captions, detecting objects, and more. Each tool is presented with a brief description and a "Try it out" option.](https://kodekloud.com/kk-media/image/upload/v1752856890/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Face-Service-to-Detect-Faces/azure-ai-vision-tools-webpage.jpg)
 
 ### 5. Associating the Resource in Vision Studio
 
@@ -98,7 +98,7 @@ Once your Face API resource is deployed:
 * Select the newly created Face API resource.
 * Use the tool to process an image and detect faces.
 
-![The image shows a Microsoft Azure interface for creating a Face API resource, displaying terms and basic configuration details like subscription, resource group, and pricing tier.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856891/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Face-Service-to-Detect-Faces/azure-face-api-resource-creation.jpg)
+![The image shows a Microsoft Azure interface for creating a Face API resource, displaying terms and basic configuration details like subscription, resource group, and pricing tier.](https://kodekloud.com/kk-media/image/upload/v1752856891/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Face-Service-to-Detect-Faces/azure-face-api-resource-creation.jpg)
 
 ### 6. Testing Face Recognition
 
@@ -108,7 +108,7 @@ With the resource assigned:
 * Confirm the resource selection and acknowledge any system prompts.
 * The service will then identify and highlight detected faces.
 
-![The image shows a woman in a red top smiling, with greenery in the background. It appears to be a screenshot from a facial detection demo on Azure AI's Vision Studio.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856893/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Face-Service-to-Detect-Faces/woman-red-top-smiling-azure-ai.jpg)
+![The image shows a woman in a red top smiling, with greenery in the background. It appears to be a screenshot from a facial detection demo on Azure AI's Vision Studio.](https://kodekloud.com/kk-media/image/upload/v1752856893/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Face-Service-to-Detect-Faces/woman-red-top-smiling-azure-ai.jpg)
 
 ### 7. Handling Other AI Services
 
@@ -117,7 +117,7 @@ If you intend to use features like portrait processing, liveness detection, or p
 * Ensure you have a corresponding Computer Vision resource deployed.
 * Without it, you will be prompted to choose a resource when selecting an image for these services.
 
-![A person is barbecuing outdoors while two children play with hula hoops nearby. The scene is set in a grassy area with trees in the background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856894/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Face-Service-to-Detect-Faces/barbecue-children-hula-hoops-outdoors.jpg)
+![A person is barbecuing outdoors while two children play with hula hoops nearby. The scene is set in a grassy area with trees in the background.](https://kodekloud.com/kk-media/image/upload/v1752856894/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Face-Service-to-Detect-Faces/barbecue-children-hula-hoops-outdoors.jpg)
 
 > **lightbulb** Using both AI Studio and Vision Studio allows you to leverage a comprehensive set of facial detection and recognition tools, ensuring that you can meet a wide range of application requirements.
 

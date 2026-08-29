@@ -100,9 +100,7 @@ You have now:
 
 Next steps: automate these commands in a Jenkins pipeline to run installs, tests, coverage checks, and builds so you can validate the application automatically as part of CI/CD.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/a3bf42b8-d7de-4cf9-aeae-bc71ae305be6/lesson/569156f9-41bf-4e0c-bdbd-cc3a2aa0cb6f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/a3bf42b8-d7de-4cf9-aeae-bc71ae305be6/lesson/569156f9-41bf-4e0c-bdbd-cc3a2aa0cb6f)
 
 
 # Course Introduction
@@ -145,10 +143,6 @@ By the end of this course, you will have a thorough understanding of how to leve
 
 At KodeKloud, we foster community learning. Our vibrant forum provides a space to ask questions, share insights, and collaborate with fellow learners. Join our community and take your first step towards mastering modern DevOps practices.
 
-<Frame>
-  ![The image shows the KodeKloud logo, featuring a stylized cloud with code brackets inside, next to the text "KodeKloud."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879875/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Course-Introduction/kodekloud-logo-cloud-code-brackets.jpg)
-</Frame>
+![The image shows the KodeKloud logo, featuring a stylized cloud with code brackets inside, next to the text "KodeKloud."](https://kodekloud.com/kk-media/image/upload/v1752879875/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Course-Introduction/kodekloud-logo-cloud-code-brackets.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/d50cea6d-7bc8-43c6-82b6-40a89e1c9f77/lesson/bb914665-0a0b-4fb7-922a-32792690688c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/d50cea6d-7bc8-43c6-82b6-40a89e1c9f77/lesson/bb914665-0a0b-4fb7-922a-32792690688c)

@@ -6,9 +6,7 @@ Demonstrates pausing a workflow for human review then resuming execution with pr
 
 This lesson demonstrates a common human-in-the-loop interruption pattern for workflows: instead of running end-to-end automatically, a workflow pauses at a breakpoint, waits for a human decision (review/approval), and then continues from the same logical point. The example below simulates this behavior with plain Python to keep it simple and portable. It mirrors how breakpoints and interrupts behave in workflow runtimes while remaining runtime-agnostic.
 
-<Callout icon="lightbulb">
-  This example demonstrates the pattern and data flow used for breakpoints. In a real deployment the interrupt/continue primitives would be provided by the platform runtime.
-</Callout>
+> **lightbulb** This example demonstrates the pattern and data flow used for breakpoints. In a real deployment the interrupt/continue primitives would be provided by the platform runtime.
 
 ## Overview
 

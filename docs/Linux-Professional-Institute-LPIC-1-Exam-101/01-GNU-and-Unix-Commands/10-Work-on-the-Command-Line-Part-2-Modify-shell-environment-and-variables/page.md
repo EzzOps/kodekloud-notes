@@ -31,9 +31,7 @@ echo $PATH
 specialtool  # runs /opt/bin/specialtool
 ```
 
-<Callout icon="lightbulb">
-  Always ensure each entry is separated by a colon (`:`) and that `$PATH` remains at the end.
-</Callout>
+> **lightbulb** Always ensure each entry is separated by a colon (`:`) and that `$PATH` remains at the end.
 
 ## 4. Customizing the Default `.bashrc` for All New Users
 
@@ -45,17 +43,13 @@ sudo vim /etc/skel/.bashrc
 
 Insert your custom lines—such as the `PATH` definition—then save. Now, every new account created on this system will inherit these settings automatically.
 
-<Callout icon="triangle-alert">
-  Be careful when editing `/etc/skel/.bashrc`. Errors in this file may prevent newly created users from logging in correctly.
-</Callout>
+> **triangle-alert** Be careful when editing `/etc/skel/.bashrc`. Errors in this file may prevent newly created users from logging in correctly.
 
 ***
 
 Now you’re ready to manage default user environments using `/etc/skel`. Practice by adding more config files or policies to streamline onboarding for every new account!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/6b11f23a-a1bc-412e-b7c3-74020bc89bea" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/6b11f23a-a1bc-412e-b7c3-74020bc89bea)
 
 
 # Work on the Command Line Part 2 Modify shell environment and variables

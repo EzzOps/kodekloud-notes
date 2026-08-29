@@ -47,9 +47,7 @@ Notes:
 * `multi_line` preserves stack traces and multiline exceptions.
 * Verify that the Agent version you use supports the processors you plan to run locally. See the Agent logs documentation for supported processors and syntax.
 
-<Callout icon="warning">
-  Avoid broad regex-based exclusions or redactions that can remove useful diagnostic data. Always validate processing rules in a staging environment and review their effects on a representative sample of logs.
-</Callout>
+> **warning** Avoid broad regex-based exclusions or redactions that can remove useful diagnostic data. Always validate processing rules in a staging environment and review their effects on a representative sample of logs.
 
 ## Metrics scraping and cardinality control
 
@@ -132,9 +130,7 @@ Make all filters and rules explicit, incremental, and reversible. Conservative c
 
 That’s a concise overview of Agent-level tuning for efficient Datadog usage. Implement these steps iteratively and validate their effects on both observability and billing before rolling them out broadly.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/fb698905-9310-4fe0-b2c7-703f3859fab7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/fb698905-9310-4fe0-b2c7-703f3859fab7)
 
 
 # Alerts
@@ -214,15 +210,11 @@ Common alert notification integrations
 
 Best practices and tips
 
-<Callout icon="lightbulb">
-  Tune thresholds and use multi-condition monitors to reduce noise. Prefer cloud-native integrations (PagerDuty, Slack) for reliable on-call routing, and run repeatable tests for each alert before decommissioning legacy monitors.
-</Callout>
+> **lightbulb** Tune thresholds and use multi-condition monitors to reduce noise. Prefer cloud-native integrations (PagerDuty, Slack) for reliable on-call routing, and run repeatable tests for each alert before decommissioning legacy monitors.
 
 When you disable legacy alerts, keep them active until you have validated the new monitors in production and verified notifications reach the intended recipients. Accidentally deactivating early can blind you to outages.
 
-<Callout icon="warning">
-  When disabling legacy alerts, keep them enabled until Datadog monitors are fully validated in production. Accidentally deactivating alerts too early can leave you blind to outages.
-</Callout>
+> **warning** When disabling legacy alerts, keep them enabled until Datadog monitors are fully validated in production. Accidentally deactivating alerts too early can leave you blind to outages.
 
 Further reading and references
 
@@ -238,6 +230,4 @@ Further reading and references
 
 That’s it for this lesson—use the migration checklist, validate thoroughly, and iterate to keep alerting effective and actionable.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/d7aaa833-22da-4f94-af5c-5d196f04ab31/lesson/584aa954-f0c2-4747-a570-8204b915d0ab" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/d7aaa833-22da-4f94-af5c-5d196f04ab31/lesson/584aa954-f0c2-4747-a570-8204b915d0ab)

@@ -12,9 +12,7 @@ Before we dive into LangGraph, having a few practical skills will make the learn
 * Package usage and typing: importing and using external packages (for example, [LangChain](https://learn.kodekloud.com/user/courses/langchain)) and annotating types with the [`typing` module](https://docs.python.org/3/library/typing.html).
 * APIs and structured data: familiarity with REST APIs and JSON payloads — reading, parsing, and transforming JSON (which maps naturally to Python dictionaries and lists).
 
-<Callout icon="lightbulb">
-  You do not need advanced AI or graph-theory knowledge to follow this lesson. We’ll introduce required concepts as we go; curiosity and basic Python are the most important prerequisites.
-</Callout>
+> **lightbulb** You do not need advanced AI or graph-theory knowledge to follow this lesson. We’ll introduce required concepts as we go; curiosity and basic Python are the most important prerequisites.
 
 ## Why these skills matter
 
@@ -65,6 +63,4 @@ You don’t need graph theory, heavy math, or advanced deployment experience to 
 
 If you’re comfortable writing functions, manipulating dictionaries and lists, and calling external APIs, you’re ready to proceed.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/11d0578c-2a76-40f7-be25-905be94f24f8/lesson/efa6ec57-c17b-46a5-9802-82ed26f647ab" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/11d0578c-2a76-40f7-be25-905be94f24f8/lesson/efa6ec57-c17b-46a5-9802-82ed26f647ab)

@@ -15,7 +15,7 @@ If the insertion into the orders table succeeds while the inventory update fails
 
 > **lightbulb** With DynamoDB transactions, you can commit all changes as a single atomic operation. If any part of the transaction fails, all changes are rolled back, ensuring that your system remains in a consistent state.
 
-![The image illustrates the process of placing an order in an application using DynamoDB, comparing operations with and without transactions. It shows insert and update operations on order and inventory tables.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858817/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Transactions/dynamodb-order-process-transactions.jpg)
+![The image illustrates the process of placing an order in an application using DynamoDB, comparing operations with and without transactions. It shows insert and update operations on order and inventory tables.](https://kodekloud.com/kk-media/image/upload/v1752858817/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Transactions/dynamodb-order-process-transactions.jpg)
 
 ## How Transactions Work
 
@@ -32,7 +32,7 @@ DynamoDB provides two primary API calls to manage transactions:
 
 These APIs not only ensure that your operations maintain consistency but also help to simplify the error handling process. The integrated nature of these calls means that you don't have to worry about partial updates leading to data corruption.
 
-![The image is a diagram explaining DynamoDB transactions, showing two types of API calls: "TransactGetItems" for GetItem operations and "TransactWriteItems" for DeleteItem, PutItem, and UpdateItem operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858818/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Transactions/dynamodb-transactions-api-calls-diagram.jpg)
+![The image is a diagram explaining DynamoDB transactions, showing two types of API calls: "TransactGetItems" for GetItem operations and "TransactWriteItems" for DeleteItem, PutItem, and UpdateItem operations.](https://kodekloud.com/kk-media/image/upload/v1752858818/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Transactions/dynamodb-transactions-api-calls-diagram.jpg)
 
 For more information on best practices when using DynamoDB transactions, consider exploring additional resources such as [DynamoDB Documentation](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html).
 

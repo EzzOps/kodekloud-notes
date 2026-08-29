@@ -8,9 +8,7 @@ In this lesson, we explore the interaction between variables and data cloning in
 
 Rust's clone trait explicitly generates deep copies of data. It is particularly useful for duplicating heap-allocated resources that cannot be managed through a simple bitwise copy. In contrast, the copy trait is reserved for types stored entirely on the stack—such as integers, floats, and simple tuples—that support inexpensive shallow copies.
 
-<Frame>
-  ![The image explains the "Clone trait" in Rust, illustrating how value ownership is moved from Variable A to Variable B, emphasizing the need to retain access to original data while creating an independent copy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883961/notes-assets/images/Rust-Programming-Variables-and-Data-Interacting-with-Clone/rust-clone-trait-value-ownership.jpg)
-</Frame>
+![The image explains the "Clone trait" in Rust, illustrating how value ownership is moved from Variable A to Variable B, emphasizing the need to retain access to original data while creating an independent copy.](https://kodekloud.com/kk-media/image/upload/v1752883961/notes-assets/images/Rust-Programming-Variables-and-Data-Interacting-with-Clone/rust-clone-trait-value-ownership.jpg)
 
 For any type that implements the clone trait, a concrete implementation of the clone method is required. This method returns a deep copy of the instance. Here is the definition of the clone trait:
 
@@ -22,14 +20,10 @@ pub trait Clone {
 
 Unlike the copy trait—which merely duplicates the bits—clone performs a deep replication of the data. This means that for types managing heap data or other resources (like strings), a new allocation is created with the same contents.
 
-<Callout icon="lightbulb">
-  * The **copy trait** is used for types that do not manage heap memory (e.g., integer types).
+> **lightbulb** * The **copy trait** is used for types that do not manage heap memory (e.g., integer types).
   * The **clone trait** is essential for types that allocate memory on the heap or hold other resources, ensuring each copy has its own independent allocation.
-</Callout>
 
-<Frame>
-  ![The image is a comparison between "Copy" and "Clone" in programming, highlighting that "Copy" involves a shallow copy of bits, while "Clone" involves a deep copy of heap data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883962/notes-assets/images/Rust-Programming-Variables-and-Data-Interacting-with-Clone/copy-vs-clone-programming-comparison.jpg)
-</Frame>
+![The image is a comparison between "Copy" and "Clone" in programming, highlighting that "Copy" involves a shallow copy of bits, while "Clone" involves a deep copy of heap data.](https://kodekloud.com/kk-media/image/upload/v1752883962/notes-assets/images/Rust-Programming-Variables-and-Data-Interacting-with-Clone/copy-vs-clone-programming-comparison.jpg)
 
 ## Practical Examples
 
@@ -53,9 +47,7 @@ In the code above, the variable `x` (of type `i32`) is effortlessly copied, allo
 
 When you create a string using `String::from`, memory is allocated on the heap. The string consists of a pointer, its length, and its capacity. Invoking `clone` on a string allocates new memory and copies the content from the original string. Thus, the new string, `s2`, has its own pointer, length, and capacity.
 
-<Frame>
-  ![The image is a flowchart detailing the process of cloning a string in programming, including steps for string creation and cloning with memory allocation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883963/notes-assets/images/Rust-Programming-Variables-and-Data-Interacting-with-Clone/string-cloning-flowchart-process.jpg)
-</Frame>
+![The image is a flowchart detailing the process of cloning a string in programming, including steps for string creation and cloning with memory allocation.](https://kodekloud.com/kk-media/image/upload/v1752883963/notes-assets/images/Rust-Programming-Variables-and-Data-Interacting-with-Clone/string-cloning-flowchart-process.jpg)
 
 ## Summary
 
@@ -63,6 +55,4 @@ This lesson covered the distinctions between moving, copying, and cloning data i
 
 Happy coding with Rust!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/66313f4e-f41b-4b18-8f46-417200f33915" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/66313f4e-f41b-4b18-8f46-417200f33915)

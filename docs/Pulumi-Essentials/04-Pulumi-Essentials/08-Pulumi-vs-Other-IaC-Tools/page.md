@@ -14,9 +14,7 @@ Traditional IaC tools like Terraform or AWS CloudFormation rely on domain-specif
 * Limited Flexibility: As deployments grow in complexity—incorporating conditionals, loops, and other intricate logic—DSLs can become inflexible compared to traditional programming languages.
 * Constrained Ecosystems: The tooling and community-driven features around these DSLs are often limited, hindering code reuse and efficiency.
 
-<Frame>
-  ![The image compares Pulumi with other IaC tools like Terraform and AWS CloudFormation, highlighting issues like new language learning, inflexibility, limited ecosystem, and reusability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883108/notes-assets/images/Pulumi-Essentials-Pulumi-vs-Other-IaC-Tools/frame_110.jpg)
-</Frame>
+![The image compares Pulumi with other IaC tools like Terraform and AWS CloudFormation, highlighting issues like new language learning, inflexibility, limited ecosystem, and reusability.](https://kodekloud.com/kk-media/image/upload/v1752883108/notes-assets/images/Pulumi-Essentials-Pulumi-vs-Other-IaC-Tools/frame_110.jpg)
 
 ## Pulumi’s Modern Approach
 
@@ -28,13 +26,9 @@ Pulumi redefines the way you manage infrastructure by allowing you to use full-f
 * **Improved Tooling**: Benefit from mature linting, formatting tools, and testing frameworks that simplify unit testing and ensure code quality.
 * **Streamlined CI/CD Integration**: Rely on established CI/CD practices and tools built around your chosen programming language, making continuous integration and deployment more efficient.
 
-<Callout icon="lightbulb">
-  Using familiar programming languages not only speeds up development but also ensures that your infrastructure code integrates smoothly with your overall software development lifecycle.
-</Callout>
+> **lightbulb** Using familiar programming languages not only speeds up development but also ensures that your infrastructure code integrates smoothly with your overall software development lifecycle.
 
-<Frame>
-  ![The image compares Pulumi with traditional IaC, highlighting benefits like IDE support, package management, tooling, and CI/CD pipelines, using languages like Python, JavaScript, Java, and Go.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883109/notes-assets/images/Pulumi-Essentials-Pulumi-vs-Other-IaC-Tools/frame_230.jpg)
-</Frame>
+![The image compares Pulumi with traditional IaC, highlighting benefits like IDE support, package management, tooling, and CI/CD pipelines, using languages like Python, JavaScript, Java, and Go.](https://kodekloud.com/kk-media/image/upload/v1752883109/notes-assets/images/Pulumi-Essentials-Pulumi-vs-Other-IaC-Tools/frame_230.jpg)
 
 ## Conclusion
 
@@ -42,6 +36,4 @@ Pulumi enables you to leverage all the advantages of modern programming language
 
 Let's now take a look at how we can deploy resources onto AWS with a quick demo.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pulumi-essentials/module/883d8d6f-c8be-44af-ac4d-ba0835d32f5d/lesson/7bb855d0-94ec-4832-bee8-002d04b421ed" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pulumi-essentials/module/883d8d6f-c8be-44af-ac4d-ba0835d32f5d/lesson/7bb855d0-94ec-4832-bee8-002d04b421ed)

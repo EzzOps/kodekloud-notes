@@ -9,7 +9,7 @@
 2. Click **Create pull request**.
 3. Set **Source** to `branch2` and **Destination** to `main`, then click **Compare**.
 
-![The image shows the AWS CodeCommit interface for creating a pull request, indicating that the branches "branch2" and "main" are mergeable with no conflicts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862614/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-pull-request-mergeable.jpg)
+![The image shows the AWS CodeCommit interface for creating a pull request, indicating that the branches "branch2" and "main" are mergeable with no conflicts.](https://kodekloud.com/kk-media/image/upload/v1752862614/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-pull-request-mergeable.jpg)
 
 Review the changes:
 
@@ -23,7 +23,7 @@ Review the changes:
 4. Enter a title like **Demo Pull Request** and an optional description.
 5. Click **Create pull request**.
 
-![The image shows an AWS CodeCommit interface with a "Demo Pull Request" open. It indicates that the pull request has been successfully created, with no approval rules or merge conflicts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862616/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-demo-pull-request-interface.jpg)
+![The image shows an AWS CodeCommit interface with a "Demo Pull Request" open. It indicates that the pull request has been successfully created, with no approval rules or merge conflicts.](https://kodekloud.com/kk-media/image/upload/v1752862616/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-demo-pull-request-interface.jpg)
 
 ***
 
@@ -46,7 +46,7 @@ git merge --ff-only origin/branch2
 
 Switch back to `main` and open `appspec.yml` to see the merged comment:
 
-![The image shows the AWS CodeCommit interface with a repository named "MyDemoRepo" containing three files: appspec.yml, before-install.bat, and index.html. The left sidebar displays various options like Code, Pull requests, and Branches.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862617/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-mydemorepo-interface.jpg)
+![The image shows the AWS CodeCommit interface with a repository named "MyDemoRepo" containing three files: appspec.yml, before-install.bat, and index.html. The left sidebar displays various options like Code, Pull requests, and Branches.](https://kodekloud.com/kk-media/image/upload/v1752862617/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-mydemorepo-interface.jpg)
 
 ```yaml theme={null}
 version: 0.0
@@ -157,7 +157,7 @@ c:\Windows\Sysnative\WindowsPowerShell\v1.0\powershell.exe -Command Install-Wind
 
 Compress these files into `HelloWorldApp.zip`.
 
-![The image shows a Windows file explorer window open to a folder named "HelloWorldApp" containing files like "appspec," "before-install," and a compressed file named "HelloWorldApp.zip." In the background, there are browser tabs open with AWS Management Console and other related pages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862619/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/windows-file-explorer-helloworldapp-files.jpg)
+![The image shows a Windows file explorer window open to a folder named "HelloWorldApp" containing files like "appspec," "before-install," and a compressed file named "HelloWorldApp.zip." In the background, there are browser tabs open with AWS Management Console and other related pages.](https://kodekloud.com/kk-media/image/upload/v1752862619/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/windows-file-explorer-helloworldapp-files.jpg)
 
 ***
 
@@ -167,7 +167,7 @@ Compress these files into `HelloWorldApp.zip`.
 2. Create a new bucket or select an existing one.
 3. Upload **HelloWorldApp.zip**.
 
-![The image shows an Amazon S3 bucket interface on AWS, displaying a single object named "HelloWorld4App.zip" with details like type, size, and last modified date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862620/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/amazon-s3-bucket-interface-helloworld4app.jpg)
+![The image shows an Amazon S3 bucket interface on AWS, displaying a single object named "HelloWorld4App.zip" with details like type, size, and last modified date.](https://kodekloud.com/kk-media/image/upload/v1752862620/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/amazon-s3-bucket-interface-helloworld4app.jpg)
 
 ***
 
@@ -198,9 +198,9 @@ You need two roles: one for the EC2 instance and one for CodeDeploy.
 2. **CodeDeploy Service Role**
    * Create a role for CodeDeploy and attach **AWSCodeDeployRole**.
 
-![The image shows the AWS Identity and Access Management (IAM) console, specifically the "Roles" section, displaying permissions policies for a role named "CodeDeployDemo-EC2-Instance-Profile." Two policies are listed: "CodeDeployDemo-EC2-Permissions" and "AmazonSSMManagedInstanceCore."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862621/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-iam-console-roles-codedeploydemo.jpg)
+![The image shows the AWS Identity and Access Management (IAM) console, specifically the "Roles" section, displaying permissions policies for a role named "CodeDeployDemo-EC2-Instance-Profile." Two policies are listed: "CodeDeployDemo-EC2-Permissions" and "AmazonSSMManagedInstanceCore."](https://kodekloud.com/kk-media/image/upload/v1752862621/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-iam-console-roles-codedeploydemo.jpg)
 
-![The image shows the AWS Identity and Access Management (IAM) console, specifically the "Roles" section, displaying roles related to CodeDeploy with their trusted entities and last activity timestamps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862622/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-iam-console-roles-codedeploy.jpg)
+![The image shows the AWS Identity and Access Management (IAM) console, specifically the "Roles" section, displaying roles related to CodeDeploy with their trusted entities and last activity timestamps.](https://kodekloud.com/kk-media/image/upload/v1752862622/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-iam-console-roles-codedeploy.jpg)
 
 ***
 
@@ -217,13 +217,13 @@ You need two roles: one for the EC2 instance and one for CodeDeploy.
 
 > **lightbulb** Windows AMIs exclude the CodeDeploy agent by default. Install it after launch via AWS Systems Manager or by running the MSI installer from AWS.
 
-![The image shows an AWS EC2 console where a user is setting up a new instance named "CodeDeployDemo" with Amazon Linux as the selected operating system. The summary on the right indicates the instance type is t2.micro with 8 GiB storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862624/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-ec2-console-codedeploydemo-instance.jpg)
+![The image shows an AWS EC2 console where a user is setting up a new instance named "CodeDeployDemo" with Amazon Linux as the selected operating system. The summary on the right indicates the instance type is t2.micro with 8 GiB storage.](https://kodekloud.com/kk-media/image/upload/v1752862624/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-ec2-console-codedeploydemo-instance.jpg)
 
-![The image shows an AWS EC2 Management Console screen where a user is configuring settings to launch an instance, including key pair, network settings, and instance summary details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862625/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-ec2-management-console-instance-launch.jpg)
+![The image shows an AWS EC2 Management Console screen where a user is configuring settings to launch an instance, including key pair, network settings, and instance summary details.](https://kodekloud.com/kk-media/image/upload/v1752862625/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-ec2-management-console-instance-launch.jpg)
 
-![The image shows an AWS EC2 management console where a user is configuring settings to launch an instance, including options for IAM instance profile, hostname type, and DNS settings. The summary on the right displays details like the software image, instance type, and storage volume.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862626/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-ec2-launch-instance-settings-console.jpg)
+![The image shows an AWS EC2 management console where a user is configuring settings to launch an instance, including options for IAM instance profile, hostname type, and DNS settings. The summary on the right displays details like the software image, instance type, and storage volume.](https://kodekloud.com/kk-media/image/upload/v1752862626/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-ec2-launch-instance-settings-console.jpg)
 
-![The image shows an AWS EC2 Management Console screen indicating the successful launch of an instance, with options for next steps like connecting to the instance and creating billing alerts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862627/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-ec2-management-console-instance-launch-2.jpg)
+![The image shows an AWS EC2 Management Console screen indicating the successful launch of an instance, with options for next steps like connecting to the instance and creating billing alerts.](https://kodekloud.com/kk-media/image/upload/v1752862627/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-ec2-management-console-instance-launch-2.jpg)
 
 ***
 
@@ -242,15 +242,15 @@ You need two roles: one for the EC2 instance and one for CodeDeploy.
    * **Deployment settings**: Now, One at a time, no load balancer
 3. Click **Create deployment group**.
 
-![The image shows an AWS CodeDeploy console screen for an application named "CodeDeployDemo," with options to manage deployment groups and application details. The interface includes navigation options for various AWS Developer Tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862628/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-codedeploy-console-screenshot.jpg)
+![The image shows an AWS CodeDeploy console screen for an application named "CodeDeployDemo," with options to manage deployment groups and application details. The interface includes navigation options for various AWS Developer Tools.](https://kodekloud.com/kk-media/image/upload/v1752862628/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-codedeploy-console-screenshot.jpg)
 
-![The image shows an AWS CodeDeploy interface where a user is creating a deployment group named "CodeDeploy" for an application called "CodeDeployDemo" with EC2/On-premises as the compute type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862629/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-codedeploy-deployment-group-ec2.jpg)
+![The image shows an AWS CodeDeploy interface where a user is creating a deployment group named "CodeDeploy" for an application called "CodeDeployDemo" with EC2/On-premises as the compute type.](https://kodekloud.com/kk-media/image/upload/v1752862629/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-codedeploy-deployment-group-ec2.jpg)
 
-![The image shows an AWS CodeDeploy configuration screen where EC2 instances are being tagged for deployment. It includes options for adding tag groups and configuring the AWS Systems Manager Agent.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862630/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-codedeploy-ec2-tagging-configuration.jpg)
+![The image shows an AWS CodeDeploy configuration screen where EC2 instances are being tagged for deployment. It includes options for adding tag groups and configuring the AWS Systems Manager Agent.](https://kodekloud.com/kk-media/image/upload/v1752862630/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-codedeploy-ec2-tagging-configuration.jpg)
 
-![The image shows an AWS CodeDeploy console screen with deployment settings, including options for scheduling updates, deployment configuration, and load balancing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862632/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-codedeploy-console-deployment-settings.jpg)
+![The image shows an AWS CodeDeploy console screen with deployment settings, including options for scheduling updates, deployment configuration, and load balancing.](https://kodekloud.com/kk-media/image/upload/v1752862632/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-codedeploy-console-deployment-settings.jpg)
 
-![The image shows an AWS CodeDeploy console with a success message indicating a deployment group has been created. It includes details about the deployment group, application name, compute platform, and environment configuration for Amazon EC2 instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862633/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-codedeploy-success-deployment-group.jpg)
+![The image shows an AWS CodeDeploy console with a success message indicating a deployment group has been created. It includes details about the deployment group, application name, compute platform, and environment configuration for Amazon EC2 instances.](https://kodekloud.com/kk-media/image/upload/v1752862633/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-codedeploy-success-deployment-group.jpg)
 
 ***
 
@@ -262,13 +262,13 @@ You need two roles: one for the EC2 instance and one for CodeDeploy.
    * **Key**: `HelloWorldApp.zip`
 3. Keep defaults and click **Create deployment**.
 
-![The image shows an Amazon S3 console with a bucket named "codedeploydemo-kodekloud-mb1" containing a single zip file named "HelloWorldApp.zip."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862634/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/amazon-s3-console-codedeploydemo-zip.jpg)
+![The image shows an Amazon S3 console with a bucket named "codedeploydemo-kodekloud-mb1" containing a single zip file named "HelloWorldApp.zip."](https://kodekloud.com/kk-media/image/upload/v1752862634/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/amazon-s3-console-codedeploydemo-zip.jpg)
 
-![The image shows an AWS CodeDeploy setup screen where a deployment is being configured with an application stored in an Amazon S3 bucket. The revision file type is set to ".zip".](../../../../images/kodekloud.com/kk-media/image/upload/v1752862635/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-codedeploy-setup-s3-zip.jpg)
+![The image shows an AWS CodeDeploy setup screen where a deployment is being configured with an application stored in an Amazon S3 bucket. The revision file type is set to ".zip".](https://kodekloud.com/kk-media/image/upload/v1752862635/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-codedeploy-setup-s3-zip.jpg)
 
 After a few minutes, you’ll see success:
 
-![The image shows an AWS CodeDeploy console with a successful deployment status, indicating that an application has been installed on instances. The deployment details are also displayed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862636/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-codedeploy-successful-deployment.jpg)
+![The image shows an AWS CodeDeploy console with a successful deployment status, indicating that an application has been installed on instances. The deployment details are also displayed.](https://kodekloud.com/kk-media/image/upload/v1752862636/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeDeploy-Demo/aws-codedeploy-successful-deployment.jpg)
 
 ***
 

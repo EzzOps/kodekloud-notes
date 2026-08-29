@@ -12,24 +12,18 @@ Kubernetes is an API that allows you to programmatically manage and interact wit
 
 For example, the core API group includes resources like deployments, while the networking group features resources such as ingress controllers provided by the networking.k8s.io API. Originally designed and implemented by engineers, Kubernetes is inherently extensible, paving the way for the use of operators.
 
-<Frame>
-  ![The image shows a diagram with icons representing configuration and management, featuring the Kubernetes logo and the word "API" repeated twice. There is also a red button labeled "Resource."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882729/notes-assets/images/OpenShift-4-Introduction-to-Operators/kubernetes-api-configuration-diagram.jpg)
-</Frame>
+![The image shows a diagram with icons representing configuration and management, featuring the Kubernetes logo and the word "API" repeated twice. There is also a red button labeled "Resource."](https://kodekloud.com/kk-media/image/upload/v1752882729/notes-assets/images/OpenShift-4-Introduction-to-Operators/kubernetes-api-configuration-diagram.jpg)
 
 A Kubernetes operator extends the functionality of the Kubernetes API. Operators simplify the process of creating, configuring, and managing any type of resource or containerized application on Kubernetes.
 
-<Frame>
-  ![The image is a diagram illustrating the configuration and management of resources and centralized applications using Kubernetes APIs. It includes icons and text labels to represent these concepts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882730/notes-assets/images/OpenShift-4-Introduction-to-Operators/kubernetes-apis-resource-management-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating the configuration and management of resources and centralized applications using Kubernetes APIs. It includes icons and text labels to represent these concepts.](https://kodekloud.com/kk-media/image/upload/v1752882730/notes-assets/images/OpenShift-4-Introduction-to-Operators/kubernetes-apis-resource-management-diagram.jpg)
 
 There are two primary approaches to extending the Kubernetes API:
 
 1. Creating a dedicated, full-blown controller.
 2. Utilizing a Custom Resource Definition (CRD).
 
-<Frame>
-  ![The image shows two options in dashed boxes separated by a red diagonal line: "You Create a Full-Blown Controller" and "Use a Custom Resource Definition."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882731/notes-assets/images/OpenShift-4-Introduction-to-Operators/controller-options-custom-resource-definition.jpg)
-</Frame>
+![The image shows two options in dashed boxes separated by a red diagonal line: "You Create a Full-Blown Controller" and "Use a Custom Resource Definition."](https://kodekloud.com/kk-media/image/upload/v1752882731/notes-assets/images/OpenShift-4-Introduction-to-Operators/controller-options-custom-resource-definition.jpg)
 
 ## Custom Resource Definitions (CRDs)
 
@@ -163,25 +157,17 @@ This configuration specifies allowed ingress traffic based on IP blocks, namespa
 
 OpenShift further extends Kubernetes with a range of operators and controllers that enhance platform capabilities. In the OpenShift UI, navigating to "Operators" takes you to the OperatorHub, where you can explore and install operators for various purposes including monitoring (such as the Datadog operator) and security (like the CrowdStrike operator).
 
-<Frame>
-  ![The image shows the Red Hat OpenShift OperatorHub interface, displaying various operators available for installation, such as 3scale API Management and Advanced Cluster Management for Kubernetes. The interface includes a navigation menu on the left and a warning banner at the top indicating the environment is for development and testing purposes only.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882732/notes-assets/images/OpenShift-4-Introduction-to-Operators/openshift-operatorhub-interface-operators.jpg)
-</Frame>
+![The image shows the Red Hat OpenShift OperatorHub interface, displaying various operators available for installation, such as 3scale API Management and Advanced Cluster Management for Kubernetes. The interface includes a navigation menu on the left and a warning banner at the top indicating the environment is for development and testing purposes only.](https://kodekloud.com/kk-media/image/upload/v1752882732/notes-assets/images/OpenShift-4-Introduction-to-Operators/openshift-operatorhub-interface-operators.jpg)
 
 When you select an operator, for example, the Datadog operator, you can proceed with the installation by choosing the namespace, update channel, and update approval options. Once the configuration details are set, clicking the install button deploys the operator to your system.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift interface for installing the Datadog Operator, with options for update channel, installation mode, installed namespace, and update approval. The interface also lists provided APIs like Datadog Agent, Metric, and Monitor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882733/notes-assets/images/OpenShift-4-Introduction-to-Operators/red-hat-openshift-datadog-operator.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift interface for installing the Datadog Operator, with options for update channel, installation mode, installed namespace, and update approval. The interface also lists provided APIs like Datadog Agent, Metric, and Monitor.](https://kodekloud.com/kk-media/image/upload/v1752882733/notes-assets/images/OpenShift-4-Introduction-to-Operators/red-hat-openshift-datadog-operator.jpg)
 
 Operators streamline the management of complex applications on Kubernetes and OpenShift. Instead of writing custom controllers from scratch, you can utilize pre-built operators to extend your cluster’s functionality for specific environments such as Azure or AWS.
 
-<Frame>
-  ![The image shows the Red Hat OpenShift OperatorHub interface, where users can discover and install Kubernetes operators. It includes a search bar with the term "azu" and displays results like the Azure Service Operator.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882735/notes-assets/images/OpenShift-4-Introduction-to-Operators/openshift-operatorhub-azure-operators.jpg)
-</Frame>
+![The image shows the Red Hat OpenShift OperatorHub interface, where users can discover and install Kubernetes operators. It includes a search bar with the term "azu" and displays results like the Azure Service Operator.](https://kodekloud.com/kk-media/image/upload/v1752882735/notes-assets/images/OpenShift-4-Introduction-to-Operators/openshift-operatorhub-azure-operators.jpg)
 
-<Callout icon="lightbulb">
-  Operators empower you to deploy and manage applications quickly by leveraging pre-built functionalities, which reduces the overhead of building custom solutions.
-</Callout>
+> **lightbulb** Operators empower you to deploy and manage applications quickly by leveraging pre-built functionalities, which reduces the overhead of building custom solutions.
 
 ## Summary
 
@@ -196,6 +182,4 @@ For more in-depth information, consider checking out the following resources:
 
 Embrace the power of Kubernetes and OpenShift operators to streamline your cluster management and enhance your application's capabilities.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/d3b90b82-f189-40f9-84c3-918fc7eae917" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/d3b90b82-f189-40f9-84c3-918fc7eae917)

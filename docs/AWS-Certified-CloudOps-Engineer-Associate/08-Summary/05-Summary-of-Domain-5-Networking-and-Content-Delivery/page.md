@@ -16,7 +16,7 @@ At the heart of your network infrastructure is the Virtual Private Cloud (VPC). 
 
 Additionally, core networking concepts such as default routes, subnet associations, and session management via Session Manager were thoroughly reviewed. Session Manager provides secure connections to systems residing in both public and private subnets, utilizing AWS Key Management Service (KMS) for encryption, comprehensive logging, session timeout management, and profile configurations.
 
-![The image illustrates the setup of an Internet Gateway within a VPC, showing steps like creating an IGW, attaching it to a VPC, and configuring route tables. It includes a diagram of a region with a public subnet and associated route table.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861386/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/internet-gateway-vpc-setup-diagram.jpg)
+![The image illustrates the setup of an Internet Gateway within a VPC, showing steps like creating an IGW, attaching it to a VPC, and configuring route tables. It includes a diagram of a region with a public subnet and associated route table.](https://kodekloud.com/kk-media/image/upload/v1752861386/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/internet-gateway-vpc-setup-diagram.jpg)
 
 ## Traffic Management and Network Interfaces
 
@@ -32,18 +32,18 @@ Connecting multiple VPCs can be achieved via two primary methods:
 1. **VPC Peering**\
    VPC peering involves sending and accepting peering requests along with configuring necessary routes. This method is effective for global connectivity but may not be as scalable for larger environments.
 
-![The image illustrates a VPC peering connection between two Virtual Private Clouds (VPCs) with IP ranges 10.10.0.0/16 and 10.10.1.0/16, showing the process of sending and accepting a peering request to establish the connection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861388/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/vpc-peering-connection-diagram.jpg)
+![The image illustrates a VPC peering connection between two Virtual Private Clouds (VPCs) with IP ranges 10.10.0.0/16 and 10.10.1.0/16, showing the process of sending and accepting a peering request to establish the connection.](https://kodekloud.com/kk-media/image/upload/v1752861388/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/vpc-peering-connection-diagram.jpg)
 
 2. **Transit Gateway**\
    The transit gateway is designed for complex networking scenarios, supporting connections across multiple VPCs, customer gateways, VPNs, and corporate SD-WANs.
 
-![The image is a diagram illustrating an AWS Transit Gateway setup, showing connections between Amazon VPCs, customer gateways, VPN connections, and corporate SD-WANs. It includes various network components and connection types like GRE tunnels and BGP peering.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861389/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/aws-transit-gateway-diagram.jpg)
+![The image is a diagram illustrating an AWS Transit Gateway setup, showing connections between Amazon VPCs, customer gateways, VPN connections, and corporate SD-WANs. It includes various network components and connection types like GRE tunnels and BGP peering.](https://kodekloud.com/kk-media/image/upload/v1752861389/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/aws-transit-gateway-diagram.jpg)
 
 Other connectivity options include site-to-site VPN for linking AWS networks with on-premise data centers and AWS Direct Connect for establishing dedicated physical connections, thereby bypassing the public internet.
 
-![The image illustrates a Site-to-Site VPN architecture, showing a connection between a Virtual Private Cloud (VPC) in a cloud region and an on-premise network via a VPN connection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861391/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/site-to-site-vpn-architecture.jpg)
+![The image illustrates a Site-to-Site VPN architecture, showing a connection between a Virtual Private Cloud (VPC) in a cloud region and an on-premise network via a VPN connection.](https://kodekloud.com/kk-media/image/upload/v1752861391/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/site-to-site-vpn-architecture.jpg)
 
-![The image illustrates an AWS Direct Connect setup, showing the connection between an AWS region with VPCs and a customer network through Direct Connect and virtual interfaces. It includes components like AWS EC2 instances, Direct Connect routers, and customer gateways.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861392/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/aws-direct-connect-setup-diagram.jpg)
+![The image illustrates an AWS Direct Connect setup, showing the connection between an AWS region with VPCs and a customer network through Direct Connect and virtual interfaces. It includes components like AWS EC2 instances, Direct Connect routers, and customer gateways.](https://kodekloud.com/kk-media/image/upload/v1752861392/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/aws-direct-connect-setup-diagram.jpg)
 
 > **lightbulb** Client VPN was also briefly addressed as an extension of networking capabilities, further enhancing secure access across diverse network setups.
 
@@ -55,11 +55,11 @@ A robust Domain Name System (DNS) setup is essential for directing traffic effic
 * **Routing Policies:** Explore various routing policies such as latency-based, geolocation, and weighted routing, among others, to optimize traffic direction.
 * **Route 53 Resolver:** This service handles both inbound and outbound DNS queries, facilitating smooth resolution within your VPC.
 
-![The image illustrates the traffic routing process for a domain using Amazon Route 53, showing the flow from an end user to various DNS servers and finally to the web server. It includes steps involving the DNS resolver, DNS root name server, TLD name server, and Amazon Route 53 name server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861393/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/amazon-route53-traffic-routing-diagram.jpg)
+![The image illustrates the traffic routing process for a domain using Amazon Route 53, showing the flow from an end user to various DNS servers and finally to the web server. It includes steps involving the DNS resolver, DNS root name server, TLD name server, and Amazon Route 53 name server.](https://kodekloud.com/kk-media/image/upload/v1752861393/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/amazon-route53-traffic-routing-diagram.jpg)
 
-![The image lists different types of routing policies, including Simple, Failover, Geolocation, Geoproximity, Latency, IP-Based, Multivalue Answer, and Weighted Routing Policies. Each policy is represented with an icon and a label.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861394/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/routing-policies-icons-list.jpg)
+![The image lists different types of routing policies, including Simple, Failover, Geolocation, Geoproximity, Latency, IP-Based, Multivalue Answer, and Weighted Routing Policies. Each policy is represented with an icon and a label.](https://kodekloud.com/kk-media/image/upload/v1752861394/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/routing-policies-icons-list.jpg)
 
-![The image illustrates the direction of DNS queries with three diagrams: "Inbound and Outbound," "Inbound Only," and "Outbound Only," showing different flow directions between servers and the cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861395/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/dns-query-directions-diagrams.jpg)
+![The image illustrates the direction of DNS queries with three diagrams: "Inbound and Outbound," "Inbound Only," and "Outbound Only," showing different flow directions between servers and the cloud.](https://kodekloud.com/kk-media/image/upload/v1752861395/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/dns-query-directions-diagrams.jpg)
 
 ## Global Content Delivery and Caching
 
@@ -72,7 +72,7 @@ Optimizing content delivery on a global scale can significantly improve user exp
 
 The discussion also covered cache behavior, origin server management (e.g., S3 buckets and EC2 instances), and strategies for refreshing caches as needed.
 
-![The image illustrates how cache behavior in CloudFront directs requests to different origins, such as an S3 bucket for images and an EC2 instance for applications. It shows users making requests that are routed based on the cache behavior configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861396/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/cloudfront-cache-behavior-diagram.jpg)
+![The image illustrates how cache behavior in CloudFront directs requests to different origins, such as an S3 bucket for images and an EC2 instance for applications. It shows users making requests that are routed based on the cache behavior configuration.](https://kodekloud.com/kk-media/image/upload/v1752861396/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/cloudfront-cache-behavior-diagram.jpg)
 
 ## Security and Data Capture
 
@@ -88,7 +88,7 @@ Monitoring and diagnosing network issues rely on various logging tools such as:
 * Load Balancer Logs
 * S3 Access Logs
 
-![The image lists data captured by VPC Flow Logs, including source and destination IPs, ports and protocols, volume of data, and traffic status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861397/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/vpc-flow-logs-data-summary.jpg)
+![The image lists data captured by VPC Flow Logs, including source and destination IPs, ports and protocols, volume of data, and traffic status.](https://kodekloud.com/kk-media/image/upload/v1752861397/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Summary-of-Domain-5-Networking-and-Content-Delivery/vpc-flow-logs-data-summary.jpg)
 
 > **triangle-alert** Always ensure that firewalls, route tables, and encryption standards are correctly configured to protect your networks from vulnerabilities.
 

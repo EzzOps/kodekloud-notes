@@ -66,9 +66,7 @@ kubeseal --version
 # kubeseal version: 0.30.0
 ```
 
-<Callout icon="lightbulb">
-  Ensure your `kubeconfig` points to the cluster where the sealed-secrets controller is installed before using `kubeseal`. The client fetches the controller's public key from the cluster to create SealedSecrets that only the controller can decrypt.
-</Callout>
+> **lightbulb** Ensure your `kubeconfig` points to the cluster where the sealed-secrets controller is installed before using `kubeseal`. The client fetches the controller's public key from the cluster to create SealedSecrets that only the controller can decrypt.
 
 ## What you now have
 
@@ -85,9 +83,7 @@ kubeseal --version
 
 If you'd like, I can add a sample workflow showing how to create a Secret locally, seal it with `kubeseal`, and commit the resultant SealedSecret to Git for automatic deployment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/fe717104-74db-47b3-a737-c9b24b61f74e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/fe717104-74db-47b3-a737-c9b24b61f74e)
 
 
 # Deployment and Release Patterns

@@ -6,15 +6,11 @@ This article explores leveraging Docker for model deployment, covering its funda
 
 Deploying applications reliably across a variety of environments poses significant challenges in modern software and machine learning workflows. Model deployment adds another layer of complexity. Docker addresses these issues by packaging applications and their dependencies—including models—into lightweight, portable containers that work consistently whether on cloud, local, or on-premises systems.
 
-<Frame>
-  ![The image illustrates Docker's ability to package applications and dependencies into portable containers for deployment across cloud, local, and on-premises environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883249/notes-assets/images/PyTorch-Introduction-to-Docker/docker-packaging-applications-containers.jpg)
-</Frame>
+![The image illustrates Docker's ability to package applications and dependencies into portable containers for deployment across cloud, local, and on-premises environments.](https://kodekloud.com/kk-media/image/upload/v1752883249/notes-assets/images/PyTorch-Introduction-to-Docker/docker-packaging-applications-containers.jpg)
 
 In this article, we explore how to leverage Docker for model deployment by covering its fundamentals, core architecture, and practical workflow. We begin by discussing Docker’s importance in creating portable and consistent environments before delving into its architecture and containerization process. You'll also see how to build a container image using a Dockerfile, push images to a registry, and compare various approaches for managing your models.
 
-<Frame>
-  ![The image shows an agenda for a presentation on Docker, covering topics like its role in creating portable environments, architecture, building container images, pushing images to a registry, and managing models.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883251/notes-assets/images/PyTorch-Introduction-to-Docker/docker-presentation-agenda-topics.jpg)
-</Frame>
+![The image shows an agenda for a presentation on Docker, covering topics like its role in creating portable environments, architecture, building container images, pushing images to a registry, and managing models.](https://kodekloud.com/kk-media/image/upload/v1752883251/notes-assets/images/PyTorch-Introduction-to-Docker/docker-presentation-agenda-topics.jpg)
 
 Finally, we review best practices for deploying models using Docker.
 
@@ -22,9 +18,7 @@ Finally, we review best practices for deploying models using Docker.
 
 Docker is an open-source platform that enables consistent packaging and deployment of applications by using lightweight and portable containers. Each container bundles an application with all its dependencies, ensuring smooth operation across multiple environments, including development, testing, and production. Containers are isolated from the host system, eliminating conflicts with other applications, and offer scalability by easily handling increased workloads.
 
-<Frame>
-  ![The image outlines the key features of Docker, including portability, isolation, scalability, and simplicity. Each feature is briefly described with an icon and text.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883252/notes-assets/images/PyTorch-Introduction-to-Docker/docker-key-features-outline.jpg)
-</Frame>
+![The image outlines the key features of Docker, including portability, isolation, scalability, and simplicity. Each feature is briefly described with an icon and text.](https://kodekloud.com/kk-media/image/upload/v1752883252/notes-assets/images/PyTorch-Introduction-to-Docker/docker-key-features-outline.jpg)
 
 Containerizing applications offers several significant benefits:
 
@@ -50,9 +44,7 @@ Docker’s architecture is built around several key components that simplify con
 * **Dockerfile:**\
   Contains a sequence of instructions to build a Docker image.
 
-<Frame>
-  ![The image is an overview of Docker architecture, highlighting four components: Docker Engine, Images, Containers, and Dockerfile, each with a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883253/notes-assets/images/PyTorch-Introduction-to-Docker/docker-architecture-overview-components.jpg)
-</Frame>
+![The image is an overview of Docker architecture, highlighting four components: Docker Engine, Images, Containers, and Dockerfile, each with a brief description.](https://kodekloud.com/kk-media/image/upload/v1752883253/notes-assets/images/PyTorch-Introduction-to-Docker/docker-architecture-overview-components.jpg)
 
 The typical Docker workflow is straightforward:
 
@@ -60,9 +52,7 @@ The typical Docker workflow is straightforward:
 2. Build the image using the `docker build` command.
 3. Launch the container with the `docker run` command.
 
-<Callout icon="lightbulb">
-  Ensure that your Dockerfile is organized logically to streamline troubleshooting and future updates.
-</Callout>
+> **lightbulb** Ensure that your Dockerfile is organized logically to streamline troubleshooting and future updates.
 
 ### Example Dockerfile for a Flask Application
 

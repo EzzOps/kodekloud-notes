@@ -20,17 +20,13 @@ OpenTofu uses two key environment variables to control logging:
 | TF\_LOG       | Sets the log verbosity level (`error`, `warn`, `info`, `debug`, `trace`) | `export TF_LOG=debug`            |
 | TF\_LOG\_PATH | Specifies the file path where log output will be written                 | `export TF_LOG_PATH=/tmp/ot.log` |
 
-<Callout icon="lightbulb">
-  `TF_LOG_PATH` must be set alongside `TF_LOG`; otherwise, no logs will be written to disk.
-</Callout>
+> **lightbulb** `TF_LOG_PATH` must be set alongside `TF_LOG`; otherwise, no logs will be written to disk.
 
 ## 2. Enabling Logging and Exporting Logs
 
 Assume your project directory is `/root/OpenTofu/projects/project_a`. To enable `error`-level logging and export output to `/tmp/project_a.log`, run:
 
-<Frame>
-  ![The image shows a Visual Studio Code interface with a task description on the left and a file explorer and terminal on the right. The task involves enabling logging for a project and exporting logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882870/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Taint-and-Debugging/visual-studio-code-task-logging-export.jpg)
-</Frame>
+![The image shows a Visual Studio Code interface with a task description on the left and a file explorer and terminal on the right. The task involves enabling logging for a project and exporting logs.](https://kodekloud.com/kk-media/image/upload/v1752882870/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Taint-and-Debugging/visual-studio-code-task-logging-export.jpg)
 
 ```bash theme={null}
 cd /root/OpenTofu/projects/project_a
@@ -42,9 +38,7 @@ opentofu apply
 
 When prompted, type `yes`. Authentication warnings may appear, but the log file will be created at `/tmp/project_a.log`.
 
-<Callout icon="triangle-alert">
-  Do not modify any configuration files before exporting logs; this ensures you capture the original error context.
-</Callout>
+> **triangle-alert** Do not modify any configuration files before exporting logs; this ensures you capture the original error context.
 
 Among the log levels, `trace` produces the most detailed output.
 
@@ -71,9 +65,7 @@ resource "aws_instance" "ProjectB" {
 
 Initialize and apply the configuration:
 
-<Frame>
-  ![The image shows a coding environment with a task description on the left and a Visual Studio Code interface on the right, displaying a project directory and a terminal with an error message related to AWS credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882872/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Taint-and-Debugging/coding-environment-visual-studio-code.jpg)
-</Frame>
+![The image shows a coding environment with a task description on the left and a Visual Studio Code interface on the right, displaying a project directory and a terminal with an error message related to AWS credentials.](https://kodekloud.com/kk-media/image/upload/v1752882872/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Taint-and-Debugging/coding-environment-visual-studio-code.jpg)
 
 ```bash theme={null}
 opentofu init
@@ -122,8 +114,6 @@ OpenTofu will destroy the existing instance and create a new one before finalizi
 
 This concludes the lab on Tainting and Debugging with OpenTofu. In the next lesson, we'll explore resource dependencies and outputs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/0fda982f-8bb2-4b57-8009-996870d27e43/lesson/adac0469-942c-4a9a-b597-9503cfd4bc7d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/0fda982f-8bb2-4b57-8009-996870d27e43/lesson/adac0469-942c-4a9a-b597-9503cfd4bc7d)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/0fda982f-8bb2-4b57-8009-996870d27e43/lesson/68678212-159f-49e9-8b93-49c111de4f38" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/0fda982f-8bb2-4b57-8009-996870d27e43/lesson/68678212-159f-49e9-8b93-49c111de4f38)

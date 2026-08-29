@@ -15,13 +15,9 @@ Imagine a system with 4 GiB of RAM:
 
 At this point, RAM is full. With a 2 GiB swap partition, Linux can relocate the idle video editor’s memory pages to swap, freeing up 2 GiB of RAM for a new application such as Chrome.
 
-<Frame>
-  ![The image illustrates the concept of managing swap space, showing a 4GB RAM with 2GB used by an audio editor and Chrome, and a 2GB swap partition used by a video editor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881425/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Design-Hard-Disk-Layout-Manage-Swap-Space/managing-swap-space-ram-usage-diagram.jpg)
-</Frame>
+![The image illustrates the concept of managing swap space, showing a 4GB RAM with 2GB used by an audio editor and Chrome, and a 2GB swap partition used by a video editor.](https://kodekloud.com/kk-media/image/upload/v1752881425/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Design-Hard-Disk-Layout-Manage-Swap-Space/managing-swap-space-ram-usage-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Swap space is much slower than RAM. Use it as overflow memory, not as a substitute for adequate physical RAM.
-</Callout>
+> **lightbulb** Swap space is much slower than RAM. Use it as overflow memory, not as a substitute for adequate physical RAM.
 
 ## Checking Existing Swap
 
@@ -136,9 +132,7 @@ If you cannot repartition the disk, create a swap file instead:
    /swap none swap sw 0 0
    ```
 
-<Callout icon="triangle-alert">
-  Excessive swapping (thrashing) can severely degrade performance. Monitor swap usage with `free -h`, `vmstat`, or `htop`.
-</Callout>
+> **triangle-alert** Excessive swapping (thrashing) can severely degrade performance. Monitor swap usage with `free -h`, `vmstat`, or `htop`.
 
 ## Links and References
 
@@ -149,6 +143,4 @@ If you cannot repartition the disk, create a swap file instead:
 
 Practice these commands to master swap space management on Linux.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/07cc83f1-5323-49f3-a7d2-aa323512458e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/07cc83f1-5323-49f3-a7d2-aa323512458e)

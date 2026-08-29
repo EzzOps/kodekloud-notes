@@ -84,9 +84,7 @@ Output:
 15
 ```
 
-<Callout icon="lightbulb">
-  If a subclass does not define its own constructor, it automatically inherits the constructor from its superclass. In cases where no additional behavior is required, you can simply use the `pass` keyword to inherit all functionalities without modification.
-</Callout>
+> **lightbulb** If a subclass does not define its own constructor, it automatically inherits the constructor from its superclass. In cases where no additional behavior is required, you can simply use the `pass` keyword to inherit all functionalities without modification.
 
 This comprehensive guide on stack implementation in Python illustrates both procedural and object-oriented techniques, along with best practices such as encapsulation and inheritance.
 
@@ -94,11 +92,9 @@ That's it for now—it's time to gain some hands-on practice!
 
 For more details on Python programming and data structures, check out [Python Official Documentation](https://docs.python.org/3/tutorial/) and [Data Structures in Python](https://realpython.com/python-data-structures/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/7e473cae-90c2-4d9a-8e81-6509481b52ce/lesson/98512165-dcf1-4158-b576-60496ac42de5" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/7e473cae-90c2-4d9a-8e81-6509481b52ce/lesson/98512165-dcf1-4158-b576-60496ac42de5)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/7e473cae-90c2-4d9a-8e81-6509481b52ce/lesson/720cfc1f-a716-4425-9f34-58d214cc6647" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/7e473cae-90c2-4d9a-8e81-6509481b52ce/lesson/720cfc1f-a716-4425-9f34-58d214cc6647)
 
 
 # The objective nature of exceptions
@@ -137,9 +133,7 @@ You cannot divide by zero.
 All good!
 ```
 
-<Callout icon="lightbulb">
-  The **else** block is executed only when no exceptions occur. This practice ensures that the normal flow executes separately from error handling.
-</Callout>
+> **lightbulb** The **else** block is executed only when no exceptions occur. This practice ensures that the normal flow executes separately from error handling.
 
 ## The Finally Block for Cleanup
 
@@ -173,9 +167,7 @@ All good!
 Execution complete.
 ```
 
-<Callout icon="lightbulb">
-  The code in the **finally** block is executed after the try-except-else structure, regardless of the outcome. This makes it ideal for performing clean-up tasks.
-</Callout>
+> **lightbulb** The code in the **finally** block is executed after the try-except-else structure, regardless of the outcome. This makes it ideal for performing clean-up tasks.
 
 ## Summary
 
@@ -183,8 +175,6 @@ Understanding how Python handles exceptions is vital for writing robust code. By
 
 That's it for now—it's time to gain some hands-on practice!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/7e473cae-90c2-4d9a-8e81-6509481b52ce/lesson/a072c713-2a19-4dad-a149-6e5865419ae7" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/7e473cae-90c2-4d9a-8e81-6509481b52ce/lesson/a072c713-2a19-4dad-a149-6e5865419ae7)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/7e473cae-90c2-4d9a-8e81-6509481b52ce/lesson/01a9211b-1610-459a-9dc3-05fd6d000737" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/7e473cae-90c2-4d9a-8e81-6509481b52ce/lesson/01a9211b-1610-459a-9dc3-05fd6d000737)

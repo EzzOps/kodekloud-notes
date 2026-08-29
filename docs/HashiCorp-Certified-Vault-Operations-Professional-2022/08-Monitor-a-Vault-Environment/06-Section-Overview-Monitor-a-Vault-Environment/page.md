@@ -8,9 +8,7 @@ In this lesson, we cover **Objective 2: Monitoring a Vault Environment**. While 
 
 Below is an objective overview:
 
-<Frame>
-  ![The image is a slide titled "Objective Overview" focusing on monitoring a Vault environment, with three points: understanding Vault telemetry, audit logs, and operational logs. It also features a certification badge and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878586/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Section-Overview-Monitor-a-Vault-Environment/objective-overview-vault-monitoring-slide.jpg)
-</Frame>
+![The image is a slide titled "Objective Overview" focusing on monitoring a Vault environment, with three points: understanding Vault telemetry, audit logs, and operational logs. It also features a certification badge and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878586/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Section-Overview-Monitor-a-Vault-Environment/objective-overview-vault-monitoring-slide.jpg)
 
 **Sub-objectives:**
 
@@ -18,9 +16,7 @@ Below is an objective overview:
 * Monitor and understand Vault audit logs
 * Monitor and understand Vault operational logs
 
-<Callout icon="lightbulb">
-  “Understand” requires conceptual knowledge; “monitor” implies hands-on experience with setup or output analysis.
-</Callout>
+> **lightbulb** “Understand” requires conceptual knowledge; “monitor” implies hands-on experience with setup or output analysis.
 
 ***
 
@@ -32,9 +28,7 @@ Vault telemetry provides runtime metrics on performance, resource usage, and com
 * Debug latency spikes
 * Track cluster health over time
 
-<Frame>
-  ![The image is a slide explaining telemetry, highlighting its use in collecting runtime metrics for performance monitoring and debugging in a Vault environment. It mentions metrics aggregation every 10 seconds and the use of agents like DataDog or Prometheus for data aggregation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878587/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Section-Overview-Monitor-a-Vault-Environment/telemetry-runtime-metrics-vault-agents.jpg)
-</Frame>
+![The image is a slide explaining telemetry, highlighting its use in collecting runtime metrics for performance monitoring and debugging in a Vault environment. It mentions metrics aggregation every 10 seconds and the use of agents like DataDog or Prometheus for data aggregation.](https://kodekloud.com/kk-media/image/upload/v1752878587/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Section-Overview-Monitor-a-Vault-Environment/telemetry-runtime-metrics-vault-agents.jpg)
 
 Key telemetry attributes:
 
@@ -56,9 +50,7 @@ Configure your monitoring backend in the `telemetry` stanza of `config.hcl`. Vau
 | prometheus  | Prometheus  | Prometheus + Grafana      |
 | stackdriver | Stackdriver | Google Cloud Monitoring   |
 
-<Frame>
-  ![The image lists providers supported by Vault, including statsite, statsd, circonus, dogstatsd, prometheus, and stackdriver. It also features a Vault certification badge and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878588/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Section-Overview-Monitor-a-Vault-Environment/vault-supported-providers-certification-cartoon.jpg)
-</Frame>
+![The image lists providers supported by Vault, including statsite, statsd, circonus, dogstatsd, prometheus, and stackdriver. It also features a Vault certification badge and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878588/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Section-Overview-Monitor-a-Vault-Environment/vault-supported-providers-certification-cartoon.jpg)
 
 ### Example Telemetry Metrics
 
@@ -73,9 +65,7 @@ Vault emits dozens of metrics covering HTTP handlers, storage backends, memory u
 | `vault.audit.log.request`           | Time to write to all audit devices (ms)  |
 | `vault.policy.getPolicy`            | Policy retrieval latency (ms)            |
 
-<Frame>
-  ![The image is a table listing various metrics collected by Vault, along with their descriptions, such as request handling duration and memory usage. It also includes a Vault certification badge in the top right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878589/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Section-Overview-Monitor-a-Vault-Environment/vault-metrics-table-request-duration-memory.jpg)
-</Frame>
+![The image is a table listing various metrics collected by Vault, along with their descriptions, such as request handling duration and memory usage. It also includes a Vault certification badge in the top right corner.](https://kodekloud.com/kk-media/image/upload/v1752878589/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Section-Overview-Monitor-a-Vault-Environment/vault-metrics-table-request-duration-memory.jpg)
 
 For the full list of metrics, see the official [Vault telemetry documentation](https://www.vaultproject.io/docs/configuration/telemetry).
 
@@ -101,9 +91,7 @@ Replace `dogstatsd_*` with the settings for your chosen backend (Prometheus, sta
 
 Vault emits metrics locally → Telemetry agent collects them → Aggregation platform visualizes data:
 
-<Frame>
-  ![The image illustrates a telemetry workflow involving a Vault Admin configuring a Vault Server, which sends metrics to an aggregation platform for creating dashboards and alerts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878592/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Section-Overview-Monitor-a-Vault-Environment/telemetry-workflow-vault-admin-metrics.jpg)
-</Frame>
+![The image illustrates a telemetry workflow involving a Vault Admin configuring a Vault Server, which sends metrics to an aggregation platform for creating dashboards and alerts.](https://kodekloud.com/kk-media/image/upload/v1752878592/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Section-Overview-Monitor-a-Vault-Environment/telemetry-workflow-vault-admin-metrics.jpg)
 
 1. Vault server with `telemetry` stanza
 2. Local agent (sidecar or host)
@@ -114,9 +102,7 @@ Vault emits metrics locally → Telemetry agent collects them → Aggregation pl
 
 Below is a Datadog dashboard example showing latency, GC pauses, login rates, and storage metrics:
 
-<Frame>
-  ![The image shows a dashboard for monitoring Vault, featuring various performance metrics, logs, and runtime statistics. It includes graphs and data visualizations for system analysis.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878593/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Section-Overview-Monitor-a-Vault-Environment/vault-monitoring-dashboard-performance-metrics.jpg)
-</Frame>
+![The image shows a dashboard for monitoring Vault, featuring various performance metrics, logs, and runtime statistics. It includes graphs and data visualizations for system analysis.](https://kodekloud.com/kk-media/image/upload/v1752878593/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Section-Overview-Monitor-a-Vault-Environment/vault-monitoring-dashboard-performance-metrics.jpg)
 
 Key panels include:
 
@@ -125,19 +111,15 @@ Key panels include:
 * Token creation throughput
 * Consul storage operations (put/get/delete)
 
-<Callout icon="lightbulb">
-  Be prepared to:
+> **lightbulb** Be prepared to:
 
   * Define Vault telemetry
   * Identify common metrics
   * Locate the telemetry stanza in the Vault HCL config\
     Practical setup is unlikely, but you may be asked where to add telemetry settings.
-</Callout>
 
 ***
 
 Next up, we will explore **Vault audit logs**.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/36cf9665-35d2-4dbc-9ddc-fc00ca80cbd4/lesson/14cb1f39-df3d-46c3-89db-80eeeb2f7c26" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/36cf9665-35d2-4dbc-9ddc-fc00ca80cbd4/lesson/14cb1f39-df3d-46c3-89db-80eeeb2f7c26)

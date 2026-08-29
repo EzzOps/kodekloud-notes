@@ -189,6 +189,6 @@ For further details on certificate requirements and best practices, please refer
 
 That’s it for this lesson. Head over to your practice environment and gain hands-on experience in viewing and verifying certificates in an existing Kubernetes cluster.
 
-![The image shows a table detailing Kubernetes certificate configurations, including default CNs, parent CAs, key paths, cert paths, commands, and arguments for various components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869980/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-View-Certificate-Details/frame_210.jpg)
+![The image shows a table detailing Kubernetes certificate configurations, including default CNs, parent CAs, key paths, cert paths, commands, and arguments for various components.](https://kodekloud.com/kk-media/image/upload/v1752869980/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-View-Certificate-Details/frame_210.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator/module/77826599-d456-4cb5-8cbc-b713cc077b45/lesson/f2241ff5-cbe9-4e0a-843b-cac131682ec1)

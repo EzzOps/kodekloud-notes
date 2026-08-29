@@ -43,9 +43,7 @@ A couple of optimizations play an outsized role in real-world performance:
 * A cache can avoid trips to your database for frequently requested data.
 * A CDN (Content Delivery Network) serves static assets like thumbnails from locations geographically close to users.
 
-<Callout icon="lightbulb">
-  Latency measures how long a single round trip takes between the client and the server. Bandwidth measures how much data can transfer at once — the width of the pipe.
-</Callout>
+> **lightbulb** Latency measures how long a single round trip takes between the client and the server. Bandwidth measures how much data can transfer at once — the width of the pipe.
 
 This distinction matters for a photo app. A feed showing thirty thumbnails can be slow not because the images are large, but because of round trips. If each thumbnail requires a separate request that travels halfway around the world, thirty round trips add up — even on fast Wi‑Fi. Both caching and CDNs are designed primarily to reduce round‑trip latency.
 
@@ -77,6 +75,4 @@ Further reading and references
 * [Introduction to TLS / HTTPS](https://letsencrypt.org/docs/)
 * [Content Delivery Networks (CDNs) explained](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/319a26f6-6b9b-4f1d-9ea2-b69817662bdf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/319a26f6-6b9b-4f1d-9ea2-b69817662bdf)

@@ -6,11 +6,11 @@ This article discusses Infrastructure as Code, its benefits, and tools like ARM 
 
 Infrastructure as Code (IaC) is a fundamental DevOps practice that enables the automated provisioning and management of cloud resources using machine-readable definition files. Bena Innovation currently deploys resources manually and is working to eliminate inconsistencies across its cloud environments. By adopting IaC, every environment can be deployed identically and automatically, eliminating manual errors and speeding up deployments.
 
-![The image highlights challenges in ensuring consistent deployments, emphasizing the need to avoid manual deployment and maintain consistency across cloud environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868491/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/consistent-deployments-cloud-challenges.jpg)
+![The image highlights challenges in ensuring consistent deployments, emphasizing the need to avoid manual deployment and maintain consistency across cloud environments.](https://kodekloud.com/kk-media/image/upload/v1752868491/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/consistent-deployments-cloud-challenges.jpg)
 
 IaC allows you to define your infrastructure in configuration files rather than interactively via the Azure Portal or ad hoc scripts. Previously, selections were made through manual configurations and single-resource deployments, increasing the risk of errors when scaling to multiple or complex resources. With IaC, configuration files ensure consistent and reliable deployments every time.
 
-![The image illustrates the concept of "Infrastructure as Code" with a flowchart showing the cycle of managing, provisioning, and defining resources using machine-readable files in a DevOps context.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868492/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/infrastructure-as-code-flowchart.jpg)
+![The image illustrates the concept of "Infrastructure as Code" with a flowchart showing the cycle of managing, provisioning, and defining resources using machine-readable files in a DevOps context.](https://kodekloud.com/kk-media/image/upload/v1752868492/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/infrastructure-as-code-flowchart.jpg)
 
 ## Azure IaC Components
 
@@ -23,7 +23,7 @@ In Azure, several tools support the implementation of Infrastructure as Code:
 3. **Terraform**\
    Developed by HashiCorp, Terraform uses the HashiCorp Configuration Language (HCL) to define infrastructure. Unlike ARM templates and Bicep which are specific to Azure, Terraform can manage environments across AWS, GCP, and other providers.
 
-![The image lists three tools for Infrastructure as Code in Azure: Azure Resource Manager Templates, Azure Bicep, and Terraform, each represented with an icon and numbered from 01 to 03.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868493/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/infrastructure-as-code-azure-tools.jpg)
+![The image lists three tools for Infrastructure as Code in Azure: Azure Resource Manager Templates, Azure Bicep, and Terraform, each represented with an icon and numbered from 01 to 03.](https://kodekloud.com/kk-media/image/upload/v1752868493/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/infrastructure-as-code-azure-tools.jpg)
 
 ## Benefits of Using Infrastructure as Code
 
@@ -33,7 +33,7 @@ Implementing IaC offers numerous advantages:
 * **Consistency and Accuracy:** Automated deployments ensure environments remain uniform and reduce errors tied to manual configurations.
 * **Reusability and Scalability:** Template-based deployments are easily replicated across regions or subscriptions. For instance, deploying App Services in East US and later in West Europe only requires a change in the region parameter.
 
-![The image outlines the benefits of Infrastructure as Code, highlighting speed and simplicity, consistency and accuracy, and reusability and scalability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868494/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/infrastructure-as-code-benefits-outline.jpg)
+![The image outlines the benefits of Infrastructure as Code, highlighting speed and simplicity, consistency and accuracy, and reusability and scalability.](https://kodekloud.com/kk-media/image/upload/v1752868494/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/infrastructure-as-code-benefits-outline.jpg)
 
 Common use cases for IaC include automated environment setups, multi-cloud management, and the implementation of robust DevOps practices that ensure secure, consistent, and repeatable deployments.
 
@@ -41,7 +41,7 @@ Common use cases for IaC include automated environment setups, multi-cloud manag
 
 ARM templates are JSON files that declare the resources required for your cloud applications. These templates are submitted to Azure Resource Manager, which interprets the schema and deploys resources such as storage accounts, virtual machines, databases, and load balancers.
 
-![The image illustrates the concept of ARM Templates, showing a flow from a cloud application to a wide variety of resources, with icons representing JSON, Azure, and deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868495/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/arm-templates-cloud-resources-flow.jpg)
+![The image illustrates the concept of ARM Templates, showing a flow from a cloud application to a wide variety of resources, with icons representing JSON, Azure, and deployment.](https://kodekloud.com/kk-media/image/upload/v1752868495/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/arm-templates-cloud-resources-flow.jpg)
 
 ### Key Features of ARM Templates
 
@@ -49,7 +49,7 @@ ARM templates are JSON files that declare the resources required for your cloud 
 * **Idempotency:** Repeated deployments produce consistent results, ensuring operational reliability.
 * **Modularity:** Templates can be composed of reusable modules for specific resource types (e.g., virtual machines, load balancers, databases).
 
-![The image outlines the key features of ARM Templates: Declarative Syntax, Idempotency, and Modularity, each represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868495/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/arm-templates-features-diagram.jpg)
+![The image outlines the key features of ARM Templates: Declarative Syntax, Idempotency, and Modularity, each represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752868495/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/arm-templates-features-diagram.jpg)
 
 ### Benefits of ARM Templates
 
@@ -57,7 +57,7 @@ ARM templates are JSON files that declare the resources required for your cloud 
 * **Consistency:** Ensures that all environments are uniformly deployed.
 * **Source Control Integration:** Track changes easily by integrating templates with version control systems like GitHub or Azure DevOps, and leverage them within CI/CD pipelines.
 
-![The image shows four use cases for ARM templates: Development, Testing, Staging, and Production, each represented by a colored box with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868496/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/arm-templates-use-cases-diagram.jpg)
+![The image shows four use cases for ARM templates: Development, Testing, Staging, and Production, each represented by a colored box with an icon.](https://kodekloud.com/kk-media/image/upload/v1752868496/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/arm-templates-use-cases-diagram.jpg)
 
 An ARM template consists of a schema, a content version, parameters, functions, variables, and a list of resources. For example, an ARM template that creates a storage account may look like this:
 
@@ -91,7 +91,7 @@ An ARM template consists of a schema, a content version, parameters, functions, 
 
 Azure Bicep offers a simplified, intuitive syntax for deploying Azure resources. It abstracts much of the complexity found in ARM templates while still compiling down to the underlying ARM JSON, offering both ease-of-use and the robustness of ARM.
 
-![The image is a diagram illustrating the Bicep workflow, showing a progression from "Domain-Specific Language" to "Azure Resources" and ending with "Simplified Authoring."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868497/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/bicep-workflow-diagram-azure-resources.jpg)
+![The image is a diagram illustrating the Bicep workflow, showing a progression from "Domain-Specific Language" to "Azure Resources" and ending with "Simplified Authoring."](https://kodekloud.com/kk-media/image/upload/v1752868497/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/bicep-workflow-diagram-azure-resources.jpg)
 
 ### Key Features of Bicep
 
@@ -99,11 +99,11 @@ Azure Bicep offers a simplified, intuitive syntax for deploying Azure resources.
 * **First-Class Tooling:** Seamlessly integrated with Visual Studio Code and the Azure CLI for an enhanced development experience.
 * **No State Files:** Unlike Terraform, Bicep does not require state files and directly interacts with Azure Resource Manager for deployments.
 
-![The image lists key features of Bicep, highlighting simplified syntax, first-class tooling, and no state or state files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868499/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/bicep-key-features-syntax-tooling.jpg)
+![The image lists key features of Bicep, highlighting simplified syntax, first-class tooling, and no state or state files.](https://kodekloud.com/kk-media/image/upload/v1752868499/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/bicep-key-features-syntax-tooling.jpg)
 
 In contrast, Terraform uses state files to track resource deployments. Bicep, however, eliminates potential state management complications by querying the Azure Resource Manager directly.
 
-![The image compares key features of Terraform and Bicep, highlighting Terraform's state management and file dependency, and Bicep's lack of state management and direct integration with Azure Resource Manager.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868500/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/terraform-vs-bicep-features-comparison.jpg)
+![The image compares key features of Terraform and Bicep, highlighting Terraform's state management and file dependency, and Bicep's lack of state management and direct integration with Azure Resource Manager.](https://kodekloud.com/kk-media/image/upload/v1752868500/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/terraform-vs-bicep-features-comparison.jpg)
 
 ### Benefits of Bicep
 
@@ -112,7 +112,7 @@ In contrast, Terraform uses state files to track resource deployments. Bicep, ho
 * **Transparent Abstraction:** Automatically compiles to ARM template JSON while keeping the underlying operations hidden.
 * **Strong Typing and Validation:** Enhances development with real-time error checking and IntelliSense support in popular editors.
 
-![The image lists the benefits of Bicep, highlighting four points: easier to understand, less boilerplate code, transparent abstraction, and strong typing and validation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868501/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/bicep-benefits-easier-understand.jpg)
+![The image lists the benefits of Bicep, highlighting four points: easier to understand, less boilerplate code, transparent abstraction, and strong typing and validation.](https://kodekloud.com/kk-media/image/upload/v1752868501/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Infrastructure-as-Code/bicep-benefits-easier-understand.jpg)
 
 Bicep is ideal for developers and cloud engineers who wish to streamline the provisioning and management of Azure resources.
 

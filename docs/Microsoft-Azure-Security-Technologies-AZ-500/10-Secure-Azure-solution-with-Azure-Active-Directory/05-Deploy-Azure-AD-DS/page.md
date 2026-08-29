@@ -12,9 +12,7 @@ In this guide, you'll learn how to deploy Azure AD Domain Services using the Azu
 
 Begin by logging into your [Azure portal](https://portal.azure.com) and searching for "Azure AD Domain Services." This will locate the service along with accompanying documentation and related services.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal with a search for "Azure AD Domain Services" and related services and documentation listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882209/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-portal-search-ad-domain-services.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal with a search for "Azure AD Domain Services" and related services and documentation listed.](https://kodekloud.com/kk-media/image/upload/v1752882209/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-portal-search-ad-domain-services.jpg)
 
 ***
 
@@ -22,9 +20,7 @@ Begin by logging into your [Azure portal](https://portal.azure.com) and searchin
 
 To deploy the service, you must first create an Azure AD Domain Services resource. Start with a resource group (for instance, name it “RG”) and specify a DNS name. For seamless integration with your existing Azure AD, use your default Azure AD DNS name to maintain a consistent domain across services.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating Azure AD Domain Services, with fields for project details such as subscription, resource group, DNS domain name, region, and SKU.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882210/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-portal-create-ad-domain-services.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating Azure AD Domain Services, with fields for project details such as subscription, resource group, DNS domain name, region, and SKU.](https://kodekloud.com/kk-media/image/upload/v1752882210/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-portal-create-ad-domain-services.jpg)
 
 ***
 
@@ -32,13 +28,9 @@ To deploy the service, you must first create an Azure AD Domain Services resourc
 
 Select your preferred region (e.g., East US) and choose an appropriate SKU from enterprise, standard, or premium. If you're uncertain which SKU best meets your requirements, click on "help me choose a SKU" for a detailed review of factors like object count, authentication load per hour, backup frequency, and additional features such as forest trust capabilities.
 
-<Frame>
-  ![The image shows a pricing table for Azure Active Directory Domain Services, detailing different service tiers (Standard, Enterprise, Premium) with associated costs and features like suggested auth load, object count, and backup frequency.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882211/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-active-directory-pricing-table.jpg)
-</Frame>
+![The image shows a pricing table for Azure Active Directory Domain Services, detailing different service tiers (Standard, Enterprise, Premium) with associated costs and features like suggested auth load, object count, and backup frequency.](https://kodekloud.com/kk-media/image/upload/v1752882211/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-active-directory-pricing-table.jpg)
 
-<Callout icon="lightbulb">
-  For a development deployment, the Standard SKU is used. Always analyze your production requirements before choosing a higher SKU level.
-</Callout>
+> **lightbulb** For a development deployment, the Standard SKU is used. Always analyze your production requirements before choosing a higher SKU level.
 
 ***
 
@@ -46,9 +38,7 @@ Select your preferred region (e.g., East US) and choose an appropriate SKU from 
 
 Azure AD Domain Services is deployed into a virtual network. In a new subscription, Azure will automatically propose a virtual network with an address range that avoids conflicts with other networks.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating Azure AD Domain Services, specifically on the "Networking" tab, where users can select a virtual network and subnet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882213/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-ad-domain-services-networking.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating Azure AD Domain Services, specifically on the "Networking" tab, where users can select a virtual network and subnet.](https://kodekloud.com/kk-media/image/upload/v1752882213/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-ad-domain-services-networking.jpg)
 
 ***
 
@@ -56,15 +46,11 @@ Azure AD Domain Services is deployed into a virtual network. In a new subscripti
 
 Manage domain controller administrators by adding users or groups to the Azure AD group named "AADDC administrators." Global administrators can also opt to receive alerts via notifications. To manage permissions, click "manage group membership" and add the required users.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating Azure AD Domain Services, specifically focusing on the "Administration" tab where users can specify administrative privileges and notification settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882214/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-ad-domain-services-admin-tab.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating Azure AD Domain Services, specifically focusing on the "Administration" tab where users can specify administrative privileges and notification settings.](https://kodekloud.com/kk-media/image/upload/v1752882214/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-ad-domain-services-admin-tab.jpg)
 
 For example, add your name to the group:
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for adding members, with options to search for users, groups, devices, and enterprise applications. The screen is currently empty with no members selected.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882214/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-add-members-interface-empty.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for adding members, with options to search for users, groups, devices, and enterprise applications. The screen is currently empty with no members selected.](https://kodekloud.com/kk-media/image/upload/v1752882214/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-add-members-interface-empty.jpg)
 
 ***
 
@@ -72,13 +58,9 @@ For example, add your name to the group:
 
 Navigate to the Synchronization tab and select a synchronization type of "all" to ensure that every identity from Azure AD is synchronized. Additional options (such as TLS mode, NTLM v1, password synchronization, Kerberos, and LDAP) are available to meet specific security and operational needs.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating Azure AD Domain Services, specifically on the "Synchronization" tab. It includes options for synchronization type and filter settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882215/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-ad-domain-services-synchronization.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating Azure AD Domain Services, specifically on the "Synchronization" tab. It includes options for synchronization type and filter settings.](https://kodekloud.com/kk-media/image/upload/v1752882215/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-ad-domain-services-synchronization.jpg)
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for configuring Azure AD Domain Services, specifically focusing on security settings with options to enable or disable features like TLS 1.2, NTLM v1 Authentication, and Kerberos encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882217/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-ad-domain-services-security-settings.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for configuring Azure AD Domain Services, specifically focusing on security settings with options to enable or disable features like TLS 1.2, NTLM v1 Authentication, and Kerberos encryption.](https://kodekloud.com/kk-media/image/upload/v1752882217/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-ad-domain-services-security-settings.jpg)
 
 ***
 
@@ -86,23 +68,15 @@ Navigate to the Synchronization tab and select a synchronization type of "all" t
 
 After configuring all settings, click on "Review + Create" and then "Create" once validation passes.
 
-<Callout icon="triangle-alert">
-  A warning will appear indicating that your configuration choices are final and cannot be modified after deployment. Accept the warning by clicking "OK."
-</Callout>
+> **triangle-alert** A warning will appear indicating that your configuration choices are final and cannot be modified after deployment. Accept the warning by clicking "OK."
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating Azure AD Domain Services, with a warning about final choices that cannot be changed after creation. It includes options for network settings and an administrator group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882218/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-ad-domain-services-portal.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating Azure AD Domain Services, with a warning about final choices that cannot be changed after creation. It includes options for network settings and an administrator group.](https://kodekloud.com/kk-media/image/upload/v1752882218/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-ad-domain-services-portal.jpg)
 
 Once confirmed, wait while the service is deployed. During this time, you may review documentation on trust relationships. Note that while full two-way trust is unsupported with Azure AD Domain Services, you can implement a one-way outbound trust (typically with on-premises environments) to enable authentication for users and applications.
 
-<Frame>
-  ![The image shows a pricing table for Azure Active Directory Domain Services, detailing costs and features for Standard, Enterprise, and Premium tiers. It includes information on suggested load, object count, backup frequency, and pricing for user and resource forests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882219/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-ad-domain-services-pricing-table.jpg)
-</Frame>
+![The image shows a pricing table for Azure Active Directory Domain Services, detailing costs and features for Standard, Enterprise, and Premium tiers. It includes information on suggested load, object count, backup frequency, and pricing for user and resource forests.](https://kodekloud.com/kk-media/image/upload/v1752882219/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-ad-domain-services-pricing-table.jpg)
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page where a deployment is in progress, detailing resources like Azure AD Domain Services, a virtual network, and a network security group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882220/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-portal-deployment-progress.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page where a deployment is in progress, detailing resources like Azure AD Domain Services, a virtual network, and a network security group.](https://kodekloud.com/kk-media/image/upload/v1752882220/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-portal-deployment-progress.jpg)
 
 ***
 
@@ -110,15 +84,11 @@ Once confirmed, wait while the service is deployed. During this time, you may re
 
 While the domain service is deploying, create a virtual machine (VM) that will join the domain. For this demonstration, set up a separate resource group (e.g., “RG workloads”) to host workload VMs. Deploy a Windows Server 2019 Datacenter VM with the necessary credentials, ensuring the RDP port is open for remote access.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a virtual machine, with a notification about submitting a deployment template. Pricing details and terms are also visible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882221/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-portal-virtual-machine-deployment.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a virtual machine, with a notification about submitting a deployment template. Pricing details and terms are also visible.](https://kodekloud.com/kk-media/image/upload/v1752882221/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-portal-virtual-machine-deployment.jpg)
 
 After deployment, verify the status of Azure AD Domain Services from the Azure portal.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for "kodekloudlabs.onmicrosoft.com," indicating that the Azure AD Domain Services are running, with options to view health and manage settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882223/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-portal-kodekloudlabs-ad-services.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for "kodekloudlabs.onmicrosoft.com," indicating that the Azure AD Domain Services are running, with options to view health and manage settings.](https://kodekloud.com/kk-media/image/upload/v1752882223/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-portal-kodekloudlabs-ad-services.jpg)
 
 ***
 
@@ -126,15 +96,11 @@ After deployment, verify the status of Azure AD Domain Services from the Azure p
 
 If you encounter a warning regarding DNS records, click on it to review detailed network analysis. This warning indicates that you need to update the virtual network's DNS servers with the domain controllers’ IP addresses to allow domain join operations.
 
-<Frame>
-  ![The image shows a Microsoft Azure configuration diagnostics page for a domain service, indicating a warning related to DNS server settings that need configuration for a virtual network.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882224/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-configuration-diagnostics-dns-warning.jpg)
-</Frame>
+![The image shows a Microsoft Azure configuration diagnostics page for a domain service, indicating a warning related to DNS server settings that need configuration for a virtual network.](https://kodekloud.com/kk-media/image/upload/v1752882224/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-configuration-diagnostics-dns-warning.jpg)
 
 Examine the underlying network configuration via the virtual network diagram. This diagram displays two network interfaces for the domain controllers that must be added as DNS servers.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying a virtual network diagram for "aadds-vnet," including subnet components and network interfaces.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882225/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-portal-aadds-vnet-diagram.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying a virtual network diagram for "aadds-vnet," including subnet components and network interfaces.](https://kodekloud.com/kk-media/image/upload/v1752882225/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-portal-aadds-vnet-diagram.jpg)
 
 Next, update the DNS settings of your target VM by following these steps:
 
@@ -143,9 +109,7 @@ Next, update the DNS settings of your target VM by following these steps:
 3. Enter the IP addresses of the domain controllers (or Azure AD Domain Services).
 4. Save the changes. Note that the VM will restart to apply the updated DNS settings.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface where DNS server settings for a virtual network named "win-iis-01-vnet" are being configured with custom IP addresses. A notification indicates that the DNS settings have been successfully saved.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882227/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-portal-dns-settings-win-iis-01.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface where DNS server settings for a virtual network named "win-iis-01-vnet" are being configured with custom IP addresses. A notification indicates that the DNS settings have been successfully saved.](https://kodekloud.com/kk-media/image/upload/v1752882227/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-portal-dns-settings-win-iis-01.jpg)
 
 After the VM restarts, confirm the updated DNS settings by running the following command in Command Prompt or PowerShell:
 
@@ -195,9 +159,7 @@ If the ping test initially shows timeouts, establish connectivity between the vi
 2. Click "Add peering" and configure it (for example, name it "AAD to IAS"), ensuring that inbound and outbound traffic is allowed.
 3. Select the IaaS network as the remote network and click "Add."
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for adding a virtual network peering. It includes options for configuring traffic settings and selecting a virtual network gateway or route server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882228/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-portal-virtual-network-peering.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for adding a virtual network peering. It includes options for configuring traffic settings and selecting a virtual network gateway or route server.](https://kodekloud.com/kk-media/image/upload/v1752882228/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/azure-portal-virtual-network-peering.jpg)
 
 With peering in place, the networks can communicate. Confirm this by running the ping command again:
 
@@ -224,15 +186,11 @@ Once network connectivity is confirmed, join the VM to the domain:
 1. Open System Properties or use the “Change settings” option in the System control panel.
 2. Set the computer name to match the domain name provided in the Azure portal.
 
-<Callout icon="lightbulb">
-  If your domain administrative password hasn’t synchronized yet, you might encounter authentication issues. In such cases, use the self-service password reset (SSPR) portal at [https://aka.ms/SSPR](https://aka.ms/SSPR) to reset your password. Note that synchronization may take 10 to 15 minutes.
-</Callout>
+> **lightbulb** If your domain administrative password hasn’t synchronized yet, you might encounter authentication issues. In such cases, use the self-service password reset (SSPR) portal at [https://aka.ms/SSPR](https://aka.ms/SSPR) to reset your password. Note that synchronization may take 10 to 15 minutes.
 
 After you successfully join the domain, restart the computer to finalize the process.
 
-<Frame>
-  ![The image shows the Server Manager dashboard on a Windows system, with a dialog box for changing the computer name/domain and a confirmation message about joining a domain.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882229/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/server-manager-dashboard-computer-name.jpg)
-</Frame>
+![The image shows the Server Manager dashboard on a Windows system, with a dialog box for changing the computer name/domain and a confirmation message about joining a domain.](https://kodekloud.com/kk-media/image/upload/v1752882229/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/server-manager-dashboard-computer-name.jpg)
 
 ***
 
@@ -246,9 +204,7 @@ After the VM has joined the domain, log in using domain administrator credential
 
 Once RSAT is installed, open the Active Directory Administrative Center to view and manage domain objects such as users and groups.
 
-<Frame>
-  ![The image shows the Active Directory Administrative Center on a Windows Server Manager dashboard, displaying a list of user groups and their details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882230/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/active-directory-user-groups-dashboard.jpg)
-</Frame>
+![The image shows the Active Directory Administrative Center on a Windows Server Manager dashboard, displaying a list of user groups and their details.](https://kodekloud.com/kk-media/image/upload/v1752882230/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-DS/active-directory-user-groups-dashboard.jpg)
 
 Additionally, use DNS Manager to monitor your forward lookup zones and manage DNS records for your domain, ensuring that both the IIS server and management VM (which are domain-joined) are operating correctly.
 
@@ -260,6 +216,4 @@ This guide demonstrated how to deploy Azure AD Domain Services using the Azure p
 
 Thank you for reading this comprehensive walkthrough on deploying Azure AD Domain Services. For additional information, refer to the official [Azure Documentation](https://docs.microsoft.com/azure/active-directory-domain-services/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c0f70ae1-790f-4a5d-8e09-29450b5ee610/lesson/6b716332-ca65-47fc-88bf-cc5c9da34361" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c0f70ae1-790f-4a5d-8e09-29450b5ee610/lesson/6b716332-ca65-47fc-88bf-cc5c9da34361)

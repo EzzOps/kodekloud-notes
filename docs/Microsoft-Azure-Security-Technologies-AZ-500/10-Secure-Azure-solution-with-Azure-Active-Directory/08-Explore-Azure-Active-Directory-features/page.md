@@ -10,9 +10,7 @@ Azure Active Directory (Azure AD) lies at the heart of Microsoft's cloud ecosyst
 
 Imagine unlocking multiple digital doors with a single password. Single Sign-On (SSO) streamlines user access across numerous applications by eliminating the need for multiple credentials. This efficiency not only improves user experience but also boosts overall productivity.
 
-<Callout icon="lightbulb">
-  Reducing password fatigue through SSO minimizes administrative overhead and enhances system security.
-</Callout>
+> **lightbulb** Reducing password fatigue through SSO minimizes administrative overhead and enhances system security.
 
 ## Application Management
 
@@ -46,6 +44,4 @@ One of Azure AD’s standout features is its seamless integration with a variety
 
 Azure Active Directory is more than an identity management tool—it is a catalyst for digital transformation. Combining state-of-the-art security measures, comprehensive monitoring, and seamless integration, Azure AD empowers organizations to innovate safely and operate efficiently in the digital age.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c0f70ae1-790f-4a5d-8e09-29450b5ee610/lesson/7f8d4957-a202-4cfb-8f52-d611a7daf97b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c0f70ae1-790f-4a5d-8e09-29450b5ee610/lesson/7f8d4957-a202-4cfb-8f52-d611a7daf97b)

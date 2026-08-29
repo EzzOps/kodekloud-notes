@@ -20,7 +20,7 @@ This collaborative environment is tailored for ML engineers, data engineers, and
 
 Databricks Machine Learning offers a comprehensive, end-to-end solution for managing the entire machine learning lifecycle. From experiment tracking and model training to feature development and model serving, this environment covers every aspect of deploying machine learning models in production.
 
-![The image is an infographic about Azure Databricks, highlighting its features: Databricks SQL, Databricks Data Science and Engineering, and Databricks Machine Learning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866911/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Databricks/azure-databricks-infographic-features.jpg)
+![The image is an infographic about Azure Databricks, highlighting its features: Databricks SQL, Databricks Data Science and Engineering, and Databricks Machine Learning.](https://kodekloud.com/kk-media/image/upload/v1752866911/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Databricks/azure-databricks-infographic-features.jpg)
 
 ## How Azure Databricks Works
 
@@ -32,7 +32,7 @@ Azure Databricks operates using two distinct planes: the control plane and the d
 * Manages user sessions through components such as the web application, Hive metastore, and access control lists (ACLs).
 * Is managed by Databricks in collaboration with Microsoft and does not reside within your Azure subscription.
 
-![The image explains how Azure Databricks works, highlighting the control plane and data plane, with a puzzle cube illustration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866912/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Databricks/azure-databricks-control-data-plane.jpg)
+![The image explains how Azure Databricks works, highlighting the control plane and data plane, with a puzzle cube illustration.](https://kodekloud.com/kk-media/image/upload/v1752866912/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Databricks/azure-databricks-control-data-plane.jpg)
 
 > **lightbulb** The separation between the control and data planes ensures that while Databricks manages the orchestration and session governance, your data remains secure within your own Azure subscription.
 
@@ -74,7 +74,7 @@ Azure Databricks is versatile and can be applied in various scenarios. Here are 
 * Streamlines end-to-end machine learning workflows, covering experiment tracking, model training, feature development, and model deployment.
 * Is ideal for organizations looking to manage the entire lifecycle of machine learning models within a single environment.
 
-![The image is an infographic from KodeKloud titled "When to use Azure Databricks?" It outlines five scenarios for using Azure Databricks: data preparation, developing insights, increasing productivity, big data, and machine learning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866914/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Databricks/azure-databricks-use-cases-infographic.jpg)
+![The image is an infographic from KodeKloud titled "When to use Azure Databricks?" It outlines five scenarios for using Azure Databricks: data preparation, developing insights, increasing productivity, big data, and machine learning.](https://kodekloud.com/kk-media/image/upload/v1752866914/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Databricks/azure-databricks-use-cases-infographic.jpg)
 
 Depending on your specific requirements, you might choose:
 

@@ -47,11 +47,11 @@ steps:
 
 > **lightbulb** When targeting a self-hosted pool, remove the `vmImage` setting. Jobs run on your specified agents.
 
-![The image shows a screenshot of the Azure DevOps interface, specifically the "Agent pools" section under "Project Settings," displaying details of an agent named "KodeKloudAgent1" which is online and idle.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867386/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-agent-pools-kodekloudagent1.jpg)
+![The image shows a screenshot of the Azure DevOps interface, specifically the "Agent pools" section under "Project Settings," displaying details of an agent named "KodeKloudAgent1" which is online and idle.](https://kodekloud.com/kk-media/image/upload/v1752867386/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-agent-pools-kodekloudagent1.jpg)
 
 Save and queue your pipeline. You should see a successful run:
 
-![The image shows an Azure DevOps pipeline interface with a build summary for a project called "SimpleWebAPI." It displays details such as the trigger, repository, branch, and job status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867387/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-pipeline-simplewebapi-summary.jpg)
+![The image shows an Azure DevOps pipeline interface with a build summary for a project called "SimpleWebAPI." It displays details such as the trigger, repository, branch, and job status.](https://kodekloud.com/kk-media/image/upload/v1752867387/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-pipeline-simplewebapi-summary.jpg)
 
 ***
 
@@ -81,9 +81,9 @@ jobs:
           azure-devops-token: ${{ secrets.AZURE_DEVOPS_TOKEN }}
 ```
 
-![The image shows a GitHub Actions setup page for a repository, suggesting workflows for building and deploying applications, such as a .NET Desktop app.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867388/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/github-actions-setup-workflows-dotnet.jpg)
+![The image shows a GitHub Actions setup page for a repository, suggesting workflows for building and deploying applications, such as a .NET Desktop app.](https://kodekloud.com/kk-media/image/upload/v1752867388/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/github-actions-setup-workflows-dotnet.jpg)
 
-![The image shows a GitHub interface where a user is editing a YAML file for a workflow in a repository. The right side displays a marketplace with featured actions like setting up Node.js and Java JDK environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867389/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/github-yaml-workflow-editing-marketplace.jpg)
+![The image shows a GitHub interface where a user is editing a YAML file for a workflow in a repository. The right side displays a marketplace with featured actions like setting up Node.js and Java JDK environments.](https://kodekloud.com/kk-media/image/upload/v1752867389/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/github-yaml-workflow-editing-marketplace.jpg)
 
 ***
 
@@ -96,19 +96,19 @@ In GitHub, go to **Settings** → **Secrets and variables** → **Actions** and 
 | AZURE\_DEVOPS\_PROJECT\_URL | `https://dev.azure.com/yourOrg/yourProject` |
 | AZURE\_DEVOPS\_TOKEN        | *(your Azure DevOps PAT)*                   |
 
-![The image shows a GitHub repository settings page where a new secret is being added under "Actions secrets." The secret is named "AZURE\_DEVOPS\_PROJECT\_URL" with a URL provided in the secret field.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867390/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/github-repo-settings-actions-secret.jpg)
+![The image shows a GitHub repository settings page where a new secret is being added under "Actions secrets." The secret is named "AZURE\_DEVOPS\_PROJECT\_URL" with a URL provided in the secret field.](https://kodekloud.com/kk-media/image/upload/v1752867390/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/github-repo-settings-actions-secret.jpg)
 
-![The image shows a GitHub repository settings page for managing "Actions secrets and variables," with options to add new repository secrets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867391/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/github-repo-settings-actions-secrets.jpg)
+![The image shows a GitHub repository settings page for managing "Actions secrets and variables," with options to add new repository secrets.](https://kodekloud.com/kk-media/image/upload/v1752867391/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/github-repo-settings-actions-secrets.jpg)
 
-![The image shows a GitHub repository settings page, specifically the "Secrets and variables" section, with two repository secrets listed: "AZURE\_DEVOPS\_PROJECT\_URL" and "AZURE\_DEVOPS\_TOKEN".](../../../../images/kodekloud.com/kk-media/image/upload/v1752867392/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/github-repo-settings-secrets-variables.jpg)
+![The image shows a GitHub repository settings page, specifically the "Secrets and variables" section, with two repository secrets listed: "AZURE\_DEVOPS\_PROJECT\_URL" and "AZURE\_DEVOPS\_TOKEN".](https://kodekloud.com/kk-media/image/upload/v1752867392/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/github-repo-settings-secrets-variables.jpg)
 
 Commit your workflow to `main`. The GitHub Action triggers immediately, and you should see a corresponding run in Azure Pipelines.
 
-![The image shows an Azure DevOps pipeline run summary for a project named "SimpleWebAPI," indicating a successful job execution. The pipeline was triggered by a user and completed in 14 seconds.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867393/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-simplewebapi-pipeline-summary.jpg)
+![The image shows an Azure DevOps pipeline run summary for a project named "SimpleWebAPI," indicating a successful job execution. The pipeline was triggered by a user and completed in 14 seconds.](https://kodekloud.com/kk-media/image/upload/v1752867393/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-simplewebapi-pipeline-summary.jpg)
 
-![The image shows a GitHub Actions workflow summary with a successful build job and annotations indicating warnings about deprecated Node.js versions and commands.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867393/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/github-actions-workflow-success-warnings.jpg)
+![The image shows a GitHub Actions workflow summary with a successful build job and annotations indicating warnings about deprecated Node.js versions and commands.](https://kodekloud.com/kk-media/image/upload/v1752867393/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/github-actions-workflow-success-warnings.jpg)
 
-![The image shows an Azure DevOps pipeline interface with a list of recent pipeline runs for a project named "SimpleWebAPI," all of which have successfully completed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867394/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-pipeline-simplewebapi-successful.jpg)
+![The image shows an Azure DevOps pipeline interface with a list of recent pipeline runs for a project named "SimpleWebAPI," all of which have successfully completed.](https://kodekloud.com/kk-media/image/upload/v1752867394/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-pipeline-simplewebapi-successful.jpg)
 
 ***
 
@@ -162,7 +162,7 @@ Navigate to **Azure Boards** and locate the work item you need to address. For t
 * Work Item ID: **69**
 * Title: *“Add a sentence to the README file.”*
 
-![The image shows a screenshot of a work items list from Azure DevOps, displaying tasks with details such as ID, title, assigned person, state, and area path. The tasks are unassigned and marked as "To Do" under the "Customer Portal" area.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867396/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Repository-Integration-with-Azure-Boards/azure-devops-work-items-to-do-list.jpg)
+![The image shows a screenshot of a work items list from Azure DevOps, displaying tasks with details such as ID, title, assigned person, state, and area path. The tasks are unassigned and marked as "To Do" under the "Customer Portal" area.](https://kodekloud.com/kk-media/image/upload/v1752867396/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Repository-Integration-with-Azure-Boards/azure-devops-work-items-to-do-list.jpg)
 
 Make note of this ID—you’ll need it when linking your commit or pull request.
 
@@ -204,7 +204,7 @@ git push origin main
 
 Return to the work item in Azure Boards (ID 69). In the **Development** section, you should see the linked commit and any associated pull requests.
 
-![The image shows an Azure DevOps interface displaying a repository named "Customer Portal" with files like azure-pipelines.yml and README.md. The README file contains sections for introduction, getting started, build and test, and contribute.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867398/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Repository-Integration-with-Azure-Boards/azure-devops-customer-portal-repo.jpg)
+![The image shows an Azure DevOps interface displaying a repository named "Customer Portal" with files like azure-pipelines.yml and README.md. The README file contains sections for introduction, getting started, build and test, and contribute.](https://kodekloud.com/kk-media/image/upload/v1752867398/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Repository-Integration-with-Azure-Boards/azure-devops-customer-portal-repo.jpg)
 
 ***
 

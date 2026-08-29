@@ -6,9 +6,7 @@ This article introduces a hands-on Kubernetes Networking course featuring browse
 
 Welcome to the **Kubernetes Networking** course! I’m Weston Bassler, your instructor for this hands-on journey into container networking. Unlike traditional tutorials, this course features instant, browser-based labs so you can apply new concepts the moment you learn them.
 
-<Callout icon="lightbulb">
-  All labs spin up directly in your browser—no local installation needed. Just log in and start practicing!
-</Callout>
+> **lightbulb** All labs spin up directly in your browser—no local installation needed. Just log in and start practicing!
 
 ***
 
@@ -51,6 +49,4 @@ By the end of this course, you’ll have a thorough understanding of Kubernetes 
 
 Let’s get started on mastering Kubernetes networking together!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/0ef9d5a8-532a-4e0a-8fdc-fc2845255bd7/lesson/2db1c2a6-371b-440e-bb27-3fc96c785816" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/0ef9d5a8-532a-4e0a-8fdc-fc2845255bd7/lesson/2db1c2a6-371b-440e-bb27-3fc96c785816)

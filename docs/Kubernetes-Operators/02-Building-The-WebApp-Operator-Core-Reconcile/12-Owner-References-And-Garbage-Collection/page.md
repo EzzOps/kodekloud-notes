@@ -69,13 +69,9 @@ Best practices summary
 | Reconcile on child change                        | Changes to child enqueue parent for reconciliation (when watched) | Use when you want a single reconciliation point for parent-managed children           |
 | Cross-namespace ownership                        | Not supported unless the owner is cluster-scoped                  | Avoid ownerReferences across namespaces; prefer explicit cleanup or different design  |
 
-<Callout icon="lightbulb">
-  Set the controller reference for every child the WebApp creates before you call the API to create that child. This avoids orphaned resources and makes ownership visible with `kubectl` inspection.
-</Callout>
+> **lightbulb** Set the controller reference for every child the WebApp creates before you call the API to create that child. This avoids orphaned resources and makes ownership visible with `kubectl` inspection.
 
-<Callout icon="warning">
-  Owner references have important constraints: owners and dependents must be in the same namespace unless the owner is cluster-scoped. Also, be cautious when setting ownerReferences for resources created by users outside the operator—you may unintentionally enable deletion of user-managed objects.
-</Callout>
+> **warning** Owner references have important constraints: owners and dependents must be in the same namespace unless the owner is cluster-scoped. Also, be cautious when setting ownerReferences for resources created by users outside the operator—you may unintentionally enable deletion of user-managed objects.
 
 For this lesson, follow this simple rule: every child the WebApp creates should get a controller reference to the WebApp before creation. Doing so prevents orphaned resources, enables automatic garbage collection, and integrates child-change events into the parent’s reconciliation lifecycle.
 
@@ -90,8 +86,6 @@ Links and references
 * Garbage collection in Kubernetes: [https://kubernetes.io/docs/concepts/workloads/controllers/garbage-collection/](https://kubernetes.io/docs/concepts/workloads/controllers/garbage-collection/)
 * controller-runtime `SetControllerReference`: [https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/controller/controllerutil#SetControllerReference](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/controller/controllerutil#SetControllerReference)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/2c5de16a-1141-4e94-9284-e6c9d55a2b7f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/2c5de16a-1141-4e94-9284-e6c9d55a2b7f)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/2cd4e01e-f876-46b9-ac4b-bb0a11becd4d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/2cd4e01e-f876-46b9-ac4b-bb0a11becd4d)

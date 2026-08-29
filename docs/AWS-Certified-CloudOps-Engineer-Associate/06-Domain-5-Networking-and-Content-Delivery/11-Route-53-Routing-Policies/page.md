@@ -17,7 +17,7 @@ Route 53 supports eight distinct routing policies:
 * Multivalue Answer Routing Policy
 * Weighted Routing Policy
 
-![The image lists different types of routing policies, including Simple, Failover, Geolocation, Geoproximity, Latency, IP-Based, Multivalue Answer, and Weighted Routing Policies. Each policy is represented with an icon and a label.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860896/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/routing-policies-icons-list.jpg)
+![The image lists different types of routing policies, including Simple, Failover, Geolocation, Geoproximity, Latency, IP-Based, Multivalue Answer, and Weighted Routing Policies. Each policy is represented with an icon and a label.](https://kodekloud.com/kk-media/image/upload/v1752860896/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/routing-policies-icons-list.jpg)
 
 Understanding the functionalities and nuances of these policies will help you answer exam questions confidently and build robust architectures for dynamic traffic management. Let’s delve into each policy with detailed explanations and implementation steps.
 
@@ -27,7 +27,7 @@ Understanding the functionalities and nuances of these policies will help you an
 
 The Simple Routing Policy creates a direct one-to-one mapping between DNS queries and a single resource, such as an IP address or server. It excludes advanced configurations like traffic distribution, redundancy, or geo-based routing.
 
-![The image illustrates a simple routing policy, showing a flow from a user to a Route 53 icon, then to a computing icon, and finally to a web page icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860898/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/routing-policy-user-to-webpage.jpg)
+![The image illustrates a simple routing policy, showing a flow from a user to a Route 53 icon, then to a computing icon, and finally to a web page icon.](https://kodekloud.com/kk-media/image/upload/v1752860898/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/routing-policy-user-to-webpage.jpg)
 
 To implement this policy, select a public or private hosted zone, create the necessary record (A, AAAA, CNAME, etc.), and configure the details. Note that DNS health checks are not part of this simple configuration.
 
@@ -39,7 +39,7 @@ To implement this policy, select a public or private hosted zone, create the nec
 
 The Failover Routing Policy enhances disaster recovery and high availability. It works by designating primary and secondary resources, automatically redirecting traffic to the standby resource if the primary one fails a health check. Only one resource remains active at any moment.
 
-![The image illustrates a failover routing policy, showing a user connecting to a Route 53 service, which directs traffic to a primary active resource and a secondary passive resource.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860899/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/failover-routing-policy-route53-traffic.jpg)
+![The image illustrates a failover routing policy, showing a user connecting to a Route 53 service, which directs traffic to a primary active resource and a secondary passive resource.](https://kodekloud.com/kk-media/image/upload/v1752860899/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/failover-routing-policy-route53-traffic.jpg)
 
 While you can use reverse policies, a weighted routing policy might be preferable for active-active configurations. The setup process involves:
 
@@ -47,7 +47,7 @@ While you can use reverse policies, a weighted routing policy might be preferabl
 2. Setting primary and secondary records.
 3. Configuring DNS or load balancer health checks.
 
-![The image outlines the steps for implementing a failover routing policy, including choosing hosted zones, creating a primary record, configuring primary and secondary resources, and setting up health checks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860900/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/failover-routing-policy-implementation.jpg)
+![The image outlines the steps for implementing a failover routing policy, including choosing hosted zones, creating a primary record, configuring primary and secondary resources, and setting up health checks.](https://kodekloud.com/kk-media/image/upload/v1752860900/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/failover-routing-policy-implementation.jpg)
 
 ***
 
@@ -57,7 +57,7 @@ Geolocation routing directs traffic based on the geographical location of users 
 
 For example, you can configure Route 53 to route users located in France, Spain, or Ireland to designated endpoints. The configuration process mirrors other routing policies: select the hosted zone, create a DNS record, and configure geolocation settings with the appropriate resource details.
 
-![The image illustrates a geolocation routing policy, showing a user near Region B being directed through a Route 53 service to the appropriate server in Region B.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860902/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/geolocation-routing-policy-route53.jpg)
+![The image illustrates a geolocation routing policy, showing a user near Region B being directed through a Route 53 service to the appropriate server in Region B.](https://kodekloud.com/kk-media/image/upload/v1752860902/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/geolocation-routing-policy-route53.jpg)
 
 ***
 
@@ -72,7 +72,7 @@ For instance, users in northern Great Britain might be routed to an Ireland data
 3. Configure the geoproximity settings.
 4. Provide resource details.
 
-![The image shows a geoproxity map divided into five colored regions, each marked with a number, illustrating a routing policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860903/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/geoproxity-map-routing-policy-regions.jpg)
+![The image shows a geoproxity map divided into five colored regions, each marked with a number, illustrating a routing policy.](https://kodekloud.com/kk-media/image/upload/v1752860903/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/geoproxity-map-routing-policy-regions.jpg)
 
 ***
 
@@ -82,7 +82,7 @@ Latency Routing Policy improves user experience by directing traffic to the regi
 
 The setup mirrors that of other policies: create a hosted zone, establish the record, and configure latency settings for each targeted region.
 
-![The image illustrates a latency routing policy, showing how a user is directed to the lowest latency region between two options, Region A and Region B, using a Route 53 service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860904/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/latency-routing-policy-route53.jpg)
+![The image illustrates a latency routing policy, showing how a user is directed to the lowest latency region between two options, Region A and Region B, using a Route 53 service.](https://kodekloud.com/kk-media/image/upload/v1752860904/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/latency-routing-policy-route53.jpg)
 
 ***
 
@@ -97,7 +97,7 @@ To implement this policy, follow these steps:
 3. Configure the IP-based settings.
 4. Provide the necessary resource details.
 
-![The image outlines the steps for implementing an IP-based routing policy, including choosing hosted zones, creating a record, configuring IP-based settings, and entering resource details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860905/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/ip-based-routing-policy-implementation.jpg)
+![The image outlines the steps for implementing an IP-based routing policy, including choosing hosted zones, creating a record, configuring IP-based settings, and entering resource details.](https://kodekloud.com/kk-media/image/upload/v1752860905/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/ip-based-routing-policy-implementation.jpg)
 
 ***
 
@@ -107,7 +107,7 @@ The Multivalue Answer Routing Policy enables Route 53 to return up to eight heal
 
 It is an excellent option when you need to distribute traffic across multiple endpoints without the complexity of advanced configurations.
 
-![The image illustrates a multivalue answer routing policy, showing how Route 53 randomly selects from healthy records to balance traffic across multiple resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860907/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/route-53-multivalue-routing-policy.jpg)
+![The image illustrates a multivalue answer routing policy, showing how Route 53 randomly selects from healthy records to balance traffic across multiple resources.](https://kodekloud.com/kk-media/image/upload/v1752860907/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/route-53-multivalue-routing-policy.jpg)
 
 Setup involves creating a hosted zone, adding multiple records with their respective health checks, and specifying the resource details.
 
@@ -123,9 +123,9 @@ A weight set to zero effectively removes a resource from serving traffic. Implem
 2. Adding the DNS record.
 3. Specifying the weights and resource details.
 
-![The image illustrates a weighted routing policy, showing a user's IP address being directed to production and staging environments with weights of 80% and 20%, respectively.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860908/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/weighted-routing-policy-ip-address.jpg)
+![The image illustrates a weighted routing policy, showing a user's IP address being directed to production and staging environments with weights of 80% and 20%, respectively.](https://kodekloud.com/kk-media/image/upload/v1752860908/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/weighted-routing-policy-ip-address.jpg)
 
-![The image outlines the implementation steps for a weighted routing policy, including choosing hosted zones, creating records, specifying weights, and entering resource details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860909/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/weighted-routing-policy-implementation-steps.jpg)
+![The image outlines the implementation steps for a weighted routing policy, including choosing hosted zones, creating records, specifying weights, and entering resource details.](https://kodekloud.com/kk-media/image/upload/v1752860909/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Routing-Policies/weighted-routing-policy-implementation-steps.jpg)
 
 ***
 

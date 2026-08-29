@@ -17,9 +17,7 @@ def visualize_tensor(tensor):
 
 After installing the Python extension, you have access to various features that streamline development, including debugging, snippet support, and intelligent code completion.
 
-<Frame>
-  ![The image shows the Visual Studio Code extensions marketplace with a focus on the Python extension, displaying details such as ratings, installation options, and support information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883173/notes-assets/images/PyTorch-Course-Structure/vscode-python-extension-marketplace.jpg)
-</Frame>
+![The image shows the Visual Studio Code extensions marketplace with a focus on the Python extension, displaying details such as ratings, installation options, and support information.](https://kodekloud.com/kk-media/image/upload/v1752883173/notes-assets/images/PyTorch-Course-Structure/vscode-python-extension-marketplace.jpg)
 
 ***
 
@@ -79,9 +77,7 @@ root@pytorch PyTorch on  🌳 main via 🐍 v3.11.4 (venv) ➔ /root/venv/bin/py
 root@pytorch PyTorch on  🚀 main [!]? via 🐍 v3.11.4 (venv) *
 ```
 
-<Callout icon="lightbulb">
-  Running your scripts both in the IDE and the terminal helps solidify your understanding of PyTorch operations across different environments.
-</Callout>
+> **lightbulb** Running your scripts both in the IDE and the terminal helps solidify your understanding of PyTorch operations across different environments.
 
 ***
 
@@ -97,9 +93,7 @@ For further reading and more resources, check out the following:
 * [Jupyter Notebook Documentation](https://jupyter.org/documentation)
 * [Visual Studio Code Documentation](https://code.visualstudio.com/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/c75e932d-fe2f-4f2d-874b-4bee72227c2f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/c75e932d-fe2f-4f2d-874b-4bee72227c2f)
 
 
 # Demo Introduction to PyTorch Tensors

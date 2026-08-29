@@ -98,9 +98,7 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-<Callout icon="lightbulb">
-  Be sure to replace `54.226.13.161:9092` in the `bootstrap.servers` configuration with the public IP of your Kafka [Amazon Elastic Compute Cloud (EC2)](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2) instance and the correct port. If broker is not reachable, the producer will fail to connect.
-</Callout>
+> **lightbulb** Be sure to replace `54.226.13.161:9092` in the `bootstrap.servers` configuration with the public IP of your Kafka [Amazon Elastic Compute Cloud (EC2)](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2) instance and the correct port. If broker is not reachable, the producer will fail to connect.
 
 ## Updating the bootstrap server
 
@@ -170,9 +168,7 @@ With the Toy Shop producing order events to the `cartevent` topic, a logical nex
 * [Confluent Python Client (confluent-kafka)](https://github.com/confluentinc/confluent-kafka-python)
 * [Amazon EC2 Documentation](https://docs.aws.amazon.com/ec2/index.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/event-streaming-with-kafka/module/95f49caf-8e0b-4ed9-b7dd-9f43ff31ed9a/lesson/4eeb78bb-a67b-4178-8964-28da52079754" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/event-streaming-with-kafka/module/95f49caf-8e0b-4ed9-b7dd-9f43ff31ed9a/lesson/4eeb78bb-a67b-4178-8964-28da52079754)
 
 
 # Demo Starting Our Internal Interface

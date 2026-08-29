@@ -18,7 +18,7 @@ QuickSight easily integrates with core AWS services:
 * **Relational Databases:** QuickSight connects with RDS, Aurora (the cloud-native variant of MySQL and PostgreSQL), and third-party databases like SQL Server and MySQL.
 * **Data Warehouses & Data Catalogs:** Integrate with Amazon Redshift and data catalogs provided by Glue, including both Glue ETL and Glue DataBrew.
 
-![The image illustrates AWS QuickSight integrating with various AWS services like S3, Athena, RDS, Redshift, Aurora, and Glue, and visualizing data through charts and graphs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865085/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Quicksight/aws-quicksight-integration-visualization.jpg)
+![The image illustrates AWS QuickSight integrating with various AWS services like S3, Athena, RDS, Redshift, Aurora, and Glue, and visualizing data through charts and graphs.](https://kodekloud.com/kk-media/image/upload/v1752865085/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Quicksight/aws-quicksight-integration-visualization.jpg)
 
 ## The SPICE Engine
 
@@ -30,7 +30,7 @@ At the core of QuickSight is the SPICE engine (Super-fast, Parallel, In-memory C
 
 This high-speed performance means you always see the most current information without manual refreshes. Additionally, SPICE scales automatically to handle large volumes of complex data, ensuring efficient and reliable data processing.
 
-![The image is a diagram showing AWS QuickSight integrating with various AWS services like S3, Athena, RDS, Redshift, Aurora, and Glue, with a focus on data visualization using the SPICE engine.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865086/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Quicksight/aws-quicksight-data-visualization-diagram.jpg)
+![The image is a diagram showing AWS QuickSight integrating with various AWS services like S3, Athena, RDS, Redshift, Aurora, and Glue, with a focus on data visualization using the SPICE engine.](https://kodekloud.com/kk-media/image/upload/v1752865086/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Quicksight/aws-quicksight-data-visualization-diagram.jpg)
 
 ### Enhanced Security and Machine Learning
 
@@ -39,7 +39,7 @@ Security remains a top priority:
 * SPICE encrypts data at rest and in transit, maintaining confidentiality.
 * SPICE powers QuickSight Q, which supports natural language queries and leverages machine learning for anomaly detection and forecasting.
 
-![The image describes the features of SPICE (Super-fast, Parallel, In-memory Calculation Engine) used in QuickSight, highlighting its benefits like high-speed data processing, in-memory storage, automatic dataset refresh, scalability, encryption, and support for natural language querying.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865087/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Quicksight/spice-features-quicksight-benefits.jpg)
+![The image describes the features of SPICE (Super-fast, Parallel, In-memory Calculation Engine) used in QuickSight, highlighting its benefits like high-speed data processing, in-memory storage, automatic dataset refresh, scalability, encryption, and support for natural language querying.](https://kodekloud.com/kk-media/image/upload/v1752865087/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Quicksight/spice-features-quicksight-benefits.jpg)
 
 ## Fully Managed and Serverless
 
@@ -50,7 +50,7 @@ QuickSight is a fully managed, serverless service. This means you don’t have t
 * **Machine Learning Insights:** Utilize features like forecasting, anomaly detection, and natural language narratives.
 * **Broad Data Integration:** Besides seamless integration with AWS services (RDS, Aurora, Redshift, Athena), QuickSight also supports external data sources.
 
-![The image lists five features: Serverless and Fully Managed, SPICE Engine, Interactive Dashboards, Data Preparation and ML Insight, and Integration with AWS Ecosystem. Each feature is accompanied by an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865088/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Quicksight/serverless-features-aws-integration.jpg)
+![The image lists five features: Serverless and Fully Managed, SPICE Engine, Interactive Dashboards, Data Preparation and ML Insight, and Integration with AWS Ecosystem. Each feature is accompanied by an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752865088/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Quicksight/serverless-features-aws-integration.jpg)
 
 > **lightbulb** QuickSight's serverless architecture means less operational overhead, allowing you to focus on gaining insights from your data rather than managing infrastructure.
 

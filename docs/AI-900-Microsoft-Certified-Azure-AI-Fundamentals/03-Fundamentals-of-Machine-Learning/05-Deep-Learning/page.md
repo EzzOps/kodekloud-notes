@@ -10,11 +10,11 @@ Deep Learning is an advanced subfield of machine learning inspired by the struct
 
 Artificial neural networks simulate biological neurons by receiving input, processing it, and transmitting output. Each artificial neuron multiplies its input by a weight that reflects the importance of that feature. For instance, when predicting house prices, the number of rooms may be weighted differently than the room size. An activation function then decides whether the neuron’s output should move to the next layer, filtering the most relevant information.
 
-![The image illustrates the concept of an artificial neural network, showing how each neuron processes an input and a weight, with activation functions determining signal propagation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856989/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Deep-Learning/artificial-neural-network-diagram.jpg)
+![The image illustrates the concept of an artificial neural network, showing how each neuron processes an input and a weight, with activation functions determining signal propagation.](https://kodekloud.com/kk-media/image/upload/v1752856989/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Deep-Learning/artificial-neural-network-diagram.jpg)
 
 Deep learning models, also known as deep neural networks (DNNs), consist of multiple layers that progressively refine the data. This hierarchical structure allows these models to learn complex patterns gradually from raw input data.
 
-![The image is an infographic about artificial neural networks, explaining that they consist of multiple layers of neurons, often called deep neural networks, and are used for machine learning, natural language processing, and computer vision.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856990/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Deep-Learning/artificial-neural-networks-infographic.jpg)
+![The image is an infographic about artificial neural networks, explaining that they consist of multiple layers of neurons, often called deep neural networks, and are used for machine learning, natural language processing, and computer vision.](https://kodekloud.com/kk-media/image/upload/v1752856990/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Deep-Learning/artificial-neural-networks-infographic.jpg)
 
 > **lightbulb** In image recognition tasks, early layers may detect edges, mid-layers capture shapes, and deeper layers recognize complete objects, leading to highly effective classification and prediction.
 
@@ -34,7 +34,7 @@ The output from the input layer is sent through one or more hidden layers. In th
 
 In the final output layer, the network computes probabilities for each possible class. For example, a probability distribution might be 0.1 for dog, 0.6 for cat, and 0.3 for bird. The model then selects the class with the highest probability as its prediction.
 
-![The image illustrates a deep neural network model used for classifying animal sounds, with input features and predicted probabilities for different animals. The model predicts the sound as a cat with the highest probability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856992/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Deep-Learning/deep-neural-network-animal-sounds.jpg)
+![The image illustrates a deep neural network model used for classifying animal sounds, with input features and predicted probabilities for different animals. The model predicts the sound as a cat with the highest probability.](https://kodekloud.com/kk-media/image/upload/v1752856992/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Deep-Learning/deep-neural-network-animal-sounds.jpg)
 
 The classification process can be summarized as:
 
@@ -53,7 +53,7 @@ The power of deep learning lies in its ability to learn from repeated exposure t
 
 For example, if the correct label for a sound is \[0, 1, 0] (indicating a cat) and the model outputs \[0.1, 0.6, 0.3], the network will update its weights to reduce the error.
 
-![The image is a slide about deep learning, specifically discussing a neural network model used for classifying animal sounds, with a conclusion on how the model learns and adjusts weights.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856993/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Deep-Learning/deep-learning-neural-network-animal-sounds.jpg)
+![The image is a slide about deep learning, specifically discussing a neural network model used for classifying animal sounds, with a conclusion on how the model learns and adjusts weights.](https://kodekloud.com/kk-media/image/upload/v1752856993/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Deep-Learning/deep-learning-neural-network-animal-sounds.jpg)
 
 > **lightbulb** The continuous process of weight adjustment through backpropagation is what makes deep learning models robust and effective for diverse applications in artificial intelligence.
 

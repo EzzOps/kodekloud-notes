@@ -102,21 +102,15 @@ kubectl argo rollouts promote app-rollout -n canary
 | List rollouts        | `kubectl get rollouts -n canary`                      |
 | Promote rollout      | `kubectl argo rollouts promote app-rollout -n canary` |
 
-<Callout icon="lightbulb">
-  To promote a rollout from the CLI, use: kubectl argo rollouts promote \<rollout-name> -n \<namespace>. If a step is paused indefinitely (pause: ), you must promote it manually.
-</Callout>
+> **lightbulb** To promote a rollout from the CLI, use: kubectl argo rollouts promote \<rollout-name> -n \<namespace>. If a step is paused indefinitely (pause: ), you must promote it manually.
 
-<Callout icon="lightbulb">
-  Pause durations must include a time unit suffix (for example "10s", "1m", "1h") or be specified as an empty object (pause: ) to pause indefinitely.
-</Callout>
+> **lightbulb** Pause durations must include a time unit suffix (for example "10s", "1m", "1h") or be specified as an empty object (pause: ) to pause indefinitely.
 
 That's it — a compact walkthrough showing how to incrementally release a new application version using Argo Rollouts' Canary strategy.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/c63717a8-f29b-4fb1-9b2c-99f75f589f7d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/c63717a8-f29b-4fb1-9b2c-99f75f589f7d)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/c79e939b-1286-4dd6-bafc-352ae31ea295" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/c79e939b-1286-4dd6-bafc-352ae31ea295)
 
 
 # Demo Clarification
@@ -152,9 +146,7 @@ Frame the successful (green) version JSON — it includes a numeric `code` field
   ```
 </Frame>
 
-<Callout icon="lightbulb">
-  Note: The AnalysisTemplate's success condition checks the JSON payload (for example, `result.code`). It does not evaluate the HTTP response code returned by the server.
-</Callout>
+> **lightbulb** Note: The AnalysisTemplate's success condition checks the JSON payload (for example, `result.code`). It does not evaluate the HTTP response code returned by the server.
 
 Here is the AnalysisTemplate as shown by kubectl (trimmed to the relevant fields). Notice the web provider URL and the same success condition:
 
@@ -188,9 +180,7 @@ Contrast that with the older (blue) version of the application whose health endp
   ```
 </Frame>
 
-<Callout icon="warning">
-  If the AnalysisRun queries a response that lacks `result.code`, the metric extraction for `result.code` will fail and the success condition cannot be satisfied — even if the HTTP status is 200. Ensure the JSON payload contains the field referenced by your success condition.
-</Callout>
+> **warning** If the AnalysisRun queries a response that lacks `result.code`, the metric extraction for `result.code` will fail and the success condition cannot be satisfied — even if the HTTP status is 200. Ensure the JSON payload contains the field referenced by your success condition.
 
 Summary — why the AnalysisRun passed
 
@@ -212,6 +202,4 @@ Links and references
 * [Argo Workflows Documentation](https://argoproj.github.io/argo-workflows/)
 * Consider using JSONPath or JQ locally to inspect responses: e.g., `curl -s http://svc/health | jq .`
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/1b05b8b7-b043-4ad1-bac3-2a695bbb51db" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/1b05b8b7-b043-4ad1-bac3-2a695bbb51db)

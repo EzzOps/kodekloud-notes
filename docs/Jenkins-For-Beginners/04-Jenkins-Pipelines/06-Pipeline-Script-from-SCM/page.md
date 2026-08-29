@@ -42,9 +42,7 @@ pipeline {
 }
 ```
 
-<Callout icon="lightbulb">
-  Defining your pipeline script in SCM allows you to maintain version control over your build configuration, making it easier to track changes over time.
-</Callout>
+> **lightbulb** Defining your pipeline script in SCM allows you to maintain version control over your build configuration, making it easier to track changes over time.
 
 ## Creating a Jenkinsfile
 
@@ -150,15 +148,11 @@ pipeline {
 }
 ```
 
-<Callout icon="triangle-alert">
-  If you receive an error message indicating that the repository URL is not valid, double-check that the URL is correct and that no credentials are needed for a public repository.
-</Callout>
+> **triangle-alert** If you receive an error message indicating that the repository URL is not valid, double-check that the URL is correct and that no credentials are needed for a public repository.
 
 During configuration, you might encounter an error message similar to the one shown below:
 
-<Frame>
-  ![The image shows a Jenkins configuration screen for a pipeline project, where a Git repository URL is being entered, but there's an error message indicating that a valid Git repository is required.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879509/notes-assets/images/Jenkins-For-Beginners-Pipeline-Script-from-SCM/jenkins-pipeline-git-repo-error.jpg)
-</Frame>
+![The image shows a Jenkins configuration screen for a pipeline project, where a Git repository URL is being entered, but there's an error message indicating that a valid Git repository is required.](https://kodekloud.com/kk-media/image/upload/v1752879509/notes-assets/images/Jenkins-For-Beginners-Pipeline-Script-from-SCM/jenkins-pipeline-git-repo-error.jpg)
 
 Since the repository is public, credentials are not required. In the advanced settings, ensure the correct branch name (such as 'main') is specified. Jenkins will search for the Jenkinsfile in the repository root by default unless a different path is defined.
 
@@ -200,15 +194,11 @@ After a successful build, you can review the workspace files via the Jenkins UI.
 
 For example, here is an interface displaying the workspace files for the project:
 
-<Frame>
-  ![The image shows a Jenkins workspace interface displaying a list of directories and files related to a project build, including JAR files and generated sources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879511/notes-assets/images/Jenkins-For-Beginners-Pipeline-Script-from-SCM/jenkins-workspace-project-build-files.jpg)
-</Frame>
+![The image shows a Jenkins workspace interface displaying a list of directories and files related to a project build, including JAR files and generated sources.](https://kodekloud.com/kk-media/image/upload/v1752879511/notes-assets/images/Jenkins-For-Beginners-Pipeline-Script-from-SCM/jenkins-workspace-project-build-files.jpg)
 
 You can also inspect detailed build stages in the pipeline interface:
 
-<Frame>
-  ![The image shows a Jenkins build pipeline interface for "hello-world-pipeline," displaying the successful completion of build #7 with various stages like "Checkout SCM," "Tool Install," and "Unit Test." It includes details about changes, build duration, and repository information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879512/notes-assets/images/Jenkins-For-Beginners-Pipeline-Script-from-SCM/jenkins-build-pipeline-hello-world.jpg)
-</Frame>
+![The image shows a Jenkins build pipeline interface for "hello-world-pipeline," displaying the successful completion of build #7 with various stages like "Checkout SCM," "Tool Install," and "Unit Test." It includes details about changes, build duration, and repository information.](https://kodekloud.com/kk-media/image/upload/v1752879512/notes-assets/images/Jenkins-For-Beginners-Pipeline-Script-from-SCM/jenkins-build-pipeline-hello-world.jpg)
 
 ### Accessing the Workspace via Terminal
 
@@ -261,6 +251,4 @@ By following this lesson, you now understand how to retrieve a pipeline script f
 
 Thank you for exploring how to integrate SCM with Jenkins pipeline scripts. Happy building!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/b4f582ef-4bf9-4cb9-8a31-6d580a94000c/lesson/d17b04b7-fc59-47ae-b895-c41c988644b6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/b4f582ef-4bf9-4cb9-8a31-6d580a94000c/lesson/d17b04b7-fc59-47ae-b895-c41c988644b6)

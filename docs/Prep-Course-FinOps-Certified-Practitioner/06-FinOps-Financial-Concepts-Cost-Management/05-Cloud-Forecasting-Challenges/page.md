@@ -83,9 +83,7 @@ Assume incremental efficiency improvements and validate them with engineering an
 
 ## Forecasting best practices
 
-<Callout icon="lightbulb">
-  Adopt agile forecasting: update frequently, test scenarios, and tie forecasts to measurable business drivers so finance and engineering share the same signal.
-</Callout>
+> **lightbulb** Adopt agile forecasting: update frequently, test scenarios, and tie forecasts to measurable business drivers so finance and engineering share the same signal.
 
 * Rolling forecasts: Refresh forecasts weekly or monthly so they reflect current usage and pricing.
 * Scenario-based modeling: Run what-if scenarios (e.g., traffic doubling, product launch, marketing blitz) to estimate spend ranges and prepare contingencies.
@@ -108,9 +106,7 @@ Cloud forecasting is difficult because three moving pieces interact: pricing, co
 
 A related subject is commitment-based discounts (Reserved Instances, Savings Plans). These can reduce risk and lower costs but introduce commitment complexity that must be reflected in forecasts and governance.
 
-<Callout icon="warning">
-  Commitments (e.g., RIs, Savings Plans) reduce unit costs but add forecast and execution risk. Model commitments explicitly, track utilization, and maintain a governance process for purchasing and unwinding commitments.
-</Callout>
+> **warning** Commitments (e.g., RIs, Savings Plans) reduce unit costs but add forecast and execution risk. Model commitments explicitly, track utilization, and maintain a governance process for purchasing and unwinding commitments.
 
 Next steps:
 
@@ -127,6 +123,4 @@ Next steps:
 
 That's it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/ef287c62-720c-4c72-ab06-6ada034b22f5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/ef287c62-720c-4c72-ab06-6ada034b22f5)

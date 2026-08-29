@@ -35,9 +35,7 @@ Sessions and caches
 * Login sessions must be stored in a shared store accessible to all app servers. Redis is often used for both sessions and caching because session data is small, read on nearly every request, and requires low latency.
 * Keep session keys and cached keys properly namespaced to avoid collisions (for example: `session:{user_id}` vs `profile:{user_id}`).
 
-<Callout icon="lightbulb">
-  Redis is commonly used for both caching hot application data and as a session store. Use clear namespaces for session keys and cache keys to avoid accidental collisions.
-</Callout>
+> **lightbulb** Redis is commonly used for both caching hot application data and as a session store. Use clear namespaces for session keys and cache keys to avoid accidental collisions.
 
 Cache coherence: the trade-offs
 Caching introduces a second copy of data (database + cache). Inconsistency can arise when one copy changes and the other does not. Example problem: a photo deleted from the database still exists in Redis and continues to be served to users until it expires or is invalidated.
@@ -65,9 +63,7 @@ Key practices
 * Test failure modes: cache node loss, partial updates, and race conditions (e.g., double writes).
 * Monitor cache hit/miss rates, memory usage, and eviction count to tune policies.
 
-<Callout icon="warning">
-  Cache invalidation is one of the hardest problems in distributed systems. Choose a strategy (cache-aside vs write-through vs write-behind) based on your consistency, latency, and complexity requirements, and test failure scenarios (cache node failure, incomplete invalidation).
-</Callout>
+> **warning** Cache invalidation is one of the hardest problems in distributed systems. Choose a strategy (cache-aside vs write-through vs write-behind) based on your consistency, latency, and complexity requirements, and test failure scenarios (cache node failure, incomplete invalidation).
 
 Summary
 
@@ -81,9 +77,7 @@ Links and references
 * Martin Kleppmann, “Designing Data-Intensive Applications” – section on caching and consistency
 * Patterns: Cache-aside, Read-through, Write-through, Write-behind — search for implementation guides in your language or framework of choice
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/e772337e-1b5d-46bc-98b2-32bb446cbf74" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/e772337e-1b5d-46bc-98b2-32bb446cbf74)
 
 
 # Data Modeling
@@ -233,9 +227,7 @@ Key takeaways
 
 With access patterns and data shape defined, you can evaluate SQL vs NoSQL based on consistency, transactional needs, query complexity, and scaling requirements.
 
-<Callout icon="lightbulb">
-  Design data shape from access patterns first. Only after you know which queries must be fast should you decide how to store and index the data.
-</Callout>
+> **lightbulb** Design data shape from access patterns first. Only after you know which queries must be fast should you decide how to store and index the data.
 
 Links and references
 
@@ -243,6 +235,4 @@ Links and references
 * Choosing SQL vs NoSQL: [https://www.mongodb.com/nosql-explained](https://www.mongodb.com/nosql-explained) (overview)
 * Database index fundamentals: [https://www.postgresql.org/docs/current/indexes.html](https://www.postgresql.org/docs/current/indexes.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/e3f68e56-9295-4c2b-81a8-3a95e8421049" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/e3f68e56-9295-4c2b-81a8-3a95e8421049)

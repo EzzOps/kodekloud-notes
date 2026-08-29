@@ -12,9 +12,7 @@ We reviewed:
 * Spinning up cloud-based environments for creating scalable applications.
 * Techniques for deploying code into live production applications, ensuring continuous integration and delivery.
 
-<Callout icon="lightbulb">
-  Your proactive participation has greatly enriched this learning experience. We value your feedback and encourage you to share your thoughts or suggestions on social media.
-</Callout>
+> **lightbulb** Your proactive participation has greatly enriched this learning experience. We value your feedback and encourage you to share your thoughts or suggestions on social media.
 
 Once you receive your Certificate of Completion, please tag us and let us know which parts of the lesson resonated with you the most. We look forward to your insights and encourage you to explore our other courses for more in-depth knowledge and hands-on learning opportunities.
 
@@ -27,6 +25,4 @@ For additional resources and reference materials, be sure to check out:
 
 Keep learning and stay innovative!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/a4722e22-b92e-4de2-ac1f-2db3b5c79cb9/lesson/ebefa170-87db-4060-b322-10f9cc2ed084" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/a4722e22-b92e-4de2-ac1f-2db3b5c79cb9/lesson/ebefa170-87db-4060-b322-10f9cc2ed084)

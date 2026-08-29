@@ -13,9 +13,7 @@ Before you dive into exam questions, ensure you have a solid grasp of Vault’s 
 
 ## Token Types Overview
 
-<Frame>
-  ![The image provides exam tips about different types of tokens, including Service, Batch, Root, Periodic, Orphan, and CIDR-Bound Tokens, and emphasizes understanding their unique characteristics and use cases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877985/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Exam-Tips-for-Objective-3/exam-tips-token-types-characteristics.jpg)
-</Frame>
+![The image provides exam tips about different types of tokens, including Service, Batch, Root, Periodic, Orphan, and CIDR-Bound Tokens, and emphasizes understanding their unique characteristics and use cases.](https://kodekloud.com/kk-media/image/upload/v1752877985/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Exam-Tips-for-Objective-3/exam-tips-token-types-characteristics.jpg)
 
 | Token Type | TTL Renewal       | Revocation | Storage Behavior                     |
 | ---------- | ----------------- | ---------- | ------------------------------------ |
@@ -34,9 +32,7 @@ Key actions you should be able to perform:
 
 ## Service vs. Batch Tokens
 
-<Frame>
-  ![The image provides exam tips related to service and batch tokens, emphasizing the differences, storage practices, and the use of the "vault token" command. It features a stylized character in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877986/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Exam-Tips-for-Objective-3/exam-tips-service-batch-tokens.jpg)
-</Frame>
+![The image provides exam tips related to service and batch tokens, emphasizing the differences, storage practices, and the use of the "vault token" command. It features a stylized character in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752877986/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Exam-Tips-for-Objective-3/exam-tips-service-batch-tokens.jpg)
 
 | Feature                | Service Tokens                 | Batch Tokens                        |
 | ---------------------- | ------------------------------ | ----------------------------------- |
@@ -45,9 +41,7 @@ Key actions you should be able to perform:
 | Storage Backend Impact | Persisted to backend           | No backend storage                  |
 | Use Case               | Long-lived clients, automation | One-time operations, scale concerns |
 
-<Callout icon="lightbulb">
-  Use batch tokens when you need to minimize storage-backend impact.
-</Callout>
+> **lightbulb** Use batch tokens when you need to minimize storage-backend impact.
 
 ### Practice with `vault token`
 

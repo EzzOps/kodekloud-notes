@@ -14,13 +14,9 @@ The typical topology consists of:
 
 If any cluster fails, its DR replica can assume the primary role in that region.
 
-<Callout icon="lightbulb">
-  You need a **DR operation token** to promote a DR secondary. You can generate this token on the DR cluster using unseal or recovery keys, or pre-create a **DR operation batch token** on the primary to have it automatically replicate to the secondary.
-</Callout>
+> **lightbulb** You need a **DR operation token** to promote a DR secondary. You can generate this token on the DR cluster using unseal or recovery keys, or pre-create a **DR operation batch token** on the primary to have it automatically replicate to the secondary.
 
-<Frame>
-  ![The image is a slide explaining how to promote a secondary to a primary in a DR cluster, detailing the use of a DR Operation Token and the option to create a DR Operation Batch Token beforehand.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878319/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Promote-a-Secondary-Cluster/dr-cluster-promote-secondary-primary-slide.jpg)
-</Frame>
+![The image is a slide explaining how to promote a secondary to a primary in a DR cluster, detailing the use of a DR Operation Token and the option to create a DR Operation Batch Token beforehand.](https://kodekloud.com/kk-media/image/upload/v1752878319/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Promote-a-Secondary-Cluster/dr-cluster-promote-secondary-primary-slide.jpg)
 
 ## Comparison: Batch Token vs. Generated DR Operation Token
 
@@ -41,9 +37,7 @@ A **batch token** is an orphan token created on the primary with permissions to 
 
 If you don’t have a valid batch token, follow these steps on the DR secondary:
 
-<Frame>
-  ![The image is a flowchart explaining the process of obtaining a DR Operation Token, involving steps like initializing token generation, key holders providing keys, decoding with OTP, and promoting a cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878321/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Promote-a-Secondary-Cluster/dr-operation-token-flowchart.jpg)
-</Frame>
+![The image is a flowchart explaining the process of obtaining a DR Operation Token, involving steps like initializing token generation, key holders providing keys, decoding with OTP, and promoting a cluster.](https://kodekloud.com/kk-media/image/upload/v1752878321/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Promote-a-Secondary-Cluster/dr-operation-token-flowchart.jpg)
 
 ### Step 1: Initialize DR Token Generation
 
@@ -118,9 +112,7 @@ WARNING! The following warnings were returned from Vault:
 
 After promotion, the DR cluster will become the new primary in its data center.
 
-<Callout icon="triangle-alert">
-  During promotion, Vault will be temporarily unavailable. Plan for a brief service interruption.
-</Callout>
+> **triangle-alert** During promotion, Vault will be temporarily unavailable. Plan for a brief service interruption.
 
 ***
 
@@ -130,6 +122,4 @@ After promotion, the DR cluster will become the new primary in its data center.
 * [vault operator generate-root](https://www.vaultproject.io/docs/commands/operator/generate-root)
 * [Vault Best Practices for Disaster Recovery](https://learn.hashicorp.com/collections/vault/high-availability)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/6ff98f2c-2248-4453-80d2-d2d324adf3d9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/6ff98f2c-2248-4453-80d2-d2d324adf3d9)

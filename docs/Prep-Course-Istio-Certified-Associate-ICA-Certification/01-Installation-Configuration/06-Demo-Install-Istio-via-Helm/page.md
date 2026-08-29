@@ -40,9 +40,7 @@ Istio is not present in the cluster: no running Istio pods in namespace "istio-s
 client version: 1.26.3
 ```
 
-<Callout icon="warning">
-  Version compatibility note: Use an `istioctl` client that matches (or is compatible with) the Istio control plane version you will install. Mixing incompatible versions can cause install or runtime issues.
-</Callout>
+> **warning** Version compatibility note: Use an `istioctl` client that matches (or is compatible with) the Istio control plane version you will install. Mixing incompatible versions can cause install or runtime issues.
 
 ## 3) Install the Istio control plane (demo profile)
 
@@ -253,9 +251,7 @@ Containers:
       ISTIO_META_WORKLOAD_NAME: redis-istio-proxy
 ```
 
-<Callout icon="lightbulb">
-  Manual injection (via `istioctl kube-inject`) is useful when you cannot or do not want to label a namespace for automatic injection. Generate a YAML manifest with `kubectl --dry-run=client -o yaml` and run `istioctl kube-inject -f pod.yaml | kubectl apply -f -`.
-</Callout>
+> **lightbulb** Manual injection (via `istioctl kube-inject`) is useful when you cannot or do not want to label a namespace for automatic injection. Generate a YAML manifest with `kubectl --dry-run=client -o yaml` and run `istioctl kube-inject -f pod.yaml | kubectl apply -f -`.
 
 ## Quick reference — common commands
 
@@ -285,11 +281,9 @@ This concludes the demo of installing Istio via the CLI and injecting sidecars b
 * [Bookinfo sample manifests (Istio GitHub)](https://github.com/istio/istio/tree/release-1.11/samples/bookinfo)
 * [Kubernetes kubectl documentation](https://kubernetes.io/docs/reference/kubectl/overview/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/f9286a62-5585-445c-b649-8323b83fae22" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/f9286a62-5585-445c-b649-8323b83fae22)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/eb471648-119e-4abc-b769-4b7f99bfadd1" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/eb471648-119e-4abc-b769-4b7f99bfadd1)
 
 
 # Demo Install Istio via Helm

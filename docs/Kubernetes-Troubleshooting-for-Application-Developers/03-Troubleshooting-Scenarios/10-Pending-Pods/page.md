@@ -51,9 +51,7 @@ template:
           claimName: azure-managed-disk
 ```
 
-<Frame>
-  ![The image illustrates a rolling update strategy for Kubernetes, showing the transition from Replica Set V1.0 to V2.0, with Pod 1 being replaced.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880434/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Multi-Attach-Volume-Errors/kubernetes-rolling-update-strategy.jpg)
-</Frame>
+![The image illustrates a rolling update strategy for Kubernetes, showing the transition from Replica Set V1.0 to V2.0, with Pod 1 being replaced.](https://kodekloud.com/kk-media/image/upload/v1752880434/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Multi-Attach-Volume-Errors/kubernetes-rolling-update-strategy.jpg)
 
 ### Switching to the Recreate Strategy
 
@@ -169,21 +167,15 @@ Now multiple pods can run across different nodes simultaneously without encounte
 | Update Strategy Change | Switch the Deployment update strategy from `RollingUpdate` to `Recreate` so the old pod terminates before a new pod is created, preventing overlapping attachments. | Environments where application downtime during updates is acceptable.                      |
 | Adjust Access Modes    | Use a storage backend that supports the required access mode (e.g., RWX for multi-node attachments) instead of one that allows only RWO.                            | Applications requiring simultaneous volume access by multiple pods across different nodes. |
 
-<Frame>
-  ![The image is a summary slide listing three points: removing or scaling a pod to zero, changing deployment update strategy, and comparing ReadWriteOnce with ReadWriteMany.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880435/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Multi-Attach-Volume-Errors/pod-scaling-deployment-strategy-summary.jpg)
-</Frame>
+![The image is a summary slide listing three points: removing or scaling a pod to zero, changing deployment update strategy, and comparing ReadWriteOnce with ReadWriteMany.](https://kodekloud.com/kk-media/image/upload/v1752880435/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Multi-Attach-Volume-Errors/pod-scaling-deployment-strategy-summary.jpg)
 
-<Callout icon="lightbulb">
-  Before deploying any storage volume, review the storage class documentation to verify which access modes are supported. Choose a storage solution that aligns with your application requirements.
-</Callout>
+> **lightbulb** Before deploying any storage volume, review the storage class documentation to verify which access modes are supported. Choose a storage solution that aligns with your application requirements.
 
 This article outlines the causes of multi-attach volume errors and provides several workarounds, from manual scaling to configuration updates. By understanding your storage backend’s access modes and adjusting your Deployment strategy accordingly, you can ensure your Kubernetes applications run smoothly in production.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/57ded90b-0a99-4616-8a23-435539235d7b" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/57ded90b-0a99-4616-8a23-435539235d7b)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/4861dd03-9c62-43d7-ba16-72c263d46b0a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/4861dd03-9c62-43d7-ba16-72c263d46b0a)
 
 
 # Pending Pods
@@ -196,9 +188,7 @@ In this lesson, we explore a common Kubernetes issue—pods remaining in the pen
 
 When a pod is in the pending state, Kubernetes has received the request to run it, but no available node meets the pod’s scheduling requirements. Let’s start by checking the pods in our cluster. As seen below, three pods are currently pending:
 
-<Frame>
-  ![The image shows a terminal interface for managing Kubernetes pods, with three pods listed as "Pending" and various details like CPU and memory usage. The interface includes commands and shortcuts for interacting with the pods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880437/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Pending-Pods/kubernetes-pods-terminal-interface.jpg)
-</Frame>
+![The image shows a terminal interface for managing Kubernetes pods, with three pods listed as "Pending" and various details like CPU and memory usage. The interface includes commands and shortcuts for interacting with the pods.](https://kodekloud.com/kk-media/image/upload/v1752880437/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Pending-Pods/kubernetes-pods-terminal-interface.jpg)
 
 Below, we examine three examples that highlight different causes for pending pods.
 
@@ -292,15 +282,11 @@ Node-Selectors:         <none>
 Tolerations:            node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
 ```
 
-<Callout icon="lightbulb">
-  To resolve the issue, you can reduce the CPU request (for example, from "2" to "1") so that the pod fits into the available node capacity.
-</Callout>
+> **lightbulb** To resolve the issue, you can reduce the CPU request (for example, from "2" to "1") so that the pod fits into the available node capacity.
 
 The pod specification defines both CPU requests and limits as shown below:
 
-<Frame>
-  ![The image shows a terminal interface for managing Kubernetes deployments using K9s, displaying three deployments with their readiness status, all of which are not ready.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880438/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Pending-Pods/kubernetes-k9s-deployments-not-ready.jpg)
-</Frame>
+![The image shows a terminal interface for managing Kubernetes deployments using K9s, displaying three deployments with their readiness status, all of which are not ready.](https://kodekloud.com/kk-media/image/upload/v1752880438/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Pending-Pods/kubernetes-k9s-deployments-not-ready.jpg)
 
 Here is the YAML snippet for the data processor deployment:
 
@@ -577,6 +563,4 @@ In this lesson, we reviewed three common scenarios that cause pods to remain in 
 
 By understanding these challenges and solutions, you can ensure your pods are scheduled successfully in Kubernetes. Happy troubleshooting!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/889721c1-14b7-4b16-b8a1-1c0b97530ab3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/889721c1-14b7-4b16-b8a1-1c0b97530ab3)

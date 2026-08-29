@@ -31,7 +31,7 @@ CloudWatch Logs structures data using two primary concepts:
 
 Here’s how your applications integrate:
 
-![The image is a diagram illustrating Amazon CloudWatch Logs, showing log streams organized into three log groups for different applications within the AWS Cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862464/notes-assets/images/AWS-CloudWatch-Introduction-to-CloudWatch-Logs/amazon-cloudwatch-logs-diagram.jpg)
+![The image is a diagram illustrating Amazon CloudWatch Logs, showing log streams organized into three log groups for different applications within the AWS Cloud.](https://kodekloud.com/kk-media/image/upload/v1752862464/notes-assets/images/AWS-CloudWatch-Introduction-to-CloudWatch-Logs/amazon-cloudwatch-logs-diagram.jpg)
 
 ## Use Case: Debugging with CloudWatch Logs
 
@@ -78,7 +78,7 @@ A **metric filter** inspects each log event in a CloudWatch Logs group against a
 3. Configure the filter to **publish metric data**—choose a namespace, metric name, and value.
 4. Use CloudWatch Metrics to **visualize** data or **set alarms** on thresholds.
 
-![The image illustrates the process of using metric filters to search and parse CloudWatch logs for HTTP 404 errors, converting them into custom CloudWatch metrics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862466/notes-assets/images/AWS-CloudWatch-Metric-Filters/cloudwatch-logs-metric-filters-404-errors.jpg)
+![The image illustrates the process of using metric filters to search and parse CloudWatch logs for HTTP 404 errors, converting them into custom CloudWatch metrics.](https://kodekloud.com/kk-media/image/upload/v1752862466/notes-assets/images/AWS-CloudWatch-Metric-Filters/cloudwatch-logs-metric-filters-404-errors.jpg)
 
 ## Example: Tracking HTTP 404 Errors
 

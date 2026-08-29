@@ -20,7 +20,7 @@ For instance, a modern data architecture might use Event Hub to collect sensor d
 
 Some events (for instance, data from IoT sensors or equipment) are streamed to Event Hub.
 
-![The image illustrates a flowchart for designing an Event Hub messaging solution, showing stages from event streaming to visualization using tools like Event Hub, Blob Storage, Stream Analytics, and Power BI. It also highlights use cases like anomaly detection and real-time analytics pipelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867191/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-event-solution/event-hub-messaging-flowchart.jpg)
+![The image illustrates a flowchart for designing an Event Hub messaging solution, showing stages from event streaming to visualization using tools like Event Hub, Blob Storage, Stream Analytics, and Power BI. It also highlights use cases like anomaly detection and real-time analytics pipelines.](https://kodekloud.com/kk-media/image/upload/v1752867191/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-event-solution/event-hub-messaging-flowchart.jpg)
 
 In this architecture:
 
@@ -37,7 +37,7 @@ Key considerations when using Event Hub include:
 * **Handling Data Failures:** Design downstream processes to manage any potential data failures since Event Hub does not guarantee immediate processing.
 * **Event Ordering:** Maintains the sequence of events as they are received.
 
-![The image outlines considerations for building a solution with Event Hub, including language integration, tier and throughput, pull model, data failures, and data stream. Each point is briefly explained with a corresponding icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867192/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-event-solution/event-hub-solution-considerations.jpg)
+![The image outlines considerations for building a solution with Event Hub, including language integration, tier and throughput, pull model, data failures, and data stream. Each point is briefly explained with a corresponding icon.](https://kodekloud.com/kk-media/image/upload/v1752867192/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-event-solution/event-hub-solution-considerations.jpg)
 
 ***
 
@@ -72,7 +72,7 @@ These services can also be combined to form a robust event-driven solution. For 
 4. Event Grid triggers a Function App with multiple subscribers.
 5. The Function App retrieves and processes the file—such as migrating data into Azure Data Warehouse for further analytics.
 
-![The image compares three services—Event Grid, Event Hubs, and Service Bus—based on their purpose, type, and use cases. It also includes a diagram illustrating the flow of event data capture and migration using these services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867194/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-event-solution/event-grid-hubs-bus-comparison.jpg)
+![The image compares three services—Event Grid, Event Hubs, and Service Bus—based on their purpose, type, and use cases. It also includes a diagram illustrating the flow of event data capture and migration using these services.](https://kodekloud.com/kk-media/image/upload/v1752867194/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-event-solution/event-grid-hubs-bus-comparison.jpg)
 
 ***
 

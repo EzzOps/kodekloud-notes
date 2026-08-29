@@ -76,9 +76,7 @@ Quick reference table for rule fields
 | `labels`      | Used for routing and filtering in Alertmanager  | `severity: critical`         |
 | `annotations` | Human-readable context and runbook links        | `runbook_url: "https://..."` |
 
-<Callout icon="lightbulb">
-  Choose `for` to filter transient spikes without delaying legitimate incidents. Typical ranges are 2–10 minutes depending on metric volatility and operational tolerance.
-</Callout>
+> **lightbulb** Choose `for` to filter transient spikes without delaying legitimate incidents. Typical ranges are 2–10 minutes depending on metric volatility and operational tolerance.
 
 Prometheus alert states
 Prometheus manages three states for each alert rule instance:
@@ -130,9 +128,7 @@ Alertmanager routing fields explained
 | `repeat_interval` | How often to repeat unresolved alerts (e.g., `3h`)                                                                                                            |
 | `routes`          | Child routes evaluated top-to-bottom; the first matching child is used                                                                                        |
 
-<Callout icon="warning">
-  Alertmanager routing is first-match. Place your most critical or specific routes near the top. If a single alert matches multiple child routes, only the first match applies.
-</Callout>
+> **warning** Alertmanager routing is first-match. Place your most critical or specific routes near the top. If a single alert matches multiple child routes, only the first match applies.
 
 Techniques to avoid alert fatigue
 If alerts become noise, teams learn to ignore them. Use these controls to keep signal high and noise low:
@@ -186,8 +182,6 @@ Further reading and references
 
 This lesson covered the end-to-end alerting flow and practical guidance for implementing reliable, actionable alerts.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/0cb3ce04-f9d4-4805-8980-70271d4cee9c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/0cb3ce04-f9d4-4805-8980-70271d4cee9c)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/0e3f2975-c097-4dc6-8ac3-b6257be34389" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/0e3f2975-c097-4dc6-8ac3-b6257be34389)

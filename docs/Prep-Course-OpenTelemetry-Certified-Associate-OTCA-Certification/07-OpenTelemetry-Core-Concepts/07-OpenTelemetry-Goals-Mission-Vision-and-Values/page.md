@@ -18,9 +18,7 @@ OpenTelemetry’s primary goal is to simplify application instrumentation across
 
 OpenTelemetry focuses on generating telemetry—traces, metrics, and logs—and exporting it to the backend of your choice. It is not a storage or visualization layer; those responsibilities belong to the observability backend you select (for example, commercial APMs or open-source platforms).
 
-<Callout icon="lightbulb">
-  OpenTelemetry provides APIs, SDKs, auto-instrumentation libraries, and the Collector for generating and exporting telemetry. Storage and visualizations are handled by your chosen observability backend.
-</Callout>
+> **lightbulb** OpenTelemetry provides APIs, SDKs, auto-instrumentation libraries, and the Collector for generating and exporting telemetry. Storage and visualizations are handled by your chosen observability backend.
 
 ## Mission: Enable effective observability with high-quality, portable telemetry
 
@@ -78,9 +76,7 @@ OpenTelemetry is guided by several engineering principles that shape design and 
   <img alt="The image presents three engineering values: Compatibility, Stability, and Resilience, each with a brief description and icon representing follow standards, API stability, and handling failure gracefully." />
 </Frame>
 
-<Callout icon="warning">
-  When adding telemetry to production systems, prioritize safe defaults and low overhead. Instrumentation must not cause application instability or unacceptable performance regressions.
-</Callout>
+> **warning** When adding telemetry to production systems, prioritize safe defaults and low overhead. Instrumentation must not cause application instability or unacceptable performance regressions.
 
 ## Recap: Goals, Mission, Vision, and Values (Quick Reference)
 
@@ -112,6 +108,4 @@ OpenTelemetry aims to make telemetry built-in, consistent, and effortless so tea
 
 Thank you for reading.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/57d103bc-7e92-4e08-b14f-5ae839871731" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/57d103bc-7e92-4e08-b14f-5ae839871731)

@@ -18,6 +18,6 @@ If you're ready for more advanced training and hands-on practical experience, vi
 
 At KodeKloud, we firmly believe that with the right guidance, determination, and a touch of coding magic, you can achieve limitless success in the cloud industry. We are excited to continue being a part of your journey—join our growing community on Slack and stay updated on upcoming AWS certification courses and more.
 
-![The image promotes the KodeKloud Slack Community, inviting users to join a DevOps-focused group with over 70,000 members. A person is shown on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861521/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Conclusion/frame_120.jpg)
+![The image promotes the KodeKloud Slack Community, inviting users to join a DevOps-focused group with over 70,000 members. A person is shown on the right.](https://kodekloud.com/kk-media/image/upload/v1752861521/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Conclusion/frame_120.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-cloud-practitioner-clf-c02/module/e578bb11-e866-4f03-94b8-1a3e89c9afb3/lesson/6cca2f11-88b2-47b4-92dd-4e800c98c8e3)

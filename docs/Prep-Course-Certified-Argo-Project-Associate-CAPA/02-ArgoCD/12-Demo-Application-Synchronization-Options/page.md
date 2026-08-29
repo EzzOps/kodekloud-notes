@@ -69,9 +69,7 @@ data:
     return hs
 ```
 
-<Callout icon="lightbulb">
-  Custom health checks are Lua scripts executed by Argo CD. Be careful with Lua equality operators: `==` tests equality, `~=` tests inequality.
-</Callout>
+> **lightbulb** Custom health checks are Lua scripts executed by Argo CD. Be careful with Lua equality operators: `==` tests equality, `~=` tests inequality.
 
 Apply the change by editing the ConfigMap:
 
@@ -112,9 +110,7 @@ The Argo CD UI resource tree will then display the ConfigMap, Service, Deploymen
 * Argo CD Resource Health docs: [https://argo-cd.readthedocs.io/en/stable/operator-manual/resource\_customizations/](https://argo-cd.readthedocs.io/en/stable/operator-manual/resource_customizations/)
 * Kubernetes Concepts: [https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/b96c9445-9c82-499b-b50e-30ab59300181" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/b96c9445-9c82-499b-b50e-30ab59300181)
 
 
 # Demo Application Synchronization Options
@@ -131,9 +127,7 @@ In the Argo CD application settings for `health-check`, you can enable sync poli
 * Self‑Heal: If a resource is changed or deleted directly in the cluster (out‑of‑band), Argo CD will attempt to reconcile the resource back to the manifest in Git.
 * Prune Resources: When a resource is removed from Git, Argo CD will delete the corresponding resource from the cluster on the next sync.
 
-<Callout icon="lightbulb">
-  When Auto‑Sync is enabled, Argo CD applies changes detected in Git automatically. Self‑Heal reconciles manual cluster changes to match Git. Prune removes cluster resources that were removed from Git. With Auto‑Sync + Self‑Heal + Prune enabled, resources present in Git will be recreated if manually deleted, while resources removed from Git will be deleted from the cluster.
-</Callout>
+> **lightbulb** When Auto‑Sync is enabled, Argo CD applies changes detected in Git automatically. Self‑Heal reconciles manual cluster changes to match Git. Prune removes cluster resources that were removed from Git. With Auto‑Sync + Self‑Heal + Prune enabled, resources present in Git will be recreated if manually deleted, while resources removed from Git will be deleted from the cluster.
 
 ***
 
@@ -247,6 +241,4 @@ Use combinations of these options to match your operational model: continuous de
 * [Argo CD official documentation](https://argo-cd.readthedocs.io/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/17053d38-cf7f-445a-9090-2694a38be55a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/17053d38-cf7f-445a-9090-2694a38be55a)

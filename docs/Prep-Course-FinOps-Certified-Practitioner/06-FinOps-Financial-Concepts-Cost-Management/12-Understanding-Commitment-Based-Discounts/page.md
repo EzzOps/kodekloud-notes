@@ -21,9 +21,7 @@ When to consider commitments:
 * You’ve already right-sized and optimized resources; commitments are the next lever.
 * You require steady, predictable spend throughout the year.
 
-<Callout icon="lightbulb">
-  Before committing, establish a clear baseline of usage and ensure workloads are stable and right-sized. Commitment discounts are most effective when you can forecast steady demand.
-</Callout>
+> **lightbulb** Before committing, establish a clear baseline of usage and ensure workloads are stable and right-sized. Commitment discounts are most effective when you can forecast steady demand.
 
 <Frame>
   <img alt="The image lists five factors to consider for commitments: stable workloads, cost optimization pressure, mature environments, budget certainty, and financial impact." />
@@ -95,6 +93,4 @@ Thanks for reading.
 * [AWS Savings Plans and Reserved Instances](https://aws.amazon.com/ec2/pricing/reserved-instances/)
 * [Kubernetes cost management and FinOps resources](https://finops.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/a5847b9c-00af-403a-b144-97343882b209" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/a5847b9c-00af-403a-b144-97343882b209)

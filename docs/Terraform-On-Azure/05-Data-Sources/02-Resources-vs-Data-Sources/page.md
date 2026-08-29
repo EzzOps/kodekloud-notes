@@ -24,9 +24,7 @@ Why this matters: resources are objects Terraform creates and manages (tracked i
 
 Data sources only provide information about existing infrastructure; they do not modify or take ownership of it. Resources, by contrast, are owned and managed by Terraform.
 
-<Callout icon="lightbulb">
-  Use resources when Terraform should own the lifecycle of an object. Use data sources when you only need to look up existing information (for example, a VNet ID or an AMI ID).
-</Callout>
+> **lightbulb** Use resources when Terraform should own the lifecycle of an object. Use data sources when you only need to look up existing information (for example, a VNet ID or an AMI ID).
 
 ## Examples (syntactic comparison)
 

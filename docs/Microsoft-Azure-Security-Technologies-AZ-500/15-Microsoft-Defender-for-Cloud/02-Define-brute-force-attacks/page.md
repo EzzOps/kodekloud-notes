@@ -21,9 +21,7 @@ Implementing the following strategies can greatly reduce the risk of brute force
 
 [Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/) is an effective tool in detecting brute force attacks. It notifies you through security alerts when potential brute force activities are identified. These alerts are displayed in the security alerts section, offering a centralized view of potential security threats.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen displaying the "Microsoft Defender for Cloud" security alerts page, indicating no alerts found.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882021/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Define-brute-force-attacks/azure-portal-defender-cloud-alerts.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen displaying the "Microsoft Defender for Cloud" security alerts page, indicating no alerts found.](https://kodekloud.com/kk-media/image/upload/v1752882021/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Define-brute-force-attacks/azure-portal-defender-cloud-alerts.jpg)
 
 Even though there may not currently be any alerts, any future detection of a brute force attack will automatically update this section with the relevant details.
 
@@ -36,14 +34,8 @@ To ensure you receive prompt notifications of any significant security alerts, i
 3. Add additional email addresses as needed.
 4. Choose the appropriate alert severity levels (e.g., high or medium) to tailor the notifications.
 
-<Frame>
-  ![The image shows the email notification settings for Microsoft Defender for Cloud in the Azure portal, where users can configure email recipients and notification types based on alert severity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882023/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Define-brute-force-attacks/microsoft-defender-email-notifications.jpg)
-</Frame>
+![The image shows the email notification settings for Microsoft Defender for Cloud in the Azure portal, where users can configure email recipients and notification types based on alert severity.](https://kodekloud.com/kk-media/image/upload/v1752882023/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Define-brute-force-attacks/microsoft-defender-email-notifications.jpg)
 
-<Callout icon="lightbulb">
-  Configuring these settings ensures that you are immediately informed of any significant security events, allowing for quick response actions.
-</Callout>
+> **lightbulb** Configuring these settings ensures that you are immediately informed of any significant security events, allowing for quick response actions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/aea85892-224f-4bd2-8013-e36764e15f37/lesson/3ab55a49-304a-479f-9f4d-ac06e8b622a5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/aea85892-224f-4bd2-8013-e36764e15f37/lesson/3ab55a49-304a-479f-9f4d-ac06e8b622a5)

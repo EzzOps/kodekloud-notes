@@ -6,9 +6,7 @@ This article explores various remote state backends in Terraform and offers guid
 
 In this article, we explore various remote state backends available in Terraform and provide guidance on selecting the best solution for your infrastructure management needs. Terraform uses a state file to map real-world resources to its configuration, track metadata, and significantly boost performance in large-scale environments. This state file is essential for Terraform to accurately manage and update your infrastructure.
 
-<Frame>
-  ![The image illustrates the Terraform State, showing a state file tracking managed infrastructure and configuration, and mapping real-world resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884158/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Differentiate-Remote-State-Backends-in-Terraform/frame_20.jpg)
-</Frame>
+![The image illustrates the Terraform State, showing a state file tracking managed infrastructure and configuration, and mapping real-world resources.](https://kodekloud.com/kk-media/image/upload/v1752884158/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Differentiate-Remote-State-Backends-in-Terraform/frame_20.jpg)
 
 ## Benefits of Remote State Backends
 
@@ -18,9 +16,7 @@ Using a remote state backend offers several critical advantages:
 * **Improved Security:** Sensitive configuration details remain securely stored in remote backends rather than on local machines.
 * **Greater Reliability:** Remote state backends provide a resilient and secure central source of truth compared to local state files.
 
-<Callout icon="lightbulb">
-  Selecting the right backend not only secures your Terraform state but also improves team productivity and infrastructure reliability.
-</Callout>
+> **lightbulb** Selecting the right backend not only secures your Terraform state but also improves team productivity and infrastructure reliability.
 
 ## Types of Remote State Backends
 
@@ -42,25 +38,19 @@ Designed for Google Cloud projects, the GCS backend saves state files in Google 
 
 The Consul backend is perfect for teams leveraging Consul for service discovery and configuration management. It stores state in a Consul key-value store, ensuring high availability and effective locking mechanisms.
 
-<Frame>
-  ![The image lists types of remote state backends, highlighting "Consul Backend" and its features: team collaboration, state storage, and high availability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884159/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Differentiate-Remote-State-Backends-in-Terraform/frame_100.jpg)
-</Frame>
+![The image lists types of remote state backends, highlighting "Consul Backend" and its features: team collaboration, state storage, and high availability.](https://kodekloud.com/kk-media/image/upload/v1752884159/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Differentiate-Remote-State-Backends-in-Terraform/frame_100.jpg)
 
 ### Artifactory Backend
 
 For teams utilizing JFrog Artifactory, the Artifactory backend facilitates storage of state files in a private, versioned repository. This backend supports metadata and even binary storage, making management more streamlined.
 
-<Frame>
-  ![The image lists types of remote state backends, highlighting "Artifactory Backend" for storing state in a private, versioned repository with metadata and team access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884160/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Differentiate-Remote-State-Backends-in-Terraform/frame_110.jpg)
-</Frame>
+![The image lists types of remote state backends, highlighting "Artifactory Backend" for storing state in a private, versioned repository with metadata and team access.](https://kodekloud.com/kk-media/image/upload/v1752884160/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Differentiate-Remote-State-Backends-in-Terraform/frame_110.jpg)
 
 ### HCP Terraform
 
 Formerly known as Terraform Cloud, HCP Terraform is a fully managed service by HashiCorp. It not only handles remote state management but also offers collaboration and automation tools designed to optimize Terraform workflows.
 
-<Frame>
-  ![The image lists types of remote state backends, highlighting "HCP Terraform" as a fully managed service by HashiCorp, formerly known as Terraform Cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884162/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Differentiate-Remote-State-Backends-in-Terraform/frame_120.jpg)
-</Frame>
+![The image lists types of remote state backends, highlighting "HCP Terraform" as a fully managed service by HashiCorp, formerly known as Terraform Cloud.](https://kodekloud.com/kk-media/image/upload/v1752884162/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Differentiate-Remote-State-Backends-in-Terraform/frame_120.jpg)
 
 ## Comparison of Remote State Backends
 
@@ -82,16 +72,10 @@ Choosing the most appropriate remote state backend depends on several factors:
 * **Team Collaboration and Locking:** Confirm that the backend supports effective state locking to avoid conflicts in a multi-user environment.
 * **Cost and Complexity:** Consider both the financial and administrative overhead involved in implementing and maintaining the backend.
 
-<Callout icon="triangle-alert">
-  Before finalizing your decision, review your specific project requirements and existing technical infrastructure to select the backend that best enhances your deployment efficiency and security.
-</Callout>
+> **triangle-alert** Before finalizing your decision, review your specific project requirements and existing technical infrastructure to select the backend that best enhances your deployment efficiency and security.
 
-<Frame>
-  ![The image is a conclusion slide highlighting that remote state backend choice affects efficiency, security, and manageability, ensuring stable and predictable infrastructure deployments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884163/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Differentiate-Remote-State-Backends-in-Terraform/frame_160.jpg)
-</Frame>
+![The image is a conclusion slide highlighting that remote state backend choice affects efficiency, security, and manageability, ensuring stable and predictable infrastructure deployments.](https://kodekloud.com/kk-media/image/upload/v1752884163/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Differentiate-Remote-State-Backends-in-Terraform/frame_160.jpg)
 
 By carefully reviewing these factors, you can select the ideal remote state backend that improves the efficiency, security, and overall manageability of your Terraform infrastructure projects.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/4b6ab52b-4fbb-4a33-9dbc-0fb1c6900c7e/lesson/5af12aba-4f9e-4abb-844a-d0fb5056b07f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/4b6ab52b-4fbb-4a33-9dbc-0fb1c6900c7e/lesson/5af12aba-4f9e-4abb-844a-d0fb5056b07f)

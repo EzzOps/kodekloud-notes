@@ -10,7 +10,7 @@ In this article, we will delve into advanced concepts in Golang, an open-source 
 
 Before you begin, please ensure you have a solid understanding of the foundational topics, including data types and variables, operators and control flow, functions, pointers, structs, methods, and interfaces. If you need a refresher on any of these topics, please check out the [Golang Basics course](https://learn.kodekloud.com/user/courses/golang).
 
-![The image shows a woman speaking, with a list of programming concepts like "Data Types," "Variables," and "Functions" displayed beside her.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868730/notes-assets/images/Advanced-Golang-Course-Introduction/woman-speaking-programming-concepts.jpg)
+![The image shows a woman speaking, with a list of programming concepts like "Data Types," "Variables," and "Functions" displayed beside her.](https://kodekloud.com/kk-media/image/upload/v1752868730/notes-assets/images/Advanced-Golang-Course-Introduction/woman-speaking-programming-concepts.jpg)
 
 This course is designed to simplify advanced Golang concepts using engaging animated illustrations. Each module is enhanced by interactive labs that reinforce the theoretical concepts with practical, hands-on experience.
 

@@ -34,9 +34,7 @@ Why not the others?
 * Matplotlib: Useful for plotting evaluation outputs, not for producing embeddings or similarity metrics.
 * pandas: Ideal for organizing results and aggregating metrics, but not designed to compute semantic similarity directly.
 
-<Callout icon="lightbulb">
-  Tip: Select a model based on your accuracy/latency needs — `all-MiniLM-L6-v2` is efficient for bulk evaluations, while larger models (or fine-tuned ones) can yield higher semantic fidelity. For large-scale comparisons, use batch encoding and enable GPU acceleration where available.
-</Callout>
+> **lightbulb** Tip: Select a model based on your accuracy/latency needs — `all-MiniLM-L6-v2` is efficient for bulk evaluations, while larger models (or fine-tuned ones) can yield higher semantic fidelity. For large-scale comparisons, use batch encoding and enable GPU acceleration where available.
 
 Links and references
 
@@ -46,9 +44,7 @@ Links and references
 * [pandas Documentation](https://pandas.pydata.org/docs/)
 * [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/caba3333-fa51-4ac6-9e04-5fc53970c7ee" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/caba3333-fa51-4ac6-9e04-5fc53970c7ee)
 
 
 # Python Package for RAG Vector Database Implementation
@@ -65,9 +61,7 @@ Answer: [FAISS](https://github.com/facebookresearch/faiss) or [Pinecone](https:/
 
 Both FAISS and Pinecone are purpose-built for efficient storage and similarity search of high-dimensional vectors (embeddings) and are the right choices for vector databases in RAG systems.
 
-<Callout icon="lightbulb">
-  FAISS and Pinecone both provide fast nearest-neighbor (similarity) search for dense vectors. Use FAISS for an on-premises, highly configurable, high-performance solution; use Pinecone for a managed, hosted vector database that minimizes operational overhead.
-</Callout>
+> **lightbulb** FAISS and Pinecone both provide fast nearest-neighbor (similarity) search for dense vectors. Use FAISS for an on-premises, highly configurable, high-performance solution; use Pinecone for a managed, hosted vector database that minimizes operational overhead.
 
 ## Why FAISS or Pinecone?
 

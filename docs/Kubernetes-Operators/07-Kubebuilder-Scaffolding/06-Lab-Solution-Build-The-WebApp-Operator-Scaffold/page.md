@@ -20,9 +20,7 @@ Run kubebuilder init with the exact domain, repository, and project name. These 
 kubebuilder init --domain kodekloud.com --repo github.com/kodekloud/webapp-operator --project-name webapp-operator
 ```
 
-<Callout icon="lightbulb">
-  Make sure the `--domain`, `--repo`, and `--project-name` values exactly match the course. If these are incorrect, the fully qualified group names and import paths will differ and later steps will fail.
-</Callout>
+> **lightbulb** Make sure the `--domain`, `--repo`, and `--project-name` values exactly match the course. If these are incorrect, the fully qualified group names and import paths will differ and later steps will fail.
 
 2. Add the WebApp API
 
@@ -95,9 +93,7 @@ Confirm the CRD YAML exists in `config/crd/bases` and follows the naming pattern
 
 * `webapp.kodekloud.com_webapps.yaml`
 
-<Callout icon="lightbulb">
-  If the CRD file is missing or out of date, you most likely edited the Go type definitions without rerunning `make manifests`. Always regenerate manifests after changing API types.
-</Callout>
+> **lightbulb** If the CRD file is missing or out of date, you most likely edited the Go type definitions without rerunning `make manifests`. Always regenerate manifests after changing API types.
 
 5. Sanity build the manager binary
 
@@ -159,6 +155,4 @@ Links and references
 * controller-gen: [https://pkg.go.dev/sigs.k8s.io/controller-tools/cmd/controller-gen](https://pkg.go.dev/sigs.k8s.io/controller-tools/cmd/controller-gen)
 * Go tooling: [https://golang.org/doc/](https://golang.org/doc/) and `go build`, `go vet`, `go fmt` documentation
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/20a4ec01-fde8-466d-83c7-2f74f6def1f0/lesson/f616b402-bc78-4ed6-af13-1c4f7b96beae" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/20a4ec01-fde8-466d-83c7-2f74f6def1f0/lesson/f616b402-bc78-4ed6-af13-1c4f7b96beae)

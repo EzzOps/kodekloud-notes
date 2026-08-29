@@ -30,9 +30,7 @@ hubble:
 | `hubble.metrics.enabled`                 | List of Hubble metric families to export.                                                                                     | `"dns:query;ignoreAAAA"` is a single metric spec and must be quoted due to the colon/semicolon. |
 | `hubble.metrics.enableOpenMetrics: true` | Export metrics using OpenMetrics format so Prometheus can scrape them.                                                        | Needed for correct scraping and metric exposition.                                              |
 
-<Callout icon="lightbulb">
-  Check the official Cilium/Hubble metrics documentation for the complete and up-to-date list of metric families and any changes to Helm values: [https://docs.cilium.io/en/stable/observability/metrics/](https://docs.cilium.io/en/stable/observability/metrics/)
-</Callout>
+> **lightbulb** Check the official Cilium/Hubble metrics documentation for the complete and up-to-date list of metric families and any changes to Helm values: [https://docs.cilium.io/en/stable/observability/metrics/](https://docs.cilium.io/en/stable/observability/metrics/)
 
 ## Install or upgrade Cilium with the metrics values
 
@@ -77,9 +75,7 @@ Additional hands-on monitoring resources:
 
 * Learn By Doing: AIOps Foundations - Intelligent Monitoring With Prometheus & Grafana: [https://learn.kodekloud.com/user/courses/aiops-foundations-intelligent-monitoring-with-prometheus-grafana](https://learn.kodekloud.com/user/courses/aiops-foundations-intelligent-monitoring-with-prometheus-grafana)
 
-<Callout icon="warning">
-  Metric names and Helm values may change across Cilium releases. Always verify keys, supported metric families, and the values schema against the documentation for your specific Cilium version before applying changes in production.
-</Callout>
+> **warning** Metric names and Helm values may change across Cilium releases. Always verify keys, supported metric families, and the values schema against the documentation for your specific Cilium version before applying changes in production.
 
 ## Links and References
 
@@ -89,9 +85,7 @@ Additional hands-on monitoring resources:
 * Grafana: [https://grafana.com/](https://grafana.com/)
 * Helm: [https://helm.sh/](https://helm.sh/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b4c15752-3e42-43af-bedf-4a4c204ef5d8/lesson/a684ca51-0d39-4884-a416-e38c296d6205" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b4c15752-3e42-43af-bedf-4a4c204ef5d8/lesson/a684ca51-0d39-4884-a416-e38c296d6205)
 
 
 # Section Introduction
@@ -108,9 +102,7 @@ In this lesson we focus on observability for Kubernetes clusters using Cilium. W
 
 You will learn how to trace individual connections, visualize service-to-service flows, and configure Prometheus to collect and store Cilium telemetry for dashboards and alerts.
 
-<Callout icon="lightbulb">
-  Before you begin, ensure you have cluster-admin access, the Cilium CLI (optional but recommended), kubectl configured for the target cluster, and Prometheus (or a Prometheus-compatible scraper) available to ingest metrics.
-</Callout>
+> **lightbulb** Before you begin, ensure you have cluster-admin access, the Cilium CLI (optional but recommended), kubectl configured for the target cluster, and Prometheus (or a Prometheus-compatible scraper) available to ingest metrics.
 
 ## Why use Hubble + Prometheus?
 
@@ -165,9 +157,7 @@ Verify Hubble status:
 cilium hubble status
 ```
 
-<Callout icon="warning">
-  If you enable Hubble relay and UI on production clusters, ensure proper authentication and network access controls are in place (especially for the Hubble UI and relay ports) — these endpoints expose sensitive network telemetry.
-</Callout>
+> **warning** If you enable Hubble relay and UI on production clusters, ensure proper authentication and network access controls are in place (especially for the Hubble UI and relay ports) — these endpoints expose sensitive network telemetry.
 
 ***
 
@@ -341,10 +331,6 @@ hubble observe --from-namespaces default --to-ports 8080 --since 2m
 * [Prometheus Documentation — Configuration](https://prometheus.io/docs/prometheus/latest/configuration/configuration/)
 * [Kubernetes Documentation — Service discovery in Prometheus](https://kubernetes.io/docs/tasks/debug-application-cluster/extend-prometheus/)
 
-<Callout icon="lightbulb">
-  This guide provides a practical starting point for using Hubble with Prometheus. For cluster-specific details (service names, namespaces, authentication), consult your Cilium installation manifest or Helm values and the official Cilium docs.
-</Callout>
+> **lightbulb** This guide provides a practical starting point for using Hubble with Prometheus. For cluster-specific details (service names, namespaces, authentication), consult your Cilium installation manifest or Helm values and the official Cilium docs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b4c15752-3e42-43af-bedf-4a4c204ef5d8/lesson/381ba02d-c068-4aab-82c6-9030ffd29730" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b4c15752-3e42-43af-bedf-4a4c204ef5d8/lesson/381ba02d-c068-4aab-82c6-9030ffd29730)

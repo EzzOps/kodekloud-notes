@@ -11,7 +11,7 @@ Securing AWS Lambda functions involves two distinct permission models that contr
 | Invocation Permission | Push (e.g., SNS)    | IAM Resource Policy   | Allow an external service or account to invoke your function |
 | Execution Role        | Pull or AWS actions | IAM Role (AssumeRole) | Grant your function permissions to use other AWS services    |
 
-![The image illustrates access permissions for AWS Lambda, showing invocation permissions and execution roles for Lambda functions interacting with other AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863166/notes-assets/images/AWS-Lambda-Access-Permissions/aws-lambda-access-permissions-diagram.jpg)
+![The image illustrates access permissions for AWS Lambda, showing invocation permissions and execution roles for Lambda functions interacting with other AWS services.](https://kodekloud.com/kk-media/image/upload/v1752863166/notes-assets/images/AWS-Lambda-Access-Permissions/aws-lambda-access-permissions-diagram.jpg)
 
 ***
 

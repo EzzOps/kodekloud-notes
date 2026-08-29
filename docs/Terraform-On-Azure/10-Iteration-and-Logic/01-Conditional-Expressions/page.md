@@ -11,9 +11,7 @@ terraform --install-autocomplete
 exec bash
 ```
 
-<Callout icon="lightbulb">
-  If you are using macOS, Windows, or another Linux distribution, follow the platform-specific installation instructions on the official Terraform documentation: [https://developer.hashicorp.com/terraform/tutorials](https://developer.hashicorp.com/terraform/tutorials).
-</Callout>
+> **lightbulb** If you are using macOS, Windows, or another Linux distribution, follow the platform-specific installation instructions on the official Terraform documentation: [https://developer.hashicorp.com/terraform/tutorials](https://developer.hashicorp.com/terraform/tutorials).
 
 ## What you'll learn — Course roadmap
 
@@ -210,9 +208,7 @@ Additional references
 
 Ready to master Infrastructure-as-Code on Azure and accelerate your cloud career? Let's get started.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/ab5ee49b-38b0-43bc-929b-f230cde10d90/lesson/a3ba353d-6d04-405a-8c36-01ef6db361e8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/ab5ee49b-38b0-43bc-929b-f230cde10d90/lesson/a3ba353d-6d04-405a-8c36-01ef6db361e8)
 
 
 # Conditional Expressions
@@ -241,9 +237,7 @@ The syntax is: `condition ? value_if_true : value_if_false`.
 
 Use conditional expressions to keep configuration DRY and to decide values dynamically during `terraform plan` and `terraform apply`.
 
-<Callout icon="lightbulb">
-  Use conditional expressions to keep code clean and let Terraform compute configuration values (regions, SKUs, toggles) at plan/apply time.
-</Callout>
+> **lightbulb** Use conditional expressions to keep code clean and let Terraform compute configuration values (regions, SKUs, toggles) at plan/apply time.
 
 This article also covers `for` expressions and how they interact with conditional expressions and `for_each`.
 

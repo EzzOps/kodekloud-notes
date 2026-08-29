@@ -56,9 +56,7 @@ Key options at a glance
 
 You can view the full help output from the CLI to see all available flags and advanced options.
 
-<Callout icon="warning">
-  If the Jenkins job references credentials or secrets, the importer cannot create GitHub repository secrets for you. Add the required secrets to the target repository before merging the PR.
-</Callout>
+> **warning** If the Jenkins job references credentials or secrets, the importer cannot create GitHub repository secrets for you. Add the required secrets to the target repository before merging the PR.
 
 Demo command used in this walkthrough
 
@@ -107,9 +105,7 @@ env:
   m_username: "${{ secrets.MONGO_DB_PASSWORD_M_USERNAME }}"
 ```
 
-<Callout icon="lightbulb">
-  Secrets referenced in the generated workflow must be added manually to the target repository (`Settings → Secrets and variables → Actions`). GitHub Actions masks secrets in logs, so secret values appear as asterisks if printed during a run.
-</Callout>
+> **lightbulb** Secrets referenced in the generated workflow must be added manually to the target repository (`Settings → Secrets and variables → Actions`). GitHub Actions masks secrets in logs, so secret values appear as asterisks if printed during a run.
 
 Generated workflow example (from this demo)
 
@@ -218,6 +214,4 @@ References and further reading
 
 That’s everything for this demo migration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/c28a06fb-40d3-44c4-9366-42b1d83b71ae" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/c28a06fb-40d3-44c4-9366-42b1d83b71ae)

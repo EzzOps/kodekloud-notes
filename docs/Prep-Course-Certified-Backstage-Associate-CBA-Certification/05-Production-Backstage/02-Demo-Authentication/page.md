@@ -76,9 +76,7 @@ After registering, GitHub provides a Client ID and allows you to generate a Clie
   <img alt="A screenshot of GitHub's &#x22;Register a new OAuth app&#x22; page showing form fields including Application name (&#x22;backstage-auth&#x22;), a Homepage URL with an IP address and port, and an Authorization callback URL. The &#x22;Register application&#x22; button is visible at the bottom." />
 </Frame>
 
-<Callout icon="warning">
-  GitHub shows the client secret only once when you create it. Copy it immediately and store it securely (for example, in environment variables or a secrets manager). Do not commit secrets to source control.
-</Callout>
+> **warning** GitHub shows the client secret only once when you create it. Copy it immediately and store it securely (for example, in environment variables or a secrets manager). Do not commit secrets to source control.
 
 You can view the Client ID and manage Client Secrets from the OAuth app settings page. If you lose the secret, generate a new one.
 
@@ -184,9 +182,7 @@ Backstage uses HTTP cookies for sessions. To test first-run behavior:
 
 If GitHub is misconfigured (missing `environment`, `clientId`, or `clientSecret`), the SignIn page may show an error like "The GitHub provider is not configured to support sign-in."
 
-<Callout icon="lightbulb">
-  Clearing cookies ensures you test the full OAuth flow from the beginning. This helps validate that the frontend, backend, and GitHub OAuth callback are wired correctly.
-</Callout>
+> **lightbulb** Clearing cookies ensures you test the full OAuth flow from the beginning. This helps validate that the frontend, backend, and GitHub OAuth callback are wired correctly.
 
 ## 6. Common error: "unable to resolve user identity"
 
@@ -204,9 +200,7 @@ that would match your configured sign-in resolver.
 
 This means GitHub authenticated you, but Backstage could not map the returned identity to any `User` entity in the catalog using the configured resolver.
 
-<Callout icon="lightbulb">
-  The sign-in resolver maps identity attributes returned by GitHub (e.g., username or email) to a Backstage `User` entity. If no matching user entity exists, sign-in fails with the "unable to resolve user identity" error.
-</Callout>
+> **lightbulb** The sign-in resolver maps identity attributes returned by GitHub (e.g., username or email) to a Backstage `User` entity. If no matching user entity exists, sign-in fails with the "unable to resolve user identity" error.
 
 Options to fix the error:
 

@@ -35,9 +35,7 @@ NAME                                     READY   STATUS    RESTARTS   AGE
 nginx-deployment-6b76765859-hx95j         1/1     Running   0          55s
 ```
 
-<Callout icon="lightbulb">
-  Argo CD monitors the Git repository, and upon detecting new resource definitions, it automatically provisions them in the default namespace.
-</Callout>
+> **lightbulb** Argo CD monitors the Git repository, and upon detecting new resource definitions, it automatically provisions them in the default namespace.
 
 ## Updating the Kubernetes Manifest
 
@@ -77,18 +75,12 @@ After updating the replica count to three, save the file and commit the changes 
 
 You can verify these changes in the Argo CD UI. The dashboard provides a visual representation of the application’s state, including the updated replica count:
 
-<Frame>
-  ![The image shows an Argo CD interface displaying application deployment details, including a visual workflow of a "cd-with-argo" application and an "nginx-deployment."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880455/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-CICD-Pipeline-Demo/frame_110.jpg)
-</Frame>
+![The image shows an Argo CD interface displaying application deployment details, including a visual workflow of a "cd-with-argo" application and an "nginx-deployment."](https://kodekloud.com/kk-media/image/upload/v1752880455/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-CICD-Pipeline-Demo/frame_110.jpg)
 
 By clicking on the application instance in the UI, you will observe that the number of replicas has increased from one to three.
 
-<Callout icon="lightbulb">
-  For additional insights into Argo CD and GitOps best practices, consider exploring our [GitOps with Argo CD](https://learn.kodekloud.com/user/courses/gitops-with-argocd) course on KodeKloud.
-</Callout>
+> **lightbulb** For additional insights into Argo CD and GitOps best practices, consider exploring our [GitOps with Argo CD](https://learn.kodekloud.com/user/courses/gitops-with-argocd) course on KodeKloud.
 
 Thank you for reading, and stay tuned for our next article!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/7221af3a-169a-4c55-bc00-b7b40e1dceda/lesson/aa2efc08-e34c-4b6e-8ffe-25dad4936ead" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/7221af3a-169a-4c55-bc00-b7b40e1dceda/lesson/aa2efc08-e34c-4b6e-8ffe-25dad4936ead)

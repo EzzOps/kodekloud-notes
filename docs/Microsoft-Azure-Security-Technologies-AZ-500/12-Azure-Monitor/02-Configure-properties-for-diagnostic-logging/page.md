@@ -20,9 +20,7 @@ At the application level, Azure offers Application Insights for monitoring and d
 
 These capabilities help track performance issues, monitor failures, and identify potential vulnerabilities.
 
-<Callout icon="lightbulb">
-  Utilize Application Insights to gain real-time insights into your application's behavior and performance.
-</Callout>
+> **lightbulb** Utilize Application Insights to gain real-time insights into your application's behavior and performance.
 
 ***
 
@@ -46,9 +44,7 @@ Azure resources come with built-in metrics and resource logs:
 
 After enabling resource logs, choose the data to collect and select from multiple destinations such as a storage account, event hub, third-party solutions, or Azure Log Analytics.
 
-<Frame>
-  ![The image is a diagram illustrating the configuration properties for diagnostic logging, highlighting different categories like Application, OS, Azure Resources, and more, with a focus on metrics and resource logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881693/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-properties-for-diagnostic-logging/diagnostic-logging-configuration-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating the configuration properties for diagnostic logging, highlighting different categories like Application, OS, Azure Resources, and more, with a focus on metrics and resource logs.](https://kodekloud.com/kk-media/image/upload/v1752881693/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-properties-for-diagnostic-logging/diagnostic-logging-configuration-diagram.jpg)
 
 ***
 
@@ -56,9 +52,7 @@ After enabling resource logs, choose the data to collect and select from multipl
 
 Azure subscriptions offer valuable service health insights, allowing you to monitor the status of various services. For example, you can verify whether the virtual machine service is available or check for issues with your database service. You can also configure alerts to notify you of any changes in service health.
 
-<Frame>
-  ![The image is a diagram showing categories for configuring properties for diagnostic logging, including Application, OS, Azure Resources, Azure Subscription, Azure Tenant, and Custom, with a focus on "Service Health Activity Log." It also highlights "Metrics" and "Logs" at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881694/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-properties-for-diagnostic-logging/diagnostic-logging-properties-diagram.jpg)
-</Frame>
+![The image is a diagram showing categories for configuring properties for diagnostic logging, including Application, OS, Azure Resources, Azure Subscription, Azure Tenant, and Custom, with a focus on "Service Health Activity Log." It also highlights "Metrics" and "Logs" at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752881694/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-properties-for-diagnostic-logging/diagnostic-logging-properties-diagram.jpg)
 
 Furthermore, activity logs capture all operations performed in the Azure portal, including PUT and POST calls made through ARM. These logs are essential for auditing and operational tracking.
 
@@ -74,9 +68,7 @@ At the tenant level, you have access to various Azure activity logs such as:
 
 These logs play a crucial role in security by providing detailed information about user sign-ins and help troubleshoot issues like conditional access. When integrated with Azure Log Analytics, they enable deeper analysis for identity management and auditing purposes.
 
-<Frame>
-  ![The image is a diagram showing categories for configuring properties for diagnostic logging, including Application, OS, Azure Resources, Azure Subscription, Azure Tenant, and Custom, with a focus on Azure Active Directory Logs. It also includes icons for Metrics and Logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881695/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-properties-for-diagnostic-logging/diagnostic-logging-configuration-diagram-2.jpg)
-</Frame>
+![The image is a diagram showing categories for configuring properties for diagnostic logging, including Application, OS, Azure Resources, Azure Subscription, Azure Tenant, and Custom, with a focus on Azure Active Directory Logs. It also includes icons for Metrics and Logs.](https://kodekloud.com/kk-media/image/upload/v1752881695/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-properties-for-diagnostic-logging/diagnostic-logging-configuration-diagram-2.jpg)
 
 ***
 
@@ -89,9 +81,7 @@ For data that does not fit within the standard categories, custom logging soluti
 
 These options allow you to collect logs from a wide range of non-standard sources, ensuring that no critical data goes unmonitored.
 
-<Frame>
-  ![The image is a diagram showing categories for configuring properties for diagnostic logging, including Application, OS, Azure Resources, Azure Subscription, Azure Tenant, and Custom, with a focus on "Instrumentation Package Application." It also includes icons for Metrics and Logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881696/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-properties-for-diagnostic-logging/diagnostic-logging-configuration-diagram-3.jpg)
-</Frame>
+![The image is a diagram showing categories for configuring properties for diagnostic logging, including Application, OS, Azure Resources, Azure Subscription, Azure Tenant, and Custom, with a focus on "Instrumentation Package Application." It also includes icons for Metrics and Logs.](https://kodekloud.com/kk-media/image/upload/v1752881696/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-properties-for-diagnostic-logging/diagnostic-logging-configuration-diagram-3.jpg)
 
 Additionally, Azure Arc extends monitoring capabilities to on-premises and multi-cloud environments. With Azure Arc, you can:
 
@@ -116,10 +106,6 @@ In summary, configuring diagnostic logging properties across different levels in
 
 These strategies, complemented by Microsoft Defender for Cloud, ensure that your Azure environment remains secure, compliant, and well-monitored.
 
-<Callout icon="lightbulb">
-  By implementing a multi-layered diagnostic logging strategy, you can achieve comprehensive monitoring and proactive management of your Azure infrastructure.
-</Callout>
+> **lightbulb** By implementing a multi-layered diagnostic logging strategy, you can achieve comprehensive monitoring and proactive management of your Azure infrastructure.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7b98ab58-5aa5-4f2b-9cfa-fdfef40ddc37/lesson/729247c9-780e-44e4-8e8e-9aeed0ea045d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7b98ab58-5aa5-4f2b-9cfa-fdfef40ddc37/lesson/729247c9-780e-44e4-8e8e-9aeed0ea045d)

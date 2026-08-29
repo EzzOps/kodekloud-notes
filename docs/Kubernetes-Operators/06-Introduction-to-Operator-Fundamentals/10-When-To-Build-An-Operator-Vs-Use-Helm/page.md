@@ -87,13 +87,9 @@ There’s a middle path called a Helm-based operator: expose a Custom Resource t
 * The chart already expresses the desired resources, but you want a Kubernetes-native API (CRD) and lightweight reconciliation.
 * You need some automated reconciliation or simple lifecycle hooks without writing a full controller from scratch.
 
-<Callout icon="lightbulb">
-  Use Helm when your primary need is packaging, templated manifests, and declarative installs/upgrades. Use an Operator when the application requires ongoing, application-aware operations and continuous reconciliation.
-</Callout>
+> **lightbulb** Use Helm when your primary need is packaging, templated manifests, and declarative installs/upgrades. Use an Operator when the application requires ongoing, application-aware operations and continuous reconciliation.
 
-<Callout icon="warning">
-  Avoid over-engineering: don’t build an Operator just because it’s possible. Conversely, don’t rely solely on Helm for applications that require continuous, domain-aware automation—this can lead to unnoticed configuration drift and outages.
-</Callout>
+> **warning** Avoid over-engineering: don’t build an Operator just because it’s possible. Conversely, don’t rely solely on Helm for applications that require continuous, domain-aware automation—this can lead to unnoticed configuration drift and outages.
 
 Decision rule (practical)
 
@@ -106,6 +102,4 @@ Links and references
 * [Helm Documentation](https://helm.sh/docs/)
 * [Operator SDK](https://sdk.operatorframework.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/5a889a8e-66af-4d97-ab83-99fddbd33f3f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/5a889a8e-66af-4d97-ab83-99fddbd33f3f)

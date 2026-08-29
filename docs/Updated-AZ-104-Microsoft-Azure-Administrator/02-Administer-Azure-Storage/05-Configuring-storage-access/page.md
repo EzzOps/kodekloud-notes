@@ -36,9 +36,7 @@ This method is especially well-suited for enterprise environments that demand hi
 
 Anonymous access permits unauthenticated users to retrieve data from your storage account. While this can be useful for sharing publicly accessible data, it comes with significant security risks.
 
-<Callout icon="triangle-alert">
-  Enabling anonymous access may expose your data to the entire internet. Use this option only if your data is intended for public distribution, and always evaluate the potential impacts on your security posture.
-</Callout>
+> **triangle-alert** Enabling anonymous access may expose your data to the entire internet. Use this option only if your data is intended for public distribution, and always evaluate the potential impacts on your security posture.
 
 ## Summary
 
@@ -58,6 +56,4 @@ For additional resources, consider exploring:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/48d08f66-feb9-4bae-83b0-2e6aa34e24ae/lesson/e4e717f3-ead0-4de0-a5d9-9412aa7b2e23" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/48d08f66-feb9-4bae-83b0-2e6aa34e24ae/lesson/e4e717f3-ead0-4de0-a5d9-9412aa7b2e23)

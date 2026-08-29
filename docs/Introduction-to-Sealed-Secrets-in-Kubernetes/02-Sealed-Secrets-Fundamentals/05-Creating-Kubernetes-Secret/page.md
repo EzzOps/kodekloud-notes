@@ -25,9 +25,7 @@ kubectl create secret generic database \
 | `--from-literal=KEY=VALUE`     | Adds literal key-value pairs to the Secret | `--from-literal=DB_PASSWORD=password123` |
 | `--dry-run=client -o yaml`     | Outputs the manifest without applying it   | `--dry-run=client -o yaml`               |
 
-<Callout icon="lightbulb">
-  Kubernetes Secrets store data as base64-encoded strings, not encrypted values. Always seal or encrypt sensitive data before committing to version control.
-</Callout>
+> **lightbulb** Kubernetes Secrets store data as base64-encoded strings, not encrypted values. Always seal or encrypt sensitive data before committing to version control.
 
 ## 2. Inspecting the Generated YAML
 

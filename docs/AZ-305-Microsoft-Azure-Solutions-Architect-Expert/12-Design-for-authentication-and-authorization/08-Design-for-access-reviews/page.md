@@ -11,7 +11,7 @@ Access Reviews follow a four-step cyclic process:
 1. **Notification:**\
    Resource owners receive email notifications that list all current role assignments within a specified scope. This communication ensures that both application owners and users are informed about their access status.
 
-![The image is an infographic titled "Access Reviews" by KodeKloud, outlining a process involving notifying resource owners, reviewing assignments, purging stale assignments, and retaining necessary ones. It includes icons and brief descriptions for each step.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867217/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-access-reviews/access-reviews-infographic-kodekloud.jpg)
+![The image is an infographic titled "Access Reviews" by KodeKloud, outlining a process involving notifying resource owners, reviewing assignments, purging stale assignments, and retaining necessary ones. It includes icons and brief descriptions for each step.](https://kodekloud.com/kk-media/image/upload/v1752867217/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-access-reviews/access-reviews-infographic-kodekloud.jpg)
 
 2. **Review:**\
    During the review phase, designated resource owners assess each role assignment to determine if continued access is warranted.
@@ -36,7 +36,7 @@ Implementing Access Reviews effectively requires a clear strategy and careful pl
 * **Decide the Reviewers:**\
   Identify whether the reviews will be conducted by resource owners, delegated reviewers, or security teams.
 
-![The image outlines best practices for access reviews, including acquiring licenses, understanding the purpose, deciding reviewers, setting up a review plan, deciding the self-attest process, and determining resource types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867218/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-access-reviews/access-reviews-best-practices.jpg)
+![The image outlines best practices for access reviews, including acquiring licenses, understanding the purpose, deciding reviewers, setting up a review plan, deciding the self-attest process, and determining resource types.](https://kodekloud.com/kk-media/image/upload/v1752867218/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-access-reviews/access-reviews-best-practices.jpg)
 
 * **Implement a Self-Attestation Process:**\
   Consider allowing users to confirm their ongoing need for access. If a user self-attests, their access is retained; if not, their permissions may be revoked.
@@ -66,17 +66,17 @@ The Azure portal offers a streamlined approach to configuring and managing Acces
 1. **Start a New Review:**\
    In the Azure portal's **Identity Governance** section, click on "Add a new access review." Choose the type of review based on your needs, such as reviewing a group membership (e.g., Teams plus groups) or a set of applications.
 
-![The image shows a Microsoft Azure portal page for creating a new access review, with a dropdown menu to select between reviewing "Teams + Groups" or "Applications."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867219/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-access-reviews/azure-portal-access-review-dropdown.jpg)
+![The image shows a Microsoft Azure portal page for creating a new access review, with a dropdown menu to select between reviewing "Teams + Groups" or "Applications."](https://kodekloud.com/kk-media/image/upload/v1752867219/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-access-reviews/azure-portal-access-review-dropdown.jpg)
 
 2. **Select the Scope:**\
    For instance, if you are reviewing an application, select the relevant app—such as the Azure VPN app—and define whether the review applies to guest users or all users. Configure the review to be either single-stage or multi-stage, as per your approval process requirements.
 
-![The image shows a Microsoft Azure portal page for setting up a new access review, with options to configure multi-stage reviews, select reviewers, and specify review durations and recurrence.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867221/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-access-reviews/azure-portal-access-review-setup.jpg)
+![The image shows a Microsoft Azure portal page for setting up a new access review, with options to configure multi-stage reviews, select reviewers, and specify review durations and recurrence.](https://kodekloud.com/kk-media/image/upload/v1752867221/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-access-reviews/azure-portal-access-review-setup.jpg)
 
 3. **Assign Reviewers:**\
    Choose who will perform the review. Options include designated users, self-attestation by the user, or managers (if available in Azure AD). For example, you can select individual reviewers to validate each role assignment.
 
-![The image shows a Microsoft Azure interface for setting up a new access review, where reviewers are being selected and review details such as duration and start date are specified.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867222/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-access-reviews/azure-access-review-setup-interface.jpg)
+![The image shows a Microsoft Azure interface for setting up a new access review, where reviewers are being selected and review details such as duration and start date are specified.](https://kodekloud.com/kk-media/image/upload/v1752867222/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-access-reviews/azure-access-review-setup-interface.jpg)
 
 4. **Define Review Recurrence and Duration:**\
    Set the review to recur on a schedule that suits your organization’s needs (weekly, monthly, quarterly, semi-annually, or annually) and specify the duration in days. Configure the start and end dates in a manner similar to scheduling a meeting in Outlook.
@@ -84,17 +84,17 @@ The Azure portal offers a streamlined approach to configuring and managing Acces
 5. **Configure Completion Settings:**\
    Enable auto-apply to enforce reviewer decisions automatically. Choose from options such as leaving access unchanged, removing access, or approving access if no response is received. Additionally, use decision maker helpers that can notify you if a user has not signed in within a specified timeframe (e.g., 30 days). Advanced options also allow you to add justifications, set up email notifications, and configure reminders.
 
-![The image shows a Microsoft Azure portal interface for setting up a new access review. It includes options for completion settings, reviewer decision helpers, and advanced settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867223/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-access-reviews/azure-portal-access-review-setup-2.jpg)
+![The image shows a Microsoft Azure portal interface for setting up a new access review. It includes options for completion settings, reviewer decision helpers, and advanced settings.](https://kodekloud.com/kk-media/image/upload/v1752867223/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-access-reviews/azure-portal-access-review-setup-2.jpg)
 
 6. **Review Details and Create:**\
    Provide a name and description for the review (for example, "VPN review" if evaluating the VPN app). Once you confirm all settings, create the review. Automated emails will be sent to the reviewers at the specified frequency, enabling them to determine which users should maintain access.
 
-![The image shows a Microsoft Azure portal page for creating a new access review, with fields for entering a review name and description. It includes sections for confirming access review details, such as resources, review scope, reviewers, frequency, and settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867224/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-access-reviews/azure-access-review-portal-page.jpg)
+![The image shows a Microsoft Azure portal page for creating a new access review, with fields for entering a review name and description. It includes sections for confirming access review details, such as resources, review scope, reviewers, frequency, and settings.](https://kodekloud.com/kk-media/image/upload/v1752867224/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-access-reviews/azure-access-review-portal-page.jpg)
 
 7. **Monitor the Access Review:**\
    After the review is created, monitor its progress in the Identity Governance section of the Azure portal.
 
-![The image shows a Microsoft Azure portal interface for Identity Governance, specifically the Access Reviews section, listing a "VPN review" with a status of "Not started."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867225/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-access-reviews/azure-identity-governance-access-reviews.jpg)
+![The image shows a Microsoft Azure portal interface for Identity Governance, specifically the Access Reviews section, listing a "VPN review" with a status of "Not started."](https://kodekloud.com/kk-media/image/upload/v1752867225/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-access-reviews/azure-identity-governance-access-reviews.jpg)
 
 > **lightbulb** Regularly monitoring and adjusting your Access Reviews ensures that your organization maintains a secure and efficient access management policy.
 

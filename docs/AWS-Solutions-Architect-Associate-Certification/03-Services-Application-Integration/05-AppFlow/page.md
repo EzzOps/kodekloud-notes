@@ -6,7 +6,7 @@ This article explores Amazon AppFlow, a managed integration service for efficien
 
 In this lesson, we explore Amazon AppFlow, a fully managed integration service that enables organizations to efficiently share data across departments such as finance, HR, sales, and engineering. In many organizations, data resides in distinct applications and services, resulting in data silos that hinder effective data aggregation and utilization. Integrating data from SaaS applications with internal systems—and even with AWS services—can be challenging. Manual data transfer and transformation are not only time-consuming but also error-prone, which can lead to inconsistencies and poor data quality.
 
-![The image is a flowchart illustrating the need for AppFlow, showing data silos in Finance, Sales, HR, and Engineering, with manual data transfers to an internal tool containing a Data Lake and S3.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864682/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AppFlow/appflow-data-silos-flowchart.jpg)
+![The image is a flowchart illustrating the need for AppFlow, showing data silos in Finance, Sales, HR, and Engineering, with manual data transfers to an internal tool containing a Data Lake and S3.](https://kodekloud.com/kk-media/image/upload/v1752864682/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AppFlow/appflow-data-silos-flowchart.jpg)
 
 Amazon AppFlow overcomes these challenges by securely transferring data between SaaS applications (such as Salesforce) and AWS services (like Amazon S3 and Amazon Redshift). Acting as a bridge between various tools and platforms, AppFlow automates data transformation, mapping, and filtering, ensuring seamless connectivity between disparate systems.
 
@@ -28,7 +28,7 @@ The key components of AppFlow include:
 
 When a flow is executed, AppFlow checks for available data in the source, processes it based on the defined configuration (including field mappings and filtering), and then transfers the processed data to the destination.
 
-![The image is a flowchart titled "AppFlow – Components," showing the components: Source, Trigger, Flow, Connector, and Destination, connected with arrows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864684/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AppFlow/appflow-components-flowchart.jpg)
+![The image is a flowchart titled "AppFlow – Components," showing the components: Source, Trigger, Flow, Connector, and Destination, connected with arrows.](https://kodekloud.com/kk-media/image/upload/v1752864684/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AppFlow/appflow-components-flowchart.jpg)
 
 ## Features and Benefits
 
@@ -48,7 +48,7 @@ Amazon AppFlow offers numerous advantages, ensuring a robust and efficient data 
 
 > **lightbulb** For more information on AWS security best practices, refer to the [AWS Security Documentation](https://aws.amazon.com/security/).
 
-![The image showcases three features of "AppFlow": Speed and Automation, Security and Privacy, and Scalability, each represented with an icon and distinct color.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864685/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AppFlow/appflow-speed-security-scalability.jpg)
+![The image showcases three features of "AppFlow": Speed and Automation, Security and Privacy, and Scalability, each represented with an icon and distinct color.](https://kodekloud.com/kk-media/image/upload/v1752864685/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AppFlow/appflow-speed-security-scalability.jpg)
 
 ## AWS Service Integration
 
@@ -65,7 +65,7 @@ Amazon AppFlow integrates with a wide range of AWS services, including:
 
 This extensive integration allows AppFlow to serve as a central hub for data transfer and transformation, linking key AWS services with various third-party applications.
 
-![The image shows icons representing various Amazon Web Services (AWS) products integrated with AppFlow, including Amazon S3, Redshift, RDS, DynamoDB, EventBridge, Glue Data Brew, Lambda, and KMS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864686/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AppFlow/aws-appflow-integration-icons.jpg)
+![The image shows icons representing various Amazon Web Services (AWS) products integrated with AppFlow, including Amazon S3, Redshift, RDS, DynamoDB, EventBridge, Glue Data Brew, Lambda, and KMS.](https://kodekloud.com/kk-media/image/upload/v1752864686/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AppFlow/aws-appflow-integration-icons.jpg)
 
 ## Real-World Use Cases
 

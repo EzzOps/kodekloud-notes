@@ -16,7 +16,7 @@ In the development environment, after making code changes, click **Upload and De
 
 Below is an image of the AWS Elastic Beanstalk dashboard for an environment named "My-webapp-dev," which is running Node.js 20 on Amazon Linux and is in a healthy state.
 
-![The image shows an AWS Elastic Beanstalk dashboard for an environment named "My-webapp-dev," indicating that the environment is successfully launched and healthy, running on Node.js 20 with Amazon Linux.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858838/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Modes-Demo/aws-elastic-beanstalk-my-webapp-dev-dashboard.jpg)
+![The image shows an AWS Elastic Beanstalk dashboard for an environment named "My-webapp-dev," indicating that the environment is successfully launched and healthy, running on Node.js 20 with Amazon Linux.](https://kodekloud.com/kk-media/image/upload/v1752858838/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Modes-Demo/aws-elastic-beanstalk-my-webapp-dev-dashboard.jpg)
 
 ***
 
@@ -31,7 +31,7 @@ In the production environment, scroll to the **Updates, Monitoring, and Logging*
 1. **Rolling Updates**\
    Updates a subset of instances at a time. For example, if you set a 30% update rate on a four-instance setup, Elastic Beanstalk updates one instance at a time to minimize downtime.
 
-![The image shows a configuration screen for Amazon Elastic Beanstalk, focusing on application deployments with options for deployment policy, batch size type, and traffic split settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858839/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Modes-Demo/amazon-elastic-beanstalk-deployment-config.jpg)
+![The image shows a configuration screen for Amazon Elastic Beanstalk, focusing on application deployments with options for deployment policy, batch size type, and traffic split settings.](https://kodekloud.com/kk-media/image/upload/v1752858839/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Modes-Demo/amazon-elastic-beanstalk-deployment-config.jpg)
 
 2. **All at Once**\
    Updates every instance simultaneously. Although fast, this method may cause a service disruption since all instances are updated at the same time. This approach is typically reserved for non-production environments.
@@ -47,7 +47,7 @@ In the production environment, scroll to the **Updates, Monitoring, and Logging*
 
 For this demonstration, we will continue with the **Rolling Updates** configuration. After selecting this option, click **Apply** and then **Continue** to finalize the changes in your production environment.
 
-![The image shows an AWS Elastic Beanstalk configuration page with options for email notifications, application deployments, and configuration updates. A green banner at the top indicates the environment was successfully launched.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858840/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Modes-Demo/aws-elastic-beanstalk-configuration-page.jpg)
+![The image shows an AWS Elastic Beanstalk configuration page with options for email notifications, application deployments, and configuration updates. A green banner at the top indicates the environment was successfully launched.](https://kodekloud.com/kk-media/image/upload/v1752858840/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Modes-Demo/aws-elastic-beanstalk-configuration-page.jpg)
 
 ***
 
@@ -142,13 +142,13 @@ After saving your changes, compress the files into a zip archive (e.g., "version
 
 You may also override the default deployment preferences for this deployment. For instance, you could choose the **All at Once** deployment method, but for this demo, continue using the existing **Rolling Updates** configuration. Click **Deploy** to proceed.
 
-![The image shows an AWS Elastic Beanstalk interface for uploading and deploying an application, with options for deployment preferences and batch size settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858841/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Modes-Demo/aws-elastic-beanstalk-deployment-interface.jpg)
+![The image shows an AWS Elastic Beanstalk interface for uploading and deploying an application, with options for deployment preferences and batch size settings.](https://kodekloud.com/kk-media/image/upload/v1752858841/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Modes-Demo/aws-elastic-beanstalk-deployment-interface.jpg)
 
 During deployment, Elastic Beanstalk updates your production environment using the rolling update strategy. For an environment with a single instance, the update is applied directly to that instance.
 
 After the deployment completes, visit your production environment's domain. You should see the "Congratulations! V2" message, confirming that version two is now active.
 
-![The image shows an AWS Elastic Beanstalk environment dashboard for "My-webapp-prod," indicating a successful environment update with details about the platform and recent events.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858842/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Modes-Demo/aws-elastic-beanstalk-dashboard-my-webapp-prod.jpg)
+![The image shows an AWS Elastic Beanstalk environment dashboard for "My-webapp-prod," indicating a successful environment update with details about the platform and recent events.](https://kodekloud.com/kk-media/image/upload/v1752858842/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Modes-Demo/aws-elastic-beanstalk-dashboard-my-webapp-prod.jpg)
 
 ***
 
@@ -168,11 +168,11 @@ Switching back to your development environment, you'll notice it continues runni
 3. **Rollback to a Previous Version**\
    If necessary, you can revert the production environment to a prior application version. To do so, click **Upload and Deploy** in the production environment and select the desired earlier version from the **Application Versions** page.
 
-![The image shows the AWS Elastic Beanstalk console displaying application versions for "my-webapp," with options to delete or deploy selected versions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858843/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Modes-Demo/aws-elastic-beanstalk-my-webapp-versions.jpg)
+![The image shows the AWS Elastic Beanstalk console displaying application versions for "my-webapp," with options to delete or deploy selected versions.](https://kodekloud.com/kk-media/image/upload/v1752858843/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Modes-Demo/aws-elastic-beanstalk-my-webapp-versions.jpg)
 
 After choosing an older version (e.g., version one), click **Deploy** to initiate a rolling update back to that version.
 
-![The image shows a dialog box titled "Deploy application version" on the AWS Elastic Beanstalk console, with fields for "Version label" and "Environment."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858844/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Modes-Demo/aws-elastic-beanstalk-deploy-dialog.jpg)
+![The image shows a dialog box titled "Deploy application version" on the AWS Elastic Beanstalk console, with fields for "Version label" and "Environment."](https://kodekloud.com/kk-media/image/upload/v1752858844/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Modes-Demo/aws-elastic-beanstalk-deploy-dialog.jpg)
 
 This flexibility in deployment methods allows you to efficiently manage application updates, ensuring a smooth transition between versions while minimizing downtime.
 

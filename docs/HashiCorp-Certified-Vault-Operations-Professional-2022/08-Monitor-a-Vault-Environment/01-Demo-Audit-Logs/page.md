@@ -73,9 +73,7 @@ No audit devices are enabled.
 
 Configure Vault to write audit logs to a local file:
 
-<Callout icon="lightbulb">
-  Be mindful of disk usage—audit files can grow quickly depending on the volume of requests.
-</Callout>
+> **lightbulb** Be mindful of disk usage—audit files can grow quickly depending on the volume of requests.
 
 ```bash theme={null}
 vault audit enable file file_path="/Users/bk/vault/vault_audit.log"
@@ -200,9 +198,7 @@ Example of a KV delete operation:
 
 When you’re done, remove the audit device to prevent further log growth:
 
-<Callout icon="triangle-alert">
-  Disabling the audit device stops new entries but does not delete existing logs. Archive or remove them manually if needed.
-</Callout>
+> **triangle-alert** Disabling the audit device stops new entries but does not delete existing logs. Archive or remove them manually if needed.
 
 ```bash theme={null}
 vault audit disable file
@@ -244,8 +240,6 @@ No audit devices are enabled.
 * [HashiCorp Vault CLI Commands](https://www.vaultproject.io/docs/commands)
 * [jq Manual](https://stedolan.github.io/jq/manual/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/36cf9665-35d2-4dbc-9ddc-fc00ca80cbd4/lesson/236dc78c-af33-4815-90fc-c86b6ee99ba9" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/36cf9665-35d2-4dbc-9ddc-fc00ca80cbd4/lesson/236dc78c-af33-4815-90fc-c86b6ee99ba9)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/36cf9665-35d2-4dbc-9ddc-fc00ca80cbd4/lesson/db266764-4afa-4364-a1fd-eed8fb3a04fe" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/36cf9665-35d2-4dbc-9ddc-fc00ca80cbd4/lesson/db266764-4afa-4364-a1fd-eed8fb3a04fe)

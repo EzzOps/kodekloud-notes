@@ -100,7 +100,7 @@ kubectl describe pod pvviewer
 
 This completes Question 2.
 
-![The image shows a Kubernetes task description on the left, instructing to create a service account and related roles, and a terminal on the right with a context menu open.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869819/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Mock-Exam-3-Step-by-Step-Solutions/kubernetes-task-service-account-roles.jpg)
+![The image shows a Kubernetes task description on the left, instructing to create a service account and related roles, and a terminal on the right with a context menu open.](https://kodekloud.com/kk-media/image/upload/v1752869819/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Mock-Exam-3-Step-by-Step-Solutions/kubernetes-task-service-account-roles.jpg)
 
 ***
 
@@ -132,7 +132,7 @@ kubectl apply -f question3.yaml
 
 This completes Question 3.
 
-![The image shows a search results page from the Kubernetes website, displaying results for the query "storageclass." It includes links to various Kubernetes documentation and articles related to storage classes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869820/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Mock-Exam-3-Step-by-Step-Solutions/kubernetes-storageclass-search-results.jpg)
+![The image shows a search results page from the Kubernetes website, displaying results for the query "storageclass." It includes links to various Kubernetes documentation and articles related to storage classes.](https://kodekloud.com/kk-media/image/upload/v1752869820/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Mock-Exam-3-Step-by-Step-Solutions/kubernetes-storageclass-search-results.jpg)
 
 ***
 
@@ -175,7 +175,7 @@ After saving, verify that new pods include the environment variables from **app-
 
 This completes Question 4.
 
-![The image shows a Kubernetes task interface with instructions to create a ConfigMap and modify a Deployment, alongside a terminal displaying YAML configuration for a Kubernetes deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869821/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Mock-Exam-3-Step-by-Step-Solutions/kubernetes-configmap-deployment-yaml.jpg)
+![The image shows a Kubernetes task interface with instructions to create a ConfigMap and modify a Deployment, alongside a terminal displaying YAML configuration for a Kubernetes deployment.](https://kodekloud.com/kk-media/image/upload/v1752869821/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Mock-Exam-3-Step-by-Step-Solutions/kubernetes-configmap-deployment-yaml.jpg)
 
 ***
 
@@ -621,17 +621,17 @@ The CKA exam assesses your practical knowledge in five key areas:
 * Storage: 10%
 * Troubleshooting: 30%
 
-![A person is speaking with a pie chart labeled "Workloads & Scheduling 15%" displayed beside them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869831/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Whats-Next/frame_70.jpg)
+![A person is speaking with a pie chart labeled "Workloads & Scheduling 15%" displayed beside them.](https://kodekloud.com/kk-media/image/upload/v1752869831/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Whats-Next/frame_70.jpg)
 
-![A person is speaking with a circular progress chart labeled "Troubleshooting 30%" displayed beside them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869832/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Whats-Next/frame_80.jpg)
+![A person is speaking with a circular progress chart labeled "Troubleshooting 30%" displayed beside them.](https://kodekloud.com/kk-media/image/upload/v1752869832/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Whats-Next/frame_80.jpg)
 
 Each mock exam respects the weight of these areas, ensuring you receive a realistic testing experience. The series uses four Kubernetes clusters, with some clusters dedicated to specific knowledge areas. By default, you will be logged into the student node, giving you access to all other clusters and allowing SSH access to individual nodes.
 
-![A person is speaking next to a list titled "Exam Cluster," detailing four Kubernetes (K8s) clusters with varying node configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869834/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Whats-Next/frame_100.jpg)
+![A person is speaking next to a list titled "Exam Cluster," detailing four Kubernetes (K8s) clusters with varying node configurations.](https://kodekloud.com/kk-media/image/upload/v1752869834/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Whats-Next/frame_100.jpg)
 
 This introduction marks the beginning of your journey through the Ultimate CKA Mock Exam Series.
 
-![A KodeKloud mock exam interface shows a 95% score with completed questions, alongside a video of a person speaking.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869835/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Whats-Next/frame_120.jpg)
+![A KodeKloud mock exam interface shows a 95% score with completed questions, alongside a video of a person speaking.](https://kodekloud.com/kk-media/image/upload/v1752869835/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Whats-Next/frame_120.jpg)
 
 Let’s dive into one of these tests.
 

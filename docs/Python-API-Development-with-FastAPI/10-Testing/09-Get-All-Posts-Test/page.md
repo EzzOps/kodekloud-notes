@@ -42,9 +42,7 @@ tests/test_users.py::test_incorrect_login[sanjeev@gmail.com-None-422] PASSED
 warnings summary =====================
 ```
 
-<Callout icon="lightbulb">
-  The example above shows the use of fixtures and assertions to validate user creation and login processes. This practice ensures each test runs independently with proper setup and teardown.
-</Callout>
+> **lightbulb** The example above shows the use of fixtures and assertions to validate user creation and login processes. This practice ensures each test runs independently with proper setup and teardown.
 
 For clarity, here is the corrected version of the user test code that can be stored in a dedicated module:
 
@@ -107,9 +105,7 @@ tests/test_users.py::test_incorrect_login[wrongemail@gmail.com-password123-403] 
 warnings summary
 ```
 
-<Callout icon="lightbulb">
-  For endpoints requiring authentication, using fixtures to simulate token generation is a more efficient approach than performing a full login request for every test.
-</Callout>
+> **lightbulb** For endpoints requiring authentication, using fixtures to simulate token generation is a more efficient approach than performing a full login request for every test.
 
 Instead of making a full API call to log in and retrieve a token for every test, it is more efficient to import the token creation function directly from the OAuth2 module. This allows simulation of token generation without going through the complete login process. Consider the following implementation:
 
@@ -222,9 +218,7 @@ collected 7 items
 tests/test_posts.py::test_get_all_posts PASSED
 ```
 
-<Callout icon="lightbulb">
-  When running this test, the output may show an empty array if there are no posts in your test database. In that case, ensure you create test posts before executing this test to confirm data retrieval works correctly.
-</Callout>
+> **lightbulb** When running this test, the output may show an empty array if there are no posts in your test database. In that case, ensure you create test posts before executing this test to confirm data retrieval works correctly.
 
 To run the tests, use a command similar to the following:
 
@@ -258,6 +252,4 @@ In the upcoming article, we will explore creating test posts and validating the 
 
 For more technical guides and best practices, be sure to check the [Kubernetes Documentation](https://kubernetes.io/docs/) and other [developer resources](https://docs.python.org/3/tutorial/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/40db0443-f2c8-4557-8497-8b66b7909fd0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/40db0443-f2c8-4557-8497-8b66b7909fd0)

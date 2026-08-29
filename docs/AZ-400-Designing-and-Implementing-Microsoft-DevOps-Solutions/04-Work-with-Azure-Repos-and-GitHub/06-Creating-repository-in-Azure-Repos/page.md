@@ -61,15 +61,15 @@ Refresh the GitHub page to see your files.
 1. In Azure DevOps, navigate to **Project Settings** → **GitHub Connections** → **Connect to your GitHub account**.
 2. Choose your organization (e.g., `KodeKloud`) and click **Save**.
 
-![The image shows a web interface for connecting GitHub repositories to Azure Boards, with a sidebar for project settings and a pop-up window indicating a saving process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868147/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Creating-repository-in-Azure-Repos/github-azure-boards-connection-interface.jpg)
+![The image shows a web interface for connecting GitHub repositories to Azure Boards, with a sidebar for project settings and a pop-up window indicating a saving process.](https://kodekloud.com/kk-media/image/upload/v1752868147/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Creating-repository-in-Azure-Repos/github-azure-boards-connection-interface.jpg)
 
 3. You’ll be redirected to GitHub to install the Azure Boards app. Grant access only to the repositories you need:
 
-![The image shows a GitHub settings page for installing an Azure Boards app, with options for repository access and a "Danger zone" section for suspending or uninstalling the app.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868148/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Creating-repository-in-Azure-Repos/github-settings-azure-boards-app.jpg)
+![The image shows a GitHub settings page for installing an Azure Boards app, with options for repository access and a "Danger zone" section for suspending or uninstalling the app.](https://kodekloud.com/kk-media/image/upload/v1752868148/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Creating-repository-in-Azure-Repos/github-settings-azure-boards-app.jpg)
 
 4. Back in Azure DevOps, confirm the connection under **GitHub Connections**:
 
-![The image shows a GitHub connection settings page in Azure DevOps, displaying a connection to a GitHub repository. The sidebar includes options for project settings, boards, pipelines, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868150/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Creating-repository-in-Azure-Repos/github-connection-settings-azure-devops.jpg)
+![The image shows a GitHub connection settings page in Azure DevOps, displaying a connection to a GitHub repository. The sidebar includes options for project settings, boards, pipelines, and more.](https://kodekloud.com/kk-media/image/upload/v1752868150/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Creating-repository-in-Azure-Repos/github-connection-settings-azure-devops.jpg)
 
 ***
 
@@ -77,12 +77,12 @@ Refresh the GitHub page to see your files.
 
 1. Go to **Pipelines** and click **Create Pipeline**.
 
-![The image shows an Azure DevOps interface with a prompt to "Create your first Pipeline," featuring a button to initiate the process. The sidebar includes options like Overview, Boards, Repos, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868151/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Creating-repository-in-Azure-Repos/azure-devops-create-pipeline-interface.jpg)
+![The image shows an Azure DevOps interface with a prompt to "Create your first Pipeline," featuring a button to initiate the process. The sidebar includes options like Overview, Boards, Repos, and more.](https://kodekloud.com/kk-media/image/upload/v1752868151/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Creating-repository-in-Azure-Repos/azure-devops-create-pipeline-interface.jpg)
 
 2. Select **GitHub**, pick the `CoolWebsite` repo, and authorize the Azure Pipelines app.
 3. Choose the appropriate template (e.g., **ASP.NET**).
 
-![The image shows an Azure DevOps interface where a user is configuring a new pipeline, with options for different project types like ASP.NET and Xamarin.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868153/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Creating-repository-in-Azure-Repos/azure-devops-new-pipeline-configuration.jpg)
+![The image shows an Azure DevOps interface where a user is configuring a new pipeline, with options for different project types like ASP.NET and Xamarin.](https://kodekloud.com/kk-media/image/upload/v1752868153/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Creating-repository-in-Azure-Repos/azure-devops-new-pipeline-configuration.jpg)
 
 4. Replace the auto-generated YAML with this `azure-pipelines.yml` in your repo root:
 
@@ -121,7 +121,7 @@ steps:
 
 5. Commit and push. Each push to `main` triggers a new build. Verify your YAML and commit history:
 
-![The image shows a GitHub repository page titled "CoolWebsite," displaying a list of files and folders with commit messages and details. The sidebar provides information about the repository, including languages used and suggested workflows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868154/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Creating-repository-in-Azure-Repos/github-repo-coolwebsite-files-sidebar.jpg)
+![The image shows a GitHub repository page titled "CoolWebsite," displaying a list of files and folders with commit messages and details. The sidebar provides information about the repository, including languages used and suggested workflows.](https://kodekloud.com/kk-media/image/upload/v1752868154/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Creating-repository-in-Azure-Repos/github-repo-coolwebsite-files-sidebar.jpg)
 
 ***
 

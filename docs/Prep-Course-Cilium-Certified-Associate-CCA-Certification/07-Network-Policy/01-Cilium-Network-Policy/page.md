@@ -48,9 +48,7 @@ References and further reading
 * eBPF overview: [https://ebpf.io/](https://ebpf.io/)
 * Gateway API: [https://gateway-api.sigs.k8s.io/](https://gateway-api.sigs.k8s.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/7d8b3ee7-bf76-4895-804e-ed083146ca1a/lesson/b047d8de-fcfd-41c9-9f0f-45fcc59bcd89" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/7d8b3ee7-bf76-4895-804e-ed083146ca1a/lesson/b047d8de-fcfd-41c9-9f0f-45fcc59bcd89)
 
 
 # Cilium Network Policy
@@ -93,9 +91,7 @@ spec:
         role: frontend
 ```
 
-<Callout icon="lightbulb">
-  Cilium's endpointSelector is namespace-aware by default. If you need cross-namespace matching, include explicit namespace labels in matchLabels or use a cluster-wide policy.
-</Callout>
+> **lightbulb** Cilium's endpointSelector is namespace-aware by default. If you need cross-namespace matching, include explicit namespace labels in matchLabels or use a cluster-wide policy.
 
 Allow all endpoints in the same namespace (empty selector in fromEndpoints permits any source in the policy's namespace):
 
@@ -170,9 +166,7 @@ spec:
   egress: []
 ```
 
-<Callout icon="lightbulb">
-  To explicitly deny all ingress/egress for selected endpoints use empty lists (ingress: \[] and egress: \[]). In contrast, a rule like `ingress: - {}` allows ingress from any source because it represents a rule entry with no source constraints.
-</Callout>
+> **lightbulb** To explicitly deny all ingress/egress for selected endpoints use empty lists (ingress: \[] and egress: \[]). In contrast, a rule like `ingress: - {}` allows ingress from any source because it represents a rule entry with no source constraints.
 
 Match services instead of direct pods
 
@@ -568,6 +562,4 @@ Links and references
 * Kubernetes NetworkPolicy concepts: [https://kubernetes.io/docs/concepts/services-networking/network-policies/](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 * Cilium L7 (HTTP, DNS, FQDN) documentation: [https://docs.cilium.io/en/stable/policy/l7/](https://docs.cilium.io/en/stable/policy/l7/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/bf652c52-bb30-4bcc-9d18-c703f7b3e88a/lesson/66845be2-ccd1-487a-a2d3-c7a18e5919c1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/bf652c52-bb30-4bcc-9d18-c703f7b3e88a/lesson/66845be2-ccd1-487a-a2d3-c7a18e5919c1)

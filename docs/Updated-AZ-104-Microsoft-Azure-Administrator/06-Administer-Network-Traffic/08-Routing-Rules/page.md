@@ -14,9 +14,7 @@ Path-based routing directs incoming traffic to different backend pools based on 
 
 Multi-site routing allows a single Application Gateway to service multiple web applications by directing requests based on the domain name. For instance, traffic arriving at KodeKloud.com may be routed to a learning pool, while requests to KodeKloudLabs.com are sent to a lab pool. This consolidated approach simplifies infrastructure management and reduces costs by centralizing traffic management onto a single gateway. Both routing methodologies leverage Layer 7 load balancing to ensure that users receive responses from the correct backend resources.
 
-<Frame>
-  ![The image illustrates application gateway routing rules, showing path-based routing and multiple-site routing with different server pools for images, videos, learning, and labs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884718/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/application-gateway-routing-rules.jpg)
-</Frame>
+![The image illustrates application gateway routing rules, showing path-based routing and multiple-site routing with different server pools for images, videos, learning, and labs.](https://kodekloud.com/kk-media/image/upload/v1752884718/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/application-gateway-routing-rules.jpg)
 
 ## Demonstration: Configuring Azure Application Gateway
 
@@ -75,17 +73,13 @@ Once the deployment completes, verify that the virtual machines (including blue,
 
 Access the Azure Portal and verify your list of virtual machines to ensure all instances are deployed correctly.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying a list of virtual machines, including details like name, type, status, and operating system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884719/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/azure-portal-virtual-machines-list.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying a list of virtual machines, including details like name, type, status, and operating system.](https://kodekloud.com/kk-media/image/upload/v1752884719/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/azure-portal-virtual-machines-list.jpg)
 
 ### Step 2: Creating the Application Gateway
 
 Click on "Create" and complete the configuration fields including subscription, resource group, Application Gateway name (e.g., APPGW Colors or H2S), and region.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating an application gateway, with fields for project and instance details such as subscription, resource group, and region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884721/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/azure-portal-application-gateway.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating an application gateway, with fields for project and instance details such as subscription, resource group, and region.](https://kodekloud.com/kk-media/image/upload/v1752884721/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/azure-portal-application-gateway.jpg)
 
 Select the Standard V2 SKU to leverage auto-scaling capabilities (which are disabled in this demo). Set the instance count and do not select availability zones.
 
@@ -93,9 +87,7 @@ Select the Standard V2 SKU to leverage auto-scaling capabilities (which are disa
 
 The Application Gateway requires a dedicated subnet. Select your Virtual Network and click on "Manage subnet configuration" to add a new subnet specifically for the Application Gateway. With a large address space (e.g., /16), you can configure a subnet with a /24 CIDR.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal interface for managing subnets within a virtual network. It includes a list of existing subnets and a form to add a new subnet with various configuration options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884722/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/azure-portal-managing-subnets.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal interface for managing subnets within a virtual network. It includes a list of existing subnets and a form to add a new subnet with various configuration options.](https://kodekloud.com/kk-media/image/upload/v1752884722/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/azure-portal-managing-subnets.jpg)
 
 Ensure that the Application Gateway subnet is created and selected without errors before proceeding.
 
@@ -103,9 +95,7 @@ Ensure that the Application Gateway subnet is created and selected without error
 
 For the frontend configuration, create a new public IP address (named "PIP") for the public-facing gateway.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating an application gateway, specifically on the "Frontends" tab, with a pop-up window for adding a public IP address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884723/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/azure-portal-application-gateway-frontends.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating an application gateway, specifically on the "Frontends" tab, with a pop-up window for adding a public IP address.](https://kodekloud.com/kk-media/image/upload/v1752884723/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/azure-portal-application-gateway-frontends.jpg)
 
 ### Step 5: Backend and Routing Rule Configuration
 
@@ -118,24 +108,18 @@ For the frontend configuration, create a new public IP address (named "PIP") for
      * Port: 80
      * Listener type: Basic (no multi-site configuration)
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating an application gateway, specifically focusing on adding a routing rule with configuration options for listener settings and custom error pages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884724/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/azure-portal-application-gateway-routing-rule.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating an application gateway, specifically focusing on adding a routing rule with configuration options for listener settings and custom error pages.](https://kodekloud.com/kk-media/image/upload/v1752884724/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/azure-portal-application-gateway-routing-rule.jpg)
 
 Configure the default backend target to use the red pool on port 80 with HTTP. Then, add path-based routing rules:
 
 * For instance, create a rule such that when the URL path contains "blue/\*", traffic is forwarded to the blue pool.
 * Similarly, configure a rule for "green" paths that directs traffic to the green pool.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating an application gateway, specifically in the "Configuration" step, with a pop-up for adding a path to a routing rule.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884725/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/azure-portal-application-gateway-configuration.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating an application gateway, specifically in the "Configuration" step, with a pop-up for adding a path to a routing rule.](https://kodekloud.com/kk-media/image/upload/v1752884725/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/azure-portal-application-gateway-configuration.jpg)
 
 Review your configurations, add tags if needed, and start the deployment of the Application Gateway. The deployment process typically takes 10 to 15 minutes.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating an application gateway, displaying configuration details such as subscription, resource group, and network settings. A notification indicates the initialization of a template deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884725/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/azure-portal-application-gateway-config.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating an application gateway, displaying configuration details such as subscription, resource group, and network settings. A notification indicates the initialization of a template deployment.](https://kodekloud.com/kk-media/image/upload/v1752884725/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/azure-portal-application-gateway-config.jpg)
 
 ### Step 6: Mapping Virtual Machines to Backend Pools
 
@@ -144,9 +128,7 @@ After successful deployment, navigate to the Resource Group to locate your Appli
 * For the red pool, assign the "Red One" and "Red Two" VMs.
 * Similarly, add the appropriate blue and green VMs to their designated pools.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for editing a backend pool. It includes options to select a target type and target, with a dropdown list of virtual machines and their associated IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884726/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/azure-portal-backend-pool-edit.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for editing a backend pool. It includes options to select a target type and target, with a dropdown list of virtual machines and their associated IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752884726/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/azure-portal-backend-pool-edit.jpg)
 
 ## Testing the Application Gateway
 
@@ -160,14 +142,10 @@ After mapping the virtual machines, test the routing configuration:
 
 If you encounter issues with the server setup or if the custom script extension becomes unresponsive, download and run the Gembox script from the jumpbox. This script will apply the necessary configuration changes to all machines.
 
-<Frame>
-  ![The image illustrates application gateway routing rules, showing path-based routing and multiple-site routing with different server pools for images, videos, learning, and labs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884727/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/application-gateway-routing-rules-2.jpg)
-</Frame>
+![The image illustrates application gateway routing rules, showing path-based routing and multiple-site routing with different server pools for images, videos, learning, and labs.](https://kodekloud.com/kk-media/image/upload/v1752884727/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Routing-Rules/application-gateway-routing-rules-2.jpg)
 
 ## Conclusion
 
 In this guide, we demonstrated how to deploy and configure the Azure Application Gateway using both path-based and multi-site routing. We mapped backend pools to virtual machines and verified the entire setup through the Azure Portal. For additional load balancing strategies and performance optimizations, consider exploring alternative solutions to further enhance your network infrastructure.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/50248c52-4b17-4c2d-87f8-52a42eff2d2f/lesson/4707fd5c-4fc2-47b1-93fd-a86745c57d12" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/50248c52-4b17-4c2d-87f8-52a42eff2d2f/lesson/4707fd5c-4fc2-47b1-93fd-a86745c57d12)

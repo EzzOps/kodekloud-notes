@@ -12,9 +12,7 @@ By default, Microsoft uses platform-managed keys (PMK) to handle encryption. How
 
 The diagram below visualizes the complete process:
 
-<Frame>
-  ![The image illustrates the process of using Customer Managed Keys (CMK) in Azure, showing how a user creates a storage account, writes data into a blob, and manages encryption keys through Azure Storage Account and Key Vaults.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882016/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-customer-managed-keys/azure-customer-managed-keys-process.jpg)
-</Frame>
+![The image illustrates the process of using Customer Managed Keys (CMK) in Azure, showing how a user creates a storage account, writes data into a blob, and manages encryption keys through Azure Storage Account and Key Vaults.](https://kodekloud.com/kk-media/image/upload/v1752882016/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-customer-managed-keys/azure-customer-managed-keys-process.jpg)
 
 ## Advantages of Using Customer-Managed Keys
 
@@ -24,9 +22,7 @@ Switching to customer-managed keys offers several important benefits:
 * **Flexible Key Rotation:** Rotate keys promptly whenever required, bolstering overall security.
 * **Compliance and Governance:** Achieve greater confidence in meeting regulatory and internal compliance mandates by overseeing your key management processes.
 
-<Callout icon="lightbulb">
-  Using customer-managed keys allows you to integrate your enterprise key management processes seamlessly with Azure services.
-</Callout>
+> **lightbulb** Using customer-managed keys allows you to integrate your enterprise key management processes seamlessly with Azure services.
 
 This article provides a concise overview of using customer-managed keys with Azure Storage. For more detailed insights, including advanced storage security topics and best practices, be sure to explore the additional resources in our documentation.
 
@@ -38,6 +34,4 @@ For further reading:
 
 Enhance your data security strategy today by leveraging the full potential of customer-managed keys in Azure.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/e6ef26f3-b79d-482a-8f38-130223404051/lesson/6a513831-dea5-4972-92df-9a42d0c056eb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/e6ef26f3-b79d-482a-8f38-130223404051/lesson/6a513831-dea5-4972-92df-9a42d0c056eb)

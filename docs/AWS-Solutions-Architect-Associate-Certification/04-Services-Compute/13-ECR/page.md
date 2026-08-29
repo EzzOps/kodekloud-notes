@@ -8,15 +8,15 @@ In this lesson, we explore AWS Elastic Container Registry (ECR), a fully managed
 
 When working with containerized applications, the typical workflow involves building the application, creating a Dockerfile with the necessary instructions, and generating a Docker image. Once the image is ready, you upload it to a container registry. While you can host your own registry on-premises or use third-party services, ECR offers a managed solution within the AWS ecosystem.
 
-![The image illustrates a process flow for building and pushing a Docker image to Amazon ECR, starting from building an application, creating a Dockerfile, building the Docker image, and finally pushing it to ECR.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864862/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECR/docker-image-build-push-ecr.jpg)
+![The image illustrates a process flow for building and pushing a Docker image to Amazon ECR, starting from building an application, creating a Dockerfile, building the Docker image, and finally pushing it to ECR.](https://kodekloud.com/kk-media/image/upload/v1752864862/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECR/docker-image-build-push-ecr.jpg)
 
 For example, if you have images stored in ECR, a container orchestrator like ECS will pull an image from the registry to deploy containers. This streamlined process ensures efficient management and deployment of your containerized applications.
 
-![The image illustrates a process where container images from Amazon ECR are deployed to ECS with Fargate.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864863/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECR/ecr-to-ecs-fargate-deployment.jpg)
+![The image illustrates a process where container images from Amazon ECR are deployed to ECS with Fargate.](https://kodekloud.com/kk-media/image/upload/v1752864863/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECR/ecr-to-ecs-fargate-deployment.jpg)
 
 No matter your deployment platform—ECS, EKS, or an on-premises environment—the authentication mechanism in ECR ensures that authenticated users can easily pull the container image when required.
 
-![The image is a diagram showing Amazon ECR connected to Amazon ECS, Amazon EKS, and an on-premise setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864864/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECR/amazon-ecr-ecs-eks-diagram.jpg)
+![The image is a diagram showing Amazon ECR connected to Amazon ECS, Amazon EKS, and an on-premise setup.](https://kodekloud.com/kk-media/image/upload/v1752864864/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECR/amazon-ecr-ecs-eks-diagram.jpg)
 
 ## Repository Types in ECR
 
@@ -28,7 +28,7 @@ ECR supports two types of repositories, each designed for different use cases:
 2. **Private ECR Repository:**\
    Private repositories restrict access to specific AWS accounts or IAM users. These repositories are not accessible to the public, providing a secure option for proprietary software. Authentication is required for both pulling and pushing images, and AWS charges for both storage and data transfers.
 
-![The image is a diagram illustrating the concept of Public and Private ECR (Elastic Container Registry) with icons representing repositories, cloud, and users. It shows the flow of data between these components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864866/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECR/public-private-ecr-diagram.jpg)
+![The image is a diagram illustrating the concept of Public and Private ECR (Elastic Container Registry) with icons representing repositories, cloud, and users. It shows the flow of data between these components.](https://kodekloud.com/kk-media/image/upload/v1752864866/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECR/public-private-ecr-diagram.jpg)
 
 ## Integrating ECR with a CI/CD Pipeline
 
@@ -51,7 +51,7 @@ ECR provides a robust and secure platform for managing container images, with fe
 * **Lifecycle Policies:** Automate image retention policies to remove outdated or unused images, optimizing storage costs.
 * **Image Scanning:** Automatically scan images for vulnerabilities using Amazon Inspector during the security assessment process.
 
-![The image lists five features: Fully Managed, Integration with AWS Services, Private Registry, Image Lifecycle Management, and Image Scanning. Each feature is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864867/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECR/managed-aws-integration-private-registry.jpg)
+![The image lists five features: Fully Managed, Integration with AWS Services, Private Registry, Image Lifecycle Management, and Image Scanning. Each feature is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752864867/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECR/managed-aws-integration-private-registry.jpg)
 
 ## Summary
 

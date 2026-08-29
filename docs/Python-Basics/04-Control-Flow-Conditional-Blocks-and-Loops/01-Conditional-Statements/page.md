@@ -17,9 +17,7 @@ if condition:
 
 If the condition is False, Python skips the block and continues executing subsequent code.
 
-<Callout icon="lightbulb">
-  Always remember to end your `if` statement line with a colon (:). Proper indentation is critical for Python to correctly interpret which statements belong to the block.
-</Callout>
+> **lightbulb** Always remember to end your `if` statement line with a colon (:). Proper indentation is critical for Python to correctly interpret which statements belong to the block.
 
 ## Practical Example with User Input
 
@@ -99,9 +97,7 @@ In this scenario:
 * If true, the inner `if` further checks whether the age is exactly 18.
 * If the inner condition is False, it indicates that the user is older than 18.
 
-<Callout icon="lightbulb">
-  Using nested conditional statements helps create a more detailed decision-making process, allowing you to handle complex conditions efficiently.
-</Callout>
+> **lightbulb** Using nested conditional statements helps create a more detailed decision-making process, allowing you to handle complex conditions efficiently.
 
 ## Summary of Conditional Statements
 
@@ -118,6 +114,4 @@ This guide covered the fundamentals of conditional statements in Python. We exam
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/87023015-df32-4bcb-a972-659f3e76b1d1/lesson/e7879232-5ea5-4756-8d45-a08390b9f684" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/87023015-df32-4bcb-a972-659f3e76b1d1/lesson/e7879232-5ea5-4756-8d45-a08390b9f684)

@@ -80,9 +80,7 @@ Leadership actions:
 
 If you are an engineering manager leading a DevOps team, a FinOps practice helps you coordinate and communicate with procurement, product, and leadership on the shared topics above. That coordination is the central benefit of FinOps across personas.
 
-<Callout icon="lightbulb">
-  FinOps is not just about cutting costs — it's about maximizing cloud value by aligning technical, financial, and product decisions across the organization.
-</Callout>
+> **lightbulb** FinOps is not just about cutting costs — it's about maximizing cloud value by aligning technical, financial, and product decisions across the organization.
 
 We will discuss a real-world FinOps personas scenario and dive into a practical example to show how FinOps principles are applied in a large organization.
 
@@ -100,6 +98,4 @@ Resources and further reading:
 
 That is it for this lesson. See you in the next one.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/17116beb-dcd6-4099-9424-bcb9554af3f3/lesson/0290ebf0-d8dc-4a39-a4e1-64148871c777" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/17116beb-dcd6-4099-9424-bcb9554af3f3/lesson/0290ebf0-d8dc-4a39-a4e1-64148871c777)

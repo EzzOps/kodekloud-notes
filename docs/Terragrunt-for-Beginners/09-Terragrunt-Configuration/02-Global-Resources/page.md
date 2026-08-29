@@ -6,13 +6,9 @@ This article explains how to organize global AWS services in Terragrunt-based Te
 
 In Terragrunt-based Terraform repositories, certain AWS services are global—they’re not bound to a specific region and are deployed once per account. To keep your directory structure clean and intuitive, isolate these global services at the top level of your project, separate from any region-specific folders.
 
-<Frame>
-  ![The image is an infographic titled "Global Resources," outlining four points: services not in traditional regions, deployment per account, isolating global services, and maintaining clear hierarchy and structure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884342/notes-assets/images/Terragrunt-for-Beginners-Global-Resources/global-resources-infographic-deployment-services.jpg)
-</Frame>
+![The image is an infographic titled "Global Resources," outlining four points: services not in traditional regions, deployment per account, isolating global services, and maintaining clear hierarchy and structure.](https://kodekloud.com/kk-media/image/upload/v1752884342/notes-assets/images/Terragrunt-for-Beginners-Global-Resources/global-resources-infographic-deployment-services.jpg)
 
-<Callout icon="lightbulb">
-  Global AWS services deploy once per account, so housing them in a dedicated `global` folder prevents accidental duplication and clarifies their scope.
-</Callout>
+> **lightbulb** Global AWS services deploy once per account, so housing them in a dedicated `global` folder prevents accidental duplication and clarifies their scope.
 
 ## Common AWS Global Services
 
@@ -32,9 +28,7 @@ Below are some frequently used AWS services that should live in your top-level `
 
 Create a `global` folder alongside your environment and region directories (e.g., `prod`, `dev`, `region-us-east-1`, `region-eu-west-1`). Inside `global`, add individual `terragrunt.hcl` files for each service:
 
-<Frame>
-  ![The image shows a directory structure diagram for global services, with folders and files like "terragrunt.hcl" organized under categories such as "prod," "global," "region-A," and "region-B."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884343/notes-assets/images/Terragrunt-for-Beginners-Global-Resources/directory-structure-global-services-diagram.jpg)
-</Frame>
+![The image shows a directory structure diagram for global services, with folders and files like "terragrunt.hcl" organized under categories such as "prod," "global," "region-A," and "region-B."](https://kodekloud.com/kk-media/image/upload/v1752884343/notes-assets/images/Terragrunt-for-Beginners-Global-Resources/directory-structure-global-services-diagram.jpg)
 
 Example layout:
 
@@ -76,6 +70,4 @@ With global services neatly isolated, you can extend your Terragrunt repository 
 * [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 * [AWS Global Services Overview](https://docs.aws.amazon.com/general/latest/gr/aws_service_discovery.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/52cf8076-030b-430e-9a8b-273697ad3399/lesson/414a2c75-16ee-452b-b713-d6ffe9cfc4f2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/52cf8076-030b-430e-9a8b-273697ad3399/lesson/414a2c75-16ee-452b-b713-d6ffe9cfc4f2)

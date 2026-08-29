@@ -237,9 +237,7 @@ Scripted pipeline — config.json and error.txt
 
 Scripted (CPS) Jenkins pipelines are not supported by the importer. For jobs using scripted pipelines the audit still saves the `config.json` (so you have the original pipeline script and metadata) and writes an `error.txt` describing the limitation.
 
-<Callout icon="warning">
-  Scripted Jenkins pipelines are not supported by the importer. Jobs using scripted pipelines must be migrated manually to GitHub Actions or rewritten as declarative pipelines for automated conversion.
-</Callout>
+> **warning** Scripted Jenkins pipelines are not supported by the importer. Jobs using scripted pipelines must be migrated manually to GitHub Actions or rewritten as declarative pipelines for automated conversion.
 
 Example `config.json` captured for a scripted pipeline:
 
@@ -306,9 +304,7 @@ Summary
 
 That's all for now.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/0d5d266b-347a-427c-a6ec-ffdede9021cf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/0d5d266b-347a-427c-a6ec-ffdede9021cf)
 
 
 # Dry run
@@ -323,13 +319,9 @@ A dry-run simulates converting a Jenkins pipeline into GitHub Actions workflows 
   <img alt="A presentation slide titled &#x22;Dry-run&#x22; with a highlighted line reading: &#x22;A safe, non-disruptive way to simulate converting a Jenkins pipeline into a GitHub Actions workflow.&#x22; A small &#x22;© Copyright KodeKloud&#x22; appears in the bottom-left." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Use dry-run to verify how Jenkins pipeline constructs (agents, environment, stages/steps) are mapped to GitHub Actions concepts (`runs-on`, `env`, jobs/steps) before committing any changes.
-</Callout>
+> **lightbulb** Use dry-run to verify how Jenkins pipeline constructs (agents, environment, stages/steps) are mapped to GitHub Actions concepts (`runs-on`, `env`, jobs/steps) before committing any changes.
 
-<Callout icon="warning">
-  Always provide the full Jenkins job URL and an output directory you control. The dry-run will not change your repo, but incorrect URLs or output paths can cause confusing results or missed files.
-</Callout>
+> **warning** Always provide the full Jenkins job URL and an output directory you control. The dry-run will not change your repo, but incorrect URLs or output paths can cause confusing results or missed files.
 
 ## Command usage
 

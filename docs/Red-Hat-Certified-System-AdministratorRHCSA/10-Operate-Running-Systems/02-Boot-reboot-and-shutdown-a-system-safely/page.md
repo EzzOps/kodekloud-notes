@@ -50,9 +50,7 @@ sudo systemctl reboot --force
 **Force Shutdown:**\
 Similarly, to force a power-off, include the `--force` option with the `poweroff` command. As an extreme measure, using the force option twice will immediately reboot or power off the system—akin to pressing the reset button or unplugging the machine. This abrupt approach does not allow applications to close properly or save data.
 
-<Callout icon="triangle-alert">
-  Using the force option can result in data loss or system instability as it bypasses the regular shutdown processes. Use it only when absolutely necessary.
-</Callout>
+> **triangle-alert** Using the force option can result in data loss or system instability as it bypasses the regular shutdown processes. Use it only when absolutely necessary.
 
 ## Scheduling Reboots and Shutdowns
 
@@ -104,6 +102,4 @@ For further reading, consider checking out these resources:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/2f27f9f3-86f3-4bf9-b388-4170d15e90c9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/2f27f9f3-86f3-4bf9-b388-4170d15e90c9)

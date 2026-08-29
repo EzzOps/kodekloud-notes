@@ -20,9 +20,7 @@ On SysV-based systems, `/sbin/init` (PID 1) manages services through predefined 
 | 5        | Graphical multi-user mode (desktop environment)      |
 | 6        | Reboot                                               |
 
-<Frame>
-  ![The image is a text-based explanation of SysVinit runlevels, detailing their purposes and functions, such as system shutdown, single-user mode, and multi-user modes. It also mentions the role of /sbin/init in managing runlevels and services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881455/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Change-Runlevels-Boot-Targets-and-Shutdown-or-Reboot-System/sysvinit-runlevels-explanation-diagram.jpg)
-</Frame>
+![The image is a text-based explanation of SysVinit runlevels, detailing their purposes and functions, such as system shutdown, single-user mode, and multi-user modes. It also mentions the role of /sbin/init in managing runlevels and services.](https://kodekloud.com/kk-media/image/upload/v1752881455/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Change-Runlevels-Boot-Targets-and-Shutdown-or-Reboot-System/sysvinit-runlevels-explanation-diagram.jpg)
 
 Runlevels and their associated services are defined in two places:
 
@@ -41,9 +39,7 @@ Runlevels and their associated services are defined in two places:
 | ctrlaltdel  | Triggered on `SIGINT` (CTRL+ALT+DEL)                                        |
 | initdefault | Sets the default runlevel (values 1–5, not 0 or 6)                          |
 
-<Frame>
-  ![The image is a text-based explanation of SysVinit configuration files and runlevels, detailing the purpose of /etc/inittab and /etc/init.d/, along with descriptions of boot actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881457/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Change-Runlevels-Boot-Targets-and-Shutdown-or-Reboot-System/sysvinit-configuration-runlevels-inittab.jpg)
-</Frame>
+![The image is a text-based explanation of SysVinit configuration files and runlevels, detailing the purpose of /etc/inittab and /etc/init.d/, along with descriptions of boot actions.](https://kodekloud.com/kk-media/image/upload/v1752881457/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Change-Runlevels-Boot-Targets-and-Shutdown-or-Reboot-System/sysvinit-configuration-runlevels-inittab.jpg)
 
 ## Editing `/etc/inittab`
 

@@ -52,9 +52,7 @@ Additional considerations
 * RDS Proxy is a managed service; review pricing and connection limits per proxy.
 * Some advanced DB features or session-specific behaviors may require testing to ensure compatibility behind a proxy.
 
-<Callout icon="lightbulb">
-  Exam tip: If an [RDS instance](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases) shows high CPU specifically due to a large number of client connections (for example, many concurrent Lambda invocations each opening its own connection), the recommended solution on exams is usually to use Amazon RDS Proxy to pool and multiplex connections.
-</Callout>
+> **lightbulb** Exam tip: If an [RDS instance](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases) shows high CPU specifically due to a large number of client connections (for example, many concurrent Lambda invocations each opening its own connection), the recommended solution on exams is usually to use Amazon RDS Proxy to pool and multiplex connections.
 
 Links and references
 
@@ -63,6 +61,4 @@ Links and references
 * [AWS Lambda documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
 * [Managing secrets with AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/3bf8f3b6-a43e-4135-bae9-72bc81f1633e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/3bf8f3b6-a43e-4135-bae9-72bc81f1633e)

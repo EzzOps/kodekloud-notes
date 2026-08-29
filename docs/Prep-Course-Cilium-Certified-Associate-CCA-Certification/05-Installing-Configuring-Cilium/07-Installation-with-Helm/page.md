@@ -32,9 +32,7 @@ The Cilium CLI uses your current kubeconfig context to determine which cluster t
 
 Warning: make sure you are targeting the correct cluster/context to avoid accidental changes to production clusters.
 
-<Callout icon="warning">
-  Ensure your kubeconfig context is set to the intended cluster before running `cilium install`. Installing Cilium will create ClusterRoles, DaemonSets, Deployments, and other cluster-scoped resources.
-</Callout>
+> **warning** Ensure your kubeconfig context is set to the intended cluster before running `cilium install`. Installing Cilium will create ClusterRoles, DaemonSets, Deployments, and other cluster-scoped resources.
 
 Run the installer:
 
@@ -109,9 +107,7 @@ cilium install --values values.yaml
 
 For a complete list of configuration keys, review the Helm chart's `values.yaml` in the Cilium GitHub repository or the chart documentation.
 
-<Callout icon="lightbulb">
-  The available configuration keys come from the Cilium Helm chart. Use --dry-run to preview the final rendered manifest or check the chart's values.yaml to see all options.
-</Callout>
+> **lightbulb** The available configuration keys come from the Cilium Helm chart. Use --dry-run to preview the final rendered manifest or check the chart's values.yaml to see all options.
 
 ## Sample values.yaml
 
@@ -149,9 +145,7 @@ bpf:
 
 With these steps you can install and configure Cilium using the CLI, preview resources before applying changes, and supply Helm values either inline or via a values file.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/474fe5d0-25a0-4214-b89c-325d50c0e22e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/474fe5d0-25a0-4214-b89c-325d50c0e22e)
 
 
 # Installation with Helm

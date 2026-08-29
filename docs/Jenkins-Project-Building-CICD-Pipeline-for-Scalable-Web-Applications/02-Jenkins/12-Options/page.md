@@ -59,9 +59,7 @@ pipeline {
 }
 ```
 
-<Callout icon="lightbulb">
-  In this scenario, the sleep command's duration of 70 seconds exceeds the defined timeout of 60 seconds, leading to an aborted build.
-</Callout>
+> **lightbulb** In this scenario, the sleep command's duration of 70 seconds exceeds the defined timeout of 60 seconds, leading to an aborted build.
 
 ## Updated Pipeline with Enhanced Credential Handling
 
@@ -129,10 +127,6 @@ Configuring the appropriate pipeline options in Jenkins provides several benefit
 
 By effectively managing build durations, source code checkouts, and retry behaviors, you can optimize your CI/CD pipelines to suit your project's requirements.
 
-<Callout icon="triangle-alert">
-  Be cautious when setting timeout values and retry counts. Overly aggressive values may lead to premature terminations or masking underlying build issues.
-</Callout>
+> **triangle-alert** Be cautious when setting timeout values and retry counts. Overly aggressive values may lead to premature terminations or masking underlying build issues.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/e7ed1ace-04e0-48b3-ae2a-fa2b0e9d4eeb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/e7ed1ace-04e0-48b3-ae2a-fa2b0e9d4eeb)

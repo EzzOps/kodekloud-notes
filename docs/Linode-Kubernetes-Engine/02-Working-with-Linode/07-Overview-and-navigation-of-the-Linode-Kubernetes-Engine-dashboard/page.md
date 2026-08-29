@@ -6,13 +6,9 @@ This article provides an overview of the Linode Kubernetes Engine dashboard and 
 
 Before provisioning a Linode Kubernetes Engine (LKE) cluster, it’s helpful to familiarize yourself with the LKE dashboard. Understanding this interface clarifies the resources LKE manages on your behalf.
 
-<Frame>
-  ![The image shows a Kubernetes cluster management interface with details about a cluster named "kodekloud01," including its version, resources, and node pool status. Two nodes are listed, both running with their respective IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881213/notes-assets/images/Linode-Kubernetes-Engine-Overview-and-navigation-of-the-Linode-Kubernetes-Engine-dashboard/kubernetes-cluster-kodekloud01-interface.jpg)
-</Frame>
+![The image shows a Kubernetes cluster management interface with details about a cluster named "kodekloud01," including its version, resources, and node pool status. Two nodes are listed, both running with their respective IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752881213/notes-assets/images/Linode-Kubernetes-Engine-Overview-and-navigation-of-the-Linode-Kubernetes-Engine-dashboard/kubernetes-cluster-kodekloud01-interface.jpg)
 
-<Callout icon="lightbulb">
-  Exploring the LKE dashboard first gives you context on what happens behind the scenes when you later create and manage clusters.
-</Callout>
+> **lightbulb** Exploring the LKE dashboard first gives you context on what happens behind the scenes when you later create and manage clusters.
 
 ## Cluster Details
 
@@ -69,13 +65,9 @@ contexts:
 current-context: lke61870-ctx
 ```
 
-<Callout icon="triangle-alert">
-  If your Kubeconfig is ever compromised, **regenerate** it immediately to revoke the old credentials.
-</Callout>
+> **triangle-alert** If your Kubeconfig is ever compromised, **regenerate** it immediately to revoke the old credentials.
 
-<Frame>
-  ![The image shows a confirmation dialog box asking if the user wants to reset the cluster Kubeconfig, warning that this action will delete and regenerate the file and cannot be undone. There are options to "Cancel" or "Reset Kubeconfig."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881214/notes-assets/images/Linode-Kubernetes-Engine-Overview-and-navigation-of-the-Linode-Kubernetes-Engine-dashboard/kubeconfig-reset-confirmation-dialog.jpg)
-</Frame>
+![The image shows a confirmation dialog box asking if the user wants to reset the cluster Kubeconfig, warning that this action will delete and regenerate the file and cannot be undone. There are options to "Cancel" or "Reset Kubeconfig."](https://kodekloud.com/kk-media/image/upload/v1752881214/notes-assets/images/Linode-Kubernetes-Engine-Overview-and-navigation-of-the-Linode-Kubernetes-Engine-dashboard/kubeconfig-reset-confirmation-dialog.jpg)
 
 ## Kubernetes Dashboard & Node Pools
 
@@ -110,6 +102,4 @@ The **Node Pools** section lists each worker node, showing its IP address and st
 | Service    | Network access to pods    | `kubectl expose deployment nginx --port=80`       |
 | NodePool   | Worker node management    | Configure via LKE dashboard or Terraform provider |
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/9702fbe2-4321-41c5-87e8-8ea364da097d/lesson/04e6b856-3418-48cd-be82-d55c7fd803fd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/9702fbe2-4321-41c5-87e8-8ea364da097d/lesson/04e6b856-3418-48cd-be82-d55c7fd803fd)

@@ -25,9 +25,7 @@ Key points about scope and inheritance:
 * Billing and cost reporting are determined at the resource level—tags must be on the resource for accurate cost allocation.
 * Tags do not automatically flow from a resource group or subscription to underlying resources unless you enforce that behavior (for example, through Azure Policy or supported preview features).
 
-<Callout icon="lightbulb">
-  Tip: If you prefer tagging at the resource group level for human convenience, use policy enforcement to copy or inherit those tags onto resources so billing and automation tools see them at the resource level.
-</Callout>
+> **lightbulb** Tip: If you prefer tagging at the resource group level for human convenience, use policy enforcement to copy or inherit those tags onto resources so billing and automation tools see them at the resource level.
 
 <Frame>
   <img alt="A slide titled &#x22;Azure Resource Tags&#x22; showing four use cases—Adding metadata, Logical grouping, Name-value pair, and Cost management—each illustrated with an Azure icon and a colored tag. A footer notes that tags don't follow inheritance by default and Azure Policy can be used to inherit tags from a resource group or subscription." />
@@ -37,9 +35,7 @@ Key points about scope and inheritance:
 
 Azure occasionally offers preview capabilities for tag inheritance. In production, rely on GA (generally available) features like Azure Policy to ensure consistent, auditable, and enforceable tag behavior.
 
-<Callout icon="warning">
-  Warning: Avoid relying on preview features in production. Prefer policy enforcement to ensure tag inheritance and governance for stable, auditable behavior.
-</Callout>
+> **warning** Warning: Avoid relying on preview features in production. Prefer policy enforcement to ensure tag inheritance and governance for stable, auditable behavior.
 
 ## Managing tags in the Azure portal
 
@@ -109,8 +105,6 @@ The portal suggests existing tag names and values from your subscription while y
 * [Tag resources in Azure](https://learn.microsoft.com/azure/azure-resource-manager/management/tag-resources)
 * [Azure cost management and billing](https://learn.microsoft.com/azure/cost-management-billing/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/00d038ab-75ff-452a-b885-1a1324b4f015" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/00d038ab-75ff-452a-b885-1a1324b4f015)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/4b712333-ccaf-4e8b-9ff1-90288e4853e0" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/4b712333-ccaf-4e8b-9ff1-90288e4853e0)

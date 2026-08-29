@@ -8,7 +8,7 @@ Welcome to this lesson where we delve into high availability (HA) and fault tole
 
 Consider a typical scenario where application clients access a website via a URL. The incoming traffic first reaches a load balancer, which then distributes requests across multiple servers. This setup is especially critical during high-traffic events like Black Friday or Cyber Monday, where millions of users might simultaneously interact with your system.
 
-![The image illustrates a high availability system architecture, showing application clients connecting through the internet to a load balancer, which distributes requests to a high availability server cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860123/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-High-Availability-and-Fault-Tolerance-in-AWS-Introduction/high-availability-system-architecture.jpg)
+![The image illustrates a high availability system architecture, showing application clients connecting through the internet to a load balancer, which distributes requests to a high availability server cluster.](https://kodekloud.com/kk-media/image/upload/v1752860123/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-High-Availability-and-Fault-Tolerance-in-AWS-Introduction/high-availability-system-architecture.jpg)
 
 ***
 
@@ -23,7 +23,7 @@ Several AWS services enhance high availability, including:
 
 These services work together to minimize downtime by intelligently distributing traffic and resources amidst failures.
 
-![The image lists AWS services that support high availability, including Elastic Load Balancing, Amazon Route 53, and Amazon RDS, each represented by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860124/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-High-Availability-and-Fault-Tolerance-in-AWS-Introduction/aws-high-availability-services-icons.jpg)
+![The image lists AWS services that support high availability, including Elastic Load Balancing, Amazon Route 53, and Amazon RDS, each represented by an icon.](https://kodekloud.com/kk-media/image/upload/v1752860124/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-High-Availability-and-Fault-Tolerance-in-AWS-Introduction/aws-high-availability-services-icons.jpg)
 
 ***
 
@@ -36,11 +36,11 @@ Fault tolerance ensures that your system continues to operate even when one or m
 
 For global websites, fault tolerance may require additional services like DNS failover and AWS Global Accelerator to handle failures efficiently. AWS leverages services such as DynamoDB, S3, and auto-scaled EC2 instances to support fault-tolerant architectures. Aurora, with its primary-replica configuration, is another prime example of achieving strong fault tolerance by replicating data across multiple nodes.
 
-![The image is a diagram illustrating fault tolerance in a web application setup, featuring a load balancer distributing traffic to multiple data centers and a failover mechanism to a standby server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860125/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-High-Availability-and-Fault-Tolerance-in-AWS-Introduction/fault-tolerance-web-application-diagram.jpg)
+![The image is a diagram illustrating fault tolerance in a web application setup, featuring a load balancer distributing traffic to multiple data centers and a failover mechanism to a standby server.](https://kodekloud.com/kk-media/image/upload/v1752860125/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-High-Availability-and-Fault-Tolerance-in-AWS-Introduction/fault-tolerance-web-application-diagram.jpg)
 
-![The image outlines three key concepts of fault tolerance: Multi-AZ Deployments, Failover, and Data Replication, each represented with an icon and number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860126/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-High-Availability-and-Fault-Tolerance-in-AWS-Introduction/fault-tolerance-multi-az-failover-replication.jpg)
+![The image outlines three key concepts of fault tolerance: Multi-AZ Deployments, Failover, and Data Replication, each represented with an icon and number.](https://kodekloud.com/kk-media/image/upload/v1752860126/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-High-Availability-and-Fault-Tolerance-in-AWS-Introduction/fault-tolerance-multi-az-failover-replication.jpg)
 
-![The image lists AWS services that support fault tolerance, featuring icons for Amazon S3, Amazon EC2, and Amazon Aurora.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860128/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-High-Availability-and-Fault-Tolerance-in-AWS-Introduction/aws-fault-tolerance-services-icons.jpg)
+![The image lists AWS services that support fault tolerance, featuring icons for Amazon S3, Amazon EC2, and Amazon Aurora.](https://kodekloud.com/kk-media/image/upload/v1752860128/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-High-Availability-and-Fault-Tolerance-in-AWS-Introduction/aws-fault-tolerance-services-icons.jpg)
 
 ***
 
@@ -55,7 +55,7 @@ Although both high availability and fault tolerance strive for continuous operat
 
 In a high availability setup, if a failure occurs—such as in one Availability Zone (AZ2)—a failover occurs with a brief recovery period before traffic is rerouted to a healthy AZ (like AZ1). Conversely, a fault-tolerant architecture immediately compensates for any component failure, ensuring uninterrupted service.
 
-![The image compares high availability and fault tolerance, illustrating differences in redundancy, uptime, cost, and system response to faults using EC2 instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860129/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-High-Availability-and-Fault-Tolerance-in-AWS-Introduction/high-availability-fault-tolerance-comparison.jpg)
+![The image compares high availability and fault tolerance, illustrating differences in redundancy, uptime, cost, and system response to faults using EC2 instances.](https://kodekloud.com/kk-media/image/upload/v1752860129/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-High-Availability-and-Fault-Tolerance-in-AWS-Introduction/high-availability-fault-tolerance-comparison.jpg)
 
 ***
 

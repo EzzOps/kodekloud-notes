@@ -12,13 +12,13 @@ In this guide, we will walk you through the process of creating and deleting a V
 
 Open your AWS console and select the region where you want to deploy your VPC. VPCs are region specific, so be sure to choose the proper region for your application.
 
-![The image shows an AWS Management Console with a dropdown menu displaying various AWS regions. The console includes sections for getting started, training, and cost usage information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858153/notes-assets/images/AWS-Certified-Developer-Associate-Custom-VPC-Demo/aws-management-console-regions-dropdown.jpg)
+![The image shows an AWS Management Console with a dropdown menu displaying various AWS regions. The console includes sections for getting started, training, and cost usage information.](https://kodekloud.com/kk-media/image/upload/v1752858153/notes-assets/images/AWS-Certified-Developer-Associate-Custom-VPC-Demo/aws-management-console-regions-dropdown.jpg)
 
 ## Step 2: Access the VPC Dashboard
 
 In the AWS console, type "VPC" in the search bar at the top and select the VPC service from the results. This action will navigate you to the VPC dashboard, where you can manage your VPCs and networking resources. On the left sidebar, click on "Your VPCs". Note that new AWS accounts typically display one default VPC, which AWS creates automatically.
 
-![The image shows the AWS VPC Management Console, displaying a list of virtual private clouds (VPCs) with one VPC available. The left sidebar contains navigation options for various VPC-related services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858155/notes-assets/images/AWS-Certified-Developer-Associate-Custom-VPC-Demo/aws-vpc-management-console-list.jpg)
+![The image shows the AWS VPC Management Console, displaying a list of virtual private clouds (VPCs) with one VPC available. The left sidebar contains navigation options for various VPC-related services.](https://kodekloud.com/kk-media/image/upload/v1752858155/notes-assets/images/AWS-Certified-Developer-Associate-Custom-VPC-Demo/aws-vpc-management-console-list.jpg)
 
 ## Step 3: Create a Custom VPC
 
@@ -29,17 +29,17 @@ Instead of using the default VPC, we will create our own custom VPC. Click on th
 
 For this tutorial, select the option to create a VPC only.
 
-![The image shows the AWS Management Console interface for creating a VPC, displaying settings for resources, name tag auto-generation, CIDR blocks, and a preview of subnets and route tables.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858157/notes-assets/images/AWS-Certified-Developer-Associate-Custom-VPC-Demo/aws-management-console-vpc-creation.jpg)
+![The image shows the AWS Management Console interface for creating a VPC, displaying settings for resources, name tag auto-generation, CIDR blocks, and a preview of subnets and route tables.](https://kodekloud.com/kk-media/image/upload/v1752858157/notes-assets/images/AWS-Certified-Developer-Associate-Custom-VPC-Demo/aws-management-console-vpc-creation.jpg)
 
 ### VPC Configuration Options
 
 Enter a name for your VPC (e.g., "demo VPC") and specify the IPv4 CIDR block – we will use `10.0.0.0/16` for this demo. You can also configure an IPv6 CIDR block if required. AWS gives you the option to use your own IPv6 CIDR block or let AWS provide one. For simplicity, we will opt for the AWS-provided IPv6 CIDR block and retain the default settings for all additional configurations.
 
-![The image shows the AWS Management Console with the VPC settings page open, where a user is configuring a new VPC with options for IPv4 and IPv6 CIDR blocks and tagging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858158/notes-assets/images/AWS-Certified-Developer-Associate-Custom-VPC-Demo/aws-management-console-vpc-settings.jpg)
+![The image shows the AWS Management Console with the VPC settings page open, where a user is configuring a new VPC with options for IPv4 and IPv6 CIDR blocks and tagging.](https://kodekloud.com/kk-media/image/upload/v1752858158/notes-assets/images/AWS-Certified-Developer-Associate-Custom-VPC-Demo/aws-management-console-vpc-settings.jpg)
 
 After reviewing your settings and tags (the name tag in this case), click on the **Create VPC** button. A green progress bar will indicate the successful creation of your VPC. Once complete, you can view the details of your new VPC.
 
-![The image shows an AWS Management Console screen displaying details of a Virtual Private Cloud (VPC) named "demo-vpc," including its state, CIDR, and associated resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858159/notes-assets/images/AWS-Certified-Developer-Associate-Custom-VPC-Demo/aws-management-console-demo-vpc-details.jpg)
+![The image shows an AWS Management Console screen displaying details of a Virtual Private Cloud (VPC) named "demo-vpc," including its state, CIDR, and associated resources.](https://kodekloud.com/kk-media/image/upload/v1752858159/notes-assets/images/AWS-Certified-Developer-Associate-Custom-VPC-Demo/aws-management-console-demo-vpc-details.jpg)
 
 The VPC details page includes important information such as:
 
@@ -62,7 +62,7 @@ Once you are comfortable with your custom VPC setup, you can delete it by follow
 3. Click **Actions**, then choose **Delete VPC**.
 4. Confirm the deletion by typing the word `delete` when prompted.
 
-![The image shows an AWS VPC Management Console with a progress bar indicating that a VPC is being deleted, currently at 86%.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858161/notes-assets/images/AWS-Certified-Developer-Associate-Custom-VPC-Demo/aws-vpc-management-console-deleting.jpg)
+![The image shows an AWS VPC Management Console with a progress bar indicating that a VPC is being deleted, currently at 86%.](https://kodekloud.com/kk-media/image/upload/v1752858161/notes-assets/images/AWS-Certified-Developer-Associate-Custom-VPC-Demo/aws-vpc-management-console-deleting.jpg)
 
 ## Conclusion
 

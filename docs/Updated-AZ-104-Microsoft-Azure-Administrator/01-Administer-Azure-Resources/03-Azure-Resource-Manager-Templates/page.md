@@ -35,9 +35,7 @@ In this template, you specify parameters, functions, variables, resources, and o
 * **Reduced Human Error**: Automated deployments decrease the likelihood of manual mistakes.
 * **Modular Design**: Link smaller templates to a parent template to manage and deploy complex environments more efficiently.
 
-<Callout icon="lightbulb">
-  Consider using parameters and variables to enhance template reusability and simplify management.
-</Callout>
+> **lightbulb** Consider using parameters and variables to enhance template reusability and simplify management.
 
 ## Deployment Approaches
 
@@ -58,17 +56,13 @@ Using linked or nested templates is another effective strategy. In this approach
 
 This modular design simplifies managing complex deployments and ensures that dependencies are created in the correct order.
 
-<Frame>
-  ![The image illustrates an ARM Template Design, showing a flow from a main template to nested templates for a Virtual Machine, App Service, and SQL Database.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884368/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Resource-Manager-Templates/arm-template-design-virtual-machine-app-service-sql-database.jpg)
-</Frame>
+![The image illustrates an ARM Template Design, showing a flow from a main template to nested templates for a Virtual Machine, App Service, and SQL Database.](https://kodekloud.com/kk-media/image/upload/v1752884368/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Resource-Manager-Templates/arm-template-design-virtual-machine-app-service-sql-database.jpg)
 
 ### 3. Individual Templates per Resource Group
 
 For scenarios where resources are grouped into different Resource Groups by type or project, you can maintain a separate ARM template for each resource group. This approach is best for logically separated deployments, while the linked template approach is more efficient when managing a large number of interconnected resources.
 
-<Callout icon="lightbulb">
-  For larger deployments, the linked (nested) template approach is generally more efficient, whereas a single comprehensive template works well for one or two resources.
-</Callout>
+> **lightbulb** For larger deployments, the linked (nested) template approach is generally more efficient, whereas a single comprehensive template works well for one or two resources.
 
 ## Authoring ARM Templates
 
@@ -80,6 +74,4 @@ In the following section, we'll dive deeper into each part of an ARM template—
 
 Let's now explore the detailed structure of ARM templates.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/7f421132-242f-4d10-85e5-6673b7307d12/lesson/366b6cd1-dd53-4350-bc7b-41320a321c77" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/7f421132-242f-4d10-85e5-6673b7307d12/lesson/366b6cd1-dd53-4350-bc7b-41320a321c77)

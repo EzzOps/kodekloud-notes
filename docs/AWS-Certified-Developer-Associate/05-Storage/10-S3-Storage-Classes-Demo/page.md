@@ -14,7 +14,7 @@ First, create a new S3 bucket. For demonstration purposes, we will name the buck
 
 After creating the bucket, click on **Upload** to add a file. Select any file from your local system. As you proceed with the upload process, navigate to the **Properties** section. Here you can set the desired storage class. By default, the storage class is set to **"Standard."**
 
-![The image shows an Amazon S3 console screen displaying different storage class options, including Standard, Intelligent-Tiering, and Glacier, with details on their designed use, availability zones, and minimum storage duration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859804/notes-assets/images/AWS-Certified-Developer-Associate-S3-Storage-Classes-Demo/amazon-s3-storage-classes-console.jpg)
+![The image shows an Amazon S3 console screen displaying different storage class options, including Standard, Intelligent-Tiering, and Glacier, with details on their designed use, availability zones, and minimum storage duration.](https://kodekloud.com/kk-media/image/upload/v1752859804/notes-assets/images/AWS-Certified-Developer-Associate-S3-Storage-Classes-Demo/amazon-s3-storage-classes-console.jpg)
 
 For this demonstration, choose **"One Zone-Infrequent Access"** as the storage class. Once selected, click **Upload** to complete the process.
 
@@ -28,7 +28,7 @@ If you wish to change the storage class after the file has been uploaded, follow
 2. Locate the storage class section.
 3. Select the new storage class (for example, **"Standard"**) from the options provided.
 
-![The image shows an Amazon S3 console interface displaying details of an object named "beach1.jpg," including its properties like size, type, and last modified date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859805/notes-assets/images/AWS-Certified-Developer-Associate-S3-Storage-Classes-Demo/amazon-s3-console-beach1-details.jpg)
+![The image shows an Amazon S3 console interface displaying details of an object named "beach1.jpg," including its properties like size, type, and last modified date.](https://kodekloud.com/kk-media/image/upload/v1752859805/notes-assets/images/AWS-Certified-Developer-Associate-S3-Storage-Classes-Demo/amazon-s3-console-beach1-details.jpg)
 
 This process ensures you can easily manage and modify the storage class of your objects within Amazon S3, based on your evolving requirements.
 

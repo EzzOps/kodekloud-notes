@@ -10,7 +10,7 @@ In this lesson, you will learn how to work with AWS Elastic Block Store (EBS) by
 
 Two EC2 instances (instance 1 and instance 2) are provisioned in the same Availability Zone. This alignment is crucial because an EBS volume must be created in the same Availability Zone as the instance when attaching it.
 
-![The image shows an AWS EC2 dashboard with two running instances, both of type t2.micro, with status checks passed and no alarms.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861823/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EBS-Demo/frame_50.jpg)
+![The image shows an AWS EC2 dashboard with two running instances, both of type t2.micro, with status checks passed and no alarms.](https://kodekloud.com/kk-media/image/upload/v1752861823/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EBS-Demo/frame_50.jpg)
 
 Both instances are located in US East-1C, so any EBS volume created for these instances must also be in US East-1C.
 
@@ -27,7 +27,7 @@ When creating the volume, ensure you:
 * Set the Availability Zone to **US East-1C** to match the EC2 instances.
 * Optionally, assign a tag (e.g., Name tag: "EBS demo").
 
-![The image shows an AWS console screen for creating an EBS volume, with options for size, IOPS, availability zone, and tags.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861824/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EBS-Demo/frame_130.jpg)
+![The image shows an AWS console screen for creating an EBS volume, with options for size, IOPS, availability zone, and tags.](https://kodekloud.com/kk-media/image/upload/v1752861824/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EBS-Demo/frame_130.jpg)
 
 After you create the volume, its initial status will be "creating." After a brief wait, the status will update to "available."
 
@@ -42,9 +42,9 @@ With the volume available, follow these steps to attach it to instance 1:
 
 A successful attachment is indicated by a green confirmation bar.
 
-![The image shows an AWS EC2 dashboard displaying details of an EBS volume, including its ID, size, type, status, and availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861825/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EBS-Demo/frame_150.jpg)
+![The image shows an AWS EC2 dashboard displaying details of an EBS volume, including its ID, size, type, status, and availability zone.](https://kodekloud.com/kk-media/image/upload/v1752861825/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EBS-Demo/frame_150.jpg)
 
-![The image shows an AWS EC2 dashboard displaying details of three EBS volumes, including volume IDs, types, sizes, and availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861826/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EBS-Demo/frame_200.jpg)
+![The image shows an AWS EC2 dashboard displaying details of three EBS volumes, including volume IDs, types, sizes, and availability zones.](https://kodekloud.com/kk-media/image/upload/v1752861826/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EBS-Demo/frame_200.jpg)
 
 ## Configuring the EBS Volume on Instance 1
 
@@ -187,9 +187,9 @@ To illustrate that an EBS volume is not tied to a single EC2 instance, detach it
    * Click on **Actions** and choose **Attach Volume**.
    * Select instance 2 from the dropdown list.
 
-![The image shows an AWS EC2 dashboard with details of an EBS volume, including its ID, size, type, and status, along with available actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861828/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EBS-Demo/frame_540.jpg)
+![The image shows an AWS EC2 dashboard with details of an EBS volume, including its ID, size, type, and status, along with available actions.](https://kodekloud.com/kk-media/image/upload/v1752861828/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EBS-Demo/frame_540.jpg)
 
-![The image shows an AWS EC2 dashboard with two running instances, both t2.micro type, in the us-east-1c availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861829/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EBS-Demo/frame_550.jpg)
+![The image shows an AWS EC2 dashboard with two running instances, both t2.micro type, in the us-east-1c availability zone.](https://kodekloud.com/kk-media/image/upload/v1752861829/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EBS-Demo/frame_550.jpg)
 
 Log in to instance 2 and mount the volume:
 
@@ -215,7 +215,7 @@ Log in to instance 2 and mount the volume:
 
 The output should display the content "I created this file on instance 1," confirming that the data persists across instances.
 
-![The image shows an AWS EC2 dashboard with details of an EBS volume, including its ID, size, type, and status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861830/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EBS-Demo/frame_590.jpg)
+![The image shows an AWS EC2 dashboard with details of an EBS volume, including its ID, size, type, and status.](https://kodekloud.com/kk-media/image/upload/v1752861830/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EBS-Demo/frame_590.jpg)
 
 ## Cleaning Up
 
@@ -225,7 +225,7 @@ After the demonstration is complete, make sure to clean up your AWS resources:
 2. Remember that EBS volumes persist beyond instance termination, so navigate to the **Volumes** section.
 3. Select and click **Delete Volume** to remove the volume.
 
-![The image shows an AWS EC2 management console with details of two EBS volumes, including their IDs, types, sizes, and status, with a menu for volume actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861832/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EBS-Demo/frame_710.jpg)
+![The image shows an AWS EC2 management console with details of two EBS volumes, including their IDs, types, sizes, and status, with a menu for volume actions.](https://kodekloud.com/kk-media/image/upload/v1752861832/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EBS-Demo/frame_710.jpg)
 
 This concludes the AWS EBS demo lesson. For further details on managing AWS resources, check out the [AWS Documentation](https://docs.aws.amazon.com/) and our related guides.
 

@@ -11,11 +11,11 @@ In this guide, you’ll learn how to use Kusto Query Language (KQL) to analyze l
 1. Sign in to the [Azure portal](https://portal.azure.com/).
 2. In the search bar, type **Log Analytics** and select the service.
 
-![The image shows the Microsoft Azure portal with a search bar in use, displaying search results for "Log Analytics" including services, resources, and marketplace options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867310/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Interrogate-logs-using-basic-Kusto-Query-Language-KQL-queries/azure-portal-log-analytics-search-results.jpg)
+![The image shows the Microsoft Azure portal with a search bar in use, displaying search results for "Log Analytics" including services, resources, and marketplace options.](https://kodekloud.com/kk-media/image/upload/v1752867310/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Interrogate-logs-using-basic-Kusto-Query-Language-KQL-queries/azure-portal-log-analytics-search-results.jpg)
 
 3. Choose your workspace and click **Logs** to launch the query interface.
 
-![The image shows a Microsoft Azure Log Analytics workspace interface with options for creating and managing queries. The query history section indicates no queries have been run yet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867312/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Interrogate-logs-using-basic-Kusto-Query-Language-KQL-queries/azure-log-analytics-query-interface.jpg)
+![The image shows a Microsoft Azure Log Analytics workspace interface with options for creating and managing queries. The query history section indicates no queries have been run yet.](https://kodekloud.com/kk-media/image/upload/v1752867312/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Interrogate-logs-using-basic-Kusto-Query-Language-KQL-queries/azure-log-analytics-query-interface.jpg)
 
 All queries run from this **Logs** hub using KQL.
 
@@ -48,7 +48,7 @@ SecurityEvent
 
 To identify which accounts are targeted most frequently, aggregate and sort failed login counts:
 
-![The image shows a Microsoft Azure Logs interface with a date range selection calendar open, allowing users to specify a time range for log queries. The interface includes options for running queries and managing log data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867313/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Interrogate-logs-using-basic-Kusto-Query-Language-KQL-queries/azure-logs-interface-date-range-calendar.jpg)
+![The image shows a Microsoft Azure Logs interface with a date range selection calendar open, allowing users to specify a time range for log queries. The interface includes options for running queries and managing log data.](https://kodekloud.com/kk-media/image/upload/v1752867313/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Interrogate-logs-using-basic-Kusto-Query-Language-KQL-queries/azure-logs-interface-date-range-calendar.jpg)
 
 ```kusto theme={null}
 SecurityEvent
@@ -99,7 +99,7 @@ Azure Log Analytics now offers two query experiences:
 
 Toggle modes via **More analytics settings** in the Logs pane.
 
-![The image shows a Microsoft Azure Logs interface displaying a table of log entries with various columns like TimeGenerated, Id, Source, and ResultCode. A dropdown menu for adding filters and operators is open, with a cursor pointing to the "Add" button.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867315/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Interrogate-logs-using-basic-Kusto-Query-Language-KQL-queries/azure-logs-interface-log-entries-table.jpg)
+![The image shows a Microsoft Azure Logs interface displaying a table of log entries with various columns like TimeGenerated, Id, Source, and ResultCode. A dropdown menu for adding filters and operators is open, with a cursor pointing to the "Add" button.](https://kodekloud.com/kk-media/image/upload/v1752867315/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Interrogate-logs-using-basic-Kusto-Query-Language-KQL-queries/azure-logs-interface-log-entries-table.jpg)
 
 ## 5. Sharing and Exporting Results
 

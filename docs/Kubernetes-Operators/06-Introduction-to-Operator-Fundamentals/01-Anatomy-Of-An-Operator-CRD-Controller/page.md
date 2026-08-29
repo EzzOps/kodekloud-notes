@@ -87,9 +87,7 @@ Around the reconcile loop: supporting pieces in an operator project
 * Client — API client for reading and mutating cluster state.
 * RBAC — the set of Kubernetes permissions that determine what actions the controller can perform.
 
-<Callout icon="lightbulb">
-  Keep the vending machine mental model: the CRD is the front interface, the controller is the machinery that performs work, child Kubernetes objects are the items produced, and `status` reports the result back to users and tooling.
-</Callout>
+> **lightbulb** Keep the vending machine mental model: the CRD is the front interface, the controller is the machinery that performs work, child Kubernetes objects are the items produced, and `status` reports the result back to users and tooling.
 
 <Frame>
   <img alt="The image illustrates a vending machine metaphor for a process, with elements labeled as &#x22;CRD&#x22; (the front), &#x22;Controller&#x22; (the machinery inside), and &#x22;Child objects&#x22; (what comes out), explaining their functions." />
@@ -101,9 +99,7 @@ A few practical tips and resources
 * Use `ownerReferences` so Kubernetes can automatically garbage-collect resources you create.
 * Prefer the controller-runtime manager and informers to avoid writing low-level watch code.
 
-<Callout icon="warning">
-  If your controller lacks appropriate RBAC permissions, reconciliation will fail silently or produce events. Always audit the Role/ClusterRole and RoleBinding/ClusterRoleBinding in your operator manifests.
-</Callout>
+> **warning** If your controller lacks appropriate RBAC permissions, reconciliation will fail silently or produce events. Always audit the Role/ClusterRole and RoleBinding/ClusterRoleBinding in your operator manifests.
 
 Links and references
 
@@ -113,6 +109,4 @@ Links and references
 
 Once you internalize this shape—the CRD as the interface and the controller as the reconciler—the larger project layout and generated files become much easier to navigate and reason about.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/ffe6bab3-b9b3-45d5-9204-22a7c41c1222" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/ffe6bab3-b9b3-45d5-9204-22a7c41c1222)

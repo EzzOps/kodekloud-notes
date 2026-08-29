@@ -83,19 +83,13 @@ References and links
 * WebSockets for real-time UIs: [https://developer.mozilla.org/docs/Web/API/WebSockets\_API](https://developer.mozilla.org/docs/Web/API/WebSockets_API)
 * Server-Sent Events (SSE): [https://developer.mozilla.org/docs/Web/API/Server-sent\_events](https://developer.mozilla.org/docs/Web/API/Server-sent_events)
 
-<Callout icon="lightbulb">
-  Streaming is a small configuration change with a large UX impact: enable streaming on the model, attach a handler, and stream tokens to the client (WebSocket/SSE/HTTP-chunked) for real-time, responsive interactions.
-</Callout>
+> **lightbulb** Streaming is a small configuration change with a large UX impact: enable streaming on the model, attach a handler, and stream tokens to the client (WebSocket/SSE/HTTP-chunked) for real-time, responsive interactions.
 
-<Callout icon="warning">
-  Remember to design for partial outputs: implement buffering, finalization hooks, and robust error handling to avoid inconsistent or truncated user-visible responses.
-</Callout>
+> **warning** Remember to design for partial outputs: implement buffering, finalization hooks, and robust error handling to avoid inconsistent or truncated user-visible responses.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/ae40e239-a2a4-459d-afe4-91a46fd9e673" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/ae40e239-a2a4-459d-afe4-91a46fd9e673)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/5c0a78aa-ee9f-4204-8e63-9f3c04e1c746" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/5c0a78aa-ee9f-4204-8e63-9f3c04e1c746)
 
 
 # Trimming and Filtering Removing Irrelevant Messages
@@ -106,9 +100,7 @@ Techniques for trimming and filtering conversational context in LLM pipelines to
 
 Large language models have finite context windows and every token matters. Sending outdated, redundant, or low-value content wastes tokens, increases cost, and weakens model focus. Trimming and filtering are not just micro-optimizations — they are core design patterns for robust LLM workflows.
 
-<Callout icon="lightbulb">
-  Trim and filter early in your pipeline. Doing so reduces cost, improves latency, and helps the model concentrate on the most relevant signals.
-</Callout>
+> **lightbulb** Trim and filter early in your pipeline. Doing so reduces cost, improves latency, and helps the model concentrate on the most relevant signals.
 
 <Frame>
   <img alt="The image discusses the importance of trimming and filtering, highlighting them as core design principles and not just optimizations. It features a block of text and a highlighter icon." />
@@ -200,9 +192,7 @@ However, trimming can be dangerous if applied too aggressively. If you drop a ta
   <img alt="The image is a diagram titled &#x22;Common Mistakes to Avoid,&#x22; featuring four points: trimming away essential context, removing key task details, not testing filters across scenarios, and assuming the model can infer missing info." />
 </Frame>
 
-<Callout icon="warning">
-  Be cautious: overly aggressive trimming or filtering can remove crucial context. Validate filters on diverse conversations and add safeties that preserve critical messages.
-</Callout>
+> **warning** Be cautious: overly aggressive trimming or filtering can remove crucial context. Validate filters on diverse conversations and add safeties that preserve critical messages.
 
 Best practice is a hybrid strategy: combine recency trimming, role/type filtering, content-based pruning, and summarization. Make your graph or pipeline configurable — expose parameters (e.g., `max_turns`, `min_token_value`, summarization thresholds) so trimming adapts to the task. Use observability to measure token usage, latency, and model quality to ensure filters help rather than harm.
 
@@ -230,6 +220,4 @@ Links and references
 * [OpenAI: Context management & long prompts](https://platform.openai.com/docs/guides/longer-contexts)
 * [Best practices for prompt engineering and cost optimization](https://platform.openai.com/docs/guides/cost-and-latency)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/11578f67-d4df-41d9-9e5d-f9ba745d553b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/11578f67-d4df-41d9-9e5d-f9ba745d553b)

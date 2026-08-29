@@ -38,17 +38,13 @@ enable_plugins     = host_list, virtualbox, yaml, constructed
 
 This configuration sets crucial parameters such as the inventory file location, logging, module paths, and inventory plugin options. Although there are many configuration options available, you only need to override those that are relevant to your immediate needs.
 
-<Callout icon="lightbulb">
-  Ansible processes configuration files in a specific order of precedence. Settings defined in higher precedence files override those in lower precedence ones.
-</Callout>
+> **lightbulb** Ansible processes configuration files in a specific order of precedence. Settings defined in higher precedence files override those in lower precedence ones.
 
 ## Customizing Configuration for Different Playbooks
 
 By default, Ansible uses the configuration file at `/etc/ansible/ansible.cfg`, regardless of the playbook's location. However, if you have multiple playbooks for different purposes—such as web, database, or network configurations—you might need unique settings for each context.
 
-<Frame>
-  ![The image shows a diagram of Ansible configuration files and directories, including /etc/ansible/ansible.cfg, /opt/web-playbooks, /opt/db-playbooks, and \`/opt/network-playbooks'.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881102/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Introduction-to-Ansible-Configuration-Files/frame_130.jpg)
-</Frame>
+![The image shows a diagram of Ansible configuration files and directories, including /etc/ansible/ansible.cfg, /opt/web-playbooks, /opt/db-playbooks, and \`/opt/network-playbooks'.](https://kodekloud.com/kk-media/image/upload/v1752881102/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Introduction-to-Ansible-Configuration-Files/frame_130.jpg)
 
 For example:
 
@@ -137,6 +133,4 @@ This confirms that Ansible has overridden the configuration using the environmen
 
 That concludes this lesson on Ansible configuration files. With this understanding, you can fine-tune your Ansible environment to meet specific needs and improve your workflow.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/ea3fc0e5-7803-45ab-a82e-8be056ddfeb7/lesson/eac8b2d1-2f1f-49d6-b634-24872c94b671" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/ea3fc0e5-7803-45ab-a82e-8be056ddfeb7/lesson/eac8b2d1-2f1f-49d6-b634-24872c94b671)

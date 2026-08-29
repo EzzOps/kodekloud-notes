@@ -25,11 +25,11 @@ Since the model operates on numbers rather than words, each word is assigned a u
 
 This method builds a vocabulary of tokens, ensuring that the same word is consistently represented by the same token throughout the text.
 
-![The image outlines the first step in training a transformer model, which is tokenization, involving decomposing the training text into tokens. It also shows a navigation bar with steps for tokenization, embeddings, and attention.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857010/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Language-Model-Training/transformer-model-tokenization-step.jpg)
+![The image outlines the first step in training a transformer model, which is tokenization, involving decomposing the training text into tokens. It also shows a navigation bar with steps for tokenization, embeddings, and attention.](https://kodekloud.com/kk-media/image/upload/v1752857010/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Language-Model-Training/transformer-model-tokenization-step.jpg)
 
 For example, the sentence "I heard a dog" will similarly be tokenized into a sequence like 1, 2, 3, 4, ensuring the process is scalable and consistent. This transformation of language into numerical code is fundamental for the model to understand and process text.
 
-![The image illustrates the tokenization process of a sentence, showing each word with its corresponding token number. It highlights the word "a" with the token number 3 appearing twice in the sentence.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857010/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Language-Model-Training/tokenization-process-sentence-illustration.jpg)
+![The image illustrates the tokenization process of a sentence, showing each word with its corresponding token number. It highlights the word "a" with the token number 3 appearing twice in the sentence.](https://kodekloud.com/kk-media/image/upload/v1752857010/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Language-Model-Training/tokenization-process-sentence-illustration.jpg)
 
 ## Embeddings
 
@@ -37,7 +37,7 @@ Once the text has been tokenized, the next step is creating embeddings. Embeddin
 
 Consider the words "cat," "dog," "bird," and "snake." Despite all representing animals, "cat" and "dog" might be placed nearer each other in the embedding space due to their more common association as pets. The process assigns a set of numerical coordinates (or vector) to each word, which enables the model to determine semantic similarity based on their spatial relationships.
 
-![The image illustrates the concept of embeddings in machine learning, showing a 3D space with vectors representing different animals (cat, dog, bird, snake) and their corresponding token and embedding values.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857012/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Language-Model-Training/embeddings-machine-learning-3d-vectors.jpg)
+![The image illustrates the concept of embeddings in machine learning, showing a 3D space with vectors representing different animals (cat, dog, bird, snake) and their corresponding token and embedding values.](https://kodekloud.com/kk-media/image/upload/v1752857012/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Language-Model-Training/embeddings-machine-learning-3d-vectors.jpg)
 
 For instance, illustrative embeddings might assign:
 
@@ -54,7 +54,7 @@ The final critical step in language model training is the attention mechanism. A
 
 Take the initial sentence "I heard a bird chirping in a tree." If the task is to predict the word following "bird," the model leverages the attention mechanism to focus more on words like "heard" and "bird"—which provide essential context—while giving less weight to tokens such as "I" or "in." This targeted focus is key to generating accurate predictions; for example, it helps the model predict that "chirping" is a likely subsequent word after "bird."
 
-![The image illustrates a process of natural language processing involving tokenization, embeddings, and attention, with a focus on predicting the word "chirping" from the input "I heard a bird."](../../../../images/kodekloud.com/kk-media/image/upload/v1752857013/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Language-Model-Training/natural-language-processing-tokenization-embeddings.jpg)
+![The image illustrates a process of natural language processing involving tokenization, embeddings, and attention, with a focus on predicting the word "chirping" from the input "I heard a bird."](https://kodekloud.com/kk-media/image/upload/v1752857013/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Language-Model-Training/natural-language-processing-tokenization-embeddings.jpg)
 
 > **lightbulb** Attention mechanisms empower language models to prioritize contextually significant tokens, greatly enhancing their predictive capabilities.
 

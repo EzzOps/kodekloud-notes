@@ -22,9 +22,7 @@ kubectl create namespace team-b
 
 Each team or project operates independently within its own namespace.
 
-<Callout icon="lightbulb">
-  Use descriptive naming conventions (e.g., `team-a`, `team-b`) to keep namespaces organized and easy to manage.
-</Callout>
+> **lightbulb** Use descriptive naming conventions (e.g., `team-a`, `team-b`) to keep namespaces organized and easy to manage.
 
 ***
 
@@ -61,9 +59,7 @@ spec:
 
 RBAC enforces the principle of least privilege, reducing accidental or malicious changes. Define Roles and RoleBindings to grant only the permissions required.
 
-<Frame>
-  ![The image illustrates Role-Based Access Control (RBAC) for managing access to different namespaces (Prod, Test, Dev) in a Kubernetes environment, with a focus on developer access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880862/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Kubernetes-Isolation-Techniques/rbac-kubernetes-access-namespaces.jpg)
-</Frame>
+![The image illustrates Role-Based Access Control (RBAC) for managing access to different namespaces (Prod, Test, Dev) in a Kubernetes environment, with a focus on developer access.](https://kodekloud.com/kk-media/image/upload/v1752880862/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Kubernetes-Isolation-Techniques/rbac-kubernetes-access-namespaces.jpg)
 
 Example use cases:
 
@@ -72,9 +68,7 @@ Example use cases:
 
 In multi-tenant clusters, RBAC isolates teams:
 
-<Frame>
-  ![The image illustrates Role-Based Access Control (RBAC) in a Kubernetes environment, showing different namespaces (Prod, Test, Dev, Team A, Team B) with pods and access permissions. It highlights multi-tenancy with namespaces.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880863/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Kubernetes-Isolation-Techniques/rbac-kubernetes-multi-tenancy-namespaces.jpg)
-</Frame>
+![The image illustrates Role-Based Access Control (RBAC) in a Kubernetes environment, showing different namespaces (Prod, Test, Dev, Team A, Team B) with pods and access permissions. It highlights multi-tenancy with namespaces.](https://kodekloud.com/kk-media/image/upload/v1752880863/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Kubernetes-Isolation-Techniques/rbac-kubernetes-multi-tenancy-namespaces.jpg)
 
 | Role         | Namespace | Permissions                  |
 | ------------ | --------- | ---------------------------- |
@@ -87,9 +81,7 @@ In multi-tenant clusters, RBAC isolates teams:
 
 ResourceQuotas control overall resource consumption per namespace. Pod-level resource requests and limits prevent individual workloads from exhausting CPU or memory.
 
-<Frame>
-  ![The image illustrates resource quotas and limits in a multi-tenant setup, showing different namespaces (Prod, Test, Dev, Team A, Team B) each containing a pod and associated resource icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880864/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Kubernetes-Isolation-Techniques/resource-quotas-limits-multi-tenant.jpg)
-</Frame>
+![The image illustrates resource quotas and limits in a multi-tenant setup, showing different namespaces (Prod, Test, Dev, Team A, Team B) each containing a pod and associated resource icons.](https://kodekloud.com/kk-media/image/upload/v1752880864/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Kubernetes-Isolation-Techniques/resource-quotas-limits-multi-tenant.jpg)
 
 Example `ResourceQuota`:
 
@@ -136,17 +128,13 @@ spec:
         allowPrivilegeEscalation: false
 ```
 
-<Callout icon="triangle-alert">
-  Always verify that your container images support non-root users and drop unnecessary Linux capabilities.
-</Callout>
+> **triangle-alert** Always verify that your container images support non-root users and drop unnecessary Linux capabilities.
 
 ***
 
 ## Summary of Isolation Techniques
 
-<Frame>
-  ![The image is a summary slide listing five security practices for applications, including using namespaces, implementing network policies, applying RBAC, setting resource quotas, and using security contexts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880865/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Kubernetes-Isolation-Techniques/application-security-practices-summary.jpg)
-</Frame>
+![The image is a summary slide listing five security practices for applications, including using namespaces, implementing network policies, applying RBAC, setting resource quotas, and using security contexts.](https://kodekloud.com/kk-media/image/upload/v1752880865/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Kubernetes-Isolation-Techniques/application-security-practices-summary.jpg)
 
 | Technique                 | Benefit                                         |
 | ------------------------- | ----------------------------------------------- |
@@ -166,6 +154,4 @@ spec:
 * [Resource Quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/)
 * [Security Context](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/a0ddd095-0114-4aa4-b3a5-2b31e773f241/lesson/e31213f1-b04a-40fc-8c8c-dc250c6ad4be" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/a0ddd095-0114-4aa4-b3a5-2b31e773f241/lesson/e31213f1-b04a-40fc-8c8c-dc250c6ad4be)

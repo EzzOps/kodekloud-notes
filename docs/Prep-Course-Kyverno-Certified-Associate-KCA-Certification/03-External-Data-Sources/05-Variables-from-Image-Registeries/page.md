@@ -162,9 +162,7 @@ pod/goodpod created
 
 This enforces image-level best practices (the image author set a non-root `USER`) in addition to validating the Kubernetes manifest.
 
-<Callout icon="lightbulb">
-  Kyverno must be able to reach the registry to fetch image metadata. For private registries, configure the appropriate image pull credentials in Kyverno so it can authenticate when requesting image data.
-</Callout>
+> **lightbulb** Kyverno must be able to reach the registry to fetch image metadata. For private registries, configure the appropriate image pull credentials in Kyverno so it can authenticate when requesting image data.
 
 Advanced usage: transform registry JSON with JMESPath
 You can supply a `jmesPath` expression in the `imageRegistry` context to extract or compute exactly the value you need from the registry JSON. For example, compute the total image size (sum of layer sizes) and store it as a string:
@@ -214,6 +212,4 @@ Links and references
 * Google go-containerregistry (crane): [https://github.com/google/go-containerregistry/tree/main/cmd/crane](https://github.com/google/go-containerregistry/tree/main/cmd/crane)
 * JMESPath: [https://jmespath.org/](https://jmespath.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/470bb961-febf-41b6-b75b-4c439def6eae/lesson/201e7da3-4ecd-4ae8-bfc1-0c1e4587c0be" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/470bb961-febf-41b6-b75b-4c439def6eae/lesson/201e7da3-4ecd-4ae8-bfc1-0c1e4587c0be)

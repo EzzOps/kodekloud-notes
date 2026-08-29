@@ -6,15 +6,13 @@ Demonstrates loading a PDF with PyPDFLoader, splitting into page documents, insp
 
 In this lesson you'll learn how to load a PDF and split it into pages as the first step of a Retrieval-Augmented Generation (RAG) pipeline. We'll use a small, fictitious employee handbook for "Lakeside Bicycles" — a simple three-page PDF containing policies such as leave and discipline procedures. The goal is to extract the handbook text, split it into page-level documents, inspect the results, and prepare the output for downstream steps like embedding, indexing, and building a Q\&A/chat interface.
 
-<Callout icon="lightbulb">
-  Before running the examples, install the required packages. A typical install command is:
+> **lightbulb** Before running the examples, install the required packages. A typical install command is:
 
   ```bash theme={null}
   pip install langchain-community pypdf
   ```
 
   See [langchain-community on PyPI](https://pypi.org/project/langchain-community) and [pypdf on PyPI](https://pypi.org/project/pypdf) for details. For LangChain docs, visit [LangChain Documentation](https://langchain.readthedocs.io/en/latest/).
-</Callout>
 
 ## Example dataset
 

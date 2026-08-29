@@ -36,9 +36,7 @@ echo -n 'root'   | base64  # cm9vdA==
 echo -n 'paswrd' | base64  # cGFzd3Jk
 ```
 
-<Callout icon="lightbulb">
-  You can decode any value with `echo '<base64>' | base64 --decode`. Keep your raw files out of version control.
-</Callout>
+> **lightbulb** You can decode any value with `echo '<base64>' | base64 --decode`. Keep your raw files out of version control.
 
 ***
 
@@ -143,11 +141,9 @@ cat /opt/secrets/DB_PASSWORD
 
 Try the exercises to practice creating, viewing, and injecting Secrets in your Kubernetes clusters!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/4dca62df-d690-4360-99f0-10f24974f41f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/4dca62df-d690-4360-99f0-10f24974f41f)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/0f29d43a-a993-41fb-b58d-5c99f56c356a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/0f29d43a-a993-41fb-b58d-5c99f56c356a)
 
 
 # Solution Namespace

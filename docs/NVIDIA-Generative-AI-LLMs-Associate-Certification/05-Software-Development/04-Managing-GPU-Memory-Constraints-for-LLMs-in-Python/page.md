@@ -45,13 +45,9 @@ For more features and advanced configurations, see the pybreaker project: [https
 * Iterator pattern: Designed for traversal of collections; irrelevant for runtime failure isolation.
 * Builder pattern: Used to construct complex objects; not applicable to handling runtime availability or failures.
 
-<Callout icon="lightbulb">
-  Use the circuit breaker pattern (with sensible thresholds, observability, and fallbacks) to keep LLM deployments resilient and to prevent failures in one component from bringing down the whole system.
-</Callout>
+> **lightbulb** Use the circuit breaker pattern (with sensible thresholds, observability, and fallbacks) to keep LLM deployments resilient and to prevent failures in one component from bringing down the whole system.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/e1d1be4b-e6c9-4b8a-b9a8-9faba13783ff" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/e1d1be4b-e6c9-4b8a-b9a8-9faba13783ff)
 
 
 # Managing GPU Memory Constraints for LLMs in Python

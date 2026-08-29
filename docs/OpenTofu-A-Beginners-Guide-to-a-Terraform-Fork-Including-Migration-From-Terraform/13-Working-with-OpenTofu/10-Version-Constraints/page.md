@@ -45,9 +45,7 @@ guarantee the same selections by default when you run "tofu init" in the future.
 OpenTofu has been successfully initialized!
 ```
 
-<Callout icon="lightbulb">
-  Include the generated .terraform.lock.hcl in version control to ensure consistent provider selection across runs and machines.
-</Callout>
+> **lightbulb** Include the generated .terraform.lock.hcl in version control to ensure consistent provider selection across runs and machines.
 
 Because provider behavior may change between releases, you should explicitly pin or constrain provider versions to protect your configuration from unexpected changes.
 
@@ -234,9 +232,7 @@ resource "local_file" "pet" {
 * Exclude known-broken versions with `!=` when necessary.
 * Always commit `.terraform.lock.hcl` to version control so subsequent runs use the same provider selections.
 
-<Callout icon="warning">
-  When adjusting provider constraints, test upgrades in a staging environment before applying changes in production. Provider releases can introduce behavior changes even when the API surface looks compatible.
-</Callout>
+> **warning** When adjusting provider constraints, test upgrades in a staging environment before applying changes in production. Provider releases can introduce behavior changes even when the API surface looks compatible.
 
 ## Links and references
 
@@ -244,6 +240,4 @@ resource "local_file" "pet" {
 * OpenTofu documentation: [https://opentofu.org/docs/](https://opentofu.org/docs/)
 * Provider registry (examples and discovery): [https://registry.opentofu.org/](https://registry.opentofu.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/12d63e59-cf59-4df8-bfa8-3216cae1d003" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/12d63e59-cf59-4df8-bfa8-3216cae1d003)

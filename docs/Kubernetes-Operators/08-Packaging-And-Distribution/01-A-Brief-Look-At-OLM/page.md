@@ -8,9 +8,7 @@ $ kubebuilder init --domain kodekloud.com --repo github.com/kodekloud/webapp-ope
 $ kubebuilder create api --group apps --version v1 --kind WebApp
 ```
 
-<Callout icon="lightbulb">
-  Ensure [`go`](https://go.dev) and [`kubebuilder`](https://book.kubebuilder.io) are in your PATH. The `--domain` you pass to `kubebuilder init` becomes the DNS domain for your CRD API group (for example: `apps.kodekloud.com/v1`).
-</Callout>
+> **lightbulb** Ensure [`go`](https://go.dev) and [`kubebuilder`](https://book.kubebuilder.io) are in your PATH. The `--domain` you pass to `kubebuilder init` becomes the DNS domain for your CRD API group (for example: `apps.kodekloud.com/v1`).
 
 After generation, inspect the code layout. Key files you will interact with:
 
@@ -37,9 +35,7 @@ Example RBAC marker:
 
 These markers will be turned into RBAC YAML in `config/rbac/` and CRD YAML in `config/crd/bases/` after you run the generator targets (for example: `make generate` and `make manifests`, depending on your Makefile).
 
-<Callout icon="warning">
-  Always verify generated RBAC rules and CRD group/version names before applying to a cluster. Incorrect RBAC or API group names can prevent your controller from watching or acting on resources.
-</Callout>
+> **warning** Always verify generated RBAC rules and CRD group/version names before applying to a cluster. Incorrect RBAC or API group names can prevent your controller from watching or acting on resources.
 
 Multiple APIs in one repo
 
@@ -61,9 +57,7 @@ Links and references
 * [Operator SDK](https://sdk.operatorframework.io)
 * [controller-tools / controller-gen](https://github.com/kubernetes-sigs/controller-tools)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/20a4ec01-fde8-466d-83c7-2f74f6def1f0/lesson/ce641d8c-df2f-40d4-87a2-0e29b2f51c42" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/20a4ec01-fde8-466d-83c7-2f74f6def1f0/lesson/ce641d8c-df2f-40d4-87a2-0e29b2f51c42)
 
 
 # A Brief Look At OLM
@@ -86,9 +80,7 @@ Think of raw manifests as handing someone a box of parts plus assembly instructi
 
 Important: OLM is about distribution and lifecycle management — not a change to your operator's runtime or reconciliation logic. The controller image you build still runs the operator; OLM defines how that operator is presented, installed, and upgraded on a cluster.
 
-<Callout icon="lightbulb">
-  OLM provides discovery, install-time metadata, upgrade channels, and a managed approval workflow — it does not change how your reconcile loop works.
-</Callout>
+> **lightbulb** OLM provides discovery, install-time metadata, upgrade channels, and a managed approval workflow — it does not change how your reconcile loop works.
 
 Vocabulary (simple sequence)
 
@@ -124,9 +116,7 @@ If the bundle is a box, the `CSV` is the version label that tells OLM and users 
 * `InstallPlan`\
   An `InstallPlan` is the concrete list of steps OLM generates from a `Subscription`. It enumerates the resources OLM intends to install or upgrade (bundles, CSVs, CRDs, and other manifests). Based on the `Subscription` approval mode, OLM may apply the `InstallPlan` automatically or wait for human approval. This gating lets platform teams control when upgrades are applied.
 
-<Callout icon="warning">
-  If a `Subscription` uses manual approval, OLM will pause at the `InstallPlan` stage until an operator or platform engineer approves the plan. This prevents unintended upgrades in production clusters.
-</Callout>
+> **warning** If a `Subscription` uses manual approval, OLM will pause at the `InstallPlan` stage until an operator or platform engineer approves the plan. This prevents unintended upgrades in production clusters.
 
 * `OperatorGroup`\
   An `OperatorGroup` defines the scope of the operator — which namespaces it should target. Operators can be namespace-scoped (watch a single namespace) or cluster-scoped (watch the entire cluster). `OperatorGroup` tells OLM the intended installation scope.
@@ -165,6 +155,4 @@ Further reading and references
 
 Takeaway: Not every operator needs OLM. Think of distribution as levels: raw manifests are direct and transparent; OLM adds package metadata, catalogs, channels, `InstallPlan`s, and a gated workflow. When you hear "bundle", `CSV`, `CatalogSource`, `Subscription`, `InstallPlan`, and `OperatorGroup`, treat them as the parts of a package manager story for Kubernetes operators.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/5a9bfe56-bc26-4325-b659-06027d4e815f/lesson/81dde39b-6011-46ad-8cf3-5be074ba996e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/5a9bfe56-bc26-4325-b659-06027d4e815f/lesson/81dde39b-6011-46ad-8cf3-5be074ba996e)

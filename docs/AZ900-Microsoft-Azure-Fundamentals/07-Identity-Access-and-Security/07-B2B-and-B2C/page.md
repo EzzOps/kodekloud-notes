@@ -14,7 +14,7 @@ In today’s interconnected business landscape, collaborating with external part
 
 Imagine you're partnering with a supplier on a new product. You need to securely share project plans and progress reports. With Entra B2B, your external collaborators maintain their own credentials while accessing only the permitted resources.
 
-![The image illustrates the Microsoft Entra External Identities B2B process, showing how partners, vendors, and collaborators can sign up via invitation or self-service to access a tenant using Microsoft Entra External ID.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868401/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-B2B-and-B2C/microsoft-entra-external-identities-b2b.jpg)
+![The image illustrates the Microsoft Entra External Identities B2B process, showing how partners, vendors, and collaborators can sign up via invitation or self-service to access a tenant using Microsoft Entra External ID.](https://kodekloud.com/kk-media/image/upload/v1752868401/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-B2B-and-B2C/microsoft-entra-external-identities-b2b.jpg)
 
 Key features of this approach include:
 
@@ -26,7 +26,7 @@ Key features of this approach include:
   - **Simplified Management:** A streamlined system for managing external identities improves access control and resource sharing.
   - **Improved Collaboration:** Securely work together, akin to a protected communication platform for business projects.
 
-![The image outlines key features of Microsoft Entra External Identities for B2B, highlighting cross-organization collaboration, self-service sign-up, and customizable user experience.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868403/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-B2B-and-B2C/microsoft-entra-external-identities-b2b-2.jpg)
+![The image outlines key features of Microsoft Entra External Identities for B2B, highlighting cross-organization collaboration, self-service sign-up, and customizable user experience.](https://kodekloud.com/kk-media/image/upload/v1752868403/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-B2B-and-B2C/microsoft-entra-external-identities-b2b-2.jpg)
 
 Common B2B use cases include:
 
@@ -34,7 +34,7 @@ Common B2B use cases include:
 * Sharing corporate documents securely without relying on unsecured email channels.
 * Granting controlled access to customer portals or extranets, similar to providing VIP access for exclusive services.
 
-![The image outlines the benefits of Microsoft Entra External Identities for B2B, highlighting enhanced security and compliance, simplified management, and improved collaboration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868404/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-B2B-and-B2C/microsoft-entra-external-identities-benefits.jpg)
+![The image outlines the benefits of Microsoft Entra External Identities for B2B, highlighting enhanced security and compliance, simplified management, and improved collaboration.](https://kodekloud.com/kk-media/image/upload/v1752868404/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-B2B-and-B2C/microsoft-entra-external-identities-benefits.jpg)
 
 ***
 
@@ -44,7 +44,7 @@ Microsoft Entra External Identities also powers customer-facing applications by 
 
 Picture operating an online store where customers enjoy a customized shopping experience from the moment they log in. With Entra B2C, users can register and sign in using popular social media accounts—such as Google, Facebook, Twitter, or iCloud—providing them a familiar authentication process.
 
-![The image illustrates Microsoft Entra External Identities B2C, showing a flow from various identity providers (like Facebook and Google) to Azure AD B2C for user sign-up and sign-in processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868405/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-B2B-and-B2C/microsoft-entra-b2c-identity-flow.jpg)
+![The image illustrates Microsoft Entra External Identities B2C, showing a flow from various identity providers (like Facebook and Google) to Azure AD B2C for user sign-up and sign-in processes.](https://kodekloud.com/kk-media/image/upload/v1752868405/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-B2B-and-B2C/microsoft-entra-b2c-identity-flow.jpg)
 
 Key aspects of the B2C solution include:
 
@@ -56,7 +56,7 @@ Key aspects of the B2C solution include:
   - **Scalability:** Built to manage millions of customer identities, ensuring smooth and reliable performance.
   - **Robust Security and Compliance:** Meets global data protection standards to securely manage customer information.
 
-![The image outlines the benefits of Microsoft Entra External Identities for B2C, highlighting enhanced user experience, scalability, and security and compliance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868406/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-B2B-and-B2C/microsoft-entra-external-identities-benefits-2.jpg)
+![The image outlines the benefits of Microsoft Entra External Identities for B2C, highlighting enhanced user experience, scalability, and security and compliance.](https://kodekloud.com/kk-media/image/upload/v1752868406/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-B2B-and-B2C/microsoft-entra-external-identities-benefits-2.jpg)
 
 B2C is ideally suited for:
 
@@ -64,7 +64,7 @@ B2C is ideally suited for:
 * Gaming platforms that rely on social media authentication for quick player access.
 * Personalization-driven consumer apps, such as fitness or lifestyle applications that deliver tailored recommendations.
 
-![The image shows two use cases for Microsoft Entra External Identities B2C: consumer-facing app hosting and e-commerce, gaming, and consumer apps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868407/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-B2B-and-B2C/microsoft-entran-external-identities-use-cases.jpg)
+![The image shows two use cases for Microsoft Entra External Identities B2C: consumer-facing app hosting and e-commerce, gaming, and consumer apps.](https://kodekloud.com/kk-media/image/upload/v1752868407/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-B2B-and-B2C/microsoft-entran-external-identities-use-cases.jpg)
 
 ***
 

@@ -13,9 +13,7 @@ Task summary
 |              `order-api` Service not routing traffic |    `default`   | Service exists but has no endpoints; curl to NodePort fails                      |
 | `inventory-service` HPA not scaling to `minReplicas` | `backend-apps` | HPA shows `minReplicas=3` but only 1 pod runs; events show pod creation failures |
 
-<Callout icon="lightbulb">
-  Follow a reproducible troubleshooting pattern: observe symptoms, gather cluster state (svc/pods/endpoints/events/metrics/quotas), link evidence to possible causes, and apply the smallest safe remediation. Use `kubectl` + events + metrics to avoid misdirection.
-</Callout>
+> **lightbulb** Follow a reproducible troubleshooting pattern: observe symptoms, gather cluster state (svc/pods/endpoints/events/metrics/quotas), link evidence to possible causes, and apply the smallest safe remediation. Use `kubectl` + events + metrics to avoid misdirection.
 
 ***
 

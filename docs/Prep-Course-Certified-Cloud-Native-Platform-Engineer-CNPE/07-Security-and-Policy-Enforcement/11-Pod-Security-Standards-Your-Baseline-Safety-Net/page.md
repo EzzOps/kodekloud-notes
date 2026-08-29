@@ -68,9 +68,7 @@ A common pattern: enforce `baseline` to immediately block host-level risks, and 
   <img alt="The image illustrates three enforcement modes: &#x22;Enforce&#x22; (hard block), &#x22;Warn&#x22; (visible warning), and &#x22;Audit&#x22; (silent logging), for handling pod violations. Each mode is depicted with a brief description of its function." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Recommended practice: Enforce `baseline` for all application namespaces. Use `audit`/`warn` at `restricted` to surface work needed to move workloads to the stricter profile without breaking them.
-</Callout>
+> **lightbulb** Recommended practice: Enforce `baseline` for all application namespaces. Use `audit`/`warn` at `restricted` to surface work needed to move workloads to the stricter profile without breaking them.
 
 ## Applying Pod Security Standards with namespace labels
 

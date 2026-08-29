@@ -11,9 +11,7 @@ The term “open source” may have been popularized in 1998, but collaborative 
 In the 1950s, software was typically bundled with hardware by universities and corporations. Users had access to the full source code, enabling them to fix bugs or add features.\
 One pioneering example was Grace Murray Hopper’s A0 compiler tool. Soon after, UNIVAC’s Burbank division released its A2 system with source code, inviting community feedback and iterative improvements.
 
-<Frame>
-  ![The image features a diagram with a circular arrow symbol and a yellow card labeled "A-2 System" with the word "Iterated" below it. It appears to be related to the origins of open source software.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882520/notes-assets/images/Open-Source-for-Beginners-Origins-of-open-source-software/circular-arrow-a2-system-diagram.jpg)
-</Frame>
+![The image features a diagram with a circular arrow symbol and a yellow card labeled "A-2 System" with the word "Iterated" below it. It appears to be related to the origins of open source software.](https://kodekloud.com/kk-media/image/upload/v1752882520/notes-assets/images/Open-Source-for-Beginners-Origins-of-open-source-software/circular-arrow-a2-system-diagram.jpg)
 
 Collaboration among academic and research institutions flourished, with source code freely exchanged under principles of openness and cooperation.
 
@@ -21,38 +19,28 @@ Collaboration among academic and research institutions flourished, with source c
 
 The launch of [ARPANET](https://en.wikipedia.org/wiki/ARPANET) in the late 1960s accelerated software sharing across geographically dispersed teams. Researchers sent patches and enhancements over the network, solidifying the notion of distributed development.
 
-<Frame>
-  ![The image illustrates the origins of open source software, showing three interconnected buildings symbolizing collaboration, with a focus on openness and cooperation. It includes a timeline with options for different eras, highlighting the 1950s.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882522/notes-assets/images/Open-Source-for-Beginners-Origins-of-open-source-software/open-source-software-origins-timeline.jpg)
-</Frame>
+![The image illustrates the origins of open source software, showing three interconnected buildings symbolizing collaboration, with a focus on openness and cooperation. It includes a timeline with options for different eras, highlighting the 1950s.](https://kodekloud.com/kk-media/image/upload/v1752882522/notes-assets/images/Open-Source-for-Beginners-Origins-of-open-source-software/open-source-software-origins-timeline.jpg)
 
 ## Commercialization and the Rise of UNIX (1970s)
 
 As computing grew more sophisticated in the 1970s, software began to be marketed as a standalone product. AT\&T released the [UNIX](https://en.wikipedia.org/wiki/Unix) operating system to government agencies and academic sites, but each new version carried a fee and forbade modification or redistribution of its source.
 
-<Frame>
-  ![The image is a timeline related to the origins of open source software, highlighting "The Rise of Unix" with AT\&T, government, UNIX, and researchers involved.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882523/notes-assets/images/Open-Source-for-Beginners-Origins-of-open-source-software/open-source-software-unix-timeline.jpg)
-</Frame>
+![The image is a timeline related to the origins of open source software, highlighting "The Rise of Unix" with AT\&T, government, UNIX, and researchers involved.](https://kodekloud.com/kk-media/image/upload/v1752882523/notes-assets/images/Open-Source-for-Beginners-Origins-of-open-source-software/open-source-software-unix-timeline.jpg)
 
 ## The Free Software Movement and Copyleft (1980s)
 
 Reacting to proprietary restrictions, Richard Stallman launched the [GNU Project](https://en.wikipedia.org/wiki/GNU_Project) in 1983 to build a free, Unix-compatible operating system. He also founded the [Free Software Foundation](https://en.wikipedia.org/wiki/Free_Software_Foundation) and introduced **Copyleft**, a licensing model that requires derivative works to remain freely available.
 
-<Callout icon="lightbulb">
-  Copyleft ensures that any modifications or extensions to the software must also be distributed under the same free license.
-</Callout>
+> **lightbulb** Copyleft ensures that any modifications or extensions to the software must also be distributed under the same free license.
 
-<Frame>
-  ![The image is a slide titled "Origins of Open Source Software," highlighting "FSF and GNU" with a drawing of a person and the FSF logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882524/notes-assets/images/Open-Source-for-Beginners-Origins-of-open-source-software/origins-of-open-source-software-fsf-gnu.jpg)
-</Frame>
+![The image is a slide titled "Origins of Open Source Software," highlighting "FSF and GNU" with a drawing of a person and the FSF logo.](https://kodekloud.com/kk-media/image/upload/v1752882524/notes-assets/images/Open-Source-for-Beginners-Origins-of-open-source-software/origins-of-open-source-software-fsf-gnu.jpg)
 
 ## Linux Kernel and the Cathedral & the Bazaar (1991–1998)
 
 In 1991, Linus Torvalds released the [Linux kernel](https://en.wikipedia.org/wiki/Linux_kernel) under a permissive model. By February 1992, it was relicensed under the [GNU General Public License (GPL)](https://en.wikipedia.org/wiki/GNU_General_Public_License), cementing its open source status.\
 Eric S. Raymond’s 1997 essay and subsequent book *The Cathedral and the Bazaar* examined hacker-driven development, inspiring a more structured approach to community collaboration.
 
-<Frame>
-  ![The image is a slide titled "Origins of Open Source Software," highlighting the year 1998 with a reference to Eric S. Raymond and his work "The Cathedral & the Bazaar."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882525/notes-assets/images/Open-Source-for-Beginners-Origins-of-open-source-software/origins-open-source-software-1998.jpg)
-</Frame>
+![The image is a slide titled "Origins of Open Source Software," highlighting the year 1998 with a reference to Eric S. Raymond and his work "The Cathedral & the Bazaar."](https://kodekloud.com/kk-media/image/upload/v1752882525/notes-assets/images/Open-Source-for-Beginners-Origins-of-open-source-software/origins-open-source-software-1998.jpg)
 
 By 1998, the phrase “Open Source” was coined to emphasize commercial viability alongside freedom. Businesses began investing in open source projects, recognizing both sustainability and innovation benefits.
 
@@ -74,6 +62,4 @@ By 1998, the phrase “Open Source” was coined to emphasize commercial viabili
 * [The Cathedral and the Bazaar (PDF)](https://www.catb.org/~esr/writings/cathedral-bazaar/)
 * [Free Software Foundation](https://www.fsf.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/121c38d9-29cb-4995-83f5-867a9447b3ec/lesson/c995a837-f006-41ad-9f2f-cba454919173" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/121c38d9-29cb-4995-83f5-867a9447b3ec/lesson/c995a837-f006-41ad-9f2f-cba454919173)

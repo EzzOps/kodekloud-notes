@@ -38,13 +38,9 @@ Applying updates or security hotfixes directly on running servers may work at sm
 
 Automation tools like [Ansible](https://www.ansible.com/) mitigate some risks by orchestrating parallel updates. However, since servers still mutate in place, drift can persist.
 
-<Frame>
-  ![The image illustrates a "Mutable Infrastructure" setup using Ansible, showing a central Ansible logo connected to multiple server and database icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878645/notes-assets/images/HashiCorp-Packer-Mutable-Infrastructure/mutable-infrastructure-ansible-setup.jpg)
-</Frame>
+![The image illustrates a "Mutable Infrastructure" setup using Ansible, showing a central Ansible logo connected to multiple server and database icons.](https://kodekloud.com/kk-media/image/upload/v1752878645/notes-assets/images/HashiCorp-Packer-Mutable-Infrastructure/mutable-infrastructure-ansible-setup.jpg)
 
-<Callout icon="triangle-alert">
-  Relying solely on mutable operations can lead to untracked changes and compliance issues due to hidden configuration drift.
-</Callout>
+> **triangle-alert** Relying solely on mutable operations can lead to untracked changes and compliance issues due to hidden configuration drift.
 
 ## Comparing Mutable vs Immutable Infrastructure
 
@@ -55,9 +51,7 @@ Automation tools like [Ansible](https://www.ansible.com/) mitigate some risks by
 | Recovery         | Rollbacks can be error-prone  | Quick rollback by redeploying a known-good image |
 | Tooling examples | Ansible, Chef, Puppet         | HashiCorp Packer, Docker, Kubernetes, Terraform  |
 
-<Callout icon="lightbulb">
-  Immutable infrastructure patterns use tools like Packer to bake golden images, eliminating in-place mutations and ensuring consistency across environments.
-</Callout>
+> **lightbulb** Immutable infrastructure patterns use tools like Packer to bake golden images, eliminating in-place mutations and ensuring consistency across environments.
 
 ## References
 
@@ -65,6 +59,4 @@ Automation tools like [Ansible](https://www.ansible.com/) mitigate some risks by
 * [Ansible Documentation](https://docs.ansible.com/)
 * [Immutable Infrastructure Patterns](https://martinfowler.com/bliki/ImmutableServer.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-packer/module/88bc689f-1e45-49d8-887c-cb44923b3390/lesson/ae6599b0-7205-4b81-95d3-e0a0790739c5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-packer/module/88bc689f-1e45-49d8-887c-cb44923b3390/lesson/ae6599b0-7205-4b81-95d3-e0a0790739c5)

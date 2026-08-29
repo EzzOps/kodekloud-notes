@@ -48,9 +48,7 @@ This error occurs because Rust expects an expression in that context, not a stat
 
 Expressions, on the other hand, evaluate to a value. Nearly all Rust code is made up of expressions, including arithmetic operations, function calls, and code blocks that yield values.
 
-<Frame>
-  ![The image explains that expressions evaluate to a value, unlike statements, and includes a Venn diagram showing the overlap between arithmetic operations and function calls.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883898/notes-assets/images/Rust-Programming-Statements-and-Expressions/expressions-statements-venn-diagram.jpg)
-</Frame>
+![The image explains that expressions evaluate to a value, unlike statements, and includes a Venn diagram showing the overlap between arithmetic operations and function calls.](https://kodekloud.com/kk-media/image/upload/v1752883898/notes-assets/images/Rust-Programming-Statements-and-Expressions/expressions-statements-venn-diagram.jpg)
 
 ### Arithmetic Expressions
 
@@ -69,9 +67,7 @@ Here, the result of the arithmetic operation is computed and stored in the varia
 
 In Rust, code blocks delimited by curly braces `{}` can serve as expressions if they yield a value. The return value of a block is determined by its last expression, provided the expression is not terminated by a semicolon.
 
-<Frame>
-  ![The image explains that in Rust, code blocks in "" can be expressions if they yield a value, and the block's value is the last expression inside it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883899/notes-assets/images/Rust-Programming-Statements-and-Expressions/rust-code-blocks-expressions.jpg)
-</Frame>
+![The image explains that in Rust, code blocks in "" can be expressions if they yield a value, and the block's value is the last expression inside it.](https://kodekloud.com/kk-media/image/upload/v1752883899/notes-assets/images/Rust-Programming-Statements-and-Expressions/rust-code-blocks-expressions.jpg)
 
 For example, consider this code where the block evaluates to `4` because the last expression `x + 1` does not have a semicolon:
 
@@ -92,9 +88,7 @@ Note that including a semicolon after `x + 1` would convert the expression into 
 
 Rust's control flow constructs, such as `if` and `match`, are also expressions because they yield a value based on the branch that is executed. This feature enables these constructs to be used in value contexts.
 
-<Frame>
-  ![The image illustrates "Control Flow Constructs as Expressions" with "if" and "match" highlighted, and a note stating they can be used where a value is expected.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883900/notes-assets/images/Rust-Programming-Statements-and-Expressions/control-flow-constructs-expressions.jpg)
-</Frame>
+![The image illustrates "Control Flow Constructs as Expressions" with "if" and "match" highlighted, and a note stating they can be used where a value is expected.](https://kodekloud.com/kk-media/image/upload/v1752883900/notes-assets/images/Rust-Programming-Statements-and-Expressions/control-flow-constructs-expressions.jpg)
 
 For example, an `if` expression can evaluate to different values depending on the condition:
 
@@ -112,16 +106,10 @@ Similarly, the `match` expression evaluates patterns and assigns the correspondi
 
 Understanding the difference between statements and expressions is fundamental to mastering Rust programming. Statements perform actions without returning values, whereas expressions evaluate to values and can be used where a value is required. Mastering these concepts leads to more concise and efficient code.
 
-<Frame>
-  ![The image is a summary slide about Rust programming, highlighting the importance of understanding statements and expressions, their differences, and how this knowledge improves code quality.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883901/notes-assets/images/Rust-Programming-Statements-and-Expressions/rust-programming-statements-expressions-summary.jpg)
-</Frame>
+![The image is a summary slide about Rust programming, highlighting the importance of understanding statements and expressions, their differences, and how this knowledge improves code quality.](https://kodekloud.com/kk-media/image/upload/v1752883901/notes-assets/images/Rust-Programming-Statements-and-Expressions/rust-programming-statements-expressions-summary.jpg)
 
-<Callout icon="lightbulb">
-  Mastering statements and expressions lays a strong foundation for advanced Rust programming and enables you to write more expressive and higher quality code.
-</Callout>
+> **lightbulb** Mastering statements and expressions lays a strong foundation for advanced Rust programming and enables you to write more expressive and higher quality code.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/7ec396a4-7aea-4d77-abd2-48f4cee7fd94/lesson/89f96c8d-0254-4551-8d75-3ac0f45fe58e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/7ec396a4-7aea-4d77-abd2-48f4cee7fd94/lesson/89f96c8d-0254-4551-8d75-3ac0f45fe58e)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/rust/module/7ec396a4-7aea-4d77-abd2-48f4cee7fd94/lesson/01416b40-113b-4042-a701-9d2f08bfb56b" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/rust/module/7ec396a4-7aea-4d77-abd2-48f4cee7fd94/lesson/01416b40-113b-4042-a701-9d2f08bfb56b)

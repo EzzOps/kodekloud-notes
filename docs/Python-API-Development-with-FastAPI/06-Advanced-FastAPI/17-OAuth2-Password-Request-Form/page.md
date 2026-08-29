@@ -76,9 +76,7 @@ def login(user_credentials: OAuth2PasswordRequestForm = Depends(), db: Session =
     # Additional token generation logic can be implemented here.
 ```
 
-<Callout icon="lightbulb">
-  When testing this endpoint, ensure that the credentials are sent as form data. The expected form fields are "username" (which can be an email) and "password".
-</Callout>
+> **lightbulb** When testing this endpoint, ensure that the credentials are sent as form data. The expected form fields are "username" (which can be an email) and "password".
 
 ## Testing the Endpoint
 
@@ -128,9 +126,7 @@ An example successful response might look like:
 }
 ```
 
-<Callout icon="lightbulb">
-  Using `OAuth2PasswordRequestForm` simplifies handling credentials by automating the extraction of form data. This built-in functionality is aligned with FastAPI's recommended practices and reduces the need for custom parsing.
-</Callout>
+> **lightbulb** Using `OAuth2PasswordRequestForm` simplifies handling credentials by automating the extraction of form data. This built-in functionality is aligned with FastAPI's recommended practices and reduces the need for custom parsing.
 
 ## Summary
 
@@ -142,6 +138,4 @@ By integrating `OAuth2PasswordRequestForm`, we streamline the authentication pro
 
 This updated approach simplifies the endpoint design and makes your API more intuitive for clients using form-based authentication.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/d19f446f-2cf4-423d-a103-b14c18bed2b8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/d19f446f-2cf4-423d-a103-b14c18bed2b8)

@@ -12,9 +12,7 @@ In Kubernetes, a Deployment is a controller that creates and manages Pods. You s
 
 In contrast, OpenShift supports both standard Kubernetes Deployments and a native DeploymentConfig. The diagram below illustrates the differences: the top left depicts a standard Kubernetes Deployment, while the bottom right represents an OpenShift-specific DeploymentConfig using a Custom Resource Definition (CRD) operator.
 
-<Frame>
-  ![The image compares "Deployment" and "Deployment Config" in Kubernetes, highlighting their roles in managing pods, specifying container specs, and handling replicas or configuration changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882592/notes-assets/images/OpenShift-4-Deployment-Config-vs-Kubernetes-Deployment/kubernetes-deployment-vs-config-comparison.jpg)
-</Frame>
+![The image compares "Deployment" and "Deployment Config" in Kubernetes, highlighting their roles in managing pods, specifying container specs, and handling replicas or configuration changes.](https://kodekloud.com/kk-media/image/upload/v1752882592/notes-assets/images/OpenShift-4-Deployment-Config-vs-Kubernetes-Deployment/kubernetes-deployment-vs-config-comparison.jpg)
 
 ## YAML Manifest Examples
 
@@ -63,9 +61,7 @@ spec:
         - containerPort: 8080
 ```
 
-<Callout icon="lightbulb">
-  Both objects act as controllers for Pods. By specifying a replica count (such as 1, 3, or 10), the respective controllers ensure that the desired number of Pods is always running.
-</Callout>
+> **lightbulb** Both objects act as controllers for Pods. By specifying a replica count (such as 1, 3, or 10), the respective controllers ensure that the desired number of Pods is always running.
 
 ## Key Differences
 
@@ -88,9 +84,7 @@ While both the Kubernetes Deployment and OpenShift DeploymentConfig manage repli
 * In DeploymentConfigs, container images can be updated directly within the manifest. This allows for rapid upgrades or configuration adjustments.
 * In contrast, Kubernetes Deployments use a rolling update strategy. This method provides a safer transition between different image versions by gradually updating the pods.
 
-<Callout icon="lightbulb">
-  Red Hat OpenShift documentation advises using standard Kubernetes Deployments unless you require the additional features provided by DeploymentConfigs.
-</Callout>
+> **lightbulb** Red Hat OpenShift documentation advises using standard Kubernetes Deployments unless you require the additional features provided by DeploymentConfigs.
 
 ## Conclusion
 
@@ -104,6 +98,4 @@ For further reading, consider exploring:
 
 By tailoring the deployment strategy to your specific needs, you can enhance the performance and maintainability of your applications in any container orchestration environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/3200131b-dec7-4422-9e05-68c751bc4213/lesson/d519ce74-ac32-4807-9f0d-b26bba7519b1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/3200131b-dec7-4422-9e05-68c751bc4213/lesson/d519ce74-ac32-4807-9f0d-b26bba7519b1)

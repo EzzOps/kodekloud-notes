@@ -18,7 +18,7 @@ For example:
 * **Container Services (e.g., ECS, EKS):** Security responsibilities are more evenly distributed.
 * **Managed Services (e.g., Lambda):** AWS manages most security aspects on your behalf.
 
-![The image illustrates the AWS Shared Responsibility Model, showing the division of security responsibilities between AWS and the customer across different services like Amazon EC2, Amazon RDS, AWS S3, AWS KMS, and DynamoDB. It highlights varying levels of customer responsibility and customization from infrastructure to managed services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864045/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-shared-responsibility-model.jpg)
+![The image illustrates the AWS Shared Responsibility Model, showing the division of security responsibilities between AWS and the customer across different services like Amazon EC2, Amazon RDS, AWS S3, AWS KMS, and DynamoDB. It highlights varying levels of customer responsibility and customization from infrastructure to managed services.](https://kodekloud.com/kk-media/image/upload/v1752864045/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-shared-responsibility-model.jpg)
 
 ***
 
@@ -33,7 +33,7 @@ Imagine a rapidly growing startup migrating its infrastructure to AWS. The Chief
 
 The correct interpretation is option 1: AWS secures the underlying infrastructure, while you manage security within your environment.
 
-![The image presents a scenario about a startup migrating to AWS, focusing on understanding the AWS Shared Responsibility Model, with four options describing different responsibility distributions between AWS and customers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864046/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-shared-responsibility-model-startup.jpg)
+![The image presents a scenario about a startup migrating to AWS, focusing on understanding the AWS Shared Responsibility Model, with four options describing different responsibility distributions between AWS and customers.](https://kodekloud.com/kk-media/image/upload/v1752864046/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-shared-responsibility-model-startup.jpg)
 
 ***
 
@@ -41,7 +41,7 @@ The correct interpretation is option 1: AWS secures the underlying infrastructur
 
 Amazon EC2, AWS’s virtual machine service, is a key component of your compute environment. A common practice is to use a bastion host (or jump box) to manage remote access securely. In basic setups, an EC2 instance located in a public subnet uses a bastion host secured by a security group that allows inbound SSH (port 22). IAM roles further restrict access, granting specific permissions to services like CloudTrail and S3.
 
-![The image is a diagram of an AWS architecture featuring a bastion host within a security group, connected to Amazon S3, AWS CloudTrail, and an EC2 instance. It illustrates the use of AWS roles and a public subnet for secure access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864048/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-architecture-bastion-host-diagram.jpg)
+![The image is a diagram of an AWS architecture featuring a bastion host within a security group, connected to Amazon S3, AWS CloudTrail, and an EC2 instance. It illustrates the use of AWS roles and a public subnet for secure access.](https://kodekloud.com/kk-media/image/upload/v1752864048/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-architecture-bastion-host-diagram.jpg)
 
 When implementing bastion hosts, consider these best practices:
 
@@ -60,7 +60,7 @@ An e-commerce company deploying a multi-tier application on EC2 is evaluating th
 
 Option 1 is the most secure and resilient, ensuring that only defined access points provide a pathway to private resources.
 
-![The image presents a scenario where an e-commerce company is considering different approaches to secure administrative access to application servers using a bastion host. It lists four options for deploying the bastion host to ensure security and resilience.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864049/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ecommerce-bastion-host-security-options.jpg)
+![The image presents a scenario where an e-commerce company is considering different approaches to secure administrative access to application servers using a bastion host. It lists four options for deploying the bastion host to ensure security and resilience.](https://kodekloud.com/kk-media/image/upload/v1752864049/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ecommerce-bastion-host-security-options.jpg)
 
 ***
 
@@ -75,7 +75,7 @@ Secure key pair management is crucial when deploying EC2 instances across multip
 
 Option 2 is best practice. Using unique key pairs per region with centralized, encrypted storage not only separates keys but also enhances access control and accountability.
 
-![The image presents a scenario where a financial institution is deploying an application on EC2 instances and is considering best practices for managing EC2 key pairs. It lists four approaches for securely managing these key pairs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864051/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ec2-key-pairs-management-best-practices.jpg)
+![The image presents a scenario where a financial institution is deploying an application on EC2 instances and is considering best practices for managing EC2 key pairs. It lists four approaches for securely managing these key pairs.](https://kodekloud.com/kk-media/image/upload/v1752864051/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ec2-key-pairs-management-best-practices.jpg)
 
 > **lightbulb** In many deployments, a dedicated key pair is used during initial setup. Afterward, assign each user their unique key pair to enforce one-to-one accountability.
 
@@ -94,11 +94,11 @@ For instance, a healthcare company managing critical applications with sensitive
 
 The correct answer is option 2. With Systems Manager, secure access is managed without the traditional pitfalls of jump boxes, thereby reducing both administrative overhead and exposure risk.
 
-![The image is a diagram illustrating the architecture of an AWS EC2 setup, showing components like AWS CLI, AWS Console, AWS IAM, Amazon CloudWatch, Amazon S3, and a VPC with security groups. It depicts the flow of interactions between an admin user and these AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864052/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-ec2-architecture-diagram.jpg)
+![The image is a diagram illustrating the architecture of an AWS EC2 setup, showing components like AWS CLI, AWS Console, AWS IAM, Amazon CloudWatch, Amazon S3, and a VPC with security groups. It depicts the flow of interactions between an admin user and these AWS services.](https://kodekloud.com/kk-media/image/upload/v1752864052/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-ec2-architecture-diagram.jpg)
 
 Additional benefits include integration with AWS Identity Center (formerly Single Sign-On) and detailed role-based permissions.
 
-![The image is a diagram illustrating an AWS cloud architecture, showing the interaction between users, a browser, and various AWS services like EC2 instances, VPCs, and AWS System Manager within an organization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864053/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-cloud-architecture-diagram.jpg)
+![The image is a diagram illustrating an AWS cloud architecture, showing the interaction between users, a browser, and various AWS services like EC2 instances, VPCs, and AWS System Manager within an organization.](https://kodekloud.com/kk-media/image/upload/v1752864053/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-cloud-architecture-diagram.jpg)
 
 ***
 
@@ -113,11 +113,11 @@ For applications utilizing DynamoDB, it is imperative to avoid embedding AWS cre
 
 Option 3 is best practice, as it uses AWS’s built-in mechanism to securely provision temporary credentials without hardcoding sensitive information.
 
-![The image presents a scenario about securely accessing DynamoDB from EC2 instances, with four options for best practices. Option 3 suggests using EC2 instance roles to grant necessary permissions without hardcoding AWS credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864054/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/dynamodb-ec2-access-best-practices.jpg)
+![The image presents a scenario about securely accessing DynamoDB from EC2 instances, with four options for best practices. Option 3 suggests using EC2 instance roles to grant necessary permissions without hardcoding AWS credentials.](https://kodekloud.com/kk-media/image/upload/v1752864054/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/dynamodb-ec2-access-best-practices.jpg)
 
 A supporting diagram demonstrates an EC2 instance with an attached IAM role that uses the Security Token Service (STS) to provide temporary credentials for interacting with DynamoDB.
 
-![The image is a diagram showing the interaction between Amazon EC2, IAM roles, and DynamoDB, illustrating the use of STS temporary credentials for read-only access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864055/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ec2-iam-dynamodb-sts-diagram.jpg)
+![The image is a diagram showing the interaction between Amazon EC2, IAM roles, and DynamoDB, illustrating the use of STS temporary credentials for read-only access.](https://kodekloud.com/kk-media/image/upload/v1752864055/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ec2-iam-dynamodb-sts-diagram.jpg)
 
 ***
 
@@ -132,7 +132,7 @@ For workloads running outside AWS, AWS IAM Roles Anywhere offers a solution for 
 
 Option 2 is recommended. Registering a trusted certificate authority establishes a secure trust relationship, allowing external workloads to obtain temporary credentials without risking exposure through long-term, static keys.
 
-![The image presents a scenario where a global e-commerce company seeks to implement AWS IAM Roles Anywhere for secure credential management, with four suggested approaches for integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864056/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-iam-roles-anywhere-integration.jpg)
+![The image presents a scenario where a global e-commerce company seeks to implement AWS IAM Roles Anywhere for secure credential management, with four suggested approaches for integration.](https://kodekloud.com/kk-media/image/upload/v1752864056/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-iam-roles-anywhere-integration.jpg)
 
 ***
 
@@ -143,7 +143,7 @@ Understanding the difference between public and private subnets is essential whe
 * **Public Subnets:** These subnets have a route directing 0.0.0.0/0 traffic to an Internet Gateway (IGW), and instances here usually receive a public IP address.
 * **Private Subnets:** In these subnets, traffic does not route directly to an IGW; rather, it passes through a NAT gateway or NAT instance for internet access.
 
-![The image is a diagram of an AWS EC2 setup, showing a VPC with two availability zones, each containing an EC2 instance, connected to an internet gateway and a main route table.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864058/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-ec2-setup-diagram.jpg)
+![The image is a diagram of an AWS EC2 setup, showing a VPC with two availability zones, each containing an EC2 instance, connected to an internet gateway and a main route table.](https://kodekloud.com/kk-media/image/upload/v1752864058/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-ec2-setup-diagram.jpg)
 
 For a startup deploying multiple EC2 instances, best practices include:
 
@@ -151,7 +151,7 @@ For a startup deploying multiple EC2 instances, best practices include:
 * Regularly update operating systems and software patches.
 * Avoid practices such as storing sensitive data on the root volume or using the root user for day-to-day operations.
 
-![The image presents a scenario about a startup deploying EC2 instances and lists four practices to enhance their security, including disabling unnecessary traffic rules and applying updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864059/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/startup-ec2-security-practices.jpg)
+![The image presents a scenario about a startup deploying EC2 instances and lists four practices to enhance their security, including disabling unnecessary traffic rules and applying updates.](https://kodekloud.com/kk-media/image/upload/v1752864059/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/startup-ec2-security-practices.jpg)
 
 ***
 
@@ -159,7 +159,7 @@ For a startup deploying multiple EC2 instances, best practices include:
 
 To mitigate threats like DDoS attacks, consider re-evaluating your routing strategies. Instead of exposing every instance to the internet, you can place instances in private subnets and direct traffic through a NAT gateway or NAT instance. This strategy minimizes your public exposure and significantly enhances security.
 
-![The image is a diagram of an AWS EC2 setup with two availability zones, each containing public and private subnets for web and database servers, connected through a security group and an internet gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864060/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-ec2-setup-diagram-subnets.jpg)
+![The image is a diagram of an AWS EC2 setup with two availability zones, each containing public and private subnets for web and database servers, connected through a security group and an internet gateway.](https://kodekloud.com/kk-media/image/upload/v1752864060/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-ec2-setup-diagram-subnets.jpg)
 
 ***
 
@@ -170,7 +170,7 @@ Data stored on EBS volumes must be secured, as these volumes are not encrypted b
 * Enable encryption when creating your EBS volume.
 * Choose between AWS-managed keys or customer-managed keys via AWS KMS.
 
-![The image presents a scenario where a healthcare company needs to encrypt data on EBS volumes attached to EC2 instances, with four suggested steps for ensuring encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864061/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/healthcare-ec2-ebs-encryption-steps.jpg)
+![The image presents a scenario where a healthcare company needs to encrypt data on EBS volumes attached to EC2 instances, with four suggested steps for ensuring encryption.](https://kodekloud.com/kk-media/image/upload/v1752864061/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/healthcare-ec2-ebs-encryption-steps.jpg)
 
 Leveraging built-in encryption minimizes operational overhead and avoids modifying application-level code to handle encryption.
 
@@ -186,7 +186,7 @@ For workloads that demand high IOPS and low latency—such as an online multipla
 
 The key takeaway is that instance store volumes are designed for temporary data processing and lack persistence if the instance is interrupted.
 
-![The image presents a scenario about a gaming company using EC2 instance store volumes for temporary data processing, with four statements about the characteristics of these volumes. It asks which statement is accurate.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864062/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ec2-instance-store-volumes-gaming.jpg)
+![The image presents a scenario about a gaming company using EC2 instance store volumes for temporary data processing, with four statements about the characteristics of these volumes. It asks which statement is accurate.](https://kodekloud.com/kk-media/image/upload/v1752864062/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ec2-instance-store-volumes-gaming.jpg)
 
 ***
 
@@ -200,7 +200,7 @@ An Application Load Balancer (ALB) can manage SSL termination, which offloads th
 
 For example, a healthcare application can benefit from SSL termination at the load balancer to ensure that sensitive patient data is securely transmitted.
 
-![The image presents a scenario involving a healthcare company's web application on EC2 instances, discussing SSL termination options and asking which statement about SSL termination on EC2 is accurate. Five statements are provided for consideration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864064/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ssl-termination-ec2-healthcare-app.jpg)
+![The image presents a scenario involving a healthcare company's web application on EC2 instances, discussing SSL termination options and asking which statement about SSL termination on EC2 is accurate. Five statements are provided for consideration.](https://kodekloud.com/kk-media/image/upload/v1752864064/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ssl-termination-ec2-healthcare-app.jpg)
 
 The optimal configuration involves offloading SSL termination at the load balancer, ensuring secure transmission between client and load balancer while reducing the decryption burden on EC2 instances.
 
@@ -217,7 +217,7 @@ Ongoing patch management is critical for maintaining the security of your EC2 in
 
 The recommended approach uses Patch Manager to enforce patch baselines that secure both the operating system and application layers.
 
-![The image is a flowchart illustrating the integration of EC2 in task statements for security design, involving AWS Systems Manager, AWS Run Patch Baseline, and Maintenance Window, targeting Patch Groups A and B, and Tagged Instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864065/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ec2-integration-security-design-flowchart.jpg)
+![The image is a flowchart illustrating the integration of EC2 in task statements for security design, involving AWS Systems Manager, AWS Run Patch Baseline, and Maintenance Window, targeting Patch Groups A and B, and Tagged Instances.](https://kodekloud.com/kk-media/image/upload/v1752864065/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ec2-integration-security-design-flowchart.jpg)
 
 ***
 
@@ -230,11 +230,11 @@ Integrating AWS CloudTrail with CloudWatch is essential for monitoring API calls
 
 For instance, an e-commerce company can integrate these services to audit system activities without requiring instances to have public IP addresses.
 
-![The image presents a scenario involving an e-commerce company using AWS EC2 instances, considering integrating CloudTrail and CloudWatch for monitoring and auditing API calls. It lists five statements about the integration, asking which one accurately describes it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864066/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ecommerce-aws-ec2-cloudtrail-cloudwatch.jpg)
+![The image presents a scenario involving an e-commerce company using AWS EC2 instances, considering integrating CloudTrail and CloudWatch for monitoring and auditing API calls. It lists five statements about the integration, asking which one accurately describes it.](https://kodekloud.com/kk-media/image/upload/v1752864066/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864066/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ecommerce-aws-ec2-cloudtrail-cloudwatch.jpg)
 
 Option 2 is correct: CloudTrail captures API calls and streams logs to CloudWatch for real-time analysis.
 
-![The image is a comparison of AWS services: CloudTrail, AWS Config, and CloudWatch, highlighting their monitoring and change management features. Each service is described with its specific functions related to API, configuration, and performance monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864067/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-services-comparison-monitoring.jpg)
+![The image is a comparison of AWS services: CloudTrail, AWS Config, and CloudWatch, highlighting their monitoring and change management features. Each service is described with its specific functions related to API, configuration, and performance monitoring.](https://kodekloud.com/kk-media/image/upload/v1752864067/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-services-comparison-monitoring.jpg)
 
 ***
 
@@ -248,9 +248,9 @@ AWS EC2 integrates advanced security features such as UEFI Secure Boot and Nitro
 
 This process protects against unauthorized modifications during boot, thereby enhancing overall system security.
 
-![The image presents a scenario involving an e-commerce company using AWS EC2 instances, considering integrating CloudTrail and CloudWatch for monitoring and auditing API calls. It lists five statements about the integration, asking which one accurately describes it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864066/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ecommerce-aws-ec2-cloudtrail-cloudwatch.jpg)
+![The image presents a scenario involving an e-commerce company using AWS EC2 instances, considering integrating CloudTrail and CloudWatch for monitoring and auditing API calls. It lists five statements about the integration, asking which one accurately describes it.](https://kodekloud.com/kk-media/image/upload/v1752864066/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864066/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ecommerce-aws-ec2-cloudtrail-cloudwatch.jpg)
 
-![The image is a flowchart illustrating the UEFI Secure Boot and Measured Boot process with NitroTPM in EC2, showing steps from inserting a UEFI binary to booting the system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864068/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/uefi-secure-boot-flowchart-nitrotpm.jpg)
+![The image is a flowchart illustrating the UEFI Secure Boot and Measured Boot process with NitroTPM in EC2, showing steps from inserting a UEFI binary to booting the system.](https://kodekloud.com/kk-media/image/upload/v1752864068/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/uefi-secure-boot-flowchart-nitrotpm.jpg)
 
 ***
 
@@ -264,7 +264,7 @@ AWS Nitro Enclaves offer a way to process highly sensitive data within a highly 
 
 For instance, a healthcare company processing sensitive patient information can use Nitro Enclaves to meet strict compliance and data protection requirements.
 
-![The image presents a scenario where a healthcare company is considering using AWS Nitro Enclaves for secure data processing on EC2 instances, followed by multiple-choice statements about Nitro Enclaves.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864069/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-nitro-enclaves-secure-data-processing.jpg)
+![The image presents a scenario where a healthcare company is considering using AWS Nitro Enclaves for secure data processing on EC2 instances, followed by multiple-choice statements about Nitro Enclaves.](https://kodekloud.com/kk-media/image/upload/v1752864069/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/aws-nitro-enclaves-secure-data-processing.jpg)
 
 Option 2 is correct: Nitro Enclaves create a highly isolated environment that communicates with the parent instance only through a virtual socket.
 
@@ -289,7 +289,7 @@ For example, an animation studio looking to optimize rendering performance might
 
 Option 3 is correct—accelerated computing instances utilize hardware accelerators to efficiently handle complex computations such as graphics processing.
 
-![The image presents a scenario where an animation studio is considering using EC2 Accelerated Computing instances to speed up rendering times, followed by four statements describing potential benefits of these instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864071/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ec2-accelerated-computing-animation-studio.jpg)
+![The image presents a scenario where an animation studio is considering using EC2 Accelerated Computing instances to speed up rendering times, followed by four statements describing potential benefits of these instances.](https://kodekloud.com/kk-media/image/upload/v1752864071/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-1/ec2-accelerated-computing-animation-studio.jpg)
 
 ***
 

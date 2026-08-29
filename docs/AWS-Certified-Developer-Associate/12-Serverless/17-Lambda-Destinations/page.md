@@ -6,7 +6,7 @@ Lambda Destinations allows custom actions after asynchronous invocations in AWS 
 
 Lambda Destinations is a powerful feature within AWS Lambda that allows you to define custom actions immediately after an asynchronous invocation. Depending on whether a Lambda function completes successfully or fails, you can specify distinct workflows to handle each outcome. This flexibility not only enhances operational efficiency but also integrates seamlessly into broader event-driven architectures.
 
-![The image is a flowchart illustrating AWS Lambda with various triggers leading to a Lambda function, which then branches into "OnSuccess" and "OnFailure" outcomes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859527/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Destinations/aws-lambda-flowchart-triggers-outcomes.jpg)
+![The image is a flowchart illustrating AWS Lambda with various triggers leading to a Lambda function, which then branches into "OnSuccess" and "OnFailure" outcomes.](https://kodekloud.com/kk-media/image/upload/v1752859527/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Destinations/aws-lambda-flowchart-triggers-outcomes.jpg)
 
 ## How Lambda Destinations Works
 
@@ -23,7 +23,7 @@ After a Lambda function finishes executing, Lambda Destinations triggers differe
 * **Wide Integration:** Supported destination services include SQS, SNS, EventBridge, and the ability to trigger additional Lambda functions.
 * **Enhanced Context:** The destination event includes enriched information about the original invocation and its outcome, simplifying troubleshooting and complex workflow management.
 
-![The image lists four key points with icons: Asynchronous Invocations, Success and Failure Handling, Supported Destination Services, and Event Enrichment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859528/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Destinations/asynchronous-invocations-key-points.jpg)
+![The image lists four key points with icons: Asynchronous Invocations, Success and Failure Handling, Supported Destination Services, and Event Enrichment.](https://kodekloud.com/kk-media/image/upload/v1752859528/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Destinations/asynchronous-invocations-key-points.jpg)
 
 ## Use Cases
 

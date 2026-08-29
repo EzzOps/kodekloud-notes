@@ -91,9 +91,7 @@ Ephemeral reports are the same resource type used during admission reporting; th
 
 Migration note
 
-<Callout icon="lightbulb">
-  Prior to Kyverno v1.12 the temporary reports were named `BackgroundReport` / `ClusterBackgroundReport`. These were unified into `EphemeralReport` and `ClusterEphemeralReport` to simplify reporting semantics.
-</Callout>
+> **lightbulb** Prior to Kyverno v1.12 the temporary reports were named `BackgroundReport` / `ClusterBackgroundReport`. These were unified into `EphemeralReport` and `ClusterEphemeralReport` to simplify reporting semantics.
 
 Limitations and important considerations
 
@@ -113,9 +111,7 @@ Supported during background scans:
   <img alt="The image outlines limitations of background scanning, highlighting that matching on roles, cluster roles, or subjects, and using most request variables are not supported when the background is set to true." />
 </Frame>
 
-<Callout icon="warning">
-  If your policy uses `request.userInfo` or matches on `subjects`, set `spec.background: false` to prevent background-evaluation errors.
-</Callout>
+> **warning** If your policy uses `request.userInfo` or matches on `subjects`, set `spec.background: false` to prevent background-evaluation errors.
 
 Configuring the background scan interval
 

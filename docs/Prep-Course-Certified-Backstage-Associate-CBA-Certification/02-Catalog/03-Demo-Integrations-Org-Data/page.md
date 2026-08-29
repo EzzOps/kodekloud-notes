@@ -139,14 +139,12 @@ Example: after the provider runs, a GitHub team named `dev` becomes a Backstage 
 
 Troubleshooting
 
-<Callout icon="lightbulb">
-  If users or groups are not imported after configuring the provider, confirm that:
+> **lightbulb** If users or groups are not imported after configuring the provider, confirm that:
 
   * The `catalog.providers.githubOrg` configuration points to the correct GitHub organizations.
   * The GitHub integration token has the `read:org` scope.
   * The backend has been restarted so the provider can perform an initial scan (or manually trigger the provider run if your deployment supports it).
     You can also check backend logs for provider scheduling and any error messages.
-</Callout>
 
 Example scanned entity link metadata (reference)
 
@@ -166,8 +164,6 @@ Additional resources
 
 That covers importing organizational data from GitHub into Backstage. Once configured, the org provider keeps your catalog in sync according to the schedule you define so teams and users stay up to date.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/a0f304c9-fe03-4770-9ad0-a9c124022d00" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/a0f304c9-fe03-4770-9ad0-a9c124022d00)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/f46885a4-ee59-448f-aa0e-b13bca1bdbf3" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/f46885a4-ee59-448f-aa0e-b13bca1bdbf3)

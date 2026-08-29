@@ -56,9 +56,7 @@ Real-world examples: Postgres operators, Kafka, Redis, Prometheus operators, cer
   <img alt="The image is a guideline to use operators for continuous reconciliation, showing when to use them (e.g., lifecycle management, state reconciliation) and when to avoid them (e.g., multi-step workflows)." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Operators are best for long-lived, stateful responsibilities. If you only need to "create once and forget," prefer a composition or workflow instead.
-</Callout>
+> **lightbulb** Operators are best for long-lived, stateful responsibilities. If you only need to "create once and forget," prefer a composition or workflow instead.
 
 ***
 
@@ -107,9 +105,7 @@ Real-world examples: RDS provisioning, VPC and subnet management, S3 bucket life
   <img alt="The image is a presentation slide about Crossplane and its application in cloud resource provisioning, featuring real-world examples like Database-as-a-Service, VPC Provisioning, S3 Bucket Management, and IAM Role Automation. It mentions Crossplane as &#x22;infrastructure as K8s resources&#x22; with continuous cloud state reconciliation." />
 </Frame>
 
-<Callout icon="warning">
-  Do not replace an operator's runtime reconciliation responsibilities with Crossplane. Crossplane manages cloud resources; operators manage runtime application behavior and complex operational logic.
-</Callout>
+> **warning** Do not replace an operator's runtime reconciliation responsibilities with Crossplane. Crossplane manages cloud resources; operators manage runtime application behavior and complex operational logic.
 
 ***
 
@@ -190,6 +186,4 @@ Further reading and references:
 * [Argo CD](https://argo-cd.readthedocs.io/)
 * [Tekton](https://tekton.dev/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/689de854-3d43-42eb-be74-c5e26e6c349f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/689de854-3d43-42eb-be74-c5e26e6c349f)

@@ -6,9 +6,7 @@ This lesson demonstrates applying authorization policies in an Istio service mes
 
 In this lesson, we demonstrate how to apply authorization policies at both the namespace and workload levels in an Istio service mesh. These policies are essential for securing your applications by explicitly allowing or denying traffic.
 
-<Frame>
-  ![The image shows a Kiali Console dashboard displaying an overview of namespaces with details about applications, Istio configurations, and traffic status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879378/notes-assets/images/Istio-Service-Mesh-Demo-Authorization/kiali-console-dashboard-overview-namespaces.jpg)
-</Frame>
+![The image shows a Kiali Console dashboard displaying an overview of namespaces with details about applications, Istio configurations, and traffic status.](https://kodekloud.com/kk-media/image/upload/v1752879378/notes-assets/images/Istio-Service-Mesh-Demo-Authorization/kiali-console-dashboard-overview-namespaces.jpg)
 
 ## Step 1: Deny All Traffic in the Default Namespace
 
@@ -46,13 +44,9 @@ while sleep 0.01; do curl -s "http://${INGRESS_HOST}:${INGRESS_PORT}/productpage
 
 Check your product page application both in the browser and on the Kiali dashboard. You will observe that no traffic passes through and error messages related to RBAC access denial appear in the pod logs.
 
-<Frame>
-  ![The image shows a Kiali console interface displaying a service graph for a "productpage-v1" workload, with traffic metrics and pod status. The graph illustrates the flow of requests between different services, including "istio-ingressgateway," "reviews," and "details."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879380/notes-assets/images/Istio-Service-Mesh-Demo-Authorization/kiali-service-graph-productpage-v1.jpg)
-</Frame>
+![The image shows a Kiali console interface displaying a service graph for a "productpage-v1" workload, with traffic metrics and pod status. The graph illustrates the flow of requests between different services, including "istio-ingressgateway," "reviews," and "details."](https://kodekloud.com/kk-media/image/upload/v1752879380/notes-assets/images/Istio-Service-Mesh-Demo-Authorization/kiali-service-graph-productpage-v1.jpg)
 
-<Callout icon="lightbulb">
-  Examine the distributed traces in your tracing system; a dark red grouping of traces often highlights problematic traffic.
-</Callout>
+> **lightbulb** Examine the distributed traces in your tracing system; a dark red grouping of traces often highlights problematic traffic.
 
 ## Step 2: Enable Traffic for the Product Page
 
@@ -83,9 +77,7 @@ After applying this policy, refresh your browser. The product page should now lo
 
 Next, add further authorization policies to enable full application functionality.
 
-<Frame>
-  ![The image shows a Kiali Console interface displaying a versioned app graph for a microservices architecture, with nodes representing services and edges indicating HTTP traffic flow. On the right, there are traffic statistics and error rates for the services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879381/notes-assets/images/Istio-Service-Mesh-Demo-Authorization/kiali-console-microservices-graph.jpg)
-</Frame>
+![The image shows a Kiali Console interface displaying a versioned app graph for a microservices architecture, with nodes representing services and edges indicating HTTP traffic flow. On the right, there are traffic statistics and error rates for the services.](https://kodekloud.com/kk-media/image/upload/v1752879381/notes-assets/images/Istio-Service-Mesh-Demo-Authorization/kiali-console-microservices-graph.jpg)
 
 ### 3.1 Create the Details Viewer Policy
 
@@ -175,13 +167,9 @@ Once enabled, the entire application should operate as expected. The full produc
 
 Take a moment to review the overall Istio configuration. In the configuration section, you will see the global "allow nothing" policy applied across the mesh along with the specific viewer policies for each component.
 
-<Frame>
-  ![The image shows a Kiali console interface displaying a list of Istio configuration policies, specifically AuthorizationPolicies, within the default namespace. Each policy is listed with its name and configuration status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879383/notes-assets/images/Istio-Service-Mesh-Demo-Authorization/kiali-istio-authorization-policies.jpg)
-</Frame>
+![The image shows a Kiali console interface displaying a list of Istio configuration policies, specifically AuthorizationPolicies, within the default namespace. Each policy is listed with its name and configuration status.](https://kodekloud.com/kk-media/image/upload/v1752879383/notes-assets/images/Istio-Service-Mesh-Demo-Authorization/kiali-istio-authorization-policies.jpg)
 
-<Callout icon="triangle-alert">
-  Any traffic not explicitly allowed by the defined policies (such as POST requests or traffic from unrecognized sources) will be denied. This strict approach is critical for maintaining a robust security posture.
-</Callout>
+> **triangle-alert** Any traffic not explicitly allowed by the defined policies (such as POST requests or traffic from unrecognized sources) will be denied. This strict approach is critical for maintaining a robust security posture.
 
 ## Conclusion
 
@@ -194,6 +182,4 @@ For further reading on securing microservices, see:
 * [Kubernetes Security Best Practices](https://kubernetes.io/docs/concepts/security/)
 * [Istio Security Concepts](https://istio.io/latest/docs/concepts/security/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/e4a2171d-d190-4dc9-873e-a0dad6d3cb62/lesson/d6d220f1-dc39-4aff-b906-958afc319034" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/e4a2171d-d190-4dc9-873e-a0dad6d3cb62/lesson/d6d220f1-dc39-4aff-b906-958afc319034)

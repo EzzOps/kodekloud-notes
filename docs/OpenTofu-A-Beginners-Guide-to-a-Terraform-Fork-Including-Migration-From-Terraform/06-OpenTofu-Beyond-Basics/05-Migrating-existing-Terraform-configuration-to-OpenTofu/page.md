@@ -29,9 +29,7 @@ OpenTofu 1.6 is fully compatible with Terraform 1.6, making it easy to switch yo
 
 4. **Backup your Terraform state file**
 
-<Callout icon="lightbulb">
-  Always version-control or copy your `terraform.tfstate` before you begin.
-</Callout>
+> **lightbulb** Always version-control or copy your `terraform.tfstate` before you begin.
 
 ```bash theme={null}
 cp terraform.tfstate terraform.tfstate.backup
@@ -51,9 +49,7 @@ cp terraform.tfstate terraform.tfstate.backup
    ```
    Confirm that resources apply without drift before proceeding to production.
 
-<Frame>
-  ![The image outlines a six-step process for migrating existing Terraform configurations to OpenTofu, including preparing a disaster recovery plan, applying changes, installing OpenTofu, backing up state files, initializing OpenTofu, inspecting the plan, and testing changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882841/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Migrating-existing-Terraform-configuration-to-OpenTofu/terraform-to-opentofu-migration-process.jpg)
-</Frame>
+![The image outlines a six-step process for migrating existing Terraform configurations to OpenTofu, including preparing a disaster recovery plan, applying changes, installing OpenTofu, backing up state files, initializing OpenTofu, inspecting the plan, and testing changes.](https://kodekloud.com/kk-media/image/upload/v1752882841/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Migrating-existing-Terraform-configuration-to-OpenTofu/terraform-to-opentofu-migration-process.jpg)
 
 ## Getting Community Support
 
@@ -62,9 +58,7 @@ If you encounter issues during migration, leverage the OpenTofu community:
 * Join the [OpenTofu Slack](https://slack.opentofu.io) for real-time assistance.
 * Post in [GitHub Discussions](https://github.com/opentofu/opentofu/discussions) under “Q\&A.”
 
-<Frame>
-  ![The image is a diagram titled "Migrating Existing Terraform Configuration to OpenTofu," showing two options for support: OpenTofu Slack and GitHub Discussions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882843/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Migrating-existing-Terraform-configuration-to-OpenTofu/migrating-terraform-configuration-opentofu-diagram.jpg)
-</Frame>
+![The image is a diagram titled "Migrating Existing Terraform Configuration to OpenTofu," showing two options for support: OpenTofu Slack and GitHub Discussions.](https://kodekloud.com/kk-media/image/upload/v1752882843/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Migrating-existing-Terraform-configuration-to-OpenTofu/migrating-terraform-configuration-opentofu-diagram.jpg)
 
 ***
 
@@ -72,9 +66,7 @@ If you need to revert to Terraform—whether due to workflow preference or compa
 
 1. **Backup your OpenTofu state**
 
-<Callout icon="triangle-alert">
-  Skipping this step may lead to state loss. Always keep a backup.
-</Callout>
+> **triangle-alert** Skipping this step may lead to state loss. Always keep a backup.
 
 ```bash theme={null}
 cp terraform.tfstate terraform.tfstate.backup
@@ -96,9 +88,7 @@ cp terraform.tfstate terraform.tfstate.backup
    ```
    Ensure the rollback completes successfully before normal operations.
 
-<Frame>
-  ![The image outlines four steps for migrating back from OpenTofu to Terraform, including creating a backup, running terraform init, verifying the plan, and testing the rollback.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882843/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Migrating-existing-Terraform-configuration-to-OpenTofu/migrate-opentofu-to-terraform-steps.jpg)
-</Frame>
+![The image outlines four steps for migrating back from OpenTofu to Terraform, including creating a backup, running terraform init, verifying the plan, and testing the rollback.](https://kodekloud.com/kk-media/image/upload/v1752882843/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Migrating-existing-Terraform-configuration-to-OpenTofu/migrate-opentofu-to-terraform-steps.jpg)
 
 ***
 
@@ -110,13 +100,9 @@ When you discover a bug in OpenTofu—during migration or rollback—please file
 | Feature request (RFC)  | Rationale, proposed API changes                         |
 | Security vulnerability | Version details, impact analysis (use private channels) |
 
-<Callout icon="lightbulb">
-  Search existing issues first and follow the [issue templates](https://github.com/opentofu/opentofu/issues/new/choose).
-</Callout>
+> **lightbulb** Search existing issues first and follow the [issue templates](https://github.com/opentofu/opentofu/issues/new/choose).
 
-<Frame>
-  ![The image illustrates a migration from OpenTofu to Terraform due to a bug, featuring icons of both platforms and a screenshot of the OpenTofu GitHub issues page.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882845/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Migrating-existing-Terraform-configuration-to-OpenTofu/opentofu-terraform-migration-illustration.jpg)
-</Frame>
+![The image illustrates a migration from OpenTofu to Terraform due to a bug, featuring icons of both platforms and a screenshot of the OpenTofu GitHub issues page.](https://kodekloud.com/kk-media/image/upload/v1752882845/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Migrating-existing-Terraform-configuration-to-OpenTofu/opentofu-terraform-migration-illustration.jpg)
 
 ***
 
@@ -127,6 +113,4 @@ When you discover a bug in OpenTofu—during migration or rollback—please file
 * [OpenTofu GitHub Repository](https://github.com/opentofu/opentofu)
 * [Terraform Configuration Language](https://www.terraform.io/language)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/0317d56d-311e-4001-9698-4f5157f54210" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/0317d56d-311e-4001-9698-4f5157f54210)

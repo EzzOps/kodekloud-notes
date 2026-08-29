@@ -21,7 +21,7 @@ A fundamental concept in Route 53 is the hosted zone. A hosted zone is a contain
 * AWS reserves four dedicated name servers for that domain.
 * For any additional domain, such as fastcars.com, AWS allocates another distinct set of four name servers to manage its DNS records and rules.
 
-![The image illustrates the concept of hosted zones in Amazon Route 53, showing how DNS records are organized and allocated four nameservers by AWS for different domains.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865658/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Route-53/amazon-route53-hosted-zones-dns.jpg)
+![The image illustrates the concept of hosted zones in Amazon Route 53, showing how DNS records are organized and allocated four nameservers by AWS for different domains.](https://kodekloud.com/kk-media/image/upload/v1752865658/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Route-53/amazon-route53-hosted-zones-dns.jpg)
 
 > **lightbulb** * AWS Route 53 functions as both a DNS service and a domain registrar.
   * It delivers global coverage and is not confined to any specific region.

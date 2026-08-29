@@ -12,7 +12,7 @@ Event-driven architectures often need to handle external third-party calls as we
 
 Events can originate from various sources, including AWS services, custom applications (whether running on AWS or on-premises), and partner applications. All these events are directed to an event bus, which may be the default bus, a custom event bus, or a partner event bus. Rules associated with the bus then determine how events are processed and where they are routed.
 
-![The image is a diagram introducing Amazon EventBridge, showing how event sources like AWS services, custom apps, and microservices connect to event buses, which then use rules to route events to various targets such as AWS Lambda and Amazon SNS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859831/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-EventBridge-Introduction/amazon-eventbridge-diagram-routing-events.jpg)
+![The image is a diagram introducing Amazon EventBridge, showing how event sources like AWS services, custom apps, and microservices connect to event buses, which then use rules to route events to various targets such as AWS Lambda and Amazon SNS.](https://kodekloud.com/kk-media/image/upload/v1752859831/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-EventBridge-Introduction/amazon-eventbridge-diagram-routing-events.jpg)
 
 In the diagram above, observe that:
 
@@ -26,7 +26,7 @@ In the diagram above, observe that:
 
 The event bus serves as the entry point for data. It functions as a serverless data router that decouples event producers from event consumers. By ingesting data from various services and evaluating it against defined rules, the event bus routes events appropriately. This decoupling fosters improved reliability and scalability by allowing event sources and targets to operate independently.
 
-![The image is a diagram illustrating the components and workflow of AWS EventBridge Buses, including event sources, event buses, schema registry, rules, and targets like AWS Lambda and Amazon SNS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859832/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-EventBridge-Introduction/aws-eventbridge-bus-diagram.jpg)
+![The image is a diagram illustrating the components and workflow of AWS EventBridge Buses, including event sources, event buses, schema registry, rules, and targets like AWS Lambda and Amazon SNS.](https://kodekloud.com/kk-media/image/upload/v1752859832/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-EventBridge-Introduction/aws-eventbridge-bus-diagram.jpg)
 
 ### Components and Their Roles
 
@@ -38,19 +38,19 @@ AWS EventBridge comprises several key components:
 
 The diagram below illustrates the interaction between different AWS EventBridge components:
 
-![The image shows components of AWS EventBridge, including Event Bus, Pipes, Scheduler, and Schema, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859833/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-EventBridge-Introduction/aws-eventbridge-components-diagram.jpg)
+![The image shows components of AWS EventBridge, including Event Bus, Pipes, Scheduler, and Schema, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752859833/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-EventBridge-Introduction/aws-eventbridge-components-diagram.jpg)
 
 ### Pipes
 
 EventBridge Pipes create point-to-point integrations between event producers and consumers. Acting as an ETL (Extract, Transform, Load) tool, Pipes can filter, transform, enrich, or modify events before sending them to their targets. This minimizes the need for extensive custom code when developing event-driven applications.
 
-![The image illustrates the AWS EventBridge Pipes workflow, showing how events are pulled from various AWS services, filtered, and then sent to different AWS destinations for processing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859834/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-EventBridge-Introduction/aws-eventbridge-pipes-workflow.jpg)
+![The image illustrates the AWS EventBridge Pipes workflow, showing how events are pulled from various AWS services, filtered, and then sent to different AWS destinations for processing.](https://kodekloud.com/kk-media/image/upload/v1752859834/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-EventBridge-Introduction/aws-eventbridge-pipes-workflow.jpg)
 
 ### Scheduler
 
 The scheduler in EventBridge allows you to set up scheduled tasks and events. This feature is useful for automating tasks such as Auto Scaling, sending periodic notifications, or triggering other AWS services. Schedules can be defined using cron expressions, fixed-rate intervals, or specific dates and times.
 
-![The image is an illustration of the AWS EventBridge Scheduler, showing steps to create a schedule and set a schedule pattern using cron expressions, fixed rates, or specific dates and times.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859835/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-EventBridge-Introduction/aws-eventbridge-scheduler-illustration.jpg)
+![The image is an illustration of the AWS EventBridge Scheduler, showing steps to create a schedule and set a schedule pattern using cron expressions, fixed rates, or specific dates and times.](https://kodekloud.com/kk-media/image/upload/v1752859835/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-EventBridge-Introduction/aws-eventbridge-scheduler-illustration.jpg)
 
 When configuring a schedule, you define the following:
 
@@ -71,7 +71,7 @@ AWS EventBridge is versatile and supports numerous application architectures. Co
 * **Monitoring and Security:** Automatically respond to changes detected by CloudTrail, such as unexpected modifications to firewall configurations.
 * **Automation and Administration:** Route events to Lambda functions to automate administrative tasks, enabling real-time processing and operational efficiency.
 
-![The image outlines three common use cases for Amazon EventBridge: application integration, monitoring and security, and automation and workflow.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859836/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-EventBridge-Introduction/amazon-eventbridge-use-cases.jpg)
+![The image outlines three common use cases for Amazon EventBridge: application integration, monitoring and security, and automation and workflow.](https://kodekloud.com/kk-media/image/upload/v1752859836/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-EventBridge-Introduction/amazon-eventbridge-use-cases.jpg)
 
 > **lightbulb** Using EventBridge allows you to build scalable, loosely coupled architectures that can adapt to various patterns and integrations seamlessly.
 
@@ -84,7 +84,7 @@ When designing solutions with EventBridge, keep the following best practices in 
 * **Monitor Your Setup:** Leverage CloudWatch to track issues, performance bottlenecks, and failures in event processing.
 * **Implement Dead Letter Queues (DLQs):** DLQs capture events that encounter processing errors. This mechanism prevents data loss and enables further review and reprocessing of failed events.
 
-![The image outlines best practices for Amazon EventBridge, including using event patterns, creating custom event buses, monitoring with CloudWatch, and using dead-letter queues for failed events.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859837/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-EventBridge-Introduction/amazon-eventbridge-best-practices.jpg)
+![The image outlines best practices for Amazon EventBridge, including using event patterns, creating custom event buses, monitoring with CloudWatch, and using dead-letter queues for failed events.](https://kodekloud.com/kk-media/image/upload/v1752859837/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-EventBridge-Introduction/amazon-eventbridge-best-practices.jpg)
 
 > **triangle-alert** Dead letter queues (DLQs) are critical for ensuring that events unable to be processed due to errors are not lost, allowing for subsequent remediation or human intervention.
 

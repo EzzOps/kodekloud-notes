@@ -85,9 +85,7 @@ my_posts = [
 ]
 ```
 
-<Callout icon="lightbulb">
-  For enhanced readability and maintainability, consider using environment variables to store sensitive database credentials instead of hard-coding them.
-</Callout>
+> **lightbulb** For enhanced readability and maintainability, consider using environment variables to store sensitive database credentials instead of hard-coding them.
 
 ## Handling Connection Failures with a Retry Mechanism
 
@@ -131,9 +129,7 @@ my_posts = [
 ]
 ```
 
-<Callout icon="lightbulb">
-  Implementing a retry mechanism not only ensures your application waits for a stable connection but also provides resilience against transient network or service issues.
-</Callout>
+> **lightbulb** Implementing a retry mechanism not only ensures your application waits for a stable connection but also provides resilience against transient network or service issues.
 
 ## Important Note on Hard-Coded Credentials
 
@@ -148,9 +144,7 @@ For production-level applications, use environment variables or a configuration 
 
 With a robust database connection and proper error handling in place, you can now extend your application by executing more SQL commands and building API endpoints that interact seamlessly with your PostgreSQL database.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/77bf956d-7bb1-4492-b535-2274e8a998af" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/77bf956d-7bb1-4492-b535-2274e8a998af)
 
 
 # Setup App Database
@@ -163,9 +157,7 @@ In this guide, we integrate our PostgreSQL database with a Python/FastAPI applic
 
 Before diving into the application code, perform a quick cleanup. In earlier demonstrations, we worked with a "products" table. If this table is no longer needed, you can remove it by right-clicking the table in your database management tool and selecting "Delete" or "Drop." Otherwise, you may leave it intact—it won’t affect the FastAPI database integration.
 
-<Callout icon="lightbulb">
-  Ensure you are working with the designated FastAPI database. If you have multiple databases on your machine, ignore any unrelated entries and focus solely on your FastAPI-specific instance.
-</Callout>
+> **lightbulb** Ensure you are working with the designated FastAPI database. If you have multiple databases on your machine, ignore any unrelated entries and focus solely on your FastAPI-specific instance.
 
 ## Schema Design for the Posts Table
 
@@ -238,9 +230,7 @@ ORDER BY "id" ASC;
 
 After inserting data, you should see two entries in your database, confirming that the table is ready for further development.
 
-<Callout icon="lightbulb">
-  You can use your SQL management tool to insert sample data into the posts table, ensuring that the correct structure and constraints are applied.
-</Callout>
+> **lightbulb** You can use your SQL management tool to insert sample data into the posts table, ensuring that the correct structure and constraints are applied.
 
 ## Revisiting Previous SQL Operations
 
@@ -256,6 +246,4 @@ The database is now set up and ready to be used by your application. Moving forw
 
 For more information on PostgreSQL and FastAPI integration, consider exploring additional resources such as [FastAPI Documentation](https://fastapi.tiangolo.com/) and the [PostgreSQL Official Documentation](https://www.postgresql.org/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/b5f0588b-0aff-4a64-a7d6-8049bfcf98bd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/b5f0588b-0aff-4a64-a7d6-8049bfcf98bd)

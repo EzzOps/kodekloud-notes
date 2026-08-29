@@ -12,9 +12,7 @@ sudo dnf install https://releases.d1.glasskube.dev/glasskube_v0.14.0.rpm
 nix-shell -p glasskube
 ```
 
-<Callout icon="lightbulb">
-  Before running `glasskube bootstrap`, ensure your `kubeconfig` is pointed to the correct cluster context. Glasskube will install server-side components (the package operator) into the selected context.
-</Callout>
+> **lightbulb** Before running `glasskube bootstrap`, ensure your `kubeconfig` is pointed to the correct cluster context. Glasskube will install server-side components (the package operator) into the selected context.
 
 Explore the CLI commands:
 
@@ -96,11 +94,9 @@ Use this quick comparison to evaluate Glasskube for your team:
 * Glasskube releases and downloads: [https://releases.d1.glasskube.dev/](https://releases.d1.glasskube.dev/)
 * General GitOps resources: [https://www.gitops.tech/](https://www.gitops.tech/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/140a6ea0-1539-4d23-9aa6-0d07654a4526/lesson/d3a7578d-b239-48af-bded-d4fe039d4502" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/140a6ea0-1539-4d23-9aa6-0d07654a4526/lesson/d3a7578d-b239-48af-bded-d4fe039d4502)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/140a6ea0-1539-4d23-9aa6-0d07654a4526/lesson/4b52c5b3-817b-48d1-8e30-3103a4da690e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/140a6ea0-1539-4d23-9aa6-0d07654a4526/lesson/4b52c5b3-817b-48d1-8e30-3103a4da690e)
 
 
 # Helm
@@ -123,9 +119,7 @@ Helm’s templating engine uses the Go templating language to produce Kubernetes
   <img alt="The image is a diagram showing the &#x22;Templating Capabilities&#x22; of the &#x22;Go Templating Language,&#x22; highlighting its attributes such as &#x22;Reusable,&#x22; &#x22;Dynamic values,&#x22; along with challenges like &#x22;Troubleshooting&#x22; and &#x22;Awkward.&#x22;" />
 </Frame>
 
-<Callout icon="lightbulb">
-  Helm templates are evaluated client-side by the Helm CLI (unless using a server-side rendering plugin). Values come from `values.yaml`, from `-f` files, or from `--set` on the command line.
-</Callout>
+> **lightbulb** Helm templates are evaluated client-side by the Helm CLI (unless using a server-side rendering plugin). Values come from `values.yaml`, from `-f` files, or from `--set` on the command line.
 
 If you are new to Helm and want a structured walkthrough, Mumshad Mannambeth’s course "Helm for Beginners" is a commonly recommended resource.
 

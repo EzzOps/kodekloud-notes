@@ -14,7 +14,7 @@ Managing large-scale EC2 fleets demands clear identification, cost visibility, a
 
 AWS supports up to 50 key–value tags per resource. You can filter and manage these tags via the AWS CLI, SDKs, or the console for services like CloudWatch and Cost Explorer.
 
-![The image is a diagram illustrating AWS Tagging, showing how AWS CLI and AWS API interact with tags like "app = backend" and "app = frontend" for services like CloudWatch and AWS Billing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869088/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Mandatory-best-practice/aws-tagging-diagram-cli-api.jpg)
+![The image is a diagram illustrating AWS Tagging, showing how AWS CLI and AWS API interact with tags like "app = backend" and "app = frontend" for services like CloudWatch and AWS Billing.](https://kodekloud.com/kk-media/image/upload/v1752869088/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Mandatory-best-practice/aws-tagging-diagram-cli-api.jpg)
 
 ## Key Benefits of Tagging
 
@@ -49,7 +49,7 @@ For EC2 instances that should start and stop automatically, Alex adds:
 
 A Lambda function leverages these tags to schedule instance state changes.
 
-![The image outlines AWS tagging standards, including default tags like name and environment, and service-specific tags for EC2 and Lambda.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869089/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Mandatory-best-practice/aws-tagging-standards-ec2-lambda.jpg)
+![The image outlines AWS tagging standards, including default tags like name and environment, and service-specific tags for EC2 and Lambda.](https://kodekloud.com/kk-media/image/upload/v1752869089/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Mandatory-best-practice/aws-tagging-standards-ec2-lambda.jpg)
 
 Additional tags can be added based on new services or evolving business needs.
 

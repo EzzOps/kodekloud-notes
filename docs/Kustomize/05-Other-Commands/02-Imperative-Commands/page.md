@@ -43,9 +43,7 @@ images:
   newTag: abcdef123
 ```
 
-<Callout icon="triangle-alert">
-  Ensure your `kustomization.yaml` is under version control so you can track these automated updates. Avoid committing sensitive credentials or hardcoded tags.
-</Callout>
+> **triangle-alert** Ensure your `kustomization.yaml` is under version control so you can track these automated updates. Avoid committing sensitive credentials or hardcoded tags.
 
 ***
 
@@ -67,11 +65,9 @@ Kubernetes will detect the new image tag, pull `myrepo/api:abcdef123`, and perfo
 * [Kubernetes Overviews & Tutorials](https://kubernetes.io/docs/tutorials/)
 * [Docker Hub](https://hub.docker.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/060e95ac-e56c-42ed-be87-8701328432c3/lesson/9d6dc297-8f5d-497d-8991-a80c05acaef1" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/060e95ac-e56c-42ed-be87-8701328432c3/lesson/9d6dc297-8f5d-497d-8991-a80c05acaef1)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kustomize/module/8ee78739-877b-4e11-a7a6-82ef7210468b/lesson/3dabb285-4658-4e1f-913a-eed08b1ca049" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kustomize/module/8ee78739-877b-4e11-a7a6-82ef7210468b/lesson/3dabb285-4658-4e1f-913a-eed08b1ca049)
 
 
 # Imperative Commands

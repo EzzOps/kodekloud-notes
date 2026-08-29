@@ -45,9 +45,7 @@ Recommended metrics to report
 | Hallucination rate        | Hallucinated claims / Total claims                                     | Key metric for overall hallucination prevalence.      |
 | Inter-annotator agreement | Agreement among annotators (e.g., Cohen’s kappa, Krippendorff’s alpha) | Indicates label reliability and annotation quality.   |
 
-<Callout icon="lightbulb">
-  Best practice: adopt a hybrid evaluation—structured human annotation plus targeted automated checks. Publish both quantitative metrics and curated qualitative examples so readers can assess strengths, failure modes, and real-world applicability.
-</Callout>
+> **lightbulb** Best practice: adopt a hybrid evaluation—structured human annotation plus targeted automated checks. Publish both quantitative metrics and curated qualitative examples so readers can assess strengths, failure modes, and real-world applicability.
 
 Links and references
 
@@ -59,6 +57,4 @@ Examples and further reading
 * For practical toolchains, combine annotation platforms (for expert labeling) with programmable fact-checking pipelines that query curated databases or APIs.
 * When publishing evaluations, include dataset examples, annotation guidelines, and adjudication rules so results are reproducible and actionable.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/166007e8-026d-41ee-9638-e1a7d17c056d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/166007e8-026d-41ee-9638-e1a7d17c056d)

@@ -37,9 +37,7 @@ spec:
         - /spec/replicas
 ```
 
-<Callout icon="warning">
-  Only ignore fields that are purposefully controlled by external controllers. Overusing `ignoreDifferences` can mask genuine drift or configuration mistakes.
-</Callout>
+> **warning** Only ignore fields that are purposefully controlled by external controllers. Overusing `ignoreDifferences` can mask genuine drift or configuration mistakes.
 
 Permissions (RBAC) issues
 
@@ -102,9 +100,7 @@ Use `argocd app diff` locally too:
 argocd app diff my-app --local ./manifests
 ```
 
-<Callout icon="lightbulb">
-  Add `kubectl apply --dry-run=server` (or rendered Helm/Kustomize validation) to CI to block PRs that would fail validation in the cluster. This prevents the most common sync failures caused by invalid manifests or missing CRDs.
-</Callout>
+> **lightbulb** Add `kubectl apply --dry-run=server` (or rendered Helm/Kustomize validation) to CI to block PRs that would fail validation in the cluster. This prevents the most common sync failures caused by invalid manifests or missing CRDs.
 
 Additional troubleshooting tips
 
@@ -129,11 +125,9 @@ Further reading and references
 
 This lesson concludes the module. You have learned GitOps troubleshooting techniques for repository design, configuration templating, Argo CD, and Kubernetes-native delivery troubleshooting.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/6a1ab174-fb6a-4448-8b53-689c6ea9fccc" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/6a1ab174-fb6a-4448-8b53-689c6ea9fccc)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/9581df5b-9e92-49bc-87e8-2e256be4e549" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/9581df5b-9e92-49bc-87e8-2e256be4e549)
 
 
 # Demo GitOps Delivery with ArgoCD CLI
@@ -152,13 +146,9 @@ This lesson demonstrates how to perform Argo CD application lifecycle operations
 
 This is a lab environment: TLS is not configured and plaintext credentials are used for demonstration only. Do not use these options in production.
 
-<Callout icon="warning">
-  This lesson uses an insecure CLI login with plaintext credentials for demonstration only. Do not use `--insecure` or `--plaintext` in production.
-</Callout>
+> **warning** This lesson uses an insecure CLI login with plaintext credentials for demonstration only. Do not use `--insecure` or `--plaintext` in production.
 
-<Callout icon="lightbulb">
-  Prerequisites: the `argocd` CLI and `kubectl` must be installed and configured to talk to the target cluster where Argo CD is running. The sample app repository used in this lesson is `https://github.com/argoproj/argocd-example-apps.git`.
-</Callout>
+> **lightbulb** Prerequisites: the `argocd` CLI and `kubectl` must be installed and configured to talk to the target cluster where Argo CD is running. The sample app repository used in this lesson is `https://github.com/argoproj/argocd-example-apps.git`.
 
 ## Quick reference: key commands
 
@@ -437,8 +427,6 @@ This completes a CLI-based workflow for creating Argo CD applications, syncing t
 * [Argo CD Documentation](https://argo-cd.readthedocs.io/)
 * [Argo CD GitHub: argocd-example-apps](https://github.com/argoproj/argocd-example-apps)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/96c7a748-3848-424d-9933-e90d4f8cd5dd" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/96c7a748-3848-424d-9933-e90d4f8cd5dd)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/efa3002a-4ec7-4dde-abad-486ec7e5bcd9" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/efa3002a-4ec7-4dde-abad-486ec7e5bcd9)

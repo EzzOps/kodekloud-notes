@@ -14,15 +14,11 @@ Rust is renowned for its memory safety and robust concurrency features. However,
 * **Understanding Program Flow:** Step through your code to gain insights into complex logic and the behavior of third-party libraries.
 * **Optimizing Performance:** Uncover performance bottlenecks to fine-tune your application.
 
-<Frame>
-  ![The image highlights the importance of debugging in Rust, emphasizing catching and fixing bugs, understanding program flow, and improving efficiency.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883857/notes-assets/images/Rust-Programming-Debugging-Tools/rust-debugging-importance-bugs.jpg)
-</Frame>
+![The image highlights the importance of debugging in Rust, emphasizing catching and fixing bugs, understanding program flow, and improving efficiency.](https://kodekloud.com/kk-media/image/upload/v1752883857/notes-assets/images/Rust-Programming-Debugging-Tools/rust-debugging-importance-bugs.jpg)
 
 By stepping through your code and inspecting variables, you can pinpoint issues effectively.
 
-<Frame>
-  ![The image outlines the importance of debugging in Rust, highlighting three key benefits: catching and fixing bugs, understanding program flow, and optimizing performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883859/notes-assets/images/Rust-Programming-Debugging-Tools/rust-debugging-importance-benefits.jpg)
-</Frame>
+![The image outlines the importance of debugging in Rust, highlighting three key benefits: catching and fixing bugs, understanding program flow, and optimizing performance.](https://kodekloud.com/kk-media/image/upload/v1752883859/notes-assets/images/Rust-Programming-Debugging-Tools/rust-debugging-importance-benefits.jpg)
 
 ## Debugging Tools in Rust
 
@@ -36,9 +32,7 @@ For beginners, IDEs with built-in debugging tools provide an accessible starting
 * **IntelliJ IDEA:** Use the Rust plugin for robust debugging capabilities.
 * **Eclipse Corrosion:** If you're an Eclipse user, Corrosion offers excellent integration with the Eclipse ecosystem.
 
-<Frame>
-  ![The image displays logos of various Integrated Development Environments (IDEs) and debugging tools, including rust-analyzer, IntelliJ IDEA/CLion, Visual Studio Code, and Eclipse Corrosion.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883860/notes-assets/images/Rust-Programming-Debugging-Tools/ides-debugging-tools-logos.jpg)
-</Frame>
+![The image displays logos of various Integrated Development Environments (IDEs) and debugging tools, including rust-analyzer, IntelliJ IDEA/CLion, Visual Studio Code, and Eclipse Corrosion.](https://kodekloud.com/kk-media/image/upload/v1752883860/notes-assets/images/Rust-Programming-Debugging-Tools/ides-debugging-tools-logos.jpg)
 
 ### Debugging with VS Code
 
@@ -123,9 +117,7 @@ Using an IDE for debugging offers several advantages:
 * **Integrated Tools:** Benefit from features like syntax highlighting, error checking, and auto-completion.
 * **Graphical Interface:** Visual tools such as breakpoints, the variables panel, and call stack navigation enhance code inspection capabilities.
 
-<Frame>
-  ![The image illustrates the concept of Integrated Development Environments (IDEs) and Integrated Debugging Tools, highlighting features like ease of use, integrated features, and graphical interface, with visuals of a computer and code snippets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883861/notes-assets/images/Rust-Programming-Debugging-Tools/ides-debugging-tools-illustration.jpg)
-</Frame>
+![The image illustrates the concept of Integrated Development Environments (IDEs) and Integrated Debugging Tools, highlighting features like ease of use, integrated features, and graphical interface, with visuals of a computer and code snippets.](https://kodekloud.com/kk-media/image/upload/v1752883861/notes-assets/images/Rust-Programming-Debugging-Tools/ides-debugging-tools-illustration.jpg)
 
 ### Standalone Debuggers and Cargo Commands
 
@@ -144,19 +136,13 @@ rustup install stable
 
 Building your project in debug mode ensures that all symbols are available for efficient debugging.
 
-<Frame>
-  ![The image is a guide for setting up standalone debuggers for Rust, featuring two steps: setting up your environment and installing Rust with debugging symbols.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883862/notes-assets/images/Rust-Programming-Debugging-Tools/rust-debugger-setup-guide.jpg)
-</Frame>
+![The image is a guide for setting up standalone debuggers for Rust, featuring two steps: setting up your environment and installing Rust with debugging symbols.](https://kodekloud.com/kk-media/image/upload/v1752883862/notes-assets/images/Rust-Programming-Debugging-Tools/rust-debugger-setup-guide.jpg)
 
 Standalone debuggers provide the freedom to tailor debugging sessions to specific needs, while Cargo commands simplify testing and iterative development.
 
-<Frame>
-  ![The image is a presentation slide titled "Standalone Debuggers for Rust," featuring two icons labeled "Flexibility" and "Remote Debugging."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883863/notes-assets/images/Rust-Programming-Debugging-Tools/standalone-debuggers-rust-slide.jpg)
-</Frame>
+![The image is a presentation slide titled "Standalone Debuggers for Rust," featuring two icons labeled "Flexibility" and "Remote Debugging."](https://kodekloud.com/kk-media/image/upload/v1752883863/notes-assets/images/Rust-Programming-Debugging-Tools/standalone-debuggers-rust-slide.jpg)
 
-<Frame>
-  ![The image is a diagram titled "Command-Line Debugging With cargo run," highlighting two features: "Debug Mode" and "Quick Iterations."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883864/notes-assets/images/Rust-Programming-Debugging-Tools/command-line-debugging-cargo-run.jpg)
-</Frame>
+![The image is a diagram titled "Command-Line Debugging With cargo run," highlighting two features: "Debug Mode" and "Quick Iterations."](https://kodekloud.com/kk-media/image/upload/v1752883864/notes-assets/images/Rust-Programming-Debugging-Tools/command-line-debugging-cargo-run.jpg)
 
 ## Conclusion
 
@@ -164,10 +150,6 @@ This guide has explored the diverse range of debugging tools available for Rust,
 
 In our next article, we will delve into advanced debugging techniques using `println!` and logging as part of your debugging toolkit.
 
-<Frame>
-  ![The image is about command-line debugging with "cargo run" and "cargo test," featuring a Rust logo and three colored sections labeled "Integrated Development Environment (IDE)," "Standalone Debugger," and "Cargo Command."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883865/notes-assets/images/Rust-Programming-Debugging-Tools/cargo-debugging-ide-standalone.jpg)
-</Frame>
+![The image is about command-line debugging with "cargo run" and "cargo test," featuring a Rust logo and three colored sections labeled "Integrated Development Environment (IDE)," "Standalone Debugger," and "Cargo Command."](https://kodekloud.com/kk-media/image/upload/v1752883865/notes-assets/images/Rust-Programming-Debugging-Tools/cargo-debugging-ide-standalone.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/fdebf97c-bade-4db7-bfcf-9881f9ec96fc/lesson/51381f7e-a9de-4ac7-83db-f3eba58b7166" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/fdebf97c-bade-4db7-bfcf-9881f9ec96fc/lesson/51381f7e-a9de-4ac7-83db-f3eba58b7166)

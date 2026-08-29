@@ -53,7 +53,7 @@ By spreading workloads across AZs, you achieve higher availability and withstand
    * Minimum: `/28` (16 IPs)
    * Maximum: `/16` (65,536 IPs)
 
-![The image explains subnet requirements within a VPC, including CIDR range, block size, and reserved IP addresses, with a diagram showing public subnets in two availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863373/notes-assets/images/AWS-Networking-Fundamentals-Subnets/vpc-subnet-requirements-diagram.jpg)
+![The image explains subnet requirements within a VPC, including CIDR range, block size, and reserved IP addresses, with a diagram showing public subnets in two availability zones.](https://kodekloud.com/kk-media/image/upload/v1752863373/notes-assets/images/AWS-Networking-Fundamentals-Subnets/vpc-subnet-requirements-diagram.jpg)
 
 ## Configuration Considerations
 
@@ -77,7 +77,7 @@ Example of an invalid overlap:
 
 * **Auto-assign public IP**: Enabling this on a subnet ensures every instance launched receives a public IPv4/IPv6 address in addition to its private IP.
 
-![The image illustrates subnet configuration options within a VPC, highlighting that subnets cannot overlap, can allow for optional IPv6 CIDR, and can be configured as IPv6 only. It includes a diagram showing two public subnets in different availability zones with specific CIDR blocks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863374/notes-assets/images/AWS-Networking-Fundamentals-Subnets/vpc-subnet-configuration-diagram-ipv6.jpg)
+![The image illustrates subnet configuration options within a VPC, highlighting that subnets cannot overlap, can allow for optional IPv6 CIDR, and can be configured as IPv6 only. It includes a diagram showing two public subnets in different availability zones with specific CIDR blocks.](https://kodekloud.com/kk-media/image/upload/v1752863374/notes-assets/images/AWS-Networking-Fundamentals-Subnets/vpc-subnet-configuration-diagram-ipv6.jpg)
 
 ## Summary
 

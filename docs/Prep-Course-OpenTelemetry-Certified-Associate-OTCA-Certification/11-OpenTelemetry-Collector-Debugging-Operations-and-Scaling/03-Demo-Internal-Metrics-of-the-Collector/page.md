@@ -55,9 +55,7 @@ Notes:
 * This example exposes internal metrics on port `8888`. Adjust `host` and `port` to match your network and security requirements.
 * After applying the configuration, visit `http://<collector-ip>:8888/metrics` to view the Prometheus-format metrics.
 
-<Callout icon="lightbulb">
-  Exposed metrics are presented in Prometheus exposition format. Some metric names are marked `[alpha]`, which indicates experimental metrics that may change across Collector releases.
-</Callout>
+> **lightbulb** Exposed metrics are presented in Prometheus exposition format. Some metric names are marked `[alpha]`, which indicates experimental metrics that may change across Collector releases.
 
 ## Typical Prometheus-format metric excerpts
 

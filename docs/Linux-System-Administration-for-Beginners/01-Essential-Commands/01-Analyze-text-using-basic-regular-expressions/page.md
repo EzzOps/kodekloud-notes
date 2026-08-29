@@ -107,10 +107,8 @@ $ tmux attach
 $ tmux kill-session -t "Second Session"
 ```
 
-<Callout icon="warning">
-  Be careful: killing a pane, window, or session terminates processes running
+> **warning** Be careful: killing a pane, window, or session terminates processes running
   inside it. Save work before confirming any kill operation.
-</Callout>
 
 Copy / paste and scrollback
 
@@ -168,10 +166,8 @@ bind -n M-2 select-window -t :12
 
 Note: tmux has a rich set of options and bindings — consult the manual or use the built-in command prompt (prefix + :) to explore commands.
 
-<Callout icon="lightbulb">
-  Tip: For the complete list of commands and detailed options, read the manual:
+> **lightbulb** Tip: For the complete list of commands and detailed options, read the manual:
   [man tmux](https://man.openbsd.org/tmux)
-</Callout>
 
 Links and references
 
@@ -182,9 +178,7 @@ Links and references
 
 That covers the essentials: starting tmux, working with sessions, windows, and panes, using the copy/paste buffer, and adding simple configuration. Use the tables and command summaries above as a quick reference while you practice.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/792929f2-1a19-4cf4-98f5-46109ede3dbe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/792929f2-1a19-4cf4-98f5-46109ede3dbe)
 
 
 # Analyze text using basic regular expressions
@@ -195,9 +189,7 @@ This article explains how to use basic regular expressions in Linux for text ana
 
 Regular expressions (regex) let you define complex search patterns that go beyond simple `grep` queries. For instance, when you need to extract all IP addresses (e.g., 203.102.3.5) from hundreds of scattered files, a basic search for numbers and dots may yield invalid matches like `1.2`. Regex allows you to impose precise conditions—just as you specify “x > 3” and “x \< 8” in a math puzzle to limit x to 4, 5, 6, or 7.
 
-<Frame>
-  ![The image shows a mathematical puzzle with conditions: "x is an integer," "x > 3," and "x \< 8," with a sequence of numbers from 3 to 8 and question marks in between.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881461/notes-assets/images/Linux-System-Administration-for-Beginners-Analyze-text-using-basic-regular-expressions/mathematical-puzzle-integer-conditions.jpg)
-</Frame>
+![The image shows a mathematical puzzle with conditions: "x is an integer," "x > 3," and "x \< 8," with a sequence of numbers from 3 to 8 and question marks in between.](https://kodekloud.com/kk-media/image/upload/v1752881461/notes-assets/images/Linux-System-Administration-for-Beginners-Analyze-text-using-basic-regular-expressions/mathematical-puzzle-integer-conditions.jpg)
 
 In the sections below, we’ll explore essential regex operators and examples using `grep` to filter and analyze text on Linux.
 
@@ -257,9 +249,7 @@ samad
 samuel
 ```
 
-<Frame>
-  ![The image shows a dark-themed terminal interface with a prompt and the text "The line begins with" above it. The word "KodeKloud" is visible in the top right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881463/notes-assets/images/Linux-System-Administration-for-Beginners-Analyze-text-using-basic-regular-expressions/dark-terminal-interface-kodekloud-prompt.jpg)
-</Frame>
+![The image shows a dark-themed terminal interface with a prompt and the text "The line begins with" above it. The word "KodeKloud" is visible in the top right corner.](https://kodekloud.com/kk-media/image/upload/v1752881463/notes-assets/images/Linux-System-Administration-for-Beginners-Analyze-text-using-basic-regular-expressions/dark-terminal-interface-kodekloud-prompt.jpg)
 
 ## The Dollar Sign (\$) – Match End of Line
 

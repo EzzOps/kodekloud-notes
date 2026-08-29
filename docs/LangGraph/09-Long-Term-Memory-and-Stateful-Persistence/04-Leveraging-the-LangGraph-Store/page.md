@@ -4,9 +4,7 @@ enable_tracing()
 
 When tracing is enabled, LangGraph opens a trace session for each run and captures events like node execution, model calls, tool invocations, state updates, and timings. All captured data is sent to LangSmith and stored as an execution trace for later inspection.
 
-<Callout icon="lightbulb">
-  Initialize tracing before your graph executes. Tracing begins only after `enable_tracing()` is called, so place it at the top of your script, app startup, or notebook cell that runs prior to graph execution.
-</Callout>
+> **lightbulb** Initialize tracing before your graph executes. Tracing begins only after `enable_tracing()` is called, so place it at the top of your script, app startup, or notebook cell that runs prior to graph execution.
 
 LangGraph’s tracing is non-invasive: you do not need to modify node functions or change workflow logic. The framework records execution details without altering runtime behavior.
 
@@ -85,9 +83,7 @@ Operationalizing observability
 
 LangGraph enables powerful, stateful agent workflows—and that power brings complexity. As graphs grow, tracing becomes essential to understand actual execution, debug failures, and validate changes. Observability tools like LangSmith help teams build AI systems that are more robust, explainable, and maintainable.
 
-<Callout icon="warning">
-  Be mindful of sensitive data. Traces can capture user inputs and API responses—sanitize or redact personally identifiable information (PII) and secrets before storing or sharing traces.
-</Callout>
+> **warning** Be mindful of sensitive data. Traces can capture user inputs and API responses—sanitize or redact personally identifiable information (PII) and secrets before storing or sharing traces.
 
 For engineers building production agents, LangSmith becomes an essential part of the monitoring and debugging toolkit—turning opaque agent runs into inspectable, repeatable traces.
 
@@ -97,11 +93,9 @@ Links and references
 * [LangChain course on KodeKloud](https://learn.kodekloud.com/user/courses/langchain)
 * [LangChain documentation](https://langchain.readthedocs.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/32b29c2b-a9e8-427d-94d5-cded50b77f6a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/32b29c2b-a9e8-427d-94d5-cded50b77f6a)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/f8153413-b11a-4e16-9ff0-bfe795bfe05e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/f8153413-b11a-4e16-9ff0-bfe795bfe05e)
 
 
 # Leveraging the LangGraph Store

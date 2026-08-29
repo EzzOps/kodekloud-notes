@@ -23,9 +23,7 @@ When creating RGPs or EGPs you choose:
 * **Soft Mandatory**: Failures block requests unless `?policy_override=true` is specified.
 * **Hard Mandatory**: Failures block requests with no override allowed.
 
-<Frame>
-  ![The image describes three enforcement levels for Sentinel policies: Advisory, Soft Mandatory, and Hard Mandatory, with a note on how to override a Soft Mandatory policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878345/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Understanding-Sentinel-Policies/sentinel-policy-enforcement-levels-diagram.jpg)
-</Frame>
+![The image describes three enforcement levels for Sentinel policies: Advisory, Soft Mandatory, and Hard Mandatory, with a note on how to override a Soft Mandatory policy.](https://kodekloud.com/kk-media/image/upload/v1752878345/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Understanding-Sentinel-Policies/sentinel-policy-enforcement-levels-diagram.jpg)
 
 ***
 
@@ -89,13 +87,9 @@ When creating RGPs or EGPs you choose:
    c. Evaluate any EGP on the requested path; deny on failure.\
    d. If all checks pass → **Access Permitted**
 
-<Callout icon="triangle-alert">
-  Adding multiple Sentinel policies can increase evaluation overhead and may impact latency under heavy request loads. Monitor performance and optimize your rules accordingly.
-</Callout>
+> **triangle-alert** Adding multiple Sentinel policies can increase evaluation overhead and may impact latency under heavy request loads. Monitor performance and optimize your rules accordingly.
 
-<Frame>
-  ![The image is a flowchart for policy evaluation, detailing steps for authentication and permission checks, leading to either "Access is Permitted" or "Request Denied." It includes decision points for evaluating ACL policies, RGPs, and EGPs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878346/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Understanding-Sentinel-Policies/policy-evaluation-flowchart-access-decision.jpg)
-</Frame>
+![The image is a flowchart for policy evaluation, detailing steps for authentication and permission checks, leading to either "Access is Permitted" or "Request Denied." It includes decision points for evaluating ACL policies, RGPs, and EGPs.](https://kodekloud.com/kk-media/image/upload/v1752878346/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Understanding-Sentinel-Policies/policy-evaluation-flowchart-access-decision.jpg)
 
 ***
 
@@ -112,9 +106,7 @@ Root tokens automatically bypass all Sentinel evaluations and are always granted
 * [Vault Policy Management](https://www.vaultproject.io/docs/concepts/policies)
 * [Terraform Enterprise Sentinel](https://www.terraform.io/docs/enterprise/sentinel)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/968cf007-376b-48c8-83f9-17521b5dd575/lesson/2f54671b-4f95-4a45-ad20-8ad009e03329" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/968cf007-376b-48c8-83f9-17521b5dd575/lesson/2f54671b-4f95-4a45-ad20-8ad009e03329)
 
 
 # Vault Identity Entities and Groups
@@ -131,17 +123,13 @@ Unlock the full power of HashiCorp Vault by mastering its Identity system. In th
 
 A **Vault Entity** is the canonical representation of a user or machine (Vault client). When a unique client first authenticates, Vault’s Identity Secrets Engine creates an entity:
 
-<Frame>
-  ![The image is a slide explaining Vault Entities, detailing how Vault creates entities and aliases, and their roles in authentication. It includes a Vault certification badge and a cartoon character illustration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878347/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Identity-Entities-and-Groups/vault-entities-authentication-slide.jpg)
-</Frame>
+![The image is a slide explaining Vault Entities, detailing how Vault creates entities and aliases, and their roles in authentication. It includes a Vault certification badge and a cartoon character illustration.](https://kodekloud.com/kk-media/image/upload/v1752878347/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Identity-Entities-and-Groups/vault-entities-authentication-slide.jpg)
 
 * Every entity has its own unique ID (`canonical_id`).
 * Zero or more **Aliases** can link different auth methods and identifiers to the same entity.
 * Attach **policies** and **metadata** (e.g., department, team) directly to an entity for centralized authorization.
 
-<Callout icon="lightbulb">
-  Entities simplify auditing and policy management by providing a single point to attach metadata and policies.
-</Callout>
+> **lightbulb** Entities simplify auditing and policy management by providing a single point to attach metadata and policies.
 
 ***
 
@@ -149,9 +137,7 @@ A **Vault Entity** is the canonical representation of a user or machine (Vault c
 
 An **alias** connects an auth method (e.g., Userpass, LDAP, GitHub) and the user’s login identifier to an entity. If no matching alias exists at login, Vault automatically creates both the entity and its alias.
 
-<Frame>
-  ![The image is an illustration showing a character named Julie Smith, a finance specialist, with her authentication options and associated entity details for UserPass, LDAP, and GitHub. Each entity includes specific department and team information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878348/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Identity-Entities-and-Groups/julie-smith-authentication-options-illustration.jpg)
-</Frame>
+![The image is an illustration showing a character named Julie Smith, a finance specialist, with her authentication options and associated entity details for UserPass, LDAP, and GitHub. Each entity includes specific department and team information.](https://kodekloud.com/kk-media/image/upload/v1752878348/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Identity-Entities-and-Groups/julie-smith-authentication-options-illustration.jpg)
 
 In this example, Julie Smith has three aliases:
 
@@ -198,18 +184,14 @@ To grant Julie all her permissions in a single login, manually create one entity
    vault auth list
    ```
 
-<Callout icon="triangle-alert">
-  Ensure each `mount_accessor` matches the correct auth path. Misconfigured accessors may lead to orphaned aliases.
-</Callout>
+> **triangle-alert** Ensure each `mount_accessor` matches the correct auth path. Misconfigured accessors may lead to orphaned aliases.
 
 Once configured, any login by Julie—whether via LDAP, GitHub, or Userpass—yields a token with:
 
 * Policies from the alias (e.g., `finance`)
 * Policies from the entity (e.g., `it-management`)
 
-<Frame>
-  ![The image illustrates a process involving Vault entities, showing how a user authenticates with LDAP credentials to receive a Vault token, which inherits capabilities from multiple policies. It includes a diagram with a character, entity details, and a flow of authentication steps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878349/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Identity-Entities-and-Groups/vault-authentication-ldap-token-diagram.jpg)
-</Frame>
+![The image illustrates a process involving Vault entities, showing how a user authenticates with LDAP credentials to receive a Vault token, which inherits capabilities from multiple policies. It includes a diagram with a character, entity details, and a flow of authentication steps.](https://kodekloud.com/kk-media/image/upload/v1752878349/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Identity-Entities-and-Groups/vault-authentication-ldap-token-diagram.jpg)
 
 ***
 
@@ -217,9 +199,7 @@ Once configured, any login by Julie—whether via LDAP, GitHub, or Userpass—yi
 
 Groups let you bundle multiple entities (and even other groups) under shared policies. This structure scales permission management across teams.
 
-<Frame>
-  ![The image shows a diagram of a "Vault Groups" structure for a team named "Finance\_Team" with members Maria Shi and John Lee, each having specific policies and entity aliases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878350/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Identity-Entities-and-Groups/vault-groups-finance-team-diagram.jpg)
-</Frame>
+![The image shows a diagram of a "Vault Groups" structure for a team named "Finance\_Team" with members Maria Shi and John Lee, each having specific policies and entity aliases.](https://kodekloud.com/kk-media/image/upload/v1752878350/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Identity-Entities-and-Groups/vault-groups-finance-team-diagram.jpg)
 
 Example group configuration:
 
@@ -240,9 +220,7 @@ When John logs in:
 
 ## Internal vs. External Groups
 
-<Frame>
-  ![The image is a comparison between "Internal Group" and "External Group" in Vault, describing their creation and purpose. Internal Groups are created manually to group entities with identical permissions, while External Groups are inferred and created based on group associations from authentication methods, either manually or automatically.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878351/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Identity-Entities-and-Groups/internal-external-groups-comparison-vault.jpg)
-</Frame>
+![The image is a comparison between "Internal Group" and "External Group" in Vault, describing their creation and purpose. Internal Groups are created manually to group entities with identical permissions, while External Groups are inferred and created based on group associations from authentication methods, either manually or automatically.](https://kodekloud.com/kk-media/image/upload/v1752878351/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Identity-Entities-and-Groups/internal-external-groups-comparison-vault.jpg)
 
 ### Internal Groups
 
@@ -250,9 +228,7 @@ When John logs in:
 * Ideal for grouping entities that share identical permission sets.
 * Permissions automatically propagate into child namespaces without reconfiguring auth backends.
 
-<Frame>
-  ![The image explains the concept of Vault Groups, highlighting their use in managing permissions within Vault Namespaces. It includes a diagram showing the relationship between a root namespace and a child namespace for a finance team.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878353/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Identity-Entities-and-Groups/vault-groups-permissions-diagram-namespaces.jpg)
-</Frame>
+![The image explains the concept of Vault Groups, highlighting their use in managing permissions within Vault Namespaces. It includes a diagram showing the relationship between a root namespace and a child namespace for a finance team.](https://kodekloud.com/kk-media/image/upload/v1752878353/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Identity-Entities-and-Groups/vault-groups-permissions-diagram-namespaces.jpg)
 
 ### External Groups
 
@@ -260,9 +236,7 @@ When John logs in:
 * Membership is controlled at the IDP—Vault simply assigns matching policies.
 * Automatically keeps Vault policies in sync with your existing corporate groups.
 
-<Frame>
-  ![The image explains how external groups are used in HashiCorp Vault to set permissions based on group membership from identity providers like LDAP or Okta. It includes a diagram showing the integration between Active Directory and HashiCorp Vault for managing group permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878353/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Identity-Entities-and-Groups/hashicorp-vault-external-groups-diagram.jpg)
-</Frame>
+![The image explains how external groups are used in HashiCorp Vault to set permissions based on group membership from identity providers like LDAP or Okta. It includes a diagram showing the integration between Active Directory and HashiCorp Vault for managing group permissions.](https://kodekloud.com/kk-media/image/upload/v1752878353/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Identity-Entities-and-Groups/hashicorp-vault-external-groups-diagram.jpg)
 
 **Workflow for External Groups**:
 
@@ -282,6 +256,4 @@ When John logs in:
 
 Master these Identity features to automate policy management, simplify user access, and maintain tight security controls in your Vault environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/968cf007-376b-48c8-83f9-17521b5dd575/lesson/cddfb91f-6acb-4f61-be22-ed929c9d017f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/968cf007-376b-48c8-83f9-17521b5dd575/lesson/cddfb91f-6acb-4f61-be22-ed929c9d017f)

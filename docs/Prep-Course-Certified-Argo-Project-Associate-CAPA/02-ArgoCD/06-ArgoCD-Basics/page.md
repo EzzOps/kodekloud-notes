@@ -22,9 +22,7 @@ Webhooks and refresh behavior
 
 Security considerations
 
-<Callout icon="warning">
-  Store cluster credentials and Git access tokens securely. Avoid committing tokens or kubeconfig files into repositories. Use Kubernetes secrets, sealed-secrets, or external secret managers (Vault, AWS Secrets Manager, etc.) to protect sensitive credentials.
-</Callout>
+> **warning** Store cluster credentials and Git access tokens securely. Avoid committing tokens or kubeconfig files into repositories. Use Kubernetes secrets, sealed-secrets, or external secret managers (Vault, AWS Secrets Manager, etc.) to protect sensitive credentials.
 
 ArgoCD components and responsibilities (concise)
 
@@ -52,11 +50,9 @@ Typical actors and integrations
 
 Best practices and tips
 
-<Callout icon="lightbulb">
-  * Model each deployable component as an ArgoCD Application and group related Applications into Projects for access control and separation.
+> **lightbulb** * Model each deployable component as an ArgoCD Application and group related Applications into Projects for access control and separation.
   * Use Git branching strategies (feature, release, main) and tie ArgoCD Applications to specific branches or tags for predictable deployments.
   * Enable webhooks for faster continuous delivery; rely on Prometheus metrics and Grafana dashboards for operational visibility.
-</Callout>
 
 Links and references
 
@@ -68,9 +64,7 @@ Links and references
 
 This architecture enables a Git-centric, observable, and auditable continuous delivery control plane capable of managing multiple Kubernetes clusters from a single ArgoCD deployment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/e28776ce-7d66-412b-9634-97607f8c6053" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/e28776ce-7d66-412b-9634-97607f8c6053)
 
 
 # ArgoCD Basics
@@ -134,9 +128,7 @@ ArgoCD operates with a clear GitOps reconciliation loop and supports multiple ma
 | Sync Policy         | Controls how and when ArgoCD applies changes (manual, automated, hooks, and custom policies).                   |
 | Reconciliation Loop | The continuous process that compares Git vs cluster and applies changes to remove drift.                        |
 
-<Callout icon="lightbulb">
-  ArgoCD runs inside your Kubernetes cluster (typically as pods in a dedicated namespace) and needs appropriate RBAC and ServiceAccount permissions to apply manifests. A single ArgoCD instance can manage multiple target clusters using Kubernetes secrets or the ArgoCD cluster registration mechanism.
-</Callout>
+> **lightbulb** ArgoCD runs inside your Kubernetes cluster (typically as pods in a dedicated namespace) and needs appropriate RBAC and ServiceAccount permissions to apply manifests. A single ArgoCD instance can manage multiple target clusters using Kubernetes secrets or the ArgoCD cluster registration mechanism.
 
 ## Next steps and where to learn more
 
@@ -150,6 +142,4 @@ Links and resources:
 * [Kustomize](https://kustomize.io/)
 * [Jsonnet](https://jsonnet.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/1838906f-aa30-45b1-9134-13c8b6de185d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/1838906f-aa30-45b1-9134-13c8b6de185d)

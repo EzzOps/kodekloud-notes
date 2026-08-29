@@ -6,23 +6,17 @@ This article explains observability, its importance in system monitoring, and th
 
 Observability is the capability to understand and measure a system’s state based on the data it generates. By implementing observability within your applications and infrastructure, you gain deep insights into your system's internal workings. This, in turn, speeds up troubleshooting, detects elusive issues, monitors performance, and enhances cross-team collaboration.
 
-<Frame>
-  ![The image explains observability as understanding a system's state through data, aiding insights, troubleshooting, problem detection, and performance monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880515/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Observability-Fundamentals/frame_40.jpg)
-</Frame>
+![The image explains observability as understanding a system's state through data, aiding insights, troubleshooting, problem detection, and performance monitoring.](https://kodekloud.com/kk-media/image/upload/v1752880515/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Observability-Fundamentals/frame_40.jpg)
 
 Without observability, an application behaves like a black box—information enters and exits with little visibility into its internal processes. Observability lifts the veil, showing you how individual components interact within your system. When issues arise, this clarity helps pinpoint the failing component and its root cause.
 
 As system architectures evolve and adopting microservices becomes more common, your infrastructure transforms from a single, monolithic system to a collection of independent, interacting services. This shift means you’re no longer monitoring a unified entity but many small services working together. Such complexity can complicate troubleshooting, as isolating the failing service or component requires detailed insight.
 
-<Frame>
-  ![The image discusses the need for observability in complex system architectures, highlighting the transition from monoliths to microservices like email, users, and auth.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880516/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Observability-Fundamentals/frame_120.jpg)
-</Frame>
+![The image discusses the need for observability in complex system architectures, highlighting the transition from monoliths to microservices like email, users, and auth.](https://kodekloud.com/kk-media/image/upload/v1752880516/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Observability-Fundamentals/frame_120.jpg)
 
 Troubleshooting in these environments involves more than spotting symptoms. You need comprehensive data to understand why your application reached a specific state, which component is responsible, and how to mitigate future recurrences. For instance, you may seek answers to rising error rates, increased latency, or frequent service timeouts.
 
-<Frame>
-  ![The image discusses the need for detailed information in troubleshooting application issues, focusing on error rates, latency, and service timeouts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880517/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Observability-Fundamentals/frame_150.jpg)
-</Frame>
+![The image discusses the need for detailed information in troubleshooting application issues, focusing on error rates, latency, and service timeouts.](https://kodekloud.com/kk-media/image/upload/v1752880517/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Observability-Fundamentals/frame_150.jpg)
 
 Observability achieves this by leveraging three critical pillars: logging, tracing, and metrics.
 
@@ -42,9 +36,7 @@ Oct 26 19:35:03 ub1 kernel: [37513.054072] e1000: enp0s3 NIC Link is Up 1000 Mbp
 
 While logs provide valuable contextual data, their high verbosity and the intertwining of processes across multiple systems can complicate the process of pinpointing issues during an outage.
 
-<Frame>
-  ![The image describes logs as a common observation form produced by systems, highlighting their verbosity and interwoven nature across multiple systems.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880518/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Observability-Fundamentals/frame_210.jpg)
-</Frame>
+![The image describes logs as a common observation form produced by systems, highlighting their verbosity and interwoven nature across multiple systems.](https://kodekloud.com/kk-media/image/upload/v1752880518/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Observability-Fundamentals/frame_210.jpg)
 
 ***
 
@@ -60,9 +52,7 @@ For example, a request might generate:
 
 These spans combine to form a complete trace of the request, providing a granular view of the interactions that occurred.
 
-<Frame>
-  ![The image explains traces in a system, showing trace IDs, spans, and their tracking of start time and duration, with a diagram illustrating a gateway process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880519/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Observability-Fundamentals/frame_310.jpg)
-</Frame>
+![The image explains traces in a system, showing trace IDs, spans, and their tracking of start time and duration, with a diagram illustrating a gateway process.](https://kodekloud.com/kk-media/image/upload/v1752880519/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Observability-Fundamentals/frame_310.jpg)
 
 ***
 
@@ -84,15 +74,11 @@ node_filesystem_avail_bytes{fstype="vfat", mountpoint="/home"} 5000
 4:30AM 12/1/22
 ```
 
-<Frame>
-  ![The image explains metrics, listing CPU load, open files, HTTP response times, and errors, and highlights data aggregation and trend visualization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880520/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Observability-Fundamentals/frame_360.jpg)
-</Frame>
+![The image explains metrics, listing CPU load, open files, HTTP response times, and errors, and highlights data aggregation and trend visualization.](https://kodekloud.com/kk-media/image/upload/v1752880520/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Observability-Fundamentals/frame_360.jpg)
 
 ***
 
-<Callout icon="lightbulb">
-  Observability is not limited to simply capturing data; its real power lies in correlating logs, traces, and metrics to gain a comprehensive view of your system's performance and health.
-</Callout>
+> **lightbulb** Observability is not limited to simply capturing data; its real power lies in correlating logs, traces, and metrics to gain a comprehensive view of your system's performance and health.
 
 ## Observability with Prometheus
 
@@ -109,6 +95,4 @@ For more detailed insights and guides on observability, consider exploring addit
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/70e17eea-7e9b-4f65-87a4-1cdb5631e0dc/lesson/cb233e5f-cd5c-4a84-b45a-f6f4c355e617" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/70e17eea-7e9b-4f65-87a4-1cdb5631e0dc/lesson/cb233e5f-cd5c-4a84-b45a-f6f4c355e617)

@@ -104,13 +104,9 @@ The Operate phase embeds processes and ownership so optimizations stick:
   <img alt="The image illustrates three components of sustaining and scaling cloud operations: the objective of the operate phase, security and incident management, and continuous monitoring and innovation." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Continuously measure cost and performance against the KPIs established in the Inform phase. Optimization must be recurring—embedded into daily operations and quarterly reviews—not a one-off project.
-</Callout>
+> **lightbulb** Continuously measure cost and performance against the KPIs established in the Inform phase. Optimization must be recurring—embedded into daily operations and quarterly reviews—not a one-off project.
 
-<Callout icon="warning">
-  Automation or modernization without clear ownership and governance will not sustain savings. Always pair automation with accountability, tagging, and audit practices.
-</Callout>
+> **warning** Automation or modernization without clear ownership and governance will not sustain savings. Always pair automation with accountability, tagging, and audit practices.
 
 ## Example: migrating databases (EC2 → Amazon RDS)
 
@@ -161,8 +157,6 @@ Selected references:
 
 That is it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/5dec4577-7276-4a7a-8040-c172cd00f341/lesson/5165ce79-f44d-4312-ad73-ffa274539d13" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/5dec4577-7276-4a7a-8040-c172cd00f341/lesson/5165ce79-f44d-4312-ad73-ffa274539d13)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/5dec4577-7276-4a7a-8040-c172cd00f341/lesson/d0baabf0-25c6-453e-9587-8e7e3362696b" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/5dec4577-7276-4a7a-8040-c172cd00f341/lesson/d0baabf0-25c6-453e-9587-8e7e3362696b)

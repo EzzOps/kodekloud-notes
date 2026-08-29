@@ -21,9 +21,7 @@ ls -l script.sh
 
 Tip: `chmod u+x` adds execute permission only for the file owner (user). `chmod +x` (without a qualifier) adds execute permission for user, group, and other.
 
-<Callout icon="warning">
-  Be careful when granting execute permission. Only mark trusted scripts or binaries as executable to avoid running untrusted code.
-</Callout>
+> **warning** Be careful when granting execute permission. Only mark trusted scripts or binaries as executable to avoid running untrusted code.
 
 ## Common commands summary
 
@@ -52,9 +50,7 @@ Answer: B — it gives execute permission so the file can be run as a script or 
 
 Next up: running another OS inside your current one — [Virtualization and Containers](https://learn.kodekloud.com/user/courses/virtualization-and-containers).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/edbf48fe-cad8-4a13-ad00-644b613f7867/lesson/d93d6fec-f61d-487d-9217-1916725bbfe0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/edbf48fe-cad8-4a13-ad00-644b613f7867/lesson/d93d6fec-f61d-487d-9217-1916725bbfe0)
 
 
 # Course Introduction
@@ -113,9 +109,7 @@ The OS is your first line of defense. It implements access control, isolates pro
   <img alt="A presenter wearing a KodeKloud t-shirt stands on the right. To the left is a slide titled &#x22;Security&#x22; with a purple-themed illustration of a laptop, folders and padlocks representing data protection." />
 </Frame>
 
-<Callout icon="warning">
-  Keep your system and applications updated. Many compromises exploit unpatched OS vulnerabilities or misconfigured permissions.
-</Callout>
+> **warning** Keep your system and applications updated. Many compromises exploit unpatched OS vulnerabilities or misconfigured permissions.
 
 ## User interfaces: GUIs and command lines
 
@@ -125,9 +119,7 @@ You interact with the OS through graphical user interfaces (GUIs) and command-li
   <img alt="A presentation slide titled &#x22;User Interfaces&#x22; shows stylized purple illustrations of a laptop with UI windows, a game controller, mobile touch interaction, and code snippets. A presenter wearing a KodeKloud t-shirt stands at the right against a dark background." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Pro tip: Learning to use the CLI and understanding basic system calls will make you a more effective administrator and developer. Start with commands for process listing, file permissions, and package management.
-</Callout>
+> **lightbulb** Pro tip: Learning to use the CLI and understanding basic system calls will make you a more effective administrator and developer. Start with commands for process listing, file permissions, and package management.
 
 ## Resource management and process isolation
 
@@ -156,6 +148,4 @@ Further reading and references:
 
 If you're curious about what keeps your digital environment reliable and responsive, you're in the right place. Let's get started.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/a58b0c0b-ab99-487d-8373-0cef2163288e/lesson/05bc3753-622b-4816-a9d2-656bfb7c4142" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/a58b0c0b-ab99-487d-8373-0cef2163288e/lesson/05bc3753-622b-4816-a9d2-656bfb7c4142)

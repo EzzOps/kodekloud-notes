@@ -16,11 +16,11 @@ Karpenter is an open-source, Kubernetes-native autoscaler originally developed b
 | Cost Optimization      | Manual spot & instance mix setup    | Automatic least-cost instance discovery |
 | Upgrades & Maintenance | Rolling updates per NodeGroup       | Cluster-wide cordon/drain management    |
 
-![The image is an introduction to Karpenter, showing a diagram with three colored cloud icons connected to a central "Autoscaling" icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862766/notes-assets/images/AWS-EKS-Karpenter/karpenter-autoscaling-cloud-diagram.jpg)
+![The image is an introduction to Karpenter, showing a diagram with three colored cloud icons connected to a central "Autoscaling" icon.](https://kodekloud.com/kk-media/image/upload/v1752862766/notes-assets/images/AWS-EKS-Karpenter/karpenter-autoscaling-cloud-diagram.jpg)
 
 Traditional Auto Scaling Groups require advance capacity planning—choosing instance types, defining scaling policies, and managing multiple ASGs—which can lead to wasted resources and operational overhead. Karpenter replaces these static NodeGroups with flexible node pools defined as Kubernetes custom resources.
 
-![The image is a slide titled "Karpenter’s Flexibility," featuring two sections: one about scaling nodes in different availability zones (AZs) and another about considerations for EBS volumes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862768/notes-assets/images/AWS-EKS-Karpenter/karpenter-flexibility-scaling-nodes-ebs.jpg)
+![The image is a slide titled "Karpenter’s Flexibility," featuring two sections: one about scaling nodes in different availability zones (AZs) and another about considerations for EBS volumes.](https://kodekloud.com/kk-media/image/upload/v1752862768/notes-assets/images/AWS-EKS-Karpenter/karpenter-flexibility-scaling-nodes-ebs.jpg)
 
 ## How Karpenter Works
 
@@ -33,7 +33,7 @@ Karpenter runs as an in-cluster controller. When a pod remains unschedulable, it
 
 This architecture ensures fast, workload-native node scheduling without manual ASG configurations.
 
-![The image illustrates "On-Demand Node Deployment" using Karpenter, showing connections to an API and EC2, with a focus on workload-native node scheduling and GPU resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862769/notes-assets/images/AWS-EKS-Karpenter/on-demand-node-deployment-karpenter-ec2.jpg)
+![The image illustrates "On-Demand Node Deployment" using Karpenter, showing connections to an API and EC2, with a focus on workload-native node scheduling and GPU resources.](https://kodekloud.com/kk-media/image/upload/v1752862769/notes-assets/images/AWS-EKS-Karpenter/on-demand-node-deployment-karpenter-ec2.jpg)
 
 ## Cost and Resource Optimization
 
@@ -45,19 +45,19 @@ When a pod requests, for example, 4 vCPU and 8 GiB RAM, Karpenter:
 
 This automated, cost-driven provisioning minimizes waste and accelerates scheduling.
 
-![The image illustrates automated cost and resource optimization using Karpenter and EC2, highlighting specifications of 4 CPU and 8 GB RAM.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862770/notes-assets/images/AWS-EKS-Karpenter/karpenter-ec2-cost-optimization-diagram.jpg)
+![The image illustrates automated cost and resource optimization using Karpenter and EC2, highlighting specifications of 4 CPU and 8 GB RAM.](https://kodekloud.com/kk-media/image/upload/v1752862770/notes-assets/images/AWS-EKS-Karpenter/karpenter-ec2-cost-optimization-diagram.jpg)
 
 ## Streamlined Cluster Management
 
 Karpenter simplifies upgrades and maintenance by cordoning and draining only the nodes that require replacement. It then either reschedules pods onto existing capacity or provisions new nodes automatically—eliminating manual rolling updates across multiple NodeGroups.
 
-![The image illustrates "Streamlined Cluster Management" with four sets of node groups, each containing three hexagonal icons with gear symbols.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862771/notes-assets/images/AWS-EKS-Karpenter/streamlined-cluster-management-node-groups.jpg)
+![The image illustrates "Streamlined Cluster Management" with four sets of node groups, each containing three hexagonal icons with gear symbols.](https://kodekloud.com/kk-media/image/upload/v1752862771/notes-assets/images/AWS-EKS-Karpenter/streamlined-cluster-management-node-groups.jpg)
 
 ## Consolidation
 
 By continuously monitoring node utilization, Karpenter can consolidate workloads onto fewer, lower-cost instances. Underutilized nodes are drained and terminated, maximizing cluster efficiency and reducing cloud spend.
 
-![The image illustrates a concept of consolidation with four bar charts showing different levels of space utilization, highlighting waste space and optimal usage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862772/notes-assets/images/AWS-EKS-Karpenter/consolidation-space-utilization-bar-charts.jpg)
+![The image illustrates a concept of consolidation with four bar charts showing different levels of space utilization, highlighting waste space and optimal usage.](https://kodekloud.com/kk-media/image/upload/v1752862772/notes-assets/images/AWS-EKS-Karpenter/consolidation-space-utilization-bar-charts.jpg)
 
 ## Workload Requirements
 
@@ -69,7 +69,7 @@ To ensure safe, predictable scaling with Karpenter, each workload should define:
 
 > **triangle-alert** Without proper PodDisruptionBudgets and resource requests, Karpenter might co-locate all pods on a single, cheapest instance or disrupt critical services unexpectedly.
 
-![The image outlines the biggest downsides of using Karpenter, focusing on pod disruption budgets, topology spreads, and resource requests, with details on workload stability and resource allocation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862773/notes-assets/images/AWS-EKS-Karpenter/karpenter-downsides-pod-disruption-topology.jpg)
+![The image outlines the biggest downsides of using Karpenter, focusing on pod disruption budgets, topology spreads, and resource requests, with details on workload stability and resource allocation.](https://kodekloud.com/kk-media/image/upload/v1752862773/notes-assets/images/AWS-EKS-Karpenter/karpenter-downsides-pod-disruption-topology.jpg)
 
 ## Summary of Best Practices
 
@@ -82,7 +82,7 @@ To ensure safe, predictable scaling with Karpenter, each workload should define:
 4. **Cluster-Level Deployment**\
    Run Karpenter as a Kubernetes Deployment with elevated permissions for reliability.
 
-![The image outlines four best practices for cluster management: abundance of compute options, ease of deployment, responsiveness to changes, and cluster service integration. Each practice is briefly described in a colorful, numbered box.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862774/notes-assets/images/AWS-EKS-Karpenter/cluster-management-best-practices-diagram.jpg)
+![The image outlines four best practices for cluster management: abundance of compute options, ease of deployment, responsiveness to changes, and cluster service integration. Each practice is briefly described in a colorful, numbered box.](https://kodekloud.com/kk-media/image/upload/v1752862774/notes-assets/images/AWS-EKS-Karpenter/cluster-management-best-practices-diagram.jpg)
 
 Karpenter brings dynamic, cost-optimized scaling to AWS EKS with minimal upfront configuration. By providing well-defined workloads and leveraging Karpenter’s automation, you can eliminate manual NodeGroup tuning and let your cluster adapt instantly to changing demands.
 

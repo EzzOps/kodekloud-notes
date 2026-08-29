@@ -18,9 +18,7 @@ Having installed Ollama and run your first LLaMA 3.2 model locally, it’s time 
 
 Head over to the [Ollama website](https://ollama.com) and click **Models** in the navigation bar. You’ll see a list of supported AI models complete with architecture, parameter count, and quantization settings:
 
-<Frame>
-![The image shows a webpage from Ollama, displaying a list of AI models such as "deepseek-r1" and "llama3.3" with details about their parameters and performance. There are options to filter models by categories like Embedding, Vision, and Tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883726/notes-assets/images/Running-Local-LLMs-With-Ollama-Running-Different-Models/ollama-ai-models-list-webpage.jpg)
-</Frame>
+![The image shows a webpage from Ollama, displaying a list of AI models such as "deepseek-r1" and "llama3.3" with details about their parameters and performance. There are options to filter models by categories like Embedding, Vision, and Tools.](https://kodekloud.com/kk-media/image/upload/v1752883726/notes-assets/images/Running-Local-LLMs-With-Ollama-Running-Different-Models/ollama-ai-models-list-webpage.jpg)
 
 Scroll down and select the **Vision** category. The top entry is a LLaMA-based vision model (LLaVA). Click it to view its details.
 

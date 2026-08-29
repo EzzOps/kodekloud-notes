@@ -14,9 +14,7 @@ The primary objectives for this project are:
 * Display each URL’s response status code or provide an error message if the request fails.
 * Limit the number of concurrent requests to prevent overloading the system.
 
-<Frame>
-  ![The image is a slide titled "Project: Building a Concurrent URL Pinger in Rust," outlining goals such as making concurrent HTTP GET requests, displaying response status codes, and limiting concurrent requests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883802/notes-assets/images/Rust-Programming-Building-a-Concurrent-URL-Pinger/project-building-concurrent-url-pinger-rust.jpg)
-</Frame>
+![The image is a slide titled "Project: Building a Concurrent URL Pinger in Rust," outlining goals such as making concurrent HTTP GET requests, displaying response status codes, and limiting concurrent requests.](https://kodekloud.com/kk-media/image/upload/v1752883802/notes-assets/images/Rust-Programming-Building-a-Concurrent-URL-Pinger/project-building-concurrent-url-pinger-rust.jpg)
 
 ## Components Overview
 
@@ -26,9 +24,7 @@ This project leverages the following components:
 * **Concurrency:** The Tokio runtime's `tokio::spawn` function enables asynchronous task management.
 * **Error Handling:** Errors during HTTP requests are managed gracefully with informative error messages.
 
-<Frame>
-  ![The image is a slide titled "Project: Building a Concurrent URL Pinger in Rust," outlining components such as using reqwest for HTTP requests, tokio::spawn for concurrency, and error handling strategies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883804/notes-assets/images/Rust-Programming-Building-a-Concurrent-URL-Pinger/building-concurrent-url-pinger-rust.jpg)
-</Frame>
+![The image is a slide titled "Project: Building a Concurrent URL Pinger in Rust," outlining components such as using reqwest for HTTP requests, tokio::spawn for concurrency, and error handling strategies.](https://kodekloud.com/kk-media/image/upload/v1752883804/notes-assets/images/Rust-Programming-Building-a-Concurrent-URL-Pinger/building-concurrent-url-pinger-rust.jpg)
 
 ## Setting Up the Project
 
@@ -103,8 +99,7 @@ async fn main() {
 }
 ```
 
-<Callout icon="lightbulb">
-  1. **Dependencies and Imports**\
+> **lightbulb** 1. **Dependencies and Imports**\
      The necessary modules are imported to manage HTTP requests using `reqwest` and handle asynchronous tasks using `tokio`. Concurrency is controlled with a semaphore wrapped in an Arc.
 
   2. **`ping_url` Function**\
@@ -115,7 +110,6 @@ async fn main() {
 
   4. **`main` Function**\
      The entry point of the application, which initializes the Tokio runtime, defines the target URLs (including one invalid URL for error demonstration), and calls `ping_urls` with a limit of 5 concurrent tasks.
-</Callout>
 
 ## Running the Program
 
@@ -148,9 +142,7 @@ There are several ways to enhance your concurrent URL pinger project:
 * **Saving Results:** Write the output to a file for later analysis.
 * **Dynamic URL Input:** Allow URLs to be read from an external file or user input instead of being hardcoded.
 
-<Frame>
-  ![The image is a slide titled "Project: Building a Concurrent URL Pinger in Rust," listing enhancement ideas such as retrying failed requests, tracking response times, saving results, and inputting from a file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883804/notes-assets/images/Rust-Programming-Building-a-Concurrent-URL-Pinger/project-building-concurrent-url-pinger-rust-2.jpg)
-</Frame>
+![The image is a slide titled "Project: Building a Concurrent URL Pinger in Rust," listing enhancement ideas such as retrying failed requests, tracking response times, saving results, and inputting from a file.](https://kodekloud.com/kk-media/image/upload/v1752883804/notes-assets/images/Rust-Programming-Building-a-Concurrent-URL-Pinger/project-building-concurrent-url-pinger-rust-2.jpg)
 
 ## Conclusion
 
@@ -160,14 +152,10 @@ In this lesson, we covered:
 * How to spawn multiple concurrent tasks with `tokio::spawn`.
 * How to control the level of concurrency with a semaphore to manage simultaneous HTTP requests.
 
-<Frame>
-  ![The image is a conclusion slide highlighting two points: using async and await for asynchronous programming, and sending multiple HTTP requests concurrently with tokio::spawn.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883805/notes-assets/images/Rust-Programming-Building-a-Concurrent-URL-Pinger/async-await-tokio-conclusion-slide.jpg)
-</Frame>
+![The image is a conclusion slide highlighting two points: using async and await for asynchronous programming, and sending multiple HTTP requests concurrently with tokio::spawn.](https://kodekloud.com/kk-media/image/upload/v1752883805/notes-assets/images/Rust-Programming-Building-a-Concurrent-URL-Pinger/async-await-tokio-conclusion-slide.jpg)
 
 Congratulations on creating a fast and efficient concurrent URL pinger in Rust!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/9f40c3c7-3b88-4cd7-b65e-7a45fc7d0d64/lesson/becb9670-dc72-4a93-aca7-6ecb779bcac1" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/9f40c3c7-3b88-4cd7-b65e-7a45fc7d0d64/lesson/becb9670-dc72-4a93-aca7-6ecb779bcac1)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/rust/module/9f40c3c7-3b88-4cd7-b65e-7a45fc7d0d64/lesson/1dd2b295-e79a-4fd3-951a-0d825dc68851" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/rust/module/9f40c3c7-3b88-4cd7-b65e-7a45fc7d0d64/lesson/1dd2b295-e79a-4fd3-951a-0d825dc68851)

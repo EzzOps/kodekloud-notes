@@ -119,13 +119,9 @@ No changes. Your infrastructure matches the configuration.
 
 Best practices and caveats
 
-<Callout icon="lightbulb">
-  Use `ignore_changes` sparingly and only for attributes that are legitimately owned by an external system (for example, tags applied by Azure Policy). Limit its scope to the minimal set of attributes you need to ignore to avoid hiding unexpected drift.
-</Callout>
+> **lightbulb** Use `ignore_changes` sparingly and only for attributes that are legitimately owned by an external system (for example, tags applied by Azure Policy). Limit its scope to the minimal set of attributes you need to ignore to avoid hiding unexpected drift.
 
-<Callout icon="warning">
-  Do not overuse `ignore_changes` to mask configuration problems. Ignoring attributes makes Terraform blind to changes in those attributes and can make debugging and auditing more difficult. Always prefer centralizing ownership (for example using a policy-first tagging approach) where practical.
-</Callout>
+> **warning** Do not overuse `ignore_changes` to mask configuration problems. Ignoring attributes makes Terraform blind to changes in those attributes and can make debugging and auditing more difficult. Always prefer centralizing ownership (for example using a policy-first tagging approach) where practical.
 
 Quick comparison of lifecycle meta-arguments
 
@@ -147,11 +143,9 @@ Links and references
 * [Azure Policy documentation](https://learn.microsoft.com/azure/governance/policy/)
 * [Azure CLI: storage account list](https://learn.microsoft.com/cli/azure/storage/account?view=azure-cli-latest#az_storage_account_list)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/82cd6352-f026-4f6f-b739-634e56558de4/lesson/956f5453-cd68-4b1e-953d-8b4080929dc2" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/82cd6352-f026-4f6f-b739-634e56558de4/lesson/956f5453-cd68-4b1e-953d-8b4080929dc2)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/82cd6352-f026-4f6f-b739-634e56558de4/lesson/cec76ae3-cbb9-4f33-8c55-c65cc5e0adfc" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/82cd6352-f026-4f6f-b739-634e56558de4/lesson/cec76ae3-cbb9-4f33-8c55-c65cc5e0adfc)
 
 
 # prevent destroy
@@ -176,9 +170,7 @@ Use case overview
 * Protect production-grade resources from accidental or automatic removal during refactoring or configuration changes.
 * Add an extra safety layer in your IaC pipeline beyond cloud provider delete locks (e.g., Azure Delete Lock), implemented at the Terraform level.
 
-<Callout icon="lightbulb">
-  `prevent_destroy` causes plan-time failures when a resource would be destroyed. Always run `terraform plan` and review the output before applying in production to prevent unexpected interruptions.
-</Callout>
+> **lightbulb** `prevent_destroy` causes plan-time failures when a resource would be destroyed. Always run `terraform plan` and review the output before applying in production to prevent unexpected interruptions.
 
 Example: Protect an Azure Storage Account with `prevent_destroy`
 
@@ -281,9 +273,7 @@ How to intentionally remove or replace a protected resource
 * Targeted plans: use `-target` to reduce the scope of evaluation. Note: `-target` does not bypass `prevent_destroy` for resources that are planned to be destroyed — it simply limits what Terraform evaluates.
 * Remove from state as a last resort: run `terraform state rm <resource>` and then delete the resource outside of Terraform. This makes Terraform forget the resource and is potentially dangerous for production-managed resources — use with care and approvals.
 
-<Callout icon="warning">
-  `prevent_destroy` is a safety mechanism. Do not circumvent it lightly for production resources. If destruction is truly required, make the removal explicit (for example, by modifying the lifecycle block) and ensure appropriate approvals are in place.
-</Callout>
+> **warning** `prevent_destroy` is a safety mechanism. Do not circumvent it lightly for production resources. If destruction is truly required, make the removal explicit (for example, by modifying the lifecycle block) and ensure appropriate approvals are in place.
 
 Comparing `prevent_destroy` to Azure Delete Lock
 
@@ -302,6 +292,4 @@ Further reading
 * Best practices for protecting production infrastructure in GitOps/IaC pipelines
 * Strategies for data migration and in-place upgrades to avoid destructive replacements
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/82cd6352-f026-4f6f-b739-634e56558de4/lesson/f996ed9f-6e8d-4f63-98ab-4a32d1ab6600" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/82cd6352-f026-4f6f-b739-634e56558de4/lesson/f996ed9f-6e8d-4f63-98ab-4a32d1ab6600)

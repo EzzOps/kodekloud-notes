@@ -50,9 +50,7 @@ What OTLP is
   <img alt="The image illustrates the OpenTelemetry Protocol (OTLP) and features a pyramid diagram depicting the OSI model layers from Physical to Application." />
 </Frame>
 
-<Callout icon="lightbulb">
-  OTLP is signal-agnostic: the same structural approach applies to traces, metrics, and logs. Typical transports are gRPC (preferred) and HTTP (Protobuf over HTTP; some mappings support JSON).
-</Callout>
+> **lightbulb** OTLP is signal-agnostic: the same structural approach applies to traces, metrics, and logs. Typical transports are gRPC (preferred) and HTTP (Protobuf over HTTP; some mappings support JSON).
 
 Primary OpenTelemetry signals
 
@@ -218,13 +216,9 @@ Best practices
 * Use the OpenTelemetry Collector to centralize processing (batching, sampling, enrichment) and flexible export to backends.
 * Instrumentation scopes help identify problematic libraries and track upgrades or regressions.
 
-<Callout icon="warning">
-  When designing telemetry pipelines, avoid embedding volatile identifiers (like pod names) as the only way to identify a service — rely on stable resource attributes (e.g., `service.name`) and add volatile metadata separately if needed.
-</Callout>
+> **warning** When designing telemetry pipelines, avoid embedding volatile identifiers (like pod names) as the only way to identify a service — rely on stable resource attributes (e.g., `service.name`) and add volatile metadata separately if needed.
 
 Summary
 OTLP is a signal-agnostic, Protobuf-based wire protocol that standardizes how traces, metrics, and logs are represented and transported. By combining resource attributes, instrumentation scope, and signal data into a nested, self-describing payload, OTLP makes telemetry portable and interoperable across instrumentation, collectors, and backends. Use the OpenTelemetry Collector and OTLP to decouple your instrumentation from vendor-specific formats and to build a flexible observability pipeline.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/972be380-d0fc-4dfe-b575-5e6ea283139b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/972be380-d0fc-4dfe-b575-5e6ea283139b)

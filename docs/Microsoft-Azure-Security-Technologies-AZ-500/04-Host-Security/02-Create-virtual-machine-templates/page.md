@@ -6,9 +6,7 @@ This article explains how to create and utilize virtual machine templates for st
 
 Virtual machine templates are essential for streamlining and standardizing the deployment of virtual environments within cloud infrastructures. These templates act as blueprints by encapsulating predefined configurations, applications, and operating system settings. Leveraging VM templates can significantly accelerate deployment processes, ensure consistency across multiple environments, and maintain compliance with organizational and regulatory standards.
 
-<Frame>
-  ![The image is a flowchart illustrating the creation of virtual machine templates, branching from a "Template" to "Development," "Production," and "Quality Assurance."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881849/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/virtual-machine-template-flowchart.jpg)
-</Frame>
+![The image is a flowchart illustrating the creation of virtual machine templates, branching from a "Template" to "Development," "Production," and "Quality Assurance."](https://kodekloud.com/kk-media/image/upload/v1752881849/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/virtual-machine-template-flowchart.jpg)
 
 For instance, you can take a base VM from Azure, apply necessary hardening rules, and then create a generalized image that serves as the standard for all future deployments. With this approach, you can craft different templates for development, production, and QA environments.
 
@@ -32,9 +30,7 @@ For instance, you can take a base VM from Azure, apply necessary hardening rules
 6. **Versioning and Updates:**\
    Versioned templates simplify management by ensuring that when new security patches or updates are released, they can be seamlessly integrated into subsequent deployments.
 
-<Frame>
-  ![The image outlines the benefits of creating virtual machine templates, including standardized deployments, customization, infrastructure as code, rapid scalability, consistent configuration, and versioning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881850/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/virtual-machine-templates-benefits.jpg)
-</Frame>
+![The image outlines the benefits of creating virtual machine templates, including standardized deployments, customization, infrastructure as code, rapid scalability, consistent configuration, and versioning.](https://kodekloud.com/kk-media/image/upload/v1752881850/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/virtual-machine-templates-benefits.jpg)
 
 ## Scenario: Creating a VM Template with Apache and Website Files
 
@@ -71,9 +67,7 @@ This indicates that several controls have failed (24 in this case). After applyi
 root@jump-vm:/home/kodekloud#
 ```
 
-<Callout icon="lightbulb">
-  Ensure that you carefully review the remediation script's output and address any persistent issues before proceeding to the next steps.
-</Callout>
+> **lightbulb** Ensure that you carefully review the remediation script's output and address any persistent issues before proceeding to the next steps.
 
 ### Step 2: Installing Apache
 
@@ -141,15 +135,11 @@ This should display the website's content, confirming that Apache is serving the
 
 Before accessing the website externally, ensure that the NSG allows traffic on port 80 (HTTP). In the Azure portal, navigate to the virtual machine (e.g., "jump-vm") and review its networking settings.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying a list of virtual machines, including their names, types, statuses, and other details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881851/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/azure-portal-virtual-machines-list.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying a list of virtual machines, including their names, types, statuses, and other details.](https://kodekloud.com/kk-media/image/upload/v1752881851/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/azure-portal-virtual-machines-list.jpg)
 
 If port 80 is not allowed, add a new inbound security rule for HTTP traffic:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface where a user is configuring networking settings for a virtual machine named "jump-vm." The user is adding an inbound security rule, selecting a service from a dropdown menu.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881852/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/azure-portal-networking-jump-vm.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface where a user is configuring networking settings for a virtual machine named "jump-vm." The user is adding an inbound security rule, selecting a service from a dropdown menu.](https://kodekloud.com/kk-media/image/upload/v1752881852/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/azure-portal-networking-jump-vm.jpg)
 
 After the update, refresh the website in your browser to confirm that the sample start bootstrap website is visible.
 
@@ -167,17 +157,13 @@ When capturing the VM, you are presented with two options:
 
 For this scenario, a generalized image is recommended. Provide a resource group and required details. You will be prompted to create a new image definition (for example, "webOS") and assign a version number (e.g., 1.0.0).
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating a virtual machine image, with options for setting gallery details, VM image definition, and version details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881853/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/azure-virtual-machine-image-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating a virtual machine image, with options for setting gallery details, VM image definition, and version details.](https://kodekloud.com/kk-media/image/upload/v1752881853/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/azure-virtual-machine-image-creation.jpg)
 
 Review all details and initiate the image creation process. Note that once a VM is generalized, it will no longer be usable, but the captured template can then be used for deploying new VMs with identical configurations.
 
 During this process, the VM will be stopped as an image is created:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen for creating a virtual machine image, with details like subscription, resource group, and region. A notification indicates that a virtual machine is being stopped.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881854/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/azure-portal-virtual-machine-image.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen for creating a virtual machine image, with details like subscription, resource group, and region. A notification indicates that a virtual machine is being stopped.](https://kodekloud.com/kk-media/image/upload/v1752881854/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/azure-portal-virtual-machine-image.jpg)
 
 After the image is created, you can verify the new VM image definition. From here, you also have the option of deploying a new VM or creating a VM scale set (VMSS) using this image.
 
@@ -189,31 +175,21 @@ To validate the template, deploy a new VM using the captured image:
 2. Select an appropriate VM size and name the machine (e.g., "VM-from-image").
 3. Configure the authentication method (password and/or SSH).
 
-<Callout icon="lightbulb">
-  License selection is not required as the image was created from an Ubuntu machine.
-</Callout>
+> **lightbulb** License selection is not required as the image was created from an Ubuntu machine.
 
 4. Choose a standard SSD and review all configurations.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a virtual machine, with options for setting a username, password, inbound port rules, and license type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881856/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/azure-portal-virtual-machine-setup.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a virtual machine, with options for setting a username, password, inbound port rules, and license type.](https://kodekloud.com/kk-media/image/upload/v1752881856/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/azure-portal-virtual-machine-setup.jpg)
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a virtual machine, specifically focusing on the disk configuration options. Various storage types like Premium SSD and Standard HDD are listed for selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881857/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/azure-portal-virtual-machine-disk-config.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a virtual machine, specifically focusing on the disk configuration options. Various storage types like Premium SSD and Standard HDD are listed for selection.](https://kodekloud.com/kk-media/image/upload/v1752881857/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/azure-portal-virtual-machine-disk-config.jpg)
 
 After final review, complete the deployment. Once the new VM is running, verify its accessibility by using its public IP address in a web browser.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page indicating that a deployment named "CreateVm-WebOS-20231002161148" is complete. It includes options to view deployment details and next steps, with a button to "Go to resource."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881858/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/azure-portal-deployment-complete-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page indicating that a deployment named "CreateVm-WebOS-20231002161148" is complete. It includes options to view deployment details and next steps, with a button to "Go to resource."](https://kodekloud.com/kk-media/image/upload/v1752881858/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/azure-portal-deployment-complete-2.jpg)
 
 Copy the public IP address and enter it into your browser. You should see the same website as configured earlier—demonstrating that the VM template successfully replicates all configurations and deployed files.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying details of a virtual machine named "vm-from-image," including its status, location, operating system, and networking information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881859/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/azure-portal-virtual-machine-details.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying details of a virtual machine named "vm-from-image," including its status, location, operating system, and networking information.](https://kodekloud.com/kk-media/image/upload/v1752881859/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-virtual-machine-templates/azure-portal-virtual-machine-details.jpg)
 
 ## Conclusion
 
@@ -225,6 +201,4 @@ This guide demonstrates the significant benefits of using virtual machine templa
 
 By converting a web server configured with Apache and a bootstrap website into a VM template, organizations can ensure that subsequent VM deployments maintain the same configuration integrity and security hardening. In the next section, we will explore strategies for enabling and securing remote access management for virtual machines.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d8d70777-3d80-4e41-803e-0929352de5e7/lesson/a046d6a3-1c05-4c5a-bca1-f9d16dea539a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d8d70777-3d80-4e41-803e-0929352de5e7/lesson/a046d6a3-1c05-4c5a-bca1-f9d16dea539a)

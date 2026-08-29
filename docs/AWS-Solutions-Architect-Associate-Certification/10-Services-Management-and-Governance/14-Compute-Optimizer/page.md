@@ -35,7 +35,7 @@ The primary advantages of using AWS Compute Optimizer include:
 
 The image below illustrates the five key features associated with cloud optimization using AWS Compute Optimizer:
 
-![The image lists five features related to cloud optimization: Performance Risk Analysis, Cost-saving Recommendations, EC2 Instance Type Recommendations, EBS Volume Recommendations, and Optimization for Fargate.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865305/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Compute-Optimizer/cloud-optimization-features-list.jpg)
+![The image lists five features related to cloud optimization: Performance Risk Analysis, Cost-saving Recommendations, EC2 Instance Type Recommendations, EBS Volume Recommendations, and Optimization for Fargate.](https://kodekloud.com/kk-media/image/upload/v1752865305/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Compute-Optimizer/cloud-optimization-features-list.jpg)
 
 ## Additional Resources
 

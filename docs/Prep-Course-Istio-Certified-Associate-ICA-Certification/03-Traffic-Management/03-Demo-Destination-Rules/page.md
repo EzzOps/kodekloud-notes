@@ -25,9 +25,7 @@ kube-public       Active   25m   kubernetes.io/metadata.name=kube-public
 kube-system       Active   25m   kubernetes.io/metadata.name=kube-system
 ```
 
-<Callout icon="lightbulb">
-  Namespaces must be labeled for Istio sidecar injection (or the pods must have the sidecar injected) for VirtualService/DestinationRule routing to take effect across namespaces.
-</Callout>
+> **lightbulb** Namespaces must be labeled for Istio sidecar injection (or the pods must have the sidecar injected) for VirtualService/DestinationRule routing to take effect across namespaces.
 
 ## Deploy the HelloWorld sample (v1 and v2)
 

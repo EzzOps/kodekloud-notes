@@ -37,13 +37,9 @@ Terragrunt will:
 | Keep shared configs lean | Include only widely used variables to reduce complexity. |
 | Verify relative paths    | Ensure the path passed to the function is correct.       |
 
-<Frame>
-  ![The image outlines best practices for "read\_terragrunt\_config," highlighting the need for resources to adapt dynamically and access input/output configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884356/notes-assets/images/Terragrunt-for-Beginners-read-terragrunt-config/best-practices-read-terragrunt-config.jpg)
-</Frame>
+![The image outlines best practices for "read\_terragrunt\_config," highlighting the need for resources to adapt dynamically and access input/output configurations.](https://kodekloud.com/kk-media/image/upload/v1752884356/notes-assets/images/Terragrunt-for-Beginners-read-terragrunt-config/best-practices-read-terragrunt-config.jpg)
 
-<Callout icon="lightbulb">
-  Use clear naming conventions in your `common.hcl` to avoid confusion when referencing nested attributes.
-</Callout>
+> **lightbulb** Use clear naming conventions in your `common.hcl` to avoid confusion when referencing nested attributes.
 
 ***
 

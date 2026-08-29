@@ -19,7 +19,7 @@ In this example, we have a Lambda function named "lambda-EventBridge". Follow th
 
 The image below shows the AWS Lambda interface for configuring an EventBridge trigger, including options for creating a new rule, naming the rule, and selecting a schedule expression:
 
-![The image shows an AWS Lambda interface for configuring a trigger using EventBridge (CloudWatch Events). It includes options to create a new rule, set a rule name, and choose a schedule expression.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859529/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-EventBridge-Integration-Demo/aws-lambda-eventbridge-trigger-config.jpg)
+![The image shows an AWS Lambda interface for configuring a trigger using EventBridge (CloudWatch Events). It includes options to create a new rule, set a rule name, and choose a schedule expression.](https://kodekloud.com/kk-media/image/upload/v1752859529/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-EventBridge-Integration-Demo/aws-lambda-eventbridge-trigger-config.jpg)
 
 Set the rule to run every minute by specifying the following schedule expression:
 
@@ -31,7 +31,7 @@ After adding the trigger, your Lambda function configuration will now include an
 
 The next image illustrates the Lambda console with the "lambda-eventBridge" function and the successfully added "EveryMinute" trigger:
 
-![The image shows an AWS Lambda console interface with a function named "lambda-eventBridge." It indicates that a trigger named "EveryMinute" has been successfully added to the function.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859530/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-EventBridge-Integration-Demo/aws-lambda-console-eventbridge-trigger.jpg)
+![The image shows an AWS Lambda console interface with a function named "lambda-eventBridge." It indicates that a trigger named "EveryMinute" has been successfully added to the function.](https://kodekloud.com/kk-media/image/upload/v1752859530/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-EventBridge-Integration-Demo/aws-lambda-console-eventbridge-trigger.jpg)
 
 ## 2. Verifying Permissions
 
@@ -96,7 +96,7 @@ Below is an example snippet from the CloudWatch logs:
 
 The image below displays a CloudWatch Logs page with log entries, timestamps, and messages:
 
-![The image shows an AWS CloudWatch Log Events page displaying log entries with timestamps and messages. The interface includes options for filtering and managing log data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859531/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-EventBridge-Integration-Demo/aws-cloudwatch-log-events-page.jpg)
+![The image shows an AWS CloudWatch Log Events page displaying log entries with timestamps and messages. The interface includes options for filtering and managing log data.](https://kodekloud.com/kk-media/image/upload/v1752859531/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-EventBridge-Integration-Demo/aws-cloudwatch-log-events-page.jpg)
 
 ## Conclusion
 

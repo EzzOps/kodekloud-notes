@@ -79,9 +79,7 @@ Leverage this function to build more robust and maintainable infrastructure code
 * [Terraform AWS VPC Module](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest)
 * [Working with Extra Arguments in Terragrunt](https://terragrunt.gruntwork.io/docs/features/extra-arguments/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/5775621f-5504-4da8-835d-661cda37a852/lesson/f36ff662-3b0c-44cd-8d3e-a8ae00a04013" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/5775621f-5504-4da8-835d-661cda37a852/lesson/f36ff662-3b0c-44cd-8d3e-a8ae00a04013)
 
 
 # path relative to include
@@ -104,9 +102,7 @@ In this lesson, we’ll dive into Terragrunt’s `path_relative_to_include` func
 | Modular Structures       | Build reusable, adaptable modules that survive folder reorganizations.          |
 | Remote State Segregation | Generate unique backend keys for each module, keeping your state isolated.      |
 
-<Callout icon="lightbulb">
-  When used without arguments, `path_relative_to_include()` returns the relative path from the current folder to where `common.hcl` (or your included file) lives.
-</Callout>
+> **lightbulb** When used without arguments, `path_relative_to_include()` returns the relative path from the current folder to where `common.hcl` (or your included file) lives.
 
 ## Typical Terragrunt Setup
 
@@ -167,6 +163,4 @@ Notice how the `Path` tag reflects this module’s folder relative to `common.hc
 * [Terragrunt Remote State Configuration](https://terragrunt.gruntwork.io/docs/features/keep-your-backend-configuration-dry/)
 * [Terraform AWS VPC Module](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/5775621f-5504-4da8-835d-661cda37a852/lesson/02079dcb-1fa9-4d49-aaf4-187525423e7c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/5775621f-5504-4da8-835d-661cda37a852/lesson/02079dcb-1fa9-4d49-aaf4-187525423e7c)

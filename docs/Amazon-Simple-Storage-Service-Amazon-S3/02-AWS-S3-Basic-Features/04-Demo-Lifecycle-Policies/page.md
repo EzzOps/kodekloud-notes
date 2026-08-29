@@ -29,7 +29,7 @@ In this walkthrough, you’ll learn how to automate object transitions and expir
 2. Click **Create bucket**, accept all defaults, and finish the wizard.
 3. In your new bucket, click **Upload**, then drag and drop a few test files and folders. Any sample data will do.
 
-![The image shows an AWS S3 upload interface on the left and a Windows File Explorer window on the right, displaying a list of files and folders.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869248/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Lifecycle-Policies/aws-s3-upload-windows-explorer.jpg)
+![The image shows an AWS S3 upload interface on the left and a Windows File Explorer window on the right, displaying a list of files and folders.](https://kodekloud.com/kk-media/image/upload/v1752869248/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Lifecycle-Policies/aws-s3-upload-windows-explorer.jpg)
 
 4. Open **Properties** for the bucket and confirm that the **Storage class** of your objects is **Standard**.
 
@@ -39,7 +39,7 @@ In this walkthrough, you’ll learn how to automate object transitions and expir
 
 Navigate to the **Management** tab of your bucket and click **Create lifecycle rule**.
 
-![The image shows an AWS S3 Management Console screen where lifecycle rules for objects are being configured, including options for filtering by prefix and object size, and setting lifecycle rule actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869249/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Lifecycle-Policies/aws-s3-lifecycle-rules-console.jpg)
+![The image shows an AWS S3 Management Console screen where lifecycle rules for objects are being configured, including options for filtering by prefix and object size, and setting lifecycle rule actions.](https://kodekloud.com/kk-media/image/upload/v1752869249/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Lifecycle-Policies/aws-s3-lifecycle-rules-console.jpg)
 
 You can define multiple rules to target different prefixes (`logs/`, `media/`) or object sizes.
 
@@ -55,14 +55,14 @@ You can define multiple rules to target different prefixes (`logs/`, `media/`) o
 * After 30 days: transition to **S3 Standard-IA**
 * After 60 days: transition to **S3 Glacier Instant Retrieval**
 
-![The image shows an AWS S3 Management Console screen where lifecycle rules for transitioning object storage classes are being configured. It includes options for moving current versions of objects and setting transition actions after a specified number of days.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869250/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Lifecycle-Policies/aws-s3-lifecycle-rules-configuration.jpg)
+![The image shows an AWS S3 Management Console screen where lifecycle rules for transitioning object storage classes are being configured. It includes options for moving current versions of objects and setting transition actions after a specified number of days.](https://kodekloud.com/kk-media/image/upload/v1752869250/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Lifecycle-Policies/aws-s3-lifecycle-rules-configuration.jpg)
 
 #### Non-Current Version Transitions
 
 * After 30 days: transition to **S3 Standard-IA**
 * After 90 days: transition to **S3 Glacier Deep Archive**
 
-![The image shows an AWS S3 management console screen where a lifecycle rule is being configured, including transitions to different storage classes and expiration actions for current and noncurrent object versions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869252/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Lifecycle-Policies/aws-s3-lifecycle-rule-configuration.jpg)
+![The image shows an AWS S3 management console screen where a lifecycle rule is being configured, including transitions to different storage classes and expiration actions for current and noncurrent object versions.](https://kodekloud.com/kk-media/image/upload/v1752869252/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Lifecycle-Policies/aws-s3-lifecycle-rule-configuration.jpg)
 
 Click **Create** to save **lifecycle-logs**.
 
@@ -84,7 +84,7 @@ Click **Create** to save **lifecycle-media**.
 
 Once both rules are enabled, the **Lifecycle configuration** page displays all active rules:
 
-![The image shows the Amazon S3 Management Console with a "Lifecycle configuration" page, displaying two lifecycle rules named "lifecycle-logs" and "lifecycle-media," both enabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869253/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Lifecycle-Policies/amazon-s3-lifecycle-configuration-console.jpg)
+![The image shows the Amazon S3 Management Console with a "Lifecycle configuration" page, displaying two lifecycle rules named "lifecycle-logs" and "lifecycle-media," both enabled.](https://kodekloud.com/kk-media/image/upload/v1752869253/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Lifecycle-Policies/amazon-s3-lifecycle-configuration-console.jpg)
 
 > **triangle-alert** It can take up to 24 hours for lifecycle policies to appear in the billing report and start transitions.
 

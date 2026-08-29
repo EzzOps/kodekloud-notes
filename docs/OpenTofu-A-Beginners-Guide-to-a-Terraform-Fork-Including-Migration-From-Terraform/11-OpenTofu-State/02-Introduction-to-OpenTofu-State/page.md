@@ -67,11 +67,9 @@ Search for `"private_ip"` to locate the instance’s private IP:
 * [OpenTofu Documentation](https://github.com/opentofu/opentofu)
 * [Terraform State Concepts](https://www.terraform.io/language/state)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/8ca03465-be1e-4d86-9269-2bc7d61f0ffb/lesson/cbf5d8e4-caae-4376-b0e3-3e21c49aab6d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/8ca03465-be1e-4d86-9269-2bc7d61f0ffb/lesson/cbf5d8e4-caae-4376-b0e3-3e21c49aab6d)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/8ca03465-be1e-4d86-9269-2bc7d61f0ffb/lesson/24ac715c-6752-4dc8-a138-0f29f255da3c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/8ca03465-be1e-4d86-9269-2bc7d61f0ffb/lesson/24ac715c-6752-4dc8-a138-0f29f255da3c)
 
 
 # Introduction to OpenTofu State
@@ -175,9 +173,7 @@ $ tofu apply -refresh=false
 Apply complete! Resources: 0 added, 0 changed, 0 destroyed
 ```
 
-<Callout icon="triangle-alert">
-  Skipping state refresh may speed up large operations but risks applying changes on outdated state. Only use this flag if you fully understand the consequences.
-</Callout>
+> **triangle-alert** Skipping state refresh may speed up large operations but risks applying changes on outdated state. Only use this flag if you fully understand the consequences.
 
 ## Example: Updating a Resource In-Place
 
@@ -255,12 +251,8 @@ OpenTofu uses these dependencies to, for example, create the database instance b
 | State Inspection & Tools | Manipulate or inspect state only with OpenTofu commands (e.g., `tofu state list`, `tofu state mv`). Do not edit the state file manually. |
 | Version Control          | Add `terraform.tfstate` and `terraform.tfstate.backup` to `.gitignore` to prevent accidental commits.                                    |
 
-<Callout icon="lightbulb">
-  Configure remote backends to enable [state locking and consistency](https://www.terraform.io/language/settings/backends). This prevents multiple users from making concurrent changes.
-</Callout>
+> **lightbulb** Configure remote backends to enable [state locking and consistency](https://www.terraform.io/language/settings/backends). This prevents multiple users from making concurrent changes.
 
 OpenTofu’s state file is the backbone of reliable, idempotent infrastructure as code. Proper management—using secure backends, avoiding manual edits, and staying alert to drift—ensures predictable deployments and clean collaboration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/8ca03465-be1e-4d86-9269-2bc7d61f0ffb/lesson/1a146877-a837-44a5-9f6a-ba0ea050ecbf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/8ca03465-be1e-4d86-9269-2bc7d61f0ffb/lesson/1a146877-a837-44a5-9f6a-ba0ea050ecbf)

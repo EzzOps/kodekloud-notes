@@ -48,9 +48,7 @@ Every time a new Docker image is built by Jenkins, the image tag in this file mu
 
 Below is a screenshot of Argo CD showing an application (solar-system-argo-app) in an OutOfSync state:
 
-<Frame>
-  ![The image shows an Argo CD interface displaying an application named "solar-system-argo-app" with a status of "OutOfSync" and "Missing" health status. It includes a visual representation of the application's components, such as "solar-system" and "mongo-db-creds."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879729/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Update-Image-Tag/argo-cd-solar-system-app-outofsync.jpg)
-</Frame>
+![The image shows an Argo CD interface displaying an application named "solar-system-argo-app" with a status of "OutOfSync" and "Missing" health status. It includes a visual representation of the application's components, such as "solar-system" and "mongo-db-creds."](https://kodekloud.com/kk-media/image/upload/v1752879729/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Update-Image-Tag/argo-cd-solar-system-app-outofsync.jpg)
 
 To verify that the Kubernetes cluster has not yet applied the deployment, run:
 
@@ -147,15 +145,11 @@ pipeline {
 }
 ```
 
-<Callout icon="lightbulb">
-  To generate the Gitea token, navigate to your repository’s settings (in Gitea, for example) and create a new access token with read/write repository permissions.
-</Callout>
+> **lightbulb** To generate the Gitea token, navigate to your repository’s settings (in Gitea, for example) and create a new access token with read/write repository permissions.
 
 The following image illustrates the Gitea token generation process:
 
-<Frame>
-  ![The image shows a user interface for managing access tokens in Gitea, where a new token named "jenkins-token" is being generated with repository and organization access settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879730/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Update-Image-Tag/gitea-access-tokens-jenkins-token.jpg)
-</Frame>
+![The image shows a user interface for managing access tokens in Gitea, where a new token named "jenkins-token" is being generated with repository and organization access settings.](https://kodekloud.com/kk-media/image/upload/v1752879730/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Update-Image-Tag/gitea-access-tokens-jenkins-token.jpg)
 
 ─────────────────────────────────────────────
 
@@ -163,9 +157,7 @@ The following image illustrates the Gitea token generation process:
 
 Once the Jenkins pipeline runs, a new feature branch (for example, feature-1) is created in the manifest repository with the updated deployment configurations. You can verify this by inspecting the repository branches:
 
-<Frame>
-  ![The image shows a Git repository interface with a branch named "feature-1" and files related to Kubernetes, including "deployment.yml," "secret.yml," and "service.yml." A recent update to the Docker image is noted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879731/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Update-Image-Tag/git-repo-feature-1-kubernetes-files.jpg)
-</Frame>
+![The image shows a Git repository interface with a branch named "feature-1" and files related to Kubernetes, including "deployment.yml," "secret.yml," and "service.yml." A recent update to the Docker image is noted.](https://kodekloud.com/kk-media/image/upload/v1752879731/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Update-Image-Tag/git-repo-feature-1-kubernetes-files.jpg)
 
 Keep in mind that Argo CD is configured to monitor only the main branch. Since these updates reside in a feature branch, they are not yet deployed. Once you initiate and merge a pull request from the feature branch into main, Argo CD will detect the changes and perform a sync.
 
@@ -197,21 +189,15 @@ spec:
 
 After performing a manual refresh in Argo CD, the application dashboard should confirm the target revision and the updated image. Below is a screenshot of the Argo CD dashboard:
 
-<Frame>
-  ![The image shows a dashboard from Argo CD, displaying details of an application named "SOLAR-SYSTEM-ARGO-APP," including its project, cluster, namespace, and sync status. The application is currently out of sync and missing health status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879732/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Update-Image-Tag/argo-cd-solar-system-dashboard.jpg)
-</Frame>
+![The image shows a dashboard from Argo CD, displaying details of an application named "SOLAR-SYSTEM-ARGO-APP," including its project, cluster, namespace, and sync status. The application is currently out of sync and missing health status.](https://kodekloud.com/kk-media/image/upload/v1752879732/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Update-Image-Tag/argo-cd-solar-system-dashboard.jpg)
 
 Furthermore, the Jenkins dashboard provides pipeline activity details for branch-specific builds and pull requests:
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying a list of pipeline activities for a project named "solar-system" under the "Gitea-Organization." It includes details such as status, run number, commit ID, branch, message, duration, and completion time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879734/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Update-Image-Tag/jenkins-dashboard-solar-system-pipelines.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying a list of pipeline activities for a project named "solar-system" under the "Gitea-Organization." It includes details such as status, run number, commit ID, branch, message, duration, and completion time.](https://kodekloud.com/kk-media/image/upload/v1752879734/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Update-Image-Tag/jenkins-dashboard-solar-system-pipelines.jpg)
 
 Webhook configurations in your repository settings ensure that pull request events automatically trigger the Jenkins pipeline:
 
-<Frame>
-  ![The image shows a settings page for configuring webhook events related to issues and pull requests, with various options checked for different types of events. There are also fields for branch filtering and authorization headers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879735/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Update-Image-Tag/webhook-settings-configuration-page.jpg)
-</Frame>
+![The image shows a settings page for configuring webhook events related to issues and pull requests, with various options checked for different types of events. There are also fields for branch filtering and authorization headers.](https://kodekloud.com/kk-media/image/upload/v1752879735/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Update-Image-Tag/webhook-settings-configuration-page.jpg)
 
 ─────────────────────────────────────────────
 
@@ -223,6 +209,4 @@ Moving forward, we will explore automating the pull request process to merge man
 
 Thank you.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/fb6b2c83-178c-4962-b4e6-ca5528721170/lesson/8b770c43-87be-405a-906a-bb5ea4e468f0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/fb6b2c83-178c-4962-b4e6-ca5528721170/lesson/8b770c43-87be-405a-906a-bb5ea4e468f0)

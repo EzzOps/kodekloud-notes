@@ -8,9 +8,7 @@ In this lesson, you'll learn how to use command-line arguments in shell scripts 
 
 When a shell script runs, it automatically splits the command and its arguments. The script name is stored in the variable `$0`, while the first user-provided argument is stored in `$1`. Subsequent arguments are held in `$2`, `$3`, and so on. By replacing hard-coded values with these built-in variables, your script becomes universally reusable for any mission.
 
-<Callout icon="lightbulb">
-  Using meaningful variable names (like `mission_name` instead of `$1` everywhere) improves the readability and maintainability of your code.
-</Callout>
+> **lightbulb** Using meaningful variable names (like `mission_name` instead of `$1` everywhere) improves the readability and maintainability of your code.
 
 Below is the original version of the script that requires manual editing of the mission name:
 
@@ -58,14 +56,8 @@ echo "Status of launch: $rocket_status"
 
 In the revised script, the mission name is assigned from the first command-line argument (`$1`) to a variable called `mission_name`. This substitution makes the code reusable for any mission, eliminating the need for manual changes before each run.
 
-<Callout icon="lightbulb">
-  Always design your scripts to be self-contained and reusable by allowing user inputs through command-line arguments rather than hard-coding values. This approach minimizes errors and improves efficiency.
-</Callout>
+> **lightbulb** Always design your scripts to be self-contained and reusable by allowing user inputs through command-line arguments rather than hard-coding values. This approach minimizes errors and improves efficiency.
 
-<Frame>
-  ![The image provides best practices for scripting: design scripts to be reusable, avoid pre-run edits, and use command line arguments for inputs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884063/notes-assets/images/Shell-Scripts-for-Beginners-Command-Line-Arguments/frame_200.jpg)
-</Frame>
+![The image provides best practices for scripting: design scripts to be reusable, avoid pre-run edits, and use command line arguments for inputs.](https://kodekloud.com/kk-media/image/upload/v1752884063/notes-assets/images/Shell-Scripts-for-Beginners-Command-Line-Arguments/frame_200.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/2f0c9f74-f250-49aa-acaa-6a10dda7516f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/2f0c9f74-f250-49aa-acaa-6a10dda7516f)

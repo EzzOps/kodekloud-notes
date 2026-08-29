@@ -198,8 +198,7 @@ variable "length" {
 
 Now, when you apply Terraform commands, the configuration enforces a minimum length. For example:
 
-<Callout icon="lightbulb">
-  When applying with a length of 5:
+> **lightbulb** When applying with a length of 5:
 
   ```bash theme={null}
   $ terraform apply -var=length=5
@@ -216,10 +215,8 @@ Now, when you apply Terraform commands, the configuration enforces a minimum len
   Outputs:
   password = &(1Beiaq)
   ```
-</Callout>
 
-<Callout icon="lightbulb">
-  When applying with a length of 12:
+> **lightbulb** When applying with a length of 12:
 
   ```bash theme={null}
   $ terraform apply -var=length=12
@@ -236,7 +233,6 @@ Now, when you apply Terraform commands, the configuration enforces a minimum len
   Outputs:
   password = 8B@}{cUzrZ7
   ```
-</Callout>
 
 This demonstrates how conditional expressions can enforce configuration constraints and dynamically adjust resource properties in Terraform.
 
@@ -248,8 +244,6 @@ For more detailed guides and best practices, check out the following links:
 * [Terraform Registry](https://registry.terraform.io/)
 * [Getting Started with Terraform](https://learn.hashicorp.com/terraform)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/cdfc2941-5d41-4d7c-b701-cddd299de4c5/lesson/ebc671d1-4c99-4da8-a58d-1a76acc4c066" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/cdfc2941-5d41-4d7c-b701-cddd299de4c5/lesson/ebc671d1-4c99-4da8-a58d-1a76acc4c066)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/cdfc2941-5d41-4d7c-b701-cddd299de4c5/lesson/adfa642b-22f5-4476-9f1a-40b0e5d2c834" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/cdfc2941-5d41-4d7c-b701-cddd299de4c5/lesson/adfa642b-22f5-4476-9f1a-40b0e5d2c834)

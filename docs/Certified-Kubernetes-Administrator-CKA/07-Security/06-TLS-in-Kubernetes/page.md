@@ -26,7 +26,7 @@ Below is an overview of the main Kubernetes components and the associated certif
 3. **Kubelet on Worker Nodes**\
    On each worker node, the kubelet service exposes an HTTPS endpoint that communicates with the API server for monitoring and management. This service uses its own certificate and key pair (typically named `kubelet.cert` and `kubelet.key`).
 
-![The image illustrates server certificates for Kube-API, ETCD, and Kubelet servers, showing their respective certificate and key files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869977/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-in-Kubernetes/frame_240.jpg)
+![The image illustrates server certificates for Kube-API, ETCD, and Kubelet servers, showing their respective certificate and key files.](https://kodekloud.com/kk-media/image/upload/v1752869977/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-in-Kubernetes/frame_240.jpg)
 
 ### Client Components and Their Certificates
 
@@ -46,7 +46,7 @@ Several components operate as clients and require authentication when connecting
 
 The Kube API Server facilitates secure communications with both the ETCD server and the kubelets. For instance, when connecting to the ETCD server, the API server can either reuse its HTTPS service certificates or use a dedicated certificate pair. Likewise, interactions with kubelets can leverage either the API server’s default certificate pair or a separately generated set of certificates.
 
-![The image illustrates the client certificates and keys used for authentication between Kubernetes components like Kube-API Server, ETCD Server, Kube-Scheduler, and others.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869978/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-in-Kubernetes/frame_390.jpg)
+![The image illustrates the client certificates and keys used for authentication between Kubernetes components like Kube-API Server, ETCD Server, Kube-Scheduler, and others.](https://kodekloud.com/kk-media/image/upload/v1752869978/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-in-Kubernetes/frame_390.jpg)
 
 ### Grouping Certificates for Enhanced Management
 
@@ -61,7 +61,7 @@ For easier certificate management, you can group TLS certificates into two main 
 
 All certificates must be signed by a Certificate Authority. Kubernetes clusters require at least one CA, though multiple CAs may be used for additional segregation (for example, one CA for general cluster services and another exclusively for ETCD). In this guide, we use a single CA for simplicity. The CA itself has a certificate and key pair, typically named `CA.crt` and `CA.key`.
 
-![The image illustrates client and server certificates for Kubernetes components, including admin, scheduler, controller-manager, kube-proxy, etcd, kube-api, and kubelet servers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869979/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-in-Kubernetes/frame_420.jpg)
+![The image illustrates client and server certificates for Kubernetes components, including admin, scheduler, controller-manager, kube-proxy, etcd, kube-api, and kubelet servers.](https://kodekloud.com/kk-media/image/upload/v1752869979/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-in-Kubernetes/frame_420.jpg)
 
 This overview on TLS certificates in Kubernetes sets the foundation for generating and managing these certificates to secure your cluster communications effectively. Happy securing!
 

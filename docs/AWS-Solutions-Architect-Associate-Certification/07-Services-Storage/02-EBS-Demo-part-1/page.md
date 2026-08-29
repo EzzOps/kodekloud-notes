@@ -23,11 +23,11 @@ Switch your AWS console to the US East 1 region and follow these steps to create
 
 Once created, the volume's status will be "available."
 
-![The image shows an AWS EC2 dashboard displaying a list of Elastic Block Store (EBS) volumes, with details about a specific volume highlighted, including its ID, size, type, and status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865948/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS-Demo-part-1/aws-ec2-dashboard-ebs-volumes.jpg)
+![The image shows an AWS EC2 dashboard displaying a list of Elastic Block Store (EBS) volumes, with details about a specific volume highlighted, including its ID, size, type, and status.](https://kodekloud.com/kk-media/image/upload/v1752865948/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS-Demo-part-1/aws-ec2-dashboard-ebs-volumes.jpg)
 
 You may assign a descriptive name to the volume—such as "demo volume." After naming it, select **Actions** and choose **Attach Volume**. The console will display EC2 instances in the same Availability Zone (server one and server two). Select server one and note that the device is designated as `/dev/sdf`. On newer Linux kernels, this device might be automatically renamed (for example, to `/dev/xvdf`).
 
-![The image shows an AWS EC2 interface for attaching a volume to an instance, with options to select the instance and device name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865950/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS-Demo-part-1/aws-ec2-attach-volume-interface.jpg)
+![The image shows an AWS EC2 interface for attaching a volume to an instance, with options to select the instance and device name.](https://kodekloud.com/kk-media/image/upload/v1752865950/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS-Demo-part-1/aws-ec2-attach-volume-interface.jpg)
 
 After confirming the attachment, the volume becomes connected to the selected instance.
 
@@ -199,11 +199,11 @@ To demonstrate the detachable nature of an EBS volume, perform these steps:
 
 2. In the AWS console, navigate to the list of EBS volumes. Select the volume, then choose **Actions** > **Detach Volume**.
 
-![The image shows an AWS EC2 dashboard displaying a list of Elastic Block Store (EBS) volumes, with details of a selected volume named "demo-volume" highlighted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865952/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS-Demo-part-1/aws-ec2-ebs-volumes-dashboard.jpg)
+![The image shows an AWS EC2 dashboard displaying a list of Elastic Block Store (EBS) volumes, with details of a selected volume named "demo-volume" highlighted.](https://kodekloud.com/kk-media/image/upload/v1752865952/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS-Demo-part-1/aws-ec2-ebs-volumes-dashboard.jpg)
 
 Confirm the detachment using the dialog provided:
 
-![The image shows an AWS EC2 management console with a pop-up confirmation dialog asking if the user wants to detach a specific volume. The interface includes options for managing instances, images, and network security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865954/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS-Demo-part-1/aws-ec2-detach-volume-dialog.jpg)
+![The image shows an AWS EC2 management console with a pop-up confirmation dialog asking if the user wants to detach a specific volume. The interface includes options for managing instances, images, and network security.](https://kodekloud.com/kk-media/image/upload/v1752865954/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS-Demo-part-1/aws-ec2-detach-volume-dialog.jpg)
 
 3. Reattach the volume to server two by selecting **Attach Volume** from the **Actions** menu and specifying server two as the target.
 

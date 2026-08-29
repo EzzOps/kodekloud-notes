@@ -43,7 +43,7 @@ Steps:
 2. Select `metrics-filter`, then **Add permissions → Attach policies**.
 3. Search for and attach **CloudWatchAgentServerPolicy**.
 
-![The image shows an AWS Identity and Access Management (IAM) console screen for a role named "metrics-filter," displaying its summary and permissions policies. Two policies are attached: "cloudwatch\_logs\_ec2\_iam\_role" and "CloudWatchAgentServerPolicy."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862434/notes-assets/images/AWS-CloudWatch-Demo-Cloudwatch-agent-to-setup-SSH-connection-failure-alert-dashboard-for-EC2-instance/aws-iam-console-metrics-filter-policies.jpg)
+![The image shows an AWS Identity and Access Management (IAM) console screen for a role named "metrics-filter," displaying its summary and permissions policies. Two policies are attached: "cloudwatch\_logs\_ec2\_iam\_role" and "CloudWatchAgentServerPolicy."](https://kodekloud.com/kk-media/image/upload/v1752862434/notes-assets/images/AWS-CloudWatch-Demo-Cloudwatch-agent-to-setup-SSH-connection-failure-alert-dashboard-for-EC2-instance/aws-iam-console-metrics-filter-policies.jpg)
 
 ***
 
@@ -59,9 +59,9 @@ Steps:
 5. Expand **Advanced details** and assign the updated IAM role (`metrics-filter`).
 6. Click **Launch instance**.
 
-![The image shows an AWS EC2 console interface for launching an instance, with options for selecting an Amazon Machine Image (AMI) and instance type. The summary section on the right provides details about the selected configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862436/notes-assets/images/AWS-CloudWatch-Demo-Cloudwatch-agent-to-setup-SSH-connection-failure-alert-dashboard-for-EC2-instance/aws-ec2-launch-instance-console.jpg)
+![The image shows an AWS EC2 console interface for launching an instance, with options for selecting an Amazon Machine Image (AMI) and instance type. The summary section on the right provides details about the selected configuration.](https://kodekloud.com/kk-media/image/upload/v1752862436/notes-assets/images/AWS-CloudWatch-Demo-Cloudwatch-agent-to-setup-SSH-connection-failure-alert-dashboard-for-EC2-instance/aws-ec2-launch-instance-console.jpg)
 
-![The image shows an AWS EC2 instance configuration page, where options for security groups, storage, and instance details are being set up before launching an instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862437/notes-assets/images/AWS-CloudWatch-Demo-Cloudwatch-agent-to-setup-SSH-connection-failure-alert-dashboard-for-EC2-instance/aws-ec2-instance-configuration-page.jpg)
+![The image shows an AWS EC2 instance configuration page, where options for security groups, storage, and instance details are being set up before launching an instance.](https://kodekloud.com/kk-media/image/upload/v1752862437/notes-assets/images/AWS-CloudWatch-Demo-Cloudwatch-agent-to-setup-SSH-connection-failure-alert-dashboard-for-EC2-instance/aws-ec2-instance-configuration-page.jpg)
 
 ***
 
@@ -69,7 +69,7 @@ Steps:
 
 Wait for your instance to enter the **running** state and pass status checks.
 
-![The image shows an AWS EC2 management console with one instance listed, named "cloudwatch-agent," which is in a pending state. The console displays various details such as instance ID, type, and status checks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862438/notes-assets/images/AWS-CloudWatch-Demo-Cloudwatch-agent-to-setup-SSH-connection-failure-alert-dashboard-for-EC2-instance/aws-ec2-console-cloudwatch-agent-pending.jpg)
+![The image shows an AWS EC2 management console with one instance listed, named "cloudwatch-agent," which is in a pending state. The console displays various details such as instance ID, type, and status checks.](https://kodekloud.com/kk-media/image/upload/v1752862438/notes-assets/images/AWS-CloudWatch-Demo-Cloudwatch-agent-to-setup-SSH-connection-failure-alert-dashboard-for-EC2-instance/aws-ec2-console-cloudwatch-agent-pending.jpg)
 
 ***
 
@@ -135,7 +135,7 @@ Create `cloudwatch-agent-config.json` in your home directory:
 1. Open the CloudWatch console and go to **Logs → Log groups**.
 2. Click **Create log group**, name it `login-monitoring`, and configure retention as needed.
 
-![The image shows an AWS CloudWatch interface displaying details of a log group named "login-monitoring," including its ARN, creation time, and retention settings. The interface also shows options for configuring anomaly detection and managing log streams.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862440/notes-assets/images/AWS-CloudWatch-Demo-Cloudwatch-agent-to-setup-SSH-connection-failure-alert-dashboard-for-EC2-instance/aws-cloudwatch-login-monitoring-log-group.jpg)
+![The image shows an AWS CloudWatch interface displaying details of a log group named "login-monitoring," including its ARN, creation time, and retention settings. The interface also shows options for configuring anomaly detection and managing log streams.](https://kodekloud.com/kk-media/image/upload/v1752862440/notes-assets/images/AWS-CloudWatch-Demo-Cloudwatch-agent-to-setup-SSH-connection-failure-alert-dashboard-for-EC2-instance/aws-cloudwatch-login-monitoring-log-group.jpg)
 
 *No manual log streams needed: the agent creates one per EC2 instance.*
 
@@ -182,11 +182,11 @@ tail -f /opt/aws/amazon-cloudwatch-agent/logs/amazon-cloudwatch-agent.log
 
 Back in the CloudWatch console, navigate to **Logs → Log groups → login-monitoring** and refresh. You’ll see one log stream per instance.
 
-![The image shows an AWS CloudWatch console displaying details of a log group named "login-monitoring," including log streams and configuration options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862442/notes-assets/images/AWS-CloudWatch-Demo-Cloudwatch-agent-to-setup-SSH-connection-failure-alert-dashboard-for-EC2-instance/aws-cloudwatch-login-monitoring-console.jpg)
+![The image shows an AWS CloudWatch console displaying details of a log group named "login-monitoring," including log streams and configuration options.](https://kodekloud.com/kk-media/image/upload/v1752862442/notes-assets/images/AWS-CloudWatch-Demo-Cloudwatch-agent-to-setup-SSH-connection-failure-alert-dashboard-for-EC2-instance/aws-cloudwatch-login-monitoring-console.jpg)
 
 Click your instance’s log stream to inspect log events:
 
-![The image shows an AWS CloudWatch log events page displaying a list of log entries with timestamps and messages. The interface includes options for filtering and managing the logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862443/notes-assets/images/AWS-CloudWatch-Demo-Cloudwatch-agent-to-setup-SSH-connection-failure-alert-dashboard-for-EC2-instance/aws-cloudwatch-log-events-page.jpg)
+![The image shows an AWS CloudWatch log events page displaying a list of log entries with timestamps and messages. The interface includes options for filtering and managing the logs.](https://kodekloud.com/kk-media/image/upload/v1752862443/notes-assets/images/AWS-CloudWatch-Demo-Cloudwatch-agent-to-setup-SSH-connection-failure-alert-dashboard-for-EC2-instance/aws-cloudwatch-log-events-page.jpg)
 
 ***
 

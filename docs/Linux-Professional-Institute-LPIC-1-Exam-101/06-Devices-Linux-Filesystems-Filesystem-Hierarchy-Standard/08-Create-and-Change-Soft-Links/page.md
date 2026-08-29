@@ -21,9 +21,7 @@ Access: (0640/-rw-r-----)  Uid: (1000/aaron)  Gid: (1005/family)
 | Links | Count of directory entries referencing this inode (starts at 1 for a new file) |
 | Data  | Actual content blocks on disk                                                  |
 
-<Callout icon="lightbulb">
-  When you open or read a file, the kernel looks up its name, retrieves the inode (e.g., `52946177`), and accesses the data blocks. Hard links simply give you multiple names for the same inode.
-</Callout>
+> **lightbulb** When you open or read a file, the kernel looks up its name, retrieves the inode (e.g., `52946177`), and accesses the data blocks. Hard links simply give you multiple names for the same inode.
 
 ## Sharing Files Without Duplication
 
@@ -81,10 +79,8 @@ rm /home/jane/Pictures/family_dog.jpg
 | Copy      | +100%      | 1 each     | Yes                  |
 | Hard Link | +0%        | >1         | No (shared inode)    |
 
-<Callout icon="triangle-alert">
-  * You cannot create hard links to directories (prevents filesystem loops).
+> **triangle-alert** * You cannot create hard links to directories (prevents filesystem loops).
   * Hard links must reside on the **same** filesystem—cross-device linking is not allowed.
-</Callout>
 
 ## Managing Permissions for Shared Files
 
@@ -111,9 +107,7 @@ Now both can modify the shared file seamlessly.
 * [ln(1) — Make Links](https://man7.org/linux/man-pages/man1/ln.1.html)
 * [Understanding Linux Filesystems](https://www.kernel.org/doc/html/latest/filesystems/index.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/43f1c7d9-3aa0-4464-830d-6676106126a1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/43f1c7d9-3aa0-4464-830d-6676106126a1)
 
 
 # Create and Change Soft Links

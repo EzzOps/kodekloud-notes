@@ -20,7 +20,7 @@ Originally, Docker was the sole supported container runtime for Kubernetes. To e
 
 Containerd is now CRI-compatible and functions as a standalone component that interacts directly with Kubernetes. Thanks to this change, Kubernetes no longer depends on Docker’s additional tools since it manages container operations natively.
 
-![The image illustrates container runtimes, showing rkt, containerd, and Docker, with Kubernetes using the Container Runtime Interface (CRI). Docker is marked as deprecated.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869700/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-A-note-on-Docker-Deprecation/frame_70.jpg)
+![The image illustrates container runtimes, showing rkt, containerd, and Docker, with Kubernetes using the Container Runtime Interface (CRI). Docker is marked as deprecated.](https://kodekloud.com/kk-media/image/upload/v1752869700/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-A-note-on-Docker-Deprecation/frame_70.jpg)
 
 ## Docker's Role in Modern Development
 

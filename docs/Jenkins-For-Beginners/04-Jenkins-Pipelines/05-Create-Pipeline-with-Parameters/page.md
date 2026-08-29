@@ -133,27 +133,21 @@ Parameterizing your pipeline job enables a single job to run across branches and
 * In Jenkins Classic UI, click **New Item**.
 * Name the job (e.g., "parameterized-pipeline-job") and select the **Pipeline** project type.
 
-<Frame>
-  ![The image shows a Jenkins interface for creating a new item, with options to select different project types such as Freestyle project, Pipeline, Multi-configuration project, and Folder. The item name "parameterized-pipeline-job" is entered in the text field.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879497/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/jenkins-new-item-parameterized-pipeline.jpg)
-</Frame>
+![The image shows a Jenkins interface for creating a new item, with options to select different project types such as Freestyle project, Pipeline, Multi-configuration project, and Folder. The item name "parameterized-pipeline-job" is entered in the text field.](https://kodekloud.com/kk-media/image/upload/v1752879497/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/jenkins-new-item-parameterized-pipeline.jpg)
 
 ### 2. Configure Source Control Management (SCM)
 
 * Enter the repository URL for your pipeline script.
 * Specify the branch. Initially, use the test branch by setting the script path to `Jenkinsfile`.
 
-<Frame>
-  ![The image shows a configuration page for a parameterized pipeline job, with various options like discarding old builds, GitHub project integration, and build triggers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879498/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/parameterized-pipeline-job-config.jpg)
-</Frame>
+![The image shows a configuration page for a parameterized pipeline job, with various options like discarding old builds, GitHub project integration, and build triggers.](https://kodekloud.com/kk-media/image/upload/v1752879498/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/parameterized-pipeline-job-config.jpg)
 
 ### 3. Run a Quick Build
 
 * Click **Apply** and then **Build Now** to validate the configuration.
 * The run should display the build and test stages, along with the deployment phase. Use the Blue Ocean interface to view detailed logs.
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying a parameterized pipeline job with various stages, including "Checkout SCM," "Tool Install," "Maven Version," "Build," "Test," "Local Deployment," and "Integration Test." The stages are marked with checkmarks indicating completion.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879500/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/jenkins-dashboard-parameterized-pipeline.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying a parameterized pipeline job with various stages, including "Checkout SCM," "Tool Install," "Maven Version," "Build," "Test," "Local Deployment," and "Integration Test." The stages are marked with checkmarks indicating completion.](https://kodekloud.com/kk-media/image/upload/v1752879500/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/jenkins-dashboard-parameterized-pipeline.jpg)
 
 ### 4. Enable Parameterization
 
@@ -166,17 +160,11 @@ Parameterizing your pipeline job enables a single job to run across branches and
 | APP\_PORT    | String | 6767          | The port on which the application will run during integration testing.                            |
 | SLEEP\_TIME  | Choice | 5s            | Sets the sleep duration before the integration test. Choices include: 5s, 10s, 15s, 20s, and 25s. |
 
-<Frame>
-  ![The image shows a Jenkins configuration screen for a parameterized pipeline job, with a string parameter named "BRANCH\_NAME" set to a default value of "main."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879501/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/jenkins-parameterized-pipeline-branch-name.jpg)
-</Frame>
+![The image shows a Jenkins configuration screen for a parameterized pipeline job, with a string parameter named "BRANCH\_NAME" set to a default value of "main."](https://kodekloud.com/kk-media/image/upload/v1752879501/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/jenkins-parameterized-pipeline-branch-name.jpg)
 
-<Frame>
-  ![The image shows a Jenkins configuration screen for a parameterized pipeline job, with a string parameter named "APP\_PORT" set to a default value of 6767.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879502/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/jenkins-parameterized-pipeline-app-port.jpg)
-</Frame>
+![The image shows a Jenkins configuration screen for a parameterized pipeline job, with a string parameter named "APP\_PORT" set to a default value of 6767.](https://kodekloud.com/kk-media/image/upload/v1752879502/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/jenkins-parameterized-pipeline-app-port.jpg)
 
-<Frame>
-  ![The image shows a configuration screen for a parameterized pipeline job, where a choice parameter named "SLEEP\_TIME" is being set with options ranging from 5s to 25s.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879503/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/parameterized-pipeline-sleep-time-config.jpg)
-</Frame>
+![The image shows a configuration screen for a parameterized pipeline job, where a choice parameter named "SLEEP\_TIME" is being set with options ranging from 5s to 25s.](https://kodekloud.com/kk-media/image/upload/v1752879503/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/parameterized-pipeline-sleep-time-config.jpg)
 
 ### 5. Parameterizing the Pipeline Script
 
@@ -225,24 +213,18 @@ stage('Integration Testing') {
 }
 ```
 
-<Callout icon="lightbulb">
-  Remember to use double quotes in shell commands when referencing parameters to allow for proper variable substitution.
-</Callout>
+> **lightbulb** Remember to use double quotes in shell commands when referencing parameters to allow for proper variable substitution.
 
 ### 6. Triggering Parameterized Builds
 
 * After committing the changes to the repository (for example, on the test branch), refresh the Jenkins job page. You should now see a **Build with Parameters** option.
 * Clicking on **Build with Parameters** allows you to adjust default values (e.g., switching the branch to `test` or setting the sleep time to `5s`) before triggering the build.
 
-<Frame>
-  ![The image shows a Jenkins dashboard for a parameterized pipeline job, displaying build status, test result trends, and a successful build process with various stages completed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879505/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/jenkins-dashboard-parameterized-pipeline-2.jpg)
-</Frame>
+![The image shows a Jenkins dashboard for a parameterized pipeline job, displaying build status, test result trends, and a successful build process with various stages completed.](https://kodekloud.com/kk-media/image/upload/v1752879505/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/jenkins-dashboard-parameterized-pipeline-2.jpg)
 
 * Once the build starts, you can use Blue Ocean to review detailed logs.
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying the activity of a parameterized pipeline job, with details about recent runs, their status, duration, and completion time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879506/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/jenkins-dashboard-parameterized-pipeline-3.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying the activity of a parameterized pipeline job, with details about recent runs, their status, duration, and completion time.](https://kodekloud.com/kk-media/image/upload/v1752879506/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/jenkins-dashboard-parameterized-pipeline-3.jpg)
 
 The logs will confirm that the parameters (sleep time, port, branch name) are correctly substituted, as shown below:
 
@@ -293,17 +275,11 @@ pipeline {
 
 Commit these changes and trigger a new build, selecting the **main** branch and an appropriate sleep time (for example, `15s`). The build log will reflect the updated parameters, and the integration testing stage will pause for the specified duration before proceeding.
 
-<Frame>
-  ![The image shows a Jenkins pipeline interface with a job named "parameterized-pipeline-job" that has successfully completed several stages, including Maven Version, Build, Test, Local Deployment, and Integration Testing. The details of the Maven Version stage are expanded, showing various steps and their execution times.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879507/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/jenkins-pipeline-parameterized-job.jpg)
-</Frame>
+![The image shows a Jenkins pipeline interface with a job named "parameterized-pipeline-job" that has successfully completed several stages, including Maven Version, Build, Test, Local Deployment, and Integration Testing. The details of the Maven Version stage are expanded, showing various steps and their execution times.](https://kodekloud.com/kk-media/image/upload/v1752879507/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/jenkins-pipeline-parameterized-job.jpg)
 
-<Frame>
-  ![The image shows a Jenkins pipeline console for a build labeled "Build #3," which has successfully completed several stages, including "Integration Testing." Each step within the stage is marked as successful, with details on execution time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879508/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/jenkins-pipeline-build-3-successful.jpg)
-</Frame>
+![The image shows a Jenkins pipeline console for a build labeled "Build #3," which has successfully completed several stages, including "Integration Testing." Each step within the stage is marked as successful, with details on execution time.](https://kodekloud.com/kk-media/image/upload/v1752879508/notes-assets/images/Jenkins-For-Beginners-Create-Pipeline-with-Parameters/jenkins-pipeline-build-3-successful.jpg)
 
-<Callout icon="triangle-alert">
-  Ensure that you update all necessary areas in your Jenkinsfiles to reflect the new parameterized approach. Missing a reference may lead to build inconsistencies.
-</Callout>
+> **triangle-alert** Ensure that you update all necessary areas in your Jenkinsfiles to reflect the new parameterized approach. Missing a reference may lead to build inconsistencies.
 
 ***
 
@@ -313,6 +289,4 @@ By utilizing parameters in your Jenkins pipelines, you can dynamically switch be
 
 Thank you for reading this article.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/b4f582ef-4bf9-4cb9-8a31-6d580a94000c/lesson/7a0e1db9-2683-4c69-b4f1-a17732953d8e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/b4f582ef-4bf9-4cb9-8a31-6d580a94000c/lesson/7a0e1db9-2683-4c69-b4f1-a17732953d8e)

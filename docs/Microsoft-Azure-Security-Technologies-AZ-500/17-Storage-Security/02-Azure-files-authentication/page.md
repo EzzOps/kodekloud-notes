@@ -40,13 +40,9 @@ For organizations that prefer not to use on-premises AD DS, Azure AD DS is an al
 
 Below is a diagram that illustrates the Azure Files authentication process when using Azure AD DS:
 
-<Frame>
-  ![The image illustrates the process of Azure Files Authentication using Azure Active Directory Domain Services (AD DS), showing the interaction between clients, Azure AD, Azure AD DS, and Azure Files within a network.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882275/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-files-authentication/azure-files-authentication-ad-ds-diagram.jpg)
-</Frame>
+![The image illustrates the process of Azure Files Authentication using Azure Active Directory Domain Services (AD DS), showing the interaction between clients, Azure AD, Azure AD DS, and Azure Files within a network.](https://kodekloud.com/kk-media/image/upload/v1752882275/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-files-authentication/azure-files-authentication-ad-ds-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Azure Files requires setting up an Active Directory identity specifically for the storage account. This step is crucial regardless of whether you use on-premises AD DS or Azure AD DS.
-</Callout>
+> **lightbulb** Azure Files requires setting up an Active Directory identity specifically for the storage account. This step is crucial regardless of whether you use on-premises AD DS or Azure AD DS.
 
 ## Summary of Authentication Methods
 
@@ -66,9 +62,7 @@ Secure transfer is a small but critical component of storage security. It is ena
 
 Below is another diagram illustrating the authentication process when using Azure AD DS:
 
-<Frame>
-  ![The image illustrates the process of Azure Files Authentication using Azure Active Directory Domain Services (AD DS), showing the interaction between clients, Azure AD, and Azure Files within a network.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882276/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-files-authentication/azure-files-authentication-ad-ds-diagram-2.jpg)
-</Frame>
+![The image illustrates the process of Azure Files Authentication using Azure Active Directory Domain Services (AD DS), showing the interaction between clients, Azure AD, and Azure Files within a network.](https://kodekloud.com/kk-media/image/upload/v1752882276/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-files-authentication/azure-files-authentication-ad-ds-diagram-2.jpg)
 
 ## Next Steps
 
@@ -81,6 +75,4 @@ Stay tuned for the upcoming section on storage security enhancements and best pr
 
 Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7acacade-befa-46b1-99e2-3f298d33623d/lesson/c874a85a-2ea4-4f59-ba25-a3f448315968" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7acacade-befa-46b1-99e2-3f298d33623d/lesson/c874a85a-2ea4-4f59-ba25-a3f448315968)

@@ -40,9 +40,7 @@ Log Analytics pricing depends on two main factors:
 * Data Retention\
   Data retention is set to 30 days by default (with activity logs kept for 90 days). If you need to store logs for an extended period—say 180 days—adjust the workspace's retention settings, keeping in mind that this may lead to additional costs.
 
-<Callout icon="lightbulb">
-  If you expect high daily data ingestion volumes (above 100 gigabytes), consider switching from the pay-as-you-go model to the commitment tier to reduce your per-gigabyte costs.
-</Callout>
+> **lightbulb** If you expect high daily data ingestion volumes (above 100 gigabytes), consider switching from the pay-as-you-go model to the commitment tier to reduce your per-gigabyte costs.
 
 ## Creating a Log Analytics Workspace
 
@@ -56,36 +54,24 @@ Data from Application Insights and Azure Sentinel is also routed to your Log Ana
 2. Click **Create a new Log Analytics workspace.**
 3. Set up a new resource group (for example, "RGMonitoring") and select your desired region (e.g., East US).
 
-<Frame>
-  ![The image shows a user interface for creating a Log Analytics workspace in Azure, highlighting features like workspace management, data isolation, and storage of insights and sentinel data. It includes sections for project and instance details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884682/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Enable-Log-Analytics-Workspace/azure-log-analytics-workspace-ui.jpg)
-</Frame>
+![The image shows a user interface for creating a Log Analytics workspace in Azure, highlighting features like workspace management, data isolation, and storage of insights and sentinel data. It includes sections for project and instance details.](https://kodekloud.com/kk-media/image/upload/v1752884682/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Enable-Log-Analytics-Workspace/azure-log-analytics-workspace-ui.jpg)
 
 4. Configure the pricing tier. By default, the workspace uses a pay-as-you-go model. For high-volume ingestion environments (over 100 gigabytes per day), opt for the commitment tier to reduce costs.
 
 Once you've created the workspace, you can begin onboarding resources.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a Log Analytics workspace, with fields for project and instance details. Options for subscription, resource group, name, and region are visible, along with navigation buttons for review and creation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884683/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Enable-Log-Analytics-Workspace/azure-log-analytics-workspace-portal.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a Log Analytics workspace, with fields for project and instance details. Options for subscription, resource group, name, and region are visible, along with navigation buttons for review and creation.](https://kodekloud.com/kk-media/image/upload/v1752884683/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Enable-Log-Analytics-Workspace/azure-log-analytics-workspace-portal.jpg)
 
 After the deployment is complete, you will see a confirmation screen in the Azure Portal.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page indicating that a deployment of "Microsoft.LogAnalyticsOMS" is complete. It includes details like the deployment name, subscription, resource group, and start time, with options to view deployment details and next steps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884685/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Enable-Log-Analytics-Workspace/azure-portal-deployment-complete.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page indicating that a deployment of "Microsoft.LogAnalyticsOMS" is complete. It includes details like the deployment name, subscription, resource group, and start time, with options to view deployment details and next steps.](https://kodekloud.com/kk-media/image/upload/v1752884685/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Enable-Log-Analytics-Workspace/azure-portal-deployment-complete.jpg)
 
 ## Onboarding Resources to Your Workspace
 
 After setting up your Log Analytics workspace, the next step is to onboard your resources. This involves configuring diagnostic settings to send logs to the workspace and connecting various data sources for an integrated monitoring solution.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for a Log Analytics workspace named "law-monitoring," displaying details such as resource group, status, location, and subscription information. It also provides options for getting started with Log Analytics, including connecting data sources and configuring monitoring solutions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884686/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Enable-Log-Analytics-Workspace/azure-log-analytics-workspace.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for a Log Analytics workspace named "law-monitoring," displaying details such as resource group, status, location, and subscription information. It also provides options for getting started with Log Analytics, including connecting data sources and configuring monitoring solutions.](https://kodekloud.com/kk-media/image/upload/v1752884686/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Enable-Log-Analytics-Workspace/azure-log-analytics-workspace.jpg)
 
-<Callout icon="lightbulb">
-  Later in this guide, we will cover how to seamlessly connect additional resources to your Log Analytics workspace to enhance your monitoring capabilities.
-</Callout>
+> **lightbulb** Later in this guide, we will cover how to seamlessly connect additional resources to your Log Analytics workspace to enhance your monitoring capabilities.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/e208e27a-6519-4eb4-aaf1-342bb14def21/lesson/3b48fdd4-c4c3-4440-ac54-bed4ecb05806" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/e208e27a-6519-4eb4-aaf1-342bb14def21/lesson/3b48fdd4-c4c3-4440-ac54-bed4ecb05806)

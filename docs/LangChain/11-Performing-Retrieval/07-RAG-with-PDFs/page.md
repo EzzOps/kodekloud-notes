@@ -17,9 +17,7 @@ print(results_messi)
 * The vector database compares these vectors (e.g., using cosine similarity) and returns the nearest vectors/documents.
 * This is semantic search: the system can associate concepts (e.g., player names) with relevant documents even when the exact token does not appear in the text.
 
-<Callout icon="lightbulb">
-  Tip: The `k` (top-k) parameter controls how many nearest neighbors you retrieve. Choose `k` based on how many documents you want to use downstream (for example, as context for a language model). You can also store metadata with each text to help identify sources.
-</Callout>
+> **lightbulb** Tip: The `k` (top-k) parameter controls how many nearest neighbors you retrieve. Choose `k` based on how many documents you want to use downstream (for example, as context for a language model). You can also store metadata with each text to help identify sources.
 
 ## Common Parameters and Options
 
@@ -48,9 +46,7 @@ This simple pattern powers many production retrieval pipelines: obtain relevant 
 * [Chroma (vector DB)](https://www.trychroma.com/)
 * [OpenAI Embeddings Guide](https://platform.openai.com/docs/guides/embeddings)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/412c6d90-f6c8-4468-9287-9efce864fe74" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/412c6d90-f6c8-4468-9287-9efce864fe74)
 
 
 # RAG with PDFs
@@ -151,9 +147,7 @@ prompt = PromptTemplate.from_template(template)
 
 This prompt explicitly instructs the model to answer only from the provided `context`, reducing hallucinations.
 
-<Callout icon="lightbulb">
-  Tip: You can expand the prompt to include explicit formatting requirements, a maximum answer length, or citation formatting (e.g., "Answer with the source page number in brackets after each sentence").
-</Callout>
+> **lightbulb** Tip: You can expand the prompt to include explicit formatting requirements, a maximum answer length, or citation formatting (e.g., "Answer with the source page number in brackets after each sentence").
 
 ### 7) Build the LCEL chain that connects retriever -> formatter -> prompt -> LLM -> output parser
 
@@ -170,9 +164,7 @@ chain = (
 
 This runnable pipeline takes a question as input, runs retrieval, and returns a parsed string answer.
 
-<Callout icon="warning">
-  Warning: Retrieval quality depends on chunking strategy, embedding model, and vector store configuration. Also monitor API usage and costs when calling embedding and LLM endpoints.
-</Callout>
+> **warning** Warning: Retrieval quality depends on chunking strategy, embedding model, and vector store configuration. Also monitor API usage and costs when calling embedding and LLM endpoints.
 
 ### 8) Invoke the chain with user questions
 

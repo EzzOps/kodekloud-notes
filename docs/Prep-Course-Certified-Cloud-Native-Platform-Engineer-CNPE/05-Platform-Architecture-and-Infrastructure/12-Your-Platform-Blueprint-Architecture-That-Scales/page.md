@@ -64,9 +64,7 @@ A clear layered architecture separates responsibilities and reduces friction bet
   <img alt="The image depicts a diagram of a layered platform architecture focused on infrastructure, highlighting elements such as cloud, bare metal, computing, networking hardware, and ownership by infrastructure or cloud teams." />
 </Frame>
 
-<Callout icon="lightbulb">
-  A platform’s “Golden Path” is a set of well-tested templates and defaults—GitOps repos, Helm charts, or platform SDKs—that encode best practices for application teams. Popular GitOps tools include [Argo CD](https://argo-cd.readthedocs.io/) and [Flux](https://fluxcd.io/).
-</Callout>
+> **lightbulb** A platform’s “Golden Path” is a set of well-tested templates and defaults—GitOps repos, Helm charts, or platform SDKs—that encode best practices for application teams. Popular GitOps tools include [Argo CD](https://argo-cd.readthedocs.io/) and [Flux](https://fluxcd.io/).
 
 <Frame>
   <img alt="The image illustrates a layered platform architecture, highlighting the infrastructure and platform core layers, along with Kubernetes components and configuration details." />
@@ -124,9 +122,7 @@ Common cluster division patterns
 * By team or business unit: dedicated clusters per team.
 * Hybrid: shared non-production clusters + isolated production clusters.
 
-<Callout icon="warning">
-  There is no universal best topology. Choose based on organizational size, operational maturity, compliance requirements, latency, and budget. Avoid one-cluster-for-everything in large organizations without strict guardrails.
-</Callout>
+> **warning** There is no universal best topology. Choose based on organizational size, operational maturity, compliance requirements, latency, and budget. Avoid one-cluster-for-everything in large organizations without strict guardrails.
 
 Common failure modes that lead to outages
 
@@ -164,6 +160,4 @@ Further reading and references
 * etcd: [https://etcd.io/](https://etcd.io/)
 * containerd: [https://containerd.io/](https://containerd.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/ab63d8f2-6729-4a19-92a9-5b96c416a950" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/ab63d8f2-6729-4a19-92a9-5b96c416a950)

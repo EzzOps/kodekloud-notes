@@ -6,9 +6,7 @@ Foundation models are large-scale AI systems trained on vast datasets, enabling 
 
 Foundation models are large-scale AI systems trained on vast, primarily unstructured datasets. By leveraging self-supervised learning on diverse corpora, these models gain powerful capabilities—ranging from text generation and question answering to code completion, image captioning, and more. While foundation models unlock many possibilities in generative AI, they also introduce risks such as biased or incorrect outputs. Deploying them safely requires clear guidelines, robust safeguards, and ongoing research to ensure reliability and ethical use.
 
-<Callout icon="triangle-alert">
-  Foundation models may produce biased, inaccurate, or unsafe outputs if not properly monitored. Always implement human-in-the-loop review and adhere to ethical AI frameworks.
-</Callout>
+> **triangle-alert** Foundation models may produce biased, inaccurate, or unsafe outputs if not properly monitored. Always implement human-in-the-loop review and adhere to ethical AI frameworks.
 
 ## Training Data and Capabilities
 
@@ -24,21 +22,15 @@ This extensive pre-training provides a rich foundation for downstream tasks thro
 
 Many foundation models handle multiple modalities—text, images, video, and audio—enabling seamless cross-modal applications.
 
-<Frame>
-  ![The image is a diagram showing different types of foundation models, categorized into text, image, video, and audio. Each category is represented with an icon and connected to a central "Foundation Models" icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881587/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Foundation-Models/foundation-models-types-diagram.jpg)
-</Frame>
+![The image is a diagram showing different types of foundation models, categorized into text, image, video, and audio. Each category is represented with an icon and connected to a central "Foundation Models" icon.](https://kodekloud.com/kk-media/image/upload/v1752881587/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Foundation-Models/foundation-models-types-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Multimodal models can be extended to new domains by fine-tuning on task-specific datasets, such as adding domain-specific images or specialized speech recordings.
-</Callout>
+> **lightbulb** Multimodal models can be extended to new domains by fine-tuning on task-specific datasets, such as adding domain-specific images or specialized speech recordings.
 
 ## Common Use Cases
 
 After pre-training, foundation models can be adapted to a wide array of scenarios:
 
-<Frame>
-  ![The image is a chart categorizing various use cases of foundation models into text, code, image, speech, video, 3D, and other categories. Each category lists specific applications like marketing, code generation, image generation, video synthesis, and gaming.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881588/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Foundation-Models/foundation-models-use-cases-chart.jpg)
-</Frame>
+![The image is a chart categorizing various use cases of foundation models into text, code, image, speech, video, 3D, and other categories. Each category lists specific applications like marketing, code generation, image generation, video synthesis, and gaming.](https://kodekloud.com/kk-media/image/upload/v1752881588/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Foundation-Models/foundation-models-use-cases-chart.jpg)
 
 | Category | Example Applications                                |
 | -------- | --------------------------------------------------- |
@@ -54,9 +46,7 @@ After pre-training, foundation models can be adapted to a wide array of scenario
 
 Generative AI powered by foundation models is already transforming industries:
 
-<Frame>
-  ![The image lists generative AI applications: ChatGPT, GitHub Copilot, Midjourney, and Runway, each with their respective logos.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881589/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Foundation-Models/generative-ai-applications-chatgpt-copilot.jpg)
-</Frame>
+![The image lists generative AI applications: ChatGPT, GitHub Copilot, Midjourney, and Runway, each with their respective logos.](https://kodekloud.com/kk-media/image/upload/v1752881589/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Foundation-Models/generative-ai-applications-chatgpt-copilot.jpg)
 
 * **ChatGPT:** Conversational AI for interactive text generation
 * **GitHub Copilot:** Contextual code suggestions within developer tools
@@ -75,6 +65,4 @@ Ready to build your own applications? Begin by exploring the [OpenAI API documen
 * [Generative Pre-trained Transformer – Wikipedia](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer)
 * [Stanford CRFM on Foundation Models](https://crfm.stanford.edu/2021/05/03/foundation-models.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/5f4c8f03-fd62-495c-a094-5749ee57001d/lesson/0cf6d102-0045-4f8f-b90e-585203dcdfa8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/5f4c8f03-fd62-495c-a094-5749ee57001d/lesson/0cf6d102-0045-4f8f-b90e-585203dcdfa8)

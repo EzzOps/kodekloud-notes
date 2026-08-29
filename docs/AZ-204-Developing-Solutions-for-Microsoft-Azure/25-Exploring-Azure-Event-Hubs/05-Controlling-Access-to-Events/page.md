@@ -19,7 +19,7 @@ Azure provides three primary built-in roles for Event Hubs, each designed for sp
 3. **Event Hub Data Receiver**\
    Tailored for applications or users that only require reading (or consuming) events, this role allows access to incoming event data without send privileges.
 
-![The image shows three Azure built-in roles for Event Hubs: Data Owner, Data Sender, and Data Receiver, each with a brief description of their access permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866493/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Controlling-Access-to-Events/azure-event-hubs-roles-descriptions.jpg)
+![The image shows three Azure built-in roles for Event Hubs: Data Owner, Data Sender, and Data Receiver, each with a brief description of their access permissions.](https://kodekloud.com/kk-media/image/upload/v1752866493/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Controlling-Access-to-Events/azure-event-hubs-roles-descriptions.jpg)
 
 ## Authorization Methods
 
@@ -37,7 +37,7 @@ Azure offers multiple methods to securely authorize access to Event Hubs. Each m
 * **Event Hub Consumer with Shared Access Signature (SAS)**\
   Consumers access Event Hubs to receive messages using SAS tokens. It’s important to note that these permissions do not allow the consumer to send messages.
 
-![The image is a diagram titled "Authorize Access," showing four options: Managed Identities, Microsoft Identity Platform, Event Hubs publishers with shared access signatures, and Event Hubs consumers with shared access signatures.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866494/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Controlling-Access-to-Events/authorize-access-diagram-options.jpg)
+![The image is a diagram titled "Authorize Access," showing four options: Managed Identities, Microsoft Identity Platform, Event Hubs publishers with shared access signatures, and Event Hubs consumers with shared access signatures.](https://kodekloud.com/kk-media/image/upload/v1752866494/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Controlling-Access-to-Events/authorize-access-diagram-options.jpg)
 
 > **lightbulb** For enhanced security, always follow the principle of least privilege when assigning roles and permissions in your Event Hubs.
 

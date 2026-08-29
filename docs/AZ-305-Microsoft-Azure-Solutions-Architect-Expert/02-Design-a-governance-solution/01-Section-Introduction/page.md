@@ -23,7 +23,7 @@ Vendita Corp is setting out to enforce comprehensive organizational standards. T
 9. Enabling Marketing administrators to manage their subscriptions and HR administrators to manage theirs, with IT administrators handling any role assignment tasks.
 10. Enforcing a tagging convention where all resource groups in Marketing subscriptions include a "department" tag (which is inherited by all underlying resources), and similarly, resource groups within HR must have a "department" tag set to HR.
 
-![The image outlines organizational standards for Vendetta Corp, detailing requirements for resource deployment, VM usage, auditing, and role management across different departments. It specifies permissions for IT, Marketing, and HR groups, and includes guidelines for testing environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866942/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Section-Introduction/vendetta-corp-organizational-standards.jpg)
+![The image outlines organizational standards for Vendetta Corp, detailing requirements for resource deployment, VM usage, auditing, and role management across different departments. It specifies permissions for IT, Marketing, and HR groups, and includes guidelines for testing environments.](https://kodekloud.com/kk-media/image/upload/v1752866942/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Section-Introduction/vendetta-corp-organizational-standards.jpg)
 
 > **lightbulb** The scenario serves as a blueprint for understanding how to structure and enforce governance standards across various organizational entities. It emphasizes the importance of clear hierarchies, controlled access, and targeted resource deployment strategies.
 

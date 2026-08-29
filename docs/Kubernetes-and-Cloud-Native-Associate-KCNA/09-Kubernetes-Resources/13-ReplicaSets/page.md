@@ -8,9 +8,7 @@ In this lesson, we explore the concept of replicas in Kubernetes and the importa
 
 Even if you intend to run a single pod, the replication controller automatically initiates a new pod if the existing one fails. Whether you need one pod or a hundred, the replication controller maintains that number, distributing load across multiple instances. For example, if your user base grows, additional pods can be deployed. In cases where one node runs out of resources, new pods can automatically be scheduled on other nodes.
 
-<Frame>
-  ![The image illustrates a high availability setup with nodes, replication controllers, and pods, emphasizing redundancy and load distribution in a Kubernetes environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880681/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-ReplicaSets/frame_70.jpg)
-</Frame>
+![The image illustrates a high availability setup with nodes, replication controllers, and pods, emphasizing redundancy and load distribution in a Kubernetes environment.](https://kodekloud.com/kk-media/image/upload/v1752880681/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-ReplicaSets/frame_70.jpg)
 
 As illustrated above, the replication controller spans multiple nodes, ensuring efficient load balancing and the ability to scale your application as demand increases.
 

@@ -50,9 +50,7 @@ def configure_tracer():
     trace.set_tracer_provider(provider)
 ```
 
-<Callout icon="lightbulb">
-  The `TraceIdRatioBased` sampler uses the trace ID to produce a deterministic sampling decision. A ratio of `0.1` will sample approximately 10% of traces; `0.0` samples none and `1.0` samples all.
-</Callout>
+> **lightbulb** The `TraceIdRatioBased` sampler uses the trace ID to produce a deterministic sampling decision. A ratio of `0.1` will sample approximately 10% of traces; `0.0` samples none and `1.0` samples all.
 
 ## How to use this in your app
 
@@ -97,9 +95,7 @@ When creating resources, include identifying attributes for your service:
 * If you switch to OTLP, verify your collector/backend is reachable and the endpoint is correctly configured.
 * Monitor the rate of sampled traces and adjust the ratio if you need more or fewer traces.
 
-<Callout icon="warning">
-  Avoid setting `TraceIdRatioBased` too low in early production or when first instrumenting a service—you may miss important traces. For debugging or initial rollout, start with higher sampling and reduce once you have confidence in coverage and cost.
-</Callout>
+> **warning** Avoid setting `TraceIdRatioBased` too low in early production or when first instrumenting a service—you may miss important traces. For debugging or initial rollout, start with higher sampling and reduce once you have confidence in coverage and cost.
 
 ## Links and references
 
@@ -110,6 +106,4 @@ When creating resources, include identifying attributes for your service:
 
 Using sampling reduces the volume of traces sent to your backend while maintaining a useful subset for observability and debugging. Adjust the sampling strategy to match your telemetry needs and cost constraints.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/2ef4294a-be10-4925-abc3-d83b36af61b5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/2ef4294a-be10-4925-abc3-d83b36af61b5)

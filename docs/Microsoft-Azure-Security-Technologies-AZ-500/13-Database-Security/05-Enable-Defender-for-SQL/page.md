@@ -33,15 +33,11 @@ In this lesson, you will learn how to enable Defender for SQL using Azure Defend
    * **Privileged Access Abuse:** Identifies misuse of database privileges, including unauthorized activities by insiders.
    * **Threats from Malware or Viruses:** Complements existing antivirus solutions by detecting activity patterns that resemble malware behavior.
 
-<Callout icon="lightbulb">
-  Before enabling these features, ensure that you have the necessary permissions on the Azure portal and have reviewed your current security configurations.
-</Callout>
+> **lightbulb** Before enabling these features, ensure that you have the necessary permissions on the Azure portal and have reviewed your current security configurations.
 
 To activate these features, simply enable Defender for SQL and configure the email addresses that will receive security notifications.
 
-<Frame>
-  ![The image shows a diagram of "Advanced Threat Protection" with a list of potential security threats on the left and a security alert dashboard on the right, indicating high and medium severity alerts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881772/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Defender-for-SQL/advanced-threat-protection-diagram.jpg)
-</Frame>
+![The image shows a diagram of "Advanced Threat Protection" with a list of potential security threats on the left and a security alert dashboard on the right, indicating high and medium severity alerts.](https://kodekloud.com/kk-media/image/upload/v1752881772/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Defender-for-SQL/advanced-threat-protection-diagram.jpg)
 
 ## Enabling Defender for SQL in the Azure Portal
 
@@ -53,13 +49,9 @@ Open the Azure portal and navigate to the SQL Databases section where you can fi
 
 Search for "Defender for Cloud" within the portal and select your subscription under environment settings. Click on "Edit settings" to access the Defender plans. From here, enable Defender for various services, including SQL databases. Options for other database types, such as Cosmos DB, are also available.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal's "Defender plans" settings page, detailing various cloud workload protection plans, their pricing, resource quantities, monitoring coverage, and status options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881774/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Defender-for-SQL/azure-defender-plans-settings.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal's "Defender plans" settings page, detailing various cloud workload protection plans, their pricing, resource quantities, monitoring coverage, and status options.](https://kodekloud.com/kk-media/image/upload/v1752881774/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Defender-for-SQL/azure-defender-plans-settings.jpg)
 
-<Frame>
-  ![The image shows the Microsoft Azure portal with the "Defender plans" settings for cloud workload protection. It includes pricing and resource quantity details for various services like servers, databases, and storage, with a pop-up for selecting resource types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881775/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Defender-for-SQL/azure-portal-defender-plans-settings.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal with the "Defender plans" settings for cloud workload protection. It includes pricing and resource quantity details for various services like servers, databases, and storage, with a pop-up for selecting resource types.](https://kodekloud.com/kk-media/image/upload/v1752881775/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Defender-for-SQL/azure-portal-defender-plans-settings.jpg)
 
 ### 3. Reviewing Server Cost and Settings
 
@@ -69,26 +61,18 @@ Be aware that the Defender for SQL plan is priced at \$15 per server per month. 
 
 Click on "Configure" to view and modify the Defender for SQL settings, including advanced threat protection configurations. Here you can specify the email addresses that should receive notifications for any detected alerts.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal with server settings for Microsoft Defender for SQL, including options for vulnerability assessment and advanced threat protection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881776/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Defender-for-SQL/azure-portal-defender-sql-settings.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal with server settings for Microsoft Defender for SQL, including options for vulnerability assessment and advanced threat protection.](https://kodekloud.com/kk-media/image/upload/v1752881776/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Defender-for-SQL/azure-portal-defender-sql-settings.jpg)
 
 ### 5. Setting Up Email Notifications
 
 Within the email notification settings, add the desired email addresses to ensure that advanced threat alerts are received promptly and appropriately.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal with settings for email notifications in Microsoft Defender for Cloud. It includes options for selecting email recipients and notification types based on alert severity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881776/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Defender-for-SQL/azure-portal-email-notifications-settings.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal with settings for email notifications in Microsoft Defender for Cloud. It includes options for selecting email recipients and notification types based on alert severity.](https://kodekloud.com/kk-media/image/upload/v1752881776/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Defender-for-SQL/azure-portal-email-notifications-settings.jpg)
 
 The process is straightforward: enable Defender for SQL, configure the vulnerability assessment, and add your email contacts to receive advanced threat alerts.
 
 This concludes the lesson on enabling Defender for SQL. In the next lesson, we will explore vulnerability assessments in more detail and discuss their crucial role in strengthening your database security.
 
-<Callout icon="lightbulb">
-  For more detailed guidance on managing your database security with Azure Defender for Cloud, refer to the [Microsoft Azure Defender Documentation](https://docs.microsoft.com/en-us/azure/defender-for-cloud/).
-</Callout>
+> **lightbulb** For more detailed guidance on managing your database security with Azure Defender for Cloud, refer to the [Microsoft Azure Defender Documentation](https://docs.microsoft.com/en-us/azure/defender-for-cloud/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d199f126-f1df-43a8-bd3d-68cd689d509d/lesson/f51c500b-877d-4b73-a0fa-24a0710ce760" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d199f126-f1df-43a8-bd3d-68cd689d509d/lesson/f51c500b-877d-4b73-a0fa-24a0710ce760)

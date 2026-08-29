@@ -6,9 +6,7 @@ git push origin main
 
 Verify the three files (`README.md`, `.gitignore`, your Terraform code) in GitHub:
 
-<Frame>
-  ![The image shows a GitHub repository named "clumsy\_bird" with several files related to Terraform configuration. It includes details like commit messages and timestamps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878901/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/clumsy-bird-github-repo-terraform.jpg)
-</Frame>
+![The image shows a GitHub repository named "clumsy\_bird" with several files related to Terraform configuration. It includes details like commit messages and timestamps.](https://kodekloud.com/kk-media/image/upload/v1752878901/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/clumsy-bird-github-repo-terraform.jpg)
 
 ***
 
@@ -18,35 +16,25 @@ Verify the three files (`README.md`, `.gitignore`, your Terraform code) in GitHu
 2. Click **Connect new provider** → **GitHub**.
 3. Follow the instructions to register a new OAuth application on GitHub:
 
-<Frame>
-  ![The image shows a setup page for connecting a version control system (VCS) provider to Terraform Cloud, with instructions for registering a new OAuth application on GitHub. The sidebar includes options like Plan & Billing, Security, and Version Control.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878903/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/vcs-connection-setup-terraform-cloud.jpg)
-</Frame>
+![The image shows a setup page for connecting a version control system (VCS) provider to Terraform Cloud, with instructions for registering a new OAuth application on GitHub. The sidebar includes options like Plan & Billing, Security, and Version Control.](https://kodekloud.com/kk-media/image/upload/v1752878903/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/vcs-connection-setup-terraform-cloud.jpg)
 
-<Frame>
-  ![The image shows a setup guide for connecting GitHub to Terraform Cloud, including instructions for registering a new OAuth application and entering details like application name, homepage URL, and authorization callback URL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878904/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/github-terraform-cloud-setup-guide.jpg)
-</Frame>
+![The image shows a setup guide for connecting GitHub to Terraform Cloud, including instructions for registering a new OAuth application and entering details like application name, homepage URL, and authorization callback URL.](https://kodekloud.com/kk-media/image/upload/v1752878904/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/github-terraform-cloud-setup-guide.jpg)
 
 4. After registering the app, copy the **Client ID** and **Client Secret**:
 
-<Frame>
-  ![The image shows a settings page for a Terraform Cloud application on GitHub, displaying details like the client ID and client secrets, with options to manage user tokens and generate new secrets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878905/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/terraform-cloud-github-settings-page.jpg)
-</Frame>
+![The image shows a settings page for a Terraform Cloud application on GitHub, displaying details like the client ID and client secrets, with options to manage user tokens and generate new secrets.](https://kodekloud.com/kk-media/image/upload/v1752878905/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/terraform-cloud-github-settings-page.jpg)
 
 5. Back in Terraform Cloud, enter the **Client ID**, **Client Secret**, and click **Connect and continue**. Then authorize the OAuth app.
 
-<Callout icon="lightbulb">
-  If you prefer SSH-based access instead of HTTPS, generate an SSH key pair and upload the public key in your GitHub OAuth settings:
+> **lightbulb** If you prefer SSH-based access instead of HTTPS, generate an SSH key pair and upload the public key in your GitHub OAuth settings:
 
   ```bash theme={null}
   ssh-keygen -t rsa -m PEM -f "~/.ssh/service_terraform" -C "service_terraform_enterprise"
   ```
-</Callout>
 
 Once connected, GitHub appears as a VCS provider:
 
-<Frame>
-  ![The image shows a VCS Providers settings page for GitHub in Terraform Cloud, displaying details like callback URL, HTTP URL, API URL, creation date, and OAuth token ID. There are options to edit or delete the client and add a VCS provider.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878906/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/github-vcs-providers-settings-terraform.jpg)
-</Frame>
+![The image shows a VCS Providers settings page for GitHub in Terraform Cloud, displaying details like callback URL, HTTP URL, API URL, creation date, and OAuth token ID. There are options to edit or delete the client and add a VCS provider.](https://kodekloud.com/kk-media/image/upload/v1752878906/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/github-vcs-providers-settings-terraform.jpg)
 
 ***
 
@@ -55,9 +43,7 @@ Once connected, GitHub appears as a VCS provider:
 1. In your Terraform Cloud workspace, go to **Settings > Version Control Workflow**.
 2. Select the GitHub provider and choose your repository (`<your-org>/clumsy_bird`).
 
-<Frame>
-  ![The image shows a Terraform Cloud interface where a user is choosing a repository for version control. The selected repository is "gmaentz/clumsy\_bird" from a list of available repositories.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878908/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/terraform-cloud-repository-selection-gmaentz.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface where a user is choosing a repository for version control. The selected repository is "gmaentz/clumsy\_bird" from a list of available repositories.](https://kodekloud.com/kk-media/image/upload/v1752878908/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/terraform-cloud-repository-selection-gmaentz.jpg)
 
 3. Enable the following options:
 
@@ -69,9 +55,7 @@ Once connected, GitHub appears as a VCS provider:
 
 4. Click **Save settings**.
 
-<Frame>
-  ![The image shows a settings page for a workspace in Terraform Cloud, focusing on run triggers, version control, and pull request options. It includes options for automatic run triggering and other settings related to version control and submodules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878909/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/terraform-cloud-workspace-settings-page.jpg)
-</Frame>
+![The image shows a settings page for a workspace in Terraform Cloud, focusing on run triggers, version control, and pull request options. It includes options for automatic run triggering and other settings related to version control and submodules.](https://kodekloud.com/kk-media/image/upload/v1752878909/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/terraform-cloud-workspace-settings-page.jpg)
 
 ***
 
@@ -79,9 +63,7 @@ Once connected, GitHub appears as a VCS provider:
 
 After saving, Terraform Cloud will detect the latest commit and automatically start a run. In the workspace overview, you’ll see the plan and apply details:
 
-<Frame>
-  ![The image shows a Terraform Cloud workspace overview for "devops-aws-myapp-dev," displaying details of the latest run, including resource changes and configuration updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878910/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/terraform-cloud-workspace-devops-aws.jpg)
-</Frame>
+![The image shows a Terraform Cloud workspace overview for "devops-aws-myapp-dev," displaying details of the latest run, including resource changes and configuration updates.](https://kodekloud.com/kk-media/image/upload/v1752878910/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/terraform-cloud-workspace-devops-aws.jpg)
 
 You can inspect the commit that triggered the run. For example, this simple deployment script runs as part of a Terraform provisioner:
 
@@ -97,9 +79,7 @@ git clone https://github.com/ellisonleao/clumsy-bird /src/clumsy-bird
 
 Once connected, any future commit to `clumsy_bird` will kick off `terraform init`, `plan`, and `apply` in Terraform Cloud:
 
-<Frame>
-  ![The image shows a Terraform Cloud interface displaying a successful run of a Terraform configuration upload from GitHub, with details about the commit and execution. The plan and apply processes have finished, adding 23 resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878911/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/terraform-cloud-successful-run-github.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface displaying a successful run of a Terraform configuration upload from GitHub, with details about the commit and execution. The plan and apply processes have finished, adding 23 resources.](https://kodekloud.com/kk-media/image/upload/v1752878911/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/terraform-cloud-successful-run-github.jpg)
 
 ***
 
@@ -115,11 +95,9 @@ You have successfully linked **Terraform Cloud** with **GitHub** using the Versi
 * [GitHub Personal Access Tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 * [Terraform Cloud](https://www.terraform.io/cloud)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/8dc830bd-1e70-4a76-bc45-b417ff7c1771/lesson/f7384291-f095-4935-94ff-f4409dc44fbd" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/8dc830bd-1e70-4a76-bc45-b417ff7c1771/lesson/f7384291-f095-4935-94ff-f4409dc44fbd)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/8dc830bd-1e70-4a76-bc45-b417ff7c1771/lesson/2126326e-6db6-4ed8-b2ab-03b910147f90" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/8dc830bd-1e70-4a76-bc45-b417ff7c1771/lesson/2126326e-6db6-4ed8-b2ab-03b910147f90)
 
 
 # Lab Solution Version Control Branching and Workspaces
@@ -138,10 +116,8 @@ In this guide, you’ll learn how to integrate Terraform Cloud with GitHub to ma
 6. Create a production workspace on the `main` branch
 7. Confirm all workspaces and their run statuses
 
-<Callout icon="lightbulb">
-  * A Terraform Cloud organization and [Terraform CLI installed](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli).
+> **lightbulb** * A Terraform Cloud organization and [Terraform CLI installed](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli).
   * A GitHub repository (`clumsy_bird`) containing your Terraform configurations.
-</Callout>
 
 ***
 
@@ -161,9 +137,7 @@ git push -u origin staging
 
 Alternatively, use the GitHub UI to add the `development` and `staging` branches.
 
-<Frame>
-  ![The image shows a GitHub repository page with a branch selection dropdown open, displaying branches "main" and "development." The repository is named "clumsy\_bird" and contains several Terraform configuration files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878912/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/github-repo-clumsy-bird-branches-dropdown.jpg)
-</Frame>
+![The image shows a GitHub repository page with a branch selection dropdown open, displaying branches "main" and "development." The repository is named "clumsy\_bird" and contains several Terraform configuration files.](https://kodekloud.com/kk-media/image/upload/v1752878912/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/github-repo-clumsy-bird-branches-dropdown.jpg)
 
 ***
 
@@ -178,9 +152,7 @@ In Terraform Cloud, navigate to **Organization Settings → Variable Sets** and 
 
 This centralizes AWS credentials for all workspaces in your organization.
 
-<Callout icon="triangle-alert">
-  Never commit AWS credentials to Git. Always use Terraform Cloud variable sets or [Vault](https://www.vaultproject.io/) for secret management.
-</Callout>
+> **triangle-alert** Never commit AWS credentials to Git. Always use Terraform Cloud variable sets or [Vault](https://www.vaultproject.io/) for secret management.
 
 ***
 
@@ -192,21 +164,13 @@ This centralizes AWS credentials for all workspaces in your organization.
 
 Terraform Cloud will automatically queue and apply a run on the `development` branch:
 
-<Frame>
-  ![The image shows a KodeKloud lab interface for version control branching and workspaces, with instructions to navigate a workspace on Terraform Cloud. The left side displays task steps, while the right side features a terminal window.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878914/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/kodekloud-lab-version-control-terraform.jpg)
-</Frame>
+![The image shows a KodeKloud lab interface for version control branching and workspaces, with instructions to navigate a workspace on Terraform Cloud. The left side displays task steps, while the right side features a terminal window.](https://kodekloud.com/kk-media/image/upload/v1752878914/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/kodekloud-lab-version-control-terraform.jpg)
 
-<Frame>
-  ![The image shows a Terraform Cloud workspace settings page, specifically the Version Control section, indicating a connection to a GitHub repository named "gmaentz/clumsy\_bird."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878914/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/terraform-cloud-workspace-github-connection.jpg)
-</Frame>
+![The image shows a Terraform Cloud workspace settings page, specifically the Version Control section, indicating a connection to a GitHub repository named "gmaentz/clumsy\_bird."](https://kodekloud.com/kk-media/image/upload/v1752878914/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/terraform-cloud-workspace-github-connection.jpg)
 
-<Frame>
-  ![The image shows a version control settings page for a Terraform Cloud workspace, with options for configuring VCS branch, pull requests, and other settings like including submodules on clone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878916/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/terraform-cloud-vcs-settings-page.jpg)
-</Frame>
+![The image shows a version control settings page for a Terraform Cloud workspace, with options for configuring VCS branch, pull requests, and other settings like including submodules on clone.](https://kodekloud.com/kk-media/image/upload/v1752878916/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/terraform-cloud-vcs-settings-page.jpg)
 
-<Frame>
-  ![The image shows a Terraform Cloud interface with a workspace named "devops-aws-myapp-dev" that is currently in the "Applying" status. The interface includes options for managing workspaces, registry, and settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878916/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/terraform-cloud-devops-aws-app-applying.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface with a workspace named "devops-aws-myapp-dev" that is currently in the "Applying" status. The interface includes options for managing workspaces, registry, and settings.](https://kodekloud.com/kk-media/image/upload/v1752878916/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/terraform-cloud-devops-aws-app-applying.jpg)
 
 ***
 
@@ -231,21 +195,13 @@ project     = "Clumsy Bird"
 environment = "staging"
 ```
 
-<Frame>
-  ![The image shows a Terraform Cloud interface for creating a new workspace, with options to choose a workflow type such as version control, CLI-driven, or API-driven. The sidebar includes navigation options like Workspaces, Registry, and Settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878918/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/terraform-cloud-workspace-creation-interface.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface for creating a new workspace, with options to choose a workflow type such as version control, CLI-driven, or API-driven. The sidebar includes navigation options like Workspaces, Registry, and Settings.](https://kodekloud.com/kk-media/image/upload/v1752878918/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/terraform-cloud-workspace-creation-interface.jpg)
 
-<Frame>
-  ![The image shows a Terraform Cloud interface where a user is choosing a repository from a list, with "gmaentz/clumsy\_bird" highlighted. The interface includes navigation options and a filter for repositories.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878919/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/terraform-cloud-repository-selection-interface.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface where a user is choosing a repository from a list, with "gmaentz/clumsy\_bird" highlighted. The interface includes navigation options and a filter for repositories.](https://kodekloud.com/kk-media/image/upload/v1752878919/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/terraform-cloud-repository-selection-interface.jpg)
 
-<Frame>
-  ![The image shows a Terraform Cloud interface for creating a workspace, with options for triggering runs, specifying a VCS branch, and configuring pull requests and other settings. A "Create workspace" button is highlighted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878920/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/terraform-cloud-workspace-creation-interface-2.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface for creating a workspace, with options for triggering runs, specifying a VCS branch, and configuring pull requests and other settings. A "Create workspace" button is highlighted.](https://kodekloud.com/kk-media/image/upload/v1752878920/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/terraform-cloud-workspace-creation-interface-2.jpg)
 
-<Frame>
-  ![The image shows a HashiCorp Cloud Platform interface where a workspace has been created, prompting the user to configure Terraform variables such as prefix, project, and environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878922/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/hashicorp-cloud-platform-terraform-variables.jpg)
-</Frame>
+![The image shows a HashiCorp Cloud Platform interface where a workspace has been created, prompting the user to configure Terraform variables such as prefix, project, and environment.](https://kodekloud.com/kk-media/image/upload/v1752878922/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/hashicorp-cloud-platform-terraform-variables.jpg)
 
 Save and monitor the initial plan/apply run.
 
@@ -258,9 +214,7 @@ To validate both environments:
 * **Development**: Open **devops-aws-myapp-dev** and click **Start new run**.
 * **Staging**: Open **devops-aws-myapp-staging** and click **Start new run**.
 
-<Callout icon="lightbulb">
-  Auto Apply simplifies continuous delivery, but manual runs offer more control for production-critical changes.
-</Callout>
+> **lightbulb** Auto Apply simplifies continuous delivery, but manual runs offer more control for production-critical changes.
 
 ***
 
@@ -279,9 +233,7 @@ Repeat the workspace creation steps for production:
 2. Select `gmaentz/clumsy_bird` and set **VCS Branch** to `main`.
 3. Add the same Terraform variables (`prefix`, `project`, `environment = "production"`).
 
-<Frame>
-  ![The image shows a GitHub repository page for a project named "clumsy\_bird," with a dropdown menu for switching branches, displaying "main," "development," and "staging" branches. The repository contains files related to Terraform configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878923/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/github-repo-clumsy-bird-branches.jpg)
-</Frame>
+![The image shows a GitHub repository page for a project named "clumsy\_bird," with a dropdown menu for switching branches, displaying "main," "development," and "staging" branches. The repository contains files related to Terraform configuration.](https://kodekloud.com/kk-media/image/upload/v1752878923/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/github-repo-clumsy-bird-branches.jpg)
 
 Save the workspace to kick off the initial production run.
 
@@ -297,9 +249,7 @@ Head to **Workspaces** overview. You should see all three environments configure
 | devops-aws-myapp-staging | staging     | Applied           |
 | devops-aws-myapp-prod    | main        | Pending / Applied |
 
-<Frame>
-  ![The image shows a Terraform Cloud interface displaying a list of workspaces with their names, run statuses, repositories, and the time of the latest changes. Two workspaces have the status "Applied."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878925/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/terraform-cloud-workspaces-status-list.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface displaying a list of workspaces with their names, run statuses, repositories, and the time of the latest changes. Two workspaces have the status "Applied."](https://kodekloud.com/kk-media/image/upload/v1752878925/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Version-Control-Branching-and-Workspaces/terraform-cloud-workspaces-status-list.jpg)
 
 Congratulations! You’ve successfully implemented version control branching strategies and workspace management in Terraform Cloud. Next, explore GitOps-native workflows with Terraform Enterprise or integrate policy as code using Sentinel.
 
@@ -311,8 +261,6 @@ Congratulations! You’ve successfully implemented version control branching str
 * [Git Branching Strategies](https://www.atlassian.com/git/tutorials/using-branches)
 * [Managing Variables in Terraform Cloud](https://developer.hashicorp.com/terraform/cloud-docs/variables)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/8dc830bd-1e70-4a76-bc45-b417ff7c1771/lesson/b2e16417-4958-4667-87d2-c13d808a04d0" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/8dc830bd-1e70-4a76-bc45-b417ff7c1771/lesson/b2e16417-4958-4667-87d2-c13d808a04d0)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/8dc830bd-1e70-4a76-bc45-b417ff7c1771/lesson/90da0b84-dc16-4c28-84c0-7606196e8151" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/8dc830bd-1e70-4a76-bc45-b417ff7c1771/lesson/90da0b84-dc16-4c28-84c0-7606196e8151)

@@ -69,9 +69,7 @@ On high-speed links (100 Gbps+), the sender can generate millions of packets per
 
 BIG TCP requires kernel and NIC driver support for large GSO/GRO and correct hardware offload behavior. When enabled, you can selectively enable BIG TCP for IPv4 and/or IPv6.
 
-<Callout icon="lightbulb">
-  BIG TCP requires kernel and NIC driver support. Test carefully on staging before enabling in production. Incorrect assumptions about offloads or driver behavior can cause performance issues or packet corruption.
-</Callout>
+> **lightbulb** BIG TCP requires kernel and NIC driver support. Test carefully on staging before enabling in production. Incorrect assumptions about offloads or driver behavior can cause performance issues or packet corruption.
 
 Example Helm install enabling BIG TCP for both IPv4 and IPv6:
 
@@ -113,13 +111,9 @@ Further reading and references
 * AF\_XDP / XDP overview: [https://www.kernel.org/doc/html/latest/networking/index.html#xdp](https://www.kernel.org/doc/html/latest/networking/index.html#xdp)
 * Linux network offloads (GSO/GRO/TCP segmentation offload): [https://www.kernel.org/doc/Documentation/networking/](https://www.kernel.org/doc/Documentation/networking/)
 
-<Callout icon="warning">
-  Always test these optimizations (netdev datapath, host routing, and BIG TCP) in a non-production environment first. Hardware and driver incompatibilities or misconfigured offloads can cause degraded performance or packet corruption.
-</Callout>
+> **warning** Always test these optimizations (netdev datapath, host routing, and BIG TCP) in a non-production environment first. Hardware and driver incompatibilities or misconfigured offloads can cause degraded performance or packet corruption.
 
 Wrap-up
 Using the netdev datapath to replace veth, enabling host routing to bypass the host netfilter stack, and enabling BIG TCP to reduce packet processing are common levers to improve Cilium throughput and latency. Validate kernel and NIC driver compatibility and run staged tests before broad rollout.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/282722e0-2670-40d1-b2c5-87638e579e49/lesson/0a1730d8-92c1-4663-bed2-ecd2afaac905" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/282722e0-2670-40d1-b2c5-87638e579e49/lesson/0a1730d8-92c1-4663-bed2-ecd2afaac905)

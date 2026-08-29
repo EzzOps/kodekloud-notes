@@ -157,9 +157,7 @@ Adapters and common implementations
 * Prometheus Adapter: exposes Prometheus metrics as `custom.metrics.k8s.io` — common for Prometheus-based stacks.
 * Cloud/Third-party adapters: Datadog, New Relic, and other providers supply external metric adapters to surface APM data into Kubernetes.
 
-<Callout icon="lightbulb">
-  Make sure a Metrics Server (or equivalent) and the required metric adapters are installed and functioning. Without them, HPA cannot retrieve the metrics it needs to make scaling decisions.
-</Callout>
+> **lightbulb** Make sure a Metrics Server (or equivalent) and the required metric adapters are installed and functioning. Without them, HPA cannot retrieve the metrics it needs to make scaling decisions.
 
 HPA control loop and operation flow
 
@@ -195,8 +193,6 @@ Next steps and references
 
 This completes the HPA architecture overview and the metric flow paths used for autoscaling. Use the examples above as templates when authoring HPA manifests and ensure your Metrics Server and adapters are properly configured for reliable automatic scaling.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/5d8bfc51-788e-4d32-be9a-95a1e1149a49" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/5d8bfc51-788e-4d32-be9a-95a1e1149a49)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/1ecc250a-8b72-4da9-aaca-5b75bd17417d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/1ecc250a-8b72-4da9-aaca-5b75bd17417d)

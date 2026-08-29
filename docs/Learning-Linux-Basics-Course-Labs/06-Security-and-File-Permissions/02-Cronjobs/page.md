@@ -34,9 +34,7 @@ The first five fields specify the schedule:
 * **Month (\*):** Every month.
 * **Day of Week (\*):** Every day of the week.
 
-<Callout icon="lightbulb">
-  Avoid using `sudo` with the `crontab` command if you intend the task to run as Michael; using `sudo` would schedule the job for the root user.
-</Callout>
+> **lightbulb** Avoid using `sudo` with the `crontab` command if you intend the task to run as Michael; using `sudo` would schedule the job for the root user.
 
 ## Understanding Cron Syntax
 

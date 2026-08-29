@@ -112,9 +112,7 @@ When a ConfigMap key contains special characters (like a hyphen), quote the key 
 cost-center: "{{billingData.data.\"cost-center\"}}"
 ```
 
-<Callout icon="lightbulb">
-  When referencing keys that include characters like `-` (dash) or spaces, quote the key inside the substitution expression so it is treated as a literal field name.
-</Callout>
+> **lightbulb** When referencing keys that include characters like `-` (dash) or spaces, quote the key inside the substitution expression so it is treated as a literal field name.
 
 Putting it all together
 
@@ -129,8 +127,6 @@ Links and references
 * [Kubernetes ConfigMap documentation](https://kubernetes.io/docs/concepts/configuration/configmap/)
 * [Kyverno documentation: Context](https://kyverno.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/470bb961-febf-41b6-b75b-4c439def6eae/lesson/fe909135-71f6-4e33-85be-5f6a625c793d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/470bb961-febf-41b6-b75b-4c439def6eae/lesson/fe909135-71f6-4e33-85be-5f6a625c793d)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/470bb961-febf-41b6-b75b-4c439def6eae/lesson/6a444ab2-ec43-4bb3-8970-6251471fcbdd" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/470bb961-febf-41b6-b75b-4c439def6eae/lesson/6a444ab2-ec43-4bb3-8970-6251471fcbdd)

@@ -103,7 +103,7 @@ This article explains how to use Bash functions for structuring, reusing, and ma
 
 In this lesson, you’ll learn how Bash functions help you structure, reuse, and maintain your scripts. While Bash offers conditionals, loops, and script sourcing, functions are key to modular, readable code.
 
-![The image shows a diagram with four interconnected squares labeled "Conditional Statement," "Loops," "Functions," and "Source Code," under the title "Function."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868590/notes-assets/images/Advanced-Bash-Scripting-Functions/function-diagram-conditional-loops-functions.jpg)
+![The image shows a diagram with four interconnected squares labeled "Conditional Statement," "Loops," "Functions," and "Source Code," under the title "Function."](https://kodekloud.com/kk-media/image/upload/v1752868590/notes-assets/images/Advanced-Bash-Scripting-Functions/function-diagram-conditional-loops-functions.jpg)
 
 ## Why Define Functions in Bash?
 
@@ -211,7 +211,7 @@ my_function  # Outputs: Hello
 * **Readability**: Name complex logic for better clarity.
 * **Maintainability**: Update one function rather than many code blocks.
 
-![The image lists the benefits of using functions in programming, including organization, code reuse, readability, shorter code, and manageability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868591/notes-assets/images/Advanced-Bash-Scripting-Functions/benefits-of-functions-in-programming.jpg)
+![The image lists the benefits of using functions in programming, including organization, code reuse, readability, shorter code, and manageability.](https://kodekloud.com/kk-media/image/upload/v1752868591/notes-assets/images/Advanced-Bash-Scripting-Functions/benefits-of-functions-in-programming.jpg)
 
 ## Links and References
 

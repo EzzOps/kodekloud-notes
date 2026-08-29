@@ -94,9 +94,7 @@ Enter mission name: saturn-mission
 
 After the user inputs the mission name, it is stored in the `mission_name` variable and subsequently used in the launch sequence commands.
 
-<Callout icon="lightbulb">
-  For enhanced usability, consider designing your script to support both methods. If a command line argument is provided, use it. Otherwise, prompt the user interactively. This approach offers flexibility and makes your script suitable for both manual and automated scenarios.
-</Callout>
+> **lightbulb** For enhanced usability, consider designing your script to support both methods. If a command line argument is provided, use it. Otherwise, prompt the user interactively. This approach offers flexibility and makes your script suitable for both manual and automated scenarios.
 
 ## Choosing the Appropriate Method
 
@@ -124,8 +122,6 @@ Both techniques have their merits, and choosing the right one depends on the ope
 
 For additional resources on shell scripting, check out [Shell Scripting Tutorial](https://www.shellscript.sh/tutorial.html) and other online guides.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/9225d80c-3f9d-4e8e-9135-febe7ca37af2/lesson/c24ec26a-6ca4-4b67-9149-2d121e7fb5df" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/9225d80c-3f9d-4e8e-9135-febe7ca37af2/lesson/c24ec26a-6ca4-4b67-9149-2d121e7fb5df)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/9225d80c-3f9d-4e8e-9135-febe7ca37af2/lesson/3bbe30b7-17e5-4a02-a5c5-5b2c00484e3d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/9225d80c-3f9d-4e8e-9135-febe7ca37af2/lesson/3bbe30b7-17e5-4a02-a5c5-5b2c00484e3d)

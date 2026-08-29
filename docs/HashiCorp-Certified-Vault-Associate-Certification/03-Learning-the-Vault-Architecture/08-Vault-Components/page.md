@@ -5,9 +5,7 @@ vault secrets enable database
 vault auth enable -path=my-azure azure
 ```
 
-<Callout icon="lightbulb">
-  The Vault UI provides a simple text field to specify custom mount paths, mirroring the CLI’s `-path` behavior.
-</Callout>
+> **lightbulb** The Vault UI provides a simple text field to specify custom mount paths, mirroring the CLI’s `-path` behavior.
 
 ## System-Reserved Paths
 
@@ -21,13 +19,9 @@ Vault reserves certain paths that are integral to its operation. You cannot disa
 | `secret/`    | Default KV v2 secrets engine in development mode             |
 | `sys/`       | System backend for policies, audit devices, and mount points |
 
-<Frame>
-  ![The image is a slide titled "Vault Paths," explaining that Vault components can be enabled at any path with a default path option, and lists system reserved paths with descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878230/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Architecture-and-Pathing-Structure/vault-paths-components-reserved-paths.jpg)
-</Frame>
+![The image is a slide titled "Vault Paths," explaining that Vault components can be enabled at any path with a default path option, and lists system reserved paths with descriptions.](https://kodekloud.com/kk-media/image/upload/v1752878230/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Architecture-and-Pathing-Structure/vault-paths-components-reserved-paths.jpg)
 
-<Callout icon="triangle-alert">
-  In production, Vault does **not** enable the `secret/` KV v2 engine by default. Always explicitly enable and configure the KV engine paths you need.
-</Callout>
+> **triangle-alert** In production, Vault does **not** enable the `secret/` KV v2 engine by default. Always explicitly enable and configure the KV engine paths you need.
 
 ## Links and References
 
@@ -37,9 +31,7 @@ Vault reserves certain paths that are integral to its operation. You cannot disa
 * [Authentication Methods](https://www.vaultproject.io/docs/auth)
 * [Audit Devices](https://www.vaultproject.io/docs/audit)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/33616e2d-9ef3-410a-96a4-3a27534899bb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/33616e2d-9ef3-410a-96a4-3a27534899bb)
 
 
 # Vault Components
@@ -59,9 +51,7 @@ Vault stores all its data—keys, secrets, configuration—in a single, pluggabl
 * **Encryption in Transit**: TLS secures data as it moves.
 * **Encryption at Rest**: AES-256 encrypts data on disk.
 
-<Callout icon="lightbulb">
-  A Vault cluster can be configured with exactly one storage backend. For high availability or geo-replication, run multiple clusters with distinct backends.
-</Callout>
+> **lightbulb** A Vault cluster can be configured with exactly one storage backend. For high availability or geo-replication, run multiple clusters with distinct backends.
 
 | Backend   | High Availability | Key Features                             |
 | --------- | ----------------- | ---------------------------------------- |
@@ -71,9 +61,7 @@ Vault stores all its data—keys, secrets, configuration—in a single, pluggabl
 
 The chosen backend is declared in `vault.hcl` under the `storage` stanza. Each backend type has its own set of configuration parameters.
 
-<Frame>
-  ![The image is a slide titled "Storage Backends," explaining the configuration and encryption of Vault data storage, highlighting differences in backend capabilities, and noting that only one storage backend is used per Vault cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878231/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Components/storage-backends-vault-configuration-encryption.jpg)
-</Frame>
+![The image is a slide titled "Storage Backends," explaining the configuration and encryption of Vault data storage, highlighting differences in backend capabilities, and noting that only one storage backend is used per Vault cluster.](https://kodekloud.com/kk-media/image/upload/v1752878231/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Components/storage-backends-vault-configuration-encryption.jpg)
 
 ***
 
@@ -88,9 +76,7 @@ Secrets Engines are responsible for managing or generating secrets. You mount th
 | AWS / GCP      | Provision cloud IAM credentials dynamically        |
 | Transit        | Perform cryptographic operations (encrypt/decrypt) |
 
-<Callout icon="lightbulb">
-  Secrets Engines are isolated by mount path. You can enable multiple instances of the same engine under different paths for segmentation.
-</Callout>
+> **lightbulb** Secrets Engines are isolated by mount path. You can enable multiple instances of the same engine under different paths for segmentation.
 
 Enable an engine with:
 
@@ -100,9 +86,7 @@ vault secrets enable <engine_type>
 
 Then configure it via its API endpoints.
 
-<Frame>
-  ![The image is a slide titled "Secrets Engines," explaining their role in managing secrets, storing, generating, and encrypting data, and their ability to connect to services for dynamic credentials. It also mentions enabling multiple engines and interactions through a "path."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878233/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Components/secrets-engines-managing-storing-data.jpg)
-</Frame>
+![The image is a slide titled "Secrets Engines," explaining their role in managing secrets, storing, generating, and encrypting data, and their ability to connect to services for dynamic credentials. It also mentions enabling multiple engines and interactions through a "path."](https://kodekloud.com/kk-media/image/upload/v1752878233/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Components/secrets-engines-managing-storing-data.jpg)
 
 ***
 
@@ -117,9 +101,7 @@ Auth Methods connect external identity systems to Vault, authenticate clients, a
 
 Vault ships with the **token** auth method by default, providing the initial root token for setup.
 
-<Callout icon="lightbulb">
-  The root token from initialization should be used sparingly. Rotate or revoke it after enabling safer auth methods.
-</Callout>
+> **lightbulb** The root token from initialization should be used sparingly. Rotate or revoke it after enabling safer auth methods.
 
 Enable a new auth method with:
 
@@ -129,9 +111,7 @@ vault auth enable <method_name>
 
 Then configure it using its dedicated API paths.
 
-<Frame>
-  ![The image is a slide titled "Auth Methods," explaining Vault's authentication components, identity management, and token issuance. It highlights the differentiation between human and system methods, the goal of obtaining a token, and the default authentication method for new deployments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878235/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Components/auth-methods-vault-authentication-slide.jpg)
-</Frame>
+![The image is a slide titled "Auth Methods," explaining Vault's authentication components, identity management, and token issuance. It highlights the differentiation between human and system methods, the goal of obtaining a token, and the default authentication method for new deployments.](https://kodekloud.com/kk-media/image/upload/v1752878235/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Components/auth-methods-vault-authentication-slide.jpg)
 
 ***
 
@@ -143,9 +123,7 @@ Audit Devices capture every Vault request and response in JSON format. They ensu
 * **Multiple Devices**: Enable file, syslog, socket, or other endpoints simultaneously.
 * **JSON Output**: Simplifies integration with SIEM and log analysis tools.
 
-<Callout icon="triangle-alert">
-  If an audit device becomes unavailable (disk full, network failure), Vault will block operations to maintain audit integrity.
-</Callout>
+> **triangle-alert** If an audit device becomes unavailable (disk full, network failure), Vault will block operations to maintain audit integrity.
 
 Configure an audit device with:
 
@@ -155,9 +133,7 @@ vault audit enable <device_type>
 
 Then adjust its settings via the audit API.
 
-<Frame>
-  ![The image is a slide titled "Audit Devices," detailing features such as logging requests and responses, using JSON formatting, hashing sensitive information, enabling multiple audit devices, and prioritizing safety over availability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878236/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Components/audit-devices-logging-json-hashing.jpg)
-</Frame>
+![The image is a slide titled "Audit Devices," detailing features such as logging requests and responses, using JSON formatting, hashing sensitive information, enabling multiple audit devices, and prioritizing safety over availability.](https://kodekloud.com/kk-media/image/upload/v1752878236/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Components/audit-devices-logging-json-hashing.jpg)
 
 ***
 
@@ -166,6 +142,4 @@ Then adjust its settings via the audit API.
 * [Vault Authentication Methods](https://www.vaultproject.io/docs/auth)
 * [Vault Audit Devices](https://www.vaultproject.io/docs/audit)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/0784516b-1e4e-4c80-942e-b762ea3dd7a2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/0784516b-1e4e-4c80-942e-b762ea3dd7a2)

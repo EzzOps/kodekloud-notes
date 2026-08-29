@@ -53,7 +53,7 @@ Ensuring that your codebase is free from vulnerable or outdated dependencies is 
 
 > **lightbulb** Run dependency scans early in your pipeline to catch issues before they propagate downstream.
 
-![The image is a slide titled "Dependency and Security Scanning" with three bullet points: "Exploring Dependency Scanning in Azure Pipelines," "Tools for Dependency Scanning," and "Understanding Security Scanning."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867760/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/dependency-security-scanning-azure-pipelines.jpg)
+![The image is a slide titled "Dependency and Security Scanning" with three bullet points: "Exploring Dependency Scanning in Azure Pipelines," "Tools for Dependency Scanning," and "Understanding Security Scanning."](https://kodekloud.com/kk-media/image/upload/v1752867760/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/dependency-security-scanning-azure-pipelines.jpg)
 
 ### Key Steps
 
@@ -76,7 +76,7 @@ Ensuring that your codebase is free from vulnerable or outdated dependencies is 
 
 Testing is the backbone of any reliable pipeline. By running tests automatically, you can catch regressions and performance issues before they reach production.
 
-![The image is a slide titled "Local Tests, Unit Tests, Integration Tests, and Load Tests," listing four topics: the importance of testing in CI/CD, configuring unit tests, setting up integration tests, and implementing load tests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867762/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/local-tests-unit-integration-load-tests.jpg)
+![The image is a slide titled "Local Tests, Unit Tests, Integration Tests, and Load Tests," listing four topics: the importance of testing in CI/CD, configuring unit tests, setting up integration tests, and implementing load tests.](https://kodekloud.com/kk-media/image/upload/v1752867762/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/local-tests-unit-integration-load-tests.jpg)
 
 | Test Type          | Goal                                      | Azure Pipeline Task                 |
 | ------------------ | ----------------------------------------- | ----------------------------------- |
@@ -97,7 +97,7 @@ Testing is the backbone of any reliable pipeline. By running tests automatically
 
 Tracking code coverage helps ensure that your tests exercise the most critical parts of your application.
 
-![The image is a slide titled "Understanding Code Coverage," listing five topics related to code coverage, including introduction, workings, setup in Azure Pipelines, analysis, and best practices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867763/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/understanding-code-coverage-topics-slide.jpg)
+![The image is a slide titled "Understanding Code Coverage," listing five topics related to code coverage, including introduction, workings, setup in Azure Pipelines, analysis, and best practices.](https://kodekloud.com/kk-media/image/upload/v1752867763/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/understanding-code-coverage-topics-slide.jpg)
 
 ### Coverage Workflow
 

@@ -26,9 +26,7 @@ In this section, you will learn to set up and manage Microsoft Entra ID—former
 * **Configuration of Device Identities:**\
   Learn techniques for configuring device identities, ensuring secure management of devices alongside user identities within Azure.
 
-<Frame>
-  ![The image lists learning objectives related to configuring Microsoft Entra ID, including an introduction, concepts, editions, and configuring device identities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884594/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Module-Introduction/microsoft-entra-id-learning-objectives.jpg)
-</Frame>
+![The image lists learning objectives related to configuring Microsoft Entra ID, including an introduction, concepts, editions, and configuring device identities.](https://kodekloud.com/kk-media/image/upload/v1752884594/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Module-Introduction/microsoft-entra-id-learning-objectives.jpg)
 
 ### 2. Configure User and Group Accounts
 
@@ -49,9 +47,7 @@ This objective focuses on managing user and group accounts effectively. You will
 * **Multitenant Environments:**\
   Analyze the challenges and best practices associated with managing identities in multitenant environments—key for organizations overseeing multiple Azure services or catering to various customers.
 
-<Frame>
-  ![The image lists learning objectives related to configuring user and group accounts, including user accounts, bulk operations, group accounts, self-service password reset, and multi-tenant environments. It features a gradient background with the title "Learning Objectives" on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884595/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Module-Introduction/learning-objectives-user-group-accounts.jpg)
-</Frame>
+![The image lists learning objectives related to configuring user and group accounts, including user accounts, bulk operations, group accounts, self-service password reset, and multi-tenant environments. It features a gradient background with the title "Learning Objectives" on the left.](https://kodekloud.com/kk-media/image/upload/v1752884595/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Module-Introduction/learning-objectives-user-group-accounts.jpg)
 
 ## Overview of Managing Identity in Azure
 
@@ -59,9 +55,7 @@ This section provides a high-level view of identity management in Azure, emphasi
 
 Microsoft Entra ID acts as a central hub that extends your identity capabilities to the cloud by enabling features such as single sign-on, multi-factor authentication, and conditional access policies. Although on-premises identity synchronization is not covered in this article, note that it is comprehensively addressed in the [Microsoft Azure Security Technologies (AZ-500)](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500) course.
 
-<Callout icon="lightbulb">
-  Identity synchronization using tools like Entra ID Connect bridges on-premises directories with Azure's cloud-based identity service.
-</Callout>
+> **lightbulb** Identity synchronization using tools like Entra ID Connect bridges on-premises directories with Azure's cloud-based identity service.
 
 The following diagram summarizes the overall architecture:
 
@@ -77,20 +71,14 @@ The following diagram summarizes the overall architecture:
 * **Users and Groups in Microsoft Entra ID:**\
   Outlines how individual user accounts—with their associated roles and permissions—and groups help streamline permission management at scale.
 
-<Frame>
-  ![The image is a flowchart titled "Administer Identity – Overview," illustrating the relationship between on-premises identities, Microsoft Entra ID, external identity providers, users, and groups, including details on licenses, administrative units, and group types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884596/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Module-Introduction/administer-identity-overview-flowchart.jpg)
-</Frame>
+![The image is a flowchart titled "Administer Identity – Overview," illustrating the relationship between on-premises identities, Microsoft Entra ID, external identity providers, users, and groups, including details on licenses, administrative units, and group types.](https://kodekloud.com/kk-media/image/upload/v1752884596/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Module-Introduction/administer-identity-overview-flowchart.jpg)
 
-<Callout icon="lightbulb">
-  * On-premises identities are synchronized with Microsoft Entra ID using tools like Entra ID Connect.
+> **lightbulb** * On-premises identities are synchronized with Microsoft Entra ID using tools like Entra ID Connect.
   * The diagram highlights a secure B2B collaboration scenario and the integration with external identity providers.
   * It also emphasizes clearly defined roles and permissions for users and groups in the cloud.
-</Callout>
 
 As you progress through this article, you will gain detailed insights into Microsoft Entra ID and learn how to integrate B2B connections while effectively managing user, group, and device identities in Azure.
 
 Let’s begin with the introduction to Microsoft Entra ID.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/07e3a37e-65a9-430c-9919-011cc605b25d/lesson/cda68ce1-d25f-4c63-9081-6ff77f6069eb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/07e3a37e-65a9-430c-9919-011cc605b25d/lesson/cda68ce1-d25f-4c63-9081-6ff77f6069eb)

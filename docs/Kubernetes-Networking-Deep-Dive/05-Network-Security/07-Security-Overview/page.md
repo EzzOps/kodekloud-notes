@@ -167,11 +167,9 @@ kubectl run --rm -i --tty admin --image=curlimages/curl \
 
 With Cilium Network Policies, you have full L3–L7 control to secure your workloads. Experiment with custom rules to fit your security requirements!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/ceb679c9-31ba-47e1-9480-c417727d3f02" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/ceb679c9-31ba-47e1-9480-c417727d3f02)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/1c730398-0410-4b97-b560-df89fc2c5a76" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/1c730398-0410-4b97-b560-df89fc2c5a76)
 
 
 # Security Overview
@@ -182,13 +180,9 @@ This guide outlines strategies to strengthen Kubernetes security, including TLS 
 
 As Kubernetes scales to manage hundreds or thousands of containers across multiple nodes, securing your cluster becomes mission-critical. A single vulnerability can cascade through workloads, compromise sensitive data, or disrupt services. This guide outlines proven strategies—from TLS automation to network policies and observability—to strengthen your Kubernetes security posture.
 
-<Frame>
-  ![The image is a security overview diagram highlighting why security is required (complex environment, dynamic nature, compliance requirements) and what security provides (resilience, data protection, monitoring), with a Kubernetes logo in the center.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880405/notes-assets/images/Kubernetes-Networking-Deep-Dive-Security-Overview/security-overview-kubernetes-diagram.jpg)
-</Frame>
+![The image is a security overview diagram highlighting why security is required (complex environment, dynamic nature, compliance requirements) and what security provides (resilience, data protection, monitoring), with a Kubernetes logo in the center.](https://kodekloud.com/kk-media/image/upload/v1752880405/notes-assets/images/Kubernetes-Networking-Deep-Dive-Security-Overview/security-overview-kubernetes-diagram.jpg)
 
-<Frame>
-  ![The image is a section overview with a list of five topics: Encryption and SSL, Securing an Ingress, CNI Network Policies, Mutual TLS (mTLS), and Observability With Hubble.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880406/notes-assets/images/Kubernetes-Networking-Deep-Dive-Security-Overview/encryption-ssl-ingress-cni-mtls-observability.jpg)
-</Frame>
+![The image is a section overview with a list of five topics: Encryption and SSL, Securing an Ingress, CNI Network Policies, Mutual TLS (mTLS), and Observability With Hubble.](https://kodekloud.com/kk-media/image/upload/v1752880406/notes-assets/images/Kubernetes-Networking-Deep-Dive-Security-Overview/encryption-ssl-ingress-cni-mtls-observability.jpg)
 
 | Section                      | Focus                       | Benefit                           |
 | ---------------------------- | --------------------------- | --------------------------------- |
@@ -234,15 +228,11 @@ spec:
     kind: ClusterIssuer
 ```
 
-<Callout icon="lightbulb">
-  Make sure your DNS records are properly configured for HTTP-01 or DNS-01 challenges before deploying cert-manager.
-</Callout>
+> **lightbulb** Make sure your DNS records are properly configured for HTTP-01 or DNS-01 challenges before deploying cert-manager.
 
 cert-manager stores issued certificates in Kubernetes Secrets and renews them automatically before expiration.
 
-<Frame>
-  ![The image is about "Encryption and SSL," featuring logos for Let's Encrypt and Cert Manager, and describes four points related to Kubernetes and TLS certificates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880406/notes-assets/images/Kubernetes-Networking-Deep-Dive-Security-Overview/encryption-ssl-lets-encrypt-cert-manager.jpg)
-</Frame>
+![The image is about "Encryption and SSL," featuring logos for Let's Encrypt and Cert Manager, and describes four points related to Kubernetes and TLS certificates.](https://kodekloud.com/kk-media/image/upload/v1752880406/notes-assets/images/Kubernetes-Networking-Deep-Dive-Security-Overview/encryption-ssl-lets-encrypt-cert-manager.jpg)
 
 ## 2. Securing Ingress
 
@@ -270,9 +260,7 @@ spec:
 
 With this configuration, Traefik delegates certificate requests to cert-manager, enabling HTTPS without manual steps.
 
-<Frame>
-  ![The image shows a combination of Traefik, Let's Encrypt, and Cert Manager logos under the title "Securing Ingress."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880408/notes-assets/images/Kubernetes-Networking-Deep-Dive-Security-Overview/traefik-letsencrypt-cert-manager-ingress.jpg)
-</Frame>
+![The image shows a combination of Traefik, Let's Encrypt, and Cert Manager logos under the title "Securing Ingress."](https://kodekloud.com/kk-media/image/upload/v1752880408/notes-assets/images/Kubernetes-Networking-Deep-Dive-Security-Overview/traefik-letsencrypt-cert-manager-ingress.jpg)
 
 ## 3. CNI Network Policies
 
@@ -320,25 +308,17 @@ spec:
               protocol: TCP
 ```
 
-<Frame>
-  ![The image illustrates CNI network policies in a Kubernetes cluster, showing allowed and blocked traffic between external sources and applications labeled as "web," "foo," and "bar."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880409/notes-assets/images/Kubernetes-Networking-Deep-Dive-Security-Overview/cni-network-policies-kubernetes-traffic.jpg)
-</Frame>
+![The image illustrates CNI network policies in a Kubernetes cluster, showing allowed and blocked traffic between external sources and applications labeled as "web," "foo," and "bar."](https://kodekloud.com/kk-media/image/upload/v1752880409/notes-assets/images/Kubernetes-Networking-Deep-Dive-Security-Overview/cni-network-policies-kubernetes-traffic.jpg)
 
-<Frame>
-  ![The image is about Cilium, highlighting its features such as enhancing pod communication security, leveraging eBPF technology, and providing advanced security controls.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880410/notes-assets/images/Kubernetes-Networking-Deep-Dive-Security-Overview/cilium-pod-communication-security-ebpf.jpg)
-</Frame>
+![The image is about Cilium, highlighting its features such as enhancing pod communication security, leveraging eBPF technology, and providing advanced security controls.](https://kodekloud.com/kk-media/image/upload/v1752880410/notes-assets/images/Kubernetes-Networking-Deep-Dive-Security-Overview/cilium-pod-communication-security-ebpf.jpg)
 
 ## 4. Mutual TLS (mTLS)
 
 Mutual TLS ensures both clients and servers verify each other’s identity before exchanging data. This two-way authentication thwarts man-in-the-middle attacks and enforces strict service-level trust.
 
-<Frame>
-  ![The image illustrates a Mutual TLS (mTLS) process between two pods, showing a TLS handshake and certificate authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880410/notes-assets/images/Kubernetes-Networking-Deep-Dive-Security-Overview/mutual-tls-mtls-pods-handshake-diagram.jpg)
-</Frame>
+![The image illustrates a Mutual TLS (mTLS) process between two pods, showing a TLS handshake and certificate authentication.](https://kodekloud.com/kk-media/image/upload/v1752880410/notes-assets/images/Kubernetes-Networking-Deep-Dive-Security-Overview/mutual-tls-mtls-pods-handshake-diagram.jpg)
 
-<Callout icon="triangle-alert">
-  Expired or misconfigured certificates will break mTLS connections. Monitor certificate lifecycles and automate renewals.
-</Callout>
+> **triangle-alert** Expired or misconfigured certificates will break mTLS connections. Monitor certificate lifecycles and automate renewals.
 
 ## 5. Observability With Hubble
 

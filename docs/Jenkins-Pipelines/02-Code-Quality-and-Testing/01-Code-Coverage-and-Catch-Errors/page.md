@@ -40,15 +40,11 @@ sed -i 's/app\.listen(3000/\/\/ app.listen(3000/' app.js
 sed -i 's/module.exports = app;/\/\/ module.exports = app;/' app.js
 ```
 
-<Callout icon="lightbulb">
-  In the next session, these commands will be executed manually to validate the deployment process. Subsequent automation will be implemented using a Jenkins pipeline.
-</Callout>
+> **lightbulb** In the next session, these commands will be executed manually to validate the deployment process. Subsequent automation will be implemented using a Jenkins pipeline.
 
 Thank you for following this lesson on using GenAI to streamline Lambda deployment via a Jenkins pipeline.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/78297356-097c-4793-b690-bc83f9aba3f0/lesson/2cbd5829-628c-411e-a118-0cc8bafd50c7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/78297356-097c-4793-b690-bc83f9aba3f0/lesson/2cbd5829-628c-411e-a118-0cc8bafd50c7)
 
 
 # Code Coverage and Catch Errors
@@ -83,9 +79,7 @@ Since code coverage also requires MongoDB credentials, we update the command to 
 
 After committing your changes, a new pipeline (e.g. build #17) is triggered where the code coverage stage might fail if the coverage percentage is below the global threshold (e.g. 79% instead of 90%). The following image shows a Jenkins pipeline interface for the "solar-system" project with a failed code coverage step:
 
-<Frame>
-  ![The image shows a Jenkins pipeline interface for a project named "solar-system" with a failed code coverage step. The pipeline includes stages like installing dependencies, dependency scanning, unit testing, and code coverage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879598/notes-assets/images/Jenkins-Pipelines-Code-Coverage-and-Catch-Errors/jenkins-pipeline-solar-system-failed.jpg)
-</Frame>
+![The image shows a Jenkins pipeline interface for a project named "solar-system" with a failed code coverage step. The pipeline includes stages like installing dependencies, dependency scanning, unit testing, and code coverage.](https://kodekloud.com/kk-media/image/upload/v1752879598/notes-assets/images/Jenkins-Pipelines-Code-Coverage-and-Catch-Errors/jenkins-pipeline-solar-system-failed.jpg)
 
 Examining the logs reveals that the build fails due to insufficient coverage. To handle such errors and proceed to the next stages, use the `catchError` step.
 
@@ -111,9 +105,7 @@ node {
 }
 ```
 
-<Callout icon="lightbulb">
-  In the `catchError` block, you have the option to customize the error message and control both the build and stage results.
-</Callout>
+> **lightbulb** In the `catchError` block, you have the option to customize the error message and control both the build and stage results.
 
 ## Updated Code Coverage Stage in Jenkinsfile
 
@@ -163,17 +155,13 @@ Testing Other Endpoints
   ✔ it should fetch Live Status
 ```
 
-<Callout icon="triangle-alert">
-  Even though the `npm run coverage` command outputs an error message for failing the coverage threshold, the catchError block ensures that the build proceeds and the stage is marked as unstable.
-</Callout>
+> **triangle-alert** Even though the `npm run coverage` command outputs an error message for failing the coverage threshold, the catchError block ensures that the build proceeds and the stage is marked as unstable.
 
 ## Dashboard and HTML Coverage Report
 
 After the changes, a new build is triggered. The dashboard now displays the build status accordingly. For example, the dashboard below shows the list of recent builds for the "solar-system" project, including each build's status, run number, commit ID, branch, message, duration, and completion time:
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying a list of recent builds for the "solar-system" project, including their status, run number, commit ID, branch, message, duration, and completion time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879600/notes-assets/images/Jenkins-Pipelines-Code-Coverage-and-Catch-Errors/jenkins-dashboard-solar-system-builds.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying a list of recent builds for the "solar-system" project, including their status, run number, commit ID, branch, message, duration, and completion time.](https://kodekloud.com/kk-media/image/upload/v1752879600/notes-assets/images/Jenkins-Pipelines-Code-Coverage-and-Catch-Errors/jenkins-dashboard-solar-system-builds.jpg)
 
 The HTML report generated during the coverage stage is stored in the workspace and published. You can click the report link in the Classic UI or view it in Blue Ocean.
 
@@ -187,9 +175,7 @@ Below is a snippet from the log that shows the archiving of the HTML report:
 
 Additionally, you can view the detailed code coverage for the "app.js" file in the following report:
 
-<Frame>
-  ![The image shows a code coverage report for a file named "app.js," indicating 79.54% statement coverage, 33.33% branch coverage, 70% function coverage, and 79.06% line coverage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879600/notes-assets/images/Jenkins-Pipelines-Code-Coverage-and-Catch-Errors/code-coverage-report-app-js.jpg)
-</Frame>
+![The image shows a code coverage report for a file named "app.js," indicating 79.54% statement coverage, 33.33% branch coverage, 70% function coverage, and 79.06% line coverage.](https://kodekloud.com/kk-media/image/upload/v1752879600/notes-assets/images/Jenkins-Pipelines-Code-Coverage-and-Catch-Errors/code-coverage-report-app-js.jpg)
 
 ## Conclusion
 
@@ -202,6 +188,4 @@ For more on Jenkins pipelines and CI/CD best practices, check out the following 
 
 Thank you for reading this guide on configuring code coverage with error handling in Jenkins pipelines.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/bcd4711c-8a69-4218-a65c-113fd7a7a88d/lesson/50b67087-7e45-4a3f-a5cf-894697291ace" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/bcd4711c-8a69-4218-a65c-113fd7a7a88d/lesson/50b67087-7e45-4a3f-a5cf-894697291ace)

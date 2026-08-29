@@ -6,9 +6,7 @@ Practical step-by-step system design course for beginners building a scalable ap
 
 This lesson is tailored for absolute beginners who want a practical, step-by-step introduction to system design. Instead of treating topics in isolation, we'll architect a single real-world application together and iteratively evolve its design. As the application grows, we'll introduce components such as load balancers, caching, indexing, replication, and sharding exactly when the system requires them—so you always understand why a component exists and how it improves scalability, performance, or reliability.
 
-<Callout icon="lightbulb">
-  No prior system design experience is required. Basic programming knowledge helps, and each concept is explained from first principles with real-world rationale and examples.
-</Callout>
+> **lightbulb** No prior system design experience is required. Basic programming knowledge helps, and each concept is explained from first principles with real-world rationale and examples.
 
 <Frame>
   <img alt="The image is a system design diagram for beginners, featuring components like an app, load balancer, servers, cache, database, replica, and shards, illustrating data flow and architecture." />
@@ -38,6 +36,4 @@ Further reading and references:
 * [Scalability Patterns and Principles](https://martinfowler.com/articles/scaling.html)
 * [Load Balancing Concepts](https://www.nginx.com/resources/glossary/load-balancer/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/d1bbfcd6-934e-47ed-9d8c-c5d496c37af8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/d1bbfcd6-934e-47ed-9d8c-c5d496c37af8)

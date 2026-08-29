@@ -21,7 +21,7 @@ In this course, you'll explore the following essential topics:
 * Governance and Compliance
 * Resource Deployment Tools and Monitoring Tools
 
-![A person is speaking in front of a computer, with a list of cloud computing topics displayed beside them. The topics include basics of cloud computing, Azure components, and cost management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868455/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Course-Introduction/cloud-computing-presentation-topics.jpg)
+![A person is speaking in front of a computer, with a list of cloud computing topics displayed beside them. The topics include basics of cloud computing, Azure components, and cost management.](https://kodekloud.com/kk-media/image/upload/v1752868455/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Course-Introduction/cloud-computing-presentation-topics.jpg)
 
 > **lightbulb** Throughout the course, you will have access to interactive practice questions and mock tests designed to reinforce your learning and boost your confidence as you prepare for the AZ-900 exam.
 

@@ -34,11 +34,11 @@ To grant someone access to your repository:
 
 They’ll receive a notification and must accept the invite to gain access.
 
-![The image shows a GitHub invitation page where a user is invited to collaborate on a project called "My-cool-project," with options to accept or decline the invitation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867560/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-permissions-and-roles-in-GitHub/github-invitation-my-cool-project.jpg)
+![The image shows a GitHub invitation page where a user is invited to collaborate on a project called "My-cool-project," with options to accept or decline the invitation.](https://kodekloud.com/kk-media/image/upload/v1752867560/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-permissions-and-roles-in-GitHub/github-invitation-my-cool-project.jpg)
 
 Once accepted, the new collaborator appears under **Manage access**.
 
-![The image shows a GitHub repository settings page, specifically the "Manage access" section, where user permissions and collaborators are managed. It indicates that the repository is private and lists collaborators with access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867561/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-permissions-and-roles-in-GitHub/github-repo-settings-manage-access.jpg)
+![The image shows a GitHub repository settings page, specifically the "Manage access" section, where user permissions and collaborators are managed. It indicates that the repository is private and lists collaborators with access.](https://kodekloud.com/kk-media/image/upload/v1752867561/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-permissions-and-roles-in-GitHub/github-repo-settings-manage-access.jpg)
 
 ***
 
@@ -56,7 +56,7 @@ Under **Settings > Options**, customize repository behavior:
   * Squash merging
   * Rebase merging
 
-![The image shows a GitHub settings page for managing pull requests, including options for merge commits, squash merging, and rebase merging. It also includes settings for updating branches and automatically deleting head branches after merging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867562/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-permissions-and-roles-in-GitHub/github-settings-pull-requests-management.jpg)
+![The image shows a GitHub settings page for managing pull requests, including options for merge commits, squash merging, and rebase merging. It also includes settings for updating branches and automatically deleting head branches after merging.](https://kodekloud.com/kk-media/image/upload/v1752867562/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-permissions-and-roles-in-GitHub/github-settings-pull-requests-management.jpg)
 
 ***
 
@@ -70,7 +70,7 @@ Branch protection rules help enforce workflow policies. To set up:
 4. Define a **Bypass list** for organization or repository admins, if needed.
 5. Specify target branches by name or pattern (e.g., `main`, `release/*`).
 
-![The image shows a GitHub settings page for configuring rulesets, with options for enforcement status and branch targeting. The enforcement status is set to "Disabled," and no branch targeting criteria have been configured.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867564/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-permissions-and-roles-in-GitHub/github-settings-rulesets-enforcement-disabled.jpg)
+![The image shows a GitHub settings page for configuring rulesets, with options for enforcement status and branch targeting. The enforcement status is set to "Disabled," and no branch targeting criteria have been configured.](https://kodekloud.com/kk-media/image/upload/v1752867564/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-permissions-and-roles-in-GitHub/github-settings-rulesets-enforcement-disabled.jpg)
 
 Within your rule set, enforce one or more of the following:
 
@@ -83,7 +83,7 @@ Within your rule set, enforce one or more of the following:
 * Block force pushes
 * Require status checks (e.g., code scanning results)
 
-![The image shows a GitHub settings page for configuring branch rules, including options for targeting branches and setting rules like restricting deletions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867564/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-permissions-and-roles-in-GitHub/github-settings-branch-rules-configure.jpg)
+![The image shows a GitHub settings page for configuring branch rules, including options for targeting branches and setting rules like restricting deletions.](https://kodekloud.com/kk-media/image/upload/v1752867564/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-permissions-and-roles-in-GitHub/github-settings-branch-rules-configure.jpg)
 
 > **lightbulb** Organization and repository administrators can always bypass branch protection rules unless explicitly restricted by policy.
 
@@ -97,7 +97,7 @@ GitHub’s built-in security tools let you detect and fix vulnerabilities early.
 * Dependabot security updates
 * Group security updates
 
-![The image shows a GitHub repository settings page focused on "Code security," with options to enable features like Dependabot alerts and security updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867565/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-permissions-and-roles-in-GitHub/github-repo-settings-code-security.jpg)
+![The image shows a GitHub repository settings page focused on "Code security," with options to enable features like Dependabot alerts and security updates.](https://kodekloud.com/kk-media/image/upload/v1752867565/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-permissions-and-roles-in-GitHub/github-repo-settings-code-security.jpg)
 
 ***
 
@@ -108,7 +108,7 @@ GitHub’s built-in security tools let you detect and fix vulnerabilities early.
    * **Reporting guidelines**: Explain how to disclose vulnerabilities, expected response times, and required information.
 2. Go to **Security > Dependabot alerts** and enable alerts to get real-time notifications.
 
-![The image shows a GitHub repository's security settings page, specifically the Dependabot alerts section, indicating that Dependabot alerts are currently disabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867566/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-permissions-and-roles-in-GitHub/github-repo-security-dependabot-alerts-disabled.jpg)
+![The image shows a GitHub repository's security settings page, specifically the Dependabot alerts section, indicating that Dependabot alerts are currently disabled.](https://kodekloud.com/kk-media/image/upload/v1752867566/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-permissions-and-roles-in-GitHub/github-repo-security-dependabot-alerts-disabled.jpg)
 
 ***
 
@@ -121,7 +121,7 @@ At the bottom of **Settings > Collaborators**, you’ll find critical operations
 * Transfer repository ownership
 * Archive or delete the repository
 
-![The image shows a GitHub repository settings page, specifically the "Danger Zone" section, which includes options for changing repository visibility, disabling branch protection rules, transferring ownership, archiving, and deleting the repository.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867568/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-permissions-and-roles-in-GitHub/github-repo-settings-danger-zone.jpg)
+![The image shows a GitHub repository settings page, specifically the "Danger Zone" section, which includes options for changing repository visibility, disabling branch protection rules, transferring ownership, archiving, and deleting the repository.](https://kodekloud.com/kk-media/image/upload/v1752867568/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-permissions-and-roles-in-GitHub/github-repo-settings-danger-zone.jpg)
 
 > **triangle-alert** Actions in the Danger Zone are irreversible. Double-check permissions and backups before proceeding.
 
@@ -131,7 +131,7 @@ At the bottom of **Settings > Collaborators**, you’ll find critical operations
 
 These best practices apply to standard GitHub repositories, though [GitHub Enterprise Cloud](https://docs.github.com/en/enterprise-cloud) offers advanced controls. For deeper dives, visit [GitHub’s official documentation](https://docs.github.com).
 
-![The image shows a GitHub repository settings page, specifically the "Manage access" section, where user permissions for a private repository are being managed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867569/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-permissions-and-roles-in-GitHub/github-repo-settings-manage-access-2.jpg)
+![The image shows a GitHub repository settings page, specifically the "Manage access" section, where user permissions for a private repository are being managed.](https://kodekloud.com/kk-media/image/upload/v1752867569/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-permissions-and-roles-in-GitHub/github-repo-settings-manage-access-2.jpg)
 
 ***
 

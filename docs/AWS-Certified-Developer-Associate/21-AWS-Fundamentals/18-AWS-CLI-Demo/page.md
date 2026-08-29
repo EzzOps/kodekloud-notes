@@ -6,7 +6,7 @@ This article explores managing AWS resources using the AWS Command Line Interfac
 
 In this article, we explore how to manage AWS resources using the AWS Command Line Interface (CLI) instead of the web-based AWS Console. Although the AWS Console provides a user-friendly graphical interface, many engineers prefer the CLI for its speed, automation capabilities, and ease of scripting.
 
-![The image shows a webpage for the AWS Command Line Interface, detailing features, installation instructions for different operating systems, and related resources. It includes links for getting started, documentation, and community forums.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858107/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CLI-Demo/aws-cli-webpage-features-installation.jpg)
+![The image shows a webpage for the AWS Command Line Interface, detailing features, installation instructions for different operating systems, and related resources. It includes links for getting started, documentation, and community forums.](https://kodekloud.com/kk-media/image/upload/v1752858107/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CLI-Demo/aws-cli-webpage-features-installation.jpg)
 
 To get started, visit [aws.amazon.com/CLI](https://aws.amazon.com/cli/) for detailed installation instructions tailored to your operating system. Generally, the installation process is straightforward, involving just a few terminal commands as detailed in the official documentation.
 
@@ -26,7 +26,7 @@ The general structure of an AWS CLI command is as follows:
 4. \[subcommand, e.g., ls or mb]
 5. \[additional parameters or flags]
 
-![The image shows a terminal window displaying information about the AWS Command Line Interface, including a description, synopsis, and global options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858108/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CLI-Demo/aws-cli-terminal-window-info.jpg)
+![The image shows a terminal window displaying information about the AWS Command Line Interface, including a description, synopsis, and global options.](https://kodekloud.com/kk-media/image/upload/v1752858108/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CLI-Demo/aws-cli-terminal-window-info.jpg)
 
 For instance, to specify a region, include the --region flag followed by your target region. This is analogous to selecting a region in the AWS Console.
 
@@ -42,7 +42,7 @@ aws s3 help
 
 This command provides detailed options, arguments, and explanations for various notations, including those for specifying local paths and S3 URIs.
 
-![The image shows a terminal window with text explaining concepts and notations for high-level S3 commands, including path argument types like "LocalPath" and "S3Uri."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858110/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CLI-Demo/s3-commands-notations-terminal.jpg)
+![The image shows a terminal window with text explaining concepts and notations for high-level S3 commands, including path argument types like "LocalPath" and "S3Uri."](https://kodekloud.com/kk-media/image/upload/v1752858110/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CLI-Demo/s3-commands-notations-terminal.jpg)
 
 One commonly used command is to create a new S3 bucket using the "aws s3 mb" command (short for "make bucket"). For more information on this command, you can view its help section:
 

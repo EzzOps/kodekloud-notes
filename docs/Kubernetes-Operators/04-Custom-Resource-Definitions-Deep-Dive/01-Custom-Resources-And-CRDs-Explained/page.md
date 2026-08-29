@@ -106,9 +106,7 @@ spec:
                   type: integer
 ```
 
-<Callout icon="lightbulb">
-  A CRD defines the API shape and validation only. To make CRs produce Deployments, Services, or Pods, you must run a controller (operator) that watches the CRs and reconciles the desired state.
-</Callout>
+> **lightbulb** A CRD defines the API shape and validation only. To make CRs produce Deployments, Services, or Pods, you must run a controller (operator) that watches the CRs and reconciles the desired state.
 
 Why schema validation matters
 
@@ -118,9 +116,7 @@ Why schema validation matters
 
 Warning — CRDs without controllers
 
-<Callout icon="warning">
-  If you apply only the CRD and create CRs without a controller, the cluster will store those objects but no resources (Deployments, Pods, Services) will be created automatically. Always deploy or run a controller if you expect behavior to be realized.
-</Callout>
+> **warning** If you apply only the CRD and create CRs without a controller, the cluster will store those objects but no resources (Deployments, Pods, Services) will be created automatically. Always deploy or run a controller if you expect behavior to be realized.
 
 Further reading and references
 
@@ -130,6 +126,4 @@ Further reading and references
 
 This overview covers the essentials: CRDs let you teach Kubernetes new resource types and validate them. Pair a CRD with a controller to implement behavior, and you have a powerful extension mechanism for building platform APIs on top of Kubernetes.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ba392f08-9d70-442b-9751-fdc2052b777e/lesson/56f5a49d-5685-4611-9a02-af5b2004a633" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ba392f08-9d70-442b-9751-fdc2052b777e/lesson/56f5a49d-5685-4611-9a02-af5b2004a633)

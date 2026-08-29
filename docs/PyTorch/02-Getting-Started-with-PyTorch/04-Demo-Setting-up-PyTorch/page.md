@@ -22,9 +22,7 @@ print(another_random_tensor)
 print(another_random_tensor.shape)
 ```
 
-<Callout icon="lightbulb">
-  If you're unsure about the structure of your tensor, use the visualize\_tensor() helper function to better understand its layers, rows, and columns.
-</Callout>
+> **lightbulb** If you're unsure about the structure of your tensor, use the visualize\_tensor() helper function to better understand its layers, rows, and columns.
 
 ***
 
@@ -92,9 +90,7 @@ print(concat_tensor)
 # print(concat_tensor)
 ```
 
-<Callout icon="triangle-alert">
-  Ensure that when concatenating tensors, all dimensions except the one being concatenated must match. Otherwise, PyTorch will raise a RuntimeError.
-</Callout>
+> **triangle-alert** Ensure that when concatenating tensors, all dimensions except the one being concatenated must match. Otherwise, PyTorch will raise a RuntimeError.
 
 ***
 
@@ -152,9 +148,7 @@ except RuntimeError as e:
     print(e)
 ```
 
-<Callout icon="lightbulb">
-  On a machine without an NVIDIA GPU or proper drivers, attempting to move a tensor to 'cuda' will raise a runtime error. Always check for GPU availability before transferring data.
-</Callout>
+> **lightbulb** On a machine without an NVIDIA GPU or proper drivers, attempting to move a tensor to 'cuda' will raise a runtime error. Always check for GPU availability before transferring data.
 
 ***
 
@@ -172,11 +166,9 @@ By mastering these fundamental concepts, you will be well-equipped to build and 
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/9a291e1f-8cd2-49f0-a4bf-e0ca16e0f3f7" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/9a291e1f-8cd2-49f0-a4bf-e0ca16e0f3f7)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/16e0587e-3aba-47cb-a4b2-8ef26befd39e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/16e0587e-3aba-47cb-a4b2-8ef26befd39e)
 
 
 # Demo Setting up PyTorch
@@ -460,9 +452,7 @@ Exit the interpreter and deactivate the environment:
 root@ubuntu-host:~ via 🐍 v3.11.4 (venv2) ➜ deactivate
 ```
 
-<Callout icon="lightbulb">
-  Generating a `requirements.txt` file helps ensure your project’s environment can be perfectly replicated on another machine, thereby improving collaboration efficiency.
-</Callout>
+> **lightbulb** Generating a `requirements.txt` file helps ensure your project’s environment can be perfectly replicated on another machine, thereby improving collaboration efficiency.
 
 ***
 
@@ -486,8 +476,6 @@ By following these steps, you ensure that your development environment is consis
 * [Python Virtual Environments Guide](https://docs.python.org/3/library/venv.html)
 * [Understanding CUDA in PyTorch](https://pytorch.org/docs/stable/notes/cuda.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/22b81745-1782-4121-8e27-2d1a632fda0f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/22b81745-1782-4121-8e27-2d1a632fda0f)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/c496c2d8-6495-4274-b1d9-53234081e334" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/c496c2d8-6495-4274-b1d9-53234081e334)

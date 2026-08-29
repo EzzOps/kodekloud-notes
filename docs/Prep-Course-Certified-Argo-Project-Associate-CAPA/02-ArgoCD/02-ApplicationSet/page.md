@@ -88,9 +88,7 @@ The two core concepts in an ApplicationSet are:
 
 This pattern enables scalable GitOps workflows: treat an Application as a single, hand-written letter, and an ApplicationSet as a mail-merge system that generates personalized letters for each recipient.
 
-<Callout icon="lightbulb">
-  Argo CD provides multiple generator types so you can produce parameters from static lists, cluster registries, Git repositories, SCM providers, and custom plugins—enabling flexible multi-cluster and preview deployments.
-</Callout>
+> **lightbulb** Argo CD provides multiple generator types so you can produce parameters from static lists, cluster registries, Git repositories, SCM providers, and custom plugins—enabling flexible multi-cluster and preview deployments.
 
 ## Built-in generator types
 
@@ -127,6 +125,4 @@ ApplicationSet supports several built-in generators. Use the generator type that
 
 By combining generators and templates you automate the creation of consistent, repeatable Applications and enable teams to self-serve multi-cluster deployments from a single declarative manifest.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/c7dc3d8d-66f7-4343-b0ad-fa7c09149fa7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/c7dc3d8d-66f7-4343-b0ad-fa7c09149fa7)

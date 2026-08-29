@@ -15,9 +15,7 @@ To create a deployment manually using the web console, follow these steps:
 1. Navigate to **Workloads** and then **Deployments**.
 2. Click on **Create Deployment**.
 
-<Frame>
-  ![The image shows the Red Hat OpenShift Container Platform dashboard, highlighting the "Deployments" section in the sidebar and providing options for getting started with resources and exploring new admin features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882699/notes-assets/images/OpenShift-4-Deploying-applications-web-console/openshift-dashboard-deployments-sidebar.jpg)
-</Frame>
+![The image shows the Red Hat OpenShift Container Platform dashboard, highlighting the "Deployments" section in the sidebar and providing options for getting started with resources and exploring new admin features.](https://kodekloud.com/kk-media/image/upload/v1752882699/notes-assets/images/OpenShift-4-Deploying-applications-web-console/openshift-dashboard-deployments-sidebar.jpg)
 
 In the editor provided, you can paste a standard Kubernetes manifest. For example, the YAML below deploys an HTTP server:
 
@@ -35,9 +33,7 @@ spec:
         - containerPort: 8080
 ```
 
-<Callout icon="lightbulb">
-  For applications with multiple components (e.g., services, deployments, daemon sets), consider using automated methods to deploy all configurations simultaneously.
-</Callout>
+> **lightbulb** For applications with multiple components (e.g., services, deployments, daemon sets), consider using automated methods to deploy all configurations simultaneously.
 
 ***
 
@@ -72,22 +68,16 @@ spec:
 
 Once running, you can view key details like the namespace, deployment name, update strategy, node selector, and pod selector. The dashboard also provides options to view the YAML configuration and a list of running pods.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Container Platform interface displaying deployment details for an "nginx-deployment" with 2 pods. The sidebar includes options like Home, Operators, and Workloads.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882701/notes-assets/images/OpenShift-4-Deploying-applications-web-console/openshift-nginx-deployment-details.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Container Platform interface displaying deployment details for an "nginx-deployment" with 2 pods. The sidebar includes options like Home, Operators, and Workloads.](https://kodekloud.com/kk-media/image/upload/v1752882701/notes-assets/images/OpenShift-4-Deploying-applications-web-console/openshift-nginx-deployment-details.jpg)
 
 To inspect deployed pods:
 
 * Navigate to **Pods** under the deployment.
 * Click on a specific pod to view its details, logs, and even access an embedded terminal (similar to executing "kubectl exec").
 
-<Frame>
-  ![The image shows the Red Hat OpenShift Container Platform interface, displaying a list of running pods under the "nginx-deployment" with their status, readiness, and other details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882703/notes-assets/images/OpenShift-4-Deploying-applications-web-console/openshift-nginx-deployment-pods.jpg)
-</Frame>
+![The image shows the Red Hat OpenShift Container Platform interface, displaying a list of running pods under the "nginx-deployment" with their status, readiness, and other details.](https://kodekloud.com/kk-media/image/upload/v1752882703/notes-assets/images/OpenShift-4-Deploying-applications-web-console/openshift-nginx-deployment-pods.jpg)
 
-<Frame>
-  ![The image shows the Red Hat OpenShift Container Platform interface, displaying details of a running Nginx deployment pod. It includes tabs for metrics, YAML, environment, logs, events, and terminal.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882704/notes-assets/images/OpenShift-4-Deploying-applications-web-console/openshift-nginx-deployment-interface.jpg)
-</Frame>
+![The image shows the Red Hat OpenShift Container Platform interface, displaying details of a running Nginx deployment pod. It includes tabs for metrics, YAML, environment, logs, events, and terminal.](https://kodekloud.com/kk-media/image/upload/v1752882704/notes-assets/images/OpenShift-4-Deploying-applications-web-console/openshift-nginx-deployment-interface.jpg)
 
 For example, executing this command in the interactive terminal:
 

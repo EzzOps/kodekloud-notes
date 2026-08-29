@@ -6,9 +6,7 @@ Enables legacy applications to consume Vault secrets without embedding client lo
 
 Enable legacy applications to consume Vault secrets without embedding Vault client logic. Vault Agent runs as a sidecar or local daemon to handle authentication, token management, caching, and templating on behalf of your app.
 
-<Frame>
-  ![The image is a slide explaining the Vault Agent, a client daemon for enabling legacy applications to interact with secrets, highlighting features like automatic authentication, secure token storage, local caching, and templating.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878373/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Agent-Auto-Auth-and-Token-Sink/vault-agent-client-daemon-explained.jpg)
-</Frame>
+![The image is a slide explaining the Vault Agent, a client daemon for enabling legacy applications to interact with secrets, highlighting features like automatic authentication, secure token storage, local caching, and templating.](https://kodekloud.com/kk-media/image/upload/v1752878373/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Agent-Auto-Auth-and-Token-Sink/vault-agent-client-daemon-explained.jpg)
 
 ## What Is Vault Agent?
 
@@ -30,9 +28,7 @@ Deploy Vault Agent on the same host or pod as your application. The agent:
 3. Optionally renews the token and handles wraps.
 4. Your app reads the token and invokes Vault’s HTTP API as usual.
 
-<Callout icon="lightbulb">
-  The application only needs to read a local file or environment variable. All Vault interactions are handled by Vault Agent.
-</Callout>
+> **lightbulb** The application only needs to read a local file or environment variable. All Vault interactions are handled by Vault Agent.
 
 ## Supported Authentication Methods
 
@@ -88,9 +84,7 @@ vault {
 
 To reduce the risk of token interception (MITM), Vault supports response wrapping. You can wrap tokens at the auth method level or at the sink.
 
-<Callout icon="triangle-alert">
-  Wrapped tokens are single-use and must be unwrapped before use. Choose wrapping placement carefully based on security and renewal needs.
-</Callout>
+> **triangle-alert** Wrapped tokens are single-use and must be unwrapped before use. Choose wrapping placement carefully based on security and renewal needs.
 
 ### 1. Wrapping at the Auth Method
 
@@ -117,13 +111,9 @@ vault {
 }
 ```
 
-<Frame>
-  ![The image illustrates the process of response wrapping at the authentication method, showing how a Vault agent interacts with an application to protect against MITM attacks. It includes a diagram with arrows indicating the flow of authentication and token handling.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878374/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Agent-Auto-Auth-and-Token-Sink/response-wrapping-authentication-vault-diagram.jpg)
-</Frame>
+![The image illustrates the process of response wrapping at the authentication method, showing how a Vault agent interacts with an application to protect against MITM attacks. It includes a diagram with arrows indicating the flow of authentication and token handling.](https://kodekloud.com/kk-media/image/upload/v1752878374/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Agent-Auto-Auth-and-Token-Sink/response-wrapping-authentication-vault-diagram.jpg)
 
-<Frame>
-  ![The image illustrates the process of response wrapping at the authentication method, showing how a Vault Agent interacts with an application to protect against MITM attacks by returning a response-wrapped token. It highlights the lack of token renewal capability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878375/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Agent-Auto-Auth-and-Token-Sink/response-wrapping-vault-agent-mitm.jpg)
-</Frame>
+![The image illustrates the process of response wrapping at the authentication method, showing how a Vault Agent interacts with an application to protect against MITM attacks by returning a response-wrapped token. It highlights the lack of token renewal capability.](https://kodekloud.com/kk-media/image/upload/v1752878375/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Agent-Auto-Auth-and-Token-Sink/response-wrapping-vault-agent-mitm.jpg)
 
 Pros:
 
@@ -158,9 +148,7 @@ vault {
 }
 ```
 
-<Frame>
-  ![The image is a diagram illustrating "Response Wrapping at the Sink" with an application, Vault Agent, and token flow, highlighting that it does not protect against MITM attacks. It includes labels for wrapped token and token renewal capability, and features a Vault certification badge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878377/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Agent-Auto-Auth-and-Token-Sink/response-wrapping-sink-diagram-mitm.jpg)
-</Frame>
+![The image is a diagram illustrating "Response Wrapping at the Sink" with an application, Vault Agent, and token flow, highlighting that it does not protect against MITM attacks. It includes labels for wrapped token and token renewal capability, and features a Vault certification badge.](https://kodekloud.com/kk-media/image/upload/v1752878377/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Agent-Auto-Auth-and-Token-Sink/response-wrapping-sink-diagram-mitm.jpg)
 
 Pros:
 
@@ -172,9 +160,7 @@ Cons:
 
 ### 3. Wrapping Method Comparison
 
-<Frame>
-  ![The image is a comparison chart of response-wrapping methods for tokens, highlighting the pros and cons of wrapping by the Auth Method versus the Sink.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878378/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Agent-Auto-Auth-and-Token-Sink/response-wrapping-methods-comparison-chart.jpg)
-</Frame>
+![The image is a comparison chart of response-wrapping methods for tokens, highlighting the pros and cons of wrapping by the Auth Method versus the Sink.](https://kodekloud.com/kk-media/image/upload/v1752878378/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Agent-Auto-Auth-and-Token-Sink/response-wrapping-methods-comparison-chart.jpg)
 
 | Feature            | Wrap at Auth Method | Wrap at Sink     |
 | ------------------ | ------------------- | ---------------- |
@@ -197,6 +183,4 @@ Next, explore Vault Agent’s templating and secret caching capabilities.
 * [Vault Response Wrapping](https://www.vaultproject.io/docs/concepts/response-wrapping)
 * [HashiCorp Vault Official Docs](https://www.vaultproject.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/0e6639de-d61c-402b-a161-8f7fc39daf07/lesson/e6bd65c1-5fad-403c-84af-731c342fdb30" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/0e6639de-d61c-402b-a161-8f7fc39daf07/lesson/e6bd65c1-5fad-403c-84af-731c342fdb30)

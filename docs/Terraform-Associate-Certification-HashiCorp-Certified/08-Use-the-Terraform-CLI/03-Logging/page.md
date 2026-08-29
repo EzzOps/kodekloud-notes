@@ -58,12 +58,8 @@ $ head -10 /tmp/terraform.log
 2020/10/18 22:08:30 [INFO]  CLI command args: []string{"plan"}
 ```
 
-<Callout icon="lightbulb">
-  To disable logging, simply unset the TF\_LOG and TF\_LOG\_PATH environment variables. This stops Terraform from generating extensive log output.
-</Callout>
+> **lightbulb** To disable logging, simply unset the TF\_LOG and TF\_LOG\_PATH environment variables. This stops Terraform from generating extensive log output.
 
 That concludes this article on Terraform logging. To verify your understanding, please proceed to the multiple-choice quiz for this section.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/ed4291fc-57a9-43d3-abff-eb82bba4a679/lesson/78d56336-8278-416b-97c8-f797932baed6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/ed4291fc-57a9-43d3-abff-eb82bba4a679/lesson/78d56336-8278-416b-97c8-f797932baed6)

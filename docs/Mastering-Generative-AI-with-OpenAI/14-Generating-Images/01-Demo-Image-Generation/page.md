@@ -31,13 +31,11 @@ Install the SDK with:
 pip install openai
 ```
 
-<Callout icon="lightbulb">
-  Store your API key in an environment variable for security:
+> **lightbulb** Store your API key in an environment variable for security:
 
   ```bash theme={null}
   export OPENAI_API_KEY="your_api_key_here"
   ```
-</Callout>
 
 ***
 

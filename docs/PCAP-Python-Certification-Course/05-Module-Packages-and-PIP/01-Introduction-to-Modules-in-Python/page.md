@@ -6,9 +6,7 @@ This article explains how to use modules in Python for organizing code, focusing
 
 Modules in Python let you organize your code into manageable, reusable parts. A module is simply a file containing Python definitions and statements that can be imported and used in other programs.
 
-<Frame>
-  ![The image defines a "Module" as a file containing Python definitions and statements, which can be imported and used when necessary.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882917/notes-assets/images/PCAP-Python-Certification-Course-Introduction-to-Modules-in-Python/python-module-definition-file.jpg)
-</Frame>
+![The image defines a "Module" as a file containing Python definitions and statements, which can be imported and used when necessary.](https://kodekloud.com/kk-media/image/upload/v1752882917/notes-assets/images/PCAP-Python-Certification-Course-Introduction-to-Modules-in-Python/python-module-definition-file.jpg)
 
 You can create your own module, use one developed by someone else, or leverage one of the built-in modules included in the Python Standard Library. In this article, we're focusing on the built-in math module, which provides a variety of functions and constants to perform mathematical operations effectively.
 
@@ -22,9 +20,7 @@ print(math.sin(90))
 print(math.pi)
 ```
 
-<Callout icon="lightbulb">
-  Remember that the `math.sin` function expects the angle in radians. To compute the sine of 90 degrees, convert the angle using `math.radians`, like so: `math.sin(math.radians(90))`.
-</Callout>
+> **lightbulb** Remember that the `math.sin` function expects the angle in radians. To compute the sine of 90 degrees, convert the angle using `math.radians`, like so: `math.sin(math.radians(90))`.
 
 In the code above, both `sin` and `pi` are referenced via the `math` namespace, which keeps them separate from your program’s global namespace to avoid any naming conflicts.
 
@@ -80,6 +76,4 @@ With aliasing, you ensure your code remains clear and free from naming conflicts
 
 That's it for this introduction to modules in Python. Happy coding, and see you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/a65eb782-d2dc-4850-9046-e4bb57d38876/lesson/61d61300-69e7-4308-aa15-3b6daaecf007" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/a65eb782-d2dc-4850-9046-e4bb57d38876/lesson/61d61300-69e7-4308-aa15-3b6daaecf007)

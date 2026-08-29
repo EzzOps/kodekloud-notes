@@ -35,9 +35,7 @@ Cloning repository https://github.com/AdminTurnedDevOps/go-webapp-sample.git
 
 The log above confirms that the pipeline successfully cloned the repository and checked out the specified commit.
 
-<Callout icon="lightbulb">
-  Make sure that your Git configuration is set correctly to avoid warnings related to missing credentials or executables.
-</Callout>
+> **lightbulb** Make sure that your Git configuration is set correctly to avoid warnings related to missing credentials or executables.
 
 ## Pipeline Execution Details
 
@@ -58,15 +56,11 @@ If you need to troubleshoot or analyze pipeline execution further, the BlueOcean
 
 Below is an image illustrating the dashboard interface with options to restart the pipeline and view execution details:
 
-<Frame>
-  ![The image shows a software development pipeline interface, indicating the "Development" stage is complete, with options to restart and view details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879998/notes-assets/images/Jenkins-BlueOcean-Dashboard/frame_50.jpg)
-</Frame>
+![The image shows a software development pipeline interface, indicating the "Development" stage is complete, with options to restart and view details.](https://kodekloud.com/kk-media/image/upload/v1752879998/notes-assets/images/Jenkins-BlueOcean-Dashboard/frame_50.jpg)
 
 Downloading the log file is especially useful for troubleshooting, as it includes critical information such as tests archived, artifacts created, runtime duration, change timings, and the user who initiated the build.
 
-<Callout icon="lightbulb">
-  The BlueOcean interface is designed primarily to enhance visualization and provide an intuitive user experience for monitoring and interacting with your pipelines. It leverages familiar patterns to make managing complex builds straightforward.
-</Callout>
+> **lightbulb** The BlueOcean interface is designed primarily to enhance visualization and provide an intuitive user experience for monitoring and interacting with your pipelines. It leverages familiar patterns to make managing complex builds straightforward.
 
 ## Next Steps
 
@@ -76,8 +70,6 @@ For additional resources and detailed documentation, consider visiting [Jenkins 
 
 Keep exploring to master the intricacies of Jenkins pipelines and optimize your continuous integration and delivery processes.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/77db3006-93f7-42b0-90d0-6fd961631d1f/lesson/09a6d832-daca-4cb4-a15d-8bf3364284bd" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/77db3006-93f7-42b0-90d0-6fd961631d1f/lesson/09a6d832-daca-4cb4-a15d-8bf3364284bd)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/77db3006-93f7-42b0-90d0-6fd961631d1f/lesson/71f84523-dd37-48c0-81e1-0b0d3e5e620f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/jenkins/module/77db3006-93f7-42b0-90d0-6fd961631d1f/lesson/71f84523-dd37-48c0-81e1-0b0d3e5e620f)

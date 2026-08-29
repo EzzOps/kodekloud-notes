@@ -24,7 +24,7 @@ Spread Placement Groups are designed to mitigate correlated failures by allocati
 
 > **triangle-alert** Spread Placement Groups should be used when critical workloads demand strict isolation from potential hardware failures.
 
-![The image illustrates three types of EC2 instance placements: Cluster Placement Group, Partition Placement Group, and Spread Placement Group, each with different configurations for distributing instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858885/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Placement/ec2-instance-placement-groups-diagram.jpg)
+![The image illustrates three types of EC2 instance placements: Cluster Placement Group, Partition Placement Group, and Spread Placement Group, each with different configurations for distributing instances.](https://kodekloud.com/kk-media/image/upload/v1752858885/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Placement/ec2-instance-placement-groups-diagram.jpg)
 
 ## Key Comparisons
 

@@ -28,15 +28,11 @@ Building the image is just the first step. In order to push your image to Docker
 
 To take full advantage of Jenkins' capabilities with Docker, install the Docker Pipeline plugin by navigating to the Plugins section in Jenkins. This plugin provides functions for handling Docker images, configuring registries, and accessing global variables.
 
-<Frame>
-  ![The image shows a webpage from the CloudBees documentation, specifically focusing on the "Global Variable Reference" for the Docker Pipeline plugin. It includes a sidebar with navigation links and detailed text about Docker-related functions in a pipeline script.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879644/notes-assets/images/Jenkins-Pipelines-Push-to-Registry/cloudbees-docker-pipeline-global-variable.jpg)
-</Frame>
+![The image shows a webpage from the CloudBees documentation, specifically focusing on the "Global Variable Reference" for the Docker Pipeline plugin. It includes a sidebar with navigation links and detailed text about Docker-related functions in a pipeline script.](https://kodekloud.com/kk-media/image/upload/v1752879644/notes-assets/images/Jenkins-Pipelines-Push-to-Registry/cloudbees-docker-pipeline-global-variable.jpg)
 
 For more detailed information, refer to the [global variable reference documentation](https://www.jenkins.io/doc/pipeline/steps/docker/) provided by the plugin.
 
-<Frame>
-  ![The image shows a webpage displaying documentation for Jenkins Pipeline Syntax, specifically focusing on global variables related to Docker. It includes descriptions of methods like withRegistry, withServer, and image.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879645/notes-assets/images/Jenkins-Pipelines-Push-to-Registry/jenkins-pipeline-syntax-docker-vars.jpg)
-</Frame>
+![The image shows a webpage displaying documentation for Jenkins Pipeline Syntax, specifically focusing on global variables related to Docker. It includes descriptions of methods like withRegistry, withServer, and image.](https://kodekloud.com/kk-media/image/upload/v1752879645/notes-assets/images/Jenkins-Pipelines-Push-to-Registry/jenkins-pipeline-syntax-docker-vars.jpg)
 
 ***
 
@@ -48,19 +44,13 @@ For secure image pushes, configure your Docker Hub credentials in Jenkins:
 2. Create a new entry of type "Username with password."
 3. Label the description as "Docker Hub credentials" for easy identification.
 
-<Callout icon="lightbulb">
-  The default registry URL is set to index.docker.io/v1. If you are using a different container registry, make sure to specify its endpoint in your Jenkins configuration.
-</Callout>
+> **lightbulb** The default registry URL is set to index.docker.io/v1. If you are using a different container registry, make sure to specify its endpoint in your Jenkins configuration.
 
-<Frame>
-  ![The image shows a Jenkins Credentials Provider interface where a user is configuring credentials with a username and password. Various credential options are visible in a dropdown menu.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879646/notes-assets/images/Jenkins-Pipelines-Push-to-Registry/jenkins-credentials-provider-interface.jpg)
-</Frame>
+![The image shows a Jenkins Credentials Provider interface where a user is configuring credentials with a username and password. Various credential options are visible in a dropdown menu.](https://kodekloud.com/kk-media/image/upload/v1752879646/notes-assets/images/Jenkins-Pipelines-Push-to-Registry/jenkins-credentials-provider-interface.jpg)
 
 Refer to the following documentation for configuring a Docker registry endpoint if needed:
 
-<Frame>
-  ![The image shows a Jenkins Pipeline Syntax page for configuring a Docker registry endpoint, with options to set the Docker registry URL and credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879648/notes-assets/images/Jenkins-Pipelines-Push-to-Registry/jenkins-pipeline-docker-registry.jpg)
-</Frame>
+![The image shows a Jenkins Pipeline Syntax page for configuring a Docker registry endpoint, with options to set the Docker registry URL and credentials.](https://kodekloud.com/kk-media/image/upload/v1752879648/notes-assets/images/Jenkins-Pipelines-Push-to-Registry/jenkins-pipeline-docker-registry.jpg)
 
 ***
 
@@ -144,9 +134,7 @@ f67a532f2a54: Layer already exists
 
 You can also verify the associated commit in GitHub:
 
-<Frame>
-  ![The image shows a code repository interface with a list of files and recent commits. It highlights a branch named "feature/enabling-cicd" with a recent commit titled "Push Docker Image."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879649/notes-assets/images/Jenkins-Pipelines-Push-to-Registry/code-repository-feature-branch.jpg)
-</Frame>
+![The image shows a code repository interface with a list of files and recent commits. It highlights a branch named "feature/enabling-cicd" with a recent commit titled "Push Docker Image."](https://kodekloud.com/kk-media/image/upload/v1752879649/notes-assets/images/Jenkins-Pipelines-Push-to-Registry/code-repository-feature-branch.jpg)
 
 ***
 
@@ -162,6 +150,4 @@ These steps complete the continuous integration process, which also includes dep
 
 Happy building and automating your container workflows!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/a1289a46-be38-4446-a056-0b9730d05dfd/lesson/8a815203-2380-4971-ba51-a38876c44046" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/a1289a46-be38-4446-a056-0b9730d05dfd/lesson/8a815203-2380-4971-ba51-a38876c44046)

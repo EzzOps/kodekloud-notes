@@ -16,9 +16,7 @@ You may encounter terms such as console, virtual terminal, and terminal emulator
 * A console is the display screen where Linux outputs text and accepts commands.
 * A terminal emulator is a graphical application that replicates console functionality within a window.
 
-<Frame>
-  ![The image shows three types of terminal interfaces: a console, a virtual terminal, and a terminal emulator, each with a distinct visual representation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881259/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Log-in-to-Local-Remote-Graphical-and-Text-Mode-Consoles/terminal-interfaces-console-virtual-emulator.jpg)
-</Frame>
+![The image shows three types of terminal interfaces: a console, a virtual terminal, and a terminal emulator, each with a distinct visual representation.](https://kodekloud.com/kk-media/image/upload/v1752881259/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Log-in-to-Local-Remote-Graphical-and-Text-Mode-Consoles/terminal-interfaces-console-virtual-emulator.jpg)
 
 Historically, when computing resources were scarce and expensive, a powerful central computer was connected to multiple remote terminals, allowing simultaneous use by multiple users. Today, both consoles and terminal emulators are implemented in software. For instance, during the Linux boot process, you will see vital system events displayed as text:
 
@@ -60,38 +58,26 @@ Historically, when computing resources were scarce and expensive, a powerful cen
 
 After booting, you can access a virtual terminal by pressing Control + Alt + F2 on your keyboard. This action brings up a text-based interface for login.
 
-<Frame>
-  ![The image shows instructions for accessing virtual terminals using the key combination "CTRL + ALT + F2" and a login prompt for Ubuntu 23.10.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881260/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Log-in-to-Local-Remote-Graphical-and-Text-Mode-Consoles/ubuntu-23-10-virtual-terminals-instructions.jpg)
-</Frame>
+![The image shows instructions for accessing virtual terminals using the key combination "CTRL + ALT + F2" and a login prompt for Ubuntu 23.10.](https://kodekloud.com/kk-media/image/upload/v1752881260/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Log-in-to-Local-Remote-Graphical-and-Text-Mode-Consoles/ubuntu-23-10-virtual-terminals-instructions.jpg)
 
 If you are using a Linux desktop with a graphical user interface (GUI), you will typically use a terminal emulator to issue commands. The login interface changes based on whether a GUI is available:
 
 * For a GUI system, you will see a graphical login screen displaying a list of users.
 * For systems without a GUI (like many servers), a text console login prompt will request your username and password (the password is hidden as you type). To log out of these sessions, simply type `exit`.
 
-<Frame>
-  ![The image shows a login screen for Ubuntu with a user named "Aaron" and the text "Local GUI" at the top.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881261/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Log-in-to-Local-Remote-Graphical-and-Text-Mode-Consoles/ubuntu-login-screen-aaron-local-gui.jpg)
-</Frame>
+![The image shows a login screen for Ubuntu with a user named "Aaron" and the text "Local GUI" at the top.](https://kodekloud.com/kk-media/image/upload/v1752881261/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Log-in-to-Local-Remote-Graphical-and-Text-Mode-Consoles/ubuntu-login-screen-aaron-local-gui.jpg)
 
-<Frame>
-  ![The image shows a local text console displaying system information for Ubuntu 23.10, including system load, memory usage, and network addresses. It also mentions available updates and provides links for documentation and support.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881262/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Log-in-to-Local-Remote-Graphical-and-Text-Mode-Consoles/ubuntu-23-10-system-info-console.jpg)
-</Frame>
+![The image shows a local text console displaying system information for Ubuntu 23.10, including system load, memory usage, and network addresses. It also mentions available updates and provides links for documentation and support.](https://kodekloud.com/kk-media/image/upload/v1752881262/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Log-in-to-Local-Remote-Graphical-and-Text-Mode-Consoles/ubuntu-23-10-system-info-console.jpg)
 
 Remote graphical connections are available, though set up differently. Administrators may configure VNC (Virtual Network Computing) or RDP (Remote Desktop Protocol) for remote GUI access. For VNC, use a compatible client like VNC Viewer or RealVNC. For RDP, open the Remote Desktop Connection application on Windows and log in with your credentials.
 
-<Frame>
-  ![The image compares two remote GUI tools, VNC and RDP, showing their respective interfaces for connecting to remote computers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881264/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Log-in-to-Local-Remote-Graphical-and-Text-Mode-Consoles/vnc-rdp-remote-gui-comparison.jpg)
-</Frame>
+![The image compares two remote GUI tools, VNC and RDP, showing their respective interfaces for connecting to remote computers.](https://kodekloud.com/kk-media/image/upload/v1752881264/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Log-in-to-Local-Remote-Graphical-and-Text-Mode-Consoles/vnc-rdp-remote-gui-comparison.jpg)
 
 Remote text-based sessions use OpenSSH, which runs the SSH daemon (sshd) to provide secure, encrypted remote login—making it a preferred alternative to older, unsecured methods like Telnet.
 
-<Frame>
-  ![The image compares remote text-mode login methods, showing SSH as secure with a green lock and Telnet as insecure with a red lock.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881265/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Log-in-to-Local-Remote-Graphical-and-Text-Mode-Consoles/remote-login-methods-ssh-telnet-comparison.jpg)
-</Frame>
+![The image compares remote text-mode login methods, showing SSH as secure with a green lock and Telnet as insecure with a red lock.](https://kodekloud.com/kk-media/image/upload/v1752881265/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Log-in-to-Local-Remote-Graphical-and-Text-Mode-Consoles/remote-login-methods-ssh-telnet-comparison.jpg)
 
-<Callout icon="lightbulb">
-  Remember: SSH encrypts all login data, ensuring that your session and credentials remain safe.
-</Callout>
+> **lightbulb** Remember: SSH encrypts all login data, ensuring that your session and credentials remain safe.
 
 If you're following along using a virtual machine, first log in locally. Once logged in, open your terminal emulator and run the following command to view your current IP configuration:
 
@@ -123,14 +109,10 @@ Last login: Tue Oct 19 20:27:15 2021 from 192.168.0.3
 
 Once connected, your SSH session remains active, allowing you to execute commands and manage the remote system.
 
-<Callout icon="lightbulb">
-  Join the upcoming demonstration lesson to see these login methods in action!
-</Callout>
+> **lightbulb** Join the upcoming demonstration lesson to see these login methods in action!
 
 For more detailed information on secure shell protocols and remote system management, consider reviewing the [Kubernetes Documentation](https://kubernetes.io/docs/) or [Docker Hub](https://hub.docker.com/).
 
 Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/aeca8262-7ab5-44b3-afa4-fefe1d3efe04" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/aeca8262-7ab5-44b3-afa4-fefe1d3efe04)

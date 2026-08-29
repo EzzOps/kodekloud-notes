@@ -25,7 +25,7 @@ Direct Connect's architecture involves three primary components:
 
 Below is a diagram illustrating the overall Direct Connect architecture:
 
-![The image illustrates a Direct Connect Architecture, showing the connection between an on-premise network, a Direct Connect location, and an AWS Cloud with a Virtual Private Cloud (VPC). It includes components like customer and AWS routers, a customer gateway, and private and public services within the VPC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865539/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Direct-Connect/direct-connect-architecture-vpc-diagram.jpg)
+![The image illustrates a Direct Connect Architecture, showing the connection between an on-premise network, a Direct Connect location, and an AWS Cloud with a Virtual Private Cloud (VPC). It includes components like customer and AWS routers, a customer gateway, and private and public services within the VPC.](https://kodekloud.com/kk-media/image/upload/v1752865539/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Direct-Connect/direct-connect-architecture-vpc-diagram.jpg)
 
 The connection flow is as follows:
 
@@ -38,7 +38,7 @@ The connection flow is as follows:
 
 The following diagram offers additional insight into the connection from your on-premise network to AWS:
 
-![The image illustrates a Direct Connect Architecture, showing the connection between an on-premise network and AWS Cloud through a Direct Connect location, including customer and AWS routers, a VPN gateway, and a Virtual Private Cloud (VPC) with private and public services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865540/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Direct-Connect/direct-connect-architecture-aws-vpc.jpg)
+![The image illustrates a Direct Connect Architecture, showing the connection between an on-premise network and AWS Cloud through a Direct Connect location, including customer and AWS routers, a VPN gateway, and a Virtual Private Cloud (VPC) with private and public services.](https://kodekloud.com/kk-media/image/upload/v1752865540/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Direct-Connect/direct-connect-architecture-aws-vpc.jpg)
 
 ## Direct Connect Pricing
 
@@ -54,7 +54,7 @@ This pricing model ensures that you only pay for the actual resources you use wh
 
 The diagram below summarizes the pricing structure for Direct Connect:
 
-![The image is a diagram titled "Direct Connect Pricing," showing two components: "Port Hours" and "Outbound Data Transfer," each with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865542/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Direct-Connect/direct-connect-pricing-diagram.jpg)
+![The image is a diagram titled "Direct Connect Pricing," showing two components: "Port Hours" and "Outbound Data Transfer," each with an icon.](https://kodekloud.com/kk-media/image/upload/v1752865542/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Direct-Connect/direct-connect-pricing-diagram.jpg)
 
 ## Summary
 
@@ -66,6 +66,6 @@ Direct Connect provides a robust and reliable alternative to traditional VPN sol
 
 With a straightforward pricing model based on port hours and outbound data transfer, Direct Connect is an excellent choice for organizations that demand a high-performance, secure network connection to AWS.
 
-![The image is a summary slide highlighting three points about a service that directly links on-premises with AWS, offers greater throughput and security than VPNs, and charges based on port hours and outbound data transfer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865543/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Direct-Connect/aws-on-premises-service-summary.jpg)
+![The image is a summary slide highlighting three points about a service that directly links on-premises with AWS, offers greater throughput and security than VPNs, and charges based on port hours and outbound data transfer.](https://kodekloud.com/kk-media/image/upload/v1752865543/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Direct-Connect/aws-on-premises-service-summary.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/e03ffb87-3345-4fbb-9576-cb53d21d7a6a/lesson/d8c5d1bb-fcf0-402b-8e59-e1855dcb3bbb)

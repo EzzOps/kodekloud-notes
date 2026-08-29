@@ -12,9 +12,7 @@ One key component in this process is the provisioner. Think of it like a parent-
 
 In addition to dynamic provisioning, Kubernetes also supports static provisioning using PersistentVolumes (PVs). In static provisioning, you define a fixed disk (such as a 50-GB disk) within a PersistentVolume, and then allow a Pod to claim this volume using a PersistentVolumeClaim (PVC). In both scenarios, the PVC is responsible for requesting storage either from a StorageClass (dynamic provisioning) or from a pre-configured PersistentVolume (static provisioning).
 
-<Callout icon="lightbulb">
-  In OpenShift, "persistent storage" essentially refers to a PersistentVolume in Kubernetes. Although the terminology may differ, the underlying functionality remains the same.
-</Callout>
+> **lightbulb** In OpenShift, "persistent storage" essentially refers to a PersistentVolume in Kubernetes. Although the terminology may differ, the underlying functionality remains the same.
 
 Let's illustrate these concepts with an example in Visual Studio Code. The following YAML configuration defines a StorageClass using the CSI for Azure Files, along with a PersistentVolumeClaim that requests 10 Gi of storage:
 
@@ -96,6 +94,4 @@ This approach to storage provisioning—whether dynamic or static—ensures that
 
 Let's check it out.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/e697ddfa-bbe2-419d-8300-d2418c6612ca" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/e697ddfa-bbe2-419d-8300-d2418c6612ca)

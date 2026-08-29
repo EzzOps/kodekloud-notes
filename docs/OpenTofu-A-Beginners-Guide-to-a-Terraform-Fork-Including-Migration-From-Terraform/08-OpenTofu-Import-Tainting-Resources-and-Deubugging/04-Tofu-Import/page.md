@@ -23,15 +23,11 @@ Before you begin, gather:
 * A working OpenTofu project initialized with `tofu init`.
 * AWS credentials configured in your environment.
 
-<Frame>
-  ![The image shows an AWS EC2 instance summary with details such as instance ID, state, type, public and private IP addresses, and platform information. The instance is running and is of type t2.micro.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882876/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Tofu-Import/aws-ec2-instance-summary-t2-micro.jpg)
-</Frame>
+![The image shows an AWS EC2 instance summary with details such as instance ID, state, type, public and private IP addresses, and platform information. The instance is running and is of type t2.micro.](https://kodekloud.com/kk-media/image/upload/v1752882876/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Tofu-Import/aws-ec2-instance-summary-t2-micro.jpg)
 
 Copy the instance ID from the AWS Console; you’ll need it for the import command.
 
-<Callout icon="lightbulb">
-  The resource name (`webserver-2` in our example) must be unique within your state. Choose a descriptive identifier to avoid collisions.
-</Callout>
+> **lightbulb** The resource name (`webserver-2` in our example) must be unique within your state. Choose a descriptive identifier to avoid collisions.
 
 ***
 
@@ -128,6 +124,4 @@ After applying, you can remove the `import` block or leave it as documentation o
 * [Terraform Import Guide](https://www.terraform.io/cli/import)
 * [AWS EC2 User Guide](https://docs.aws.amazon.com/ec2/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/0fda982f-8bb2-4b57-8009-996870d27e43/lesson/9e8f8302-506f-43b0-9e27-8bff879033df" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/0fda982f-8bb2-4b57-8009-996870d27e43/lesson/9e8f8302-506f-43b0-9e27-8bff879033df)

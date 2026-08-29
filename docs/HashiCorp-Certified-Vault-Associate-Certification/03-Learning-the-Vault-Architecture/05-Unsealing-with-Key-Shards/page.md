@@ -6,17 +6,13 @@ This guide explains how HashiCorp Vault uses Shamir’s Secret Sharing to protec
 
 In this guide, you’ll learn how HashiCorp Vault protects its master key using Shamir’s Secret Sharing algorithm. Vault splits the master key into multiple unseal keys (key shards), so no single person ever holds the entire master key. Each shard is entrusted to a different custodian, and only a quorum of shards can reconstruct the master key.
 
-<Frame>
-  ![The image illustrates the process of unsealing with key shards using Shamir's Secret Sharing Algorithm, showing how key shards combine to form a master key, which then protects an encryption key and vault data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878222/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Unsealing-with-Key-Shards/shamir-secret-sharing-unsealing-process-diagram.jpg)
-</Frame>
+![The image illustrates the process of unsealing with key shards using Shamir's Secret Sharing Algorithm, showing how key shards combine to form a master key, which then protects an encryption key and vault data.](https://kodekloud.com/kk-media/image/upload/v1752878222/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Unsealing-with-Key-Shards/shamir-secret-sharing-unsealing-process-diagram.jpg)
 
 ## Distributing Key Shards
 
 When Vault initializes (`vault operator init`), it generates a specified number of shares and a threshold number required to unseal. By default, Vault creates 5 shares and a threshold of 3.
 
-<Frame>
-  ![The image shows five people labeled as "Trusted Employees" with colorful key icons above them, suggesting a concept of unsealing with key shards.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878224/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Unsealing-with-Key-Shards/trusted-employees-key-icons-unsealing.jpg)
-</Frame>
+![The image shows five people labeled as "Trusted Employees" with colorful key icons above them, suggesting a concept of unsealing with key shards.](https://kodekloud.com/kk-media/image/upload/v1752878224/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Unsealing-with-Key-Shards/trusted-employees-key-icons-unsealing.jpg)
 
 | Total Shares | Threshold | Description                                                |
 | ------------ | --------- | ---------------------------------------------------------- |
@@ -64,9 +60,7 @@ Cluster ID              xxx-xxx-xxx-xxx
 HA Enabled              true
 ```
 
-<Callout icon="lightbulb">
-  Vault logs the unseal progress but never records the actual key shards. This ensures shards remain confidential.
-</Callout>
+> **lightbulb** Vault logs the unseal progress but never records the actual key shards. This ensures shards remain confidential.
 
 ## Key Shard Best Practices
 
@@ -79,9 +73,7 @@ Implement these practices to maintain strong security for your unseal keys:
 | Access Controls  | Restrict physical and digital access to unseal key holders only.                            |
 | Custodian Roster | Maintain an up-to-date list of key holders and confirm availability.                        |
 
-<Callout icon="triangle-alert">
-  Ensure that at least the threshold number of custodians is reachable whenever Vault restarts or is sealed. Losing access to even one shard beyond the threshold can lock you out.
-</Callout>
+> **triangle-alert** Ensure that at least the threshold number of custodians is reachable whenever Vault restarts or is sealed. Losing access to even one shard beyond the threshold can lock you out.
 
 ## Links and References
 
@@ -89,6 +81,4 @@ Implement these practices to maintain strong security for your unseal keys:
 * [HashiCorp Vault Documentation](https://www.vaultproject.io/docs)
 * [Vault Operator Init](https://www.vaultproject.io/docs/commands/operator/init)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/ffee6ca3-1697-4591-ae32-49fb54ddaa8a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/ffee6ca3-1697-4591-ae32-49fb54ddaa8a)

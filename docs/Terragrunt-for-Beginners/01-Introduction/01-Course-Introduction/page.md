@@ -78,20 +78,16 @@ Notes on the example:
 
 Choosing the right data type enables Terraform to validate inputs, catch errors early, and keep your configurations clear and maintainable. Use objects to group related settings, maps for key-based lookups, lists/sets for collections (ordered or unique), and avoid `any` unless flexibility is essential.
 
-<Callout icon="warning">
-  Be cautious when using `any`. It disables type checking and can make debugging harder. Prefer explicit types for production code.
-</Callout>
+> **warning** Be cautious when using `any`. It disables type checking and can make debugging harder. Prefer explicit types for production code.
 
 References
 
 * Terraform: Input Variables — [https://www.terraform.io/language/values/variables](https://www.terraform.io/language/values/variables)
 * Terraform: Types — [https://www.terraform.io/language/types](https://www.terraform.io/language/types)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/6909fa70-4ccc-40c3-a918-1188673d8985/lesson/de6eb384-31bd-4749-893a-0a669895331b" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/6909fa70-4ccc-40c3-a918-1188673d8985/lesson/de6eb384-31bd-4749-893a-0a669895331b)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/6909fa70-4ccc-40c3-a918-1188673d8985/lesson/bfdd5c93-7568-4082-9a61-be25457c12f2" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/6909fa70-4ccc-40c3-a918-1188673d8985/lesson/bfdd5c93-7568-4082-9a61-be25457c12f2)
 
 
 # Course Introduction
@@ -116,9 +112,7 @@ Terragrunt is a lightweight wrapper for Terraform that helps you:
 * Automate remote state locking and backend configuration
 * Reuse modules across multiple environments with minimal boilerplate
 
-<Callout icon="lightbulb">
-  For a solid foundation, we recommend completing our [Terraform Basics](/courses/terraform-basics) or [OpenTofu Fundamentals](/courses/opentofu-fundamentals) courses before diving into Terragrunt.
-</Callout>
+> **lightbulb** For a solid foundation, we recommend completing our [Terraform Basics](/courses/terraform-basics) or [OpenTofu Fundamentals](/courses/opentofu-fundamentals) courses before diving into Terragrunt.
 
 ## Course Overview
 
@@ -132,9 +126,7 @@ Terragrunt is a lightweight wrapper for Terraform that helps you:
 | Terraform modules with Terragrunt                  | Create, share, and version modules across environments.          |
 | AWS demo: Build your first project with Terragrunt | Apply everything in a real-world AWS scenario.                   |
 
-<Frame>
-  ![The image shows a split screen with a terminal setup on the left and a code editor on the right, featuring a person in a video overlay discussing a course.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884263/notes-assets/images/Terragrunt-for-Beginners-Course-Introduction/terminal-code-editor-video-overlay.jpg)
-</Frame>
+![The image shows a split screen with a terminal setup on the left and a code editor on the right, featuring a person in a video overlay discussing a course.](https://kodekloud.com/kk-media/image/upload/v1752884263/notes-assets/images/Terragrunt-for-Beginners-Course-Introduction/terminal-code-editor-video-overlay.jpg)
 
 ## Hands-on Labs
 
@@ -160,6 +152,4 @@ Ready to elevate your Infrastructure as Code skills? Enroll in KodeKloud’s Ter
 * [Terragrunt GitHub Repository](https://github.com/gruntwork-io/terragrunt)
 * [KodeKloud Community Forum](/community)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/80c3af1c-e730-4884-8172-1968f95c4dfa/lesson/53c5af2e-c68f-444d-a154-6fbb26f9a48e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/80c3af1c-e730-4884-8172-1968f95c4dfa/lesson/53c5af2e-c68f-444d-a154-6fbb26f9a48e)

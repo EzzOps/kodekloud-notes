@@ -6,7 +6,7 @@ This article provides a hands-on demonstration of using Amazon Athena to query d
 
 Welcome to this detailed lesson on Amazon Athena. In this guide, you'll learn how to leverage Athena—a serverless, in-memory SQL query engine—to quickly and cost-effectively query data stored in Amazon S3. Athena charges only for the data scanned (roughly \$5 per terabyte), and using columnar file formats significantly boosts its performance.
 
-![The image shows the Amazon Athena landing page, detailing its data querying capabilities, pricing, and a brief guide on how it works.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862036/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Athena-Demo/frame_10.jpg)
+![The image shows the Amazon Athena landing page, detailing its data querying capabilities, pricing, and a brief guide on how it works.](https://kodekloud.com/kk-media/image/upload/v1752862036/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Athena-Demo/frame_10.jpg)
 
 In this demo, we will walk you through verifying your AWS account in Cloud Shell, copying sample CSV files from S3, and creating external tables in Athena—both for CSV and Parquet data formats. You’ll also learn about partitioning and how it can improve query performance by reducing the amount of data scanned.
 
@@ -27,7 +27,7 @@ These commands ensure your account is properly set up and that the required CSV 
 
 After copying the files, open the AWS Management Console to navigate to your S3 bucket. You should see an "Athena workshop" bucket with folders such as "basics" and subfolders for CSV and Parquet data, respectively. This folder structure helps organize customer and sales data efficiently.
 
-![The image shows an Amazon S3 bucket interface with a folder named "basicv2" and AWS CloudShell displaying a list of file paths.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862037/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Athena-Demo/frame_160.jpg)
+![The image shows an Amazon S3 bucket interface with a folder named "basicv2" and AWS CloudShell displaying a list of file paths.](https://kodekloud.com/kk-media/image/upload/v1752862037/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Athena-Demo/frame_160.jpg)
 
 Additionally, note that the folders might be indexed by month or day based on your configuration.
 
@@ -38,15 +38,15 @@ Before running any queries, open the Athena console and click the hamburger icon
 1. **Select the Primary Workgroup:** Click on the primary workgroup and then click the Edit button.
 2. **Enable Metrics:** Scroll down to the settings section, enable "Publish query metrics into CloudWatch," and save your changes.
 
-![The image shows the Amazon Athena console displaying a list of workgroups with details like name, analytics engine version, and engine updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862039/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Athena-Demo/frame_230.jpg)
+![The image shows the Amazon Athena console displaying a list of workgroups with details like name, analytics engine version, and engine updates.](https://kodekloud.com/kk-media/image/upload/v1752862039/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Athena-Demo/frame_230.jpg)
 
 Next, click the hamburger icon again to return to the query editor. Under settings, select Manage to set your query result location by browsing for the Athena workshop bucket. Choose the correct bucket (and optionally a folder like "basics") and save the S3 location.
 
-![The image shows the AWS Athena settings page for managing query result locations and encryption, with options to specify S3 bucket details and encryption preferences.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862040/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Athena-Demo/frame_290.jpg)
+![The image shows the AWS Athena settings page for managing query result locations and encryption, with options to specify S3 bucket details and encryption preferences.](https://kodekloud.com/kk-media/image/upload/v1752862040/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Athena-Demo/frame_290.jpg)
 
 If you need to verify the bucket details further, refer back to the S3 bucket listing:
 
-![The image shows an AWS console interface listing S3 buckets with names and creation dates, highlighting "athena-workshop-067670530788."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862041/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Athena-Demo/frame_310.jpg)
+![The image shows an AWS console interface listing S3 buckets with names and creation dates, highlighting "athena-workshop-067670530788."](https://kodekloud.com/kk-media/image/upload/v1752862041/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Athena-Demo/frame_310.jpg)
 
 ## Creating External Tables from CSV Files
 
@@ -153,7 +153,7 @@ MSCK REPAIR TABLE sales_parquet;
 SHOW PARTITIONS sales_parquet;
 ```
 
-![The image shows an Amazon Athena interface with a list of date paths, likely representing data partitions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862042/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Athena-Demo/frame_640.jpg)
+![The image shows an Amazon Athena interface with a list of date paths, likely representing data partitions.](https://kodekloud.com/kk-media/image/upload/v1752862042/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Athena-Demo/frame_640.jpg)
 
 > **lightbulb** Partitioning in Athena reduces the amount of data scanned during queries, thus lowering costs and improving performance. Tables can be partitioned by date, time, or other relevant criteria.
 

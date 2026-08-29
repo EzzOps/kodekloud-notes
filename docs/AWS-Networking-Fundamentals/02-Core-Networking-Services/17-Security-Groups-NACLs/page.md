@@ -9,9 +9,9 @@ Next, create **web-server-sg** in the same VPC (Description: “Security group f
   • SSH (TCP 22) from `0.0.0.0/0`
 * Outbound: All traffic to `0.0.0.0/0`
 
-![The image shows an AWS EC2 Management Console screen displaying details of a security group named "launch-wizard-20," with no inbound rules and one outbound rule.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863331/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-ec2-management-console-security-group.jpg)
+![The image shows an AWS EC2 Management Console screen displaying details of a security group named "launch-wizard-20," with no inbound rules and one outbound rule.](https://kodekloud.com/kk-media/image/upload/v1752863331/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-ec2-management-console-security-group.jpg)
 
-![The image shows an AWS EC2 security group configuration screen with inbound and outbound rules. The inbound rule allows SSH traffic from any IP, and the outbound rule allows all traffic to any destination.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863332/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-ec2-security-group-configuration.jpg)
+![The image shows an AWS EC2 security group configuration screen with inbound and outbound rules. The inbound rule allows SSH traffic from any IP, and the outbound rule allows all traffic to any destination.](https://kodekloud.com/kk-media/image/upload/v1752863332/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-ec2-security-group-configuration.jpg)
 
 ## Attaching the Security Group
 
@@ -22,9 +22,9 @@ Attach **web-server-sg** to **server-one**:
 3. Remove the old group and add **web-server-sg**.
 4. Save.
 
-![The image shows an AWS EC2 Management Console screen displaying details of a security group named "webserver-sg," including its inbound rules for SSH access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863333/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-ec2-management-console-webserver-sg.jpg)
+![The image shows an AWS EC2 Management Console screen displaying details of a security group named "webserver-sg," including its inbound rules for SSH access.](https://kodekloud.com/kk-media/image/upload/v1752863333/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-ec2-management-console-webserver-sg.jpg)
 
-![The image shows an AWS Management Console screen for changing security groups of an EC2 instance, displaying instance details and associated security groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863334/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-management-console-ec2-security-groups.jpg)
+![The image shows an AWS Management Console screen for changing security groups of an EC2 instance, displaying instance details and associated security groups.](https://kodekloud.com/kk-media/image/upload/v1752863334/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-management-console-ec2-security-groups.jpg)
 
 Now SSH will succeed again.
 
@@ -55,7 +55,7 @@ By default, HTTP (80) and HTTPS (443) are blocked. Update **web-server-sg**:
    • HTTPS (TCP 443) from `0.0.0.0/0`
 3. Save.
 
-![The image shows an AWS EC2 security group settings page where inbound rules for SSH, HTTP, and HTTPS are being edited. Each rule specifies the protocol, port range, and source IP address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863335/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-ec2-security-group-inbound-rules.jpg)
+![The image shows an AWS EC2 security group settings page where inbound rules for SSH, HTTP, and HTTPS are being edited. Each rule specifies the protocol, port range, and source IP address.](https://kodekloud.com/kk-media/image/upload/v1752863335/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-ec2-security-group-inbound-rules.jpg)
 
 Visiting the instance’s public IP in a browser now displays the Nginx welcome page.
 
@@ -63,7 +63,7 @@ Visiting the instance’s public IP in a browser now displays the Nginx welcome 
 
 Security Groups are stateful: return traffic is automatically allowed, even if outbound rules are removed.
 
-![The image shows the AWS EC2 Management Console, specifically the "Edit outbound rules" section for a security group, with settings for allowing all traffic to a custom destination.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863336/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-ec2-management-console-outbound-rules.jpg)
+![The image shows the AWS EC2 Management Console, specifically the "Edit outbound rules" section for a security group, with settings for allowing all traffic to a custom destination.](https://kodekloud.com/kk-media/image/upload/v1752863336/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-ec2-management-console-outbound-rules.jpg)
 
 1. Remove all outbound rules.
 2. Refresh the Nginx page in your browser—it still loads.
@@ -81,7 +81,7 @@ ping 8.8.8.8
 64 bytes from 8.8.8.8: icmp_seq=1 ttl=53 time=1.58 ms
 ```
 
-![The image shows an AWS EC2 Management Console screen displaying the details of a security group named "webserver-sg," including its inbound rules for SSH, HTTP, and HTTPS protocols.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863337/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-ec2-security-group-webserver-sg.jpg)
+![The image shows an AWS EC2 Management Console screen displaying the details of a security group named "webserver-sg," including its inbound rules for SSH, HTTP, and HTTPS protocols.](https://kodekloud.com/kk-media/image/upload/v1752863337/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-ec2-security-group-webserver-sg.jpg)
 
 ## Splitting Rules into Multiple Security Groups
 
@@ -92,17 +92,17 @@ For modularity, create two groups:
 * **allow-http-sg**\
   • Inbound: HTTP (TCP 80) from `0.0.0.0/0`
 
-![The image shows the AWS Management Console interface for creating a security group, with fields for entering the security group name, description, and VPC, along with sections for inbound and outbound rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863338/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-management-console-security-group-creation.jpg)
+![The image shows the AWS Management Console interface for creating a security group, with fields for entering the security group name, description, and VPC, along with sections for inbound and outbound rules.](https://kodekloud.com/kk-media/image/upload/v1752863338/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-management-console-security-group-creation.jpg)
 
 Detach **web-server-sg** and attach both **allow-ssh-sg** and **allow-http-sg** to **server-one**. You now have combined SSH + HTTP access.
 
-![The image shows an AWS EC2 Management Console with details of running instances, including security settings for a specific instance. It displays security group rules for HTTP and SSH access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863339/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-ec2-management-console-security-settings.jpg)
+![The image shows an AWS EC2 Management Console with details of running instances, including security settings for a specific instance. It displays security group rules for HTTP and SSH access.](https://kodekloud.com/kk-media/image/upload/v1752863339/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-ec2-management-console-security-settings.jpg)
 
 ## Reusing Security Groups Across Instances
 
 Apply **allow-ssh-sg** and **allow-http-sg** to **server-two** to grant identical access controls.
 
-![The image shows an AWS EC2 Management Console with details of two running instances, both of type t2.micro, including their instance IDs, public IP addresses, and status checks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863340/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-ec2-management-console-t2-micro.jpg)
+![The image shows an AWS EC2 Management Console with details of two running instances, both of type t2.micro, including their instance IDs, public IP addresses, and status checks.](https://kodekloud.com/kk-media/image/upload/v1752863340/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-ec2-management-console-t2-micro.jpg)
 
 ## Referencing Security Groups as Rule Sources
 
@@ -113,7 +113,7 @@ For database connectivity, create **db-sg**:
 
 This ensures any instance with **allow-http-sg** can connect on port 5432.
 
-![The image shows an AWS EC2 Management Console screen with security group settings, including inbound and outbound rules for network traffic. The inbound rule specifies a custom TCP protocol on port 5432, and the outbound rule allows all traffic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863342/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-ec2-management-console-security-groups.jpg)
+![The image shows an AWS EC2 Management Console screen with security group settings, including inbound and outbound rules for network traffic. The inbound rule specifies a custom TCP protocol on port 5432, and the outbound rule allows all traffic.](https://kodekloud.com/kk-media/image/upload/v1752863342/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-Demo/aws-ec2-management-console-security-groups.jpg)
 
 By referencing another group, new web servers automatically gain DB access as soon as they attach **allow-http-sg**.
 
@@ -169,9 +169,9 @@ If the server also fetches updates over HTTP (port 80):
 
 > **triangle-alert** Stateless firewalls *do not* track connection state. If you forget to permit the reply path, your traffic will be dropped.
 
-![The image illustrates stateless firewalls, showing inbound and outbound rules with specific IP/Port actions, and a server listening on port 443.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863343/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/stateless-firewalls-inbound-outbound-rules.jpg)
+![The image illustrates stateless firewalls, showing inbound and outbound rules with specific IP/Port actions, and a server listening on port 443.](https://kodekloud.com/kk-media/image/upload/v1752863343/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/stateless-firewalls-inbound-outbound-rules.jpg)
 
-![The image illustrates the concept of stateless firewalls, showing how firewall rules are divided into inbound and outbound rules, with specific ports and actions for each. It emphasizes the need for configuration to allow both inbound and outbound traffic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863344/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/stateless-firewalls-inbound-outbound-rules-2.jpg)
+![The image illustrates the concept of stateless firewalls, showing how firewall rules are divided into inbound and outbound rules, with specific ports and actions for each. It emphasizes the need for configuration to allow both inbound and outbound traffic.](https://kodekloud.com/kk-media/image/upload/v1752863344/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/stateless-firewalls-inbound-outbound-rules-2.jpg)
 
 ## Stateful Firewalls
 
@@ -186,7 +186,7 @@ Using the same web server example:
 
 > **lightbulb** Stateful filtering simplifies rules management by automatically permitting return traffic.
 
-![The image explains how stateful firewalls work, showing how they manage inbound and outbound requests and responses by allowing specific IP/port actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863345/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/stateful-firewalls-inbound-outbound-requests.jpg)
+![The image explains how stateful firewalls work, showing how they manage inbound and outbound requests and responses by allowing specific IP/port actions.](https://kodekloud.com/kk-media/image/upload/v1752863345/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/stateful-firewalls-inbound-outbound-requests.jpg)
 
 ## AWS Network ACLs (NACLs)
 
@@ -197,7 +197,7 @@ A Network ACL filters traffic *entering* and *leaving* subnets. Key points:
 * NACLs are **stateless**: separate ingress/egress rules.
 * They do **not** filter intra-subnet traffic.
 
-![The image explains Network Access Control Lists (NACLs) in a Virtual Private Cloud (VPC), showing how they filter traffic entering and leaving subnets but not within them. It includes a diagram with public and private subnets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863347/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/nacl-vpc-traffic-filtering-diagram.jpg)
+![The image explains Network Access Control Lists (NACLs) in a Virtual Private Cloud (VPC), showing how they filter traffic entering and leaving subnets but not within them. It includes a diagram with public and private subnets.](https://kodekloud.com/kk-media/image/upload/v1752863347/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/nacl-vpc-traffic-filtering-diagram.jpg)
 
 ### Comparing NACLs vs. Security Groups
 
@@ -217,7 +217,7 @@ Security Groups act as **stateful** firewalls for individual resources (EC2, RDS
 * Only the initiating direction is needed; return traffic is auto-allowed.
 * Rules apply per resource, not per subnet.
 
-![The image compares NACLs and Security Groups, explaining that NACLs are stateless firewalls monitoring traffic for subnets, while Security Groups are stateful and act as personal firewalls for individual resources. It includes a diagram of a Virtual Private Cloud (VPC) with public and private subnets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863348/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/nacls-security-groups-vpc-diagram.jpg)
+![The image compares NACLs and Security Groups, explaining that NACLs are stateless firewalls monitoring traffic for subnets, while Security Groups are stateful and act as personal firewalls for individual resources. It includes a diagram of a Virtual Private Cloud (VPC) with public and private subnets.](https://kodekloud.com/kk-media/image/upload/v1752863348/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/nacls-security-groups-vpc-diagram.jpg)
 
 ### Configuring Security Group Rules
 
@@ -232,7 +232,7 @@ Inbound rules
 └─────────┴─────────┴───────────┴──────────────┴────────────┘
 ```
 
-![The image shows a screenshot of inbound rules for a security group, allowing HTTP traffic on port 80 from any source (0.0.0.0/0).](../../../../images/kodekloud.com/kk-media/image/upload/v1752863350/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/inbound-rules-security-group-http-port-80.jpg)
+![The image shows a screenshot of inbound rules for a security group, allowing HTTP traffic on port 80 from any source (0.0.0.0/0).](https://kodekloud.com/kk-media/image/upload/v1752863350/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/inbound-rules-security-group-http-port-80.jpg)
 
 Fields you’ll configure:
 
@@ -244,27 +244,27 @@ Fields you’ll configure:
 
 Outbound rules follow the same format:
 
-![The image shows a table of outbound rules for a security group, allowing all traffic to all destinations (0.0.0.0/0) with IPv4.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863351/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/outbound-rules-security-group-ipv4.jpg)
+![The image shows a table of outbound rules for a security group, allowing all traffic to all destinations (0.0.0.0/0) with IPv4.](https://kodekloud.com/kk-media/image/upload/v1752863351/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/outbound-rules-security-group-ipv4.jpg)
 
 > **lightbulb** If no outbound rules exist, *all* traffic is blocked by default. Security Groups can only **allow** traffic; there’s no explicit deny.
 
-![The image contains text explaining that security groups block all traffic when no rules are set, and that rules only allow traffic without a deny option.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863352/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/security-groups-traffic-rules-explanation.jpg)
+![The image contains text explaining that security groups block all traffic when no rules are set, and that rules only allow traffic without a deny option.](https://kodekloud.com/kk-media/image/upload/v1752863352/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/security-groups-traffic-rules-explanation.jpg)
 
 ## NACL Rules Example
 
 Every NACL rule includes a rule number (priority), type, protocol, port range, CIDR, and an Allow/Deny action. Rules are processed in ascending order.
 
-![The image shows a table of network ACL (NACL) inbound rules, detailing rule numbers, types, protocols, port ranges, sources, and whether the traffic is allowed or denied.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863353/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/network-acl-inbound-rules-table.jpg)
+![The image shows a table of network ACL (NACL) inbound rules, detailing rule numbers, types, protocols, port ranges, sources, and whether the traffic is allowed or denied.](https://kodekloud.com/kk-media/image/upload/v1752863353/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/network-acl-inbound-rules-table.jpg)
 
 ## Multiple Security Groups per Resource
 
 You can attach multiple Security Groups to a single resource. AWS merges all allow rules into one effective policy.
 
-![The image explains the concept of multiple security groups, showing how they can be assigned to a single resource with merged rules, and includes a table of ports and IP ranges for a combined "web + mgmt" security group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863354/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/multiple-security-groups-resource-rules.jpg)
+![The image explains the concept of multiple security groups, showing how they can be assigned to a single resource with merged rules, and includes a table of ports and IP ranges for a combined "web + mgmt" security group.](https://kodekloud.com/kk-media/image/upload/v1752863354/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/multiple-security-groups-resource-rules.jpg)
 
 ## Default Behaviors and Associations
 
-![The image contains three colored text boxes with information about security groups, subnets, and network ACLs in a VPC. Each box provides a specific detail about default outbound rules, subnet associations, and network ACL limitations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863355/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/vpc-security-groups-subnets-acls.jpg)
+![The image contains three colored text boxes with information about security groups, subnets, and network ACLs in a VPC. Each box provides a specific detail about default outbound rules, subnet associations, and network ACL limitations.](https://kodekloud.com/kk-media/image/upload/v1752863355/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/vpc-security-groups-subnets-acls.jpg)
 
 * **Security Groups**: Default egress allows all traffic.
 * **NACLs**: Each subnet needs one NACL; one-to-many relationship.
@@ -274,7 +274,7 @@ You can attach multiple Security Groups to a single resource. AWS merges all all
 
 Certain AWS control-plane and metadata endpoints bypass NACLs:
 
-![The image lists services and endpoints that are not filtered by Network ACLs, including Amazon DNS, DHCP, EC2 instance metadata, ECS task metadata, Windows license activation, Amazon Time Sync Service, and reserved IP addresses for the default VPC router.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863356/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/unfiltered-services-endpoints-network-acls.jpg)
+![The image lists services and endpoints that are not filtered by Network ACLs, including Amazon DNS, DHCP, EC2 instance metadata, ECS task metadata, Windows license activation, Amazon Time Sync Service, and reserved IP addresses for the default VPC router.](https://kodekloud.com/kk-media/image/upload/v1752863356/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/unfiltered-services-endpoints-network-acls.jpg)
 
 * Amazon DNS
 * DHCP
@@ -286,19 +286,19 @@ Certain AWS control-plane and metadata endpoints bypass NACLs:
 
 ## Summary
 
-![The image is a summary slide describing different types of firewalls and network ACLs, highlighting their characteristics and functions. It includes four points about stateless and stateful firewalls and network ACLs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863357/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/firewalls-network-acls-summary-slide.jpg)
+![The image is a summary slide describing different types of firewalls and network ACLs, highlighting their characteristics and functions. It includes four points about stateless and stateful firewalls and network ACLs.](https://kodekloud.com/kk-media/image/upload/v1752863357/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/firewalls-network-acls-summary-slide.jpg)
 
 * **Stateless Firewalls**: Require explicit ingress *and* egress rules.
 * **Stateful Firewalls**: Automatically permit response traffic.
 * **NACLs**: Stateless, subnet-level, Allow/Deny capabilities.
 * **Security Groups**: Stateful, resource-level, Allow-only rules.
 
-![The image is a summary slide about security groups, highlighting their role as firewalls, their stateful nature, and how their rules are applied and merged.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863359/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/security-groups-firewalls-stateful-rules.jpg)
+![The image is a summary slide about security groups, highlighting their role as firewalls, their stateful nature, and how their rules are applied and merged.](https://kodekloud.com/kk-media/image/upload/v1752863359/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/security-groups-firewalls-stateful-rules.jpg)
 
 * Applied per ENI/instance; rules are merged across groups.
 * Outbound is wide-open by default.
 
-![The image is a summary slide discussing network ACLs in a VPC, highlighting that every subnet must be associated with a network ACL and that a subnet can only be associated with one network ACL at a time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863360/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/vpc-network-acls-subnet-summary.jpg)
+![The image is a summary slide discussing network ACLs in a VPC, highlighting that every subnet must be associated with a network ACL and that a subnet can only be associated with one network ACL at a time.](https://kodekloud.com/kk-media/image/upload/v1752863360/notes-assets/images/AWS-Networking-Fundamentals-Security-Groups-NACLs/vpc-network-acls-subnet-summary.jpg)
 
 * Each subnet requires exactly one NACL.
 * Rules evaluated in numeric order, ending with a catch-all rule.

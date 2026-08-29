@@ -105,9 +105,7 @@ New York
 
 You can utilize the `in` and `not in` operators to check if a string contains specific characters. However, remember that strings are immutable. The following examples demonstrate what happens when attempting to alter a string:
 
-<Callout icon="triangle-alert">
-  Attempting to delete or modify a character in a string will raise a TypeError because strings are immutable.
-</Callout>
+> **triangle-alert** Attempting to delete or modify a character in a string will raise a TypeError because strings are immutable.
 
 For instance, this code results in an error:
 
@@ -200,12 +198,8 @@ Output:
 
 For a comprehensive list of available string methods, refer to the [official Python documentation](https://docs.python.org/3/library/stdtypes.html#string-methods).
 
-<Callout icon="lightbulb">
-  Practice these string manipulation techniques with hands-on exercises to reinforce your understanding. Regular practice with these concepts will improve your proficiency in Python.
-</Callout>
+> **lightbulb** Practice these string manipulation techniques with hands-on exercises to reinforce your understanding. Regular practice with these concepts will improve your proficiency in Python.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/2c9c597a-cb2d-43ca-ba29-2dc1b630cae6/lesson/ed010ee1-5913-41b8-a832-a5264ee6de79" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/2c9c597a-cb2d-43ca-ba29-2dc1b630cae6/lesson/ed010ee1-5913-41b8-a832-a5264ee6de79)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/2c9c597a-cb2d-43ca-ba29-2dc1b630cae6/lesson/429a952e-9041-431b-91d7-45abc8a3c16a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/2c9c597a-cb2d-43ca-ba29-2dc1b630cae6/lesson/429a952e-9041-431b-91d7-45abc8a3c16a)

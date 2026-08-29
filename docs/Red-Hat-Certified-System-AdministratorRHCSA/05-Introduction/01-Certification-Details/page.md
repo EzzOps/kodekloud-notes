@@ -23,13 +23,9 @@ The RHCSA exam assesses your proficiency across 10 critical domains. Exam tasks 
 * Security
 * Container management
 
-<Frame>
-  ![The image lists exam objectives, including topics like essential tools, shell scripts, operating systems, local storage, file systems, system deployment, networking, user management, security, and container management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883579/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Certification-Details/exam-objectives-tools-scripts-networking.jpg)
-</Frame>
+![The image lists exam objectives, including topics like essential tools, shell scripts, operating systems, local storage, file systems, system deployment, networking, user management, security, and container management.](https://kodekloud.com/kk-media/image/upload/v1752883579/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Certification-Details/exam-objectives-tools-scripts-networking.jpg)
 
-<Callout icon="lightbulb">
-  Review each domain thoroughly to prepare for the diverse range of tasks you may encounter during the exam.
-</Callout>
+> **lightbulb** Review each domain thoroughly to prepare for the diverse range of tasks you may encounter during the exam.
 
 ## Exam Structure and Timing
 
@@ -43,13 +39,9 @@ The exam is performance-based and simulates real-world tasks, which means you wi
 * **Certification Validity:** 3 years
 * **Exam Options:** In-person at designated Red Hat testing centers or via an online proctored exam using a specialized live Linux environment provided by Red Hat.
 
-<Frame>
-  ![The image provides details about the RHCSA exam, including its duration (180 minutes), cost (\$400), validity (3 years), format (performance-based), and options for taking it (in-person or online proctored).](../../../../images/kodekloud.com/kk-media/image/upload/v1752883580/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Certification-Details/rhcsa-exam-details-duration-cost.jpg)
-</Frame>
+![The image provides details about the RHCSA exam, including its duration (180 minutes), cost (\$400), validity (3 years), format (performance-based), and options for taking it (in-person or online proctored).](https://kodekloud.com/kk-media/image/upload/v1752883580/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Certification-Details/rhcsa-exam-details-duration-cost.jpg)
 
-<Callout icon="triangle-alert">
-  Make sure to master all exam domains, as insufficient preparation in any area can affect your overall performance.
-</Callout>
+> **triangle-alert** Make sure to master all exam domains, as insufficient preparation in any area can affect your overall performance.
 
 ## Exam Registration
 
@@ -60,6 +52,4 @@ For additional resources and insights into the RHCSA exam, consider exploring th
 * [Red Hat Certification](https://www.redhat.com/en/services/certification)
 * [RHCSA Exam Guide](https://www.redhat.com/en/services/certification/rhcsa)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/42c76fd6-7faf-4e97-9038-d23fceeb7843/lesson/cb02a180-4990-4f64-8153-1596af6da2c1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/42c76fd6-7faf-4e97-9038-d23fceeb7843/lesson/cb02a180-4990-4f64-8153-1596af6da2c1)

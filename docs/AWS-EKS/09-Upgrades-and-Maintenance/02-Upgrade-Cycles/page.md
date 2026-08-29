@@ -27,11 +27,11 @@ By default, the EKS control plane costs \$0.10 per hour (8,760 hours × \$0.10 �
 
 When you’re ready to move to a newer Kubernetes version, AWS EKS **Upgrade Insights** helps you discover deprecated or removed APIs in use by your workloads before you begin the upgrade.
 
-![The image illustrates an AWS EKS Cluster with a console containing four APIs, labeled API 1 to API 4, and features the "Upgrade Insights" text.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862924/notes-assets/images/AWS-EKS-Upgrade-Cycles/aws-eks-cluster-api-console-diagram.jpg)
+![The image illustrates an AWS EKS Cluster with a console containing four APIs, labeled API 1 to API 4, and features the "Upgrade Insights" text.](https://kodekloud.com/kk-media/image/upload/v1752862924/notes-assets/images/AWS-EKS-Upgrade-Cycles/aws-eks-cluster-api-console-diagram.jpg)
 
 In the EKS console’s **Upgrade Insights** tab, you can see which Kubernetes APIs your workloads call—highlighting any that will be removed in the next Kubernetes version. This early visibility enables you to update manifests or refactor controllers before the upgrade process.
 
-![The image illustrates AWS Upgrade Insights for an EKS Cluster, showing a console with APIs and a user questioning potential access loss to some APIs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862926/notes-assets/images/AWS-EKS-Upgrade-Cycles/aws-upgrade-insights-eks-cluster.jpg)
+![The image illustrates AWS Upgrade Insights for an EKS Cluster, showing a console with APIs and a user questioning potential access loss to some APIs.](https://kodekloud.com/kk-media/image/upload/v1752862926/notes-assets/images/AWS-EKS-Upgrade-Cycles/aws-upgrade-insights-eks-cluster.jpg)
 
 You can also query Upgrade Insights via the AWS CLI:
 
@@ -50,7 +50,7 @@ Refer to the [AWS CLI reference for `describe-addon-upgrade`](https://docs.aws.a
 
 If you can’t upgrade within the 14-month window, EKS offers up to 12 additional months of extended support. During this period, the control plane fee increases from \$0.10 to \$0.50 per hour (approximately \$4,380 for 12 months).
 
-![The image illustrates an "Extended Support" timeline, showing an extension from 14 months to 26 months, indicating an additional 12 months of support.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862927/notes-assets/images/AWS-EKS-Upgrade-Cycles/extended-support-timeline-12-months.jpg)
+![The image illustrates an "Extended Support" timeline, showing an extension from 14 months to 26 months, indicating an additional 12 months of support.](https://kodekloud.com/kk-media/image/upload/v1752862927/notes-assets/images/AWS-EKS-Upgrade-Cycles/extended-support-timeline-12-months.jpg)
 
 > **triangle-alert** Extended support fees can escalate quickly if you manage multiple clusters. Evaluate whether the additional time justifies the higher rate, especially in large-scale environments.
 
@@ -66,7 +66,7 @@ To stay current and avoid unexpected fees, most teams target two to three upgrad
 
 Kubernetes upstream releases minor versions about three times per year, each supported for roughly 14 months. EKS aligns with this cadence, so all hosted Kubernetes services follow a similar upgrade rhythm.
 
-![The image illustrates an "Extended Support" concept for Kubernetes, showing an EKS Cluster with workloads and cluster size, alongside icons representing the number of teams. It mentions that releases occur three times a year.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862928/notes-assets/images/AWS-EKS-Upgrade-Cycles/kubernetes-extended-support-eks-cluster.jpg)
+![The image illustrates an "Extended Support" concept for Kubernetes, showing an EKS Cluster with workloads and cluster size, alongside icons representing the number of teams. It mentions that releases occur three times a year.](https://kodekloud.com/kk-media/image/upload/v1752862928/notes-assets/images/AWS-EKS-Upgrade-Cycles/kubernetes-extended-support-eks-cluster.jpg)
 
 By regularly reviewing Upgrade Insights and scheduling automated version upgrades—using tools like [eksctl](https://eksctl.io/), [Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_cluster), or AWS CloudFormation—you’ll minimize downtime and avoid surprise charges.
 

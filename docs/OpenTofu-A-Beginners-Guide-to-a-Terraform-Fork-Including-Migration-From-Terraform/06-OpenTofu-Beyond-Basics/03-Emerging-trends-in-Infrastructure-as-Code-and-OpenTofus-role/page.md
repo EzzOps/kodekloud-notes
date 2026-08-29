@@ -63,9 +63,7 @@ tofu apply
 
 Type `yes` when prompted.
 
-<Frame>
-  ![The image shows a split screen with a task interface on the left, indicating progress in a task related to applying changes using OpenTofu, and a code editor on the right displaying a file structure and terminal output related to a Terraform project.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882837/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Migrating-existing-Terraform-configuration-to-OpenTofu/opentofu-task-interface-terraform-project.jpg)
-</Frame>
+![The image shows a split screen with a task interface on the left, indicating progress in a task related to applying changes using OpenTofu, and a code editor on the right displaying a file structure and terminal output related to a Terraform project.](https://kodekloud.com/kk-media/image/upload/v1752882837/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Migrating-existing-Terraform-configuration-to-OpenTofu/opentofu-task-interface-terraform-project.jpg)
 
 Confirm that **opentofu.txt** has been created with the new content.
 
@@ -85,9 +83,7 @@ Confirm that **opentofu.txt** has been created with the new content.
    terraform init
    ```
 
-<Frame>
-  ![The image shows a coding environment with a task to initialize a configuration directory using Terraform. The terminal indicates that Terraform has been successfully initialized.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882838/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Migrating-existing-Terraform-configuration-to-OpenTofu/terraform-initialize-configuration-directory.jpg)
-</Frame>
+![The image shows a coding environment with a task to initialize a configuration directory using Terraform. The terminal indicates that Terraform has been successfully initialized.](https://kodekloud.com/kk-media/image/upload/v1752882838/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Migrating-existing-Terraform-configuration-to-OpenTofu/terraform-initialize-configuration-directory.jpg)
 
 3. **Revert main.tf to the original Terraform resource:**
 
@@ -126,11 +122,9 @@ You’ve now successfully migrated to OpenTofu and rolled back to Terraform!
 * [OpenTofu Getting Started](https://docs.opentofu.org/intro/getting-started/)
 * [Terraform local\_file Resource](https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/file)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/d0d5c982-7258-4475-88f8-b28ba6fc7028" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/d0d5c982-7258-4475-88f8-b28ba6fc7028)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/df68a9ef-9245-4a42-a707-d8bebefc6127" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/df68a9ef-9245-4a42-a707-d8bebefc6127)
 
 
 # Emerging trends in Infrastructure as Code and OpenTofus role
@@ -143,9 +137,7 @@ Infrastructure as Code (IaC) is transforming how teams manage and provision clou
 
 ## The Evolving IaC Landscape
 
-<Callout icon="lightbulb">
-  Infrastructure as Code (IaC) lets you define cloud resources (compute, storage, networking) in declarative configuration files. This approach improves repeatability, version control, and collaboration.
-</Callout>
+> **lightbulb** Infrastructure as Code (IaC) lets you define cloud resources (compute, storage, networking) in declarative configuration files. This approach improves repeatability, version control, and collaboration.
 
 | Trend                                  | Description                                                                                            |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------ |
@@ -174,9 +166,7 @@ OpenTofu’s open-source approach fosters partnerships across complementary proj
 * Sharing best practices for policy enforcement, testing, and security scanning.
 * Pooling community contributions to accelerate feature development and integrations.
 
-<Frame>
-  ![The image is an infographic titled "Infrastructure as Code – Emerging Trends and OpenTofu's Role," highlighting analysis of trends, OpenTofu's position, and collaboration potential.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882839/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Emerging-trends-in-Infrastructure-as-Code-and-OpenTofus-role/infrastructure-as-code-emerging-trends-opentofu.jpg)
-</Frame>
+![The image is an infographic titled "Infrastructure as Code – Emerging Trends and OpenTofu's Role," highlighting analysis of trends, OpenTofu's position, and collaboration potential.](https://kodekloud.com/kk-media/image/upload/v1752882839/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Emerging-trends-in-Infrastructure-as-Code-and-OpenTofus-role/infrastructure-as-code-emerging-trends-opentofu.jpg)
 
 ## Links and References
 
@@ -185,6 +175,4 @@ OpenTofu’s open-source approach fosters partnerships across complementary proj
 * [Policy as Code with Open Policy Agent](https://www.openpolicyagent.org/)
 * [Terraform Documentation](https://www.terraform.io/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/156f56db-9177-49fc-8f64-fff2719fc4f4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/156f56db-9177-49fc-8f64-fff2719fc4f4)

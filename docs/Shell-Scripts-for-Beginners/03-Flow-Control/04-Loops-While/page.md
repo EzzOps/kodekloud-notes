@@ -67,9 +67,7 @@ fi
 
 While this method works, it is not scalable. If the rocket takes longer to reach a final state, the number of conditional blocks would increase unnecessarily.
 
-<Callout icon="lightbulb">
-  A more efficient approach to handle waiting for the rocket to leave the "launching" state is to use a while loop.
-</Callout>
+> **lightbulb** A more efficient approach to handle waiting for the rocket to leave the "launching" state is to use a while loop.
 
 ## Improved Approach: Using a While Loop
 
@@ -98,13 +96,9 @@ fi
 
 When you execute this script, it performs the initial rocket launch commands and then enters the while loop. Inside the loop, the script checks every two seconds if the rocket is still launching. Once the status changes, the loop exits, and the script evaluates whether to run the debug command if the rocket has failed.
 
-<Callout icon="lightbulb">
-  Use a while loop when you need to execute a set of commands repeatedly without knowing in advance how many iterations will be required. This pattern is particularly useful for waiting on processes to complete or creating menu-driven programs.
-</Callout>
+> **lightbulb** Use a while loop when you need to execute a set of commands repeatedly without knowing in advance how many iterations will be required. This pattern is particularly useful for waiting on processes to complete or creating menu-driven programs.
 
-<Frame>
-  ![The image explains when to use a "While Loop" for executing commands multiple times, until a condition occurs, creating infinite loops, and menu-driven programs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884050/notes-assets/images/Shell-Scripts-for-Beginners-Loops-While/frame_250.jpg)
-</Frame>
+![The image explains when to use a "While Loop" for executing commands multiple times, until a condition occurs, creating infinite loops, and menu-driven programs.](https://kodekloud.com/kk-media/image/upload/v1752884050/notes-assets/images/Shell-Scripts-for-Beginners-Loops-While/frame_250.jpg)
 
 ## Example: Infinite Menu-Driven Program
 
@@ -146,8 +140,6 @@ By using while loops in your scripts, you can build more flexible and robust sol
 
 That’s it for now—practice these examples to master while loops in your shell scripting projects!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/054d2eb5-f3b9-47d4-af5a-37b9f0d15f2c/lesson/a01ded44-505a-4daf-abe6-05ee142082a0" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/054d2eb5-f3b9-47d4-af5a-37b9f0d15f2c/lesson/a01ded44-505a-4daf-abe6-05ee142082a0)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/054d2eb5-f3b9-47d4-af5a-37b9f0d15f2c/lesson/8d63bac2-c692-43e8-8595-7042527ff49d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/054d2eb5-f3b9-47d4-af5a-37b9f0d15f2c/lesson/8d63bac2-c692-43e8-8595-7042527ff49d)

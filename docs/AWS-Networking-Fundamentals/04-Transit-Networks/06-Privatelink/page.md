@@ -20,7 +20,7 @@ When an EC2 instance in a private subnet needs to access a public service like A
 
 AWS PrivateLink provides private, highly available connectivity between your Virtual Private Cloud (VPC) and supported AWS services, other VPCs, or third-party services. All traffic stays within the AWS global network, never traversing the public Internet.
 
-![The image is a diagram illustrating a Private Link setup, showing a Virtual Private Cloud (VPC) with a private subnet connected to AWS services and a third-party VPC through endpoints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863421/notes-assets/images/AWS-Networking-Fundamentals-Privatelink/private-link-vpc-setup-diagram.jpg)
+![The image is a diagram illustrating a Private Link setup, showing a Virtual Private Cloud (VPC) with a private subnet connected to AWS services and a third-party VPC through endpoints.](https://kodekloud.com/kk-media/image/upload/v1752863421/notes-assets/images/AWS-Networking-Fundamentals-Privatelink/private-link-vpc-setup-diagram.jpg)
 
 ## Key Benefits
 

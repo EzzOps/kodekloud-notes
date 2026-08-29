@@ -38,6 +38,4 @@ Ready to transform your Kubernetes workflow? Let’s build smarter, faster, and 
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Docker Documentation](https://docs.docker.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/ae8de455-ab18-4fb3-87ce-e012425cf482/lesson/343169b6-db30-4221-9884-cfd6984be15c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/ae8de455-ab18-4fb3-87ce-e012425cf482/lesson/343169b6-db30-4221-9884-cfd6984be15c)

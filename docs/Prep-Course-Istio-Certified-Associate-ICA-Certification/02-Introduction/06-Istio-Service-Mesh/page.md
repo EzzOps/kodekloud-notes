@@ -46,9 +46,7 @@ Links and references
 * [Kubernetes Concepts](https://kubernetes.io/docs/concepts/)
 * [Linux Foundation - ICA Exam Information](https://training.linuxfoundation.org/certification/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/da4579eb-7769-4ab9-a0e8-b81f70a12978/lesson/0d441034-8968-4e53-94ec-8d930da493de" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/da4579eb-7769-4ab9-a0e8-b81f70a12978/lesson/0d441034-8968-4e53-94ec-8d930da493de)
 
 
 # Istio Service Mesh
@@ -148,13 +146,9 @@ Other key benefits
   <img alt="The image presents three reasons to use Istio: Observability, Resilience and Reliability, and Reduced Operation Overhead, each highlighted with a brief description." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Istio's sidecar model is transparent to application code: you typically inject Envoy proxies beside your workloads (automatically or manually) and let Istio manage networking, security, and telemetry without modifying your application binaries.
-</Callout>
+> **lightbulb** Istio's sidecar model is transparent to application code: you typically inject Envoy proxies beside your workloads (automatically or manually) and let Istio manage networking, security, and telemetry without modifying your application binaries.
 
-<Callout icon="warning">
-  While Istio reduces application complexity, it introduces operational components (control plane, certificate lifecycle, sidecar management) that must be monitored and maintained. Plan for observability and backup strategies for the control plane.
-</Callout>
+> **warning** While Istio reduces application complexity, it introduces operational components (control plane, certificate lifecycle, sidecar management) that must be monitored and maintained. Plan for observability and backup strategies for the control plane.
 
 Feature summary
 
@@ -173,6 +167,4 @@ Further reading and references
 
 That wraps up this introductory section. In the next lesson we'll summarize and start configuring a simple Istio-enabled workload.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/da4579eb-7769-4ab9-a0e8-b81f70a12978/lesson/a7a3147b-376c-4759-8100-becb5d9e2eab" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/da4579eb-7769-4ab9-a0e8-b81f70a12978/lesson/a7a3147b-376c-4759-8100-becb5d9e2eab)

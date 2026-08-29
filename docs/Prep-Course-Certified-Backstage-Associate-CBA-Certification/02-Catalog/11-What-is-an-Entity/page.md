@@ -75,9 +75,7 @@ The recommended convention is to store your entity declarations (commonly named 
   <img alt="The image shows the GitHub logo linked to a project containing a highlighted catalog-info.yaml file and two file icons labeled catalog-info.yaml. On the right is a code editor file tree with folders (docs, node_modules, src) and files including .gitignore, catalog-info.yaml, package-lock.json, and package.json." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Placing `catalog-info.yaml` in the project root is recommended because it keeps entity metadata versioned alongside the code and simplifies automatic discovery through repository scans or templates.
-</Callout>
+> **lightbulb** Placing `catalog-info.yaml` in the project root is recommended because it keeps entity metadata versioned alongside the code and simplifies automatic discovery through repository scans or templates.
 
 <Frame>
   <img alt="A diagram titled &#x22;Storing catalog-info.yaml&#x22; comparing two storage options: GitHub (left) and an S3-style bucket (right), each showing three YAML files labeled app1.yaml, app2.yaml, and app3.yaml. The left side uses the GitHub logo and pink file icons, while the right shows a green bucket icon with green file icons." />
@@ -141,6 +139,4 @@ Links and further reading
 
 * Kubernetes Concepts (for resource-like YAML familiarity): [https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/17628742-0c99-47ea-ad35-d17cbf890e78" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/17628742-0c99-47ea-ad35-d17cbf890e78)

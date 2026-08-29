@@ -61,9 +61,7 @@ resource "azurerm_storage_account" "sa" {
 }
 ```
 
-<Callout icon="lightbulb">
-  Storage account names and other cloud resource names must follow provider-specific rules (for example, storage account names in Azure must be 3–24 characters, lowercase letters and numbers, and globally unique). These are Azure rules, not Terraform rules.
-</Callout>
+> **lightbulb** Storage account names and other cloud resource names must follow provider-specific rules (for example, storage account names in Azure must be 3–24 characters, lowercase letters and numbers, and globally unique). These are Azure rules, not Terraform rules.
 
 terraform plan and apply — what to expect
 
@@ -113,9 +111,7 @@ Further reading and references
 
 Advanced topics such as outputs, explicit dependencies, interpolation functions, and lifecycle customizations are beyond this lesson. For now, focus on the core structure: provider declaration + multiple resource blocks, using references to avoid duplication and let Terraform build an accurate execution plan.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/2dc00bf7-fa00-41df-a4e0-bce9fb23c19d/lesson/ffd22529-0143-407a-85de-e494843e38d7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/2dc00bf7-fa00-41df-a4e0-bce9fb23c19d/lesson/ffd22529-0143-407a-85de-e494843e38d7)
 
 
 # Update and Destroy Infrastructure
@@ -136,9 +132,7 @@ Below you'll find clear examples showing:
 
 For further reading, see the Terraform documentation: [https://www.terraform.io/docs](https://www.terraform.io/docs) and the Azure Provider docs: [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 
-<Callout icon="lightbulb">
-  Terraform models desired state rather than imperative commands. Always run `terraform plan` before `terraform apply` to review what will change, and keep your state file backed up or versioned.
-</Callout>
+> **lightbulb** Terraform models desired state rather than imperative commands. Always run `terraform plan` before `terraform apply` to review what will change, and keep your state file backed up or versioned.
 
 ## Initial configuration
 
@@ -254,9 +248,7 @@ azurerm_resource_group.rg: Destruction complete after 16s
 Destroy complete! Resources: 1 destroyed.
 ```
 
-<Callout icon="warning">
-  Destroy is destructive and irreversible through Terraform. Always review the plan carefully and ensure you have backups or snapshots if required.
-</Callout>
+> **warning** Destroy is destructive and irreversible through Terraform. Always review the plan carefully and ensure you have backups or snapshots if required.
 
 ## Working with multiple resources
 
@@ -353,6 +345,4 @@ You can also verify in the Azure portal that the resource group and its related 
 * Azure Provider (azurerm): [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 * Azure Portal: [https://portal.azure.com](https://portal.azure.com)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/2dc00bf7-fa00-41df-a4e0-bce9fb23c19d/lesson/8e3b2974-6dcf-4217-945d-9383f444c994" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/2dc00bf7-fa00-41df-a4e0-bce9fb23c19d/lesson/8e3b2974-6dcf-4217-945d-9383f444c994)

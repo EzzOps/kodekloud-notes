@@ -153,7 +153,7 @@ Similar to how [Docker Hub](https://hub.docker.com) hosts container images or [V
 
 > **lightbulb** Helm stores metadata—including information about installed releases, used charts, and revision history—directly into your Kubernetes cluster as secrets. This ensures that metadata is persistent and accessible to all team members, facilitating seamless upgrades and maintenance operations.
 
-![The image illustrates Helm components, showing the flow from an online chart repository to Helm CLI, and the management of releases and revisions with Kubernetes integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869780/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Helm-Components/helm-components-chart-repository-diagram.jpg)
+![The image illustrates Helm components, showing the flow from an online chart repository to Helm CLI, and the management of releases and revisions with Kubernetes integration.](https://kodekloud.com/kk-media/image/upload/v1752869780/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Helm-Components/helm-components-chart-repository-diagram.jpg)
 
 Helm maintains a comprehensive record of every action performed within the cluster, enabling precise tracking and management.
 

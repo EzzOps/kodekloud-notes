@@ -234,9 +234,7 @@ Alertmanager can receive alerts from Prometheus and forward them (Slack, email, 
 
 Callout: ServiceMonitor label matching
 
-<Callout icon="lightbulb">
-  Always ensure the `metadata.labels.release` on your `ServiceMonitor` objects matches the `serviceMonitorSelector.matchLabels.release` value from your Prometheus CR. If they don't match, Prometheus will not discover or scrape those ServiceMonitors.
-</Callout>
+> **lightbulb** Always ensure the `metadata.labels.release` on your `ServiceMonitor` objects matches the `serviceMonitorSelector.matchLabels.release` value from your Prometheus CR. If they don't match, Prometheus will not discover or scrape those ServiceMonitors.
 
 That concludes this lesson — you should now have Prometheus scraping Argo CD metrics and Grafana visualizing them. Next, we’ll implement alerts that trigger when applications drift from their desired state.
 
@@ -247,6 +245,4 @@ Links and references
 * kube-prometheus-stack Helm chart: [https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack](https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack)
 * Grafana dashboard import docs: [https://grafana.com/docs/grafana/latest/dashboards/manage-dashboards/import-export/](https://grafana.com/docs/grafana/latest/dashboards/manage-dashboards/import-export/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/435dde8c-4c02-4304-b42d-f52509af2071" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/435dde8c-4c02-4304-b42d-f52509af2071)

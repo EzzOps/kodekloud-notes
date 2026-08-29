@@ -10,9 +10,7 @@ In this guide, you’ll learn how to tailor Vault policy paths using wildcards a
 
 The glob wildcard (`*`) matches any sequence of characters—including path separators. It’s only valid at the end of a segment or within a pattern. Use it to grant access across multiple nested paths in one rule.
 
-<Frame>
-  ![The image explains how to use the asterisk (\*) as a wildcard to customize paths, with examples showing its application at the end of a path or as part of a pattern.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878132/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Customizing-the-Path/wildcard-asterisk-paths-examples.jpg)
-</Frame>
+![The image explains how to use the asterisk (\*) as a wildcard to customize paths, with examples showing its application at the end of a path or as part of a pattern.](https://kodekloud.com/kk-media/image/upload/v1752878132/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Customizing-the-Path/wildcard-asterisk-paths-examples.jpg)
 
 With `*`, you can:
 
@@ -44,8 +42,7 @@ path "secret/apps/application1/*" {
 }
 ```
 
-<Callout icon="lightbulb">
-  This rule grants `read` access to every path under `secret/apps/application1` but not to the directory itself. To include the base path, add an explicit rule:
+> **lightbulb** This rule grants `read` access to every path under `secret/apps/application1` but not to the directory itself. To include the base path, add an explicit rule:
 
   ```hcl theme={null}
   path "secret/apps/application1" {
@@ -55,15 +52,12 @@ path "secret/apps/application1/*" {
     capabilities = ["read"]
   }
   ```
-</Callout>
 
 ## The Single-Segment Wildcard (`+`)
 
 Use the single‐segment wildcard (`+`) to match exactly one segment in a path. You can chain multiple `+` wildcards for deeper control.
 
-<Frame>
-  ![The image explains how to use the plus sign (+) for wildcard matching in directory paths, providing examples of its application in different path segments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878134/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Customizing-the-Path/plus-sign-wildcard-matching-paths.jpg)
-</Frame>
+![The image explains how to use the plus sign (+) for wildcard matching in directory paths, providing examples of its application in different path segments.](https://kodekloud.com/kk-media/image/upload/v1752878134/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Customizing-the-Path/plus-sign-wildcard-matching-paths.jpg)
 
 Example patterns:
 
@@ -88,9 +82,7 @@ Consider `secret/data/+/apps/webapp`:
 
 Any path of the form `secret/data/<any>/apps/webapp` will match.
 
-<Frame>
-  ![The image explains path matching rules, showing examples of paths that match and do not match a specific pattern. It includes a visual breakdown of the pattern and a list of matching and non-matching paths.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878135/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Customizing-the-Path/path-matching-rules-examples-diagram.jpg)
-</Frame>
+![The image explains path matching rules, showing examples of paths that match and do not match a specific pattern. It includes a visual breakdown of the pattern and a list of matching and non-matching paths.](https://kodekloud.com/kk-media/image/upload/v1752878135/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Customizing-the-Path/path-matching-rules-examples-diagram.jpg)
 
 | Matching Paths                     | Non-Matching Paths                            |
 | ---------------------------------- | --------------------------------------------- |
@@ -120,9 +112,7 @@ path "secret/apps/+/*team-*" {
 
 Vault’s ACL templating lets you interpolate variables from the token’s context (such as identity entity or group metadata). Templates use `{{ }}`.
 
-<Frame>
-  ![The image is a table titled "ACL Templating" that lists parameters and their descriptions related to entity and group metadata. It includes a URL at the bottom and a cartoon character in the corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878136/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Customizing-the-Path/acl-templating-parameters-table.jpg)
-</Frame>
+![The image is a table titled "ACL Templating" that lists parameters and their descriptions related to entity and group metadata. It includes a URL at the bottom and a cartoon character in the corner.](https://kodekloud.com/kk-media/image/upload/v1752878136/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Customizing-the-Path/acl-templating-parameters-table.jpg)
 
 For example, to isolate each user’s KV v2 path by their `identity.entity.id`:
 
@@ -141,9 +131,7 @@ path "secret/metadata/{{identity.entity.id}}/*" {
 
 This ensures complete isolation: users only see their own secrets.
 
-<Callout icon="lightbulb">
-  For a full list of template variables—such as `identity.entity.name`, `identity.group.id`, and more—see the [Vault policy template variables documentation](https://www.vaultproject.io/docs/concepts/policies#template-variables).
-</Callout>
+> **lightbulb** For a full list of template variables—such as `identity.entity.name`, `identity.group.id`, and more—see the [Vault policy template variables documentation](https://www.vaultproject.io/docs/concepts/policies#template-variables).
 
 ***
 
@@ -155,6 +143,4 @@ By mastering glob and single‐segment wildcards along with ACL templates, you�
 * [Vault ACL Template Variables](https://www.vaultproject.io/docs/concepts/policies#template-variables)
 * [Vault KV Secrets Engine](https://www.vaultproject.io/docs/secrets/kv)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/f0a55b5e-9b82-4d7c-9509-aac2673cba80" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/f0a55b5e-9b82-4d7c-9509-aac2673cba80)

@@ -14,9 +14,7 @@ Within these regional pairs, Azure optimizes platform updates and planned mainte
 
 1. Azure aims to maintain at least 300 miles of separation between data centers ...
 
-<Callout icon="lightbulb">
-  Azure aims to maintain at least 300 miles of separation between data centers within a regional pair where possible. This physical distance helps mitigate simultaneous impacts from natural disasters, civil unrest, power outages, or network failures. However, geographical constraints can sometimes limit this separation.
-</Callout>
+> **lightbulb** Azure aims to maintain at least 300 miles of separation between data centers within a regional pair where possible. This physical distance helps mitigate simultaneous impacts from natural disasters, civil unrest, power outages, or network failures. However, geographical constraints can sometimes limit this separation.
 
 2. **Platform-Provided Replication**\
    Services such as geo-redundant storage automatically replicate data to the paired region, providing robust redundancy. For applications requiring high availability, deploying across regional pairs is highly recommended.
@@ -30,9 +28,7 @@ Within these regional pairs, Azure optimizes platform updates and planned mainte
 5. **Data Residency Compliance**\
    To adhere to tax laws and law enforcement jurisdiction requirements, paired regions are typically located within the same geography, with the noted exception of Brazil South. This rule is crucial for resources such as geo-redundant storage accounts (GRS), which must ensure that data remains in the appropriate geographic location.
 
-<Callout icon="triangle-alert">
-  For organizations with strict compliance policies—especially within the military, government, or public sectors—retaining data within a designated region is critical. Political conflicts or local data sovereignty laws might restrict data from residing in foreign territories.
-</Callout>
+> **triangle-alert** For organizations with strict compliance policies—especially within the military, government, or public sectors—retaining data within a designated region is critical. Political conflicts or local data sovereignty laws might restrict data from residing in foreign territories.
 
 ## Deployment Considerations
 
@@ -40,6 +36,4 @@ While testing or development environments may allow for flexibility in deploymen
 
 Next, we discuss configuring storage access.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7acacade-befa-46b1-99e2-3f298d33623d/lesson/9296fbe8-d6f0-4b03-b760-f468fd3eb009" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7acacade-befa-46b1-99e2-3f298d33623d/lesson/9296fbe8-d6f0-4b03-b760-f468fd3eb009)

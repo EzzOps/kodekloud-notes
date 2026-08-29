@@ -15,7 +15,7 @@ In this lesson, we explore package management in **Azure DevOps** and **GitHub**
 * NuGet
 * npm
 
-![The image is an introduction slide for "Package Management in Azure DevOps and GitHub," highlighting three sections: definition of package management, its importance in software development and CI/CD, and an overview of tools like Azure Artifacts and GitHub Packages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867904/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Package-Management-Tools/package-management-azure-devops-github.jpg)
+![The image is an introduction slide for "Package Management in Azure DevOps and GitHub," highlighting three sections: definition of package management, its importance in software development and CI/CD, and an overview of tools like Azure Artifacts and GitHub Packages.](https://kodekloud.com/kk-media/image/upload/v1752867904/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Package-Management-Tools/package-management-azure-devops-github.jpg)
 
 ## Key Package Management Tools at a Glance
 

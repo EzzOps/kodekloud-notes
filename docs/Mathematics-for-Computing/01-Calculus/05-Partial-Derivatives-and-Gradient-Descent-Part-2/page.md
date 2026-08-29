@@ -111,9 +111,7 @@ Evaluate at (1, 1):
 
 Interpretation: the gradient `[5, -2]` points to the direction that increases travel time most rapidly. A positive first component means increasing `x` (distance) tends to increase time; a negative second component means increasing `y` (speed-limit variable) tends to reduce time. Thus, to reduce travel time, move opposite the gradient.
 
-<Callout icon="lightbulb">
-  Gradient descent update (one step): `new_position = current_position - learning_rate * gradient`. Recompute partial derivatives at the new position and repeat until convergence.
-</Callout>
+> **lightbulb** Gradient descent update (one step): `new_position = current_position - learning_rate * gradient`. Recompute partial derivatives at the new position and repeat until convergence.
 
 The app uses this iterative process: recompute partial derivatives with updated conditions (traffic, speed, closures), step opposite the gradient to reduce travel time, and refine the route in real time.
 
@@ -169,6 +167,4 @@ Further reading:
 * [Gradient Descent — Wikipedia](https://en.wikipedia.org/wiki/Gradient_descent)
 * [Khan Academy: Partial Derivatives](https://www.khanacademy.org/math/multivariable-calculus)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/582ff79b-c012-496e-8612-3ed7a8df5800/lesson/c9062502-0dfe-4208-b83d-7e2bccf5c451" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/582ff79b-c012-496e-8612-3ed7a8df5800/lesson/c9062502-0dfe-4208-b83d-7e2bccf5c451)

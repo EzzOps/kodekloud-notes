@@ -40,9 +40,7 @@ You can specify the following in ignoreDifferences:
 | managedFieldsManagers | Ignore changes by a particular manager | `kube-controller-manager`   |
 | name / namespace      | Scope rule to a single resource        | `name: random-shapes`       |
 
-<Callout icon="warning">
-  ignoreDifferences only affects how Argo CD computes diffs and whether it treats a difference as actionable during sync. It does not change the live Kubernetes resource or stop other controllers (HPA, operators) from managing those fields.
-</Callout>
+> **warning** ignoreDifferences only affects how Argo CD computes diffs and whether it treats a difference as actionable during sync. It does not change the live Kubernetes resource or stop other controllers (HPA, operators) from managing those fields.
 
 ## Example ignoreDifferences entries
 
@@ -70,12 +68,10 @@ ignoreDifferences:
 
 ## Enable RespectIgnoreDifferences
 
-<Callout icon="lightbulb">
-  To ensure Argo CD honors ignoreDifferences during synchronization, either:
+> **lightbulb** To ensure Argo CD honors ignoreDifferences during synchronization, either:
 
   * Add "RespectIgnoreDifferences=true" to syncPolicy.syncOptions in your Application manifest, or
   * Select the "Respect differences" checkbox in the Argo CD UI sync dialog when performing a manual sync.
-</Callout>
 
 ## Example: Application manifest snippet for this demo
 
@@ -143,9 +139,7 @@ deployment.apps/random-shapes scaled
 * [Kubernetes Horizontal Pod Autoscaler (HPA) documentation](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
 * [Argo CD docs — Sync Options](https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/#sync-options)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/e8de4f85-17f9-46b5-8c5b-386db2e32870" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/e8de4f85-17f9-46b5-8c5b-386db2e32870)
 
 
 # Deploy Apps using HELM Chart

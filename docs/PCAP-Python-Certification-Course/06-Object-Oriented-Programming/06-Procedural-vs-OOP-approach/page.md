@@ -29,9 +29,7 @@ print(pop())
 print(pop())
 ```
 
-<Callout icon="lightbulb">
-  In this implementation, the global `stack` variable can be accessed and modified from anywhere in your code, which can lead to unintended side effects. For multiple stacks, additional functions must be created, reducing reusability.
-</Callout>
+> **lightbulb** In this implementation, the global `stack` variable can be accessed and modified from anywhere in your code, which can lead to unintended side effects. For multiple stacks, additional functions must be created, reducing reusability.
 
 ## Object-Oriented Approach
 
@@ -68,9 +66,7 @@ Output:
 0
 ```
 
-<Callout icon="lightbulb">
-  Although a public attribute is simple to implement, it compromises encapsulation. To protect the internal data structure, converting it to a private attribute is recommended.
-</Callout>
+> **lightbulb** Although a public attribute is simple to implement, it compromises encapsulation. To protect the internal data structure, converting it to a private attribute is recommended.
 
 To enforce encapsulation, we modify `stack_list` to a private attribute by prefixing it with two underscores. Attempting to access this attribute externally will raise an error:
 

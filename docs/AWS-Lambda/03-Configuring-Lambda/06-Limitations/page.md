@@ -23,7 +23,7 @@ AWS Lambda is a fully managed, serverless compute service that scales automatica
 
 For a full overview of AWS Lambda service quotas, refer to the [AWS Lambda Limits and Quotas][1].
 
-![The image lists limitations for a service, including a 15-minute runtime, 10 GB RAM and storage limits, and 1000 concurrent executions. It also provides a link for more information on limits and restrictions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863155/notes-assets/images/AWS-Lambda-Limitations/service-limitations-runtime-storage-executions.jpg)
+![The image lists limitations for a service, including a 15-minute runtime, 10 GB RAM and storage limits, and 1000 concurrent executions. It also provides a link for more information on limits and restrictions.](https://kodekloud.com/kk-media/image/upload/v1752863155/notes-assets/images/AWS-Lambda-Limitations/service-limitations-runtime-storage-executions.jpg)
 
 ***
 

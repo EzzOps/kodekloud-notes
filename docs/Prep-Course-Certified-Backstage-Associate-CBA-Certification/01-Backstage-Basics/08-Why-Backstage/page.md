@@ -127,9 +127,7 @@ except Exception as e:
     print(f"Failed to send email: {e}")
 ```
 
-<Callout icon="warning">
-  Swapping email providers (or any integration) without full visibility into downstream consumers can break production systems. A catalog with dependency graphs helps you see which services rely on a given integration before making changes.
-</Callout>
+> **warning** Swapping email providers (or any integration) without full visibility into downstream consumers can break production systems. A catalog with dependency graphs helps you see which services rely on a given integration before making changes.
 
 <Frame>
   <img alt="An illustration of a person sitting with a laptop on the left and a large browser-style error panel on the right. The panel shows &#x22;503 Service Unavailable&#x22; with the message &#x22;A critical dependency is missing. Please try again later.&#x22;" />
@@ -177,9 +175,7 @@ All these scenarios—tool fragmentation, scattered docs, unknown ownership, hid
   <img alt="A slide titled &#x22;Internal Developer Portals&#x22; illustrating a development team feeding into a portal that provides tools, documentation, and resources, which then drives code, test, and deploy stages. The footer highlights benefits: single pane of glass, simplified workflow, and enhanced developer experience." />
 </Frame>
 
-<Callout icon="lightbulb">
-  An Internal Developer Portal (IDP) is a centralized platform that aggregates tools, documentation, ownership information, templates, and self-service capabilities to streamline developer workflows, reduce context switching, and enforce organizational standards.
-</Callout>
+> **lightbulb** An Internal Developer Portal (IDP) is a centralized platform that aggregates tools, documentation, ownership information, templates, and self-service capabilities to streamline developer workflows, reduce context switching, and enforce organizational standards.
 
 Common IDP features (summary table)
 
@@ -232,6 +228,4 @@ Useful references
 * Backstage Catalog concepts: [https://backstage.io/docs/features/software-catalog/what-is-the-catalog](https://backstage.io/docs/features/software-catalog/what-is-the-catalog)
 * Internal Developer Portal guidance: [https://cloud.google.com/solutions/internal-developer-portal](https://cloud.google.com/solutions/internal-developer-portal)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/fcbbf923-69c3-4147-bd51-18db2bd18957/lesson/63b3da56-6a9c-43f4-b93e-74bb3614c527" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/fcbbf923-69c3-4147-bd51-18db2bd18957/lesson/63b3da56-6a9c-43f4-b93e-74bb3614c527)

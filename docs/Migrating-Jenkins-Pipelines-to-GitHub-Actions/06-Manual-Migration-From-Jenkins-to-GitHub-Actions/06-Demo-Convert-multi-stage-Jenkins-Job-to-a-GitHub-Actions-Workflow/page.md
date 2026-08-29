@@ -72,13 +72,11 @@ jobs:
         run: echo "Job completed at $(date)"
 ```
 
-<Callout icon="lightbulb">
-  Quick tips:
+> **lightbulb** Quick tips:
 
   * YAML comments use `#`. `//` is NOT valid YAML and will break the workflow.
   * When using `sleep` in a shell step prefer an explicit time unit like `5s` for portability.
   * Use `needs` to control job ordering; omit it to allow jobs to run in parallel.
-</Callout>
 
 If you prefer `Greet` and `Build` to run in parallel (and still have `Result` run after `Build`), remove the `needs: Greet` line from the `Build` job:
 

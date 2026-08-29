@@ -20,7 +20,7 @@ Before you attempt the practice exam, collect all your study resources and revie
 * **Course Outlines:** Utilize these outlines to identify key service components such as security, performance, and reliability.
 * **AWS Exam Guide:** The AWS Solutions Architect Associate exam guide is indispensable. It clarifies concepts such as the differences between Key Management Service (KMS) and CloudHSM, and reinforces design strategies like cost optimization (e.g., knowing that Lambda typically costs less than EC2) and performance enhancements.
 
-![The image is a guide titled "Part One – Review Notes and Course Materials," outlining four steps for reviewing course content, including reviewing summaries, notes, course outlines, and exam guides.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863446/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Preparing-for-the-SAA-MockPractice-Exam/review-notes-course-materials-guide.jpg)
+![The image is a guide titled "Part One – Review Notes and Course Materials," outlining four steps for reviewing course content, including reviewing summaries, notes, course outlines, and exam guides.](https://kodekloud.com/kk-media/image/upload/v1752863446/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Preparing-for-the-SAA-MockPractice-Exam/review-notes-course-materials-guide.jpg)
 
 > **lightbulb** Make sure to revisit every study resource. This comprehensive review will help you identify and fill any knowledge gaps before your exam.
 
@@ -49,7 +49,7 @@ If you repeatedly struggle with questions related to a specific AWS service (for
 * **Personal AWS Account:** If the service isn’t available in the playground (such as Systems Manager, which consolidates around 22 services), test it out in your own AWS account. Remember to terminate resources after an hour or two to avoid unexpected charges.
 * **AWS Documentation:** For deeper insights and real-world examples, consult the official [AWS Documentation](https://docs.aws.amazon.com/).
 
-![The image outlines three practice areas for exploring AWS services: using an AWS playground, experimenting in a personal AWS account, and reading AWS documentation superficially.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863446/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Preparing-for-the-SAA-MockPractice-Exam/aws-practice-areas-exploration.jpg)
+![The image outlines three practice areas for exploring AWS services: using an AWS playground, experimenting in a personal AWS account, and reading AWS documentation superficially.](https://kodekloud.com/kk-media/image/upload/v1752863446/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Preparing-for-the-SAA-MockPractice-Exam/aws-practice-areas-exploration.jpg)
 
 > **triangle-alert** When using your personal AWS account, be cautious about leaving resources active. Always ensure you shut them down promptly to prevent unexpected charges.
 
@@ -63,7 +63,7 @@ Effective preparation for the AWS Solutions Architect Associate mock exam involv
 * Retaking end-of-section quizzes (including design quizzes) to solidify your understanding and improve recall.
 * Gaining practical experience on challenging AWS services through interactive labs, personal account experimentation, or detailed documentation studies.
 
-![The image is a summary slide with three points: reviewing notes for a mock exam, retaking quizzes, and practicing challenging areas. It has a gradient background and is copyrighted by KodeKloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863447/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Preparing-for-the-SAA-MockPractice-Exam/mock-exam-review-summary-slide.jpg)
+![The image is a summary slide with three points: reviewing notes for a mock exam, retaking quizzes, and practicing challenging areas. It has a gradient background and is copyrighted by KodeKloud.](https://kodekloud.com/kk-media/image/upload/v1752863447/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Preparing-for-the-SAA-MockPractice-Exam/mock-exam-review-summary-slide.jpg)
 
 I'm Michael Forrester, and I hope you find these strategies beneficial as you prepare for your AWS Solutions Architect Associate exam. Best of luck, and I'll catch you in the next article!
 

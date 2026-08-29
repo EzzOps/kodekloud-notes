@@ -12,7 +12,7 @@ Route 53 offers several key functions:
 2. It provides comprehensive DNS record management through a user-friendly console.
 3. It is a global service, ensuring your DNS management is not constrained by any specific AWS region.
 
-![The image describes AWS Route 53 as a managed DNS service, a domain registrar similar to GoDaddy and Namecheap, and a global service not specific to a region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858227/notes-assets/images/AWS-Certified-Developer-Associate-Route53-Basics/aws-route-53-dns-service.jpg)
+![The image describes AWS Route 53 as a managed DNS service, a domain registrar similar to GoDaddy and Namecheap, and a global service not specific to a region.](https://kodekloud.com/kk-media/image/upload/v1752858227/notes-assets/images/AWS-Certified-Developer-Associate-Route53-Basics/aws-route-53-dns-service.jpg)
 
 > **lightbulb** Route 53 integrates domain registration and DNS management, streamlining the process for developers and IT professionals.
 
@@ -22,7 +22,7 @@ A fundamental concept in Route 53 is the hosted zone. When you want Route 53 to 
 
 Each time you create a hosted zone, AWS automatically assigns four dedicated name servers to that zone. This process is repeated for every domain you manage. For example, if you register another domain such as fastcars.com, a unique hosted zone is created with its own set of four name servers to handle DNS record management.
 
-![The image illustrates the concept of hosted zones in Amazon Route 53, showing how DNS records are organized and allocated to nameservers by AWS for different domains.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858228/notes-assets/images/AWS-Certified-Developer-Associate-Route53-Basics/amazon-route53-hosted-zones-dns.jpg)
+![The image illustrates the concept of hosted zones in Amazon Route 53, showing how DNS records are organized and allocated to nameservers by AWS for different domains.](https://kodekloud.com/kk-media/image/upload/v1752858228/notes-assets/images/AWS-Certified-Developer-Associate-Route53-Basics/amazon-route53-hosted-zones-dns.jpg)
 
 > **lightbulb** Each hosted zone is independent, ensuring that the DNS management for one domain does not affect another.
 

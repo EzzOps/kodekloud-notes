@@ -113,9 +113,7 @@ Final path:
 Test your URL path and JMESPath locally
 Before embedding an `apiCall` in a Kyverno policy, verify both the raw API JSON and the JMESPath expression. Kyverno provides a CLI helper `kyverno jp query` to evaluate JMESPath expressions against JSON — combine this with `kubectl get --raw` for a reliable test loop.
 
-<Callout icon="lightbulb">
-  Use `kubectl get --raw` to fetch the raw API JSON, then pipe it into `kyverno jp query` to validate your JMESPath expression. Iterate until you get the exact value, then paste the working `urlPath` and `jmesPath` into your policy.
-</Callout>
+> **lightbulb** Use `kubectl get --raw` to fetch the raw API JSON, then pipe it into `kyverno jp query` to validate your JMESPath expression. Iterate until you get the exact value, then paste the working `urlPath` and `jmesPath` into your policy.
 
 Example test command:
 
@@ -162,9 +160,7 @@ How this policy works:
 * The JMESPath expression `items[?spec.type == 'LoadBalancer'] | length(@)` filters to LoadBalancer Services and returns a count.
 * The `validate`/`deny` block compares the stored `existing_lb_count` against `1` and denies requests when the count is >= 1.
 
-<Callout icon="warning">
-  Important: when updating an existing Service, the `apiCall` result may include the Service currently being evaluated. To avoid falsely denying legitimate updates, filter out the item with the same `metadata.name` or `metadata.uid` as the request object in your JMESPath expression. Test both create and update flows to confirm correct behavior.
-</Callout>
+> **warning** Important: when updating an existing Service, the `apiCall` result may include the Service currently being evaluated. To avoid falsely denying legitimate updates, filter out the item with the same `metadata.name` or `metadata.uid` as the request object in your JMESPath expression. Test both create and update flows to confirm correct behavior.
 
 Performance and robustness tips
 
@@ -206,8 +202,6 @@ Further reading and references
 
 Efficiency when the same API data is needed repeatedly can be improved using the GlobalContext.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/470bb961-febf-41b6-b75b-4c439def6eae/lesson/9fdb7f1f-9f21-4a42-b2b4-9795fe756484" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/470bb961-febf-41b6-b75b-4c439def6eae/lesson/9fdb7f1f-9f21-4a42-b2b4-9795fe756484)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/470bb961-febf-41b6-b75b-4c439def6eae/lesson/39058f49-e5c1-4f47-a5b9-46540d542ff4" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/470bb961-febf-41b6-b75b-4c439def6eae/lesson/39058f49-e5c1-4f47-a5b9-46540d542ff4)

@@ -17,23 +17,17 @@ Permissions in Terraform Cloud are granted exclusively through team membership. 
 * **Organizational-level** permissions (e.g., manage workspaces, policies)
 * **Workspace-level** permissions (e.g., read, plan, write, admin)
 
-<Callout icon="lightbulb">
-  Teams are only available on the **Team** and higher subscription tiers. The free tier includes only the **owners** team.
-</Callout>
+> **lightbulb** Teams are only available on the **Team** and higher subscription tiers. The free tier includes only the **owners** team.
 
 Teams typically reflect your company’s roles (e.g., DevOps, QA, Platform) and grant each role the appropriate level of access.
 
-<Frame>
-  ![The image is a slide about Terraform Cloud Teams, explaining how teams grant different access levels to infrastructure based on user roles, with specific access levels like read, plan, write, and admin. It also mentions the requirement of a Team Tier within Terraform Cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878870/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/terraform-cloud-teams-access-levels.jpg)
-</Frame>
+![The image is a slide about Terraform Cloud Teams, explaining how teams grant different access levels to infrastructure based on user roles, with specific access levels like read, plan, write, and admin. It also mentions the requirement of a Team Tier within Terraform Cloud.](https://kodekloud.com/kk-media/image/upload/v1752878870/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/terraform-cloud-teams-access-levels.jpg)
 
 ## Users Across Multiple Organizations
 
 A Terraform Cloud user account is global. One user can belong to multiple organizations, each with its own teams and permissions. For example, Alice might be on the **WebApp** organization’s Admin team and on the **Infra** organization’s Read-only team.
 
-<Frame>
-  ![The image illustrates a user accessing HashiCorp Terraform Cloud, showing connections between a user, a mobile device, and organizations like "Pizza Organization" and "Taco Organization." It includes elements like a cloud icon, email, and password security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878870/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/terraform-cloud-user-access-diagram.jpg)
-</Frame>
+![The image illustrates a user accessing HashiCorp Terraform Cloud, showing connections between a user, a mobile device, and organizations like "Pizza Organization" and "Taco Organization." It includes elements like a cloud icon, email, and password security.](https://kodekloud.com/kk-media/image/upload/v1752878870/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/terraform-cloud-user-access-diagram.jpg)
 
 ## Organizational vs. Workspace Permissions
 
@@ -50,17 +44,13 @@ Workspace-level permissions can also vary by workspace. For example, your **mobi
 
 On the free tier, only the **owners** team exists. Upgrading to Team tier (or higher) unlocks custom teams and scoped permissions at both organization and workspace levels.
 
-<Frame>
-  ![The image is a diagram titled "Role-Based Access Structure" in Terraform Cloud, showing different teams (app1-team, mobile-team, appX-team) and their permissions (Plan, Apply, Read, Admin) for various workspaces.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878872/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/terraform-cloud-role-based-access-structure.jpg)
-</Frame>
+![The image is a diagram titled "Role-Based Access Structure" in Terraform Cloud, showing different teams (app1-team, mobile-team, appX-team) and their permissions (Plan, Apply, Read, Admin) for various workspaces.](https://kodekloud.com/kk-media/image/upload/v1752878872/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/terraform-cloud-role-based-access-structure.jpg)
 
 ## The Owners Team
 
 The **owners** team is created automatically for every organization and has exclusive capabilities:
 
-<Frame>
-  ![The image is a slide about "Organization Owners" in Terraform Cloud, detailing their roles and special permissions, such as managing teams, settings, billing, agents, and API tokens. It includes a logo and cartoon characters at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878873/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/terraform-cloud-organization-owners-slide.jpg)
-</Frame>
+![The image is a slide about "Organization Owners" in Terraform Cloud, detailing their roles and special permissions, such as managing teams, settings, billing, agents, and API tokens. It includes a logo and cartoon characters at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878873/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/terraform-cloud-organization-owners-slide.jpg)
 
 * Invite, remove, and reassign users
 * Create, manage, and delete teams
@@ -74,9 +64,7 @@ The **owners** team is created automatically for every organization and has excl
 * Cannot perform workspace actions (e.g., runs, applies)
 * Only one token can be active at a time
 
-<Callout icon="triangle-alert">
-  Use the organizational API token briefly for initial setup. Replace it with scoped team tokens for ongoing automation.
-</Callout>
+> **triangle-alert** Use the organizational API token briefly for initial setup. Replace it with scoped team tokens for ongoing automation.
 
 ## Organizational-Level Permissions
 
@@ -89,13 +77,9 @@ The **owners** team is created automatically for every organization and has excl
 | Manage VCS Settings            | Configure VCS providers and SSH keys                                                  |
 | Manage Run Tasks               | Define and manage run tasks organization-wide                                         |
 
-<Frame>
-  ![The image is a diagram titled "Organization Permissions" for HashiCorp Terraform Cloud, showing different management options like policies, workspaces, and VCS settings. It includes icons and text for each permission category.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878874/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/organization-permissions-hashi-corp-diagram.jpg)
-</Frame>
+![The image is a diagram titled "Organization Permissions" for HashiCorp Terraform Cloud, showing different management options like policies, workspaces, and VCS settings. It includes icons and text for each permission category.](https://kodekloud.com/kk-media/image/upload/v1752878874/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/organization-permissions-hashi-corp-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Users with repository or commit access in your VCS can trigger Terraform runs even without explicit Terraform Cloud permissions.
-</Callout>
+> **lightbulb** Users with repository or commit access in your VCS can trigger Terraform runs even without explicit Terraform Cloud permissions.
 
 ## Team Visibility and Team Tokens
 
@@ -104,9 +88,7 @@ The **owners** team is created automatically for every organization and has excl
 
 Team API tokens inherit the team’s workspace permissions and can be used for automated workflows and CI/CD.
 
-<Frame>
-  ![The image is a slide about "Teams" in Terraform Cloud, detailing "Team Visibility" and "Team Tokens," with a logo and cartoon characters at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878875/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/terraform-cloud-teams-visibility-tokens.jpg)
-</Frame>
+![The image is a slide about "Teams" in Terraform Cloud, detailing "Team Visibility" and "Team Tokens," with a logo and cartoon characters at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878875/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/terraform-cloud-teams-visibility-tokens.jpg)
 
 ## Workspace-Level Permissions
 
@@ -124,9 +106,7 @@ Terraform Cloud provides four predefined workspace roles, each building upon the
 * View run history, Terraform versions, state, variables, and workspace metadata
 * Cannot initiate runs or modify any resources
 
-<Frame>
-  ![The image shows a slide about "Workspace Permissions: Read" in Terraform Cloud, listing baseline permissions such as reading runs, TF config versions, state, variables, and workspace information. It also indicates that these permissions are currently assigned.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878876/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/workspace-permissions-read-terraform-cloud.jpg)
-</Frame>
+![The image shows a slide about "Workspace Permissions: Read" in Terraform Cloud, listing baseline permissions such as reading runs, TF config versions, state, variables, and workspace information. It also indicates that these permissions are currently assigned.](https://kodekloud.com/kk-media/image/upload/v1752878876/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/workspace-permissions-read-terraform-cloud.jpg)
 
 ### Plan
 
@@ -145,9 +125,7 @@ Includes **Read** and **Plan** permissions, plus:
 * Approve runs
 * Lock or unlock the workspace
 
-<Frame>
-  ![The image shows a section of a user interface for assigning "Write" permissions in HashiCorp Terraform Cloud, detailing specific permissions like reading, writing, approving runs, and locking/unlocking workspaces.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878878/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/terraform-cloud-write-permissions-ui.jpg)
-</Frame>
+![The image shows a section of a user interface for assigning "Write" permissions in HashiCorp Terraform Cloud, detailing specific permissions like reading, writing, approving runs, and locking/unlocking workspaces.](https://kodekloud.com/kk-media/image/upload/v1752878878/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/terraform-cloud-write-permissions-ui.jpg)
 
 ### Admin
 
@@ -169,9 +147,7 @@ For finer-grained access, enable or disable specific actions:
 * **Variables**: separate view vs. set permissions (secret variables stay hidden)
 * **State**: control read or restrict state access
 
-<Frame>
-  ![The image is a diagram titled "Workspace Permissions: Custom" for HashiCorp Terraform Cloud, showing different permission categories: Run, Sentinel and Run Tasks, Variables, and State, each with specific access details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878879/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/workspace-permissions-custom-terraform-diagram.jpg)
-</Frame>
+![The image is a diagram titled "Workspace Permissions: Custom" for HashiCorp Terraform Cloud, showing different permission categories: Run, Sentinel and Run Tasks, Variables, and State, each with specific access details.](https://kodekloud.com/kk-media/image/upload/v1752878879/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/workspace-permissions-custom-terraform-diagram.jpg)
 
 ## Single Sign-On (SSO)
 
@@ -181,9 +157,7 @@ On the Business tier or Terraform Enterprise, configure SSO for centralized iden
 * Map IdP groups to Terraform Cloud teams
 * Enforce MFA and session policies
 
-<Frame>
-  ![The image is an informational slide about Single Sign-On (SSO) for Terraform Cloud, explaining its features like using an authentication server, SAML configuration, and user management. It includes a setup interface with options for Microsoft Azure AD, Okta, and SAML as SSO providers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878880/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/sso-terraform-cloud-features-diagram.jpg)
-</Frame>
+![The image is an informational slide about Single Sign-On (SSO) for Terraform Cloud, explaining its features like using an authentication server, SAML configuration, and user management. It includes a setup interface with options for Microsoft Azure AD, Okta, and SAML as SSO providers.](https://kodekloud.com/kk-media/image/upload/v1752878880/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Team/sso-terraform-cloud-features-diagram.jpg)
 
 ***
 
@@ -195,8 +169,6 @@ By organizing your users into teams and assigning scoped permissions, you mainta
 * [Terraform Cloud Permissions Overview](https://www.terraform.io/docs/cloud/users-teams-organizations/permissions.html)
 * [HashiCorp Sentinel](https://www.hashicorp.com/sentinel)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/67f17e5e-a146-4781-9e8c-41ff866be20d/lesson/56b7dd1e-f3cf-4ee2-9836-d815da3b3aa7" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/67f17e5e-a146-4781-9e8c-41ff866be20d/lesson/56b7dd1e-f3cf-4ee2-9836-d815da3b3aa7)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/67f17e5e-a146-4781-9e8c-41ff866be20d/lesson/4e5e6c0e-95c9-4862-aa90-63c952913eb8" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/67f17e5e-a146-4781-9e8c-41ff866be20d/lesson/4e5e6c0e-95c9-4862-aa90-63c952913eb8)

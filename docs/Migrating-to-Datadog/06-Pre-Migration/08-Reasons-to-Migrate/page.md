@@ -8,9 +8,7 @@ This lesson explains why engineering and SRE teams choose to migrate to Datadog 
 
 Datadog is a recognized leader in Gartner’s Magic Quadrant for observability, and it positions itself as a unified, all-in-one platform combining observability and security capabilities. That single-platform approach reduces tool sprawl and speeds cross-team collaboration.
 
-<Callout icon="lightbulb">
-  Consider Datadog when you need consolidated telemetry (metrics, traces, logs, and user-experience data), fast integrations across cloud and on-prem systems, and built-in ML/AI for anomaly detection and incident prioritization.
-</Callout>
+> **lightbulb** Consider Datadog when you need consolidated telemetry (metrics, traces, logs, and user-experience data), fast integrations across cloud and on-prem systems, and built-in ML/AI for anomaly detection and incident prioritization.
 
 ## Key benefits
 
@@ -57,6 +55,4 @@ Further reading and references:
 
 That’s it for this lesson. I hope you found it useful — see you in the next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/306b6c58-09ac-4499-83fb-8fc5fa3b1416" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/306b6c58-09ac-4499-83fb-8fc5fa3b1416)

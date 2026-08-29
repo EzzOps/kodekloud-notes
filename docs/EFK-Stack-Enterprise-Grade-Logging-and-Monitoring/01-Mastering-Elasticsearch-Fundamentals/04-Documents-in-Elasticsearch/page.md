@@ -8,9 +8,7 @@ Welcome to this comprehensive lesson on how logs are stored in Elasticsearch. In
 
 Elasticsearch stores all information in the form of documents. These documents are the fundamental data unit, structured in JSON format and optimized for rapid, full-text search.
 
-<Frame>
-  ![The image explains what gets stored in Elasticsearch, highlighting that documents are the fundamental unit of data, stored in structured JSON, and optimized for real-time search.](../../../../images/kodekloud.com/kk-media/image/upload/v1752874244/notes-assets/images/EFK-Stack-Enterprise-Grade-Logging-and-Monitoring-Documents-in-Elasticsearch/elasticsearch-documents-json-storage.jpg)
-</Frame>
+![The image explains what gets stored in Elasticsearch, highlighting that documents are the fundamental unit of data, stored in structured JSON, and optimized for real-time search.](https://kodekloud.com/kk-media/image/upload/v1752874244/notes-assets/images/EFK-Stack-Enterprise-Grade-Logging-and-Monitoring-Documents-in-Elasticsearch/elasticsearch-documents-json-storage.jpg)
 
 ## Key Features of Elasticsearch Documents
 
@@ -31,13 +29,9 @@ Documents in Elasticsearch are characterized by several key features:
 5. **Schema-Less Flexibility**\
    Although Elasticsearch can use a predefined schema to control data structure, it is highly dynamic. You can start indexing documents without a defined schema, as Elasticsearch automatically detects and adds new fields as they appear. This schema-less approach is particularly useful in agile development environments where data structures quickly evolve.
 
-<Frame>
-  ![The image lists features of a document in Elasticsearch, including JSON Format, Indexing, Node, Sharding and Replicas, and Schema-Less.](../../../../images/kodekloud.com/kk-media/image/upload/v1752874246/notes-assets/images/EFK-Stack-Enterprise-Grade-Logging-and-Monitoring-Documents-in-Elasticsearch/elasticsearch-document-features-json-indexing.jpg)
-</Frame>
+![The image lists features of a document in Elasticsearch, including JSON Format, Indexing, Node, Sharding and Replicas, and Schema-Less.](https://kodekloud.com/kk-media/image/upload/v1752874246/notes-assets/images/EFK-Stack-Enterprise-Grade-Logging-and-Monitoring-Documents-in-Elasticsearch/elasticsearch-document-features-json-indexing.jpg)
 
-<Callout icon="lightbulb">
-  Together, these features—JSON formatting, advanced indexing, robust clusters, efficient sharding with replicas, and flexible schema management—form the backbone of Elasticsearch's ability to perform large-scale, complex data analysis in real time.
-</Callout>
+> **lightbulb** Together, these features—JSON formatting, advanced indexing, robust clusters, efficient sharding with replicas, and flexible schema management—form the backbone of Elasticsearch's ability to perform large-scale, complex data analysis in real time.
 
 ## How a Log File is Stored as a Document
 
@@ -80,10 +74,6 @@ In this example:
 
 This structure is fundamental for harnessing Elasticsearch's powerful real-time search capabilities.
 
-<Callout icon="lightbulb">
-  In our next lesson, we will explore how these documents are indexed and the mechanics behind the fast searching capabilities of Elasticsearch. Stay tuned for more in-depth insights!
-</Callout>
+> **lightbulb** In our next lesson, we will explore how these documents are indexed and the mechanics behind the fast searching capabilities of Elasticsearch. Stay tuned for more in-depth insights!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/efk-stack-enterprise-grade-logging-and-monitoring/module/a70164d0-faba-407d-a6e8-4e227044c3aa/lesson/8fd047fc-c16a-4420-af28-fc5e22a55768" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/efk-stack-enterprise-grade-logging-and-monitoring/module/a70164d0-faba-407d-a6e8-4e227044c3aa/lesson/8fd047fc-c16a-4420-af28-fc5e22a55768)

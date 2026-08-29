@@ -34,9 +34,7 @@ INFO:     127.0.0.1:59919 - "GET /favicon.ico HTTP/1.1" 404 Not Found
 
 Each line in the console output provides details about server startup, the listening URL, and the requests that have been processed.
 
-<Callout icon="lightbulb">
-  FastAPI calls these endpoint definitions **Path Operations**. While similar frameworks might refer to them as routes, FastAPI consistently uses the term "Path Operation."
-</Callout>
+> **lightbulb** FastAPI calls these endpoint definitions **Path Operations**. While similar frameworks might refer to them as routes, FastAPI consistently uses the term "Path Operation."
 
 Below is the same code snippet again for clarity:
 
@@ -142,9 +140,7 @@ def root():
     return {"message": "welcome to my api"}
 ```
 
-<Callout icon="lightbulb">
-  When you update the code, ensure you restart the server or use Uvicorn's `--reload` flag to reflect the changes automatically. Running `uvicorn main:app --reload` is especially useful during development.
-</Callout>
+> **lightbulb** When you update the code, ensure you restart the server or use Uvicorn's `--reload` flag to reflect the changes automatically. Running `uvicorn main:app --reload` is especially useful during development.
 
 ## Quick Recap on Path Operations
 
@@ -191,15 +187,11 @@ When you visit [http://127.0.0.1:8000/posts](http://127.0.0.1:8000/posts), the a
 
 FastAPI supports various HTTP methods. The GET method is standard for data retrieval. For operations such as creating or updating data, you would typically use POST, PUT, or DELETE. For further details on these HTTP methods, you can refer to [Mozilla Developer Network (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods).
 
-<Frame>
-  ![The image shows a webpage from the Mozilla Developer Network (MDN) detailing HTTP request methods, including GET, POST, PUT, and DELETE, with descriptions of each method. The page also includes a table of contents and related topics on the left sidebar.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883442/notes-assets/images/Python-API-Development-with-FastAPI-Path-Operations/mdn-http-request-methods.jpg)
-</Frame>
+![The image shows a webpage from the Mozilla Developer Network (MDN) detailing HTTP request methods, including GET, POST, PUT, and DELETE, with descriptions of each method. The page also includes a table of contents and related topics on the left sidebar.](https://kodekloud.com/kk-media/image/upload/v1752883442/notes-assets/images/Python-API-Development-with-FastAPI-Path-Operations/mdn-http-request-methods.jpg)
 
 For example, the HTTP POST method is normally used to submit data to a server for creating or updating a resource. This is in contrast to the GET method, which is used exclusively for data retrieval.
 
-<Frame>
-  ![The image shows a webpage from MDN Web Docs detailing the HTTP POST method, including its syntax, examples, and related topics. The page is part of a guide for developers on HTTP request methods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883443/notes-assets/images/Python-API-Development-with-FastAPI-Path-Operations/http-post-method-mdn-web-docs.jpg)
-</Frame>
+![The image shows a webpage from MDN Web Docs detailing the HTTP POST method, including its syntax, examples, and related topics. The page is part of a guide for developers on HTTP request methods.](https://kodekloud.com/kk-media/image/upload/v1752883443/notes-assets/images/Python-API-Development-with-FastAPI-Path-Operations/http-post-method-mdn-web-docs.jpg)
 
 ## Order of Path Operations
 
@@ -241,6 +233,4 @@ In the next section of this lesson, we will review what constitutes a Path Opera
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/113eeddd-9161-408a-8f81-641b04783824" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/113eeddd-9161-408a-8f81-641b04783824)

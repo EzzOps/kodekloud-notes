@@ -12,19 +12,19 @@ Network-to-network connectivity by VPC peering involves linking one VPC directly
 
 AWS’s Transit Gateway is a robust solution for connecting multiple VPCs. However, VPC peering remains the original and straightforward option to connect two VPCs. Importantly, although our example depicts VPCs in the same region, VPC peering also supports cross-region connectivity. For instance, a VPC in the Tokyo region can seamlessly connect with one in the Virginia region.
 
-![The image illustrates a network diagram showing two separate regions, each with a VPC and a private subnet, before VPC peering.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860855/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Internal-Network-to-Network-Connectivity-With-VPC-Peering/network-diagram-vpc-peering.jpg)
+![The image illustrates a network diagram showing two separate regions, each with a VPC and a private subnet, before VPC peering.](https://kodekloud.com/kk-media/image/upload/v1752860855/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Internal-Network-to-Network-Connectivity-With-VPC-Peering/network-diagram-vpc-peering.jpg)
 
 ## Private Connectivity and Cross-Account Support
 
 VPC peering leverages AWS’s private backbone network, eliminating the need for public connectivity—even when using private subnets. This feature also supports cross-account connections, enabling you to connect VPCs owned by different AWS accounts as well as those in different regions.
 
-![The image illustrates a VPC peering connection between two accounts, each containing a VPC with a private subnet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860856/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Internal-Network-to-Network-Connectivity-With-VPC-Peering/vpc-peering-connection-private-subnet.jpg)
+![The image illustrates a VPC peering connection between two accounts, each containing a VPC with a private subnet.](https://kodekloud.com/kk-media/image/upload/v1752860856/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Internal-Network-to-Network-Connectivity-With-VPC-Peering/vpc-peering-connection-private-subnet.jpg)
 
 ## VPC Peering vs. Transit Gateway
 
 VPC peering provides a one-to-one connection, meaning if VPC A is peered with VPC B and VPC C, there is no transitive routing between B and C through A. For scenarios that require connecting multiple VPCs or transitive connectivity, AWS Transit Gateway may be a more flexible solution.
 
-![The image illustrates an inter-region VPC peering connection between two regions, each containing a VPC with a private subnet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860858/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Internal-Network-to-Network-Connectivity-With-VPC-Peering/vpc-peering-connection-diagram.jpg)
+![The image illustrates an inter-region VPC peering connection between two regions, each containing a VPC with a private subnet.](https://kodekloud.com/kk-media/image/upload/v1752860858/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Internal-Network-to-Network-Connectivity-With-VPC-Peering/vpc-peering-connection-diagram.jpg)
 
 ## How VPC Peering Works
 
@@ -42,7 +42,7 @@ Establishing a VPC peering connection involves the following steps:
 
 Once initiated, the peering request status is "pending acceptance." The request may eventually expire or be rejected. After acceptance, the connection status turns "active" and the route tables must be updated accordingly.
 
-![The image is a flowchart illustrating the VPC Peering Connection Lifecycle, showing stages such as "Initiating-request," "Pending-acceptance," "Provisioning," "Active," "Deleting," and various end states like "Failed," "Expired," "Rejected," and "Deleted."](../../../../images/kodekloud.com/kk-media/image/upload/v1752860859/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Internal-Network-to-Network-Connectivity-With-VPC-Peering/vpc-peering-connection-lifecycle-flowchart.jpg)
+![The image is a flowchart illustrating the VPC Peering Connection Lifecycle, showing stages such as "Initiating-request," "Pending-acceptance," "Provisioning," "Active," "Deleting," and various end states like "Failed," "Expired," "Rejected," and "Deleted."](https://kodekloud.com/kk-media/image/upload/v1752860859/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Internal-Network-to-Network-Connectivity-With-VPC-Peering/vpc-peering-connection-lifecycle-flowchart.jpg)
 
 ## Important Considerations
 
@@ -58,7 +58,7 @@ Once initiated, the peering request status is "pending acceptance." The request 
 * **Latency Considerations:**\
   When peering VPCs across regions, even though connections use AWS’s backbone, the physical distance may introduce latency. This could affect performance in high-traffic scenarios.
 
-![The image lists six limitations related to network configurations, including no transitive peering, no overlapping CIDRs, and no support for edge routing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860860/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Internal-Network-to-Network-Connectivity-With-VPC-Peering/network-config-limitations-list.jpg)
+![The image lists six limitations related to network configurations, including no transitive peering, no overlapping CIDRs, and no support for edge routing.](https://kodekloud.com/kk-media/image/upload/v1752860860/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Internal-Network-to-Network-Connectivity-With-VPC-Peering/network-config-limitations-list.jpg)
 
 ## Summary
 

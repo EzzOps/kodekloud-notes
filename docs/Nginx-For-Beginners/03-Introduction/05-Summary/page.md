@@ -45,9 +45,7 @@ This lesson reviewed the fundamentals of how web servers work and why Nginx is w
   <img alt="A presentation summary slide with a turquoise sidebar and four colorful numbered points. It lists takeaways about web servers and Nginx — its popularity, open-source and commercial variants, installation flexibility, and performance/use cases." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Tip: If you’re evaluating Nginx for production use, start with the open-source edition for learning and development, then consider Nginx Plus if you need enterprise-grade features and support. For authoritative documentation, see the official Nginx resources linked below.
-</Callout>
+> **lightbulb** Tip: If you’re evaluating Nginx for production use, start with the open-source edition for learning and development, then consider Nginx Plus if you need enterprise-grade features and support. For authoritative documentation, see the official Nginx resources linked below.
 
 That wraps up this lesson. Next, we'll begin installing and configuring Nginx.
 
@@ -57,6 +55,4 @@ That wraps up this lesson. Next, we'll begin installing and configuring Nginx.
 * Nginx documentation and commercial product info: [https://www.nginx.com/](https://www.nginx.com/)
 * HTTP basics: [https://developer.mozilla.org/en-US/docs/Web/HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/9e6f72d7-933d-42dd-a948-ae48d66aecb6/lesson/b0a86095-d6d4-402f-a256-26a6d7abdda2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/9e6f72d7-933d-42dd-a948-ae48d66aecb6/lesson/b0a86095-d6d4-402f-a256-26a6d7abdda2)

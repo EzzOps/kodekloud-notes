@@ -8,7 +8,7 @@ Stored procedures in Azure Cosmos DB are written in JavaScript and executed in t
 
 As shown in the diagram below, the process begins with a client (an application or user interface) that sends a request to the database. The Azure Cosmos DB service then processes this request by executing the corresponding JavaScript stored procedure.
 
-![The image illustrates the process of creating stored procedures using JavaScript for Azure Cosmos DB, showing interactions between a client, database, and various document operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866786/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Creating-Stored-Procedures/javascript-stored-procedures-azure-cosmos-db.jpg)
+![The image illustrates the process of creating stored procedures using JavaScript for Azure Cosmos DB, showing interactions between a client, database, and various document operations.](https://kodekloud.com/kk-media/image/upload/v1752866786/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Creating-Stored-Procedures/javascript-stored-procedures-azure-cosmos-db.jpg)
 
 Within this environment, a stored procedure can perform several actions, such as creating a new document, querying existing documents, updating records, or deleting items. After processing, the stored procedure returns the result to the client, ensuring that the entire operation occurs within a single, atomic transaction.
 
@@ -118,7 +118,7 @@ When testing this stored procedure, if the provided airport data lacks an "id" f
 
 Azure Cosmos DB mandates that all operations—whether they are stored procedures, triggers, or functions—complete within a predefined timeframe. This bounded execution model means that if an operation finishes successfully within the allotted time, the change is committed. If it exceeds the time limit or encounters an error, the entire transaction is rolled back automatically.
 
-![The image illustrates the process of creating stored procedures in Azure Cosmos DB, showing a function that leads to either a "True" (completion) or "False" (rollback) outcome.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866788/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Creating-Stored-Procedures/azure-cosmos-db-stored-procedures.jpg)
+![The image illustrates the process of creating stored procedures in Azure Cosmos DB, showing a function that leads to either a "True" (completion) or "False" (rollback) outcome.](https://kodekloud.com/kk-media/image/upload/v1752866788/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Creating-Stored-Procedures/azure-cosmos-db-stored-procedures.jpg)
 
 For example, if you try to update an airport code but the stored procedure exceeds its execution bounds, any changes will be rolled back to preserve data integrity.
 
@@ -128,7 +128,7 @@ For example, if you try to update an airport code but the stored procedure excee
 
 Azure Cosmos DB supports transaction continuation to handle long-running operations that might exceed the bounded execution time. Through this continuation-based model, a stored procedure can return a continuation token—a pointer that allows the transaction to resume later and process documents in smaller batches. This feature is particularly useful for bulk operations, ensuring both efficiency and transactional integrity.
 
-![The image illustrates the process of creating stored procedures in Azure Cosmos DB using JavaScript, showing a flow from document processing to completion with a pointer for resuming later.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866790/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Creating-Stored-Procedures/azure-cosmos-db-stored-procedures-2.jpg)
+![The image illustrates the process of creating stored procedures in Azure Cosmos DB using JavaScript, showing a flow from document processing to completion with a pointer for resuming later.](https://kodekloud.com/kk-media/image/upload/v1752866790/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Creating-Stored-Procedures/azure-cosmos-db-stored-procedures-2.jpg)
 
 For instance, when updating multiple airport records, the stored procedure can process a batch until the execution time limit is reached and then return a continuation token. This token is used in subsequent sessions to finish processing the remaining records.
 
@@ -166,7 +166,7 @@ To verify that the document was inserted, run a query in the Data Explorer like:
 SELECT * FROM C where c.id = '2'
 ```
 
-![The image shows the Azure Cosmos DB Data Explorer interface, displaying a list of items from a database with a query editor and JSON document details on the right. The interface includes options for creating containers, running queries, and managing database settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866792/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Creating-Stored-Procedures/azure-cosmos-db-data-explorer.jpg)
+![The image shows the Azure Cosmos DB Data Explorer interface, displaying a list of items from a database with a query editor and JSON document details on the right. The interface includes options for creating containers, running queries, and managing database settings.](https://kodekloud.com/kk-media/image/upload/v1752866792/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Creating-Stored-Procedures/azure-cosmos-db-data-explorer.jpg)
 
 This interface allows you to test your stored procedures and verify validations, such as checking for duplicate IDs or missing fields before inserting a document.
 

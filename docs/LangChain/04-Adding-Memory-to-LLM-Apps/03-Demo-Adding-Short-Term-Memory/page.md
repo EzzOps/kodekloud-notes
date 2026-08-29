@@ -41,9 +41,7 @@ redis_chain = RunnableWithMessageHistory(
 )
 ```
 
-<Callout icon="lightbulb">
-  Make sure your [Redis](https://redis.io/) instance is reachable at `REDIS_URL`. In lab environments the URL may differ. The `session_id` is used as the key for the message history (for example: `math-thread1`).
-</Callout>
+> **lightbulb** Make sure your [Redis](https://redis.io/) instance is reachable at `REDIS_URL`. In lab environments the URL may differ. The `session_id` is used as the key for the message history (for example: `math-thread1`).
 
 Invoke the `redis_chain` and pass a configurable `session_id` so each session/thread maps to its own persisted history. The `config` parameter is passed as the second argument to `invoke`:
 
@@ -134,9 +132,7 @@ Quick recap:
 | Short-term (volatile)  | In-process list passed to the prompt            | Single-run interactions or small context windows                 | Fast, ephemeral; example: `history` passed directly into `base_chain.invoke()`                                             |
 | Long-term (persistent) | External datastore (Redis, SQLite, MySQL, etc.) | Multi-session apps, conversational history, multi-tenant threads | Use `RunnableWithMessageHistory` + storage-backed history (`RedisChatMessageHistory`); identify sessions with `session_id` |
 
-<Callout icon="warning">
-  Be careful about storing sensitive or personally identifiable information (PII) in persistent conversation history. Persisted messages may be retained long-term and could be accessible by other systems or team members. Consider encryption, redaction, and retention policies.
-</Callout>
+> **warning** Be careful about storing sensitive or personally identifiable information (PII) in persistent conversation history. Persisted messages may be retained long-term and could be accessible by other systems or team members. Consider encryption, redaction, and retention policies.
 
 Best practices and tips:
 
@@ -156,11 +152,9 @@ Links and references:
 * [MySQL](https://www.mysql.com/)
 * LangChain docs and examples (search for `RunnableWithMessageHistory`, `*ChatMessageHistory`)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/abd1e527-3f6e-4e04-b421-3b1f8de5c69d/lesson/ee70a555-9bfa-40d9-baa8-34ee1b0ba7fe" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/abd1e527-3f6e-4e04-b421-3b1f8de5c69d/lesson/ee70a555-9bfa-40d9-baa8-34ee1b0ba7fe)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/abd1e527-3f6e-4e04-b421-3b1f8de5c69d/lesson/ad49baa3-64cc-4e0a-9c72-d34695c3d8d0" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langchain/module/abd1e527-3f6e-4e04-b421-3b1f8de5c69d/lesson/ad49baa3-64cc-4e0a-9c72-d34695c3d8d0)
 
 
 # Demo Adding Short Term Memory

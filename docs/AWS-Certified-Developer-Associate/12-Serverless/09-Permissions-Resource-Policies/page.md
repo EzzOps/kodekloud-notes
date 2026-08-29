@@ -20,7 +20,7 @@ For example, to enable an Amazon S3 bucket to automatically trigger a Lambda fun
 
 Resource policies are also vital for enabling cross-account interactions. If a user or service in one AWS account needs to invoke a Lambda function in another account, a proper resource policy must authorize this cross-account access.
 
-![The image illustrates a resource policy where an S3 bucket in AWS Account A allows invocation of a Lambda function in AWS Account B.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859604/notes-assets/images/AWS-Certified-Developer-Associate-Permissions-Resource-Policies/s3-bucket-lambda-invocation-policy.jpg)
+![The image illustrates a resource policy where an S3 bucket in AWS Account A allows invocation of a Lambda function in AWS Account B.](https://kodekloud.com/kk-media/image/upload/v1752859604/notes-assets/images/AWS-Certified-Developer-Associate-Permissions-Resource-Policies/s3-bucket-lambda-invocation-policy.jpg)
 
 > **lightbulb** Ensure that both execution roles and resource policies are configured correctly to maintain security while enabling the required interactions among AWS services.
 

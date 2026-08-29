@@ -19,9 +19,7 @@ $ readlink family_dog_shortcut.jpg
 /home/aaron/Pictures/family_dog.jpg
 ```
 
-<Callout icon="lightbulb">
-  Although the soft link appears to have full permission bits (rwx), these permissions are not actually enforced. Instead, the permissions of the destination file or directory determine access rights.
-</Callout>
+> **lightbulb** Although the soft link appears to have full permission bits (rwx), these permissions are not actually enforced. Instead, the permissions of the destination file or directory determine access rights.
 
 For example, if you attempt to redirect output to a soft link that points to a protected file (such as `/etc/fstab`), the operation will be denied:
 
@@ -41,15 +39,11 @@ To prevent this issue, consider creating a soft link with a relative path if you
 
 Soft links can also be created for directories or for files and directories located on different file systems.
 
-<Frame>
-  ![The image is a diagram explaining soft links, showing how they can link to files and folders, including across different filesystems. It includes visual representations of files and folders with arrows indicating the links.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881236/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-and-Manage-Soft-Links/soft-links-diagram-files-folders.jpg)
-</Frame>
+![The image is a diagram explaining soft links, showing how they can link to files and folders, including across different filesystems. It includes visual representations of files and folders with arrows indicating the links.](https://kodekloud.com/kk-media/image/upload/v1752881236/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-and-Manage-Soft-Links/soft-links-diagram-files-folders.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/a4c5ddb8-e9dc-41f4-865c-51f49e995f33" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/a4c5ddb8-e9dc-41f4-865c-51f49e995f33)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/495e559c-1315-45d4-9f65-48c4cdf39d15" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/495e559c-1315-45d4-9f65-48c4cdf39d15)
 
 
 # Extended Regular Expressions
@@ -60,9 +54,7 @@ This article explains how to use extended regular expressions with grep to simpl
 
 Extended regular expressions (ERE) simplify pattern matching by reducing the need for escaping special characters. When using ERE with grep (via the -E option or its alias, egrep), most special characters are interpreted as regex operators by default. You only need to escape them when you want them treated as literal characters.
 
-<Callout icon="lightbulb">
-  Use ERE with grep by using the uppercase -E flag or the egrep command to simplify your regular expressions and avoid common pitfalls with escaping characters.
-</Callout>
+> **lightbulb** Use ERE with grep by using the uppercase -E flag or the egrep command to simplify your regular expressions and avoid common pitfalls with escaping characters.
 
 ## Basic Usage with grep
 
@@ -195,14 +187,10 @@ This command will return lines where the character following `/` does not fall w
 
 Regular expressions provide a powerful, precise method for text searching and manipulation. By mastering regex operators, ranges, sets, and grouping, you can craft expressions tailored to your needs.
 
-<Callout icon="lightbulb">
-  Explore online tools such as [regexr.com](https://regexr.com) to experiment with and validate your regular expressions. Additionally, refer to the [grep documentation](https://www.gnu.org/software/grep/manual/grep.html) for more detailed information.
-</Callout>
+> **lightbulb** Explore online tools such as [regexr.com](https://regexr.com) to experiment with and validate your regular expressions. Additionally, refer to the [grep documentation](https://www.gnu.org/software/grep/manual/grep.html) for more detailed information.
 
 Happy grepping!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/45ca77f0-79a8-430e-97bd-9558d6f2d640" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/45ca77f0-79a8-430e-97bd-9558d6f2d640)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/2f83b86d-f3a9-405f-baf1-7ee6d12b1267" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/2f83b86d-f3a9-405f-baf1-7ee6d12b1267)

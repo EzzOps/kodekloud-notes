@@ -14,11 +14,11 @@ At its core, cost optimization is about generating significant business impact f
 
 To achieve substantial business value in the cloud, investing in cloud financial management is essential. This practice involves dedicating time and resources to understand and manage cloud expenditures distinctly from traditional data center finances. Establish comprehensive reporting, set up automated alarms, and streamline processes to monitor spending effectively.
 
-![The image is a diagram titled "Implement Cloud Financial Management," showing a person managing three elements: Cloud, Money, and Server, each represented by icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863495/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Costs/implement-cloud-financial-management-diagram.jpg)
+![The image is a diagram titled "Implement Cloud Financial Management," showing a person managing three elements: Cloud, Money, and Server, each represented by icons.](https://kodekloud.com/kk-media/image/upload/v1752863495/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Costs/implement-cloud-financial-management-diagram.jpg)
 
 Ensure that every team is responsible for managing costs, not just the finance department. This collaborative approach can significantly enhance the efficiency and transparency of your financial operations.
 
-![The image is a diagram about implementing cloud financial management, highlighting the need to track finances and make it a responsibility for all teams. It includes icons for managing cloud, money, and server resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863496/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Costs/cloud-financial-management-diagram.jpg)
+![The image is a diagram about implementing cloud financial management, highlighting the need to track finances and make it a responsibility for all teams. It includes icons for managing cloud, money, and server resources.](https://kodekloud.com/kk-media/image/upload/v1752863496/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Costs/cloud-financial-management-diagram.jpg)
 
 > **lightbulb** Remember: Empowering all teams with cost management responsibilities ensures better tracking and efficiency.
 
@@ -36,7 +36,7 @@ Consider using dashboards and reports to monitor these metrics in real time, hel
 
 A consumption-based model means paying only for the resources you actually use. Instead of keeping non-production environments running 24/7, schedule them based on real business needs—for example, operating them only during business hours can cut costs significantly.
 
-![The image is a slide titled "Adopt a Consumption Model," with bullet points about resource management and a colorful timeline showing days of the week.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863497/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Costs/adopt-consumption-model-resource-management.jpg)
+![The image is a slide titled "Adopt a Consumption Model," with bullet points about resource management and a colorful timeline showing days of the week.](https://kodekloud.com/kk-media/image/upload/v1752863497/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Costs/adopt-consumption-model-resource-management.jpg)
 
 Even if your resources store persistent data, you can pause the compute component to lower costs and resume it when needed. Incorporating event-driven architectures or spot consumption models with infrastructure as code can further optimize resource management.
 
@@ -48,7 +48,7 @@ Even if your resources store persistent data, you can pause the compute componen
 
 Offload routine IT tasks to your cloud provider to concentrate on aspects that add unique value to your business. AWS, for example, offers managed services for common operations, enabling your teams to focus on differentiating and core business functions.
 
-![The image is a slide advising businesses to focus on unique aspects rather than common IT problems, using a dog and unicorn metaphor to illustrate the point. It suggests letting AWS handle standard issues so businesses can concentrate on differentiation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863499/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Costs/unique-aspects-business-advice-dog-unicorn.jpg)
+![The image is a slide advising businesses to focus on unique aspects rather than common IT problems, using a dog and unicorn metaphor to illustrate the point. It suggests letting AWS handle standard issues so businesses can concentrate on differentiation.](https://kodekloud.com/kk-media/image/upload/v1752863499/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Costs/unique-aspects-business-advice-dog-unicorn.jpg)
 
 This approach not only reduces operational overhead but also leverages the expertise of cloud service providers in handling routine tasks.
 
@@ -72,7 +72,7 @@ Detailed billing data from AWS (and similar cloud providers) empowers you to ana
 | Stop Spending on Undifferentiated Heavy Lifting | Delegate routine tasks to the cloud provider       | Increased focus on strategic, business-critical functions       |
 | Analyze and Attribute Every Expenditure         | Detailed billing analysis and cost attribution     | Data-driven decision-making for resource scaling                |
 
-![The image is a summary slide outlining four design principles related to cost optimization, including adopting a consumption model and tracking expenditures. It emphasizes that these principles help solve requirements but will not be on the exam.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863500/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Costs/cost-optimization-design-principles-summary.jpg)
+![The image is a summary slide outlining four design principles related to cost optimization, including adopting a consumption model and tracking expenditures. It emphasizes that these principles help solve requirements but will not be on the exam.](https://kodekloud.com/kk-media/image/upload/v1752863500/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Costs/cost-optimization-design-principles-summary.jpg)
 
 ***
 

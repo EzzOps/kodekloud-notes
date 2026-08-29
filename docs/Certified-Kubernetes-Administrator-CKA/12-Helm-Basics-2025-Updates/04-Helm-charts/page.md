@@ -97,11 +97,11 @@ Beyond our basic examples, Helm charts are available for a wide range of applica
 
 Instead of visiting multiple repositories separately, you can use the centralized [Artifact Hub](https://artifacthub.io) to search for and manage charts. Artifact Hub currently features over 6,300 packages and highlights charts published by official developers with verified publisher badges for added trustworthiness.
 
-![The image is a diagram showing Helm repositories connected to ArtifactHub.io, with nodes labeled Appscode, Community Operators, TrueCharts, and Bitnami.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869781/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Helm-Components/helm-repositories-artifacthub-diagram.jpg)
+![The image is a diagram showing Helm repositories connected to ArtifactHub.io, with nodes labeled Appscode, Community Operators, TrueCharts, and Bitnami.](https://kodekloud.com/kk-media/image/upload/v1752869781/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Helm-Components/helm-repositories-artifacthub-diagram.jpg)
 
 Artifact Hub also provides a searchable interface to help you quickly find the charts you need:
 
-![The image shows a webpage from ArtifactHUB displaying search results for Helm repositories, including "kube-prometheus-stack" and "ingress-nginx," with filters and options on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869782/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Helm-Components/artifacthub-helm-repositories-search.jpg)
+![The image shows a webpage from ArtifactHUB displaying search results for Helm repositories, including "kube-prometheus-stack" and "ingress-nginx," with filters and options on the left.](https://kodekloud.com/kk-media/image/upload/v1752869782/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Helm-Components/artifacthub-helm-repositories-search.jpg)
 
 > **lightbulb** In upcoming lessons, we will explore chart installation and customization in greater detail. Continue following our guide to deepen your knowledge of the practical applications of Helm in Kubernetes.
 

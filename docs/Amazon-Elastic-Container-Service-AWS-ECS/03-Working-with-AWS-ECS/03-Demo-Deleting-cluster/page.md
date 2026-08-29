@@ -10,7 +10,7 @@ In this lesson, you'll learn how to delete all resources in your Amazon ECS envi
 
 First, navigate to your default cluster and locate the active service you want to remove.
 
-![The image shows an AWS ECS console displaying details of a cluster named "default," with one active service called "ecs-project1-service" running on Fargate.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869159/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-Demo-Deleting-cluster/aws-ecs-console-default-cluster.jpg)
+![The image shows an AWS ECS console displaying details of a cluster named "default," with one active service called "ecs-project1-service" running on Fargate.](https://kodekloud.com/kk-media/image/upload/v1752869159/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-Demo-Deleting-cluster/aws-ecs-console-default-cluster.jpg)
 
 Select the desired service and initiate the deletion process. When the system prompts you for confirmation, type "delete me" in the provided text box. The deletion process may take a few seconds. You should see that all corresponding tasks are automatically terminated; if any tasks remain running, you can delete them manually.
 
@@ -20,11 +20,11 @@ Select the desired service and initiate the deletion process. When the system pr
 
 Once the service has been removed, return to the default cluster view to delete the cluster itself.
 
-![The image shows a confirmation dialog for deleting a cluster in a cloud management interface, with a progress bar indicating the deletion of resources and a text box to confirm the action by typing "delete me."](../../../../images/kodekloud.com/kk-media/image/upload/v1752869160/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-Demo-Deleting-cluster/delete-cluster-confirmation-dialog.jpg)
+![The image shows a confirmation dialog for deleting a cluster in a cloud management interface, with a progress bar indicating the deletion of resources and a text box to confirm the action by typing "delete me."](https://kodekloud.com/kk-media/image/upload/v1752869160/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-Demo-Deleting-cluster/delete-cluster-confirmation-dialog.jpg)
 
 Confirm the deletion, and the cluster removal will begin. You will receive a confirmation message once the process is complete.
 
-![The image shows an Amazon ECS (Elastic Container Service) dashboard with a notification indicating that a cluster was deleted successfully. There are no clusters currently found, and options to create a new cluster or get started are available.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869162/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-Demo-Deleting-cluster/amazon-ecs-dashboard-cluster-deleted.jpg)
+![The image shows an Amazon ECS (Elastic Container Service) dashboard with a notification indicating that a cluster was deleted successfully. There are no clusters currently found, and options to create a new cluster or get started are available.](https://kodekloud.com/kk-media/image/upload/v1752869162/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-Demo-Deleting-cluster/amazon-ecs-dashboard-cluster-deleted.jpg)
 
 ## Completion
 

@@ -14,9 +14,7 @@ SELECT * FROM products;
 
 To handle large datasets efficiently, it's crucial to limit the number of rows returned in a query. This not only improves performance but also reduces the load on your infrastructure.
 
-<Callout icon="lightbulb">
-  When working with vast amounts of data, always consider fetching only the necessary subset of rows rather than the complete dataset.
-</Callout>
+> **lightbulb** When working with vast amounts of data, always consider fetching only the necessary subset of rows rather than the complete dataset.
 
 ## Using the LIMIT Keyword
 
@@ -70,10 +68,6 @@ SELECT * FROM products ORDER BY id LIMIT 5 OFFSET 5;
 
 This combination of LIMIT and OFFSET is particularly useful for developing APIs that support pagination, as it provides precise control over the data subset returned in each query.
 
-<Callout icon="lightbulb">
-  Using LIMIT and OFFSET together helps you efficiently manage and paginate large datasets by retrieving only the necessary subset of rows.
-</Callout>
+> **lightbulb** Using LIMIT and OFFSET together helps you efficiently manage and paginate large datasets by retrieving only the necessary subset of rows.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/5bfa4f01-8910-4416-bebf-52d4fa7d88e6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/5bfa4f01-8910-4416-bebf-52d4fa7d88e6)

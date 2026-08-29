@@ -112,9 +112,7 @@ Do you want to perform this update? no
 confirmation declined, not proceeding with the update
 ```
 
-<Callout icon="lightbulb">
-  Pulumi enforces that the deployed infrastructure always aligns with the configuration declared in your code, updating resources only when discrepancies occur.
-</Callout>
+> **lightbulb** Pulumi enforces that the deployed infrastructure always aligns with the configuration declared in your code, updating resources only when discrepancies occur.
 
 ## Summary
 
@@ -122,9 +120,7 @@ This lesson demonstrated the process of creating, deploying, and managing an AWS
 
 For further reading on managing cloud infrastructure with Pulumi, be sure to explore the [Pulumi Documentation](https://www.pulumi.com/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pulumi-essentials/module/883d8d6f-c8be-44af-ac4d-ba0835d32f5d/lesson/4e991c27-8737-48e5-a28c-85adc8f1f8df" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pulumi-essentials/module/883d8d6f-c8be-44af-ac4d-ba0835d32f5d/lesson/4e991c27-8737-48e5-a28c-85adc8f1f8df)
 
 
 # Pulumi Installation
@@ -203,9 +199,7 @@ aws_secret_access_key = <YOUR_SECRET_ACCESS_KEY>
 
 Pulumi will automatically use this configuration to authenticate with AWS.
 
-<Callout icon="lightbulb">
-  Choose the configuration method that best fits your workflow. Environment variables offer quick setup for temporary sessions, while the AWS CLI configuration provides a persistent setup across sessions.
-</Callout>
+> **lightbulb** Choose the configuration method that best fits your workflow. Environment variables offer quick setup for temporary sessions, while the AWS CLI configuration provides a persistent setup across sessions.
 
 Happy deploying with Pulumi!
 
@@ -214,6 +208,4 @@ Happy deploying with Pulumi!
 * [Pulumi Documentation](https://www.pulumi.com/docs/)
 * [AWS CLI Configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pulumi-essentials/module/883d8d6f-c8be-44af-ac4d-ba0835d32f5d/lesson/8ab53585-2454-4046-ba5a-3c5ca780c8f7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pulumi-essentials/module/883d8d6f-c8be-44af-ac4d-ba0835d32f5d/lesson/8ab53585-2454-4046-ba5a-3c5ca780c8f7)

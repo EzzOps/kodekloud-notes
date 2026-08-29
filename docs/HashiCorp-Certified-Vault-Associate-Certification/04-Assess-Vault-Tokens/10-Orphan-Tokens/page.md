@@ -18,9 +18,7 @@ These examples demonstrate how easy it is to switch from the UI to scripted work
 * [Vault Authentication Methods](https://www.vaultproject.io/docs/auth)
 * [Vault CLI Documentation](https://www.vaultproject.io/docs/commands)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/a5ce78d5-1851-4f25-a69b-2fe15446ae3c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/a5ce78d5-1851-4f25-a69b-2fe15446ae3c)
 
 
 # Orphan Tokens
@@ -38,9 +36,7 @@ Orphan tokens in HashiCorp Vault provide an independent authentication credentia
 | Child Token  | Linked              | Expires automatically when its parent token expires.    |
 | Orphan Token | Unlinked            | Expires only when its own TTL elapses or isn’t renewed. |
 
-<Callout icon="lightbulb">
-  Orphan tokens can still be revoked manually or automatically when their own `max_ttl` is reached. Make sure to configure TTL settings according to your security requirements.
-</Callout>
+> **lightbulb** Orphan tokens can still be revoked manually or automatically when their own `max_ttl` is reached. Make sure to configure TTL settings according to your security requirements.
 
 ## Required Privileges
 
@@ -52,9 +48,7 @@ path "auth/token/create-orphan" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Creating orphan tokens typically requires a root token or a token with elevated `sudo` privileges. Use with caution to avoid unintended privilege escalation.
-</Callout>
+> **triangle-alert** Creating orphan tokens typically requires a root token or a token with elevated `sudo` privileges. Use with caution to avoid unintended privilege escalation.
 
 ## Creating an Orphan Token
 
@@ -100,6 +94,4 @@ The `orphan = true` field confirms the token is not part of the parent–child h
 * [Token Authentication](https://www.vaultproject.io/docs/concepts/auth)
 * [HCL Syntax Guide](https://github.com/hashicorp/hcl)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/e1272f3e-9fd3-4465-ab72-f9c0709339e8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/e1272f3e-9fd3-4465-ab72-f9c0709339e8)

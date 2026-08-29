@@ -179,9 +179,7 @@ Interpretation:
   * For example, the count for a 75ms bucket includes observations from the 0, 5, 10, 25, 50, and 75ms buckets.
 * Use min/max to quickly spot extreme values.
 
-<Callout icon="warning">
-  Make sure `request.start_time` is set before `after_request` tries to compute latency. If your app raises an exception and `after_request` doesn't run, consider registering `teardown_request` or an exception handler to ensure counters are adjusted and latencies are recorded or cleaned up appropriately.
-</Callout>
+> **warning** Make sure `request.start_time` is set before `after_request` tries to compute latency. If your app raises an exception and `after_request` doesn't run, consider registering `teardown_request` or an exception handler to ensure counters are adjusted and latencies are recorded or cleaned up appropriately.
 
 ## Customizing histogram buckets
 
@@ -252,9 +250,7 @@ Table: Example bucket sets and when to use them
 
 Choose bucket boundaries that give you actionable visibility into the distribution of latency for your traffic patterns.
 
-<Callout icon="lightbulb">
-  When recording histogram values, ensure the recorded unit matches the histogram unit. This example records latencies in milliseconds because the histogram's `unit` is set to `"ms"`.
-</Callout>
+> **lightbulb** When recording histogram values, ensure the recorded unit matches the histogram unit. This example records latencies in milliseconds because the histogram's `unit` is set to `"ms"`.
 
 ## Quick troubleshooting & tips
 
@@ -272,9 +268,7 @@ Choose bucket boundaries that give you actionable visibility into the distributi
 
 This guide gives you a straightforward way to add histograms to your Flask app, select bucket boundaries that align with your service's performance, and surface useful latency distributions for troubleshooting and alerting.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/eab44858-b688-4e74-b600-1cfd59195020" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/eab44858-b688-4e74-b600-1cfd59195020)
 
 
 # Demo Metrics Instrumentation

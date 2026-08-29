@@ -43,7 +43,7 @@ Post-triggers execute after an item has been created or modified and are ideal f
 
 UDFs extend the query capabilities within SQL queries by allowing you to embed custom logic. For instance, you can create a UDF to check if an airport belongs to a specific country. The diagram below summarizes key concepts for pre-triggers, post-triggers, and user-defined functions in Azure Cosmos DB:
 
-![The image explains the concepts of pre-triggers, post-triggers, and user-defined functions in Azure Cosmos DB. It describes when each is executed and their specific uses in database operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866793/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Creating-Triggers-and-User-Defined-Functions/azure-cosmos-db-triggers-functions.jpg)
+![The image explains the concepts of pre-triggers, post-triggers, and user-defined functions in Azure Cosmos DB. It describes when each is executed and their specific uses in database operations.](https://kodekloud.com/kk-media/image/upload/v1752866793/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Creating-Triggers-and-User-Defined-Functions/azure-cosmos-db-triggers-functions.jpg)
 
 Below is an example UDF to determine if an airport is in the United States:
 
@@ -121,7 +121,7 @@ Here is an example document post pre-trigger execution:
 
 The structured query results in the Azure portal make it easy to verify the trigger execution without relying solely on visual cues.
 
-![The image shows the Microsoft Azure Data Explorer interface, displaying a query on a Cosmos DB account with navigation options on the left and a query editor on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866794/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Creating-Triggers-and-User-Defined-Functions/azure-data-explorer-cosmosdb-query.jpg)
+![The image shows the Microsoft Azure Data Explorer interface, displaying a query on a Cosmos DB account with navigation options on the left and a query editor on the right.](https://kodekloud.com/kk-media/image/upload/v1752866794/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Creating-Triggers-and-User-Defined-Functions/azure-data-explorer-cosmosdb-query.jpg)
 
 Below is a complete C# example demonstrating the process of specifying a pre-trigger during item creation:
 

@@ -41,7 +41,7 @@ Desktop/kodek loud/my-inventory via 🐹 v1.19.3
 
 After verifying that your API server is functioning correctly, the next step is to create a new repository on GitHub. In our example, the repository is named "my-inventory". The screenshot below shows the GitHub interface when creating a new repository:
 
-![The image shows a GitHub page for creating a new repository, with fields for the repository name, description, and visibility options. The repository name "my-inventory" is available.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868693/notes-assets/images/Advanced-Golang-CICD-pipeline-for-Go-app-with-Github-actions-and-docker/github-new-repository-my-inventory.jpg)
+![The image shows a GitHub page for creating a new repository, with fields for the repository name, description, and visibility options. The repository name "my-inventory" is available.](https://kodekloud.com/kk-media/image/upload/v1752868693/notes-assets/images/Advanced-Golang-CICD-pipeline-for-Go-app-with-Github-actions-and-docker/github-new-repository-my-inventory.jpg)
 
 For this demonstration, set the repository to public and copy its URL. Then, open the terminal and execute the following commands to initialize the repository locally:
 
@@ -96,7 +96,7 @@ git push origin master
 
 View the repository on GitHub using the following screenshot:
 
-![The image shows a GitHub repository named "my-inventory" by a user, displaying several Go language files with an initial version commit. The repository has no stars, forks, or description provided.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868694/notes-assets/images/Advanced-Golang-CICD-pipeline-for-Go-app-with-Github-actions-and-docker/github-repo-my-inventory-go-files.jpg)
+![The image shows a GitHub repository named "my-inventory" by a user, displaying several Go language files with an initial version commit. The repository has no stars, forks, or description provided.](https://kodekloud.com/kk-media/image/upload/v1752868694/notes-assets/images/Advanced-Golang-CICD-pipeline-for-Go-app-with-Github-actions-and-docker/github-repo-my-inventory-go-files.jpg)
 
 ***
 
@@ -115,7 +115,7 @@ touch .github/workflows/ci.yaml
 
 Open `ci.yaml` using your preferred editor, and begin by defining the workflow name along with the trigger events.
 
-![The image shows a code editor with a project directory open, displaying a YAML file being edited. The terminal at the bottom shows Git commands being executed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868695/notes-assets/images/Advanced-Golang-CICD-pipeline-for-Go-app-with-Github-actions-and-docker/code-editor-yaml-git-commands.jpg)
+![The image shows a code editor with a project directory open, displaying a YAML file being edited. The terminal at the bottom shows Git commands being executed.](https://kodekloud.com/kk-media/image/upload/v1752868695/notes-assets/images/Advanced-Golang-CICD-pipeline-for-Go-app-with-Github-actions-and-docker/code-editor-yaml-git-commands.jpg)
 
 Below is an example workflow configuration file that sets up MySQL, checks out your repository code, sets up Go, performs linting, and runs tests:
 
@@ -171,7 +171,7 @@ $ git commit -m "Changed workflow file location"
 $ git push origin master
 ```
 
-![The image shows a GitHub Actions page for a repository named "my-inventory," where a workflow file location change has triggered a continuous integration job that is currently queued.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868696/notes-assets/images/Advanced-Golang-CICD-pipeline-for-Go-app-with-Github-actions-and-docker/github-actions-my-inventory-ci-job.jpg)
+![The image shows a GitHub Actions page for a repository named "my-inventory," where a workflow file location change has triggered a continuous integration job that is currently queued.](https://kodekloud.com/kk-media/image/upload/v1752868696/notes-assets/images/Advanced-Golang-CICD-pipeline-for-Go-app-with-Github-actions-and-docker/github-actions-my-inventory-ci-job.jpg)
 
 ***
 
@@ -206,7 +206,7 @@ PASS
 ok      example.com/my-inventory       0.046s
 ```
 
-![The image shows a GitHub Actions interface with a successful continuous integration workflow run, detailing steps like setting up MySQL, checking out code, and running tests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868697/notes-assets/images/Advanced-Golang-CICD-pipeline-for-Go-app-with-Github-actions-and-docker/github-actions-ci-workflow-success.jpg)
+![The image shows a GitHub Actions interface with a successful continuous integration workflow run, detailing steps like setting up MySQL, checking out code, and running tests.](https://kodekloud.com/kk-media/image/upload/v1752868697/notes-assets/images/Advanced-Golang-CICD-pipeline-for-Go-app-with-Github-actions-and-docker/github-actions-ci-workflow-success.jpg)
 
 ***
 

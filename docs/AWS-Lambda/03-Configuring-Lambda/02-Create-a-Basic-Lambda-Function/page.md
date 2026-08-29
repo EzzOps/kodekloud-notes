@@ -16,7 +16,7 @@ In this tutorial, you’ll learn how to create, deploy, and test a simple AWS La
 1. Sign in to the [AWS Management Console](https://console.aws.amazon.com/).
 2. In the search bar, type **Lambda** and select **AWS Lambda**.
 
-![The image shows the AWS Management Console with a search for "lamb" displaying services like AWS Lambda, CodeBuild, and AWS Signer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863119/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function/aws-management-console-lambda-services.jpg)
+![The image shows the AWS Management Console with a search for "lamb" displaying services like AWS Lambda, CodeBuild, and AWS Signer.](https://kodekloud.com/kk-media/image/upload/v1752863119/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function/aws-management-console-lambda-services.jpg)
 
 ## 2. Create a New Function
 
@@ -27,11 +27,11 @@ In this tutorial, you’ll learn how to create, deploy, and test a simple AWS La
 5. Under **Permissions**, leave the default to let AWS create a new IAM role with basic Lambda permissions.
 6. Click **Create function**.
 
-![The image shows a screenshot of the AWS Lambda console, where a user is configuring a function with Python 3.7, selecting architecture options, and setting permissions for execution roles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863120/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function/aws-lambda-console-python37-function-config.jpg)
+![The image shows a screenshot of the AWS Lambda console, where a user is configuring a function with Python 3.7, selecting architecture options, and setting permissions for execution roles.](https://kodekloud.com/kk-media/image/upload/v1752863120/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function/aws-lambda-console-python37-function-config.jpg)
 
 Once provisioning is complete, you’ll see the function’s configuration page:
 
-![The image shows an AWS Lambda console with a function named "myfirstfunction" displayed. The interface includes options for testing, monitoring, configuration, aliases, and versions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863121/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function/aws-lambda-console-myfirstfunction.jpg)
+![The image shows an AWS Lambda console with a function named "myfirstfunction" displayed. The interface includes options for testing, monitoring, configuration, aliases, and versions.](https://kodekloud.com/kk-media/image/upload/v1752863121/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function/aws-lambda-console-myfirstfunction.jpg)
 
 ## 3. Add and Deploy Your Code
 
@@ -67,7 +67,7 @@ Click **Deploy** to save your changes.
 
 A successful run will display the output `"Success"` and execution details:
 
-![The image shows an AWS Lambda console with a successful execution result for a test event. It includes options to create or edit a test event and displays JSON formatting options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863122/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function/aws-lambda-console-successful-execution.jpg)
+![The image shows an AWS Lambda console with a successful execution result for a test event. It includes options to create or edit a test event and displays JSON formatting options.](https://kodekloud.com/kk-media/image/upload/v1752863122/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function/aws-lambda-console-successful-execution.jpg)
 
 ### Review CloudWatch Logs
 

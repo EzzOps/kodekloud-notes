@@ -25,7 +25,7 @@ To create a username parameter:
 7. Optionally, add tags.
 8. Click **Create parameter**.
 
-![The image shows the AWS Systems Manager interface for creating a parameter, with fields for name, description, tier selection, and type options. The left sidebar displays various management options like Operations Management and Application Management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859392/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store-Demo/aws-systems-manager-parameter-interface.jpg)
+![The image shows the AWS Systems Manager interface for creating a parameter, with fields for name, description, tier selection, and type options. The left sidebar displays various management options like Operations Management and Application Management.](https://kodekloud.com/kk-media/image/upload/v1752859392/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store-Demo/aws-systems-manager-parameter-interface.jpg)
 
 After creation, you can view the parameter details, including its type and value.
 
@@ -39,7 +39,7 @@ To securely store a password:
 4. Set the value (for example, `password123-dev`).
 5. Click **Create parameter**.
 
-![The image shows the AWS Systems Manager Parameter Store interface, where a user is creating a parameter with the path "/backend/dev/db/password." Options for parameter tier and type are also visible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859394/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store-Demo/aws-systems-manager-parameter-store-2.jpg)
+![The image shows the AWS Systems Manager Parameter Store interface, where a user is creating a parameter with the path "/backend/dev/db/password." Options for parameter tier and type are also visible.](https://kodekloud.com/kk-media/image/upload/v1752859394/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store-Demo/aws-systems-manager-parameter-store-2.jpg)
 
 By clicking on the new parameter, you can view its details. For **SecureString** parameters, the value remains hidden by default unless you select "Show decrypted values" (provided you have the appropriate permissions).
 
@@ -50,11 +50,11 @@ For production, create similar parameters:
 1. Create a parameter for the production username (e.g., `/backend/prod/db/username`) using the **String** type.
 2. Create a parameter for the production password (e.g., `/backend/prod/db/password`) as a **SecureString** using the AWS managed key.
 
-![The image shows the AWS Systems Manager console where a user is creating a parameter with options for tier, type, and value input.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859395/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store-Demo/aws-systems-manager-parameter-creation.jpg)
+![The image shows the AWS Systems Manager console where a user is creating a parameter with options for tier, type, and value input.](https://kodekloud.com/kk-media/image/upload/v1752859395/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store-Demo/aws-systems-manager-parameter-creation.jpg)
 
 After setting up the production parameters, you can use AWS Identity and Access Management (IAM) policies to control access. For example, you can grant the back-end team access to paths starting with `/backend` and restrict development and production teams to `/backend/dev` and `/backend/prod` respectively.
 
-![The image shows the AWS Systems Manager Parameter Store interface, displaying a list of parameters with details such as name, tier, type, and last modified date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859396/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store-Demo/aws-parameter-store-interface-details.jpg)
+![The image shows the AWS Systems Manager Parameter Store interface, displaying a list of parameters with details such as name, tier, type, and last modified date.](https://kodekloud.com/kk-media/image/upload/v1752859396/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store-Demo/aws-parameter-store-interface-details.jpg)
 
 ## Retrieving Parameters Using the AWS CLI
 

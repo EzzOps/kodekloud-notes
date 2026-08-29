@@ -18,7 +18,7 @@ Traffic originating from a source normally travels directly to its destination. 
 
 Below is an illustration that explains this network flow:
 
-![The image illustrates a network flow diagram for a Gateway Load Balancer, showing the path from a source to a destination through a Gateway Load Balancer Endpoint, a Gateway Load Balancer, and appliances using the Geneve protocol.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859084/notes-assets/images/AWS-Certified-Developer-Associate-Gateway-Load-Balancer/gateway-load-balancer-network-flow-diagram.jpg)
+![The image illustrates a network flow diagram for a Gateway Load Balancer, showing the path from a source to a destination through a Gateway Load Balancer Endpoint, a Gateway Load Balancer, and appliances using the Geneve protocol.](https://kodekloud.com/kk-media/image/upload/v1752859084/notes-assets/images/AWS-Certified-Developer-Associate-Gateway-Load-Balancer/gateway-load-balancer-network-flow-diagram.jpg)
 
 > **lightbulb** The Gateway Load Balancer operates as a transparent, layer three load balancer, making it simple to add network appliances into your AWS environment without the need for specialized routing modifications.
 
@@ -45,13 +45,13 @@ The same process applies to outgoing (egress) traffic from your application.
 
 The following infographic summarizes the key features of the Gateway Load Balancer:
 
-![The image is an infographic titled "Gateway Load Balancer" that outlines five features: Layer-3 Load Balancer, Simplified insertion of network appliances, Transparent network gateway, Elastic scaling, and Endpoint services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859085/notes-assets/images/AWS-Certified-Developer-Associate-Gateway-Load-Balancer/gateway-load-balancer-infographic.jpg)
+![The image is an infographic titled "Gateway Load Balancer" that outlines five features: Layer-3 Load Balancer, Simplified insertion of network appliances, Transparent network gateway, Elastic scaling, and Endpoint services.](https://kodekloud.com/kk-media/image/upload/v1752859085/notes-assets/images/AWS-Certified-Developer-Associate-Gateway-Load-Balancer/gateway-load-balancer-infographic.jpg)
 
 ## Ingress Traffic Flow
 
 The next diagram demonstrates the flow of ingress traffic. In this configuration, traffic from the internet is directed to a Gateway Load Balancer endpoint, passes through the load balancer, is inspected by security appliances, and finally reaches the application servers within the VPC.
 
-![The image is a diagram illustrating the flow of ingress traffic through a Gateway Load Balancer setup, showing connections between the internet, a Gateway Load Balancer Endpoint, a Gateway Load Balancer, security appliances, and application servers within VPCs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859087/notes-assets/images/AWS-Certified-Developer-Associate-Gateway-Load-Balancer/ingress-traffic-gateway-load-balancer-diagram.jpg)
+![The image is a diagram illustrating the flow of ingress traffic through a Gateway Load Balancer setup, showing connections between the internet, a Gateway Load Balancer Endpoint, a Gateway Load Balancer, security appliances, and application servers within VPCs.](https://kodekloud.com/kk-media/image/upload/v1752859087/notes-assets/images/AWS-Certified-Developer-Associate-Gateway-Load-Balancer/ingress-traffic-gateway-load-balancer-diagram.jpg)
 
 ## Egress Traffic Flow
 
@@ -62,7 +62,7 @@ For outbound traffic, a similar process takes place:
 3. Once approved, the appliance returns the data to the load balancer.
 4. The load balancer then routes the traffic to the internet gateway.
 
-![The image illustrates the flow of egress traffic through a gateway load balancer setup, showing connections between application servers, a gateway load balancer endpoint, a security appliance, and the internet. It includes labeled steps indicating the traffic path within a VPC environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859088/notes-assets/images/AWS-Certified-Developer-Associate-Gateway-Load-Balancer/egress-traffic-gateway-load-balancer.jpg)
+![The image illustrates the flow of egress traffic through a gateway load balancer setup, showing connections between application servers, a gateway load balancer endpoint, a security appliance, and the internet. It includes labeled steps indicating the traffic path within a VPC environment.](https://kodekloud.com/kk-media/image/upload/v1752859088/notes-assets/images/AWS-Certified-Developer-Associate-Gateway-Load-Balancer/egress-traffic-gateway-load-balancer.jpg)
 
 ## Summary
 

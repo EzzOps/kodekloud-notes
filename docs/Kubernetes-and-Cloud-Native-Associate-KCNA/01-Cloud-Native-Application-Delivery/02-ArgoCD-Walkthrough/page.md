@@ -6,9 +6,7 @@ This guide explores the Argo CD user interface and demonstrates integrating a Ku
 
 In this guide, we will explore the Argo CD user interface and demonstrate how to integrate your Kubernetes manifest repository with Argo CD for continuous deployment.
 
-<Callout icon="lightbulb">
-  Ensure that Argo CD is installed and you are logged into the UI. For installation and configuration details, refer to our [BA - Gitops with Argo CD](https://learn.kodekloud.com/user/courses/bah-gitops-workshop) course.
-</Callout>
+> **lightbulb** Ensure that Argo CD is installed and you are logged into the UI. For installation and configuration details, refer to our [BA - Gitops with Argo CD](https://learn.kodekloud.com/user/courses/bah-gitops-workshop) course.
 
 ## Creating a New Application
 
@@ -53,6 +51,4 @@ For further reading and related resources, visit:
 
 Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/7221af3a-169a-4c55-bc00-b7b40e1dceda/lesson/4ee7d9b2-7632-4060-bc0b-a950a191f978" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/7221af3a-169a-4c55-bc00-b7b40e1dceda/lesson/4ee7d9b2-7632-4060-bc0b-a950a191f978)

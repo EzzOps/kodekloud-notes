@@ -112,9 +112,7 @@ curl: (56) Recv failure: Connection reset by peer
 
 This happens because `default` now requires mTLS. Only traffic routed through an Istio sidecar (Envoy) can satisfy that requirement — and the `test` pod currently has no sidecar.
 
-<Callout icon="warning">
-  Applying a `PeerAuthentication` with `mtls: STRICT` enforces mutual TLS for all workloads in the target namespace. Clients without an Envoy sidecar will fail to connect until they are inside an injected namespace or a policy allows plaintext.
-</Callout>
+> **warning** Applying a `PeerAuthentication` with `mtls: STRICT` enforces mutual TLS for all workloads in the target namespace. Clients without an Envoy sidecar will fail to connect until they are inside an injected namespace or a policy allows plaintext.
 
 ***
 
@@ -326,12 +324,10 @@ kubectl apply -f sidecar_default_namespace.yaml
 
 ## References and further reading
 
-<Callout icon="lightbulb">
-  Helpful resources:
+> **lightbulb** Helpful resources:
 
   * Istio Sidecar reference: [https://istio.io/latest/docs/reference/config/networking/sidecar/](https://istio.io/latest/docs/reference/config/networking/sidecar/)
   * Istio PeerAuthentication reference: [https://istio.io/latest/docs/reference/config/security/peer\_authentication/](https://istio.io/latest/docs/reference/config/security/peer_authentication/)
-</Callout>
 
 ***
 
@@ -344,11 +340,9 @@ kubectl apply -f sidecar_default_namespace.yaml
 
 Next up: VirtualServices and traffic routing.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/22d5c51f-0040-4a81-9b18-e129f8a1d3ba" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/22d5c51f-0040-4a81-9b18-e129f8a1d3ba)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/c60cca75-b26e-4899-89b2-38a99c2f8a5a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/c60cca75-b26e-4899-89b2-38a99c2f8a5a)
 
 
 # Demo Virtual Services

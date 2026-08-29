@@ -6,7 +6,7 @@ Azure Automation Desired State Configuration (DSC) automates system configuratio
 
 Azure Automation Desired State Configuration (DSC) is a powerful service for defining, deploying, and enforcing system configurations at scale. By authoring PowerShell-based DSC scripts, you can automate consistency checks and drift correction across Azure and on-premises environments—eliminating manual errors and saving operational time.
 
-![The image is an infographic titled "Azure Automation State Configuration," showing three steps: automating checking, updating, and deployment configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867688/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Automation-State-Configuration/azure-automation-state-configuration-infographic.jpg)
+![The image is an infographic titled "Azure Automation State Configuration," showing three steps: automating checking, updating, and deployment configurations.](https://kodekloud.com/kk-media/image/upload/v1752867688/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Automation-State-Configuration/azure-automation-state-configuration-infographic.jpg)
 
 ## Key Benefits
 
@@ -22,7 +22,7 @@ Azure Automation Desired State Configuration (DSC) is a powerful service for def
 
 In this walkthrough, we'll ensure a scheduled PowerShell task is installed and maintained on several Azure Windows VMs using Azure Automation DSC.
 
-![The image is an example of Azure Automation State Configuration, detailing a scenario of managing configurations for multiple VMs, with the objective of ensuring specific software installation on Windows VMs, using tools like Azure Automation State Configuration and Azure VMs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867690/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Automation-State-Configuration/azure-automation-state-configuration-vms.jpg)
+![The image is an example of Azure Automation State Configuration, detailing a scenario of managing configurations for multiple VMs, with the objective of ensuring specific software installation on Windows VMs, using tools like Azure Automation State Configuration and Azure VMs.](https://kodekloud.com/kk-media/image/upload/v1752867690/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Automation-State-Configuration/azure-automation-state-configuration-vms.jpg)
 
 ### Prerequisites
 
@@ -42,7 +42,7 @@ Your Automation Account is the central hub for DSC configurations, runbooks, and
 2. Click **+ Create**, fill in the name, resource group, and region.
 3. Review and **Create**.
 
-![The image shows a Microsoft Azure interface for creating an automation account, with a highlighted button to "Create automation account." It indicates that there are currently no automation accounts to display.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867691/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Automation-State-Configuration/azure-automation-account-creation-interface.jpg)
+![The image shows a Microsoft Azure interface for creating an automation account, with a highlighted button to "Create automation account." It indicates that there are currently no automation accounts to display.](https://kodekloud.com/kk-media/image/upload/v1752867691/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Automation-State-Configuration/azure-automation-account-creation-interface.jpg)
 
 ***
 
@@ -57,11 +57,11 @@ Once the Automation Account is active, add your Windows VM as a DSC node.
    * **Refresh Frequency**: Interval for DSC pull (e.g., 30 minutes)
    * **Configuration Mode**: `ApplyAndAutoCorrect` or `ApplyAndMonitor`
 
-![The image shows a screenshot of the Azure Automation State Configuration interface, highlighting the "TestAutomationAccount" with options for managing configurations and nodes. It includes a navigation menu on the left and a status dashboard on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867692/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Automation-State-Configuration/azure-automation-state-configuration-screenshot.jpg)
+![The image shows a screenshot of the Azure Automation State Configuration interface, highlighting the "TestAutomationAccount" with options for managing configurations and nodes. It includes a navigation menu on the left and a status dashboard on the right.](https://kodekloud.com/kk-media/image/upload/v1752867692/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Automation-State-Configuration/azure-automation-state-configuration-screenshot.jpg)
 
 On the registration settings page, enter the **Registration Key**, **Node Configuration Name**, and **Refresh Interval**.
 
-![The image shows a screenshot of the Azure Automation State Configuration interface, specifically the registration settings for configuring DSC (Desired State Configuration) for a virtual machine. It includes fields for registration key, node configuration name, refresh frequency, and other options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867693/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Automation-State-Configuration/azure-automation-dsc-registration-settings.jpg)
+![The image shows a screenshot of the Azure Automation State Configuration interface, specifically the registration settings for configuring DSC (Desired State Configuration) for a virtual machine. It includes fields for registration key, node configuration name, refresh frequency, and other options.](https://kodekloud.com/kk-media/image/upload/v1752867693/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Automation-State-Configuration/azure-automation-dsc-registration-settings.jpg)
 
 After registration, the VM appears in the DSC **Nodes** view marked **Compliant** (no custom configurations yet).
 

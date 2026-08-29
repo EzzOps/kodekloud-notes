@@ -115,9 +115,7 @@ Useful references:
 * Helm: [https://helm.sh](https://helm.sh)
 * Kubernetes CRDs: [https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/d2537d70-4008-4d53-ad04-b7731ca0f7c0/lesson/d73a38de-90cd-446d-9c96-0653e88167c8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/d2537d70-4008-4d53-ad04-b7731ca0f7c0/lesson/d73a38de-90cd-446d-9c96-0653e88167c8)
 
 
 # Demo Scaffold The Same Operator With Operator SDK

@@ -27,9 +27,7 @@ app.dependency_overrides[get_db] = override_get_db
 client = TestClient(app)
 ```
 
-<Callout icon="triangle-alert">
-  If your test database is new, you might encounter errors due to missing tables. Make sure to create all the necessary tables before running your tests.
-</Callout>
+> **triangle-alert** If your test database is new, you might encounter errors due to missing tables. Make sure to create all the necessary tables before running your tests.
 
 One common strategy is to have SQLAlchemy create all tables from your models before the tests execute:
 
@@ -99,9 +97,7 @@ app.dependency_overrides[get_db] = override_get_db
 
 FastAPI’s dependency override functionality allows you to easily swap out dependencies, such as the database session, during testing. This separation ensures that your tests run in an isolated environment, protecting your development data. Moreover, the test database can be hosted on your local machine, in a Docker container, or on a remote server—simply adjust your connection details accordingly.
 
-<Frame>
-  ![The image shows a webpage from the FastAPI documentation, specifically a section on testing a database. It includes a table of contents and instructions for adding tests for an SQL app.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883472/notes-assets/images/Python-API-Development-with-FastAPI-Setup-Test-Database/fastapi-testing-database-docs.jpg)
-</Frame>
+![The image shows a webpage from the FastAPI documentation, specifically a section on testing a database. It includes a table of contents and instructions for adding tests for an SQL app.](https://kodekloud.com/kk-media/image/upload/v1752883472/notes-assets/images/Python-API-Development-with-FastAPI-Setup-Test-Database/fastapi-testing-database-docs.jpg)
 
 Before running tests against your dedicated testing database (e.g., `fastapi_test`), make sure that the database exists. In [PgAdmin](https://www.pgadmin.org), you can create the database by executing:
 
@@ -112,9 +108,7 @@ ORDER BY id ASC;
 
 If you need to drop or create databases for testing purposes, tools like [PgAdmin](https://www.pgadmin.org) offer a graphical interface. For example, you might see a confirmation dialog when dropping a database:
 
-<Frame>
-  ![The image shows a pgAdmin interface with a confirmation dialog asking if the user wants to drop the database "fastapi\_test." The background displays a list of databases and a data output table.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883473/notes-assets/images/Python-API-Development-with-FastAPI-Setup-Test-Database/pgadmin-drop-database-confirmation.jpg)
-</Frame>
+![The image shows a pgAdmin interface with a confirmation dialog asking if the user wants to drop the database "fastapi\_test." The background displays a list of databases and a data output table.](https://kodekloud.com/kk-media/image/upload/v1752883473/notes-assets/images/Python-API-Development-with-FastAPI-Setup-Test-Database/pgadmin-drop-database-confirmation.jpg)
 
 After setting up the test database and overriding the dependency, you can run your tests. A final example of the configuration is as follows:
 
@@ -144,9 +138,7 @@ you can verify, using your database tool, that all necessary tables (such as the
 
 This concludes our guide on setting up a separate test database in FastAPI. By leveraging dependency overrides, you can ensure that tests run in a fully isolated environment without affecting your development data.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/2a793148-83cc-41c6-acaa-1196dc2c1139" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/2a793148-83cc-41c6-acaa-1196dc2c1139)
 
 
 # Test Create Post
@@ -224,9 +216,7 @@ def test_create_post(authorized_client, test_user, test_posts, title, content, p
 
 ## Default Published Value Test
 
-<Callout icon="lightbulb">
-  In the PostBase model, the "published" field defaults to True. This test confirms that when the "published" field is omitted, the system sets it to True by default.
-</Callout>
+> **lightbulb** In the PostBase model, the "published" field defaults to True. This test confirms that when the "published" field is omitted, the system sets it to True by default.
 
 ```python theme={null}
 def test_create_post_default_published_true(authorized_client, test_user, test_posts):
@@ -302,9 +292,7 @@ At this stage, all tests related to post creation have been implemented and veri
 
 In the next article, we will explore tests for updating or deleting a post.
 
-<Callout icon="triangle-alert">
-  Note: Additional console warnings regarding external library deprecations, such as the `@coroutine` decorator warning from aiofiles, do not affect the test outcomes.
-</Callout>
+> **triangle-alert** Note: Additional console warnings regarding external library deprecations, such as the `@coroutine` decorator warning from aiofiles, do not affect the test outcomes.
 
 Additional console warnings may include:
 
@@ -318,6 +306,4 @@ warnings summary
 
 This concludes our lesson on testing post creation functionality. For more details, refer to our [API Testing Documentation](#).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/22be8076-4c5d-4338-b638-4ea314230005" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/22be8076-4c5d-4338-b638-4ea314230005)

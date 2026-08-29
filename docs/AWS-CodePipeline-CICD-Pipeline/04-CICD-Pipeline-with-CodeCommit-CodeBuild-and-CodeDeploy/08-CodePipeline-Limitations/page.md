@@ -16,7 +16,7 @@ Every pipeline, stage, and action name must be unique within its scope:
 
 You can reuse common stage names (for example, `Source` or `Deploy`) across different pipelines, but you cannot duplicate them inside the same pipeline.
 
-![The image outlines naming restrictions for pipelines, stages, and actions, alongside a CI/CD infinity loop diagram with stages labeled "Source," "Deploy," and "Test."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862637/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodePipeline-Limitations/ci-cd-pipeline-naming-restrictions-diagram.jpg)
+![The image outlines naming restrictions for pipelines, stages, and actions, alongside a CI/CD infinity loop diagram with stages labeled "Source," "Deploy," and "Test."](https://kodekloud.com/kk-media/image/upload/v1752862637/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodePipeline-Limitations/ci-cd-pipeline-naming-restrictions-diagram.jpg)
 
 > **lightbulb** Choose descriptive stage and action names to improve pipeline readability and troubleshooting.
 
@@ -24,7 +24,7 @@ You can reuse common stage names (for example, `Source` or `Deploy`) across diff
 
 Most CodePipeline quotas are applied per AWS Region. For example, the default limit of 1,000 pipelines refers to pipelines per region.
 
-![The image shows a world map with location markers and text indicating that some quotas apply per region, with instructions to request a quota increase through the Support Center console.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862638/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodePipeline-Limitations/world-map-location-markers-quotas.jpg)
+![The image shows a world map with location markers and text indicating that some quotas apply per region, with instructions to request a quota increase through the Support Center console.](https://kodekloud.com/kk-media/image/upload/v1752862638/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodePipeline-Limitations/world-map-location-markers-quotas.jpg)
 
 > **triangle-alert** If you hit a regional quota, you can request an increase via the [AWS Support Center](https://console.aws.amazon.com/support/home). Approval may take up to two weeks.
 
@@ -40,7 +40,7 @@ Below are the default CodePipeline quotas you should plan for in each region:
 
 > Actions within a stage can execute in parallel or sequentially. The only overall cap is the per-stage limit.
 
-![The image displays AWS pipeline limits, including the maximum number of pipelines, stages, and actions per account, stage, and pipeline.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862639/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodePipeline-Limitations/aws-pipeline-limits-maximums-diagram.jpg)
+![The image displays AWS pipeline limits, including the maximum number of pipelines, stages, and actions per account, stage, and pipeline.](https://kodekloud.com/kk-media/image/upload/v1752862639/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodePipeline-Limitations/aws-pipeline-limits-maximums-diagram.jpg)
 
 ## Additional Considerations
 

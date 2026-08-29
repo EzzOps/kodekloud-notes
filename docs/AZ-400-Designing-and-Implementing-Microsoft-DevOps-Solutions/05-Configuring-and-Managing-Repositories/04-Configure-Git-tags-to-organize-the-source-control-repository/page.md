@@ -6,7 +6,7 @@ This article explains how to configure Git tags for organizing source control re
 
 Git tags serve as fixed points—or landmarks—in your commit history, helping you mark version releases and other significant milestones. By leveraging tags, you can easily reference builds, rollback to stable states, and integrate seamlessly with CI/CD pipelines in Azure Repos or any Git-based workflow.
 
-![The image explains the role of Git tags, showing them as landmarks for important commits, typically used for version releases or highlighting significant changes. It includes a visual with a Git logo and version numbers V01 to V04.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867508/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Git-tags-to-organize-the-source-control-repository/git-tags-role-version-landmarks-diagram.jpg)
+![The image explains the role of Git tags, showing them as landmarks for important commits, typically used for version releases or highlighting significant changes. It includes a visual with a Git logo and version numbers V01 to V04.](https://kodekloud.com/kk-media/image/upload/v1752867508/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Git-tags-to-organize-the-source-control-repository/git-tags-role-version-landmarks-diagram.jpg)
 
 ## Why use Git tags?
 

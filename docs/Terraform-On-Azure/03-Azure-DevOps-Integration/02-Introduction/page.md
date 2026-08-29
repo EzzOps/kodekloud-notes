@@ -22,9 +22,7 @@ Finally, we'll integrate a remote backend into the CI/CD pipeline to manage Terr
   <img alt="The image is an introduction slide with three points about CI/CD and Terraform: its importance for safety and collaboration, the workflow in a CI/CD pipeline, and configuring Azure DevOps for secure authentication." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Using CI/CD for Terraform adds review gates, auditability, and repeatable automation. A remote backend is essential in pipelines to avoid state conflicts and to ensure team-wide visibility into infrastructure state.
-</Callout>
+> **lightbulb** Using CI/CD for Terraform adds review gates, auditability, and repeatable automation. A remote backend is essential in pipelines to avoid state conflicts and to ensure team-wide visibility into infrastructure state.
 
 ## Why run Terraform in CI/CD?
 
@@ -71,6 +69,4 @@ A remote backend (e.g., Azure Storage with state locking via CosmosDB or using T
 * [Configure backends](https://www.terraform.io/docs/language/settings/backends/index.html)
 * [Azure REST and Service Principals](https://learn.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/70677d20-46be-4257-9a02-34aa382b3b05/lesson/9e2dbf40-9924-436d-97eb-28dd26aacff9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/70677d20-46be-4257-9a02-34aa382b3b05/lesson/9e2dbf40-9924-436d-97eb-28dd26aacff9)

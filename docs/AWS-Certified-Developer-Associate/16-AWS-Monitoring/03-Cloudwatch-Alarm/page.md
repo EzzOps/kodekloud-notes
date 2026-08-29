@@ -14,7 +14,7 @@ A CloudWatch alarm can be in one of three states:
 * **Alarm:** The metric exceeds the set threshold (e.g., CPU utilization is above 70%).
 * **Insufficient Data:** The current value of the metric is indeterminate.
 
-![The image illustrates alarm states based on CPU utilization, with "Alarm state" above 70% and "OK state" below 70%. It notes that if CPU utilization can't be determined, it is considered insufficient data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858300/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Alarm/cpu-utilization-alarm-states-diagram.jpg)
+![The image illustrates alarm states based on CPU utilization, with "Alarm state" above 70% and "OK state" below 70%. It notes that if CPU utilization can't be determined, it is considered insufficient data.](https://kodekloud.com/kk-media/image/upload/v1752858300/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Alarm/cpu-utilization-alarm-states-diagram.jpg)
 
 > **lightbulb** CloudWatch alarms help proactively manage your cloud infrastructure by ensuring that critical thresholds are always monitored.
 
@@ -32,13 +32,13 @@ One of the most powerful features of CloudWatch is its capability to monitor mul
 * CPU utilization exceeds 70%, **OR**
 * Available free memory drops below 200 megabytes.
 
-![The image illustrates two composite alarms for an instance, one triggered by CPU usage over 70% and network packets in over 100MB, and the other by CPU usage over 70% or memory free under 200MB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858303/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Alarm/composite-alarms-cpu-memory-diagram.jpg)
+![The image illustrates two composite alarms for an instance, one triggered by CPU usage over 70% and network packets in over 100MB, and the other by CPU usage over 70% or memory free under 200MB.](https://kodekloud.com/kk-media/image/upload/v1752858303/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Alarm/composite-alarms-cpu-memory-diagram.jpg)
 
 ## Summary
 
 CloudWatch alarms provide an effective solution for monitoring critical metric thresholds and automatically triggering actions such as notifications, Lambda function invocations, or SNS topic publications. Moreover, the flexibility of composite alarms enables you to combine multiple metrics, ensuring a comprehensive monitoring strategy tailored to your specific needs.
 
-![The image is a summary slide highlighting three points about CloudWatch alarms: triggering based on metric thresholds, triggering notifications and functions, and combining metrics for composite alarms.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858304/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Alarm/cloudwatch-alarms-summary-slide.jpg)
+![The image is a summary slide highlighting three points about CloudWatch alarms: triggering based on metric thresholds, triggering notifications and functions, and combining metrics for composite alarms.](https://kodekloud.com/kk-media/image/upload/v1752858304/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Alarm/cloudwatch-alarms-summary-slide.jpg)
 
 > **lightbulb** By leveraging CloudWatch alarms, you can ensure better resource utilization, faster response times to system anomalies, and improved overall system reliability.
 

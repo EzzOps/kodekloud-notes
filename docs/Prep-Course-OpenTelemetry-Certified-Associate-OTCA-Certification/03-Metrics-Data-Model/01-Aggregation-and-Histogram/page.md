@@ -20,9 +20,7 @@ Why is zero-code instrumentation popular?
   <img alt="The image presents the advantages of zero-code instrumentation, highlighting four benefits: fast and non-invasive setup, suitability for initial observability, no developer effort required, and being configurable and extensible." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Zero-code instrumentation is an excellent first step for gaining observability quickly. Use it to get baseline telemetry, then add code-based instrumentation selectively where you need domain-specific traces or richer context.
-</Callout>
+> **lightbulb** Zero-code instrumentation is an excellent first step for gaining observability quickly. Use it to get baseline telemetry, then add code-based instrumentation selectively where you need domain-specific traces or richer context.
 
 That covers the essentials of zero-code automatic instrumentation. Use it to bootstrap observability, and augment with code-based instrumentation when you need custom, business-level spans.
 
@@ -31,9 +29,7 @@ Links and references
 * OpenTelemetry: [https://opentelemetry.io/](https://opentelemetry.io/)
 * OpenTelemetry eBPF project: [https://github.com/open-telemetry/opentelemetry-ebpf](https://github.com/open-telemetry/opentelemetry-ebpf)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/75aa998f-6fba-4547-9859-83ca424db6be" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/75aa998f-6fba-4547-9859-83ca424db6be)
 
 
 # Aggregation and Histogram
@@ -125,10 +121,6 @@ Use percentiles to set meaningful SLOs and to prioritize optimization efforts wh
 * OpenTelemetry Metrics overview: [https://opentelemetry.io/docs/messaging/metrics/](https://opentelemetry.io/docs/messaging/metrics/)
 * Histogram guidance and best practices: check your backend docs for supported histogram types (`explicit` vs `exponential`) and percentile computation guarantees.
 
-<Callout icon="lightbulb">
-  Histograms are essential when distribution matters. Percentiles and distribution summaries derived from histograms reveal performance characteristics that averages alone can hide.
-</Callout>
+> **lightbulb** Histograms are essential when distribution matters. Percentiles and distribution summaries derived from histograms reveal performance characteristics that averages alone can hide.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/e93febbf-8931-4ddc-b3d9-c7b85f6c9d88" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/e93febbf-8931-4ddc-b3d9-c7b85f6c9d88)

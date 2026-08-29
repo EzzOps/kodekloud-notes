@@ -5,13 +5,9 @@ export TF_LOG=TRACE
 export TF_LOG_PATH=/tmp/tf.log
 ```
 
-<Callout icon="lightbulb">
-  If you run Terraform on an Azure VM or build agent, install the Azure Monitor Agent to collect the `TF_LOG` file and send it to a Log Analytics workspace. This enables centralized querying, filtering, and analysis of Terraform logs. See: [https://learn.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent](https://learn.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent)
-</Callout>
+> **lightbulb** If you run Terraform on an Azure VM or build agent, install the Azure Monitor Agent to collect the `TF_LOG` file and send it to a Log Analytics workspace. This enables centralized querying, filtering, and analysis of Terraform logs. See: [https://learn.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent](https://learn.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent)
 
-<Callout icon="warning">
-  Terraform logs at `DEBUG` or `TRACE` levels can contain sensitive data such as secrets or API tokens. Treat files created via `TF_LOG_PATH` as sensitive: restrict access, redact before sharing, and rotate credentials if exposed.
-</Callout>
+> **warning** Terraform logs at `DEBUG` or `TRACE` levels can contain sensitive data such as secrets or API tokens. Treat files created via `TF_LOG_PATH` as sensitive: restrict access, redact before sharing, and rotate credentials if exposed.
 
 ## TF\_LOG levels
 
@@ -160,9 +156,7 @@ Guidance:
 * Log Analytics workspace: [https://learn.microsoft.com/azure/azure-monitor/logs/log-analytics-workspace](https://learn.microsoft.com/azure/azure-monitor/logs/log-analytics-workspace)
 * azurerm provider docs: [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/8eb2a0b5-4324-4bba-9e4e-c01dd765911d/lesson/bca84dc3-abf2-4bdc-bbd5-e192250c830e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/8eb2a0b5-4324-4bba-9e4e-c01dd765911d/lesson/bca84dc3-abf2-4bdc-bbd5-e192250c830e)
 
 
 # HCL Syntax and Building Blocks
@@ -175,9 +169,7 @@ In this lesson we start authoring Terraform configuration files and examine the 
 
 Terraform configuration files use the `.tf` extension. Terraform automatically loads and evaluates all `.tf` files in a single directory as one configuration. File names are for organization only and do not control execution order. This lets you split large projects into logical files (for example, `network.tf`, `storage.tf`, `main.tf`) while Terraform evaluates them together.
 
-<Callout icon="lightbulb">
-  Terraform treats all `.tf` files in a directory as a single configuration. Use multiple files to organize resources logically (for example, `network.tf`, `storage.tf`, `main.tf`) without affecting evaluation order.
-</Callout>
+> **lightbulb** Terraform treats all `.tf` files in a directory as a single configuration. Use multiple files to organize resources logically (for example, `network.tf`, `storage.tf`, `main.tf`) without affecting evaluation order.
 
 ## Resource block: core structure
 
@@ -227,9 +219,7 @@ Notes on the storage account example:
 
 Terraform supports explicit references between resources so it can infer dependencies and determine the correct creation order. Reference and dependency management are covered in more detail in later lessons.
 
-<Callout icon="warning">
-  Avoid hardcoding sensitive values (credentials, secrets, or provider tokens) directly in `.tf` files. Use `variables`, `terraform.tfvars`, or secret management solutions (for example, HashiCorp Vault or cloud-native secret stores) to keep secrets out of source control.
-</Callout>
+> **warning** Avoid hardcoding sensitive values (credentials, secrets, or provider tokens) directly in `.tf` files. Use `variables`, `terraform.tfvars`, or secret management solutions (for example, HashiCorp Vault or cloud-native secret stores) to keep secrets out of source control.
 
 ## Quick reference: resource block components
 
@@ -279,6 +269,4 @@ Useful references:
 * [AWS Provider Docs (aws)](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 * [Google Cloud Provider Docs (google)](https://registry.terraform.io/providers/hashicorp/google/latest/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/2dc00bf7-fa00-41df-a4e0-bce9fb23c19d/lesson/395f553f-0b72-44c1-a15a-ad90a71e6a93" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/2dc00bf7-fa00-41df-a4e0-bce9fb23c19d/lesson/395f553f-0b72-44c1-a15a-ad90a71e6a93)

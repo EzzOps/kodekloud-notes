@@ -6,9 +6,7 @@ A guide to five core system questions—users and growth, read versus write bala
 
 You can't design the right system until you know who you’re designing it for and what constraints matter. Before sketching architecture diagrams or picking components, pause and answer a small set of focused questions about usage patterns, durability, latency, and cost.
 
-<Callout icon="lightbulb">
-  Start by answering a few targeted questions about users, growth, read/write balance, data durability, latency tolerances, and cost. These answers will drive every design decision that follows.
-</Callout>
+> **lightbulb** Start by answering a few targeted questions about users, growth, read/write balance, data durability, latency tolerances, and cost. These answers will drive every design decision that follows.
 
 Below we walk through five core questions using a photo-sharing app as an example. For each question we describe why it matters and the concrete implications for system design.
 
@@ -76,12 +74,8 @@ This mindset — answering requirements before picking components — separates 
   <img alt="The image contrasts two approaches: &#x22;Designers&#x22; with a crossed-out phrase &#x22;Just Add Cache!&#x22; and various icons, and &#x22;Component-Collectors&#x22; focusing on explaining &#x22;Why This App Needs It.&#x22;" />
 </Frame>
 
-<Callout icon="warning">
-  Don’t build components in search of a problem. Use these five questions to prioritize investments (e.g., caching, replication, CDNs) only where they measurably improve durability, latency, or cost.
-</Callout>
+> **warning** Don’t build components in search of a problem. Use these five questions to prioritize investments (e.g., caching, replication, CDNs) only where they measurably improve durability, latency, or cost.
 
 If you need a short checklist to carry into architecture sessions, remember these five questions — users & growth, read/write balance, data durability, latency per path, and cost — and use them to justify every architectural choice.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/09a1aad8-6f61-41bf-8505-3e637f6ed00c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/09a1aad8-6f61-41bf-8505-3e637f6ed00c)

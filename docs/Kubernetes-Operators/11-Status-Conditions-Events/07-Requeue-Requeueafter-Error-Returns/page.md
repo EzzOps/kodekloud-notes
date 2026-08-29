@@ -38,9 +38,7 @@ if err := r.Status().Update(ctx, &webapp); err != nil {
 }
 ```
 
-<Callout icon="lightbulb">
-  Do not use errors to represent normal, in-progress states. For example, a Deployment still rolling out or a status field that hasn't reached its desired value is not a failure — record that state in status/events and let watches or timed requeues drive the next reconcile.
-</Callout>
+> **lightbulb** Do not use errors to represent normal, in-progress states. For example, a Deployment still rolling out or a status field that hasn't reached its desired value is not a failure — record that state in status/events and let watches or timed requeues drive the next reconcile.
 
 <Frame>
   <img alt="The image explains that normal waiting is not an error, using examples of &#x22;Still rolling out&#x22; and &#x22;Below desired count,&#x22; both marked as &#x22;Not broken.&#x22; An arrow indicates &#x22;Error for progress.&#x22;" />
@@ -92,9 +90,7 @@ Best practices
 
 Treat the `Reconcile` return value as part of your operator's behavior, not as an afterthought. It controls retry noise, API server traffic, log quality, and how quickly users see status settle.
 
-<Callout icon="warning">
-  Returning errors for expected, in-progress states (for example, a rolling update) will generate unnecessary retries, increase API traffic, and can obscure real failures. Use status + watches or `RequeueAfter` instead of errors for normal waiting.
-</Callout>
+> **warning** Returning errors for expected, in-progress states (for example, a rolling update) will generate unnecessary retries, increase API traffic, and can obscure real failures. Use status + watches or `RequeueAfter` instead of errors for normal waiting.
 
 Links and references
 
@@ -102,6 +98,4 @@ Links and references
 * [Kubernetes: Controllers and operator patterns](https://kubernetes.io/docs/concepts/architecture/controller/)
 * Best practices for operator status, events, and requeue behavior are covered across operator frameworks and Kubernetes docs — prefer documentation that matches your controller-runtime version and operator SDK.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/eb820e30-d0dc-43c7-939a-7628da88a8a8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/eb820e30-d0dc-43c7-939a-7628da88a8a8)

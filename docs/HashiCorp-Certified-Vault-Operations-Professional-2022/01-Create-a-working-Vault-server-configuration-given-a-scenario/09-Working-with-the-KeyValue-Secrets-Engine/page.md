@@ -6,9 +6,7 @@ This guide explains managing secrets in HashiCorp Vault’s Key/Value Secrets En
 
 In this guide, you’ll learn how to manage secrets in HashiCorp Vault’s Key/Value (KV) Secrets Engine using the Vault CLI. We’ll cover writing, reading, deleting, and listing secrets in both KV v1 and v2, plus advanced v2-only operations: undelete, destroy, patch, and rollback.
 
-<Callout icon="lightbulb">
-  Ensure you have Vault CLI installed and authenticated. For installation instructions, see the [Vault Installation Guide](https://www.vaultproject.io/docs/install).
-</Callout>
+> **lightbulb** Ensure you have Vault CLI installed and authenticated. For installation instructions, see the [Vault Installation Guide](https://www.vaultproject.io/docs/install).
 
 ## KV CLI Command Overview
 
@@ -30,9 +28,7 @@ KV v2 adds these metadata and versioning operations:
 | patch      | Update specific fields without overwriting |
 | rollback   | Restore an older version as the latest     |
 
-<Frame>
-  ![The image is a guide on using the vault kv command in the CLI, detailing commands like put, get, delete, and list, with additional commands for KV V2 such as undelete, destroy, patch, and rollback. It also features a cartoon character and a certification badge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878546/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Working-with-the-KeyValue-Secrets-Engine/vault-kv-command-guide-cartoon-badge.jpg)
-</Frame>
+![The image is a guide on using the vault kv command in the CLI, detailing commands like put, get, delete, and list, with additional commands for KV V2 such as undelete, destroy, patch, and rollback. It also features a cartoon character and a certification badge.](https://kodekloud.com/kk-media/image/upload/v1752878546/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Working-with-the-KeyValue-Secrets-Engine/vault-kv-command-guide-cartoon-badge.jpg)
 
 ## Comparing KV Version 1 vs. Version 2
 
@@ -82,9 +78,7 @@ Success! Data written to: kv/app/db
 
 Vault will read key/value pairs from `secrets.json` and store them at the specified path.
 
-<Callout icon="lightbulb">
-  Each `put` command **replaces** the entire data set at that path. It does *not* merge with existing keys.
-</Callout>
+> **lightbulb** Each `put` command **replaces** the entire data set at that path. It does *not* merge with existing keys.
 
 ### Overwriting vs. Patching
 
@@ -212,9 +206,7 @@ $ vault kv get -format=json kv/app/db
 
 ## Deleting and Destroying Secrets
 
-<Frame>
-  ![The image explains the differences between deleting secrets in KV V1 and KV V2 stores, highlighting that KV V1 deletes are permanent, KV V2 deletes are soft and restorable, and KV V2 destroys are permanent. It also features a Vault certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878548/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Working-with-the-KeyValue-Secrets-Engine/kv-v1-vs-v2-secrets-deletion.jpg)
-</Frame>
+![The image explains the differences between deleting secrets in KV V1 and KV V2 stores, highlighting that KV V1 deletes are permanent, KV V2 deletes are soft and restorable, and KV V2 destroys are permanent. It also features a Vault certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878548/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Working-with-the-KeyValue-Secrets-Engine/kv-v1-vs-v2-secrets-deletion.jpg)
 
 ### KV Version 1
 
@@ -270,9 +262,7 @@ destroyed         true
 version           3
 ```
 
-<Callout icon="triangle-alert">
-  Once destroyed, the data cannot be recovered without a snapshot restore.
-</Callout>
+> **triangle-alert** Once destroyed, the data cannot be recovered without a snapshot restore.
 
 ## Summary
 
@@ -291,6 +281,4 @@ With these commands, you can confidently manage, version, and protect your secre
 * [KV Secrets Engine Overview](https://www.vaultproject.io/docs/secrets/kv)
 * [Semantic Versioning](https://semver.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/4af5cae4-de15-4015-aa34-367819942566" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/4af5cae4-de15-4015-aa34-367819942566)

@@ -6,9 +6,7 @@ This article explores foundational security measures essential for running produ
 
 Hello, and welcome to this lesson on Kubernetes security primitives. In this article, we explore the foundational security measures required for running production-grade applications on Kubernetes. Understanding these security components is essential for maintaining a robust and secure cluster.
 
-<Frame>
-  ![The image features the text "Security-Kubernetes Security Primitives" on a blue background with a network design.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880600/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Security-Kubernetes-Security-Primitives/frame_10.jpg)
-</Frame>
+![The image features the text "Security-Kubernetes Security Primitives" on a blue background with a network design.](https://kodekloud.com/kk-media/image/upload/v1752880600/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Security-Kubernetes-Security-Primitives/frame_10.jpg)
 
 ## Securing the Underlying Hosts
 
@@ -21,9 +19,7 @@ Before diving into Kubernetes-specific features, it is vital to secure the physi
 
 A compromise at this level can jeopardize the entire infrastructure.
 
-<Frame>
-  ![The image illustrates "Secure Hosts" with three outlined devices and notes on disabling password authentication and using SSH key-based authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880601/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Security-Kubernetes-Security-Primitives/frame_40.jpg)
-</Frame>
+![The image illustrates "Secure Hosts" with three outlined devices and notes on disabling password authentication and using SSH key-based authentication.](https://kodekloud.com/kk-media/image/upload/v1752880601/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Security-Kubernetes-Security-Primitives/frame_40.jpg)
 
 ## Kubernetes-Specific Security Measures
 
@@ -32,9 +28,7 @@ Focusing specifically on Kubernetes, the core component is the kube-apiserver. T
 * Who can access the cluster?
 * What actions can they perform once access is granted?
 
-<Frame>
-  ![The image discusses securing Kubernetes, focusing on the "kube-apiserver" and questioning who can access it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880602/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Security-Kubernetes-Security-Primitives/frame_90.jpg)
-</Frame>
+![The image discusses securing Kubernetes, focusing on the "kube-apiserver" and questioning who can access it.](https://kodekloud.com/kk-media/image/upload/v1752880602/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Security-Kubernetes-Security-Primitives/frame_90.jpg)
 
 ### Authentication
 
@@ -45,21 +39,15 @@ Access to the API server is managed through robust authentication mechanisms. Me
 * External authentication providers (e.g., LDAP)
 * Machine-to-machine interactions managed through service accounts
 
-<Frame>
-  ![The image lists authentication methods: username/password, username/tokens, certificates, LDAP, and service accounts, under the question "Who can access?"](../../../../images/kodekloud.com/kk-media/image/upload/v1752880603/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Security-Kubernetes-Security-Primitives/frame_120.jpg)
-</Frame>
+![The image lists authentication methods: username/password, username/tokens, certificates, LDAP, and service accounts, under the question "Who can access?"](https://kodekloud.com/kk-media/image/upload/v1752880603/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Security-Kubernetes-Security-Primitives/frame_120.jpg)
 
 ### Authorization
 
 Once authenticated, the system determines valid actions through authorization. Kubernetes primarily uses Role-Based Access Control (RBAC), where permissions are assigned based on roles or group memberships. Additional methods include Attribute-Based Access Control (ABAC) and webhooks for extended flexibility.
 
-<Frame>
-  ![The image is a slide titled "Authorization" with options for RBAC and ABAC Authorization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880604/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Security-Kubernetes-Security-Primitives/frame_140.jpg)
-</Frame>
+![The image is a slide titled "Authorization" with options for RBAC and ABAC Authorization.](https://kodekloud.com/kk-media/image/upload/v1752880604/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Security-Kubernetes-Security-Primitives/frame_140.jpg)
 
-<Callout icon="lightbulb">
-  All communications between essential cluster components—such as the etcd cluster, kube-controller-manager, scheduler, API server, and nodes (kubelet and kube-proxy)—are secured with TLS encryption. This ensures that every interaction within the cluster remains confidential and tamper-proof.
-</Callout>
+> **lightbulb** All communications between essential cluster components—such as the etcd cluster, kube-controller-manager, scheduler, API server, and nodes (kubelet and kube-proxy)—are secured with TLS encryption. This ensures that every interaction within the cluster remains confidential and tamper-proof.
 
 ## TLS Encryption
 
@@ -70,17 +58,13 @@ An entire section of Kubernetes documentation is dedicated to configuring TLS ce
 * Kubelet
 * Additional components
 
-<Frame>
-  ![The image illustrates the use of TLS certificates in a Kubernetes architecture, showing connections between components like Kube ApiServer, ETCD Cluster, Kubelet, and others.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880604/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Security-Kubernetes-Security-Primitives/frame_160.jpg)
-</Frame>
+![The image illustrates the use of TLS certificates in a Kubernetes architecture, showing connections between components like Kube ApiServer, ETCD Cluster, Kubelet, and others.](https://kodekloud.com/kk-media/image/upload/v1752880604/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Security-Kubernetes-Security-Primitives/frame_160.jpg)
 
 ## Network Policies
 
 By default, pods within the cluster can communicate freely. However, to tighten security, you can implement network policies, which restrict communication between pods and enhance overall cluster security.
 
-<Frame>
-  ![The image illustrates network policies with four smartphone-like icons, each containing colored circles and interconnected by dashed lines and pentagons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880605/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Security-Kubernetes-Security-Primitives/frame_190.jpg)
-</Frame>
+![The image illustrates network policies with four smartphone-like icons, each containing colored circles and interconnected by dashed lines and pentagons.](https://kodekloud.com/kk-media/image/upload/v1752880605/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Security-Kubernetes-Security-Primitives/frame_190.jpg)
 
 ***
 
@@ -93,6 +77,4 @@ For additional insights, consider exploring the following resources:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/d8e7f8d9-9796-49a3-b59d-0486a29b2cf4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/d8e7f8d9-9796-49a3-b59d-0486a29b2cf4)

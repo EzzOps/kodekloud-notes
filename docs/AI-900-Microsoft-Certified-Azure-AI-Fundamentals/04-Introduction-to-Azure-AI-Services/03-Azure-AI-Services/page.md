@@ -12,7 +12,7 @@ Azure AI services consist of three core offerings: Azure Machine Learning, Azure
 
 Azure Machine Learning is a comprehensive cloud platform that supports the entire machine learning lifecycle—including training, deployment, and management. It offers a wide range of machine learning algorithms suitable for various tasks such as image recognition, language processing, and predictive analytics. Its seamless integration capabilities allow you to easily embed machine learning models into your applications, enhancing them with intelligent functions.
 
-![The image is an informational graphic about Azure Machine Learning, highlighting its features such as training, deployment, management of machine learning models, support for various algorithms, and easy integration into applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857023/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Services/azure-machine-learning-features-graphic.jpg)
+![The image is an informational graphic about Azure Machine Learning, highlighting its features such as training, deployment, management of machine learning models, support for various algorithms, and easy integration into applications.](https://kodekloud.com/kk-media/image/upload/v1752857023/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Services/azure-machine-learning-features-graphic.jpg)
 
 Azure Machine Learning is ideal for anyone looking to integrate robust machine learning projects into their applications.
 
@@ -30,7 +30,7 @@ Azure AI Services provide a comprehensive suite of tools designed to embed intel
 
 These features help developers build applications that understand, interpret, and interact more naturally with users, reducing the complexities often associated with AI development.
 
-![The image is a slide titled "AI Services in Azure," describing Azure AI Services as a collection of tools for vision, speech, language, decision-making, and generative AI, aimed at building intelligent applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857024/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Services/ai-services-in-azure-tools.jpg)
+![The image is a slide titled "AI Services in Azure," describing Azure AI Services as a collection of tools for vision, speech, language, decision-making, and generative AI, aimed at building intelligent applications.](https://kodekloud.com/kk-media/image/upload/v1752857024/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Services/ai-services-in-azure-tools.jpg)
 
 > **lightbulb** Azure AI Services enable a smarter application ecosystem by allowing you to process visual data, recognize speech, analyze text, and generate dynamic content without needing comprehensive AI expertise.
 
@@ -40,7 +40,7 @@ These features help developers build applications that understand, interpret, an
 
 Azure Cognitive Search is engineered to efficiently search and retrieve information from vast datasets. By combining traditional keyword searches with intelligent features like semantic understanding and relevance ranking, it enriches your data with insights and organizes it for quick access. This capability not only improves search experience but also aids in decision-making and knowledge discovery.
 
-![The image is a slide titled "AI Services in Azure," focusing on "Azure Cognitive Search," highlighting its capabilities in data extraction, enrichment, indexing, enhancing search experiences, and facilitating knowledge discovery.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857025/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Services/ai-services-azure-cognitive-search.jpg)
+![The image is a slide titled "AI Services in Azure," focusing on "Azure Cognitive Search," highlighting its capabilities in data extraction, enrichment, indexing, enhancing search experiences, and facilitating knowledge discovery.](https://kodekloud.com/kk-media/image/upload/v1752857025/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Services/ai-services-azure-cognitive-search.jpg)
 
 ***
 
@@ -56,7 +56,7 @@ When deploying Azure AI resources in the cloud, you have two main deployment opt
 
 Azure AI Services are accessible through REST APIs, with each service exposing its own endpoint for interaction via standard HTTP calls. Every API request requires an authentication token or subscription key to secure communication.
 
-![The image illustrates how AI services in Azure are accessed by applications using RESTful APIs and authentication keys or tokens. It includes a diagram showing a cloud with AI and gears, connected to an app via a key and endpoint.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857026/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Services/azure-ai-services-restful-api-diagram.jpg)
+![The image illustrates how AI services in Azure are accessed by applications using RESTful APIs and authentication keys or tokens. It includes a diagram showing a cloud with AI and gears, connected to an app via a key and endpoint.](https://kodekloud.com/kk-media/image/upload/v1752857026/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Services/azure-ai-services-restful-api-diagram.jpg)
 
 > **lightbulb** Always ensure that your API requests include the proper authentication token or subscription key to prevent unauthorized access.
 
@@ -72,11 +72,11 @@ This section explains how to deploy and test Azure AI Services using the Azure p
 * Choose to create individual services (e.g., Computer Vision) or opt for the unified Azure AI Services resource if you need multiple capabilities.
 * For a unified approach, click on Azure AI Services and create a new resource group (e.g., "AI services AI-900") using the standard pricing tier.
 
-![The image shows a Microsoft Azure portal page for creating Azure AI services, with fields for project and instance details such as subscription, resource group, region, name, and pricing tier.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857027/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Services/azure-portal-ai-services-creation.jpg)
+![The image shows a Microsoft Azure portal page for creating Azure AI services, with fields for project and instance details such as subscription, resource group, region, name, and pricing tier.](https://kodekloud.com/kk-media/image/upload/v1752857027/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Services/azure-portal-ai-services-creation.jpg)
 
 * After clicking "Create," wait for the deployment to finish. Once complete, select "Go to resource" to view the service details, including endpoints and subscription keys for various APIs such as Computer Vision, speech, and language.
 
-![The image shows an Azure portal interface for managing AI services, displaying details like resource group, status, location, and keys for accessing the service. It includes options to view endpoints and manage keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857028/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Services/azure-portal-ai-services-management.jpg)
+![The image shows an Azure portal interface for managing AI services, displaying details like resource group, status, location, and keys for accessing the service. It includes options to view endpoints and manage keys.](https://kodekloud.com/kk-media/image/upload/v1752857028/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Services/azure-portal-ai-services-management.jpg)
 
 ### Step 2: Testing the Computer Vision API with Postman
 

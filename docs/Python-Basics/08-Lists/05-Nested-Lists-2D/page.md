@@ -6,9 +6,7 @@ This article explains two-dimensional lists in Python, focusing on their structu
 
 So far, we've explored simple lists that hold single values. Now, let's dive into two-dimensional (2D) lists—lists whose elements are themselves lists. This structure is especially useful for representing more complex data, such as a classroom layout where students are organized in rows.
 
-<Callout icon="lightbulb">
-  A 2D list (or matrix) in Python represents a grid-like structure where each element of an outer list is itself a list. This is ideal for modeling arrangements like classroom rows or grids.
-</Callout>
+> **lightbulb** A 2D list (or matrix) in Python represents a grid-like structure where each element of an outer list is itself a list. This is ideal for modeling arrangements like classroom rows or grids.
 
 ## Representing a Classroom with a 2D List
 

@@ -12,7 +12,7 @@ Below are some important considerations for crafting effective prompts.
 
 Begin by explicitly stating what you want Copilot to achieve. For instance, if you need to draft an email welcoming a new team member, clearly indicate that this is your primary objective.
 
-![The image illustrates a process for drafting an email using a language model, with steps for providing clear instructions and context. It includes a system message, conversation history, and a current prompt for drafting an email to welcome a new team member.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857004/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Copilot-Prompts-Considerations/email-drafting-process-language-model.jpg)
+![The image illustrates a process for drafting an email using a language model, with steps for providing clear instructions and context. It includes a system message, conversation history, and a current prompt for drafting an email to welcome a new team member.](https://kodekloud.com/kk-media/image/upload/v1752857004/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Copilot-Prompts-Considerations/email-drafting-process-language-model.jpg)
 
 Articulating your goal helps focus Copilot on the task and lays a solid foundation for any subsequent details.
 
@@ -36,7 +36,7 @@ When engaged in an ongoing conversation with Copilot, consider the conversation 
 
 By combining these elements—clear goal definition, relevant context, detailed specifications, tone considerations, and iterative adjustments—you set Copilot up for success. The more effort you invest in crafting your prompt, the more useful and precise the resulting output will be.
 
-![The image illustrates a process for drafting an email using a language model, showing a user prompt and system message flow, with steps for optimizing the prompt.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857005/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Copilot-Prompts-Considerations/email-drafting-process-language-model-2.jpg)
+![The image illustrates a process for drafting an email using a language model, showing a user prompt and system message flow, with steps for optimizing the prompt.](https://kodekloud.com/kk-media/image/upload/v1752857005/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Copilot-Prompts-Considerations/email-drafting-process-language-model-2.jpg)
 
 ## Using Copilot
 

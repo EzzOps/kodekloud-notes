@@ -10,9 +10,7 @@ Information about these target systems is stored in an inventory file. By defaul
 
 An inventory file is written in an INI-like format. It can list servers sequentially or group them by placing the group name in square brackets, followed by the list of servers. For example:
 
-<Callout icon="lightbulb">
-  The example below demonstrates a basic inventory file structure that lists and groups servers without relying on any additional diagrams or images.
-</Callout>
+> **lightbulb** The example below demonstrates a basic inventory file structure that lists and groups servers without relying on any additional diagrams or images.
 
 Consider the following inventory file which defines groups such as `[inventory]`, `[mail]`, `[db]`, and `[web]`:
 

@@ -44,9 +44,7 @@ You can also authenticate via the CLI (adjust host/port if you’re using port-f
 argocd login localhost:8080 --username admin --password YYVqv2RjBXFT7uUY
 ```
 
-<Callout icon="lightbulb">
-  For production environments: serve the ArgoCD UI over HTTPS, rotate the default `admin` password immediately, and consider integrating Single Sign-On (SSO) and role-based access controls. Also restrict UI access using network policies or an authenticated ingress.
-</Callout>
+> **lightbulb** For production environments: serve the ArgoCD UI over HTTPS, rotate the default `admin` password immediately, and consider integrating Single Sign-On (SSO) and role-based access controls. Also restrict UI access using network policies or an authenticated ingress.
 
 ## Access the ArgoCD dashboard via Glasskube
 
@@ -56,9 +54,7 @@ After installation and authentication, open the ArgoCD entry point from the Glas
   <img alt="The image shows a user interface for a software platform called Glasskube, featuring a grid of Kubernetes-related packages available for installation or opening. There are options like Argo CD, cert-manager, and Kubernetes dashboard." />
 </Frame>
 
-<Callout icon="warning">
-  If you expose ArgoCD directly (NodePort/LoadBalancer) for testing, ensure you secure the endpoint. Avoid leaving the initial admin password unchanged or exposing the UI without authentication in non-development environments.
-</Callout>
+> **warning** If you expose ArgoCD directly (NodePort/LoadBalancer) for testing, ensure you secure the endpoint. Avoid leaving the initial admin password unchanged or exposing the UI without authentication in non-development environments.
 
 ## Next steps
 
@@ -72,9 +68,7 @@ Useful references:
 * ArgoCD CLI reference: [https://argo-cd.readthedocs.io/en/stable/cli\_installation/](https://argo-cd.readthedocs.io/en/stable/cli_installation/)
 * Glasskube (installation UI/CLI): check your project's Glasskube documentation or repository for details.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/c3806869-7f9e-4cc2-8dc5-aa10304e3d1c/lesson/674a70d0-051c-4538-9e35-65c8e653b188" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/c3806869-7f9e-4cc2-8dc5-aa10304e3d1c/lesson/674a70d0-051c-4538-9e35-65c8e653b188)
 
 
 # Database CloudNativePG
@@ -200,9 +194,7 @@ cluster-with-metrics-3                    1/1     Running   0          25s
 cnpg-controller-manager-987494b46-p7hqk  1/1     Running   0          3m2s
 ```
 
-<Callout icon="lightbulb">
-  After the cluster is ready, CloudNativePG creates a Kubernetes Service for client connections and maintains that Service through failover events. Inspect the Service and Endpoints in `cnpg-system` to get host and port information used by applications.
-</Callout>
+> **lightbulb** After the cluster is ready, CloudNativePG creates a Kubernetes Service for client connections and maintains that Service through failover events. Inspect the Service and Endpoints in `cnpg-system` to get host and port information used by applications.
 
 That completes the demo. Practice installing the CloudNativePG operator and creating a Postgres Cluster using the manifest above.
 
@@ -212,8 +204,6 @@ Links and references:
 * Kubernetes StatefulSets: [https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
 * Glasskube project: [https://github.com/traefik/glasskube](https://github.com/traefik/glasskube) (Glasskube UI/CLI)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/c3806869-7f9e-4cc2-8dc5-aa10304e3d1c/lesson/2f665637-d054-4a1e-815d-1dc8926e9fe6" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/c3806869-7f9e-4cc2-8dc5-aa10304e3d1c/lesson/2f665637-d054-4a1e-815d-1dc8926e9fe6)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/c3806869-7f9e-4cc2-8dc5-aa10304e3d1c/lesson/8cc03408-c700-46e0-b7fd-f4023f25df1d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/c3806869-7f9e-4cc2-8dc5-aa10304e3d1c/lesson/8cc03408-c700-46e0-b7fd-f4023f25df1d)

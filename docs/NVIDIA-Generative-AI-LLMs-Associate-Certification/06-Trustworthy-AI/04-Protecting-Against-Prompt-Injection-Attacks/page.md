@@ -17,9 +17,7 @@ Options:
 
 Answer: implementing input validation and sanitization.
 
-<Callout icon="lightbulb">
-  The most effective immediate mitigation against prompt injection is to validate and sanitize user-provided inputs before they are incorporated into prompts or model context.
-</Callout>
+> **lightbulb** The most effective immediate mitigation against prompt injection is to validate and sanitize user-provided inputs before they are incorporated into prompts or model context.
 
 ## Why input validation and sanitization are essential
 
@@ -31,9 +29,7 @@ Key reasons this is the best primary defense:
 * It is fast to implement and works across models and deployment types.
 * It complements other defenses (system prompts, capability limits, monitoring).
 
-<Callout icon="warning">
-  Do not rely on model size, latency, or more training data as primary defenses. These do not prevent adversarially crafted inputs from being followed at inference time.
-</Callout>
+> **warning** Do not rely on model size, latency, or more training data as primary defenses. These do not prevent adversarially crafted inputs from being followed at inference time.
 
 ## Explanation
 
@@ -103,6 +99,4 @@ Input validation and sanitization address this by:
 
 In summary: implement strict input validation and sanitization as the first and most effective line of defense against prompt injection, and combine it with system-level constraints, capability limits, monitoring, and output filtering for a layered security posture.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/f5fcaa31-ee4e-4d79-9474-be230c1c96b7/lesson/71588467-fea3-49f8-9a66-85934ae3d322" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/f5fcaa31-ee4e-4d79-9474-be230c1c96b7/lesson/71588467-fea3-49f8-9a66-85934ae3d322)

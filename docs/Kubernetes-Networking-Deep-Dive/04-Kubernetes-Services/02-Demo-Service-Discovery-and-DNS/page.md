@@ -63,9 +63,7 @@ You’ll receive the standard NGINX welcome page HTML.
 
 ### 1.1 Limitations Across Namespaces
 
-<Callout icon="lightbulb">
-  Environment variables are only injected into pods in the **same** namespace as the Service.
-</Callout>
+> **lightbulb** Environment variables are only injected into pods in the **same** namespace as the Service.
 
 To see this in action, launch a pod in the `kube-system` namespace:
 
@@ -155,8 +153,6 @@ Both will resolve to `10.103.206.194`.
 * [CoreDNS Documentation](https://coredns.io/manual/)
 * [Kubernetes DNS Overview](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/76f2a3fe-a7ca-4724-93d7-4af80639f088" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/76f2a3fe-a7ca-4724-93d7-4af80639f088)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/799584e0-4bc1-4de6-9deb-eeb76967a382" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/799584e0-4bc1-4de6-9deb-eeb76967a382)

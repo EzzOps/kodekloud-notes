@@ -21,7 +21,7 @@ Pipeline health ensures reliable, predictable releases. Focus on tracking the ri
 | Mean Time to Repair | Average time to fix a broken build or test | ≤ 30 minutes      |
 | Flaky Test Count    | Number of tests that intermittently fail   | 0                 |
 
-![The image is a slide titled "Discovering Pipeline Health" with a list of topics related to pipeline health monitoring, including key metrics, analytics tools, and strategies for handling flaky tests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868143/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary-Maintaining-Pipelines/discovering-pipeline-health-monitoring-topics.jpg)
+![The image is a slide titled "Discovering Pipeline Health" with a list of topics related to pipeline health monitoring, including key metrics, analytics tools, and strategies for handling flaky tests.](https://kodekloud.com/kk-media/image/upload/v1752868143/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary-Maintaining-Pipelines/discovering-pipeline-health-monitoring-topics.jpg)
 
 ### Analytics Tools in Azure DevOps
 
@@ -39,7 +39,7 @@ Pipeline health ensures reliable, predictable releases. Focus on tracking the ri
 
 Concurrency controls how many jobs or tasks run in parallel. Proper tuning accelerates delivery and reduces costs.
 
-![The image is a presentation slide titled "Optimizing Pipeline Concurrency for Performance and Cost," with a list of topics related to pipeline concurrency, each marked by a colored dot.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868145/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary-Maintaining-Pipelines/optimizing-pipeline-concurrency-performance-cost.jpg)
+![The image is a presentation slide titled "Optimizing Pipeline Concurrency for Performance and Cost," with a list of topics related to pipeline concurrency, each marked by a colored dot.](https://kodekloud.com/kk-media/image/upload/v1752868145/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary-Maintaining-Pipelines/optimizing-pipeline-concurrency-performance-cost.jpg)
 
 ### Concurrency Concepts
 
@@ -76,7 +76,7 @@ Continually monitor queue times and agent utilization to adjust your concurrency
 
 YAML pipelines offer versioning, flexibility, and better collaboration. Follow a structured checklist for a seamless migration.
 
-![The image is a slide titled "Migrating a Pipeline From Classic to YAML in Azure Pipelines," listing topics such as introduction, YAML and classic pipelines, reasons to migrate, a pre-migration checklist, and a step-by-step migration process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868146/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary-Maintaining-Pipelines/migrating-pipeline-classic-to-yaml-azure.jpg)
+![The image is a slide titled "Migrating a Pipeline From Classic to YAML in Azure Pipelines," listing topics such as introduction, YAML and classic pipelines, reasons to migrate, a pre-migration checklist, and a step-by-step migration process.](https://kodekloud.com/kk-media/image/upload/v1752868146/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary-Maintaining-Pipelines/migrating-pipeline-classic-to-yaml-azure.jpg)
 
 ### Classic vs. YAML Comparison
 

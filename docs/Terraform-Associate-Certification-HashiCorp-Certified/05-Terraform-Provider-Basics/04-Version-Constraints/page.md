@@ -81,9 +81,7 @@ If you ever set or change modules or backend configuration, rerun this command t
 
 With this configuration, Terraform downloads version 1.4.0 of the local provider during initialization.
 
-<Callout icon="lightbulb">
-  Using version constraints helps avoid unexpected breaking changes when new major provider versions are released.
-</Callout>
+> **lightbulb** Using version constraints helps avoid unexpected breaking changes when new major provider versions are released.
 
 ## Using Version Constraints
 
@@ -193,9 +191,7 @@ resource "local_file" "pet" {
 
 In this case, Terraform will consider versions starting from 1.2.0 up to (but not including) the next minor version, ensuring you always get the highest available incremental version within that range.
 
-<Callout icon="lightbulb">
-  Including descriptive version constraint explanations in your documentation improves both clarity for developers and your article's search engine visibility.
-</Callout>
+> **lightbulb** Including descriptive version constraint explanations in your documentation improves both clarity for developers and your article's search engine visibility.
 
 ***
 
@@ -203,6 +199,4 @@ By applying these version constraints, you ensure that your Terraform configurat
 
 For further information, refer to the [Terraform Documentation](https://www.terraform.io/docs) and the [Terraform Registry](https://registry.terraform.io/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/e442ec14-d1e8-4e05-9ae1-078f6f00b63a/lesson/790a534b-9e03-456c-805a-d1cbea36e686" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/e442ec14-d1e8-4e05-9ae1-078f6f00b63a/lesson/790a534b-9e03-456c-805a-d1cbea36e686)

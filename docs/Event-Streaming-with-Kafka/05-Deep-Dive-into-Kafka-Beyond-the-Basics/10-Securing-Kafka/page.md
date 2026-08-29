@@ -28,9 +28,7 @@ Authentication method comparison
 | `Kerberos` (SASL/GSSAPI)         | Strong enterprise identity, SSO support            | Large enterprises with existing Kerberos infrastructure                          |
 | `mTLS` (Mutual TLS)              | Strong cryptographic identity, integrates with PKI | Production clusters, cloud-native environments, automated certificate management |
 
-<Callout icon="lightbulb">
-  If you don't have engineers experienced with Kerberos, prefer TLS-based certificate authentication (mTLS) for production. It provides strong identity assurance without the operational overhead of Kerberos.
-</Callout>
+> **lightbulb** If you don't have engineers experienced with Kerberos, prefer TLS-based certificate authentication (mTLS) for production. It provides strong identity assurance without the operational overhead of Kerberos.
 
 Access control (ACLs)
 
@@ -72,9 +70,7 @@ Putting it together
 * Protect data at rest via OS or storage-level encryption (disk, volume, or managed-service options).
 * Keep staging and QA environments as close to production as practical: use the same auth model and similar ACLs to catch security misconfigurations early.
 
-<Callout icon="lightbulb">
-  Apply strict ACLs and certificate-based authentication in QA and production to mirror production behavior. For simple local development you can loosen restrictions, but avoid wide-open access in shared QA environments.
-</Callout>
+> **lightbulb** Apply strict ACLs and certificate-based authentication in QA and production to mirror production behavior. For simple local development you can loosen restrictions, but avoid wide-open access in shared QA environments.
 
 <Frame>
   <img alt="The image illustrates Kafka security measures, including message transit security, data at rest security, user access control, and consumer authentication. It shows a flow of data topics like &#x22;LoginEvents&#x22; and &#x22;CardPaymentEvent&#x22; between producers and consumers." />
@@ -96,6 +92,4 @@ Further reading and references
 
 That is it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/event-streaming-with-kafka/module/9aa104e8-faa5-4099-977f-71744306b99d/lesson/4517203b-1d19-4a12-83ce-d36a92094b8a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/event-streaming-with-kafka/module/9aa104e8-faa5-4099-977f-71744306b99d/lesson/4517203b-1d19-4a12-83ce-d36a92094b8a)

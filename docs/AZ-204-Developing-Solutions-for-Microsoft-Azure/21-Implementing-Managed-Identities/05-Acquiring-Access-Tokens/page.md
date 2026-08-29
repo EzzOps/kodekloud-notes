@@ -8,7 +8,7 @@ In this guide, we explain how to acquire an access token using Managed Identitie
 
 Microsoft recommends using the DefaultAzureCredential class for token acquisition. This class combines multiple authentication methods—including Managed Identities—and automatically selects the appropriate one based on the environment in which your code is running.
 
-![The image provides information on acquiring an access token for Azure resources, highlighting the use of managed identities and recommending the DefaultAzureCredential.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866649/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Acquiring-Access-Tokens/azure-access-token-managed-identities.jpg)
+![The image provides information on acquiring an access token for Azure resources, highlighting the use of managed identities and recommending the DefaultAzureCredential.](https://kodekloud.com/kk-media/image/upload/v1752866649/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Acquiring-Access-Tokens/azure-access-token-managed-identities.jpg)
 
 Previously, you may have used a command to collect the default credentials that you were logged in with. In this article, we modify the approach to leverage Managed Identities for authentication. Below is an example demonstrating how to specify a user-assigned managed identity:
 
@@ -105,7 +105,7 @@ After updating your code, deploy the changes to Azure.
 
 Once deployed, navigate to the Azure portal to view your Function App details and to obtain the function URL.
 
-![The image shows a Microsoft Azure portal interface displaying details of a Function App named "getmedbstring." It includes information about the app's status, location, subscription, and a function named "GetSecretFromKeyVault" with an HTTP trigger.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866651/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Acquiring-Access-Tokens/azure-portal-function-app-details.jpg)
+![The image shows a Microsoft Azure portal interface displaying details of a Function App named "getmedbstring." It includes information about the app's status, location, subscription, and a function named "GetSecretFromKeyVault" with an HTTP trigger.](https://kodekloud.com/kk-media/image/upload/v1752866651/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Acquiring-Access-Tokens/azure-portal-function-app-details.jpg)
 
 When you test the endpoint in your browser, a 500 error is expected if access permissions have not been configured. To resolve this, you must configure your Key Vault to grant your Function App access.
 
@@ -136,13 +136,13 @@ First, review the function’s configuration JSON:
 
 Then, navigate to the Function App's Identity settings in the Azure portal:
 
-![The image shows a Microsoft Azure portal interface for a Function App named "getmedbstring," focusing on the "Identity" settings. It displays options for managing system-assigned identities, with the status set to "On" and an object (principal) ID provided.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866652/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Acquiring-Access-Tokens/azure-function-app-identity-settings.jpg)
+![The image shows a Microsoft Azure portal interface for a Function App named "getmedbstring," focusing on the "Identity" settings. It displays options for managing system-assigned identities, with the status set to "On" and an object (principal) ID provided.](https://kodekloud.com/kk-media/image/upload/v1752866652/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Acquiring-Access-Tokens/azure-function-app-identity-settings.jpg)
 
 Copy your Function App's name and go to your Key Vault. Under Access Control (IAM), add a role assignment for the "Key Vault Secrets User" role. During the role assignment process, select members or search for the managed identity by its name.
 
-![The image shows a Microsoft Azure portal interface for adding a role assignment, specifically displaying job function roles related to Key Vault, such as Key Vault Administrator and Key Vault Secrets User.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866653/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Acquiring-Access-Tokens/azure-portal-role-assignment-key-vault.jpg)
+![The image shows a Microsoft Azure portal interface for adding a role assignment, specifically displaying job function roles related to Key Vault, such as Key Vault Administrator and Key Vault Secrets User.](https://kodekloud.com/kk-media/image/upload/v1752866653/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Acquiring-Access-Tokens/azure-portal-role-assignment-key-vault.jpg)
 
-![The image shows a Microsoft Azure portal interface for adding a role assignment, specifically selecting members for the "Key Vault Secrets User" role. A list of potential members is displayed on the right for selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866655/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Acquiring-Access-Tokens/azure-portal-role-assignment-key-vault-2.jpg)
+![The image shows a Microsoft Azure portal interface for adding a role assignment, specifically selecting members for the "Key Vault Secrets User" role. A list of potential members is displayed on the right for selection.](https://kodekloud.com/kk-media/image/upload/v1752866655/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Acquiring-Access-Tokens/azure-portal-role-assignment-key-vault-2.jpg)
 
 After the role assignment is complete, your Function App will have permission to retrieve secrets from the Key Vault, and the secret retrieval should succeed.
 

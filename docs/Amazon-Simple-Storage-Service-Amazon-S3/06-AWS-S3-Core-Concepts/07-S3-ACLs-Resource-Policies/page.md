@@ -73,7 +73,7 @@ When you create a new S3 bucket:
 * No other IAM users—even in your own account—can access it.
 * Public or anonymous users are explicitly denied until you grant permission.
 
-![The image illustrates S3 access permissions for different types of AWS users, showing that the creator and root user have access, while other AWS users, users from another AWS account, and anonymous/public users do not.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869315/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-ACLs-Resource-Policies/s3-access-permissions-aws-users-illustration.jpg)
+![The image illustrates S3 access permissions for different types of AWS users, showing that the creator and root user have access, while other AWS users, users from another AWS account, and anonymous/public users do not.](https://kodekloud.com/kk-media/image/upload/v1752869315/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-ACLs-Resource-Policies/s3-access-permissions-aws-users-illustration.jpg)
 
 ## Resource Policies (Bucket Policies)
 
@@ -85,7 +85,7 @@ A **resource policy** is a JSON document attached directly to an AWS resource. F
 * **Resources**: Which buckets or objects
 * **Conditions** (optional): Additional restrictions
 
-![The image explains the difference between a Resource Policy and an S3 Bucket Policy, highlighting their roles in determining access and operations for S3 resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869316/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-ACLs-Resource-Policies/resource-policy-vs-s3-bucket-policy.jpg)
+![The image explains the difference between a Resource Policy and an S3 Bucket Policy, highlighting their roles in determining access and operations for S3 resources.](https://kodekloud.com/kk-media/image/upload/v1752869316/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-ACLs-Resource-Policies/resource-policy-vs-s3-bucket-policy.jpg)
 
 ### Anatomy of a Bucket Policy
 
@@ -242,7 +242,7 @@ Even if a bucket policy uses `Principal: "*"`, AWS provides **Block Public Acces
 }
 ```
 
-![The image shows a list of options for blocking public access to AWS S3 buckets, alongside a diagram illustrating a secured bucket in "Account 2" with restricted access to anonymous or public users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869317/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-ACLs-Resource-Policies/aws-s3-bucket-access-blocking-diagram.jpg)
+![The image shows a list of options for blocking public access to AWS S3 buckets, alongside a diagram illustrating a secured bucket in "Account 2" with restricted access to anonymous or public users.](https://kodekloud.com/kk-media/image/upload/v1752869317/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-ACLs-Resource-Policies/aws-s3-bucket-access-blocking-diagram.jpg)
 
 > **triangle-alert** Disabling **Block Public Access** can expose your data to the internet. Confirm your policies and audit logs before making public.
 
@@ -255,7 +255,7 @@ Even if a bucket policy uses `Principal: "*"`, AWS provides **Block Public Acces
 
 Both must allow an action for access to succeed. A deny in either one blocks access.
 
-![The image compares IAM Policy and Resource Policy, highlighting that IAM Policy is for authenticated AWS users, while Resource Policy can include rules for anonymous or public users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869318/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-ACLs-Resource-Policies/iam-policy-vs-resource-policy-comparison.jpg)
+![The image compares IAM Policy and Resource Policy, highlighting that IAM Policy is for authenticated AWS users, while Resource Policy can include rules for anonymous or public users.](https://kodekloud.com/kk-media/image/upload/v1752869318/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-ACLs-Resource-Policies/iam-policy-vs-resource-policy-comparison.jpg)
 
 ## ACLs (Legacy)
 
@@ -271,7 +271,7 @@ S3 ACLs predate IAM and offer only five permission sets:
 
 > **lightbulb** AWS recommends using IAM policies and bucket policies instead of ACLs for fine-grained access control.
 
-![The image is an informational graphic about S3 ACLs, describing them as a legacy access control mechanism with limited flexibility and a table detailing ACL permissions for buckets and objects.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869319/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-ACLs-Resource-Policies/s3-acls-legacy-access-control-graphic.jpg)
+![The image is an informational graphic about S3 ACLs, describing them as a legacy access control mechanism with limited flexibility and a table detailing ACL permissions for buckets and objects.](https://kodekloud.com/kk-media/image/upload/v1752869319/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-ACLs-Resource-Policies/s3-acls-legacy-access-control-graphic.jpg)
 
 ***
 

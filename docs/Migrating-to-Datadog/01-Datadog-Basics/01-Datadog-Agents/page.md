@@ -26,9 +26,7 @@ Datadog provides built-in agent integrations for many common platforms and distr
 
 Before installing or configuring an agent you must generate a Datadog API key in the Datadog console. The agent uses this key to authenticate requests to the Datadog backend; telemetry data is accepted only after successful authentication.
 
-<Callout icon="lightbulb">
-  Keep your Datadog API key secret. Do not commit it to source control; store it in a secrets manager or environment variables instead.
-</Callout>
+> **lightbulb** Keep your Datadog API key secret. Do not commit it to source control; store it in a secrets manager or environment variables instead.
 
 <Frame>
   <img alt="The image shows a flowchart illustrating the Datadog Agent installation and authentication process. It includes elements labeled &#x22;Sources,&#x22; &#x22;Agent,&#x22; and &#x22;Datadog Site,&#x22; with arrows indicating the flow of information." />
@@ -55,9 +53,7 @@ In Kubernetes environments there are two complementary agent types:
 
 Each agent has distinct responsibilities; configure both so you get complete telemetry coverage (cluster-level and node/pod-level).
 
-<Callout icon="warning">
-  Ensure the Cluster Agent has sufficient replicas for your cluster size and telemetry volume. Underprovisioning can overload instances; overprovisioning wastes resources. Monitor resource usage and scale replicas accordingly.
-</Callout>
+> **warning** Ensure the Cluster Agent has sufficient replicas for your cluster size and telemetry volume. Underprovisioning can overload instances; overprovisioning wastes resources. Monitor resource usage and scale replicas accordingly.
 
 ## Troubleshooting and debugging tools
 
@@ -103,6 +99,4 @@ References and further reading:
 
 That’s it for this lesson — hope you found it useful.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/10421186-d141-4fde-9847-73ea4e4e675a/lesson/bfa65100-db9e-44de-90c3-9968676e7a86" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/10421186-d141-4fde-9847-73ea4e4e675a/lesson/bfa65100-db9e-44de-90c3-9968676e7a86)

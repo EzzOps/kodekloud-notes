@@ -24,9 +24,7 @@ The goal is to restrict public access to the storage account while still allowin
 
 The network diagram below illustrates a setup where a VM in a virtual network accesses a storage account over a public IP. With a service endpoint enabled, even though DNS still resolves to a public IP, the source IP is that of the VM’s private IP.
 
-<Frame>
-  ![The image illustrates a network diagram showing a virtual machine within a virtual network connecting to a storage account via a public IP, with a focus on service endpoints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882120/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-service-endpoints/network-diagram-virtual-machine-storage.jpg)
-</Frame>
+![The image illustrates a network diagram showing a virtual machine within a virtual network connecting to a storage account via a public IP, with a focus on service endpoints.](https://kodekloud.com/kk-media/image/upload/v1752882120/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-service-endpoints/network-diagram-virtual-machine-storage.jpg)
 
 ***
 
@@ -61,13 +59,9 @@ Azure service endpoints offer several advantages:
 4. **Wide Range of Supported Services**\
    Service endpoints extend support to many Azure services, including Azure Storage, Azure SQL Database, Synapse Analytics, PostgreSQL, Cognitive Services, Container Registry, App Services, and more.
 
-<Frame>
-  ![The image outlines the benefits of service endpoints, highlighting improved security for Azure services, leveraging Microsoft's backbone network, ease of setup and management, and supported services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882121/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-service-endpoints/service-endpoints-benefits-azure.jpg)
-</Frame>
+![The image outlines the benefits of service endpoints, highlighting improved security for Azure services, leveraging Microsoft's backbone network, ease of setup and management, and supported services.](https://kodekloud.com/kk-media/image/upload/v1752882121/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-service-endpoints/service-endpoints-benefits-azure.jpg)
 
-<Callout icon="lightbulb">
-  Azure service endpoints secure your connections by ensuring that traffic remains on Microsoft’s private network infrastructure.
-</Callout>
+> **lightbulb** Azure service endpoints secure your connections by ensuring that traffic remains on Microsoft’s private network infrastructure.
 
 ***
 
@@ -94,9 +88,7 @@ PS C:\Users\RithinSkaria\Documents\kodekloud-az500\080-Network Security\> ./
 
 Wait for the script to execute. Once complete, the storage account and virtual machine will be created as required. The resource group now contains all necessary components, as shown in the Azure portal below:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying a resource group named "rg-se-workload-20230929" with various resources listed, such as a storage account, virtual machine, and network components, all located in the East US region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882123/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-service-endpoints/azure-portal-resource-group-rg-se-workload.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying a resource group named "rg-se-workload-20230929" with various resources listed, such as a storage account, virtual machine, and network components, all located in the East US region.](https://kodekloud.com/kk-media/image/upload/v1752882123/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-service-endpoints/azure-portal-resource-group-rg-se-workload.jpg)
 
 ***
 
@@ -110,9 +102,7 @@ After uploading a file, copy its URL and test it in a web browser. At this point
 
 Next, switch to the virtual machine (e.g., VM01) via SSH. In the Azure portal, locate VM01 in your resource group:
 
-<Frame>
-  ![The image shows the Microsoft Azure portal interface displaying details of a virtual machine named "vm-01," including its status, location, operating system, and network information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882124/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-service-endpoints/azure-portal-vm-01-details.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal interface displaying details of a virtual machine named "vm-01," including its status, location, operating system, and network information.](https://kodekloud.com/kk-media/image/upload/v1752882124/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-service-endpoints/azure-portal-vm-01-details.jpg)
 
 Log in to VM01 and download a file from the storage account using the `wget` command:
 
@@ -143,9 +133,7 @@ Now, secure the storage account by modifying its networking settings:
 2. Change the configuration from "All networks" to "Selected virtual networks and IP addresses."
 3. Add the existing virtual network (e.g., VNet01) and select the relevant subnet.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface focused on networking settings for a storage account. It includes options for configuring virtual networks, firewalls, and exceptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882125/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-service-endpoints/azure-portal-networking-settings.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface focused on networking settings for a storage account. It includes options for configuring virtual networks, firewalls, and exceptions.](https://kodekloud.com/kk-media/image/upload/v1752882125/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-service-endpoints/azure-portal-networking-settings.jpg)
 
 After saving these changes, a service endpoint is automatically created. Consequently, attempting to access the file using a public IP via a browser results in an authorization failure, while the VM continues to access it seamlessly via the service endpoint.
 
@@ -199,9 +187,7 @@ kodekloud@vm-01:~$
 
 This confirms that even though the endpoint resolved publicly, the VM accesses the file via its private IP on Azure’s backbone network.
 
-<Callout icon="triangle-alert">
-  After changing the network settings on your storage account, public access will be denied. Ensure that all necessary service endpoints are configured correctly to avoid access issues.
-</Callout>
+> **triangle-alert** After changing the network settings on your storage account, public access will be denied. Ensure that all necessary service endpoints are configured correctly to avoid access issues.
 
 ***
 
@@ -235,6 +221,4 @@ In this lesson, you learned how to configure Azure service endpoints to secure y
 
 Happy configuring!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/0489a935-a4dd-41c6-b5d3-6054c570299b/lesson/6c9e7e48-a370-4b6f-88bd-89245052da61" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/0489a935-a4dd-41c6-b5d3-6054c570299b/lesson/6c9e7e48-a370-4b6f-88bd-89245052da61)

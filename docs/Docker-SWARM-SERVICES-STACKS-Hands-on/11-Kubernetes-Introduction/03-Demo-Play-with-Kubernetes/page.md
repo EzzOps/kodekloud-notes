@@ -6,15 +6,11 @@ This article provides a step-by-step guide to setting up a Kubernetes test envir
 
 Welcome to this comprehensive lesson on setting up a Kubernetes test environment using PlayWithK8s.com. In this guide, you'll quickly learn how to experiment with Kubernetes without needing your own infrastructure or a public cloud account by following a step-by-step procedure similar to our previous demos, with environment-specific adjustments.
 
-<Frame>
-  ![The image is a slide titled "DEMO" outlining steps for setting up a Kubernetes test environment, creating pods, and services with ClusterIP and LoadBalancer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752874109/notes-assets/images/Docker-SWARM-SERVICES-STACKS-Hands-on-Demo-Play-with-Kubernetes/frame_10.jpg)
-</Frame>
+![The image is a slide titled "DEMO" outlining steps for setting up a Kubernetes test environment, creating pods, and services with ClusterIP and LoadBalancer.](https://kodekloud.com/kk-media/image/upload/v1752874109/notes-assets/images/Docker-SWARM-SERVICES-STACKS-Hands-on-Demo-Play-with-Kubernetes/frame_10.jpg)
 
 When you navigate to PlayWithK8s.com, you'll get free access to Kubernetes clusters with sessions lasting four hours. Simply click on "Add New Instance" to provision a cluster instance and begin your tests immediately.
 
-<Frame>
-  ![The image shows a Kubernetes login page with a reCAPTCHA verification, featuring the Kubernetes logo and branding by Google.](../../../../images/kodekloud.com/kk-media/image/upload/v1752874111/notes-assets/images/Docker-SWARM-SERVICES-STACKS-Hands-on-Demo-Play-with-Kubernetes/frame_80.jpg)
-</Frame>
+![The image shows a Kubernetes login page with a reCAPTCHA verification, featuring the Kubernetes logo and branding by Google.](https://kodekloud.com/kk-media/image/upload/v1752874111/notes-assets/images/Docker-SWARM-SERVICES-STACKS-Hands-on-Demo-Play-with-Kubernetes/frame_80.jpg)
 
 Once logged in, you'll notice a session timer counting down from four hours. This environment is ideal for quick tests and experiments.
 
@@ -91,9 +87,7 @@ You should see files such as:
 * result-app-service.yml
 * voting-app-service.yml
 
-<Frame>
-  ![The image shows a GitHub repository page for a Kubernetes example voting app, with options to clone or download the repository.](../../../../images/kodekloud.com/kk-media/image/upload/v1752874112/notes-assets/images/Docker-SWARM-SERVICES-STACKS-Hands-on-Demo-Play-with-Kubernetes/frame_210.jpg)
-</Frame>
+![The image shows a GitHub repository page for a Kubernetes example voting app, with options to clone or download the repository.](https://kodekloud.com/kk-media/image/upload/v1752874112/notes-assets/images/Docker-SWARM-SERVICES-STACKS-Hands-on-Demo-Play-with-Kubernetes/frame_210.jpg)
 
 ***
 
@@ -117,9 +111,7 @@ If the pod shows as "Pending", inspect further details with:
 kubectl describe pods voting-app-pod
 ```
 
-<Callout icon="lightbulb">
-  If you see an error about no available nodes that match the scheduling predicates, it may be because the master node is tainted by default.
-</Callout>
+> **lightbulb** If you see an error about no available nodes that match the scheduling predicates, it may be because the master node is tainted by default.
 
 Allow scheduling on the master node by removing the taint (replace \<nodeName> with your actual node name, e.g., "node1"):
 
@@ -191,13 +183,9 @@ kubectl get services
 
 Access the voting application via the external link. The interface should display the current vote counts (initially 50-50, before any votes are cast). Casting a vote (e.g., selecting "CATS" or "DOGS") will update the results as the services communicate.
 
-<Frame>
-  ![A web page titled "Cats vs Dogs!" with buttons to vote for either "CATS" or "DOGS," processed by a container ID.](../../../../images/kodekloud.com/kk-media/image/upload/v1752874113/notes-assets/images/Docker-SWARM-SERVICES-STACKS-Hands-on-Demo-Play-with-Kubernetes/frame_620.jpg)
-</Frame>
+![A web page titled "Cats vs Dogs!" with buttons to vote for either "CATS" or "DOGS," processed by a container ID.](https://kodekloud.com/kk-media/image/upload/v1752874113/notes-assets/images/Docker-SWARM-SERVICES-STACKS-Hands-on-Demo-Play-with-Kubernetes/frame_620.jpg)
 
-<Frame>
-  ![The image shows a voting result with "Cats" at 0.0% and "Dogs" at 100.0%, with a total of 1 vote.](../../../../images/kodekloud.com/kk-media/image/upload/v1752874114/notes-assets/images/Docker-SWARM-SERVICES-STACKS-Hands-on-Demo-Play-with-Kubernetes/frame_630.jpg)
-</Frame>
+![The image shows a voting result with "Cats" at 0.0% and "Dogs" at 100.0%, with a total of 1 vote.](https://kodekloud.com/kk-media/image/upload/v1752874114/notes-assets/images/Docker-SWARM-SERVICES-STACKS-Hands-on-Demo-Play-with-Kubernetes/frame_630.jpg)
 
 ***
 
@@ -244,9 +232,7 @@ kubectl get pods
 kubectl get services
 ```
 
-<Frame>
-  ![The image features a dark background with hexagonal patterns and a central text box stating "Reset - Delete all at once" in white font.](../../../../images/kodekloud.com/kk-media/image/upload/v1752874115/notes-assets/images/Docker-SWARM-SERVICES-STACKS-Hands-on-Demo-Play-with-Kubernetes/frame_700.jpg)
-</Frame>
+![The image features a dark background with hexagonal patterns and a central text box stating "Reset - Delete all at once" in white font.](https://kodekloud.com/kk-media/image/upload/v1752874115/notes-assets/images/Docker-SWARM-SERVICES-STACKS-Hands-on-Demo-Play-with-Kubernetes/frame_700.jpg)
 
 A typical deletion output might be:
 
@@ -266,6 +252,4 @@ pod "worker-app-pod" deleted
 
 Thank you for following this demo on deploying an application using PlayWithK8s.com. We hope you found this guide helpful, and we look forward to supporting your next Kubernetes adventure.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/docker-swarm-services-stacks-hands-on/module/9b8ffcd1-c5b0-45d0-968d-55a5146c3e39/lesson/4b5effe9-243d-43c7-928c-4316db4f91ec" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/docker-swarm-services-stacks-hands-on/module/9b8ffcd1-c5b0-45d0-968d-55a5146c3e39/lesson/4b5effe9-243d-43c7-928c-4316db4f91ec)

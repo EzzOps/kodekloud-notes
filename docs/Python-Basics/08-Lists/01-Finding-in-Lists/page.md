@@ -18,9 +18,7 @@ print("B" not in letters)  # Outputs: False because "B" exists in the list
 print("Z" not in letters)  # Outputs: True because "Z" is not in the list
 ```
 
-<Callout icon="lightbulb">
-  Leveraging the "in" and "not in" operators is an efficient method for searching within lists. Experiment with these operators to gain a better understanding of their behavior in various scenarios.
-</Callout>
+> **lightbulb** Leveraging the "in" and "not in" operators is an efficient method for searching within lists. Experiment with these operators to gain a better understanding of their behavior in various scenarios.
 
 ## Conclusion
 
@@ -28,6 +26,4 @@ Understanding how to use the "in" and "not in" operators is foundational for wri
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/a115db9d-996c-4cfc-be27-9cfd7e6d77f5/lesson/c0960d23-99aa-4cad-a6bd-ec6ab57f072b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/a115db9d-996c-4cfc-be27-9cfd7e6d77f5/lesson/c0960d23-99aa-4cad-a6bd-ec6ab57f072b)

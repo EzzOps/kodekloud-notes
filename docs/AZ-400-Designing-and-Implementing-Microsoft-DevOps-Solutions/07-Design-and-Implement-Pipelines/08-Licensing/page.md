@@ -10,7 +10,7 @@ In this lesson, we examine how Azure DevOps licensing controls access and resour
 
 Azure DevOps offers various licenses tailored to different roles and requirements:
 
-![The image lists different types of licenses with corresponding colored dots: Basic, Stakeholder, Visual Studio subscriber benefits, Enterprise, and MSDN Platforms subscriber benefits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867874/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Licensing/license-types-colored-dots-list.jpg)
+![The image lists different types of licenses with corresponding colored dots: Basic, Stakeholder, Visual Studio subscriber benefits, Enterprise, and MSDN Platforms subscriber benefits.](https://kodekloud.com/kk-media/image/upload/v1752867874/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Licensing/license-types-colored-dots-list.jpg)
 
 | License Type                       | Access & Features                            | Ideal For                     |
 | ---------------------------------- | -------------------------------------------- | ----------------------------- |
@@ -38,7 +38,7 @@ Enterprise organizations pay per user beyond the first five, based on the select
 
 Azure DevOps also offers a special deal for public open-source projects:
 
-![The image shows pricing details for open-source projects using Azure Pipelines and Azure DevOps, highlighting free parallel jobs and user pricing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867875/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Licensing/azure-pipelines-devops-pricing-details.jpg)
+![The image shows pricing details for open-source projects using Azure Pipelines and Azure DevOps, highlighting free parallel jobs and user pricing.](https://kodekloud.com/kk-media/image/upload/v1752867875/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Licensing/azure-pipelines-devops-pricing-details.jpg)
 
 * 10 free parallel jobs
 * Unlimited monthly minutes for public repositories

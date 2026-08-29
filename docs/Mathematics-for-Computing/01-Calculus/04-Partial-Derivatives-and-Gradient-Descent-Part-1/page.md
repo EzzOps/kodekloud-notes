@@ -8,9 +8,7 @@ Welcome — it's Justyna from KodeKloud.
 
 In this lesson we uncover how gradient descent helps machines make smarter decisions. We will define what a gradient is, show how partial derivatives compute it, and see how these tools guide models (like routing apps) to better solutions step by step.
 
-<Callout icon="lightbulb">
-  This article explains gradients, partial derivatives, and the first steps toward gradient descent — practical math used in routing, machine learning, and optimization.
-</Callout>
+> **lightbulb** This article explains gradients, partial derivatives, and the first steps toward gradient descent — practical math used in routing, machine learning, and optimization.
 
 Why does this matter? Consider Susie, an Uber Eats driver: faster deliveries mean more orders and higher earnings. To optimize each delivery, her app must evaluate routes and update them as conditions change. Gradient-based methods help the app decide when and how to change the route.
 
@@ -129,12 +127,8 @@ The gradient (vector of partial derivatives) is:
 
 To reduce travel time, an optimization algorithm (like gradient descent) updates `(x, y)` in small steps opposite to `∇T`, iteratively moving toward a local minimum.
 
-<Callout icon="lightbulb">
-  Partial derivatives measure how the function changes along one variable while holding others constant. The gradient combines these rates to indicate the steepest ascent; moving opposite the gradient reduces the function value.
-</Callout>
+> **lightbulb** Partial derivatives measure how the function changes along one variable while holding others constant. The gradient combines these rates to indicate the steepest ascent; moving opposite the gradient reduces the function value.
 
 Where do we go from here? In the next part we'll show how to use these partial derivatives in an iterative optimization algorithm (gradient descent), pick a learning rate, and watch how the route (or model parameters) converge toward an optimal solution.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/582ff79b-c012-496e-8612-3ed7a8df5800/lesson/18689958-6232-45da-ae19-e55c0f87deeb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/582ff79b-c012-496e-8612-3ed7a8df5800/lesson/18689958-6232-45da-ae19-e55c0f87deeb)

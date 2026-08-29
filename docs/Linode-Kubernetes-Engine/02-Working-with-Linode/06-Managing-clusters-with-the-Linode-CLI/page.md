@@ -11,9 +11,7 @@ Streamline your Kubernetes workflow by using the Linode CLI to provision, list, 
 * Python 3.x and `pip3` installed
 * A Linode API Token with **Read/Write** access (create one in the [Linode Cloud Manager](https://cloud.linode.com/profile/tokens))
 
-<Callout icon="lightbulb">
-  Make sure your API token includes `lke:read_write` scopes to manage clusters.
-</Callout>
+> **lightbulb** Make sure your API token includes `lke:read_write` scopes to manage clusters.
 
 ***
 
@@ -79,9 +77,7 @@ linode-cli lke clusters-create \
   --node-pools type=g6-standard-4,count=3
 ```
 
-<Callout icon="triangle-alert">
-  If you see an error like `Must be unique`, update `--label` to a name not already in use.
-</Callout>
+> **triangle-alert** If you see an error like `Must be unique`, update `--label` to a name not already in use.
 
 Successful response:
 
@@ -100,9 +96,7 @@ When you no longer need a cluster, remove it with:
 linode-cli lke clusters-delete mycluster-01
 ```
 
-<Callout icon="triangle-alert">
-  Deleting a cluster is irreversible and will remove all associated resources.
-</Callout>
+> **triangle-alert** Deleting a cluster is irreversible and will remove all associated resources.
 
 ***
 
@@ -122,6 +116,4 @@ linode-cli lke clusters-delete mycluster-01
 * [Linode LKE Documentation](https://www.linode.com/docs/products/kubernetes/)
 * [Kubernetes Official Docs](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/9702fbe2-4321-41c5-87e8-8ea364da097d/lesson/d1fb40b4-a419-4b5e-8e72-750bbb49175a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/9702fbe2-4321-41c5-87e8-8ea364da097d/lesson/d1fb40b4-a419-4b5e-8e72-750bbb49175a)

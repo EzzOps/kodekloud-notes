@@ -13,15 +13,15 @@ CMD [ "app.handler" ]
 
 The AWS Elastic Container Registry (ECR) hosts your container images. In the [AWS Management Console](https://aws.amazon.com/console/), navigate to **Elastic Container Registry**.
 
-![The image shows the Amazon Elastic Container Registry (ECR) webpage, which offers services for sharing and deploying container software. It includes options to create a repository and information on pricing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863073/notes-assets/images/AWS-Lambda-Lambda-Containers-Demonstration/amazon-ecr-webpage-container-services.jpg)
+![The image shows the Amazon Elastic Container Registry (ECR) webpage, which offers services for sharing and deploying container software. It includes options to create a repository and information on pricing.](https://kodekloud.com/kk-media/image/upload/v1752863073/notes-assets/images/AWS-Lambda-Lambda-Containers-Demonstration/amazon-ecr-webpage-container-services.jpg)
 
 Click **Create repository**, set visibility to **Private**, and name it `KodeKloudDemo`. Optionally enable image scanning on push, then click **Create repository**.
 
-![The image shows the AWS Elastic Container Registry interface for creating a new repository, with options for setting visibility and naming the repository.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863074/notes-assets/images/AWS-Lambda-Lambda-Containers-Demonstration/aws-elastic-container-registry-repository.jpg)
+![The image shows the AWS Elastic Container Registry interface for creating a new repository, with options for setting visibility and naming the repository.](https://kodekloud.com/kk-media/image/upload/v1752863074/notes-assets/images/AWS-Lambda-Lambda-Containers-Demonstration/aws-elastic-container-registry-repository.jpg)
 
 Once the repository appears, select **View push commands**.
 
-![The image shows an Amazon Elastic Container Registry (ECR) interface with a notification indicating a repository named "kodeklouddemo" has been successfully created. The repository details, such as URI and creation date, are displayed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863076/notes-assets/images/AWS-Lambda-Lambda-Containers-Demonstration/amazon-ecr-repository-kodeklouddemo-created.jpg)
+![The image shows an Amazon Elastic Container Registry (ECR) interface with a notification indicating a repository named "kodeklouddemo" has been successfully created. The repository details, such as URI and creation date, are displayed.](https://kodekloud.com/kk-media/image/upload/v1752863076/notes-assets/images/AWS-Lambda-Lambda-Containers-Demonstration/amazon-ecr-repository-kodeklouddemo-created.jpg)
 
 ## Build and Push the Container Image
 
@@ -69,7 +69,7 @@ Successful push output:
 
 Refresh the ECR console to verify the **latest** tag.
 
-![The image shows the Amazon Elastic Container Registry (ECR) interface displaying a repository named "kodeklouddemo" with one image tagged as "latest," pushed on November 30, 2022, with a size of 180.66 MB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863077/notes-assets/images/AWS-Lambda-Lambda-Containers-Demonstration/amazon-ecr-repository-kodeklouddemo-latest.jpg)
+![The image shows the Amazon Elastic Container Registry (ECR) interface displaying a repository named "kodeklouddemo" with one image tagged as "latest," pushed on November 30, 2022, with a size of 180.66 MB.](https://kodekloud.com/kk-media/image/upload/v1752863077/notes-assets/images/AWS-Lambda-Lambda-Containers-Demonstration/amazon-ecr-repository-kodeklouddemo-latest.jpg)
 
 ## Deploy the Lambda Function
 
@@ -78,11 +78,11 @@ Refresh the ECR console to verify the **latest** tag.
 3. Under **Container image**, click **Browse images**, select your `kodeklouddemo:latest` image, and click **Select image**.
 4. Keep the remaining settings at their defaults and click **Create function**.
 
-![The image shows the AWS Lambda function creation page, where a user is entering a function name and selecting options for a container image and architecture.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863078/notes-assets/images/AWS-Lambda-Lambda-Containers-Demonstration/aws-lambda-function-creation-page.jpg)
+![The image shows the AWS Lambda function creation page, where a user is entering a function name and selecting options for a container image and architecture.](https://kodekloud.com/kk-media/image/upload/v1752863078/notes-assets/images/AWS-Lambda-Lambda-Containers-Demonstration/aws-lambda-function-creation-page.jpg)
 
 After provisioning, you’ll see your new function listed in the console.
 
-![The image shows an AWS Lambda console with a function named "kodeklouddemo" successfully created. It includes options to add triggers and destinations, and displays the function's ARN.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863079/notes-assets/images/AWS-Lambda-Lambda-Containers-Demonstration/aws-lambda-console-kodeklouddemo-function.jpg)
+![The image shows an AWS Lambda console with a function named "kodeklouddemo" successfully created. It includes options to add triggers and destinations, and displays the function's ARN.](https://kodekloud.com/kk-media/image/upload/v1752863079/notes-assets/images/AWS-Lambda-Lambda-Containers-Demonstration/aws-lambda-console-kodeklouddemo-function.jpg)
 
 ## Test the Lambda Function
 
@@ -120,7 +120,7 @@ AWS Lambda now supports container images, allowing you to package applications w
 
 AWS Lambda originally supported ZIP file deployments, and now you can also upload container images—combining the portability of Docker with Lambda’s serverless execution model. With container images, you package your application code, dependencies, and configuration into a single, portable image. AWS then runs that image in a fully managed, serverless environment without you needing to manage servers or clusters.
 
-![The image is a diagram labeled "Lambda Containers" with a central icon representing a microchip, labeled "Containers" and "Programs."](../../../../images/kodekloud.com/kk-media/image/upload/v1752863081/notes-assets/images/AWS-Lambda-Lambda-Containers/lambda-containers-diagram-microchip.jpg)
+![The image is a diagram labeled "Lambda Containers" with a central icon representing a microchip, labeled "Containers" and "Programs."](https://kodekloud.com/kk-media/image/upload/v1752863081/notes-assets/images/AWS-Lambda-Lambda-Containers/lambda-containers-diagram-microchip.jpg)
 
 ## Why Use AWS Lambda Container Images?
 
@@ -133,13 +133,13 @@ Running containers on Lambda delivers the following advantages:
 | Pay-per-Use Billing | You’re billed only for the compute time your container consumes, eliminating charges for idle capacity.                                 |
 | Large Image Support | While ZIPs are capped at 250 MB, Lambda container images can be up to 10 GB—ideal for heavy workloads like AI/ML or big data analytics. |
 
-![The image shows logos for Kubernetes, AWS Lambda, and ECS Autoscaling under the title "Lambda Containers."](../../../../images/kodekloud.com/kk-media/image/upload/v1752863082/notes-assets/images/AWS-Lambda-Lambda-Containers/lambda-containers-kubernetes-aws-ecs.jpg)
+![The image shows logos for Kubernetes, AWS Lambda, and ECS Autoscaling under the title "Lambda Containers."](https://kodekloud.com/kk-media/image/upload/v1752863082/notes-assets/images/AWS-Lambda-Lambda-Containers/lambda-containers-kubernetes-aws-ecs.jpg)
 
 ### Large Image Support
 
 Lambda container images support sizes up to 10 GB, so you can bundle large frameworks, machine learning models, or data-processing libraries.
 
-![The image shows the text "Lambda Containers" with an icon of a container and a chip, alongside "10 GB."](../../../../images/kodekloud.com/kk-media/image/upload/v1752863083/notes-assets/images/AWS-Lambda-Lambda-Containers/lambda-containers-icon-chip-10gb.jpg)
+![The image shows the text "Lambda Containers" with an icon of a container and a chip, alongside "10 GB."](https://kodekloud.com/kk-media/image/upload/v1752863083/notes-assets/images/AWS-Lambda-Lambda-Containers/lambda-containers-icon-chip-10gb.jpg)
 
 > **lightbulb** Large image support opens the door to CPU- and memory-intensive workloads—everything from AI inference to ETL pipelines—without worrying about ZIP size limits.
 

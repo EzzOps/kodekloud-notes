@@ -46,9 +46,7 @@ aws-cli/2.0.47 Python/3.7.4 Darwin/18.7.0 botocore/2.0.0
 
 Once downloaded, run or launch the installer on your platform and follow the on-screen instructions.
 
-<Callout icon="lightbulb">
-  After installing the AWS CLI, it's a good idea to add it to your system's PATH to simplify command execution from any directory.
-</Callout>
+> **lightbulb** After installing the AWS CLI, it's a good idea to add it to your system's PATH to simplify command execution from any directory.
 
 ## Configuring the AWS CLI
 
@@ -85,9 +83,7 @@ aws_access_key_id = AKIAI44QH8DHBEXAMPLE
 aws_secret_access_key = je7MtGbClwBF/2Zp9Utk/h3yCo8nvbEXAMPLEKEY
 ```
 
-<Callout icon="lightbulb">
-  Ensure that you keep your AWS credentials secure and never share them publicly.
-</Callout>
+> **lightbulb** Ensure that you keep your AWS credentials secure and never share them publicly.
 
 ## Using the AWS CLI
 
@@ -141,9 +137,7 @@ $ aws iam create-user help
 
 This will display comprehensive documentation on the command's usage and available parameters.
 
-<Callout icon="lightbulb">
-  Regularly check the AWS CLI help documentation to stay updated with any changes or new functionalities.
-</Callout>
+> **lightbulb** Regularly check the AWS CLI help documentation to stay updated with any changes or new functionalities.
 
 This concludes the lesson. You are now ready to practice using the AWS CLI in your labs and further explore the extensive capabilities of the AWS Cloud.
 
@@ -153,8 +147,6 @@ For additional AWS resources and documentation, visit the following links:
 * [AWS CLI Official Guide](https://aws.amazon.com/cli/)
 * [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/bf623a25-428f-44a2-a7ad-77908444636e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/bf623a25-428f-44a2-a7ad-77908444636e)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/6c12463e-1db0-4959-9761-1337db3060cd" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/6c12463e-1db0-4959-9761-1337db3060cd)

@@ -13,7 +13,7 @@ cat < file.txt
 
 By contrast, `xargs` acts like a “bucket”—it collects output from a previous command and then invokes another command, passing those collected items as arguments.
 
-![The image illustrates the concept of using the xargs command, showing a "Previously Piped Command" leading to a "Command" represented by a bucket icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868652/notes-assets/images/Advanced-Bash-Scripting-Xargs/xargs-command-bucket-icon-diagram.jpg)
+![The image illustrates the concept of using the xargs command, showing a "Previously Piped Command" leading to a "Command" represented by a bucket icon.](https://kodekloud.com/kk-media/image/upload/v1752868652/notes-assets/images/Advanced-Bash-Scripting-Xargs/xargs-command-bucket-icon-diagram.jpg)
 
 ***
 
@@ -53,7 +53,7 @@ echo file content to demonstrate xargs functionality
 
 Commands like `rm`, `ls`, `mkdir` or even custom scripts require positional arguments. Instead of writing loops, `xargs` can automate this:
 
-![The image illustrates the concept of using the xargs command, showing a structure with "Command" and "Value" sections, and examples like rm, ls, echo, and mkdir.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868653/notes-assets/images/Advanced-Bash-Scripting-Xargs/xargs-command-value-structure.jpg)
+![The image illustrates the concept of using the xargs command, showing a structure with "Command" and "Value" sections, and examples like rm, ls, echo, and mkdir.](https://kodekloud.com/kk-media/image/upload/v1752868653/notes-assets/images/Advanced-Bash-Scripting-Xargs/xargs-command-value-structure.jpg)
 
 ```bash theme={null}
 # Prepend a custom message to file.txt contents
@@ -87,7 +87,7 @@ ls
 
 > **triangle-alert** By default, `xargs` splits on any whitespace. Filenames containing spaces or special characters may break. Use `-0` with NUL-separated data (e.g., `find . -print0 \| xargs -0`) to handle arbitrary names safely.
 
-![The image is a diagram explaining the xargs command, indicating it functions like a plain echo, receives input and positions, and is used by other commands.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868654/notes-assets/images/Advanced-Bash-Scripting-Xargs/xargs-command-diagram-explanation.jpg)
+![The image is a diagram explaining the xargs command, indicating it functions like a plain echo, receives input and positions, and is used by other commands.](https://kodekloud.com/kk-media/image/upload/v1752868654/notes-assets/images/Advanced-Bash-Scripting-Xargs/xargs-command-diagram-explanation.jpg)
 
 ***
 
@@ -196,11 +196,11 @@ If you want a command to produce **no output**, redirect both streams to `/dev/n
 > /dev/null 2>&1
 ```
 
-![The image explains that "/dev/null" is a special file that discards all data written to it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868656/notes-assets/images/Advanced-Bash-Scripting-devnull/dev-null-special-file-explanation.jpg)
+![The image explains that "/dev/null" is a special file that discards all data written to it.](https://kodekloud.com/kk-media/image/upload/v1752868656/notes-assets/images/Advanced-Bash-Scripting-devnull/dev-null-special-file-explanation.jpg)
 
 Use this pattern when you need a silent command—no stdout, no stderr.
 
-![The image features the term "/dev/null" with a visual representation of a black hole and checkmarks next to the phrases "Data that is not needed" and "Data should not be saved."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868657/notes-assets/images/Advanced-Bash-Scripting-devnull/dev-null-black-hole-checkmarks.jpg)
+![The image features the term "/dev/null" with a visual representation of a black hole and checkmarks next to the phrases "Data that is not needed" and "Data should not be saved."](https://kodekloud.com/kk-media/image/upload/v1752868657/notes-assets/images/Advanced-Bash-Scripting-devnull/dev-null-black-hole-checkmarks.jpg)
 
 ***
 
@@ -215,7 +215,7 @@ Use this pattern when you need a silent command—no stdout, no stderr.
 | `2>&1`             | Merge stderr into stdout                  | `cmd >out.txt 2>&1`             |
 | `> /dev/null 2>&1` | Discard both stdout and stderr            | `some_command > /dev/null 2>&1` |
 
-![The image is a slide titled "/dev/null" with checkmarks next to "Redirection," "File descriptors," and "Scenarios where to discard the output."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868658/notes-assets/images/Advanced-Bash-Scripting-devnull/dev-null-checkmarks-redirection.jpg)
+![The image is a slide titled "/dev/null" with checkmarks next to "Redirection," "File descriptors," and "Scenarios where to discard the output."](https://kodekloud.com/kk-media/image/upload/v1752868658/notes-assets/images/Advanced-Bash-Scripting-devnull/dev-null-checkmarks-redirection.jpg)
 
 ***
 

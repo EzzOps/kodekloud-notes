@@ -12,7 +12,7 @@ AWS Security Hub aggregates findings from multiple AWS security services, includ
 
 > **lightbulb** One of the standout features of Security Hub is its automated compliance checks. It continuously monitors your AWS resources against best practices and various security standards, ensuring that your infrastructure remains secure as it scales.
 
-![The image lists the benefits of a Security Hub, including Centralized View, Prioritization, Automation, Compliance, and Scalability, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865917/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Security-Hub/security-hub-benefits-icons.jpg)
+![The image lists the benefits of a Security Hub, including Centralized View, Prioritization, Automation, Compliance, and Scalability, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752865917/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Security-Hub/security-hub-benefits-icons.jpg)
 
 ## How It Works
 
@@ -20,7 +20,7 @@ Consider the following scenario: During routine scans, AWS Inspector detects a v
 
 The diagram below summarizes this comprehensive solution. Various AWS services send their findings to Security Hub. From there, notifications can be generated or additional events can be triggered via EventBridge. These events may call on services such as Lambda functions, Step Functions, or Systems Manager actions to remediate vulnerabilities or execute intermediary steps until a resolution is achieved.
 
-![The image is a flowchart illustrating a security system architecture, featuring components like GuardDuty, Inspector, Macie, and external security tools feeding into a Security Hub, which connects to EventBridge, email notifications, and further processes with Step Functions, Lambda, and System Manager.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865918/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Security-Hub/security-system-architecture-flowchart.jpg)
+![The image is a flowchart illustrating a security system architecture, featuring components like GuardDuty, Inspector, Macie, and external security tools feeding into a Security Hub, which connects to EventBridge, email notifications, and further processes with Step Functions, Lambda, and System Manager.](https://kodekloud.com/kk-media/image/upload/v1752865918/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Security-Hub/security-system-architecture-flowchart.jpg)
 
 ## Architecture Flexibility
 

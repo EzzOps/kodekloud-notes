@@ -3,9 +3,7 @@
 
 This completes our walkthrough of OpenTofu functions and conditional expressions. Great job!
 
-<Frame>
-  ![The image shows a coding environment with instructions to create an EC2 instance using Terraform, alongside a code editor displaying Terraform configuration files and a terminal with output messages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882866/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Functions-and-Conditional-Expressions/ec2-instance-terraform-coding-environment.jpg)
-</Frame>
+![The image shows a coding environment with instructions to create an EC2 instance using Terraform, alongside a code editor displaying Terraform configuration files and a terminal with output messages.](https://kodekloud.com/kk-media/image/upload/v1752882866/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Functions-and-Conditional-Expressions/ec2-instance-terraform-coding-environment.jpg)
 
 ***
 
@@ -17,11 +15,9 @@ This completes our walkthrough of OpenTofu functions and conditional expressions
 * [AWS S3 Bucket & Object](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)
 * [AWS EC2 Instance](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/042e7b27-75d9-46fc-8f8c-7357d81923c1/lesson/72ecd9c1-c9d4-4bc2-9687-a54a126a5d00" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/042e7b27-75d9-46fc-8f8c-7357d81923c1/lesson/72ecd9c1-c9d4-4bc2-9687-a54a126a5d00)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/042e7b27-75d9-46fc-8f8c-7357d81923c1/lesson/eb423b69-3251-4c0a-86dc-463214648609" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/042e7b27-75d9-46fc-8f8c-7357d81923c1/lesson/eb423b69-3251-4c0a-86dc-463214648609)
 
 
 # Demo OpenTofu Workspaces
@@ -34,11 +30,9 @@ In this guide, you'll learn how to create, select, and manage OpenTofu workspace
 
 ## Prerequisites
 
-<Callout icon="lightbulb">
-  * OpenTofu CLI installed and available in your `PATH`.
+> **lightbulb** * OpenTofu CLI installed and available in your `PATH`.
   * A sample project directory named `project-sapphire`.
   * Access to an S3-like backend (e.g., LocalStack) for state storage.
-</Callout>
 
 ***
 

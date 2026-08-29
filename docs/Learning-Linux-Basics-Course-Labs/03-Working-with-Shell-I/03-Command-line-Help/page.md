@@ -6,9 +6,7 @@ This article explores methods for accessing help in the shell, enhancing product
 
 In this guide, we’ll explore several effective methods for accessing help while working in the shell. Whether you’re new to Linux and the Bash Shell or simply need a quick reference on a specific command, these built-in tools can greatly enhance your productivity.
 
-<Callout icon="lightbulb">
-  For a rapid summary of any command, try using the "whatis" command. It provides a concise, one-line description that’s perfect for verifying a command's purpose before diving deeper.
-</Callout>
+> **lightbulb** For a rapid summary of any command, try using the "whatis" command. It provides a concise, one-line description that’s perfect for verifying a command's purpose before diving deeper.
 
 ## Using "whatis" and "man"
 
@@ -61,6 +59,4 @@ This article provided an overview of common methods for retrieving help directly
 
 Now that you’re familiar with these tools, try applying these techniques in a hands-on lab exercise to further enhance your command-line proficiency.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/267dec49-c3e9-4627-b7f8-9bf9aa834e53/lesson/e79dd519-2c1f-4a34-97ba-6f78b1573dbe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/267dec49-c3e9-4627-b7f8-9bf9aa834e53/lesson/e79dd519-2c1f-4a34-97ba-6f78b1573dbe)

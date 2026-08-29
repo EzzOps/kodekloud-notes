@@ -98,14 +98,10 @@ tests/test_calculations.py::test_add testing add function PASSED
 ========= 1 passed in 0.05s =========
 ```
 
-<Callout icon="lightbulb">
-  Using the `-s` flag is particularly useful when debugging tests that rely heavily on console output.
-</Callout>
+> **lightbulb** Using the `-s` flag is particularly useful when debugging tests that rely heavily on console output.
 
 ***
 
 This guide has demonstrated how Pytest flags can be leveraged to improve the clarity and amount of information displayed during tests. Whether you're running tests in a local development environment or as part of an automated pipeline, these flags can significantly enhance your debugging and verification process.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/8d1fe7c2-c0a2-4640-ac19-9b1cf3505796" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/8d1fe7c2-c0a2-4640-ac19-9b1cf3505796)

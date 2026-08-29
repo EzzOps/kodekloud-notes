@@ -8,23 +8,17 @@ In this article, we will explore what a resource quota is, its purpose, and how 
 
 When deploying Pods, you typically target a Namespace (or a Project in OpenShift). In OpenShift, a project essentially functions as a Kubernetes Namespace.
 
-<Frame>
-  ![The image is a diagram related to Red Hat OpenShift Container Platform, showing a user icon connected to a "Name Space" with hierarchical structures.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882808/notes-assets/images/OpenShift-4-ResourceQuota-Overview/openshift-container-platform-namespace-diagram.jpg)
-</Frame>
+![The image is a diagram related to Red Hat OpenShift Container Platform, showing a user icon connected to a "Name Space" with hierarchical structures.](https://kodekloud.com/kk-media/image/upload/v1752882808/notes-assets/images/OpenShift-4-ResourceQuota-Overview/openshift-container-platform-namespace-diagram.jpg)
 
 Within a project or namespace, administrators can define resource limits and requests for components such as CPU and memory. This configuration ensures that the namespace has access only to a specified amount of compute resources. If a Pod is scheduled for deployment in a namespace that has exceeded its resource quota, it will remain in a pending state until the necessary resources become available.
 
 A resource quota imposes constraints on the resources available per project, specifying limits for both resource requests and overall compute resources including CPU and memory. If resource demands exceed these constraints, additional Pods cannot be deployed until resources are freed—for example, when an active Pod is terminated and its resources are released.
 
-<Frame>
-  ![The image illustrates a concept of setting constraints for compute resources, featuring icons of a CPU and memory, with a status labeled as "Pending."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882810/notes-assets/images/OpenShift-4-ResourceQuota-Overview/compute-resource-constraints-pending.jpg)
-</Frame>
+![The image illustrates a concept of setting constraints for compute resources, featuring icons of a CPU and memory, with a status labeled as "Pending."](https://kodekloud.com/kk-media/image/upload/v1752882810/notes-assets/images/OpenShift-4-ResourceQuota-Overview/compute-resource-constraints-pending.jpg)
 
 Resource quotas can also limit the total number of certain storage and compute resources. This helps in efficiently segregating and managing resources. The image below shows various constraints related to resource quotas, emphasizing limitations on both resource quantities and the total number of storage and compute items.
 
-<Frame>
-  ![The image shows a list of constraints related to resource quotas, including limiting the quantity of resources and the total number of storage and computer resources, with red dropdown icons next to each item.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882811/notes-assets/images/OpenShift-4-ResourceQuota-Overview/resource-quotas-constraints-list.jpg)
-</Frame>
+![The image shows a list of constraints related to resource quotas, including limiting the quantity of resources and the total number of storage and computer resources, with red dropdown icons next to each item.](https://kodekloud.com/kk-media/image/upload/v1752882811/notes-assets/images/OpenShift-4-ResourceQuota-Overview/resource-quotas-constraints-list.jpg)
 
 ## Example: Memory Resource Quota for a Namespace
 
@@ -71,14 +65,10 @@ In this configuration, the namespace is limited to:
 
 Managing constraints can be performed both at the Pod level and the Namespace level. While setting per-Pod requests and limits provides granularity, managing quotas at the namespace level simplifies resource management, especially when handling multiple manifests. This consolidated approach significantly reduces management overhead in large-scale Kubernetes environments.
 
-<Callout icon="lightbulb">
-  Using resource quotas is a best practice for preventing resource contention and ensuring that no single project monopolizes cluster resources.
-</Callout>
+> **lightbulb** Using resource quotas is a best practice for preventing resource contention and ensuring that no single project monopolizes cluster resources.
 
 In summary, resource quotas are vital tools for managing resource allocation in Kubernetes and OpenShift environments. They enforce constraints on resource usage, ensuring that each namespace or project operates within its predefined limits.
 
 For additional information on Kubernetes resource management, consider reviewing the [Kubernetes Documentation](https://kubernetes.io/docs/) and exploring further topics such as [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/299109a4-a983-4f84-837b-a852a3a59895" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/299109a4-a983-4f84-837b-a852a3a59895)

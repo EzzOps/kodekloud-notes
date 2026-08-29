@@ -26,9 +26,7 @@ Common examples:
 * Hundreds of computers at a company accessing shared storage.
 * Local networks that operate entirely without Internet access — devices can communicate directly.
 
-<Callout icon="lightbulb">
-  Local networks (for example, PANs or LANs) can let devices communicate even when the Internet is unavailable. The Internet is one possible extension, not a requirement.
-</Callout>
+> **lightbulb** Local networks (for example, PANs or LANs) can let devices communicate even when the Internet is unavailable. The Internet is one possible extension, not a requirement.
 
 Wired vs wireless
 
@@ -92,9 +90,7 @@ Latency and the Internet
 Security and scale
 As networks grow, exposure to security and privacy risks increases. More devices and broader reach require structure: routing, addressing, access control, logging, and monitoring. How you organize sharing — whether peer‑to‑peer or client‑server — affects performance, manageability, and security posture.
 
-<Callout icon="warning">
-  Larger, more connected networks require stronger security controls (segmentation, authentication, monitoring). An open or poorly managed WAN can expose many systems at once.
-</Callout>
+> **warning** Larger, more connected networks require stronger security controls (segmentation, authentication, monitoring). An open or poorly managed WAN can expose many systems at once.
 
 Peer-to-peer (P2P)
 
@@ -156,6 +152,4 @@ Further reading and references:
 * [Peer-to-peer — Wikipedia](https://en.wikipedia.org/wiki/Peer-to-peer)
 * [Client–server model — Wikipedia](https://en.wikipedia.org/wiki/Client–server_model)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/networks-and-communications/module/f96c3ffe-8569-4a9d-99c2-2fe528af47cb/lesson/2c4351da-b634-49b2-9ee5-ad2baf84f54f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/networks-and-communications/module/f96c3ffe-8569-4a9d-99c2-2fe528af47cb/lesson/2c4351da-b634-49b2-9ee5-ad2baf84f54f)

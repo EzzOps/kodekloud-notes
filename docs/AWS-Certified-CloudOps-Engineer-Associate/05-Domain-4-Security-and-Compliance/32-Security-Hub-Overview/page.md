@@ -6,7 +6,7 @@ This article provides an overview of AWS Security Hub, detailing its features, b
 
 Welcome to this lesson on AWS Security Hub. In this guide, you will learn how Security Hub centralizes security findings across your AWS environment, acting as a comprehensive cloud security posture management system. It aggregates findings from both AWS native services and third-party tools, giving you a unified view of your cloud security across multiple accounts and regions.
 
-![The image shows a digital dashboard with various charts and graphs, labeled "Security Hub," indicating it highlights security concerns in AWS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860596/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-Hub-Overview/security-hub-aws-dashboard-charts.jpg)
+![The image shows a digital dashboard with various charts and graphs, labeled "Security Hub," indicating it highlights security concerns in AWS.](https://kodekloud.com/kk-media/image/upload/v1752860596/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-Hub-Overview/security-hub-aws-dashboard-charts.jpg)
 
 Security Hub collects and correlates security data from several services including:
 
@@ -17,7 +17,7 @@ Security Hub collects and correlates security data from several services includi
 
 It also integrates with leading third-party solutions such as [CrowdStrike](https://www.crowdstrike.com) and [Palo Alto](https://www.paloaltonetworks.com) to further enhance your security posture.
 
-![The image is a diagram titled "Security Hub" showing various security tools: GuardDuty, Inspector, Macie, CloudWatch Events, Lambda, and External Security Tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860598/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-Hub-Overview/security-hub-tools-diagram.jpg)
+![The image is a diagram titled "Security Hub" showing various security tools: GuardDuty, Inspector, Macie, CloudWatch Events, Lambda, and External Security Tools.](https://kodekloud.com/kk-media/image/upload/v1752860598/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-Hub-Overview/security-hub-tools-diagram.jpg)
 
 ## Key Benefits
 
@@ -29,19 +29,19 @@ AWS Security Hub offers several key advantages:
 * **Compliance:** Streamline auditing processes and compliance checks with built-in rule packs.
 * **Scalability:** Easily scale your security monitoring as your environment grows across regions and accounts.
 
-![The image is an infographic titled "Security Hub – Benefits," highlighting five benefits: Centralized view, Prioritization, Automation, Compliance, and Scalability. Each benefit is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860599/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-Hub-Overview/security-hub-benefits-infographic.jpg)
+![The image is an infographic titled "Security Hub – Benefits," highlighting five benefits: Centralized view, Prioritization, Automation, Compliance, and Scalability. Each benefit is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752860599/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-Hub-Overview/security-hub-benefits-infographic.jpg)
 
 For example, if a vulnerability is detected on an EC2 instance by Inspector, Security Hub aggregates the finding, prioritizes it, and triggers an EventBridge event. This event can then invoke a Lambda function to either remediate the issue or notify the appropriate teams.
 
-![The image is a flowchart illustrating a security process involving EC2, Inspector, Security Hub, EventBridge, and Lambda, showing the detection and remediation of vulnerabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860600/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-Hub-Overview/security-process-flowchart-ec2-inspector.jpg)
+![The image is a flowchart illustrating a security process involving EC2, Inspector, Security Hub, EventBridge, and Lambda, showing the detection and remediation of vulnerabilities.](https://kodekloud.com/kk-media/image/upload/v1752860600/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-Hub-Overview/security-process-flowchart-ec2-inspector.jpg)
 
 Furthermore, other AWS services like AWS Config and Step Functions can be seamlessly integrated into your security workflows to detect configuration changes and orchestrate complex remediation processes across multiple services.
 
-![The image is a flowchart illustrating the integration of various security tools like GuardDuty, Inspector, and Macie with AWS Security Hub, which connects to EventBridge and further integrates with services like Step Functions, Lambda, and Systems Manager.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860601/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-Hub-Overview/security-tools-integration-flowchart.jpg)
+![The image is a flowchart illustrating the integration of various security tools like GuardDuty, Inspector, and Macie with AWS Security Hub, which connects to EventBridge and further integrates with services like Step Functions, Lambda, and Systems Manager.](https://kodekloud.com/kk-media/image/upload/v1752860601/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-Hub-Overview/security-tools-integration-flowchart.jpg)
 
 Since Security Hub supports multi-region data aggregation, tracking security findings across diverse geographical locations becomes effortless. It leverages AWS Config to monitor configuration changes and enforce compliance rule packs. During setup, you will be prompted to enable AWS Config, choose compliance packs (such as PCI DSS, HIPAA, or various CIS benchmarks), and designate a primary administrator account.
 
-![The image illustrates a diagram of a Security Hub with multi-region aggregation, showing regions A, B, C, D, and E connected to an administrator account.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860602/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-Hub-Overview/security-hub-multi-region-diagram.jpg)
+![The image illustrates a diagram of a Security Hub with multi-region aggregation, showing regions A, B, C, D, and E connected to an administrator account.](https://kodekloud.com/kk-media/image/upload/v1752860602/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-Hub-Overview/security-hub-multi-region-diagram.jpg)
 
 ## Security Findings Format
 
@@ -104,7 +104,7 @@ Severity ratings in AWS Security Hub assist in prioritizing remediation efforts.
 
 A normalized value of 80 typically indicates a high-risk finding that demands prompt attention. Critical findings with normalized values nearing 100 require immediate action, while medium and low severities suggest issues that need attention but are not as urgent. Informational findings are generally recommendations or audit flags.
 
-![The image is a severity scale for prioritizing security findings, ranging from "Critical" to "Informational." It includes five levels: Critical, High, Medium, Low, and Informational, with a note that informational findings lack immediate threats.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860603/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-Hub-Overview/security-findings-severity-scale.jpg)
+![The image is a severity scale for prioritizing security findings, ranging from "Critical" to "Informational." It includes five levels: Critical, High, Medium, Low, and Informational, with a note that informational findings lack immediate threats.](https://kodekloud.com/kk-media/image/upload/v1752860603/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-Hub-Overview/security-findings-severity-scale.jpg)
 
 ## The Security Hub Console
 
@@ -117,7 +117,7 @@ When you launch the AWS Security Hub console, you are presented with a dashboard
 
 Once the findings are available, you can filter them by account, resource, application, or region. In addition, cross-region aggregation is configurable, ensuring streamlined monitoring across your entire AWS landscape.
 
-![The image shows a screenshot of the AWS Security Hub console, displaying security standards, assets with findings, and findings by region. It includes options for enabling standards and configuring cross-region aggregation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860604/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-Hub-Overview/aws-security-hub-console-screenshot.jpg)
+![The image shows a screenshot of the AWS Security Hub console, displaying security standards, assets with findings, and findings by region. It includes options for enabling standards and configuring cross-region aggregation.](https://kodekloud.com/kk-media/image/upload/v1752860604/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-Hub-Overview/aws-security-hub-console-screenshot.jpg)
 
 > **lightbulb** Security Hub's integration with AWS Config and EventBridge not only tracks configuration changes and compliance rule packs but also facilitates automated remediation using services like Lambda, Step Functions, or Systems Manager.
 

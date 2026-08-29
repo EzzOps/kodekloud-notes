@@ -14,9 +14,7 @@ cmctl renew <certificate-name>
 
 Let’s Encrypt is a free, automated, and open certificate authority (CA) that uses the ACME protocol to issue SSL/TLS certificates. It empowers Kubernetes users to secure applications without manual certificate provisioning.
 
-<Frame>
-  ![The image is an overview of Let's Encrypt, highlighting features such as free usage, standard and wildcard certificates valid for 90 days, production and staging usage, and programmatic access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880396/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cert-Manager-and-Lets-Encrypt-Overview/letsencrypt-overview-features-certificates.jpg)
-</Frame>
+![The image is an overview of Let's Encrypt, highlighting features such as free usage, standard and wildcard certificates valid for 90 days, production and staging usage, and programmatic access.](https://kodekloud.com/kk-media/image/upload/v1752880396/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cert-Manager-and-Lets-Encrypt-Overview/letsencrypt-overview-features-certificates.jpg)
 
 Key points about Let’s Encrypt:
 
@@ -40,9 +38,7 @@ The ACME flow:
 4. After validation, Let’s Encrypt issues the certificate.
 5. Client fetches and stores the certificate in Kubernetes.
 
-<Frame>
-  ![The image is a flowchart illustrating the process of how Let's Encrypt works, including steps like client request, challenge, validation, certificate issuance, and renewal. It emphasizes "Public Trust by Transparency."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880397/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cert-Manager-and-Lets-Encrypt-Overview/lets-encrypt-flowchart-process-illustration.jpg)
-</Frame>
+![The image is a flowchart illustrating the process of how Let's Encrypt works, including steps like client request, challenge, validation, certificate issuance, and renewal. It emphasizes "Public Trust by Transparency."](https://kodekloud.com/kk-media/image/upload/v1752880397/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cert-Manager-and-Lets-Encrypt-Overview/lets-encrypt-flowchart-process-illustration.jpg)
 
 ***
 
@@ -50,9 +46,7 @@ The ACME flow:
 
 To use Let’s Encrypt as your certificate authority, define an Issuer or ClusterIssuer in cert-manager:
 
-<Frame>
-  ![The image is a diagram showing the relationship between Cert-Manager and Let's Encrypt, with two issuers: "letsencrypt-staging" and "letsencrypt-prod," connected to Cert-Manager.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880398/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cert-Manager-and-Lets-Encrypt-Overview/cert-manager-letsencrypt-issuers-diagram.jpg)
-</Frame>
+![The image is a diagram showing the relationship between Cert-Manager and Let's Encrypt, with two issuers: "letsencrypt-staging" and "letsencrypt-prod," connected to Cert-Manager.](https://kodekloud.com/kk-media/image/upload/v1752880398/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cert-Manager-and-Lets-Encrypt-Overview/cert-manager-letsencrypt-issuers-diagram.jpg)
 
 ### Example: Staging Issuer
 
@@ -73,9 +67,7 @@ spec:
           class: nginx
 ```
 
-<Callout icon="lightbulb">
-  When moving to production, update the `server` URL to the production ACME endpoint and rename secrets accordingly.
-</Callout>
+> **lightbulb** When moving to production, update the `server` URL to the production ACME endpoint and rename secrets accordingly.
 
 ***
 
@@ -119,9 +111,7 @@ When this Ingress is applied, cert-manager handles ACME challenges, retrieves th
 * [Kubernetes Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 * [ACME RFC (RFC 8555)](https://datatracker.ietf.org/doc/html/rfc8555)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/c8cd2c23-8d3f-4497-99c1-710836bebaf2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/c8cd2c23-8d3f-4497-99c1-710836bebaf2)
 
 
 # Cilium Hubble Overview
@@ -138,9 +128,7 @@ Hubble components:
 * **Relay** to aggregate data across nodes
 * **Integrations** with Prometheus (metrics), Grafana (dashboards, service maps), and Hubble UI/CLI for interactive inspection
 
-<Frame>
-  ![The image is a diagram explaining Hubble, a tool built on Cilium (eBPF), highlighting its features like network observation, troubleshooting, and monitoring, with components like Grafana, Prometheus, and Hubble UI/CLI. It shows nodes with pods and integrations for metrics, service maps, and flow inspection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880399/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cilium-Hubble-Overview/hubble-cilium-ebpf-diagram-features.jpg)
-</Frame>
+![The image is a diagram explaining Hubble, a tool built on Cilium (eBPF), highlighting its features like network observation, troubleshooting, and monitoring, with components like Grafana, Prometheus, and Hubble UI/CLI. It shows nodes with pods and integrations for metrics, service maps, and flow inspection.](https://kodekloud.com/kk-media/image/upload/v1752880399/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cilium-Hubble-Overview/hubble-cilium-ebpf-diagram-features.jpg)
 
 ## Built-in Metrics for Prometheus
 
@@ -156,9 +144,7 @@ Hubble exports metrics in the [Prometheus OpenMetrics format](https://prometheus
 | icmp              | ICMP echo requests and replies                  | Monitor ping flood or unreachable hosts     |
 | httpV2            | HTTP/2 metrics with exemplars and label context | Trace request latencies with context labels |
 
-<Callout icon="lightbulb">
-  Enable only the metrics you need to reduce data volume and improve query performance.
-</Callout>
+> **lightbulb** Enable only the metrics you need to reduce data volume and improve query performance.
 
 ### Enabling Hubble Metrics via Helm
 
@@ -181,9 +167,7 @@ helm upgrade cilium cilium/cilium --version CILIUM_VERSION \
 
 Hubble offers both a web-based UI and a scriptable CLI, providing deep visibility into service interactions, network flows, and security policy verdicts.
 
-<Frame>
-  ![The image outlines Hubble's offerings, including Built-in Metrics for Prometheus, Hubble UI, and Hubble CLI, each with specific features related to metrics, service dependencies, network flows, protocols, filtering, and security information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880400/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cilium-Hubble-Overview/hubble-offerings-metrics-ui-cli.jpg)
-</Frame>
+![The image outlines Hubble's offerings, including Built-in Metrics for Prometheus, Hubble UI, and Hubble CLI, each with specific features related to metrics, service dependencies, network flows, protocols, filtering, and security information.](https://kodekloud.com/kk-media/image/upload/v1752880400/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cilium-Hubble-Overview/hubble-offerings-metrics-ui-cli.jpg)
 
 ### Hubble UI
 
@@ -198,13 +182,9 @@ The Hubble UI delivers interactive dashboards and service maps:
 
 Example service dependency graph:
 
-<Frame>
-  ![The image is a diagram from the Hubble UI showing a network of interconnected services, including "recruiter," "jobposting," "crawler," "coreapi," "loader," "elasticsearch," "kafka," and "zookeeper." Each service is represented with its respective ports and protocols.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880401/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cilium-Hubble-Overview/hubble-ui-network-services-diagram.jpg)
-</Frame>
+![The image is a diagram from the Hubble UI showing a network of interconnected services, including "recruiter," "jobposting," "crawler," "coreapi," "loader," "elasticsearch," "kafka," and "zookeeper." Each service is represented with its respective ports and protocols.](https://kodekloud.com/kk-media/image/upload/v1752880401/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cilium-Hubble-Overview/hubble-ui-network-services-diagram.jpg)
 
-<Callout icon="triangle-alert">
-  Avoid exposing the Hubble UI publicly without proper authentication. Use port-forwarding or an ingress with strong access controls.
-</Callout>
+> **triangle-alert** Avoid exposing the Hubble UI publicly without proper authentication. Use port-forwarding or an ingress with strong access controls.
 
 #### Launching Hubble UI Locally
 

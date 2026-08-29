@@ -75,16 +75,12 @@ Deep dives and hands-on focus
 
 Hands-on learning: AWS Cloud Labs
 
-<Callout icon="lightbulb">
-  This course emphasizes hands-on learning through AWS Cloud Labs. Cloud Labs provide short-lived, browser-based access to AWS infrastructure so you can complete exercises safely and without managing your own cloud account. They let you practice provisioning, configuring, and experimenting with services while following the lesson material step-by-step.
-</Callout>
+> **lightbulb** This course emphasizes hands-on learning through AWS Cloud Labs. Cloud Labs provide short-lived, browser-based access to AWS infrastructure so you can complete exercises safely and without managing your own cloud account. They let you practice provisioning, configuring, and experimenting with services while following the lesson material step-by-step.
 
 Community and support
 At KodeKloud, community engagement is an important part of learning. Use the course forum to ask questions, share insights, and collaborate with peers and instructors.
 
-<Callout icon="warning">
-  Hands-on labs simulate real environments. If you run your own AWS account outside of the lab environment, monitor resource usage and cost—especially for long-running RDS instances, Redshift clusters, and large ElastiCache nodes.
-</Callout>
+> **warning** Hands-on labs simulate real environments. If you run your own AWS account outside of the lab environment, monitor resource usage and cost—especially for long-running RDS instances, Redshift clusters, and large ElastiCache nodes.
 
 Related KodeKloud courses and further learning
 
@@ -94,6 +90,4 @@ Related KodeKloud courses and further learning
 
 Join us on this journey through AWS databases. Enroll now to gain practical skills in managed database services, caching, analytics, graph and time-series databases, and search/observability.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/00cedd0b-10e0-4a33-8fb2-8a0f3bc51fb9/lesson/31a08734-9e2c-42e2-ba34-688582a41f16" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/00cedd0b-10e0-4a33-8fb2-8a0f3bc51fb9/lesson/31a08734-9e2c-42e2-ba34-688582a41f16)

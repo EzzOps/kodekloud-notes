@@ -14,9 +14,7 @@ Jenkins is most commonly deployed as a self-hosted service that you provision an
   <img alt="A slide titled &#x22;Architecture & Hosting&#x22; comparing Jenkins and GitHub Actions, showing the Jenkins mascot on the left and the GitHub Actions icon on the right. It lists Jenkins as self‑hosted with manual scaling and ongoing maintenance, while GitHub Actions is shown as hybrid/cloud with out‑of‑the‑box auto‑scaling and reduced upkeep." />
 </Frame>
 
-<Callout icon="lightbulb">
-  If you want minimal infrastructure maintenance, prefer GitHub-hosted runners. If your builds require specialized hardware, self-hosted runners (in either Jenkins or Actions) allow custom environments.
-</Callout>
+> **lightbulb** If you want minimal infrastructure maintenance, prefer GitHub-hosted runners. If your builds require specialized hardware, self-hosted runners (in either Jenkins or Actions) allow custom environments.
 
 ## Pipeline format and where pipeline code lives
 
@@ -117,9 +115,7 @@ on:
   * Fine-grained workflow permissions and ephemeral environments: GitHub-hosted runners are isolated and discarded after each job, reducing persistence risk.
   * You can still use self-hosted runners when you need custom networking or hardware; these require the same diligence as Jenkins agents.
 
-<Callout icon="warning">
-  When migrating, do not blindly copy secrets or credentials into workflow files. Use encrypted repository/org secrets and avoid exposing sensitive data in logs or outputs.
-</Callout>
+> **warning** When migrating, do not blindly copy secrets or credentials into workflow files. Use encrypted repository/org secrets and avoid exposing sensitive data in logs or outputs.
 
 <Frame>
   <img alt="A presentation slide titled &#x22;Security & Secrets Management&#x22; comparing Jenkins and GitHub Actions. It notes Jenkins needs manual encrypted setup and can be vulnerable if the server is compromised, while GitHub Actions uses repo/org-level encrypted secrets, fine-grained permissions, and isolated ephemeral containers." />
@@ -152,6 +148,4 @@ on:
 
 If you’re planning a migration, start by inventorying Jenkins jobs, external integrations, secrets, and any long-running agents to design an equivalent setup in GitHub Actions (or decide to keep some runners self-hosted).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/c8922198-0dcd-4910-9545-21e08f8a847c/lesson/1c1377c1-12f1-48e8-8761-e485c5a3f4f7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/c8922198-0dcd-4910-9545-21e08f8a847c/lesson/1c1377c1-12f1-48e8-8761-e485c5a3f4f7)

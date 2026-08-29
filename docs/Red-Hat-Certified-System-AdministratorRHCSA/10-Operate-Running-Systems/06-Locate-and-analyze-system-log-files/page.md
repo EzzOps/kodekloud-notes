@@ -47,9 +47,7 @@ boot.log-20211104  libvirt         tuned
 $ su
 ```
 
-<Callout icon="lightbulb">
-  Keep in mind that switching to the root user helps you access all log files, but also demands careful handling to avoid unintended modifications.
-</Callout>
+> **lightbulb** Keep in mind that switching to the root user helps you access all log files, but also demands careful handling to avoid unintended modifications.
 
 ## Analyzing Specific Log Files
 
@@ -271,9 +269,7 @@ Specifying boot ID or boot offset has no effect, no persistent journal was found
 $ mkdir /var/log/journal/
 ```
 
-<Callout icon="triangle-alert">
-  Before configuring persistent journals, ensure you understand the disk space implications and security policies of your environment.
-</Callout>
+> **triangle-alert** Before configuring persistent journals, ensure you understand the disk space implications and security policies of your environment.
 
 ## Viewing Login History
 
@@ -310,8 +306,6 @@ This guide has explored multiple methods to locate and analyze system log files 
 
 Let's now proceed to some hands-on labs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/a2b48ce0-5735-49f6-8a30-3ebc3584007f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/a2b48ce0-5735-49f6-8a30-3ebc3584007f)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/76f1be28-bdb1-4acc-b8ce-ecb3909b595d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/76f1be28-bdb1-4acc-b8ce-ecb3909b595d)

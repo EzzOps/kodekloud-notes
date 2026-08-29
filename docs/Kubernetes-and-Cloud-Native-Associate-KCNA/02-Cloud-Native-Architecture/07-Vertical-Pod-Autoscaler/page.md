@@ -187,9 +187,7 @@ Status:
 
 The "Target" values represent the current recommendations, while "Lower Bound" and "Upper Bound" provide the feasible range based on observed resource usage. Adjust these recommendations as needed for your production environment.
 
-<Callout icon="lightbulb">
-  For information on working with Kubernetes resource allocations and autoscaling, refer to [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/).
-</Callout>
+> **lightbulb** For information on working with Kubernetes resource allocations and autoscaling, refer to [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/).
 
 ***
 
@@ -199,6 +197,4 @@ This article provided an in-depth overview of the Vertical Pod Autoscaler, detai
 
 Thank you for reading, and see you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/c5b96591-7106-4a51-abe1-d77b53e1a92c/lesson/6b7981d6-541e-4435-a6ff-33141dd55cc3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/c5b96591-7106-4a51-abe1-d77b53e1a92c/lesson/6b7981d6-541e-4435-a6ff-33141dd55cc3)

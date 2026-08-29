@@ -46,9 +46,7 @@ Right-click the table in SSMS, select **Encrypt Columns**, and the Always Encryp
   * **Deterministic Encryption:** Always returns the same encrypted value for identical plaintext.
   * **Randomized Encryption:** Provides full data anonymity by encrypting data differently each time.
 
-<Frame>
-  ![The image illustrates the implementation of "Always Encrypted" using a wizard, showing the encryption of data columns like "First Name" and "SSN" with column master keys. It includes screenshots of the column selection and master key configuration processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881765/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Always-encrypted/always-encrypted-wizard-implementation.jpg)
-</Frame>
+![The image illustrates the implementation of "Always Encrypted" using a wizard, showing the encryption of data columns like "First Name" and "SSN" with column master keys. It includes screenshots of the column selection and master key configuration processes.](https://kodekloud.com/kk-media/image/upload/v1752881765/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Always-encrypted/always-encrypted-wizard-implementation.jpg)
 
 ### Step 3: Key Generation and Storage
 
@@ -76,13 +74,9 @@ SELECT TOP (1000) [AddressID],
 FROM [SalesLT].[Address]
 ```
 
-<Frame>
-  ![The image shows a SQL Server Management Studio interface with a query window displaying a SQL query and its results. A "Summary" dialog box is open, detailing encryption settings for a database operation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881766/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Always-encrypted/sql-server-management-studio-query-results.jpg)
-</Frame>
+![The image shows a SQL Server Management Studio interface with a query window displaying a SQL query and its results. A "Summary" dialog box is open, detailing encryption settings for a database operation.](https://kodekloud.com/kk-media/image/upload/v1752881766/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Always-encrypted/sql-server-management-studio-query-results.jpg)
 
-<Callout icon="lightbulb">
-  Always ensure that your client application securely manages the encryption keys to maintain data confidentiality.
-</Callout>
+> **lightbulb** Always ensure that your client application securely manages the encryption keys to maintain data confidentiality.
 
 ## Conclusion
 
@@ -90,6 +84,4 @@ The implementation of Always Encrypted provides an effective means to secure sen
 
 In our next module, we will explore security operations in greater depth. Stay tuned!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d199f126-f1df-43a8-bd3d-68cd689d509d/lesson/f3e7dc83-4b53-4eb4-889f-0efd185c6213" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d199f126-f1df-43a8-bd3d-68cd689d509d/lesson/f3e7dc83-4b53-4eb4-889f-0efd185c6213)

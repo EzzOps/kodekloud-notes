@@ -18,9 +18,7 @@ During the **code analysis stage**, Jenkins performs the following steps:
 
 After the tests pass, the pull request undergoes a review by a team lead or manager. Once approved and merged into the main branch, the code changes automatically initiate the **release pipeline**.
 
-<Frame>
-  ![The image illustrates a code analysis pipeline configuration, showing a flow from a pull request to code checkout, dependency installation, and code testing, with a Jenkins logo at the bottom right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879837/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Advanced-Pipeline/code-analysis-pipeline-jenkins.jpg)
-</Frame>
+![The image illustrates a code analysis pipeline configuration, showing a flow from a pull request to code checkout, dependency installation, and code testing, with a Jenkins logo at the bottom right.](https://kodekloud.com/kk-media/image/upload/v1752879837/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Advanced-Pipeline/code-analysis-pipeline-jenkins.jpg)
 
 ## Release Pipeline Process
 
@@ -33,13 +31,9 @@ Upon merging into the main branch, the release pipeline undertakes the following
 5. Pushes the Docker image to DockerHub.
 6. Deploys the new version to a Kubernetes cluster.
 
-<Frame>
-  ![The image shows a diagram of a Git branching model with "main" and "feature-x" branches, alongside a release pipeline process with steps like checking out code, bumping semantic version, tagging, releasing, building, and pushing a Docker image.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879839/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Advanced-Pipeline/git-branching-model-release-pipeline.jpg)
-</Frame>
+![The image shows a diagram of a Git branching model with "main" and "feature-x" branches, alongside a release pipeline process with steps like checking out code, bumping semantic version, tagging, releasing, building, and pushing a Docker image.](https://kodekloud.com/kk-media/image/upload/v1752879839/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Advanced-Pipeline/git-branching-model-release-pipeline.jpg)
 
-<Callout icon="lightbulb">
-  Programmatically creating a Git tag and release requires an access token to interact with GitHub's API.
-</Callout>
+> **lightbulb** Programmatically creating a Git tag and release requires an access token to interact with GitHub's API.
 
 Several credentials are critical for secure operations within our pipeline:
 
@@ -62,15 +56,11 @@ Our CI/CD pipeline utilizes a tool that interprets commit messages written in th
 * A commit starting with `feat:` bumps the minor version.
 * A commit starting with `feat!:` signals a breaking change and bumps the major version.
 
-<Frame>
-  ![The image explains semantic versioning, detailing major, minor, and patch versions with examples of changes for each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879839/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Advanced-Pipeline/semantic-versioning-major-minor-patch.jpg)
-</Frame>
+![The image explains semantic versioning, detailing major, minor, and patch versions with examples of changes for each.](https://kodekloud.com/kk-media/image/upload/v1752879839/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Advanced-Pipeline/semantic-versioning-major-minor-patch.jpg)
 
 Furthermore, the conventional commits format directly influences the version update process by dictating whether the major, minor, or patch number increases.
 
-<Frame>
-  ![The image illustrates the concept of conventional commits with examples, showing a version number "v3.6.2" and three commit messages: "fix: timeout bug," "feat: Chat functionality," and "feat!: Added Authentication."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879840/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Advanced-Pipeline/conventional-commits-examples-v3-6-2.jpg)
-</Frame>
+![The image illustrates the concept of conventional commits with examples, showing a version number "v3.6.2" and three commit messages: "fix: timeout bug," "feat: Chat functionality," and "feat!: Added Authentication."](https://kodekloud.com/kk-media/image/upload/v1752879840/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Advanced-Pipeline/conventional-commits-examples-v3-6-2.jpg)
 
 ## Code Quality Pipeline
 
@@ -220,6 +210,4 @@ After successfully building, tagging, and pushing the Docker image, the applicat
 
 This advanced pipeline setup enhances quality control and automates deployments by integrating code analysis, semantic versioning, and a robust release process. For more insights and documentation on similar topics, consider exploring our [Jenkins Documentation](https://www.jenkins.io/doc/) and [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/79ea1422-fc3a-48da-851d-232fc09690de/lesson/c21f7069-353a-498b-a5a9-b01a195d1b48" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/79ea1422-fc3a-48da-851d-232fc09690de/lesson/c21f7069-353a-498b-a5a9-b01a195d1b48)

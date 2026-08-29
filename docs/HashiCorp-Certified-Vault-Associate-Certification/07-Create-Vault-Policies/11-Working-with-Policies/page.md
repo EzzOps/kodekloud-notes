@@ -48,9 +48,7 @@ identity_policies      []
 | token\_policies    | List of attached policies (always includes `default`) |
 | identity\_policies | Attached identity group policies (if any)             |
 
-<Callout icon="lightbulb">
-  Every token in Vault inherits the `default` policy. Always design your custom policies to grant only the permissions required for your application.
-</Callout>
+> **lightbulb** Every token in Vault inherits the `default` policy. Always design your custom policies to grant only the permissions required for your application.
 
 ***
 

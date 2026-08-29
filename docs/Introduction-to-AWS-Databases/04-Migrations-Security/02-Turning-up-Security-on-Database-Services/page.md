@@ -12,9 +12,7 @@ In this lesson we review practical security controls and design attributes for s
 
 Key takeaway: as you move from self-managed EC2-based databases to platform and fully managed services, your operational surface area shrinks — but IAM, logging/monitoring, and encryption remain essential controls you must implement and maintain.
 
-<Callout icon="lightbulb">
-  Managed database services reduce operational burden, but you still control access (IAM), auditing (CloudTrail/Config), logging (CloudWatch/S3), and encryption (KMS/TDE/SSL). Treat these as non-optional security foundations.
-</Callout>
+> **lightbulb** Managed database services reduce operational burden, but you still control access (IAM), auditing (CloudTrail/Config), logging (CloudWatch/S3), and encryption (KMS/TDE/SSL). Treat these as non-optional security foundations.
 
 ## Database logs and monitoring
 
@@ -96,9 +94,7 @@ Encryption at rest
   2. Copy the snapshot and enable encryption on the copied snapshot.
   3. Restore a new DB instance from the encrypted snapshot.
 
-<Callout icon="warning">
-  Encryption at rest must be enabled when creating the DB instance. To convert an existing unencrypted RDS instance to encrypted, snapshot it, copy the snapshot with encryption enabled, then restore a new encrypted instance from that snapshot.
-</Callout>
+> **warning** Encryption at rest must be enabled when creating the DB instance. To convert an existing unencrypted RDS instance to encrypted, snapshot it, copy the snapshot with encryption enabled, then restore a new encrypted instance from that snapshot.
 
 Client-side encryption (encrypting data before sending it to the DB) is an option for defense-in-depth or strict compliance, but it increases complexity (key lifecycle, indexability, application changes). For most workloads, using AWS-managed encryption (KMS/TDE where appropriate) is the recommended approach unless a particular compliance use case requires client-side encryption.
 
@@ -141,6 +137,4 @@ Scenario — healthtech company ensuring encryption in transit:
 
 This lesson covered the essential security controls to "turn up" for RDS and similar managed database services: centralized logging and monitoring, encryption at rest and in transit, and strict IAM and auditing. Implement these consistently to reduce risk and simplify investigations.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/79ca746d-b567-4dae-92cd-e572992ff80e/lesson/24b90001-3087-41ab-ae9f-df911aecd685" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/79ca746d-b567-4dae-92cd-e572992ff80e/lesson/24b90001-3087-41ab-ae9f-df911aecd685)

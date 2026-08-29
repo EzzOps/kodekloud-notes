@@ -42,7 +42,7 @@ Follow this step-by-step demonstration that uses API calls to manage permissions
 
 First, navigate to your service principals in the Azure portal and create a secret. Select the relevant service principal (the one you created previously) and add a new secret.
 
-![The image shows the Microsoft Azure portal, specifically the "App registrations" section under "Kodekloud," listing various applications with their client IDs, creation dates, and the status of their certificates and secrets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866557/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Permissions-and-Consent/azure-portal-app-registrations-kodekloud.jpg)
+![The image shows the Microsoft Azure portal, specifically the "App registrations" section under "Kodekloud," listing various applications with their client IDs, creation dates, and the status of their certificates and secrets.](https://kodekloud.com/kk-media/image/upload/v1752866557/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Permissions-and-Consent/azure-portal-app-registrations-kodekloud.jpg)
 
 When prompted, provide a descriptive name (for example, "secret 01") and set an expiry (e.g., three months). Click Add and make sure to copy the secret value immediately, as it will not be visible later. Save it securely in your notepad.
 
@@ -50,7 +50,7 @@ When prompted, provide a descriptive name (for example, "secret 01") and set an 
 
 Next, go to the Endpoints section in the Azure portal and copy the OAuth 2.0 token URL.
 
-![The image shows the Microsoft Azure portal with details of an app registration, including application IDs and endpoints. The right side lists various authentication and authorization endpoints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866559/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Permissions-and-Consent/azure-portal-app-registration-endpoints.jpg)
+![The image shows the Microsoft Azure portal with details of an app registration, including application IDs and endpoints. The right side lists various authentication and authorization endpoints.](https://kodekloud.com/kk-media/image/upload/v1752866559/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Permissions-and-Consent/azure-portal-app-registration-endpoints.jpg)
 
 Now, open Postman and create a new POST request using the following configuration:
 
@@ -63,9 +63,9 @@ Now, open Postman and create a new POST request using the following configuratio
 
 Configure the request as illustrated below:
 
-![The image shows a Postman interface with a POST request to a Microsoft login URL, including form data fields for client ID, client secret, and grant type. The left sidebar displays various API collections, and the response section is empty.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866560/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Permissions-and-Consent/postman-post-request-microsoft-login.jpg)
+![The image shows a Postman interface with a POST request to a Microsoft login URL, including form data fields for client ID, client secret, and grant type. The left sidebar displays various API collections, and the response section is empty.](https://kodekloud.com/kk-media/image/upload/v1752866560/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Permissions-and-Consent/postman-post-request-microsoft-login.jpg)
 
-![The image shows a Postman interface with a POST request to a Microsoft login URL, including parameters like client\_id, client\_secret, grant\_type, and scope. The left sidebar displays various API collections and environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866561/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Permissions-and-Consent/postman-post-request-microsoft-login-2.jpg)
+![The image shows a Postman interface with a POST request to a Microsoft login URL, including parameters like client\_id, client\_secret, grant\_type, and scope. The left sidebar displays various API collections and environments.](https://kodekloud.com/kk-media/image/upload/v1752866561/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Permissions-and-Consent/postman-post-request-microsoft-login-2.jpg)
 
 Click on Send. If the request is successful, you will receive a response similar to the following:
 
@@ -138,7 +138,7 @@ Follow these steps:
 3. Select Application permissions and then choose `user.read.all`.
 4. Click on Add.
 
-![The image shows the Microsoft Azure portal interface, specifically the API permissions section for an app registration. It displays configured permissions and options to request additional API permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866563/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Permissions-and-Consent/azure-portal-api-permissions.jpg)
+![The image shows the Microsoft Azure portal interface, specifically the API permissions section for an app registration. It displays configured permissions and options to request additional API permissions.](https://kodekloud.com/kk-media/image/upload/v1752866563/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Permissions-and-Consent/azure-portal-api-permissions.jpg)
 
 > **triangle-alert** Simply adding the permission is not enough; `user.read.all` requires admin consent. If you are not an administrator, contact your tenant administrator to grant the necessary permissions.
 

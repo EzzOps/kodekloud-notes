@@ -11,9 +11,7 @@ Welcome back to this lesson on cybersecurity strategies. In this session, we wil
 * **Host Security:** Explore securing virtual machines, disk encryption, Defender for Endpoint, Security Center recommendations, and privileged access workstations.
 * **Container Security:** Compare virtual machines versus container instances, and discover how to secure services using Azure Container Registry and Azure Kubernetes Service.
 
-<Callout icon="lightbulb">
-  For a hands-on learning experience, make sure you complete the accompanying labs before moving forward to the next topics.
-</Callout>
+> **lightbulb** For a hands-on learning experience, make sure you complete the accompanying labs before moving forward to the next topics.
 
 With that in mind, let's start by exploring perimeter security.
 
@@ -32,6 +30,4 @@ Lastly, we address the hub-spoke topology, which is a crucial design for impleme
 
 With these foundations set, let's proceed to our first in-depth topic: defense in depth.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/cb10a3ae-53f4-4588-ad61-042af34f31ab/lesson/7e573acd-b1c1-44a3-b5ec-89c1f52a37ef" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/cb10a3ae-53f4-4588-ad61-042af34f31ab/lesson/7e573acd-b1c1-44a3-b5ec-89c1f52a37ef)

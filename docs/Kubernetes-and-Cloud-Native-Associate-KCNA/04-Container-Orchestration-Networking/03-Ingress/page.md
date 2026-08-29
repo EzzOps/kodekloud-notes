@@ -10,37 +10,27 @@ Imagine you are deploying an online store with the domain name myonlinestore.com
 
 To expose your application externally, you create a NodePort service and assign port 38080. Users can now access your application using the IP address of any node followed by port 38080 (e.g., http\://\<node-ip>:38080). As traffic grows, the service distributes network traffic across multiple pod replicas.
 
-<Frame>
-  ![The image illustrates a network diagram showing a NodePort service setup for "wear-service" with three instances, accessible via a specific IP and port.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880568/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Ingress/frame_110.jpg)
-</Frame>
+![The image illustrates a network diagram showing a NodePort service setup for "wear-service" with three instances, accessible via a specific IP and port.](https://kodekloud.com/kk-media/image/upload/v1752880568/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Ingress/frame_110.jpg)
 
 In production, exposing node IPs and ports directly is not ideal. Typically, you configure your DNS server to map your domain (myonlinestore.com) to the node IPs and port 38080. However, users would still need to specify the port number in the URL.
 
 To address this, you introduce an additional layer—a proxy server—that forwards requests from the standard port 80 to port 38080. Once your DNS is updated to point to the proxy, users can access your application simply by navigating to myonlinestore.com.
 
-<Frame>
-  ![The image illustrates a network flow diagram for an online store, showing a proxy server and a NodePort service with multiple instances labeled "wear."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880569/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Ingress/frame_140.jpg)
-</Frame>
+![The image illustrates a network flow diagram for an online store, showing a proxy server and a NodePort service with multiple instances labeled "wear."](https://kodekloud.com/kk-media/image/upload/v1752880569/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Ingress/frame_140.jpg)
 
 If your application is deployed on a public cloud such as [Google Cloud Platform (GCP)](https://cloud.google.com), you can opt for a LoadBalancer service instead of a NodePort service. Kubernetes will then provision a high port (like NodePort) and request a network load balancer from GCP. The load balancer receives an external IP address that you can map to your DNS, allowing users to access your application via myonlinestore.com without specifying a port.
 
 As your business expands, you might add new services. For example, suppose you introduce a video streaming service. You want users to access it at myonlinestore.com/watch while keeping the original application available at myonlinestore.com/wear. Although these applications run in separate Deployments within the same cluster, each service might otherwise require its own load balancer—resulting in additional costs.
 
-<Frame>
-  ![The image illustrates a Google Cloud Platform architecture with a load balancer directing traffic to multiple "wear" services via a specific port.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880570/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Ingress/frame_180.jpg)
-</Frame>
+![The image illustrates a Google Cloud Platform architecture with a load balancer directing traffic to multiple "wear" services via a specific port.](https://kodekloud.com/kk-media/image/upload/v1752880570/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Ingress/frame_180.jpg)
 
 You also want to enable SSL to provide secure HTTPS access and centralize SSL termination, load balancing, and routing configurations within Kubernetes—avoiding dispersed SSL settings across various configurations or application code.
 
-<Callout icon="lightbulb">
-  Ingress enables centralized management of HTTP routing, SSL termination, and load balancing through native Kubernetes API objects.
-</Callout>
+> **lightbulb** Ingress enables centralized management of HTTP routing, SSL termination, and load balancing through native Kubernetes API objects.
 
 Ingress provides a layer seven load balancing solution integrated into Kubernetes. After exposing the Ingress controller externally (using a NodePort or cloud load balancer), further configurations—such as load balancing, authentication, SSL, and URL-based routing—are managed through Ingress resources within the cluster.
 
-<Frame>
-  ![The image illustrates a Google Cloud Platform ingress architecture with load balancing for "wear" and "video" services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880571/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Ingress/frame_440.jpg)
-</Frame>
+![The image illustrates a Google Cloud Platform ingress architecture with load balancing for "wear" and "video" services.](https://kodekloud.com/kk-media/image/upload/v1752880571/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Ingress/frame_440.jpg)
 
 Without Ingress, you would be required to deploy a reverse proxy or dedicated load balancing solution (like NGINX, HAProxy, or Traefik) and manage complex configurations separately for each service. As the number of services grows, this approach becomes increasingly cumbersome.
 
@@ -158,9 +148,7 @@ In summary, setting up an Ingress controller involves deploying:
 * A ConfigMap for dynamic configuration.
 * A Service Account with the necessary permissions.
 
-<Frame>
-  ![The image illustrates an ingress resource diagram for routing traffic to different subdomains and paths of "my-online-store.com" using NGINX.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880572/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Ingress/frame_810.jpg)
-</Frame>
+![The image illustrates an ingress resource diagram for routing traffic to different subdomains and paths of "my-online-store.com" using NGINX.](https://kodekloud.com/kk-media/image/upload/v1752880572/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Ingress/frame_810.jpg)
 
 ***
 
@@ -279,15 +267,11 @@ spec:
 
 If the host field is omitted in your Ingress rules, the rules will apply to all incoming traffic. This flexibility enables routing based on URL paths as well as hostnames.
 
-<Frame>
-  ![The image shows a flowchart with URLs and rules for different paths, including "/wear," "/watch," and a 404 error page.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880573/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Ingress/frame_980.jpg)
-</Frame>
+![The image shows a flowchart with URLs and rules for different paths, including "/wear," "/watch," and a 404 error page.](https://kodekloud.com/kk-media/image/upload/v1752880573/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Ingress/frame_980.jpg)
 
 In scenarios where a user navigates to an undefined URL (e.g., myonlinestore.com/listen or myonlinestore.com/eat), you can configure a default backend to return a 404 Not Found page.
 
-<Frame>
-  ![The image outlines URL paths and rules for an online store, categorizing them into four rules with associated images and a 404 error message.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880574/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Ingress/frame_1030.jpg)
-</Frame>
+![The image outlines URL paths and rules for an online store, categorizing them into four rules with associated images and a 404 error message.](https://kodekloud.com/kk-media/image/upload/v1752880574/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Ingress/frame_1030.jpg)
 
 By leveraging various Ingress configurations—whether based on URL paths or hostnames—you can serve multiple services through a single Ingress controller. This centralized approach manages SSL termination, load balancing, and routing within Kubernetes, simplifying operations and reducing cloud resource costs.
 
@@ -299,6 +283,4 @@ For further reading and additional examples, consider exploring the following re
 
 Deploy an Ingress controller (for instance, the NGINX Ingress Controller) and create appropriate Ingress resources to efficiently manage external access to your Kubernetes services.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/35623c9b-b30e-4a5d-a868-cc9f30de96d2/lesson/72540fa4-652d-4392-b78b-0b0cf32a2510" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/35623c9b-b30e-4a5d-a868-cc9f30de96d2/lesson/72540fa4-652d-4392-b78b-0b0cf32a2510)

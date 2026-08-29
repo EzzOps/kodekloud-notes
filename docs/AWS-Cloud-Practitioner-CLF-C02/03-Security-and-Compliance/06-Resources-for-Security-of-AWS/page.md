@@ -18,13 +18,13 @@ AWS Web Application Firewall (WAF) protects HTTP-based applications hosted on se
 2. The inspection criteria (e.g., matching on IP addresses, country of origin, or malicious SQL code).
 3. The action to take when a rule is matched (allow, block, count, or challenge to verify human activity).
 
-![The image illustrates AWS Web Application Firewall (WAF) protecting against SQL injection and XSS attacks, monitoring HTTP requests to Amazon CloudFront, API Gateway, and Application Load Balancer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861742/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_50.jpg)
+![The image illustrates AWS Web Application Firewall (WAF) protecting against SQL injection and XSS attacks, monitoring HTTP requests to Amazon CloudFront, API Gateway, and Application Load Balancer.](https://kodekloud.com/kk-media/image/upload/v1752861742/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_50.jpg)
 
 ### AWS Shield
 
 Distributed Denial of Service (DDoS) attacks overwhelm targets with traffic until they become unresponsive. AWS Shield is engineered to detect and mitigate DDoS attacks, ensuring that your applications remain accessible even when under malicious assault.
 
-![The image illustrates AWS Shield's role in detecting and mitigating DDoS attacks, featuring a hacker icon, AWS Shield logo, and server graphic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861743/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_140.jpg)
+![The image illustrates AWS Shield's role in detecting and mitigating DDoS attacks, featuring a hacker icon, AWS Shield logo, and server graphic.](https://kodekloud.com/kk-media/image/upload/v1752861743/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_140.jpg)
 
 ### AWS Network Firewall
 
@@ -36,7 +36,7 @@ To summarize the preventative security resources:
 * **AWS Shield:** Mitigates DDoS threats.
 * **Network Firewall:** Controls traffic flows within a VPC.
 
-![The image summarizes security resources: WAF protects against SQL injection and XSS, Shield prevents DDoS attacks, and Network Firewalls monitor VPC traffic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861744/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_200.jpg)
+![The image summarizes security resources: WAF protects against SQL injection and XSS, Shield prevents DDoS attacks, and Network Firewalls monitor VPC traffic.](https://kodekloud.com/kk-media/image/upload/v1752861744/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_200.jpg)
 
 ## Detection-Based Security Services
 
@@ -46,19 +46,19 @@ Detection services are designed to identify vulnerabilities, misconfigurations, 
 
 AWS Inspector automatically scans workloads—ranging from EC2 instances to container images in ECR and AWS Lambda functions—for vulnerabilities and network exposures. It continuously discovers new resources and triggers scans based on updates such as new package installations, patch updates, or published CVEs, generating detailed reports of any issues detected.
 
-![The image describes AWS Inspector, highlighting its role in scanning AWS workloads for vulnerabilities, discovering EC2 instances, ECR container images, and Lambda functions, and producing reports.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861745/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_270.jpg)
+![The image describes AWS Inspector, highlighting its role in scanning AWS workloads for vulnerabilities, discovering EC2 instances, ECR container images, and Lambda functions, and producing reports.](https://kodekloud.com/kk-media/image/upload/v1752861745/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_270.jpg)
 
 ### AWS GuardDuty
 
 AWS GuardDuty offers continuous monitoring of your AWS infrastructure using machine learning to detect unusual API activities, login attempts, and unauthorized deployments. When anomalies are detected, GuardDuty promptly issues alerts for immediate attention.
 
-![The image outlines AWS GuardDuty's features: enabling, continuous monitoring, threat detection, and action-taking using machine learning and automation for security management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861747/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_300.jpg)
+![The image outlines AWS GuardDuty's features: enabling, continuous monitoring, threat detection, and action-taking using machine learning and automation for security management.](https://kodekloud.com/kk-media/image/upload/v1752861747/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_300.jpg)
 
 ### Amazon Detective
 
 Amazon Detective aggregates logs and findings from GuardDuty, CloudTrail, and VPC flow logs. Leveraging machine learning, it creates interactive dashboards and visualizations that simplify the investigation and troubleshooting of security incidents.
 
-![The image illustrates Amazon Detective's process of ingesting data from VPC Flow Logs, CloudTrail, and GuardDuty, using machine learning for advanced visualization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861748/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_340.jpg)
+![The image illustrates Amazon Detective's process of ingesting data from VPC Flow Logs, CloudTrail, and GuardDuty, using machine learning for advanced visualization.](https://kodekloud.com/kk-media/image/upload/v1752861748/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_340.jpg)
 
 ### AWS Config
 
@@ -72,19 +72,19 @@ AWS Security Hub centralizes and automates security alerting by aggregating find
 
 AWS CloudTrail records all user and API activities across your AWS account. Whether actions are executed via the Console, CLI, or SDK, CloudTrail maintains a comprehensive audit trail, including events like EC2 instance creation or modifications in security policies.
 
-![The image illustrates AWS CloudTrail tracking user activities, showing a user named John creating an EC2 instance, with actions logged for security and service management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861749/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_450.jpg)
+![The image illustrates AWS CloudTrail tracking user activities, showing a user named John creating an EC2 instance, with actions logged for security and service management.](https://kodekloud.com/kk-media/image/upload/v1752861749/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_450.jpg)
 
 ### Amazon Security Lake
 
 Amazon Security Lake centralizes security logs from on-premises systems, AWS cloud, and third-party sources. By converting logs into a query-efficient Parquet format and aligning them with the Open Cybersecurity Schema Framework (OCSF), Security Lake simplifies data consumption and analysis for multiple subscribers.
 
-![The image illustrates Amazon Security Lake, highlighting storage in Parquet format and the Open Cybersecurity Schema Framework (OCSF).](../../../../images/kodekloud.com/kk-media/image/upload/v1752861750/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_500.jpg)
+![The image illustrates Amazon Security Lake, highlighting storage in Parquet format and the Open Cybersecurity Schema Framework (OCSF).](https://kodekloud.com/kk-media/image/upload/v1752861750/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_500.jpg)
 
 ### AWS Macie
 
 AWS Macie uses pattern matching and machine learning to automatically discover and protect sensitive data stored in S3 buckets. By generating detailed inventory reports and customized alerts, Macie ensures that sensitive information is adequately secured.
 
-![The image explains AWS Macie's use of pattern matching and machine learning to discover sensitive data in S3 buckets, generating reports and notifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861751/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_530.jpg)
+![The image explains AWS Macie's use of pattern matching and machine learning to discover sensitive data in S3 buckets, generating reports and notifications.](https://kodekloud.com/kk-media/image/upload/v1752861751/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_530.jpg)
 
 Recap of detection-based services:
 
@@ -104,7 +104,7 @@ Management services allow you to centrally control security configurations and m
 
 Managing multiple security features (such as AWS Shield, AWS WAF, and AWS Network Firewall) across several AWS accounts can be challenging. AWS Firewall Manager simplifies security by allowing you to centrally configure and manage firewall rules across accounts and AWS Organizations, ensuring consistent policies across all environments.
 
-![The image illustrates AWS Firewall Manager managing AWS Shield, AWS WAF, and AWS Network Firewall across DEV and Prod environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861752/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_640.jpg)
+![The image illustrates AWS Firewall Manager managing AWS Shield, AWS WAF, and AWS Network Firewall across DEV and Prod environments.](https://kodekloud.com/kk-media/image/upload/v1752861752/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_640.jpg)
 
 ### AWS Resource Access Manager
 
@@ -126,15 +126,15 @@ The IAM Identity Center addresses multi-account access challenges by centralizin
 
 Storing application access credentials (such as database usernames and passwords) directly in code is a security risk. AWS Secrets Manager securely stores these secrets and allows applications to retrieve them dynamically. This practice not only prevents accidental exposure of credentials but also supports automatic secret rotation.
 
-![The image explains AWS Secrets Manager, highlighting its role in securely storing and managing application credentials, avoiding hardcoding, and enabling dynamic access and automatic rotation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861753/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_860.jpg)
+![The image explains AWS Secrets Manager, highlighting its role in securely storing and managing application credentials, avoiding hardcoding, and enabling dynamic access and automatic rotation.](https://kodekloud.com/kk-media/image/upload/v1752861753/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_860.jpg)
 
 ### AWS Certificate Manager and AWS Private Certificate Authority
 
 AWS Certificate Manager (ACM) automates the creation, storage, and renewal of both public and private SSL/TLS certificates. It integrates with services like Elastic Load Balancing, CloudFront, and API Gateway. For internal requirements, AWS Private Certificate Authority streamlines the management of private certificates without the complexities of setting up your own CA.
 
-![The image illustrates AWS Certificate Manager (ACM) handling certificate creation, storage, and renewal, integrating with Elastic Load Balancing, Amazon CloudFront, and Amazon API Gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861754/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_900.jpg)
+![The image illustrates AWS Certificate Manager (ACM) handling certificate creation, storage, and renewal, integrating with Elastic Load Balancing, Amazon CloudFront, and Amazon API Gateway.](https://kodekloud.com/kk-media/image/upload/v1752861754/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_900.jpg)
 
-![The image illustrates AWS Private Certificate Authority, highlighting its role in managing private certificates within an organization, with icons representing a corporate data center.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861755/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_920.jpg)
+![The image illustrates AWS Private Certificate Authority, highlighting its role in managing private certificates within an organization, with icons representing a corporate data center.](https://kodekloud.com/kk-media/image/upload/v1752861755/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_920.jpg)
 
 ### Cryptographic Key Management
 
@@ -144,7 +144,7 @@ When dealing with sensitive data, encryption is paramount. AWS offers dedicated 
 
 AWS KMS allows for the creation and management of cryptographic keys with fine-grained access control. It supports automatic key rotation to ensure that only authorized users can access keys for encrypting or decrypting data.
 
-![The image illustrates AWS Key Management Service (KMS) encrypting and decrypting documents, preventing unauthorized access, as indicated by a figure saying, "I can't understand this."](../../../../images/kodekloud.com/kk-media/image/upload/v1752861755/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_990.jpg)
+![The image illustrates AWS Key Management Service (KMS) encrypting and decrypting documents, preventing unauthorized access, as indicated by a figure saying, "I can't understand this."](https://kodekloud.com/kk-media/image/upload/v1752861755/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_990.jpg)
 
 #### AWS CloudHSM
 
@@ -160,9 +160,9 @@ For organizations that require physical hardware security modules in the cloud, 
 * **Certificate Manager & Private Certificate Authority:** Automate handling of SSL/TLS certificates.
 * **KMS & CloudHSM:** Create, manage, and securely store cryptographic keys.
 
-![The image summarizes AWS security management resources, including Firewall Manager, Resource Access Manager, Cognito, IAM, Identity Center, and Secrets Manager, highlighting their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861757/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_1130.jpg)
+![The image summarizes AWS security management resources, including Firewall Manager, Resource Access Manager, Cognito, IAM, Identity Center, and Secrets Manager, highlighting their functions.](https://kodekloud.com/kk-media/image/upload/v1752861757/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_1130.jpg)
 
-![The image summarizes AWS security resources: ACM for SSL/TLS certificates, Private Certificate Authority for private certificates, and KMS for encryption key management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861758/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_1150.jpg)
+![The image summarizes AWS security resources: ACM for SSL/TLS certificates, Private Certificate Authority for private certificates, and KMS for encryption key management.](https://kodekloud.com/kk-media/image/upload/v1752861758/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Resources-for-Security-of-AWS/frame_1150.jpg)
 
 > **lightbulb** This guide is designed to offer a detailed look at AWS security services to help you implement best practices across your cloud infrastructure. Although not all details are critical for the Cloud Practitioner exam, having this knowledge can enhance your overall security strategy.
 

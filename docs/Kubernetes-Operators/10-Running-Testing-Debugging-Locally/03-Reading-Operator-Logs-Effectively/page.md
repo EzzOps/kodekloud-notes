@@ -52,13 +52,9 @@ Summary table — behavior comparison
 | Deleted child resource (missing child)                          | Recreated from the WebApp blueprint | Controller observes no child and creates one to match the desired state.                                          |
 | Existing child resource with spec drift (in-place modification) |      Not patched to match blueprint | Controller only created missing children in this implementation; it does not compare-and-patch existing children. |
 
-<Callout icon="lightbulb">
-  This demonstrates the controller's reconciliation boundary: it heals missing child resources by recreating them from the blueprint, but it does not repair in-place drift of existing child resources (for example, it will not scale an existing Deployment back to the blueprint's replica count).
-</Callout>
+> **lightbulb** This demonstrates the controller's reconciliation boundary: it heals missing child resources by recreating them from the blueprint, but it does not repair in-place drift of existing child resources (for example, it will not scale an existing Deployment back to the blueprint's replica count).
 
-<Callout icon="warning">
-  If you need automatic correction of in-place drift (for example, enforcing replica counts, updating image fields, or reconciling any spec drift), extend the reconciler logic to compare and patch existing children to match the desired blueprint spec rather than only creating missing children.
-</Callout>
+> **warning** If you need automatic correction of in-place drift (for example, enforcing replica counts, updating image fields, or reconciling any spec drift), extend the reconciler logic to compare and patch existing children to match the desired blueprint spec rather than only creating missing children.
 
 Links and references
 
@@ -66,9 +62,7 @@ Links and references
 * [Kubebuilder book — Writing a Controller](https://book.kubebuilder.io/)
 * [Reconciliation Pattern (controller-runtime)](https://pkg.go.dev/sigs.k8s.io/controller-runtime)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/245c1684-705c-4a53-9f56-897dfaf25c71/lesson/2c0752f7-4e6c-43a4-bc07-1aa5fd47de98" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/245c1684-705c-4a53-9f56-897dfaf25c71/lesson/2c0752f7-4e6c-43a4-bc07-1aa5fd47de98)
 
 
 # Reading Operator Logs Effectively
@@ -157,9 +151,7 @@ Think of log levels as lighting:
 
 Turn on DEBUG only when you need to inspect internals; otherwise it adds noise and hides the important signals.
 
-<Callout icon="lightbulb">
-  Use INFO for day-to-day monitoring. Enable DEBUG temporarily when investigating a specific reconcile or repeated failures. Remember to disable DEBUG after the incident to avoid log overload.
-</Callout>
+> **lightbulb** Use INFO for day-to-day monitoring. Enable DEBUG temporarily when investigating a specific reconcile or repeated failures. Remember to disable DEBUG after the incident to avoid log overload.
 
 Respect Errors
 Errors demand attention. When non-actionable events are logged at ERROR, real faults can get buried. Differentiate between benign missing-children (controller will create them) and genuine rejections (API refuses update).
@@ -170,9 +162,7 @@ ERROR webapp="demo/blog"
 
 An ERROR like the above means the cluster refused an operation — treat it as the starting point for deeper inspection.
 
-<Callout icon="warning">
-  If you see repeated ERRORs on the same object, investigate immediately: check the resource's events, validate admission webhooks, confirm immutable-field errors, and inspect `kubectl describe` and `kubectl get -o yaml` outputs.
-</Callout>
+> **warning** If you see repeated ERRORs on the same object, investigate immediately: check the resource's events, validate admission webhooks, confirm immutable-field errors, and inspect `kubectl describe` and `kubectl get -o yaml` outputs.
 
 Quick troubleshooting checklist
 Use this compact table to quickly orient any log-based investigation.
@@ -211,6 +201,4 @@ Further references
 * [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 * For designing operator logs, see best practices in structured logging and correlate entries with object keys (namespace/name) to maintain clear timelines.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/245c1684-705c-4a53-9f56-897dfaf25c71/lesson/937ee939-9950-4078-b61b-51433b3e5bbe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/245c1684-705c-4a53-9f56-897dfaf25c71/lesson/937ee939-9950-4078-b61b-51433b3e5bbe)

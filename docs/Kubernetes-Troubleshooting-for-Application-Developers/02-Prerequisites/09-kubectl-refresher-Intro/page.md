@@ -6,9 +6,7 @@ A comprehensive guide on kubectl commands for troubleshooting and diagnosing Kub
 
 Welcome to our comprehensive guide on kubectl commands—a must-read refresher for anyone working with Kubernetes. In this article, we cover a series of powerful commands tailored for troubleshooting and diagnosing Kubernetes applications. While this is not an exhaustive catalog of all available kubectl commands, it highlights some of the most commonly used options for quickly solving common issues.
 
-<Callout icon="lightbulb">
-  This guide is intended as a quick reference for troubleshooting with kubectl. For a complete list of commands and options, please refer to the [Kubernetes Documentation](https://kubernetes.io/docs/).
-</Callout>
+> **lightbulb** This guide is intended as a quick reference for troubleshooting with kubectl. For a complete list of commands and options, please refer to the [Kubernetes Documentation](https://kubernetes.io/docs/).
 
 ## Commands Overview
 
@@ -55,12 +53,8 @@ Let's dive into each command to understand how they can help you troubleshoot an
 * **kubectl diff:** Compare current and desired states to understand configuration changes.
 * **kubectl auth-can-i:** Check if your permissions allow a certain operation to avoid authorization issues.
 
-<Callout icon="lightbulb">
-  For more in-depth guidance on these commands, including examples and best practices, consider exploring the official [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) guide.
-</Callout>
+> **lightbulb** For more in-depth guidance on these commands, including examples and best practices, consider exploring the official [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) guide.
 
 With the commands outlined above, you're well-equipped to effectively troubleshoot and diagnose issues within your Kubernetes environment. Happy debugging!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/16ea3475-744e-44ea-9285-b1e4dba694ec" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/16ea3475-744e-44ea-9285-b1e4dba694ec)

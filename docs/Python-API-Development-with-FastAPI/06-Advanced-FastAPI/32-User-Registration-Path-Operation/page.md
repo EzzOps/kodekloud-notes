@@ -150,9 +150,7 @@ graphql-core=2.3.2
 
 The updated schema validates the email field properly. You should see `email-validator` when running `pip freeze`.
 
-<Callout icon="lightbulb">
-  Returning a password in the response is not secure. Always ensure that sensitive information is excluded from API responses.
-</Callout>
+> **lightbulb** Returning a password in the response is not secure. Always ensure that sensitive information is excluded from API responses.
 
 ## Implementing the Create User Endpoint
 
@@ -297,6 +295,4 @@ class UserOut(BaseModel):
 
 This configuration guarantees that the response model accurately represents the stored data without exposing sensitive details like the password. With these improvements, your API now securely processes user registration by enforcing email validation, handling user data safely, and returning only the necessary information to the client.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/123a3674-b6ad-4db9-8d74-16a184ed35b2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/123a3674-b6ad-4db9-8d74-16a184ed35b2)

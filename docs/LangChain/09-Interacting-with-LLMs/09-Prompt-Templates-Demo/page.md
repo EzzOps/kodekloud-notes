@@ -34,9 +34,7 @@ Best practices when using output parsers
 * Consider tolerant post-processing strategies (strip extra commentary, repair minor JSON issues) when the model frequently deviates.
 * Log raw model outputs and parsing errors to help iterate on prompt wording and parser configuration.
 
-<Callout icon="lightbulb">
-  Always validate model outputs before using them in production. Even with strict format instructions, the model may produce additional text or malformed structures—handle parsing errors and sanitize input for downstream systems.
-</Callout>
+> **lightbulb** Always validate model outputs before using them in production. Even with strict format instructions, the model may produce additional text or malformed structures—handle parsing errors and sanitize input for downstream systems.
 
 Further reading and references
 
@@ -46,9 +44,7 @@ Further reading and references
 
 These resources show alternative output parsers and transformation strategies you can use to safely and reliably consume model outputs across different languages and runtime environments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/ee38bab1-8189-4ab1-8b0e-8933a1ca8ab0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/ee38bab1-8189-4ab1-8b0e-8933a1ca8ab0)
 
 
 # Prompt Templates Demo
@@ -59,10 +55,8 @@ Guide to building and using LangChain chat prompt templates, populating them at 
 
 This lesson demonstrates how to convert message patterns into reusable prompt templates and then create concrete prompts to send to a chat model using LangChain. The example below walks through the essential steps in order: imports, defining message templates, building a chat prompt template, populating it at runtime, invoking a chat model, and reading the model response.
 
-<Callout icon="lightbulb">
-  Before running the examples, ensure your OpenAI API key is set in the environment, for example:
+> **lightbulb** Before running the examples, ensure your OpenAI API key is set in the environment, for example:
   `export OPENAI_API_KEY="sk-..."`. See [Introduction to OpenAI](https://learn.kodekloud.com/user/courses/introduction-to-openai) for details and safe handling of secrets.
-</Callout>
 
 ## Overview
 

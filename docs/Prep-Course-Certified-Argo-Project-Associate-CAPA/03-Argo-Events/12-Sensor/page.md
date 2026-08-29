@@ -51,9 +51,7 @@ Each dependency includes:
 * `src` describes where to read data from: `dependencyName` and `dataKey` (a path inside the event payload, e.g., `body.message`).
 * `dest` is the YAML/JSON path in the target template where the value will be injected; use numeric indices for arrays (for example, `spec.containers.0.args.0`).
 
-<Callout icon="lightbulb">
-  When specifying destination paths for parameters, use numeric indices for array positions (for example, `.containers.0.args.0`). The textual description like "firstIndex" is conceptual — the actual path must use numbers.
-</Callout>
+> **lightbulb** When specifying destination paths for parameters, use numeric indices for array positions (for example, `.containers.0.args.0`). The textual description like "firstIndex" is conceptual — the actual path must use numbers.
 
 ### Sensor YAML example (creates a Pod that echoes a message from the event)
 
@@ -185,9 +183,7 @@ Common condition patterns:
 * `"X || Y"` — either X or Y
 * `"(X || Y) && Z"` — Z plus either X or Y
 
-<Callout icon="warning">
-  If you omit `conditions`, the Sensor treats all listed dependencies as required (logical AND). Ensure you use straight quotes (") in YAML strings — avoid curly quotes.
-</Callout>
+> **warning** If you omit `conditions`, the Sensor treats all listed dependencies as required (logical AND). Ensure you use straight quotes (") in YAML strings — avoid curly quotes.
 
 ## Summary
 
@@ -201,6 +197,4 @@ Common condition patterns:
 * [Argo Events — EventSources](https://argoproj.github.io/argo-events/event-sources/)
 * [Kubernetes Pods — Official Docs](https://kubernetes.io/docs/concepts/workloads/pods/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/e59f39b6-db40-43cc-bde2-5ce31557585b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/e59f39b6-db40-43cc-bde2-5ce31557585b)

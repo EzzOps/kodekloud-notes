@@ -12,7 +12,7 @@ Bella Innovation is embarking on its cloud journey, and one of the most critical
 
 Azure resources are the essential building blocks of any cloud solution. They include services such as storage accounts, Virtual Machines, networks, and more. In essence, Azure resources encompass the various services and compute functionalities that Azure provides. As you advance in your learning, you'll explore these components in greater detail. For now, recognize that these resources form the backbone of your Azure deployment.
 
-![The image lists various Azure resources, including Virtual Machines, Storage Accounts, Virtual Networks, App Services, SQL Databases, and Functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868197/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Subscriptions-and-Resource-Groups/azure-resources-list-virtual-machines.jpg)
+![The image lists various Azure resources, including Virtual Machines, Storage Accounts, Virtual Networks, App Services, SQL Databases, and Functions.](https://kodekloud.com/kk-media/image/upload/v1752868197/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Subscriptions-and-Resource-Groups/azure-resources-list-virtual-machines.jpg)
 
 ***
 
@@ -40,7 +40,7 @@ Utilizing multiple resource groups allows you to organize services according to 
 
 For a visual guide on how resource groups can be configured, see the diagram below:
 
-![The image illustrates Azure Resource Groups, showing two configurations: a single group containing web, database, virtual machine, and storage, and separate groups for each component. It also highlights considerations for placement, region, and migration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868198/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Subscriptions-and-Resource-Groups/azure-resource-groups-configurations-diagram.jpg)
+![The image illustrates Azure Resource Groups, showing two configurations: a single group containing web, database, virtual machine, and storage, and separate groups for each component. It also highlights considerations for placement, region, and migration.](https://kodekloud.com/kk-media/image/upload/v1752868198/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Subscriptions-and-Resource-Groups/azure-resource-groups-configurations-diagram.jpg)
 
 ***
 
@@ -56,7 +56,7 @@ Think of an Azure subscription as your secure ID card for accessing the Azure ec
 
 For a clearer understanding of billing boundaries in subscriptions, refer to the diagram below:
 
-![The image shows two colored documents labeled "Reports" and "Invoice," separated by a vertical line, under the heading "Subscriptions – Billing Boundary."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868199/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Subscriptions-and-Resource-Groups/subscriptions-billing-boundary-documents.jpg)
+![The image shows two colored documents labeled "Reports" and "Invoice," separated by a vertical line, under the heading "Subscriptions – Billing Boundary."](https://kodekloud.com/kk-media/image/upload/v1752868199/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Subscriptions-and-Resource-Groups/subscriptions-billing-boundary-documents.jpg)
 
 Multiple subscriptions can be consolidated to streamline billing and manage access control boundaries while tailoring policies to meet diverse operational needs.
 
@@ -71,7 +71,7 @@ As your Azure landscape grows, efficient management of multiple subscriptions be
 * **Aggregating Subscriptions:** You can consolidate multiple subscriptions into a single management group for streamlined management.
 * **Inherited Policies:** Any policies or settings applied at the management group level are automatically inherited by all subordinate subscriptions, ensuring consistency and compliance.
 
-![The image is a diagram illustrating "Management Groups – Inherited Conditions," showing a hierarchical structure with management groups at the top and subscriptions below. It includes icons representing settings and keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868201/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Subscriptions-and-Resource-Groups/management-groups-inherited-conditions-diagram.jpg)
+![The image is a diagram illustrating "Management Groups – Inherited Conditions," showing a hierarchical structure with management groups at the top and subscriptions below. It includes icons representing settings and keys.](https://kodekloud.com/kk-media/image/upload/v1752868201/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Subscriptions-and-Resource-Groups/management-groups-inherited-conditions-diagram.jpg)
 
 * **Scalability:** Up to 10,000 management groups can be created within an Azure Active Directory, allowing for significant organizational growth.
 * **Hierarchical Depth:** Management groups can be structured up to six levels deep, offering a precise governance model tailored to your organization's needs.
@@ -99,7 +99,7 @@ To meet Bella Innovation’s cloud organizational needs, consider implementing t
 
 This structure enhances control over access, billing, and operations across regions and environments.
 
-![The image depicts a hierarchical structure of "Bella Innovation," showing management groups, subscriptions, resource groups, and resources across different regions like the US, Europe, and Asia Pacific.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868202/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Subscriptions-and-Resource-Groups/bella-innovation-hierarchy-structure.jpg)
+![The image depicts a hierarchical structure of "Bella Innovation," showing management groups, subscriptions, resource groups, and resources across different regions like the US, Europe, and Asia Pacific.](https://kodekloud.com/kk-media/image/upload/v1752868202/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Subscriptions-and-Resource-Groups/bella-innovation-hierarchy-structure.jpg)
 
 Remember, this example is fully customizable. You can adjust the number of management groups and their configurations—even grouping production and test subscriptions separately—up to six levels deep depending on your organizational requirements.
 

@@ -153,9 +153,7 @@ You can verify the niceness value using the BSD long format with `ps -l`:
 [aaron@LFCS-CentOS ~]$ ps l
 ```
 
-<Callout icon="lightbulb">
-  Processes inherit the niceness value of their parent by default.
-</Callout>
+> **lightbulb** Processes inherit the niceness value of their parent by default.
 
 A regular user can only increase the niceness value (i.e., lower the priority) to values between 0 and 19. To assign a negative niceness (i.e., higher priority), root privileges are necessary.
 
@@ -186,9 +184,7 @@ renice: failed to set priority for 8209 (process ID): Permission denied
 8209 (process ID) old priority 12, new priority 7
 ```
 
-<Callout icon="triangle-alert">
-  As a regular user, you can only decrease the priority once per session. Further priority reductions require root privileges.
-</Callout>
+> **triangle-alert** As a regular user, you can only decrease the priority once per session. Further priority reductions require root privileges.
 
 ***
 
@@ -286,9 +282,7 @@ Then, if appropriate, execute:
 [aaron@LFCS-CentOS ~]$ pkill -SIGKILL bash
 ```
 
-<Callout icon="triangle-alert">
-  Be cautious when terminating processes. Ending your shell (bash) could cause you to lose your terminal session.
-</Callout>
+> **triangle-alert** Be cautious when terminating processes. Ending your shell (bash) could cause you to lose your terminal session.
 
 ***
 
@@ -403,14 +397,10 @@ In this article, we covered various techniques for process management in Linux, 
 
 ***
 
-<Frame>
-  ![The image shows a terminal window displaying the manual page for the ps command, which reports a snapshot of current processes. It includes sections like NAME, SYNOPSIS, and DESCRIPTION.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883600/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Diagnose-and-manage-processes/ps-command-manual-terminal-snapshot.jpg)
-</Frame>
+![The image shows a terminal window displaying the manual page for the ps command, which reports a snapshot of current processes. It includes sections like NAME, SYNOPSIS, and DESCRIPTION.](https://kodekloud.com/kk-media/image/upload/v1752883600/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Diagnose-and-manage-processes/ps-command-manual-terminal-snapshot.jpg)
 
 ***
 
 This concludes our deep dive into diagnosing and managing processes in Linux. With these techniques, you'll be well-prepared to troubleshoot and manage processes effectively in any Linux environment. Happy troubleshooting!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/e86901ef-e617-4dff-b9cc-8e893b91a6dd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/e86901ef-e617-4dff-b9cc-8e893b91a6dd)

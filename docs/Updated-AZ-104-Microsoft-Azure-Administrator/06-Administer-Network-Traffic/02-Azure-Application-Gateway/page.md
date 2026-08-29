@@ -46,20 +46,14 @@ The following workflow illustrates how Azure Application Gateway manages incomin
 7. **Load Balancing:**\
    Within the backend pool, load balancing algorithms (e.g., round-robin, least connections) are employed to distribute incoming requests evenly across multiple servers, ensuring optimal performance and reliability.
 
-<Callout icon="lightbulb">
-  Azure Application Gateway seamlessly integrates listeners, routing rules, HTTP settings, and backend pools to ensure efficient and secure management of user requests.
-</Callout>
+> **lightbulb** Azure Application Gateway seamlessly integrates listeners, routing rules, HTTP settings, and backend pools to ensure efficient and secure management of user requests.
 
 ## Architecture Diagram
 
 Below is a visual representation of the Azure Application Gateway architecture. The diagram illustrates the various components such as the Layer 7 load balancer, routing features, backend pools, and how traffic flows from a user's browser to different types of backend resources including virtual machines, virtual machine scale sets, and external servers.
 
-<Frame>
-  ![The image is a diagram of an application gateway, illustrating components like a Layer 7 load balancer, routing features, backend pools, and the flow from a browser to virtual machines, VMSS, and servers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884702/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Application-Gateway/application-gateway-diagram-load-balancer.jpg)
-</Frame>
+![The image is a diagram of an application gateway, illustrating components like a Layer 7 load balancer, routing features, backend pools, and the flow from a browser to virtual machines, VMSS, and servers.](https://kodekloud.com/kk-media/image/upload/v1752884702/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Application-Gateway/application-gateway-diagram-load-balancer.jpg)
 
 For more detailed information on Azure networking and load balancing, you may refer to the official [Azure Documentation](https://docs.microsoft.com/azure/application-gateway/overview).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/50248c52-4b17-4c2d-87f8-52a42eff2d2f/lesson/bc4997cc-0fef-4d38-945c-7994c9b7f18d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/50248c52-4b17-4c2d-87f8-52a42eff2d2f/lesson/bc4997cc-0fef-4d38-945c-7994c9b7f18d)

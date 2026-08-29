@@ -18,9 +18,7 @@ Answer: [Scikit-learn](https://scikit-learn.org/stable/).
 
 While deep-learning frameworks like [TensorFlow](https://www.tensorflow.org/) and [PyTorch](https://pytorch.org/) excel at training neural networks (transformers, RNNs, CNNs) and learning representations end-to-end on accelerators, they are typically heavier than necessary for classic BoW approaches. [spaCy](https://spacy.io/) is a great choice for robust NLP preprocessing (tokenization, lemmatization, pipelines), but for straightforward BoW feature extraction plus supervised classifiers, scikit-learn is usually the fastest path to results.
 
-<Callout icon="lightbulb">
-  Use [scikit-learn](https://scikit-learn.org/stable/) to quickly prototype bag-of-words pipelines. Migrate to deep-learning frameworks only when you need learned embeddings, complex sequence modeling, or GPU-accelerated training for large datasets.
-</Callout>
+> **lightbulb** Use [scikit-learn](https://scikit-learn.org/stable/) to quickly prototype bag-of-words pipelines. Migrate to deep-learning frameworks only when you need learned embeddings, complex sequence modeling, or GPU-accelerated training for large datasets.
 
 Comparison at a glance:
 

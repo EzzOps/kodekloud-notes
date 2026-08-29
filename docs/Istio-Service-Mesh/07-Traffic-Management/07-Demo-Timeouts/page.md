@@ -44,9 +44,7 @@ istio-training@local istio-1.10.3 $ kubectl apply -f virtual-service-details.yam
 
 Be sure to verify that the configuration has been applied successfully.
 
-<Callout icon="lightbulb">
-  When testing delays, errors might occur on the product page, which is expected. These errors help you observe how timeouts and fallback mechanisms are triggered.
-</Callout>
+> **lightbulb** When testing delays, errors might occur on the product page, which is expected. These errors help you observe how timeouts and fallback mechanisms are triggered.
 
 ## Step 3: Adjusting the Delay Percentage
 
@@ -86,9 +84,7 @@ spec:
 
 With this configuration, if the details application takes longer than 3 seconds to load, the product page will trigger a timeout. You can further adjust the fault injection percentage from 70% to 50% as required to fine-tune the behavior of your system.
 
-<Callout icon="triangle-alert">
-  Timeouts are an essential tool in microservices architectures. However, improper configuration can lead to degraded performance or unexpected system behavior. Always test changes in a controlled environment.
-</Callout>
+> **triangle-alert** Timeouts are an essential tool in microservices architectures. However, improper configuration can lead to degraded performance or unexpected system behavior. Always test changes in a controlled environment.
 
 ## Understanding Timeouts
 
@@ -104,8 +100,6 @@ For more detailed information on managing timeouts and fault injection, consider
 
 By following these steps, you can effectively simulate delays and timeouts in your service mesh, ensuring that your system gracefully handles slow responses while maintaining overall performance.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/26c86e18-0cd2-407f-8caa-ca5b307446ac" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/26c86e18-0cd2-407f-8caa-ca5b307446ac)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/81ec6f57-20b5-42b8-a193-306da91e3e5d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/81ec6f57-20b5-42b8-a193-306da91e3e5d)

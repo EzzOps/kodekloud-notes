@@ -38,9 +38,7 @@ Because each plugin is designed to operate independently, a plugin can function 
 
 Note: The Backstage server is essentially a thin wrapper around backend plugins, and the frontend app is a thin wrapper around frontend plugins. The platform stitches those plugin “websites” together into a single cohesive product.
 
-<Callout icon="lightbulb">
-  Each plugin is a separate package that can be developed, tested, and deployed in isolation. This improves developer productivity and runtime resilience.
-</Callout>
+> **lightbulb** Each plugin is a separate package that can be developed, tested, and deployed in isolation. This improves developer productivity and runtime resilience.
 
 ## Monorepo layout
 
@@ -129,9 +127,7 @@ Common reasons to add a backend proxy:
   <img alt="A slide showing a plugin architecture diagram with a frontend containing a &#x22;Plugin Frontend&#x22; component, a backend &#x22;Proxy&#x22; component, and a GitHub Actions service on the right, plus notes for CORS and authentication/credentials. On the left is a teal card labeled &#x22;03 Third-party backed.&#x22;" />
 </Frame>
 
-<Callout icon="warning">
-  Never store long‑lived API keys or credentials in frontend code. Use a backend proxy to keep secrets secure and to perform authorization checks server‑side.
-</Callout>
+> **warning** Never store long‑lived API keys or credentials in frontend code. Use a backend proxy to keep secrets secure and to perform authorization checks server‑side.
 
 ## Frontend presentation patterns
 
@@ -187,6 +183,4 @@ References and further reading:
 * Backstage documentation: [https://backstage.io/docs](https://backstage.io/docs)
 * Plugins directory: [https://backstage.io/plugins](https://backstage.io/plugins)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/aad867ea-baf2-4ca7-b722-ad38ea794a7e/lesson/c1c81c1a-83e8-4fdc-91f3-dd8386b341f1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/aad867ea-baf2-4ca7-b722-ad38ea794a7e/lesson/c1c81c1a-83e8-4fdc-91f3-dd8386b341f1)

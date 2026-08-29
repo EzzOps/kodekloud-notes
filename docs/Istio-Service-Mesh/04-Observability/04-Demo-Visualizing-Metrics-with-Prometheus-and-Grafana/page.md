@@ -53,9 +53,7 @@ istio_agent_pilot_xds_send_time_count
 
 This collection of metrics not only monitors Istio specifics but also provides insights into the Go runtime environment. One key metric is the Istio requests total, which tracks the overall number of incoming requests. The adjacent graph visualizes these request frequencies over configurable time intervals for detailed analysis.
 
-<Frame>
-  ![The image shows a Prometheus graph displaying the istio\_requests\_total metric over a 30-minute period. It features two lines representing different data series, with the y-axis indicating the number of requests and the x-axis showing the time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879361/notes-assets/images/Istio-Service-Mesh-Demo-Visualizing-Metrics-with-Prometheus-and-Grafana/prometheus-istio-requests-graph.jpg)
-</Frame>
+![The image shows a Prometheus graph displaying the istio\_requests\_total metric over a 30-minute period. It features two lines representing different data series, with the y-axis indicating the number of requests and the x-axis showing the time.](https://kodekloud.com/kk-media/image/upload/v1752879361/notes-assets/images/Istio-Service-Mesh-Demo-Visualizing-Metrics-with-Prometheus-and-Grafana/prometheus-istio-requests-graph.jpg)
 
 Metrics in Prometheus can be filtered by multiple dimensions. For instance, to retrieve metrics for the destination service "productpage", use the following query:
 
@@ -75,9 +73,7 @@ istiо_requests_total{app="istio-ingressgateway", chart="gateways", connection_s
 
 These queries highlight how you can use Istio’s built-in metrics to filter and inspect v3 requests.
 
-<Callout icon="lightbulb">
-  For more detailed guidance on Prometheus queries and their structure, refer to the [Prometheus Documentation](https://prometheus.io/docs/).
-</Callout>
+> **lightbulb** For more detailed guidance on Prometheus queries and their structure, refer to the [Prometheus Documentation](https://prometheus.io/docs/).
 
 ## Verifying Prometheus and Grafana Add-ons
 
@@ -109,9 +105,7 @@ Grafana provides a suite of dashboards to monitor various aspects of your Istio 
 
 This dashboard displays critical system metrics such as CPU, memory, disk usage, goroutine counts, control plane errors, and configuration synchronization issues. Clicking on any graph in view mode reveals more granular details.
 
-<Frame>
-  ![The image shows a dashboard from the Istio Control Plane, displaying various metrics such as memory, CPU, disk usage, goroutines, pilot push information, and proxy push time. The graphs provide real-time data visualization for monitoring system performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879362/notes-assets/images/Istio-Service-Mesh-Demo-Visualizing-Metrics-with-Prometheus-and-Grafana/istio-control-plane-dashboard-metrics.jpg)
-</Frame>
+![The image shows a dashboard from the Istio Control Plane, displaying various metrics such as memory, CPU, disk usage, goroutines, pilot push information, and proxy push time. The graphs provide real-time data visualization for monitoring system performance.](https://kodekloud.com/kk-media/image/upload/v1752879362/notes-assets/images/Istio-Service-Mesh-Demo-Visualizing-Metrics-with-Prometheus-and-Grafana/istio-control-plane-dashboard-metrics.jpg)
 
 Additional memory metrics are provided below for closer inspection.
 
@@ -119,42 +113,30 @@ Additional memory metrics are provided below for closer inspection.
 
 The Istio Mesh dashboard offers an overarching view of your service mesh by illustrating workloads, services, success rates, errors, and overall configuration:
 
-<Frame>
-  ![The image shows an Istio Mesh Dashboard on Grafana, displaying metrics such as global request volume, success rate, and various service and policy statistics for microservices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879364/notes-assets/images/Istio-Service-Mesh-Demo-Visualizing-Metrics-with-Prometheus-and-Grafana/istio-mesh-dashboard-grafana-metrics.jpg)
-</Frame>
+![The image shows an Istio Mesh Dashboard on Grafana, displaying metrics such as global request volume, success rate, and various service and policy statistics for microservices.](https://kodekloud.com/kk-media/image/upload/v1752879364/notes-assets/images/Istio-Service-Mesh-Demo-Visualizing-Metrics-with-Prometheus-and-Grafana/istio-mesh-dashboard-grafana-metrics.jpg)
 
 ### Istio Service Dashboard
 
 For detailed monitoring, the service dashboard presents metrics from the Istio data plane. This dashboard is customizable to suit the unique requirements of your application.
 
-<Frame>
-  ![The image shows an Istio Service Dashboard displaying various metrics related to service workloads, including incoming requests, success rates, request duration, and response sizes over time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879365/notes-assets/images/Istio-Service-Mesh-Demo-Visualizing-Metrics-with-Prometheus-and-Grafana/istio-service-dashboard-metrics.jpg)
-</Frame>
+![The image shows an Istio Service Dashboard displaying various metrics related to service workloads, including incoming requests, success rates, request duration, and response sizes over time.](https://kodekloud.com/kk-media/image/upload/v1752879365/notes-assets/images/Istio-Service-Mesh-Demo-Visualizing-Metrics-with-Prometheus-and-Grafana/istio-service-dashboard-metrics.jpg)
 
 ### Istio Performance Dashboard
 
 The Performance dashboard groups together metrics such as memory, vCPU, and disk usage over time for monitoring component performance within Istio.
 
-<Frame>
-  ![The image shows an Istio Performance Dashboard with various graphs displaying metrics like memory, vCPU, and disk usage over time. The dashboard is likely used for monitoring the performance of Istio components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879366/notes-assets/images/Istio-Service-Mesh-Demo-Visualizing-Metrics-with-Prometheus-and-Grafana/istio-performance-dashboard-metrics.jpg)
-</Frame>
+![The image shows an Istio Performance Dashboard with various graphs displaying metrics like memory, vCPU, and disk usage over time. The dashboard is likely used for monitoring the performance of Istio components.](https://kodekloud.com/kk-media/image/upload/v1752879366/notes-assets/images/Istio-Service-Mesh-Demo-Visualizing-Metrics-with-Prometheus-and-Grafana/istio-performance-dashboard-metrics.jpg)
 
-<Callout icon="lightbulb">
-  You can easily switch between dashboards using the primary menu. In addition to the dashboards covered here, explore the "Details" service view to filter and review all services in your mesh, access the Wasm Performance dashboard for WebAssembly metrics, and the Workload dashboard to focus on specific workloads.
-</Callout>
+> **lightbulb** You can easily switch between dashboards using the primary menu. In addition to the dashboards covered here, explore the "Details" service view to filter and review all services in your mesh, access the Wasm Performance dashboard for WebAssembly metrics, and the Workload dashboard to focus on specific workloads.
 
 ### Istio Workload Dashboard
 
 The Istio Workload dashboard shows metrics such as incoming request volume, success rate, and request duration for selected workloads. Use the dropdown menus to filter metrics based on the workload you wish to inspect.
 
-<Frame>
-  ![The image shows an Istio Workload Dashboard displaying metrics such as incoming request volume, success rate, and request duration for a selected workload. Various workload options are available in a dropdown menu.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879367/notes-assets/images/Istio-Service-Mesh-Demo-Visualizing-Metrics-with-Prometheus-and-Grafana/istio-workload-dashboard-metrics.jpg)
-</Frame>
+![The image shows an Istio Workload Dashboard displaying metrics such as incoming request volume, success rate, and request duration for a selected workload. Various workload options are available in a dropdown menu.](https://kodekloud.com/kk-media/image/upload/v1752879367/notes-assets/images/Istio-Service-Mesh-Demo-Visualizing-Metrics-with-Prometheus-and-Grafana/istio-workload-dashboard-metrics.jpg)
 
 Across these dashboards, you have access to numerous metrics that can be further drilled down for detailed insights into your application's performance and the overall behavior of the service mesh.
 
 For additional details and advanced monitoring techniques, consider exploring the [Istio Documentation](https://istio.io/latest/docs/) and [Grafana Guides](https://grafana.com/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/7696566a-6631-4367-9fbc-ce86b23cd608/lesson/6b003cf1-73bf-423b-9884-1891609ca0f2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/7696566a-6631-4367-9fbc-ce86b23cd608/lesson/6b003cf1-73bf-423b-9884-1891609ca0f2)

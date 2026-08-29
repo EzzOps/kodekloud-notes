@@ -11,9 +11,7 @@ $ kill -9 <PID>
 $ pkill -KILL bash
 ```
 
-<Callout icon="triangle-alert">
-  Killing your login shell (e.g., `bash`) will close your terminal or SSH session.
-</Callout>
+> **triangle-alert** Killing your login shell (e.g., `bash`) will close your terminal or SSH session.
 
 ***
 
@@ -70,9 +68,7 @@ $ sudo lsof /var/log/messages
 * [lsof(8) Manual](https://man7.org/linux/man-pages/man8/lsof.8.html)
 * [Linux Process Management Guide](https://linux.die.net/man/1/ps)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/484c790f-dbad-440d-a4e4-1128d0cceb54" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/484c790f-dbad-440d-a4e4-1128d0cceb54)
 
 
 # Identify the component of a Linux distribution that a file belongs to
@@ -87,9 +83,7 @@ Discovering which package installed a specific file on your Linux system is inva
 * List all files in a package
 * Filter package file listings
 
-<Callout icon="lightbulb">
-  These examples assume a DNF-based distribution (Fedora, RHEL, CentOS Stream). On older systems using `yum`, substitute `yum provides` and `yum repoquery`.
-</Callout>
+> **lightbulb** These examples assume a DNF-based distribution (Fedora, RHEL, CentOS Stream). On older systems using `yum`, substitute `yum provides` and `yum repoquery`.
 
 ***
 
@@ -130,9 +124,7 @@ $ sudo dnf install --refresh cronie-anacron
 
 After reinstalling, the original `/etc/anacrontab` is back in place.
 
-<Callout icon="triangle-alert">
-  Removing system files can affect service behavior. Always backup configurations before deletion.
-</Callout>
+> **triangle-alert** Removing system files can affect service behavior. Always backup configurations before deletion.
 
 ***
 
@@ -198,8 +190,6 @@ Use any regex pattern to quickly locate files of interest.
 
 Practice these commands to become confident in managing package-owned files and restoring default configurations on your DNF-based Linux system.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/d354e7d0-1479-4964-a400-65bc444ffdfa" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/d354e7d0-1479-4964-a400-65bc444ffdfa)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/1c82b7ef-7485-4d29-bff1-adf3706193db" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/1c82b7ef-7485-4d29-bff1-adf3706193db)

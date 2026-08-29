@@ -131,19 +131,15 @@ jobs:
 
 Important: The tool maps many Jenkins credential types to appropriate GitHub Actions equivalents and creates references in the generated workflows, but it does not create the repository/org secrets for you — you must create those secrets manually in GitHub.
 
-<Callout icon="lightbulb">
-  The audit tool maps many Jenkins credential types to GitHub Actions equivalents, but referenced secrets must be created in GitHub (repo/org/environment level) before the workflow runs.
-</Callout>
+> **lightbulb** The audit tool maps many Jenkins credential types to GitHub Actions equivalents, but referenced secrets must be created in GitHub (repo/org/environment level) before the workflow runs.
 
 ***
 
 That's it for this lesson — the updated audit summary and generated artifacts reflect the newly added multi-branch pipeline and the secret binding added to the existing job.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/f4511dc3-eab1-404a-84d8-fd3e5fa2badd" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/f4511dc3-eab1-404a-84d8-fd3e5fa2badd)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/7e623f64-8ef5-4b23-968f-3c6ce69b7a3a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/7e623f64-8ef5-4b23-968f-3c6ce69b7a3a)
 
 
 # Demo Configuring Credentials

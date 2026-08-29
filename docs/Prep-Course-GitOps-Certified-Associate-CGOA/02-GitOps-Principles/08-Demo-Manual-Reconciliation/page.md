@@ -20,9 +20,7 @@ NAME             TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)
 argocd-server    NodePort   10.107.64.168   <none>        80:30880/TCP,443:31428/TCP
 ```
 
-<Callout icon="warning">
-  Exposing `argocd-server` via `NodePort` is convenient for demos but not recommended for production. For production use, prefer an Ingress with TLS termination or a cloud load balancer and secure RBAC. Ensure firewall rules restrict access as needed.
-</Callout>
+> **warning** Exposing `argocd-server` via `NodePort` is convenient for demos but not recommended for production. For production use, prefer an Ingress with TLS termination or a cloud load balancer and secure RBAC. Ensure firewall rules restrict access as needed.
 
 6. Access the Argo CD UI in your browser
 
@@ -54,9 +52,7 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath='{.data.pas
   * Username: `admin`
   * Password: (decoded value from the command above)
 
-<Callout icon="lightbulb">
-  After the first login, change the `admin` password or create RBAC-backed users/service accounts. Leaving default credentials in place is a security risk.
-</Callout>
+> **lightbulb** After the first login, change the `admin` password or create RBAC-backed users/service accounts. Leaving default credentials in place is a security risk.
 
 8. Update the admin password via the UI
 
@@ -80,11 +76,9 @@ Links and references
 
 That’s all for this installation walkthrough.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/b21feba6-d9f9-4b88-998e-c7f7e9a148d1" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/b21feba6-d9f9-4b88-998e-c7f7e9a148d1)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/8a1cc650-22f4-4f2e-b250-5133f9999233" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/8a1cc650-22f4-4f2e-b250-5133f9999233)
 
 
 # Demo Manual Reconciliation

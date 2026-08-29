@@ -78,9 +78,7 @@ Documentation is provided for a reason. Learn to use it under exam conditions.
   <img alt="The image is an infographic titled &#x22;Using Documentation Efficiently,&#x22; outlining strategies for using documentation effectively, such as skimming for YAML examples, remembering exam usage requirements, checking quick references, and focusing on understanding concepts." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Always open the quick reference for each question first — it typically points directly to the relevant documentation and example snippets you need.
-</Callout>
+> **lightbulb** Always open the quick reference for each question first — it typically points directly to the relevant documentation and example snippets you need.
 
 ## Common mistakes that cost marks (and how to avoid them)
 
@@ -95,9 +93,7 @@ Avoid these time‑stealing pitfalls and use the recommended mitigation.
 | Leaving questions blank           | Missed partial credit opportunities     | Submit partial work — it often earns points            |
 | Panicking at an unfamiliar tool   | Time lost learning instead of executing | Use the linked docs; leave unfamiliar tools until last |
 
-<Callout icon="warning">
-  Avoid accidental tab closures and wrong‑host mistakes: practice `Ctrl+Shift+C`, `Ctrl+Shift+V`, and always double‑check SSH instructions before starting work.
-</Callout>
+> **warning** Avoid accidental tab closures and wrong‑host mistakes: practice `Ctrl+Shift+C`, `Ctrl+Shift+V`, and always double‑check SSH instructions before starting work.
 
 <Frame>
   <img alt="The image lists &#x22;Common Mistakes to Avoid,&#x22; providing typical mistakes on the left with suggested solutions on the right, such as setting a mental timer for questions and using documentation rather than memorizing syntax." />
@@ -113,6 +109,4 @@ You already possess the technical knowledge. Now practice the workflow until it�
 * [CNCF Certifications](https://www.cncf.io/certification/)
 * Practice the exam simulator included with your exam purchase — it mirrors the real interface and is the best way to build exam fluency.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/a947aaf5-7e9e-4a67-b319-702d6246b513/lesson/53876d5f-785d-4595-a356-f13ce84651fa" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/a947aaf5-7e9e-4a67-b319-702d6246b513/lesson/53876d5f-785d-4595-a356-f13ce84651fa)

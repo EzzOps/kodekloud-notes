@@ -10,9 +10,7 @@ The Optimize phase uses measurement and reporting to identify cost reductions. T
 
 This article explains what the Operate phase does, how it functions, common activities, and typical pitfalls to watch for.
 
-<Callout icon="lightbulb">
-  The Operate phase is continuous: execute improvements, align business priorities with FinOps practices, and transform culture so cost-conscious behavior becomes part of everyday engineering and product decisions.
-</Callout>
+> **lightbulb** The Operate phase is continuous: execute improvements, align business priorities with FinOps practices, and transform culture so cost-conscious behavior becomes part of everyday engineering and product decisions.
 
 ## Why the Operate Phase matters
 
@@ -64,9 +62,7 @@ If you are part of the FinOps or cloud operations team executing the Operate pha
 
 When you capture and publicize improvements (for instance, “Team X saved \$Y this month”), you reinforce the behaviors you want across the organization and increase support for ongoing effort.
 
-<Callout icon="warning">
-  Operate requires sustained leadership support and visible metrics. Without clear ownership and measurable results, optimizations will erode and teams may deprioritize cost work.
-</Callout>
+> **warning** Operate requires sustained leadership support and visible metrics. Without clear ownership and measurable results, optimizations will erode and teams may deprioritize cost work.
 
 ## Common pitfalls in the Operate phase
 
@@ -102,6 +98,4 @@ In mature organizations, engineering teams usually bake FinOps tasks into regula
 
 That concludes this lesson on the Operate phase.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/5dec4577-7276-4a7a-8040-c172cd00f341/lesson/cd7d77cf-2c89-4236-a48d-78443348553a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/5dec4577-7276-4a7a-8040-c172cd00f341/lesson/cd7d77cf-2c89-4236-a48d-78443348553a)

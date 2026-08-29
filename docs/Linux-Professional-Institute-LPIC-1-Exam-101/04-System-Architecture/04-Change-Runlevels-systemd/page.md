@@ -20,9 +20,7 @@ Systemd supports seven primary unit types:
 | target    | Groups units for collective management (analogous to SysVinit runlevels).                  |
 | snapshot  | Captures the current state of systemd’s unit manager (not available on all distributions). |
 
-<Frame>
-  ![The image is a text-based explanation of systemd components, detailing various terms like service, socket, device, mount, automount, target, and snapshot, along with their definitions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881458/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Change-Runlevels-systemd/systemd-components-explanation-terms-definitions.jpg)
-</Frame>
+![The image is a text-based explanation of systemd components, detailing various terms like service, socket, device, mount, automount, target, and snapshot, along with their definitions.](https://kodekloud.com/kk-media/image/upload/v1752881458/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Change-Runlevels-systemd/systemd-components-explanation-terms-definitions.jpg)
 
 ## Managing Units with systemctl
 
@@ -61,9 +59,7 @@ sudo systemctl set-default multi-user.target  # Persist default target across re
 systemctl get-default                        # Display the current default target
 ```
 
-<Callout icon="triangle-alert">
-  Never set the default target to `shutdown.target`, as it will power off the system immediately after boot.
-</Callout>
+> **triangle-alert** Never set the default target to `shutdown.target`, as it will power off the system immediately after boot.
 
 ## Listing Unit Files and Active Units
 
@@ -89,9 +85,7 @@ sudo systemctl suspend    # Enter low-power mode; RAM remains powered
 sudo systemctl hibernate  # Save RAM to disk, then power off
 ```
 
-<Callout icon="lightbulb">
-  Power-related settings live in `/etc/systemd/logind.conf` and any drop-in files under `/etc/systemd/logind.conf.d/`. For finer control over ACPI events (lid close, battery thresholds, etc.), consider using the `acpid` daemon.
-</Callout>
+> **lightbulb** Power-related settings live in `/etc/systemd/logind.conf` and any drop-in files under `/etc/systemd/logind.conf.d/`. For finer control over ACPI events (lid close, battery thresholds, etc.), consider using the `acpid` daemon.
 
 ***
 
@@ -102,6 +96,4 @@ sudo systemctl hibernate  # Save RAM to disk, then power off
 * [Red Hat Enterprise Linux systemd Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/)
 * [Debian systemd FAQ](https://wiki.debian.org/systemd)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/55c2d118-3a85-4da1-8a7f-e9f8671cc818/lesson/c728cc31-5d66-4ac1-bcdd-2e2af22bd29a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/55c2d118-3a85-4da1-8a7f-e9f8671cc818/lesson/c728cc31-5d66-4ac1-bcdd-2e2af22bd29a)

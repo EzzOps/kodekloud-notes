@@ -13,9 +13,7 @@ FastAPI automatically generates interactive documentation that displays all the 
 * **Authentication**: Log in to the system.
 * **Voting**: Vote or “like” posts.
 
-<Frame>
-  ![The image shows a Swagger UI interface for a FastAPI application, displaying various API endpoints for posts, users, authentication, and voting. Each endpoint is categorized by HTTP methods like GET, POST, PUT, and DELETE.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883452/notes-assets/images/Python-API-Development-with-FastAPI-The-app-that-we-will-be-building/swagger-ui-fastapi-api-endpoints.jpg)
-</Frame>
+![The image shows a Swagger UI interface for a FastAPI application, displaying various API endpoints for posts, users, authentication, and voting. Each endpoint is categorized by HTTP methods like GET, POST, PUT, and DELETE.](https://kodekloud.com/kk-media/image/upload/v1752883452/notes-assets/images/Python-API-Development-with-FastAPI-The-app-that-we-will-be-building/swagger-ui-fastapi-api-endpoints.jpg)
 
 ## Testing the API Endpoints
 
@@ -44,9 +42,7 @@ www-authenticate: Bearer
 }
 ```
 
-<Callout icon="lightbulb">
-  All API endpoints require user authentication. Be sure to log in before testing endpoints that modify or retrieve protected data.
-</Callout>
+> **lightbulb** All API endpoints require user authentication. Be sure to log in before testing endpoints that modify or retrieve protected data.
 
 ## Creating a New User
 
@@ -63,9 +59,7 @@ Replace these values with your desired credentials. For demonstration purposes, 
 
 Next, log in using either the login endpoint or by clicking the "Authorize" button on the top right of the documentation. Enter the credentials for `john@gmail.com` to receive an authorization token.
 
-<Frame>
-  ![The image shows a FastAPI Swagger UI authorization window for OAuth2PasswordBearer, where a user can input their username, password, and client credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883453/notes-assets/images/Python-API-Development-with-FastAPI-The-app-that-we-will-be-building/fastapi-swagger-oauth2-authentication.jpg)
-</Frame>
+![The image shows a FastAPI Swagger UI authorization window for OAuth2PasswordBearer, where a user can input their username, password, and client credentials.](https://kodekloud.com/kk-media/image/upload/v1752883453/notes-assets/images/Python-API-Development-with-FastAPI-The-app-that-we-will-be-building/fastapi-swagger-oauth2-authentication.jpg)
 
 ## Retrieving Posts After Authentication
 
@@ -215,6 +209,4 @@ With these endpoints, you have a solid foundation to build a fully functioning s
 
 Now that you have an overview of the application's API endpoints and how to interact with them, let's begin coding the application!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/39b3bc40-eea2-4573-9929-47bae4f9f008/lesson/0af773be-ed1a-4695-8e9b-9decc656b535" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/39b3bc40-eea2-4573-9929-47bae4f9f008/lesson/0af773be-ed1a-4695-8e9b-9decc656b535)

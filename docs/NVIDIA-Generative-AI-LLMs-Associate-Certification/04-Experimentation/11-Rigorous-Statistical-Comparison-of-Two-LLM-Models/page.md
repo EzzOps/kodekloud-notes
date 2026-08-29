@@ -41,9 +41,7 @@ Practical checklist for a rigorous comparison
 7. If you run multiple hypotheses (e.g., many tasks or metrics), correct for multiple comparisons (Bonferroni, Holm, or false discovery rate methods).
 8. Share code and the example-level results so others can reproduce the test.
 
-<Callout icon="lightbulb">
-  Always report both statistical significance and effect size. A small p-value can be meaningless if the effect is tiny; conversely, a large effect with insufficient sample size can be inconclusive without a confidence interval.
-</Callout>
+> **lightbulb** Always report both statistical significance and effect size. A small p-value can be meaningless if the effect is tiny; conversely, a large effect with insufficient sample size can be inconclusive without a confidence interval.
 
 <Frame>
   <img alt="The image is a multiple-choice question about the most rigorous statistical approach to compare Model A and Model B. The correct answer highlighted is using a paired statistical test on per-example performance differences." />
@@ -55,9 +53,7 @@ Why the other options are insufficient
 * Best-case single-example performance: Extremely sensitive to outliers and not representative of overall behavior.
 * Training speed: Relevant for engineering trade-offs but unrelated to held-out evaluation performance on the target task.
 
-<Callout icon="warning">
-  Avoid unpaired comparisons or using only aggregate metrics for hypothesis testing. Always pair examples between models, check test assumptions, and guard against data leakage and multiple comparisons.
-</Callout>
+> **warning** Avoid unpaired comparisons or using only aggregate metrics for hypothesis testing. Always pair examples between models, check test assumptions, and guard against data leakage and multiple comparisons.
 
 Links and references
 
@@ -73,6 +69,4 @@ Table of related resources
 | `scipy.stats`   | Common implementations for `ttest_rel`, `wilcoxon`, `mcnemar` via statsmodels or other packages.      |
 | Practical guide | Papers and blogs on reporting p-values, effect sizes, and confidence intervals in NLP/ML evaluations. |
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/e6d52e24-1f0a-4fa7-85f2-c33435e52b30" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/e6d52e24-1f0a-4fa7-85f2-c33435e52b30)

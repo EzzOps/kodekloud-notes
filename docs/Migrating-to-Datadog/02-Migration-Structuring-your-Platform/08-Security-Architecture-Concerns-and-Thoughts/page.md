@@ -25,9 +25,7 @@ The physical and legal location of stored data matters for compliance, contracts
 * Contractual and technical controls that prevent data from leaving specified jurisdictions.
 * Available cross-border transfer mechanisms (e.g., Standard Contractual Clauses, adequacy decisions) and whether those satisfy your legal team.
 
-<Callout icon="lightbulb">
-  Engage legal and compliance teams early to confirm residency requirements and acceptable technical/contractual controls—this reduces rework and procurement delays.
-</Callout>
+> **lightbulb** Engage legal and compliance teams early to confirm residency requirements and acceptable technical/contractual controls—this reduces rework and procurement delays.
 
 ## Access (Identity and Access Management)
 
@@ -71,9 +69,7 @@ Retention policies should meet business, regulatory, and legal requirements whil
 * Use WORM or append-only storage when immutable audit trails are required.
 * Validate retention and purge processes regularly and document retention-related SLAs.
 
-<Callout icon="lightbulb">
-  Align retention policy decisions with legal, compliance, and security teams before selecting storage platforms to avoid costly migrations or compliance gaps.
-</Callout>
+> **lightbulb** Align retention policy decisions with legal, compliance, and security teams before selecting storage platforms to avoid costly migrations or compliance gaps.
 
 ## Encryption
 
@@ -86,9 +82,7 @@ Encryption is mandatory for protecting sensitive data and meeting compliance nee
 * Audit key usage and monitor for anomalous access patterns.
 * Avoid implementing custom cryptography; rely on vetted libraries and provider-managed services.
 
-<Callout icon="warning">
-  Do not transmit or store sensitive data unencrypted. Validate encryption end-to-end during design and deployment and include encryption checks in automated audits.
-</Callout>
+> **warning** Do not transmit or store sensitive data unencrypted. Validate encryption end-to-end during design and deployment and include encryption checks in automated audits.
 
 ## Tying security and reliability together
 
@@ -111,6 +105,4 @@ That concludes this lesson. Use the checklist above during architecture reviews 
 * [VPC and cloud networking concepts](https://learn.kodekloud.com/user/courses/aws-networking-fundamentals)
 * [Service mesh (Istio) primer](https://learn.kodekloud.com/user/courses/istio-service-mesh)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/86191132-d6e4-406f-b7d0-37d6bf0e3d58" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/86191132-d6e4-406f-b7d0-37d6bf0e3d58)

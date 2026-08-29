@@ -29,9 +29,7 @@ The rapid rise of DevOps has created a significant need for professionals with s
 * Managing system configurations
 * Maintaining security and networking practices in a Linux environment
 
-<Callout icon="lightbulb">
-  This course features hands-on labs designed to help you practice and apply Linux fundamentals in real-world scenarios.
-</Callout>
+> **lightbulb** This course features hands-on labs designed to help you practice and apply Linux fundamentals in real-world scenarios.
 
 ## Course Structure and Learning Approach
 
@@ -49,20 +47,14 @@ Throughout the course, you will:
 * Configure storage options including disk formatting, mounting, and creating logical volume groups.
 * Set up custom applications to start on boot using SYSTEMD, the primary initializer for Linux services.
 
-<Frame>
-  ![A person is sitting in front of a list of Linux topics, including shell, core concepts, package management, security, networking, and storage, with plants in the background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881115/notes-assets/images/Learning-Linux-Basics-Course-Labs-Course-Introduction/frame_550.jpg)
-</Frame>
+![A person is sitting in front of a list of Linux topics, including shell, core concepts, package management, security, networking, and storage, with plants in the background.](https://kodekloud.com/kk-media/image/upload/v1752881115/notes-assets/images/Learning-Linux-Basics-Course-Labs-Course-Introduction/frame_550.jpg)
 
 Our lectures incorporate visualization, storytelling, and analogies to demystify complex topics. After each lecture, you will work on hands-on labs that challenge you with practical exercises, guided hints, and personal feedback.
 
-<Callout icon="lightbulb">
-  All labs are executed directly in your browser, eliminating the need for local environment setup so you can start practicing immediately.
-</Callout>
+> **lightbulb** All labs are executed directly in your browser, eliminating the need for local environment setup so you can start practicing immediately.
 
 ## Let's Get Started
 
 If you’re ready, dive into the fascinating world of Linux and lay a solid foundation for your DevOps journey. Welcome aboard and enjoy the course!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/571673f9-96f0-4212-bd13-a61a069c9e1f/lesson/09b34031-7fd7-4e26-ab3b-6df0acad154b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/571673f9-96f0-4212-bd13-a61a069c9e1f/lesson/09b34031-7fd7-4e26-ab3b-6df0acad154b)

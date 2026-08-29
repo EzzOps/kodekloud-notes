@@ -56,9 +56,7 @@ To tag your local image for pushing to Docker Hub, use the following Docker comm
 docker tag local-image:tagname new-repo:tagname
 ```
 
-<Callout icon="lightbulb">
-  For further details, refer to the [Docker documentation on setting up GitHub Actions](https://docs.docker.com/).
-</Callout>
+> **lightbulb** For further details, refer to the [Docker documentation on setting up GitHub Actions](https://docs.docker.com/).
 
 ## Generating an Access Token on Docker Hub
 
@@ -69,21 +67,13 @@ Next, generate an access token:
 
 The process might display pop-ups similar to these:
 
-<Frame>
-  ![The image shows a webpage from Docker documentation about configuring GitHub Actions, including steps to set up a Docker project.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883347/notes-assets/images/Python-API-Development-with-FastAPI-Building-Docker-Images/docker-github-actions-configuration.jpg)
-</Frame>
+![The image shows a webpage from Docker documentation about configuring GitHub Actions, including steps to set up a Docker project.](https://kodekloud.com/kk-media/image/upload/v1752883347/notes-assets/images/Python-API-Development-with-FastAPI-Building-Docker-Images/docker-github-actions-configuration.jpg)
 
-<Frame>
-  ![The image shows a Docker Hub settings page with options for vulnerability scanning, visibility settings, and deleting a repository.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883348/notes-assets/images/Python-API-Development-with-FastAPI-Building-Docker-Images/docker-hub-settings-vulnerability-scanning.jpg)
-</Frame>
+![The image shows a Docker Hub settings page with options for vulnerability scanning, visibility settings, and deleting a repository.](https://kodekloud.com/kk-media/image/upload/v1752883348/notes-assets/images/Python-API-Development-with-FastAPI-Building-Docker-Images/docker-hub-settings-vulnerability-scanning.jpg)
 
-<Frame>
-  ![The image shows a Docker Hub interface with a pop-up window for creating a new access token, where users can enter a description and set access permissions. The background displays account settings and security options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883350/notes-assets/images/Python-API-Development-with-FastAPI-Building-Docker-Images/docker-hub-access-token-popup.jpg)
-</Frame>
+![The image shows a Docker Hub interface with a pop-up window for creating a new access token, where users can enter a description and set access permissions. The background displays account settings and security options.](https://kodekloud.com/kk-media/image/upload/v1752883350/notes-assets/images/Python-API-Development-with-FastAPI-Building-Docker-Images/docker-hub-access-token-popup.jpg)
 
-<Callout icon="triangle-alert">
-  Remember: Once generated, copy the access token immediately. It will only be displayed once.
-</Callout>
+> **triangle-alert** Remember: Once generated, copy the access token immediately. It will only be displayed once.
 
 ## Storing Credentials in GitHub Secrets
 
@@ -94,17 +84,11 @@ With your Docker Hub username and access token, take the following steps:
 
 The images below guide you through adding secrets in GitHub:
 
-<Frame>
-  ![The image shows a GitHub repository settings page, specifically the "Environments" section, with an environment named "testing" listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883352/notes-assets/images/Python-API-Development-with-FastAPI-Building-Docker-Images/github-repo-settings-environments-testing.jpg)
-</Frame>
+![The image shows a GitHub repository settings page, specifically the "Environments" section, with an environment named "testing" listed.](https://kodekloud.com/kk-media/image/upload/v1752883352/notes-assets/images/Python-API-Development-with-FastAPI-Building-Docker-Images/github-repo-settings-environments-testing.jpg)
 
-<Frame>
-  ![The image shows a GitHub settings page where a user is adding a secret named "DOCKER\_HUB" with a field for entering a secret value. Various other secrets are listed below with options to update or remove them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883353/notes-assets/images/Python-API-Development-with-FastAPI-Building-Docker-Images/github-settings-add-secret-docker-hub.jpg)
-</Frame>
+![The image shows a GitHub settings page where a user is adding a secret named "DOCKER\_HUB" with a field for entering a secret value. Various other secrets are listed below with options to update or remove them.](https://kodekloud.com/kk-media/image/upload/v1752883353/notes-assets/images/Python-API-Development-with-FastAPI-Building-Docker-Images/github-settings-add-secret-docker-hub.jpg)
 
-<Frame>
-  ![The image shows a GitHub settings page where a user is adding a secret named "DOCKER\_HUB\_ACCESS\_TOKEN" with a specific value. The interface includes options to update or remove existing secrets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883354/notes-assets/images/Python-API-Development-with-FastAPI-Building-Docker-Images/github-settings-add-secret-docker-hub-2.jpg)
-</Frame>
+![The image shows a GitHub settings page where a user is adding a secret named "DOCKER\_HUB\_ACCESS\_TOKEN" with a specific value. The interface includes options to update or remove existing secrets.](https://kodekloud.com/kk-media/image/upload/v1752883354/notes-assets/images/Python-API-Development-with-FastAPI-Building-Docker-Images/github-settings-add-secret-docker-hub-2.jpg)
 
 ## Configuring GitHub Actions Workflow
 
@@ -217,9 +201,7 @@ jobs:
         run: echo ${{ steps.docker_build.outputs.digest }}
 ```
 
-<Callout icon="lightbulb">
-  Ensure each step in your workflow contains either `uses` or `run`. Combining both in a single step can lead to YAML syntax errors.
-</Callout>
+> **lightbulb** Ensure each step in your workflow contains either `uses` or `run`. Combining both in a single step can lead to YAML syntax errors.
 
 ## Handling Buildx Issues
 
@@ -253,9 +235,7 @@ git commit -m "added docker"
 
 Then push your changes to the repository to trigger the CI/CD pipeline. You can verify a successful push by checking Docker Hub or reviewing your GitHub Actions log output.
 
-<Frame>
-  ![The image shows a GitHub Actions page for a repository named "fastapi-course," displaying a successful build and deploy job. The job, labeled "job1," took 2 minutes and 42 seconds to complete.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883356/notes-assets/images/Python-API-Development-with-FastAPI-Building-Docker-Images/github-actions-fastapi-course-job1-success.jpg)
-</Frame>
+![The image shows a GitHub Actions page for a repository named "fastapi-course," displaying a successful build and deploy job. The job, labeled "job1," took 2 minutes and 42 seconds to complete.](https://kodekloud.com/kk-media/image/upload/v1752883356/notes-assets/images/Python-API-Development-with-FastAPI-Building-Docker-Images/github-actions-fastapi-course-job1-success.jpg)
 
 ## Continuous Delivery
 
@@ -265,6 +245,4 @@ With this setup, your GitHub Actions workflow manages both testing and the Docke
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/4979410a-af57-460b-8f71-5a177fa10d2d/lesson/cc3b74db-9940-4ea6-a21e-d82b95ae78a5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/4979410a-af57-460b-8f71-5a177fa10d2d/lesson/cc3b74db-9940-4ea6-a21e-d82b95ae78a5)

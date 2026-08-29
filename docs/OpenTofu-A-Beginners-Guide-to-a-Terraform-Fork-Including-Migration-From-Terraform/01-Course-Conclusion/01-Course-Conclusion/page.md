@@ -15,9 +15,7 @@ Congratulations on completing the OpenTofu course! Over the past few weeks, you�
 | Provisioners & Modules | - `local-exec`, `remote-exec` provisioners<br />- Creating reusable modules                               |
 | Advanced Concepts      | - The genesis and evolution of OpenTofu<br />- Core features and advantages<br />- Emerging trends in IaC |
 
-<Callout icon="lightbulb">
-  Don’t let your momentum stop here. Continue experimenting with new modules, explore community providers, and contribute to the OpenTofu ecosystem.
-</Callout>
+> **lightbulb** Don’t let your momentum stop here. Continue experimenting with new modules, explore community providers, and contribute to the OpenTofu ecosystem.
 
 ## Real-World Practice
 
@@ -27,9 +25,7 @@ Our browser-based hands-on labs helped you bridge theory and practice. Applying 
 * Integrate with CI/CD pipelines
 * Implement drift detection and automated remediation
 
-<Callout icon="triangle-alert">
-  Always safeguard your state files. Store them remotely (e.g., in an S3 bucket with encryption) and enable locking to prevent concurrent modifications.
-</Callout>
+> **triangle-alert** Always safeguard your state files. Store them remotely (e.g., in an S3 bucket with encryption) and enable locking to prevent concurrent modifications.
 
 ## Next Steps & Resources
 
@@ -41,6 +37,4 @@ Level up your skills by diving into these resources:
 
 Keep exploring, stay curious, and leverage the power of Infrastructure as Code to transform your infrastructure workflows. Best of luck on your journey ahead!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/0a49ec52-9004-4c1a-9bec-9d80c4d48920/lesson/2532bc3d-bfa6-4494-985f-d0a69c2de6d6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/0a49ec52-9004-4c1a-9bec-9d80c4d48920/lesson/2532bc3d-bfa6-4494-985f-d0a69c2de6d6)

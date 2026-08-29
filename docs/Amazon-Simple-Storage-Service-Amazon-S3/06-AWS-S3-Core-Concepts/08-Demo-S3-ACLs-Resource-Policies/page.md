@@ -40,19 +40,19 @@ Switch among these tabs to verify permissions.
    * Block all public access: **Enabled**
    * Versioning: **Disabled**
 
-![The image shows an AWS S3 bucket creation page, where settings like bucket name, region, object ownership, and public access are configured.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869304/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-ACLs-Resource-Policies/aws-s3-bucket-creation-settings.jpg)
+![The image shows an AWS S3 bucket creation page, where settings like bucket name, region, object ownership, and public access are configured.](https://kodekloud.com/kk-media/image/upload/v1752869304/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-ACLs-Resource-Policies/aws-s3-bucket-creation-settings.jpg)
 
 3. Confirm creation.
 
-![The image shows an AWS S3 Management Console with a notification indicating a bucket named "kk-resource-policies" has been successfully created. The console displays details about the bucket, including its region and access status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869308/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-ACLs-Resource-Policies/aws-s3-console-bucket-created-notification.jpg)
+![The image shows an AWS S3 Management Console with a notification indicating a bucket named "kk-resource-policies" has been successfully created. The console displays details about the bucket, including its region and access status.](https://kodekloud.com/kk-media/image/upload/v1752869308/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-ACLs-Resource-Policies/aws-s3-console-bucket-created-notification.jpg)
 
 4. Upload a set of files (e.g., text & log files).
 
-![The image shows an AWS S3 Management Console with a successful upload status for 13 files, totaling 7.0 B, all marked as succeeded.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869309/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-ACLs-Resource-Policies/aws-s3-management-console-upload-success.jpg)
+![The image shows an AWS S3 Management Console with a successful upload status for 13 files, totaling 7.0 B, all marked as succeeded.](https://kodekloud.com/kk-media/image/upload/v1752869309/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-ACLs-Resource-Policies/aws-s3-management-console-upload-success.jpg)
 
 5. Verify all objects are listed:
 
-![The image shows an Amazon S3 bucket interface with a list of files and folders, including text files and directories, along with their details like type, last modified date, and size.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869310/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-ACLs-Resource-Policies/amazon-s3-bucket-interface-files-list.jpg)
+![The image shows an Amazon S3 bucket interface with a list of files and folders, including text files and directories, along with their details like type, last modified date, and size.](https://kodekloud.com/kk-media/image/upload/v1752869310/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-ACLs-Resource-Policies/amazon-s3-bucket-interface-files-list.jpg)
 
 By default, as the bucket owner:
 
@@ -117,7 +117,7 @@ Save the policy.
 
 In **Green**, open `logs/log1` → download succeeds.
 
-![The image shows an Amazon S3 management console displaying details of an object named "log1" within a bucket. It includes information such as the owner, region, last modified date, and object URL, along with a notification about bucket versioning permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869312/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-ACLs-Resource-Policies/amazon-s3-console-log1-details.jpg)
+![The image shows an Amazon S3 management console displaying details of an object named "log1" within a bucket. It includes information such as the owner, region, last modified date, and object URL, along with a notification about bucket versioning permissions.](https://kodekloud.com/kk-media/image/upload/v1752869312/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-ACLs-Resource-Policies/amazon-s3-console-log1-details.jpg)
 
 Attempting to open `file1.txt` (outside `logs/`) still yields **AccessDenied**:
 
@@ -152,7 +152,7 @@ Save and switch to **Green**:
 * Deleting `traces/trace1` → **Success**
 * Deleting `file1.txt` → **AccessDenied**
 
-![The image shows an AWS S3 console screen with a "Failed to delete objects" error message, indicating a permission issue with deleting a file named "file1.txt".](../../../../images/kodekloud.com/kk-media/image/upload/v1752869313/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-ACLs-Resource-Policies/aws-s3-failed-delete-permission-error.jpg)
+![The image shows an AWS S3 console screen with a "Failed to delete objects" error message, indicating a permission issue with deleting a file named "file1.txt".](https://kodekloud.com/kk-media/image/upload/v1752869313/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-ACLs-Resource-Policies/aws-s3-failed-delete-permission-error.jpg)
 
 ***
 
@@ -198,7 +198,7 @@ To expose only the `media/` prefix publicly:
 
 After saving, any object under `media/` is publicly readable.
 
-![The image shows an Amazon S3 console displaying details of a file named "file1.txt," including its properties, size, and object URL. It also highlights that bucket versioning is disabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869314/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-ACLs-Resource-Policies/amazon-s3-file1txt-properties-versioning-disabled.jpg)
+![The image shows an Amazon S3 console displaying details of a file named "file1.txt," including its properties, size, and object URL. It also highlights that bucket versioning is disabled.](https://kodekloud.com/kk-media/image/upload/v1752869314/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-ACLs-Resource-Policies/amazon-s3-file1txt-properties-versioning-disabled.jpg)
 
 ***
 

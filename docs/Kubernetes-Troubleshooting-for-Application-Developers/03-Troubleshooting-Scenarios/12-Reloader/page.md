@@ -6,15 +6,11 @@ This guide introduces Reloader, a Kubernetes controller that automates rolling u
 
 In modern Kubernetes environments, troubleshooting can become cumbersome when ConfigMap or Secret updates don't automatically trigger pod restarts. This guide introduces Reloader, a Kubernetes controller designed to automate rolling upgrades of your Deployments, DaemonSets, or StatefulSets whenever there's a change in ConfigMap or Secret objects.
 
-<Frame>
-  ![The image shows a GitHub repository page for "stakater/Reloader," displaying the file structure, recent commits, and a brief description of the project. The repository is a Kubernetes controller for managing ConfigMap and Secrets changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880439/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Reloader/github-repo-stakater-reloader.jpg)
-</Frame>
+![The image shows a GitHub repository page for "stakater/Reloader," displaying the file structure, recent commits, and a brief description of the project. The repository is a Kubernetes controller for managing ConfigMap and Secrets changes.](https://kodekloud.com/kk-media/image/upload/v1752880439/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Reloader/github-repo-stakater-reloader.jpg)
 
 Reloader continuously monitors for modifications in your ConfigMaps and Secrets. When a change is detected, it triggers a rolling upgrade, ensuring that your Kubernetes resources are immediately redeployed without any manual intervention.
 
-<Frame>
-  ![The image shows a webpage from Stakater discussing a tool for Kubernetes that performs rolling upgrades when changes occur in ConfigMap or Secret. It outlines the problem, solution, and offers an enterprise version with additional support features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880440/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Reloader/kubernetes-rolling-upgrades-tool.jpg)
-</Frame>
+![The image shows a webpage from Stakater discussing a tool for Kubernetes that performs rolling upgrades when changes occur in ConfigMap or Secret. It outlines the problem, solution, and offers an enterprise version with additional support features.](https://kodekloud.com/kk-media/image/upload/v1752880440/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Reloader/kubernetes-rolling-upgrades-tool.jpg)
 
 ## How Reloader Works
 
@@ -54,9 +50,7 @@ NAME                              READY   STATUS    RESTARTS   AGE
 reloader-reloader-d88cf475-bbqhh   1/1     Running   0          3m12s
 ```
 
-<Callout icon="lightbulb">
-  Ensure your cluster has the necessary permissions for Reloader to manage your deployments.
-</Callout>
+> **lightbulb** Ensure your cluster has the necessary permissions for Reloader to manage your deployments.
 
 ## Integrating Reloader with Your Application
 

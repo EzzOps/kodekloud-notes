@@ -42,9 +42,7 @@ Key properties of OTLP over gRPC:
   <img alt="The image is a diagram titled &#x22;OTLP Over gRPC&#x22; highlighting key features like multiplexing, bidirectional streaming support, and built-in flow control with header compression." />
 </Frame>
 
-<Callout icon="warning">
-  gRPC requires HTTP/2. If your environment, proxy, or gateway does not support HTTP/2 (or enforces HTTP/1.x only), prefer OTLP over HTTP.
-</Callout>
+> **warning** gRPC requires HTTP/2. If your environment, proxy, or gateway does not support HTTP/2 (or enforces HTTP/1.x only), prefer OTLP over HTTP.
 
 ## OTLP over HTTP (Protobuf encoding)
 
@@ -144,9 +142,7 @@ A succinct view of the telemetry journey:
 * HTTP + Protobuf: choose when gRPC is blocked or unsupported but you still want compact binary encoding.
 * HTTP + JSON: use for debugging, quick manual inspection, or environments that require text payloads.
 
-<Callout icon="lightbulb">
-  Choose transports based on environment constraints (HTTP/2 availability), performance needs (low-latency streaming vs. request-based), and debugging requirements (binary vs. human-readable).
-</Callout>
+> **lightbulb** Choose transports based on environment constraints (HTTP/2 availability), performance needs (low-latency streaming vs. request-based), and debugging requirements (binary vs. human-readable).
 
 <Frame>
   <img alt="The image is a comparison chart for OTLP transport and encoding, comparing gRPC + Protobuf, HTTP + Protobuf, and HTTP + JSON across features like content-type, compression, performance, and best use cases." />
@@ -156,6 +152,4 @@ Core takeaway: the same OTLP data model (resource → scope → signals) flows t
 
 That's everything about OTLP transport options.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/4a28a358-0f6c-41db-b273-5de50a0942d2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/4a28a358-0f6c-41db-b273-5de50a0942d2)

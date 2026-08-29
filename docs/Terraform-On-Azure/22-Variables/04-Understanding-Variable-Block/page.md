@@ -171,9 +171,7 @@ For readability, here’s the same precedence in a compact table:
 
 Note: If a variable has no default and hasn't been set by any of the above, Terraform will prompt you interactively as a last resort—unsuitable for automation.
 
-<Callout icon="lightbulb">
-  Organize variables according to this hierarchy. Use environment variables for secrets in CI/CD, `terraform.tfvars` for project defaults, `.auto.tfvars` for per-environment variables, and `-var`/`-var-file` for temporary or manual overrides.
-</Callout>
+> **lightbulb** Organize variables according to this hierarchy. Use environment variables for secrets in CI/CD, `terraform.tfvars` for project defaults, `.auto.tfvars` for per-environment variables, and `-var`/`-var-file` for temporary or manual overrides.
 
 ## When to use each method
 
@@ -282,9 +280,7 @@ Always remember the precedence rules when values are defined in multiple places.
 * Terraform: Input variable precedence — [https://www.terraform.io/cli/config/variables](https://www.terraform.io/cli/config/variables)
 * Terraform: Variable files and JSON syntax — [https://www.terraform.io/language/values/variables#variable-definitions-files](https://www.terraform.io/language/values/variables#variable-definitions-files)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/6909fa70-4ccc-40c3-a918-1188673d8985/lesson/6b9783d9-2590-4e55-a0ae-2fcc7db50537" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/6909fa70-4ccc-40c3-a918-1188673d8985/lesson/6b9783d9-2590-4e55-a0ae-2fcc7db50537)
 
 
 # Understanding Variable Block

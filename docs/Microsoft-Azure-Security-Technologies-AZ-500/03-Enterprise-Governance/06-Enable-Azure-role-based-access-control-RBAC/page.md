@@ -16,13 +16,9 @@ Azure RBAC is built around three fundamental components:
 
 When a role definition is assigned to a security principal at a given scope, a role assignment is created. The diagram below illustrates the relationship between these components:
 
-<Frame>
-  ![The image is a diagram explaining Role Based Access Control (RBAC), detailing components like Security Principal, Role Definition, Scope, and Role Assignment. It visually represents how these elements combine to form an access control assignment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881812/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/rbac-diagram-access-control.jpg)
-</Frame>
+![The image is a diagram explaining Role Based Access Control (RBAC), detailing components like Security Principal, Role Definition, Scope, and Role Assignment. It visually represents how these elements combine to form an access control assignment.](https://kodekloud.com/kk-media/image/upload/v1752881812/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/rbac-diagram-access-control.jpg)
 
-<Callout icon="lightbulb">
-  Keep in mind that each subscription can have up to 2,000 role assignments. Always follow the principle of least privilege and consider using Privileged Identity Management (PIM) to reduce long-term direct access to sensitive resources.
-</Callout>
+> **lightbulb** Keep in mind that each subscription can have up to 2,000 role assignments. Always follow the principle of least privilege and consider using Privileged Identity Management (PIM) to reduce long-term direct access to sensitive resources.
 
 ## Understanding Role Definitions
 
@@ -68,9 +64,7 @@ Azure's key built-in roles include:
 
 The following diagram visually represents these built-in roles and their respective access permissions:
 
-<Frame>
-  ![The image describes Azure's built-in roles: Owner, Contributor, Reader, and User Access Administrator, each with specific access permissions. It visually represents these roles with a colorful diagram and brief descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881813/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-built-in-roles-diagram.jpg)
-</Frame>
+![The image describes Azure's built-in roles: Owner, Contributor, Reader, and User Access Administrator, each with specific access permissions. It visually represents these roles with a colorful diagram and brief descriptions.](https://kodekloud.com/kk-media/image/upload/v1752881813/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-built-in-roles-diagram.jpg)
 
 ## Assigning Roles Using the Azure Portal
 
@@ -81,15 +75,11 @@ The next steps guide you through assigning roles with the Azure portal.
 1. Log in to the Azure portal and navigate to the resource groups section.
 2. Create a new resource group if needed; for example, name it "AC demo RBAC" in the East Europe region.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a resource group, with fields for subscription, resource group name, and region selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881814/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-resource-group-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a resource group, with fields for subscription, resource group name, and region selection.](https://kodekloud.com/kk-media/image/upload/v1752881814/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-resource-group-creation.jpg)
 
 After creation, the resource group appears in your list:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying a list of resource groups, including their names, subscriptions, and locations. A notification indicates that a resource group was successfully created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881815/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-resource-groups-list.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying a list of resource groups, including their names, subscriptions, and locations. A notification indicates that a resource group was successfully created.](https://kodekloud.com/kk-media/image/upload/v1752881815/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-resource-groups-list.jpg)
 
 ### Using the Access Control (IAM) Blade
 
@@ -99,21 +89,15 @@ To manage permissions, open the Access Control (IAM) blade for your resource gro
 * Inspect access details for different users.
 * Add new role assignments.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for a resource group named "az-demo-rbac." It displays various options like activity log, access control, and settings, with a message indicating no resources match the current filters.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881816/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-az-demo-rbac.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for a resource group named "az-demo-rbac." It displays various options like activity log, access control, and settings, with a message indicating no resources match the current filters.](https://kodekloud.com/kk-media/image/upload/v1752881816/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-az-demo-rbac.jpg)
 
 Role assignments can be inherited from a higher-level scope. For example, an assignment at the subscription level might be reflected within a specific resource group.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal, specifically the Access Control (IAM) section for a resource group named "az-demo-rbac." It displays options for checking access, granting access, viewing access, and managing role assignments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881817/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-access-control-iam.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal, specifically the Access Control (IAM) section for a resource group named "az-demo-rbac." It displays options for checking access, granting access, viewing access, and managing role assignments.](https://kodekloud.com/kk-media/image/upload/v1752881817/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-access-control-iam.jpg)
 
 For example, you might see that your account is designated as an owner at the subscription level:
 
-<Frame>
-  ![The image shows the Microsoft Azure portal's Access Control (IAM) page, displaying role assignments for a subscription, with one user listed as the owner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881818/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-access-control-role-assignments.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal's Access Control (IAM) page, displaying role assignments for a subscription, with one user listed as the owner.](https://kodekloud.com/kk-media/image/upload/v1752881818/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-access-control-role-assignments.jpg)
 
 ### Adding a Role Assignment
 
@@ -124,9 +108,7 @@ To assign a role such as Reader:
 3. Select the members (users or groups) to assign the role.
 4. Confirm the assignment.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for adding role assignments, listing various roles with descriptions, types, and options to view details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881820/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-role-assignments.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for adding role assignments, listing various roles with descriptions, types, and options to view details.](https://kodekloud.com/kk-media/image/upload/v1752881820/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-role-assignments.jpg)
 
 The user interface will display:
 
@@ -134,15 +116,11 @@ The user interface will display:
 * The members selected for this role.
 * The scope where the assignment is applied.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal interface for adding a role assignment, with a list of job function roles and a sidebar for selecting members to assign roles. The roles include descriptions and are categorized as built-in.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881821/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-role-assignment-interface.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal interface for adding a role assignment, with a list of job function roles and a sidebar for selecting members to assign roles. The roles include descriptions and are categorized as built-in.](https://kodekloud.com/kk-media/image/upload/v1752881821/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-role-assignment-interface.jpg)
 
 After completing these steps, you can view the updated role assignments:
 
-<Frame>
-  ![The image shows the Microsoft Azure portal displaying the "Access control (IAM)" section for a resource group named "az-demo-rbac." It lists role assignments for users, including their roles and scopes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881822/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-access-control-iam-2.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal displaying the "Access control (IAM)" section for a resource group named "az-demo-rbac." It lists role assignments for users, including their roles and scopes.](https://kodekloud.com/kk-media/image/upload/v1752881822/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-access-control-iam-2.jpg)
 
 ## Creating a Virtual Network
 
@@ -152,15 +130,11 @@ To extend the example, let’s create a virtual network within the resource grou
 2. Provide a name (e.g., "demo VNet") and configure the necessary settings.
 3. Review the configuration and create the virtual network.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a virtual network, with fields for project and instance details such as subscription, resource group, virtual network name, and region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881823/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-virtual-network-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a virtual network, with fields for project and instance details such as subscription, resource group, virtual network name, and region.](https://kodekloud.com/kk-media/image/upload/v1752881823/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-virtual-network-creation.jpg)
 
 After clicking "Review + Create" and then "Create," the deployment begins:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a virtual network, displaying configuration details such as subscription, resource group, and security settings. A notification indicates that the deployment is being initialized.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881824/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-virtual-network-creation-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a virtual network, displaying configuration details such as subscription, resource group, and security settings. A notification indicates that the deployment is being initialized.](https://kodekloud.com/kk-media/image/upload/v1752881824/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-virtual-network-creation-2.jpg)
 
 Once active, navigate to the virtual network. The Access Control (IAM) pane will display any inherited role assignments.
 
@@ -179,17 +153,13 @@ For instance, to assign virtual machine-related permissions, filter for “Micro
 * Get virtual machine run commands
 * Delete virtual machine run commands
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a custom role, specifically focusing on setting permissions related to Microsoft.Compute. Various permissions are listed with checkboxes for actions like reading or writing virtual machine extensions and commands.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881825/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-custom-role-permissions.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a custom role, specifically focusing on setting permissions related to Microsoft.Compute. Various permissions are listed with checkboxes for actions like reading or writing virtual machine extensions and commands.](https://kodekloud.com/kk-media/image/upload/v1752881825/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-custom-role-permissions.jpg)
 
 After selecting the required permissions:
 
 4. Click "Next" and then "Create" to finalize your custom role. Note that it might take a few minutes for the role to propagate throughout the portal.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen where a custom role named "CR-VM App Operator" has been successfully created. It lists permissions and assignable scopes related to virtual machine operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881826/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-custom-role-vm-operator.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen where a custom role named "CR-VM App Operator" has been successfully created. It lists permissions and assignable scopes related to virtual machine operations.](https://kodekloud.com/kk-media/image/upload/v1752881826/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-custom-role-vm-operator.jpg)
 
 ### Assigning the Custom Role
 
@@ -200,15 +170,11 @@ To assign your newly created custom role:
 * Choose the desired members (users or groups, such as an HR group).
 * Complete the role assignment.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for adding a role assignment, displaying options for job function roles and a custom role named "ER-VM App Operator."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881827/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-role-assignment-er-vm.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for adding a role assignment, displaying options for job function roles and a custom role named "ER-VM App Operator."](https://kodekloud.com/kk-media/image/upload/v1752881827/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-role-assignment-er-vm.jpg)
 
 After assignment, verify the updated permissions at the management group level:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying the "Access control (IAM)" section for a management group. It lists role assignments for users and groups, detailing their roles and scope within the resource.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881828/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-access-control-iam-3.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying the "Access control (IAM)" section for a management group. It lists role assignments for users and groups, detailing their roles and scope within the resource.](https://kodekloud.com/kk-media/image/upload/v1752881828/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-role-based-access-control-RBAC/azure-portal-access-control-iam-3.jpg)
 
 ## Next Steps: Azure Policies
 
@@ -221,6 +187,4 @@ This concludes our lesson on enabling Role-Based Access Control in Azure. For fu
 
 Happy configuring!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/3c48a4f2-a6f3-45fd-87d7-c53f36f2fb2a/lesson/5b490650-625b-4139-bc30-d838f6e2d9fe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/3c48a4f2-a6f3-45fd-87d7-c53f36f2fb2a/lesson/5b490650-625b-4139-bc30-d838f6e2d9fe)

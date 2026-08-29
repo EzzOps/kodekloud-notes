@@ -22,7 +22,7 @@ Each rule within a NACL is defined by:
 
 Below is an example demonstrating a default NACL configuration with several rules:
 
-![The image shows a table of default network ACL (NACL) inbound rules, with one rule allowing all traffic and another denying all traffic from any source.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865903/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-and-SecGroups/default-nacl-inbound-rules-table.jpg)
+![The image shows a table of default network ACL (NACL) inbound rules, with one rule allowing all traffic and another denying all traffic from any source.](https://kodekloud.com/kk-media/image/upload/v1752865903/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-and-SecGroups/default-nacl-inbound-rules-table.jpg)
 
 > **lightbulb** When you create a VPC and its corresponding subnets, a default NACL is automatically assigned that permits all traffic until you modify the rules to enforce more restrictive filtering.
 
@@ -47,7 +47,7 @@ AWS employs two primary types of firewalls to secure your environment:
 
 The diagram below summarizes these differences:
 
-![The image is a comparison between Security Groups and Network Access Control Lists (NACL) in terms of level, state, and supported rules. Security Groups are instance-level, stateful, and allow rules only, while NACLs are subnet-level, stateless, and allow and deny rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865904/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-and-SecGroups/security-groups-vs-nacl-comparison.jpg)
+![The image is a comparison between Security Groups and Network Access Control Lists (NACL) in terms of level, state, and supported rules. Security Groups are instance-level, stateful, and allow rules only, while NACLs are subnet-level, stateless, and allow and deny rules.](https://kodekloud.com/kk-media/image/upload/v1752865904/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-and-SecGroups/security-groups-vs-nacl-comparison.jpg)
 
 ***
 
@@ -60,7 +60,7 @@ NACLs and security groups complement each other by offering security at differen
 
 The following diagram illustrates how both security layers interact within a VPC that includes public and private subnets across multiple availability zones:
 
-![The image is a diagram comparing Security Groups and Network ACLs (NACLs) within a Virtual Private Cloud (VPC) setup, showing public and private subnets across two availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865905/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-and-SecGroups/security-groups-nacls-vpc-diagram.jpg)
+![The image is a diagram comparing Security Groups and Network ACLs (NACLs) within a Virtual Private Cloud (VPC) setup, showing public and private subnets across two availability zones.](https://kodekloud.com/kk-media/image/upload/v1752865905/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-and-SecGroups/security-groups-nacls-vpc-diagram.jpg)
 
 ***
 

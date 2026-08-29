@@ -28,7 +28,7 @@ AWS supports multiple federation protocols, enabling integration with on-premise
 | OpenID Connect | Modern web/mobile apps                         | `AssumeRoleWithWebIdentity` API |
 | OAuth 2.0      | Granular authorization for APIs                | Supported via OIDC/OAuth flows  |
 
-![The image illustrates identity federation standards with AWS, featuring SAML 2.0, OpenID Connect, and OAuth 2.0.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862987/notes-assets/images/AWS-IAM-Identity-Federation/identity-federation-aws-saml-openid-oauth.jpg)
+![The image illustrates identity federation standards with AWS, featuring SAML 2.0, OpenID Connect, and OAuth 2.0.](https://kodekloud.com/kk-media/image/upload/v1752862987/notes-assets/images/AWS-IAM-Identity-Federation/identity-federation-aws-saml-openid-oauth.jpg)
 
 ## Web Identity Federation
 
@@ -47,7 +47,7 @@ aws sts assume-role-with-web-identity \
   --web-identity-token file://token.jwt
 ```
 
-![The image illustrates a web identity federation process, showing how a user can authenticate through various identity providers (like Facebook, Google, Amazon, and Apple) to access AWS resources via the AWS Security Token Service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862988/notes-assets/images/AWS-IAM-Identity-Federation/web-identity-federation-authentication-process.jpg)
+![The image illustrates a web identity federation process, showing how a user can authenticate through various identity providers (like Facebook, Google, Amazon, and Apple) to access AWS resources via the AWS Security Token Service.](https://kodekloud.com/kk-media/image/upload/v1752862988/notes-assets/images/AWS-IAM-Identity-Federation/web-identity-federation-authentication-process.jpg)
 
 > **triangle-alert** Do not embed long-lived AWS keys in your mobile or browser-based applications. Always use temporary credentials obtained through web identity federation.
 

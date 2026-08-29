@@ -78,9 +78,7 @@ Expected outcomes from this lesson:
   <img alt="The image lists key takeaways about observability, including understanding your observability stack, exploring Datadog's architecture, integrating legacy and modern technologies, and designing an enterprise-scale observability architecture." />
 </Frame>
 
-<Callout icon="lightbulb">
-  This lesson emphasizes practical, migration-oriented guidance: prepare your environment, apply incremental changes, and validate outcomes so you can migrate reliably with minimal disruption.
-</Callout>
+> **lightbulb** This lesson emphasizes practical, migration-oriented guidance: prepare your environment, apply incremental changes, and validate outcomes so you can migrate reliably with minimal disruption.
 
 By the end of this module you will be prepared to plan and execute a migration to Datadog — from discovery and planning through implementation and post-migration validation.
 
@@ -90,6 +88,4 @@ Links and references
 * [Grafana Loki (example alternative)](https://learn.kodekloud.com/user/courses/grafana-loki)
 * [Prometheus Certified Associate (PCA) prep (example alternative)](https://learn.kodekloud.com/user/courses/prometheus-certified-associate-pca)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9d4795bc-91eb-4262-ae9c-f7153c17438e/lesson/c45f5aba-47b6-4ec2-bc65-402591a7186b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9d4795bc-91eb-4262-ae9c-f7153c17438e/lesson/c45f5aba-47b6-4ec2-bc65-402591a7186b)

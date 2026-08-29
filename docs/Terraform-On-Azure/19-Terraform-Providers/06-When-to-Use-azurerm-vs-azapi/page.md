@@ -123,9 +123,7 @@ Links and references
 * [Terraform Provider Version Constraints](https://www.terraform.io/language/providers/requirements)
 * [HashiCorp Provider Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/eeac3f53-157e-493c-a726-7e5d9190c4c3/lesson/3f5c5496-f505-4650-8b50-9912ce1ce548" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/eeac3f53-157e-493c-a726-7e5d9190c4c3/lesson/3f5c5496-f505-4650-8b50-9912ce1ce548)
 
 
 # When to Use azurerm vs azapi
@@ -211,9 +209,7 @@ This hybrid approach keeps your configuration readable and safer while still ena
 * Use version control and code reviews to ensure `azapi` payloads remain maintainable.
 * Periodically review `azapi` resources—migrate them to `azurerm` if/when provider support becomes available.
 
-<Callout icon="lightbulb">
-  Prefer `azurerm` by default. Use `azapi` as an escape hatch for missing or preview features, and document each `azapi` usage with the targeted ARM API version and the reason it was chosen.
-</Callout>
+> **lightbulb** Prefer `azurerm` by default. Use `azapi` as an escape hatch for missing or preview features, and document each `azapi` usage with the targeted ARM API version and the reason it was chosen.
 
 ## When to choose which provider — short checklist
 
@@ -240,6 +236,4 @@ In summary: `azurerm` is the default, stable choice. `azapi` is a powerful tool 
 * [Azure Resource Manager REST API reference](https://learn.microsoft.com/azure/azure-resource-manager/management/rest-api-resources)
 * [Terraform documentation](https://www.terraform.io/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/eeac3f53-157e-493c-a726-7e5d9190c4c3/lesson/d459ff12-81e3-423a-8f95-d537ccf715b9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/eeac3f53-157e-493c-a726-7e5d9190c4c3/lesson/d459ff12-81e3-423a-8f95-d537ccf715b9)

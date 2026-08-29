@@ -66,9 +66,7 @@ Quick reference — account types and typical permissions
   <img alt="A dark slide with two purple info boxes reading &#x22;01 Accounts: Who you are&#x22; and &#x22;02 Permissions: What you can do&#x22; appears on the left. A man wearing a KodeKloud T-shirt stands and speaks on the right against a black background." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Use the principle of least privilege: run daily tasks under a standard (non-admin) account and elevate only when necessary.
-</Callout>
+> **lightbulb** Use the principle of least privilege: run daily tasks under a standard (non-admin) account and elevate only when necessary.
 
 Patches and updates — why they matter
 Software contains bugs. Some bugs become security vulnerabilities. Left unpatched, vulnerabilities are like broken windows or faulty locks — attackers will look for them. Vendors release patches and updates to repair these weaknesses.
@@ -102,9 +100,7 @@ Browsers are a common attack vector (they parse untrusted content and run script
   <img alt="An illustrated slide showing a laptop and smartphone with gear icons and progress bars, surrounded by small bug icons and the heading &#x22;Browser Vulnerability leads to Patch Release.&#x22; A presenter wearing a KodeKloud T-shirt stands at the right speaking to the camera." />
 </Frame>
 
-<Callout icon="warning">
-  Critical updates should be applied promptly. Delaying high‑severity patches gives attackers a known path into your systems.
-</Callout>
+> **warning** Critical updates should be applied promptly. Delaying high‑severity patches gives attackers a known path into your systems.
 
 Practical takeaway
 
@@ -134,6 +130,4 @@ Further reading and references
 
 This lesson focused on OS-level controls — accounts, permissions, and patching. In the next part we’ll look at built-in defenses (firewalls, antivirus, and sandboxing) and practical system hardening steps you can take.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/98269c55-06d3-4512-b631-b104a6df02f9/lesson/1ea50860-bde8-4249-8e28-68dc21921e87" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/98269c55-06d3-4512-b631-b104a6df02f9/lesson/1ea50860-bde8-4249-8e28-68dc21921e87)

@@ -16,7 +16,7 @@ Imagine constructing a house with a skilled crew. While they could build it manu
 
 SAM integrates seamlessly with AWS services like Lambda, DynamoDB, and API Gateway, making it an essential tool for modern serverless architectures.
 
-![The image outlines the features of the Serverless Application Model (SAM), including simplified serverless deployment, extension of AWS CloudFormation, local development and testing, and integration with AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859438/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics/serverless-application-model-features.jpg)
+![The image outlines the features of the Serverless Application Model (SAM), including simplified serverless deployment, extension of AWS CloudFormation, local development and testing, and integration with AWS services.](https://kodekloud.com/kk-media/image/upload/v1752859438/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics/serverless-application-model-features.jpg)
 
 By using SAM templates, you can provision and manage these services efficiently. Additionally, SAM fits well within CI/CD pipelines to automate build, test, and deployment processes, ensuring a consistent release workflow.
 
@@ -28,17 +28,17 @@ SAM consists of three main components:
 2. **SAM CLI**: A command-line tool for building and deploying your serverless applications.
 3. **SAM Repository**: A managed repository for storing and sharing reusable serverless applications.
 
-![The image shows three components of SAM: SAM Template, SAM CLI, and SAM Repository, each represented by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859440/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics/sam-template-cli-repository-icons.jpg)
+![The image shows three components of SAM: SAM Template, SAM CLI, and SAM Repository, each represented by an icon.](https://kodekloud.com/kk-media/image/upload/v1752859440/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics/sam-template-cli-repository-icons.jpg)
 
 ### SAM Template Details
 
 The SAM template is akin to a CloudFormation template but is customized for serverless applications. For example, if you need to configure a Lambda function or an API Gateway, you would specify them in the SAM template along with details such as the function name, runtime, handler, and code location.
 
-![The image is a diagram of a SAM (Serverless Application Model) template, showing components for Lambda and API Gateway with fields like Name, Runtime, Handler, Code Location, Type, and Path.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859441/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics/sam-template-lambda-api-gateway-diagram.jpg)
+![The image is a diagram of a SAM (Serverless Application Model) template, showing components for Lambda and API Gateway with fields like Name, Runtime, Handler, Code Location, Type, and Path.](https://kodekloud.com/kk-media/image/upload/v1752859441/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics/sam-template-lambda-api-gateway-diagram.jpg)
 
 Moreover, the template can include output sections to display critical information, such as the API Gateway URL after deployment.
 
-![The image is a diagram of a SAM (Serverless Application Model) template, showing components for Lambda and API Gateway, including fields like Name, Runtime, Type, and Path.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859443/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics/sam-template-lambda-api-gateway-diagram-2.jpg)
+![The image is a diagram of a SAM (Serverless Application Model) template, showing components for Lambda and API Gateway, including fields like Name, Runtime, Type, and Path.](https://kodekloud.com/kk-media/image/upload/v1752859443/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics/sam-template-lambda-api-gateway-diagram-2.jpg)
 
 Every SAM template begins with two crucial lines: the AWS template version and the transform declaration. The transform keyword instructs AWS to convert the SAM syntax into CloudFormation code during deployment. For instance:
 
@@ -64,19 +64,19 @@ The SAM CLI is designed to simplify both the initial scaffolding of your project
 
 The typical workflow with SAM involves initializing your project with `sam init`, building it with `sam build`, and deploying it with `sam deploy`. Previously, the `sam package` command was used to handle deployment artifacts, but its functionality is now incorporated into the `sam deploy` process.
 
-![The image illustrates a DevOps workflow for deploying AWS Lambda functions using AWS SAM, involving steps like initialization, building, packaging, and deployment through services like S3, CloudFormation, and API Gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859444/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics/devops-workflow-aws-lambda-sam.jpg)
+![The image illustrates a DevOps workflow for deploying AWS Lambda functions using AWS SAM, involving steps like initialization, building, packaging, and deployment through services like S3, CloudFormation, and API Gateway.](https://kodekloud.com/kk-media/image/upload/v1752859444/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics/devops-workflow-aws-lambda-sam.jpg)
 
 ## Continuous Development with SAM Sync
 
 One of the standout features of SAM is the **sam sync** command. This command automatically synchronizes your local code changes with AWS Lambda, allowing for continuous iteration without manually redeploying changes each time.
 
-![The image illustrates the process of syncing code from a local machine to AWS Lambda using "SAM Sync."](../../../../images/kodekloud.com/kk-media/image/upload/v1752859445/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics/aws-lambda-sam-sync-process.jpg)
+![The image illustrates the process of syncing code from a local machine to AWS Lambda using "SAM Sync."](https://kodekloud.com/kk-media/image/upload/v1752859445/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics/aws-lambda-sam-sync-process.jpg)
 
 ## Summary
 
 SAM is a robust toolkit designed to enable developers to build, deploy, and manage serverless applications on AWS efficiently. It allows you to define AWS resources as code, leverages AWS CloudFormation for reliable deployments, and offers a powerful CLI with commands including init, build, deploy, and sync.
 
-![The image is a summary of AWS SAM, highlighting its features such as ease of building serverless applications, defining resources through code, using CloudFormation, and key commands like init, build, package, and deploy. It also mentions SAM sync for code synchronization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859446/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics/aws-sam-summary-features.jpg)
+![The image is a summary of AWS SAM, highlighting its features such as ease of building serverless applications, defining resources through code, using CloudFormation, and key commands like init, build, package, and deploy. It also mentions SAM sync for code synchronization.](https://kodekloud.com/kk-media/image/upload/v1752859446/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics/aws-sam-summary-features.jpg)
 
 Embrace SAM to streamline your serverless application development and enjoy a more efficient, automated, and scalable workflow for AWS deployments.
 

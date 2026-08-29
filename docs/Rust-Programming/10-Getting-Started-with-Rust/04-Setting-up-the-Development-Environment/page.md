@@ -65,15 +65,11 @@ An efficient IDE boosts your productivity when working with Rust. We recommend V
 
 1. Download and install VS Code from its official website.
 
-<Frame>
-  ![The image provides download options for Visual Studio Code for Windows, Linux, and Mac, detailing different installer types and architectures.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883913/notes-assets/images/Rust-Programming-Setting-up-the-Development-Environment/vscode-download-options-windows-linux-mac.jpg)
-</Frame>
+![The image provides download options for Visual Studio Code for Windows, Linux, and Mac, detailing different installer types and architectures.](https://kodekloud.com/kk-media/image/upload/v1752883913/notes-assets/images/Rust-Programming-Setting-up-the-Development-Environment/vscode-download-options-windows-linux-mac.jpg)
 
 2. Open VS Code, navigate to the extensions view by clicking the extensions icon, and search for "Rust Analyzer." Install the extension provided by the Rust team.
 
-<Frame>
-  ![The image shows the Visual Studio Code marketplace page for the "rust-analyzer" extension, detailing its features, configuration, and additional resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883914/notes-assets/images/Rust-Programming-Setting-up-the-Development-Environment/rust-analyzer-vscode-marketplace.jpg)
-</Frame>
+![The image shows the Visual Studio Code marketplace page for the "rust-analyzer" extension, detailing its features, configuration, and additional resources.](https://kodekloud.com/kk-media/image/upload/v1752883914/notes-assets/images/Rust-Programming-Setting-up-the-Development-Environment/rust-analyzer-vscode-marketplace.jpg)
 
 ## Creating and Running a Rust Project
 
@@ -136,30 +132,20 @@ Hello, world!
 
 This confirms that your Rust development environment is set up correctly.
 
-<Callout icon="lightbulb">
-  Unlike dynamic languages such as Ruby, Python, or JavaScript, which are interpreted on the fly, Rust requires ahead-of-time compilation. The Rust compiler (`rustc`) converts your source code into an executable, enabling it to run on any compatible system without needing Rust installed.
-</Callout>
+> **lightbulb** Unlike dynamic languages such as Ruby, Python, or JavaScript, which are interpreted on the fly, Rust requires ahead-of-time compilation. The Rust compiler (`rustc`) converts your source code into an executable, enabling it to run on any compatible system without needing Rust installed.
 
 ## Managing Projects with Cargo
 
 For small programs, compiling with `rustc` is sufficient. However, as your projects grow, managing dependencies and builds manually can become challenging. Cargo, Rust's package manager and build system, simplifies this process by managing project dependencies, compiling code, and generating documentation.
 
-<Frame>
-  ![The image compares the compilation process in Rust with dynamic languages, showing that dynamic languages use a language interpreter, while Rust combines compilation and execution in a single command.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883915/notes-assets/images/Rust-Programming-Setting-up-the-Development-Environment/rust-compilation-vs-dynamic-languages.jpg)
-</Frame>
+![The image compares the compilation process in Rust with dynamic languages, showing that dynamic languages use a language interpreter, while Rust combines compilation and execution in a single command.](https://kodekloud.com/kk-media/image/upload/v1752883915/notes-assets/images/Rust-Programming-Setting-up-the-Development-Environment/rust-compilation-vs-dynamic-languages.jpg)
 
 Cargo streamlines project management, allowing you to focus more on development. We'll delve deeper into Cargo in a subsequent lesson.
 
-<Frame>
-  ![The image shows a computer monitor displaying code, with text about managing complex projects using Cargo to simplify code management, dependencies, and sharing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883916/notes-assets/images/Rust-Programming-Setting-up-the-Development-Environment/cargo-code-management-projects-monitor.jpg)
-</Frame>
+![The image shows a computer monitor displaying code, with text about managing complex projects using Cargo to simplify code management, dependencies, and sharing.](https://kodekloud.com/kk-media/image/upload/v1752883916/notes-assets/images/Rust-Programming-Setting-up-the-Development-Environment/cargo-code-management-projects-monitor.jpg)
 
-<Callout icon="lightbulb">
-  Integrate Cargo into your workflow early, as it not only manages dependencies but also simplifies tasks such as testing, building, and documentation generation.
-</Callout>
+> **lightbulb** Integrate Cargo into your workflow early, as it not only manages dependencies but also simplifies tasks such as testing, building, and documentation generation.
 
 Congratulations! You have successfully configured your Rust development environment and created your first Rust project. With both Rust and VS Code set up, you are now ready to explore the powerful features of Rust programming.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/b5f13fcf-f3bf-4b15-bd04-80798493bce7/lesson/fb3d2b7f-f114-4bb2-a917-f4c225df63be" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/b5f13fcf-f3bf-4b15-bd04-80798493bce7/lesson/fb3d2b7f-f114-4bb2-a917-f4c225df63be)

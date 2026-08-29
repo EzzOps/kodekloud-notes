@@ -13,9 +13,7 @@ tmpfs                       1.9G     0  1.9G   1% /dev/shm
 ...
 ```
 
-<Callout icon="lightbulb">
-  Ignore `tmpfs` entries—they represent in-memory filesystems, not physical disks.
-</Callout>
+> **lightbulb** Ignore `tmpfs` entries—they represent in-memory filesystems, not physical disks.
 
 ## Directory Usage
 
@@ -26,9 +24,7 @@ du -sh /var/log
 # e.g., 512M    /var/log
 ```
 
-<Callout icon="triangle-alert">
-  Running `du` on very large or deeply nested directories can take time and generate high I/O.
-</Callout>
+> **triangle-alert** Running `du` on very large or deeply nested directories can take time and generate high I/O.
 
 ## Memory Utilization
 
@@ -91,9 +87,7 @@ Lists all PCI devices, including network adapters, GPUs, and host bridges.
 3. **Remount** after completion:\
    `sudo mount /dev/vdb1 /mnt`
 
-<Callout icon="lightbulb">
-  Always unmount the XFS volume before running `xfs_repair` to avoid data corruption.
-</Callout>
+> **lightbulb** Always unmount the XFS volume before running `xfs_repair` to avoid data corruption.
 
 ### Checking and Repairing an ext4 File System
 
@@ -107,9 +101,7 @@ sudo fsck.ext4 -v -f -p /dev/vdb2
 * `-f`: force check even if clean
 * `-p`: preen mode for unattended fixes
 
-<Callout icon="triangle-alert">
-  Do **not** run `fsck` on a mounted ext4 partition, especially the root (`/`), as it may cause data loss.
-</Callout>
+> **triangle-alert** Do **not** run `fsck` on a mounted ext4 partition, especially the root (`/`), as it may cause data loss.
 
 ## Monitoring Key Processes
 
@@ -165,11 +157,9 @@ sudo systemctl start chronyd.service
 * [fsck.ext4(8) Manual Page](https://man7.org/linux/man-pages/man8/fsck.ext4.8.html)
 * [systemctl(1) Manual Page](https://man7.org/linux/man-pages/man1/systemctl.1.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/587e0638-9eed-4b9e-886b-ff478341d263" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/587e0638-9eed-4b9e-886b-ff478341d263)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/fc948c4e-a60f-4e77-a297-8ab6661bc64d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/fc948c4e-a60f-4e77-a297-8ab6661bc64d)
 
 
 # Configure user resource limits
@@ -187,13 +177,11 @@ Managing resource usage per user prevents any single account from monopolizing C
 
 ## 1. Back Up and Open limits.conf
 
-<Callout icon="triangle-alert">
-  Always back up system configuration files before editing.
+> **triangle-alert** Always back up system configuration files before editing.
 
   ```bash theme={null}
   sudo cp /etc/security/limits.conf{,.bak}
   ```
-</Callout>
 
 Open the file for editing:
 

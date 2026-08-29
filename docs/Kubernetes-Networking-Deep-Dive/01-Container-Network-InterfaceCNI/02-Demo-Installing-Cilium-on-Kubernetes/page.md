@@ -13,13 +13,11 @@ In this guide, you’ll learn how to deploy Cilium as your Kubernetes CNI and en
 * Cilium CLI (`cilium`) installed.
 * Hubble CLI (`hubble`) installed.
 
-<Callout icon="lightbulb">
-  Verify your current context before proceeding:
+> **lightbulb** Verify your current context before proceeding:
 
   ```bash theme={null}
   kubectl config current-context
   ```
-</Callout>
 
 ## 1. Installation Methods Compared
 
@@ -28,9 +26,7 @@ In this guide, you’ll learn how to deploy Cilium as your Kubernetes CNI and en
 | Cilium CLI | `cilium install --version 1.15.4 --wait`                                                      | Rapid installs and upgrades           |
 | Helm       | `helm upgrade cilium cilium/cilium --version 1.15.4 --namespace kube-system --reuse-values …` | Advanced customizations and overrides |
 
-<Callout icon="triangle-alert">
-  Mixing CLI and Helm installations without `--reuse-values` can lead to configuration drift. Always double-check your values before upgrading.
-</Callout>
+> **triangle-alert** Mixing CLI and Helm installations without `--reuse-values` can lead to configuration drift. Always double-check your values before upgrading.
 
 ## 2. Install Cilium with the CLI
 
@@ -166,8 +162,6 @@ You have successfully installed Cilium CNI and enabled Hubble observability on y
 * [Hubble Observability Guide](https://docs.cilium.io/en/stable/gettingstarted/hubble/)
 * [Kubernetes Networking Concepts](https://kubernetes.io/docs/concepts/cluster-administration/networking/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/6fd094cb-eaab-48d6-8b81-9867ac2a277a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/6fd094cb-eaab-48d6-8b81-9867ac2a277a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/68a3d25f-d6d8-4556-a0ef-f9a68db1e9f3" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/68a3d25f-d6d8-4556-a0ef-f9a68db1e9f3)

@@ -47,7 +47,7 @@ To re-enable web traffic, add two inbound rules after SSH:
 * **Rule 101**: Allow HTTP (TCP 80) from `0.0.0.0/0`
 * **Rule 120**: Allow HTTPS (TCP 443) from `0.0.0.0/0`
 
-![The image shows an AWS Management Console screen for editing inbound rules in a VPC, with rules for SSH, HTTP, and HTTPS traffic. The rules specify protocols, port ranges, sources, and allow/deny actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863279/notes-assets/images/AWS-Networking-Fundamentals-NACLs-Demo/aws-management-console-vpc-inbound-rules.jpg)
+![The image shows an AWS Management Console screen for editing inbound rules in a VPC, with rules for SSH, HTTP, and HTTPS traffic. The rules specify protocols, port ranges, sources, and allow/deny actions.](https://kodekloud.com/kk-media/image/upload/v1752863279/notes-assets/images/AWS-Networking-Fundamentals-NACLs-Demo/aws-management-console-vpc-inbound-rules.jpg)
 
 Verify web access again:
 
@@ -82,7 +82,7 @@ To download packages, add a temporary inbound rule:
 
 After installing, remove rule 130. This illustrates that both directions require explicit rules in a stateless firewall.
 
-![The image shows the AWS Management Console interface for editing inbound rules in a VPC network ACL. It lists rules for SSH, HTTP, HTTPS, and a custom TCP port, all set to allow traffic from any source.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863280/notes-assets/images/AWS-Networking-Fundamentals-NACLs-Demo/aws-management-console-vpc-acl-rules.jpg)
+![The image shows the AWS Management Console interface for editing inbound rules in a VPC network ACL. It lists rules for SSH, HTTP, HTTPS, and a custom TCP port, all set to allow traffic from any source.](https://kodekloud.com/kk-media/image/upload/v1752863280/notes-assets/images/AWS-Networking-Fundamentals-NACLs-Demo/aws-management-console-vpc-acl-rules.jpg)
 
 ***
 
@@ -98,7 +98,7 @@ Traffic evaluation:
 * SSH from `1.0.0.0/24` is denied by rule 90.
 * SSH from all other IPs is allowed by rule 100.
 
-![The image shows an AWS Management Console screen displaying Network ACLs with a list of inbound rules, including SSH, HTTP, and HTTPS protocols, along with their allow or deny statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863281/notes-assets/images/AWS-Networking-Fundamentals-NACLs-Demo/aws-management-console-network-acls-inbound-rules.jpg)
+![The image shows an AWS Management Console screen displaying Network ACLs with a list of inbound rules, including SSH, HTTP, and HTTPS protocols, along with their allow or deny statuses.](https://kodekloud.com/kk-media/image/upload/v1752863281/notes-assets/images/AWS-Networking-Fundamentals-NACLs-Demo/aws-management-console-network-acls-inbound-rules.jpg)
 
 ***
 
@@ -135,7 +135,7 @@ In this walkthrough, you’ll learn how to configure an AWS NAT Gateway to enabl
 2. Enter a **Name tag** (e.g., `demo-vpc`) and set the **IPv4 CIDR block** to `10.0.0.0/16`.
 3. Leave IPv6 settings disabled and click **Create**.
 
-![The image shows the AWS Management Console interface for creating a VPC, with options for setting the name tag, IPv4 CIDR block, and other configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863282/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC-Demo/aws-management-console-create-vpc.jpg)
+![The image shows the AWS Management Console interface for creating a VPC, with options for setting the name tag, IPv4 CIDR block, and other configurations.](https://kodekloud.com/kk-media/image/upload/v1752863282/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC-Demo/aws-management-console-create-vpc.jpg)
 
 ## 2. Create a Private Subnet
 
@@ -145,7 +145,7 @@ This subnet will host your EC2 instance without a public IP.
 * **Availability Zone**: e.g., `us-east-1b`
 * **IPv4 CIDR block**: `10.0.1.0/24`
 
-![The image shows the AWS Management Console interface for creating a subnet within a VPC. It includes fields for VPC ID, subnet name, availability zone, and IPv4 CIDR block.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863283/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC-Demo/aws-management-console-create-subnet-vpc.jpg)
+![The image shows the AWS Management Console interface for creating a subnet within a VPC. It includes fields for VPC ID, subnet name, availability zone, and IPv4 CIDR block.](https://kodekloud.com/kk-media/image/upload/v1752863283/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC-Demo/aws-management-console-create-subnet-vpc.jpg)
 
 ## 3. Launch an EC2 Instance in the Private Subnet
 
@@ -159,7 +159,7 @@ This subnet will host your EC2 instance without a public IP.
 
 Because there’s no public IP, the instance cannot be reached directly from the internet.
 
-![The image shows an AWS EC2 instance launch configuration screen, detailing network settings, security group options, and a summary of the instance specifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863284/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC-Demo/aws-ec2-instance-launch-configuration.jpg)
+![The image shows an AWS EC2 instance launch configuration screen, detailing network settings, security group options, and a summary of the instance specifications.](https://kodekloud.com/kk-media/image/upload/v1752863284/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC-Demo/aws-ec2-instance-launch-configuration.jpg)
 
 ## 4. Create and Attach an Internet Gateway
 
@@ -169,7 +169,7 @@ An Internet Gateway (IGW) is required to give public subnets internet access.
 2. Name it `my-igw` and click **Create**.
 3. Select the new IGW → **Actions** → **Attach to VPC** → choose `demo-vpc`.
 
-![The image shows an AWS Management Console screen displaying the "Internet gateways" section, with one internet gateway listed as attached to a VPC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863286/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC-Demo/aws-management-console-internet-gateways-vpc.jpg)
+![The image shows an AWS Management Console screen displaying the "Internet gateways" section, with one internet gateway listed as attached to a VPC.](https://kodekloud.com/kk-media/image/upload/v1752863286/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC-Demo/aws-management-console-internet-gateways-vpc.jpg)
 
 ## 5. Create a Public Subnet
 
@@ -179,7 +179,7 @@ This subnet will host the NAT Gateway and must have a route to the IGW.
 * **Availability Zone**: same or different (e.g., `us-east-1b`)
 * **IPv4 CIDR block**: `10.0.2.0/24`
 
-![The image shows an AWS VPC dashboard with a notification indicating the successful creation of a subnet. The subnet details, including its ID and availability, are displayed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863288/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC-Demo/aws-vpc-dashboard-subnet-creation.jpg)
+![The image shows an AWS VPC dashboard with a notification indicating the successful creation of a subnet. The subnet details, including its ID and availability, are displayed.](https://kodekloud.com/kk-media/image/upload/v1752863288/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC-Demo/aws-vpc-dashboard-subnet-creation.jpg)
 
 ## 6. Configure Route Tables
 
@@ -200,7 +200,7 @@ You need two route tables: one public and one private.
 4. **Create** `private-route-table` → select `demo-vpc` → **Create**.
 5. **Associate** with `private-subnet` (no default route yet).
 
-![The image shows an AWS Management Console screen displaying details of a VPC route table, including route entries and their statuses. The route table has two routes, one for internet gateway access and another for local network access, both marked as active.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863289/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC-Demo/aws-vpc-route-table-details.jpg)
+![The image shows an AWS Management Console screen displaying details of a VPC route table, including route entries and their statuses. The route table has two routes, one for internet gateway access and another for local network access, both marked as active.](https://kodekloud.com/kk-media/image/upload/v1752863289/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC-Demo/aws-vpc-route-table-details.jpg)
 
 ## 7. Deploy a NAT Gateway
 
@@ -212,7 +212,7 @@ In a public subnet, NAT Gateways allow private instances to access the internet 
 4. Allocate a new **Elastic IP**.
 5. Click **Create NAT Gateway**.
 
-![The image shows an AWS Management Console screen displaying details of a newly created NAT gateway, which is currently in a pending state.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863290/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC-Demo/aws-management-console-nat-gateway-pending.jpg)
+![The image shows an AWS Management Console screen displaying details of a newly created NAT gateway, which is currently in a pending state.](https://kodekloud.com/kk-media/image/upload/v1752863290/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC-Demo/aws-management-console-nat-gateway-pending.jpg)
 
 You can also use the AWS CLI:
 
@@ -241,7 +241,7 @@ NAT Gateways are zonal resources. To avoid a single point of failure:
 
 > **triangle-alert** If the AZ with your NAT Gateway goes down, all instances using it lose internet access.
 
-![The image shows an AWS Management Console screen displaying details of a public subnet within a Virtual Private Cloud (VPC). It includes information such as the subnet ID, state, IPv4 CIDR, and availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863292/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC-Demo/aws-management-console-public-subnet-vpc.jpg)
+![The image shows an AWS Management Console screen displaying details of a public subnet within a Virtual Private Cloud (VPC). It includes information such as the subnet ID, state, IPv4 CIDR, and availability zone.](https://kodekloud.com/kk-media/image/upload/v1752863292/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC-Demo/aws-management-console-public-subnet-vpc.jpg)
 
 ## Links and References
 

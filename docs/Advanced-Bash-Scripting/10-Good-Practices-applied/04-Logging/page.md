@@ -69,7 +69,7 @@ Running `./log.sh` produces:
 
 > **lightbulb** Sending log messages to standard error (`>&2`) separates them from regular output and integrates better with redirection.
 
-![The image features a diagram with a clock icon and connected nodes, accompanied by the text "Enabling us to track the flow and sequence of events," under the heading "Logging."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868574/notes-assets/images/Advanced-Bash-Scripting-Logging/logging-clock-icon-diagram.jpg)
+![The image features a diagram with a clock icon and connected nodes, accompanied by the text "Enabling us to track the flow and sequence of events," under the heading "Logging."](https://kodekloud.com/kk-media/image/upload/v1752868574/notes-assets/images/Advanced-Bash-Scripting-Logging/logging-clock-icon-diagram.jpg)
 
 ## ISO 8601 Date Format
 

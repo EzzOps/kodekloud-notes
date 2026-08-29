@@ -14,9 +14,7 @@ Consider the following scenario that demonstrates how swap space is used:
 * With no free RAM available, a 2-GB swap partition is activated.
 * When launching an additional application like Chrome, Linux shifts inactive data (for example, from the video editor) into swap space to free up RAM.
 
-<Frame>
-  ![The image illustrates the concept of managing swap space, showing a 4GB RAM with applications like Chrome and an audio editor using 2GB, and a swap partition with a video editor using 2GB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883541/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-and-manage-swap-space/swap-space-management-4gb-ram.jpg)
-</Frame>
+![The image illustrates the concept of managing swap space, showing a 4GB RAM with applications like Chrome and an audio editor using 2GB, and a swap partition with a video editor using 2GB.](https://kodekloud.com/kk-media/image/upload/v1752883541/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-and-manage-swap-space/swap-space-management-4gb-ram.jpg)
 
 Below are the detailed steps and commands to set up and manage swap space on your Linux system.
 
@@ -79,9 +77,7 @@ NAME          TYPE      SIZE   USED PRIO
 /dev/dm-1    partition  2G     0B   -2
 ```
 
-<Callout icon="lightbulb">
-  Linux will utilize all configured swap areas if multiple swap partitions are added.
-</Callout>
+> **lightbulb** Linux will utilize all configured swap areas if multiple swap partitions are added.
 
 ***
 
@@ -135,9 +131,7 @@ Ensure that your swap file is secure by adjusting the permissions so that only t
 $ sudo chmod 600 /swap
 ```
 
-<Callout icon="triangle-alert">
-  Always set the correct permissions on swap files. Improper permissions can expose sensitive data.
-</Callout>
+> **triangle-alert** Always set the correct permissions on swap files. Improper permissions can expose sensitive data.
 
 ### Step 3: Formatting the File as Swap
 
@@ -177,8 +171,6 @@ This article has covered both methods for implementing swap space on Linux: usin
 
 Now try these steps in your practice environment for enhanced system performance and efficient memory management.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/207496ef-0e82-42c8-aa9d-7996cfb968a6/lesson/f1f6dee7-8f1f-431f-828d-7ddaa433e1e1" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/207496ef-0e82-42c8-aa9d-7996cfb968a6/lesson/f1f6dee7-8f1f-431f-828d-7ddaa433e1e1)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/207496ef-0e82-42c8-aa9d-7996cfb968a6/lesson/a7354798-bf18-482a-a4c0-ec44fa6f8246" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/207496ef-0e82-42c8-aa9d-7996cfb968a6/lesson/a7354798-bf18-482a-a4c0-ec44fa6f8246)

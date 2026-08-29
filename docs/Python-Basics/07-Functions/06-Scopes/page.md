@@ -53,9 +53,7 @@ Python first looks in the function's local scope; if it doesn't find the variabl
 
 By default, variables declared inside a function are not accessible outside of it. To modify a global variable within a function, you must declare it as global using the `global` keyword.
 
-<Callout icon="lightbulb">
-  Declaring a variable as global allows you to modify it inside a function, making it accessible in the global scope after the function call.
-</Callout>
+> **lightbulb** Declaring a variable as global allows you to modify it inside a function, making it accessible in the global scope after the function call.
 
 Here's an example:
 
@@ -89,6 +87,4 @@ For further learning, check out the following:
 
 That's it for this lesson. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/e169dc83-5d71-40ac-8437-4f500246efe6/lesson/3728e477-4577-4026-9942-36f7dbaa7f87" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/e169dc83-5d71-40ac-8437-4f500246efe6/lesson/3728e477-4577-4026-9942-36f7dbaa7f87)

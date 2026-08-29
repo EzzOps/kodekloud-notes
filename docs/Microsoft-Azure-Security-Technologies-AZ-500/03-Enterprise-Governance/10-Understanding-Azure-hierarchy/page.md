@@ -14,9 +14,7 @@ At the top of the hierarchy is the root management group, which is provided by d
 
 For instance, consider the diagram below, which illustrates a root management group containing two management groups—"IT" and "Finance." Under the "IT" management group, further subdivisions like Production and Development may be used to segregate environments.
 
-<Frame>
-  ![The image illustrates a hierarchy of management groups, subscriptions, and resource groups, explaining their roles in organizing and managing resources. It includes a flowchart showing the structure from the root management group down to individual subscriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881839/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Understanding-Azure-hierarchy/management-hierarchy-flowchart.jpg)
-</Frame>
+![The image illustrates a hierarchy of management groups, subscriptions, and resource groups, explaining their roles in organizing and managing resources. It includes a flowchart showing the structure from the root management group down to individual subscriptions.](https://kodekloud.com/kk-media/image/upload/v1752881839/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Understanding-Azure-hierarchy/management-hierarchy-flowchart.jpg)
 
 ## Subscriptions and Resource Groups
 
@@ -31,37 +29,25 @@ Managing Azure's hierarchy is straightforward via the Azure portal. The followin
 1. When you access the management groups section for the first time, you'll encounter a button labeled "Start using management groups." Clicking this initiates the creation of the root management group.
 2. After initialization, you are prompted to set up a new management group (e.g., assign an ID like "001" and a name such as "IT").
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for managing groups, indicating that there are no management groups to display. It includes options to start using management groups and provides navigation links on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881840/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Understanding-Azure-hierarchy/azure-portal-managing-groups-empty.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for managing groups, indicating that there are no management groups to display. It includes options to start using management groups and provides navigation links on the left.](https://kodekloud.com/kk-media/image/upload/v1752881840/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Understanding-Azure-hierarchy/azure-portal-managing-groups-empty.jpg)
 
 During creation, you might encounter validation errors. For example, the system might indicate that the management group ID cannot be empty and must adhere to specific character rules.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a management group, with an error message indicating that the management group ID cannot be empty and must follow specific character rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881841/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Understanding-Azure-hierarchy/azure-portal-management-group-error.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a management group, with an error message indicating that the management group ID cannot be empty and must follow specific character rules.](https://kodekloud.com/kk-media/image/upload/v1752881841/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Understanding-Azure-hierarchy/azure-portal-management-group-error.jpg)
 
 Once the management group is submitted successfully, the portal displays the tenant root group along with a list of available subscriptions. You can easily move subscriptions to their appropriate management groups by selecting a subscription and clicking "Move" to assign it—for example, to the "IT" group.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal displaying a list of management groups and subscriptions, including details like names, types, and IDs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881842/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Understanding-Azure-hierarchy/azure-portal-management-groups-subscriptions.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal displaying a list of management groups and subscriptions, including details like names, types, and IDs.](https://kodekloud.com/kk-media/image/upload/v1752881842/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Understanding-Azure-hierarchy/azure-portal-management-groups-subscriptions.jpg)
 
 ## Elevated Permissions and Access Control
 
-<Callout icon="lightbulb">
-  To move subscriptions or manage the tenant root group, you must have elevated permissions through Azure Active Directory (Azure AD). Typically, this requires Global Administrator rights.
-</Callout>
+> **lightbulb** To move subscriptions or manage the tenant root group, you must have elevated permissions through Azure Active Directory (Azure AD). Typically, this requires Global Administrator rights.
 
 Without these elevated permissions, you may not be able to perform certain actions. Once the necessary permissions are assigned, you can click on a management group like "IT" to configure access control, review security policies, analyze costs, and set budgets.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying details of a management group named "IT," including its ID, access level, and associated subscriptions. The sidebar includes options for subscriptions, resource groups, and governance features like security and policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881843/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Understanding-Azure-hierarchy/azure-portal-it-management-group.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying details of a management group named "IT," including its ID, access level, and associated subscriptions. The sidebar includes options for subscriptions, resource groups, and governance features like security and policy.](https://kodekloud.com/kk-media/image/upload/v1752881843/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Understanding-Azure-hierarchy/azure-portal-it-management-group.jpg)
 
-<Callout icon="triangle-alert">
-  Be aware that governance and cost management features are not available for the tenant root group unless you have the required elevated permissions. If you attempt to access the root group without proper rights, you will receive an authorization error.
-</Callout>
+> **triangle-alert** Be aware that governance and cost management features are not available for the tenant root group unless you have the required elevated permissions. If you attempt to access the root group without proper rights, you will receive an authorization error.
 
 ## Summary of Azure Hierarchy Components
 
@@ -82,6 +68,4 @@ For more detailed information on Azure and its features, consider referring to t
 
 Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/3c48a4f2-a6f3-45fd-87d7-c53f36f2fb2a/lesson/bdf70099-1e0f-4490-b430-02e7e322c094" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/3c48a4f2-a6f3-45fd-87d7-c53f36f2fb2a/lesson/bdf70099-1e0f-4490-b430-02e7e322c094)

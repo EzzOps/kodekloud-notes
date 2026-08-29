@@ -10,17 +10,13 @@ Cloud cost management involves planning and organizing the expenses and requirem
 
 When executed properly, cloud cost management can lead to notable cost reductions:
 
-<Frame>
-  ![The image depicts "Cloud Cost Management" with icons of a person at a computer, a clock, and money, symbolizing time and financial management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880505/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cost-Management/frame_80.jpg)
-</Frame>
+![The image depicts "Cloud Cost Management" with icons of a person at a computer, a clock, and money, symbolizing time and financial management.](https://kodekloud.com/kk-media/image/upload/v1752880505/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cost-Management/frame_80.jpg)
 
 Without proper oversight, however, expenses can spiral out of control—much like leaving your air conditioning on full blast with open windows, which results in a high electricity bill.
 
 Below, we take a closer look at some widely used cloud native cost management strategies.
 
-<Frame>
-  ![The image illustrates "Cloud Cost Management" with icons of open windows, an air conditioner, and a document with a dollar sign.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880507/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cost-Management/frame_100.jpg)
-</Frame>
+![The image illustrates "Cloud Cost Management" with icons of open windows, an air conditioner, and a document with a dollar sign.](https://kodekloud.com/kk-media/image/upload/v1752880507/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cost-Management/frame_100.jpg)
 
 ## 1. Selecting the Appropriate Infrastructure
 
@@ -29,16 +25,12 @@ Choosing the right cloud infrastructure is critical. Once you have selected a cl
 * **On-demand Instances:**\
   On-demand instances provide maximum flexibility by allowing you to create and delete instances as needed. However, this convenience comes at a higher cost.
 
-<Frame>
-  ![The image describes "On-demand Instances" as prevalent, flexible, on-demand, and expensive, using icons to represent each characteristic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880508/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cost-Management/frame_140.jpg)
-</Frame>
+![The image describes "On-demand Instances" as prevalent, flexible, on-demand, and expensive, using icons to represent each characteristic.](https://kodekloud.com/kk-media/image/upload/v1752880508/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cost-Management/frame_140.jpg)
 
 * **Reserved Instances:**\
   Reserved instances offer discounts in exchange for committing to a long-term usage period. For instance, at KodeKloud, we operate a large cluster for hands-on labs. By committing to a long-term contract, we secure over a 30% discount.
 
-<Frame>
-  ![The image promotes KodeKloud's reserved instances with a 30% discount, featuring cloud-themed logos.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880509/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cost-Management/frame_180.jpg)
-</Frame>
+![The image promotes KodeKloud's reserved instances with a 30% discount, featuring cloud-themed logos.](https://kodekloud.com/kk-media/image/upload/v1752880509/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cost-Management/frame_180.jpg)
 
 * **Spot Instances:**\
   Spot instances are the most cost-effective option, often offering discounts up to 90% by utilizing spare cloud capacity. However, these instances can be terminated abruptly if the cloud provider requires the capacity. Although some providers offer capacity rebalancing signals to alert users, there is no guarantee of receiving sufficient notice.
@@ -51,26 +43,19 @@ Platforms like Kubernetes let you define node pools with specified upper and low
 
 Setting optimal upper and lower limits along with selecting appropriate performance metrics is crucial for effective autoscaling.
 
-<Frame>
-  ![The image illustrates balancing performance and cost through rightsizing, using a seesaw metaphor with "Performance" and "Cost" on either side, and "Under-provisioning" below.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880511/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cost-Management/frame_230.jpg)
-</Frame>
+![The image illustrates balancing performance and cost through rightsizing, using a seesaw metaphor with "Performance" and "Cost" on either side, and "Under-provisioning" below.](https://kodekloud.com/kk-media/image/upload/v1752880511/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cost-Management/frame_230.jpg)
 
 Configuring precise limits for node pools helps prevent over-provisioning and keeps costs under control.
 
-<Frame>
-  ![The image discusses managing performance and cost through rightsizing, highlighting configuring optimal limits and selecting appropriate performance metrics, with icons of a thumbs-up and arrows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880511/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cost-Management/frame_280.jpg)
-</Frame>
+![The image discusses managing performance and cost through rightsizing, highlighting configuring optimal limits and selecting appropriate performance metrics, with icons of a thumbs-up and arrows.](https://kodekloud.com/kk-media/image/upload/v1752880511/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cost-Management/frame_280.jpg)
 
 ## 3. Scheduling Non-Essential Instances and Removing Unused Resources
 
 Not all resources in your infrastructure need to operate continuously. Scheduling non-essential resources to switch off during non-business hours or on weekends can lead to significant savings. Regularly reviewing your setup to remove unused instances is also critical, as inactive resources not only increase costs but can introduce security risks.
 
-<Frame>
-  ![The image illustrates scheduling non-essential instances and removing unused resources, with a toggle switch suggesting turning off during non-business hours and weekends.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880513/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cost-Management/frame_300.jpg)
-</Frame>
+![The image illustrates scheduling non-essential instances and removing unused resources, with a toggle switch suggesting turning off during non-business hours and weekends.](https://kodekloud.com/kk-media/image/upload/v1752880513/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cost-Management/frame_300.jpg)
 
-<Callout icon="lightbulb">
-  Consider leveraging cloud cost management tools for further optimization. Most major cloud providers offer built-in solutions:
+> **lightbulb** Consider leveraging cloud cost management tools for further optimization. Most major cloud providers offer built-in solutions:
 
   * [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) for AWS
   * [Azure Cost Management and Billing](https://azure.microsoft.com/en-us/services/cost-management/)
@@ -82,14 +67,9 @@ Not all resources in your infrastructure need to operate continuously. Schedulin
   * [Cloudability](https://www.apptio.com/products/cloudability)
   * [Densify](https://www.densify.com)
   * [CloudZero](https://www.cloudzero.com)
-</Callout>
 
-<Frame>
-  ![The image shows a conclusion slide featuring logos and names of five companies: Harness, Kubecost, Cloudability, Densify, and Cloudzero.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880514/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cost-Management/frame_340.jpg)
-</Frame>
+![The image shows a conclusion slide featuring logos and names of five companies: Harness, Kubecost, Cloudability, Densify, and Cloudzero.](https://kodekloud.com/kk-media/image/upload/v1752880514/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cost-Management/frame_340.jpg)
 
 Thank you for reading this article on cloud cost management. We hope these strategies empower you to optimize your cloud spending while maintaining high performance.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/70e17eea-7e9b-4f65-87a4-1cdb5631e0dc/lesson/4e4b9dc6-1846-484b-947a-d0a555579dfd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/70e17eea-7e9b-4f65-87a4-1cdb5631e0dc/lesson/4e4b9dc6-1846-484b-947a-d0a555579dfd)

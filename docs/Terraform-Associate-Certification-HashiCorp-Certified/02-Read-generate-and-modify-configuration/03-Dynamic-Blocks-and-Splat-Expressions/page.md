@@ -56,9 +56,7 @@ Terraform will perform the following actions:
 Plan: 0 to add, 2 to change, 1 to destroy.
 ```
 
-<Callout icon="triangle-alert">
-  Since resources are managed as a list when using `count`, removing or reordering items can lead to unintended updates or inadvertent deletion of resources. Always verify your plan before applying such changes.
-</Callout>
+> **triangle-alert** Since resources are managed as a list when using `count`, removing or reordering items can lead to unintended updates or inadvertent deletion of resources. Always verify your plan before applying such changes.
 
 ## Using For\_Each
 
@@ -115,9 +113,7 @@ By understanding these distinctions, you can choose the most appropriate approac
 
 For more detailed Terraform documentation and best practices, visit the [Terraform Registry](https://registry.terraform.io/) or [HashiCorp's documentation](https://www.terraform.io/docs).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/c59e52ed-8a8c-4a6c-8ad0-8dcc38c1598e/lesson/c74b55ae-d1b0-4b56-a865-08d69121bf97" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/c59e52ed-8a8c-4a6c-8ad0-8dcc38c1598e/lesson/c74b55ae-d1b0-4b56-a865-08d69121bf97)
 
 
 # Dynamic Blocks and Splat Expressions
@@ -160,9 +156,7 @@ In this example, Terraform creates two EC2 instances (server1 and server2) using
 
 Consider a more complex scenario where you need to create a new AWS VPC with a private subnet and configure a security group that permits inbound traffic on specific ports. A Virtual Private Cloud (VPC) is a custom network in AWS where you can deploy resources such as EC2 instances. In this case, the VPC uses a CIDR range of 10.0.0.0/16. Inside the VPC, a private subnet (without public IP addresses or direct internet connectivity) is created, and a security group is set up to allow inbound traffic on ports 22 and 8080.
 
-<Frame>
-  ![The image depicts an Amazon VPC setup with a private subnet containing two servers, server1 and server2, within a security group allowing inbound ports 8080 and 22.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884105/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Dynamic-Blocks-and-Splat-Expressions/frame_90.jpg)
-</Frame>
+![The image depicts an Amazon VPC setup with a private subnet containing two servers, server1 and server2, within a security group allowing inbound ports 8080 and 22.](https://kodekloud.com/kk-media/image/upload/v1752884105/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Dynamic-Blocks-and-Splat-Expressions/frame_90.jpg)
 
 Let’s start by defining the resources needed for the VPC, private subnet, and a security group with explicit nested ingress blocks:
 
@@ -204,9 +198,7 @@ resource "aws_security_group" "backend-sg" {
 
 Notice the use of a reference expression (aws\_vpc.backend-vpc.id) to link the VPC ID with both the subnet and the security group. Although this static configuration functions correctly, it can quickly become repetitive as you add more ingress rules.
 
-<Callout icon="lightbulb">
-  To simplify your configuration and enhance flexibility, use dynamic blocks to automatically generate the ingress blocks.
-</Callout>
+> **lightbulb** To simplify your configuration and enhance flexibility, use dynamic blocks to automatically generate the ingress blocks.
 
 ### Refactoring with Dynamic Blocks
 
@@ -297,12 +289,8 @@ aws_security_group.backend-sg: Creation complete after 1s [id=sg-a5aa3b711157d4a
 Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
 ```
 
-<Callout icon="lightbulb">
-  In this article, we demonstrated how to simplify complex Terraform configurations using dynamic blocks for multiple ingress rules and splat expressions for efficient attribute extraction.
-</Callout>
+> **lightbulb** In this article, we demonstrated how to simplify complex Terraform configurations using dynamic blocks for multiple ingress rules and splat expressions for efficient attribute extraction.
 
 That's it for this guide. To further reinforce your understanding, consider taking the accompanying quiz.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/c59e52ed-8a8c-4a6c-8ad0-8dcc38c1598e/lesson/630c7612-947c-445e-b67b-cd64a405cca9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/c59e52ed-8a8c-4a6c-8ad0-8dcc38c1598e/lesson/630c7612-947c-445e-b67b-cd64a405cca9)

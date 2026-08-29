@@ -51,13 +51,9 @@ kubectl get crd | grep 'istio.io'
   <img alt="The image shows a terminal window with commands related to installing Istio using Helm and checking custom resource definitions (CRDs) with kubectl. It confirms Istio's successful installation and lists several CRDs with their creation timestamps." />
 </Frame>
 
-<Callout icon="lightbulb">
-  The base chart is required because it installs the Istio CustomResourceDefinitions (CRDs). Without these CRDs you cannot create many Istio resources.
-</Callout>
+> **lightbulb** The base chart is required because it installs the Istio CustomResourceDefinitions (CRDs). Without these CRDs you cannot create many Istio resources.
 
-<Callout icon="warning">
-  Always install the `istio/base` chart before `istiod` or `gateway`. Installing the control plane without CRDs can cause resources to be invalid or fail to create.
-</Callout>
+> **warning** Always install the `istio/base` chart before `istiod` or `gateway`. Installing the control plane without CRDs can cause resources to be invalid or fail to create.
 
 2. Install the control plane (istiod)
 
@@ -217,11 +213,9 @@ References
 Summary
 You have now installed Istio via Helm (base, istiod, and gateway), verified CRDs, enabled automatic sidecar injection for a namespace, deployed a sample workload to verify injection, and exported chart values for customization. Adjust values and resource requests as needed for production environments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/6573340b-df72-4556-ad3e-57932412cc44" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/6573340b-df72-4556-ad3e-57932412cc44)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/51813dbf-e627-448d-8a3e-c0cece77f868" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/51813dbf-e627-448d-8a3e-c0cece77f868)
 
 
 # Install Istio
@@ -239,9 +233,7 @@ Prerequisites
 * `kubectl` installed and configured to talk to your cluster.
 * `istioctl` downloaded for the Istio version you plan to install (example below uses `1.26.3`).
 
-<Callout icon="lightbulb">
-  Install the `istioctl` client that matches the major/minor version you intend to run in-cluster. Minor version mismatches can work in some cases, but matching versions reduces surprises during labs or exams.
-</Callout>
+> **lightbulb** Install the `istioctl` client that matches the major/minor version you intend to run in-cluster. Minor version mismatches can work in some cases, but matching versions reduces surprises during labs or exams.
 
 ## Install or verify tooling
 

@@ -26,9 +26,7 @@ Terraform will then create the IAM user as described in your configuration.
 
 Hardcoding credentials in your Terraform configuration is not recommended, especially when storing files in version control. Instead, consider one of the following alternatives:
 
-<Callout icon="lightbulb">
-  Avoid embedding sensitive information directly into your Terraform files. Instead, use environment variables or CLI configurations to manage your credentials securely.
-</Callout>
+> **lightbulb** Avoid embedding sensitive information directly into your Terraform files. Instead, use environment variables or CLI configurations to manage your credentials securely.
 
 ### AWS CLI Configuration
 
@@ -66,9 +64,7 @@ By following these steps, you can efficiently provision and manage AWS IAM resou
 
 Happy provisioning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/9aed1294-d2a8-455d-b8c1-1d87f28e4f5d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/9aed1294-d2a8-455d-b8c1-1d87f28e4f5d)
 
 
 # Demo Dynamodb
@@ -91,9 +87,7 @@ To get started, provide a table name to store employee information. In this exam
 
 Leave the other settings at their default values and click the **Create** button.
 
-<Frame>
-  ![The image shows the AWS Console interface for creating a DynamoDB table named "employee\_data" with "employee\_id" as the primary key.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884215/notes-assets/images/Terraform-Basics-Training-Course-Demo-Dynamodb/frame_50.jpg)
-</Frame>
+![The image shows the AWS Console interface for creating a DynamoDB table named "employee\_data" with "employee\_id" as the primary key.](https://kodekloud.com/kk-media/image/upload/v1752884215/notes-assets/images/Terraform-Basics-Training-Course-Demo-Dynamodb/frame_50.jpg)
 
 After a few seconds, the table is created and its name appears in the left sidebar. Click on the **Items** tab to view the table contents (initially, there are no items).
 
@@ -129,21 +123,15 @@ You can similarly insert more items. For instance, to add details for another us
 }
 ```
 
-<Callout icon="lightbulb">
-  In DynamoDB, only the primary key is required when inserting items; all other attributes are optional. This allows flexibility when modeling your data.
-</Callout>
+> **lightbulb** In DynamoDB, only the primary key is required when inserting items; all other attributes are optional. This allows flexibility when modeling your data.
 
-<Frame>
-  ![The image shows an AWS DynamoDB console displaying an "employee\_data" table with three entries, including employee IDs, ages, names, and roles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884216/notes-assets/images/Terraform-Basics-Training-Course-Demo-Dynamodb/frame_170.jpg)
-</Frame>
+![The image shows an AWS DynamoDB console displaying an "employee\_data" table with three entries, including employee IDs, ages, names, and roles.](https://kodekloud.com/kk-media/image/upload/v1752884216/notes-assets/images/Terraform-Basics-Training-Course-Demo-Dynamodb/frame_170.jpg)
 
 ## Filtering Items
 
 To easily locate specific items, you can apply filters to the table. For example, to list all employees with the role of "Developer", apply a filter using the **role** attribute.
 
-<Frame>
-  ![The image shows an AWS DynamoDB console displaying an "employee\_data" table with entries filtered by the role "Developer."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884216/notes-assets/images/Terraform-Basics-Training-Course-Demo-Dynamodb/frame_200.jpg)
-</Frame>
+![The image shows an AWS DynamoDB console displaying an "employee\_data" table with entries filtered by the role "Developer."](https://kodekloud.com/kk-media/image/upload/v1752884216/notes-assets/images/Terraform-Basics-Training-Course-Demo-Dynamodb/frame_200.jpg)
 
 ## Next Steps
 
@@ -156,6 +144,4 @@ For additional information on AWS and DynamoDB, consider visiting:
 
 Enhance your cloud solutions by exploring these resources and leveraging AWS services in your infrastructure projects.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/db960de1-6815-4207-b63a-789de7da612a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/db960de1-6815-4207-b63a-789de7da612a)

@@ -38,9 +38,7 @@ mysql/     database  database_...     n/a
 sys/       system    system_...       system endpoints used for control, policy and debugging
 ```
 
-<Callout icon="lightbulb">
-  If you choose a custom mount path, update all subsequent commands (`mysql/` → `<your-path>/`).
-</Callout>
+> **lightbulb** If you choose a custom mount path, update all subsequent commands (`mysql/` → `<your-path>/`).
 
 ## 2. Configure the MySQL Database Connection
 
@@ -53,9 +51,7 @@ Tell Vault how to connect to your RDS MySQL instance by specifying:
 
 Vault supports multiple MySQL plugins. For AWS RDS use `mysql-rds-database-plugin`.
 
-<Frame>
-  ![The image shows a webpage from the Vault documentation, specifically about the MySQL/MariaDB Database Secrets Engine. It includes information on capabilities, setup, and available plugins for managing database credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878067/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Database-Secrets-Engine/vault-mysql-mariadb-secrets-engine.jpg)
-</Frame>
+![The image shows a webpage from the Vault documentation, specifically about the MySQL/MariaDB Database Secrets Engine. It includes information on capabilities, setup, and available plugins for managing database credentials.](https://kodekloud.com/kk-media/image/upload/v1752878067/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Database-Secrets-Engine/vault-mysql-mariadb-secrets-engine.jpg)
 
 Assuming your RDS endpoint is `database-1.cf5jhixkss7a.us-east-1.rds.amazonaws.com:3306`, configure Vault:
 
@@ -74,15 +70,11 @@ Vault will immediately validate this connection.
 
 In the AWS RDS console, confirm your instance endpoint (and port 3306):
 
-<Frame>
-  ![The image shows an Amazon RDS console displaying details of a database instance named "database-1," including its connectivity, security settings, and endpoint information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878068/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Database-Secrets-Engine/amazon-rds-database-1-details-console.jpg)
-</Frame>
+![The image shows an Amazon RDS console displaying details of a database instance named "database-1," including its connectivity, security settings, and endpoint information.](https://kodekloud.com/kk-media/image/upload/v1752878068/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Database-Secrets-Engine/amazon-rds-database-1-details-console.jpg)
 
 The master username (`admin`) and other configuration details are under **Configuration**:
 
-<Frame>
-  ![The image shows an Amazon RDS console displaying configuration details for a database instance, including instance class, storage, and availability settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878069/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Database-Secrets-Engine/amazon-rds-console-database-configuration.jpg)
-</Frame>
+![The image shows an Amazon RDS console displaying configuration details for a database instance, including instance class, storage, and availability settings.](https://kodekloud.com/kk-media/image/upload/v1752878069/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Database-Secrets-Engine/amazon-rds-console-database-configuration.jpg)
 
 ## 3. Create a Role for Dynamic Credentials
 
@@ -105,9 +97,7 @@ vault write mysql/roles/advanced \
 | **creation\_statements**    | SQL commands Vault runs to provision a dynamic user |
 | **default\_ttl / max\_ttl** | Lease durations for the generated credentials       |
 
-<Callout icon="lightbulb">
-  Adjust the SQL in `creation_statements` to grant required permissions (e.g., `INSERT`, `UPDATE`, etc.).
-</Callout>
+> **lightbulb** Adjust the SQL in `creation_statements` to grant required permissions (e.g., `INSERT`, `UPDATE`, etc.).
 
 Inspect the role:
 
@@ -210,8 +200,6 @@ Vault’s Database Secrets Engine ensures on-demand, rolling credentials for str
 * [AWS RDS Documentation](https://docs.aws.amazon.com/rds/index.html)
 * [MySQL RDS Plugin Details](https://www.vaultproject.io/docs/secrets/databases/mysql)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/5df80668-706d-4af8-a894-6930f7453dbe" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/5df80668-706d-4af8-a894-6930f7453dbe)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/a6a637c6-a248-418a-be44-4ec166274cc3" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/a6a637c6-a248-418a-be44-4ec166274cc3)

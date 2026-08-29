@@ -6,9 +6,7 @@ Enhance your Kubernetes IDE experience by leveraging Lens extensions to add func
 
 Enhance your Kubernetes IDE experience by leveraging Lens extensions. With over 100 available—15 of which are publicly released—you can add functionality such as vulnerability scanning, cloud integrations, visualizations, and more to streamline your cloud-native workflow.
 
-<Callout icon="lightbulb">
-  Browse and install vetted extensions from the Lens marketplace to keep your environment secure and up to date.
-</Callout>
+> **lightbulb** Browse and install vetted extensions from the Lens marketplace to keep your environment secure and up to date.
 
 ## Browsing Available Extensions
 
@@ -32,17 +30,13 @@ To install **Resource Map** (or any other extension) from GitHub:
 2. Download the asset matching your operating system.
 3. Run the installer package.
 
-<Frame>
-  ![The image shows a GitHub releases page for a project, displaying version v1.0.0 with download links for assets and a changelog for a pre-release version v1.0.0-alpha.1.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881198/notes-assets/images/Lens-Kubernetes-IDE-Using-Extensions/github-releases-v1-0-0-alpha.jpg)
-</Frame>
+![The image shows a GitHub releases page for a project, displaying version v1.0.0 with download links for assets and a changelog for a pre-release version v1.0.0-alpha.1.](https://kodekloud.com/kk-media/image/upload/v1752881198/notes-assets/images/Lens-Kubernetes-IDE-Using-Extensions/github-releases-v1-0-0-alpha.jpg)
 
 4. Return to Lens and open **Extensions**.
 5. Search for **Resource Map** in the list.
 6. Click **Install** (or **Reinstall** to upgrade).
 
-<Callout icon="triangle-alert">
-  Only install extensions from trusted sources. Verify the repository and release signatures before installing manually.
-</Callout>
+> **triangle-alert** Only install extensions from trusted sources. Verify the repository and release signatures before installing manually.
 
 ## Using the Resource Map Extension
 
@@ -53,15 +47,11 @@ Once installed, **Resource Map** is available at the bottom of Lens’s sidebar:
 
 You’ll see an interactive map displaying all Kubernetes objects and their dependencies. Hover over a node to view metadata; click it to open a detailed Lens-style view.
 
-<Frame>
-  ![The image shows a Kubernetes dashboard with a resource map and details of a service called "kube-dns" on the right panel. The left sidebar contains various Kubernetes resources and configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881200/notes-assets/images/Lens-Kubernetes-IDE-Using-Extensions/kubernetes-dashboard-kube-dns-resource-map.jpg)
-</Frame>
+![The image shows a Kubernetes dashboard with a resource map and details of a service called "kube-dns" on the right panel. The left sidebar contains various Kubernetes resources and configurations.](https://kodekloud.com/kk-media/image/upload/v1752881200/notes-assets/images/Lens-Kubernetes-IDE-Using-Extensions/kubernetes-dashboard-kube-dns-resource-map.jpg)
 
 Here’s an expanded view illustrating nodes and connections:
 
-<Frame>
-  ![The image shows a resource map from a Kubernetes dashboard, displaying various nodes and their connections. It includes details about a specific pod, such as its namespace, creation time, and status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881201/notes-assets/images/Lens-Kubernetes-IDE-Using-Extensions/kubernetes-dashboard-resource-map-nodes.jpg)
-</Frame>
+![The image shows a resource map from a Kubernetes dashboard, displaying various nodes and their connections. It includes details about a specific pod, such as its namespace, creation time, and status.](https://kodekloud.com/kk-media/image/upload/v1752881201/notes-assets/images/Lens-Kubernetes-IDE-Using-Extensions/kubernetes-dashboard-resource-map-nodes.jpg)
 
 ## Exploring Extension Development
 
@@ -101,6 +91,4 @@ Lens extensions live at the bottom of the sidebar and install in just a few clic
 * [Docker Hub](https://hub.docker.com/)
 * [Helm Documentation](https://helm.sh/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/lens-kubernetes-ide/module/5612678e-a690-4e4e-b43d-966183dffdbf/lesson/50fc5a79-cc89-43a6-b852-7dfd280f3c14" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/lens-kubernetes-ide/module/5612678e-a690-4e4e-b43d-966183dffdbf/lesson/50fc5a79-cc89-43a6-b852-7dfd280f3c14)

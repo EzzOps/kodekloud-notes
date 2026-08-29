@@ -6,9 +6,7 @@ This article explains how persistent storage is integrated and managed within an
 
 Container storage in Azure Kubernetes Service (AKS) is ephemeral by default. This means that when a container is deleted, its associated storage is also removed. However, many applications require data persistence beyond the lifecycle of individual containers. In AKS, native Azure storage solutions—such as Managed Disks and Azure Files—can be leveraged to provide persistent storage with robust security features.
 
-<Callout icon="lightbulb">
-  Understanding persistent storage in AKS is crucial for managing stateful applications effectively. This article explains how persistent storage is integrated and managed within an AKS cluster.
-</Callout>
+> **lightbulb** Understanding persistent storage in AKS is crucial for managing stateful applications effectively. This article explains how persistent storage is integrated and managed within an AKS cluster.
 
 ## Architecture Overview
 
@@ -22,9 +20,7 @@ An AKS cluster is composed of two major components:
 
 The following diagram illustrates the interaction between the control plane, managed nodes, and the storage options provided by Azure:
 
-<Frame>
-  ![The image is a diagram illustrating Azure Kubernetes Service (AKS) storage architecture, showing the interaction between Azure managed nodes, customer managed nodes, and storage options like Azure managed disks and Azure files. It includes components such as the API server, persistent volume, and persistent volume claim.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881743/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Kubernetes-Service-storage/aks-storage-architecture-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating Azure Kubernetes Service (AKS) storage architecture, showing the interaction between Azure managed nodes, customer managed nodes, and storage options like Azure managed disks and Azure files. It includes components such as the API server, persistent volume, and persistent volume claim.](https://kodekloud.com/kk-media/image/upload/v1752881743/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Kubernetes-Service-storage/aks-storage-architecture-diagram.jpg)
 
 ## Persistent Storage Backend Options
 
@@ -45,9 +41,7 @@ To enable persistent storage within an AKS cluster, you need to define a Storage
 
 This configuration bridges the abstract storage request made by your pods via the PVC to a tangible storage resource provided by Azure.
 
-<Callout icon="lightbulb">
-  By integrating native Azure Storage services as persistent volumes in an AKS cluster, you ensure that your applications benefit from secure, high-performance, and persistent storage. This approach not only supports data durability but also aligns with best practices for managing sensitive workloads by providing data encryption both at rest and in transit.
-</Callout>
+> **lightbulb** By integrating native Azure Storage services as persistent volumes in an AKS cluster, you ensure that your applications benefit from secure, high-performance, and persistent storage. This approach not only supports data durability but also aligns with best practices for managing sensitive workloads by providing data encryption both at rest and in transit.
 
 ## Conclusion
 
@@ -55,6 +49,4 @@ Leveraging Azure storage solutions within AKS provides a seamless and secure mec
 
 Next, we will explore the security capabilities available in AKS to further enhance your cluster's resilience.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/146650b0-63f9-4c4b-b452-716a780e5fc7/lesson/cd350b89-d710-4275-bbed-6b7201e806e9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/146650b0-63f9-4c4b-b452-716a780e5fc7/lesson/cd350b89-d710-4275-bbed-6b7201e806e9)

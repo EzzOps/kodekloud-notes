@@ -32,7 +32,7 @@ Below is a summary table that highlights the key differences between REST APIs a
 
 Below is a diagram that visually compares REST APIs and WebSockets across several dimensions:
 
-![The image is a comparison chart between Rest API and WebSocket, highlighting differences in communication model, state, use case, and typical applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857911/notes-assets/images/AWS-Certified-Developer-Associate-Websockets-vs-REST-API/rest-api-vs-websocket-chart.jpg)
+![The image is a comparison chart between Rest API and WebSocket, highlighting differences in communication model, state, use case, and typical applications.](https://kodekloud.com/kk-media/image/upload/v1752857911/notes-assets/images/AWS-Certified-Developer-Associate-Websockets-vs-REST-API/rest-api-vs-websocket-chart.jpg)
 
 ## Making the Right Choice
 

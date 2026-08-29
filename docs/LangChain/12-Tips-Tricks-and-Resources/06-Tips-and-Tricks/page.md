@@ -19,19 +19,15 @@ Below is a compact table of recommended links and resources to bookmark while wo
 | LLM Providers           |          Vendor SDKs and docs (e.g., OpenAI) | [https://openai.com](https://openai.com)                                                                 |
 | Vector DBs & Embeddings |  Compare supported integrations and features | See Integrations -> Components in LangChain docs                                                         |
 
-<Callout icon="lightbulb">
-  Subscribe to the LangChain blog and monitor release notes. Changelogs help you track new features, provider integrations, and potential breaking changes that affect your code.
-</Callout>
+> **lightbulb** Subscribe to the LangChain blog and monitor release notes. Changelogs help you track new features, provider integrations, and potential breaking changes that affect your code.
 
 The goal of this section is to point you to authoritative resources and give practical tips for keeping your environment compatible with the course examples. When you encounter new terms or behaviors later in the material, return to these docs for the definitive explanation.
 
 That concludes this section on tips, tricks, and resources. The next section introduces LCEL, the LangChain Expression Language.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/376f67ca-6dca-40d9-9d3a-830470975c42" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/376f67ca-6dca-40d9-9d3a-830470975c42)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/eaabef57-b4d7-4497-aa1d-3bc1724723f4" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/eaabef57-b4d7-4497-aa1d-3bc1724723f4)
 
 
 # Tips and Tricks
@@ -50,9 +46,7 @@ In this article you'll learn:
 * How to use callbacks to intercept and inspect events across prompts, LLM calls, chains, and agents.
 * Practical patterns to capture intermediate inputs and outputs so you can trace where formatting or logic errors originate.
 
-<Callout icon="lightbulb">
-  This article focuses on techniques for observability and debugging. A demo in this article shows how to enable debug/verbose output and how to implement callbacks to capture detailed runtime information.
-</Callout>
+> **lightbulb** This article focuses on techniques for observability and debugging. A demo in this article shows how to enable debug/verbose output and how to implement callbacks to capture detailed runtime information.
 
 ## Why observability matters for LangChain
 
@@ -118,9 +112,7 @@ console.log(result);
 
 Tip: enabling verbose will print prompts and responses to stdout. If you have sensitive input (API keys, personal data), avoid printing them or sanitize logs.
 
-<Callout icon="warning">
-  Be careful when enabling verbose debug logging in production. Verbose logs may include user data, prompts, or model outputs that are sensitive. Always sanitize or disable verbose output for production environments.
-</Callout>
+> **warning** Be careful when enabling verbose debug logging in production. Verbose logs may include user data, prompts, or model outputs that are sensitive. Always sanitize or disable verbose output for production environments.
 
 ## Callbacks — capture lifecycle events
 

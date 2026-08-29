@@ -12,7 +12,7 @@ The centerpiece of Azure Functions is the function app. A function app represent
 
 For example, if you have several functions for processing various parts of an order, grouping them in one app means they share the same pricing strategy and configuration settings.
 
-![The image explains Azure Functions Development, highlighting that a function app is the unit of deployment and management, comprises multiple functions, and shares the same pricing plan and runtime version.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866235/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Functions-Development/azure-functions-development-diagram.jpg)
+![The image explains Azure Functions Development, highlighting that a function app is the unit of deployment and management, comprises multiple functions, and shares the same pricing plan and runtime version.](https://kodekloud.com/kk-media/image/upload/v1752866235/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Functions-Development/azure-functions-development-diagram.jpg)
 
 If you choose a consumption plan, every function within the app adheres to consumption-based billing. Similarly, enabling continuous integration or deployment will deploy all functions together.
 
@@ -22,7 +22,7 @@ Azure Functions integrates seamlessly with local development tools such as Visua
 
 Azure Functions supports multiple programming languages including C#, JavaScript, Python, and more. The choice of development environment is flexible; whether your preference is a lightweight editor like Visual Studio Code or a full-featured IDE like Visual Studio, Azure Functions adapts to your workflow.
 
-![The image is an infographic about Azure Functions Development, highlighting the ease of creating and testing functions locally, connecting to Azure services, and the dependency on language and tooling preferences.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866236/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Functions-Development/azure-functions-development-infographic.jpg)
+![The image is an infographic about Azure Functions Development, highlighting the ease of creating and testing functions locally, connecting to Azure services, and the dependency on language and tooling preferences.](https://kodekloud.com/kk-media/image/upload/v1752866236/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Functions-Development/azure-functions-development-infographic.jpg)
 
 ## File Structure and Configuration
 

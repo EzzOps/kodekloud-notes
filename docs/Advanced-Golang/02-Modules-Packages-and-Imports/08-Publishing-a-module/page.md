@@ -10,7 +10,7 @@ In this lesson, you'll learn how to publish your Go module on GitHub. Follow the
 
 Start by converting your unversioned project directory into a Git repository. Begin in your project's root directory, as illustrated below:
 
-![The image shows an integrated development environment (IDE) with a project directory open, displaying folders and files related to encryption and decryption. The terminal at the bottom indicates the use of Go version 1.19.3.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868744/notes-assets/images/Advanced-Golang-Publishing-a-module/ide-project-directory-encryption-go.jpg)
+![The image shows an integrated development environment (IDE) with a project directory open, displaying folders and files related to encryption and decryption. The terminal at the bottom indicates the use of Go version 1.19.3.](https://kodekloud.com/kk-media/image/upload/v1752868744/notes-assets/images/Advanced-Golang-Publishing-a-module/ide-project-directory-encryption-go.jpg)
 
 Log into your GitHub account and create a new, empty repository. Copy the repository URL provided by GitHub for future use.
 
@@ -108,7 +108,7 @@ remote: Resolving deltas: 100% (1/1), done.
 
 All changes, including the tag, are now live on GitHub. Confirm this by visiting your repository:
 
-![The image shows a GitHub repository page for a project named "cryptit" with version v0.1.0. It includes folders for "decrypt" and "encrypt," and files "go.mod" and "main.go," with recent changes noted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868746/notes-assets/images/Advanced-Golang-Publishing-a-module/github-repo-cryptit-v0-1-0.jpg)
+![The image shows a GitHub repository page for a project named "cryptit" with version v0.1.0. It includes folders for "decrypt" and "encrypt," and files "go.mod" and "main.go," with recent changes noted.](https://kodekloud.com/kk-media/image/upload/v1752868746/notes-assets/images/Advanced-Golang-Publishing-a-module/github-repo-cryptit-v0-1-0.jpg)
 
 ## Update the Module Reference
 

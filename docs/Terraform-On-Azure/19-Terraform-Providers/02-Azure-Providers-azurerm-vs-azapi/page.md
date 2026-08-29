@@ -17,9 +17,7 @@ Note the explicit bindings: `provider = azurerm.weu` and `provider = azurerm.qc`
 
 Authentication reminder: setting `subscription_id` selects the target subscription, but Terraform still needs authentication credentials. Provide credentials via environment variables, a service principal, managed identity, or other supported authentication mechanisms.
 
-<Callout icon="lightbulb">
-  Always bind resources explicitly to an aliased provider when working with multiple provider configurations. Explicit bindings prevent accidental deployments to the default provider or the wrong subscription.
-</Callout>
+> **lightbulb** Always bind resources explicitly to an aliased provider when working with multiple provider configurations. Explicit bindings prevent accidental deployments to the default provider or the wrong subscription.
 
 Best practices and considerations
 
@@ -45,9 +43,7 @@ module "hub" {
 
 This ensures the module's resources are created in the intended subscription/region.
 
-<Callout icon="warning">
-  If resources are not bound to the correct provider alias, Terraform may create resources in the wrong subscription or region. Always verify provider bindings (and authentication) before running `terraform apply`.
-</Callout>
+> **warning** If resources are not bound to the correct provider alias, Terraform may create resources in the wrong subscription or region. Always verify provider bindings (and authentication) before running `terraform apply`.
 
 Summary
 
@@ -59,11 +55,9 @@ Further reading and references
 * [AzureRM Provider Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 * [Azure authentication options for Terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/azure_cli)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/eeac3f53-157e-493c-a726-7e5d9190c4c3/lesson/d9f29a5c-d620-4796-98b5-2a3fbf90c981" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/eeac3f53-157e-493c-a726-7e5d9190c4c3/lesson/d9f29a5c-d620-4796-98b5-2a3fbf90c981)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/eeac3f53-157e-493c-a726-7e5d9190c4c3/lesson/7d5b7814-9314-49e1-afba-b83bcf29ed56" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/eeac3f53-157e-493c-a726-7e5d9190c4c3/lesson/7d5b7814-9314-49e1-afba-b83bcf29ed56)
 
 
 # Azure Providers azurerm vs azapi
@@ -86,9 +80,7 @@ A key point: these providers are complementary and can be used together in the s
 | `azurerm` |       High-level, strongly typed | Stable, common Azure services (VMs, networks, storage, managed services) | Use when you want schema validation and predictable lifecycle behavior |
 | `azapi`   | Low-level, direct ARM API access | New/preview features, niche or advanced configurations                   | Use when AzureRM doesn’t yet support a resource or API version         |
 
-<Callout icon="lightbulb">
-  You can combine AzureRM and AzAPI in the same Terraform project: use AzureRM for stable, validated resource types and AzAPI for features that are not yet supported by AzureRM.
-</Callout>
+> **lightbulb** You can combine AzureRM and AzAPI in the same Terraform project: use AzureRM for stable, validated resource types and AzAPI for features that are not yet supported by AzureRM.
 
 ## AzureRM (high-level) — what you get
 
@@ -108,9 +100,7 @@ A key point: these providers are complementary and can be used together in the s
 * Support for any ARM resource or API version: use new or preview APIs immediately.
 * Enables preview and newly released features without waiting for AzureRM provider schema updates.
 
-<Callout icon="warning">
-  AzAPI provides flexibility but no compile-time schema validation. Mistakes in API version or property names will only surface at `terraform apply`. Use AzAPI for targeted gaps, not as a default for everything.
-</Callout>
+> **warning** AzAPI provides flexibility but no compile-time schema validation. Mistakes in API version or property names will only surface at `terraform apply`. Use AzAPI for targeted gaps, not as a default for everything.
 
 ## AzAPI use cases and trade-offs
 
@@ -265,6 +255,4 @@ AzureRM and AzAPI are complementary:
 
 Use AzureRM as your default provider and introduce AzAPI selectively to bridge feature gaps or enable early adoption of Azure capabilities. This hybrid approach helps keep Terraform configurations maintainable while staying current with Azure’s evolving platform.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/eeac3f53-157e-493c-a726-7e5d9190c4c3/lesson/9e1ac059-a826-4466-a9e4-da67a85b1bc4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/eeac3f53-157e-493c-a726-7e5d9190c4c3/lesson/9e1ac059-a826-4466-a9e4-da67a85b1bc4)

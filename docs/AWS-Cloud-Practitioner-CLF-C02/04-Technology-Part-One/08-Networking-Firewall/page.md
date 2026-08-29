@@ -44,7 +44,7 @@ Stateless firewalls do not track the state of network connections. This means th
 
 Stateful firewalls maintain the state of active connections. When a request is allowed by an inbound rule (for example, traffic on port 443), the return traffic is automatically permitted without needing an explicitly defined outbound rule. Similarly, when the server initiates a connection (such as sending a request to port 80), only the outbound rule is required—the firewall will automatically allow the inbound response.
 
-![The image explains stateful firewalls, showing how they manage inbound and outbound requests and responses by allowing specific IP/ports.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861963/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Networking-Firewall/frame_290.jpg)
+![The image explains stateful firewalls, showing how they manage inbound and outbound requests and responses by allowing specific IP/ports.](https://kodekloud.com/kk-media/image/upload/v1752861963/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Networking-Firewall/frame_290.jpg)
 
 ## AWS Firewall Constructs
 
@@ -66,7 +66,7 @@ Security groups act as individualized firewalls for AWS resources such as EC2 in
 * They are stateful, meaning you need to define only the initial traffic direction; the return traffic is allowed automatically.
 * You can attach multiple security groups to a single resource or use one security group across multiple resources (for example, all web servers on port 443).
 
-![The image compares NACLs and Security Groups, explaining their roles in monitoring traffic and acting as firewalls within a Virtual Private Cloud (VPC) setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861965/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Networking-Firewall/frame_450.jpg)
+![The image compares NACLs and Security Groups, explaining their roles in monitoring traffic and acting as firewalls within a Virtual Private Cloud (VPC) setup.](https://kodekloud.com/kk-media/image/upload/v1752861965/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Networking-Firewall/frame_450.jpg)
 
 ## Summary
 
@@ -75,7 +75,7 @@ Security groups act as individualized firewalls for AWS resources such as EC2 in
 * **Network ACLs:** Filter traffic at the subnet level and are stateless.
 * **Security Groups:** Serve as personalized firewalls for individual resources and are stateful.
 
-![The image summarizes firewall types: stateless firewalls require explicit permissions, stateful firewalls track requests, Network ACLs are stateless, and Security Groups are stateful.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861968/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Networking-Firewall/frame_520.jpg)
+![The image summarizes firewall types: stateless firewalls require explicit permissions, stateful firewalls track requests, Network ACLs are stateless, and Security Groups are stateful.](https://kodekloud.com/kk-media/image/upload/v1752861968/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Networking-Firewall/frame_520.jpg)
 
 > **lightbulb** Understanding the differences between stateless and stateful firewalls—along with how NACLs and Security Groups operate—ensures that you can properly secure your AWS infrastructure.
 

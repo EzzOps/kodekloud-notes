@@ -31,9 +31,7 @@ do
 done
 ```
 
-<Callout icon="lightbulb">
-  Using Vim's syntax highlighting can significantly reduce the time spent debugging scripts by visually flagging potential errors as you type.
-</Callout>
+> **lightbulb** Using Vim's syntax highlighting can significantly reduce the time spent debugging scripts by visually flagging potential errors as you type.
 
 ## Analyzing Scripts with ShellCheck
 

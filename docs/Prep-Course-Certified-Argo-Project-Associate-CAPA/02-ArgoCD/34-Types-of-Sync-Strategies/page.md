@@ -20,13 +20,11 @@ Argo CD sync policies determine how and when Git changes are propagated to the c
   * With self-heal enabled, Argo CD automatically reverts manual or out-of-band changes made directly to the cluster (for example via kubectl), restoring the state defined in Git.
   * With self-heal disabled, Argo CD does not automatically revert such manual changes.
 
-<Callout icon="lightbulb">
-  Key points about the Argo CD syncPolicy automated block:
+> **lightbulb** Key points about the Argo CD syncPolicy automated block:
 
   * Presence of the `automated` block enables automatic sync; there is no `enabled` boolean—omitting `automated` leaves sync manual.
   * `automated.prune: true` enables automatic deletion of resources removed from Git.
   * `automated.selfHeal: true` enables automatic reconciliation of out-of-band cluster changes.
-</Callout>
 
 A minimal Application snippet that enables automatic sync, pruning, and self-heal looks like this:
 

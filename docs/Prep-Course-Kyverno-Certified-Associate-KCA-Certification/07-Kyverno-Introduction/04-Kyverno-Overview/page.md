@@ -58,9 +58,7 @@ Kyverno can also evaluate generic JSON payloads using JMESPath expressions when 
   <img alt="The image is a presentation slide about &#x22;Kyverno to the Rescue&#x22; and highlights its features like blocking containers running as root, ensuring resources have labels, mutating ConfigMaps for naming conventions, and working with generic JSON payloads." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Kyverno policies are plain Kubernetes YAML (no new DSL). They follow familiar `apiVersion`, `kind`, `metadata`, and `spec` structures, so teams can adopt policies quickly and integrate them into existing GitOps pipelines.
-</Callout>
+> **lightbulb** Kyverno policies are plain Kubernetes YAML (no new DSL). They follow familiar `apiVersion`, `kind`, `metadata`, and `spec` structures, so teams can adopt policies quickly and integrate them into existing GitOps pipelines.
 
 How Kyverno works in practice
 
@@ -134,9 +132,7 @@ spec:
         owner: "platform"
 ```
 
-<Callout icon="warning">
-  Policies enforced cluster-wide can block legitimate workloads if misconfigured. Start in `audit` mode (`validationFailureAction: audit`) to observe changes before switching to `enforce`.
-</Callout>
+> **warning** Policies enforced cluster-wide can block legitimate workloads if misconfigured. Start in `audit` mode (`validationFailureAction: audit`) to observe changes before switching to `enforce`.
 
 Summary — Kyverno capabilities at a glance
 
@@ -161,6 +157,4 @@ Next steps
 
 Kyverno fits naturally into Kubernetes-native workflows, helping platform teams like Alex move from reactive fixes to proactive governance.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/8cf118e1-7ca8-49b6-be5a-af80c331f394/lesson/8d6e1ffe-6a27-498c-9534-60b0ac726d2d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/8cf118e1-7ca8-49b6-be5a-af80c331f394/lesson/8d6e1ffe-6a27-498c-9534-60b0ac726d2d)

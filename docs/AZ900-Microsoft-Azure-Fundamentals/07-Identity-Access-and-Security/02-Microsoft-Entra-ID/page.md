@@ -32,7 +32,7 @@ By integrating with both custom and third-party applications, Microsoft Entra ID
 
 Extending control beyond users, device management in Entra ID enforces policies that govern access based on the device used. For example, you can restrict access to only corporate-approved devices or specific operating systems, ensuring the network remains secure and compliant.
 
-![The image lists the key features of Microsoft Entra ID, including Single Sign-On, Multi-Factor Authentication, Conditional Access, B2B Collaboration, Application Management, and Device Management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868433/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Entra-ID/microsoft-entra-id-features-list.jpg)
+![The image lists the key features of Microsoft Entra ID, including Single Sign-On, Multi-Factor Authentication, Conditional Access, B2B Collaboration, Application Management, and Device Management.](https://kodekloud.com/kk-media/image/upload/v1752868433/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Entra-ID/microsoft-entra-id-features-list.jpg)
 
 ## Benefits of Microsoft Entra ID
 
@@ -48,7 +48,7 @@ By unifying user and application access management under a single platform, Micr
 
 Designed to grow with your business, Microsoft Entra ID scales effortlessly to meet expanding IT requirements. There is no need for additional hardware or server management—simply add more users, and the system continues to deliver optimal performance.
 
-![The image outlines the benefits of Microsoft Entra ID, highlighting robust security, operational efficiency, and scalability and flexibility.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868434/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Entra-ID/microsoft-entra-id-benefits-diagram.jpg)
+![The image outlines the benefits of Microsoft Entra ID, highlighting robust security, operational efficiency, and scalability and flexibility.](https://kodekloud.com/kk-media/image/upload/v1752868434/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Entra-ID/microsoft-entra-id-benefits-diagram.jpg)
 
 > **lightbulb** Integrating Microsoft Entra ID into your IT infrastructure ensures you remain compliant with industry security standards while delivering a streamlined experience for users.
 
@@ -72,7 +72,7 @@ By centralizing authentication, Microsoft Entra ID removes the need for custom-b
 
 Ensure that only compliant devices can connect to your network. Microsoft Entra ID helps enforce device policies, ensuring that only secure, approved hardware accesses your corporate resources.
 
-![The image illustrates four use cases for Microsoft Entra ID: secure user access management, partner collaboration, application access control, and managing device-based access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868435/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Entra-ID/microsoft-entra-id-use-cases.jpg)
+![The image illustrates four use cases for Microsoft Entra ID: secure user access management, partner collaboration, application access control, and managing device-based access.](https://kodekloud.com/kk-media/image/upload/v1752868435/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Entra-ID/microsoft-entra-id-use-cases.jpg)
 
 ## Summary
 

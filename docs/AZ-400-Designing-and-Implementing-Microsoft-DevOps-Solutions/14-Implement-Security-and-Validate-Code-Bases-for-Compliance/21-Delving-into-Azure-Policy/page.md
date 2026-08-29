@@ -132,13 +132,13 @@ You can scope policy assignments at the management group, subscription, or resou
 
 An **initiative** (also called a policy set) bundles multiple policy definitions to achieve a broader compliance objective—such as ISO 27001:2013 or PCI DSS. Initiatives simplify management by grouping related policies and tracking their combined compliance status.
 
-![The image illustrates Azure Policy initiatives, showing a diagram of policy definitions grouped for a common objective, alongside a list of policies under ISO 27001:2013.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867993/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Delving-into-Azure-Policy/azure-policy-initiatives-iso-27001-diagram.jpg)
+![The image illustrates Azure Policy initiatives, showing a diagram of policy definitions grouped for a common objective, alongside a list of policies under ISO 27001:2013.](https://kodekloud.com/kk-media/image/upload/v1752867993/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Delving-into-Azure-Policy/azure-policy-initiatives-iso-27001-diagram.jpg)
 
-![The image is about Azure Policy initiatives, focusing on compliance monitoring, showing a flow from compliance status to goals, and listing policies related to ISO 27001:2013.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867994/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Delving-into-Azure-Policy/azure-policy-initiatives-compliance-flow.jpg)
+![The image is about Azure Policy initiatives, focusing on compliance monitoring, showing a flow from compliance status to goals, and listing policies related to ISO 27001:2013.](https://kodekloud.com/kk-media/image/upload/v1752867994/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Delving-into-Azure-Policy/azure-policy-initiatives-compliance-flow.jpg)
 
-![The image illustrates the connection between initiatives, scopes, and governance efficiency in Azure Policy, alongside a list of policies under ISO 27001:2013.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867996/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Delving-into-Azure-Policy/azure-policy-initiatives-governance-iso27001.jpg)
+![The image illustrates the connection between initiatives, scopes, and governance efficiency in Azure Policy, alongside a list of policies under ISO 27001:2013.](https://kodekloud.com/kk-media/image/upload/v1752867996/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Delving-into-Azure-Policy/azure-policy-initiatives-governance-iso27001.jpg)
 
-![The image illustrates Azure Policy initiatives, highlighting the reduction of management overhead and showing a list of policies related to ISO 27001:2013.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867996/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Delving-into-Azure-Policy/azure-policy-initiatives-iso-27001.jpg)
+![The image illustrates Azure Policy initiatives, highlighting the reduction of management overhead and showing a list of policies related to ISO 27001:2013.](https://kodekloud.com/kk-media/image/upload/v1752867996/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Delving-into-Azure-Policy/azure-policy-initiatives-iso-27001.jpg)
 
 ***
 

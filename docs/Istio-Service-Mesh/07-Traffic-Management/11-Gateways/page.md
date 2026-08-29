@@ -26,27 +26,19 @@ spec:
           servicePort: 8000
 ```
 
-<Frame>
-  ![The image is a diagram illustrating a Kubernetes Ingress setup for a web application, showing the flow from an NGINX ingress to various services like Product Page, Details, Reviews, and Ratings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879390/notes-assets/images/Istio-Service-Mesh-Gateways/kubernetes-ingress-setup-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating a Kubernetes Ingress setup for a web application, showing the flow from an NGINX ingress to various services like Product Page, Details, Reviews, and Ratings.](https://kodekloud.com/kk-media/image/upload/v1752879390/notes-assets/images/Istio-Service-Mesh-Gateways/kubernetes-ingress-setup-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Kubernetes Ingress is an effective way to manage incoming traffic. However, Istio enhances monitoring and provides advanced routing capabilities by leveraging its native Gateway features.
-</Callout>
+> **lightbulb** Kubernetes Ingress is an effective way to manage incoming traffic. However, Istio enhances monitoring and provides advanced routing capabilities by leveraging its native Gateway features.
 
 ## Istio Gateways for Advanced Traffic Management
 
 Istio Gateways function as load balancers at the edge of the mesh, handling both inbound and outbound traffic. When Istio is deployed on a cluster, it automatically installs both the Istio Ingress Gateway and Istio Egress Gateway.
 
-<Frame>
-  ![The image is a diagram of an Istio Gateway, showing components like istio-ingressgateway, istiod, and istio-egressgateway within the istio-system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879391/notes-assets/images/Istio-Service-Mesh-Gateways/istio-gateway-diagram-components.jpg)
-</Frame>
+![The image is a diagram of an Istio Gateway, showing components like istio-ingressgateway, istiod, and istio-egressgateway within the istio-system.](https://kodekloud.com/kk-media/image/upload/v1752879391/notes-assets/images/Istio-Service-Mesh-Gateways/istio-gateway-diagram-components.jpg)
 
 Unlike Kubernetes Ingress controllers that might use NGINX, the Istio Ingress Gateway intercepts all inbound traffic using Envoy proxies. Every service in the mesh is paired with an Envoy sidecar proxy, while the gateways themselves are standalone proxies positioned at the edge of the mesh.
 
-<Frame>
-  ![The image is a diagram of an Istio Gateway setup, showing components like "Product Page," "Details," "Reviews" (v1, v2, v3), and "Ratings" connected between an istio-ingress gateway and an istio-egress gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879393/notes-assets/images/Istio-Service-Mesh-Gateways/istio-gateway-setup-diagram.jpg)
-</Frame>
+![The image is a diagram of an Istio Gateway setup, showing components like "Product Page," "Details," "Reviews" (v1, v2, v3), and "Ratings" connected between an istio-ingress gateway and an istio-egress gateway.](https://kodekloud.com/kk-media/image/upload/v1752879393/notes-assets/images/Istio-Service-Mesh-Gateways/istio-gateway-setup-diagram.jpg)
 
 Our objective is to capture all traffic arriving at the Istio Ingress Gateway for the hostname "bookinfo.app" and forward it to the product page service.
 
@@ -126,12 +118,8 @@ Spec:
 Events: <none>
 ```
 
-<Callout icon="lightbulb">
-  At this point, the bookinfo Gateway is configured to capture traffic coming through the default Istio Ingress Gateway for the URL "bookinfo.app". The following step is to define Virtual Services to correctly route this traffic to the product page service, which will be covered in a subsequent article.
-</Callout>
+> **lightbulb** At this point, the bookinfo Gateway is configured to capture traffic coming through the default Istio Ingress Gateway for the URL "bookinfo.app". The following step is to define Virtual Services to correctly route this traffic to the product page service, which will be covered in a subsequent article.
 
 Happy networking!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/fecd9b1d-3368-43d2-b880-72b7fbd0e0a8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/fecd9b1d-3368-43d2-b880-72b7fbd0e0a8)

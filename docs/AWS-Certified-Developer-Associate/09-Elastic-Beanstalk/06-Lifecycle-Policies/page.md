@@ -16,7 +16,7 @@ When you deploy a new version of your application, Elastic Beanstalk automatical
 
 **Important Note:** Deleting a version through lifecycle policies removes it only from Elastic Beanstalk by default; the corresponding file in the S3 bucket remains intact unless you configure the policy to delete these files as well.
 
-![The image outlines Elastic Beanstalk lifecycle policies, including version limit, time-based retention, and deleting source bundles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858881/notes-assets/images/AWS-Certified-Developer-Associate-Lifecycle-Policies/elastic-beanstalk-lifecycle-policies.jpg)
+![The image outlines Elastic Beanstalk lifecycle policies, including version limit, time-based retention, and deleting source bundles.](https://kodekloud.com/kk-media/image/upload/v1752858881/notes-assets/images/AWS-Certified-Developer-Associate-Lifecycle-Policies/elastic-beanstalk-lifecycle-policies.jpg)
 
 By leveraging these lifecycle policies, you can keep your Elastic Beanstalk environment clean, manageable, and well within the resource limits of your AWS account. For more information on AWS deployment best practices, refer to the [AWS Documentation](https://aws.amazon.com/documentation/).
 

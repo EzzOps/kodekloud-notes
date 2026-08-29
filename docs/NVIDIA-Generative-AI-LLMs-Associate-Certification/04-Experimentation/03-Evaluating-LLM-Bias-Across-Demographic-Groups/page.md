@@ -12,9 +12,7 @@ Which approach is most effective for evaluating an LLM's performance across dive
 * Disaggregated evaluation using stratified test sets representing different demographic groups?
 * Asking the model to self-evaluate its biases, or measuring only the overall accuracy on the complete dataset?
 
-<Callout icon="lightbulb">
-  Disaggregated evaluation using stratified test sets representing different demographic groups is the most effective approach.
-</Callout>
+> **lightbulb** Disaggregated evaluation using stratified test sets representing different demographic groups is the most effective approach.
 
 ## Why disaggregated (stratified) evaluation matters
 

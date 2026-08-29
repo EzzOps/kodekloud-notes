@@ -16,7 +16,7 @@ Before Elastic Beanstalk, deploying even a simple web application required sever
 
 Manually managing these tasks demanded in-depth AWS knowledge and strict adherence to best practices for each individual service.
 
-![The image illustrates the manual setup and management tasks a developer must perform before using Elastic Beanstalk, including setting up EC2 instances, databases, load balancers, and configuring monitoring and logging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858849/notes-assets/images/AWS-Certified-Developer-Associate-Elastic-BeanStalk-Basics/elastic-beanstalk-setup-management.jpg)
+![The image illustrates the manual setup and management tasks a developer must perform before using Elastic Beanstalk, including setting up EC2 instances, databases, load balancers, and configuring monitoring and logging.](https://kodekloud.com/kk-media/image/upload/v1752858849/notes-assets/images/AWS-Certified-Developer-Associate-Elastic-BeanStalk-Basics/elastic-beanstalk-setup-management.jpg)
 
 With Elastic Beanstalk, you simply upload your code and provide basic configuration details. AWS then automatically provisions the underlying resources, including EC2 instances, autoscaling groups, databases, load balancers, and CloudWatch integrations. This automation allows developers to focus on writing code rather than managing infrastructure.
 
@@ -41,7 +41,7 @@ With Elastic Beanstalk, you simply upload your code and provide basic configurat
 5. **Cost Optimization**\
    Elastic Beanstalk efficiently manages resource utilization using autoscaling, ensuring you only pay for what you need. There is no additional charge for using the service—you are billed only for the underlying AWS resources.
 
-![The image compares manual management with Elastic Beanstalk across five aspects: complexity and setup time, scalability and performance, maintenance and reliability, developer focus and productivity, and resource optimization and cost.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858850/notes-assets/images/AWS-Certified-Developer-Associate-Elastic-BeanStalk-Basics/manual-vs-elastic-beanstalk-comparison.jpg)
+![The image compares manual management with Elastic Beanstalk across five aspects: complexity and setup time, scalability and performance, maintenance and reliability, developer focus and productivity, and resource optimization and cost.](https://kodekloud.com/kk-media/image/upload/v1752858850/notes-assets/images/AWS-Certified-Developer-Associate-Elastic-BeanStalk-Basics/manual-vs-elastic-beanstalk-comparison.jpg)
 
 ## Elastic Beanstalk Workflow
 

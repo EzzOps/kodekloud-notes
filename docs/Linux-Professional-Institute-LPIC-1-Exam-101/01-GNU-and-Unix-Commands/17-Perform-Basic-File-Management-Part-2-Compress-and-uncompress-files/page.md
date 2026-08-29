@@ -57,9 +57,7 @@ $ bzip2 --decompress file2.bz2
 $ xz --decompress file3.xz
 ```
 
-<Callout icon="lightbulb">
-  By default, these commands remove the original file after compressing or decompressing.
-</Callout>
+> **lightbulb** By default, these commands remove the original file after compressing or decompressing.
 
 ***
 
@@ -150,13 +148,11 @@ $ tar --extract --file archive.tar.gz    # or
 $ tar xf archive.tar.xz
 ```
 
-<Callout icon="triangle-alert">
-  Overwriting existing files when extracting archives can lead to data loss. Always verify the contents before extraction or use `--list` (`-t`) to preview:
+> **triangle-alert** Overwriting existing files when extracting archives can lead to data loss. Always verify the contents before extraction or use `--list` (`-t`) to preview:
 
   ```bash theme={null}
   $ tar -tf archive.tar.gz
   ```
-</Callout>
 
 ***
 
@@ -168,6 +164,4 @@ $ tar xf archive.tar.xz
 * [Linux gzip Command](https://linux.die.net/man/1/gzip)
 * [Linux zip Command](https://linux.die.net/man/1/zip)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/7c37d5c7-fcc9-4552-a8ff-c13e34dc01d8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/7c37d5c7-fcc9-4552-a8ff-c13e34dc01d8)

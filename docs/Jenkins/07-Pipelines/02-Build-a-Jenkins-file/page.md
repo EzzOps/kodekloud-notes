@@ -106,9 +106,7 @@ In this multi-stage pipeline:
 * Both stages use the `git` step to pull code from the GitHub repository.
 * This structure allows you to extend each stage with additional tasks such as running tests, performing quality checks, or deploying to different environments.
 
-<Callout icon="lightbulb">
-  This basic multi-stage design can be easily extended to fit more complex deployment workflows, ensuring that each environment receives the necessary configuration and testing procedures.
-</Callout>
+> **lightbulb** This basic multi-stage design can be easily extended to fit more complex deployment workflows, ensuring that each environment receives the necessary configuration and testing procedures.
 
 ***
 
@@ -116,6 +114,4 @@ Now that we've covered the basics of creating and structuring Jenkinsfiles—fro
 
 That’s it for this lesson. We'll see you in the next one!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/2a3d25b1-320f-460d-ad4f-65625e3d05d3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/2a3d25b1-320f-460d-ad4f-65625e3d05d3)

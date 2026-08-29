@@ -84,19 +84,15 @@ Putting it all together: simplified process summary
 * Write small metadata records to the database with the object location.
 * Offload resizing, transcoding, and other heavy tasks to background workers.
 
-<Callout icon="lightbulb">
-  1. Keep large files in object storage (`S3`).
+> **lightbulb** 1. Keep large files in object storage (`S3`).
   2. Keep small, structured metadata in your database (`PostgreSQL`) with a reference to the file.
   3. Offload slow processing (resizing, transcodes) to background workers to keep the request path fast.
-</Callout>
 
 <Frame>
   <img alt="The image illustrates a process flow for uploading an image, involving three steps: saving the image file to object storage, storing metadata in a database, and resizing the image using a worker." />
 </Frame>
 
-<Callout icon="warning">
-  Never store large binary files in your transactional database. Use object storage for big blobs and move slow, CPU-bound processing off the user-facing request path.
-</Callout>
+> **warning** Never store large binary files in your transactional database. Use object storage for big blobs and move slow, CPU-bound processing off the user-facing request path.
 
 Further reading and references
 
@@ -104,6 +100,4 @@ Further reading and references
 * PostgreSQL documentation: [https://www.postgresql.org](https://www.postgresql.org)
 * Object storage design patterns and best practices: search for “object storage vs relational database for media” for architecture guides and examples.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/02240fc4-695f-4112-9594-bb05cfc5ca73/lesson/ce213dc3-d04d-4496-b543-f1ccb9acb926" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/02240fc4-695f-4112-9594-bb05cfc5ca73/lesson/ce213dc3-d04d-4496-b543-f1ccb9acb926)

@@ -105,9 +105,7 @@ bin     boot    dev     docker-entrypoint.sh  etc     home    lib     lib64   me
 
 This approach is especially useful when you need to inspect file permissions, install debugging utilities, or run diagnostic tools such as `tcpdump` to gain insights into the container's behavior. However, it is important to note that:
 
-<Callout icon="triangle-alert">
-  Avoid using `kubectl exec` in production environments as it may interfere with the running workload. Instead, limit its use to development or staging environments and consider using more robust troubleshooting methods for production setups.
-</Callout>
+> **triangle-alert** Avoid using `kubectl exec` in production environments as it may interfere with the running workload. Instead, limit its use to development or staging environments and consider using more robust troubleshooting methods for production setups.
 
 ## Next Steps
 
@@ -118,6 +116,4 @@ For further information, check out these resources:
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/b2111c44-6b67-4b60-a91c-dabf3b6b78f8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/b2111c44-6b67-4b60-a91c-dabf3b6b78f8)

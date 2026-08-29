@@ -32,7 +32,7 @@ Every command returns an integer exit status.
 * **0** means success.
 * **Non-zero** indicates failure or a specific error condition.
 
-![The image explains that the special shell variable \$? stores the exit status of a command, script, or function.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868623/notes-assets/images/Advanced-Bash-Scripting-Special-shell-Question-mark/special-shell-variable-exit-status.jpg)
+![The image explains that the special shell variable \$? stores the exit status of a command, script, or function.](https://kodekloud.com/kk-media/image/upload/v1752868623/notes-assets/images/Advanced-Bash-Scripting-Special-shell-Question-mark/special-shell-variable-exit-status.jpg)
 
 > **lightbulb** If you redirect both stdout and stderr (e.g., `> /dev/null 2>&1`), you won’t see any output, but `$?` still reflects success or failure.
 
@@ -73,7 +73,7 @@ Every command returns an integer exit status.
 
 ### Common Exit Codes
 
-![The image shows a table of special shell variables with exit code numbers and their meanings, such as "0" for success and "1" for a general error."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868624/notes-assets/images/Advanced-Bash-Scripting-Special-shell-Question-mark/special-shell-variables-exit-codes.jpg)
+![The image shows a table of special shell variables with exit code numbers and their meanings, such as "0" for success and "1" for a general error."](https://kodekloud.com/kk-media/image/upload/v1752868624/notes-assets/images/Advanced-Bash-Scripting-Special-shell-Question-mark/special-shell-variables-exit-codes.jpg)
 
 | Exit Code | Meaning                          |
 | --------- | -------------------------------- |

@@ -81,9 +81,7 @@ vm_public_ip = "52.138.2.248"
 
 When the apply completes and the provisioner runs successfully, the Apache index page will be available at the VM public IP in a browser.
 
-<Callout icon="warning">
-  Avoid embedding plaintext passwords or secrets in your Terraform code. Prefer SSH keys or use a secrets manager. Also be cautious when exposing SSH or HTTP ports on public IP addresses.
-</Callout>
+> **warning** Avoid embedding plaintext passwords or secrets in your Terraform code. Prefer SSH keys or use a secrets manager. Also be cautious when exposing SSH or HTTP ports on public IP addresses.
 
 ## Summary
 
@@ -95,9 +93,7 @@ Remote provisioners (especially `remote-exec`) let Terraform execute commands in
 * Azure CLI — [https://learn.microsoft.com/cli/azure/](https://learn.microsoft.com/cli/azure/)
 * Azure VM images documentation — [https://learn.microsoft.com/azure/virtual-machines/linux/cli-ps-findimage](https://learn.microsoft.com/azure/virtual-machines/linux/cli-ps-findimage)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/cb34375e-505a-4794-a260-d12aeba6440e/lesson/8fcb1ab0-c438-4023-8e6a-5ee332e53535" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/cb34375e-505a-4794-a260-d12aeba6440e/lesson/8fcb1ab0-c438-4023-8e6a-5ee332e53535)
 
 
 # Azure Storage Backend
@@ -114,13 +110,9 @@ In this guide you will configure Azure Storage as a remote Terraform backend and
 * You can still manage a storage account as a Terraform resource in your configuration (so it appears in state), but that resource cannot serve as the backend for the same run that creates it — the backend must exist before `terraform init`.
 * Authentication to the Azure `azurerm` backend can use an account key (`ARM_ACCESS_KEY`) or Azure AD credentials (service principal or managed identity). Azure AD-based authentication is recommended for CI/CD.
 
-<Callout icon="lightbulb">
-  The backend storage account and container must already exist before running `terraform init`. Terraform cannot use a resource that it will create during the same run as its backend.
-</Callout>
+> **lightbulb** The backend storage account and container must already exist before running `terraform init`. Terraform cannot use a resource that it will create during the same run as its backend.
 
-<Callout icon="warning">
-  Do not attempt to create the storage account/container/blob in the same Terraform run that you declare as your backend. Terraform needs the backend to exist before it can initialize remote state.
-</Callout>
+> **warning** Do not attempt to create the storage account/container/blob in the same Terraform run that you declare as your backend. Terraform needs the backend to exist before it can initialize remote state.
 
 ## Backend configuration example
 
@@ -347,6 +339,4 @@ When Terraform holds the blob lease, the Azure portal will show the blob with pr
 * [Azure Storage documentation](https://docs.microsoft.com/azure/storage/)
 * [Azure CLI: az storage account keys](https://learn.microsoft.com/cli/azure/storage/account/keys)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4693ec96-f075-4e4f-922b-1f1e27202120/lesson/d83d6d5f-b71f-469c-aa17-5e093710afed" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4693ec96-f075-4e4f-922b-1f1e27202120/lesson/d83d6d5f-b71f-469c-aa17-5e093710afed)

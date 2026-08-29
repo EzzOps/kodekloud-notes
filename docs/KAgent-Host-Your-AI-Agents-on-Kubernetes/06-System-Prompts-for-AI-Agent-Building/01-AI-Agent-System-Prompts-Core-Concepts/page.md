@@ -68,9 +68,7 @@ For HTTP transports you can configure HTTP path, service port, and authorization
   <img alt="A teal-themed slide titled &#x22;KMCP in Kubernetes&#x22; showing four top boxes: Transport Types, HTTP Transport Configuration, Authorization, and Lifecycle Management. Below is a panel listing features: MCP authorization server support, Keycloak provider integration, and resource metadata for authentication." />
 </Frame>
 
-<Callout icon="warning">
-  When deploying to Kubernetes, secure your secrets and authorization settings. KMCP manages secret injection, but you should review RBAC, network policies, and authorization providers (for example, Keycloak) to ensure least-privilege access to sensitive tools and data.
-</Callout>
+> **warning** When deploying to Kubernetes, secure your secrets and authorization settings. KMCP manages secret injection, but you should review RBAC, network policies, and authorization providers (for example, Keycloak) to ensure least-privilege access to sensitive tools and data.
 
 ### Lifecycle management
 
@@ -147,11 +145,9 @@ References and further reading:
 
 I'm excited to share the labs with you — happy building!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/dacd107b-93e4-497f-b0fa-b872f0300527" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/dacd107b-93e4-497f-b0fa-b872f0300527)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/770747d1-dd16-4c12-b682-2fdb408ed4fe" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/770747d1-dd16-4c12-b682-2fdb408ed4fe)
 
 
 # AI Agent System Prompts Core Concepts
@@ -162,9 +158,7 @@ Explains core concepts and best practices for designing system prompts that defi
 
 Welcome — this lesson explains the core concepts behind system prompts for declarative AI agents. System prompts are the single most important artifact when defining an agent: they set the agent’s role, behavior, and decision-making style. Good system prompts combined with the right tools and query handling produce reliable, useful agents.
 
-<Callout icon="lightbulb">
-  System prompts act like an agent’s job description and personality. Designing them clearly is the key to building predictable, safe, and effective agents.
-</Callout>
+> **lightbulb** System prompts act like an agent’s job description and personality. Designing them clearly is the key to building predictable, safe, and effective agents.
 
 Prompt engineering for agents is a newer discipline compared with traditional software development. It requires iterative design, testing, and a different mental model—one that treats prompts, tools, and queries as co-evolving pieces of the agent’s behavior.
 
@@ -287,9 +281,7 @@ Prioritize your design effort where it yields the most control and impact:
   <img alt="A presentation slide titled &#x22;Design Considerations&#x22; showing three numbered blue panels with icons. Each panel summarizes instruction-related points: controlling instructions and tools, handling varying user queries, and giving clear instructions to help an agent interpret queries." />
 </Frame>
 
-<Callout icon="warning">
-  Prioritize writing clear, constrained instructions first. Ambiguous instructions lead to unpredictable tool usage and unsafe actions.
-</Callout>
+> **warning** Prioritize writing clear, constrained instructions first. Ambiguous instructions lead to unpredictable tool usage and unsafe actions.
 
 ## Best practices for writing system prompts
 
@@ -321,6 +313,4 @@ Further reading and references:
 
 As we’ve established the importance of system prompts, the next lesson will walk through how to build a concrete system prompt and register tools for an agent.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/9516a0aa-00b1-4461-a622-cc60e510c96a/lesson/0793531c-b061-43b0-9e6a-a591341f2408" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/9516a0aa-00b1-4461-a622-cc60e510c96a/lesson/0793531c-b061-43b0-9e6a-a591341f2408)

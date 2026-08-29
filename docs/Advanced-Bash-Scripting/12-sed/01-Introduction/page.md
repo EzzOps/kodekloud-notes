@@ -134,7 +134,7 @@ $ cat employees.txt
 
 ***
 
-![The image is a checklist titled "sed search," highlighting topics such as using the search function with print and delete commands, expressing the dash e flag for multiple scripts, and revisiting the use of flags -n and -i.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868669/notes-assets/images/Advanced-Bash-Scripting-Find/sed-search-checklist-flags.jpg)
+![The image is a checklist titled "sed search," highlighting topics such as using the search function with print and delete commands, expressing the dash e flag for multiple scripts, and revisiting the use of flags -n and -i.](https://kodekloud.com/kk-media/image/upload/v1752868669/notes-assets/images/Advanced-Bash-Scripting-Find/sed-search-checklist-flags.jpg)
 
 ## Links and References
 

@@ -22,9 +22,7 @@ Learn how to configure the [AppRole authentication method][vault-approle-docs] i
 export VAULT_TOKEN="s.TEKrNn3Cv53pZdbPh8xg4TPu"
 ```
 
-<Callout icon="triangle-alert">
-  Never commit your `VAULT_TOKEN` or any sensitive credentials to version control.
-</Callout>
+> **triangle-alert** Never commit your `VAULT_TOKEN` or any sensitive credentials to version control.
 
 ## 1. Enable the AppRole Auth Method
 
@@ -132,6 +130,4 @@ curl --request POST \
 
 [vault-api-docs]: https://www.vaultproject.io/api-docs
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/e0610499-3eec-4296-9fcf-876e7cc458d5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/e0610499-3eec-4296-9fcf-876e7cc458d5)

@@ -18,10 +18,8 @@ resource "aws_key_pair" "alpha" {
 | public\_key | SSH public key supplied by the user              |
 | tags\_all   | Combined map of resource and provider-level tags |
 
-<Callout icon="lightbulb">
-  You can target a specific resource by running `tofu show aws_key_pair.alpha`.\
+> **lightbulb** You can target a specific resource by running `tofu show aws_key_pair.alpha`.\
   Learn more in the \[OpenTofu CLI Docs].
-</Callout>
 
 ## Referencing Exported Attributes
 
@@ -58,10 +56,8 @@ Apply complete! Resources: 2 added, 0 changed, 0 destroyed
 
 During `tofu destroy`, the reverse order is applied: the EC2 instance is terminated before the key pair.
 
-<Callout icon="lightbulb">
-  Implicit dependencies eliminate race conditions and ensure resources are created or destroyed in the correct sequence.\
+> **lightbulb** Implicit dependencies eliminate race conditions and ensure resources are created or destroyed in the correct sequence.\
   Read more about the \[AWS Provider] for detailed attribute information.
-</Callout>
 
 ## Explicit Dependencies with `depends_on`
 
@@ -85,10 +81,8 @@ resource "aws_instance" "web" {
 
 Here, `aws_instance.web` will wait for `aws_instance.db` to finish creation first.
 
-<Callout icon="triangle-alert">
-  Overusing `depends_on` can complicate your configuration. Prefer implicit references whenever possible.\
+> **triangle-alert** Overusing `depends_on` can complicate your configuration. Prefer implicit references whenever possible.\
   For advanced dependency control, see the \[Infrastructure as Code] best practices.
-</Callout>
 
 ***
 
@@ -100,9 +94,7 @@ That’s it for this lesson on resource attributes and dependencies in OpenTofu.
 * [AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 * [Infrastructure as Code](https://en.wikipedia.org/wiki/Infrastructure_as_code)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/19c6f909-165d-43f8-82a8-37bb654d0145" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/19c6f909-165d-43f8-82a8-37bb654d0145)
 
 
 # Resource Targeting
@@ -133,9 +125,7 @@ resource "aws_instance" "web" {
 }
 ```
 
-<Callout icon="lightbulb">
-  The `aws_instance.web` resource uses the interpolation `${random_string.server-suffix.id}` to append the generated suffix to the **Name** tag.
-</Callout>
+> **lightbulb** The `aws_instance.web` resource uses the interpolation `${random_string.server-suffix.id}` to append the generated suffix to the **Name** tag.
 
 ## Applying Changes Normally
 
@@ -188,9 +178,7 @@ Warning: Applied changes may be incomplete
 Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
 ```
 
-<Callout icon="triangle-alert">
-  Using resource targeting can leave your state incomplete. Reserve this feature for urgent fixes or small, isolated changes.
-</Callout>
+> **triangle-alert** Using resource targeting can leave your state incomplete. Reserve this feature for urgent fixes or small, isolated changes.
 
 ## CLI Commands Reference
 
@@ -206,6 +194,4 @@ Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
 * [AWS EC2 Overview](https://aws.amazon.com/ec2/)
 * [Terraform Random Provider](https://registry.terraform.io/providers/hashicorp/random/latest)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/707a39e7-31dc-43f6-ba9d-40a3df9366be" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/707a39e7-31dc-43f6-ba9d-40a3df9366be)

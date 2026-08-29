@@ -21,13 +21,9 @@ This lesson covers:
 
 By the end of this lesson, you'll be able to decide when to prefer built-in Terraform capabilities or platform-native features over provisioners. In most production scenarios, provider-native arguments, user-data/cloud-init, configuration management tools like [Ansible](https://www.ansible.com/) (see [Learn Ansible Basics - Beginners Course](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course)), or platform services are more reliable and maintainable than provisioners.
 
-<Callout icon="lightbulb">
-  Prefer provider-native arguments, user-data/cloud-init, or configuration management tools whenever possible. Provisioners are intended as a pragmatic fallback when those options are not available.
-</Callout>
+> **lightbulb** Prefer provider-native arguments, user-data/cloud-init, or configuration management tools whenever possible. Provisioners are intended as a pragmatic fallback when those options are not available.
 
-<Callout icon="warning">
-  Provisioners can introduce ordering and retry complexities, and may make deployments non-idempotent. Treat them as a last resort and ensure robust error handling and retries if you must use them.
-</Callout>
+> **warning** Provisioners can introduce ordering and retry complexities, and may make deployments non-idempotent. Treat them as a last resort and ensure robust error handling and retries if you must use them.
 
 ***
 
@@ -163,6 +159,4 @@ If you must use a provisioner:
 
 For production deployments, design for repeatability and treat provisioners as pragmatic fallbacks rather than core configuration mechanisms.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/cb34375e-505a-4794-a260-d12aeba6440e/lesson/b7dd910e-dc15-43ce-b75a-b70e02ffd348" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/cb34375e-505a-4794-a260-d12aeba6440e/lesson/b7dd910e-dc15-43ce-b75a-b70e02ffd348)

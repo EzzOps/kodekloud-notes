@@ -52,9 +52,7 @@ After updating the endpoint, be sure to adjust your testing tools—such as [Pos
 
 will now target the `/posts` endpoint. When tested, this endpoint responds as expected.
 
-<Callout icon="lightbulb">
-  Keep in mind that this example only prints and returns the submitted post; it does not persist data in a database.
-</Callout>
+> **lightbulb** Keep in mind that this example only prints and returns the submitted post; it does not persist data in a database.
 
 ## Simulating Data Persistence
 

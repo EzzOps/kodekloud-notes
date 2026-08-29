@@ -26,7 +26,7 @@ When you run `kubectl get nodes`, EKS performs:
 3. The AWS-managed load balancer forwards the request to the API server.
 4. The API server verifies the token with AWS IAM and executes the request.
 
-![The image illustrates an authentication process flow for an EKS cluster, showing interactions between an administrator, ALB, API server, AWS IAM, and a node with a pod.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862877/notes-assets/images/AWS-EKS-Cluster-Access/eks-authentication-process-flow-diagram.jpg)
+![The image illustrates an authentication process flow for an EKS cluster, showing interactions between an administrator, ALB, API server, AWS IAM, and a node with a pod.](https://kodekloud.com/kk-media/image/upload/v1752862877/notes-assets/images/AWS-EKS-Cluster-Access/eks-authentication-process-flow-diagram.jpg)
 
 > **lightbulb** Although the endpoint is publicly reachable, AWS IAM verification ensures only valid IAM principals and node roles can access the API.
 
@@ -34,7 +34,7 @@ When you run `kubectl get nodes`, EKS performs:
 
 Inside Kubernetes, Role-Based Access Control (RBAC) controls permissions. EKS originally bridged IAM identities to RBAC roles via the `aws-auth` ConfigMap:
 
-![The image is a diagram illustrating the authentication process between AWS and Kubernetes, showing components like an administrator, ALB, EKS cluster, API server, AWS IAM, and RBAC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862879/notes-assets/images/AWS-EKS-Cluster-Access/aws-kubernetes-authentication-diagram.jpg)
+![The image is a diagram illustrating the authentication process between AWS and Kubernetes, showing components like an administrator, ALB, EKS cluster, API server, AWS IAM, and RBAC.](https://kodekloud.com/kk-media/image/upload/v1752862879/notes-assets/images/AWS-EKS-Cluster-Access/aws-kubernetes-authentication-diagram.jpg)
 
 ## aws-auth ConfigMap
 
@@ -60,7 +60,7 @@ data:
         - system:masters
 ```
 
-![The image is a diagram illustrating AWS Auth Configuration, showing the flow from an administrator through an ALB to an EKS Cluster, involving components like API Server, RBAC, AWS IAM, and a Node.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862880/notes-assets/images/AWS-EKS-Cluster-Access/aws-auth-configuration-diagram-eks.jpg)
+![The image is a diagram illustrating AWS Auth Configuration, showing the flow from an administrator through an ALB to an EKS Cluster, involving components like API Server, RBAC, AWS IAM, and a Node.](https://kodekloud.com/kk-media/image/upload/v1752862880/notes-assets/images/AWS-EKS-Cluster-Access/aws-auth-configuration-diagram-eks.jpg)
 
 ### Drawbacks of the aws-auth ConfigMap
 
@@ -73,7 +73,7 @@ data:
 
 > **triangle-alert** Relying on a free-form ConfigMap for critical access control can lead to accidental lockouts and complex recovery procedures.
 
-![The image is a diagram illustrating the drawbacks of AWS Auth, showing the flow between an administrator, ALB, EKS Cluster, AWS IAM, and a node with components like API Server, RBAC, and aws-auth ConfigMap.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862882/notes-assets/images/AWS-EKS-Cluster-Access/aws-auth-drawbacks-diagram-flow.jpg)
+![The image is a diagram illustrating the drawbacks of AWS Auth, showing the flow between an administrator, ALB, EKS Cluster, AWS IAM, and a node with components like API Server, RBAC, and aws-auth ConfigMap.](https://kodekloud.com/kk-media/image/upload/v1752862882/notes-assets/images/AWS-EKS-Cluster-Access/aws-auth-drawbacks-diagram-flow.jpg)
 
 ## EKS Cluster Access APIs
 
@@ -83,7 +83,7 @@ AWS now offers native Cluster Access APIs, which deprecate the in-cluster `aws-a
 * Offload access control logic from your cluster into the EKS service.
 * Assign multiple IAM roles/users as cluster administrators without recreating the cluster.
 
-![The image is a diagram illustrating the flow of cluster access APIs in an EKS (Elastic Kubernetes Service) cluster, showing components like API Server, RBAC, AWS IAM, and user mappings. It depicts how users access the cluster through an Application Load Balancer (ALB) and interact with nodes and pods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862884/notes-assets/images/AWS-EKS-Cluster-Access/eks-cluster-access-api-flow-diagram.jpg)
+![The image is a diagram illustrating the flow of cluster access APIs in an EKS (Elastic Kubernetes Service) cluster, showing components like API Server, RBAC, AWS IAM, and user mappings. It depicts how users access the cluster through an Application Load Balancer (ALB) and interact with nodes and pods.](https://kodekloud.com/kk-media/image/upload/v1752862884/notes-assets/images/AWS-EKS-Cluster-Access/eks-cluster-access-api-flow-diagram.jpg)
 
 ## Benefits of Native IAM Integration
 
@@ -92,7 +92,7 @@ AWS now offers native Cluster Access APIs, which deprecate the in-cluster `aws-a
 * Eliminates risk of lockouts caused by invalid ConfigMap edits.
 * Enables safer automation and declarative access controls.
 
-![The image is a diagram illustrating the advantages of native IAM integration with an EKS cluster, showing components like API Server, RBAC, AWS IAM, and user mappings. It highlights the flow of authentication and authorization processes within the system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862885/notes-assets/images/AWS-EKS-Cluster-Access/native-iam-integration-eks-diagram.jpg)
+![The image is a diagram illustrating the advantages of native IAM integration with an EKS cluster, showing components like API Server, RBAC, AWS IAM, and user mappings. It highlights the flow of authentication and authorization processes within the system.](https://kodekloud.com/kk-media/image/upload/v1752862885/notes-assets/images/AWS-EKS-Cluster-Access/native-iam-integration-eks-diagram.jpg)
 
 ## Summary
 
@@ -101,7 +101,7 @@ AWS now offers native Cluster Access APIs, which deprecate the in-cluster `aws-a
 * The `aws-auth` ConfigMap is legacy; new clusters should use the Cluster Access APIs.
 * Upgrade your tooling (Terraform, AWS SDKs, [eksctl](https://eksctl.io/)) to manage access declaratively.
 
-![The image is a conclusion slide summarizing four key points about managing cluster access, AWS API access, authentication linking IAM with Kubernetes roles, and new cluster access APIs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862887/notes-assets/images/AWS-EKS-Cluster-Access/cluster-access-management-summary-slide.jpg)
+![The image is a conclusion slide summarizing four key points about managing cluster access, AWS API access, authentication linking IAM with Kubernetes roles, and new cluster access APIs.](https://kodekloud.com/kk-media/image/upload/v1752862887/notes-assets/images/AWS-EKS-Cluster-Access/cluster-access-management-summary-slide.jpg)
 
 ***
 

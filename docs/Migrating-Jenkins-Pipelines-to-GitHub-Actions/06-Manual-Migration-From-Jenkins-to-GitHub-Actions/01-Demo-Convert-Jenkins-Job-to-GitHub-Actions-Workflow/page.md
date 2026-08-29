@@ -119,9 +119,7 @@ At the end of this course you’ll be able to confidently migrate Jenkins pipeli
 
 If you're ready to get started, [enroll now](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions) and join the learning community at KodeKloud.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4b72039d-b086-4331-9b30-0ce7dbd431be/lesson/86ac6605-2eb6-462e-9363-dc708af6be75" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4b72039d-b086-4331-9b30-0ce7dbd431be/lesson/86ac6605-2eb6-462e-9363-dc708af6be75)
 
 
 # Demo Convert Jenkins Job to GitHub Actions Workflow

@@ -72,9 +72,7 @@ Baggage travels in HTTP headers and is visible to every intermediate and downstr
 * Sensitive data can be exposed if baggage leaves trusted networks.
 * Avoid putting PII, credentials, tokens, or sensitive secrets into baggage.
 
-<Callout icon="warning">
-  Baggage is not a secure transport. Avoid putting sensitive or identifying data in baggage, and exercise caution when propagating baggage beyond trusted boundaries.
-</Callout>
+> **warning** Baggage is not a secure transport. Avoid putting sensitive or identifying data in baggage, and exercise caution when propagating baggage beyond trusted boundaries.
 
 <Frame>
   <img alt="The image lists security considerations regarding baggage, highlighting issues like visibility via headers, lack of integrity checks, risk of sensitive data exposure, and the need for caution beyond trusted boundaries." />
@@ -87,9 +85,7 @@ Baggage travels in HTTP headers and is visible to every intermediate and downstr
 * Never include PII, credentials, or tokens in baggage.
 * Monitor performance and header sizes when enabling baggage propagation.
 
-<Callout icon="lightbulb">
-  Define a small, consistent set of baggage keys and document their intended use. This keeps cross-team usage predictable and reduces the risk of accidental sensitive data propagation.
-</Callout>
+> **lightbulb** Define a small, consistent set of baggage keys and document their intended use. This keeps cross-team usage predictable and reduces the risk of accidental sensitive data propagation.
 
 <Frame>
   <img alt="The image lists three best practices: keeping baggage small, standardizing keys for consistency, and avoiding sensitive data, accompanied by relevant icons. There's also a thumbs-up badge illustration." />
@@ -113,9 +109,7 @@ Further lessons will dive deeper into context and propagation mechanisms, includ
 * OpenTelemetry Propagation: [https://opentelemetry.io/docs/reference/specification/context/api/](https://opentelemetry.io/docs/reference/specification/context/api/)
 * OpenTelemetry Python docs: [https://opentelemetry.io/docs/instrumentation/python/](https://opentelemetry.io/docs/instrumentation/python/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/3da5cbd9-6112-4395-b0e2-8714c057511d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/3da5cbd9-6112-4395-b0e2-8714c057511d)
 
 
 # OpenTelemetry Spans
@@ -249,9 +243,7 @@ Key fields to note:
 
 A span marked with `status.status_code: "OK"` indicates success. When an exception occurs, it's common to record the exception as an event and set the span status to `ERROR`.
 
-<Callout icon="lightbulb">
-  Choose span granularity deliberately — capture operations you need for latency and error visibility. Avoid over-instrumentation (which creates noise and overhead) and under-instrumentation (which loses useful diagnostic detail).
-</Callout>
+> **lightbulb** Choose span granularity deliberately — capture operations you need for latency and error visibility. Avoid over-instrumentation (which creates noise and overhead) and under-instrumentation (which loses useful diagnostic detail).
 
 ## Summary
 
@@ -265,6 +257,4 @@ A span marked with `status.status_code: "OK"` indicates success. When an excepti
 * OpenTelemetry Specification: [https://opentelemetry.io/docs/](https://opentelemetry.io/docs/)
 * OpenTelemetry Trace Semantic Conventions: [https://opentelemetry.io/docs/reference/specification/trace/semantic\_conventions/](https://opentelemetry.io/docs/reference/specification/trace/semantic_conventions/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/24ed6d32-cf1a-4c47-936f-697e3ebb7617" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/24ed6d32-cf1a-4c47-936f-697e3ebb7617)

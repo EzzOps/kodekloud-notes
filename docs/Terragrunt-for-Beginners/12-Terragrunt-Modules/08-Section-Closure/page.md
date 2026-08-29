@@ -8,9 +8,7 @@ Mickey's journey with Terragrunt enhances his understanding of infrastructure as
 
 Mickey, energized by a strong cup of coffee and a clear plan, embarks on his Terragrunt journey. With each well-structured block of configuration, he cements his understanding of infrastructure as code and moves steadily toward his goals. As his favorite lo-fi beats play in the background, every line of Terragrunt code boosts his confidence and brings him closer to provisioning production-grade environments.
 
-<Callout icon="lightbulb">
-  Continue your learning by exploring [Terragrunt’s official documentation](https://terragrunt.gruntwork.io/docs/). Practice creating reusable modules and managing multiple environments to fully leverage Terragrunt’s power.
-</Callout>
+> **lightbulb** Continue your learning by exploring [Terragrunt’s official documentation](https://terragrunt.gruntwork.io/docs/). Practice creating reusable modules and managing multiple environments to fully leverage Terragrunt’s power.
 
 ### Key Takeaways
 
@@ -26,6 +24,4 @@ Mickey, energized by a strong cup of coffee and a clear plan, embarks on his Ter
 * [Terraform Registry](https://registry.terraform.io/)
 * [Infrastructure as Code Best Practices](https://www.gruntwork.io/guides/infrastructure-as-code/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/a0228a08-f533-49e7-9787-7411c5b0f9a7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/a0228a08-f533-49e7-9787-7411c5b0f9a7)

@@ -28,7 +28,7 @@ Understanding these details will help you decide if AZ-400 aligns with your care
 
 > **triangle-alert** There’s no penalty for guessing—answer every question. Use official practice tests to gauge your readiness.
 
-![The image describes the Microsoft AZ-400 certification exam, highlighting that it includes 40-60 questions, multiple-choice and scenario-based questions, requires a score of 700 or higher, and has a duration of 120 minutes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868085/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-About-the-Exam-and-its-Role-in-the-Microsoft-Certification-Landscape/microsoft-az400-certification-exam-details.jpg)
+![The image describes the Microsoft AZ-400 certification exam, highlighting that it includes 40-60 questions, multiple-choice and scenario-based questions, requires a score of 700 or higher, and has a duration of 120 minutes.](https://kodekloud.com/kk-media/image/upload/v1752868085/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-About-the-Exam-and-its-Role-in-the-Microsoft-Certification-Landscape/microsoft-az400-certification-exam-details.jpg)
 
 ***
 
@@ -43,7 +43,7 @@ Then pass the AZ-400 exam to complete the DevOps Engineer Expert certification.
 
 > **lightbulb** You can pursue self-study or instructor-led courses. Refer to the [official learning path](https://docs.microsoft.com/learn/certifications/azure-devops-engineer/) for resources.
 
-![The image outlines the path to becoming a Microsoft Certified Azure DevOps Engineer Expert, requiring either an Azure Administrator or Azure Developer Associate certification plus passing the AZ-400 exam.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868087/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-About-the-Exam-and-its-Role-in-the-Microsoft-Certification-Landscape/azure-devops-engineer-certification-path.jpg)
+![The image outlines the path to becoming a Microsoft Certified Azure DevOps Engineer Expert, requiring either an Azure Administrator or Azure Developer Associate certification plus passing the AZ-400 exam.](https://kodekloud.com/kk-media/image/upload/v1752868087/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-About-the-Exam-and-its-Role-in-the-Microsoft-Certification-Landscape/azure-devops-engineer-certification-path.jpg)
 
 ***
 
@@ -57,7 +57,7 @@ This exam is ideal for:
 
 Whether you’re automating CI/CD or improving collaboration, AZ-400 demonstrates your ability to deliver end-to-end DevOps solutions.
 
-![The image lists three groups who should take an exam: Developers, Site Reliability Engineers, and Azure Administrators.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868088/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-About-the-Exam-and-its-Role-in-the-Microsoft-Certification-Landscape/exam-groups-developers-sre-azure-admins.jpg)
+![The image lists three groups who should take an exam: Developers, Site Reliability Engineers, and Azure Administrators.](https://kodekloud.com/kk-media/image/upload/v1752868088/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-About-the-Exam-and-its-Role-in-the-Microsoft-Certification-Landscape/exam-groups-developers-sre-azure-admins.jpg)
 
 ***
 
@@ -71,7 +71,7 @@ Whether you’re automating CI/CD or improving collaboration, AZ-400 demonstrate
 | 4. Security and compliance      | RBAC, auditing, policy enforcement, compliance in CI/CD                               |
 | 5. Instrumentation              | Telemetry, monitoring with Application Insights & Log Analytics, alerts, dashboards   |
 
-![The image outlines core areas with corresponding percentage ranges, focusing on configuring processes, source control, build pipelines, security plans, and instrumentation strategies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868089/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-About-the-Exam-and-its-Role-in-the-Microsoft-Certification-Landscape/core-areas-percentage-configuring-processes.jpg)
+![The image outlines core areas with corresponding percentage ranges, focusing on configuring processes, source control, build pipelines, security plans, and instrumentation strategies.](https://kodekloud.com/kk-media/image/upload/v1752868089/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-About-the-Exam-and-its-Role-in-the-Microsoft-Certification-Landscape/core-areas-percentage-configuring-processes.jpg)
 
 ***
 
@@ -88,7 +88,7 @@ Whether you’re automating CI/CD or improving collaboration, AZ-400 demonstrate
 * Enforce pull request policies and build validation
 * Configure repository security and permissions
 
-![The image outlines four aspects of designing and implementing source control: managing branching strategies, integrating repositories with Azure pipelines, conducting code reviews, and performing build validation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868090/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-About-the-Exam-and-its-Role-in-the-Microsoft-Certification-Landscape/source-control-design-implementation-overview.jpg)
+![The image outlines four aspects of designing and implementing source control: managing branching strategies, integrating repositories with Azure pipelines, conducting code reviews, and performing build validation.](https://kodekloud.com/kk-media/image/upload/v1752868090/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-About-the-Exam-and-its-Role-in-the-Microsoft-Certification-Landscape/source-control-design-implementation-overview.jpg)
 
 ***
 
@@ -100,7 +100,7 @@ Whether you’re automating CI/CD or improving collaboration, AZ-400 demonstrate
 * Manage packages with **Azure Artifacts**
 * Trigger pipelines via code push, schedules, or REST API
 
-![The image outlines key components of designing and implementing build and release pipelines, including automating builds, staging environments, deployments, continuous deliveries, and artifact management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868091/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-About-the-Exam-and-its-Role-in-the-Microsoft-Certification-Landscape/build-release-pipelines-design-implementation.jpg)
+![The image outlines key components of designing and implementing build and release pipelines, including automating builds, staging environments, deployments, continuous deliveries, and artifact management.](https://kodekloud.com/kk-media/image/upload/v1752868091/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-About-the-Exam-and-its-Role-in-the-Microsoft-Certification-Landscape/build-release-pipelines-design-implementation.jpg)
 
 ***
 

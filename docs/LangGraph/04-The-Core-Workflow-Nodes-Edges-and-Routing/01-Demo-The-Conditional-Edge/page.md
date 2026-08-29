@@ -15,12 +15,8 @@ This tutorial covers:
 * running two example invocations to observe routing,
 * and printing the Mermaid source for visualization.
 
-<Callout icon="lightbulb">
-  Before running the code, set your `OPENAI_API_KEY` and `TAVILY_API_KEY` environment variables. For local testing you can also set them in the script using `os.environ.setdefault(...)`.
-</Callout>
+> **lightbulb** Before running the code, set your `OPENAI_API_KEY` and `TAVILY_API_KEY` environment variables. For local testing you can also set them in the script using `os.environ.setdefault(...)`.
 
-<Callout icon="warning">
-  Never commit your API keys to version control. Use environment variables or a secrets manager in production.
-</Callout>
+> **warning** Never commit your API keys to version control. Use environment variables or a secrets manager in production.
 
 ```python theme={null}

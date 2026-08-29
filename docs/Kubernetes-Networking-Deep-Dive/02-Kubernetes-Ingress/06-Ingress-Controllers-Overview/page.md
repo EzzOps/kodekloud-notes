@@ -38,9 +38,7 @@ Now that you’ve explored ExternalDNS’s features, installation methods, and r
 * [AWS Route 53 Documentation](https://docs.aws.amazon.com/route53/)
 * [Cloudflare DNS Overview](https://developers.cloudflare.com/dns/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/19677663-2b7d-4c3d-92ee-06df9f5530eb/lesson/68679b92-4a55-420a-9301-4de19d296c91" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/19677663-2b7d-4c3d-92ee-06df9f5530eb/lesson/68679b92-4a55-420a-9301-4de19d296c91)
 
 
 # Ingress Controllers Overview
@@ -64,21 +62,15 @@ An **Ingress Controller** is a Pod (or set of Pods) running inside the cluster. 
 | Runtime       | No running process                  | Runs inside cluster                        |
 | Benefit       | No effect without a controller      | Routes external traffic to Services        |
 
-<Frame>
-  ![The image is a comparison table between "Ingress Resource" and "Ingress Controller," highlighting aspects such as dependency, functionality, access and benefit, and nature.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880307/notes-assets/images/Kubernetes-Networking-Deep-Dive-Ingress-Controllers-Overview/ingress-resource-controller-comparison-table.jpg)
-</Frame>
+![The image is a comparison table between "Ingress Resource" and "Ingress Controller," highlighting aspects such as dependency, functionality, access and benefit, and nature.](https://kodekloud.com/kk-media/image/upload/v1752880307/notes-assets/images/Kubernetes-Networking-Deep-Dive-Ingress-Controllers-Overview/ingress-resource-controller-comparison-table.jpg)
 
-<Callout icon="triangle-alert">
-  Defining an Ingress without an active controller means no external traffic will reach your Services.
-</Callout>
+> **triangle-alert** Defining an Ingress without an active controller means no external traffic will reach your Services.
 
 ## Kubernetes Architecture with Ingress
 
 Clients send HTTP(S) requests to the cluster’s external endpoint. The Ingress controller intercepts these requests, matches them against Ingress rules, and forwards them to the appropriate Service, which then load-balances to the backend Pods.
 
-<Frame>
-  ![The image is an architecture overview diagram showing a client interacting with a Kubernetes cluster through an ingress-managed load balancer, routing rules, and a service (SVC).](../../../../images/kodekloud.com/kk-media/image/upload/v1752880308/notes-assets/images/Kubernetes-Networking-Deep-Dive-Ingress-Controllers-Overview/kubernetes-architecture-client-ingress-diagram.jpg)
-</Frame>
+![The image is an architecture overview diagram showing a client interacting with a Kubernetes cluster through an ingress-managed load balancer, routing rules, and a service (SVC).](https://kodekloud.com/kk-media/image/upload/v1752880308/notes-assets/images/Kubernetes-Networking-Deep-Dive-Ingress-Controllers-Overview/kubernetes-architecture-client-ingress-diagram.jpg)
 
 ## Cloud-based Ingress Controllers
 
@@ -97,13 +89,9 @@ Key benefits:
 * Managed upgrades and high availability
 * Reduced operational overhead
 
-<Frame>
-  ![The image depicts a cloud-based architecture overview, showing a client connecting to an ingress controller, which routes through a load balancer to various services within a Kubernetes cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880309/notes-assets/images/Kubernetes-Networking-Deep-Dive-Ingress-Controllers-Overview/cloud-architecture-kubernetes-ingress-overview.jpg)
-</Frame>
+![The image depicts a cloud-based architecture overview, showing a client connecting to an ingress controller, which routes through a load balancer to various services within a Kubernetes cluster.](https://kodekloud.com/kk-media/image/upload/v1752880309/notes-assets/images/Kubernetes-Networking-Deep-Dive-Ingress-Controllers-Overview/cloud-architecture-kubernetes-ingress-overview.jpg)
 
-<Frame>
-  ![The image shows an overview of cloud-based architecture featuring logos of Amazon Web Services (AWS), Google Cloud, and Microsoft Azure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880310/notes-assets/images/Kubernetes-Networking-Deep-Dive-Ingress-Controllers-Overview/cloud-architecture-aws-google-azure.jpg)
-</Frame>
+![The image shows an overview of cloud-based architecture featuring logos of Amazon Web Services (AWS), Google Cloud, and Microsoft Azure.](https://kodekloud.com/kk-media/image/upload/v1752880310/notes-assets/images/Kubernetes-Networking-Deep-Dive-Ingress-Controllers-Overview/cloud-architecture-aws-google-azure.jpg)
 
 ## Non-cloud-based Ingress Controllers
 
@@ -119,19 +107,15 @@ Self-managed controllers run anywhere you choose—on-premises, private clouds, 
 
 Choosing **Deployment** or **DaemonSet** affects how Ingress Pods are scheduled, how traffic is distributed, and resource consumption.
 
-<Frame>
-  ![The image illustrates the deployment of ingress controllers, comparing "Deployments" and "DaemonSets" with their respective benefits. Deployments are easily scaled and resource-efficient but may have uneven load, while DaemonSets offer distributed load and high availability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880311/notes-assets/images/Kubernetes-Networking-Deep-Dive-Ingress-Controllers-Overview/ingress-controllers-deployments-daemonsets-comparison.jpg)
-</Frame>
+![The image illustrates the deployment of ingress controllers, comparing "Deployments" and "DaemonSets" with their respective benefits. Deployments are easily scaled and resource-efficient but may have uneven load, while DaemonSets offer distributed load and high availability.](https://kodekloud.com/kk-media/image/upload/v1752880311/notes-assets/images/Kubernetes-Networking-Deep-Dive-Ingress-Controllers-Overview/ingress-controllers-deployments-daemonsets-comparison.jpg)
 
 | Option     | Pros                                                              | Cons                                 |
 | ---------- | ----------------------------------------------------------------- | ------------------------------------ |
 | Deployment | Dynamic scaling, resource-efficient                               | Uneven load distribution on nodes    |
 | DaemonSet  | One Pod per node, uniform traffic distribution, high availability | Higher resource usage per node count |
 
-<Callout icon="lightbulb">
-  * Use **Deployment** when traffic patterns fluctuate and you want to optimize resource usage.
+> **lightbulb** * Use **Deployment** when traffic patterns fluctuate and you want to optimize resource usage.
   * Use **DaemonSet** for uniform low-latency ingress on every node and built-in failover.
-</Callout>
 
 ## Factors to Consider
 
@@ -147,9 +131,7 @@ Before selecting an Ingress controller or deployment model, evaluate:
 * Cost: managed service fees vs self-managed resource costs
 * High availability, failover strategies, and load balancing algorithms
 
-<Frame>
-  ![The image outlines factors to consider when deciding on an ingress controller, including performance, ease of use, features, support, cloud integration, and reliability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880313/notes-assets/images/Kubernetes-Networking-Deep-Dive-Ingress-Controllers-Overview/ingress-controller-factors-performance-reliability.jpg)
-</Frame>
+![The image outlines factors to consider when deciding on an ingress controller, including performance, ease of use, features, support, cloud integration, and reliability.](https://kodekloud.com/kk-media/image/upload/v1752880313/notes-assets/images/Kubernetes-Networking-Deep-Dive-Ingress-Controllers-Overview/ingress-controller-factors-performance-reliability.jpg)
 
 ***
 
@@ -160,6 +142,4 @@ Before selecting an Ingress controller or deployment model, evaluate:
 * [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/)
 * [Traefik Official Docs](https://doc.traefik.io/traefik/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/19677663-2b7d-4c3d-92ee-06df9f5530eb/lesson/3017c41a-a251-472c-952d-487d10bcf878" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/19677663-2b7d-4c3d-92ee-06df9f5530eb/lesson/3017c41a-a251-472c-952d-487d10bcf878)

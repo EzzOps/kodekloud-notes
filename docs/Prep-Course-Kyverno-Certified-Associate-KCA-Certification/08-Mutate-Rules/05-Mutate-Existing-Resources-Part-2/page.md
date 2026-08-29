@@ -42,9 +42,7 @@ spec:
           # target definitions go here
 ```
 
-<Callout icon="lightbulb">
-  Setting `mutateExistingOnPolicyUpdate: true` forces the background controller to immediately list and mutate matching targets when the policy is created or updated. This is useful when you need policy changes to take effect across existing resources right away.
-</Callout>
+> **lightbulb** Setting `mutateExistingOnPolicyUpdate: true` forces the background controller to immediately list and mutate matching targets when the policy is created or updated. This is useful when you need policy changes to take effect across existing resources right away.
 
 Kyverno also runs a default background reconciliation loop (once per hour) that scans resources and reapplies mutate-existing rules to repair missed or reverted changes over time. You can customize that interval by changing the background scan interval environment variable on the background controller deployment — see the Kyverno documentation for details and recommended settings: [https://kyverno.io/](https://kyverno.io/).
 
@@ -157,9 +155,7 @@ mutate:
 
 Only the deployments that pass the `preconditions` check will proceed to the mutation step.
 
-<Callout icon="warning">
-  Be cautious when using broad selectors together with `mutateExistingOnPolicyUpdate: true`. A policy can affect many resources immediately—test in a safe environment before applying to production clusters.
-</Callout>
+> **warning** Be cautious when using broad selectors together with `mutateExistingOnPolicyUpdate: true`. A policy can affect many resources immediately—test in a safe environment before applying to production clusters.
 
 ## Quick reference table
 
@@ -189,8 +185,6 @@ Only the deployments that pass the `preconditions` check will proceed to the mut
 
 That's it for this article.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/e8eb8eaa-5ede-4ede-8f58-e9a575b67b56" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/e8eb8eaa-5ede-4ede-8f58-e9a575b67b56)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/cfb70d7b-d3f0-4584-85c5-3db33cd63a12" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/cfb70d7b-d3f0-4584-85c5-3db33cd63a12)

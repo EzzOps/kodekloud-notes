@@ -10,7 +10,7 @@ Without Sticky Sessions enabled, the Load Balancer distributes incoming requests
 
 > **lightbulb** Enabling Sticky Sessions ensures that if a user's initial request is handled by a particular instance (e.g., instance A), then every subsequent request from that user will be routed to instance A. This consistent routing is vital for applications where session data must persist across multiple requests.
 
-![The image illustrates the concept of sticky sessions, comparing request distribution without sticky sessions (requests go to different instances) and with sticky sessions (all requests go to the same instance).](../../../../images/kodekloud.com/kk-media/image/upload/v1752859091/notes-assets/images/AWS-Certified-Developer-Associate-Sticky-sessions/sticky-sessions-request-distribution.jpg)
+![The image illustrates the concept of sticky sessions, comparing request distribution without sticky sessions (requests go to different instances) and with sticky sessions (all requests go to the same instance).](https://kodekloud.com/kk-media/image/upload/v1752859091/notes-assets/images/AWS-Certified-Developer-Associate-Sticky-sessions/sticky-sessions-request-distribution.jpg)
 
 This behavior is applied on a per-user basis. For instance, if one user’s traffic is continuously routed to instance A, traffic from another user might be consistently sent to instance B. Each user’s session remains isolated and consistently served by the designated instance.
 

@@ -12,13 +12,13 @@ In this guide, we demonstrate how to use the AWS SAM CLI to create, deploy, and 
 
 Before you begin, review the AWS Serverless Application Model Developer Guide's Getting Started section for installation instructions specific to your operating system. For instance, when following the Linux instructions, you will find a downloadable installer.
 
-![The image shows a webpage from the AWS documentation, specifically the AWS Serverless Application Model Developer Guide, detailing the installation process for the AWS SAM CLI. It includes prerequisites and steps for first-time installation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859427/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics-Demo/aws-sam-cli-installation-guide.jpg)
+![The image shows a webpage from the AWS documentation, specifically the AWS Serverless Application Model Developer Guide, detailing the installation process for the AWS SAM CLI. It includes prerequisites and steps for first-time installation.](https://kodekloud.com/kk-media/image/upload/v1752859427/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics-Demo/aws-sam-cli-installation-guide.jpg)
 
 Likewise, Linux and macOS users have dedicated installers or package options, while Windows users can download and run the appropriate installer.
 
-![The image shows a webpage from the AWS documentation site, specifically the section on installing the AWS SAM CLI, with instructions for different operating systems.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859429/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics-Demo/aws-sam-cli-installation-guide-2.jpg)
+![The image shows a webpage from the AWS documentation site, specifically the section on installing the AWS SAM CLI, with instructions for different operating systems.](https://kodekloud.com/kk-media/image/upload/v1752859429/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics-Demo/aws-sam-cli-installation-guide-2.jpg)
 
-![The image shows a webpage from the AWS Serverless Application Model Developer Guide, specifically detailing instructions for installing the AWS SAM CLI on macOS. It includes information about package installer options for different Mac hardware.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859430/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics-Demo/aws-sam-cli-install-macos-guide.jpg)
+![The image shows a webpage from the AWS Serverless Application Model Developer Guide, specifically detailing instructions for installing the AWS SAM CLI on macOS. It includes information about package installer options for different Mac hardware.](https://kodekloud.com/kk-media/image/upload/v1752859430/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics-Demo/aws-sam-cli-install-macos-guide.jpg)
 
 After installation, verify it by running:
 
@@ -176,27 +176,27 @@ After deployment, verify that the resources have been created in AWS.
 
 An S3 bucket is created to store your deployment artifacts. For example:
 
-![The image shows an Amazon S3 bucket interface with a list of objects, including their names, types, last modified dates, sizes, and storage classes. The interface includes options for managing the objects, such as copying URLs, downloading, and uploading files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859431/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics-Demo/amazon-s3-bucket-interface.jpg)
+![The image shows an Amazon S3 bucket interface with a list of objects, including their names, types, last modified dates, sizes, and storage classes. The interface includes options for managing the objects, such as copying URLs, downloading, and uploading files.](https://kodekloud.com/kk-media/image/upload/v1752859431/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics-Demo/amazon-s3-bucket-interface.jpg)
 
 ### In CloudFormation
 
 The CloudFormation console displays the `sam-app` stack with resources like the Lambda function and its associated IAM role.
 
-![The image shows an AWS CloudFormation console with a list of stacks, their statuses, creation times, and descriptions. Some stacks are marked as "CREATE\_COMPLETE" while one is "CREATE\_FAILED."](../../../../images/kodekloud.com/kk-media/image/upload/v1752859433/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics-Demo/aws-cloudformation-stacks-statuses.jpg)
+![The image shows an AWS CloudFormation console with a list of stacks, their statuses, creation times, and descriptions. Some stacks are marked as "CREATE\_COMPLETE" while one is "CREATE\_FAILED."](https://kodekloud.com/kk-media/image/upload/v1752859433/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics-Demo/aws-cloudformation-stacks-statuses.jpg)
 
-![The image shows an AWS CloudFormation console with details of a stack named "sam-app," displaying events and statuses such as "CREATE\_COMPLETE" and "CREATE\_IN\_PROGRESS."](../../../../images/kodekloud.com/kk-media/image/upload/v1752859434/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics-Demo/aws-cloudformation-sam-app-stack.jpg)
+![The image shows an AWS CloudFormation console with details of a stack named "sam-app," displaying events and statuses such as "CREATE\_COMPLETE" and "CREATE\_IN\_PROGRESS."](https://kodekloud.com/kk-media/image/upload/v1752859434/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics-Demo/aws-cloudformation-sam-app-stack.jpg)
 
-![The image shows an AWS CloudFormation console with a stack named "sam-app" that has two resources: a Lambda function and an IAM role, both with a status of "CREATE\_COMPLETE."](../../../../images/kodekloud.com/kk-media/image/upload/v1752859435/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics-Demo/aws-cloudformation-sam-app-stack-2.jpg)
+![The image shows an AWS CloudFormation console with a stack named "sam-app" that has two resources: a Lambda function and an IAM role, both with a status of "CREATE\_COMPLETE."](https://kodekloud.com/kk-media/image/upload/v1752859435/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics-Demo/aws-cloudformation-sam-app-stack-2.jpg)
 
 ### In Lambda
 
 Visit the Lambda console to verify the deployed function. Check the function's code, memory settings (128 MB), timeout (5 seconds), and the attached IAM role.
 
-![The image shows the AWS Lambda console with a list of functions, including their names, package types, runtimes, and last modified times. There is also a tutorial section on the right for creating a simple web app.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859436/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics-Demo/aws-lambda-console-functions-tutorial.jpg)
+![The image shows the AWS Lambda console with a list of functions, including their names, package types, runtimes, and last modified times. There is also a tutorial section on the right for creating a simple web app.](https://kodekloud.com/kk-media/image/upload/v1752859436/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics-Demo/aws-lambda-console-functions-tutorial.jpg)
 
 Selecting the function will display its configuration details:
 
-![The image shows an AWS Lambda console interface displaying the configuration details of a Lambda function named "sam-app-HelloWorld." It includes sections for general configuration, triggers, permissions, and other settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859437/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics-Demo/aws-lambda-console-sam-app-settings.jpg)
+![The image shows an AWS Lambda console interface displaying the configuration details of a Lambda function named "sam-app-HelloWorld." It includes sections for general configuration, triggers, permissions, and other settings.](https://kodekloud.com/kk-media/image/upload/v1752859437/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Basics-Demo/aws-lambda-console-sam-app-settings.jpg)
 
 ***
 

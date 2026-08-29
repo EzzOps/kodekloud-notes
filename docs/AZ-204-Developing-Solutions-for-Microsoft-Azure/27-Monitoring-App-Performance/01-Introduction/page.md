@@ -16,6 +16,6 @@ In this lesson, you will learn:
 
 Let's begin by exploring the core functionalities of Application Insights.
 
-![The image is an introduction slide with three points about application monitoring: understanding instrumentation, leveraging Application Insights, and collecting logs, metrics, and telemetry.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866722/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Introduction/application-monitoring-introduction-slide.jpg)
+![The image is an introduction slide with three points about application monitoring: understanding instrumentation, leveraging Application Insights, and collecting logs, metrics, and telemetry.](https://kodekloud.com/kk-media/image/upload/v1752866722/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Introduction/application-monitoring-introduction-slide.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/az-204-developing-solutions-for-microsoft-azure/module/25287e89-7860-401f-a2c1-af5a7a2e07c6/lesson/75a0e19b-6d09-4730-9bb0-723aed57d990)

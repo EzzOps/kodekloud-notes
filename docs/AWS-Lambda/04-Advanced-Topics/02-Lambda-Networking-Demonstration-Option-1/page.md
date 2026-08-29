@@ -8,7 +8,7 @@ COPY app.py ${LAMBDA_TASK_ROOT}
 CMD ["app.handler"]
 ```
 
-![The image illustrates the concept of Lambda Containers, showing components like base image, code, runtime interface emulator, and container app, alongside an AWS Lambda icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863085/notes-assets/images/AWS-Lambda-Lambda-Containers/lambda-containers-architecture-diagram.jpg)
+![The image illustrates the concept of Lambda Containers, showing components like base image, code, runtime interface emulator, and container app, alongside an AWS Lambda icon.](https://kodekloud.com/kk-media/image/upload/v1752863085/notes-assets/images/AWS-Lambda-Lambda-Containers/lambda-containers-architecture-diagram.jpg)
 
 After building and pushing your image to Amazon ECR, simply create or update a Lambda function to point to that image:
 
@@ -66,7 +66,7 @@ Configuring AWS Lambda networking in your own private VPC allows your function t
 
 > **triangle-alert** Attaching a Lambda function to a VPC can increase cold start times because ENIs must be initialized. Review [AWS Lambda cold start considerations](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-context.html) for mitigation strategies.
 
-![The image shows an AWS Lambda configuration screen where a user is selecting VPC, subnets, and security groups for a function. The security group section shows no inbound or outbound rules displayed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863086/notes-assets/images/AWS-Lambda-Lambda-Networking-Demonstration-Option-1/aws-lambda-vpc-subnets-security-groups.jpg)
+![The image shows an AWS Lambda configuration screen where a user is selecting VPC, subnets, and security groups for a function. The security group section shows no inbound or outbound rules displayed.](https://kodekloud.com/kk-media/image/upload/v1752863086/notes-assets/images/AWS-Lambda-Lambda-Networking-Demonstration-Option-1/aws-lambda-vpc-subnets-security-groups.jpg)
 
 Once these steps are complete, your Lambda function will operate within your private VPC, able to access internal resources while being protected by your defined security groups.
 

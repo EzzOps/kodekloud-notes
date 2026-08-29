@@ -115,9 +115,7 @@ Mounts:
 
 ***
 
-<Callout icon="warning">
-  Kubernetes Deployments cannot be renamed. To change the name of a gateway deployment managed by the operator you must disable the old gateway and enable a new one with the desired name. The operator will delete and recreate the deployment.
-</Callout>
+> **warning** Kubernetes Deployments cannot be renamed. To change the name of a gateway deployment managed by the operator you must disable the old gateway and enable a new one with the desired name. The operator will delete and recreate the deployment.
 
 ***
 

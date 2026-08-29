@@ -55,9 +55,7 @@ To confirm compression is active:
 2. Select a resource and inspect Response Headers for `Content-Encoding`.
 3. Confirm the resource is smaller than the uncompressed version (DevTools shows transfer size vs resource size).
 
-<Callout icon="lightbulb">
-  Avoid compressing already-compressed formats (MP4, MP3, ZIP, most JPEGs). Compress text-based assets (HTML, CSS, JS, JSON, XML) to get the best savings with minimal CPU overhead.
-</Callout>
+> **lightbulb** Avoid compressing already-compressed formats (MP4, MP3, ZIP, most JPEGs). Compress text-based assets (HTML, CSS, JS, JSON, XML) to get the best savings with minimal CPU overhead.
 
 ## Summary and recommendations
 
@@ -68,9 +66,7 @@ To confirm compression is active:
 
 If you want to try this hands-on, enable gzip in your NGINX configuration, reload NGINX, and use browser DevTools to verify `Content-Encoding` behavior for HTML, CSS, and JS resources.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/f9e0c6ca-f04d-4d94-8b23-b342c8161065" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/f9e0c6ca-f04d-4d94-8b23-b342c8161065)
 
 
 # Connection Handling
@@ -118,9 +114,7 @@ events {
 }
 ```
 
-<Callout icon="lightbulb">
-  The practical maximum concurrent connections also depends on OS file descriptor limits and other module usage. If you increase `worker_connections`, raise the process file descriptor limit (`ulimit -n`) and consider setting `worker_rlimit_nofile`. Reserve some descriptors for the master process and listening sockets.
-</Callout>
+> **lightbulb** The practical maximum concurrent connections also depends on OS file descriptor limits and other module usage. If you increase `worker_connections`, raise the process file descriptor limit (`ulimit -n`) and consider setting `worker_rlimit_nofile`. Reserve some descriptors for the master process and listening sockets.
 
 Key directives (quick reference)
 
@@ -250,9 +244,7 @@ Choosing between them is a trade-off:
 * Prefer `tcp_nodelay` for low-latency, interactive responses.
 * You may combine both in NGINX; test combinations as results vary by OS and workload.
 
-<Callout icon="warning">
-  Changing connection and file-descriptor limits can destabilize a server if not tested. Always validate changes in staging, monitor `ulimit -n`, `netstat` / `ss` for socket states, and keep some descriptor/connection headroom for master/listening sockets and upstream connections.
-</Callout>
+> **warning** Changing connection and file-descriptor limits can destabilize a server if not tested. Always validate changes in staging, monitor `ulimit -n`, `netstat` / `ss` for socket states, and keep some descriptor/connection headroom for master/listening sockets and upstream connections.
 
 ## Conclusion and next steps
 
@@ -278,6 +270,4 @@ Links and references
 * HTTP/3 and QUIC background: [https://datatracker.ietf.org/wg/quic/about/](https://datatracker.ietf.org/wg/quic/about/)
 * Linux TCP tuning basics: [https://www.kernel.org/doc/html/latest/networking/index.html](https://www.kernel.org/doc/html/latest/networking/index.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/7ad3d436-d724-42e8-b440-80791ec5f9b5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/7ad3d436-d724-42e8-b440-80791ec5f9b5)

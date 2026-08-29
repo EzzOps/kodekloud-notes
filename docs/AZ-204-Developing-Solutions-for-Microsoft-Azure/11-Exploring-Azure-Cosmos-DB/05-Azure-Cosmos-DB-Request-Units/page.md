@@ -10,7 +10,7 @@ For instance, a simple read of a 1 KB document typically consumes 1 RU. This bas
 
 When inserting new JSON documents, the cost in RUs depends on both the document size and the indexing requirements. Since the operation involves creating a new entry and updating indexes, it generally consumes more RUs than a basic read.
 
-![The image explains request units (RU) in a database context, showing how different operations like read, insert, update, delete, and query consume RUs. Each request consumes a fixed number of RUs, with a read of a 1KB item equaling 1 RU.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866431/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Cosmos-DB-Request-Units/request-units-database-operations.jpg)
+![The image explains request units (RU) in a database context, showing how different operations like read, insert, update, delete, and query consume RUs. Each request consumes a fixed number of RUs, with a read of a 1KB item equaling 1 RU.](https://kodekloud.com/kk-media/image/upload/v1752866431/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Cosmos-DB-Request-Units/request-units-database-operations.jpg)
 
 Similarly, updating an existing document involves modifying the data and potentially re-indexing, which increases RU usage. Deleting a document removes both the data and its associated indexes, with the RU cost being proportional to the document’s size.
 

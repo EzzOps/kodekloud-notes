@@ -73,7 +73,7 @@ Error: Code invalid access key ID. The AWS access key ID you provided does not e
 
 > **triangle-alert** This error indicates that the access key ID is invalid. Before using IAM roles, our application used explicit access keys. For demonstration purposes, we then generated valid credentials by creating an IAM user.
 
-![The image shows an AWS EC2 management console with details of two instances, one running and one stopped. The selected instance, "sdk-demo," is running with a t2.micro type and has passed status checks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865804/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/aws-ec2-management-console-instances.jpg)
+![The image shows an AWS EC2 management console with details of two instances, one running and one stopped. The selected instance, "sdk-demo," is running with a t2.micro type and has passed status checks.](https://kodekloud.com/kk-media/image/upload/v1752865804/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/aws-ec2-management-console-instances.jpg)
 
 ## Creating an IAM User and Generating Credentials
 
@@ -83,11 +83,11 @@ To generate valid credentials, follow these steps:
 2. Attach policies directly by searching for and selecting **Amazon S3 Full Access**.
 3. In the Security Credentials tab for the new user, create an access key. For this lesson, choose the Command Line Interface (CLI) option, then click "Next" and "Create Access Key."
 
-![The image shows an AWS Identity and Access Management (IAM) console screen, displaying user details and permissions. It highlights a user with the "AmazonS3FullAccess" policy attached directly.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865805/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/aws-iam-console-user-permissions.jpg)
+![The image shows an AWS Identity and Access Management (IAM) console screen, displaying user details and permissions. It highlights a user with the "AmazonS3FullAccess" policy attached directly.](https://kodekloud.com/kk-media/image/upload/v1752865805/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/aws-iam-console-user-permissions.jpg)
 
-![The image shows an AWS IAM console screen for creating an access key, with options for different use cases like CLI, local code, and third-party services. It includes steps for accessing key best practices and alternatives.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865807/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/aws-iam-access-key-creation.jpg)
+![The image shows an AWS IAM console screen for creating an access key, with options for different use cases like CLI, local code, and third-party services. It includes steps for accessing key best practices and alternatives.](https://kodekloud.com/kk-media/image/upload/v1752865807/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/aws-iam-access-key-creation.jpg)
 
-![The image shows an AWS IAM console screen displaying access key details and best practices for managing access keys. A green banner at the top indicates that an access key has been created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865808/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/aws-iam-access-key-details.jpg)
+![The image shows an AWS IAM console screen displaying access key details and best practices for managing access keys. A green banner at the top indicates that an access key has been created.](https://kodekloud.com/kk-media/image/upload/v1752865808/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/aws-iam-access-key-details.jpg)
 
 After copying the correct Access Key and Secret Access Key into your code, update the snippet as follows:
 
@@ -152,7 +152,7 @@ This produces an output similar to:
 
 After verifying through the AWS S3 console, you should see the new bucket listed:
 
-![The image shows an Amazon S3 console with a list of buckets, their regions, access settings, and creation dates. A notification at the top indicates a bucket was successfully deleted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865809/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/amazon-s3-console-buckets-list.jpg)
+![The image shows an Amazon S3 console with a list of buckets, their regions, access settings, and creation dates. A notification at the top indicates a bucket was successfully deleted.](https://kodekloud.com/kk-media/image/upload/v1752865809/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/amazon-s3-console-buckets-list.jpg)
 
 ## Transitioning to IAM Roles
 
@@ -164,9 +164,9 @@ To resolve this, create an IAM role for the EC2 instance by following these step
 2. Choose **AWS service** as the trusted entity type, since the role will be used by an EC2 instance.
 3. For the use case, select **EC2** so the instance can perform actions on your behalf—specifically, interacting with S3.
 
-![The image shows an AWS IAM console screen for creating a role, where the user is selecting a trusted entity type, such as AWS service, AWS account, or web identity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865810/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/aws-iam-console-create-role.jpg)
+![The image shows an AWS IAM console screen for creating a role, where the user is selecting a trusted entity type, such as AWS service, AWS account, or web identity.](https://kodekloud.com/kk-media/image/upload/v1752865810/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/aws-iam-console-create-role.jpg)
 
-![The image shows an AWS IAM console screen where a user is selecting a use case for creating a role, specifically for EC2 services. Various options for EC2 roles are listed, and the "Next" button is highlighted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865812/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/aws-iam-ec2-role-selection.jpg)
+![The image shows an AWS IAM console screen where a user is selecting a use case for creating a role, specifically for EC2 services. Various options for EC2 roles are listed, and the "Next" button is highlighted.](https://kodekloud.com/kk-media/image/upload/v1752865812/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/aws-iam-ec2-role-selection.jpg)
 
 4. Attach the **Amazon S3 Full Access** policy to the role.
 5. Name the role (e.g., "AWS SDK S3") and use the following trust policy:
@@ -192,13 +192,13 @@ To resolve this, create an IAM role for the EC2 instance by following these step
 
 After creating the role, update your EC2 instance to use it. In the AWS EC2 management console:
 
-![The image shows the AWS Identity and Access Management (IAM) console, specifically the "Roles" section, listing various IAM roles with their trusted entities and last activity details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865813/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/aws-iam-console-roles-list.jpg)
+![The image shows the AWS Identity and Access Management (IAM) console, specifically the "Roles" section, listing various IAM roles with their trusted entities and last activity details.](https://kodekloud.com/kk-media/image/upload/v1752865813/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/aws-iam-console-roles-list.jpg)
 
 Locate your instance (SDK demo), select **Security**, then **Modify IAM Role**, and choose the newly created role “AWS SDK S3.”
 
-![The image shows an AWS EC2 management console with details of an instance named "sdk-demo" that is currently running. It displays instance information such as instance ID, public and private IP addresses, and instance type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865814/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/aws-ec2-management-console-sdk-demo.jpg)
+![The image shows an AWS EC2 management console with details of an instance named "sdk-demo" that is currently running. It displays instance information such as instance ID, public and private IP addresses, and instance type.](https://kodekloud.com/kk-media/image/upload/v1752865814/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/aws-ec2-management-console-sdk-demo.jpg)
 
-![The image shows an AWS console screen for modifying an IAM role attached to an EC2 instance. The selected IAM role is "aws-sdk-s3," and there are options to update or cancel the role change.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865815/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/aws-console-iam-role-ec2.jpg)
+![The image shows an AWS console screen for modifying an IAM role attached to an EC2 instance. The selected IAM role is "aws-sdk-s3," and there are options to update or cancel the role change.](https://kodekloud.com/kk-media/image/upload/v1752865815/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/aws-console-iam-role-ec2.jpg)
 
 Now that the role is attached and your code no longer contains hard-coded credentials, run the application again:
 
@@ -208,7 +208,7 @@ Now that the role is attached and your code no longer contains hard-coded creden
 
 The bucket is now created successfully. Verify its creation in the S3 console:
 
-![The image shows an Amazon S3 console with a list of buckets, their regions, access settings, and creation dates. A notification at the top indicates a bucket was successfully deleted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865816/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/amazon-s3-console-bucket-list.jpg)
+![The image shows an Amazon S3 console with a list of buckets, their regions, access settings, and creation dates. A notification at the top indicates a bucket was successfully deleted.](https://kodekloud.com/kk-media/image/upload/v1752865816/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM-Demo-Roles-for-EC2-instances/amazon-s3-console-bucket-list.jpg)
 
 ## Summary
 

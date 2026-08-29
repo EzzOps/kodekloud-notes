@@ -3,9 +3,7 @@
 
 ## 8. Delete Secrets
 
-<Callout icon="triangle-alert">
-  In KV v1, deleting a secret permanently removes it—no version history is kept.
-</Callout>
+> **triangle-alert** In KV v1, deleting a secret permanently removes it—no version history is kept.
 
 ```bash theme={null}
 vault kv delete training/apps/jenkins
@@ -65,9 +63,7 @@ For KV version 2 features like versioning and rollback, see the [HashiCorp Vault
 * [jq Manual](https://stedolan.github.io/jq/)
 * [HashiCorp Vault Documentation](https://www.vaultproject.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/5fc94cd5-5a16-48d8-88d5-0cbc856d29e0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/5fc94cd5-5a16-48d8-88d5-0cbc856d29e0)
 
 
 # Demo KeyValue KV Version 2 Secrets Engine
@@ -285,17 +281,13 @@ admin   P@ssw0rd!
 bk@Bryans-MBP ~ %
 ```
 
-<Callout icon="lightbulb">
-  Undelete accepts multiple versions via the `-versions` flag (for example: `-versions=2,3`), which lets you restore several deleted versions at once.
-</Callout>
+> **lightbulb** Undelete accepts multiple versions via the `-versions` flag (for example: `-versions=2,3`), which lets you restore several deleted versions at once.
 
 ## Destroy (irreversible) vs undelete
 
 `vault kv destroy` permanently removes specified versions from storage — this is irreversible without restoring from a Vault snapshot/backup.
 
-<Callout icon="warning">
-  Destroying KV v2 versions is permanent. You cannot recover destroyed versions with `vault kv undelete`. Only a Vault snapshot/backup can restore destroyed data.
-</Callout>
+> **warning** Destroying KV v2 versions is permanent. You cannot recover destroyed versions with `vault kv undelete`. Only a Vault snapshot/backup can restore destroyed data.
 
 Example: destroy version 1 and observe that it is removed:
 
@@ -483,9 +475,7 @@ path "kvv2/metadata/apps/artifactory" {
 
 Note: CLI helper commands (e.g., `vault kv put/get/list`) hide these prefixes for convenience, but policies and direct API calls must reference the internal prefixes.
 
-<Callout icon="lightbulb">
-  CLI helper commands — `vault kv put/get/list` — abstract away the internal `data/` and `metadata/` prefixes. When writing policies or calling the HTTP API directly, always include `data/` or `metadata/` as appropriate.
-</Callout>
+> **lightbulb** CLI helper commands — `vault kv put/get/list` — abstract away the internal `data/` and `metadata/` prefixes. When writing policies or calling the HTTP API directly, always include `data/` or `metadata/` as appropriate.
 
 ## Calling the KV v2 HTTP API (curl)
 
@@ -553,6 +543,4 @@ If you omit `data/` in the URL for KV v2 reads, you will not receive the expecte
 
 If you want details on CAS (compare-and-swap), conflict handling, or examples for tuning `max_versions` and `delete_version_after`, ask and I’ll provide targeted examples.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/4dcd2b44-6ae8-4562-bb13-e721dc7eaf14" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/4dcd2b44-6ae8-4562-bb13-e721dc7eaf14)

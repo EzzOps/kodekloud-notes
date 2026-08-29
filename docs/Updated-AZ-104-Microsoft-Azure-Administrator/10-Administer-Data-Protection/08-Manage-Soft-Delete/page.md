@@ -12,13 +12,9 @@ When your data is securely backed up in Azure, it remains protected even if you 
 
 During this 14-day grace period, if you choose to stop the backup while retaining existing data, no new backups are created. However, your current backup data remains intact and available for restoration. If you later determine that the deletion should be final, you can execute a purge operation to permanently remove the data. Conversely, if you need to recover mistakenly deleted data, you can resume the backup, effectively restoring the soft-deleted backup as part of your backup strategy.
 
-<Callout icon="lightbulb">
-  While the default retention period is 14 days, you have the option to extend this period for an additional fee. This policy applies across all backup items protected within the Recovery Services vault, ensuring comprehensive data protection for both virtual machine backups and other workloads.
-</Callout>
+> **lightbulb** While the default retention period is 14 days, you have the option to extend this period for an additional fee. This policy applies across all backup items protected within the Recovery Services vault, ensuring comprehensive data protection for both virtual machine backups and other workloads.
 
-<Frame>
-  ![The image is a flowchart illustrating the process of managing soft delete for backup items, including states like "Soft Deleted" and "Stop Backup with Retain Data," and actions such as undeleting within 14 days or permanently deleting data. It also includes notes on data retention and recovery features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884525/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Manage-Soft-Delete/soft-delete-backup-flowchart.jpg)
-</Frame>
+![The image is a flowchart illustrating the process of managing soft delete for backup items, including states like "Soft Deleted" and "Stop Backup with Retain Data," and actions such as undeleting within 14 days or permanently deleting data. It also includes notes on data retention and recovery features.](https://kodekloud.com/kk-media/image/upload/v1752884525/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Manage-Soft-Delete/soft-delete-backup-flowchart.jpg)
 
 ## Configuring Soft Delete in the Azure Portal
 
@@ -33,17 +29,11 @@ To configure the Soft Delete feature, follow these steps:
 3. **Adjust Settings as Needed:**\
    Customize the soft delete configuration to align with your organizational data protection and disaster recovery strategies.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface focused on a Recovery Services vault, displaying options for backup and site recovery, along with a list of new features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884526/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Manage-Soft-Delete/azure-portal-recovery-services-vault.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface focused on a Recovery Services vault, displaying options for backup and site recovery, along with a list of new features.](https://kodekloud.com/kk-media/image/upload/v1752884526/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Manage-Soft-Delete/azure-portal-recovery-services-vault.jpg)
 
-<Frame>
-  ![The image shows the Microsoft Azure portal with the "Security and soft delete settings" for a Recovery Services vault. It includes options for enabling soft delete for cloud and hybrid workloads, setting retention periods, and configuring other security settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884527/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Manage-Soft-Delete/azure-portal-security-settings-recovery-vault.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal with the "Security and soft delete settings" for a Recovery Services vault. It includes options for enabling soft delete for cloud and hybrid workloads, setting retention periods, and configuring other security settings.](https://kodekloud.com/kk-media/image/upload/v1752884527/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Manage-Soft-Delete/azure-portal-security-settings-recovery-vault.jpg)
 
-<Callout icon="lightbulb">
-  Integrating a robust backup management strategy with soft delete capabilities into your disaster recovery plan can greatly enhance your organization's resilience against data loss.
-</Callout>
+> **lightbulb** Integrating a robust backup management strategy with soft delete capabilities into your disaster recovery plan can greatly enhance your organization's resilience against data loss.
 
 ## Final Thoughts
 
@@ -51,6 +41,4 @@ By leveraging Azure Backup’s Soft Delete feature, you add an extra layer of pr
 
 For further information, visit the official [Azure Backup documentation](https://docs.microsoft.com/en-us/azure/backup/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/a25ecd10-20ce-4ff9-bcc1-386c2e018b09/lesson/ad5de685-6644-45e5-b059-e705bfcf8346" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/a25ecd10-20ce-4ff9-bcc1-386c2e018b09/lesson/ad5de685-6644-45e5-b059-e705bfcf8346)

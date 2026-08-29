@@ -130,7 +130,7 @@ Dir in parent shell: /usr/bin
 Dir in subshell: /some/other/dir
 ```
 
-![The image explains that a subshell is a child process spawned by a parent shell, inheriting environment variables but not propagating them back to the parent shell.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868563/notes-assets/images/Advanced-Bash-Scripting-Command-Substitution/subshell-child-process-inheritance.jpg)
+![The image explains that a subshell is a child process spawned by a parent shell, inheriting environment variables but not propagating them back to the parent shell.](https://kodekloud.com/kk-media/image/upload/v1752868563/notes-assets/images/Advanced-Bash-Scripting-Command-Substitution/subshell-child-process-inheritance.jpg)
 
 A subshell inherits your environment but keeps its changes local.
 
@@ -188,7 +188,7 @@ echo "$var"        # still "a"
 echo "$subshell"   # empty, because var="b" was in the subshell
 ```
 
-![The image explains that a subshell is a child process spawned by a parent shell, inheriting environment variables but not propagating them back to the parent shell.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868564/notes-assets/images/Advanced-Bash-Scripting-Subshells/subshell-child-process-explanation.jpg)
+![The image explains that a subshell is a child process spawned by a parent shell, inheriting environment variables but not propagating them back to the parent shell.](https://kodekloud.com/kk-media/image/upload/v1752868564/notes-assets/images/Advanced-Bash-Scripting-Subshells/subshell-child-process-explanation.jpg)
 
 ***
 
@@ -196,7 +196,7 @@ echo "$subshell"   # empty, because var="b" was in the subshell
 
 Wrap commands in parentheses to run them in a subshell:
 
-![The image illustrates subshell syntax, showing a command enclosed in parentheses, with a note about script execution context.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868565/notes-assets/images/Advanced-Bash-Scripting-Subshells/subshell-syntax-command-illustration.jpg)
+![The image illustrates subshell syntax, showing a command enclosed in parentheses, with a note about script execution context.](https://kodekloud.com/kk-media/image/upload/v1752868565/notes-assets/images/Advanced-Bash-Scripting-Subshells/subshell-syntax-command-illustration.jpg)
 
 ```bash theme={null}
 #!/usr/bin/env bash

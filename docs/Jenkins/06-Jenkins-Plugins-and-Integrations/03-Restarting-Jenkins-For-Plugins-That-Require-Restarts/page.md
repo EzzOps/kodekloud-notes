@@ -32,6 +32,4 @@ This restart process is particularly important when installing plugins that requ
 
 Let's continue with some hands-on practice to reinforce this process.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/34e95998-38e2-4735-a378-b466e6a5851c/lesson/f9d10d4b-c77f-4674-86a1-7a5bfe187857" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/34e95998-38e2-4735-a378-b466e6a5851c/lesson/f9d10d4b-c77f-4674-86a1-7a5bfe187857)

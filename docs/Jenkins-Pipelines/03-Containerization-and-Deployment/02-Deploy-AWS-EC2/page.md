@@ -84,17 +84,13 @@ docker build -t siddharth67/solar-system:$GIT_COMMIT - < Dockerfile
 
 After a successful build, the image is ready to be pushed to Docker Hub. In the upcoming session, we will cover vulnerability scanning on the Docker image followed by pushing the image to Docker Hub.
 
-<Frame>
-  ![The image shows a webpage displaying a list of global variables and their descriptions for a Jenkins pipeline syntax.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879627/notes-assets/images/Jenkins-Pipelines-Build-Docker-Image/jenkins-pipeline-global-variables-list.jpg)
-</Frame>
+![The image shows a webpage displaying a list of global variables and their descriptions for a Jenkins pipeline syntax.](https://kodekloud.com/kk-media/image/upload/v1752879627/notes-assets/images/Jenkins-Pipelines-Build-Docker-Image/jenkins-pipeline-global-variables-list.jpg)
 
 For a comprehensive overview of global environment variables available in Jenkins pipelines—including details such as the job display URL, build number, tag name, and branch name—refer to the [Official Jenkins Pipeline Documentation](https://www.jenkins.io/doc/book/pipeline/).
 
 Thank you.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/a1289a46-be38-4446-a056-0b9730d05dfd/lesson/4573256a-b229-4448-b0ea-46d886177a1a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/a1289a46-be38-4446-a056-0b9730d05dfd/lesson/4573256a-b229-4448-b0ea-46d886177a1a)
 
 
 # Deploy AWS EC2
@@ -138,9 +134,7 @@ stage('Deploy - AWS EC2') {
 }
 ```
 
-<Callout icon="lightbulb">
-  Ensure the SSH Agent plugin is installed in [Jenkins](https://learn.kodekloud.com/user/courses/jenkins) and you have set up the correct credentials (including the private key and the username, "ubuntu") necessary for connecting to your [AWS EC2](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2) instance.
-</Callout>
+> **lightbulb** Ensure the SSH Agent plugin is installed in [Jenkins](https://learn.kodekloud.com/user/courses/jenkins) and you have set up the correct credentials (including the private key and the username, "ubuntu") necessary for connecting to your [AWS EC2](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2) instance.
 
 ***
 
@@ -365,9 +359,7 @@ This command should display the container running on port 3000. Accessing the pu
 
 Below is an image that visually demonstrates how you can configure when conditions in the Jenkins interface. Do not modify the image link or its description:
 
-<Frame>
-  ![The image shows a Jenkins interface with a dropdown menu for selecting conditions to execute a stage in a pipeline. Various options like "allOf," "anyOf," and "branch" are visible for configuring execution conditions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879629/notes-assets/images/Jenkins-Pipelines-Deploy-AWS-EC2/jenkins-pipeline-conditions-dropdown.jpg)
-</Frame>
+![The image shows a Jenkins interface with a dropdown menu for selecting conditions to execute a stage in a pipeline. Various options like "allOf," "anyOf," and "branch" are visible for configuring execution conditions.](https://kodekloud.com/kk-media/image/upload/v1752879629/notes-assets/images/Jenkins-Pipelines-Deploy-AWS-EC2/jenkins-pipeline-conditions-dropdown.jpg)
 
 This dropdown allows you to configure conditions—such as selecting a branch—to ensure that specific stages run only when those conditions are met.
 
@@ -386,6 +378,4 @@ In the next article, we will cover integration testing procedures to verify that
 
 Thank you for reading!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/a1289a46-be38-4446-a056-0b9730d05dfd/lesson/a5392b8d-0874-4806-a052-f10c2d4754f3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/a1289a46-be38-4446-a056-0b9730d05dfd/lesson/a5392b8d-0874-4806-a052-f10c2d4754f3)

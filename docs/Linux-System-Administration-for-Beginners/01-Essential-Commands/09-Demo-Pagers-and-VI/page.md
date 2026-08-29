@@ -9,9 +9,7 @@ readlink family_dog_shortcut.jpg
 # /home/aaron/Pictures/family_dog.jpg
 ```
 
-<Callout icon="lightbulb">
-  Permissions on a symlink itself are always shown as `rwxrwxrwx`, but access is controlled by the target file’s permissions.
-</Callout>
+> **lightbulb** Permissions on a symlink itself are always shown as `rwxrwxrwx`, but access is controlled by the target file’s permissions.
 
 ## Handling Permissions
 
@@ -26,10 +24,8 @@ echo "Test" >> fstab_shortcut
 
 Absolute paths embed the full directory tree, which can break if you move or rename parent directories:
 
-<Callout icon="triangle-alert">
-  Absolute symlinks may become invalid if you relocate or rename directories in the path.\
+> **triangle-alert** Absolute symlinks may become invalid if you relocate or rename directories in the path.\
   Use relative paths when moving link and target together.
-</Callout>
 
 From `/home/aaron`, create a relative link:
 
@@ -62,11 +58,9 @@ ln -s /mnt/data/projects my_projects_link
 * [readlink(1) – manual page for readlink](https://man7.org/linux/man-pages/man1/readlink.1.html)
 * [Linux Symbolic Links on Wikipedia](https://en.wikipedia.org/wiki/Symbolic_link)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/396169a0-709c-40c6-b930-bde83da7fde4" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/396169a0-709c-40c6-b930-bde83da7fde4)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/3e166726-098f-4bba-9706-15470b44add4" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/3e166726-098f-4bba-9706-15470b44add4)
 
 
 # Demo Pagers and VI
@@ -170,17 +164,13 @@ Or open an existing/new file directly:
 * **Insert**: Enter text
 * **Command-line**: Save, quit, or run Ex commands
 
-<Callout icon="lightbulb">
-  Vim’s modal design separates navigation from text entry. Mastering mode transitions is the first step.
-</Callout>
+> **lightbulb** Vim’s modal design separates navigation from text entry. Mastering mode transitions is the first step.
 
 #### Entering Insert Mode
 
 Press `i` to insert text. You’ll see `-- INSERT --` at the bottom.
 
-<Frame>
-  ![The image shows a terminal window with the Vim text editor open, displaying the text "This is our text for our vim demo." The editor is in insert mode.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881476/notes-assets/images/Linux-System-Administration-for-Beginners-Demo-Pagers-and-VI/vim-text-editor-terminal-demo.jpg)
-</Frame>
+![The image shows a terminal window with the Vim text editor open, displaying the text "This is our text for our vim demo." The editor is in insert mode.](https://kodekloud.com/kk-media/image/upload/v1752881476/notes-assets/images/Linux-System-Administration-for-Beginners-Demo-Pagers-and-VI/vim-text-editor-terminal-demo.jpg)
 
 Type content:
 
@@ -202,9 +192,7 @@ For case-insensitive matches, append `\c`:
 /is\c
 ```
 
-<Frame>
-  ![The image shows a terminal window with a text editor open, displaying the sentence "This is our text for our vim demo." The word "This" is highlighted, and a search command is partially typed at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881477/notes-assets/images/Linux-System-Administration-for-Beginners-Demo-Pagers-and-VI/terminal-vim-demo-text-editor.jpg)
-</Frame>
+![The image shows a terminal window with a text editor open, displaying the sentence "This is our text for our vim demo." The word "This" is highlighted, and a search command is partially typed at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752881477/notes-assets/images/Linux-System-Administration-for-Beginners-Demo-Pagers-and-VI/terminal-vim-demo-text-editor.jpg)
 
 #### Jump to a Specific Line
 
@@ -231,9 +219,7 @@ Switch to Command-line mode by typing `:` in Normal mode, then use:
 * `:wq`  — write and quit
 * `:q!`  — quit without saving
 
-<Callout icon="triangle-alert">
-  Using `:q!` will discard all unsaved changes. Be sure you intend to lose your edits before forcing a quit.
-</Callout>
+> **triangle-alert** Using `:q!` will discard all unsaved changes. Be sure you intend to lose your edits before forcing a quit.
 
 #### Example Workflow
 

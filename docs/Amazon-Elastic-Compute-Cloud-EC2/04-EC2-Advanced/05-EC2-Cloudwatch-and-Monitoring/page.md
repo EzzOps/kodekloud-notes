@@ -6,7 +6,7 @@ Learn to monitor Amazon EC2 instances using AWS CloudWatch for real-time insight
 
 In this guide, you’ll learn how to monitor Amazon EC2 instances using AWS CloudWatch. Think of CloudWatch as the centralized control room in a sophisticated building-wide security system—it ingests data from cameras, sensors, and alarms, then provides real‐time insights into resource utilization, application performance, and operational health across your AWS environment.
 
-![The image illustrates AWS CloudWatch, showing a surveillance camera icon, AWS Cloud components, and features like Metrics and Alarms.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868991/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Cloudwatch-and-Monitoring/aws-cloudwatch-surveillance-camera-diagram.jpg)
+![The image illustrates AWS CloudWatch, showing a surveillance camera icon, AWS Cloud components, and features like Metrics and Alarms.](https://kodekloud.com/kk-media/image/upload/v1752868991/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Cloudwatch-and-Monitoring/aws-cloudwatch-surveillance-camera-diagram.jpg)
 
 ***
 
@@ -28,7 +28,7 @@ CloudWatch **metrics** are time-ordered data points representing system and appl
 * Create **alarms** to watch metrics and trigger automated actions (e.g., Auto Scaling) or notifications (e.g., Amazon SNS) when predefined thresholds are crossed.
 * Use built-in metrics for EC2 or publish **custom metrics** for domain-specific KPIs.
 
-![The image is a diagram illustrating AWS CloudWatch monitoring an EC2 instance, showing CPU and other metrics, with a connection to another component.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868992/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Cloudwatch-and-Monitoring/aws-cloudwatch-ec2-monitoring-diagram.jpg)
+![The image is a diagram illustrating AWS CloudWatch monitoring an EC2 instance, showing CPU and other metrics, with a connection to another component.](https://kodekloud.com/kk-media/image/upload/v1752868992/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Cloudwatch-and-Monitoring/aws-cloudwatch-ec2-monitoring-diagram.jpg)
 
 ### Common EC2 Metrics
 
@@ -51,7 +51,7 @@ Dashboards let you unify metrics, alarms, and logs into a single customizable vi
 * Share readonly dashboards with stakeholders for real‐time collaboration.
 * Embed dashboards in internal portals or runbooks for incident response.
 
-![The image shows a CloudWatch Dashboard with icons representing data and graphs connected across a world map. It illustrates a global network of monitoring points.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868995/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Cloudwatch-and-Monitoring/cloudwatch-dashboard-global-network-monitoring.jpg)
+![The image shows a CloudWatch Dashboard with icons representing data and graphs connected across a world map. It illustrates a global network of monitoring points.](https://kodekloud.com/kk-media/image/upload/v1752868995/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Cloudwatch-and-Monitoring/cloudwatch-dashboard-global-network-monitoring.jpg)
 
 > **lightbulb** Use descriptive widget titles and color‐coded alarms to make critical metrics stand out on your dashboard.
 
@@ -80,7 +80,7 @@ The CloudWatch Agent is lightweight software you install on EC2 instances (or on
 * Centralized log collection for Linux and Windows (supports JSON, syslog, IIS, and more).
 * Custom metric publishing via configuration files or the GetMetricData API.
 
-![The image illustrates the CloudWatch Agent with icons representing its features: real-time monitoring, centralized logging, and custom metrics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868997/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Cloudwatch-and-Monitoring/cloudwatch-agent-features-illustration.jpg)
+![The image illustrates the CloudWatch Agent with icons representing its features: real-time monitoring, centralized logging, and custom metrics.](https://kodekloud.com/kk-media/image/upload/v1752868997/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Cloudwatch-and-Monitoring/cloudwatch-agent-features-illustration.jpg)
 
 > **lightbulb** Configure the agent with the unified CloudWatch Agent configuration file (`amazon-cloudwatch-agent.json`) and deploy it using AWS Systems Manager for scale.
 
@@ -94,7 +94,7 @@ AWS CloudWatch Logs centralizes, monitors, and stores log data from EC2 instance
 * **Log streams**: Ordered sequences of events from a single source.
 * **Log groups**: Containers for related streams with shared retention, access controls, and metric filters.
 
-![The image illustrates the CloudWatch Logs concept, showing a diagram with log groups, log streams, and events, represented by chip icons and labeled sections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868998/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Cloudwatch-and-Monitoring/cloudwatch-logs-diagram-log-groups.jpg)
+![The image illustrates the CloudWatch Logs concept, showing a diagram with log groups, log streams, and events, represented by chip icons and labeled sections.](https://kodekloud.com/kk-media/image/upload/v1752868998/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Cloudwatch-and-Monitoring/cloudwatch-logs-diagram-log-groups.jpg)
 
 Use **metric filters** to extract numeric data from logs and trigger CloudWatch alarms. Archive older logs to Amazon S3 for cost-effective, long-term storage.
 

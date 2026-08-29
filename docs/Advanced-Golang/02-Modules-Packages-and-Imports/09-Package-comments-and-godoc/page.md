@@ -6,13 +6,13 @@ This article explains how to use comments and the Godoc tool in Golang for effec
 
 In Golang, proper documentation is essential for creating accessible, maintainable software. The language utilizes the Godoc tool, which seamlessly generates documentation directly from source code comments. This approach ensures that the documentation remains accurate and in sync with the codebase over time.
 
-![The image is a slide describing "godoc," a tool that parses Go source code to produce documentation in HTML or plain text, ensuring the documentation is closely linked with the code.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868743/notes-assets/images/Advanced-Golang-Package-comments-and-godoc/godoc-tool-go-source-documentation.jpg)
+![The image is a slide describing "godoc," a tool that parses Go source code to produce documentation in HTML or plain text, ensuring the documentation is closely linked with the code.](https://kodekloud.com/kk-media/image/upload/v1752868743/notes-assets/images/Advanced-Golang-Package-comments-and-godoc/godoc-tool-go-source-documentation.jpg)
 
 Godoc processes Go source files and extracts comments to produce HTML or plain text documentation. To document a type, variable, function, or an entire package, simply place a regular comment immediately before the declaration without any blank lines in between. For long comments, you can use blank comment lines to separate paragraphs, thereby enhancing clarity.
 
 For package-level documentation, it's common practice to include extensive comments in a dedicated file named `doc.go` located within the package.
 
-![The image is a slide explaining the "godoc" convention for documenting code, including guidelines for writing comments directly preceding declarations and using blank comments for paragraph breaks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868744/notes-assets/images/Advanced-Golang-Package-comments-and-godoc/godoc-documentation-guidelines-slide.jpg)
+![The image is a slide explaining the "godoc" convention for documenting code, including guidelines for writing comments directly preceding declarations and using blank comments for paragraph breaks.](https://kodekloud.com/kk-media/image/upload/v1752868744/notes-assets/images/Advanced-Golang-Package-comments-and-godoc/godoc-documentation-guidelines-slide.jpg)
 
 ## Using the Godoc Command-Line Tool
 

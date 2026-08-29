@@ -6,9 +6,7 @@ Terragrunt HCL Format enforces consistent style for HCL files, helping teams mai
 
 Terragrunt HCL Format (`hclfmt`) enforces a consistent style for Terragrunt’s HashiCorp Configuration Language (HCL) files. Built on top of `terraform fmt`, it applies Terraform’s formatting conventions while understanding Terragrunt’s hierarchical configuration structure. Using `terragrunt hclfmt` helps teams maintain clean, readable code and minimize version-control noise.
 
-<Frame>
-  ![The image describes the purpose of "Terragrunt hclfmt," highlighting its use for formatting HCL files, enforcing consistent formatting, being equivalent to 'terraform fmt,' and maintaining a clean and readable codebase.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884323/notes-assets/images/Terragrunt-for-Beginners-terragrunt-hclfmt/terragrunt-hclfmt-formatting-tool.jpg)
-</Frame>
+![The image describes the purpose of "Terragrunt hclfmt," highlighting its use for formatting HCL files, enforcing consistent formatting, being equivalent to 'terraform fmt,' and maintaining a clean and readable codebase.](https://kodekloud.com/kk-media/image/upload/v1752884323/notes-assets/images/Terragrunt-for-Beginners-terragrunt-hclfmt/terragrunt-hclfmt-formatting-tool.jpg)
 
 ## Integration and Workflow
 
@@ -18,9 +16,7 @@ Integrate `terragrunt hclfmt` into your development lifecycle to automate format
 * Run in CI/CD pipelines to enforce formatting across all branches.
 * Leverage the underlying `terraform fmt` compatibility for seamless adoption.
 
-<Frame>
-  ![The image illustrates the integration of Terragrunt hclfmt with Terragrunt.hcl, highlighting its connection with Terraform.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884324/notes-assets/images/Terragrunt-for-Beginners-terragrunt-hclfmt/terragrunt-hclfmt-integration-terraform.jpg)
-</Frame>
+![The image illustrates the integration of Terragrunt hclfmt with Terragrunt.hcl, highlighting its connection with Terraform.](https://kodekloud.com/kk-media/image/upload/v1752884324/notes-assets/images/Terragrunt-for-Beginners-terragrunt-hclfmt/terragrunt-hclfmt-integration-terraform.jpg)
 
 **Best Practices:**
 
@@ -28,9 +24,7 @@ Integrate `terragrunt hclfmt` into your development lifecycle to automate format
 * Include formatting checks in your pipeline as a gating job.
 * Keep your Terragrunt modules consistent by running `hclfmt` after merging feature branches.
 
-<Frame>
-  ![The image is about automating the formatting process using CI/CD pipelines and Git pre-commit hooks, with a "Best Practices" button at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884324/notes-assets/images/Terragrunt-for-Beginners-terragrunt-hclfmt/automating-formatting-cicd-git-hooks.jpg)
-</Frame>
+![The image is about automating the formatting process using CI/CD pipelines and Git pre-commit hooks, with a "Best Practices" button at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752884324/notes-assets/images/Terragrunt-for-Beginners-terragrunt-hclfmt/automating-formatting-cicd-git-hooks.jpg)
 
 ## Core Benefits
 
@@ -42,9 +36,7 @@ Using `terragrunt hclfmt` delivers:
 | Easier Collaboration  | Reduces discussions over indentation and layout.      |
 | Cleaner Diffs         | Removes non-functional changes from version control.  |
 
-<Frame>
-  ![The image highlights the benefits of "Terragrunt hclfmt," including improved code readability, easier collaboration, and reduced version control noise.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884325/notes-assets/images/Terragrunt-for-Beginners-terragrunt-hclfmt/terragrunt-hclfmt-benefits-diagram.jpg)
-</Frame>
+![The image highlights the benefits of "Terragrunt hclfmt," including improved code readability, easier collaboration, and reduced version control noise.](https://kodekloud.com/kk-media/image/upload/v1752884325/notes-assets/images/Terragrunt-for-Beginners-terragrunt-hclfmt/terragrunt-hclfmt-benefits-diagram.jpg)
 
 ## Example Usage
 
@@ -91,13 +83,9 @@ inputs = {
 
 This workflow ensures that every Terragrunt HCL file in your repository remains consistent, reducing merge conflicts and speeding up code reviews.
 
-<Callout icon="lightbulb">
-  Integrating `terragrunt hclfmt` early in your CI/CD process saves time and enforces standards across teams.
-</Callout>
+> **lightbulb** Integrating `terragrunt hclfmt` early in your CI/CD process saves time and enforces standards across teams.
 
-<Callout icon="triangle-alert">
-  Always run `terragrunt hclfmt` before committing changes. Unformatted HCL may cause pipeline failures or inconsistent diffs.
-</Callout>
+> **triangle-alert** Always run `terragrunt hclfmt` before committing changes. Unformatted HCL may cause pipeline failures or inconsistent diffs.
 
 ## Links and References
 
@@ -106,6 +94,4 @@ This workflow ensures that every Terragrunt HCL file in your repository remains 
 * [pre-commit Hooks](https://pre-commit.com)
 * [Terraform AWS Modules](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/e42961fc-4288-4cc2-8db8-3882b884c0b1/lesson/e594328c-1fdf-4646-a40f-bf2d82d95f1c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/e42961fc-4288-4cc2-8db8-3882b884c0b1/lesson/e594328c-1fdf-4646-a40f-bf2d82d95f1c)

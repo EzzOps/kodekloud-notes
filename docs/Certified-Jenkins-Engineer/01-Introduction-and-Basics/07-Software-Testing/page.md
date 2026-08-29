@@ -6,9 +6,7 @@ This article discusses effective software testing practices within the CI/CD pip
 
 Effective software testing is essential in the CI/CD pipeline to catch defects early, improve code quality, and enable safe refactoring. By integrating a robust test suite into your development workflow, you can ensure that every change maintains system integrity and performance.
 
-<Frame>
-  ![The image lists different types of software testing, including unit, integration, smoke, functional, non-regression, acceptance, code quality, performance, security, and manual testing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752870593/notes-assets/images/Certified-Jenkins-Engineer-Software-Testing/software-testing-types-list.jpg)
-</Frame>
+![The image lists different types of software testing, including unit, integration, smoke, functional, non-regression, acceptance, code quality, performance, security, and manual testing.](https://kodekloud.com/kk-media/image/upload/v1752870593/notes-assets/images/Certified-Jenkins-Engineer-Software-Testing/software-testing-types-list.jpg)
 
 ## Common Types of Software Testing
 
@@ -41,9 +39,7 @@ Effective software testing is essential in the CI/CD pipeline to catch defects e
 | Slower Automated | Functional Tests, Non-Regression Tests, Acceptance | Comprehensive validation before release |
 | Manual           | Exploratory Testing, User-Experience Validation    | Human-driven scenarios and edge cases   |
 
-<Callout icon="lightbulb">
-  Manual testing is best reserved for exploratory scenarios and usability validation after your automated suites pass.
-</Callout>
+> **lightbulb** Manual testing is best reserved for exploratory scenarios and usability validation after your automated suites pass.
 
 ## Balanced Testing Strategy
 
@@ -56,13 +52,9 @@ A layered testing approach optimizes feedback loops and resource usage:
 3. **Investigate Failures from Bottom Up**\
    Always start with unit or integration test errors to pinpoint the root cause.
 
-<Callout icon="triangle-alert">
-  Skipping unit tests can lead to cascading failures in higher-level tests. Always fix the smallest failing test before moving up the testing pyramid.
-</Callout>
+> **triangle-alert** Skipping unit tests can lead to cascading failures in higher-level tests. Always fix the smallest failing test before moving up the testing pyramid.
 
-<Frame>
-  ![The image outlines four testing principles: Speed and Frequency, Cost Effectiveness, Failure Analysis, and Cascade Effect, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752870594/notes-assets/images/Certified-Jenkins-Engineer-Software-Testing/testing-principles-icons-outline.jpg)
-</Frame>
+![The image outlines four testing principles: Speed and Frequency, Cost Effectiveness, Failure Analysis, and Cascade Effect, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752870594/notes-assets/images/Certified-Jenkins-Engineer-Software-Testing/testing-principles-icons-outline.jpg)
 
 ## Key Testing Principles
 
@@ -80,6 +72,4 @@ A layered testing approach optimizes feedback loops and resource usage:
 * [Software Testing Fundamentals](https://www.guru99.com/software-testing.html)
 * [SonarQube Static Analysis](https://www.sonarqube.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-jenkins-engineer/module/2e8ea9bb-e5bb-428e-85d9-89f2eb816adb/lesson/95109e6f-3c7f-4467-8778-d97625495ce6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-jenkins-engineer/module/2e8ea9bb-e5bb-428e-85d9-89f2eb816adb/lesson/95109e6f-3c7f-4467-8778-d97625495ce6)

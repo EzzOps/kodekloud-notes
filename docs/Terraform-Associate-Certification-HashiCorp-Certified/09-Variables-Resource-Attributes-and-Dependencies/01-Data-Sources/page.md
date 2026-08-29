@@ -23,9 +23,7 @@ variable "region" {
 
 In this configuration, the AMI and instance type are tailored for a development web server. To create similar resources for a production environment using the same configuration files, Terraform workspaces become essential.
 
-<Callout icon="lightbulb">
-  Terraform workspaces allow you to reuse the same configuration directory for multiple environments by isolating state files.
-</Callout>
+> **lightbulb** Terraform workspaces allow you to reuse the same configuration directory for multiple environments by isolating state files.
 
 ## Listing and Creating Workspaces
 
@@ -177,15 +175,11 @@ terraform.tfstate.d/
 
 Each workspace directory contains its own `terraform.tfstate` file, ensuring that the state for one environment doesn't interfere with another.
 
-<Callout icon="lightbulb">
-  That concludes our guide on Terraform workspaces. Harness this feature to efficiently manage multiple infrastructure environments with a single configuration.
-</Callout>
+> **lightbulb** That concludes our guide on Terraform workspaces. Harness this feature to efficiently manage multiple infrastructure environments with a single configuration.
 
 Proceed to the multiple-choice quiz to test your understanding of Terraform workspaces.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/ed4291fc-57a9-43d3-abff-eb82bba4a679/lesson/473debba-eac1-42ad-a6d1-f90e337fb1b7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/ed4291fc-57a9-43d3-abff-eb82bba4a679/lesson/473debba-eac1-42ad-a6d1-f90e337fb1b7)
 
 
 # Data Sources
@@ -215,9 +209,7 @@ In this example, the key pair is generated and its attribute (key\_name) is dire
 
 However, there are scenarios where a resource already exists or is managed by another tool (such as CloudFormation, Ansible, or even another Terraform configuration). In these cases, while you cannot manage the lifecycle of the resource directly with Terraform, you can still reference its attributes using data sources.
 
-<Callout icon="lightbulb">
-  If the resource you need already exists—for example, a key pair named "alpha"—you can reference it in your Terraform configuration using a data block.
-</Callout>
+> **lightbulb** If the resource you need already exists—for example, a key pair named "alpha"—you can reference it in your Terraform configuration using a data block.
 
 Assuming the key pair "alpha" is already present in your AWS account, you can reference it by defining the following data block:
 
@@ -243,9 +235,7 @@ This revised configuration creates a new EC2 instance that utilizes the pre-exis
 
 Terraform’s documentation offers detailed explanations on accepted arguments and the exported attributes for each data source. While this example relies on the key name "alpha" to identify the key pair, alternative identifiers such as key ID or specific filters can also be used. For example, if the key pair includes a tag with the key "project" and the value "Cerberus", you can apply filters to locate the correct resource.
 
-<Frame>
-  ![The image shows a section of AWS documentation for Terraform, detailing arguments for querying EC2 key pairs, including key\_id, key\_name, and filter configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884174/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Data-Sources/frame_160.jpg)
-</Frame>
+![The image shows a section of AWS documentation for Terraform, detailing arguments for querying EC2 key pairs, including key\_id, key\_name, and filter configuration.](https://kodekloud.com/kk-media/image/upload/v1752884174/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Data-Sources/frame_160.jpg)
 
 ## Key Differences Between Resources and Data Sources
 
@@ -263,6 +253,4 @@ This separation allows you to blend Terraform-managed infrastructure with resour
 
 That’s it for this lesson on using data sources. For further details on configuring specific data sources, please refer to the official [Terraform documentation](https://www.terraform.io/docs).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/cca81ade-f05a-42b2-af56-1926cade6582/lesson/c6f5553f-3a31-4922-8f6b-b5c9bc60f838" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/cca81ade-f05a-42b2-af56-1926cade6582/lesson/c6f5553f-3a31-4922-8f6b-b5c9bc60f838)

@@ -15,9 +15,7 @@ In this lesson, we explore two key concepts related to SELinux:
 
 We'll start by modifying SELinux behavior directly from the GRUB boot screen of a RHEL machine.
 
-<Frame>
-  ![The image shows a boot menu for Red Hat Enterprise Linux, offering options to select or edit the boot process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883592/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Restore-default-file-contexts/red-hat-enterprise-linux-boot-menu.jpg)
-</Frame>
+![The image shows a boot menu for Red Hat Enterprise Linux, offering options to select or edit the boot process.](https://kodekloud.com/kk-media/image/upload/v1752883592/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Restore-default-file-contexts/red-hat-enterprise-linux-boot-menu.jpg)
 
 At the GRUB screen, press "E" to edit the default kernel entry. In the editor, scroll down to the line beginning with "linux". Press Control + E to jump to the end of this line, then move the cursor one space before the "quiet" keyword. Here, you can append one of the following Boolean parameters to adjust SELinux behavior at boot:
 
@@ -68,9 +66,7 @@ After making your desired changes, press Control + X to boot normally. This 
 
 Once the system has booted, log in to your RHEL system.
 
-<Frame>
-  ![The image shows a Red Hat login screen with a user named "aaron" and a password entry field. The Red Hat logo is displayed at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883593/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Restore-default-file-contexts/red-hat-login-screen-aaron.jpg)
-</Frame>
+![The image shows a Red Hat login screen with a user named "aaron" and a password entry field. The Red Hat logo is displayed at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752883593/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Restore-default-file-contexts/red-hat-login-screen-aaron.jpg)
 
 Even though some systems may boot into a text console, this demonstration uses graphical mode for ease of use. Next, we will explore how to handle one common SELinux issue by changing the default HTTPD port.
 
@@ -78,9 +74,7 @@ Even though some systems may boot into a text console, this demonstration uses g
 
 A typical issue arises when you modify the default port for the Apache HTTPD service. First, verify HTTPD is installed, then inspect the Apache configuration file to locate the `Listen` directive.
 
-<Frame>
-  ![The image shows a text editor window displaying a configuration file for the Apache HTTP server, containing comments and instructions for server setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883594/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Restore-default-file-contexts/apache-http-server-config-file.jpg)
-</Frame>
+![The image shows a text editor window displaying a configuration file for the Apache HTTP server, containing comments and instructions for server setup.](https://kodekloud.com/kk-media/image/upload/v1752883594/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Restore-default-file-contexts/apache-http-server-config-file.jpg)
 
 By default, Apache listens on port 80. Assume you change this setting to port 88. Edit the configuration file with:
 

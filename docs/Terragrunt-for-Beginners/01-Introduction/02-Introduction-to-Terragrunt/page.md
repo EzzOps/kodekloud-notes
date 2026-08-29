@@ -78,8 +78,7 @@ Enter Terragrunt. With directory conventions and built-in commands, Mickey can n
 2. Reference shared settings in each environment’s folder.
 3. Run `terragrunt apply-all` to provision every stack in one go.
 
-<Callout icon="lightbulb">
-  Terragrunt encourages a folder structure like:
+> **lightbulb** Terragrunt encourages a folder structure like:
 
   ```text theme={null}
   infrastructure-live/
@@ -92,7 +91,6 @@ Enter Terragrunt. With directory conventions and built-in commands, Mickey can n
   ```
 
   This layout keeps environments isolated and easy to navigate.
-</Callout>
 
 ***
 
@@ -125,6 +123,4 @@ Enter Terragrunt. With directory conventions and built-in commands, Mickey can n
 
 By the end of this lesson, you’ll have a clear understanding of how Terragrunt can streamline your Terraform workflows, reduce duplication, and empower your team to move faster with confidence.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/80c3af1c-e730-4884-8172-1968f95c4dfa/lesson/63bdb637-5d85-407b-83ea-35b45db18bee" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/80c3af1c-e730-4884-8172-1968f95c4dfa/lesson/63bdb637-5d85-407b-83ea-35b45db18bee)

@@ -48,7 +48,7 @@ Security Optimization in Defender for Cloud helps you establish a strong securit
 3. **Remediate**\
    Accept or automate fixes using Azure Policy, Azure Blueprints, or your favorite IaC tool.
 
-![The image outlines two use cases for Microsoft Defender for Cloud: incident management and security optimization. Scenario 1 focuses on a cycle of detection, diagnosis, stabilization, and closure, while Scenario 2 emphasizes establishing and acting on security policies and recommendations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868012/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Use-Cases-for-Microsoft-Defender-for-Cloud/microsoft-defender-cloud-use-cases.jpg)
+![The image outlines two use cases for Microsoft Defender for Cloud: incident management and security optimization. Scenario 1 focuses on a cycle of detection, diagnosis, stabilization, and closure, while Scenario 2 emphasizes establishing and acting on security policies and recommendations.](https://kodekloud.com/kk-media/image/upload/v1752868012/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Use-Cases-for-Microsoft-Defender-for-Cloud/microsoft-defender-cloud-use-cases.jpg)
 
 This diagram illustrates how Defender for Cloud continuously monitors Azure resources, collects security telemetry, and surfaces actionable insights to maintain a strong cloud security posture.
 
@@ -58,7 +58,7 @@ This diagram illustrates how Defender for Cloud continuously monitors Azure reso
 
 Defender for Cloud uses built-in sensors and services to collect logs, network traffic data, and threat intelligence. It then correlates events to detect sophisticated attacks, compromised accounts, and lateral movement.
 
-![The image is an informational graphic about Microsoft Defender for Cloud, highlighting its use cases such as monitoring, traffic analysis, and security insights. It emphasizes its role in detecting sophisticated threats and potential security breaches.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868013/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Use-Cases-for-Microsoft-Defender-for-Cloud/microsoft-defender-cloud-use-cases-graphic.jpg)
+![The image is an informational graphic about Microsoft Defender for Cloud, highlighting its use cases such as monitoring, traffic analysis, and security insights. It emphasizes its role in detecting sophisticated threats and potential security breaches.](https://kodekloud.com/kk-media/image/upload/v1752868013/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Use-Cases-for-Microsoft-Defender-for-Cloud/microsoft-defender-cloud-use-cases-graphic.jpg)
 
 ***
 

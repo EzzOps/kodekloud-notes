@@ -220,9 +220,7 @@ subjects:
 
 ClusterRole and ClusterRoleBinding grant cluster-wide privileges to the component ServiceAccounts. Similar RBAC objects are created for the operator and other components.
 
-<Callout icon="warning">
-  Cilium requires elevated cluster privileges to watch and manipulate Kubernetes objects (nodes, pods, endpoints, CRDs). Review the RBAC rules before applying manifests in production clusters and follow your security policy for least-privilege access.
-</Callout>
+> **warning** Cilium requires elevated cluster privileges to watch and manipulate Kubernetes objects (nodes, pods, endpoints, CRDs). Review the RBAC rules before applying manifests in production clusters and follow your security policy for least-privilege access.
 
 CustomResourceDefinitions (CRDs)
 
@@ -238,9 +236,7 @@ Putting it together — what to expect after installation
 * Security: ServiceAccounts and RBAC ClusterRoles/Bindings grant required permissions.
 * APIs: Cilium CRDs are registered for policy and resource management.
 
-<Callout icon="lightbulb">
-  If you inspect a cluster after installing Cilium, look in the kube-system namespace for DaemonSets (cilium, cilium-envoy), the cilium-operator Deployment, ConfigMaps (cilium-config, cilium-envoy-config), component ServiceAccounts, and multiple Cilium-related CRDs.
-</Callout>
+> **lightbulb** If you inspect a cluster after installing Cilium, look in the kube-system namespace for DaemonSets (cilium, cilium-envoy), the cilium-operator Deployment, ConfigMaps (cilium-config, cilium-envoy-config), component ServiceAccounts, and multiple Cilium-related CRDs.
 
 Installation methods — CLI vs. Helm
 
@@ -256,9 +252,7 @@ There are two primary ways to install Cilium on Kubernetes:
    * Helm gives granular control over chart values and integrates naturally with GitOps workflows.
    * See: [https://github.com/cilium/helm-charts](https://github.com/cilium/helm-charts) and [Helm documentation](https://helm.sh/docs/)
 
-<Callout icon="lightbulb">
-  Note: The Cilium CLI internally uses Helm templates to render manifests. Whether you install via the CLI or Helm directly, Helm templates are involved in producing the manifests applied to the cluster.
-</Callout>
+> **lightbulb** Note: The Cilium CLI internally uses Helm templates to render manifests. Whether you install via the CLI or Helm directly, Helm templates are involved in producing the manifests applied to the cluster.
 
 References and further reading
 
@@ -268,6 +262,4 @@ References and further reading
 * Kubernetes CRDs: [https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
 * Helm: [https://helm.sh/docs/](https://helm.sh/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/9987f86b-1de8-4f71-b0fc-340d906bdb63" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/9987f86b-1de8-4f71-b0fc-340d906bdb63)

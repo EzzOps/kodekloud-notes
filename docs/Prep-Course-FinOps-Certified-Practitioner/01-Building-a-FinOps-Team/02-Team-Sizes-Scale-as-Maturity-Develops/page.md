@@ -39,9 +39,7 @@ Crawl
   <img alt="The image outlines the development stages of building a FinOps team, showing current and projected team sizes over time: &#x22;Crawl&#x22; with 3 to 6 members, &#x22;Walk&#x22; with 5 to 8 members, and &#x22;Run&#x22; with 9 to 14 members. The note at the bottom indicates that team sizes scale as maturity develops." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Key takeaway: As FinOps maturity increases, team size generally grows to support automation, governance, and enterprise-wide influence. Bigger teams enable coverage for continuous optimization, tooling, and business alignment—not redundancy.
-</Callout>
+> **lightbulb** Key takeaway: As FinOps maturity increases, team size generally grows to support automation, governance, and enterprise-wide influence. Bigger teams enable coverage for continuous optimization, tooling, and business alignment—not redundancy.
 
 ## Reporting lines: where does FinOps sit in the org?
 
@@ -72,9 +70,7 @@ This blend of roles enables speed, agility, and alignment between engineering an
   <img alt="The image illustrates a FinOps team structure, depicting the roles of FinOps Manager/Director, Cloud Financial Analyst, FinOps Engineers, and Business Partners, each with their respective responsibilities." />
 </Frame>
 
-<Callout icon="warning">
-  Warning: Team size alone does not equal success. Hiring should follow clear outcomes—automation coverage, governance, cost-to-value alignment, and the ability to influence product and engineering decisions—rather than arbitrary headcount increases.
-</Callout>
+> **warning** Warning: Team size alone does not equal success. Hiring should follow clear outcomes—automation coverage, governance, cost-to-value alignment, and the ability to influence product and engineering decisions—rather than arbitrary headcount increases.
 
 ## Summary
 
@@ -92,6 +88,4 @@ References and further reading
 
 That is it for this lesson. Speak with you soon.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/1de0a7cc-5e70-4e69-a8f4-f8c83d2b45fc/lesson/2450e668-1f1f-4c17-8fed-a39cb18377a1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/1de0a7cc-5e70-4e69-a8f4-f8c83d2b45fc/lesson/2450e668-1f1f-4c17-8fed-a39cb18377a1)

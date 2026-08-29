@@ -55,9 +55,7 @@ Links and references
 * HCL type information (HashiCorp) — see HCL and Terraform docs for additional examples
 * Best practices for secrets and state file security: use encrypted remote backends and access controls
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/89884371-90c1-40df-8f7a-7d1384e84c64" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/89884371-90c1-40df-8f7a-7d1384e84c64)
 
 
 # Using Input Variables
@@ -127,9 +125,7 @@ Each block names the variable and can include:
 * `default`: used when no other value is supplied
 * `type` (optional): for stricter validation (e.g., `string`, `number`, `list(string)`)
 
-<Callout icon="triangle-alert">
-  Do **not** store sensitive credentials (like passwords or API keys) in `default`. Use environment variables, a secure vault provider, or encrypted files instead.
-</Callout>
+> **triangle-alert** Do **not** store sensitive credentials (like passwords or API keys) in `default`. Use environment variables, a secure vault provider, or encrypted files instead.
 
 ***
 
@@ -150,11 +146,9 @@ resource "random_pet" "my-pet" {
 }
 ```
 
-<Callout icon="lightbulb">
-  When referencing variables, do **not** wrap `var.name` in quotes.\
+> **lightbulb** When referencing variables, do **not** wrap `var.name` in quotes.\
   Correct: `filename = var.filename`\
   Incorrect: `filename = "var.filename"`
-</Callout>
 
 Apply these changes:
 

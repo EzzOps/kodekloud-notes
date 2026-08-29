@@ -6,9 +6,7 @@ This lesson covers authentication methods in Kubernetes, focusing on securing ma
 
 Welcome to this lesson on authentication within a Kubernetes cluster. In a typical Kubernetes environment, the cluster is composed of multiple nodes—physical or virtual—and various components that work together seamlessly. Users who access the cluster include administrators performing system tasks, developers deploying and testing applications, end users interacting with applications, and third-party processes integrating with the cluster. In this lesson, we focus specifically on securing management access using robust authentication and authorization mechanisms.
 
-<Frame>
-  ![The image illustrates a network flow involving admins, developers, end users, and bots, with interconnected nodes and security locks, indicating a secure communication system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880584/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Authentication/frame_40.jpg)
-</Frame>
+![The image illustrates a network flow involving admins, developers, end users, and bots, with interconnected nodes and security locks, indicating a secure communication system.](https://kodekloud.com/kk-media/image/upload/v1752880584/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Authentication/frame_40.jpg)
 
 Kubernetes handles authentication for users (administrators and developers) and automated processes directly through the kube-apiserver. Although application-level user security is managed within the application itself, Kubernetes relies on external solutions—such as static files containing user details, certificate authorities, or third-party identity services like LDAP—for authenticating human users. Importantly, Kubernetes does not manage human user accounts natively but does manage service accounts via its API. (A detailed explanation of service accounts is provided elsewhere in this course.)
 
@@ -33,9 +31,7 @@ The kube-apiserver supports multiple authentication methods, including:
 
 In this lesson, we begin with the simplest forms: static password and token files.
 
-<Frame>
-  ![The image categorizes accounts into "Admins," "Developers," and "Bots," under "User" and "Service Accounts" sections, using icons for each type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880585/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Authentication/frame_90.jpg)
-</Frame>
+![The image categorizes accounts into "Admins," "Developers," and "Bots," under "User" and "Service Accounts" sections, using icons for each type.](https://kodekloud.com/kk-media/image/upload/v1752880585/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Authentication/frame_90.jpg)
 
 ## Static Password File Authentication
 
@@ -184,13 +180,9 @@ When making API requests using token authentication, specify the token as a bear
 curl -v -k https://master-node-ip:6443/api/v1/pods --header "Authorization: Bearer KpjCvBI7rCFAHYPKByTlzRb7gulcUc4B"
 ```
 
-<Frame>
-  ![The image contains a note advising against a certain authentication mechanism, suggesting volume mount consideration in kubeadm setup, and setting up role-based authorization for new users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880586/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Authentication/frame_300.jpg)
-</Frame>
+![The image contains a note advising against a certain authentication mechanism, suggesting volume mount consideration in kubeadm setup, and setting up role-based authorization for new users.](https://kodekloud.com/kk-media/image/upload/v1752880586/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Authentication/frame_300.jpg)
 
-<Callout icon="lightbulb">
-  Using static files to store usernames, passwords, and tokens in clear text is acceptable for learning environments but is generally not recommended for production due to security risks. Consider using certificate-based authentication or integrating with external identity providers in production.
-</Callout>
+> **lightbulb** Using static files to store usernames, passwords, and tokens in clear text is acceptable for learning environments but is generally not recommended for production due to security risks. Consider using certificate-based authentication or integrating with external identity providers in production.
 
 ## Final Considerations
 
@@ -198,6 +190,4 @@ When using kubeadm, ensure that the authentication file is correctly provided to
 
 This concludes our lesson on authentication in Kubernetes. For further reading on Kubernetes authentication strategies and best practices, consider exploring the [Kubernetes Documentation](https://kubernetes.io/docs/) and related resources.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/a830b526-dd75-4324-8508-ad023003c66b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/a830b526-dd75-4324-8508-ad023003c66b)

@@ -8,9 +8,7 @@ In this lesson we cover dashboards: what they are, why they matter for observabi
 
 Dashboards are a core component of any observability strategy. They translate raw telemetry into visual insights that help teams spot anomalies, investigate incidents, monitor SLAs, and make data-driven business decisions. During migration, the single non-negotiable requirement is: preserve full visibility. Manually recreating dashboards risks omitting panels, queries, template variables, or configuration details that engineering and business teams depend on. A reliable migration guarantees every metric, log view, and visualization used for decision-making is preserved in the new platform.
 
-<Callout icon="lightbulb">
-  When planning a dashboard migration, treat dashboards as code: export, version, and validate visualizations before decommissioning legacy views. This reduces risk and ensures parity between old and new dashboards.
-</Callout>
+> **lightbulb** When planning a dashboard migration, treat dashboards as code: export, version, and validate visualizations before decommissioning legacy views. This reduces risk and ensures parity between old and new dashboards.
 
 ## Dashboard migration: high-level workflow
 
@@ -68,9 +66,7 @@ Tips to improve load time:
 * Collapse rarely used groups or move them to separate dashboards.
 * Cache or snapshot expensive queries if platform supports it.
 
-<Callout icon="warning">
-  Avoid placing too many high-cardinality or long-time-range queries across dozens of visible panels. Keep dashboards focused and use groups/templates to reduce rendering cost and query load.
-</Callout>
+> **warning** Avoid placing too many high-cardinality or long-time-range queries across dozens of visible panels. Keep dashboards focused and use groups/templates to reduce rendering cost and query load.
 
 ## Collaboration and discoverability in Datadog
 
@@ -137,6 +133,4 @@ Use cases for scheduled reports:
 
 That's it for this lesson. I hope you found it helpful.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/d7aaa833-22da-4f94-af5c-5d196f04ab31/lesson/7e5a48dd-ddf8-45c5-b798-0f5aedff31f1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/d7aaa833-22da-4f94-af5c-5d196f04ab31/lesson/7e5a48dd-ddf8-45c5-b798-0f5aedff31f1)

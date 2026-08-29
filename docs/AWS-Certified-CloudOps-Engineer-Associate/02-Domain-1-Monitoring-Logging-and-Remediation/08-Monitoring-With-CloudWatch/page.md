@@ -17,7 +17,7 @@ CloudWatch extends monitoring across various domains such as applications, infra
 * **Detailed Reporting**: Generate reports to monitor trends and performance.
 * **Dashboard Visualization**: Visualize data and trends using intuitive dashboards.
 
-![The image is an overview diagram of Amazon CloudWatch, illustrating its integration with AWS Cloud, custom applications, and logs, and showing how it processes metrics, triggers alarms, and provides insights through the management console and SNS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859951/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Monitoring-With-CloudWatch/amazon-cloudwatch-overview-diagram.jpg)
+![The image is an overview diagram of Amazon CloudWatch, illustrating its integration with AWS Cloud, custom applications, and logs, and showing how it processes metrics, triggers alarms, and provides insights through the management console and SNS.](https://kodekloud.com/kk-media/image/upload/v1752859951/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Monitoring-With-CloudWatch/amazon-cloudwatch-overview-diagram.jpg)
 
 ## Deep Dive: Applications, Infrastructure & Networking
 
@@ -33,19 +33,19 @@ For application monitoring, CloudWatch offers real-time user monitoring and cana
 
 CloudWatch also enables deep network monitoring by collecting VPC flow logs and ELB access logs, offering a granular view of IP traffic. You can even monitor end-to-end network flows with probes between interfaces.
 
-![The image is a diagram showing the monitoring scope of CloudWatch, divided into three categories: Application Monitoring, Infrastructure Monitoring, and Network Monitoring, each with specific tools and features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859952/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Monitoring-With-CloudWatch/cloudwatch-monitoring-scope-diagram.jpg)
+![The image is a diagram showing the monitoring scope of CloudWatch, divided into three categories: Application Monitoring, Infrastructure Monitoring, and Network Monitoring, each with specific tools and features.](https://kodekloud.com/kk-media/image/upload/v1752859952/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Monitoring-With-CloudWatch/cloudwatch-monitoring-scope-diagram.jpg)
 
 ## Flexible Data Collection
 
 CloudWatch is highly adaptable when it comes to data collection methods. You can inject metrics using libraries available for almost any programming language or leverage AWS X-Ray for embedding tracking within your code. Whether your workload is hosted on EC2, containerized on Amazon EKS/ECS, or uses enhanced monitoring for services such as Amazon RDS, CloudWatch can handle it seamlessly.
 
-![The image is a diagram illustrating network monitoring in an AWS environment, showing components like a VPC, private subnet, Elastic Network Interface, Virtual Private Gateway, and connections to an on-premise server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859954/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Monitoring-With-CloudWatch/aws-network-monitoring-diagram.jpg)
+![The image is a diagram illustrating network monitoring in an AWS environment, showing components like a VPC, private subnet, Elastic Network Interface, Virtual Private Gateway, and connections to an on-premise server.](https://kodekloud.com/kk-media/image/upload/v1752859954/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Monitoring-With-CloudWatch/aws-network-monitoring-diagram.jpg)
 
 ### Granular Metrics and Alerts
 
 By default, CloudWatch collects metrics at one-minute intervals, although some metrics default to a five-minute frequency if detailed monitoring isn’t enabled. Installing the CloudWatch agent allows for more granular data collection, enabling precise threshold alerts, notifications, and even custom visualizations.
 
-![The image is a diagram illustrating the process of gathering metrics using collectors and SDKs, showing application code with X-Ray SDK integrating with CloudWatch, which then connects to Amazon SNS and CloudWatch Dashboard.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859955/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Monitoring-With-CloudWatch/metrics-collection-diagram-xray-cloudwatch.jpg)
+![The image is a diagram illustrating the process of gathering metrics using collectors and SDKs, showing application code with X-Ray SDK integrating with CloudWatch, which then connects to Amazon SNS and CloudWatch Dashboard.](https://kodekloud.com/kk-media/image/upload/v1752859955/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Monitoring-With-CloudWatch/metrics-collection-diagram-xray-cloudwatch.jpg)
 
 > **lightbulb** CloudWatch is the native AWS service for monitoring, equipped with an extensive suite of tools for tracking infrastructure, applications, and network metrics. Its adaptable nature and detailed insights make it indispensable for maintaining robust and reliable AWS environments.
 

@@ -27,7 +27,7 @@ One of the standout features of AWS App Runner is its built-in CI/CD pipeline, w
 
 Below is a high-level diagram illustrating the CI/CD pipeline flow using various AWS services:
 
-![The image is a flowchart illustrating a CI/CD pipeline using AWS services, including CodeCommit, CodeBuild, ECR, and App Runner, with a developer committing changes and pushing Docker images.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864809/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-App-Runner/ci-cd-pipeline-aws-flowchart.jpg)
+![The image is a flowchart illustrating a CI/CD pipeline using AWS services, including CodeCommit, CodeBuild, ECR, and App Runner, with a developer committing changes and pushing Docker images.](https://kodekloud.com/kk-media/image/upload/v1752864809/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-App-Runner/ci-cd-pipeline-aws-flowchart.jpg)
 
 After deployment, your application becomes accessible via a unique domain or URL provided by App Runner. Whether your application interacts with DynamoDB, uploads files to S3, or calls third-party APIs, App Runner handles it as a standard AWS-hosted application.
 
@@ -35,7 +35,7 @@ After deployment, your application becomes accessible via a unique domain or URL
 
 When your application requires secure access to resources within a private VPC, such as a DynamoDB database or an RDS instance, AWS App Runner offers a VPC Connector. This feature securely bridges your application with private VPC resources while maintaining its public accessibility.
 
-![The image is a diagram showing the flow of data from users to an App Runner via HTTPS, which then accesses a Virtual Private Cloud (VPC) through a VPC Connector.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864810/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-App-Runner/data-flow-app-runner-vpc-diagram.jpg)
+![The image is a diagram showing the flow of data from users to an App Runner via HTTPS, which then accesses a Virtual Private Cloud (VPC) through a VPC Connector.](https://kodekloud.com/kk-media/image/upload/v1752864810/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-App-Runner/data-flow-app-runner-vpc-diagram.jpg)
 
 > **lightbulb** Ensure that the VPC Connector is correctly configured to maintain secure and reliable access to your private resources.
 
@@ -50,7 +50,7 @@ AWS App Runner offers a wide range of benefits that simplify application deploym
 
 Below is a visual representation of the key features provided by App Runner:
 
-![The image lists five features: Automatic Deployment, Source Integration, Scalability, Cost-Effective, and Integrated With AWS Services, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864811/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-App-Runner/features-automatic-deployment-scalability.jpg)
+![The image lists five features: Automatic Deployment, Source Integration, Scalability, Cost-Effective, and Integrated With AWS Services, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752864811/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-App-Runner/features-automatic-deployment-scalability.jpg)
 
 With AWS App Runner, developers can concentrate on building and refining their applications while AWS manages deployments, scaling, and infrastructure maintenance.
 

@@ -20,7 +20,7 @@ Imagine stepping into a detective’s office where Amazon Comprehend plays the r
 
 Below is the Amazon Comprehend icon, which features a light bulb and a document to symbolize that moment of insight provided by this intelligent service:
 
-![The image illustrates Amazon Comprehend as a tool for deriving insights and understanding relationships from data, depicted through interconnected icons and labeled sections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861971/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Comprehend/frame_60.jpg)
+![The image illustrates Amazon Comprehend as a tool for deriving insights and understanding relationships from data, depicted through interconnected icons and labeled sections.](https://kodekloud.com/kk-media/image/upload/v1752861971/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Comprehend/frame_60.jpg)
 
 ## How Amazon Comprehend Works
 
@@ -33,7 +33,7 @@ Amazon Comprehend efficiently processes textual data using advanced NLP and deep
 
 The diagram below visually outlines these key features:
 
-![The image lists key features of Amazon Comprehend: Sentiment Analysis, Entity Recognition, Language Detection, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861972/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Comprehend/frame_90.jpg)
+![The image lists key features of Amazon Comprehend: Sentiment Analysis, Entity Recognition, Language Detection, and more.](https://kodekloud.com/kk-media/image/upload/v1752861972/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Comprehend/frame_90.jpg)
 
 > **lightbulb** Amazon Comprehend’s functionality is designed to simplify text analysis by automatically processing large volumes of data, making it ideal for dynamic and scalable applications.
 
@@ -47,7 +47,7 @@ Amazon Comprehend is versatile and can be applied across various scenarios, such
 
 These capabilities allow companies to automate responses and effectively manage their social media presence. The diagram below summarizes these use cases:
 
-![The image lists Amazon Comprehend's general use cases: content personalization, compliance monitoring, and social media monitoring, with corresponding icons for each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861973/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Comprehend/frame_130.jpg)
+![The image lists Amazon Comprehend's general use cases: content personalization, compliance monitoring, and social media monitoring, with corresponding icons for each.](https://kodekloud.com/kk-media/image/upload/v1752861973/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Comprehend/frame_130.jpg)
 
 ## Why Choose Amazon Comprehend?
 
@@ -59,7 +59,7 @@ Amazon Comprehend stands out from other NLP tools because it is specifically eng
 
 The diagram below highlights these differentiators:
 
-![The image highlights reasons to choose Amazon Comprehend: it stands out from other NLP tools and offers scalability and security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861974/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Comprehend/frame_180.jpg)
+![The image highlights reasons to choose Amazon Comprehend: it stands out from other NLP tools and offers scalability and security.](https://kodekloud.com/kk-media/image/upload/v1752861974/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Comprehend/frame_180.jpg)
 
 > **lightbulb** Integrate Amazon Comprehend in your data pipeline to leverage automated text analytics for improved customer insights and business decisions.
 
@@ -75,7 +75,7 @@ In summary, Amazon Comprehend uses advanced techniques to perform sentiment anal
 
 The conclusion diagram below recaps the key topics discussed: sentiment analysis, language detection, customer feedback analysis, content personalization, and compliance monitoring:
 
-![The image lists five topics under "Conclusion": sentiment analysis, language detection, customer feedback analysis, content personalization, and compliance monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861975/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Comprehend/frame_240.jpg)
+![The image lists five topics under "Conclusion": sentiment analysis, language detection, customer feedback analysis, content personalization, and compliance monitoring.](https://kodekloud.com/kk-media/image/upload/v1752861975/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Comprehend/frame_240.jpg)
 
 That concludes our detailed look at Amazon Comprehend. We look forward to exploring even more cloud solutions in our upcoming articles. Happy learning!
 

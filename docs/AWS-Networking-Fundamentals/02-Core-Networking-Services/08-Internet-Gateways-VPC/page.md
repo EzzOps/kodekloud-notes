@@ -12,9 +12,9 @@ By default, there’s no Internet route, so the instance remains unreachable des
 2. Click **Create internet gateway**.
 3. Select the newly created gateway, choose **Actions > Attach to VPC**, and select your VPC.
 
-![The image shows an AWS Management Console screen displaying details of a newly created subnet within a Virtual Private Cloud (VPC). The subnet is listed as available with its associated VPC and IPv4 CIDR block.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863231/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateway-Demo/aws-management-console-subnet-details-vpc.jpg)
+![The image shows an AWS Management Console screen displaying details of a newly created subnet within a Virtual Private Cloud (VPC). The subnet is listed as available with its associated VPC and IPv4 CIDR block.](https://kodekloud.com/kk-media/image/upload/v1752863231/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateway-Demo/aws-management-console-subnet-details-vpc.jpg)
 
-![The image shows an AWS Management Console screen displaying details of an internet gateway that is successfully attached to a VPC. It includes information such as the gateway ID, state, VPC ID, and tags.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863232/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateway-Demo/aws-management-console-internet-gateway-vpc.jpg)
+![The image shows an AWS Management Console screen displaying details of an internet gateway that is successfully attached to a VPC. It includes information such as the gateway ID, state, VPC ID, and tags.](https://kodekloud.com/kk-media/image/upload/v1752863232/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateway-Demo/aws-management-console-internet-gateway-vpc.jpg)
 
 > Pinging still fails because the route table isn’t updated yet.
 
@@ -28,14 +28,14 @@ By default, there’s no Internet route, so the instance remains unreachable des
 2. Click **Create route table**.
 3. Select the new route table, open **Subnet associations**, click **Edit subnet associations**, check `public-subnet`, and save.
 
-![The image shows an AWS VPC management console displaying a list of subnets and details of a selected subnet's route table. The interface includes subnet names, IDs, states, and associated VPCs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863233/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateway-Demo/aws-vpc-management-console-subnets.jpg)
+![The image shows an AWS VPC management console displaying a list of subnets and details of a selected subnet's route table. The interface includes subnet names, IDs, states, and associated VPCs.](https://kodekloud.com/kk-media/image/upload/v1752863233/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateway-Demo/aws-vpc-management-console-subnets.jpg)
 
 4. In the **Routes** tab, click **Edit routes** > **Add route**:
    * **Destination**: `0.0.0.0/0`
    * **Target**: `my-internet-gateway`
 5. Save the route.
 
-![The image shows an AWS Management Console screen displaying details of a route table within a Virtual Private Cloud (VPC). It includes route information and subnet associations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863235/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateway-Demo/aws-management-console-route-table-vpc.jpg)
+![The image shows an AWS Management Console screen displaying details of a route table within a Virtual Private Cloud (VPC). It includes route information and subnet associations.](https://kodekloud.com/kk-media/image/upload/v1752863235/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateway-Demo/aws-management-console-route-table-vpc.jpg)
 
 ***
 
@@ -110,7 +110,7 @@ By default, all newly created subnets are private: instances cannot reach the in
      --route-table-id rtb-0abcdef1234567890
    ```
 
-![The image illustrates the setup of an Internet Gateway within a VPC, showing steps like creating the gateway, attaching it to the VPC, creating a custom route table, and configuring the default route. It includes a diagram of a region with a VPC, availability zone, public subnet, and route table.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863236/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateways-VPC/internet-gateway-vpc-setup-diagram.jpg)
+![The image illustrates the setup of an Internet Gateway within a VPC, showing steps like creating the gateway, attaching it to the VPC, creating a custom route table, and configuring the default route. It includes a diagram of a region with a VPC, availability zone, public subnet, and route table.](https://kodekloud.com/kk-media/image/upload/v1752863236/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateways-VPC/internet-gateway-vpc-setup-diagram.jpg)
 
 The default route (`0.0.0.0/0 → igw-xxxxxxxx`) ensures that any traffic not matching more specific routes is forwarded to the Internet Gateway. Associating your subnet with this route table makes it a **public subnet**, enabling instances to send and receive internet traffic.
 
@@ -124,7 +124,7 @@ From the instance’s perspective:
 * AWS Network Address Translation (NAT) translates the public IP to the instance’s **private IP**.
 * The instance processes traffic using its private IP, unaware of the public endpoint.
 
-![The image illustrates a network diagram of an AWS Cloud setup, showing a public subnet with a resource that has both a private IP (192.163.1.1) and a public IP (1.1.1.1), accessible by a user.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863237/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateways-VPC/aws-cloud-network-diagram-public-subnet.jpg)
+![The image illustrates a network diagram of an AWS Cloud setup, showing a public subnet with a resource that has both a private IP (192.163.1.1) and a public IP (1.1.1.1), accessible by a user.](https://kodekloud.com/kk-media/image/upload/v1752863237/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateways-VPC/aws-cloud-network-diagram-public-subnet.jpg)
 
 If an instance has multiple Elastic Network Interfaces (ENIs), each interface can have its own public IP address mapped to a private IP. AWS uses these mappings to direct internet traffic to the correct interface.
 
@@ -137,7 +137,7 @@ If an instance has multiple Elastic Network Interfaces (ENIs), each interface ca
 | Public Subnet Requirement            | Route table must include a default route pointing to the Internet Gateway |
 | Public IP for External Accessibility | Instances need a public IPv4 address (auto-assigned or manually added)    |
 
-![The image is a summary slide with three key points about internet gateways and VPCs, highlighting connectivity, attachment, and limitations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863239/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateways-VPC/internet-gateways-vpcs-summary-slide.jpg)
+![The image is a summary slide with three key points about internet gateways and VPCs, highlighting connectivity, attachment, and limitations.](https://kodekloud.com/kk-media/image/upload/v1752863239/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateways-VPC/internet-gateways-vpcs-summary-slide.jpg)
 
 ## References
 

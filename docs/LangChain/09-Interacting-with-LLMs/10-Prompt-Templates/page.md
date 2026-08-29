@@ -67,9 +67,7 @@ Example approaches:
 * Use `temperature` and `max_tokens` settings on `ChatOpenAI` to control randomness and length.
 * Avoid committing API keys to source control; use environment variables or secrets management.
 
-<Callout icon="warning">
-  Never commit your OpenAI API key to version control. Use environment variables or secret managers to keep keys safe. Monitor usage to avoid unexpected costs.
-</Callout>
+> **warning** Never commit your OpenAI API key to version control. Use environment variables or secret managers to keep keys safe. Monitor usage to avoid unexpected costs.
 
 ## Links and references
 
@@ -82,11 +80,9 @@ Example approaches:
 
 This concise walkthrough covers building prompt templates, populating them at runtime, and invoking a chat model with LangChain. You can expand this pattern into pipelines for parsing, validation, or integrating with downstream applications.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/857f3912-4a8e-4594-bb30-479d5f303cc8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/857f3912-4a8e-4594-bb30-479d5f303cc8)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/0c1c660e-6569-4b29-b3da-790d279553ff" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/0c1c660e-6569-4b29-b3da-790d279553ff)
 
 
 # Prompt Templates

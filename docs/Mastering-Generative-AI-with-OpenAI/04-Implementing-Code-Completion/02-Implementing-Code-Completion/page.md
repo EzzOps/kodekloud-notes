@@ -138,11 +138,9 @@ SELECT * FROM customers WHERE country = 'Chile';
 * [Pandas Documentation](https://pandas.pydata.org/docs/)
 * [IPython Display Utilities](https://ipython.readthedocs.io/en/stable/api/generated/IPython.display.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/573b1c18-d6a4-4faa-b3c0-1aa306ea6d25/lesson/f51af4b8-7291-40ea-bc66-41050d44a86a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/573b1c18-d6a4-4faa-b3c0-1aa306ea6d25/lesson/f51af4b8-7291-40ea-bc66-41050d44a86a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/573b1c18-d6a4-4faa-b3c0-1aa306ea6d25/lesson/6e2105ed-19af-4cad-bb9b-5e3b0db7a311" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/573b1c18-d6a4-4faa-b3c0-1aa306ea6d25/lesson/6e2105ed-19af-4cad-bb9b-5e3b0db7a311)
 
 
 # Implementing Code Completion
@@ -223,9 +221,7 @@ if __name__ == '__main__':
     print("Generated Python Code:\n", code)
 ```
 
-<Callout icon="lightbulb">
-  Be sure to install the OpenAI Python client with `pip install openai`. Keep your API key secure and never commit it to a public repository.
-</Callout>
+> **lightbulb** Be sure to install the OpenAI Python client with `pip install openai`. Keep your API key secure and never commit it to a public repository.
 
 ## 3. Producing ANSI SQL Commands
 
@@ -248,9 +244,7 @@ INSERT INTO users (id, name, email) VALUES
 SELECT * FROM users;
 ```
 
-<Callout icon="triangle-alert">
-  Always review generated SQL before executing it against production databases to avoid unintended data loss.
-</Callout>
+> **triangle-alert** Always review generated SQL before executing it against production databases to avoid unintended data loss.
 
 ## References
 
@@ -259,6 +253,4 @@ SELECT * FROM users;
 * [ANSI SQL Standard](https://www.iso.org/standard/63555.html)
 * [Python Official Documentation](https://docs.python.org/3/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/573b1c18-d6a4-4faa-b3c0-1aa306ea6d25/lesson/b69c2c0c-9cc8-41b6-a989-84a557da6d47" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/573b1c18-d6a4-4faa-b3c0-1aa306ea6d25/lesson/b69c2c0c-9cc8-41b6-a989-84a557da6d47)

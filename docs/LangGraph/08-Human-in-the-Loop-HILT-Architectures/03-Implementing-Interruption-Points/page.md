@@ -41,9 +41,7 @@ builder.add_conditional_edges(
 
 This wiring—pause for input, capture the decision, then route accordingly—makes the workflow interruptible, auditable, and human-aware.
 
-<Callout icon="lightbulb">
-  Design the frontend to clearly display the AI-generated content, available actions (approve, request changes, cancel), and contextual metadata (who generated it, timestamps, reason). Clear UI and context reduce friction and errors.
-</Callout>
+> **lightbulb** Design the frontend to clearly display the AI-generated content, available actions (approve, request changes, cancel), and contextual metadata (who generated it, timestamps, reason). Clear UI and context reduce friction and errors.
 
 <Frame>
   <img alt="The image is a diagram showing a front-end design for approval, featuring sections for AI output, actionable options like &#x22;Approve&#x22; and &#x22;Request Changes,&#x22; and relevant context details. It emphasizes the importance of a clear UI for effective human-in-the-loop (HILT) interactions." />
@@ -89,9 +87,7 @@ Links and references
 * [LangGraph documentation](https://langgraph.ai/docs)
 * [Human-in-the-loop (HITL) design patterns (overview)](https://en.wikipedia.org/wiki/Human-in-the-loop)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/0512078c-4290-4d71-9531-0b12f54f10c6/lesson/33409ca8-8f6c-4388-be5c-b5ffa89bb893" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/0512078c-4290-4d71-9531-0b12f54f10c6/lesson/33409ca8-8f6c-4388-be5c-b5ffa89bb893)
 
 
 # Implementing Interruption Points
@@ -196,9 +192,7 @@ Best practices
   <img alt="The image lists three best practices with icons: make decision points clear and simple, always allow a safe fallback, and avoid blocking flows unnecessarily." />
 </Frame>
 
-<Callout icon="lightbulb">
-  When designing interruption points, be explicit in the UI about what each decision means. Provide clear options (approve, edit, cancel), allow safe fallbacks, and avoid pausing the flow for trivial matters. Only interrupt where user input improves safety, trust, or personalization.
-</Callout>
+> **lightbulb** When designing interruption points, be explicit in the UI about what each decision means. Provide clear options (approve, edit, cancel), allow safe fallbacks, and avoid pausing the flow for trivial matters. Only interrupt where user input improves safety, trust, or personalization.
 
 Concise best-practice checklist
 
@@ -214,6 +208,4 @@ Links and references
 * LangGraph course: [https://learn.kodekloud.com/user/courses/langgraph](https://learn.kodekloud.com/user/courses/langgraph)
 * Human-in-the-loop design patterns and best practices (general reading)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/0512078c-4290-4d71-9531-0b12f54f10c6/lesson/aec3961d-bbb5-473b-9c8e-7b56a12ebd25" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/0512078c-4290-4d71-9531-0b12f54f10c6/lesson/aec3961d-bbb5-473b-9c8e-7b56a12ebd25)

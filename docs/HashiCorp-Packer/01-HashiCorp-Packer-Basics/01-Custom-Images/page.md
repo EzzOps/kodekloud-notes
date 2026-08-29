@@ -6,9 +6,7 @@ Streamline deployments by bundling application code and server configuration int
 
 Streamline your deployments by bundling application code and server configuration into a single, ready-to-deploy image. Tools like HashiCorp Packer automate the image-building process, producing fully configured artifacts for any environment.
 
-<Callout icon="lightbulb">
-  Immutable images guarantee consistency, repeatability, and reliability across development, testing, and production.
-</Callout>
+> **lightbulb** Immutable images guarantee consistency, repeatability, and reliability across development, testing, and production.
 
 ## Why Use Custom Images?
 
@@ -43,9 +41,7 @@ while (alive) {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Never modify a running image in place. Always build and deploy a new image for updates.
-</Callout>
+> **triangle-alert** Never modify a running image in place. Always build and deploy a new image for updates.
 
 ## Additional Resources
 
@@ -53,6 +49,4 @@ while (alive) {
 * [Immutable Infrastructure—Martin Fowler](https://martinfowler.com/bliki/ImmutableServer.html)
 * [Dockerfile Reference](https://docs.docker.com/engine/reference/builder/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-packer/module/88bc689f-1e45-49d8-887c-cb44923b3390/lesson/72e6baf3-a447-4244-a215-fa4edb0ea427" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-packer/module/88bc689f-1e45-49d8-887c-cb44923b3390/lesson/72e6baf3-a447-4244-a215-fa4edb0ea427)

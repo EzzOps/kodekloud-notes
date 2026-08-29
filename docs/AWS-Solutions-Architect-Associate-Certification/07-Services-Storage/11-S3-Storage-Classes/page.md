@@ -8,7 +8,7 @@ In this article, we explore the various AWS S3 storage classes and explain how e
 
 Everyone has unique data storage requirements, whether for large-scale data or less frequently accessed information. AWS addresses these needs by providing multiple pricing schemes and performance features tailored to distinct usage patterns.
 
-![The image illustrates "Storage Classes" with icons representing data access, resiliency, and cost. Each icon is labeled accordingly, and there's a central icon of a storage bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866089/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes/storage-classes-data-access-icons.jpg)
+![The image illustrates "Storage Classes" with icons representing data access, resiliency, and cost. Each icon is labeled accordingly, and there's a central icon of a storage bucket.](https://kodekloud.com/kk-media/image/upload/v1752866089/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes/storage-classes-data-access-icons.jpg)
 
 ## S3 Standard
 
@@ -21,9 +21,9 @@ Key features of S3 Standard include:
 * Support for public access (ideal for web application media files).
 * Charges for data egress; uploading data (ingress) is free.
 
-![The image illustrates AWS S3 Standard storage with 99.999999999% durability, showing documents replicated across three availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866091/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes/aws-s3-standard-storage-durability.jpg)
+![The image illustrates AWS S3 Standard storage with 99.999999999% durability, showing documents replicated across three availability zones.](https://kodekloud.com/kk-media/image/upload/v1752866091/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes/aws-s3-standard-storage-durability.jpg)
 
-![The image illustrates the AWS S3 Standard storage model, showing data replication across three availability zones and indicating charges per gigabyte.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866092/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes/aws-s3-standard-storage-model.jpg)
+![The image illustrates the AWS S3 Standard storage model, showing data replication across three availability zones and indicating charges per gigabyte.](https://kodekloud.com/kk-media/image/upload/v1752866092/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes/aws-s3-standard-storage-model.jpg)
 
 ## S3 Standard-IA (Infrequent Access)
 
@@ -37,9 +37,9 @@ Consider these important points for S3 Standard-IA:
 * Enforces a minimum duration charge of 30 days per object. If an object is deleted before 30 days, you are still charged for the full period.
 * Uses a minimum object size charge of 128 kilobytes (even a 1 KB file is billed as 128 KB).
 
-![The image illustrates AWS S3 Standard-IA storage, showing documents distributed across three availability zones, highlighting its ability to handle two simultaneous AZ failures.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866093/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes/aws-s3-standard-ia-storage-diagram.jpg)
+![The image illustrates AWS S3 Standard-IA storage, showing documents distributed across three availability zones, highlighting its ability to handle two simultaneous AZ failures.](https://kodekloud.com/kk-media/image/upload/v1752866093/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes/aws-s3-standard-ia-storage-diagram.jpg)
 
-![The image illustrates the AWS S3 Standard-IA storage class, highlighting features like retrieval fees, a minimum duration charge of 30 days, and a minimum size charge of 128 KB per object, with data stored across multiple availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866094/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes/aws-s3-standard-ia-storage-class.jpg)
+![The image illustrates the AWS S3 Standard-IA storage class, highlighting features like retrieval fees, a minimum duration charge of 30 days, and a minimum size charge of 128 KB per object, with data stored across multiple availability zones.](https://kodekloud.com/kk-media/image/upload/v1752866094/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes/aws-s3-standard-ia-storage-class.jpg)
 
 ## S3 One Zone-IA (One Zone Infrequent Access)
 
@@ -66,7 +66,7 @@ Key features of S3 Glacier Instant include:
 * Data egress fees and additional retrieval fees apply.
 * A minimum duration charge of 90 days and a minimum size charge of 128 kilobytes per object.
 
-![The image is an infographic about AWS S3 Glacier-Instant, highlighting its retrieval fee, 90-day minimum charge, and availability across three zones. It notes that it's a low-cost option for rarely accessed data with performance similar to S3 Standard.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866095/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes/aws-s3-glacier-infographic.jpg)
+![The image is an infographic about AWS S3 Glacier-Instant, highlighting its retrieval fee, 90-day minimum charge, and availability across three zones. It notes that it's a low-cost option for rarely accessed data with performance similar to S3 Standard.](https://kodekloud.com/kk-media/image/upload/v1752866095/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes/aws-s3-glacier-infographic.jpg)
 
 ## S3 Glacier Flexible
 
@@ -83,7 +83,7 @@ Important details for S3 Glacier Flexible:
   * Bulk (5–12 hours)
 * During the retrieval process, objects are temporarily stored in S3 Standard-IA.
 
-![The image is an infographic about AWS S3 Glacier-Flexible, detailing retrieval fees, minimum charges, and retrieval options. It highlights the storage of objects across availability zones and mentions temporary storage in S3 Standard-IA during retrieval.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866096/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes/aws-s3-glacier-infographic-2.jpg)
+![The image is an infographic about AWS S3 Glacier-Flexible, detailing retrieval fees, minimum charges, and retrieval options. It highlights the storage of objects across availability zones and mentions temporary storage in S3 Standard-IA during retrieval.](https://kodekloud.com/kk-media/image/upload/v1752866096/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes/aws-s3-glacier-infographic-2.jpg)
 
 ## S3 Glacier Deep Archive
 
@@ -119,12 +119,12 @@ Selecting the appropriate storage class depends on your performance requirements
    * For very rarely accessed data: Choose S3 Glacier Deep Archive.
    * For archival data with occasional access needs: Choose S3 Glacier Flexible.
 
-![The image is a flowchart for selecting storage options based on access frequency and immediacy, including options like Standard, Glacier Instant, and Glacier Deep Archive.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866097/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes/storage-options-flowchart-access-frequency.jpg)
+![The image is a flowchart for selecting storage options based on access frequency and immediacy, including options like Standard, Glacier Instant, and Glacier Deep Archive.](https://kodekloud.com/kk-media/image/upload/v1752866097/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes/storage-options-flowchart-access-frequency.jpg)
 
 > **lightbulb** To specify a storage class for an S3 object, include the x-amz-storage-class request header when uploading the object.
 
 In summary, AWS S3 storage classes provide a variety of options to help you optimize costs while ensuring that data access and durability requirements are met. Choosing the right storage class avoids unnecessary expenses and maintains the performance specifications needed for your applications.
 
-![The image is a summary slide discussing storage classes, highlighting their varying levels of data access, resiliency, and cost, and explaining how they are set up and can be changed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866098/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes/storage-classes-summary-access-resiliency.jpg)
+![The image is a summary slide discussing storage classes, highlighting their varying levels of data access, resiliency, and cost, and explaining how they are set up and can be changed.](https://kodekloud.com/kk-media/image/upload/v1752866098/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes/storage-classes-summary-access-resiliency.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/23e00d1f-6422-4fef-a9bf-e8f007be5514/lesson/5f386e86-2e08-427f-b968-5f23dc3d519e)

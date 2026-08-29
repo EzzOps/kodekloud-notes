@@ -34,9 +34,7 @@ Best practices:
 
 That's it for this lesson — you should now understand how Datadog Serverless Connectors collect telemetry from serverless platforms, the common configuration patterns, and the recommended security practices for handling credentials.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/10421186-d141-4fde-9847-73ea4e4e675a/lesson/bd90e090-1f87-4c74-af2c-8b846e2bdf7c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/10421186-d141-4fde-9847-73ea4e4e675a/lesson/bd90e090-1f87-4c74-af2c-8b846e2bdf7c)
 
 
 # Understanding the Architecture
@@ -147,9 +145,7 @@ Datadog operates multiple sites/regions. Your site selection affects latency and
   <img alt="The image is a table showing different Datadog site options, including site URLs, parameters, and their respective locations." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Carefully evaluate data residency and compliance requirements before choosing your Datadog site. The selection is persistent for your organization and cannot be changed later.
-</Callout>
+> **lightbulb** Carefully evaluate data residency and compliance requirements before choosing your Datadog site. The selection is persistent for your organization and cannot be changed later.
 
 ## Summary
 
@@ -163,6 +159,4 @@ Further reading and references:
 
 That's it for this lesson. I hope you found it useful.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/10421186-d141-4fde-9847-73ea4e4e675a/lesson/d3ecb6bb-e7e4-4314-9e7b-a92e13c90319" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/10421186-d141-4fde-9847-73ea4e4e675a/lesson/d3ecb6bb-e7e4-4314-9e7b-a92e13c90319)

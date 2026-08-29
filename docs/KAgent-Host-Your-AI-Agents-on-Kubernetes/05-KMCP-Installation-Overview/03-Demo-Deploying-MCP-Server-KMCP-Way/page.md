@@ -85,9 +85,7 @@ def get_crypto_price(symbol: str = "bitcoin", currency: str = "usd") -> dict:
         return {"error": f"Unexpected error: {str(e)}"}
 ```
 
-<Callout icon="lightbulb">
-  Provide detailed docstrings: agents parse the docstring to learn the tool’s parameters, behavior and return format. Clear examples and error cases make tool usage more reliable and reduce unexpected behavior from LLM agents.
-</Callout>
+> **lightbulb** Provide detailed docstrings: agents parse the docstring to learn the tool’s parameters, behavior and return format. Clear examples and error cases make tool usage more reliable and reduce unexpected behavior from LLM agents.
 
 ## 6. Copy the tool file into the project
 
@@ -243,9 +241,7 @@ The declarative agent will call the MCP server tool `get_crypto_price`, aggregat
 
 That’s all for this lesson — see you in the next one.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/89ce4b4d-8cc1-46f1-a598-78d86e9fb270" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/89ce4b4d-8cc1-46f1-a598-78d86e9fb270)
 
 
 # Demo Deploying MCP Server KMCP Way
@@ -269,9 +265,7 @@ High-level flow:
 * The MCP server executes the tool code (fetches live price), processes the response, and returns it.
 * KMCP helps scaffold the project, run locally with the Inspector, build a container image, and deploy the MCP server to Kubernetes.
 
-<Callout icon="lightbulb">
-  KMCP is the CLI for building and managing Model Context Protocol (MCP) servers. Do not confuse it with the [KAgent CLI](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes) — KAgent CLI focuses on building and interacting with agents, while KMCP focuses on MCP server tooling, scaffolding, local debugging, builds, and deployments.
-</Callout>
+> **lightbulb** KMCP is the CLI for building and managing Model Context Protocol (MCP) servers. Do not confuse it with the [KAgent CLI](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes) — KAgent CLI focuses on building and interacting with agents, while KMCP focuses on MCP server tooling, scaffolding, local debugging, builds, and deployments.
 
 ## Install KMCP CLI and MCP Inspector
 

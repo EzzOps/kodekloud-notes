@@ -135,9 +135,7 @@ A sample output might be:
 [aaron@LFCS-CentOS ~]$
 ```
 
-<Callout icon="lightbulb">
-  If a physical volume is no longer needed, you can remove it from the volume group using `vgreduce` and then wipe its LVM signature with `pvremove`.
-</Callout>
+> **lightbulb** If a physical volume is no longer needed, you can remove it from the volume group using `vgreduce` and then wipe its LVM signature with `pvremove`.
 
 ```bash theme={null}
 sudo vgreduce my_volume /dev/sde
@@ -254,9 +252,7 @@ Size of logical volume my_volume/partition1 changed from 3.99 GiB (1022 extents)
 Logical volume my_volume/partition1 successfully resized.
 ```
 
-<Callout icon="triangle-alert">
-  Always ensure you have a backup before reducing the size of a logical volume as this operation can result in data loss.
-</Callout>
+> **triangle-alert** Always ensure you have a backup before reducing the size of a logical volume as this operation can result in data loss.
 
 ### Creating a Filesystem on a Logical Volume
 

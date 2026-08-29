@@ -6,7 +6,7 @@ This article covers essential aspects of application lifecycle management, inclu
 
 Hello, my name is Mumshad Mannambeth, and welcome to this lesson on application lifecycle management. In this article, we cover essential aspects such as rolling updates and rollbacks, various application configuration methods, scaling strategies, and the fundamentals of self-healing application design.
 
-![The image lists course objectives, including core concepts, scheduling, logging, application lifecycle management, cluster maintenance, security, storage, networking, installation, configuration, validation, and troubleshooting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869659/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Application-Lifecycle-Management-Section-Introduction/frame_20.jpg)
+![The image lists course objectives, including core concepts, scheduling, logging, application lifecycle management, cluster maintenance, security, storage, networking, installation, configuration, validation, and troubleshooting.](https://kodekloud.com/kk-media/image/upload/v1752869659/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Application-Lifecycle-Management-Section-Introduction/frame_20.jpg)
 
 Many of these topics are covered in depth throughout the course. If you are already familiar with some of this material, feel free to skip ahead or review the practice tests to reinforce your knowledge.
 

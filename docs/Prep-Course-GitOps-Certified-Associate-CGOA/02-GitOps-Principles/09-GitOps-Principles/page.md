@@ -195,9 +195,7 @@ After synchronization, Argo CD will revert the cluster to the Git desired state 
 
 ## Best practice
 
-<Callout icon="lightbulb">
-  Never make long-lived configuration changes directly in the cluster. Always update the Git repository with the desired state and let your GitOps operator (Argo CD) reconcile the cluster. This ensures a single source of truth, prevents configuration drift, and makes rollbacks and audits straightforward.
-</Callout>
+> **lightbulb** Never make long-lived configuration changes directly in the cluster. Always update the Git repository with the desired state and let your GitOps operator (Argo CD) reconcile the cluster. This ensures a single source of truth, prevents configuration drift, and makes rollbacks and audits straightforward.
 
 ## Links and references
 
@@ -205,9 +203,7 @@ After synchronization, Argo CD will revert the cluster to the Git desired state 
 * Kubernetes: Deployments — [https://kubernetes.io/docs/concepts/workloads/controllers/deployment/](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 * GitOps principles: [https://www.weave.works/technologies/gitops/](https://www.weave.works/technologies/gitops/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/7a01b8bf-971f-452e-8e36-bac6b22a1676" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/7a01b8bf-971f-452e-8e36-bac6b22a1676)
 
 
 # GitOps Principles
@@ -226,9 +222,7 @@ The first principle requires that your entire system—both infrastructure and a
 
 Declarative manifests (for example, Kubernetes YAML or Helm charts) express the intended state in a machine-readable format. This differs from imperative operations (one-off CLI commands or ad-hoc scripts), which do not capture the resulting state and are harder to reproduce, audit, or recover.
 
-<Callout icon="lightbulb">
-  Declare the desired state so the system can be inspected, versioned, and reconciled automatically.
-</Callout>
+> **lightbulb** Declare the desired state so the system can be inspected, versioned, and reconciled automatically.
 
 Benefits of using a declarative approach:
 
@@ -318,6 +312,4 @@ Putting it together, these four principles—declarative manifests, Git as the s
 * [Flux CD](https://fluxcd.io/)
 * [Git Documentation](https://git-scm.com/doc)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/14fc5de9-15a6-432c-b715-3bb1f0c52817" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/14fc5de9-15a6-432c-b715-3bb1f0c52817)

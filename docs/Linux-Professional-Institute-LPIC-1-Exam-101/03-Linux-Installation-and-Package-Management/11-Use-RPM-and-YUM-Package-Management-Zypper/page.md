@@ -42,13 +42,11 @@ After this operation, 30.7 kB of additional disk space will be used.
 Do you want to continue? [Y/n]
 ```
 
-<Callout icon="lightbulb">
-  To upgrade one package without affecting others, use:
+> **lightbulb** To upgrade one package without affecting others, use:
 
   ```bash theme={null}
   sudo apt-get install --only-upgrade unrar
   ```
-</Callout>
 
 ***
 
@@ -176,9 +174,7 @@ Unlike `dpkg-query`, `apt-file` can search across all available (but not yet ins
 
 Test your knowledge with the included quiz!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/d6b848b0-fee5-4327-bbcb-19ada81eb134" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/d6b848b0-fee5-4327-bbcb-19ada81eb134)
 
 
 # Use RPM and YUM Package Management Zypper
@@ -189,10 +185,8 @@ This article explains how to use Zypper for package management in SUSE Linux and
 
 Zypper is the powerful command-line package manager for SUSE Linux and openSUSE, providing functionality similar to YUM and APT. It enables you to install, update, and remove packages, automatically resolving dependencies. Because Zypper relies on up-to-date repository metadata, it’s best practice to refresh before performing searches or installations.
 
-<Callout icon="lightbulb">
-  You need `sudo` privileges to run Zypper commands that modify the system.\
+> **lightbulb** You need `sudo` privileges to run Zypper commands that modify the system.\
   Always refresh metadata to ensure you get the latest package versions.
-</Callout>
 
 ***
 
@@ -316,9 +310,7 @@ Continue? [y/n/v/...? shows all options] (y): y
 (1/1) Removing unrar-5.7.5-lp151.1.1.x86_64 ..........................................[done]
 ```
 
-<Callout icon="triangle-alert">
-  Removing packages may also uninstall dependencies required by other applications. Double-check the list before confirming.
-</Callout>
+> **triangle-alert** Removing packages may also uninstall dependencies required by other applications. Double-check the list before confirming.
 
 ***
 

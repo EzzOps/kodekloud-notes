@@ -14,9 +14,7 @@ opentofu apply
 
 All three instances target the same filepath, so you end up with just **one** actual file on disk.
 
-<Callout icon="lightbulb">
-  Although Terraform plans three resources, they all write to `/root/user-data`. Use unique filenames or a loop index to avoid overwriting.
-</Callout>
+> **lightbulb** Although Terraform plans three resources, they all write to `/root/user-data`. Use unique filenames or a loop index to avoid overwriting.
 
 ***
 
@@ -132,11 +130,9 @@ local_sensitive_file.name["/root/user12"]: Creating...
 Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
 ```
 
-<Callout icon="lightbulb">
-  * Eliminates duplicates automatically
+> **lightbulb** * Eliminates duplicates automatically
   * Creates a map, so you can reference resources by key:\
     `local_sensitive_file.name["/root/user11"]`
-</Callout>
 
 ***
 
@@ -168,11 +164,9 @@ Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
 
 That’s a wrap for this lab. Happy automating!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/5793a08d-f6f5-4739-a570-1038b3ed8619" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/5793a08d-f6f5-4739-a570-1038b3ed8619)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/cdab854b-91b9-4e7f-bd0a-f409fa4b1021" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/cdab854b-91b9-4e7f-bd0a-f409fa4b1021)
 
 
 # Demo Data Sources
@@ -213,10 +207,8 @@ datasource "local_file" "os" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  1. The block keyword must be `data`, not `datasource`.
+> **triangle-alert** 1. The block keyword must be `data`, not `datasource`.
   2. The output reference requires the data source name (`os`).
-</Callout>
 
 ### Corrected Configuration
 
@@ -286,9 +278,7 @@ data "aws_s3_bucket" "selected" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  The argument `bucket_name` is invalid. The correct argument is `bucket`.
-</Callout>
+> **triangle-alert** The argument `bucket_name` is invalid. The correct argument is `bucket`.
 
 Correct configuration:
 
@@ -314,8 +304,6 @@ That completes this lesson on OpenTofu data sources. In upcoming modules, you’
 
 [aws-s3-docs]: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/s3_bucket
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/420e1e82-8822-4b98-b49c-feff9ec4c1c2" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/420e1e82-8822-4b98-b49c-feff9ec4c1c2)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/38d2db09-c3d2-4582-94a0-8fe0271ed1fe" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/38d2db09-c3d2-4582-94a0-8fe0271ed1fe)

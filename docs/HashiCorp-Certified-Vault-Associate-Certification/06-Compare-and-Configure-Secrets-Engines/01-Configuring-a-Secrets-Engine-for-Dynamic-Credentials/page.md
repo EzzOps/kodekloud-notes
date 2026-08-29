@@ -40,9 +40,7 @@ Response:
 Success! Data written to: aws/config/root
 ```
 
-<Callout icon="lightbulb">
-  Store your AWS root credentials securely (e.g., in [HashiCorp Vault Enterprise](https://www.vaultproject.io)) and restrict their scope.
-</Callout>
+> **lightbulb** Store your AWS root credentials securely (e.g., in [HashiCorp Vault Enterprise](https://www.vaultproject.io)) and restrict their scope.
 
 ### Database Example
 
@@ -63,9 +61,7 @@ Response:
 Success! Data written to: database/config/prod-database
 ```
 
-<Frame>
-  ![The image illustrates the configuration of a secrets engine for a database, showing Vault accessing different database platforms with credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878046/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Configuring-a-Secrets-Engine-for-Dynamic-Credentials/secrets-engine-database-configuration-vault.jpg)
-</Frame>
+![The image illustrates the configuration of a secrets engine for a database, showing Vault accessing different database platforms with credentials.](https://kodekloud.com/kk-media/image/upload/v1752878046/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Configuring-a-Secrets-Engine-for-Dynamic-Credentials/secrets-engine-database-configuration-vault.jpg)
 
 | Parameter         | Description                                                  |
 | ----------------- | ------------------------------------------------------------ |
@@ -86,9 +82,7 @@ Roles tell Vault which permissions to request or create when issuing credentials
 
 Create a Vault role for each AWS permission set or account:
 
-<Frame>
-  ![The image is a slide about configuring roles in a secrets engine, explaining that roles map to permissions on a platform, with an example using AWS. It includes a step to configure roles based on needed permissions and shows different role types like "Read Only" and "Full Admin."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878047/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Configuring-a-Secrets-Engine-for-Dynamic-Credentials/configuring-roles-secrets-engine-aws.jpg)
-</Frame>
+![The image is a slide about configuring roles in a secrets engine, explaining that roles map to permissions on a platform, with an example using AWS. It includes a step to configure roles based on needed permissions and shows different role types like "Read Only" and "Full Admin."](https://kodekloud.com/kk-media/image/upload/v1752878047/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Configuring-a-Secrets-Engine-for-Dynamic-Credentials/configuring-roles-secrets-engine-aws.jpg)
 
 Example role definitions:
 
@@ -100,9 +94,7 @@ Example role definitions:
 | shared-admin   | Cross-account Admin                              |
 | data-scientist | Data Scientist access in the analytics account   |
 
-<Frame>
-  ![The image is a diagram illustrating the configuration of roles in an AWS secrets engine, showing different accounts and their associated roles and permissions. It includes a list of roles and a visual representation of how these roles are assigned to various AWS accounts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878048/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Configuring-a-Secrets-Engine-for-Dynamic-Credentials/aws-secrets-engine-roles-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating the configuration of roles in an AWS secrets engine, showing different accounts and their associated roles and permissions. It includes a list of roles and a visual representation of how these roles are assigned to various AWS accounts.](https://kodekloud.com/kk-media/image/upload/v1752878048/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Configuring-a-Secrets-Engine-for-Dynamic-Credentials/aws-secrets-engine-roles-diagram.jpg)
 
 When you create a role, Vault attaches (or references) an IAM policy. For example:
 
@@ -117,9 +109,7 @@ vault write aws/roles/prod-read-only \
 
 Similarly, define SQL-based roles for each database connection:
 
-<Frame>
-  ![The image is a diagram illustrating the configuration of roles in a secrets engine for databases, showing different database instances and their associated roles. It includes labels like "prod-sql-01," "mysql-dev-03," and "oracle-db-22" with corresponding permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878049/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Configuring-a-Secrets-Engine-for-Dynamic-Credentials/secrets-engine-database-roles-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating the configuration of roles in a secrets engine for databases, showing different database instances and their associated roles. It includes labels like "prod-sql-01," "mysql-dev-03," and "oracle-db-22" with corresponding permissions.](https://kodekloud.com/kk-media/image/upload/v1752878049/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Configuring-a-Secrets-Engine-for-Dynamic-Credentials/secrets-engine-database-roles-diagram.jpg)
 
 Example for an Oracle database:
 
@@ -181,9 +171,7 @@ password         yRUSyd-vPYDg5NkU9kDg
 
 Vault’s dynamic Secrets Engines streamline credential management by centralizing access, automating rotation, and enforcing least privilege.
 
-<Frame>
-  ![The image is a summary slide outlining two steps for configuring a secrets engine to generate dynamic credentials, with a reminder about client authentication. It features colorful text and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878051/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Configuring-a-Secrets-Engine-for-Dynamic-Credentials/secrets-engine-dynamic-credentials-summary.jpg)
-</Frame>
+![The image is a summary slide outlining two steps for configuring a secrets engine to generate dynamic credentials, with a reminder about client authentication. It features colorful text and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878051/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Configuring-a-Secrets-Engine-for-Dynamic-Credentials/secrets-engine-dynamic-credentials-summary.jpg)
 
 1. Configure Vault’s engine with backend access.
 2. Define roles that encapsulate specific permission sets.
@@ -198,6 +186,4 @@ Vault’s dynamic Secrets Engines streamline credential management by centralizi
 * [Vault Authentication Methods](https://www.vaultproject.io/docs/auth)
 * [HashiCorp Vault Documentation](https://www.vaultproject.io/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/161f2aee-6786-405f-9117-1552267b6bef" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/161f2aee-6786-405f-9117-1552267b6bef)

@@ -34,7 +34,7 @@ This guide explores AWS EFS integration with Amazon EKS for shared, scalable fil
 
 Elastic File System (EFS) is AWS’s managed NFS service, seamlessly integrating with Amazon EKS to provide shared, scalable file storage for containers. In this guide, we’ll explore EFS essentials, Kubernetes integration, performance considerations, dynamic provisioning, and a cost–capacity comparison with EBS and S3.
 
-![The image is an introduction to AWS Elastic File System (EFS), equating it to a Network File System (NFS), with corresponding icons for each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862832/notes-assets/images/AWS-EKS-EKS-EFSElastic-File-System/aws-efs-nfs-introduction-icons.jpg)
+![The image is an introduction to AWS Elastic File System (EFS), equating it to a Network File System (NFS), with corresponding icons for each.](https://kodekloud.com/kk-media/image/upload/v1752862832/notes-assets/images/AWS-EKS-EKS-EFSElastic-File-System/aws-efs-nfs-introduction-icons.jpg)
 
 ## What Is Amazon EFS?
 
@@ -51,7 +51,7 @@ EFS delivers a fully managed, elastic NFS file system that automatically scales 
 | Automatic Scaling   | Grow or shrink storage capacity on demand, up to petabyte scale.    |
 | Fully Managed NFS   | AWS handles back-end storage, patches, and availability.            |
 
-![The image illustrates the benefits of EFS, showing a region with two availability zones, each containing a pod, and one zone featuring an EFS icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862833/notes-assets/images/AWS-EKS-EKS-EFSElastic-File-System/efs-benefits-availability-zones-pods.jpg)
+![The image illustrates the benefits of EFS, showing a region with two availability zones, each containing a pod, and one zone featuring an EFS icon.](https://kodekloud.com/kk-media/image/upload/v1752862833/notes-assets/images/AWS-EKS-EKS-EFSElastic-File-System/efs-benefits-availability-zones-pods.jpg)
 
 ## EFS Integration with Kubernetes
 
@@ -119,11 +119,11 @@ To use EFS in EKS, you perform infrastructure setup outside the cluster, then le
            claimName: efs-pvc
    ```
 
-![The image illustrates how Amazon EFS (Elastic File System) integrates with a Kubernetes cluster, showing components like VPC, subnets, nodes, pods, EFS mount points, IAM permissions, and security group policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862834/notes-assets/images/AWS-EKS-EKS-EFSElastic-File-System/amazon-efs-kubernetes-integration-diagram.jpg)
+![The image illustrates how Amazon EFS (Elastic File System) integrates with a Kubernetes cluster, showing components like VPC, subnets, nodes, pods, EFS mount points, IAM permissions, and security group policies.](https://kodekloud.com/kk-media/image/upload/v1752862834/notes-assets/images/AWS-EKS-EKS-EFSElastic-File-System/amazon-efs-kubernetes-integration-diagram.jpg)
 
 With the CSI driver, pods in any AZ can mount the same file system concurrently:
 
-![The image illustrates a diagram showing pods in two availability zones connected to an EFS mount point and a database.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862836/notes-assets/images/AWS-EKS-EKS-EFSElastic-File-System/pods-availability-zones-efs-database-diagram.jpg)
+![The image illustrates a diagram showing pods in two availability zones connected to an EFS mount point and a database.](https://kodekloud.com/kk-media/image/upload/v1752862836/notes-assets/images/AWS-EKS-EKS-EFSElastic-File-System/pods-availability-zones-efs-database-diagram.jpg)
 
 ## Performance and Workload Considerations
 
@@ -169,7 +169,7 @@ spec:
       storage: 1Gi
 ```
 
-![The image illustrates a dynamic provisioning setup with two availability zones, each containing a pod, connected to an EFS mount point for applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862837/notes-assets/images/AWS-EKS-EKS-EFSElastic-File-System/dynamic-provisioning-setup-availability-zones.jpg)
+![The image illustrates a dynamic provisioning setup with two availability zones, each containing a pod, connected to an EFS mount point for applications.](https://kodekloud.com/kk-media/image/upload/v1752862837/notes-assets/images/AWS-EKS-EKS-EFSElastic-File-System/dynamic-provisioning-setup-availability-zones.jpg)
 
 ## EFS vs. EBS vs. S3: Cost and Capacity Trade-offs
 
@@ -179,7 +179,7 @@ spec:
 | EBS          | Block, single-writer | Single AZ | \$        | High IOPS databases, low-latency apps |
 | S3           | Object               | Regional  | \$        | Backups, archives, static hosting     |
 
-![The image compares EFS and EBS, highlighting that file system size matters in EFS, volume is not a concern in EBS, and EBS and S3 are cheaper options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862838/notes-assets/images/AWS-EKS-EKS-EFSElastic-File-System/efs-ebs-comparison-file-size-costs.jpg)
+![The image compares EFS and EBS, highlighting that file system size matters in EFS, volume is not a concern in EBS, and EBS and S3 are cheaper options.](https://kodekloud.com/kk-media/image/upload/v1752862838/notes-assets/images/AWS-EKS-EKS-EFSElastic-File-System/efs-ebs-comparison-file-size-costs.jpg)
 
 Choose EFS for cross-AZ, multi-writer scenarios with POSIX semantics. Opt for EBS when you need high-performance block storage. Use S3 for inexpensive, scalable object storage.
 

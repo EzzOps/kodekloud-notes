@@ -60,11 +60,9 @@ AIMessage(
 
 That completes a concise walkthrough of constructing and exchanging messages with a chat-based language model. Subsequent sections can cover conversation history management, system-level instructions for role-based behavior, and advanced prompt design patterns.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/c67000e4-0960-4e50-a4e4-b8cb159f2f1e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/c67000e4-0960-4e50-a4e4-b8cb159f2f1e)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/0dfdfd01-a5b0-4e95-9ccd-49e5189bcd2e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/0dfdfd01-a5b0-4e95-9ccd-49e5189bcd2e)
 
 
 # Messages in ChatModel

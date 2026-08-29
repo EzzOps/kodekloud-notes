@@ -254,9 +254,7 @@ parameters:
   <img alt="A UI mockup titled &#x22;Conditionals in the UI&#x22; showing step 1 selected, a checked &#x22;Deploy application?&#x22; box, and a dropdown of deployment options (ec2, ecs, eks, lambda) with a hand cursor." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Design parameters to collect only what you need. Use `dependencies` to reveal advanced options, and prefer pickers (Entity/Owner/Repo) to reduce free-text errors.
-</Callout>
+> **lightbulb** Design parameters to collect only what you need. Use `dependencies` to reveal advanced options, and prefer pickers (Entity/Owner/Repo) to reduce free-text errors.
 
 Parameters build the UI and gather the input values you will reference inside `steps`. Next we look at how each step executes actions.
 
@@ -394,9 +392,7 @@ These outputs are rendered in the UI so the user can quickly navigate to the rep
   <img alt="A web dashboard showing a three-step pipeline with green checkmarks for Fetch Base (0s), Publish (2s) and Register (0s). Below are buttons labeled &#x22;Repository&#x22; and &#x22;Open in Catalog.&#x22;" />
 </Frame>
 
-<Callout icon="warning">
-  Do not store production secrets (API keys, passwords) in template outputs or in the generated repository content. Use secret management integrations and environment-specific provisioning steps where appropriate.
-</Callout>
+> **warning** Do not store production secrets (API keys, passwords) in template outputs or in the generated repository content. Use secret management integrations and environment-specific provisioning steps where appropriate.
 
 ***
 
@@ -425,6 +421,4 @@ Backstage templates let platform teams provide repeatable, self-service project 
 
 Map UI `parameters` into `steps.input.values`, use `{{ values.* }}` inside skeleton files, and reference step results with the `${{ steps['<id>'].output.<field> }}` syntax to build robust, reusable templates for your Backstage platform.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/1c7142e3-0cb6-40ae-b5b6-77252f8c85b2/lesson/06e9b1ea-6172-4691-8d16-a08c58d49087" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/1c7142e3-0cb6-40ae-b5b6-77252f8c85b2/lesson/06e9b1ea-6172-4691-8d16-a08c58d49087)

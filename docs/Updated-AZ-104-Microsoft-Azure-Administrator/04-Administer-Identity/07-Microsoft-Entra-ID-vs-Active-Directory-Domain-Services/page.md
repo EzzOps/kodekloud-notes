@@ -12,9 +12,7 @@ Microsoft Entra ID is built for today’s cloud-first environment by utilizing w
 
 Conversely, Active Directory Domain Services relies heavily on LDAP, a protocol that was developed with on-premises, network-restricted environments in mind. While AD DS supports Kerberos for secure authentication, it lacks the flexibility required for seamless integration with modern web applications.
 
-<Callout icon="lightbulb">
-  Active Directory works best in controlled, on-premises environments, whereas Microsoft Entra ID is optimized for scalable, cloud-based operations.
-</Callout>
+> **lightbulb** Active Directory works best in controlled, on-premises environments, whereas Microsoft Entra ID is optimized for scalable, cloud-based operations.
 
 ## Federation and Integration
 
@@ -34,9 +32,7 @@ Microsoft Entra ID delivers a seamless single sign-on (SSO) experience, allowing
 
 In comparison, achieving a similar level of integrated sign-on with Active Directory is more challenging, especially when extending services beyond the corporate network.
 
-<Callout icon="triangle-alert">
-  Organizations transitioning from Active Directory to a cloud-based identity solution should plan carefully and evaluate synchronization tools like Entra ID Connect to bridge on-premises and cloud environments.
-</Callout>
+> **triangle-alert** Organizations transitioning from Active Directory to a cloud-based identity solution should plan carefully and evaluate synchronization tools like Entra ID Connect to bridge on-premises and cloud environments.
 
 ## Summary
 
@@ -44,6 +40,4 @@ In summary, Microsoft Entra ID is designed for the modern workplace. It offers e
 
 Next, let's explore the different editions of Microsoft Entra ID.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/07e3a37e-65a9-430c-9919-011cc605b25d/lesson/299d0542-91cd-4578-883e-11f7ac996348" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/07e3a37e-65a9-430c-9919-011cc605b25d/lesson/299d0542-91cd-4578-883e-11f7ac996348)

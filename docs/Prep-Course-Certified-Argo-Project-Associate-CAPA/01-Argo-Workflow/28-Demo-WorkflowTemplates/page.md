@@ -105,9 +105,7 @@ Notes:
 * `first-step` references the `cowsay` template inside `cowsay-template` using `templateRef`.
 * This pattern enables modular composition: mix local templates and external templates as needed.
 
-<Callout icon="lightbulb">
-  WorkflowTemplates are namespace-scoped. To reuse templates across namespaces, use a ClusterWorkflowTemplate (cluster-scoped) or ensure both your Workflow and WorkflowTemplate are in the same namespace. See the ClusterWorkflowTemplate documentation for details: [ClusterWorkflowTemplate](https://argoproj.github.io/argo-workflows/workflow-templates/#clusterworkflowtemplate).
-</Callout>
+> **lightbulb** WorkflowTemplates are namespace-scoped. To reuse templates across namespaces, use a ClusterWorkflowTemplate (cluster-scoped) or ensure both your Workflow and WorkflowTemplate are in the same namespace. See the ClusterWorkflowTemplate documentation for details: [ClusterWorkflowTemplate](https://argoproj.github.io/argo-workflows/workflow-templates/#clusterworkflowtemplate).
 
 ## Submitting and viewing Workflows that reference WorkflowTemplates
 
@@ -155,6 +153,4 @@ You can also view the resolved manifest used to run the Workflow in the UI, whic
 * ClusterWorkflowTemplate: [https://argoproj.github.io/argo-workflows/workflow-templates/#clusterworkflowtemplate](https://argoproj.github.io/argo-workflows/workflow-templates/#clusterworkflowtemplate)
 * Kubernetes kubectl apply: [https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/7fd60c67-290c-4eb8-a6d6-47ad6a9ea72c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/7fd60c67-290c-4eb8-a6d6-47ad6a9ea72c)

@@ -2,9 +2,7 @@
 $ terraform import aws_instance.webserver-2 i-026e13be10d5326f7
 ```
 
-<Callout icon="triangle-alert">
-  Before running the import command, ensure that the corresponding configuration exists. If the resource block isn't defined, Terraform will return an error.
-</Callout>
+> **triangle-alert** Before running the import command, ensure that the corresponding configuration exists. If the resource block isn't defined, Terraform will return an error.
 
 If the resource configuration hasn’t been created, you might see an error like:
 
@@ -70,9 +68,7 @@ aws_instance.webserver-2: Refreshing state... [id=i-0d7c0088069819ff8]
 No changes. Infrastructure is up-to-date.
 ```
 
-<Callout icon="lightbulb">
-  This output confirms that Terraform has successfully imported the resource. Any future changes to the infrastructure can be managed by modifying this configuration and following the standard Terraform workflow: init, plan, and apply.
-</Callout>
+> **lightbulb** This output confirms that Terraform has successfully imported the resource. Any future changes to the infrastructure can be managed by modifying this configuration and following the standard Terraform workflow: init, plan, and apply.
 
 ## Next Steps
 
@@ -84,11 +80,9 @@ For further information, check out:
 * [AWS Documentation](https://docs.aws.amazon.com/)
 * [Terraform Import Guide](https://www.terraform.io/cli/import)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/29825b4d-c0d3-4732-a4e0-ec3a2988e2a3/lesson/bcdec6a0-4ac8-4995-8374-2e6af2aaf68a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/29825b4d-c0d3-4732-a4e0-ec3a2988e2a3/lesson/bcdec6a0-4ac8-4995-8374-2e6af2aaf68a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/29825b4d-c0d3-4732-a4e0-ec3a2988e2a3/lesson/2ad6df8d-66d1-41e1-be9d-b78f0c1065e6" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/29825b4d-c0d3-4732-a4e0-ec3a2988e2a3/lesson/2ad6df8d-66d1-41e1-be9d-b78f0c1065e6)
 
 
 # Terraform Taint
@@ -103,9 +97,7 @@ In this article, we explain how to use Terraform’s taint and untaint commands 
 
 Terraform marks a resource as tainted when it encounters errors during creation, such as a failed provisioner command. A tainted resource is scheduled for replacement during the next apply. Conversely, you can use the untaint command to clear this status and prevent a replacement.
 
-<Callout icon="lightbulb">
-  Using taint and untaint commands allows for efficient control of resource lifecycle without a complete destroy and reapply cycle.
-</Callout>
+> **lightbulb** Using taint and untaint commands allows for efficient control of resource lifecycle without a complete destroy and reapply cycle.
 
 ## Scenario: Tainted Resource due to Provisioner Failure
 

@@ -25,13 +25,11 @@ Before you start, ensure you have Python 3.7+ installed.
 pip install openai
 ```
 
-<Callout icon="lightbulb">
-  Set your API key in an environment variable to keep it secure:
+> **lightbulb** Set your API key in an environment variable to keep it secure:
 
   ```bash theme={null}
   export OPENAI_API_KEY="YOUR_API_KEY_HERE"
   ```
-</Callout>
 
 Then import and configure the client:
 
@@ -97,9 +95,7 @@ Example response structure:
 }
 ```
 
-<Callout icon="lightbulb">
-  If `flagged` is `false`, you can skip deep inspection and call the generation API directly.
-</Callout>
+> **lightbulb** If `flagged` is `false`, you can skip deep inspection and call the generation API directly.
 
 ***
 
@@ -157,15 +153,13 @@ Detailed output snippet:
 }
 ```
 
-<Callout icon="triangle-alert">
-  Always stop the generation pipeline when `flagged: true` to prevent unsafe content.\
+> **triangle-alert** Always stop the generation pipeline when `flagged: true` to prevent unsafe content.\
   Example handling:
 
   ```python theme={null}
   if result.flagged:
       print("🚫 STOP: Content violates policy.")
   ```
-</Callout>
 
 ***
 
@@ -189,8 +183,6 @@ By integrating a quick moderation step, you’ll ensure safer, more compliant, a
 
 [sdk]: https://github.com/openai/openai-python
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/dca602e2-9f4b-4aa3-b03c-4dc3004871e5/lesson/4d4f76e2-528f-43e9-a8c7-05d2d9ac47af" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/dca602e2-9f4b-4aa3-b03c-4dc3004871e5/lesson/4d4f76e2-528f-43e9-a8c7-05d2d9ac47af)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/dca602e2-9f4b-4aa3-b03c-4dc3004871e5/lesson/2705e60e-df68-4542-a6d0-9bfe2f84c1ff" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/dca602e2-9f4b-4aa3-b03c-4dc3004871e5/lesson/2705e60e-df68-4542-a6d0-9bfe2f84c1ff)

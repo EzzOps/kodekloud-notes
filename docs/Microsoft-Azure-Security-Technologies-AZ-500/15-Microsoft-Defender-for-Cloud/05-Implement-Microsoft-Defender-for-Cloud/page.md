@@ -50,15 +50,11 @@ To onboard and configure Microsoft Defender for Cloud:
 2. Navigate to the Microsoft Defender for Cloud section.
 3. If no plan is currently enabled, the portal displays a summary of six available resources that can be upgraded or activated. A 30-day free trial is available for many features.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal interface for Microsoft Defender for Cloud, displaying subscription details and resource costs. It includes options for enabling Defender on subscriptions and a breakdown of resources and their associated costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882031/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Microsoft-Defender-for-Cloud/azure-portal-defender-cloud-costs.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal interface for Microsoft Defender for Cloud, displaying subscription details and resource costs. It includes options for enabling Defender on subscriptions and a breakdown of resources and their associated costs.](https://kodekloud.com/kk-media/image/upload/v1752882031/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Microsoft-Defender-for-Cloud/azure-portal-defender-cloud-costs.jpg)
 
 For custom configurations, access the environment settings under the tenant root group. Then, select the desired subscription and tailor the settings to activate the specific plans you need.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal's "Defender plans" settings page, detailing Cloud Security Posture Management (CSPM) and Cloud Workload Protection (CWP) plans, including pricing, resource quantity, and monitoring coverage options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882032/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Microsoft-Defender-for-Cloud/azure-defender-plans-cspm-cwp.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal's "Defender plans" settings page, detailing Cloud Security Posture Management (CSPM) and Cloud Workload Protection (CWP) plans, including pricing, resource quantity, and monitoring coverage options.](https://kodekloud.com/kk-media/image/upload/v1752882032/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Microsoft-Defender-for-Cloud/azure-defender-plans-cspm-cwp.jpg)
 
 ### Configuring Server Plans
 
@@ -70,9 +66,7 @@ Within the Azure Portal, you can enable specific security plans for servers:
 * **Log Analytics Agent and Custom Workspace:**\
   By default, a Log Analytics Agent is installed automatically when a machine is created. You have the flexibility to change this configuration and link the machine to a custom workspace via the configuration settings.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for "Settings & monitoring" under "Defender plans: Servers," detailing components like Log Analytics agent, vulnerability assessment, endpoint protection, and agentless scanning, with options to configure and toggle their status on or off.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882033/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Microsoft-Defender-for-Cloud/azure-defender-settings-monitoring.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for "Settings & monitoring" under "Defender plans: Servers," detailing components like Log Analytics agent, vulnerability assessment, endpoint protection, and agentless scanning, with options to configure and toggle their status on or off.](https://kodekloud.com/kk-media/image/upload/v1752882033/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Microsoft-Defender-for-Cloud/azure-defender-settings-monitoring.jpg)
 
 ### Additional Protection Options
 
@@ -85,24 +79,16 @@ Within the Azure Portal, you can enable specific security plans for servers:
 * **Other Service Plans:**\
   You can also activate plans for App Services and databases. For example, when securing SQL Server workloads, you may enable the Azure Monitoring Agent (currently in preview) as an alternative to the default Log Analytics agent.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal displaying the "Defender plans" settings for cloud workload protection, detailing various plans, pricing, resource quantities, monitoring coverage, and status options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882034/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Microsoft-Defender-for-Cloud/azure-portal-defender-plans-settings.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal displaying the "Defender plans" settings for cloud workload protection, detailing various plans, pricing, resource quantities, monitoring coverage, and status options.](https://kodekloud.com/kk-media/image/upload/v1752882034/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Microsoft-Defender-for-Cloud/azure-portal-defender-plans-settings.jpg)
 
 After making your configuration changes, click "Save" to activate a 30-day free trial. During deployment, Defender for Cloud applies security benchmarks across all resources, auditing your environment through a series of policies to ensure compliance with your chosen security settings.
 
-<Callout icon="lightbulb">
-  Always verify the selected workspace in the settings and monitoring section to ensure that your data is routed to the intended workspace. Misconfigured workspaces can lead to data discrepancies in your monitoring reports.
-</Callout>
+> **lightbulb** Always verify the selected workspace in the settings and monitoring section to ensure that your data is routed to the intended workspace. Misconfigured workspaces can lead to data discrepancies in your monitoring reports.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying settings for Defender plans, including Cloud Security Posture Management (CSPM) and Cloud Workload Protection (CWP) with details on plans, pricing, resource quantity, and monitoring coverage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882035/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Microsoft-Defender-for-Cloud/azure-portal-defender-plans-settings-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying settings for Defender plans, including Cloud Security Posture Management (CSPM) and Cloud Workload Protection (CWP) with details on plans, pricing, resource quantity, and monitoring coverage.](https://kodekloud.com/kk-media/image/upload/v1752882035/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Microsoft-Defender-for-Cloud/azure-portal-defender-plans-settings-2.jpg)
 
 ## Next Steps
 
 With the implementation and configuration of Microsoft Defender for Cloud complete, your security benchmarks are now active and continuous monitoring is in place. In the next phase, we will explore cloud policies to further enhance and maintain your security posture. For more information and related guides, consider checking out [Microsoft Defender documentation](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/aea85892-224f-4bd2-8013-e36764e15f37/lesson/178f3748-4c82-4fe0-a16f-ec5b85f1f9b1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/aea85892-224f-4bd2-8013-e36764e15f37/lesson/178f3748-4c82-4fe0-a16f-ec5b85f1f9b1)

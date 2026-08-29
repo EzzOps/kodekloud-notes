@@ -27,9 +27,7 @@ cloud-init-output.log kern.log           kern.log.1
 dist-upgrade         kern.log.2.gz      dmesg
 ```
 
-<Callout icon="lightbulb">
-  Most log files under `/var/log` are restricted to the root user. If you need to view these logs as a non-root user, consider switching to root using commands like `su --login` or `sudo --login`.
-</Callout>
+> **lightbulb** Most log files under `/var/log` are restricted to the root user. If you need to view these logs as a non-root user, consider switching to root using commands like `su --login` or `sudo --login`.
 
 For example:
 
@@ -170,9 +168,7 @@ Feb 08 21:09:19 kodekloud systemd[1]: Failed to listen on multipathd control soc
 Mar 03 00:33:14 kodekloud systemd[1]: Failed to start Refresh fwupd metadata and update motd.
 ```
 
-<Callout icon="lightbulb">
-  If you forget the priority names, type `journalctl -p ` (with a trailing space) and press Tab twice to list all available options.
-</Callout>
+> **lightbulb** If you forget the priority names, type `journalctl -p ` (with a trailing space) and press Tab twice to list all available options.
 
 ### Combining Filters with Regex
 
@@ -262,8 +258,6 @@ In this article, we explored how to locate and analyze system log files in Linux
 
 Happy logging!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/afbb2789-685b-4626-9603-40820eed1561" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/afbb2789-685b-4626-9603-40820eed1561)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/022471a1-2837-49e3-83e7-04d2b0b193e2" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/022471a1-2837-49e3-83e7-04d2b0b193e2)

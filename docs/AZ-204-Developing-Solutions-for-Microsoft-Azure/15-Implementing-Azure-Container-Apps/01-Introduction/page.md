@@ -17,6 +17,6 @@ We will cover the following topics:
 
 Let's begin by exploring the fundamentals of Azure Container Apps.
 
-![The image is an introduction slide outlining four topics related to Azure Container Apps, including exploration, deployment, authentication, and revisions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866615/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Introduction/azure-container-apps-introduction.jpg)
+![The image is an introduction slide outlining four topics related to Azure Container Apps, including exploration, deployment, authentication, and revisions.](https://kodekloud.com/kk-media/image/upload/v1752866615/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Introduction/azure-container-apps-introduction.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/az-204-developing-solutions-for-microsoft-azure/module/8ecdad92-d6a0-4292-9798-efa24d97f567/lesson/5a316cb1-4a12-4649-88da-79a59c8fbf5c)

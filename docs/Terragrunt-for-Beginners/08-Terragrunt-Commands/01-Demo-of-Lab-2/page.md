@@ -12,9 +12,7 @@ In this lesson, we’ll authenticate into a temporary AWS lab account, inspect o
 
 When the lab starts, you’ll receive a URL and temporary credentials:
 
-<Frame>
-  ![The image shows a split-screen view with an AWS login page on the left, displaying credentials for a Terragrunt lab, and a Visual Studio Code editor on the right with instructions for using the terminal.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884312/notes-assets/images/Terragrunt-for-Beginners-Demo-of-Lab-2/aws-login-terragrunt-vscode-terminal.jpg)
-</Frame>
+![The image shows a split-screen view with an AWS login page on the left, displaying credentials for a Terragrunt lab, and a Visual Studio Code editor on the right with instructions for using the terminal.](https://kodekloud.com/kk-media/image/upload/v1752884312/notes-assets/images/Terragrunt-for-Beginners-Demo-of-Lab-2/aws-login-terragrunt-vscode-terminal.jpg)
 
 1. Open the provided URL in your browser.
 2. Log in with the displayed username and password.
@@ -24,9 +22,7 @@ When the lab starts, you’ll receive a URL and temporary credentials:
    show creds
    ```
 
-<Callout icon="triangle-alert">
-  This lab account has limited AWS permissions. Only perform the tasks outlined in this lesson to avoid permission errors.
-</Callout>
+> **triangle-alert** This lab account has limited AWS permissions. Only perform the tasks outlined in this lesson to avoid permission errors.
 
 ***
 
@@ -122,9 +118,7 @@ EOF
 }
 ```
 
-<Callout icon="lightbulb">
-  Locking the AWS provider version prevents unexpected breaking changes when Terraform and modules update.
-</Callout>
+> **lightbulb** Locking the AWS provider version prevents unexpected breaking changes when Terraform and modules update.
 
 ***
 
@@ -178,9 +172,7 @@ Apply complete! Resources: 13 added, 0 changed, 0 destroyed.
 
 In the AWS console (US East 1), verify your VPC:
 
-<Frame>
-  ![The image shows an AWS VPC dashboard with a list of virtual private clouds (VPCs). It displays details such as VPC ID, state, and CIDR information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884313/notes-assets/images/Terragrunt-for-Beginners-Demo-of-Lab-2/aws-vpc-dashboard-virtual-private-clouds.jpg)
-</Frame>
+![The image shows an AWS VPC dashboard with a list of virtual private clouds (VPCs). It displays details such as VPC ID, state, and CIDR information.](https://kodekloud.com/kk-media/image/upload/v1752884313/notes-assets/images/Terragrunt-for-Beginners-Demo-of-Lab-2/aws-vpc-dashboard-virtual-private-clouds.jpg)
 
 ***
 
@@ -209,8 +201,6 @@ The AWS console will now only list the default VPC.
 * [Terraform AWS VPC Module](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest)
 * [AWS VPC Guide](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/e42961fc-4288-4cc2-8db8-3882b884c0b1/lesson/d62aa81f-8965-4488-a3cc-d145cdb4ce7e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/e42961fc-4288-4cc2-8db8-3882b884c0b1/lesson/d62aa81f-8965-4488-a3cc-d145cdb4ce7e)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/e42961fc-4288-4cc2-8db8-3882b884c0b1/lesson/823f841c-aaca-4817-8069-d22e6278231c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/e42961fc-4288-4cc2-8db8-3882b884c0b1/lesson/823f841c-aaca-4817-8069-d22e6278231c)

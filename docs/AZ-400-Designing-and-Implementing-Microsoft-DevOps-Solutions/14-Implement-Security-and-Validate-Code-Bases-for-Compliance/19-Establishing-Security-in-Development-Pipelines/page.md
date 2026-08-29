@@ -19,7 +19,7 @@ Below are the four fundamental areas you must address to lock down your developm
 
 > **lightbulb** Regularly review and rotate credentials, secrets, and tokens. Leverage secret management solutions like Azure Key Vault or HashiCorp Vault to avoid hard-coding sensitive data.
 
-![The image outlines strategies for establishing security in pipelines, including secure access management, CI/CD pipeline integrity, permission governance, and proactive vulnerability detection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868004/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Establishing-Security-in-Development-Pipelines/security-strategies-pipelines-access-management.jpg)
+![The image outlines strategies for establishing security in pipelines, including secure access management, CI/CD pipeline integrity, permission governance, and proactive vulnerability detection.](https://kodekloud.com/kk-media/image/upload/v1752868004/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Establishing-Security-in-Development-Pipelines/security-strategies-pipelines-access-management.jpg)
 
 ## Advanced Deployment Pipeline Strategies
 
@@ -51,7 +51,7 @@ To further enhance your security posture, incorporate these eight practices into
 
 > **triangle-alert** When enabling Just-In-Time access, always define strict time windows and approval workflows. Uncontrolled privileged sessions increase your attack surface.
 
-![The image is an infographic titled "Establishing Security in Pipelines," outlining various security measures such as strategic security guidance, attack analysis, and leveraging Azure machine learning. It emphasizes optimizing deployment pipelines with comprehensive security strategies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868005/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Establishing-Security-in-Development-Pipelines/establishing-security-in-pipelines-infographic.jpg)
+![The image is an infographic titled "Establishing Security in Pipelines," outlining various security measures such as strategic security guidance, attack analysis, and leveraging Azure machine learning. It emphasizes optimizing deployment pipelines with comprehensive security strategies.](https://kodekloud.com/kk-media/image/upload/v1752868005/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Establishing-Security-in-Development-Pipelines/establishing-security-in-pipelines-infographic.jpg)
 
 By layering these strategies, you’ll create a defense-in-depth approach that secures identities, infrastructure, and code throughout the development lifecycle.
 

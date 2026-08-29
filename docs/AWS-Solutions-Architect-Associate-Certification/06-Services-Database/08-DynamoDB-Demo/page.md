@@ -19,7 +19,7 @@ When creating the table, choose a partition key (and optionally a sort key) that
 
 Below is a screenshot of the Orders table creation interface:
 
-![The image shows a screenshot of the AWS DynamoDB console where a user is creating a new table named "orders" with a partition key "customerId" of type String. There are options for table settings at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865139/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-console-create-orders-table.jpg)
+![The image shows a screenshot of the AWS DynamoDB console where a user is creating a new table named "orders" with a partition key "customerId" of type String. There are options for table settings at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752865139/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-console-create-orders-table.jpg)
 
 ***
 
@@ -36,15 +36,15 @@ After specifying the keys, you can choose default settings or customize them:
 
 Review the screenshots below to understand the settings configuration:
 
-![The image shows an AWS DynamoDB console interface where table settings and capacity options are being configured. It includes options for table class and read/write capacity settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865140/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-console-table-settings.jpg)
+![The image shows an AWS DynamoDB console interface where table settings and capacity options are being configured. It includes options for table class and read/write capacity settings.](https://kodekloud.com/kk-media/image/upload/v1752865140/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-console-table-settings.jpg)
 
-![The image shows the AWS DynamoDB console with settings for configuring read/write capacity, including options for auto-scaling and specifying minimum and maximum capacity units.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865141/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-console-capacity-settings.jpg)
+![The image shows the AWS DynamoDB console with settings for configuring read/write capacity, including options for auto-scaling and specifying minimum and maximum capacity units.](https://kodekloud.com/kk-media/image/upload/v1752865141/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-console-capacity-settings.jpg)
 
 After setting the capacity and reviewing additional options like secondary indexes, encryption settings, and deletion protection, click the button to create the table. The creation process should take a few seconds until the table's status becomes “active.”
 
 Below is an image showing the active table:
 
-![The image shows an AWS DynamoDB console with a table named "orders" that is active, displaying details like partition key, sort key, and capacity modes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865142/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-console-orders-table.jpg)
+![The image shows an AWS DynamoDB console with a table named "orders" that is active, displaying details like partition key, sort key, and capacity modes.](https://kodekloud.com/kk-media/image/upload/v1752865142/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-console-orders-table.jpg)
 
 ***
 
@@ -58,9 +58,9 @@ After creation, select your orders table from the console to view an overview of
 
 Refer to the images below for an overview and monitoring dashboard:
 
-![The image shows an AWS DynamoDB console interface displaying general information, item summary, and table capacity metrics for a database table. The table is active with no items currently stored.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865143/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-console-table-metrics.jpg)
+![The image shows an AWS DynamoDB console interface displaying general information, item summary, and table capacity metrics for a database table. The table is active with no items currently stored.](https://kodekloud.com/kk-media/image/upload/v1752865143/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-console-table-metrics.jpg)
 
-![The image shows an AWS DynamoDB monitoring dashboard with various metrics such as read and write usage, throttled requests, and latency for a table named "orders." The graphs display data points and indicate no throttled requests or events.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865144/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-monitoring-dashboard-orders.jpg)
+![The image shows an AWS DynamoDB monitoring dashboard with various metrics such as read and write usage, throttled requests, and latency for a table named "orders." The graphs display data points and indicate no throttled requests or events.](https://kodekloud.com/kk-media/image/upload/v1752865144/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-monitoring-dashboard-orders.jpg)
 
 ***
 
@@ -68,7 +68,7 @@ Refer to the images below for an overview and monitoring dashboard:
 
 To populate your table with data, navigate to **Explore Table Items**. Since the table is initially empty, you will see a message indicating no items and minimal read capacity usage:
 
-![The image shows the AWS DynamoDB console with a table named "orders" selected. It displays a scan operation with no items returned and a message indicating that 0.5 read capacity units were consumed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865146/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-console-orders-scan.jpg)
+![The image shows the AWS DynamoDB console with a table named "orders" selected. It displays a scan operation with no items returned and a message indicating that 0.5 read capacity units were consumed.](https://kodekloud.com/kk-media/image/upload/v1752865146/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-console-orders-scan.jpg)
 
 Click **Create item** and populate the required fields:
 
@@ -82,11 +82,11 @@ You can add additional attributes, such as:
 
 The following image shows the item creation interface:
 
-![The image shows an AWS DynamoDB interface for creating an item, with fields for "customerId" and "orderId" as attributes. There are options to add new attributes and buttons to cancel or create the item.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865146/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-create-item-interface.jpg)
+![The image shows an AWS DynamoDB interface for creating an item, with fields for "customerId" and "orderId" as attributes. There are options to add new attributes and buttons to cancel or create the item.](https://kodekloud.com/kk-media/image/upload/v1752865146/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-create-item-interface.jpg)
 
 Add further attributes as needed:
 
-![The image shows an AWS DynamoDB console where a user is creating an item with attributes like customerId, orderId, price, and NewValue.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865148/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-create-item-attributes.jpg)
+![The image shows an AWS DynamoDB console where a user is creating an item with attributes like customerId, orderId, price, and NewValue.](https://kodekloud.com/kk-media/image/upload/v1752865148/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-create-item-attributes.jpg)
 
 For demonstration purposes, add the following orders:
 
@@ -110,11 +110,11 @@ For demonstration purposes, add the following orders:
 
 The image below shows another item creation interface:
 
-![The image shows an AWS DynamoDB interface for creating an item with attributes like customerId, orderId, price, and delivered status. The "Create item" button is highlighted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865149/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-create-item-interface-2.jpg)
+![The image shows an AWS DynamoDB interface for creating an item with attributes like customerId, orderId, price, and delivered status. The "Create item" button is highlighted.](https://kodekloud.com/kk-media/image/upload/v1752865149/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-create-item-interface-2.jpg)
 
 And a final form view:
 
-![The image shows a form in the AWS DynamoDB console for creating an item with attributes like customerId, orderId, price, and a boolean for delivered status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865151/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-create-item-form.jpg)
+![The image shows a form in the AWS DynamoDB console for creating an item with attributes like customerId, orderId, price, and a boolean for delivered status.](https://kodekloud.com/kk-media/image/upload/v1752865151/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-create-item-form.jpg)
 
 After adding these items, you will have three orders stored in your table.
 
@@ -129,7 +129,7 @@ Queries are more efficient than scans, so use them to retrieve specific data bas
 
 See the example below:
 
-![The image shows an AWS DynamoDB console interface with a query on the "orders" table, displaying two returned items with details like customer ID, order ID, delivery status, and price.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865152/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-console-orders-query-2.jpg)
+![The image shows an AWS DynamoDB console interface with a query on the "orders" table, displaying two returned items with details like customer ID, order ID, delivery status, and price.](https://kodekloud.com/kk-media/image/upload/v1752865152/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-console-orders-query-2.jpg)
 
 To retrieve orders for customer two, simply change the partition key to “cust2”.
 
@@ -141,7 +141,7 @@ For more refined searches, you can apply filters. For example, to retrieve only 
 
 A filtered query example is displayed below:
 
-![The image shows the AWS DynamoDB console with a query filtering items from the "orders" table where the price is greater than 60. One item is returned with customerId "CUST-1" and orderId "ORDER-10".](../../../../images/kodekloud.com/kk-media/image/upload/v1752865154/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-query-orders-filter.jpg)
+![The image shows the AWS DynamoDB console with a query filtering items from the "orders" table where the price is greater than 60. One item is returned with customerId "CUST-1" and orderId "ORDER-10".](https://kodekloud.com/kk-media/image/upload/v1752865154/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-query-orders-filter.jpg)
 
 ***
 
@@ -149,7 +149,7 @@ A filtered query example is displayed below:
 
 To update an existing item, select it from the table view and click **Edit item**. For instance, you might update the price from 100 to 120 if the order cost has changed:
 
-![The image shows an AWS DynamoDB console where an item is being edited with attributes like customerId, orderId, delivered, and price.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865155/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-console-edit-item.jpg)
+![The image shows an AWS DynamoDB console where an item is being edited with attributes like customerId, orderId, delivered, and price.](https://kodekloud.com/kk-media/image/upload/v1752865155/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-console-edit-item.jpg)
 
 After making the changes, save your updates.
 
@@ -171,7 +171,7 @@ For further details on PartiQL, check out the [DynamoDB Documentation](https://d
 
 To monitor your table's performance, navigate to the **Monitor** tab in the DynamoDB Console. Here you can review CloudWatch metrics such as read/write usage, latency, and throttled requests.
 
-![The image shows an AWS DynamoDB console screen displaying the monitoring tab for an "orders" table, with CloudWatch metrics and insights.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865156/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-orders-monitoring-tab.jpg)
+![The image shows an AWS DynamoDB console screen displaying the monitoring tab for an "orders" table, with CloudWatch metrics and insights.](https://kodekloud.com/kk-media/image/upload/v1752865156/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Demo/aws-dynamodb-orders-monitoring-tab.jpg)
 
 When your demonstration is complete and you wish to clean up resources, simply select the table, click **Delete**, and confirm the deletion.
 

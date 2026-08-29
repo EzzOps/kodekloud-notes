@@ -32,9 +32,7 @@ default
 root
 ```
 
-<Callout icon="lightbulb">
-  Vault always provides a `default` and `root` policy. Custom policies appear alongside these.
-</Callout>
+> **lightbulb** Vault always provides a `default` and `root` policy. Custom policies appear alongside these.
 
 ## 2. Writing (Creating or Updating) a Policy
 
@@ -58,9 +56,7 @@ Steps breakdown:
 4. `admin-policy` – policy name
 5. `/tmp/admin.hcl` – HCL file path
 
-<Callout icon="lightbulb">
-  Ensure the HCL file path is correct and accessible. Relative or absolute paths both work.
-</Callout>
+> **lightbulb** Ensure the HCL file path is correct and accessible. Relative or absolute paths both work.
 
 ## 3. Reading a Policy
 
@@ -86,9 +82,7 @@ Expected output:
 Success! Deleted policy: admin-policy
 ```
 
-<Callout icon="triangle-alert">
-  Deleting a policy is irreversible. Make sure it’s no longer in use by any Vault tokens or roles.
-</Callout>
+> **triangle-alert** Deleting a policy is irreversible. Make sure it’s no longer in use by any Vault tokens or roles.
 
 ## 5. Formatting a Policy File
 

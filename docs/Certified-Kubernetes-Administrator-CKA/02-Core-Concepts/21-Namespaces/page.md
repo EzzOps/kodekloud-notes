@@ -10,7 +10,7 @@ In this lesson, we explore the concept of namespaces in Kubernetes and how they 
 
 Imagine there are two boys named Mark. To differentiate between them, you refer to them by their last names—Smith and Williams. They come from different houses where people often use first names for those familiar with them. However, when addressing someone from another house or an outsider, the full name is used. In Kubernetes, these "houses" represent namespaces. They allow you to group and manage resources differently based on their context and intended use.
 
-![The image shows two houses labeled "Mark Smith" and "Mark Williams," with speech bubbles indicating confusion between the two names.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869726/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Namespaces/frame_70.jpg)
+![The image shows two houses labeled "Mark Smith" and "Mark Williams," with speech bubbles indicating confusion between the two names.](https://kodekloud.com/kk-media/image/upload/v1752869726/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Namespaces/frame_70.jpg)
 
 ## Default Namespace and System Namespaces
 
@@ -21,17 +21,17 @@ By default, when you create objects such as pods, deployments, and services in y
 
 > **lightbulb** If you're running a small environment or a personal cluster for learning, you might predominantly use the default namespace. In enterprise or production environments, however, namespaces provide essential isolation and resource management by allowing environments like development and production to coexist on the same cluster.
 
-![The image illustrates Kubernetes namespace isolation with three houses labeled "kube-system," "Default," and "kube-public," each containing a circle, triangle, and square.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869727/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Namespaces/frame_160.jpg)
+![The image illustrates Kubernetes namespace isolation with three houses labeled "kube-system," "Default," and "kube-public," each containing a circle, triangle, and square.](https://kodekloud.com/kk-media/image/upload/v1752869727/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Namespaces/frame_160.jpg)
 
 ## Isolating Resources with Namespaces
 
 Namespaces allow you to set distinct policies and resource limits for different environments. This isolation prevents one namespace from interfering with another. For instance, you can apply separate resource quotas for CPU, memory, and the total number of pods to ensure fair usage across environments.
 
-![The image illustrates Kubernetes namespace resource limits across nodes, showing different environments (Default, Prod, Dev) with associated icons and resource distribution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869729/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Namespaces/frame_200.jpg)
+![The image illustrates Kubernetes namespace resource limits across nodes, showing different environments (Default, Prod, Dev) with associated icons and resource distribution.](https://kodekloud.com/kk-media/image/upload/v1752869729/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Namespaces/frame_200.jpg)
 
 Within a single namespace, resources can refer to each other directly via their simple names. For example, a web application pod in the default namespace can access a database service simply by using its service name:
 
-![The image depicts a diagram with a house shape labeled "Default," containing a circle, triangle, and square labeled "web-pod," "db-service," and "web-deployment," respectively.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869730/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Namespaces/frame_220.jpg)
+![The image depicts a diagram with a house shape labeled "Default," containing a circle, triangle, and square labeled "web-pod," "db-service," and "web-deployment," respectively.](https://kodekloud.com/kk-media/image/upload/v1752869730/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Namespaces/frame_220.jpg)
 
 If the web app pod needs to communicate with a service located in a different namespace, you must use its fully qualified DNS name. For example, connecting to a database service named "db-service" in the "dev" namespace follows this format:
 

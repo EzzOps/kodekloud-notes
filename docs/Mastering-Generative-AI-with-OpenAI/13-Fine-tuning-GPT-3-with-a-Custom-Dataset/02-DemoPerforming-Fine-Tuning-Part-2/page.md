@@ -29,9 +29,7 @@ When was the State of the Union presented?
 The State of the Union was presented on February 5, 2023.
 ```
 
-<Callout icon="lightbulb">
-  Replace the model ID with your own fine-tuned model name. You can find it in the CLI output or in your [OpenAI Dashboard](https://platform.openai.com/).
-</Callout>
+> **lightbulb** Replace the model ID with your own fine-tuned model name. You can find it in the CLI output or in your [OpenAI Dashboard](https://platform.openai.com/).
 
 ***
 

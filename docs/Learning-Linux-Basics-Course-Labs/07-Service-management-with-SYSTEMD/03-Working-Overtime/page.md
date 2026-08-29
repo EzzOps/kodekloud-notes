@@ -22,9 +22,7 @@ Before Dave can continue, Mumshad Mannambeth interjects, "Give me about 15 minut
 Curious about how Dave managed to patch over 100 servers so quickly, Bob asks, "But didn't you have to patch more than 100 servers? How are you doing this so quickly?"\
 Dave smiles and explains, "Ah, I am using an automation tool called Ansible. I'll show you how that works someday, but for now, let me demonstrate service management with SYSTEMD."
 
-<Callout icon="lightbulb">
-  Creating a SYSTEMD service is a best practice to ensure your applications run in the background and automatically restart on system boot.
-</Callout>
+> **lightbulb** Creating a SYSTEMD service is a best practice to ensure your applications run in the background and automatically restart on system boot.
 
 In this article, we will explore how to create a SYSTEMD service for a Django application, enabling it to run as a background service and start automatically at system boot. This approach not only improves reliability but also minimizes downtime during reboots or terminal exits.
 
@@ -32,6 +30,4 @@ For more insights into setting up reliable services on Linux systems, check out 
 
 Then, stay tuned for our detailed step-by-step guide complete with code snippets and diagrams to help you follow along seamlessly.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/35ba7692-62b1-429d-87e3-74ac7cc25061/lesson/da570340-ffb0-4f28-bfba-452b9cd0904f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/35ba7692-62b1-429d-87e3-74ac7cc25061/lesson/da570340-ffb0-4f28-bfba-452b9cd0904f)

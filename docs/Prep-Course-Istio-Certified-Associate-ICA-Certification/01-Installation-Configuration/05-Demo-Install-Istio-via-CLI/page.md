@@ -105,9 +105,7 @@ kubectl exec test -- curl --head www.google.com
 
 You should see corresponding `access connection complete` entries in the ztunnel logs. This confirms L4 interception and basic outbound connectivity through ztunnel.
 
-<Callout icon="warning">
-  Ambient mode provides transparent L4 interception out of the box. For L7 features (HTTP routing, mirroring, fault injection) you must deploy waypoint proxies and use Kubernetes Gateway API resources (e.g., `HTTPRoute`). These are distinct from Istio sidecar VirtualServices and require additional CRDs and configuration.
-</Callout>
+> **warning** Ambient mode provides transparent L4 interception out of the box. For L7 features (HTTP routing, mirroring, fault injection) you must deploy waypoint proxies and use Kubernetes Gateway API resources (e.g., `HTTPRoute`). These are distinct from Istio sidecar VirtualServices and require additional CRDs and configuration.
 
 ## 6 — Install Kubernetes Gateway API CRDs (required for waypoint + HTTPRoute)
 
@@ -200,11 +198,9 @@ kubectl get pods
 
 That's the end of the demo — you should now have a working Istio ambient installation, observe L4 traffic handled by ztunnel, and understand when to use waypoint proxies for L7 features.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/105379ce-f1aa-4d80-ab41-b3bf398a80e1" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/105379ce-f1aa-4d80-ab41-b3bf398a80e1)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/dcd771d9-ecff-4b53-bbbc-a98e43ab95b9" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/dcd771d9-ecff-4b53-bbbc-a98e43ab95b9)
 
 
 # Demo Install Istio via CLI
@@ -217,12 +213,10 @@ This guide demonstrates how to install Istio into a Kubernetes cluster using the
 
 Prerequisites: a running Kubernetes cluster and `kubectl` configured to talk to it.
 
-<Callout icon="lightbulb">
-  Before you begin
+> **lightbulb** Before you begin
 
   * Ensure `kubectl` is configured and can access your cluster.
   * Choose an Istio release (this lesson uses `1.26.3`). Keep your `istioctl` client version compatible with the control plane you intend to install.
-</Callout>
 
 ## 1) Inspect the cluster and deploy the Bookinfo sample
 

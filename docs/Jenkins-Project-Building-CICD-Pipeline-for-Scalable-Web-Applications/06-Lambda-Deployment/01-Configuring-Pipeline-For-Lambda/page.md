@@ -3,13 +3,9 @@
 
 Below is an illustrative diagram explaining a Kubernetes pod setup:
 
-<Frame>
-  ![The image illustrates a Kubernetes pod containing Python and Logging components, with an arrow pointing to a Kubernetes cluster represented by three icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879938/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Working-with-Kubernetes/kubernetes-pod-python-logging-diagram.jpg)
-</Frame>
+![The image illustrates a Kubernetes pod containing Python and Logging components, with an arrow pointing to a Kubernetes cluster represented by three icons.](https://kodekloud.com/kk-media/image/upload/v1752879938/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Working-with-Kubernetes/kubernetes-pod-python-logging-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Pods are the smallest deployable units in Kubernetes, and understanding them is crucial for designing effective containerized applications.
-</Callout>
+> **lightbulb** Pods are the smallest deployable units in Kubernetes, and understanding them is crucial for designing effective containerized applications.
 
 ## Deployments in Kubernetes
 
@@ -57,13 +53,9 @@ Deploy the configuration using:
 
 The diagram below illustrates how a deployment manages multiple pods and maintains application stability:
 
-<Frame>
-  ![The image illustrates a Kubernetes deployment with three pods, each containing Python and Logging components. It highlights features like monitoring and restarting failed pods and scaling pod instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879939/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Working-with-Kubernetes/kubernetes-deployment-pods-monitoring.jpg)
-</Frame>
+![The image illustrates a Kubernetes deployment with three pods, each containing Python and Logging components. It highlights features like monitoring and restarting failed pods and scaling pod instances.](https://kodekloud.com/kk-media/image/upload/v1752879939/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Working-with-Kubernetes/kubernetes-deployment-pods-monitoring.jpg)
 
-<Callout icon="lightbulb">
-  Deployments offer powerful management capabilities that ensure high availability and seamless updates for your applications.
-</Callout>
+> **lightbulb** Deployments offer powerful management capabilities that ensure high availability and seamless updates for your applications.
 
 ## Managing Multiple Clusters with kubectl
 
@@ -134,19 +126,13 @@ Using multiple contexts is essential in a CI/CD pipeline. For instance, you migh
 
 The following diagram shows how `kubectl` connects to various Kubernetes clusters:
 
-<Frame>
-  ![The image is a diagram showing "kubectl" connected to three Kubernetes clusters labeled Cluster1, Cluster2, and Cluster3.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879940/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Working-with-Kubernetes/kubectl-kubernetes-clusters-diagram.jpg)
-</Frame>
+![The image is a diagram showing "kubectl" connected to three Kubernetes clusters labeled Cluster1, Cluster2, and Cluster3.](https://kodekloud.com/kk-media/image/upload/v1752879940/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Working-with-Kubernetes/kubectl-kubernetes-clusters-diagram.jpg)
 
-<Callout icon="triangle-alert">
-  Always ensure your kubeconfig file is secured, as it contains sensitive credentials to access your Kubernetes clusters. Use RBAC and other security measures to safeguard your infrastructure.
-</Callout>
+> **triangle-alert** Always ensure your kubeconfig file is secured, as it contains sensitive credentials to access your Kubernetes clusters. Use RBAC and other security measures to safeguard your infrastructure.
 
 By understanding these core concepts—pods, deployments, and kubeconfig management—you are now well-equipped to configure and manage Kubernetes environments within your CI/CD pipelines using Jenkins. For more detailed Kubernetes information, consider exploring the [Kubernetes Documentation](https://kubernetes.io/docs/) and other helpful resources.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/1d8036bf-2606-4587-beef-925546e0c655/lesson/0c653b80-3075-4e39-b7e1-79f5584f6568" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/1d8036bf-2606-4587-beef-925546e0c655/lesson/0c653b80-3075-4e39-b7e1-79f5584f6568)
 
 
 # Configuring Pipeline For Lambda
@@ -161,9 +147,7 @@ In this lesson, we outline how to set up a robust CI/CD pipeline for your AWS La
 
 Before proceeding, install the SAM CLI on your Jenkins server. This tool is essential for building and deploying your Lambda code to AWS, just as you would on your local machine.
 
-<Frame>
-  ![The image shows a diagram illustrating the installation of SAM CLI on Jenkins, featuring a connection between a SAM CLI box and the Jenkins logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879942/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Pipeline-For-Lambda/sam-cli-jenkins-installation-diagram.jpg)
-</Frame>
+![The image shows a diagram illustrating the installation of SAM CLI on Jenkins, featuring a connection between a SAM CLI box and the Jenkins logo.](https://kodekloud.com/kk-media/image/upload/v1752879942/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Pipeline-For-Lambda/sam-cli-jenkins-installation-diagram.jpg)
 
 For detailed installation instructions, please refer to the official SAM CLI documentation.
 
@@ -171,13 +155,9 @@ For detailed installation instructions, please refer to the official SAM CLI doc
 
 Proper AWS permissions are required for Jenkins to deploy Lambda functions. Start by creating an AWS user with the necessary permissions, and generate an access key and secret key. These credentials will be stored securely in Jenkins.
 
-<Frame>
-  ![The image illustrates AWS permissions, showing a user with associated permissions and AWS credentials, including an access key and a secret key.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879943/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Pipeline-For-Lambda/aws-permissions-user-credentials.jpg)
-</Frame>
+![The image illustrates AWS permissions, showing a user with associated permissions and AWS credentials, including an access key and a secret key.](https://kodekloud.com/kk-media/image/upload/v1752879943/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Pipeline-For-Lambda/aws-permissions-user-credentials.jpg)
 
-<Callout icon="lightbulb">
-  Ensure that the created AWS user has only the permissions needed for deploying Lambda functions to maintain security best practices.
-</Callout>
+> **lightbulb** Ensure that the created AWS user has only the permissions needed for deploying Lambda functions to maintain security best practices.
 
 ## Pipeline Overview
 
@@ -189,9 +169,7 @@ The CI/CD pipeline is designed to execute the following sequential steps:
 4. Build the code using the SAM CLI.
 5. Deploy the built application to AWS.
 
-<Frame>
-  ![The image is a flowchart titled "Configuring Pipeline," showing steps: Checkout Code, Install Dependencies, Test Code, Build (sam build), and Deploy (sam deploy), with a note about needing AWS credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879944/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Pipeline-For-Lambda/configuring-pipeline-flowchart.jpg)
-</Frame>
+![The image is a flowchart titled "Configuring Pipeline," showing steps: Checkout Code, Install Dependencies, Test Code, Build (sam build), and Deploy (sam deploy), with a note about needing AWS credentials.](https://kodekloud.com/kk-media/image/upload/v1752879944/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Pipeline-For-Lambda/configuring-pipeline-flowchart.jpg)
 
 ## Jenkins Pipeline Configuration
 
@@ -241,9 +219,7 @@ The deploy stage includes AWS credentials provided as environment variables. The
 }
 ```
 
-<Callout icon="lightbulb">
-  Automating your deployment process with Jenkins ensures consistent and reproducible builds, reducing manual errors and accelerating your release cycles.
-</Callout>
+> **lightbulb** Automating your deployment process with Jenkins ensures consistent and reproducible builds, reducing manual errors and accelerating your release cycles.
 
 This configuration completes the setup of your CI/CD pipeline for AWS Lambda. With these automated steps, every aspect from dependency installation to deployment is seamlessly integrated within Jenkins.
 
@@ -255,6 +231,4 @@ Happy automating your deployments!
 * [Jenkins Documentation](https://www.jenkins.io/doc/)
 * [SAM CLI Documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/ddd997d7-0eea-4fa7-8265-5feeb01301e8/lesson/f109f29c-e997-451b-a80f-5e4162a495d7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/ddd997d7-0eea-4fa7-8265-5feeb01301e8/lesson/f109f29c-e997-451b-a80f-5e4162a495d7)

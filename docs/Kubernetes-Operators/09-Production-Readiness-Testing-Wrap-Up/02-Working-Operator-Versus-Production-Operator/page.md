@@ -12,9 +12,7 @@
 
 Finalizers show how operators handle cleanup that Kubernetes cannot perform automatically. When deletion is requested, a finalizer pauses deletion until the controller can remove external state (DNS entries, cloud resources, or other dependencies). This lifecycle edge is common in production operators and one you have practiced.
 
-<Callout icon="warning">
-  Finalizers must be removed after cleanup completes. Leaving finalizers in place can permanently block resource deletion — ensure your controller handles cleanup and then removes the finalizer.
-</Callout>
+> **warning** Finalizers must be removed after cleanup completes. Leaving finalizers in place can permanently block resource deletion — ensure your controller handles cleanup and then removes the finalizer.
 
 <Frame>
   <img alt="The image is a flowchart illustrating a &#x22;Finalizers – Clean Up Before Deletion&#x22; process with three stages: &#x22;Delete requested,&#x22; &#x22;Deletion paused,&#x22; and &#x22;Remove external state.&#x22;" />
@@ -77,9 +75,7 @@ Links and references
 * cert-manager: [https://cert-manager.io/](https://cert-manager.io/)
 * Prometheus Operator: [https://github.com/prometheus-operator/prometheus-operator](https://github.com/prometheus-operator/prometheus-operator)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/708138ee-3fe0-42cd-b135-8e7df5f7ef59/lesson/2e3a333f-2a50-498a-b30b-1e5e35a299db" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/708138ee-3fe0-42cd-b135-8e7df5f7ef59/lesson/2e3a333f-2a50-498a-b30b-1e5e35a299db)
 
 
 # Working Operator Versus Production Operator
@@ -115,15 +111,13 @@ Production readiness wraps practical operational concerns around that core loop.
 
 These production checks do not replace the code you wrote; they frame and harden it. Tests, permissions, metrics, upgrade plans, and documentation are not “extras” — they are essential practices that make the operator dependable in shared environments.
 
-<Callout icon="lightbulb">
-  Production-readiness checklist (practical items to include):
+> **lightbulb** Production-readiness checklist (practical items to include):
 
   * Unit and integration tests that validate the reconcile loop and failure cases.
   * Least-privilege RBAC and a clear, documented permissions model.
   * Metrics, liveness/readiness probes, and health endpoints for observability.
   * Upgrade and rollback strategies for both CR schemas and controller versions.
   * Intuitive status fields and user-facing Kubernetes Events that explain state changes.
-</Callout>
 
 Below is a compact reference to the operator’s core responsibilities and where to apply production practices.
 
@@ -153,6 +147,4 @@ Second, production readiness is the discipline of making that loop understandabl
 
 Use that lens for the finish line: the web-app operator demonstrates the pattern end-to-end, and production-readiness practices make the operator maintainable, observable, and safe for operators who inherit it.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/708138ee-3fe0-42cd-b135-8e7df5f7ef59/lesson/a701472e-75cc-4b68-973e-ab1b93a76d38" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/708138ee-3fe0-42cd-b135-8e7df5f7ef59/lesson/a701472e-75cc-4b68-973e-ab1b93a76d38)

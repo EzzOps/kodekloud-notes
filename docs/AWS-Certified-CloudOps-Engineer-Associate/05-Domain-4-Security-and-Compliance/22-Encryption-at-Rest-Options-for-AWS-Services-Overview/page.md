@@ -12,7 +12,7 @@ Welcome to this lesson on encryption-at-rest options for AWS. In today's discuss
 
 KMS is the primary service AWS provides for key management and encryption. Whether you are securing database disks, EBS volumes on EC2, or S3 data, KMS is indispensable. The diagram below demonstrates how users interact with KMS to manage keys for various services such as CMK, AWS SQS, S3, and EBS.
 
-![The image illustrates a Key Management Service (KMS) diagram, showing a user interacting with a system that manages keys for various services like CMK, AWS SQS, S3, and EBS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860478/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Encryption-at-Rest-Options-for-AWS-Services-Overview/kms-diagram-user-interaction.jpg)
+![The image illustrates a Key Management Service (KMS) diagram, showing a user interacting with a system that manages keys for various services like CMK, AWS SQS, S3, and EBS.](https://kodekloud.com/kk-media/image/upload/v1752860478/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Encryption-at-Rest-Options-for-AWS-Services-Overview/kms-diagram-user-interaction.jpg)
 
 While AWS provides its Amazon Certificate Manager for managing SSL certificates, many AWS services come with integrated encryption features. For instance, when you enable encryption on EBS volumes, databases, or S3 buckets, you are inherently involving KMS to handle the encryption keys. This server-side encryption mechanism ensures that your data remains protected without compromising accessibility.
 
@@ -25,7 +25,7 @@ Amazon S3 offers multiple encryption options, each tailored to different use cas
 
 The image below showcases the default encryption settings in the Amazon S3 interface, where you can select server-side encryption options with various key management configurations.
 
-![The image shows a section of the Amazon Simple Storage Service (S3) interface, specifically the default encryption settings, offering options for server-side encryption with different key management services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860479/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Encryption-at-Rest-Options-for-AWS-Services-Overview/amazon-s3-default-encryption-settings.jpg)
+![The image shows a section of the Amazon Simple Storage Service (S3) interface, specifically the default encryption settings, offering options for server-side encryption with different key management services.](https://kodekloud.com/kk-media/image/upload/v1752860479/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Encryption-at-Rest-Options-for-AWS-Services-Overview/amazon-s3-default-encryption-settings.jpg)
 
 For most scenarios, KMS-driven encryption is preferred due to the enhanced control it offers over encryption keys. Additionally, AWS supports client-side encryption, which allows data to be encrypted before it is transmitted to S3.
 
@@ -39,11 +39,11 @@ Almost every AWS storage service employs KMS for at-rest encryption. This includ
 
 Even the Relational Database Service (RDS), which runs on EC2 instances configured as a managed database solution, leverages KMS for secure storage. The following diagram highlights the relationship between EC2 and EBS, emphasizing how encryption is applied throughout the data flow.
 
-![The image is a diagram illustrating the relationship between Amazon Elastic Compute Cloud (EC2) and Amazon Elastic Block Store (EBS), showing data flow and encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860480/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Encryption-at-Rest-Options-for-AWS-Services-Overview/ec2-ebs-relationship-diagram.jpg)
+![The image is a diagram illustrating the relationship between Amazon Elastic Compute Cloud (EC2) and Amazon Elastic Block Store (EBS), showing data flow and encryption.](https://kodekloud.com/kk-media/image/upload/v1752860480/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Encryption-at-Rest-Options-for-AWS-Services-Overview/ec2-ebs-relationship-diagram.jpg)
 
 Similarly, database services such as RDS, Aurora, and DynamoDB depend on EBS encryption via KMS to protect data at rest. The diagram below captures the security architecture of Amazon RDS, illustrating how key management integrates with database components to secure your data.
 
-![The image is a diagram illustrating Amazon Relational Database Service (RDS), showing database and security icons connected to a key symbol.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860481/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Encryption-at-Rest-Options-for-AWS-Services-Overview/amazon-rds-database-security-diagram.jpg)
+![The image is a diagram illustrating Amazon Relational Database Service (RDS), showing database and security icons connected to a key symbol.](https://kodekloud.com/kk-media/image/upload/v1752860481/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Encryption-at-Rest-Options-for-AWS-Services-Overview/amazon-rds-database-security-diagram.jpg)
 
 ## Summary
 

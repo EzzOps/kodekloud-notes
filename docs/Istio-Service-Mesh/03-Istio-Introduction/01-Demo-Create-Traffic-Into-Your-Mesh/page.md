@@ -23,9 +23,7 @@ After applying the configuration, verify that your mesh settings are correct and
 
 Next, determine the IP address where your local cluster is accessible. Export this IP to a variable to streamline subsequent commands. Depending on your setup, you might run a command similar to the example below and verify that the variable is correctly set:
 
-<Callout icon="lightbulb">
-  Remember to confirm that your variable for the IP address is properly exported before proceeding.
-</Callout>
+> **lightbulb** Remember to confirm that your variable for the IP address is properly exported before proceeding.
 
 Additionally, retrieve the port numbers from the `istio-ingress-gateway` service to ensure proper configuration.
 
@@ -47,9 +45,7 @@ To facilitate easier experimentation, you can generate continuous traffic by run
 while sleep 0.01; do curl -s "http://$INGRESS_HOST:$INGRESS_PORT/productpage" &> /dev/null; done
 ```
 
-<Callout icon="lightbulb">
-  Be sure to copy this command carefully to avoid issues with backslashes or unexpected formatting.
-</Callout>
+> **lightbulb** Be sure to copy this command carefully to avoid issues with backslashes or unexpected formatting.
 
 ## Step 5: Monitoring Traffic with Kiali
 
@@ -81,8 +77,6 @@ By following these steps, you have successfully configured your service mesh to 
 
 Happy troubleshooting and exploring your mesh!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/ecff4a51-c945-4fe5-a567-53febd91424a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/ecff4a51-c945-4fe5-a567-53febd91424a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/b645df2c-35c3-48a8-b655-6639987b2c7a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/b645df2c-35c3-48a8-b655-6639987b2c7a)

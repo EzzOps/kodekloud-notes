@@ -6,9 +6,7 @@ This hands-on lab guides configuring the AppRole authentication method in HashiC
 
 Welcome to this hands-on lab where we’ll configure the AppRole authentication method in HashiCorp Vault. By the end of this guide, you’ll be able to enable AppRole, create a role, and authenticate using a `role_id` and `secret_id`.
 
-<Frame>
-  ![The image is a solid dark purple background with a few small white squares scattered on the right side.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878012/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AppRole-Auth-Method/dark-purple-background-white-squares.jpg)
-</Frame>
+![The image is a solid dark purple background with a few small white squares scattered on the right side.](https://kodekloud.com/kk-media/image/upload/v1752878012/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AppRole-Auth-Method/dark-purple-background-white-squares.jpg)
 
 ## Prerequisites
 
@@ -34,9 +32,7 @@ Path    Type    Accessor            Description
 token/  token   auth_token_12345    token based credentials
 ```
 
-<Callout icon="lightbulb">
-  By default, Vault enables only the `token` auth method. You’ll add AppRole in the next step.
-</Callout>
+> **lightbulb** By default, Vault enables only the `token` auth method. You’ll add AppRole in the next step.
 
 ***
 
@@ -72,9 +68,7 @@ Successful output:
 Success! Data written to: auth/approle/role/bryan
 ```
 
-<Callout icon="lightbulb">
-  Adjust the `token_ttl` to match your security requirements. You can also set `token_max_ttl` to enforce a hard limit.
-</Callout>
+> **lightbulb** Adjust the `token_ttl` to match your security requirements. You can also set `token_max_ttl` to enforce a hard limit.
 
 ***
 
@@ -132,9 +126,7 @@ secret_id_accessor  2e69247f-568a-70dc-c2a5-45a262eefc87
 secret_id_ttl       0s
 ```
 
-<Callout icon="triangle-alert">
-  The generated `secret_id` is sensitive and should be transmitted securely. Consider customizing `secret_id_ttl` or using CIDR restrictions.
-</Callout>
+> **triangle-alert** The generated `secret_id` is sensitive and should be transmitted securely. Consider customizing `secret_id_ttl` or using CIDR restrictions.
 
 ***
 
@@ -163,9 +155,7 @@ policies             ["bryan" "default"]
 token_meta_role_name bryan
 ```
 
-<Callout icon="lightbulb">
-  When specifying parameters in the CLI, use underscores (`role_id`, `secret_id`). In API paths, hyphens appear in the endpoint (e.g., `role-id`, `secret-id`).
-</Callout>
+> **lightbulb** When specifying parameters in the CLI, use underscores (`role_id`, `secret_id`). In API paths, hyphens appear in the endpoint (e.g., `role-id`, `secret-id`).
 
 ***
 
@@ -189,6 +179,4 @@ You can now use this token for subsequent Vault operations, such as reading secr
 * [Vault Authentication Methods Overview](https://www.vaultproject.io/docs/auth)
 * [Vault CLI Commands](https://www.vaultproject.io/docs/commands)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/e487e09a-81c9-416e-b1f8-56c04ef5fcbb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/e487e09a-81c9-416e-b1f8-56c04ef5fcbb)

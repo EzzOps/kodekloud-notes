@@ -56,9 +56,7 @@ kubectl apply -f test-pod-trusted.yaml -n team-dev
 
 The trusted pod is admitted because it matches the policy pattern.
 
-<Callout icon="lightbulb">
-  You can switch `validationFailureAction` to `Audit` to collect violations without blocking resources.
-</Callout>
+> **lightbulb** You can switch `validationFailureAction` to `Audit` to collect violations without blocking resources.
 
 ## 2) Mutate rule example — auto-inject labels
 
@@ -260,9 +258,7 @@ This output shows:
 * The mutate rule passed and injected labels.
 * The validate rule failed (image not from `docker.io`), but because the policy is in Audit mode, the Pod was admitted and the violation was captured for visibility.
 
-<Callout icon="lightbulb">
-  Use Audit mode to evaluate policy impact and blast radius. Once you are confident, switch policies back to `Enforce` to block violating resources.
-</Callout>
+> **lightbulb** Use Audit mode to evaluate policy impact and blast radius. Once you are confident, switch policies back to `Enforce` to block violating resources.
 
 ## Summary and best practices
 
@@ -281,11 +277,9 @@ This output shows:
 * OPA Gatekeeper: [https://open-policy-agent.github.io/gatekeeper/](https://open-policy-agent.github.io/gatekeeper/)
 * Rego language: [https://www.openpolicyagent.org/docs/latest/policy-language/](https://www.openpolicyagent.org/docs/latest/policy-language/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/a82e67a7-e75e-4ef0-be81-4862c665ef4f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/a82e67a7-e75e-4ef0-be81-4862c665ef4f)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/11c61a43-720a-4ba7-b400-2bc8580dfd1f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/11c61a43-720a-4ba7-b400-2bc8580dfd1f)
 
 
 # Demo mTLS with Istio
@@ -395,9 +389,7 @@ Effective PeerAuthentication:
   Workload mTLS mode: PERMISSIVE
 ```
 
-<Callout icon="lightbulb">
-  Permissive mTLS accepts both plain-text (HTTP) and mTLS connections. It's a safe default during setup because it allows mixed clients while sidecars are being rolled out, but it does not enforce encryption or strongly verify caller identity.
-</Callout>
+> **lightbulb** Permissive mTLS accepts both plain-text (HTTP) and mTLS connections. It's a safe default during setup because it allows mixed clients while sidecars are being rolled out, but it does not enforce encryption or strongly verify caller identity.
 
 ***
 
@@ -438,9 +430,7 @@ Spec:
     Mode: STRICT
 ```
 
-<Callout icon="warning">
-  Applying `PeerAuthentication` with `mode: STRICT` will cause any plain-text (non-mTLS) connections to fail. Ensure all workloads in the namespace have sidecars injected and are up-to-date before applying strict mTLS to avoid service disruption.
-</Callout>
+> **warning** Applying `PeerAuthentication` with `mode: STRICT` will cause any plain-text (non-mTLS) connections to fail. Ensure all workloads in the namespace have sidecars injected and are up-to-date before applying strict mTLS to avoid service disruption.
 
 ***
 
@@ -564,8 +554,6 @@ Links and references
 * [istioctl analyze](https://istio.io/latest/docs/ops/diagnostic-tools/istioctl-analyze/)
 * [SPIFFE and SPIRE](https://spiffe.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/64424caf-3564-4c76-93f1-0d88101072d6" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/64424caf-3564-4c76-93f1-0d88101072d6)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/caedb06f-ceb3-4c51-9c37-be0a7855e26b" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/caedb06f-ceb3-4c51-9c37-be0a7855e26b)

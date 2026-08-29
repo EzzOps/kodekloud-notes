@@ -6,7 +6,7 @@ This article explores AWS Customer Engagement Services essential for Cloud Pract
 
 Welcome back, Cloud Practitioners. In this article, we dive into AWS Customer Engagement Services—a critical suite of tools you need to understand for the CLFC02 exam. We will define these services briefly, explore the four main components in detail, and conclude with a concise summary.
 
-![The image outlines objectives for defining customer engagement services, including AWS Activate for Startups, AWS IQ, AWS Managed Services, and AWS Support.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862137/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_20.jpg)
+![The image outlines objectives for defining customer engagement services, including AWS Activate for Startups, AWS IQ, AWS Managed Services, and AWS Support.](https://kodekloud.com/kk-media/image/upload/v1752862137/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_20.jpg)
 
 ## Overview of Customer Engagement Services
 
@@ -22,15 +22,15 @@ Consider these key benefits of AWS Activate for Startups:
 * Comprehensive technical support and training.
 * Access to a vibrant community to facilitate networking and guidance.
 
-![The image outlines AWS Activate for Startups, highlighting tasks: providing credits, offering technical support and training, and facilitating access to AWS's startup community.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862138/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_240.jpg)
+![The image outlines AWS Activate for Startups, highlighting tasks: providing credits, offering technical support and training, and facilitating access to AWS's startup community.](https://kodekloud.com/kk-media/image/upload/v1752862138/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_240.jpg)
 
 This program is perfect for startups seeking expert guidance while controlling costs. It also offers valuable networking opportunities with other entrepreneurs and access to training resources aimed at strengthening your team.
 
-![The image outlines two use cases: early-stage startups using AWS credits for infrastructure and startups using technical support for scaling services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862139/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_250.jpg)
+![The image outlines two use cases: early-stage startups using AWS credits for infrastructure and startups using technical support for scaling services.](https://kodekloud.com/kk-media/image/upload/v1752862139/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_250.jpg)
 
 Furthermore, AWS Activate for Startups promotes a culture of learning and collaboration—a key factor in the success of many leading companies built on AWS.
 
-![The image outlines two use cases: networking in the AWS startup community and utilizing training resources to build a skilled team.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862140/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_270.jpg)
+![The image outlines two use cases: networking in the AWS startup community and utilizing training resources to build a skilled team.](https://kodekloud.com/kk-media/image/upload/v1752862140/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_270.jpg)
 
 ## AWS IQ
 
@@ -42,11 +42,11 @@ Key features of AWS IQ include:
 * A secure platform for seamless collaboration.
 * Personalized support that benefits both startups and established businesses.
 
-![The image shows a purple icon with two user silhouettes and a checkmark, labeled "AWS IQ," with a copyright notice for KodeKloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862140/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_100.jpg)
+![The image shows a purple icon with two user silhouettes and a checkmark, labeled "AWS IQ," with a copyright notice for KodeKloud.](https://kodekloud.com/kk-media/image/upload/v1752862140/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_100.jpg)
 
 By offering expert-driven project scoping and implementation, AWS IQ ensures that your AWS projects benefit from best practices and specialized insights.
 
-![The image shows two use cases: AWS experts finding project opportunities, and clients receiving personalized assistance and solutions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862141/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_370.jpg)
+![The image shows two use cases: AWS experts finding project opportunities, and clients receiving personalized assistance and solutions.](https://kodekloud.com/kk-media/image/upload/v1752862141/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_370.jpg)
 
 ## AWS Managed Services
 
@@ -59,11 +59,11 @@ AMS offers:
 * Assistance with large-scale migrations and ongoing operational improvements.
 * Automated operations management for increased efficiency.
 
-![The image illustrates AWS Managed Services (AMS) with two components: Operations Management and Infrastructure Management, connected by a central icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862143/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_150.jpg)
+![The image illustrates AWS Managed Services (AMS) with two components: Operations Management and Infrastructure Management, connected by a central icon.](https://kodekloud.com/kk-media/image/upload/v1752862143/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_150.jpg)
 
 AMS is especially valuable for those requiring structured consulting and best-practice support for extensive deployments, improved security, and regulatory compliance.
 
-![The image outlines two AMS use cases: aiding in migration and cloud adoption, and utilizing AMS for continuous compliance and automated operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862144/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_490.jpg)
+![The image outlines two AMS use cases: aiding in migration and cloud adoption, and utilizing AMS for continuous compliance and automated operations.](https://kodekloud.com/kk-media/image/upload/v1752862144/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_490.jpg)
 
 > **lightbulb** When referring to "managed services," note that AWS Managed Services is a specialized offering focused on the day-to-day management and operational tasks of your cloud infrastructure.
 
@@ -77,11 +77,11 @@ Highlights of AWS Support include:
 * Advanced features like Infrastructure Event Management at higher tiers.
 * Proactive crisis management and dedicated technical account management under Enterprise offerings.
 
-![The image is a conclusion slide listing benefits of AMS: infrastructure management, security compliance, enterprise leverage, migration aid, and continuous automated operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862145/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_520.jpg)
+![The image is a conclusion slide listing benefits of AMS: infrastructure management, security compliance, enterprise leverage, migration aid, and continuous automated operations.](https://kodekloud.com/kk-media/image/upload/v1752862145/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_520.jpg)
 
 This service is essential for ensuring that your AWS environment runs smoothly, minimizing downtime and efficiently managing critical incidents.
 
-![The image outlines two AWS support use cases: crisis management and resolution, and proactive infrastructure management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862146/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_650.jpg)
+![The image outlines two AWS support use cases: crisis management and resolution, and proactive infrastructure management.](https://kodekloud.com/kk-media/image/upload/v1752862146/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_650.jpg)
 
 ## Summary of AWS Customer Engagement Services
 
@@ -94,7 +94,7 @@ Below is a quick summary of each AWS Customer Engagement Service:
 | AWS Managed Services      | Comprehensive operational and infrastructure management, including security, compliance, and automation | Organizations transitioning to cloud or managing large-scale deployments |
 | AWS Support               | Multi-tier technical support, proactive crisis management, and infrastructure event management          | Any AWS user seeking continuous operational excellence                   |
 
-![The image describes "AWS Activate for Startups," highlighting tailored resources and exclusive offers and credits for startups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862147/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_700.jpg)
+![The image describes "AWS Activate for Startups," highlighting tailored resources and exclusive offers and credits for startups.](https://kodekloud.com/kk-media/image/upload/v1752862147/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Customer-Engagement-Services/frame_700.jpg)
 
 Collectively, these services empower you to build, manage, and optimize your cloud-based solutions with confidence. They streamline operations and ensure you have the expert support needed to succeed on AWS.
 

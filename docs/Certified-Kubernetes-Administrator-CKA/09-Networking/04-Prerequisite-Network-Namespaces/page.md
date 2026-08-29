@@ -206,7 +206,7 @@ After this route is added, the blue namespace can reach external networks. Howev
 
 To provide namespaces with Internet access (such as pinging 8.8.8.8), add a default route in the namespace pointing to the host; the host must then perform NAT to forward the traffic correctly.
 
-![The image illustrates a network diagram showing a gateway with NAT connecting a virtual network (192.168.15.0) and a LAN (192.168.1.0) to the internet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869862/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Prerequisite-Network-Namespaces/frame_800.jpg)
+![The image illustrates a network diagram showing a gateway with NAT connecting a virtual network (192.168.15.0) and a LAN (192.168.1.0) to the internet.](https://kodekloud.com/kk-media/image/upload/v1752869862/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Prerequisite-Network-Namespaces/frame_800.jpg)
 
 ## Enabling Inbound Access
 

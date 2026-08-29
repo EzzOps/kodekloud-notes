@@ -46,7 +46,7 @@ aws ec2 create-vpc-endpoint \
 
 This command provisions ENIs in your selected subnets, each with private IP addresses mapped to the Lambda service endpoint. All Lambda invocations remain on the Amazon network, ensuring secure, low-latency communication.
 
-![The image is a diagram illustrating AWS Private Link and VPC Endpoints, showing how a virtual private cloud (VPC) connects to AWS services using gateway and interface endpoints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862977/notes-assets/images/AWS-IAM-AWS-Private-Link/aws-private-link-vpc-endpoints-diagram.jpg)
+![The image is a diagram illustrating AWS Private Link and VPC Endpoints, showing how a virtual private cloud (VPC) connects to AWS services using gateway and interface endpoints.](https://kodekloud.com/kk-media/image/upload/v1752862977/notes-assets/images/AWS-IAM-AWS-Private-Link/aws-private-link-vpc-endpoints-diagram.jpg)
 
 ## Links and References
 

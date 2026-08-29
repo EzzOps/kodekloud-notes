@@ -120,11 +120,9 @@ Wrapping up
 
 You now know the essentials for installing Quickwit as a namespaced package with Glasskube: required configuration values, namespace creation, installation steps, and basic verification. Try the hands-on exercise: follow the steps and install Quickwit in your cluster. Have fun and good luck!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/c3806869-7f9e-4cc2-8dc5-aa10304e3d1c/lesson/84ca0040-df39-4160-b462-a1e4b6ceb8aa" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/c3806869-7f9e-4cc2-8dc5-aa10304e3d1c/lesson/84ca0040-df39-4160-b462-a1e4b6ceb8aa)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/c3806869-7f9e-4cc2-8dc5-aa10304e3d1c/lesson/7d24f4ad-94fb-4099-b2a2-c0a8ee1837f8" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/c3806869-7f9e-4cc2-8dc5-aa10304e3d1c/lesson/7d24f4ad-94fb-4099-b2a2-c0a8ee1837f8)
 
 
 # Demo Create A Helm Based Operator
@@ -188,9 +186,7 @@ Generating RBAC rules
 WARN[0000] The RBAC rules generated in config/rbac/role.yaml are based on the chart's default manifest. Some rules may be missing for resources that are only enabled with custom values, and some existing rules may be overly broad. Double check the rules generated in config/rbac/role.yaml to ensure they meet the operator's permission requirements.
 ```
 
-<Callout icon="warning">
-  The RBAC rules are derived from the chart's default manifests. Review `config/rbac/role.yaml` and tighten permissions if needed before deploying to production.
-</Callout>
+> **warning** The RBAC rules are derived from the chart's default manifests. Review `config/rbac/role.yaml` and tighten permissions if needed before deploying to production.
 
 ## How the mapping works: watches.yaml
 
@@ -222,9 +218,7 @@ securityContext: {}
   # runAsUser: 1000
 ```
 
-<Callout icon="lightbulb">
-  Design your Helm chart with operator usage in mind: expose the values you expect operators (or users) to modify via the custom resource `spec`.
-</Callout>
+> **lightbulb** Design your Helm chart with operator usage in mind: expose the values you expect operators (or users) to modify via the custom resource `spec`.
 
 Common example values that the generated chart exposes:
 

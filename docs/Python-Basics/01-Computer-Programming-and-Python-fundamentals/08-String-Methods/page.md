@@ -41,9 +41,7 @@ print("ha" * 0)   # Outputs: (an empty string)
 print("ha" * -1)  # Outputs: (an empty string)
 ```
 
-<Callout icon="lightbulb">
-  Remember that using arithmetic on strings follows specific rules distinct from number operations. Repetition with the asterisk operator is particularly useful when generating patterns or repeated elements.
-</Callout>
+> **lightbulb** Remember that using arithmetic on strings follows specific rules distinct from number operations. Repetition with the asterisk operator is particularly useful when generating patterns or repeated elements.
 
 ## Type Conversion
 
@@ -62,9 +60,7 @@ total_sum = cost_of_apple * int(amount_of_apples)
 print("The total cost is: " + str(total_sum))
 ```
 
-<Callout icon="lightbulb">
-  Always convert numeric results to strings before concatenating them with other text to avoid errors.
-</Callout>
+> **lightbulb** Always convert numeric results to strings before concatenating them with other text to avoid errors.
 
 ## Summary of String Operations
 
@@ -72,12 +68,8 @@ print("The total cost is: " + str(total_sum))
 * The asterisk operator (`*`) repeats a string multiple times.
 * The `str()` function converts numeric values into strings.
 
-<Frame>
-  ![The image explains string operations: using "+" to concatenate strings and "\*" to repeat a string multiple times.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883522/notes-assets/images/Python-Basics-String-Methods/frame_90.jpg)
-</Frame>
+![The image explains string operations: using "+" to concatenate strings and "\*" to repeat a string multiple times.](https://kodekloud.com/kk-media/image/upload/v1752883522/notes-assets/images/Python-Basics-String-Methods/frame_90.jpg)
 
 This concludes our lesson on Python string methods. Experiment with these operations to solidify your understanding, and explore additional Python documentation for more advanced topics. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/4178f96e-8dcd-46a2-a9c9-f65a8c9c73b0/lesson/06f5d942-7a99-47b7-be48-3106ee45fa29" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/4178f96e-8dcd-46a2-a9c9-f65a8c9c73b0/lesson/06f5d942-7a99-47b7-be48-3106ee45fa29)

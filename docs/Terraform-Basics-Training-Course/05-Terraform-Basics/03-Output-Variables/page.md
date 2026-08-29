@@ -42,9 +42,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 Notice that an attribute called "id" appears in the output, reflecting the generated pet name.
 
-<Callout icon="lightbulb">
-  Although this example uses a pet symbol for demonstration, the random pet resource can generate a variety of pet names and is not limited to any specific animal type.
-</Callout>
+> **lightbulb** Although this example uses a pet symbol for demonstration, the random pet resource can generate a variety of pet names and is not limited to any specific animal type.
 
 ## Next Steps
 
@@ -52,11 +50,9 @@ Now that you have learned how to work with multiple providers in Terraform, cont
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/1d2c3002-ead1-4ee8-8b41-cc60bebd6315" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/1d2c3002-ead1-4ee8-8b41-cc60bebd6315)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/9ddacf3d-182a-4932-80b4-da86babc0a2a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/9ddacf3d-182a-4932-80b4-da86babc0a2a)
 
 
 # Output Variables
@@ -93,9 +89,7 @@ output "pet-name" {
 
 The output block starts with the keyword `output` followed by the variable name. Inside the block, the **value** argument is required and uses a reference expression (`random_pet.my-pet.id`). Although the **desc** argument is optional, it is a good practice to include a brief description of the output's purpose.
 
-<Callout icon="lightbulb">
-  Use meaningful descriptions for your output variables. This practice enhances code readability and aids in documentation, especially when collaborating with other team members.
-</Callout>
+> **lightbulb** Use meaningful descriptions for your output variables. This practice enhances code readability and aids in documentation, especially when collaborating with other team members.
 
 ## Configuration of Related Variables
 
@@ -150,9 +144,7 @@ $ terraform output pet-name
 Mrs.gibbon
 ```
 
-<Callout icon="lightbulb">
-  Output variables are invaluable for quickly viewing details about your provisioned resources and for integrating with other infrastructure as code tools, ad hoc scripts, or configuration management systems like Ansible.
-</Callout>
+> **lightbulb** Output variables are invaluable for quickly viewing details about your provisioned resources and for integrating with other infrastructure as code tools, ad hoc scripts, or configuration management systems like Ansible.
 
 ## Further Reading
 
@@ -163,8 +155,6 @@ For more comprehensive information on Terraform output variables and other confi
 
 By incorporating output variables into your Terraform configurations, you can streamline the process of accessing essential resource details and improve the overall management of your infrastructure.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/5b60fceb-9041-4f11-9cb2-24a04cf37e94" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/5b60fceb-9041-4f11-9cb2-24a04cf37e94)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/6026caa5-ccaf-41f9-8842-6e2ff319231c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/6026caa5-ccaf-41f9-8842-6e2ff319231c)

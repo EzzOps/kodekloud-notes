@@ -6,9 +6,7 @@ This guide explains how to configure a Jenkins pipeline for application deployme
 
 In this guide, you'll learn how to configure a Jenkins pipeline for deploying applications. We will start by setting up the required credentials, then create and configure the pipeline job, review and update the Jenkinsfile, and finally commit and push code changes. The pipeline will execute stages to install dependencies, run tests, package code, and deploy the application using SSH.
 
-<Callout icon="lightbulb">
-  This guide assumes you have basic familiarity with Jenkins and version control (Git). Adjust repository URLs and credentials as needed.
-</Callout>
+> **lightbulb** This guide assumes you have basic familiarity with Jenkins and version control (Git). Adjust repository URLs and credentials as needed.
 
 ## Step 1: Create Credentials
 
@@ -21,9 +19,7 @@ In this guide, you'll learn how to configure a Jenkins pipeline for deploying ap
 5. Set the ID to `prod-dash-server-dash-IP` and provide a meaningful description (e.g., "IP address of prod server").
 6. Click **Create**.
 
-<Frame>
-  ![The image shows a Jenkins interface for creating new credentials, with fields for kind, scope, secret, ID, and description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879982/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Pipeline/jenkins-create-credentials-interface.jpg)
-</Frame>
+![The image shows a Jenkins interface for creating new credentials, with fields for kind, scope, secret, ID, and description.](https://kodekloud.com/kk-media/image/upload/v1752879982/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Pipeline/jenkins-create-credentials-interface.jpg)
 
 ### Create SSH Key Credential
 
@@ -34,17 +30,11 @@ In this guide, you'll learn how to configure a Jenkins pipeline for deploying ap
 5. If your private key has a passphrase, provide it; otherwise, leave the field blank.
 6. Click **Create**.
 
-<Frame>
-  ![The image shows a Jenkins interface for adding new credentials, with a dropdown menu for selecting the type of credential, such as "Username with password."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879983/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Pipeline/jenkins-add-credentials-interface.jpg)
-</Frame>
+![The image shows a Jenkins interface for adding new credentials, with a dropdown menu for selecting the type of credential, such as "Username with password."](https://kodekloud.com/kk-media/image/upload/v1752879983/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Pipeline/jenkins-add-credentials-interface.jpg)
 
-<Frame>
-  ![The image shows a Jenkins interface for adding new credentials, with fields for description, username, and a private key. The private key is entered directly, and there's a "Create" button at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879984/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Pipeline/jenkins-add-credentials-interface-2.jpg)
-</Frame>
+![The image shows a Jenkins interface for adding new credentials, with fields for description, username, and a private key. The private key is entered directly, and there's a "Create" button at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752879984/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Pipeline/jenkins-add-credentials-interface-2.jpg)
 
-<Callout icon="lightbulb">
-  Ensure that all secrets and SSH keys are stored securely and access is limited only to trusted personnel.
-</Callout>
+> **lightbulb** Ensure that all secrets and SSH keys are stored securely and access is limited only to trusted personnel.
 
 Now that the credentials have been created, proceed to configure your pipeline.
 
@@ -59,13 +49,9 @@ Now that the credentials have been created, proceed to configure your pipeline.
    * Set the script path to `Jenkinsfile`.
 4. Save the configuration.
 
-<Frame>
-  ![The image shows a configuration page for a Jenkins pipeline, with options for build triggers and advanced project settings. A GitHub hook trigger for GITScm polling is selected.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879985/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Pipeline/jenkins-pipeline-configuration-github-hook.jpg)
-</Frame>
+![The image shows a configuration page for a Jenkins pipeline, with options for build triggers and advanced project settings. A GitHub hook trigger for GITScm polling is selected.](https://kodekloud.com/kk-media/image/upload/v1752879985/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Pipeline/jenkins-pipeline-configuration-github-hook.jpg)
 
-<Frame>
-  ![The image shows a configuration screen for a Jenkins pipeline, where options like branch specifier and script path are being set.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879986/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Pipeline/jenkins-pipeline-configuration-screen.jpg)
-</Frame>
+![The image shows a configuration screen for a Jenkins pipeline, where options like branch specifier and script path are being set.](https://kodekloud.com/kk-media/image/upload/v1752879986/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Pipeline/jenkins-pipeline-configuration-screen.jpg)
 
 ## Step 3: Review the Jenkinsfile
 

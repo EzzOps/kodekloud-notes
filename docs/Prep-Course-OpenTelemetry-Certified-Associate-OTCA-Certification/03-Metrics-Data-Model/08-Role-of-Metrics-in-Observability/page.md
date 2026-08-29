@@ -117,9 +117,7 @@ Summary
 * Combine metrics with logs and traces for diagnosis: metrics tell you what is happening; logs and traces explain why.
 * Instrument the right metrics at each layer (frontend, gateway, backend, infra, DB, CI/CD, cloud) to build a complete observability strategy.
 
-<Callout icon="lightbulb">
-  This article provided a high-level introduction to metrics in observability. For deeper study, explore metric types, aggregation methods, label cardinality, and instrumentation best practices with tools such as OpenTelemetry, Prometheus, and vendor observability platforms.
-</Callout>
+> **lightbulb** This article provided a high-level introduction to metrics in observability. For deeper study, explore metric types, aggregation methods, label cardinality, and instrumentation best practices with tools such as OpenTelemetry, Prometheus, and vendor observability platforms.
 
 Links and references
 
@@ -128,6 +126,4 @@ Links and references
 * Kubernetes concepts: [https://kubernetes.io/docs/concepts/](https://kubernetes.io/docs/concepts/)
 * DORA metrics overview: [https://cloud.google.com/devops/blueprints/monitoring/dora-metrics](https://cloud.google.com/devops/blueprints/monitoring/dora-metrics)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/b30743d0-0acb-4e1a-be51-46d4f51095df" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/b30743d0-0acb-4e1a-be51-46d4f51095df)

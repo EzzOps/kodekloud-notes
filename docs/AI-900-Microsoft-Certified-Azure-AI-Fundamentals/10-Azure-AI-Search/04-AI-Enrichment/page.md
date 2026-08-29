@@ -32,7 +32,7 @@ For example, when a document references various people, places, or events, the a
 * Incorporating them during indexing to improve search results.
 * Storing them in a dedicated repository known as the knowledge store.
 
-![The image is an infographic about AI Enrichment in Azure AI Search, detailing processes like recognizing entities, translating text, and evaluating sentiment to create enriched content and documents. It also explains how enriched documents are used during indexing and stored in a knowledge store for further analysis.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856859/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Enrichment/ai-enrichment-azure-search-infographic.jpg)
+![The image is an infographic about AI Enrichment in Azure AI Search, detailing processes like recognizing entities, translating text, and evaluating sentiment to create enriched content and documents. It also explains how enriched documents are used during indexing and stored in a knowledge store for further analysis.](https://kodekloud.com/kk-media/image/upload/v1752856859/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Enrichment/ai-enrichment-azure-search-infographic.jpg)
 
 The knowledge store plays a crucial role in holding enriched data for advanced analysis, reporting, and integration with other applications.
 
@@ -40,13 +40,13 @@ The knowledge store plays a crucial role in holding enriched data for advanced a
 
 After the enrichment process, the data is serialized into a consistent format that is optimal for indexing by the search engine. This conversion step accelerates the indexing process and contributes to improved overall search performance.
 
-![The image is a diagram illustrating the process of AI enrichment in Azure AI Search, showing steps from data ingestion to indexing and exploration. It highlights the flow of processed and enriched data through a search engine for indexing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856860/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Enrichment/ai-enrichment-azure-search-diagram.jpg)
+![The image is a diagram illustrating the process of AI enrichment in Azure AI Search, showing steps from data ingestion to indexing and exploration. It highlights the flow of processed and enriched data through a search engine for indexing.](https://kodekloud.com/kk-media/image/upload/v1752856860/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Enrichment/ai-enrichment-azure-search-diagram.jpg)
 
 ### The Role of the Knowledge Store
 
 The knowledge store is a vital element of the AI enrichment pipeline in Azure AI Search. It serves as a centralized repository where all enriched documents are stored and organized. This storage mechanism supports advanced search and analytic functions by making the enriched data readily available for querying and further analysis.
 
-![The image illustrates the AI enrichment process in Azure AI Search, showing a flow from data ingestion to exploration, with components like a knowledge store, advanced search, and analytics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856861/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Enrichment/ai-enrichment-azure-search-flow.jpg)
+![The image illustrates the AI enrichment process in Azure AI Search, showing a flow from data ingestion to exploration, with components like a knowledge store, advanced search, and analytics.](https://kodekloud.com/kk-media/image/upload/v1752856861/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Enrichment/ai-enrichment-azure-search-flow.jpg)
 
 ## Implementing AI Enrichment on the Azure Portal
 
@@ -76,17 +76,17 @@ Once added, the data source appears in the overview blade. You can now import da
 * Translating text (for example, reviews can be translated into French).
 * Generating tags from images (if applicable).
 
-![The image shows a Microsoft Azure portal interface for importing data, specifically focusing on adding cognitive skills and attaching AI services. It includes options for selecting AI services and regions, with a section for adding enrichments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856862/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Enrichment/azure-portal-import-data-ai-services.jpg)
+![The image shows a Microsoft Azure portal interface for importing data, specifically focusing on adding cognitive skills and attaching AI services. It includes options for selecting AI services and regions, with a section for adding enrichments.](https://kodekloud.com/kk-media/image/upload/v1752856862/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Enrichment/azure-portal-import-data-ai-services.jpg)
 
 > **lightbulb** You can configure the enhanced data (projections) to be saved into a knowledge store by setting up the storage account connection string with a SAS token for time-bound access.
 
 Next, customize the target index by expanding the index settings to view the fields from your review data. Here, you can designate which fields are filterable, sortable, facetable, or searchable based on your specific requirements. After finalizing these settings, save them and create an indexer. A notification will confirm that the indexer has been created and the process has started.
 
-![The image shows a Microsoft Azure interface for importing data, with options to configure fields such as "Review," "Location," and "Genre" for indexing. Various checkboxes are available for settings like "Retrievable," "Filterable," and "Searchable."](../../../../images/kodekloud.com/kk-media/image/upload/v1752856864/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Enrichment/azure-data-import-interface-settings.jpg)
+![The image shows a Microsoft Azure interface for importing data, with options to configure fields such as "Review," "Location," and "Genre" for indexing. Various checkboxes are available for settings like "Retrievable," "Filterable," and "Searchable."](https://kodekloud.com/kk-media/image/upload/v1752856864/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Enrichment/azure-data-import-interface-settings.jpg)
 
 After the indexing job completes (in this demonstration, 14 records were processed without warnings or errors), return to your search service and open the Search Explorer to inspect your results.
 
-![The image shows the Microsoft Azure portal interface for an AI Search service, displaying options for managing and exploring data, along with service details like resource group, location, and subscription ID.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856865/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Enrichment/azure-portal-ai-search-service.jpg)
+![The image shows the Microsoft Azure portal interface for an AI Search service, displaying options for managing and exploring data, along with service details like resource group, location, and subscription ID.](https://kodekloud.com/kk-media/image/upload/v1752856865/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Enrichment/azure-portal-ai-search-service.jpg)
 
 ## Exploring the Enriched Search Results
 

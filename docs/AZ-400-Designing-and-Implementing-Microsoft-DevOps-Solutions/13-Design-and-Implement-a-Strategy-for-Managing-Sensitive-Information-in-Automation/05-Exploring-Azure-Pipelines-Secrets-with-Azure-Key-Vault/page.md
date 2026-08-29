@@ -10,7 +10,7 @@ This push invokes the CI trigger on your feature branch.
 
 When you open a PR against `master` in Azure Repos, the pipeline runs against the merged commit, ensuring no regressions slip through.
 
-![The image shows an Azure DevOps Pipelines interface for a project named "WeatherApp," displaying a recently run pipeline with details of a merged pull request.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867903/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Build-Trigger-Rules/azure-devops-pipelines-weatherapp-pull-request.jpg)
+![The image shows an Azure DevOps Pipelines interface for a project named "WeatherApp," displaying a recently run pipeline with details of a merged pull request.](https://kodekloud.com/kk-media/image/upload/v1752867903/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Build-Trigger-Rules/azure-devops-pipelines-weatherapp-pull-request.jpg)
 
 > **lightbulb** Use PR triggers to run tests, deploy to staging, or produce artifacts **before** merging.
 
@@ -120,14 +120,14 @@ Secure secret management is a cornerstone of any CI/CD strategy in Azure DevOps.
 4. Choose **East US** as the region and **Standard** pricing tier.
 5. Leave **Soft delete** enabled (90-day retention) and configure **Purge protection** as needed.
 
-![The image shows a Microsoft Azure portal page for creating a key vault, with fields for subscription, resource group, key vault name, region, and pricing tier, along with recovery options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867922/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Pipelines-Secrets-with-Azure-Key-Vault/azure-portal-key-vault-creation.jpg)
+![The image shows a Microsoft Azure portal page for creating a key vault, with fields for subscription, resource group, key vault name, region, and pricing tier, along with recovery options.](https://kodekloud.com/kk-media/image/upload/v1752867922/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Pipelines-Secrets-with-Azure-Key-Vault/azure-portal-key-vault-creation.jpg)
 
 > **lightbulb** Soft delete is enabled by default to prevent accidental data loss. If you need stricter protection, enable **Purge protection**.
 
 6. Click **Next** until you reach **Access policy**, choose the **Vault access policy** model for granular permissions, and grant yourself **Get**, **List**, **Create**, and **Delete** rights.
 7. Review and select **Create**. After deployment, click **Go to resource**.
 
-![The image shows a Microsoft Azure portal page indicating that a deployment named "KodeKloudKeyVault123" is complete, with options to view deployment details and next steps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867924/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Pipelines-Secrets-with-Azure-Key-Vault/azure-portal-kodekloudkeyvault-deployment.jpg)
+![The image shows a Microsoft Azure portal page indicating that a deployment named "KodeKloudKeyVault123" is complete, with options to view deployment details and next steps.](https://kodekloud.com/kk-media/image/upload/v1752867924/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Pipelines-Secrets-with-Azure-Key-Vault/azure-portal-kodekloudkeyvault-deployment.jpg)
 
 ## 2. Adding a Secret
 
@@ -135,9 +135,9 @@ Secure secret management is a cornerstone of any CI/CD strategy in Azure DevOps.
 2. Name the secret `DBPassword`, enter a value (e.g., `Password123`), and optionally set activation/expiration dates.
 3. Click **Create** and confirm the secret appears enabled in the list.
 
-![The image shows a Microsoft Azure interface for creating a secret, with fields for name, secret value, activation date, and other options. The secret is named "DBPassword" and is set to activate on October 11, 2024.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867925/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Pipelines-Secrets-with-Azure-Key-Vault/azure-secret-creation-dbpassword-interface.jpg)
+![The image shows a Microsoft Azure interface for creating a secret, with fields for name, secret value, activation date, and other options. The secret is named "DBPassword" and is set to activate on October 11, 2024.](https://kodekloud.com/kk-media/image/upload/v1752867925/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Pipelines-Secrets-with-Azure-Key-Vault/azure-secret-creation-dbpassword-interface.jpg)
 
-![The image shows the Microsoft Azure portal with a key vault named "KodeKloudKeyVault123" where a secret called "DBPassword" has been successfully created and is enabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867926/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Pipelines-Secrets-with-Azure-Key-Vault/azure-portal-kodekloudkeyvault-dbpassword.jpg)
+![The image shows the Microsoft Azure portal with a key vault named "KodeKloudKeyVault123" where a secret called "DBPassword" has been successfully created and is enabled.](https://kodekloud.com/kk-media/image/upload/v1752867926/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Pipelines-Secrets-with-Azure-Key-Vault/azure-portal-kodekloudkeyvault-dbpassword.jpg)
 
 ## 3. Setting Up a Service Connection
 

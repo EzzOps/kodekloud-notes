@@ -10,9 +10,7 @@ In this guide, you'll learn how to set up your first Jenkins pipeline—a simple
 
 Begin by opening your Jenkins instance. If you haven’t set it up before, navigate to your Jenkins IP address on port 8080. Follow the setup instructions to configure your username and other settings. Once completed, you should see a dashboard similar to the image below:
 
-<Frame>
-  ![The image shows the Jenkins dashboard, welcoming the user and providing options to create a job, set up a distributed build, and manage Jenkins settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879891/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Hello-World-Pipeline/jenkins-dashboard-job-setup.jpg)
-</Frame>
+![The image shows the Jenkins dashboard, welcoming the user and providing options to create a job, set up a distributed build, and manage Jenkins settings.](https://kodekloud.com/kk-media/image/upload/v1752879891/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Hello-World-Pipeline/jenkins-dashboard-job-setup.jpg)
 
 ## Creating a New Pipeline
 
@@ -24,9 +22,7 @@ Begin by opening your Jenkins instance. If you haven’t set it up before, navig
 
 Scroll down to the pipeline configuration section. You will see an interface similar to the following:
 
-<Frame>
-  ![The image shows a Jenkins interface where a user can select different project types, such as Freestyle project, Pipeline, Multi-configuration project, Folder, Multibranch Pipeline, and Organization Folder.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879893/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Hello-World-Pipeline/jenkins-project-types-interface.jpg)
-</Frame>
+![The image shows a Jenkins interface where a user can select different project types, such as Freestyle project, Pipeline, Multi-configuration project, Folder, Multibranch Pipeline, and Organization Folder.](https://kodekloud.com/kk-media/image/upload/v1752879893/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Hello-World-Pipeline/jenkins-project-types-interface.jpg)
 
 Here, you have two options for defining your pipeline:
 
@@ -35,9 +31,7 @@ Here, you have two options for defining your pipeline:
 
 For this tutorial, we will use a pipeline script written directly in Jenkins.
 
-<Callout icon="lightbulb">
-  Jenkins provides sample pipelines to help you get started without writing the entire script from scratch. Feel free to use these examples as a learning tool.
-</Callout>
+> **lightbulb** Jenkins provides sample pipelines to help you get started without writing the entire script from scratch. Feel free to use these examples as a learning tool.
 
 ## Sample Pipeline Script
 
@@ -100,16 +94,10 @@ This output confirms that the **hello** stage executed successfully and printed 
 
 After running your pipeline, you will encounter an interface that displays build details such as the start time, user who initiated the build, and duration metrics. Check out the build interface below:
 
-<Frame>
-  ![The image shows a Jenkins build interface for "HelloWorldPipeline" with details of Build #1, including the start time, user, and duration metrics. The sidebar contains options like Console Output, Pipeline Overview, and Pipeline Steps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879893/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Hello-World-Pipeline/jenkins-helloworldpipeline-build-interface.jpg)
-</Frame>
+![The image shows a Jenkins build interface for "HelloWorldPipeline" with details of Build #1, including the start time, user, and duration metrics. The sidebar contains options like Console Output, Pipeline Overview, and Pipeline Steps.](https://kodekloud.com/kk-media/image/upload/v1752879893/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Hello-World-Pipeline/jenkins-helloworldpipeline-build-interface.jpg)
 
-<Callout icon="lightbulb">
-  Now that you've successfully created and executed your first Jenkins pipeline, explore further by adding more stages or integrating additional tools to enhance your CI/CD workflow.
-</Callout>
+> **lightbulb** Now that you've successfully created and executed your first Jenkins pipeline, explore further by adding more stages or integrating additional tools to enhance your CI/CD workflow.
 
 Enjoy building your pipelines and happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/5a2b722f-ec85-47f5-80d7-bb693179049c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/5a2b722f-ec85-47f5-80d7-bb693179049c)

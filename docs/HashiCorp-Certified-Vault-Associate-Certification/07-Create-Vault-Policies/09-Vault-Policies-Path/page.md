@@ -15,9 +15,7 @@ Vault policies rely on hierarchical paths to control access. Everything in Vault
 | database/roles/prod-db      | Secrets engine  | Role definition for a production database    |
 | sys/rekey                   | System-critical | Re-encrypt data keys during rekey operations |
 
-<Callout icon="lightbulb">
-  Paths prefixed with `sys/` map to Vault’s internal systems. For example, `sys/rekey` is used to rotate and re-encrypt data encryption keys.
-</Callout>
+> **lightbulb** Paths prefixed with `sys/` map to Vault’s internal systems. For example, `sys/rekey` is used to rotate and re-encrypt data encryption keys.
 
 ***
 
@@ -39,9 +37,7 @@ This path breaks down as:
 
 Each segment after `data/` can contain key/value pairs. Always reference the complete path when reading, writing, or deleting secrets.
 
-<Frame>
-  ![The image explains the structure of a path used in a secrets management system, highlighting different segments for mounting, required elements, higher-level paths, and key/value storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878145/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Policies-Path/secrets-management-path-structure-diagram.jpg)
-</Frame>
+![The image explains the structure of a path used in a secrets management system, highlighting different segments for mounting, required elements, higher-level paths, and key/value storage.](https://kodekloud.com/kk-media/image/upload/v1752878145/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Policies-Path/secrets-management-path-structure-diagram.jpg)
 
 ***
 
@@ -55,13 +51,9 @@ Certain Vault endpoints are root-protected and require either a root token or `s
 | sys/seal      | Manually seal (lock) the Vault        |
 | sys/step-down | Force the current leader to step down |
 
-<Callout icon="triangle-alert">
-  Root-protected paths expose powerful operations. Grant `sudo` only to trusted administrators.
-</Callout>
+> **triangle-alert** Root-protected paths expose powerful operations. Grant `sudo` only to trusted administrators.
 
-<Frame>
-  ![The image is a slide titled "Vault Policies - Path," explaining root-protected paths in Vault, requiring a root token or sudo capability, with examples like creating an orphan token and rotating the encryption key. It features a lock icon and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878146/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Policies-Path/vault-policies-path-root-token-slide.jpg)
-</Frame>
+![The image is a slide titled "Vault Policies - Path," explaining root-protected paths in Vault, requiring a root token or sudo capability, with examples like creating an orphan token and rotating the encryption key. It features a lock icon and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878146/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Policies-Path/vault-policies-path-root-token-slide.jpg)
 
 To grant `sudo` capabilities on these critical paths, include the following in your HCL policy:
 
@@ -89,6 +81,4 @@ Use this snippet to ensure only authorized operators can perform high-privilege 
 * [KV Secrets Engine v2](https://www.vaultproject.io/docs/secrets/kv/kv-v2)
 * [Vault System Endpoints](https://www.vaultproject.io/api/system)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/d009ce9a-7bf4-4d2d-b868-1c24d94392d4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/d009ce9a-7bf4-4d2d-b868-1c24d94392d4)

@@ -16,9 +16,7 @@ For instance, during development, your API endpoints might be configured using t
 
 By using an environment variable—say, one named URL—you can store the base URL for your API. In your API requests, simply reference this variable using the double curly braces syntax (e.g., ). Postman automatically replaces it with the correct value based on the selected environment.
 
-<Frame>
-  ![The image shows a Postman interface with a GET request to a local server, displaying an authorization error message: "Could not validate credentials." The left panel lists various API endpoints related to a FastAPI course.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883316/notes-assets/images/Python-API-Development-with-FastAPI-Advanced-Postman-Features/postman-get-request-auth-error-fastapi.jpg)
-</Frame>
+![The image shows a Postman interface with a GET request to a local server, displaying an authorization error message: "Could not validate credentials." The left panel lists various API endpoints related to a FastAPI course.](https://kodekloud.com/kk-media/image/upload/v1752883316/notes-assets/images/Python-API-Development-with-FastAPI-Advanced-Postman-Features/postman-get-request-auth-error-fastapi.jpg)
 
 To set up an environment:
 
@@ -29,9 +27,7 @@ To set up an environment:
 
 After creating the variable, select the “dev” environment from the Postman dropdown. Update your API requests to use `{{URL}}` instead of hardcoding the URL. When Postman successfully resolves the variable, it appears highlighted in orange. If it appears red, verify the variable name for accuracy.
 
-<Frame>
-  ![The image shows a split-screen view of Visual Studio Code and Postman. The VS Code window displays a Python project structure, while the Postman window shows an environment setup for a FastAPI development server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883317/notes-assets/images/Python-API-Development-with-FastAPI-Advanced-Postman-Features/vs-code-postman-fastapi-setup.jpg)
-</Frame>
+![The image shows a split-screen view of Visual Studio Code and Postman. The VS Code window displays a Python project structure, while the Postman window shows an environment setup for a FastAPI development server.](https://kodekloud.com/kk-media/image/upload/v1752883317/notes-assets/images/Python-API-Development-with-FastAPI-Advanced-Postman-Features/vs-code-postman-fastapi-setup.jpg)
 
 ***
 
@@ -76,17 +72,13 @@ For example, when creating a post, substitute any hardcoded tokens with `{{JWT}}
 
 When this request is sent, Postman replaces `{{JWT}}` in the authorization header with the most up-to-date access token. You can confirm this by verifying that the JWT value changes after each login.
 
-<Frame>
-  ![The image shows the Postman application interface with a collection of API requests related to a "fastapi-course." The "Create Post" request is selected, displaying authorization details and a JSON response in the body section.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883318/notes-assets/images/Python-API-Development-with-FastAPI-Advanced-Postman-Features/postman-fastapi-course-api-requests.jpg)
-</Frame>
+![The image shows the Postman application interface with a collection of API requests related to a "fastapi-course." The "Create Post" request is selected, displaying authorization details and a JSON response in the body section.](https://kodekloud.com/kk-media/image/upload/v1752883318/notes-assets/images/Python-API-Development-with-FastAPI-Advanced-Postman-Features/postman-fastapi-course-api-requests.jpg)
 
 ### Step 4: Apply to Other Endpoints
 
 Repeat this process for any endpoint that requires authentication. Whether you are retrieving, updating, or deleting posts, ensure that you reference the JWT environment variable rather than hardcoding credentials.
 
-<Callout icon="lightbulb">
-  By automating token management, you not only streamline your testing process but also reduce the risk of errors when switching environments.
-</Callout>
+> **lightbulb** By automating token management, you not only streamline your testing process but also reduce the risk of errors when switching environments.
 
 ***
 
@@ -94,6 +86,4 @@ Leveraging Postman's environment variables and scripting capabilities can signif
 
 Happy testing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/a4f3abce-918f-43b5-b7d9-c98e01b306da" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/a4f3abce-918f-43b5-b7d9-c98e01b306da)

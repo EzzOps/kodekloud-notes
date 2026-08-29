@@ -43,9 +43,7 @@ ip -n b3165c10a92b addr
 
 Each new container repeats this process, assigning a unique IP in `172.17.0.0/16`.
 
-<Frame>
-  ![The image is a network diagram illustrating a Docker bridge network setup, showing connections between containers and the bridge interface docker0.](../../../../images/kodekloud.com/kk-media/image/upload/v1752873892/notes-assets/images/Docker-Certified-Associate-Exam-Course-Networking-Deep-Dive-Docker/docker-bridge-network-diagram.jpg)
-</Frame>
+![The image is a network diagram illustrating a Docker bridge network setup, showing connections between containers and the bridge interface docker0.](https://kodekloud.com/kk-media/image/upload/v1752873892/notes-assets/images/Docker-Certified-Associate-Exam-Course-Networking-Deep-Dive-Docker/docker-bridge-network-diagram.jpg)
 
 ## Container-to-Container and Host Communication
 
@@ -56,9 +54,7 @@ curl http://172.17.0.3:80
 # => Welcome to nginx!
 ```
 
-<Callout icon="lightbulb">
-  External clients cannot access container IPs on the bridge network without port publishing.
-</Callout>
+> **lightbulb** External clients cannot access container IPs on the bridge network without port publishing.
 
 ## Publishing Ports (Port Mapping)
 
@@ -92,9 +88,7 @@ This ensures incoming connections on host port 8080 are redirected to the contai
 * [Linux Network Namespaces](https://man7.org/linux/man-pages/man7/namespaces.7.html)
 * [iptables Documentation](https://www.netfilter.org/projects/iptables/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/docker-certified-associate-exam-course/module/ddc7602c-93a8-4a6f-900c-a5cf6f7b0716/lesson/a5690211-ec30-4129-b573-3810a715f663" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/docker-certified-associate-exam-course/module/ddc7602c-93a8-4a6f-900c-a5cf6f7b0716/lesson/a5690211-ec30-4129-b573-3810a715f663)
 
 
 # Networking Deep Dive Namespaces
@@ -105,13 +99,9 @@ This tutorial explores Linux network namespaces, focusing on container network i
 
 In this tutorial, we take a deep dive into Linux **network namespaces**—the building blocks of container network isolation (e.g., in [Docker](https://www.docker.com/)). Think of your host as a house and each network namespace as a private room: containers inside one room cannot see interfaces or processes in another. The host, however, has a global view of all “rooms.”
 
-<Frame>
-  ![The image depicts a house-like structure with four colored sections, each containing a silhouette of a person, and the word "NAMESPACE" at the top.](../../../../images/kodekloud.com/kk-media/image/upload/v1752873894/notes-assets/images/Docker-Certified-Associate-Exam-Course-Networking-Deep-Dive-Namespaces/house-structure-namespaces-silhouettes.jpg)
-</Frame>
+![The image depicts a house-like structure with four colored sections, each containing a silhouette of a person, and the word "NAMESPACE" at the top.](https://kodekloud.com/kk-media/image/upload/v1752873894/notes-assets/images/Docker-Certified-Associate-Exam-Course-Networking-Deep-Dive-Namespaces/house-structure-namespaces-silhouettes.jpg)
 
-<Callout icon="lightbulb">
-  Most of these commands require root privileges or `sudo`. Ensure you have the appropriate permissions before proceeding.
-</Callout>
+> **lightbulb** Most of these commands require root privileges or `sudo`. Ensure you have the appropriate permissions before proceeding.
 
 ***
 

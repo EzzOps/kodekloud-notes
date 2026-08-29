@@ -35,9 +35,7 @@ vault secrets list
 
 Ensure the `totp/` entry appears in the output.
 
-<Callout icon="lightbulb">
-  Be sure you’re authenticated as a Vault user with permission to enable secrets engines.
-</Callout>
+> **lightbulb** Be sure you’re authenticated as a Vault user with permission to enable secrets engines.
 
 ***
 
@@ -51,38 +49,28 @@ Ensure the `totp/` entry appears in the output.
 4. Attach the necessary policies (e.g., **AdministratorAccess**).
 5. Review and create the user.
 
-<Frame>
-  ![The image shows the AWS IAM Management Console's "Add User" page, where user details and access types are being configured. It includes options for setting a username, selecting AWS access types, and creating a console password.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878075/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-TOTP-Secrets-Engine/aws-iam-add-user-console-page.jpg)
-</Frame>
+![The image shows the AWS IAM Management Console's "Add User" page, where user details and access types are being configured. It includes options for setting a username, selecting AWS access types, and creating a console password.](https://kodekloud.com/kk-media/image/upload/v1752878075/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-TOTP-Secrets-Engine/aws-iam-add-user-console-page.jpg)
 
 ### 2.2 Open MFA settings
 
 1. In IAM, go to **Users** and select **TOTP**.
 2. Under **Security credentials**, locate **MFA device: None assigned** and click **Manage**.
 
-<Frame>
-  ![The image shows the AWS Identity and Access Management (IAM) console, displaying a list of users with details such as access key age, password age, last activity, and MFA status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878076/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-TOTP-Secrets-Engine/aws-iam-console-users-details.jpg)
-</Frame>
+![The image shows the AWS Identity and Access Management (IAM) console, displaying a list of users with details such as access key age, password age, last activity, and MFA status.](https://kodekloud.com/kk-media/image/upload/v1752878076/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-TOTP-Secrets-Engine/aws-iam-console-users-details.jpg)
 
 ### 2.3 Select Virtual MFA
 
 In the **Manage MFA** popup, choose **Virtual MFA device** and click **Continue**.
 
-<Frame>
-  ![The image shows the AWS Identity and Access Management (IAM) console with a pop-up window for managing MFA devices, offering options like a virtual MFA device, U2F security key, or other hardware MFA device.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878078/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-TOTP-Secrets-Engine/aws-iam-console-mfa-management-popup.jpg)
-</Frame>
+![The image shows the AWS Identity and Access Management (IAM) console with a pop-up window for managing MFA devices, offering options like a virtual MFA device, U2F security key, or other hardware MFA device.](https://kodekloud.com/kk-media/image/upload/v1752878078/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-TOTP-Secrets-Engine/aws-iam-console-mfa-management-popup.jpg)
 
 ### 2.4 Copy the QR code or Base32 secret
 
 AWS displays both a QR code and a Base32-encoded secret. You need the underlying `otpauth://` URL and the secret string to configure Vault.
 
-<Frame>
-  ![The image shows an AWS Identity and Access Management (IAM) console screen with a pop-up for setting up a virtual MFA device, including a QR code and fields for entering MFA codes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878079/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-TOTP-Secrets-Engine/aws-iam-mfa-setup-console-screen.jpg)
-</Frame>
+![The image shows an AWS Identity and Access Management (IAM) console screen with a pop-up for setting up a virtual MFA device, including a QR code and fields for entering MFA codes.](https://kodekloud.com/kk-media/image/upload/v1752878079/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-TOTP-Secrets-Engine/aws-iam-mfa-setup-console-screen.jpg)
 
-<Callout icon="triangle-alert">
-  Keep the Base32 secret private. Anyone with this secret can generate valid MFA codes for your AWS account.
-</Callout>
+> **triangle-alert** Keep the Base32 secret private. Anyone with this secret can generate valid MFA codes for your AWS account.
 
 ***
 
@@ -148,6 +136,4 @@ Congratulations! You’ve successfully configured Vault’s TOTP secrets engine 
 * [Vault TOTP Secrets Engine](https://www.vaultproject.io/docs/secrets/totp)
 * [AWS IAM Virtual MFA Devices](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_enable_virtual.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/08fa46b8-3e47-4ced-a9d8-c01a6858e885" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/08fa46b8-3e47-4ced-a9d8-c01a6858e885)

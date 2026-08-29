@@ -14,7 +14,7 @@ AI is increasingly present in our daily operations. For instance, as of November
 
 Below is Gartner's Hype Cycle for Artificial Intelligence 2024, which illustrates the journey from innovation triggers to realistic productivity benefits:
 
-![The image shows the "Hype Cycle for Artificial Intelligence, 2024" by Gartner, illustrating various AI technologies along the stages of the hype cycle, from "Innovation Trigger" to "Plateau of Productivity." It includes terms like "AI Engineering," "Generative AI," and "Computer Vision," indicating their expected time to reach maturity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857301/notes-assets/images/AWS-Certified-AI-Practitioner-A-Final-Word-The-future-impact-of-AI-in-AWS-and-beyond/hype-cycle-artificial-intelligence-2024.jpg)
+![The image shows the "Hype Cycle for Artificial Intelligence, 2024" by Gartner, illustrating various AI technologies along the stages of the hype cycle, from "Innovation Trigger" to "Plateau of Productivity." It includes terms like "AI Engineering," "Generative AI," and "Computer Vision," indicating their expected time to reach maturity.](https://kodekloud.com/kk-media/image/upload/v1752857301/notes-assets/images/AWS-Certified-AI-Practitioner-A-Final-Word-The-future-impact-of-AI-in-AWS-and-beyond/hype-cycle-artificial-intelligence-2024.jpg)
 
 This progression suggests that while early interest and high expectations are common, many technologies must clear the hype before delivering substantial value. Ultimately, innovations transition from novelty to essential productivity tools.
 
@@ -28,17 +28,17 @@ AI is not merely a tool; it is set to enhance and redefine nearly every job role
 
 The following slide illustrates the potential of personalized learning experiences:
 
-![The image is a presentation slide titled "Personalized Learning Experience," highlighting features like intelligent tutoring systems, real-time error detection, and multi-modal localization. It also includes logos for ELM and Istio.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857302/notes-assets/images/AWS-Certified-AI-Practitioner-A-Final-Word-The-future-impact-of-AI-in-AWS-and-beyond/personalized-learning-experience-slide.jpg)
+![The image is a presentation slide titled "Personalized Learning Experience," highlighting features like intelligent tutoring systems, real-time error detection, and multi-modal localization. It also includes logos for ELM and Istio.](https://kodekloud.com/kk-media/image/upload/v1752857302/notes-assets/images/AWS-Certified-AI-Practitioner-A-Final-Word-The-future-impact-of-AI-in-AWS-and-beyond/personalized-learning-experience-slide.jpg)
 
 ### Intelligent Tutoring in Action
 
 With AI-driven systems, learners will enjoy simulated mentorship with continuous, context-aware guidance:
 
-![The image is a slide titled "Intelligent Tutoring Systems" with three points: "Simulated One-on-One Mentorship," "Real-Time Guidance and Hints," and "Contextual Explanations including multi-modal."](../../../../images/kodekloud.com/kk-media/image/upload/v1752857303/notes-assets/images/AWS-Certified-AI-Practitioner-A-Final-Word-The-future-impact-of-AI-in-AWS-and-beyond/intelligent-tutoring-systems-slide.jpg)
+![The image is a slide titled "Intelligent Tutoring Systems" with three points: "Simulated One-on-One Mentorship," "Real-Time Guidance and Hints," and "Contextual Explanations including multi-modal."](https://kodekloud.com/kk-media/image/upload/v1752857303/notes-assets/images/AWS-Certified-AI-Practitioner-A-Final-Word-The-future-impact-of-AI-in-AWS-and-beyond/intelligent-tutoring-systems-slide.jpg)
 
 Additionally, AI models will analyze your on-screen actions and inputs, instantly offering feedback to refine your techniques. Consider a Kubernetes lab setting where an AI assistant might immediately point out configuration errors, thereby speeding up your learning process:
 
-![The image is a slide titled "Advanced Error Detection and Feedback," highlighting three points: understanding nuances in mistakes, providing immediate, actionable feedback, and accelerating learning in complex environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857304/notes-assets/images/AWS-Certified-AI-Practitioner-A-Final-Word-The-future-impact-of-AI-in-AWS-and-beyond/advanced-error-detection-feedback.jpg)
+![The image is a slide titled "Advanced Error Detection and Feedback," highlighting three points: understanding nuances in mistakes, providing immediate, actionable feedback, and accelerating learning in complex environments.](https://kodekloud.com/kk-media/image/upload/v1752857304/notes-assets/images/AWS-Certified-AI-Practitioner-A-Final-Word-The-future-impact-of-AI-in-AWS-and-beyond/advanced-error-detection-feedback.jpg)
 
 > **lightbulb** The integration of AI in education not only boosts technical skills but also significantly improves accessibility, catering to auditory, visual, and color-blind needs with real-time translation and support.
 
@@ -48,7 +48,7 @@ In summary, although we cannot predict every nuance of AI's impact on the job ma
 
 Below is a final overview of these predictions:
 
-![The image is a slide titled "Conclusion and Future Outlook," listing four points: AI will increase personalization, multi-modal will be the future, real-time feedback and error detection will be the norm, and future coursework will be created on-demand.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857305/notes-assets/images/AWS-Certified-AI-Practitioner-A-Final-Word-The-future-impact-of-AI-in-AWS-and-beyond/conclusion-future-outlook-ai-predictions.jpg)
+![The image is a slide titled "Conclusion and Future Outlook," listing four points: AI will increase personalization, multi-modal will be the future, real-time feedback and error detection will be the norm, and future coursework will be created on-demand.](https://kodekloud.com/kk-media/image/upload/v1752857305/notes-assets/images/AWS-Certified-AI-Practitioner-A-Final-Word-The-future-impact-of-AI-in-AWS-and-beyond/conclusion-future-outlook-ai-predictions.jpg)
 
 Looking ahead, course materials and skill development will become increasingly on-demand, thereby streamlining and personalizing the learning experience. Every job in tech will be enhanced by the growing presence of AI. Your commitment to learning and adapting now will yield substantial benefits throughout your career.
 

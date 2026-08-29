@@ -74,11 +74,9 @@ References:
 * [Kubernetes Admission Controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
 * [Common Expression Language (CEL) — specification](https://opensource.google/docs/cel/spec/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/06ac03ac-518a-4bc6-b2f8-6ed63fcb26d5/lesson/5de52805-a91c-4d75-b5f3-538d09c68779" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/06ac03ac-518a-4bc6-b2f8-6ed63fcb26d5/lesson/5de52805-a91c-4d75-b5f3-538d09c68779)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/06ac03ac-518a-4bc6-b2f8-6ed63fcb26d5/lesson/e511ca5d-b23f-4037-873e-9b377026af20" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/06ac03ac-518a-4bc6-b2f8-6ed63fcb26d5/lesson/e511ca5d-b23f-4037-873e-9b377026af20)
 
 
 # Lab Solution Add CEL validation to WebApp
@@ -97,9 +95,7 @@ These checks are implemented in two pieces:
 1. A `ValidatingAdmissionPolicy` that describes which resources to match and contains the CEL expressions.
 2. A `ValidatingAdmissionPolicyBinding` that attaches the policy and selects the enforcement action. Here the enforcement action is `Deny`, so any failed expression blocks the write before the object is stored.
 
-<Callout icon="lightbulb">
-  A policy without a binding is like a rule written down but not posted at the door — it won't be enforced until it is bound.
-</Callout>
+> **lightbulb** A policy without a binding is like a rule written down but not posted at the door — it won't be enforced until it is bound.
 
 ## What this policy enforces
 
@@ -142,9 +138,7 @@ Notes:
 * `failurePolicy: Fail` means the admission request is rejected on policy evaluation errors.
 * The CEL `has()` check lets the field be optional; only present values are evaluated against the constraint.
 
-<Callout icon="warning">
-  Ensure your cluster supports `ValidatingAdmissionPolicy` resources in `admissionregistration.k8s.io/v1` before applying these manifests. Cluster feature availability can vary by Kubernetes distribution and version.
-</Callout>
+> **warning** Ensure your cluster supports `ValidatingAdmissionPolicy` resources in `admissionregistration.k8s.io/v1` before applying these manifests. Cluster feature availability can vary by Kubernetes distribution and version.
 
 ## ValidatingAdmissionPolicyBinding
 

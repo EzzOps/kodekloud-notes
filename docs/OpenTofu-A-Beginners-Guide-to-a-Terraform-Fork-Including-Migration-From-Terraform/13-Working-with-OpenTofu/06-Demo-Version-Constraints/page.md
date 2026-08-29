@@ -39,9 +39,7 @@ resource "local_file" "innovation" {
 Which version of the `hashicorp/local` provider is specified?\
 **Answer:** `1.2.2`
 
-<Callout icon="lightbulb">
-  Hardcoding a provider version ensures reproducible builds but may require manual updates for new features.
-</Callout>
+> **lightbulb** Hardcoding a provider version ensures reproducible builds but may require manual updates for new features.
 
 ***
 
@@ -146,9 +144,7 @@ resource "aws_ebs_volume" "soft-volume" {
 
 To confirm the current Helm provider versions, check the official documentation:
 
-<Frame>
-  ![The image shows a webpage displaying Helm documentation, including a list of version histories and a section on provider usage with code snippets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882907/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Version-Constraints/helm-documentation-version-history-provider-usage.jpg)
-</Frame>
+![The image shows a webpage displaying Helm documentation, including a list of version histories and a section on provider usage with code snippets.](https://kodekloud.com/kk-media/image/upload/v1752882907/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Version-Constraints/helm-documentation-version-history-provider-usage.jpg)
 
 **Answers:**
 
@@ -163,8 +159,6 @@ To confirm the current Helm provider versions, check the official documentation:
 * [OpenTofu GitHub Repository](https://github.com/OpenTofu)
 * [HashiCorp Provider Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/4d2bf6f0-f60f-4734-99b5-16b3064e393c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/4d2bf6f0-f60f-4734-99b5-16b3064e393c)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/1a48929a-5855-4c1a-ade1-5e804298942f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/1a48929a-5855-4c1a-ade1-5e804298942f)

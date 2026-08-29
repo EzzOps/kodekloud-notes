@@ -42,9 +42,7 @@ DAX stores frequently requested items in memory inside a DAX cluster so your app
   <img alt="An infographic slide titled &#x22;DynamoDB DAX&#x22; showing five numbered feature cards with colorful icons. The cards list: fully managed cache for DynamoDB; compatibility with the DynamoDB API; ideal for high read workloads; customizable TTL settings; and scalability/high availability." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Exam tip: If a question describes a read-heavy DynamoDB table that needs lower-latency reads, the correct service to consider is DynamoDB DAX.
-</Callout>
+> **lightbulb** Exam tip: If a question describes a read-heavy DynamoDB table that needs lower-latency reads, the correct service to consider is DynamoDB DAX.
 
 ## Best practices
 
@@ -69,6 +67,4 @@ DAX stores frequently requested items in memory inside a DAX cluster so your app
 
 In summary, DAX is a managed, in-memory cache built specifically for DynamoDB that reduces read latency and offloads read traffic, making it an excellent choice for read-heavy, latency-sensitive applications.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/f600cfff-66a1-497a-b240-7a6204b62546" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/f600cfff-66a1-497a-b240-7a6204b62546)

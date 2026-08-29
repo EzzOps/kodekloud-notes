@@ -28,25 +28,25 @@ jobs:
 
 Commit and run. When both pipelines finish successfully:
 
-![The image shows an Azure DevOps pipeline interface with a list of completed jobs and their statuses, indicating a successful build process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867816/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-pipeline-successful-build.jpg)
+![The image shows an Azure DevOps pipeline interface with a list of completed jobs and their statuses, indicating a successful build process.](https://kodekloud.com/kk-media/image/upload/v1752867816/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-pipeline-successful-build.jpg)
 
 Check the pipelines dashboard:
 
-![The image shows an Azure DevOps Pipelines dashboard with a list of recently run pipelines, including "KodeKloudBlog" and "azure-static-web-apps-purple-island," along with their statuses and last run details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867817/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-pipelines-dashboard-recent-runs.jpg)
+![The image shows an Azure DevOps Pipelines dashboard with a list of recently run pipelines, including "KodeKloudBlog" and "azure-static-web-apps-purple-island," along with their statuses and last run details.](https://kodekloud.com/kk-media/image/upload/v1752867817/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-pipelines-dashboard-recent-runs.jpg)
 
 > **triangle-alert** If all agents are busy, your builds queue:
 
-  ![The image shows an Azure DevOps interface with a "Build and Deploy Job" in progress. The job is queued because all agents are busy, and it is in position 1 in the queue.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867818/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-build-deploy-job-queued.jpg)
+  ![The image shows an Azure DevOps interface with a "Build and Deploy Job" in progress. The job is queued because all agents are busy, and it is in position 1 in the queue.](https://kodekloud.com/kk-media/image/upload/v1752867818/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-build-deploy-job-queued.jpg)
 
 Once agent pools are healthy, you’ll see green checks:
 
-![The image shows an Azure DevOps Pipelines dashboard with a list of recently run pipelines, including details like the pipeline name, last run time, and status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867819/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-pipelines-dashboard-recent-runs-2.jpg)
+![The image shows an Azure DevOps Pipelines dashboard with a list of recently run pipelines, including details like the pipeline name, last run time, and status.](https://kodekloud.com/kk-media/image/upload/v1752867819/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-pipelines-dashboard-recent-runs-2.jpg)
 
 ## 6. Verify the Live Site
 
 Browse to your Static Web App URL and confirm the Blazor app is live:
 
-![The image shows a weather data table from a web application, displaying dates, temperatures in Celsius and Fahrenheit, and a summary of the weather conditions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867820/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/weather-data-table-web-application.jpg)
+![The image shows a weather data table from a web application, displaying dates, temperatures in Celsius and Fahrenheit, and a summary of the weather conditions.](https://kodekloud.com/kk-media/image/upload/v1752867820/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/weather-data-table-web-application.jpg)
 
 ## 7. Continuous Updates via Git
 
@@ -107,7 +107,7 @@ Automating your deployment pipeline is essential for delivering fast, reliable u
 * Splitting build and deploy jobs
 * Securing credentials with GitHub Secrets
 
-![The image shows a webpage for "KodeKloud Coffee Shop" with a photo of people standing at a coffee shop counter. It includes sections about their coffees, mission, and an invitation to visit.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867823/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/kodekloud-coffee-shop-webpage-photo.jpg)
+![The image shows a webpage for "KodeKloud Coffee Shop" with a photo of people standing at a coffee shop counter. It includes sections about their coffees, mission, and an invitation to visit.](https://kodekloud.com/kk-media/image/upload/v1752867823/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/kodekloud-coffee-shop-webpage-photo.jpg)
 
 ## 1. Setting Up GitHub Actions
 
@@ -115,11 +115,11 @@ Workflows live in the `.github/workflows` folder. They can compile code, run tes
 
 Here’s our sample repo structure for **KodeKloudCoffee**:
 
-![The image shows a GitHub repository page for "KodeKloudCoffee," featuring a list of files and a README section describing a coffee shop website project. The repository includes various files and has no stars or forks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867824/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/kodekloudcoffee-github-repo-readme.jpg)
+![The image shows a GitHub repository page for "KodeKloudCoffee," featuring a list of files and a README section describing a coffee shop website project. The repository includes various files and has no stars or forks.](https://kodekloud.com/kk-media/image/upload/v1752867824/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/kodekloudcoffee-github-repo-readme.jpg)
 
 You can start from scratch or pick a template in the Actions UI:
 
-![The image shows a GitHub Actions interface with options for configuring various deployment and continuous integration workflows, such as deploying Node.js to Azure and Amazon ECS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867825/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/github-actions-deployment-workflows-interface.jpg)
+![The image shows a GitHub Actions interface with options for configuring various deployment and continuous integration workflows, such as deploying Node.js to Azure and Amazon ECS.](https://kodekloud.com/kk-media/image/upload/v1752867825/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/github-actions-deployment-workflows-interface.jpg)
 
 ### 1.1 Simple Deploy-to-Azure Workflow
 
@@ -170,21 +170,21 @@ Create an Azure App Service to host your Node.js site. In the Azure portal:
 | Region         | Central US              |
 | OS             | Linux                   |
 
-![The image shows the Microsoft Azure portal interface for creating a new web app, with options for subscription, resource group, instance details, runtime stack, operating system, and region selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867827/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/azure-portal-new-web-app-interface.jpg)
+![The image shows the Microsoft Azure portal interface for creating a new web app, with options for subscription, resource group, instance details, runtime stack, operating system, and region selection.](https://kodekloud.com/kk-media/image/upload/v1752867827/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/azure-portal-new-web-app-interface.jpg)
 
 3. Choose a pricing plan (Free tier is fine) and click **Review + create**:
 
-![The image shows the "Create Web App" page on Microsoft Azure, where options for runtime stack, operating system, region, pricing plans, and zone redundancy are being configured.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867830/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/create-web-app-azure-configurations.jpg)
+![The image shows the "Create Web App" page on Microsoft Azure, where options for runtime stack, operating system, region, pricing plans, and zone redundancy are being configured.](https://kodekloud.com/kk-media/image/upload/v1752867830/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/create-web-app-azure-configurations.jpg)
 
 > **triangle-alert** Linux apps don’t support automatic GitHub Actions setup in the portal. We’ll configure our CI/CD workflow manually below.
 
 4. Skip the “Get GitHub Actions” prompt and click **Create**:
 
-![The image shows the "Create Web App" page on Microsoft Azure, where settings for continuous deployment and GitHub integration are being configured.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867831/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/create-web-app-azure-github-settings.jpg)
+![The image shows the "Create Web App" page on Microsoft Azure, where settings for continuous deployment and GitHub integration are being configured.](https://kodekloud.com/kk-media/image/upload/v1752867831/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/create-web-app-azure-github-settings.jpg)
 
 5. Once provisioning completes, download the **Publish Profile** (XML). Store this file securely outside your repo.
 
-![The image shows a Microsoft Azure portal page for creating a web app, displaying details like subscription, resource group, and app service plan. The configuration includes a free SKU, Node 20 LTS runtime stack, and Linux operating system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867832/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/azure-portal-web-app-configuration.jpg)
+![The image shows a Microsoft Azure portal page for creating a web app, displaying details like subscription, resource group, and app service plan. The configuration includes a free SKU, Node 20 LTS runtime stack, and Linux operating system.](https://kodekloud.com/kk-media/image/upload/v1752867832/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/azure-portal-web-app-configuration.jpg)
 
 ## 3. Extending the Workflow for Azure Deployment
 
@@ -263,17 +263,17 @@ jobs:
 
 After you push, open the **Actions** tab to view your workflow runs. You’ll see two jobs—**build** and **deploy**—linked by the `needs` dependency:
 
-![The image shows a GitHub Actions page with two workflow runs, "Update main.yml" and "Create main.yml," both successfully completed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867834/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/github-actions-workflows-update-create.jpg)
+![The image shows a GitHub Actions page with two workflow runs, "Update main.yml" and "Create main.yml," both successfully completed.](https://kodekloud.com/kk-media/image/upload/v1752867834/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/github-actions-workflows-update-create.jpg)
 
 Drill into the **build** job to review each step and the uploaded artifact:
 
-![The image shows a GitHub Actions workflow interface for a project named "KodeKloudCoffee," displaying the successful completion of a build job with detailed steps and annotations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867835/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/github-actions-kodekloudcoffee-workflow.jpg)
+![The image shows a GitHub Actions workflow interface for a project named "KodeKloudCoffee," displaying the successful completion of a build job with detailed steps and annotations.](https://kodekloud.com/kk-media/image/upload/v1752867835/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/github-actions-kodekloudcoffee-workflow.jpg)
 
 ## 6. Verifying in Azure
 
 In the Azure portal, open your App Service and check **Deployment Center** or **Logs** to confirm a successful release:
 
-![The image shows the Microsoft Azure portal interface for a web app named "kodekloudcoffee," displaying its overview, properties, and deployment details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867836/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/azure-portal-kodekloudcoffee-overview.jpg)
+![The image shows the Microsoft Azure portal interface for a web app named "kodekloudcoffee," displaying its overview, properties, and deployment details.](https://kodekloud.com/kk-media/image/upload/v1752867836/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Deployment-Automation-with-GitHub-Actions/azure-portal-kodekloudcoffee-overview.jpg)
 
 Your **KodeKloud Coffee Shop** is now live, updating automatically on every push to `main`.
 

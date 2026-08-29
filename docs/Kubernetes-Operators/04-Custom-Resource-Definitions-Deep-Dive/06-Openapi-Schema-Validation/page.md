@@ -41,9 +41,7 @@ Set `type: object` at the root, then walk down into `spec` and `status` the same
 
 Callouts
 
-<Callout icon="lightbulb">
-  Use an OpenAPI structural schema to reject invalid CRs early — this simplifies controller logic and prevents reconciliation loops caused by malformed objects.
-</Callout>
+> **lightbulb** Use an OpenAPI structural schema to reject invalid CRs early — this simplifies controller logic and prevents reconciliation loops caused by malformed objects.
 
 Common constraints by data type
 
@@ -174,9 +172,7 @@ Operational notes and versioning
 
 * When you change a schema on an existing CRD, already stored objects are not revalidated; only new writes are checked. Tightening constraints can fail new writes even though old objects remain stored. Version your API and plan schema migrations carefully.
 
-<Callout icon="warning">
-  When you tighten a schema, existing stored objects are not automatically revalidated. Plan schema migrations and API versioning carefully.
-</Callout>
+> **warning** When you tighten a schema, existing stored objects are not automatically revalidated. Plan schema migrations and API versioning carefully.
 
 Next steps
 
@@ -192,6 +188,4 @@ References and further reading
 * Kubernetes CRD validation and structural schemas: [https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/)
 * CEL for Kubernetes validation: [https://github.com/google/cel-spec](https://github.com/google/cel-spec)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ba392f08-9d70-442b-9751-fdc2052b777e/lesson/0355fbee-32d4-44f3-b84e-60fbb1a269da" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ba392f08-9d70-442b-9751-fdc2052b777e/lesson/0355fbee-32d4-44f3-b84e-60fbb1a269da)

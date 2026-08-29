@@ -71,7 +71,7 @@ Data:
     00:b9:b0:55:24:fb:a4:ef:77:73:7c:9b
 ```
 
-![The image shows a digital certificate for "MY-BANK.COM" with details like serial number, issuer, validity, and subject public key information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869969/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-Basics/frame_620.jpg)
+![The image shows a digital certificate for "MY-BANK.COM" with details like serial number, issuer, validity, and subject public key information.](https://kodekloud.com/kk-media/image/upload/v1752869969/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-Basics/frame_620.jpg)
 
 Browsers rely on Certificate Authorities (CAs) to sign and validate certificates. Renowned CAs, such as Symantec, DigiCert, Komodo, and GlobalSign, use their private keys to sign certificate signing requests (CSRs). When you generate a CSR for your web server, it is sent to a CA for signing:
 
@@ -100,7 +100,7 @@ It is important to note that although both keys in an asymmetric pair can encryp
 
 Regarding file naming conventions, certificates containing public keys typically have extensions such as .crt or .pem (e.g., server.crt, server.pem or client.crt, client.pem), and private key files usually include "key" in the filename or extension (e.g., server.key or server-key.pem).
 
-![The image illustrates public and private keys, showing certificate file types (.crt, .pem) and their roles in encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869970/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-Basics/frame_1160.jpg)
+![The image illustrates public and private keys, showing certificate file types (.crt, .pem) and their roles in encryption.](https://kodekloud.com/kk-media/image/upload/v1752869970/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-Basics/frame_1160.jpg)
 
 That concludes this lesson on TLS-Basics. Thank you for reading, and I look forward to seeing you in the next lesson!
 
@@ -125,7 +125,7 @@ Securing your Kubernetes cluster with TLS might seem challenging if you're not a
 
 If you already have a solid understanding of TLS certificates, feel free to skip directly to the Kubernetes-specific sections. By the end of this article, you will be equipped with the skills to efficiently configure, monitor, and troubleshoot certificate-related issues in your Kubernetes environment, while also gaining a broader understanding of how TLS certificates work overall. Mastering these concepts will enhance your ability to secure and maintain robust infrastructures.
 
-![The image lists goals related to TLS certificates, including understanding, generating, configuring, viewing, and troubleshooting them, particularly in the context of Kubernetes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869971/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-Introduction/frame_70.jpg)
+![The image lists goals related to TLS certificates, including understanding, generating, configuring, viewing, and troubleshooting them, particularly in the context of Kubernetes.](https://kodekloud.com/kk-media/image/upload/v1752869971/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-Introduction/frame_70.jpg)
 
 We begin with the fundamentals of certificates, covering key concepts such as certificate authorities, issuance, and validation processes. If these basics are already within your grasp, you may proceed to the next section where we delve deeper into managing certificates specifically in Kubernetes.
 

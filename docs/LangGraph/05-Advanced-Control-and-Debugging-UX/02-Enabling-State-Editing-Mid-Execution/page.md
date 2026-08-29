@@ -116,9 +116,7 @@ Checkpoint 2: after_route
 
 Each saved checkpoint represents a snapshot of execution at a particular step. Time travel means selecting one of those snapshots, changing the state, and continuing from there to observe how the workflow would behave under the modified conditions.
 
-<Callout icon="lightbulb">
-  Time travel is useful for debugging and experimentation: instead of rerunning the entire pipeline, you can jump to the step you care about, change a variable, and see what would have happened.
-</Callout>
+> **lightbulb** Time travel is useful for debugging and experimentation: instead of rerunning the entire pipeline, you can jump to the step you care about, change a variable, and see what would have happened.
 
 ## Inspecting checkpoints
 
@@ -192,9 +190,7 @@ After rewind + injection:
 
 Because we injected a higher confidence before routing, the resumed execution followed the `main_path` instead of the `fallback_path`. This demonstrates how state injection lets you explore alternate outcomes without re-running the entire workflow.
 
-<Callout icon="warning">
-  When modifying checkpoints, always work on deep copies (as shown) to avoid mutating historical records. Preserving immutable checkpoints ensures reproducibility and accurate auditing of prior runs.
-</Callout>
+> **warning** When modifying checkpoints, always work on deep copies (as shown) to avoid mutating historical records. Preserving immutable checkpoints ensures reproducibility and accurate auditing of prior runs.
 
 ## When to use time travel with state injection
 
@@ -210,11 +206,9 @@ Because we injected a higher confidence before routing, the resumed execution fo
 
 Key takeaway: State injection (time travel) lets you rewind a workflow to a chosen checkpoint, modify the saved state, and continue execution from there—making debugging, testing, and scenario exploration faster and more targeted.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/74df2352-cf65-40d3-a3c3-70fdfb767635/lesson/77331c58-962b-4d72-b4b9-8f3454463d05" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/74df2352-cf65-40d3-a3c3-70fdfb767635/lesson/77331c58-962b-4d72-b4b9-8f3454463d05)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langgraph/module/74df2352-cf65-40d3-a3c3-70fdfb767635/lesson/3cbdd6a6-88fb-4072-bede-10fc0e692056" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langgraph/module/74df2352-cf65-40d3-a3c3-70fdfb767635/lesson/3cbdd6a6-88fb-4072-bede-10fc0e692056)
 
 
 # Enabling State Editing Mid Execution
@@ -312,9 +306,7 @@ Always enforce server-side validation, schema checks, and permission controls be
   <img alt="The image lists three front-end integration options: 1) Admin dashboards with state editors, 2) CLI tools for developers, 3) Webhooks for external systems." />
 </Frame>
 
-<Callout icon="warning">
-  Editing state mid-execution is powerful but risky. Always log who changed what and when, enforce validation rules to prevent corrupt state, and restrict this capability in production to admin or trusted roles.
-</Callout>
+> **warning** Editing state mid-execution is powerful but risky. Always log who changed what and when, enforce validation rules to prevent corrupt state, and restrict this capability in production to admin or trusted roles.
 
 Best practices
 
@@ -331,6 +323,4 @@ Links and references
 * JSON schema validation: [https://json-schema.org/](https://json-schema.org/)
 * Best practices for secure webhooks: [https://owasp.org/www-project-secure-headers/](https://owasp.org/www-project-secure-headers/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/74df2352-cf65-40d3-a3c3-70fdfb767635/lesson/b6dd0044-d18d-4c7e-8f5b-2d04a729d0ad" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/74df2352-cf65-40d3-a3c3-70fdfb767635/lesson/b6dd0044-d18d-4c7e-8f5b-2d04a729d0ad)

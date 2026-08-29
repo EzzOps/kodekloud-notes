@@ -34,9 +34,7 @@ steps:
     action: fetch:template
 ```
 
-<Callout icon="warning">
-  The Template Form Playground validates as you type and can show transient validation errors. If you see unexpected errors, edit the YAML in an external editor and paste it back into the playground.
-</Callout>
+> **warning** The Template Form Playground validates as you type and can show transient validation errors. If you see unexpected errors, edit the YAML in an external editor and paste it back into the playground.
 
 ## Create the actual template file (api-template.yaml)
 
@@ -293,9 +291,7 @@ This pattern enables platform teams to bake best practices and guardrails into s
 * Backstage Scaffolder actions (fetch, publish, register): [https://backstage.io/docs/features/software-templates/actions](https://backstage.io/docs/features/software-templates/actions)
 * Backstage Catalog entities: [https://backstage.io/docs/features/software-catalog/overview](https://backstage.io/docs/features/software-catalog/overview)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/1c7142e3-0cb6-40ae-b5b6-77252f8c85b2/lesson/bdcf9a0b-92e8-4ce6-80c9-187b0e117a98" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/1c7142e3-0cb6-40ae-b5b6-77252f8c85b2/lesson/bdcf9a0b-92e8-4ce6-80c9-187b0e117a98)
 
 
 # Demo Importing Templates with Entity Providers

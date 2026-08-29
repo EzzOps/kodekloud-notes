@@ -18,15 +18,11 @@ Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
 
 During this targeted apply, only the random string resource is recreated while the AWS instance resource remains unchanged.
 
-<Callout icon="lightbulb">
-  Resource targeting should be used sparingly—only for corrective actions or urgent modifications. A full plan execution is recommended for comprehensive changes to avoid incomplete configurations.
-</Callout>
+> **lightbulb** Resource targeting should be used sparingly—only for corrective actions or urgent modifications. A full plan execution is recommended for comprehensive changes to avoid incomplete configurations.
 
 That concludes our tutorial on using resource targeting with Terraform. By following these steps, you can control resource changes in your infrastructure more granularly while maintaining the desired configuration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/cca81ade-f05a-42b2-af56-1926cade6582/lesson/70926d68-11cb-4f2d-b91c-f215a24daec8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/cca81ade-f05a-42b2-af56-1926cade6582/lesson/70926d68-11cb-4f2d-b91c-f215a24daec8)
 
 
 # Using Variables
@@ -57,9 +53,7 @@ variable "instance_type" {
 }
 ```
 
-<Callout icon="lightbulb">
-  Even if a variable is marked as sensitive, its value will still be stored in the Terraform state file.
-</Callout>
+> **lightbulb** Even if a variable is marked as sensitive, its value will still be stored in the Terraform state file.
 
 ***
 
@@ -339,6 +333,4 @@ That concludes our overview of using variables in Terraform. Mastery of these va
 
 For additional reading, check out these [Terraform documentation resources](https://www.terraform.io/docs).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/cca81ade-f05a-42b2-af56-1926cade6582/lesson/d5be9dde-f0f3-4706-a24a-f8cd44064d7e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/cca81ade-f05a-42b2-af56-1926cade6582/lesson/d5be9dde-f0f3-4706-a24a-f8cd44064d7e)

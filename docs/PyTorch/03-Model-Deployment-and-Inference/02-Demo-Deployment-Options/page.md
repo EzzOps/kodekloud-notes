@@ -6,9 +6,7 @@ This demonstration covers the process of deploying ONNX models, including instal
 
 Welcome to the first demonstration in our deployment series. In this guide, we provide a comprehensive overview of working with ONNX and the ONNX Runtime. This demonstration will walk you through installing the necessary modules, modifying a pretrained model, exporting it to ONNX format, preparing input for inference, running the inference, and finally mapping the output to a human-readable label.
 
-<Callout icon="lightbulb">
-  ONNX is an open standard format that allows interoperability of models across different platforms. With ONNX Runtime, you can execute these models efficiently in various deployment scenarios.
-</Callout>
+> **lightbulb** ONNX is an open standard format that allows interoperability of models across different platforms. With ONNX Runtime, you can execute these models efficiently in various deployment scenarios.
 
 ***
 

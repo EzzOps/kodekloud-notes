@@ -59,13 +59,9 @@ In this scenario, the mutable reference `r` allows the string `s` to be safely m
 
 Dangling references occur when a reference points to memory that has been deallocated. Rust’s ownership system and borrow checker prevent dangling references at compile time, ensuring memory safety.
 
-<Frame>
-  ![The image explains that a dangling reference is a reference pointing to invalid or deallocated memory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883947/notes-assets/images/Rust-Programming-Immutable-and-Mutable-References/dangling-reference-invalid-memory.jpg)
-</Frame>
+![The image explains that a dangling reference is a reference pointing to invalid or deallocated memory.](https://kodekloud.com/kk-media/image/upload/v1752883947/notes-assets/images/Rust-Programming-Immutable-and-Mutable-References/dangling-reference-invalid-memory.jpg)
 
-<Callout icon="lightbulb">
-  Although the diagram above provides a visual explanation, the code example below further illustrates how dangling references can occur in Rust.
-</Callout>
+> **lightbulb** Although the diagram above provides a visual explanation, the code example below further illustrates how dangling references can occur in Rust.
 
 In this example, a variable `x` is declared within an inner block, and a reference to `x` is assigned to `r` outside that block:
 
@@ -112,6 +108,4 @@ For further reading on Rust’s ownership and borrowing concepts, check out the 
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/b4ef8a6b-b3fd-4697-b8c1-577a793b33ea" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/b4ef8a6b-b3fd-4697-b8c1-577a793b33ea)

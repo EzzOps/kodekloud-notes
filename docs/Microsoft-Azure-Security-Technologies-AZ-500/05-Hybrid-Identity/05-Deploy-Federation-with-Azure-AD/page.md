@@ -6,9 +6,7 @@ This article details the federation authentication method in Azure AD Connect, e
 
 In this article, we detail the final authentication method available in Azure AD Connect—federation with Azure AD. This approach creates a trust relationship between your on-premises AD FS infrastructure and Azure AD, making it an excellent solution for organizations with robust federated environments that want seamless integration with Azure AD.
 
-<Callout icon="lightbulb">
-  At the time of recording this article, AD FS is scheduled for deprecation. In the future, this option may no longer be available.
-</Callout>
+> **lightbulb** At the time of recording this article, AD FS is scheduled for deprecation. In the future, this option may no longer be available.
 
 ## Overview of Authentication Methods
 
@@ -67,6 +65,4 @@ For further details on integrating with Azure AD, refer to [Azure AD Connect Doc
 
 Happy federating!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/ec3dd1c7-a3f1-4d9a-ae3c-59b398091a52/lesson/7a6b17d9-2bb1-4c13-812f-37fd0f990150" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/ec3dd1c7-a3f1-4d9a-ae3c-59b398091a52/lesson/7a6b17d9-2bb1-4c13-812f-37fd0f990150)

@@ -17,7 +17,7 @@ Connectivity options discussed in this lesson include:
 
 An illustrative diagram below highlights these connectivity options:
 
-![The image illustrates a network connectivity design, showing connections between on-premises infrastructure and Azure virtual networks, including gateway and workload subnets, with various connectivity options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867070/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-network-connectivity/network-connectivity-azure-design.jpg)
+![The image illustrates a network connectivity design, showing connections between on-premises infrastructure and Azure virtual networks, including gateway and workload subnets, with various connectivity options.](https://kodekloud.com/kk-media/image/upload/v1752867070/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-network-connectivity/network-connectivity-azure-design.jpg)
 
 This lesson also covers topics such as controlling outbound traffic, inter-VNet communication, and managing resource-to-subnet communication.
 
@@ -31,19 +31,19 @@ Next, we examine various network topology patterns available in Azure. There are
 
 In the Single Network Approach, all resources (such as those for a three-tier application) are deployed within a single virtual network. Isolation is achieved using subnet segmentation—for example, dividing a virtual network into frontend, mid-tier, and database subnets. Since these subnets reside within the same virtual network, system routes automatically allow inter-subnet communication without extra configuration.
 
-![The image illustrates a network topology diagram for a single network approach within an Azure region, showing a virtual network segmented into frontend, mid, and database subnets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867071/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-network-connectivity/azure-network-topology-diagram.jpg)
+![The image illustrates a network topology diagram for a single network approach within an Azure region, showing a virtual network segmented into frontend, mid, and database subnets.](https://kodekloud.com/kk-media/image/upload/v1752867071/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-network-connectivity/azure-network-topology-diagram.jpg)
 
 ### 2. Multiple Peer Networks
 
 This topology involves deploying workloads across multiple virtual networks that communicate via Virtual Network Peering. By leveraging the Microsoft Backbone network, virtual network peering ensures low-latency communication, which is particularly beneficial for scenarios like database failover or high-volume transactions.
 
-![The image illustrates a network topology design with multiple peered networks across Azure Regions A and B, showing virtual networks and subnets connected through virtual network peering.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867072/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-network-connectivity/network-topology-azure-peering.jpg)
+![The image illustrates a network topology design with multiple peered networks across Azure Regions A and B, showing virtual networks and subnets connected through virtual network peering.](https://kodekloud.com/kk-media/image/upload/v1752867072/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-network-connectivity/network-topology-azure-peering.jpg)
 
 ### 3. Hub-Spoke Architecture
 
 Widely adopted in enterprise environments, the Hub-Spoke Architecture centralizes connectivity in a hub (either a virtual network or a virtual WAN), which then connects to multiple spokes. Spokes represent additional virtual networks that link to the central hub via virtual network peering or VPN gateways. The hub can also peer with other hubs across regions, enabling efficient cross-region communication.
 
-![The image illustrates a hub-spoke network architecture across two Azure regions, showing centralized hubs connected to multiple spokes. It includes a brief description of deploying workloads in this topology.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867072/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-network-connectivity/hub-spoke-network-architecture-azure.jpg)
+![The image illustrates a hub-spoke network architecture across two Azure regions, showing centralized hubs connected to multiple spokes. It includes a brief description of deploying workloads in this topology.](https://kodekloud.com/kk-media/image/upload/v1752867072/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-network-connectivity/hub-spoke-network-architecture-azure.jpg)
 
 ***
 
@@ -70,7 +70,7 @@ For example, deploying a NAT gateway on subnet A (or multiple subnets like A and
   * Scalability: Automatically scales across multiple fault domains.
   * Performance: Maintains high network bandwidth.
 
-![The image is an infographic about designing outbound connectivity using a NAT Gateway, highlighting its security, resiliency, scalability, and performance benefits, along with a diagram showing its integration with subnets in a virtual network.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867074/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-network-connectivity/nat-gateway-outbound-connectivity-infographic.jpg)
+![The image is an infographic about designing outbound connectivity using a NAT Gateway, highlighting its security, resiliency, scalability, and performance benefits, along with a diagram showing its integration with subnets in a virtual network.](https://kodekloud.com/kk-media/image/upload/v1752867074/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-network-connectivity/nat-gateway-outbound-connectivity-infographic.jpg)
 
 Overall, NAT gateways are preferred for their ease of deployment and strong performance characteristics.
 
@@ -96,7 +96,7 @@ The priority of routing is as follows:
 | 2. BGP Routes          | Applied when using Border Gateway Protocol routing |
 | 3. System Routes       | Default routes provided by Azure                   |
 
-![The image explains the concept of designing routing in a virtual network using Azure, illustrating system routes and user-defined routes with diagrams of network subnets and connections. It highlights how traffic is managed and routed within the network infrastructure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867075/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-network-connectivity/azure-virtual-network-routing-diagram.jpg)
+![The image explains the concept of designing routing in a virtual network using Azure, illustrating system routes and user-defined routes with diagrams of network subnets and connections. It highlights how traffic is managed and routed within the network infrastructure.](https://kodekloud.com/kk-media/image/upload/v1752867075/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-network-connectivity/azure-virtual-network-routing-diagram.jpg)
 
 By combining system routes with UDRs, you gain robust control over the traffic flows within your Azure environment.
 

@@ -131,14 +131,10 @@ Be prepared to explain
 * How it differs from a ServiceEntry: ServiceEntry enables routing to external hosts; WorkloadEntry integrates endpoints as first-class mesh members with identity and telemetry support.
 * How `workloadSelector` enables unified selection of pods and external workloads.
 
-<Callout icon="lightbulb">
-  Use a ServiceEntry when you only need to enable routing to an external host. Use a WorkloadEntry when you want the external host to behave like a mesh workload (mTLS, telemetry, policies). Often both are used together: ServiceEntry to add the host to the registry and WorkloadEntry to register the concrete endpoints.
-</Callout>
+> **lightbulb** Use a ServiceEntry when you only need to enable routing to an external host. Use a WorkloadEntry when you want the external host to behave like a mesh workload (mTLS, telemetry, policies). Often both are used together: ServiceEntry to add the host to the registry and WorkloadEntry to register the concrete endpoints.
 
 References
 
 * Istio WorkloadEntry reference: [https://istio.io/latest/docs/reference/config/networking/workload-entry/](https://istio.io/latest/docs/reference/config/networking/workload-entry/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/77292246-0e9e-4099-af8f-5d8578127806" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/77292246-0e9e-4099-af8f-5d8578127806)

@@ -22,7 +22,7 @@ When you log into the Azure portal and complete the assessment, click on **Disco
 
 > **lightbulb** Migration replicates your on-premises data to the cloud and attaches a compute instance to run the workload. An analogy is removing a hard disk from a malfunctioning laptop, connecting it to another computer, and booting from it. Similarly, a replica of your disk is created in the cloud, enabling you to continue operations.
 
-![The image is an infographic from KodeKloud about migration tools for Azure, detailing server migration, database migration, and data box options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867045/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Migration-tools/azure-migration-tools-infographic.jpg)
+![The image is an infographic from KodeKloud about migration tools for Azure, detailing server migration, database migration, and data box options.](https://kodekloud.com/kk-media/image/upload/v1752867045/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Migration-tools/azure-migration-tools-infographic.jpg)
 
 ## Database Migration
 
@@ -32,7 +32,7 @@ Database migration primarily focuses on transferring your on-premises Microsoft 
 
 Microsoft’s Data Box solution is designed for the offline migration of large datasets. With Data Box, Microsoft sends you physical disks that you fill with your data and then return. While the Data Box service is not available in every region, it supports data transfers starting at 40 terabytes and scales according to your needs. For offline data migration, alternatives like the Import-Export Service are available, but Data Box remains a preferred choice for its efficiency.
 
-![The image outlines three migration tools for Azure: Server Migration, Database Migration, and Data Box, each with a brief description of their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867047/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Migration-tools/azure-migration-tools-overview.jpg)
+![The image outlines three migration tools for Azure: Server Migration, Database Migration, and Data Box, each with a brief description of their functions.](https://kodekloud.com/kk-media/image/upload/v1752867047/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Migration-tools/azure-migration-tools-overview.jpg)
 
 That concludes our overview of the key migration tools available for moving your workloads to Azure. In the next lesson, we will explore database migration in greater detail.
 

@@ -62,9 +62,7 @@ variable "webservers" {
 
 In this configuration, Terraform creates as many instances as there are elements in the `webservers` list, with each instance tagged according to its corresponding name.
 
-<Callout icon="lightbulb">
-  Using a dynamic list makes your Terraform configuration more flexible and easier to maintain when scaling resources.
-</Callout>
+> **lightbulb** Using a dynamic list makes your Terraform configuration more flexible and easier to maintain when scaling resources.
 
 ### Potential Drawback of Using Count
 

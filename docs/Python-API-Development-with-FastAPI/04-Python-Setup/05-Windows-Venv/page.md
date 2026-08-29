@@ -15,9 +15,7 @@ Launch VS Code and open the directory containing your project files. Next, open 
 
 The integrated terminal functions like a standard Windows terminal but is conveniently built into VS Code. You can run multiple terminals simultaneously and even switch between different terminal types (e.g., PowerShell and Command Prompt) based on your preference.
 
-<Frame>
-  ![The image shows a Visual Studio Code interface with a Python file named "main.py" open and an integrated terminal running PowerShell. The terminal displays the directory path and a prompt.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883470/notes-assets/images/Python-API-Development-with-FastAPI-Windows-Venv/vscode-python-main-terminal-powershell.jpg)
-</Frame>
+![The image shows a Visual Studio Code interface with a Python file named "main.py" open and an integrated terminal running PowerShell. The terminal displays the directory path and a prompt.](https://kodekloud.com/kk-media/image/upload/v1752883470/notes-assets/images/Python-API-Development-with-FastAPI-Windows-Venv/vscode-python-main-terminal-powershell.jpg)
 
 ## Step 2: Create the Virtual Environment
 
@@ -58,14 +56,10 @@ Once activated, the command prompt will change to include the virtual environmen
 (venv) C:\Users\sanjeev\Documents\fastapi>
 ```
 
-<Callout icon="lightbulb">
-  Always verify that your virtual environment is active before installing any packages. If the terminal reverts to the global Python interpreter, simply reactivate it using the command above.
-</Callout>
+> **lightbulb** Always verify that your virtual environment is active before installing any packages. If the terminal reverts to the global Python interpreter, simply reactivate it using the command above.
 
 At this point, your virtual environment is fully set up and ready for development. Enjoy coding in your isolated environment!
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/441565b9-9f18-459f-9b0b-252b1caff7b1/lesson/a0b10908-41da-44a8-8876-ff84cf38d828" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/441565b9-9f18-459f-9b0b-252b1caff7b1/lesson/a0b10908-41da-44a8-8876-ff84cf38d828)

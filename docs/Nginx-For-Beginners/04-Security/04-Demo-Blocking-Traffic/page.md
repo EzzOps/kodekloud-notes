@@ -19,8 +19,7 @@ sudo cat /etc/nginx/conf.d/.htpasswd
 # admin:$apr1$MASb7ZA.$b8LOCauVuqug5nH2AIk72/
 ```
 
-<Callout icon="warning">
-  Ensure the `.htpasswd` file is readable by the NGINX worker process (adjust ownership or permissions as needed). For example:
+> **warning** Ensure the `.htpasswd` file is readable by the NGINX worker process (adjust ownership or permissions as needed). For example:
 
   ```bash theme={null}
   sudo chown root:nginx /etc/nginx/conf.d/.htpasswd
@@ -28,7 +27,6 @@ sudo cat /etc/nginx/conf.d/.htpasswd
   ```
 
   Avoid world-writable/readable permissions on sensitive files.
-</Callout>
 
 ## Test and reload NGINX
 
@@ -63,9 +61,7 @@ location / {
 
 After editing, run `nginx -t` and reload NGINX. Note: browsers may cache credentials; use a private/incognito window or clear credentials if you do not see the login prompt immediately.
 
-<Callout icon="lightbulb">
-  Basic authentication with `.htpasswd` is simple and useful for internal or small-scale protection, but it does not scale well for large production deployments. Credentials are sent with every request and managing many users via `.htpasswd` becomes cumbersome. For production consider more robust solutions like [OAuth](https://oauth.net/), [OpenID Connect](https://openid.net/connect/), or integrating with an identity provider or SSO.
-</Callout>
+> **lightbulb** Basic authentication with `.htpasswd` is simple and useful for internal or small-scale protection, but it does not scale well for large production deployments. Credentials are sent with every request and managing many users via `.htpasswd` becomes cumbersome. For production consider more robust solutions like [OAuth](https://oauth.net/), [OpenID Connect](https://openid.net/connect/), or integrating with an identity provider or SSO.
 
 ## Alternatives and integrations
 
@@ -101,11 +97,9 @@ Links and references
 * NGINX documentation: [https://nginx.org/en/docs/](https://nginx.org/en/docs/)
 * NGINX Plus: [https://www.nginx.com/products/nginx-plus/](https://www.nginx.com/products/nginx-plus/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/3264362e-1f24-419d-9a96-d225e7708fd1" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/3264362e-1f24-419d-9a96-d225e7708fd1)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/3898f285-8614-4509-86f8-16bc73f921ea" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/3898f285-8614-4509-86f8-16bc73f921ea)
 
 
 # Demo Blocking Traffic

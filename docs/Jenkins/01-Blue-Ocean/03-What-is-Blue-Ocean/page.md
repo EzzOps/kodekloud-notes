@@ -18,13 +18,9 @@ Blue Ocean provides numerous advantages for organizations looking to optimize th
 * **Role-Based Personalization:** Tailor the interface to suit specific user roles, enabling more precise interventions when issues occur.
 * **Seamless Integration:** Benefit from native support for branch and pull request workflows on platforms like GitHub and Bitbucket.
 
-<Callout icon="lightbulb">
-  Blue Ocean is designed to streamline CI/CD operations by focusing on usability and developer productivity while preserving the core features of Jenkins.
-</Callout>
+> **lightbulb** Blue Ocean is designed to streamline CI/CD operations by focusing on usability and developer productivity while preserving the core features of Jenkins.
 
-<Frame>
-  ![The image shows a software interface for selecting pipeline steps, highlighting features like ease of use, sophisticated visualizations, and native integration for branch and pull requests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880000/notes-assets/images/Jenkins-What-is-Blue-Ocean/frame_200.jpg)
-</Frame>
+![The image shows a software interface for selecting pipeline steps, highlighting features like ease of use, sophisticated visualizations, and native integration for branch and pull requests.](https://kodekloud.com/kk-media/image/upload/v1752880000/notes-assets/images/Jenkins-What-is-Blue-Ocean/frame_200.jpg)
 
 ## What’s Next?
 
@@ -34,6 +30,4 @@ Let’s dive in and get started with Blue Ocean. We'll see you in the next lesso
 
 For additional details on Jenkins and CI/CD best practices, visit the [Jenkins Documentation](https://www.jenkins.io/doc/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/77db3006-93f7-42b0-90d0-6fd961631d1f/lesson/64d44be8-67a9-4f74-b0b1-36a853eb41eb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/77db3006-93f7-42b0-90d0-6fd961631d1f/lesson/64d44be8-67a9-4f74-b0b1-36a853eb41eb)

@@ -145,19 +145,19 @@ Outputs:
 1. Open the AWS [CloudFormation Console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/).
 2. Choose **Create stack** > **Upload a template file**, and select your `composite_alarm.yaml`.
 
-![The image shows an AWS CloudFormation interface for creating a stack, with a file selection window open to choose a YAML file named "composite\_alarm.yaml" from the Downloads folder.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862375/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudformation-stack-yaml-file.jpg)
+![The image shows an AWS CloudFormation interface for creating a stack, with a file selection window open to choose a YAML file named "composite\_alarm.yaml" from the Downloads folder.](https://kodekloud.com/kk-media/image/upload/v1752862375/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudformation-stack-yaml-file.jpg)
 
 3. Click **Next**, set **Stack name** to `CompositeAlarmInfra`, and keep default parameters.
 
-![The image shows an AWS CloudFormation interface where a user is specifying stack details, including a stack name and parameters for creating a stack.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862376/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudformation-stack-creation-interface.jpg)
+![The image shows an AWS CloudFormation interface where a user is specifying stack details, including a stack name and parameters for creating a stack.](https://kodekloud.com/kk-media/image/upload/v1752862376/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudformation-stack-creation-interface.jpg)
 
 4. Submit and wait \~4–5 minutes until status is `CREATE_COMPLETE`.
 
-![The image shows an AWS CloudFormation console with a stack named "composite-alarm-infra" and a list of events indicating the creation status of various resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862378/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudformation-composite-alarm-infra.jpg)
+![The image shows an AWS CloudFormation console with a stack named "composite-alarm-infra" and a list of events indicating the creation status of various resources.](https://kodekloud.com/kk-media/image/upload/v1752862378/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudformation-composite-alarm-infra.jpg)
 
 5. On **Outputs**, copy the **AutoScalingGroupName**.
 
-![The image shows an AWS CloudFormation console with a stack named "composite-alarm-infra" that has a status of "CREATE\_COMPLETE." The Outputs tab displays an AutoScalingGroupName with its corresponding value.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862380/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudformation-composite-alarm-infra-2.jpg)
+![The image shows an AWS CloudFormation console with a stack named "composite-alarm-infra" that has a status of "CREATE\_COMPLETE." The Outputs tab displays an AutoScalingGroupName with its corresponding value.](https://kodekloud.com/kk-media/image/upload/v1752862380/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudformation-composite-alarm-infra-2.jpg)
 
 ## Verify CloudWatch Alarms
 
@@ -169,9 +169,9 @@ Navigate to **CloudWatch > Alarms**. You should see:
 
 Initial states will be `OK` or `Insufficient Data`.
 
-![The image shows an AWS CloudWatch dashboard displaying alarms for EC2 and AutoScaling services, with recent alarms indicating high CPU usage and auto-scaling group size.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862381/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudwatch-dashboard-ec2-alarms.jpg)
+![The image shows an AWS CloudWatch dashboard displaying alarms for EC2 and AutoScaling services, with recent alarms indicating high CPU usage and auto-scaling group size.](https://kodekloud.com/kk-media/image/upload/v1752862381/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudwatch-dashboard-ec2-alarms.jpg)
 
-![The image shows an AWS CloudWatch Alarms dashboard with three alarms listed, indicating their status and conditions. The alarms are named "HighASGSize," "HighCPUUsage," and "VeryHighCPUUsage," with varying states and conditions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862383/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudwatch-alarms-dashboard-status.jpg)
+![The image shows an AWS CloudWatch Alarms dashboard with three alarms listed, indicating their status and conditions. The alarms are named "HighASGSize," "HighCPUUsage," and "VeryHighCPUUsage," with varying states and conditions.](https://kodekloud.com/kk-media/image/upload/v1752862383/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudwatch-alarms-dashboard-status.jpg)
 
 ## Create the Composite Alarm
 
@@ -183,15 +183,15 @@ Initial states will be `OK` or `Insufficient Data`.
    ```
 4. Configure notifications (e.g., an SNS topic) and an optional suppressor alarm.
 
-![The image shows an AWS CloudWatch console screen where a user is configuring alarm notifications and actions, including selecting an SNS topic and managing alarm actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862385/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudwatch-alarm-notifications-config.jpg)
+![The image shows an AWS CloudWatch console screen where a user is configuring alarm notifications and actions, including selecting an SNS topic and managing alarm actions.](https://kodekloud.com/kk-media/image/upload/v1752862385/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudwatch-alarm-notifications-config.jpg)
 
 5. Enter **Name** and **Description** (Markdown supported).
 
-![The image shows an AWS CloudWatch interface for creating a composite alarm, specifically the "Add name and description" step. It includes fields for entering the alarm name and an optional description with markdown formatting guidelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862387/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudwatch-composite-alarm-step.jpg)
+![The image shows an AWS CloudWatch interface for creating a composite alarm, specifically the "Add name and description" step. It includes fields for entering the alarm name and an optional description with markdown formatting guidelines.](https://kodekloud.com/kk-media/image/upload/v1752862387/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudwatch-composite-alarm-step.jpg)
 
 After creation, you’ll see four alarms, all in `OK` state.
 
-![The image shows an AWS CloudWatch dashboard with a list of alarms, all in an "OK" state, detailing conditions like CPU utilization and actions enabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862388/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudwatch-dashboard-alarms-ok.jpg)
+![The image shows an AWS CloudWatch dashboard with a list of alarms, all in an "OK" state, detailing conditions like CPU utilization and actions enabled.](https://kodekloud.com/kk-media/image/upload/v1752862388/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudwatch-dashboard-alarms-ok.jpg)
 
 ## Test the Composite Alarm
 
@@ -200,13 +200,13 @@ To trigger the alarm:
 1. In the EC2 Console, open your ASG > **Details** > **Edit**.
 2. Set **Min** and **Desired** capacity to `12`, then save.
 
-![The image shows an AWS EC2 Auto Scaling group management console with two instances listed as "InService" and "Healthy." The interface includes options for managing lifecycle hooks and warm pools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862390/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-ec2-auto-scaling-console-instances.jpg)
+![The image shows an AWS EC2 Auto Scaling group management console with two instances listed as "InService" and "Healthy." The interface includes options for managing lifecycle hooks and warm pools.](https://kodekloud.com/kk-media/image/upload/v1752862390/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-ec2-auto-scaling-console-instances.jpg)
 
 After one metric period, **HighASGSize** will fire and the composite alarm will trigger.
 
-![The image shows an AWS CloudWatch dashboard displaying a composite alarm with its status as "OK" and a list of child alarms, all of which are also in the "OK" state. The interface includes options for viewing details, tags, alarm rules, actions, and history.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862392/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudwatch-dashboard-composite-alarm.jpg)
+![The image shows an AWS CloudWatch dashboard displaying a composite alarm with its status as "OK" and a list of child alarms, all of which are also in the "OK" state. The interface includes options for viewing details, tags, alarm rules, actions, and history.](https://kodekloud.com/kk-media/image/upload/v1752862392/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudwatch-dashboard-composite-alarm.jpg)
 
-![The image shows an AWS CloudWatch dashboard with alarms, including a composite alarm that is currently in an alarm state. The timeline and child alarms are displayed, indicating their status and last state changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862394/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudwatch-dashboard-alarms-composite.jpg)
+![The image shows an AWS CloudWatch dashboard with alarms, including a composite alarm that is currently in an alarm state. The timeline and child alarms are displayed, indicating their status and last state changes.](https://kodekloud.com/kk-media/image/upload/v1752862394/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudwatch-dashboard-alarms-composite.jpg)
 
 Check your email for the SNS notification.
 
@@ -214,7 +214,7 @@ Check your email for the SNS notification.
 
 1. Delete the CloudFormation stack.
 
-![The image shows an AWS CloudFormation console with details of a stack named "composite-alarm-infra" that is in the process of being deleted. The status is "DELETE\_IN\_PROGRESS" and it includes information like stack ID, description, and creation time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862395/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudformation-composite-alarm-delete.jpg)
+![The image shows an AWS CloudFormation console with details of a stack named "composite-alarm-infra" that is in the process of being deleted. The status is "DELETE\_IN\_PROGRESS" and it includes information like stack ID, description, and creation time.](https://kodekloud.com/kk-media/image/upload/v1752862395/notes-assets/images/AWS-CloudWatch-Demo-Creating-a-composite-alarm/aws-cloudformation-composite-alarm-delete.jpg)
 
 2. In CloudWatch, select the composite alarm and choose **Actions > Delete**.
 

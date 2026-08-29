@@ -31,9 +31,7 @@ stages {
 
 In this configuration, two stages are defined: "Dev" and "UAT." After clicking on **Save** and then **Build Now**, you'll notice that the pipeline now displays both stages. Although previous builds (which contain only the "Dev" stage) remain in the build history, the current build accurately reflects the new multistage pipeline setup.
 
-<Callout icon="lightbulb">
-  Ensure you save your configuration after making changes, so your new pipeline stages are correctly applied.
-</Callout>
+> **lightbulb** Ensure you save your configuration after making changes, so your new pipeline stages are correctly applied.
 
 This enhanced setup allows you to track the evolution of your pipeline from a single stage to a comprehensive multistage workflow. The structured, repeatable stages make it easier to manage build processes and track changes over time.
 
@@ -41,6 +39,4 @@ Stay tuned for the next lesson where we dive deeper into advanced pipeline confi
 
 For more details on pipeline management, visit our [Configuration Guide](/docs/configuration).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/e9c7f9aa-e455-4c77-ab8d-0f5c8dfc0b95" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/e9c7f9aa-e455-4c77-ab8d-0f5c8dfc0b95)

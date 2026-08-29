@@ -12,9 +12,7 @@ CSI was designed to support a wide array of storage solutions without being boun
 
 The diagram below encapsulates the CSI architecture, detailing logos, Remote Procedure Call (RPC) workflows, and guidelines for managing volumes in containerized environments:
 
-<Frame>
-  ![The image explains the Container Storage Interface (CSI) with logos, RPC calls, and guidelines for volume management in container environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880628/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Container-Storage-Interface/frame_150.jpg)
-</Frame>
+![The image explains the Container Storage Interface (CSI) with logos, RPC calls, and guidelines for volume management in container environments.](https://kodekloud.com/kk-media/image/upload/v1752880628/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Container-Storage-Interface/frame_150.jpg)
 
 ## How CSI Works
 
@@ -25,14 +23,10 @@ At its essence, CSI defines a series of RPCs used by container orchestrators to 
 
 Each RPC defined by CSI includes detailed specifications regarding the parameters sent by the caller, the expected responses from the storage solution, and the error codes to be used in various scenarios.
 
-<Callout icon="lightbulb">
-  For an in-depth look at the CSI specifications, visit the full [CSI specification on GitHub](https://github.com/container-storage-interface/spec).
-</Callout>
+> **lightbulb** For an in-depth look at the CSI specifications, visit the full [CSI specification on GitHub](https://github.com/container-storage-interface/spec).
 
 ## Conclusion
 
 Understanding the Container Storage Interface is essential for anyone involved in container orchestration and storage management. Its standardized approach ensures compatibility across various storage systems and container runtimes, fostering a more flexible and dynamic container ecosystem. Stay tuned for our next article where we will dive deeper into related topics in container storage and management.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/fbd7b99a-b2c1-4eda-9ef9-f5e0d7a20fce/lesson/fe123da9-535b-4a86-a316-c09c650c5271" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/fbd7b99a-b2c1-4eda-9ef9-f5e0d7a20fce/lesson/fe123da9-535b-4a86-a316-c09c650c5271)

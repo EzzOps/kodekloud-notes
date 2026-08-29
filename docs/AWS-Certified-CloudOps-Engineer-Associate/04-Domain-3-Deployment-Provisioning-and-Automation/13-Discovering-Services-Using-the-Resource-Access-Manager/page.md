@@ -32,7 +32,7 @@ When creating a resource share, you designate the supported resources and assign
 
 The diagram below illustrates the Resource Access Manager interface. In this example, a resource share includes an EC2 subnet. Although only one resource is depicted here, a resource share can include multiple resources.
 
-![The image shows a screenshot of a Resource Access Manager (RAM) interface, detailing a subnet share with its ID, owner, ARN, and status. It also lists a shared resource, an EC2 subnet, with its associated status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860321/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Discovering-Services-Using-the-Resource-Access-Manager/resource-access-manager-subnet-share.jpg)
+![The image shows a screenshot of a Resource Access Manager (RAM) interface, detailing a subnet share with its ID, owner, ARN, and status. It also lists a shared resource, an EC2 subnet, with its associated status.](https://kodekloud.com/kk-media/image/upload/v1752860321/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Discovering-Services-Using-the-Resource-Access-Manager/resource-access-manager-subnet-share.jpg)
 
 ## Best Practices for Using RAM
 
@@ -49,7 +49,7 @@ For optimal results when using RAM, consider these best practices:
 
 > **lightbulb** When faced with an exam question related to sharing a large set of services with another account, remember that the optimal approach is to use RAM. Create a resource share, assign all required services to that share, and specify the target accounts. This method ensures centralized management and a streamlined sharing process.
 
-![The image illustrates best practices for resource sharing with RAM, featuring icons and labels for AWS Organizations, Least Privilege Principle, and Centralized Control.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860322/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Discovering-Services-Using-the-Resource-Access-Manager/resource-sharing-best-practices-aws.jpg)
+![The image illustrates best practices for resource sharing with RAM, featuring icons and labels for AWS Organizations, Least Privilege Principle, and Centralized Control.](https://kodekloud.com/kk-media/image/upload/v1752860322/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Discovering-Services-Using-the-Resource-Access-Manager/resource-sharing-best-practices-aws.jpg)
 
 ## Conclusion
 

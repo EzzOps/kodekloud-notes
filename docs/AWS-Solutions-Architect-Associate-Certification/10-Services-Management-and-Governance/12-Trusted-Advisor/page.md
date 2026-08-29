@@ -8,11 +8,11 @@ In this lesson, we explore AWS Trusted Advisor—a vital tool designed to provid
 
 For instance, consider an EC2 instance deployed within a Virtual Private Cloud (VPC). AWS Trusted Advisor evaluates your instance configuration and suggests adjustments, such as implementing security group rules, to significantly strengthen your network security.
 
-![The image illustrates the use of AWS Trusted Advisor to enhance network security by implementing security group rules for Amazon EC2 within a Virtual Private Cloud (VPC).](../../../../images/kodekloud.com/kk-media/image/upload/v1752865392/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Trusted-Advisor/aws-trusted-advisor-network-security.jpg)
+![The image illustrates the use of AWS Trusted Advisor to enhance network security by implementing security group rules for Amazon EC2 within a Virtual Private Cloud (VPC).](https://kodekloud.com/kk-media/image/upload/v1752865392/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Trusted-Advisor/aws-trusted-advisor-network-security.jpg)
 
 Another common scenario involves managing an S3 bucket. Trusted Advisor recommends enabling lifecycle policies to archive data and shift objects to more cost-effective storage classes, thereby reducing your monthly expenses.
 
-![The image illustrates a process involving Amazon S3 and AWS Trusted Advisor, highlighting the enablement of lifecycle policies for data archiving and cost reduction.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865395/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Trusted-Advisor/amazon-s3-aws-trusted-advisor-lifecycle.jpg)
+![The image illustrates a process involving Amazon S3 and AWS Trusted Advisor, highlighting the enablement of lifecycle policies for data archiving and cost reduction.](https://kodekloud.com/kk-media/image/upload/v1752865395/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Trusted-Advisor/amazon-s3-aws-trusted-advisor-lifecycle.jpg)
 
 > **lightbulb** The main advantages of using AWS Trusted Advisor include:
 
@@ -22,7 +22,7 @@ Another common scenario involves managing an S3 bucket. Trusted Advisor recommen
   * **Fault Tolerance and Reliability:** Receive advice on how to bolster the resilience of your deployments.
   * **Service Quota Monitoring:** Get alerts when resource usage approaches 80% of preset limits.
 
-![The image outlines five benefits: cost optimization, performance, security, fault tolerance, and service quotas, each with a brief description and icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865396/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Trusted-Advisor/benefits-cost-performance-security-diagram.jpg)
+![The image outlines five benefits: cost optimization, performance, security, fault tolerance, and service quotas, each with a brief description and icon.](https://kodekloud.com/kk-media/image/upload/v1752865396/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Trusted-Advisor/benefits-cost-performance-security-diagram.jpg)
 
 For exam preparation, it's important to remember that AWS Trusted Advisor is the service that provides prescriptive advice to optimize your deployments. When asked which AWS service offers recommendations to improve system configurations or deployments, the correct answer is AWS Trusted Advisor.
 

@@ -22,9 +22,7 @@ KServe is distributed as Helm charts. If you haven't used Helm before, think of 
 
 KServe depends on cert-manager for TLS certificate provisioning and renewal. cert-manager automates creating and managing the certificates many KServe components require.
 
-<Callout icon="lightbulb">
-  If your environment is provided as a lab, cert-manager may already be installed. On a fresh cluster you must install cert-manager before KServe; it is a hard dependency.
-</Callout>
+> **lightbulb** If your environment is provided as a lab, cert-manager may already be installed. On a fresh cluster you must install cert-manager before KServe; it is a hard dependency.
 
 <Frame>
   <img alt="The image compares a &#x22;Lab Environment&#x22; with a &#x22;Fresh Cluster&#x22; regarding the installation of a cert-manager, noting the lab environment has it pre-installed while the fresh cluster requires it as a hard dependency." />

@@ -41,7 +41,7 @@ Further, the block size of any subnet must be between /16 and /28. Note the foll
     * The **fourth address** is held for future use.
   * Additionally, the **last IP address** in a subnet (e.g., 192.168.10.255 in a /24 subnet) is reserved as the broadcast address.
 
-![The image explains subnet requirements within a VPC, highlighting CIDR range compliance, block size limits, and reserved IP addresses, with a diagram showing a valid and an invalid subnet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865699/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Subnets/vpc-subnet-requirements-diagram.jpg)
+![The image explains subnet requirements within a VPC, highlighting CIDR range compliance, block size limits, and reserved IP addresses, with a diagram showing a valid and an invalid subnet.](https://kodekloud.com/kk-media/image/upload/v1752865699/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Subnets/vpc-subnet-requirements-diagram.jpg)
 
 ## Avoiding Overlapping Subnets
 
@@ -63,7 +63,7 @@ When configuring a subnet, you can enable the option to auto-assign a public IPv
 * A public IP address is automatically assigned alongside the private IP.
 * This ensures that resources, such as internet-facing web servers, are reachable by external users.
 
-![The image illustrates subnet configuration options within a VPC, highlighting features like non-overlapping subnets, optional IPv6 CIDR, and communication capabilities. It includes a diagram showing public subnets in two availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865700/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Subnets/vpc-subnet-configuration-diagram.jpg)
+![The image illustrates subnet configuration options within a VPC, highlighting features like non-overlapping subnets, optional IPv6 CIDR, and communication capabilities. It includes a diagram showing public subnets in two availability zones.](https://kodekloud.com/kk-media/image/upload/v1752865700/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Subnets/vpc-subnet-configuration-diagram.jpg)
 
 ## Summary
 

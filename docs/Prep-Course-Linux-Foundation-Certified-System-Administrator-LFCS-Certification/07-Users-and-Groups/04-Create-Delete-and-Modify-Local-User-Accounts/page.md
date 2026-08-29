@@ -32,9 +32,7 @@ When the command concludes, the following occurs:
 
 By default, newly created accounts have no expiration.
 
-<Callout icon="lightbulb">
-  If you need more information on the options available with `adduser`, try running `adduser --help`.
-</Callout>
+> **lightbulb** If you need more information on the options available with `adduser`, try running `adduser --help`.
 
 ***
 
@@ -127,9 +125,7 @@ $ sudo adduser --system --no-create-home sysacc
 
 This command ensures that no home directory is created for the system account, aligning with its intended non-interactive role.
 
-<Callout icon="lightbulb">
-  If you're following along in a virtual machine, consider removing these test user accounts after practicing.
-</Callout>
+> **lightbulb** If you're following along in a virtual machine, consider removing these test user accounts after practicing.
 
 Cleanup commands:
 
@@ -244,9 +240,7 @@ $ sudo chage --list jane
 
 ***
 
-<Callout icon="triangle-alert">
-  Be sure to clean up test accounts after you complete your exercises to maintain a secure system.
-</Callout>
+> **triangle-alert** Be sure to clean up test accounts after you complete your exercises to maintain a secure system.
 
 *After you have finished testing these commands in your virtual machine, remember to remove the user "jane" (and its associated group, if applicable).*
 
@@ -256,6 +250,4 @@ For additional help with the `adduser` command and its options, you can display 
 $ adduser --help
 ```
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/238c1c54-9e52-4470-a85b-3d900a2e68a4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/238c1c54-9e52-4470-a85b-3d900a2e68a4)

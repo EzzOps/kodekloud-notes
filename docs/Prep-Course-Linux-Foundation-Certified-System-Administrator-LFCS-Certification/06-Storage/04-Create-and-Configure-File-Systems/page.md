@@ -133,11 +133,9 @@ This guide has demonstrated the limitations of standard file permissions and det
 
 Happy managing and securing your filesystem!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/3fb0930b-bd4d-4413-9fb2-290e6d76169c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/3fb0930b-bd4d-4413-9fb2-290e6d76169c)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/0fb56f01-f0b0-4a83-b9fd-2d8083459903" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/0fb56f01-f0b0-4a83-b9fd-2d8083459903)
 
 
 # Create and Configure File Systems
@@ -230,9 +228,7 @@ mkfs.xfs: /dev/sdb1 appears to contain an existing filesystem (xfs).
 mkfs.xfs: Use the -f option to force overwrite.
 ```
 
-<Callout icon="triangle-alert">
-  Ensure you have the correct partition selected before using the `-f` option, as it will force an overwrite of any existing file system.
-</Callout>
+> **triangle-alert** Ensure you have the correct partition selected before using the `-f` option, as it will force an overwrite of any existing file system.
 
 To force a format that includes a 512-byte inode size and a custom label, combine the options as follows:
 
@@ -320,6 +316,4 @@ This concludes our lesson on creating and configuring file systems with XFS and 
 * [Ubuntu File System Documentation](https://help.ubuntu.com/community/FileSystems)
 * [Red Hat Storage Administration](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/7940a64e-33de-45a9-9882-1ea0e2204586" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/7940a64e-33de-45a9-9882-1ea0e2204586)

@@ -18,9 +18,7 @@ Key trust-building practices:
 * Openness: Be transparent about unknowns. It’s better to say, “We don’t yet know why the spike happened, but we’ll investigate and help resolve it,” than to guess or hide information.
 * Commitments: Follow through on promises. Delivering small, reliable actions over time builds credibility.
 
-<Callout icon="lightbulb">
-  Trust is an operational feature of FinOps — it’s built through predictable communication, visible wins, transparency, and reliable follow-through.
-</Callout>
+> **lightbulb** Trust is an operational feature of FinOps — it’s built through predictable communication, visible wins, transparency, and reliable follow-through.
 
 <Frame>
   <img alt="The image outlines ways of working in FinOps teams, emphasizing communication, positives, consistency, and openness to build trust." />
@@ -77,6 +75,4 @@ References and further reading
 
 That is it for this lesson. Speak with you in the next one.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/1de0a7cc-5e70-4e69-a8f4-f8c83d2b45fc/lesson/8c3b90ed-cbc8-4b8a-8189-9ae2332cd6a2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/1de0a7cc-5e70-4e69-a8f4-f8c83d2b45fc/lesson/8c3b90ed-cbc8-4b8a-8189-9ae2332cd6a2)

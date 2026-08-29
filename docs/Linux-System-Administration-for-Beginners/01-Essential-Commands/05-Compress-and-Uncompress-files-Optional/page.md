@@ -37,9 +37,7 @@ $ tail -n 20 /var/log/dnf.log
 
 ## Transforming Text with `sed`
 
-<Frame>
-  ![The image shows a terminal interface with a text file named "userinfo.txt" containing names, cities, countries, and numbers. The text appears to be part of a tutorial on transforming text using the "sed" command.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881467/notes-assets/images/Linux-System-Administration-for-Beginners-Compare-and-manipulate-file-content/terminal-userinfo-sed-tutorial.jpg)
-</Frame>
+![The image shows a terminal interface with a text file named "userinfo.txt" containing names, cities, countries, and numbers. The text appears to be part of a tutorial on transforming text using the "sed" command.](https://kodekloud.com/kk-media/image/upload/v1752881467/notes-assets/images/Linux-System-Administration-for-Beginners-Compare-and-manipulate-file-content/terminal-userinfo-sed-tutorial.jpg)
 
 Imagine `userinfo.txt` contains a typo—“canda” instead of “canada.” You can preview a global replacement without altering the file:
 
@@ -55,9 +53,7 @@ Breakdown of the substitute command (`s`):
 * `g` (global) applies to every match on each line.
 * Specify the file at the end.
 
-<Callout icon="lightbulb">
-  By default, omitting `g` (i.e., `sed 's/canda/canada/'`) replaces only the first occurrence per line.
-</Callout>
+> **lightbulb** By default, omitting `g` (i.e., `sed 's/canda/canada/'`) replaces only the first occurrence per line.
 
 Once you’re ready to edit the file in place, add `-i`:
 
@@ -113,9 +109,7 @@ canada
 usa
 ```
 
-<Callout icon="lightbulb">
-  Always sort before piping to `uniq` if you want to remove all duplicate entries, not just adjacent ones.
-</Callout>
+> **lightbulb** Always sort before piping to `uniq` if you want to remove all duplicate entries, not just adjacent ones.
 
 ***
 
@@ -200,9 +194,7 @@ Here, `|` separates differing lines; identical lines may appear without markers.
 * [GNU `diff` Manual](https://www.gnu.org/software/diffutils/manual/diffutils.html)
 * [Advanced Text Processing with `awk`](https://www.gnu.org/software/gawk/manual/gawk.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/419c27b6-b09c-442a-a3db-72d166e96e0e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/419c27b6-b09c-442a-a3db-72d166e96e0e)
 
 
 # Compress and Uncompress files Optional

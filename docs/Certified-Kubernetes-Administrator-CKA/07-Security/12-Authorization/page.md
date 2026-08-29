@@ -175,11 +175,11 @@ When sharing a cluster across different organizations or teams using namespaces,
 
 The Kubernetes API Server is the central component accessed by both management users and internal components, such as kubelets, which retrieve and report metadata about services, endpoints, nodes, and pods. The communication between a kubelet and the API server is illustrated in the diagram below:
 
-![The image illustrates a Kubernetes node interaction, showing communication between a user, Kube API, and kubelet, with read/write operations on services, endpoints, nodes, and pods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869926/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Authorization/frame_150.jpg)
+![The image illustrates a Kubernetes node interaction, showing communication between a user, Kube API, and kubelet, with read/write operations on services, endpoints, nodes, and pods.](https://kodekloud.com/kk-media/image/upload/v1752869926/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Authorization/frame_150.jpg)
 
 Requests from kubelets—typically using certificates with names prefixed by "system:node" as part of the system:nodes group—are authorized by a special component known as the node authorizer. The following diagram explains the authorization process for kubelet requests:
 
-![The image illustrates the Node Authorizer process in Kubernetes, showing interactions between a user, Kube API, kubelet, and a certificate, with read/write permissions listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869928/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Authorization/frame_180.jpg)
+![The image illustrates the Node Authorizer process in Kubernetes, showing interactions between a user, Kube API, kubelet, and a certificate, with read/write permissions listed.](https://kodekloud.com/kk-media/image/upload/v1752869928/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Authorization/frame_180.jpg)
 
 > **lightbulb** Kubernetes supports several authorization strategies to meet diverse security requirements. Always select the most appropriate mechanism for your cluster’s needs.
 
@@ -202,7 +202,7 @@ RBAC simplifies user permission management by defining roles instead of directly
 
 RBAC is considered the standard method for managing access within a Kubernetes cluster. The diagram below provides a visual representation of RBAC across different roles:
 
-![The image illustrates RBAC roles, showing user permissions for developers and security, including actions like viewing, creating, and deleting PODs, and approving CSRs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869929/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Authorization/frame_290.jpg)
+![The image illustrates RBAC roles, showing user permissions for developers and security, including actions like viewing, creating, and deleting PODs, and approving CSRs.](https://kodekloud.com/kk-media/image/upload/v1752869929/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Authorization/frame_290.jpg)
 
 Further details on RBAC will be discussed in upcoming lessons.
 

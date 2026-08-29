@@ -50,9 +50,7 @@ Save and commit the changes. When you trigger the pipeline build, the process wi
 
 If the job fails, you might encounter an error similar to the example shown below:
 
-<Frame>
-  ![The image shows a Jenkins pipeline interface for a project named "solar-system" with a failed unit testing step. The pipeline stages include installing dependencies, dependency scanning, and unit testing, with a specific failure in the "npm test" shell script.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879812/notes-assets/images/Jenkins-Pipelines-Unit-Testing-and-Analyze-JUnit-Reports/jenkins-pipeline-solar-system-failure.jpg)
-</Frame>
+![The image shows a Jenkins pipeline interface for a project named "solar-system" with a failed unit testing step. The pipeline stages include installing dependencies, dependency scanning, and unit testing, with a specific failure in the "npm test" shell script.](https://kodekloud.com/kk-media/image/upload/v1752879812/notes-assets/images/Jenkins-Pipelines-Unit-Testing-and-Analyze-JUnit-Reports/jenkins-pipeline-solar-system-failure.jpg)
 
 The logs might indicate that MongoDB connectivity failed due to undefined environment variables (e.g., MONGO\_URI, MONGO\_USERNAME, and MONGO\_PASSWORD). For example, a portion of your app.js might include:
 
@@ -84,9 +82,7 @@ var Schema = mongoose.Schema;
 
 Since the Jenkins pipeline isn’t automatically passing these values, MongoDB connectivity can fail.
 
-<Callout icon="lightbulb">
-  Set the required environment variables directly in your Jenkinsfile to resolve connectivity issues.
-</Callout>
+> **lightbulb** Set the required environment variables directly in your Jenkinsfile to resolve connectivity issues.
 
 ***
 
@@ -114,9 +110,7 @@ withCredentials([usernamePassword(
 
 The Jenkins UI allows you to set environment variables and manage credentials. Consider the screenshot below, which illustrates configuring an environment variable for MongoDB:
 
-<Frame>
-  ![The image shows a Jenkins interface for setting environment variables, with a field for the variable name "MONGO" and an empty value field.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879814/notes-assets/images/Jenkins-Pipelines-Unit-Testing-and-Analyze-JUnit-Reports/jenkins-environment-variables-mongo.jpg)
-</Frame>
+![The image shows a Jenkins interface for setting environment variables, with a field for the variable name "MONGO" and an empty value field.](https://kodekloud.com/kk-media/image/upload/v1752879814/notes-assets/images/Jenkins-Pipelines-Unit-Testing-and-Analyze-JUnit-Reports/jenkins-environment-variables-mongo.jpg)
 
 After configuring the environment variable and credentials, update your Jenkinsfile's unit testing stage as follows:
 
@@ -158,21 +152,15 @@ pipeline {
 
 In the credentials setup, you might see options for certificates, Git username/password, SSH keys, and more. The screenshot below demonstrates that:
 
-<Frame>
-  ![The image shows a Jenkins Pipeline Syntax page with a dropdown menu for adding credentials, including options like "Certificate," "Git Username and Password," and "SSH User Private Key."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879815/notes-assets/images/Jenkins-Pipelines-Unit-Testing-and-Analyze-JUnit-Reports/jenkins-pipeline-syntax-credentials-dropdown.jpg)
-</Frame>
+![The image shows a Jenkins Pipeline Syntax page with a dropdown menu for adding credentials, including options like "Certificate," "Git Username and Password," and "SSH User Private Key."](https://kodekloud.com/kk-media/image/upload/v1752879815/notes-assets/images/Jenkins-Pipelines-Unit-Testing-and-Analyze-JUnit-Reports/jenkins-pipeline-syntax-credentials-dropdown.jpg)
 
 When adding MongoDB credentials, you might configure a username (e.g., "superuser") and a password ("superpassword") with a unique ID such as mongo-db-credentials:
 
-<Frame>
-  ![The image shows a Jenkins Pipeline Syntax configuration screen, where username and password variables for MongoDB are being set, along with a dropdown for selecting credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879816/notes-assets/images/Jenkins-Pipelines-Unit-Testing-and-Analyze-JUnit-Reports/jenkins-pipeline-mongodb-credentials.jpg)
-</Frame>
+![The image shows a Jenkins Pipeline Syntax configuration screen, where username and password variables for MongoDB are being set, along with a dropdown for selecting credentials.](https://kodekloud.com/kk-media/image/upload/v1752879816/notes-assets/images/Jenkins-Pipelines-Unit-Testing-and-Analyze-JUnit-Reports/jenkins-pipeline-mongodb-credentials.jpg)
 
 Manage these credentials through Jenkins’s Global Credentials page:
 
-<Frame>
-  ![The image shows a Jenkins interface displaying global credentials, including entries for Gitea Server and MongoDB, with options to update them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879817/notes-assets/images/Jenkins-Pipelines-Unit-Testing-and-Analyze-JUnit-Reports/jenkins-global-credentials-gitea-mongodb.jpg)
-</Frame>
+![The image shows a Jenkins interface displaying global credentials, including entries for Gitea Server and MongoDB, with options to update them.](https://kodekloud.com/kk-media/image/upload/v1752879817/notes-assets/images/Jenkins-Pipelines-Unit-Testing-and-Analyze-JUnit-Reports/jenkins-global-credentials-gitea-mongodb.jpg)
 
 ***
 
@@ -221,9 +209,7 @@ After committing these changes and triggering your pipeline, Jenkins will run th
 
 For example, the screenshot below displays a test report interface with endpoint check results:
 
-<Frame>
-  ![The image shows a Jenkins test report interface with a list of test results, including checks for endpoints and fetching planet details, along with their execution times and statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879818/notes-assets/images/Jenkins-Pipelines-Unit-Testing-and-Analyze-JUnit-Reports/jenkins-test-report-endpoints-results.jpg)
-</Frame>
+![The image shows a Jenkins test report interface with a list of test results, including checks for endpoints and fetching planet details, along with their execution times and statuses.](https://kodekloud.com/kk-media/image/upload/v1752879818/notes-assets/images/Jenkins-Pipelines-Unit-Testing-and-Analyze-JUnit-Reports/jenkins-test-report-endpoints-results.jpg)
 
 ***
 
@@ -277,12 +263,8 @@ pipeline {
 
 After committing these improvements to your Jenkinsfile and running the pipeline, your logs should indicate successful MongoDB connections, test executions, and archived test reports. This setup provides an efficient way to review both current and historical test data.
 
-<Callout icon="lightbulb">
-  Ensure that your credentials are managed securely by periodically reviewing and updating them in Jenkins Global Credentials.
-</Callout>
+> **lightbulb** Ensure that your credentials are managed securely by periodically reviewing and updating them in Jenkins Global Credentials.
 
 Thank you for following along with this guide!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/7e239b62-2dfd-4594-85cf-e51c0707121c/lesson/96bae981-de89-4389-ba55-bdcc0c763b84" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/7e239b62-2dfd-4594-85cf-e51c0707121c/lesson/96bae981-de89-4389-ba55-bdcc0c763b84)

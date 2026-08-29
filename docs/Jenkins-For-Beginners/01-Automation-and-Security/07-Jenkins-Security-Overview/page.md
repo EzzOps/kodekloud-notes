@@ -8,9 +8,7 @@ In this article, we provide a concise overview of Jenkins security while explain
 
 A key principle in Jenkins security is the concept of least privilege, which means users receive only the permissions they need to perform their designated tasks.
 
-<Frame>
-  ![The image illustrates Jenkins security, highlighting protection against unauthorized access and malicious actions, with a focus on the principle of least privilege.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879435/notes-assets/images/Jenkins-For-Beginners-Jenkins-Security-Overview/jenkins-security-least-privilege.jpg)
-</Frame>
+![The image illustrates Jenkins security, highlighting protection against unauthorized access and malicious actions, with a focus on the principle of least privilege.](https://kodekloud.com/kk-media/image/upload/v1752879435/notes-assets/images/Jenkins-For-Beginners-Jenkins-Security-Overview/jenkins-security-least-privilege.jpg)
 
 ## Authentication and Authorization
 
@@ -18,9 +16,7 @@ Authentication is the process of verifying a user's identity. When logging in, y
 
 To illustrate, imagine checking into a hotel. Presenting a government-issued ID, such as a passport or driver's license, verifies your identity (authentication). Once verified, you receive a room key, which grants access to certain areas of the hotel, thereby defining your privileges (authorization).
 
-<Frame>
-  ![The image compares authentication and authorization, illustrating authentication as verifying a user's identity and authorization as determining user permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879437/notes-assets/images/Jenkins-For-Beginners-Jenkins-Security-Overview/authentication-authorization-comparison.jpg)
-</Frame>
+![The image compares authentication and authorization, illustrating authentication as verifying a user's identity and authorization as determining user permissions.](https://kodekloud.com/kk-media/image/upload/v1752879437/notes-assets/images/Jenkins-For-Beginners-Jenkins-Security-Overview/authentication-authorization-comparison.jpg)
 
 ## Managing User Access in Jenkins
 
@@ -33,9 +29,7 @@ Jenkins offers several methods for managing user access, each providing differen
 
 Additionally, Jenkins supports several plugins to further extend security options. For instance, integration with Microsoft’s Active Directory or implementation of SAML 2.0 single sign-on (SSO) streamlines access for users by utilizing existing corporate credentials.
 
-<Frame>
-  ![The image is an infographic about authentication options in Jenkins, featuring built-in choices like Jenkins User Database and expanding options like Active Directory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879438/notes-assets/images/Jenkins-For-Beginners-Jenkins-Security-Overview/jenkins-authentication-options-infographic.jpg)
-</Frame>
+![The image is an infographic about authentication options in Jenkins, featuring built-in choices like Jenkins User Database and expanding options like Active Directory.](https://kodekloud.com/kk-media/image/upload/v1752879438/notes-assets/images/Jenkins-For-Beginners-Jenkins-Security-Overview/jenkins-authentication-options-infographic.jpg)
 
 Choosing the appropriate method depends on your environment. While an internal database works well for smaller teams, enterprise environments benefit from corporate directory services like LDAP or Active Directory, simplifying user management and reducing the need for multiple credentials.
 
@@ -52,22 +46,14 @@ Jenkins implements two matrix-based authorization strategies:
 1. **Matrix-based Security:** Grants permissions at a global level across all projects. This method is visualized as a grid, with resources as columns and user/group names as rows.
 2. **Project-based Matrix Authorization Strategy:** Offers granular control by assigning permissions specific to individual projects.
 
-<Frame>
-  ![The image explains the concept of authorization in Jenkins, highlighting three components: Resource, Role, and Requester, each with a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879439/notes-assets/images/Jenkins-For-Beginners-Jenkins-Security-Overview/jenkins-authorization-resource-role-requester.jpg)
-</Frame>
+![The image explains the concept of authorization in Jenkins, highlighting three components: Resource, Role, and Requester, each with a brief description.](https://kodekloud.com/kk-media/image/upload/v1752879439/notes-assets/images/Jenkins-For-Beginners-Jenkins-Security-Overview/jenkins-authorization-resource-role-requester.jpg)
 
 Both strategies display permissions in a grid format. For example, one diagram might illustrate various permissions such as "Read," "Create," and "Delete" applied to groups like "Anonymous," "Authenticated Users," or individual users like "John" and "Alice."
 
-<Frame>
-  ![The image shows a Jenkins authorization matrix, detailing permissions for different user groups and roles, such as "Anonymous," "Authenticated Users," and specific users like "John" and "Alice." Various permissions like "Read," "Create," and "Delete" are displayed in a grid format.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879440/notes-assets/images/Jenkins-For-Beginners-Jenkins-Security-Overview/jenkins-authorization-matrix-permissions.jpg)
-</Frame>
+![The image shows a Jenkins authorization matrix, detailing permissions for different user groups and roles, such as "Anonymous," "Authenticated Users," and specific users like "John" and "Alice." Various permissions like "Read," "Create," and "Delete" are displayed in a grid format.](https://kodekloud.com/kk-media/image/upload/v1752879440/notes-assets/images/Jenkins-For-Beginners-Jenkins-Security-Overview/jenkins-authorization-matrix-permissions.jpg)
 
-<Callout icon="lightbulb">
-  Always apply the principle of least privilege by providing users only the necessary level of access to perform their tasks. This practice not only ensures robust security but also optimizes your CI/CD processes.
-</Callout>
+> **lightbulb** Always apply the principle of least privilege by providing users only the necessary level of access to perform their tasks. This practice not only ensures robust security but also optimizes your CI/CD processes.
 
 Thank you for reading this comprehensive overview of Jenkins security. For additional details and updates on Jenkins best practices, be sure to consult the official Jenkins documentation and related security resources.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/cd53a160-c852-4d65-b718-31b284cb48da/lesson/47cdde29-b1e4-4a8e-b8a9-ff7e79196141" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/cd53a160-c852-4d65-b718-31b284cb48da/lesson/47cdde29-b1e4-4a8e-b8a9-ff7e79196141)

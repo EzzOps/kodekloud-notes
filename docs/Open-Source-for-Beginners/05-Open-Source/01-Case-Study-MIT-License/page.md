@@ -12,9 +12,7 @@ The MIT License is one of the most widely adopted open source licenses. Known fo
 * Grants broad permissions for reuse, modification, and redistribution
 * Allows both non-commercial and commercial use
 
-<Callout icon="lightbulb">
-  Always include the full MIT License text and copyright notice in all copies or substantial portions of the software.
-</Callout>
+> **lightbulb** Always include the full MIT License text and copyright notice in all copies or substantial portions of the software.
 
 ## How the MIT License Works
 
@@ -59,6 +57,4 @@ To compare the MIT License with other open source licenses and choose the best f
 * [Choose a License](https://choosealicense.com)
 * [Open Source Initiative](https://opensource.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/649f4ff1-452a-46e6-9822-6cb8808ccc6f/lesson/8880120f-fa2d-4239-9231-6de40b3841a2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/649f4ff1-452a-46e6-9822-6cb8808ccc6f/lesson/8880120f-fa2d-4239-9231-6de40b3841a2)

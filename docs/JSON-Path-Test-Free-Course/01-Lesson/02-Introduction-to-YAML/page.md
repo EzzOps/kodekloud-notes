@@ -6,9 +6,7 @@ This lesson explores YAML syntax and usage, focusing on its structure and import
 
 Welcome to this lesson on YAML syntax and usage. In this article, we'll explore the basics of YAML files and explain why they're essential for managing [Ansible playbooks](https://docs.ansible.com/ansible/latest/user_guide/playbooks.html).
 
-<Callout icon="lightbulb">
-  This section covers YAML basics. Feel free to skip ahead if you're already familiar with YAML.
-</Callout>
+> **lightbulb** This section covers YAML basics. Feel free to skip ahead if you're already familiar with YAML.
 
 YAML is a human-readable data serialization format commonly used for configuration files. It is often favored over other formats due to its simplicity and clarity.
 
@@ -28,8 +26,6 @@ Throughout this course, you'll learn how to structure YAML files effectively and
 * [Ansible Playbooks User Guide](https://docs.ansible.com/ansible/latest/user_guide/playbooks.html)
 * [YAML Official Website](https://yaml.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/83ed1798-54e8-4938-bfd6-d92a3076910a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/83ed1798-54e8-4938-bfd6-d92a3076910a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/6bf2fc51-8f6c-4cb8-9718-b78d8f0bfd23" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/6bf2fc51-8f6c-4cb8-9718-b78d8f0bfd23)

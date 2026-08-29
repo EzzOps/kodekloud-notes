@@ -16,7 +16,7 @@ In this section, we answer the fundamental question: What is artificial intellig
 
 Next, we examine typical AI workloads. You'll see how AI integrates into everyday life—from voice recognition systems to personalized movie recommendations. Explore real-world examples that demonstrate how AI enhances business processes and consumer experiences.
 
-![The image is a slide titled "Module Introduction" with three topics: "What is Artificial Intelligence (AI)?", "Common AI Workloads", and "Principles of Responsible AI".](../../../../images/kodekloud.com/kk-media/image/upload/v1752856962/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Module-Introduction/module-introduction-ai-topics.jpg)
+![The image is a slide titled "Module Introduction" with three topics: "What is Artificial Intelligence (AI)?", "Common AI Workloads", and "Principles of Responsible AI".](https://kodekloud.com/kk-media/image/upload/v1752856962/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Module-Introduction/module-introduction-ai-topics.jpg)
 
 ## Principles of Responsible AI
 

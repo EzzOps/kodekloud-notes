@@ -15,9 +15,7 @@ Overview
   * B and C both depend on A, so they run in parallel after A completes.
   * D depends on both B and C and runs only after both have finished.
 
-<Callout icon="lightbulb">
-  If a task has no dependencies it becomes runnable immediately. Multiple tasks that become runnable at the same time will execute in parallel (subject to executor and cluster limits).
-</Callout>
+> **lightbulb** If a task has no dependencies it becomes runnable immediately. Multiple tasks that become runnable at the same time will execute in parallel (subject to executor and cluster limits).
 
 Task summary
 
@@ -123,6 +121,4 @@ Links and references
 
 This simple DAG demonstrates how to control execution order by declaring dependencies between tasks rather than writing an explicit linear sequence—enabling parallel runs and join points with minimal YAML.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/d8e55b57-c411-49e6-9fa9-179b2f61b784" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/d8e55b57-c411-49e6-9fa9-179b2f61b784)

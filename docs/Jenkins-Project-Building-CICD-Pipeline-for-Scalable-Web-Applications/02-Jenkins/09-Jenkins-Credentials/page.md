@@ -20,17 +20,13 @@ Before creating a Jenkins credential, it is important to choose the appropriate 
 * **System:** Access is restricted to the Jenkins system and background tasks; jobs and pipelines cannot access these credentials.
 * **User:** The credential is specific to an individual Jenkins user, used for personal access.
 
-<Callout icon="lightbulb">
-  Always adhere to the principle of least privilege. Grant only the necessary permissions to the users, jobs, or plugins that require access to a credential. Regular audits and credential rotations are also recommended for maintaining security.
-</Callout>
+> **lightbulb** Always adhere to the principle of least privilege. Grant only the necessary permissions to the users, jobs, or plugins that require access to a credential. Regular audits and credential rotations are also recommended for maintaining security.
 
 ## Creating a Credential in Jenkins
 
 To add a new credential, navigate to the Jenkins dashboard, click on **Manage Jenkins**, then access the credentials section. The image below illustrates the Jenkins dashboard interface where you can configure credentials:
 
-<Frame>
-  ![The image shows a Jenkins dashboard interface focused on configuring credentials, with options for system configuration, security, and credential management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879903/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Jenkins-Credentials/jenkins-dashboard-credentials-config.jpg)
-</Frame>
+![The image shows a Jenkins dashboard interface focused on configuring credentials, with options for system configuration, security, and credential management.](https://kodekloud.com/kk-media/image/upload/v1752879903/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Jenkins-Credentials/jenkins-dashboard-credentials-config.jpg)
 
 ## Accessing Credentials in a Pipeline
 
@@ -54,9 +50,7 @@ pipeline {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Avoid printing sensitive information using commands like `echo`. Although Jenkins masks secret values in the console output, displaying sensitive data can be risky. For more details, refer to [Jenkins Groovy String Interpolation](https://jenkins.io/redirect/groovy-string-interpolation).
-</Callout>
+> **triangle-alert** Avoid printing sensitive information using commands like `echo`. Although Jenkins masks secret values in the console output, displaying sensitive data can be risky. For more details, refer to [Jenkins Groovy String Interpolation](https://jenkins.io/redirect/groovy-string-interpolation).
 
 ## Using the Credentials Binding Plugin
 
@@ -107,6 +101,4 @@ In this scenario, the SSH key is securely stored and bound to the environment va
 
 By implementing these techniques and examples, you can securely manage and utilize credentials in your Jenkins pipelines, improving both security and efficiency.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/3a2df169-03af-42fd-adf1-cf0e080242d7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/3a2df169-03af-42fd-adf1-cf0e080242d7)

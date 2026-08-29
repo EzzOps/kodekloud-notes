@@ -200,11 +200,9 @@ print(mermaid_source)
 Conclusion
 This pattern scales naturally to more complex agentic systems. You can add more routes, tool calls, validation steps, or memory writes while keeping the same state-driven routing model. Conditional edges keep control flow explicit and make branching logic easy to reason about during orchestration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/2e37c751-0429-43c9-8ecf-2df222ce0663/lesson/e59ee1a7-b8ca-447f-aa47-1ada8a61726d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/2e37c751-0429-43c9-8ecf-2df222ce0663/lesson/e59ee1a7-b8ca-447f-aa47-1ada8a61726d)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langgraph/module/2e37c751-0429-43c9-8ecf-2df222ce0663/lesson/f2a854da-14d2-4b37-9457-bfaa786c3d20" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langgraph/module/2e37c751-0429-43c9-8ecf-2df222ce0663/lesson/f2a854da-14d2-4b37-9457-bfaa786c3d20)
 
 
 # Practical Application Building a Basic Conversational Agent
@@ -249,9 +247,7 @@ This flow remains intentionally simple and mostly acyclic. It emphasizes routing
 * The entry node's responsibility is to persist the raw user message into graph state (for example: `state.user_message`).
 * Every subsequent node reads from and writes to `state`; this keeps each node small, composable, and independently testable.
 
-<Callout icon="lightbulb">
-  Design the entry node to only persist input (avoid embedding logic here). Separating intent classification, retrieval, and generation makes each piece replaceable and easier to maintain or extend.
-</Callout>
+> **lightbulb** Design the entry node to only persist input (avoid embedding logic here). Separating intent classification, retrieval, and generation makes each piece replaceable and easier to maintain or extend.
 
 ## Routing and branching
 
@@ -336,6 +332,4 @@ This minimal but powerful conversational agent pattern is a solid foundation. Fr
 * [Retrieval-Augmented Generation patterns](https://en.wikipedia.org/wiki/Retrieval-augmented_generation)
 * [Best practices for prompt design and LLM safety](https://platform.openai.com/docs/guides/prompting)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/2e37c751-0429-43c9-8ecf-2df222ce0663/lesson/a87d8e60-a7cd-4290-9a07-9fbe3ce00d05" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/2e37c751-0429-43c9-8ecf-2df222ce0663/lesson/a87d8e60-a7cd-4290-9a07-9fbe3ce00d05)

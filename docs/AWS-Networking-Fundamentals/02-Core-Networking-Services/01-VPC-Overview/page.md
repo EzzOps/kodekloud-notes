@@ -17,13 +17,13 @@ A VPC is an isolated virtual network in AWS where you can launch resources such 
 * Network ACLs (subnet-level, stateless firewalls)
 * Gateways for Internet, VPC-to-VPC, or on-premises connectivity
 
-![The image explains what a Virtual Private Cloud (VPC) is, highlighting components like subnetting, routing, and firewalls. It includes a network diagram and a list of features related to VPCs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863374/notes-assets/images/AWS-Networking-Fundamentals-VPC-Overview/vpc-network-diagram-subnetting-routing-firewalls.jpg)
+![The image explains what a Virtual Private Cloud (VPC) is, highlighting components like subnetting, routing, and firewalls. It includes a network diagram and a list of features related to VPCs.](https://kodekloud.com/kk-media/image/upload/v1752863374/notes-assets/images/AWS-Networking-Fundamentals-VPC-Overview/vpc-network-diagram-subnetting-routing-firewalls.jpg)
 
 ## Regional Isolation
 
 Each VPC exists entirely within a single AWS Region and cannot span multiple regions. By default, resources in VPC A (us-east-1) are isolated from resources in VPC B (us-east-2) unless you establish explicit connectivity.
 
-![The image illustrates AWS Cloud regions "us-east-1" and "us-east-2," each containing a separate VPC (Virtual Private Cloud). It highlights that a VPC is specific to a single region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863378/notes-assets/images/AWS-Networking-Fundamentals-VPC-Overview/aws-cloud-regions-vpc-illustration.jpg)
+![The image illustrates AWS Cloud regions "us-east-1" and "us-east-2," each containing a separate VPC (Virtual Private Cloud). It highlights that a VPC is specific to a single region.](https://kodekloud.com/kk-media/image/upload/v1752863378/notes-assets/images/AWS-Networking-Fundamentals-VPC-Overview/aws-cloud-regions-vpc-illustration.jpg)
 
 ## VPC as a Network Boundary
 
@@ -43,7 +43,7 @@ When creating a VPC, assign a primary IPv4 CIDR block between `/16` and `/28`:
 * Add secondary IPv4 CIDR blocks as needed
 * Enable IPv6 using a `/56` block (up to five per VPC, adjustable on request)
 
-![The image is a diagram explaining a Virtual Private Cloud (VPC) with a CIDR block of 192.168.0.0/16, including options for secondary IPv4 and IPv6 CIDR blocks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863379/notes-assets/images/AWS-Networking-Fundamentals-VPC-Overview/vpc-diagram-cidr-blocks-ipv4-ipv6.jpg)
+![The image is a diagram explaining a Virtual Private Cloud (VPC) with a CIDR block of 192.168.0.0/16, including options for secondary IPv4 and IPv6 CIDR blocks.](https://kodekloud.com/kk-media/image/upload/v1752863379/notes-assets/images/AWS-Networking-Fundamentals-VPC-Overview/vpc-diagram-cidr-blocks-ipv4-ipv6.jpg)
 
 > **triangle-alert** Plan your CIDR ranges carefully to avoid overlap with other VPCs or on-premises networks.
 
@@ -59,11 +59,11 @@ AWS offers two VPC types:
 | Internet Gateway  | Attached with a 0.0.0.0/0 route by default       | Requires manual attachment & routing   |
 | Security Controls | Default SG and NACL allow all traffic by default | Configure SGs & NACLs from scratch     |
 
-![The image is a diagram illustrating multiple regions, each containing a Virtual Private Cloud (VPC) labeled as "Default."](../../../../images/kodekloud.com/kk-media/image/upload/v1752863380/notes-assets/images/AWS-Networking-Fundamentals-VPC-Overview/vpc-default-regions-diagram.jpg)
+![The image is a diagram illustrating multiple regions, each containing a Virtual Private Cloud (VPC) labeled as "Default."](https://kodekloud.com/kk-media/image/upload/v1752863380/notes-assets/images/AWS-Networking-Fundamentals-VPC-Overview/vpc-default-regions-diagram.jpg)
 
-![The image is a diagram showing two types of Virtual Private Clouds (VPCs) within a region: a default VPC and a custom VPC, both represented in separate boxes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863381/notes-assets/images/AWS-Networking-Fundamentals-VPC-Overview/vpc-diagram-default-custom-boxes.jpg)
+![The image is a diagram showing two types of Virtual Private Clouds (VPCs) within a region: a default VPC and a custom VPC, both represented in separate boxes.](https://kodekloud.com/kk-media/image/upload/v1752863381/notes-assets/images/AWS-Networking-Fundamentals-VPC-Overview/vpc-diagram-default-custom-boxes.jpg)
 
-![The image illustrates a comparison between a default and a custom Virtual Private Cloud (VPC) within a region, featuring icons and labels for each type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863383/notes-assets/images/AWS-Networking-Fundamentals-VPC-Overview/vpc-comparison-default-custom-illustration.jpg)
+![The image illustrates a comparison between a default and a custom Virtual Private Cloud (VPC) within a region, featuring icons and labels for each type.](https://kodekloud.com/kk-media/image/upload/v1752863383/notes-assets/images/AWS-Networking-Fundamentals-VPC-Overview/vpc-comparison-default-custom-illustration.jpg)
 
 ## Default VPC Configuration
 
@@ -76,7 +76,7 @@ Every AWS Region includes one Default VPC with these built-in settings:
 * **Security Group**: Default SG allowing all outbound traffic
 * **Network ACL**: Default NACL allowing all inbound and outbound traffic
 
-![The image illustrates a default VPC setup, showing an internet gateway attached to the VPC, routes directing all traffic to the gateway, and public subnets in two availability zones accessible from the internet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863384/notes-assets/images/AWS-Networking-Fundamentals-VPC-Overview/default-vpc-setup-internet-gateway.jpg)
+![The image illustrates a default VPC setup, showing an internet gateway attached to the VPC, routes directing all traffic to the gateway, and public subnets in two availability zones accessible from the internet.](https://kodekloud.com/kk-media/image/upload/v1752863384/notes-assets/images/AWS-Networking-Fundamentals-VPC-Overview/default-vpc-setup-internet-gateway.jpg)
 
 ## Summary
 

@@ -35,9 +35,7 @@ resource "azurerm_public_ip" "example" {
 }
 ```
 
-<Callout icon="lightbulb">
-  Use `create_before_destroy` when you design for parallel resources (for example, blue/green deployments) and can ensure the replacement can be created alongside the existing resource. This may require versioned naming, DNS indirection, or a load-balancer swap strategy.
-</Callout>
+> **lightbulb** Use `create_before_destroy` when you design for parallel resources (for example, blue/green deployments) and can ensure the replacement can be created alongside the existing resource. This may require versioned naming, DNS indirection, or a load-balancer swap strategy.
 
 Azure-specific considerations
 
@@ -56,9 +54,7 @@ Common patterns and mitigations
 | Public IP or DNS label collisions | Cannot provision parallel public endpoints with identical addresses or labels | Allocate additional addresses/labels and switch traffic via DNS or LB |
 |                 Stateful services | Coexistence requires data synchronization or replication                      | Use replication, backups, or a migration plan before cutover          |
 
-<Callout icon="warning">
-  Some Azure resources require globally unique names or DNS labels. Attempting to create a replacement with the same unique identifier will fail because Azure does not allow two resources or DNS labels with the same identifier to coexist.
-</Callout>
+> **warning** Some Azure resources require globally unique names or DNS labels. Attempting to create a replacement with the same unique identifier will fail because Azure does not allow two resources or DNS labels with the same identifier to coexist.
 
 Best practices
 
@@ -79,6 +75,4 @@ With that, this lesson concludes.
   <img alt="The image explains the benefits of a process that first creates a new version before destroying the old one, helping avoid downtime and broken dependencies, and is useful for zero-downtime deployments." />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/82cd6352-f026-4f6f-b739-634e56558de4/lesson/6ffef105-43c5-4dfc-914b-a15e10beeda3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/82cd6352-f026-4f6f-b739-634e56558de4/lesson/6ffef105-43c5-4dfc-914b-a15e10beeda3)

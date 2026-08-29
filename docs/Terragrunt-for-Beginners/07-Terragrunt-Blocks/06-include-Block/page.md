@@ -13,9 +13,7 @@ The **Include Block** in Terragrunt enables you to integrate external HCL files 
 | `path`                     | Relative or absolute filesystem path to the Terragrunt configuration file or directory.            |
 | `find_in_parent_folders()` | Searches parent directories for a matching configuration when set to `true` or used as a function. |
 
-<Frame>
-  ![The image is an infographic titled "Include Block" showing two attributes: "Path," which defines the location of external config, and "Find\_in\_parent," which searches for included config in parent folders.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884304/notes-assets/images/Terragrunt-for-Beginners-include-Block/include-block-infographic-path-find-in-parent.jpg)
-</Frame>
+![The image is an infographic titled "Include Block" showing two attributes: "Path," which defines the location of external config, and "Find\_in\_parent," which searches for included config in parent folders.](https://kodekloud.com/kk-media/image/upload/v1752884304/notes-assets/images/Terragrunt-for-Beginners-include-Block/include-block-infographic-path-find-in-parent.jpg)
 
 ## Key Benefits
 
@@ -26,9 +24,7 @@ The **Include Block** in Terragrunt enables you to integrate external HCL files 
 3. Efficiency\
    Follow the DRY principle by centralizing common logic in one place.
 
-<Frame>
-  ![The image is an infographic titled "Include Block" that outlines three benefits: promoting reusability through external config, reducing duplication, and ensuring consistency across infrastructure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884305/notes-assets/images/Terragrunt-for-Beginners-include-Block/include-block-infographic-benefits.jpg)
-</Frame>
+![The image is an infographic titled "Include Block" that outlines three benefits: promoting reusability through external config, reducing duplication, and ensuring consistency across infrastructure.](https://kodekloud.com/kk-media/image/upload/v1752884305/notes-assets/images/Terragrunt-for-Beginners-include-Block/include-block-infographic-benefits.jpg)
 
 ## Considerations
 
@@ -37,13 +33,9 @@ The **Include Block** in Terragrunt enables you to integrate external HCL files 
 * **Directory Hierarchy**\
   Deep folder structures with multiple includes may become hard to trace without clear naming.
 
-<Callout icon="triangle-alert">
-  Avoid overly complex include hierarchies. Always document your folder layout and include points to prevent configuration drift.
-</Callout>
+> **triangle-alert** Avoid overly complex include hierarchies. Always document your folder layout and include points to prevent configuration drift.
 
-<Frame>
-  ![The image is an informational graphic titled "Include Block," highlighting considerations such as being mindful of potential conflicts and how configurations inherit and override settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884306/notes-assets/images/Terragrunt-for-Beginners-include-Block/include-block-configuration-graphic.jpg)
-</Frame>
+![The image is an informational graphic titled "Include Block," highlighting considerations such as being mindful of potential conflicts and how configurations inherit and override settings.](https://kodekloud.com/kk-media/image/upload/v1752884306/notes-assets/images/Terragrunt-for-Beginners-include-Block/include-block-configuration-graphic.jpg)
 
 ## Best Practices
 
@@ -51,13 +43,9 @@ The **Include Block** in Terragrunt enables you to integrate external HCL files 
 * Use `expose = true` to make outputs or locals from an included file available to child modules.
 * Leverage `find_in_parent_folders()` to avoid hard-coding relative paths.
 
-<Callout icon="lightbulb">
-  Place a `common.hcl` at your repo root for project-wide settings (e.g., tags, metadata) so that every module can `include` it.
-</Callout>
+> **lightbulb** Place a `common.hcl` at your repo root for project-wide settings (e.g., tags, metadata) so that every module can `include` it.
 
-<Frame>
-  ![The image features a graphic with a puzzle piece icon, labeled "Include Block," and text stating it is used for organizing and modularizing configs, along with a "Best Practices" button.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884307/notes-assets/images/Terragrunt-for-Beginners-include-Block/include-block-puzzle-best-practices.jpg)
-</Frame>
+![The image features a graphic with a puzzle piece icon, labeled "Include Block," and text stating it is used for organizing and modularizing configs, along with a "Best Practices" button.](https://kodekloud.com/kk-media/image/upload/v1752884307/notes-assets/images/Terragrunt-for-Beginners-include-Block/include-block-puzzle-best-practices.jpg)
 
 ***
 

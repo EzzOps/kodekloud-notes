@@ -16,7 +16,7 @@ Before cloud computing emerged, all security responsibilities were managed on-pr
 * **Operating System Security:** Regularly patching and updating operating systems to fix vulnerabilities.
 * **Application Security:** Ensuring applications are secure and free of bugs or vulnerabilities.
 
-![The image outlines traditional security measures: securing data centers, networking, servers, operating systems, and applications, emphasizing authorized access and vulnerability patching.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861735/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Shared-Responsibility-Model-for-Security/frame_90.jpg)
+![The image outlines traditional security measures: securing data centers, networking, servers, operating systems, and applications, emphasizing authorized access and vulnerability patching.](https://kodekloud.com/kk-media/image/upload/v1752861735/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Shared-Responsibility-Model-for-Security/frame_90.jpg)
 
 In such environments, organizations were solely responsible for managing the entire security lifecycle.
 
@@ -32,7 +32,7 @@ AWS takes charge of securing the physical foundation of its cloud. Their respons
 * Protecting compute power, storage, databases, and networking components.
 * Ensuring robust physical security measures to prevent unauthorized access.
 
-![The image illustrates the AWS Shared Responsibility Model, detailing security responsibilities between the customer and AWS for cloud services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861736/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Shared-Responsibility-Model-for-Security/frame_160.jpg)
+![The image illustrates the AWS Shared Responsibility Model, detailing security responsibilities between the customer and AWS for cloud services.](https://kodekloud.com/kk-media/image/upload/v1752861736/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Shared-Responsibility-Model-for-Security/frame_160.jpg)
 
 ### Customer Responsibilities
 
@@ -54,7 +54,7 @@ AWS offers various service models, each with different shared responsibility sco
 
 [IaaS](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2), such as Amazon EC2, provides virtual machines along with the underlying hardware. Here, AWS secures the physical infrastructure, while you are responsible for the operating system, network configuration, and any software running on the virtual machine.
 
-![The image illustrates AWS as an IaaS provider, featuring Amazon Elastic Compute Cloud (EC2) and a touch interface icon, with "Copyright KodeKloud" noted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861737/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Shared-Responsibility-Model-for-Security/frame_250.jpg)
+![The image illustrates AWS as an IaaS provider, featuring Amazon Elastic Compute Cloud (EC2) and a touch interface icon, with "Copyright KodeKloud" noted.](https://kodekloud.com/kk-media/image/upload/v1752861737/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Shared-Responsibility-Model-for-Security/frame_250.jpg)
 
 ### Platform as a Service (PaaS)
 
@@ -64,7 +64,7 @@ AWS offers various service models, each with different shared responsibility sco
 
 In the SaaS model, the service provider manages nearly all aspects of the service. As a customer, you are responsible only for managing and inputting your data securely.
 
-![The image features AWS with icons for Amazon WorkMail, Amazon Chime, and Amazon WorkDocs, representing SaaS solutions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861738/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Shared-Responsibility-Model-for-Security/frame_320.jpg)
+![The image features AWS with icons for Amazon WorkMail, Amazon Chime, and Amazon WorkDocs, representing SaaS solutions.](https://kodekloud.com/kk-media/image/upload/v1752861738/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Shared-Responsibility-Model-for-Security/frame_320.jpg)
 
 ## Conclusion
 

@@ -27,13 +27,11 @@ ca::ctrlaltdel:/sbin/shutdown -r now
 S0:3:respawn:/sbin/getty -L 9600 ttyS0 vt320
 ```
 
-<Callout icon="lightbulb">
-  After editing `/etc/inittab`, reload init’s configuration without rebooting:
+> **lightbulb** After editing `/etc/inittab`, reload init’s configuration without rebooting:
 
   ```bash theme={null}
   sudo telinit q
   ```
-</Callout>
 
 ## Init Scripts and Service Directories
 
@@ -78,18 +76,14 @@ ls /etc/rc3.d
   sudo telinit 0
   ```
 
-<Callout icon="triangle-alert">
-  Switching runlevels will start or stop multiple services. Always save your work and notify other users before changing to runlevels 0, 1, or 6.
-</Callout>
+> **triangle-alert** Switching runlevels will start or stop multiple services. Always save your work and notify other users before changing to runlevels 0, 1, or 6.
 
 ## Further Reading
 
 * [SysV init Manual](https://man7.org/linux/man-pages/man8/init.8.html)
 * [Linux Runlevels Explained](https://wiki.archlinux.org/title/Runlevels)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/55c2d118-3a85-4da1-8a7f-e9f8671cc818/lesson/79e4cce3-a04c-47ef-b701-ad8f514bc406" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/55c2d118-3a85-4da1-8a7f-e9f8671cc818/lesson/79e4cce3-a04c-47ef-b701-ad8f514bc406)
 
 
 # Change Runlevels Upstart
@@ -114,9 +108,7 @@ nmbd                         start/running, process 3085
 passwd                       stop/waiting
 ```
 
-<Callout icon="lightbulb">
-  Upstart jobs live under `/etc/init`. To add or modify a job, create or edit its `.conf` file in this directory.
-</Callout>
+> **lightbulb** Upstart jobs live under `/etc/init`. To add or modify a job, create or edit its `.conf` file in this directory.
 
 Use these commands to control services:
 
@@ -173,9 +165,7 @@ $ sudo shutdown +20 "System maintenance in 20 minutes"
 $ sudo shutdown now "Shutdown initiated"
 ```
 
-<Callout icon="triangle-alert">
-  Scheduling or initiating a shutdown requires **root** privileges. Ensure you have the proper permissions before running these commands.
-</Callout>
+> **triangle-alert** Scheduling or initiating a shutdown requires **root** privileges. Ensure you have the proper permissions before running these commands.
 
 ### SysV vs. systemd Commands
 
@@ -202,6 +192,4 @@ $ sudo wall "System going into maintenance mode in 5 minutes!"
 * [systemd Man Pages](https://www.freedesktop.org/software/systemd/man/)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/55c2d118-3a85-4da1-8a7f-e9f8671cc818/lesson/b47f3753-a80c-4c38-88de-e628e1b0924a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/55c2d118-3a85-4da1-8a7f-e9f8671cc818/lesson/b47f3753-a80c-4c38-88de-e628e1b0924a)

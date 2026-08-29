@@ -32,13 +32,9 @@
 
 This diagram visually compares a simple playbook to a more complex one, illustrating tasks from basic server command execution to large-scale virtual machine deployments.
 
-<Frame>
-  ![The image shows a comparison between simple and complex Ansible playbooks, detailing tasks for server commands and virtual machine deployments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881066/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Playbooks/frame_40.jpg)
-</Frame>
+![The image shows a comparison between simple and complex Ansible playbooks, detailing tasks for server commands and virtual machine deployments.](https://kodekloud.com/kk-media/image/upload/v1752881066/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Playbooks/frame_40.jpg)
 
-<Callout icon="lightbulb">
-  Playbooks are written in YAML format, so having a good grasp of YAML syntax is essential for writing error-free configurations.
-</Callout>
+> **lightbulb** Playbooks are written in YAML format, so having a good grasp of YAML syntax is essential for writing error-free configurations.
 
 ## Anatomy of an Ansible Playbook
 
@@ -127,9 +123,7 @@ ansible-playbook --help
 
 This command-line utility provides guidance on available parameters to further customize playbook execution.
 
-<Frame>
-  ![The image explains a playbook as a YAML file defining activities (tasks) for hosts, including executing commands, running scripts, installing packages, and shutdown/restart actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881067/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Playbooks/frame_70.jpg)
-</Frame>
+![The image explains a playbook as a YAML file defining activities (tasks) for hosts, including executing commands, running scripts, installing packages, and shutdown/restart actions.](https://kodekloud.com/kk-media/image/upload/v1752881067/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Playbooks/frame_70.jpg)
 
 ## Complete Sample Playbook
 
@@ -182,9 +176,7 @@ Modules, tasks, and play definitions work in unison to create an orderly and eff
 
 Happy automating!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/f7bcdbad-4792-4e82-beaa-b799773214fd/lesson/d35aa43c-c3ca-4a09-952e-19163dbd6241" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/f7bcdbad-4792-4e82-beaa-b799773214fd/lesson/d35aa43c-c3ca-4a09-952e-19163dbd6241)
 
 
 # Ansible lint
@@ -195,17 +187,13 @@ This article discusses how Ansible Lint enhances the quality of Ansible playbook
 
 Verifying your Ansible playbooks using check mode and diff mode is a crucial step to ensure your configurations behave as expected. Now, let's explore how you can take your quality assurance to the next level using Ansible Lint.
 
-<Frame>
-  ![The image is a flowchart about verifying Ansible playbooks, highlighting "Check mode" and "Diff mode" under the topic "Introduction."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881068/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-lint/frame_10.jpg)
-</Frame>
+![The image is a flowchart about verifying Ansible playbooks, highlighting "Check mode" and "Diff mode" under the topic "Introduction."](https://kodekloud.com/kk-media/image/upload/v1752881068/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-lint/frame_10.jpg)
 
 Imagine you are a DevOps engineer at a busy software company. As you automate your infrastructure with Ansible, your growing collection of playbooks can become increasingly complex. Over time, this complexity might lead to challenges in understanding and maintaining your configurations. This is where Ansible Lint becomes essential.
 
 Ansible Lint is a command-line tool designed for linting playbooks, roles, and collections. It meticulously scans your Ansible code for potential errors, bugs, stylistic issues, and suspicious constructs. Think of it as having an experienced mentor by your side offering valuable insights and catching issues that might go unnoticed.
 
-<Frame>
-  ![The image explains the need for ansible-lint, highlighting its role in checking Ansible playbooks for errors, bugs, and stylistic issues, akin to having a mentor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881069/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-lint/frame_60.jpg)
-</Frame>
+![The image explains the need for ansible-lint, highlighting its role in checking Ansible playbooks for errors, bugs, and stylistic issues, akin to having a mentor.](https://kodekloud.com/kk-media/image/upload/v1752881069/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-lint/frame_60.jpg)
 
 ***
 
@@ -259,9 +247,7 @@ style_example.yml:12
 style_example.yml:14
 ```
 
-<Callout icon="lightbulb">
-  If Ansible Lint completes without any output, it means your playbook is free of linting issues.
-</Callout>
+> **lightbulb** If Ansible Lint completes without any output, it means your playbook is free of linting issues.
 
 This detailed feedback helps you pinpoint and address issues such as inconsistent indentation, incorrect module usage, and non-uniform task naming. Regularly integrating Ansible Lint into your workflow can help maintain the quality and reliability of your automation scripts.
 
@@ -271,8 +257,6 @@ This concludes our discussion on Ansible Lint. By incorporating this tool into y
 
 Happy automating!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/f7bcdbad-4792-4e82-beaa-b799773214fd/lesson/a179014f-17c5-41ee-9a66-89c125e9595e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/f7bcdbad-4792-4e82-beaa-b799773214fd/lesson/a179014f-17c5-41ee-9a66-89c125e9595e)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/f7bcdbad-4792-4e82-beaa-b799773214fd/lesson/0431ba24-9b8e-48d6-947b-48218e3e8508" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/f7bcdbad-4792-4e82-beaa-b799773214fd/lesson/0431ba24-9b8e-48d6-947b-48218e3e8508)

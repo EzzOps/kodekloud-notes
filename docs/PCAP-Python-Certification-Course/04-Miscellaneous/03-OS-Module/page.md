@@ -139,9 +139,7 @@ Output:
 
 In this case, calling `outer_fun(4)` returns the `inner_fun` function, which retains the value of `x` (equal to 4) in its scope. When `var_one(3)` is invoked, it multiplies 4 by 3, resulting in 12, even though the execution context of `outer_fun` has ended.
 
-<Callout icon="lightbulb">
-  Closures empower you to write more modular and dynamic code by allowing functions to remember and access data from their defining environment, which is particularly effective in functional programming.
-</Callout>
+> **lightbulb** Closures empower you to write more modular and dynamic code by allowing functions to remember and access data from their defining environment, which is particularly effective in functional programming.
 
 ## Summary
 
@@ -156,11 +154,9 @@ In this article, we covered:
 
 Start practicing these concepts today to enhance your Python programming skills and develop more efficient, readable code.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/f130fee7-a5f4-4c7f-bc8e-ffd6f1b8fdc1/lesson/53cd4396-5579-4c95-9078-e625b72200e2" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/f130fee7-a5f4-4c7f-bc8e-ffd6f1b8fdc1/lesson/53cd4396-5579-4c95-9078-e625b72200e2)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/f130fee7-a5f4-4c7f-bc8e-ffd6f1b8fdc1/lesson/b90c699d-2423-4adf-8506-c27e1389cb6c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/f130fee7-a5f4-4c7f-bc8e-ffd6f1b8fdc1/lesson/b90c699d-2423-4adf-8506-c27e1389cb6c)
 
 
 # OS Module
@@ -270,9 +266,7 @@ print(os.listdir())
 ['.upm', 'main.py']
 ```
 
-<Callout icon="lightbulb">
-  The `rmdir` function works only on directories that exist and are empty. Attempting to delete a directory that contains files or subdirectories will result in an error.
-</Callout>
+> **lightbulb** The `rmdir` function works only on directories that exist and are empty. Attempting to delete a directory that contains files or subdirectories will result in an error.
 
 To remove a directory along with all its subdirectories, use the `removedirs` function. For example:
 
@@ -303,9 +297,7 @@ returned_value = os.system("mkdir my_new_directory")
 
 The returned value is the exit status of the command: `0` indicates success, while a non-zero value (commonly `1`) indicates an error.
 
-<Callout icon="lightbulb">
-  When executing system commands, always validate and sanitize any inputs to prevent security risks such as command injection.
-</Callout>
+> **lightbulb** When executing system commands, always validate and sanitize any inputs to prevent security risks such as command injection.
 
 ## Summary
 
@@ -319,8 +311,6 @@ In this lesson, you learned how to:
 
 Try applying these concepts through practice exercises to deepen your understanding and improve your proficiency with Python’s OS module.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/f130fee7-a5f4-4c7f-bc8e-ffd6f1b8fdc1/lesson/cde38440-8fe4-4223-8235-07a9ebadfaca" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/f130fee7-a5f4-4c7f-bc8e-ffd6f1b8fdc1/lesson/cde38440-8fe4-4223-8235-07a9ebadfaca)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/f130fee7-a5f4-4c7f-bc8e-ffd6f1b8fdc1/lesson/b48c9ec3-5753-4a76-bb85-ecc523e24b3a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/f130fee7-a5f4-4c7f-bc8e-ffd6f1b8fdc1/lesson/b48c9ec3-5753-4a76-bb85-ecc523e24b3a)

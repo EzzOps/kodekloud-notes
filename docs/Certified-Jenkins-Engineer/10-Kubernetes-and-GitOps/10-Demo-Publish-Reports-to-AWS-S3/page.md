@@ -38,9 +38,7 @@ This deployment expects a secret named `mongo-db-creds`, which you’ll create i
 
 If you need to host your manifests elsewhere (for example, Gitea or another GitHub organization), use your Git provider’s import or migration tools:
 
-<Frame>
-  ![The image shows a web interface for migrating a Git repository, with fields for the repository URL, access token, and options for migration settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752870940/notes-assets/images/Certified-Jenkins-Engineer-Demo-Manifest-Repository-and-Configure-ArgoCD/git-repo-migration-interface.jpg)
-</Frame>
+![The image shows a web interface for migrating a Git repository, with fields for the repository URL, access token, and options for migration settings.](https://kodekloud.com/kk-media/image/upload/v1752870940/notes-assets/images/Certified-Jenkins-Engineer-Demo-Manifest-Repository-and-Configure-ArgoCD/git-repo-migration-interface.jpg)
 
 After migration, ensure that both `kubernetes/deployment.yaml` and `kubernetes/service.yaml` are present in your new repository.
 
@@ -86,9 +84,7 @@ data:
   MONGO_PASSWORD: U3VwZXJQYXdzd29yZA==
 ```
 
-<Callout icon="triangle-alert">
-  Do **not** commit raw secrets to Git. Use an encryption mechanism like [Bitnami Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) to secure your credentials.
-</Callout>
+> **triangle-alert** Do **not** commit raw secrets to Git. Use an encryption mechanism like [Bitnami Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets) to secure your credentials.
 
 ***
 
@@ -171,9 +167,7 @@ kubectl -n argocd get all
 
 The server’s NodePort is **31663**, accessible via CLI or browser.
 
-<Frame>
-  ![The image shows the Argo CD interface displaying an application named "bitnami-sealed-secrets" with its status as "Healthy" but "OutOfSync." The interface includes options to sync, refresh, or delete the application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752870943/notes-assets/images/Certified-Jenkins-Engineer-Demo-Manifest-Repository-and-Configure-ArgoCD/argo-cd-bitnami-sealed-secrets.jpg)
-</Frame>
+![The image shows the Argo CD interface displaying an application named "bitnami-sealed-secrets" with its status as "Healthy" but "OutOfSync." The interface includes options to sync, refresh, or delete the application.](https://kodekloud.com/kk-media/image/upload/v1752870943/notes-assets/images/Certified-Jenkins-Engineer-Demo-Manifest-Repository-and-Configure-ArgoCD/argo-cd-bitnami-sealed-secrets.jpg)
 
 ### 5.1 Create the Solar System Application
 
@@ -188,31 +182,21 @@ The server’s NodePort is **31663**, accessible via CLI or browser.
    * **Path**: `kubernetes`
 3. Click **Create**.
 
-<Frame>
-  ![The image shows a Gitea repository interface for "solar-system-gitops-argocd," displaying recent commits and a README file outlining its use for Kubernetes manifest files in a project demo via Jenkins.](../../../../images/kodekloud.com/kk-media/image/upload/v1752870945/notes-assets/images/Certified-Jenkins-Engineer-Demo-Manifest-Repository-and-Configure-ArgoCD/gitea-solar-system-gitops-argocd.jpg)
-</Frame>
+![The image shows a Gitea repository interface for "solar-system-gitops-argocd," displaying recent commits and a README file outlining its use for Kubernetes manifest files in a project demo via Jenkins.](https://kodekloud.com/kk-media/image/upload/v1752870945/notes-assets/images/Certified-Jenkins-Engineer-Demo-Manifest-Repository-and-Configure-ArgoCD/gitea-solar-system-gitops-argocd.jpg)
 
-<Frame>
-  ![The image shows a user interface of Argo CD, displaying application settings with options for source repository configuration and sync status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752870946/notes-assets/images/Certified-Jenkins-Engineer-Demo-Manifest-Repository-and-Configure-ArgoCD/argo-cd-application-settings-ui.jpg)
-</Frame>
+![The image shows a user interface of Argo CD, displaying application settings with options for source repository configuration and sync status.](https://kodekloud.com/kk-media/image/upload/v1752870946/notes-assets/images/Certified-Jenkins-Engineer-Demo-Manifest-Repository-and-Configure-ArgoCD/argo-cd-application-settings-ui.jpg)
 
 After creating the app, Argo CD will mark it **OutOfSync**:
 
-<Frame>
-  ![The image shows the Argo CD interface displaying two applications, "bitnami-sealed-secrets" and "solar-system-argo-app," both marked as "OutOfSync" with different health statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752870947/notes-assets/images/Certified-Jenkins-Engineer-Demo-Manifest-Repository-and-Configure-ArgoCD/argo-cd-bitnami-solar-system-outofsync.jpg)
-</Frame>
+![The image shows the Argo CD interface displaying two applications, "bitnami-sealed-secrets" and "solar-system-argo-app," both marked as "OutOfSync" with different health statuses.](https://kodekloud.com/kk-media/image/upload/v1752870947/notes-assets/images/Certified-Jenkins-Engineer-Demo-Manifest-Repository-and-Configure-ArgoCD/argo-cd-bitnami-solar-system-outofsync.jpg)
 
 Inspect details to troubleshoot missing resources:
 
-<Frame>
-  ![The image shows an Argo CD interface displaying the status of an application called "solar-system-argo-app," which is currently "OutOfSync" and "Missing." The interface includes a visual representation of the application's components and their statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752870948/notes-assets/images/Certified-Jenkins-Engineer-Demo-Manifest-Repository-and-Configure-ArgoCD/argo-cd-solar-system-status.jpg)
-</Frame>
+![The image shows an Argo CD interface displaying the status of an application called "solar-system-argo-app," which is currently "OutOfSync" and "Missing." The interface includes a visual representation of the application's components and their statuses.](https://kodekloud.com/kk-media/image/upload/v1752870948/notes-assets/images/Certified-Jenkins-Engineer-Demo-Manifest-Repository-and-Configure-ArgoCD/argo-cd-solar-system-status.jpg)
 
 Whenever you update `deployment.yaml` (for example, bumping the Docker image tag) and push your commit, return to Argo CD and click **Sync** to deploy the changes.
 
-<Frame>
-  ![The image shows a Git repository interface with a list of YAML files related to Kubernetes, including "deployment.yml," "secret.yml," and "service.yml." The files have recent commit messages and timestamps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752870949/notes-assets/images/Certified-Jenkins-Engineer-Demo-Manifest-Repository-and-Configure-ArgoCD/git-repo-yaml-files-kubernetes.jpg)
-</Frame>
+![The image shows a Git repository interface with a list of YAML files related to Kubernetes, including "deployment.yml," "secret.yml," and "service.yml." The files have recent commit messages and timestamps.](https://kodekloud.com/kk-media/image/upload/v1752870949/notes-assets/images/Certified-Jenkins-Engineer-Demo-Manifest-Repository-and-Configure-ArgoCD/git-repo-yaml-files-kubernetes.jpg)
 
 ***
 
@@ -235,9 +219,7 @@ This GitOps approach ensures all manifests and secrets remain in Git as the sing
 * [Gitea](https://gitea.io/)
 * [GitHub](https://github.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-jenkins-engineer/module/01d04ab3-0694-4c67-bd1a-c3eaaa8d64d3/lesson/d2103553-e170-4740-9d5f-ff1d755c4cb6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-jenkins-engineer/module/01d04ab3-0694-4c67-bd1a-c3eaaa8d64d3/lesson/d2103553-e170-4740-9d5f-ff1d755c4cb6)
 
 
 # Demo Publish Reports to AWS S3

@@ -34,9 +34,7 @@ Summary
 * When returning results from joined queries, choose between updating/creating response models or flattening the result to match an existing schema.
 * Always ensure Pydantic models match the exact structure returned by your endpoints to avoid validation errors.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/ca189cde-8d5b-42d8-9e7b-88da83aea2c2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/ca189cde-8d5b-42d8-9e7b-88da83aea2c2)
 
 
 # Jwt Token Basics
@@ -50,9 +48,7 @@ In this lesson, we explore one of the most critical aspects of API and applicati
 1. Session-based authentication – A session is stored on the backend server (or API) to track whether a user is logged in. This session data is typically saved in memory or in a database and remains active until the user logs out.
 2. JWT token-based authentication – This stateless approach involves no backend storage for login sessions. Instead, the client stores a token containing all the necessary authentication details, and the API verifies this token to authenticate the user.
 
-<Callout icon="lightbulb">
-  JWT token-based authentication simplifies horizontal scaling and reduces backend storage needs since the client is responsible for holding the token.
-</Callout>
+> **lightbulb** JWT token-based authentication simplifies horizontal scaling and reduces backend storage needs since the client is responsible for holding the token.
 
 When a user logs in successfully via JWT, the API generates a token that the client retains. Every time the client needs to access a protected resource (for example, hitting the `/posts` endpoint), it sends the token in the request header. The API then validates the token to ensure the user is authenticated. The typical flow is as follows:
 
@@ -61,9 +57,7 @@ When a user logs in successfully via JWT, the API generates a token that the cli
 3. The client stores this token and includes it in the header for all subsequent requests to protected resources.
 4. The API extracts and verifies the token. If the token is valid, the API responds with the requested data.
 
-<Frame>
-  ![The image illustrates the process of JWT token authentication, showing the interaction between a client and an API, including login, token issuance, and data access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883327/notes-assets/images/Python-API-Development-with-FastAPI-Jwt-Token-Basics/jwt-token-authentication-process.jpg)
-</Frame>
+![The image illustrates the process of JWT token authentication, showing the interaction between a client and an API, including login, token issuance, and data access.](https://kodekloud.com/kk-media/image/upload/v1752883327/notes-assets/images/Python-API-Development-with-FastAPI-Jwt-Token-Basics/jwt-token-authentication-process.jpg)
 
 The API does not maintain any session state; token validation alone confirms that the user is authenticated.
 

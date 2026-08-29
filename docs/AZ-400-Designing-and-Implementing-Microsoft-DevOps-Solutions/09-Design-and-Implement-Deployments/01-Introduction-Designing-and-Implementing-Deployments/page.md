@@ -54,7 +54,7 @@ Building resilient systems helps maintain availability during failures:
 
 Coordinating application and database updates is critical for schema changes and migrations:
 
-![The image is a slide titled "Implementing a Deployment That Includes Database Tasks," with a focus on implementing such deployments. It includes a logo and a copyright notice for KodeKloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867672/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction-Designing-and-Implementing-Deployments/implementing-deployment-database-tasks-slide.jpg)
+![The image is a slide titled "Implementing a Deployment That Includes Database Tasks," with a focus on implementing such deployments. It includes a logo and a copyright notice for KodeKloud.](https://kodekloud.com/kk-media/image/upload/v1752867672/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction-Designing-and-Implementing-Deployments/implementing-deployment-database-tasks-slide.jpg)
 
 Key best practices:
 
@@ -80,7 +80,7 @@ Large solutions often span multiple services and environments:
 
 High-availability applications must remain online during updates:
 
-![The image is a slide titled "Plan for Minimizing Downtime During Deployments," listing two topics: "Overview of Downtime Minimization Strategies" and "Practical Example of Deployment Slots in Azure."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867672/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction-Designing-and-Implementing-Deployments/minimizing-downtime-deployments-strategies.jpg)
+![The image is a slide titled "Plan for Minimizing Downtime During Deployments," listing two topics: "Overview of Downtime Minimization Strategies" and "Practical Example of Deployment Slots in Azure."](https://kodekloud.com/kk-media/image/upload/v1752867672/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction-Designing-and-Implementing-Deployments/minimizing-downtime-deployments-strategies.jpg)
 
 Adopt these approaches:
 
@@ -122,7 +122,7 @@ Ensure traffic distribution and global fault tolerance:
 
 Feature flags empower controlled rollouts and rapid rollbacks:
 
-![The image is a slide titled "Implementing Feature Flags," listing topics such as the definition of feature flags, their uses in software development, and Azure app configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867673/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction-Designing-and-Implementing-Deployments/implementing-feature-flags-software-development.jpg)
+![The image is a slide titled "Implementing Feature Flags," listing topics such as the definition of feature flags, their uses in software development, and Azure app configuration.](https://kodekloud.com/kk-media/image/upload/v1752867673/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction-Designing-and-Implementing-Deployments/implementing-feature-flags-software-development.jpg)
 
 Implementation steps:
 

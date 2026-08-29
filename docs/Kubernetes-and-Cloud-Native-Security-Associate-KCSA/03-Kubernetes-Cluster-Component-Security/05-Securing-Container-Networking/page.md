@@ -16,9 +16,7 @@ By default, Kubernetes implements a flat network where:
 * DNS resolves Services to enable Pod-to-Service calls.
 * External traffic is routed through [Ingress controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/) or external [LoadBalancers](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer).
 
-<Callout icon="triangle-alert">
-  Running with an open, flat network model means **any Pod can talk to any other Pod** by default. Always apply security controls before deploying production workloads.
-</Callout>
+> **triangle-alert** Running with an open, flat network model means **any Pod can talk to any other Pod** by default. Always apply security controls before deploying production workloads.
 
 ## Network Security Focus Areas
 
@@ -52,9 +50,7 @@ spec:
 
 This policy blocks **all** incoming and outgoing traffic in the `default` namespace. You can then layer on additional policies to explicitly allow necessary connections.
 
-<Callout icon="lightbulb">
-  After applying a deny-all policy, define granular allow rules for DNS, API server access, and any other required services.
-</Callout>
+> **lightbulb** After applying a deny-all policy, define granular allow rules for DNS, API server access, and any other required services.
 
 ***
 
@@ -62,9 +58,7 @@ This policy blocks **all** incoming and outgoing traffic in the `default` namesp
 
 Deploying a service mesh such as [Istio](https://istio.io/) or [Linkerd](https://linkerd.io/) adds powerful features:
 
-<Frame>
-  ![The image illustrates a service mesh architecture using Istio and Linkerd within a cluster, showing nodes, pods, and an NGINX controller for traffic management and observability. It highlights features like mutual TLS and traffic management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880750/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Container-Networking/service-mesh-architecture-istio-linkerd.jpg)
-</Frame>
+![The image illustrates a service mesh architecture using Istio and Linkerd within a cluster, showing nodes, pods, and an NGINX controller for traffic management and observability. It highlights features like mutual TLS and traffic management.](https://kodekloud.com/kk-media/image/upload/v1752880750/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Container-Networking/service-mesh-architecture-istio-linkerd.jpg)
 
 * Mutual TLS (mTLS) encrypts and authenticates service-to-service calls.
 * Fine-grained traffic management: retries, timeouts, and routing rules.
@@ -78,9 +72,7 @@ By enforcing mTLS, Istio can prevent man-in-the-middle attacks and ensure only a
 
 Protect data in transit at the network layer by enabling encryption with CNI plugins like Calico:
 
-<Frame>
-  ![The image is a diagram illustrating encrypted network traffic within a cluster, showing nodes, pods, and the use of IPSec and WireGuard for security. It includes an NGINX Controller and highlights a network layer with secure and potentially insecure nodes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880751/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Container-Networking/encrypted-network-traffic-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating encrypted network traffic within a cluster, showing nodes, pods, and the use of IPSec and WireGuard for security. It includes an NGINX Controller and highlights a network layer with secure and potentially insecure nodes.](https://kodekloud.com/kk-media/image/upload/v1752880751/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Container-Networking/encrypted-network-traffic-diagram.jpg)
 
 * **Calico + IPsec**: Encrypts all inter-node traffic without requiring additional hardware.
 * **WireGuard**: A lightweight, high-performance VPN alternative.
@@ -93,9 +85,7 @@ Configuring IPsec in Calico ensures confidentiality and integrity for pod networ
 
 Segregate critical applications into dedicated namespaces and apply strict policies to reduce lateral movement:
 
-<Frame>
-  ![The image illustrates a Kubernetes cluster setup for isolating sensitive workloads, showing nodes, namespaces, and pods with an NGINX Controller managing the cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880752/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Container-Networking/kubernetes-cluster-setup-nginx.jpg)
-</Frame>
+![The image illustrates a Kubernetes cluster setup for isolating sensitive workloads, showing nodes, namespaces, and pods with an NGINX Controller managing the cluster.](https://kodekloud.com/kk-media/image/upload/v1752880752/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Container-Networking/kubernetes-cluster-setup-nginx.jpg)
 
 By combining namespaces with network policies, you can limit which teams or services can communicate, containing any potential breach.
 
@@ -103,9 +93,7 @@ By combining namespaces with network policies, you can limit which teams or serv
 
 ## Summary
 
-<Frame>
-  ![The image is a summary slide listing four key points about network policies and security measures for containers, including implementing network policies, using service meshes, encrypting traffic, and isolating workloads.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880753/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Container-Networking/network-policies-security-containers-summary.jpg)
-</Frame>
+![The image is a summary slide listing four key points about network policies and security measures for containers, including implementing network policies, using service meshes, encrypting traffic, and isolating workloads.](https://kodekloud.com/kk-media/image/upload/v1752880753/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Container-Networking/network-policies-security-containers-summary.jpg)
 
 To recap:
 
@@ -123,6 +111,4 @@ To recap:
 * [IPsec](https://en.wikipedia.org/wiki/IPsec)
 * [WireGuard](https://www.wireguard.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/94c269bb-553f-4ac2-9dbb-7829659cf240" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/94c269bb-553f-4ac2-9dbb-7829659cf240)

@@ -59,9 +59,7 @@ General matrix multiplication rule
 * If `A` is an `m × n` matrix and `B` is an `n × p` matrix, then the product `A × B` is defined and has shape `m × p`.
 * In plain terms: the number of columns of the first matrix must equal the number of rows of the second matrix.
 
-<Callout icon="lightbulb">
-  Matrix multiplication is only possible when the first matrix's column count matches the second matrix's row count. The resulting matrix has the number of rows of the first matrix and the number of columns of the second matrix.
-</Callout>
+> **lightbulb** Matrix multiplication is only possible when the first matrix's column count matches the second matrix's row count. The resulting matrix has the number of rows of the first matrix and the number of columns of the second matrix.
 
 <Frame>
   <img alt="The image shows the multiplication of two 3x3 matrices with the resulting matrix, alongside a person explaining the process." />
@@ -81,9 +79,7 @@ Notes on multiplication validity
 * If A has 3 columns and B has 2 rows, multiplication A×B is not defined because the inner dimensions don't match.
 * If A has 3 columns and B has 3 rows, A×B is defined.
 
-<Callout icon="warning">
-  A common pitfall: matrix multiplication is not commutative. If `A × B` is defined, `B × A` might be undefined or yield a different-shaped/result matrix. Always check shapes before multiplying.
-</Callout>
+> **warning** A common pitfall: matrix multiplication is not commutative. If `A × B` is defined, `B × A` might be undefined or yield a different-shaped/result matrix. Always check shapes before multiplying.
 
 Applying this to sensor fusion
 
@@ -101,6 +97,4 @@ Further reading and references
 
 This foundation of matrix multiplication and shape rules enables reliable coordinate transforms and sensor fusion — the building blocks for autonomous vehicle perception.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/d8fa251f-80d2-4813-8b52-ad57051b1dcf/lesson/12e082b9-0608-4585-b75d-05ba9faa3c14" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/d8fa251f-80d2-4813-8b52-ad57051b1dcf/lesson/12e082b9-0608-4585-b75d-05ba9faa3c14)

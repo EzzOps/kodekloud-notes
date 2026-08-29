@@ -37,18 +37,18 @@ When you create a VPC, AWS automatically generates a **main** route table. Any s
 
 Open the **Route Tables** page and select the default entry:
 
-![The image shows an AWS VPC (Virtual Private Cloud) management console, displaying details of a VPC named "vpcdemo" with its configuration and status information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863312/notes-assets/images/AWS-Networking-Fundamentals-Route-Table-Demo/aws-vpc-management-console-vpcdemo.jpg)
+![The image shows an AWS VPC (Virtual Private Cloud) management console, displaying details of a VPC named "vpcdemo" with its configuration and status information.](https://kodekloud.com/kk-media/image/upload/v1752863312/notes-assets/images/AWS-Networking-Fundamentals-Route-Table-Demo/aws-vpc-management-console-vpcdemo.jpg)
 
 Here you’ll see two default routes:
 
 * `10.0.0.0/16 → local` (IPv4 internal traffic)
 * `::/0 → local` (IPv6 internal traffic)
 
-![The image shows an AWS VPC Management Console displaying route table details, including two active routes with their destinations and targets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863314/notes-assets/images/AWS-Networking-Fundamentals-Route-Table-Demo/aws-vpc-management-console-route-table.jpg)
+![The image shows an AWS VPC Management Console displaying route table details, including two active routes with their destinations and targets.](https://kodekloud.com/kk-media/image/upload/v1752863314/notes-assets/images/AWS-Networking-Fundamentals-Route-Table-Demo/aws-vpc-management-console-route-table.jpg)
 
 Under **Subnet Associations**, subnets without explicit associations are listed:
 
-![The image shows an AWS VPC Management Console screen displaying route tables, with a focus on subnet associations. It lists subnets without explicit associations and their corresponding details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863315/notes-assets/images/AWS-Networking-Fundamentals-Route-Table-Demo/aws-vpc-management-console-route-tables.jpg)
+![The image shows an AWS VPC Management Console screen displaying route tables, with a focus on subnet associations. It lists subnets without explicit associations and their corresponding details.](https://kodekloud.com/kk-media/image/upload/v1752863315/notes-assets/images/AWS-Networking-Fundamentals-Route-Table-Demo/aws-vpc-management-console-route-tables.jpg)
 
 ## 3. Creating and Associating a Custom Route Table
 
@@ -58,7 +58,7 @@ Under **Subnet Associations**, subnets without explicit associations are listed:
 2. **Name:** `route-table-one`
 3. **VPC:** `vpcdemo`
 
-![The image shows the AWS Management Console interface for creating a route table, with fields for naming the route table and selecting a VPC. There is also an option to add tags to the resource.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863316/notes-assets/images/AWS-Networking-Fundamentals-Route-Table-Demo/aws-management-console-route-table-creation.jpg)
+![The image shows the AWS Management Console interface for creating a route table, with fields for naming the route table and selecting a VPC. There is also an option to add tags to the resource.](https://kodekloud.com/kk-media/image/upload/v1752863316/notes-assets/images/AWS-Networking-Fundamentals-Route-Table-Demo/aws-management-console-route-table-creation.jpg)
 
 ### 3.2 Associate Subnet One
 
@@ -75,7 +75,7 @@ Repeat the process to isolate Subnet Two:
 1. **Create route table** → **Name:** `route-table-two` → **VPC:** `vpcdemo`
 2. Select `route-table-two` → **Subnet Associations** → **Edit** → Check **Subnet Two** → **Save**
 
-![The image shows an AWS VPC Management Console screen displaying details of a route table, including route information and subnet associations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863317/notes-assets/images/AWS-Networking-Fundamentals-Route-Table-Demo/aws-vpc-management-console-route-table-2.jpg)
+![The image shows an AWS VPC Management Console screen displaying details of a route table, including route information and subnet associations.](https://kodekloud.com/kk-media/image/upload/v1752863317/notes-assets/images/AWS-Networking-Fundamentals-Route-Table-Demo/aws-vpc-management-console-route-table-2.jpg)
 
 This setup illustrates how:
 
@@ -93,7 +93,7 @@ To add or update routes:
    * **Target:** select an Internet Gateway, NAT Gateway, etc.
 4. Click **Save changes**.
 
-![The image shows the AWS VPC Management Console with the "Edit routes" section open, displaying route entries and a dropdown menu for selecting destinations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863319/notes-assets/images/AWS-Networking-Fundamentals-Route-Table-Demo/aws-vpc-management-console-edit-routes.jpg)
+![The image shows the AWS VPC Management Console with the "Edit routes" section open, displaying route entries and a dropdown menu for selecting destinations.](https://kodekloud.com/kk-media/image/upload/v1752863319/notes-assets/images/AWS-Networking-Fundamentals-Route-Table-Demo/aws-vpc-management-console-edit-routes.jpg)
 
 > **triangle-alert** Ensure that your destination CIDR block and target are correctly configured to avoid unintended internet exposure.
 
@@ -106,7 +106,7 @@ To avoid unnecessary charges, delete the `vpcdemo` VPC. AWS will automatically r
 1. Select **vpcdemo** → **Actions** → **Delete VPC**.
 2. Confirm by typing **delete** → **Delete**.
 
-![The image shows an AWS VPC Management Console where a user is in the process of deleting a VPC named "vpcdemo," along with associated resources. The user has typed "delete" to confirm the action and is about to click the "Delete" button.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863320/notes-assets/images/AWS-Networking-Fundamentals-Route-Table-Demo/aws-vpc-management-console-delete-vpc.jpg)
+![The image shows an AWS VPC Management Console where a user is in the process of deleting a VPC named "vpcdemo," along with associated resources. The user has typed "delete" to confirm the action and is about to click the "Delete" button.](https://kodekloud.com/kk-media/image/upload/v1752863320/notes-assets/images/AWS-Networking-Fundamentals-Route-Table-Demo/aws-vpc-management-console-delete-vpc.jpg)
 
 ***
 

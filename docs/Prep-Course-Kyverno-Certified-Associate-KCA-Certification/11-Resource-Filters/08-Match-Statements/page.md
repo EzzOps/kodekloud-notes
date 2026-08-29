@@ -47,9 +47,7 @@ In this example:
 * The resource name must be exactly `dev` OR match the glob `test-*`.
 * The resource must be in the `testing` OR `dev` namespace.
 
-<Callout icon="lightbulb">
-  Lists inside a single filter (for example, multiple `names`) are ORed. Different sibling filters (for example, `names` and `namespaces`) are ANDed, so a resource must satisfy both siblings to match.
-</Callout>
+> **lightbulb** Lists inside a single filter (for example, multiple `names`) are ORed. Different sibling filters (for example, `names` and `namespaces`) are ANDed, so a resource must satisfy both siblings to match.
 
 ## Disambiguating with Group/Version/Kind (GVK)
 
@@ -199,9 +197,7 @@ In this example the request matches only if:
 
 If any of these conditions is false, the entire `any` item does not match.
 
-<Callout icon="warning">
-  Be careful when combining identity checks and resource filters: mismatched expectations (for example, matching a subject that cannot have the listed role) will cause the `any` item to fail and the rule to not apply.
-</Callout>
+> **warning** Be careful when combining identity checks and resource filters: mismatched expectations (for example, matching a subject that cannot have the listed role) will cause the `any` item to fail and the rule to not apply.
 
 ## Complex example: combining multiple filters
 
@@ -263,6 +259,4 @@ All of the above must be true for that `any` item to match.
 
 Kyverno's `match` block provides powerful, composable filters to precisely target when policies apply. By combining `kinds`, `names`, `namespaces`, label selectors, operations, and identity checks (subjects/roles/clusterRoles), you gain fine-grained control over policy scope and enforcement.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/592779da-cc67-4cd3-a990-1f0ffd90f6fc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/592779da-cc67-4cd3-a990-1f0ffd90f6fc)

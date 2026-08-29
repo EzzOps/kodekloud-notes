@@ -42,15 +42,11 @@ git push origin main
 
 Jenkins will trigger a new build, and the updated version of the application will be deployed automatically. Review the console output for confirmation of installation logs, test results, packaging, and deployment messages.
 
-<Frame>
-  ![The image shows a web page of a "Todo App: v2" with a text input field to enter a new task and a button labeled "Add Task." A task labeled "sdfasdf" is listed below.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879987/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Pipeline/todo-app-v2-input-add-task.jpg)
-</Frame>
+![The image shows a web page of a "Todo App: v2" with a text input field to enter a new task and a button labeled "Add Task." A task labeled "sdfasdf" is listed below.](https://kodekloud.com/kk-media/image/upload/v1752879987/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Pipeline/todo-app-v2-input-add-task.jpg)
 
 This streamlined process demonstrates how to configure a Jenkins pipeline that automatically runs tests on every Git push, packages your application, and deploys it to a production server—ensuring continuous integration and continuous deployment (CI/CD) for your project.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/5fe5875c-d1e2-4f35-8161-af0830fe0deb/lesson/e342cfff-6f0f-40ed-94da-d0ef07044633" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/5fe5875c-d1e2-4f35-8161-af0830fe0deb/lesson/e342cfff-6f0f-40ed-94da-d0ef07044633)
 
 
 # Demo Deploying App
@@ -65,18 +61,14 @@ In this guide, you'll learn how to set up a production server on AWS to deploy y
 
 When you log into the AWS console, you will see the EC2 management console displaying a list of running instances:
 
-<Frame>
-  ![The image shows an AWS EC2 management console with a list of running instances, including details like instance ID, state, type, and status checks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879989/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Deploying-App/aws-ec2-management-console-instances.jpg)
-</Frame>
+![The image shows an AWS EC2 management console with a list of running instances, including details like instance ID, state, type, and status checks.](https://kodekloud.com/kk-media/image/upload/v1752879989/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Deploying-App/aws-ec2-management-console-instances.jpg)
 
 To create a new instance:
 
 1. Click on the **Launch Instance** button.
 2. Choose the desired Amazon Machine Image (AMI) and instance type. For a basic Linux server, the default configuration is sufficient.
 
-<Frame>
-  ![The image shows the AWS EC2 console for launching an instance, with options to select the instance name, Amazon Machine Image (AMI), and instance type. The summary panel on the right provides details about the selected configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879991/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Deploying-App/aws-ec2-launch-instance-console.jpg)
-</Frame>
+![The image shows the AWS EC2 console for launching an instance, with options to select the instance name, Amazon Machine Image (AMI), and instance type. The summary panel on the right provides details about the selected configuration.](https://kodekloud.com/kk-media/image/upload/v1752879991/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Deploying-App/aws-ec2-launch-instance-console.jpg)
 
 ### Important Settings:
 
@@ -84,29 +76,19 @@ To create a new instance:
 * **Key Pair:** Select an existing SSH key (e.g., "main") for secure access. This will be crucial later when Jenkins connects to your server.
 * **Network Settings:** Ensure you allow both HTTPS and HTTP traffic, as your server will host a web service.
 
-<Frame>
-  ![The image shows an AWS EC2 instance launch configuration screen, detailing options for instance type, key pair, and network settings. The selected instance type is "t2.micro," which is free tier eligible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879992/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Deploying-App/aws-ec2-instance-launch-configuration.jpg)
-</Frame>
+![The image shows an AWS EC2 instance launch configuration screen, detailing options for instance type, key pair, and network settings. The selected instance type is "t2.micro," which is free tier eligible.](https://kodekloud.com/kk-media/image/upload/v1752879992/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Deploying-App/aws-ec2-instance-launch-configuration.jpg)
 
-<Frame>
-  ![The image shows an AWS EC2 instance launch configuration screen, detailing network settings and a summary of the instance specifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879994/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Deploying-App/aws-ec2-instance-launch-configuration-2.jpg)
-</Frame>
+![The image shows an AWS EC2 instance launch configuration screen, detailing network settings and a summary of the instance specifications.](https://kodekloud.com/kk-media/image/upload/v1752879994/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Deploying-App/aws-ec2-instance-launch-configuration-2.jpg)
 
 After confirming your configuration, click **Launch**. Wait for a minute or two for the instance to start up.
 
-<Frame>
-  ![The image shows an AWS EC2 instance launch configuration screen, detailing storage options and a summary of the instance settings. The "Launch instance" button is visible at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879995/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Deploying-App/aws-ec2-instance-launch-configuration-3.jpg)
-</Frame>
+![The image shows an AWS EC2 instance launch configuration screen, detailing storage options and a summary of the instance settings. The "Launch instance" button is visible at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752879995/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Deploying-App/aws-ec2-instance-launch-configuration-3.jpg)
 
 Once the instance is running, return to the instances list to locate your production server and copy its IP address.
 
-<Frame>
-  ![The image shows an AWS EC2 console screen indicating a successful instance launch, with options for next steps like connecting to the instance and managing resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879996/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Deploying-App/aws-ec2-console-instance-launch.jpg)
-</Frame>
+![The image shows an AWS EC2 console screen indicating a successful instance launch, with options for next steps like connecting to the instance and managing resources.](https://kodekloud.com/kk-media/image/upload/v1752879996/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Deploying-App/aws-ec2-console-instance-launch.jpg)
 
-<Frame>
-  ![The image shows an AWS EC2 management console with a list of instances, including details for a selected instance named "prod-server." The instance is running, with its type, IP addresses, and other details displayed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879997/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Deploying-App/aws-ec2-management-console-prod-server.jpg)
-</Frame>
+![The image shows an AWS EC2 management console with a list of instances, including details for a selected instance named "prod-server." The instance is running, with its type, IP addresses, and other details displayed.](https://kodekloud.com/kk-media/image/upload/v1752879997/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Deploying-App/aws-ec2-management-console-prod-server.jpg)
 
 ## Step 2: Connecting to Your Server via SSH
 
@@ -129,9 +111,7 @@ https://aws.amazon.com/linux/amazon-linux-2023
 [ec2-user@ip-172-31-16-211 ~]$
 ```
 
-<Callout icon="lightbulb">
-  The `main.pem` file is essential for authentication. Your Jenkins server will also use this key later to automatically copy your code and restart your application.
-</Callout>
+> **lightbulb** The `main.pem` file is essential for authentication. Your Jenkins server will also use this key later to automatically copy your code and restart your application.
 
 ## Step 3: Setting Up the Application Environment
 
@@ -214,13 +194,11 @@ Check its status to ensure it is running:
 sudo systemctl status flask-app.service
 ```
 
-<Callout icon="triangle-alert">
-  At this stage, the service may fail because the `app.py` file has not yet been copied to `/home/ec2-user/app`. Once your application code is deployed, restart the service with:
+> **triangle-alert** At this stage, the service may fail because the `app.py` file has not yet been copied to `/home/ec2-user/app`. Once your application code is deployed, restart the service with:
 
   ```bash theme={null}
   sudo systemctl restart flask-app.service
   ```
-</Callout>
 
 ## Next Steps
 
@@ -228,6 +206,4 @@ This guide completes the initial setup of your production server. In the next tu
 
 Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/5fe5875c-d1e2-4f35-8161-af0830fe0deb/lesson/ccc4043a-0fe0-49fa-b67f-613de5bd3e52" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/5fe5875c-d1e2-4f35-8161-af0830fe0deb/lesson/ccc4043a-0fe0-49fa-b67f-613de5bd3e52)

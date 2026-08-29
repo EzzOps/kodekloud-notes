@@ -34,9 +34,7 @@ Adjust your application or use symbolic links to consume these local files seaml
 * [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 * [Express.js Guide](https://expressjs.com/en/starter/installing.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/c92e854c-3059-4a2d-9082-e9c021269560" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/c92e854c-3059-4a2d-9082-e9c021269560)
 
 
 # Env file

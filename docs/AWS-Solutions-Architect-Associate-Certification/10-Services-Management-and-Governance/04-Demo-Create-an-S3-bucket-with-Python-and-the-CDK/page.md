@@ -12,7 +12,7 @@ In this guide, you'll learn how to use the AWS Cloud Development Kit (CDK) with 
 
 Before you begin, ensure that Node.js is installed on your machine. Node.js provides the JavaScript runtime required for the AWS CDK CLI, which is installed via npm. Download the appropriate installer for your operating system from the official Node.js website.
 
-![The image shows the Node.js download page, offering two versions for Windows (x64): version 18.18.2 LTS and version 20.8.1 Current. It also mentions security releases and provides links for additional downloads and documentation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865310/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Create-an-S3-bucket-with-Python-and-the-CDK/nodejs-download-page-windows-versions.jpg)
+![The image shows the Node.js download page, offering two versions for Windows (x64): version 18.18.2 LTS and version 20.8.1 Current. It also mentions security releases and provides links for additional downloads and documentation.](https://kodekloud.com/kk-media/image/upload/v1752865310/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Create-an-S3-bucket-with-Python-and-the-CDK/nodejs-download-page-windows-versions.jpg)
 
 Once Node.js is installed, open your terminal or command prompt and run the following commands:
 
@@ -184,11 +184,11 @@ aws configure
 
 Enter your AWS Access Key ID and Secret Access Key when prompted. Although using full administrator access may be acceptable for demos, remember to follow the principle of least privilege in production environments.
 
-![The image shows an AWS IAM console screen for creating a new user, where user details such as the username are specified. There are options for providing user access to the AWS Management Console and creating programmatic access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865312/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Create-an-S3-bucket-with-Python-and-the-CDK/aws-iam-console-create-user.jpg)
+![The image shows an AWS IAM console screen for creating a new user, where user details such as the username are specified. There are options for providing user access to the AWS Management Console and creating programmatic access.](https://kodekloud.com/kk-media/image/upload/v1752865312/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Create-an-S3-bucket-with-Python-and-the-CDK/aws-iam-console-create-user.jpg)
 
-![The image shows an AWS IAM console screen for creating a user, displaying user details, permissions summary, and an option to add tags. The user has "AdministratorAccess" permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865313/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Create-an-S3-bucket-with-Python-and-the-CDK/aws-iam-create-user-console.jpg)
+![The image shows an AWS IAM console screen for creating a user, displaying user details, permissions summary, and an option to add tags. The user has "AdministratorAccess" permissions.](https://kodekloud.com/kk-media/image/upload/v1752865313/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Create-an-S3-bucket-with-Python-and-the-CDK/aws-iam-create-user-console.jpg)
 
-![The image shows an AWS IAM console screen for creating an access key, with options for different use cases like CLI, local code, and third-party services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865315/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Create-an-S3-bucket-with-Python-and-the-CDK/aws-iam-access-key-creation.jpg)
+![The image shows an AWS IAM console screen for creating an access key, with options for different use cases like CLI, local code, and third-party services.](https://kodekloud.com/kk-media/image/upload/v1752865315/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Create-an-S3-bucket-with-Python-and-the-CDK/aws-iam-access-key-creation.jpg)
 
 ─────────────────────────────
 
@@ -223,7 +223,7 @@ CdKStack | 3/3 | CREATE_COMPLETE    | AWS::CloudFormation::Stack | CdKStack
 
 Confirm that your S3 bucket appears in the S3 console:
 
-![The image shows an AWS CloudFormation console with details of a stack named "CdkStack," displaying resources and their statuses as "CREATE\_COMPLETE." A delete action is initiated for another stack.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865318/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Create-an-S3-bucket-with-Python-and-the-CDK/aws-cloudformation-cdkstack-status.jpg)
+![The image shows an AWS CloudFormation console with details of a stack named "CdkStack," displaying resources and their statuses as "CREATE\_COMPLETE." A delete action is initiated for another stack.](https://kodekloud.com/kk-media/image/upload/v1752865318/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Create-an-S3-bucket-with-Python-and-the-CDK/aws-cloudformation-cdkstack-status.jpg)
 
 ─────────────────────────────
 
@@ -245,7 +245,7 @@ cdk destroy
 
 Confirm the deletion in the prompt. Finally, verify in the CloudFormation and S3 consoles that all resources have been removed.
 
-![The image shows an Amazon S3 console with a list of buckets, their regions, access settings, and creation dates. A notification at the top indicates a bucket was successfully deleted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865319/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Create-an-S3-bucket-with-Python-and-the-CDK/amazon-s3-console-bucket-list.jpg)
+![The image shows an Amazon S3 console with a list of buckets, their regions, access settings, and creation dates. A notification at the top indicates a bucket was successfully deleted.](https://kodekloud.com/kk-media/image/upload/v1752865319/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Create-an-S3-bucket-with-Python-and-the-CDK/amazon-s3-console-bucket-list.jpg)
 
 ─────────────────────────────
 

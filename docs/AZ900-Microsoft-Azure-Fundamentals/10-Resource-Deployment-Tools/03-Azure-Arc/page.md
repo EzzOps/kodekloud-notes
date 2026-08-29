@@ -8,7 +8,7 @@ Azure Arc extends Azure's powerful management capabilities to any infrastructure
 
 All connected resources become visible within the Azure Portal, and you can manage them using the Portal, PowerShell, or CLI. This is made possible by the Connected Machine Agent, which is installed on each machine to facilitate communication with Azure Arc.
 
-![The image is a diagram illustrating Azure Arc's management capabilities over infrastructure, including on-premises, multi-cloud, and edge resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868480/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Arc/azure-arc-management-diagram.jpg)
+![The image is a diagram illustrating Azure Arc's management capabilities over infrastructure, including on-premises, multi-cloud, and edge resources.](https://kodekloud.com/kk-media/image/upload/v1752868480/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Arc/azure-arc-management-diagram.jpg)
 
 ## Key Features of Azure Arc
 
@@ -18,7 +18,7 @@ Azure Arc delivers a range of robust features that help streamline hybrid and mu
 * **Extended Azure Services:** Unlock the power of Azure services for your entire infrastructure, regardless of location.
 * **Policy-Driven Governance:** Apply Azure policies to non-Azure resources to ensure consistent compliance, security, and operational practices.
 
-![The image outlines the key features of Azure Arc, highlighting unified management, extending Azure services, and policy-driven governance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868481/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Arc/azure-arc-key-features-outline.jpg)
+![The image outlines the key features of Azure Arc, highlighting unified management, extending Azure services, and policy-driven governance.](https://kodekloud.com/kk-media/image/upload/v1752868481/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Arc/azure-arc-key-features-outline.jpg)
 
 ## Benefits and Use Cases
 
@@ -28,11 +28,11 @@ Azure Arc offers numerous benefits and is ideal for various use cases:
 * **Streamlined Operations:** Utilize familiar Azure tools for a consistent operational experience across all environments.
 * **Enhanced Security:** Extend Azure’s security and identity services to maintain monitoring and robust protection for all connected resources.
 
-![The image outlines the benefits of Azure Arc, highlighting flexibility and interoperability, streamlined operations, and comprehensive security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868482/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Arc/azure-arc-benefits-outline.jpg)
+![The image outlines the benefits of Azure Arc, highlighting flexibility and interoperability, streamlined operations, and comprehensive security.](https://kodekloud.com/kk-media/image/upload/v1752868482/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Arc/azure-arc-benefits-outline.jpg)
 
 The optimal scenarios for Azure Arc include hybrid cloud deployments, modernizing on-premises infrastructure, and managing edge resources.
 
-![The image outlines three use cases for Azure Arc: hybrid cloud deployments, on-premises infrastructure modernization, and edge resource management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868483/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Arc/azure-arc-use-cases-diagram.jpg)
+![The image outlines three use cases for Azure Arc: hybrid cloud deployments, on-premises infrastructure modernization, and edge resource management.](https://kodekloud.com/kk-media/image/upload/v1752868483/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Arc/azure-arc-use-cases-diagram.jpg)
 
 ## Demonstration: Onboarding a Windows Server
 
@@ -44,7 +44,7 @@ This section walks you through onboarding an on-premises Windows Server to Azure
 
 Log in to the [Azure Portal](https://portal.azure.com) and navigate to the Azure Arc section. Azure Arc supports not only servers but also solutions such as Azure Stack HCI, Kubernetes clusters, VMware environments, and data services like SQL Server Managed Instances.
 
-![The image shows the Azure Arc portal interface, featuring options for managing infrastructure, services, and getting started with Azure Arc. It includes sections for hands-on experience, adding infrastructure, and deploying Azure services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868484/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Arc/azure-arc-portal-interface.jpg)
+![The image shows the Azure Arc portal interface, featuring options for managing infrastructure, services, and getting started with Azure Arc. It includes sections for hands-on experience, adding infrastructure, and deploying Azure services.](https://kodekloud.com/kk-media/image/upload/v1752868484/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Arc/azure-arc-portal-interface.jpg)
 
 ### Step 2: Add a Machine
 
@@ -59,7 +59,7 @@ Provide the necessary server details:
 * **Operating System:** Select Windows.
 * **Public Endpoint Details:** Enter the required public endpoint information.
 
-![The image shows a Microsoft Azure portal interface for adding a server with Azure Arc, where users can select project and server details, including subscription, resource group, region, and operating system. A dropdown menu is open for selecting a region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868486/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Arc/azure-portal-add-server-arc.jpg)
+![The image shows a Microsoft Azure portal interface for adding a server with Azure Arc, where users can select project and server details, including subscription, resource group, region, and operating system. A dropdown menu is open for selecting a region.](https://kodekloud.com/kk-media/image/upload/v1752868486/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Arc/azure-portal-add-server-arc.jpg)
 
 ### Step 4: Generate and Download the Onboarding Script
 
@@ -93,7 +93,7 @@ try {
 
 Download this script, transfer it to your Windows server (via Remote Desktop or another method), and execute it to install the Connected Machine Agent.
 
-![The image shows the Server Manager interface on a Windows Server, displaying details about the local server, including properties, events, and services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868488/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Arc/server-manager-windows-server-interface.jpg)
+![The image shows the Server Manager interface on a Windows Server, displaying details about the local server, including properties, events, and services.](https://kodekloud.com/kk-media/image/upload/v1752868488/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Arc/server-manager-windows-server-interface.jpg)
 
 ### Step 5: Run the Onboarding Script
 
@@ -136,7 +136,7 @@ Once the script finishes, your Windows Server is successfully onboarded to Azure
 
 Return to the Azure Portal and navigate back to the Azure Arc section. Confirm that your server appears with its hostname and details. You can now manage policies, run commands, and view logs just like any Azure resource—even if the server resides on-premises.
 
-![The image shows the Microsoft Azure portal interface displaying details of a virtual machine named "WIN-QTKCNPQLV2M," including its status, operating system, and various configuration options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868489/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Arc/azure-portal-virtual-machine-details.jpg)
+![The image shows the Microsoft Azure portal interface displaying details of a virtual machine named "WIN-QTKCNPQLV2M," including its status, operating system, and various configuration options.](https://kodekloud.com/kk-media/image/upload/v1752868489/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Arc/azure-portal-virtual-machine-details.jpg)
 
 > **lightbulb** By onboarding your Windows Server to Azure Arc, you extend Azure's robust management, security, and compliance capabilities to your on-premises resources, simplifying hybrid and multi-cloud operations.
 

@@ -57,7 +57,7 @@ Examples include:
 * Mistral 7b
 * LLaMA 3
 
-![The image compares Large Language Models (LLMs) and Small Language Models (SLMs), highlighting differences in training data, parameters, capabilities, performance, and fine-tuning. Examples of each type are provided at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857014/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Large-and-Small-Language-Models/llm-vs-slm-comparison-diagram.jpg)
+![The image compares Large Language Models (LLMs) and Small Language Models (SLMs), highlighting differences in training data, parameters, capabilities, performance, and fine-tuning. Examples of each type are provided at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752857014/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Large-and-Small-Language-Models/llm-vs-slm-comparison-diagram.jpg)
 
 ### Small Language Models (SLMs)
 

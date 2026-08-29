@@ -240,7 +240,7 @@ In this article, we explore how Tabnine integrates with Visual Studio Code to bo
 
 Once installed, Tabnine adds its own bar to the interface along with additional options at the bottom. Unlike BlackboxAI, Tabnine allows you to select from various models for its chat interface. For example, you can opt for models such as Claude 3.5 Sonnet (ideal for programming), GPT 4.0, CodeStroll (available on [Hugging Face](https://huggingface.co/) and runnable locally), Command R+, Tabnine Protected, and Tabnine Plus Mistral. Models labeled as "private" or "protected" are designed to run within your private network, ensuring that your proprietary code remains confidential and is not used for training.
 
-![The image shows a Visual Studio Code interface with a Tabnine AI chat extension open, displaying options for different AI models and their descriptions. The main workspace is dark with a large VS Code logo in the center.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857085/notes-assets/images/AI-Assisted-Development-A-Quick-Look-Tabnine/vscode-tabnine-ai-chat-interface.jpg)
+![The image shows a Visual Studio Code interface with a Tabnine AI chat extension open, displaying options for different AI models and their descriptions. The main workspace is dark with a large VS Code logo in the center.](https://kodekloud.com/kk-media/image/upload/v1752857085/notes-assets/images/AI-Assisted-Development-A-Quick-Look-Tabnine/vscode-tabnine-ai-chat-interface.jpg)
 
 ## Creating a "Hello, World!" Python Application
 
@@ -248,7 +248,7 @@ Once installed, Tabnine adds its own bar to the interface along with additional 
 
 To demonstrate Tabnine's capabilities, we will scaffold a basic "Hello, World!" Python project. Instead of merely creating a script, we'll instruct Tabnine to generate a fully structured project using the term "scaffold" to enforce best practices. When you select a model—for instance, GPT 4.0—a legal terms popup will appear that you must acknowledge before proceeding.
 
-![The image shows a dark-themed interface of a code editor with a pop-up window titled "Selected model - GPT-4o," prompting the user to approve legal terms. The background displays the Visual Studio Code logo and some shortcut commands.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857086/notes-assets/images/AI-Assisted-Development-A-Quick-Look-Tabnine/dark-code-editor-gpt4o-popup.jpg)
+![The image shows a dark-themed interface of a code editor with a pop-up window titled "Selected model - GPT-4o," prompting the user to approve legal terms. The background displays the Visual Studio Code logo and some shortcut commands.](https://kodekloud.com/kk-media/image/upload/v1752857086/notes-assets/images/AI-Assisted-Development-A-Quick-Look-Tabnine/dark-code-editor-gpt4o-popup.jpg)
 
 After acknowledging, the coding companion interface will open. You can then pose a prompt such as:
 

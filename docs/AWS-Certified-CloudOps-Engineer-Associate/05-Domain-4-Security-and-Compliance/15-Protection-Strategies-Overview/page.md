@@ -12,9 +12,9 @@ At the heart of AWS security is Identity and Access Management (IAM). IAM contro
 
 IAM policies protect users, groups, roles, and AWS services, while additional measures like Multi-Factor Authentication (MFA) and the principle of least privilege further strengthen security.
 
-![The image illustrates components of Identity and Access Management (IAM), including IAM Policies, Permissions, Users, Roles, and Services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860585/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Protection-Strategies-Overview/iam-components-policies-permissions.jpg)
+![The image illustrates components of Identity and Access Management (IAM), including IAM Policies, Permissions, Users, Roles, and Services.](https://kodekloud.com/kk-media/image/upload/v1752860585/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Protection-Strategies-Overview/iam-components-policies-permissions.jpg)
 
-![The image illustrates key components of Identity and Access Management (IAM), including IAM Policies, Multi-Factor Authentication (MFA), and the Least Privilege Principle, with a note on enforcing MFA for privileged accounts to enhance security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860587/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Protection-Strategies-Overview/iam-components-mfa-least-privilege.jpg)
+![The image illustrates key components of Identity and Access Management (IAM), including IAM Policies, Multi-Factor Authentication (MFA), and the Least Privilege Principle, with a note on enforcing MFA for privileged accounts to enhance security.](https://kodekloud.com/kk-media/image/upload/v1752860587/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Protection-Strategies-Overview/iam-components-mfa-least-privilege.jpg)
 
 > **lightbulb** All AWS security controls start with a correctly configured IAM setup.
 
@@ -27,7 +27,7 @@ AWS network security is built upon the Virtual Private Cloud (VPC) construct, wh
 
 These components integrate with connectivity options like VPNs, VPC peering, and transit gateways to form a robust and secure network architecture.
 
-![The image is a diagram illustrating network security within a Virtual Private Cloud (VPC) setup, showing components like public subnets, security groups, network access control lists (NACLs), and connections to AWS Managed VPN and peering.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860589/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Protection-Strategies-Overview/vpc-network-security-diagram.jpg)
+![The image is a diagram illustrating network security within a Virtual Private Cloud (VPC) setup, showing components like public subnets, security groups, network access control lists (NACLs), and connections to AWS Managed VPN and peering.](https://kodekloud.com/kk-media/image/upload/v1752860589/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Protection-Strategies-Overview/vpc-network-security-diagram.jpg)
 
 ## Data Protection Strategies
 
@@ -52,7 +52,7 @@ Effective monitoring and logging are crucial for identifying and addressing secu
 
 These services, along with continuous threat detection via GuardDuty, provide a strong security monitoring framework.
 
-![The image lists four AWS monitoring and logging services: AWS CloudTrail, Amazon CloudWatch, AWS Config, and Flow Logs, each with a brief description of their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860590/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Protection-Strategies-Overview/aws-monitoring-logging-services.jpg)
+![The image lists four AWS monitoring and logging services: AWS CloudTrail, Amazon CloudWatch, AWS Config, and Flow Logs, each with a brief description of their functions.](https://kodekloud.com/kk-media/image/upload/v1752860590/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Protection-Strategies-Overview/aws-monitoring-logging-services.jpg)
 
 ## Application Security
 
@@ -63,7 +63,7 @@ AWS addresses application-level security through a range of dedicated services:
 * **Web Application Firewall (WAF):** Guards against common web exploits such as SQL injection and cross-site scripting by using custom rules.
 * **Inspector:** Automates vulnerability assessments for applications, Lambda functions, containers, and virtual machines.
 
-![The image describes three AWS application security services: AWS Shield for DDoS protection, AWS WAF for defending against DDoS at network and application layers, and Amazon Inspector for automating vulnerability scans.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860591/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Protection-Strategies-Overview/aws-security-services-shield-waf-inspector.jpg)
+![The image describes three AWS application security services: AWS Shield for DDoS protection, AWS WAF for defending against DDoS at network and application layers, and Amazon Inspector for automating vulnerability scans.](https://kodekloud.com/kk-media/image/upload/v1752860591/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Protection-Strategies-Overview/aws-security-services-shield-waf-inspector.jpg)
 
 ## Resiliency and Recovery
 
@@ -75,15 +75,15 @@ AWS provides a highly resilient infrastructure with powerful recovery features:
 
 Moreover, AWS Organizations, AWS Security Hub, and AWS Artifact facilitate compliance and governance throughout your cloud environment.
 
-![The image illustrates concepts related to resilience and disaster recovery in AWS, featuring AWS Backup, Multi-AZ and Multi-Region Architectures, and S3 Versioning and Object Lock.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860593/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Protection-Strategies-Overview/aws-resilience-disaster-recovery-diagram.jpg)
+![The image illustrates concepts related to resilience and disaster recovery in AWS, featuring AWS Backup, Multi-AZ and Multi-Region Architectures, and S3 Versioning and Object Lock.](https://kodekloud.com/kk-media/image/upload/v1752860593/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Protection-Strategies-Overview/aws-resilience-disaster-recovery-diagram.jpg)
 
-![The image illustrates three AWS services related to compliance and governance: AWS Organizations, AWS Security Hub, and AWS Artifact, each with a brief description of their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860594/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Protection-Strategies-Overview/aws-compliance-governance-services.jpg)
+![The image illustrates three AWS services related to compliance and governance: AWS Organizations, AWS Security Hub, and AWS Artifact, each with a brief description of their functions.](https://kodekloud.com/kk-media/image/upload/v1752860594/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Protection-Strategies-Overview/aws-compliance-governance-services.jpg)
 
 ## Additional Security Strategies
 
 Beyond the core protection mechanisms, AWS supports a wide array of security strategies. Regular vulnerability assessments, patch management, and security awareness training are vital complements to AWS security services. Although AWS does not provide security awareness training, integrating such programs into your overall security plan is highly recommended.
 
-![The image outlines additional security strategies, including using AWS security services, conducting regular security assessments, providing security awareness training, and managing patches. It features a central brain graphic with these strategies listed around it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860596/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Protection-Strategies-Overview/aws-security-strategies-diagram.jpg)
+![The image outlines additional security strategies, including using AWS security services, conducting regular security assessments, providing security awareness training, and managing patches. It features a central brain graphic with these strategies listed around it.](https://kodekloud.com/kk-media/image/upload/v1752860596/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Protection-Strategies-Overview/aws-security-strategies-diagram.jpg)
 
 ## Conclusion
 

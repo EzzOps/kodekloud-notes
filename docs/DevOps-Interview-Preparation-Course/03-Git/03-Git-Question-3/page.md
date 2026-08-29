@@ -10,17 +10,13 @@ In this article, we explore the concept of branch protection in GitHub—an esse
 
 Consider a typical GitHub repository with a master (or main) branch accompanied by one or more working branches. When you commit changes (e.g., "change 01" and "change 02") in a working branch, you then open a pull request (PR) to merge these changes into the master branch. However, merging PRs without review is prevented by branch protection, ensuring that every change undergoes the necessary validation.
 
-<Frame>
-  ![The image illustrates a Git workflow, showing the relationship between a repository's master/main branch and a working branch, including steps like making changes, creating a pull request, and merging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752873352/notes-assets/images/DevOps-Interview-Preparation-Course-Git-Question-3/git-workflow-repository-branches-diagram.jpg)
-</Frame>
+![The image illustrates a Git workflow, showing the relationship between a repository's master/main branch and a working branch, including steps like making changes, creating a pull request, and merging.](https://kodekloud.com/kk-media/image/upload/v1752873352/notes-assets/images/DevOps-Interview-Preparation-Course-Git-Question-3/git-workflow-repository-branches-diagram.jpg)
 
 ## What is Branch Protection?
 
 Branch protection is a mechanism that isn’t enabled by default. Organizations must actively configure branch protection rules to prevent direct merges that bypass the review process. Without these safeguards, users with write access could merge changes into the master branch without proper scrutiny—a practice most companies wish to avoid.
 
-<Callout icon="lightbulb">
-  Branch protection rules require that pull requests meet specific criteria—such as reviews and passing status checks—before they are merged. This ensures that only thoroughly vetted changes make it into your production code.
-</Callout>
+> **lightbulb** Branch protection rules require that pull requests meet specific criteria—such as reviews and passing status checks—before they are merged. This ensures that only thoroughly vetted changes make it into your production code.
 
 ## How to Enable Branch Protection
 
@@ -34,15 +30,11 @@ To activate branch protection, follow these steps:
    * Enforcing status checks.
    * Requiring signed commits.
 
-<Frame>
-  ![The image shows a GitHub settings page for configuring branch protection rules, with options like requiring pull requests before merging and requiring status checks to pass.](../../../../images/kodekloud.com/kk-media/image/upload/v1752873354/notes-assets/images/DevOps-Interview-Preparation-Course-Git-Question-3/github-branch-protection-settings.jpg)
-</Frame>
+![The image shows a GitHub settings page for configuring branch protection rules, with options like requiring pull requests before merging and requiring status checks to pass.](https://kodekloud.com/kk-media/image/upload/v1752873354/notes-assets/images/DevOps-Interview-Preparation-Course-Git-Question-3/github-branch-protection-settings.jpg)
 
 Once these rules are in place, every PR must adhere to them, ensuring that only verified code contributes to the production-ready branch.
 
-<Frame>
-  ![The image shows a GitHub settings page for configuring branch protection rules, with options for requiring pull requests, status checks, conversation resolution, and signed commits before merging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752873355/notes-assets/images/DevOps-Interview-Preparation-Course-Git-Question-3/github-branch-protection-settings-2.jpg)
-</Frame>
+![The image shows a GitHub settings page for configuring branch protection rules, with options for requiring pull requests, status checks, conversation resolution, and signed commits before merging.](https://kodekloud.com/kk-media/image/upload/v1752873355/notes-assets/images/DevOps-Interview-Preparation-Course-Git-Question-3/github-branch-protection-settings-2.jpg)
 
 ## The Importance of Branch Protection
 
@@ -54,9 +46,7 @@ Ultimately, branch protection serves as a vital component of modern software dev
 
 Without these rules, code changes could be merged without sufficient oversight, potentially introducing bugs or inconsistencies into the production codebase.
 
-<Callout icon="triangle-alert">
-  Failing to implement branch protection can lead to security vulnerabilities and unstable code deployments. It is critical to enforce these rules as part of your development workflow.
-</Callout>
+> **triangle-alert** Failing to implement branch protection can lead to security vulnerabilities and unstable code deployments. It is critical to enforce these rules as part of your development workflow.
 
 ## Conclusion
 
@@ -66,6 +56,4 @@ For more technical insights and detailed guidance on collaborative development p
 
 Thank you for reading, and stay tuned for more in-depth articles on best practices in collaborative software development.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/devops-interview-preparation-course/module/4edc26e9-82be-4ac9-a2bf-bf09a6c3bb98/lesson/2606d058-ba96-4bcf-b46a-0d712ed61771" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/devops-interview-preparation-course/module/4edc26e9-82be-4ac9-a2bf-bf09a6c3bb98/lesson/2606d058-ba96-4bcf-b46a-0d712ed61771)

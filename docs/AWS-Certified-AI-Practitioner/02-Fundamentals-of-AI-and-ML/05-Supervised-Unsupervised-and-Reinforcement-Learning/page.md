@@ -26,15 +26,15 @@ Supervised learning involves training a model on a dataset that includes both in
 
 > **lightbulb** Supervised learning relies heavily on high-quality labeled data. More examples typically improve accuracy, especially in complex tasks such as spam detection.
 
-![The image illustrates a concept of supervised learning, showing labeled data for "Cat" and "Dog" being used to train a model.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857454/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/supervised-learning-labeled-data.jpg)
+![The image illustrates a concept of supervised learning, showing labeled data for "Cat" and "Dog" being used to train a model.](https://kodekloud.com/kk-media/image/upload/v1752857454/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/supervised-learning-labeled-data.jpg)
 
 Spam detection systems may require millions of labeled emails to achieve high precision and low false positives.
 
-![The image illustrates a computer screen with envelopes and exclamation marks, representing email spam detection in a supervised learning context.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857456/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/email-spam-detection-supervised-learning.jpg)
+![The image illustrates a computer screen with envelopes and exclamation marks, representing email spam detection in a supervised learning context.](https://kodekloud.com/kk-media/image/upload/v1752857456/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/email-spam-detection-supervised-learning.jpg)
 
 In the financial domain, supervised learning is the backbone of credit scoring systems, where risk is assessed using attributes like income, credit history, and employment status.
 
-![The image illustrates a computer screen displaying a credit score gauge, representing a supervised learning example in financial institutions. It includes icons of a clock and a dollar sign, with coins at the base of the screen.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857457/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/credit-score-gauge-supervised-learning.jpg)
+![The image illustrates a computer screen displaying a credit score gauge, representing a supervised learning example in financial institutions. It includes icons of a clock and a dollar sign, with coins at the base of the screen.](https://kodekloud.com/kk-media/image/upload/v1752857457/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/credit-score-gauge-supervised-learning.jpg)
 
 ***
 
@@ -48,15 +48,15 @@ Key use cases include:
 * **Customer Segmentation:** Dividing consumers into distinct groups like "Budget-Conscious" and "Premium Buyers" based on purchasing behavior.
 * **Anomaly Detection:** Identifying unusual patterns in network traffic or system operations which may indicate security breaches or faults.
 
-![The image illustrates a diagram of unsupervised learning, showing an input of various animal images processed by a model, resulting in an output of grouped images.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857457/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/unsupervised-learning-animal-images-diagram.jpg)
+![The image illustrates a diagram of unsupervised learning, showing an input of various animal images processed by a model, resulting in an output of grouped images.](https://kodekloud.com/kk-media/image/upload/v1752857457/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/unsupervised-learning-animal-images-diagram.jpg)
 
 Unsupervised techniques enable businesses to tailor marketing strategies or adjust operational parameters by analyzing data clusters.
 
-![The image illustrates an example of unsupervised learning for customer segmentation in marketing, dividing customers into "Budget-Conscious" and "Premium Buyers" groups. Each group contains icons representing individual customers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857458/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/unsupervised-learning-customer-segmentation.jpg)
+![The image illustrates an example of unsupervised learning for customer segmentation in marketing, dividing customers into "Budget-Conscious" and "Premium Buyers" groups. Each group contains icons representing individual customers.](https://kodekloud.com/kk-media/image/upload/v1752857458/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/unsupervised-learning-customer-segmentation.jpg)
 
 For cybersecurity, unsupervised learning algorithms can analyze network data to detect anomalies that may represent cyber threats.
 
-![The image shows a graph related to anomaly detection in cybersecurity, with a menu highlighting options like "Anomaly Detection" and a line chart displaying data over time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857460/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/anomaly-detection-cybersecurity-graph.jpg)
+![The image shows a graph related to anomaly detection in cybersecurity, with a menu highlighting options like "Anomaly Detection" and a line chart displaying data over time.](https://kodekloud.com/kk-media/image/upload/v1752857460/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/anomaly-detection-cybersecurity-graph.jpg)
 
 ***
 
@@ -73,19 +73,19 @@ Practical applications include:
 
 > **triangle-alert** When deploying reinforcement learning, carefully monitor the feedback loop to balance exploration and exploitation, ensuring that the agent does not adopt suboptimal strategies.
 
-![The image describes three types of machine learning: supervised learning, unsupervised learning, and reinforcement learning, each with a brief explanation and example.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857461/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/machine-learning-types-explained.jpg)
+![The image describes three types of machine learning: supervised learning, unsupervised learning, and reinforcement learning, each with a brief explanation and example.](https://kodekloud.com/kk-media/image/upload/v1752857461/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/machine-learning-types-explained.jpg)
 
 A recommendation system, like those used by streaming services, adjusts its algorithm by learning from user feedback such as ratings and viewing time.
 
-![The image shows a Netflix interface with personalized recommendations, highlighting categories like "Top Picks," "Trending Now," and "New Releases." It illustrates the use of reinforcement learning for streaming service recommendations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857462/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/netflix-recommendations-interface-diagram.jpg)
+![The image shows a Netflix interface with personalized recommendations, highlighting categories like "Top Picks," "Trending Now," and "New Releases." It illustrates the use of reinforcement learning for streaming service recommendations.](https://kodekloud.com/kk-media/image/upload/v1752857462/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/netflix-recommendations-interface-diagram.jpg)
 
 In smart cities, reinforcement learning algorithms optimize traffic signals by processing live data, ultimately increasing traffic efficiency and reducing delays.
 
-![The image illustrates a concept of traffic light optimization using AI in smart cities, featuring a car and a bus at a traffic light with digital connectivity elements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857464/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/traffic-light-optimization-ai-smart-cities.jpg)
+![The image illustrates a concept of traffic light optimization using AI in smart cities, featuring a car and a bus at a traffic light with digital connectivity elements.](https://kodekloud.com/kk-media/image/upload/v1752857464/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/traffic-light-optimization-ai-smart-cities.jpg)
 
 The following diagram depicts the reinforcement learning process, showing how an agent takes actions, observes state changes, and refines its policy based on received rewards or penalties.
 
-![The image is a diagram illustrating the concept of reinforcement learning, showing the interaction between an agent's policy, learning algorithm, and environment. It highlights the flow of actions, state changes, and policy updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857465/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/reinforcement-learning-diagram-agent-policy.jpg)
+![The image is a diagram illustrating the concept of reinforcement learning, showing the interaction between an agent's policy, learning algorithm, and environment. It highlights the flow of actions, state changes, and policy updates.](https://kodekloud.com/kk-media/image/upload/v1752857465/notes-assets/images/AWS-Certified-AI-Practitioner-Supervised-Unsupervised-and-Reinforcement-Learning/reinforcement-learning-diagram-agent-policy.jpg)
 
 ***
 

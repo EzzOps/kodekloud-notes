@@ -60,9 +60,7 @@ Example console output (model wording will vary):
 The Godfather is widely regarded as one of the greatest films in cinematic history, known for its iconic performances, memorable quotes, and intricate storytelling. It won multiple Academy Awards, including Best Picture, and has had a significant impact on popular culture.
 ```
 
-<Callout icon="lightbulb">
-  `StrOutputParser` simply returns the LLM response as a plain Python string.
-</Callout>
+> **lightbulb** `StrOutputParser` simply returns the LLM response as a plain Python string.
 
 ## 4 — Inspecting input and output schemas
 
@@ -208,6 +206,4 @@ Further reading:
 * LangChain Core docs: [https://python.langchain.com/en/latest/](https://python.langchain.com/en/latest/)
 * LLM integration (OpenAI) docs: [https://python.langchain.com/en/latest/modules/llms/integrations/openai.html](https://python.langchain.com/en/latest/modules/llms/integrations/openai.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/add69dd3-2805-44d2-b67f-5198effe7e2b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/add69dd3-2805-44d2-b67f-5198effe7e2b)

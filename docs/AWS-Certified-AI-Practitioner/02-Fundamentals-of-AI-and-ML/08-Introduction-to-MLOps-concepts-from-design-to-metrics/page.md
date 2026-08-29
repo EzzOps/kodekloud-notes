@@ -12,7 +12,7 @@ Welcome to this detailed lesson on Machine Learning Operations (MLOps). In this 
 
 MLOps mirrors the traditional software development lifecycle while adapting to the unique needs of machine learning. The process begins with gathering data, problem analysis, and model development. It then progresses to model verification, packaging, release, configuration, hyperparameter tuning, inferencing, and live system monitoring. If performance deviations are detected during monitoring, the model is retrained with new data.
 
-![The image illustrates MLOps concepts, showing a cycle of processes in three sections: ML (Model and Data), DEV (Create, Verify, Plan, Package), and OPS (Release, Configure, Monitor).](../../../../images/kodekloud.com/kk-media/image/upload/v1752857376/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/mlops-concepts-cycle-diagram.jpg)
+![The image illustrates MLOps concepts, showing a cycle of processes in three sections: ML (Model and Data), DEV (Create, Verify, Plan, Package), and OPS (Release, Configure, Monitor).](https://kodekloud.com/kk-media/image/upload/v1752857376/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/mlops-concepts-cycle-diagram.jpg)
 
 This iterative approach unites data scientists, developers, and operations teams, leveraging CI/CD practices to automate deployment, monitoring, and model updates.
 
@@ -22,7 +22,7 @@ This iterative approach unites data scientists, developers, and operations teams
 
 MLOps pipelines automate all phases of the machine learning workflow—including data collection, model training, validation, testing, deployment, evaluation, and continuous monitoring. For instance, Amazon SageMaker Pipelines employs a CI/CD-style methodology to streamline these processes. Moreover, tools like [Apache Airflow](https://airflow.apache.org/) (or its managed AWS service) enable the orchestration of complex data processing tasks.
 
-![The image illustrates the design of an MLOps pipeline, featuring interconnected elements labeled ML, DEV, and OPS, alongside icons for Amazon SageMaker and Apache Airflow, which are used to orchestrate complex workflows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857377/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/mlops-pipeline-design-sagemaker-airflow.jpg)
+![The image illustrates the design of an MLOps pipeline, featuring interconnected elements labeled ML, DEV, and OPS, alongside icons for Amazon SageMaker and Apache Airflow, which are used to orchestrate complex workflows.](https://kodekloud.com/kk-media/image/upload/v1752857377/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/mlops-pipeline-design-sagemaker-airflow.jpg)
 
 > **lightbulb** Automated pipelines free up data scientists to focus on experimentation and model optimization, rather than on the underlying orchestration and integration challenges.
 
@@ -40,15 +40,15 @@ A critical aspect of MLOps is the setup of reliable infrastructure and robust ve
 
 The diagram below illustrates how these components work together to deploy a model artifact into production:
 
-![The image is a diagram illustrating the infrastructure as code in MLOps using AWS services, showing the flow from pipeline provisioning to real-time inference with components like Amazon S3, AWS Lambda, and Amazon SageMaker.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857379/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/mlops-infrastructure-as-code-aws-diagram.jpg)
+![The image is a diagram illustrating the infrastructure as code in MLOps using AWS services, showing the flow from pipeline provisioning to real-time inference with components like Amazon S3, AWS Lambda, and Amazon SageMaker.](https://kodekloud.com/kk-media/image/upload/v1752857379/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/mlops-infrastructure-as-code-aws-diagram.jpg)
 
 Version control is indispensable for tracking changes in code, data, and models, ensuring reproducibility and enabling rollbacks when necessary. Although [AWS CodeCommit](https://aws.amazon.com/codecommit/) is available for legacy support, integration with [GitHub](https://github.com) or [GitLab](https://gitlab.com) is now recommended.
 
-![The image illustrates the concept of version control in MLOps, highlighting features like tracking code, data, and models, enabling reverting and auditing, and ensuring reproducibility. It includes a screenshot of a commit visualizer from a repository interface.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857380/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/mlops-version-control-diagram.jpg)
+![The image illustrates the concept of version control in MLOps, highlighting features like tracking code, data, and models, enabling reverting and auditing, and ensuring reproducibility. It includes a screenshot of a commit visualizer from a repository interface.](https://kodekloud.com/kk-media/image/upload/v1752857380/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/mlops-version-control-diagram.jpg)
 
 Additionally, the Amazon SageMaker Model Registry helps track and version models similarly to traditional code repositories. It provides insights into training duration, success rates, and overall performance, which enhances model testing and validation.
 
-![The image shows a screenshot of Amazon SageMaker Studio, displaying a pipeline for automating model training and deployment. It includes a flowchart with steps like processing, training, evaluation, and model registration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857381/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/amazon-sagemaker-studio-pipeline.jpg)
+![The image shows a screenshot of Amazon SageMaker Studio, displaying a pipeline for automating model training and deployment. It includes a flowchart with steps like processing, training, evaluation, and model registration.](https://kodekloud.com/kk-media/image/upload/v1752857381/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/amazon-sagemaker-studio-pipeline.jpg)
 
 ***
 
@@ -56,7 +56,7 @@ Additionally, the Amazon SageMaker Model Registry helps track and version models
 
 Continuous monitoring is vital to ensure models perform as expected over time. Tools such as [Amazon CloudWatch](https://learn.kodekloud.com/user/courses/aws-cloudwatch) and [SageMaker Model Monitor](https://aws.amazon.com/sagemaker/model-monitor/) track performance metrics like error rate, latency, and accuracy. When these metrics exceed predefined thresholds, automated retraining is initiated to update the model with new data.
 
-![The image illustrates a dashboard for monitoring and retraining machine learning models, highlighting continuous monitoring, tracking of accuracy, latency, and errors, and automatic retraining triggered by performance degradation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857383/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/ml-model-monitoring-dashboard.jpg)
+![The image illustrates a dashboard for monitoring and retraining machine learning models, highlighting continuous monitoring, tracking of accuracy, latency, and errors, and automatic retraining triggered by performance degradation.](https://kodekloud.com/kk-media/image/upload/v1752857383/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/ml-model-monitoring-dashboard.jpg)
 
 > **triangle-alert** Ensure that the thresholds for triggering retraining are carefully set to avoid unnecessary model updates or performance degradation.
 
@@ -96,7 +96,7 @@ Furthermore, [CloudTrail](https://aws.amazon.com/cloudtrail/) logs API calls and
 }
 ```
 
-![The image outlines the importance of compliance and auditability in MLOps, highlighting documented ML lifecycle steps, tracking model training, supporting regulated industries, and demonstrating regulatory compliance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857383/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/mlops-compliance-auditability-diagram.jpg)
+![The image outlines the importance of compliance and auditability in MLOps, highlighting documented ML lifecycle steps, tracking model training, supporting regulated industries, and demonstrating regulatory compliance.](https://kodekloud.com/kk-media/image/upload/v1752857383/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/mlops-compliance-auditability-diagram.jpg)
 
 ***
 
@@ -104,15 +104,15 @@ Furthermore, [CloudTrail](https://aws.amazon.com/cloudtrail/) logs API calls and
 
 Improving model quality is an iterative process that involves rigorous experimentation, performance tracking, and bias detection. Amazon SageMaker Studio provides an integrated development environment for experimenting with models and analyzing a variety of metrics, including class imbalance and divergence.
 
-![The image shows a screenshot of Amazon SageMaker Studio, focusing on a bias report for a machine learning model, with metrics like Class Imbalance and Kullback-Leibler Divergence. The title "Improving Model Quality With MLOps" suggests the context of enhancing model performance using MLOps practices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857385/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/amazon-sagemaker-bias-report-mlops.jpg)
+![The image shows a screenshot of Amazon SageMaker Studio, focusing on a bias report for a machine learning model, with metrics like Class Imbalance and Kullback-Leibler Divergence. The title "Improving Model Quality With MLOps" suggests the context of enhancing model performance using MLOps practices.](https://kodekloud.com/kk-media/image/upload/v1752857385/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/amazon-sagemaker-bias-report-mlops.jpg)
 
 SageMaker Clarify further enhances model transparency by monitoring fairness and bias, thereby ensuring predictions are both accurate and equitable.
 
-![The image is about improving model quality with MLOps using Amazon SageMaker Clarify, which monitors fairness and bias to ensure models are accurate and equitable.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857386/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/mlops-amazon-sagemaker-clarify.jpg)
+![The image is about improving model quality with MLOps using Amazon SageMaker Clarify, which monitors fairness and bias to ensure models are accurate and equitable.](https://kodekloud.com/kk-media/image/upload/v1752857386/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/mlops-amazon-sagemaker-clarify.jpg)
 
 Amazon SageMaker Pipelines also integrates with tools like Git and [CloudWatch](https://learn.kodekloud.com/user/courses/aws-cloudwatch), and offers workflow visualization. While [AWS CodeCommit](https://aws.amazon.com/codecommit/) remains an option for legacy systems, newer solutions favor integrations with popular Git platforms.
 
-![The image lists four features of Amazon SageMaker Pipelines: end-to-end automation, flexible pipeline definition, workflow visualization, and seamless integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857388/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/amazon-sagemaker-pipelines-features.jpg)
+![The image lists four features of Amazon SageMaker Pipelines: end-to-end automation, flexible pipeline definition, workflow visualization, and seamless integration.](https://kodekloud.com/kk-media/image/upload/v1752857388/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/amazon-sagemaker-pipelines-features.jpg)
 
 ***
 
@@ -134,21 +134,21 @@ Analyzing model performance is essential to validating and refining your machine
 
 * **Confusion Matrix**
 
-![The image is a diagram of a confusion matrix used for evaluating machine learning models, showing true positives, false positives, false negatives, and true negatives. It also highlights its use in summarizing model predictions versus actual outcomes and identifying errors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857389/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/confusion-matrix-evaluation-diagram.jpg)
+![The image is a diagram of a confusion matrix used for evaluating machine learning models, showing true positives, false positives, false negatives, and true negatives. It also highlights its use in summarizing model predictions versus actual outcomes and identifying errors.](https://kodekloud.com/kk-media/image/upload/v1752857389/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/confusion-matrix-evaluation-diagram.jpg)
 
 * **Precision, Recall, and F1 Score**
 
-![The image illustrates model performance metrics with a Venn diagram showing precision and recall, both labeled as 0.8, and a description highlighting the importance of recall in capturing actual positives for medical diagnoses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857390/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/venn-diagram-precision-recall-metrics.jpg)
+![The image illustrates model performance metrics with a Venn diagram showing precision and recall, both labeled as 0.8, and a description highlighting the importance of recall in capturing actual positives for medical diagnoses.](https://kodekloud.com/kk-media/image/upload/v1752857390/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/venn-diagram-precision-recall-metrics.jpg)
 
-![The image illustrates model performance metrics using a Venn diagram to show precision and recall, both at 0.8, and explains the F1 score as a balance between precision and recall.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857391/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/venn-diagram-precision-recall-f1.jpg)
+![The image illustrates model performance metrics using a Venn diagram to show precision and recall, both at 0.8, and explains the F1 score as a balance between precision and recall.](https://kodekloud.com/kk-media/image/upload/v1752857391/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/venn-diagram-precision-recall-f1.jpg)
 
 * **AUC and ROC Curve**
 
-![The image illustrates the concept of Area Under the Curve (AUC) for binary classification, showing a ROC curve with True Positive Rate (TPR) and False Positive Rate (FPR) axes. It explains that AUC evaluates model performance, ranging from 0.5 (random guessing) to 1 (perfect prediction).](../../../../images/kodekloud.com/kk-media/image/upload/v1752857393/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/auc-roc-curve-binary-classification.jpg)
+![The image illustrates the concept of Area Under the Curve (AUC) for binary classification, showing a ROC curve with True Positive Rate (TPR) and False Positive Rate (FPR) axes. It explains that AUC evaluates model performance, ranging from 0.5 (random guessing) to 1 (perfect prediction).](https://kodekloud.com/kk-media/image/upload/v1752857393/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/auc-roc-curve-binary-classification.jpg)
 
 * **Mean Squared Error (MSE)/RMSE**
 
-![The image explains the concept of Mean Squared Error (MSE) in regression models, highlighting its role in evaluating models, calculating error squares, indicating prediction accuracy, and emphasizing sensitivity to large errors and outliers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857394/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/mean-squared-error-regression-explained.jpg)
+![The image explains the concept of Mean Squared Error (MSE) in regression models, highlighting its role in evaluating models, calculating error squares, indicating prediction accuracy, and emphasizing sensitivity to large errors and outliers.](https://kodekloud.com/kk-media/image/upload/v1752857394/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/mean-squared-error-regression-explained.jpg)
 
 Other business metrics—including cost savings, revenue improvements, and customer satisfaction (CSAT)—should be aligned with technical performance to fully assess the return on investment of machine learning initiatives.
 
@@ -164,7 +164,7 @@ MLOps leverages a range of AWS and third-party tools to support model lifecycle 
 * **Serverless Orchestration:**\
   [AWS Step Functions](https://aws.amazon.com/step-functions/) orchestrate serverless workflows, seamlessly integrating with Lambda functions and automating data processing pipelines.
 
-![The image displays icons and names of AWS tools for MLOps, including Amazon SageMaker, AWS CodeCommit, AWS Step Functions, Amazon CloudWatch, and Amazon SageMaker Model Monitor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857395/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/aws-mlops-tools-icons.jpg)
+![The image displays icons and names of AWS tools for MLOps, including Amazon SageMaker, AWS CodeCommit, AWS Step Functions, Amazon CloudWatch, and Amazon SageMaker Model Monitor.](https://kodekloud.com/kk-media/image/upload/v1752857395/notes-assets/images/AWS-Certified-AI-Practitioner-Introduction-to-MLOps-concepts-from-design-to-metrics/aws-mlops-tools-icons.jpg)
 
 These tools, when combined, form a comprehensive framework for monitoring, maintaining, and continuously improving your machine learning models.
 

@@ -8,9 +8,7 @@ In this lesson, you will learn how to configure Linux systems to start network s
 
 A crucial program for managing network connectivity is NetworkManager. If NetworkManager does not start automatically, your network configuration may fail, preventing essential services from initializing correctly.
 
-<Callout icon="lightbulb">
-  Ensure you use an uppercase "N" and "M" when referencing NetworkManager.
-</Callout>
+> **lightbulb** Ensure you use an uppercase "N" and "M" when referencing NetworkManager.
 
 ## Check the NetworkManager Service Status
 
@@ -69,6 +67,4 @@ This configuration ensures that the specified network connection automatically i
 
 This concludes the lesson on configuring network services to start automatically at boot. For further details, consider exploring [NetworkManager Documentation](https://developer.gnome.org/NetworkManager/stable/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5f16da06-6c71-4058-bfc5-6f4dd8754e9f/lesson/a192226e-efe0-46aa-b980-82293ae90ff3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5f16da06-6c71-4058-bfc5-6f4dd8754e9f/lesson/a192226e-efe0-46aa-b980-82293ae90ff3)

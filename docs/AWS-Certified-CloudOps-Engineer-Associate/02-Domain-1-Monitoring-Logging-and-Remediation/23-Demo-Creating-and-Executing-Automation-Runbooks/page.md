@@ -10,7 +10,7 @@ Welcome to our SSM Automation tutorial. In this lesson, Michael Forrester demons
 
 The CloudFormation template provisions several key resources, including the EC2 instance, the instance profile, and the necessary IAM roles. The instance is configured to run the latest Amazon Linux 2 AMI and ensures that the SSM agent is properly installed and running.
 
-![The image shows an AWS CloudFormation dashboard displaying stack details and events for "SSM-Automation-Demo," with various statuses like "CREATE\_COMPLETE" and "CREATE\_IN\_PROGRESS."](../../../../images/kodekloud.com/kk-media/image/upload/v1752859897/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Creating-and-Executing-Automation-Runbooks/aws-cloudformation-ssm-automation-dashboard.jpg)
+![The image shows an AWS CloudFormation dashboard displaying stack details and events for "SSM-Automation-Demo," with various statuses like "CREATE\_COMPLETE" and "CREATE\_IN\_PROGRESS."](https://kodekloud.com/kk-media/image/upload/v1752859897/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Creating-and-Executing-Automation-Runbooks/aws-cloudformation-ssm-automation-dashboard.jpg)
 
 Below is an excerpt of the CloudFormation template:
 
@@ -139,11 +139,11 @@ AutomationServiceRole:
 
 Once the instance and IAM roles are provisioned through CloudFormation, the next step is to work within AWS Systems Manager. Navigate to the Documents section under Change Management Tools to create a custom automation document.
 
-![The image shows a webpage for AWS Systems Manager, highlighting features and benefits for managing nodes at scale. It includes navigation options on the left and sections for benefits, use cases, and resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859898/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Creating-and-Executing-Automation-Runbooks/aws-systems-manager-webpage-features.jpg)
+![The image shows a webpage for AWS Systems Manager, highlighting features and benefits for managing nodes at scale. It includes navigation options on the left and sections for benefits, use cases, and resources.](https://kodekloud.com/kk-media/image/upload/v1752859898/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Creating-and-Executing-Automation-Runbooks/aws-systems-manager-webpage-features.jpg)
 
 Click on Documents and choose to create a new document with the Automation type. Follow the on-screen guide to start with automation runbooks.
 
-![The image shows an AWS interface for creating automation runbooks, featuring a "Getting started" guide with options to learn about components, review Amazon samples, and create custom runbooks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859899/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Creating-and-Executing-Automation-Runbooks/aws-automation-runbooks-interface.jpg)
+![The image shows an AWS interface for creating automation runbooks, featuring a "Getting started" guide with options to learn about components, review Amazon samples, and create custom runbooks.](https://kodekloud.com/kk-media/image/upload/v1752859899/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Creating-and-Executing-Automation-Runbooks/aws-automation-runbooks-interface.jpg)
 
 ## Designing the Automation Runbook
 
@@ -156,7 +156,7 @@ For this runbook, name it **StopSnapshotStartEC2Instance**. This document perfor
 
 The automation flow is visually represented using a flowchart interface.
 
-![The image shows an AWS Management Console interface for creating a runbook in AWS Systems Manager. It features a flowchart with "Start" and "End" nodes and a sidebar with various actions and scripting options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859901/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Creating-and-Executing-Automation-Runbooks/aws-systems-manager-runbook-flowchart.jpg)
+![The image shows an AWS Management Console interface for creating a runbook in AWS Systems Manager. It features a flowchart with "Start" and "End" nodes and a sidebar with various actions and scripting options.](https://kodekloud.com/kk-media/image/upload/v1752859901/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Creating-and-Executing-Automation-Runbooks/aws-systems-manager-runbook-flowchart.jpg)
 
 Switch to the code view to review and customize the runbook. A pre-configured runbook using schema version 3 is provided:
 

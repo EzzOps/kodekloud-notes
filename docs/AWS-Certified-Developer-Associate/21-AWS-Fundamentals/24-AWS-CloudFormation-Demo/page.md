@@ -87,9 +87,9 @@ Resources:
 
 > **lightbulb** When choosing an AMI, navigate to the EC2 console, launch a new instance, select the desired image, and then copy its AMI ID.
 
-![The image shows a webpage from the AWS documentation, specifically detailing the properties and syntax for an EC2 instance. The page includes a list of attributes such as ImageId, InstanceType, and KeyName.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858114/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation-Demo/aws-ec2-instance-properties-syntax.jpg)
+![The image shows a webpage from the AWS documentation, specifically detailing the properties and syntax for an EC2 instance. The page includes a list of attributes such as ImageId, InstanceType, and KeyName.](https://kodekloud.com/kk-media/image/upload/v1752858114/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation-Demo/aws-ec2-instance-properties-syntax.jpg)
 
-![The image shows the AWS EC2 console interface for launching a new instance, with options to select the instance name, Amazon Machine Image (AMI), and instance type. The summary section on the right provides details about the selected configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858115/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation-Demo/aws-ec2-launch-instance-console.jpg)
+![The image shows the AWS EC2 console interface for launching a new instance, with options to select the instance name, Amazon Machine Image (AMI), and instance type. The summary section on the right provides details about the selected configuration.](https://kodekloud.com/kk-media/image/upload/v1752858115/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation-Demo/aws-ec2-launch-instance-console.jpg)
 
 ***
 
@@ -279,25 +279,25 @@ Once your template is ready, follow these steps to deploy it using the AWS Cloud
 2. Click on "Create stack" and select "Upload a template file."
 3. Choose your "stack.yaml" file and click "Next."
 
-![The image shows the AWS CloudFormation interface for creating a stack, where users can prepare and specify a template by uploading a file or using an Amazon S3 URL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858116/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation-Demo/aws-cloudformation-stack-template-interface.jpg)
+![The image shows the AWS CloudFormation interface for creating a stack, where users can prepare and specify a template by uploading a file or using an Amazon S3 URL.](https://kodekloud.com/kk-media/image/upload/v1752858116/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation-Demo/aws-cloudformation-stack-template-interface.jpg)
 
 4. Enter a stack name (e.g., "my-deployment"). The template’s parameters will be displayed. Provide the EC2 instance name (for example, "this is the server") and select your key pair from the dropdown.
 
 5. Click "Next" to configure stack options such as tags, permissions, and rollback options. You can leave these options blank if they are not required.
 
-![The image shows the AWS CloudFormation console, specifically the "Configure stack options" page, where users can add tags, set permissions, and choose stack failure options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858118/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation-Demo/aws-cloudformation-configure-stack-options.jpg)
+![The image shows the AWS CloudFormation console, specifically the "Configure stack options" page, where users can add tags, set permissions, and choose stack failure options.](https://kodekloud.com/kk-media/image/upload/v1752858118/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation-Demo/aws-cloudformation-configure-stack-options.jpg)
 
 6. Review your configuration and click "Submit" to deploy the stack.
 
 After deployment, the CloudFormation console will display a "CREATE\_COMPLETE" status along with a series of events that detail the creation of resources, such as the EC2 instance and security group.
 
-![The image shows an AWS CloudFormation console with a list of stack events for "my-deployment," indicating various statuses like "CREATE\_COMPLETE" and "CREATE\_IN\_PROGRESS."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858119/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation-Demo/aws-cloudformation-my-deployment-events.jpg)
+![The image shows an AWS CloudFormation console with a list of stack events for "my-deployment," indicating various statuses like "CREATE\_COMPLETE" and "CREATE\_IN\_PROGRESS."](https://kodekloud.com/kk-media/image/upload/v1752858119/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation-Demo/aws-cloudformation-my-deployment-events.jpg)
 
 Once the stack is created, you can inspect the deployed resources by clicking on them. The Outputs section will display the public IP address of your EC2 instance, which you can use to access your server.
 
 If you need to update the stack, select the stack in the CloudFormation console and choose the "Update" option. The console allows you to upload a modified template or select an alternative source.
 
-![The image shows an AWS CloudFormation interface for updating a stack, with options to prepare and specify a template using an Amazon S3 URL or by uploading a file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858120/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation-Demo/aws-cloudformation-update-stack-interface.jpg)
+![The image shows an AWS CloudFormation interface for updating a stack, with options to prepare and specify a template using an Amazon S3 URL or by uploading a file.](https://kodekloud.com/kk-media/image/upload/v1752858120/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation-Demo/aws-cloudformation-update-stack-interface.jpg)
 
 To delete the stack, simply select it in the CloudFormation console and choose "Delete."
 

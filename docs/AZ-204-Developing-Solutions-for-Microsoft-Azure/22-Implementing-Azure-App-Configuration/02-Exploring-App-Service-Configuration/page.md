@@ -35,7 +35,7 @@ Azure App Configuration is a fully managed service that centralizes application 
 9. **Native Integration with Popular Frameworks**\
    Integrate effortlessly with various programming frameworks, making implementation straightforward.
 
-![The image is an infographic detailing the benefits of Azure App Configuration Service, highlighting features like flexible key representations, tagging with labels, and enhanced security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866578/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-App-Service-Configuration/azure-app-configuration-infographic.jpg)
+![The image is an infographic detailing the benefits of Azure App Configuration Service, highlighting features like flexible key representations, tagging with labels, and enhanced security.](https://kodekloud.com/kk-media/image/upload/v1752866578/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-App-Service-Configuration/azure-app-configuration-infographic.jpg)
 
 ## Implementation Scenarios
 
@@ -50,7 +50,7 @@ Azure App Configuration offers multiple practical scenarios for managing your ap
 3. **Feature Flag Control**\
    Enable or disable features on the fly to control application functionality with precision.
 
-![The image is an infographic about Azure App Configuration Service, highlighting three implementation scenarios: centralizing management of configuration data, dynamically changing application settings, and controlling feature availability in real time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866579/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-App-Service-Configuration/azure-app-configuration-infographic-2.jpg)
+![The image is an infographic about Azure App Configuration Service, highlighting three implementation scenarios: centralizing management of configuration data, dynamically changing application settings, and controlling feature availability in real time.](https://kodekloud.com/kk-media/image/upload/v1752866579/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-App-Service-Configuration/azure-app-configuration-infographic-2.jpg)
 
 ## Integration with Application Frameworks
 
@@ -75,6 +75,6 @@ If your framework does not have native support through an existing builder, prov
 
 > **lightbulb** For additional guidance on integrating Azure App Configuration into your projects, refer to the official [Azure App Configuration documentation](https://docs.microsoft.com/azure/azure-app-configuration/overview).
 
-![The image is a table from Azure App Configuration Service, listing programming languages and frameworks alongside their corresponding connection methods. It includes .NET Core, Java Spring, JavaScript/Node.js, Python, and others.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866581/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-App-Service-Configuration/azure-app-configuration-languages-table.jpg)
+![The image is a table from Azure App Configuration Service, listing programming languages and frameworks alongside their corresponding connection methods. It includes .NET Core, Java Spring, JavaScript/Node.js, Python, and others.](https://kodekloud.com/kk-media/image/upload/v1752866581/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-App-Service-Configuration/azure-app-configuration-languages-table.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/az-204-developing-solutions-for-microsoft-azure/module/705e9ab6-55cd-4824-8c7a-79570dc8e52f/lesson/7405c426-cc57-41cf-b24b-20300111f9af)

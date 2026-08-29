@@ -9,9 +9,7 @@ app_1  | INFO  cache: hit for profile 7
 app_1  | INFO  response served from cache
 ```
 
-<Callout icon="lightbulb">
-  This lesson demonstrates the cache-aside pattern: on a cache miss the application reads from the database and populates Redis; on a cache hit it serves data directly from Redis. If the database is updated without invalidating or updating the cache, the application may continue to serve stale data until the cache entry expires or is refreshed.
-</Callout>
+> **lightbulb** This lesson demonstrates the cache-aside pattern: on a cache miss the application reads from the database and populates Redis; on a cache hit it serves data directly from Redis. If the database is updated without invalidating or updating the cache, the application may continue to serve stale data until the cache entry expires or is refreshed.
 
 ## What you'll observe
 
@@ -60,11 +58,9 @@ app_1  | INFO  response served from cache
 * [Cache-aside pattern overview (Martin Fowler)](https://martinfowler.com/bliki/CacheAside.html)
 * \[Designing Data-Intensive Applications (Book) — caching patterns]
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/1282acaf-ea40-49df-a44a-df97a78d22ac" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/1282acaf-ea40-49df-a44a-df97a78d22ac)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/f85b3eb5-e4cc-4bf6-83a6-e89fae919f4f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/f85b3eb5-e4cc-4bf6-83a6-e89fae919f4f)
 
 
 # Cache Invalidation TTLs
@@ -75,9 +71,7 @@ Strategies for keeping caches consistent with databases, comparing TTL expiratio
 
 When you add a cache in front of your database, you get faster reads and reduced DB load — but you also introduce a consistency problem. The database is the canonical source of truth; the cache holds a copy. If those copies diverge, users can see stale data. For example, if Lionel Messi updates his bio in the database but the cache still serves the old bio, the system is correct at the DB level but wrong at the user-visible layer.
 
-<Callout icon="lightbulb">
-  Define how much staleness your application can tolerate before choosing an invalidation strategy. Measure the acceptable staleness window and use it to guide whether you need TTLs, active invalidation, or a hybrid approach.
-</Callout>
+> **lightbulb** Define how much staleness your application can tolerate before choosing an invalidation strategy. Measure the acceptable staleness window and use it to guide whether you need TTLs, active invalidation, or a hybrid approach.
 
 There are two common strategies to keep cache and database consistent:
 
@@ -129,9 +123,7 @@ Common strategies to make active invalidation safer:
 * Versioned keys or optimistic concurrency: include a version or timestamp in cache keys/values so readers can detect stale entries.
 * Distributed locks or single-flight: serialize cache refreshes to avoid races.
 
-<Callout icon="warning">
-  If you invalidate the cache in the wrong order relative to the DB write, you risk serving stale entries. Design your write+invalidate ordering carefully and consider extra safeguards (double-delete, versioning, or locking) to guarantee correctness.
-</Callout>
+> **warning** If you invalidate the cache in the wrong order relative to the DB write, you risk serving stale entries. Design your write+invalidate ordering carefully and consider extra safeguards (double-delete, versioning, or locking) to guarantee correctness.
 
 <Frame>
   <img alt="The image illustrates a process of active invalidation involving an app, Redis cache, and a database, where a bio update is propagated through the system." />
@@ -171,6 +163,4 @@ One final point: the worst bugs are not when the cache is empty. The worst bugs 
 
 There’s an old joke that there are only two hard things in computer science: cache invalidation, naming things, and off-by-one errors.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/61093e0d-f42a-4ec2-833c-356964524728" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/61093e0d-f42a-4ec2-833c-356964524728)

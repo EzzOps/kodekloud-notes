@@ -71,9 +71,7 @@ How this PolicyException works
 * `podSecurity.controlName` instructs Kyverno to ignore only the `Running as Non-root` control for the matched scope.
 * Effect: only the specified control is ignored for resources in `delta`; the rest of the `restricted` profile still applies.
 
-<Callout icon="lightbulb">
-  The `podSecurity` block in a PolicyException mirrors the `exclude` block you can add inside a `podSecurity` rule. This makes exceptions expressive and predictable, and easier to reason about when auditing policy changes.
-</Callout>
+> **lightbulb** The `podSecurity` block in a PolicyException mirrors the `exclude` block you can add inside a `podSecurity` rule. This makes exceptions expressive and predictable, and easier to reason about when auditing policy changes.
 
 Policy modification vs scoped exception
 

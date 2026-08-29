@@ -46,9 +46,7 @@ OpenTelemetry provides explicit mechanisms for transforming and interpreting met
 * Cumulative ↔ Delta conversion: OTel can convert between delta and cumulative temporality to match backend expectations while preserving correctness.
 * Dimension (label/attribute) enrichment: Add contextual attributes such as `region=us-east-1` or `instance=vm-42` to make metrics more actionable.
 
-<Callout icon="lightbulb">
-  Be cautious with high-cardinality attributes (for example, user IDs). Enriching every metric with high-cardinality labels can blow up the number of time series. Use enrichment and re-aggregation strategically to balance observability and cost.
-</Callout>
+> **lightbulb** Be cautious with high-cardinality attributes (for example, user IDs). Enriching every metric with high-cardinality labels can blow up the number of time series. Use enrichment and re-aggregation strategically to balance observability and cost.
 
 ### Common transformation patterns
 
@@ -80,9 +78,7 @@ These techniques help preserve trends and actionable insights while limiting the
   <img alt="The image is a diagram of the OpenTelemetry Metrics Data Model, highlighting configurability and cost control, with spatial and temporal reaggregation, reliability, and statelessness." />
 </Frame>
 
-<Callout icon="warning">
-  Be intentional about where you perform re-aggregation. Aggressive rollups can hide short-lived spikes or outliers; insufficient aggregation can cause excessive storage and query costs. Test configurations against representative workloads.
-</Callout>
+> **warning** Be intentional about where you perform re-aggregation. Aggressive rollups can hide short-lived spikes or outliers; insufficient aggregation can cause excessive storage and query costs. Test configurations against representative workloads.
 
 ## Reliability and statelessness
 
@@ -116,6 +112,4 @@ The protocol and semantics define a clear framework for delivering pre-aggregate
 
 This section covered the OpenTelemetry metrics data model. For further reading, see the OpenTelemetry documentation and the Prometheus Remote Write guidelines linked above.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/8b85e7d8-cd94-47c8-8067-4dcb78b0e6ee" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/8b85e7d8-cd94-47c8-8067-4dcb78b0e6ee)

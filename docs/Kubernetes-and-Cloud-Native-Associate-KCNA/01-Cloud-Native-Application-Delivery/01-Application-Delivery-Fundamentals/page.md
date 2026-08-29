@@ -20,21 +20,15 @@ To overcome these challenges, the team adopted a CI/CD (Continuous Integration/C
 * **Continuous Deployment (CD):**\
   The CD process streamlines deployments by pushing the updated code directly to a production Kubernetes cluster via a push-based model. This minimizes manual errors and accelerates the release of new features.
 
-<Frame>
-  ![The image illustrates a present scenario of Continuous Integration (CI) and Continuous Deployment (CD), showing steps of building, testing, containerizing, and deploying with Kubernetes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880453/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Application-Delivery-Fundamentals/frame_80.jpg)
-</Frame>
+![The image illustrates a present scenario of Continuous Integration (CI) and Continuous Deployment (CD), showing steps of building, testing, containerizing, and deploying with Kubernetes.](https://kodekloud.com/kk-media/image/upload/v1752880453/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Application-Delivery-Fundamentals/frame_80.jpg)
 
-<Callout icon="lightbulb">
-  Implementing a CI/CD pipeline helps teams respond quickly to market changes while maintaining high software quality and reliability.
-</Callout>
+> **lightbulb** Implementing a CI/CD pipeline helps teams respond quickly to market changes while maintaining high software quality and reliability.
 
 ## Leveraging GitOps for Infrastructure Management
 
 Adopting GitOps practices transforms both infrastructure and deployment processes into version-controlled code. This approach enables the team to track every change, significantly reducing risks associated with manual deployments and configuration drift.
 
-<Frame>
-  ![The image features the word "GitOps" and a red Git logo, symbolizing the concept of using Git for operations and infrastructure management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880454/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Application-Delivery-Fundamentals/frame_100.jpg)
-</Frame>
+![The image features the word "GitOps" and a red Git logo, symbolizing the concept of using Git for operations and infrastructure management.](https://kodekloud.com/kk-media/image/upload/v1752880454/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Application-Delivery-Fundamentals/frame_100.jpg)
 
 GitOps also simplifies rollbacks. Should any issues arise, reverting changes becomes straightforward, minimizing downtime and ensuring system stability.
 
@@ -46,9 +40,7 @@ Manual modifications using the command-line interface (CLI) can lead to several 
 * Increased potential for human error
 * Overall system instability or failure
 
-<Callout icon="triangle-alert">
-  Relying on manual changes can complicate disaster recovery. In circumstances such as natural events, technical failures, or human errors, manual configurations hinder the quick restoration of stable systems.
-</Callout>
+> **triangle-alert** Relying on manual changes can complicate disaster recovery. In circumstances such as natural events, technical failures, or human errors, manual configurations hinder the quick restoration of stable systems.
 
 When recovering infrastructure and applications, identifying and replicating manual changes is often time-consuming and error-prone, further delaying system restoration.
 
@@ -65,6 +57,4 @@ This approach not only minimizes risks but also enhances overall operational eff
 
 That's it for this article. See you in the next one.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/7221af3a-169a-4c55-bc00-b7b40e1dceda/lesson/5dacf19f-80ca-472b-b145-48e7fc9a5e57" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/7221af3a-169a-4c55-bc00-b7b40e1dceda/lesson/5dacf19f-80ca-472b-b145-48e7fc9a5e57)

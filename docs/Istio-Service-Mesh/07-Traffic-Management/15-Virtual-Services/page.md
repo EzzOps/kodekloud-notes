@@ -10,9 +10,7 @@ When a user visits [http://bookinfo.app](http://bookinfo.app), the request first
 
 Virtual Services offer flexibility by allowing you to specify hostnames, manage traffic among different service versions, and use both standard and regex URI paths. Once a Virtual Service is created, the Istio control plane disseminates the configuration to all Envoy sidecars in the mesh.
 
-<Callout icon="lightbulb">
-  Creating a Virtual Service decouples your traffic routing policies from the actual service implementations, enabling granular control over how your application's requests are handled.
-</Callout>
+> **lightbulb** Creating a Virtual Service decouples your traffic routing policies from the actual service implementations, enabling granular control over how your application's requests are handled.
 
 ## Configuring a Virtual Service for the Product Page
 
@@ -49,9 +47,7 @@ spec:
 
 This configuration instructs Istio to forward any traffic passing through the bookinfo-gateway with the host bookinfo.app and matching the specified URL patterns to the productPage service on port 9080.
 
-<Frame>
-  ![The image is a diagram showing a microservices architecture with an Istio ingress gateway, virtual service, and components like Product Page, Details, Reviews (v1, v2, v3), and Ratings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879395/notes-assets/images/Istio-Service-Mesh-Virtual-Services/microservices-architecture-istio-diagram.jpg)
-</Frame>
+![The image is a diagram showing a microservices architecture with an Istio ingress gateway, virtual service, and components like Product Page, Details, Reviews (v1, v2, v3), and Ratings.](https://kodekloud.com/kk-media/image/upload/v1752879395/notes-assets/images/Istio-Service-Mesh-Virtual-Services/microservices-architecture-istio-diagram.jpg)
 
 ## Routing Between Service Versions
 
@@ -148,9 +144,7 @@ deployment.apps/reviews-v1 scaled
 
 This approach exposes a limitation of native Kubernetes traffic management: it requires manual pod scaling to achieve granular routing, which may not be ideal if you need to direct only 1% of traffic to a new version.
 
-<Frame>
-  ![The image is a flowchart showing a product page directing reviews to different versions (v1, v2, v3) with 99% going to v1 and 1% to v2.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879396/notes-assets/images/Istio-Service-Mesh-Virtual-Services/product-page-reviews-flowchart.jpg)
-</Frame>
+![The image is a flowchart showing a product page directing reviews to different versions (v1, v2, v3) with 99% going to v1 and 1% to v2.](https://kodekloud.com/kk-media/image/upload/v1752879396/notes-assets/images/Istio-Service-Mesh-Virtual-Services/product-page-reviews-flowchart.jpg)
 
 ### Traffic Routing With Istio Virtual Services
 
@@ -178,14 +172,10 @@ spec:
 
 Even if the reviews v2 deployment scales up with more pods, the Virtual Service configuration continues to manage the traffic distribution independently. In this scenario, "subset" groups your pods based on specific labels, offering an additional layer of granularity beyond what standard Kubernetes Services provide.
 
-<Callout icon="triangle-alert">
-  Ensure that your destination rules are correctly configured to define each subset, otherwise the intended traffic routing may not be achieved.
-</Callout>
+> **triangle-alert** Ensure that your destination rules are correctly configured to define each subset, otherwise the intended traffic routing may not be achieved.
 
 In the upcoming sections, we will discuss how to configure destination rules to define these subsets and further enhance your traffic management strategy with Istio.
 
 For more details on Istio traffic management and advanced routing, visit the [Istio Documentation](https://istio.io/latest/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/55c4c945-6dcf-4f58-ba82-1b1c95397adb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/55c4c945-6dcf-4f58-ba82-1b1c95397adb)

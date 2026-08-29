@@ -62,21 +62,15 @@ In this version, the `git` step clones a repository while the `sh` step runs a s
 
 To understand how these plugins work, navigate to Jenkins and go to Manage Jenkins → Manage Plugins.
 
-<Callout icon="lightbulb">
-  The Jenkins dashboard offers various options, including managing the system, configuring plugins, security, and nodes. The build queue may appear empty if no builds are scheduled.
-</Callout>
+> **lightbulb** The Jenkins dashboard offers various options, including managing the system, configuring plugins, security, and nodes. The build queue may appear empty if no builds are scheduled.
 
 Below is an image showing the Jenkins dashboard with options for managing Jenkins, configuring the system, plugins, security, and nodes:
 
-<Frame>
-  ![The image shows a Jenkins dashboard with options for managing Jenkins, configuring the system, plugins, security, and nodes. The build queue is empty.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880078/notes-assets/images/Jenkins-Jenkins-Steps-and-Plugin/frame_60.jpg)
-</Frame>
+![The image shows a Jenkins dashboard with options for managing Jenkins, configuring the system, plugins, security, and nodes. The build queue is empty.](https://kodekloud.com/kk-media/image/upload/v1752880078/notes-assets/images/Jenkins-Jenkins-Steps-and-Plugin/frame_60.jpg)
 
 To verify the installation of plugins, click the Installed tab and search for "Git". If the search results display correctly, you will see the Git plugin installed—this plugin enables the use of the `git` keyword for repository cloning.
 
-<Frame>
-  ![The image shows a Jenkins plugin page for Git, detailing its version, features, and links for further information and support.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880079/notes-assets/images/Jenkins-Jenkins-Steps-and-Plugin/frame_80.jpg)
-</Frame>
+![The image shows a Jenkins plugin page for Git, detailing its version, features, and links for further information and support.](https://kodekloud.com/kk-media/image/upload/v1752880079/notes-assets/images/Jenkins-Jenkins-Steps-and-Plugin/frame_80.jpg)
 
 ## Checkout Example Using the Git Plugin
 
@@ -114,9 +108,7 @@ stage('Results') {
 
 In this script, the Maven build is executed, and then the JUnit plugin is used to archive test results. Verify the installation of the JUnit plugin by navigating to Manage Jenkins → Manage Plugins and searching for "JUnit".
 
-<Callout icon="lightbulb">
-  Refer to the plugin documentation for detailed behavior and configuration options to fully leverage these tools in your pipelines.
-</Callout>
+> **lightbulb** Refer to the plugin documentation for detailed behavior and configuration options to fully leverage these tools in your pipelines.
 
 ## Conclusion
 
@@ -124,8 +116,6 @@ Keywords like `git`, `sh`, and `junit` within your pipeline scripts represent fu
 
 Happy automating!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/34e95998-38e2-4735-a378-b466e6a5851c/lesson/bb3eb718-7fc9-4b77-a436-26b2ead74f98" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/34e95998-38e2-4735-a378-b466e6a5851c/lesson/bb3eb718-7fc9-4b77-a436-26b2ead74f98)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/34e95998-38e2-4735-a378-b466e6a5851c/lesson/5d213d43-af76-453f-b03a-65e796751b22" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/jenkins/module/34e95998-38e2-4735-a378-b466e6a5851c/lesson/5d213d43-af76-453f-b03a-65e796751b22)

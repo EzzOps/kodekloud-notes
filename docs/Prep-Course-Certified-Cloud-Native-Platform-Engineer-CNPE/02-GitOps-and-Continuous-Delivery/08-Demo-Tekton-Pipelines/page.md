@@ -154,9 +154,7 @@ demo-app-677bb5c8-sbkm4                  1/1     Running   53s
 
 ***
 
-<Callout icon="lightbulb">
-  A common YAML mistake is using `step` (singular) instead of the required `steps` (plural) under `spec.strategy.canary`. If you see an error like `unknown field "spec.strategy.canary.step"`, verify you have `steps:` and that each step entry is properly indented.
-</Callout>
+> **lightbulb** A common YAML mistake is using `step` (singular) instead of the required `steps` (plural) under `spec.strategy.canary`. If you see an error like `unknown field "spec.strategy.canary.step"`, verify you have `steps:` and that each step entry is properly indented.
 
 ***
 
@@ -181,11 +179,9 @@ Practice the walkthrough: verify Argo Rollouts is installed, create a canary Rol
 
 Now you have a compact, hands-on guide: verify Argo Rollouts, create and apply a canary Rollout, perform controlled image updates and promotions, roll back when necessary, and attach Rollouts to pre-existing Deployments with `workloadRef`.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/a0077fb2-6b11-4efb-a3e6-a2eb38e6b16e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/a0077fb2-6b11-4efb-a3e6-a2eb38e6b16e)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/52cac868-334e-4f7b-8cf5-be4a61331d73" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/52cac868-334e-4f7b-8cf5-be4a61331d73)
 
 
 # Demo Tekton Pipelines
@@ -213,13 +209,9 @@ In this guide you'll:
 * Add a deploy Task and wire everything into a Pipeline.
 * Run the Pipeline and view logs.
 
-<Callout icon="lightbulb">
-  You need `kubectl` access to the cluster and the `tkn` CLI installed/configured to follow the examples that use `tkn` commands and `--showlog`. See the Tekton docs and Kubernetes docs linked in the References section below.
-</Callout>
+> **lightbulb** You need `kubectl` access to the cluster and the `tkn` CLI installed/configured to follow the examples that use `tkn` commands and `--showlog`. See the Tekton docs and Kubernetes docs linked in the References section below.
 
-<Callout icon="warning">
-  Examples assume resources are created in the `ci-pipelines` namespace. Create it beforehand if it doesn't exist: `kubectl create namespace ci-pipelines`. Ensure your user has the necessary RBAC permissions to create Tekton resources and view logs.
-</Callout>
+> **warning** Examples assume resources are created in the `ci-pipelines` namespace. Create it beforehand if it doesn't exist: `kubectl create namespace ci-pipelines`. Ensure your user has the necessary RBAC permissions to create Tekton resources and view logs.
 
 ## Verify Tekton Pipelines is running
 

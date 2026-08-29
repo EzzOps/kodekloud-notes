@@ -2,17 +2,13 @@
 vault token revoke s.1234567890abcdef
 ```
 
-<Callout icon="triangle-alert">
-  Revoking a parent token will also revoke **all** of its child tokens, regardless of their remaining TTL.
-</Callout>
+> **triangle-alert** Revoking a parent token will also revoke **all** of its child tokens, regardless of their remaining TTL.
 
 ## Parent-Child Token Relationships
 
 When you authenticate with a Vault token and create another token, the new token becomes a “child” of the creator (“parent”). Revoking a parent cascades through all descendants.
 
-<Frame>
-  ![The image illustrates a token hierarchy with tokens marked for revocation, showing their time-to-live (TTL) and the sequence in which they are revoked.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878006/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Token-Hierarchy/token-hierarchy-revocation-ttl-diagram.jpg)
-</Frame>
+![The image illustrates a token hierarchy with tokens marked for revocation, showing their time-to-live (TTL) and the sequence in which they are revoked.](https://kodekloud.com/kk-media/image/upload/v1752878006/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Token-Hierarchy/token-hierarchy-revocation-ttl-diagram.jpg)
 
 1. A green token (parent) is issued with a 3-hour TTL.
 2. The green token spawns two children:
@@ -37,9 +33,7 @@ This cascading revocation model ensures no orphaned tokens remain when a parent 
 * [Vault HTTP API](https://developer.hashicorp.com/vault/api-docs)
 * [HashiCorp Vault Concepts](https://developer.hashicorp.com/vault/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/25d25dc9-571f-4051-8ccc-dafc01ea07be" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/25d25dc9-571f-4051-8ccc-dafc01ea07be)
 
 
 # Auth Methods Section Overview
@@ -58,9 +52,7 @@ In this lesson, we’ll move beyond the basics of Vault and explore its authenti
 * Walk through the full authentication workflow: submitting credentials to Vault and receiving a token
 * Explain entities and groups: their roles and significance in Vault
 
-<Frame>
-  ![The image is a section overview with three objectives related to authentication methods, including descriptions, use cases, and differentiating human versus system methods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878008/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Auth-Methods-Section-Overview/authentication-methods-overview-objectives.jpg)
-</Frame>
+![The image is a section overview with three objectives related to authentication methods, including descriptions, use cases, and differentiating human versus system methods.](https://kodekloud.com/kk-media/image/upload/v1752878008/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Auth-Methods-Section-Overview/authentication-methods-overview-objectives.jpg)
 
 ### 1B. Choose an Auth Method Based on Use Case
 
@@ -105,9 +97,7 @@ In this lesson, we’ll move beyond the basics of Vault and explore its authenti
   * Workloads on AWS, Azure, and GCP
   * Machine-to-machine interactions across on-premises, cloud, and hybrid environments
 
-<Frame>
-  ![The image is a section overview with three objectives related to authentication methods, including descriptions, use cases, and differentiating human versus system methods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878009/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Auth-Methods-Section-Overview/authentication-methods-overview-objectives-2.jpg)
-</Frame>
+![The image is a section overview with three objectives related to authentication methods, including descriptions, use cases, and differentiating human versus system methods.](https://kodekloud.com/kk-media/image/upload/v1752878009/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Auth-Methods-Section-Overview/authentication-methods-overview-objectives-2.jpg)
 
 <table>
   <thead>
@@ -143,10 +133,6 @@ Let’s get started!
 * [Vault Entities and Groups](https://www.vaultproject.io/docs/concepts/entities-groups)
 * [HashiCorp Vault Documentation](https://www.vaultproject.io/docs)
 
-<Callout icon="lightbulb">
-  Entities in Vault represent human or machine identities, while groups allow you to bundle entities for policy management.
-</Callout>
+> **lightbulb** Entities in Vault represent human or machine identities, while groups allow you to bundle entities for policy management.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/33243008-40e6-47cf-8ef0-4f4a39bd4e4d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/33243008-40e6-47cf-8ef0-4f4a39bd4e4d)

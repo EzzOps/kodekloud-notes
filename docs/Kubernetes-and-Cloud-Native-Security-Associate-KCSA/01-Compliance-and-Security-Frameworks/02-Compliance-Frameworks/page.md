@@ -6,9 +6,7 @@ This article explores security compliance frameworks essential for protecting se
 
 Security compliance frameworks are essential for safeguarding sensitive data—personal information, health records, payment details—and ensuring system integrity and legal compliance. Ignoring these guidelines can lead to data breaches, hefty fines, and loss of customer trust. In this lesson, we’ll explore the major frameworks and how they apply to Kubernetes environments.
 
-<Callout icon="triangle-alert">
-  Non-compliance can result in severe penalties, data exposure, and reputational damage.
-</Callout>
+> **triangle-alert** Non-compliance can result in severe penalties, data exposure, and reputational damage.
 
 To begin, here’s a high-level comparison of the frameworks we’ll cover:
 
@@ -27,9 +25,7 @@ The GDPR is an EU regulation that protects individuals’ personal data and priv
 * Encrypting user data stored in your MySQL database (data at rest)
 * Ensuring only authorized back-end services can access personal data
 
-<Frame>
-  ![The image is about the General Data Protection Regulation (GDPR) and includes icons representing the European Union and personal data, along with key points on securing and encrypting user data. It also features logos related to data protection standards.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880722/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Compliance-Frameworks/gdpr-eu-icons-data-protection.jpg)
-</Frame>
+![The image is about the General Data Protection Regulation (GDPR) and includes icons representing the European Union and personal data, along with key points on securing and encrypting user data. It also features logos related to data protection standards.](https://kodekloud.com/kk-media/image/upload/v1752880722/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Compliance-Frameworks/gdpr-eu-icons-data-protection.jpg)
 
 ## [HIPAA (Health Insurance Portability and Accountability Act)][hipaa]
 
@@ -39,9 +35,7 @@ HIPAA is a U.S. regulation focused on protecting sensitive patient health inform
 * Implement strict access controls to prevent unauthorized access
 * Securely configure Kubernetes Secrets for application use
 
-<Callout icon="lightbulb">
-  Ensure your TLS certificates are managed via a secure certificate authority and rotated regularly.
-</Callout>
+> **lightbulb** Ensure your TLS certificates are managed via a secure certificate authority and rotated regularly.
 
 ## [PCI DSS (Payment Card Industry Data Security Standard)][pci]
 
@@ -51,9 +45,7 @@ The PCI DSS applies to any system processing payment card data. Key requirements
 * Enforcing strong access controls
 * Monitoring and auditing all access to payment information
 
-<Frame>
-  ![The image outlines the Payment Card Industry Data Security Standard (PCI DSS) with icons and text describing its components, such as restricting access, network segmentation, and logging for cardholder data. It also includes logos for related standards and organizations like GDPR, NIST, and CIS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880722/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Compliance-Frameworks/pci-dss-security-standard-overview.jpg)
-</Frame>
+![The image outlines the Payment Card Industry Data Security Standard (PCI DSS) with icons and text describing its components, such as restricting access, network segmentation, and logging for cardholder data. It also includes logos for related standards and organizations like GDPR, NIST, and CIS.](https://kodekloud.com/kk-media/image/upload/v1752880722/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Compliance-Frameworks/pci-dss-security-standard-overview.jpg)
 
 ## [NIST (National Institute of Standards and Technology)][nist]
 
@@ -63,9 +55,7 @@ NIST publishes the Cybersecurity Framework to improve the security and resilienc
 * Implementing security controls (firewalls, IDS/IPS)
 * Performing periodic security audits
 
-<Frame>
-  ![The image is about the National Institute of Standards and Technology (NIST) and its role in cybersecurity, highlighting its global recognition, risk assessments, security controls, and audits. It includes icons and text related to cybersecurity practices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880724/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Compliance-Frameworks/nist-cybersecurity-role-icons-audits.jpg)
-</Frame>
+![The image is about the National Institute of Standards and Technology (NIST) and its role in cybersecurity, highlighting its global recognition, risk assessments, security controls, and audits. It includes icons and text related to cybersecurity practices.](https://kodekloud.com/kk-media/image/upload/v1752880724/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Compliance-Frameworks/nist-cybersecurity-role-icons-audits.jpg)
 
 ## [CIS Benchmarks (Center for Internet Security)][cis]
 
@@ -101,21 +91,15 @@ Tools like Aqua Security’s **kube-bench** automate verification of these bench
 [FAIL]  1.1.22 Ensure that the --kubelet-certificate-authority argument is set as appropriate (Scored)
 ```
 
-<Frame>
-  ![The image is about the Center for Internet Security (CIS) and features icons and text related to benchmarks, Kubernetes components, and authentication and authorization. Logos for GDPR, PCI, and NIST are also visible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880724/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Compliance-Frameworks/cis-benchmarks-kubernetes-authentication-logos.jpg)
-</Frame>
+![The image is about the Center for Internet Security (CIS) and features icons and text related to benchmarks, Kubernetes components, and authentication and authorization. Logos for GDPR, PCI, and NIST are also visible.](https://kodekloud.com/kk-media/image/upload/v1752880724/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Compliance-Frameworks/cis-benchmarks-kubernetes-authentication-logos.jpg)
 
 ***
 
 Below is a visual comparison of these frameworks—when they apply, their focus areas, and recommended tools:
 
-<Frame>
-  ![The image is a table comparing different compliance frameworks, including GDPR, HIPAA, PCI DSS, NIST, and CIS, detailing their purposes, application timing, key focus areas, usage, and recommended tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880726/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Compliance-Frameworks/compliance-frameworks-gdpr-hipaa-pci-dss.jpg)
-</Frame>
+![The image is a table comparing different compliance frameworks, including GDPR, HIPAA, PCI DSS, NIST, and CIS, detailing their purposes, application timing, key focus areas, usage, and recommended tools.](https://kodekloud.com/kk-media/image/upload/v1752880726/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Compliance-Frameworks/compliance-frameworks-gdpr-hipaa-pci-dss.jpg)
 
-<Frame>
-  ![The image is a summary slide listing five key points about compliance frameworks, including data security, encryption requirements, security audits, compliance assessments, and monitoring tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880727/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Compliance-Frameworks/compliance-frameworks-summary-key-points.jpg)
-</Frame>
+![The image is a summary slide listing five key points about compliance frameworks, including data security, encryption requirements, security audits, compliance assessments, and monitoring tools.](https://kodekloud.com/kk-media/image/upload/v1752880727/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Compliance-Frameworks/compliance-frameworks-summary-key-points.jpg)
 
 Key takeaways:
 
@@ -146,6 +130,4 @@ Key takeaways:
 
 [cis]: https://www.cisecurity.org/cis-benchmarks/
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/2d1969ad-ad49-4d47-93ca-493416c81c76/lesson/05ac37ae-5e43-4e50-9cc4-80e1ee34dbff" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/2d1969ad-ad49-4d47-93ca-493416c81c76/lesson/05ac37ae-5e43-4e50-9cc4-80e1ee34dbff)

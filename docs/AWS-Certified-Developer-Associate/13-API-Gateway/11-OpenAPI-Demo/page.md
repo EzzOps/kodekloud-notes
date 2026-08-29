@@ -15,11 +15,11 @@ Follow this step-by-step walkthrough to learn how to export, modify, and import 
 
 If you already have an API configured in API Gateway, you can generate an OpenAPI specification from it. Start by navigating to the API's stage (for example, the "dev" stage).
 
-![The image shows an AWS API Gateway console with details of a stage named "dev" for an API called "taskmanager." It includes information about the stage's settings, invoke URL, and logging options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857884/notes-assets/images/AWS-Certified-Developer-Associate-OpenAPI-Demo/aws-api-gateway-dev-taskmanager.jpg)
+![The image shows an AWS API Gateway console with details of a stage named "dev" for an API called "taskmanager." It includes information about the stage's settings, invoke URL, and logging options.](https://kodekloud.com/kk-media/image/upload/v1752857884/notes-assets/images/AWS-Certified-Developer-Associate-OpenAPI-Demo/aws-api-gateway-dev-taskmanager.jpg)
 
 Next, select the stage actions and choose **Export**. In the export dialog, pick the API specification format you prefer. You can select either Swagger or OpenAPI 3, available in JSON or YAML. Additionally, you can include API Gateway or Postman extensions if needed.
 
-![The image shows an "Export API" dialog box from AWS API Gateway, where options for API specification type, format, and extensions are being selected. The user can choose between Swagger and Open API 3, JSON or YAML format, and different extension options before exporting the API.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857886/notes-assets/images/AWS-Certified-Developer-Associate-OpenAPI-Demo/aws-api-gateway-export-dialog.jpg)
+![The image shows an "Export API" dialog box from AWS API Gateway, where options for API specification type, format, and extensions are being selected. The user can choose between Swagger and Open API 3, JSON or YAML format, and different extension options before exporting the API.](https://kodekloud.com/kk-media/image/upload/v1752857886/notes-assets/images/AWS-Certified-Developer-Associate-OpenAPI-Demo/aws-api-gateway-export-dialog.jpg)
 
 After choosing the appropriate options, click **Export API**. The OpenAPI spec file will then be downloaded. When you open this file in a text editor, you might see a structure similar to the snippet below:
 
@@ -111,11 +111,11 @@ paths:
 
 Click **Create API** to finish the process. Once created, you'll see an API named "taskmanager2" with the specified configuration. Although the import provides the foundational setup, some integrations might require additional manual configuration.
 
-![The image shows an AWS API Gateway interface with a POST method for a "/tasks" resource, indicating an undefined integration warning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857888/notes-assets/images/AWS-Certified-Developer-Associate-OpenAPI-Demo/aws-api-gateway-post-tasks-warning.jpg)
+![The image shows an AWS API Gateway interface with a POST method for a "/tasks" resource, indicating an undefined integration warning.](https://kodekloud.com/kk-media/image/upload/v1752857888/notes-assets/images/AWS-Certified-Developer-Associate-OpenAPI-Demo/aws-api-gateway-post-tasks-warning.jpg)
 
 After the import, review and update the configurations to ensure everything is set up correctly.
 
-![The image shows the AWS API Gateway console, displaying the configuration of a REST API named "taskmanager2" with resources and methods like GET and POST under the "/tasks" path.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857889/notes-assets/images/AWS-Certified-Developer-Associate-OpenAPI-Demo/aws-api-gateway-taskmanager2-config.jpg)
+![The image shows the AWS API Gateway console, displaying the configuration of a REST API named "taskmanager2" with resources and methods like GET and POST under the "/tasks" path.](https://kodekloud.com/kk-media/image/upload/v1752857889/notes-assets/images/AWS-Certified-Developer-Associate-OpenAPI-Demo/aws-api-gateway-taskmanager2-config.jpg)
 
 > **triangle-alert** Pay close attention to integration settings. Some configurations imported from other platforms might need manual adjustments in API Gateway.
 

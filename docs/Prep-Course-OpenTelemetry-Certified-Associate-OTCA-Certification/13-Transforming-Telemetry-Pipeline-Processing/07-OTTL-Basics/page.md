@@ -18,9 +18,7 @@ References and further reading
 * OpenTelemetry Collector documentation: [https://opentelemetry.io/docs/collector/](https://opentelemetry.io/docs/collector/)
 * Sampling strategies overview: [https://opentelemetry.io/docs/concepts/sampling/](https://opentelemetry.io/docs/concepts/sampling/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/9b0a7c17-71b0-4007-8ddf-2d1f69214406" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/9b0a7c17-71b0-4007-8ddf-2d1f69214406)
 
 
 # OTTL Basics
@@ -324,9 +322,7 @@ processors:
 
 Best practices and validation
 
-<Callout icon="lightbulb">
-  Start small: add one simple OTTL statement and test it. Use `error_mode: ignore` while iterating, then switch to stricter error handling once your rules are stable. Always validate your Collector configuration before deploying.
-</Callout>
+> **lightbulb** Start small: add one simple OTTL statement and test it. Use `error_mode: ignore` while iterating, then switch to stricter error handling once your rules are stable. Always validate your Collector configuration before deploying.
 
 Validate the Collector configuration after edits:
 
@@ -343,6 +339,4 @@ Further reading and references
 
 That covers the core OTTL concepts: purpose, placement in the Collector pipeline, common use cases, hands-on examples for enrichment/redaction/filtering, error handling options, and validation tips.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/5436c6d6-37ea-4ef7-b1cc-728043aed962" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/5436c6d6-37ea-4ef7-b1cc-728043aed962)

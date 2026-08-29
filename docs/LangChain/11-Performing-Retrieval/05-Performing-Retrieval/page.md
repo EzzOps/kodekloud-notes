@@ -12,13 +12,9 @@ print(doc.metadata)             # metadata dictionary (may include title, source
 print(doc.page_content[:300])   # print the first 300 characters of the page
 ```
 
-<Callout icon="lightbulb">
-  Web pages are usually loaded as a single Document (so `len(data)` is often 1). Each Document has `page_content` (the full text) and `metadata` (title, source URL, etc., when available). Use these fields when adding provenance to your index or when building prompts that reference sources.
-</Callout>
+> **lightbulb** Web pages are usually loaded as a single Document (so `len(data)` is often 1). Each Document has `page_content` (the full text) and `metadata` (title, source URL, etc., when available). Use these fields when adding provenance to your index or when building prompts that reference sources.
 
-<Callout icon="warning">
-  Respect website terms of service and robots.txt when scraping or ingesting web content. For production ingestion, consider rate limits, caching, and error handling for transient network issues.
-</Callout>
+> **warning** Respect website terms of service and robots.txt when scraping or ingesting web content. For production ingestion, consider rate limits, caching, and error handling for transient network issues.
 
 ## 3) Split (chunk) the text for embedding or indexing
 
@@ -58,9 +54,7 @@ Links and references:
 
 This completes loading a webpage and preparing it for chunking and embedding. From here, you can proceed to create embeddings, insert into a vector store (e.g., Pinecone, FAISS, Milvus), and build retrieval-augmented prompts for downstream applications.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/c29062bc-7d53-4855-b98e-c9cb5ae6cbe3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/c29062bc-7d53-4855-b98e-c9cb5ae6cbe3)
 
 
 # Performing Retrieval

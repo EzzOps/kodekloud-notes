@@ -70,9 +70,7 @@ Strategy block details
 * `blueGreen.previewService`: Service name used to preview the new ReplicaSet/version before promotion.
 * `autoPromotionEnabled: false`: Requires manual promotion of the preview ReplicaSet to active. Set to `true` to enable automatic promotion after successful health checks.
 
-<Callout icon="warning">
-  The Argo Rollouts controller only watches Rollout custom resources. It does not manage standard Kubernetes Deployments. When you convert a Deployment into a Rollout (direct conversion), the Rollout becomes the primary controller for future updates.
-</Callout>
+> **warning** The Argo Rollouts controller only watches Rollout custom resources. It does not manage standard Kubernetes Deployments. When you convert a Deployment into a Rollout (direct conversion), the Rollout becomes the primary controller for future updates.
 
 Conversion checklist
 
@@ -121,9 +119,7 @@ scaleDown options explained
 * onSuccess: The Deployment is scaled down only after the Rollout successfully promotes and becomes healthy.
 * progressive: The Rollout progressively scales up while scaling the original Deployment down during migration. If the Rollout fails, the original Deployment is scaled back up.
 
-<Callout icon="lightbulb">
-  Use the workloadRef approach when you need to integrate with existing CI/CD tooling, separate responsibilities between teams (infra owns Deployment, app team owns Rollout), or adopt Argo Rollouts gradually without recreating resources.
-</Callout>
+> **lightbulb** Use the workloadRef approach when you need to integrate with existing CI/CD tooling, separate responsibilities between teams (infra owns Deployment, app team owns Rollout), or adopt Argo Rollouts gradually without recreating resources.
 
 <Frame>
   <img alt="A presentation slide titled &#x22;Option 2: The workloadRef Method&#x22; with three numbered boxes under &#x22;When would you use this?&#x22; outlining: integrate with existing tools (CI/CD), separation of duties (infra manages Deployment, app team manages Rollout), and gradual adoption (wrap existing Deployment without recreating)." />
@@ -142,6 +138,4 @@ Links and references
 * Kubernetes Deployments: [https://kubernetes.io/docs/concepts/workloads/controllers/deployment/](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 * Best practices for migration and testing: refer to the Argo Rollouts docs for blue/green and canary strategy patterns.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/d363f5a0-40da-4442-9a84-91862257155e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/d363f5a0-40da-4442-9a84-91862257155e)

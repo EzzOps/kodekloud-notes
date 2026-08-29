@@ -61,9 +61,7 @@ Terraform will perform the following actions:
   -/+ resource "aws_instance" "webserver-3" {
 ```
 
-<Callout icon="lightbulb">
-  Even though the EC2 instance itself was successfully provisioned, the failure in the local-exec provisioner ensures that the entire resource is flagged for recreation.
-</Callout>
+> **lightbulb** Even though the EC2 instance itself was successfully provisioned, the failure in the local-exec provisioner ensures that the entire resource is flagged for recreation.
 
 ## Forcing Resource Recreation
 
@@ -100,9 +98,7 @@ $ terraform untaint aws_instance.webserver
 Resource instance aws_instance.webserver has been successfully untainted.
 ```
 
-<Callout icon="lightbulb">
-  Using the taint and untaint commands gives you granular control over your infrastructure. This avoids unnecessary destruction and creation of resources, making your management process more efficient.
-</Callout>
+> **lightbulb** Using the taint and untaint commands gives you granular control over your infrastructure. This avoids unnecessary destruction and creation of resources, making your management process more efficient.
 
 ***
 
@@ -114,6 +110,4 @@ By understanding and utilizing these commands, you can maintain consistency and 
 * [AWS Provider Documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 * [Terraform Basics](https://www.terraform.io/intro)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/ed4291fc-57a9-43d3-abff-eb82bba4a679/lesson/0b66dc3f-bc86-4ae3-bdc3-3a141aa47324" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/ed4291fc-57a9-43d3-abff-eb82bba4a679/lesson/0b66dc3f-bc86-4ae3-bdc3-3a141aa47324)

@@ -70,9 +70,7 @@ error: lost connection to pod
 
 This error indicates that the port-forward command is attempting to map local port 3000 to port 8000 on the pod rather than port 80.
 
-<Callout icon="lightbulb">
-  The service is configured to listen on port 80 but forwards traffic to targetPort 8000 on the pod. However, the deployment’s container is actually listening on port 80.
-</Callout>
+> **lightbulb** The service is configured to listen on port 80 but forwards traffic to targetPort 8000 on the pod. However, the deployment’s container is actually listening on port 80.
 
 ### Service Definition
 
@@ -208,14 +206,10 @@ Test the application again by curling localhost on port 3000 or by opening [http
 
 Now, traffic flows correctly from local port 3000 to service port 80 and finally to the container’s port 80.
 
-<Callout icon="lightbulb">
-  Ensuring that the service's targetPort matches the container’s listening port removes unnecessary translation layers and prevents connection issues.
-</Callout>
+> **lightbulb** Ensuring that the service's targetPort matches the container’s listening port removes unnecessary translation layers and prevents connection issues.
 
 ***
 
 By aligning your port configurations, you eliminate the extra hop (from port 80 to 8000) that caused the connection refusal. This exercise emphasizes the importance of consistent port settings across your Kubernetes resources for reliable application accessibility.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/52ea4462-fc9c-4083-acb3-8e9640eaef8c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/52ea4462-fc9c-4083-acb3-8e9640eaef8c)

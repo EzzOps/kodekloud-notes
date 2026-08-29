@@ -46,7 +46,7 @@ For those seeking deeper technical insights, the full CSI specification is avail
 
 Below is an illustrative diagram outlining the fundamental components of CSI. The image highlights a series of RPCs defined by the CSI standard, demonstrating how container orchestrators interact with storage drivers:
 
-![The image illustrates the Container Storage Interface (CSI) with logos, RPC calls, and guidelines for volume management in container environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869982/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Container-Storage-Interface/frame_150.jpg)
+![The image illustrates the Container Storage Interface (CSI) with logos, RPC calls, and guidelines for volume management in container environments.](https://kodekloud.com/kk-media/image/upload/v1752869982/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Container-Storage-Interface/frame_150.jpg)
 
 > **lightbulb** When integrating CSI, ensure that your storage drivers fully comply with the CSI specification to maintain seamless operation across diverse container orchestrators.
 

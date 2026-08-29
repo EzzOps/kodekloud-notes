@@ -21,9 +21,7 @@ print(response.content)
 * If you need to change the assistant’s persona mid-session, prefer replacing the system message rather than appending multiple system messages (multiple system messages can be confusing).
 * To preserve a persona across separate sessions, include the system message at the start of each new session—models do not retain state between sessions.
 
-<Callout icon="lightbulb">
-  Use the system message to reliably set tone and role (for example, professional, friendly, or terse). Treat the sequence of messages as the full conversation context sent to the model.
-</Callout>
+> **lightbulb** Use the system message to reliably set tone and role (for example, professional, friendly, or terse). Treat the sequence of messages as the full conversation context sent to the model.
 
 ## Next steps
 
@@ -34,9 +32,7 @@ In the following sections we will demonstrate how to construct, manage, and reus
 * [LangChain](https://learn.kodekloud.com/user/courses/langchain)
 * [Introduction to OpenAI course](https://learn.kodekloud.com/user/courses/introduction-to-openai)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/677506d8-0d22-4c90-bee6-b358e5f08e30" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/677506d8-0d22-4c90-bee6-b358e5f08e30)
 
 
 # Parsing Model Output Demo 1
@@ -51,9 +47,7 @@ In this lesson we explore output parsers and how they convert free-text response
   <img alt="The image shows the interface of a Jupyter Notebook, displaying an empty code cell ready for input. The toolbar and menu options are visible at the top." />
 </Frame>
 
-<Callout icon="lightbulb">
-  This lesson assumes your OpenAI API key is already configured in your environment.
-</Callout>
+> **lightbulb** This lesson assumes your OpenAI API key is already configured in your environment.
 
 ## Quick overview
 
@@ -133,9 +127,7 @@ List 3 countries that play cricket in world cup.
 Your response should be a list of comma separated values, eg: `foo, bar, baz`
 ```
 
-<Callout icon="lightbulb">
-  Tip: Using `partial_variables` lets you add dynamic instructions (like format hints) without changing the main prompt template every time.
-</Callout>
+> **lightbulb** Tip: Using `partial_variables` lets you add dynamic instructions (like format hints) without changing the main prompt template every time.
 
 ## 5. Invoke the model with the parser-aware prompt and parse the output
 
@@ -187,10 +179,6 @@ India
 * [LangChain: PromptTemplate](https://langchain.readthedocs.io/)
 * [OpenAI API documentation](https://platform.openai.com/docs)
 
-<Callout icon="warning">
-  LLMs may sometimes ignore formatting instructions. Always validate parser output and add fallback handling for unexpected formats.
-</Callout>
+> **warning** LLMs may sometimes ignore formatting instructions. Always validate parser output and add fallback handling for unexpected formats.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/1d5a8e19-7bfd-497d-8e3e-8ffd23c70eb3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/1d5a8e19-7bfd-497d-8e3e-8ffd23c70eb3)

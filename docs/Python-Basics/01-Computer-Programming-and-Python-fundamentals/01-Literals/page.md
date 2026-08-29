@@ -29,9 +29,7 @@ def login(user_credentials: OAuth2PasswordRequestForm = Depends(), db: Session =
     ).first()
 ```
 
-<Callout icon="lightbulb">
-  Even if pytest sometimes displays "collected 0 items" (e.g., due to naming conventions or missing tests), always double-check that your tests follow the appropriate naming patterns.
-</Callout>
+> **lightbulb** Even if pytest sometimes displays "collected 0 items" (e.g., due to naming conventions or missing tests), always double-check that your tests follow the appropriate naming patterns.
 
 ***
 
@@ -59,9 +57,7 @@ def test_add():
     assert add(5, 3) == 8
 ```
 
-<Callout icon="lightbulb">
-  Pytest automatically discovers tests in files whose names start with <code>test\_</code> and functions that begin with <code>test\_</code>. If your file or function naming deviates from this convention (e.g., using <code>mytest.py</code> or <code>testing\_add()</code>), pytest will not run the tests unless explicitly specified.
-</Callout>
+> **lightbulb** Pytest automatically discovers tests in files whose names start with <code>test\_</code> and functions that begin with <code>test\_</code>. If your file or function naming deviates from this convention (e.g., using <code>mytest.py</code> or <code>testing\_add()</code>), pytest will not run the tests unless explicitly specified.
 
 ***
 
@@ -122,9 +118,7 @@ tests/test_calculations.py .                                              [100%]
 ================================= 1 passed in 0.06s ================================
 ```
 
-<Callout icon="triangle-alert">
-  If pytest reports “collected 0 items”, verify that your test files and functions correctly follow the naming conventions and that an <code>**init**.py</code> file is present in your tests directory if required.
-</Callout>
+> **triangle-alert** If pytest reports “collected 0 items”, verify that your test files and functions correctly follow the naming conventions and that an <code>**init**.py</code> file is present in your tests directory if required.
 
 ***
 
@@ -149,9 +143,7 @@ By following these best practices, you are well on your way to mastering automat
 * [SQLAlchemy Documentation](https://docs.sqlalchemy.org/)
 * [Python Testing with Pytest](https://realpython.com/pytest-python-testing/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/081b1b12-d234-4f5a-a8b1-d3d6d49ce979" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/081b1b12-d234-4f5a-a8b1-d3d6d49ce979)
 
 
 # Literals
@@ -170,9 +162,7 @@ Python categorizes literals into four primary types: integers, floating-point nu
 
 An integer literal represents a whole number without a fractional part. Examples include 200, 1289901, -90, and 1\_000\_000. The underscore in numbers such as 1\_000\_000 improves readability; Python ignores these underscores when evaluating the value.
 
-<Frame>
-  ![The image lists types of literals, focusing on integers, with examples like 200, 1298901, -90, and 1\_000\_000.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883512/notes-assets/images/Python-Basics-Literals/frame_50.jpg)
-</Frame>
+![The image lists types of literals, focusing on integers, with examples like 200, 1298901, -90, and 1\_000\_000.](https://kodekloud.com/kk-media/image/upload/v1752883512/notes-assets/images/Python-Basics-Literals/frame_50.jpg)
 
 Python also supports octal and hexadecimal integer representations.
 
@@ -187,9 +177,7 @@ Octal numbers in Python are indicated by a leading `0o` (or simply `0` in older 
 
 Each digit is then multiplied by its positional weight and summed to determine the final value.
 
-<Frame>
-  ![The image explains literal types, focusing on octal numbers, with an example "0o123" and powers of eight (8², 8¹, 8⁰) shown.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883513/notes-assets/images/Python-Basics-Literals/frame_80.jpg)
-</Frame>
+![The image explains literal types, focusing on octal numbers, with an example "0o123" and powers of eight (8², 8¹, 8⁰) shown.](https://kodekloud.com/kk-media/image/upload/v1752883513/notes-assets/images/Python-Basics-Literals/frame_80.jpg)
 
 ### Hexadecimal Numbers
 
@@ -208,9 +196,7 @@ For example, consider the hexadecimal literal `0x123`:
 
 (1 × 256) + (2 × 16) + (3 × 1) = 256 + 32 + 3 = 291
 
-<Frame>
-  ![The image explains literal types, focusing on hexadecimal numbers, with an example of "0x123" and its positional values (16², 16¹, 16⁰).](../../../../images/kodekloud.com/kk-media/image/upload/v1752883514/notes-assets/images/Python-Basics-Literals/frame_130.jpg)
-</Frame>
+![The image explains literal types, focusing on hexadecimal numbers, with an example of "0x123" and its positional values (16², 16¹, 16⁰).](https://kodekloud.com/kk-media/image/upload/v1752883514/notes-assets/images/Python-Basics-Literals/frame_130.jpg)
 
 ***
 
@@ -237,9 +223,7 @@ If you need to use matching quotes within the string, alternate between single a
 "Hello! \"Python\" is cool"
 ```
 
-<Callout icon="lightbulb">
-  When working with strings, always choose a quoting style that minimizes the need for escaping characters. This makes your code cleaner and more readable.
-</Callout>
+> **lightbulb** When working with strings, always choose a quoting style that minimizes the need for escaping characters. This makes your code cleaner and more readable.
 
 ***
 
@@ -265,12 +249,8 @@ Below is a quick summary of Python literals:
   * Represent truth values with `True` or `False`.
   * Numerical representations of booleans can also be used in certain contexts.
 
-<Frame>
-  ![The image explains literals in programming, categorizing them into numbers, strings, and booleans, with examples for each type, including integers, quotes, and true/false values.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883516/notes-assets/images/Python-Basics-Literals/frame_250.jpg)
-</Frame>
+![The image explains literals in programming, categorizing them into numbers, strings, and booleans, with examples for each type, including integers, quotes, and true/false values.](https://kodekloud.com/kk-media/image/upload/v1752883516/notes-assets/images/Python-Basics-Literals/frame_250.jpg)
 
 That concludes our lesson on Python literals. Practice what you've learned through available hands-on exercises to solidify your understanding.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/4178f96e-8dcd-46a2-a9c9-f65a8c9c73b0/lesson/bbf32558-e044-44e3-b893-427dc5421bdb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/4178f96e-8dcd-46a2-a9c9-f65a8c9c73b0/lesson/bbf32558-e044-44e3-b893-427dc5421bdb)

@@ -10,9 +10,7 @@ A **service mesh** is a dedicated infrastructure layer that handles service-to-s
 
 Rather than embedding networking concerns within each microservice, a service mesh injects a sidecar proxy alongside every service instance. These proxies form the **data plane**, managing all east–west traffic. A **control plane** centrally configures and orchestrates the proxies, enabling dynamic routing, security policies, and telemetry collection.
 
-<Frame>
-  ![The image explains that a service mesh is a dedicated and configurable infrastructure layer that manages communication between services in a microservice architecture without changing the code.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880910/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Service-Mesh/service-mesh-communication-infrastructure.jpg)
-</Frame>
+![The image explains that a service mesh is a dedicated and configurable infrastructure layer that manages communication between services in a microservice architecture without changing the code.](https://kodekloud.com/kk-media/image/upload/v1752880910/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Service-Mesh/service-mesh-communication-infrastructure.jpg)
 
 Key benefits include:
 
@@ -21,9 +19,7 @@ Key benefits include:
 * **Observability**: End-to-end metrics, logs, and distributed tracing
 * **Service Discovery**: Automatic registration and lookup of service instances
 
-<Callout icon="lightbulb">
-  A service mesh is platform-agnostic—popular implementations include [Istio](https://istio.io/), [Linkerd](https://linkerd.io/), and [Consul Connect](https://www.consul.io/).
-</Callout>
+> **lightbulb** A service mesh is platform-agnostic—popular implementations include [Istio](https://istio.io/), [Linkerd](https://linkerd.io/), and [Consul Connect](https://www.consul.io/).
 
 ## Core Responsibilities
 
@@ -38,9 +34,7 @@ The following table summarizes a service mesh’s primary capabilities:
 | Traffic Management | Applies retries, timeouts, fault injection, and traffic splitting policies | Istio VirtualService, Linkerd ServiceProfile       |
 | Observability      | Collects metrics, logs, and traces for end-to-end visibility               | Prometheus, Jaeger, Grafana                        |
 
-<Frame>
-  ![The image illustrates the responsibilities of a service mesh, highlighting traffic management, security, observability, and service discovery across different services using proxies. Each service is represented with a programming language logo and a labeled box.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880911/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Service-Mesh/service-mesh-responsibilities-traffic-security.jpg)
-</Frame>
+![The image illustrates the responsibilities of a service mesh, highlighting traffic management, security, observability, and service discovery across different services using proxies. Each service is represented with a programming language logo and a labeled box.](https://kodekloud.com/kk-media/image/upload/v1752880911/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Service-Mesh/service-mesh-responsibilities-traffic-security.jpg)
 
 * **Service Discovery**\
   Proxies query a centralized registry to resolve healthy service endpoints dynamically.
@@ -66,6 +60,4 @@ In the upcoming sections, we'll explore how to configure each capability with co
 * [Linkerd Documentation](https://linkerd.io/2/reference/)
 * [Envoy Proxy](https://www.envoyproxy.io/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/cda23baf-4be0-48f2-9f91-0c63b7435d90" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/cda23baf-4be0-48f2-9f91-0c63b7435d90)

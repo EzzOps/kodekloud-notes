@@ -61,11 +61,9 @@ tests/test_users.py::test_incorrect_login PASSED
 
 To thoroughly test the login functionality, we extend the tests to cover various failure cases. These include scenarios with a wrong email, wrong password, both credentials wrong, or even missing credentials. Pytest's parameterization feature allows us to efficiently test these different cases.
 
-<Callout icon="lightbulb">
-  Before adding parameterized tests, make sure you have imported Pytest in your test module:
+> **lightbulb** Before adding parameterized tests, make sure you have imported Pytest in your test module:
 
   import pytest
-</Callout>
 
 Consider the following parameterized test implementation:
 
@@ -111,6 +109,4 @@ In summary, we now have a comprehensive set of tests that ensure the API respond
 
 Happy testing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/f32ec73b-a9bf-44b8-ab60-c7464cb0ac1b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/f32ec73b-a9bf-44b8-ab60-c7464cb0ac1b)

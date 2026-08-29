@@ -61,7 +61,7 @@ Azure Portal also provides an intuitive interface for managing both types of ide
 
 > **lightbulb** When you save, an app registration is automatically created in your tenant. This registration includes the object ID, app ID, certificate, and other details that allow you to assign permissions as needed.
 
-![The image shows a Microsoft Azure portal interface for a function app named "getmedbstring," with a pop-up asking to enable a system-assigned managed identity. The status toggle is set to "On."](../../../../images/kodekloud.com/kk-media/image/upload/v1752866656/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Managed-Identities/azure-portal-function-app-managed-identity.jpg)
+![The image shows a Microsoft Azure portal interface for a function app named "getmedbstring," with a pop-up asking to enable a system-assigned managed identity. The status toggle is set to "On."](https://kodekloud.com/kk-media/image/upload/v1752866656/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Managed-Identities/azure-portal-function-app-managed-identity.jpg)
 
 ### Adding a User-Assigned Identity
 
@@ -69,11 +69,11 @@ Azure Portal also provides an intuitive interface for managing both types of ide
 2. Return to your function app, select **Identity**, and go to the **User assigned** tab.
 3. Click **Add** and search for the identity you created (for example, "MSI Functions").
 
-![The image shows a Microsoft Azure portal interface for managing identities, specifically focusing on user-assigned managed identities for a function app. The screen indicates no user-assigned managed identities are currently found, with an option to add one.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866657/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Managed-Identities/azure-portal-user-assigned-identities.jpg)
+![The image shows a Microsoft Azure portal interface for managing identities, specifically focusing on user-assigned managed identities for a function app. The screen indicates no user-assigned managed identities are currently found, with an option to add one.](https://kodekloud.com/kk-media/image/upload/v1752866657/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Managed-Identities/azure-portal-user-assigned-identities.jpg)
 
 After associating the identity with your function app, you can also assign it to other resources, such as a container instance, to leverage the same credentials across multiple services.
 
-![The image shows a Microsoft Azure portal interface where a user is managing identities for a Function App named "getmedbstring." A sidebar is open for adding user-assigned managed identities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866658/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Managed-Identities/azure-portal-function-app-identities.jpg)
+![The image shows a Microsoft Azure portal interface where a user is managing identities for a Function App named "getmedbstring." A sidebar is open for adding user-assigned managed identities.](https://kodekloud.com/kk-media/image/upload/v1752866658/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Managed-Identities/azure-portal-function-app-identities.jpg)
 
 ### Modifying Identity Assignment for Other Resources
 
@@ -83,11 +83,11 @@ To manage identities for a container instance:
 2. Select **Identity**.
 3. Add or remove user-assigned identities as necessary.
 
-![The image shows a Microsoft Azure portal interface displaying the "Identity" section for a container instance named "aci-02," with options for system and user-assigned identities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866660/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Managed-Identities/azure-portal-identity-aci-02.jpg)
+![The image shows a Microsoft Azure portal interface displaying the "Identity" section for a container instance named "aci-02," with options for system and user-assigned identities.](https://kodekloud.com/kk-media/image/upload/v1752866660/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Managed-Identities/azure-portal-identity-aci-02.jpg)
 
 You can also remove an assigned identity by clicking **Remove**. After removal, you can rely solely on the system-assigned identity for permission assignments.
 
-![The image shows a Microsoft Azure portal interface for a Function App named "getmedbstring," specifically focusing on the Identity settings where a system-assigned managed identity is enabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866661/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Managed-Identities/azure-function-app-identity-settings.jpg)
+![The image shows a Microsoft Azure portal interface for a Function App named "getmedbstring," specifically focusing on the Identity settings where a system-assigned managed identity is enabled.](https://kodekloud.com/kk-media/image/upload/v1752866661/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Managed-Identities/azure-function-app-identity-settings.jpg)
 
 ## Managing Environment Variables
 

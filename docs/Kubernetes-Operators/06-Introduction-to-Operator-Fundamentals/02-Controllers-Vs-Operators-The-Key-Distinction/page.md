@@ -53,9 +53,7 @@ Quick rule:
 
 Therefore: every operator is a controller, but not every controller is an operator.
 
-<Callout icon="lightbulb">
-  Summary: Controllers provide the generic reconcile loop. Operators add domain-specific logic and APIs (CRDs) to manage complex application lifecycle and behavior.
-</Callout>
+> **lightbulb** Summary: Controllers provide the generic reconcile loop. Operators add domain-specific logic and APIs (CRDs) to manage complex application lifecycle and behavior.
 
 Quick comparison
 
@@ -74,6 +72,4 @@ References and further reading
 
 The two main pieces that make an operator are the controller (the reconcile logic) and the custom resource (the API surface provided by a CRD).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/81f29cba-286e-40ac-9791-b77dc615836b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/81f29cba-286e-40ac-9791-b77dc615836b)

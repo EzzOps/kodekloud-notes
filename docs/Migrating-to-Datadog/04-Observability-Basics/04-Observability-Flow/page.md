@@ -81,9 +81,7 @@ The following diagram illustrates systems interacting with a monitoring agent us
 * Security and privacy
   * Redact sensitive data before export, use encryption in transit, and enforce access controls to meet compliance requirements.
 
-<Callout icon="lightbulb">
-  Retention and compliance are business decisions. Configure retention lengths and data redaction according to your regulatory and cost requirements.
-</Callout>
+> **lightbulb** Retention and compliance are business decisions. Configure retention lengths and data redaction according to your regulatory and cost requirements.
 
 ## Putting it together: actionable outcomes
 
@@ -102,6 +100,4 @@ With properly instrumented applications and a resilient collection pipeline, tea
 
 That’s it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9d4795bc-91eb-4262-ae9c-f7153c17438e/lesson/d46abd80-d46f-475c-9f1c-13f32290e68b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9d4795bc-91eb-4262-ae9c-f7153c17438e/lesson/d46abd80-d46f-475c-9f1c-13f32290e68b)

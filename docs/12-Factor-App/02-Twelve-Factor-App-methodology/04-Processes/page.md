@@ -29,11 +29,11 @@ A similar challenge arises with session-specific data. For instance, when a user
 
 > **triangle-alert** Even though load balancers can use session-aware mechanisms (sticky sessions) to direct a user to the same process, this approach is unreliable. In case of a process failure, any locally stored data is lost.
 
-![The image illustrates a sticky session concept with three containers showing different visit counts, indicating session persistence for a user across server instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856840/notes-assets/images/12-Factor-App-Processes/frame_90.jpg)
+![The image illustrates a sticky session concept with three containers showing different visit counts, indicating session persistence for a user across server instances.](https://kodekloud.com/kk-media/image/upload/v1752856840/notes-assets/images/12-Factor-App-Processes/frame_90.jpg)
 
 This scenario emphasizes a core principle of the 12-Factor methodology: processes must be stateless and share nothing. Relying on sticky sessions contradicts this principle. Instead, all state information should be stored in external backing services, allowing all processes to access uniform data regardless of which instance handles a given request.
 
-![The image discusses the twelve-factor app methodology, emphasizing stateless, share-nothing processes and advising against using sticky sessions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856841/notes-assets/images/12-Factor-App-Processes/frame_110.jpg)
+![The image discusses the twelve-factor app methodology, emphasizing stateless, share-nothing processes and advising against using sticky sessions.](https://kodekloud.com/kk-media/image/upload/v1752856841/notes-assets/images/12-Factor-App-Processes/frame_110.jpg)
 
 A typical solution is to use an external service, such as a database or caching system like [Redis](https://redis.io), for persistent state or session data. To implement this approach, we modify our application so that the visit count is maintained in a Redis database rather than in the process's memory:
 

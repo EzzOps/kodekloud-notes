@@ -9,9 +9,7 @@ In this lesson we'll cover two focused areas:
 * What a service mesh is and the core concepts behind it (traffic management, security, observability, and policy).
 * How Cilium implements service-mesh capabilities — the architecture, underlying technologies (notably eBPF), and the key features that make Cilium suited for modern microservices environments.
 
-<Callout icon="lightbulb">
-  This lesson assumes familiarity with Kubernetes and basic networking concepts. If you're new to Kubernetes, start with the [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) guide. For hands-on Cilium material, see the [Cilium documentation](https://cilium.io/docs/).
-</Callout>
+> **lightbulb** This lesson assumes familiarity with Kubernetes and basic networking concepts. If you're new to Kubernetes, start with the [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) guide. For hands-on Cilium material, see the [Cilium documentation](https://cilium.io/docs/).
 
 What you'll learn:
 
@@ -37,6 +35,4 @@ Helpful references:
 
 In the sections that follow we'll expand each concept and map it to Cilium's components and architecture, so you can see both the theoretical and implementation sides of a service mesh.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/7e2764f4-5f35-451b-9161-e0312a8efcf5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/7e2764f4-5f35-451b-9161-e0312a8efcf5)

@@ -29,7 +29,7 @@ Learn how to deploy a Canary Function in AWS Lambda with a ready-made blueprint.
 2. In the **Services** menu, search for **Lambda** and click **Lambda**.
 3. Choose **Create function**.
 
-![The image shows the AWS Lambda console where a user is creating a function. It includes options to author from scratch, use a blueprint, or select a container image, with a search for "canary" in the blueprints section.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863125/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-console-function-creation.jpg)
+![The image shows the AWS Lambda console where a user is creating a function. It includes options to author from scratch, use a blueprint, or select a container image, with a search for "canary" in the blueprints section.](https://kodekloud.com/kk-media/image/upload/v1752863125/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-console-function-creation.jpg)
 
 ## 2. Select the Canary Blueprint
 
@@ -38,7 +38,7 @@ AWS provides several blueprints with boilerplate code for common tasks. In the *
 * Search for **canary**.
 * Select **Canary Function** (runtime: **Python 3.7**).
 
-![The image shows the AWS Lambda console where a user can create a function. Options include authoring from scratch, using a blueprint, or selecting a container image, with a blueprint for scheduling periodic URL checks highlighted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863126/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-console-create-function.jpg)
+![The image shows the AWS Lambda console where a user can create a function. Options include authoring from scratch, using a blueprint, or selecting a container image, with a blueprint for scheduling periodic URL checks highlighted.](https://kodekloud.com/kk-media/image/upload/v1752863126/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-console-create-function.jpg)
 
 This blueprint periodically checks a URL for a specified text string.
 
@@ -48,13 +48,13 @@ This blueprint periodically checks a URL for a specified text string.
 2. Enter a **Function name**, e.g., `KodeKloudCanaryDemo`.
 3. Under **Permissions**, select **Create a new role with basic Lambda permissions**.
 
-![The image shows a configuration screen for creating a Lambda function in the AWS Management Console, with options for setting the function name and execution role.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863127/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-function-configuration-screen.jpg)
+![The image shows a configuration screen for creating a Lambda function in the AWS Management Console, with options for setting the function name and execution role.](https://kodekloud.com/kk-media/image/upload/v1752863127/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-function-configuration-screen.jpg)
 
 EventBridge is already set as the trigger. Create a new rule:
 
 * **Rule name**: `CanaryDemoRule`
 
-![The image shows a configuration screen for setting up an EventBridge (CloudWatch Events) trigger in the AWS Management Console, with options to create a new rule named "CanaryDemoRule."](../../../../images/kodekloud.com/kk-media/image/upload/v1752863128/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/eventbridge-trigger-configuration-aws-console.jpg)
+![The image shows a configuration screen for setting up an EventBridge (CloudWatch Events) trigger in the AWS Management Console, with options to create a new rule named "CanaryDemoRule."](https://kodekloud.com/kk-media/image/upload/v1752863128/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/eventbridge-trigger-configuration-aws-console.jpg)
 
 ## 4. Review the Sample Code
 
@@ -110,7 +110,7 @@ This uses two environment variables:
    | `site`     | `https://kodekloud.com`                      |
    | `expected` | a string *not* on the site (to test failure) |
 
-![The image shows a section of the AWS Lambda console where environment variables are being configured. It includes key-value pairs for a site URL and an expected value.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863129/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-console-environment-variables.jpg)
+![The image shows a section of the AWS Lambda console where environment variables are being configured. It includes key-value pairs for a site URL and an expected value.](https://kodekloud.com/kk-media/image/upload/v1752863129/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-console-environment-variables.jpg)
 
 When ready, click **Create function**. AWS will provision the new function.
 
@@ -118,7 +118,7 @@ When ready, click **Create function**. AWS will provision the new function.
 
 After creation, the Lambda console displays your function’s details and trigger.
 
-![The image shows an AWS Lambda console where a function named "KodeKloudCanaryDemo" has been successfully created and configured with a trigger. It includes details about the function and an option to add a destination.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863131/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-kodekloudcanarydemo-function.jpg)
+![The image shows an AWS Lambda console where a function named "KodeKloudCanaryDemo" has been successfully created and configured with a trigger. It includes details about the function and an option to add a destination.](https://kodekloud.com/kk-media/image/upload/v1752863131/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-kodekloudcanarydemo-function.jpg)
 
 ## 7. Add SNS Destinations for Success & Failure
 
@@ -130,15 +130,15 @@ By default, asynchronous invocations don’t return errors to the trigger. To ca
 4. For **Destination type**, choose **SNS topic** and pick (or create) your topic, e.g., `Canary Demo Failures`.
 5. Save and allow AWS to create the necessary IAM role.
 
-![The image shows a configuration screen for adding a destination in AWS Lambda, with options for source type, condition, and destination type. The user can select between asynchronous or stream invocation and choose conditions like "On failure" or "On success."](../../../../images/kodekloud.com/kk-media/image/upload/v1752863132/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-destination-configuration-screen.jpg)
+![The image shows a configuration screen for adding a destination in AWS Lambda, with options for source type, condition, and destination type. The user can select between asynchronous or stream invocation and choose conditions like "On failure" or "On success."](https://kodekloud.com/kk-media/image/upload/v1752863132/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-destination-configuration-screen.jpg)
 
 Repeat to add an **On success** destination to an SNS topic (e.g., `Canary Demo Success`).
 
-![The image shows the AWS Lambda console with a configuration screen for adding a destination. It includes options for source type, condition, and destination type selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863133/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-console-destination-configuration.jpg)
+![The image shows the AWS Lambda console with a configuration screen for adding a destination. It includes options for source type, condition, and destination type selection.](https://kodekloud.com/kk-media/image/upload/v1752863133/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-console-destination-configuration.jpg)
 
 Once done, both destinations will appear alongside your EventBridge rule.
 
-![The image shows an AWS Lambda configuration screen for a function named "KodeKloudCanaryDemo," with EventBridge and Amazon SNS as triggers and destinations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863135/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-kodekloudcanarydemo-configuration.jpg)
+![The image shows an AWS Lambda configuration screen for a function named "KodeKloudCanaryDemo," with EventBridge and Amazon SNS as triggers and destinations.](https://kodekloud.com/kk-media/image/upload/v1752863135/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-kodekloudcanarydemo-configuration.jpg)
 
 ## 8. Test the Canary Function
 
@@ -147,7 +147,7 @@ Once done, both destinations will appear alongside your EventBridge rule.
 2. To simulate success, go to **Configuration > Variables and secrets** and update `expected` to a word you know exists (e.g., `learned`).
 3. Save and click **Test** again.
 
-![The image shows an AWS Lambda function configuration screen with triggers and environment variables. It includes EventBridge and Amazon SNS as triggers and displays environment variables with keys "expected" and "site."](../../../../images/kodekloud.com/kk-media/image/upload/v1752863136/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-function-configuration-triggers.jpg)
+![The image shows an AWS Lambda function configuration screen with triggers and environment variables. It includes EventBridge and Amazon SNS as triggers and displays environment variables with keys "expected" and "site."](https://kodekloud.com/kk-media/image/upload/v1752863136/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-function-configuration-triggers.jpg)
 
 Now the function should pass the validation.
 
@@ -157,12 +157,12 @@ To review invocation metrics:
 
 1. Click the **Monitor** tab in the Lambda console.
 
-![The image shows a dashboard from the AWS Lambda console, displaying metrics such as invocations, duration, error count, success rate, throttles, async delivery failures, and iterator age.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863138/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-console-dashboard-metrics.jpg)
+![The image shows a dashboard from the AWS Lambda console, displaying metrics such as invocations, duration, error count, success rate, throttles, async delivery failures, and iterator age.](https://kodekloud.com/kk-media/image/upload/v1752863138/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-lambda-console-dashboard-metrics.jpg)
 
 2. For detailed logs, select **View logs in CloudWatch**.\
    Inspect each log stream to see both failures and successful runs.
 
-![The image shows an AWS CloudWatch console displaying log events with timestamps and messages related to request checks and completions. The interface includes options for filtering and navigating through logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863139/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-cloudwatch-console-log-events.jpg)
+![The image shows an AWS CloudWatch console displaying log events with timestamps and messages related to request checks and completions. The interface includes options for filtering and navigating through logs.](https://kodekloud.com/kk-media/image/upload/v1752863139/notes-assets/images/AWS-Lambda-Create-a-Canary-Function-using-Blueprint/aws-cloudwatch-console-log-events.jpg)
 
 ***
 

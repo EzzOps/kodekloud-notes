@@ -46,9 +46,7 @@ Summary of markers and JSON tag behavior:
 | `json:"replicas,omitempty"`           | Controls serialized field name and omitempty behavior | Omitted when zero value unless API server applies a default |
 | Capitalized Go field names            | Required to export fields to code generators          | `Image`, `Replicas` (not `image` or `replicas`)             |
 
-<Callout icon="lightbulb">
-  Run the code generators after changing types so [controller-tools](https://github.com/kubernetes-sigs/controller-tools) can update the generated helpers and the CRD schema.
-</Callout>
+> **lightbulb** Run the code generators after changing types so [controller-tools](https://github.com/kubernetes-sigs/controller-tools) can update the generated helpers and the CRD schema.
 
 Regenerate generated code and manifests
 
@@ -114,6 +112,4 @@ Links and references
 * [Kubernetes CustomResourceDefinition docs](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
 * [OpenAPI v3 validation for CRDs](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#validation)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/693d583d-ea0d-4691-ad56-bb7fa814a106" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/693d583d-ea0d-4691-ad56-bb7fa814a106)

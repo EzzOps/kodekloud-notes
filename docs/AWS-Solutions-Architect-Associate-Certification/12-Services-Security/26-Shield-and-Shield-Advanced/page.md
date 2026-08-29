@@ -23,7 +23,7 @@ AWS Shield Advanced is a premium service, available for an additional fee of \$3
 
 Below is a diagram that illustrates the architecture of AWS Shield and Shield Advanced. The diagram demonstrates how AWS Shield defends against threats from malicious actors while ensuring uninterrupted access for legitimate users to AWS services and associated Virtual Private Clouds (VPCs):
 
-![The image illustrates the architecture of AWS Shield and Shield Advanced, showing how it protects against threats from hackers while allowing legitimate users access through various AWS services and a Virtual Private Cloud (VPC).](../../../../images/kodekloud.com/kk-media/image/upload/v1752865924/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Shield-and-Shield-Advanced/aws-shield-architecture-diagram.jpg)
+![The image illustrates the architecture of AWS Shield and Shield Advanced, showing how it protects against threats from hackers while allowing legitimate users access through various AWS services and a Virtual Private Cloud (VPC).](https://kodekloud.com/kk-media/image/upload/v1752865924/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Shield-and-Shield-Advanced/aws-shield-architecture-diagram.jpg)
 
 ## Key Features of AWS Shield Advanced
 
@@ -37,11 +37,11 @@ AWS Shield Advanced enhances your security posture with a suite of advanced feat
 
 The diagram below summarizes these key features, highlighting AWS WAF integration, automatic application layer DDoS mitigation, and health-based detection:
 
-![The image describes three features: AWS WAF Integration, Automatic Application Layer DDoS Mitigation, and Health-Based Detection, each with brief explanations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865925/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Shield-and-Shield-Advanced/aws-waf-ddos-mitigation-features.jpg)
+![The image describes three features: AWS WAF Integration, Automatic Application Layer DDoS Mitigation, and Health-Based Detection, each with brief explanations.](https://kodekloud.com/kk-media/image/upload/v1752865925/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Shield-and-Shield-Advanced/aws-waf-ddos-mitigation-features.jpg)
 
 Additionally, the following diagram emphasizes the role of the AWS Shield Response Team, proactive engagement during DDoS events, and the available cost protection measures:
 
-![The image describes three features of AWS Shield: the AWS Shield Response Team (SRT) for DDoS attack assistance, Proactive Engagement for direct contact during attacks, and Cost Protection Opportunities for financial safeguards against DDoS-related billing spikes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865927/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Shield-and-Shield-Advanced/aws-shield-features-srt-engagement.jpg)
+![The image describes three features of AWS Shield: the AWS Shield Response Team (SRT) for DDoS attack assistance, Proactive Engagement for direct contact during attacks, and Cost Protection Opportunities for financial safeguards against DDoS-related billing spikes.](https://kodekloud.com/kk-media/image/upload/v1752865927/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Shield-and-Shield-Advanced/aws-shield-features-srt-engagement.jpg)
 
 For further details on implementing AWS security measures, consider reviewing the [AWS Documentation](https://aws.amazon.com/shield/) and exploring additional resources on [DDoS Protection Best Practices](https://aws.amazon.com/architecture/ddos-protection/).
 

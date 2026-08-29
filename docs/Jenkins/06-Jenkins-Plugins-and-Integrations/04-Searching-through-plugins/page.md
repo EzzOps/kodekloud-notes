@@ -10,9 +10,7 @@ In this guide, learn how to search for and manage plugins on your Jenkins instan
 
 Begin by navigating to your Jenkins dashboard. Once there, click on **Manage Jenkins**. This will display various administrative options including **Manage Plugins**. The plugin manager allows you to add, remove, disable, or enable plugins that extend Jenkins' functionality.
 
-<Frame>
-  ![The image shows the Jenkins dashboard, highlighting options for managing plugins, system configuration, security settings, and build status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880080/notes-assets/images/Jenkins-Searching-through-plugins/frame_20.jpg)
-</Frame>
+![The image shows the Jenkins dashboard, highlighting options for managing plugins, system configuration, security settings, and build status.](https://kodekloud.com/kk-media/image/upload/v1752880080/notes-assets/images/Jenkins-Searching-through-plugins/frame_20.jpg)
 
 ## Step 2: Exploring Plugin Tabs
 
@@ -25,9 +23,7 @@ Click on **Manage Plugins** to view the following tabs:
 
 For instance, to integrate the Azure CLI with Jenkins, you might install the Azure CLI Plugin. Navigate to the **Available** tab and search for **Azure Credentials**. The search results indicate that the plugin was last updated two months and 17 days ago and is used for managing Azure credentials via the Jenkins Credentials API.
 
-<Callout icon="lightbulb">
-  When you click on a plugin, detailed usage instructions are provided to help integrate it within your Jenkinsfile.
-</Callout>
+> **lightbulb** When you click on a plugin, detailed usage instructions are provided to help integrate it within your Jenkinsfile.
 
 ## Step 3: Using the Azure Credentials Plugin in Your Jenkinsfile
 
@@ -101,9 +97,7 @@ public ListBoxModel doFillAzureCredentialsIdItems(@AncestorInPath Item owner) {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Always ensure that sensitive credentials are handled securely and are not exposed in plain text.
-</Callout>
+> **triangle-alert** Always ensure that sensitive credentials are handled securely and are not exposed in plain text.
 
 ## Step 5: Finalizing the Plugin Installation
 
@@ -130,6 +124,4 @@ For more information on Jenkins and its plugins, check out the following resourc
 
 Happy automating with Jenkins, and see you in the next article!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/34e95998-38e2-4735-a378-b466e6a5851c/lesson/e65ef85a-9cca-4ef1-b786-5d69bd0eb174" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/34e95998-38e2-4735-a378-b466e6a5851c/lesson/e65ef85a-9cca-4ef1-b786-5d69bd0eb174)

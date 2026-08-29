@@ -20,7 +20,7 @@ Another practical method is organizing resources by type. For example, you might
 
 Additional grouping criteria may include department or cost center, geography (region or location), and resource lifecycle considerations. However, it's essential to balance these strategies to avoid excessive administrative complexity from managing too many resource groups.
 
-![The image is a diagram illustrating the design of resource groups in Azure, showing options to group by app or by type, with considerations for management, access controls, and compliance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866936/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-resource-groups/azure-resource-groups-design-diagram.jpg)
+![The image is a diagram illustrating the design of resource groups in Azure, showing options to group by app or by type, with considerations for management, access controls, and compliance.](https://kodekloud.com/kk-media/image/upload/v1752866936/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-resource-groups/azure-resource-groups-design-diagram.jpg)
 
 ## Role-Based Access Control and Policies
 

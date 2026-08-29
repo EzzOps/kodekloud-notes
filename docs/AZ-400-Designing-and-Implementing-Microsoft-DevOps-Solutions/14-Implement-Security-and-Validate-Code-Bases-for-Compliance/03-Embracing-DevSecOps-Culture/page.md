@@ -10,7 +10,7 @@ In this lesson, we’ll unpack DevSecOps—its concept, cultural impact, and tan
 
 DevSecOps merges development, operations, and security teams into a unified workflow. By tearing down traditional silos, you ensure security is embedded from the first line of code to production.
 
-![The image illustrates the concept of DevSecOps, highlighting the integration of security practices throughout the development lifecycle, with a visual of a computer, code, and a security shield.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868000/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Embracing-DevSecOps-Culture/devsecops-security-integration-lifecycle-illustration.jpg)
+![The image illustrates the concept of DevSecOps, highlighting the integration of security practices throughout the development lifecycle, with a visual of a computer, code, and a security shield.](https://kodekloud.com/kk-media/image/upload/v1752868000/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Embracing-DevSecOps-Culture/devsecops-security-integration-lifecycle-illustration.jpg)
 
 In legacy models, developers ship features, operations teams handle deployment, and security checks happen at the end—often causing delays. DevSecOps flips this by integrating security in every phase of your CI/CD pipeline.
 
@@ -18,7 +18,7 @@ In legacy models, developers ship features, operations teams handle deployment, 
 
 Accelerating release cycles is vital for staying competitive, but not at the expense of security. DevSecOps harmonizes rapid development with robust protection mechanisms.
 
-![The image is about embracing DevSecOps culture, highlighting the objective of integrating rapid development cycles with high security standards. It features a graphic of a hand interacting with a laptop and various icons, emphasizing innovation and security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868001/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Embracing-DevSecOps-Culture/devsecops-culture-innovation-security-graphic.jpg)
+![The image is about embracing DevSecOps culture, highlighting the objective of integrating rapid development cycles with high security standards. It features a graphic of a hand interacting with a laptop and various icons, emphasizing innovation and security.](https://kodekloud.com/kk-media/image/upload/v1752868001/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Embracing-DevSecOps-Culture/devsecops-culture-innovation-security-graphic.jpg)
 
 By shifting security left—introducing controls early—you can innovate faster without creating exploitable gaps.
 
@@ -45,7 +45,7 @@ Integrate automated policy checks, container scans, and compliance gates into yo
 
 Use real-time monitoring, alerting, and incident response workflows to detect threats immediately and limit impact.
 
-![The image illustrates the key principles of embracing a DevSecOps culture, focusing on preemptive security measures, automated security protocols, and continuous security monitoring. It features a central infinity loop symbolizing the integration of development, security, and operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868002/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Embracing-DevSecOps-Culture/devsecops-culture-security-infinity-loop.jpg)
+![The image illustrates the key principles of embracing a DevSecOps culture, focusing on preemptive security measures, automated security protocols, and continuous security monitoring. It features a central infinity loop symbolizing the integration of development, security, and operations.](https://kodekloud.com/kk-media/image/upload/v1752868002/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Embracing-DevSecOps-Culture/devsecops-culture-security-infinity-loop.jpg)
 
 ### 4. Cross-Disciplinary Collaboration
 
@@ -55,7 +55,7 @@ Cultivate shared responsibility across development, operations, and security tea
 
 Treat security configurations—policies, rules, and scripts—as version-controlled code. This ensures every change is peer-reviewed, auditable, and automatically deployed via CI/CD.
 
-![The image illustrates the concept of embracing DevSecOps culture, highlighting the importance of treating security configurations and policies with the same importance as code, ensuring they are version-controlled and subject to review. It features a cartoon character with a magnifying glass, a shield, and a lock symbol.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868003/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Embracing-DevSecOps-Culture/devsecops-culture-security-illustration.jpg)
+![The image illustrates the concept of embracing DevSecOps culture, highlighting the importance of treating security configurations and policies with the same importance as code, ensuring they are version-controlled and subject to review. It features a cartoon character with a magnifying glass, a shield, and a lock symbol.](https://kodekloud.com/kk-media/image/upload/v1752868003/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Embracing-DevSecOps-Culture/devsecops-culture-security-illustration.jpg)
 
 > **triangle-alert** Embedding sensitive credentials directly in code can expose secrets. Use secret-management tools such as HashiCorp Vault or AWS Secrets Manager to safeguard keys and tokens.
 

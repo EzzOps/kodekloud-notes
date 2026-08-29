@@ -113,9 +113,7 @@ In the ArgoCD UI navigate to Settings → Projects to view and edit projects. Th
   <img alt="A web UI screenshot of the Argo CD Projects settings page showing the &#x22;deny&#x22; project summary with general info (name &#x22;deny&#x22;, 0 applications), source repositories set to &#x22;*&#x22; and no scoped repositories. The top has buttons to add roles/sync windows or delete, and a left navigation pane lists Settings, User Info and Documentation." />
 </Frame>
 
-<Callout icon="lightbulb">
-  The UI in this environment auto-saves project edits, so you may not see an explicit "Save" button after changes.
-</Callout>
+> **lightbulb** The UI in this environment auto-saves project edits, so you may not see an explicit "Save" button after changes.
 
 ## Creating a Restricted Project (example)
 
@@ -218,11 +216,9 @@ Because a disallowed resource prevented synchronization, the application tree wi
 
 That's all for now.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/6f0d0dba-4dab-49c1-9f6f-62b480160bae" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/6f0d0dba-4dab-49c1-9f6f-62b480160bae)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/0d4320f9-7a40-42de-971e-121e81468411" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/0d4320f9-7a40-42de-971e-121e81468411)
 
 
 # Demo Deploy Apps using HELM Chart

@@ -8,13 +8,13 @@ This article delves into the essential role of API gateways within modern API ma
 
 In addition to routing, the API gateway manages critical functions like authentication, SSL termination, and rate limiting. These capabilities ensure secure and efficient communication, reduce server load, and enforce request thresholds, thereby boosting overall system security, performance, and scalability.
 
-![The image illustrates the role of an API gateway, showing its position between client apps and services, and highlighting its functions such as authentication, SSL offloading, and routing. It includes a diagram with components like Identity Provider, API Gateway, Service A, Service B, and Logging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866318/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-API-Gateways/api-gateway-architecture-diagram.jpg)
+![The image illustrates the role of an API gateway, showing its position between client apps and services, and highlighting its functions such as authentication, SSL offloading, and routing. It includes a diagram with components like Identity Provider, API Gateway, Service A, Service B, and Logging.](https://kodekloud.com/kk-media/image/upload/v1752866318/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-API-Gateways/api-gateway-architecture-diagram.jpg)
 
 > **lightbulb** An API gateway enables streamlined client-to-service communication while abstracting and centralizing cross-cutting responsibilities.
 
 Without an API gateway, clients must directly interact with multiple backend services. This direct communication leads to increased complexity and tightly coupled systems—any change in a backend service can immediately impact all consuming clients. Moreover, each service is then responsible for its own security, logging, and performance optimizations. Handling diverse protocols across services further complicates integration.
 
-![The image lists potential issues when deploying an API without a gateway, including complex client code, client-backend coupling, multiple service calls, handling public-facing services, and the need for client-friendly protocols.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866319/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-API-Gateways/api-deployment-issues-without-gateway.jpg)
+![The image lists potential issues when deploying an API without a gateway, including complex client code, client-backend coupling, multiple service calls, handling public-facing services, and the need for client-friendly protocols.](https://kodekloud.com/kk-media/image/upload/v1752866319/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-API-Gateways/api-deployment-issues-without-gateway.jpg)
 
 > **triangle-alert** Avoiding the use of an API gateway can result in a fragile, unscalable, and insecure system. Implementing a gateway is highly recommended to mitigate these risks.
 
@@ -31,7 +31,7 @@ Implementing an API gateway unlocks several design patterns that simplify client
 3. **Gateway Offloading**\
    Cross-cutting concerns—such as authentication, logging, and SSL termination—are managed by the gateway, reducing the burden on individual services.
 
-![The image illustrates three functional design patterns: Gateway Routing, Gateway Aggregation, and Gateway Offloading, each with a brief description of their use.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866320/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-API-Gateways/gateway-routing-aggregation-offloading.jpg)
+![The image illustrates three functional design patterns: Gateway Routing, Gateway Aggregation, and Gateway Offloading, each with a brief description of their use.](https://kodekloud.com/kk-media/image/upload/v1752866320/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-API-Gateways/gateway-routing-aggregation-offloading.jpg)
 
 These design patterns highlight the flexibility of platforms like [Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/) and their ability to create scalable, efficient, and maintainable API systems.
 
@@ -117,17 +117,17 @@ When deploying the API Management service in the Azure portal, you need to selec
 
 Azure offers a range of monitoring and connectivity options, including Log Analytics, Defender for APIs, and Application Insights. You can configure the service to be public, attach it to a virtual network, or use a private endpoint. Managed identities further enhance operations such as retrieving certificates from the Key Vault.
 
-![The image shows a Microsoft Azure portal page for creating an API Management service, specifically on the "Monitor + secure" tab, with options for add-ins like Log Analytics, Defender for APIs, and Application Insights.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866322/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-API-Gateways/azure-api-management-monitor-tab.jpg)
+![The image shows a Microsoft Azure portal page for creating an API Management service, specifically on the "Monitor + secure" tab, with options for add-ins like Log Analytics, Defender for APIs, and Application Insights.](https://kodekloud.com/kk-media/image/upload/v1752866322/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-API-Gateways/azure-api-management-monitor-tab.jpg)
 
-![The image shows a Microsoft Azure portal interface for creating an API Management service, specifically on the "Virtual network" tab, where connectivity type options are being selected.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866323/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-API-Gateways/azure-portal-api-management-virtual-network.jpg)
+![The image shows a Microsoft Azure portal interface for creating an API Management service, specifically on the "Virtual network" tab, where connectivity type options are being selected.](https://kodekloud.com/kk-media/image/upload/v1752866323/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-API-Gateways/azure-portal-api-management-virtual-network.jpg)
 
 After finalizing these options, you proceed with deployment.
 
-![The image shows a Microsoft Azure portal page for creating an API Management service, displaying details like subscription, resource group, and region, with a "Create" button highlighted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866324/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-API-Gateways/azure-portal-api-management-creation.jpg)
+![The image shows a Microsoft Azure portal page for creating an API Management service, displaying details like subscription, resource group, and region, with a "Create" button highlighted.](https://kodekloud.com/kk-media/image/upload/v1752866324/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-API-Gateways/azure-portal-api-management-creation.jpg)
 
 Deployment typically takes between 40 and 60 minutes. Once deployed, click "Go to Resource" to view details like the gateway URL and developer portal URL. An Echo API is provided for testing, and additional APIs can be added by navigating to the "APIs" section.
 
-![The image shows a Microsoft Azure portal interface for API management, displaying options to define a new API using various protocols like HTTP, WebSocket, GraphQL, and gRPC, as well as options to create APIs from definitions or Azure resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866325/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-API-Gateways/azure-portal-api-management-interface.jpg)
+![The image shows a Microsoft Azure portal interface for API management, displaying options to define a new API using various protocols like HTTP, WebSocket, GraphQL, and gRPC, as well as options to create APIs from definitions or Azure resources.](https://kodekloud.com/kk-media/image/upload/v1752866325/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-API-Gateways/azure-portal-api-management-interface.jpg)
 
 ### Creating APIs from App Service
 
@@ -136,11 +136,11 @@ From the available options, you can define an API from an HTTP endpoint by selec
 * **Display Name:** Employee API
 * **Path:** /api/employee
 
-![The image shows a Microsoft Azure portal interface where a user is creating an API from an App Service. The "Create from App Service" dialog box is open, displaying fields for App Service, Display name, Name, and API URL suffix.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866327/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-API-Gateways/azure-portal-create-api-app-service.jpg)
+![The image shows a Microsoft Azure portal interface where a user is creating an API from an App Service. The "Create from App Service" dialog box is open, displaying fields for App Service, Display name, Name, and API URL suffix.](https://kodekloud.com/kk-media/image/upload/v1752866327/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-API-Gateways/azure-portal-create-api-app-service.jpg)
 
 Similarly, add the flight logs API with the path "/api/flightlogs":
 
-![The image shows a Microsoft Azure portal interface where a user is creating an API from an App Service, specifically for a "Flight Logs API." The form includes fields for App Service, Display Name, Name, and API URL suffix.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866328/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-API-Gateways/azure-portal-flight-logs-api.jpg)
+![The image shows a Microsoft Azure portal interface where a user is creating an API from an App Service, specifically for a "Flight Logs API." The form includes fields for App Service, Display Name, Name, and API URL suffix.](https://kodekloud.com/kk-media/image/upload/v1752866328/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-API-Gateways/azure-portal-flight-logs-api.jpg)
 
 At this stage, direct API calls are not required as additional configurations—such as subscription keys and policies—are necessary to secure and manage these APIs effectively. Once configured, you can test the APIs through the Azure portal.
 

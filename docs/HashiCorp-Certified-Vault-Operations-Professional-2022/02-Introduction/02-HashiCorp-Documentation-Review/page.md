@@ -6,9 +6,7 @@ This guide helps navigate HashiCorp Vault documentation for the Vault Certified 
 
 In this guide, you’ll learn how to navigate the official HashiCorp Vault documentation and API references effectively for the Vault Certified Operations Professional exam. You will have access to the [Vault Documentation](https://www.vaultproject.io/docs) and the [Vault API Reference](https://www.vaultproject.io/api-docs) during the test—exactly as shown on screen. This article highlights the key sections, best practices, and example stanzas you’ll need.
 
-<Frame>
-  ![The image shows a webpage from HashiCorp Vault's documentation, featuring navigation links on the left and sections on "Get Started" and "Use Cases" for managing secrets and encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878571/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-HashiCorp-Documentation-Review/hashicorp-vault-documentation-get-started.jpg)
-</Frame>
+![The image shows a webpage from HashiCorp Vault's documentation, featuring navigation links on the left and sections on "Get Started" and "Use Cases" for managing secrets and encryption.](https://kodekloud.com/kk-media/image/upload/v1752878571/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-HashiCorp-Documentation-Review/hashicorp-vault-documentation-get-started.jpg)
 
 ***
 
@@ -45,13 +43,9 @@ Key parameters:
 * `tls_cert_file`
 * `tls_key_file`
 
-<Callout icon="triangle-alert">
-  Disabling TLS (`tls_disable = true`) is insecure. Only use in development or isolated test environments.
-</Callout>
+> **triangle-alert** Disabling TLS (`tls_disable = true`) is insecure. Only use in development or isolated test environments.
 
-<Frame>
-  ![The image shows TCP listener configuration options including response headers and listener parameters.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878572/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-HashiCorp-Documentation-Review/hashicorp-vault-tcp-listeners-config.jpg)
-</Frame>
+![The image shows TCP listener configuration options including response headers and listener parameters.](https://kodekloud.com/kk-media/image/upload/v1752878572/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-HashiCorp-Documentation-Review/hashicorp-vault-tcp-listeners-config.jpg)
 
 ```hcl theme={null}
 listener "tcp" {
@@ -265,9 +259,7 @@ vault read auth/approle/role/my-role/role-id
 vault write -f auth/approle/role/my-role/secret-id
 ```
 
-<Frame>
-  ![The image shows parameters for configuring the AppRole method, such as role\_name, bind\_secret\_id, and token\_ttl.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878573/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-HashiCorp-Documentation-Review/hashicorp-vault-approle-parameters-docs.jpg)
-</Frame>
+![The image shows parameters for configuring the AppRole method, such as role\_name, bind\_secret\_id, and token\_ttl.](https://kodekloud.com/kk-media/image/upload/v1752878573/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-HashiCorp-Documentation-Review/hashicorp-vault-approle-parameters-docs.jpg)
 
 Consult the [AppRole API documentation](https://www.vaultproject.io/api-docs/auth/approle) for additional fields and examples.
 
@@ -308,6 +300,4 @@ By mastering these sections—Configuration, CLI, Vault Agent, Secrets Engines, 
 * [Vault API Reference](https://www.vaultproject.io/api-docs)
 * [Learn Vault Tutorials](https://learn.hashicorp.com/vault)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/f7e154f7-6935-4db7-a406-099f338b1655/lesson/970caae1-ef96-479f-9f72-e2c54932841c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/f7e154f7-6935-4db7-a406-099f338b1655/lesson/970caae1-ef96-479f-9f72-e2c54932841c)

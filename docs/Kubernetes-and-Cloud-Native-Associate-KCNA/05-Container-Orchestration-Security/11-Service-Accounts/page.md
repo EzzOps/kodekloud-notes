@@ -17,9 +17,7 @@ Imagine you have developed a simple Python dashboard application that retrieves 
 
 To create a service account named `dashboard-sa`, run the following command. This command not only creates the account but also automatically generates a token for API authentication:
 
-<Frame>
-  ![The image shows a Kubernetes dashboard interface connected to a Kubernetes cluster with three nodes, illustrating the kube-api interaction.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880606/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Service-Accounts/frame_120.jpg)
-</Frame>
+![The image shows a Kubernetes dashboard interface connected to a Kubernetes cluster with three nodes, illustrating the kube-api interaction.](https://kodekloud.com/kk-media/image/upload/v1752880606/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Service-Accounts/frame_120.jpg)
 
 ```bash theme={null}
 kubectl create serviceaccount dashboard-sa

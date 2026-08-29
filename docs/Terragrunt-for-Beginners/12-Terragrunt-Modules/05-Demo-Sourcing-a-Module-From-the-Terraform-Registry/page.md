@@ -13,9 +13,7 @@ In this guide, we’ll demonstrate how to source the same S3 bucket module from 
 | GitHub             | `git::https://github.com/...` | `git::https://github.com/terraform-aws-modules/terraform-aws-s3-bucket.git` |
 | Terraform Registry | `tfr:///`                     | `tfr:///terraform-aws-modules/s3-bucket/aws?version=4.1.2`                  |
 
-<Callout icon="lightbulb">
-  Pinning module versions (e.g. `?version=4.1.2`) ensures reproducible builds and prevents unexpected changes when upstream modules are updated.
-</Callout>
+> **lightbulb** Pinning module versions (e.g. `?version=4.1.2`) ensures reproducible builds and prevents unexpected changes when upstream modules are updated.
 
 ## terragrunt.hcl Configuration
 

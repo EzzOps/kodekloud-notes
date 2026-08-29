@@ -64,11 +64,9 @@ Two practical points to keep in mind:
   <img alt="The image outlines when to use an operator in Kubernetes. It suggests using one for ongoing operational logic and not needing one for stateless apps, deployed using Deployment and Helm." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Use an Operator when your application requires ongoing operational automation that cannot be expressed easily with plain declarative objects or Helm charts. If your service is stateless and a Deployment plus a Helm chart suffice, an Operator is probably unnecessary.
+> **lightbulb** Use an Operator when your application requires ongoing operational automation that cannot be expressed easily with plain declarative objects or Helm charts. If your service is stateless and a Deployment plus a Helm chart suffice, an Operator is probably unnecessary.
 
   Remember: an Operator is production software — it needs tests, RBAC, monitoring, and updates. Extending the Kubernetes control plane carries the same responsibilities as operating any other controller.
-</Callout>
 
 This section examines the anatomy of an Operator — the CRD plus the controller — and prepares you to build and reason about Operators that encode operational knowledge reliably and repeatably.
 
@@ -80,6 +78,4 @@ Links and references
 * [Operator Framework](https://operatorframework.io/)
 * [Helm](https://helm.sh/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/f89b1704-b63a-4ae8-8b47-2bbb57630e79" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/f89b1704-b63a-4ae8-8b47-2bbb57630e79)

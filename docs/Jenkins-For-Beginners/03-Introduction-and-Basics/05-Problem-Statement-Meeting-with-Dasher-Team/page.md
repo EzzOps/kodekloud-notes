@@ -16,9 +16,7 @@ Alice’s initial assessment highlighted several challenges with the current Nod
 * Infrequent integrations and testing that introduce significant risks during software releases.
 * Manual deployments across development, staging, and production environments.
 
-<Frame>
-  ![The image outlines the DevOps requirements for the Task Dash Team, featuring Docker for containerization, Kubernetes for container orchestration, and AWS Lambda functions, alongside the Dasher Technologies logo and a user icon labeled "Alice."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879475/notes-assets/images/Jenkins-For-Beginners-Problem-Statement-Meeting-with-Dasher-Team/devops-requirements-task-dash-team.jpg)
-</Frame>
+![The image outlines the DevOps requirements for the Task Dash Team, featuring Docker for containerization, Kubernetes for container orchestration, and AWS Lambda functions, alongside the Dasher Technologies logo and a user icon labeled "Alice."](https://kodekloud.com/kk-media/image/upload/v1752879475/notes-assets/images/Jenkins-For-Beginners-Problem-Statement-Meeting-with-Dasher-Team/devops-requirements-task-dash-team.jpg)
 
 To address these challenges, Alice and her team proposed the implementation of a Continuous Integration and Continuous Deployment (CI/CD) pipeline. The key steps in their proposed solution include:
 
@@ -27,24 +25,16 @@ To address these challenges, Alice and her team proposed the implementation of a
 3. Utilizing Docker to build and push container images, with subsequent deployment to orchestration platforms like Kubernetes.
 4. Integrating automated integration testing into the pipeline to serve as the final validation step before deployments.
 
-<Callout icon="lightbulb">
-  Successful implementation of these CI/CD practices is expected to streamline the development process and overcome the existing operational challenges.
-</Callout>
+> **lightbulb** Successful implementation of these CI/CD practices is expected to streamline the development process and overcome the existing operational challenges.
 
 Alice now faces the additional challenge of selecting the most appropriate CI/CD tool. After evaluating several alternatives—including well-established platforms like Jenkins and Bamboo alongside modern solutions such as Travis CI and CircleCI—she determined that Jenkins offers significant advantages. Although not the newest technology available, Jenkins remains a competitive choice due to its open-source nature, extensive plugin ecosystem, and a large, active community that provides robust support. This combination of customizability, rich features, and community backing positions Jenkins as a powerful and adaptable solution for CI/CD.
 
-<Frame>
-  ![The image outlines the DevOps requirements for the Task Dash Team, comparing manual processes like code integration and testing with automated processes such as unit testing and deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879477/notes-assets/images/Jenkins-For-Beginners-Problem-Statement-Meeting-with-Dasher-Team/devops-requirements-task-dash-team-2.jpg)
-</Frame>
+![The image outlines the DevOps requirements for the Task Dash Team, comparing manual processes like code integration and testing with automated processes such as unit testing and deployment.](https://kodekloud.com/kk-media/image/upload/v1752879477/notes-assets/images/Jenkins-For-Beginners-Problem-Statement-Meeting-with-Dasher-Team/devops-requirements-task-dash-team-2.jpg)
 
 Throughout this article, our focus will be on creating Jenkins pipelines tailored for the Node.js application. We will cover essential topics such as integration testing, security best practices, and multi-platform deployment strategies.
 
-<Frame>
-  ![The image is an infographic about Jenkins, highlighting its features: open source, plugin library, active community, and resource and support.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879478/notes-assets/images/Jenkins-For-Beginners-Problem-Statement-Meeting-with-Dasher-Team/jenkins-infographic-features-support.jpg)
-</Frame>
+![The image is an infographic about Jenkins, highlighting its features: open source, plugin library, active community, and resource and support.](https://kodekloud.com/kk-media/image/upload/v1752879478/notes-assets/images/Jenkins-For-Beginners-Problem-Statement-Meeting-with-Dasher-Team/jenkins-infographic-features-support.jpg)
 
 Thank you for following along in this lesson. Stay tuned as we delve deeper into the process of building a robust, scalable CI/CD pipeline using Jenkins.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/d923e9ad-da6b-4f99-85ce-a148e17c27d2/lesson/fb131857-119f-4658-a925-064452d5551a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/d923e9ad-da6b-4f99-85ce-a148e17c27d2/lesson/fb131857-119f-4658-a925-064452d5551a)

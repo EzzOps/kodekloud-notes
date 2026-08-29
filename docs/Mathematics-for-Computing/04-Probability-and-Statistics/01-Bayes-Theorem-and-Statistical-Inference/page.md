@@ -48,9 +48,7 @@ Further reading and resources:
 * Python Basics course: [KodeKloud — Python Basics](https://learn.kodekloud.com/user/courses/python-basics)
 * Intro to tensors and deep learning: \[Tensor Fundamentals — external resources]
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/d8fa251f-80d2-4813-8b52-ad57051b1dcf/lesson/0e04f682-86d2-47a2-a989-c8d5c1a40f8a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/d8fa251f-80d2-4813-8b52-ad57051b1dcf/lesson/0e04f682-86d2-47a2-a989-c8d5c1a40f8a)
 
 
 # Bayes Theorem and Statistical Inference
@@ -113,9 +111,7 @@ P(A | B) = P(B | A) × P(A) / P(B)
 * P(B) — marginal: how common B is overall.
 * P(A | B) — posterior: updated belief in A after observing B.
 
-<Callout icon="lightbulb">
-  Bayes' theorem is a procedure: start with a prior, measure how likely the evidence is under each hypothesis, and update to get the posterior. This mindset is key for principled decision-making under uncertainty.
-</Callout>
+> **lightbulb** Bayes' theorem is a procedure: start with a prior, measure how likely the evidence is under each hypothesis, and update to get the posterior. This mindset is key for principled decision-making under uncertainty.
 
 Example 1 — DJ vs Developer (intuitive grid)
 You meet someone at a tech + music expo who looks "DJ-like" (shaved head, music gear). How likely are they actually a DJ?

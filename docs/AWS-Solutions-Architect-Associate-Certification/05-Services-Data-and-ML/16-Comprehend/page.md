@@ -18,7 +18,7 @@ Additionally, Comprehend offers syntax analysis and, crucial for exam preparatio
 
 > **lightbulb** Being a fully managed AWS service, Comprehend supports multiple languages and integrates seamlessly with other AWS services in near real time.
 
-![The image lists features of a service, including language detection, sentiment analysis, entity recognition, key phrases extraction, topic modeling, syntax analysis, PII detection, multilingual support, and integration with AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865020/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Comprehend/service-features-language-sentiment-analysis.jpg)
+![The image lists features of a service, including language detection, sentiment analysis, entity recognition, key phrases extraction, topic modeling, syntax analysis, PII detection, multilingual support, and integration with AWS services.](https://kodekloud.com/kk-media/image/upload/v1752865020/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Comprehend/service-features-language-sentiment-analysis.jpg)
 
 ## Sentiment Analysis Use Case for Product Reviews
 
@@ -28,7 +28,7 @@ Consider a scenario where you need to analyze sentiment from customer product re
 2. **Lambda Trigger:** An AWS Lambda function is triggered upon upload, which then calls Comprehend to analyze the sentiment of each review.
 3. **NLP Processing:** Comprehend processes the reviews using natural language processing (NLP) techniques and returns detailed sentiment scores, storing the results back in the S3 bucket.
 
-![The image illustrates a data processing workflow involving Amazon S3, AWS Lambda, and Amazon Comprehend, starting with input data represented by speech bubbles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865021/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Comprehend/data-processing-workflow-aws.jpg)
+![The image illustrates a data processing workflow involving Amazon S3, AWS Lambda, and Amazon Comprehend, starting with input data represented by speech bubbles.](https://kodekloud.com/kk-media/image/upload/v1752865021/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Comprehend/data-processing-workflow-aws.jpg)
 
 Once Comprehend has processed the data, you can use Amazon Athena for further analysis. Athena enables you to:
 

@@ -29,9 +29,7 @@ https://github.com/prometheus-operator/prometheus-operator/releases/download/v0.
 $ kubectl apply --server-side -f "$PROM_OPERATOR_BUNDLE_URL"
 ```
 
-<Callout icon="lightbulb">
-  We use `--server-side` because operator bundles often include very large CRD definitions. Server-side apply delegates the final object merge to the Kubernetes API server, avoiding heavy client-side serialization and improving compatibility with large or complex manifests.
-</Callout>
+> **lightbulb** We use `--server-side` because operator bundles often include very large CRD definitions. Server-side apply delegates the final object merge to the Kubernetes API server, avoiding heavy client-side serialization and improving compatibility with large or complex manifests.
 
 The bundle will create CRDs, the operator Deployment, RBAC rules, a ServiceAccount, and other supporting resources. Example server response (trimmed):
 
@@ -58,9 +56,7 @@ $ kubectl -n default rollout status deploy/prometheus-operator --timeout=180s
 deployment "prometheus-operator" successfully rolled out
 ```
 
-<Callout icon="warning">
-  Do not create Prometheus CRs until the operator Deployment is Ready. CRs created while the controller is down will not be reconciled into StatefulSets until the controller is running.
-</Callout>
+> **warning** Do not create Prometheus CRs until the operator Deployment is Ready. CRs created while the controller is down will not be reconciled into StatefulSets until the controller is running.
 
 ## Key CRDs used
 
@@ -204,8 +200,6 @@ The first number is the desired replica count (spec.replicas). The second number
 
 That covers the Prometheus Operator workflow: install the operator, create Prometheus and ServiceMonitor CRs, and manage your monitoring instance via CRs rather than directly editing generated Kubernetes workloads.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/b5e6237b-c98e-4357-b26a-f18c583af395/lesson/40f0ab25-5020-4911-bef9-afbf09eee9cf" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/b5e6237b-c98e-4357-b26a-f18c583af395/lesson/40f0ab25-5020-4911-bef9-afbf09eee9cf)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/b5e6237b-c98e-4357-b26a-f18c583af395/lesson/e1c3f4ca-1da2-4085-aa81-40b86e24fe22" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/b5e6237b-c98e-4357-b26a-f18c583af395/lesson/e1c3f4ca-1da2-4085-aa81-40b86e24fe22)

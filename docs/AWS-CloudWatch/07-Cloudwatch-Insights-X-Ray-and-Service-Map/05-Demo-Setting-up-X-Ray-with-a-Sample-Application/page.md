@@ -24,7 +24,7 @@ In this guide, you’ll learn how to deploy a demo app on AWS, instrument it wit
 
 This creates a CloudFormation stack named `xray-sample`.
 
-![The image shows an AWS CloudFormation console page with options for notification and stack creation, including capabilities and IAM resource acknowledgments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862513/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/aws-cloudformation-console-notification-stack.jpg)
+![The image shows an AWS CloudFormation console page with options for notification and stack creation, including capabilities and IAM resource acknowledgments.](https://kodekloud.com/kk-media/image/upload/v1752862513/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/aws-cloudformation-console-notification-stack.jpg)
 
 > **triangle-alert** The demo stack provisions ECS clusters, an Application Load Balancer, and DynamoDB tables. You may incur AWS charges—remember to delete the stack when you're done.
 
@@ -32,20 +32,20 @@ This creates a CloudFormation stack named `xray-sample`.
 
 Monitor the stack events and wait until the status changes to **CREATE\_COMPLETE**.
 
-![The image shows an AWS CloudFormation console with a stack named "xray-sample" in the process of being created. The status is "CREATE\_IN\_PROGRESS" and the event is user-initiated.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862514/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/aws-cloudformation-xray-sample-creation.jpg)
+![The image shows an AWS CloudFormation console with a stack named "xray-sample" in the process of being created. The status is "CREATE\_IN\_PROGRESS" and the event is user-initiated.](https://kodekloud.com/kk-media/image/upload/v1752862514/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/aws-cloudformation-xray-sample-creation.jpg)
 
 ## Step 3: Retrieve the Load Balancer URL
 
 1. Once complete, switch to the **Outputs** tab.
 2. Copy the **LoadBalancerUrl** value.
 
-![The image shows an AWS CloudFormation console with a stack named "xray-sample" that has a status of "CREATE\_COMPLETE." The Outputs tab displays a LoadBalancerUrl with a specific URL value.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862516/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/aws-cloudformation-xray-sample-output.jpg)
+![The image shows an AWS CloudFormation console with a stack named "xray-sample" that has a status of "CREATE\_COMPLETE." The Outputs tab displays a LoadBalancerUrl with a specific URL value.](https://kodekloud.com/kk-media/image/upload/v1752862516/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/aws-cloudformation-xray-sample-output.jpg)
 
 ## Step 4: Launch the Scorekeep Web App
 
 Paste the LoadBalancerUrl into your browser to open the Scorekeep application.
 
-![The image shows a web page titled "Scorekeep" with options to create or join a session, powered by AWS's EC2 Launch Type via Elastic Container Service. There are input fields for a session name and session ID, along with "Create" and "Join" buttons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862517/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/scorekeep-web-page-aws-ec2.jpg)
+![The image shows a web page titled "Scorekeep" with options to create or join a session, powered by AWS's EC2 Launch Type via Elastic Container Service. There are input fields for a session name and session ID, along with "Create" and "Join" buttons.](https://kodekloud.com/kk-media/image/upload/v1752862517/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/scorekeep-web-page-aws-ec2.jpg)
 
 ## Step 5: Create and Play a Game Session
 
@@ -53,18 +53,18 @@ Paste the LoadBalancerUrl into your browser to open the Scorekeep application.
 2. Enter a session name (e.g., “ABC Tools Tic-Tac-Toe”).
 3. Click **Create**, then **Play**.
 
-![The image shows a web page titled "Scorekeep" where users can create a game by entering a name and selecting rules, with an option to view session traces. It is powered by AWS's EC2 Launch Type via Elastic Container Service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862518/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/scorekeep-game-creation-webpage-aws.jpg)
+![The image shows a web page titled "Scorekeep" where users can create a game by entering a name and selecting rules, with an option to view session traces. It is powered by AWS's EC2 Launch Type via Elastic Container Service.](https://kodekloud.com/kk-media/image/upload/v1752862518/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/scorekeep-game-creation-webpage-aws.jpg)
 
 Play several rounds of tic-tac-toe. AWS X-Ray collects traces for every request behind the scenes.
 
-![The image shows a tic-tac-toe game where "X" has won. It is displayed on a webpage with options to view game traces and a service map.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862519/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/tic-tac-toe-x-wins-webpage.jpg)
+![The image shows a tic-tac-toe game where "X" has won. It is displayed on a webpage with options to view game traces and a service map.](https://kodekloud.com/kk-media/image/upload/v1752862519/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/tic-tac-toe-x-wins-webpage.jpg)
 
 ## Step 6: View the Service Map
 
 1. In the Scorekeep UI, click **View Service Map**.
 2. This opens the X-Ray console displaying your microservices topology.
 
-![The image shows an AWS CloudWatch service map interface, displaying connections between various services like ECS containers, SNS topics, and DynamoDB tables. The interface includes options for filtering and viewing logs, traces, and dashboards.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862520/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/aws-cloudwatch-service-map-interface.jpg)
+![The image shows an AWS CloudWatch service map interface, displaying connections between various services like ECS containers, SNS topics, and DynamoDB tables. The interface includes options for filtering and viewing logs, traces, and dashboards.](https://kodekloud.com/kk-media/image/upload/v1752862520/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/aws-cloudwatch-service-map-interface.jpg)
 
 ### Drill Into Nodes and Traces
 
@@ -72,11 +72,11 @@ Play several rounds of tic-tac-toe. AWS X-Ray collects traces for every request 
 * View metrics, latency distributions, and HTTP metadata.
 * Click **View traces** to access individual X-Ray segments.
 
-![The image shows an AWS CloudWatch interface displaying X-Ray traces with details about various nodes, including latency and request metrics. The interface includes options for refining queries and viewing trace details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862522/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/aws-cloudwatch-xray-traces-interface.jpg)
+![The image shows an AWS CloudWatch interface displaying X-Ray traces with details about various nodes, including latency and request metrics. The interface includes options for refining queries and viewing trace details.](https://kodekloud.com/kk-media/image/upload/v1752862522/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/aws-cloudwatch-xray-traces-interface.jpg)
 
 Opening a specific trace reveals each segment’s timeline:
 
-![The image shows an AWS CloudWatch X-Ray trace view, detailing a trace with segments for "Scorekeep" and "DynamoDB," including response codes and durations. The timeline visualizes the execution time of each segment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862523/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/aws-cloudwatch-xray-trace-view.jpg)
+![The image shows an AWS CloudWatch X-Ray trace view, detailing a trace with segments for "Scorekeep" and "DynamoDB," including response codes and durations. The timeline visualizes the execution time of each segment.](https://kodekloud.com/kk-media/image/upload/v1752862523/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/aws-cloudwatch-xray-trace-view.jpg)
 
 Here you’ll see:
 
@@ -86,7 +86,7 @@ Here you’ll see:
 
 This full-stack visibility helps you pinpoint latency spikes, errors, and resource bottlenecks.
 
-![The image shows an AWS CloudWatch service map interface, displaying a network of connected nodes representing different services and resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862525/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/aws-cloudwatch-service-map-interface-2.jpg)
+![The image shows an AWS CloudWatch service map interface, displaying a network of connected nodes representing different services and resources.](https://kodekloud.com/kk-media/image/upload/v1752862525/notes-assets/images/AWS-CloudWatch-Demo-Setting-up-X-Ray-with-a-Sample-Application/aws-cloudwatch-service-map-interface-2.jpg)
 
 ## AWS X-Ray Key Components
 

@@ -43,9 +43,7 @@ Manually editing each file is tedious and error-prone. Kustomize simplifies this
 
 ## Common Transformers Overview
 
-<Frame>
-  ![The image lists common transformations for Kubernetes resources, including adding labels, prefixes/suffixes, namespaces, and annotations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880922/notes-assets/images/Kustomize-Common-Transformers/kubernetes-resource-transformations-list.jpg)
-</Frame>
+![The image lists common transformations for Kubernetes resources, including adding labels, prefixes/suffixes, namespaces, and annotations.](https://kodekloud.com/kk-media/image/upload/v1752880922/notes-assets/images/Kustomize-Common-Transformers/kubernetes-resource-transformations-list.jpg)
 
 | Transformer        | Field Name                     | Purpose                                      |
 | ------------------ | ------------------------------ | -------------------------------------------- |
@@ -67,9 +65,7 @@ commonLabels:
   org: KodeKloud
 ```
 
-<Callout icon="lightbulb">
-  When you run `kustomize build`, these labels will be merged into every resource’s `metadata.labels`.
-</Callout>
+> **lightbulb** When you run `kustomize build`, these labels will be merged into every resource’s `metadata.labels`.
 
 **Generated output (Service example):**
 
@@ -133,9 +129,7 @@ metadata:
 # …
 ```
 
-<Callout icon="triangle-alert">
-  Choosing very long prefixes or suffixes can push resource names over Kubernetes’ max-length limit (63 characters). Always verify final name lengths.
-</Callout>
+> **triangle-alert** Choosing very long prefixes or suffixes can push resource names over Kubernetes’ max-length limit (63 characters). Always verify final name lengths.
 
 ### 4. Inject Common Annotations
 
@@ -165,9 +159,7 @@ By combining these four settings in a single `kustomization.yaml`, you can trans
 * [Kubernetes Resource Configuration](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/)
 * [Managing Kubernetes with Kustomize](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/d3956634-6fe0-4c41-b8bf-bfed87fc99dd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/d3956634-6fe0-4c41-b8bf-bfed87fc99dd)
 
 
 # Components
@@ -197,15 +189,11 @@ Our shared **base/** folder holds common resources. We also have two optional fe
 
 Where should we place the Redis and Postgres manifests so only the right overlays include them?
 
-<Frame>
-  ![The image is a flowchart showing components with connections between "base," "caching," "dev," "Premium," and "Self hosted." It also lists "Caching" and "External DB" with related items.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880923/notes-assets/images/Kustomize-Components/flowchart-base-caching-dev-premium-selfhosted.jpg)
-</Frame>
+![The image is a flowchart showing components with connections between "base," "caching," "dev," "Premium," and "Self hosted." It also lists "Caching" and "External DB" with related items.](https://kodekloud.com/kk-media/image/upload/v1752880923/notes-assets/images/Kustomize-Components/flowchart-base-caching-dev-premium-selfhosted.jpg)
 
 Instead of duplicating manifests in overlays—or adding unwanted features to **base**—we create two components (`caching` and `db`) and import them selectively.
 
-<Frame>
-  ![The image is a flowchart titled "Components" showing a hierarchy with nodes labeled "base," "dev," "Premium," "Self hosted," "Components," "caching," and "db." It illustrates the relationships between these components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880924/notes-assets/images/Kustomize-Components/components-flowchart-hierarchy-nodes.jpg)
-</Frame>
+![The image is a flowchart titled "Components" showing a hierarchy with nodes labeled "base," "dev," "Premium," "Self hosted," "Components," "caching," and "db." It illustrates the relationships between these components.](https://kodekloud.com/kk-media/image/upload/v1752880924/notes-assets/images/Kustomize-Components/components-flowchart-hierarchy-nodes.jpg)
 
 ## Component Features Table
 
@@ -271,9 +259,7 @@ spec:
           image: postgres:latest
 ```
 
-<Callout icon="lightbulb">
-  Components require `kind: Component` with the `v1alpha1` API. Ensure you’re running Kustomize v4.x or later.
-</Callout>
+> **lightbulb** Components require `kind: Component` with the `v1alpha1` API. Ensure you’re running Kustomize v4.x or later.
 
 ### `kustomization.yaml` (Component)
 
@@ -341,8 +327,6 @@ With Kustomize components, you can define optional feature logic once and enable
 * [Redis Official Image](https://hub.docker.com/_/redis)
 * [Postgres Official Image](https://hub.docker.com/_/postgres)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/baa7cfb7-7316-4be4-88c5-acfe45f59d8e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/baa7cfb7-7316-4be4-88c5-acfe45f59d8e)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/bb1ad6fa-3980-4462-bdf4-4fe87d267fe7" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/bb1ad6fa-3980-4462-bdf4-4fe87d267fe7)

@@ -41,13 +41,9 @@ Once processed, the telemetry data is made available for various consumption met
 
 Organizations also benefit from integration with System Center Operations Manager (SCOM), allowing unified monitoring of SCOM-managed instances, including databases. Further integrations with Event Hubs, Azure Storage, managed partners, APIs, Logic Apps, Functions, Azure DevOps, and GitHub help in creating a robust monitoring environment.
 
-<Frame>
-  ![The image is a diagram of Azure Monitor, illustrating its data sources, data collection, routing, transformation, data platform, and consumption processes. It shows how data from various sources is processed and utilized for insights, visualization, analysis, and response.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884678/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Monitor/azure-monitor-data-flow-diagram.jpg)
-</Frame>
+![The image is a diagram of Azure Monitor, illustrating its data sources, data collection, routing, transformation, data platform, and consumption processes. It shows how data from various sources is processed and utilized for insights, visualization, analysis, and response.](https://kodekloud.com/kk-media/image/upload/v1752884678/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Monitor/azure-monitor-data-flow-diagram.jpg)
 
-<Callout icon="lightbulb">
-  In this article, the focus will be on two crucial components of Azure Monitor for exam preparation: metrics and logs.
-</Callout>
+> **lightbulb** In this article, the focus will be on two crucial components of Azure Monitor for exam preparation: metrics and logs.
 
 ## Metrics
 
@@ -55,9 +51,7 @@ Metrics within Azure Monitor are numerical data points collected at regular inte
 
 Metrics are typically rendered as time series, offering frequent updates that present an accurate view of system performance.
 
-<Frame>
-  ![The image shows two graphs displaying CPU usage and network activity over time, with a noticeable spike in both metrics. The CPU usage averages 2.7275%, and the network shows 13.86 MiB in and 15.75 MiB out.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884679/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Monitor/cpu-usage-network-activity-graphs.jpg)
-</Frame>
+![The image shows two graphs displaying CPU usage and network activity over time, with a noticeable spike in both metrics. The CPU usage averages 2.7275%, and the network shows 13.86 MiB in and 15.75 MiB out.](https://kodekloud.com/kk-media/image/upload/v1752884679/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Monitor/cpu-usage-network-activity-graphs.jpg)
 
 ## Logs
 
@@ -88,18 +82,12 @@ Azure Monitor ingests data from several critical sources, each contributing uniq
 
 All collected data is categorized as either metrics or logs, which can be queried and visualized with the robust set of tools provided by Azure.
 
-<Frame>
-  ![The image is a diagram showing different data sources for Azure, including Application, OS, Azure Resources, Azure Subscription, Azure Tenant, and Custom, with metrics and logs as outputs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884681/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Monitor/azure-data-sources-diagram.jpg)
-</Frame>
+![The image is a diagram showing different data sources for Azure, including Application, OS, Azure Resources, Azure Subscription, Azure Tenant, and Custom, with metrics and logs as outputs.](https://kodekloud.com/kk-media/image/upload/v1752884681/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Monitor/azure-data-sources-diagram.jpg)
 
 ## Azure Activity Logs
 
 Azure Activity Logs provide a comprehensive record of subscription-level events, including resource creation, updates, and deletions, as well as insights into service health. These logs are crucial for maintaining an overview of changes and activities within your Azure environment and ensuring that you can effectively troubleshoot and verify operations.
 
-<Callout icon="lightbulb">
-  This article has provided an overview of Azure Monitor’s architecture, highlighting the key components of metrics and logs essential for both operational insights and exam preparation.
-</Callout>
+> **lightbulb** This article has provided an overview of Azure Monitor’s architecture, highlighting the key components of metrics and logs essential for both operational insights and exam preparation.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/e208e27a-6519-4eb4-aaf1-342bb14def21/lesson/cf6f4b29-a84a-4d53-930f-28ff47f6a8c9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/e208e27a-6519-4eb4-aaf1-342bb14def21/lesson/cf6f4b29-a84a-4d53-930f-28ff47f6a8c9)

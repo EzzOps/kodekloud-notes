@@ -21,10 +21,8 @@ In this lesson, we explore configuring and managing multiple providers within a 
 
 OpenTofu allows you to use multiple providers in the same configuration directory. This means you can manage local, random, AWS, Kubernetes, and other resources from a single project.
 
-<Callout icon="lightbulb">
-  Make sure you have OpenTofu installed and your CLI configured before starting.\
+> **lightbulb** Make sure you have OpenTofu installed and your CLI configured before starting.\
   Read the [OpenTofu Installation Guide](https://opentofu.io/docs/installation) for more details.
-</Callout>
 
 ## 2. Inspecting an Existing Configuration
 
@@ -187,9 +185,7 @@ tofu apply
 
 You may encounter an *inconsistent dependency lock file* error.
 
-<Callout icon="triangle-alert">
-  Run `tofu init -upgrade` to update the provider lock file and install the latest plugin version.
-</Callout>
+> **triangle-alert** Run `tofu init -upgrade` to update the provider lock file and install the latest plugin version.
 
 Upgrade and re-apply:
 
@@ -220,8 +216,6 @@ Further reading:
 * [Terraform Provider Development](https://www.terraform.io/docs/plugin/providers.html)
 * [Kubernetes Namespace Resource](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/namespace)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/50f68e10-25e8-4dbe-845f-6cb237db9dc9" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/50f68e10-25e8-4dbe-845f-6cb237db9dc9)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/08f41968-772f-414b-b357-f5d9447c5e38" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/08f41968-772f-414b-b357-f5d9447c5e38)

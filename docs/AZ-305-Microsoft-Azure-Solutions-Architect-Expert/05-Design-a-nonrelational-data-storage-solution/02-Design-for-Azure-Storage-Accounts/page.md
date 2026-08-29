@@ -14,7 +14,7 @@ Azure offers four primary storage account types. Your selection will depend on t
 
 The GPv2 storage account is the recommended choice for most applications. While General Purpose v1 (GPv1) was used in the past, it is now deprecated. If you still rely on GPv1, Microsoft advises upgrading to GPv2. The GPv2 model includes features such as capacity reservations, lifecycle management, and enhanced cost optimization. It supports a variety of data types including blobs, Data Lake files, queues, files, and tables.
 
-![The image is a guide for choosing a storage account type, comparing options like Standard GPv2, Premium page blobs, Premium block blobs, and Premium file shares, each with specific use cases and features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867124/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Storage-Accounts/storage-account-type-guide-comparison.jpg)
+![The image is a guide for choosing a storage account type, comparing options like Standard GPv2, Premium page blobs, Premium block blobs, and Premium file shares, each with specific use cases and features.](https://kodekloud.com/kk-media/image/upload/v1752867124/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Storage-Accounts/storage-account-type-guide-comparison.jpg)
 
 ### Premium Page Blobs
 
@@ -30,7 +30,7 @@ Designed specifically for file-sharing scenarios, premium file share storage sup
 
 When configuring a storage account in the Azure portal, you will initially see the standard option (GPv2). Switching to premium reveals additional configuration options where you can select between page blobs, block blobs, or file shares.
 
-![The image shows a Microsoft Azure portal interface for creating a storage account, with options for instance details such as region, performance, and redundancy. A dropdown menu is open, displaying different premium account types like block blobs and page blobs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867125/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Storage-Accounts/azure-portal-storage-account-creation.jpg)
+![The image shows a Microsoft Azure portal interface for creating a storage account, with options for instance details such as region, performance, and redundancy. A dropdown menu is open, displaying different premium account types like block blobs and page blobs.](https://kodekloud.com/kk-media/image/upload/v1752867125/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Storage-Accounts/azure-portal-storage-account-creation.jpg)
 
 ## Key Considerations When Planning a Storage Account
 
@@ -83,7 +83,7 @@ Successful Azure storage design requires careful planning across several key are
 | Cost        | Transaction volume, performance, replication method, and access tier considerations | Use lifecycle management policies to reduce overall costs           |
 | Security    | Network access, authentication options, and firewalls                               | Utilize private endpoints; enforce strict firewall and IP filtering |
 
-![The image is an infographic titled "Plan for Azure Storage" by KodeKloud, highlighting key considerations such as location, replication, compliance, management overhead, cost, and security. Each point is represented with an icon and brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867126/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Storage-Accounts/plan-for-azure-storage-infographic.jpg)
+![The image is an infographic titled "Plan for Azure Storage" by KodeKloud, highlighting key considerations such as location, replication, compliance, management overhead, cost, and security. Each point is represented with an icon and brief description.](https://kodekloud.com/kk-media/image/upload/v1752867126/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Storage-Accounts/plan-for-azure-storage-infographic.jpg)
 
 By carefully addressing these factors, you can design an Azure storage account that meets your performance, capacity, security, and compliance needs. For further details on Azure storage options, consult the [Azure Storage Documentation](https://docs.microsoft.com/azure/storage).
 

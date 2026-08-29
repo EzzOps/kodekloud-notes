@@ -31,9 +31,7 @@ If you are new to Kubernetes, consider taking a foundational course first. For e
   <img alt="The image depicts a graphic related to &#x22;kubectl&#x22; with buttons labeled &#x22;Apply,&#x22; &#x22;Remove,&#x22; &#x22;Edit,&#x22; &#x22;Investigate,&#x22; and &#x22;Monitor.&#x22; It includes the &#x22;Kubectl CLI&#x22; logo and references an &#x22;ICA Exam.&#x22;" />
 </Frame>
 
-<Callout icon="lightbulb">
-  Imperative examples: `kubectl create deployment nginx --image=nginx`, or `kubectl expose deployment nginx --port=80 --target-port=80`. Declarative example: write a YAML manifest and run `kubectl apply -f my-deployment.yaml`.
-</Callout>
+> **lightbulb** Imperative examples: `kubectl create deployment nginx --image=nginx`, or `kubectl expose deployment nginx --port=80 --target-port=80`. Declarative example: write a YAML manifest and run `kubectl apply -f my-deployment.yaml`.
 
 * Linux CLI and terminal text editors
   * The exam environment is a shell—be fluent with essential Linux commands: `cat`, `cd`, `ls`, `mkdir`, `rm`, `curl`, `wget`, `ping`, etc.
@@ -78,9 +76,7 @@ If you are new to Kubernetes, consider taking a foundational course first. For e
 | Networking basics                  | Istio configures routing, TLS, and policies over HTTP/TCP                              | Inspect DNS, ports, and service endpoints                   |
 | Helm                               | Often used to install/upgrade Istio or add-ons                                         | `helm install istio <chart>`                                |
 
-<Callout icon="warning">
-  The ICA is a practical, time-limited exam performed entirely in a Linux shell. Do not rely on GUI tools—practice editing manifests and running `kubectl` commands under time pressure.
-</Callout>
+> **warning** The ICA is a practical, time-limited exam performed entirely in a Linux shell. Do not rely on GUI tools—practice editing manifests and running `kubectl` commands under time pressure.
 
 ## Final recommendations
 
@@ -96,6 +92,4 @@ If you feel ready, start practicing with real clusters and Istio configurations.
 * [Istio Documentation](https://istio.io/latest/docs/)
 * KodeKloud courses: [Kubernetes for the Absolute Beginners](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial), [CKA course](https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator), [CKAD course](https://learn.kodekloud.com/user/courses/certified-kubernetes-application-developer-ckad), [CKS course](https://learn.kodekloud.com/user/courses/certified-kubernetes-security-specialist-cks)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/da4579eb-7769-4ab9-a0e8-b81f70a12978/lesson/f3a181e2-ac9f-4a80-842a-2aaafb04aec5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/da4579eb-7769-4ab9-a0e8-b81f70a12978/lesson/f3a181e2-ac9f-4a80-842a-2aaafb04aec5)

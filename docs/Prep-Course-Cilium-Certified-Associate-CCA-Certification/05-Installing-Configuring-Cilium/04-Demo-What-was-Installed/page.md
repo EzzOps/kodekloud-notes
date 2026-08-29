@@ -7,9 +7,7 @@ After saving the edit you should see:
 configmap/cilium-config edited
 ```
 
-<Callout icon="warning">
-  If Cilium is managed by Helm, the `cilium-config` ConfigMap may be owned by the Helm release. Direct edits with `kubectl` can be overwritten by future `helm upgrade` or `helm rollback` actions. Prefer updating Helm values when possible or coordinate ConfigMap edits with your Helm values.
-</Callout>
+> **warning** If Cilium is managed by Helm, the `cilium-config` ConfigMap may be owned by the Helm release. Direct edits with `kubectl` can be overwritten by future `helm upgrade` or `helm rollback` actions. Prefer updating Helm values when possible or coordinate ConfigMap edits with your Helm values.
 
 ## 4 — Restart Cilium components so changes take effect
 
@@ -37,9 +35,7 @@ kubectl get pods -A --watch
 
 Wait until the new Cilium pods reach `Running` status. Init containers may take a short while to complete.
 
-<Callout icon="lightbulb">
-  After changing the Cilium ConfigMap, you must restart the operator and agent pods so the new configuration is applied.
-</Callout>
+> **lightbulb** After changing the Cilium ConfigMap, you must restart the operator and agent pods so the new configuration is applied.
 
 ## 5 — Verify the change (example: confirm IPv6 disabled)
 
@@ -89,11 +85,9 @@ IPs:
 * [Helm Documentation](https://helm.sh/docs/)
 * [KodeKloud Helm course](https://learn.kodekloud.com/user/courses/helm-for-beginners)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/99b26348-588c-4672-afd9-92851a2b81fe" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/99b26348-588c-4672-afd9-92851a2b81fe)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/abfc64d5-1dba-4802-a679-e5857635ef8b" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/abfc64d5-1dba-4802-a679-e5857635ef8b)
 
 
 # Demo What was Installed
@@ -387,9 +381,7 @@ ciliumidentities.cilium.io                    2025-03-25T21:26:33Z
 
 Hubble provides observability and flow visibility. If Hubble server/relay was not enabled in Helm values during installation, you will not see Hubble pods/services. Enabling Hubble in your Helm `values.yaml` creates additional resources (server, relay, certificates, etc.).
 
-<Callout icon="lightbulb">
-  ConfigMap and Secret contents are available inside running Cilium containers because the files are mounted as volumes. Updating a ConfigMap updates the file contents inside the pod, but some components only read their config at process start—so you may need to restart pods for those changes to take effect.
-</Callout>
+> **lightbulb** ConfigMap and Secret contents are available inside running Cilium containers because the files are mounted as volumes. Updating a ConfigMap updates the file contents inside the pod, but some components only read their config at process start—so you may need to restart pods for those changes to take effect.
 
 ## Links and references
 
@@ -397,6 +389,4 @@ Hubble provides observability and flow visibility. If Hubble server/relay was no
 * [Cilium documentation](https://cilium.io/docs/)
 * [Helm for beginners (KodeKloud)](https://learn.kodekloud.com/user/courses/helm-for-beginners)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/1448f3dc-8b74-4844-86e2-c8342175e92d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/1448f3dc-8b74-4844-86e2-c8342175e92d)

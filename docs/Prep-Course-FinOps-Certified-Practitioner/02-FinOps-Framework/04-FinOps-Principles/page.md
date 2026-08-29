@@ -8,9 +8,7 @@ Welcome. This lesson provides a focused, high-level overview of FinOps principle
 
 These principles act as a compass for your cloud cost journey. Whether you're just getting started or scaling FinOps across an organization, they help teams choose trade-offs that align with business outcomes rather than ad hoc preferences.
 
-<Callout icon="lightbulb">
-  Six core FinOps principles form the foundational behaviors that guide pragmatic cloud cost management. They are practitioner-driven, practical, and designed to evolve as organizations learn from real-world experience.
-</Callout>
+> **lightbulb** Six core FinOps principles form the foundational behaviors that guide pragmatic cloud cost management. They are practitioner-driven, practical, and designed to evolve as organizations learn from real-world experience.
 
 Why six? These principles emerged from years of community collaboration, practitioner feedback, and repeated implementation patterns. They capture the recurring challenges and successful responses teams have used to create accountable, sustainable cost management across engineering, finance, and product teams.
 
@@ -43,6 +41,4 @@ Links and references
 * [FinOps Foundation — Principles & Practices](https://www.finops.org/)
 * [Cloud cost management best practices](https://cloud.google.com/finops)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/77e6b2c4-f9cd-410f-a396-178e2aa962bb/lesson/ed43ce08-cb59-4f39-a731-030bc4a9c5b4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/77e6b2c4-f9cd-410f-a396-178e2aa962bb/lesson/ed43ce08-cb59-4f39-a731-030bc4a9c5b4)

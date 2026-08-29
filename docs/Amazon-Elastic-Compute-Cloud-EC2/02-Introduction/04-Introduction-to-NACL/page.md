@@ -45,7 +45,7 @@ Rule #  Protocol  Port Range     Destination CIDR   Action
 
 > **triangle-alert** Always include a catch-all `DENY` rule (`*`) to block unwanted traffic. Omitting it can leave your subnet exposed.
 
-![The image illustrates a network setup with a VPC containing EC2 security groups, an internet gateway, and subnets, alongside tables showing inbound and outbound NACL rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869092/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Introduction-to-NACL/vpc-ec2-security-groups-network-setup.jpg)
+![The image illustrates a network setup with a VPC containing EC2 security groups, an internet gateway, and subnets, alongside tables showing inbound and outbound NACL rules.](https://kodekloud.com/kk-media/image/upload/v1752869092/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Introduction-to-NACL/vpc-ec2-security-groups-network-setup.jpg)
 
 * Combine **Security Groups** (stateful) and **Network ACLs** (stateless) for layered defense.
 

@@ -101,9 +101,7 @@ Key takeaways
   <img alt="The image is a slide titled &#x22;Key Takeaways&#x22; outlining four points about SpanKinds and semantic rules for meaningful tracing, emphasizing trace direction, semantic rules, and efficient span creation." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Most spans you create locally will be `INTERNAL`. Reserve `CLIENT`, `SERVER`, `PRODUCER`, and `CONSUMER` for interactions that cross process or service boundaries.
-</Callout>
+> **lightbulb** Most spans you create locally will be `INTERNAL`. Reserve `CLIENT`, `SERVER`, `PRODUCER`, and `CONSUMER` for interactions that cross process or service boundaries.
 
 Further reading and references
 
@@ -112,6 +110,4 @@ Further reading and references
 
 That's it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/a81a2fc6-a27f-47eb-8e22-1160b4b16672" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/a81a2fc6-a27f-47eb-8e22-1160b4b16672)

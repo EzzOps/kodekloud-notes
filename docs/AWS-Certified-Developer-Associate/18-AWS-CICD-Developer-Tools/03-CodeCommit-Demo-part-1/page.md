@@ -24,7 +24,7 @@ Instead of creating a file manually using the command line, you may choose to up
 
 After selecting your file, enter the required author details (name and email) along with a commit message (e.g., "initial commit"). Once committed, the "myapp" repository will display the newly uploaded `index.js` file. You can inspect its contents directly within the CodeCommit interface.
 
-![The image shows an AWS CodeCommit interface where a file named "index.js" is being uploaded to a repository called "myapp." There are fields for entering author name, email address, and an optional commit message before committing changes to the main branch.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857954/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit-Demo-part-1/aws-codecommit-upload-indexjs.jpg)
+![The image shows an AWS CodeCommit interface where a file named "index.js" is being uploaded to a repository called "myapp." There are fields for entering author name, email address, and an optional commit message before committing changes to the main branch.](https://kodekloud.com/kk-media/image/upload/v1752857954/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit-Demo-part-1/aws-codecommit-upload-indexjs.jpg)
 
 ## Viewing the Repository Contents
 
@@ -54,7 +54,7 @@ Suppose your team wants to add a new feature (for example, implementing authenti
 2. Create a branch named `create-auth` derived from the main branch.
 3. Switch to the `create-auth` branch and modify the `index.js` file as needed. For example, you might add a log statement to indicate the addition of authentication:
 
-![The image shows an AWS CodeCommit interface displaying a repository named "myapp" with a file called "index.js" listed. The left sidebar includes options for various AWS Developer Tools like CodeArtifact, CodeBuild, and CodeDeploy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857956/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit-Demo-part-1/aws-codecommit-myapp-indexjs-interface.jpg)
+![The image shows an AWS CodeCommit interface displaying a repository named "myapp" with a file called "index.js" listed. The left sidebar includes options for various AWS Developer Tools like CodeArtifact, CodeBuild, and CodeDeploy.](https://kodekloud.com/kk-media/image/upload/v1752857956/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit-Demo-part-1/aws-codecommit-myapp-indexjs-interface.jpg)
 
 After editing, your modified `index.js` could appear as follows:
 
@@ -87,7 +87,7 @@ Once the new authentication feature has been tested and verified, you can merge 
 3. Providing an appropriate title (e.g., "added auth features") and a detailed description.
 4. Creating the pull request.
 
-![The image shows the AWS CodeCommit interface where a user is creating a pull request titled "added auth features" with no conflicts between branches.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857957/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit-Demo-part-1/aws-codecommit-pull-request-auth-features.jpg)
+![The image shows the AWS CodeCommit interface where a user is creating a pull request titled "added auth features" with no conflicts between branches.](https://kodekloud.com/kk-media/image/upload/v1752857957/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit-Demo-part-1/aws-codecommit-pull-request-auth-features.jpg)
 
 Once the team lead reviews and approves the pull request, merge it using the default merge strategy. The main branch will then include the updates from the authentication feature. The updated `index.js` file in the main branch will now look like this:
 
@@ -111,17 +111,17 @@ app.listen(port, () => {
 
 You can inspect the commit history for each branch independently. For example, when viewing the `create-auth` branch, the commit history will detail the changes made, such as the addition of the authentication log lines. This granular view is helpful for understanding the evolution of your codebase.
 
-![The image shows an AWS CodeCommit interface displaying a repository named "myapp" with a list of commits, including details like commit ID, message, date, author, and actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857958/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit-Demo-part-1/aws-codecommit-myapp-repository.jpg)
+![The image shows an AWS CodeCommit interface displaying a repository named "myapp" with a list of commits, including details like commit ID, message, date, author, and actions.](https://kodekloud.com/kk-media/image/upload/v1752857958/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit-Demo-part-1/aws-codecommit-myapp-repository.jpg)
 
 ## Configuring Notifications and Triggers
 
 Beyond code management, AWS CodeCommit allows you to configure notifications to alert your team whenever certain events occur (e.g., on new commits or pull request status changes). Notification rules can be set within the repository settings, enabling delivery through AWS Chatbot, SNS topics, or other integrations.
 
-![The image shows an AWS CodeCommit interface for creating notification rules, with options to select events that trigger notifications and configure targets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857959/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit-Demo-part-1/aws-codecommit-notification-rules.jpg)
+![The image shows an AWS CodeCommit interface for creating notification rules, with options to select events that trigger notifications and configure targets.](https://kodekloud.com/kk-media/image/upload/v1752857959/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit-Demo-part-1/aws-codecommit-notification-rules.jpg)
 
 Similarly, you can set up triggers to capture specific event details. The triggers configuration allows you to select the events, branch names, and integration services (e.g., Amazon SNS or AWS Lambda) that should receive the event data.
 
-![The image shows an AWS CodeCommit interface for creating a trigger, with fields for trigger details and service details. Options include selecting events, branch names, and services like Amazon SNS or AWS Lambda.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857960/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit-Demo-part-1/aws-codecommit-trigger-interface.jpg)
+![The image shows an AWS CodeCommit interface for creating a trigger, with fields for trigger details and service details. Options include selecting events, branch names, and services like Amazon SNS or AWS Lambda.](https://kodekloud.com/kk-media/image/upload/v1752857960/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit-Demo-part-1/aws-codecommit-trigger-interface.jpg)
 
 > **lightbulb** Configured notifications and triggers can help streamline your development workflow by ensuring the right team members are alerted to significant repository events.
 

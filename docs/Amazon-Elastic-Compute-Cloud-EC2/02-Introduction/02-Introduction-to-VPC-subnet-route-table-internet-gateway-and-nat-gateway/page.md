@@ -8,7 +8,7 @@ Amazon Web Services (AWS) provides a global, highly reliable backbone to deploy 
 
 First, let’s explore AWS’s global footprint:
 
-![The image shows a map highlighting AWS global network regions, specifically US East (Ohio) and Singapore, with their respective availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869093/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Introduction-to-VPC-subnet-route-table-internet-gateway-and-nat-gateway/aws-global-network-regions-map.jpg)
+![The image shows a map highlighting AWS global network regions, specifically US East (Ohio) and Singapore, with their respective availability zones.](https://kodekloud.com/kk-media/image/upload/v1752869093/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Introduction-to-VPC-subnet-route-table-internet-gateway-and-nat-gateway/aws-global-network-regions-map.jpg)
 
 AWS Regions are fully isolated geographic areas. Each Region contains multiple Availability Zones (AZs)—separate data centers that ensure fault tolerance and high availability. Behind the scenes, the AWS Backbone Network securely interconnects Regions and edge locations for low-latency, high-throughput performance.
 
@@ -27,7 +27,7 @@ Key VPC capabilities:
 | Hybrid Connectivity     | Connect on-premises via VPN, Direct Connect, and VPC Peering |
 | AWS Service Integration | Seamlessly integrates with EC2, RDS, ELB, Lambda, and more   |
 
-![The image is a presentation slide featuring four key points: Isolation, Customizable, Hybrid – Connectivity, and AWS Integration, with corresponding icons. On the right, there's a cloud and shield icon on a gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869094/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Introduction-to-VPC-subnet-route-table-internet-gateway-and-nat-gateway/isolation-customizable-hybrid-aws-slide.jpg)
+![The image is a presentation slide featuring four key points: Isolation, Customizable, Hybrid – Connectivity, and AWS Integration, with corresponding icons. On the right, there's a cloud and shield icon on a gradient background.](https://kodekloud.com/kk-media/image/upload/v1752869094/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Introduction-to-VPC-subnet-route-table-internet-gateway-and-nat-gateway/isolation-customizable-hybrid-aws-slide.jpg)
 
 > **lightbulb** Remember: VPCs do not span Regions. Resources in one Region (and its AZs) cannot communicate with resources in another without a peer connection or VPN.
 
@@ -37,11 +37,11 @@ Key VPC capabilities:
 
 Subnets subdivide a VPC into smaller IP ranges within a single AZ—like dividing a housing lane into individual plots. Use subnets to isolate workloads (web servers, APIs, databases) based on security and routing needs.
 
-![The image is a diagram illustrating the concept of subnets within a virtual private cloud (VPC), comparing them to plots in a housing lane. It shows different types of subnets like web-app, backend API, and database subnets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869095/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Introduction-to-VPC-subnet-route-table-internet-gateway-and-nat-gateway/vpc-subnets-diagram-housing-lane.jpg)
+![The image is a diagram illustrating the concept of subnets within a virtual private cloud (VPC), comparing them to plots in a housing lane. It shows different types of subnets like web-app, backend API, and database subnets.](https://kodekloud.com/kk-media/image/upload/v1752869095/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Introduction-to-VPC-subnet-route-table-internet-gateway-and-nat-gateway/vpc-subnets-diagram-housing-lane.jpg)
 
 By placing subnets in multiple AZs, you build high-availability architectures:
 
-![The image illustrates AWS networking with a VPC containing subnets for web apps, backend APIs, and databases, located in the Singapore region. It also shows availability zones labeled ap-southeast-1a, 1b, and 1c.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869096/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Introduction-to-VPC-subnet-route-table-internet-gateway-and-nat-gateway/aws-networking-vpc-subnets-singapore.jpg)
+![The image illustrates AWS networking with a VPC containing subnets for web apps, backend APIs, and databases, located in the Singapore region. It also shows availability zones labeled ap-southeast-1a, 1b, and 1c.](https://kodekloud.com/kk-media/image/upload/v1752869096/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Introduction-to-VPC-subnet-route-table-internet-gateway-and-nat-gateway/aws-networking-vpc-subnets-singapore.jpg)
 
 ***
 
@@ -56,7 +56,7 @@ Example “App VPC” route table:
 | 10.10.0.0/16 | VPC Peering Connection      |
 | 0.0.0.0/0    | Internet Gateway (igw-xxxx) |
 
-![The image is a diagram illustrating route tables for a network, showing connections between an "App VPC" and two destinations: a "Swimming pool/Security VPC" and a "Gym/Sandbox VPC," with specific routes and targets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869097/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Introduction-to-VPC-subnet-route-table-internet-gateway-and-nat-gateway/route-tables-network-diagram-vpcs.jpg)
+![The image is a diagram illustrating route tables for a network, showing connections between an "App VPC" and two destinations: a "Swimming pool/Security VPC" and a "Gym/Sandbox VPC," with specific routes and targets.](https://kodekloud.com/kk-media/image/upload/v1752869097/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Introduction-to-VPC-subnet-route-table-internet-gateway-and-nat-gateway/route-tables-network-diagram-vpcs.jpg)
 
 ***
 
@@ -72,7 +72,7 @@ To enable Internet access for a subnet:
    * Target: `igw-<gateway-id>`
 3. Assign public or Elastic IPs to your EC2 instances.
 
-![The image is a diagram illustrating an Internet Gateway setup, showing an EC2 instance connected to an Internet Gateway, which routes traffic to a target destination.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869098/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Introduction-to-VPC-subnet-route-table-internet-gateway-and-nat-gateway/internet-gateway-ec2-diagram.jpg)
+![The image is a diagram illustrating an Internet Gateway setup, showing an EC2 instance connected to an Internet Gateway, which routes traffic to a target destination.](https://kodekloud.com/kk-media/image/upload/v1752869098/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Introduction-to-VPC-subnet-route-table-internet-gateway-and-nat-gateway/internet-gateway-ec2-diagram.jpg)
 
 ***
 

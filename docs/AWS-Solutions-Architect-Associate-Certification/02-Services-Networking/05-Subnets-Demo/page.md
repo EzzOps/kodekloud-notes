@@ -16,11 +16,11 @@ Begin by navigating to the VPC section in the AWS Management Console. Select the
 
 This configuration is all you need to create your VPC.
 
-![The image shows the AWS Management Console with a search for "VPC," displaying related services like VPC, AWS Firewall Manager, and Detective. The console also includes navigation options and a welcome section with links to AWS resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865691/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Subnets-Demo/aws-management-console-vpc-search.jpg)
+![The image shows the AWS Management Console with a search for "VPC," displaying related services like VPC, AWS Firewall Manager, and Detective. The console also includes navigation options and a welcome section with links to AWS resources.](https://kodekloud.com/kk-media/image/upload/v1752865691/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Subnets-Demo/aws-management-console-vpc-search.jpg)
 
 Once the VPC is created, you will be taken to the VPC creation interface.
 
-![The image shows the AWS Management Console interface for creating a VPC (Virtual Private Cloud). It includes options for naming, selecting IPv4 and IPv6 CIDR blocks, and adding tags.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865692/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Subnets-Demo/aws-management-console-vpc-creation.jpg)
+![The image shows the AWS Management Console interface for creating a VPC (Virtual Private Cloud). It includes options for naming, selecting IPv4 and IPv6 CIDR blocks, and adding tags.](https://kodekloud.com/kk-media/image/upload/v1752865692/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Subnets-Demo/aws-management-console-vpc-creation.jpg)
 
 ## Step 2: Create Subnets in the VPC
 
@@ -36,7 +36,7 @@ Once the VPC is created, you will be taken to the VPC creation interface.
 
 After configuring the details, click **Create Subnet**.
 
-![The image shows the AWS Management Console interface for creating a subnet, with options to select a VPC and specify CIDR blocks. A dropdown menu is open, displaying various availability zones in the US East (N. Virginia) region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865693/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Subnets-Demo/aws-management-console-subnet-creation.jpg)
+![The image shows the AWS Management Console interface for creating a subnet, with options to select a VPC and specify CIDR blocks. A dropdown menu is open, displaying various availability zones in the US East (N. Virginia) region.](https://kodekloud.com/kk-media/image/upload/v1752865693/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Subnets-Demo/aws-management-console-subnet-creation.jpg)
 
 ### Create the Second Subnet
 
@@ -52,7 +52,7 @@ Once you have configured "subnet two," click **Create Subnet**.
 
 After creating both subnets, clear any applied filters on your VPC dashboard. You can also filter by your specific VPC to display only the subnets you created.
 
-![The image shows the AWS Management Console displaying the VPC dashboard with a list of subnets. A notification at the top indicates that a subnet was successfully created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865693/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Subnets-Demo/aws-management-console-vpc-dashboard.jpg)
+![The image shows the AWS Management Console displaying the VPC dashboard with a list of subnets. A notification at the top indicates that a subnet was successfully created.](https://kodekloud.com/kk-media/image/upload/v1752865693/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Subnets-Demo/aws-management-console-vpc-dashboard.jpg)
 
 ## Step 3: Deploy an EC2 Instance in a Specific Subnet
 
@@ -63,11 +63,11 @@ To demonstrate subnet usage, you can launch an EC2 instance in one of your subne
 3. Select your desired Amazon Machine Image (AMI), choose an existing key pair, and keep the default security group settings.
 4. Launch the instance. AWS will automatically assign a private IP address from **subnet two**.
 
-![The image shows an AWS EC2 instance launch configuration screen, detailing settings for VPC, subnet, security groups, and instance type. The summary section on the right provides an overview of the selected options, including the software image and storage details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865695/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Subnets-Demo/aws-ec2-instance-launch-configuration.jpg)
+![The image shows an AWS EC2 instance launch configuration screen, detailing settings for VPC, subnet, security groups, and instance type. The summary section on the right provides an overview of the selected options, including the software image and storage details.](https://kodekloud.com/kk-media/image/upload/v1752865695/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Subnets-Demo/aws-ec2-instance-launch-configuration.jpg)
 
 After launching the instance, navigate to the **Instances** section in the console to verify the deployment. Even if the instance is still booting, you should see it has been assigned a private IP address (e.g., 10.0.5.113), confirming its placement in **subnet two**.
 
-![The image shows an AWS EC2 Management Console displaying details of a running instance named "instance1" with instance ID "i-0c683936f4bf18119" and type "t2.micro".](../../../../images/kodekloud.com/kk-media/image/upload/v1752865696/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Subnets-Demo/aws-ec2-management-console-instance1.jpg)
+![The image shows an AWS EC2 Management Console displaying details of a running instance named "instance1" with instance ID "i-0c683936f4bf18119" and type "t2.micro".](https://kodekloud.com/kk-media/image/upload/v1752865696/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Subnets-Demo/aws-ec2-management-console-instance1.jpg)
 
 ## Step 4: Clean Up Resources
 
@@ -78,7 +78,7 @@ When you no longer need the instance or the VPC, it is important to terminate an
 
 > **lightbulb** If an error occurs during deletion because the instance is still shutting down, wait a few seconds and try again. Ensure that all instances and network interfaces have been terminated before deleting the VPC.
 
-![The image shows an AWS console screen where a user is attempting to delete a VPC but is unable to do so because it contains active instances and network interfaces. The interface provides details on the resources that need to be terminated or deleted first.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865697/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Subnets-Demo/aws-console-delete-vpc-error.jpg)
+![The image shows an AWS console screen where a user is attempting to delete a VPC but is unable to do so because it contains active instances and network interfaces. The interface provides details on the resources that need to be terminated or deleted first.](https://kodekloud.com/kk-media/image/upload/v1752865697/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Subnets-Demo/aws-console-delete-vpc-error.jpg)
 
 ## Summary of Steps
 

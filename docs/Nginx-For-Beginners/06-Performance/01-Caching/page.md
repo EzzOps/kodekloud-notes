@@ -116,9 +116,7 @@ server {
 
 ### proxy\_cache\_bypass — use with caution
 
-<Callout icon="warning">
-  `proxy_cache_bypass` lets you skip cache for specific requests (for example, when the client sends `Cache-Control: no-cache`). Overusing this directive defeats caching because many requests will be forwarded to the backend. Prefer bypass rules only for dynamic endpoints or authenticated requests.
-</Callout>
+> **warning** `proxy_cache_bypass` lets you skip cache for specific requests (for example, when the client sends `Cache-Control: no-cache`). Overusing this directive defeats caching because many requests will be forwarded to the backend. Prefer bypass rules only for dynamic endpoints or authenticated requests.
 
 Example:
 
@@ -135,9 +133,7 @@ proxy_cache_bypass $http_cache_control;
 add_header X-Proxy-Cache $upstream_cache_status;
 ```
 
-<Callout icon="lightbulb">
-  Use `add_header` to expose cache status in response headers to the client (useful for debugging). `proxy_set_header` is different — it sets headers on the request to the upstream backend.
-</Callout>
+> **lightbulb** Use `add_header` to expose cache status in response headers to the client (useful for debugging). `proxy_set_header` is different — it sets headers on the request to the upstream backend.
 
 ## How to confirm caching is working
 
@@ -187,6 +183,4 @@ X-Timer: S1737739521.335220,VS0,VE2
 
 Now you can configure NGINX caching using the directives shown above and verify results with the browser DevTools and server logs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/08d27eea-6435-4900-972f-8ace51a21922" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/08d27eea-6435-4900-972f-8ace51a21922)

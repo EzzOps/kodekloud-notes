@@ -13,9 +13,7 @@ We’ve reached the end of this lesson on Linode Kubernetes Engine (LKE). Here�
 | Standard Kubernetes Configurations | Seamless deployment of pods, services, ingress controllers, and persistent storage        |
 | Out-of-the-Box Integrations        | Preconfigured Container Registry, Metrics Server, and Kubernetes Dashboard                |
 
-<Callout icon="lightbulb">
-  LKE’s intuitive dashboard organizes menus logically, making cluster creation and management straightforward. The Kubernetes Dashboard is available by default—no extra setup required—to visually monitor CPU, memory, and more.
-</Callout>
+> **lightbulb** LKE’s intuitive dashboard organizes menus logically, making cluster creation and management straightforward. The Kubernetes Dashboard is available by default—no extra setup required—to visually monitor CPU, memory, and more.
 
 Thank you for following along! We hope this course has given you the confidence to deploy and manage production-ready Kubernetes clusters on Linode.
 
@@ -25,6 +23,4 @@ Thank you for following along! We hope this course has given you the confidence 
 * [Kubernetes Official Docs](https://kubernetes.io/docs/)
 * [Getting Started with Linode Container Registry](https://www.linode.com/docs/products/container-registry/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/9702fbe2-4321-41c5-87e8-8ea364da097d/lesson/46fa4dc3-1786-4bf0-9f63-dcd12d7c3e41" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/9702fbe2-4321-41c5-87e8-8ea364da097d/lesson/46fa4dc3-1786-4bf0-9f63-dcd12d7c3e41)

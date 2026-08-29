@@ -10,19 +10,19 @@ In this lesson, we explore highly managed AWS services—platforms that abstract
 
 AWS offerings span numerous domains such as compute, storage, databases, networking, analytics, machine learning, security and identity, application integration, as well as management and governance. AWS categorizes these services based on the level of abstraction and management provided.
 
-![The image displays icons representing various technology elements such as Compute, Storage, Databases, Networking, Analytics, Machine Learning, Security and Identity, Application Integration, and Management and Governance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861034/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Highly-Managed-AWS-Services-Overview/technology-elements-icons-diagram.jpg)
+![The image displays icons representing various technology elements such as Compute, Storage, Databases, Networking, Analytics, Machine Learning, Security and Identity, Application Integration, and Management and Governance.](https://kodekloud.com/kk-media/image/upload/v1752861034/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Highly-Managed-AWS-Services-Overview/technology-elements-icons-diagram.jpg)
 
 Consider these services as interfaces that largely operate via APIs rather than requiring direct interaction with virtual machines or operating systems. For instance, AWS Lambda executes your code in a serverless manner—there is no need to log into an operating system or manage any compute environment. Similarly, AWS Elastic Beanstalk orchestrates and manages compute resources on your behalf rather than exposing raw servers.
 
 Another excellent example is AWS Fargate, which underpins container services such as Amazon ECS and EKS. Although Fargate is not directly visible in the AWS console, it abstracts server management entirely, delivering a serverless container orchestration experience.
 
-![The image shows icons for three AWS compute services: AWS Lambda, AWS Elastic Beanstalk, and AWS Fargate.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861036/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Highly-Managed-AWS-Services-Overview/aws-compute-services-icons.jpg)
+![The image shows icons for three AWS compute services: AWS Lambda, AWS Elastic Beanstalk, and AWS Fargate.](https://kodekloud.com/kk-media/image/upload/v1752861036/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Highly-Managed-AWS-Services-Overview/aws-compute-services-icons.jpg)
 
 ## Storage Services
 
 When it comes to storage solutions, Amazon S3 is a prime example of a highly managed service with its API-driven approach. In contrast, the Elastic File System (EFS) offers network file storage using NFS, but it does not provide the same level of abstraction as S3. AWS FSx, which encompasses services like Windows File Server, Lustre, OpenZFS, and NetApp ONTAP, also fits into the platform-as-a-service category while giving you occasional granular control compared to S3.
 
-![The image shows icons for AWS storage services: S3, EFS, and FSx, each represented with a green icon and labeled accordingly.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861037/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Highly-Managed-AWS-Services-Overview/aws-storage-services-icons-s3-efs-fsx.jpg)
+![The image shows icons for AWS storage services: S3, EFS, and FSx, each represented with a green icon and labeled accordingly.](https://kodekloud.com/kk-media/image/upload/v1752861037/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Highly-Managed-AWS-Services-Overview/aws-storage-services-icons-s3-efs-fsx.jpg)
 
 ## Database Services
 
@@ -32,7 +32,7 @@ AWS offers diverse database services tailored to different needs:
 * **Amazon DynamoDB**: A nearly completely serverless service with zero infrastructure management.
 * **Amazon Aurora**: Available in both serverless and traditional deployment models.
 
-![The image displays icons for three AWS database services: AWS RDS, AWS DynamoDB, and AWS Aurora, with a "Databases" heading.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861039/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Highly-Managed-AWS-Services-Overview/aws-database-services-icons.jpg)
+![The image displays icons for three AWS database services: AWS RDS, AWS DynamoDB, and AWS Aurora, with a "Databases" heading.](https://kodekloud.com/kk-media/image/upload/v1752861039/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Highly-Managed-AWS-Services-Overview/aws-database-services-icons.jpg)
 
 AWS also delivers serverless options for databases and analytics services, including Redshift and OpenSearch. Be sure to understand these options as they frequently appear in exam questions.
 
@@ -52,7 +52,7 @@ Amazon’s analytics offerings are designed to offload scaling and infrastructur
 * **Amazon Kinesis** and **AWS Glue** enable real-time data processing and ETL tasks with minimal configuration.
 * **Amazon QuickSight** enhances data visualization as a complementary dashboard service.
 
-![The image displays icons for three AWS analytics services: Amazon Redshift, Amazon Kinesis, and AWS Glue.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861040/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Highly-Managed-AWS-Services-Overview/aws-analytics-services-icons.jpg)
+![The image displays icons for three AWS analytics services: Amazon Redshift, Amazon Kinesis, and AWS Glue.](https://kodekloud.com/kk-media/image/upload/v1752861040/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Highly-Managed-AWS-Services-Overview/aws-analytics-services-icons.jpg)
 
 ## Machine Learning Services
 
@@ -61,7 +61,7 @@ AWS provides managed machine learning services that help you implement sophistic
 * **Amazon SageMaker** offers serverless or lightweight deployment options.
 * Services like **Amazon Comprehend**, **Amazon Rekognition**, **Amazon Transcribe**, and **Amazon Lex** allow you to leverage powerful ML capabilities with minimal configuration.
 
-![The image displays icons for three Amazon machine learning services: SageMaker, Comprehend, and Rekognition.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861041/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Highly-Managed-AWS-Services-Overview/amazon-machine-learning-services-icons.jpg)
+![The image displays icons for three Amazon machine learning services: SageMaker, Comprehend, and Rekognition.](https://kodekloud.com/kk-media/image/upload/v1752861041/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Highly-Managed-AWS-Services-Overview/amazon-machine-learning-services-icons.jpg)
 
 ## Security and Identity
 
@@ -70,7 +70,7 @@ Security services in AWS provide robust management of identities and protection 
 * **AWS IAM** allows you to manage user permissions and policies efficiently.
 * **Amazon GuardDuty** and **AWS Shield** are more SaaS-oriented, offering extensive security monitoring with minimal configuration.
 
-![The image displays icons for three AWS security and identity services: AWS IAM, Amazon GuardDuty, and AWS Shield.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861042/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Highly-Managed-AWS-Services-Overview/aws-security-identity-services-icons.jpg)
+![The image displays icons for three AWS security and identity services: AWS IAM, Amazon GuardDuty, and AWS Shield.](https://kodekloud.com/kk-media/image/upload/v1752861042/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Highly-Managed-AWS-Services-Overview/aws-security-identity-services-icons.jpg)
 
 ## Application Integration
 
@@ -79,7 +79,7 @@ AWS application integration services simplify communications between distributed
 * **Amazon SNS** and **Amazon SQS** provide managed messaging services.
 * **AWS Step Functions** orchestrate workflows seamlessly, eliminating the need to manage server capacity.
 
-![The image shows icons for Amazon SNS, Amazon SQS, and AWS Step Functions under the heading "Application Integration."](../../../../images/kodekloud.com/kk-media/image/upload/v1752861043/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Highly-Managed-AWS-Services-Overview/application-integration-aws-icons.jpg)
+![The image shows icons for Amazon SNS, Amazon SQS, and AWS Step Functions under the heading "Application Integration."](https://kodekloud.com/kk-media/image/upload/v1752861043/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Highly-Managed-AWS-Services-Overview/application-integration-aws-icons.jpg)
 
 ## Management and Governance
 
@@ -89,7 +89,7 @@ AWS management and governance tools help you oversee your infrastructure with va
 * **AWS Config** offers a highly managed solution that continuously monitors configurations against predefined rules.
 * **AWS Systems Manager** is powerful but may require more detailed configuration.
 
-![The image displays icons for AWS management and governance services: AWS CloudFormation, AWS Config, and AWS Systems Manager.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861044/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Highly-Managed-AWS-Services-Overview/aws-management-governance-icons.jpg)
+![The image displays icons for AWS management and governance services: AWS CloudFormation, AWS Config, and AWS Systems Manager.](https://kodekloud.com/kk-media/image/upload/v1752861044/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Highly-Managed-AWS-Services-Overview/aws-management-governance-icons.jpg)
 
 > **lightbulb** Remember, the goal is to differentiate between services that allow low-level infrastructure access and those that provide a fully managed, serverless experience.
 

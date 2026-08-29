@@ -8,9 +8,7 @@ In this lesson, we explore the concept of static pods in Kubernetes and explain 
 
 Imagine you have a server with only the kubelet and Docker installed. In this scenario, there is no API server to provide pod details. Since a pod requires a pod definition file to be created, you can configure the kubelet to read these definitions directly from a designated directory on the host. The kubelet continuously monitors this directory, creates pods based on the files it finds, restarts them if they crash, and deletes them when the corresponding files are removed. Pods created using this method are referred to as static pods.
 
-<Callout icon="lightbulb">
-  Static pods support only pod objects. More advanced Kubernetes objects such as ReplicaSets, Deployments, or Services require the full control plane and cannot be defined using the static pod mechanism.
-</Callout>
+> **lightbulb** Static pods support only pod objects. More advanced Kubernetes objects such as ReplicaSets, Deployments, or Services require the full control plane and cannot be defined using the static pod mechanism.
 
 ## Configuring the Static Pod Directory
 
@@ -93,34 +91,24 @@ weave-net-snm1l                                2/2     Running   1          16m
 
 A common question is how static pods compare with DaemonSets. DaemonSets ensure that a specific pod runs on all nodes in a cluster, managed by a DaemonSet controller via the API server. In contrast, static pods are created directly by the kubelet without intervention from the API server or other control plane components. Both methods bypass the kube scheduler.
 
-<Frame>
-  ![The image compares Static PODs and DaemonSets, highlighting their creation sources, deployment purposes, and scheduler behavior in Kubernetes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880706/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Static-Pods/frame_490.jpg)
-</Frame>
+![The image compares Static PODs and DaemonSets, highlighting their creation sources, deployment purposes, and scheduler behavior in Kubernetes.](https://kodekloud.com/kk-media/image/upload/v1752880706/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Static-Pods/frame_490.jpg)
 
 ## Static Pods Architecture
 
 Static pods play a critical role in deploying control plane components. The following architectural diagram shows how static pod definitions stored in a designated folder are used by the kubelet to deploy essential components:
 
-<Frame>
-  ![The image illustrates the architecture of Kubernetes static pods, showing components like kube-apiserver, ETCD cluster, kube-scheduler, and kubelet managing pod YAML files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880707/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Static-Pods/frame_340.jpg)
-</Frame>
+![The image illustrates the architecture of Kubernetes static pods, showing components like kube-apiserver, ETCD cluster, kube-scheduler, and kubelet managing pod YAML files.](https://kodekloud.com/kk-media/image/upload/v1752880707/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Static-Pods/frame_340.jpg)
 
 Another diagram below presents a typical control plane deployment across multiple master nodes using static pods stored in `/etc/kubernetes/manifests`:
 
-<Frame>
-  ![The image illustrates a Kubernetes use case with three master nodes, each containing YAML configuration files for apiserver, controller-manager, and etcd, stored in /etc/kubernetes/manifests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880709/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Static-Pods/frame_430.jpg)
-</Frame>
+![The image illustrates a Kubernetes use case with three master nodes, each containing YAML configuration files for apiserver, controller-manager, and etcd, stored in /etc/kubernetes/manifests.](https://kodekloud.com/kk-media/image/upload/v1752880709/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Static-Pods/frame_430.jpg)
 
 ## Summary
 
 Static pods offer a powerful mechanism for running pods independently of the Kubernetes control plane. Managed directly by the kubelet, they are continuously monitored based on pod definition files placed in a designated directory. While static pods do not benefit from advanced features such as ReplicaSets or Deployments, they are essential for bootstrapping and maintaining control plane components, especially during initial cluster setup.
 
-<Callout icon="lightbulb">
-  Always update or remove static pods by modifying the corresponding pod definition file in the manifest directory, as any changes made through the API server will not affect static pods.
-</Callout>
+> **lightbulb** Always update or remove static pods by modifying the corresponding pod definition file in the manifest directory, as any changes made through the API server will not affect static pods.
 
 By experimenting with static pods in both standalone and clustered environments, you can build confidence in managing essential Kubernetes services and fine-tuning your cluster's configuration. For more insights on Kubernetes architecture and management, explore resources like [Kubernetes Documentation](https://kubernetes.io/docs/) and [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/4fab542c-3091-4f8e-ad7c-91d96d54b049/lesson/8c9142ba-eeaf-4210-b329-2a8e396f7fae" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/4fab542c-3091-4f8e-ad7c-91d96d54b049/lesson/8c9142ba-eeaf-4210-b329-2a8e396f7fae)

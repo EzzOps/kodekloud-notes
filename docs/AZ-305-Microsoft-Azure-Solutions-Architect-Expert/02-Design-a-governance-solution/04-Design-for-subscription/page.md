@@ -24,7 +24,7 @@ For shared services such as firewalls, ExpressRoute, VPN gateways, or Virtual WA
 
 Subscriptions are an optimal scope for assigning policies and managing access controls. By implementing policies at the subscription level, all underlying resources automatically inherit these configurations, ensuring a consistent and secure environment. The diagram below provides a visual guide on designing Azure subscriptions, illustrating the grouping under management groups, quota considerations, shared services setup, and policy management and access:
 
-![The image is a guide on designing Azure subscriptions, highlighting grouping under management, considering quotas and limits, setting up shared services, and managing policies and access. It includes a diagram with icons representing different Azure services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866938/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-subscription/azure-subscription-design-guide-diagram.jpg)
+![The image is a guide on designing Azure subscriptions, highlighting grouping under management, considering quotas and limits, setting up shared services, and managing policies and access. It includes a diagram with icons representing different Azure services.](https://kodekloud.com/kk-media/image/upload/v1752866938/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-subscription/azure-subscription-design-guide-diagram.jpg)
 
 > **triangle-alert** When setting up access control, always follow the principle of least privilege. Assign roles carefully at the subscription level, as permissions propagate to all associated resources, potentially increasing security risks if misconfigured.
 

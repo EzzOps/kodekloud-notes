@@ -74,9 +74,7 @@ Recommendations for this scenario
 * Choose Model B because its higher F1 (0.86) signals better balance between precision and recall for the minority class, which is the key concern in imbalanced datasets.
 * Report per-class metrics and include macro-F1 / weighted-F1 in any model comparison to make decisions transparent.
 
-<Callout icon="lightbulb">
-  When classes are imbalanced, favor F1-based metrics and per-class evaluation (precision, recall, confusion matrix). Model B is the better choice here because its higher F1 indicates more balanced performance across classes despite slightly lower accuracy.
-</Callout>
+> **lightbulb** When classes are imbalanced, favor F1-based metrics and per-class evaluation (precision, recall, confusion matrix). Model B is the better choice here because its higher F1 indicates more balanced performance across classes despite slightly lower accuracy.
 
 Links and references
 
@@ -84,6 +82,4 @@ Links and references
 * [Understanding the ROC Curve — Towards Data Science](https://towardsdatascience.com/understanding-the-roc-curve-8ffa8b5e0a76)
 * [Scikit-learn metrics — Precision, Recall, F1](https://scikit-learn.org/stable/modules/model_evaluation.html#precision-recall-f-measures)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/b8ad33c7-78ce-4828-a30c-4a8fc01d1781/lesson/170b4fab-dbae-4575-a830-7fdc73667e6d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/b8ad33c7-78ce-4828-a30c-4a8fc01d1781/lesson/170b4fab-dbae-4575-a830-7fdc73667e6d)

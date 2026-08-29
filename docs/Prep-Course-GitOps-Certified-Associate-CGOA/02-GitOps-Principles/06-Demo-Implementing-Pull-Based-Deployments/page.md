@@ -79,9 +79,7 @@ spec:
 
 This confirms Argo CD successfully connected to Gitea and read the manifest. Because sync is manual, Argo CD will not apply the manifests to the cluster until you click Sync (or change the app to Automatic sync).
 
-<Callout icon="lightbulb">
-  Because this repository is referenced across multiple demos, add it to Argo CD’s repository settings so it appears as a pre-populated choice when creating new applications.
-</Callout>
+> **lightbulb** Because this repository is referenced across multiple demos, add it to Argo CD’s repository settings so it appears as a pre-populated choice when creating new applications.
 
 Registering the Git repository in Argo CD
 
@@ -120,6 +118,4 @@ Links and references
 * Docker Desktop: [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop)
 * Kubernetes docs: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/e7a5e275-5428-4f90-890a-913b4ce18bc2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/e7a5e275-5428-4f90-890a-913b4ce18bc2)

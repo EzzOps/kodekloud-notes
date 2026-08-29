@@ -14,9 +14,7 @@ The `generate` block in Terragrunt automates file creation within your working d
 * Enforce version constraints on Terraform providers
 * Generate any auxiliary `.tf` or other configuration files
 
-<Callout icon="lightbulb">
-  Use the `generate` block to share common Terraform setup and reduce duplication across your modules.
-</Callout>
+> **lightbulb** Use the `generate` block to share common Terraform setup and reduce duplication across your modules.
 
 ## generate Block Attributes
 
@@ -39,9 +37,7 @@ The `generate` block in Terragrunt automates file creation within your working d
 | skip                  | Leave the existing file untouched.                              |
 | error                 | Throw an error if the file already exists, halting execution.   |
 
-<Callout icon="triangle-alert">
-  Overwriting files may lead to unintended changes. Review your `if_exists` setting to prevent data loss.
-</Callout>
+> **triangle-alert** Overwriting files may lead to unintended changes. Review your `if_exists` setting to prevent data loss.
 
 ***
 
@@ -120,6 +116,4 @@ Combine this with the previous blocks to automate both provider and version file
 * [Terraform HEREDOC Syntax](https://developer.hashicorp.com/terraform/language/syntax/configuration#here-documents)
 * [Terraform Providers Overview](https://developer.hashicorp.com/terraform/plugins)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/1ef7d049-0098-4b39-9179-af14273589fe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/1ef7d049-0098-4b39-9179-af14273589fe)

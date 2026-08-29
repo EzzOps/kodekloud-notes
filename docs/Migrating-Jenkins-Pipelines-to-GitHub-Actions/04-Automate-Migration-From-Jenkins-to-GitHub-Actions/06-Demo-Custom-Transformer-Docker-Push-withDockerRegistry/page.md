@@ -105,15 +105,11 @@ Best-practice mapping (quick reference)
 | `withDockerRegistry(credentialsId: 'docker-hub-credentials')` | `uses: docker/login-action@v2` or `` `run: echo ${{ secrets.DOCKERHUB_TOKEN }} \| docker login ...` `` | Requires mapping Jenkins credentials to GitHub Secrets.                    |
 | `publishHTML([...])`                                          |                                         Upload artifact or use a GH Action that publishes HTML reports | Use `actions/upload-artifact` or a static-site publish workflow.           |
 
-<Callout icon="lightbulb">
-  Define the repository or organization variables used by the transformer (for example, `vars.DOCKERHUB_USERNAME` and `vars.IMAGE_NAME`) in your GitHub repository or organization settings so the workflow can access them at runtime. For more, see [Using variables in GitHub Actions](https://docs.github.com/en/actions/using-workflows/variables).
-</Callout>
+> **lightbulb** Define the repository or organization variables used by the transformer (for example, `vars.DOCKERHUB_USERNAME` and `vars.IMAGE_NAME`) in your GitHub repository or organization settings so the workflow can access them at runtime. For more, see [Using variables in GitHub Actions](https://docs.github.com/en/actions/using-workflows/variables).
 
 Warning about credentials and registry authentication
 
-<Callout icon="warning">
-  Do not store credentials directly in workflows. Map Jenkins `credentialsId` to GitHub Secrets (e.g. `secrets.DOCKERHUB_USERNAME` and `secrets.DOCKERHUB_TOKEN`) or use `docker/login-action` with secure inputs. You will need a separate transformer for `withDockerRegistry` to perform this mapping correctly.
-</Callout>
+> **warning** Do not store credentials directly in workflows. Map Jenkins `credentialsId` to GitHub Secrets (e.g. `secrets.DOCKERHUB_USERNAME` and `secrets.DOCKERHUB_TOKEN`) or use `docker/login-action` with secure inputs. You will need a separate transformer for `withDockerRegistry` to perform this mapping correctly.
 
 What remains to be done
 
@@ -133,9 +129,7 @@ References
 
 That's it — we converted the embedded `docker build` in `sh` into a proper GitHub Actions `run` step and replaced hard-coded values with workflow variables. Next step: implement a transformer to convert `withDockerRegistry` into secure GitHub Actions authentication and finalize the push flow.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/f84d4317-bb2f-4d8e-8b18-ce4eec765ecf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/f84d4317-bb2f-4d8e-8b18-ce4eec765ecf)
 
 
 # Demo Custom Transformer Docker Push withDockerRegistry

@@ -8,15 +8,11 @@ In this lesson, we explore PgAdmin, the graphical user interface designed to sim
 
 When PgAdmin opens, it automatically configures a default server connection for your local PostgreSQL instance. Under the "Service" section, you will see a pre-configured server labeled "PostgreSQL 13." This server represents the PostgreSQL instance running on your machine. Simply enter the PostgreSQL user password—the one set during PostgreSQL installation—and optionally save it for future sessions.
 
-<Frame>
-  ![The image shows the pgAdmin interface with a pop-up window prompting for a password to connect to a PostgreSQL server. The interface includes options for managing and configuring PostgreSQL databases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883499/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-password-prompt-postgresql.jpg)
-</Frame>
+![The image shows the pgAdmin interface with a pop-up window prompting for a password to connect to a PostgreSQL server. The interface includes options for managing and configuring PostgreSQL databases.](https://kodekloud.com/kk-media/image/upload/v1752883499/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-password-prompt-postgresql.jpg)
 
 Upon providing the password, PgAdmin connects to your local instance and displays various statistics, such as active sessions, transactions per second, and other server activity details.
 
-<Frame>
-  ![The image shows a pgAdmin dashboard displaying server sessions, transactions, tuples, and server activity for a PostgreSQL database. It includes graphs and a table with details like PID, database, user, and application state.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883500/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-postgresql-dashboard-server-sessions.jpg)
-</Frame>
+![The image shows a pgAdmin dashboard displaying server sessions, transactions, tuples, and server activity for a PostgreSQL database. It includes graphs and a table with details like PID, database, user, and application state.](https://kodekloud.com/kk-media/image/upload/v1752883500/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-postgresql-dashboard-server-sessions.jpg)
 
 ***
 
@@ -36,9 +32,7 @@ To create a new server manually, follow these steps:
 
 Once saved, the new server will appear in PgAdmin. While PgAdmin offers many menus and options, focus on the features essential for interacting with your PostgreSQL databases.
 
-<Frame>
-  ![The image shows the pgAdmin interface, a management tool for PostgreSQL, with a "Create - Server" dialog box open for configuring a new server connection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883501/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-create-server-dialog.jpg)
-</Frame>
+![The image shows the pgAdmin interface, a management tool for PostgreSQL, with a "Create - Server" dialog box open for configuring a new server connection.](https://kodekloud.com/kk-media/image/upload/v1752883501/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-create-server-dialog.jpg)
 
 ***
 
@@ -59,9 +53,7 @@ Within PgAdmin, your PostgreSQL instance includes a "Databases" section managed 
 
 This SQL confirmation shows that PgAdmin abstracts SQL commands behind the scenes, offering a visual approach to database management.
 
-<Frame>
-  ![The image shows a pgAdmin interface with a "Create Database" dialog open, where a database named "fastapi" is being created. The background displays server sessions, activity, and statistics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883503/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-create-database-fastapi.jpg)
-</Frame>
+![The image shows a pgAdmin interface with a "Create Database" dialog open, where a database named "fastapi" is being created. The background displays server sessions, activity, and statistics.](https://kodekloud.com/kk-media/image/upload/v1752883503/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-create-database-fastapi.jpg)
 
 Once the database is created, expand it to view "Schemas" > "public" > "Tables." This is where you design your database tables.
 
@@ -80,32 +72,24 @@ For demonstration, let’s create a "products" table to represent items in an e-
      * Check "Not Null" to ensure every product has a name.
      * Do not mark this column as the primary key.
 
-<Frame>
-  ![The image shows a pgAdmin interface with a "Create - Table" dialog open, displaying options for setting the table's owner, schema, and other properties, with server activity graphs visible on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883504/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-create-products-table.jpg)
-</Frame>
+![The image shows a pgAdmin interface with a "Create - Table" dialog open, displaying options for setting the table's owner, schema, and other properties, with server activity graphs visible on the right.](https://kodekloud.com/kk-media/image/upload/v1752883504/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-create-products-table.jpg)
 
 * **price:**
   * Data type: Use "integer" for simplicity, even though types like `numeric` or floating point are more common for prices.
   * Check "Not Null" to ensure every product has a price.
   * Note that PostgreSQL provides various integer types (smallint, integer, bigint) that differ in storage size and range.
 
-<Frame>
-  ![The image shows a pgAdmin interface where a table is being created with columns for "name" (character varying) and "price" (integer). The interface includes options for setting data types, constraints, and other properties.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883505/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-create-table-postgresql.jpg)
-</Frame>
+![The image shows a pgAdmin interface where a table is being created with columns for "name" (character varying) and "price" (integer). The interface includes options for setting data types, constraints, and other properties.](https://kodekloud.com/kk-media/image/upload/v1752883505/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-create-table-postgresql.jpg)
 
 * **id:**
   * Data type: Use the "serial" data type, which auto-increments the ID starting at 1 for each new product.
   * Mark this column as the primary key.
 
-<Frame>
-  ![The image shows a pgAdmin interface where a table is being created with columns for "name" (character varying) and "price" (integer). The interface includes options for setting data types, constraints, and other properties.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883506/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-table-creation-name-price.jpg)
-</Frame>
+![The image shows a pgAdmin interface where a table is being created with columns for "name" (character varying) and "price" (integer). The interface includes options for setting data types, constraints, and other properties.](https://kodekloud.com/kk-media/image/upload/v1752883506/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-table-creation-name-price.jpg)
 
 4. After configuring the columns, click Save. The "products" table will now appear in the "Tables" section.
 
-<Frame>
-  ![The image shows a pgAdmin interface with a "Create - Table" window open, displaying columns for a database table with fields for name, price, and id. The background includes a dashboard with server activity and database statistics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883508/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-create-table-interface.jpg)
-</Frame>
+![The image shows a pgAdmin interface with a "Create - Table" window open, displaying columns for a database table with fields for name, price, and id. The background includes a dashboard with server activity and database statistics.](https://kodekloud.com/kk-media/image/upload/v1752883508/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-create-table-interface.jpg)
 
 ***
 
@@ -131,9 +115,7 @@ To insert data into the "products" table:
    * "DVD player" with a price of `80`.
    * "Remote" with a price of `10`.
 
-<Callout icon="lightbulb">
-  Unsaved changes will appear in bold in the grid, and once saved, they revert to normal.
-</Callout>
+> **lightbulb** Unsaved changes will appear in bold in the grid, and once saved, they revert to normal.
 
 4. If you attempt to insert a product while omitting a required non-null field (e.g., missing a price or name), PostgreSQL will return an error message indicating that null values are not permitted.
 
@@ -169,9 +151,7 @@ Next, add a column to keep track of the inventory for each product:
 4. To prevent errors for existing rows, set the default value to `0`.
 5. Save and refresh the view to confirm that the inventory for pre-existing products is now set to zero.
 
-<Frame>
-  ![The image shows a pgAdmin interface with a database schema for a "products" table, displaying columns such as name, price, id, is\_sale, and inventory, along with their data types and constraints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883509/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-products-table-schema.jpg)
-</Frame>
+![The image shows a pgAdmin interface with a database schema for a "products" table, displaying columns such as name, price, id, is\_sale, and inventory, along with their data types and constraints.](https://kodekloud.com/kk-media/image/upload/v1752883509/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-products-table-schema.jpg)
 
 ### Adding a Timestamp Column ("created\_at")
 
@@ -189,18 +169,12 @@ SELECT * FROM public.products
 ORDER BY "id" ASC;
 ```
 
-<Frame>
-  ![The image shows a pgAdmin interface with a database table named "products" open, displaying columns such as name, price, id, is\_sale, inventory, and created\_at, along with their data types and properties. The table structure and some data entries are visible in the interface.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883510/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-products-table-interface.jpg)
-</Frame>
+![The image shows a pgAdmin interface with a database table named "products" open, displaying columns such as name, price, id, is\_sale, inventory, and created\_at, along with their data types and properties. The table structure and some data entries are visible in the interface.](https://kodekloud.com/kk-media/image/upload/v1752883510/notes-assets/images/Python-API-Development-with-FastAPI-Pgadmin-Ui/pgadmin-products-table-interface.jpg)
 
-<Callout icon="lightbulb">
-  PgAdmin's visual interface is a powerful tool that abstracts complex SQL commands into an easy-to-use GUI, helping you get started with PostgreSQL even if you are new to SQL.
-</Callout>
+> **lightbulb** PgAdmin's visual interface is a powerful tool that abstracts complex SQL commands into an easy-to-use GUI, helping you get started with PostgreSQL even if you are new to SQL.
 
 ***
 
 By following these steps—from creating a server and database to designing table schemas, inserting data, and modifying existing structures—you now have a solid understanding of how PgAdmin facilitates PostgreSQL management. Enjoy experimenting with your newfound skills!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/4acad5a3-ae4f-457e-9632-b2807996cf30" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/4acad5a3-ae4f-457e-9632-b2807996cf30)

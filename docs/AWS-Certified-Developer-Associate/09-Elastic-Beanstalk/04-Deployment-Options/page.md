@@ -24,19 +24,19 @@ This strategy is an enhanced version of the rolling update. It temporarily incre
 
 Immutable deployments create a new auto scaling group for the updated version while the existing group continues running the current version. Once the new group is stable, traffic is redirected to it, after which the old version can be safely decommissioned.
 
-![The image illustrates the stages of an immutable deployment process in AWS Elastic Beanstalk, showing the transition from version 1 (v1) to version 2 (v2) with a new Auto Scaling Group (ASG).](../../../../images/kodekloud.com/kk-media/image/upload/v1752858846/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Options/immutable-deployment-aws-eb-diagram.jpg)
+![The image illustrates the stages of an immutable deployment process in AWS Elastic Beanstalk, showing the transition from version 1 (v1) to version 2 (v2) with a new Auto Scaling Group (ASG).](https://kodekloud.com/kk-media/image/upload/v1752858846/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Options/immutable-deployment-aws-eb-diagram.jpg)
 
 ## Traffic Splitting
 
 Traffic splitting gradually shifts traffic from the current version to the updated one. Initially, the load balancer or DNS entry directs most traffic to the original version. As you deploy the new version in a separate auto scaling group, you can configure a split (for instance, 90% to version one and 10% to version two) and gradually adjust until the migration is complete.
 
-![The image illustrates Elastic Beanstalk deployment options with traffic splitting, showing 90% of traffic directed to version 1 (v1) and 10% to version 2 (v2).](../../../../images/kodekloud.com/kk-media/image/upload/v1752858847/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Options/elastic-beanstalk-traffic-splitting.jpg)
+![The image illustrates Elastic Beanstalk deployment options with traffic splitting, showing 90% of traffic directed to version 1 (v1) and 10% to version 2 (v2).](https://kodekloud.com/kk-media/image/upload/v1752858847/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Options/elastic-beanstalk-traffic-splitting.jpg)
 
 ## Blue-Green Deployment
 
 Blue-green deployment involves maintaining two complete environments concurrently: one running the current version (blue) and the other running the updated version (green). Using a service like Route 53, traffic is switched from the blue environment to the green environment once the new version is verified. This method minimizes downtime and simplifies rollback if issues occur.
 
-![The image illustrates Elastic Beanstalk deployment options using a blue/green strategy, showing two environments (V1 and V2) connected to a Route 53 service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858848/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Options/elastic-beanstalk-blue-green-deployment.jpg)
+![The image illustrates Elastic Beanstalk deployment options using a blue/green strategy, showing two environments (V1 and V2) connected to a Route 53 service.](https://kodekloud.com/kk-media/image/upload/v1752858848/notes-assets/images/AWS-Certified-Developer-Associate-Deployment-Options/elastic-beanstalk-blue-green-deployment.jpg)
 
 ## Summary
 

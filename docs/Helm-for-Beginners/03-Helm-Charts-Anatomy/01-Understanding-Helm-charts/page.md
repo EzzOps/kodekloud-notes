@@ -6,7 +6,7 @@ This guide covers the fundamentals of Helm charts, including creation, templatin
 
 In this guide, we delve into the fundamentals of Helm charts, a key component in Kubernetes package management. You'll learn how to create your own Helm charts, utilize advanced templating and functions, explore chart hooks, perform chart tests, and understand Helm's provenance and integrity features.
 
-![The image shows six labeled buttons: "Writing Charts," "Templating," "Functions," "Chart Hooks," "Chart Tests," and "Provenance," on a dark background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878956/notes-assets/images/Helm-for-Beginners-Understanding-Helm-charts/labeled-buttons-writing-charts-templating.jpg)
+![The image shows six labeled buttons: "Writing Charts," "Templating," "Functions," "Chart Hooks," "Chart Tests," and "Provenance," on a dark background.](https://kodekloud.com/kk-media/image/upload/v1752878956/notes-assets/images/Helm-for-Beginners-Understanding-Helm-charts/labeled-buttons-writing-charts-templating.jpg)
 
 Let's get started on your journey to mastering Helm charts!
 

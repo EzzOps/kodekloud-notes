@@ -12,7 +12,7 @@ In this lesson, we review the security aspects of several AWS data and machine l
 
 Amazon QuickSight is a visualization tool that lets you build dashboards by pulling data from sources such as Lake Formation, Athena, and the AWS Glue Data Catalog. As a fully managed service, QuickSight natively encrypts data both at rest and in transit. This encryption covers stored data, temporary storage within its SPICE engine, and all data movement. In addition, QuickSight integrates with CloudWatch for monitoring execution flows and metrics without requiring extra configuration.
 
-![The image presents a scenario where a financial services company is evaluating Amazon QuickSight for data visualization, focusing on encryption features. It lists four options regarding QuickSight's encryption capabilities for data security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864185/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/amazon-quicksight-encryption-options.jpg)
+![The image presents a scenario where a financial services company is evaluating Amazon QuickSight for data visualization, focusing on encryption features. It lists four options regarding QuickSight's encryption capabilities for data security.](https://kodekloud.com/kk-media/image/upload/v1752864185/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/amazon-quicksight-encryption-options.jpg)
 
 ***
 
@@ -30,20 +30,20 @@ Amazon SageMaker provides a platform for building, training, and deploying machi
 * **Training Jobs:** Enable inner-container traffic encryption during training by specifying the appropriate encryption parameter in the API.
 * **VPC Access and Storage Encryption:** Deploy SageMaker within a VPC to restrict public Internet access, and enforce storage encryption using custom keys.
 
-![The image is a diagram illustrating the security design for Amazon SageMaker, showing the flow from users through IAM permissions to SageMaker, and its components like Notebook, Training, and Model. It highlights SageMaker's role in training and deploying machine learning models.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864186/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/amazon-sagemaker-security-design-diagram.jpg)
+![The image is a diagram illustrating the security design for Amazon SageMaker, showing the flow from users through IAM permissions to SageMaker, and its components like Notebook, Training, and Model. It highlights SageMaker's role in training and deploying machine learning models.](https://kodekloud.com/kk-media/image/upload/v1752864186/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/amazon-sagemaker-security-design-diagram.jpg)
 
 For secure configurations, ensure that:
 
 * Inner container traffic encryption is set to true.
 * SageMaker is deployed in a VPC to isolate instances from the Internet using security groups and specific VPC endpoints.
 
-![The image presents a question about Amazon SageMaker notebook features, offering four statements to identify the best description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864187/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/amazon-sagemaker-notebook-features.jpg)
+![The image presents a question about Amazon SageMaker notebook features, offering four statements to identify the best description.](https://kodekloud.com/kk-media/image/upload/v1752864187/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/amazon-sagemaker-notebook-features.jpg)
 
-![The image is a diagram illustrating Amazon SageMaker's security features, showing multiple training instances connected to Amazon S3 for data access using SageMaker Pipe mode. It also mentions encryption of data at rest and in transit.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864188/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/sagemaker-security-features-diagram.jpg)
+![The image is a diagram illustrating Amazon SageMaker's security features, showing multiple training instances connected to Amazon S3 for data access using SageMaker Pipe mode. It also mentions encryption of data at rest and in transit.](https://kodekloud.com/kk-media/image/upload/v1752864188/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/sagemaker-security-features-diagram.jpg)
 
-![The image is a slide titled "Designing for Security – SageMaker," showing a configuration screen for network and storage settings in SageMaker, highlighting VPC access and a "No Internet" mode.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864190/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/designing-for-security-sagemaker.jpg)
+![The image is a slide titled "Designing for Security – SageMaker," showing a configuration screen for network and storage settings in SageMaker, highlighting VPC access and a "No Internet" mode.](https://kodekloud.com/kk-media/image/upload/v1752864190/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/designing-for-security-sagemaker.jpg)
 
-![The image provides steps for configuring Amazon SageMaker to operate in a "No Internet" mode for maximum data security, including using a VPC without an Internet Gateway, setting offline mode, using AWS Direct Connect, and enabling an IAM policy to block internet access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864191/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/sagemaker-no-internet-configuration.jpg)
+![The image provides steps for configuring Amazon SageMaker to operate in a "No Internet" mode for maximum data security, including using a VPC without an Internet Gateway, setting offline mode, using AWS Direct Connect, and enabling an IAM policy to block internet access.](https://kodekloud.com/kk-media/image/upload/v1752864191/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/sagemaker-no-internet-configuration.jpg)
 
 Monitoring SageMaker is integrated with CloudWatch for logging and metrics, and AWS CloudTrail provides comprehensive auditing.
 
@@ -53,9 +53,9 @@ Monitoring SageMaker is integrated with CloudWatch for logging and metrics, and 
 
 Amazon Rekognition analyzes and recognizes objects within images. This service encrypts input media and associated metadata by default. For additional security, client-side encryption is supported, though the data must be decrypted prior to processing. To maintain secure access, deploy VPC interface endpoints (PrivateLink).
 
-![The image outlines encryption options provided by Amazon Rekognition to ensure the confidentiality and integrity of media content, including client-side encryption, encryption at rest with AWS KMS, in-transit encryption using SSL/TLS, and built-in encryption within Rekognition.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864193/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/amazon-rekognition-encryption-options.jpg)
+![The image outlines encryption options provided by Amazon Rekognition to ensure the confidentiality and integrity of media content, including client-side encryption, encryption at rest with AWS KMS, in-transit encryption using SSL/TLS, and built-in encryption within Rekognition.](https://kodekloud.com/kk-media/image/upload/v1752864193/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/amazon-rekognition-encryption-options.jpg)
 
-![The image illustrates a security design for AWS Rekognition, showing the connection between EC2 image processing within a VPC and AWS Rekognition image processing via an interface endpoint. It emphasizes the importance of VPC endpoints for services like Rekognition.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864194/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/aws-rekognition-security-design-vpc.jpg)
+![The image illustrates a security design for AWS Rekognition, showing the connection between EC2 image processing within a VPC and AWS Rekognition image processing via an interface endpoint. It emphasizes the importance of VPC endpoints for services like Rekognition.](https://kodekloud.com/kk-media/image/upload/v1752864194/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/aws-rekognition-security-design-vpc.jpg)
 
 ***
 
@@ -69,7 +69,7 @@ Amazon Polly converts text to lifelike speech. As a managed service, its securit
 
 Amazon Lex, which powers conversational chatbots, combines automatic speech recognition (ASR) with natural language understanding (NLU) to convert speech to text and analyze intent. It encrypts data by default and uses IAM for fine-grained access control. Lex can also be accessed securely by leveraging VPC interface endpoints.
 
-![The image is a diagram illustrating the security design for Amazon Lex, highlighting encryption, logging, and infrastructure protections, with a flow involving Amazon CloudWatch and AWS Lambda.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864195/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/amazon-lex-security-design-diagram.jpg)
+![The image is a diagram illustrating the security design for Amazon Lex, highlighting encryption, logging, and infrastructure protections, with a flow involving Amazon CloudWatch and AWS Lambda.](https://kodekloud.com/kk-media/image/upload/v1752864195/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/amazon-lex-security-design-diagram.jpg)
 
 > **lightbulb** When securing Lex interactions, be sure to employ PrivateLink to privatize traffic as needed.
 
@@ -79,9 +79,9 @@ Amazon Lex, which powers conversational chatbots, combines automatic speech reco
 
 Amazon Comprehend is a natural language processing service that extracts key insights such as entities, key phrases, language, sentiment, and topics from text. Fully managed and leveraging pre-trained machine learning models, Comprehend simplifies NLP tasks. Users can enable encryption for both input data and outputs using AWS KMS.
 
-![The image illustrates a process of extracting meaning from text, showing input sources like social media and documents, and outputting entities, key phrases, language, sentiment, and topics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864196/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/text-meaning-extraction-process.jpg)
+![The image illustrates a process of extracting meaning from text, showing input sources like social media and documents, and outputting entities, key phrases, language, sentiment, and topics.](https://kodekloud.com/kk-media/image/upload/v1752864196/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/text-meaning-extraction-process.jpg)
 
-![The image explains the key architectural elements of Amazon Comprehend, highlighting its use of machine learning models on EC2 instances, its fully managed service nature, serverless framework, and the need for manual setup of data pipelines using AWS Glue.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864197/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/amazon-comprehend-architecture-diagram.jpg)
+![The image explains the key architectural elements of Amazon Comprehend, highlighting its use of machine learning models on EC2 instances, its fully managed service nature, serverless framework, and the need for manual setup of data pipelines using AWS Glue.](https://kodekloud.com/kk-media/image/upload/v1752864197/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/amazon-comprehend-architecture-diagram.jpg)
 
 ***
 
@@ -95,9 +95,9 @@ Amazon Forecast builds time-series forecasting models using historical data. Whi
 
 Amazon Augmented AI (A2I) adds a human review step to machine learning predictions when confidence is low. This helps improve the accuracy of results by integrating human verification via internal teams or AWS Mechanical Turk. Key security considerations include protecting submitted data and review processes with IAM policies and KMS encryption.
 
-![The image is a diagram explaining Amazon Augmented AI, showing how input data is processed by an AI service, with high-confidence predictions sent to a client application and low-confidence predictions reviewed by humans. It highlights the role of human review in improving machine learning models.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864198/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/amazon-augmented-ai-diagram.jpg)
+![The image is a diagram explaining Amazon Augmented AI, showing how input data is processed by an AI service, with high-confidence predictions sent to a client application and low-confidence predictions reviewed by humans. It highlights the role of human review in improving machine learning models.](https://kodekloud.com/kk-media/image/upload/v1752864198/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/amazon-augmented-ai-diagram.jpg)
 
-![The image outlines security considerations for a healthcare company using Amazon Augmented AI (A2I), highlighting the need for external data protection, integration with AWS IAM, and support for AWS KMS for encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864200/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/healthcare-security-amazon-a2i.jpg)
+![The image outlines security considerations for a healthcare company using Amazon Augmented AI (A2I), highlighting the need for external data protection, integration with AWS IAM, and support for AWS KMS for encryption.](https://kodekloud.com/kk-media/image/upload/v1752864200/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/healthcare-security-amazon-a2i.jpg)
 
 ***
 
@@ -105,7 +105,7 @@ Amazon Augmented AI (A2I) adds a human review step to machine learning predictio
 
 Amazon Fraud Detector identifies anomalous and potentially fraudulent activities within transactions. It integrates with IAM for secure access management and leverages AWS KMS for encryption of data at rest. Additionally, the service supports comprehensive logging and monitoring through CloudTrail and CloudWatch.
 
-![The image illustrates a flowchart for a fraud detection system using AWS services, including a CSV file input, Amazon S3 buckets, AWS Lambda, and Amazon Fraud Detector.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864201/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/fraud-detection-flowchart-aws-services.jpg)
+![The image illustrates a flowchart for a fraud detection system using AWS services, including a CSV file input, Amazon S3 buckets, AWS Lambda, and Amazon Fraud Detector.](https://kodekloud.com/kk-media/image/upload/v1752864201/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/fraud-detection-flowchart-aws-services.jpg)
 
 ***
 
@@ -115,13 +115,13 @@ Amazon Fraud Detector identifies anomalous and potentially fraudulent activities
 
 Amazon Transcribe securely converts audio and video content into text. It encrypts data automatically in transit and at rest while also supporting customer-managed keys. Its security framework ensures that media files remain protected throughout the transcription process.
 
-![The image outlines security measures offered by Amazon Transcribe to ensure the confidentiality and integrity of media files during transcription, including hardware security modules, encryption, integration with Amazon Macie, and virtual private cloud services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864202/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/amazon-transcribe-security-measures.jpg)
+![The image outlines security measures offered by Amazon Transcribe to ensure the confidentiality and integrity of media files during transcription, including hardware security modules, encryption, integration with Amazon Macie, and virtual private cloud services.](https://kodekloud.com/kk-media/image/upload/v1752864202/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/amazon-transcribe-security-measures.jpg)
 
 ### Amazon Translate
 
 Amazon Translate provides language translation services with strong security measures. It encrypts data in transit using TLS and secures information at rest (typically using AES-256). Moreover, Amazon Translate complies with industry standards such as ISO 27001, PCI DSS, and HIPAA.
 
-![The image presents a question about Amazon Translate's security measures for document confidentiality and integrity, followed by four options detailing different encryption and security features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864204/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/amazon-translate-security-options.jpg)
+![The image presents a question about Amazon Translate's security measures for document confidentiality and integrity, followed by four options detailing different encryption and security features.](https://kodekloud.com/kk-media/image/upload/v1752864204/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Data-Services-Part-2/amazon-translate-security-options.jpg)
 
 ***
 

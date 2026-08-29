@@ -12,21 +12,15 @@ A node is a physical or virtual machine where Kubernetes is installed. Acting as
 
 To ensure high availability, it is important to have multiple nodes grouped into a cluster. In a clustered environment, if one node fails, the application can continue running on other nodes while the workload is distributed evenly.
 
-<Frame>
-  ![The image illustrates a Kubernetes cluster with three nodes, each represented by a blue rectangle and a Kubernetes logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884914/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Architecture/frame_60.jpg)
-</Frame>
+![The image illustrates a Kubernetes cluster with three nodes, each represented by a blue rectangle and a Kubernetes logo.](https://kodekloud.com/kk-media/image/upload/v1752884914/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Architecture/frame_60.jpg)
 
 ## The Master Node
 
 Managing a cluster requires a central control point, which is where the master node comes into play. The master node hosts components that control and monitor the cluster’s state. It is responsible for keeping track of cluster membership, managing containers across nodes, and handling failures by orchestrating replacement strategies.
 
-<Frame>
-  ![The image depicts a Kubernetes cluster architecture with one master node and three worker nodes, each running a Redis container.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884915/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Architecture/frame_90.jpg)
-</Frame>
+![The image depicts a Kubernetes cluster architecture with one master node and three worker nodes, each running a Redis container.](https://kodekloud.com/kk-media/image/upload/v1752884915/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Architecture/frame_90.jpg)
 
-<Frame>
-  ![The image depicts a Kubernetes architecture with one master node and three worker nodes, each running a Redis instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884917/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Architecture/frame_100.jpg)
-</Frame>
+![The image depicts a Kubernetes architecture with one master node and three worker nodes, each running a Redis instance.](https://kodekloud.com/kk-media/image/upload/v1752884917/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Architecture/frame_100.jpg)
 
 When you install Kubernetes, several components are deployed:
 
@@ -39,9 +33,7 @@ When you install Kubernetes, several components are deployed:
 
 All these components interact through the API server to create a seamless and resilient cluster environment.
 
-<Frame>
-  ![The image illustrates Kubernetes components, including API Server, etcd, kubelet, Scheduler, Controller, and Container Runtime, connected to various devices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884918/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Architecture/frame_130.jpg)
-</Frame>
+![The image illustrates Kubernetes components, including API Server, etcd, kubelet, Scheduler, Controller, and Container Runtime, connected to various devices.](https://kodekloud.com/kk-media/image/upload/v1752884918/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Architecture/frame_130.jpg)
 
 ## Key Components Explained
 
@@ -49,25 +41,19 @@ All these components interact through the API server to create a seamless and re
 
 etcd is a reliable distributed key-value store used for saving all cluster data. In multi-node and multi-master environments, etcd ensures that cluster configuration is synchronized across all the nodes. It also implements locking mechanisms to avoid conflicts between multiple masters.
 
-<Frame>
-  ![The image shows a diagram of Kubernetes components: API Server, etcd, kubelet, Container Runtime, Controller, and Scheduler, linked to a key-value store.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884919/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Architecture/frame_150.jpg)
-</Frame>
+![The image shows a diagram of Kubernetes components: API Server, etcd, kubelet, Container Runtime, Controller, and Scheduler, linked to a key-value store.](https://kodekloud.com/kk-media/image/upload/v1752884919/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Architecture/frame_150.jpg)
 
 ### Scheduler
 
 The scheduler is responsible for detecting newly created container requests and assigning them to the most suitable nodes based on available resources and defined policies.
 
-<Frame>
-  ![The image shows a diagram of Kubernetes components: API Server, etcd, kubelet, Container Runtime, Controller, and Scheduler, arranged in a hexagonal pattern.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884920/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Architecture/frame_170.jpg)
-</Frame>
+![The image shows a diagram of Kubernetes components: API Server, etcd, kubelet, Container Runtime, Controller, and Scheduler, arranged in a hexagonal pattern.](https://kodekloud.com/kk-media/image/upload/v1752884920/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Architecture/frame_170.jpg)
 
 ### Controllers
 
 Controllers continuously monitor the state of nodes, containers, and endpoints. They act as the brain behind Kubernetes orchestration by making decisions such as restarting containers when failures occur.
 
-<Frame>
-  ![The image shows a diagram of Kubernetes components: API Server, etcd, kubelet, Scheduler, Controller, and Container Runtime, with a brain icon and arrow.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884921/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Architecture/frame_190.jpg)
-</Frame>
+![The image shows a diagram of Kubernetes components: API Server, etcd, kubelet, Scheduler, Controller, and Container Runtime, with a brain icon and arrow.](https://kodekloud.com/kk-media/image/upload/v1752884921/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Architecture/frame_190.jpg)
 
 ### Container Runtime
 
@@ -81,9 +67,7 @@ The kubelet agent runs on every node, ensuring that each container is healthy an
 
 The architecture is divided between the master and worker nodes to optimize performance and management. The master node runs critical components such as the kube-apiserver, control manager, scheduler, and the etcd key-value store. In contrast, worker nodes host the kubelet agent and the container runtime.
 
-<Frame>
-  ![The image compares Kubernetes Master and Worker Nodes, showing components like kube-apiserver, etcd, controller, scheduler, kubelet, and container runtime.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884922/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Architecture/frame_310.jpg)
-</Frame>
+![The image compares Kubernetes Master and Worker Nodes, showing components like kube-apiserver, etcd, controller, scheduler, kubelet, and container runtime.](https://kodekloud.com/kk-media/image/upload/v1752884922/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Architecture/frame_310.jpg)
 
 Understanding the roles of these components will enable you to effectively install and configure your Kubernetes infrastructure.
 
@@ -103,14 +87,10 @@ kubectl get nodes
 * The `kubectl cluster-info` command provides details about the cluster.
 * The `kubectl get nodes` command lists all the nodes that are part of the cluster.
 
-<Callout icon="lightbulb">
-  Familiarize yourself with kubectl commands as you progress. They are essential for interacting with your Kubernetes cluster and performing day-to-day operations.
-</Callout>
+> **lightbulb** Familiarize yourself with kubectl commands as you progress. They are essential for interacting with your Kubernetes cluster and performing day-to-day operations.
 
 This concludes our introductory guide to Kubernetes architecture. Continue exploring more advanced topics and tools in our next lesson.
 
 See you in the next article!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/101e958e-d0aa-4b44-8f0b-abda59a1e398/lesson/6250bc00-52a3-4932-864a-f6aae67144aa" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/101e958e-d0aa-4b44-8f0b-abda59a1e398/lesson/6250bc00-52a3-4932-864a-f6aae67144aa)

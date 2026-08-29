@@ -28,9 +28,7 @@ In this guide, you’ll learn how to inspect, configure, and control services on
 
 When Linux boots, **systemd** orchestrates service startup in parallel while respecting dependencies. If a critical service fails, systemd can restart it automatically, ensuring high availability. All behavior is defined by **unit files**—plain-text configurations that tell systemd how to manage resources.
 
-<Callout icon="lightbulb">
-  Learn more about systemd on the [Official Freedesktop Wiki](https://www.freedesktop.org/wiki/Software/systemd/).
-</Callout>
+> **lightbulb** Learn more about systemd on the [Official Freedesktop Wiki](https://www.freedesktop.org/wiki/Software/systemd/).
 
 ***
 

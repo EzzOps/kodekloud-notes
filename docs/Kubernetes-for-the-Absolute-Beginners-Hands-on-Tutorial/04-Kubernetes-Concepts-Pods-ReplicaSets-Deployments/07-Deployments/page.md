@@ -10,15 +10,11 @@ Imagine having a web server that needs to run reliably in production. You requir
 
 While individual Pods run your application instances, ReplicaSets (or Replication Controllers) manage these Pods, ensuring the correct number are always running. A Deployment builds on these components by offering a higher-level abstraction. It not only handles rolling updates and rollbacks but also lets you pause and resume deployments as needed.
 
-<Frame>
-  ![The image shows a cloud with Python icons labeled v1 and v2, connected to multiple Python icons below, indicating version deployment or distribution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884860/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Deployments/frame_50.jpg)
-</Frame>
+![The image shows a cloud with Python icons labeled v1 and v2, connected to multiple Python icons below, indicating version deployment or distribution.](https://kodekloud.com/kk-media/image/upload/v1752884860/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Deployments/frame_50.jpg)
 
 The diagram above demonstrates a scenario where you deploy and upgrade versions of your web application incrementally, ensuring continuous availability.
 
-<Frame>
-  ![The image illustrates a Kubernetes deployment with a replica set containing multiple pods, each running a Python application, and versioning indicated in a cloud icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884861/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Deployments/frame_130.jpg)
-</Frame>
+![The image illustrates a Kubernetes deployment with a replica set containing multiple pods, each running a Python application, and versioning indicated in a cloud icon.](https://kodekloud.com/kk-media/image/upload/v1752884861/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Deployments/frame_130.jpg)
 
 This second diagram details how a Deployment coordinates with a ReplicaSet, which in turn creates and maintains multiple application Pods. The Deployment sits at the top of this hierarchy, enabling advanced management features such as rolling updates, rollbacks, and dynamic pausing/resuming of deployments.
 
@@ -109,9 +105,7 @@ After creation, verify the Deployment, ReplicaSet, and Pods using these commands
    myapp-deployment-6795844b58-1fjhv             1/1     Running   0          2m
    ```
 
-<Callout icon="lightbulb">
-  The Deployment automates the creation of a ReplicaSet, which manages your Pods. This layering ensures that updates are rolled out in a controlled and managed manner.
-</Callout>
+> **lightbulb** The Deployment automates the creation of a ReplicaSet, which manages your Pods. This layering ensures that updates are rolled out in a controlled and managed manner.
 
 ## Viewing All Created Objects
 
@@ -136,9 +130,7 @@ po/myapp-deployment-6795844b58-1fjhv    1/1     Running   0          9h
 
 This comprehensive view confirms that your Deployment has successfully created all associated resources—Deployment, ReplicaSet, and Pods.
 
-<Callout icon="lightbulb">
-  In the upcoming sections, we will dive deeper into advanced features like rolling updates, rollbacks, and pausing/resuming deployments. Stay tuned to master these powerful deployment mechanisms.
-</Callout>
+> **lightbulb** In the upcoming sections, we will dive deeper into advanced features like rolling updates, rollbacks, and pausing/resuming deployments. Stay tuned to master these powerful deployment mechanisms.
 
 That concludes our guide on Kubernetes Deployments. Happy deploying!
 
@@ -148,6 +140,4 @@ For more insights and in-depth tutorials, explore the following resources:
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Docker Hub](https://hub.docker.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/56bf05b9-7b84-4a69-a9bd-7a83a2b0f124" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/56bf05b9-7b84-4a69-a9bd-7a83a2b0f124)

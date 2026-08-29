@@ -31,7 +31,7 @@ Consider a scenario where your storage account (e.g., "My Account") contains two
 * One queue dedicated to "images-to-download."
 * Another queue designed for handling "images-to-resize."
 
-![The image is a diagram explaining Azure Queue Storage, showing components like a storage account and queues for tasks such as "images-to-download" and "images-to-resize." It highlights features like message size and service components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866302/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Queue-Storage/azure-queue-storage-diagram.jpg)
+![The image is a diagram explaining Azure Queue Storage, showing components like a storage account and queues for tasks such as "images-to-download" and "images-to-resize." It highlights features like message size and service components.](https://kodekloud.com/kk-media/image/upload/v1752866302/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Queue-Storage/azure-queue-storage-diagram.jpg)
 
 This diagram clearly illustrates how the storage account functions as the central container for queues, with each queue managing its own set of messages tailored for specific tasks.
 

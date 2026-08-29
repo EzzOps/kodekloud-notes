@@ -72,15 +72,11 @@ developer2    ba585475-4c43-11e8-8098-e2e0de05d311
 
 To create a new project via the web console, click the **Create Project** button. Enter a project name and display name, then click **Create**.
 
-<Frame>
-  ![The image shows the OpenShift Origin web console with a catalog of software options like .NET, Apache HTTP Server, and Jenkins. On the right, there's a panel for creating a new project with fields for name, display name, and description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882695/notes-assets/images/OpenShift-4-Demo-Projects-and-Users/openshift-origin-web-console-catalog.jpg)
-</Frame>
+![The image shows the OpenShift Origin web console with a catalog of software options like .NET, Apache HTTP Server, and Jenkins. On the right, there's a panel for creating a new project with fields for name, display name, and description.](https://kodekloud.com/kk-media/image/upload/v1752882695/notes-assets/images/OpenShift-4-Demo-Projects-and-Users/openshift-origin-web-console-catalog.jpg)
 
 After creating your project, click on it to view its console window. Here, you'll have access to additional details about the deployed applications.
 
-<Frame>
-  ![The image shows the OpenShift Web Console interface for a project named "my-new-project," with options to browse the catalog, deploy an image, import YAML/JSON, or select from a project. A notification indicates the project was successfully created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882696/notes-assets/images/OpenShift-4-Demo-Projects-and-Users/openshift-web-console-my-new-project.jpg)
-</Frame>
+![The image shows the OpenShift Web Console interface for a project named "my-new-project," with options to browse the catalog, deploy an image, import YAML/JSON, or select from a project. A notification indicates the project was successfully created.](https://kodekloud.com/kk-media/image/upload/v1752882696/notes-assets/images/OpenShift-4-Demo-Projects-and-Users/openshift-web-console-my-new-project.jpg)
 
 ::: note Default Projects
 Remember that OpenShift automatically creates a set of default projects when the cluster is initially set up.
@@ -141,9 +137,7 @@ developer2    ba585475-4c43-11e8-8098-e2e0de05d311
 
 When you log in to the web console using the newly created administrator account, you will be able to view all available projects and explore their configurations.
 
-<Frame>
-  ![The image shows the OpenShift Web Console displaying a list of projects, including "default," "kube-public," "kube-system," and others, with options to filter and sort them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882697/notes-assets/images/OpenShift-4-Demo-Projects-and-Users/openshift-web-console-projects-list.jpg)
-</Frame>
+![The image shows the OpenShift Web Console displaying a list of projects, including "default," "kube-public," "kube-system," and others, with options to filter and sort them.](https://kodekloud.com/kk-media/image/upload/v1752882697/notes-assets/images/OpenShift-4-Demo-Projects-and-Users/openshift-web-console-projects-list.jpg)
 
 ## Conclusion
 
@@ -151,6 +145,4 @@ This lesson has detailed the process of managing projects and users in OpenShift
 
 For more detailed information, please refer to the [OpenShift Documentation](https://docs.openshift.com/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/0bce3da1-167c-4f11-a004-4d57bfc7adac/lesson/4a27f923-3e35-4fa0-8f28-ac2917ca59e7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/0bce3da1-167c-4f11-a004-4d57bfc7adac/lesson/4a27f923-3e35-4fa0-8f28-ac2917ca59e7)

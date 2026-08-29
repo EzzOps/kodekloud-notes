@@ -80,9 +80,7 @@ steps:
 
 When steps are defined in the same inner list, they start concurrently. In that concurrent case, a Suspend node suspends only that specific node — other concurrently running steps continue. Use separate step groups to enforce a linear approval-plus-delay flow.
 
-<Callout icon="lightbulb">
-  The suspend duration must be a valid time string (for example "10s", "1m", "30s"). Avoid ambiguous formats like plain integers ("10") — include a time suffix.
-</Callout>
+> **lightbulb** The suspend duration must be a valid time string (for example "10s", "1m", "30s"). Avoid ambiguous formats like plain integers ("10") — include a time suffix.
 
 ## Typical execution flow (sequential example)
 
@@ -136,6 +134,4 @@ Further reading:
 * [Argo CLI docs](https://argoproj.github.io/argo-workflows/cli/)
 * [Argo Server API docs](https://argoproj.github.io/argo-workflows/argo-server/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/26774ca3-63d3-40be-b7e0-aef5d8340bc3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/26774ca3-63d3-40be-b7e0-aef5d8340bc3)

@@ -17,9 +17,7 @@ java -jar jenkins-cli.jar -s http://139.84.159.194:8080/ help
 
 This command connects to your Jenkins instance at the specified URL using the downloaded jar file. The Jenkins CLI supports numerous commands similar to those available in the UI. If you're unsure about a particular command, click it in the Jenkins UI to see additional examples and details.
 
-<Frame>
-  ![The image shows a Jenkins CLI management interface with a list of commands and their descriptions, such as "list-plugins" and "offline-node."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879424/notes-assets/images/Jenkins-For-Beginners-Jenkins-CLI-Build-a-job/jenkins-cli-management-interface.jpg)
-</Frame>
+![The image shows a Jenkins CLI management interface with a list of commands and their descriptions, such as "list-plugins" and "offline-node."](https://kodekloud.com/kk-media/image/upload/v1752879424/notes-assets/images/Jenkins-For-Beginners-Jenkins-CLI-Build-a-job/jenkins-cli-management-interface.jpg)
 
 For instance, to enable a job, the CLI documentation suggests using:
 
@@ -171,9 +169,7 @@ Completed parameterized-pipeline-job #4 : SUCCESS
 
 If you want to monitor the console output in real time, include the `-v` flag.
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying the status of a parameterized pipeline job, with a test result trend graph and a detailed pipeline execution timeline.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879425/notes-assets/images/Jenkins-For-Beginners-Jenkins-CLI-Build-a-job/jenkins-dashboard-pipeline-job-status.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying the status of a parameterized pipeline job, with a test result trend graph and a detailed pipeline execution timeline.](https://kodekloud.com/kk-media/image/upload/v1752879425/notes-assets/images/Jenkins-For-Beginners-Jenkins-CLI-Build-a-job/jenkins-dashboard-pipeline-job-status.jpg)
 
 While the shell logs progress messages, you might see output similar to:
 
@@ -212,12 +208,8 @@ Hello, KodeKloud community!
 
 This guide only scratches the surface of what you can achieve with the Jenkins CLI—there are many more commands to explore. Experiment with different commands to get full control over your Jenkins instance.
 
-<Frame>
-  ![The image shows a Jenkins CLI management interface with a list of commands and their descriptions. The interface includes options like "disconnect-node," "enable-job," and "get-credentials-as-xml."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879427/notes-assets/images/Jenkins-For-Beginners-Jenkins-CLI-Build-a-job/jenkins-cli-management-interface-commands.jpg)
-</Frame>
+![The image shows a Jenkins CLI management interface with a list of commands and their descriptions. The interface includes options like "disconnect-node," "enable-job," and "get-credentials-as-xml."](https://kodekloud.com/kk-media/image/upload/v1752879427/notes-assets/images/Jenkins-For-Beginners-Jenkins-CLI-Build-a-job/jenkins-cli-management-interface-commands.jpg)
 
 Thank you for reading this article!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/cd53a160-c852-4d65-b718-31b284cb48da/lesson/e8b88a4e-05d3-457a-a977-b5d8c68fcaa1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/cd53a160-c852-4d65-b718-31b284cb48da/lesson/e8b88a4e-05d3-457a-a977-b5d8c68fcaa1)

@@ -70,9 +70,7 @@ To assign Microsoft Entra ID roles in the Azure Portal, follow these steps:
    * Click on **Assigned Roles** and then **Add Assignment**.
    * Select the appropriate role from the list. Note that roles may include eligible or expired options, which are managed through Privileged Identity Management.
 
-<Callout icon="lightbulb">
-  The steps provided in this demonstration are representative and may vary with updates to the Azure Portal interface.
-</Callout>
+> **lightbulb** The steps provided in this demonstration are representative and may vary with updates to the Azure Portal interface.
 
 This demonstration illustrates that while both Azure RBAC and Microsoft Entra ID roles help manage permissions, they are designed for different aspects of access control—resource-level versus tenant-level management.
 
@@ -91,9 +89,7 @@ Every Azure subscription is linked to a Microsoft Entra ID tenant, creating a hi
 
 This integrated approach ensures that high-level administrative tasks are managed via Microsoft Entra ID roles while detailed resource access is handled by Azure RBAC.
 
-<Frame>
-  ![The image compares Azure RBAC roles with Microsoft Entra ID roles, illustrating their hierarchy and access levels within a management structure. It shows the relationship between global admin roles and Azure RBAC roles across different management groups and resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884528/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-RBAC-vs-Microsoft-Entra-ID-Roles/azure-rbac-enra-id-roles-comparison.jpg)
-</Frame>
+![The image compares Azure RBAC roles with Microsoft Entra ID roles, illustrating their hierarchy and access levels within a management structure. It shows the relationship between global admin roles and Azure RBAC roles across different management groups and resources.](https://kodekloud.com/kk-media/image/upload/v1752884528/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-RBAC-vs-Microsoft-Entra-ID-Roles/azure-rbac-enra-id-roles-comparison.jpg)
 
 ## Conclusion
 
@@ -101,6 +97,4 @@ In summary, this article has highlighted the key differences between Azure RBAC 
 
 We hope this guide has enhanced your understanding of access control in Azure. Happy managing, and see you in the next module!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/3eef02ac-df4d-4e8e-9c1d-5a45fbb611dc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/3eef02ac-df4d-4e8e-9c1d-5a45fbb611dc)

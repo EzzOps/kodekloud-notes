@@ -15,7 +15,7 @@ In this setup, your VPC uses the CIDR block `10.0.0.0/16` and contains private s
 * AWS assigns a public IP (e.g., `2.2.2.2`) to the VGW.
 * An IPsec tunnel encrypts traffic between the CGW and VGW over the Internet.
 
-![The image illustrates a VPN architecture in AWS, showing the connection between a Virtual Private Cloud (VPC) with private subnets and an on-premise network via a VPN gateway and customer gateway over the internet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863436/notes-assets/images/AWS-Networking-Fundamentals-VPN/vpn-architecture-aws-vpc-diagram.jpg)
+![The image illustrates a VPN architecture in AWS, showing the connection between a Virtual Private Cloud (VPC) with private subnets and an on-premise network via a VPN gateway and customer gateway over the internet.](https://kodekloud.com/kk-media/image/upload/v1752863436/notes-assets/images/AWS-Networking-Fundamentals-VPN/vpn-architecture-aws-vpc-diagram.jpg)
 
 ### Key Components
 
@@ -42,7 +42,7 @@ Target: vgwy-xxxxxxxx
 
 Use the Border Gateway Protocol (BGP) to exchange and propagate routes automatically between the Customer Gateway and the VPN Gateway.
 
-![The image is a diagram illustrating VPN routing between a VPC and an on-premise network, showing private subnets, a VPN gateway, and a customer gateway with dynamic route exchange using BGP.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863438/notes-assets/images/AWS-Networking-Fundamentals-VPN/vpn-routing-vpc-onpremise-diagram.jpg)
+![The image is a diagram illustrating VPN routing between a VPC and an on-premise network, showing private subnets, a VPN gateway, and a customer gateway with dynamic route exchange using BGP.](https://kodekloud.com/kk-media/image/upload/v1752863438/notes-assets/images/AWS-Networking-Fundamentals-VPN/vpn-routing-vpc-onpremise-diagram.jpg)
 
 > **triangle-alert** Dynamic routing via BGP adds complexity. Ensure your on-premises router supports BGP and proper autonomous system (AS) configuration.
 
@@ -55,7 +55,7 @@ AWS Site-to-Site VPN pricing includes two main components:
 | Connection Hours  | Charged per hour while each VPN connection is available                      |
 | Data Transfer Out | Standard Amazon EC2 data transfer rates for outbound traffic to the Internet |
 
-![The image outlines VPN pricing, indicating charges for each available VPN connection hour and for data transfer from Amazon EC2 to the internet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863439/notes-assets/images/AWS-Networking-Fundamentals-VPN/vpn-pricing-ec2-data-transfer.jpg)
+![The image outlines VPN pricing, indicating charges for each available VPN connection hour and for data transfer from Amazon EC2 to the internet.](https://kodekloud.com/kk-media/image/upload/v1752863439/notes-assets/images/AWS-Networking-Fundamentals-VPN/vpn-pricing-ec2-data-transfer.jpg)
 
 > **lightbulb** Data transferred into AWS over the VPN is free; only outbound data is charged.
 
@@ -71,7 +71,7 @@ Each AWS-managed VPN tunnel supports:
 
 To increase throughput, you can deploy multiple tunnels and use Equal-Cost Multi-Path (ECMP) routing.
 
-![The image shows VPN gateway limits, indicating a maximum bandwidth of 1.25 Gbps per VPN tunnel and a maximum of 140,000 packets per second.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863440/notes-assets/images/AWS-Networking-Fundamentals-VPN/vpn-gateway-limits-bandwidth-packets.jpg)
+![The image shows VPN gateway limits, indicating a maximum bandwidth of 1.25 Gbps per VPN tunnel and a maximum of 140,000 packets per second.](https://kodekloud.com/kk-media/image/upload/v1752863440/notes-assets/images/AWS-Networking-Fundamentals-VPN/vpn-gateway-limits-bandwidth-packets.jpg)
 
 ## Summary
 
@@ -84,9 +84,9 @@ Connecting your on-premises network to an AWS VPC using VPN delivers secure, enc
 * **Pricing:** Charged by VPN connection hours and outbound data.
 * **Limits:** 1.25 Gbps per tunnel, 140,000 pps, 1466 byte MTU.
 
-![The image is a summary slide outlining key points about connecting VPCs to on-premise data centers, virtual private gateways, customer gateways, and VPN connections over the public internet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863441/notes-assets/images/AWS-Networking-Fundamentals-VPN/vpc-on-premise-connection-summary-slide.jpg)
+![The image is a summary slide outlining key points about connecting VPCs to on-premise data centers, virtual private gateways, customer gateways, and VPN connections over the public internet.](https://kodekloud.com/kk-media/image/upload/v1752863441/notes-assets/images/AWS-Networking-Fundamentals-VPN/vpc-on-premise-connection-summary-slide.jpg)
 
-![The image is a slide with a blue gradient background on the left labeled "Summary" and a note on the right stating that an on-premise network can be set statically in a route table or dynamically exchanged via BGP.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863441/notes-assets/images/AWS-Networking-Fundamentals-VPN/summary-on-premise-network-bgp-route.jpg)
+![The image is a slide with a blue gradient background on the left labeled "Summary" and a note on the right stating that an on-premise network can be set statically in a route table or dynamically exchanged via BGP.](https://kodekloud.com/kk-media/image/upload/v1752863441/notes-assets/images/AWS-Networking-Fundamentals-VPN/summary-on-premise-network-bgp-route.jpg)
 
 ## References
 

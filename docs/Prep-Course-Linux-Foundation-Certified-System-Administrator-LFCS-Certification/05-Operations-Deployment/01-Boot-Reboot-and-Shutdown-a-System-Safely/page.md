@@ -6,9 +6,7 @@ Learn methods to safely boot, reboot, and shut down a Linux system using system 
 
 In this lesson, you will learn several methods to boot, reboot, and shut down a Linux system safely using system commands. Linux uses the systemctl command (short for "system control") to manage system states, and many of these commands require administrative privileges. The root account inherently has these privileges; however, regular users can execute them by prefixing commands with sudo.
 
-<Callout icon="lightbulb">
-  If you are logged in as root, you do not need the sudo prefix for any of these commands.
-</Callout>
+> **lightbulb** If you are logged in as root, you do not need the sudo prefix for any of these commands.
 
 Below, we present a summary of the fundamental commands for rebooting and shutting down your system.
 

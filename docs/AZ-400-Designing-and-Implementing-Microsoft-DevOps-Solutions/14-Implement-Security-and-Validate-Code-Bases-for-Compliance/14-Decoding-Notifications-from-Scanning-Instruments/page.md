@@ -45,7 +45,7 @@ The aging chart tracks how long vulnerabilities remain open. In this example, bo
 
 Maintaining an SLA for vulnerability patching can prevent technical debt and reduce your attack surface.
 
-![The image is an infographic titled "Decoding Notifications From Scanning Instruments," showing a medium vulnerability score, details on vulnerable libraries, severity distribution, and aging vulnerable libraries, along with insights and considerations from the report.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867992/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Decoding-Notifications-from-Scanning-Instruments/decoding-notifications-scanning-instruments-infographic.jpg)
+![The image is an infographic titled "Decoding Notifications From Scanning Instruments," showing a medium vulnerability score, details on vulnerable libraries, severity distribution, and aging vulnerable libraries, along with insights and considerations from the report.](https://kodekloud.com/kk-media/image/upload/v1752867992/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Decoding-Notifications-from-Scanning-Instruments/decoding-notifications-scanning-instruments-infographic.jpg)
 
 ## 5. Mitigation and Remediation Strategy
 

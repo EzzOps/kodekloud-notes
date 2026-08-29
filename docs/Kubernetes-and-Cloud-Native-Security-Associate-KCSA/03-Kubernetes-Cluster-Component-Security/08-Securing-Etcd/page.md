@@ -42,15 +42,13 @@ resources:
 * `aescbc` uses AES-CBC. Replace `<base64-encoded-encryption-key>` with a 32-byte Base64 key.
 * `identity` leaves data unencrypted as a fallback. |
 
-<Callout icon="lightbulb">
-  Run the following command to create a 32-byte random key:
+> **lightbulb** Run the following command to create a 32-byte random key:
 
   ```bash theme={null}
   openssl rand -base64 32
   ```
 
   Copy the output into your `encryption-config.yaml`.
-</Callout>
 
 ### Step 2. Update the Etcd Static Pod
 
@@ -118,9 +116,7 @@ containers:
 | --peer-client-cert-auth | Require peer certificates for mutual TLS              |
 | --peer-trusted-ca-file  | CA certificate to verify peer certificates            |
 
-<Callout icon="triangle-alert">
-  Monitor your certificates’ expiration dates. Expired certificates break cluster communication and can cause downtime.
-</Callout>
+> **triangle-alert** Monitor your certificates’ expiration dates. Expired certificates break cluster communication and can cause downtime.
 
 ***
 
@@ -170,6 +166,4 @@ These practices protect the confidentiality, integrity, and availability of your
 * [etcd TLS Guide](https://etcd.io/docs/v3.4/op-guide/security/)
 * [etcdctl Snapshot and Restore](https://etcd.io/docs/v3.4/op-guide/snapshot/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/84fa8f3c-904d-4287-a5ae-22a58cdef35b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/84fa8f3c-904d-4287-a5ae-22a58cdef35b)

@@ -64,9 +64,7 @@ Knowing the differences among Crawl, Walk, and Run helps you:
 * Prioritize work: tagging and repeatable reporting in Crawl/Walk; governance and commitment strategies in Run.
 * Align stakeholders: different phases require different levels of finance, engineering, and product engagement.
 
-<Callout icon="lightbulb">
-  Tip: Most organizations are in the Walk phase. Prioritize repeatable reporting, consistent tagging, and automation for anomaly detection to achieve fast ROI.
-</Callout>
+> **lightbulb** Tip: Most organizations are in the Walk phase. Prioritize repeatable reporting, consistent tagging, and automation for anomaly detection to achieve fast ROI.
 
 ## Actionable next steps by phase
 
@@ -91,6 +89,4 @@ Knowing the differences among Crawl, Walk, and Run helps you:
 
 That’s it for this lesson. Apply the checklist above to identify your organization’s current phase and focus the next sprint on the highest-impact improvements. Speak with you in the next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/77e6b2c4-f9cd-410f-a396-178e2aa962bb/lesson/14320dfb-37e8-4cc8-a5f7-a786dd2b03c6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/77e6b2c4-f9cd-410f-a396-178e2aa962bb/lesson/14320dfb-37e8-4cc8-a5f7-a786dd2b03c6)

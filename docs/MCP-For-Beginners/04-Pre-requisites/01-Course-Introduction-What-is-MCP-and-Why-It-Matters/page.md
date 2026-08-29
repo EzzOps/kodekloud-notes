@@ -57,9 +57,7 @@ Thanks for taking this lesson. If you have questions, join the course community,
 * [Awesome MCP Servers (GitHub)](https://github.com/punkpeye/awesome-mcp-servers)
 * [Anthropic Developer Docs](https://www.anthropic.com/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/910a0b7a-ac6e-43f1-956e-203a70c3d455/lesson/8a950c99-347b-4020-baff-3caa7336f2c7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/910a0b7a-ac6e-43f1-956e-203a70c3d455/lesson/8a950c99-347b-4020-baff-3caa7336f2c7)
 
 
 # Course Introduction What is MCP and Why It Matters
@@ -78,9 +76,7 @@ MCP stands for Model Context Protocol. It’s a lightweight, open framework that
 
 MCP was initiated by [Anthropic](https://www.anthropic.com) (the creators of [Claude](https://www.anthropic.com/claude)), but it’s designed to be an open, vendor-neutral protocol usable with any LLM. A helpful analogy: MCP is like USB for AI — a predictable, standardized way to connect models to external services.
 
-<Callout icon="lightbulb">
-  MCP enables LLMs to access fresh, private, and actionable information without hardwiring bespoke integrations into every application.
-</Callout>
+> **lightbulb** MCP enables LLMs to access fresh, private, and actionable information without hardwiring bespoke integrations into every application.
 
 Why MCP matters
 
@@ -194,9 +190,7 @@ Final thoughts
 
 MCP shifts how we apply LLMs: from isolated models with static knowledge to connected agents that can securely access live data and perform actions. By standardizing the interface between models and external systems, MCP reduces engineering friction, improves reliability, and unlocks new capabilities.
 
-<Callout icon="lightbulb">
-  MCP is an open, standard approach for connecting models to external tools and data. In this lesson/article we’ll explore how to design and implement MCP clients and servers and how to use these primitives effectively.
-</Callout>
+> **lightbulb** MCP is an open, standard approach for connecting models to external tools and data. In this lesson/article we’ll explore how to design and implement MCP clients and servers and how to use these primitives effectively.
 
 Links and references
 
@@ -204,6 +198,4 @@ Links and references
 * [Claude by Anthropic](https://www.anthropic.com/claude)
 * Example specs and community projects: search for “Model Context Protocol” or check relevant GitHub repositories for MCP implementations and examples.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/ef6da233-05e8-4813-b17a-52f829e130f1/lesson/afd3474e-04d7-41d7-beda-5385ab1c261e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/ef6da233-05e8-4813-b17a-52f829e130f1/lesson/afd3474e-04d7-41d7-beda-5385ab1c261e)

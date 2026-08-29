@@ -19,7 +19,7 @@ At the highest level, Agile work is organized into backlog items:
 4. **Task**\
    Specifies individual development or testing actions.
 
-![The image is a flowchart illustrating the Agile work process, showing the hierarchy from Epic to Feature, User Story, and Tasks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867398/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Agile/agile-work-process-flowchart-hierarchy.jpg)
+![The image is a flowchart illustrating the Agile work process, showing the hierarchy from Epic to Feature, User Story, and Tasks.](https://kodekloud.com/kk-media/image/upload/v1752867398/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Agile/agile-work-process-flowchart-hierarchy.jpg)
 
 ## 2. Feedback and Code Review Process
 
@@ -32,7 +32,7 @@ Agile emphasizes continuous feedback. The typical sequence is:
 
 > **lightbulb** Regular code reviews not only catch defects early but also promote shared knowledge and consistency across the codebase.
 
-![The image is a flowchart illustrating the Agile feedback and code review process, showing steps from feedback and code review requests to their respective responses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867400/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Agile/agile-feedback-code-review-flowchart.jpg)
+![The image is a flowchart illustrating the Agile feedback and code review process, showing steps from feedback and code review requests to their respective responses.](https://kodekloud.com/kk-media/image/upload/v1752867400/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Agile/agile-feedback-code-review-flowchart.jpg)
 
 ## 3. Testing Structure
 
@@ -48,7 +48,7 @@ Shared Steps enable reuse of common actions (e.g., “Login") across multiple te
 
 > **triangle-alert** Failing to update shared steps when workflows change can cause multiple tests to break simultaneously. Review shared steps regularly.
 
-![The image is a flowchart illustrating the Agile testing process, showing a sequence from "Test Plan" to "Test Suite" to "Test Case."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867400/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Agile/agile-testing-process-flowchart.jpg)
+![The image is a flowchart illustrating the Agile testing process, showing a sequence from "Test Plan" to "Test Suite" to "Test Case."](https://kodekloud.com/kk-media/image/upload/v1752867400/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Agile/agile-testing-process-flowchart.jpg)
 
 ## 4. Issue and Bug Tracking
 
@@ -71,7 +71,7 @@ All Agile work items move through these standard states:
 * **Closed**: Item is accepted and done.
 * **Removed**: Item is discarded or deemed obsolete.
 
-![The image illustrates the Agile flow of work, showing stages labeled as New, Active, Resolved, and Closed, with a central "States" icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867402/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Agile/agile-work-flow-stages-diagram.jpg)
+![The image illustrates the Agile flow of work, showing stages labeled as New, Active, Resolved, and Closed, with a central "States" icon.](https://kodekloud.com/kk-media/image/upload/v1752867402/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Agile/agile-work-flow-stages-diagram.jpg)
 
 ## 6. End-to-End Workflow
 

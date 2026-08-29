@@ -17,9 +17,7 @@ argocd app create nginx \
 * UI supports repository connections using SSH, HTTPS, and GitHub App authentication.
 * Whether created via CLI or UI, Argo CD continuously monitors the desired state in Git (or the chart repo) and reconciles changes to the cluster.
 
-<Callout icon="lightbulb">
-  Once Argo CD deploys and manages a Helm chart, Argo CD becomes the source of truth for that application's lifecycle. Use the Argo CD CLI or the UI to inspect, sync, and manage the application state rather than local Helm client commands.
-</Callout>
+> **lightbulb** Once Argo CD deploys and manages a Helm chart, Argo CD becomes the source of truth for that application's lifecycle. Use the Argo CD CLI or the UI to inspect, sync, and manage the application state rather than local Helm client commands.
 
 ## Important: Helm CLI vs Argo CD-managed apps
 
@@ -43,9 +41,7 @@ $ helm ls
 NAME    NAMESPACE   REVISION    UPDATED STATUS  CHART   APP VERSION
 ```
 
-<Callout icon="warning">
-  Do not rely on `helm list` to determine the state of applications managed by Argo CD. Always use `argocd app get` or the Argo CD UI for authoritative application status and metadata.
-</Callout>
+> **warning** Do not rely on `helm list` to determine the state of applications managed by Argo CD. Always use `argocd app get` or the Argo CD UI for authoritative application status and metadata.
 
 ## Quick reference — Argo CD + Helm
 
@@ -61,9 +57,7 @@ NAME    NAMESPACE   REVISION    UPDATED STATUS  CHART   APP VERSION
 * [Helm chart repositories](https://helm.sh/docs/topics/chart_repository/)
 * [Bitnami Charts](https://charts.bitnami.com/bitnami)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/d6e2a380-2f64-465c-ab84-97ae6a8cf39e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/d6e2a380-2f64-465c-ab84-97ae6a8cf39e)
 
 
 # GitOps Principles
@@ -90,9 +84,7 @@ Think of it like a thermostat: it continuously checks the temperature and adjust
   <img alt="A slide showing a continuous deployment loop: a bot continuously compares a GitHub repo and syncs desired manifests to a Kubernetes cluster. To the right is a thermostat-style control showing 78° with a hand pressing a green button." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Continuous reconciliation reduces manual toil and improves reliability by keeping the actual system in sync with the state declared in Git.
-</Callout>
+> **lightbulb** Continuous reconciliation reduces manual toil and improves reliability by keeping the actual system in sync with the state declared in Git.
 
 ## 2. Declarative
 

@@ -43,9 +43,7 @@ which might output:
 No resources found.
 ```
 
-<Callout icon="lightbulb">
-  Once your kubeconfig file is saved in `~/.kube`, there is no need to repeatedly specify the file location or include the authentication details with every kubectl command.
-</Callout>
+> **lightbulb** Once your kubeconfig file is saved in `~/.kube`, there is no need to repeatedly specify the file location or include the authentication details with every kubectl command.
 
 ## Structure of a Kubeconfig File
 
@@ -225,9 +223,7 @@ clusters:
 
 The `certificate-authority-data` entry contains the base64-encoded content of the CA certificate, removing dependency on external file paths. This approach can also be applied to user client certificates and keys.
 
-<Callout icon="triangle-alert">
-  Always secure your certificate data and avoid exposing sensitive keys or certificate contents in public repositories.
-</Callout>
+> **triangle-alert** Always secure your certificate data and avoid exposing sensitive keys or certificate contents in public repositories.
 
 ## Summary Table
 
@@ -251,6 +247,4 @@ Kubeconfig files are a powerful tool for simplifying Kubernetes cluster manageme
 
 This concludes our lesson on kubeconfig files. Leveraging kubeconfig not only simplifies cluster interactions but also enhances consistent management across multiple environments. Happy clustering!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/a560d8a4-24e6-4cde-8b00-458f0d26416a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/a560d8a4-24e6-4cde-8b00-458f0d26416a)

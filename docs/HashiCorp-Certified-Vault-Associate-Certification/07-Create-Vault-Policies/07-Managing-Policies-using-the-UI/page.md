@@ -12,9 +12,7 @@
 * [Vault Policy Guide](https://www.vaultproject.io/docs/concepts/policies)
 * [HCL Language Reference](https://github.com/hashicorp/hcl)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/6b43bf6c-5121-4791-8d6e-c08273608e5c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/6b43bf6c-5121-4791-8d6e-c08273608e5c)
 
 
 # Managing Policies using the UI
@@ -25,23 +23,19 @@ Vaults web interface allows users to manage ACL policies, including creating, vi
 
 Vault provides an intuitive web interface for creating, viewing, editing, and deleting ACL policies. Use the top navigation bar to quickly switch between **Secrets**, **Access**, **Policies**, and **Tools**.
 
-<Frame>
-  ![The image is a screenshot of a user interface for managing policies in Vault, showing options to create, view, edit, or delete ACL policies. It includes labeled arrows indicating actions like downloading or editing policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878142/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Managing-Policies-using-the-UI/vault-acl-policies-management-ui-screenshot.jpg)
-</Frame>
+![The image is a screenshot of a user interface for managing policies in Vault, showing options to create, view, edit, or delete ACL policies. It includes labeled arrows indicating actions like downloading or editing policies.](https://kodekloud.com/kk-media/image/upload/v1752878142/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Managing-Policies-using-the-UI/vault-acl-policies-management-ui-screenshot.jpg)
 
 ## Accessing the Policies Tab
 
 1. Click on the **Policies** tab (highlighted by the pink arrow in the screenshot).
 2. Vault lists all ACL policies, including built-in and any custom policies you’ve defined.
 
-<Callout icon="lightbulb">
-  By default, Vault includes two core policies:
+> **lightbulb** By default, Vault includes two core policies:
 
   | Policy  | Description                                |
   | ------- | ------------------------------------------ |
   | default | Minimal access scope applied to all tokens |
   | root    | Full administrative access                 |
-</Callout>
 
 In this example, you’ll also see a custom **Admin Policy** listed alongside the built-in entries.
 
@@ -54,9 +48,7 @@ In this example, you’ll also see a custom **Admin Policy** listed alongside th
   * Edit the policy rules inline
   * Delete the policy
 
-<Callout icon="triangle-alert">
-  Changes take effect immediately for all tokens bound to the policy. Always review your updates before saving.
-</Callout>
+> **triangle-alert** Changes take effect immediately for all tokens bound to the policy. Always review your updates before saving.
 
 ## Creating a New ACL Policy
 
@@ -70,6 +62,4 @@ In this example, you’ll also see a custom **Admin Policy** listed alongside th
 * [Vault ACL Policies](https://www.vaultproject.io/docs/concepts/policies)
 * [HCL Language Documentation](https://github.com/hashicorp/hcl)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/0e2587e8-2a44-46c1-89f6-afd362155a8e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/0e2587e8-2a44-46c1-89f6-afd362155a8e)

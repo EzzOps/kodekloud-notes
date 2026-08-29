@@ -29,9 +29,7 @@ Begin your YAML file by specifying the four essential root-level properties: **a
 * **metadata**: This section contains a dictionary where you can specify the pod's name and additional labels.
 * **spec**: Contains pod specifications including the list of containers.
 
-<Callout icon="lightbulb">
-  Always use spaces for indentation (preferably two spaces) and avoid tabs to ensure YAML validity.
-</Callout>
+> **lightbulb** Always use spaces for indentation (preferably two spaces) and avoid tabs to ensure YAML validity.
 
 ***
 
@@ -142,6 +140,4 @@ For more Kubernetes basics and deep dives into YAML configurations, check out th
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/19f0117d-d8f5-4c7b-9e5d-b9b39c1f0faf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/19f0117d-d8f5-4c7b-9e5d-b9b39c1f0faf)

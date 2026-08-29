@@ -28,9 +28,7 @@ Why semantic similarity is primary
 * Retrieval quality directly depends on how well embeddings encode meaning. If semantically similar texts are not close in embedding space, the retriever will systematically miss relevant documents regardless of model size or other properties.
 * Similarity measures like cosine similarity and dot product assume a geometrically meaningful embedding space; the better the semantic geometry, the better retrieval performance.
 
-<Callout icon="lightbulb">
-  Focus your embedding evaluation on semantic retrieval metrics and nearest-neighbor behavior. Human judgments, retrieval metrics (recall\@k, MRR), and end-to-end RAG evaluations are more informative than raw model size or generation benchmarks.
-</Callout>
+> **lightbulb** Focus your embedding evaluation on semantic retrieval metrics and nearest-neighbor behavior. Human judgments, retrieval metrics (recall\@k, MRR), and end-to-end RAG evaluations are more informative than raw model size or generation benchmarks.
 
 Secondary considerations (when semantic quality is comparable)
 
@@ -55,9 +53,7 @@ Practical factors and tooling
 * Evaluation: Benchmark embeddings with retrieval metrics such as `recall@k`, [mean reciprocal rank (MRR)](https://en.wikipedia.org/wiki/Mean_reciprocal_rank), and end-to-end RAG accuracy. Empirical tests on your domain are essential.
 * Fine-tuning: If off-the-shelf embeddings underperform on your domain, consider contrastive fine-tuning or supervised embedding training.
 
-<Callout icon="warning">
-  Don’t assume larger or generative-capable models automatically make better embedding models. Focus on semantic retrieval performance and measure it in realistic scenarios before settling on a model.
-</Callout>
+> **warning** Don’t assume larger or generative-capable models automatically make better embedding models. Focus on semantic retrieval performance and measure it in realistic scenarios before settling on a model.
 
 Takeaway
 
@@ -74,6 +70,4 @@ Links and references
 * [Recall (information retrieval) — Wikipedia](https://en.wikipedia.org/wiki/Recall_\(information_retrieval\))
 * [Mean reciprocal rank (MRR) — Wikipedia](https://en.wikipedia.org/wiki/Mean_reciprocal_rank)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/2df7dd9b-70b7-40a5-843a-588e2600ab8f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/2df7dd9b-70b7-40a5-843a-588e2600ab8f)

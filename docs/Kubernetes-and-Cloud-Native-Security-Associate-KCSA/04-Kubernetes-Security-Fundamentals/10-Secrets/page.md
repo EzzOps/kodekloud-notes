@@ -46,11 +46,9 @@ kubectl apply -f role-pod-limited.yaml
 * [kubectl auth can-i](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#auth)
 * [Kubernetes Concepts: RBAC](https://kubernetes.io/docs/concepts/security/rbac/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/93558bc7-a21e-46e1-8ea6-2da5d8389c99" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/93558bc7-a21e-46e1-8ea6-2da5d8389c99)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/ba48419f-271a-47b1-b21f-8057b0790046" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/ba48419f-271a-47b1-b21f-8057b0790046)
 
 
 # Secrets
@@ -82,9 +80,7 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
 ```
 
-<Callout icon="triangle-alert">
-  Never store plaintext passwords in your code or in a `ConfigMap`. Use [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/) for all sensitive data.
-</Callout>
+> **triangle-alert** Never store plaintext passwords in your code or in a `ConfigMap`. Use [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/) for all sensitive data.
 
 | Resource  | Purpose                          | Example                                     |
 | --------- | -------------------------------- | ------------------------------------------- |

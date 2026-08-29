@@ -88,9 +88,7 @@ jobs:
   run: aws s3 cp file.txt s3://my-bucket/
 ```
 
-<Callout icon="lightbulb">
-  Always store credentials in GitHub Secrets or environment secrets. Prefer cloud-provider-specific credential actions (e.g., AWS, Azure, GCP) to minimize the risk of secret leakage in logs.
-</Callout>
+> **lightbulb** Always store credentials in GitHub Secrets or environment secrets. Prefer cloud-provider-specific credential actions (e.g., AWS, Azure, GCP) to minimize the risk of secret leakage in logs.
 
 4. Complex pipeline logic and reuse
 
@@ -165,9 +163,7 @@ jobs:
 * Jenkins agents can be long-lived and maintain state, which is helpful for extended tests or stateful jobs.
 * GitHub Actions hosted runners have a hard timeout (6 hours per job). Self-hosted runners can extend timeouts (up to 72 hours depending on configuration).
 
-<Callout icon="warning">
-  If your pipelines depend on long-running jobs or persistent agent state, plan to use self-hosted runners or refactor jobs into smaller steps that persist state externally (artifacts, caches, or remote testbeds).
-</Callout>
+> **warning** If your pipelines depend on long-running jobs or persistent agent state, plan to use self-hosted runners or refactor jobs into smaller steps that persist state externally (artifacts, caches, or remote testbeds).
 
 Migration checklist (practical steps)
 
@@ -191,6 +187,4 @@ Further reading and references
 * [Jenkins documentation](https://www.jenkins.io/doc/)
 * Marketplace examples: `docker/build-push-action`, `aws-actions/configure-aws-credentials`, `azure/k8s-deploy`
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/c8922198-0dcd-4910-9545-21e08f8a847c/lesson/1e7dae3f-a46b-4d0e-9268-9b8452e18196" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/c8922198-0dcd-4910-9545-21e08f8a847c/lesson/1e7dae3f-a46b-4d0e-9268-9b8452e18196)

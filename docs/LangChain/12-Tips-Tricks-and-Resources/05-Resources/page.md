@@ -8,9 +8,7 @@ Before continuing, a brief disclaimer and a pointer to useful resources.
 
 LangChain evolves quickly — think of it as a framework, a platform, or a library — and releases appear frequently. This lesson/article is based on LangChain 0.1.11 (and is compatible with 0.1.10). To avoid surprises, run the same LangChain version as used in this material so the notebooks and examples behave as shown.
 
-<Callout icon="lightbulb">
-  Keep your LangChain installation aligned with the course version (0.1.10–0.1.11) to avoid API mismatches. If you run into issues, check the LangChain docs ([https://python.langchain.com/en/latest/](https://python.langchain.com/en/latest/)) or release notes ([https://github.com/langchain-ai/langchain/releases](https://github.com/langchain-ai/langchain/releases)) for the changes.
-</Callout>
+> **lightbulb** Keep your LangChain installation aligned with the course version (0.1.10–0.1.11) to avoid API mismatches. If you run into issues, check the LangChain docs ([https://python.langchain.com/en/latest/](https://python.langchain.com/en/latest/)) or release notes ([https://github.com/langchain-ai/langchain/releases](https://github.com/langchain-ai/langchain/releases)) for the changes.
 
 <Frame>
   <img alt="The image shows a LangChain logo with icons labeled &#x22;Framework,&#x22; &#x22;Platform,&#x22; and &#x22;Library.&#x22; It also includes the word &#x22;Disclaimer&#x22; in the top left corner." />

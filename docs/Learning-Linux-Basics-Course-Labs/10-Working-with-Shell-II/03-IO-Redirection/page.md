@@ -22,9 +22,7 @@ This lesson has provided an overview of file compression and archival in Linux. 
 
 For further learning, consider exploring additional documentation on Linux file management and archival strategies.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/8587333b-3a93-4eb5-8d3f-13c4a3435d1b/lesson/6c4f9780-6be1-4c2f-b2e1-0b6992ee3c5a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/8587333b-3a93-4eb5-8d3f-13c4a3435d1b/lesson/6c4f9780-6be1-4c2f-b2e1-0b6992ee3c5a)
 
 
 # IO Redirection
@@ -83,9 +81,7 @@ To append error messages instead of overwriting them, use `2>>`:
 [~]$ cat missing_file 2>> error.txt
 ```
 
-<Callout icon="lightbulb">
-  If you want to run a command without displaying error messages on the screen, you can redirect STDERR to `/dev/null`. This special file discards any input provided to it.
-</Callout>
+> **lightbulb** If you want to run a command without displaying error messages on the screen, you can redirect STDERR to `/dev/null`. This special file discards any input provided to it.
 
 ## Using Pipes to Link Commands
 
@@ -163,8 +159,6 @@ By mastering these IO redirection techniques, you can efficiently manage command
 
 Happy learning and efficient command chaining!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/8587333b-3a93-4eb5-8d3f-13c4a3435d1b/lesson/ca237928-cb81-470a-b923-878e62149490" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/8587333b-3a93-4eb5-8d3f-13c4a3435d1b/lesson/ca237928-cb81-470a-b923-878e62149490)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/8587333b-3a93-4eb5-8d3f-13c4a3435d1b/lesson/f22851fc-6994-4895-972b-0b34e29e1b37" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/8587333b-3a93-4eb5-8d3f-13c4a3435d1b/lesson/f22851fc-6994-4895-972b-0b34e29e1b37)

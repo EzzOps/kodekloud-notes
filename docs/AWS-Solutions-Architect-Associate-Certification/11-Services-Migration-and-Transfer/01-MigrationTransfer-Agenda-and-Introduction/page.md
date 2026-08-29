@@ -33,7 +33,7 @@ Moving to a new house typically involves the following steps:
 7. **Unloading and Organizing:**\
    At your new home, unload and arrange your belongings room by room to streamline the unpacking process.
 
-![The image outlines the steps for home migration, including assessment, decluttering, categorization, transportation, packing, loading, and organizing. Each step is represented with an icon and a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865466/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MigrationTransfer-Agenda-and-Introduction/home-migration-steps-outline.jpg)
+![The image outlines the steps for home migration, including assessment, decluttering, categorization, transportation, packing, loading, and organizing. Each step is represented with an icon and a brief description.](https://kodekloud.com/kk-media/image/upload/v1752865466/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MigrationTransfer-Agenda-and-Introduction/home-migration-steps-outline.jpg)
 
 ## AWS Cloud Migration Process
 
@@ -54,7 +54,7 @@ Cloud migration parallels the home moving process, with key steps tailored to di
 5. **Migration Execution:**\
    Execute the migration plan while monitoring progress and ensuring a smooth transition to AWS.
 
-![The image outlines the steps for AWS migration, including Assessment and Inventory, Categorization, Determining Cloud Services, Migration Planning, and Migration Execution. Each step is represented with icons and text.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865467/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MigrationTransfer-Agenda-and-Introduction/aws-migration-steps-diagram.jpg)
+![The image outlines the steps for AWS migration, including Assessment and Inventory, Categorization, Determining Cloud Services, Migration Planning, and Migration Execution. Each step is represented with icons and text.](https://kodekloud.com/kk-media/image/upload/v1752865467/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MigrationTransfer-Agenda-and-Introduction/aws-migration-steps-diagram.jpg)
 
 ## Overview of AWS Migration Services
 
@@ -81,7 +81,7 @@ AWS offers a comprehensive suite of services that ease the transition to the clo
 * **AWS Transfer Family and AWS DataSync:**\
   These services address various data transfer needs, allowing efficient and reliable movement of data from on-premises environments to AWS.
 
-![The image lists various AWS Migration services, including AWS Migration Hub, AWS Database Migration Service, and AWS DataSync, among others. Each service is represented by an icon and a label.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865469/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MigrationTransfer-Agenda-and-Introduction/aws-migration-services-list.jpg)
+![The image lists various AWS Migration services, including AWS Migration Hub, AWS Database Migration Service, and AWS DataSync, among others. Each service is represented by an icon and a label.](https://kodekloud.com/kk-media/image/upload/v1752865469/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MigrationTransfer-Agenda-and-Introduction/aws-migration-services-list.jpg)
 
 * **AWS Snow Family:**\
   Provides physical devices for transferring large volumes of data into AWS, ideal for situations where network-based transfers are not feasible.

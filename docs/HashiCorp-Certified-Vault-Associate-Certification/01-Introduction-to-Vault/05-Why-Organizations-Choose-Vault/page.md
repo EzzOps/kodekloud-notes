@@ -22,9 +22,7 @@ As organizations migrate, containerize, or adopt immutable infrastructure across
 
 HashiCorp Vault centralizes identity and secret management, providing a single integration point for applications. Instead of coding against each cloud’s API, apps authenticate to Vault. Vault then dynamically issues or retrieves credentials from your existing IDPs: Active Directory, AWS IAM, Azure AD, or Google Cloud IAM.
 
-<Frame>
-  ![The image illustrates why organizations choose Vault, showing connections from AWS, Azure, and GCP to a central Vault, with a building and a person at a computer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878197/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Why-Organizations-Choose-Vault/vault-architecture-aws-azure-gcp.jpg)
-</Frame>
+![The image illustrates why organizations choose Vault, showing connections from AWS, Azure, and GCP to a central Vault, with a building and a person at a computer.](https://kodekloud.com/kk-media/image/upload/v1752878197/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Why-Organizations-Choose-Vault/vault-architecture-aws-azure-gcp.jpg)
 
 ### Core Benefits
 
@@ -33,9 +31,7 @@ HashiCorp Vault centralizes identity and secret management, providing a single i
 * **Simplified developer experience**: One API endpoint for all secrets
 * **Enhanced security posture**: Short-lived credentials reduce blast radius
 
-<Callout icon="lightbulb">
-  Vault’s dynamic secrets engine issues credentials at runtime and automatically revokes them at expiration, eliminating manual key rotation.
-</Callout>
+> **lightbulb** Vault’s dynamic secrets engine issues credentials at runtime and automatically revokes them at expiration, eliminating manual key rotation.
 
 ### Advanced Secret Management Features
 
@@ -44,9 +40,7 @@ HashiCorp Vault centralizes identity and secret management, providing a single i
 * **Leasing & Renewal**: Automatic credential renewal and revocation
 * **Audit Logging**: Detailed, tamper-proof audit trails
 
-<Frame>
-  ![The image illustrates why organizations choose Vault, showing connections between a building, AWS, Azure, GCP, and a computer, all linked to a central Vault icon. It suggests centralized management of cloud services and security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878198/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Why-Organizations-Choose-Vault/vault-centralized-management-cloud-services.jpg)
-</Frame>
+![The image illustrates why organizations choose Vault, showing connections between a building, AWS, Azure, GCP, and a computer, all linked to a central Vault icon. It suggests centralized management of cloud services and security.](https://kodekloud.com/kk-media/image/upload/v1752878198/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Why-Organizations-Choose-Vault/vault-centralized-management-cloud-services.jpg)
 
 ## Comparing Integration Approaches
 
@@ -62,6 +56,4 @@ HashiCorp Vault centralizes identity and secret management, providing a single i
 * [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/)
 * [Google Cloud IAM](https://cloud.google.com/iam)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/b8d194ad-b4a2-463b-826a-5ad71a059e36/lesson/d0d2d789-2122-4bf6-940b-4a4b1c714b0b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/b8d194ad-b4a2-463b-826a-5ad71a059e36/lesson/d0d2d789-2122-4bf6-940b-4a4b1c714b0b)

@@ -40,9 +40,7 @@ Click on `test-shell` to view its live status, console output, and event timelin
 
 Azure Monitor charges based on the volume of data ingested into Log Analytics. Enabling Managed Prometheus increases ingestion volume, and Azure Managed Grafana incurs additional per-user costs.
 
-<Callout icon="lightbulb">
-  Review your ingestion rates and retention settings in your Log Analytics workspace to optimize costs.
-</Callout>
+> **lightbulb** Review your ingestion rates and retention settings in your Log Analytics workspace to optimize costs.
 
 ## Integrating Prometheus and Grafana
 
@@ -53,9 +51,7 @@ Azure Monitor for Containers can natively scrape Prometheus endpoints—no self-
 | Prometheus | Pull-based metric collection and querying (PromQL) |
 | Grafana    | Dashboarding and multi-source alerting             |
 
-<Frame>
-  ![The image is a diagram illustrating the integration of Prometheus with Azure Monitor, showing data flow from nodes and pods through monitoring and metrics add-ons to a data platform for analytics and alerts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869506/notes-assets/images/Azure-Kubernetes-Service-Container-insights-for-AKS/prometheus-azure-monitor-integration-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating the integration of Prometheus with Azure Monitor, showing data flow from nodes and pods through monitoring and metrics add-ons to a data platform for analytics and alerts.](https://kodekloud.com/kk-media/image/upload/v1752869506/notes-assets/images/Azure-Kubernetes-Service-Container-insights-for-AKS/prometheus-azure-monitor-integration-diagram.jpg)
 
 If you enabled Grafana during cluster creation:
 
@@ -63,15 +59,11 @@ If you enabled Grafana during cluster creation:
 2. Copy the **Instance URL** and sign in with Azure AD.
 3. Browse pre-built Azure dashboards under **Dashboards**.
 
-<Frame>
-  ![The image shows a dashboard displaying CPU and memory utilization metrics for a Kubernetes cluster, including CPU usage graphs and a table with CPU quota details for different namespaces.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869508/notes-assets/images/Azure-Kubernetes-Service-Container-insights-for-AKS/kubernetes-dashboard-cpu-memory-metrics.jpg)
-</Frame>
+![The image shows a dashboard displaying CPU and memory utilization metrics for a Kubernetes cluster, including CPU usage graphs and a table with CPU quota details for different namespaces.](https://kodekloud.com/kk-media/image/upload/v1752869508/notes-assets/images/Azure-Kubernetes-Service-Container-insights-for-AKS/kubernetes-dashboard-cpu-memory-metrics.jpg)
 
 Thank you for learning how to leverage Container Insights for AKS. For more details, see [Azure Monitor for Containers documentation](https://docs.microsoft.com/azure/azure-monitor/containers/container-insights-overview).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/azure-kubernetes-service/module/5b5575f8-6539-491b-9d85-6f0ae23714b5/lesson/7200f0fb-def6-40c0-9fe2-39e272f32189" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/azure-kubernetes-service/module/5b5575f8-6539-491b-9d85-6f0ae23714b5/lesson/7200f0fb-def6-40c0-9fe2-39e272f32189)
 
 
 # Summary
@@ -98,9 +90,7 @@ Azure Container Insights delivers end-to-end visibility into your AKS clusters w
 * Built-in queries and visualizations in Azure Monitor
 * Seamless integration with Azure Alerts and Workbooks
 
-<Callout icon="lightbulb">
-  Container Insights is fully managed by Azure Monitor. You incur data ingestion and retention charges, but you avoid operating your own monitoring infrastructure.
-</Callout>
+> **lightbulb** Container Insights is fully managed by Azure Monitor. You incur data ingestion and retention charges, but you avoid operating your own monitoring infrastructure.
 
 Learn more: [Container Insights overview](https://learn.microsoft.com/azure/azure-monitor/containers/container-insights-overview)
 
@@ -119,9 +109,7 @@ The Prometheus + Grafana stack is a popular open-source alternative that emphasi
   • Provides interactive dashboards with rich visualizations\
   • Supports annotations, templating, and provisioning
 
-<Callout icon="triangle-alert">
-  Running Prometheus and Grafana requires provisioning, scaling, and maintaining storage for long-term metrics. Ensure you plan for high-availability and backup.
-</Callout>
+> **triangle-alert** Running Prometheus and Grafana requires provisioning, scaling, and maintaining storage for long-term metrics. Ensure you plan for high-availability and backup.
 
 Explore more:
 
@@ -162,6 +150,4 @@ Stay tuned!
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/azure-kubernetes-service/module/5b5575f8-6539-491b-9d85-6f0ae23714b5/lesson/95efa405-574a-4b86-a046-e27a197f4d36" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/azure-kubernetes-service/module/5b5575f8-6539-491b-9d85-6f0ae23714b5/lesson/95efa405-574a-4b86-a046-e27a197f4d36)

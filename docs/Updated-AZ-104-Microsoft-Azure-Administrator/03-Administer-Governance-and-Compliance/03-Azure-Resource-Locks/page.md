@@ -32,9 +32,7 @@ Azure provides two primary types of resource locks:
 
 The following infographic illustrates the benefits of Azure Resource Locks, highlighting the prevention of accidental changes, inheritance across resources, and the flexibility to operate in both read-only and delete modes.
 
-<Frame>
-  ![The image is an infographic about resource locks, explaining their benefits such as avoiding accidental changes, inheritance, read-only locks, and delete locks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884530/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Resource-Locks/resource-locks-infographic-benefits.jpg)
-</Frame>
+![The image is an infographic about resource locks, explaining their benefits such as avoiding accidental changes, inheritance, read-only locks, and delete locks.](https://kodekloud.com/kk-media/image/upload/v1752884530/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Resource-Locks/resource-locks-infographic-benefits.jpg)
 
 ## Implementing Resource Locks in the Azure Portal
 
@@ -55,9 +53,7 @@ Follow these steps to implement resource locks using the Azure portal:
 
 After saving, the delete lock becomes active. If you navigate back to the Overview blade for the resource and attempt to delete it, an error message will confirm that deletion is blocked due to the active lock.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying a lock configuration for a resource group named "cleanup-env." It lists a lock named "DND" with a lock type of "Delete" and a note stating "Do not delete this resource."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884531/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Resource-Locks/azure-portal-lock-configuration.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying a lock configuration for a resource group named "cleanup-env." It lists a lock named "DND" with a lock type of "Delete" and a note stating "Do not delete this resource."](https://kodekloud.com/kk-media/image/upload/v1752884531/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Resource-Locks/azure-portal-lock-configuration.jpg)
 
 Even though the delete lock stops resource removal, you can still modify aspects of the resource. For instance, you can update runbooks within the automation account without any issues.
 
@@ -68,15 +64,11 @@ Even though the delete lock stops resource removal, you can still modify aspects
    * Name it "RO" and include any notes or descriptions.
    * Click **Save**.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface where a user is adding a lock to a resource group named "cleanup-env." The lock type is set to "Read-only," and the lock name is being entered as "RO."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884532/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Resource-Locks/azure-portal-lock-readonly-cleanup-env.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface where a user is adding a lock to a resource group named "cleanup-env." The lock type is set to "Read-only," and the lock name is being entered as "RO."](https://kodekloud.com/kk-media/image/upload/v1752884532/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Resource-Locks/azure-portal-lock-readonly-cleanup-env.jpg)
 
 With the read-only lock in place, attempts to create a new resource—such as a Python runbook (version 3.8) named "demo2"—will result in an error message indicating that the scope is locked. This clearly demonstrates the difference in behavior between a read-only lock and a delete lock.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen for creating a runbook with fields for name, runbook type, and runtime version. An error message indicates a "ScopeLocked" issue preventing the creation of the runbook.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884533/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Resource-Locks/azure-portal-runbook-creation-error.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen for creating a runbook with fields for name, runbook type, and runtime version. An error message indicates a "ScopeLocked" issue preventing the creation of the runbook.](https://kodekloud.com/kk-media/image/upload/v1752884533/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Resource-Locks/azure-portal-runbook-creation-error.jpg)
 
 ## Applying Locks at the Resource Group Level
 
@@ -84,19 +76,13 @@ From the Resource Groups view, you can inspect any locks applied at that level. 
 
 To further enhance protection, you can add an additional lock at the resource group level. For instance, add a delete lock named "RG lock" (or any custom name) to the Resource Group.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface where a user is adding a lock to a resource group named "about-rithin." The lock type is set to "Delete," and the user is about to confirm by clicking "OK."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884535/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Resource-Locks/azure-portal-add-lock-resource-group.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface where a user is adding a lock to a resource group named "about-rithin." The lock type is set to "Delete," and the user is about to confirm by clicking "OK."](https://kodekloud.com/kk-media/image/upload/v1752884535/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Resource-Locks/azure-portal-add-lock-resource-group.jpg)
 
 After saving this lock, all resources within the Resource Group—such as virtual machines (VMs), storage accounts, and network interfaces—are protected. Attempting to delete a VM along with its associated resources (disk, network interface, etc.) will fail due to the active lock.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying a resource group named "about-rithin," with a list of resources such as virtual machines, IP addresses, and network security groups, along with their types and locations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884536/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Resource-Locks/azure-portal-resource-group-about-rithin.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying a resource group named "about-rithin," with a list of resources such as virtual machines, IP addresses, and network security groups, along with their types and locations.](https://kodekloud.com/kk-media/image/upload/v1752884536/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Resource-Locks/azure-portal-resource-group-about-rithin.jpg)
 
-<Callout icon="lightbulb">
-  Remember, to make any change to a resource that is locked, you must first remove the active lock, perform the necessary updates, and then reapply the lock to maintain continuous protection.
-</Callout>
+> **lightbulb** Remember, to make any change to a resource that is locked, you must first remove the active lock, perform the necessary updates, and then reapply the lock to maintain continuous protection.
 
 ## Conclusion
 
@@ -104,6 +90,4 @@ Azure Resource Locks are a powerful tool that safeguards your cloud environment 
 
 Next, we will delve into strategies for managing costs in your Azure subscription, providing further insights for maintaining a secure and efficient cloud environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/84a0bcaf-7696-445f-b093-5150e192b0c5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/84a0bcaf-7696-445f-b093-5150e192b0c5)

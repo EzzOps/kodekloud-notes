@@ -16,13 +16,9 @@ The staging area gives you the flexibility to select which changes you want to i
 
 For instance, if you add 50 lines of code today and plan to add another 50 lines tomorrow, you might not want to commit the half-finished feature immediately. Similarly, if you alter 10 different files to introduce a new feature, you can combine these into a single, cohesive commit.
 
-<Frame>
-  ![The image illustrates the process of staging and committing changes in Git, showing a transition from the working area to the staging area, with a note about not tracking partial changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881252/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Staging-and-Committing-Changes/git-staging-committing-process-diagram.jpg)
-</Frame>
+![The image illustrates the process of staging and committing changes in Git, showing a transition from the working area to the staging area, with a note about not tracking partial changes.](https://kodekloud.com/kk-media/image/upload/v1752881252/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Staging-and-Committing-Changes/git-staging-committing-process-diagram.jpg)
 
-<Frame>
-  ![The image illustrates the process of staging and committing changes in Git, showing a transition from a working area to a staging area.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881254/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Staging-and-Committing-Changes/git-staging-committing-process.jpg)
-</Frame>
+![The image illustrates the process of staging and committing changes in Git, showing a transition from a working area to a staging area.](https://kodekloud.com/kk-media/image/upload/v1752881254/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Staging-and-Committing-Changes/git-staging-committing-process.jpg)
 
 ### Demo Scenario
 
@@ -107,9 +103,7 @@ In larger projects, staging or unstaging multiple files can be streamlined with 
   git reset "products/*.html"
   ```
 
-<Callout icon="lightbulb">
-  Staging with patterns can save time and ensure that only specific files are included in your commit. Always verify your changes using `git status` before committing.
-</Callout>
+> **lightbulb** Staging with patterns can save time and ensure that only specific files are included in your commit. Always verify your changes using `git status` before committing.
 
 ## 3. Committing Changes
 
@@ -151,9 +145,7 @@ When you commit, Git saves the current state of the staged files. Later, you can
 
 This diff shows how a function was replaced by a new one, helping team members clearly understand the changes.
 
-<Callout icon="lightbulb">
-  Clear commit messages and detailed diffs are invaluable for collaborative environments where tracking changes is critical.
-</Callout>
+> **lightbulb** Clear commit messages and detailed diffs are invaluable for collaborative environments where tracking changes is critical.
 
 ## Reviewing Project History
 

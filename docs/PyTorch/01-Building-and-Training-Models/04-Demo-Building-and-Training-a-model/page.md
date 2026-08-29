@@ -36,9 +36,7 @@ model.classifier[6] = nn.Linear(4096, 20)
 print(model.classifier)
 ```
 
-<Callout icon="lightbulb">
-  Modifying the output layer is crucial for adapting a pre-trained model to new tasks and datasets.
-</Callout>
+> **lightbulb** Modifying the output layer is crucial for adapting a pre-trained model to new tasks and datasets.
 
 ──────────────────────────────
 
@@ -238,9 +236,7 @@ for name, param in model.named_parameters():
     print(f"Layer: {name}, requires_grad: {param.requires_grad}")
 ```
 
-<Callout icon="lightbulb">
-  Freezing layers prevents the alteration of pre-trained features, speeding up training when adapting models to new tasks.
-</Callout>
+> **lightbulb** Freezing layers prevents the alteration of pre-trained features, speeding up training when adapting models to new tasks.
 
 ### Training Loop with a Learning Rate Scheduler
 
@@ -303,11 +299,9 @@ This training approach demonstrates effective feature extraction by fine-tuning 
 
 In this article, we explored several advanced training techniques in PyTorch. We covered the process of loading and modifying pre-trained models, using PyTorch Hub for model sharing, setting up various learning rate schedulers, and implementing transfer learning by fine-tuning the model's final layer. These methodologies not only boost model performance but also streamline the training process. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/a25a1e8e-b979-44aa-8664-874046ddcb77" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/a25a1e8e-b979-44aa-8664-874046ddcb77)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/4c364708-8045-4d80-9e1b-a22cbdd8dba6" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/4c364708-8045-4d80-9e1b-a22cbdd8dba6)
 
 
 # Demo Building and Training a model

@@ -90,13 +90,9 @@ Here’s a quick reference table of common actions for the attributes processor:
 | `hash`    | Replace attribute value with a hashed value (useful for PII).                       | `- key: user_id action: hash`       |
 | `update`  | Update an attribute only if it already exists.                                      | `- key: env action: update`         |
 
-<Callout icon="lightbulb">
-  Processor execution order matters. Place processors in the sequence you want them applied. For example, if you want attributes added before batching (so they appear in the batched payload), list the attributes processor before the batch processor.
-</Callout>
+> **lightbulb** Processor execution order matters. Place processors in the sequence you want them applied. For example, if you want attributes added before batching (so they appear in the batched payload), list the attributes processor before the batch processor.
 
-<Callout icon="warning">
-  Choose the correct action type for your intent. Use `insert` to avoid overwriting existing values and `upsert` if you want to force a value. Misusing `upsert` can unintentionally overwrite source-provided attributes.
-</Callout>
+> **warning** Choose the correct action type for your intent. Use `insert` to avoid overwriting existing values and `upsert` if you want to force a value. Misusing `upsert` can unintentionally overwrite source-provided attributes.
 
 ## Processor order and pipeline behavior
 
@@ -122,6 +118,4 @@ After restarting the Collector with this configuration and generating traces fro
 
 That’s the essentials: define an attributes processor instance, choose appropriate actions (`insert` vs `upsert`), and place the processor in the correct pipeline order so your mutations are applied when you expect them.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/9d3ed547-367c-4f40-a051-b88198f539ad" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/9d3ed547-367c-4f40-a051-b88198f539ad)

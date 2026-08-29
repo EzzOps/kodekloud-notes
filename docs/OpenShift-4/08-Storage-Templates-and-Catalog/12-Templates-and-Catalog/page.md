@@ -83,18 +83,14 @@ Templates in OpenShift can be created by uploading or downloading a YAML or JSON
    oc create -f template-config.yaml
    ```
 
-<Callout icon="lightbulb">
-  If you're not sure how to construct the YAML for a particular service, you can export the existing configuration by running:
+> **lightbulb** If you're not sure how to construct the YAML for a particular service, you can export the existing configuration by running:
 
   ```bash theme={null}
   oc export service db
   ```
 
   This command outputs the YAML configuration for the service, which you can modify and parameterize as needed.
-</Callout>
 
 That concludes this lesson on OpenShift templates and catalogs. In the next section, we will proceed to a demonstration to further illustrate these concepts in action.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/5054a838-a538-41d5-9d34-6c77ea9d5f9e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/5054a838-a538-41d5-9d34-6c77ea9d5f9e)

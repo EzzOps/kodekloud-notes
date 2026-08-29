@@ -33,7 +33,7 @@ For managing encryption at rest, you have two options:
 
 In addition, Azure supports the use of customer-provided keys (CPK) during read or write operations. This feature provides granular control over the encryption and decryption of your blob data, which is particularly useful for scenarios involving highly sensitive information, such as financial records.
 
-![The image outlines Azure Storage security features, highlighting encryption for data at rest, with options for Microsoft-managed or customer-managed keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866427/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Storage-Security-Features/azure-storage-security-encryption-options.jpg)
+![The image outlines Azure Storage security features, highlighting encryption for data at rest, with options for Microsoft-managed or customer-managed keys.](https://kodekloud.com/kk-media/image/upload/v1752866427/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Storage-Security-Features/azure-storage-security-encryption-options.jpg)
 
 > **triangle-alert** Ensure that your encryption keys and SAS tokens are managed with care, as mismanagement could lead to unauthorized access to your storage data.
 

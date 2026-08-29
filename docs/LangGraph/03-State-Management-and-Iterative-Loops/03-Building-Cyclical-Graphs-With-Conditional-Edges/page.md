@@ -14,9 +14,7 @@ resumed_result = app.invoke(new_inputs, config=config)
 print("Resumed graph result:", resumed_result)
 ```
 
-<Callout icon="lightbulb">
-  Pick a `thread_id` that uniquely represents the user session or workflow instance. Treat thread IDs like session tokens and protect them with the same care as authentication credentials.
-</Callout>
+> **lightbulb** Pick a `thread_id` that uniquely represents the user session or workflow instance. Treat thread IDs like session tokens and protect them with the same care as authentication credentials.
 
 ## Production backends and trade-offs
 
@@ -85,9 +83,7 @@ Production checkpointing systems commonly include:
   <img alt="The image outlines methods for saving a checkpoint in high-availability systems, including encrypting/hashing the state, logging for audit trails, and tagging the state with metadata. It highlights that this method provides a foundation for long-term and persistent AI workflows." />
 </Frame>
 
-<Callout icon="warning">
-  Persisted state can contain sensitive data (PII, API keys, tokens). Always encrypt persisted checkpoints, restrict access with IAM, and maintain audit trails to meet compliance and security requirements.
-</Callout>
+> **warning** Persisted state can contain sensitive data (PII, API keys, tokens). Always encrypt persisted checkpoints, restrict access with IAM, and maintain audit trails to meet compliance and security requirements.
 
 ## Resuming execution
 
@@ -140,9 +136,7 @@ Resume patterns:
 * Redis: [https://redis.io/](https://redis.io/)
 * AWS S3: [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/61700334-8d53-4e7a-b8a3-23360d19e653" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/61700334-8d53-4e7a-b8a3-23360d19e653)
 
 
 # Building Cyclical Graphs With Conditional Edges

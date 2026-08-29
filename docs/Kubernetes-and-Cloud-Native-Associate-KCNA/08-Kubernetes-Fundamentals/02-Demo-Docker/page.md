@@ -6,9 +6,7 @@ This article provides a guide on installing Docker on an Ubuntu virtual machine 
 
 Welcome to this comprehensive guide on installing Docker on an Ubuntu virtual machine. In this lesson, we will cover the process of setting up an Ubuntu VM, installing Docker, and running Docker containers.
 
-<Callout icon="lightbulb">
-  Ensure that you are connected to your Ubuntu VM via SSH from your laptop before proceeding.
-</Callout>
+> **lightbulb** Ensure that you are connected to your Ubuntu VM via SSH from your laptop before proceeding.
 
 ## Step 1: Becoming the Root User
 
@@ -73,9 +71,7 @@ Server:
 root@osboxes:/home/osboxes#
 ```
 
-<Callout icon="lightbulb">
-  Verifying the Docker version ensures that your installation was successful and provides details about both the Client and Server components.
-</Callout>
+> **lightbulb** Verifying the Docker version ensures that your installation was successful and provides details about both the Client and Server components.
 
 ## Step 4: Running the "hello-world" Docker Container
 
@@ -154,6 +150,4 @@ Enjoy exploring Docker further and discovering more about containerization!
 
 Happy Dockering!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/8403f56b-91f8-42f9-89e9-5c27a7438ef2/lesson/1ced744e-16b6-4da6-a15c-650b4eb5f189" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/8403f56b-91f8-42f9-89e9-5c27a7438ef2/lesson/1ced744e-16b6-4da6-a15c-650b4eb5f189)

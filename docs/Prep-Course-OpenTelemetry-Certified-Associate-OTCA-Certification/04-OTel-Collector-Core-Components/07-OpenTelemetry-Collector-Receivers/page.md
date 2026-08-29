@@ -6,9 +6,7 @@ Overview of OpenTelemetry Collector receivers that ingest traces metrics and log
 
 In this lesson we cover how receivers act as the Collector's entry points: they listen for telemetry (traces, metrics, logs) from applications, services, and systems, translate incoming formats into the Collector's internal representation, and hand data off to processors and exporters. Receivers support multiple protocols, standard ports, and custom configuration to meet a wide range of telemetry collection scenarios.
 
-<Callout icon="lightbulb">
-  Receivers are the first stage in the Collector pipeline. Configure them to match your instrumented applications, Prometheus endpoints, host agents, or legacy systems so the Collector can consistently process and export telemetry.
-</Callout>
+> **lightbulb** Receivers are the first stage in the Collector pipeline. Configure them to match your instrumented applications, Prometheus endpoints, host agents, or legacy systems so the Collector can consistently process and export telemetry.
 
 <Frame>
   <img alt="The image is a collector architecture diagram illustrating a system where applications, services, and systems send traces, metrics, and logs to a &#x22;Receiver,&#x22; which then communicates with a &#x22;Processor.&#x22;" />
@@ -186,9 +184,7 @@ receivers:
         interval: 30s
 ```
 
-<Callout icon="warning">
-  Run node-level receivers (like kubeletstats) as DaemonSets. Run cluster-level receivers (like k8s\_cluster and k8sobjects) as a Deployment with one replica to avoid duplicate data.
-</Callout>
+> **warning** Run node-level receivers (like kubeletstats) as DaemonSets. Run cluster-level receivers (like k8s\_cluster and k8sobjects) as a Deployment with one replica to avoid duplicate data.
 
 File log receiver
 
@@ -308,6 +304,4 @@ References and further reading
 
 That's all about receivers.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/0493d785-81a8-40bc-bc54-49c7402dc351" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/0493d785-81a8-40bc-bc54-49c7402dc351)

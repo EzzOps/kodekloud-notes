@@ -69,9 +69,7 @@ More usefully for search, we build structured numeric features. For our bag exam
 
 Combine these feature values into a vector for each product. Think of the mapping from attributes to numbers as a dictionary the system can read.
 
-<Callout icon="lightbulb">
-  Integer categorical codes here are illustrative. In production, raw ordinal integers can mislead similarity calculations because they imply scale. Prefer one-hot encoding, normalized numeric features, or learned embeddings for categorical attributes. When a query omits a feature, systems commonly mask that dimension so it doesn't affect similarity.
-</Callout>
+> **lightbulb** Integer categorical codes here are illustrative. In production, raw ordinal integers can mislead similarity calculations because they imply scale. Prefer one-hot encoding, normalized numeric features, or learned embeddings for categorical attributes. When a query omits a feature, systems commonly mask that dimension so it doesn't affect similarity.
 
 <Frame>
   <img alt="The image shows a presentation slide with tables translating bag types and colors from human-readable terms to numeric codes, and a person speaking beside it." />
@@ -96,9 +94,7 @@ Other examples:
 
 When a customer searches, the system converts the query into a query vector and compares it with stored product vectors using vector math (dot product, cosine similarity, or L2 distance) to find the closest matches. Query dimensions that are unspecified can be masked or treated as wildcards.
 
-<Callout icon="lightbulb">
-  Using a wildcard (an underscore or `None` in implementation) indicates the query doesn't constrain that feature. The search logic then ignores that dimension when ranking matches.
-</Callout>
+> **lightbulb** Using a wildcard (an underscore or `None` in implementation) indicates the query doesn't constrain that feature. The search logic then ignores that dimension when ranking matches.
 
 Nile precomputes product vectors for all inventory items and stores them for fast nearest-neighbor lookup (vector indexes, ANN libraries). Example product catalog vectors:
 

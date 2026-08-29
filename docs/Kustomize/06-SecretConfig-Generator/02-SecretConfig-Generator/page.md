@@ -43,9 +43,7 @@ Use the `--prune` flag along with `-l` to target your shared label:
 kubectl apply -k k8s/overlays/prod/ --prune -l app-config=my-config
 ```
 
-<Callout icon="triangle-alert">
-  `kubectl apply --prune` will delete **any** resource in the namespace matching the label selector that isn’t in the current Kustomize output. Make sure only intended resources use this label.
-</Callout>
+> **triangle-alert** `kubectl apply --prune` will delete **any** resource in the namespace matching the label selector that isn’t in the current Kustomize output. Make sure only intended resources use this label.
 
 ### Step 4: Verify Cleanup
 
@@ -77,9 +75,7 @@ redis-cred-c6k6d6bh64     1      2m7s
 * [Kustomize Documentation](https://kubectl.docs.kubernetes.io/references/kustomize/)
 * [Prune Flag Guide](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/51823d3e-7be4-4792-836a-2c4690c0c547/lesson/f2d30e37-cef9-4725-97e9-69f2380e9a2d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/51823d3e-7be4-4792-836a-2c4690c0c547/lesson/f2d30e37-cef9-4725-97e9-69f2380e9a2d)
 
 
 # SecretConfig Generator

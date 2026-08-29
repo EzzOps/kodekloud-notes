@@ -55,9 +55,7 @@ FinOps adoption is a pragmatic journey — there is no one-size-fits-all. Keep t
 3. Start small and scale smart
    * Target high-value, low-effort wins (the 80/20 principle). A common early win: improve cost visibility by centralizing billing and providing a shared dashboard for engineering and finance.
 
-<Callout icon="lightbulb">
-  Start with the highest-value, lowest-effort items (for example, a unified billing dashboard or a basic cost attribution model). Use quick wins to build momentum and secure stakeholder buy-in.
-</Callout>
+> **lightbulb** Start with the highest-value, lowest-effort items (for example, a unified billing dashboard or a basic cost attribution model). Use quick wins to build momentum and secure stakeholder buy-in.
 
 ## First practical steps
 
@@ -88,6 +86,4 @@ In the next lesson we’ll examine the current state of FinOps: trends, common c
 * FinOps Foundation: [https://www.finops.org/](https://www.finops.org/)
 * Recommended reading: FinOps best practices for cost allocation, optimization, and governance.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/24982811-6142-4554-afd8-2b5f3b8a7f28/lesson/77233fc6-2d13-4b7f-b844-23f17bad3988" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/24982811-6142-4554-afd8-2b5f3b8a7f28/lesson/77233fc6-2d13-4b7f-b844-23f17bad3988)

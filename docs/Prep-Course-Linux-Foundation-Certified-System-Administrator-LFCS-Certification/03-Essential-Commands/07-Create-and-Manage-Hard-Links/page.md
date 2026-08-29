@@ -68,9 +68,7 @@ Change: 2021-10-27 16:33:18.851749919 -0500
 Birth: 2021-10-26 13:37:17.980969655 -0500
 ```
 
-<Callout icon="lightbulb">
-  If one user deletes their reference (hard link) to the file, the data remains accessible through the other link. The file data is only removed when the last hard link is deleted.
-</Callout>
+> **lightbulb** If one user deletes their reference (hard link) to the file, the data remains accessible through the other link. The file data is only removed when the last hard link is deleted.
 
 ### Deleting Hard Links
 
@@ -107,13 +105,9 @@ There are a few limitations to be aware of when working with hard links:
 1. Hard links can only be created for files, not directories.
 2. Hard links must reside on the same file system; you cannot create a hard link from one file system to another.
 
-<Frame>
-  ![The image is a diagram explaining the limitations of hard links, showing that hard links can only be created for files, not folders, and must be on the same filesystem.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881235/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-and-Manage-Hard-Links/hard-links-limitations-diagram.jpg)
-</Frame>
+![The image is a diagram explaining the limitations of hard links, showing that hard links can only be created for files, not folders, and must be on the same filesystem.](https://kodekloud.com/kk-media/image/upload/v1752881235/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-and-Manage-Hard-Links/hard-links-limitations-diagram.jpg)
 
-<Callout icon="triangle-alert">
-  Remember, attempting to create a hard link across different file systems or for directories will result in an error.
-</Callout>
+> **triangle-alert** Remember, attempting to create a hard link across different file systems or for directories will result in an error.
 
 ## Summary
 
@@ -121,6 +115,4 @@ Hard links allow multiple directory entries to reference the same file data with
 
 For further reading on Linux file systems and inode management, consider visiting [Linux File System Hierarchy](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/c07f386a-b03d-48fa-b11b-474d1cfa4cc0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/c07f386a-b03d-48fa-b11b-474d1cfa4cc0)

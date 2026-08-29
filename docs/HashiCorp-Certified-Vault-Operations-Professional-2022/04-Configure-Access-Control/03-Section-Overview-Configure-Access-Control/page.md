@@ -14,13 +14,9 @@ In this lesson, you’ll learn how to secure your Vault deployment by defining w
 | Control Groups                     | (Enterprise) Require multi-approval workflows for sensitive operations by defining and configuring groups. |
 | Namespaces                         | (Enterprise) Implement multi-tenancy with isolated “Vaults within a Vault” for delegation and isolation.   |
 
-<Callout icon="lightbulb">
-  Identity entities, groups, and ACL policies are available in both Vault Open Source and Enterprise editions.\
+> **lightbulb** Identity entities, groups, and ACL policies are available in both Vault Open Source and Enterprise editions.\
   Sentinel policies, control groups, and namespaces require Vault Enterprise.
-</Callout>
 
 With this roadmap in place, let’s dive into our first topic: interpreting Vault identity entities and groups.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/968cf007-376b-48c8-83f9-17521b5dd575/lesson/3a41c487-459d-4bed-9293-912ed4bde51e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/968cf007-376b-48c8-83f9-17521b5dd575/lesson/3a41c487-459d-4bed-9293-912ed4bde51e)

@@ -8,7 +8,7 @@ Welcome to this step-by-step tutorial on integrating AWS CodeBuild with Amazon S
 
 ## Overview
 
-![The image shows the AWS CodeBuild interface with the "Build projects" section open, displaying no results and options to create or manage build projects.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862588/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-build-projects-interface.jpg)
+![The image shows the AWS CodeBuild interface with the "Build projects" section open, displaying no results and options to create or manage build projects.](https://kodekloud.com/kk-media/image/upload/v1752862588/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-build-projects-interface.jpg)
 
 AWS CodeBuild is a fully managed build service that compiles source code, executes tests, and produces deployable artifacts. In this demo, we will:
 
@@ -136,17 +136,17 @@ project-root/
 
 1. In the AWS Console, navigate to S3 and click **Create bucket**.
 
-![The image shows a webpage from the AWS CodeBuild user guide, specifically detailing Step 3: Create two S3 buckets. It provides instructions on setting up input and output buckets for a build process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862590/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-step3-create-s3-buckets.jpg)
+![The image shows a webpage from the AWS CodeBuild user guide, specifically detailing Step 3: Create two S3 buckets. It provides instructions on setting up input and output buckets for a build process.](https://kodekloud.com/kk-media/image/upload/v1752862590/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-step3-create-s3-buckets.jpg)
 
 > **triangle-alert** S3 bucket names must be globally unique. Choose a naming convention (e.g., `<yourname>-codebuild-source`).
 
 2. Enter a name like `codebuilddemo-kodekloud-mbbucket1` and accept the defaults.
 
-![The image shows the AWS S3 console interface for creating a new bucket. It includes fields for entering the bucket name, selecting the AWS region, and configuring object ownership settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862591/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-s3-console-create-bucket.jpg)
+![The image shows the AWS S3 console interface for creating a new bucket. It includes fields for entering the bucket name, selecting the AWS region, and configuring object ownership settings.](https://kodekloud.com/kk-media/image/upload/v1752862591/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-s3-console-create-bucket.jpg)
 
 3. Repeat to create a second bucket (e.g., `codebuilddemo-kodekloud-mbbucket2`).
 
-![The image shows an AWS S3 bucket creation page, with options for default encryption settings and a "Create bucket" button.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862592/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-s3-bucket-creation-page.jpg)
+![The image shows an AWS S3 bucket creation page, with options for default encryption settings and a "Create bucket" button.](https://kodekloud.com/kk-media/image/upload/v1752862592/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-s3-bucket-creation-page.jpg)
 
 ***
 
@@ -154,17 +154,17 @@ project-root/
 
 1. Zip your project files: `pom.xml`, `buildspec.yml`, and the `src` directory.
 
-![The image shows a Windows File Explorer window open to a folder named "CodeBuildDemo" containing three items: a folder named "src" and two files named "buildspec" and "pom.xml." In the background, an Amazon S3 Management Console is visible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862593/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/windows-file-explorer-codebuilddemo-s3.jpg)
+![The image shows a Windows File Explorer window open to a folder named "CodeBuildDemo" containing three items: a folder named "src" and two files named "buildspec" and "pom.xml." In the background, an Amazon S3 Management Console is visible.](https://kodekloud.com/kk-media/image/upload/v1752862593/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/windows-file-explorer-codebuilddemo-s3.jpg)
 
 2. Name the archive `MessageUtil.zip` and upload it to your source bucket:
 
-![The image shows an Amazon S3 management console with a notification of a successfully created bucket. It displays account snapshot details and a list of buckets with their names, regions, and access settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862594/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/amazon-s3-management-console-bucket-created.jpg)
+![The image shows an Amazon S3 management console with a notification of a successfully created bucket. It displays account snapshot details and a list of buckets with their names, regions, and access settings.](https://kodekloud.com/kk-media/image/upload/v1752862594/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/amazon-s3-management-console-bucket-created.jpg)
 
 3. Click the bucket, choose **Upload**, add `MessageUtil.zip`, and complete the upload wizard.
 
-![The image shows an Amazon S3 bucket interface on AWS, specifically the "Objects" tab for a bucket named "codebuilddemo-kodekloud-mbbucket1," which currently has no objects stored.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862595/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/amazon-s3-bucket-objects-tab-empty.jpg)
+![The image shows an Amazon S3 bucket interface on AWS, specifically the "Objects" tab for a bucket named "codebuilddemo-kodekloud-mbbucket1," which currently has no objects stored.](https://kodekloud.com/kk-media/image/upload/v1752862595/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/amazon-s3-bucket-objects-tab-empty.jpg)
 
-![The image shows a file upload dialog in the AWS S3 Management Console, with a folder named "CodeBuildDemo" open, displaying files like "buildspec" and "MessageUtil.zip".](../../../../images/kodekloud.com/kk-media/image/upload/v1752862596/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-s3-file-upload-codebuilddemo.jpg)
+![The image shows a file upload dialog in the AWS S3 Management Console, with a folder named "CodeBuildDemo" open, displaying files like "buildspec" and "MessageUtil.zip".](https://kodekloud.com/kk-media/image/upload/v1752862596/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-s3-file-upload-codebuilddemo.jpg)
 
 ***
 
@@ -172,15 +172,15 @@ project-root/
 
 1. In the AWS Console, open CodeBuild and click **Create build project**.
 
-![The image shows the AWS CodeBuild interface for creating a new build project, with fields for project name and optional description. The project name "codebuild-demo-project" is entered in the text box.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862597/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-new-project-interface.jpg)
+![The image shows the AWS CodeBuild interface for creating a new build project, with fields for project name and optional description. The project name "codebuild-demo-project" is entered in the text box.](https://kodekloud.com/kk-media/image/upload/v1752862597/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-new-project-interface.jpg)
 
 2. Under **Source**, choose **Amazon S3**.
 
-![The image shows a screenshot of the AWS CodeBuild console, where a user is selecting a source provider from options like AWS CodeCommit, Amazon S3, GitHub, and Bitbucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862599/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-console-source-provider-selection.jpg)
+![The image shows a screenshot of the AWS CodeBuild console, where a user is selecting a source provider from options like AWS CodeCommit, Amazon S3, GitHub, and Bitbucket.](https://kodekloud.com/kk-media/image/upload/v1752862599/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-console-source-provider-selection.jpg)
 
 3. Select your input bucket and set **Object key** to `MessageUtil.zip`.
 
-![The image shows an AWS CodeBuild configuration screen where the source provider is set to Amazon S3, with a specified bucket and object key for a file named "MessageUtil.zip".](../../../../images/kodekloud.com/kk-media/image/upload/v1752862600/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-s3-configuration-messageutil.jpg)
+![The image shows an AWS CodeBuild configuration screen where the source provider is set to Amazon S3, with a specified bucket and object key for a file named "MessageUtil.zip".](https://kodekloud.com/kk-media/image/upload/v1752862600/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-s3-configuration-messageutil.jpg)
 
 4. Scroll to **Environment**:
    * **Managed image**
@@ -188,14 +188,14 @@ project-root/
    * **Runtime**: Standard
    * **Image**: x86\_64 standard: 3.0
 
-![The image shows a screenshot of the AWS CodeBuild interface, where a user is selecting a runtime image and configuring a service role for a project.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862601/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-runtime-image-configuration.jpg)
+![The image shows a screenshot of the AWS CodeBuild interface, where a user is selecting a runtime image and configuring a service role for a project.](https://kodekloud.com/kk-media/image/upload/v1752862601/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-runtime-image-configuration.jpg)
 
 5. Under **Buildspec**, choose **Use a buildspec file**.
 6. For **Artifacts**, select **Amazon S3** and pick your output bucket.
 
-![The image shows a screenshot of the AWS CodeBuild console, specifically the section for configuring build specifications, batch configuration, and artifacts. It includes options for using a buildspec file or inserting build commands directly.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862602/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-console-build-specifications.jpg)
+![The image shows a screenshot of the AWS CodeBuild console, specifically the section for configuring build specifications, batch configuration, and artifacts. It includes options for using a buildspec file or inserting build commands directly.](https://kodekloud.com/kk-media/image/upload/v1752862602/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-console-build-specifications.jpg)
 
-![The image shows an AWS CodeBuild configuration screen where a user is setting up a project with options for bucket name, semantic versioning, path, namespace type, and artifact packaging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862603/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-configuration-screen-project.jpg)
+![The image shows an AWS CodeBuild configuration screen where a user is setting up a project with options for bucket name, semantic versioning, path, namespace type, and artifact packaging.](https://kodekloud.com/kk-media/image/upload/v1752862603/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-configuration-screen-project.jpg)
 
 7. Click **Create build project** to finalize.
 
@@ -205,7 +205,7 @@ project-root/
 
 1. Select your newly created project and click **Start build**.
 
-![The image shows an AWS CodeBuild project interface with configuration details for a project named "codebuild-demo-project." It includes options to start a build, edit, or delete the project, and displays build history and configuration settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862604/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-project-interface-demo.jpg)
+![The image shows an AWS CodeBuild project interface with configuration details for a project named "codebuild-demo-project." It includes options to start a build, edit, or delete the project, and displays build history and configuration settings.](https://kodekloud.com/kk-media/image/upload/v1752862604/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-project-interface-demo.jpg)
 
 2. Watch the real-time logs for each build phase:
 
@@ -219,7 +219,7 @@ project-root/
 
 3. Upon completion, you’ll see **Succeeded** status and your JAR files in the output bucket.
 
-![The image shows an AWS CodeBuild interface with a build project that has successfully completed. The build status is marked as "Succeeded," and details such as start and end times are displayed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862606/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-successful-build-project.jpg)
+![The image shows an AWS CodeBuild interface with a build project that has successfully completed. The build status is marked as "Succeeded," and details such as start and end times are displayed.](https://kodekloud.com/kk-media/image/upload/v1752862606/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeBuild-Demo/aws-codebuild-successful-build-project.jpg)
 
 ***
 

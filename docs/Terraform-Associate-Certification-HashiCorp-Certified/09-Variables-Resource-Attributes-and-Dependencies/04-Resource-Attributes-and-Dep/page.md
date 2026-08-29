@@ -46,9 +46,7 @@ random_pet.my-pet: Creating...
 local_file.pet: Creating...
 ```
 
-<Callout icon="lightbulb">
-  Using variables in Terraform not only makes your configurations more readable but also simplifies maintenance when scaling your infrastructure.
-</Callout>
+> **lightbulb** Using variables in Terraform not only makes your configurations more readable but also simplifies maintenance when scaling your infrastructure.
 
 ***
 
@@ -158,17 +156,13 @@ $ terraform apply -var "type=t2.medium"
 
 Terraform will use `t2.medium` as the final value for `type` since command-line flags have the highest precedence.
 
-<Callout icon="lightbulb">
-  Always be aware of the variable precedence in Terraform to avoid unexpected behaviors during deployment. Using dedicated variable files or environment variables can improve consistency across different environments.
-</Callout>
+> **lightbulb** Always be aware of the variable precedence in Terraform to avoid unexpected behaviors during deployment. Using dedicated variable files or environment variables can improve consistency across different environments.
 
 ***
 
 That concludes our article on variables in Terraform. Understanding how to define, reference, and override variables is essential for creating flexible and reusable Terraform configurations. Happy building!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/cca81ade-f05a-42b2-af56-1926cade6582/lesson/06a9906c-1823-4986-a292-ada617ddd68b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/cca81ade-f05a-42b2-af56-1926cade6582/lesson/06a9906c-1823-4986-a292-ada617ddd68b)
 
 
 # Resource Attributes and Dep

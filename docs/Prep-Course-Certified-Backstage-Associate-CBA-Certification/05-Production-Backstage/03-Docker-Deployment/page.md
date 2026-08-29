@@ -47,11 +47,9 @@ Tips:
 * If you see a sign-in resolver error, check the catalog contents and the resolver type you configured.
 * Test locally by clearing cookies and running the full sign-in flow.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/d82fc857-4b5c-42a7-ab46-3772f749a741/lesson/4f04b6c3-8db2-41b9-95b1-c073d12298e2" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/d82fc857-4b5c-42a7-ab46-3772f749a741/lesson/4f04b6c3-8db2-41b9-95b1-c073d12298e2)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/d82fc857-4b5c-42a7-ab46-3772f749a741/lesson/12c3e3e6-cee7-4e60-a3fc-67e323f12a35" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/d82fc857-4b5c-42a7-ab46-3772f749a741/lesson/12c3e3e6-cee7-4e60-a3fc-67e323f12a35)
 
 
 # Docker Deployment
@@ -64,9 +62,7 @@ This guide shows how to package a Backstage backend into a Docker container so y
 
 Key terms: Backstage Docker image, Docker BuildKit, Yarn v3 (Berry), backend bundle, CI/CD build agents.
 
-<Callout icon="lightbulb">
-  Before building, make sure you understand where the Docker build context should be. The Dockerfile expects the backend bundle artifacts under `packages/backend/dist` in the build context (usually the repository root).
-</Callout>
+> **lightbulb** Before building, make sure you understand where the Docker build context should be. The Dockerfile expects the backend bundle artifacts under `packages/backend/dist` in the build context (usually the repository root).
 
 ## Where the Dockerfile lives
 

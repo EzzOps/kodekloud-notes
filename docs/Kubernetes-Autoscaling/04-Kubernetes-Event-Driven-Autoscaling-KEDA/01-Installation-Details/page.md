@@ -90,9 +90,7 @@ Links and References
 * [metrics-server](https://github.com/kubernetes-sigs/metrics-server)
 * [Prometheus Adapter (custom/external metrics)](https://github.com/kubernetes-sigs/prometheus-adapter)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/13b7ea01-bb9e-497b-a190-aafcddaa3f11/lesson/a0518bc3-09b2-441b-bf02-7718e42a327a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/13b7ea01-bb9e-497b-a190-aafcddaa3f11/lesson/a0518bc3-09b2-441b-bf02-7718e42a327a)
 
 
 # Installation Details
@@ -146,13 +144,9 @@ Quick reference table — resources installed and how to check them
 
 Important notes on RBAC and RoleBindings
 
-<Callout icon="lightbulb">
-  RoleBindings can reference ClusterRoles. This is useful when you want to grant cluster-level permissions but restrict the effect to a specific namespace by creating a RoleBinding in that namespace that references a ClusterRole.
-</Callout>
+> **lightbulb** RoleBindings can reference ClusterRoles. This is useful when you want to grant cluster-level permissions but restrict the effect to a specific namespace by creating a RoleBinding in that namespace that references a ClusterRole.
 
-<Callout icon="warning">
-  Installing KEDA's CRDs and cluster-level resources requires cluster-wide permissions (for example, `cluster-admin` or equivalent). Ensure you run Helm with an account that has the necessary RBAC privileges.
-</Callout>
+> **warning** Installing KEDA's CRDs and cluster-level resources requires cluster-wide permissions (for example, `cluster-admin` or equivalent). Ensure you run Helm with an account that has the necessary RBAC privileges.
 
 Typical Helm installation flow (high level)
 
@@ -217,8 +211,6 @@ Best practices and troubleshooting tips
 Summary
 Installing KEDA with Helm creates a small set of cluster and namespace resources (CRDs, deployments, ServiceAccounts, Roles, RoleBindings, and an APIService) that allow KEDA to observe external event sources, expose metrics via the external metrics API, and drive scaling through HPAs and the KEDA operator. Use the verification commands above to confirm a successful installation and to troubleshoot common issues.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/2274b91d-9b99-4611-8d83-86efd2ed3f77" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/2274b91d-9b99-4611-8d83-86efd2ed3f77)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/a6803172-1a10-4637-a1ff-0019932958e2" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/a6803172-1a10-4637-a1ff-0019932958e2)

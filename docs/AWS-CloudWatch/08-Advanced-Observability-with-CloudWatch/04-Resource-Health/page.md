@@ -37,7 +37,7 @@ AWS CloudWatch Resource Health provides an automated, unified solution for disco
 2. Create a Resource Health dashboard and apply custom filters for your critical workloads.
 3. Explore automated alerts and integrate with Amazon SNS or third-party tools for notifications.
 
-![The image is an infographic about "Resource Health in AWS CloudWatch," highlighting features like automated discovery, centralized views, customizable filters, and no additional charges for AWS customers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862355/notes-assets/images/AWS-CloudWatch-Resource-Health/resource-health-aws-cloudwatch-infographic.jpg)
+![The image is an infographic about "Resource Health in AWS CloudWatch," highlighting features like automated discovery, centralized views, customizable filters, and no additional charges for AWS customers.](https://kodekloud.com/kk-media/image/upload/v1752862355/notes-assets/images/AWS-CloudWatch-Resource-Health/resource-health-aws-cloudwatch-infographic.jpg)
 
 ## References
 

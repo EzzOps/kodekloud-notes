@@ -289,11 +289,11 @@ In this article, we explore Cursor—a standalone application built as a fork of
 
 When you launch Cursor and press Ctrl+I, you'll see options such as Add Files, Edit Refactor, and Add Code. The tool also allows you to switch between models like Cloud 3.5 Sonnet, GPT-4, 40 Mini, 01 Mini, 01 Preview, and Cursor Small. For illustration, we scaffold a typical Python application, with Cursor automatically generating the necessary files—much like what [GitHub Copilot](https://github.com/features/copilot) might do.
 
-![The image shows a code editor with a project structure on the left and a .gitignore file open in the main window. A pop-up window lists steps for setting up a Python project, including creating files like pyproject.toml and \`requirements.txt'.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857082/notes-assets/images/AI-Assisted-Development-A-Quick-Look-Cursor/code-editor-python-project-setup.jpg)
+![The image shows a code editor with a project structure on the left and a .gitignore file open in the main window. A pop-up window lists steps for setting up a Python project, including creating files like pyproject.toml and \`requirements.txt'.](https://kodekloud.com/kk-media/image/upload/v1752857082/notes-assets/images/AI-Assisted-Development-A-Quick-Look-Cursor/code-editor-python-project-setup.jpg)
 
 After accepting the generated files, you can inspect the project structure. The folder includes a source directory (src) with your project files, such as `main.py`.
 
-![The image shows a code editor with a project directory on the left and a .gitignore file open on the right, listing various files and directories to be ignored by Git.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857082/notes-assets/images/AI-Assisted-Development-A-Quick-Look-Cursor/code-editor-gitignore-file.jpg)
+![The image shows a code editor with a project directory on the left and a .gitignore file open on the right, listing various files and directories to be ignored by Git.](https://kodekloud.com/kk-media/image/upload/v1752857082/notes-assets/images/AI-Assisted-Development-A-Quick-Look-Cursor/code-editor-gitignore-file.jpg)
 
 ## The Generated Python Application
 

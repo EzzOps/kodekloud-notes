@@ -8,9 +8,7 @@ In this guide, you'll learn how to inspect the resources deployed within your st
 
 After you deploy your resources, navigate back to your stack and select the "resources" section. This section displays all resources created during your deployment process.
 
-<Callout icon="lightbulb">
-  You can quickly identify specific outputs and details about each resource, including vendor-specific information from AWS, which is also stored and displayed in Spacelift.
-</Callout>
+> **lightbulb** You can quickly identify specific outputs and details about each resource, including vendor-specific information from AWS, which is also stored and displayed in Spacelift.
 
 Within the resources list, several critical elements are visible:
 
@@ -29,6 +27,4 @@ By following these steps, all pertinent information about your deployed resource
 
 For more details on managing resources and viewing deployment outputs, consult the [Spacelift Documentation](https://spacelift.io/docs).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/74dbb4df-716f-4fa2-92e9-a223a3a697ca/lesson/ff6fcc4b-4746-4d78-8057-25c5cd7a3889" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/74dbb4df-716f-4fa2-92e9-a223a3a697ca/lesson/ff6fcc4b-4746-4d78-8057-25c5cd7a3889)

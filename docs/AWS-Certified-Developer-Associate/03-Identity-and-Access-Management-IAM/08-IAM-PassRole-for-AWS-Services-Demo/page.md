@@ -51,13 +51,13 @@ Next, using either **User One** or **User Two**, navigate to the EC2 dashboard a
 4. Click **Modify IAM Role**.
 5. Search for **"EC2 S3 Access"** and assign it to the instance.
 
-![The image shows an AWS console interface where a user is modifying an IAM role for an EC2 instance. The user is selecting from a list of IAM roles that include options like "demo-ec2-codedeploy" and "EC2S3Access."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858956/notes-assets/images/AWS-Certified-Developer-Associate-IAM-PassRole-for-AWS-Services-Demo/aws-console-iam-role-ec2.jpg)
+![The image shows an AWS console interface where a user is modifying an IAM role for an EC2 instance. The user is selecting from a list of IAM roles that include options like "demo-ec2-codedeploy" and "EC2S3Access."](https://kodekloud.com/kk-media/image/upload/v1752858956/notes-assets/images/AWS-Certified-Developer-Associate-IAM-PassRole-for-AWS-Services-Demo/aws-console-iam-role-ec2.jpg)
 
 > **lightbulb** When attempting this operation with **User One**, an error message appears stating that they are not authorized to perform the operation. This clearly demonstrates the necessity of having the proper IAM PassRole permission during role assignment.
 
 A similar error will occur for **User Two** if the required permission hasn’t been granted.
 
-![The image shows an AWS console screen with an error message indicating a failure to attach an instance profile due to insufficient permissions. It displays the "Modify IAM role" section for an EC2 instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858958/notes-assets/images/AWS-Certified-Developer-Associate-IAM-PassRole-for-AWS-Services-Demo/aws-console-error-instance-profile.jpg)
+![The image shows an AWS console screen with an error message indicating a failure to attach an instance profile due to insufficient permissions. It displays the "Modify IAM role" section for an EC2 instance.](https://kodekloud.com/kk-media/image/upload/v1752858958/notes-assets/images/AWS-Certified-Developer-Associate-IAM-PassRole-for-AWS-Services-Demo/aws-console-error-instance-profile.jpg)
 
 ## Granting IAM PassRole Permission to a User
 
@@ -87,7 +87,7 @@ To apply this policy:
 4. Switch to the JSON tab and paste the above policy.
 5. Provide a name for the policy (e.g., **pass role EC2 S3 access**) and create it.
 
-![The image shows an AWS Identity and Access Management (IAM) console screen for a user named "user2," displaying their summary, permissions policies, and other access management options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858961/notes-assets/images/AWS-Certified-Developer-Associate-IAM-PassRole-for-AWS-Services-Demo/aws-iam-console-user2-summary.jpg)
+![The image shows an AWS Identity and Access Management (IAM) console screen for a user named "user2," displaying their summary, permissions policies, and other access management options.](https://kodekloud.com/kk-media/image/upload/v1752858961/notes-assets/images/AWS-Certified-Developer-Associate-IAM-PassRole-for-AWS-Services-Demo/aws-iam-console-user2-summary.jpg)
 
 ## Testing the Configuration
 
@@ -96,7 +96,7 @@ After assigning the policy, test the configuration with these steps:
 * Log in as **User One** and attempt to modify the IAM role for an EC2 instance. The error should persist since **User One** does not have the required permissions.
 * Log in as **User Two** and try again. When modifying the IAM role and selecting **"EC2 S3 Access"**, the operation should now succeed.
 
-![The image shows an AWS EC2 console with two running instances listed, both of type t2.micro. The interface displays details like instance ID, status checks, and availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858964/notes-assets/images/AWS-Certified-Developer-Associate-IAM-PassRole-for-AWS-Services-Demo/aws-ec2-console-t2micro-instances.jpg)
+![The image shows an AWS EC2 console with two running instances listed, both of type t2.micro. The interface displays details like instance ID, status checks, and availability zones.](https://kodekloud.com/kk-media/image/upload/v1752858964/notes-assets/images/AWS-Certified-Developer-Associate-IAM-PassRole-for-AWS-Services-Demo/aws-ec2-console-t2micro-instances.jpg)
 
 ## Summary
 

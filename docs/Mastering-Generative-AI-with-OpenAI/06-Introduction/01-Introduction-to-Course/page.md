@@ -52,6 +52,4 @@ By course end, you’ll be ready to design, build, and deploy Generative AI appl
 
 Let’s embark on this exciting journey into the world of Generative AI!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/1d303102-2057-4072-86a3-b3b70be42d75/lesson/674c2892-f78e-4724-90b0-f03607831dd3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/1d303102-2057-4072-86a3-b3b70be42d75/lesson/674c2892-f78e-4724-90b0-f03607831dd3)

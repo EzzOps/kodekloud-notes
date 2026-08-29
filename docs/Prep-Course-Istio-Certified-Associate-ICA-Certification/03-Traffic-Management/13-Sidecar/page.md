@@ -26,9 +26,7 @@ Default sidecar responsibilities include:
   <img alt="The image outlines the behavior of a sidecar proxy, detailing aspects like traffic management by Envoy Proxy, egress policies, mTLS support, and built-in traffic features." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Enable automatic sidecar injection for namespaces that should take advantage of Istio features. You can label a namespace with `istio-injection=enabled` before creating pods to have Envoy injected automatically.
-</Callout>
+> **lightbulb** Enable automatic sidecar injection for namespaces that should take advantage of Istio features. You can label a namespace with `istio-injection=enabled` before creating pods to have Envoy injected automatically.
 
 Controlling sidecar behavior per namespace or per workload is useful when you need fine-grained network segmentation. For example, you may wish to restrict the payments namespace so its workloads only talk to the app namespace and `istio-system`, and deny all other egress.
 
@@ -66,9 +64,7 @@ Notes on host patterns:
 
 Apply the Sidecar with `kubectl apply -f sidecar.yaml` (or your preferred deployment method). Only workloads in the `payments` namespace that have an Envoy sidecar will be affected by this config.
 
-<Callout icon="warning">
-  A `Sidecar` or `PeerAuthentication` resource created in a namespace without Envoy-injected workloads will have no practical effect. Ensure the namespace is labeled for Istio injection or that pods were injected manually.
-</Callout>
+> **warning** A `Sidecar` or `PeerAuthentication` resource created in a namespace without Envoy-injected workloads will have no practical effect. Ensure the namespace is labeled for Istio injection or that pods were injected manually.
 
 ## Enforcing mTLS with PeerAuthentication
 
@@ -147,6 +143,4 @@ This is an important topic for the exam—know how to:
 
 In the next section/demonstration, we’ll apply these resources and observe their effects in a live cluster.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/22f21815-d96e-43d7-b654-21ad88095325" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/22f21815-d96e-43d7-b654-21ad88095325)

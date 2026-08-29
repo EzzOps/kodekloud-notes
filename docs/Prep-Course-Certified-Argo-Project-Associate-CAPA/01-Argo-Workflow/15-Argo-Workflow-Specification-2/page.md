@@ -51,10 +51,8 @@ spec:
         args: ["echo 'Deploying to {{workflow.parameters.environment}}'"]
 ```
 
-<Callout icon="lightbulb">
-  Use `when` for lightweight branching. For more complex logic, combine `when`
+> **lightbulb** Use `when` for lightweight branching. For more complex logic, combine `when`
   with parameters and outputs from previous steps or use conditional templates.
-</Callout>
 
 ***
 
@@ -251,10 +249,8 @@ STEP
 
 With the configured backoff, retries occur at \~5s, \~10s, \~20s (factor applied), capped at 1 minute.
 
-<Callout icon="lightbulb">
-  Use `retryStrategy` for transient failures. Tune `retryPolicy` and backoff to
+> **lightbulb** Use `retryStrategy` for transient failures. Tune `retryPolicy` and backoff to
   match the expected failure profile of your tasks.
-</Callout>
 
 ***
 
@@ -376,11 +372,9 @@ spec:
                 restartPolicy: Never
 ```
 
-<Callout icon="warning">
-  Resource templates require the workflow's ServiceAccount to have permissions
+> **warning** Resource templates require the workflow's ServiceAccount to have permissions
   to create and read the resource types used in your manifest. Ensure RBAC is
   configured (create, get, list, watch) for those resources.
-</Callout>
 
 Best practices:
 
@@ -418,6 +412,4 @@ Links and references
 * Kubernetes Jobs: [https://kubernetes.io/docs/concepts/workloads/controllers/job/](https://kubernetes.io/docs/concepts/workloads/controllers/job/)
 * Kubernetes Deployments: [https://kubernetes.io/docs/concepts/workloads/controllers/deployment/](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/96d16716-0a03-433b-aaf8-d860ba04c30c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/96d16716-0a03-433b-aaf8-d860ba04c30c)

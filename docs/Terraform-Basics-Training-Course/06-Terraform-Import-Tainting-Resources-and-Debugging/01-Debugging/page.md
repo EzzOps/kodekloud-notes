@@ -132,19 +132,15 @@ Terraform follows this strict order of precedence when assigning variable values
 
 Since the command-line flag (`-var`) has the highest precedence in this example, the variable `filename` will ultimately be assigned the value `/root/best-pet.txt`.
 
-<Callout icon="lightbulb">
-  Remember, the order in which variable values are applied ensures predictability in your deployment. This hierarchy allows you to override defaults and maintain control over your configuration settings.
-</Callout>
+> **lightbulb** Remember, the order in which variable values are applied ensures predictability in your deployment. This hierarchy allows you to override defaults and maintain control over your configuration settings.
 
 ***
 
 That's it for this lesson. With these variable assignment techniques, you're ready to build flexible and maintainable Terraform configurations. Now, let's head to the hands-on lab and put these concepts into practice!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/8a48cd5b-2303-43e2-b469-f7b40951d650" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/8a48cd5b-2303-43e2-b469-f7b40951d650)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/a4f921ce-6e6f-4029-b0c0-9d2692f18c88" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/a4f921ce-6e6f-4029-b0c0-9d2692f18c88)
 
 
 # Debugging
@@ -157,9 +153,7 @@ In this article, we explore how to enable and use debugging in Terraform to effe
 
 Terraform allows you to increase the debugging output by setting the environment variable TF\_LOG to one of the available log level values. The supported log levels are: info, warning, error, debug, and trace—with trace providing the most detailed output.
 
-<Callout icon="lightbulb">
-  For the most verbose logging, use TF\_LOG=TRACE. This is particularly useful when facing complex issues that require insight into Terraform's inner workings.
-</Callout>
+> **lightbulb** For the most verbose logging, use TF\_LOG=TRACE. This is particularly useful when facing complex issues that require insight into Terraform's inner workings.
 
 ## Enabling Debugging
 

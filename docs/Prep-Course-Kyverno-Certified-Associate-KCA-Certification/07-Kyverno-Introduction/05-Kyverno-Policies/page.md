@@ -155,9 +155,7 @@ rules:
   <img alt="The image features a question about ensuring the integrity of container images built by a CI/CD pipeline, asked by a character named Alex, under the heading &#x22;Verifying Images.&#x22;" />
 </Frame>
 
-<Callout icon="warning">
-  Image verification is a critical security control. Misconfiguration can block valid deployments or fail to prevent unsigned images. Test `verifyImages` policies in a staging cluster and ensure your CI/CD signs images with the correct keys before enforcing in production.
-</Callout>
+> **warning** Image verification is a critical security control. Misconfiguration can block valid deployments or fail to prevent unsigned images. Test `verifyImages` policies in a staging cluster and ensure your CI/CD signs images with the correct keys before enforcing in production.
 
 Policy scope: Policy vs ClusterPolicy
 
@@ -179,9 +177,7 @@ Best practices (brief)
 * Prefer `mutate` and `generate` when you can auto-correct without blocking developer velocity.
 * Use `verifyImages` to enforce image provenance; integrate signing into CI/CD pipelines.
 
-<Callout icon="lightbulb">
-  Tip: Use labels and selectors in `match` blocks to target only the workloads you intend to manage (for example, `match.resources.kinds: ["Deployment"]` and `match.resources.namespaces: ["production"]`).
-</Callout>
+> **lightbulb** Tip: Use labels and selectors in `match` blocks to target only the workloads you intend to manage (for example, `match.resources.kinds: ["Deployment"]` and `match.resources.namespaces: ["production"]`).
 
 Resources and further reading
 
@@ -191,6 +187,4 @@ Resources and further reading
 
 This lesson gave you a concise introduction to Kyverno’s core rule types: `validate`, `mutate`, `generate`, and `verifyImages`. In subsequent lessons we'll dive deeper into each rule type with hands-on examples, real-world patterns, and production-ready configurations.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/8cf118e1-7ca8-49b6-be5a-af80c331f394/lesson/7bd9d913-7289-4fa0-98b6-bc8d63300981" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/8cf118e1-7ca8-49b6-be5a-af80c331f394/lesson/7bd9d913-7289-4fa0-98b6-bc8d63300981)

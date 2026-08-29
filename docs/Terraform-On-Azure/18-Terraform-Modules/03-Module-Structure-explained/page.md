@@ -153,9 +153,7 @@ Further exploration
 
 Now that you understand what Terraform modules are and why they matter, proceed to the hands-on example and step-by-step module build in the next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/e38de693-04a0-45e9-b67a-9f8d26ac03ee/lesson/4555be4c-7064-4566-bcaa-418117bed43f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/e38de693-04a0-45e9-b67a-9f8d26ac03ee/lesson/4555be4c-7064-4566-bcaa-418117bed43f)
 
 
 # Module Structure explained
@@ -222,9 +220,7 @@ resource "azurerm_storage_account" "this" {
 }
 ```
 
-<Callout icon="lightbulb">
-  Hard-coding an argument inside a module (e.g., `account_tier = "Standard"`) is a valid way to enforce organizational policies. Do this only for properties you intend to make non-configurable for consumers.
-</Callout>
+> **lightbulb** Hard-coding an argument inside a module (e.g., `account_tier = "Standard"`) is a valid way to enforce organizational policies. Do this only for properties you intend to make non-configurable for consumers.
 
 Now we’ll walk through creating two simple modules in Visual Studio Code: a `resource_group` module and a `storage_account` module. These examples illustrate a clean module structure and how to wire modules together from a root module.
 
@@ -397,6 +393,4 @@ This pattern demonstrates:
 
 These resources will help deepen your understanding of modules and provider-specific resources.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/e38de693-04a0-45e9-b67a-9f8d26ac03ee/lesson/3d3a0851-93fc-4968-8ab1-0ee0cfb90463" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/e38de693-04a0-45e9-b67a-9f8d26ac03ee/lesson/3d3a0851-93fc-4968-8ab1-0ee0cfb90463)

@@ -12,9 +12,7 @@ In this lesson, we enhance our Jenkins Pipeline by adding multiple stages to bui
 
 Previously, we configured the Maven tool and printed the Maven version. In that example, the Pipeline featured only an "Echo Version" stage while the build stage was commented out. Refer to the following Jenkins dashboard snapshot:
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying the status of a "hello-world-pipeline" with stages like "Tool Install" and "Echo Version" marked as completed. The interface includes options for configuring and managing the pipeline.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879479/notes-assets/images/Jenkins-For-Beginners-Build-and-Test-via-Pipeline/jenkins-dashboard-hello-world-pipeline.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying the status of a "hello-world-pipeline" with stages like "Tool Install" and "Echo Version" marked as completed. The interface includes options for configuring and managing the pipeline.](https://kodekloud.com/kk-media/image/upload/v1752879479/notes-assets/images/Jenkins-For-Beginners-Build-and-Test-via-Pipeline/jenkins-dashboard-hello-world-pipeline.jpg)
 
 In this updated Pipeline, we add two new stages:
 
@@ -93,9 +91,7 @@ pipeline {
 }
 ```
 
-<Callout icon="lightbulb">
-  The Git plugin is used to fetch source code from a self-hosted Git service, which, despite a URL similar to GitHub, is actually served by Gitea.
-</Callout>
+> **lightbulb** The Git plugin is used to fetch source code from a self-hosted Git service, which, despite a URL similar to GitHub, is actually served by Gitea.
 
 ***
 
@@ -103,15 +99,11 @@ pipeline {
 
 In this lesson, we use Gitea as our self-hosted Git service. Below is a screenshot showcasing the Dasher Technologies Git service interface:
 
-<Frame>
-  ![The image is a webpage for "Dasher Technologies," promoting a self-hosted Git service with the tagline "Git with a cup of tea." It highlights features like easy installation and cross-platform compatibility.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879480/notes-assets/images/Jenkins-For-Beginners-Build-and-Test-via-Pipeline/dasher-technologies-git-service.jpg)
-</Frame>
+![The image is a webpage for "Dasher Technologies," promoting a self-hosted Git service with the tagline "Git with a cup of tea." It highlights features like easy installation and cross-platform compatibility.](https://kodekloud.com/kk-media/image/upload/v1752879480/notes-assets/images/Jenkins-For-Beginners-Build-and-Test-via-Pipeline/dasher-technologies-git-service.jpg)
 
 After signing in with the credentials (username: gitty-admin), navigate to the Dasher Team organization and open the "Jenkins Hello World" repository. This repository contains a Spring Boot-based Java application designed for Jenkins training. For an overview of the repository, view the screenshot below:
 
-<Frame>
-  ![The image shows a GitHub repository page for "jenkins-hello-world" with a list of files and recent commits. The README section describes a Springboot Hello World App used for Jenkins training.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879482/notes-assets/images/Jenkins-For-Beginners-Build-and-Test-via-Pipeline/github-repo-jenkins-hello-world.jpg)
-</Frame>
+![The image shows a GitHub repository page for "jenkins-hello-world" with a list of files and recent commits. The README section describes a Springboot Hello World App used for Jenkins training.](https://kodekloud.com/kk-media/image/upload/v1752879482/notes-assets/images/Jenkins-For-Beginners-Build-and-Test-via-Pipeline/github-repo-jenkins-hello-world.jpg)
 
 Since this project is built with Maven, we utilize Maven commands to generate the application JAR file and execute tests.
 
@@ -271,16 +263,10 @@ Using this Pipeline, we built the application and executed unit tests in separat
 
 Refer to the following Jenkins dashboard snapshot to see an overview of the successful Pipeline execution:
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying the status of a "hello-world-pipeline" with multiple stages, including "Tool Install," "Echo Version," "Build," and "Unit Test." Some stages are marked as successful with green checkmarks, while others have failed with red crosses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879483/notes-assets/images/Jenkins-For-Beginners-Build-and-Test-via-Pipeline/jenkins-dashboard-hello-world-pipeline-3.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying the status of a "hello-world-pipeline" with multiple stages, including "Tool Install," "Echo Version," "Build," and "Unit Test." Some stages are marked as successful with green checkmarks, while others have failed with red crosses.](https://kodekloud.com/kk-media/image/upload/v1752879483/notes-assets/images/Jenkins-For-Beginners-Build-and-Test-via-Pipeline/jenkins-dashboard-hello-world-pipeline-3.jpg)
 
 Thank you for following along with this lesson.
 
-<Callout icon="lightbulb">
-  Stay tuned for our upcoming session, where we will integrate version control practices and demonstrate how to implement a Node.js application using a similarly structured Pipeline.
-</Callout>
+> **lightbulb** Stay tuned for our upcoming session, where we will integrate version control practices and demonstrate how to implement a Node.js application using a similarly structured Pipeline.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/b4f582ef-4bf9-4cb9-8a31-6d580a94000c/lesson/edcdd1e5-6d7e-494d-a352-825794e77a70" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/b4f582ef-4bf9-4cb9-8a31-6d580a94000c/lesson/edcdd1e5-6d7e-494d-a352-825794e77a70)

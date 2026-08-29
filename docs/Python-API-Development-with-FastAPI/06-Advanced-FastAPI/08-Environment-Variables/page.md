@@ -38,15 +38,11 @@ Hardcoding the database URL leads to two significant problems:
 
 1. If the code is pushed to a public repository, your credentials are exposed to...
 
-<Callout icon="triangle-alert">
-  If the code is pushed to a public repository, your credentials are exposed to everyone.
-</Callout>
+> **triangle-alert** If the code is pushed to a public repository, your credentials are exposed to everyone.
 
 2. The static configuration ties the code to a single environment, forcing manua...
 
-<Callout icon="triangle-alert">
-  The static configuration ties the code to a single environment, forcing manual updates for production deployments.
-</Callout>
+> **triangle-alert** The static configuration ties the code to a single environment, forcing manual updates for production deployments.
 
 Similarly, hardcoding OAuth secret keys can lead to security vulnerabilities. For example:
 

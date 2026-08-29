@@ -65,9 +65,7 @@ Behavior notes
 * Other containers in the same Pod (for example, an Ubuntu-based sidecar) still must comply with the `Capabilities` control.
 * Use image patterns carefully to avoid accidentally broadening the exception.
 
-<Callout icon="warning">
-  Keep exceptions as narrow, well-documented, and time-limited as possible. Exceptions expand risk when left open or when they are overly broad (for example, matching many image names or many namespaces).
-</Callout>
+> **warning** Keep exceptions as narrow, well-documented, and time-limited as possible. Exceptions expand risk when left open or when they are overly broad (for example, matching many image names or many namespaces).
 
 Best practices and recap
 
@@ -88,9 +86,7 @@ References and further reading
 
 That concludes this lesson on creating Pod Security exceptions with Kyverno.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/26478d8e-69b0-4b48-bc9a-173ba8b28d7b/lesson/890acc40-3bb3-48e1-a455-1a44633dc0ba" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/26478d8e-69b0-4b48-bc9a-173ba8b28d7b/lesson/890acc40-3bb3-48e1-a455-1a44633dc0ba)
 
 
 # Policy Exceptions
@@ -136,9 +132,7 @@ To enable PolicyExceptions, set two flags in the Kyverno admission controller de
 
 Kyverno requires a namespace to control who can create exceptions. You can set `--exceptionNamespace` to `*` to allow exceptions from any namespace, but that is only appropriate in less restrictive environments.
 
-<Callout icon="lightbulb">
-  Enable the feature by adding `--enablePolicyException=true` and set `--exceptionNamespace` (or `*`) in the Kyverno admission controller flags. The namespace value controls where PolicyException resources may be created.
-</Callout>
+> **lightbulb** Enable the feature by adding `--enablePolicyException=true` and set `--exceptionNamespace` (or `*`) in the Kyverno admission controller flags. The namespace value controls where PolicyException resources may be created.
 
 <Frame>
   <img alt="The image provides instructions on enabling PolicyException in Kyverno Admission Controller Deployment by setting two flags: --enablePolicyException and --exceptionNamespace. It highlights a key point about allowing resources in all namespaces." />
@@ -292,9 +286,7 @@ Table: Common Kyverno admission controller flags for PolicyExceptions
 | `--enablePolicyException` | Enable PolicyException feature                         | `--enablePolicyException=true`                           |
 | `--exceptionNamespace`    | Namespace(s) allowed to host PolicyException resources | `--exceptionNamespace=delta` or `--exceptionNamespace=*` |
 
-<Callout icon="warning">
-  Setting `--exceptionNamespace=*` allows PolicyExceptions from any namespace. Use this only in trusted or non-production environments — wildcard exceptions increase risk.
-</Callout>
+> **warning** Setting `--exceptionNamespace=*` allows PolicyExceptions from any namespace. Use this only in trusted or non-production environments — wildcard exceptions increase risk.
 
 Table: PolicyException core fields
 
@@ -323,8 +315,6 @@ Further reading and references
 
 Now that you understand how PolicyExceptions work, you can create a controlled exception for Alex's `important-tool` deployment without changing the central security policy.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/26478d8e-69b0-4b48-bc9a-173ba8b28d7b/lesson/79e8a7d6-2f6b-4d40-a79f-4e35741befab" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/26478d8e-69b0-4b48-bc9a-173ba8b28d7b/lesson/79e8a7d6-2f6b-4d40-a79f-4e35741befab)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/26478d8e-69b0-4b48-bc9a-173ba8b28d7b/lesson/3ecd3f0f-384a-4574-99b0-d4307cfcecca" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/26478d8e-69b0-4b48-bc9a-173ba8b28d7b/lesson/3ecd3f0f-384a-4574-99b0-d4307cfcecca)

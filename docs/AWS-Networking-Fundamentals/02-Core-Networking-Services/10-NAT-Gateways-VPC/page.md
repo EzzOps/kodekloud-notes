@@ -27,7 +27,7 @@ A NAT Gateway is a fully managed AWS service that allows instances in private su
 * Requires an Internet Gateway on the VPC for upstream connectivity
 * Elastic IP–backed for consistent public IPs
 
-![The image is a diagram illustrating a NAT Gateway setup within a VPC, showing four availability zones, each with a connection to the internet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863293/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC/nat-gateway-vpc-setup-diagram.jpg)
+![The image is a diagram illustrating a NAT Gateway setup within a VPC, showing four availability zones, each with a connection to the internet.](https://kodekloud.com/kk-media/image/upload/v1752863293/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC/nat-gateway-vpc-setup-diagram.jpg)
 
 ## Deployment Steps
 
@@ -71,7 +71,7 @@ A NAT Gateway is a fully managed AWS service that allows instances in private su
 * **AZ Isolation**: Deploy one per Availability Zone (AZ) for high availability.
 * **Billing**: Hourly NAT Gateway charge + per GB data processed.
 
-![The image is a summary of NAT Gateways, highlighting their function, deployment on public subnets, use of Elastic IPs, and AZ-reliant service requirements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863294/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC/nat-gateways-summary-elastic-ips.jpg)
+![The image is a summary of NAT Gateways, highlighting their function, deployment on public subnets, use of Elastic IPs, and AZ-reliant service requirements.](https://kodekloud.com/kk-media/image/upload/v1752863294/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC/nat-gateways-summary-elastic-ips.jpg)
 
 ## Cost Considerations
 
@@ -90,7 +90,7 @@ A NAT Gateway is a fully managed AWS service that allows instances in private su
 * **High Availability**: One NAT Gateway per AZ.
 * **Management & Billing**: AWS-managed; pay hourly + per GB.
 
-![The image is a summary slide with points about NAT Gateway, including routing for private subnets, AWS management, and charging details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863295/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC/nat-gateway-summary-routing-aws.jpg)
+![The image is a summary slide with points about NAT Gateway, including routing for private subnets, AWS management, and charging details.](https://kodekloud.com/kk-media/image/upload/v1752863295/notes-assets/images/AWS-Networking-Fundamentals-NAT-Gateways-VPC/nat-gateway-summary-routing-aws.jpg)
 
 ## Links and References
 

@@ -38,9 +38,7 @@ diagnosticMode:
     - sleep
 ```
 
-<Callout icon="lightbulb">
-  Customize `storageClass` and `imagePullSecrets` to match your Kubernetes environment.
-</Callout>
+> **lightbulb** Customize `storageClass` and `imagePullSecrets` to match your Kubernetes environment.
 
 ***
 
@@ -56,9 +54,7 @@ After installation, click **View Helm Release** in Lens to explore all resources
 | StatefulSet    | Manages Cassandra pods with storage   |
 | ConfigMap      | Configuration for Cassandra           |
 
-<Frame>
-  ![The image shows a Kubernetes dashboard in Minikube, displaying details of a Cassandra StatefulSet, including its status, labels, and resource usage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881204/notes-assets/images/Lens-Kubernetes-IDE-Using-Helm-Charts/kubernetes-dashboard-minikube-cassandra-statefulset.jpg)
-</Frame>
+![The image shows a Kubernetes dashboard in Minikube, displaying details of a Cassandra StatefulSet, including its status, labels, and resource usage.](https://kodekloud.com/kk-media/image/upload/v1752881204/notes-assets/images/Lens-Kubernetes-IDE-Using-Helm-Charts/kubernetes-dashboard-minikube-cassandra-statefulset.jpg)
 
 Lens lets you edit metadata (labels, annotations) on the fly and view logs, metrics, and YAML definitions.
 
@@ -105,9 +101,7 @@ cqlsh -u cassandra -p $CASSANDRA_PASSWORD 127.0.0.1 9042
 
 [cassandra-helm]: https://github.com/bitnami/charts/tree/master/bitnami/cassandra
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/lens-kubernetes-ide/module/5612678e-a690-4e4e-b43d-966183dffdbf/lesson/9fc751f1-d8b5-4bd5-abb5-6c034f76da99" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/lens-kubernetes-ide/module/5612678e-a690-4e4e-b43d-966183dffdbf/lesson/9fc751f1-d8b5-4bd5-abb5-6c034f76da99)
 
 
 # Course Introduction
@@ -135,13 +129,11 @@ By the end of this lesson, you will be able to:
 * Connect to your LKE clusters using kubectl
 * Deploy and manage applications on LKE
 
-<Callout icon="lightbulb">
-  Before you begin, ensure you have:
+> **lightbulb** Before you begin, ensure you have:
 
   * A Linode account
   * kubectl installed (see [Kubectl Installation Guide](https://kubernetes.io/docs/tasks/tools/))
   * Basic familiarity with Kubernetes concepts
-</Callout>
 
 ## Managed vs Self-Managed Kubernetes
 
@@ -159,6 +151,4 @@ By the end of this lesson, you will be able to:
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Kubectl Installation Guide](https://kubernetes.io/docs/tasks/tools/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/c530412c-19ac-4b5a-a852-d025b095a75c/lesson/31143899-7ded-48d9-95c1-5c42433aca37" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/c530412c-19ac-4b5a-a852-d025b095a75c/lesson/31143899-7ded-48d9-95c1-5c42433aca37)

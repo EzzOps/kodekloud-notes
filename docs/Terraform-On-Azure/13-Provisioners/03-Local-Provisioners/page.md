@@ -132,13 +132,9 @@ DefaultEndpointsProtocol=https;AccountName=salocalprov2026;AccountKey=ABCDEFGHIJ
 
 This demonstrates capturing a provider attribute and storing it locally using a local provisioner.
 
-<Callout icon="lightbulb">
-  Local provisioners are best for orchestration or integration steps (e.g., saving outputs locally, invoking CI/CD pipelines, or sending notifications). They are not a substitute for configuration management on created resources.
-</Callout>
+> **lightbulb** Local provisioners are best for orchestration or integration steps (e.g., saving outputs locally, invoking CI/CD pipelines, or sending notifications). They are not a substitute for configuration management on created resources.
 
-<Callout icon="warning">
-  Avoid using provisioners for critical configuration or secrets handling. Sensitive values written locally may be stored in plaintext unless handled carefully; using `nonsensitive()` forces Terraform to expose values that would otherwise be masked—use with caution.
-</Callout>
+> **warning** Avoid using provisioners for critical configuration or secrets handling. Sensitive values written locally may be stored in plaintext unless handled carefully; using `nonsensitive()` forces Terraform to expose values that would otherwise be masked—use with caution.
 
 Considerations before using provisioners
 
@@ -156,6 +152,4 @@ Further reading and references
 
 That's how the `local-exec` provisioner works and how you can use it to capture and persist resource outputs on the Terraform host.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/cb34375e-505a-4794-a260-d12aeba6440e/lesson/f340efec-310e-4ba6-8fd7-009f973460d4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/cb34375e-505a-4794-a260-d12aeba6440e/lesson/f340efec-310e-4ba6-8fd7-009f973460d4)

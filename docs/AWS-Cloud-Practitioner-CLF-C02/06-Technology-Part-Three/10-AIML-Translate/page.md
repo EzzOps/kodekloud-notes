@@ -10,7 +10,7 @@ Amazon Translate is designed for simplicity and high accuracy, making it an idea
 
 Below is the icon for Amazon Translate. Note that even though the icon visually represents an English phrase transitioning into a language such as Japanese or Chinese, this is simply a cue illustrating its translation capabilities:
 
-![The image outlines Amazon Translate's features: Neural Machine Translation technology, various features, and text translation capabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862024/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Translate/frame_70.jpg)
+![The image outlines Amazon Translate's features: Neural Machine Translation technology, various features, and text translation capabilities.](https://kodekloud.com/kk-media/image/upload/v1752862024/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Translate/frame_70.jpg)
 
 > **lightbulb** Amazon Translate provides real-time translations, batch processing, support for a wide variety of language transcripts, and versatility in handling multiple text formats—even when the target language uses a different alphabet.
 
@@ -25,7 +25,7 @@ Amazon Translate is ideally suited for a range of business and consumer applicat
 
 The diagram below visualizes these general use cases:
 
-![The image illustrates Amazon Translate's general use cases: content localization, customer support, social media monitoring, and e-learning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862025/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Translate/frame_90.jpg)
+![The image illustrates Amazon Translate's general use cases: content localization, customer support, social media monitoring, and e-learning.](https://kodekloud.com/kk-media/image/upload/v1752862025/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Translate/frame_90.jpg)
 
 ## Business Benefits
 
@@ -37,7 +37,7 @@ From a business perspective, Amazon Translate offers several key advantages:
 
 For existing users of the AWS ecosystem, Amazon Translate stands out due to its compatibility and distinction from other natural language processing (NLP) tools. The diagram below details these integration benefits and differentiation factors:
 
-![The image highlights reasons to choose Amazon Translate, emphasizing its distinction from other NLP tools and its accuracy and customization features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862026/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Translate/frame_140.jpg)
+![The image highlights reasons to choose Amazon Translate, emphasizing its distinction from other NLP tools and its accuracy and customization features.](https://kodekloud.com/kk-media/image/upload/v1752862026/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Translate/frame_140.jpg)
 
 ## Summary
 
@@ -45,6 +45,6 @@ Amazon Translate harnesses neural machine translation technology to convert text
 
 We hope this lesson has provided a clear and comprehensive understanding of Amazon Translate. Stay tuned for our next article where we delve deeper into AWS AI/ML services.
 
-![The image is a conclusion slide listing topics: Neural Machine Translation technology, features and text translation, content localization and customer support, social media monitoring, and e-learning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862027/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Translate/frame_170.jpg)
+![The image is a conclusion slide listing topics: Neural Machine Translation technology, features and text translation, content localization and customer support, social media monitoring, and e-learning.](https://kodekloud.com/kk-media/image/upload/v1752862027/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Translate/frame_170.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-cloud-practitioner-clf-c02/module/bc372a48-ec05-4d1c-a3ef-e6b3ac1caf48/lesson/007b5be3-a420-49b8-9ffc-055948d22ec7)

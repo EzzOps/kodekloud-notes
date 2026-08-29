@@ -14,9 +14,7 @@ Answer: [t-SNE](https://scikit-learn.org/stable/modules/generated/sklearn.manifo
 
 These nonlinear dimensionality-reduction techniques are the most effective ways to visualize relationships between concepts in high-dimensional embedding spaces. They project high-dimensional token or sentence embeddings into 2D or 3D while preserving neighborhood (local) relationships, enabling inspection of semantic similarity, clustering, and concept separation.
 
-<Callout icon="lightbulb">
-  Use [UMAP](https://umap-learn.readthedocs.io/en/latest/) or [t-SNE](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html) to explore semantic clusters in embedding spaces. For exploratory visualization, UMAP is typically faster and preserves more global structure; t-SNE often produces clearer local clusters but can be slower and requires careful tuning of perplexity.
-</Callout>
+> **lightbulb** Use [UMAP](https://umap-learn.readthedocs.io/en/latest/) or [t-SNE](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html) to explore semantic clusters in embedding spaces. For exploratory visualization, UMAP is typically faster and preserves more global structure; t-SNE often produces clearer local clusters but can be slower and requires careful tuning of perplexity.
 
 Why t-SNE / UMAP are preferred over the other listed options
 

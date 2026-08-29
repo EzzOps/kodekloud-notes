@@ -22,9 +22,7 @@ This section assumes you have a basic familiarity with Kubernetes concepts. We'l
 | Tool survey            | How Helm, Kustomize, Operators, OCI bundles, and GitOps address packaging | Enables informed tool selection for teams                   |
 | Hands-on packages      |               The five categories of packages we'll install and configure | Practical, reproducible experience for cluster management   |
 
-<Callout icon="lightbulb">
-  This section is geared toward operators and engineers who know basic Kubernetes primitives (Pods, Deployments, Services). If you need a quick refresher, see the [Kubernetes documentation](https://kubernetes.io/docs/). We'll keep examples focused on package composition and lifecycle, not introductory cluster setup.
-</Callout>
+> **lightbulb** This section is geared toward operators and engineers who know basic Kubernetes primitives (Pods, Deployments, Services). If you need a quick refresher, see the [Kubernetes documentation](https://kubernetes.io/docs/). We'll keep examples focused on package composition and lifecycle, not introductory cluster setup.
 
 We will evaluate whether current tooling meets the needs of modern Kubernetes operations, considering aspects like reproducibility, distribution formats (OCI), extensibility (CRDs and operators), and GitOps-driven lifecycle management. Throughout, pay attention to practical constraints—upgrade sequencing, resource ownership, and multi-environment overlays—that commonly drive toolchoice.
 
@@ -40,6 +38,4 @@ Further reading and references:
 * [GitOps Principles and Practices](https://www.weave.works/technologies/gitops/)
 * [OCI Image Specification](https://github.com/opencontainers/image-spec)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/60afaf37-3ea5-4474-b262-dc8c13c3afd4/lesson/a2a6a7b0-066c-4227-9037-a344a963acbe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/60afaf37-3ea5-4474-b262-dc8c13c3afd4/lesson/a2a6a7b0-066c-4227-9037-a344a963acbe)

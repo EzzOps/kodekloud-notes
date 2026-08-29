@@ -8,11 +8,11 @@ In this lesson, we explore the Amazon Simple Queue Service (SQS), a fully manage
 
 Imagine an e-commerce application composed of various services. For instance, the cart service handles a user's shopping cart, and when a purchase is initiated, it sends a message to trigger a payment service. The payment service then invokes the invoice service, which generates an invoice. Other services like inventory, labeling, dispatch, and tracking take over thereafter to process and deliver the order. In such microservice architectures, running operations sequentially can become a performance bottleneck.
 
-![The image illustrates an e-commerce application's workflow, highlighting the need for SQS (Simple Queue Service) to address issues like sequential processing, degraded performance, and high cost.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858340/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/ecommerce-workflow-sqs-issues.jpg)
+![The image illustrates an e-commerce application's workflow, highlighting the need for SQS (Simple Queue Service) to address issues like sequential processing, degraded performance, and high cost.](https://kodekloud.com/kk-media/image/upload/v1752858340/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/ecommerce-workflow-sqs-issues.jpg)
 
 If a surge in user activity—such as during a holiday sale—overwhelms the payment service, the sequential design can lead to degraded performance and increased costs. SQS resolves this issue by acting as a message queue: once the purchase is initiated, the cart service sends a message to the queue and continues processing immediately without waiting for the payment service to respond.
 
-![The image is a flowchart illustrating the need for SQS in an e-commerce application, showing processes like cart, payment, invoice, inventory, labeling, dispatch, and tracking.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858342/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/sqs-ecommerce-flowchart-processes.jpg)
+![The image is a flowchart illustrating the need for SQS in an e-commerce application, showing processes like cart, payment, invoice, inventory, labeling, dispatch, and tracking.](https://kodekloud.com/kk-media/image/upload/v1752858342/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/sqs-ecommerce-flowchart-processes.jpg)
 
 When the payment service has the capacity, it retrieves the next message from the queue. This decoupling ensures that spikes in one service do not overwhelm others.
 
@@ -20,7 +20,7 @@ When the payment service has the capacity, it retrieves the next message from th
 
 SQS is designed to decouple components within distributed applications. Producers can send messages to the queue without knowing the specifics of the consumers, promoting flexible and loosely coupled system design. By buffering messages, SQS helps smooth out traffic bursts and supports asynchronous processing in serverless and event-driven architectures.
 
-![The image illustrates four SQS solutions: Message Decoupling, Load Leveling, Asynchronous Processing, and Scalable Architecture, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858343/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/sqs-solutions-message-decoupling-icons.jpg)
+![The image illustrates four SQS solutions: Message Decoupling, Load Leveling, Asynchronous Processing, and Scalable Architecture, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752858343/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/sqs-solutions-message-decoupling-icons.jpg)
 
 ### Terminology and Components
 
@@ -31,7 +31,7 @@ SQS is designed to decouple components within distributed applications. Producer
 * **Dead Letter Queue:** A secondary queue that stores messages which could not be processed successfully after multiple attempts.
 * **Configuration Options:** Settings such as timeouts and message visibility that help prevent duplicate processing.
 
-![The image illustrates the components of Amazon Simple Queue Service (SQS), showing producers, messages, and queues.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858344/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/amazon-sqs-components-producers-queues.jpg)
+![The image illustrates the components of Amazon Simple Queue Service (SQS), showing producers, messages, and queues.](https://kodekloud.com/kk-media/image/upload/v1752858344/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/amazon-sqs-components-producers-queues.jpg)
 
 When using AWS Lambda functions as both producers and consumers, one function sends a message to the SQS queue, and another function later processes and deletes the message.
 
@@ -47,11 +47,11 @@ Standard queues provide:
 * **At-Least-Once Delivery:** Messages can be delivered more than once.
 * **Unlimited Throughput:** Ideal for high-volume applications.
 
-![The image shows two types of SQS queues: Standard Queues and FIFO Queues, each represented with a gradient-colored card and an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858345/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/sqs-queues-standard-fifo-diagram.jpg)
+![The image shows two types of SQS queues: Standard Queues and FIFO Queues, each represented with a gradient-colored card and an icon.](https://kodekloud.com/kk-media/image/upload/v1752858345/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/sqs-queues-standard-fifo-diagram.jpg)
 
 For example, if messages 1, 2, and 3 are sent sequentially in a standard queue, they may arrive out of order, and duplicates might occur.
 
-![The image illustrates the concept of SQS Standard Queues, showing unordered message delivery and highlighting advantages like best-effort ordering, at-least-once delivery, and maximum throughput. It also depicts various application/subscriber icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858346/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/sqs-standard-queues-message-delivery.jpg)
+![The image illustrates the concept of SQS Standard Queues, showing unordered message delivery and highlighting advantages like best-effort ordering, at-least-once delivery, and maximum throughput. It also depicts various application/subscriber icons.](https://kodekloud.com/kk-media/image/upload/v1752858346/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/sqs-standard-queues-message-delivery.jpg)
 
 Both Standard and FIFO queues share several features:
 
@@ -59,7 +59,7 @@ Both Standard and FIFO queues share several features:
 * **Maximum Message Size:** 256 kilobytes.
 * **Low Latency:** Ensuring rapid message processing.
 
-![The image describes features of a "Standard Queue," highlighting unlimited throughput, a maximum retention of 14 days, a maximum of 256 KB per message sent, and low latency.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858348/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/standard-queue-features-throughput-retention.jpg)
+![The image describes features of a "Standard Queue," highlighting unlimited throughput, a maximum retention of 14 days, a maximum of 256 KB per message sent, and low latency.](https://kodekloud.com/kk-media/image/upload/v1752858348/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/standard-queue-features-throughput-retention.jpg)
 
 ### FIFO Queues
 
@@ -71,7 +71,7 @@ FIFO (First-In-First-Out) queues are ideal for scenarios requiring:
 * **Message Grouping:** Allows messages to be processed in parallel while maintaining order within each group.
 * **Message Deduplication:** Eliminates duplicate messages based on a deduplication ID.
 
-![The image is a diagram titled "FIFO Queue" listing six features: order preservation, exactly-once processing, limited throughput, message grouping, message deduplication, and maximum retention period.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858349/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/fifo-queue-features-diagram.jpg)
+![The image is a diagram titled "FIFO Queue" listing six features: order preservation, exactly-once processing, limited throughput, message grouping, message deduplication, and maximum retention period.](https://kodekloud.com/kk-media/image/upload/v1752858349/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/fifo-queue-features-diagram.jpg)
 
 ## SQS Extended Client Library
 
@@ -85,15 +85,15 @@ Key features include:
 * Backward compatibility with standard SQS clients.
 * Awareness of potential cost and performance considerations due to S3 usage.
 
-![The image illustrates the workflow of the SQS Extended Client Library, showing how a producer sends a message with a reference to an S3 object to an SQS queue, which is then received by a consumer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858350/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/sqs-extended-client-workflow-diagram.jpg)
+![The image illustrates the workflow of the SQS Extended Client Library, showing how a producer sends a message with a reference to an S3 object to an SQS queue, which is then received by a consumer.](https://kodekloud.com/kk-media/image/upload/v1752858350/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/sqs-extended-client-workflow-diagram.jpg)
 
-![The image lists features of the SQS Extended Client Library, including large message support, seamless integration, customizable S3 storage, backward compatibility, cost and performance considerations, and ease of use.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858351/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/sqs-extended-client-library-features.jpg)
+![The image lists features of the SQS Extended Client Library, including large message support, seamless integration, customizable S3 storage, backward compatibility, cost and performance considerations, and ease of use.](https://kodekloud.com/kk-media/image/upload/v1752858351/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/sqs-extended-client-library-features.jpg)
 
 ## Integration with Auto Scaling
 
 You can integrate SQS with EC2 Auto Scaling Groups to dynamically adjust processing capacity based on message volume. By configuring a CloudWatch alarm to monitor the "ApproximateNumberOfMessages" metric, you can automatically scale the number of consumer instances accordingly.
 
-![The image illustrates the integration of an SQS queue with an Auto Scaling Group (ASG), showing message polling and scaling based on the approximate number of messages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858352/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/sqs-auto-scaling-group-integration.jpg)
+![The image illustrates the integration of an SQS queue with an Auto Scaling Group (ASG), showing message polling and scaling based on the approximate number of messages.](https://kodekloud.com/kk-media/image/upload/v1752858352/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/sqs-auto-scaling-group-integration.jpg)
 
 ## Access Policies
 
@@ -132,8 +132,8 @@ SQS is a fully managed messaging queuing service that enhances microservice arch
 * The SQS Extended Client Library allows handling of larger messages by leveraging Amazon S3.
 * Access policies enable granular control over who can publish or consume messages.
 
-![The image is a summary slide highlighting key points about message queuing, including its management for microservices, the process of sending and consuming messages, and details on message size and retention.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858354/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/message-queuing-summary-microservices.jpg)
+![The image is a summary slide highlighting key points about message queuing, including its management for microservices, the process of sending and consuming messages, and details on message size and retention.](https://kodekloud.com/kk-media/image/upload/v1752858354/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/message-queuing-summary-microservices.jpg)
 
-![The image is a summary slide highlighting three points about message queues: FIFO queues ensure ordering and no duplicates, the SQS extended client library allows processing larger messages using S3 buckets, and access policies control who can send and consume messages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858355/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/message-queues-summary-fifo-sqs.jpg)
+![The image is a summary slide highlighting three points about message queues: FIFO queues ensure ordering and no duplicates, the SQS extended client library allows processing larger messages using S3 buckets, and access policies control who can send and consume messages.](https://kodekloud.com/kk-media/image/upload/v1752858355/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SQS-Overview/message-queues-summary-fifo-sqs.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/60c267ab-da8b-4408-97f4-b53aad3f4479/lesson/af4598a4-31a1-4fc3-80f0-0996343d7eee)

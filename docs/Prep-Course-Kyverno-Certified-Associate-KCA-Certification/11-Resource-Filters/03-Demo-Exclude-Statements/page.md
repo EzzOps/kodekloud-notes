@@ -136,11 +136,9 @@ References and further reading:
 
 Use `any` when you want to validate resources that meet any of multiple criteria. Use `all` when validation should only apply to resources that satisfy every listed condition.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/2dc0b67f-8e06-499c-9741-fa03938d6c93" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/2dc0b67f-8e06-499c-9741-fa03938d6c93)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/7c96b662-7cb5-4b17-b3d9-c7a08cb409c0" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/7c96b662-7cb5-4b17-b3d9-c7a08cb409c0)
 
 
 # Demo Exclude Statements
@@ -322,17 +320,13 @@ Summary
 * A Pod that matches `match` and is not excluded is validated by the `validate` rule and rejected if it doesn't meet the pattern.
 * Label keys must be exact — typos like `teams` vs `team` will prevent exclusion and cause the policy to apply.
 
-<Callout icon="lightbulb">
-  Use `kubectl run ... --restart=Never` to create an actual Pod (rather than a Deployment) for these tests. Also double-check label key names to ensure exclusions work as expected.
-</Callout>
+> **lightbulb** Use `kubectl run ... --restart=Never` to create an actual Pod (rather than a Deployment) for these tests. Also double-check label key names to ensure exclusions work as expected.
 
 Links and References
 
 * [Kyverno Documentation](https://kyverno.io/docs/)
 * [kubectl reference](https://kubernetes.io/docs/reference/kubectl/overview/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/27d9b318-bbe8-4f38-89de-3da70c287145" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/27d9b318-bbe8-4f38-89de-3da70c287145)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/4d9d404b-630f-4dc9-b9bc-9caaf8d36742" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/4d9d404b-630f-4dc9-b9bc-9caaf8d36742)

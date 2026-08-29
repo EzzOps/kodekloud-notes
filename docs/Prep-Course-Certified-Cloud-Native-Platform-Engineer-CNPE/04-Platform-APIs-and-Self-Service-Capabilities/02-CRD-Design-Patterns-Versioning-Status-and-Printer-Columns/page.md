@@ -95,9 +95,7 @@ subresources:
   <img alt="The image compares two approaches to handling resources, highlighting problems without a status subresource (chaos and overwrites) and benefits with it (clear separation of concerns)." />
 </Frame>
 
-<Callout icon="warning">
-  Always enable the `status` subresource for controller-managed CRs. Without it, controllers and users can overwrite each other’s fields, causing hard-to-debug race conditions.
-</Callout>
+> **warning** Always enable the `status` subresource for controller-managed CRs. Without it, controllers and users can overwrite each other’s fields, causing hard-to-debug race conditions.
 
 ### Observed generation pattern
 
@@ -245,9 +243,7 @@ Use this checklist before promoting a CRD to production:
 | Scaling       | Consider `subresources.scale` when exposing replicas for `kubectl scale` and HPA. |
 | Validation    | Use `openAPIV3Schema` for input validation and guardrails.                        |
 
-<Callout icon="lightbulb">
-  Plan for versioning and status separation from day one. These patterns prevent expensive migrations and help CRDs behave like native Kubernetes APIs.
-</Callout>
+> **lightbulb** Plan for versioning and status separation from day one. These patterns prevent expensive migrations and help CRDs behave like native Kubernetes APIs.
 
 ## Key takeaways
 
@@ -262,6 +258,4 @@ Further reading:
 * Kubernetes CRD docs: [https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/)
 * CRD Conversion webhooks: [https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#webhook-conversion](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#webhook-conversion)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/6eac32ae-9924-4589-80b4-b64798b0da30" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/6eac32ae-9924-4589-80b4-b64798b0da30)

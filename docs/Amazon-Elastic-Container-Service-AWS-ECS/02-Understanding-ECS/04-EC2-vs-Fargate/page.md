@@ -17,6 +17,6 @@ When you deploy an application to Amazon ECS using Fargate, the process unfolds 
 
 This serverless approach ensures that when you scale down or remove your application, Fargate decommissions the underlying resources automatically, thereby eliminating costs associated with idle servers.
 
-![The image is an infographic about ECS Fargate, highlighting its serverless architecture, on-demand server creation, and cost efficiency by eliminating the need to maintain EC2 servers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869150/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-EC2-vs-Fargate/ecs-fargate-infographic-serverless.jpg)
+![The image is an infographic about ECS Fargate, highlighting its serverless architecture, on-demand server creation, and cost efficiency by eliminating the need to maintain EC2 servers.](https://kodekloud.com/kk-media/image/upload/v1752869150/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-EC2-vs-Fargate/ecs-fargate-infographic-serverless.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/amazon-elastic-container-service-aws-ecs/module/cec2a3ca-2cb6-4e9c-a1f2-693b3303765d/lesson/f32d9b8b-fc23-4e16-bcbf-e773dc60325f)

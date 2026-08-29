@@ -64,9 +64,7 @@ Features and benefits
 * Automatic scaling: Serverless scales compute up and down to meet demand, within the limits you configure.
 * Simplified operations: no node type selection, cluster resizing, or manual provisioning for typical workloads.
 
-<Callout icon="lightbulb">
-  Pricing and exact thresholds vary by AWS region and over time. Use the [AWS Console](https://console.aws.amazon.com/) or the latest [AWS documentation for Redshift Serverless](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless.html) for up-to-date pricing and limits.
-</Callout>
+> **lightbulb** Pricing and exact thresholds vary by AWS region and over time. Use the [AWS Console](https://console.aws.amazon.com/) or the latest [AWS documentation for Redshift Serverless](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless.html) for up-to-date pricing and limits.
 
 Summary
 
@@ -93,6 +91,4 @@ Additional resources
 * Parquet: [https://parquet.apache.org/](https://parquet.apache.org/)
 * ORC: [https://orc.apache.org/](https://orc.apache.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/6b775562-0b27-41e9-93fc-bb16dab05d87/lesson/628d371a-fae0-477b-bdf9-7ac0e94b3022" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/6b775562-0b27-41e9-93fc-bb16dab05d87/lesson/628d371a-fae0-477b-bdf9-7ac0e94b3022)

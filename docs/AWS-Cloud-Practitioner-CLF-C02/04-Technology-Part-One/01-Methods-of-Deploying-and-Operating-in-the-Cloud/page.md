@@ -14,7 +14,7 @@ The AWS Console is the web-based graphical user interface (GUI) that simplifies 
 
 Despite its ease of use for small-scale deployments, the console can become time-consuming as your infrastructure grows and you need to manage multiple resources across several windows and forms.
 
-![The image shows three icons representing deployment methods: a computer setup, a command line interface, and a QR code, with the title "Deployment Methods."](../../../../images/kodekloud.com/kk-media/image/upload/v1752861958/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Methods-of-Deploying-and-Operating-in-the-Cloud/frame_20.jpg)
+![The image shows three icons representing deployment methods: a computer setup, a command line interface, and a QR code, with the title "Deployment Methods."](https://kodekloud.com/kk-media/image/upload/v1752861958/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Methods-of-Deploying-and-Operating-in-the-Cloud/frame_20.jpg)
 
 ## AWS Command Line Interface (CLI)
 
@@ -30,7 +30,7 @@ The AWS SDK is designed for developers who want to integrate AWS functionality d
 
 By incorporating the SDK into your applications, you can automate AWS operations based on user actions or specific triggers. For example, your application can automatically launch a server or create an S3 bucket when a user logs in or performs a particular action, ensuring seamless integration between your software and AWS services.
 
-![The image shows two icons: a notepad with code lines and the AWS logo surrounded by service icons, labeled "AWS SDK."](../../../../images/kodekloud.com/kk-media/image/upload/v1752861959/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Methods-of-Deploying-and-Operating-in-the-Cloud/frame_230.jpg)
+![The image shows two icons: a notepad with code lines and the AWS logo surrounded by service icons, labeled "AWS SDK."](https://kodekloud.com/kk-media/image/upload/v1752861959/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Methods-of-Deploying-and-Operating-in-the-Cloud/frame_230.jpg)
 
 ## Summary of AWS Deployment Methods
 

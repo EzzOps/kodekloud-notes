@@ -75,10 +75,6 @@ References and further reading
 * [What is a CDN? (Cloudflare)](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/) — CDN basics and benefits
 * [Object storage overview (AWS S3)](https://aws.amazon.com/s3/) — Photo storage patterns
 
-<Callout icon="lightbulb">
-  Begin every design discussion by eliciting requirements. Use those answers as justification for each major architectural choice you make during the rest of the design.
-</Callout>
+> **lightbulb** Begin every design discussion by eliciting requirements. Use those answers as justification for each major architectural choice you make during the rest of the design.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/98ad620b-c085-4a5b-968e-879136a8f41a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/98ad620b-c085-4a5b-968e-879136a8f41a)

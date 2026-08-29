@@ -54,11 +54,9 @@ In the example above, the pipeline is configured to run on any available Jenkins
 
 ***
 
-<Callout icon="lightbulb">
-  * **Declarative Pipelines:** Provide a structured and straightforward syntax.
+> **lightbulb** * **Declarative Pipelines:** Provide a structured and straightforward syntax.
   * **Stages and Steps:** Define the execution flow of the pipeline.
   * **Scripted Steps:** Allow for complex Groovy code within the declarative pipeline.
-</Callout>
 
 The Jenkinsfile can also include additional directives to enhance pipeline management and execution:
 
@@ -247,12 +245,8 @@ pipeline {
 }
 ```
 
-<Callout icon="lightbulb">
-  This lesson covered the primary components and directives of a Jenkinsfile. Explore these features in your projects and look forward to upcoming lessons that delve into more advanced Jenkins configurations.
-</Callout>
+> **lightbulb** This lesson covered the primary components and directives of a Jenkinsfile. Explore these features in your projects and look forward to upcoming lessons that delve into more advanced Jenkins configurations.
 
 Thank you.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/b4f582ef-4bf9-4cb9-8a31-6d580a94000c/lesson/c93ac078-4d03-4191-bb8f-7deae5a5e163" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/b4f582ef-4bf9-4cb9-8a31-6d580a94000c/lesson/c93ac078-4d03-4191-bb8f-7deae5a5e163)

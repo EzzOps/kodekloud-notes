@@ -127,9 +127,7 @@ This decoding lets you view the expiration time and other data contained in the 
 
 ## Understanding JWT Security
 
-<Callout icon="lightbulb">
-  JWTs are not encrypted. Their payload is simply base64 encoded, which means anyone who intercepts the token can read its content. However, thanks to the digital signature (using your secret key), any unauthorized modification to the token invalidates it. Additionally, an expiration time is added to the token to ensure that outdated tokens can no longer be used.
-</Callout>
+> **lightbulb** JWTs are not encrypted. Their payload is simply base64 encoded, which means anyone who intercepts the token can read its content. However, thanks to the digital signature (using your secret key), any unauthorized modification to the token invalidates it. Additionally, an expiration time is added to the token to ensure that outdated tokens can no longer be used.
 
 ────────────────────────────────────────
 
@@ -146,9 +144,7 @@ This approach ensures your API can verify both the integrity and validity (throu
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/d704faee-9ab1-45b0-a9e3-0b272a5608fa" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/d704faee-9ab1-45b0-a9e3-0b272a5608fa)
 
 
 # Creating User Table
@@ -191,14 +187,12 @@ INFO:     Waiting for application startup.
 Application startup complete.
 ```
 
-<Callout icon="lightbulb">
-  In the User model:
+> **lightbulb** In the User model:
 
   * The ID column serves as the primary key.
   * The email column is defined as a unique, non-nullable String to prevent duplicate registrations.
   * The password column is non-nullable.
   * The created\_at column automatically records when a record is added.
-</Callout>
 
 After the application restarts, open PgAdmin and refresh your tables to verify that the "users" table has been created with the necessary columns and constraints.
 
@@ -231,6 +225,4 @@ With the table and constraints now established, the first step is complete. The 
 
 For more details on database design and managing SQL schemas, consider checking out the following resources: [PostgreSQL Documentation](https://www.postgresql.org/docs/) and [SQLAlchemy Documentation](https://docs.sqlalchemy.org/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/a5a7f26e-04b9-42e2-a3a2-012b09969d26" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/a5a7f26e-04b9-42e2-a3a2-012b09969d26)

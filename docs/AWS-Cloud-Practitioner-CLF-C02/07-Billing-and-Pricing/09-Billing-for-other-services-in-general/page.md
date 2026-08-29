@@ -21,7 +21,7 @@ Pricing factors for EBS include:
 
 Keep in mind that SSDs are typically more expensive than magnetic drives due to superior performance and flexible performance settings. When you provision a larger volume or keep it active longer, your costs increase.
 
-![The image provides an overview of Elastic Block Store billing, highlighting SSD-backed options, volume and snapshot sizes, fast snapshot restore, and direct APIs for snapshots.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861425/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Billing-for-other-services-in-general/frame_120.jpg)
+![The image provides an overview of Elastic Block Store billing, highlighting SSD-backed options, volume and snapshot sizes, fast snapshot restore, and direct APIs for snapshots.](https://kodekloud.com/kk-media/image/upload/v1752861425/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Billing-for-other-services-in-general/frame_120.jpg)
 
 ## Amazon Simple Storage Service (S3)
 
@@ -33,9 +33,9 @@ Amazon S3 pricing is influenced by several factors that impact how you store and
 * **Data Transfer:** Outbound data transfer (to the internet) is charged separately.
 * **Additional Features:** Enabling versioning, inventory reporting, and other management features may also increase costs.
 
-![The image provides an overview of Amazon S3 storage classes, including Standard, Intelligent-Tiering, Standard-IA, Glacier, and One Zone-IA.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861426/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Billing-for-other-services-in-general/frame_160.jpg)
+![The image provides an overview of Amazon S3 storage classes, including Standard, Intelligent-Tiering, Standard-IA, Glacier, and One Zone-IA.](https://kodekloud.com/kk-media/image/upload/v1752861426/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Billing-for-other-services-in-general/frame_160.jpg)
 
-![The image provides an overview of AWS S3 billing, highlighting factors like storage class, object size, request types, data transfer, and additional features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861427/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Billing-for-other-services-in-general/frame_240.jpg)
+![The image provides an overview of AWS S3 billing, highlighting factors like storage class, object size, request types, data transfer, and additional features.](https://kodekloud.com/kk-media/image/upload/v1752861427/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Billing-for-other-services-in-general/frame_240.jpg)
 
 ## Amazon DynamoDB
 
@@ -47,7 +47,7 @@ Amazon DynamoDB is a high-performance NoSQL database service known for its singl
 
 Scaling the read/write capacity units or storing larger amounts of data will result in higher charges.
 
-![The image is an overview of DynamoDB billing, highlighting costs associated with reading, writing, and storing data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861428/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Billing-for-other-services-in-general/frame_290.jpg)
+![The image is an overview of DynamoDB billing, highlighting costs associated with reading, writing, and storing data.](https://kodekloud.com/kk-media/image/upload/v1752861428/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Billing-for-other-services-in-general/frame_290.jpg)
 
 ## Amazon CloudFront
 
@@ -58,7 +58,7 @@ Amazon CloudFront is a content delivery network (CDN) that caches content at edg
 * **Invalidation and Additional Features:** Operations such as cache invalidation, advanced filtering, or using Lambda\@Edge (which adds compute charges) can increase costs.
 * **Geographical Factors:** Content distribution across different regions (for example, continental United States vs. Europe) can affect billing.
 
-![The image is a CloudFront billing overview, showing a world map with server and user icons, and icons representing analytics, video, command line, and API functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861429/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Billing-for-other-services-in-general/frame_370.jpg)
+![The image is a CloudFront billing overview, showing a world map with server and user icons, and icons representing analytics, video, command line, and API functions.](https://kodekloud.com/kk-media/image/upload/v1752861429/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Billing-for-other-services-in-general/frame_370.jpg)
 
 ## Amazon Macie
 
@@ -66,7 +66,7 @@ Amazon Macie is designed to automatically discover and classify sensitive data s
 
 * **Data Scanning:** Charging is based on the volume of data scanned within S3. Since Macie uses S3 actions to perform automated sensitive data discovery, the overall cost reflects these scanning activities.
 
-![The image is an overview of Amazon Macie, illustrating its process: evaluating Amazon S3 storage, automated sensitive data discovery, full discovery scans, and taking action.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861430/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Billing-for-other-services-in-general/frame_440.jpg)
+![The image is an overview of Amazon Macie, illustrating its process: evaluating Amazon S3 storage, automated sensitive data discovery, full discovery scans, and taking action.](https://kodekloud.com/kk-media/image/upload/v1752861430/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Billing-for-other-services-in-general/frame_440.jpg)
 
 > **lightbulb** Review these billing dimensions to identify and optimize any usage patterns that could be driving up your AWS costs.
 

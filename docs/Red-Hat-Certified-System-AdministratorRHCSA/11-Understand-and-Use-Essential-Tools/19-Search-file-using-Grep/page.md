@@ -66,9 +66,7 @@ grep: /etc/lvm/cache: Permission denied
 /etc/yum.repos.d/CentOS-Stream-BaseOS.repo:# CentOS-Stream-BaseOS.repo
 ```
 
-<Callout icon="triangle-alert">
-  If you encounter "Permission denied" errors, it is likely because your current user lacks the necessary read permissions for some system files.
-</Callout>
+> **triangle-alert** If you encounter "Permission denied" errors, it is likely because your current user lacks the necessary read permissions for some system files.
 
 You can also combine case insensitivity with recursive search using the `-ir` options:
 
@@ -155,6 +153,4 @@ This article reviewed various techniques for searching text in Linux using the g
 
 For more information on Linux command-line tools, check out [Linux Command Overview](https://www.linux.org/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/a4cfc27c-b1d3-4125-8772-eee204df982c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/a4cfc27c-b1d3-4125-8772-eee204df982c)

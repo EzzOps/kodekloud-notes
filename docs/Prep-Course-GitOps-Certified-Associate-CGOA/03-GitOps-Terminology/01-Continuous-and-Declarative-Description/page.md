@@ -96,9 +96,7 @@ Useful links:
 * Flux: [https://learn.kodekloud.com/user/courses/gitops-with-fluxcd](https://learn.kodekloud.com/user/courses/gitops-with-fluxcd)
 * Argo CD: [https://learn.kodekloud.com/user/courses/gitops-with-argocd](https://learn.kodekloud.com/user/courses/gitops-with-argocd)
 
-<Callout icon="lightbulb">
-  Keeping the desired state in Git enables code review, CI checks, and an auditable history of configuration changes — essential for collaborative operations and compliance.
-</Callout>
+> **lightbulb** Keeping the desired state in Git enables code review, CI checks, and an auditable history of configuration changes — essential for collaborative operations and compliance.
 
 ## Desired state
 
@@ -164,9 +162,7 @@ kubectl scale deployment nginx-app --replicas=3
 
 Now the cluster has three replicas while Git declares five — that divergence is state drift.
 
-<Callout icon="warning">
-  Avoid ad-hoc imperative changes in production clusters. They create drift that breaks the one source of truth model and can undermine automated reconciliation.
-</Callout>
+> **warning** Avoid ad-hoc imperative changes in production clusters. They create drift that breaks the one source of truth model and can undermine automated reconciliation.
 
 ## State reconciliation
 

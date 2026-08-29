@@ -8,7 +8,7 @@ In this lesson, you will learn how to effectively implement logging and monitori
 
 By default, each Lambda function is configured to emit logs and metrics directly to CloudWatch. When you assign an execution role to your Lambda function, that role is generally equipped with the necessary permissions to write both logs and metrics to CloudWatch. This setup enables you to review detailed logs and crucial metrics, helping you thoroughly understand your function's behavior.
 
-![The image is a diagram illustrating the flow of AWS Lambda functions, showing how they interact with AWS IAM Execution Roles and CloudWatch Logs and Metrics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859595/notes-assets/images/AWS-Certified-Developer-Associate-Logging-Monitoring/aws-lambda-flow-diagram.jpg)
+![The image is a diagram illustrating the flow of AWS Lambda functions, showing how they interact with AWS IAM Execution Roles and CloudWatch Logs and Metrics.](https://kodekloud.com/kk-media/image/upload/v1752859595/notes-assets/images/AWS-Certified-Developer-Associate-Logging-Monitoring/aws-lambda-flow-diagram.jpg)
 
 ## Key CloudWatch Metrics for Lambda Functions
 
@@ -24,7 +24,7 @@ Monitoring your AWS Lambda functions involves keeping an eye on several key metr
 * **Dead Letter Queue Failures**: Number of instances where an event could not be redirected to the dead letter queue.
 * Additional metrics such as **Iterator Age** (important for functions triggered by Kinesis or DynamoDB Streams) and **Provisioned Concurrency Utilization** are also available to provide deeper insights.
 
-![The image lists seven CloudWatch metrics: Invocations, Duration, Errors, Success Rate, Throttles, Concurrent Executions, and Async Delivery Failures, each with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859596/notes-assets/images/AWS-Certified-Developer-Associate-Logging-Monitoring/cloudwatch-metrics-list-icons.jpg)
+![The image lists seven CloudWatch metrics: Invocations, Duration, Errors, Success Rate, Throttles, Concurrent Executions, and Async Delivery Failures, each with an icon.](https://kodekloud.com/kk-media/image/upload/v1752859596/notes-assets/images/AWS-Certified-Developer-Associate-Logging-Monitoring/cloudwatch-metrics-list-icons.jpg)
 
 > **lightbulb** Enabling detailed logging and metrics allows you to quickly identify performance bottlenecks or errors, ensuring that you can maintain high availability and efficiency in your applications.
 
@@ -37,7 +37,7 @@ To enable X-Ray tracing for your Lambda function, follow these steps:
 1. Toggle the **Active Tracing** setting in your Lambda function configuration.
 2. Ensure your Lambda function has the appropriate IAM permissions to send trace data to X-Ray. AWS offers a managed policy, **AWSXRayDaemonWriteAccess**, which grants the necessary permissions.
 
-![The image provides instructions for enabling X-Ray tracing in AWS Lambda, including toggling the "Active Tracing" setting and ensuring proper IAM permissions with the AWSXRayDaemonWriteAccess policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859597/notes-assets/images/AWS-Certified-Developer-Associate-Logging-Monitoring/aws-lambda-xray-tracing-instructions.jpg)
+![The image provides instructions for enabling X-Ray tracing in AWS Lambda, including toggling the "Active Tracing" setting and ensuring proper IAM permissions with the AWSXRayDaemonWriteAccess policy.](https://kodekloud.com/kk-media/image/upload/v1752859597/notes-assets/images/AWS-Certified-Developer-Associate-Logging-Monitoring/aws-lambda-xray-tracing-instructions.jpg)
 
 > **lightbulb** By integrating AWS X-Ray with your Lambda functions, you can enhance your troubleshooting capabilities and gain detailed insights into the operational flow of your application.
 

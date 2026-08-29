@@ -43,9 +43,7 @@ Example: local JSON configuration showing how you might reference a Google Calen
 }
 ```
 
-<Callout icon="warning">
-  Never commit credentials or OAuth files to source control. Store sensitive values in secure stores or CI secrets and reference them via environment variables.
-</Callout>
+> **warning** Never commit credentials or OAuth files to source control. Store sensitive values in secure stores or CI secrets and reference them via environment variables.
 
 ## Example lab flow (high level)
 
@@ -74,9 +72,7 @@ At KodeKloud we encourage collaboration—ask questions, share discoveries, and 
 
 Let's dive in and unlock the full potential of the Model Context Protocol.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/aec3d24f-fc96-42cb-802f-f6d39e4923f1/lesson/f28709cc-c5b1-4492-b8ae-f164647b7d4c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/aec3d24f-fc96-42cb-802f-f6d39e4923f1/lesson/f28709cc-c5b1-4492-b8ae-f164647b7d4c)
 
 
 # Demo Building MCP Servers with Postman

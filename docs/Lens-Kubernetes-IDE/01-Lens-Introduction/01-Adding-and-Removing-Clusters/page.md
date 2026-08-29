@@ -31,15 +31,11 @@ Start the Lens desktop application to reach the Home screen, where you can conne
 2. Lens scans your system for kubeconfig files.
 3. Select a detected cluster (e.g., `minikube`) and hit **Open**.
 
-<Frame>
-  ![The image shows a software interface displaying a catalog with a list of clusters, including one named "minikube," which is currently disconnected. The interface has a dark theme with navigation options on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881163/notes-assets/images/Lens-Kubernetes-IDE-Adding-and-Removing-Clusters/software-interface-catalog-clusters.jpg)
-</Frame>
+![The image shows a software interface displaying a catalog with a list of clusters, including one named "minikube," which is currently disconnected. The interface has a dark theme with navigation options on the left.](https://kodekloud.com/kk-media/image/upload/v1752881163/notes-assets/images/Lens-Kubernetes-IDE-Adding-and-Removing-Clusters/software-interface-catalog-clusters.jpg)
 
 Once added, Lens presents performance metrics over the last hour using a built-in Prometheus dashboard:
 
-<Frame>
-  ![The image shows a dashboard interface for monitoring a Kubernetes cluster using Minikube, displaying CPU and memory usage, pod capacity, and warnings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881164/notes-assets/images/Lens-Kubernetes-IDE-Adding-and-Removing-Clusters/kubernetes-minikube-dashboard-monitoring.jpg)
-</Frame>
+![The image shows a dashboard interface for monitoring a Kubernetes cluster using Minikube, displaying CPU and memory usage, pod capacity, and warnings.](https://kodekloud.com/kk-media/image/upload/v1752881164/notes-assets/images/Lens-Kubernetes-IDE-Adding-and-Removing-Clusters/kubernetes-minikube-dashboard-monitoring.jpg)
 
 ***
 
@@ -47,17 +43,13 @@ Once added, Lens presents performance metrics over the last hour using a built-i
 
 If your kubeconfig isn’t auto-detected, you can paste it directly:
 
-<Callout icon="lightbulb">
-  Ensure your kubeconfig includes the correct `contexts` and `clusters` entries for the target environment.
-</Callout>
+> **lightbulb** Ensure your kubeconfig includes the correct `contexts` and `clusters` entries for the target environment.
 
 1. Navigate to **File** → **Add Cluster**.
 2. Paste the full kubeconfig YAML into the editor.
 3. Click **Add Cluster** to register it in Lens.
 
-<Frame>
-  ![The image shows a dark interface for adding clusters from a Kubeconfig file, with a button labeled "Add clusters" and a note about clusters not being merged into the config file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881164/notes-assets/images/Lens-Kubernetes-IDE-Adding-and-Removing-Clusters/kubeconfig-add-clusters-interface.jpg)
-</Frame>
+![The image shows a dark interface for adding clusters from a Kubeconfig file, with a button labeled "Add clusters" and a note about clusters not being merged into the config file.](https://kodekloud.com/kk-media/image/upload/v1752881164/notes-assets/images/Lens-Kubernetes-IDE-Adding-and-Removing-Clusters/kubeconfig-add-clusters-interface.jpg)
 
 ***
 
@@ -71,9 +63,7 @@ Select your cluster and open **Settings** to:
 * Configure HTTP/HTTPS proxy
 * Tweak metrics collection intervals
 
-<Frame>
-  ![The image shows a dark-themed user interface for managing a Kubernetes cluster, with options like General, Proxy, Terminal, and Metrics on the left sidebar. The main section displays settings for a cluster named "Edwards performance cluster" and its Kubeconfig path.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881166/notes-assets/images/Lens-Kubernetes-IDE-Adding-and-Removing-Clusters/kubernetes-cluster-ui-settings.jpg)
-</Frame>
+![The image shows a dark-themed user interface for managing a Kubernetes cluster, with options like General, Proxy, Terminal, and Metrics on the left sidebar. The main section displays settings for a cluster named "Edwards performance cluster" and its Kubeconfig path.](https://kodekloud.com/kk-media/image/upload/v1752881166/notes-assets/images/Lens-Kubernetes-IDE-Adding-and-Removing-Clusters/kubernetes-cluster-ui-settings.jpg)
 
 ***
 
@@ -89,9 +79,7 @@ Under the **Metrics** tab, install a Prometheus monitoring stack to get detailed
 
 Click **Enable** next to each component to deploy it on your cluster.
 
-<Frame>
-  ![The image shows a software interface for managing cluster metrics, with options to enable Prometheus, kube-state-metrics, and node-exporter stacks. The settings are part of a tool called "Lens Metrics" within a cluster management application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881167/notes-assets/images/Lens-Kubernetes-IDE-Adding-and-Removing-Clusters/lens-metrics-cluster-management-interface.jpg)
-</Frame>
+![The image shows a software interface for managing cluster metrics, with options to enable Prometheus, kube-state-metrics, and node-exporter stacks. The settings are part of a tool called "Lens Metrics" within a cluster management application.](https://kodekloud.com/kk-media/image/upload/v1752881167/notes-assets/images/Lens-Kubernetes-IDE-Adding-and-Removing-Clusters/lens-metrics-cluster-management-interface.jpg)
 
 ***
 
@@ -114,9 +102,7 @@ The **Overview** dashboard gives you a high-level look at all workloads:
 | Services      | Network endpoints               |
 | ConfigMaps    | Configuration objects           |
 
-<Frame>
-  ![The image shows a dashboard interface for managing a Kubernetes cluster, displaying an overview of workloads and a visual representation of resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881168/notes-assets/images/Lens-Kubernetes-IDE-Adding-and-Removing-Clusters/kubernetes-cluster-dashboard-overview.jpg)
-</Frame>
+![The image shows a dashboard interface for managing a Kubernetes cluster, displaying an overview of workloads and a visual representation of resources.](https://kodekloud.com/kk-media/image/upload/v1752881168/notes-assets/images/Lens-Kubernetes-IDE-Adding-and-Removing-Clusters/kubernetes-cluster-dashboard-overview.jpg)
 
 ***
 
@@ -128,9 +114,7 @@ Click **Pods** to inspect each pod’s metrics over the last hour—CPU, memory,
 * View container logs
 * Edit the live manifest
 
-<Frame>
-  ![The image shows a dashboard interface for managing Kubernetes clusters, displaying details of pods, including CPU usage and metadata for a specific pod named "etcd-minikube."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881171/notes-assets/images/Lens-Kubernetes-IDE-Adding-and-Removing-Clusters/kubernetes-dashboard-pod-management.jpg)
-</Frame>
+![The image shows a dashboard interface for managing Kubernetes clusters, displaying details of pods, including CPU usage and metadata for a specific pod named "etcd-minikube."](https://kodekloud.com/kk-media/image/upload/v1752881171/notes-assets/images/Lens-Kubernetes-IDE-Adding-and-Removing-Clusters/kubernetes-dashboard-pod-management.jpg)
 
 ### Editing a Pod Manifest
 
@@ -206,9 +190,7 @@ kubectl.kubernetes.io/last-applied-configuration: >
 
 Lens will automatically reflect new pods under **Pods** as they come online:
 
-<Frame>
-  ![The image shows a dashboard interface for managing Kubernetes pods, displaying details such as pod names, namespaces, container status, and running status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881172/notes-assets/images/Lens-Kubernetes-IDE-Adding-and-Removing-Clusters/kubernetes-pods-dashboard-interface.jpg)
-</Frame>
+![The image shows a dashboard interface for managing Kubernetes pods, displaying details such as pod names, namespaces, container status, and running status.](https://kodekloud.com/kk-media/image/upload/v1752881172/notes-assets/images/Lens-Kubernetes-IDE-Adding-and-Removing-Clusters/kubernetes-pods-dashboard-interface.jpg)
 
 ***
 
@@ -216,16 +198,12 @@ Lens will automatically reflect new pods under **Pods** as they come online:
 
 When you no longer need a cluster in Lens:
 
-<Callout icon="triangle-alert">
-  Deleting a cluster in Lens removes its entry from your Lens config but does **not** delete the cluster itself.
-</Callout>
+> **triangle-alert** Deleting a cluster in Lens removes its entry from your Lens config but does **not** delete the cluster itself.
 
 * Right-click the cluster icon in the sidebar.
 * Select **Delete** to remove its kubeconfig entry and dashboards.
 
-<Frame>
-  ![The image shows a dashboard interface for monitoring a Kubernetes cluster, displaying CPU and memory usage, along with warnings and system messages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881173/notes-assets/images/Lens-Kubernetes-IDE-Adding-and-Removing-Clusters/kubernetes-cluster-monitoring-dashboard.jpg)
-</Frame>
+![The image shows a dashboard interface for monitoring a Kubernetes cluster, displaying CPU and memory usage, along with warnings and system messages.](https://kodekloud.com/kk-media/image/upload/v1752881173/notes-assets/images/Lens-Kubernetes-IDE-Adding-and-Removing-Clusters/kubernetes-cluster-monitoring-dashboard.jpg)
 
 After removal, your Lens Home screen will show no connected clusters.
 
@@ -239,6 +217,4 @@ After removal, your Lens Home screen will show no connected clusters.
 
 For advanced cluster operations, explore the [Kubernetes API Reference](https://kubernetes.io/docs/reference/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/lens-kubernetes-ide/module/5612678e-a690-4e4e-b43d-966183dffdbf/lesson/6b6d1361-9730-425c-8cd0-7ef1da8c1e51" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/lens-kubernetes-ide/module/5612678e-a690-4e4e-b43d-966183dffdbf/lesson/6b6d1361-9730-425c-8cd0-7ef1da8c1e51)

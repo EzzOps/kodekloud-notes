@@ -21,11 +21,11 @@ The Billing Dashboard—sometimes humorously referred to as "the bill"—provide
 
 Clicking on the "Bills" section within the dashboard will present a detailed breakdown by service and region. Although the breakdown isn’t extremely granular, it efficiently highlights key trends. For instance, you can quickly see if you used services like App Runner, Amplify, or CloudTrail across various regions.
 
-![The image shows an AWS Billing Dashboard with summaries of costs, active services, and accounts, alongside a graph of cost trends for top services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861509/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Tools-for-Billing-Analysis-and-Support/frame_60.jpg)
+![The image shows an AWS Billing Dashboard with summaries of costs, active services, and accounts, alongside a graph of cost trends for top services.](https://kodekloud.com/kk-media/image/upload/v1752861509/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Tools-for-Billing-Analysis-and-Support/frame_60.jpg)
 
 Selecting the "Bills" section further isolates service usage by region, making it a handy tool for a high-level review of spending.
 
-![The image shows the AWS Billing Dashboard, highlighting the "Bills" section with a list of services and their usage quantities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861510/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Tools-for-Billing-Analysis-and-Support/frame_80.jpg)
+![The image shows the AWS Billing Dashboard, highlighting the "Bills" section with a list of services and their usage quantities.](https://kodekloud.com/kk-media/image/upload/v1752861510/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Tools-for-Billing-Analysis-and-Support/frame_80.jpg)
 
 ***
 
@@ -37,11 +37,11 @@ This tool provides multiple charting options—including bar graphs, pie charts,
 
 > **lightbulb** If you have a Free Tier account, many of the displayed values might be minimal. Keep this in mind when analyzing the charts.
 
-![The image shows a visual representation of AWS Cost Explorer, displaying a cost and usage report with a bar graph and detailed breakdown of expenses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861513/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Tools-for-Billing-Analysis-and-Support/frame_140.jpg)
+![The image shows a visual representation of AWS Cost Explorer, displaying a cost and usage report with a bar graph and detailed breakdown of expenses.](https://kodekloud.com/kk-media/image/upload/v1752861513/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Tools-for-Billing-Analysis-and-Support/frame_140.jpg)
 
 For further analysis, users can download data as a CSV file, seamlessly integrating AWS spending data with other reporting or analysis tools. Cost Explorer is ideal if you need an interactive dashboard with granular cost insights.
 
-![The image shows a cost breakdown table for various services over several months, highlighting a \$29.00 cost in April 2023.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861514/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Tools-for-Billing-Analysis-and-Support/frame_250.jpg)
+![The image shows a cost breakdown table for various services over several months, highlighting a \$29.00 cost in April 2023.](https://kodekloud.com/kk-media/image/upload/v1752861514/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Tools-for-Billing-Analysis-and-Support/frame_250.jpg)
 
 ***
 
@@ -51,7 +51,7 @@ The Cost and Usage Report (CUR) delivers an exceptionally detailed view of your 
 
 This CSV report is indispensable if you need to integrate billing data with third-party systems or perform deep-dive, custom cost analyses. Even though the level of detail can seem overwhelming, it remains the definitive tool for obtaining the most extensive billing information.
 
-![The image shows a visual representation of billing tools, specifically a detailed table of AWS billing data, including account IDs, product codes, and usage details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861516/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Tools-for-Billing-Analysis-and-Support/frame_320.jpg)
+![The image shows a visual representation of billing tools, specifically a detailed table of AWS billing data, including account IDs, product codes, and usage details.](https://kodekloud.com/kk-media/image/upload/v1752861516/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Tools-for-Billing-Analysis-and-Support/frame_320.jpg)
 
 ***
 
@@ -61,15 +61,15 @@ AWS Budgets takes cost management a step further by allowing you to set specific
 
 For example, you can configure a budget to alert you once spending reaches 80% of your set limit and even trigger automated actions to halt further deployments. This proactive monitoring helps maintain fiscal responsibility and prevents unexpected cost overruns.
 
-![The image shows an AWS Budgets dashboard with various budget categories, their thresholds, amounts used, and forecasted amounts, highlighting one budget that has been exceeded.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861517/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Tools-for-Billing-Analysis-and-Support/frame_440.jpg)
+![The image shows an AWS Budgets dashboard with various budget categories, their thresholds, amounts used, and forecasted amounts, highlighting one budget that has been exceeded.](https://kodekloud.com/kk-media/image/upload/v1752861517/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Tools-for-Billing-Analysis-and-Support/frame_440.jpg)
 
 Budgets also allow monitoring of forecasted costs. In one instance, an EC2 budget might show a forecast of 96.67% current usage and a projected 136.64% if current spending trends continue. This interactive dashboard provides detailed insights into spending performance.
 
-![The image shows an AWS Budgets visual for EC2, indicating budget health with current and forecasted spending exceeding the budget.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861518/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Tools-for-Billing-Analysis-and-Support/frame_530.jpg)
+![The image shows an AWS Budgets visual for EC2, indicating budget health with current and forecasted spending exceeding the budget.](https://kodekloud.com/kk-media/image/upload/v1752861518/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Tools-for-Billing-Analysis-and-Support/frame_530.jpg)
 
 Additionally, you can export budget reports as CSV files. AWS Budgets not only sets spending limits but also allows for customized actions, such as stopping new resource launches, once defined thresholds are reached.
 
-![The image illustrates billing tools for budgets, highlighting features like setting budget limits, default limits, and combining with other services, alongside a green email icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861519/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Tools-for-Billing-Analysis-and-Support/frame_570.jpg)
+![The image illustrates billing tools for budgets, highlighting features like setting budget limits, default limits, and combining with other services, alongside a green email icon.](https://kodekloud.com/kk-media/image/upload/v1752861519/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Tools-for-Billing-Analysis-and-Support/frame_570.jpg)
 
 ***
 

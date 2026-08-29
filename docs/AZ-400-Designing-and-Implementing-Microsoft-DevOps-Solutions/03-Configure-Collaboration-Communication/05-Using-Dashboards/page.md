@@ -6,7 +6,7 @@ Azure dashboards provide an interactive interface for monitoring performance and
 
 Azure dashboards provide a unified, interactive interface to monitor performance, utilization, and health metrics across your Azure infrastructure. By aggregating data from Azure services and external sources, these customizable dashboards help DevOps teams gain actionable insights, optimize costs, and accelerate troubleshooting.
 
-![The image is an introduction to Azure Dashboards, highlighting their use as interactive data visualization tools for creating customized dashboards to monitor and analyze data from Azure services. It includes a graphic of a laptop displaying various data visualization elements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867457/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Dashboards/azure-dashboards-introduction-data-visualization.jpg)
+![The image is an introduction to Azure Dashboards, highlighting their use as interactive data visualization tools for creating customized dashboards to monitor and analyze data from Azure services. It includes a graphic of a laptop displaying various data visualization elements.](https://kodekloud.com/kk-media/image/upload/v1752867457/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Dashboards/azure-dashboards-introduction-data-visualization.jpg)
 
 ## Key Features
 
@@ -20,7 +20,7 @@ Azure dashboards provide a unified, interactive interface to monitor performance
 | Sharing and Collaboration | Grant roles or share read-only links to co-author and review dashboards.              |
 | Automation and Scripting  | Deploy templates (ARM, Bicep) or call REST APIs to create/update dashboards at scale. |
 
-![The image is an introduction to Azure Dashboards, highlighting five features: Centralized Monitoring, Customizable Layouts, Integrated Data Sources, Sharing and Collaboration, and Automation and Scripting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867458/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Dashboards/azure-dashboards-introduction-features.jpg)
+![The image is an introduction to Azure Dashboards, highlighting five features: Centralized Monitoring, Customizable Layouts, Integrated Data Sources, Sharing and Collaboration, and Automation and Scripting.](https://kodekloud.com/kk-media/image/upload/v1752867458/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Dashboards/azure-dashboards-introduction-features.jpg)
 
 ## Common Use Cases
 
@@ -40,7 +40,7 @@ Azure dashboards seamlessly integrate with Azure Monitor and Log Analytics to fo
 * Run Kusto Query Language (KQL) queries to filter, aggregate, and correlate log data.
 * Pin chart and grid visualizations directly from Log Analytics or Application Insights.
 
-![The image shows an Azure dashboard for monitoring, featuring various charts and graphs displaying data related to work assignments, build health, team velocity, and test cases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867460/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Dashboards/azure-dashboard-monitoring-charts-graphs.jpg)
+![The image shows an Azure dashboard for monitoring, featuring various charts and graphs displaying data related to work assignments, build health, team velocity, and test cases.](https://kodekloud.com/kk-media/image/upload/v1752867460/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Dashboards/azure-dashboard-monitoring-charts-graphs.jpg)
 
 ## Best Practices
 
@@ -58,7 +58,7 @@ Azure dashboards seamlessly integrate with Azure Monitor and Log Analytics to fo
 5. Encourage Collaboration\
    Leverage comments, annotations, and versioned templates so that teams can iterate on dashboard designs.
 
-![The image lists five best practices for dashboards: design, metric selection, data sources, access controls, and sharing, each in a colored bar.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867461/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Dashboards/dashboard-best-practices-design-metrics.jpg)
+![The image lists five best practices for dashboards: design, metric selection, data sources, access controls, and sharing, each in a colored bar.](https://kodekloud.com/kk-media/image/upload/v1752867461/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Dashboards/dashboard-best-practices-design-metrics.jpg)
 
 Azure dashboards empower teams to monitor, analyze, and optimize cloud resources within a single pane of glass. By leveraging customization, automation, and deep integration with Azure Monitor and Log Analytics, you can accelerate troubleshooting, improve governance, and drive continuous improvement across your Azure environment.
 

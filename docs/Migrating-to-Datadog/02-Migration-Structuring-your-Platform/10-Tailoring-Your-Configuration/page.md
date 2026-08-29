@@ -20,9 +20,7 @@ Objectives:
 * Configure an appropriate Agent log level so the Agent does not create excess logs.
 * Make collection, filters, and tags explicit so you collect only what you need.
 
-<Callout icon="lightbulb">
-  Start with conservative collection rules. Enable additional sources, higher verbosity, or broader scraping only when you need them for troubleshooting. Incrementally expand data collection after validating cost and usefulness.
-</Callout>
+> **lightbulb** Start with conservative collection rules. Enable additional sources, higher verbosity, or broader scraping only when you need them for troubleshooting. Incrementally expand data collection after validating cost and usefulness.
 
 ## Agent-level settings
 

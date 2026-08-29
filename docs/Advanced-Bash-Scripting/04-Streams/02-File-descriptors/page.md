@@ -26,7 +26,7 @@ By convention on Linux and most Unix-like systems, three file descriptors are pr
 
 Any descriptor ≥ 3 can reference additional resources: open files, sockets, pipes, or terminal devices.
 
-![The image shows a diagram labeled "File Descriptors" with numbered circles from 0 to 4, followed by ellipses, indicating a sequence.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868631/notes-assets/images/Advanced-Bash-Scripting-File-descriptors/file-descriptors-diagram-sequence.jpg)
+![The image shows a diagram labeled "File Descriptors" with numbered circles from 0 to 4, followed by ellipses, indicating a sequence.](https://kodekloud.com/kk-media/image/upload/v1752868631/notes-assets/images/Advanced-Bash-Scripting-File-descriptors/file-descriptors-diagram-sequence.jpg)
 
 > **lightbulb** File descriptors are assigned per process. When a program opens a new file, the OS returns the smallest unused descriptor number (starting at 3).
 
@@ -42,7 +42,7 @@ Imagine a library where:
 
 When you hand a call number (descriptor) to the librarian, they fetch the corresponding book (I/O resource). This models how your shell uses descriptors to route input/output.
 
-![The image shows a simple illustration of a person at a desk with books, accompanied by labels "Call Number" and "Book." The title "File Descriptors" is at the top.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868632/notes-assets/images/Advanced-Bash-Scripting-File-descriptors/file-descriptors-person-desk-illustration.jpg)
+![The image shows a simple illustration of a person at a desk with books, accompanied by labels "Call Number" and "Book." The title "File Descriptors" is at the top.](https://kodekloud.com/kk-media/image/upload/v1752868632/notes-assets/images/Advanced-Bash-Scripting-File-descriptors/file-descriptors-person-desk-illustration.jpg)
 
 ***
 
@@ -56,7 +56,7 @@ Applying the library analogy to standard streams:
 
 Just as a library holds many books, a running process can have dozens or even thousands of open descriptors (3, 4, 5, …).
 
-![The image is a diagram illustrating file descriptors, showing "Stdin" as 0, "Stdout" as 1, and "Stderr" as 2, with additional descriptors labeled 3, 4, and so on.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868634/notes-assets/images/Advanced-Bash-Scripting-File-descriptors/file-descriptors-diagram-stdin-stdout-stderr.jpg)
+![The image is a diagram illustrating file descriptors, showing "Stdin" as 0, "Stdout" as 1, and "Stderr" as 2, with additional descriptors labeled 3, 4, and so on.](https://kodekloud.com/kk-media/image/upload/v1752868634/notes-assets/images/Advanced-Bash-Scripting-File-descriptors/file-descriptors-diagram-stdin-stdout-stderr.jpg)
 
 ***
 

@@ -81,13 +81,9 @@ controlplane ~/quickstart * aws s3 ls
 
 ***
 
-<Callout icon="lightbulb">
-  For more details on Pulumi and AWS integration, visit the [Pulumi Documentation](https://www.pulumi.com/docs/).
-</Callout>
+> **lightbulb** For more details on Pulumi and AWS integration, visit the [Pulumi Documentation](https://www.pulumi.com/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pulumi-essentials/module/ea00d2be-be1c-4d36-8ac2-e76b0438de84/lesson/3dbe612a-a69c-4459-aeb1-43bc2219cb0d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pulumi-essentials/module/ea00d2be-be1c-4d36-8ac2-e76b0438de84/lesson/3dbe612a-a69c-4459-aeb1-43bc2219cb0d)
 
 
 # Conclusion
@@ -98,13 +94,9 @@ This article discusses Pulumi's capabilities for managing infrastructure as code
 
 This article wraps up our discussion on Pulumi and its capabilities for managing infrastructure as code. Pulumi empowers you to leverage familiar programming languages like Python and JavaScript, providing you with access to extensive ecosystems, libraries, and tools. This approach not only simplifies the process of defining your infrastructure but also enhances your ability to manage it efficiently.
 
-<Callout icon="lightbulb">
-  By using languages you already know, you can integrate full programming logic into your infrastructure management, enabling more robust and maintainable solutions.
-</Callout>
+> **lightbulb** By using languages you already know, you can integrate full programming logic into your infrastructure management, enabling more robust and maintainable solutions.
 
 We hope you found this exploration of Pulumi insightful and valuable. Stay tuned for our next lesson, where we'll dive deeper into advanced techniques and best practices for infrastructure management.\
 See you in the next one!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pulumi-essentials/module/9d060695-e802-410a-9e74-9c7d18501300/lesson/21940ccd-338e-41a3-8cba-723c231a6ee1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pulumi-essentials/module/9d060695-e802-410a-9e74-9c7d18501300/lesson/21940ccd-338e-41a3-8cba-723c231a6ee1)

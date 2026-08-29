@@ -12,11 +12,11 @@ Begin by searching for "Step Functions" in the AWS Console. This search leads yo
 
 Select **"Create state machine"** to start. AWS offers several templates to help you begin quickly without building the entire workflow from scratch. Although you can explore these templates, this demonstration uses a blank template so you can build the workflow step by step.
 
-![The image shows a selection screen for choosing a template in the AWS Step Functions console, with various options for different use cases like data processing and microservice APIs. Each template is represented with icons and brief descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858356/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-template-selection.jpg)
+![The image shows a selection screen for choosing a template in the AWS Step Functions console, with various options for different use cases like data processing and microservice APIs. Each template is represented with icons and brief descriptions.](https://kodekloud.com/kk-media/image/upload/v1752858356/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-template-selection.jpg)
 
 After selecting the blank template, the authoring window will appear. At the center is your workflow canvas with a "Start" point at the top and an "End" state at the bottom. You will drag and drop various actions between these endpoints to build your logic.
 
-![The image shows the AWS Step Functions interface, where a state machine is being designed. It includes a start and end state with a placeholder to drag the first state, and a sidebar with various AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858358/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-state-machine-design.jpg)
+![The image shows the AWS Step Functions interface, where a state machine is being designed. It includes a start and end state with a placeholder to drag the first state, and a sidebar with various AWS services.](https://kodekloud.com/kk-media/image/upload/v1752858358/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-state-machine-design.jpg)
 
 On the left sidebar, you find a list of actions and integrations with many AWS services. Under the "Most Popular" section, common actions such as invoking a Lambda function, publishing to SNS, or running an ECS task are readily available. Scrolling down reveals even more integrations, giving you the versatility to build varied workflows.
 
@@ -37,7 +37,7 @@ Drag this Lambda function onto your state machine canvas. Although an “X” ma
 3. From the dropdown, choose the **"detect\_threat"** Lambda function.
 4. Configure the state payload to pass the state input (e.g., video clip or event metadata) to the Lambda function.
 
-![The image shows an AWS Step Functions interface where a state machine named "MyStateMachine-bd6inz729" is being designed. It includes a Lambda function called "Detect Threat" with configuration details on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858359/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-mystate-machine-lambda.jpg)
+![The image shows an AWS Step Functions interface where a state machine named "MyStateMachine-bd6inz729" is being designed. It includes a Lambda function called "Detect Threat" with configuration details on the right.](https://kodekloud.com/kk-media/image/upload/v1752858359/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-mystate-machine-lambda.jpg)
 
 By default, the entire input object is passed. In advanced use cases, you may filter the input to include only the necessary fields.
 
@@ -55,7 +55,7 @@ export const handler = async (event) => {
 
 Under the state configuration, you can enable wait-for-callback functionality for human intervention when necessary (such as order approval scenarios). For this demo, we keep it disabled. Finally, set the state to transition to the "End" state (or later, branch into a Choice state).
 
-![The image shows an AWS Step Functions interface with a state machine named "MyStateMachine-bd6inz729" in design mode. It includes a flow diagram with a "Detect Threat" Lambda function and configuration options on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858360/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-mystate-machine-diagram.jpg)
+![The image shows an AWS Step Functions interface with a state machine named "MyStateMachine-bd6inz729" in design mode. It includes a flow diagram with a "Detect Threat" Lambda function and configuration options on the right.](https://kodekloud.com/kk-media/image/upload/v1752858360/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-mystate-machine-diagram.jpg)
 
 The configuration also supports error handling with retry policies and catch statements. For instance, if the Lambda function encounters an error, you can configure retries. In our demo, basic error handling is enabled by default.
 
@@ -79,17 +79,17 @@ Next, add a second rule to handle the alternative outcome:
 
 For this condition, drag another Lambda state onto the canvas, name it **"no threat"**, and assign the Lambda function **"false\_positive."** Again, set the next state to **"End."** Ensure that any default rules are removed so the workflow strictly follows your conditions.
 
-![The image shows an AWS Step Functions interface where a state machine is being designed. It includes a flowchart with a "Detect Threat" Lambda function and a "Choice" state, along with options for adding different actions and configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858362/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-state-machine-diagram-2.jpg)
+![The image shows an AWS Step Functions interface where a state machine is being designed. It includes a flowchart with a "Detect Threat" Lambda function and a "Choice" state, along with options for adding different actions and configurations.](https://kodekloud.com/kk-media/image/upload/v1752858362/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-state-machine-diagram-2.jpg)
 
-![The image shows an AWS Step Functions interface with a workflow diagram on the right, including states like "Detect Threat" and "Threat Found." The left panel lists popular AWS services such as Lambda and SNS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858363/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-workflow-diagram.jpg)
+![The image shows an AWS Step Functions interface with a workflow diagram on the right, including states like "Detect Threat" and "Threat Found." The left panel lists popular AWS services such as Lambda and SNS.](https://kodekloud.com/kk-media/image/upload/v1752858363/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-workflow-diagram.jpg)
 
 Finally, connect the outputs from the Choice state to their respective Lambda function states. The **"threat found"** branch will handle confirmed threats (such as triggering alerts or sending notifications), while the **"no threat"** branch logs the event for false positives.
 
-![The image shows an AWS Step Functions interface with a workflow diagram for detecting threats. It includes Lambda functions and a choice state for decision-making based on threat detection results.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858364/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-threat-detection.jpg)
+![The image shows an AWS Step Functions interface with a workflow diagram for detecting threats. It includes Lambda functions and a choice state for decision-making based on threat detection results.](https://kodekloud.com/kk-media/image/upload/v1752858364/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-threat-detection.jpg)
 
 Additional integrations—like integrating with SES for email or SMS notifications—can be added. For this demonstration, we conclude the workflow after linking the branches.
 
-![The image shows an AWS Step Functions interface with a workflow diagram for detecting threats, including Lambda functions and choice states.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858365/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-threat-detection-diagram.jpg)
+![The image shows an AWS Step Functions interface with a workflow diagram for detecting threats, including Lambda functions and choice states.](https://kodekloud.com/kk-media/image/upload/v1752858365/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-threat-detection-diagram.jpg)
 
 ## Creating and Testing the State Machine
 
@@ -108,7 +108,7 @@ Once created, initiate an execution by clicking **"Start Execution."** You will 
 
 After starting the execution, AWS Step Functions displays the progress in a graphical view. The workflow begins at **"detect threat,"** passes through the Choice state, and follows the corresponding branch based on the result ("Threat Found" or "No Threat").
 
-![The image shows an AWS Step Functions interface with a state machine design. It includes a "Lambda Invoke" state, and there is an error notification indicating that the workflow is not created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858366/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-state-machine-error.jpg)
+![The image shows an AWS Step Functions interface with a state machine design. It includes a "Lambda Invoke" state, and there is an error notification indicating that the workflow is not created.](https://kodekloud.com/kk-media/image/upload/v1752858366/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-state-machine-error.jpg)
 
 You can click on individual steps to review input and output details, which provide insights into:
 
@@ -116,13 +116,13 @@ You can click on individual steps to review input and output details, which prov
 * The result from the "detect threat" function
 * The decisions evaluated at the Choice state and the subsequent actions taken
 
-![The image shows an AWS Step Functions interface with a flowchart depicting a process that starts with "Detect Threat," followed by a "Choice" node leading to either "Threat Found" or "No Threat," and ending the process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858368/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-threat-detection-flowchart.jpg)
+![The image shows an AWS Step Functions interface with a flowchart depicting a process that starts with "Detect Threat," followed by a "Choice" node leading to either "Threat Found" or "No Threat," and ending the process.](https://kodekloud.com/kk-media/image/upload/v1752858368/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-threat-detection-flowchart.jpg)
 
 Running multiple executions may result in varied branches being taken, confirming that the Choice state functions as expected.
 
 Finally, return to the main state machine overview to review execution statistics—such as total runs, successes, and failures. The interface allows you to switch between graphical and table views to analyze execution history in detail.
 
-![The image shows an AWS Step Functions console with a list of events related to a state machine execution, including steps like "Detect Threat" and "No Threat," with timestamps and statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858369/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-state-machine-events.jpg)
+![The image shows an AWS Step Functions console with a list of events related to a state machine execution, including steps like "Detect Threat" and "No Threat," with timestamps and statuses.](https://kodekloud.com/kk-media/image/upload/v1752858369/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions-Demo/aws-step-functions-state-machine-events.jpg)
 
 ## Conclusion
 

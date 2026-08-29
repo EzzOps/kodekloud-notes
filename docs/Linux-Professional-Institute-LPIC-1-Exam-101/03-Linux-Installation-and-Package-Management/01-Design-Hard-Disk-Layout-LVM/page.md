@@ -24,9 +24,7 @@ We’ve attached three new 5 GiB virtual disks to our CentOS VM. If you haven’
 sudo dnf install lvm2
 ```
 
-<Callout icon="lightbulb">
-  Most LVM operations require root privileges. Prepend `sudo` or switch to the root user before proceeding.
-</Callout>
+> **lightbulb** Most LVM operations require root privileges. Prepend `sudo` or switch to the root user before proceeding.
 
 ***
 
@@ -178,9 +176,7 @@ Reduce **partition1** back to 2 GiB:
 sudo lvresize --size 2G /dev/my_volume/partition1
 ```
 
-<Callout icon="triangle-alert">
-  Shrinking a filesystem without shrinking the filesystem itself first can lead to data loss. Always unmount, run a filesystem check, and resize the filesystem before reducing an LV.
-</Callout>
+> **triangle-alert** Shrinking a filesystem without shrinking the filesystem itself first can lead to data loss. Always unmount, run a filesystem check, and resize the filesystem before reducing an LV.
 
 ***
 
@@ -226,6 +222,4 @@ sudo lvresize --resizefs --size 3G /dev/my_volume/partition1
 * [mkfs.xfs Man Page](https://linux.die.net/man/8/mkfs.xfs)
 * [KVM Virtual Disks](https://www.linux-kvm.org/page/Storage)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/4350fea4-2189-46b2-9859-6e9d25cc902c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/4350fea4-2189-46b2-9859-6e9d25cc902c)

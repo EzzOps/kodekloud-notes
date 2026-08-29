@@ -52,13 +52,11 @@ Table — Tracking and allocation at a glance:
 | Billing Conductor          |          Custom billing views / internal chargebacks | Create pricing rules for internal teams                    |
 | Cost Categories            |                            Logical grouping of spend | Map accounts/services to business groups                   |
 
-<Callout icon="lightbulb">
-  Chargeback vs showback — quick definitions:
+> **lightbulb** Chargeback vs showback — quick definitions:
 
   * Chargeback: assigning costs back to the consuming team or business unit, often with an internal invoice.
   * Showback: reporting consumption and costs to teams without issuing internal invoices.
     Both patterns depend on consistent tagging and reliable Cost and Usage Reports.
-</Callout>
 
 ***
 
@@ -130,6 +128,4 @@ In the next lesson we will shift focus to managing costs on [Google Cloud Platfo
 
 That’s it for this lesson — see you in the next one.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/b623bd4d-2f47-4afb-a61b-f224315cfbe1/lesson/06a08a31-c83e-4808-8bdf-16daf1b8fdbc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/b623bd4d-2f47-4afb-a61b-f224315cfbe1/lesson/06a08a31-c83e-4808-8bdf-16daf1b8fdbc)

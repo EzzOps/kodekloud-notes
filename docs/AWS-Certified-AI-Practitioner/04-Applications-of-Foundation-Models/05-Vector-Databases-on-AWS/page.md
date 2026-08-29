@@ -6,7 +6,7 @@ This lesson explores managing vector embeddings and databases on AWS for generat
 
 Welcome students! In this lesson, we explore various options for managing vector embeddings and vector databases on AWS. Vector embeddings are numerical representations of data—such as text and images—that capture semantic relationships, enabling efficient retrieval in generative AI, machine learning, and search applications. AWS offers a range of managed services to store and work with these embeddings.
 
-![The image is an introduction to AWS Vector Database Services, explaining that vector databases store data as embeddings for efficient AI searches, and AWS services help manage these embeddings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857286/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/aws-vector-database-introduction.jpg)
+![The image is an introduction to AWS Vector Database Services, explaining that vector databases store data as embeddings for efficient AI searches, and AWS services help manage these embeddings.](https://kodekloud.com/kk-media/image/upload/v1752857286/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/aws-vector-database-introduction.jpg)
 
 ## Amazon OpenSearch
 
@@ -14,9 +14,9 @@ Amazon OpenSearch, built on the legacy Elasticsearch platform, is a widely known
 
 Key features of OpenSearch include its k-Nearest Neighbor (k-NN) search, which quickly identifies semantically related vectors. OpenSearch integrates seamlessly with AWS Bedrock and SageMaker, ensuring real-time data ingestion and indexing for dynamic applications.
 
-![The image is a promotional graphic for Amazon OpenSearch Service for Generative AI, highlighting features like optimization for vector databases, high-performance vector similarity search, and scalable infrastructure for large AI models.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857287/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/amazon-opensearch-generative-ai-promo.jpg)
+![The image is a promotional graphic for Amazon OpenSearch Service for Generative AI, highlighting features like optimization for vector databases, high-performance vector similarity search, and scalable infrastructure for large AI models.](https://kodekloud.com/kk-media/image/upload/v1752857287/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/amazon-opensearch-generative-ai-promo.jpg)
 
-![The image lists key features of Amazon OpenSearch Service, including k-Nearest Neighbors for vector queries, integration with machine learning workflows, and real-time data ingestion for AI applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857288/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/amazon-opensearch-features-ai.jpg)
+![The image lists key features of Amazon OpenSearch Service, including k-Nearest Neighbors for vector queries, integration with machine learning workflows, and real-time data ingestion for AI applications.](https://kodekloud.com/kk-media/image/upload/v1752857288/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/amazon-opensearch-features-ai.jpg)
 
 ### Use Cases for OpenSearch
 
@@ -27,37 +27,37 @@ OpenSearch is well-suited for:
 * Enhanced conversational AI via rapid contextual retrieval.
 * Log analytics for real-time application monitoring and website search.
 
-![The image lists use cases for OpenSearch Service in generative AI applications, including powering recommendation engines, enabling semantic search, enhancing conversational AI, and facilitating log analytics and monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857290/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/opensearch-service-generative-ai-use-cases.jpg)
+![The image lists use cases for OpenSearch Service in generative AI applications, including powering recommendation engines, enabling semantic search, enhancing conversational AI, and facilitating log analytics and monitoring.](https://kodekloud.com/kk-media/image/upload/v1752857290/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/opensearch-service-generative-ai-use-cases.jpg)
 
 Semantic search, powered by language encoding, improves search relevance by linking meaningful relationships between data elements. Its quick retrieval capabilities and scalability make it an excellent choice for performance-driven and accurate applications.
 
-![The image is an infographic about semantic search with Amazon OpenSearch Service, highlighting the use of language-based embeddings for improved search relevance and efficiency in AI and machine learning tasks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857292/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/semantic-search-amazon-opensearch-infographic.jpg)
+![The image is an infographic about semantic search with Amazon OpenSearch Service, highlighting the use of language-based embeddings for improved search relevance and efficiency in AI and machine learning tasks.](https://kodekloud.com/kk-media/image/upload/v1752857292/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/semantic-search-amazon-opensearch-infographic.jpg)
 
 ## Amazon Aurora with PgVector Extension
 
 Another powerful option is Amazon Aurora’s PostgreSQL-Compatible Edition with the PgVector extension. PgVector enables the integration of vector embeddings generated by machine learning models directly into the database. This integration facilitates the storage and semantic indexing of data derived from large language models, making it ideal for recommendation systems and catalog searches.
 
-![The image describes the Amazon Aurora PostgreSQL-Compatible Edition and Amazon RDS for PostgreSQL supporting the pgvector extension, which enables storage and similarity searches using ML-generated embeddings to capture semantic meaning from text processed by large language models (LLMs).](../../../../images/kodekloud.com/kk-media/image/upload/v1752857295/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/amazon-aurora-postgresql-pgvector.jpg)
+![The image describes the Amazon Aurora PostgreSQL-Compatible Edition and Amazon RDS for PostgreSQL supporting the pgvector extension, which enables storage and similarity searches using ML-generated embeddings to capture semantic meaning from text processed by large language models (LLMs).](https://kodekloud.com/kk-media/image/upload/v1752857295/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/amazon-aurora-postgresql-pgvector.jpg)
 
 ## Amazon Neptune ML
 
 Amazon Neptune ML combines traditional graph database capabilities with advanced machine learning features. By leveraging graph neural networks (GNNs), Neptune ML enhances predictive models by analyzing complex inter-data relationships. Integrated with the Deep Graph Library (DGL), this service simplifies model selection and training—ideal for use cases where relationships between data points are critical.
 
-![The image is a slide about "pgvector for ML-Driven Applications on AWS," highlighting its integration with Amazon Bedrock and SageMaker, and its ability to find similar items and provide personalized recommendations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857296/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/pgvector-ml-apps-aws-bedrock-sagemaker.jpg)
+![The image is a slide about "pgvector for ML-Driven Applications on AWS," highlighting its integration with Amazon Bedrock and SageMaker, and its ability to find similar items and provide personalized recommendations.](https://kodekloud.com/kk-media/image/upload/v1752857296/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/pgvector-ml-apps-aws-bedrock-sagemaker.jpg)
 
-![The image is about Amazon Neptune ML, highlighting its use of Graph Neural Networks (GNNs) to enhance predictions with complex graph relationships and its leverage of the Deep Graph Library (DGL) for simplifying model selection and training.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857296/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/amazon-neptune-ml-gnns-dgl.jpg)
+![The image is about Amazon Neptune ML, highlighting its use of Graph Neural Networks (GNNs) to enhance predictions with complex graph relationships and its leverage of the Deep Graph Library (DGL) for simplifying model selection and training.](https://kodekloud.com/kk-media/image/upload/v1752857296/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/amazon-neptune-ml-gnns-dgl.jpg)
 
 ## Amazon MemoryDB
 
 Amazon MemoryDB, an in-memory database service, offers robust vector search capabilities. With support for purpose-built engines like Valkyrie or Redis, MemoryDB delivers high-throughput vector searches with latencies in the single-digit milliseconds. It handles millions of vectors and high query volumes, ensuring high recall accuracy and reliability through multi-AZ configurations. This makes MemoryDB suitable as both a caching layer and a primary database with built-in backup support.
 
-![The image describes features of Vector Search for Amazon MemoryDB, highlighting its compatibility, high throughput, support for machine learning applications, query handling capacity, and multi-AZ durability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857298/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/vector-search-amazon-memorydb-features.jpg)
+![The image describes features of Vector Search for Amazon MemoryDB, highlighting its compatibility, high throughput, support for machine learning applications, query handling capacity, and multi-AZ durability.](https://kodekloud.com/kk-media/image/upload/v1752857298/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/vector-search-amazon-memorydb-features.jpg)
 
 ## Amazon DocumentDB
 
 Amazon DocumentDB, compatible with MongoDB, provides similar vector search capabilities. This document database allows for efficient storing, indexing, and searching of vector embeddings. It integrates easily with major generative AI and machine learning services and supports custom model deployments. In addition, DocumentDB facilitates log analytics, application monitoring, and website search.
 
-![The image is about Amazon DocumentDB with MongoDB compatibility, highlighting features like vector search, integration with Amazon services, and capabilities for log analytics and monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857300/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/amazon-documentdb-mongodb-features.jpg)
+![The image is about Amazon DocumentDB with MongoDB compatibility, highlighting features like vector search, integration with Amazon services, and capabilities for log analytics and monitoring.](https://kodekloud.com/kk-media/image/upload/v1752857300/notes-assets/images/AWS-Certified-AI-Practitioner-Vector-Databases-on-AWS/amazon-documentdb-mongodb-features.jpg)
 
 ## Retrieval-Augmented Generation with AWS Bedrock
 

@@ -15,13 +15,9 @@ Useful commands
   * `kubectl describe vpa flask-app`
   * `kubectl get vpa flask-app -o yaml`
 
-<Callout icon="lightbulb">
-  Millicore reminder: 1 CPU = 1000m. So `100m` = 0.1 CPU and `126m` ≈ 0.126 CPU.
-</Callout>
+> **lightbulb** Millicore reminder: 1 CPU = 1000m. So `100m` = 0.1 CPU and `126m` ≈ 0.126 CPU.
 
-<Callout icon="warning">
-  Caution when using `updateMode: "Auto"`: automatic updates may restart pods to change requests. Use Auto in production only after validating recommendations and testing rollout behavior.
-</Callout>
+> **warning** Caution when using `updateMode: "Auto"`: automatic updates may restart pods to change requests. Use Auto in production only after validating recommendations and testing rollout behavior.
 
 Step-by-step walkthrough
 
@@ -46,11 +42,9 @@ Links and references
 * [Kubernetes Vertical Pod Autoscaler (VPA) — GitHub](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
 * [Kubernetes Documentation — Resource Management](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/a56af162-4e6a-40ea-978c-d8aff9dd829e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/a56af162-4e6a-40ea-978c-d8aff9dd829e)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/2a00b551-7fd9-454a-aac3-4ab2a66b7e0f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/2a00b551-7fd9-454a-aac3-4ab2a66b7e0f)
 
 
 # VPA CPU Memory in Action Demo
@@ -218,9 +212,7 @@ I0104 12:28:33.901166        1 updater.go:150] skipping VPA object default/flask
 W0104 12:28:33.901197        1 updater.go:166] no VPA objects to process
 ```
 
-<Callout icon="lightbulb">
-  VPA behavior is split into two concerns: (1) computing recommendations based on observed usage, and (2) applying those recommendations by evicting pods so new pods start with updated requests. `updateMode: Off` disables automatic application; use `Auto` or `Recreate` to enable eviction and automatic application.
-</Callout>
+> **lightbulb** VPA behavior is split into two concerns: (1) computing recommendations based on observed usage, and (2) applying those recommendations by evicting pods so new pods start with updated requests. `updateMode: Off` disables automatic application; use `Auto` or `Recreate` to enable eviction and automatic application.
 
 ## 5) Enable automatic updates
 
@@ -249,9 +241,7 @@ Expected output:
 Auto
 ```
 
-<Callout icon="warning">
-  Enabling `Auto` (or `Recreate`) will allow the VPA updater to evict pods to apply recommended resource requests. Be prepared for transient pod restarts and possible brief disruptions to service. Use during maintenance windows if running in production.
-</Callout>
+> **warning** Enabling `Auto` (or `Recreate`) will allow the VPA updater to evict pods to apply recommended resource requests. Be prepared for transient pod restarts and possible brief disruptions to service. Use during maintenance windows if running in production.
 
 ## 6) Watch the updater apply recommendations
 

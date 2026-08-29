@@ -89,11 +89,9 @@ type WebApp struct {
 }
 ```
 
-<Callout icon="lightbulb">
-  Kubebuilder marker comments such as `+kubebuilder:object:root=true` and
+> **lightbulb** Kubebuilder marker comments such as `+kubebuilder:object:root=true` and
   `+kubebuilder:subresource:status` are directives for the code generator (controller-gen).
   They control what gets generated in the CRD YAML and client code.
-</Callout>
 
 ## Generate CRD YAML from types
 
@@ -182,11 +180,9 @@ Recommended references:
 * controller-tools (controller-gen): [https://github.com/kubernetes-sigs/controller-tools](https://github.com/kubernetes-sigs/controller-tools)
 * Kubernetes API conventions: [https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/20a4ec01-fde8-466d-83c7-2f74f6def1f0/lesson/d932751a-9d7f-4073-980a-8e0b11d2ac32" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/20a4ec01-fde8-466d-83c7-2f74f6def1f0/lesson/d932751a-9d7f-4073-980a-8e0b11d2ac32)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/20a4ec01-fde8-466d-83c7-2f74f6def1f0/lesson/0c4c1572-2b9f-4864-906e-fd837e90b838" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/20a4ec01-fde8-466d-83c7-2f74f6def1f0/lesson/0c4c1572-2b9f-4864-906e-fd837e90b838)
 
 
 # Demo Kubebuilder Init

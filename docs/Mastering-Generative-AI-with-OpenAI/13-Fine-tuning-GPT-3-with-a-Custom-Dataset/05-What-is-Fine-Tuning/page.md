@@ -10,19 +10,13 @@ In this lesson, we’ll define **fine-tuning** and compare it with **dynamic con
 
 Rather than repeatedly attaching external context to every API call, fine-tuning lets you **retrain** an existing model on your own up-to-date, domain-specific data—PDFs, web pages, CSVs, or any other format. The model’s parameters internalize your private information, eliminating token-window headaches and simplifying your application logic.
 
-<Frame>
-  ![The image explains fine-tuning, showing a person with icons for LLMs and datasets, and describes it as an alternative to using dynamic context with prompts. It suggests considering fine-tuning when frequently adding external data to prompts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881506/notes-assets/images/Mastering-Generative-AI-with-OpenAI-What-is-Fine-Tuning/fine-tuning-llms-datasets-explained.jpg)
-</Frame>
+![The image explains fine-tuning, showing a person with icons for LLMs and datasets, and describes it as an alternative to using dynamic context with prompts. It suggests considering fine-tuning when frequently adding external data to prompts.](https://kodekloud.com/kk-media/image/upload/v1752881506/notes-assets/images/Mastering-Generative-AI-with-OpenAI-What-is-Fine-Tuning/fine-tuning-llms-datasets-explained.jpg)
 
 If you’re attaching external data to nearly every prompt, fine-tuning is probably the better path.
 
-<Frame>
-  ![The image lists key reasons to fine-tune models, including retraining with refreshed data, overcoming context length limitations, avoiding dynamic context overhead, increasing response speed, and achieving higher quality responses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881507/notes-assets/images/Mastering-Generative-AI-with-OpenAI-What-is-Fine-Tuning/fine-tuning-models-reasons-list.jpg)
-</Frame>
+![The image lists key reasons to fine-tune models, including retraining with refreshed data, overcoming context length limitations, avoiding dynamic context overhead, increasing response speed, and achieving higher quality responses.](https://kodekloud.com/kk-media/image/upload/v1752881507/notes-assets/images/Mastering-Generative-AI-with-OpenAI-What-is-Fine-Tuning/fine-tuning-models-reasons-list.jpg)
 
-<Callout icon="lightbulb">
-  Fine-tuning can dramatically cut latency and reduce prompt-management complexity when your application relies on frequent data updates.
-</Callout>
+> **lightbulb** Fine-tuning can dramatically cut latency and reduce prompt-management complexity when your application relies on frequent data updates.
 
 ## Key Advantages of Fine-Tuning
 
@@ -44,6 +38,4 @@ This walkthrough will cover the end-to-end process of fine-tuning an OpenAI mode
 * [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model)
 * [OpenAI Fine-Tuning Guide](https://platform.openai.com/docs/guides/fine-tuning)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/bdd763d1-210d-41de-a60c-607b722e7afe/lesson/a5c8cfd7-01c6-484c-a364-dc3d3b77d11a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/bdd763d1-210d-41de-a60c-607b722e7afe/lesson/a5c8cfd7-01c6-484c-a364-dc3d3b77d11a)

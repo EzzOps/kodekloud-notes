@@ -118,9 +118,7 @@ Scaling a ReplicaSet allows you to adjust the number of pod replicas based on de
    kubectl scale --replicas=6 replicaset myapp-replicaset
    ```
 
-<Callout icon="triangle-alert">
-  Scaling a ReplicaSet using `kubectl scale` does not update the replica count in your definition file. The file will still display the original number, so remember to update your file manually if you want consistency between configuration and actual state.
-</Callout>
+> **triangle-alert** Scaling a ReplicaSet using `kubectl scale` does not update the replica count in your definition file. The file will still display the original number, so remember to update your file manually if you want consistency between configuration and actual state.
 
 Automated scaling based on load is also possible, but it is beyond the scope of this article.
 
@@ -144,9 +142,7 @@ By understanding how labels, selectors, and pod templates interact, you can ensu
 
 For further details, explore the official [Kubernetes Documentation](https://kubernetes.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/e906151f-510c-48c7-8b82-86fe8ba10946" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/e906151f-510c-48c7-8b82-86fe8ba10946)
 
 
 # Demo Minikube Setup
@@ -159,17 +155,13 @@ In this lesson, we install a basic Kubernetes cluster using the Minikube utility
 
 We start by visiting the official Kubernetes website. Navigate to the Documentation section, then proceed to the Tasks and Install Tools area.
 
-<Frame>
-  ![The image shows the Kubernetes documentation webpage, featuring navigation links and a statement supporting the Black community against racism.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884871/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Demo-Minikube-Setup/frame_40.jpg)
-</Frame>
+![The image shows the Kubernetes documentation webpage, featuring navigation links and a statement supporting the Black community against racism.](https://kodekloud.com/kk-media/image/upload/v1752884871/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Demo-Minikube-Setup/frame_40.jpg)
 
 ## Installing kubectl
 
 Before installing Minikube, it is essential to install the kubectl command-line tool. Kubectl manages your Kubernetes resources and interacts with your cluster once it is set up via Minikube. Installing kubectl first enables Minikube to configure it correctly during provisioning.
 
-<Frame>
-  ![The image shows a webpage from Kubernetes documentation, specifically the "Install Tools" section, with links to set up kubectl and Minikube.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884872/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Demo-Minikube-Setup/frame_50.jpg)
-</Frame>
+![The image shows a webpage from Kubernetes documentation, specifically the "Install Tools" section, with links to set up kubectl and Minikube.](https://kodekloud.com/kk-media/image/upload/v1752884872/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Demo-Minikube-Setup/frame_50.jpg)
 
 While you might see various ways of fine-tuning its name, they all refer to this single utility.
 
@@ -217,9 +209,7 @@ Before installing Minikube, ensure virtualization is enabled on your machine. Th
 grep -E --color 'vmx|svm' /proc/cpuinfo
 ```
 
-<Callout icon="triangle-alert">
-  If no output is returned from the command above, virtualization may be disabled in your BIOS settings. Consult your laptop's manual or search online using your specific model to enable virtualization.
-</Callout>
+> **triangle-alert** If no output is returned from the command above, virtualization may be disabled in your BIOS settings. Consult your laptop's manual or search online using your specific model to enable virtualization.
 
 ## Installing Minikube
 
@@ -233,9 +223,7 @@ yum install VirtualBox-6.1
 
 Once VirtualBox is installed, launch it to see its interface. The image below shows VirtualBox with no running virtual machines—a new one will appear when Minikube starts the cluster.
 
-<Frame>
-  ![The image shows a webpage from Kubernetes documentation about installing Minikube, detailing hypervisor options like KVM and VirtualBox, and discussing the --driver=none option.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884874/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Demo-Minikube-Setup/frame_470.jpg)
-</Frame>
+![The image shows a webpage from Kubernetes documentation about installing Minikube, detailing hypervisor options like KVM and VirtualBox, and discussing the --driver=none option.](https://kodekloud.com/kk-media/image/upload/v1752884874/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Demo-Minikube-Setup/frame_470.jpg)
 
 ## Downloading and Installing Minikube
 
@@ -282,9 +270,7 @@ Downloading Kubernetes v1.18.3 preload ...
 
 In the VirtualBox Manager, you will see the "minikube" virtual machine running with 2 CPUs and 2 GB of RAM.
 
-<Frame>
-  ![The image shows the Oracle VM VirtualBox Manager interface with a virtual machine named "minikube" running, displaying its system and network settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884876/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Demo-Minikube-Setup/frame_670.jpg)
-</Frame>
+![The image shows the Oracle VM VirtualBox Manager interface with a virtual machine named "minikube" running, displaying its system and network settings.](https://kodekloud.com/kk-media/image/upload/v1752884876/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Demo-Minikube-Setup/frame_670.jpg)
 
 After the setup completes, kubectl is automatically configured to use the new Kubernetes cluster.
 
@@ -397,10 +383,6 @@ Your Minikube-based Kubernetes cluster is now operational, and you have successf
 
 Happy learning, and see you in the next lesson!
 
-<Callout icon="lightbulb">
-  Consider exploring additional Kubernetes resources such as the [Kubernetes Documentation](https://kubernetes.io/docs/) and tutorials to deepen your understanding of cluster management and container orchestration.
-</Callout>
+> **lightbulb** Consider exploring additional Kubernetes resources such as the [Kubernetes Documentation](https://kubernetes.io/docs/) and tutorials to deepen your understanding of cluster management and container orchestration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/5b966a64-54c6-46ff-b284-4299f34c8f84/lesson/6adccdb7-fa4b-4882-ab0d-7143abf61403" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/5b966a64-54c6-46ff-b284-4299f34c8f84/lesson/6adccdb7-fa4b-4882-ab0d-7143abf61403)

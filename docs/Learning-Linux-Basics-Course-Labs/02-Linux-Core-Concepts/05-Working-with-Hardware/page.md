@@ -6,15 +6,11 @@ This article explores how Linux detects and manages hardware devices, detailing 
 
 In this lesson, we explore how Linux detects and manages hardware devices connected to a system. You will learn about various command-line tools that list devices and provide detailed hardware information using the example of a USB disk. When a USB disk is attached, the corresponding device driver in the Linux kernel identifies the state change and generates a uEvent. This event is forwarded to the user-space device manager daemon, uDev, which then dynamically creates a device node under the /dev filesystem for the new drive.
 
-<Frame>
-  ![The image illustrates the process of hardware interaction, showing a USB disk connecting through device drivers in kernel space and udev in user space to /dev/sdb1.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881122/notes-assets/images/Learning-Linux-Basics-Course-Labs-Working-with-Hardware/frame_40.jpg)
-</Frame>
+![The image illustrates the process of hardware interaction, showing a USB disk connecting through device drivers in kernel space and udev in user space to /dev/sdb1.](https://kodekloud.com/kk-media/image/upload/v1752881122/notes-assets/images/Learning-Linux-Basics-Course-Labs-Working-with-Hardware/frame_40.jpg)
 
 Once this process completes, the new disk appears in the /dev filesystem.
 
-<Callout icon="lightbulb">
-  Linux utilizes a series of powerful command-line tools to provide visibility into kernel messages, device events, and hardware configurations. These tools are essential for troubleshooting and system administration.
-</Callout>
+> **lightbulb** Linux utilizes a series of powerful command-line tools to provide visibility into kernel messages, device events, and hardware configurations. These tools are essential for troubleshooting and system administration.
 
 ## Viewing Kernel and Device Events
 
@@ -36,9 +32,7 @@ UDEV - the event which udev sends out after rule processing
 KERNEL - the kernel uevent
 ```
 
-<Callout icon="lightbulb">
-  Use `udevadm monitor` to track details of newly attached or removed devices—for instance, when unplugging a USB mouse.
-</Callout>
+> **lightbulb** Use `udevadm monitor` to track details of newly attached or removed devices—for instance, when unplugging a USB mouse.
 
 ## Listing PCI Devices
 
@@ -232,8 +226,6 @@ Linux offers a wide range of tools to monitor and manage hardware devices, syste
 
 Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/19296611-5fb9-4e5d-a926-d157d3f3c3db/lesson/f2fdbb63-095b-40c1-8ec3-1835a4a90d53" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/19296611-5fb9-4e5d-a926-d157d3f3c3db/lesson/f2fdbb63-095b-40c1-8ec3-1835a4a90d53)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/19296611-5fb9-4e5d-a926-d157d3f3c3db/lesson/f10da73f-b3eb-484e-b02a-76e84bed0743" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/19296611-5fb9-4e5d-a926-d157d3f3c3db/lesson/f10da73f-b3eb-484e-b02a-76e84bed0743)

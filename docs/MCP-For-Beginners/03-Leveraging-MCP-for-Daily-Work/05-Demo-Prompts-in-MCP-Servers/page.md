@@ -92,9 +92,7 @@ Notes:
   * Zod: [https://www.npmjs.com/package/zod](https://www.npmjs.com/package/zod)
   * node-fetch: [https://www.npmjs.com/package/node-fetch](https://www.npmjs.com/package/node-fetch)
 
-<Callout icon="lightbulb">
-  If you see a warning about "Module type of file ... is not specified", add `"type": "module"` to your `package.json` to explicitly enable ESM and avoid reparsing warnings.
-</Callout>
+> **lightbulb** If you see a warning about "Module type of file ... is not specified", add `"type": "module"` to your `package.json` to explicitly enable ESM and avoid reparsing warnings.
 
 ## Server implementation (server.js)
 
@@ -358,6 +356,4 @@ OLLAMA RESPONSE:
 
 This tutorial demonstrates registering reusable prompt definitions in an MCP server, forwarding prompt text to a local Ollama instance, and validating behavior with the MCP Inspector and a small demo harness. The approach enables shared, version-controlled prompt management across teams and services.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/910a0b7a-ac6e-43f1-956e-203a70c3d455/lesson/1c9db747-2554-4fd8-94fe-ad357afe273f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/910a0b7a-ac6e-43f1-956e-203a70c3d455/lesson/1c9db747-2554-4fd8-94fe-ad357afe273f)

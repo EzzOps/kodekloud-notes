@@ -94,9 +94,7 @@ token_meta_username   bryan
 * `username=bryan`\
   Supplies the required username parameter.
 
-<Callout icon="lightbulb">
-  If you have multiple mounts of the same auth type, add `-path=<mount_path>` to specify the correct one.
-</Callout>
+> **lightbulb** If you have multiple mounts of the same auth type, add `-path=<mount_path>` to specify the correct one.
 
 ***
 
@@ -107,9 +105,7 @@ After a successful `vault login`, the CLI writes your token to `~/.vault-token`.
 1. Stores your token so you don’t have to re-enter it for every command
 2. Automatically reads and attaches the token to subsequent API calls
 
-<Callout icon="triangle-alert">
-  Keep `~/.vault-token` secure. Anyone with access can perform Vault operations under your identity.
-</Callout>
+> **triangle-alert** Keep `~/.vault-token` secure. Anyone with access can perform Vault operations under your identity.
 
 ***
 
@@ -160,6 +156,4 @@ Explore more in the [Vault CLI documentation](https://www.vaultproject.io/docs/c
 * [Vault Authentication](https://www.vaultproject.io/docs/auth)
 * [jq Manual](https://stedolan.github.io/jq/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/b219c536-90c0-412b-a602-f08571bd0ff7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/b219c536-90c0-412b-a602-f08571bd0ff7)

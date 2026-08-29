@@ -13,13 +13,13 @@ Earlier, we reviewed:
 * The evolution and rationale behind CNI
 * A list of supported CNI plugins
 
-![The image lists prerequisites for a topic, including network namespaces in Linux, Docker networking, Container Network Interface (CNI), and CNI plugins.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869838/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-CNI-in-kubernetes/frame_10.jpg)
+![The image lists prerequisites for a topic, including network namespaces in Linux, Docker networking, Container Network Interface (CNI), and CNI plugins.](https://kodekloud.com/kk-media/image/upload/v1752869838/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-CNI-in-kubernetes/frame_10.jpg)
 
 Now, we focus on how Kubernetes configures the use of these network plugins.
 
 As discussed in previous lessons, the CNI specifies the responsibilities of the container runtime. In Kubernetes, container runtimes such as Containerd or CRI-O create the container network namespaces and attach them to the correct network by invoking the appropriate network plugin. Although Docker was initially the primary container runtime, it has largely been replaced by Containerd as an abstraction layer.
 
-![The image explains the Container Network Interface, highlighting the need for creating a network namespace and identifying the network for container attachment, with a Kubernetes logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869838/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-CNI-in-kubernetes/frame_40.jpg)
+![The image explains the Container Network Interface, highlighting the need for creating a network namespace and identifying the network for container attachment, with a Kubernetes logo.](https://kodekloud.com/kk-media/image/upload/v1752869838/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-CNI-in-kubernetes/frame_40.jpg)
 
 ## Configuring CNI Plugins in Kubernetes
 
@@ -51,7 +51,7 @@ ls /etc/cni/net.d
 
 In this case, the container runtime chooses the "bridge" configuration file.
 
-![The image illustrates configuring CNI with container runtimes containerd and cri-o, showing directories for plugins and configuration files like flannel and bridge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869839/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-CNI-in-kubernetes/frame_100.jpg)
+![The image illustrates configuring CNI with container runtimes containerd and cri-o, showing directories for plugins and configuration files like flannel and bridge.](https://kodekloud.com/kk-media/image/upload/v1752869839/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-CNI-in-kubernetes/frame_100.jpg)
 
 ### Understanding a CNI Bridge Configuration File
 

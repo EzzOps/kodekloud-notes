@@ -18,19 +18,13 @@ The OSI model comprises seven layers:
 6. **Data Link Layer:** Specifies how data is formatted for transmission over the network.
 7. **Physical Layer:** Transmits raw bitstreams over physical media.
 
-<Frame>
-  ![The image shows the OSI Model with its seven layers: Application, Presentation, Session, Transport, Network, Data Link, and Physical.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882736/notes-assets/images/OpenShift-4-Network-Policies-InterPod-Security/osi-model-seven-layers.jpg)
-</Frame>
+![The image shows the OSI Model with its seven layers: Application, Presentation, Session, Transport, Network, Data Link, and Physical.](https://kodekloud.com/kk-media/image/upload/v1752882736/notes-assets/images/OpenShift-4-Network-Policies-InterPod-Security/osi-model-seven-layers.jpg)
 
 In Kubernetes, the layered approach plays a critical role. For instance, an Ingress controller functions at the application layer, whereas network policies operate at the transport and network layers by regulating ports and IP addressing respectively.
 
-<Frame>
-  ![The image features a smiley face above a series of blue rectangles with text related to networking concepts, such as "Transmit Data using TCP/UDP," "Decide Physical Path," "Ports," and "IP Addressing."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882737/notes-assets/images/OpenShift-4-Network-Policies-InterPod-Security/smiley-face-networking-concepts.jpg)
-</Frame>
+![The image features a smiley face above a series of blue rectangles with text related to networking concepts, such as "Transmit Data using TCP/UDP," "Decide Physical Path," "Ports," and "IP Addressing."](https://kodekloud.com/kk-media/image/upload/v1752882737/notes-assets/images/OpenShift-4-Network-Policies-InterPod-Security/smiley-face-networking-concepts.jpg)
 
-<Callout icon="lightbulb">
-  Understanding the OSI model is crucial not only in Kubernetes but in networking as a whole. Network policies leverage the OSI layers to enforce secure and efficient traffic control.
-</Callout>
+> **lightbulb** Understanding the OSI model is crucial not only in Kubernetes but in networking as a whole. Network policies leverage the OSI layers to enforce secure and efficient traffic control.
 
 ## Understanding Kubernetes Network Policies
 
@@ -72,19 +66,15 @@ egress:
           cidr: 10.0.0.0/24
 ```
 
-<Callout icon="lightbulb">
-  * **Ingress:**
+> **lightbulb** * **Ingress:**
     * Allows traffic from the CIDR range 172.17.0.0/16, with the exception of 172.17.1.0/24.
     * Permits traffic from pods in the namespace with the label `project: myproject` and pods with the label `role: frontend`.
     * Restricts allowed traffic to TCP port 6379.
   * **Egress:**
     * Limits outbound connections to IP addresses within the 10.0.0.0/24 range.
-</Callout>
 
 Any traffic not matching these specified criteria will be blocked. For example, if ingress traffic comes from an IP outside the allowed ranges (e.g., 172.16.0.0 or 172.15.0.0), it will be denied.
 
 This policy serves as a comprehensive guide for managing both inbound and outbound traffic at a granular level. Now that we've explored the core concepts and configuration details, you're ready to see these network policies in action during the demo.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/82cf9467-7731-4d97-8308-92bf5ff8edfe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/82cf9467-7731-4d97-8308-92bf5ff8edfe)

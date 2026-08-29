@@ -20,7 +20,7 @@ Azure CDN provides two primary methods for managing caching behavior:
    * **Bypass Caching:** Force requests with query strings to bypass the cache and retrieve content directly from the origin server.
    * **Cache Each Variant:** Treat each unique query string as a separate cached entry, which is useful when query parameters change the content.
 
-![The image is a diagram titled "Controlling Caching Behavior," showing two main categories: "Caching Rules" and "Query String Caching," with subcategories like "Global Caching Rules," "Custom Caching Rules," "Query String," and "Cacheable Files only."](../../../../images/kodekloud.com/kk-media/image/upload/v1752866249/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Controlling-Caching-Behavior/controlling-caching-behavior-diagram.jpg)
+![The image is a diagram titled "Controlling Caching Behavior," showing two main categories: "Caching Rules" and "Query String Caching," with subcategories like "Global Caching Rules," "Custom Caching Rules," "Query String," and "Cacheable Files only."](https://kodekloud.com/kk-media/image/upload/v1752866249/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Controlling-Caching-Behavior/controlling-caching-behavior-diagram.jpg)
 
 ## Time-to-Live (TTL) Values
 
@@ -32,7 +32,7 @@ TTL settings dictate how long content is stored in the cache before a refresh is
 
 These default settings help ensure that content remains fresh even if the origin server does not specify TTL headers.
 
-![The image illustrates the caching and Time to Live (TTL) process involving an origin server, a CDN node, and a user, with default TTL values for different types of content delivery optimizations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866251/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Controlling-Caching-Behavior/caching-ttl-process-cdn-user.jpg)
+![The image illustrates the caching and Time to Live (TTL) process involving an origin server, a CDN node, and a user, with default TTL values for different types of content delivery optimizations.](https://kodekloud.com/kk-media/image/upload/v1752866251/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Controlling-Caching-Behavior/caching-ttl-process-cdn-user.jpg)
 
 ## Content Updates and Refresh Mechanisms
 
@@ -44,7 +44,7 @@ Delivering the latest version of assets is essential when using a CDN. Azure CDN
 
 > **lightbulb** Using versioning in asset URLs is a best practice for ensuring immediate propagation of updates.
 
-![The image is a slide titled "Controlling Caching behavior – Content Update," showing three steps: "Normal Operation," "Versioning for Updates," and "Purging Content," each in a colored box.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866252/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Controlling-Caching-Behavior/controlling-caching-behavior-slide.jpg)
+![The image is a slide titled "Controlling Caching behavior – Content Update," showing three steps: "Normal Operation," "Versioning for Updates," and "Purging Content," each in a colored box.](https://kodekloud.com/kk-media/image/upload/v1752866252/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Controlling-Caching-Behavior/controlling-caching-behavior-slide.jpg)
 
 ## Demonstration: Integrating Azure CDN with an Azure Storage Static Website
 
@@ -61,11 +61,11 @@ In this demonstration, you will learn how to integrate Azure CDN with a static w
    * **Bypass Caching:** Requests with query strings are forwarded directly to the origin.
    * **Use Query Strings:** Cache each distinct query string separately.
 
-![The image shows a Microsoft Azure portal interface for configuring a Front Door and CDN service, with options to create a new endpoint.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866254/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Controlling-Caching-Behavior/azure-portal-front-door-cdn.jpg)
+![The image shows a Microsoft Azure portal interface for configuring a Front Door and CDN service, with options to create a new endpoint.](https://kodekloud.com/kk-media/image/upload/v1752866254/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Controlling-Caching-Behavior/azure-portal-front-door-cdn.jpg)
 
 Once the CDN is configured and the endpoint is active, access your website via the CDN URL. For instance, an endpoint like "happylearning.azureedge.net" will deliver your static website content from the nearest point of presence.
 
-![The image shows a Microsoft Azure portal page displaying details of a CDN profile named "happylearning-cdn," with an endpoint that is running and using HTTP/HTTPS protocols.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866256/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Controlling-Caching-Behavior/azure-portal-cdn-happylearning.jpg)
+![The image shows a Microsoft Azure portal page displaying details of a CDN profile named "happylearning-cdn," with an endpoint that is running and using HTTP/HTTPS protocols.](https://kodekloud.com/kk-media/image/upload/v1752866256/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Controlling-Caching-Behavior/azure-portal-cdn-happylearning.jpg)
 
 ## Verifying CDN Behavior with nslookup
 

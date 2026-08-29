@@ -22,13 +22,9 @@ Before installing Jenkins, ensure your system meets the necessary hardware and s
 
 Jenkins requires the Java Virtual Machine to operate, so you must install either the Java Runtime Environment (JRE) or the Java Development Kit (JDK). The JRE is sufficient for running Jenkins, but the JDK provides additional tools useful for troubleshooting and developing custom plugins, making it the preferred choice in production environments. Naturally, a web browser is also essential to manage and interact with your Jenkins instance.
 
-<Frame>
-  ![The image outlines hardware and software requirements, listing minimum and recommended hardware specifications, and necessary software like a web browser and JRE or JDK.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879545/notes-assets/images/Jenkins-For-Beginners-Jenkins-Installation-Options/hardware-software-requirements-diagram.jpg)
-</Frame>
+![The image outlines hardware and software requirements, listing minimum and recommended hardware specifications, and necessary software like a web browser and JRE or JDK.](https://kodekloud.com/kk-media/image/upload/v1752879545/notes-assets/images/Jenkins-For-Beginners-Jenkins-Installation-Options/hardware-software-requirements-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Regularly review your system resources and plan for scalability as your CI/CD pipeline grows.
-</Callout>
+> **lightbulb** Regularly review your system resources and plan for scalability as your CI/CD pipeline grows.
 
 ## Installation Methods
 
@@ -49,9 +45,7 @@ Jenkins supports multiple installation methods, allowing you to choose the best 
 * **Docker Images:**\
   Official Docker images for Jenkins make it easy to deploy a containerized Jenkins environment, ensuring consistent and reproducible builds.
 
-<Frame>
-  ![The image lists various installation options for software, including WAR files, OS-specific packages, user-friendly installers, cloud templates, and containerized Docker images, with specific platforms like Docker, Kubernetes, Ubuntu/Debian, Windows, and macOS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879547/notes-assets/images/Jenkins-For-Beginners-Jenkins-Installation-Options/software-installation-options-docker.jpg)
-</Frame>
+![The image lists various installation options for software, including WAR files, OS-specific packages, user-friendly installers, cloud templates, and containerized Docker images, with specific platforms like Docker, Kubernetes, Ubuntu/Debian, Windows, and macOS.](https://kodekloud.com/kk-media/image/upload/v1752879547/notes-assets/images/Jenkins-For-Beginners-Jenkins-Installation-Options/software-installation-options-docker.jpg)
 
 ## Jenkins Home Directory
 
@@ -90,9 +84,7 @@ $ tree /var/lib/jenkins
 └── workspace               (working directory for the version control system)
 ```
 
-<Callout icon="triangle-alert">
-  Always back up your Jenkins home directory to prevent data loss in the event of system failures or misconfigurations.
-</Callout>
+> **triangle-alert** Always back up your Jenkins home directory to prevent data loss in the event of system failures or misconfigurations.
 
 ## Next Steps
 
@@ -102,6 +94,4 @@ Thank you for reading, and happy building with Jenkins!
 
 For more detailed information on Jenkins installation and configuration, visit the [official Jenkins documentation](https://www.jenkins.io/doc/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/3c1739a1-ee72-4285-a832-4ce3c95b784d/lesson/9df953ef-5805-4c72-957c-02293280c9ae" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/3c1739a1-ee72-4285-a832-4ce3c95b784d/lesson/9df953ef-5805-4c72-957c-02293280c9ae)

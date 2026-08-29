@@ -7,9 +7,7 @@ Inspect the generated key:
 opentofu show tls_private_key.pvtkey
 ```
 
-<Callout icon="triangle-alert">
-  Storing private keys in plain text can pose a security risk. Never commit sensitive key material to version control.
-</Callout>
+> **triangle-alert** Storing private keys in plain text can pose a security risk. Never commit sensitive key material to version control.
 
 ## Writing the Key to a Local File
 
@@ -81,11 +79,9 @@ opentofu apply
 * [Terraform TLS Provider](https://registry.terraform.io/providers/hashicorp/tls/latest)
 * [OpenTofu GitHub Repository](https://github.com/opentofu/opentofu)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/6e6cebbb-004c-453c-952d-309748451cb4" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/6e6cebbb-004c-453c-952d-309748451cb4)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/b8e642d8-752e-46a9-9a8e-6c18fe04d3a2" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/b8e642d8-752e-46a9-9a8e-6c18fe04d3a2)
 
 
 # Demo Using Variables in OpenTofu
@@ -106,9 +102,7 @@ export TF_VAR_filename="/root/baseball.txt"
 
 OpenTofu recognizes environment variables that match the `TF_VAR_<name>` pattern and treats them as input values for the root module.
 
-<Callout icon="lightbulb">
-  Environment variables set with `TF_VAR_<name>` are convenient for CI or temporary local overrides. They are lower priority than command-line flags, but generally take precedence over variable definition files such as `*.tfvars`.
-</Callout>
+> **lightbulb** Environment variables set with `TF_VAR_<name>` are convenient for CI or temporary local overrides. They are lower priority than command-line flags, but generally take precedence over variable definition files such as `*.tfvars`.
 
 Use cases for environment variables:
 
@@ -209,9 +203,7 @@ Given these sources:
 
 OpenTofu will choose `/root/tennis.txt` because `-var` on the command line has the highest priority.
 
-<Callout icon="warning">
-  If you have multiple `.tfvars` files and `*.auto.tfvars` files, remember that auto-loaded files are combined; however explicit `-var-file` or `-var` on the CLI will override those values.
-</Callout>
+> **warning** If you have multiple `.tfvars` files and `*.auto.tfvars` files, remember that auto-loaded files are combined; however explicit `-var-file` or `-var` on the CLI will override those values.
 
 ## Summary
 
@@ -226,8 +218,6 @@ OpenTofu will choose `/root/tennis.txt` because `-var` on the command line has t
 * OpenTofu documentation: [https://opentofu.org/docs/](https://opentofu.org/docs/)
 * Terraform variables documentation (compatible reference for variable behavior): [https://developer.hashicorp.com/terraform/language/values/variables](https://developer.hashicorp.com/terraform/language/values/variables)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/26ad5fda-325b-4fea-9bee-a04aca6b725c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/26ad5fda-325b-4fea-9bee-a04aca6b725c)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/69d33f38-4c3a-4d7c-9814-b9565402b14a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/69d33f38-4c3a-4d7c-9814-b9565402b14a)

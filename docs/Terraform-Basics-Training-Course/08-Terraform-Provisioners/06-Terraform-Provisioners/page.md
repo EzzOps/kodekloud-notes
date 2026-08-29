@@ -29,9 +29,7 @@ resource "aws_instance" "webserver" {
 }
 ```
 
-<Callout icon="lightbulb">
-  Ensure that the proper network connectivity (SSH for Linux or WinRM for Windows), security groups, and an SSH key pair are in place for successful execution.
-</Callout>
+> **lightbulb** Ensure that the proper network connectivity (SSH for Linux or WinRM for Windows), security groups, and an SSH key pair are in place for successful execution.
 
 ## Remote Execution with Connection Block
 
@@ -154,9 +152,7 @@ resource "aws_instance" "webserver" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Use provisioners sparingly. They are intended as a last resort when native resource configurations are not available.
-</Callout>
+> **triangle-alert** Use provisioners sparingly. They are intended as a last resort when native resource configurations are not available.
 
 ## Best Practices: Using Native Resource Capabilities
 
@@ -190,6 +186,4 @@ Terraform provisioners, such as remote-exec and local-exec, provide flexibility 
 * [AWS EC2 User Data](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata.html)
 * [Terraform Documentation](https://www.terraform.io/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9fcbd3cd-b06d-4816-8646-3639ca3d19cd/lesson/c52ef7d1-b55a-46d8-90b1-c8a2e0763adb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9fcbd3cd-b06d-4816-8646-3639ca3d19cd/lesson/c52ef7d1-b55a-46d8-90b1-c8a2e0763adb)

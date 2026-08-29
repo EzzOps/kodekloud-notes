@@ -65,9 +65,7 @@ INFO: 127.0.0.1:55413 - "PUT /users/1 HTTP/1.1" 200 OK
 INFO: 127.0.0.1:55414 - "GET /users/1 HTTP/1.1" 200 OK
 ```
 
-<Callout icon="lightbulb">
-  For simple APIs, repeating route strings might not seem problematic. However, as applications grow in complexity, consolidating routes with common prefixes minimizes errors and simplifies maintenance.
-</Callout>
+> **lightbulb** For simple APIs, repeating route strings might not seem problematic. However, as applications grow in complexity, consolidating routes with common prefixes minimizes errors and simplifies maintenance.
 
 ## Simplifying with Router Prefix
 
@@ -214,13 +212,9 @@ Similarly, creating a new user with a unique email should yield a proper respons
 
 One of FastAPI's most powerful features is its automatic generation of interactive API documentation with Swagger UI. Navigate to `/docs` in your browser to explore and test your endpoints. Organizing routes with prefixes and tags further enhances the documentation by grouping related endpoints together.
 
-<Frame>
-  ![The image shows a FastAPI Swagger UI interface displaying various API endpoints for managing posts and users, including GET, POST, PUT, and DELETE methods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883340/notes-assets/images/Python-API-Development-with-FastAPI-Router-Prefix-And-Tags/fastapi-swagger-ui-api-endpoints.jpg)
-</Frame>
+![The image shows a FastAPI Swagger UI interface displaying various API endpoints for managing posts and users, including GET, POST, PUT, and DELETE methods.](https://kodekloud.com/kk-media/image/upload/v1752883340/notes-assets/images/Python-API-Development-with-FastAPI-Router-Prefix-And-Tags/fastapi-swagger-ui-api-endpoints.jpg)
 
-<Callout icon="lightbulb">
-  The Swagger UI documentation is generated dynamically by FastAPI. While a static image provides a visual reference, the interactive docs offer comprehensive details about every endpoint.
-</Callout>
+> **lightbulb** The Swagger UI documentation is generated dynamically by FastAPI. While a static image provides a visual reference, the interactive docs offer comprehensive details about every endpoint.
 
 ## Final Version Example
 
@@ -259,6 +253,4 @@ INFO:     127.0.0.1:55871 - "GET /users/1 HTTP/1.1" 200 OK
 
 In summary, using router prefixes and tags in FastAPI streamlines your code, reduces redundancy, and enhances the automatic documentation. This results in an API that is easier to maintain and more intuitive for both users and developers.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/bf870a44-cb48-41b1-be21-1f7153cef420" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/bf870a44-cb48-41b1-be21-1f7153cef420)

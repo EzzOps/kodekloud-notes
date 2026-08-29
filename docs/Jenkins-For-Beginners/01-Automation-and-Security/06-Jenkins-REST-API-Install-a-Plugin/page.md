@@ -22,9 +22,7 @@ After executing the command, a new build will be triggered in Jenkins, confirmin
 
 Using API tokens is an alternative authentication method that bypasses CSRF protection. When you authenticate with your username and API token, the CSRF crumb mechanism is not required, simplifying your API interactions.
 
-<Frame>
-  ![The image shows a webpage from the Jenkins User Handbook, specifically focusing on CSRF protection. It includes navigation links on the left and detailed instructions on working with scripted clients and disabling CSRF protection on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879431/notes-assets/images/Jenkins-For-Beginners-Jenkins-CSRF-CRUMB/jenkins-user-handbook-csrf-protection.jpg)
-</Frame>
+![The image shows a webpage from the Jenkins User Handbook, specifically focusing on CSRF protection. It includes navigation links on the left and detailed instructions on working with scripted clients and disabling CSRF protection on the right.](https://kodekloud.com/kk-media/image/upload/v1752879431/notes-assets/images/Jenkins-For-Beginners-Jenkins-CSRF-CRUMB/jenkins-user-handbook-csrf-protection.jpg)
 
 ## Conclusion
 
@@ -32,9 +30,7 @@ This lesson provided a step-by-step guide to understanding and using Jenkins CSR
 
 Happy Coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/cd53a160-c852-4d65-b718-31b284cb48da/lesson/81b94fd6-7d56-4e71-be99-c4e38b254959" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/cd53a160-c852-4d65-b718-31b284cb48da/lesson/81b94fd6-7d56-4e71-be99-c4e38b254959)
 
 
 # Jenkins REST API Install a Plugin
@@ -77,9 +73,7 @@ For additional API details, visit your Jenkins dashboard and refer to the REST A
 
 ***
 
-<Frame>
-  ![The image shows a webpage with documentation about the Jenkins Remote API, including sections on JSON and Python API access and controlling the amount of data fetched.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879432/notes-assets/images/Jenkins-For-Beginners-Jenkins-REST-API-Install-a-Plugin/jenkins-remote-api-documentation.jpg)
-</Frame>
+![The image shows a webpage with documentation about the Jenkins Remote API, including sections on JSON and Python API access and controlling the amount of data fetched.](https://kodekloud.com/kk-media/image/upload/v1752879432/notes-assets/images/Jenkins-For-Beginners-Jenkins-REST-API-Install-a-Plugin/jenkins-remote-api-documentation.jpg)
 
 ***
 
@@ -282,15 +276,11 @@ By default, curl uses the GET method. In this case, you need to explicitly use t
 curl -u admin:password -X POST http://139.84.159.194:8080/job/parameterized-pipeline-job/buildWithParameters -d BRANCH_NAME=test -d APP_PORT=6767
 ```
 
-<Callout icon="lightbulb">
-  If you are not logged into Jenkins via your browser, you may receive authentication errors. Ensure you provide valid credentials or use an API token to avoid such issues.
-</Callout>
+> **lightbulb** If you are not logged into Jenkins via your browser, you may receive authentication errors. Ensure you provide valid credentials or use an API token to avoid such issues.
 
 Some builds might require a valid Jenkins crumb (a security token to prevent CSRF attacks) unless you opt to use an API token. To generate or fetch an API token, navigate to your Jenkins user configuration page.
 
-<Frame>
-  ![The image shows a Jenkins configuration page for a user named "Dasher Admin," where API tokens can be generated and managed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879433/notes-assets/images/Jenkins-For-Beginners-Jenkins-REST-API-Install-a-Plugin/jenkins-configuration-dasher-admin-api-tokens.jpg)
-</Frame>
+![The image shows a Jenkins configuration page for a user named "Dasher Admin," where API tokens can be generated and managed.](https://kodekloud.com/kk-media/image/upload/v1752879433/notes-assets/images/Jenkins-For-Beginners-Jenkins-REST-API-Install-a-Plugin/jenkins-configuration-dasher-admin-api-tokens.jpg)
 
 Once you have your API token, update your curl command as follows:
 
@@ -300,13 +290,9 @@ curl -u admin:110116b9f4f3f2698451306fd8fa7f26d6 -X POST http://139.84.159.194:8
 
 When you trigger the build successfully, you will observe a new build initiated on the Jenkins dashboard. For example, build number six might now be in progress.
 
-<Frame>
-  ![The image shows a Jenkins dashboard for a parameterized pipeline job, displaying a successful build history and a test result trend graph indicating all tests passed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879434/notes-assets/images/Jenkins-For-Beginners-Jenkins-REST-API-Install-a-Plugin/jenkins-dashboard-parameterized-pipeline.jpg)
-</Frame>
+![The image shows a Jenkins dashboard for a parameterized pipeline job, displaying a successful build history and a test result trend graph indicating all tests passed.](https://kodekloud.com/kk-media/image/upload/v1752879434/notes-assets/images/Jenkins-For-Beginners-Jenkins-REST-API-Install-a-Plugin/jenkins-dashboard-parameterized-pipeline.jpg)
 
-<Callout icon="lightbulb">
-  A build triggered via the Jenkins CLI might include additional log details (such as fetching Git information) that may not appear when using the REST API.
-</Callout>
+> **lightbulb** A build triggered via the Jenkins CLI might include additional log details (such as fetching Git information) that may not appear when using the REST API.
 
 ***
 
@@ -346,6 +332,4 @@ For further information on Jenkins API usage:
 
 Happy automating!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/cd53a160-c852-4d65-b718-31b284cb48da/lesson/d41f7d8d-0916-4bf2-8289-28bc9b64495b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/cd53a160-c852-4d65-b718-31b284cb48da/lesson/d41f7d8d-0916-4bf2-8289-28bc9b64495b)

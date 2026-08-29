@@ -31,9 +31,7 @@ variable "instance_type" {
 }
 ```
 
-<Callout icon="warning">
-  Setting sensitive = true suppresses the value in plan/apply output, but the value will still be recorded in the OpenTofu state file. Protect state (for example, by enabling encryption and restricting access) to keep secrets safe.
-</Callout>
+> **warning** Setting sensitive = true suppresses the value in plan/apply output, but the value will still be recorded in the OpenTofu state file. Protect state (for example, by enabling encryption and restricting access) to keep secrets safe.
 
 ## Validation rules for variables
 
@@ -76,9 +74,7 @@ This was checked by the validation rule at main.tf:5,3-13.
 
 OpenTofu supports these basic HCL scalar types: `string`, `number`, and `bool` (HCL uses `bool` rather than the word "boolean"). If you omit `type`, it defaults to `any`.
 
-<Callout icon="lightbulb">
-  If `type` is omitted, the variable's type is `any` by default—using explicit types is recommended to catch configuration errors early.
-</Callout>
+> **lightbulb** If `type` is omitted, the variable's type is `any` by default—using explicit types is recommended to catch configuration errors early.
 
 Examples for `number` and `bool`:
 

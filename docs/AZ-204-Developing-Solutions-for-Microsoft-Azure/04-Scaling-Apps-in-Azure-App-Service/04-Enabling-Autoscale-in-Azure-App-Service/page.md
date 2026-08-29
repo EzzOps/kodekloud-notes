@@ -20,7 +20,7 @@ Next, establish the scale rules. These rules dictate when and how many instances
 
 Finally, continuously monitor autoscale events and metrics to ensure your configuration is performing as expected. This ongoing observation will allow you to fine-tune your conditions and rules for further optimization.
 
-![The image outlines four steps for enabling autoscale in Azure App Service: enabling autoscaling, adding scale conditions, creating scale rules, and monitoring autoscaling activity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866746/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Enabling-Autoscale-in-Azure-App-Service/azure-app-service-autoscale-steps.jpg)
+![The image outlines four steps for enabling autoscale in Azure App Service: enabling autoscaling, adding scale conditions, creating scale rules, and monitoring autoscaling activity.](https://kodekloud.com/kk-media/image/upload/v1752866746/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Enabling-Autoscale-in-Azure-App-Service/azure-app-service-autoscale-steps.jpg)
 
 ***
 
@@ -47,7 +47,7 @@ Follow these steps to navigate the Azure Portal and configure autoscale settings
 4. **Setting Up Rule-Based Autoscale:**\
    Click on the "Configure" button to start setting up autoscale settings. Select "Custom autoscale" and provide a descriptive name—such as "High Request Autoscale"—for easier management. A default condition will be created, which can be modified or supplemented with additional rules to meet your application's needs.
 
-![The image shows a Microsoft Azure portal interface for configuring autoscale settings. It includes options for manual and custom autoscale, with a focus on setting rules based on CPU percentage metrics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866748/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Enabling-Autoscale-in-Azure-App-Service/azure-portal-autoscale-settings.jpg)
+![The image shows a Microsoft Azure portal interface for configuring autoscale settings. It includes options for manual and custom autoscale, with a focus on setting rules based on CPU percentage metrics.](https://kodekloud.com/kk-media/image/upload/v1752866748/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Enabling-Autoscale-in-Azure-App-Service/azure-portal-autoscale-settings.jpg)
 
 ***
 
@@ -67,7 +67,7 @@ Creating an effective autoscale rule involves the following steps:
 4. **Adding a Scale-In Rule:**\
    Add another rule to scale in when necessary. For example, if the CPU usage drops below 10% for five minutes, the instance count can be decreased or reset to one, based on your requirements.
 
-![The image shows a configuration screen for setting up autoscaling rules in a cloud service platform. It includes options for scaling based on CPU percentage metrics and setting thresholds for scaling actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866749/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Enabling-Autoscale-in-Azure-App-Service/autoscaling-rules-configuration-screen.jpg)
+![The image shows a configuration screen for setting up autoscaling rules in a cloud service platform. It includes options for scaling based on CPU percentage metrics and setting thresholds for scaling actions.](https://kodekloud.com/kk-media/image/upload/v1752866749/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Enabling-Autoscale-in-Azure-App-Service/autoscaling-rules-configuration-screen.jpg)
 
 5. **Configuring Scheduled Scaling:**\
    You can also set scheduling rules, such as running 10 instances over the weekend. Note that instance limits must be adjusted accordingly; for example, if the minimum, maximum, and default are all set to one, scaling will not occur. Adjust the maximum instance count (e.g., set it to 3) to enable autoscaling.
@@ -75,7 +75,7 @@ Creating an effective autoscale rule involves the following steps:
 6. **Saving the Configuration:**\
    After defining all rules and conditions, click "Save" to apply your settings.
 
-![The image shows the "Autoscale setting" page in Microsoft Azure, where scaling rules and instance limits are configured for an app service plan. It includes options for scaling based on CPU percentage and a weekend schedule for specific instance counts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866750/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Enabling-Autoscale-in-Azure-App-Service/azure-autoscale-settings-page.jpg)
+![The image shows the "Autoscale setting" page in Microsoft Azure, where scaling rules and instance limits are configured for an app service plan. It includes options for scaling based on CPU percentage and a weekend schedule for specific instance counts.](https://kodekloud.com/kk-media/image/upload/v1752866750/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Enabling-Autoscale-in-Azure-App-Service/azure-autoscale-settings-page.jpg)
 
 ***
 
@@ -89,7 +89,7 @@ Ensure your autoscale configuration is working correctly by following these step
 2. **Monitoring Autoscale Events:**\
    While the test is running, observe key metrics like requests per second. For example, if your service receives 521 requests per second, the autoscale configuration should trigger an increase in CPU load and subsequently add an extra instance. Monitor the "Run History" to review autoscale events. The cooldown period will prevent further scaling until its duration (e.g., five minutes) has elapsed.
 
-![The image shows a Microsoft Azure Load Testing dashboard displaying metrics such as virtual users, response time, and requests per second for a test run.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866752/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Enabling-Autoscale-in-Azure-App-Service/azure-load-testing-dashboard-metrics.jpg)
+![The image shows a Microsoft Azure Load Testing dashboard displaying metrics such as virtual users, response time, and requests per second for a test run.](https://kodekloud.com/kk-media/image/upload/v1752866752/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Enabling-Autoscale-in-Azure-App-Service/azure-load-testing-dashboard-metrics.jpg)
 
 After confirming that the instance count increases, allow sufficient time for the cooldown period to end, which might trigger additional scaling actions up to the predefined maximum.
 

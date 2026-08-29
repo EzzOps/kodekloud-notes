@@ -54,9 +54,7 @@ A2A is a communication protocol—not an SDK or framework—so agents built with
   <img alt="A slide titled &#x22;A2A and Agent Frameworks&#x22; showing two cute robot icons facing each other with the label &#x22;Framework-Agnostic&#x22; between them. Below are tiles with logos for various agent frameworks (ADK, LangChain, crewai, Autogen, LangGraph)." />
 </Frame>
 
-<Callout icon="lightbulb">
-  A2A is protocol-focused: its goal is to enable interoperable communication between agents regardless of the frameworks or models that implement them.
-</Callout>
+> **lightbulb** A2A is protocol-focused: its goal is to enable interoperable communication between agents regardless of the frameworks or models that implement them.
 
 Primary roles in an A2A interaction
 Below is a concise reference for the three main roles you’ll encounter when designing or integrating with A2A:
@@ -77,6 +75,4 @@ Links and references
 * [LangGraph](https://www.langgraph.com/)
 * [CrewAI](https://crewai.com/) (example agent framework)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/277fe076-151d-49db-be75-9009dceb4da0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/277fe076-151d-49db-be75-9009dceb4da0)

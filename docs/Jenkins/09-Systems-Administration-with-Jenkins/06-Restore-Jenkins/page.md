@@ -43,9 +43,7 @@ default_jenkins_build_duration_milliseconds_summary_sum{jenkins_job="go-full-pip
 
 The Prometheus plugin installed on your Jenkins server automatically generates this output. The plugin configures the /Prometheus endpoint to expose metrics in a format that Prometheus can seamlessly scrape.
 
-<Frame>
-  ![The image shows the Jenkins Prometheus Metrics Plugin page, detailing its version, installation count, and features like metrics exposure and environment variables.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880151/notes-assets/images/Jenkins-Prometheus/frame_40.jpg)
-</Frame>
+![The image shows the Jenkins Prometheus Metrics Plugin page, detailing its version, installation count, and features like metrics exposure and environment variables.](https://kodekloud.com/kk-media/image/upload/v1752880151/notes-assets/images/Jenkins-Prometheus/frame_40.jpg)
 
 The metrics output follows a structured format that is similar to JSON or key-value pairs. Consistent formatting ensures that Prometheus understands and properly ingests the data. Although subsequent scrapes might reflect updated values or minor variations in metric names—such as differences in build duration or class loading statistics—the overall structure remains unchanged.
 
@@ -59,27 +57,19 @@ default_jenkins_builds_success_build_count{instance="20.127.124.114:8080", jenki
 
 This output confirms that your Jenkins jobs—specifically "go-full-pipeline," "test1," and "test2"—have successfully completed builds. Jobs that have not been triggered, such as "Git test build pipeline" or "SH test build pipeline," will not appear in these metrics.
 
-<Frame>
-  ![The image shows a Prometheus monitoring dashboard with two targets, Jenkins and Prometheus, both in "UP" state, displaying endpoint details and scrape metrics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880152/notes-assets/images/Jenkins-Prometheus/frame_110.jpg)
-</Frame>
+![The image shows a Prometheus monitoring dashboard with two targets, Jenkins and Prometheus, both in "UP" state, displaying endpoint details and scrape metrics.](https://kodekloud.com/kk-media/image/upload/v1752880152/notes-assets/images/Jenkins-Prometheus/frame_110.jpg)
 
 You can further analyze your Jenkins data by experimenting with different queries in the Prometheus web interface. Typing "Jenkins" in the expression field displays all available metrics, including task durations and build counts, to help you better understand your CI/CD performance.
 
-<Frame>
-  ![The image shows a Prometheus interface displaying various Jenkins metrics, such as task durations and build counts, with options for query history and autocomplete enabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880153/notes-assets/images/Jenkins-Prometheus/frame_150.jpg)
-</Frame>
+![The image shows a Prometheus interface displaying various Jenkins metrics, such as task durations and build counts, with options for query history and autocomplete enabled.](https://kodekloud.com/kk-media/image/upload/v1752880153/notes-assets/images/Jenkins-Prometheus/frame_150.jpg)
 
-<Callout icon="lightbulb">
-  Keep in mind that the IP address shown in the examples might differ from your actual setup, as it reflects the specific instance or runtime conditions of your Jenkins server.
-</Callout>
+> **lightbulb** Keep in mind that the IP address shown in the examples might differ from your actual setup, as it reflects the specific instance or runtime conditions of your Jenkins server.
 
 This lesson has provided an overview of how Prometheus scrapes and displays Jenkins metrics. We hope this helps you effectively monitor and analyze your Jenkins environment. See you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/3ef58d56-5d32-4bd6-8222-40baaf41f995" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/3ef58d56-5d32-4bd6-8222-40baaf41f995)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/4891b2af-2b54-482e-84d8-3d833702834c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/4891b2af-2b54-482e-84d8-3d833702834c)
 
 
 # Restore Jenkins
@@ -106,9 +96,7 @@ mike@jenkins01:~/jenkinsbackup$
 2. Click on the **Restore** button.
 3. You should see an option labeled **Restore from this backup**.
 
-<Callout icon="lightbulb">
-  Before proceeding with the restoration process, it is recommended that you create an additional backup.
-</Callout>
+> **lightbulb** Before proceeding with the restoration process, it is recommended that you create an additional backup.
 
 ## Creating an Additional Backup
 
@@ -126,9 +114,7 @@ Once completed, you will notice that the interface lists three backups available
 2. The interface will display all three backups along with their respective timestamps.
 3. For this demonstration, select the latest backup.
 
-<Frame>
-  ![The image shows a "Restore Configuration" interface with options to select a backup date and time for restoration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880154/notes-assets/images/Jenkins-Restore-Jenkins/frame_60.jpg)
-</Frame>
+![The image shows a "Restore Configuration" interface with options to select a backup date and time for restoration.](https://kodekloud.com/kk-media/image/upload/v1752880154/notes-assets/images/Jenkins-Restore-Jenkins/frame_60.jpg)
 
 4. Click **Restore** to initiate the restoration process.
 
@@ -150,8 +136,6 @@ We hope this step-by-step guide helps ease your Jenkins maintenance routines. Lo
 
 Happy building!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/a7a0109d-d799-4892-ab7e-c3a76b8b535e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/a7a0109d-d799-4892-ab7e-c3a76b8b535e)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/ae200556-c3aa-46e9-b14f-9d261cfae24b" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/ae200556-c3aa-46e9-b14f-9d261cfae24b)

@@ -33,9 +33,7 @@ Concretely:
 
 This minimal-first-version approach keeps the user API small while letting you observe the reconcile loop working across Deployment, Service, and ConfigMap. You can add more `spec` fields later (for example `port`), but start small so the first reconciler remains readable and testable.
 
-<Callout icon="lightbulb">
-  Start with a narrow API surface. Small, opinionated defaults let you validate reconciliation behavior quickly; expand the `spec` only when you need to expose additional user-configurable options.
-</Callout>
+> **lightbulb** Start with a narrow API surface. Small, opinionated defaults let you validate reconciliation behavior quickly; expand the `spec` only when you need to expose additional user-configurable options.
 
 Example API sketches:
 

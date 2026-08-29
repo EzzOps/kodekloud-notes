@@ -15,9 +15,7 @@ An identity is any object that can be authenticated within a system. In Microsof
 * **Managed Identity:** The identity associated with a service in Azure (such as a virtual machine or app service) that enables secure access to other services.
 * **Service Principal:** Similar to on-premises service accounts, these are used for automated tasks or to execute processes on behalf of a user.
 
-<Callout icon="lightbulb">
-  An identity alone is not sufficient for detailed resource management—it must be supplemented with additional data attributes to form an account.
-</Callout>
+> **lightbulb** An identity alone is not sufficient for detailed resource management—it must be supplemented with additional data attributes to form an account.
 
 ## Defining an Account
 
@@ -36,9 +34,7 @@ Both types of accounts ensure secure and efficient access to Microsoft services 
 
 A tenant, also referred to as a directory, is a dedicated instance of Microsoft Entra ID that is automatically generated during the sign-up process for any Microsoft cloud service subscription. When you create an Azure account, you also create a tenant, and all associated subscriptions are mapped to this tenant.
 
-<Frame>
-  ![The image is a diagram titled "Microsoft Entra ID Concepts," illustrating four concepts: Identity, Account, Microsoft Entra ID Account, and Microsoft Entra ID or Tenant or Directory, each represented with icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884593/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Microsoft-Entra-ID-concepts/microsoft-entra-id-concepts-diagram.jpg)
-</Frame>
+![The image is a diagram titled "Microsoft Entra ID Concepts," illustrating four concepts: Identity, Account, Microsoft Entra ID Account, and Microsoft Entra ID or Tenant or Directory, each represented with icons.](https://kodekloud.com/kk-media/image/upload/v1752884593/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Microsoft-Entra-ID-concepts/microsoft-entra-id-concepts-diagram.jpg)
 
 ## Key Takeaways
 
@@ -47,12 +43,8 @@ A tenant, also referred to as a directory, is a dedicated instance of Microsoft 
 * **Microsoft Entra ID Account:** An account provisioned via Microsoft Entra ID that supports both work/school and personal use cases.
 * **Tenant/Directory:** A dedicated instance of Microsoft Entra ID that organizes your subscriptions and resources.
 
-<Callout icon="lightbulb">
-  Understanding the differences between Microsoft Entra ID (formerly Azure AD) and Active Directory Domain Services will greatly enhance your ability to manage user identities, managed identities, and service principals in the Azure environment.
-</Callout>
+> **lightbulb** Understanding the differences between Microsoft Entra ID (formerly Azure AD) and Active Directory Domain Services will greatly enhance your ability to manage user identities, managed identities, and service principals in the Azure environment.
 
 By mastering these concepts, you will be better equipped to navigate and manage the flexible, secure landscape of Microsoft cloud services. For further reading, consider exploring the [Microsoft Entra ID Documentation](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis) and related resources on Microsoft cloud management.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/07e3a37e-65a9-430c-9919-011cc605b25d/lesson/b2b559d8-c5f7-4fe4-ab99-274565b847d6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/07e3a37e-65a9-430c-9919-011cc605b25d/lesson/b2b559d8-c5f7-4fe4-ab99-274565b847d6)

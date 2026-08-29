@@ -20,9 +20,7 @@ Audience and scope
 
 This lesson is useful not only for FinOps practitioners but also for engineering managers, SREs, DevOps engineers, and software engineers responsible for designing, operating, or optimizing cloud systems. The content focuses on practical, provider-supported techniques for cost visibility and optimization: dashboards, tagging strategies, rightsizing, reservations, and alerts.
 
-<Callout icon="lightbulb">
-  This lesson focuses on practical, provider-supported techniques for cost visibility and optimization—useful for technical and managerial roles involved in cloud operations.
-</Callout>
+> **lightbulb** This lesson focuses on practical, provider-supported techniques for cost visibility and optimization—useful for technical and managerial roles involved in cloud operations.
 
 A three-theme approach
 
@@ -58,8 +56,6 @@ Links and references
 * Azure Cost Management and Billing — [https://azure.microsoft.com/en-us/services/cost-management/](https://azure.microsoft.com/en-us/services/cost-management/)
 * Google Cloud Billing and Cost Management — [https://cloud.google.com/products/billing](https://cloud.google.com/products/billing)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/b623bd4d-2f47-4afb-a61b-f224315cfbe1/lesson/6716ce0c-a9ed-4bc8-abec-de7bd8190eed" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/b623bd4d-2f47-4afb-a61b-f224315cfbe1/lesson/6716ce0c-a9ed-4bc8-abec-de7bd8190eed)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/b623bd4d-2f47-4afb-a61b-f224315cfbe1/lesson/44dda53a-615d-4981-bb52-5df73649971e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/b623bd4d-2f47-4afb-a61b-f224315cfbe1/lesson/44dda53a-615d-4981-bb52-5df73649971e)

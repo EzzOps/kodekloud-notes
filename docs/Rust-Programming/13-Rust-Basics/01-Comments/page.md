@@ -48,18 +48,12 @@ The Rust compiler ignores any text within the `/*` and `*/`, making this method 
 
 Effective comments improve code readability and offer essential context about your coding decisions. Instead of merely describing what the code does, comments should explain non-obvious logic, edge cases, and critical decisions.
 
-<Callout icon="lightbulb">
-  Always aim for clear, concise, and context-driven comments. This ensures that future maintainers or collaborators understand the intent behind your code without having to infer details from the code itself.
-</Callout>
+> **lightbulb** Always aim for clear, concise, and context-driven comments. This ensures that future maintainers or collaborators understand the intent behind your code without having to infer details from the code itself.
 
-<Frame>
-  ![The image outlines best practices for code comments, emphasizing enhancing readability, keeping comments clear and concise, and focusing on context rather than obvious details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883981/notes-assets/images/Rust-Programming-Comments/code-comments-best-practices.jpg)
-</Frame>
+![The image outlines best practices for code comments, emphasizing enhancing readability, keeping comments clear and concise, and focusing on context rather than obvious details.](https://kodekloud.com/kk-media/image/upload/v1752883981/notes-assets/images/Rust-Programming-Comments/code-comments-best-practices.jpg)
 
 Use comments judiciously to highlight important insights, keeping your code maintainable and accessible for both current and future developers.
 
 Thank you for reading this lesson on using comments in Rust. For additional Rust programming tips and best practices, explore our other comprehensive guides.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/d6b64520-5c41-40d9-b017-58088030efbf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/d6b64520-5c41-40d9-b017-58088030efbf)

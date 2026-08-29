@@ -56,9 +56,7 @@ launch-rocket saturn-mission
 launch-rocket mercury-mission
 ```
 
-<Callout icon="triangle-alert">
-  Remember that functions must be defined before they are called in your script. Calling a function prior to its definition will result in an error because the shell interprets it as an undefined command.
-</Callout>
+> **triangle-alert** Remember that functions must be defined before they are called in your script. Calling a function prior to its definition will result in an error because the shell interprets it as an undefined command.
 
 Notice the difference between using `exit 1` and `return 1` in the function. In the initial version, `exit 1` would terminate the entire script if any individual mission failed. By using `return 1` instead, only the function call terminates with an error, which allows the main script to continue executing and manage subsequent missions. The exit status from each function can be captured with the special variable `$?` if needed.
 
@@ -66,9 +64,7 @@ Notice the difference between using `exit 1` and `return 1` in the function. In 
 
 For large automation tasks—such as installing packages, adding users, configuring firewalls, or carrying out mathematical calculations—breaking down your script into functions is highly beneficial. Each specific task can be implemented as an independent function, which you call in the correct sequence. This strategy not only makes your code modular and easier to maintain but also minimizes duplication.
 
-<Frame>
-  ![The image explains when to use functions, listing tasks like installing packages, adding users, configuring firewalls, and performing mathematical calculations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884055/notes-assets/images/Shell-Scripts-for-Beginners-Functions/frame_240.jpg)
-</Frame>
+![The image explains when to use functions, listing tasks like installing packages, adding users, configuring firewalls, and performing mathematical calculations.](https://kodekloud.com/kk-media/image/upload/v1752884055/notes-assets/images/Shell-Scripts-for-Beginners-Functions/frame_240.jpg)
 
 ## Simple Function Example: Adding Two Numbers
 
@@ -86,9 +82,7 @@ echo "The sum is: $sum"
 
 Keep in mind that anything printed within a function using `echo` becomes its output. While you can also use the return code to indicate success or failure, the `return` statement in shell functions only supports numeric exit statuses. Therefore, echoing the computed value and capturing it is the conventional method for returning results.
 
-<Frame>
-  ![The image lists best practices for coding: develop modular scripts, avoid duplicate code, and use arguments/parameters for variables.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884056/notes-assets/images/Shell-Scripts-for-Beginners-Functions/frame_400.jpg)
-</Frame>
+![The image lists best practices for coding: develop modular scripts, avoid duplicate code, and use arguments/parameters for variables.](https://kodekloud.com/kk-media/image/upload/v1752884056/notes-assets/images/Shell-Scripts-for-Beginners-Functions/frame_400.jpg)
 
 ## Final Thoughts
 
@@ -96,11 +90,9 @@ Modularizing your code with functions is a best practice in shell scripting, hel
 
 Happy scripting!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2e5d4133-6bc2-421e-bc8f-0389e7f96490/lesson/c5fee3ab-67bc-4bc7-8705-2d07a75e3adc" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2e5d4133-6bc2-421e-bc8f-0389e7f96490/lesson/c5fee3ab-67bc-4bc7-8705-2d07a75e3adc)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2e5d4133-6bc2-421e-bc8f-0389e7f96490/lesson/b0001b88-a483-4125-b093-afb0877a8cfa" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2e5d4133-6bc2-421e-bc8f-0389e7f96490/lesson/b0001b88-a483-4125-b093-afb0877a8cfa)
 
 
 # Shebang
@@ -113,9 +105,7 @@ In this guide, we explore the critical role of the shebang in shell scripts. We�
 
 For instance, consider the difference between the Bourne shell (ash, dash, or the Debian shell) and the Bourne Again shell (bash). The image below outlines a few common shell types:
 
-<Frame>
-  ![The image lists shell types: Bourne Shell (sh), Debian Almquist Shell (dash), and Bourne again Shell (bash), with a KodeKloud logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884057/notes-assets/images/Shell-Scripts-for-Beginners-Shebang/frame_30.jpg)
-</Frame>
+![The image lists shell types: Bourne Shell (sh), Debian Almquist Shell (dash), and Bourne again Shell (bash), with a KodeKloud logo.](https://kodekloud.com/kk-media/image/upload/v1752884057/notes-assets/images/Shell-Scripts-for-Beginners-Shebang/frame_30.jpg)
 
 Previously, we discussed a for loop in a shell script that generates a sequence from 0 to 10 using a bash-specific expression. The following script works as expected in bash:
 
@@ -152,9 +142,7 @@ Launching mission {0..10}
 
 Even though many modern systems link the Bourne shell to bash, explicitly testing in shells like dash reveals these differences.
 
-<Callout icon="lightbulb">
-  To ensure reliable behavior, always run scripts that depend on bash-specific features with the bash interpreter.
-</Callout>
+> **lightbulb** To ensure reliable behavior, always run scripts that depend on bash-specific features with the bash interpreter.
 
 The solution is to include a shebang at the beginning of your script. The shebang is a special line that instructs the system which interpreter to use, as demonstrated here:
 
@@ -194,18 +182,12 @@ Launching mission 10
 
 The shebang assures that your shell script always runs under the intended interpreter, preventing issues associated with incompatible shell syntax.
 
-<Callout icon="triangle-alert">
-  If your script relies on bash-specific features, **always** start with the appropriate shebang (`#!/bin/bash`) to avoid unexpected behavior when run in different shell environments.
-</Callout>
+> **triangle-alert** If your script relies on bash-specific features, **always** start with the appropriate shebang (`#!/bin/bash`) to avoid unexpected behavior when run in different shell environments.
 
-<Frame>
-  ![The image advises best practice in scripting: "Always start with a Shebang in your scripts," presented on a green and white background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884058/notes-assets/images/Shell-Scripts-for-Beginners-Shebang/frame_180.jpg)
-</Frame>
+![The image advises best practice in scripting: "Always start with a Shebang in your scripts," presented on a green and white background.](https://kodekloud.com/kk-media/image/upload/v1752884058/notes-assets/images/Shell-Scripts-for-Beginners-Shebang/frame_180.jpg)
 
 That concludes our deep dive into the shebang in shell scripts. Happy scripting, and see you in the next article!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2e5d4133-6bc2-421e-bc8f-0389e7f96490/lesson/ea1f0409-2d7e-474c-ab6d-c8ba4302b1a9" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2e5d4133-6bc2-421e-bc8f-0389e7f96490/lesson/ea1f0409-2d7e-474c-ab6d-c8ba4302b1a9)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2e5d4133-6bc2-421e-bc8f-0389e7f96490/lesson/69362b26-b485-45d0-81f0-bc1cf484fddc" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2e5d4133-6bc2-421e-bc8f-0389e7f96490/lesson/69362b26-b485-45d0-81f0-bc1cf484fddc)

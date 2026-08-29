@@ -6,15 +6,11 @@ This article explains how Kubernetes uses the Container Network Interface to con
 
 Welcome to this lesson on how Kubernetes uses the Container Network Interface (CNI) to configure network plugins for containers. In earlier lessons, we covered the fundamentals of network namespaces, Docker networking, and the emergence of CNI along with its plugins.
 
-<Frame>
-  ![The image lists prerequisites for a topic, including network namespaces in Linux, Docker networking, Container Network Interface (CNI), and CNI plugins.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880564/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-CNI-in-Kubernetes/frame_20.jpg)
-</Frame>
+![The image lists prerequisites for a topic, including network namespaces in Linux, Docker networking, Container Network Interface (CNI), and CNI plugins.](https://kodekloud.com/kk-media/image/upload/v1752880564/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-CNI-in-Kubernetes/frame_20.jpg)
 
 In this article, you'll learn how Kubernetes is configured to utilize these network plugins. CNI defines the responsibilities for container runtimes, and in this context, Kubernetes creates container network namespaces and links them to the appropriate network plugins. A dedicated component within Kubernetes first creates the containers and then invokes the specified CNI plugin based on the configuration.
 
-<Frame>
-  ![The image outlines key points about Container Network Interface, including network namespace creation, network attachment, plugin invocation, and JSON configuration, alongside a Kubernetes logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880566/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-CNI-in-Kubernetes/frame_50.jpg)
-</Frame>
+![The image outlines key points about Container Network Interface, including network namespace creation, network attachment, plugin invocation, and JSON configuration, alongside a Kubernetes logo.](https://kodekloud.com/kk-media/image/upload/v1752880566/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-CNI-in-Kubernetes/frame_50.jpg)
 
 ## Kubelet Configuration for CNI
 

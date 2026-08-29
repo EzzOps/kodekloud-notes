@@ -20,17 +20,13 @@ Cloud Identities are standalone accounts that exist solely in the cloud without 
 
 Guest Accounts are tailored for external users, such as partners or contractors, who need access to specific resources without being fully integrated into the internal directory. These accounts can include Microsoft, Live, or Gmail accounts and facilitate secure collaboration while maintaining organizational boundaries.
 
-<Callout icon="lightbulb">
-  If a user belongs to another company with its own Entra ID, they are treated as a cloud identity; however, if that user does not have an Entra ID, the account is considered a guest account.
-</Callout>
+> **lightbulb** If a user belongs to another company with its own Entra ID, they are treated as a cloud identity; however, if that user does not have an Entra ID, the account is considered a guest account.
 
 ### Directory Synchronized Users
 
 Directory Synchronized Users have identities synchronized from an on-premises Active Directory to the cloud through the Microsoft Entra ID Connect tool (formerly known as Azure AD Connect). Synchronization ensures a unified identity framework across on-premises and cloud environments, simplifying the management of access rights and security policies.
 
-<Frame>
-  ![The image is an informational graphic about user accounts in Microsoft Entra ID, detailing features like authentication, optional properties, and bulk operations. It includes a screenshot of a user management interface and highlights categories such as Cloud Identities, Guest Accounts, and Directory Synchronized Users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884607/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-User-Accounts/microsoft-entra-id-user-accounts-graphic.jpg)
-</Frame>
+![The image is an informational graphic about user accounts in Microsoft Entra ID, detailing features like authentication, optional properties, and bulk operations. It includes a screenshot of a user management interface and highlights categories such as Cloud Identities, Guest Accounts, and Directory Synchronized Users.](https://kodekloud.com/kk-media/image/upload/v1752884607/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-User-Accounts/microsoft-entra-id-user-accounts-graphic.jpg)
 
 Each type of account plays a vital role in constructing a robust identity and access management strategy, ensuring that users receive the appropriate level of access exactly when they need it.
 
@@ -60,9 +56,7 @@ To add a new user:
 
 2. For internal accounts, fill in the details such as user principal name, display name, and password. Additional attributes and role assignments can be configured as required.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a new user, with fields for user principal name, mail nickname, display name, and password settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884608/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-User-Accounts/azure-portal-create-user-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a new user, with fields for user principal name, mail nickname, display name, and password settings.](https://kodekloud.com/kk-media/image/upload/v1752884608/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-User-Accounts/azure-portal-create-user-interface.jpg)
 
 After providing the required information, click "Create" to add the user to your Entra ID directory. Upon creation, the user’s account type and domain (for example, "kodekloudlab.onmicrosoft.com") will be visible in search results.
 
@@ -90,17 +84,11 @@ For ongoing account management:
 * **Deleting:**\
   When you delete an account, it moves to the "Deleted Users" list. This provides a grace period of 30 days during which the account can be restored before permanent deletion occurs.
 
-<Frame>
-  ![The image shows a Microsoft Azure user profile page for "Abigail Richards," displaying various user properties and settings such as identity, contact information, and job information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884609/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-User-Accounts/azure-user-profile-abigail-richards.jpg)
-</Frame>
+![The image shows a Microsoft Azure user profile page for "Abigail Richards," displaying various user properties and settings such as identity, contact information, and job information.](https://kodekloud.com/kk-media/image/upload/v1752884609/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-User-Accounts/azure-user-profile-abigail-richards.jpg)
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying a list of deleted users, with options to restore or permanently delete them. A specific user, "Abigail Richards," is selected for potential restoration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884610/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-User-Accounts/azure-portal-deleted-users-list.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying a list of deleted users, with options to restore or permanently delete them. A specific user, "Abigail Richards," is selected for potential restoration.](https://kodekloud.com/kk-media/image/upload/v1752884610/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-User-Accounts/azure-portal-deleted-users-list.jpg)
 
-<Callout icon="lightbulb">
-  To restore a deleted user, click "Restore Users." If the account is to be removed permanently, choose the deletion option.
-</Callout>
+> **lightbulb** To restore a deleted user, click "Restore Users." If the account is to be removed permanently, choose the deletion option.
 
 ## Bulk Operations and Additional Features
 
@@ -117,6 +105,4 @@ These operations are particularly beneficial for organizations undergoing rapid 
 
 This concludes our comprehensive overview of user accounts in Microsoft Entra ID. In the next lesson, we will explore advanced bulk operations for efficient user management at scale. For more detailed insights and further configuration tips, consider exploring the official [Microsoft Entra ID documentation](https://learn.microsoft.com/en-us/azure/active-directory/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/07e3a37e-65a9-430c-9919-011cc605b25d/lesson/51d8c0a7-6d65-4903-b37e-b0050789fef8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/07e3a37e-65a9-430c-9919-011cc605b25d/lesson/51d8c0a7-6d65-4903-b37e-b0050789fef8)

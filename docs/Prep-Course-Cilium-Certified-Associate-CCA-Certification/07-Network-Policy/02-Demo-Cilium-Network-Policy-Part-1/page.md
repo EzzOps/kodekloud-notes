@@ -102,9 +102,7 @@ Connectivity testing with telnet
   * "Connection refused" — the TCP SYN reached the destination pod (no process listening on that port). This confirms network reachability.
   * Telnet hangs without response — the packet was likely dropped before reaching the pod (network reachability blocked).
 
-<Callout icon="lightbulb">
-  Telnet note: "Connection refused" means the traffic reached the destination pod (but no process is listening on that port). A hanging telnet indicates the traffic was blocked or dropped.
-</Callout>
+> **lightbulb** Telnet note: "Connection refused" means the traffic reached the destination pod (but no process is listening on that port). A hanging telnet indicates the traffic was blocked or dropped.
 
 Example telnet test
 

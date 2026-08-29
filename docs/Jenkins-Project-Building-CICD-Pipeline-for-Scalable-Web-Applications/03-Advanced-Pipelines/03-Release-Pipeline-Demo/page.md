@@ -8,27 +8,17 @@ In this lesson, we'll walk through setting up a Jenkins-based release pipeline i
 
 In your project directory, click "New Item" and enter the name **release**. Then, select the project type **Pipeline** as shown in the image below.
 
-<Frame>
-  ![The image shows a Jenkins interface for creating a new item, with options to select different project types such as Freestyle project, Pipeline, and Multibranch Pipeline. The item name "release" is entered in the text box.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879842/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/jenkins-new-item-release-options.jpg)
-</Frame>
+![The image shows a Jenkins interface for creating a new item, with options to select different project types such as Freestyle project, Pipeline, and Multibranch Pipeline. The item name "release" is entered in the text box.](https://kodekloud.com/kk-media/image/upload/v1752879842/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/jenkins-new-item-release-options.jpg)
 
 Next, configure the pipeline to trigger on Git SCM polling via a GitHub hook. Set the pipeline script from your Git repository by providing your repository URL, selecting the main branch, and setting the script name (for example, "Jenkinsfile-release").
 
-<Frame>
-  ![The image shows a configuration screen for setting up a pipeline script in a project, with options to save or apply changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879843/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/pipeline-script-configuration-screen.jpg)
-</Frame>
+![The image shows a configuration screen for setting up a pipeline script in a project, with options to save or apply changes.](https://kodekloud.com/kk-media/image/upload/v1752879843/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/pipeline-script-configuration-screen.jpg)
 
-<Frame>
-  ![The image shows a Jenkins configuration page for setting up a pipeline, with options for defining the pipeline script from SCM and specifying a Git repository URL. There is a warning indicating that the Git repository URL is missing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879845/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/jenkins-pipeline-configuration-git-url.jpg)
-</Frame>
+![The image shows a Jenkins configuration page for setting up a pipeline, with options for defining the pipeline script from SCM and specifying a Git repository URL. There is a warning indicating that the Git repository URL is missing.](https://kodekloud.com/kk-media/image/upload/v1752879845/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/jenkins-pipeline-configuration-git-url.jpg)
 
-<Frame>
-  ![The image shows a Jenkins configuration screen for setting up a pipeline, with options to specify branches, repository browser, and script path. The script path is set to "Jenkinsfile" and there are buttons to save or apply the configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879846/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/jenkins-pipeline-configuration-screen.jpg)
-</Frame>
+![The image shows a Jenkins configuration screen for setting up a pipeline, with options to specify branches, repository browser, and script path. The script path is set to "Jenkinsfile" and there are buttons to save or apply the configuration.](https://kodekloud.com/kk-media/image/upload/v1752879846/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/jenkins-pipeline-configuration-screen.jpg)
 
-<Callout icon="lightbulb">
-  Normally, these steps are sufficient. However, a couple of additional configuration adjustments are required due to internal processes within our pipeline.
-</Callout>
+> **lightbulb** Normally, these steps are sufficient. However, a couple of additional configuration adjustments are required due to internal processes within our pipeline.
 
 Below is a simple HTML snippet from our repository that is part of the application's interface:
 
@@ -98,13 +88,9 @@ pipeline {
 
 When you run the command `git tag --contains` locally, it returns the tag if one is present or it returns empty. This ensures that we deploy to production only when a tag is present.
 
-<Callout icon="lightbulb">
-  By default, Jenkins does not fetch tag information. To enable it, navigate to **Additional Behaviors** in your Git SCM configuration, choose **Advanced clone behaviors**, and check **Fetch tags**.
-</Callout>
+> **lightbulb** By default, Jenkins does not fetch tag information. To enable it, navigate to **Additional Behaviors** in your Git SCM configuration, choose **Advanced clone behaviors**, and check **Fetch tags**.
 
-<Frame>
-  ![The image shows a configuration page for a Jenkins pipeline, where options for repository settings and branch specifications are being set. There are fields for branch specifier, repository browser, and additional behaviors like fetching tags.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879847/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/jenkins-pipeline-configuration-page.jpg)
-</Frame>
+![The image shows a configuration page for a Jenkins pipeline, where options for repository settings and branch specifications are being set. There are fields for branch specifier, repository browser, and additional behaviors like fetching tags.](https://kodekloud.com/kk-media/image/upload/v1752879847/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/jenkins-pipeline-configuration-page.jpg)
 
 ***
 
@@ -183,13 +169,9 @@ pipeline {
 }
 ```
 
-<Callout icon="lightbulb">
-  Jenkins checks out code in a detached HEAD state by default. To ensure the pipeline uses the main branch, adjust your repository’s configuration under **Additional Behaviors** by selecting the option to check out a specified local branch (e.g., main).
-</Callout>
+> **lightbulb** Jenkins checks out code in a detached HEAD state by default. To ensure the pipeline uses the main branch, adjust your repository’s configuration under **Additional Behaviors** by selecting the option to check out a specified local branch (e.g., main).
 
-<Frame>
-  ![The image shows a Jenkins configuration screen for a project pipeline, with options for advanced clone behaviors and a dropdown menu for additional settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879849/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/jenkins-project-pipeline-configuration.jpg)
-</Frame>
+![The image shows a Jenkins configuration screen for a project pipeline, with options for advanced clone behaviors and a dropdown menu for additional settings.](https://kodekloud.com/kk-media/image/upload/v1752879849/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/jenkins-project-pipeline-configuration.jpg)
 
 ***
 
@@ -232,23 +214,17 @@ git push origin feature2
 
 Pushing the new branch triggers a code quality pipeline. In your Jenkins dashboard under **Branches**, you'll see the build status for **feature2**:
 
-<Frame>
-  ![The image shows a Jenkins dashboard for a project named "Code-Quality," displaying details of a pull request with its last success and duration. The sidebar includes options like "Status," "Configure," and "Build History."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879850/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/jenkins-dashboard-code-quality-pull-request.jpg)
-</Frame>
+![The image shows a Jenkins dashboard for a project named "Code-Quality," displaying details of a pull request with its last success and duration. The sidebar includes options like "Status," "Configure," and "Build History."](https://kodekloud.com/kk-media/image/upload/v1752879850/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/jenkins-dashboard-code-quality-pull-request.jpg)
 
 Once dependencies are installed and tests pass, open a pull request on GitHub:
 
-<Frame>
-  ![The image shows a GitHub interface for creating a pull request, with fields for adding a title and description, and options for reviewers, assignees, labels, and projects.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879851/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/github-pull-request-interface.jpg)
-</Frame>
+![The image shows a GitHub interface for creating a pull request, with fields for adding a title and description, and options for reviewers, assignees, labels, and projects.](https://kodekloud.com/kk-media/image/upload/v1752879851/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/github-pull-request-interface.jpg)
 
 According to semantic-release rules, merging a feature with conventional commits will bump the version (e.g., from 2.20.0 to 2.21.0). Jenkins detects the merge commit on the main branch and triggers the release pipeline again.
 
 You can monitor branch builds via the Jenkins dashboard:
 
-<Frame>
-  ![The image shows a Jenkins dashboard for a project named "Code-Quality," displaying the status of two branches, "feature1" and "feature2," with details on their last success and duration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879853/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/jenkins-dashboard-code-quality-branches.jpg)
-</Frame>
+![The image shows a Jenkins dashboard for a project named "Code-Quality," displaying the status of two branches, "feature1" and "feature2," with details on their last success and duration.](https://kodekloud.com/kk-media/image/upload/v1752879853/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/jenkins-dashboard-code-quality-branches.jpg)
 
 ***
 
@@ -280,9 +256,7 @@ When the pull request is merged, Jenkins follows these steps:
 
 You can verify the release information on GitHub:
 
-<Frame>
-  ![The image shows a GitHub release page for version 2.21.0, detailing features and merged pull requests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879854/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/github-release-2-21-0-features.jpg)
-</Frame>
+![The image shows a GitHub release page for version 2.21.0, detailing features and merged pull requests.](https://kodekloud.com/kk-media/image/upload/v1752879854/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Release-Pipeline-Demo/github-release-2-21-0-features.jpg)
 
 Review the Jenkins console output to verify that tests have passed, a new tag was created, and the deployment steps executed successfully. An example output might look like:
 
@@ -307,6 +281,4 @@ In this lesson, we demonstrated how to construct a sophisticated CI/CD pipeline 
 
 Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/79ea1422-fc3a-48da-851d-232fc09690de/lesson/e202134c-6bfb-4a33-8a18-41fa5476557a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/79ea1422-fc3a-48da-851d-232fc09690de/lesson/e202134c-6bfb-4a33-8a18-41fa5476557a)

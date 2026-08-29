@@ -102,15 +102,11 @@ For this demonstration, create a Vault-specific IAM user with broad privileges:
 2. Enable **Programmatic access** and click **Next**.
 3. Under **Set permissions**, choose **Attach existing policies directly** and select **AdministratorAccess**.
 
-<Frame>
-  ![The image shows an AWS Management Console screen for adding a user, specifically the "Set permissions" step. It includes options to add the user to a group, copy permissions from an existing user, or attach existing policies directly.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878060/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-IAM/aws-management-console-add-user-permissions.jpg)
-</Frame>
+![The image shows an AWS Management Console screen for adding a user, specifically the "Set permissions" step. It includes options to add the user to a group, copy permissions from an existing user, or attach existing policies directly.](https://kodekloud.com/kk-media/image/upload/v1752878060/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-IAM/aws-management-console-add-user-permissions.jpg)
 
 4. Complete the wizard and download the access key ID and secret access key.
 
-<Frame>
-  ![The image shows an AWS IAM Management Console screen where a user has been successfully added, displaying their access key ID and an option to download credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878062/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-IAM/aws-iam-management-console-user-added.jpg)
-</Frame>
+![The image shows an AWS IAM Management Console screen where a user has been successfully added, displaying their access key ID and an option to download credentials.](https://kodekloud.com/kk-media/image/upload/v1752878062/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-IAM/aws-iam-management-console-user-added.jpg)
 
 ## 3. Configure Vault’s Root AWS Credentials
 
@@ -150,9 +146,7 @@ vault read aws/config/root
 
 You’ll observe a new `access_key`—Vault created a fresh key pair in AWS and removed the old one.
 
-<Frame>
-  ![The image shows an AWS Identity and Access Management (IAM) console with a list of users and their details, such as access key age and last activity. The console is displayed on a computer screen with a terminal window in the background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878063/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-IAM/aws-iam-console-users-details-screen.jpg)
-</Frame>
+![The image shows an AWS Identity and Access Management (IAM) console with a list of users and their details, such as access key age and last activity. The console is displayed on a computer screen with a terminal window in the background.](https://kodekloud.com/kk-media/image/upload/v1752878063/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-IAM/aws-iam-console-users-details-screen.jpg)
 
 ## 5. Define a Vault Role for Dynamic IAM Users
 
@@ -181,9 +175,7 @@ default_sts_ttl   0s
 max_sts_ttl       0s
 ```
 
-<Frame>
-  ![The image shows an AWS Identity and Access Management (IAM) console with a list of read-only policies. The left sidebar displays various IAM management options, and the main section lists policies with their names, types, and descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878064/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-IAM/aws-iam-console-read-only-policies.jpg)
-</Frame>
+![The image shows an AWS Identity and Access Management (IAM) console with a list of read-only policies. The left sidebar displays various IAM management options, and the main section lists policies with their names, types, and descriptions.](https://kodekloud.com/kk-media/image/upload/v1752878064/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-IAM/aws-iam-console-read-only-policies.jpg)
 
 ## 6. Generate Dynamic IAM Credentials
 
@@ -207,9 +199,7 @@ secret_key      NEW_SECRET_KEY…
 
 In the AWS Console under **IAM → Users**, you’ll find a user named like `vaultadvanced-…` with **ReadOnlyAccess** attached.
 
-<Frame>
-  ![The image shows an AWS Identity and Access Management (IAM) console screen, displaying user details and permissions, with a "ReadOnlyAccess" policy applied.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878065/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-IAM/aws-iam-console-user-permissions-readonly.jpg)
-</Frame>
+![The image shows an AWS Identity and Access Management (IAM) console screen, displaying user details and permissions, with a "ReadOnlyAccess" policy applied.](https://kodekloud.com/kk-media/image/upload/v1752878065/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-IAM/aws-iam-console-user-permissions-readonly.jpg)
 
 ## 7. Revoke a Single Lease
 
@@ -233,9 +223,7 @@ vault read aws/creds/vaultadvanced
 
 You’ll see several IAM users:
 
-<Frame>
-  ![The image shows an AWS Identity and Access Management (IAM) console with a list of users, their access key age, password age, last activity, and MFA status. A red box highlights several users with similar names.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878066/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-IAM/aws-iam-console-users-access-mfa.jpg)
-</Frame>
+![The image shows an AWS Identity and Access Management (IAM) console with a list of users, their access key age, password age, last activity, and MFA status. A red box highlights several users with similar names.](https://kodekloud.com/kk-media/image/upload/v1752878066/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-IAM/aws-iam-console-users-access-mfa.jpg)
 
 Revoke all leases created by `vaultadvanced`:
 
@@ -267,6 +255,4 @@ vault lease revoke -prefix aws/
 * [AWS IAM User Guide](https://docs.aws.amazon.com/iam/latest/UserGuide/)
 * [Vault CLI Commands](https://www.vaultproject.io/docs/commands)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/1b235872-0d8a-44f8-87ab-838b2f5b6dec" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/1b235872-0d8a-44f8-87ab-838b2f5b6dec)

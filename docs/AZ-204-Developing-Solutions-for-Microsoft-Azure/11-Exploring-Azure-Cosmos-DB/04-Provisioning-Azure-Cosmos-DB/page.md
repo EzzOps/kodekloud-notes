@@ -36,7 +36,7 @@ This graph API is perfect for applications that model data as nodes and edges, s
 
 When deploying a Cosmos DB account, you must choose between two capacity modes: provisioned throughput and serverless.
 
-![The image is a selection interface for creating an Azure Cosmos DB account, offering different database options like NoSQL, PostgreSQL, MongoDB, Apache Cassandra, Table, and Apache Gremlin. It also includes options for capacity mode: provisioned throughput or serverless.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866455/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Provisioning-Azure-Cosmos-DB/azure-cosmos-db-account-interface.jpg)
+![The image is a selection interface for creating an Azure Cosmos DB account, offering different database options like NoSQL, PostgreSQL, MongoDB, Apache Cassandra, Table, and Apache Gremlin. It also includes options for capacity mode: provisioned throughput or serverless.](https://kodekloud.com/kk-media/image/upload/v1752866455/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Provisioning-Azure-Cosmos-DB/azure-cosmos-db-account-interface.jpg)
 
 ### Understanding Capacity Models
 
@@ -58,7 +58,7 @@ Before diving deeper into capacity modes, it's important to understand the conce
 
 > **lightbulb** For a detailed exploration of request units and their calculation, refer to our dedicated lesson on this topic.
 
-![The image is a flowchart illustrating different capacity modes for request units, including "Serverless," "Auto Scale," and "Manual" under the "Provisioned" category.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866456/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Provisioning-Azure-Cosmos-DB/capacity-modes-request-units-flowchart.jpg)
+![The image is a flowchart illustrating different capacity modes for request units, including "Serverless," "Auto Scale," and "Manual" under the "Provisioned" category.](https://kodekloud.com/kk-media/image/upload/v1752866456/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Provisioning-Azure-Cosmos-DB/capacity-modes-request-units-flowchart.jpg)
 
 ## Choosing the Right Capacity Mode
 
@@ -71,7 +71,7 @@ Before diving deeper into capacity modes, it's important to understand the conce
   * **Autoscale:** Automatically adjusts throughput for workloads with variable traffic,
   * **Manual:** Offers precise control for applications with predictable usage patterns.
 
-![The image compares serverless and provisioned capacity modes, highlighting serverless as best for developers and provisioned (auto scale and manual) as best for production.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866458/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Provisioning-Azure-Cosmos-DB/serverless-vs-provisioned-capacity.jpg)
+![The image compares serverless and provisioned capacity modes, highlighting serverless as best for developers and provisioned (auto scale and manual) as best for production.](https://kodekloud.com/kk-media/image/upload/v1752866458/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Provisioning-Azure-Cosmos-DB/serverless-vs-provisioned-capacity.jpg)
 
 Now that you understand the fundamentals of request units, capacity modes, and the differences between serverless and provisioned throughput, you're ready to deploy Azure Cosmos DB through the Azure Portal.
 

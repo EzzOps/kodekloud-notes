@@ -34,7 +34,7 @@ If Macie detects sensitive information, it promptly notifies you, allowing immed
 
 > **lightbulb** For example, upon detecting sensitive data, you can trigger an AWS EventBridge event. This event can then invoke a Lambda function or send an email notification, alerting your data protection team to take swift remedial steps.
 
-![The image is a flowchart illustrating how Macie monitors an S3 bucket for sensitive data, triggers a Lambda function via EventBridge upon discovering PII, and notifies the data protection team for compliance actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865900/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Macie/macie-s3-bucket-monitoring-flowchart.jpg)
+![The image is a flowchart illustrating how Macie monitors an S3 bucket for sensitive data, triggers a Lambda function via EventBridge upon discovering PII, and notifies the data protection team for compliance actions.](https://kodekloud.com/kk-media/image/upload/v1752865900/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Macie/macie-s3-bucket-monitoring-flowchart.jpg)
 
 ## AWS Macie Versus Other Security Tools
 
@@ -59,6 +59,6 @@ Using AWS Macie brings numerous advantages for managing and securing your S3 dat
 
 > **lightbulb** By leveraging AWS Macie, organizations can bolster their security posture and streamline compliance processes, making it an essential tool in today's data-driven environment.
 
-![The image lists five benefits related to data management, including enhanced security, proactive alerts, reduced data risk, scalability, and stronger governance. It features a gradient background with icons and text.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865902/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Macie/data-management-benefits-icons.jpg)
+![The image lists five benefits related to data management, including enhanced security, proactive alerts, reduced data risk, scalability, and stronger governance. It features a gradient background with icons and text.](https://kodekloud.com/kk-media/image/upload/v1752865902/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Macie/data-management-benefits-icons.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/6b2d9e18-1714-499c-83d4-4d1f7ff29e66/lesson/52dbcac2-d91e-4868-8215-5fdf7024655b)

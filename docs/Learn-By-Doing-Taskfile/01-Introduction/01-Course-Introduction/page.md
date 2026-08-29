@@ -26,17 +26,13 @@ The labs are interactive, step-by-step, and include workbooks that present tasks
 
 An embedded terminal is provided for all hands-on exercises. Use it to run the Task CLI, author Taskfiles, and validate your solutions. If you get stuck, hints and solutions are available for every lab, and validation tools let you verify that tasks ran correctly before moving on.
 
-<Callout icon="lightbulb">
-  If you haven't installed Task yet, run the installer below. This downloads and runs the official Task installer and installs the binary (the example below installs to `/usr/local/bin`).
-</Callout>
+> **lightbulb** If you haven't installed Task yet, run the installer below. This downloads and runs the official Task installer and installs the binary (the example below installs to `/usr/local/bin`).
 
 ```bash theme={null}
 sh -c "$(curl -sSL https://taskfile.dev/install.sh)" -- -b /usr/local/bin
 ```
 
-<Callout icon="warning">
-  Only run remote installation scripts you trust. Review the installer script at `https://taskfile.dev/install.sh` before executing it on production or sensitive systems.
-</Callout>
+> **warning** Only run remote installation scripts you trust. Review the installer script at `https://taskfile.dev/install.sh` before executing it on production or sensitive systems.
 
 How the labs are organized
 
@@ -75,6 +71,4 @@ Links and references
 * Taskfile GitHub repository: [https://github.com/go-task/task](https://github.com/go-task/task)
 * CI/CD best practices: [https://www.redhat.com/en/topics/devops/what-is-ci-cd](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-by-doing-taskfile/module/7c0c19f3-9a9c-40d9-80e6-3bf640425fc0/lesson/3b89dce2-bfb3-42cf-8b10-cb7e33de2c85" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-by-doing-taskfile/module/7c0c19f3-9a9c-40d9-80e6-3bf640425fc0/lesson/3b89dce2-bfb3-42cf-8b10-cb7e33de2c85)

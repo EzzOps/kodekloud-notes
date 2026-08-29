@@ -10,9 +10,7 @@ This article examines the primary tools for managing packages and applications i
 
 Here we'll compare three approaches—plain Kubernetes manifests, Helm, and Glasskube—covering their common use cases, strengths, and trade-offs. The intent is to help you choose the right tool for your workflow, whether you prioritize simplicity, templating power, or an opinionated package manager.
 
-<Callout icon="lightbulb">
-  This section focuses on trade-offs you should consider: reproducibility, templating and parameterization, lifecycle operations (install/upgrade/rollback), and operational complexity. Keep these dimensions in mind as you evaluate each tool.
-</Callout>
+> **lightbulb** This section focuses on trade-offs you should consider: reproducibility, templating and parameterization, lifecycle operations (install/upgrade/rollback), and operational complexity. Keep these dimensions in mind as you evaluate each tool.
 
 <Frame>
   <img alt="The image is a section overview with a gradient background, listing three topics: Kubernetes Manifests, Helm, and Glasskube, each numbered sequentially." />
@@ -45,6 +43,4 @@ References
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [Helm — The Kubernetes Package Manager](https://helm.sh/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/140a6ea0-1539-4d23-9aa6-0d07654a4526/lesson/4cae76fc-e196-4dad-8127-0aaef2569f5a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/140a6ea0-1539-4d23-9aa6-0d07654a4526/lesson/4cae76fc-e196-4dad-8127-0aaef2569f5a)

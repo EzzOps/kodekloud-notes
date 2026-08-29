@@ -25,7 +25,7 @@ However, there are several challenges to be aware of:
 * An on-premises VPN device or router is required for establishing a site-to-site connection. Note that point-to-site connections, while easier to manage, have limitations on the number of concurrent connections.
 * Deploying a gateway can take approximately 30 to 40 minutes.
 
-![The image is a diagram illustrating a VPN connection between an on-premises network and an Azure virtual network, highlighting the pros and cons of the setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867090/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-on-premises-connectivity/vpn-connection-azure-diagram.jpg)
+![The image is a diagram illustrating a VPN connection between an on-premises network and an Azure virtual network, highlighting the pros and cons of the setup.](https://kodekloud.com/kk-media/image/upload/v1752867090/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-on-premises-connectivity/vpn-connection-azure-diagram.jpg)
 
 > **lightbulb** For smoother deployment, verify that your on-premises VPN device meets the compatibility requirements with Azure VPN gateways.
 
@@ -47,7 +47,7 @@ Be mindful of the following trade-offs:
 * Dependency on third-party providers: Collaboration with a connectivity provider is required, adding complexity to the configuration process.
 * Specialized on-premises equipment: High-bandwidth devices that support ExpressRoute connectivity are needed, which might increase costs.
 
-![The image is a diagram illustrating an ExpressRoute connection between an on-premises network and an Azure virtual network, highlighting components like gateways, subnets, and routers. It includes pros and cons of using ExpressRoute for dedicated private connections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867091/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-on-premises-connectivity/expressroute-connection-diagram-azure.jpg)
+![The image is a diagram illustrating an ExpressRoute connection between an on-premises network and an Azure virtual network, highlighting components like gateways, subnets, and routers. It includes pros and cons of using ExpressRoute for dedicated private connections.](https://kodekloud.com/kk-media/image/upload/v1752867091/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-on-premises-connectivity/expressroute-connection-diagram-azure.jpg)
 
 ***
 
@@ -61,7 +61,7 @@ Key aspects of this configuration are:
 * Throughput considerations: The VPN gateway generally provides lower throughput compared to ExpressRoute.
 * Dual setup complexity: Configuring both ExpressRoute and VPN connections on your on-premises device—as well as deploying two separate gateways in Azure—can increase overall costs.
 
-![The image is a diagram illustrating an ExpressRoute with VPN failover setup, showing the connection between an on-premises network and an Azure virtual network using ExpressRoute and VPN gateways.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867092/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-on-premises-connectivity/expressroute-vpn-failover-diagram.jpg)
+![The image is a diagram illustrating an ExpressRoute with VPN failover setup, showing the connection between an on-premises network and an Azure virtual network using ExpressRoute and VPN gateways.](https://kodekloud.com/kk-media/image/upload/v1752867092/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-on-premises-connectivity/expressroute-vpn-failover-diagram.jpg)
 
 > **triangle-alert** Ensure that your network design accounts for the additional complexity and cost when implementing dual gateways for a failover strategy.
 
@@ -79,7 +79,7 @@ In a hub-spoke architecture:
 
 This design centralizes connectivity, reducing the need to deploy multiple VPN gateways.
 
-![The image illustrates a Hub-Spoke architecture, showing the connection between an on-premises network and Azure virtual networks via a VPN gateway and peering.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867095/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-on-premises-connectivity/hub-spoke-architecture-azure-vpn.jpg)
+![The image illustrates a Hub-Spoke architecture, showing the connection between an on-premises network and Azure virtual networks via a VPN gateway and peering.](https://kodekloud.com/kk-media/image/upload/v1752867095/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-on-premises-connectivity/hub-spoke-architecture-azure-vpn.jpg)
 
 ***
 
@@ -95,7 +95,7 @@ The hub-spoke model becomes even more effective when enhanced with Azure Virtual
 
 As a platform-managed service, Virtual WAN delivers high availability, scalability, and simplified maintenance, making it an optimal choice for complex connectivity requirements.
 
-![The image illustrates a Hub-Spoke architecture using VWAN, showing the connection between an on-premises network and Azure virtual networks through a central hub. It includes components like workloads, gateways, and peering connections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867096/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-on-premises-connectivity/hub-spoke-architecture-vwan-azure.jpg)
+![The image illustrates a Hub-Spoke architecture using VWAN, showing the connection between an on-premises network and Azure virtual networks through a central hub. It includes components like workloads, gateways, and peering connections.](https://kodekloud.com/kk-media/image/upload/v1752867096/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-on-premises-connectivity/hub-spoke-architecture-vwan-azure.jpg)
 
 ***
 
@@ -113,7 +113,7 @@ In this article, we examined several design options for connecting on-premises e
 
 These strategies allow you to tailor your connectivity approach based on performance, cost, and complexity requirements. By selecting the best option for your environment, you can achieve reliable and cost-effective integration between your on-premises resources and Azure.
 
-![The image illustrates a Hub-Spoke architecture using VWAN, showing various connectivity options like Branch-to-VNet and Remote users-to-Branch, with a diagram of regions and network connections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867097/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-on-premises-connectivity/hub-spoke-architecture-vwan-diagram.jpg)
+![The image illustrates a Hub-Spoke architecture using VWAN, showing various connectivity options like Branch-to-VNet and Remote users-to-Branch, with a diagram of regions and network connections.](https://kodekloud.com/kk-media/image/upload/v1752867097/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-on-premises-connectivity/hub-spoke-architecture-vwan-diagram.jpg)
 
 Next, we will explore design considerations for network connectivity.
 

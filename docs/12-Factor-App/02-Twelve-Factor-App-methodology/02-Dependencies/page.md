@@ -47,7 +47,7 @@ This command ensures that every dependency listed in `requirements.txt`—includ
 
 Python's virtual environments solve version conflicts by isolating dependencies for each application. This isolation is imperative when one app requires one version of Flask while another requires a different version.
 
-![The image illustrates Python virtual environments (venv) with two Flask versions: 2.0.0 and 1.9.0, each represented by different icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856831/notes-assets/images/12-Factor-App-Dependencies/frame_150.jpg)
+![The image illustrates Python virtual environments (venv) with two Flask versions: 2.0.0 and 1.9.0, each represented by different icons.](https://kodekloud.com/kk-media/image/upload/v1752856831/notes-assets/images/12-Factor-App-Dependencies/frame_150.jpg)
 
 Combining the use of `requirements.txt` with virtual environments guarantees that your explicit dependency packages are consistent across development, staging, and production.
 

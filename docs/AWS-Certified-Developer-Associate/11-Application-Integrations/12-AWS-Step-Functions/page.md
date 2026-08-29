@@ -25,7 +25,7 @@ Managing such a workflow directly in your application can become complex and err
 * Enabling parallel task execution.
 * Offering a visual drag and drop editor for workflow configuration.
 
-![The image is a flowchart illustrating the need for step functions in a process involving order placement, payment processing, inventory check, shipping label, notification, shipping, and completion. It highlights the complexity and state management using Lambda functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858372/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions/step-functions-flowchart-order-process.jpg)
+![The image is a flowchart illustrating the need for step functions in a process involving order placement, payment processing, inventory check, shipping label, notification, shipping, and completion. It highlights the complexity and state management using Lambda functions.](https://kodekloud.com/kk-media/image/upload/v1752858372/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions/step-functions-flowchart-order-process.jpg)
 
 ## Key Features of AWS Step Functions
 
@@ -36,9 +36,9 @@ AWS Step Functions offer several features that make managing complex, long-runni
 * **Parallel and Sequential Task Execution:** Run tasks concurrently or in sequence, according to your business logic.
 * **Intuitive Workflow Editor:** Configure workflows effortlessly using a drag and drop interface.
 
-![The image is a flowchart illustrating the steps in an order fulfillment process, highlighting the use of step functions for seamless and reliable operations. It includes stages like order placement, payment processing, inventory check, shipping, and notification, with benefits such as parallelization, error handling, and workflow visualization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858374/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions/order-fulfillment-flowchart-steps.jpg)
+![The image is a flowchart illustrating the steps in an order fulfillment process, highlighting the use of step functions for seamless and reliable operations. It includes stages like order placement, payment processing, inventory check, shipping, and notification, with benefits such as parallelization, error handling, and workflow visualization.](https://kodekloud.com/kk-media/image/upload/v1752858374/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions/order-fulfillment-flowchart-steps.jpg)
 
-![The image lists features of a step function, including workflow orchestration, complex workflow management, error handling and retry logic, and visual and easy-to-use configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858376/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions/step-function-features-workflow-management.jpg)
+![The image lists features of a step function, including workflow orchestration, complex workflow management, error handling and retry logic, and visual and easy-to-use configuration.](https://kodekloud.com/kk-media/image/upload/v1752858376/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions/step-function-features-workflow-management.jpg)
 
 > **lightbulb** AWS Step Functions also support scalable and highly available architectures, ensuring your workflows run reliably in production environments.
 
@@ -52,7 +52,7 @@ Consider an order placement workflow that triggers an AWS Step Functions process
 4. **Shipping and Notification:** The workflow concurrently generates a shipping label and sends notifications through email or SNS.
 5. **Completion:** Upon shipment confirmation, the order fulfillment process is finalized.
 
-![The image is a flowchart illustrating a step function process for order management, including stages like order placement, payment processing, inventory check, shipping label generation, and notifications. It shows interactions with a payment gateway, risk verification, and notification systems via email and SMS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858378/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions/order-management-flowchart-step-function.jpg)
+![The image is a flowchart illustrating a step function process for order management, including stages like order placement, payment processing, inventory check, shipping label generation, and notifications. It shows interactions with a payment gateway, risk verification, and notification systems via email and SMS.](https://kodekloud.com/kk-media/image/upload/v1752858378/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions/order-management-flowchart-step-function.jpg)
 
 ## Use Case: Content Compliance
 
@@ -61,7 +61,7 @@ Another application scenario is processing user-uploaded content. When content i
 * If the content passes, it is published immediately, and the user is notified.
 * If the content is flagged for review, it is held for administrative approval.
 
-![The image is a flowchart titled "Step Functions," showing a process for content compliance. It includes steps like uploading content, analyzing for compliance, and handling non-compliant content through holding, reviewing, and notifying an admin.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858379/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions/step-functions-content-compliance-flowchart.jpg)
+![The image is a flowchart titled "Step Functions," showing a process for content compliance. It includes steps like uploading content, analyzing for compliance, and handling non-compliant content through holding, reviewing, and notifying an admin.](https://kodekloud.com/kk-media/image/upload/v1752858379/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions/step-functions-content-compliance-flowchart.jpg)
 
 ## Workflow States Overview
 
@@ -74,7 +74,7 @@ Within a Step Functions workflow, each step is defined as a state. Common state 
 * **Map:** Iterates over a dataset (e.g., processing multiple video resolutions).
 * **Parallel:** Executes multiple tasks concurrently.
 
-![The image describes different states in a step function, including Pass, Choice, Fail, Succeed, Map, and Parallel, alongside a flowchart illustrating a process involving uploading content, processing video, and generating thumbnails.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858380/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions/step-function-states-flowchart.jpg)
+![The image describes different states in a step function, including Pass, Choice, Fail, Succeed, Map, and Parallel, alongside a flowchart illustrating a process involving uploading content, processing video, and generating thumbnails.](https://kodekloud.com/kk-media/image/upload/v1752858380/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions/step-function-states-flowchart.jpg)
 
 When a task fails, retry functionality can automatically reattempt the task a specified number of times. If retries still fail, error-handling steps—such as sending an email notification—can be executed to capture and address the failure.
 
@@ -109,7 +109,7 @@ After the credit check is performed externally, the response along with the task
 }
 ```
 
-![The image is a flowchart illustrating a credit check process using AWS Step Functions and SQS, showing steps from starting the process to checking credit, and determining if the result is approved or denied.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858381/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions/credit-check-flowchart-aws-sqs.jpg)
+![The image is a flowchart illustrating a credit check process using AWS Step Functions and SQS, showing steps from starting the process to checking credit, and determining if the result is approved or denied.](https://kodekloud.com/kk-media/image/upload/v1752858381/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions/credit-check-flowchart-aws-sqs.jpg)
 
 ## Summary
 
@@ -120,7 +120,7 @@ AWS Step Functions provide a robust and intuitive platform for building distribu
 * Integrated error handling with retry and catch mechanisms.
 * Seamless integration with other AWS services and support for callback tasks using task tokens.
 
-![The image is a summary slide about AWS Step Functions, highlighting its use for building distributed applications, various states, and error handling with retry and catch mechanisms.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858382/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions/aws-step-functions-summary-slide.jpg)
+![The image is a summary slide about AWS Step Functions, highlighting its use for building distributed applications, various states, and error handling with retry and catch mechanisms.](https://kodekloud.com/kk-media/image/upload/v1752858382/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Step-Functions/aws-step-functions-summary-slide.jpg)
 
 > **lightbulb** Explore AWS Step Functions today to simplify and enhance the reliability of your application workflows. For more information, visit the [AWS Step Functions Documentation](https://docs.aws.amazon.com/step-functions).
 

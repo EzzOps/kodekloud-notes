@@ -43,7 +43,7 @@ Security scanning reviews your source code and configuration for common security
 | OWASP ZAP         | Security              | `docker run owasp/zap2docker-stable zap-baseline.py` |
 | Trivy             | Container & Files     | `trivy filesystem --security-checks vuln,path .`     |
 
-![The image is a slide titled "Dependency and Security Scanning" with a color-coded list of topics related to dependency scanning and security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867785/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/dependency-security-scanning-topics-slide.jpg)
+![The image is a slide titled "Dependency and Security Scanning" with a color-coded list of topics related to dependency scanning and security.](https://kodekloud.com/kk-media/image/upload/v1752867785/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/dependency-security-scanning-topics-slide.jpg)
 
 ***
 
@@ -134,7 +134,7 @@ Interpret coverage reports to guide your testing efforts:
 * Increase branch and path coverage for complex logic
 * Set realistic coverage targets (e.g., 80–90%)
 
-![The image is a slide titled "Understanding Code Coverage," listing topics such as the definition, importance, and best practices of code coverage, each associated with a different color.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867787/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/understanding-code-coverage-topics-slide.jpg)
+![The image is a slide titled "Understanding Code Coverage," listing topics such as the definition, importance, and best practices of code coverage, each associated with a different color.](https://kodekloud.com/kk-media/image/upload/v1752867787/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/understanding-code-coverage-topics-slide.jpg)
 
 ***
 

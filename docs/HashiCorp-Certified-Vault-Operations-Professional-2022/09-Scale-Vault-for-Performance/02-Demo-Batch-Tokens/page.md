@@ -93,9 +93,7 @@ vault login hvs.CAESIJBJBIUD...
 Error authenticating: permission denied
 ```
 
-<Callout icon="lightbulb">
-  Granting `list` and `revoke` permissions on `auth/token/accessors` lets users revoke any token by accessor. Assign this capability with care.
-</Callout>
+> **lightbulb** Granting `list` and `revoke` permissions on `auth/token/accessors` lets users revoke any token by accessor. Assign this capability with care.
 
 ## Creating a Batch Token
 

@@ -20,9 +20,7 @@ A kubeconfig has three top-level sections:
 | users    | Credentials (client cert/key or token) for each user           |
 | contexts | Mappings of user ↔ cluster, with optional namespace setting    |
 
-<Frame>
-  ![The image is a diagram of a KubeConfig file structure, showing clusters, contexts, and users in separate sections. It illustrates how different environments and roles are organized within the configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880746/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Client-Security-kubeconfig/kubeconfig-file-structure-diagram.jpg)
-</Frame>
+![The image is a diagram of a KubeConfig file structure, showing clusters, contexts, and users in separate sections. It illustrates how different environments and roles are organized within the configuration.](https://kodekloud.com/kk-media/image/upload/v1752880746/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Client-Security-kubeconfig/kubeconfig-file-structure-diagram.jpg)
 
 ### 4.1 Minimal Example
 
@@ -167,9 +165,7 @@ cat admin.key   | base64
 echo "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0t" | base64 --decode
 ```
 
-<Callout icon="triangle-alert">
-  Embedding secrets directly in your config can increase exposure risk. Always secure your files and consider encryption at rest.
-</Callout>
+> **triangle-alert** Embedding secrets directly in your config can increase exposure risk. Always secure your files and consider encryption at rest.
 
 ***
 
@@ -188,11 +184,9 @@ echo "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0t" | base64 --decode
 * [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 * [Kubernetes Authentication](https://kubernetes.io/docs/reference/access-authn-authz/authentication/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/c89e8c96-7640-44a8-a002-9d96c2f7a6f4" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/c89e8c96-7640-44a8-a002-9d96c2f7a6f4)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/e572aaf4-1736-4865-9dd1-b2e46aaaca04" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/e572aaf4-1736-4865-9dd1-b2e46aaaca04)
 
 
 # Client Security kubectl proxy port forward

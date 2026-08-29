@@ -110,9 +110,7 @@ Three essential rules for writing Reconcile
   <img alt="The image illustrates the reconciliation process, showing that multiple changes trigger a single Reconcile function, which then reads the current state. It highlights three rules for writing reconcile: level-based, idempotent, and fast." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Three quick tips: 1) Design Reconcile to read current state (level-based). 2) Make it idempotent. 3) Keep it short — move long tasks out of the reconcile loop.
-</Callout>
+> **lightbulb** Three quick tips: 1) Design Reconcile to read current state (level-based). 2) Make it idempotent. 3) Keep it short — move long tasks out of the reconcile loop.
 
 Quick reference: Manager vs Controller vs Reconciler
 
@@ -131,6 +129,4 @@ Links and references
 
 That's it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/6567c490-0938-44e5-9c4e-b55ba843d46a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/6567c490-0938-44e5-9c4e-b55ba843d46a)

@@ -12,9 +12,7 @@ Begin with an overview of OpenAI, explore its foundation models and variants, th
 * Core offerings: Language, vision, and embeddings APIs
 * Key applications: Chatbots, content generation, code completion
 
-<Frame>
-  ![The image is a slide titled "Objectives" with a list of topics: "What Is OpenAI?", "Foundation Models", and "Model Variants", each accompanied by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881528/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Section-Intro/objectives-openai-foundation-models-variants.jpg)
-</Frame>
+![The image is a slide titled "Objectives" with a list of topics: "What Is OpenAI?", "Foundation Models", and "Model Variants", each accompanied by an icon.](https://kodekloud.com/kk-media/image/upload/v1752881528/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Section-Intro/objectives-openai-foundation-models-variants.jpg)
 
 ## Foundation Models and Key Variants
 
@@ -31,13 +29,9 @@ Get practical experience with:
 3. Installing and using OpenAI Libraries & SDKs
 4. Running commands with the OpenAI CLI
 
-<Frame>
-  ![The image is a slide titled "Objectives" with a list of topics: OpenAI Libraries and SDKs, OpenAI CLI, and Pricing Structure of the APIs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881529/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Section-Intro/objectives-openai-libraries-cli-pricing.jpg)
-</Frame>
+![The image is a slide titled "Objectives" with a list of topics: OpenAI Libraries and SDKs, OpenAI CLI, and Pricing Structure of the APIs.](https://kodekloud.com/kk-media/image/upload/v1752881529/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Section-Intro/objectives-openai-libraries-cli-pricing.jpg)
 
-<Callout icon="lightbulb">
-  Understanding the OpenAI API pricing structure is essential before making large-scale requests. Review cost per token for each model on the [OpenAI Pricing Page](https://openai.com/pricing) and monitor usage to avoid unexpected charges.
-</Callout>
+> **lightbulb** Understanding the OpenAI API pricing structure is essential before making large-scale requests. Review cost per token for each model on the [OpenAI Pricing Page](https://openai.com/pricing) and monitor usage to avoid unexpected charges.
 
 ## Lab Exercise: Account Creation
 
@@ -49,6 +43,4 @@ In your first lab, you’ll:
 
 Let’s jump in and start leveraging OpenAI’s capabilities!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/7cf291c5-4705-4a69-965a-b0ba7d2169c6/lesson/e1d881b2-ed57-40f2-85cc-53685d61e209" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/7cf291c5-4705-4a69-965a-b0ba7d2169c6/lesson/e1d881b2-ed57-40f2-85cc-53685d61e209)

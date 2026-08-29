@@ -121,7 +121,7 @@ This template provides a placeholder for your homepage and ensures that your Fla
 
 For future development, you can include additional settings in an instance configuration file (`config.py`). This file allows you to add environment-specific keys and settings as needed.
 
-![The image shows a Visual Studio Code interface with a Python file open, displaying a message about using GitHub Copilot. The file structure on the left includes folders and files related to an "imageoptimizer" project.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857060/notes-assets/images/AI-Assisted-Development-Setting-up-Flask-for-the-API/vscode-python-github-copilot-imageoptimizer.jpg)
+![The image shows a Visual Studio Code interface with a Python file open, displaying a message about using GitHub Copilot. The file structure on the left includes folders and files related to an "imageoptimizer" project.](https://kodekloud.com/kk-media/image/upload/v1752857060/notes-assets/images/AI-Assisted-Development-Setting-up-Flask-for-the-API/vscode-python-github-copilot-imageoptimizer.jpg)
 
 > Note:\
 > Remember to update the `SECRET_KEY` before deploying to production.
@@ -186,7 +186,7 @@ After launching the server, access the homepage and the `/routes` endpoint:
 * The homepage should display the welcome message from `base.html`.
 * The `/routes` endpoint should list all registered endpoints, confirming your Flask app's configuration.
 
-![The image shows a split screen with a code editor on the left displaying Python code for a Flask application, and a web browser on the right showing the message "Welcome to My Flask App."](../../../../images/kodekloud.com/kk-media/image/upload/v1752857062/notes-assets/images/AI-Assisted-Development-Setting-up-Flask-for-the-API/flask-app-code-editor-browser.jpg)
+![The image shows a split screen with a code editor on the left displaying Python code for a Flask application, and a web browser on the right showing the message "Welcome to My Flask App."](https://kodekloud.com/kk-media/image/upload/v1752857062/notes-assets/images/AI-Assisted-Development-Setting-up-Flask-for-the-API/flask-app-code-editor-browser.jpg)
 
 > Note:\
 > Verifying the setup by checking these endpoints ensures that your application is running as expected.

@@ -84,7 +84,7 @@ CodeQL is a powerful semantic code analysis engine that treats your source code 
    * Assign issues to team members, dismiss false positives, or mark fixes directly in the GitHub UI.
    * Iterate on your workflow and queries to enhance coverage and accuracy.
 
-![The image is a guide on navigating CodeQL on GitHub, detailing code scanning, functionality, procedure, and tools for analyzing code vulnerabilities and errors. It includes options for setting up CodeQL analysis with default or advanced configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868031/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Navigating-CodeQL-on-GitHub/codeql-navigating-github-guide.jpg)
+![The image is a guide on navigating CodeQL on GitHub, detailing code scanning, functionality, procedure, and tools for analyzing code vulnerabilities and errors. It includes options for setting up CodeQL analysis with default or advanced configurations.](https://kodekloud.com/kk-media/image/upload/v1752868031/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Navigating-CodeQL-on-GitHub/codeql-navigating-github-guide.jpg)
 
 ## Further Reading & References
 

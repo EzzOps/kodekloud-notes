@@ -11,9 +11,7 @@ ssh kodekloud@<firewall_public_ip> -p 32000
 
 You will be prompted for a password, and upon success, you will connect to Spoke A VM1. Repeat the process for Spoke A VM2 using port 32001.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface where a user is adding a DNAT rule collection named "SSH-VMs" with specific rules for TCP protocols, destination ports, and translated IP addresses. The interface includes fields for rule collection type, priority, and action.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882160/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-User-Defined-Routes-and-Network-Virtual-Appliances/azure-portal-dnat-rule-collection.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface where a user is adding a DNAT rule collection named "SSH-VMs" with specific rules for TCP protocols, destination ports, and translated IP addresses. The interface includes fields for rule collection type, priority, and action.](https://kodekloud.com/kk-media/image/upload/v1752882160/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-User-Defined-Routes-and-Network-Virtual-Appliances/azure-portal-dnat-rule-collection.jpg)
 
 Additionally, you may need to configure application rules on the firewall to manage domain-based traffic. For instance, you could block all outbound web traffic by default and then allow access selectively via application rules. In one scenario, an application rule was added to permit access to [www.google.com](http://www.google.com) for one VM while denying it for another:
 
@@ -31,9 +29,7 @@ To allow web access, adjust the Azure Firewall configuration by adding an applic
 
 After applying this rule, test connectivity again. If configured correctly, one VM might access [www.google.com](http://www.google.com) while another could be restricted or allowed access to a different domain (e.g., [www.microsoft.com](http://www.microsoft.com)).
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying DNAT rules for a firewall policy, listing several SSH-VM rules with details like source, port, protocol, and translated addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882161/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-User-Defined-Routes-and-Network-Virtual-Appliances/azure-portal-dnat-firewall-rules.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying DNAT rules for a firewall policy, listing several SSH-VM rules with details like source, port, protocol, and translated addresses.](https://kodekloud.com/kk-media/image/upload/v1752882161/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-User-Defined-Routes-and-Network-Virtual-Appliances/azure-portal-dnat-firewall-rules.jpg)
 
 Alternatively, network rules can also be used to manage communications (e.g., between spokes via the firewall) within a hub-spoke architecture.
 
@@ -43,9 +39,7 @@ By overriding default system routes with user-defined routes and configuring bot
 
 Happy configuring!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/cb10a3ae-53f4-4588-ad61-042af34f31ab/lesson/cadf0ff5-3fea-40ff-9791-b2c163ff8b32" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/cb10a3ae-53f4-4588-ad61-042af34f31ab/lesson/cadf0ff5-3fea-40ff-9791-b2c163ff8b32)
 
 
 # Define defense in depth
@@ -56,9 +50,7 @@ This article explains the defense in depth strategy in Azure, detailing multiple
 
 As we explore the Azure security model, we focus on the layered approach known as defense in depth. This strategy enhances security by implementing multiple layers of protection between potential threats and your Azure resources. Below is an in-depth explanation of each layer, starting from physical security and working inward toward data protection.
 
-<Callout icon="lightbulb">
-  Implementing multiple security layers ensures that even if one layer is breached, the remaining layers continue to protect your environment.
-</Callout>
+> **lightbulb** Implementing multiple security layers ensures that even if one layer is breached, the remaining layers continue to protect your environment.
 
 ## Physical Security
 
@@ -90,12 +82,8 @@ Data security is central to the defense in depth strategy as it focuses on prote
 
 Reviewing the overall strategy reveals that each layer—from identity and access management to network, compute, and application—builds upon one another, forming a comprehensive defense in depth strategy with data security at its core.
 
-<Callout icon="lightbulb">
-  Later in the discussion, we will expand on this layered model by addressing additional aspects such as virtual network security, host security, container security, and further protective measures that enhance both the perimeter and data layers.
-</Callout>
+> **lightbulb** Later in the discussion, we will expand on this layered model by addressing additional aspects such as virtual network security, host security, container security, and further protective measures that enhance both the perimeter and data layers.
 
 The subsequent sections will cover virtual network security, which forms the outer perimeter of your infrastructure, ensuring that every point of access to your environment is safeguarded.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/cb10a3ae-53f4-4588-ad61-042af34f31ab/lesson/31b5f406-17a8-4f6e-901b-923e00bb1bd3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/cb10a3ae-53f4-4588-ad61-042af34f31ab/lesson/31b5f406-17a8-4f6e-901b-923e00bb1bd3)

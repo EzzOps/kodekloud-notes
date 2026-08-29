@@ -8,9 +8,7 @@ In this lesson, we will explore the AWS Identity and Access Management (IAM) ser
 
 To access IAM, click the Services tab at the top left and navigate to the Security & Compliance group; IAM is the first service listed. Alternatively, use the search bar on the dashboard. Note that IAM is a global service—unlike other AWS services, once you create an IAM object (such as a user or group), it is available in every region across your account.
 
-<Frame>
-  ![The image shows the AWS Management Console interface, listing various AWS services under categories like Migration, Networking, Media, Security, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884217/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_30.jpg)
-</Frame>
+![The image shows the AWS Management Console interface, listing various AWS services under categories like Migration, Networking, Media, Security, and more.](https://kodekloud.com/kk-media/image/upload/v1752884217/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_30.jpg)
 
 Once inside the IAM dashboard, you will notice that no users or groups have been created yet, and you are logged in as the root account. To begin, we will create an IAM user named Lucy.
 
@@ -22,9 +20,7 @@ Once inside the IAM dashboard, you will notice that no users or groups have been
    * **Programmatic Access:** Generates an access key and secret access key for AWS CLI or SDK usage.
    * **AWS Management Console Access:** Provides a username and password for console login.
 
-<Callout icon="lightbulb">
-  These access methods are complementary. The programmatic access key allows API interactions, while console access permits direct usage via the browser.
-</Callout>
+> **lightbulb** These access methods are complementary. The programmatic access key allows API interactions, while console access permits direct usage via the browser.
 
 4. For Lucy, set a custom password and enable the option for her to reset the password upon first login. This automatically attaches an IAM policy that permits password changes.
 5. Click **Next: Permissions**. For now, do not attach any additional permissions. Then click **Next: Tags**.
@@ -32,25 +28,15 @@ Once inside the IAM dashboard, you will notice that no users or groups have been
 
 After creating Lucy, you can download her access key and secret access key as a CSV file. Remember, this is the only time the secret access key is visible; if lost, new credentials must be generated.
 
-<Frame>
-  ![The image shows the AWS IAM dashboard, displaying user and role information, security alerts, best practices, and additional resources for identity and access management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884218/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_50.jpg)
-</Frame>
+![The image shows the AWS IAM dashboard, displaying user and role information, security alerts, best practices, and additional resources for identity and access management.](https://kodekloud.com/kk-media/image/upload/v1752884218/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_50.jpg)
 
-<Frame>
-  ![The image shows the AWS IAM Management Console, where a user named "lucy" is being added with programmatic access selected.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884219/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_90.jpg)
-</Frame>
+![The image shows the AWS IAM Management Console, where a user named "lucy" is being added with programmatic access selected.](https://kodekloud.com/kk-media/image/upload/v1752884219/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_90.jpg)
 
-<Frame>
-  ![The image shows the AWS IAM Management Console, where a user named "lucy" is being set up with programmatic and console access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884220/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_110.jpg)
-</Frame>
+![The image shows the AWS IAM Management Console, where a user named "lucy" is being set up with programmatic and console access.](https://kodekloud.com/kk-media/image/upload/v1752884220/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_110.jpg)
 
-<Frame>
-  ![The image shows the AWS IAM Management Console, reviewing user details for creating a new user named "lucy" with specific access and permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884222/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_150.jpg)
-</Frame>
+![The image shows the AWS IAM Management Console, reviewing user details for creating a new user named "lucy" with specific access and permissions.](https://kodekloud.com/kk-media/image/upload/v1752884222/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_150.jpg)
 
-<Frame>
-  ![The image shows the AWS IAM Management Console with a success message for creating a user named "lucy," displaying access key details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884223/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_170.jpg)
-</Frame>
+![The image shows the AWS IAM Management Console with a success message for creating a user named "lucy," displaying access key details.](https://kodekloud.com/kk-media/image/upload/v1752884223/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_170.jpg)
 
 ## Attaching Policies to a User
 
@@ -73,9 +59,7 @@ Now, attach an additional policy that grants Lucy full administrative privileges
 
 Select the AdministratorAccess policy, click **Next**, review the permissions, and then click **Add Permissions**. Lucy now has both the default password change policy and the administrative policy attached.
 
-<Frame>
-  ![The image shows the AWS Management Console, specifically the IAM section for adding permissions to a user named "lucy" by attaching existing policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884224/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_220.jpg)
-</Frame>
+![The image shows the AWS Management Console, specifically the IAM section for adding permissions to a user named "lucy" by attaching existing policies.](https://kodekloud.com/kk-media/image/upload/v1752884224/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_220.jpg)
 
 ## Creating Additional Users and Groups
 
@@ -87,9 +71,7 @@ Proceed then to create another user named Lee, and add him to the existing "Proj
 
 To further enhance the group's capabilities, attach an additional policy that grants full access to the Amazon S3 service.
 
-<Frame>
-  ![The image shows the AWS IAM Management Console, where a user is creating a group named "project-sapphire-users" and selecting policies related to EC2.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884226/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_280.jpg)
-</Frame>
+![The image shows the AWS IAM Management Console, where a user is creating a group named "project-sapphire-users" and selecting policies related to EC2.](https://kodekloud.com/kk-media/image/upload/v1752884226/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_280.jpg)
 
 ## Reviewing IAM Policies
 
@@ -107,13 +89,9 @@ To illustrate policy creation, we will create a custom policy that restricts EC2
 
 Once finalized, this policy will appear in your list and be available for attachment to users, groups, or roles.
 
-<Frame>
-  ![The image shows the AWS IAM Management Console, specifically the "Create policy" page for configuring EC2 service permissions using the visual editor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884226/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_400.jpg)
-</Frame>
+![The image shows the AWS IAM Management Console, specifically the "Create policy" page for configuring EC2 service permissions using the visual editor.](https://kodekloud.com/kk-media/image/upload/v1752884226/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_400.jpg)
 
-<Frame>
-  ![The image shows the AWS IAM Management Console with a policy summary for "EC2-List-Read," detailing various EC2 permissions in JSON format.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884227/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_440.jpg)
-</Frame>
+![The image shows the AWS IAM Management Console with a policy summary for "EC2-List-Read," detailing various EC2 permissions in JSON format.](https://kodekloud.com/kk-media/image/upload/v1752884227/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_440.jpg)
 
 ### Creating an S3 Read-Only Custom Policy
 
@@ -135,9 +113,7 @@ In this example, we will create a role that permits EC2 instances read-only acce
 
 The newly created role is now available for assignment to EC2 instances.
 
-<Frame>
-  ![The image shows the AWS IAM Management Console, specifically the "Create role" page, where a role is being configured for EC2 instances with S3 read-only access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884228/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_570.jpg)
-</Frame>
+![The image shows the AWS IAM Management Console, specifically the "Create role" page, where a role is being configured for EC2 instances with S3 read-only access.](https://kodekloud.com/kk-media/image/upload/v1752884228/notes-assets/images/Terraform-Basics-Training-Course-Demo-IAM/frame_570.jpg)
 
 ## Conclusion
 
@@ -158,6 +134,4 @@ For further reading and detailed documentation, check the following resources:
 * [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 * [AWS Security Best Practices](https://aws.amazon.com/iam/security-best-practices/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/beb58013-ae36-41e4-a55a-79fd1b3023a1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/beb58013-ae36-41e4-a55a-79fd1b3023a1)

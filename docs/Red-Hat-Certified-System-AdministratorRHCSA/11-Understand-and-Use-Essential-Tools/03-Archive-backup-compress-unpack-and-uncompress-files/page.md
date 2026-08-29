@@ -12,9 +12,7 @@ The complete backup process generally includes three main steps:
 2. **Compress:** Reduce the archive size by compressing it (e.g., backup.tar.gz).
 3. **Backup:** Transfer the compressed file to a remote system, shared drive, or cloud storage for safekeeping.
 
-<Frame>
-  ![The image illustrates a process for archiving, compressing, and backing up files, showing steps from creating a "backup.tar" archive to compressing it into "backup.tar.gz" and finally backing it up.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883614/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Archive-backup-compress-unpack-and-uncompress-files/file-archiving-compressing-backup.jpg)
-</Frame>
+![The image illustrates a process for archiving, compressing, and backing up files, showing steps from creating a "backup.tar" archive to compressing it into "backup.tar.gz" and finally backing it up.](https://kodekloud.com/kk-media/image/upload/v1752883614/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Archive-backup-compress-unpack-and-uncompress-files/file-archiving-compressing-backup.jpg)
 
 Linux offers powerful utilities that make archiving, compressing, and backing up simple tasks. In this article, we focus first on archiving using the tar utility before exploring compression and backup processes.
 
@@ -43,9 +41,7 @@ file2
 file3
 ```
 
-<Callout icon="lightbulb">
-  While the short option (`t`) is quick to type, the long option (`--list`) is easier to remember when you're just starting with tar.
-</Callout>
+> **lightbulb** While the short option (`t`) is quick to type, the long option (`--list`) is easier to remember when you're just starting with tar.
 
 An important note: always specify the `--file` (or `-f`) option *after* listing the other options to indicate which archive file you're working with.
 
@@ -76,9 +72,7 @@ $ tar --create --file archive.tar Pictures/
 $ tar --create --file archive.tar /home/aaron/Pictures/
 ```
 
-<Callout icon="lightbulb">
-  Before extraction, it is advisable to list the archive contents to check the stored paths. This step ensures you understand how files will be extracted to your system.
-</Callout>
+> **lightbulb** Before extraction, it is advisable to list the archive contents to check the stored paths. This step ensures you understand how files will be extracted to your system.
 
 ### Listing Archive Contents
 
@@ -112,9 +106,7 @@ $ tar xf archive.tar -C /tmp/
 
 Tar archives retain file permission and ownership information. When extracting files owned by another user, you might not preserve these attributes if you extract them as a standard user. In such cases, consider using `sudo` to extract the files as the root user to restore all permissions and ownership accurately.
 
-<Callout icon="triangle-alert">
-  When extracting sensitive archives containing files owned by other users, always use `sudo` to ensure file permissions and ownership are maintained.
-</Callout>
+> **triangle-alert** When extracting sensitive archives containing files owned by other users, always use `sudo` to ensure file permissions and ownership are maintained.
 
 ## Conclusion
 
@@ -122,6 +114,4 @@ By understanding and utilizing the tar utility, you can efficiently archive, com
 
 When you're ready to expand your skills further, move on to the next lesson to explore file compression and backup strategies in greater detail.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/cde163f5-9c06-4a20-9fc1-afdadeff39fd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/cde163f5-9c06-4a20-9fc1-afdadeff39fd)

@@ -41,6 +41,6 @@ Additional details about Kinesis include:
 
 > **lightbulb** Kinesis is optimal for applications that rely on continuous data streams and require rapid processing and analytics of large volumes of data.
 
-![The image is a comparison chart of AWS services: SQS, SNS, and Kinesis, highlighting their features and use cases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858646/notes-assets/images/AWS-Certified-Developer-Associate-SQS-vs-SNS-vs-Kineses/aws-services-comparison-sqs-sns-kinesis.jpg)
+![The image is a comparison chart of AWS services: SQS, SNS, and Kinesis, highlighting their features and use cases.](https://kodekloud.com/kk-media/image/upload/v1752858646/notes-assets/images/AWS-Certified-Developer-Associate-SQS-vs-SNS-vs-Kineses/aws-services-comparison-sqs-sns-kinesis.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/ac3fe785-4e7a-4f57-ae16-99fcd3cfde7e/lesson/d4a3bab9-8376-4d66-acd6-985d0bc10322)

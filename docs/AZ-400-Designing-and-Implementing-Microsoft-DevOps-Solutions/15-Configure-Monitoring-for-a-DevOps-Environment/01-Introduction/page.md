@@ -8,7 +8,7 @@ Monitoring is a foundational component of any modern DevOps workflow. In this mo
 
 Azure Monitor provides a unified platform to collect, analyze, and act on telemetry from both cloud and on-premises environments. With Log Analytics, you can craft powerful Kusto Query Language (KQL) queries that turn raw data into actionable insights. Together, these tools help you maintain high availability and performance across your applications and infrastructure.
 
-![The image shows an agenda with four items related to Azure Monitor, including topics like continuous monitoring, integration with Azure services, and DevOps tools. The design features a gradient background and numbered sections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867504/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/azure-monitor-agenda-continuous-monitoring.jpg)
+![The image shows an agenda with four items related to Azure Monitor, including topics like continuous monitoring, integration with Azure services, and DevOps tools. The design features a gradient background and numbered sections.](https://kodekloud.com/kk-media/image/upload/v1752867504/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/azure-monitor-agenda-continuous-monitoring.jpg)
 
 ## Agenda
 
@@ -29,7 +29,7 @@ In this section, we’ll walk through hands-on examples to integrate Azure Monit
 2. Configuring custom alerts to triage and respond faster
 3. Provisioning and managing Log Analytics workspaces via Infrastructure as Code
 
-![The image is an agenda slide listing three topics: integrating Azure Monitor with DevOps tools, configuring Azure Monitor alerts, and configuring Azure Log Analytics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867505/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/azure-monitor-devops-agenda-slide.jpg)
+![The image is an agenda slide listing three topics: integrating Azure Monitor with DevOps tools, configuring Azure Monitor alerts, and configuring Azure Log Analytics.](https://kodekloud.com/kk-media/image/upload/v1752867505/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/azure-monitor-devops-agenda-slide.jpg)
 
 > **lightbulb** Automate workspace provisioning using ARM templates or [Terraform](https://registry.terraform.io/).\
   Here's a quick Azure CLI example to create a Log Analytics workspace:
@@ -48,7 +48,7 @@ In this section, we’ll walk through hands-on examples to integrate Azure Monit
 
 To achieve full-stack observability, you must collect telemetry across applications, VMs, containers, storage, and networks. Azure offers specialized solutions for each domain.
 
-![The image is a presentation slide titled "Configuring Collection of Telemetry by Using Various Azure Services," featuring a graphic of a network diagram on a blue gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867506/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/configuring-telemetry-azure-services-diagram.jpg)
+![The image is a presentation slide titled "Configuring Collection of Telemetry by Using Various Azure Services," featuring a graphic of a network diagram on a blue gradient background.](https://kodekloud.com/kk-media/image/upload/v1752867506/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/configuring-telemetry-azure-services-diagram.jpg)
 
 ### Azure Telemetry Services Overview
 
@@ -60,7 +60,7 @@ To achieve full-stack observability, you must collect telemetry across applicati
 | Storage Insights     | Track I/O metrics and health of storage accounts        |
 | Network Insights     | Visualize network topology and performance issues       |
 
-![The image is a presentation slide with an agenda listing five insights: Application, VM, Container, Storage, and Network. The background is a gradient of blue and green.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867507/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/agenda-insights-application-vm-container-storage.jpg)
+![The image is a presentation slide with an agenda listing five insights: Application, VM, Container, Storage, and Network. The background is a gradient of blue and green.](https://kodekloud.com/kk-media/image/upload/v1752867507/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/agenda-insights-application-vm-container-storage.jpg)
 
 ***
 

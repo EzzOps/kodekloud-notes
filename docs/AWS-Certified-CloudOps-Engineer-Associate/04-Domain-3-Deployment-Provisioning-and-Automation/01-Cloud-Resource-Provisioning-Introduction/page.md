@@ -8,7 +8,7 @@ Welcome to this lesson on cloud resource provisioning. In this guide, we will ex
 
 Provisioning is the process of supplying the necessary resources to support application requirements. Think of it as arranging components such as compute, storage, databases, networking, and more—similar to traditional data center operations, but optimized for the cloud.
 
-![The image illustrates the concept of cloud resource provisioning, showing a cloud engineer connected to various AWS resources, represented by icons for storage, computing, security, and databases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860266/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Cloud-Resource-Provisioning-Introduction/cloud-resource-provisioning-aws-icons.jpg)
+![The image illustrates the concept of cloud resource provisioning, showing a cloud engineer connected to various AWS resources, represented by icons for storage, computing, security, and databases.](https://kodekloud.com/kk-media/image/upload/v1752860266/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Cloud-Resource-Provisioning-Introduction/cloud-resource-provisioning-aws-icons.jpg)
 
 On AWS, every resource is accessible via APIs, which brings several benefits:
 
@@ -18,7 +18,7 @@ On AWS, every resource is accessible via APIs, which brings several benefits:
 
 These API-driven objects can be dynamically created or removed, minimizing manual effort. Automation becomes crucial through the use of scripts, code, and templates. This approach, known as Infrastructure as Code (IaC), supports the rapid recreation of necessary resources by using templated service catalogs.
 
-![The image outlines three cloud resource provisioning options: manual provisioning, automated provisioning using script/code, and service catalog.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860268/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Cloud-Resource-Provisioning-Introduction/cloud-resource-provisioning-options.jpg)
+![The image outlines three cloud resource provisioning options: manual provisioning, automated provisioning using script/code, and service catalog.](https://kodekloud.com/kk-media/image/upload/v1752860268/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Cloud-Resource-Provisioning-Introduction/cloud-resource-provisioning-options.jpg)
 
 A core objective in cloud resource provisioning is to incorporate non-functional requirements, including:
 
@@ -29,7 +29,7 @@ A core objective in cloud resource provisioning is to incorporate non-functional
 
 Unlike traditional data centers where provisioning might simply involve containers or physical assets, cloud resource provisioning encompasses a wide range of software objects within AWS—from compute instances and network storage to transit gateways and firewalls.
 
-![The image outlines four key principles of resource provisioning: scalability, high availability, automation, and security, each represented by a numbered icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860269/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Cloud-Resource-Provisioning-Introduction/resource-provisioning-principles-icons.jpg)
+![The image outlines four key principles of resource provisioning: scalability, high availability, automation, and security, each represented by a numbered icon.](https://kodekloud.com/kk-media/image/upload/v1752860269/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Cloud-Resource-Provisioning-Introduction/resource-provisioning-principles-icons.jpg)
 
 > **lightbulb** When provisioning cloud resources, consider the following best practices:
 
@@ -39,7 +39,7 @@ Unlike traditional data centers where provisioning might simply involve containe
   4. **Principle of Least Privilege:** Grant the minimum necessary permissions (e.g., EC2 instance access limited to a specified S3 bucket or DynamoDB table).
   5. **Regular Audits:** Perform continuous audits and optimizations to ensure resource security and efficiency.
 
-![The image outlines best practices for cloud resource provisioning, including using infrastructure as code, proper naming and tagging, automation, following the principle of least privilege, and performing regular audits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860270/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Cloud-Resource-Provisioning-Introduction/cloud-resource-provisioning-best-practices.jpg)
+![The image outlines best practices for cloud resource provisioning, including using infrastructure as code, proper naming and tagging, automation, following the principle of least privilege, and performing regular audits.](https://kodekloud.com/kk-media/image/upload/v1752860270/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Cloud-Resource-Provisioning-Introduction/cloud-resource-provisioning-best-practices.jpg)
 
 Utilizing IaC not only streamlines provisioning but also enables version control of your infrastructure, ensuring that all changes are tracked over time. This approach promotes consistency and reliability.
 

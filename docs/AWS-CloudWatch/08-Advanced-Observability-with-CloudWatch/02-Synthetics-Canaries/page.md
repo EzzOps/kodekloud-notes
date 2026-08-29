@@ -10,11 +10,11 @@ In this article, learn how AWS CloudWatch Synthetic Canaries proactively monitor
 
 Early 20th-century coal miners used canaries to detect toxic gases like carbon monoxide and methane. Because canaries are more sensitive, their distress signaled miners to evacuate before gas levels became lethal.
 
-![The image depicts three cartoon miners working in a mine, with one holding a pickaxe, another pushing a cart, and the third using a tool.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862356/notes-assets/images/AWS-CloudWatch-Synthetics-Canaries/cartoon-miners-working-in-mine.jpg)
+![The image depicts three cartoon miners working in a mine, with one holding a pickaxe, another pushing a cart, and the third using a tool.](https://kodekloud.com/kk-media/image/upload/v1752862356/notes-assets/images/AWS-CloudWatch-Synthetics-Canaries/cartoon-miners-working-in-mine.jpg)
 
 When gas levels rose, canaries reacted immediately, giving miners a vital early warning system.
 
-![The image shows several cloud-like shapes labeled "CH4" and a small bird with a speech bubble, set against a dark background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862358/notes-assets/images/AWS-CloudWatch-Synthetics-Canaries/cloud-shapes-ch4-bird-speech-bubble.jpg)
+![The image shows several cloud-like shapes labeled "CH4" and a small bird with a speech bubble, set against a dark background.](https://kodekloud.com/kk-media/image/upload/v1752862358/notes-assets/images/AWS-CloudWatch-Synthetics-Canaries/cloud-shapes-ch4-bird-speech-bubble.jpg)
 
 Today’s monitoring tools borrow this concept to catch anomalies before they impact users.
 
@@ -26,7 +26,7 @@ Synthetic Canaries in AWS CloudWatch are automated scripts running on a schedule
 * Scripts written in Node.js or Python
 * Simulate real user actions (navigation, clicks, form submissions)
 
-![The image is an infographic about Synthetics Canaries in AWS CloudWatch, highlighting features like lightweight automation, configurable scripts, user interaction simulation, and application functionality testing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862359/notes-assets/images/AWS-CloudWatch-Synthetics-Canaries/synthetics-canaries-aws-cloudwatch-infographic.jpg)
+![The image is an infographic about Synthetics Canaries in AWS CloudWatch, highlighting features like lightweight automation, configurable scripts, user interaction simulation, and application functionality testing.](https://kodekloud.com/kk-media/image/upload/v1752862359/notes-assets/images/AWS-CloudWatch-Synthetics-Canaries/synthetics-canaries-aws-cloudwatch-infographic.jpg)
 
 > **lightbulb** Synthetic Canaries support [Selenium/WebDriver](https://aws.amazon.com/cloudwatch/features/#Synthetics) in Node.js and Python for custom workflows.
 
@@ -40,7 +40,7 @@ With CloudWatch Synthetics, you gain real-time visibility into availability and 
 
 This continuous vigilance helps detect degradations immediately, reducing mean time to resolution.
 
-![The image is an informational graphic about Synthetics Canaries in AWS CloudWatch, highlighting features like continuous monitoring, application and endpoint monitoring, and real-time performance data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862360/notes-assets/images/AWS-CloudWatch-Synthetics-Canaries/synthetics-canaries-aws-cloudwatch-graphic.jpg)
+![The image is an informational graphic about Synthetics Canaries in AWS CloudWatch, highlighting features like continuous monitoring, application and endpoint monitoring, and real-time performance data.](https://kodekloud.com/kk-media/image/upload/v1752862360/notes-assets/images/AWS-CloudWatch-Synthetics-Canaries/synthetics-canaries-aws-cloudwatch-graphic.jpg)
 
 ## Seamless Integration with AWS Services
 
@@ -52,7 +52,7 @@ Synthetic Canaries connect monitoring events to automated workflows across AWS:
 | AWS Lambda        | Run remediation scripts or rollbacks      | Invoke a Lambda function to restart a service                        |
 | Step Functions    | Orchestrate multi-step incident workflows | Chain alerts, notifications, and recovery actions in a state machine |
 
-![The image is a slide about "Synthetics Canaries in AWS CloudWatch," highlighting integration features such as seamless integration with AWS services, CloudWatch Alarms, AWS Lambda, AWS Step Functions, and action triggers based on monitoring results.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862361/notes-assets/images/AWS-CloudWatch-Synthetics-Canaries/synthetics-canaries-aws-cloudwatch-slide.jpg)
+![The image is a slide about "Synthetics Canaries in AWS CloudWatch," highlighting integration features such as seamless integration with AWS services, CloudWatch Alarms, AWS Lambda, AWS Step Functions, and action triggers based on monitoring results.](https://kodekloud.com/kk-media/image/upload/v1752862361/notes-assets/images/AWS-CloudWatch-Synthetics-Canaries/synthetics-canaries-aws-cloudwatch-slide.jpg)
 
 ## Diagnostics: Screenshots and HAR Files
 
@@ -63,7 +63,7 @@ When a canary runs, it captures artifacts for in-depth analysis:
 
 These artifacts act as your application’s “black box,” enabling forensic troubleshooting.
 
-![The image is a slide titled "Synthetics Canaries in AWS CloudWatch," highlighting the role of screenshots and HAR files in capturing performance insights and aiding troubleshooting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862362/notes-assets/images/AWS-CloudWatch-Synthetics-Canaries/synthetics-canaries-aws-cloudwatch-insights.jpg)
+![The image is a slide titled "Synthetics Canaries in AWS CloudWatch," highlighting the role of screenshots and HAR files in capturing performance insights and aiding troubleshooting.](https://kodekloud.com/kk-media/image/upload/v1752862362/notes-assets/images/AWS-CloudWatch-Synthetics-Canaries/synthetics-canaries-aws-cloudwatch-insights.jpg)
 
 ## Metrics and Logs Analysis
 
@@ -73,7 +73,7 @@ Every canary execution emits CloudWatch metrics and logs. Use CloudWatch Logs In
 * Correlate latency spikes with deployments
 * Drill into error stack traces for root-cause analysis
 
-![The image is about "Synthetics Canaries in AWS CloudWatch," focusing on metrics and logs, and their role in analyzing canary-generated data to gain insights into application behavior.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862363/notes-assets/images/AWS-CloudWatch-Synthetics-Canaries/synthetics-canaries-aws-cloudwatch-insights-2.jpg)
+![The image is about "Synthetics Canaries in AWS CloudWatch," focusing on metrics and logs, and their role in analyzing canary-generated data to gain insights into application behavior.](https://kodekloud.com/kk-media/image/upload/v1752862363/notes-assets/images/AWS-CloudWatch-Synthetics-Canaries/synthetics-canaries-aws-cloudwatch-insights-2.jpg)
 
 ## Cost Considerations for Canary Execution
 
@@ -85,7 +85,7 @@ Synthetic Canaries use a pay-as-you-go model:
 | Compute duration        | Billed per second of script execution          |
 | Data transfer & storage | For HAR files, screenshots, and logs retention |
 
-![The image is a diagram about "Synthetics Canaries in AWS CloudWatch," focusing on "Canary Execution Costs," which include charges based on canary runs, payment for each run, script execution time, and data transfer costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862364/notes-assets/images/AWS-CloudWatch-Synthetics-Canaries/synthetics-canaries-aws-cloudwatch-diagram.jpg)
+![The image is a diagram about "Synthetics Canaries in AWS CloudWatch," focusing on "Canary Execution Costs," which include charges based on canary runs, payment for each run, script execution time, and data transfer costs.](https://kodekloud.com/kk-media/image/upload/v1752862364/notes-assets/images/AWS-CloudWatch-Synthetics-Canaries/synthetics-canaries-aws-cloudwatch-diagram.jpg)
 
 > **triangle-alert** Longer scripts and high-frequency runs can increase costs. Regularly review your canary schedules and artifact retention settings to optimize spend.
 

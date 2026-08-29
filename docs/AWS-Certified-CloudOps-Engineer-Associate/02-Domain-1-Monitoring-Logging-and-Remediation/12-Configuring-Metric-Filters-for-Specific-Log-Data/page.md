@@ -8,7 +8,7 @@ Welcome! In this lesson, we'll explore how to create and configure metric filter
 
 Metric filters in CloudWatch enable you to scan logs from your systems for specific patterns, phrases, or numerical data. When CloudWatch detects these patterns, it generates corresponding metrics that can automatically trigger alarms, start remediation actions, send notifications, or update dashboards.
 
-![The image is a flowchart illustrating the process of using a metric filter with AWS CloudWatch, starting from an Amazon Elastic Compute Cloud (EC2) instance with CloudWatch Agent, moving through a CloudWatch Log Group, Metric Filter, Alarm, and ending with SNS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859865/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Metric-Filters-for-Specific-Log-Data/aws-cloudwatch-metric-filter-flowchart.jpg)
+![The image is a flowchart illustrating the process of using a metric filter with AWS CloudWatch, starting from an Amazon Elastic Compute Cloud (EC2) instance with CloudWatch Agent, moving through a CloudWatch Log Group, Metric Filter, Alarm, and ending with SNS.](https://kodekloud.com/kk-media/image/upload/v1752859865/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Metric-Filters-for-Specific-Log-Data/aws-cloudwatch-metric-filter-flowchart.jpg)
 
 ## How Metric Filters Work
 
@@ -20,7 +20,7 @@ The process starts by selecting a log group where you want to search for specifi
 
 Once the pattern is detected, CloudWatch creates a metric that you can use for setting thresholds, triggering alarms, or visualizing data on dashboards. This conversion of log data to metrics is the cornerstone of automated monitoring and remediation.
 
-![The image is a step-by-step guide for creating a metric filter, consisting of five steps: choosing a log group, defining a filter pattern, assigning a metric, setting the metric value, and saving and monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859866/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Metric-Filters-for-Specific-Log-Data/metric-filter-creation-guide.jpg)
+![The image is a step-by-step guide for creating a metric filter, consisting of five steps: choosing a log group, defining a filter pattern, assigning a metric, setting the metric value, and saving and monitoring.](https://kodekloud.com/kk-media/image/upload/v1752859866/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Metric-Filters-for-Specific-Log-Data/metric-filter-creation-guide.jpg)
 
 > **lightbulb** Think of metric filters as checkpoints that scan your logs for important information. Once a matching piece of data is found, it is translated into a metric, opening up options for monitoring, alarming, and even automated issue resolution.
 
@@ -80,7 +80,7 @@ Metric Name:
 
 Once the metric filter is in place, you can configure a CloudWatch alarm to monitor the "404ErrorCount" metric. The alarm will trigger whenever the error count exceeds your set threshold—ensuring that any issues affecting your users are promptly addressed.
 
-![The image is a flowchart illustrating the process of using a CloudWatch metric to create an alarm, which triggers an SNS notification when the metric value meets a specified condition.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859867/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Metric-Filters-for-Specific-Log-Data/cloudwatch-metric-alarm-flowchart.jpg)
+![The image is a flowchart illustrating the process of using a CloudWatch metric to create an alarm, which triggers an SNS notification when the metric value meets a specified condition.](https://kodekloud.com/kk-media/image/upload/v1752859867/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Metric-Filters-for-Specific-Log-Data/cloudwatch-metric-alarm-flowchart.jpg)
 
 ## Best Practices for Creating Metric Filters
 
@@ -91,7 +91,7 @@ To ensure your metric filters are both effective and efficient, consider the fol
 * Regularly test and refine your filter patterns, especially after any updates to your application.
 * Combine metric filters with CloudWatch alarms to establish a robust system for monitoring, notifications, and automated remediation.
 
-![The image outlines best practices for metric filters, including using clear patterns, focusing on high-impact data, leveraging JSON fields, regularly updating filters, and combining filters with CloudWatch Alarms.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859868/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Metric-Filters-for-Specific-Log-Data/metric-filters-best-practices.jpg)
+![The image outlines best practices for metric filters, including using clear patterns, focusing on high-impact data, leveraging JSON fields, regularly updating filters, and combining filters with CloudWatch Alarms.](https://kodekloud.com/kk-media/image/upload/v1752859868/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Metric-Filters-for-Specific-Log-Data/metric-filters-best-practices.jpg)
 
 > **lightbulb** For more detailed information on CloudWatch metric filters and alarms, please refer to the [AWS CloudWatch Documentation](https://aws.amazon.com/cloudwatch/).
 

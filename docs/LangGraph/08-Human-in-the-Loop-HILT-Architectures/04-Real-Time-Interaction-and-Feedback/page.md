@@ -128,9 +128,7 @@ Design best practices for human-in-the-loop interfaces
   <img alt="The image showcases three best practices for real-time user experience: setting clear expectations, avoiding overwhelming users with options, and allowing undo and retry flows. Each point is accompanied by an icon and a brief description." />
 </Frame>
 
-<Callout icon="lightbulb">
-  When designing human-in-the-loop steps, avoid surprising users. Explain what control they have, what will happen next, and how they can undo or retry actions.
-</Callout>
+> **lightbulb** When designing human-in-the-loop steps, avoid surprising users. Explain what control they have, what will happen next, and how they can undo or retry actions.
 
 Conclusion
 Human-in-the-loop is a deliberate collaboration strategy, not a fallback. By combining pause points, streaming, escape hatches, and feedback collection, LangGraph enables interactive workflows where humans actively correct, guide, and validate agent behavior. These primitives help teams build safer, more transparent, and more effective AI-powered experiences.
@@ -141,6 +139,4 @@ Links and references
 * Streaming LLMs: [https://platform.openai.com/docs/guides/streaming](https://platform.openai.com/docs/guides/streaming)
 * Human-in-the-loop design patterns: [https://www.usability.gov/ux-basics/ux-methods/human-in-the-loop.html](https://www.usability.gov/ux-basics/ux-methods/human-in-the-loop.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/0512078c-4290-4d71-9531-0b12f54f10c6/lesson/1b0ad5b3-1be2-4f6a-8e28-2944e69d9c6a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/0512078c-4290-4d71-9531-0b12f54f10c6/lesson/1b0ad5b3-1be2-4f6a-8e28-2944e69d9c6a)

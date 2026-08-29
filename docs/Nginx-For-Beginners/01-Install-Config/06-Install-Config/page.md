@@ -55,9 +55,7 @@ sudo service nginx stop
 sudo service nginx reload
 ```
 
-<Callout icon="warning">
-  Reloading (`reload`) applies configuration changes without terminating worker processes; use `restart` when you need a full restart. Always test config before reloading: `sudo nginx -t`.
-</Callout>
+> **warning** Reloading (`reload`) applies configuration changes without terminating worker processes; use `restart` when you need a full restart. Always test config before reloading: `sudo nginx -t`.
 
 ***
 
@@ -187,9 +185,7 @@ You can also permit only HTTP or HTTPS as needed (`'Nginx HTTP'` or `'Nginx Full
 
 Use these resources for deeper configuration examples, SSL/TLS setup, reverse proxy patterns, and performance tuning.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/0de43784-b08d-4ce0-8470-a7541b78fe58/lesson/196d68ff-0e61-4b1b-a24b-3ef74ccf275c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/0de43784-b08d-4ce0-8470-a7541b78fe58/lesson/196d68ff-0e61-4b1b-a24b-3ef74ccf275c)
 
 
 # Install Config
@@ -270,9 +266,7 @@ On Windows: Chocolatey
   * Install a package: `choco install package_name`
   * Uninstall a package: `choco uninstall package_name`
 
-<Callout icon="lightbulb">
-  Note: `sudo apt update` refreshes the package index and does not accept `-y`. To automatically accept prompts on Debian/Ubuntu, use `-y` with `apt install` or `apt upgrade` (for example, `sudo apt install -y nginx`). Similarly, use the auto-confirm flags for other package managers when performing non-interactive installs (e.g., `-y` for `yum`, `dnf`, and `choco`).
-</Callout>
+> **lightbulb** Note: `sudo apt update` refreshes the package index and does not accept `-y`. To automatically accept prompts on Debian/Ubuntu, use `-y` with `apt install` or `apt upgrade` (for example, `sudo apt install -y nginx`). Similarly, use the auto-confirm flags for other package managers when performing non-interactive installs (e.g., `-y` for `yum`, `dnf`, and `choco`).
 
 Consolidated command examples
 

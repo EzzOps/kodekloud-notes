@@ -10,7 +10,7 @@ In this article, we explore DNS forwarding and conditional forwarding in detail.
 
 Resolvers can be configured as AWS authoritative or external DNS authoritative servers. The query direction for endpoints is flexible, allowing you to set up resolvers to handle inbound traffic only, outbound traffic only, or both. For instance, you can configure DNS servers to manage both inbound and outbound traffic:
 
-![The image illustrates the direction of DNS queries with three diagrams: "Inbound and Outbound," "Inbound Only," and "Outbound Only," showing different flow directions between servers and the cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860910/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-DNS-Forwarding-and-Conditional-Forwarding/dns-query-directions-diagrams.jpg)
+![The image illustrates the direction of DNS queries with three diagrams: "Inbound and Outbound," "Inbound Only," and "Outbound Only," showing different flow directions between servers and the cloud.](https://kodekloud.com/kk-media/image/upload/v1752860910/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-DNS-Forwarding-and-Conditional-Forwarding/dns-query-directions-diagrams.jpg)
 
 Because the resolver is deployed within a VPC, the configuration is straightforward. You simply select the resolver type and set the corresponding rules.
 
@@ -20,7 +20,7 @@ Because the resolver is deployed within a VPC, the configuration is straightforw
 
 The outbound endpoint configuration enables your resolver to use an external source for resolving DNS queries. Below is an overview of the steps required:
 
-![The image is a diagram illustrating the configuration of an outbound endpoint in a VPC, showing subnets in different availability zones and security groups. It includes steps for choosing a VPC, selecting subnets, attaching a security group, and assigning IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860912/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-DNS-Forwarding-and-Conditional-Forwarding/vpc-outbound-endpoint-diagram.jpg)
+![The image is a diagram illustrating the configuration of an outbound endpoint in a VPC, showing subnets in different availability zones and security groups. It includes steps for choosing a VPC, selecting subnets, attaching a security group, and assigning IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752860912/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-DNS-Forwarding-and-Conditional-Forwarding/vpc-outbound-endpoint-diagram.jpg)
 
 Follow these steps to configure the outbound endpoint:
 
@@ -31,7 +31,7 @@ Follow these steps to configure the outbound endpoint:
 
 For example, when queries originating within your VPC—for instance, for jo.example.com—need to be resolved externally, you must establish rules to forward these DNS queries to a target IP address. This target might be reached via VPN or Direct Connect. The forwarding rules direct the DNS queries from your VPC to an external network.
 
-![The image is a diagram showing a DNS setup within a VPC in the AWS region us-west-1, featuring outbound endpoints, availability zones, and forwarding rules for specific domains. It illustrates the flow of DNS requests from a server to a resolver within the VPC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860913/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-DNS-Forwarding-and-Conditional-Forwarding/dns-setup-vpc-aws-diagram.jpg)
+![The image is a diagram showing a DNS setup within a VPC in the AWS region us-west-1, featuring outbound endpoints, availability zones, and forwarding rules for specific domains. It illustrates the flow of DNS requests from a server to a resolver within the VPC.](https://kodekloud.com/kk-media/image/upload/v1752860913/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-DNS-Forwarding-and-Conditional-Forwarding/dns-setup-vpc-aws-diagram.jpg)
 
 There are three types of resolvers to keep in mind:
 
@@ -43,7 +43,7 @@ There are three types of resolvers to keep in mind:
 
 Next, consider the inbound endpoint, which allows an external DNS server to forward queries for specific domain names to an AWS DNS resolver endpoint.
 
-![The image illustrates the configuration of an inbound endpoint within a VPC, showing subnets in different availability zones and associated security groups. It includes steps for choosing the VPC, selecting subnets, attaching a security group, and assigning IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860914/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-DNS-Forwarding-and-Conditional-Forwarding/vpc-inbound-endpoint-configuration.jpg)
+![The image illustrates the configuration of an inbound endpoint within a VPC, showing subnets in different availability zones and associated security groups. It includes steps for choosing the VPC, selecting subnets, attaching a security group, and assigning IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752860914/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-DNS-Forwarding-and-Conditional-Forwarding/vpc-inbound-endpoint-configuration.jpg)
 
 To set up an inbound endpoint, follow these guidelines:
 
@@ -54,13 +54,13 @@ To set up an inbound endpoint, follow these guidelines:
 
 Consider a scenario where your corporate DNS server forwards queries for certain domains into your VPC. The diagram below illustrates how an inbound endpoint is set up in the us-west-1 region to achieve this.
 
-![The image is a diagram illustrating an inbound endpoint setup within a VPC in the "us-west-1" region, showing connections from an external network to VPC subnets and a resolver with rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860916/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-DNS-Forwarding-and-Conditional-Forwarding/inbound-endpoint-vpc-diagram-us-west-1.jpg)
+![The image is a diagram illustrating an inbound endpoint setup within a VPC in the "us-west-1" region, showing connections from an external network to VPC subnets and a resolver with rules.](https://kodekloud.com/kk-media/image/upload/v1752860916/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-DNS-Forwarding-and-Conditional-Forwarding/inbound-endpoint-vpc-diagram-us-west-1.jpg)
 
 ## Conditional Forwarding
 
 Conditional forwarding provides an additional layer of flexibility by allowing you to apply different forwarding rules based on specific conditions. This means you can forward DNS queries outbound to a corporate network or inbound to AWS depending on the domain name or chosen DNS server.
 
-![The image illustrates a flowchart for conditional forwarding of DNS queries from a VPC, showing two paths: one for matching rules that forwards to a target DNS, and another for no match that uses the default AWS public DNS resolver.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860921/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-DNS-Forwarding-and-Conditional-Forwarding/dns-query-conditional-forwarding-flowchart.jpg)
+![The image illustrates a flowchart for conditional forwarding of DNS queries from a VPC, showing two paths: one for matching rules that forwards to a target DNS, and another for no match that uses the default AWS public DNS resolver.](https://kodekloud.com/kk-media/image/upload/v1752860921/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-DNS-Forwarding-and-Conditional-Forwarding/dns-query-conditional-forwarding-flowchart.jpg)
 
 Here’s how conditional forwarding works:
 
@@ -70,7 +70,7 @@ Here’s how conditional forwarding works:
 
 For instance, in a conditional forwarding scenario with an outbound endpoint:
 
-![The image illustrates a diagram of conditional forwarding, showing an outbound endpoint connected to a resolver with forwarding rules for specific domains. It includes target DNS servers for "jyo.example.com" and "ric.example.com."](../../../../images/kodekloud.com/kk-media/image/upload/v1752860925/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-DNS-Forwarding-and-Conditional-Forwarding/conditional-forwarding-diagram-dns.jpg)
+![The image illustrates a diagram of conditional forwarding, showing an outbound endpoint connected to a resolver with forwarding rules for specific domains. It includes target DNS servers for "jyo.example.com" and "ric.example.com."](https://kodekloud.com/kk-media/image/upload/v1752860925/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-DNS-Forwarding-and-Conditional-Forwarding/conditional-forwarding-diagram-dns.jpg)
 
 In this configuration, DNS queries originating from your VPC are selectively forwarded based on the established rules. Often, a corporate DNS server is configured to be authoritative when using an outbound endpoint, while an inbound endpoint treats AWS as the authoritative source.
 

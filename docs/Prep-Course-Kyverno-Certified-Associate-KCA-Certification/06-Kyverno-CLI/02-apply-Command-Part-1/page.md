@@ -110,9 +110,7 @@ Why does the output say "Applying: 3 policy rule(s)..." when the file only defin
 
 Kyverno generates Autogen Rules for related controllers (Deployments, StatefulSets, Jobs, CronJobs, etc.) based on your Pod rule. This ensures coverage for resources created by controllers without requiring you to write duplicate rules. The CLI reports each generated rule when evaluating.
 
-<Callout icon="lightbulb">
-  Kyverno's Autogen Rules expand a single Pod rule into additional rules for common controllers (Deployments, StatefulSets, Jobs, CronJobs, etc.), which is why a single policy can appear as multiple evaluated rules.
-</Callout>
+> **lightbulb** Kyverno's Autogen Rules expand a single Pod rule into additional rules for common controllers (Deployments, StatefulSets, Jobs, CronJobs, etc.), which is why a single policy can appear as multiple evaluated rules.
 
 Fix the manifest and re-run
 
@@ -168,6 +166,4 @@ Links and references
 
 In the next lesson we'll explore advanced `kyverno apply` flags, multi-file testing, automated CI integration, and output formats for scripting and reporting.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f4ceb35e-5c8e-4601-856b-997a26924a4a/lesson/2e4cf05e-71c7-4191-8513-3a1a48870887" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f4ceb35e-5c8e-4601-856b-997a26924a4a/lesson/2e4cf05e-71c7-4191-8513-3a1a48870887)

@@ -16,7 +16,7 @@ Common issues encountered include:
 * High latency due to slower disk-based operations.
 * General performance degradation and scalability hurdles as the user base expands.
 
-![The image is a graphic titled "ElastiCache" with four colored boxes, each highlighting a different issue: High Load, Disk-Based Storage, Performance Impact, and Scalability Issues.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858819/notes-assets/images/AWS-Certified-Developer-Associate-Elasticache-Overview/elasticache-issues-graphic.jpg)
+![The image is a graphic titled "ElastiCache" with four colored boxes, each highlighting a different issue: High Load, Disk-Based Storage, Performance Impact, and Scalability Issues.](https://kodekloud.com/kk-media/image/upload/v1752858819/notes-assets/images/AWS-Certified-Developer-Associate-Elasticache-Overview/elasticache-issues-graphic.jpg)
 
 ## How Caching Improves Performance
 
@@ -27,11 +27,11 @@ Caching significantly reduces the pressure on disk-based databases by storing fr
 
 This strategy accelerates data retrieval and eases the load on your primary database, which is especially beneficial for high-traffic applications.
 
-![The image is a diagram illustrating the flow of data in an e-commerce website using ElastiCache, showing interactions between the client, website, cache, and database with labels for cache hits and misses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858820/notes-assets/images/AWS-Certified-Developer-Associate-Elasticache-Overview/ecommerce-data-flow-elasticache-diagram.jpg)
+![The image is a diagram illustrating the flow of data in an e-commerce website using ElastiCache, showing interactions between the client, website, cache, and database with labels for cache hits and misses.](https://kodekloud.com/kk-media/image/upload/v1752858820/notes-assets/images/AWS-Certified-Developer-Associate-Elasticache-Overview/ecommerce-data-flow-elasticache-diagram.jpg)
 
 > **lightbulb** Caching is not only vital for reducing database load—it is also an excellent solution for managing session data, such as login status, by offloading this responsibility to ElastiCache.
 
-![The image illustrates two uses of ElastiCache: "Database Caching" to decrease read-heavy database loads, and "Session Store" to manage session information for web applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858821/notes-assets/images/AWS-Certified-Developer-Associate-Elasticache-Overview/elasticache-database-caching-session-store.jpg)
+![The image illustrates two uses of ElastiCache: "Database Caching" to decrease read-heavy database loads, and "Session Store" to manage session information for web applications.](https://kodekloud.com/kk-media/image/upload/v1752858821/notes-assets/images/AWS-Certified-Developer-Associate-Elasticache-Overview/elasticache-database-caching-session-store.jpg)
 
 ## Understanding Amazon ElastiCache
 
@@ -44,7 +44,7 @@ Amazon ElastiCache is a fully managed in-memory caching service that accelerates
 
 ElastiCache supports two of the most popular open-source in-memory caching engines:
 
-![The image lists features of ElastiCache, including in-memory caching, managed service, scalability, high availability, and cache engines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858823/notes-assets/images/AWS-Certified-Developer-Associate-Elasticache-Overview/elasticache-features-in-memory-caching.jpg)
+![The image lists features of ElastiCache, including in-memory caching, managed service, scalability, high availability, and cache engines.](https://kodekloud.com/kk-media/image/upload/v1752858823/notes-assets/images/AWS-Certified-Developer-Associate-Elasticache-Overview/elasticache-features-in-memory-caching.jpg)
 
 ## Redis versus Memcached
 
@@ -65,7 +65,7 @@ ElastiCache is compatible with both Redis and Memcached, but understanding their
 * Does not offer multi-AZ deployments or backup/restore options.
 * Optimized for efficient CPU utilization through multi-threading.
 
-![The image is a comparison chart between Redis and Memcached, highlighting features like data persistence, replication, and partitioning for Redis, and the basic key-value store design for Memcached.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858824/notes-assets/images/AWS-Certified-Developer-Associate-Elasticache-Overview/redis-vs-memcached-comparison-chart.jpg)
+![The image is a comparison chart between Redis and Memcached, highlighting features like data persistence, replication, and partitioning for Redis, and the basic key-value store design for Memcached.](https://kodekloud.com/kk-media/image/upload/v1752858824/notes-assets/images/AWS-Certified-Developer-Associate-Elasticache-Overview/redis-vs-memcached-comparison-chart.jpg)
 
 ## Summary
 

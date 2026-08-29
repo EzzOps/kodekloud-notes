@@ -26,7 +26,7 @@ Consider a web application consisting of a public-facing web server and a sensit
 
 The diagram below demonstrates a network architecture where a web server on a public subnet securely communicates with a database on a private subnet:
 
-![The image illustrates a network architecture with a VPC containing a public subnet for a web server and a private subnet for a database, showing their connection to the internet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859196/notes-assets/images/AWS-Certified-Developer-Associate-Public-vs-Private-Subnets/network-architecture-vpc-subnets.jpg)
+![The image illustrates a network architecture with a VPC containing a public subnet for a web server and a private subnet for a database, showing their connection to the internet.](https://kodekloud.com/kk-media/image/upload/v1752859196/notes-assets/images/AWS-Certified-Developer-Associate-Public-vs-Private-Subnets/network-architecture-vpc-subnets.jpg)
 
 > **lightbulb** When designing multi-tier applications, isolate public-facing services from back-end databases using public and private subnets to enhance security.
 
@@ -36,7 +36,7 @@ In another scenario, when extending your on-premises data center to AWS, you mig
 
 The diagram below illustrates a use case where an on-premises private data center connects via a VPN to resources residing in an AWS private subnet:
 
-![The image illustrates a use case for a private subnet, showing a connection from a private data center to an AWS private subnet via a VPN.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859197/notes-assets/images/AWS-Certified-Developer-Associate-Public-vs-Private-Subnets/private-subnet-vpn-connection-aws.jpg)
+![The image illustrates a use case for a private subnet, showing a connection from a private data center to an AWS private subnet via a VPN.](https://kodekloud.com/kk-media/image/upload/v1752859197/notes-assets/images/AWS-Certified-Developer-Associate-Public-vs-Private-Subnets/private-subnet-vpn-connection-aws.jpg)
 
 > **triangle-alert** Avoid exposing sensitive services directly to the internet. Ensure that critical components such as databases remain in private subnets to reduce the risk of unauthorized access.
 

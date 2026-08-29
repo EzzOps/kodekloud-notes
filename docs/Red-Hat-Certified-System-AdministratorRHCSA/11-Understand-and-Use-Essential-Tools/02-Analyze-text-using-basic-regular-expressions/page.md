@@ -8,15 +8,11 @@ In this article, we will explore how to analyze text using basic regular express
 
 Imagine you have hundreds of files with scattered documentation, and you need to extract all the IP addresses mentioned. An IP address typically looks like 203.102.3.5. Simply searching for numbers separated by dots might also capture unwanted patterns like "1.2," which does not represent a complete IP address.
 
-<Frame>
-  ![The image shows a grid of ten terminal windows displaying code or configuration files with highlighted IP addresses. The windows are arranged in two rows of five.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883611/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Analyze-text-using-basic-regular-expressions/terminal-windows-code-ip-addresses.jpg)
-</Frame>
+![The image shows a grid of ten terminal windows displaying code or configuration files with highlighted IP addresses. The windows are arranged in two rows of five.](https://kodekloud.com/kk-media/image/upload/v1752883611/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Analyze-text-using-basic-regular-expressions/terminal-windows-code-ip-addresses.jpg)
 
 Consider this mathematical scenario: Given x is an integer, where x > 3 and x \< 8, the possible values for x are only 4, 5, 6, or 7.
 
-<Frame>
-  ![The image shows a mathematical puzzle with conditions: "x is an integer," "x > 3," and "x \< 8," with a number line indicating possible values between 3 and 8.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883612/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Analyze-text-using-basic-regular-expressions/mathematical-puzzle-number-line.jpg)
-</Frame>
+![The image shows a mathematical puzzle with conditions: "x is an integer," "x > 3," and "x \< 8," with a number line indicating possible values between 3 and 8.](https://kodekloud.com/kk-media/image/upload/v1752883612/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Analyze-text-using-basic-regular-expressions/mathematical-puzzle-number-line.jpg)
 
 Regular expressions function in a similar manner. You define a set of conditions, and only text meeting all those conditions will match your pattern. We'll start with simple examples and gradually build towards more advanced expressions.
 
@@ -93,9 +89,7 @@ Some characters, such as the period (.), have special meanings in regular expres
 $ grep '\.' /etc/login.defs
 ```
 
-<Callout icon="lightbulb">
-  When dealing with regex, always escape characters that have special meanings if you intend to match them literally.
-</Callout>
+> **lightbulb** When dealing with regex, always escape characters that have special meanings if you intend to match them literally.
 
 ## Understanding the Asterisk (\*) and Plus (+) Operators
 
@@ -137,9 +131,7 @@ Or equivalently:
 $ egrep -r '0+' /etc/
 ```
 
-<Callout icon="lightbulb">
-  Using Extended Regular Expressions helps simplify pattern writing and reduces common mistakes caused by missing escape characters.
-</Callout>
+> **lightbulb** Using Extended Regular Expressions helps simplify pattern writing and reduces common mistakes caused by missing escape characters.
 
 ## Conclusion
 
@@ -149,6 +141,4 @@ In our next article, we will explore further regex concepts and provide addition
 
 Happy regexing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/06da4679-47f6-4d83-bd9d-5b886fd47615" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/06da4679-47f6-4d83-bd9d-5b886fd47615)

@@ -94,9 +94,7 @@ A Collector can run as a DaemonSet (node-local), Deployment (centralized), or St
 | DaemonSet  | Node-local collection (host metrics, node-local OTLP) | Low network hops, per-node collection, useful for node-local instrumentation | More pods to manage; storage for logs on nodes                    |
 | Deployment | Centralized collection and processing                 | Easier to scale collectors, centralized buffering                            | Potential higher latency and network hops, single ingestion point |
 
-<Callout icon="lightbulb">
-  DaemonSet ensures a collector runs on every node (useful to keep network hops low and to collect host-level metrics). Deployment gives centralized collectors and may be easier to scale for ingestion/backpressure.
-</Callout>
+> **lightbulb** DaemonSet ensures a collector runs on every node (useful to keep network hops low and to collect host-level metrics). Deployment gives centralized collectors and may be easier to scale for ingestion/backpressure.
 
 For this demo we use `mode: daemonset` so apps can send OTLP to a collector running on the same node.
 
@@ -152,9 +150,7 @@ config:
         exporters: [debug]
 ```
 
-<Callout icon="warning">
-  Do not remove the `health_check` extension unless you update the liveness/readiness probes. Removing it can cause the Helm chart's probes to fail and result in CrashLoopBackOff.
-</Callout>
+> **warning** Do not remove the `health_check` extension unless you update the liveness/readiness probes. Removing it can cause the Helm chart's probes to fail and result in CrashLoopBackOff.
 
 ## 5 — Install the Collector with Helm
 
@@ -460,9 +456,7 @@ This demonstrates a Helm-based flow for deploying an OpenTelemetry Collector on 
 * Kubernetes docs: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 * Jaeger: [https://www.jaegertracing.io/](https://www.jaegertracing.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/65f855f2-8928-4f08-ab35-a3d00502f4a8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/65f855f2-8928-4f08-ab35-a3d00502f4a8)
 
 
 # Demo OpenTelemetry Operator Auto Instrumentation

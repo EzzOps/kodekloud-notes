@@ -6,15 +6,15 @@ This article explores the basics of Amazon S3, an object storage solution known 
 
 In this article, we explore the basics of Amazon S3 (Simple Storage Service), an object storage solution renowned for its scalability, data availability, security, and performance. Amazon S3 is designed to store files in the cloud, much like Dropbox or Google Drive, but with the robust integration capabilities available through the AWS ecosystem.
 
-![The image is a graphic representation of the features of Simple Storage Service (S3), highlighting scalability, data availability, security, and performance. Each feature is depicted with an icon and a label.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858251/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/s3-features-scalability-availability-security-performance.jpg)
+![The image is a graphic representation of the features of Simple Storage Service (S3), highlighting scalability, data availability, security, and performance. Each feature is depicted with an icon and a label.](https://kodekloud.com/kk-media/image/upload/v1752858251/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/s3-features-scalability-availability-security-performance.jpg)
 
 Because S3 is part of AWS, it works seamlessly with services like [EC2](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2), [Lambda](https://learn.kodekloud.com/user/courses/aws-lambda), and [IAM](https://learn.kodekloud.com/user/courses/aws-iam). This integration provides you with robust control over who can access, modify, or delete your files.
 
-![The image shows logos of Dropbox and Google Drive above an icon representing Amazon S3, labeled "Simple Storage Service (S3)."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858252/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/dropbox-google-drive-amazon-s3.jpg)
+![The image shows logos of Dropbox and Google Drive above an icon representing Amazon S3, labeled "Simple Storage Service (S3)."](https://kodekloud.com/kk-media/image/upload/v1752858252/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/dropbox-google-drive-amazon-s3.jpg)
 
 S3 can be accessed using different methods, including the AWS Management Console, AWS CLI, AWS SDKs, and the REST API.
 
-![The image is an illustration of AWS Simple Storage Service (S3) with icons representing different access methods: AWS Console, AWS CLI, SDK, and Rest API.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858253/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/aws-s3-access-methods-illustration.jpg)
+![The image is an illustration of AWS Simple Storage Service (S3) with icons representing different access methods: AWS Console, AWS CLI, SDK, and Rest API.](https://kodekloud.com/kk-media/image/upload/v1752858253/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/aws-s3-access-methods-illustration.jpg)
 
 ***
 
@@ -26,7 +26,7 @@ Amazon S3 is built as an object-based storage system, which differentiates it fr
 * S3 uses a flat structure instead of a hierarchical file system—even though the AWS Console may display a folder-like view using prefixes (e.g., "music/song1").
 * For traditional file or block storage needs, consider other AWS storage options tailored for those use cases.
 
-![The image is a diagram comparing different types of storage: file-based (NFS and EFS), object-based (S3), and block-based (Server and EBS), with checkmarks and crosses indicating suitability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858254/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/storage-comparison-file-object-block-diagram.jpg)
+![The image is a diagram comparing different types of storage: file-based (NFS and EFS), object-based (S3), and block-based (Server and EBS), with checkmarks and crosses indicating suitability.](https://kodekloud.com/kk-media/image/upload/v1752858254/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/storage-comparison-file-object-block-diagram.jpg)
 
 ***
 
@@ -40,7 +40,7 @@ Amazon S3 is ideal for various storage needs. Common use cases include:
 
 Its scalability and durability make S3 a reliable choice in many architectures.
 
-![The image illustrates three use cases for S3: storing log files, media (audio, video, images), and CI/CD artifacts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858255/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/s3-use-cases-log-media-artifacts.jpg)
+![The image illustrates three use cases for S3: storing log files, media (audio, video, images), and CI/CD artifacts.](https://kodekloud.com/kk-media/image/upload/v1752858255/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/s3-use-cases-log-media-artifacts.jpg)
 
 ### Real-World Example: Deploying a Website
 
@@ -52,7 +52,7 @@ When a user accesses a webpage:
 * The HTML includes URLs pointing to media stored on S3.
 * This architecture leverages S3’s strengths while keeping the web server focused on serving dynamic content.
 
-![The image illustrates two S3 use cases, showing data flow between a user, a server, and an S3 bucket for storing and retrieving video and HTML files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858256/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/s3-use-cases-data-flow-diagram.jpg)
+![The image illustrates two S3 use cases, showing data flow between a user, a server, and an S3 bucket for storing and retrieving video and HTML files.](https://kodekloud.com/kk-media/image/upload/v1752858256/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/s3-use-cases-data-flow-diagram.jpg)
 
 ***
 
@@ -74,11 +74,11 @@ Objects refer to the individual files stored within buckets. Each object compris
 * A value: the actual content of the file.
 * Additional metadata: for example, version IDs and descriptive details when versioning is enabled.
 
-![The image explains the concept of objects in S3, showing PDF and MP3 files as examples, and describes an object's components: key, value, and metadata.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858257/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/s3-objects-pdf-mp3-components.jpg)
+![The image explains the concept of objects in S3, showing PDF and MP3 files as examples, and describes an object's components: key, value, and metadata.](https://kodekloud.com/kk-media/image/upload/v1752858257/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/s3-objects-pdf-mp3-components.jpg)
 
 Although the AWS Console may display a folder-like structure (e.g., "music"), remember that S3 operates on a flat file system. The appearance of directories is achieved by using prefixes in the object keys (e.g., "music/song1", "music/song2").
 
-![The image illustrates the flat file structure of S3 buckets, showing files listed without hierarchy and a conceptual representation of folders with paths like "music/song1".](../../../../images/kodekloud.com/kk-media/image/upload/v1752858258/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/s3-bucket-flat-file-structure.jpg)
+![The image illustrates the flat file structure of S3 buckets, showing files listed without hierarchy and a conceptual representation of folders with paths like "music/song1".](https://kodekloud.com/kk-media/image/upload/v1752858258/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/s3-bucket-flat-file-structure.jpg)
 
 ***
 
@@ -89,7 +89,7 @@ Amazon S3 ensures your files are secure and available through a series of redund
 * Files are automatically replicated across multiple servers and Availability Zones.
 * This replication prevents data loss, even in the event of hardware or zone failures.
 
-![The image illustrates an AWS Cloud setup with three availability zones, each containing two instances represented by chip icons and PNG files, and a central storage bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858259/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/aws-cloud-setup-availability-zones.jpg)
+![The image illustrates an AWS Cloud setup with three availability zones, each containing two instances represented by chip icons and PNG files, and a central storage bucket.](https://kodekloud.com/kk-media/image/upload/v1752858259/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/aws-cloud-setup-availability-zones.jpg)
 
 ***
 
@@ -101,7 +101,7 @@ While S3 is highly scalable, it comes with a few notable limits:
 * Object Size: Each individual object can be up to 5 terabytes.
 * Buckets: By default, an AWS account can have up to 100 buckets. This limit can be increased to 1,000 by submitting a service limit increase request.
 
-![The image outlines AWS S3 restrictions, including unlimited objects, a 5 TB maximum file size, and a default limit of 100 buckets per account, which can be increased to 1,000.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858260/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/aws-s3-restrictions-overview.jpg)
+![The image outlines AWS S3 restrictions, including unlimited objects, a 5 TB maximum file size, and a default limit of 100 buckets per account, which can be increased to 1,000.](https://kodekloud.com/kk-media/image/upload/v1752858260/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/aws-s3-restrictions-overview.jpg)
 
 ***
 
@@ -118,9 +118,9 @@ Amazon S3 is a powerful object storage service that offers:
   - Objects in S3 may include metadata along with their key and value.
   - S3 allows unlimited object storage with each file sized up to 5 TB, and the default bucket limit of 100 can be increased.
 
-![The image is a summary slide about Amazon's object storage service, highlighting its scalability, use cases, flat file structure, and object key-value concept. It includes four numbered points with brief descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858261/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/amazon-s3-object-storage-summary.jpg)
+![The image is a summary slide about Amazon's object storage service, highlighting its scalability, use cases, flat file structure, and object key-value concept. It includes four numbered points with brief descriptions.](https://kodekloud.com/kk-media/image/upload/v1752858261/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/amazon-s3-object-storage-summary.jpg)
 
-![The image is a summary slide about AWS S3, highlighting that buckets are containers for objects, bucket names must be globally unique, and S3 can handle unlimited objects.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858263/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/aws-s3-buckets-summary-slide.jpg)
+![The image is a summary slide about AWS S3, highlighting that buckets are containers for objects, bucket names must be globally unique, and S3 can handle unlimited objects.](https://kodekloud.com/kk-media/image/upload/v1752858263/notes-assets/images/AWS-Certified-Developer-Associate-S3-Basics/aws-s3-buckets-summary-slide.jpg)
 
 Additionally, S3 supports multi-part uploads, allowing you to partition large files into smaller segments for a more efficient upload process.
 

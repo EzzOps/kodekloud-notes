@@ -8,15 +8,11 @@ In this lesson, we delve into Rust lifetimes and understand why they are essenti
 
 For instance, imagine borrowing a book from a library—you can only refer to it while it’s on loan. Once returned, any lingering reference becomes invalid. Rust enforces a similar guarantee by preventing references from outliving their associated data.
 
-<Frame>
-  ![The image explains the importance of lifetimes in programming, highlighting contracts between data and references, preventing invalid references, and Rust's safety mechanism for memory safety.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883789/notes-assets/images/Rust-Programming-Validating-References-with-Lifetimes/lifetimes-programming-rust-safety.jpg)
-</Frame>
+![The image explains the importance of lifetimes in programming, highlighting contracts between data and references, preventing invalid references, and Rust's safety mechanism for memory safety.](https://kodekloud.com/kk-media/image/upload/v1752883789/notes-assets/images/Rust-Programming-Validating-References-with-Lifetimes/lifetimes-programming-rust-safety.jpg)
 
 Most of the time, Rust can infer lifetimes automatically (implicit lifetimes). However, when multiple references are involved, explicit lifetime annotations are required to clearly define their relationships.
 
-<Frame>
-  ![The image compares implicit and explicit lifetimes in Rust, highlighting that implicit lifetimes are automatically determined by Rust, while explicit lifetimes require manual specification.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883790/notes-assets/images/Rust-Programming-Validating-References-with-Lifetimes/rust-implicit-explicit-lifetimes-comparison.jpg)
-</Frame>
+![The image compares implicit and explicit lifetimes in Rust, highlighting that implicit lifetimes are automatically determined by Rust, while explicit lifetimes require manual specification.](https://kodekloud.com/kk-media/image/upload/v1752883790/notes-assets/images/Rust-Programming-Validating-References-with-Lifetimes/rust-implicit-explicit-lifetimes-comparison.jpg)
 
 ## Basic Syntax of Lifetimes
 
@@ -68,9 +64,7 @@ help: consider introducing a named lifetime parameter
 6 | fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
 ```
 
-<Callout icon="lightbulb">
-  The error highlights that the return type must explicitly tie the lifetimes of the input parameters to the returned reference to maintain memory safety.
-</Callout>
+> **lightbulb** The error highlights that the return type must explicitly tie the lifetimes of the input parameters to the returned reference to maintain memory safety.
 
 ## Preventing Dangling References
 
@@ -158,12 +152,8 @@ Lifetimes in Rust are vital to ensuring that references remain valid, thereby pr
 * Lifetime elision allows Rust to infer lifetimes in simple cases, keeping code less verbose.
 * The `'static` lifetime is used for data that is valid for the entire program duration such as string literals and global constants.
 
-<Frame>
-  ![The image is a summary of key points about lifetimes in programming, highlighting their role in ensuring valid references, preventing dangling references, and facilitating memory safety. It also mentions lifetime annotations, elision, and static lifetimes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883791/notes-assets/images/Rust-Programming-Validating-References-with-Lifetimes/lifetimes-programming-summary-key-points.jpg)
-</Frame>
+![The image is a summary of key points about lifetimes in programming, highlighting their role in ensuring valid references, preventing dangling references, and facilitating memory safety. It also mentions lifetime annotations, elision, and static lifetimes.](https://kodekloud.com/kk-media/image/upload/v1752883791/notes-assets/images/Rust-Programming-Validating-References-with-Lifetimes/lifetimes-programming-summary-key-points.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/37d4032f-c90d-43ee-a0cd-981b95ab22b0/lesson/22b36581-737e-4e88-a86f-306145508f30" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/37d4032f-c90d-43ee-a0cd-981b95ab22b0/lesson/22b36581-737e-4e88-a86f-306145508f30)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/rust/module/37d4032f-c90d-43ee-a0cd-981b95ab22b0/lesson/94bf599b-653c-4b5d-ae0f-a707e4003944" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/rust/module/37d4032f-c90d-43ee-a0cd-981b95ab22b0/lesson/94bf599b-653c-4b5d-ae0f-a707e4003944)

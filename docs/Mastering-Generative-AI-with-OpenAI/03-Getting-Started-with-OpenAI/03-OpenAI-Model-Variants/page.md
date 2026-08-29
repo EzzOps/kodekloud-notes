@@ -26,13 +26,9 @@ The GPT-3.5 series balances capability and cost with varying token limits and da
 | `text-davinci-003` | 4,096      | June 2021             | Natural language tasks |
 | `gpt-3.5-turbo`    | 4,096      | September 2021        | Chat-style interfaces  |
 
-<Frame>
-  ![The image is a table listing GPT-3.5 model variants, including their descriptions, maximum tokens, and training data. It categorizes models into "Chat" and "Word/Code Completion" types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881517/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Model-Variants/gpt-3-5-model-variants-table.jpg)
-</Frame>
+![The image is a table listing GPT-3.5 model variants, including their descriptions, maximum tokens, and training data. It categorizes models into "Chat" and "Word/Code Completion" types.](https://kodekloud.com/kk-media/image/upload/v1752881517/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Model-Variants/gpt-3-5-model-variants-table.jpg)
 
-<Callout icon="lightbulb">
-  `gpt-3.5-turbo` is optimized for multi-turn dialogues and often delivers lower latency and cost for chat applications.
-</Callout>
+> **lightbulb** `gpt-3.5-turbo` is optimized for multi-turn dialogues and often delivers lower latency and cost for chat applications.
 
 OpenAI continually refines these variants, improving response quality, speed, and cost-effectiveness.
 
@@ -44,9 +40,7 @@ Fine-tuning allows you to customize a base model on your domain-specific dataset
 * Shorter prompts, reducing token usage and cost
 * Faster inference, since context is baked into the model
 
-<Frame>
-  ![The image illustrates the process of model fine-tuning, showing a flow from custom data to a fine-tuned model that generates responses. It highlights benefits like higher quality results, token savings, and lower latency.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881519/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Model-Variants/model-fine-tuning-process-diagram.jpg)
-</Frame>
+![The image illustrates the process of model fine-tuning, showing a flow from custom data to a fine-tuned model that generates responses. It highlights benefits like higher quality results, token savings, and lower latency.](https://kodekloud.com/kk-media/image/upload/v1752881519/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Model-Variants/model-fine-tuning-process-diagram.jpg)
 
 ### Fine-Tuning Workflow
 
@@ -54,9 +48,7 @@ Fine-tuning allows you to customize a base model on your domain-specific dataset
 2. Upload data and create a fine-tuning job via the CLI or API.
 3. Monitor training, evaluate performance, and deploy your custom endpoint.
 
-<Callout icon="triangle-alert">
-  Ensure your training data is clean, balanced, and representative. Low-quality data can degrade performance.
-</Callout>
+> **triangle-alert** Ensure your training data is clean, balanced, and representative. Low-quality data can degrade performance.
 
 ## Embeddings and Semantic Search
 
@@ -70,9 +62,7 @@ Embeddings convert text into vector representations for advanced applications:
 
 OpenAI’s `text-embedding-ada-002` model generates high-quality embeddings at scale.
 
-<Frame>
-  ![The image illustrates an embedding model process where the text "anatine amigos" is converted into a vector using the "text-embedding-ada-002" model.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881520/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Model-Variants/anatine-amigos-text-embedding-vector.jpg)
-</Frame>
+![The image illustrates an embedding model process where the text "anatine amigos" is converted into a vector using the "text-embedding-ada-002" model.](https://kodekloud.com/kk-media/image/upload/v1752881520/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Model-Variants/anatine-amigos-text-embedding-vector.jpg)
 
 ## Other Model Families
 
@@ -90,6 +80,4 @@ OpenAI’s ecosystem extends beyond GPT and Codex:
 * [Embeddings Overview](https://platform.openai.com/docs/guides/embeddings)
 * [DALL·E 2 Documentation](https://platform.openai.com/docs/models/images/dall-e-2)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/7cf291c5-4705-4a69-965a-b0ba7d2169c6/lesson/5aa8c7e7-7a43-413d-8d28-712048e7a136" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/7cf291c5-4705-4a69-965a-b0ba7d2169c6/lesson/5aa8c7e7-7a43-413d-8d28-712048e7a136)

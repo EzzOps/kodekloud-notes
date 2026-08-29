@@ -6,9 +6,7 @@ Review of LangChain primitives and how LangGraph composes LLMChains tools agents
 
 Before diving into graphs, revisit the core primitives of [LangChain](https://learn.kodekloud.com/user/courses/langchain). LangGraph builds directly on those primitives: it does not replace them, it orchestrates them. Every node in LangGraph executes a LangChain component (an LLM chain, a tool, a retriever, or an agent). If you don't understand what LangChain components can do, you won't be able to design effective nodes or graphs.
 
-<Callout icon="lightbulb">
-  LangGraph composes and routes primitive components. Design the components first (LLM chains, tools, agents, memory) and then use LangGraph to connect and orchestrate them.
-</Callout>
+> **lightbulb** LangGraph composes and routes primitive components. Design the components first (LLM chains, tools, agents, memory) and then use LangGraph to connect and orchestrate them.
 
 <Frame>
   <img alt="The image is a flowchart titled &#x22;Why Revisit LangChain Primitives?&#x22; showing connections between elements like LLM Chain, Tool, Retriever, Agent, and a central &#x22;LangGraph&#x22; node, which represents nodes running LangChain components." />
@@ -148,9 +146,7 @@ Recommended design workflow:
 
 With well-defined primitives, LangGraph becomes a powerful coordinator: it composes nodes into graphs, routes execution by design, integrates tools and state, and helps you solve complex tasks reliably.
 
-<Callout icon="warning">
-  Agents can execute tools that have side effects (API calls, DB writes). Always model and test tool behavior, and apply safety checks or sandboxing where necessary.
-</Callout>
+> **warning** Agents can execute tools that have side effects (API calls, DB writes). Always model and test tool behavior, and apply safety checks or sandboxing where necessary.
 
 Links and references
 
@@ -159,6 +155,4 @@ Links and references
 * [Vector Database for GenAI (KodeKloud)](https://learn.kodekloud.com/user/courses/vector-database-for-genai)
 * [Fundamentals of RAG (KodeKloud)](https://learn.kodekloud.com/user/courses/fundamentals-of-rag)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/2e37c751-0429-43c9-8ecf-2df222ce0663/lesson/ea1e518a-33cd-4753-8635-5852a265b51b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/2e37c751-0429-43c9-8ecf-2df222ce0663/lesson/ea1e518a-33cd-4753-8635-5852a265b51b)

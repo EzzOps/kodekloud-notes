@@ -31,7 +31,7 @@ This guide explores core components of event-driven architectures in AWS EventBr
 
 In this guide, we’ll explore three core components of event-driven architectures in AWS EventBridge: Event Patterns, Scheduled Events, and Pipes. Mastering these concepts helps you build reliable, maintainable, and scalable systems that respond to events efficiently.
 
-![The image is an infographic titled "Event Patterns, Scheduled Events, and Pipes," describing three concepts: Event Patterns, Scheduler, and Pipes, each with brief explanations of their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862432/notes-assets/images/AWS-CloudWatch-Event-Patterns-Scheduled-Events-and-Pipes/event-patterns-scheduled-events-pipes.jpg)
+![The image is an infographic titled "Event Patterns, Scheduled Events, and Pipes," describing three concepts: Event Patterns, Scheduler, and Pipes, each with brief explanations of their functions.](https://kodekloud.com/kk-media/image/upload/v1752862432/notes-assets/images/AWS-CloudWatch-Event-Patterns-Scheduled-Events-and-Pipes/event-patterns-scheduled-events-pipes.jpg)
 
 ***
 

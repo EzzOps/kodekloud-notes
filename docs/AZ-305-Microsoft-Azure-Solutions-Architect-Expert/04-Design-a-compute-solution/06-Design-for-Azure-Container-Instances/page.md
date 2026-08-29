@@ -45,7 +45,7 @@ This article delves into the design considerations for Azure Container Instances
 * **VMs:**\
   In catastrophic events, VMs have the capability to fail over to another server or be redeployed on a different host, ensuring continuous service availability.
 
-![The image is a comparison between virtual machines (VMs) and containers, highlighting differences in isolation, operating systems, deployment, storage, and failover methods. It includes icons and text to illustrate these distinctions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866852/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Container-Instances/vm-vs-containers-comparison.jpg)
+![The image is a comparison between virtual machines (VMs) and containers, highlighting differences in isolation, operating systems, deployment, storage, and failover methods. It includes icons and text to illustrate these distinctions.](https://kodekloud.com/kk-media/image/upload/v1752866852/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Container-Instances/vm-vs-containers-comparison.jpg)
 
 * **Containers:**\
   Containers do not support native failover redeployment. In scenarios of failure, container orchestrators like Kubernetes are implemented to recreate the containers as needed.
@@ -60,7 +60,7 @@ Azure Container Instances are ideal when advanced container orchestration is not
 * **Container Images:**\
   ACI supports Docker images from sources such as Docker Hub, private registries, or Azure Container Registry. This compatibility allows you to continue leveraging your existing Docker images seamlessly.
 
-![The image is a flowchart from KodeKloud that guides users on when to select Azure Container Instances as a compute solution, along with brief descriptions of container deployment, images, and groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866853/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Container-Instances/azure-container-instances-flowchart.jpg)
+![The image is a flowchart from KodeKloud that guides users on when to select Azure Container Instances as a compute solution, along with brief descriptions of container deployment, images, and groups.](https://kodekloud.com/kk-media/image/upload/v1752866853/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Container-Instances/azure-container-instances-flowchart.jpg)
 
 > **lightbulb** For rapid deployments without the overhead of managing underlying infrastructure, ACI is an excellent choice.
 
@@ -74,7 +74,7 @@ Container Groups are a key feature in ACI that allow you to deploy a set of rela
 
 ACI’s rapid deployment capabilities make it particularly suited for development and testing environments. Development teams can quickly package and test container images, making ACI a valuable tool for short-lived processes within various workflows.
 
-![The image is an infographic from KodeKloud outlining considerations for designing a solution with Azure Container Instances (ACI), highlighting aspects like deployment pace, development scenarios, short-lived processes, virtual nodes, and limitations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866856/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Container-Instances/azure-container-instances-infographic.jpg)
+![The image is an infographic from KodeKloud outlining considerations for designing a solution with Azure Container Instances (ACI), highlighting aspects like deployment pace, development scenarios, short-lived processes, virtual nodes, and limitations.](https://kodekloud.com/kk-media/image/upload/v1752866856/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Container-Instances/azure-container-instances-infographic.jpg)
 
 ### Use as a Virtual Node
 

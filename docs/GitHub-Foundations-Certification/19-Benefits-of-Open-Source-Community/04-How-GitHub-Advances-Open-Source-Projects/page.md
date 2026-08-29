@@ -60,9 +60,7 @@ How does GitHub Sponsors work?
 * GitHub currently charges zero platform fees for individual-sponsored contributions so more of the pledge reaches the recipient.
 * Note that payment processing fees from third-party payment providers may still apply.
 
-<Callout icon="lightbulb">
-  Payment processing fees may still apply, and GitHub Sponsors availability varies by country and region. Always verify the latest regional availability and fee details in the official GitHub Sponsors documentation: [https://docs.github.com/en/sponsors/setting-up-sponsorships-for-your-organization/about-github-sponsors](https://docs.github.com/en/sponsors/setting-up-sponsorships-for-your-organization/about-github-sponsors)
-</Callout>
+> **lightbulb** Payment processing fees may still apply, and GitHub Sponsors availability varies by country and region. Always verify the latest regional availability and fee details in the official GitHub Sponsors documentation: [https://docs.github.com/en/sponsors/setting-up-sponsorships-for-your-organization/about-github-sponsors](https://docs.github.com/en/sponsors/setting-up-sponsorships-for-your-organization/about-github-sponsors)
 
 4. Corporate sponsorship and budgets
 
@@ -80,9 +78,7 @@ Links and references
 * GitHub Sponsors documentation: [https://docs.github.com/en/sponsors/setting-up-sponsorships-for-your-organization/about-github-sponsors](https://docs.github.com/en/sponsors/setting-up-sponsorships-for-your-organization/about-github-sponsors)
 * Funding file guidance: [https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-funding-files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-funding-files)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/github-foundation-certification/module/c969426b-f74f-4ca3-8269-a63dff90fbc2/lesson/8d282c62-b3e2-460c-bb53-1552c0dae65c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/github-foundation-certification/module/c969426b-f74f-4ca3-8269-a63dff90fbc2/lesson/8d282c62-b3e2-460c-bb53-1552c0dae65c)
 
 
 # How GitHub Advances Open Source Projects
@@ -93,9 +89,7 @@ GitHub supports and sustains open source projects by providing free infrastructu
 
 GitHub is more than a code host — it provides the platform, tools, and community patterns that help open source projects scale, stay secure, and remain sustainable over time. Below we break down the core ways GitHub supports open source, with practical examples and links to relevant features.
 
-<Callout icon="lightbulb">
-  This article highlights the core ways GitHub supports open source: free infrastructure, standardized workflows, automated security, discoverability and growth, financial support, and long-term preservation.
-</Callout>
+> **lightbulb** This article highlights the core ways GitHub supports open source: free infrastructure, standardized workflows, automated security, discoverability and growth, financial support, and long-term preservation.
 
 ## Key pillars GitHub provides
 
@@ -202,6 +196,4 @@ By combining free infrastructure, standard workflows, automated security, discov
 * GitHub Sponsors: [https://github.com/sponsors](https://github.com/sponsors)
 * GitHub Archive Program: [https://archiveprogram.github.com/](https://archiveprogram.github.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/github-foundation-certification/module/c969426b-f74f-4ca3-8269-a63dff90fbc2/lesson/b7ab3859-7b04-4ece-8d92-bbf4869ff2d3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/github-foundation-certification/module/c969426b-f74f-4ca3-8269-a63dff90fbc2/lesson/b7ab3859-7b04-4ece-8d92-bbf4869ff2d3)

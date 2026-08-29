@@ -31,13 +31,9 @@ Quick reference table
 
 Thinking about the environment's sustainability, it's important to keep older versions around while not all components are migrated. Erasing older artifacts or images should only be done once all integrations have been validated and the migration solution has earned your trust.
 
-<Callout icon="lightbulb">
-  Keep build artifacts, deployment manifests, and image tags for a reasonable retention period. This ensures you can quickly redeploy a known-good version without relying on rebuilds that may produce different artifacts.
-</Callout>
+> **lightbulb** Keep build artifacts, deployment manifests, and image tags for a reasonable retention period. This ensures you can quickly redeploy a known-good version without relying on rebuilds that may produce different artifacts.
 
-<Callout icon="warning">
-  Be cautious with stateful or schema-changing migrations. Rolling back code without rolling back incompatible database schema changes can leave the system in an unusable state. Coordinate application, schema, and data migrations with clear forward/backward compatibility strategies.
-</Callout>
+> **warning** Be cautious with stateful or schema-changing migrations. Rolling back code without rolling back incompatible database schema changes can leave the system in an unusable state. Coordinate application, schema, and data migrations with clear forward/backward compatibility strategies.
 
 <Frame>
   <img alt="The image is an infographic titled &#x22;Rollback,&#x22; outlining four steps: protecting the environment during bad deployments, reverting to stable versions using CI/CD and IaC, maintaining observability during issues, and removing old versions after validation." />
@@ -65,9 +61,7 @@ Links and references
 
 That’s it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/ce3fc0dc-fca5-4eb2-b433-b850e85b7582" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/ce3fc0dc-fca5-4eb2-b433-b850e85b7582)
 
 
 # Strategy
@@ -86,9 +80,7 @@ Any migration plan should target these three outcomes:
 * Legacy deactivation: Decommission legacy tools as equivalent capabilities are validated on the new platform to avoid duplication and configuration drift. Ownership for deactivation is determined by where the feature runs — either the platform team or the owning product team.
 * Full coverage: Confirm that every monitoring capability—metrics, logs, traces, and alerting—works on the new platform before switching off legacy tooling. Missing observability data during an incident severely impedes debugging and recovery.
 
-<Callout icon="warning">
-  Do not deactivate legacy systems until you have validated coverage and run-throughs for critical incidents. Accidental gaps in observability are a major operational risk.
-</Callout>
+> **warning** Do not deactivate legacy systems until you have validated coverage and run-throughs for critical incidents. Accidental gaps in observability are a major operational risk.
 
 <Frame>
   <img alt="The image presents a strategy diagram with three stages: &#x22;Impactless,&#x22; &#x22;Legacy Deactivation,&#x22; and &#x22;Full Coverage,&#x22; each in different colors with icons above them." />
@@ -155,9 +147,7 @@ Recommended practices:
   <img alt="The image outlines a strategy with a timeline showing a migration phase lasting 8 weeks and a 1-2 week buffer. It emphasizes avoiding management pressure and ensuring engineer confidence." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Add a contingency buffer to your timeline (for example, 10–25% of the planned duration). This protects the team from last-minute pressure and gives time to verify that coverage, alerts, and dashboards are functioning before decommissioning the legacy system.
-</Callout>
+> **lightbulb** Add a contingency buffer to your timeline (for example, 10–25% of the planned duration). This protects the team from last-minute pressure and gives time to verify that coverage, alerts, and dashboards are functioning before decommissioning the legacy system.
 
 ## Summary
 
@@ -168,6 +158,4 @@ Recommended practices:
 
 That's it for this lesson. I hope you found it helpful.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/68d2c963-cc16-48bd-a963-cfa31c021a60" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/68d2c963-cc16-48bd-a963-cfa31c021a60)

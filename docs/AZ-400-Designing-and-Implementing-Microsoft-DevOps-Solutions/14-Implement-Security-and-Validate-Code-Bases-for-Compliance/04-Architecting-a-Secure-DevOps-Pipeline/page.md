@@ -10,7 +10,7 @@ In this guide, we’ll walk through designing a DevSecOps pipeline that embeds s
 
 Below is a high-level overview of the major phases in a secure CI/CD pipeline. Each component plays a critical role in enforcing security policies and maintaining compliance from code commit to production.
 
-![The image illustrates a secure DevOps pipeline, highlighting components like package management, source scanning, and various stages such as deployment, monitoring, and version control. It also details the process of package management and source scanning to ensure security and vulnerability-free code.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867991/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Architecting-a-Secure-DevOps-Pipeline/secure-devops-pipeline-package-management.jpg)
+![The image illustrates a secure DevOps pipeline, highlighting components like package management, source scanning, and various stages such as deployment, monitoring, and version control. It also details the process of package management and source scanning to ensure security and vulnerability-free code.](https://kodekloud.com/kk-media/image/upload/v1752867991/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Architecting-a-Secure-DevOps-Pipeline/secure-devops-pipeline-package-management.jpg)
 
 ## 1. Problem Area: External Package Feeds
 

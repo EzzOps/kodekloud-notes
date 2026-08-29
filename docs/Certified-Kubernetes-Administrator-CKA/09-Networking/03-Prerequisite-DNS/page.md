@@ -126,11 +126,11 @@ For instance, consider Google's domain:
 
 Subdomains allow organizations to separate services. Examples from Google include [maps.google.com](https://maps.google.com) for maps, [drive.google.com](https://drive.google.com) for storage, and [mail.google.com](https://mail.google.com) for email.
 
-![The image illustrates the structure of domain names, showing root, top-level domain (.com), main domain (google), and subdomains (mail, drive, www, maps, apps).](../../../../images/kodekloud.com/kk-media/image/upload/v1752869860/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Prerequisite-DNS/frame_540.jpg)
+![The image illustrates the structure of domain names, showing root, top-level domain (.com), main domain (google), and subdomains (mail, drive, www, maps, apps).](https://kodekloud.com/kk-media/image/upload/v1752869860/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Prerequisite-DNS/frame_540.jpg)
 
 When your organization attempts to access a domain like apps.google.com, the internal DNS server first tries to resolve the name. Failing that, it forwards the request through a hierarchical process: a root DNS server directs it to a .com DNS server, which then points to Google's DNS server. The IP address is returned and cached temporarily to expedite future queries.
 
-![The image illustrates the DNS resolution process for "apps.google.com," showing the hierarchy from root DNS to Google DNS, resolving to IP 216.58.221.78.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869861/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Prerequisite-DNS/frame_600.jpg)
+![The image illustrates the DNS resolution process for "apps.google.com," showing the hierarchy from root DNS to Google DNS, resolving to IP 216.58.221.78.](https://kodekloud.com/kk-media/image/upload/v1752869861/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Prerequisite-DNS/frame_600.jpg)
 
 Similarly, organizations like mycompany.com can structure their domain by using subdomains for different services:
 

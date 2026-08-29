@@ -51,9 +51,7 @@ preemptionPolicy options
   <img alt="A presentation slide titled &#x22;Preemption Type&#x22; showing two rounded boxes explaining preemptionPolicy: &#x22;PreemptLowerPriority&#x22; (default, lets pods of that PriorityClass preempt lower-priority pods) and &#x22;Never&#x22; (explicitly set so pods cannot be evicted). The slide includes brief bullet points under each heading." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Preemption is enabled by default in Kubernetes. Use `preemptionPolicy: Never` only when you must ensure this Pod does not preempt other pods; it does not protect the Pod from being evicted by higher-priority pods.
-</Callout>
+> **lightbulb** Preemption is enabled by default in Kubernetes. Use `preemptionPolicy: Never` only when you must ensure this Pod does not preempt other pods; it does not protect the Pod from being evicted by higher-priority pods.
 
 How priorities are defined
 
@@ -179,8 +177,6 @@ Further reading and references
 
 That concludes this lesson on Pod Priority and Preemption — thanks for learning with us.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/ad35ef0b-c572-4f9e-82e4-0865c98fd502/lesson/36e80af5-e217-461e-aa1a-6e2eb896fd9a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/ad35ef0b-c572-4f9e-82e4-0865c98fd502/lesson/36e80af5-e217-461e-aa1a-6e2eb896fd9a)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/ad35ef0b-c572-4f9e-82e4-0865c98fd502/lesson/ff158bc1-0521-4651-bb2f-023a5bd43085" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/ad35ef0b-c572-4f9e-82e4-0865c98fd502/lesson/ff158bc1-0521-4651-bb2f-023a5bd43085)

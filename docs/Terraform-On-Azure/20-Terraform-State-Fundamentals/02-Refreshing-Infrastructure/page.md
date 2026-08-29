@@ -6,9 +6,7 @@ Explains Terraform's state refresh with Azure, how it detects drift, example sto
 
 Terraform detects drift between the configuration in your code, the saved state, and the real-world resources in Azure by performing a state refresh. Understanding this refresh process explains why `terraform plan` or `terraform apply` can change even when you didn't edit any files.
 
-<Callout icon="lightbulb">
-  Terraform performs a state refresh automatically during `plan` and `apply`. The provider queries Azure for current resource attributes, compares those live values with your configuration and the saved state, and produces a plan that reconciles any differences. This is how Terraform detects drift and keeps your infrastructure consistent.
-</Callout>
+> **lightbulb** Terraform performs a state refresh automatically during `plan` and `apply`. The provider queries Azure for current resource attributes, compares those live values with your configuration and the saved state, and produces a plan that reconciles any differences. This is how Terraform detects drift and keeps your infrastructure consistent.
 
 What happens during a refresh
 
@@ -90,9 +88,7 @@ Table: useful commands and their effects
 | `terraform plan -refresh=false`  | Skips querying Azure; relies on state file only to create plan.                     |
 | `terraform apply -refresh=false` | Applies changes without refreshing state; updates state to reflect applied changes. |
 
-<Callout icon="warning">
-  Skipping refresh with `-refresh=false` can be dangerous in production: it hides drift and can cause configuration and real infrastructure to silently diverge. Prefer the default refresh behavior for safety and predictable outcomes.
-</Callout>
+> **warning** Skipping refresh with `-refresh=false` can be dangerous in production: it hides drift and can cause configuration and real infrastructure to silently diverge. Prefer the default refresh behavior for safety and predictable outcomes.
 
 Concrete demo (reproducible in Visual Studio Code)
 Below is a concise demo you can reproduce to observe state refresh behavior.

@@ -77,9 +77,7 @@ To enable versioning on the existing `training/` mount:
 
 You should see `options: {version: 2}` for the `training/` path.
 
-<Callout icon="lightbulb">
-  Upgrading to v2 is non-destructive. All existing KV v1 data remains accessible under the new KV v2 mount.
-</Callout>
+> **lightbulb** Upgrading to v2 is non-destructive. All existing KV v1 data remains accessible under the new KV v2 mount.
 
 ***
 
@@ -123,9 +121,7 @@ destroyed       false
 version         1
 ```
 
-<Callout icon="lightbulb">
-  The CLI automatically prepends `/data/` when writing, so you only specify `kvv2/apps/circleci`.
-</Callout>
+> **lightbulb** The CLI automatically prepends `/data/` when writing, so you only specify `kvv2/apps/circleci`.
 
 ### 4.2 Read the Latest Version
 
@@ -197,9 +193,7 @@ vault kv destroy --versions=1 kvv2/apps/circleci
 
 Reading that version now shows `destroyed = true`; it cannot be undeleted.
 
-<Callout icon="triangle-alert">
-  Destroying versions is irreversible. Always ensure you have backups or retention policies if you need historic data.
-</Callout>
+> **triangle-alert** Destroying versions is irreversible. Always ensure you have backups or retention policies if you need historic data.
 
 ***
 

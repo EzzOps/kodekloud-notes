@@ -22,18 +22,14 @@ validations:
   - expression: "<your CEL here>"
 ```
 
-<Callout icon="lightbulb">
-  Policies and bindings are distinct: policies hold logic and messages, while bindings control scope and enforcement. This lets you stage validation rules in the cluster before applying them to requests.
-</Callout>
+> **lightbulb** Policies and bindings are distinct: policies hold logic and messages, while bindings control scope and enforcement. This lets you stage validation rules in the cluster before applying them to requests.
 
 References and further reading
 
 * Validating Admission Policies: [https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#validatingadmissionpolicy](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#validatingadmissionpolicy)
 * Common Expression Language (CEL): [https://opensource.google/docs/cel/](https://opensource.google/docs/cel/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/06ac03ac-518a-4bc6-b2f8-6ed63fcb26d5/lesson/4201bc54-9684-4c44-afda-8553eab1dd40" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/06ac03ac-518a-4bc6-b2f8-6ed63fcb26d5/lesson/4201bc54-9684-4c44-afda-8553eab1dd40)
 
 
 # Course Overview and Learning Outcomes
@@ -44,9 +40,7 @@ Introductory LangGraph course teaching graph-based AI workflows, state managemen
 
 Welcome to the LangGraph beginner course — a practical, hands-on introduction to designing graph-based AI applications and agentic systems. This lesson series teaches you how to structure workflows with explicit control, state management, memory, and human-in-the-loop patterns so you can build reliable, observable AI systems for real-world use cases.
 
-<Callout icon="lightbulb">
-  This lesson is beginner-friendly: you don't need prior graph theory or advanced AI knowledge. We'll use practical analogies and hands-on examples to build intuition.
-</Callout>
+> **lightbulb** This lesson is beginner-friendly: you don't need prior graph theory or advanced AI knowledge. We'll use practical analogies and hands-on examples to build intuition.
 
 What is LangGraph and why it matters
 LangGraph extends [LangChain](https://learn.kodekloud.com/user/courses/langchain) with a structured graph model that helps you manage complex flows. Instead of ad-hoc chains, LangGraph lets you compose nodes, edges, and paths into transparent workflows that can:
@@ -123,6 +117,4 @@ Links and references
 
 Welcome to LangGraph — by the end of this series you'll be able to design modular, conditional graphs that handle real-world complexity with controllable, observable behavior.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/11d0578c-2a76-40f7-be25-905be94f24f8/lesson/6a20cbba-80d0-4d07-bc5f-186c6b4a5394" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/11d0578c-2a76-40f7-be25-905be94f24f8/lesson/6a20cbba-80d0-4d07-bc5f-186c6b4a5394)

@@ -10,13 +10,9 @@ In this article, we delve into our deployment approach, detailing how our pipeli
 
 Our workflow begins with several continuous integration stages. The diagram below visually represents the entire deployment approach, highlighting key steps such as dependency checks, testing, AWS deployment, and notifications:
 
-<Frame>
-  ![The image is a flowchart illustrating a deployment approach, including stages of continuous integration, deployment, and delivery, along with post-build processes. It outlines steps like dependency checks, testing, deployment to AWS, and notifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879650/notes-assets/images/Jenkins-Pipelines-Understanding-Deployment-Approach/deployment-approach-flowchart-ci-cd.jpg)
-</Frame>
+![The image is a flowchart illustrating a deployment approach, including stages of continuous integration, deployment, and delivery, along with post-build processes. It outlines steps like dependency checks, testing, deployment to AWS, and notifications.](https://kodekloud.com/kk-media/image/upload/v1752879650/notes-assets/images/Jenkins-Pipelines-Understanding-Deployment-Approach/deployment-approach-flowchart-ci-cd.jpg)
 
-<Callout icon="lightbulb">
-  This diagram emphasizes each stage of our pipeline, ensuring all necessary checks and tests are in place before any changes progress further in the deployment process.
-</Callout>
+> **lightbulb** This diagram emphasizes each stage of our pipeline, ensuring all necessary checks and tests are in place before any changes progress further in the deployment process.
 
 ## Detailed Stages of the Deployment Process
 
@@ -40,9 +36,7 @@ Once the continuous integration stages are successful, the deployment phase kick
    * **Dynamic Application Security Testing:**\
      Post-deployment, dynamic security testing is performed using [OWASP ZAP](https://www.zaproxy.org/).
 
-<Callout icon="triangle-alert">
-  Both the Kubernetes deployment and security testing are executed exclusively within the context of a pull request to ensure pre-production quality.
-</Callout>
+> **triangle-alert** Both the Kubernetes deployment and security testing are executed exclusively within the context of a pull request to ensure pre-production quality.
 
 3. **Production Deployment via Main Branch Merge**\
    After the pull request is merged into the main branch, additional steps are triggered for production deployment:
@@ -82,6 +76,4 @@ For more details on these technologies, refer to their respective documentation:
 
 Thank you for exploring our deployment methodology!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/a1289a46-be38-4446-a056-0b9730d05dfd/lesson/91f5171d-f6ae-4b70-bf8f-b68473bc01f0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/a1289a46-be38-4446-a056-0b9730d05dfd/lesson/91f5171d-f6ae-4b70-bf8f-b68473bc01f0)

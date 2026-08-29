@@ -30,9 +30,7 @@ Why microservices + horizontal scaling fits LLM workloads
 
 Best practices
 
-<Callout icon="lightbulb">
-  Put a model-serving layer behind a load balancer, use autoscaling policies driven by meaningful metrics (GPU utilization, queue length, tail latency), implement batching for inference, and offload non-ML responsibilities (caching, static asset hosting) to separate services.
-</Callout>
+> **lightbulb** Put a model-serving layer behind a load balancer, use autoscaling policies driven by meaningful metrics (GPU utilization, queue length, tail latency), implement batching for inference, and offload non-ML responsibilities (caching, static asset hosting) to separate services.
 
 Comparison: architectural alternatives
 
@@ -48,9 +46,7 @@ Why the other options are less appropriate
 * Monolithic + vertical scaling: Scaling up has practical limits (cost, available hardware), increases downtime risk for upgrades, and mixes concerns that can lead to resource contention between model inference and other services.
 * Serverless (synchronous): Many providers enforce time and resource limits and have limited or no first-class GPU support. Cold starts and memory/CPU caps make serverless functions a poor fit for latency-sensitive or GPU-bound LLM inference unless you use asynchronous patterns and offload heavy work to specialized services.
 
-<Callout icon="warning">
-  Warning: If you consider serverless, verify provider GPU support, execution-time limits, and cold-start behavior. For production-grade LLM inference, serverless is typically impractical without async/offload approaches.
-</Callout>
+> **warning** Warning: If you consider serverless, verify provider GPU support, execution-time limits, and cold-start behavior. For production-grade LLM inference, serverless is typically impractical without async/offload approaches.
 
 * Peer-to-peer distributed computing: P2P systems introduce significant complexity around orchestration, security, and consistent performance, making them unsuitable for production LLM serving.
 
@@ -72,6 +68,4 @@ Links and references
 * [Ray Serve](https://docs.ray.io/en/latest/serve/index.html)
 * [BentoML](https://www.bentoml.org)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/8d6e391d-9269-421c-9790-94244d244d5e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/8d6e391d-9269-421c-9790-94244d244d5e)

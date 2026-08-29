@@ -27,9 +27,7 @@ After applying this configuration, you can verify the output by running:
 $ cat /tmp/instance_state.txt
 ```
 
-<Callout icon="lightbulb">
-  Remember to verify that the specified file path exists and is writable by your user.
-</Callout>
+> **lightbulb** Remember to verify that the specified file path exists and is writable by your user.
 
 ## Destroy-Time Provisioners
 
@@ -89,9 +87,7 @@ Output: The system cannot find the path specified.
 
 When this error occurs, Terraform marks the associated resource as tainted, indicating it may need to be recreated.
 
-<Callout icon="triangle-alert">
-  Ensure that any file paths or commands used in provisioners are valid and tested. Failing provisioners can block your deployment process.
-</Callout>
+> **triangle-alert** Ensure that any file paths or commands used in provisioners are valid and tested. Failing provisioners can block your deployment process.
 
 ## Allowing Provisioner Failures
 
@@ -129,8 +125,6 @@ For more information, consider visiting the following resources:
 * [Terraform Provisioners Documentation](https://www.terraform.io/docs/provisioners/index.html)
 * [AWS Provider Documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9fcbd3cd-b06d-4816-8646-3639ca3d19cd/lesson/febf437a-a857-4442-a4ed-564902d4e87d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9fcbd3cd-b06d-4816-8646-3639ca3d19cd/lesson/febf437a-a857-4442-a4ed-564902d4e87d)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9fcbd3cd-b06d-4816-8646-3639ca3d19cd/lesson/be343b5b-9cbc-4c4a-b8d6-3d4504aba315" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9fcbd3cd-b06d-4816-8646-3639ca3d19cd/lesson/be343b5b-9cbc-4c4a-b8d6-3d4504aba315)

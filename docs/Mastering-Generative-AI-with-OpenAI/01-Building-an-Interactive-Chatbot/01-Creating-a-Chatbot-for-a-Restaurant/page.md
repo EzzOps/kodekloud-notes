@@ -44,9 +44,7 @@ To let a user run commands without entering their password, add `NOPASSWD:`:
 trinity ALL=(ALL) NOPASSWD: ALL
 ```
 
-<Callout icon="lightbulb">
-  Use `NOPASSWD:` sparingly; it increases convenience but may reduce auditability.
-</Callout>
+> **lightbulb** Use `NOPASSWD:` sparingly; it increases convenience but may reduce auditability.
 
 ***
 
@@ -56,11 +54,9 @@ trinity ALL=(ALL) NOPASSWD: ALL
 * [visudo Documentation](https://www.sudo.ws/man/1.8.13/visudo.man.html)
 * [Linux User Management](https://www.linux.com/training-tutorials/introduction-linux-user-accounts/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/7e2b6f48-e58c-4d05-82e2-feb0f5f876f5/lesson/46d7c494-6c04-4bb9-bac0-cfec84e594c6" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/7e2b6f48-e58c-4d05-82e2-feb0f5f876f5/lesson/46d7c494-6c04-4bb9-bac0-cfec84e594c6)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/7e2b6f48-e58c-4d05-82e2-feb0f5f876f5/lesson/3dcaca87-ddaf-4de8-b0d9-7a82f102fe4d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/7e2b6f48-e58c-4d05-82e2-feb0f5f876f5/lesson/3dcaca87-ddaf-4de8-b0d9-7a82f102fe4d)
 
 
 # Creating a Chatbot for a Restaurant

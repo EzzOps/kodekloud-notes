@@ -19,16 +19,10 @@ Azure delivers a range of compute options tailored to different needs. For compl
 
 For containerized workloads, if you prefer to avoid orchestration complexity, Azure Container Instances provide an excellent solution. In scenarios where you require a moderated orchestration layer that simplifies management without the full intricacies of Kubernetes, Azure Container Apps offer a balanced approach. For advanced container orchestration needs, Azure Kubernetes Service (AKS) is available.
 
-<Callout icon="lightbulb">
-  While AKS simplifies the deployment and management of containerized applications, it is not included in the [AZ-104: Microsoft Azure Administrator](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator) exam curriculum. This guide will concentrate on Azure App Service, Container Instances, and select aspects of Container Apps.
-</Callout>
+> **lightbulb** While AKS simplifies the deployment and management of containerized applications, it is not included in the [AZ-104: Microsoft Azure Administrator](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator) exam curriculum. This guide will concentrate on Azure App Service, Container Instances, and select aspects of Container Apps.
 
-<Frame>
-  ![The image is a flowchart outlining different PaaS compute options based on specific requirements, such as full control, web apps, container solutions, and orchestration, leading to various Azure services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884788/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Module-Introduction/paas-compute-options-flowchart.jpg)
-</Frame>
+![The image is a flowchart outlining different PaaS compute options based on specific requirements, such as full control, web apps, container solutions, and orchestration, leading to various Azure services.](https://kodekloud.com/kk-media/image/upload/v1752884788/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Module-Introduction/paas-compute-options-flowchart.jpg)
 
 The diverse compute options in Azure are designed to meet varying requirements for control, complexity, and scalability. With this overview in mind, let’s begin by exploring how to configure Azure App Service Plans.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/c1871647-c1ec-478a-beab-b21781cec58f/lesson/1c21fd87-4af0-45bc-9e62-6788cd15aa71" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/c1871647-c1ec-478a-beab-b21781cec58f/lesson/1c21fd87-4af0-45bc-9e62-6788cd15aa71)

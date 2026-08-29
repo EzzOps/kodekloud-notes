@@ -14,9 +14,7 @@ resource "local_file" "classics" {
 }
 ```
 
-<Callout icon="lightbulb">
-  The `tofu state show` command only reads the state—your infrastructure remains unchanged.
-</Callout>
+> **lightbulb** The `tofu state show` command only reads the state—your infrastructure remains unchanged.
 
 ***
 
@@ -58,9 +56,7 @@ Verify removal:
 tofu state list
 ```
 
-<Callout icon="triangle-alert">
-  `tofu state rm` **does not** delete actual resources. It only detaches them from Terraform’s state.
-</Callout>
+> **triangle-alert** `tofu state rm` **does not** delete actual resources. It only detaches them from Terraform’s state.
 
 ***
 
@@ -186,11 +182,9 @@ Thank you for following this tutorial on OpenTofu state management!
 * [Terraform State Management](https://developer.hashicorp.com/terraform/cli/commands/state)
 * [AWS S3 Backend](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/dd54768d-8454-44bd-bab2-99f8f7b5f145/lesson/baf21805-46cd-4e5a-8c54-c0f7077c60c8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/dd54768d-8454-44bd-bab2-99f8f7b5f145/lesson/baf21805-46cd-4e5a-8c54-c0f7077c60c8)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/dd54768d-8454-44bd-bab2-99f8f7b5f145/lesson/84ec9729-999c-49cb-adcd-4ab31ab275e2" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/dd54768d-8454-44bd-bab2-99f8f7b5f145/lesson/84ec9729-999c-49cb-adcd-4ab31ab275e2)
 
 
 # Demo Remote State
@@ -201,9 +195,7 @@ This tutorial teaches managing Terraform state locally and migrating it to a rem
 
 Welcome to the OpenTofu Remote State lab! In this tutorial, you’ll learn how to manage Terraform state locally and then migrate it to a remote S3-compatible backend using MinIO. We’ll walk through creating local state, switching variables, configuring S3 backend, and migrating your state seamlessly.
 
-<Frame>
-  ![The image shows a KodeKloud OpenTofu Lab interface with instructions on working with remote state files and a Visual Studio Code editor setup. The editor displays a welcome message and a terminal window.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882892/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Remote-State/kodekloud-opentofu-lab-vscode-setup.jpg)
-</Frame>
+![The image shows a KodeKloud OpenTofu Lab interface with instructions on working with remote state files and a Visual Studio Code editor setup. The editor displays a welcome message and a terminal window.](https://kodekloud.com/kk-media/image/upload/v1752882892/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Remote-State/kodekloud-opentofu-lab-vscode-setup.jpg)
 
 Your working directory is:
 

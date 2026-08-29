@@ -12,7 +12,7 @@ Considering cloud service models, the focus is on three primary options:
 2. **Platform as a Service (PaaS)**
 3. **Software as a Service (SaaS)**
 
-![The image is a diagram titled "How to Move Forward," showing three types of services: Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS).](../../../../images/kodekloud.com/kk-media/image/upload/v1752868244/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Introduction/how-to-move-forward-iaas-paas-saas.jpg)
+![The image is a diagram titled "How to Move Forward," showing three types of services: Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS).](https://kodekloud.com/kk-media/image/upload/v1752868244/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Introduction/how-to-move-forward-iaas-paas-saas.jpg)
 
 ## Infrastructure as a Service (IaaS)
 

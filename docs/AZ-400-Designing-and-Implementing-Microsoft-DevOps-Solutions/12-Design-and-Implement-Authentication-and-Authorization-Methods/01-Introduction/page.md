@@ -48,7 +48,7 @@ Azure provides two primary identity solutions for non-user access: **service pri
 
 ## 2. Implementing and Managing GitHub Authentication
 
-![The image is a presentation slide titled "Implementing and Managing GitHub Authentication" with a GitHub logo and a gear icon on a blue gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867597/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/github-authentication-management-presentation.jpg)
+![The image is a presentation slide titled "Implementing and Managing GitHub Authentication" with a GitHub logo and a gear icon on a blue gradient background.](https://kodekloud.com/kk-media/image/upload/v1752867597/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/github-authentication-management-presentation.jpg)
 
 In this section, we’ll review GitHub’s authentication mechanisms and how to manage them in your workflows.
 
@@ -58,7 +58,7 @@ In this section, we’ll review GitHub’s authentication mechanisms and how to 
 * **GITHUB\_TOKEN**: Auto-generated token scoped to Actions.
 * **Personal Access Tokens (PATs)**: User-generated, customizable scopes.
 
-![The image is a list of topics titled "Areas to be Covered," including GitHub authentication, GitHub apps, authenticating with a GitHub app, and managing GitHub app permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867599/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/areas-to-be-covered-github-topics.jpg)
+![The image is a list of topics titled "Areas to be Covered," including GitHub authentication, GitHub apps, authenticating with a GitHub app, and managing GitHub app permissions.](https://kodekloud.com/kk-media/image/upload/v1752867599/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/areas-to-be-covered-github-topics.jpg)
 
 ### GitHub Apps Flow
 
@@ -87,7 +87,7 @@ In this section, we’ll review GitHub’s authentication mechanisms and how to 
 
 ## 3. Authentication in Azure DevOps
 
-![The image features a title about implementing and managing Azure DevOps service connections and personal access tokens, alongside the Azure logo on a blue gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867600/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/azure-devops-service-connections-tokens.jpg)
+![The image features a title about implementing and managing Azure DevOps service connections and personal access tokens, alongside the Azure logo on a blue gradient background.](https://kodekloud.com/kk-media/image/upload/v1752867600/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/azure-devops-service-connections-tokens.jpg)
 
 Azure DevOps supports two main non-user authentication patterns:
 
@@ -113,7 +113,7 @@ Azure DevOps supports two main non-user authentication patterns:
 
 ## 4. Configuring Projects, Teams, and Work Item Management in Azure DevOps
 
-![The image is a presentation slide titled "Configuring Projects and Teams in Azure DevOps," featuring the Azure DevOps logo and icons of a gear and people on a blue gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867601/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/configuring-projects-teams-azure-devops.jpg)
+![The image is a presentation slide titled "Configuring Projects and Teams in Azure DevOps," featuring the Azure DevOps logo and icons of a gear and people on a blue gradient background.](https://kodekloud.com/kk-media/image/upload/v1752867601/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/configuring-projects-teams-azure-devops.jpg)
 
 Effective project and team setup streamlines collaboration and traceability.
 

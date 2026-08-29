@@ -97,9 +97,7 @@ consul.yaml
 consulservicemesh.sh
 ```
 
-<Callout icon="lightbulb">
-  In this lesson, we’ll run Helm commands manually rather than via the helper script.
-</Callout>
+> **lightbulb** In this lesson, we’ll run Helm commands manually rather than via the helper script.
 
 ***
 
@@ -174,9 +172,7 @@ http://localhost:18500
 
 You should now see the Consul web interface, confirming your service mesh is up and running.
 
-<Callout icon="triangle-alert">
-  Avoid exposing the Consul UI to the public internet. Use secure tunnels or VPNs for production environments.
-</Callout>
+> **triangle-alert** Avoid exposing the Consul UI to the public internet. Use secure tunnels or VPNs for production environments.
 
 ***
 
@@ -191,6 +187,4 @@ Congratulations! You’ve successfully installed and accessed HashiCorp Consul a
 * [Helm Documentation](https://helm.sh/docs/)
 * [Terraform Registry: Consul Provider](https://registry.terraform.io/providers/hashicorp/consul/latest)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/9702fbe2-4321-41c5-87e8-8ea364da097d/lesson/6f6f2609-58c8-43f5-bd06-eb27a36da8d5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/9702fbe2-4321-41c5-87e8-8ea364da097d/lesson/6f6f2609-58c8-43f5-bd06-eb27a36da8d5)

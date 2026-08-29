@@ -24,9 +24,7 @@ The request lands at the load balancer first. A common misconception is that a l
   <img alt="The image depicts a network diagram with a mobile device accessing a site through a load balancer, distributing the request load across multiple servers. It emphasizes the concept with the phrase &#x22;It's just a server running an app.&#x22;" />
 </Frame>
 
-<Callout icon="lightbulb">
-  A load balancer is a form of reverse proxy: it accepts client requests on behalf of backend servers and forwards those requests. When you hear “reverse proxy,” picture the load balancer routing traffic to healthy backend app instances.
-</Callout>
+> **lightbulb** A load balancer is a form of reverse proxy: it accepts client requests on behalf of backend servers and forwards those requests. When you hear “reverse proxy,” picture the load balancer routing traffic to healthy backend app instances.
 
 Ideally, traffic is balanced so no single server becomes a bottleneck. If you have ten servers and 100 incoming requests, a well-configured load balancer will aim to spread \~10 requests per server.
 
@@ -76,9 +74,7 @@ Most teams don’t implement load balancers from scratch. Common open-source rev
   <img alt="The image compares three tools: NGINX and HAProxy, where you manage the service, and AWS Elastic Load Balancing, which is cloud-managed." />
 </Frame>
 
-<Callout icon="warning">
-  A single load balancer can become a single point of failure: if it dies, all backends become unreachable. Production systems use multiple load balancers for redundancy.
-</Callout>
+> **warning** A single load balancer can become a single point of failure: if it dies, all backends become unreachable. Production systems use multiple load balancers for redundancy.
 
 To eliminate that single point of failure, run multiple load balancers. Coordination options include active-passive failover, anycast IPs, virtual IPs with tools like `keepalived`, or cloud-managed multi-AZ load balancing. How you implement failover depends on your infrastructure and availability requirements.
 
@@ -95,6 +91,4 @@ Further reading and references
 * Anycast: [https://en.wikipedia.org/wiki/Anycast](https://en.wikipedia.org/wiki/Anycast)
 * keepalived: [https://www.keepalived.org/](https://www.keepalived.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/d8e68958-b5a5-471b-9a7e-8d81239fa4e5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/d8e68958-b5a5-471b-9a7e-8d81239fa4e5)

@@ -11,9 +11,7 @@ NAME                                   READY   STATUS    RESTARTS   AGE
 istio-ingress-6cf77d4858-725nz        1/1     Running   0          113s
 ```
 
-<Callout icon="warning">
-  Gateway selector labels matter. The Gateway `spec.selector` must match the labels on the gateway pods (e.g., `istio=ingress`, `istio=ingressgateway`, or `istio=egress`). If the selector is wrong, traffic will not be handled by the intended Envoy pods.
-</Callout>
+> **warning** Gateway selector labels matter. The Gateway `spec.selector` must match the labels on the gateway pods (e.g., `istio=ingress`, `istio=ingressgateway`, or `istio=egress`). If the selector is wrong, traffic will not be handled by the intended Envoy pods.
 
 ## TLS termination and protocol support
 
@@ -161,9 +159,7 @@ spec:
   <img alt="The image shows a diagram of an incoming traffic flow in a network system, detailing the process from an external HTTP/HTTPS request to the final response. It includes steps involving an ingress gateway, envoy proxy verification, consultation of a virtual service, and forwarding to a workload service." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Remember: An ingress Gateway requires a VirtualService to route traffic into the mesh. A VirtualService can operate independently for internal routing without a Gateway.
-</Callout>
+> **lightbulb** Remember: An ingress Gateway requires a VirtualService to route traffic into the mesh. A VirtualService can operate independently for internal routing without a Gateway.
 
 ## Egress Gateway
 
@@ -254,9 +250,7 @@ Refer to the official Gateway reference for details and examples:
   <img alt="The image shows a diagram of &#x22;Gateway Options&#x22; related to server configurations, including sections on TLS mode, port, and server TLS settings, each with descriptive fields. It appears to be a reference guide from KodeKloud." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Study the Gateway options and examples in the Istio docs—this topic appears on the Istio Certified Associate exam. Practice creating Gateways and the related VirtualServices/DestinationRules in a lab environment.
-</Callout>
+> **lightbulb** Study the Gateway options and examples in the Istio docs—this topic appears on the Istio Certified Associate exam. Practice creating Gateways and the related VirtualServices/DestinationRules in a lab environment.
 
 ## Quick reference table
 
@@ -272,9 +266,7 @@ Links and references:
 * VirtualService docs: [https://istio.io/latest/docs/reference/config/networking/virtual-service/](https://istio.io/latest/docs/reference/config/networking/virtual-service/)
 * DestinationRule docs: [https://istio.io/latest/docs/reference/config/networking/destination-rule/](https://istio.io/latest/docs/reference/config/networking/destination-rule/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/0ebb40cd-28de-4216-9dc7-9aa26eb3640d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/0ebb40cd-28de-4216-9dc7-9aa26eb3640d)
 
 
 # Introduction
@@ -375,6 +367,4 @@ So we're not going to go in too deep into ambient mode.
 
 And, you know, there's a lot to cover in this module.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/893af7d0-5bba-4293-a566-6f825e03196e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/893af7d0-5bba-4293-a566-6f825e03196e)

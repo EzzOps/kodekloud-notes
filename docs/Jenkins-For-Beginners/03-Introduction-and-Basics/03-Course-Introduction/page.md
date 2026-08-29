@@ -6,9 +6,7 @@ This course provides a strong foundation in Jenkins to automate software develop
 
 Welcome to the Jenkins for Beginners course. I’m Prithath, your instructor for this lesson. Jenkins is one of the most popular CI/CD tools available, and this course is designed to equip you with a strong foundation in Jenkins to automate your software development workflows efficiently.
 
-<Callout icon="lightbulb">
-  This course features multiple hands-on labs that allow you to apply your knowledge in real time. You can instantly transition from learning to practicing without delay.
-</Callout>
+> **lightbulb** This course features multiple hands-on labs that allow you to apply your knowledge in real time. You can instantly transition from learning to practicing without delay.
 
 Our browser-based labs launch directly in your browser, providing a seamless switch from instructional content to practical experience.
 
@@ -45,6 +43,4 @@ By the end of this course, you will have the expertise to harness Jenkins for au
 
 Join the KodeKloud community and kickstart your journey towards mastering Jenkins. If you're ready, let’s take the first step toward transforming your CI/CD practices.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/d923e9ad-da6b-4f99-85ce-a148e17c27d2/lesson/ef858bab-0dc1-40a1-b075-72afc04b43d6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/d923e9ad-da6b-4f99-85ce-a148e17c27d2/lesson/ef858bab-0dc1-40a1-b075-72afc04b43d6)

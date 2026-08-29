@@ -16,7 +16,7 @@ Manually constructing golden images presents several challenges:
 * Inconsistent configurations due to human error.
 * Elevated security risks stemming from patch management difficulties.
 
-![The image outlines three challenges in building golden images: time-intensive manual building, inconsistent configuration with custom automation, and security risks with open-source frameworks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860260/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Building-With-EC2-Image-Builder-for-Automated-Image-Creation-VMs-and-Containers/golden-images-challenges-outline.jpg)
+![The image outlines three challenges in building golden images: time-intensive manual building, inconsistent configuration with custom automation, and security risks with open-source frameworks.](https://kodekloud.com/kk-media/image/upload/v1752860260/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Building-With-EC2-Image-Builder-for-Automated-Image-Creation-VMs-and-Containers/golden-images-challenges-outline.jpg)
 
 An automated pipeline, such as that provided by EC2 Image Builder, helps mitigate these issues by enabling bulk patching, ensuring consistent build processes, and enhancing security through continuous, repeatable procedures.
 
@@ -24,11 +24,11 @@ An automated pipeline, such as that provided by EC2 Image Builder, helps mitigat
 
 EC2 Image Builder is AWS's native solution for streamlining the creation and distribution of AMIs and container images. Although third-party tools like [HashiCorp's Packer](https://learn.kodekloud.com/user/courses/hashicorp-packer) are available, EC2 Image Builder is recommended for its seamless integration with AWS services and is a key exam topic.
 
-![The image is a slide titled "AWS Services to Enhance Reliability" featuring the EC2 Image Builder logo and text.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860261/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Building-With-EC2-Image-Builder-for-Automated-Image-Creation-VMs-and-Containers/aws-services-enhance-reliability-ec2.jpg)
+![The image is a slide titled "AWS Services to Enhance Reliability" featuring the EC2 Image Builder logo and text.](https://kodekloud.com/kk-media/image/upload/v1752860261/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Building-With-EC2-Image-Builder-for-Automated-Image-Creation-VMs-and-Containers/aws-services-enhance-reliability-ec2.jpg)
 
 With EC2 Image Builder, you can automatically produce secure, compliant, and up-to-date images for both virtual machines and containers. This service establishes automated pipelines that cover the entire lifecycle—from image creation to distribution—ensuring efficiency across your infrastructure.
 
-![The image describes EC2 Image Builder features, highlighting automated pipelines for security, minimizing security vulnerabilities, and validating and deploying high-quality images.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860263/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Building-With-EC2-Image-Builder-for-Automated-Image-Creation-VMs-and-Containers/ec2-image-builder-automated-pipelines.jpg)
+![The image describes EC2 Image Builder features, highlighting automated pipelines for security, minimizing security vulnerabilities, and validating and deploying high-quality images.](https://kodekloud.com/kk-media/image/upload/v1752860263/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Building-With-EC2-Image-Builder-for-Automated-Image-Creation-VMs-and-Containers/ec2-image-builder-automated-pipelines.jpg)
 
 Key benefits of using EC2 Image Builder include:
 
@@ -38,7 +38,7 @@ Key benefits of using EC2 Image Builder include:
 * Simplified image sharing across AWS accounts.
 * Accommodation of various virtual hard drive formats, such as VHDX, VMDK, and OVF.
 
-![The image describes EC2 Image Builder features, highlighting centralized policy enforcement, support for AWS and on-premises image creation, and simplified sharing of images across AWS accounts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860264/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Building-With-EC2-Image-Builder-for-Automated-Image-Creation-VMs-and-Containers/ec2-image-builder-features-diagram.jpg)
+![The image describes EC2 Image Builder features, highlighting centralized policy enforcement, support for AWS and on-premises image creation, and simplified sharing of images across AWS accounts.](https://kodekloud.com/kk-media/image/upload/v1752860264/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Building-With-EC2-Image-Builder-for-Automated-Image-Creation-VMs-and-Containers/ec2-image-builder-features-diagram.jpg)
 
 > **lightbulb** Automating the image creation process with EC2 Image Builder not only saves time but also minimizes human error, ensuring that your images remain standardized and secure.
 
@@ -53,7 +53,7 @@ The EC2 Image Builder process involves a series of methodical steps that ensure 
 
 This workflow is orchestrated via EC2 Image Builder pipelines, each guided by an image recipe that details the parent image, necessary components, and configuration settings for both the build and distribution phases.
 
-![The image illustrates the EC2 Image Builder concepts, showing an image pipeline with components like image recipe, infrastructure configuration, and distribution configuration, leading to an output image. It also includes a flowchart detailing the build and test components, with steps for creating and validating an AMI, launching an EC2 instance, and setting the image status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860265/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Building-With-EC2-Image-Builder-for-Automated-Image-Creation-VMs-and-Containers/ec2-image-builder-pipeline-diagram.jpg)
+![The image illustrates the EC2 Image Builder concepts, showing an image pipeline with components like image recipe, infrastructure configuration, and distribution configuration, leading to an output image. It also includes a flowchart detailing the build and test components, with steps for creating and validating an AMI, launching an EC2 instance, and setting the image status.](https://kodekloud.com/kk-media/image/upload/v1752860265/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Building-With-EC2-Image-Builder-for-Automated-Image-Creation-VMs-and-Containers/ec2-image-builder-pipeline-diagram.jpg)
 
 ### Detailed Pipeline Phases
 

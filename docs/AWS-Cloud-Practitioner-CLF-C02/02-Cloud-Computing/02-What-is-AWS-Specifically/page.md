@@ -12,7 +12,7 @@ Imagine building your own kitchen to make a pizza from scratch—you must gather
 
 When using a conventional data center, you need to request server hardware, coordinate with operations and security teams, and wait days or even months for access. Consider the following diagram that compares these traditional IT setup requirements:
 
-![The image compares Amazon Web Services with traditional IT, highlighting the optional requests and timeframes involved in traditional IT setups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861596/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-AWS-Specifically/frame_100.jpg)
+![The image compares Amazon Web Services with traditional IT, highlighting the optional requests and timeframes involved in traditional IT setups.](https://kodekloud.com/kk-media/image/upload/v1752861596/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-AWS-Specifically/frame_100.jpg)
 
 In contrast, AWS automates many of these tasks. Here's what changes when you choose AWS:
 
@@ -21,11 +21,11 @@ In contrast, AWS automates many of these tasks. Here's what changes when you cho
 
 Take a look at the cloud computing diagram below. The basic components—networking, compute, and storage, along with governance and security—are clearly represented. With AWS, each of these components is replaced by dedicated services, which offload the operational overhead:
 
-![The image contrasts Amazon Web Services with traditional IT, highlighting ease of service configuration over managing physical hardware.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861597/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-AWS-Specifically/frame_140.jpg)
+![The image contrasts Amazon Web Services with traditional IT, highlighting ease of service configuration over managing physical hardware.](https://kodekloud.com/kk-media/image/upload/v1752861597/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-AWS-Specifically/frame_140.jpg)
 
-![The image is a diagram explaining cloud computing, featuring elements like networks, computers, data storage, IT management, security, databases, and data migration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861598/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-AWS-Specifically/frame_170.jpg)
+![The image is a diagram explaining cloud computing, featuring elements like networks, computers, data storage, IT management, security, databases, and data migration.](https://kodekloud.com/kk-media/image/upload/v1752861598/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-AWS-Specifically/frame_170.jpg)
 
-![The image illustrates Amazon Web Services (AWS) components: App and Data Migration, Networking, Compute, Storage, Management, Database, Security, and Application Integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861599/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-AWS-Specifically/frame_190.jpg)
+![The image illustrates Amazon Web Services (AWS) components: App and Data Migration, Networking, Compute, Storage, Management, Database, Security, and Application Integration.](https://kodekloud.com/kk-media/image/upload/v1752861599/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-AWS-Specifically/frame_190.jpg)
 
 > **lightbulb** AWS is designed to relieve you from the burdens of security and operational management, allowing you to concentrate on building your solution.
 
@@ -40,7 +40,7 @@ AWS provides a wide range of services. The core categories include:
 * Security, Identity, and Compliance
 * Management and Governance
 
-![The image displays AWS Core Service Categories: Compute, Networking and Content Delivery, Storage, Database, Security, Identity and Compliance, and Management and Governance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861599/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-AWS-Specifically/frame_220.jpg)
+![The image displays AWS Core Service Categories: Compute, Networking and Content Delivery, Storage, Database, Security, Identity and Compliance, and Management and Governance.](https://kodekloud.com/kk-media/image/upload/v1752861599/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-AWS-Specifically/frame_220.jpg)
 
 Below is a summary table of these resource types and their use cases:
 
@@ -88,11 +88,11 @@ Let's switch gears and take a closer look at the AWS Management Console. When yo
 * Machine Learning
 * Networking and Content Delivery
 
-![The image shows a list of AWS services categorized under sections like Containers, Storage, Database, Media Services, and more, from the AWS Management Console.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861601/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-AWS-Specifically/frame_420.jpg)
+![The image shows a list of AWS services categorized under sections like Containers, Storage, Database, Media Services, and more, from the AWS Management Console.](https://kodekloud.com/kk-media/image/upload/v1752861601/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-AWS-Specifically/frame_420.jpg)
 
 For instance, clicking on S3 navigates you to the Amazon S3 dashboard, which displays storage buckets along with metrics such as total storage and object counts.
 
-![The image shows an Amazon S3 dashboard with account snapshot details, including total storage, object count, and a list of buckets with their regions and creation dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861602/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-AWS-Specifically/frame_480.jpg)
+![The image shows an Amazon S3 dashboard with account snapshot details, including total storage, object count, and a list of buckets with their regions and creation dates.](https://kodekloud.com/kk-media/image/upload/v1752861602/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-AWS-Specifically/frame_480.jpg)
 
 While the console offers many options, you only need to become familiar with a few key services such as EC2 and S3 at a basic level. Advanced functionalities will be detailed in subsequent lessons.
 
@@ -104,7 +104,7 @@ Creating an AWS account is simple and free. A phone number and credit card are r
 
 > **triangle-alert** While many AWS services are free or low-cost, some services—such as virtual machines—incur charges after they are activated. Always monitor usage to avoid unexpected bills.
 
-![The image summarizes AWS, highlighting its launch in 2006, growth to 300+ services, free sign-up, and its large community and market presence.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861603/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-AWS-Specifically/frame_600.jpg)
+![The image summarizes AWS, highlighting its launch in 2006, growth to 300+ services, free sign-up, and its large community and market presence.](https://kodekloud.com/kk-media/image/upload/v1752861603/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-AWS-Specifically/frame_600.jpg)
 
 ## Final Thoughts
 

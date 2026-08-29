@@ -135,9 +135,7 @@ Troubleshooting checklist
 | Service has no endpoints | `kubectl describe svc <service>` → check `Endpoints`; ensure pods match Service selectors          |
 | Pod errors               | `kubectl logs <pod>` and `kubectl describe pod <pod>`; check readiness/liveness probes             |
 
-<Callout icon="warning">
-  Ingress resources require a running Ingress controller. Creating an Ingress without a controller will not provide routing traffic. In cloud environments you may get a LoadBalancer service automatically for the controller; in labs you often use NodePort.
-</Callout>
+> **warning** Ingress resources require a running Ingress controller. Creating an Ingress without a controller will not provide routing traffic. In cloud environments you may get a LoadBalancer service automatically for the controller; in labs you often use NodePort.
 
 ## Links and references
 
@@ -149,9 +147,7 @@ Troubleshooting checklist
 
 This walkthrough shows how Services and Ingress work together to provide stable discovery and flexible external routing, enabling reliable communication even as pods come and go.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/1ed2dc1a-4ce9-4793-b1f3-a2c15035cfd8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/1ed2dc1a-4ce9-4793-b1f3-a2c15035cfd8)
 
 
 # Multi Tenancy Made Practical Models Tradeoffs Guardrails Part 1
@@ -183,9 +179,7 @@ kubectl get secrets --all-namespaces
 
 This can expose database credentials, API keys, and TLS private keys for every team. Without properly configured RBAC, there is no secret isolation between namespaces.
 
-<Callout icon="warning">
-  Secrets and credential leakage is one of the highest-risk outcomes in shared clusters. Ensure RBAC and least-privilege access are configured before allowing broad `kubectl` access.
-</Callout>
+> **warning** Secrets and credential leakage is one of the highest-risk outcomes in shared clusters. Ensure RBAC and least-privilege access are configured before allowing broad `kubectl` access.
 
 Failure mode 2 — resource exhaustion:
 If no ResourceQuota is configured, a single team can scale a workload to hundreds of replicas and consume cluster CPU and memory. Other teams’ pods may remain in Pending due to lack of capacity.

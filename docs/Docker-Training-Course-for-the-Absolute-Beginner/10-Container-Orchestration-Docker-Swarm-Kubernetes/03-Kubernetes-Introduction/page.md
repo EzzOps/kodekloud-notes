@@ -56,7 +56,7 @@ When installing Kubernetes, the following core components are set up:
 
 The diagram below illustrates these components and their interactions:
 
-![The image shows a presentation slide about Kubernetes components, featuring hexagons labeled with API Server, etcd, kubelet, Scheduler, Controller, and Container Runtime, alongside a speaker.](../../../../images/kodekloud.com/kk-media/image/upload/v1752874125/notes-assets/images/Docker-Training-Course-for-the-Absolute-Beginner-Kubernetes-Introduction/frame_220.jpg)
+![The image shows a presentation slide about Kubernetes components, featuring hexagons labeled with API Server, etcd, kubelet, Scheduler, Controller, and Container Runtime, alongside a speaker.](https://kodekloud.com/kk-media/image/upload/v1752874125/notes-assets/images/Docker-Training-Course-for-the-Absolute-Beginner-Kubernetes-Introduction/frame_220.jpg)
 
 ## The kubectl Command-Line Tool
 

@@ -84,9 +84,7 @@ The Deployment "redis-deployment" is invalid: spec.selector: Invalid value:
 v1.LabelSelector{MatchLabels:map[string]string{"app":"redis", "tier":"backend"}, MatchExpressions:[]v1.LabelSelectorRequirement(nil)}: field is immutable
 ```
 
-<Callout icon="lightbulb">
-  This error occurs because the `matchLabels` field in the selector is immutable to prevent unintended disruptions in traffic routing and the overall stability of your application. Kubernetes follows the immutable infrastructure paradigm, which ensures that changes to critical fields require a new resource creation.
-</Callout>
+> **lightbulb** This error occurs because the `matchLabels` field in the selector is immutable to prevent unintended disruptions in traffic routing and the overall stability of your application. Kubernetes follows the immutable infrastructure paradigm, which ensures that changes to critical fields require a new resource creation.
 
 ## Resolving the Error
 
@@ -110,9 +108,7 @@ To update immutable fields, delete the existing deployment and recreate it with 
    deployment.apps/redis-deployment created
    ```
 
-<Callout icon="triangle-alert">
-  Immutable fields, such as `spec.selector.matchLabels`, cannot be modified after resource creation. Always plan your label configurations ahead of time to avoid unnecessary downtime.
-</Callout>
+> **triangle-alert** Immutable fields, such as `spec.selector.matchLabels`, cannot be modified after resource creation. Always plan your label configurations ahead of time to avoid unnecessary downtime.
 
 ## Key Takeaways
 
@@ -130,6 +126,4 @@ By understanding the constraints of immutable fields in Kubernetes, you can prev
 
 For further details and related best practices, refer to the official [Kubernetes Documentation](https://kubernetes.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/0ca9c0f1-ce30-41b4-95fd-f01b63525905" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/0ca9c0f1-ce30-41b4-95fd-f01b63525905)

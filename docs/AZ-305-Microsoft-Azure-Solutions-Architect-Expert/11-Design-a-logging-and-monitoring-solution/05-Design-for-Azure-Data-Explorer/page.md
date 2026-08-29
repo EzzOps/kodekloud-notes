@@ -34,7 +34,7 @@ Azure Data Explorer integrates seamlessly with other Azure services such as Azur
 
 Below is an informational graphic that illustrates the purpose, usage scenarios, and integration capabilities of Azure Data Explorer, as well as a flowchart outlining the process of creating a cluster, ingesting data, and querying it using KQL:
 
-![The image is an informational graphic about Azure Data Explorer, detailing its purpose, usage scenarios, and integration capabilities, along with a flowchart for creating a cluster, ingesting data, and querying it using KQL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866981/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Explorer/azure-data-explorer-graphic.jpg)
+![The image is an informational graphic about Azure Data Explorer, detailing its purpose, usage scenarios, and integration capabilities, along with a flowchart for creating a cluster, ingesting data, and querying it using KQL.](https://kodekloud.com/kk-media/image/upload/v1752866981/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Explorer/azure-data-explorer-graphic.jpg)
 
 ## Real-Time Analytics and Machine Learning
 

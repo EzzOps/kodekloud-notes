@@ -29,13 +29,9 @@ kubectl patch webapp site --type=merge \
   -p '{"metadata":{"finalizers":[]}}'
 ```
 
-<Callout icon="warning">
-  Force-removing finalizers bypasses cleanup. Use it only as a recovery or emergency action, and after documenting the consequences.
-</Callout>
+> **warning** Force-removing finalizers bypasses cleanup. Use it only as a recovery or emergency action, and after documenting the consequences.
 
-<Callout icon="lightbulb">
-  Always add your controller's finalizer before creating external resources, and make cleanup idempotent so retries and crashes are safe.
-</Callout>
+> **lightbulb** Always add your controller's finalizer before creating external resources, and make cleanup idempotent so retries and crashes are safe.
 
 Demo overview
 
@@ -47,9 +43,7 @@ Links and references
 * [Owner References and Garbage Collection](https://kubernetes.io/docs/concepts/workloads/controllers/garbage-collection/)
 * [Controller pattern: Finalizers and Cleanup](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#finalizers)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/6a375c4e-4bda-4d13-a58f-4d85961676cc/lesson/ba932ebc-db78-4929-8307-b8482caaecbe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/6a375c4e-4bda-4d13-a58f-4d85961676cc/lesson/ba932ebc-db78-4929-8307-b8482caaecbe)
 
 
 # Lab Solution Implement External Cleanup On Delete
@@ -92,9 +86,7 @@ $ kubectl -n webapp-external get cm site-external -o jsonpath='{.metadata.ownerR
 
 The second command returns an empty line, indicating there are no `ownerReferences` set on the external ConfigMap. Because the external resource is not owned by the WebApp object, it requires explicit external cleanup by the controller (which is coordinated via the finalizer).
 
-<Callout icon="lightbulb">
-  Finalizers are used when deleting a Kubernetes object requires external cleanup steps (for example, deleting resources in another namespace or cleaning up entries in an external system). The finalizer blocks the API server from completing deletion until the controller performs the cleanup and removes the finalizer.
-</Callout>
+> **lightbulb** Finalizers are used when deleting a Kubernetes object requires external cleanup steps (for example, deleting resources in another namespace or cleaning up entries in an external system). The finalizer blocks the API server from completing deletion until the controller performs the cleanup and removes the finalizer.
 
 3. Delete the WebApp resource and observe the result.
 
@@ -132,6 +124,4 @@ Links and references
 
 This exercise illustrates the pattern where a finalizer coordinates a controller-driven cleanup of external resources before the API server completes deletion of a Kubernetes object.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/6a375c4e-4bda-4d13-a58f-4d85961676cc/lesson/ea1e0265-598d-4dfe-8587-79462ce1f492" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/6a375c4e-4bda-4d13-a58f-4d85961676cc/lesson/ea1e0265-598d-4dfe-8587-79462ce1f492)

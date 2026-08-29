@@ -64,9 +64,7 @@ def find_index_post(id: int):
     return -1
 ```
 
-<Callout icon="lightbulb">
-  Ensure that the Postman request body is set as raw JSON. The initial test might just update a single field, but remember to include all required fields for a successful update.
-</Callout>
+> **lightbulb** Ensure that the Postman request body is set as raw JSON. The initial test might just update a single field, but remember to include all required fields for a successful update.
 
 ## Testing the Update Operation in Postman
 
@@ -178,13 +176,9 @@ To confirm, perform a GET request on `/posts`. The updated list of posts should 
 }
 ```
 
-<Callout icon="lightbulb">
-  Review the JSON response in Postman to ensure every post object includes all the expected fields. This helps verify that the data is persisted correctly.
-</Callout>
+> **lightbulb** Review the JSON response in Postman to ensure every post object includes all the expected fields. This helps verify that the data is persisted correctly.
 
-<Frame>
-  ![The image shows the Postman application interface with a GET request to retrieve posts from a local server. The response is displayed in JSON format, showing data for multiple posts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883450/notes-assets/images/Python-API-Development-with-FastAPI-Updating-Posts/postman-get-request-json-response.jpg)
-</Frame>
+![The image shows the Postman application interface with a GET request to retrieve posts from a local server. The response is displayed in JSON format, showing data for multiple posts.](https://kodekloud.com/kk-media/image/upload/v1752883450/notes-assets/images/Python-API-Development-with-FastAPI-Updating-Posts/postman-get-request-json-response.jpg)
 
 ## Next Steps
 
@@ -192,6 +186,4 @@ After confirming the update operation, all CRUD operations have been successfull
 
 Transcribed by [https://otter.ai](https://otter.ai)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/38959a73-5725-489c-bd35-756e585b06c5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/38959a73-5725-489c-bd35-756e585b06c5)

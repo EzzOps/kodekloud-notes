@@ -38,7 +38,7 @@ Feel free to follow along in your own AWS account!
 3. Provide a name (e.g., `MyDemoRepo`) and an optional description.
 4. Click **Create**.
 
-![The image shows the AWS CodeCommit interface with an empty repositories list and an option to create a new repository. The navigation menu on the left includes options for various AWS Developer Tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862606/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-empty-repositories-interface.jpg)
+![The image shows the AWS CodeCommit interface with an empty repositories list and an option to create a new repository. The navigation menu on the left includes options for various AWS Developer Tools.](https://kodekloud.com/kk-media/image/upload/v1752862606/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-empty-repositories-interface.jpg)
 
 ***
 
@@ -58,7 +58,7 @@ Start by adding the deployment configuration and application assets.
 2. Select your local `appspec.yml`.
 3. Enter author name, email, commit message (optional), and click **Commit changes**.
 
-![The image shows an AWS CodeCommit interface where a user is preparing to commit changes to a file named "appspec.yml" in a repository called "MyDemoRepo." The interface includes fields for author name, email address, and an optional commit message.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862608/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-committing-appspec-yml.jpg)
+![The image shows an AWS CodeCommit interface where a user is preparing to commit changes to a file named "appspec.yml" in a repository called "MyDemoRepo." The interface includes fields for author name, email address, and an optional commit message.](https://kodekloud.com/kk-media/image/upload/v1752862608/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-committing-appspec-yml.jpg)
 
 ```yaml theme={null}
 version: 0.0
@@ -78,7 +78,7 @@ hooks:
 2. Choose `before-install.bat` from your machine.
 3. Fill in author details and click **Commit changes**.
 
-![The image shows an AWS CodeCommit interface where a file named "before-install.bat" is being uploaded to a repository called "MyDemoRepo." The interface includes fields for author name, email address, and an optional commit message.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862609/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-upload-before-install-bat.jpg)
+![The image shows an AWS CodeCommit interface where a file named "before-install.bat" is being uploaded to a repository called "MyDemoRepo." The interface includes fields for author name, email address, and an optional commit message.](https://kodekloud.com/kk-media/image/upload/v1752862609/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-upload-before-install-bat.jpg)
 
 ```bat theme={null}
 REM Install Internet Information Server (IIS).
@@ -92,7 +92,7 @@ c:\Windows\Sysnative\WindowsPowerShell\v1.0\powershell.exe -Command Install-Wind
 2. Select `index.html`.
 3. Add author info and commit.
 
-![The image shows an AWS CodeCommit interface where a file named "index.html" is being uploaded to a repository called "MyDemoRepo." It includes fields for author name, email address, and an optional commit message.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862610/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-upload-index-html-repo.jpg)
+![The image shows an AWS CodeCommit interface where a file named "index.html" is being uploaded to a repository called "MyDemoRepo." It includes fields for author name, email address, and an optional commit message.](https://kodekloud.com/kk-media/image/upload/v1752862610/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-upload-index-html-repo.jpg)
 
 ```html theme={null}
 <!DOCTYPE html>
@@ -126,9 +126,9 @@ c:\Windows\Sysnative\WindowsPowerShell\v1.0\powershell.exe -Command Install-Wind
 2. Click **Create branch**, enter `branch2` as the new branch name, and choose `main` as the source.
 3. Click **Create**.
 
-![The image shows the AWS CodeCommit interface for a repository named "MyDemoRepo," displaying the branches section with a default branch named "main" and a recent commit message "Added index.html."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862611/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-mydemorepo-branches-main.jpg)
+![The image shows the AWS CodeCommit interface for a repository named "MyDemoRepo," displaying the branches section with a default branch named "main" and a recent commit message "Added index.html."](https://kodekloud.com/kk-media/image/upload/v1752862611/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-mydemorepo-branches-main.jpg)
 
-![The image shows an AWS CodeCommit interface with a repository named "MyDemoRepo" displaying two branches, "main" and "branch2," both with recent commits adding an "index.html" file. A success message indicates that "branch2" has been created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862612/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-mydemorepo-branches.jpg)
+![The image shows an AWS CodeCommit interface with a repository named "MyDemoRepo" displaying two branches, "main" and "branch2," both with recent commits adding an "index.html" file. A success message indicates that "branch2" has been created.](https://kodekloud.com/kk-media/image/upload/v1752862612/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-mydemorepo-branches.jpg)
 
 > **lightbulb** Use descriptive branch names that reflect the feature or fix you’re working on.
 
@@ -138,7 +138,7 @@ c:\Windows\Sysnative\WindowsPowerShell\v1.0\powershell.exe -Command Install-Wind
 2. Open `appspec.yml` and click **Edit**.
 3. Add a comment line at the end, then commit your changes.
 
-![The image shows an AWS CodeCommit interface where changes are being committed to a branch. It includes fields for author name, email address, and an optional commit message.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862613/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-commit-interface-image.jpg)
+![The image shows an AWS CodeCommit interface where changes are being committed to a branch. It includes fields for author name, email address, and an optional commit message.](https://kodekloud.com/kk-media/image/upload/v1752862613/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodeCommit-Demo/aws-codecommit-commit-interface-image.jpg)
 
 ```yaml theme={null}
 version: 0.0

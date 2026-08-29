@@ -65,9 +65,7 @@ Why temporality matters
   <img alt="The image is a comparison chart explaining the differences and considerations between cumulative and delta metrics in data interpretation, storage efficiency, backend behavior, alerting accuracy, and avoiding data skew." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Choose the temporality that matches your backend and use case. If you send cumulative metrics, ensure exporters and the backend handle resets; if you send delta, ensure your instrument produces interval deltas reliably. Misaligned temporality can produce incorrect aggregates and alerts.
-</Callout>
+> **lightbulb** Choose the temporality that matches your backend and use case. If you send cumulative metrics, ensure exporters and the backend handle resets; if you send delta, ensure your instrument produces interval deltas reliably. Misaligned temporality can produce incorrect aggregates and alerts.
 
 Recommended practices
 
@@ -88,6 +86,4 @@ Links and references
 * [OpenTelemetry Collector](https://opentelemetry.io/docs/collector/)
 * [Observability Best Practices: Metrics](https://www.usenix.org/conference/osdi20/presentation/mann)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/5fb1eabd-3a92-4c9b-ae75-5f2c609c2495" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/5fb1eabd-3a92-4c9b-ae75-5f2c609c2495)

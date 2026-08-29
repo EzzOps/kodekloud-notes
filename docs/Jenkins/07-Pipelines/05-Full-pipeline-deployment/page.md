@@ -47,9 +47,7 @@ pipeline {
 }
 ```
 
-<Callout icon="lightbulb">
-  Ensure that the "Run" stage uses the Jenkins workspace directory to locate and execute the binary built in the earlier stage. Without running the build commands, the `go-webapp-sample` binary would not be available, leading to execution errors.
-</Callout>
+> **lightbulb** Ensure that the "Run" stage uses the Jenkins workspace directory to locate and execute the binary built in the earlier stage. Without running the build commands, the `go-webapp-sample` binary would not be available, leading to execution errors.
 
 ## Pipeline Configuration in YAML
 
@@ -109,9 +107,7 @@ When you run the pipeline, you will see output in the Jenkins console similar to
 
 The test stage confirms that the tests run successfully, even if some directories do not contain test files. After testing, the build stage compiles the binary, and the run stage then navigates to the workspace directory to start the Go application.
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying a pipeline's stage view, including average stage times for tool installation, testing, building, and running processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880088/notes-assets/images/Jenkins-Full-pipeline-deployment/frame_90.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying a pipeline's stage view, including average stage times for tool installation, testing, building, and running processes.](https://kodekloud.com/kk-media/image/upload/v1752880088/notes-assets/images/Jenkins-Full-pipeline-deployment/frame_90.jpg)
 
 After a successful build, open your browser and navigate to the Jenkins host IP address on the default port (8000) to see your application running.
 
@@ -126,9 +122,7 @@ Sometimes, you might see a message similar to this in the console output:
 Finished: SUCCESS
 ```
 
-<Callout icon="triangle-alert">
-  Although the error message appears due to the shell's execution reporting, this does not prevent your application from running successfully. This behavior has been observed consistently in previous builds.
-</Callout>
+> **triangle-alert** Although the error message appears due to the shell's execution reporting, this does not prevent your application from running successfully. This behavior has been observed consistently in previous builds.
 
 ## Next Steps
 
@@ -141,8 +135,6 @@ For more detailed guidance on Jenkins and Go application deployment, refer to th
 
 Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/c690654f-bd91-4c3d-b419-b1ffed2b4060" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/c690654f-bd91-4c3d-b419-b1ffed2b4060)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/65b8dbb5-a926-4538-8fd4-3c1cda5ed5db" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/65b8dbb5-a926-4538-8fd4-3c1cda5ed5db)

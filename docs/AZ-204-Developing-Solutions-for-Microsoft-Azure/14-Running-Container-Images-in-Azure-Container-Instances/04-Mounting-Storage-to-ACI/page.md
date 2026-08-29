@@ -12,7 +12,7 @@ In this lesson, you will learn how to mount external storage to Azure Container 
 
 Azure Container Instances are stateless by default. This means that any data generated within a container will be lost once the container stops or crashes. To overcome this challenge, mounting an external volume—such as an Azure File Share—ensures that your application data persists beyond the container's lifecycle.
 
-![The image provides an overview of mounting an Azure File Share in Azure Container Instances, highlighting that containers are stateless by default and require external storage to persist data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866733/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Mounting-Storage-to-ACI/azure-file-share-container-instances.jpg)
+![The image provides an overview of mounting an Azure File Share in Azure Container Instances, highlighting that containers are stateless by default and require external storage to persist data.](https://kodekloud.com/kk-media/image/upload/v1752866733/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Mounting-Storage-to-ACI/azure-file-share-container-instances.jpg)
 
 ***
 
@@ -26,7 +26,7 @@ By mounting a volume from an Azure File Share into your container, you can ensur
 * **Root Permissions Required:** The container must run as root in order to set the correct file permissions needed for the File Share.
 * **CIFS Protocol:** The Common Internet File System (CIFS) protocol is used for sharing files over the network.
 
-![The image outlines limitations of mounting an Azure File Share in Azure Container Instances, highlighting that it can only be mounted to Linux containers, requires root access, and is limited to CIFS support.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866735/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Mounting-Storage-to-ACI/azure-file-share-limitations-linux-containers.jpg)
+![The image outlines limitations of mounting an Azure File Share in Azure Container Instances, highlighting that it can only be mounted to Linux containers, requires root access, and is limited to CIFS support.](https://kodekloud.com/kk-media/image/upload/v1752866735/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Mounting-Storage-to-ACI/azure-file-share-limitations-linux-containers.jpg)
 
 ***
 
@@ -34,7 +34,7 @@ By mounting a volume from an Azure File Share into your container, you can ensur
 
 When you need to deploy multiple volumes, you can utilize Azure Resource Manager (ARM) templates or YAML files. These deployment templates enable you to define shared configurations and list multiple volumes for mounting in your container environment, making it easier to manage complex storage scenarios.
 
-![The image provides instructions on mounting multiple volumes in Azure Container Instances using an Azure Resource Manager template or a YAML file. It includes two sections with icons and text explaining the process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866737/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Mounting-Storage-to-ACI/azure-container-instances-mount-volumes.jpg)
+![The image provides instructions on mounting multiple volumes in Azure Container Instances using an Azure Resource Manager template or a YAML file. It includes two sections with icons and text explaining the process.](https://kodekloud.com/kk-media/image/upload/v1752866737/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Mounting-Storage-to-ACI/azure-container-instances-mount-volumes.jpg)
 
 > **lightbulb** Using deployment templates not only streamlines the process but also ensures consistent configuration across your deployments.
 
@@ -50,12 +50,12 @@ Follow these steps to configure your storage in the Azure Portal:
 2. **Create a File Share:**\
    In your storage account, select "File Shares" and then create a new file share (for example, "ACI mount").
 
-![The image shows the Microsoft Azure portal with a focus on container instances, displaying a search bar and a dropdown menu with recent services and resources. Two container instances, "aci-01" and "aci-02," are listed with their statuses and details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866738/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Mounting-Storage-to-ACI/azure-portal-container-instances.jpg)
+![The image shows the Microsoft Azure portal with a focus on container instances, displaying a search bar and a dropdown menu with recent services and resources. Two container instances, "aci-01" and "aci-02," are listed with their statuses and details.](https://kodekloud.com/kk-media/image/upload/v1752866738/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Mounting-Storage-to-ACI/azure-portal-container-instances.jpg)
 
 3. **Deploy Using YAML:**\
    Open your Cloud Shell to deploy your container instance using a YAML file.
 
-![The image shows a Microsoft Azure portal interface for creating a new file share, displaying details such as file share name, access tier, protocol, and backup settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866739/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Mounting-Storage-to-ACI/azure-portal-file-share-creation.jpg)
+![The image shows a Microsoft Azure portal interface for creating a new file share, displaying details such as file share name, access tier, protocol, and backup settings.](https://kodekloud.com/kk-media/image/upload/v1752866739/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Mounting-Storage-to-ACI/azure-portal-file-share-creation.jpg)
 
 ***
 
@@ -151,7 +151,7 @@ After deploying the container instance, follow these steps to verify that the Az
 4. **Cross-Check via the Storage Account:**\
    Return to your storage account, navigate to the "ACI mount" file share, and ensure that the file `sample.txt` exists with the correct content.
 
-![The image shows a Microsoft Azure portal interface displaying details of a container instance named "file-share-demo," including its status, resource group, and performance metrics like CPU and memory usage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866740/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Mounting-Storage-to-ACI/azure-portal-container-instance-file-share-demo.jpg)
+![The image shows a Microsoft Azure portal interface displaying details of a container instance named "file-share-demo," including its status, resource group, and performance metrics like CPU and memory usage.](https://kodekloud.com/kk-media/image/upload/v1752866740/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Mounting-Storage-to-ACI/azure-portal-container-instance-file-share-demo.jpg)
 
 ***
 

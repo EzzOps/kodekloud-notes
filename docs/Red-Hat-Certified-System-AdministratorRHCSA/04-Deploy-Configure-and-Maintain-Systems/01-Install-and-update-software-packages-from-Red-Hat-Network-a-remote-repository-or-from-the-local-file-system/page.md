@@ -8,9 +8,7 @@ In this guide, we explain how to install and update software packages on a RHEL 
 
 RHEL systems use the Red Hat Subscription Manager (subscription-manager) to manage subscriptions and access updates. When you first set up your RHEL system, you must register it with a valid Red Hat subscription to receive the latest packages and security updates. Otherwise, you might encounter an error message from YUM indicating that the system isn’t registered to Red Hat Subscription Management.
 
-<Callout icon="lightbulb">
-  If you are using DNF instead of YUM, almost all commands described here will work similarly by replacing `yum` with `dnf`.
-</Callout>
+> **lightbulb** If you are using DNF instead of YUM, almost all commands described here will work similarly by replacing `yum` with `dnf`.
 
 ## Registering with Red Hat Subscription Management
 
@@ -334,9 +332,7 @@ To update all installed packages to their latest versions, run:
 sudo yum update
 ```
 
-<Callout icon="lightbulb">
-  After upgrading critical components such as the kernel, it is advisable to reboot your system to ensure all changes take effect properly.
-</Callout>
+> **lightbulb** After upgrading critical components such as the kernel, it is advisable to reboot your system to ensure all changes take effect properly.
 
 ***
 
@@ -344,6 +340,4 @@ By following the steps in this guide, you can effectively manage software packag
 
 Happy managing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/736506db-a70d-463d-a061-74c768d309b0/lesson/031be5f4-5cee-42bf-9310-f2329aace49a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/736506db-a70d-463d-a061-74c768d309b0/lesson/031be5f4-5cee-42bf-9310-f2329aace49a)

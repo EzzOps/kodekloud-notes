@@ -13,9 +13,7 @@ Custom error types offer several key benefits:
 • Detailed Error Messages – Equip your errors with extra context to simplify diagnosing issues when they occur.\
 • Composability – Combine multiple error kinds and handle them in a unified manner.
 
-<Frame>
-  ![The image explains the benefits of creating custom error types, highlighting specificity, type safety, detailed error messages, and composability. Each benefit is accompanied by a brief description and an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883838/notes-assets/images/Rust-Programming-Creating-Custom-Error-Types/custom-error-types-benefits-diagram.jpg)
-</Frame>
+![The image explains the benefits of creating custom error types, highlighting specificity, type safety, detailed error messages, and composability. Each benefit is accompanied by a brief description and an icon.](https://kodekloud.com/kk-media/image/upload/v1752883838/notes-assets/images/Rust-Programming-Creating-Custom-Error-Types/custom-error-types-benefits-diagram.jpg)
 
 ***
 
@@ -37,9 +35,7 @@ fn main() {
 }
 ```
 
-<Callout icon="lightbulb">
-  When you compile this code, you might see warnings about unused variants. This warning is benign during development, but remember to address any warnings before deploying your code.
-</Callout>
+> **lightbulb** When you compile this code, you might see warnings about unused variants. This warning is benign during development, but remember to address any warnings before deploying your code.
 
 On compilation, you might see a warning similar to the following:
 
@@ -259,22 +255,14 @@ When designing custom error types in Rust, keep these best practices in mind:
 | Add Context                            | Include details about the operation or specific values that led to an error to aid in troubleshooting. |
 | Keep Errors Lightweight                | Avoid unnecessary data to streamline error handling and propagation.                                   |
 
-<Callout icon="lightbulb">
-  By following these practices, you can design custom error types that are both expressive and user-friendly, making your code more robust and maintainable.
-</Callout>
+> **lightbulb** By following these practices, you can design custom error types that are both expressive and user-friendly, making your code more robust and maintainable.
 
-<Frame>
-  ![The image outlines best practices for custom error types in Rust, including being specific, implementing display and error traits, and using "From" for error composition.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883840/notes-assets/images/Rust-Programming-Creating-Custom-Error-Types/rust-custom-error-types-best-practices.jpg)
-</Frame>
+![The image outlines best practices for custom error types in Rust, including being specific, implementing display and error traits, and using "From" for error composition.](https://kodekloud.com/kk-media/image/upload/v1752883840/notes-assets/images/Rust-Programming-Creating-Custom-Error-Types/rust-custom-error-types-best-practices.jpg)
 
-<Frame>
-  ![The image provides best practices for custom error types, emphasizing adding context to errors and keeping errors lightweight. It includes brief descriptions and icons for each practice.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883841/notes-assets/images/Rust-Programming-Creating-Custom-Error-Types/custom-error-types-best-practices.jpg)
-</Frame>
+![The image provides best practices for custom error types, emphasizing adding context to errors and keeping errors lightweight. It includes brief descriptions and icons for each practice.](https://kodekloud.com/kk-media/image/upload/v1752883841/notes-assets/images/Rust-Programming-Creating-Custom-Error-Types/custom-error-types-best-practices.jpg)
 
 ***
 
 By leveraging these techniques and adhering to best practices, you can create custom error types that integrate seamlessly with Rust’s error handling ecosystem. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/29fbe393-bae3-4a16-8fc5-a854a2400daa/lesson/86448e72-e8c9-4eba-8959-d79656e23357" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/29fbe393-bae3-4a16-8fc5-a854a2400daa/lesson/86448e72-e8c9-4eba-8959-d79656e23357)

@@ -21,9 +21,7 @@ Roadmap for this section:
   <img alt="The image outlines learning objectives related to Kyverno, including its importance, architecture, installation, and rule types. The objectives are numbered from one to four with brief descriptions." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Recommended prerequisites: a local or remote Kubernetes cluster (kind, minikube, or managed), `kubectl` configured to the target context, and basic familiarity with Kubernetes resources such as Deployments, Services, and ConfigMaps. These will let you follow the hands-on examples in this section.
-</Callout>
+> **lightbulb** Recommended prerequisites: a local or remote Kubernetes cluster (kind, minikube, or managed), `kubectl` configured to the target context, and basic familiarity with Kubernetes resources such as Deployments, Services, and ConfigMaps. These will let you follow the hands-on examples in this section.
 
 Throughout this section we’ll move from conceptual overviews to hands-on examples so you can immediately apply what you learn. Start here to build a strong foundation before moving on to advanced Kyverno policies and workflows.
 
@@ -33,6 +31,4 @@ Links and references
 * [Kubernetes Admission Controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
 * [KCA — Kyverno Certified Associate (reference)](https://kyverno.io/certification/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/8cf118e1-7ca8-49b6-be5a-af80c331f394/lesson/88f6e4a0-4ecd-4d00-a0c1-dc34d46a934e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/8cf118e1-7ca8-49b6-be5a-af80c331f394/lesson/88f6e4a0-4ecd-4d00-a0c1-dc34d46a934e)

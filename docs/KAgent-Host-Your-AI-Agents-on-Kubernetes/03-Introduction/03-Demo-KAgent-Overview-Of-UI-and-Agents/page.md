@@ -83,9 +83,7 @@ Key components used in labs:
 | MCP Server              | Provides contextual data to agents                  | Can be AWS-hosted or self-hosted; serve model context to LLMs              |
 | KMCP                    | Control plane for MCP servers                       | Coordinates MCP discovery and access                                       |
 
-<Callout icon="warning">
-  Security note: never commit tokens or secrets (for example `SLACK_BOT_TOKEN`, `SLACK_APP_TOKEN`) into source control. Use Kubernetes Secrets, environment variables at runtime, or a secrets manager.
-</Callout>
+> **warning** Security note: never commit tokens or secrets (for example `SLACK_BOT_TOKEN`, `SLACK_APP_TOKEN`) into source control. Use Kubernetes Secrets, environment variables at runtime, or a secrets manager.
 
 Example environment variables used in labs:
 
@@ -106,9 +104,7 @@ Links and references:
 
 By the end of this course you will be able to design, deploy, and operate AI agents on Kubernetes with KAgent — managing communication, observability, and integrations in production-grade environments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/a2bef22f-2221-4587-9f26-3c0bce28059e/lesson/e816a0eb-bb1b-4b1c-8d19-a786185f6b3c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/a2bef22f-2221-4587-9f26-3c0bce28059e/lesson/e816a0eb-bb1b-4b1c-8d19-a786185f6b3c)
 
 
 # Demo KAgent Overview Of UI and Agents
@@ -198,9 +194,7 @@ MCP Servers are service integrations that provide additional functionality and t
 * Explore the Tools Library and enable or add tools your agents need.
 * Register additional MCP servers to extend capabilities (e.g., cloud services, observability).
 
-<Callout icon="lightbulb">
-  Note: The exact agents, tools, and MCP servers available in your KAgent installation depend on the version and the components you installed. The UI lets you extend and customize these elements.
-</Callout>
+> **lightbulb** Note: The exact agents, tools, and MCP servers available in your KAgent installation depend on the version and the components you installed. The UI lets you extend and customize these elements.
 
 ## Links and references
 
@@ -210,6 +204,4 @@ MCP Servers are service integrations that provide additional functionality and t
 
 That completes the high-level UI and default configuration overview. In the next lesson we’ll create and configure an agent end-to-end, wire it to a model, and add a custom tool to extend behavior.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/a2bef22f-2221-4587-9f26-3c0bce28059e/lesson/d9cb5a2c-3514-4e80-86a3-01b0d624d945" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/a2bef22f-2221-4587-9f26-3c0bce28059e/lesson/d9cb5a2c-3514-4e80-86a3-01b0d624d945)

@@ -14,14 +14,12 @@ session   optional      pam_xauth.so
 
 By uncommenting the line containing `pam_wheel.so trust use_uid`, an additional authentication module is activated. When you execute `su`, the modules are processed in the specified order, each serving its distinct purpose.
 
-<Callout icon="lightbulb">
-  PAM modules are categorized into four types:
+> **lightbulb** PAM modules are categorized into four types:
 
   * **auth modules**: Verify the identity of a user.
   * **account modules**: Manage tasks related to user accounts.
   * **password modules**: Handle password updates.
   * **session modules**: Prepare the user's session after authentication.
-</Callout>
 
 ### How PAM Modules Work
 
@@ -59,9 +57,7 @@ For more detailed information about these modules and their control flags, consu
 man pam.conf
 ```
 
-<Frame>
-  ![The image shows a terminal window on a CentOS system displaying text about default rules and module types for account management and authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883597/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-PAM/centos-terminal-account-management-rules.jpg)
-</Frame>
+![The image shows a terminal window on a CentOS system displaying text about default rules and module types for account management and authentication.](https://kodekloud.com/kk-media/image/upload/v1752883597/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-PAM/centos-terminal-account-management-rules.jpg)
 
 ### Choosing the Right Control Flags
 
@@ -91,9 +87,7 @@ session     optional      pam_xauth.so
 
 Additional documentation on the PAM API and its control fields is available in the module manual pages.
 
-<Frame>
-  ![The image shows a terminal window on a CentOS system displaying text about the PAM-API control field and its syntax. It explains the behavior of the PAM-API in authentication tasks, detailing control values like "required" and "requisite."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883598/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-PAM/centos-terminal-pam-api-control.jpg)
-</Frame>
+![The image shows a terminal window on a CentOS system displaying text about the PAM-API control field and its syntax. It explains the behavior of the PAM-API in authentication tasks, detailing control values like "required" and "requisite."](https://kodekloud.com/kk-media/image/upload/v1752883598/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-PAM/centos-terminal-pam-api-control.jpg)
 
 ### Exploring PAM Modules with man
 
@@ -172,11 +166,9 @@ For further information, remember to consult these resources:
 
 Proceed to your next demo or lecture for more in-depth coverage of system authentication strategies.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c2d7d0cc-a429-484c-b81b-674ff5fadc7e/lesson/dcca6371-1022-4760-9ebf-0594df308f3e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c2d7d0cc-a429-484c-b81b-674ff5fadc7e/lesson/dcca6371-1022-4760-9ebf-0594df308f3e)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c2d7d0cc-a429-484c-b81b-674ff5fadc7e/lesson/e2697162-3126-48e1-b5cc-144e7f26d186" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c2d7d0cc-a429-484c-b81b-674ff5fadc7e/lesson/e2697162-3126-48e1-b5cc-144e7f26d186)
 
 
 # Create delete and modify local groups and group memberships
@@ -189,17 +181,13 @@ Managing local groups and their memberships on a Linux system is essential for e
 
 Groups also grant specific system privileges. Users in the wheel or sudo groups can perform administrative tasks, while members of the Docker group have permissions to manage Docker containers. Every user has a primary group (or login group) assigned at login, and can additionally belong to multiple secondary or supplementary groups.
 
-<Callout icon="lightbulb">
-  When a user launches a program or creates a file, the system uses their primary group to determine default file ownership and process privileges. Secondary groups provide additional access without changing the primary group context.
-</Callout>
+> **lightbulb** When a user launches a program or creates a file, the system uses their primary group to determine default file ownership and process privileges. Secondary groups provide additional access without changing the primary group context.
 
 Below are two common scenarios illustrating the role of primary groups:
 
 1. When a user launches a program, the process runs with the privileges of their account and primary group.
 
-<Frame>
-  ![The image illustrates local groups and group memberships, showing a user named Jake belonging to multiple groups, including Admins, Wheel, and Docker, with a process owned by Jake and the Admins group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883599/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Create-delete-and-modify-local-groups-and-group-memberships/local-groups-memberships-jake-admins.jpg)
-</Frame>
+![The image illustrates local groups and group memberships, showing a user named Jake belonging to multiple groups, including Admins, Wheel, and Docker, with a process owned by Jake and the Admins group.](https://kodekloud.com/kk-media/image/upload/v1752883599/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Create-delete-and-modify-local-groups-and-group-memberships/local-groups-memberships-jake-admins.jpg)
 
 2. When a user creates a file, it is automatically owned by their user account and their primary (login) group.
 

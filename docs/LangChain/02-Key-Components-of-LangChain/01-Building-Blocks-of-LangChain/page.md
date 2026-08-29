@@ -28,9 +28,7 @@ import os
 os.environ["OPENAI_API_KEY"] = "YOUR_OPENAI_API_KEY"
 ```
 
-<Callout icon="warning">
-  Never commit or share your secret keys. Use environment variables or secret management tools when running notebooks or deploying applications.
-</Callout>
+> **warning** Never commit or share your secret keys. Use environment variables or secret management tools when running notebooks or deploying applications.
 
 Course outcomes
 When you finish this course you will be able to:
@@ -57,15 +55,11 @@ Modules overview
 | Memory         | Stateful interactions            | Conversation memory, vector stores         |
 | Tools & Agents | External actions & orchestration | API calls, web search, tool selection      |
 
-<Callout icon="lightbulb">
-  Tip: Follow along with the demos in the provided notebooks and run the practical exercises to reinforce each concept. Use the KodeKloud community forum for questions and peer help.
-</Callout>
+> **lightbulb** Tip: Follow along with the demos in the provided notebooks and run the practical exercises to reinforce each concept. Use the KodeKloud community forum for questions and peer help.
 
 Let's jump in and start building modern LLM applications with LangChain.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/d5e8b9a9-2511-4d5a-881b-aeeedeb44a4d/lesson/282a2855-f9c4-4bf3-a3ed-2a3a8d2762a1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/d5e8b9a9-2511-4d5a-881b-aeeedeb44a4d/lesson/282a2855-f9c4-4bf3-a3ed-2a3a8d2762a1)
 
 
 # Building Blocks of LangChain
@@ -150,9 +144,7 @@ The sections below expand each building block in the order you’ll typically en
   * Agent controllers and reasoning patterns (e.g., ReAct)
   * Safety, authorization, and sandboxing layers to limit agent actions
 
-<Callout icon="lightbulb">
-  These building blocks are designed to be combined into complete applications. A common flow is: create embeddings (Model I/O) → index documents (Retrieval) → compose a retrieval-augmented prompt (Prompts + Chains) → maintain conversation history (Memory) → hand off to an agent when external actions are required.
-</Callout>
+> **lightbulb** These building blocks are designed to be combined into complete applications. A common flow is: create embeddings (Model I/O) → index documents (Retrieval) → compose a retrieval-augmented prompt (Prompts + Chains) → maintain conversation history (Memory) → hand off to an agent when external actions are required.
 
 Why this decomposition matters
 
@@ -169,6 +161,4 @@ Links and references
 
 Understanding these components sets the stage for practical patterns and code examples. Later sections will deep-dive into each building block with concrete integrations, sample code, and design patterns for production systems.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/ccb34a44-28e4-478d-ae1a-13df8ef583c4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/ccb34a44-28e4-478d-ae1a-13df8ef583c4)

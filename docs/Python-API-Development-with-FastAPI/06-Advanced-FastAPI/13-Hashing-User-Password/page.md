@@ -14,9 +14,7 @@ select * from users;
 
 reveals that storing plain text passwords (as the query would show) is unsafe. Always hash passwords before saving them to your database.
 
-<Callout icon="lightbulb">
-  FastAPI’s documentation provides an excellent guide on password hashing under the [OAuth2 with Password section](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/).
-</Callout>
+> **lightbulb** FastAPI’s documentation provides an excellent guide on password hashing under the [OAuth2 with Password section](https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/).
 
 ## Installing Required Libraries
 

@@ -42,13 +42,13 @@ Since CodeCommit repositories are private, you must configure authentication to 
 
 The image below shows the IAM console with details for a user’s security credentials, including SSH public keys and HTTPS Git credentials:
 
-![The image shows an AWS Identity and Access Management (IAM) console screen, displaying details of a user's security credentials, including SSH public keys and HTTPS Git credentials for AWS CodeCommit.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857961/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit-Demo-part-2/aws-iam-console-user-credentials.jpg)
+![The image shows an AWS Identity and Access Management (IAM) console screen, displaying details of a user's security credentials, including SSH public keys and HTTPS Git credentials for AWS CodeCommit.](https://kodekloud.com/kk-media/image/upload/v1752857961/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit-Demo-part-2/aws-iam-console-user-credentials.jpg)
 
 Select HTTPS Git credentials by clicking on "Generate Credentials" to obtain your username and password. Make sure to keep them handy for later use.
 
 Next, navigate to your CodeCommit repository page and locate the clone URL section. Choose the HTTPS option to copy the correct URL:
 
-![The image shows an AWS Identity and Access Management (IAM) console screen displaying sections for SSH public keys, HTTPS Git credentials for AWS CodeCommit, and credentials for Amazon Keyspaces. It includes options to upload or generate credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857963/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit-Demo-part-2/aws-iam-console-ssh-credentials.jpg)
+![The image shows an AWS Identity and Access Management (IAM) console screen displaying sections for SSH public keys, HTTPS Git credentials for AWS CodeCommit, and credentials for Amazon Keyspaces. It includes options to upload or generate credentials.](https://kodekloud.com/kk-media/image/upload/v1752857963/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit-Demo-part-2/aws-iam-console-ssh-credentials.jpg)
 
 ## Cloning the Repository
 
@@ -152,7 +152,7 @@ After a few moments, your changes will be live in the CodeCommit repository. Whe
 
 The updated repository interface is illustrated below:
 
-![The image shows an AWS CodeCommit repository interface for a project named "myapp," displaying files like index.html, index.js, package-lock.json, and package.json.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857965/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit-Demo-part-2/aws-codecommit-myapp-repo-interface.jpg)
+![The image shows an AWS CodeCommit repository interface for a project named "myapp," displaying files like index.html, index.js, package-lock.json, and package.json.](https://kodekloud.com/kk-media/image/upload/v1752857965/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit-Demo-part-2/aws-codecommit-myapp-repo-interface.jpg)
 
 ## Conclusion
 

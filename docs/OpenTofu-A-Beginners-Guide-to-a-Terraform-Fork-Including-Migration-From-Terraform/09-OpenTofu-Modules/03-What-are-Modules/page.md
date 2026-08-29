@@ -57,9 +57,7 @@ aws_s3_bucket.finance_bucket: Creation complete after 0s [id=cerberus-dhiabk-buc
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```
 
-<Callout icon="lightbulb">
-  HCL supports both legacy interpolation (`"${...}"`) and the newer direct syntax (`var.project`). Both work in locals, but be consistent across your codebase.
-</Callout>
+> **lightbulb** HCL supports both legacy interpolation (`"${...}"`) and the newer direct syntax (`var.project`). Both work in locals, but be consistent across your codebase.
 
 ***
 
@@ -82,9 +80,7 @@ Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 
 That’s it for this lesson on local values! In the next lesson, we’ll explore modules and how they can further modularize your infrastructure code.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/d4c286c6-b8ee-47b1-bea3-abcf408b00ed/lesson/f6ea91e0-bcaa-49fb-9878-b1c58476acaa" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/d4c286c6-b8ee-47b1-bea3-abcf408b00ed/lesson/f6ea91e0-bcaa-49fb-9878-b1c58476acaa)
 
 
 # What are Modules

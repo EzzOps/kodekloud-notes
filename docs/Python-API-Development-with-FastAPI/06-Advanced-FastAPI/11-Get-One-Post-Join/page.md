@@ -146,13 +146,9 @@ INFO:     127.0.0.1:59999 - "POST /posts HTTP/1.1" 201 Created
 
 This output confirms that the `current_user` dependency correctly retrieves and prints the user’s email, ensuring that user-specific data is readily available for any subsequent business logic in your endpoints.
 
-<Callout icon="lightbulb">
-  By returning the complete user object via the `get_current_user` dependency, your FastAPI application can efficiently access and utilize user-specific information throughout your route operations. This approach streamlines the management of authentication and user authorization in your API.
-</Callout>
+> **lightbulb** By returning the complete user object via the `get_current_user` dependency, your FastAPI application can efficiently access and utilize user-specific information throughout your route operations. This approach streamlines the management of authentication and user authorization in your API.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/7294905c-798f-46eb-b8a3-38f26f621a0a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/7294905c-798f-46eb-b8a3-38f26f621a0a)
 
 
 # Get One Post Join
@@ -234,9 +230,7 @@ def get_post(id: int, db: Session = Depends(get_db), current_user: int = Depends
     return result
 ```
 
-<Callout icon="lightbulb">
-  The updated endpoint now returns a JSON structure that includes both the main post data and the associated vote count. This enhancement provides a more comprehensive view of the post’s engagement.
-</Callout>
+> **lightbulb** The updated endpoint now returns a JSON structure that includes both the main post data and the associated vote count. This enhancement provides a more comprehensive view of the post’s engagement.
 
 During testing, the console output confirmed that the endpoint was working as expected:
 
@@ -266,14 +260,10 @@ An example of a successful JSON response is:
 }
 ```
 
-<Callout icon="triangle-alert">
-  Ensure that all variables used in your queries are properly defined within the current scope. Errors like `NameError: name 'post' is not defined` may occur if variables are misspelled or referenced before initialization.
-</Callout>
+> **triangle-alert** Ensure that all variables used in your queries are properly defined within the current scope. Errors like `NameError: name 'post' is not defined` may occur if variables are misspelled or referenced before initialization.
 
 While you could extend this functionality to the post creation and update endpoints so that they also return the vote count, it is usually sufficient to include it only when fetching posts.
 
 By implementing these changes, the get individual post endpoint now provides both the detailed post data and its vote count, resulting in an improved and more informative API response.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/1b21a16b-ee6e-4ee3-8da1-6be4c14b145b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/1b21a16b-ee6e-4ee3-8da1-6be4c14b145b)

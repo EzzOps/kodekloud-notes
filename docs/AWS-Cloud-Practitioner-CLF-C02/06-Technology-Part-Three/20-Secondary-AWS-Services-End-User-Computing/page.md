@@ -6,7 +6,7 @@ This article explores AWS End-User Computing services, highlighting their tasks,
 
 Welcome, Cloud Practitioners! In this lesson, presented by Michael Forrester, we dive into the AWS End-User Computing service family. We will explore the primary services, their tasks and use cases, and how they simplify IT management, enhance data security, and support remote work.
 
-![The image outlines objectives, including an overview, tasks accomplished, and use cases, with icons and a gradient background. Copyright is attributed to KodeKloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862171/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_20.jpg)
+![The image outlines objectives, including an overview, tasks accomplished, and use cases, with icons and a gradient background. Copyright is attributed to KodeKloud.](https://kodekloud.com/kk-media/image/upload/v1752862171/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_20.jpg)
 
 The AWS End-User Computing family is symbolized by an icon depicting a laptop with a cloud and a mobile device with a cloud. These services deliver virtual desktops and streamed applications from the cloud, ensuring a seamless computing experience from any location.
 
@@ -37,13 +37,13 @@ Key benefits of Amazon WorkSpaces include:
 * **Simplified IT Management:** Mass deployment and patching streamline maintenance and updates.
 * **Cost-Effectiveness:** A scalable solution that offers a more affordable alternative to traditional VDI setups from vendors like VMware, Citrix, or earlier Microsoft approaches.
 
-![The image lists two Amazon services: AppStream 2.0 and WorkSpaces, under the heading "Dive in to the Services."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862172/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_90.jpg)
+![The image lists two Amazon services: AppStream 2.0 and WorkSpaces, under the heading "Dive in to the Services."](https://kodekloud.com/kk-media/image/upload/v1752862172/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_90.jpg)
 
-![The image outlines three general use cases: remote working, secure data handling, and simplified IT management, each represented with an icon and numbered 01 to 03.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862173/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_140.jpg)
+![The image outlines three general use cases: remote working, secure data handling, and simplified IT management, each represented with an icon and numbered 01 to 03.](https://kodekloud.com/kk-media/image/upload/v1752862173/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_140.jpg)
 
-![The image illustrates modern computing's relevance, highlighting cost-efficiency and scalability as key components, connected through a central icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862174/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_160.jpg)
+![The image illustrates modern computing's relevance, highlighting cost-efficiency and scalability as key components, connected through a central icon.](https://kodekloud.com/kk-media/image/upload/v1752862174/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_160.jpg)
 
-![The image highlights AWS End-User Computing Services: Amazon AppStream 2.0, Amazon WorkSpaces, and Amazon WorkSpaces Web, with their respective icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862175/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_190.jpg)
+![The image highlights AWS End-User Computing Services: Amazon AppStream 2.0, Amazon WorkSpaces, and Amazon WorkSpaces Web, with their respective icons.](https://kodekloud.com/kk-media/image/upload/v1752862175/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_190.jpg)
 
 ***
 
@@ -60,11 +60,11 @@ Key features of Amazon WorkSpaces include:
 
 This service is ideal for remote work and BYOD (Bring Your Own Device) scenarios, ensuring that sensitive data never leaves the secure AWS environment.
 
-![The image describes Amazon WorkSpaces, highlighting "Core features" and "Customization options" as key aspects of the personalized virtual desktop service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862176/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_310.jpg)
+![The image describes Amazon WorkSpaces, highlighting "Core features" and "Customization options" as key aspects of the personalized virtual desktop service.](https://kodekloud.com/kk-media/image/upload/v1752862176/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_310.jpg)
 
-![The image outlines three general use cases for Amazon WorkSpaces: remote working, secure data handling, and simplified IT management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862178/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_350.jpg)
+![The image outlines three general use cases for Amazon WorkSpaces: remote working, secure data handling, and simplified IT management.](https://kodekloud.com/kk-media/image/upload/v1752862178/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_350.jpg)
 
-![The image illustrates the relevance of modern computing, highlighting security and scalability as key components, connected to a central icon representing computing infrastructure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862179/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_380.jpg)
+![The image illustrates the relevance of modern computing, highlighting security and scalability as key components, connected to a central icon representing computing infrastructure.](https://kodekloud.com/kk-media/image/upload/v1752862179/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_380.jpg)
 
 ***
 
@@ -80,11 +80,11 @@ Key features of Amazon WorkSpaces Web include:
 
 This service suits educational institutions and BYOD setups where installing client software is not feasible.
 
-![The image highlights Amazon WorkSpaces Web, focusing on "Core features" and "Security aspects" with corresponding icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862181/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_490.jpg)
+![The image highlights Amazon WorkSpaces Web, focusing on "Core features" and "Security aspects" with corresponding icons.](https://kodekloud.com/kk-media/image/upload/v1752862181/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_490.jpg)
 
-![The image lists Amazon WorkSpaces Web general use cases: remote working, BYOD environments, and education, each represented with an icon and numbered 01 to 03.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862182/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_520.jpg)
+![The image lists Amazon WorkSpaces Web general use cases: remote working, BYOD environments, and education, each represented with an icon and numbered 01 to 03.](https://kodekloud.com/kk-media/image/upload/v1752862182/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_520.jpg)
 
-![The image illustrates the relevance of modern computing, highlighting flexibility and accessibility with interconnected icons representing technology concepts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862183/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_540.jpg)
+![The image illustrates the relevance of modern computing, highlighting flexibility and accessibility with interconnected icons representing technology concepts.](https://kodekloud.com/kk-media/image/upload/v1752862183/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_540.jpg)
 
 ***
 
@@ -101,15 +101,15 @@ Key benefits of Amazon AppStream 2.0 include:
 
 This service is particularly attractive for software vendors, educational institutions, and enterprises that require access to specific applications regardless of local operating systems.
 
-![The image outlines two tasks accomplished by Amazon AppStream 2.0: delivering desktop applications to any computer and centralized application management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862184/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_630.jpg)
+![The image outlines two tasks accomplished by Amazon AppStream 2.0: delivering desktop applications to any computer and centralized application management.](https://kodekloud.com/kk-media/image/upload/v1752862184/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_630.jpg)
 
-![The image illustrates Amazon AppStream 2.0 use cases for software vendors, educational institutions, and enterprises.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862186/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_660.jpg)
+![The image illustrates Amazon AppStream 2.0 use cases for software vendors, educational institutions, and enterprises.](https://kodekloud.com/kk-media/image/upload/v1752862186/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_660.jpg)
 
-![The image highlights Amazon AppStream 2.0's benefits: scalability, security, and cost-efficiency, using a flowchart with icons and text.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862187/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_730.jpg)
+![The image highlights Amazon AppStream 2.0's benefits: scalability, security, and cost-efficiency, using a flowchart with icons and text.](https://kodekloud.com/kk-media/image/upload/v1752862187/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_730.jpg)
 
 In summary, AppStream 2.0 enables secure, scalable, and cost-efficient application streaming while reducing client-side dependencies and ensuring centralized control over application updates and licensing.
 
-![The image lists conclusions about delivering remote applications securely, targeting software vendors and educational institutions, supporting software versions, enabling cloud access, and reducing hardware dependencies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862188/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_770.jpg)
+![The image lists conclusions about delivering remote applications securely, targeting software vendors and educational institutions, supporting software versions, enabling cloud access, and reducing hardware dependencies.](https://kodekloud.com/kk-media/image/upload/v1752862188/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_770.jpg)
 
 ***
 
@@ -122,7 +122,7 @@ The AWS End-User Computing service family—comprising Amazon AppStream 2.0, Ama
 * Flexibility and customization support various work styles, including remote work, BYOD, and educational environments.
 * Browser-based access through WorkSpaces Web addresses scenarios where installing client software is impractical.
 
-![The image lists three Amazon services for streamlined access: AppStream 2.0, WorkSpaces, and WorkSpaces Web, each represented with icons and numbered sequentially.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862190/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_810.jpg)
+![The image lists three Amazon services for streamlined access: AppStream 2.0, WorkSpaces, and WorkSpaces Web, each represented with icons and numbered sequentially.](https://kodekloud.com/kk-media/image/upload/v1752862190/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-End-User-Computing/frame_810.jpg)
 
 These innovative solutions enable organizations to deliver secure and efficient end-user computing experiences while simplifying operations and reducing costs.
 

@@ -40,7 +40,7 @@ GZRS combines the benefits of zone replication and geographic redundancy by repl
 
 > **lightbulb** Select from LRS, ZRS, GRS, RA-GRS, GZRS, and RA-GZRS based on your application’s durability, availability, and disaster recovery requirements.
 
-![The image is a diagram explaining Azure Storage options for durability and availability, comparing single region (LRS, ZRS) and dual region (RA-GRS, RA-GZRS) configurations, with a cost scale from lower to higher.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866423/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Storage-Availability-and-Performance/azure-storage-durability-availability-diagram.jpg)
+![The image is a diagram explaining Azure Storage options for durability and availability, comparing single region (LRS, ZRS) and dual region (RA-GRS, RA-GZRS) configurations, with a cost scale from lower to higher.](https://kodekloud.com/kk-media/image/upload/v1752866423/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Storage-Availability-and-Performance/azure-storage-durability-availability-diagram.jpg)
 
 While LRS and ZRS are suitable for localized protection within a single region, geo-redundant options ensure data remains accessible even during regional outages. Keep in mind that higher protection levels along the geo-redundant path generally come with increased costs.
 
@@ -60,7 +60,7 @@ Premium performance leverages SSDs and high-performance hardware to meet demandi
 * **Premium Page Blobs:** Used by Azure Disk for enhanced performance.
 * **Premium File Shares:** Designed for superior file storage performance.
 
-![The image is a table outlining Azure Storage performance tiers, detailing performance levels, storage account types, and supported storage devices. It includes categories like Standard and Premium with various storage options such as block blobs, page blobs, and file shares.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866425/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Storage-Availability-and-Performance/azure-storage-performance-tiers-table.jpg)
+![The image is a table outlining Azure Storage performance tiers, detailing performance levels, storage account types, and supported storage devices. It includes categories like Standard and Premium with various storage options such as block blobs, page blobs, and file shares.](https://kodekloud.com/kk-media/image/upload/v1752866425/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Storage-Availability-and-Performance/azure-storage-performance-tiers-table.jpg)
 
 For most applications, a standard general-purpose v2 account provides a balanced approach to performance and cost, while premium options should be considered when high-speed access or advanced storage features are required.
 

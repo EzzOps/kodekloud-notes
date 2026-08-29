@@ -12,9 +12,7 @@ Sometimes the safest reconcile loop is the one that never has to see a bad objec
 
 Think of admission as the Kubernetes API server's front desk: every create or update request arrives there, gets checked, and only accepted objects proceed to storage and the reconciler. Validating admission policies express those checks using the Common Expression Language (CEL), a compact, safe expression language evaluated by the API server.
 
-<Callout icon="lightbulb">
-  CEL expressions are evaluated inside the API server: they are not compiled Go code and they do not call your operator. You can use CEL to write concise, declarative checks against the incoming object.
-</Callout>
+> **lightbulb** CEL expressions are evaluated inside the API server: they are not compiled Go code and they do not call your operator. You can use CEL to write concise, declarative checks against the incoming object.
 
 <Frame>
   <img alt="The image displays text explaining that the rule sheet uses the Common Expression Language (CEL) and indicates that it is not code, specifically not a Go function or operator call." />

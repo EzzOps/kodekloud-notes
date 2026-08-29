@@ -1,9 +1,7 @@
 # Success! Revoked token (if it existed)
 ```
 
-<Callout icon="lightbulb">
-  The token prefix (`s.` or `hvs.`) varies by Vault version.
-</Callout>
+> **lightbulb** The token prefix (`s.` or `hvs.`) varies by Vault version.
 
 ## Emergency Scenario: Broken Authentication
 
@@ -13,9 +11,7 @@ Imagine Vault uses corporate LDAP for operator logins:
 2. Vault validates credentials against the LDAP server
 3. A network change or firewall misconfiguration breaks LDAP connectivity
 
-<Frame>
-  ![The image illustrates a broken authentication workflow involving a Vault operator, LDAP authentication, and corporate LDAP servers, highlighting issues with authentication and validation. It poses the question of what happens if there is no working authentication method to fix the problem.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878485/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Regenerating-a-Root-Token/broken-authentication-workflow-vault-ldap.jpg)
-</Frame>
+![The image illustrates a broken authentication workflow involving a Vault operator, LDAP authentication, and corporate LDAP servers, highlighting issues with authentication and validation. It poses the question of what happens if there is no working authentication method to fix the problem.](https://kodekloud.com/kk-media/image/upload/v1752878485/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Regenerating-a-Root-Token/broken-authentication-workflow-vault-ldap.jpg)
 
 Without a valid auth method or a root token, you cannot update the LDAP backend. In such emergencies, you can regenerate a root token by leveraging your unseal (recovery) keys—ensuring no single individual can generate it alone.
 
@@ -27,17 +23,13 @@ Root token regeneration follows the same quorum-based approach as Vault unsealin
 2. Have each key holder submit their unseal key.
 3. Decode the new root token with the one-time password (OTP).
 
-<Frame>
-  ![The image is an instructional guide on regenerating a root token using unseal/recovery keys, with three steps outlined: initializing root generation, each key holder running 'generate root' with their unseal key, and decoding the generated root token. It includes a Vault certification badge and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878486/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Regenerating-a-Root-Token/regenerate-root-token-instructions-guide.jpg)
-</Frame>
+![The image is an instructional guide on regenerating a root token using unseal/recovery keys, with three steps outlined: initializing root generation, each key holder running 'generate root' with their unseal key, and decoding the generated root token. It includes a Vault certification badge and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878486/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Regenerating-a-Root-Token/regenerate-root-token-instructions-guide.jpg)
 
 ### Command Options
 
 Below are the primary flags for `vault operator generate-root`:
 
-<Frame>
-  ![The image is a slide about Vault Initialization, showing command options and their descriptions for generating a root token. It includes a table with options like -generate-otp, -init, and -decode=\<string>.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878487/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Regenerating-a-Root-Token/vault-initialization-command-options-table.jpg)
-</Frame>
+![The image is a slide about Vault Initialization, showing command options and their descriptions for generating a root token. It includes a table with options like -generate-otp, -init, and -decode=\<string>.](https://kodekloud.com/kk-media/image/upload/v1752878487/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Regenerating-a-Root-Token/vault-initialization-command-options-table.jpg)
 
 | Flag      | Description                                           |
 | --------- | ----------------------------------------------------- |
@@ -70,9 +62,7 @@ OTP Length   26
 * **OTP**: Confidential; do not expose.
 * **Progress**: Tracks submissions (e.g., 0/3 keys submitted).
 
-<Callout icon="triangle-alert">
-  Guard the OTP carefully. Anyone with the OTP and the final encoded token can reconstruct the root token.
-</Callout>
+> **triangle-alert** Guard the OTP carefully. Anyone with the OTP and the final encoded token can reconstruct the root token.
 
 ### Step 2: Key Holders Submit Unseal Keys
 
@@ -139,9 +129,7 @@ vault token revoke hvs.gXtT3uq9teYf0ZnFQH6hOiw8
 * [Vault Authentication Methods](https://www.vaultproject.io/docs/auth)
 * [Vault Init & Unseal](https://www.vaultproject.io/docs/concepts/core/seal)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/f5208dd1-969f-4f36-8709-41efd2a34db4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/f5208dd1-969f-4f36-8709-41efd2a34db4)
 
 
 # Rekey Vault and Rotate Encryption Keys
@@ -156,9 +144,7 @@ In this final lesson, you’ll learn how to rekey Vault (regenerate unseal or re
 
 Rekeying creates a brand-new set of unseal or recovery key shares and lets you adjust how many shares exist and how many are required to reconstruct the master key. This operation is performed online—Vault continues to serve requests throughout.
 
-<Frame>
-  ![The image explains the concept of "Rekey" in a Vault system, highlighting its functions such as creating new recovery keys, specifying key numbers and thresholds, requiring a key threshold for rekeying, and providing a nonce value for key holders.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878488/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Rekey-Vault-and-Rotate-Encryption-Keys/rekey-vault-system-functions-diagram.jpg)
-</Frame>
+![The image explains the concept of "Rekey" in a Vault system, highlighting its functions such as creating new recovery keys, specifying key numbers and thresholds, requiring a key threshold for rekeying, and providing a nonce value for key holders.](https://kodekloud.com/kk-media/image/upload/v1752878488/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Rekey-Vault-and-Rotate-Encryption-Keys/rekey-vault-system-functions-diagram.jpg)
 
 By default, Vault initializes with 5 shares and a threshold of 3. Rekeying can, for example, increase this to 10 shares with a threshold of 7, or reduce it to 1 share with a threshold of 1—giving you full control over key distribution and recovery.
 
@@ -170,9 +156,7 @@ Rekeying is commonly required when:
 * Employees or key holders leave the organization.
 * Your security policy mandates periodic rotation of master key shares.
 
-<Frame>
-  ![The image explains reasons for rekeying, such as lost keys, employee departures, and organizational security policies, using a diagram of key shards leading to a master key.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878490/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Rekey-Vault-and-Rotate-Encryption-Keys/rekeying-reasons-diagram-key-shards.jpg)
-</Frame>
+![The image explains reasons for rekeying, such as lost keys, employee departures, and organizational security policies, using a diagram of key shards leading to a master key.](https://kodekloud.com/kk-media/image/upload/v1752878490/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Rekey-Vault-and-Rotate-Encryption-Keys/rekeying-reasons-diagram-key-shards.jpg)
 
 ### Rekey Command
 
@@ -230,9 +214,7 @@ Key 5: HtFsHfCvYsICEeTguouhqr4K9ehXAoJm8ktxdT0EJl
 Vault rekeyed with 5 key shares and a key threshold of 3. Please securely distribute the key shares printed above. When Vault is re-sealed, restarted, or stopped, you must supply at least 3 of these keys to unseal it before it can start servicing requests.
 ```
 
-<Callout icon="lightbulb">
-  In Vault Enterprise with replication enabled, always run the rekey on the primary cluster. Replicas will automatically receive the updated key shares.
-</Callout>
+> **lightbulb** In Vault Enterprise with replication enabled, always run the rekey on the primary cluster. Replicas will automatically receive the updated key shares.
 
 ### Production Impact
 
@@ -284,9 +266,7 @@ To rotate the encryption key, your policy must grant:
 | sys/rotate     | update, sudo |
 | sys/key-status | read         |
 
-<Callout icon="triangle-alert">
-  Omitting `sys/key-status` read permission causes the CLI to report a permission error when displaying key status, even though the rotation itself succeeds.
-</Callout>
+> **triangle-alert** Omitting `sys/key-status` read permission causes the CLI to report a permission error when displaying key status, even though the rotation itself succeeds.
 
 ***
 
@@ -298,6 +278,4 @@ To rotate the encryption key, your policy must grant:
 
 Explore these resources for deeper insights into Vault key management. Good luck practicing these operations in your live environment!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/a1a66678-68e7-47b1-87ef-ab353c67ac7d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/a1a66678-68e7-47b1-87ef-ab353c67ac7d)

@@ -9,9 +9,7 @@ Authorization tells Kubernetes what you are allowed to do.
 
 There is a third gate before a request is accepted: admission control. Even after successful authentication and authorization, requests must pass through admission controllers. This is where much platform governance lives — injecting defaults, enforcing quotas, validating configuration, mutating objects, and denying non-compliant requests.
 
-<Callout icon="lightbulb">
-  Admission controllers run after authentication and authorization but before objects are persisted to etcd. Some admission controllers mutate objects (mutating admission controllers), while others only allow or deny requests (validating admission controllers).
-</Callout>
+> **lightbulb** Admission controllers run after authentication and authorization but before objects are persisted to etcd. Some admission controllers mutate objects (mutating admission controllers), while others only allow or deny requests (validating admission controllers).
 
 ## Which admission plugins are active?
 
@@ -175,9 +173,7 @@ Because the namespace `admission-lab` has a hard pod quota of 4, only four Pods 
 
 * LimitRange defaults are applied only at admission time when an object is created or recreated. Updating a LimitRange later does not retroactively change resource requests/limits of already running Pods. Only new Pods or Pods that are deleted and recreated will pick up the new defaults.
 
-<Callout icon="warning">
-  Admission controllers run at admission time. Mutating controllers change the object before it’s stored; validating controllers accept or reject the request. Changes to defaults (e.g., a LimitRange) do not mutate already existing objects.
-</Callout>
+> **warning** Admission controllers run at admission time. Mutating controllers change the object before it’s stored; validating controllers accept or reject the request. Changes to defaults (e.g., a LimitRange) do not mutate already existing objects.
 
 That was a concise overview of mutating vs validating admission controllers and how they interact (LimitRanger + ResourceQuota). Try these steps in a test cluster to observe the behavior firsthand.
 
@@ -187,8 +183,6 @@ That was a concise overview of mutating vs validating admission controllers and 
 * [LimitRange documentation](https://kubernetes.io/docs/concepts/policy/limit-range/)
 * [ResourceQuota documentation](https://kubernetes.io/docs/concepts/policy/resource-quotas/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/d53940b9-5f20-45c2-8878-1e625bc1e193" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/d53940b9-5f20-45c2-8878-1e625bc1e193)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/b2db939b-d7a6-4431-9c87-3ba55a87f53d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/b2db939b-d7a6-4431-9c87-3ba55a87f53d)

@@ -87,9 +87,7 @@ What this example reveals
 
 Note about parent IDs and root spans:
 
-<Callout icon="lightbulb">
-  A span with a null parent ID is the trace’s root span. Context propagation (trace and span IDs passed across network calls) ties child spans back to their parents so the full distributed trace can be reconstructed across services.
-</Callout>
+> **lightbulb** A span with a null parent ID is the trace’s root span. Context propagation (trace and span IDs passed across network calls) ties child spans back to their parents so the full distributed trace can be reconstructed across services.
 
 Glossary and quick reference
 
@@ -123,6 +121,4 @@ Further reading and references
 * Tracing basics: [https://opentelemetry.io/docs/concepts/signals/traces/](https://opentelemetry.io/docs/concepts/signals/traces/)
 * W3C Trace Context: [https://www.w3.org/TR/trace-context/](https://www.w3.org/TR/trace-context/) — standard headers for context propagation.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/5377782e-efb4-4353-bef8-ab1fceaed693" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/5377782e-efb4-4353-bef8-ab1fceaed693)

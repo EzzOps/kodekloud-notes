@@ -5,9 +5,7 @@ ln -s /home/aaron/Pictures/family_dog.jpg family_dog_shortcut.jpg
 * `<path_to_target>`: File or directory you want to reference.
 * `<path_to_link>`: Name (and optional path) for the symlink.
 
-<Callout icon="lightbulb">
-  You can use absolute or relative paths. Relative links remain valid if you move the containing directory, as long as the relative structure doesn’t change.
-</Callout>
+> **lightbulb** You can use absolute or relative paths. Relative links remain valid if you move the containing directory, as long as the relative structure doesn’t change.
 
 ## 2. Verify a Symlink
 
@@ -42,9 +40,7 @@ echo "Test" >> fstab_shortcut
 # bash: fstab_shortcut: Permission denied
 ```
 
-<Callout icon="triangle-alert">
-  Even though the symlink appears writable, you’re blocked because the real file (`/etc/fstab`) isn’t writable by your user.
-</Callout>
+> **triangle-alert** Even though the symlink appears writable, you’re blocked because the real file (`/etc/fstab`) isn’t writable by your user.
 
 ## 4. Absolute vs. Relative Paths
 
@@ -80,9 +76,7 @@ ls -l logs_shortcut
 # logs_shortcut -> /var/log
 ```
 
-<Frame>
-  ![The image is a diagram explaining soft links, showing how they can link to files and folders, including across different filesystems.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881382/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Create-and-Change-Soft-Links/soft-links-diagram-files-folders.jpg)
-</Frame>
+![The image is a diagram explaining soft links, showing how they can link to files and folders, including across different filesystems.](https://kodekloud.com/kk-media/image/upload/v1752881382/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Create-and-Change-Soft-Links/soft-links-diagram-files-folders.jpg)
 
 ## Further Reading
 
@@ -90,9 +84,7 @@ ls -l logs_shortcut
 * [readlink(1) Manual Page](https://man7.org/linux/man-pages/man1/readlink.1.html)
 * Linux Filesystem Hierarchy: [Filesystem layout](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/4f82c772-77a6-468a-81bc-b99cab3372f3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/4f82c772-77a6-468a-81bc-b99cab3372f3)
 
 
 # Find System Files and Place Files in the Correct Location Part 1 FHS
@@ -105,9 +97,7 @@ This article explains the Filesystem Hierarchy Standard for Unix-like operating 
 
 The Filesystem Hierarchy Standard (FHS) defines a common directory layout and its contents for Unix-like operating systems. Maintained by the [Linux Foundation](https://www.linuxfoundation.org/) and detailed in the [FHS 3.0 specification](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html), this standard ensures that users and administrators can predict where to find system files, binaries, and configuration data. While FHS compliance is not mandatory, most Linux distributions follow it closely.
 
-<Callout icon="lightbulb">
-  FHS compliance guarantees a consistent directory layout, simplifying system administration, backups, and package management.
-</Callout>
+> **lightbulb** FHS compliance guarantees a consistent directory layout, simplifying system administration, backups, and package management.
 
 ## Top-Level Directory Overview
 
@@ -133,9 +123,7 @@ The Filesystem Hierarchy Standard (FHS) defines a common directory layout and it
 | `/var`     | Variable data files (logs, spools, caches)          | `/var/log`, `/var/spool/mail`        |
 | `/var/tmp` | Temporary files preserved between reboots           | `/var/tmp/install_cache`             |
 
-<Frame>
-  ![The image displays a list of directories from the Filesystem Hierarchy Standard, commonly used in Unix-like operating systems.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881383/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Find-System-Files-and-Place-Files-in-the-Correct-Location-Part-1-FHS/filesystem-hierarchy-standard-directories-list.jpg)
-</Frame>
+![The image displays a list of directories from the Filesystem Hierarchy Standard, commonly used in Unix-like operating systems.](https://kodekloud.com/kk-media/image/upload/v1752881383/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Find-System-Files-and-Place-Files-in-the-Correct-Location-Part-1-FHS/filesystem-hierarchy-standard-directories-list.jpg)
 
 ## Summary Tree
 
@@ -169,6 +157,4 @@ The Filesystem Hierarchy Standard (FHS) defines a common directory layout and it
 
 Ready to test your understanding? Proceed to the quiz section!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/7dcca80c-10d9-496d-8c44-31fd1c86f583" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/7dcca80c-10d9-496d-8c44-31fd1c86f583)

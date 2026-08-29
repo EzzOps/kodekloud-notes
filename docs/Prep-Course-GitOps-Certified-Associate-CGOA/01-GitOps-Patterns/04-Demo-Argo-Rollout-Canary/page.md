@@ -63,9 +63,7 @@ spec:
         - pause: {}                 # pause indefinitely (manual promotion)
 ```
 
-<Callout icon="warning">
-  A `pause: {}` is an indefinite pause — the rollout will wait until you manually promote the next step (UI or `kubectl argo rollouts promote`). Plan for manual verification before continuing.
-</Callout>
+> **warning** A `pause: {}` is an indefinite pause — the rollout will wait until you manually promote the next step (UI or `kubectl argo rollouts promote`). Plan for manual verification before continuing.
 
 ### Blue-green (reference snippet)
 

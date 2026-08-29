@@ -22,12 +22,12 @@ Below is an overview of various scenarios along with the recommended solutions t
 
 8. The SQL application currently uses an encrypted form of credentials stored within the code.
 
-![The image is a scenario description from KodeKloud about Vendetta Corp's requirements for using Azure AD as their identity and access management solution, with specific tasks highlighted in blue boxes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867244/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Summary/vendetta-corp-azure-ad-requirements.jpg)
+![The image is a scenario description from KodeKloud about Vendetta Corp's requirements for using Azure AD as their identity and access management solution, with specific tasks highlighted in blue boxes.](https://kodekloud.com/kk-media/image/upload/v1752867244/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Summary/vendetta-corp-azure-ad-requirements.jpg)
 
 Instead of embedding credentials in the code, leverage managed identities to securely access the SQL Database without the need to expose any keys. This approach significantly enhances security by eliminating direct handling of secrets.
 
 > **lightbulb** This lesson provided a solid foundation on tackling common identity and access management scenarios. Up next, we will delve into designing a comprehensive governance solution.
 
-![The image is a scenario description from KodeKloud about Vendetta Corp's requirements for using Azure AD as their identity and access management solution, with specific tasks highlighted in blue boxes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867246/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Summary/vendetta-corp-azure-ad-requirements-2.jpg)
+![The image is a scenario description from KodeKloud about Vendetta Corp's requirements for using Azure AD as their identity and access management solution, with specific tasks highlighted in blue boxes.](https://kodekloud.com/kk-media/image/upload/v1752867246/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Summary/vendetta-corp-azure-ad-requirements-2.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/az-305-microsoft-azure-solutions-architect-expert/module/37d1f5fb-99a1-4513-a856-4587651d9a60/lesson/e14ceae1-bdf4-495c-a700-2b040673268e)

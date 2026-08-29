@@ -48,9 +48,7 @@ Several popular registries are available:
 * **Google Container Registry (GCR):** Located at `gcr.io`, it hosts many Kubernetes-related images, including those used for end-to-end cluster testing. These images are publicly accessible.
 * **Private Registries:** For in-house applications that should remain confidential, it is best to host your images in a private registry. Many cloud service providers, including AWS, Azure, and GCP, offer private registries by default.
 
-<Callout icon="lightbulb">
-  Restrict access to your repository using credentials, regardless of whether you're using Docker Hub, GCR, or an internal solution.
-</Callout>
+> **lightbulb** Restrict access to your repository using credentials, regardless of whether you're using Docker Hub, GCR, or an internal solution.
 
 ## Using Private Images with Docker
 
@@ -102,9 +100,7 @@ spec:
 
 When the pod is created, Kubernetes uses the credentials stored in the secret to authenticate with the private registry and pull the required image.
 
-<Callout icon="lightbulb">
-  Ensure that your secret's name in the pod definition matches the name you provided when creating the secret.
-</Callout>
+> **lightbulb** Ensure that your secret's name in the pod definition matches the name you provided when creating the secret.
 
 This concludes our lesson on image security. By following these steps, you can securely deploy container images from both public and private registries in your Kubernetes clusters.
 
@@ -115,6 +111,4 @@ For further reading, consider checking out:
 * [Google Container Registry](https://cloud.google.com/container-registry)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/9806e156-9898-43fc-96ec-8370a5a43655" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/9806e156-9898-43fc-96ec-8370a5a43655)

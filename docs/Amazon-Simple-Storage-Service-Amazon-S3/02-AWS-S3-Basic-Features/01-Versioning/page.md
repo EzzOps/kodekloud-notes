@@ -11,7 +11,7 @@ In this lesson, we dive into **Amazon S3 versioning**—a powerful feature that 
 
 Enabling versioning lets you retain, retrieve, and restore every version of an object stored in your bucket.
 
-![The image illustrates the concept of versioning with a bucket icon and three folder icons, each with a circular arrow, suggesting updates or changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869294/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Versioning/versioning-bucket-folder-icons-diagram.jpg)
+![The image illustrates the concept of versioning with a bucket icon and three folder icons, each with a circular arrow, suggesting updates or changes.](https://kodekloud.com/kk-media/image/upload/v1752869294/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Versioning/versioning-bucket-folder-icons-diagram.jpg)
 
 ## Bucket Versioning States
 
@@ -35,7 +35,7 @@ When versioning is **Enabled**:
 
 The most recent upload is the **current** or **latest** version. A GET request without `versionId` returns this version.
 
-![The image explains how versioning works, showing a file with multiple version IDs and a table listing the file's name, type, version ID, and last modified date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869295/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Versioning/versioning-file-ids-table-explanation.jpg)
+![The image explains how versioning works, showing a file with multiple version IDs and a table listing the file's name, type, version ID, and last modified date.](https://kodekloud.com/kk-media/image/upload/v1752869295/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Versioning/versioning-file-ids-table-explanation.jpg)
 
 ### Enabling Versioning via Console and CLI
 
@@ -58,7 +58,7 @@ aws s3api put-bucket-versioning \
 
 With versioning **enabled**, deleting an object without specifying a version ID does **not** remove its data. Instead, S3 inserts a **delete marker**, which becomes the current version and hides previous versions.
 
-![The image illustrates the concept of deleting file versions, showing a "Delete Marker" and two versions of a file named "file1.txt" with different version IDs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869296/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Versioning/delete-marker-file-versions-file1.jpg)
+![The image illustrates the concept of deleting file versions, showing a "Delete Marker" and two versions of a file named "file1.txt" with different version IDs.](https://kodekloud.com/kk-media/image/upload/v1752869296/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Versioning/delete-marker-file-versions-file1.jpg)
 
 * To **undelete**, remove the delete marker; the next latest version immediately becomes current.
 * To remove a specific version (e.g., version `2` of `file1.txt`), delete that version ID directly—other versions remain intact.
@@ -73,7 +73,7 @@ Every version of an object counts towards your storage usage. You pay for the **
 | Version 2 of file1.txt | 15 GB     |
 | **Total billable**     | **25 GB** |
 
-![The image illustrates versioning prices, showing two versions of a file named "file1.txt" with different sizes, totaling 25 GB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869297/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Versioning/versioning-prices-file1txt-sizes.jpg)
+![The image illustrates versioning prices, showing two versions of a file named "file1.txt" with different sizes, totaling 25 GB.](https://kodekloud.com/kk-media/image/upload/v1752869297/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Versioning/versioning-prices-file1txt-sizes.jpg)
 
 > **triangle-alert** Enabling versioning can significantly increase your storage costs. Implement [Lifecycle rules](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html) to expire or transition older versions to cheaper storage classes.
 
@@ -95,7 +95,7 @@ S3 never purges prior versions automatically. To remove old versions, you must d
 
 > MFA Delete is only configurable via the AWS CLI.
 
-![The image explains Multi-Factor Authentication (MFA) Delete, highlighting that MFA is required to change the versioning state of a bucket and can only be enabled using CLI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869299/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Versioning/mfa-delete-bucket-versioning-cli.jpg)
+![The image explains Multi-Factor Authentication (MFA) Delete, highlighting that MFA is required to change the versioning state of a bucket and can only be enabled using CLI.](https://kodekloud.com/kk-media/image/upload/v1752869299/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Versioning/mfa-delete-bucket-versioning-cli.jpg)
 
 ## Links and References
 

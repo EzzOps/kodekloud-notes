@@ -15,16 +15,16 @@ Scale up by increasing instance size.
 
 > **triangle-alert** Vertical scaling has limits and can be cost-inefficient when traffic is variable.
 
-![The image is a diagram illustrating the need for a load balancer, showing a connection from AWS Cloud to a website and users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869020/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/load-balancer-aws-cloud-diagram.jpg)
+![The image is a diagram illustrating the need for a load balancer, showing a connection from AWS Cloud to a website and users.](https://kodekloud.com/kk-media/image/upload/v1752869020/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/load-balancer-aws-cloud-diagram.jpg)
 
 **Horizontal Scaling**\
 Run multiple identical instances behind a single endpoint. DNS still points to one IP, so without a load balancer new servers receive no traffic.
 
-![The image is a diagram illustrating the need for a load balancer in an AWS cloud setup, showing multiple servers connected to a website and users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869021/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-load-balancer-diagram-servers-users.jpg)
+![The image is a diagram illustrating the need for a load balancer in an AWS cloud setup, showing multiple servers connected to a website and users.](https://kodekloud.com/kk-media/image/upload/v1752869021/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-load-balancer-diagram-servers-users.jpg)
 
 Introducing an **Elastic Load Balancer** solves this:
 
-![The image is a diagram illustrating the use of a load balancer in an AWS cloud setup, showing multiple servers distributing traffic to a website.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869022/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-load-balancer-traffic-distribution-diagram.jpg)
+![The image is a diagram illustrating the use of a load balancer in an AWS cloud setup, showing multiple servers distributing traffic to a website.](https://kodekloud.com/kk-media/image/upload/v1752869022/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-load-balancer-traffic-distribution-diagram.jpg)
 
 As demand grows, new EC2 instances register automatically with the ELB, making scaling transparent to end users.
 
@@ -36,7 +36,7 @@ AWS ELB is highly available and fault tolerant across multiple Availability Zone
 
 Each load balancer uses one or more **listeners** to check for connections on a port (e.g., port 80 for HTTP). Listener rules determine how to forward requests:
 
-![The image illustrates how a load balancer works within an AWS cloud environment, showing traffic distribution across public subnets and target groups to a website.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869023/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-load-balancer-traffic-distribution-diagram-2.jpg)
+![The image illustrates how a load balancer works within an AWS cloud environment, showing traffic distribution across public subnets and target groups to a website.](https://kodekloud.com/kk-media/image/upload/v1752869023/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-load-balancer-traffic-distribution-diagram-2.jpg)
 
 * Default HTTPS port: 443
 * Custom listener ports are supported (e.g., 8080)
@@ -70,7 +70,7 @@ Load balancer nodes perform periodic health checks on each target. Unhealthy tar
 
 > **lightbulb** Configure health check intervals and thresholds to balance rapid failover with avoiding false positives.
 
-![The image illustrates a load balancer health check process within an AWS cloud environment, showing client requests being directed through public subnets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869025/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-load-balancer-health-check-diagram.jpg)
+![The image illustrates a load balancer health check process within an AWS cloud environment, showing client requests being directed through public subnets.](https://kodekloud.com/kk-media/image/upload/v1752869025/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-load-balancer-health-check-diagram.jpg)
 
 ***
 
@@ -83,7 +83,7 @@ Load balancer nodes perform periodic health checks on each target. Unhealthy tar
 
 Both improve fault tolerance and allow seamless scaling.
 
-![The image illustrates a network architecture with public and private load balancers in an AWS cloud environment, showing connections between private and public subnets, a website, and users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869026/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-network-architecture-load-balancers.jpg)
+![The image illustrates a network architecture with public and private load balancers in an AWS cloud environment, showing connections between private and public subnets, a website, and users.](https://kodekloud.com/kk-media/image/upload/v1752869026/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-network-architecture-load-balancers.jpg)
 
 ***
 
@@ -91,7 +91,7 @@ Both improve fault tolerance and allow seamless scaling.
 
 With cross-zone load balancing enabled, each ELB node evenly distributes traffic across all registered targets in every AZ. This prevents hotspots and idle instances.
 
-![The image illustrates the concept of cross-zone load balancing in AWS, showing multiple public subnets with instances connected to a load balancer, which distributes traffic across zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869027/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/cross-zone-load-balancing-aws-diagram.jpg)
+![The image illustrates the concept of cross-zone load balancing in AWS, showing multiple public subnets with instances connected to a load balancer, which distributes traffic across zones.](https://kodekloud.com/kk-media/image/upload/v1752869027/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/cross-zone-load-balancing-aws-diagram.jpg)
 
 > **triangle-alert** Disable cross-zone load balancing only for very specific network requirements. Most deployments should keep it enabled.
 
@@ -104,7 +104,7 @@ With cross-zone load balancing enabled, each ELB node evenly distributes traffic
 | Application Load Balancer (ALB) | Layer 7   | Advanced HTTP/HTTPS routing and features |
 | Network Load Balancer (NLB)     | Layer 4   | High performance TCP/UDP load balancing  |
 
-![The image describes two types of load balancers supported by AWS: Application Load Balancer (ALB) and Network Load Balancer (NLB), highlighting their features and the OSI layers they operate on.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869028/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-load-balancers-alb-nlb-diagram.jpg)
+![The image describes two types of load balancers supported by AWS: Application Load Balancer (ALB) and Network Load Balancer (NLB), highlighting their features and the OSI layers they operate on.](https://kodekloud.com/kk-media/image/upload/v1752869028/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-load-balancers-alb-nlb-diagram.jpg)
 
 ### Network Load Balancer (NLB)
 
@@ -114,7 +114,7 @@ With cross-zone load balancing enabled, each ELB node evenly distributes traffic
 * Routes TCP/UDP/TLS to target groups by port
 * Can route to resources outside the VPC (VPN or Direct Connect)
 
-![The image illustrates how a Network Load Balancer (NLB) works, showing the flow of data between a corporate data center and AWS Cloud through public subnets, with connections to various ports (8080, 80, 443).](../../../../images/kodekloud.com/kk-media/image/upload/v1752869029/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/network-load-balancer-data-flow-diagram.jpg)
+![The image illustrates how a Network Load Balancer (NLB) works, showing the flow of data between a corporate data center and AWS Cloud through public subnets, with connections to various ports (8080, 80, 443).](https://kodekloud.com/kk-media/image/upload/v1752869029/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/network-load-balancer-data-flow-diagram.jpg)
 
 ### Application Load Balancer (ALB)
 
@@ -127,7 +127,7 @@ ALB rules consist of **conditions** and a single **action** (`forward`, `redirec
 * HTTP header
 * Query string
 
-![The image illustrates the features of an AWS Application Load Balancer (ALB), showing various rules like Host Header, Path, and HTTP Request Method, with options for forwarding, redirecting, and fixed responses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869030/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-alb-features-rules-diagram.jpg)
+![The image illustrates the features of an AWS Application Load Balancer (ALB), showing various rules like Host Header, Path, and HTTP Request Method, with options for forwarding, redirecting, and fixed responses.](https://kodekloud.com/kk-media/image/upload/v1752869030/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-alb-features-rules-diagram.jpg)
 
 #### Host Header Routing
 
@@ -137,7 +137,7 @@ Example:
 * If `Host: blog.mywebsite.com`, route to `blog` target group.
 * Default: route all other traffic to `default`.
 
-![The image is a diagram illustrating an AWS Application Load Balancer (ALB) configuration with a host header rule for "blog.mywebsite.com" and a default target group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869031/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-alb-configuration-diagram-blog.jpg)
+![The image is a diagram illustrating an AWS Application Load Balancer (ALB) configuration with a host header rule for "blog.mywebsite.com" and a default target group.](https://kodekloud.com/kk-media/image/upload/v1752869031/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-alb-configuration-diagram-blog.jpg)
 
 #### Path-Based Routing
 
@@ -155,13 +155,13 @@ Allow requests from specific IP addresses to a designated group.
 
 Match custom headers (e.g., `x-environment: staging`) to route to a staging environment:
 
-![The image is a diagram illustrating an AWS Application Load Balancer (ALB) HTTP header configuration, showing how requests are routed based on header rules to different target groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869032/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-alb-http-header-configuration-diagram.jpg)
+![The image is a diagram illustrating an AWS Application Load Balancer (ALB) HTTP header configuration, showing how requests are routed based on header rules to different target groups.](https://kodekloud.com/kk-media/image/upload/v1752869032/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-alb-http-header-configuration-diagram.jpg)
 
 #### Query String Routing
 
 Inspect query parameters (e.g., `?category=books`) and forward accordingly:
 
-![The image illustrates an AWS Application Load Balancer (ALB) configuration with query string rules, showing how requests with the query string "category=books" are directed to a specific target group, while others follow a default rule.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869033/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-alb-configuration-query-string-rules.jpg)
+![The image illustrates an AWS Application Load Balancer (ALB) configuration with query string rules, showing how requests with the query string "category=books" are directed to a specific target group, while others follow a default rule.](https://kodekloud.com/kk-media/image/upload/v1752869033/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/aws-alb-configuration-query-string-rules.jpg)
 
 ***
 
@@ -183,7 +183,7 @@ curl                        http://mywebsite.com/api
 
 ELBs integrate with many AWS services to deliver end-to-end, scalable architectures:
 
-![The image is a diagram showing the integration of Elastic Load Balancing with various AWS services, including Amazon EC2, Amazon ECS, AWS Lambda, AWS WAF, Amazon Route 53, and Autoscaling.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869035/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/elastic-load-balancing-aws-integration-diagram.jpg)
+![The image is a diagram showing the integration of Elastic Load Balancing with various AWS services, including Amazon EC2, Amazon ECS, AWS Lambda, AWS WAF, Amazon Route 53, and Autoscaling.](https://kodekloud.com/kk-media/image/upload/v1752869035/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-Load-Balancer-amp-Target-Groups/elastic-load-balancing-aws-integration-diagram.jpg)
 
 * **EC2**: Distribute incoming traffic across instances
 * **ECS**: Balance containerized workloads

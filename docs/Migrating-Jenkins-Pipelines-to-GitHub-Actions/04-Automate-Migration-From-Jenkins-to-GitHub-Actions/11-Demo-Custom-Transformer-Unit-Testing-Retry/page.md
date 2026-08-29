@@ -114,11 +114,9 @@ After the migrated workflow runs:
 
 This approach keeps the original pipeline intent intact while producing a cleaner, maintainable workflow native to GitHub Actions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/24ef3b09-e929-467f-9424-1586f820f703" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/24ef3b09-e929-467f-9424-1586f820f703)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/807211cc-a4ed-4974-98a5-a850cdeaee5f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/807211cc-a4ed-4974-98a5-a850cdeaee5f)
 
 
 # Demo Custom Transformer Unit Testing Retry

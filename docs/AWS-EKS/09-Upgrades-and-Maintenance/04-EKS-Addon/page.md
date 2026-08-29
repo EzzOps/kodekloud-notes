@@ -20,7 +20,7 @@ By default, the VPC CNI ships as a managed add-on, while CoreDNS and kube-proxy 
 
 Let’s explore an EKS cluster via the AWS Management Console. Here’s my cluster named **kodekloud**, running Kubernetes **v1.29**. The Amazon VPC CNI appears automatically under the Add-ons section.
 
-![The image shows an AWS console page for an EKS cluster named "kodekloud," displaying its active status, Kubernetes version 1.29, and support details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862904/notes-assets/images/AWS-EKS-EKS-Addon/aws-console-eks-cluster-kodekloud.jpg)
+![The image shows an AWS console page for an EKS cluster named "kodekloud," displaying its active status, Kubernetes version 1.29, and support details.](https://kodekloud.com/kk-media/image/upload/v1752862904/notes-assets/images/AWS-EKS-EKS-Addon/aws-console-eks-cluster-kodekloud.jpg)
 
 Even though only the VPC CNI shows up as an add-on, you can verify that CoreDNS and kube-proxy are running:
 
@@ -36,11 +36,11 @@ To bring CoreDNS and kube-proxy under managed add-on control:
 2. Select **CoreDNS** and **kube-proxy**.
 3. Click **Install**; the console auto-selects a compatible version via the EKS API.
 
-![The image shows an AWS console interface for selecting Amazon EKS add-ons, with options like CoreDNS and kube-proxy highlighted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862905/notes-assets/images/AWS-EKS-EKS-Addon/aws-console-eks-addons-selection.jpg)
+![The image shows an AWS console interface for selecting Amazon EKS add-ons, with options like CoreDNS and kube-proxy highlighted.](https://kodekloud.com/kk-media/image/upload/v1752862905/notes-assets/images/AWS-EKS-EKS-Addon/aws-console-eks-addons-selection.jpg)
 
 Next, review the default settings (IAM role, version) and confirm the installation:
 
-![The image shows an AWS console screen for configuring the "kube-proxy" add-on in the Elastic Kubernetes Service, with options to select the version and IAM role. The status indicates "Ready to install."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862906/notes-assets/images/AWS-EKS-EKS-Addon/aws-console-kube-proxy-configure.jpg)
+![The image shows an AWS console screen for configuring the "kube-proxy" add-on in the Elastic Kubernetes Service, with options to select the version and IAM role. The status indicates "Ready to install."](https://kodekloud.com/kk-media/image/upload/v1752862906/notes-assets/images/AWS-EKS-EKS-Addon/aws-console-kube-proxy-configure.jpg)
 
 > **lightbulb** During installation, you may observe both unmanaged and managed instances of these components running in parallel. This is normal until you remove the original unmanaged deployments.
 
@@ -48,11 +48,11 @@ Next, review the default settings (IAM role, version) and confirm the installati
 
 Once installed, all add-ons appear as **Active** in the console—despite already running under the hood.
 
-![The image shows the Amazon Elastic Kubernetes Service (EKS) console, displaying add-ons like Amazon VPC CNI and kube-proxy, with their status and version information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862908/notes-assets/images/AWS-EKS-EKS-Addon/amazon-eks-console-addons-status-version.jpg)
+![The image shows the Amazon Elastic Kubernetes Service (EKS) console, displaying add-ons like Amazon VPC CNI and kube-proxy, with their status and version information.](https://kodekloud.com/kk-media/image/upload/v1752862908/notes-assets/images/AWS-EKS-EKS-Addon/amazon-eks-console-addons-status-version.jpg)
 
 You can update each add-on individually when AWS releases a newer compatible package. The console highlights available updates even if your cluster’s components are up-to-date with Kubernetes standards.
 
-![The image shows an AWS console screen displaying the update status of a Kubernetes add-on in progress, with details like Update ID, AddonVersion, and no errors listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862909/notes-assets/images/AWS-EKS-EKS-Addon/aws-console-kubernetes-addon-update-status.jpg)
+![The image shows an AWS console screen displaying the update status of a Kubernetes add-on in progress, with details like Update ID, AddonVersion, and no errors listed.](https://kodekloud.com/kk-media/image/upload/v1752862909/notes-assets/images/AWS-EKS-EKS-Addon/aws-console-kubernetes-addon-update-status.jpg)
 
 ```bash theme={null}
 kubectl get pods -A
@@ -70,11 +70,11 @@ AWS maintains a growing roster of officially supported add-ons:
 | CSI Snapshot Controller             | Volume snapshot management                       | `eksctl create addon --name aws-ebs-csi-node`      |
 | EKS Pod Identity Agent              | Enable IAM roles for Kubernetes service accounts | `eksctl create addon --name aws-iam-authenticator` |
 
-![The image shows an AWS console interface for selecting Amazon EKS add-ons, including options like CSI Snapshot Controller and Amazon EKS Pod Identity Agent.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862910/notes-assets/images/AWS-EKS-EKS-Addon/aws-console-eks-addons-selection-2.jpg)
+![The image shows an AWS console interface for selecting Amazon EKS add-ons, including options like CSI Snapshot Controller and Amazon EKS Pod Identity Agent.](https://kodekloud.com/kk-media/image/upload/v1752862910/notes-assets/images/AWS-EKS-EKS-Addon/aws-console-eks-addons-selection-2.jpg)
 
 Marketplace add-ons introduce extra dependencies and may lag behind Kubernetes releases. For instance, attempting to install KubeCost without a subscription—or if no compatible package exists—can block your upgrade path:
 
-![The image shows an AWS console screen for configuring add-ons, specifically for "Kubecost - Amazon EKS cost monitoring." It indicates that a subscription is required and that the selected add-on does not support the Kubernetes version for the cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862912/notes-assets/images/AWS-EKS-EKS-Addon/aws-console-kubecost-addons-configuration.jpg)
+![The image shows an AWS console screen for configuring add-ons, specifically for "Kubecost - Amazon EKS cost monitoring." It indicates that a subscription is required and that the selected add-on does not support the Kubernetes version for the cluster.](https://kodekloud.com/kk-media/image/upload/v1752862912/notes-assets/images/AWS-EKS-EKS-Addon/aws-console-kubecost-addons-configuration.jpg)
 
 > **triangle-alert** Marketplace add-ons may show “no versions available” if they don’t support your Kubernetes version. This can delay critical upgrades.
 
@@ -88,7 +88,7 @@ For maximum control over versions, rollout timing, and configuration, consider m
 
 This approach streamlines testing and upgrades, removing external bottlenecks.
 
-![The image is a diagram illustrating the concept of avoiding add-ons for smoother flow, featuring hexagons with gear icons and a central cloud API symbol.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862913/notes-assets/images/AWS-EKS-EKS-Addon/avoiding-add-ons-smoother-flow-diagram.jpg)
+![The image is a diagram illustrating the concept of avoiding add-ons for smoother flow, featuring hexagons with gear icons and a central cloud API symbol.](https://kodekloud.com/kk-media/image/upload/v1752862913/notes-assets/images/AWS-EKS-EKS-Addon/avoiding-add-ons-smoother-flow-diagram.jpg)
 
 ## Conclusion
 

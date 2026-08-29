@@ -36,9 +36,7 @@ Further reading:
 * Kyverno docs: [https://kyverno.io/docs/](https://kyverno.io/docs/)
 * Gatekeeper: [https://open-policy-agent.github.io/gatekeeper/](https://open-policy-agent.github.io/gatekeeper/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/1a5a6874-6438-434c-a731-163beffe04ea" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/1a5a6874-6438-434c-a731-163beffe04ea)
 
 
 # OPA Gatekeeper Constraint Based Policy Enforcement
@@ -156,13 +154,9 @@ A staged rollout prevents sudden breakage across clusters and teams:
 2. Move to `warn` — surfaces issues to users while still allowing requests.
 3. Finally switch to `deny` — fully enforce the policy once remediation is complete.
 
-<Callout icon="lightbulb">
-  Rollout checklist: apply the ConstraintTemplate, create Constraints in `dryrun` mode, monitor recorded violations and fix offending resources, switch to `warn` for visibility, then set `enforcementAction: deny` when remediation is complete.
-</Callout>
+> **lightbulb** Rollout checklist: apply the ConstraintTemplate, create Constraints in `dryrun` mode, monitor recorded violations and fix offending resources, switch to `warn` for visibility, then set `enforcementAction: deny` when remediation is complete.
 
-<Callout icon="warning">
-  Important: Applying `deny` without a phased rollout can cause outages. Always run `dryrun` first and ensure teams have time to remediate violations before enforcing.
-</Callout>
+> **warning** Important: Applying `deny` without a phased rollout can cause outages. Always run `dryrun` first and ensure teams have time to remediate violations before enforcing.
 
 ## Debugging Gatekeeper
 
@@ -212,6 +206,4 @@ Always follow a phased rollout: `dryrun` → `warn` → `deny`. Practice authori
 * [Open Policy Agent (OPA) — Rego language docs](https://www.openpolicyagent.org/docs/latest/policy-language/)
 * [Docker Hub](https://hub.docker.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/f677c67f-5636-431f-9ce8-edca2d1c5c9d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/f677c67f-5636-431f-9ce8-edca2d1c5c9d)

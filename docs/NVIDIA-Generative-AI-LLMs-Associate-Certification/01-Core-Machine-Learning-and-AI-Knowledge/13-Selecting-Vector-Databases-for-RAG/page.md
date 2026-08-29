@@ -68,14 +68,10 @@ Further reading and references
 * Overview of ANN/indexing techniques: [https://ann-benchmarks.com/](https://ann-benchmarks.com/)
 * Vector DB comparisons and benchmarks: search vendor documentation and independent benchmarks for reproducible results
 
-<Callout icon="lightbulb">
-  When evaluating vector databases for RAG, prioritize ANN capabilities (index types, recall/speed trade-offs, metric support, and scaling options). Then consider integration features (metadata filtering, persistence, API) and operational factors (cost, licensing, and tooling).
-</Callout>
+> **lightbulb** When evaluating vector databases for RAG, prioritize ANN capabilities (index types, recall/speed trade-offs, metric support, and scaling options). Then consider integration features (metadata filtering, persistence, API) and operational factors (cost, licensing, and tooling).
 
 <Frame>
   <img alt="The image contains a question about selecting a vector database for a RAG system, emphasizing the importance of the database's efficiency in performing approximate nearest neighbor (ANN) searches." />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/86f9d0ce-2b6b-4289-a5a1-86485c10775c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/86f9d0ce-2b6b-4289-a5a1-86485c10775c)

@@ -10,9 +10,7 @@ If you've ever glanced at your cloud bill and wondered, "where did all that mone
 
 I'm Raghunandana Sanur, and I'll guide you through FinOps — the intersection of finance, operations, and cloud engineering. We'll unpack the fundamentals, walk through real-world scenarios, and practice cost optimization using a hands-on, gamified format.
 
-<Callout icon="lightbulb">
-  This course is ideal for DevOps engineers, cloud architects, finance stakeholders, and anyone responsible for cloud cost management. No prior FinOps certification required — bring your curiosity and cloud billing data.
-</Callout>
+> **lightbulb** This course is ideal for DevOps engineers, cloud architects, finance stakeholders, and anyone responsible for cloud cost management. No prior FinOps certification required — bring your curiosity and cloud billing data.
 
 Why FinOps matters:
 
@@ -89,6 +87,4 @@ Recommended resources and references:
 
 Get ready to dive in — we'll answer the first question you probably have in mind.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/24982811-6142-4554-afd8-2b5f3b8a7f28/lesson/ef78056a-1d05-4576-8dae-e3c1aa9f17c9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/24982811-6142-4554-afd8-2b5f3b8a7f28/lesson/ef78056a-1d05-4576-8dae-e3c1aa9f17c9)

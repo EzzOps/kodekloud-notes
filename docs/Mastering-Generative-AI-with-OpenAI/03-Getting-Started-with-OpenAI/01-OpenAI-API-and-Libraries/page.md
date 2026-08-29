@@ -28,9 +28,7 @@ This single package provides both:
 * The Python client library (`import openai`)
 * The `openai` CLI tool for tasks like generating completions or fine-tuning models
 
-<Callout icon="triangle-alert">
-  Never commit your `OPENAI_API_KEY` in plaintext. Always load it from an environment variable or a secrets manager.
-</Callout>
+> **triangle-alert** Never commit your `OPENAI_API_KEY` in plaintext. Always load it from an environment variable or a secrets manager.
 
 #### Quickstart Example
 

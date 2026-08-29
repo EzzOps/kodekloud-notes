@@ -14,7 +14,7 @@ Selecting the right storage solution starts with understanding the varying types
 
 Structured data is organized in a relational database format using rows and columns with a shared schema. This type of data is commonly used for managing customer information and product catalogs on e-commerce websites.
 
-![The image is an infographic from KodeKloud explaining three types of data: structured, semi-structured, and unstructured, with brief descriptions of each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867147/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-data-storage/data-types-infographic-kodekloud.jpg)
+![The image is an infographic from KodeKloud explaining three types of data: structured, semi-structured, and unstructured, with brief descriptions of each.](https://kodekloud.com/kk-media/image/upload/v1752867147/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-data-storage/data-types-infographic-kodekloud.jpg)
 
 ### Semi-Structured Data
 
@@ -44,7 +44,7 @@ Table Storage is a NoSQL database service designed for flexible schema managemen
 
 Queue Storage offers a robust messaging solution that decouples application components for streamlined processing. For example, in a function-based architecture, a user action—like clicking on a resized image—can trigger a message that is queued for sequential processing, ensuring orderly and efficient workflow management.
 
-![The image is a diagram illustrating Azure storage services, showing how different types of data (blobs, directories, entities, messages) are organized under containers, files, tables, and queues.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867149/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-data-storage/azure-storage-services-diagram.jpg)
+![The image is a diagram illustrating Azure storage services, showing how different types of data (blobs, directories, entities, messages) are organized under containers, files, tables, and queues.](https://kodekloud.com/kk-media/image/upload/v1752867149/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-data-storage/azure-storage-services-diagram.jpg)
 
 > **lightbulb** Azure's diverse storage offerings enable you to craft a data management strategy that aligns with your application needs, whether you're handling structured, semi-structured, or unstructured data.
 

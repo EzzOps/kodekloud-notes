@@ -8,11 +8,11 @@ In this guide, we explore S3 ACLs and resource policies, explaining how they con
 
 When you create an S3 bucket, it starts in a locked-down state. By default, only the bucket creator—and the root user, who has full account access—can access it. Other AWS users within your account, public users, and users from other AWS accounts do not get access automatically.
 
-![The image illustrates S3 access permissions for different types of AWS users, showing that the creator and root user have access, while other AWS users, users from another AWS account, and anonymous/public users do not.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866008/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies/s3-access-permissions-aws-users.jpg)
+![The image illustrates S3 access permissions for different types of AWS users, showing that the creator and root user have access, while other AWS users, users from another AWS account, and anonymous/public users do not.](https://kodekloud.com/kk-media/image/upload/v1752866008/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies/s3-access-permissions-aws-users.jpg)
 
 Within AWS, resource policies define who can access a specific S3 resource. In the case of buckets, these are known as bucket policies. An S3 bucket policy determines which users have permission to access the bucket and specifies the operations they are authorized to perform.
 
-![The image explains S3 bucket policies, highlighting the differences between a Resource Policy and an S3 Bucket Policy in terms of access and operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866009/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies/s3-bucket-policies-resource-access.jpg)
+![The image explains S3 bucket policies, highlighting the differences between a Resource Policy and an S3 Bucket Policy in terms of access and operations.](https://kodekloud.com/kk-media/image/upload/v1752866009/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies/s3-bucket-policies-resource-access.jpg)
 
 ## Bucket Policy Structure
 
@@ -167,7 +167,7 @@ Additionally, you can combine conditions to allow access to multiple prefixes. H
 
 AWS provides a "Block Public Access" setting as an extra security measure to prevent accidental exposure of your buckets. Even if you create a bucket policy that appears to grant public access, AWS will block it until you disable the "Block all public access" option.
 
-![The image is a screenshot of a settings panel for blocking public access to S3 buckets and objects, with options to block access through access control lists and public bucket policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866010/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies/s3-bucket-access-settings-panel.jpg)
+![The image is a screenshot of a settings panel for blocking public access to S3 buckets and objects, with options to block access through access control lists and public bucket policies.](https://kodekloud.com/kk-media/image/upload/v1752866010/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies/s3-bucket-access-settings-panel.jpg)
 
 For example, consider this policy intended to allow all users within your AWS account access:
 
@@ -201,17 +201,17 @@ Understanding the differences between IAM policies and resource (bucket) policie
 * **Resource Policies:**\
   These policies are directly attached to AWS resources such as S3 buckets. They can grant permissions to both authenticated AWS users and anonymous/public users.
 
-![The image compares IAM Policy and Resource Policy, highlighting that IAM Policy applies to authenticated AWS users, while Resource Policy can include rules for anonymous or public users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866011/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies/iam-policy-vs-resource-policy.jpg)
+![The image compares IAM Policy and Resource Policy, highlighting that IAM Policy applies to authenticated AWS users, while Resource Policy can include rules for anonymous or public users.](https://kodekloud.com/kk-media/image/upload/v1752866011/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies/iam-policy-vs-resource-policy.jpg)
 
 It is essential that both policies permit an operation for it to succeed. If either the IAM policy or the resource policy denies access, the request will be blocked.
 
-![The image compares IAM policies and resource policies using icons of a person, documents with checkmarks or crosses, and buckets, illustrating different access scenarios.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866014/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies/iam-policies-resource-policies-comparison.jpg)
+![The image compares IAM policies and resource policies using icons of a person, documents with checkmarks or crosses, and buckets, illustrating different access scenarios.](https://kodekloud.com/kk-media/image/upload/v1752866014/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies/iam-policies-resource-policies-comparison.jpg)
 
 ## Legacy ACLs
 
 Access Control Lists (ACLs) are a legacy mechanism predating IAM that provide basic access control through a limited set of rules. ACLs offer five permissions such as reading objects, writing objects, reading ACLs, writing ACLs, and full control. Due to their limited flexibility and granularity, ACLs are not recommended for routine bucket management.
 
-![The image is an informational graphic about S3 ACLs, describing them as a legacy access control mechanism with limited flexibility and a table detailing different ACL permissions for buckets and objects.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866016/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies/s3-acls-legacy-access-control.jpg)
+![The image is an informational graphic about S3 ACLs, describing them as a legacy access control mechanism with limited flexibility and a table detailing different ACL permissions for buckets and objects.](https://kodekloud.com/kk-media/image/upload/v1752866016/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies/s3-acls-legacy-access-control.jpg)
 
 ## Summary
 
@@ -224,7 +224,7 @@ Bucket policies define who can access your S3 bucket and what operations they ca
 
 Bucket policies are used in conjunction with IAM policies. For instance, if an IAM policy denies access to a specific action, that denial takes precedence—even if a resource policy allows it. Similarly, granting public access requires the use of a bucket policy, as IAM policies only apply to AWS users.
 
-![The image is a summary slide with three points about access policies, detailing who can access a bucket, the components of a policy, and the role of the principal.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866017/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies/access-policies-summary-slide.jpg)
+![The image is a summary slide with three points about access policies, detailing who can access a bucket, the components of a policy, and the role of the principal.](https://kodekloud.com/kk-media/image/upload/v1752866017/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies/access-policies-summary-slide.jpg)
 
 By understanding the distinct roles and interactions of IAM policies, resource policies, and legacy ACLs, you can configure your S3 bucket access securely and effectively.
 

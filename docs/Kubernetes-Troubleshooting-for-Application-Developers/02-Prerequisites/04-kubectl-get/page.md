@@ -148,9 +148,7 @@ spec:
 
 This YAML output includes all key details such as metadata, specifications, and container configurations.
 
-<Callout icon="lightbulb">
-  The manifest output closely resembles the original file used for deployment creation, making it an excellent reference for understanding the resource structure.
-</Callout>
+> **lightbulb** The manifest output closely resembles the original file used for deployment creation, making it an excellent reference for understanding the resource structure.
 
 ──────────────────────────────────────────────
 
@@ -200,10 +198,6 @@ In summary, this article covered:
 * Extracting specific information (like the number of replicas) using grep or JSONPath.
 * Retrieving container specifications directly from the deployment definition.
 
-<Callout icon="lightbulb">
-  For more detailed information and advanced use cases, make sure to visit the [official Kubernetes documentation](https://kubernetes.io/docs/).
-</Callout>
+> **lightbulb** For more detailed information and advanced use cases, make sure to visit the [official Kubernetes documentation](https://kubernetes.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/03d75733-68c9-4385-878c-d4462fb8d59f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/03d75733-68c9-4385-878c-d4462fb8d59f)

@@ -43,9 +43,7 @@ INFO:     127.0.0.1:54950 - "PUT /posts/1 HTTP/1.1" 200 OK
 INFO:     127.0.0.1:65135 - "PUT /posts/12342324 HTTP/1.1" 404 Not Found
 ```
 
-<Callout icon="lightbulb">
-  Remember that the Pydantic model is primarily used for request/response data validation, while the SQLAlchemy model is used to define the persistent data structure of your database.
-</Callout>
+> **lightbulb** Remember that the Pydantic model is primarily used for request/response data validation, while the SQLAlchemy model is used to define the persistent data structure of your database.
 
 ## Differentiating Between Pydantic and SQLAlchemy Models
 
@@ -154,20 +152,14 @@ class Post(Base):
 
 The diagram below further illustrates how the SQLAlchemy model defines the columns of the "posts" table and its role in handling operations such as querying, creating, deleting, and updating database entries:
 
-<Frame>
-  ![The image is a slide explaining SQLAlchemy models, highlighting their role in defining columns of a "posts" table in PostgreSQL and their use in querying, creating, deleting, and updating database entries. It includes a diagram showing the relationship between the SQLAlchemy model and the posts table.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883338/notes-assets/images/Python-API-Development-with-FastAPI-Pydantic-Sqlalchemy-Models/sqlalchemy-models-posts-table-diagram.jpg)
-</Frame>
+![The image is a slide explaining SQLAlchemy models, highlighting their role in defining columns of a "posts" table in PostgreSQL and their use in querying, creating, deleting, and updating database entries. It includes a diagram showing the relationship between the SQLAlchemy model and the posts table.](https://kodekloud.com/kk-media/image/upload/v1752883338/notes-assets/images/Python-API-Development-with-FastAPI-Pydantic-Sqlalchemy-Models/sqlalchemy-models-posts-table-diagram.jpg)
 
 ## Summary
 
 In summary, the Pydantic model (schema) ensures that both requests and responses comply with the expected data structures, while the SQLAlchemy model provides a detailed blueprint of the database table structure. Although adopting Pydantic models is technically optional, it is a best practice for building robust and secure APIs by enforcing strict data validation.
 
-<Callout icon="lightbulb">
-  By carefully separating concerns—using Pydantic for data validation and SQLAlchemy for database interactions—developers can build maintainable and secure APIs that efficiently manage data flow between clients and servers.
-</Callout>
+> **lightbulb** By carefully separating concerns—using Pydantic for data validation and SQLAlchemy for database interactions—developers can build maintainable and secure APIs that efficiently manage data flow between clients and servers.
 
 For more details consider exploring the [FastAPI Documentation](https://fastapi.tiangolo.com/) and [SQLAlchemy Documentation](https://docs.sqlalchemy.org/en/14/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/89b3bb56-38a5-4f1d-820a-71ca94b9162d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/89b3bb56-38a5-4f1d-820a-71ca94b9162d)

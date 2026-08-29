@@ -39,9 +39,7 @@ Conversion accuracy and next steps
 
 The importer often converts approximately 80% of a typical pipeline automatically. Actual conversion rates depend on pipeline complexity, custom integrations, and platform-specific features (for example, proprietary plugins, in-house scripts, or specialized deployment targets). Any generated workflow should be reviewed, tested, and adjusted before being used in production.
 
-<Callout icon="lightbulb">
-  Always inspect and test generated workflows. Automated conversions frequently require manual changes for `secrets` handling, environment setup, or custom steps. Refer to the GitHub Actions security and secrets docs when migrating sensitive data.
-</Callout>
+> **lightbulb** Always inspect and test generated workflows. Automated conversions frequently require manual changes for `secrets` handling, environment setup, or custom steps. Refer to the GitHub Actions security and secrets docs when migrating sensitive data.
 
 Links and references
 
@@ -50,6 +48,4 @@ Links and references
 * [Docker](https://www.docker.com) — runtime used for isolated migration tasks
 * [GitHub Actions: Encrypted secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets) — guidance for secrets management during migration
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/d81972b2-aae1-4631-8f2f-f94b48451e4e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/d81972b2-aae1-4631-8f2f-f94b48451e4e)

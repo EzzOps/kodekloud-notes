@@ -26,7 +26,7 @@ When you launch an EC2 instance in a public subnet, AWS automatically assigns a 
 
 If **Server A** goes down, simply disassociate its Elastic IP and reassign it to **Server B**. Clients continue to reach your application at the same address (`1.1.1.1`), eliminating DNS propagation delays.
 
-![The image illustrates an AWS Cloud setup with two servers, Server A and Server B. Server A has an error, while Server B is associated with the IP address 1.1.1.1.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863220/notes-assets/images/AWS-Networking-Fundamentals-Elastic-IP/aws-cloud-setup-servers-error-ip.jpg)
+![The image illustrates an AWS Cloud setup with two servers, Server A and Server B. Server A has an error, while Server B is associated with the IP address 1.1.1.1.](https://kodekloud.com/kk-media/image/upload/v1752863220/notes-assets/images/AWS-Networking-Fundamentals-Elastic-IP/aws-cloud-setup-servers-error-ip.jpg)
 
 ## Allocating and Managing Elastic IPs
 

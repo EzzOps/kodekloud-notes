@@ -18,9 +18,7 @@ Interpreting flame graphs and call stacks
 * Use heap and allocs data to correlate CPU activity with memory growth; goroutine and mutex profiles often reveal synchronization bottlenecks or leaks.
 * Prioritize optimization on code paths that are both high-cost and frequently executed.
 
-<Callout icon="warning">
-  pprof endpoints can expose detailed runtime and stack information. Do not expose them to untrusted networks—restrict access with network controls (firewalls, port binding), or secure access methods (SSH tunnels, VPNs).
-</Callout>
+> **warning** pprof endpoints can expose detailed runtime and stack information. Do not expose them to untrusted networks—restrict access with network controls (firewalls, port binding), or secure access methods (SSH tunnels, VPNs).
 
 Links and references
 
@@ -30,9 +28,7 @@ Links and references
 
 This covers enabling pprof in the OpenTelemetry Collector, collecting runtime profiles, and basic analysis workflows to find CPU, memory, and concurrency issues.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/6b3d6ddd-0cd7-4b94-8e52-fb70c8b38d94" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/6b3d6ddd-0cd7-4b94-8e52-fb70c8b38d94)
 
 
 # Extensions zPages
@@ -51,9 +47,7 @@ extensions:
     endpoint: "0.0.0.0:55679"
 ```
 
-<Callout icon="lightbulb">
-  zPages exposes in-process diagnostic web pages (servicez, pipelinez, extensionz, featurez, tracez) for quick operational visibility. It is not a metrics scrape endpoint like Prometheus. See the OpenTelemetry Collector documentation for extension configuration and security recommendations.
-</Callout>
+> **lightbulb** zPages exposes in-process diagnostic web pages (servicez, pipelinez, extensionz, featurez, tracez) for quick operational visibility. It is not a metrics scrape endpoint like Prometheus. See the OpenTelemetry Collector documentation for extension configuration and security recommendations.
 
 Key zPages you’ll commonly use:
 
@@ -100,9 +94,7 @@ The tracez page groups spans generated inside the Collector by latency buckets s
   <img alt="The image shows a table of trace spans with latency and error samples, alongside detailed logs indicating HTTP request failures and retry intervals." />
 </Frame>
 
-<Callout icon="warning">
-  Do not expose zPages to untrusted networks. zPages reveals internal diagnostics that could disclose configuration and runtime details. Run the extension on localhost or protect it with network policies and authentication if accessible from broader networks.
-</Callout>
+> **warning** Do not expose zPages to untrusted networks. zPages reveals internal diagnostics that could disclose configuration and runtime details. Run the extension on localhost or protect it with network policies and authentication if accessible from broader networks.
 
 References and further reading
 
@@ -110,6 +102,4 @@ References and further reading
 * zPages (OpenTelemetry): [https://opentelemetry.io/docs/reference/specification/zpages/](https://opentelemetry.io/docs/reference/specification/zpages/)
 * OpenTelemetry Collector configuration: [https://opentelemetry.io/docs/collector/configuration/](https://opentelemetry.io/docs/collector/configuration/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/e754077d-2077-452f-8926-1653a5a3e5f7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/e754077d-2077-452f-8926-1653a5a3e5f7)

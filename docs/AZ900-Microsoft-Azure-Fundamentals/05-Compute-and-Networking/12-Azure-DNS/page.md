@@ -19,7 +19,7 @@ Azure DNS comes with several outstanding features:
 3. **Fast and Scalable**\
    With its ability to handle a high volume of DNS queries with low latency, Azure DNS automatically scales to meet your application's demands. This fully-managed service eliminates the need for manual server management.
 
-![The image highlights the key features of Azure DNS: Global Reach, Security and Reliability, and Fast and Scalable, each represented with icons and different colored backgrounds.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868276/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-DNS/azure-dns-key-features-icons.jpg)
+![The image highlights the key features of Azure DNS: Global Reach, Security and Reliability, and Fast and Scalable, each represented with icons and different colored backgrounds.](https://kodekloud.com/kk-media/image/upload/v1752868276/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-DNS/azure-dns-key-features-icons.jpg)
 
 > **lightbulb** Azure DNS provides a platform-managed environment that reduces the overhead associated with running your own DNS servers.
 
@@ -32,7 +32,7 @@ Azure DNS not only improves performance but also delivers significant benefits t
 * **Custom Domains**: Easily manage and host your custom DNS domains in a central, Azure-managed environment.
 * **Automated Record Management**: Update DNS records through the Azure management APIs or the Azure Portal, streamlining the process and centralizing control.
 
-![The image lists the benefits of Azure DNS, highlighting seamless integration, custom domains, and automated record management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868277/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-DNS/azure-dns-benefits-integration-domains.jpg)
+![The image lists the benefits of Azure DNS, highlighting seamless integration, custom domains, and automated record management.](https://kodekloud.com/kk-media/image/upload/v1752868277/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-DNS/azure-dns-benefits-integration-domains.jpg)
 
 ## Use Cases
 
@@ -42,7 +42,7 @@ Azure DNS is ideal for managing domain needs associated with Azure-hosted applic
 * Hosting DNS records for applications running on Azure.
 * Ensuring reliable domain resolution to improve website and application availability.
 
-![The image illustrates common use cases for Azure DNS, including domain management, records for Azure-hosted apps, and reliable domain resolution. It features a computer monitor with a DNS logo and a cloud graphic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868278/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-DNS/azure-dns-use-cases-illustration.jpg)
+![The image illustrates common use cases for Azure DNS, including domain management, records for Azure-hosted apps, and reliable domain resolution. It features a computer monitor with a DNS logo and a cloud graphic.](https://kodekloud.com/kk-media/image/upload/v1752868278/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-DNS/azure-dns-use-cases-illustration.jpg)
 
 > **lightbulb** Azure DNS is a critical component for businesses that depend on Azure-hosted applications, as it provides a scalable and secure solution for all your domain management needs.
 

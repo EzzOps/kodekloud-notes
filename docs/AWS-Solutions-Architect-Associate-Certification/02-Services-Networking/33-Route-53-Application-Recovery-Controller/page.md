@@ -24,7 +24,7 @@ Route 53, our DNS management service, initially directs traffic to the active si
 
 Below is a diagram illustrating the Application Recovery Controller architecture, emphasizing how traffic routing is managed between active and standby sites:
 
-![The image illustrates an "Application Recovery Controller Architecture" with a focus on routing control and readiness checks for AWS resources across active and standby sites. It shows a recovery group setup with regions US-EAST-1 and US-WEST-1, highlighting resource sets and cells.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865657/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Route-53-Application-Recovery-Controller/application-recovery-controller-architecture.jpg)
+![The image illustrates an "Application Recovery Controller Architecture" with a focus on routing control and readiness checks for AWS resources across active and standby sites. It shows a recovery group setup with regions US-EAST-1 and US-WEST-1, highlighting resource sets and cells.](https://kodekloud.com/kk-media/image/upload/v1752865657/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Route-53-Application-Recovery-Controller/application-recovery-controller-architecture.jpg)
 
 ## Key Concepts
 
@@ -42,7 +42,7 @@ The controller continuously performs readiness checks on the standby deployment,
 
 Below is a summary diagram highlighting the key features of the Route 53 Application Recovery Controller, including its monitoring capabilities, simplified failover process, and resource optimization for recovery readiness:
 
-![The image is a summary slide about Amazon Route 53 Application Recovery Controller, highlighting its features such as monitoring application recovery, simplifying processes, and organizing resources for failover readiness.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865658/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Route-53-Application-Recovery-Controller/amazon-route-53-recovery-controller-summary.jpg)
+![The image is a summary slide about Amazon Route 53 Application Recovery Controller, highlighting its features such as monitoring application recovery, simplifying processes, and organizing resources for failover readiness.](https://kodekloud.com/kk-media/image/upload/v1752865658/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Route-53-Application-Recovery-Controller/amazon-route-53-recovery-controller-summary.jpg)
 
 ## Conclusion
 

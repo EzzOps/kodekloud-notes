@@ -60,7 +60,7 @@ When creating or modifying a SAS token, you can reference a stored access policy
 
 This method ensures that the generated SAS token simply references the policy by its identifier. Any future changes to the policy, such as updating permissions, are automatically reflected in the token’s effective access rights.
 
-![The image shows a Microsoft Azure portal interface for generating a shared access token for a storage container named "airportcodes." It includes options for setting permissions, start and expiry dates, and generating a SAS token and URL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866672/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Stored-Access-Policies/azure-portal-shared-access-token.jpg)
+![The image shows a Microsoft Azure portal interface for generating a shared access token for a storage container named "airportcodes." It includes options for setting permissions, start and expiry dates, and generating a SAS token and URL.](https://kodekloud.com/kk-media/image/upload/v1752866672/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Stored-Access-Policies/azure-portal-shared-access-token.jpg)
 
 > **lightbulb** Using stored access policies minimizes administrative overhead and reduces the risk of outdated or misconfigured SAS tokens when access requirements change.
 

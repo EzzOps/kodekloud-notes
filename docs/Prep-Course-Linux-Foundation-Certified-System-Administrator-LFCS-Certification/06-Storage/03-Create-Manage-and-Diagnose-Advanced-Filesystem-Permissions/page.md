@@ -27,9 +27,7 @@ In the above output, each file is owned by the user `alex` and the group `staff`
 2. The next three characters (`rw-`) show that users in the `staff` group can also read and write.
 3. The final three characters (`r--`) mean that all other users have read-only access.
 
-<Callout icon="lightbulb">
-  If you log in as another user (e.g., Jeremy Morgan) who is neither `alex` nor part of the `staff` group, only the last set of permissions (`r--`) applies.
-</Callout>
+> **lightbulb** If you log in as another user (e.g., Jeremy Morgan) who is neither `alex` nor part of the `staff` group, only the last set of permissions (`r--`) applies.
 
 Imagine Jeremy needs to edit only `file3` without being granted full access to all files owned by the group or changing file ownership. This is where ACLs become useful.
 

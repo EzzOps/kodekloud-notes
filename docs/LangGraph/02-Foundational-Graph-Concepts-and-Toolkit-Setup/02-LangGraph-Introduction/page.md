@@ -15,9 +15,7 @@ You can set `OPENAI_API_KEY` in your shell or let the script prompt for it at ru
 | `OPENAI_API_KEY` | Auth for OpenAI API                  | set in env or prompt at runtime |
 | `OPENAI_MODEL`   | Model selection                      | `gpt-4` (default)               |
 
-<Callout icon="warning">
-  Protect your `OPENAI_API_KEY`. Using LLMs incurs cost — monitor usage and model selection (`OPENAI_MODEL`) to control billing.
-</Callout>
+> **warning** Protect your `OPENAI_API_KEY`. Using LLMs incurs cost — monitor usage and model selection (`OPENAI_MODEL`) to control billing.
 
 ## Initialize the client and constants
 
@@ -128,11 +126,9 @@ Each extension is implemented by adding nodes or orchestration logic — you do 
 * OpenAI Responses API: [https://platform.openai.com/docs/api-reference/responses](https://platform.openai.com/docs/api-reference/responses)
 * OpenAI Python client: [https://github.com/openai/openai-python](https://github.com/openai/openai-python)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/9ad1c023-6ddf-41fa-9043-b5ed2c4e66d6/lesson/1fe2b2d1-2d71-4bb3-8078-49d514b6dac9" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/9ad1c023-6ddf-41fa-9043-b5ed2c4e66d6/lesson/1fe2b2d1-2d71-4bb3-8078-49d514b6dac9)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langgraph/module/9ad1c023-6ddf-41fa-9043-b5ed2c4e66d6/lesson/c890ba0e-262b-4deb-ab58-69bf6f25d269" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langgraph/module/9ad1c023-6ddf-41fa-9043-b5ed2c4e66d6/lesson/c890ba0e-262b-4deb-ab58-69bf6f25d269)
 
 
 # LangGraph Introduction
@@ -247,9 +243,7 @@ Key LangGraph features
   <img alt="The image is an infographic titled &#x22;LangGraph – Key Features,&#x22; highlighting features like state persistence, human-in-the-loop support, streaming outputs, looping & branching, and LangChain integration." />
 </Frame>
 
-<Callout icon="lightbulb">
-  LangGraph provides a declarative, visual state machine you can build on top of familiar LangChain components — giving you structure and control for complex agent workflows.
-</Callout>
+> **lightbulb** LangGraph provides a declarative, visual state machine you can build on top of familiar LangChain components — giving you structure and control for complex agent workflows.
 
 Real-world use cases
 
@@ -286,6 +280,4 @@ Further reading and next steps
 * Use human review nodes for safety-critical decisions.
 * Reuse LangChain components (LLMs, tools, memory) inside LangGraph nodes for faster development.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/9ad1c023-6ddf-41fa-9043-b5ed2c4e66d6/lesson/9cd71629-d144-4ab6-a82f-730486f4049f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/9ad1c023-6ddf-41fa-9043-b5ed2c4e66d6/lesson/9cd71629-d144-4ab6-a82f-730486f4049f)

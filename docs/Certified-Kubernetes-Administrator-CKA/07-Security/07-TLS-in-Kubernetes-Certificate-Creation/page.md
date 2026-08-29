@@ -42,7 +42,7 @@ The resulting `admin.crt` file functions as a secure credential, akin to a usern
 
 A similar process is followed to generate client certificates for other components such as the scheduler, controller manager, and kube-proxy.
 
-![The image illustrates the process of generating and signing certificates for "Kube Scheduler," showing keys, certificate requests, and a certificate.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869972/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-in-Kubernetes-Certificate-Creation/frame_230.jpg)
+![The image illustrates the process of generating and signing certificates for "Kube Scheduler," showing keys, certificate requests, and a certificate.](https://kodekloud.com/kk-media/image/upload/v1752869972/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-in-Kubernetes-Certificate-Creation/frame_230.jpg)
 
 ***
 
@@ -70,7 +70,7 @@ The API server will respond with a JSON object listing the pods:
 
 Most Kubernetes clients can load these connection parameters via a kubeconfig file that consolidates the information required to reach the API server.
 
-![The image illustrates a diagram of client certificates for Kubernetes components, including admin, scheduler, controller-manager, kube-proxy, and kubelet, with associated keys and certificates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869973/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-in-Kubernetes-Certificate-Creation/frame_260.jpg)
+![The image illustrates a diagram of client certificates for Kubernetes components, including admin, scheduler, controller-manager, kube-proxy, and kubelet, with associated keys and certificates.](https://kodekloud.com/kk-media/image/upload/v1752869973/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-in-Kubernetes-Certificate-Creation/frame_260.jpg)
 
 ***
 
@@ -78,7 +78,7 @@ Most Kubernetes clients can load these connection parameters via a kubeconfig fi
 
 For secure communication, both client and server certificates must trust the same CA root certificate. This certificate is used by both parties to verify the authenticity of the certificate they receive.
 
-![The image illustrates client and server certificates for Kubernetes components, including admin, scheduler, controller-manager, kube-proxy, kubelet, and etcd server, with associated keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869975/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-in-Kubernetes-Certificate-Creation/frame_330.jpg)
+![The image illustrates client and server certificates for Kubernetes components, including admin, scheduler, controller-manager, kube-proxy, kubelet, and etcd server, with associated keys.](https://kodekloud.com/kk-media/image/upload/v1752869975/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-in-Kubernetes-Certificate-Creation/frame_330.jpg)
 
 ### 4.1 Etcd Server Certificate
 
@@ -180,7 +180,7 @@ The kubelet is a critical component running on each node, managing node-specific
 
 It is also a best practice to generate a separate certificate for the node when it acts as a client to the API server. This certificate should include an identity format such as "system:node" to ensure the API server can assign the appropriate group membership (e.g., `system:nodes`).
 
-![The image illustrates Kubernetes node certificates for nodes 01, 02, and 03, showing their authentication with a kubelet server using client certificates and keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869976/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-in-Kubernetes-Certificate-Creation/frame_640.jpg)
+![The image illustrates Kubernetes node certificates for nodes 01, 02, and 03, showing their authentication with a kubelet server using client certificates and keys.](https://kodekloud.com/kk-media/image/upload/v1752869976/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-in-Kubernetes-Certificate-Creation/frame_640.jpg)
 
 Once generated, include these certificates in the kubeconfig files for the respective nodes to guarantee secure communication.
 

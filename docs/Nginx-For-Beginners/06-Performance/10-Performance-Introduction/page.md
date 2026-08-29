@@ -24,9 +24,7 @@ We’ll also cover these supporting topics:
 * Log analysis — how to analyze access and error logs to troubleshoot and optimize.
 * Monitoring — an overview of using [Datadog](https://www.datadoghq.com/) to monitor NGINX metrics and system performance.
 
-<Callout icon="lightbulb">
-  The Datadog section includes installation and configuration examples, but we will not run a hands-on Datadog lab because it requires a personal Datadog account. You can follow the steps in this lesson to set it up in your own environment.
-</Callout>
+> **lightbulb** The Datadog section includes installation and configuration examples, but we will not run a hands-on Datadog lab because it requires a personal Datadog account. You can follow the steps in this lesson to set it up in your own environment.
 
 <Frame>
   <img alt="A presentation slide titled &#x22;Objectives&#x22; with a turquoise gradient panel on the left. On the right are three numbered items about keep-alive connections, analyzing access and error logs, and using Data Dog to monitor system and Nginx performance." />
@@ -50,6 +48,4 @@ That's the plan — rate limiting, caching and compression, keep-alive tuning, l
 * [NGINX Documentation — Admin Guide](https://nginx.org/en/docs/)
 * [Datadog — NGINX Integration](https://www.datadoghq.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/d552c1f3-a18f-44ee-9570-8cb15a7b5ef6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/d552c1f3-a18f-44ee-9570-8cb15a7b5ef6)

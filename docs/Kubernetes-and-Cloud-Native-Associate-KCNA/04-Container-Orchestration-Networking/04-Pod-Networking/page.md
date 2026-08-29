@@ -20,15 +20,11 @@ Kubernetes does not include an out-of-the-box pod networking solution but define
 * Every pod on the same node must be able to reach every other pod using its IP address.
 * Every pod on different nodes should communicate with each other seamlessly with no additional Network Address Translation (NAT), regardless of the underlying IP ranges.
 
-<Frame>
-  ![The image illustrates a networking model for Docker pods, emphasizing IP address assignment and inter-pod communication within and across nodes without NAT.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880576/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Pod-Networking/frame_100.jpg)
-</Frame>
+![The image illustrates a networking model for Docker pods, emphasizing IP address assignment and inter-pod communication within and across nodes without NAT.](https://kodekloud.com/kk-media/image/upload/v1752880576/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Pod-Networking/frame_100.jpg)
 
 As long as your solution automatically assigns IP addresses and provides seamless connectivity both within a node and across nodes, it satisfies Kubernetes’ requirements.
 
-<Callout icon="lightbulb">
-  Ensure your networking solution supports automatic IP assignment and connectivity without relying on manual NAT configuration.
-</Callout>
+> **lightbulb** Ensure your networking solution supports automatic IP assignment and connectivity without relying on manual NAT configuration.
 
 ## Building a Pod Network
 

@@ -37,10 +37,6 @@ Key points:
 * Adaptation: Specialize foundation models using fine-tuning, prompt engineering, or retrieval-augmented inference.
 * Transferability: Reuse a single pre-trained model across many tasks and domains rather than training separate models per task.
 
-<Callout icon="lightbulb">
-  Foundation models provide a flexible base: they can be adapted efficiently to many specific tasks while leveraging the broad knowledge acquired during pre-training.
-</Callout>
+> **lightbulb** Foundation models provide a flexible base: they can be adapted efficiently to many specific tasks while leveraging the broad knowledge acquired during pre-training.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/0aaeb647-f783-48ad-8cb9-39c1e0e9154a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/0aaeb647-f783-48ad-8cb9-39c1e0e9154a)

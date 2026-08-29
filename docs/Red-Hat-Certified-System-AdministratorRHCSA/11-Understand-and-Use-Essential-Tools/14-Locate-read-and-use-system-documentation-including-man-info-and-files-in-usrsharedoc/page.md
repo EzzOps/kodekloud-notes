@@ -9,8 +9,7 @@ $ ls -l
 -rw-r-----  1 aaron wheel 49 Oct 27 14:41 family_dog.jpg
 ```
 
-<Callout icon="lightbulb">
-  You may only change the group to one that your user belongs to. To check your group memberships, run:
+> **lightbulb** You may only change the group to one that your user belongs to. To check your group memberships, run:
 
   ```bash theme={null}
   $ groups
@@ -18,7 +17,6 @@ $ ls -l
   ```
 
   This output shows that you can change the file group to "aaron", "wheel", or "family" if those groups are associated with your account.
-</Callout>
 
 ## Changing File Owner
 
@@ -82,9 +80,7 @@ In the case of directories:
 
 The diagram below visually explains how file and directory permissions work:
 
-<Frame>
-  ![The image illustrates file and directory permissions in a Unix-like system, showing "rwxrwxrwx" for owner, group, and others, with a key explaining the meaning of each permission bit.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883624/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-List-set-and-change-standard-ugorwx-permissions/unix-file-permissions-diagram.jpg)
-</Frame>
+![The image illustrates file and directory permissions in a Unix-like system, showing "rwxrwxrwx" for owner, group, and others, with a key explaining the meaning of each permission bit.](https://kodekloud.com/kk-media/image/upload/v1752883624/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-List-set-and-change-standard-ugorwx-permissions/unix-file-permissions-diagram.jpg)
 
 Consider the following example where the file "family\_dog.jpg" has permissions set to read-only for the owner, read-write for the group, and no permissions for others:
 
@@ -240,9 +236,7 @@ Now, "family\_dog.jpg" is set to:
 
 The diagram below illustrates how read, write, and execute permissions translate to their corresponding octal values:
 
-<Frame>
-  ![The image explains octal permissions in a Unix-like system, showing how read, write, and execute permissions translate to numerical values. It includes examples of permission strings and their corresponding octal values.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883625/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-List-set-and-change-standard-ugorwx-permissions/octal-permissions-unix-explained.jpg)
-</Frame>
+![The image explains octal permissions in a Unix-like system, showing how read, write, and execute permissions translate to numerical values. It includes examples of permission strings and their corresponding octal values.](https://kodekloud.com/kk-media/image/upload/v1752883625/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-List-set-and-change-standard-ugorwx-permissions/octal-permissions-unix-explained.jpg)
 
 ## Summary
 
@@ -250,9 +244,7 @@ This article covered the fundamentals of listing file details, changing ownershi
 
 Well done, and see you in the next article!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/4557bfb4-ed24-4bde-b55f-bda4a4979b05" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/4557bfb4-ed24-4bde-b55f-bda4a4979b05)
 
 
 # Locate read and use system documentation including man info and files in usrsharedoc
@@ -277,9 +269,7 @@ Here are some key navigation tips for using the info system effectively:
 * Press **Backspace** to return to the previous node.
 * Use the **Close Bracket (])** key to jump to the next node.
 
-<Frame>
-  ![The image shows a terminal window displaying a section of the GNU Bash Reference Manual, specifically describing Bash features and their origins.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883626/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Locate-read-and-use-system-documentation-including-man-info-and-files-in-usrsharedoc/bash-reference-manual-features.jpg)
-</Frame>
+![The image shows a terminal window displaying a section of the GNU Bash Reference Manual, specifically describing Bash features and their origins.](https://kodekloud.com/kk-media/image/upload/v1752883626/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Locate-read-and-use-system-documentation-including-man-info-and-files-in-usrsharedoc/bash-reference-manual-features.jpg)
 
 * Press the **Open Bracket (\[)** key to navigate to the previous node.
 * Press **n** to move to the next node on the same level.
@@ -290,17 +280,11 @@ Here are some key navigation tips for using the info system effectively:
 
 In the info pages, links are marked with asterisks. For a quick navigation, simply hover over a link and press **Enter**. The **Tab** key can help you move the cursor to the nearest link. Keep in mind that while the info system is comprehensive, not every command has an associated info page.
 
-<Frame>
-  ![The image shows a terminal window displaying a text-based menu with options for an introduction to Bash and shells. The interface includes typical menu options like File, Edit, and View.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883627/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Locate-read-and-use-system-documentation-including-man-info-and-files-in-usrsharedoc/bash-shells-terminal-menu-options.jpg)
-</Frame>
+![The image shows a terminal window displaying a text-based menu with options for an introduction to Bash and shells. The interface includes typical menu options like File, Edit, and View.](https://kodekloud.com/kk-media/image/upload/v1752883627/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Locate-read-and-use-system-documentation-including-man-info-and-files-in-usrsharedoc/bash-shells-terminal-menu-options.jpg)
 
-<Frame>
-  ![The image shows a terminal window displaying text related to Bash definitions, including terms like 'name', 'operator', and 'process group'.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883629/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Locate-read-and-use-system-documentation-including-man-info-and-files-in-usrsharedoc/bash-definitions-terminal-window.jpg)
-</Frame>
+![The image shows a terminal window displaying text related to Bash definitions, including terms like 'name', 'operator', and 'process group'.](https://kodekloud.com/kk-media/image/upload/v1752883629/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Locate-read-and-use-system-documentation-including-man-info-and-files-in-usrsharedoc/bash-definitions-terminal-window.jpg)
 
-<Callout icon="lightbulb">
-  If you get stuck while browsing, simply use the command `info <command>` to retrieve detailed documentation for the command you're working with.
-</Callout>
+> **lightbulb** If you get stuck while browsing, simply use the command `info <command>` to retrieve detailed documentation for the command you're working with.
 
 ## Documentation in /usr/share/doc
 
@@ -351,12 +335,8 @@ When you're finished, clear your terminal screen by running:
 clear
 ```
 
-<Callout icon="lightbulb">
-  Both the info system and the `/usr/share/doc` directory are comprehensive resources. By mastering their navigation and search functionalities, you can easily find detailed documentation and enhance your expertise in using Linux commands.
-</Callout>
+> **lightbulb** Both the info system and the `/usr/share/doc` directory are comprehensive resources. By mastering their navigation and search functionalities, you can easily find detailed documentation and enhance your expertise in using Linux commands.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/2849c94f-2fc5-4df5-b386-dc7ccaebba6c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/2849c94f-2fc5-4df5-b386-dc7ccaebba6c)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/9a1f1e9b-2be5-4492-925e-3943d065d7c7" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/9a1f1e9b-2be5-4492-925e-3943d065d7c7)

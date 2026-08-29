@@ -52,7 +52,7 @@ Resources:
 4. Click **Next**, name your stack (e.g., `resource-health-demo`), then proceed through the configuration pages.
 5. Review and click **Create stack** to launch the resources.
 
-![The image shows the AWS CloudFormation console where a user is in the process of creating a stack. The interface allows the user to prepare and specify a template, with options to upload a template file or use other sources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862336/notes-assets/images/AWS-CloudWatch-Demo-Resource-Health/aws-cloudformation-console-create-stack.jpg)
+![The image shows the AWS CloudFormation console where a user is in the process of creating a stack. The interface allows the user to prepare and specify a template, with options to upload a template file or use other sources.](https://kodekloud.com/kk-media/image/upload/v1752862336/notes-assets/images/AWS-CloudWatch-Demo-Resource-Health/aws-cloudformation-console-create-stack.jpg)
 
 ***
 
@@ -62,7 +62,7 @@ Return to the **CloudFormation** dashboard and monitor the stack status. Deploym
 
 > **triangle-alert** Stack creation can take several minutes. Do not interrupt the process or delete the stack until it reaches `CREATE_COMPLETE`.
 
-![The image shows an AWS CloudFormation console with details of two stacks: "resource-health-demo" and "xray-sample." The "resource-health-demo" stack is in a "CREATE\_COMPLETE" status, while "xray-sample" has a "DELETE\_FAILED" status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862338/notes-assets/images/AWS-CloudWatch-Demo-Resource-Health/aws-cloudformation-stacks-status-diagram.jpg)
+![The image shows an AWS CloudFormation console with details of two stacks: "resource-health-demo" and "xray-sample." The "resource-health-demo" stack is in a "CREATE\_COMPLETE" status, while "xray-sample" has a "DELETE\_FAILED" status.](https://kodekloud.com/kk-media/image/upload/v1752862338/notes-assets/images/AWS-CloudWatch-Demo-Resource-Health/aws-cloudformation-stacks-status-diagram.jpg)
 
 ***
 
@@ -70,7 +70,7 @@ Return to the **CloudFormation** dashboard and monitor the stack status. Deploym
 
 Once the stack reaches `CREATE_COMPLETE`, go to the **EC2** console. Under **Instances**, verify that three `t2.micro` instances are **Initializing** or **Running**.
 
-![The image shows an AWS EC2 dashboard with three running instances, each with the instance type "t2.micro" and status "Initializing."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862339/notes-assets/images/AWS-CloudWatch-Demo-Resource-Health/aws-ec2-dashboard-three-instances-initializing.jpg)
+![The image shows an AWS EC2 dashboard with three running instances, each with the instance type "t2.micro" and status "Initializing."](https://kodekloud.com/kk-media/image/upload/v1752862339/notes-assets/images/AWS-CloudWatch-Demo-Resource-Health/aws-ec2-dashboard-three-instances-initializing.jpg)
 
 ***
 
@@ -102,7 +102,7 @@ Switch to **List view** for a detailed table showing:
 * Alarm state
 * System and instance status checks
 
-![The image shows an AWS CloudWatch Resource Health dashboard for EC2, displaying a status check with all checks passed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862340/notes-assets/images/AWS-CloudWatch-Demo-Resource-Health/aws-cloudwatch-ec2-health-dashboard.jpg)
+![The image shows an AWS CloudWatch Resource Health dashboard for EC2, displaying a status check with all checks passed.](https://kodekloud.com/kk-media/image/upload/v1752862340/notes-assets/images/AWS-CloudWatch-Demo-Resource-Health/aws-cloudwatch-ec2-health-dashboard.jpg)
 
 > **lightbulb** For large environments (hundreds of instances), use filters and grouping by tags, subnets, or Auto Scaling groups to quickly narrow down potential issues.
 

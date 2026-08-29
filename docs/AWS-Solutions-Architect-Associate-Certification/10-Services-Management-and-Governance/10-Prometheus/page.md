@@ -21,7 +21,7 @@ Understanding the core components of Prometheus is key to leveraging its full po
 * **Time Series Database:** Metrics are stored here, making historical analysis efficient and responsive.
 * **HTTP Server:** Provides an interface for querying metrics using PromQL, facilitating data analysis and visualization.
 
-![The image is a diagram illustrating the architecture of a Prometheus server, showing its components: Retriever, Time Series DB, and HTTP Server, along with its interaction with targets and users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865360/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Prometheus/prometheus-server-architecture-diagram.jpg)
+![The image is a diagram illustrating the architecture of a Prometheus server, showing its components: Retriever, Time Series DB, and HTTP Server, along with its interaction with targets and users.](https://kodekloud.com/kk-media/image/upload/v1752865360/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Prometheus/prometheus-server-architecture-diagram.jpg)
 
 ## Managed Prometheus on AWS
 
@@ -29,7 +29,7 @@ Managing a Prometheus server can be challenging due to the necessity of ensuring
 
 Metrics from various services—such as those running on an [Amazon Elastic Container Service (AWS ECS)](https://learn.kodekloud.com/user/courses/amazon-elastic-container-service-aws-ecs) cluster—can be seamlessly directed to the managed Prometheus instance. Once the data is in the system, you can query these metrics with PromQL or visualize them using dashboarding tools like Grafana.
 
-![The image is a diagram illustrating the Amazon Managed Service for Prometheus, showing the flow from an ECS Cluster in a VPC to Amazon Managed Grafana, with steps for collecting, monitoring, and analyzing metrics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865361/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Prometheus/amazon-managed-service-prometheus-diagram.jpg)
+![The image is a diagram illustrating the Amazon Managed Service for Prometheus, showing the flow from an ECS Cluster in a VPC to Amazon Managed Grafana, with steps for collecting, monitoring, and analyzing metrics.](https://kodekloud.com/kk-media/image/upload/v1752865361/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Prometheus/amazon-managed-service-prometheus-diagram.jpg)
 
 Key features of Amazon Managed Prometheus include:
 
@@ -39,7 +39,7 @@ Key features of Amazon Managed Prometheus include:
 * Robust support for PromQL, empowering you to filter, aggregate, and analyze your metrics efficiently.
 * Cost-effectiveness with a pay-as-you-go pricing model.
 
-![The image lists four key features: Scalability, Integrated with AWS, Fully Managed, and PromQL Support, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865362/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Prometheus/key-features-scalability-aws-promql.jpg)
+![The image lists four key features: Scalability, Integrated with AWS, Fully Managed, and PromQL Support, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752865362/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Prometheus/key-features-scalability-aws-promql.jpg)
 
 ## Integrating Prometheus with CloudWatch
 
@@ -47,7 +47,7 @@ A common and powerful use case is integrating Prometheus with CloudWatch. Imagin
 
 In a standalone Prometheus setup, you might use Alert Manager to send notifications directly via email or Slack. When integrated with AWS, these alerts can be relayed to [AWS CloudWatch](https://learn.kodekloud.com/user/courses/aws-cloudwatch), which then routes the notifications to your on-call team through channels like SNS. This ensures a prompt and systematic response to any incidents.
 
-![The image illustrates a workflow for Amazon Managed Service for Prometheus, showing a sequence from Prometheus to Alert Manager and then to Amazon SNS, with triggers for threshold alerts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865364/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Prometheus/amazon-prometheus-workflow-diagram.jpg)
+![The image illustrates a workflow for Amazon Managed Service for Prometheus, showing a sequence from Prometheus to Alert Manager and then to Amazon SNS, with triggers for threshold alerts.](https://kodekloud.com/kk-media/image/upload/v1752865364/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Prometheus/amazon-prometheus-workflow-diagram.jpg)
 
 > **lightbulb** For a deeper dive into how Prometheus compares with other monitoring solutions, explore our detailed articles on modern monitoring practices.
 

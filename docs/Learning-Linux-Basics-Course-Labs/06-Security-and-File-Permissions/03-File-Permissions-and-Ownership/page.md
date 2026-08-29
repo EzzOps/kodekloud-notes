@@ -24,15 +24,11 @@ Also, you can inspect the system log file (typically located at `/var/log/syslog
 
 This confirms that the `uptime` command executed as scheduled.
 
-<Callout icon="lightbulb">
-  Now it’s your turn! Try creating scheduled tasks using Cron jobs in a practical lab exercise to reinforce your learning.
-</Callout>
+> **lightbulb** Now it’s your turn! Try creating scheduled tasks using Cron jobs in a practical lab exercise to reinforce your learning.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/2a2c52f5-f793-44a2-8c38-4a6a71d3b2c2" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/2a2c52f5-f793-44a2-8c38-4a6a71d3b2c2)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/9d5c4e43-9bb9-4914-ad40-36e5bec4a543" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/9d5c4e43-9bb9-4914-ad40-36e5bec4a543)
 
 
 # File Permissions and Ownership
@@ -117,9 +113,7 @@ For instance:
 * `r-x` equals 5 (4+0+1)
 * `-wx` equals 3 (0+2+1)
 
-<Frame>
-  ![The image explains Linux file permissions, showing how read, write, and execute permissions translate to octal values, with a table detailing each permission's purpose and value.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881137/notes-assets/images/Learning-Linux-Basics-Course-Labs-File-Permissions-and-Ownership/frame_260.jpg)
-</Frame>
+![The image explains Linux file permissions, showing how read, write, and execute permissions translate to octal values, with a table detailing each permission's purpose and value.](https://kodekloud.com/kk-media/image/upload/v1752881137/notes-assets/images/Learning-Linux-Basics-Course-Labs-File-Permissions-and-Ownership/frame_260.jpg)
 
 ## Changing File Permissions with chmod
 
@@ -198,8 +192,6 @@ For additional information, check out these resources:
 * [Understanding chmod, chown, and chgrp](https://www.cyberciti.biz/faq/chmod-command-examples/)
 * [Linux Security Basics](https://www.linux.com/training-tutorials/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/87ff7500-723b-4821-9bb5-81d37fec0654" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/87ff7500-723b-4821-9bb5-81d37fec0654)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/bbaad25f-b810-4af3-8ee3-b57c5a10314c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/bbaad25f-b810-4af3-8ee3-b57c5a10314c)

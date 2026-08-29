@@ -5,7 +5,7 @@
 
 **POSIX** (Portable Operating System Interface) is an IEEE standard that defines a common API and shell behavior for Unix-like systems. POSIX guarantees that scripts using standard utilities and syntax will run across compliant environments.
 
-![The image is a slide titled "Terminology" featuring a section on "Command Line Shells," with an icon of a clipboard and a checkmark. It includes a note about using shells for commands and scripts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868586/notes-assets/images/Advanced-Bash-Scripting-Terminology/terminology-command-line-shells-slide.jpg)
+![The image is a slide titled "Terminology" featuring a section on "Command Line Shells," with an icon of a clipboard and a checkmark. It includes a note about using shells for commands and scripts.](https://kodekloud.com/kk-media/image/upload/v1752868586/notes-assets/images/Advanced-Bash-Scripting-Terminology/terminology-command-line-shells-slide.jpg)
 
 > **triangle-alert** Not all shells are fully POSIX-compliant. If you need maximum portability, use `/bin/sh` or check your shell’s compliance level. Inline features like arrays or extended globbing may break on strict POSIX systems.
 
@@ -41,7 +41,7 @@ Although Python is bundled with most distributions, adding new runtimes often re
 
 > **lightbulb** Bash is pre-installed on virtually every server and requires no additional packages to get started.
 
-![The image illustrates the integration of Windows and Linux using WSL2, with a focus on advanced shell scripting benefits, and includes a Microsoft Azure logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868587/notes-assets/images/Advanced-Bash-Scripting-Why-learn-advanced-bash-scripting/windows-linux-wsl2-shell-scripting.jpg)
+![The image illustrates the integration of Windows and Linux using WSL2, with a focus on advanced shell scripting benefits, and includes a Microsoft Azure logo.](https://kodekloud.com/kk-media/image/upload/v1752868587/notes-assets/images/Advanced-Bash-Scripting-Why-learn-advanced-bash-scripting/windows-linux-wsl2-shell-scripting.jpg)
 
 ## Real-World Example: On-Call Incident Automation
 
@@ -75,13 +75,13 @@ done
 
 Bash scripting offers an immediate feedback loop: write code, run it, and adjust on the fly. This three-stage cycle accelerates learning and troubleshooting.
 
-![The image illustrates the benefits of advanced shell scripting with a cycle involving three stages: Coding, Running, and Recalibrating, connected by arrows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868588/notes-assets/images/Advanced-Bash-Scripting-Why-learn-advanced-bash-scripting/advanced-shell-scripting-cycle.jpg)
+![The image illustrates the benefits of advanced shell scripting with a cycle involving three stages: Coding, Running, and Recalibrating, connected by arrows.](https://kodekloud.com/kk-media/image/upload/v1752868588/notes-assets/images/Advanced-Bash-Scripting-Why-learn-advanced-bash-scripting/advanced-shell-scripting-cycle.jpg)
 
 ## Core Benefits of Advanced Shell Scripting
 
 By working directly with files, directories, and OS primitives—without extra frameworks—you gain practical skills that translate to real-world tasks:
 
-![The image highlights the benefits of advanced shell scripting, listing "Files," "Directories," and "Language" with checkmarks. It includes a play icon and a cube with a dollar sign.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868588/notes-assets/images/Advanced-Bash-Scripting-Why-learn-advanced-bash-scripting/advanced-shell-scripting-benefits.jpg)
+![The image highlights the benefits of advanced shell scripting, listing "Files," "Directories," and "Language" with checkmarks. It includes a play icon and a cube with a dollar sign.](https://kodekloud.com/kk-media/image/upload/v1752868588/notes-assets/images/Advanced-Bash-Scripting-Why-learn-advanced-bash-scripting/advanced-shell-scripting-benefits.jpg)
 
 * Direct file and directory manipulation
 * Minimal dependencies—no external libraries

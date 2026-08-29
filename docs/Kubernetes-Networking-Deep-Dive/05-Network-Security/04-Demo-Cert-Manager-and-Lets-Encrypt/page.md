@@ -45,9 +45,7 @@ Next, we’ll dive into a hands-on demo to see Hubble in action.
 * [Prometheus OpenMetrics](https://prometheus.io/docs/instrumenting/exposition_formats/)
 * [Grafana Dashboards](https://grafana.com/grafana/dashboards)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/327fddb8-40a4-49ca-9a3c-d7a64c065bd8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/327fddb8-40a4-49ca-9a3c-d7a64c065bd8)
 
 
 # Demo Cert Manager and Lets Encrypt

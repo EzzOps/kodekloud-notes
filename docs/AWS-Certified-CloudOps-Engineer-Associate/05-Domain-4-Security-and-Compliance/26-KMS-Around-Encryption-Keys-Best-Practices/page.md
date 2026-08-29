@@ -19,7 +19,7 @@ Instead of relying solely on AWS-managed keys, opt for customer-managed keys to 
 
 Implement automatic key rotation to bolster security. Configure key rotation every one to three years based on your security requirements. This practice not only updates keys continuously but also preserves previous versions for decrypting legacy data.
 
-![The image shows two colored boxes labeled "Automatic key rotation" and "Key versioning," related to enabling key rotation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860530/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-KMS-Around-Encryption-Keys-Best-Practices/automatic-key-rotation-versioning.jpg)
+![The image shows two colored boxes labeled "Automatic key rotation" and "Key versioning," related to enabling key rotation.](https://kodekloud.com/kk-media/image/upload/v1752860530/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-KMS-Around-Encryption-Keys-Best-Practices/automatic-key-rotation-versioning.jpg)
 
 > **lightbulb** When rotating keys, ensure you retain and version older keys. Removing old keys prematurely could result in losing access to data encrypted with those keys.
 
@@ -35,7 +35,7 @@ When deactivating keys, utilize the provided grace period to allow for recovery 
 
 For environments that require top-tier security (such as FIPS 140 compliance), consider integrating Hardware Security Modules (HSMs) like CloudHSM. While HSMs provide enhanced device-level hardware isolation for keys, their use should be reserved for situations where maximum security justifies the additional cost and complexity.
 
-![The image is a slide titled "Using Hardware Security Modules (HSMs) for Highly Sensitive Data," featuring two points: "Leverage HSMs" and "Cloud KMS with HSM integration."](../../../../images/kodekloud.com/kk-media/image/upload/v1752860531/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-KMS-Around-Encryption-Keys-Best-Practices/using-hsms-sensitive-data-slide.jpg)
+![The image is a slide titled "Using Hardware Security Modules (HSMs) for Highly Sensitive Data," featuring two points: "Leverage HSMs" and "Cloud KMS with HSM integration."](https://kodekloud.com/kk-media/image/upload/v1752860531/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-KMS-Around-Encryption-Keys-Best-Practices/using-hsms-sensitive-data-slide.jpg)
 
 ## 6. Use Strong Encryption Algorithms
 
@@ -45,7 +45,7 @@ Ensure that you deploy the strongest encryption algorithms available in your env
 
 For keys that have become deprecated due to outdated algorithms or potential compromises, disable (rather than immediately delete) the keys. Permanent deletion should only occur after confirming that all encrypted data has been transferred to a new, secure key.
 
-![The image is about "Disabling Deprecated Keys" and features an illustration of a key with a prohibition symbol, suggesting the deactivation of outdated or insecure keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860532/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-KMS-Around-Encryption-Keys-Best-Practices/disabling-deprecated-keys-illustration.jpg)
+![The image is about "Disabling Deprecated Keys" and features an illustration of a key with a prohibition symbol, suggesting the deactivation of outdated or insecure keys.](https://kodekloud.com/kk-media/image/upload/v1752860532/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-KMS-Around-Encryption-Keys-Best-Practices/disabling-deprecated-keys-illustration.jpg)
 
 ## Summary
 

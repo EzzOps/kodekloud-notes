@@ -8,9 +8,7 @@ In this article, we recap Terraform providers and illustrate how to use them to 
 
 Terraform follows a plugin-based architecture that supports hundreds of platforms, including AWS, GCP, Azure, and more. The first command you'll run with a valid configuration is the Terraform init command. This command installs the necessary plugins for the providers specified in your configuration.
 
-<Callout icon="lightbulb">
-  Running `terraform init` is safe and can be executed multiple times without affecting your deployed infrastructure.
-</Callout>
+> **lightbulb** Running `terraform init` is safe and can be executed multiple times without affecting your deployed infrastructure.
 
 ```bash theme={null}
 $ terraform init
@@ -22,9 +20,7 @@ Terraform providers, distributed by HashiCorp, are publicly available in the [Te
 2. **Partner Providers**: Maintained by third-party technology companies but reviewed and tested by HashiCorp. They are identified by a checkmark badge in the registry.
 3. **Community Providers**: Published and maintained by individual contributors.
 
-<Frame>
-  ![The image shows logos of cloud service providers and partners categorized as "Official," "Partner," and "Community" on the Terraform registry website.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884151/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Recap-Using-Terraform-Providers/frame_90.jpg)
-</Frame>
+![The image shows logos of cloud service providers and partners categorized as "Official," "Partner," and "Community" on the Terraform registry website.](https://kodekloud.com/kk-media/image/upload/v1752884151/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Recap-Using-Terraform-Providers/frame_90.jpg)
 
 ## Understanding Terraform Init Output
 
@@ -53,9 +49,7 @@ Terraform has been successfully initialized!
 
 In this output, you can observe that the plugin for the HashiCorp Local provider (version 2.0.0) has been installed in your working directory. The plugins are downloaded into a hidden folder named `.terraform/plugins` located in the directory containing your configuration files.
 
-<Callout icon="triangle-alert">
-  For production environments, always add version constraints in your configuration to avoid unexpected breaking changes from automatic upgrades.
-</Callout>
+> **triangle-alert** For production environments, always add version constraints in your configuration to avoid unexpected breaking changes from automatic upgrades.
 
 ## Provider Naming Convention
 
@@ -70,10 +64,6 @@ The provider name can optionally include a hostname. The hostname indicates the 
 * registry.terraform.io/hashicorp/local
 * or simply hashicorp/local
 
-<Frame>
-  ![The image provides instructions for adding version constraints in Terraform configurations to prevent automatic upgrades. It includes a URL with labeled components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884152/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Recap-Using-Terraform-Providers/frame_180.jpg)
-</Frame>
+![The image provides instructions for adding version constraints in Terraform configurations to prevent automatic upgrades. It includes a URL with labeled components.](https://kodekloud.com/kk-media/image/upload/v1752884152/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Recap-Using-Terraform-Providers/frame_180.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/e442ec14-d1e8-4e05-9ae1-078f6f00b63a/lesson/4af7473a-86c7-4d3d-8ff3-23de9f4b91af" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/e442ec14-d1e8-4e05-9ae1-078f6f00b63a/lesson/4af7473a-86c7-4d3d-8ff3-23de9f4b91af)

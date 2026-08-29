@@ -14,7 +14,7 @@ The Zero Trust model is built on three core principles:
 2. Use the principle of least privilege – Assign only the permissions necessary for routine tasks. Overprivileging can lead to security vulnerabilities, while underprivileging may hinder productivity.
 3. Assume breach – Operate with the assumption that a breach could occur, ensuring every request is carefully scrutinized.
 
-![The image illustrates the Zero Trust Model, emphasizing explicit verification, least privilege access, and breach assumption. It shows a flowchart of user access requests, conditions, actions, and Microsoft resources involved in the process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867226/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-identity-and-access-management/zero-trust-model-flowchart.jpg)
+![The image illustrates the Zero Trust Model, emphasizing explicit verification, least privilege access, and breach assumption. It shows a flowchart of user access requests, conditions, actions, and Microsoft resources involved in the process.](https://kodekloud.com/kk-media/image/upload/v1752867226/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-identity-and-access-management/zero-trust-model-flowchart.jpg)
 
 ## Designing an IAM Solution
 
@@ -32,7 +32,7 @@ Building an effective IAM solution starts with the Zero Trust model. There are t
 * **Secure Adaptive Access:** Establish dynamic policies that grant or restrict access based on pre-defined conditions and real-time context.
 * **Simplified Identity Governance:** Streamline access procedures to maintain high security standards while ensuring that legitimate users can quickly access the resources they need.
 
-![The image is a diagram illustrating the design for identity and access management, highlighting aspects like unified identity management, seamless user experience, secure adaptive access, and simplified identity governance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867228/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-identity-and-access-management/identity-access-management-diagram.jpg)
+![The image is a diagram illustrating the design for identity and access management, highlighting aspects like unified identity management, seamless user experience, secure adaptive access, and simplified identity governance.](https://kodekloud.com/kk-media/image/upload/v1752867228/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-identity-and-access-management/identity-access-management-diagram.jpg)
 
 ## IAM Scenarios and Azure Solutions
 
@@ -49,6 +49,6 @@ IAM plays a critical role in various scenarios. Below are several common use cas
 
 > **lightbulb** Selecting the appropriate Azure solution for your IAM needs ensures that identity management remains secure, streamlined, and tailored to your organization's specific requirements.
 
-![The image is an infographic from KodeKloud about designing identity and access management solutions, outlining three scenarios using Azure AD, Azure AD B2B, and Azure AD B2C.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867229/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-identity-and-access-management/identity-access-management-infographic.jpg)
+![The image is an infographic from KodeKloud about designing identity and access management solutions, outlining three scenarios using Azure AD, Azure AD B2B, and Azure AD B2C.](https://kodekloud.com/kk-media/image/upload/v1752867229/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-identity-and-access-management/identity-access-management-infographic.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/az-305-microsoft-azure-solutions-architect-expert/module/37d1f5fb-99a1-4513-a856-4587651d9a60/lesson/09a085c2-a55f-4f40-afac-d957d7e76499)

@@ -5,7 +5,7 @@ sudo systemctl status amazon-ssm-agent >> /tmp/ssm-install-log.txt
 
 After finalizing the runbook, click **Create Runbook**. The document will appear under the "Owned by Me" tab in Systems Manager Documents.
 
-![The image shows the AWS Systems Manager Documents interface, displaying a list of documents owned by Amazon, categorized by type and platform compatibility.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859903/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Creating-and-Executing-Automation-Runbooks/aws-systems-manager-documents-interface.jpg)
+![The image shows the AWS Systems Manager Documents interface, displaying a list of documents owned by Amazon, categorized by type and platform compatibility.](https://kodekloud.com/kk-media/image/upload/v1752859903/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Creating-and-Executing-Automation-Runbooks/aws-systems-manager-documents-interface.jpg)
 
 ## Executing the Automation Runbook
 
@@ -18,17 +18,17 @@ To execute the runbook, select **Execute Automation**. When prompted, provide th
 * Creating the snapshot.
 * Restarting and verifying the instance.
 
-![The image shows an AWS console interface displaying a list of EC2 instances with details such as instance ID, state, availability zone, and platform. One instance, labeled "SSM-Automation-Demo-Instance," is highlighted and marked as running.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859904/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Creating-and-Executing-Automation-Runbooks/aws-ec2-instances-console-interface.jpg)
+![The image shows an AWS console interface displaying a list of EC2 instances with details such as instance ID, state, availability zone, and platform. One instance, labeled "SSM-Automation-Demo-Instance," is highlighted and marked as running.](https://kodekloud.com/kk-media/image/upload/v1752859904/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Creating-and-Executing-Automation-Runbooks/aws-ec2-instances-console-interface.jpg)
 
 Monitor the automation's progress through the execution detail page:
 
-![The image shows an AWS Systems Manager Automation execution detail page for a process named "StopSnapshotStartEC2Instance," displaying the execution status and steps, with all steps marked as successful except the last one, which is in progress.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859905/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Creating-and-Executing-Automation-Runbooks/aws-systems-manager-automation-execution.jpg)
+![The image shows an AWS Systems Manager Automation execution detail page for a process named "StopSnapshotStartEC2Instance," displaying the execution status and steps, with all steps marked as successful except the last one, which is in progress.](https://kodekloud.com/kk-media/image/upload/v1752859905/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Creating-and-Executing-Automation-Runbooks/aws-systems-manager-automation-execution.jpg)
 
 > **lightbulb** This automation document showcases how to chain multiple steps—even calling additional documents—to efficiently manage EC2 instances. For complex workflows, advanced features like concurrency control and input parameter variations are available.
 
 After successful execution, you can verify that the instance is running and a snapshot has been created for the EC2 root volume. In this demo, the snapshot for the 8 GB volume is approximately 1.65 GB and shows a completed status.
 
-![The image shows an AWS EC2 dashboard displaying a list of snapshots, with one snapshot named "AutoSnapshot" highlighted. The snapshot details include its ID, size, and status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859906/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Creating-and-Executing-Automation-Runbooks/aws-ec2-dashboard-snapshots-autosnapshot.jpg)
+![The image shows an AWS EC2 dashboard displaying a list of snapshots, with one snapshot named "AutoSnapshot" highlighted. The snapshot details include its ID, size, and status.](https://kodekloud.com/kk-media/image/upload/v1752859906/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Creating-and-Executing-Automation-Runbooks/aws-ec2-dashboard-snapshots-autosnapshot.jpg)
 
 ## Complete YAML for the Automation Document
 
@@ -95,7 +95,7 @@ Once you have logged into the AWS Management Console, navigate to the [CloudWatc
 
 Below is an image illustrating the list of log groups available in your account:
 
-![The image shows an AWS CloudWatch interface displaying a list of log groups with options to configure settings and view details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859907/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Finding-Logs-with-CloudWatch-Logs/aws-cloudwatch-log-groups-interface.jpg)
+![The image shows an AWS CloudWatch interface displaying a list of log groups with options to configure settings and view details.](https://kodekloud.com/kk-media/image/upload/v1752859907/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Finding-Logs-with-CloudWatch-Logs/aws-cloudwatch-log-groups-interface.jpg)
 
 ## Understanding Log Groups and Streams
 
@@ -112,7 +112,7 @@ The interface also displays several sub-sections like filters, subscription filt
 
 Below is an image showing the detailed view of a VPC flow log group, including the log streams and available actions:
 
-![The image shows an AWS CloudWatch interface displaying details of a log group named "vpcFlowLog," including log class, ARN, creation time, and retention period. It also lists log streams and provides options for actions like viewing in Logs Insights and starting tailing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859908/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Finding-Logs-with-CloudWatch-Logs/aws-cloudwatch-vpcflowlog-details.jpg)
+![The image shows an AWS CloudWatch interface displaying details of a log group named "vpcFlowLog," including log class, ARN, creation time, and retention period. It also lists log streams and provides options for actions like viewing in Logs Insights and starting tailing.](https://kodekloud.com/kk-media/image/upload/v1752859908/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Finding-Logs-with-CloudWatch-Logs/aws-cloudwatch-vpcflowlog-details.jpg)
 
 ### Exploring Log Streams
 
@@ -126,7 +126,7 @@ For instance, if you find a log stream recording accepted traffic, it indicates 
 
 Below is an image that displays detailed log events within the CloudWatch interface, including timestamps and status codes:
 
-![The image shows an AWS CloudWatch interface displaying log events with timestamps and messages, detailing network activity and status codes. The left sidebar includes navigation options like Log groups, Metrics, and Events.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859910/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Finding-Logs-with-CloudWatch-Logs/aws-cloudwatch-log-events-interface.jpg)
+![The image shows an AWS CloudWatch interface displaying log events with timestamps and messages, detailing network activity and status codes. The left sidebar includes navigation options like Log groups, Metrics, and Events.](https://kodekloud.com/kk-media/image/upload/v1752859910/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Finding-Logs-with-CloudWatch-Logs/aws-cloudwatch-log-events-interface.jpg)
 
 ## Example: Log Events from a SageMaker Notebook
 
@@ -134,7 +134,7 @@ Next, consider an example using a SageMaker notebook instance. This log group ma
 
 Below is an image showing the log events for a Jupyter notebook instance, complete with timestamps and messages:
 
-![The image shows an AWS CloudWatch interface displaying log events for a Jupyter notebook instance, with timestamps and messages detailing various warnings and errors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859911/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Finding-Logs-with-CloudWatch-Logs/aws-cloudwatch-jupyter-logs.jpg)
+![The image shows an AWS CloudWatch interface displaying log events for a Jupyter notebook instance, with timestamps and messages detailing various warnings and errors.](https://kodekloud.com/kk-media/image/upload/v1752859911/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Finding-Logs-with-CloudWatch-Logs/aws-cloudwatch-jupyter-logs.jpg)
 
 ## Summary
 

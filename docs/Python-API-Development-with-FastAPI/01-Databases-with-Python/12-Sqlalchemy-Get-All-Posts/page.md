@@ -164,9 +164,7 @@ def create_posts(post: Post):
     return {"data": new_post}
 ```
 
-<Callout icon="lightbulb">
-  Notice how the `/sqlalchemy` endpoint injects the `db` session to safely query the database without managing manual connections.
-</Callout>
+> **lightbulb** Notice how the `/sqlalchemy` endpoint injects the `db` session to safely query the database without managing manual connections.
 
 ─────────────────────────────
 
@@ -198,9 +196,7 @@ def get_posts(db: Session = Depends(get_db)):
     return {"data": posts}
 ```
 
-<Callout icon="lightbulb">
-  Using the ORM approach reduces manual management of database connections and leverages dependency injection. This not only streamlines testing but also improves code maintainability.
-</Callout>
+> **lightbulb** Using the ORM approach reduces manual management of database connections and leverages dependency injection. This not only streamlines testing but also improves code maintainability.
 
 ─────────────────────────────
 
@@ -231,6 +227,4 @@ By following these steps, you have learned how to:
 
 In the next lesson, we will dive deeper into creating posts and performing additional CRUD operations with SQLAlchemy. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/3e3c01f3-f30d-4e9e-88f3-3bd25cc02d3e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/3e3c01f3-f30d-4e9e-88f3-3bd25cc02d3e)

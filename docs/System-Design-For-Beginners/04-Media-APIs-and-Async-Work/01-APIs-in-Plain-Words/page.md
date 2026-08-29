@@ -10,9 +10,7 @@ When we say “the phone is talking to the server” (or “the server is talkin
 
 An API is a formal set of rules and formats that lets different software programs communicate and exchange data. Think of an API like a menu shared between two programs: it lists what actions are possible, what inputs are required, and what outputs will be returned.
 
-<Callout icon="lightbulb">
-  An API defines the structure and semantics of messages exchanged between programs. Network protocols like [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) and [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) are the transport layers that actually carry those messages across machines.
-</Callout>
+> **lightbulb** An API defines the structure and semantics of messages exchanged between programs. Network protocols like [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP) and [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) are the transport layers that actually carry those messages across machines.
 
 You should be clear about one thing: the API only defines what the messages from one program to another should look like.
 
@@ -83,6 +81,4 @@ Further reading and references:
 * [Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network)
 * [Load Balancing (computing)](https://en.wikipedia.org/wiki/Load_balancing_\(computing\))
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/02240fc4-695f-4112-9594-bb05cfc5ca73/lesson/03c60239-ce03-4267-8754-cb70f32a72b3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/02240fc4-695f-4112-9594-bb05cfc5ca73/lesson/03c60239-ce03-4267-8754-cb70f32a72b3)

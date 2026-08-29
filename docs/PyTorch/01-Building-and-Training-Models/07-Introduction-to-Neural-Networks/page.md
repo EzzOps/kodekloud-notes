@@ -58,9 +58,7 @@ for epoch in range(N_EPOCHS):
 
 PyTorch recommends saving only the model parameters with the state dictionary. This includes the model's weights, biases, and optimizer hyperparameters.
 
-<Callout icon="lightbulb">
-  It is generally recommended to save only the state\_dict to allow flexibility when modifying the model architecture or optimizer in the future.
-</Callout>
+> **lightbulb** It is generally recommended to save only the state\_dict to allow flexibility when modifying the model architecture or optimizer in the future.
 
 Print the state dictionaries for inspection and then save them:
 
@@ -252,9 +250,7 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 print(device)
 ```
 
-<Callout icon="lightbulb">
-  When using the `map_location` argument, always confirm that both your model and input data reside on the same device to avoid runtime errors.
-</Callout>
+> **lightbulb** When using the `map_location` argument, always confirm that both your model and input data reside on the same device to avoid runtime errors.
 
 ***
 
@@ -269,9 +265,7 @@ For further reading, consider exploring:
 
 Enhance your model management workflows by integrating these saving and loading strategies into your projects. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/34b3e0de-921b-4b2d-aad4-3467732ea1cf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/34b3e0de-921b-4b2d-aad4-3467732ea1cf)
 
 
 # Introduction to Neural Networks
@@ -284,9 +278,7 @@ Understanding neural networks is fundamental before diving into model training w
 
 Neural networks learn by analyzing data patterns, much like the human brain improves skills with practice. They excel at identifying hidden relationships within large datasets, which makes them essential for applications ranging from image classification to natural language processing.
 
-<Callout icon="lightbulb">
-  Neural networks consist of layers of interconnected neurons, where each neuron acts as a simple decision-making unit. As data moves through these layers, the network refines and interprets the information, ultimately leading to precise predictions.
-</Callout>
+> **lightbulb** Neural networks consist of layers of interconnected neurons, where each neuron acts as a simple decision-making unit. As data moves through these layers, the network refines and interprets the information, ultimately leading to precise predictions.
 
 ## How Neural Networks Work
 
@@ -296,15 +288,11 @@ A neural network comprises multiple layers of neurons:
 * **Hidden Layers:** Perform the majority of data analysis by identifying patterns and extracting features.
 * **Output Layer:** Delivers the final predictions or decisions based on the processed information.
 
-<Frame>
-  ![The image explains the role of neurons in neural networks, highlighting their processes of information selection, activation, connection, and collaboration to make decisions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883136/notes-assets/images/PyTorch-Introduction-to-Neural-Networks/neurons-in-neural-networks-diagram.jpg)
-</Frame>
+![The image explains the role of neurons in neural networks, highlighting their processes of information selection, activation, connection, and collaboration to make decisions.](https://kodekloud.com/kk-media/image/upload/v1752883136/notes-assets/images/PyTorch-Introduction-to-Neural-Networks/neurons-in-neural-networks-diagram.jpg)
 
 The individual neurons collaborate by receiving input, processing it, and making decisions based on predefined rules. This collective operation allows the neural network to tackle complex tasks by breaking them down into simpler, manageable operations.
 
-<Frame>
-  ![The image illustrates the structure of a neural network, showing input, hidden, and output layers, along with their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883138/notes-assets/images/PyTorch-Introduction-to-Neural-Networks/neural-network-structure-layers-diagram.jpg)
-</Frame>
+![The image illustrates the structure of a neural network, showing input, hidden, and output layers, along with their functions.](https://kodekloud.com/kk-media/image/upload/v1752883138/notes-assets/images/PyTorch-Introduction-to-Neural-Networks/neural-network-structure-layers-diagram.jpg)
 
 ### A Practical Example
 
@@ -321,25 +309,19 @@ Activation functions determine whether a neuron should "activate" by processing 
 * **Sigmoid:** Smooth curve used for binary activations.
 * **ReLU (Rectified Linear Unit):** Popular in modern networks due to its simplicity and effectiveness of passing only positive values.
 
-<Frame>
-  ![The image explains the role of activation functions in neural networks, highlighting their functions in neuron activation, information flow control, and filtering useful information for the next layer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883138/notes-assets/images/PyTorch-Introduction-to-Neural-Networks/activation-functions-neural-networks.jpg)
-</Frame>
+![The image explains the role of activation functions in neural networks, highlighting their functions in neuron activation, information flow control, and filtering useful information for the next layer.](https://kodekloud.com/kk-media/image/upload/v1752883138/notes-assets/images/PyTorch-Introduction-to-Neural-Networks/activation-functions-neural-networks.jpg)
 
 ## Learning and Training in Neural Networks
 
 During training, neural networks make predictions based on the input data. When these predictions are incorrect, the network adjusts the connections (weights) between neurons. This iterative process helps the network improve over time, similar to learning from mistakes.
 
-<Frame>
-  ![The image illustrates the process of how neural networks learn through model training, showing steps like making a guess, comparing with actual results, adjusting weights, and improving over time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883139/notes-assets/images/PyTorch-Introduction-to-Neural-Networks/neural-networks-training-process.jpg)
-</Frame>
+![The image illustrates the process of how neural networks learn through model training, showing steps like making a guess, comparing with actual results, adjusting weights, and improving over time.](https://kodekloud.com/kk-media/image/upload/v1752883139/notes-assets/images/PyTorch-Introduction-to-Neural-Networks/neural-networks-training-process.jpg)
 
 ### Backpropagation: Fine-Tuning the Model
 
 Backpropagation is a critical technique where errors are propagated backwards through the network to update the weights. This feedback loop helps pinpoint the source of errors and refines the model with each iteration.
 
-<Frame>
-  ![The image illustrates the process of backpropagation in neural networks, showing input, hidden, and output layers with connections and weight adjustments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883141/notes-assets/images/PyTorch-Introduction-to-Neural-Networks/backpropagation-neural-networks-diagram.jpg)
-</Frame>
+![The image illustrates the process of backpropagation in neural networks, showing input, hidden, and output layers with connections and weight adjustments.](https://kodekloud.com/kk-media/image/upload/v1752883141/notes-assets/images/PyTorch-Introduction-to-Neural-Networks/backpropagation-neural-networks-diagram.jpg)
 
 ## Types of Neural Networks
 
@@ -351,21 +333,15 @@ Neural networks come in various architectures, each tailored for specific types 
 | Convolutional Neural Network (CNN) | Image analysis and pattern recognition         | Excels at processing grid-like topology such as images    |
 | Recurrent Neural Network (RNN)     | Sequential data processing (e.g., text, audio) | Ideal for handling time-series or sequence-dependent data |
 
-<Frame>
-  ![The image lists three types of neural networks: Feedforward Neural Network, Convolutional Neural Network (CNN), and Recurrent Neural Network (RNN), each with a brief description of their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883142/notes-assets/images/PyTorch-Introduction-to-Neural-Networks/neural-networks-types-descriptions.jpg)
-</Frame>
+![The image lists three types of neural networks: Feedforward Neural Network, Convolutional Neural Network (CNN), and Recurrent Neural Network (RNN), each with a brief description of their functions.](https://kodekloud.com/kk-media/image/upload/v1752883142/notes-assets/images/PyTorch-Introduction-to-Neural-Networks/neural-networks-types-descriptions.jpg)
 
-<Callout icon="lightbulb">
-  * Neural networks draw inspiration from the human brain, leveraging interconnected neurons to recognize patterns and make predictions.
+> **lightbulb** * Neural networks draw inspiration from the human brain, leveraging interconnected neurons to recognize patterns and make predictions.
   * The layered structure — comprising input, hidden, and output layers — is critical for data processing.
   * Activation functions ensure that only valuable information is forwarded through the network.
   * Training involves iterative weight adjustments, with backpropagation playing a pivotal role in refining network accuracy.
   * Various architectures like CNNs and RNNs are optimized for tasks such as image recognition and sequential data processing.
-</Callout>
 
-<Frame>
-  ![The image is a summary of key concepts about neural networks, including their inspiration from the human brain, structure, activation functions, training, and types like CNNs and RNNs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883142/notes-assets/images/PyTorch-Introduction-to-Neural-Networks/neural-networks-key-concepts-summary.jpg)
-</Frame>
+![The image is a summary of key concepts about neural networks, including their inspiration from the human brain, structure, activation functions, training, and types like CNNs and RNNs.](https://kodekloud.com/kk-media/image/upload/v1752883142/notes-assets/images/PyTorch-Introduction-to-Neural-Networks/neural-networks-key-concepts-summary.jpg)
 
 ## Next Steps: Implementing Neural Networks with PyTorch
 
@@ -375,6 +351,4 @@ For more detailed guidance on neural network implementations and advanced techni
 
 Happy coding and learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/4d48093e-84ad-4187-894c-ed7ba631f898" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/4d48093e-84ad-4187-894c-ed7ba631f898)

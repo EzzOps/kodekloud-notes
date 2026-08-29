@@ -56,9 +56,7 @@ def create_posts(post: Post):
     return {"data": "created post"}
 ```
 
-<Callout icon="lightbulb">
-  Using parameterized queries not only simplifies the code but also protects the database by ensuring that inputs are sanitized.
-</Callout>
+> **lightbulb** Using parameterized queries not only simplifies the code but also protects the database by ensuring that inputs are sanitized.
 
 ***
 

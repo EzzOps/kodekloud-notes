@@ -22,7 +22,7 @@ aws ec2 disassociate-address --association-id eipassoc-87654321
 
 > **triangle-alert** Unattached Elastic IPs incur charges. Always release unused addresses to avoid unexpected costs.
 
-![The image illustrates "Elastic IP Pricing," showing a diagram of a microchip with multiple IPs, where additional IPs are charged per hour.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863221/notes-assets/images/AWS-Networking-Fundamentals-Elastic-IP/elastic-ip-pricing-microchip-diagram.jpg)
+![The image illustrates "Elastic IP Pricing," showing a diagram of a microchip with multiple IPs, where additional IPs are charged per hour.](https://kodekloud.com/kk-media/image/upload/v1752863221/notes-assets/images/AWS-Networking-Fundamentals-Elastic-IP/elastic-ip-pricing-microchip-diagram.jpg)
 
 ## Key Considerations
 
@@ -39,7 +39,7 @@ aws ec2 disassociate-address --association-id eipassoc-87654321
   2. Associate it with an EC2 instance or ENI.
   3. Reassociate as needed during failover or maintenance.
 
-![The image is a summary slide explaining the differences between public IPs and Elastic IPs, highlighting that public IPs are not static, while Elastic IPs are static IPv4 addresses. It also describes the process of allocating and associating an Elastic IP with an instance or network interface.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863222/notes-assets/images/AWS-Networking-Fundamentals-Elastic-IP/public-vs-elastic-ips-summary.jpg)
+![The image is a summary slide explaining the differences between public IPs and Elastic IPs, highlighting that public IPs are not static, while Elastic IPs are static IPv4 addresses. It also describes the process of allocating and associating an Elastic IP with an instance or network interface.](https://kodekloud.com/kk-media/image/upload/v1752863222/notes-assets/images/AWS-Networking-Fundamentals-Elastic-IP/public-vs-elastic-ips-summary.jpg)
 
 ## Links and References
 
@@ -84,7 +84,7 @@ In this tutorial, you’ll convert a private subnet into a public subnet by atta
 2. Set the IPv4 CIDR block to `10.0.0.0/16`. Optionally add an IPv6 block.
 3. Click **Create VPC**.
 
-![The image shows an AWS Management Console screen displaying details of a Virtual Private Cloud (VPC) named "vpcdemo," including its ID, state, and network configurations. The left sidebar lists various VPC-related options like subnets and route tables.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863224/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateway-Demo/aws-management-console-vpcdemo-details.jpg)
+![The image shows an AWS Management Console screen displaying details of a Virtual Private Cloud (VPC) named "vpcdemo," including its ID, state, and network configurations. The left sidebar lists various VPC-related options like subnets and route tables.](https://kodekloud.com/kk-media/image/upload/v1752863224/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateway-Demo/aws-management-console-vpcdemo-details.jpg)
 
 4. Navigate to **Subnets > Create subnet**:
    * **Name tag**: `public-subnet`
@@ -100,7 +100,7 @@ In this tutorial, you’ll convert a private subnet into a public subnet by atta
 2. For **Name**, enter `my-public-server`.
 3. Choose **Amazon Linux 2023** under **Application and OS Images (AMI)**.
 
-![The image shows an AWS EC2 instance setup page, where a user is configuring a new instance with Amazon Linux 2023 AMI and a t2.micro instance type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863225/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateway-Demo/aws-ec2-instance-setup-amazon-linux.jpg)
+![The image shows an AWS EC2 instance setup page, where a user is configuring a new instance with Amazon Linux 2023 AMI and a t2.micro instance type.](https://kodekloud.com/kk-media/image/upload/v1752863225/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateway-Demo/aws-ec2-instance-setup-amazon-linux.jpg)
 
 4. Select the **t2.micro** instance type (free tier).
 5. Under **Key pair**, choose `aws-demo.pem`.
@@ -109,11 +109,11 @@ In this tutorial, you’ll convert a private subnet into a public subnet by atta
    * **Subnet**: `public-subnet`
    * **Auto-assign public IP**: **Enable**
 
-![The image shows an AWS EC2 instance launch configuration screen, detailing instance type, key pair, network settings, and a summary of the selected options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863226/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateway-Demo/aws-ec2-instance-launch-configuration.jpg)
+![The image shows an AWS EC2 instance launch configuration screen, detailing instance type, key pair, network settings, and a summary of the selected options.](https://kodekloud.com/kk-media/image/upload/v1752863226/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateway-Demo/aws-ec2-instance-launch-configuration.jpg)
 
 7. Under **Security group**, allow SSH (port 22) from `0.0.0.0/0`. Optionally add ICMP for ping.
 
-![The image shows an AWS EC2 instance launch configuration screen, detailing security group settings and a summary of the instance specifications, including the instance type and storage volume.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863228/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateway-Demo/aws-ec2-instance-launch-configuration-2.jpg)
+![The image shows an AWS EC2 instance launch configuration screen, detailing security group settings and a summary of the instance specifications, including the instance type and storage volume.](https://kodekloud.com/kk-media/image/upload/v1752863228/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateway-Demo/aws-ec2-instance-launch-configuration-2.jpg)
 
 8. Click **Launch instance** and wait for it to switch to **running**.
 
@@ -123,7 +123,7 @@ In this tutorial, you’ll convert a private subnet into a public subnet by atta
 
 After your instance is running, copy its public IP (example: `54.159.89.36`) and test connectivity:
 
-![The image shows an AWS EC2 Management Console with details of two instances, one terminated and one running, including instance IDs, states, and public IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863229/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateway-Demo/aws-ec2-management-console-instances.jpg)
+![The image shows an AWS EC2 Management Console with details of two instances, one terminated and one running, including instance IDs, states, and public IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752863229/notes-assets/images/AWS-Networking-Fundamentals-Internet-Gateway-Demo/aws-ec2-management-console-instances.jpg)
 
 ```bash theme={null}
 ping 54.159.89.36

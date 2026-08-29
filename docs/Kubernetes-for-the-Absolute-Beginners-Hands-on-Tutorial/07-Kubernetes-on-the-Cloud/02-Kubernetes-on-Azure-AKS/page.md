@@ -73,9 +73,7 @@ service/voting-service     LoadBalancer   10.100.173.35   <port-info>     39s
 
 Once all deployments (including the worker application) have the desired number of ready pods, access the application using the Load Balancer URLs provided for the `voting-service` and `result-service`. Open the voting service URL in your web browser to view the voting interface.
 
-<Frame>
-  ![A webpage titled "Cats vs Dogs!" with voting buttons for "CATS" and "DOGS," allowing users to change their vote.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884931/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-AWS-EKS/frame_550.jpg)
-</Frame>
+![A webpage titled "Cats vs Dogs!" with voting buttons for "CATS" and "DOGS," allowing users to change their vote.](https://kodekloud.com/kk-media/image/upload/v1752884931/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-AWS-EKS/frame_550.jpg)
 
 Vote for your preferred option and verify that the results update accordingly.
 
@@ -83,15 +81,11 @@ Vote for your preferred option and verify that the results update accordingly.
 
 ## Cleanup
 
-<Callout icon="triangle-alert">
-  After reviewing the application, ensure that you delete the EKS cluster and any deployed resources to avoid unnecessary charges.
-</Callout>
+> **triangle-alert** After reviewing the application, ensure that you delete the EKS cluster and any deployed resources to avoid unnecessary charges.
 
 Thank you for following this lesson. Happy clustering!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/2f291cbc-acc2-4250-b96c-2094daff556d/lesson/07c2aa87-c9ea-47c1-b254-f3a6504f16b0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/2f291cbc-acc2-4250-b96c-2094daff556d/lesson/07c2aa87-c9ea-47c1-b254-f3a6504f16b0)
 
 
 # Kubernetes on Azure AKS
@@ -102,21 +96,15 @@ This guide teaches beginners to provision a Kubernetes cluster using
 
 In this guide, you'll learn how to provision a Kubernetes cluster using Azure Kubernetes Service (AKS) on Microsoft Azure. This step-by-step tutorial is designed for beginners and includes detailed instructions to help you get started quickly.
 
-<Callout icon="lightbulb">
-  Before you begin, ensure you have an active [Azure account](https://azure.microsoft.com/free/). If you’re new to Azure, take advantage of the 12-month free access and familiarize yourself with basic Azure configurations.
-</Callout>
+> **lightbulb** Before you begin, ensure you have an active [Azure account](https://azure.microsoft.com/free/). If you’re new to Azure, take advantage of the 12-month free access and familiarize yourself with basic Azure configurations.
 
-<Frame>
-  ![The image lists prerequisites for Azure, including an Azure account, active subscription, and Azure basics, with a link to Azure's free account FAQ.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884932/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-Azure-AKS/frame_20.jpg)
-</Frame>
+![The image lists prerequisites for Azure, including an Azure account, active subscription, and Azure basics, with a link to Azure's free account FAQ.](https://kodekloud.com/kk-media/image/upload/v1752884932/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-Azure-AKS/frame_20.jpg)
 
 ## Accessing the Azure Dashboard
 
 Once logged into your Azure account, you will be greeted with a dashboard displaying various services. In this demonstration, we are using the free "KodeKloud free account." To find the Azure Kubernetes Service (AKS), either search for "AKS" or select it directly from the available services list.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal homepage, displaying various services, recent resources, navigation options, tools, useful links, and mobile app download buttons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884934/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-Azure-AKS/frame_40.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal homepage, displaying various services, recent resources, navigation options, tools, useful links, and mobile app download buttons.](https://kodekloud.com/kk-media/image/upload/v1752884934/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-Azure-AKS/frame_40.jpg)
 
 ## Creating Your Kubernetes Cluster
 
@@ -129,17 +117,13 @@ Since no cluster exists yet, you'll need to add a new cluster. This will take yo
 
 Under **Authentication settings**, select the option to create a new service principal. This service principal allows AKS to manage associated cloud resources seamlessly.
 
-<Frame>
-  ![The image shows the "Create Kubernetes cluster" page on Microsoft Azure, focusing on authentication settings, including service principal, RBAC, and node pool OS disk encryption options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884935/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-Azure-AKS/frame_110.jpg)
-</Frame>
+![The image shows the "Create Kubernetes cluster" page on Microsoft Azure, focusing on authentication settings, including service principal, RBAC, and node pool OS disk encryption options.](https://kodekloud.com/kk-media/image/upload/v1752884935/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-Azure-AKS/frame_110.jpg)
 
 After verifying your configuration, click on **Review and create**. Once the **Create** button becomes available, click it to initiate the deployment. The process starts with provisioning your resource groups, followed by the creation of your Kubernetes cluster. Please be patient, as the full deployment might take some time.
 
 Upon successful deployment, Azure will display a confirmation message.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal indicating a successful deployment completion for a resource group named "votingapp-resourcegroup."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884936/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-Azure-AKS/frame_150.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal indicating a successful deployment completion for a resource group named "votingapp-resourcegroup."](https://kodekloud.com/kk-media/image/upload/v1752884936/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-Azure-AKS/frame_150.jpg)
 
 ## Connecting to Your Cluster with Azure Cloud Shell
 

@@ -1,9 +1,7 @@
 # pod "rabbit" deleted
 ```
 
-<Frame>
-  ![The image shows a terminal window displaying Kubernetes pod details and events, alongside a task prompt to delete the "rabbit" pod.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880800/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Solution-Resource-Quotas-Limits/kubernetes-pod-details-delete-rabbit.jpg)
-</Frame>
+![The image shows a terminal window displaying Kubernetes pod details and events, alongside a task prompt to delete the "rabbit" pod.](https://kodekloud.com/kk-media/image/upload/v1752880800/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Solution-Resource-Quotas-Limits/kubernetes-pod-details-delete-rabbit.jpg)
 
 ***
 
@@ -49,13 +47,9 @@ Events:
 
 The pod is **OOMKilled** because it exceeded its **10Mi** memory limit while the `stress` workload uses around **15Mi**.
 
-<Callout icon="triangle-alert">
-  The CrashLoopBackOff status indicates the container repeatedly failed due to out-of-memory errors. Always ensure your `limits.memory` exceed the actual usage of your application.
-</Callout>
+> **triangle-alert** The CrashLoopBackOff status indicates the container repeatedly failed due to out-of-memory errors. Always ensure your `limits.memory` exceed the actual usage of your application.
 
-<Frame>
-  ![The image shows a Kubernetes pod named "elephant" with a memory issue, requiring an increase in its memory limit from 15Mi to 20Mi. The terminal displays details about the pod's status, including a "CrashLoopBackOff" error due to being "OOMKilled."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880801/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Solution-Resource-Quotas-Limits/kubernetes-pod-elephant-memory-issue.jpg)
-</Frame>
+![The image shows a Kubernetes pod named "elephant" with a memory issue, requiring an increase in its memory limit from 15Mi to 20Mi. The terminal displays details about the pod's status, including a "CrashLoopBackOff" error due to being "OOMKilled."](https://kodekloud.com/kk-media/image/upload/v1752880801/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Solution-Resource-Quotas-Limits/kubernetes-pod-elephant-memory-issue.jpg)
 
 ***
 
@@ -111,9 +105,7 @@ Requests:
 Ready: True
 ```
 
-<Frame>
-  ![The image shows a code editor with a YAML configuration file for a Kubernetes pod named "elephant," alongside instructions to increase its memory limit to 20Mi.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880803/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Solution-Resource-Quotas-Limits/kubernetes-pod-elephant-yaml-config.jpg)
-</Frame>
+![The image shows a code editor with a YAML configuration file for a Kubernetes pod named "elephant," alongside instructions to increase its memory limit to 20Mi.](https://kodekloud.com/kk-media/image/upload/v1752880803/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Solution-Resource-Quotas-Limits/kubernetes-pod-elephant-yaml-config.jpg)
 
 ***
 
@@ -143,9 +135,7 @@ kubectl delete pod elephant
 * [Kubernetes Official Documentation](https://kubernetes.io/docs/)
 * [Understanding CrashLoopBackOff](https://kubernetes.io/docs/tasks/debug-application-cluster/debug-application/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/95af14d5-1ed4-4440-88f2-2d32fd4e737e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/95af14d5-1ed4-4440-88f2-2d32fd4e737e)
 
 
 # Solution Security Context

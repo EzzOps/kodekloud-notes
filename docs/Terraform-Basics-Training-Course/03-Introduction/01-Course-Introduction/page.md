@@ -39,12 +39,8 @@ We'll wrap up the core content by discussing:
 
 In the AWS section, demonstration videos guide you through the AWS Management Console to set up essential services, followed by hands-on labs where you provision and manage infrastructure seamlessly.
 
-<Callout icon="lightbulb">
-  All labs are embedded and open directly in your browser, enhanced by integration with [Visual Studio Code](https://code.visualstudio.com/) and built-in Terraform extensions.
-</Callout>
+> **lightbulb** All labs are embedded and open directly in your browser, enhanced by integration with [Visual Studio Code](https://code.visualstudio.com/) and built-in Terraform extensions.
 
 I am very excited to begin this journey with you. Let's get started!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/13edca3c-ac36-4a54-9283-df4cb725963f/lesson/34ea8e3f-e6f6-4d51-b69f-25d0699a0ca1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/13edca3c-ac36-4a54-9283-df4cb725963f/lesson/34ea8e3f-e6f6-4d51-b69f-25d0699a0ca1)

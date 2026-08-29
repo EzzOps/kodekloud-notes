@@ -12,9 +12,7 @@ A sync wave is a numeric annotation on a Kubernetes resource that Argo CD uses t
 
 By combining hooks (to define phases) and sync waves (to order resources within a phase), you can build reliable rollout plans for complex applications and avoid race conditions.
 
-<Callout icon="lightbulb">
-  Sync Waves order resources within a given hook/phase (e.g., PreSync or Sync). Wave numbers are only compared among resources in the same phase — a PreSync with wave -1 runs before a Sync with wave -1.
-</Callout>
+> **lightbulb** Sync Waves order resources within a given hook/phase (e.g., PreSync or Sync). Wave numbers are only compared among resources in the same phase — a PreSync with wave -1 runs before a Sync with wave -1.
 
 ## How sync waves work (quick summary)
 
@@ -52,9 +50,7 @@ Approach:
 
 ## Warning about failure behavior
 
-<Callout icon="warning">
-  If a hook (for example, a PreSync job) fails, Argo CD will mark the sync as unsuccessful. Make hooks idempotent and configure appropriate timeouts and retries to avoid spurious failures.
-</Callout>
+> **warning** If a hook (for example, a PreSync job) fails, Argo CD will mark the sync as unsuccessful. Make hooks idempotent and configure appropriate timeouts and retries to avoid spurious failures.
 
 ## Example manifests (annotations demonstrate hooks and sync-wave usage)
 
@@ -172,6 +168,4 @@ metadata:
 * Use PreSync for migrations and checks, Sync waves for ordered resource creation, and PostSync for verification or cleanup.
 * Combining hooks and sync waves helps avoid race conditions and ensures reliable application rollouts.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/714862f3-140d-4d24-b8cf-281a07383fa8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/714862f3-140d-4d24-b8cf-281a07383fa8)

@@ -8,7 +8,7 @@ $ ./sample2.sh
 server1 server2 server3 server4
 ```
 
-![The image shows a sequence of labeled items, "index0" to "index3" and "server1" to "server4," with a focus on inserting "index2" and "server3" into the sequence.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868548/notes-assets/images/Advanced-Bash-Scripting-Insert/index-sequence-insertion-server3.jpg)
+![The image shows a sequence of labeled items, "index0" to "index3" and "server1" to "server4," with a focus on inserting "index2" and "server3" into the sequence.](https://kodekloud.com/kk-media/image/upload/v1752868548/notes-assets/images/Advanced-Bash-Scripting-Insert/index-sequence-insertion-server3.jpg)
 
 This method automatically calculates the correct index to append, preventing accidental overwrites.
 
@@ -18,7 +18,7 @@ This method automatically calculates the correct index to append, preventing acc
 
 To overwrite an existing element, assign a new value to that index:
 
-![The image explains that inserting an element into an existing index of an array replaces the current value at that index.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868548/notes-assets/images/Advanced-Bash-Scripting-Insert/array-insert-replace-index-explanation.jpg)
+![The image explains that inserting an element into an existing index of an array replaces the current value at that index.](https://kodekloud.com/kk-media/image/upload/v1752868548/notes-assets/images/Advanced-Bash-Scripting-Insert/array-insert-replace-index-explanation.jpg)
 
 ```bash theme={null}
 #!/usr/bin/env bash
@@ -115,7 +115,7 @@ In this lesson, you’ll learn two key operations for managing Bash arrays:
 1. Removing a specific element by its index
 2. Clearing all elements in one command
 
-![The image is a slide titled "Arrays remove," showing two checked items: "How to remove a specific element from an array" and "How to remove all of the elements from an array in one shot."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868550/notes-assets/images/Advanced-Bash-Scripting-Remove/arrays-remove-element-diagram.jpg)
+![The image is a slide titled "Arrays remove," showing two checked items: "How to remove a specific element from an array" and "How to remove all of the elements from an array in one shot."](https://kodekloud.com/kk-media/image/upload/v1752868550/notes-assets/images/Advanced-Bash-Scripting-Remove/arrays-remove-element-diagram.jpg)
 
 ## Removing a Specific Element by Index
 

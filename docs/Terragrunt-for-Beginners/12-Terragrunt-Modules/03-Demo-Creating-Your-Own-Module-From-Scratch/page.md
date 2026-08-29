@@ -73,14 +73,11 @@ module "secure_vpc" {
 
 * **Security & Compliance**
 
-<Callout icon="lightbulb">
-  Always review third-party module code for hidden risks before deploying to production.
-</Callout>
+> **lightbulb** Always review third-party module code for hidden risks before deploying to production.
 
 * **Version Locking**
 
-<Callout icon="triangle-alert">
-  Pin module versions to avoid unexpected breaking changes:
+> **triangle-alert** Pin module versions to avoid unexpected breaking changes:
 
   ```hcl theme={null}
   module "vpc" {
@@ -88,7 +85,6 @@ module "secure_vpc" {
     version = "3.10.0"
   }
   ```
-</Callout>
 
 * **Documentation & Support**\
   Verify that community modules are well-documented and actively maintained.
@@ -110,9 +106,7 @@ Choosing between Custom and Community modules isn’t an all-or-nothing decision
 * [Terraform Modules Overview](https://www.terraform.io/docs/modules/index.html)
 * [Terraform Best Practices](https://learn.hashicorp.com/terraform/modules)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/209205f7-ed08-47c5-a92a-84f7794a093a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/209205f7-ed08-47c5-a92a-84f7794a093a)
 
 
 # Demo Creating Your Own Module From Scratch
@@ -184,10 +178,8 @@ variable "bucket_name" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  S3 bucket names must be globally unique and comply with AWS naming rules.\
+> **triangle-alert** S3 bucket names must be globally unique and comply with AWS naming rules.\
   Avoid uppercase letters and underscores.
-</Callout>
 
 ### outputs.tf
 

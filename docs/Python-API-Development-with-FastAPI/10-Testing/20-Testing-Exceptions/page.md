@@ -184,9 +184,7 @@ tests/test_calculations.py::test_insufficient_funds PASSED
 15 passed in 0.08s
 ```
 
-<Callout icon="lightbulb">
-  Specifying the exact exception type ensures that our code not only raises an error but also raises the correct, expected type. This improves test precision and code reliability.
-</Callout>
+> **lightbulb** Specifying the exact exception type ensures that our code not only raises an error but also raises the correct, expected type. This improves test precision and code reliability.
 
 ## Demonstrating the Importance of the Correct Exception Type
 
@@ -215,6 +213,4 @@ By defining and raising a custom exception for insufficient funds, our BankAccou
 
 Happy testing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/6fd9eb3e-c45a-4121-a4ee-803a30b59ad2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/6fd9eb3e-c45a-4121-a4ee-803a30b59ad2)

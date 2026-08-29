@@ -17,9 +17,7 @@ In this lesson we will:
 
 This foundation helps you design Terraform configurations that align with Azure governance and organizational needs.
 
-<Callout icon="lightbulb">
-  Every Terraform action against Azure is scoped and controlled by Azure. Terraform orchestrates resources, but Azure determines the boundaries and permissions that apply.
-</Callout>
+> **lightbulb** Every Terraform action against Azure is scoped and controlled by Azure. Terraform orchestrates resources, but Azure determines the boundaries and permissions that apply.
 
 ## Key Azure concepts Terraform interacts with
 
@@ -116,6 +114,4 @@ Guidelines:
 * [Azure management groups and subscriptions documentation](https://learn.microsoft.com/azure/governance/management-groups/)
 * [Azure Resource Manager (ARM) overview](https://learn.microsoft.com/azure/azure-resource-manager/management/overview)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/7fc76e5f-e1e7-4c53-8940-57761020744e/lesson/28067714-12e1-4d90-9802-bf39ed6b5370" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/7fc76e5f-e1e7-4c53-8940-57761020744e/lesson/28067714-12e1-4d90-9802-bf39ed6b5370)

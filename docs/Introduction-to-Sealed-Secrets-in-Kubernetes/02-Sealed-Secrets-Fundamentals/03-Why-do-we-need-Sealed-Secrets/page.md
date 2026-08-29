@@ -27,9 +27,7 @@ In a GitOps pipeline, you typically declare your resources—including Secrets�
 
 When you apply the declarative manifest, Kubernetes Base64-encodes your password (`password123` → `cGFzc3dvcmQxMjM=`).
 
-<Callout icon="lightbulb">
-  Base64 encoding is **not** encryption. Anyone with read access to your cluster or Git repo can decode the value back to cleartext.
-</Callout>
+> **lightbulb** Base64 encoding is **not** encryption. Anyone with read access to your cluster or Git repo can decode the value back to cleartext.
 
 ```bash theme={null}
 echo cGFzc3dvcmQxMjM= | base64 --decode

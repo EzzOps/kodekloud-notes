@@ -17,9 +17,7 @@ We'll cover four core topics:
   <img alt="The image shows an agenda with four points related to Terraform, including understanding resource attributes, managing dependencies, using targeting, and defining output variables." />
 </Frame>
 
-<Callout icon="lightbulb">
-  This lesson explains how Terraform passes data between resources, controls the order of operations, and surfaces useful values through outputs. These are essential for composing modules, integrating with other tools, and debugging your plans.
-</Callout>
+> **lightbulb** This lesson explains how Terraform passes data between resources, controls the order of operations, and surfaces useful values through outputs. These are essential for composing modules, integrating with other tools, and debugging your plans.
 
 ## What you'll learn (quick overview)
 
@@ -36,10 +34,6 @@ We'll cover four core topics:
 * [Terraform: Resource Dependencies](https://www.terraform.io/docs/language/expressions/references.html#implicit-and-explicit-dependencies)
 * [Terraform: Outputs](https://www.terraform.io/docs/language/values/outputs.html)
 
-<Callout icon="warning">
-  Resource targeting (using `-target`) can break dependency graphs and lead to drift. Only use targeting for troubleshooting or carefully planned changes.
-</Callout>
+> **warning** Resource targeting (using `-target`) can break dependency graphs and lead to drift. Only use targeting for troubleshooting or carefully planned changes.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/866718d2-695e-4ee4-b25d-1aab3b014e85/lesson/7bb1e0ce-6002-4bab-bf5b-c70d3f252d56" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/866718d2-695e-4ee4-b25d-1aab3b014e85/lesson/7bb1e0ce-6002-4bab-bf5b-c70d3f252d56)

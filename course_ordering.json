@@ -1,0 +1,841 @@
+{
+  "course_modules": {
+    "12-Factor-App": [
+      "Introduction",
+      "Twelve-Factor-App-methodology",
+      "Conclusion"
+    ],
+    "AI-Agents": [
+      "Introduction",
+      "Prerequisites",
+      "Agent-Architecture-Multi-Agent-Systems",
+      "Building-AI-Agents",
+      "API-Integrations-Tools",
+      "Practical-Projects",
+      "Advanced-Agents-Projects"
+    ],
+    "AI-Agents-Fundamentals": [
+      "AI-Agents-Part-1",
+      "AI-Agents-Part-2",
+      "Introduction"
+    ],
+    "AI-Assisted-Ansible": [
+      "Prerequisites",
+      "Ansible-Refresher",
+      "Working-With-VS-Code-Extension",
+      "Using-ChatGPT-With-Ansible",
+      "GitHub-Copilot",
+      "Claude-Code-CLI-With-Ansible",
+      "Red-Hat-Ansible-Lightspeed"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate": [
+      "Introduction",
+      "Introduction-to-AI-and-Azure-AI-Services",
+      "Get-Started-with-Azure-AI-Services",
+      "Using-Azure-AI-Services-for-Enterprise-Applications",
+      "Analyzing-Videos",
+      "Analyzing-Text",
+      "Translating-Text",
+      "Develop-a-Question-Answering-Solution",
+      "Develop-a-Conversational-Language-Understanding-App",
+      "Custom-Classification-and-Named-Entity-Extraction",
+      "Speech-Recognition-Translation-and-Synthesis",
+      "Get-Started-with-Azure-OpenAI-Service",
+      "Develop-Apps-with-Azure-OpenAI-Service",
+      "Apply-Prompt-Engineering",
+      "Implement-Retrieval-Augmented-Generation-RAG-with-Azure-OpenAI-Service",
+      "Implementing-an-Intelligent-Search-Solution",
+      "Create-a-Custom-Skill-for-Azure-AI-Search",
+      "Creating-a-Knowledge-Store",
+      "Develop-a-Document-Intelligence-Solution",
+      "Analyze-and-Manipulate-Images",
+      "Detecting-Faces-with-the-Azure-AI-Vision",
+      "Custom-Vision-Models-with-Azure-AI-Custom-Vision"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals": [
+      "Introduction",
+      "Fundamental-AI-Concepts",
+      "Fundamentals-of-Machine-Learning",
+      "Introduction-to-Azure-AI-Services",
+      "Concepts-of-Computer-Vision",
+      "Azure-Computer-Vision-Capabilities",
+      "Natural-Language-Processing-NLP",
+      "Azure-NLP-Services",
+      "Azure-AI-Document-Intelligence",
+      "Azure-AI-Search",
+      "Generative-AI",
+      "Fundamentals-of-Azure-OpenAI",
+      "Responsible-Generative-AI"
+    ],
+    "AI-Assisted-Development": [
+      "Course-Introduction",
+      "Introduction-to-AI-Assisted-Development",
+      "Planning-Phase",
+      "Development-Phase-Backend",
+      "Development-Phase-Frontend",
+      "Project-Completion"
+    ],
+    "AWS-Certified-AI-Practitioner": [
+      "Introduction",
+      "Fundamentals-of-AI-and-ML",
+      "Fundamentals-of-Generative-AI",
+      "Applications-of-Foundation-Models",
+      "Guidelines-for-Responsible-AI",
+      "Security-Compliance-and-Governance-for-AI-Solutions",
+      "Conclusion-and-Next-Steps"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate": [
+      "Introduction-Prerequisites",
+      "Domain-1-Monitoring-Logging-and-Remediation",
+      "Domain-2-Reliability-and-BCP",
+      "Domain-3-Deployment-Provisioning-and-Automation",
+      "Domain-4-Security-and-Compliance",
+      "Domain-5-Networking-and-Content-Delivery",
+      "Domain-6-Cost-and-Performance-Optimization",
+      "Summary",
+      "Practice-Exams-and-Closing-Steps"
+    ],
+    "AWS-Certified-Developer-Associate": [
+      "Introduction",
+      "Networking-Fundamentals",
+      "Identity-and-Access-Management-IAM",
+      "Elastic-Compute-CloudEC2",
+      "Storage",
+      "Load-Balancing-AutoScaling",
+      "Databases"
+    ]
+  },
+  "course_lessons": {
+    "12-Factor-App|Introduction": [
+      "Introduction",
+      "Why-12-Factor-app"
+    ],
+    "12-Factor-App|Twelve-Factor-App-methodology": [
+      "Codebase",
+      "Dependencies",
+      "Concurrency",
+      "Processes",
+      "Backing-Services",
+      "Config",
+      "Build-Release-and-Run",
+      "Port-Binding",
+      "Disposability",
+      "Dev-Prod-Parity",
+      "Logs",
+      "Admin-Processes"
+    ],
+    "12-Factor-App|Conclusion": [
+      "Conclusion"
+    ],
+    "AI-Agents|Introduction": [
+      "Course-Introduction"
+    ],
+    "AI-Agents|Prerequisites": [
+      "AI-Agents-Introduction",
+      "Types-of-AI-Agents",
+      "Types-of-Agentic-Agents-and-Multi-Agentic-Agents",
+      "AI-Development-Key-Concepts",
+      "Ethical-Considerations",
+      "AI-Technologies-for-Agents-Overview",
+      "Testing-and-Evaluation-of-AI-Agents"
+    ],
+    "AI-Agents|Agent-Architecture-Multi-Agent-Systems": [
+      "Agentic-Architecture-and-Inter-Agent-Communication",
+      "Multi-Agent-Frameworks-and-Architecture",
+      "Autonomous-Agent-Frameworks",
+      "Security-and-Ethical-AI-in-Multi-Agent-Systems"
+    ],
+    "AI-Agents|Building-AI-Agents": [
+      "Development-Environment-Overview",
+      "Demo-Setting-Up-Development-Environment",
+      "Understanding-Conversational-AI-Theories-and-Design",
+      "Demo-Building-a-Simple-Chatbot"
+    ],
+    "AI-Agents|API-Integrations-Tools": [
+      "Claude-API-Overview",
+      "Demo-How-to-Use-Claude-API",
+      "Poe-Overview",
+      "Demo-How-to-Use-Poe",
+      "Kubernetes-MCP",
+      "Manus-AI-Overview"
+    ],
+    "AI-Agents|Practical-Projects": [
+      "Task-Automation-in-AI-Agents",
+      "Demo-Exploring-Computer-Tools-Playwright",
+      "Demo-Building-a-News-Aggretor-Using-WebSearchTool",
+      "Understanding-Agent-Computer-Tools",
+      "Understanding-FireSearchTool",
+      "Demo-Searching-Resumes-for-Keywords"
+    ],
+    "AI-Agents|Advanced-Agents-Projects": [
+      "Audio-AI-Agent-Speech-Translator",
+      "Demo-Automatic-Language-Recognition-and-Translation",
+      "Understanding-Multi-Agent-Systems",
+      "Demo-Building-a-Multi-Agent-System"
+    ],
+    "AI-Agents-Fundamentals|AI-Agents-Part-1": [
+      "Introduction-to-AI-Agents",
+      "How-LLMs-work-in-real-time",
+      "Embeddings-Vector-Representations",
+      "How-LangChain-works",
+      "Practice-Labs-Your-First-AI-API-Call",
+      "Practice-Labs-LangChain",
+      "Prompt-Engineering-Techniques",
+      "Practice-Labs-Master-Prompt-Engineering"
+    ],
+    "AI-Agents-Fundamentals|AI-Agents-Part-2": [
+      "Vector-Databases-Deep-Dive",
+      "Practice-Labs-Build-Semantic-Search-Engine",
+      "RAG",
+      "Practice-Labs-RAG-Implementation",
+      "LangGraph-for-AI-Workflows",
+      "Practice-Labs-Build-Stateful-AI-Workflows",
+      "Model-Context-Protocol",
+      "Practice-Labs-Advanced-MCP-Concepts",
+      "Conclusion"
+    ],
+    "AI-Agents-Fundamentals|Introduction": [
+      "Course-Introduction"
+    ],
+    "AI-Assisted-Ansible|Prerequisites": [
+      "Course-Introduction",
+      "Prerequisites"
+    ],
+    "AI-Assisted-Ansible|Ansible-Refresher": [
+      "Ansible-Playbook-Basics",
+      "Demo-Writing-a-Simple-Playbook"
+    ],
+    "AI-Assisted-Ansible|Working-With-VS-Code-Extension": [
+      "VS-Code-Extension-Features",
+      "Demo-Setting-Up-VS-Code-With-Ansible-VS-Code-Extension",
+      "Demo-Using-Linting-and-Validation",
+      "Demo-Integrating-Cursor"
+    ],
+    "AI-Assisted-Ansible|Using-ChatGPT-With-Ansible": [
+      "Playbook-Generation-Using-Prompts",
+      "Demo-Generating-a-Playbook-With-ChatGPT",
+      "Demo-Iterating-With-ChatGPT-to-Fix-Errors"
+    ],
+    "AI-Assisted-Ansible|GitHub-Copilot": [
+      "Demo-Installing-and-Enabling-Copilot",
+      "Demo-Writing-Playbooks-With-Copilot",
+      "Comparing-Copilot-vs-ChatGPT"
+    ],
+    "AI-Assisted-Ansible|Claude-Code-CLI-With-Ansible": [
+      "Demo-Integrating-Claude-Code-CLI",
+      "Demo-Writting-Playbook-With-Claude-Code-Cli"
+    ],
+    "AI-Assisted-Ansible|Red-Hat-Ansible-Lightspeed": [
+      "What-is-Lightspeed",
+      "Demo-Setting-Up-Lightspeed",
+      "Demo-Generating-Playbooks-With-Lightspeed"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Introduction": [
+      "Course-Introduction",
+      "Certification-Details"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Introduction-to-AI-and-Azure-AI-Services": [
+      "Module-Introduction",
+      "What-Is-Artificial-Intelligence",
+      "Responsible-AI-Considerations",
+      "Azure-Machine-Learning",
+      "Azure-AI-Services",
+      "Azure-AI-Search"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Get-Started-with-Azure-AI-Services": [
+      "Module-Introduction",
+      "Deploying-Azure-AI-Services",
+      "Working-with-Azure-AI-Services"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Using-Azure-AI-Services-for-Enterprise-Applications": [
+      "Module-Introduction",
+      "Securing-Azure-AI-Services",
+      "Monitoring-Azure-AI-Services",
+      "Containerizing-Azure-AI-Services"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Analyzing-Videos": [
+      "Module-Introduction",
+      "Video-Indexer",
+      "Building-Insights"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Analyzing-Text": [
+      "Module-Introduction",
+      "Azure-AI-Language-Services",
+      "Working-with-Azure-AI-Language-Services"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Translating-Text": [
+      "Module-Introduction",
+      "Translator-Service",
+      "Working-with-Translator-Service",
+      "Custom-Translation"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Develop-a-Question-Answering-Solution": [
+      "Module-Introduction",
+      "Introduction-to-QnA",
+      "Working-with-Question-Answering",
+      "Fine-Tuning-Question-Answering-Performance"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Develop-a-Conversational-Language-Understanding-App": [
+      "Module-Introduction",
+      "What-Is-Language-Understanding",
+      "Intents-Utterances-and-Entities",
+      "Azure-AI-Language-Capabilities",
+      "Training-Testing-Publishing-and-Reviewing"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Custom-Classification-and-Named-Entity-Extraction": [
+      "Module-Introduction",
+      "Custom-Text-Classification",
+      "Custom-Named-Entity-Recognition",
+      "Review-and-Improve-Model"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Speech-Recognition-Translation-and-Synthesis": [
+      "Module-Introduction",
+      "Speech-Service",
+      "Speech-to-Text-and-Text-to-Speech",
+      "Audio-Format-and-Voices",
+      "Speech-Synthesis-Markup-Language-SSML",
+      "Translating-Speech-to-Text"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Get-Started-with-Azure-OpenAI-Service": [
+      "Module-Introduction",
+      "What-Is-Generative-AI",
+      "Deploying-an-Azure-OpenAI-Resource",
+      "AI-Foundry-Portal",
+      "Deploying-Generative-AI-Models",
+      "Using-Prompts-to-Get-Completions-and-Testing-Models"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Develop-Apps-with-Azure-OpenAI-Service": [
+      "Module-Introduction",
+      "Integrating-Azure-OpenAI-into-Your-App",
+      "Using-the-Azure-OpenAI-REST-API",
+      "Using-Language-Specific-SDKs"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Apply-Prompt-Engineering": [
+      "Module-Introduction",
+      "What-Is-Prompt-Engineering",
+      "Using-Prompt-Engineering",
+      "Providing-Clear-Instructions",
+      "Using-System-Messages",
+      "Conversation-History",
+      "Chain-of-Thought"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Implement-Retrieval-Augmented-Generation-RAG-with-Azure-OpenAI-Service": [
+      "Module-Introduction",
+      "What-Is-RAG",
+      "How-Azure-OpenAI-Can-Use-Your-Data",
+      "Working-with-Custom-Data-Sources"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Implementing-an-Intelligent-Search-Solution": [
+      "Module-Introduction",
+      "Azure-AI-Search",
+      "Enrichment-Pipeline"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Create-a-Custom-Skill-for-Azure-AI-Search": [
+      "Module-Introduction",
+      "What-Are-Custom-Skills",
+      "Custom-Skill-Interfaces",
+      "Adding-a-Custom-Skill-to-a-Skillset"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Creating-a-Knowledge-Store": [
+      "Module-Introduction",
+      "What-Is-Knowledge-Store",
+      "Using-the-Shaper-Skill-for-Projections",
+      "Implementing-a-Knowledge-Store"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Develop-a-Document-Intelligence-Solution": [
+      "Module-Introduction",
+      "Document-Intelligence-Service",
+      "Working-with-Document-Intelligence-Service",
+      "Training-Custom-Models",
+      "Accuracy-and-Confidence-Scores",
+      "Analyzing-Documents-Using-Custom-Model"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Analyze-and-Manipulate-Images": [
+      "Image-Analysis-Using-Azure-AI-Vision",
+      "Working-with-Image-Analysis",
+      "OCR-Using-Azure-AI-Vision"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Detecting-Faces-with-the-Azure-AI-Vision": [
+      "Face-Detection-Analysis-and-Recognition",
+      "Considerations-for-Face-Detection-and-Recognition",
+      "Face-Service",
+      "Face-Detection-Using-Azure-AI-Vision"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Custom-Vision-Models-with-Azure-AI-Custom-Vision": [
+      "Custom-Vision-Model",
+      "Image-Classification-and-Object-Detection",
+      "Training-Custom-Models"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Introduction": [
+      "Course-Introduction",
+      "Certification-Details"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Fundamental-AI-Concepts": [
+      "Module-Introduction",
+      "What-Is-Artificial-Intelligence",
+      "Common-AI-Workloads",
+      "Principles-of-Responsible-AI"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Fundamentals-of-Machine-Learning": [
+      "Module-Introduction",
+      "What-Is-Machine-Learning",
+      "Types-of-Machine-Learning",
+      "Training-and-Evaluation-of-Models",
+      "Deep-Learning",
+      "Introduction-to-Azure-ML"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Introduction-to-Azure-AI-Services": [
+      "Module-Introduction",
+      "Fundamentals-of-Azure-AI",
+      "Azure-AI-Services"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Concepts-of-Computer-Vision": [
+      "Module-Introduction",
+      "Image-Processing",
+      "Convolutional-Neural-Networks",
+      "Explore-Multi-Modal-Models",
+      "Azure-Computer-Vision-Services"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Azure-Computer-Vision-Capabilities": [
+      "Module-Introduction",
+      "AI-Vision-Service-and-Image-Analysis",
+      "Face-Service-to-Detect-Faces",
+      "Optical-Character-Recognition-OCR-to-Read-Text"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Natural-Language-Processing-NLP": [
+      "Module-Introduction",
+      "Introduction-to-Natural-Language-Processing",
+      "NLP-and-Conversational-AI-in-Azure"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Azure-NLP-Services": [
+      "Module-Introduction",
+      "Text-Analysis",
+      "Question-Answering",
+      "Azure-Bot-Service",
+      "Conversational-Language-and-Understanding",
+      "Speech-Recognition-and-Synthesis"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Azure-AI-Document-Intelligence": [
+      "Module-Introduction",
+      "AI-Document-Intelligence-Services",
+      "Form-Analysis-Using-Document-Intelligence",
+      "Document-Intelligence-Studio"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Azure-AI-Search": [
+      "Module-Introduction",
+      "Introduction-to-Knowledge-Mining",
+      "Azure-AI-Search-Services",
+      "AI-Enrichment"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Generative-AI": [
+      "Module-Introduction",
+      "Introduction-to-Generative-AI",
+      "Language-Models",
+      "Language-Model-Training",
+      "Foundation-Models",
+      "Large-and-Small-Language-Models",
+      "What-Are-Copilots",
+      "Microsoft-Copilot-Services",
+      "Copilot-Prompts-Considerations",
+      "Developing-And-Extending-Copilot"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Fundamentals-of-Azure-OpenAI": [
+      "Module-Introduction",
+      "What-Is-Azure-OpenAI",
+      "Models-Supported-by-Azure-Open-AI",
+      "Azure-OpenAI-Capabilities"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Responsible-Generative-AI": [
+      "Module-Introduction",
+      "Plan-a-Responsible-Generative-AI-Solution"
+    ],
+    "AI-Assisted-Development|Course-Introduction": [
+      "Course-Overview"
+    ],
+    "AI-Assisted-Development|Introduction-to-AI-Assisted-Development": [
+      "Introduction-to-AI-Assisted-Development",
+      "Common-Concerns-on-AI",
+      "Benefits-of-AI",
+      "A-Quick-Look-ChatGPT",
+      "A-Quick-Look-BlackboxAI",
+      "A-Quick-Look-Tabnine",
+      "A-Quick-Look-GitHub-Copilot",
+      "A-Quick-Look-Cursor",
+      "What-We-Will-build"
+    ],
+    "AI-Assisted-Development|Planning-Phase": [
+      "Section-Introduction",
+      "Requirements-Analysis-with-ChatGPT",
+      "Generating-User-Stories",
+      "Creating-a-Technical-Specification-Document",
+      "Creating-Component-Diagrams-and-Data-Flow"
+    ],
+    "AI-Assisted-Development|Development-Phase-Backend": [
+      "Section-Introduction",
+      "Configuring-Our-Virtual-Environment",
+      "Setting-up-Our-Project-Structure",
+      "Setting-up-Flask-for-the-API",
+      "Implementing-OpenCV",
+      "Debugging-Our-Application",
+      "Image-Loading-and-Validation",
+      "Error-Handling",
+      "Testing-with-Postman"
+    ],
+    "AI-Assisted-Development|Development-Phase-Frontend": [
+      "Section-Introduction",
+      "Scaffolding-a-New-React-APP",
+      "Creating-a-UI",
+      "Wiring-up-Our-Project"
+    ],
+    "AI-Assisted-Development|Project-Completion": [
+      "Generating-Comments-with-Tabnine",
+      "Creating-Documentation-with-BlackboxAI",
+      "Getting-the-Repo-Ready-to-Go-Public",
+      "Conclusion"
+    ],
+    "AWS-Certified-AI-Practitioner|Introduction": [
+      "Introduction",
+      "Course-Overview",
+      "Why-AWS-AI-Practitioner-Certification-and-what-is-an-AI-Practitioner",
+      "RegisteringTaking-an-exam-for-the-first-time-What-to-know-Demo",
+      "AI-Practitioner-Exam-Guide-Exam-Details-and-Domains",
+      "Setting-up-your-own-AWS-Account-A-walk-through"
+    ],
+    "AWS-Certified-AI-Practitioner|Fundamentals-of-AI-and-ML": [
+      "Basic-AI-Concepts-and-Terminologies",
+      "AI-ML-and-Deep-Learning-Similarities-and-Differences",
+      "Types-of-Inferencing",
+      "Data-Types-in-AI-Models",
+      "Supervised-Unsupervised-and-Reinforcement-Learning",
+      "Identifying-Practice-Use-cases-for-AIML",
+      "ML-Development-Lifecycle-and-the-ML-Pipeline",
+      "Introduction-to-MLOps-concepts-from-design-to-metrics",
+      "Overview-of-AI-and-ML-Services-on-AWS"
+    ],
+    "AWS-Certified-AI-Practitioner|Fundamentals-of-Generative-AI": [
+      "Basic-Concepts-of-Generative-AI-tokens-chunking-embeddings-and-more",
+      "Generative-AI-Use-Cases-and-Applications",
+      "Foundation-Model-Lifecycle",
+      "Capabilities-and-Limitations-of-Generative-AI-Applications",
+      "Cost-Consideration-for-AWS-Gen-AI-Services-redundancy-availability-performance-and-more"
+    ],
+    "AWS-Certified-AI-Practitioner|Applications-of-Foundation-Models": [
+      "Design-considerations-for-Foundation-Model-Applications",
+      "Selecting-Pre-Trained-Models",
+      "Inference-Parameters-and-their-effects",
+      "Retrieval-Augmented-Generation-RAG-and-its-uses",
+      "Vector-Databases-on-AWS",
+      "Foundation-Model-Customization-Approaches",
+      "Agents-for-Multi-step-tasks",
+      "Prompt-Engineering-Techniques-and-Best-Practices",
+      "Training-and-Fine-tuning-Process-for-Foundation-Models",
+      "Evaluating-Foundation-Model-Performance"
+    ],
+    "AWS-Certified-AI-Practitioner|Guidelines-for-Responsible-AI": [
+      "Features-of-Responsible-AI",
+      "Tools-for-Identifying-Responsible-AI-Features",
+      "Responsible-Model-Selection-Practices",
+      "Legal-Risks-in-Generative-AI",
+      "Dataset-Characteristics-and-Bias",
+      "Transparent-and-Explainable-Models",
+      "Human-centered-Design-for-Explainable-AI"
+    ],
+    "AWS-Certified-AI-Practitioner|Security-Compliance-and-Governance-for-AI-Solutions": [
+      "Securing-AI-Systems-with-AWS-Services",
+      "Source-Citation-and-Data-Lineage",
+      "Best-Practices-for-Secure-Data-Engineering",
+      "Security-and-Privacy-Considerations-for-AI-Systems",
+      "Regulatory-Compliance-Standards-for-AI-Systems",
+      "AWS-Services-for-Governance-and-Compliance",
+      "AI-Data-Governance-Strategies"
+    ],
+    "AWS-Certified-AI-Practitioner|Conclusion-and-Next-Steps": [
+      "Next-Steps-and-Resources-in-Certification",
+      "Continual-Learning-in-the-AIML-Space-for-AWS",
+      "A-Final-Word-The-future-impact-of-AI-in-AWS-and-beyond"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate|Introduction-Prerequisites": [
+      "Course-Introduction",
+      "Demo-RegisteringTaking-an-Exam-for-the-First-Time-What-to-know",
+      "Where-Are-You-Now-Take-an-assessment-to-know-what-you-dont-know",
+      "Demo-The-KodeKloud-AWS-Playgrounds",
+      "Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate|Domain-1-Monitoring-Logging-and-Remediation": [
+      "Importance-of-Monitoring-and-Logging-in-Cloud-Operations",
+      "CloudWatch-and-CloudTrail-Overview",
+      "Logging-With-CloudWatch-Logs",
+      "Demo-Finding-Logs-with-CloudWatch-Logs",
+      "Discovering-With-CloudWatch-Log-Insights",
+      "Auditing-With-CloudTrail",
+      "Demo-Tracking-Access-with-CloudTrail",
+      "Monitoring-With-CloudWatch",
+      "Using-CloudWatch-Agent-to-Collect-Metrics-and-Logs",
+      "Demo-Installing-and-Configuring-CloudWatch-Agent",
+      "Understanding-and-Responding-to-CloudWatch-Alarms",
+      "Configuring-Metric-Filters-for-Specific-Log-Data",
+      "Demo-Creating-CloudWatch-Alarms",
+      "Building-Cloudwatch-Dashboards-for-Visualization",
+      "Demo-Building-a-simple-CloudWatch-Dashboard",
+      "Configuring-Notifications-With-SNS",
+      "Demo-Setting-up-SNSSQS-to-send-Messages",
+      "AWS-EventBridge-Introduction",
+      "Configuring-EventBridge-Rules-to-Trigger-Actions",
+      "Systems-Manager-and-Its-Sub-Services-Overview",
+      "Remediation-With-Systems-Manager-Automation-Runbooks",
+      "Triggering-Automated-Actions-With-AWS-Config",
+      "Demo-Creating-and-Executing-Automation-Runbooks"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate|Domain-2-Reliability-and-BCP": [
+      "Importance-of-Reliability-and-Business-Continuity-in-Cloud-Operations",
+      "AWS-Auto-Scaling-Overview",
+      "The-Various-Scaling-Types-in-AWS-Auto-Scaling",
+      "Demo-Setting-up-Various-Autoscaling-Plans",
+      "Understanding-Caching-and-Caching-Strategies",
+      "Implementing-Caching-With-Elasticache",
+      "Implementing-Caching-With-DynamoDB-and-DAX",
+      "General-Replication-Options-for-Data-Services-on-AWS",
+      "AWS-RDS-Replication-Types-Introduction",
+      "AWS-Aurora-Replication-Options-Introduction",
+      "Demo-Setting-up-AWS-RDS-Multi-AZ-Cluster-Deployment-with-Read-Replicas",
+      "Understanding-and-Exploring-Global-Tables-on-Dynamodb",
+      "Demo-Setting-up-Global-Tables-with-DynamoDB",
+      "Understanding-Loosely-Coupled-and-Various-Scenarios",
+      "High-Availability-and-Fault-Tolerance-in-AWS-Introduction",
+      "Understanding-Elastic-Load-Balancing-and-Load-Distribution",
+      "Adding-Route-53-Health-Checks-With-an-ELB-and-Route-53-Policies",
+      "Adding-in-Global-Accelerator-With-ELB",
+      "Single-AZ-vs-Multi-AZ-in-Service-and-Deployments",
+      "Multi-AZ-Architectures-for-Various-AWS-Services-Overview",
+      "Strategies-for-Fault-Tolerant-Workloads-on-AWS",
+      "Demo-Implementing-Fault-Tolerant-Storage-using-EFS",
+      "Backup-and-Snapshot-Options-on-AWS-Overview",
+      "Demo-Configuring-RDS-Snapshots-for-your-Database",
+      "Configuring-AWS-Backup-for-Various-Services",
+      "Performing-Point-in-Time-Restores-for-Various-Database-Services",
+      "Promoting-Read-Replicas-as-a-Restoration",
+      "Demo-Promoting-your-own-Read-Replica-to-a-Primary",
+      "Versioning-and-Lifecycle-Options-in-AWS-Overview",
+      "Implementing-Versioning-on-S3",
+      "Implementing-Lifecycle-Rules-on-S3",
+      "Demo-Memory-Stress-on-Enabling-Versioning-and-Lifecycle-Rules-for-S3",
+      "CRR-and-DR-Options-in-AWS-Overview",
+      "Setting-Up-S3-for-CRR",
+      "Demo-Setting-up-S3-for-CRR"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate|Domain-3-Deployment-Provisioning-and-Automation": [
+      "Cloud-Resource-Provisioning-Introduction",
+      "Importance-of-Automation-and-IaC-in-Service-Provisioning",
+      "Amazon-Machine-Images-in-AWS-Overview",
+      "Building-With-EC2-Image-Builder-for-Automated-Image-Creation-VMs-and-Containers",
+      "Demo-Creating-and-Managing-AMIs-with-EC2-Image-Builder",
+      "CloudFormation-Overview",
+      "Creating-and-Managing-Services-With-CloudFormation-Templates",
+      "Demo-The-Anatomy-of-a-CloudFormation-Template",
+      "Advanced-Automation-Features-of-CloudFormation",
+      "Demo-Creating-a-simple-S3-Bucket-with-CloudFormation",
+      "Strategies-for-Service-Provisioning-Across-AWS-Globally",
+      "Utilizing-CloudFormation-StackSets-for-Distributing-Globally",
+      "Discovering-Services-Using-the-Resource-Access-Manager",
+      "Understanding-Different-Deployment-Strategies",
+      "Configuring-Different-Deployment-Strategies-for-Various-AWS-Services",
+      "Common-Deployment-Issues-and-Challenges",
+      "Strategies-for-Identifying-and-Remedying-Deployment-Issues"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate|Domain-4-Security-and-Compliance": [
+      "Security-and-Compliance-Policies-in-AWS-Overview",
+      "IAM-Overview",
+      "Implementing-IAM-Features-MFA-Password-Policies-and-Roles",
+      "Configuring-IAM-Policies-for-Fine-Grained-Access-Control",
+      "Demo-Configuring-Users-and-Group-Access-and-Policies",
+      "Utilizing-Permissions-Boundaries-to-Scope-User-Permissions",
+      "Enabling-Service-Control-Policies-to-Scope-Account-Permissions",
+      "Using-Organizational-Policies-to-Scope-Organization-Permissions",
+      "Auditing-Access-Policies-With-IAM-Policy-Simulator",
+      "Troubleshooting-Access-With-IAM-Access-Analyzer",
+      "Trusted-Advisor-Security-Checks-Overview",
+      "Multi-Account-in-AWS-Strategies",
+      "Multi-Account-Security-With-AWS-Organizations",
+      "Exploring-Multi-Account-Security-With-AWS-Control-Tower",
+      "Protection-Strategies-Overview",
+      "Classifying-Data-Based-on-Sensitivity-and-Regulatory-Requirements",
+      "Importance-of-Network-Defense",
+      "VPC-and-Its-Defenses-Overview",
+      "Demo-Exploring-the-VPCs-Security-Groups-and-NACLs",
+      "Network-Firewall-Service-Overview",
+      "AWS-GuardDuty-Overview",
+      "Encryption-at-Rest-Options-for-AWS-Services-Overview",
+      "Demo-Migrating-an-EBS-Volumes-from-Unencrypted-to-Encrypted",
+      "Encryption-in-Transit-Options-for-AWS-Services-Overview",
+      "Key-Management-Service-KMS",
+      "KMS-Around-Encryption-Keys-Best-Practices",
+      "AWS-Inspector-Overview",
+      "WAF-and-Shield-Overview",
+      "Using-and-Storing-Secrets-on-AWS-Secrets-Manager",
+      "Using-and-Storing-Secrets-on-AWS-Systems-Manager-Parameter-Store",
+      "Demo-Setting-up-Secrets-Manager-with-RDS",
+      "Security-Hub-Overview",
+      "AWS-Config-Overview",
+      "AWS-Audit-Manager-Overview"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate|Domain-5-Networking-and-Content-Delivery": [
+      "Configuring-VPC-Components-Subnets-Route-Tables-and-Security-GroupsNACLs",
+      "Setting-Up-External-Access-NAT-Gateways-Internet-Gateways-and-Egress-Only-IGW",
+      "Configuring-EC2-Connectivity-Using-Systems-Manager-Session-Manager",
+      "Implementing-Private-Service-Connectivity-Using-VPC-Endpoints-and-PrivateLink",
+      "Internal-Network-to-Network-Connectivity-With-VPC-Peering",
+      "Internal-Network-to-Network-Connectivity-With-Transit-Gateway",
+      "Client-and-Site-to-Site-VPN-Overview",
+      "AWS-Direct-Connect",
+      "Route-53-Overview",
+      "Configuring-Domain-Names-Hosted-Zones-and-Records",
+      "Route-53-Routing-Policies",
+      "Route-53-Resolvers-Introduction",
+      "Setting-Up-DNS-Forwarding-and-Conditional-Forwarding",
+      "CloudFront-Overview",
+      "Demo-Exploring-the-Options-with-CloudFront",
+      "Access-Controls-and-Security-With-CloudFront",
+      "Configuring-Amazon-S3-for-Hosting-Static-Sites",
+      "Common-Misconfigurations-and-Troubleshooting-VPC-Issues",
+      "Networking-in-AWS-Understanding-Various-Logs-Available",
+      "CloudFront-Caching-Mechanism-and-Potential-Issues",
+      "VPN-Direct-Connect-Peering-and-VPC-Endpoints-Common-Issues"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate|Domain-6-Cost-and-Performance-Optimization": [
+      "Importance-of-Cost-optimization",
+      "Cost-Optimization-Strategies-Overview-and-Best-Practices",
+      "Configuring-Cost-Allocation-Tags",
+      "Tagging-Resources-for-Cost-Management-Best-Practices",
+      "Using-Tools-Like-Trusted-Advisor-and-Cost-Explorer-to-Find-Unused-Resources",
+      "Using-Tools-Like-Cost-Optimizer-to-Find-Underutilized-Resources",
+      "Setting-Up-AWS-Budgets-to-Monitor-and-Control-Costs",
+      "Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring",
+      "EC2-Spot-Instances-Pros-and-Cons",
+      "What-Workloads-Are-Perfect-for-EC2-Spot-Instances",
+      "Highly-Managed-AWS-Services-Overview",
+      "Trade-Offs-Between-Managed-Services-and-Self-Managed-Services"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate|Summary": [
+      "Summary-of-Domain-1-Monitoring-Logging-and-Remediation",
+      "Summary-of-Domain-2-Reliability-and-Business-Continuity",
+      "Summary-of-Domain-3-Deployment-Provisioning-and-Automation",
+      "Summary-of-Domain-4-Security-and-Compliance",
+      "Summary-of-Domain-5-Networking-and-Content-Delivery",
+      "Summary-of-Domain-6-Cost-and-Performance-Optimization"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate|Practice-Exams-and-Closing-Steps": [
+      "The-Day-of-the-Exam-How-to-Prepare",
+      "Continual-Learning-Resources"
+    ],
+    "AWS-Certified-Developer-Associate|Introduction": [
+      "Course-Introduction",
+      "Certification-Details",
+      "Registering-for-the-Exam"
+    ],
+    "AWS-Certified-Developer-Associate|Networking-Fundamentals": [
+      "Section-Introduction",
+      "VPC-Recap",
+      "Subnets",
+      "Subnets-Demo",
+      "Routing-in-VPCs",
+      "Routing-Demo",
+      "Internet-Gateway",
+      "Internet-Gateway-Demo",
+      "NAT-Gateway",
+      "NAT-Gateway-Demo",
+      "Public-vs-Private-Subnets",
+      "Elastic-IP",
+      "Elastic-IP-Demo",
+      "Security-Groups-NACLs",
+      "Security-Groups-Demo",
+      "NACLs-Demo",
+      "VPC-Peering",
+      "VPC-Peering-Demo",
+      "Exam-Tips"
+    ],
+    "AWS-Certified-Developer-Associate|Identity-and-Access-Management-IAM": [
+      "Section-Introduction",
+      "IAM-Overview",
+      "IAM-Demo",
+      "Dynamic-Policies",
+      "Roles-for-AWS-Services",
+      "Roles-for-AWS-Services-Demo",
+      "IAM-PassRole-for-AWS-Services",
+      "IAM-PassRole-for-AWS-Services-Demo",
+      "EC2-Instance-Roles-Demo",
+      "STSSecurity-Token-Service",
+      "Exam-Tips"
+    ],
+    "AWS-Certified-Developer-Associate|Elastic-Compute-CloudEC2": [
+      "Section-Introduction",
+      "EC2-Pricing",
+      "EC2-Storage",
+      "EC2-Placement",
+      "EC2-Userdata",
+      "EC2-Userdata-demo",
+      "Exam-Tips"
+    ],
+    "AWS-Certified-Developer-Associate|Storage": [
+      "Section-Introduction",
+      "EBS",
+      "EBS-Demo-1",
+      "EBS-Demo-2",
+      "Instance-Store",
+      "Instance-Store-Demo",
+      "EFS",
+      "EFS-Demo",
+      "S3-Review-Storage-Classes",
+      "S3-Storage-Classes-Demo",
+      "S3-Versioning",
+      "S3-Versioning-Demo",
+      "S3-ACL-and-Resource-Policies",
+      "S3-ACL-and-Resource-Policies-Demo",
+      "S3-Static-Website-Hosting",
+      "S3-Static-Website-Hosting-Demo",
+      "S3-Encryption",
+      "S3-Encryption-Demo",
+      "S3-Pres-Signed-URLs",
+      "S3-Pres-Signed-URLs-Demo",
+      "S3-Access-Points",
+      "S3-Access-Points-Demo",
+      "S3-Access-Logs",
+      "S3-Events",
+      "Exam-Tips"
+    ],
+    "AWS-Certified-Developer-Associate|Load-Balancing-AutoScaling": [
+      "Section-Introduction",
+      "Elastic-LoadBalancer-Overview",
+      "Application-Load-Balancer",
+      "Network-Load-Balancer",
+      "Gateway-Load-Balancer",
+      "Application-Loadbalancer-Demo",
+      "Sticky-sessions",
+      "Autoscaling-Groups-Overview",
+      "Autoscaling-Groups-Demo",
+      "Exam-Tips"
+    ],
+    "AWS-Certified-Developer-Associate|Databases": [
+      "Section-Introduction",
+      "AWS-RDS-Overview",
+      "AWS-RDS-Demo",
+      "Aurora",
+      "Aurora-Demo",
+      "RDS-Proxy",
+      "DynamoDB-Overview",
+      "DynamoDB-Basics-Demo",
+      "DynamoDB-Pricing-Throughput",
+      "DynamoDB-Pricing-Throughput-Demo",
+      "DynamoDB-Indexes-GSI-LSI",
+      "DynamoDB-Indexes-GSI-LSI-Demo",
+      "DynamoDB-API",
+      "DynamoDB-CLI-Demo",
+      "DynamoDB-SDK-Part1-Demo",
+      "DynamoDB-SDK-Part2-Demo",
+      "DynamoDB-Conditional-writes",
+      "DynamoDB-Optimistic-Locking",
+      "DynamoDB-Transactions",
+      "DynamoDB-TTL",
+      "DynamoDB-TTL-Demo"
+    ]
+  }
+}

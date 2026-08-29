@@ -44,7 +44,7 @@ By default, each inventory entry includes the following metadata fields:
 | Encryption status  | e.g., `AES256` or AWS KMS key            |
 | Object lock status | Holds `GOVERNANCE` or `COMPLIANCE` locks |
 
-![The image lists the types of information included in an inventory report, such as bucket name, key name, version ID, size, last modified date, storage class, replication status, encryption status, and object lock status. It also suggests referring to documentation for a complete list.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869386/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Inventory/inventory-report-information-types-list.jpg)
+![The image lists the types of information included in an inventory report, such as bucket name, key name, version ID, size, last modified date, storage class, replication status, encryption status, and object lock status. It also suggests referring to documentation for a complete list.](https://kodekloud.com/kk-media/image/upload/v1752869386/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Inventory/inventory-report-information-types-list.jpg)
 
 Refer to the [AWS documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-inventory.html) for the full list of available fields.
 

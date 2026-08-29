@@ -29,7 +29,7 @@ The exercise covers key networking tasks including creating a VPC with a NAT gat
 
 > **lightbulb** Feel free to pause the lesson at any point and experiment with the settings in the AWS Pricing Calculator. This hands-on approach will help reinforce your understanding of AWS networking costs.
 
-![The image lists network setup tasks: creating a VPC with gateways, setting up VPN connections, and configuring load balancers, alongside a network-related icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861444/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Network-Costs-Calculator-Exercise/frame_70.jpg)
+![The image lists network setup tasks: creating a VPC with gateways, setting up VPN connections, and configuring load balancers, alongside a network-related icon.](https://kodekloud.com/kk-media/image/upload/v1752861444/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Network-Costs-Calculator-Exercise/frame_70.jpg)
 
 That concludes the AWS networking cost estimation exercise. Use this opportunity to explore cost estimations further and better understand how different configurations impact your AWS billing.
 

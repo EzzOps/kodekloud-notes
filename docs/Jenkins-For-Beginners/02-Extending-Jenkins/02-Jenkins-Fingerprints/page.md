@@ -29,9 +29,7 @@ Skipped archiving because build is not successful
 Finished: FAILURE
 ```
 
-<Callout icon="lightbulb">
-  The failure is not related to the simulated controller failure. It occurs because the test job's condition expects an advice message containing more than five words.
-</Callout>
+> **lightbulb** The failure is not related to the simulated controller failure. It occurs because the test job's condition expects an advice message containing more than five words.
 
 After re-triggering the build job, the test job passes in a subsequent run, and build number five completes successfully—causing the deploy job to be queued.
 
@@ -92,21 +90,15 @@ Build step 'Execute shell' marked build as failure
 Finished: FAILURE
 ```
 
-<Callout icon="triangle-alert">
-  A significant downside of using Freestyle Projects is that they do not support resuming tasks after a controller failure. For critical workflows, consider using Pipeline Projects.
-</Callout>
+> **triangle-alert** A significant downside of using Freestyle Projects is that they do not support resuming tasks after a controller failure. For critical workflows, consider using Pipeline Projects.
 
 ## Understanding the Jenkins Dashboard
 
 For newcomers, the Jenkins dashboard might be overwhelming at first, especially when you encounter various icons like the sun or clouds. These icons provide quick visual feedback about build statuses and overall project health. Click on “More Actions” in the dashboard to view an icon legend with detailed descriptions.
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying the status of various build jobs, including their last success, last failure, and duration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879442/notes-assets/images/Jenkins-For-Beginners-Controller-Failure-Freestyle-Project/jenkins-dashboard-build-status.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying the status of various build jobs, including their last success, last failure, and duration.](https://kodekloud.com/kk-media/image/upload/v1752879442/notes-assets/images/Jenkins-For-Beginners-Controller-Failure-Freestyle-Project/jenkins-dashboard-build-status.jpg)
 
-<Frame>
-  ![The image shows a Jenkins dashboard with an "Icon legend" pop-up explaining various build statuses using different colored icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879443/notes-assets/images/Jenkins-For-Beginners-Controller-Failure-Freestyle-Project/jenkins-dashboard-build-status-icons.jpg)
-</Frame>
+![The image shows a Jenkins dashboard with an "Icon legend" pop-up explaining various build statuses using different colored icons.](https://kodekloud.com/kk-media/image/upload/v1752879443/notes-assets/images/Jenkins-For-Beginners-Controller-Failure-Freestyle-Project/jenkins-dashboard-build-status-icons.jpg)
 
 ## Conclusion
 
@@ -114,9 +106,7 @@ This article has explored how Freestyle Projects in Jenkins handle controller fa
 
 Thank you for reading!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/6a945431-1040-4467-b874-ef7d24d5a6a0/lesson/c29203da-190c-46a5-9a4f-1f490acf7f0d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/6a945431-1040-4467-b874-ef7d24d5a6a0/lesson/c29203da-190c-46a5-9a4f-1f490acf7f0d)
 
 
 # Jenkins Fingerprints
@@ -138,15 +128,11 @@ To effectively track this process, manual configuration of fingerprint recording
 2. Scroll down to the **Post-build Actions** section.
 3. Select the option to **Record fingerprints of files to track usage**.
 
-<Callout icon="lightbulb">
-  Click the help button for further clarification on this feature.
-</Callout>
+> **lightbulb** Click the help button for further clarification on this feature.
 
 4. Enter the file name(s) you wish to track. In this example, the file is named `advice.json`.
 
-<Frame>
-  ![The image shows a Jenkins configuration screen for a job named "ascii-build-job," with options for triggering builds and recording file fingerprints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879459/notes-assets/images/Jenkins-For-Beginners-Jenkins-Fingerprints/jenkins-ascii-build-job-config.jpg)
-</Frame>
+![The image shows a Jenkins configuration screen for a job named "ascii-build-job," with options for triggering builds and recording file fingerprints.](https://kodekloud.com/kk-media/image/upload/v1752879459/notes-assets/images/Jenkins-For-Beginners-Jenkins-Fingerprints/jenkins-ascii-build-job-config.jpg)
 
 After setting up the configuration for the build job, click **Save**. Although you can repeat this process for the test and deploy jobs, this demonstration focuses solely on configuring the build job.
 
@@ -154,24 +140,16 @@ Once you trigger a build (for instance, build number 8), the `advice.json` file 
 
 Furthermore, Jenkins provides an option to track additional files through the dashboard's fingerprint feature. You can upload any file and retrieve comprehensive usage details, such as when the file was used, the dependent projects, and the associated build IDs.
 
-<Frame>
-  ![The image shows a Jenkins dashboard with a list of jobs, their statuses, last success and failure times, and durations. The interface includes options like "New Item," "Build History," and "Manage Jenkins."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879460/notes-assets/images/Jenkins-For-Beginners-Jenkins-Fingerprints/jenkins-dashboard-jobs-statuses.jpg)
-</Frame>
+![The image shows a Jenkins dashboard with a list of jobs, their statuses, last success and failure times, and durations. The interface includes options like "New Item," "Build History," and "Manage Jenkins."](https://kodekloud.com/kk-media/image/upload/v1752879460/notes-assets/images/Jenkins-For-Beginners-Jenkins-Fingerprints/jenkins-dashboard-jobs-statuses.jpg)
 
 For a hands-on approach, utilize the **Check File Fingerprint** tool available on the Jenkins dashboard. This feature allows you to upload a file, verify its fingerprint against the Jenkins database, and receive an in-depth analysis of its use across projects.
 
-<Frame>
-  ![The image shows a Jenkins dashboard with the "Check File Fingerprint" feature, allowing users to upload a file to check its fingerprint against the database. The interface includes options like "New Item," "Build History," and "Manage Jenkins."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879461/notes-assets/images/Jenkins-For-Beginners-Jenkins-Fingerprints/jenkins-dashboard-file-fingerprint.jpg)
-</Frame>
+![The image shows a Jenkins dashboard with the "Check File Fingerprint" feature, allowing users to upload a file to check its fingerprint against the database. The interface includes options like "New Item," "Build History," and "Manage Jenkins."](https://kodekloud.com/kk-media/image/upload/v1752879461/notes-assets/images/Jenkins-For-Beginners-Jenkins-Fingerprints/jenkins-dashboard-file-fingerprint.jpg)
 
-<Callout icon="lightbulb">
-  By following these steps, you can efficiently monitor and manage file dependencies in your Jenkins projects using fingerprints.
-</Callout>
+> **lightbulb** By following these steps, you can efficiently monitor and manage file dependencies in your Jenkins projects using fingerprints.
 
 This guide has detailed how Jenkins utilizes fingerprints to track file usage across different builds and jobs. Implementing these practices will improve your project's dependency management and overall workflow efficiency. Happy building!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/6a945431-1040-4467-b874-ef7d24d5a6a0/lesson/e23db1d6-105b-4068-8524-929518a5f977" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/6a945431-1040-4467-b874-ef7d24d5a6a0/lesson/e23db1d6-105b-4068-8524-929518a5f977)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/6a945431-1040-4467-b874-ef7d24d5a6a0/lesson/c7258333-58e2-440c-822b-507a056998f2" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/6a945431-1040-4467-b874-ef7d24d5a6a0/lesson/c7258333-58e2-440c-822b-507a056998f2)

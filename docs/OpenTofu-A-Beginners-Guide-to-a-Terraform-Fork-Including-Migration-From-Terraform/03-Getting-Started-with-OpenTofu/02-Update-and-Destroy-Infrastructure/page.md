@@ -77,9 +77,7 @@ Error: Inconsistent dependency lock file
 
 The directory must be initialized first.
 
-<Callout icon="lightbulb">
-  Always run `tofu init` before planning or applying any changes.
-</Callout>
+> **lightbulb** Always run `tofu init` before planning or applying any changes.
 
 ***
 
@@ -102,9 +100,7 @@ OpenTofu has been successfully initialized!
 
 After initialization, OpenTofu downloads provider plugins. You can confirm the version (`2.5.1`) from the output or by inspecting `.terraform`:
 
-<Frame>
-  ![The image shows a split screen with a multiple-choice question on the left asking about the version of a local provider plugin, and a code editor on the right displaying a Terraform configuration file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882817/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-HCL-Basics/multiple-choice-question-terraform-config.jpg)
-</Frame>
+![The image shows a split screen with a multiple-choice question on the left asking about the version of a local provider plugin, and a code editor on the right displaying a Terraform configuration file.](https://kodekloud.com/kk-media/image/upload/v1752882817/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-HCL-Basics/multiple-choice-question-terraform-config.jpg)
 
 **Answer:** `2.5.1`
 
@@ -235,11 +231,9 @@ Congratulations—you’ve completed the lab! 🎉
 * [Local Provider (OpenTofu)](https://registry.opentofu.dev/hashicorp/local)
 * [HCL Language Overview](https://github.com/hashicorp/hcl)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/b3a724ed-f2f2-4a25-a20e-bfb4c000d1e7/lesson/a2a919d0-3725-49d3-88d5-fd44ed20d987" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/b3a724ed-f2f2-4a25-a20e-bfb4c000d1e7/lesson/a2a919d0-3725-49d3-88d5-fd44ed20d987)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/b3a724ed-f2f2-4a25-a20e-bfb4c000d1e7/lesson/f0316305-fe24-451d-a551-f3874d6b22b7" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/b3a724ed-f2f2-4a25-a20e-bfb4c000d1e7/lesson/f0316305-fe24-451d-a551-f3874d6b22b7)
 
 
 # Update and Destroy Infrastructure
@@ -290,9 +284,7 @@ Plan: 1 to add, 0 to change, 1 to destroy.
 Note: You didn't use the `-out` option to save this plan, so OpenTofu can’t guarantee to take exactly these actions if you run `tofu apply` now.
 ```
 
-<Callout icon="lightbulb">
-  Save your plan with `tofu plan -out=plan.tfplan` to lock in the exact changes for later application.
-</Callout>
+> **lightbulb** Save your plan with `tofu plan -out=plan.tfplan` to lock in the exact changes for later application.
 
 ### Understanding the Plan Output
 
@@ -361,9 +353,7 @@ local_file.pet: Destruction complete after 0s
 Destroy complete! Resources: 1 destroyed.
 ```
 
-<Callout icon="triangle-alert">
-  Adding `-auto-approve` skips all confirmation prompts. Use with caution, as it will immediately destroy your managed resources.
-</Callout>
+> **triangle-alert** Adding `-auto-approve` skips all confirmation prompts. Use with caution, as it will immediately destroy your managed resources.
 
 ***
 
@@ -435,6 +425,4 @@ This structure improves clarity and makes collaboration easier.
 * [OpenTofu Documentation](https://github.com/opentofu/opentofu)
 * [Terraform CLI Reference](https://www.terraform.io/docs/cli/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/b3a724ed-f2f2-4a25-a20e-bfb4c000d1e7/lesson/bcfab62c-941a-447c-b82b-633fbf64cf48" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/b3a724ed-f2f2-4a25-a20e-bfb4c000d1e7/lesson/bcfab62c-941a-447c-b82b-633fbf64cf48)

@@ -37,14 +37,10 @@ Dave adds casually, "Only if you're interested—no pressure."
 
 "Absolutely!" exclaims Bob.
 
-<Callout icon="lightbulb">
-  Take it from Dave: In this line of work, learning never stops. There are no limits to what you can achieve when you embrace the latest trends in technology, such as cloud computing and DevOps. Staying ahead of the curve is key to success.
-</Callout>
+> **lightbulb** Take it from Dave: In this line of work, learning never stops. There are no limits to what you can achieve when you embrace the latest trends in technology, such as cloud computing and DevOps. Staying ahead of the curve is key to success.
 
 Dave encourages him further, "Take it from me, Bob: in this line of work, the learning never stops. I always see it as a good thing. There are no limits to what you can achieve, my young friend. Things are changing rapidly every day, and it is essential that we adopt the latest trends in technology, such as cloud computing and DevOps." Mumshad Mannambeth also advises, "Keep up your current attitude. Stay ahead of the curve and you will go far."
 
 "Thanks, Dave. I can't wait to get started!" Bob says excitedly.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/c7cd22df-1e91-4206-8802-3a3f94f2d192/lesson/3f2a7eb2-17ea-4ed7-b9ea-2cbd88ef6a01" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/c7cd22df-1e91-4206-8802-3a3f94f2d192/lesson/3f2a7eb2-17ea-4ed7-b9ea-2cbd88ef6a01)

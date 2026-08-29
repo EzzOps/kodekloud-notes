@@ -21,11 +21,9 @@ Vault replication modes at a glance:
 | Performance       | Scale reads, reduce latency in local sites | Data (secrets, configs)               | N/A                                         |
 | Disaster Recovery | Failover with token and lease preservation | Data + Tokens (from any cluster tier) | DR replica becomes new primary on promotion |
 
-<Callout icon="lightbulb">
-  * Tokens created on a primary or performance cluster replicate **only** to their DR cluster.
+> **lightbulb** * Tokens created on a primary or performance cluster replicate **only** to their DR cluster.
   * Performance secondaries never receive tokens directly from the primary.
   * Promoting a DR cluster restores all tokens and leases for uninterrupted operation.
-</Callout>
 
 Clients always connect to their local cluster for both reads and writes. On failure, you promote the regional DR to primary.
 
@@ -53,9 +51,7 @@ Flow:
 
 A common AWS pattern spans two regions, each with local DR:
 
-<Frame>
-  ![The image illustrates a replication architecture on a map of the United States, showing AWS data centers on the east and west coasts with arrows indicating data replication between them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878283/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Replication-Architecture/aws-replication-architecture-map.jpg)
-</Frame>
+![The image illustrates a replication architecture on a map of the United States, showing AWS data centers on the east and west coasts with arrows indicating data replication between them.](https://kodekloud.com/kk-media/image/upload/v1752878283/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Replication-Architecture/aws-replication-architecture-map.jpg)
 
 * **us-east-1**: Primary + DR
 * **us-west-1**: Performance Replica + DR
@@ -66,15 +62,11 @@ A common AWS pattern spans two regions, each with local DR:
 
 For global scale, replicate from one primary to multiple regions, each with its own DR:
 
-<Frame>
-  ![The image is a world map highlighting data replication and performance between Dallas and London, with a focus on primary and disaster recovery (DR) systems. It also features a cartoon character in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878284/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Replication-Architecture/world-map-data-replication-dallas-london.jpg)
-</Frame>
+![The image is a world map highlighting data replication and performance between Dallas and London, with a focus on primary and disaster recovery (DR) systems. It also features a cartoon character in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878284/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Replication-Architecture/world-map-data-replication-dallas-london.jpg)
 
 Start with Dallas → London (with DR):
 
-<Frame>
-  ![The image is a map showing data replication and performance replication between data centers in Dallas, London, and Sydney. It illustrates connections and roles of primary and disaster recovery (DR) systems across these locations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878286/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Replication-Architecture/data-replication-performance-map-dallas-london-sydney.jpg)
-</Frame>
+![The image is a map showing data replication and performance replication between data centers in Dallas, London, and Sydney. It illustrates connections and roles of primary and disaster recovery (DR) systems across these locations.](https://kodekloud.com/kk-media/image/upload/v1752878286/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Replication-Architecture/data-replication-performance-map-dallas-london-sydney.jpg)
 
 Extend further to **Sydney**, maintaining consistent policies, auth methods, secrets engines, and configurations across all clusters.
 
@@ -86,9 +78,7 @@ Extend further to **Sydney**, maintaining consistent policies, auth methods, sec
 
 High-availability with VMware clusters across two data centers:
 
-<Frame>
-  ![The image illustrates a real-world customer example of data replication between two data centers, showing production and non-production environments with VMware clusters and replication processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878287/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Replication-Architecture/data-replication-vmware-clusters-example.jpg)
-</Frame>
+![The image illustrates a real-world customer example of data replication between two data centers, showing production and non-production environments with VMware clusters and replication processes.](https://kodekloud.com/kk-media/image/upload/v1752878287/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Replication-Architecture/data-replication-vmware-clusters-example.jpg)
 
 * Production DC A: Primary + DR
 * Production DC B: Performance Replica + DR
@@ -98,9 +88,7 @@ High-availability with VMware clusters across two data centers:
 
 Hybrid topology connecting on-premises primary to AWS:
 
-<Frame>
-  ![The image is a diagram illustrating a real-world customer example of an on-premises datacenter setup with production, non-production, and QA environments, showing data replication to AWS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878289/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Replication-Architecture/on-premises-datacenter-aws-replication-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating a real-world customer example of an on-premises datacenter setup with production, non-production, and QA environments, showing data replication to AWS.](https://kodekloud.com/kk-media/image/upload/v1752878289/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Replication-Architecture/on-premises-datacenter-aws-replication-diagram.jpg)
 
 * On-Prem Production: Primary + DR
 * AWS: Performance Replica + DR
@@ -112,15 +100,11 @@ Hybrid topology connecting on-premises primary to AWS:
 
 Replicating Vault clusters requires simple connectivity and DNS resolution:
 
-<Frame>
-  ![The image outlines networking requirements for communication between a primary cluster and a DR replication cluster, emphasizing the need for DNS resolution and specific TCP ports.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878290/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Replication-Architecture/networking-requirements-primary-dr-cluster.jpg)
-</Frame>
+![The image outlines networking requirements for communication between a primary cluster and a DR replication cluster, emphasizing the need for DNS resolution and specific TCP ports.](https://kodekloud.com/kk-media/image/upload/v1752878290/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Replication-Architecture/networking-requirements-primary-dr-cluster.jpg)
 
-<Callout icon="triangle-alert">
-  * Open **TCP 8200** and **8201** bi-directionally between clusters.
+> **triangle-alert** * Open **TCP 8200** and **8201** bi-directionally between clusters.
   * Restrict access using firewalls or security groups.
   * Ensure each cluster can resolve its peers’ DNS names.
-</Callout>
 
 ### Port Reference
 
@@ -132,9 +116,7 @@ Replicating Vault clusters requires simple connectivity and DNS resolution:
 | Load Balancer → Vault         | Vault API servers              | 8200   | TCP      | Internal       | Load balanced traffic |
 | Vault → External Services     | Database secrets engines, etc. | varies | TCP      | Outbound       | Secrets engine access |
 
-<Frame>
-  ![The image is a table detailing networking ports, including source, destination, port, protocol, direction, and purpose. It also features a Vault certification badge and a cartoon character at the bottom right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878290/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Replication-Architecture/networking-ports-table-vault-badge.jpg)
-</Frame>
+![The image is a table detailing networking ports, including source, destination, port, protocol, direction, and purpose. It also features a Vault certification badge and a cartoon character at the bottom right.](https://kodekloud.com/kk-media/image/upload/v1752878290/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Replication-Architecture/networking-ports-table-vault-badge.jpg)
 
 ***
 
@@ -144,6 +126,4 @@ Replicating Vault clusters requires simple connectivity and DNS resolution:
 * [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)
 * [On-Prem Deployment Patterns](https://learn.hashicorp.com/tutorials/vault/installation)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cfd009a3-718e-46c1-b509-a1354fc1e2a6/lesson/cc89e40f-69eb-4eb0-a268-8495f42de950" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cfd009a3-718e-46c1-b509-a1354fc1e2a6/lesson/cc89e40f-69eb-4eb0-a268-8495f42de950)

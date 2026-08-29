@@ -102,9 +102,7 @@ OpenTelemetry SDKs provide two common processor implementations:
 
 Think of SimpleSpanProcessor as a firehose (direct and immediate) and BatchSpanProcessor as a postal service (batching and scheduled delivery).
 
-<Callout icon="lightbulb">
-  BatchSpanProcessor is generally recommended for production because it minimizes export overhead. Use SimpleSpanProcessor for learning, debugging, or when you need immediate visibility of spans.
-</Callout>
+> **lightbulb** BatchSpanProcessor is generally recommended for production because it minimizes export overhead. Use SimpleSpanProcessor for learning, debugging, or when you need immediate visibility of spans.
 
 Exporters: destinations and responsibilities
 A span exporter takes span data and delivers it to an external destination (console, OTLP endpoint, or a vendor backend). The exporter is responsible for converting span objects into the expected wire/transport format and transmitting them.
@@ -146,9 +144,7 @@ Best practices and production guidance
 * Always call `shutdown()` (or ensure the SDK does so) during graceful shutdown to minimize data loss.
 * If you need telemetry routing, enrichment, or buffering across services, send spans to an OpenTelemetry Collector using OTLP and let the Collector forward to your backends.
 
-<Callout icon="warning">
-  Be sure to call exporter `shutdown()` or use `force_flush()` on application shutdown. Failing to flush buffered spans can result in lost telemetry.
-</Callout>
+> **warning** Be sure to call exporter `shutdown()` or use `force_flush()` on application shutdown. Failing to flush buffered spans can result in lost telemetry.
 
 Collector and typical deployment patterns
 Many deployments route telemetry from applications to an OpenTelemetry Collector using OTLP. The Collector centralizes processing, sampling, batching, and routing to one or more backends — improving flexibility and operational control.
@@ -163,9 +159,7 @@ Links and references
 
 That concludes this lesson on span processors and exporters.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/0a375888-a1fc-452e-889e-7380e7b4de65" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/0a375888-a1fc-452e-889e-7380e7b4de65)
 
 
 # Span Sampling

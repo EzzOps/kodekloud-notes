@@ -8,7 +8,7 @@ Heredocs let you include multi-line text or commands directly within a Bash scri
 
 > **lightbulb** A Heredoc sends an entire block of text as input to a command. This keeps your scripts clean and reduces the risk of accidental overwrites when using `>` vs. `>>`.
 
-![The image illustrates a process flow for "Heredocs," showing data from a file (file.txt) being processed with variables, commands, and scripts to produce a result.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868634/notes-assets/images/Advanced-Bash-Scripting-Heredocs/heredocs-process-flow-file-data.jpg)
+![The image illustrates a process flow for "Heredocs," showing data from a file (file.txt) being processed with variables, commands, and scripts to produce a result.](https://kodekloud.com/kk-media/image/upload/v1752868634/notes-assets/images/Advanced-Bash-Scripting-Heredocs/heredocs-process-flow-file-data.jpg)
 
 ***
 
@@ -86,7 +86,7 @@ CUSTOM
 
 ## Quick Checklist: Heredoc Benefits
 
-![The image is a slide titled "Heredocs" with checkmarks next to "One-liner," "Include large blocks of text," and "Complex scripts."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868635/notes-assets/images/Advanced-Bash-Scripting-Heredocs/heredocs-checkmarks-one-liner-texts-scripts.jpg)
+![The image is a slide titled "Heredocs" with checkmarks next to "One-liner," "Include large blocks of text," and "Complex scripts."](https://kodekloud.com/kk-media/image/upload/v1752868635/notes-assets/images/Advanced-Bash-Scripting-Heredocs/heredocs-checkmarks-one-liner-texts-scripts.jpg)
 
 * One-liner for simple operations
 * Embed large blocks of text without quotes

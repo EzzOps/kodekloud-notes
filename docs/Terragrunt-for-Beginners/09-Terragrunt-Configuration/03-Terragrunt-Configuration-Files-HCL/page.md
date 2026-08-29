@@ -10,9 +10,7 @@ Mickey, like many infrastructure engineers, needs a concise overview of Terragru
 
 Terragrunt’s primary configuration file, typically named `terragrunt.hcl`, dictates how Terragrunt orchestrates your Terraform modules. Built on the [HashiCorp Configuration Language (HCL)](https://github.com/hashicorp/hcl), it provides a declarative syntax optimized for readability and collaboration.
 
-<Frame>
-  ![The image is about Terragrunt configuration files using HCL (HashiCorp Configuration Language), highlighting its declarative nature and ease of reading and writing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884345/notes-assets/images/Terragrunt-for-Beginners-Terragrunt-Configuration-Files-HCL/terragrunt-hcl-configuration-files-diagram.jpg)
-</Frame>
+![The image is about Terragrunt configuration files using HCL (HashiCorp Configuration Language), highlighting its declarative nature and ease of reading and writing.](https://kodekloud.com/kk-media/image/upload/v1752884345/notes-assets/images/Terragrunt-for-Beginners-Terragrunt-Configuration-Files-HCL/terragrunt-hcl-configuration-files-diagram.jpg)
 
 With HCL, both machines and humans can parse configurations effortlessly, reducing errors and streamlining team workflows.
 
@@ -20,13 +18,9 @@ With HCL, both machines and humans can parse configurations effortlessly, reduci
 
 Terragrunt employs a hierarchical inheritance model. Child configurations automatically inherit settings from their parent, letting you define common parameters once and reuse them throughout your repository.
 
-<Frame>
-  ![The image shows a hierarchical diagram illustrating the inheritance model of Terragrunt configuration files using HCL. It features interconnected nodes with the Terragrunt logo, indicating a structured configuration setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884346/notes-assets/images/Terragrunt-for-Beginners-Terragrunt-Configuration-Files-HCL/terragrunt-inheritance-model-diagram-hcl.jpg)
-</Frame>
+![The image shows a hierarchical diagram illustrating the inheritance model of Terragrunt configuration files using HCL. It features interconnected nodes with the Terragrunt logo, indicating a structured configuration setup.](https://kodekloud.com/kk-media/image/upload/v1752884346/notes-assets/images/Terragrunt-for-Beginners-Terragrunt-Configuration-Files-HCL/terragrunt-inheritance-model-diagram-hcl.jpg)
 
-<Callout icon="lightbulb">
-  Leverage `include` blocks to pull shared settings from a root `terragrunt.hcl`. This keeps your configurations DRY and consistent.
-</Callout>
+> **lightbulb** Leverage `include` blocks to pull shared settings from a root `terragrunt.hcl`. This keeps your configurations DRY and consistent.
 
 ## Configuration Blocks Overview
 
@@ -38,9 +32,7 @@ Terragrunt organizes settings into named blocks. Here are the most common ones:
 | include       | Inherit settings from a parent `terragrunt.hcl`           |
 | remote\_state | Configure backend storage and locking for Terraform state |
 
-<Frame>
-  ![The image is a diagram titled "Terragrunt Configuration Files – HCL," showing colorful puzzle piece icons and a list of configuration blocks labeled "locals," "remote\_state," and "include."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884346/notes-assets/images/Terragrunt-for-Beginners-Terragrunt-Configuration-Files-HCL/terragrunt-configuration-files-diagram.jpg)
-</Frame>
+![The image is a diagram titled "Terragrunt Configuration Files – HCL," showing colorful puzzle piece icons and a list of configuration blocks labeled "locals," "remote\_state," and "include."](https://kodekloud.com/kk-media/image/upload/v1752884346/notes-assets/images/Terragrunt-for-Beginners-Terragrunt-Configuration-Files-HCL/terragrunt-configuration-files-diagram.jpg)
 
 ### locals
 
@@ -86,9 +78,7 @@ inputs = {
 
 Storing your Terraform state remotely ensures consistency, collaboration, and safe locking. Terragrunt makes it simple to configure state backends, such as Amazon S3 with DynamoDB-based locks:
 
-<Frame>
-  ![The image illustrates Terragrunt configuration files in HCL, showing a connection between a backend and Amazon S3 for remote state configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884348/notes-assets/images/Terragrunt-for-Beginners-Terragrunt-Configuration-Files-HCL/terragrunt-configuration-hcl-amazon-s3.jpg)
-</Frame>
+![The image illustrates Terragrunt configuration files in HCL, showing a connection between a backend and Amazon S3 for remote state configuration.](https://kodekloud.com/kk-media/image/upload/v1752884348/notes-assets/images/Terragrunt-for-Beginners-Terragrunt-Configuration-Files-HCL/terragrunt-configuration-hcl-amazon-s3.jpg)
 
 ```hcl theme={null}
 remote_state {
@@ -103,9 +93,7 @@ remote_state {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Ensure your IAM policies allow both S3 access and DynamoDB locking to prevent state corruption or conflicts.
-</Callout>
+> **triangle-alert** Ensure your IAM policies allow both S3 access and DynamoDB locking to prevent state corruption or conflicts.
 
 By centralizing state management, you minimize the risk of drift, enable automated pipelines, and facilitate smooth team collaboration.
 
@@ -116,6 +104,4 @@ By centralizing state management, you minimize the risk of drift, enable automat
 * [HashiCorp HCL GitHub](https://github.com/hashicorp/hcl)
 * [Terraform Remote State](https://www.terraform.io/language/state/remote)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/52cf8076-030b-430e-9a8b-273697ad3399/lesson/5e29cda8-9462-462e-a8e8-35bf1e99afbd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/52cf8076-030b-430e-9a8b-273697ad3399/lesson/5e29cda8-9462-462e-a8e8-35bf1e99afbd)

@@ -8,9 +8,7 @@ Welcome. This article explains the Vertical Pod Autoscaler (VPA) architecture: w
 
 VPA helps right-size individual pods by adjusting their CPU and memory resource requests (and optionally limits) based on observed workload. Horizontal scaling (adding more replicas) and vertical scaling (increasing a pod’s resources) solve different problems: VPA prevents poor performance or OOMs caused by under-provisioning and reduces waste from oversized requests by continuously recommending or applying better resource requests.
 
-<Callout icon="lightbulb">
-  Think of VPA as an operations manager that observes real workload patterns and adjusts each pod’s “role size” (resource requests). VPA does not change a running container in-place — it updates PodSpecs and triggers a pod restart (eviction + recreation) so the new pod starts with the adjusted request values.
-</Callout>
+> **lightbulb** Think of VPA as an operations manager that observes real workload patterns and adjusts each pod’s “role size” (resource requests). VPA does not change a running container in-place — it updates PodSpecs and triggers a pod restart (eviction + recreation) so the new pod starts with the adjusted request values.
 
 <Frame>
   <img alt="A presentation slide titled &#x22;Why Do We Need VPA?&#x22; with two rounded callout boxes. The boxes explain that VPA dynamically adjusts pod CPU and memory to meet demand and keeps applications efficient, preventing crashes and reducing waste." />
@@ -48,9 +46,7 @@ VPA supports three modes that control how recommendations are applied:
 
 Choose the mode that aligns with your deployment patterns and availability constraints. Note that changes to requests can affect how HPA calculates utilization (HPA commonly uses CPU requests as the denominator), so plan and test accordingly.
 
-<Callout icon="warning">
-  VPA changes resource *requests* (and optionally limits) by causing pod restarts (evictions and recreations). Using VPA in `auto` mode can interact with other controllers (for example, HPA) and affect deployment availability. Always test VPA behavior in a staging environment before enabling it in production.
-</Callout>
+> **warning** VPA changes resource *requests* (and optionally limits) by causing pod restarts (evictions and recreations). Using VPA in `auto` mode can interact with other controllers (for example, HPA) and affect deployment availability. Always test VPA behavior in a staging environment before enabling it in production.
 
 VPA operation walkthrough
 
@@ -86,6 +82,4 @@ Links and References
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * `metrics-server` — [https://github.com/kubernetes-sigs/metrics-server](https://github.com/kubernetes-sigs/metrics-server)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/eb2c4234-8e6b-441d-8aca-fbd37687b40c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/eb2c4234-8e6b-441d-8aca-fbd37687b40c)

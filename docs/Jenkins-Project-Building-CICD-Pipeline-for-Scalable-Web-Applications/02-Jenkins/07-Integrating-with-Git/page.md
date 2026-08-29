@@ -10,9 +10,7 @@ In this lesson, we demonstrate how to integrate Git with Jenkins using a simple 
 
 Begin with a Flask application hosted in a Git repository.
 
-<Frame>
-  ![GitHub repository with files and directories including configuration and scripts. Repository details such as contributors, languages, and activity statistics are visible in the sidebar.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879895/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Integrating-with-Git/github-repository-files-sidebar.jpg)
-</Frame>
+![GitHub repository with files and directories including configuration and scripts. Repository details such as contributors, languages, and activity statistics are visible in the sidebar.](https://kodekloud.com/kk-media/image/upload/v1752879895/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Integrating-with-Git/github-repository-files-sidebar.jpg)
 
 ## Step 2. Configure Jenkins to Trigger Builds
 
@@ -21,35 +19,27 @@ Begin with a Flask application hosted in a Git repository.
 1. From the Jenkins dashboard, click on "New Item" and name the job "Flask pipeline."
 2. Select the **Freestyle project** option to build a basic pipeline and click **OK**.
 
-<Frame>
-  ![Jenkins interface to enter project name and select project type options like Freestyle, Pipeline, and Multi-configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879896/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Integrating-with-Git/jenkins-interface-project-types-selection.jpg)
-</Frame>
+![Jenkins interface to enter project name and select project type options like Freestyle, Pipeline, and Multi-configuration.](https://kodekloud.com/kk-media/image/upload/v1752879896/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Integrating-with-Git/jenkins-interface-project-types-selection.jpg)
 
 ### Configure Job Details
 
 * You can add an optional project description on the next screen to provide context for your team.
 
-<Frame>
-  ![Jenkins configuration page for "Flask-pipeline" showing general settings, source code management, and build triggers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879897/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Integrating-with-Git/jenkins-flask-pipeline-configuration.jpg)
-</Frame>
+![Jenkins configuration page for "Flask-pipeline" showing general settings, source code management, and build triggers.](https://kodekloud.com/kk-media/image/upload/v1752879897/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Integrating-with-Git/jenkins-flask-pipeline-configuration.jpg)
 
 ### Set Up Source Code Management
 
 1. In the **Source Code Management** section, change the default "None" option to **Git**.
 2. Enter the Git repository URL. For public repositories, credentials are not necessary; for private repositories, configure the appropriate credentials.
 
-<Frame>
-  ![Jenkins screen for Git configuration with fields for repository URL and branch specification.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879898/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Integrating-with-Git/jenkins-git-configuration-screen.jpg)
-</Frame>
+![Jenkins screen for Git configuration with fields for repository URL and branch specification.](https://kodekloud.com/kk-media/image/upload/v1752879898/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Integrating-with-Git/jenkins-git-configuration-screen.jpg)
 
 ### Specify the Branch to Build
 
 * By default, Jenkins may reference the `/master` branch. If your repository uses a branch named `main`, update the branch information accordingly.
 * Leaving the branch field blank triggers builds for any branch; however, the focus here is on the `main` branch.
 
-<Frame>
-  ![Jenkins pipeline configuration screen showing repository URL, credentials, and branch options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879899/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Integrating-with-Git/jenkins-pipeline-configuration-screen.jpg)
-</Frame>
+![Jenkins pipeline configuration screen showing repository URL, credentials, and branch options.](https://kodekloud.com/kk-media/image/upload/v1752879899/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Integrating-with-Git/jenkins-pipeline-configuration-screen.jpg)
 
 ### Configure Build Triggers
 
@@ -74,17 +64,11 @@ Configure GitHub to notify Jenkins when changes occur:
    * Choose `application/json` as the **Content Type**.
    * Select **Push events** to trigger the webhook on code commits.
 
-<Frame>
-  ![GitHub settings page for adding a webhook with fields for payload URL, content type, and event triggers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879900/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Integrating-with-Git/github-settings-webhook-payload-url.jpg)
-</Frame>
+![GitHub settings page for adding a webhook with fields for payload URL, content type, and event triggers.](https://kodekloud.com/kk-media/image/upload/v1752879900/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Integrating-with-Git/github-settings-webhook-payload-url.jpg)
 
-<Frame>
-  ![GitHub webhook configuration screen with options for payload URL, content type, and event triggers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879901/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Integrating-with-Git/github-settings-webhook-configuration.jpg)
-</Frame>
+![GitHub webhook configuration screen with options for payload URL, content type, and event triggers.](https://kodekloud.com/kk-media/image/upload/v1752879901/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Integrating-with-Git/github-settings-webhook-configuration.jpg)
 
-<Callout icon="lightbulb">
-  After configuring, verify that GitHub shows a green checkmark next to your webhook. This confirms that notifications are delivered successfully.
-</Callout>
+> **lightbulb** After configuring, verify that GitHub shows a green checkmark next to your webhook. This confirms that notifications are delivered successfully.
 
 Return to the Jenkins job configuration, click **Apply** and then **Save**.
 

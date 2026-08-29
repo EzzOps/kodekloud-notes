@@ -17,9 +17,7 @@ Every patch in Kustomize requires three core parameters:
 2. **Target**: selection criteria to identify the resource(s) you want to patch
 3. **Value**: the data to add or replace (not needed for `remove`)
 
-<Frame>
-  ![The image is a slide explaining how Kustomize patches modify Kubernetes configurations, highlighting the need for three parameters: operation type, target resource, and value.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880926/notes-assets/images/Kustomize-Patches-Intro/kustomize-patches-kubernetes-configurations-slide.jpg)
-</Frame>
+![The image is a slide explaining how Kustomize patches modify Kubernetes configurations, highlighting the need for three parameters: operation type, target resource, and value.](https://kodekloud.com/kk-media/image/upload/v1752880926/notes-assets/images/Kustomize-Patches-Intro/kustomize-patches-kubernetes-configurations-slide.jpg)
 
 | Operation | Description                 | Example                           |
 | --------- | --------------------------- | --------------------------------- |
@@ -27,9 +25,7 @@ Every patch in Kustomize requires three core parameters:
 | remove    | Delete a field or label     | Remove an unwanted annotation     |
 | replace   | Update an existing value    | Change replica count from 5 to 10 |
 
-<Callout icon="lightbulb">
-  Use patches for fine-grained updates that shouldn’t apply globally. For bulk changes—like adding a common label—stick to transformers.
-</Callout>
+> **lightbulb** Use patches for fine-grained updates that shouldn’t apply globally. For bulk changes—like adding a common label—stick to transformers.
 
 ### Defining the Target
 
@@ -107,9 +103,7 @@ spec:
           image: nginx
 ```
 
-<Callout icon="lightbulb">
-  JSON 6902 patches consist of an array of operations (`op`, `path`, `value`). Refer to the [RFC 6902](https://tools.ietf.org/html/rfc6902) for full details.
-</Callout>
+> **lightbulb** JSON 6902 patches consist of an array of operations (`op`, `path`, `value`). Refer to the [RFC 6902](https://tools.ietf.org/html/rfc6902) for full details.
 
 ### Updating Replicas
 
@@ -147,9 +141,7 @@ patches:
 
 Here, Kustomize locates the `Deployment` by `apiVersion`, `kind`, and `metadata.name`, then merges `spec.replicas: 5` into the base resource.
 
-<Callout icon="triangle-alert">
-  You can combine JSON 6902 and strategic merge patches in the same `kustomization.yaml`. Use whichever format fits your use case.
-</Callout>
+> **triangle-alert** You can combine JSON 6902 and strategic merge patches in the same `kustomization.yaml`. Use whichever format fits your use case.
 
 ***
 
@@ -159,6 +151,4 @@ Here, Kustomize locates the `Deployment` by `apiVersion`, `kind`, and `metadata.
 * [RFC 6902: JSON Patch](https://tools.ietf.org/html/rfc6902)
 * [Kubernetes API Conventions](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/ff539014-6a24-4e04-9ef5-c58ad32c5c7f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/ff539014-6a24-4e04-9ef5-c58ad32c5c7f)

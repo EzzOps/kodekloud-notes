@@ -40,9 +40,7 @@ server {
 
 You can also redirect HTTP to HTTPS for the same host. Remember HTTPS requires TLS certificates configured on the server block that listens on port `443`.
 
-<Callout icon="lightbulb">
-  When redirecting HTTP to HTTPS, ensure the server block on port `443` is configured with valid TLS certificate and key files; otherwise clients will fail to connect securely.
-</Callout>
+> **lightbulb** When redirecting HTTP to HTTPS, ensure the server block on port `443` is configured with valid TLS certificate and key files; otherwise clients will fail to connect securely.
 
 Example: redirect HTTP to HTTPS, and the matching HTTPS server block:
 

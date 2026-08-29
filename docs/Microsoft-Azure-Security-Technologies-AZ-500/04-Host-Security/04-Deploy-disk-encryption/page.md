@@ -14,9 +14,7 @@ When using Azure Backup, your encryption keys are saved to the Recovery Services
 
 While disk encryption adds an extra layer of security, it might introduce a slight performance overhead due to the continuous encryption and decryption processes. For CPU-intensive applications, you might consider encrypting only the data disk to optimize performance without compromising the security of your mission-critical data.
 
-<Frame>
-  ![The image shows a "Deploy Disk Encryption" interface with disk settings options and four colorful icons labeled "Encrypt disks," "Restrict access," "Encrypted backup," and "Considerations."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881860/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-disk-encryption/deploy-disk-encryption-interface.jpg)
-</Frame>
+![The image shows a "Deploy Disk Encryption" interface with disk settings options and four colorful icons labeled "Encrypt disks," "Restrict access," "Encrypted backup," and "Considerations."](https://kodekloud.com/kk-media/image/upload/v1752881860/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-disk-encryption/deploy-disk-encryption-interface.jpg)
 
 With Azure Disk Encryption, you have the flexibility to safeguard your data in accordance with your application’s performance requirements.
 
@@ -33,9 +31,7 @@ Azure offers several disk encryption options to fit various use cases. Below is 
 3. **Encryption at Host:**\
    This approach encrypts data in use, ensuring protection for temporary disks, OS, and data disks. Similar to SSE, Encryption at Host supports both Platform Managed Keys and Customer Managed Keys. However, when using Encryption at Host, Azure Disk Encryption is not available, and the VM may be marked as unhealthy in [Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/).
 
-<Frame>
-  ![The image is a comparison table of managed disk encryption options, showing features like encryption at rest, temp disk encryption, and customer control of keys for different encryption methods. It includes options such as SSE+PMK, SSE+CMK, Azure Disk Encryption, and Encryption at Host, with checkmarks and crosses indicating feature availability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881862/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-disk-encryption/managed-disk-encryption-comparison-table.jpg)
-</Frame>
+![The image is a comparison table of managed disk encryption options, showing features like encryption at rest, temp disk encryption, and customer control of keys for different encryption methods. It includes options such as SSE+PMK, SSE+CMK, Azure Disk Encryption, and Encryption at Host, with checkmarks and crosses indicating feature availability.](https://kodekloud.com/kk-media/image/upload/v1752881862/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-disk-encryption/managed-disk-encryption-comparison-table.jpg)
 
 In summary, consider the following when selecting an encryption method:
 
@@ -52,29 +48,21 @@ Follow these step-by-step instructions to enable Azure Disk Encryption on your v
 3. When selecting a disk, you will initially see the SSE (Storage Service Encryption) settings with a platform-managed key. Note that this setting cannot be altered unless the disk is detached from the VM.
 4. Scroll down to the **Additional settings** section. Here you will see options for enabling Encryption at Host or Azure Disk Encryption (ADE). Keep in mind that Encryption at Host is available only when the virtual machine is deallocated.
 
-<Frame>
-  ![The image shows the "Disk settings" page in Microsoft Azure, where encryption options for virtual machine disks are configured, including settings for encryption at host and Azure Disk Encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881862/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-disk-encryption/azure-disk-settings-encryption-options.jpg)
-</Frame>
+![The image shows the "Disk settings" page in Microsoft Azure, where encryption options for virtual machine disks are configured, including settings for encryption at host and Azure Disk Encryption.](https://kodekloud.com/kk-media/image/upload/v1752881862/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-disk-encryption/azure-disk-settings-encryption-options.jpg)
 
 5. Choose **ADE** and configure your encryption keys by linking to Azure Key Vault. Click to create a new Key Vault—for example, name it "ADE AKV." Ensure that the name is unique.
 6. Within the Key Vault, create your encryption key (e.g., "AAD key") and save your changes. The virtual machine will require a restart to apply the new encryption settings.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating a key vault, with fields for subscription, resource group, key vault name, region, and pricing tier.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881864/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-disk-encryption/azure-key-vault-creation-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating a key vault, with fields for subscription, resource group, key vault name, region, and pricing tier.](https://kodekloud.com/kk-media/image/upload/v1752881864/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-disk-encryption/azure-key-vault-creation-interface.jpg)
 
-<Callout icon="triangle-alert">
-  Before proceeding, note the following unsupported scenarios when using ADE:
+> **triangle-alert** Before proceeding, note the following unsupported scenarios when using ADE:
 
   * Encrypting basic tier VMs or migrating to classic is not supported.
   * Encrypting VMs utilizing software-based RAID systems is not supported.
   * ADE cannot be applied to VMs with disks already encrypted using Encryption at Host or SSE+CMK.
   * Encryption of Azure Ultra Disks, Premium SSD v2 disks, iSCSI, ephemeral disks, dynamic volumes, NFS, and Azure Files is unsupported.
-</Callout>
 
-<Frame>
-  ![The image is a screenshot of a webpage detailing unsupported scenarios for Azure Disk Encryption, listing various configurations and technologies that are not compatible. It includes a navigation menu on the left and additional resources on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881865/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-disk-encryption/azure-disk-encryption-unsupported-scenarios.jpg)
-</Frame>
+![The image is a screenshot of a webpage detailing unsupported scenarios for Azure Disk Encryption, listing various configurations and technologies that are not compatible. It includes a navigation menu on the left and additional resources on the right.](https://kodekloud.com/kk-media/image/upload/v1752881865/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-disk-encryption/azure-disk-encryption-unsupported-scenarios.jpg)
 
 Once your key is created and saved, Azure Key Vault will update, and ADE will be enabled on your virtual machine.
 
@@ -86,6 +74,4 @@ In the next section, we will explore [Microsoft Defender for Endpoints](https://
 
 By following these guidelines, you can easily secure your data with Azure Disk Encryption while maintaining performance and compliance for your computing environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d8d70777-3d80-4e41-803e-0929352de5e7/lesson/582e4262-cdbc-4940-873b-5fb66ff6995a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d8d70777-3d80-4e41-803e-0929352de5e7/lesson/582e4262-cdbc-4940-873b-5fb66ff6995a)

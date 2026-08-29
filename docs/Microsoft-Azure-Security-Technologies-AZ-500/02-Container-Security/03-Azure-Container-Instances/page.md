@@ -40,9 +40,7 @@ While container storage is generally ephemeral, Azure provides options like Azur
 
 ACI seamlessly integrates with your existing network infrastructure by deploying containers into virtual networks. The service supports both Windows and Linux-based containers, making it versatile for a variety of applications.
 
-<Frame>
-  ![The image is an infographic about Azure Container Instances, highlighting features such as faster startup, hosting internet-facing applications, isolation, scalability, persistent storage, and OS and VNet integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881735/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Container-Instances/azure-container-instances-infographic.jpg)
-</Frame>
+![The image is an infographic about Azure Container Instances, highlighting features such as faster startup, hosting internet-facing applications, isolation, scalability, persistent storage, and OS and VNet integration.](https://kodekloud.com/kk-media/image/upload/v1752881735/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Container-Instances/azure-container-instances-infographic.jpg)
 
 ## Security Considerations in ACI
 
@@ -60,13 +58,9 @@ When exposing container applications to the internet, it is essential to address
 * **Kernel Exploits and Compromised Secrets:**\
   Sharing the same OS kernel can expose containers to kernel-level vulnerabilities. Azure proactively monitors and updates the container host to protect against such exploits. For sensitive information like API keys or database credentials, Azure Key Vault provides secure management. With Managed Identity, containers can safely access secrets from the Key Vault without exposing them in the application configuration.
 
-<Frame>
-  ![The image illustrates ACI (Azure Container Instances) security threats, including poisoned images, container breakouts, kernel exploits, compromised secrets, and DDoS attacks targeting a web server through port 80.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881736/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Container-Instances/aci-security-threats-container-exploits.jpg)
-</Frame>
+![The image illustrates ACI (Azure Container Instances) security threats, including poisoned images, container breakouts, kernel exploits, compromised secrets, and DDoS attacks targeting a web server through port 80.](https://kodekloud.com/kk-media/image/upload/v1752881736/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Container-Instances/aci-security-threats-container-exploits.jpg)
 
-<Callout icon="lightbulb">
-  Implementing the recommended security practices will help you maintain secure container deployments while enjoying the benefits of a managed service.
-</Callout>
+> **lightbulb** Implementing the recommended security practices will help you maintain secure container deployments while enjoying the benefits of a managed service.
 
 ## Deploying an Azure Container Instance via the Azure Portal
 
@@ -103,25 +97,17 @@ Follow these steps to deploy a container instance using the Azure Portal:
 6. **Review and Create:**\
    Review your configuration settings and click "Create" to deploy the container instance. Typically, the deployment completes in under a minute.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a container instance, with fields for subscription, resource group, container details, and options for SKU and image source.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881737/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Container-Instances/azure-portal-container-instance-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a container instance, with fields for subscription, resource group, container details, and options for SKU and image source.](https://kodekloud.com/kk-media/image/upload/v1752881737/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Container-Instances/azure-portal-container-instance-creation.jpg)
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a container instance, specifically on the "Networking" tab, where users can select networking options and configure DNS and port settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881738/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Container-Instances/azure-portal-container-networking.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a container instance, specifically on the "Networking" tab, where users can select networking options and configure DNS and port settings.](https://kodekloud.com/kk-media/image/upload/v1752881738/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Container-Instances/azure-portal-container-networking.jpg)
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a container instance, displaying configuration details such as subscription, resource group, region, container name, and image type. The "Review + create" tab is active, and there is an option to create the container at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881739/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Container-Instances/azure-portal-container-instance-creation-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a container instance, displaying configuration details such as subscription, resource group, region, container name, and image type. The "Review + create" tab is active, and there is an option to create the container at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752881739/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Container-Instances/azure-portal-container-instance-creation-2.jpg)
 
 ## Exploring Container Apps
 
 While ACI is ideal for simple container deployments—often utilized in Kubernetes-related tasks—Azure also offers Container Apps for more complex, multi-container solutions. Container Apps provide advanced scaling, integration with services like Application Gateway and Azure Front Door, and seamless Kubernetes integration. Microsoft recommends transitioning to Container Apps when running complex deployments, although ACI remains a practical choice for straightforward scenarios.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal with a search for "container," displaying various services, marketplace options, and documentation related to containers. A notification indicates a successful deployment of a container instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881740/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Container-Instances/azure-portal-container-search-deployment.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal with a search for "container," displaying various services, marketplace options, and documentation related to containers. A notification indicates a successful deployment of a container instance.](https://kodekloud.com/kk-media/image/upload/v1752881740/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Container-Instances/azure-portal-container-search-deployment.jpg)
 
 ## Verifying the Deployment
 
@@ -131,9 +117,7 @@ After deploying your container instance, verify its status in the Azure Portal:
 2. Open the terminal interface under the "Connect" tab for real-time management.
 3. For example, if you deployed an Nginx container, copy the public IP address from the overview page, paste it into your browser, and you should see the "Welcome to NGINX" page.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal displaying a container instance named "aci-web" that is running an Nginx image. There is a terminal interface open under the "Connect" tab.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881741/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Container-Instances/azure-portal-aci-web-nginx.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal displaying a container instance named "aci-web" that is running an Nginx image. There is a terminal interface open under the "Connect" tab.](https://kodekloud.com/kk-media/image/upload/v1752881741/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Container-Instances/azure-portal-aci-web-nginx.jpg)
 
 ## Moving Forward with Container Registries
 
@@ -147,6 +131,4 @@ For more information, check out the following resources:
 * [Azure Security Documentation](https://docs.microsoft.com/azure/security/)
 * [Azure Container Registry Documentation](https://docs.microsoft.com/azure/container-registry/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/146650b0-63f9-4c4b-b452-716a780e5fc7/lesson/bb686b51-ccad-4e33-a025-e7066a24b77d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/146650b0-63f9-4c4b-b452-716a780e5fc7/lesson/bb686b51-ccad-4e33-a025-e7066a24b77d)

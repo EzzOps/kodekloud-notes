@@ -29,11 +29,9 @@ Later in this lesson, we will delve into how to parse and utilize these facts in
 
 By understanding and leveraging Ansible Facts, you can create more efficient, responsive, and tailored automation scripts that adapt based on the actual state and configuration of your systems.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/c85e487f-ca75-448b-b7dd-f72e9519d9b9/lesson/f8cb5a3e-d4c8-4412-ba10-a332b7ea6b66" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/c85e487f-ca75-448b-b7dd-f72e9519d9b9/lesson/f8cb5a3e-d4c8-4412-ba10-a332b7ea6b66)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/c85e487f-ca75-448b-b7dd-f72e9519d9b9/lesson/a34818eb-2eea-44c9-847a-86d1db6ca208" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/c85e487f-ca75-448b-b7dd-f72e9519d9b9/lesson/a34818eb-2eea-44c9-847a-86d1db6ca208)
 
 
 # Ansible Variables
@@ -113,9 +111,7 @@ Consider a playbook for configuring a firewall. The playbook below sets various 
 
 A more flexible approach is to move these values into the inventory or a dedicated variables file. When using the inventory file, the playbook refers to variables using Jinja2 templating. Modifying the inventory file alone updates the playbook's behavior without editing the playbook itself. An even more organized strategy is to store host-specific variables in a file such as `web.yml`, ensuring these values are automatically available when the playbook runs.
 
-<Callout icon="lightbulb">
-  When incorporating a variable into a string, enclose it within quotes if the variable appears at the beginning. However, if it appears in the middle of the string, quotes are not strictly necessary.
-</Callout>
+> **lightbulb** When incorporating a variable into a string, enclose it within quotes if the variable appears at the beginning. However, if it appears in the middle of the string, quotes are not strictly necessary.
 
 Below is an updated example of the firewall configuration playbook using variables:
 

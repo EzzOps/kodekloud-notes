@@ -40,13 +40,9 @@ By understanding the container lifecycle and the specific error messages, you ca
 
 For more detailed troubleshooting techniques, check out the [Kubernetes Documentation](https://kubernetes.io/docs/) and resources on [Container Runtime Troubleshooting](https://kubernetes.io/docs/tasks/debug/debugging-pod/).
 
-<Frame>
-  ![The image shows a terminal interface for managing Kubernetes pods using K9s, displaying two pods with errors: "CreateContainerConfigError" and "CreateContainerError."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880430/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Create-Container-Errors/k9s-kubernetes-pods-errors-terminal.jpg)
-</Frame>
+![The image shows a terminal interface for managing Kubernetes pods using K9s, displaying two pods with errors: "CreateContainerConfigError" and "CreateContainerError."](https://kodekloud.com/kk-media/image/upload/v1752880430/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Create-Container-Errors/k9s-kubernetes-pods-errors-terminal.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/470a8d46-0969-412e-96d8-e9765579f763" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/470a8d46-0969-412e-96d8-e9765579f763)
 
 
 # Endlessly Terminating Pods
@@ -101,9 +97,7 @@ pod "shipping-api-57cdd984bc-grq7g" force deleted
 
 After executing the forced deletion, if you check for remaining pods, there is a possibility that the resource may still be present or continue running if the underlying dependencies have not been cleaned up.
 
-<Callout icon="triangle-alert">
-  Using the `--force` flag can lead to unintended side effects. Use this option sparingly and only when necessary.
-</Callout>
+> **triangle-alert** Using the `--force` flag can lead to unintended side effects. Use this option sparingly and only when necessary.
 
 ## Removing Finalizers
 
@@ -208,9 +202,7 @@ Similarly, verify namespace deletion:
 controlplane ~ ➜ k get ns
 ```
 
-<Callout icon="lightbulb">
-  Always investigate further if resources remain stuck in the terminating state. Relying solely on forced deletion or removal of finalizers can mask underlying issues that require a deeper investigation.
-</Callout>
+> **lightbulb** Always investigate further if resources remain stuck in the terminating state. Relying solely on forced deletion or removal of finalizers can mask underlying issues that require a deeper investigation.
 
 ## Final Thoughts
 
@@ -225,6 +217,4 @@ For more information on Kubernetes resource management, consider exploring the f
 
 Happy troubleshooting!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/d579e5e5-da72-4ab9-baba-9a56918ad4ef" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/d579e5e5-da72-4ab9-baba-9a56918ad4ef)

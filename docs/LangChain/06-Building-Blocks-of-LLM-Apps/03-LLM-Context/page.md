@@ -45,8 +45,7 @@ Use the following types of storage and services to provide the LLM with relevant
 Typical production pipeline for supplying context
 In production you usually automate several steps: ingesting content, preprocessing, generating embeddings, storing them in a vector store, and then retrieving the best-matching chunks at query time. These retrieved chunks are assembled into a prompt that the LLM can use as factual evidence.
 
-<Callout icon="lightbulb">
-  A typical pipeline to provide context programmatically:
+> **lightbulb** A typical pipeline to provide context programmatically:
 
   1. Ingest documents (PDFs, web pages, DB rows, API responses).
   2. Chunk long documents into manageable pieces.
@@ -54,7 +53,6 @@ In production you usually automate several steps: ingesting content, preprocessi
   4. Store embeddings in a vector database.
   5. At query time, embed the user query and perform a similarity search to retrieve the most relevant chunks.
   6. Assemble those chunks into context and inject them into the prompt (Retrieval-Augmented Generation — see [Fundamentals of RAG](https://learn.kodekloud.com/user/courses/fundamentals-of-rag)).
-</Callout>
 
 Retrieval-Augmented Generation (RAG)
 Retrieval-Augmented Generation (RAG) combines retrieval and generation so the LLM answers queries grounded in fetched documents rather than only its training data. A common RAG workflow:
@@ -79,6 +77,4 @@ Further reading and references
 
 This lesson will cover chunking strategies, embedding model selection, vector storage patterns, prompt construction best practices, and response verification techniques to build robust, low-hallucination LLM applications.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/bb8afda8-9de9-4865-aabf-bc71786440b2/lesson/710cf4ad-299d-49bb-86f0-6b06a41502f7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/bb8afda8-9de9-4865-aabf-bc71786440b2/lesson/710cf4ad-299d-49bb-86f0-6b06a41502f7)

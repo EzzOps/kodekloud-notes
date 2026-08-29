@@ -10,7 +10,7 @@ In this lesson, we will learn how to configure and adjust concurrency settings f
 
 First, navigate to the **Configuration** tab of your Lambda function and select **Concurrency**. This section allows you to manage settings related to concurrent executions. By default, your AWS account provides 1000 unreserved concurrent executions, meaning that up to 1000 requests can be processed simultaneously across all your Lambda functions. However, these concurrent executions are shared, which may lead to resource contention if one function is critical.
 
-![The image shows an AWS Lambda console page focused on concurrency settings, including options for function concurrency and provisioned concurrency configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859579/notes-assets/images/AWS-Certified-Developer-Associate-Limits-Concurrency-Demo/aws-lambda-concurrency-settings.jpg)
+![The image shows an AWS Lambda console page focused on concurrency settings, including options for function concurrency and provisioned concurrency configurations.](https://kodekloud.com/kk-media/image/upload/v1752859579/notes-assets/images/AWS-Certified-Developer-Associate-Limits-Concurrency-Demo/aws-lambda-concurrency-settings.jpg)
 
 > **lightbulb** To prevent crucial Lambda functions from being resource-starved, you can reserve a portion of the concurrent executions. For example, by setting a reserved concurrency of 10, you ensure that this specific function always has 10 concurrent executions available—even when other functions are under heavy load.
 
@@ -22,7 +22,7 @@ Before setting up provisioned concurrency, note that you must specify a specific
 
 Once you have a published version, go back to the Lambda configuration page and navigate to the provisioned concurrency section. Here, you can add a configuration for your published version by specifying the desired number of pre-initialized instances (up to 900). If you set the number to three, the system will display the estimated monthly cost for maintaining these instances, giving you an understanding of the financial impact of reducing cold start latency.
 
-![The image shows an AWS Lambda configuration page for setting up provisioned concurrency, with options to select a qualifier type and version, and a section for entering concurrency details. An error message is displayed at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859581/notes-assets/images/AWS-Certified-Developer-Associate-Limits-Concurrency-Demo/aws-lambda-provisioned-concurrency-config.jpg)
+![The image shows an AWS Lambda configuration page for setting up provisioned concurrency, with options to select a qualifier type and version, and a section for entering concurrency details. An error message is displayed at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752859581/notes-assets/images/AWS-Certified-Developer-Associate-Limits-Concurrency-Demo/aws-lambda-provisioned-concurrency-config.jpg)
 
 ## Summary
 

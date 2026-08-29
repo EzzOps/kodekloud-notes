@@ -10,7 +10,7 @@ The Kubelet is often described as the "captain of the ship." It oversees node ac
 
 When the Kubelet receives instructions to run a container or pod, it communicates with the container runtime (e.g., Docker) to download the required image and initiate the container. It then maintains the health of these containers and ensures they operate as expected.
 
-![The image illustrates Kubernetes architecture, showing master and worker nodes, components like kube-apiserver, kube-scheduler, ETCD cluster, and Docker integration for managing containers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869725/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kubelet/frame_50.jpg)
+![The image illustrates Kubernetes architecture, showing master and worker nodes, components like kube-apiserver, kube-scheduler, ETCD cluster, and Docker integration for managing containers.](https://kodekloud.com/kk-media/image/upload/v1752869725/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kubelet/frame_50.jpg)
 
 > **lightbulb** The Kubelet is essential for node management in Kubernetes, acting as the intermediary between the cluster's control plane and the container runtime.
 

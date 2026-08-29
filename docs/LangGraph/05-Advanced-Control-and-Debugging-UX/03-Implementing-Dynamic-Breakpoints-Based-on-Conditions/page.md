@@ -98,13 +98,9 @@ Recommended practices:
   <img alt="The image presents three best practices: avoid overusing breakpoints in production, use flags to enable or disable dynamically, and log all triggered events for analysis." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Enable dynamic breakpoints only when needed. Prefer a state flag (for example, `debug: true`) or environment-based checks to avoid impacting production performance or user experience.
-</Callout>
+> **lightbulb** Enable dynamic breakpoints only when needed. Prefer a state flag (for example, `debug: true`) or environment-based checks to avoid impacting production performance or user experience.
 
-<Callout icon="warning">
-  Do not rely on dynamic breakpoints as the only safety mechanism. Use them alongside automated checks, rate limits, and other safeguards to prevent accidental or malicious actions.
-</Callout>
+> **warning** Do not rely on dynamic breakpoints as the only safety mechanism. Use them alongside automated checks, rate limits, and other safeguards to prevent accidental or malicious actions.
 
 Conclusion
 
@@ -115,6 +111,4 @@ Links and references
 * [LangGraph docs](https://docs.langgraph.example/) (reference for graph state and node APIs)
 * [Observability best practices](https://12factor.net/) (principles for logging and operational controls)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/74df2352-cf65-40d3-a3c3-70fdfb767635/lesson/d9ca8c0c-8120-4e39-9eb7-deb4639b592c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/74df2352-cf65-40d3-a3c3-70fdfb767635/lesson/d9ca8c0c-8120-4e39-9eb7-deb4639b592c)

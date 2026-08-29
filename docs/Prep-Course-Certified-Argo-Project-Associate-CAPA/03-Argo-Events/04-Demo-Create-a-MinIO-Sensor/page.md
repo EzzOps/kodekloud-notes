@@ -65,9 +65,7 @@ role.rbac.authorization.k8s.io/submit-workflow-role created
 rolebinding.rbac.authorization.k8s.io/trigger-workflow-binding created
 ```
 
-<Callout icon="lightbulb">
-  If you see an error like "unknown command 'apply' for 'kubectl1'", it likely indicates an alias or PATH issue (for example, `k` pointing to an unexpected binary). Use the full `kubectl` binary or fix the alias so `k` maps to `kubectl`.
-</Callout>
+> **lightbulb** If you see an error like "unknown command 'apply' for 'kubectl1'", it likely indicates an alias or PATH issue (for example, `k` pointing to an unexpected binary). Use the full `kubectl` binary or fix the alias so `k` maps to `kubectl`.
 
 ***
 
@@ -182,11 +180,9 @@ hello-kodekloud-xxxxx:              ||     ||
 
 This setup ensures your Sensor submits Workflows securely using a limited, purpose-built ServiceAccount instead of the cluster default ServiceAccount.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/742cc217-3558-4a27-868c-e15f28ecf1c4" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/742cc217-3558-4a27-868c-e15f28ecf1c4)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/cafc7b5f-8bda-414a-824d-a36b02e5344c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/cafc7b5f-8bda-414a-824d-a36b02e5344c)
 
 
 # Demo Create a MinIO Sensor
@@ -353,13 +349,9 @@ Request Body
 
 Best practices and security
 
-<Callout icon="lightbulb">
-  When testing, use ephemeral credentials and a disposable dump URL. For production, secure your triggers with authentication, TLS, and least-privilege credentials for MinIO.
-</Callout>
+> **lightbulb** When testing, use ephemeral credentials and a disposable dump URL. For production, secure your triggers with authentication, TLS, and least-privilege credentials for MinIO.
 
-<Callout icon="warning">
-  Do not expose sensitive access keys or secret keys in public manifests. Use Kubernetes secrets and RBAC to restrict access to Argo Events resources.
-</Callout>
+> **warning** Do not expose sensitive access keys or secret keys in public manifests. Use Kubernetes secrets and RBAC to restrict access to Argo Events resources.
 
 Adaptations and next steps
 
@@ -375,6 +367,4 @@ Links and references
 
 This demonstrates how to detect MinIO bucket events with Argo Events and invoke HTTP APIs via Sensors. You can extend the Sensor to send structured JSON payloads, headers, or authentication to fit your integration needs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/f4de18c8-0a1f-40ee-a08d-70d299f6fe9e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/f4de18c8-0a1f-40ee-a08d-70d299f6fe9e)

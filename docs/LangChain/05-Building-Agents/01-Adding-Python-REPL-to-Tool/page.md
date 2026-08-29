@@ -25,9 +25,7 @@ Example output (overridden to use GPT-4):
 AIMessage(content="Soft purr in the night,\nEyes gleaming in moon's soft light,\nCat in calm delight.", response_metadata={'model_name': 'gpt-4', 'token_usage': {'completion_tokens': 22, 'prompt_tokens': 13, 'total_tokens': 35}})
 ```
 
-<Callout icon="lightbulb">
-  The configurable field `id` you register must match the parameter name the runnable expects at runtime (for example, `model_name` above). Use `with_config(configurable={...})` to override values per invocation.
-</Callout>
+> **lightbulb** The configurable field `id` you register must match the parameter name the runnable expects at runtime (for example, `model_name` above). Use `with_config(configurable={...})` to override values per invocation.
 
 ## Practical considerations
 
@@ -51,9 +49,7 @@ AIMessage(content="Soft purr in the night,\nEyes gleaming in moon's soft light,\
 
 Try different OpenAI model names from the models list to see how outputs and token usage change. This pattern provides runtime flexibility without changing deployed code.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/abd1e527-3f6e-4e04-b421-3b1f8de5c69d/lesson/d20a74d2-983f-41da-a5bb-026e3d541199" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/abd1e527-3f6e-4e04-b421-3b1f8de5c69d/lesson/d20a74d2-983f-41da-a5bb-026e3d541199)
 
 
 # Adding Python REPL to Tool

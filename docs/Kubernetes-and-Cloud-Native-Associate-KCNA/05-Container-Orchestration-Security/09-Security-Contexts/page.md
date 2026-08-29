@@ -35,9 +35,7 @@ This guide covered the essentials of Kubernetes Role-Based Access Controls, incl
 
 Happy securing your Kubernetes clusters!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/894ef0f3-2951-4545-bcff-264b5f6677bc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/894ef0f3-2951-4545-bcff-264b5f6677bc)
 
 
 # Security Contexts
@@ -48,9 +46,7 @@ This article explains how to enhance container security in Kubernetes by configu
 
 Welcome to this comprehensive lesson on security contexts in Kubernetes. In this tutorial, Mumshad Mannambeth explains how to enhance container security by configuring user IDs and Linux capabilities.
 
-<Callout icon="lightbulb">
-  When running Docker containers, you can specify security standards such as the user ID and Linux capabilities. This concept extends to Kubernetes, where you configure security both at the pod level and for individual containers.
-</Callout>
+> **lightbulb** When running Docker containers, you can specify security standards such as the user ID and Linux capabilities. This concept extends to Kubernetes, where you configure security both at the pod level and for individual containers.
 
 ## Security Options in Docker
 
@@ -87,9 +83,7 @@ spec:
           add: ["MAC_ADMIN"]
 ```
 
-<Callout icon="lightbulb">
-  When both pod-level and container-level security contexts are defined, the container-level settings take precedence.
-</Callout>
+> **lightbulb** When both pod-level and container-level security contexts are defined, the container-level settings take precedence.
 
 ## Next Steps
 
@@ -105,6 +99,4 @@ Happy coding, and see you in the next lesson!
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [Docker Documentation](https://docs.docker.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/fa04b0b9-4756-4663-9334-481c4a3471bb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/fa04b0b9-4756-4663-9334-481c4a3471bb)

@@ -10,13 +10,13 @@ The lab setup emulates an on-premises scenario where an application server acces
 
 Below is the architecture diagram illustrating the data transfer flow from the corporate data center to AWS S3. The diagram shows an App Server, NFS Server, DataSync Agent, and the AWS DataSync service:
 
-![The image is a flow diagram showing data transfer from a corporate data center to AWS S3 using an App Server, NFS Server, DataSync Agent, and AWS DataSync.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865437/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/data-transfer-corporate-aws-diagram.jpg)
+![The image is a flow diagram showing data transfer from a corporate data center to AWS S3 using an App Server, NFS Server, DataSync Agent, and AWS DataSync.](https://kodekloud.com/kk-media/image/upload/v1752865437/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/data-transfer-corporate-aws-diagram.jpg)
 
 ## Environment Overview
 
 An application server in our simulated environment connects to an NFS server running within an AWS VPC. The data destined for migration is stored on the NFS server and will ultimately be copied to an S3 bucket. The following diagram shows the deployed application server and its connectivity with the NFS server:
 
-![The image shows an AWS EC2 management console with a list of running instances, displaying details for a selected instance named "appServer."](../../../../images/kodekloud.com/kk-media/image/upload/v1752865439/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/aws-ec2-management-console-instances.jpg)
+![The image shows an AWS EC2 management console with a list of running instances, displaying details for a selected instance named "appServer."](https://kodekloud.com/kk-media/image/upload/v1752865439/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/aws-ec2-management-console-instances.jpg)
 
 To confirm connectivity, log in to the application server and run the command below to display mounted file systems:
 
@@ -57,11 +57,11 @@ Once the files are transferred, you can verify their presence by accessing the S
 
 The next step is to deploy the DataSync agent. While the agent can be deployed on any supported virtualization hypervisor (e.g., VMware, KVM, or Microsoft Hyper-V), this demonstration uses an EC2 instance in AWS.
 
-![The image shows an Amazon S3 dashboard with a list of storage buckets, their regions, access settings, and creation dates. The interface includes options for managing buckets and accessing various AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865440/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/amazon-s3-dashboard-storage-buckets.jpg)
+![The image shows an Amazon S3 dashboard with a list of storage buckets, their regions, access settings, and creation dates. The interface includes options for managing buckets and accessing various AWS services.](https://kodekloud.com/kk-media/image/upload/v1752865440/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/amazon-s3-dashboard-storage-buckets.jpg)
 
 Refer to the [AWS DataSync documentation](https://docs.aws.amazon.com/datasync/index.html) for detailed information on deploying the agent in different environments, including VMware, EC2, AWS Snowcone, and AWS Outposts.
 
-![The image is a screenshot of an AWS documentation page titled "Deploy your AWS DataSync agent," detailing how to deploy the agent on various platforms like VMware, KVM, and Amazon EC2.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865442/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/aws-datasync-agent-deployment-screenshot.jpg)
+![The image is a screenshot of an AWS documentation page titled "Deploy your AWS DataSync agent," detailing how to deploy the agent on various platforms like VMware, KVM, and Amazon EC2.](https://kodekloud.com/kk-media/image/upload/v1752865442/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/aws-datasync-agent-deployment-screenshot.jpg)
 
 For EC2 deployment, perform the following steps:
 
@@ -98,11 +98,11 @@ For EC2 deployment, perform the following steps:
    * **VPC and Public IP:** Choose the appropriate VPC and assign a public IP address.
    * **Security Group:** For demonstration purposes, allowing all traffic is acceptable. In production, restrict access appropriately.
 
-![The image shows a section of the AWS DataSync User Guide, specifically detailing instructions on deploying a DataSync agent as an Amazon EC2 instance. It includes a highlighted URL and steps for configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865443/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/aw-data-sync-agent-ec2-guide.jpg)
+![The image shows a section of the AWS DataSync User Guide, specifically detailing instructions on deploying a DataSync agent as an Amazon EC2 instance. It includes a highlighted URL and steps for configuration.](https://kodekloud.com/kk-media/image/upload/v1752865443/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/aw-data-sync-agent-ec2-guide.jpg)
 
-![The image shows a webpage from the AWS DataSync User Guide detailing Amazon EC2 instance requirements, including recommended instance sizes for different tasks. It also outlines agent requirements for DataSync Discovery and management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865444/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/aws-datasync-ec2-instance-requirements.jpg)
+![The image shows a webpage from the AWS DataSync User Guide detailing Amazon EC2 instance requirements, including recommended instance sizes for different tasks. It also outlines agent requirements for DataSync Discovery and management.](https://kodekloud.com/kk-media/image/upload/v1752865444/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/aws-datasync-ec2-instance-requirements.jpg)
 
-![The image shows an AWS EC2 instance launch configuration screen, detailing settings for subnet, security group, and instance type. The summary section on the right provides an overview of the instance details, including software image, server type, and storage volume.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865446/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/aws-ec2-instance-launch-configuration.jpg)
+![The image shows an AWS EC2 instance launch configuration screen, detailing settings for subnet, security group, and instance type. The summary section on the right provides an overview of the instance details, including software image, server type, and storage volume.](https://kodekloud.com/kk-media/image/upload/v1752865446/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/aws-ec2-instance-launch-configuration.jpg)
 
 After launching the instance, register the DataSync agent through the AWS DataSync service page:
 
@@ -144,7 +144,7 @@ images
 00001.jpg  00018.jpg  00035.jpg  ...  00209.jpg
 ```
 
-![The image shows an AWS console configuration page for setting up a Network File System (NFS) location, including fields for selecting agents, entering an NFS server IP address, and specifying a mount path. There are options for additional settings and tags, with a "Create location" button at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865447/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/aws-nfs-configuration-console.jpg)
+![The image shows an AWS console configuration page for setting up a Network File System (NFS) location, including fields for selecting agents, entering an NFS server IP address, and specifying a mount path. There are options for additional settings and tags, with a "Create location" button at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752865447/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/aws-nfs-configuration-console.jpg)
 
 ### Destination: S3 Bucket
 
@@ -155,7 +155,7 @@ Define the destination location for your S3 bucket by following these guidelines
 * Specify the bucket folder if required; for this demonstration, the root directory is used.
 * Assign an IAM role for DataSync to access the S3 bucket. If none exists, you can opt for auto-generation of the role and policy.
 
-![The image shows an AWS DataSync interface with details of a created location, including the location ID, type, and associated S3 bucket information. A green notification bar indicates successful creation of an IAM access role and policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865448/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/awss-datasync-interface-location-details.jpg)
+![The image shows an AWS DataSync interface with details of a created location, including the location ID, type, and associated S3 bucket information. A green notification bar indicates successful creation of an IAM access role and policy.](https://kodekloud.com/kk-media/image/upload/v1752865448/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/awss-datasync-interface-location-details.jpg)
 
 ## Creating and Running a DataSync Task
 
@@ -167,15 +167,15 @@ With both source and destination locations configured, you can now create a Data
 4. Review the configuration and create the task.
 5. Start the task using the default settings.
 
-![The image shows an AWS DataSync configuration screen where a task named "copy-nfs-s3" is being set up. It includes options for task execution and data transfer configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865449/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/awsc-datasync-copy-nfs-s3-setup.jpg)
+![The image shows an AWS DataSync configuration screen where a task named "copy-nfs-s3" is being set up. It includes options for task execution and data transfer configuration.](https://kodekloud.com/kk-media/image/upload/v1752865449/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/awsc-datasync-copy-nfs-s3-setup.jpg)
 
 Once the task starts, you can monitor its progress, observing metrics such as throughput, file count, and data transferred from the source to destination.
 
-![The image shows an AWS DataSync console screen with a task named "copy-nfs-s3" that is currently running. It displays details about the source and destination locations, including a Network File System (NFS) and an Amazon S3 bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865450/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/awssync-copy-nfs-s3-task.jpg)
+![The image shows an AWS DataSync console screen with a task named "copy-nfs-s3" that is currently running. It displays details about the source and destination locations, including a Network File System (NFS) and an Amazon S3 bucket.](https://kodekloud.com/kk-media/image/upload/v1752865450/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/awssync-copy-nfs-s3-task.jpg)
 
 When the task progresses from the launching phase to transferring files (as indicated by metrics reaching 1% and beyond), it confirms successful connectivity between the NFS server and S3 bucket. After task completion, verify the migrated files by checking the S3 bucket:
 
-![The image shows an Amazon S3 console interface displaying a list of JPEG files with details such as name, type, last modified date, size, and storage class.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865451/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/amazon-s3-console-jpeg-files.jpg)
+![The image shows an Amazon S3 console interface displaying a list of JPEG files with details such as name, type, last modified date, size, and storage class.](https://kodekloud.com/kk-media/image/upload/v1752865451/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Move-files-from-File-Server-to-EFS-using-Datasync/amazon-s3-console-jpeg-files.jpg)
 
 ## Conclusion
 

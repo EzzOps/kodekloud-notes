@@ -20,7 +20,7 @@ In this lesson, we’ll dissect the components of a CloudWatch alarm, explore be
 | Comparison Operator | Comparison type: `GreaterThanThreshold`, `LessThanOrEqualToThreshold`, etc.       |
 | Alarm Actions       | Actions on state change: SNS notification, Lambda invocation, Auto Scaling, etc.  |
 
-![The image is a diagram titled "Alarm Anatomy in AWS CloudWatch," showing components like Alarm Name, Metric, Statistic, Threshold, Period, Evaluation Periods, Datapoints to Alarm, Comparison Operator, and Alarm Actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862367/notes-assets/images/AWS-CloudWatch-Alarm-Anatomy/alarm-anatomy-aws-cloudwatch-diagram.jpg)
+![The image is a diagram titled "Alarm Anatomy in AWS CloudWatch," showing components like Alarm Name, Metric, Statistic, Threshold, Period, Evaluation Periods, Datapoints to Alarm, Comparison Operator, and Alarm Actions.](https://kodekloud.com/kk-media/image/upload/v1752862367/notes-assets/images/AWS-CloudWatch-Alarm-Anatomy/alarm-anatomy-aws-cloudwatch-diagram.jpg)
 
 ***
 
@@ -43,7 +43,7 @@ aws cloudwatch put-metric-alarm \
   --alarm-actions arn:aws:sns:us-east-1:123456789012:DefaultCloudWatchAlarms
 ```
 
-![The image is a diagram explaining the conditions for setting an alarm in AWS CloudWatch, focusing on threshold types and CPU utilization criteria. It includes options for static and anomaly detection thresholds, and conditions like greater, greater/equal, lower/equal, and lower.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862368/notes-assets/images/AWS-CloudWatch-Alarm-Anatomy/aws-cloudwatch-alarm-conditions-diagram.jpg)
+![The image is a diagram explaining the conditions for setting an alarm in AWS CloudWatch, focusing on threshold types and CPU utilization criteria. It includes options for static and anomaly detection thresholds, and conditions like greater, greater/equal, lower/equal, and lower.](https://kodekloud.com/kk-media/image/upload/v1752862368/notes-assets/images/AWS-CloudWatch-Alarm-Anatomy/aws-cloudwatch-alarm-conditions-diagram.jpg)
 
 > **lightbulb** Consider using [anomaly detection thresholds](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html#features-anomaly-detection) for dynamic baselines instead of static thresholds.
 
@@ -62,7 +62,7 @@ Define how CloudWatch alerts you when the alarm state changes:
 | SNS Topic    | e.g., `DefaultCloudWatchAlarms` or a custom topic.   |
 | Endpoint     | Email address, Lambda function ARN, or HTTP webhook. |
 
-![The image is a diagram explaining the notification settings for an alarm in AWS CloudWatch, detailing alarm state triggers and SNS topic selection. It includes options for defining alarm states and creating or selecting SNS topics for notifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862369/notes-assets/images/AWS-CloudWatch-Alarm-Anatomy/aws-cloudwatch-alarm-notification-diagram.jpg)
+![The image is a diagram explaining the notification settings for an alarm in AWS CloudWatch, detailing alarm state triggers and SNS topic selection. It includes options for defining alarm states and creating or selecting SNS topics for notifications.](https://kodekloud.com/kk-media/image/upload/v1752862369/notes-assets/images/AWS-CloudWatch-Alarm-Anatomy/aws-cloudwatch-alarm-notification-diagram.jpg)
 
 ***
 

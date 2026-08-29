@@ -8,9 +8,7 @@ This article explains how to configure Password Write Back—a feature that ensu
 
 Password Write Back, available through Azure AD Connect, is essential for organizations leveraging both on-premises AD and cloud services. It allows users to reset their passwords in Azure AD, the central identity provider for Office applications, SaaS applications, and more.
 
-<Callout icon="lightbulb">
-  By synchronizing password resets across all environments, Password Write Back offers a unified experience for users and simplifies password management for administrators.
-</Callout>
+> **lightbulb** By synchronizing password resets across all environments, Password Write Back offers a unified experience for users and simplifies password management for administrators.
 
 ## How Password Write Back Works
 
@@ -18,9 +16,7 @@ In the Self-Service Password Reset (SSPR) portal, a user can set a new password.
 
 For a high-level overview, if a user resets their password in Azure AD, the change propagates immediately to all connected applications and the on-premises infrastructure. The following diagram illustrates Microsoft’s Password Write Back feature, detailing the flow from user password reset to synchronization between Azure AD and Windows Server AD.
 
-<Frame>
-  ![The image explains Microsoft's Password Writeback feature, which synchronizes on-premises Active Directory with cloud-based password changes using Azure AD Connect. It includes a flowchart showing the process of user password reset and synchronization between Microsoft Azure Active Directory and Windows Server Active Directory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881918/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-password-writeback/microsoft-password-writeback-flowchart.jpg)
-</Frame>
+![The image explains Microsoft's Password Writeback feature, which synchronizes on-premises Active Directory with cloud-based password changes using Azure AD Connect. It includes a flowchart showing the process of user password reset and synchronization between Microsoft Azure Active Directory and Windows Server Active Directory.](https://kodekloud.com/kk-media/image/upload/v1752881918/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-password-writeback/microsoft-password-writeback-flowchart.jpg)
 
 ## Benefits of Password Write Back
 
@@ -34,24 +30,16 @@ Some of the primary advantages of this feature include:
 
 The image below highlights these benefits:
 
-<Frame>
-  ![The image lists benefits of a service, including enforcement of on-premises AD password policies, zero-delay feedback, support for password changes from Access Panel and Office 365, support for admin-reset passwords, and no inbound firewall rules required.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881919/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-password-writeback/service-benefits-password-policies.jpg)
-</Frame>
+![The image lists benefits of a service, including enforcement of on-premises AD password policies, zero-delay feedback, support for password changes from Access Panel and Office 365, support for admin-reset passwords, and no inbound firewall rules required.](https://kodekloud.com/kk-media/image/upload/v1752881919/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-password-writeback/service-benefits-password-policies.jpg)
 
 ## Enabling Password Write Back in Azure AD Connect
 
 The following screenshot from the Azure AD Connect tool shows where to enable the Password Write Back feature. In this demonstration, the option is visible within the "Optional Features" section.
 
-<Frame>
-  ![The image shows the "Optional Features" section of Microsoft Azure Active Directory Connect, highlighting the "Password writeback" option as selected.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881920/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-password-writeback/azure-ad-connect-optional-features.jpg)
-</Frame>
+![The image shows the "Optional Features" section of Microsoft Azure Active Directory Connect, highlighting the "Password writeback" option as selected.](https://kodekloud.com/kk-media/image/upload/v1752881920/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-password-writeback/azure-ad-connect-optional-features.jpg)
 
-<Callout icon="lightbulb">
-  Before proceeding with the configuration, ensure that Self-Service Password Reset (SSPR) is enabled to fully utilize the Password Write Back feature.
-</Callout>
+> **lightbulb** Before proceeding with the configuration, ensure that Self-Service Password Reset (SSPR) is enabled to fully utilize the Password Write Back feature.
 
 In the upcoming demonstration, we will walk through the process of enabling this feature and explore additional configuration options within Azure AD Connect. Let’s move on to the detailed setup demonstration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/ec3dd1c7-a3f1-4d9a-ae3c-59b398091a52/lesson/8490f645-0e98-464b-80b7-56db8e67cee0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/ec3dd1c7-a3f1-4d9a-ae3c-59b398091a52/lesson/8490f645-0e98-464b-80b7-56db8e67cee0)

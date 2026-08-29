@@ -37,11 +37,11 @@ While the REST API offers direct access, the Microsoft Graph SDK simplifies deve
 * **Core SDK Functions:** Encapsulate functions to call Microsoft Graph endpoints, offering high-level methods for data retrieval.
 * **Authentication:** Utilizes authentication providers integrated with the Microsoft Authentication Library (MSAL) for secure token management.
 
-![The image is a slide titled "Querying Microsoft Graph by Using SDKs (1/4)" and describes three components: Microsoft.Graph, Microsoft.Graph.Core, and Authentication, each with brief explanations of their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866545/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Querying-Microsoft-Graph/querying-microsoft-graph-sdks-1-4.jpg)
+![The image is a slide titled "Querying Microsoft Graph by Using SDKs (1/4)" and describes three components: Microsoft.Graph, Microsoft.Graph.Core, and Authentication, each with brief explanations of their functions.](https://kodekloud.com/kk-media/image/upload/v1752866545/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Querying-Microsoft-Graph/querying-microsoft-graph-sdks-1-4.jpg)
 
 Application builders help retrieve tokens by abstracting various authentication flows. MSAL efficiently handles token acquisition, reducing the need for extra code in your application.
 
-![The image is a slide titled "Querying Microsoft Graph by Using SDKs (2/4)" and describes the use of the MSAL library as a wrapper for authentication, with a flowchart showing the relationship between Microsoft Graph SDK, MSAL, and Microsoft Graph.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866546/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Querying-Microsoft-Graph/querying-microsoft-graph-sdks-flowchart.jpg)
+![The image is a slide titled "Querying Microsoft Graph by Using SDKs (2/4)" and describes the use of the MSAL library as a wrapper for authentication, with a flowchart showing the relationship between Microsoft Graph SDK, MSAL, and Microsoft Graph.](https://kodekloud.com/kk-media/image/upload/v1752866546/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Querying-Microsoft-Graph/querying-microsoft-graph-sdks-flowchart.jpg)
 
 ### Example: Setting Up the SDK
 
@@ -135,7 +135,7 @@ Before using the service principal or app registration, ensure that the authenti
 
 > **triangle-alert** Ensure that the device code flow setting is enabled in your app registration configuration. Failing to do so will cause the authentication process to fail.
 
-![The image shows the Microsoft Azure portal's authentication settings for an application, displaying options for redirect URIs and supported account types. It includes sections for mobile and desktop applications and a warning about enabling personal Microsoft accounts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866547/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Querying-Microsoft-Graph/azure-portal-authentication-settings.jpg)
+![The image shows the Microsoft Azure portal's authentication settings for an application, displaying options for redirect URIs and supported account types. It includes sections for mobile and desktop applications and a warning about enabling personal Microsoft accounts.](https://kodekloud.com/kk-media/image/upload/v1752866547/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Querying-Microsoft-Graph/azure-portal-authentication-settings.jpg)
 
 Make sure that after creating your app registration or service principal, the device code flow option is enabled to ensure proper functionality.
 

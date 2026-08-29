@@ -54,8 +54,7 @@ To iterate on the operator locally you will use a few common Go and make targets
 | `go build ./...`       | Compile the manager and validate imports                 | Ensures code compiles                      |
 | `go run ./cmd/main.go` | Run the controller manager locally                       | Starts reconciliation against your cluster |
 
-<Callout icon="lightbulb">
-  Run these commands in sequence while developing and testing your operator:
+> **lightbulb** Run these commands in sequence while developing and testing your operator:
 
   ```bash theme={null}
   $ make generate
@@ -65,7 +64,6 @@ To iterate on the operator locally you will use a few common Go and make targets
   ```
 
   Each command validates a different layer of the operator: code generation, CRD manifest creation, compilation, and runtime behavior.
-</Callout>
 
 As you expand the operator, you can add status fields, events, richer spec fields, validation, webhooks, finalizers, metrics, and packaging. These are natural extensions that increase robustness and observability, but they are not required to get the basic reconcile loop working.
 
@@ -81,6 +79,4 @@ Links and References
 * [Go Documentation](https://go.dev/doc/)
 * [Kubernetes Concepts: Custom Resources](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/e63eb55f-382e-4f05-a748-edcddbf19a55" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/e63eb55f-382e-4f05-a748-edcddbf19a55)

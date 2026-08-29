@@ -17,22 +17,22 @@ In this guide, you’ll learn how to register a domain name with AWS Route 53, e
 1. Sign in to the AWS Management Console and navigate to **Route 53**.
 2. In the left pane, select **Registered domains** and click **Register domains**.
 
-![The image shows the AWS Route 53 console interface, specifically the "Registered domains" section, which currently displays no domains.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863299/notes-assets/images/AWS-Networking-Fundamentals-Route-53-Demo/aws-route-53-registered-domains-console.jpg)
+![The image shows the AWS Route 53 console interface, specifically the "Registered domains" section, which currently displays no domains.](https://kodekloud.com/kk-media/image/upload/v1752863299/notes-assets/images/AWS-Networking-Fundamentals-Route-53-Demo/aws-route-53-registered-domains-console.jpg)
 
 3. Enter your desired domain (e.g., `kodeklouddemo123.com`) and click **Check** to verify availability.
 
-![The image shows a domain search page on AWS, displaying the availability and pricing of the domain "kodeklouddemo123.com" and suggesting alternative domain options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863300/notes-assets/images/AWS-Networking-Fundamentals-Route-53-Demo/aws-domain-search-kodeklouddemo123.jpg)
+![The image shows a domain search page on AWS, displaying the availability and pricing of the domain "kodeklouddemo123.com" and suggesting alternative domain options.](https://kodekloud.com/kk-media/image/upload/v1752863300/notes-assets/images/AWS-Networking-Fundamentals-Route-53-Demo/aws-domain-search-kodeklouddemo123.jpg)
 
 > **triangle-alert** Make sure your chosen domain doesn’t infringe on trademarks or copyrights. Unauthorized use may result in legal issues.
 
 4. Select the domain and choose **Proceed to checkout**.
 
-![The image shows a domain registration page on AWS Route 53, displaying pricing options for the domain "kodeklouddemo123.com" with auto-renew enabled for one year at \$13.00 USD.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863301/notes-assets/images/AWS-Networking-Fundamentals-Route-53-Demo/aws-route53-domain-registration-pricing.jpg)
+![The image shows a domain registration page on AWS Route 53, displaying pricing options for the domain "kodeklouddemo123.com" with auto-renew enabled for one year at \$13.00 USD.](https://kodekloud.com/kk-media/image/upload/v1752863301/notes-assets/images/AWS-Networking-Fundamentals-Route-53-Demo/aws-route53-domain-registration-pricing.jpg)
 
 5. Enable **Auto-renewal** (recommended) and confirm **Privacy protection** is on for all contacts.
 6. Provide registrant, admin, and tech contact information, review the terms, and click **Submit**.
 
-![The image shows a contact information form for domain registration on Amazon Route 53, including registrant, admin, and tech contact details, with a section for terms and conditions. There is a "Submit" button at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863302/notes-assets/images/AWS-Networking-Fundamentals-Route-53-Demo/amazon-route53-domain-registration-form.jpg)
+![The image shows a contact information form for domain registration on Amazon Route 53, including registrant, admin, and tech contact details, with a section for terms and conditions. There is a "Submit" button at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752863302/notes-assets/images/AWS-Networking-Fundamentals-Route-53-Demo/amazon-route53-domain-registration-form.jpg)
 
 > **lightbulb** AWS automatically creates a hosted zone when you register a domain. A small hosted zone fee applies in addition to the registration cost. See [Route 53 Pricing](https://aws.amazon.com/route53/pricing/).
 
@@ -46,7 +46,7 @@ Click your domain in **Registered domains** to see:
 * Contact information
 * Assigned name servers
 
-![The image shows the AWS Route 53 console displaying details for the domain "kodekloudemo123.com," including registration and expiration dates, contact information, and name servers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863304/notes-assets/images/AWS-Networking-Fundamentals-Route-53-Demo/aws-route53-console-kodekloudemo123.jpg)
+![The image shows the AWS Route 53 console displaying details for the domain "kodekloudemo123.com," including registration and expiration dates, contact information, and name servers.](https://kodekloud.com/kk-media/image/upload/v1752863304/notes-assets/images/AWS-Networking-Fundamentals-Route-53-Demo/aws-route53-console-kodekloudemo123.jpg)
 
 ## 3. Explore the Hosted Zone
 
@@ -58,7 +58,7 @@ Inside, you’ll find:
 * The four name servers assigned by AWS
 * Default DNS records created automatically
 
-![The image shows an AWS Route 53 console displaying details of a hosted zone for the domain "kodeklouddemo123.com," including name servers and DNS records.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863305/notes-assets/images/AWS-Networking-Fundamentals-Route-53-Demo/aws-route53-hosted-zone-kodeklouddemo123.jpg)
+![The image shows an AWS Route 53 console displaying details of a hosted zone for the domain "kodeklouddemo123.com," including name servers and DNS records.](https://kodekloud.com/kk-media/image/upload/v1752863305/notes-assets/images/AWS-Networking-Fundamentals-Route-53-Demo/aws-route53-hosted-zone-kodeklouddemo123.jpg)
 
 ## 4. Create an A Record
 
@@ -70,11 +70,11 @@ An A record maps your domain (or subdomain) to an IPv4 address.
 4. Under **Value**, enter your server’s public IPv4 address.
 5. Accept the default TTL and click **Create records**.
 
-![The image shows an AWS Route 53 console screen where a user is creating a DNS record. The record type is set to "A" for routing traffic to an IPv4 address, with a specified IP address and TTL value.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863307/notes-assets/images/AWS-Networking-Fundamentals-Route-53-Demo/aws-route53-dns-a-record-creation.jpg)
+![The image shows an AWS Route 53 console screen where a user is creating a DNS record. The record type is set to "A" for routing traffic to an IPv4 address, with a specified IP address and TTL value.](https://kodekloud.com/kk-media/image/upload/v1752863307/notes-assets/images/AWS-Networking-Fundamentals-Route-53-Demo/aws-route53-dns-a-record-creation.jpg)
 
 > **lightbulb** DNS updates typically propagate within 60 seconds. Use **View status** to verify when your record is `INSYNC`.
 
-![The image shows an AWS Route 53 dashboard displaying change info details for a hosted zone, with the status marked as "INSYNC."](../../../../images/kodekloud.com/kk-media/image/upload/v1752863308/notes-assets/images/AWS-Networking-Fundamentals-Route-53-Demo/aws-route53-dashboard-insync-change-info.jpg)
+![The image shows an AWS Route 53 dashboard displaying change info details for a hosted zone, with the status marked as "INSYNC."](https://kodekloud.com/kk-media/image/upload/v1752863308/notes-assets/images/AWS-Networking-Fundamentals-Route-53-Demo/aws-route53-dashboard-insync-change-info.jpg)
 
 ## 5. Validate Your Setup
 
@@ -86,7 +86,7 @@ https://kodeklouddemo123.com
 
 You should see your web server’s default page.
 
-![The image shows a simple webpage with the text "This is kodeklouddemo123.com" centered on a white background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863308/notes-assets/images/AWS-Networking-Fundamentals-Route-53-Demo/kodeklouddemo123-webpage-white-background.jpg)
+![The image shows a simple webpage with the text "This is kodeklouddemo123.com" centered on a white background.](https://kodekloud.com/kk-media/image/upload/v1752863308/notes-assets/images/AWS-Networking-Fundamentals-Route-53-Demo/kodeklouddemo123-webpage-white-background.jpg)
 
 ## Common DNS Record Types
 

@@ -6,9 +6,7 @@ This article explains how to update existing rows in a PostgreSQL database using
 
 In this article, we explain how to update existing rows in a PostgreSQL database using the UPDATE command. Previously, we discussed how to insert new data and delete entries. Now, we will focus on updating records within the "products" table.
 
-<Callout icon="lightbulb">
-  Always include the WHERE clause in your UPDATE statement to ensure that only the intended records are modified.
-</Callout>
+> **lightbulb** Always include the WHERE clause in your UPDATE statement to ensure that only the intended records are modified.
 
 ## Retrieving Existing Data
 
@@ -72,6 +70,4 @@ By following these steps, you can efficiently modify entries in a PostgreSQL dat
 
 For more insights on PostgreSQL and SQL commands, explore the [PostgreSQL documentation](https://www.postgresql.org/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/a1763cfe-a9ce-4f43-8e5d-660e5cf329f8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/a1763cfe-a9ce-4f43-8e5d-660e5cf329f8)

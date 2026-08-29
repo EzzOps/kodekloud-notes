@@ -6,9 +6,7 @@ This article explores disk partitions, file systems, external storage devices, a
 
 In this lesson, we explore disk partitions, file systems (including the EXT series and NFS), external storage devices (DAS, NAS, and SAN), and the Logical Volume Manager (LVM) in action. Each section is enhanced with hands-on labs to reinforce your learning.
 
-<Frame>
-  ![The image outlines "Storage Basics," covering topics like disk partitions, Linux filesystems, external storage devices, logical volume manager, and related labs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881146/notes-assets/images/Learning-Linux-Basics-Course-Labs-Disk-Partitions/frame_20.jpg)
-</Frame>
+![The image outlines "Storage Basics," covering topics like disk partitions, Linux filesystems, external storage devices, logical volume manager, and related labs.](https://kodekloud.com/kk-media/image/upload/v1752881146/notes-assets/images/Learning-Linux-Basics-Course-Labs-Disk-Partitions/frame_20.jpg)
 
 ## Block Devices
 
@@ -81,9 +79,7 @@ Device        Start       End   Sectors Size Type
 /dev/sda3   150194176 247955455 97761280 46.6G Linux filesystem
 ```
 
-<Callout icon="lightbulb">
-  The disk label type in this example is GPT (GUID Partition Table), which offers improvements over the older MBR (Master Boot Record) scheme such as support for larger disk sizes and more partitions.
-</Callout>
+> **lightbulb** The disk label type in this example is GPT (GUID Partition Table), which offers improvements over the older MBR (Master Boot Record) scheme such as support for larger disk sizes and more partitions.
 
 ## Partitioning Schemes
 
@@ -93,23 +89,15 @@ There are three primary types of disk partitions:
 * **Extended Partition:** Acts as a container for logical partitions; it cannot be used directly.
 * **Logical Partition:** Created within an extended partition to bypass the four primary partition limitation.
 
-<Frame>
-  ![The image illustrates partition types on physical disks: primary, extended, and logical partitions, with diagrams showing their arrangement.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881148/notes-assets/images/Learning-Linux-Basics-Course-Labs-Disk-Partitions/frame_310.jpg)
-</Frame>
+![The image illustrates partition types on physical disks: primary, extended, and logical partitions, with diagrams showing their arrangement.](https://kodekloud.com/kk-media/image/upload/v1752881148/notes-assets/images/Learning-Linux-Basics-Course-Labs-Disk-Partitions/frame_310.jpg)
 
 A partitioning scheme, or partition table, defines how these partitions are organized on a disk. The older MBR partitioning scheme permits only four primary partitions and limits disk sizes to 2TB (unless using an extended partition). In contrast, GPT (GUID Partition Table) supports an almost unlimited number of partitions—often limited only by the operating system, such as RHEL’s limit of 128 partitions per disk—and eliminates the 2TB disk size restriction.
 
-<Frame>
-  ![The image illustrates an MBR partition scheme on a 2TB physical disk, showing primary and extended partitions with local partitions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881149/notes-assets/images/Learning-Linux-Basics-Course-Labs-Disk-Partitions/frame_370.jpg)
-</Frame>
+![The image illustrates an MBR partition scheme on a 2TB physical disk, showing primary and extended partitions with local partitions.](https://kodekloud.com/kk-media/image/upload/v1752881149/notes-assets/images/Learning-Linux-Basics-Course-Labs-Disk-Partitions/frame_370.jpg)
 
-<Frame>
-  ![The image compares GPT and MBR partition schemes, highlighting GPT's unlimited partitions and no size limit, versus MBR's 2TB limit and extended partitions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881150/notes-assets/images/Learning-Linux-Basics-Course-Labs-Disk-Partitions/frame_400.jpg)
-</Frame>
+![The image compares GPT and MBR partition schemes, highlighting GPT's unlimited partitions and no size limit, versus MBR's 2TB limit and extended partitions.](https://kodekloud.com/kk-media/image/upload/v1752881150/notes-assets/images/Learning-Linux-Basics-Course-Labs-Disk-Partitions/frame_400.jpg)
 
-<Callout icon="lightbulb">
-  Unless your operating system requires MBR, GPT is generally the preferred choice due to its enhanced capacity and flexibility.
-</Callout>
+> **lightbulb** Unless your operating system requires MBR, GPT is generally the preferred choice due to its enhanced capacity and flexibility.
 
 ## Creating a New Partition with GPT
 
@@ -209,8 +197,6 @@ For additional resources, consider exploring the following:
 
 Happy partitioning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/e0021af2-9983-4bde-97a2-29255d3ea1da/lesson/17ce7de4-9cf1-4054-b0cf-95f2fa658ccb" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/e0021af2-9983-4bde-97a2-29255d3ea1da/lesson/17ce7de4-9cf1-4054-b0cf-95f2fa658ccb)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/e0021af2-9983-4bde-97a2-29255d3ea1da/lesson/fa701bb1-7921-4a14-980c-a16c132fb72f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/e0021af2-9983-4bde-97a2-29255d3ea1da/lesson/fa701bb1-7921-4a14-980c-a16c132fb72f)

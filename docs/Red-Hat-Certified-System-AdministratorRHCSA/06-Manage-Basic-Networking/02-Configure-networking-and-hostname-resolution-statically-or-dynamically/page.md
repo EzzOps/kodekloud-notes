@@ -12,9 +12,7 @@ Welcome to this comprehensive guide on configuring networking and hostname resol
 
 These settings—IP addresses, gateways, DNS resolvers, network routes, and so forth—can be configured dynamically (typically using DHCP) or statically (via manual configuration).
 
-<Callout icon="lightbulb">
-  On Red Hat-based systems (such as Red Hat Enterprise Linux or CentOS), the configuration files and tools may vary slightly compared to other Linux distributions.
-</Callout>
+> **lightbulb** On Red Hat-based systems (such as Red Hat Enterprise Linux or CentOS), the configuration files and tools may vary slightly compared to other Linux distributions.
 
 ***
 

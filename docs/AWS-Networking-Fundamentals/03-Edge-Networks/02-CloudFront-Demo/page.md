@@ -23,7 +23,7 @@ In this tutorial, we’ll walk through how to serve a simple static website (HTM
 
 Here’s our local directory layout. It contains an HTML page, a CSS stylesheet, and an images folder:
 
-![The image shows an AWS Console Home page with a file explorer window open, displaying a folder named "cloudfront" containing an HTML file, a CSS file, and an images folder.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863385/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-console-file-explorer-cloudfront.jpg)
+![The image shows an AWS Console Home page with a file explorer window open, displaying a folder named "cloudfront" containing an HTML file, a CSS file, and an images folder.](https://kodekloud.com/kk-media/image/upload/v1752863385/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-console-file-explorer-cloudfront.jpg)
 
 All assets will reside in an S3 bucket. CloudFront will then cache these files at edge locations to minimize latency for end users.
 
@@ -34,11 +34,11 @@ All assets will reside in an S3 bucket. CloudFront will then cache these files a
 1. Open the [Amazon S3 console](https://console.aws.amazon.com/s3/), then click **Create bucket**.
 2. Enter a globally unique name (e.g., `kodekloud-cloudfront-demo`), leave other settings at their defaults, and click **Create bucket**.
 
-![The image shows an AWS S3 interface for creating a new bucket, with options for general configuration, bucket type, and object ownership settings. The bucket name "kodekloud-cloudfront-demo" is entered in the text field.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863386/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-s3-create-bucket-interface.jpg)
+![The image shows an AWS S3 interface for creating a new bucket, with options for general configuration, bucket type, and object ownership settings. The bucket name "kodekloud-cloudfront-demo" is entered in the text field.](https://kodekloud.com/kk-media/image/upload/v1752863386/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-s3-create-bucket-interface.jpg)
 
 After creation, verify your bucket appears in the list:
 
-![The image shows an AWS S3 management console with a list of general-purpose buckets, their regions, and creation dates. A green notification at the top indicates the successful creation of a bucket named "kodekloud-cloudfront-demo."](../../../../images/kodekloud.com/kk-media/image/upload/v1752863388/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-s3-management-console-buckets-list.jpg)
+![The image shows an AWS S3 management console with a list of general-purpose buckets, their regions, and creation dates. A green notification at the top indicates the successful creation of a bucket named "kodekloud-cloudfront-demo."](https://kodekloud.com/kk-media/image/upload/v1752863388/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-s3-management-console-buckets-list.jpg)
 
 3. Click on your bucket name, then choose **Upload**. Add `index.html`, `index.css`, and the entire `images` folder.
 
@@ -48,7 +48,7 @@ After creation, verify your bucket appears in the list:
 
 By default, S3 blocks public access to buckets:
 
-![The image shows an AWS S3 bucket permissions settings page, highlighting options for blocking public access and managing bucket policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863389/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-s3-bucket-permissions-settings.jpg)
+![The image shows an AWS S3 bucket permissions settings page, highlighting options for blocking public access and managing bucket policies.](https://kodekloud.com/kk-media/image/upload/v1752863389/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-s3-bucket-permissions-settings.jpg)
 
 > **triangle-alert** Do not disable **Block Public Access**. Instead, grant CloudFront permission via a bucket policy in Step 4.
 
@@ -60,7 +60,7 @@ By default, S3 blocks public access to buckets:
 2. For **Origin domain**, select your S3 bucket (`kodekloud-cloudfront-demo`).
 3. Leave **Origin path** blank unless you want to serve a subdirectory. Use the default Origin ID or customize it.
 
-![The image shows a screenshot of the AWS CloudFront console, specifically the "Create distribution" page where the user is configuring the origin settings for a distribution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863390/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-cloudfront-create-distribution-screenshot.jpg)
+![The image shows a screenshot of the AWS CloudFront console, specifically the "Create distribution" page where the user is configuring the origin settings for a distribution.](https://kodekloud.com/kk-media/image/upload/v1752863390/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-cloudfront-create-distribution-screenshot.jpg)
 
 Scroll to other settings—most can remain at their defaults:
 
@@ -69,21 +69,21 @@ Scroll to other settings—most can remain at their defaults:
 * SSL Certificate: **Default CloudFront certificate (\*.cloudfront.net)**
 * Default Root Object: **index.html**
 
-![The image shows a configuration page for creating a CloudFront distribution on the AWS Management Console, with options for SSL certificates, HTTP versions, logging, and IPv6 settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863391/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/cloudfront-distribution-configuration-aws.jpg)
+![The image shows a configuration page for creating a CloudFront distribution on the AWS Management Console, with options for SSL certificates, HTTP versions, logging, and IPv6 settings.](https://kodekloud.com/kk-media/image/upload/v1752863391/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/cloudfront-distribution-configuration-aws.jpg)
 
 ### Why Set a Default Root Object?
 
 When you request the root of a distribution (`/`), CloudFront needs to know which file to serve. By setting **Default Root Object** to `index.html`, you avoid typing the full filename in the URL.
 
-![The image shows an Amazon S3 bucket interface with three objects: a folder named "images" and two files, "index.css" and "index.html," along with their details like type, last modified date, size, and storage class.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863392/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/amazon-s3-bucket-interface-objects.jpg)
+![The image shows an Amazon S3 bucket interface with three objects: a folder named "images" and two files, "index.css" and "index.html," along with their details like type, last modified date, size, and storage class.](https://kodekloud.com/kk-media/image/upload/v1752863392/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/amazon-s3-bucket-interface-objects.jpg)
 
 Ensure **Default Root Object** is `index.html`:
 
-![The image shows a configuration page for creating a CloudFront distribution on AWS, with options for SSL certificates, HTTP versions, and logging settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863393/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/cloudfront-distribution-configuration-aws-2.jpg)
+![The image shows a configuration page for creating a CloudFront distribution on AWS, with options for SSL certificates, HTTP versions, and logging settings.](https://kodekloud.com/kk-media/image/upload/v1752863393/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/cloudfront-distribution-configuration-aws-2.jpg)
 
 4. Click **Create distribution**. Distribution creation can take several minutes.
 
-![The image shows an AWS CloudFront distribution page with a notification about a successfully created distribution and a warning to update the S3 bucket policy. It includes details like the distribution domain name and settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863394/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-cloudfront-distribution-notification.jpg)
+![The image shows an AWS CloudFront distribution page with a notification about a successfully created distribution and a warning to update the S3 bucket policy. It includes details like the distribution domain name and settings.](https://kodekloud.com/kk-media/image/upload/v1752863394/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-cloudfront-distribution-notification.jpg)
 
 > **lightbulb** CloudFront distributions typically deploy within 10–20 minutes. You’ll know it’s ready when the status changes to **Enabled**.
 
@@ -148,9 +148,9 @@ By default, CloudFront applies the **Managed-CachingOptimized** policy with a 24
 2. Note the **Cache policy** in use (e.g., `Managed-CachingOptimized`).
 3. Click **View policy** to inspect TTL values:
 
-![The image shows the settings page of an AWS CloudFront distribution, displaying options for path patterns, origin groups, compression, viewer protocol policy, allowed HTTP methods, and cache key and origin requests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863395/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-cloudfront-settings-page-options.jpg)
+![The image shows the settings page of an AWS CloudFront distribution, displaying options for path patterns, origin groups, compression, viewer protocol policy, allowed HTTP methods, and cache key and origin requests.](https://kodekloud.com/kk-media/image/upload/v1752863395/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-cloudfront-settings-page-options.jpg)
 
-![The image shows an AWS CloudFront settings page for a caching policy named "Managed-CachingOptimized," detailing TTL settings, cache key settings, and compression support options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863396/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-cloudfront-managed-caching-policy-settings.jpg)
+![The image shows an AWS CloudFront settings page for a caching policy named "Managed-CachingOptimized," detailing TTL settings, cache key settings, and compression support options.](https://kodekloud.com/kk-media/image/upload/v1752863396/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-cloudfront-managed-caching-policy-settings.jpg)
 
 | Setting             | Default                  | Description                                |
 | ------------------- | ------------------------ | ------------------------------------------ |
@@ -165,7 +165,7 @@ By default, CloudFront applies the **Managed-CachingOptimized** policy with a 24
 
 When you overwrite a file in S3 (e.g., update `images/car.jpg`), CloudFront may still serve the old version until its TTL expires:
 
-![The image shows an AWS S3 bucket permissions page for "kodekloud-cloudfront-demo," highlighting settings for blocking public access and bucket policy options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863397/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-s3-bucket-permissions-kodekloud.jpg)
+![The image shows an AWS S3 bucket permissions page for "kodekloud-cloudfront-demo," highlighting settings for blocking public access and bucket policy options.](https://kodekloud.com/kk-media/image/upload/v1752863397/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-s3-bucket-permissions-kodekloud.jpg)
 
 To force CloudFront to fetch the updated file:
 
@@ -180,9 +180,9 @@ To force CloudFront to fetch the updated file:
 
    Use wildcards to cover multiple objects.
 
-![The image shows an AWS CloudFront distribution settings page, specifically the "Behaviors" tab, displaying a default behavior configuration with options for creating and editing behaviors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863398/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-cloudfront-behaviors-settings-page.jpg)
+![The image shows an AWS CloudFront distribution settings page, specifically the "Behaviors" tab, displaying a default behavior configuration with options for creating and editing behaviors.](https://kodekloud.com/kk-media/image/upload/v1752863398/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-cloudfront-behaviors-settings-page.jpg)
 
-![The image shows an AWS CloudFront interface where a user is creating an invalidation by adding object paths to remove from the CloudFront cache.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863399/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-cloudfront-invalidation-object-paths.jpg)
+![The image shows an AWS CloudFront interface where a user is creating an invalidation by adding object paths to remove from the CloudFront cache.](https://kodekloud.com/kk-media/image/upload/v1752863399/notes-assets/images/AWS-Networking-Fundamentals-CloudFront-Demo/aws-cloudfront-invalidation-object-paths.jpg)
 
 3. Click **Create invalidation**. Once it completes, refresh your distribution URL to see the new image.
 

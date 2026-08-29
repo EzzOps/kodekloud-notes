@@ -8,9 +8,7 @@ In this article, we explore how storage classes work in Kubernetes. We'll build 
 
 ***
 
-<Callout icon="lightbulb">
-  Kubernetes storage classes simplify storage management by automating the provisioning process. Whether you use static provisioning or dynamic provisioning, the concepts remain similar, with dynamic provisioning offering automated PV creation.
-</Callout>
+> **lightbulb** Kubernetes storage classes simplify storage management by automating the provisioning process. Whether you use static provisioning or dynamic provisioning, the concepts remain similar, with dynamic provisioning offering automated PV creation.
 
 ## Static Provisioning
 

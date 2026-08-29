@@ -14,7 +14,7 @@ You can combine multiple bindings within a single function. For example, a funct
 
 ***
 
-![The image is an infographic titled "Creating Triggers and Bindings," explaining five key points about triggers and bindings in functions, including their roles and benefits. Each point is accompanied by an icon and a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866239/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Triggers-and-Bindings/creating-triggers-bindings-infographic.jpg)
+![The image is an infographic titled "Creating Triggers and Bindings," explaining five key points about triggers and bindings in functions, including their roles and benefits. Each point is accompanied by an icon and a brief description.](https://kodekloud.com/kk-media/image/upload/v1752866239/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Triggers-and-Bindings/creating-triggers-bindings-infographic.jpg)
 
 ***
 
@@ -49,7 +49,7 @@ When using attribute-based configuration in languages like C#, the binding direc
 
 ***
 
-![The image explains binding directions in a system, detailing properties like triggers, input/output bindings, and special directions, with each point numbered and color-coded.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866240/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Triggers-and-Bindings/binding-directions-system-diagram.jpg)
+![The image explains binding directions in a system, detailing properties like triggers, input/output bindings, and special directions, with each point numbered and color-coded.](https://kodekloud.com/kk-media/image/upload/v1752866240/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Triggers-and-Bindings/binding-directions-system-diagram.jpg)
 
 ***
 
@@ -199,7 +199,7 @@ If successful, the function will respond indicating the data has been written to
 
 ***
 
-![The image shows the Microsoft Azure portal dashboard, displaying a list of recent resources with their types and last viewed times. A cursor is hovering over a resource named "webtotable," which is a Function App.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866243/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Triggers-and-Bindings/azure-portal-dashboard-recent-resources.jpg)
+![The image shows the Microsoft Azure portal dashboard, displaying a list of recent resources with their types and last viewed times. A cursor is hovering over a resource named "webtotable," which is a Function App.](https://kodekloud.com/kk-media/image/upload/v1752866243/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Triggers-and-Bindings/azure-portal-dashboard-recent-resources.jpg)
 
 ***
 
@@ -218,7 +218,7 @@ Once created, click **Go to Resource** to manage your functions. You can develop
 
 ***
 
-![The image shows a networking configuration screen for Azure Function Apps, with options to enable public access and network injection. A warning indicates that network injection is only available in certain service plans.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866245/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Triggers-and-Bindings/azure-function-apps-networking-config.jpg)
+![The image shows a networking configuration screen for Azure Function Apps, with options to enable public access and network injection. A warning indicates that network injection is only available in certain service plans.](https://kodekloud.com/kk-media/image/upload/v1752866245/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Triggers-and-Bindings/azure-function-apps-networking-config.jpg)
 
 ***
 
@@ -240,7 +240,7 @@ This scaffolds a new function where you can replace the default code with your i
 
 ***
 
-![The image shows a Microsoft Azure portal screen for creating a Function App, displaying details like subscription ID, resource group, runtime stack, hosting plan, and monitoring settings. The "Validating" status is visible at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866246/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Triggers-and-Bindings/azure-portal-function-app-creation.jpg)
+![The image shows a Microsoft Azure portal screen for creating a Function App, displaying details like subscription ID, resource group, runtime stack, hosting plan, and monitoring settings. The "Validating" status is visible at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752866246/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Triggers-and-Bindings/azure-portal-function-app-creation.jpg)
 
 ***
 
@@ -281,7 +281,7 @@ If everything is configured correctly, the function will process the request, wr
 
 ***
 
-![The image shows the Microsoft Azure portal with the "Environment variables" section open for a Function App. It displays a list of application settings and an "Add/Edit application setting" panel on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866248/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Triggers-and-Bindings/azure-portal-function-app-environment-variables.jpg)
+![The image shows the Microsoft Azure portal with the "Environment variables" section open for a Function App. It displays a list of application settings and an "Add/Edit application setting" panel on the right.](https://kodekloud.com/kk-media/image/upload/v1752866248/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Triggers-and-Bindings/azure-portal-function-app-environment-variables.jpg)
 
 ***
 

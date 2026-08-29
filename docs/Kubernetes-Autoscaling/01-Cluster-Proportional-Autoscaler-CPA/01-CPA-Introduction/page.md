@@ -147,9 +147,7 @@ Example calculation:
 * For smoother autoscaling reacting to cluster capacity, use linear mode and tune `coresPerReplica` and `nodesPerReplica`.
 * Consider `includeUnschedulableNodes` only if your cluster topology requires counting nodes that are cordoned/unschedulable.
 
-<Callout icon="lightbulb">
-  When configuring CPA, decide whether your service benefits from predictable step-changes (ladder) or proportional scaling (linear). For critical infrastructure (DNS, network controllers) prefer conservative settings and min replicas to avoid single points of failure.
-</Callout>
+> **lightbulb** When configuring CPA, decide whether your service benefits from predictable step-changes (ladder) or proportional scaling (linear). For critical infrastructure (DNS, network controllers) prefer conservative settings and min replicas to avoid single points of failure.
 
 ## Summary
 
@@ -164,6 +162,4 @@ Example calculation:
 * [Kubernetes API Overview](https://kubernetes.io/docs/reference/using-api/api-overview/)
 * For CPA operator specifics, consult your distribution/operator documentation and ConfigMap examples for `ladder` and `linear`.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/ad35ef0b-c572-4f9e-82e4-0865c98fd502/lesson/fffc1694-28ec-4983-a9fe-b573f278a628" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/ad35ef0b-c572-4f9e-82e4-0865c98fd502/lesson/fffc1694-28ec-4983-a9fe-b573f278a628)

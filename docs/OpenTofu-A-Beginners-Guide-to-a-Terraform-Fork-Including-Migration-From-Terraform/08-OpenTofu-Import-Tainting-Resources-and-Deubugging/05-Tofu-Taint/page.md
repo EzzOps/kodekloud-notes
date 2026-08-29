@@ -36,9 +36,7 @@ $ tofu apply
 
 the creation fails and OpenTofu marks the resource as **tainted**.
 
-<Callout icon="lightbulb">
-  A tainted resource will be destroyed and recreated on the next `tofu apply`. This behavior mirrors `terraform taint` in Terraform CLI.
-</Callout>
+> **lightbulb** A tainted resource will be destroyed and recreated on the next `tofu apply`. This behavior mirrors `terraform taint` in Terraform CLI.
 
 ## 1. Detecting a Tainted Resource
 

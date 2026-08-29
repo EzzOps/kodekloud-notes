@@ -74,11 +74,9 @@ How the change takes effect
 
 The repo-server process reads this value as the environment variable ARGOCD\_RECONCILIATION\_TIMEOUT. Updating the ConfigMap does not automatically update the environment of running pods — you must restart the repo-server deployment.
 
-<Callout icon="lightbulb">
-  After patching `argocd-cm` you need to restart the repo server so it picks up
+> **lightbulb** After patching `argocd-cm` you need to restart the repo server so it picks up
   the new `timeout.reconciliation` value: kubectl -n argocd rollout restart
   deployment argocd-repo-server
-</Callout>
 
 Restart repo-server and watch pods
 
@@ -158,9 +156,7 @@ Links and references
 * [Argo CD — Application Concepts](https://argo-cd.readthedocs.io/en/stable/user-guide/argo-cd-overview/)
 * Kubernetes docs: [kubectl reference](https://kubernetes.io/docs/reference/kubectl/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/0b14ab3a-657d-42be-a8ab-b8d78d12a193" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/0b14ab3a-657d-42be-a8ab-b8d78d12a193)
 
 
 # Demo Sync Hook 1

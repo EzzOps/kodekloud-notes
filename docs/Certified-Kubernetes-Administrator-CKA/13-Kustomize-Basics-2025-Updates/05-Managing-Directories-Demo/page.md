@@ -8,7 +8,7 @@ In this lesson, we explore how to effectively manage directories containing Kube
 
 When you open the K8s directory, you'll see three distinct folders. Each folder includes configuration files (YAML manifests) tailored for a specific component. For instance, the database folder contains the deployment YAML files for MongoDB, while the API and cache directories contain configurations for services such as ClusterIP or LoadBalancer services along with associated ConfigMaps.
 
-![The image shows the Visual Studio Code interface with a project open, displaying a folder structure on the left and a welcome screen on the right. The project includes YAML files related to Kubernetes configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869806/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Managing-Directories-Demo/vscode-project-yaml-kubernetes.jpg)
+![The image shows the Visual Studio Code interface with a project open, displaying a folder structure on the left and a welcome screen on the right. The project includes YAML files related to Kubernetes configurations.](https://kodekloud.com/kk-media/image/upload/v1752869806/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Managing-Directories-Demo/vscode-project-yaml-kubernetes.jpg)
 
 Below is an excerpt showcasing a typical service configuration for the cache component:
 

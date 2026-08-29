@@ -37,9 +37,7 @@ References and further reading
 * [Kyverno Documentation - PolicyReport](https://kyverno.io/docs/writing-policies/reporting/)
 * [Kubernetes API Concepts](https://kubernetes.io/docs/concepts/overview/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/360718cb-5ab8-44a1-bcd2-beae95ede7c9/lesson/58401c97-2b36-4ada-af97-0f40d3ef1d78" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/360718cb-5ab8-44a1-bcd2-beae95ede7c9/lesson/58401c97-2b36-4ada-af97-0f40d3ef1d78)
 
 
 # Any and All Statements
@@ -144,9 +142,7 @@ Behavior:
   <img alt="The image compares the usage of &#x22;any&#x22; (OR) and &#x22;all&#x22; (AND) in decision-making, emphasizing &#x22;any&#x22; as a broad rule and &#x22;all&#x22; as specific and strict." />
 </Frame>
 
-<Callout icon="lightbulb">
-  A `match` block can contain direct filter blocks (for example, `resources`) or it can use `any`/`all` to combine multiple filter blocks. Use `any` when you want OR semantics and `all` when you want AND semantics.
-</Callout>
+> **lightbulb** A `match` block can contain direct filter blocks (for example, `resources`) or it can use `any`/`all` to combine multiple filter blocks. Use `any` when you want OR semantics and `all` when you want AND semantics.
 
 The `exclude` block, which creates exceptions, uses the same `any`/`all` logic — the concepts explained here apply to it as well.
 
@@ -157,6 +153,4 @@ Further reading and references:
 * Kyverno documentation: [https://kyverno.io/docs/](https://kyverno.io/docs/)
 * Kyverno match examples: [https://kyverno.io/docs/writing-policies/match-examples/](https://kyverno.io/docs/writing-policies/match-examples/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/8b35dfbd-8dd8-43c1-a34f-c6cc007a7493" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/8b35dfbd-8dd8-43c1-a34f-c6cc007a7493)

@@ -20,7 +20,7 @@ AWS Image Builder is a managed service that automates the creation of secure Ama
 
 Consider a startup that wants to automate the build, test, and deployment process for their Amazon EC2 instances using EC2 Image Builder. For more complex requirements, you might also explore [HashiCorp’s Packer](https://learn.kodekloud.com/user/courses/hashicorp-packer).
 
-![The image presents a scenario about a startup considering EC2 Image Builder to automate AMI processes, with four statements evaluating its benefits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864072/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-2/ec2-image-builder-ami-benefits.jpg)
+![The image presents a scenario about a startup considering EC2 Image Builder to automate AMI processes, with four statements evaluating its benefits.](https://kodekloud.com/kk-media/image/upload/v1752864072/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-2/ec2-image-builder-ami-benefits.jpg)
 
 **Evaluate the Benefits:**
 
@@ -44,7 +44,7 @@ The correct answer is statement 2 because EC2 Image Builder streamlines the enti
 
 An organization migrating on-premises applications to AWS needs to update their EC2 instances regularly with patches and software updates while maintaining compliance. They are considering using Image Builder as part of a mutable infrastructure setup with potential integration of AWS Systems Manager or CodePipeline.
 
-![The image describes a healthcare company's migration to AWS, highlighting the need for regular updates and compliance using EC2 Image Builder. It lists features of EC2 Image Builder that could assist in this process, such as automated pipelines and AMI replication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864073/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-2/healthcare-aws-migration-ec2-image-builder.jpg)
+![The image describes a healthcare company's migration to AWS, highlighting the need for regular updates and compliance using EC2 Image Builder. It lists features of EC2 Image Builder that could assist in this process, such as automated pipelines and AMI replication.](https://kodekloud.com/kk-media/image/upload/v1752864073/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-2/healthcare-aws-migration-ec2-image-builder.jpg)
 
 **Evaluate the Benefits:**
 
@@ -74,7 +74,7 @@ AWS Elastic Beanstalk serves as an orchestration service that simplifies the dep
 
 A common Elastic Beanstalk setup might include a cluster deployment with multiple standby instances (typically two, not one) and several web application servers organized within auto-scaling groups. This setup is further enhanced by additional services like CloudFront and S3 for content delivery and storage.
 
-![The image is a diagram of an AWS Elastic Beanstalk architecture, showing components like EC2 instances, an Elastic Load Balancer, RDS databases, CloudFront distribution, and an S3 bucket. It illustrates the setup across two availability zones with auto-scaling groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864074/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-2/aws-elastic-beanstalk-architecture-diagram.jpg)
+![The image is a diagram of an AWS Elastic Beanstalk architecture, showing components like EC2 instances, an Elastic Load Balancer, RDS databases, CloudFront distribution, and an S3 bucket. It illustrates the setup across two availability zones with auto-scaling groups.](https://kodekloud.com/kk-media/image/upload/v1752864074/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-2/aws-elastic-beanstalk-architecture-diagram.jpg)
 
 Since Elastic Beanstalk leverages other AWS services for security, key security settings must be adjusted within those services. Despite Elastic Beanstalk featuring some checkboxes for best practices, robust security configurations typically reside in the integrated services.
 
@@ -102,7 +102,7 @@ The best choice is statement 3, as managed updates help maintain a secure runtim
 
 Elastic Beanstalk logs events such as instance additions or transitions in environment health. These notifications are critical for staying on top of potential issues.
 
-![The image shows a screenshot of recent events in AWS Elastic Beanstalk, detailing environment health transitions and instance changes with timestamps and status types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864075/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-2/aws-elastic-beanstalk-events-screenshot.jpg)
+![The image shows a screenshot of recent events in AWS Elastic Beanstalk, detailing environment health transitions and instance changes with timestamps and status types.](https://kodekloud.com/kk-media/image/upload/v1752864075/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-2/aws-elastic-beanstalk-events-screenshot.jpg)
 
 ***
 
@@ -110,7 +110,7 @@ Elastic Beanstalk logs events such as instance additions or transitions in envir
 
 Enhanced health reporting in Elastic Beanstalk provides detailed metrics, logs, and real-time notifications about your application's health. It is particularly useful for rapidly growing e-commerce applications that require immediate visibility and issue resolution.
 
-![The image is a question about Enhanced Health Reporting in AWS Elastic Beanstalk, with four statements to evaluate which one is true. It discusses features like integration with Amazon SNS and detailed metrics in the AWS Management Console.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864076/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-2/enhanced-health-reporting-aws-eb.jpg)
+![The image is a question about Enhanced Health Reporting in AWS Elastic Beanstalk, with four statements to evaluate which one is true. It discusses features like integration with Amazon SNS and detailed metrics in the AWS Management Console.](https://kodekloud.com/kk-media/image/upload/v1752864076/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-2/enhanced-health-reporting-aws-eb.jpg)
 
 **Evaluate the Statements:**
 
@@ -134,7 +134,7 @@ Thus, statements 2 and 4 are correct.
 
 AWS X-Ray offers distributed tracing to monitor and troubleshoot applications by providing a detailed service map. In the service map, different performance colors help you quickly identify issues: green for acceptable performance, yellow for issues, and red for critical problems.
 
-![The image shows a service map from AWS X-Ray, displaying interconnected nodes representing different services with performance metrics. It is part of an Elastic Beanstalk environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864077/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-2/aws-xray-service-map-elastic-beanstalk.jpg)
+![The image shows a service map from AWS X-Ray, displaying interconnected nodes representing different services with performance metrics. It is part of an Elastic Beanstalk environment.](https://kodekloud.com/kk-media/image/upload/v1752864077/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-2/aws-xray-service-map-elastic-beanstalk.jpg)
 
 For startups deploying microservices-based applications, integrating AWS X-Ray is straightforward. To ensure a secure and effective integration, follow these best practices:
 

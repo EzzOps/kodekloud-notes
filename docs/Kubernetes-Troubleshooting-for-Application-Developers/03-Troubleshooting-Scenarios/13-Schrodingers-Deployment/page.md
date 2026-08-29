@@ -105,9 +105,7 @@ A successful update should display:
 MESSAGE=Hello Reloader
 ```
 
-<Callout icon="lightbulb">
-  This demonstration highlights how Reloader minimizes manual interventions, saving time and ensuring your application configuration changes are applied efficiently.
-</Callout>
+> **lightbulb** This demonstration highlights how Reloader minimizes manual interventions, saving time and ensuring your application configuration changes are applied efficiently.
 
 ## Conclusion
 
@@ -125,9 +123,7 @@ Happy deploying, and enjoy the benefits of automated rolling upgrades!
 
 For more information on Kubernetes best practices and troubleshooting, check out additional guides on [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/a3b0b3d3-a997-496b-9b61-e30dcbc1b224" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/a3b0b3d3-a997-496b-9b61-e30dcbc1b224)
 
 
 # Schrodingers Deployment
@@ -277,9 +273,7 @@ kubernetes      192.147.9.6:6443                                  56m
 
 Notice that the blue service includes endpoints for both blue and green pods, whereas the green service correctly targets only green pods.
 
-<Callout icon="lightbulb">
-  Use the command "k edit svc blue-service" to inspect and modify the blue service configuration in real time.
-</Callout>
+> **lightbulb** Use the command "k edit svc blue-service" to inspect and modify the blue service configuration in real time.
 
 ***
 
@@ -307,24 +301,16 @@ This troubleshooting exercise highlights the critical importance of using unique
 
 Understanding how label selectors, service endpoints, and load balancing interact is vital for maintaining reliable application deployments in Kubernetes.
 
-<Frame>
-  ![The image illustrates a Kubernetes deployment setup called "Schrödinger’s Deployment," featuring two services with version selectors, a load balancer, and multiple pods. It also indicates a 90% success rate for responses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880441/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Schrodingers-Deployment/schrodingers-deployment-kubernetes-setup.jpg)
-</Frame>
+![The image illustrates a Kubernetes deployment setup called "Schrödinger’s Deployment," featuring two services with version selectors, a load balancer, and multiple pods. It also indicates a 90% success rate for responses.](https://kodekloud.com/kk-media/image/upload/v1752880441/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Schrodingers-Deployment/schrodingers-deployment-kubernetes-setup.jpg)
 
 Even if the application appears to work correctly most of the time, such misconfigurations can lead to intermittent issues that are hard to catch during routine monitoring.
 
-<Frame>
-  ![The image is a graphic about "Troubleshooting Configuration," featuring an icon of a document with a gear and code symbol, and a note about label issues being overlooked during monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880442/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Schrodingers-Deployment/troubleshooting-configuration-graphic.jpg)
-</Frame>
+![The image is a graphic about "Troubleshooting Configuration," featuring an icon of a document with a gear and code symbol, and a note about label issues being overlooked during monitoring.](https://kodekloud.com/kk-media/image/upload/v1752880442/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Schrodingers-Deployment/troubleshooting-configuration-graphic.jpg)
 
 Having a robust troubleshooting process, including verifying service endpoints and label selectors, is essential for diagnosing and resolving configuration issues in Kubernetes.
 
-<Frame>
-  ![The image lists three key considerations: Endpoints Application, Service Load Balancing, and Label Selector Matching, each represented by a distinct icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880443/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Schrodingers-Deployment/endpoints-service-load-balancing-icons.jpg)
-</Frame>
+![The image lists three key considerations: Endpoints Application, Service Load Balancing, and Label Selector Matching, each represented by a distinct icon.](https://kodekloud.com/kk-media/image/upload/v1752880443/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Schrodingers-Deployment/endpoints-service-load-balancing-icons.jpg)
 
 Happy troubleshooting, and see you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/9d709e5f-c68b-4274-a889-393d82b46d62" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/9d709e5f-c68b-4274-a889-393d82b46d62)

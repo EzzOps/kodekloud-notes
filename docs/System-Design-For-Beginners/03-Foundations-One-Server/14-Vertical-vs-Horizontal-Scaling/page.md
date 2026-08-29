@@ -33,9 +33,7 @@ curl localhost:8080
 | Query load balancer      |                   `curl localhost:8080` | Response shows which backend served the request, e.g., `Hello from app1` |
 | Stop a backend           |                      `docker stop app1` | Takes `app1` offline; NGINX should then route requests to `app2`         |
 
-<Callout icon="warning">
-  Make sure container names (e.g., `app1`, `app2`) match the backend upstream configuration in your NGINX proxy, and that the load balancer is listening on `localhost:8080`. If NGINX isn’t configured correctly, requests will not be forwarded to your containers.
-</Callout>
+> **warning** Make sure container names (e.g., `app1`, `app2`) match the backend upstream configuration in your NGINX proxy, and that the load balancer is listening on `localhost:8080`. If NGINX isn’t configured correctly, requests will not be forwarded to your containers.
 
 ## Troubleshooting tips
 
@@ -52,11 +50,9 @@ curl localhost:8080
 
 This exercise shows how NGINX maintains availability by routing traffic to the remaining healthy backend when one container is taken down.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/cf5f79dd-4231-449a-ac1a-357d65d1c399" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/cf5f79dd-4231-449a-ac1a-357d65d1c399)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/8f843c54-252a-4195-a75a-acbbdc090246" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/8f843c54-252a-4195-a75a-acbbdc090246)
 
 
 # Vertical vs Horizontal Scaling
@@ -141,9 +137,7 @@ When to use horizontal scaling
 
 ## Practical rule of thumb
 
-<Callout icon="lightbulb">
-  Start with vertical scaling for simplicity and lower initial cost. Move to horizontal scaling when you hit vertical limits, need higher availability, or when traffic grows beyond what a single machine can handle.
-</Callout>
+> **lightbulb** Start with vertical scaling for simplicity and lower initial cost. Move to horizontal scaling when you hit vertical limits, need higher availability, or when traffic grows beyond what a single machine can handle.
 
 For further reading on building resilient, scalable systems, see:
 
@@ -153,6 +147,4 @@ For further reading on building resilient, scalable systems, see:
 
 Start simple, monitor key metrics (CPU, memory, latency, error rates), and evolve your architecture to match your traffic, availability, and cost requirements.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/1f08cb2d-dcd4-4e72-bfdc-2b3504bdb124" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/1f08cb2d-dcd4-4e72-bfdc-2b3504bdb124)

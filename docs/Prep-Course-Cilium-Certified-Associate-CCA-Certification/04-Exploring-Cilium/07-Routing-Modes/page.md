@@ -382,9 +382,7 @@ This lesson summarized the higher-level packet flow when using Cilium with eBPF:
   <img alt="A network diagram of two Kubernetes nodes showing frontend and backend pods, their pod IPs, host namespaces and Cilium components (Cilium_vxlan, Cilium_host) with eBPF and LXC interfaces. It also shows a backend service (10.96.71.79:80) and an example flow with source/destination IPs and ports across the 172.19.0.x host network." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Conceptual reminder: the ordering of eBPF hooks and specific packet transformations can vary with Cilium configuration (encapsulation vs. direct routing, kube-proxy replacement, etc.), kernel versions and user-space tooling. Use the Cilium debugging tools and bpftool to inspect live behaviour in your environment.
-</Callout>
+> **lightbulb** Conceptual reminder: the ordering of eBPF hooks and specific packet transformations can vary with Cilium configuration (encapsulation vs. direct routing, kube-proxy replacement, etc.), kernel versions and user-space tooling. Use the Cilium debugging tools and bpftool to inspect live behaviour in your environment.
 
 ## Links and references
 
@@ -392,9 +390,7 @@ This lesson summarized the higher-level packet flow when using Cilium with eBPF:
 * Kubernetes concepts: [https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * bpftool reference: [https://man7.org/linux/man-pages/man8/bpftool.8.html](https://man7.org/linux/man-pages/man8/bpftool.8.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/0807e400-fd1b-4f25-bba5-d0fdb0f4e3f2/lesson/362baa7a-8c42-4c4b-a321-fa99a9ce2f42" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/0807e400-fd1b-4f25-bba5-d0fdb0f4e3f2/lesson/362baa7a-8c42-4c4b-a321-fa99a9ce2f42)
 
 
 # Routing Modes
@@ -503,9 +499,7 @@ Mitigation strategies:
 | Portable across on-prem and cloud environments                    | Packet visibility and debugging are harder (tunnel hides inner packet) |
 | Lower dependency on provider features                             | More CPU/network processing for encapsulation/decapsulation            |
 
-<Callout icon="lightbulb">
-  Encapsulation is often simpler to deploy because the physical network only needs to reach node IPs. Ensure firewall rules and MTU settings are adjusted for the chosen tunnel protocol (VXLAN/Geneve).
-</Callout>
+> **lightbulb** Encapsulation is often simpler to deploy because the physical network only needs to reach node IPs. Ensure firewall rules and MTU settings are adjusted for the chosen tunnel protocol (VXLAN/Geneve).
 
 ***
 

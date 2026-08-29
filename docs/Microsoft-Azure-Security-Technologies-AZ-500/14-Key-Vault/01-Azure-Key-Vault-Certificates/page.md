@@ -20,9 +20,7 @@ The workflow is as follows:
 2. Azure securely stores and manages the certificate.
 3. When needed, the application makes a secure call via the Key Vault REST API to retrieve the certificate data.
 
-<Callout icon="lightbulb">
-  This process ensures that certificates remain protected and are never directly exposed to the application, reducing potential vulnerabilities.
-</Callout>
+> **lightbulb** This process ensures that certificates remain protected and are never directly exposed to the application, reducing potential vulnerabilities.
 
 ***
 
@@ -54,9 +52,7 @@ Azure Key Vault Certificates offer several critical features:
 * **Automated Renewal and Deployment:**\
   Enable automatic certificate renewal and deployment to maintain security without manual intervention.
 
-<Frame>
-  ![The image illustrates the features and components of Azure Key Vault for managing certificates, highlighting secure storage, centralized management, and integration with Azure services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881984/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Key-Vault-Certificates/azure-key-vault-features-diagram.jpg)
-</Frame>
+![The image illustrates the features and components of Azure Key Vault for managing certificates, highlighting secure storage, centralized management, and integration with Azure services.](https://kodekloud.com/kk-media/image/upload/v1752881984/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Key-Vault-Certificates/azure-key-vault-features-diagram.jpg)
 
 ***
 
@@ -76,13 +72,9 @@ Azure Key Vault supports various key types with different security levels:
 * **EC HSM:**\
   HSM-protected elliptic curve key available in the premium SKU, offering level two security.
 
-<Callout icon="triangle-alert">
-  Certificate support is not available in managed HSM and is exclusive to Azure Key Vault.
-</Callout>
+> **triangle-alert** Certificate support is not available in managed HSM and is exclusive to Azure Key Vault.
 
-<Frame>
-  ![The image is a table describing different key types in Azure Key Vault, including RSA and EC keys, with details about their protection methods and security levels.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881984/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Key-Vault-Certificates/azure-key-vault-key-types-table.jpg)
-</Frame>
+![The image is a table describing different key types in Azure Key Vault, including RSA and EC keys, with details about their protection methods and security levels.](https://kodekloud.com/kk-media/image/upload/v1752881984/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-Key-Vault-Certificates/azure-key-vault-key-types-table.jpg)
 
 ***
 
@@ -94,6 +86,4 @@ For additional details and advanced configurations, refer to the official [Azure
 
 Feel free to continue exploring how Azure Key Vault can enhance the security and management of your certificates.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/e6ef26f3-b79d-482a-8f38-130223404051/lesson/a70359df-0ce1-4e27-86a9-77774c6da678" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/e6ef26f3-b79d-482a-8f38-130223404051/lesson/a70359df-0ce1-4e27-86a9-77774c6da678)

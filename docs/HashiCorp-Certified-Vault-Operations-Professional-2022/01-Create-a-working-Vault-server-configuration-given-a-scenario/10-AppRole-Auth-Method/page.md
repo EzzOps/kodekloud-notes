@@ -11,9 +11,7 @@ HashiCorp Vault’s AppRole auth method enables machines and automated pipelines
 
 Combining Role ID + Secret ID grants a Vault token, similar to how users log in with username and password.
 
-<Callout icon="lightbulb">
-  AppRole is ideal for non-interactive workloads (CI/CD pipelines, containers, VMs) that require short-lived credentials.
-</Callout>
+> **lightbulb** AppRole is ideal for non-interactive workloads (CI/CD pipelines, containers, VMs) that require short-lived credentials.
 
 ## What Is AppRole?
 

@@ -98,9 +98,7 @@ When the configuration screen appears, select the option labeled "Create home di
 
 Below is an image of the PAM configuration interface (do not modify the image link or its description):
 
-<Frame>
-  ![The image shows a configuration screen for Pluggable Authentication Modules (PAM), allowing the user to select various authentication and session management options, such as Unix authentication and LDAP Authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881372/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Configure-the-System-to-Use-LDAP-User-and-Group-Accounts/pam-configuration-authentication-options.jpg)
-</Frame>
+![The image shows a configuration screen for Pluggable Authentication Modules (PAM), allowing the user to select various authentication and session management options, such as Unix authentication and LDAP Authentication.](https://kodekloud.com/kk-media/image/upload/v1752881372/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Configure-the-System-to-Use-LDAP-User-and-Group-Accounts/pam-configuration-authentication-options.jpg)
 
 Now, test the home directory creation by logging in as John using his LDAP credentials (password is "password"). Upon a successful login, PAM automatically creates the /home/john directory, if it is missing.
 
@@ -132,9 +130,7 @@ For more information, refer to the following resources:
 
 Happy learning, and see you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/5550800c-0757-4339-8828-7816fadee16c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/5550800c-0757-4339-8828-7816fadee16c)
 
 
 # Create Delete and Modify Local Groups and Group Memberships
@@ -205,9 +201,7 @@ $ sudo gpasswd -d john developers
 
 Sometimes you may need to change John’s primary login group. Use the `usermod` command with caution, ensuring that you do not confuse the option for modifying secondary groups. The `-g` (or `--gid`) option specifically changes the primary group.
 
-<Callout icon="triangle-alert">
-  Be sure that you correctly distinguish between the primary group and secondary groups. An incorrect adjustment may lead to unintended permission issues.
-</Callout>
+> **triangle-alert** Be sure that you correctly distinguish between the primary group and secondary groups. An incorrect adjustment may lead to unintended permission issues.
 
 Execute the following command to change John’s primary group to Developers:
 
@@ -252,9 +246,7 @@ $ sudo groupdel programmers
 groupdel: cannot remove the primary group of user 'john'
 ```
 
-<Callout icon="lightbulb">
-  Before deleting a group, make sure that no user has it set as their primary group. In cases where the group is primary for any user, change that user's primary group (for example, back to "john") before deletion.
-</Callout>
+> **lightbulb** Before deleting a group, make sure that no user has it set as their primary group. In cases where the group is primary for any user, change that user's primary group (for example, back to "john") before deletion.
 
 Deleting a secondary group will work seamlessly provided it is not set as a user's primary group.
 
@@ -262,8 +254,6 @@ Deleting a secondary group will work seamlessly provided it is not set as a user
 
 This concludes our guide on managing local groups and group memberships in Linux. By leveraging these commands, administrators can simplify the management of file permissions and user roles across the system. For more detailed information on Linux user and group management, consider reviewing the [Linux Documentation](https://www.kernel.org/doc/) or related [user management tutorials](https://www.linux.com/topic/desktop/how-manage-users-and-groups-linux/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/81bc6d77-7ed1-4db0-a080-391b6135e605" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/81bc6d77-7ed1-4db0-a080-391b6135e605)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/4cd8ffe1-601d-4a31-9655-f6b31b697bac" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/4cd8ffe1-601d-4a31-9655-f6b31b697bac)

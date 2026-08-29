@@ -12,9 +12,7 @@ The basic command structure is:
 kubectl auth can-i
 ```
 
-<Frame>
-  ![The image shows a terminal window with a command prompt labeled "controlplane" and a blinking cursor, ready for input.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880429/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-kubectl-auth-can-i/controlplane-terminal-command-prompt.jpg)
-</Frame>
+![The image shows a terminal window with a command prompt labeled "controlplane" and a blinking cursor, ready for input.](https://kodekloud.com/kk-media/image/upload/v1752880429/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-kubectl-auth-can-i/controlplane-terminal-command-prompt.jpg)
 
 This command is used to determine whether a given subject is permitted to perform a specific action on a cluster resource. The command follows this sequence:
 
@@ -30,9 +28,7 @@ kubectl auth can-i list pods -n monitoring
 
 If the output is "yes," it indicates that the current user has the required permission.
 
-<Callout icon="lightbulb">
-  By default, if no user or service account is explicitly mentioned, the command checks permissions for the current authenticated user.
-</Callout>
+> **lightbulb** By default, if no user or service account is explicitly mentioned, the command checks permissions for the current authenticated user.
 
 To confirm your current user, execute:
 
@@ -138,9 +134,7 @@ I0427 21:42:20.669841   18650 round_trippers.go:553] POST https://controlplane:6
 I0427 21:42:20.669870   18650 round_trippers.go:580] HTTP Statistics: GetConnection 0 ms ServerProcessing 1 ms Duration 1 ms
 ```
 
-<Callout icon="lightbulb">
-  Remember that Kubernetes RBAC is allow-only: any action is implicitly denied unless a role or role binding explicitly grants permission.
-</Callout>
+> **lightbulb** Remember that Kubernetes RBAC is allow-only: any action is implicitly denied unless a role or role binding explicitly grants permission.
 
 Using increased verbosity with "--v=10" can be a potent tool for debugging complex RBAC configurations and ensuring that your cluster's authorization rules are correctly enforced.
 
@@ -155,6 +149,4 @@ Using increased verbosity with "--v=10" can be a potent tool for debugging compl
 
 This guide should help you effectively troubleshoot and understand your Kubernetes RBAC permission settings using the "kubectl auth can-i" command. For further details, refer to the official [Kubernetes Documentation](https://kubernetes.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/69b73fee-3b03-4b93-8e60-4131f3f91e67" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/69b73fee-3b03-4b93-8e60-4131f3f91e67)

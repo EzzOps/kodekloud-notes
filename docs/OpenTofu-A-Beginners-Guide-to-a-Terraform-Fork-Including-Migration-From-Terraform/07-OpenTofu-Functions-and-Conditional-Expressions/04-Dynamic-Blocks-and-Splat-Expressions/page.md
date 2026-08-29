@@ -11,9 +11,7 @@ OpenTofu stores each workspace’s state under `terraform.tfstate.d/<workspace-n
 terraform.tfstate.d/india-payroll/terraform.tfstate
 ```
 
-<Callout icon="triangle-alert">
-  Do not manually edit files in the `terraform.tfstate.d/` directory—always use OpenTofu commands to manage state.
-</Callout>
+> **triangle-alert** Do not manually edit files in the `terraform.tfstate.d/` directory—always use OpenTofu commands to manage state.
 
 ***
 
@@ -147,11 +145,9 @@ Deploy the payroll app in each region:
 * [Terraform Workspaces](https://www.terraform.io/language/state/workspaces)
 * [AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/042e7b27-75d9-46fc-8f8c-7357d81923c1/lesson/0161ce1c-5d2a-477f-9d21-9f3056f9859a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/042e7b27-75d9-46fc-8f8c-7357d81923c1/lesson/0161ce1c-5d2a-477f-9d21-9f3056f9859a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/042e7b27-75d9-46fc-8f8c-7357d81923c1/lesson/9197d359-40fc-4167-993e-e951dff69ff9" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/042e7b27-75d9-46fc-8f8c-7357d81923c1/lesson/9197d359-40fc-4167-993e-e951dff69ff9)
 
 
 # Dynamic Blocks and Splat Expressions
@@ -205,9 +201,7 @@ Let’s set up:
 
 A VPC provides an isolated network (`10.0.0.0/16`), and the subnet uses `10.0.2.0/24`. The security group acts as a virtual firewall.
 
-<Frame>
-  ![The image is a diagram of an Amazon VPC setup, showing a private subnet with two servers (server1 and server2) and a security group allowing inbound traffic on ports 8080 and 22.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882867/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Dynamic-Blocks-and-Splat-Expressions/amazon-vpc-private-subnet-diagram.jpg)
-</Frame>
+![The image is a diagram of an Amazon VPC setup, showing a private subnet with two servers (server1 and server2) and a security group allowing inbound traffic on ports 8080 and 22.](https://kodekloud.com/kk-media/image/upload/v1752882867/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Dynamic-Blocks-and-Splat-Expressions/amazon-vpc-private-subnet-diagram.jpg)
 
 First, declare the VPC and subnet:
 
@@ -289,8 +283,7 @@ resource "aws_security_group" "backend_sg" {
 }
 ```
 
-<Callout icon="lightbulb">
-  You can rename the default iterator (`ingress`) to anything meaningful.\
+> **lightbulb** You can rename the default iterator (`ingress`) to anything meaningful.\
   Example:
 
   ```hcl theme={null}
@@ -305,7 +298,6 @@ resource "aws_security_group" "backend_sg" {
     }
   }
   ```
-</Callout>
 
 ## Splat Expressions
 
@@ -317,9 +309,7 @@ output "to_ports" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Be aware that splat expressions return a list. If your security group has no `ingress` rules, you’ll get an empty list rather than a single value.
-</Callout>
+> **triangle-alert** Be aware that splat expressions return a list. If your security group has no `ingress` rules, you’ll get an empty list rather than a single value.
 
 ## Compare Approaches
 
@@ -364,6 +354,4 @@ By leveraging dynamic blocks and splat expressions, your OpenTofu configurations
 * [Terraform Dynamic Blocks](https://www.terraform.io/language/expressions/dynamic-blocks)
 * [Terraform Splat Expressions](https://www.terraform.io/language/expressions/splat)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/042e7b27-75d9-46fc-8f8c-7357d81923c1/lesson/aeb39e04-a7c3-4edd-970b-f65401dac59e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/042e7b27-75d9-46fc-8f8c-7357d81923c1/lesson/aeb39e04-a7c3-4edd-970b-f65401dac59e)

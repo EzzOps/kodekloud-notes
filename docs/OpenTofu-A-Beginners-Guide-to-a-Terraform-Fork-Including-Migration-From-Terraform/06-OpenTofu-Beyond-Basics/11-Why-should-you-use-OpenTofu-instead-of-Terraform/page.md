@@ -32,9 +32,7 @@ A vibrant, user-driven community is the backbone of OpenTofu:
 * **Transparent Roadmap:** Track issues, RFCs, and pull requests in the public repo.
 * **Feedback Loops:** User suggestions directly influence prioritization and design.
 
-<Frame>
-  ![The image outlines the advantages of choosing OpenTofu over Terraform, highlighting adaptability, community engagement, active community participation, a transparent development process, and feedback integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882857/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Why-should-you-use-OpenTofu-instead-of-Terraform/opentofu-vs-terraform-advantages-outline.jpg)
-</Frame>
+![The image outlines the advantages of choosing OpenTofu over Terraform, highlighting adaptability, community engagement, active community participation, a transparent development process, and feedback integration.](https://kodekloud.com/kk-media/image/upload/v1752882857/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Why-should-you-use-OpenTofu-instead-of-Terraform/opentofu-vs-terraform-advantages-outline.jpg)
 
 ## 3. Open-Source Alignment
 
@@ -52,9 +50,7 @@ With a minimal license footprint, OpenTofu lowers legal barriers:
 * **Interoperability:** Seamlessly combine with other open-source tools.
 * **Clear Legal Terms:** Simple, well-documented MPL agreement.
 
-<Callout icon="lightbulb">
-  Review the [Mozilla Public License (MPL) 2.0](https://www.mozilla.org/en-US/MPL/2.0/) to ensure it meets your project's compliance requirements.
-</Callout>
+> **lightbulb** Review the [Mozilla Public License (MPL) 2.0](https://www.mozilla.org/en-US/MPL/2.0/) to ensure it meets your project's compliance requirements.
 
 ## 5. Collaboration
 
@@ -64,9 +60,7 @@ OpenTofu’s inclusive development model accelerates innovation:
 * **Knowledge Sharing:** Open discussions on best practices and architectural patterns.
 * **Continuous Iteration:** Rapid cycles drive high-quality enhancements.
 
-<Frame>
-  ![The image outlines the advantages of choosing OpenTofu over Terraform, highlighting aspects like adaptability, community engagement, open-source alignment, permissive licensing, and collaboration. It also emphasizes a collaborative development model, knowledge sharing, and accelerated innovation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882859/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Why-should-you-use-OpenTofu-instead-of-Terraform/opentofu-advantages-over-terraform.jpg)
-</Frame>
+![The image outlines the advantages of choosing OpenTofu over Terraform, highlighting aspects like adaptability, community engagement, open-source alignment, permissive licensing, and collaboration. It also emphasizes a collaborative development model, knowledge sharing, and accelerated innovation.](https://kodekloud.com/kk-media/image/upload/v1752882859/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Why-should-you-use-OpenTofu-instead-of-Terraform/opentofu-advantages-over-terraform.jpg)
 
 ## 6. Future-Proofing and Scalability
 
@@ -76,9 +70,7 @@ Building your IaC on OpenTofu ensures long-term success:
 * **Elastic Workloads:** Scale modules horizontally or vertically as needed.
 * **Strategic Advantage:** Community-driven tools are increasingly preferred across industries.
 
-<Frame>
-  ![The image is a comparison chart highlighting the advantages of choosing OpenTofu over Terraform, listing benefits such as adaptability, community engagement, and scalability. It includes colorful labels and a diagram with three main points: future-proofing infrastructure, scalability and flexibility, and strategic alignment with industry trends.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882860/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Why-should-you-use-OpenTofu-instead-of-Terraform/opentofu-vs-terraform-comparison-chart.jpg)
-</Frame>
+![The image is a comparison chart highlighting the advantages of choosing OpenTofu over Terraform, listing benefits such as adaptability, community engagement, and scalability. It includes colorful labels and a diagram with three main points: future-proofing infrastructure, scalability and flexibility, and strategic alignment with industry trends.](https://kodekloud.com/kk-media/image/upload/v1752882860/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Why-should-you-use-OpenTofu-instead-of-Terraform/opentofu-vs-terraform-comparison-chart.jpg)
 
 ## Links and References
 
@@ -87,6 +79,4 @@ Building your IaC on OpenTofu ensures long-term success:
 * [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
 * [Infrastructure as Code Best Practices](https://www.hashicorp.com/resources/what-is-infrastructure-as-code)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/8e40bf52-1c9b-49c9-b4c9-b67c2fab71ea" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/8e40bf52-1c9b-49c9-b4c9-b67c2fab71ea)

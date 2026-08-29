@@ -22,15 +22,15 @@ Azure Container Apps offers several advantages compared to Azure Container Insta
 * **Native Dapr Integration:**\
   Built-in support for the Distributed Application Runtime (Dapr) simplifies microservices development with APIs for Pub/Sub messaging, service invocation, and state management, helping you construct resilient and scalable applications.
 
-![The image describes three features of Azure Container Apps: dynamic scaling with KEDA, deployment to a single environment, and independent development and scaling of core functionalities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866609/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Container-Apps/azure-container-apps-features.jpg)
+![The image describes three features of Azure Container Apps: dynamic scaling with KEDA, deployment to a single environment, and independent development and scaling of core functionalities.](https://kodekloud.com/kk-media/image/upload/v1752866609/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Container-Apps/azure-container-apps-features.jpg)
 
-![The image describes four features of Azure Container Apps: dynamic scaling with KEDA, deployment to a single environment, independent development and scaling, and native Dapr integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866611/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Container-Apps/azure-container-apps-features-2.jpg)
+![The image describes four features of Azure Container Apps: dynamic scaling with KEDA, deployment to a single environment, independent development and scaling, and native Dapr integration.](https://kodekloud.com/kk-media/image/upload/v1752866611/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Container-Apps/azure-container-apps-features-2.jpg)
 
 ## Container Structure and Pods
 
 Azure Container Apps uses scalable architectures where containers are grouped into pods—logical units in Kubernetes that share resources and network namespaces. A common design pattern is the sidecar model, which adds auxiliary functionalities like logging, monitoring, and inter-service communication to support the main container service.
 
-![The image illustrates the structure of containers in Azure Container Apps, showing two container apps, each with two revisions and replicas containing containers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866612/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Container-Apps/azure-container-apps-structure-diagram.jpg)
+![The image illustrates the structure of containers in Azure Container Apps, showing two container apps, each with two revisions and replicas containing containers.](https://kodekloud.com/kk-media/image/upload/v1752866612/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Container-Apps/azure-container-apps-structure-diagram.jpg)
 
 ## Working with Container Images and the Azure Portal
 
@@ -180,7 +180,7 @@ This command sets the target port to 80 and exposes the application externally. 
 
 After running the command, verify the container app’s status in the Azure Portal, where you will see details such as the app name, size, and URL for accessing your application.
 
-![The image shows a Microsoft Azure portal interface for managing a container app named "airportcodeapiapp," displaying its properties and container details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866614/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Container-Apps/azure-portal-airportcodeapiapp-container-details.jpg)
+![The image shows a Microsoft Azure portal interface for managing a container app named "airportcodeapiapp," displaying its properties and container details.](https://kodekloud.com/kk-media/image/upload/v1752866614/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Container-Apps/azure-portal-airportcodeapiapp-container-details.jpg)
 
 > **lightbulb** If the target port does not match the port that your application is listening on (for example, if your project uses port 8080), update your application's configuration accordingly. Alternatively, create a second container app with the correct port mapping.
 

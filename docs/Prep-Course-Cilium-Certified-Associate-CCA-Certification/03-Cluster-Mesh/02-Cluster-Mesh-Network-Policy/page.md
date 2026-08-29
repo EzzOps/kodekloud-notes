@@ -134,9 +134,7 @@ Benefits:
 
 KVStoreMesh is enabled by default in modern Cilium Cluster Mesh deployments.
 
-<Callout icon="lightbulb">
-  KVStoreMesh is enabled by default. If you must disable it for compatibility reasons, pass --kvstore-mesh=false when enabling Cluster Mesh.
-</Callout>
+> **lightbulb** KVStoreMesh is enabled by default. If you must disable it for compatibility reasons, pass --kvstore-mesh=false when enabling Cluster Mesh.
 
 Examples:
 
@@ -171,9 +169,7 @@ Links and references:
 * [Kubernetes networking concepts](https://kubernetes.io/docs/concepts/cluster-administration/networking/)
 * [Cilium GitHub repository](https://github.com/cilium/cilium)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b8be180f-1719-47ca-b26e-7bf942694abf/lesson/59b9dc70-9b6f-408c-86ef-a96cc335a930" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b8be180f-1719-47ca-b26e-7bf942694abf/lesson/59b9dc70-9b6f-408c-86ef-a96cc335a930)
 
 
 # Cluster Mesh Network Policy

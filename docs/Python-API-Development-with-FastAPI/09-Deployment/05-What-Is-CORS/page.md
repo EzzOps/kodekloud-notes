@@ -52,9 +52,7 @@ When someone clones your repository, all dependencies can be installed via:
 pip install -r requirements.txt
 ```
 
-<Callout icon="lightbulb">
-  Make sure your `.gitignore` and `requirements.txt` are up-to-date before making your initial commit.
-</Callout>
+> **lightbulb** Make sure your `.gitignore` and `requirements.txt` are up-to-date before making your initial commit.
 
 ## Installing Git
 
@@ -62,9 +60,7 @@ If Git is not installed on your machine, download and install it by visiting the
 
 During the installation process, you may see a prompt requiring acknowledgement of the license agreement. Accept the license to proceed.
 
-<Frame>
-  ![The image shows a webpage for downloading Git, with a pop-up window displaying the GNU General Public License agreement.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883429/notes-assets/images/Python-API-Development-with-FastAPI-Setup-Git/git-download-page-gpl-popup.jpg)
-</Frame>
+![The image shows a webpage for downloading Git, with a pop-up window displaying the GNU General Public License agreement.](https://kodekloud.com/kk-media/image/upload/v1752883429/notes-assets/images/Python-API-Development-with-FastAPI-Setup-Git/git-download-page-gpl-popup.jpg)
 
 Once installed, open a terminal or command prompt and verify the installation with:
 
@@ -83,9 +79,7 @@ Next, set up a remote repository on GitHub:
 3. Fill in the repository name, description, and visibility (choose public for simplicity).
 4. Click "Create repository."
 
-<Frame>
-  ![The image shows a GitHub page for creating a new repository, with options to set the repository name, visibility, and initialization preferences. The page includes fields for adding a description, a README file, a .gitignore file, and a license.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883430/notes-assets/images/Python-API-Development-with-FastAPI-Setup-Git/github-new-repository-creation.jpg)
-</Frame>
+![The image shows a GitHub page for creating a new repository, with options to set the repository name, visibility, and initialization preferences. The page includes fields for adding a description, a README file, a .gitignore file, and a license.](https://kodekloud.com/kk-media/image/upload/v1752883430/notes-assets/images/Python-API-Development-with-FastAPI-Setup-Git/github-new-repository-creation.jpg)
 
 ## Configuring Your Local Repository
 
@@ -159,15 +153,11 @@ To https://github.com/Sanjeev-Thiyagarajan/example-fastapi.git
 Branch 'main' set up to track remote branch 'main' from 'origin'.
 ```
 
-<Callout icon="lightbulb">
-  At this point, your repository is successfully configured both locally and on GitHub. Your `.gitignore` is safeguarding unnecessary files, and the `requirements.txt` captures all dependencies, ensuring smooth transitions during deployment and collaboration.
-</Callout>
+> **lightbulb** At this point, your repository is successfully configured both locally and on GitHub. Your `.gitignore` is safeguarding unnecessary files, and the `requirements.txt` captures all dependencies, ensuring smooth transitions during deployment and collaboration.
 
 With Git now set up, you are ready to move on to deploying your application.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1af49f64-16e1-4559-841f-4b684c6a8f15/lesson/736d0706-15fe-45d1-a441-d0c848e963c9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1af49f64-16e1-4559-841f-4b684c6a8f15/lesson/736d0706-15fe-45d1-a441-d0c848e963c9)
 
 
 # What Is CORS
@@ -240,9 +230,7 @@ If you run this snippet while on a website like google.com, you might encounter 
 Access to fetch at 'http://localhost:8000/' from origin 'https://www.google.com' has been blocked by CORS policy.
 ```
 
-<Callout icon="triangle-alert">
-  This error indicates that your browser is preventing the request because your API only accepts requests from the same origin. If your API is hosted on google.com, a request from ebay.com will be blocked.
-</Callout>
+> **triangle-alert** This error indicates that your browser is preventing the request because your API only accepts requests from the same origin. If your API is hosted on google.com, a request from ebay.com will be blocked.
 
 When accessing your API directly on its domain (for example, by navigating to `http://localhost:8000` in your browser), the API responds successfully:
 
@@ -282,9 +270,7 @@ CORS (Cross-Origin Resource Sharing) enables web browsers to request resources f
 
 Imagine your API is hosted on google.com while your web application is on ebay.com. In this scenario, ebay.com would be prevented from communicating with the API on google.com unless CORS is properly configured. Conversely, when both the website and the API are hosted on the same domain, communication happens seamlessly.
 
-<Frame>
-  ![The image explains Cross-Origin Resource Sharing (CORS), highlighting that it allows requests from a web browser on one domain to a server on a different domain, with a diagram showing a blocked request from ebay.com to an API on google.com.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883431/notes-assets/images/Python-API-Development-with-FastAPI-What-Is-CORS/cors-cross-origin-resource-sharing-diagram.jpg)
-</Frame>
+![The image explains Cross-Origin Resource Sharing (CORS), highlighting that it allows requests from a web browser on one domain to a server on a different domain, with a diagram showing a blocked request from ebay.com to an API on google.com.](https://kodekloud.com/kk-media/image/upload/v1752883431/notes-assets/images/Python-API-Development-with-FastAPI-What-Is-CORS/cors-cross-origin-resource-sharing-diagram.jpg)
 
 When testing on `localhost:8000`—the same domain used by your web browser—the API logs a proper response in the developer tools console.
 
@@ -400,9 +386,7 @@ async def read_main():
     return {"message": "Hello World"}
 ```
 
-<Callout icon="lightbulb">
-  Although using a wildcard ("\*") makes your API accessible from all domains, it is advisable to restrict origins to specific domains when deploying to production to ensure enhanced security.
-</Callout>
+> **lightbulb** Although using a wildcard ("\*") makes your API accessible from all domains, it is advisable to restrict origins to specific domains when deploying to production to ensure enhanced security.
 
 Below is an example of a complete FastAPI setup using the wildcard configuration:
 
@@ -443,10 +427,6 @@ This configuration simplifies testing by permitting requests from any domain. Ho
 
 In summary, CORS is essential for controlling which domains are permitted to access your API. By configuring CORS middleware in FastAPI, you can balance accessibility and security for both development and production environments.
 
-<Frame>
-  ![The image shows a webpage from the FastAPI documentation discussing CORS (Cross-Origin Resource Sharing), including sections on origin, steps, and related topics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883433/notes-assets/images/Python-API-Development-with-FastAPI-What-Is-CORS/fastapi-cors-documentation-webpage.jpg)
-</Frame>
+![The image shows a webpage from the FastAPI documentation discussing CORS (Cross-Origin Resource Sharing), including sections on origin, steps, and related topics.](https://kodekloud.com/kk-media/image/upload/v1752883433/notes-assets/images/Python-API-Development-with-FastAPI-What-Is-CORS/fastapi-cors-documentation-webpage.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1af49f64-16e1-4559-841f-4b684c6a8f15/lesson/3635d588-8029-4552-b0e2-af9baa73d9e0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1af49f64-16e1-4559-841f-4b684c6a8f15/lesson/3635d588-8029-4552-b0e2-af9baa73d9e0)

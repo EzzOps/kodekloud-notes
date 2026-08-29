@@ -88,9 +88,7 @@ spec:
             periodSeconds: 15
 ```
 
-<Callout icon="lightbulb">
-  Base64-encoding Secrets only obfuscates values; it is not secure by itself. For production, use a proper secret-management solution such as `sealed-secrets`, external secret stores, or your cloud provider’s secret manager.
-</Callout>
+> **lightbulb** Base64-encoding Secrets only obfuscates values; it is not secure by itself. For production, use a proper secret-management solution such as `sealed-secrets`, external secret stores, or your cloud provider’s secret manager.
 
 Important fields explained
 
@@ -120,12 +118,8 @@ Additional resources
 * Kubernetes HPA docs: [https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
 * Sealed Secrets (example secret solution): [https://github.com/bitnami-labs/sealed-secrets](https://github.com/bitnami-labs/sealed-secrets)
 
-<Callout icon="warning">
-  Make sure `scaleTargetRef.name` matches your actual Deployment/scale target and that KEDA has permission to scale it. Misconfigured names or RBAC can prevent scaling from taking effect.
-</Callout>
+> **warning** Make sure `scaleTargetRef.name` matches your actual Deployment/scale target and that KEDA has permission to scale it. Misconfigured names or RBAC can prevent scaling from taking effect.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/98ed3d60-da87-4a6c-8707-4cafeaa438bc" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/98ed3d60-da87-4a6c-8707-4cafeaa438bc)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/0d8d4bf3-7106-4fbe-ad85-e38e8d7a8902" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/0d8d4bf3-7106-4fbe-ad85-e38e8d7a8902)

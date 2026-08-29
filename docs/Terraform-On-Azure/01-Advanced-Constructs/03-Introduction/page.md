@@ -38,9 +38,7 @@ security_rule {
 
 This eliminates copy-paste and keeps the configuration compact and easy to maintain.
 
-<Callout icon="warning">
-  Azure NSG `priority` values must be unique per security group and are typically in the range 100–4096. When generating priorities programmatically, ensure the computation yields unique values and stays within Azure's allowed range.
-</Callout>
+> **warning** Azure NSG `priority` values must be unique per security group and are typically in the range 100–4096. When generating priorities programmatically, ensure the computation yields unique values and stays within Azure's allowed range.
 
 ## Alternatives and notes
 
@@ -49,9 +47,7 @@ There are two common ways to define NSG rules in Terraform:
 * Use nested `security_rule` blocks (inside the `azurerm_network_security_group`) — good when you want grouped rules defined with the resource and simpler configuration grouping.
 * Use the separate `azurerm_network_security_rule` resource with a `for_each` — useful if you prefer each rule as its own top-level resource with independent lifecycle and state addressing.
 
-<Callout icon="lightbulb">
-  You can define NSG rules either as nested `security_rule` blocks (using `dynamic`) or as separate `azurerm_network_security_rule` resources with `for_each`. Choose the style that best fits your lifecycle, referencing needs, and state management preferences.
-</Callout>
+> **lightbulb** You can define NSG rules either as nested `security_rule` blocks (using `dynamic`) or as separate `azurerm_network_security_rule` resources with `for_each`. Choose the style that best fits your lifecycle, referencing needs, and state management preferences.
 
 Comparison (quick reference):
 
@@ -197,9 +193,7 @@ Further reading and references:
 * [Terraform documentation: dynamic blocks](https://www.terraform.io/docs/language/expressions/dynamic-blocks.html)
 * [Azure Provider — Network Security Group](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_group)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4fafc188-5a1a-4dbf-8fa0-50e3f00a270d/lesson/eceab11e-90ed-49a4-8453-0320aed507c0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4fafc188-5a1a-4dbf-8fa0-50e3f00a270d/lesson/eceab11e-90ed-49a4-8453-0320aed507c0)
 
 
 # Introduction
@@ -240,9 +234,7 @@ locals {
 }
 ```
 
-<Callout icon="lightbulb">
-  Use locals when a value is derived from inputs and reused in multiple places. Locals are evaluated per-module and do not create additional state or resources.
-</Callout>
+> **lightbulb** Use locals when a value is derived from inputs and reused in multiple places. Locals are evaluated per-module and do not create additional state or resources.
 
 2. Dynamic blocks\
    Dynamic blocks generate repeated nested blocks inside resources or modules, based on input collections. They prevent copy-pasting when the number of nested blocks varies.
@@ -269,9 +261,7 @@ resource "aws_security_group" "example" {
   <img alt="The image shows an introduction slide with two points about Terraform configurations: using locals for reusable values and applying dynamic blocks for nested resource configurations." />
 </Frame>
 
-<Callout icon="warning">
-  Avoid overusing dynamic blocks to hide complex logic. If dynamic generation makes the configuration hard to read, prefer an explicit approach or refactor into a smaller module with clear inputs.
-</Callout>
+> **warning** Avoid overusing dynamic blocks to hide complex logic. If dynamic generation makes the configuration hard to read, prefer an explicit approach or refactor into a smaller module with clear inputs.
 
 3. Built-in functions\
    Terraform’s built-in functions help you inspect and transform data safely. Common ones include:
@@ -319,6 +309,4 @@ Further reading and references
 
 In the following sections we’ll explore each concept with detailed examples and patterns that are proven in real-world Terraform projects.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4fafc188-5a1a-4dbf-8fa0-50e3f00a270d/lesson/aedc3cda-5080-4389-a97f-f4aa99ff8905" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4fafc188-5a1a-4dbf-8fa0-50e3f00a270d/lesson/aedc3cda-5080-4389-a97f-f4aa99ff8905)

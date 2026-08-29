@@ -30,7 +30,7 @@ The NLB offers several notable benefits:
 
 The diagram below illustrates a typical NLB setup:
 
-![The image illustrates a network load balancer setup, showing a user connecting via TCP/UDP/TLS to a load balancer, which then routes traffic to various targets like EC2 instances, ECS tasks, Lambda functions, and ALB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859089/notes-assets/images/AWS-Certified-Developer-Associate-Network-Load-Balancer/network-load-balancer-setup-diagram.jpg)
+![The image illustrates a network load balancer setup, showing a user connecting via TCP/UDP/TLS to a load balancer, which then routes traffic to various targets like EC2 instances, ECS tasks, Lambda functions, and ALB.](https://kodekloud.com/kk-media/image/upload/v1752859089/notes-assets/images/AWS-Certified-Developer-Associate-Network-Load-Balancer/network-load-balancer-setup-diagram.jpg)
 
 ## Routing Traffic to an Application Load Balancer
 
@@ -45,7 +45,7 @@ The workflow for routing traffic is as follows:
 
 The following diagram further clarifies this process:
 
-![The image is a diagram showing a network load balancer (NLB) and an application load balancer (ALB) within a VPC, directing traffic to HTTP(S) targets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859090/notes-assets/images/AWS-Certified-Developer-Associate-Network-Load-Balancer/network-load-balancer-diagram.jpg)
+![The image is a diagram showing a network load balancer (NLB) and an application load balancer (ALB) within a VPC, directing traffic to HTTP(S) targets.](https://kodekloud.com/kk-media/image/upload/v1752859090/notes-assets/images/AWS-Certified-Developer-Associate-Network-Load-Balancer/network-load-balancer-diagram.jpg)
 
 ## Summary
 

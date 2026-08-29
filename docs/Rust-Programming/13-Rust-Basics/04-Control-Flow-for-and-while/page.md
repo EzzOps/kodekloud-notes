@@ -183,14 +183,8 @@ Understanding and effectively using for and while loops in Rust provides you wit
 * Combining logical conditions within while loops for advanced looping behavior.
 * The use of `break` to terminate loops early and `continue` to skip to the next iteration.
 
-<Frame>
-  ![The image is a summary of programming loop concepts, including "for" loops, iterating over ranges, "while" loops, and combining conditions in "while" loops. It features a gradient background with numbered points.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883984/notes-assets/images/Rust-Programming-Control-Flow-for-and-while/programming-loops-summary-gradient.jpg)
-</Frame>
+![The image is a summary of programming loop concepts, including "for" loops, iterating over ranges, "while" loops, and combining conditions in "while" loops. It features a gradient background with numbered points.](https://kodekloud.com/kk-media/image/upload/v1752883984/notes-assets/images/Rust-Programming-Control-Flow-for-and-while/programming-loops-summary-gradient.jpg)
 
-<Callout icon="lightbulb">
-  Mastering these loop constructs in Rust not only enhances the clarity of your code but also ensures higher efficiency when processing collections.
-</Callout>
+> **lightbulb** Mastering these loop constructs in Rust not only enhances the clarity of your code but also ensures higher efficiency when processing collections.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/9d40d752-ca4a-4e91-b8d2-5a7e53682817" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/9d40d752-ca4a-4e91-b8d2-5a7e53682817)

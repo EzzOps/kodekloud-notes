@@ -10,9 +10,7 @@ In this guide, we'll configure Vault Agent Templating to allow legacy applicatio
 
 Legacy applications often cannot call the Vault HTTP API directly, so they lack a mechanism to fetch secrets using a Vault token. By delegating authentication and token management to Vault Agent, we can render secrets into files that such applications read like standard configuration.
 
-<Frame>
-  ![The image illustrates how legacy applications can use Vault for secrets management, showing a flow where a Vault Agent handles authentication and token retrieval.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878379/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Agent-Templating/legacy-apps-vault-secrets-management-flow.jpg)
-</Frame>
+![The image illustrates how legacy applications can use Vault for secrets management, showing a flow where a Vault Agent handles authentication and token retrieval.](https://kodekloud.com/kk-media/image/upload/v1752878379/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Agent-Templating/legacy-apps-vault-secrets-management-flow.jpg)
 
 ## Consul Template Overview
 
@@ -25,9 +23,7 @@ Consul Template is a standalone binary that:
 * Renders secrets to a file based on a provided template.
 * Requires a valid Vault token to operate.
 
-<Frame>
-  ![The image is a slide about Consul Template, describing it as a standalone application that renders data from Consul or Vault onto the target file system, and noting that it retrieves secrets from Vault.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878380/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Agent-Templating/consul-template-application-secrets-rendering.jpg)
-</Frame>
+![The image is a slide about Consul Template, describing it as a standalone application that renders data from Consul or Vault onto the target file system, and noting that it retrieves secrets from Vault.](https://kodekloud.com/kk-media/image/upload/v1752878380/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Agent-Templating/consul-template-application-secrets-rendering.jpg)
 
 ### Consul Template Workflow
 
@@ -37,9 +33,7 @@ Consul Template is a standalone binary that:
 | 2. Run Consul Template    | Fetch secrets and render to the destination file                                                   |
 | 3. Application reads file | Legacy app uses the rendered file without calling Vault                                            |
 
-<Frame>
-  ![The image illustrates a three-step workflow for using a Consul Template, detailing the creation of a templated file, execution of the template to retrieve data, and application runtime reading of the file with secrets from Vault.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878381/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Agent-Templating/consul-template-workflow-three-steps.jpg)
-</Frame>
+![The image illustrates a three-step workflow for using a Consul Template, detailing the creation of a templated file, execution of the template to retrieve data, and application runtime reading of the file with secrets from Vault.](https://kodekloud.com/kk-media/image/upload/v1752878381/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Agent-Templating/consul-template-workflow-three-steps.jpg)
 
 #### Example: Template Input (`web.tmpl`) and Rendered Output
 
@@ -73,9 +67,7 @@ production:
 
 Vault Agent integrates the Consul Template engine directly, removing the need for a separate binary. It uses Auto Auth to authenticate and then renders secrets via templates.
 
-<Frame>
-  ![The image illustrates the process of Vault Agent Templating, showing how an application server/container interacts with a Vault Agent to authenticate, retrieve a client token, read secrets, and render them to an output file. It includes labeled steps and icons representing the components involved.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878382/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Agent-Templating/vault-agent-templating-process-diagram.jpg)
-</Frame>
+![The image illustrates the process of Vault Agent Templating, showing how an application server/container interacts with a Vault Agent to authenticate, retrieve a client token, read secrets, and render them to an output file. It includes labeled steps and icons representing the components involved.](https://kodekloud.com/kk-media/image/upload/v1752878382/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Agent-Templating/vault-agent-templating-process-diagram.jpg)
 
 ### Templating Workflow
 
@@ -88,9 +80,7 @@ Vault Agent integrates the Consul Template engine directly, removing the need fo
 4. **Application Access**\
    The legacy application reads the rendered file as its configuration.
 
-<Callout icon="lightbulb">
-  Vault Agent Templating supports multiple `template` blocks. Each block can point to a different source and destination file.
-</Callout>
+> **lightbulb** Vault Agent Templating supports multiple `template` blocks. Each block can point to a different source and destination file.
 
 ### Configuration Example
 
@@ -126,9 +116,7 @@ template {
 | template\_config    | Global templating options (retry, intervals) | `exit_on_retry_failure = true`   |
 | template            | Template source and output destination       | `source = "/etc/vault/web.tmpl"` |
 
-<Callout icon="triangle-alert">
-  The `exit_on_retry_failure` flag will terminate Vault Agent if templating consistently fails. Use with caution in production environments.
-</Callout>
+> **triangle-alert** The `exit_on_retry_failure` flag will terminate Vault Agent if templating consistently fails. Use with caution in production environments.
 
 With this setup, unmodified legacy applications can seamlessly consume dynamic Vault-managed secrets via local configuration files.
 
@@ -140,6 +128,4 @@ With this setup, unmodified legacy applications can seamlessly consume dynamic V
 
 [ct-github]: https://github.com/hashicorp/consul-template
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/0e6639de-d61c-402b-a161-8f7fc39daf07/lesson/58a9e3f1-eaf1-4417-9ac9-102f82ea8460" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/0e6639de-d61c-402b-a161-8f7fc39daf07/lesson/58a9e3f1-eaf1-4417-9ac9-102f82ea8460)

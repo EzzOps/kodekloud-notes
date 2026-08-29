@@ -27,9 +27,7 @@ After mastering conditionals, our journey continues with:
 * Logical and bitwise operations
 * Essential data structures such as lists, tuples, and dictionaries
 
-<Callout icon="lightbulb">
-  Don't forget, creating functions is key to writing reusable and maintainable code. Throughout this course, we emphasize best practices in function design to improve the overall quality of your code.
-</Callout>
+> **lightbulb** Don't forget, creating functions is key to writing reusable and maintainable code. Throughout this course, we emphasize best practices in function design to improve the overall quality of your code.
 
 ## Hands-On Learning
 
@@ -43,6 +41,4 @@ By the end of this course, you will have a comprehensive understanding of Python
 
 If you're ready to embark on this exciting Python journey, let's dive in and get started!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/45777680-808e-4e3e-b107-7d44bc32921e/lesson/04f7cdc2-724c-4d63-909b-34c6eaa46fb6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/45777680-808e-4e3e-b107-7d44bc32921e/lesson/04f7cdc2-724c-4d63-909b-34c6eaa46fb6)

@@ -10,9 +10,7 @@ Learn how to use Markdown, a lightweight markup language ideal for writing docum
 
 Markdown is widely supported and easy to learn. It helps you create well-structured documentation with minimal effort.
 
-<Callout icon="lightbulb">
-  Markdown works seamlessly on GitHub, GitLab, Bitbucket, and most static site generators like Jekyll or Hugo.
-</Callout>
+> **lightbulb** Markdown works seamlessly on GitHub, GitLab, Bitbucket, and most static site generators like Jekyll or Hugo.
 
 ## Headings
 

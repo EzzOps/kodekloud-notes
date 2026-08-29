@@ -8,13 +8,9 @@ In this lesson, we explore how Jenkins parameters enhance your CI/CD pipelines b
 
 For example, you can use parameters to dictate the deployment environment (e.g., staging or production) or to decide whether tests should be executed. The diagram below illustrates a typical Jenkins pipeline with stages and parameters such as "ENVIRONMENT=Staging" and "RUN\_TESTS=True."
 
-<Frame>
-  ![The image depicts a pipeline diagram with four stages, labeled Stage 01 to Stage 04, and includes parameters such as "ENVIRONMENT=Staging" and "RUN\_TESTS=True." An icon of a person and a character holding a cup are also present.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879908/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Parameters/pipeline-diagram-stages-parameters.jpg)
-</Frame>
+![The image depicts a pipeline diagram with four stages, labeled Stage 01 to Stage 04, and includes parameters such as "ENVIRONMENT=Staging" and "RUN\_TESTS=True." An icon of a person and a character holding a cup are also present.](https://kodekloud.com/kk-media/image/upload/v1752879908/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Parameters/pipeline-diagram-stages-parameters.jpg)
 
-<Callout icon="lightbulb">
-  Jenkins parameters enable you to control pipeline behavior without altering your Jenkinsfile code, making your builds flexible and environment-specific.
-</Callout>
+> **lightbulb** Jenkins parameters enable you to control pipeline behavior without altering your Jenkinsfile code, making your builds flexible and environment-specific.
 
 ## Defining Parameters in a Jenkinsfile
 
@@ -68,9 +64,7 @@ When triggering a build manually from the Jenkins GUI via the "Build with Parame
 
 The interface diagram below shows where you can specify these parameters:
 
-<Frame>
-  ![The image shows a Jenkins interface for a pipeline named "flaskpipeline," where parameters for deployment can be specified, including the environment and an option to run tests. There are "Build" and "Cancel" buttons, and a build history is visible on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879910/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Parameters/jenkins-flaskpipeline-deployment-interface.jpg)
-</Frame>
+![The image shows a Jenkins interface for a pipeline named "flaskpipeline," where parameters for deployment can be specified, including the environment and an option to run tests. There are "Build" and "Cancel" buttons, and a build history is visible on the left.](https://kodekloud.com/kk-media/image/upload/v1752879910/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Parameters/jenkins-flaskpipeline-deployment-interface.jpg)
 
 ## Expanding Parameter Types
 
@@ -131,9 +125,7 @@ In this configuration:
 * The **Test** stage executes only if **RUN\_TESTS** is true.
 * The **Deploy** stage uses the **ENVIRONMENT** parameter to indicate the target deployment environment.
 
-<Callout icon="lightbulb">
-  When a build is manually triggered with parameters (for example, setting **ENVIRONMENT** to "production" and **RUN\_TESTS** to true), the pipeline adjusts its flow accordingly. This ensures that your deployment and test stages run based on dynamic input values.
-</Callout>
+> **lightbulb** When a build is manually triggered with parameters (for example, setting **ENVIRONMENT** to "production" and **RUN\_TESTS** to true), the pipeline adjusts its flow accordingly. This ensures that your deployment and test stages run based on dynamic input values.
 
 ## Sample Build Console Output
 
@@ -181,6 +173,4 @@ For further reading on Jenkins and CI/CD best practices, consider exploring thes
 
 By integrating parameters effectively, you can streamline your CI/CD workflows and ensure your deployments adapt to your specific requirements.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/ebca9823-12fc-48f5-9261-f839121ae647" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/ebca9823-12fc-48f5-9261-f839121ae647)

@@ -10,7 +10,7 @@ In this lesson, we explore the Serverless Application Model (SAM) and its pivota
 
 SAM is a toolkit designed to enhance the developer experience when building and running serverless applications on AWS. Similar to an architect creating a detailed blueprint for a house, SAM provides a comprehensive plan for your serverless infrastructure. This approach means you don't need to focus on every individual resource—instead, you work from a well-defined template that outlines how everything fits together.
 
-![The image illustrates a comparison between building a house and deploying a serverless application on AWS cloud, highlighting the roles of a builder and a developer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864987/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Serverless-Application-Model/house-vs-serverless-aws-comparison.jpg)
+![The image illustrates a comparison between building a house and deploying a serverless application on AWS cloud, highlighting the roles of a builder and a developer.](https://kodekloud.com/kk-media/image/upload/v1752864987/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Serverless-Application-Model/house-vs-serverless-aws-comparison.jpg)
 
 In this analogy, the finished house represents your serverless application. Constructing a house requires the coordinated effort of various components, and similarly, building a serverless application involves integrating multiple AWS services such as Lambda functions, databases, and API Gateways. SAM acts as the blueprint for your application, detailing how to deploy both the infrastructure and your application code seamlessly.
 
@@ -49,7 +49,7 @@ Additional useful commands include:
 
 SAM is an extension of AWS CloudFormation and follows a similar template-based deployment process. When you create a SAM template, you describe the entirety of your serverless application, including functions, APIs, and other resources. Once packaged and uploaded to an S3 bucket, AWS CloudFormation deploys the resources as defined in your template. This integration not only sets up your infrastructure but also generates a change set for managing updates efficiently.
 
-![The image illustrates a Serverless Application Model workflow, showing the flow from a SAM Template (YAML) to an application, then to an S3 Bucket, and finally to CloudFormation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864988/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Serverless-Application-Model/serverless-application-model-workflow.jpg)
+![The image illustrates a Serverless Application Model workflow, showing the flow from a SAM Template (YAML) to an application, then to an S3 Bucket, and finally to CloudFormation.](https://kodekloud.com/kk-media/image/upload/v1752864988/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Serverless-Application-Model/serverless-application-model-workflow.jpg)
 
 > **lightbulb** Leveraging SAM and its CLI can significantly streamline the creation and management of complex serverless architectures, resulting in an organized and efficient deployment process.
 

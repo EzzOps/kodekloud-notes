@@ -2,9 +2,7 @@
 openai.api_key = os.getenv("OPENAI_API_KEY")
 ```
 
-<Callout icon="triangle-alert">
-  Never expose your `OPENAI_API_KEY` in public repositories. Use environment variables or a secrets manager.
-</Callout>
+> **triangle-alert** Never expose your `OPENAI_API_KEY` in public repositories. Use environment variables or a secrets manager.
 
 ***
 
@@ -117,9 +115,7 @@ dashboard = pn.Column(
 dashboard
 ```
 
-<Callout icon="lightbulb">
-  Run this cell in your Jupyter notebook. Click **Send** after typing each message to interact with BurgerBot.
-</Callout>
+> **lightbulb** Run this cell in your Jupyter notebook. Click **Send** after typing each message to interact with BurgerBot.
 
 ***
 
@@ -150,11 +146,9 @@ In upcoming sections, you’ll learn how to:
 * [Panel Documentation](https://panel.holoviz.org)
 * [Jupyter Project](https://jupyter.org)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/36c56a19-11f6-4db1-8bd7-bd6a96c82268/lesson/fb5fb83d-53e8-48e9-9bee-fed2a26dcd44" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/36c56a19-11f6-4db1-8bd7-bd6a96c82268/lesson/fb5fb83d-53e8-48e9-9bee-fed2a26dcd44)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/36c56a19-11f6-4db1-8bd7-bd6a96c82268/lesson/098b2658-271b-4427-9b7d-e8e214f3cafc" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/36c56a19-11f6-4db1-8bd7-bd6a96c82268/lesson/098b2658-271b-4427-9b7d-e8e214f3cafc)
 
 
 # Section Intro
@@ -172,9 +166,7 @@ Welcome to this comprehensive guide on building an interactive chatbot powered b
 
 By the end of this lesson, you’ll have a solid understanding of how to integrate OpenAI’s chat completions into your applications and deliver a seamless conversational experience.
 
-<Callout icon="lightbulb">
-  Make sure you have an active OpenAI API key. You can sign up at [OpenAI](https://platform.openai.com/signup).
-</Callout>
+> **lightbulb** Make sure you have an active OpenAI API key. You can sign up at [OpenAI](https://platform.openai.com/signup).
 
 ## Word Completion vs. Chat Completion
 
@@ -195,6 +187,4 @@ By the end of this lesson, you’ll have a solid understanding of how to integra
 
 Let’s dive into the details!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/36c56a19-11f6-4db1-8bd7-bd6a96c82268/lesson/6be42d7c-95f5-40ec-aaae-d38ef0d950bf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/36c56a19-11f6-4db1-8bd7-bd6a96c82268/lesson/6be42d7c-95f5-40ec-aaae-d38ef0d950bf)

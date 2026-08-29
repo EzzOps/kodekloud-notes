@@ -47,9 +47,7 @@ Technical debt often accumulates when teams take shortcuts to meet deadlines or 
 | Validate observability coverage          | Prevent blind spots                      | Add dashboards, alerts, and tests for migrated components  |
 | Communicate deprecations                 | Reduce surprise to consumers             | Update API docs and notify stakeholders of timeline        |
 
-<Callout icon="lightbulb">
-  Track technical debt items as first-class work items in your backlog. Address high-risk debt early and schedule lower-risk items into regular maintenance windows.
-</Callout>
+> **lightbulb** Track technical debt items as first-class work items in your backlog. Address high-risk debt early and schedule lower-risk items into regular maintenance windows.
 
 <Frame>
   <img alt="The image is a flowchart outlining steps for starting a migration process, including installing core components, migrating, verifying, publishing, and deactivating, with a loop for repeating the process. It also mentions controlling technical debt, dashboards, and alerts." />
@@ -73,6 +71,4 @@ Technical debt often accumulates when teams take shortcuts to meet deadlines or 
 
 That's it for this lesson — apply the cycle repeatedly, keep observability tight, and treat technical debt as work to be planned and tracked.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/d7aaa833-22da-4f94-af5c-5d196f04ab31/lesson/f2c13f1e-18b1-478f-ad35-aa9f65813a00" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/d7aaa833-22da-4f94-af5c-5d196f04ab31/lesson/f2c13f1e-18b1-478f-ad35-aa9f65813a00)

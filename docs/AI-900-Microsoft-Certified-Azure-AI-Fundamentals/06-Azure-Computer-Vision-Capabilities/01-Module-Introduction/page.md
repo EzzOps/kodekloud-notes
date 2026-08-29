@@ -36,7 +36,7 @@ The Face Service is designed to detect and analyze human faces in images. In thi
 * Differentiates between multiple individuals
 * Verifies identities through advanced recognition techniques
 
-![The image is a module introduction slide listing four topics: AI Vision Service and Image Analysis, Image Analysis Using Vision Studio, Face Service to Detect Faces, and Detect Faces Using Face Service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856894/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Module-Introduction/ai-vision-service-image-analysis.jpg)
+![The image is a module introduction slide listing four topics: AI Vision Service and Image Analysis, Image Analysis Using Vision Studio, Face Service to Detect Faces, and Detect Faces Using Face Service.](https://kodekloud.com/kk-media/image/upload/v1752856894/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Module-Introduction/ai-vision-service-image-analysis.jpg)
 
 ## Advanced Face Detection with Face Service
 

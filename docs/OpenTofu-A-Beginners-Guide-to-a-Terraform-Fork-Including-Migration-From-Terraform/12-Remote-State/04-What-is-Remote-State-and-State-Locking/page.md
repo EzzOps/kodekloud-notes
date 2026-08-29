@@ -131,9 +131,7 @@ Successfully removed 1 resource instance(s).
 Releasing state lock. This may take a few moments...
 ```
 
-<Callout icon="triangle-alert">
-  `state rm` only removes the resource from the Terraform/OpenTofu state—it does **not** delete the actual resource in your cloud provider.
-</Callout>
+> **triangle-alert** `state rm` only removes the resource from the Terraform/OpenTofu state—it does **not** delete the actual resource in your cloud provider.
 
 After removing, delete the corresponding `resource` block in your configuration.
 
@@ -152,9 +150,7 @@ To force an overwrite (use with extreme caution):
 tofu state push --force ./randomstate/terraform.tfstate
 ```
 
-<Callout icon="triangle-alert">
-  Forcing a push can irreversibly corrupt your remote state. Always back up your existing state before using `--force`.
-</Callout>
+> **triangle-alert** Forcing a push can irreversibly corrupt your remote state. Always back up your existing state before using `--force`.
 
 ***
 
@@ -164,9 +160,7 @@ tofu state push --force ./randomstate/terraform.tfstate
 * [jq – JSON processor](https://stedolan.github.io/jq/)
 * [Terraform State Commands](https://developer.hashicorp.com/terraform/cli/commands/state)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/dd54768d-8454-44bd-bab2-99f8f7b5f145/lesson/9b09fce5-4f20-4cfa-91cd-56c55310f7c3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/dd54768d-8454-44bd-bab2-99f8f7b5f145/lesson/9b09fce5-4f20-4cfa-91cd-56c55310f7c3)
 
 
 # What is Remote State and State Locking
@@ -225,9 +219,7 @@ The corresponding snippet from `terraform.tfstate`:
 }
 ```
 
-<Callout icon="triangle-alert">
-  Local state files often contain sensitive data. Do **not** commit `terraform.tfstate` or any `.tfstate` files to version control.
-</Callout>
+> **triangle-alert** Local state files often contain sensitive data. Do **not** commit `terraform.tfstate` or any `.tfstate` files to version control.
 
 ### Built-in State Locking
 
@@ -264,9 +256,7 @@ Info:
 
 However, version control platforms like GitHub do *not* support file-level locking, leading to potential merge conflicts and corrupted state:
 
-<Frame>
-  ![The image illustrates a workflow involving GitHub, two users, and an S3 bucket, showing the management of main.tf and terraform.tfstate files. The terraform.tfstate file is not stored in GitHub but is managed between the users and the S3 bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882894/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-What-is-Remote-State-and-State-Locking/github-users-s3-bucket-workflow.jpg)
-</Frame>
+![The image illustrates a workflow involving GitHub, two users, and an S3 bucket, showing the management of main.tf and terraform.tfstate files. The terraform.tfstate file is not stored in GitHub but is managed between the users and the S3 bucket.](https://kodekloud.com/kk-media/image/upload/v1752882894/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-What-is-Remote-State-and-State-Locking/github-users-s3-bucket-workflow.jpg)
 
 ## Benefits of Remote State Backends
 
@@ -278,28 +268,20 @@ Remote backends centralize state storage, enable reliable locking, and secure da
 | Google Cloud Storage | GCS bucket                 | No            | CMEK             |
 | HashiCorp Consul     | Consul K/V store           | Yes           | TLS              |
 
-<Frame>
-  ![The image illustrates a state locking process for "OpenTofu" using a remote state backend, with options like AWS S3, HashiCorp Consul, and Google Cloud Storage, showing operations and infrastructure interactions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882896/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-What-is-Remote-State-and-State-Locking/opentofu-state-locking-remote-backend.jpg)
-</Frame>
+![The image illustrates a state locking process for "OpenTofu" using a remote state backend, with options like AWS S3, HashiCorp Consul, and Google Cloud Storage, showing operations and infrastructure interactions.](https://kodekloud.com/kk-media/image/upload/v1752882896/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-What-is-Remote-State-and-State-Locking/opentofu-state-locking-remote-backend.jpg)
 
 Once configured, OpenTofu automatically loads state from the remote backend and uploads updates after each apply:
 
-<Frame>
-  ![The image is a diagram illustrating "State Locking" with OpenTofu State as the remote state backend, showing integration with AWS S3, Google Cloud Storage, and HashiCorp Consul. It highlights features like automatic state file management and support for state locking across various backends.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882897/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-What-is-Remote-State-and-State-Locking/state-locking-opentofu-aws-gcs-consul.jpg)
-</Frame>
+![The image is a diagram illustrating "State Locking" with OpenTofu State as the remote state backend, showing integration with AWS S3, Google Cloud Storage, and HashiCorp Consul. It highlights features like automatic state file management and support for state locking across various backends.](https://kodekloud.com/kk-media/image/upload/v1752882897/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-What-is-Remote-State-and-State-Locking/state-locking-opentofu-aws-gcs-consul.jpg)
 
 ## Configuring AWS S3 as a Remote Backend
 
-<Callout icon="lightbulb">
-  Ensure you have:
+> **lightbulb** Ensure you have:
 
   * An existing S3 bucket for storing state
   * (Optional) A DynamoDB table for locking
-</Callout>
 
-<Frame>
-  ![The image illustrates a remote backend setup for managing state with "OpenTofu State" and "State Locking" components, showing a connection from a local environment to a remote state backend. It includes details about the object and value configurations for a bucket, key, region, and DynamoDB table.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882898/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-What-is-Remote-State-and-State-Locking/remote-backend-opentofu-state-setup.jpg)
-</Frame>
+![The image illustrates a remote backend setup for managing state with "OpenTofu State" and "State Locking" components, showing a connection from a local environment to a remote state backend. It includes details about the object and value configurations for a bucket, key, region, and DynamoDB table.](https://kodekloud.com/kk-media/image/upload/v1752882898/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-What-is-Remote-State-and-State-Locking/remote-backend-opentofu-state-setup.jpg)
 
 1. In your project directory, you’ll see:
 
@@ -390,6 +372,4 @@ aws_s3_bucket.finance-202922
 
 Understanding and implementing remote state with state locking ensures a secure, collaborative, and reliable infrastructure lifecycle management workflow.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/dd54768d-8454-44bd-bab2-99f8f7b5f145/lesson/d056ee4f-e475-4ab7-ac1f-e2419bcbccfe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/dd54768d-8454-44bd-bab2-99f8f7b5f145/lesson/d056ee4f-e475-4ab7-ac1f-e2419bcbccfe)

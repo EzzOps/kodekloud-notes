@@ -19,9 +19,7 @@ What the Catalog answers for you:
 * What are the dependencies and relationships between components?
 * Which team or person to contact for changes or incidents?
 
-<Callout icon="lightbulb">
-  Backstage Catalog standardizes how software metadata is stored and surfaced. By centralizing ownership, lifecycle, and dependency data, it reduces cognitive load for engineers and speeds up discovery and incident response.
-</Callout>
+> **lightbulb** Backstage Catalog standardizes how software metadata is stored and surfaced. By centralizing ownership, lifecycle, and dependency data, it reduces cognitive load for engineers and speeds up discovery and incident response.
 
 Key capabilities at a glance:
 
@@ -47,6 +45,4 @@ Links and references:
 * [Backstage entity model](https://backstage.io/docs/features/software-catalog/descriptor-format)
 * [Backstage GitHub repository](https://github.com/backstage/backstage)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/7e02beee-4f42-4f03-b857-fbf9571444e5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/7e02beee-4f42-4f03-b857-fbf9571444e5)

@@ -23,17 +23,11 @@ S2I streamlines the container image build process by allowing you to focus on yo
 
 For more detailed information, refer to the [OpenShift Container Platform documentation](https://docs.openshift.com/container-platform/latest/), which provides extensive details on S2I scripts and configuration.
 
-<Frame>
-  ![The image shows a section of the Red Hat OpenShift documentation, specifically focusing on S2I (Source-to-Image) requirements, with a table listing scripts and their descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882615/notes-assets/images/OpenShift-4-S2I/openshift-s2i-requirements-table.jpg)
-</Frame>
+![The image shows a section of the Red Hat OpenShift documentation, specifically focusing on S2I (Source-to-Image) requirements, with a table listing scripts and their descriptions.](https://kodekloud.com/kk-media/image/upload/v1752882615/notes-assets/images/OpenShift-4-S2I/openshift-s2i-requirements-table.jpg)
 
-<Callout icon="lightbulb">
-  Leveraging S2I enables developers and DevOps engineers to integrate code changes seamlessly into production-ready container images, benefiting from automated processes, enhanced security, and optimized build times.
-</Callout>
+> **lightbulb** Leveraging S2I enables developers and DevOps engineers to integrate code changes seamlessly into production-ready container images, benefiting from automated processes, enhanced security, and optimized build times.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/3200131b-dec7-4422-9e05-68c751bc4213/lesson/dc1da82f-2958-45af-bb9f-a6a6782ecc13" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/3200131b-dec7-4422-9e05-68c751bc4213/lesson/dc1da82f-2958-45af-bb9f-a6a6782ecc13)
 
 
 # Demo Install Single Node using CRC
@@ -44,9 +38,7 @@ This article provides a step-by-step guide to installing CodeReady Containers fo
 
 After configuring your Red Hat account, navigate to [Red Hat OpenShift](https://console.redhat.com/openshift). You should see a page similar to the one below:
 
-<Frame>
-  ![The image shows the Red Hat Hybrid Cloud Console interface with a message indicating no OpenShift clusters are currently displayed, and options to create or register a cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882630/notes-assets/images/OpenShift-4-Demo-Install-Single-Node-using-CRC/red-hat-hybrid-cloud-console-no-clusters.jpg)
-</Frame>
+![The image shows the Red Hat Hybrid Cloud Console interface with a message indicating no OpenShift clusters are currently displayed, and options to create or register a cluster.](https://kodekloud.com/kk-media/image/upload/v1752882630/notes-assets/images/OpenShift-4-Demo-Install-Single-Node-using-CRC/red-hat-hybrid-cloud-console-no-clusters.jpg)
 
 In this lesson, we will install CodeReady Containers (CRC), a tool that functions similarly to Docker Desktop by running a local OpenShift cluster. Once launched from your taskbar, CRC lets you use OpenShift for local development—comparable to Docker Desktop or Minikube.
 
@@ -54,23 +46,17 @@ In this lesson, we will install CodeReady Containers (CRC), a tool that function
 
 Begin by clicking on **Create Cluster** and select **Local** as your deployment option:
 
-<Frame>
-  ![The image shows a Red Hat Hybrid Cloud Console interface for creating an OpenShift cluster, with options for cloud, datacenter, and local setups. It displays active subscriptions and managed services, with a focus on Red Hat OpenShift Dedicated Trial.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882631/notes-assets/images/OpenShift-4-Demo-Install-Single-Node-using-CRC/red-hat-hybrid-cloud-openshift-cluster.jpg)
-</Frame>
+![The image shows a Red Hat Hybrid Cloud Console interface for creating an OpenShift cluster, with options for cloud, datacenter, and local setups. It displays active subscriptions and managed services, with a focus on Red Hat OpenShift Dedicated Trial.](https://kodekloud.com/kk-media/image/upload/v1752882631/notes-assets/images/OpenShift-4-Demo-Install-Single-Node-using-CRC/red-hat-hybrid-cloud-openshift-cluster.jpg)
 
 You will now see the "Red Hat OpenShift Local" page with a download button. Depending on your operating system (Linux, macOS, or Windows), click the appropriate download button:
 
-<Frame>
-  ![The image shows a webpage from the Red Hat Hybrid Cloud Console, specifically the section for downloading and setting up Red Hat OpenShift Local. It includes options for selecting the operating system and downloading the necessary files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882632/notes-assets/images/OpenShift-4-Demo-Install-Single-Node-using-CRC/red-hat-openshift-local-setup.jpg)
-</Frame>
+![The image shows a webpage from the Red Hat Hybrid Cloud Console, specifically the section for downloading and setting up Red Hat OpenShift Local. It includes options for selecting the operating system and downloading the necessary files.](https://kodekloud.com/kk-media/image/upload/v1752882632/notes-assets/images/OpenShift-4-Demo-Install-Single-Node-using-CRC/red-hat-openshift-local-setup.jpg)
 
 ## Installing CRC on Windows
 
 For Windows users, click **Download OpenShift Local** and run the installer. Follow the installation prompts by clicking **Next** until you reach the **Install** button. After installation, you will be prompted to restart your computer:
 
-<Frame>
-  ![The image shows a computer screen with a Red Hat OpenShift setup process, including a file explorer window displaying a downloaded installer and a prompt to restart the system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882633/notes-assets/images/OpenShift-4-Demo-Install-Single-Node-using-CRC/red-hat-openshift-setup-process.jpg)
-</Frame>
+![The image shows a computer screen with a Red Hat OpenShift setup process, including a file explorer window displaying a downloaded installer and a prompt to restart the system.](https://kodekloud.com/kk-media/image/upload/v1752882633/notes-assets/images/OpenShift-4-Demo-Install-Single-Node-using-CRC/red-hat-openshift-setup-process.jpg)
 
 Click **Yes** to restart your system. After restarting, open PowerShell and maximize the window. You should see a prompt similar to the following:
 
@@ -120,9 +106,7 @@ INFO  Checking admin helper service is running
 Your system is correctly setup for using CRC. Use 'crc start' to start the instance
 ```
 
-<Callout icon="lightbulb">
-  Ensure that Hyper-V is enabled on your Windows machine before running the setup command.
-</Callout>
+> **lightbulb** Ensure that Hyper-V is enabled on your Windows machine before running the setup command.
 
 ## Starting the CRC Cluster
 
@@ -171,22 +155,16 @@ PS C:\Users\mleva>
 
 Copy the password provided for the "kubeadmin" account to log in as the administrator.
 
-<Frame>
-  ![The image shows a login page for the Red Hat OpenShift Container Platform, prompting for a username and password. The username field is filled with "kubeadmin."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882636/notes-assets/images/OpenShift-4-Demo-Install-Single-Node-using-CRC/openshift-login-page-kubeadmin.jpg)
-</Frame>
+![The image shows a login page for the Red Hat OpenShift Container Platform, prompting for a username and password. The username field is filled with "kubeadmin."](https://kodekloud.com/kk-media/image/upload/v1752882636/notes-assets/images/OpenShift-4-Demo-Install-Single-Node-using-CRC/openshift-login-page-kubeadmin.jpg)
 
 ## Verifying Your Installation
 
 After logging in, the OpenShift dashboard will be displayed, confirming your successful connection to the local OpenShift cluster.
 
-<Frame>
-  ![The image shows the dashboard of the Red Hat OpenShift Container Platform, displaying an overview of cluster details and getting started resources. It includes navigation options on the left and a warning banner at the top indicating the cluster is for development and testing purposes only.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882637/notes-assets/images/OpenShift-4-Demo-Install-Single-Node-using-CRC/openshift-dashboard-cluster-overview.jpg)
-</Frame>
+![The image shows the dashboard of the Red Hat OpenShift Container Platform, displaying an overview of cluster details and getting started resources. It includes navigation options on the left and a warning banner at the top indicating the cluster is for development and testing purposes only.](https://kodekloud.com/kk-media/image/upload/v1752882637/notes-assets/images/OpenShift-4-Demo-Install-Single-Node-using-CRC/openshift-dashboard-cluster-overview.jpg)
 
 This completes the setup of CRC on your local machine. You are now ready to develop and test locally with OpenShift.
 
 Happy Coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/7ba3dd10-68d9-414d-b26b-8e9109a4a3d3/lesson/0b597f99-f0b0-487d-bccc-a58648d9a35e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/7ba3dd10-68d9-414d-b26b-8e9109a4a3d3/lesson/0b597f99-f0b0-487d-bccc-a58648d9a35e)

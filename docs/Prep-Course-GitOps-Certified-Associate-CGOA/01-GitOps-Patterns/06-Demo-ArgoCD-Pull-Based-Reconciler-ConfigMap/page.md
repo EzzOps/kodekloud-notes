@@ -48,17 +48,13 @@ You can inspect webhook deliveries and responses in your Git provider’s UI to 
 
 Within Argo CD you can review the application sync history and events to confirm the webhook-triggered sync was initiated and completed. In this demo the reconciliation completed quickly and the Deployment scaled to the target replica count.
 
-<Callout icon="lightbulb">
-  To avoid unnecessary reconciliations (for example, when non-manifest files like `README.md` or `.gitignore` are committed), configure branch or path filters in your Git provider’s webhook settings or limit triggers to commits that change manifest files. This reduces noise and conserves reconciliation resources.
-</Callout>
+> **lightbulb** To avoid unnecessary reconciliations (for example, when non-manifest files like `README.md` or `.gitignore` are committed), configure branch or path filters in your Git provider’s webhook settings or limit triggers to commits that change manifest files. This reduces noise and conserves reconciliation resources.
 
 That completes the demonstration of using webhooks to enable event-driven reconciliation in Argo CD.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/58bf23dc-377b-49b0-b736-4b7eed7ee677" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/58bf23dc-377b-49b0-b736-4b7eed7ee677)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/b45b14a9-9560-4a64-83ad-773069aaad8f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/b45b14a9-9560-4a64-83ad-773069aaad8f)
 
 
 # Demo ArgoCD Pull Based Reconciler ConfigMap
@@ -119,9 +115,7 @@ data:
 
 Note: The exact customization keys and formats depend on your ArgoCD version and needs. The important setting for poll frequency is `timeout.reconciliation`.
 
-<Callout icon="lightbulb">
-  After you save the edited ConfigMap, you must restart the ArgoCD application controller (Deployment or StatefulSet) so the controller picks up the new `timeout.reconciliation` value.
-</Callout>
+> **lightbulb** After you save the edited ConfigMap, you must restart the ArgoCD application controller (Deployment or StatefulSet) so the controller picks up the new `timeout.reconciliation` value.
 
 ## 2. Restart the application controller
 

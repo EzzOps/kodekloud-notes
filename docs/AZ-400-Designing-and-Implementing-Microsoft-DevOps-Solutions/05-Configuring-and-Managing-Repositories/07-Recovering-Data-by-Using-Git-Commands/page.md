@@ -19,7 +19,7 @@ If you prefer a visual approach, Azure Repos provides a point-and-click interfac
 3. Search for the branch name (e.g., `dev`).
 4. Click **Restore** next to the deleted branch.
 
-![The image shows a screenshot of Azure Repos with a section for recovering deleted branches, highlighting a deleted "dev" branch. It includes a note about restoring branches by searching for their names.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867524/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Recovering-Data-From-Source-Control-Using-Azure-Repos/azure-repos-recover-deleted-branches.jpg)
+![The image shows a screenshot of Azure Repos with a section for recovering deleted branches, highlighting a deleted "dev" branch. It includes a note about restoring branches by searching for their names.](https://kodekloud.com/kk-media/image/upload/v1752867524/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Recovering-Data-From-Source-Control-Using-Azure-Repos/azure-repos-recover-deleted-branches.jpg)
 
 No matter which method you choose—Git CLI or Azure Repos UI—you can quickly recover commits, branches, and deleted data with confidence.
 

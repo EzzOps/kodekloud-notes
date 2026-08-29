@@ -15,9 +15,7 @@ We’re using three Amazon Linux EC2 instances in AWS, all tagged to enable disc
 
 These tags ensure Vault nodes in the **us-east-1** region locate each other and form a cluster.
 
-<Callout icon="lightbulb">
-  Make sure each EC2 instance has the `cluster=us-east-1` tag applied before starting Vault.
-</Callout>
+> **lightbulb** Make sure each EC2 instance has the `cluster=us-east-1` tag applied before starting Vault.
 
 ## Vault Configuration
 
@@ -52,9 +50,7 @@ log_level    = "INFO"
 * `retry_join` tells Vault to query AWS EC2 instances with the `cluster=us-east-1` tag.
 * `auto_join_scheme` defaults to `https`; we use `http` here since TLS is disabled.
 
-<Callout icon="triangle-alert">
-  Never disable TLS in production. This example uses `tls_disable = true` for simplicity in a lab environment.
-</Callout>
+> **triangle-alert** Never disable TLS in production. This example uses `tls_disable = true` for simplicity in a lab environment.
 
 ## IAM Role for Auto-Join
 
@@ -92,9 +88,7 @@ Attach an IAM role to each EC2 instance with permissions to describe instances a
 
 In the AWS console, confirm that each instance has this IAM role attached:
 
-<Frame>
-  ![The image shows an AWS EC2 management console displaying a list of running instances with details about one specific instance, including its security settings and network information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878296/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Build-an-HA-Cluster-Using-Auto-Join/aws-ec2-management-console-running-instances.jpg)
-</Frame>
+![The image shows an AWS EC2 management console displaying a list of running instances with details about one specific instance, including its security settings and network information.](https://kodekloud.com/kk-media/image/upload/v1752878296/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Build-an-HA-Cluster-Using-Auto-Join/aws-ec2-management-console-running-instances.jpg)
 
 ## Initializing the Cluster
 
@@ -158,8 +152,6 @@ For more details, see:
 * [Vault Auto-Join Documentation](https://www.vaultproject.io/docs/concepts/auto-join)
 * [AWS Provider Plugin](https://www.vaultproject.io/docs/configuration/storage/raft#retry_join)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/1f27281b-60c7-4e2a-91ac-d165d1609488" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/1f27281b-60c7-4e2a-91ac-d165d1609488)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/79275b1b-9cce-4291-b121-8362b6564868" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/79275b1b-9cce-4291-b121-8362b6564868)

@@ -29,9 +29,7 @@ fn main() {
 }
 ```
 
-<Callout icon="lightbulb">
-  Incorporate `println!` statements at strategic points in your code to verify that your logic and variable states are as expected.
-</Callout>
+> **lightbulb** Incorporate `println!` statements at strategic points in your code to verify that your logic and variable states are as expected.
 
 ### Common Use Cases for println!
 
@@ -39,9 +37,7 @@ fn main() {
 * **Tracing Execution Paths:** Log the sequence of executed code segments.
 * **Evaluating Conditional Branches:** Debug if-else blocks by indicating which branch is executed.
 
-<Frame>
-  ![The image lists three use cases of the println function: checking variable values, tracing execution flow, and debugging conditional logic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883869/notes-assets/images/Rust-Programming-Using-println-and-logging/println-use-cases-debugging.jpg)
-</Frame>
+![The image lists three use cases of the println function: checking variable values, tracing execution flow, and debugging conditional logic.](https://kodekloud.com/kk-media/image/upload/v1752883869/notes-assets/images/Rust-Programming-Using-println-and-logging/println-use-cases-debugging.jpg)
 
 ***
 
@@ -59,13 +55,9 @@ For more robust and scalable debugging, leveraging logging capabilities is essen
 
 Rust offers a powerful logging ecosystem with the [log crate](https://docs.rs/log) acting as a facade. When paired with logging backends like `env_logger` or `fern`, you can build a robust logging framework tailored to your application's needs.
 
-<Frame>
-  ![The image is an introduction slide titled "Logging in Rust" and highlights three features: control over output, categorized messages, and configurable output destinations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883869/notes-assets/images/Rust-Programming-Using-println-and-logging/logging-in-rust-introduction-slide.jpg)
-</Frame>
+![The image is an introduction slide titled "Logging in Rust" and highlights three features: control over output, categorized messages, and configurable output destinations.](https://kodekloud.com/kk-media/image/upload/v1752883869/notes-assets/images/Rust-Programming-Using-println-and-logging/logging-in-rust-introduction-slide.jpg)
 
-<Frame>
-  ![The image is a diagram titled "Setting Up Logging With log crate," showing two components: "Log Crate" and "Logging Backend," with the Rust logo in between.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883871/notes-assets/images/Rust-Programming-Using-println-and-logging/setting-up-logging-log-crate-diagram.jpg)
-</Frame>
+![The image is a diagram titled "Setting Up Logging With log crate," showing two components: "Log Crate" and "Logging Backend," with the Rust logo in between.](https://kodekloud.com/kk-media/image/upload/v1752883871/notes-assets/images/Rust-Programming-Using-println-and-logging/setting-up-logging-log-crate-diagram.jpg)
 
 ***
 

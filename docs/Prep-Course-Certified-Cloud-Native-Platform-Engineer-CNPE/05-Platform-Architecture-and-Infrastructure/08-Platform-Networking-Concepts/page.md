@@ -154,9 +154,7 @@ This model enables separation of responsibilities: infrastructure picks technolo
   <img alt="The image compares the Ingress and Gateway API in terms of features and structure, highlighting the Gateway API's role-oriented model with three key resources for better flexibility and role separation." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Gateway API supports advanced traffic features not available in Ingress: traffic splitting (canaries), request mirroring, header-based routing, and native TCP/UDP routing. Prefer Gateway API for new platform designs when supported by your controller.
-</Callout>
+> **lightbulb** Gateway API supports advanced traffic features not available in Ingress: traffic splitting (canaries), request mirroring, header-based routing, and native TCP/UDP routing. Prefer Gateway API for new platform designs when supported by your controller.
 
 <Frame>
   <img alt="The image is a diagram explaining the Gateway API as the future of ingress, highlighting its features and role-oriented model with three key resources: GatewayClass, Gateway, and HTTPRoute. It also lists features like traffic splitting for canary deployments, request mirroring, header-based routing, and native TCP/UDP routing." />
@@ -197,9 +195,7 @@ Key NetworkPolicy points:
   <img alt="The image explains pod-level firewalls through network policies that control pod-to-pod traffic, highlighting that they are namespace-scoped, additive, and require a compatible CNI plugin." />
 </Frame>
 
-<Callout icon="warning">
-  NetworkPolicy rules are only enforced if your CNI plugin implements them. Test policies in a non-production environment first — otherwise policies may have no effect and pods will remain fully open.
-</Callout>
+> **warning** NetworkPolicy rules are only enforced if your CNI plugin implements them. Test policies in a non-production environment first — otherwise policies may have no effect and pods will remain fully open.
 
 Service discovery with CoreDNS (DNS naming best practices)
 

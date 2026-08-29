@@ -17,7 +17,7 @@ Your website comprises the following files:
 
 Below is an image illustrating the AWS Console Home page alongside a Windows File Explorer window that displays the "static-demo" folder with HTML and CSS files.
 
-![The image shows an AWS Console Home page with a Windows File Explorer window open, displaying a folder named "static-demo" containing HTML and CSS files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859786/notes-assets/images/AWS-Certified-Developer-Associate-S3-Static-Website-Hosting-Demo/aws-console-windows-file-explorer.jpg)
+![The image shows an AWS Console Home page with a Windows File Explorer window open, displaying a folder named "static-demo" containing HTML and CSS files.](https://kodekloud.com/kk-media/image/upload/v1752859786/notes-assets/images/AWS-Certified-Developer-Associate-S3-Static-Website-Hosting-Demo/aws-console-windows-file-explorer.jpg)
 
 ***
 
@@ -89,15 +89,15 @@ Follow these steps to create an S3 bucket and upload your website files:
 
 1. Open the AWS S3 console and create a new bucket. Name it (for example) "static-demo" and keep the default settings.
 
-![The image shows the AWS S3 console interface for creating a new bucket, with fields for bucket name, region selection, and object ownership settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859788/notes-assets/images/AWS-Certified-Developer-Associate-S3-Static-Website-Hosting-Demo/aws-s3-console-create-bucket.jpg)
+![The image shows the AWS S3 console interface for creating a new bucket, with fields for bucket name, region selection, and object ownership settings.](https://kodekloud.com/kk-media/image/upload/v1752859788/notes-assets/images/AWS-Certified-Developer-Associate-S3-Static-Website-Hosting-Demo/aws-s3-console-create-bucket.jpg)
 
 2. After bucket creation, the AWS console displays a confirmation message.
 
-![The image shows an Amazon S3 console with a notification of a successfully created bucket named "kk-static-demo." The interface displays options for managing buckets and storage settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859789/notes-assets/images/AWS-Certified-Developer-Associate-S3-Static-Website-Hosting-Demo/amazon-s3-console-kk-static-demo.jpg)
+![The image shows an Amazon S3 console with a notification of a successfully created bucket named "kk-static-demo." The interface displays options for managing buckets and storage settings.](https://kodekloud.com/kk-media/image/upload/v1752859789/notes-assets/images/AWS-Certified-Developer-Associate-S3-Static-Website-Hosting-Demo/amazon-s3-console-kk-static-demo.jpg)
 
 3. Next, drag and drop all website files (HTML, CSS, images, etc.) into the newly created bucket. Depending on the number of images and files, the upload may take a short while.
 
-![The image shows an Amazon S3 console screen with a successful upload status for 13 files totaling 2.5 MB. The files listed include HTML and JPEG images, all marked as "Succeeded."](../../../../images/kodekloud.com/kk-media/image/upload/v1752859790/notes-assets/images/AWS-Certified-Developer-Associate-S3-Static-Website-Hosting-Demo/amazon-s3-upload-success-13-files.jpg)
+![The image shows an Amazon S3 console screen with a successful upload status for 13 files totaling 2.5 MB. The files listed include HTML and JPEG images, all marked as "Succeeded."](https://kodekloud.com/kk-media/image/upload/v1752859790/notes-assets/images/AWS-Certified-Developer-Associate-S3-Static-Website-Hosting-Demo/amazon-s3-upload-success-13-files.jpg)
 
 ***
 
@@ -113,11 +113,11 @@ To serve your website through S3, you must enable static website hosting:
 
 These settings ensure that the **index.html** file loads by default when the bucket URL is accessed and that the **404.html** error page is used for invalid URLs.
 
-![The image shows an Amazon S3 console interface for configuring static website hosting, with options to specify index and error documents.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859792/notes-assets/images/AWS-Certified-Developer-Associate-S3-Static-Website-Hosting-Demo/amazon-s3-static-website-hosting.jpg)
+![The image shows an Amazon S3 console interface for configuring static website hosting, with options to specify index and error documents.](https://kodekloud.com/kk-media/image/upload/v1752859792/notes-assets/images/AWS-Certified-Developer-Associate-S3-Static-Website-Hosting-Demo/amazon-s3-static-website-hosting.jpg)
 
 4. Save your configuration. The console will provide a URL that serves as your website's public endpoint.
 
-![The image shows an Amazon S3 console page with settings for transfer acceleration, object lock, requester pays, and static website hosting. Static website hosting is enabled, and a bucket website endpoint is provided.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859793/notes-assets/images/AWS-Certified-Developer-Associate-S3-Static-Website-Hosting-Demo/amazon-s3-console-settings-static-hosting.jpg)
+![The image shows an Amazon S3 console page with settings for transfer acceleration, object lock, requester pays, and static website hosting. Static website hosting is enabled, and a bucket website endpoint is provided.](https://kodekloud.com/kk-media/image/upload/v1752859793/notes-assets/images/AWS-Certified-Developer-Associate-S3-Static-Website-Hosting-Demo/amazon-s3-console-settings-static-hosting.jpg)
 
 Click this URL to view your website. Note that, initially, you might encounter an "Access Denied" error.
 
@@ -132,7 +132,7 @@ By default, S3 buckets are not publicly accessible. To adjust this:
 1. Go to the **Permissions** tab of your bucket.
 2. Disable the **Block all public access** setting.
 
-![The image shows an AWS S3 console screen with settings for blocking public access to a bucket. It indicates that public access is currently blocked for the bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859794/notes-assets/images/AWS-Certified-Developer-Associate-S3-Static-Website-Hosting-Demo/aws-s3-block-public-access-settings.jpg)
+![The image shows an AWS S3 console screen with settings for blocking public access to a bucket. It indicates that public access is currently blocked for the bucket.](https://kodekloud.com/kk-media/image/upload/v1752859794/notes-assets/images/AWS-Certified-Developer-Associate-S3-Static-Website-Hosting-Demo/aws-s3-block-public-access-settings.jpg)
 
 Save these settings. This change allows public access, but you must also apply a bucket policy to grant public read permissions.
 
@@ -165,7 +165,7 @@ This policy permits public users to retrieve objects (via `s3:GetObject`) withou
 
 Save the policy. The bucket will now be publicly accessible.
 
-![The image shows an Amazon S3 bucket permissions page, indicating that the bucket is publicly accessible with options to edit public access settings and view the bucket policy in JSON format.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859796/notes-assets/images/AWS-Certified-Developer-Associate-S3-Static-Website-Hosting-Demo/amazon-s3-bucket-permissions-public-access.jpg)
+![The image shows an Amazon S3 bucket permissions page, indicating that the bucket is publicly accessible with options to edit public access settings and view the bucket policy in JSON format.](https://kodekloud.com/kk-media/image/upload/v1752859796/notes-assets/images/AWS-Certified-Developer-Associate-S3-Static-Website-Hosting-Demo/amazon-s3-bucket-permissions-public-access.jpg)
 
 ***
 
@@ -177,7 +177,7 @@ Return to the **Properties** tab of your bucket and use the provided website URL
 • For specific files, append their path (e.g., `/images/food1.jpg` loads that image).\
 • If a non-existent file is requested, the custom **404.html** error page appears.
 
-![The image shows an Amazon S3 bucket interface with a list of objects, including HTML and CSS files, and a folder named "images."](../../../../images/kodekloud.com/kk-media/image/upload/v1752859797/notes-assets/images/AWS-Certified-Developer-Associate-S3-Static-Website-Hosting-Demo/amazon-s3-bucket-interface-files.jpg)
+![The image shows an Amazon S3 bucket interface with a list of objects, including HTML and CSS files, and a folder named "images."](https://kodekloud.com/kk-media/image/upload/v1752859797/notes-assets/images/AWS-Certified-Developer-Associate-S3-Static-Website-Hosting-Demo/amazon-s3-bucket-interface-files.jpg)
 
 > **lightbulb** Optimizing your S3-hosted static website for search engines involves ensuring that your HTML files include meta tags and relevant keywords, and that your website structure is easy to navigate.
 

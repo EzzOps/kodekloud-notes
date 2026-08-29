@@ -36,9 +36,7 @@ You should see a confirmation:
 sealedsecret.bitnami.com/database configured
 ```
 
-<Callout icon="lightbulb">
-  Make sure the `--controller-name` and `--controller-namespace` match your Sealed Secrets controller deployment.
-</Callout>
+> **lightbulb** Make sure the `--controller-name` and `--controller-namespace` match your Sealed Secrets controller deployment.
 
 ## 2. Verify the Decrypted Kubernetes Secret
 
@@ -93,9 +91,7 @@ kubectl get secret database -o jsonpath="{.data.DB_PASSWORD}" | base64 -d
 password123
 ```
 
-<Callout icon="lightbulb">
-  All data in a Kubernetes `Secret` is base64-encoded. Use `-o jsonpath` and `base64 -d` to decode sensitive values.
-</Callout>
+> **lightbulb** All data in a Kubernetes `Secret` is base64-encoded. Use `-o jsonpath` and `base64 -d` to decode sensitive values.
 
 ## 5. Monitor the Sealed Secrets Resource
 
@@ -135,6 +131,4 @@ Ensure `STATUS: True` and `SYNCED: True` to confirm the operator successfully de
 * [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
 * [kubeseal CLI Documentation](https://github.com/bitnami-labs/sealed-secrets#kubeseal)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/0f3ed562-f151-48f9-bb8c-8d3a4dbb4fc3/lesson/e26c51fa-62eb-49c3-a4f9-e05f53a34409" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/0f3ed562-f151-48f9-bb8c-8d3a4dbb4fc3/lesson/e26c51fa-62eb-49c3-a4f9-e05f53a34409)

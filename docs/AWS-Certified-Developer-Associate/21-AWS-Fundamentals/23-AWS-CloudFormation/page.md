@@ -8,19 +8,19 @@ In this article, we explore AWS CloudFormation and its revolutionary approach to
 
 Traditionally, infrastructures were set up using a combination of scripts and manual processes recorded in runbooks or stored in version control systems. This conventional method often resulted in inconsistencies, unreliable deployments, and non-repeatable processes—especially when scripts or runbooks were not kept up to date.
 
-![The image illustrates a traditional approach to managing AWS resources, showing a DevOps engineer and automated scripts interacting with various AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858121/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation/aws-resources-management-devops.jpg)
+![The image illustrates a traditional approach to managing AWS resources, showing a DevOps engineer and automated scripts interacting with various AWS services.](https://kodekloud.com/kk-media/image/upload/v1752858121/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation/aws-resources-management-devops.jpg)
 
 Infrastructure as Code (IaC) is a key DevOps practice that addresses these issues by provisioning and managing infrastructure using code instead of manual methods. Think of it as building a structure: just as architects and construction teams use blueprints and standardized tools to construct a building, DevOps engineers use code as blueprints to set up servers, databases, networks, and other infrastructure components. This code, which is version-controlled and reusable, is executed by IaC tools like Terraform or AWS CloudFormation to automatically create, configure, and interconnect resources.
 
 AWS CloudFormation is a powerful service that allows you to model, provision, and manage AWS resources efficiently. By using a CloudFormation template, you describe all the resources you need—such as EC2 instances, RDS databases, VPCs, subnets, and more—and let the service handle their provisioning and configuration.
 
-![The image illustrates a process flow for AWS CloudFormation, showing the creation of a CloudFormation template and its use to provision infrastructure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858122/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation/aws-cloudformation-process-flow.jpg)
+![The image illustrates a process flow for AWS CloudFormation, showing the creation of a CloudFormation template and its use to provision infrastructure.](https://kodekloud.com/kk-media/image/upload/v1752858122/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation/aws-cloudformation-process-flow.jpg)
 
 When you define resources in a CloudFormation template, you group them into a "stack." A stack is a logical unit of AWS resources that you can create, update, or delete as one entity. This grouping lets you organize resources by application, environment (development, staging, or production), or any other logical categorization. Once the stack is created, CloudFormation provisions all the resources it contains.
 
 As your infrastructure evolves, changes such as adding new resources or modifying existing ones may be necessary. To implement these changes, you simply update your CloudFormation template and submit the revised version to the service. AWS CloudFormation then generates a change set—a preview that outlines which resources will be added, removed, or modified—allowing you to review the impact of your proposed changes before they are applied.
 
-![The image is a flowchart illustrating the AWS CloudFormation process, showing steps like editing a template, updating a stack, and updating a change set.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858124/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation/aws-cloudformation-flowchart-steps.jpg)
+![The image is a flowchart illustrating the AWS CloudFormation process, showing steps like editing a template, updating a stack, and updating a change set.](https://kodekloud.com/kk-media/image/upload/v1752858124/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation/aws-cloudformation-flowchart-steps.jpg)
 
 ## Key Features and Benefits
 
@@ -30,11 +30,11 @@ As your infrastructure evolves, changes such as adding new resources or modifyin
 4. **Resource Tracking and Management**: With CloudFormation, all resources are grouped into stacks, enabling simple tracking, updating, or removal as a unit.
 5. **Time and Cost Efficiency**: Automation through code reduces manual configuration and accelerates the provisioning process while minimizing human error.
 
-![The image lists five features: Infrastructure as Code (IaC), Consistent and Repeatable Deployments, Version Control, Resource Tracking, and Cost and Time Efficiency. Each feature is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858125/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation/infrastructure-as-code-features-list.jpg)
+![The image lists five features: Infrastructure as Code (IaC), Consistent and Repeatable Deployments, Version Control, Resource Tracking, and Cost and Time Efficiency. Each feature is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752858125/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation/infrastructure-as-code-features-list.jpg)
 
 > **lightbulb** Integrate CloudFormation with other AWS services such as CodeCommit, CodePipeline, and CodeBuild to set up CI/CD pipelines that automate deployments and updates for your infrastructure.
 
-![The image is a diagram illustrating an AWS CloudFormation workflow, showing the integration of AWS CodeCommit, AWS CodePipeline, AWS CodeBuild, and AWS CloudFormation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858126/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation/aws-cloudformation-workflow-diagram.jpg)
+![The image is a diagram illustrating an AWS CloudFormation workflow, showing the integration of AWS CodeCommit, AWS CodePipeline, AWS CodeBuild, and AWS CloudFormation.](https://kodekloud.com/kk-media/image/upload/v1752858126/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudFormation/aws-cloudformation-workflow-diagram.jpg)
 
 In summary, AWS CloudFormation simplifies and streamlines infrastructure management by converting manual processes into code-driven, repeatable, and scalable solutions. This transformation paves the way for efficient, reliable, and agile deployments in the cloud.
 

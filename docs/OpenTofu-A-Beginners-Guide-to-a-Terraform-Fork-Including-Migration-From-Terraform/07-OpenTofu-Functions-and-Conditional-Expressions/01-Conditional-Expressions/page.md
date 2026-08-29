@@ -46,9 +46,7 @@ true
 false
 ```
 
-<Callout icon="lightbulb">
-  The operators `==` and `!=` are **type-sensitive**. A number and a string holding the same digits are considered unequal.
-</Callout>
+> **lightbulb** The operators `==` and `!=` are **type-sensitive**. A number and a string holding the same digits are considered unequal.
 
 ## Comparison Operators
 
@@ -127,9 +125,7 @@ output "password" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Always enforce a minimum length for generated passwords to maintain security standards.
-</Callout>
+> **triangle-alert** Always enforce a minimum length for generated passwords to maintain security standards.
 
 Initialize, plan, and apply:
 
@@ -149,6 +145,4 @@ Even if you pass `length=5`, OpenTofu generates an 8-character password. Passing
 * [Random Provider: `random_password` Resource](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/password)
 * [Terraform Expressions](https://www.terraform.io/docs/language/expressions/index.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/042e7b27-75d9-46fc-8f8c-7357d81923c1/lesson/afe39695-bab7-4cbb-a6a0-72949fbc7e52" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/042e7b27-75d9-46fc-8f8c-7357d81923c1/lesson/afe39695-bab7-4cbb-a6a0-72949fbc7e52)

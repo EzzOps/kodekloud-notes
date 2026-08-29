@@ -22,9 +22,7 @@ print(result.text)
 | 3    | Translate audio using `whisper-1`    | `openai.Audio.translate("whisper-1", audio_file)` |
 | 4    | Print the translated English text    | `print(result.text)`                              |
 
-<Callout icon="triangle-alert">
-  Keep your API key secure. Do not hard-code it in public repositories.
-</Callout>
+> **triangle-alert** Keep your API key secure. Do not hard-code it in public repositories.
 
 ## Next Steps
 
@@ -36,11 +34,9 @@ Once you have the translated text, you can pass it to [GPT-4](https://platform.o
 * [OpenAI Python SDK Reference](https://github.com/openai/openai-python)
 * [GPT-4 Model Details](https://platform.openai.com/docs/models/gpt-4)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/574a8a5c-b7a8-4902-aa33-c26eff12ee0b/lesson/908c22bc-c534-40ba-b504-b5c293dd50f3" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/574a8a5c-b7a8-4902-aa33-c26eff12ee0b/lesson/908c22bc-c534-40ba-b504-b5c293dd50f3)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/574a8a5c-b7a8-4902-aa33-c26eff12ee0b/lesson/fe263cc3-81c8-413d-b065-815fecae7149" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/574a8a5c-b7a8-4902-aa33-c26eff12ee0b/lesson/fe263cc3-81c8-413d-b065-815fecae7149)
 
 
 # Overview of Whisper
@@ -53,13 +49,9 @@ OpenAI’s Whisper is a specialized foundation model designed for audio-to-text 
 
 ## Key Audio APIs
 
-<Callout icon="lightbulb">
-  Whisper supports transcription and translation for multiple source languages. However, its accuracy peaks when the output language is set to English.
-</Callout>
+> **lightbulb** Whisper supports transcription and translation for multiple source languages. However, its accuracy peaks when the output language is set to English.
 
-<Frame>
-  ![The image describes two key APIs: audio transcription, which transcribes audio files into English text, and audio translation, which translates audio files into English text.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881497/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Overview-of-Whisper/audio-transcription-translation-apis.jpg)
-</Frame>
+![The image describes two key APIs: audio transcription, which transcribes audio files into English text, and audio translation, which translates audio files into English text.](https://kodekloud.com/kk-media/image/upload/v1752881497/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Overview-of-Whisper/audio-transcription-translation-apis.jpg)
 
 | Endpoint             | Description                                                               |
 | -------------------- | ------------------------------------------------------------------------- |
@@ -68,13 +60,9 @@ OpenAI’s Whisper is a specialized foundation model designed for audio-to-text 
 
 ## Audio File Size Limit
 
-<Callout icon="triangle-alert">
-  Each audio file uploaded to Whisper must not exceed 25 MB. Exceeding this limit will result in an error response from the API.
-</Callout>
+> **triangle-alert** Each audio file uploaded to Whisper must not exceed 25 MB. Exceeding this limit will result in an error response from the API.
 
-<Frame>
-  ![The image shows a document icon with a sound wave and "25MB" on it, indicating that audio file sizes cannot exceed 25MB. It is titled "Two Key APIs."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881498/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Overview-of-Whisper/document-icon-sound-wave-25mb.jpg)
-</Frame>
+![The image shows a document icon with a sound wave and "25MB" on it, indicating that audio file sizes cannot exceed 25MB. It is titled "Two Key APIs."](https://kodekloud.com/kk-media/image/upload/v1752881498/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Overview-of-Whisper/document-icon-sound-wave-25mb.jpg)
 
 ## Deployment Options
 
@@ -97,6 +85,4 @@ Let’s dive into a hands-on demo of audio transcription and translation using t
 * [Whisper GitHub Repository](https://github.com/openai/whisper)
 * [OpenAI API Documentation](https://platform.openai.com/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/574a8a5c-b7a8-4902-aa33-c26eff12ee0b/lesson/aecc63f1-6f2a-4fa2-92c3-27be046237e5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/574a8a5c-b7a8-4902-aa33-c26eff12ee0b/lesson/aecc63f1-6f2a-4fa2-92c3-27be046237e5)

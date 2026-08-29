@@ -10,9 +10,7 @@ If two environments use the same backend and the same state file, Terraform will
 
 Terraform is context-blind. Use isolation to control ownership and blast radius.
 
-<Callout icon="lightbulb">
-  Terraform’s state file is the source of truth and therefore represents ownership. Proper isolation of state and execution context prevents accidental cross-environment changes.
-</Callout>
+> **lightbulb** Terraform’s state file is the source of truth and therefore represents ownership. Proper isolation of state and execution context prevents accidental cross-environment changes.
 
 ## Core strategies for environment separation
 
@@ -75,9 +73,7 @@ Terraform is not a backup system. Once Azure has destroyed a resource or data, T
   <img alt="The image explains the importance of understanding context in Terraform projects, highlighting risks like unexpected destroys, difficult rollbacks, and failed plans due to misaligned assumptions about Azure constructs." />
 </Frame>
 
-<Callout icon="warning">
-  Terraform will apply the actions it calculates based on state and configuration. If the context is wrong, those actions may be destructive and irreversible without backups.
-</Callout>
+> **warning** Terraform will apply the actions it calculates based on state and configuration. If the context is wrong, those actions may be destructive and irreversible without backups.
 
 ## Recommended patterns and examples
 
@@ -122,6 +118,4 @@ Following this conceptual grounding, the next step is to transition to practical
 * [Terraform backend configuration for Azure](https://www.terraform.io/language/settings/backends/azurerm)
 * [Azure RBAC documentation](https://learn.microsoft.com/azure/role-based-access-control/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/7fc76e5f-e1e7-4c53-8940-57761020744e/lesson/92193847-5b93-4c3f-abcb-11ca45bb93e1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/7fc76e5f-e1e7-4c53-8940-57761020744e/lesson/92193847-5b93-4c3f-abcb-11ca45bb93e1)

@@ -60,9 +60,7 @@ test_dataset = CustomImageDataset(
 test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False)
 ```
 
-<Callout icon="lightbulb">
-  Ensure that your CSV file and image directory path are correctly set to avoid file not found errors.
-</Callout>
+> **lightbulb** Ensure that your CSV file and image directory path are correctly set to avoid file not found errors.
 
 ***
 
@@ -234,9 +232,7 @@ final_accuracy = accuracy_metric.compute()
 print(f"Test Accuracy: {final_accuracy * 100}%")
 ```
 
-<Callout icon="lightbulb">
-  If you run multiple evaluations in succession, reset the metric using the `reset()` method before each new update to ensure accurate tracking.
-</Callout>
+> **lightbulb** If you run multiple evaluations in succession, reset the metric using the `reset()` method before each new update to ensure accurate tracking.
 
 ***
 
@@ -276,11 +272,9 @@ While the demonstration produced an accuracy of around 49%—likely due to limit
 
 Happy evaluating!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/89b22e08-20d4-4dfe-ac58-c224dde76741" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/89b22e08-20d4-4dfe-ac58-c224dde76741)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/6eeceb16-b6d3-4172-993c-6ce4c60c0f7f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/6eeceb16-b6d3-4172-993c-6ce4c60c0f7f)
 
 
 # Demo Saving and loading models

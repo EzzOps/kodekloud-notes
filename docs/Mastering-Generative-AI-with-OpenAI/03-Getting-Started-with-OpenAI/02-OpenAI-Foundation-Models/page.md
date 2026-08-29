@@ -18,9 +18,7 @@ openai api chat_completions.create \
   -g user "Hello, world!"
 ```
 
-<Callout icon="lightbulb">
-  The `openai` CLI supports commands for completions, embeddings, file uploads, and fine-tuning. Run `openai --help` to explore all options.
-</Callout>
+> **lightbulb** The `openai` CLI supports commands for completions, embeddings, file uploads, and fine-tuning. Run `openai --help` to explore all options.
 
 ### Node.js SDK
 
@@ -56,9 +54,7 @@ For TypeScript examples and advanced configurations, see the [Node.js SDK Guide]
 
 OpenAI’s documentation also links to community-maintained libraries across various languages. Use these with caution, as they are not officially supported:
 
-<Frame>
-  ![The image shows a webpage from OpenAI's documentation, listing community libraries for various programming languages like C#, C++, Clojure, and Crystal. It includes links to GitHub repositories and a disclaimer about using these libraries at one's own risk.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881513/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-API-and-Libraries/openai-community-libraries-documentation.jpg)
-</Frame>
+![The image shows a webpage from OpenAI's documentation, listing community libraries for various programming languages like C#, C++, Clojure, and Crystal. It includes links to GitHub repositories and a disclaimer about using these libraries at one's own risk.](https://kodekloud.com/kk-media/image/upload/v1752881513/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-API-and-Libraries/openai-community-libraries-documentation.jpg)
 
 ## Next Steps
 
@@ -70,9 +66,7 @@ Now that you have the SDKs installed and the CLI at your fingertips, you’re re
 * [OpenAI API Reference](https://platform.openai.com/docs/api-reference)
 * [Managing API Keys](https://platform.openai.com/docs/api-keys)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/7cf291c5-4705-4a69-965a-b0ba7d2169c6/lesson/6e105a90-147d-4c23-9021-e37885d4b3df" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/7cf291c5-4705-4a69-965a-b0ba7d2169c6/lesson/6e105a90-147d-4c23-9021-e37885d4b3df)
 
 
 # OpenAI Foundation Models
@@ -91,9 +85,7 @@ OpenAI’s foundation models form the backbone of modern generative AI, powering
 
 The **Generative Pre-trained Transformer (GPT)** is a transformer-based large language model trained on massive public-domain text corpora. It excels at generating contextually relevant text and supports a wide range of natural-language tasks.
 
-<Callout icon="lightbulb">
-  GPT-3.5 is the current public release with 175 billion parameters. GPT-4 offers enhanced capabilities but is accessible only to approved users via the OpenAI waitlist.
-</Callout>
+> **lightbulb** GPT-3.5 is the current public release with 175 billion parameters. GPT-4 offers enhanced capabilities but is accessible only to approved users via the OpenAI waitlist.
 
 ### Key Capabilities of GPT-3.5
 
@@ -106,9 +98,7 @@ The **Generative Pre-trained Transformer (GPT)** is a transformer-based large la
 | Chat & Q\&A        | Interactive conversations                      | `openai.chat.completions.create({ messages: [...], ... })`                   |
 | Embeddings         | Vector representations for search & clustering | `openai.embeddings.create({ model: "text-embedding-ada-002", ... })`         |
 
-<Frame>
-  ![The image is a diagram illustrating the process of a Generative Pretrained Transformer (GPT) taking a prompt and producing various outputs such as classification, sentiment analysis, summarization, word completion, chat, code generation, and word embeddings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881514/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Foundation-Models/gpt-prompt-output-process-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating the process of a Generative Pretrained Transformer (GPT) taking a prompt and producing various outputs such as classification, sentiment analysis, summarization, word completion, chat, code generation, and word embeddings.](https://kodekloud.com/kk-media/image/upload/v1752881514/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Foundation-Models/gpt-prompt-output-process-diagram.jpg)
 
 ## DALL·E: Text-to-Image Generation
 
@@ -124,13 +114,9 @@ openai images.generate \
   --size "1024x1024"
 ```
 
-<Callout icon="lightbulb">
-  DALL·E 2 is currently in beta. Image credits and usage rights vary—review the [OpenAI Image Policy](https://openai.com/policies/images) before deploying.
-</Callout>
+> **lightbulb** DALL·E 2 is currently in beta. Image credits and usage rights vary—review the [OpenAI Image Policy](https://openai.com/policies/images) before deploying.
 
-<Frame>
-  ![The image is a diagram explaining DALL-E 2, showing the process from a text prompt to image generation, with notes on its similarity to GPT and its diffusion model architecture.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881515/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Foundation-Models/dall-e-2-image-generation-diagram.jpg)
-</Frame>
+![The image is a diagram explaining DALL-E 2, showing the process from a text prompt to image generation, with notes on its similarity to GPT and its diffusion model architecture.](https://kodekloud.com/kk-media/image/upload/v1752881515/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Foundation-Models/dall-e-2-image-generation-diagram.jpg)
 
 ## Whisper: Automatic Speech Recognition
 
@@ -151,13 +137,9 @@ openai audio.translations.create \
   --file "entrevista.mp3"
 ```
 
-<Callout icon="triangle-alert">
-  Audio files with background noise or overlapping speakers may reduce transcription accuracy. Preprocess audio with noise reduction when possible.
-</Callout>
+> **triangle-alert** Audio files with background noise or overlapping speakers may reduce transcription accuracy. Preprocess audio with noise reduction when possible.
 
-<Frame>
-  ![The image is a diagram explaining Whisper, an automatic speech-recognition model that supports transcription and translation, trained on diverse languages and accents. It highlights Whisper 1 as the latest version in beta.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881516/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Foundation-Models/whisper-speech-recognition-diagram.jpg)
-</Frame>
+![The image is a diagram explaining Whisper, an automatic speech-recognition model that supports transcription and translation, trained on diverse languages and accents. It highlights Whisper 1 as the latest version in beta.](https://kodekloud.com/kk-media/image/upload/v1752881516/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Foundation-Models/whisper-speech-recognition-diagram.jpg)
 
 ## Summary of OpenAI Foundation Models
 
@@ -176,6 +158,4 @@ openai audio.translations.create \
 
 Explore these foundation models to unlock cutting-edge generative AI in your applications.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/7cf291c5-4705-4a69-965a-b0ba7d2169c6/lesson/e3354118-e1b7-48c4-8e48-11fc860f4746" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/7cf291c5-4705-4a69-965a-b0ba7d2169c6/lesson/e3354118-e1b7-48c4-8e48-11fc860f4746)

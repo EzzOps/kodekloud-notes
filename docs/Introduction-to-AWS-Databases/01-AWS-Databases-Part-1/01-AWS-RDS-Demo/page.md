@@ -47,13 +47,9 @@ Diff determination and change representation are also logged:
 
 These traces make it easier to locate where Terraform is assigning providers, how it builds the resource graph, and why particular resources are created, changed, or left unchanged.
 
-<Callout icon="lightbulb">
-  TRACE logs can include sensitive data (like provider tokens, API keys, or resource attributes). Avoid sending raw trace logs to third parties without sanitizing them first.
-</Callout>
+> **lightbulb** TRACE logs can include sensitive data (like provider tokens, API keys, or resource attributes). Avoid sending raw trace logs to third parties without sanitizing them first.
 
-<Callout icon="warning">
-  If you must share logs with HashiCorp or a provider, redact secrets (API keys, tokens, passwords, and any sensitive attributes) before uploading. Consider limiting logs to a file and opening it in a secure editor to mask secrets.
-</Callout>
+> **warning** If you must share logs with HashiCorp or a provider, redact secrets (API keys, tokens, passwords, and any sensitive attributes) before uploading. Consider limiting logs to a file and opening it in a secure editor to mask secrets.
 
 ## Disable logging when finished
 
@@ -91,9 +87,7 @@ Note: You didn't use the --out option to save this plan, so Terraform can't guar
 
 Thanks for following this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/5a3363d1-83cc-4a39-997d-82fa687251ac/lesson/745b1ae5-da9e-4c2f-8c70-9b21c811d6f4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/5a3363d1-83cc-4a39-997d-82fa687251ac/lesson/745b1ae5-da9e-4c2f-8c70-9b21c811d6f4)
 
 
 # AWS RDS Demo
@@ -217,9 +211,7 @@ After you save, pgAdmin will show the server and default database. You can creat
   <img alt="A screenshot of the pgAdmin database dashboard with the server/database tree on the left and the &#x22;my_app&#x22; database selected. The right side shows metrics panels (sessions, transactions/sec, tuples in/out, block I/O) and a server activity table at the bottom." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Do not use the master account credentials for application connections. Create an application-specific database user with the minimum required privileges. For production, use `IAM` authentication or a secrets manager such as [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) to store and rotate credentials securely.
-</Callout>
+> **lightbulb** Do not use the master account credentials for application connections. Create an application-specific database user with the minimum required privileges. For production, use `IAM` authentication or a secrets manager such as [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) to store and rotate credentials securely.
 
 ## 11. Modify or delete the instance
 
@@ -230,9 +222,7 @@ After you save, pgAdmin will show the server and default database. You can creat
   <img alt="Screenshot of the Amazon RDS console for a database named &#x22;my-first-db.&#x22; It shows the instance summary (CPU, status &#x22;Available&#x22;, PostgreSQL engine) and the Connectivity & security section with endpoint, port and VPC/subnet details." />
 </Frame>
 
-<Callout icon="warning">
-  If you enable public access, ensure your security group only allows trusted IP addresses on the database port. Exposing a database to the public internet without strict controls increases the risk of unauthorized access.
-</Callout>
+> **warning** If you enable public access, ensure your security group only allows trusted IP addresses on the database port. Exposing a database to the public internet without strict controls increases the risk of unauthorized access.
 
 If you choose **Delete**, confirm the deletion checkbox(s) and acknowledge the prompt to remove the instance and any retained snapshots (depending on your choices).
 
@@ -248,8 +238,6 @@ That concludes this lesson on deploying and connecting to a PostgreSQL instance 
 * [PostgreSQL Official Site](https://www.postgresql.org/)
 * [pgAdmin](https://www.pgadmin.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/dbb798b2-1272-4fd7-9384-41e371499a97" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/dbb798b2-1272-4fd7-9384-41e371499a97)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/c10c0f10-c2d5-4117-aa57-6f70ff667ea7" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/c10c0f10-c2d5-4117-aa57-6f70ff667ea7)

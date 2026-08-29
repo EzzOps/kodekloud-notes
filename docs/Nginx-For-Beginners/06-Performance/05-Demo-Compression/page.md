@@ -18,9 +18,7 @@ sudo tail -f /var/log/nginx/access.log
 
 Open Developer Tools → Network in your browser and verify there are no proxy/Cache-Control headers from NGINX yet. Note that browser caching (Cache-Control, Expires) is different from NGINX proxy caching.
 
-<Callout icon="lightbulb">
-  Browser caching (Cache-Control, Expires) is client-side. NGINX proxy caching sits between clients and the origin and lets many clients get responses without hitting the origin for each request.
-</Callout>
+> **lightbulb** Browser caching (Cache-Control, Expires) is client-side. NGINX proxy caching sits between clients and the origin and lets many clients get responses without hitting the origin for each request.
 
 ## 2 — Make the demo results more visible
 
@@ -63,9 +61,7 @@ sudo mkdir -p /var/lib/nginx/cache
 sudo chown -R www-data:www-data /var/lib/nginx/cache
 ```
 
-<Callout icon="warning">
-  Monitor disk usage and cache size. A misconfigured cache or too large TTLs can quickly consume disk space. Plan eviction policies and sizing for production.
-</Callout>
+> **warning** Monitor disk usage and cache size. A misconfigured cache or too large TTLs can quickly consume disk space. Plan eviction policies and sizing for production.
 
 ## 4 — Enable proxy cache in the site/server config
 
@@ -238,11 +234,9 @@ Because the demo used inflated image sizes to make results obvious, a recommende
 * Apache logging docs: [https://httpd.apache.org/docs/current/logs.html](https://httpd.apache.org/docs/current/logs.html)
 * Browser DevTools Network panel: [https://developer.chrome.com/docs/devtools/network/](https://developer.chrome.com/docs/devtools/network/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/42757c8a-6e6c-48c7-b89e-a4ada8791ad9" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/42757c8a-6e6c-48c7-b89e-a4ada8791ad9)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/1559660d-8686-4508-8474-33f2e7fbfdd4" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/1559660d-8686-4508-8474-33f2e7fbfdd4)
 
 
 # Demo Compression

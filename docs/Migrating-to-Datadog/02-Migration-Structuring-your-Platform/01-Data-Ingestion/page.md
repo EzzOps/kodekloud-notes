@@ -66,13 +66,9 @@ Practical checklist:
 * Set log sampling rules and trace sampling rates per service.
 * Monitor ingestion metrics (bytes ingested, events/sec, cardinality) for anomalies.
 
-<Callout icon="lightbulb">
-  When designing ingestion, prioritize telemetry that answers your key questions: Is the service available? Is performance within SLO? Are errors rising? Begin with essential telemetry, validate its value, then expand integrations and retention as needed.
-</Callout>
+> **lightbulb** When designing ingestion, prioritize telemetry that answers your key questions: Is the service available? Is performance within SLO? Are errors rising? Begin with essential telemetry, validate its value, then expand integrations and retention as needed.
 
-<Callout icon="warning">
-  High-cardinality tags and unfiltered verbose logs are common causes of unexpected costs and query slowness. Apply tag governance and log-reduction rules early to avoid runaway ingestion bills.
-</Callout>
+> **warning** High-cardinality tags and unfiltered verbose logs are common causes of unexpected costs and query slowness. Apply tag governance and log-reduction rules early to avoid runaway ingestion bills.
 
 ## Tips for implementation
 
@@ -89,6 +85,4 @@ Further reading and references:
 
 That's it for this lesson. Apply these principles when designing your telemetry ingestion pipeline to keep your observability effective and sustainable.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/911288c8-88bf-4404-b782-459ef233afe2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/911288c8-88bf-4404-b782-459ef233afe2)

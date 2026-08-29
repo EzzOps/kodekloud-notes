@@ -10,7 +10,7 @@ Welcome to this lesson on setting up your own AWS Free Tier account. Follow this
 
 Start by searching for "AWS Free Tier" on Google and clicking the [aws.amazon.com/free](https://aws.amazon.com/free) link.
 
-![The image shows a webpage for the AWS Free Tier, offering information about free access to AWS products and services, with a button to create a free account.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861228/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough/aws-free-tier-webpage-account.jpg)
+![The image shows a webpage for the AWS Free Tier, offering information about free access to AWS products and services, with a button to create a free account.](https://kodekloud.com/kk-media/image/upload/v1752861228/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough/aws-free-tier-webpage-account.jpg)
 
 Click on "Create a Free Account." You will be prompted to enter your root user email address. Use your personal email address (e.g., [awskk@gmail.com](mailto:awskk@gmail.com)) or an alias (e.g., [awskk+alias@gmail.com](mailto:awskk+alias@gmail.com)) to maintain account integrity.
 
@@ -18,21 +18,21 @@ Click on "Create a Free Account." You will be prompted to enter your root user e
 
 After entering your email, AWS will send a verification code. Retrieve the code and enter it on the verification page.
 
-![The image shows an AWS sign-up page with fields for entering an email address and account name, along with options to verify the email or sign in to an existing account. There are also illustrations of cubes and a hand, suggesting cloud services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861230/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough/aws-signup-page-cloud-services.jpg)
+![The image shows an AWS sign-up page with fields for entering an email address and account name, along with options to verify the email or sign in to an existing account. There are also illustrations of cubes and a hand, suggesting cloud services.](https://kodekloud.com/kk-media/image/upload/v1752861230/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough/aws-signup-page-cloud-services.jpg)
 
-![The image shows an AWS sign-up page with a verification code entry section and a prompt to explore free tier products.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861232/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough/aws-signup-verification-free-tier.jpg)
+![The image shows an AWS sign-up page with a verification code entry section and a prompt to explore free tier products.](https://kodekloud.com/kk-media/image/upload/v1752861232/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough/aws-signup-verification-free-tier.jpg)
 
 ## Step 3: Set Up Your Account Credentials
 
 Once your email is verified, set a strong root password. Next, provide your billing information by submitting your credit card details. While the account is free tier, AWS needs to verify your identity with a valid credit card. After a verification code is sent to your phone and confirmed, choose the support plan that best suits your needs—typically, the free Basic support plan suffices for personal use.
 
-![The image shows an AWS sign-up page with options for selecting a support plan, including Basic, Developer, and Business support tiers. Each plan is briefly described with pricing and features, and there's a button to complete the sign-up process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861233/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough/aws-signup-support-plans.jpg)
+![The image shows an AWS sign-up page with options for selecting a support plan, including Basic, Developer, and Business support tiers. Each plan is briefly described with pricing and features, and there's a button to complete the sign-up process.](https://kodekloud.com/kk-media/image/upload/v1752861233/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough/aws-signup-support-plans.jpg)
 
 ## Step 4: Access the AWS Management Console
 
 After completing the sign-up, click on "Go to Management Console." Initially, you'll log in as the root user, and the console might default to a specific region (for example, Ohio). Although the root user has full privileges, it is highly recommended to create an IAM user for daily tasks.
 
-![The image shows an AWS sign-up confirmation page with a congratulatory message and options to access the AWS Management Console or contact sales. There is also a section asking for additional user information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861236/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough/aws-signup-confirmation-page.jpg)
+![The image shows an AWS sign-up confirmation page with a congratulatory message and options to access the AWS Management Console or contact sales. There is also a section asking for additional user information.](https://kodekloud.com/kk-media/image/upload/v1752861236/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough/aws-signup-confirmation-page.jpg)
 
 > **lightbulb** It is best practice to avoid using the root account for daily activities. Always use IAM users with restricted permissions and enable multi-factor authentication (MFA) to enhance security.
 
@@ -44,15 +44,15 @@ To improve account security:
 2. Create a new user (e.g., "MForrester") with console access.
 3. Set a custom strong password and choose to require a password change upon first login if necessary.
 
-![The image shows an AWS IAM user creation interface where user details are being specified, including options for setting a console password.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861238/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough/aws-iam-user-creation-interface.jpg)
+![The image shows an AWS IAM user creation interface where user details are being specified, including options for setting a console password.](https://kodekloud.com/kk-media/image/upload/v1752861238/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough/aws-iam-user-creation-interface.jpg)
 
 On the permissions page, attach the **AdministratorAccess** policy. While this grants full privileges, consider using IAM groups or roles with a limited set of permissions for secure environments.
 
-![The image shows an AWS IAM interface for setting user permissions, with options to add a user to a group, copy permissions, or attach policies directly. There is also an option to set a permissions boundary.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861240/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough/aws-iam-user-permissions-interface.jpg)
+![The image shows an AWS IAM interface for setting user permissions, with options to add a user to a group, copy permissions, or attach policies directly. There is also an option to set a permissions boundary.](https://kodekloud.com/kk-media/image/upload/v1752861240/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough/aws-iam-user-permissions-interface.jpg)
 
 Once created, return to the user list to verify the new IAM user is present.
 
-![The image shows an AWS Management Console screen where a user has been successfully created. It displays the console sign-in details, including a URL, username, and an option to view the password.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861241/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough/aws-management-console-user-created.jpg)
+![The image shows an AWS Management Console screen where a user has been successfully created. It displays the console sign-in details, including a URL, username, and an option to view the password.](https://kodekloud.com/kk-media/image/upload/v1752861241/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough/aws-management-console-user-created.jpg)
 
 ## Step 6: Secure Your Account with MFA
 
@@ -60,7 +60,7 @@ Enhance security further by setting up Multi-Factor Authentication (MFA) for bot
 
 > **triangle-alert** Do not create access keys or key pairs while logged in as the root user. Always use the IAM user with MFA enabled for daily operations.
 
-![The image shows an AWS Identity and Access Management (IAM) dashboard, displaying account details, multi-factor authentication (MFA) options, and access key information. It highlights that no MFA is assigned and no access keys are created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861243/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough/aws-iam-dashboard-mfa-access-keys.jpg)
+![The image shows an AWS Identity and Access Management (IAM) dashboard, displaying account details, multi-factor authentication (MFA) options, and access key information. It highlights that no MFA is assigned and no access keys are created.](https://kodekloud.com/kk-media/image/upload/v1752861243/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough/aws-iam-dashboard-mfa-access-keys.jpg)
 
 From now on, always access your AWS console using the IAM user credentials rather than the root account.
 

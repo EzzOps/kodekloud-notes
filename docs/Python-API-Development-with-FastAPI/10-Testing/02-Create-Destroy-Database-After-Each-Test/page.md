@@ -6,9 +6,7 @@ This guide explains how to configure tests to use a clean database each time, pr
 
 In this guide, you'll learn how to configure your tests to start with a clean test database every time they are executed. This approach ensures that duplicate data errors, such as duplicate key violations, are avoided when tests run multiple times.
 
-<Callout icon="lightbulb">
-  By resetting your test database before each test, you ensure that tests run in isolation and errors due to leftover data are prevented.
-</Callout>
+> **lightbulb** By resetting your test database before each test, you ensure that tests run in isolation and errors due to leftover data are prevented.
 
 ## The Problem: Duplicate Key Violations
 
@@ -163,9 +161,7 @@ def test_root(client):
     assert response.json() == {"message": "Hello World"}
 ```
 
-<Callout icon="triangle-alert">
-  Ensure that Alembic is properly configured in your project before using it for database migration in your tests.
-</Callout>
+> **triangle-alert** Ensure that Alembic is properly configured in your project before using it for database migration in your tests.
 
 ## Summary
 
@@ -177,6 +173,4 @@ For more information:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/0c21d6f7-8a68-4974-aef7-396c6ab917cf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/0c21d6f7-8a68-4974-aef7-396c6ab917cf)

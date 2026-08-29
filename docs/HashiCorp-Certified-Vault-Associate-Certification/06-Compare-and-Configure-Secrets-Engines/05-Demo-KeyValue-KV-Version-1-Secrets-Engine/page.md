@@ -46,9 +46,7 @@ vault secrets list
 | training/ | kv   | kv\_1d131683 | n/a         |
 | …         | …    | …            | …           |
 
-<Callout icon="lightbulb">
-  If you need KV version 2 (with versioning, metadata, and rollback), use `-version=2`.
-</Callout>
+> **lightbulb** If you need KV version 2 (with versioning, metadata, and rollback), use `-version=2`.
 
 ## 3. Verify the Engine Version
 

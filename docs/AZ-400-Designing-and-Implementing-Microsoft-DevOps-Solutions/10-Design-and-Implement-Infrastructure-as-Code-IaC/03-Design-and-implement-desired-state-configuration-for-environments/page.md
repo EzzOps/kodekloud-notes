@@ -11,7 +11,7 @@ In this lesson, we’ll dive into **Desired State Configuration (DSC)**—a decl
 * Bicep
 * Azure Automanage Machine Configuration
 
-![The image lists components involved in the design and implementation of Desired State Configuration (DSC) for environments, including Azure Automation State Configuration, Azure Resource Manager, Bicep, and Azure Automanage Machine Configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867721/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-desired-state-configuration-for-environments/dsc-design-implementation-components-list.jpg)
+![The image lists components involved in the design and implementation of Desired State Configuration (DSC) for environments, including Azure Automation State Configuration, Azure Resource Manager, Bicep, and Azure Automanage Machine Configuration.](https://kodekloud.com/kk-media/image/upload/v1752867721/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-desired-state-configuration-for-environments/dsc-design-implementation-components-list.jpg)
 
 ***
 
@@ -22,7 +22,7 @@ Desired State Configuration (DSC) is a Windows PowerShell management platform de
 * Ensure infrastructure consistency by applying identical configurations across all nodes
 * Automatically detect and remediate configuration drift to keep systems in the defined “blueprint”
 
-![The image is an introduction to Desired State Configuration, highlighting two points: ensuring infrastructure consistency and automating correction of configuration drift.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867721/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-desired-state-configuration-for-environments/desired-state-configuration-introduction.jpg)
+![The image is an introduction to Desired State Configuration, highlighting two points: ensuring infrastructure consistency and automating correction of configuration drift.](https://kodekloud.com/kk-media/image/upload/v1752867721/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-desired-state-configuration-for-environments/desired-state-configuration-introduction.jpg)
 
 ***
 

@@ -6,9 +6,7 @@ This tutorial teaches how to deploy a pod in a Minikube cluster using the kubect
 
 In this tutorial, you'll learn how to deploy a pod in your Minikube cluster. A pod is the smallest and simplest deployable unit in Kubernetes, designed to hold one or more application containers. We'll use the `kubectl` command-line tool to interact with our cluster.
 
-<Callout icon="lightbulb">
-  You can specify an image tag or use an alternative container registry if your desired image is hosted elsewhere.
-</Callout>
+> **lightbulb** You can specify an image tag or use an alternative container registry if your desired image is hosted elsewhere.
 
 ## Pod Operations
 

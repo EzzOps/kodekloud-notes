@@ -94,9 +94,7 @@ b64_data = generate_image(
 encoded_str = b64_data[0]["b64_json"]
 ```
 
-<Callout icon="triangle-alert">
-  Large base64 payloads can impact performance. Use `b64_json` sparingly.
-</Callout>
+> **triangle-alert** Large base64 payloads can impact performance. Use `b64_json` sparingly.
 
 ***
 
@@ -123,11 +121,9 @@ This approach can power dynamic blog posts, marketing assets, or social media co
 * [GPT-3.5 Turbo Documentation](https://platform.openai.com/docs/models/gpt-35-turbo)
 * [GPT-4 Documentation](https://platform.openai.com/docs/models/gpt-4)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/ad3893f7-fba6-4142-a575-422006496a97/lesson/d7856e5a-7ed4-453c-a115-e6e70641c3d5" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/ad3893f7-fba6-4142-a575-422006496a97/lesson/d7856e5a-7ed4-453c-a115-e6e70641c3d5)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/ad3893f7-fba6-4142-a575-422006496a97/lesson/1779c5fe-946f-4465-bae3-8c0dca40d546" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/ad3893f7-fba6-4142-a575-422006496a97/lesson/1779c5fe-946f-4465-bae3-8c0dca40d546)
 
 
 # Demo Image Masking
@@ -144,13 +140,11 @@ In this tutorial, you’ll learn how to use DALL·E 2’s image masking feature 
 * The `openai` Python package (`pip install openai`)
 * An OpenAI API key
 
-<Callout icon="lightbulb">
-  Make sure you’ve exported your API key as an environment variable:
+> **lightbulb** Make sure you’ve exported your API key as an environment variable:
 
   ```bash theme={null}
   export OPENAI_API_KEY="your_api_key_here"
   ```
-</Callout>
 
 ## 1. Install and Authenticate
 

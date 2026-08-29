@@ -8,7 +8,7 @@ Activity traceability delivers a live dashboard of all work items to help teams 
 
 Traceability eliminates uncertainty by giving you real-time insight into who’s working on what, how far they’ve progressed, and what’s next. Rapid feedback loops link comments and code changes back to their originating work items, connecting every dot in your project lifecycle. You’ll measure efficiency—how quickly you turn ideas into features—and recovery speed when issues arise. Linking commits to work items also simplifies troubleshooting, audits, and enforces policies by recording every action against your governance standards.
 
-![The image is an infographic titled "Understanding Activity Traceability," highlighting five key aspects: ensuring visibility in DevOps, tracking work and feedback, measuring efficiency and recovery, linking code and work items, and policy implementation and integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867365/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Activity-Traceability/understanding-activity-traceability-infographic.jpg)
+![The image is an infographic titled "Understanding Activity Traceability," highlighting five key aspects: ensuring visibility in DevOps, tracking work and feedback, measuring efficiency and recovery, linking code and work items, and policy implementation and integration.](https://kodekloud.com/kk-media/image/upload/v1752867365/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Activity-Traceability/understanding-activity-traceability-infographic.jpg)
 
 As you read on, we’ll unpack each benefit in greater detail and show you exactly how to implement them in Azure DevOps.
 
@@ -22,7 +22,7 @@ Traceability in Azure DevOps drives success by:
 * **Improving Transparency:** Stakeholders gain instant visibility into features, tasks, and bugs.
 * **Ensuring Compliance:** Every commit and change is traced back to its source for regulatory needs.
 
-![The image outlines the need for activity traceability, highlighting its benefits such as enhancing collaboration, facilitating audit processes, supporting Agile practices, improving transparency, and being essential for compliance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867366/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Activity-Traceability/activity-traceability-benefits-outline.jpg)
+![The image outlines the need for activity traceability, highlighting its benefits such as enhancing collaboration, facilitating audit processes, supporting Agile practices, improving transparency, and being essential for compliance.](https://kodekloud.com/kk-media/image/upload/v1752867366/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Activity-Traceability/activity-traceability-benefits-outline.jpg)
 
 ## Implementing Activity Traceability in Azure DevOps
 
@@ -89,7 +89,7 @@ By combining Boards, Repos, Pipelines, and Monitoring, you form a continuous tra
 | Azure Monitor        | Aggregate operational data                    | [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor)                          |
 | Application Insights | Performance and usage telemetry               | [App Insights](https://learn.microsoft.com/azure/azure-monitor/app/app-insights-overview) |
 
-![The image outlines steps for implementing activity traceability, including using Azure Boards, linking work items, integrating with repositories, leveraging pipelines, and utilizing monitoring tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867368/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Activity-Traceability/activity-traceability-azure-boards-steps.jpg)
+![The image outlines steps for implementing activity traceability, including using Azure Boards, linking work items, integrating with repositories, leveraging pipelines, and utilizing monitoring tools.](https://kodekloud.com/kk-media/image/upload/v1752867368/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Activity-Traceability/activity-traceability-azure-boards-steps.jpg)
 
 ## Exam Essentials
 
@@ -101,7 +101,7 @@ When studying for AZ-400, make sure you can:
 * Apply traceability in **real-world scenarios**, such as incident recovery and audit preparation.
 * Support **Agile methodologies** by tracking sprint progress and backlog health with traceability artifacts.
 
-![The image outlines the exam essentials for the Microsoft Certification Exam AZ-400, focusing on traceability principles, Azure tools, CI/CD, real-world applications, and Agile environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867368/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Activity-Traceability/microsoft-az400-exam-essentials-outline.jpg)
+![The image outlines the exam essentials for the Microsoft Certification Exam AZ-400, focusing on traceability principles, Azure tools, CI/CD, real-world applications, and Agile environments.](https://kodekloud.com/kk-media/image/upload/v1752867368/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Activity-Traceability/microsoft-az400-exam-essentials-outline.jpg)
 
 ## Links and References
 

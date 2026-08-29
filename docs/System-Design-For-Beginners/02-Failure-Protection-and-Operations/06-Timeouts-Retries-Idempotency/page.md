@@ -56,9 +56,7 @@ Many errors are transient: a short network blip, a DNS hiccup, or a service rest
 
 The dangerous pattern is immediate, aggressive retries from many callers. If a database or service is struggling and every client retries at once, retries amplify load and can push the system into complete failure — the classic retry storm.
 
-<Callout icon="warning">
-  Do not retry blindly. Immediate repeated retries across many clients can worsen outages (retry storms). Limit retries and add backoff and jitter.
-</Callout>
+> **warning** Do not retry blindly. Immediate repeated retries across many clients can worsen outages (retry storms). Limit retries and add backoff and jitter.
 
 <Frame>
   <img alt="The image is a diagram showing a flow of data from a user's phone through a load balancer, app server, and service to a struggling database. It illustrates retries in a network architecture." />

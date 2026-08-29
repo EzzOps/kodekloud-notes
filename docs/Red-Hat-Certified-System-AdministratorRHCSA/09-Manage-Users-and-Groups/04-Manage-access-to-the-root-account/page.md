@@ -64,9 +64,7 @@ $ sudo userdel -r john
 $ sudo userdel -r smith
 ```
 
-<Callout icon="lightbulb">
-  Use the `useradd --help` option if you ever need a quick reminder of the available options for managing user accounts.
-</Callout>
+> **lightbulb** Use the `useradd --help` option if you ever need a quick reminder of the available options for managing user accounts.
 
 ## Modifying User Accounts
 
@@ -136,9 +134,7 @@ Happy system managing, and see you in the next article!
 
 For further reading on managing Linux systems, check out [Linux System Administration Basics](https://www.linux.com/learn/linux-basics/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c2d7d0cc-a429-484c-b81b-674ff5fadc7e/lesson/4f1c0991-c9ae-4777-9238-ea6af9ee6d48" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c2d7d0cc-a429-484c-b81b-674ff5fadc7e/lesson/4f1c0991-c9ae-4777-9238-ea6af9ee6d48)
 
 
 # Manage access to the root account
@@ -182,9 +178,7 @@ All the above commands achieve the same result by switching the session to the r
 
 In some Linux systems, the root account may be locked by default. When the root account is locked, you cannot log in using a password; however, you can still obtain root privileges via sudo.
 
-<Callout icon="lightbulb">
-  When the root account is locked, attempting to log in with `su -` will fail because it requires a valid root password. Always verify that your user account retains sudo privileges before making changes.
-</Callout>
+> **lightbulb** When the root account is locked, attempting to log in with `su -` will fail because it requires a valid root password. Always verify that your user account retains sudo privileges before making changes.
 
 ## Setting or Unlocking the Root Password
 
@@ -208,9 +202,7 @@ After setting or unlocking the password, you can switch to the root account usin
 
 If you decide that direct root logins pose a security risk, you can disable them by locking the root account. Locking the account prevents password-based logins without affecting alternative login methods such as SSH keys.
 
-<Callout icon="triangle-alert">
-  Before locking the root account, ensure that your user account has sudo privileges. Losing this access could prevent you from making essential system changes.
-</Callout>
+> **triangle-alert** Before locking the root account, ensure that your user account has sudo privileges. Losing this access could prevent you from making essential system changes.
 
 To lock or unlock the root account, use the following commands:
 
@@ -228,6 +220,4 @@ $ sudo passwd --lock root     # Equivalent to: $ sudo passwd -l root
 
 By understanding and applying these methods, you can effectively manage access to the root account in your Linux environment. Use sudo for quick administrative tasks and carefully manage the root account’s password settings for full root access when necessary. In our next lesson, we will delve into more advanced topics to further enhance your system management skills.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c2d7d0cc-a429-484c-b81b-674ff5fadc7e/lesson/863ec305-3bf5-4071-82c6-9651cde8dd25" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c2d7d0cc-a429-484c-b81b-674ff5fadc7e/lesson/863ec305-3bf5-4071-82c6-9651cde8dd25)

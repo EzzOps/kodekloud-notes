@@ -39,9 +39,7 @@ spec:
 
 Clone the repository into Git using your GitHub migration option. In this example, the migration is performed under the "Dash" organization.
 
-<Frame>
-  ![The image shows a web interface for migrating a Git repository, with fields for the repository URL, access token, and options for migration settings. The owner and repository name are specified, and there is a button to "Migrate Repository."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879736/notes-assets/images/Jenkins-Pipelines-Manifest-Repository-and-Configure-ArgoCD/git-repo-migration-interface.jpg)
-</Frame>
+![The image shows a web interface for migrating a Git repository, with fields for the repository URL, access token, and options for migration settings. The owner and repository name are specified, and there is a button to "Migrate Repository."](https://kodekloud.com/kk-media/image/upload/v1752879736/notes-assets/images/Jenkins-Pipelines-Manifest-Repository-and-Configure-ArgoCD/git-repo-migration-interface.jpg)
 
 After a brief wait, the repository is successfully imported. Even though both the deployment and service YAML files are present, note that the deployment manifest now requires a secret named mongodb‑secrets—which is currently missing.
 
@@ -84,9 +82,7 @@ spec:
               key: MONGO_URI
 ```
 
-<Callout icon="lightbulb">
-  Since the referenced secret is missing, we need to create and store it securely.
-</Callout>
+> **lightbulb** Since the referenced secret is missing, we need to create and store it securely.
 
 ## Step 4. Creating the Kubernetes Secret
 
@@ -132,9 +128,7 @@ kubectl -n solar-system create secret generic mongo-db-creds \
   --save-config --dry-run=client -o yaml > mongo-creds_k8s-secret.yaml
 ```
 
-<Callout icon="triangle-alert">
-  Although the generated YAML encodes the values in Base64, storing unencrypted secrets in Git is not recommended. We will improve security by encrypting these secrets using Bitnami Sealed Secrets.
-</Callout>
+> **triangle-alert** Although the generated YAML encodes the values in Base64, storing unencrypted secrets in Git is not recommended. We will improve security by encrypting these secrets using Bitnami Sealed Secrets.
 
 The unencrypted secret YAML might look as follows:
 
@@ -201,9 +195,7 @@ spec:
 
 This sealed secret can now be safely stored in your Git repository. Commit the file (e.g., named secret.yaml) as part of your manifest repository.
 
-<Frame>
-  ![The image shows a Gitea repository interface with a list of YAML files related to Kubernetes, including deployment.yml, secret.yml, and service.yml. The repository is named "solar-system-gitops-argocd."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879737/notes-assets/images/Jenkins-Pipelines-Manifest-Repository-and-Configure-ArgoCD/gitea-repo-yaml-kubernetes-files.jpg)
-</Frame>
+![The image shows a Gitea repository interface with a list of YAML files related to Kubernetes, including deployment.yml, secret.yml, and service.yml. The repository is named "solar-system-gitops-argocd."](https://kodekloud.com/kk-media/image/upload/v1752879737/notes-assets/images/Jenkins-Pipelines-Manifest-Repository-and-Configure-ArgoCD/gitea-repo-yaml-kubernetes-files.jpg)
 
 ## Step 6. Configuring the Argo CD Application
 
@@ -215,9 +207,7 @@ k -n argocd get all
 
 The Argo CD server is accessible on node port 31663. After logging into the Argo CD UI, you'll notice that it manages the Bitnami Sealed Secrets application. For example:
 
-<Frame>
-  ![The image shows the Argo CD interface displaying an application named "bitnami-sealed-secrets" with a status of "Healthy" but "OutOfSync." It includes details like the repository URL, target revision, and namespace.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879739/notes-assets/images/Jenkins-Pipelines-Manifest-Repository-and-Configure-ArgoCD/argo-cd-bitnami-sealed-secrets.jpg)
-</Frame>
+![The image shows the Argo CD interface displaying an application named "bitnami-sealed-secrets" with a status of "Healthy" but "OutOfSync." It includes details like the repository URL, target revision, and namespace.](https://kodekloud.com/kk-media/image/upload/v1752879739/notes-assets/images/Jenkins-Pipelines-Manifest-Repository-and-Configure-ArgoCD/argo-cd-bitnami-sealed-secrets.jpg)
 
 ### Creating the Solar System Argo CD Application
 
@@ -234,21 +224,15 @@ Configure the application with the following settings:
 
 The application configuration screen looks similar to the following:
 
-<Frame>
-  ![The image shows the Argo CD interface with a configuration screen for creating or managing an application, displaying options for source repository, revision, and path settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879740/notes-assets/images/Jenkins-Pipelines-Manifest-Repository-and-Configure-ArgoCD/argo-cd-application-configuration.jpg)
-</Frame>
+![The image shows the Argo CD interface with a configuration screen for creating or managing an application, displaying options for source repository, revision, and path settings.](https://kodekloud.com/kk-media/image/upload/v1752879740/notes-assets/images/Jenkins-Pipelines-Manifest-Repository-and-Configure-ArgoCD/argo-cd-application-configuration.jpg)
 
 Once created, Argo CD fetches the manifests (service, deployment, and sealed secret files) from the repository. However, since manual synchronization is selected, the application remains out-of-sync until you trigger a sync:
 
-<Frame>
-  ![The image shows the Argo CD interface displaying two applications, "bitnami-sealed-secrets" and "solar-system-argo-app," both marked as "OutOfSync" with different health statuses. The interface includes options to sync, refresh, or delete the applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879741/notes-assets/images/Jenkins-Pipelines-Manifest-Repository-and-Configure-ArgoCD/argo-cd-bitnami-solar-system.jpg)
-</Frame>
+![The image shows the Argo CD interface displaying two applications, "bitnami-sealed-secrets" and "solar-system-argo-app," both marked as "OutOfSync" with different health statuses. The interface includes options to sync, refresh, or delete the applications.](https://kodekloud.com/kk-media/image/upload/v1752879741/notes-assets/images/Jenkins-Pipelines-Manifest-Repository-and-Configure-ArgoCD/argo-cd-bitnami-solar-system.jpg)
 
 Later, you can update the deployment manifest with the latest Docker image and then manually initiate a synchronization. The final state of the Solar System app in Argo CD is depicted here:
 
-<Frame>
-  ![The image shows an Argo CD interface with an application named "solar-system-argo-app" that is out of sync and missing. It displays a visual representation of the application's components, including "solar-system" and "mongo-db-creds."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879742/notes-assets/images/Jenkins-Pipelines-Manifest-Repository-and-Configure-ArgoCD/argo-cd-solar-system-app-interface.jpg)
-</Frame>
+![The image shows an Argo CD interface with an application named "solar-system-argo-app" that is out of sync and missing. It displays a visual representation of the application's components, including "solar-system" and "mongo-db-creds."](https://kodekloud.com/kk-media/image/upload/v1752879742/notes-assets/images/Jenkins-Pipelines-Manifest-Repository-and-Configure-ArgoCD/argo-cd-solar-system-app-interface.jpg)
 
 ## Conclusion
 
@@ -258,6 +242,4 @@ Thank you for following along!
 
 For more information, visit the [Kubernetes Documentation](https://kubernetes.io/docs/) and the [Argo CD project page](https://argo-cd.readthedocs.io/en/stable/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/fb6b2c83-178c-4962-b4e6-ca5528721170/lesson/be3dfe18-9137-4361-90f1-22464a9d4c32" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/fb6b2c83-178c-4962-b4e6-ca5528721170/lesson/be3dfe18-9137-4361-90f1-22464a9d4c32)

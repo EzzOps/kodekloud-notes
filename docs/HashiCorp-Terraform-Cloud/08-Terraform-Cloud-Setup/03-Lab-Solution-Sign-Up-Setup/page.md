@@ -59,21 +59,15 @@ Terraform Cloud supports these token types:
 | Team Token         | Specific team privileges                         | Automation with team-level access |
 | Organization Token | Organization-wide management (teams, workspaces) | Scripts managing org resources    |
 
-<Frame>
-  ![The image shows a web interface for managing API tokens in Terraform Cloud, with options to create a new token and a list of existing tokens.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878838/notes-assets/images/HashiCorp-Terraform-Cloud-Demo-Interacting-with-Terraform-Cloud/terraform-cloud-api-tokens-management.jpg)
-</Frame>
+![The image shows a web interface for managing API tokens in Terraform Cloud, with options to create a new token and a list of existing tokens.](https://kodekloud.com/kk-media/image/upload/v1752878838/notes-assets/images/HashiCorp-Terraform-Cloud-Demo-Interacting-with-Terraform-Cloud/terraform-cloud-api-tokens-management.jpg)
 
-<Frame>
-  ![The image shows a webpage from Terraform Cloud's settings, specifically the API Tokens section, detailing user, team, and organization tokens. It includes navigation options on the left and a button to create an organization token.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878839/notes-assets/images/HashiCorp-Terraform-Cloud-Demo-Interacting-with-Terraform-Cloud/terraform-cloud-api-tokens-settings.jpg)
-</Frame>
+![The image shows a webpage from Terraform Cloud's settings, specifically the API Tokens section, detailing user, team, and organization tokens. It includes navigation options on the left and a button to create an organization token.](https://kodekloud.com/kk-media/image/upload/v1752878839/notes-assets/images/HashiCorp-Terraform-Cloud-Demo-Interacting-with-Terraform-Cloud/terraform-cloud-api-tokens-settings.jpg)
 
 ***
 
 This concludes our demonstration of web UI, CLI, and API authentication with Terraform Cloud.
 
-<Frame>
-  ![The image shows a settings page for authentication in a web application, detailing user session timeout and two-factor authentication options. It includes fields for setting session timeout and reauthentication intervals, with an option to require two-factor authentication for organization members.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878840/notes-assets/images/HashiCorp-Terraform-Cloud-Demo-Interacting-with-Terraform-Cloud/authentication-settings-page-user-session-timeout.jpg)
-</Frame>
+![The image shows a settings page for authentication in a web application, detailing user session timeout and two-factor authentication options. It includes fields for setting session timeout and reauthentication intervals, with an option to require two-factor authentication for organization members.](https://kodekloud.com/kk-media/image/upload/v1752878840/notes-assets/images/HashiCorp-Terraform-Cloud-Demo-Interacting-with-Terraform-Cloud/authentication-settings-page-user-session-timeout.jpg)
 
 ## Links and References
 
@@ -81,11 +75,9 @@ This concludes our demonstration of web UI, CLI, and API authentication with Ter
 * [Terraform CLI Guide](https://developer.hashicorp.com/terraform/cli)
 * [Terraform Cloud API Reference](https://developer.hashicorp.com/terraform/cloud/api-docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/f0c13760-a79c-42c2-a089-44f1c0a59bee/lesson/afdfcd55-1df4-4678-a4ba-2ce1b91a2837" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/f0c13760-a79c-42c2-a089-44f1c0a59bee/lesson/afdfcd55-1df4-4678-a4ba-2ce1b91a2837)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/f0c13760-a79c-42c2-a089-44f1c0a59bee/lesson/a3ac255f-5847-4bee-9737-9cfb17072145" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/f0c13760-a79c-42c2-a089-44f1c0a59bee/lesson/a3ac255f-5847-4bee-9737-9cfb17072145)
 
 
 # Lab Solution Sign Up Setup
@@ -96,9 +88,7 @@ This hands-on lab guides you through signing up for Terraform Cloud and integrat
 
 Welcome to this hands-on lab. In this guide, you’ll sign up for Terraform Cloud, create your first organization, and integrate the Terraform CLI with Terraform Cloud. By the end, you’ll be ready to manage infrastructure seamlessly across any cloud.
 
-<Frame>
-  ![The image shows a webpage from KodeKloud about Terraform Cloud signup and setup, with a terminal interface on the right side.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878842/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Sign-Up-Setup/kodekloud-terraform-cloud-signup-setup.jpg)
-</Frame>
+![The image shows a webpage from KodeKloud about Terraform Cloud signup and setup, with a terminal interface on the right side.](https://kodekloud.com/kk-media/image/upload/v1752878842/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Sign-Up-Setup/kodekloud-terraform-cloud-signup-setup.jpg)
 
 ***
 
@@ -119,17 +109,11 @@ Begin by navigating to the Terraform website:
 1. Go to terraform.io and click **Try Terraform Cloud**.
 2. On the signup form, enter your desired **Username**, **Email**, and **Password**, then submit.
 
-<Frame>
-  ![The image shows a webpage for HashiCorp Terraform, highlighting options for automating infrastructure on any cloud with links to download the open-source version or try Terraform Cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878843/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Sign-Up-Setup/hashicorp-terraform-automation-webpage.jpg)
-</Frame>
+![The image shows a webpage for HashiCorp Terraform, highlighting options for automating infrastructure on any cloud with links to download the open-source version or try Terraform Cloud.](https://kodekloud.com/kk-media/image/upload/v1752878843/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Sign-Up-Setup/hashicorp-terraform-automation-webpage.jpg)
 
-<Frame>
-  ![The image shows a Terraform Cloud account creation page with fields for username, email, and password, alongside a section highlighting the benefits of using Terraform Cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878844/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Sign-Up-Setup/terraform-cloud-account-creation-page.jpg)
-</Frame>
+![The image shows a Terraform Cloud account creation page with fields for username, email, and password, alongside a section highlighting the benefits of using Terraform Cloud.](https://kodekloud.com/kk-media/image/upload/v1752878844/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Sign-Up-Setup/terraform-cloud-account-creation-page.jpg)
 
-<Callout icon="lightbulb">
-  If you already have an account, click **Sign In** instead of creating a new one.
-</Callout>
+> **lightbulb** If you already have an account, click **Sign In** instead of creating a new one.
 
 ***
 
@@ -141,9 +125,7 @@ Once you’re logged in, Terraform Cloud prompts you to create a new organizatio
 2. Confirm your email address.
 3. Click **Create organization**.
 
-<Frame>
-  ![The image shows a webpage for creating a new organization in Terraform Cloud, with fields for organization name and email address. There is a button labeled "Create organization" at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878845/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Sign-Up-Setup/terraform-cloud-create-organization-page.jpg)
-</Frame>
+![The image shows a webpage for creating a new organization in Terraform Cloud, with fields for organization name and email address. There is a button labeled "Create organization" at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878845/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Sign-Up-Setup/terraform-cloud-create-organization-page.jpg)
 
 In this lab, our example org is named **Mastering Terraform Cloud**. You’ll see the new organization dashboard, ready for workspace and settings configuration.
 
@@ -170,9 +152,7 @@ To link your local Terraform CLI to Terraform Cloud, generate an API token:
    ```
 4. On the Terraform Cloud website, create a new token (e.g., **Terraform login – Mastering Terraform Cloud**) and copy it.
 
-<Frame>
-  ![The image shows a web page with a pop-up window displaying a newly created API token for Terraform Cloud. The token is shown with an option to copy it, and there is a "Done" button at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878846/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Sign-Up-Setup/terraform-cloud-api-token-popup.jpg)
-</Frame>
+![The image shows a web page with a pop-up window displaying a newly created API token for Terraform Cloud. The token is shown with an option to copy it, and there is a "Done" button at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878846/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Sign-Up-Setup/terraform-cloud-api-token-popup.jpg)
 
 5. Paste the token back into the CLI (it will be hidden as you type):
    ```bash theme={null}
@@ -192,13 +172,11 @@ New to TFC? Follow these steps to instantly apply an example configuration:
   $ scripts/setup.sh
 ```
 
-<Callout icon="triangle-alert">
-  Your API token is stored in plain text at `~/.terraform.d/credentials.tfrc.json`. To remove it, run:
+> **triangle-alert** Your API token is stored in plain text at `~/.terraform.d/credentials.tfrc.json`. To remove it, run:
 
   ```bash theme={null}
   terraform logout
   ```
-</Callout>
 
 ***
 
@@ -218,6 +196,4 @@ New to TFC? Follow these steps to instantly apply an example configuration:
 * [Terraform CLI Reference](https://www.terraform.io/docs/cli)
 * [Terraform Getting Started Examples](https://github.com/hashicorp/tfc-getting-started)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/f0c13760-a79c-42c2-a089-44f1c0a59bee/lesson/6e792ad8-1137-42a2-a8fb-22241d2ae73e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/f0c13760-a79c-42c2-a089-44f1c0a59bee/lesson/6e792ad8-1137-42a2-a8fb-22241d2ae73e)

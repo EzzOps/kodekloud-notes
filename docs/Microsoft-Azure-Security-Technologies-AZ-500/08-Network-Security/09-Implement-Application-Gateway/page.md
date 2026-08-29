@@ -25,9 +25,7 @@ Azure Application Gateway supports a wide range of back-end targets that extend 
 * Azure App Services and App Service deployment slots
 * Servers hosted on other cloud providers or on-premises
 
-<Frame>
-  ![The image is a diagram illustrating the flow of an application gateway, showing components like a browser, application gateway, HTTP/HTTPS listener, rules, and a pool of VMs, VMSS, and servers. It highlights features such as a Layer 7 load balancer, routing, and backend pools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882130/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/application-gateway-flow-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating the flow of an application gateway, showing components like a browser, application gateway, HTTP/HTTPS listener, rules, and a pool of VMs, VMSS, and servers. It highlights features such as a Layer 7 load balancer, routing, and backend pools.](https://kodekloud.com/kk-media/image/upload/v1752882130/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/application-gateway-flow-diagram.jpg)
 
 ## Application Gateway Components
 
@@ -51,9 +49,7 @@ Below is a breakdown of the key components within an Application Gateway:
 6. **Back-end Pool:**\
    Contains the servers hosting your applications. Traffic is routed here based on the rules and settings defined earlier.
 
-<Frame>
-  ![The image is a flowchart illustrating the components of an application gateway, including elements like Frontend IP, Listener, Port, Certificate, Rule, HTTP Setting, Custom Probe, and Backend Pool, with descriptions of their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882131/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/application-gateway-flowchart-components.jpg)
-</Frame>
+![The image is a flowchart illustrating the components of an application gateway, including elements like Frontend IP, Listener, Port, Certificate, Rule, HTTP Setting, Custom Probe, and Backend Pool, with descriptions of their functions.](https://kodekloud.com/kk-media/image/upload/v1752882131/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/application-gateway-flowchart-components.jpg)
 
 This ordered design ensures that client requests are securely processed following predefined rules and settings before reaching the back-end servers.
 
@@ -191,9 +187,7 @@ These tests indicate that the environment is correctly set up with blue, green, 
 4. Set the instance count to 2 and enable HTTP/2.
 5. Create a simple WAF policy (for example, name it `color`).
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating an application gateway and a web application firewall policy. It includes fields for instance details, such as application gateway name, region, and tier, with a section for configuring a virtual network.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882133/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-application-gateway-config.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating an application gateway and a web application firewall policy. It includes fields for instance details, such as application gateway name, region, and tier, with a section for configuring a virtual network.](https://kodekloud.com/kk-media/image/upload/v1752882133/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-application-gateway-config.jpg)
 
 ### Step 2: Configure the Virtual Network
 
@@ -202,25 +196,19 @@ These tests indicate that the environment is correctly set up with blue, green, 
 
 If you encounter an error due to overlapping subnets (for example, with the Jumpbox subnet), adjust the configuration accordingly.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface where a user is attempting to add a new subnet named "ApplicationGatewaySubnet" to a virtual network. An error message indicates that the subnet address range overlaps with an existing subnet called "jumpboxSubnet."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882134/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-add-subnet-error.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface where a user is attempting to add a new subnet named "ApplicationGatewaySubnet" to a virtual network. An error message indicates that the subnet address range overlaps with an existing subnet called "jumpboxSubnet."](https://kodekloud.com/kk-media/image/upload/v1752882134/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-add-subnet-error.jpg)
 
 ### Step 3: Create Front-end and Back-end Pools
 
 * **Front-end:**\
   Create a public IP address for the front-end of the Application Gateway.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating an application gateway, specifically focusing on adding a public IP address. A dialog box is open for entering details like the name, SKU, and assignment type for the public IP.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882135/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-application-gateway-ip.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating an application gateway, specifically focusing on adding a public IP address. A dialog box is open for entering details like the name, SKU, and assignment type for the public IP.](https://kodekloud.com/kk-media/image/upload/v1752882135/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752882135/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-application-gateway-ip.jpg)
 
 * **Back-end Pools:**\
   Create backend pools for the red, green, and blue servers. Initially, you may create the pools without adding servers. Later, attach the appropriate virtual machines to their corresponding pools.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating an application gateway, displaying the configuration where the backend servers and public IP are being added.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882135/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-application-gateway-ip.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating an application gateway, displaying the configuration where the backend servers and public IP are being added.](https://kodekloud.com/kk-media/image/upload/v1752882135/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752882135/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-application-gateway-ip.jpg)
 
 ### Step 4: Configure Routing Rules
 
@@ -233,29 +221,21 @@ If you encounter an error due to overlapping subnets (for example, with the Jump
 
 After completing the configurations, click "Create" to deploy the Application Gateway. Deployment may take 15 to 20 minutes.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating an application gateway, displaying configuration details such as subscription, resource group, region, and WAF status. The "Create" button is visible at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882136/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-application-gateway-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating an application gateway, displaying configuration details such as subscription, resource group, region, and WAF status. The "Create" button is visible at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752882136/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-application-gateway-creation.jpg)
 
 Once deployed, verify the Application Gateway in your resource group:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page indicating that a deployment named "Microsoft.ApplicationGateway-20231001065219" is complete. It includes details like the subscription, resource group, and start time, with options for further actions and feedback.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882137/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-deployment-complete.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page indicating that a deployment named "Microsoft.ApplicationGateway-20231001065219" is complete. It includes details like the subscription, resource group, and start time, with options for further actions and feedback.](https://kodekloud.com/kk-media/image/upload/v1752882137/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-deployment-complete.jpg)
 
 View the Application Gateway overview to confirm the configuration:
 
-<Frame>
-  ![The image shows the Microsoft Azure portal displaying an overview of an application gateway named "color-appgw." It includes details such as resource group, location, subscription, and graphs for total and failed requests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882139/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-color-appgw-overview.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal displaying an overview of an application gateway named "color-appgw." It includes details such as resource group, location, subscription, and graphs for total and failed requests.](https://kodekloud.com/kk-media/image/upload/v1752882139/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-color-appgw-overview.jpg)
 
 ### Step 5: Add Back-end Targets
 
 Navigate to the backend pools and add your virtual machines (red, green, and blue) as targets. For example, add the appropriate red VMs under the red backend pool and do the same for the green and blue pools.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for editing a backend pool, with options to add virtual machines or IP addresses as backend targets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882140/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-backend-pool-editing.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for editing a backend pool, with options to add virtual machines or IP addresses as backend targets.](https://kodekloud.com/kk-media/image/upload/v1752882140/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Application-Gateway/azure-portal-backend-pool-editing.jpg)
 
 ## Testing and Path-Based Routing Verification
 
@@ -293,6 +273,4 @@ The Application Gateway has now been deployed with its essential components, rou
 
 Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/0489a935-a4dd-41c6-b5d3-6054c570299b/lesson/6a6f01c1-2d20-4cc8-8378-e2572e0074f1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/0489a935-a4dd-41c6-b5d3-6054c570299b/lesson/6a6f01c1-2d20-4cc8-8378-e2572e0074f1)

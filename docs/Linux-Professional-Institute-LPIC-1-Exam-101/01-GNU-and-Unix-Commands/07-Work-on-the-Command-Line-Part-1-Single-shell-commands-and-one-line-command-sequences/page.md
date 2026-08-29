@@ -15,9 +15,7 @@ In this guide, you’ll master four primary Linux login methods—both local and
 | Remote text-mode via SSH             | Secure Shell connection                   | Headless servers, automation scripts |
 | Remote graphical-mode via VNC or RDP | Remote Desktop Protocol (RDP/VNC clients) | Remote GUI access, support, demos    |
 
-<Frame>
-  ![The image illustrates four login methods: local text-mode console, remote text-mode login, local graphical-mode console, and remote graphical-mode login. Each method is represented with icons showing user and console interactions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881414/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Work-on-the-Command-Line-Part-1-Single-shell-commands-and-one-line-command-sequences/login-methods-icons-console-remote-local.jpg)
-</Frame>
+![The image illustrates four login methods: local text-mode console, remote text-mode login, local graphical-mode console, and remote graphical-mode login. Each method is represented with icons showing user and console interactions.](https://kodekloud.com/kk-media/image/upload/v1752881414/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Work-on-the-Command-Line-Part-1-Single-shell-commands-and-one-line-command-sequences/login-methods-icons-console-remote-local.jpg)
 
 ***
 
@@ -40,10 +38,8 @@ Ctrl + Alt + F2
 
 Use `Ctrl + Alt + F1` (or F7) to return to your GUI session.
 
-<Callout icon="lightbulb">
-  Virtual terminals let you run multiple independent login sessions in text mode.\
+> **lightbulb** Virtual terminals let you run multiple independent login sessions in text mode.\
   Use `chvt N` as root to switch from the shell.
-</Callout>
 
 ***
 
@@ -67,9 +63,7 @@ Password:
 exit
 ```
 
-<Callout icon="lightbulb">
-  Passwords aren’t echoed for security. If you mistype, press Enter and retry.
-</Callout>
+> **lightbulb** Passwords aren’t echoed for security. If you mistype, press Enter and retry.
 
 ***
 
@@ -81,13 +75,9 @@ Graphical login managers (GDM, LightDM, SDDM) present a friendly GUI:
 2. Enter your password in the input field.
 3. Press Enter or click **Sign In**.
 
-<Frame>
-  ![The image shows a CentOS login screen with a list of user accounts, highlighting one named "Aaron." The screen is labeled "Local GUI" and includes icons for system functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881415/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Work-on-the-Command-Line-Part-1-Single-shell-commands-and-one-line-command-sequences/centos-login-screen-local-gui-aaron.jpg)
-</Frame>
+![The image shows a CentOS login screen with a list of user accounts, highlighting one named "Aaron." The screen is labeled "Local GUI" and includes icons for system functions.](https://kodekloud.com/kk-media/image/upload/v1752881415/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Work-on-the-Command-Line-Part-1-Single-shell-commands-and-one-line-command-sequences/centos-login-screen-local-gui-aaron.jpg)
 
-<Callout icon="triangle-alert">
-  Always log out or lock your session when leaving your workstation unattended.
-</Callout>
+> **triangle-alert** Always log out or lock your session when leaving your workstation unattended.
 
 ***
 
@@ -100,9 +90,7 @@ SSH (Secure Shell) is the industry standard for encrypted text-mode logins. Teln
 | SSH      | Encrypted  | 22   | `ssh`, PuTTY           |
 | Telnet   | Plain text | 23   | `telnet` (discouraged) |
 
-<Frame>
-  ![The image illustrates remote text-mode login methods, comparing SSH (Secure Shell) as a secure option and Telnet as an insecure option.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881416/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Work-on-the-Command-Line-Part-1-Single-shell-commands-and-one-line-command-sequences/remote-login-methods-ssh-telnet-comparison.jpg)
-</Frame>
+![The image illustrates remote text-mode login methods, comparing SSH (Secure Shell) as a secure option and Telnet as an insecure option.](https://kodekloud.com/kk-media/image/upload/v1752881416/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Work-on-the-Command-Line-Part-1-Single-shell-commands-and-one-line-command-sequences/remote-login-methods-ssh-telnet-comparison.jpg)
 
 1. Find the server’s IP address:
 
@@ -123,10 +111,8 @@ ssh aaron@192.168.0.17
 [aaron@LFCS-CentOS ~]$
 ```
 
-<Callout icon="lightbulb">
-  You can also use SSH keys for passwordless login:\
+> **lightbulb** You can also use SSH keys for passwordless login:\
   `ssh-keygen` → `ssh-copy-id aaron@192.168.0.17`.
-</Callout>
 
 ***
 
@@ -141,15 +127,13 @@ For full desktop access over the network:
 3. Enter the server’s IP and port (e.g., `192.168.0.17:1` for VNC).
 4. Authenticate with your Linux credentials.
 
-<Callout icon="lightbulb">
-  Performance and encryption depend on your server’s configuration. For secure tunnels, combine VNC with SSH port forwarding:
+> **lightbulb** Performance and encryption depend on your server’s configuration. For secure tunnels, combine VNC with SSH port forwarding:
 
   ```bash theme={null}
   ssh -L 5901:localhost:5901 aaron@192.168.0.17
   ```
 
   Then point your VNC client at `localhost:5901`.
-</Callout>
 
 ***
 
@@ -160,6 +144,4 @@ For full desktop access over the network:
 * [TigerVNC User Guide](https://tigervnc.org/doc/)
 * [xrdp GitHub Repository](https://github.com/neutrinolabs/xrdp)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/5e5b5093-a736-483c-a6f6-b5edaab32dec" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/5e5b5093-a736-483c-a6f6-b5edaab32dec)

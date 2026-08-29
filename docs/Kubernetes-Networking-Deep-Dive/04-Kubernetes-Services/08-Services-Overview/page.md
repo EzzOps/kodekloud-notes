@@ -11,9 +11,7 @@ spec:
       targetPort: 5432
 ```
 
-<Frame>
-  ![The image illustrates the concept of "ClusterIP" in Kubernetes, showing its role in stable networking, its utilization by management services like Kubernetes API and Kube DNS, and its default selection status among service types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880356/notes-assets/images/Kubernetes-Networking-Deep-Dive-Service-Types/clusterip-kubernetes-networking-diagram.jpg)
-</Frame>
+![The image illustrates the concept of "ClusterIP" in Kubernetes, showing its role in stable networking, its utilization by management services like Kubernetes API and Kube DNS, and its default selection status among service types.](https://kodekloud.com/kk-media/image/upload/v1752880356/notes-assets/images/Kubernetes-Networking-Deep-Dive-Service-Types/clusterip-kubernetes-networking-diagram.jpg)
 
 ## NodePort
 
@@ -36,13 +34,9 @@ spec:
       nodePort: 31000
 ```
 
-<Callout icon="triangle-alert">
-  Ensure your nodes’ network security groups and firewalls allow traffic to the chosen `nodePort` range.
-</Callout>
+> **triangle-alert** Ensure your nodes’ network security groups and firewalls allow traffic to the chosen `nodePort` range.
 
-<Frame>
-  ![The image illustrates a NodePort setup in a Kubernetes cluster, showing traffic flow from nodes to services and pods. It also includes sections labeled "Development" and "Testing."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880356/notes-assets/images/Kubernetes-Networking-Deep-Dive-Service-Types/nodeport-kubernetes-traffic-flow-diagram.jpg)
-</Frame>
+![The image illustrates a NodePort setup in a Kubernetes cluster, showing traffic flow from nodes to services and pods. It also includes sections labeled "Development" and "Testing."](https://kodekloud.com/kk-media/image/upload/v1752880356/notes-assets/images/Kubernetes-Networking-Deep-Dive-Service-Types/nodeport-kubernetes-traffic-flow-diagram.jpg)
 
 ## LoadBalancer
 
@@ -62,17 +56,11 @@ spec:
       targetPort: 8080
 ```
 
-<Callout icon="lightbulb">
-  When using a cloud provider, ensure your Kubernetes cluster is configured with the appropriate CNI plugin to support load balancer integrations.
-</Callout>
+> **lightbulb** When using a cloud provider, ensure your Kubernetes cluster is configured with the appropriate CNI plugin to support load balancer integrations.
 
-<Frame>
-  ![The image is a diagram illustrating a load balancer setup for a Kubernetes cluster, showing traffic distribution from various cloud platforms to a service (SVC) and then to multiple pods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880357/notes-assets/images/Kubernetes-Networking-Deep-Dive-Service-Types/kubernetes-load-balancer-traffic-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating a load balancer setup for a Kubernetes cluster, showing traffic distribution from various cloud platforms to a service (SVC) and then to multiple pods.](https://kodekloud.com/kk-media/image/upload/v1752880357/notes-assets/images/Kubernetes-Networking-Deep-Dive-Service-Types/kubernetes-load-balancer-traffic-diagram.jpg)
 
-<Frame>
-  ![The image illustrates a combination of cloud providers' load balancers and CNI (Container Network Interface) to route traffic over the same virtual network, featuring logos of various cloud services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880359/notes-assets/images/Kubernetes-Networking-Deep-Dive-Service-Types/cloud-load-balancers-cni-traffic-routing.jpg)
-</Frame>
+![The image illustrates a combination of cloud providers' load balancers and CNI (Container Network Interface) to route traffic over the same virtual network, featuring logos of various cloud services.](https://kodekloud.com/kk-media/image/upload/v1752880359/notes-assets/images/Kubernetes-Networking-Deep-Dive-Service-Types/cloud-load-balancers-cni-traffic-routing.jpg)
 
 ## ExternalName
 
@@ -88,13 +76,9 @@ spec:
   externalName: db.example.com
 ```
 
-<Callout icon="lightbulb">
-  ExternalName services do not use selectors or ports. Kubernetes returns a CNAME record for DNS resolution.
-</Callout>
+> **lightbulb** ExternalName services do not use selectors or ports. Kubernetes returns a CNAME record for DNS resolution.
 
-<Frame>
-  ![The image is an infographic titled "ExternalName" that illustrates three benefits: connecting with external databases or APIs, simplifying connection via DNS, and streamlining interaction with Kubernetes apps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880359/notes-assets/images/Kubernetes-Networking-Deep-Dive-Service-Types/externalname-infographic-database-connection.jpg)
-</Frame>
+![The image is an infographic titled "ExternalName" that illustrates three benefits: connecting with external databases or APIs, simplifying connection via DNS, and streamlining interaction with Kubernetes apps.](https://kodekloud.com/kk-media/image/upload/v1752880359/notes-assets/images/Kubernetes-Networking-Deep-Dive-Service-Types/externalname-infographic-database-connection.jpg)
 
 ## Headless Service
 
@@ -115,9 +99,7 @@ spec:
       targetPort: 6379
 ```
 
-<Frame>
-  ![The image illustrates a "Headless Service" in a Kubernetes cluster, showing its connection to multiple pods and highlighting its features of maintaining stable network identity and bypassing kube-proxy for direct pod proxying.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880360/notes-assets/images/Kubernetes-Networking-Deep-Dive-Service-Types/headless-service-kubernetes-cluster-pods.jpg)
-</Frame>
+![The image illustrates a "Headless Service" in a Kubernetes cluster, showing its connection to multiple pods and highlighting its features of maintaining stable network identity and bypassing kube-proxy for direct pod proxying.](https://kodekloud.com/kk-media/image/upload/v1752880360/notes-assets/images/Kubernetes-Networking-Deep-Dive-Service-Types/headless-service-kubernetes-cluster-pods.jpg)
 
 ***
 
@@ -131,9 +113,7 @@ spec:
 | ExternalName | DNS CNAME               | External dependencies (DBs, APIs)       |
 | Headless     | Direct pod IPs (no VIP) | Stateful sets, direct pod communication |
 
-<Frame>
-  ![The image is a diagram explaining different service types in Kubernetes: ClusterIP for internal communication, NodePort for external communication without a load balancer, and LoadBalancer for external communication with cloud providers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880362/notes-assets/images/Kubernetes-Networking-Deep-Dive-Service-Types/kubernetes-service-types-diagram.jpg)
-</Frame>
+![The image is a diagram explaining different service types in Kubernetes: ClusterIP for internal communication, NodePort for external communication without a load balancer, and LoadBalancer for external communication with cloud providers.](https://kodekloud.com/kk-media/image/upload/v1752880362/notes-assets/images/Kubernetes-Networking-Deep-Dive-Service-Types/kubernetes-service-types-diagram.jpg)
 
 ***
 
@@ -149,9 +129,7 @@ spec:
 * [Kubernetes CNI Plugins](https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/network-plugins/)
 * [Service Type Examples](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/4cdb0996-6358-49d8-a017-cdfebc7f44f6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/4cdb0996-6358-49d8-a017-cdfebc7f44f6)
 
 
 # Services Overview
@@ -162,9 +140,7 @@ Kubernetes Services provide stable network endpoints for pods, ensuring consiste
 
 Kubernetes Services provide a stable network endpoint for pods, abstracting their dynamic IPs and ensuring consistent communication across the cluster.
 
-<Frame>
-  ![The image illustrates a Kubernetes service (SVC) connecting to multiple pods, with a title asking "What Is a Service?"](../../../../images/kodekloud.com/kk-media/image/upload/v1752880363/notes-assets/images/Kubernetes-Networking-Deep-Dive-Services-Overview/kubernetes-service-connecting-multiple-pods.jpg)
-</Frame>
+![The image illustrates a Kubernetes service (SVC) connecting to multiple pods, with a title asking "What Is a Service?"](https://kodekloud.com/kk-media/image/upload/v1752880363/notes-assets/images/Kubernetes-Networking-Deep-Dive-Services-Overview/kubernetes-service-connecting-multiple-pods.jpg)
 
 A Service definition looks like any other Kubernetes object. You give it a name, set a selector for matching pods, declare ports, and choose a Service type:
 
@@ -188,9 +164,7 @@ spec:
 * ports: exposes port 80 and forwards traffic to pod port 8080.
 * type: `ClusterIP` (default) makes the Service reachable only within the cluster.
 
-<Callout icon="lightbulb">
-  Kubernetes uses EndpointSlices to track pod endpoints automatically. Clients always connect to the Service IP, unaware of pod restarts or IP changes.
-</Callout>
+> **lightbulb** Kubernetes uses EndpointSlices to track pod endpoints automatically. Clients always connect to the Service IP, unaware of pod restarts or IP changes.
 
 ***
 
@@ -207,9 +181,7 @@ Kubernetes exposes Service endpoints to pods in two ways:
 2. **DNS**\
    With [CoreDNS](https://coredns.io/) (or another DNS add-on), every Service gets an A record and SRV records:
 
-<Frame>
-  ![The image illustrates DNS records related to Kubernetes, showing "Pod" with an "A record" and "Service" with "A record, SRV record," along with a network diagram.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880364/notes-assets/images/Kubernetes-Networking-Deep-Dive-Services-Overview/dns-records-kubernetes-pod-service-diagram.jpg)
-</Frame>
+![The image illustrates DNS records related to Kubernetes, showing "Pod" with an "A record" and "Service" with "A record, SRV record," along with a network diagram.](https://kodekloud.com/kk-media/image/upload/v1752880364/notes-assets/images/Kubernetes-Networking-Deep-Dive-Services-Overview/dns-records-kubernetes-pod-service-diagram.jpg)
 
 * **A record**: `service-name.namespace.svc.cluster.local`
 * **SRV records**: one per named port, for example:
@@ -217,9 +189,7 @@ Kubernetes exposes Service endpoints to pods in two ways:
   _http._tcp.my-service.my-namespace.svc.cluster.local
   ```
 
-<Frame>
-  ![The image illustrates DNS concepts with a cloud labeled "DNS" surrounded by various icons, and a section explaining "A Records" for service names and namespaces.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880365/notes-assets/images/Kubernetes-Networking-Deep-Dive-Services-Overview/dns-concepts-cloud-a-records-icons.jpg)
-</Frame>
+![The image illustrates DNS concepts with a cloud labeled "DNS" surrounded by various icons, and a section explaining "A Records" for service names and namespaces.](https://kodekloud.com/kk-media/image/upload/v1752880365/notes-assets/images/Kubernetes-Networking-Deep-Dive-Services-Overview/dns-concepts-cloud-a-records-icons.jpg)
 
 ***
 
@@ -238,37 +208,27 @@ Kubernetes supports four Service types, each controlling how traffic reaches you
 
 Exposes the Service on a cluster-internal IP address. Use it for internal microservice communications or when fronted by an Ingress.
 
-<Frame>
-  ![The image is a diagram titled "Service Types" highlighting "ClusterIP" as the first type, which exposes services internally within a cluster. It is part of a sequence with three other unspecified types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880366/notes-assets/images/Kubernetes-Networking-Deep-Dive-Services-Overview/service-types-clusterip-diagram.jpg)
-</Frame>
+![The image is a diagram titled "Service Types" highlighting "ClusterIP" as the first type, which exposes services internally within a cluster. It is part of a sequence with three other unspecified types.](https://kodekloud.com/kk-media/image/upload/v1752880366/notes-assets/images/Kubernetes-Networking-Deep-Dive-Services-Overview/service-types-clusterip-diagram.jpg)
 
 ### 2. NodePort
 
 Allocates a port on each node’s IP. External clients use `NodeIP:NodePort` to reach the Service.
 
-<Frame>
-  ![The image illustrates a "NodePort" service type, highlighting its function of exposing connections on each node via a user-defined port number and routing access to the exposed application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880367/notes-assets/images/Kubernetes-Networking-Deep-Dive-Services-Overview/nodeport-service-type-illustration.jpg)
-</Frame>
+![The image illustrates a "NodePort" service type, highlighting its function of exposing connections on each node via a user-defined port number and routing access to the exposed application.](https://kodekloud.com/kk-media/image/upload/v1752880367/notes-assets/images/Kubernetes-Networking-Deep-Dive-Services-Overview/nodeport-service-type-illustration.jpg)
 
 ### 3. LoadBalancer
 
 Integrates with cloud-provider load balancers. Kubernetes provisions an external load balancer and maps it to your Service.
 
-<Frame>
-  ![The image is a diagram showing service types, highlighting "LoadBalancer" in green, with a note stating it "Exposes to an External Load Balancer."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880368/notes-assets/images/Kubernetes-Networking-Deep-Dive-Services-Overview/service-types-loadbalancer-diagram.jpg)
-</Frame>
+![The image is a diagram showing service types, highlighting "LoadBalancer" in green, with a note stating it "Exposes to an External Load Balancer."](https://kodekloud.com/kk-media/image/upload/v1752880368/notes-assets/images/Kubernetes-Networking-Deep-Dive-Services-Overview/service-types-loadbalancer-diagram.jpg)
 
 ### 4. ExternalName
 
 Creates a DNS CNAME record that maps the Service to an external DNS name. No proxies or IPs are provisioned in the cluster.
 
-<Frame>
-  ![The image is a flowchart showing service types, with steps labeled 1, 2, 3, and "ExternalName," and a note indicating "Maps to a CNAME record."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880369/notes-assets/images/Kubernetes-Networking-Deep-Dive-Services-Overview/service-types-flowchart-cname-record.jpg)
-</Frame>
+![The image is a flowchart showing service types, with steps labeled 1, 2, 3, and "ExternalName," and a note indicating "Maps to a CNAME record."](https://kodekloud.com/kk-media/image/upload/v1752880369/notes-assets/images/Kubernetes-Networking-Deep-Dive-Services-Overview/service-types-flowchart-cname-record.jpg)
 
-<Callout icon="triangle-alert">
-  `ExternalName` Services do not support port mapping or protocols. They simply return a DNS CNAME.
-</Callout>
+> **triangle-alert** `ExternalName` Services do not support port mapping or protocols. They simply return a DNS CNAME.
 
 ***
 
@@ -278,6 +238,4 @@ Creates a DNS CNAME record that maps the Service to an external DNS name. No pro
 * [CoreDNS Documentation](https://coredns.io/)
 * [DNS SRV Records (Wikipedia)](https://en.wikipedia.org/wiki/SRV_record)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/d61813c6-5c95-4a69-b044-1a6656a6b3e1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/d61813c6-5c95-4a69-b044-1a6656a6b3e1)

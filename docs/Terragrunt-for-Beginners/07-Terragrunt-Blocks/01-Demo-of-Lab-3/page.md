@@ -16,9 +16,7 @@ include { path = "../common.hcl" }
 inputs = { environment = "dev" }
 ```
 
-<Callout icon="lightbulb">
-  Use `dependency` blocks to pass outputs between modules, further reducing repetition.
-</Callout>
+> **lightbulb** Use `dependency` blocks to pass outputs between modules, further reducing repetition.
 
 ## 4. Environment Consistency
 
@@ -40,18 +38,14 @@ Multiple engineers working on the same Terraform code can collide on merges or a
 
 This leads to safer upgrades and clearer audit trails.
 
-<Frame>
-  ![The image lists five problems that Terragrunt solves: configuration complexity, state management challenges, code duplication, consistency across platforms, and collaboration and versioning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884294/notes-assets/images/Terragrunt-for-Beginners-What-Problems-Does-Terragrunt-Solve/terragrunt-problems-configuration-state-management.jpg)
-</Frame>
+![The image lists five problems that Terragrunt solves: configuration complexity, state management challenges, code duplication, consistency across platforms, and collaboration and versioning.](https://kodekloud.com/kk-media/image/upload/v1752884294/notes-assets/images/Terragrunt-for-Beginners-What-Problems-Does-Terragrunt-Solve/terragrunt-problems-configuration-state-management.jpg)
 
 ## References
 
 * [Terraform](https://www.terraform.io/)
 * [Infrastructure as Code](https://en.wikipedia.org/wiki/Infrastructure_as_Code)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/9618155f-f613-4c7b-92c7-9be9ddfa22b5/lesson/56b282c7-193d-4906-b9c9-b679b183b63f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/9618155f-f613-4c7b-92c7-9be9ddfa22b5/lesson/56b282c7-193d-4906-b9c9-b679b183b63f)
 
 
 # Demo of Lab 3
@@ -70,9 +64,7 @@ show creds
 
 You can also open the VS Code IDE in a new browser tab to copy and paste commands.
 
-<Frame>
-  ![The image shows an AWS IAM user sign-in page with fields for account ID, username, and password. There's also an advertisement for AWS Skill Builder, offering access to free digital courses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884295/notes-assets/images/Terragrunt-for-Beginners-Demo-of-Lab-3/aws-iam-user-signin-page-advertisement.jpg)
-</Frame>
+![The image shows an AWS IAM user sign-in page with fields for account ID, username, and password. There's also an advertisement for AWS Skill Builder, offering access to free digital courses.](https://kodekloud.com/kk-media/image/upload/v1752884295/notes-assets/images/Terragrunt-for-Beginners-Demo-of-Lab-3/aws-iam-user-signin-page-advertisement.jpg)
 
 ***
 
@@ -90,9 +82,7 @@ You can also open the VS Code IDE in a new browser tab to copy and paste command
 
 Create a Terragrunt configuration under `Terraform stack/vpc/terragrunt.hcl`:
 
-<Frame>
-  ![The image shows a split-screen view of a coding environment, with instructions for defining a VPC module on the left and a Visual Studio Code editor with a README file and terminal information on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884297/notes-assets/images/Terragrunt-for-Beginners-Demo-of-Lab-3/vpc-module-coding-environment-split-screen.jpg)
-</Frame>
+![The image shows a split-screen view of a coding environment, with instructions for defining a VPC module on the left and a Visual Studio Code editor with a README file and terminal information on the right.](https://kodekloud.com/kk-media/image/upload/v1752884297/notes-assets/images/Terragrunt-for-Beginners-Demo-of-Lab-3/vpc-module-coding-environment-split-screen.jpg)
 
 ```hcl theme={null}
 terraform {
@@ -122,13 +112,9 @@ terragrunt validate
 
 ### What is `path_relative_to_include()`?
 
-<Frame>
-  ![The image shows a split-screen view with a coding task on the left, asking about the path\_relative\_to\_include() function, and a code editor on the right displaying a Terraform configuration file with AWS VPC settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884298/notes-assets/images/Terragrunt-for-Beginners-Demo-of-Lab-3/coding-task-path-relative-terraform-vpc.jpg)
-</Frame>
+![The image shows a split-screen view with a coding task on the left, asking about the path\_relative\_to\_include() function, and a code editor on the right displaying a Terraform configuration file with AWS VPC settings.](https://kodekloud.com/kk-media/image/upload/v1752884298/notes-assets/images/Terragrunt-for-Beginners-Demo-of-Lab-3/coding-task-path-relative-terraform-vpc.jpg)
 
-<Callout icon="lightbulb">
-  The `path_relative_to_include()` function computes the relative path from the current `terragrunt.hcl` to the included parent. This ensures each module’s state key is unique in S3.
-</Callout>
+> **lightbulb** The `path_relative_to_include()` function computes the relative path from the current `terragrunt.hcl` to the included parent. This ensures each module’s state key is unique in S3.
 
 In your root `Terraform stack/terragrunt.hcl`, add:
 
@@ -223,9 +209,7 @@ terragrunt init
 
 In `Terraform stack/vpc/terragrunt.hcl`, inherit root settings:
 
-<Frame>
-  ![The image shows a split-screen view with a task description on the left about setting up an include block in Terragrunt, and a code editor on the right displaying a Terraform configuration file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884299/notes-assets/images/Terragrunt-for-Beginners-Demo-of-Lab-3/terragrunt-include-block-setup-code.jpg)
-</Frame>
+![The image shows a split-screen view with a task description on the left about setting up an include block in Terragrunt, and a code editor on the right displaying a Terraform configuration file.](https://kodekloud.com/kk-media/image/upload/v1752884299/notes-assets/images/Terragrunt-for-Beginners-Demo-of-Lab-3/terragrunt-include-block-setup-code.jpg)
 
 ```hcl theme={null}
 terraform {

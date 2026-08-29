@@ -160,7 +160,7 @@ echo 'AQIdAHIpIn5jWLoKhyTrOUNemva4jMiIwi9NRFBMjMDPJwNgBHF5dr7wRhp3zC32pFuHlxZxUz
 
 This diagram from the AWS KMS console displays your customer-managed keys, including the "demo" key:
 
-![The image shows the AWS Key Management Service (KMS) console, displaying a list of customer-managed keys with details such as aliases, key IDs, status, key type, and usage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859371/notes-assets/images/AWS-Certified-Developer-Associate-KMS-Envelope-Encryption-Demo/aws-kms-console-customer-keys.jpg)
+![The image shows the AWS Key Management Service (KMS) console, displaying a list of customer-managed keys with details such as aliases, key IDs, status, key type, and usage.](https://kodekloud.com/kk-media/image/upload/v1752859371/notes-assets/images/AWS-Certified-Developer-Associate-KMS-Envelope-Encryption-Demo/aws-kms-console-customer-keys.jpg)
 
 ## Encrypting Data
 

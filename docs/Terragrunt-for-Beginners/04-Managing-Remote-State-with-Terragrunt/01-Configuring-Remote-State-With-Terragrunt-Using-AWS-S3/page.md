@@ -66,13 +66,9 @@ remote_state {
 }
 ```
 
-<Frame>
-  ![The image illustrates a comparison between a "Generate Block" with multiple folder icons and a "Remote State Block" represented by a single folder with a lock icon, related to Terragrunt and AWS S3.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884264/notes-assets/images/Terragrunt-for-Beginners-Configuring-Remote-State-With-Terragrunt-Using-AWS-S3/generate-block-remote-state-comparison.jpg)
-</Frame>
+![The image illustrates a comparison between a "Generate Block" with multiple folder icons and a "Remote State Block" represented by a single folder with a lock icon, related to Terragrunt and AWS S3.](https://kodekloud.com/kk-media/image/upload/v1752884264/notes-assets/images/Terragrunt-for-Beginners-Configuring-Remote-State-With-Terragrunt-Using-AWS-S3/generate-block-remote-state-comparison.jpg)
 
-<Callout icon="triangle-alert">
-  You cannot combine both `generate` and `remote_state` approaches within the same project. Pick one strategy to avoid configuration conflicts.
-</Callout>
+> **triangle-alert** You cannot combine both `generate` and `remote_state` approaches within the same project. Pick one strategy to avoid configuration conflicts.
 
 ## Additional Resources
 
@@ -81,6 +77,4 @@ remote_state {
 * [AWS S3 User Guide](https://docs.aws.amazon.com/s3/latest/userguide/)
 * [DynamoDB Locking for Terraform](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadWrite.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/2eef056a-8494-4e5d-acf0-25b04fad55c4/lesson/07f3ad60-7663-4a64-9601-90506adf61e2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/2eef056a-8494-4e5d-acf0-25b04fad55c4/lesson/07f3ad60-7663-4a64-9601-90506adf61e2)

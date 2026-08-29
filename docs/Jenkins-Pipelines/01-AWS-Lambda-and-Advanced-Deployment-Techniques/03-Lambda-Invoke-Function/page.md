@@ -8,25 +8,17 @@ In this lesson, we demonstrate how to add a new Jenkins stage to test an AWS Lam
 
 For testing purposes, it is essential to automatically obtain the function URL. Although you could manually retrieve this information from the Lambda configuration, automating the process saves time and reduces human error.
 
-<Frame>
-  ![The image shows an AWS Lambda console with details of a function named "solar-system-function," including its configuration and public URL. The function is set to have no authentication and is in the Ohio region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879583/notes-assets/images/Jenkins-Pipelines-Lambda-Invoke-Function/aws-lambda-solar-system-function.jpg)
-</Frame>
+![The image shows an AWS Lambda console with details of a function named "solar-system-function," including its configuration and public URL. The function is set to have no authentication and is in the Ohio region.](https://kodekloud.com/kk-media/image/upload/v1752879583/notes-assets/images/Jenkins-Pipelines-Lambda-Invoke-Function/aws-lambda-solar-system-function.jpg)
 
 To retrieve the URL programmatically, refer to the [AWS CLI documentation for Lambda](https://docs.aws.amazon.com/cli/latest/reference/lambda/index.html). Scroll down to view the available CLI commands related to AWS Lambda.
 
-<Frame>
-  ![The image shows a webpage from the AWS CLI Command Reference, listing available commands related to AWS Lambda.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879583/notes-assets/images/Jenkins-Pipelines-Lambda-Invoke-Function/aws-cli-lambda-commands-reference.jpg)
-</Frame>
+![The image shows a webpage from the AWS CLI Command Reference, listing available commands related to AWS Lambda.](https://kodekloud.com/kk-media/image/upload/v1752879583/notes-assets/images/Jenkins-Pipelines-Lambda-Invoke-Function/aws-cli-lambda-commands-reference.jpg)
 
 When you examine the relevant section, you'll notice that specifying the function name returns a comprehensive JSON output. This JSON contains the function URL, which can be filtered using tools such as jq before sending a test request with cURL.
 
-<Frame>
-  ![The image shows a webpage from the AWS CLI Command Reference, specifically detailing options for the get-function-url-config command related to AWS Lambda functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879584/notes-assets/images/Jenkins-Pipelines-Lambda-Invoke-Function/aws-cli-get-function-url-config.jpg)
-</Frame>
+![The image shows a webpage from the AWS CLI Command Reference, specifically detailing options for the get-function-url-config command related to AWS Lambda functions.](https://kodekloud.com/kk-media/image/upload/v1752879584/notes-assets/images/Jenkins-Pipelines-Lambda-Invoke-Function/aws-cli-get-function-url-config.jpg)
 
-<Callout icon="lightbulb">
-  Using tools like jq to filter JSON output simplifies the process of extracting the necessary values directly from the CLI commands.
-</Callout>
+> **lightbulb** Using tools like jq to filter JSON output simplifies the process of extracting the necessary values directly from the CLI commands.
 
 Below is the Jenkinsfile stage that triggers the Lambda invoke function step. This stage is executed only on the main branch, utilizes AWS CLI commands, and securely accesses the required credentials to extract and test the Lambda function’s URL.
 
@@ -56,9 +48,7 @@ stage('Lambda - Invoke Function') {
 }
 ```
 
-<Callout icon="triangle-alert">
-  If the HTTP status is not "200 OK," the deployment may have encountered an error. Investigate further to ensure your Lambda function is deployed correctly.
-</Callout>
+> **triangle-alert** If the HTTP status is not "200 OK," the deployment may have encountered an error. Investigate further to ensure your Lambda function is deployed correctly.
 
 After these changes are committed, a new build is initiated, and the pipeline executes the Lambda invoke function stage. During deployment, you might encounter an error in the OWASP dependency check stage. Although this error is typically ignored in this context (since the "stop build" flag is set to false), it is advisable to address such issues in a production scenario.
 
@@ -133,6 +123,4 @@ aws lambda update-function-code --function-name solar-system-function --s3-bucke
 
 This concludes the demonstration on invoking and validating a Lambda function within the Jenkins pipeline. For more detailed information, please refer to the [AWS CLI documentation](https://docs.aws.amazon.com/cli/latest/reference/lambda/index.html). Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/78297356-097c-4793-b690-bc83f9aba3f0/lesson/50e9923c-112d-497b-bfe9-f262c447861e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/78297356-097c-4793-b690-bc83f9aba3f0/lesson/50e9923c-112d-497b-bfe9-f262c447861e)

@@ -12,9 +12,7 @@ We leverage a variety of tools such as Ansible, Terraform, Puppet, CloudFormatio
 
 Tools such as Ansible, Chef, Puppet, and SaltStack are used to install and manage software on existing infrastructure resources like servers, databases, and networking devices. They help maintain a consistent code structure, enable version control, and ensure idempotency (i.e., re-executing the code only applies necessary changes).
 
-<Frame>
-  ![The image lists configuration management tools Ansible, Puppet, and SaltStack, highlighting features like software installation, standard structure maintenance, version control, and idempotency.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884168/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Recap-IAC/frame_90.jpg)
-</Frame>
+![The image lists configuration management tools Ansible, Puppet, and SaltStack, highlighting features like software installation, standard structure maintenance, version control, and idempotency.](https://kodekloud.com/kk-media/image/upload/v1752884168/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Recap-IAC/frame_90.jpg)
 
 For example, an Ansible playbook designed to install a package on a group of servers first checks whether the software is already installed, only applying the installation when necessary.
 
@@ -24,21 +22,15 @@ Server templating tools such as Docker, Packer, and Vagrant are used to create c
 
 Server templating supports an immutable infrastructure model—making updates as simple as redeploying a new instance with an updated image rather than modifying a running system.
 
-<Frame>
-  ![The image lists server templating tools: Docker, Packer, and Vagrant, highlighting features like pre-installed software, virtual machine or Docker images, and immutable infrastructure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884169/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Recap-IAC/frame_150.jpg)
-</Frame>
+![The image lists server templating tools: Docker, Packer, and Vagrant, highlighting features like pre-installed software, virtual machine or Docker images, and immutable infrastructure.](https://kodekloud.com/kk-media/image/upload/v1752884169/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Recap-IAC/frame_150.jpg)
 
 ## 3. Infrastructure Provisioning (Orchestration) Tools
 
 Provisioning tools, such as Terraform and CloudFormation, enable you to manage a variety of infrastructure components like virtual machines, databases, VPCs, subnets, security groups, and storage using declarative code. CloudFormation is ideal for AWS-only deployments, whereas Terraform offers a vendor-agnostic solution that supports multi-cloud or hybrid environments through numerous plugins.
 
-<Frame>
-  ![The image describes provisioning tools for deploying immutable infrastructure resources, including servers and databases, using multiple providers like Terraform and CloudFormation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884170/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Recap-IAC/frame_240.jpg)
-</Frame>
+![The image describes provisioning tools for deploying immutable infrastructure resources, including servers and databases, using multiple providers like Terraform and CloudFormation.](https://kodekloud.com/kk-media/image/upload/v1752884170/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Recap-IAC/frame_240.jpg)
 
-<Callout icon="lightbulb">
-  Although configuration management tools can provision infrastructure (for example, using Ansible’s EC2 module), this approach is less effective for managing larger infrastructures due to its procedural nature.
-</Callout>
+> **lightbulb** Although configuration management tools can provision infrastructure (for example, using Ansible’s EC2 module), this approach is less effective for managing larger infrastructures due to its procedural nature.
 
 ***
 
@@ -156,9 +148,7 @@ Terraform maintains the state of each provisioned resource in a state file, whic
 
 There is no one-size-fits-all solution when it comes to selecting an IaC tool. For deployments exclusive to AWS, CloudFormation offers simplicity and direct integration. However, for multi-cloud or hybrid environments, Terraform's vendor-agnostic design makes it an excellent choice.
 
-<Callout icon="lightbulb">
-  Maximize efficiency by leveraging the strengths of each IaC tool: use Terraform for resource provisioning and configuration management tools like Ansible for post-deployment tasks such as software installation and configuration.
-</Callout>
+> **lightbulb** Maximize efficiency by leveraging the strengths of each IaC tool: use Terraform for resource provisioning and configuration management tools like Ansible for post-deployment tasks such as software installation and configuration.
 
 For further insights on IaC best practices and tool comparisons, consider reviewing additional resources:
 
@@ -166,6 +156,4 @@ For further insights on IaC best practices and tool comparisons, consider review
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/e27c7cfe-a9f1-4e56-b55b-f908bd92d21c/lesson/85dd5318-6fff-4041-901e-ce75b6b47afb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/e27c7cfe-a9f1-4e56-b55b-f908bd92d21c/lesson/85dd5318-6fff-4041-901e-ce75b6b47afb)

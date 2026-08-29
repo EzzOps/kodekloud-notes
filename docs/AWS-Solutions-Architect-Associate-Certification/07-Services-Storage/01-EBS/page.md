@@ -8,7 +8,7 @@ In this article, we explore AWS Elastic Block Store (EBS) and the fundamentals o
 
 The diagram below illustrates a block storage system where data blocks are spread across two storage units and managed by a computer interface:
 
-![The image illustrates a block storage system, showing data blocks distributed across two storage units with a computer interface managing the blocks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865968/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS/block-storage-system-data-distribution.jpg)
+![The image illustrates a block storage system, showing data blocks distributed across two storage units with a computer interface managing the blocks.](https://kodekloud.com/kk-media/image/upload/v1752865968/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS/block-storage-system-data-distribution.jpg)
 
 ***
 
@@ -32,7 +32,7 @@ For migrating data across AZs, you can use snapshots. Taking a snapshot creates 
 
 The following diagram shows the architecture of EBS within a region, including two availability zones, EBS volumes, and EC2 instances. It also demonstrates the process of creating a volume from a snapshot:
 
-![The image illustrates the architecture of Elastic Block Storage (EBS) within a region, showing two availability zones with EBS volumes, instances, and the process of creating a volume from a snapshot.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865970/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS/elastic-block-storage-architecture-diagram.jpg)
+![The image illustrates the architecture of Elastic Block Storage (EBS) within a region, showing two availability zones with EBS volumes, instances, and the process of creating a volume from a snapshot.](https://kodekloud.com/kk-media/image/upload/v1752865970/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS/elastic-block-storage-architecture-diagram.jpg)
 
 For data migration between regions, the process is analogous:
 
@@ -42,7 +42,7 @@ For data migration between regions, the process is analogous:
 
 The next diagram depicts the process of copying an EBS snapshot from one region to another and creating a volume from that snapshot:
 
-![The image illustrates the process of copying an Elastic Block Storage (EBS) snapshot from one region to another and creating a volume from the snapshot in the new region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865972/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS/ebs-snapshot-copy-process-diagram.jpg)
+![The image illustrates the process of copying an Elastic Block Storage (EBS) snapshot from one region to another and creating a volume from the snapshot in the new region.](https://kodekloud.com/kk-media/image/upload/v1752865972/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS/ebs-snapshot-copy-process-diagram.jpg)
 
 ***
 
@@ -66,7 +66,7 @@ Amazon EBS offers various volume types designed to satisfy differing performance
 
 The image below summarizes the specifications of different SSD volume types, including durability, volume limits, IOPS, throughput, and features like multi-attach support and boot volume compatibility:
 
-![The image is a table comparing different types of SSD volumes, detailing their durability, use cases, volume size, IOPS, throughput, and support for Amazon EBS Multi-attach and boot volumes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865972/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS/ssd-volumes-comparison-table.jpg)
+![The image is a table comparing different types of SSD volumes, detailing their durability, use cases, volume size, IOPS, throughput, and support for Amazon EBS Multi-attach and boot volumes.](https://kodekloud.com/kk-media/image/upload/v1752865972/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS/ssd-volumes-comparison-table.jpg)
 
 ### 3. Hard Disk Drive (HDD) Volumes
 
@@ -77,7 +77,7 @@ The image below summarizes the specifications of different SSD volume types, inc
 
 The diagram below compares throughput optimized HDDs and cold HDDs, highlighting performance and cost differences:
 
-![The image is a table comparing throughput optimized and cold HDD volumes, detailing aspects like volume type, durability, use cases, volume size, IOPS, and throughput. It highlights differences in performance and cost considerations for storage solutions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865973/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS/throughput-optimized-cold-hdd-comparison.jpg)
+![The image is a table comparing throughput optimized and cold HDD volumes, detailing aspects like volume type, durability, use cases, volume size, IOPS, and throughput. It highlights differences in performance and cost considerations for storage solutions.](https://kodekloud.com/kk-media/image/upload/v1752865973/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS/throughput-optimized-cold-hdd-comparison.jpg)
 
 ### 4. Magnetic Volumes
 
@@ -86,7 +86,7 @@ The diagram below compares throughput optimized HDDs and cold HDDs, highlighting
 
 The table below (depicted in the image) details the specifications of magnetic volumes:
 
-![The image is a table describing the specifications of previous generation magnetic volumes, including volume type, use cases, volume size, IOPS, throughput, and boot volume support.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865974/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS/magnetic-volumes-specifications-table.jpg)
+![The image is a table describing the specifications of previous generation magnetic volumes, including volume type, use cases, volume size, IOPS, throughput, and boot volume support.](https://kodekloud.com/kk-media/image/upload/v1752865974/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS/magnetic-volumes-specifications-table.jpg)
 
 ***
 
@@ -102,10 +102,10 @@ Block storage divides data into distinct blocks that are uniquely identified, en
 
 The summary diagram below encapsulates the key block storage concepts, including how data is divided into blocks, presented as volumes, and managed with snapshots for data migration:
 
-![The image is a summary of block storage concepts, explaining how data is broken into blocks, presented as volumes, and used with EC2 instances. It includes four key points with numbered icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865975/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS/block-storage-concepts-summary.jpg)
+![The image is a summary of block storage concepts, explaining how data is broken into blocks, presented as volumes, and used with EC2 instances. It includes four key points with numbered icons.](https://kodekloud.com/kk-media/image/upload/v1752865975/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS/block-storage-concepts-summary.jpg)
 
 Additionally, the final diagram summarizes the essential features of EBS volumes—from provisioning in availability zones to snapshot-based data migration and the diversity of volume types offered:
 
-![The image is a summary slide with points about EBS volumes, including provisioning in availability zones, copying data using snapshots, and offering different volume types for storage needs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865976/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS/ebs-volumes-summary-slide.jpg)
+![The image is a summary slide with points about EBS volumes, including provisioning in availability zones, copying data using snapshots, and offering different volume types for storage needs.](https://kodekloud.com/kk-media/image/upload/v1752865976/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EBS/ebs-volumes-summary-slide.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/23e00d1f-6422-4fef-a9bf-e8f007be5514/lesson/de0c9c4d-ea8b-4f66-8c3b-4d8da957d6e8)

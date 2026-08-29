@@ -6,9 +6,7 @@ Practical guide to the six FinOps principles for coordinating teams, owning clou
 
 Welcome back. Previously we covered a high-level overview of FinOps and its three themes. This article explores the six FinOps principles in practical detail, showing how each principle applies day-to-day and what actions teams can take to operationalize them.
 
-<Callout icon="lightbulb">
-  FinOps is a cultural practice as much as a set of tools. The six principles below are designed to help teams turn cloud cost visibility into repeatable, value-driven actions across engineering, operations, and finance.
-</Callout>
+> **lightbulb** FinOps is a cultural practice as much as a set of tools. The six principles below are designed to help teams turn cloud cost visibility into repeatable, value-driven actions across engineering, operations, and finance.
 
 1. Collaboration between teams\
    The first principle is collaboration. Development, operations, and finance teams should work iteratively and in real time to improve costs, speed, and product outcomes. Collaboration is more than scheduled meetings — it’s a shared way of working. Example actions:
@@ -83,10 +81,6 @@ Next steps and resources
   * FinOps Foundation: [https://www.finops.org/](https://www.finops.org/)
   * AWS Cost Management: [https://aws.amazon.com/aws-cost-management/](https://aws.amazon.com/aws-cost-management/)
 
-<Callout icon="lightbulb">
-  Tip: Start small — implement one principle well (for example, visibility and ownership) and expand. Quick wins like tagging and alerts create momentum for deeper governance and purchasing optimizations later.
-</Callout>
+> **lightbulb** Tip: Start small — implement one principle well (for example, visibility and ownership) and expand. Quick wins like tagging and alerts create momentum for deeper governance and purchasing optimizations later.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/77e6b2c4-f9cd-410f-a396-178e2aa962bb/lesson/cb381ff8-69ec-439f-a576-c87e618b31ce" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/77e6b2c4-f9cd-410f-a396-178e2aa962bb/lesson/cb381ff8-69ec-439f-a576-c87e618b31ce)

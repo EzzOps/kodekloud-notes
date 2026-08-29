@@ -131,13 +131,9 @@ Further reading and references:
 * Homebrew package manager: [https://brew.sh](https://brew.sh)
 * htop system monitor: [https://htop.dev](https://htop.dev)
 
-<Callout icon="warning">
-  Tip: Don’t assume swiping an app away always stops background activity. Many systems pause apps rather than fully quit them. Check your OS documentation for app lifecycle specifics and battery/resource implications.
-</Callout>
+> **warning** Tip: Don’t assume swiping an app away always stops background activity. Many systems pause apps rather than fully quit them. Check your OS documentation for app lifecycle specifics and battery/resource implications.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/cd9f643e-0d2b-462e-9db6-701cf653e03f/lesson/c0fb6ae9-fc86-4503-81a5-f13aae062514" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/cd9f643e-0d2b-462e-9db6-701cf653e03f/lesson/c0fb6ae9-fc86-4503-81a5-f13aae062514)
 
 
 # OS User Interface Part 2
@@ -248,9 +244,7 @@ Many accessibility features also benefit general users: dark mode, captions, dic
 * The OS normalizes diverse inputs and routes outputs, providing a single, stable interface for apps.
 * Accessibility is a first-class OS responsibility to make devices usable for more people.
 
-<Callout icon="lightbulb">
-  Key idea: Apps ask, the OS decides, and the kernel (via system calls and drivers) talks to the hardware. This separation provides safety, simplicity, and stability.
-</Callout>
+> **lightbulb** Key idea: Apps ask, the OS decides, and the kernel (via system calls and drivers) talks to the hardware. This separation provides safety, simplicity, and stability.
 
 In the next lesson we'll examine how the OS schedules work, manages processes and threads, and allocates resources behind the scenes.
 
@@ -261,6 +255,4 @@ In the next lesson we'll examine how the OS schedules work, manages processes an
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [Accessibility in operating systems (concepts)](https://www.w3.org/WAI/standards-guidelines/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/cd9f643e-0d2b-462e-9db6-701cf653e03f/lesson/ec9ce52a-ccd8-4111-9ddd-33e8eaad997d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/cd9f643e-0d2b-462e-9db6-701cf653e03f/lesson/ec9ce52a-ccd8-4111-9ddd-33e8eaad997d)

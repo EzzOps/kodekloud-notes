@@ -22,18 +22,14 @@ Crates also serve as the primary unit for dependency management. Using external 
 
 Organizing code into crates promotes modularity, reusability, and maintainability. Think of a crate as a standalone module or library that can be shared across multiple projects.
 
-<Frame>
-  ![The image is a diagram titled "Importance of Crate," highlighting three key aspects: Compilation Unit, Dependency Management, and Modularity and Reusability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883970/notes-assets/images/Rust-Programming-Introduction-to-Crates/importance-of-crate-diagram.jpg)
-</Frame>
+![The image is a diagram titled "Importance of Crate," highlighting three key aspects: Compilation Unit, Dependency Management, and Modularity and Reusability.](https://kodekloud.com/kk-media/image/upload/v1752883970/notes-assets/images/Rust-Programming-Introduction-to-Crates/importance-of-crate-diagram.jpg)
 
 There are two main types of crates in Rust:
 
 * **Binary Crates:** Compile into executable programs. In a binary crate, the main source file (typically `main.rs`) contains the `main` function, which serves as the entry point.
 * **Library Crates:** Compile into libraries that can be used as dependencies by other projects. These do not have a `main` function; instead, they expose functionalities via a `lib.rs` file.
 
-<Frame>
-  ![The image describes two types of Rust crates: binary crates, which compile into executable programs, and library crates, which compile into libraries for use in other projects.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883971/notes-assets/images/Rust-Programming-Introduction-to-Crates/rust-crates-binary-library-diagram.jpg)
-</Frame>
+![The image describes two types of Rust crates: binary crates, which compile into executable programs, and library crates, which compile into libraries for use in other projects.](https://kodekloud.com/kk-media/image/upload/v1752883971/notes-assets/images/Rust-Programming-Introduction-to-Crates/rust-crates-binary-library-diagram.jpg)
 
 ***
 
@@ -41,9 +37,7 @@ There are two main types of crates in Rust:
 
 In this section, we will set up a binary crate from scratch. Follow these step-by-step instructions to create a new Rust binary project, write simple code, and run your project.
 
-<Callout icon="lightbulb">
-  Use Cargo to simplify project creation and dependency management. It generates a basic project structure automatically.
-</Callout>
+> **lightbulb** Use Cargo to simplify project creation and dependency management. It generates a basic project structure automatically.
 
 ### Step 1: Generate a New Project
 
@@ -193,9 +187,7 @@ Run the tests to verify functionality:
 cargo test --quiet
 ```
 
-<Callout icon="lightbulb">
-  Note that `cargo run` cannot be used with a library crate since it does not have an entry point.
-</Callout>
+> **lightbulb** Note that `cargo run` cannot be used with a library crate since it does not have an entry point.
 
 ***
 
@@ -317,6 +309,4 @@ For further reading and exploration, check out these helpful links:
 
 Happy coding and enjoy your adventures with Rust!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/4cdab411-800e-4072-90d8-005dd70de03c/lesson/de7c6fec-b9d1-427d-b650-ac491e906f5d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/4cdab411-800e-4072-90d8-005dd70de03c/lesson/de7c6fec-b9d1-427d-b650-ac491e906f5d)

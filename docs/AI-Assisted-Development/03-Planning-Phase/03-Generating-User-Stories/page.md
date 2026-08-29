@@ -26,7 +26,7 @@ The initial output focuses on high-level user stories relevant to end-users, suc
 
 Along with additional stories focusing on quality adjustments, intuitive interfaces, accessibility, security, and scalability, the following illustration provides context:
 
-![The image shows a webpage with a list of high-level user stories for a project, focusing on features like image upload, quality adjustment, image display, intuitive user interface, performance, accessibility, and security. The text is displayed in a dark-themed browser window.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857121/notes-assets/images/AI-Assisted-Development-Generating-User-Stories/user-stories-project-features-webpage.jpg)
+![The image shows a webpage with a list of high-level user stories for a project, focusing on features like image upload, quality adjustment, image display, intuitive user interface, performance, accessibility, and security. The text is displayed in a dark-themed browser window.](https://kodekloud.com/kk-media/image/upload/v1752857121/notes-assets/images/AI-Assisted-Development-Generating-User-Stories/user-stories-project-features-webpage.jpg)
 
 ***
 
@@ -43,7 +43,7 @@ Since the initial stories were more end-user oriented, the prompt was refined to
 
 The following screenshot showcases these development tasks:
 
-![The image shows a browser window with a dark-themed interface displaying a list of tasks related to image processing using OpenCV, Flask, and React. The tasks include image validation, quality adjustment, and image display functionalities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857122/notes-assets/images/AI-Assisted-Development-Generating-User-Stories/browser-dark-theme-image-processing-tasks.jpg)
+![The image shows a browser window with a dark-themed interface displaying a list of tasks related to image processing using OpenCV, Flask, and React. The tasks include image validation, quality adjustment, and image display functionalities.](https://kodekloud.com/kk-media/image/upload/v1752857122/notes-assets/images/AI-Assisted-Development-Generating-User-Stories/browser-dark-theme-image-processing-tasks.jpg)
 
 These refined user stories help graphic designers, project managers, and developers track feature progression while providing clear, actionable tasks for the development team.
 
@@ -63,11 +63,11 @@ During import, you might encounter errors related to header names (e.g., "area" 
 
 The edited CSV file is illustrated below:
 
-![The image shows a spreadsheet with user stories for an image optimizer project, including columns for title, description, priority, and area. There is also an error message about invalid and missing column headers during a CSV import in Azure DevOps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857124/notes-assets/images/AI-Assisted-Development-Generating-User-Stories/image-optimizer-user-stories-spreadsheet.jpg)
+![The image shows a spreadsheet with user stories for an image optimizer project, including columns for title, description, priority, and area. There is also an error message about invalid and missing column headers during a CSV import in Azure DevOps.](https://kodekloud.com/kk-media/image/upload/v1752857124/notes-assets/images/AI-Assisted-Development-Generating-User-Stories/image-optimizer-user-stories-spreadsheet.jpg)
 
 Once you correct the CSV and re-upload it, the tasks should import successfully. This successful import is demonstrated in the Azure DevOps board view:
 
-![The image shows a project management interface from Azure DevOps, displaying a list of work items related to an "Image Optimizer" project, with details such as ID, title, assigned person, state, and activity date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857125/notes-assets/images/AI-Assisted-Development-Generating-User-Stories/azure-devops-image-optimizer-interface.jpg)
+![The image shows a project management interface from Azure DevOps, displaying a list of work items related to an "Image Optimizer" project, with details such as ID, title, assigned person, state, and activity date.](https://kodekloud.com/kk-media/image/upload/v1752857125/notes-assets/images/AI-Assisted-Development-Generating-User-Stories/azure-devops-image-optimizer-interface.jpg)
 
 > **lightbulb** Using automation to generate and format user stories can significantly reduce the manual labor involved in setting up your project management tools like Azure DevOps or Jira.
 

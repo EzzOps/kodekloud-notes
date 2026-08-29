@@ -56,15 +56,11 @@ When you test the GET endpoint (using Postman, for example), you should see a re
 }
 ```
 
-<Callout icon="lightbulb">
-  As you continue to enhance your API, consider incorporating input validation and error handling mechanisms to build a fully functional CRUD-based application.
-</Callout>
+> **lightbulb** As you continue to enhance your API, consider incorporating input validation and error handling mechanisms to build a fully functional CRUD-based application.
 
 By following these guidelines, you ensure your API is both maintainable and aligned with RESTful best practices.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/bd56f1cf-6508-4b3c-986f-8db7c8ab4369" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/bd56f1cf-6508-4b3c-986f-8db7c8ab4369)
 
 
 # Crud Basics Best Practices
@@ -82,9 +78,7 @@ In this lesson, we explore what a CRUD application is while outlining the standa
 
 These operations form the backbone of any CRUD-based system.
 
-<Callout icon="lightbulb">
-  Following established API conventions not only improves code readability but also aids in maintaining consistency across your application.
-</Callout>
+> **lightbulb** Following established API conventions not only improves code readability but also aids in maintaining consistency across your application.
 
 ## API Endpoint Conventions
 
@@ -134,9 +128,7 @@ The following best practices are recommended when designing your API endpoints:
    @app.delete("/posts/{id}")
    ```
 
-<Callout icon="lightbulb">
-  The above endpoints ensure that your API remains consistent and easy to understand. Once you establish a CRUD API for one resource, implementing another typically involves replicating and modifying these routes.
-</Callout>
+> **lightbulb** The above endpoints ensure that your API remains consistent and easy to understand. Once you establish a CRUD API for one resource, implementing another typically involves replicating and modifying these routes.
 
 ## Consolidated CRUD Example
 
@@ -156,6 +148,4 @@ In the next lesson, we will refine our API endpoints further by ensuring they ad
 
 For further details and code examples, refer back to this guide as you continue to develop your API.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/d79377c2-6981-42d1-a72d-426ea03104ac" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/d79377c2-6981-42d1-a72d-426ea03104ac)

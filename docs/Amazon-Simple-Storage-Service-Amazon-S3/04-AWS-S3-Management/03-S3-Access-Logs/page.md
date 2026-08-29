@@ -41,7 +41,7 @@ Each log record consists of numerous fields, including:
 
 For the complete list of log fields, see **Monitoring Amazon S3 > Log Format** in the [AWS documentation][aws-logs]:
 
-![The image shows a webpage from the Amazon Simple Storage Service (S3) documentation, detailing server access log formats and examples. It includes sections on HTTP status, error codes, bytes sent, object size, total time, and turn-around time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869387/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Access-Logs/amazon-s3-server-access-log-format.jpg)
+![The image shows a webpage from the Amazon Simple Storage Service (S3) documentation, detailing server access log formats and examples. It includes sections on HTTP status, error codes, bytes sent, object size, total time, and turn-around time.](https://kodekloud.com/kk-media/image/upload/v1752869387/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Access-Logs/amazon-s3-server-access-log-format.jpg)
 
 ## Sample Log Entry
 
@@ -62,7 +62,7 @@ b0a88ac8fa921b2c7dfe REST.PUT.OBJECT s3-dg.pdf "PUT /DOC-EXAMPLE-BUCKET17/s3-dg.
 
 All generated log files are delivered as plain text to your designated logging bucket:
 
-![The image shows a webpage from the AWS documentation about Amazon S3 server access log format, detailing log record fields and providing an example of log records.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869388/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Access-Logs/aws-s3-server-access-log-format.jpg)
+![The image shows a webpage from the AWS documentation about Amazon S3 server access log format, detailing log record fields and providing an example of log records.](https://kodekloud.com/kk-media/image/upload/v1752869388/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Access-Logs/aws-s3-server-access-log-format.jpg)
 
 ## Links and References
 

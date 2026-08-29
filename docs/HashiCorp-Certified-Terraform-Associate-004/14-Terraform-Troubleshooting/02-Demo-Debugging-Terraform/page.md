@@ -58,9 +58,7 @@ Important details and best practices
 * Log files can become very large at `TRACE` level; prefer targeted runs or rotate logs frequently.
 * When troubleshooting, prefer `DEBUG` or `TRACE` only for the shortest time necessary to reduce noise and exposure.
 
-<Callout icon="warning">
-  Terraform logs (especially `TRACE`-level) can contain sensitive information such as credentials, tokens, or resource attributes. Be careful when saving, sharing, or uploading logs. Redact or sanitize logs before sharing externally.
-</Callout>
+> **warning** Terraform logs (especially `TRACE`-level) can contain sensitive information such as credentials, tokens, or resource attributes. Be careful when saving, sharing, or uploading logs. Redact or sanitize logs before sharing externally.
 
 Structured logs and machine parsing
 Some Terraform versions and environments support structured logging or options to emit logs in machine-readable formats (JSON) or provide ways to post-process trace output. Check the official Terraform environment variables and CLI docs for version-specific guidance:
@@ -69,14 +67,12 @@ Some Terraform versions and environments support structured logging or options t
 
 Quick exam & quick-reference summary
 
-<Callout icon="lightbulb">
-  Remember these essentials for studying and troubleshooting:
+> **lightbulb** Remember these essentials for studying and troubleshooting:
 
   * Key variables: `TF_LOG`, `TF_LOG_CORE`, `TF_LOG_PROVIDER`, `TF_LOG_PATH`.
   * Log level order (most → least verbose): `TRACE`, `DEBUG`, `INFO`, `WARN`, `ERROR`.
   * `TF_LOG_PATH` only works when a TF\_LOG variable is set.
   * Logs default to `STDERR`; use `TF_LOG_PATH` to write to a file.
-</Callout>
 
 References and further reading
 
@@ -85,9 +81,7 @@ References and further reading
 
 That covers the essentials of Terraform logging. When a problem proves difficult to reproduce or diagnose, enabling the appropriate log level and capturing the output to a file will often reveal the cause.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/5a3363d1-83cc-4a39-997d-82fa687251ac/lesson/2c0e788a-1c6b-43e5-b3e2-417dbc64b0d8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/5a3363d1-83cc-4a39-997d-82fa687251ac/lesson/2c0e788a-1c6b-43e5-b3e2-417dbc64b0d8)
 
 
 # Demo Debugging Terraform

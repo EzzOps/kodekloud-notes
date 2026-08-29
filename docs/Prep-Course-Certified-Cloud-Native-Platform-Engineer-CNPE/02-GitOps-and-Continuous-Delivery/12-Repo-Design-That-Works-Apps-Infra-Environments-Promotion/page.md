@@ -71,9 +71,7 @@ gitops-configs/
 └── clusters/
 ```
 
-<Callout icon="warning">
-  Mixing app source and GitOps config leads to coupling of lifecycles, larger review scopes, and permission escalations. Use separate repos to enforce different PR workflows and access controls.
-</Callout>
+> **warning** Mixing app source and GitOps config leads to coupling of lifecycles, larger review scopes, and permission escalations. Use separate repos to enforce different PR workflows and access controls.
 
 ## Monorepo vs multi-repo for GitOps configs
 
@@ -163,9 +161,7 @@ For many organizations, a directory-based repo layout combined with tag/image-ba
 * Use clear, small overlays per environment (so Argo CD Applications can point to overlay paths).
 * Promote by bumping the image tag in the next environment — this keeps diffs small, auditable, and focused on the artifact version.
 
-<Callout icon="lightbulb">
-  Recommendation: Use directory-based environment layouts with small overlays, and promote by updating image tags. This produces small, auditable PRs and integrates well with tools like Argo CD. See Argo CD concepts for Application and ApplicationSet patterns: [https://learn.kodekloud.com/user/courses/gitops-with-argocd](https://learn.kodekloud.com/user/courses/gitops-with-argocd)
-</Callout>
+> **lightbulb** Recommendation: Use directory-based environment layouts with small overlays, and promote by updating image tags. This produces small, auditable PRs and integrates well with tools like Argo CD. See Argo CD concepts for Application and ApplicationSet patterns: [https://learn.kodekloud.com/user/courses/gitops-with-argocd](https://learn.kodekloud.com/user/courses/gitops-with-argocd)
 
 ## Reference repo structure (payoff)
 
@@ -194,6 +190,4 @@ When a new team member joins, the directory tree becomes living documentation: t
 * Define a clear promotion path (dev → staging → prod) so changes move predictably and are auditable.
 * Separate apps from infrastructure so teams have distinct ownership, review policies, and reduced merge conflicts.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/a1fa35aa-97ac-4a69-8a50-67c59699ff12" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/a1fa35aa-97ac-4a69-8a50-67c59699ff12)

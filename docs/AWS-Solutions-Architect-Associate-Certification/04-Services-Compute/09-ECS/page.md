@@ -14,7 +14,7 @@ Containers package an application with all its necessary files, libraries, and d
 
 Think of containers as lightweight virtual machines that include only what is needed to run your application.
 
-![The image explains what containers are, describing them as tools for packaging applications with necessary files and dependencies, deployable on machines, and likened to lightweight virtual machines. It includes simple graphics of a container and server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864892/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/containers-packaging-applications-diagram.jpg)
+![The image explains what containers are, describing them as tools for packaging applications with necessary files and dependencies, deployable on machines, and likened to lightweight virtual machines. It includes simple graphics of a container and server.](https://kodekloud.com/kk-media/image/upload/v1752864892/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/containers-packaging-applications-diagram.jpg)
 
 ***
 
@@ -29,7 +29,7 @@ When working with containers, be aware of the following challenges:
 * Automated monitoring is crucial to automatically redeploy containers if one fails.
 * Scaling out as traffic increases (and scaling in when it decreases) is necessary for efficient resource usage.
 
-![The image illustrates container challenges, showing multiple hosts with containers, some marked with a red cross indicating issues. It highlights the distribution and management of containers across different hosts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864893/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/container-challenges-multiple-hosts.jpg)
+![The image illustrates container challenges, showing multiple hosts with containers, some marked with a red cross indicating issues. It highlights the distribution and management of containers across different hosts.](https://kodekloud.com/kk-media/image/upload/v1752864893/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/container-challenges-multiple-hosts.jpg)
 
 To address these challenges, container orchestrators are employed.
 
@@ -47,7 +47,7 @@ Container orchestrators provide a management layer for containerized environment
 
 These orchestrators act like managers ensuring that your containers (think of them as employees) perform efficiently. Popular orchestrators include Kubernetes, Apache Mesos, and AWS ECS.
 
-![The image describes container orchestrators, featuring Kubernetes, Apache Mesos, and ECS, along with their responsibilities such as deploying containers, load-balancing, and restarting failed containers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864895/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/container-orchestrators-kubernetes-mesos-ecs.jpg)
+![The image describes container orchestrators, featuring Kubernetes, Apache Mesos, and ECS, along with their responsibilities such as deploying containers, load-balancing, and restarting failed containers.](https://kodekloud.com/kk-media/image/upload/v1752864895/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/container-orchestrators-kubernetes-mesos-ecs.jpg)
 
 ECS is AWS's proprietary solution for container orchestration challenges.
 
@@ -62,7 +62,7 @@ There are two primary launch options with ECS:
 * **[EC2 Launch Type](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2):** You manage your own EC2 instances as a cluster, giving you complete control over the underlying servers.
 * **Fargate Launch Type:** AWS handles the compute infrastructure using a serverless model. You only need to specify the required configurations, and AWS provisions the compute resources automatically.
 
-![The image is an infographic about Amazon's Elastic Container Service (ECS), describing it as a fully managed container orchestration service by AWS, with containers running on EC2 instances or Fargate. It notes that ECS is proprietary to AWS, making migration to other cloud providers more difficult.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864896/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/amazon-ecs-infographic-container-orchestration.jpg)
+![The image is an infographic about Amazon's Elastic Container Service (ECS), describing it as a fully managed container orchestration service by AWS, with containers running on EC2 instances or Fargate. It notes that ECS is proprietary to AWS, making migration to other cloud providers more difficult.](https://kodekloud.com/kk-media/image/upload/v1752864896/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/amazon-ecs-infographic-container-orchestration.jpg)
 
 ***
 
@@ -79,22 +79,22 @@ The [EC2 Launch Type](https://learn.kodekloud.com/user/courses/amazon-elastic-co
 
 Once your instances register with the ECS control plane, containers (or tasks) are deployed across them. This method provides granular control over your infrastructure.
 
-![The image illustrates the management of EC2 instances within an ECS cluster, highlighting components like patches, firewalls, ECS agents, and Docker, with a note on the need to manage the underlying infrastructure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864897/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/ec2-ecs-cluster-management-diagram.jpg)
+![The image illustrates the management of EC2 instances within an ECS cluster, highlighting components like patches, firewalls, ECS agents, and Docker, with a note on the need to manage the underlying infrastructure.](https://kodekloud.com/kk-media/image/upload/v1752864897/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/ec2-ecs-cluster-management-diagram.jpg)
 
 ### Fargate Launch Type
 
 Fargate, on the other hand, offers a serverless approach where all infrastructure management is handled by AWS. You do not provision or maintain EC2 instances. Simply define your container configuration parameters (such as compute and memory requirements), and Fargate provisions the necessary compute resources on demand. This option follows a pay-as-you-go pricing model, making it cost-efficient.
 
-![The image is a diagram explaining AWS ECS Fargate, highlighting its serverless architecture, automatic server creation, and lack of need for EC2 server maintenance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864899/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/aws-ecs-fargate-diagram.jpg)
+![The image is a diagram explaining AWS ECS Fargate, highlighting its serverless architecture, automatic server creation, and lack of need for EC2 server maintenance.](https://kodekloud.com/kk-media/image/upload/v1752864899/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/aws-ecs-fargate-diagram.jpg)
 
 Once you set your configuration, ECS deploys your container tasks, and you pay only for the compute resources you actively use.
 
-![The image is an illustration explaining AWS ECS Fargate, highlighting its serverless architecture, on-demand server creation, and cost efficiency. It includes icons representing the ECS control plane, Fargate, and clusters.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864900/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/aws-ecs-fargate-architecture-illustration.jpg)
+![The image is an illustration explaining AWS ECS Fargate, highlighting its serverless architecture, on-demand server creation, and cost efficiency. It includes icons representing the ECS control plane, Fargate, and clusters.](https://kodekloud.com/kk-media/image/upload/v1752864900/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/aws-ecs-fargate-architecture-illustration.jpg)
 
 > **lightbulb** * **EC2:** Requires upfront resource management, runs continuously, and offers enhanced control.
   * **Fargate:** Minimizes management overhead, operates on a pay-as-you-go model, and streamlines the deployment process.
 
-![The image compares EC2 and Fargate, highlighting that EC2 requires resource management and offers more control, while Fargate doesn't require resource management and charges based on usage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864902/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/ec2-vs-fargate-comparison.jpg)
+![The image compares EC2 and Fargate, highlighting that EC2 requires resource management and offers more control, while Fargate doesn't require resource management and charges based on usage.](https://kodekloud.com/kk-media/image/upload/v1752864902/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/ec2-vs-fargate-comparison.jpg)
 
 ***
 
@@ -132,7 +132,7 @@ web:
 
 In this example, the task definition serves as a blueprint for launching one or more container tasks.
 
-![The image illustrates the concept of ECS Tasks, showing a task definition leading to two container tasks, with notes explaining that a task is an instance of a task definition and a running container with defined settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864903/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/ecs-tasks-container-definition-diagram.jpg)
+![The image illustrates the concept of ECS Tasks, showing a task definition leading to two container tasks, with notes explaining that a task is an instance of a task definition and a running container with defined settings.](https://kodekloud.com/kk-media/image/upload/v1752864903/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/ecs-tasks-container-definition-diagram.jpg)
 
 ***
 
@@ -142,7 +142,7 @@ An ECS **service** ensures that a specified number of tasks (containers) are alw
 
 For instance, if you're deploying a Python application, you might define its task and then create a service to maintain two or more instances. If a task fails or if an instance goes down, the service will automatically redeploy it.
 
-![The image illustrates an ECS (Elastic Container Service) setup, showing a service managing two tasks within a cluster, with a note explaining that a service ensures a certain number of tasks are always running.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864904/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/ecs-service-tasks-cluster-diagram.jpg)
+![The image illustrates an ECS (Elastic Container Service) setup, showing a service managing two tasks within a cluster, with a note explaining that a service ensures a certain number of tasks are always running.](https://kodekloud.com/kk-media/image/upload/v1752864904/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/ecs-service-tasks-cluster-diagram.jpg)
 
 Typically, each component of your application (such as the front end, back end, and database) would have its own service to ensure the required number of containers are consistently available.
 
@@ -160,7 +160,7 @@ The load balancer performs the following functions:
 
 Although adding a load balancer is optional, it is highly recommended for production environments to ensure high availability and reliability.
 
-![The image illustrates a diagram of ECS (Elastic Container Service) with load balancers, showing how external traffic is routed to multiple servers. It includes icons representing servers and Python, with a note about assigning a load balancer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864906/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/ecs-load-balancer-diagram.jpg)
+![The image illustrates a diagram of ECS (Elastic Container Service) with load balancers, showing how external traffic is routed to multiple servers. It includes icons representing servers and Python, with a note about assigning a load balancer.](https://kodekloud.com/kk-media/image/upload/v1752864906/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECS/ecs-load-balancer-diagram.jpg)
 
 ***
 

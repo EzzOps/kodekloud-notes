@@ -6,9 +6,7 @@ This article explores storage security as a vital part of a defense in depth str
 
 In this article, we explore storage security as a critical component of a comprehensive defense in depth strategy. Our approach fortifies your environment by integrating multiple layers of protection including physical security, identity and access management, perimeter security, network security, host security, and container security. In previous discussions, we covered application security in depth.
 
-<Frame>
-  ![The image illustrates a "Defense in Depth" strategy with concentric layers of security, including Physical Security, Identity & Access, Perimeter, Network, Compute, Application, and Data, each associated with specific security measures.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881780/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Introduction/defense-in-depth-security-strategy.jpg)
-</Frame>
+![The image illustrates a "Defense in Depth" strategy with concentric layers of security, including Physical Security, Identity & Access, Perimeter, Network, Compute, Application, and Data, each associated with specific security measures.](https://kodekloud.com/kk-media/image/upload/v1752881780/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Introduction/defense-in-depth-security-strategy.jpg)
 
 ## Securing the Core: Data
 
@@ -27,12 +25,8 @@ The following topics outline our approach to ensuring storage security:
 * **Configuring Azure File Authentication:** Secure your file shares by enforcing robust authentication methods.
 * **Enabling the Secure Transfer Required Property:** Force encrypted data transfers to safeguard your data in transit.
 
-<Callout icon="lightbulb">
-  For additional insights on Azure security best practices, visit the [Azure Security Documentation](https://docs.microsoft.com/en-us/azure/security/fundamentals/).
-</Callout>
+> **lightbulb** For additional insights on Azure security best practices, visit the [Azure Security Documentation](https://docs.microsoft.com/en-us/azure/security/fundamentals/).
 
 We begin our deep dive into securing storage with an overview of data sovereignty—examining where your data resides, the impact of local compliance, and the overall implications for your security strategy.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7acacade-befa-46b1-99e2-3f298d33623d/lesson/326e7c29-757e-4aab-b646-b30d3639f07a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7acacade-befa-46b1-99e2-3f298d33623d/lesson/326e7c29-757e-4aab-b646-b30d3639f07a)

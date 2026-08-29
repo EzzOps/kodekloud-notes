@@ -134,15 +134,11 @@ backend:
 
 Because `app-config.local.yaml` has precedence in development, the effective configuration used by `yarn dev` is the merge of `app-config.yaml` and the local overrides. After creating or modifying `app-config.local.yaml`, restart the dev server.
 
-<Callout icon="lightbulb">
-  Use `app-config.local.yaml` for developer- or machine-specific settings (like using an external IP for a demo server). Keep `app-config.yaml` for defaults shared among environments, and use production-specific files (e.g., `app-config.production.yaml`) when deploying to production.
-</Callout>
+> **lightbulb** Use `app-config.local.yaml` for developer- or machine-specific settings (like using an external IP for a demo server). Keep `app-config.yaml` for defaults shared among environments, and use production-specific files (e.g., `app-config.production.yaml`) when deploying to production.
 
 Security reminder
 
-<Callout icon="warning">
-  Exposing a development server on a public IP can expose sensitive endpoints or secrets. Avoid using production secrets in development configs and secure access with firewall rules or VPNs when demoing externally.
-</Callout>
+> **warning** Exposing a development server on a public IP can expose sensitive endpoints or secrets. Avoid using production secrets in development configs and secure access with firewall rules or VPNs when demoing externally.
 
 Troubleshooting checklist
 
@@ -164,9 +160,7 @@ References and further reading
 * Backstage Dev Mode: [https://backstage.io/docs/development/dev-setup](https://backstage.io/docs/development/dev-setup)
 * CORS and browser security: [https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/fcbbf923-69c3-4147-bd51-18db2bd18957/lesson/2093a42d-0510-427e-b3c3-2f1e3c932bd4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/fcbbf923-69c3-4147-bd51-18db2bd18957/lesson/2093a42d-0510-427e-b3c3-2f1e3c932bd4)
 
 
 # Demo Exploring Backstage
@@ -255,9 +249,7 @@ The Home tab provides quick access to every entity type. Key points:
 * Groups: shows groups and the components they own — useful to understand team responsibilities.
 * Ownership in Backstage must reference either a user or a group string, for example `user:alice` or `group:frontend-team`.
 
-<Callout icon="lightbulb">
-  Ownership must be assigned to an individual (`user:...`) or a group (`group:...`). Use consistent naming to keep ownership and the relations graph accurate.
-</Callout>
+> **lightbulb** Ownership must be assigned to an individual (`user:...`) or a group (`group:...`). Use consistent naming to keep ownership and the relations graph accurate.
 
 ## Documentation (TechDocs) and global search
 
@@ -329,8 +321,6 @@ You’ve explored the Backstage Catalog, component and API entity pages, relatio
 
 Further hands-on exploration will deepen your understanding of Backstage and how it centralizes software metadata, documentation, and developer workflows.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/fcbbf923-69c3-4147-bd51-18db2bd18957/lesson/2fb83ce7-f036-4c36-8faf-35a4c24d5096" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/fcbbf923-69c3-4147-bd51-18db2bd18957/lesson/2fb83ce7-f036-4c36-8faf-35a4c24d5096)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/fcbbf923-69c3-4147-bd51-18db2bd18957/lesson/ab74222d-b1db-4adc-8205-098552e46ba6" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/fcbbf923-69c3-4147-bd51-18db2bd18957/lesson/ab74222d-b1db-4adc-8205-098552e46ba6)

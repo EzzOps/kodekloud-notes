@@ -27,9 +27,7 @@ Access: (0640/-rw-r-----)  Uid: ( 1000/aaron) Gid: (   10/wheel)
 > * Group `4` = `r--`
 > * Others `0` = `---`
 
-<Frame>
-  ![The image illustrates octal file permissions, showing the conversion between symbolic, binary, and decimal representations. It includes examples of permissions like "rw-r--r--" and "rwxr-xr-x" with their corresponding binary and decimal values.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881483/notes-assets/images/Linux-System-Administration-for-Beginners-List-set-and-change-standard-file-permissions/octal-file-permissions-symbolic-binary.jpg)
-</Frame>
+![The image illustrates octal file permissions, showing the conversion between symbolic, binary, and decimal representations. It includes examples of permissions like "rw-r--r--" and "rwxr-xr-x" with their corresponding binary and decimal values.](https://kodekloud.com/kk-media/image/upload/v1752881483/notes-assets/images/Linux-System-Administration-for-Beginners-List-set-and-change-standard-file-permissions/octal-file-permissions-symbolic-binary.jpg)
 
 Set `0640` directly:
 
@@ -45,9 +43,7 @@ $ chmod 640 family_dog.jpg
 * [chmod Manual](https://man7.org/linux/man-pages/man1/chmod.1.html)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/d9351f50-10b1-4206-b83a-ddd73adf5637" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/d9351f50-10b1-4206-b83a-ddd73adf5637)
 
 
 # Read and use System Documentation
@@ -119,9 +115,7 @@ A typical man page contains:
 
 Many entries exist in multiple man sections (e.g., `printf`). Specify the section number to disambiguate:
 
-<Callout icon="lightbulb">
-  Section 1 is for user commands, while Section 3 covers C library functions.
-</Callout>
+> **lightbulb** Section 1 is for user commands, while Section 3 covers C library functions.
 
 ```bash theme={null}
 $ man 1 printf   # The printf command
@@ -139,13 +133,11 @@ mkdir (1)    - make directories
 du (1)       - estimate file space usage
 ```
 
-<Callout icon="triangle-alert">
-  If you get “no entry found,” update the man database before retrying:
+> **triangle-alert** If you get “no entry found,” update the man database before retrying:
 
   ```bash theme={null}
   sudo mandb
   ```
-</Callout>
 
 To limit results to specific sections (e.g., 1 and 8):
 
@@ -209,8 +201,6 @@ For the Linux Foundation Certified SysAdmin exam, all of these lookup methods ar
 * [Linux man-pages Project](https://www.kernel.org/doc/man-pages/)
 * [Bash Reference Manual – Completion](https://www.gnu.org/software/bash/manual/html_node/Programmable-Completion.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/55f044a8-031b-433d-9031-47c68a7e840a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/55f044a8-031b-433d-9031-47c68a7e840a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/0cedd136-5feb-47ab-ac75-45697d32cf8b" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/0cedd136-5feb-47ab-ac75-45697d32cf8b)

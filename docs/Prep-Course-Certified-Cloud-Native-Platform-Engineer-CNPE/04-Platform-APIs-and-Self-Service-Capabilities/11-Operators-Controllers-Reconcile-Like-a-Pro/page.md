@@ -19,9 +19,7 @@ The controller watches `Database` resources and drives the provisioning workflow
 * OpenAPI v3 validation enforces correctness at the API layer before controller logic runs.
 * The lifecycle is simple but powerful: CRD defines the schema, CR is the instance, and the controller implements the actions required to realize the instance.
 
-<Callout icon="lightbulb">
-  CRDs make your platform concepts first-class Kubernetes resources so platform teams can expose domain-specific APIs that integrate seamlessly with kubectl, RBAC, GitOps, and policy engines — all without building a separate API server.
-</Callout>
+> **lightbulb** CRDs make your platform concepts first-class Kubernetes resources so platform teams can expose domain-specific APIs that integrate seamlessly with kubectl, RBAC, GitOps, and policy engines — all without building a separate API server.
 
 ## Further reading and references
 
@@ -31,9 +29,7 @@ The controller watches `Database` resources and drives the provisioning workflow
 * OpenAPI v3 specification: [https://spec.openapis.org/oas/v3.0.3](https://spec.openapis.org/oas/v3.0.3)
 * Gatekeeper / OPA: [https://open-policy-agent.github.io/gatekeeper/](https://open-policy-agent.github.io/gatekeeper/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/aae4d782-46cf-4e49-acd3-faf8d0fe71bd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/aae4d782-46cf-4e49-acd3-faf8d0fe71bd)
 
 
 # Operators Controllers Reconcile Like a Pro

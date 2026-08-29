@@ -157,9 +157,7 @@ Which approach to choose depends on your project complexity and operational need
 
 You can also mix approaches. For example, use Kustomize to patch a set of manifests that include rendered Helm releases, or keep simple resources as plain YAML while packaging third-party components with Helm. The important part: keep everything declarative in Git so your GitOps operator can manage the complete deployment pipeline.
 
-<Callout icon="lightbulb">
-  Mix-and-match strategies are common: use plain YAML for small resources, Kustomize for environment overlays, and Helm for complex or third-party packages. Most GitOps operators (Argo CD, Flux) can render and apply manifests from any of these formats.
-</Callout>
+> **lightbulb** Mix-and-match strategies are common: use plain YAML for small resources, Kustomize for environment overlays, and Helm for complex or third-party packages. Most GitOps operators (Argo CD, Flux) can render and apply manifests from any of these formats.
 
 <Frame>
   <img alt="The image compares three Kubernetes manifest formats and packaging tools: plain YAML for simple applications, Kustomize for managing configurations across environments, and Helm for packaging complex applications with dependencies." />
@@ -173,6 +171,4 @@ You can also mix approaches. For example, use Kustomize to patch a set of manife
 * [Helm documentation](https://helm.sh/docs/)
 * Kubernetes concepts: [What is Kubernetes?](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/0ce93da9-fc89-4973-8147-2f87e1d965d0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/0ce93da9-fc89-4973-8147-2f87e1d965d0)

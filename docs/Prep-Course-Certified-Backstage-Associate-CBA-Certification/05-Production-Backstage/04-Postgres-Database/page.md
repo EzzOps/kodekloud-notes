@@ -88,9 +88,7 @@ exist in your repo root (or in the CI build context).
 
 ## Important: Docker BuildKit
 
-<Callout icon="warning">
-  Make sure Docker BuildKit is enabled when building this Dockerfile (see [https://docs.docker.com/develop/develop-images/build\_enhancements/](https://docs.docker.com/develop/develop-images/build_enhancements/)). BuildKit is required for the `--mount=type=cache` and certain ownership behaviors used in the Dockerfile. You can enable it by setting `DOCKER_BUILDKIT=1` in your build environment.
-</Callout>
+> **warning** Make sure Docker BuildKit is enabled when building this Dockerfile (see [https://docs.docker.com/develop/develop-images/build\_enhancements/](https://docs.docker.com/develop/develop-images/build_enhancements/)). BuildKit is required for the `--mount=type=cache` and certain ownership behaviors used in the Dockerfile. You can enable it by setting `DOCKER_BUILDKIT=1` in your build environment.
 
 BuildKit is required for mount caching and for correct ownership handling that the Dockerfile relies on. In CI, enable BuildKit or use a builder (kaniko/buildah) that supports these Dockerfile features.
 
@@ -146,9 +144,7 @@ If you override or provide additional configuration files at runtime, either inc
 
 This sequence packages your Backstage backend into a production-ready Docker image, following recommended practices for reproducible builds and CI/CD.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/d82fc857-4b5c-42a7-ab46-3772f749a741/lesson/24aeb58f-e979-44e3-802d-917e6b7531a8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/d82fc857-4b5c-42a7-ab46-3772f749a741/lesson/24aeb58f-e979-44e3-802d-917e6b7531a8)
 
 
 # Postgres Database
@@ -216,9 +212,7 @@ backend:
     connection: ${DATABASE_URL}
 ```
 
-<Callout icon="lightbulb">
-  After configuring the connection, run Backstage's database migrations to create required tables and schemas. The exact migration command depends on your repository (check package.json scripts or README). Run migrations before starting Backstage in production to avoid runtime schema errors.
-</Callout>
+> **lightbulb** After configuring the connection, run Backstage's database migrations to create required tables and schemas. The exact migration command depends on your repository (check package.json scripts or README). Run migrations before starting Backstage in production to avoid runtime schema errors.
 
 Best practices and operational notes
 
@@ -228,9 +222,7 @@ Best practices and operational notes
 * Regularly back up your Postgres data and test restore procedures.
 * For production, prefer a managed or highly available Postgres offering (for example, AWS RDS, Google Cloud SQL, or a clustered deployment).
 
-<Callout icon="warning">
-  Do not run production Backstage against an ephemeral or in-memory database. Data loss can occur on process restarts. Also ensure your migration strategy is part of your deployment pipeline to avoid schema drift.
-</Callout>
+> **warning** Do not run production Backstage against an ephemeral or in-memory database. Data loss can occur on process restarts. Also ensure your migration strategy is part of your deployment pipeline to avoid schema drift.
 
 Quick reference — example environment variable names
 
@@ -253,6 +245,4 @@ Links and references
 
 With the database configured and migrations applied, Backstage will persist entities and other state to Postgres instead of using an ephemeral in-memory store.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/d82fc857-4b5c-42a7-ab46-3772f749a741/lesson/cdb1de6b-4cdd-4d3d-b3cb-6786ac4117a6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/d82fc857-4b5c-42a7-ab46-3772f749a741/lesson/cdb1de6b-4cdd-4d3d-b3cb-6786ac4117a6)

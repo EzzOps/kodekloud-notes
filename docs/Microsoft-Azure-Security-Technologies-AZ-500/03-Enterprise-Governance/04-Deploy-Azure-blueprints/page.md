@@ -22,9 +22,7 @@ During the compose phase, you create a blueprint by integrating three vital comp
 
 This phase is akin to drafting a building blueprint—strategically planning where key components like walls and electrical outlets will be located.
 
-<Frame>
-  ![The image is an infographic explaining Azure Blueprint, a service for orchestrating the deployment of Azure resources, using role-based access controls, policy definitions, and ARM templates to manage and scale across subscriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881803/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-blueprints/azure-blueprint-infographic-deployment.jpg)
-</Frame>
+![The image is an infographic explaining Azure Blueprint, a service for orchestrating the deployment of Azure resources, using role-based access controls, policy definitions, and ARM templates to manage and scale across subscriptions.](https://kodekloud.com/kk-media/image/upload/v1752881803/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-blueprints/azure-blueprint-infographic-deployment.jpg)
 
 ### Manage
 
@@ -34,9 +32,7 @@ Once your blueprint is composed, apply it to an Azure environment—whether it's
 
 As your organization evolves, the need to adjust your blueprint may arise. Scaling involves updating your blueprint to accommodate changes, similar to modifying a building plan to include additional floors or new facilities. With simple updates and re-assignments, you can ensure that new deployments remain both compliant and secure.
 
-<Callout icon="lightbulb">
-  Remember that scaling a blueprint is a continuous process that ensures your infrastructure adapts to new business needs while maintaining compliance.
-</Callout>
+> **lightbulb** Remember that scaling a blueprint is a continuous process that ensures your infrastructure adapts to new business needs while maintaining compliance.
 
 ***
 
@@ -48,9 +44,7 @@ Imagine a building blueprint that guides architects and builders with clear, det
 * **Manage:** Similar to executing the blueprint at multiple construction sites, ensuring consistency.
 * **Scale:** Adjusting the blueprint for expansion, much like planning for additional buildings as demand increases.
 
-<Frame>
-  ![The image outlines the key features of Azure Blueprint, highlighting Artifact Management, Environment Standardization, and Compliance and Governance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881804/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-blueprints/azure-blueprint-key-features.jpg)
-</Frame>
+![The image outlines the key features of Azure Blueprint, highlighting Artifact Management, Environment Standardization, and Compliance and Governance.](https://kodekloud.com/kk-media/image/upload/v1752881804/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-blueprints/azure-blueprint-key-features.jpg)
 
 ***
 
@@ -94,9 +88,7 @@ Follow these steps to get started with Azure Blueprints in the Azure Portal:
 1. **Create a Blueprint:**\
    Begin by creating a blueprint that includes artifacts such as ARM templates, policy definitions, role assignments, and resource groups.
 
-<Frame>
-  ![The image shows the "Getting Started" page for Azure Blueprints, providing options to create a blueprint, apply it to a scope, and track assignments. It includes a brief overview and links for further information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881805/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-blueprints/azure-blueprints-getting-started.jpg)
-</Frame>
+![The image shows the "Getting Started" page for Azure Blueprints, providing options to create a blueprint, apply it to a scope, and track assignments. It includes a brief overview and links for further information.](https://kodekloud.com/kk-media/image/upload/v1752881805/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-blueprints/azure-blueprints-getting-started.jpg)
 
 2. **Save and Publish:**\
    Once the blueprint is configured, save your draft and publish it (e.g., version 1.0).
@@ -104,9 +96,7 @@ Follow these steps to get started with Azure Blueprints in the Azure Portal:
 3. **Assign the Blueprint:**\
    Assign the blueprint to your chosen scope (subscription or management group). During this process, any dynamic values (like resource group names or locations) will be prompted for input while static values remain unchanged.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a blueprint, listing various templates with names and descriptions for deploying and configuring policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881806/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-blueprints/azure-portal-blueprint-templates.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a blueprint, listing various templates with names and descriptions for deploying and configuring policies.](https://kodekloud.com/kk-media/image/upload/v1752881806/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-blueprints/azure-portal-blueprint-templates.jpg)
 
 4. **Add Artifacts:**\
    Within the scope, add artifacts such as resource groups, policy assignments, role assignments, and ARM templates.
@@ -135,33 +125,23 @@ Follow these steps to get started with Azure Blueprints in the Azure Portal:
 
    This ARM template provisions a standard storage account.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating a blueprint, specifically in the "Add artifact" section. It displays options for selecting policy assignments and various initiative definitions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881807/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-blueprints/azure-blueprint-add-artifact-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating a blueprint, specifically in the "Add artifact" section. It displays options for selecting policy assignments and various initiative definitions.](https://kodekloud.com/kk-media/image/upload/v1752881807/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-blueprints/azure-blueprint-add-artifact-interface.jpg)
 
 5. **Configure Role Assignments and Additional Artifacts:**\
    Add further artifacts such as role assignments. For instance, assign a Reader role to a specific group for monitoring purposes.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating a blueprint, specifically the "Add artifact" section where a role assignment is being configured. The user is selecting a role and a user, app, or group to assign.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881808/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-blueprints/azure-blueprint-add-artifact-role.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating a blueprint, specifically the "Add artifact" section where a role assignment is being configured. The user is selecting a role and a user, app, or group to assign.](https://kodekloud.com/kk-media/image/upload/v1752881808/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-blueprints/azure-blueprint-add-artifact-role.jpg)
 
 6. **Finalize and Track Deployments:**\
    After adding all artifacts and publishing the blueprint, assign it to deploy the resources. You can then track the blueprint assignment status via the Azure portal.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a blueprint, specifically on the "Artifacts" tab, where various artifacts like resource groups, policy assignments, and role assignments are listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881809/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-blueprints/azure-portal-blueprint-artifacts.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a blueprint, specifically on the "Artifacts" tab, where various artifacts like resource groups, policy assignments, and role assignments are listed.](https://kodekloud.com/kk-media/image/upload/v1752881809/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-blueprints/azure-portal-blueprint-artifacts.jpg)
 
 Finally, review the deployment status and check resource details once the process is complete.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying details of a blueprint assignment named "Assignment-AZ500-Blueprint," indicating that the assignment succeeded. It includes information about the subscription, resources, and their lock states.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881810/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-blueprints/azure-portal-assignment-success.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying details of a blueprint assignment named "Assignment-AZ500-Blueprint," indicating that the assignment succeeded. It includes information about the subscription, resources, and their lock states.](https://kodekloud.com/kk-media/image/upload/v1752881810/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-blueprints/azure-portal-assignment-success.jpg)
 
-<Callout icon="lightbulb">
-  For more detailed guidance on Azure Blueprints, visit the [Azure Documentation](https://docs.microsoft.com/en-us/azure/governance/blueprints/) for best practices and advanced configuration options.
-</Callout>
+> **lightbulb** For more detailed guidance on Azure Blueprints, visit the [Azure Documentation](https://docs.microsoft.com/en-us/azure/governance/blueprints/) for best practices and advanced configuration options.
 
 ***
 
@@ -169,9 +149,7 @@ Finally, review the deployment status and check resource details once the proces
 
 Azure Blueprints simplify the enforcement of consistent role assignments, policy compliance, and governance across your Azure environments. This ensures that your deployments conform to strict security standards and regulatory requirements—similar to adhering to established building codes.
 
-<Frame>
-  ![The image shows a Microsoft Azure Policy Compliance dashboard with 100% overall resource compliance, indicating no non-compliant resources or policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881811/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-blueprints/azure-policy-compliance-dashboard.jpg)
-</Frame>
+![The image shows a Microsoft Azure Policy Compliance dashboard with 100% overall resource compliance, indicating no non-compliant resources or policies.](https://kodekloud.com/kk-media/image/upload/v1752881811/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-blueprints/azure-policy-compliance-dashboard.jpg)
 
 ***
 
@@ -187,6 +165,4 @@ By combining RBAC, policy definitions, and ARM templates, Azure Blueprints enabl
 
 This discussion on Azure Blueprints lays the groundwork for further exploration into Azure Subscription Management and advanced governance strategies.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/3c48a4f2-a6f3-45fd-87d7-c53f36f2fb2a/lesson/b64f5787-b1ca-4f63-b330-b0054338bee4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/3c48a4f2-a6f3-45fd-87d7-c53f36f2fb2a/lesson/b64f5787-b1ca-4f63-b330-b0054338bee4)

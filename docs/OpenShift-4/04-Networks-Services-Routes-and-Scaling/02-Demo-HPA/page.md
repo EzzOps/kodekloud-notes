@@ -20,9 +20,7 @@ oc autoscale deployment/image-registry --min=5 --max=7
 
 After running the above command, open the OpenShift console and navigate to **Workloads → Deployments**. You will see a list similar to the one below:
 
-<Frame>
-  ![The image shows the Red Hat OpenShift Container Platform interface, specifically the "Deployments" section, listing various deployments with details like name, namespace, status, labels, and pod selector.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882668/notes-assets/images/OpenShift-4-Demo-HPA/openshift-deployments-interface.jpg)
-</Frame>
+![The image shows the Red Hat OpenShift Container Platform interface, specifically the "Deployments" section, listing various deployments with details like name, namespace, status, labels, and pod selector.](https://kodekloud.com/kk-media/image/upload/v1752882668/notes-assets/images/OpenShift-4-Demo-HPA/openshift-deployments-interface.jpg)
 
 In real-world scenarios, multiple deployments may run simultaneously. For example, if your "front-end" deployment experiences heavy traffic and initially runs with only one pod, you can scale it by executing:
 
@@ -32,13 +30,9 @@ oc autoscale deployment/front-end --min=2 --max=7
 
 Once this command is executed and the console is refreshed, you will observe that the "front-end" deployment now meets the minimum requirement of two pods. The autoscaler will further scale up to seven pods if necessary.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Container Platform interface displaying details of running pods within a project. It includes information such as pod names, status, readiness, restarts, and creation time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882669/notes-assets/images/OpenShift-4-Demo-HPA/openshift-container-platform-pods-details.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Container Platform interface displaying details of running pods within a project. It includes information such as pod names, status, readiness, restarts, and creation time.](https://kodekloud.com/kk-media/image/upload/v1752882669/notes-assets/images/OpenShift-4-Demo-HPA/openshift-container-platform-pods-details.jpg)
 
-<Callout icon="lightbulb">
-  Autoscaling via the terminal command offers a quick and effective way to adjust resources in response to varying traffic loads.
-</Callout>
+> **lightbulb** Autoscaling via the terminal command offers a quick and effective way to adjust resources in response to varying traffic loads.
 
 ***
 
@@ -90,21 +84,15 @@ spec:
   * `targetCPUUtilizationPercentage: 75` sets the CPU usage threshold for scaling.
 * **status:** Reflects the current state managed by the system (e.g., `currentReplicas: 5`).
 
-<Callout icon="triangle-alert">
-  If an HPA is already configured for the deployment, attempting to create a new one may fail. Remove the existing autoscaler before applying the new manifest.
-</Callout>
+> **triangle-alert** If an HPA is already configured for the deployment, attempting to create a new one may fail. Remove the existing autoscaler before applying the new manifest.
 
 To remove an existing autoscaler, navigate back to the deployments, locate the "front-end" autoscaler, click on the options (hamburger menu), and select the removal option.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Container Platform interface with a confirmation dialog asking if the user wants to remove the HorizontalPodAutoscaler from the front-end. The dialog offers options to cancel or remove.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882671/notes-assets/images/OpenShift-4-Demo-HPA/openshift-remove-horizontalpodautoscaler-dialog.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Container Platform interface with a confirmation dialog asking if the user wants to remove the HorizontalPodAutoscaler from the front-end. The dialog offers options to cancel or remove.](https://kodekloud.com/kk-media/image/upload/v1752882671/notes-assets/images/OpenShift-4-Demo-HPA/openshift-remove-horizontalpodautoscaler-dialog.jpg)
 
 After removal, apply the new deployment manifest. Within three to four seconds, the deployment should update to display the expected number of replicas.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Container Platform interface displaying a list of deployments with their names, status, labels, and pod selectors. A warning at the top indicates the cluster is for development and testing purposes only.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882672/notes-assets/images/OpenShift-4-Demo-HPA/red-hat-openshift-deployments-interface.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Container Platform interface displaying a list of deployments with their names, status, labels, and pod selectors. A warning at the top indicates the cluster is for development and testing purposes only.](https://kodekloud.com/kk-media/image/upload/v1752882672/notes-assets/images/OpenShift-4-Demo-HPA/red-hat-openshift-deployments-interface.jpg)
 
 ***
 
@@ -112,6 +100,4 @@ This guide demonstrated how to implement autoscaling in OpenShift using both ter
 
 For further information, consider visiting the [OpenShift Documentation](https://docs.openshift.com/) and expanding your knowledge on container orchestration and autoscaling best practices.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/ec611802-285c-4fb9-b13e-26eb84f4ec7d/lesson/864482e1-403d-4262-afab-019cb43ddfb7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/ec611802-285c-4fb9-b13e-26eb84f4ec7d/lesson/864482e1-403d-4262-afab-019cb43ddfb7)

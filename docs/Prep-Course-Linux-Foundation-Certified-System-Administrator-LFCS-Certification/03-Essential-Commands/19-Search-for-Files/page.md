@@ -3,9 +3,7 @@
 # the setting of "PermitRootLogin without-password".
 ```
 
-<Callout icon="lightbulb">
-  Always enclose your search pattern in single quotes to prevent Bash from misinterpreting special characters, such as asterisks used in more complex search patterns.
-</Callout>
+> **lightbulb** Always enclose your search pattern in single quotes to prevent Bash from misinterpreting special characters, such as asterisks used in more complex search patterns.
 
 ## Case Sensitivity
 
@@ -99,9 +97,7 @@ $ sudo grep -ri 'password' --color /etc/
 /etc/cloud/cloud.cfg:  - set-passwords
 ```
 
-<Callout icon="lightbulb">
-  When using sudo with grep, be aware that forcing colored output is necessary if you want to visualize matches in color.
-</Callout>
+> **lightbulb** When using sudo with grep, be aware that forcing colored output is necessary if you want to visualize matches in color.
 
 ## Inverting the Search
 
@@ -170,9 +166,7 @@ Happy grepping!
 
 For more technical guides and tips, check out our [Comprehensive Unix/Linux Tutorials](#).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/7fbf1196-1fa7-4ee9-86b1-df05c54e12ca" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/7fbf1196-1fa7-4ee9-86b1-df05c54e12ca)
 
 
 # Search for Files
@@ -189,9 +183,7 @@ Let's dive into some common scenarios.
 
 Imagine you have a website and need to find all JPEG images stored in `/usr/share`. The `find` command can easily list all files ending in `.jpg`:
 
-<Frame>
-  ![The image shows a directory structure diagram with a root directory containing subdirectories: usr, var, and etc, each with further subdirectories like share, log, and ssh.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881269/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Search-for-Files/directory-structure-root-usr-var-etc.jpg)
-</Frame>
+![The image shows a directory structure diagram with a root directory containing subdirectories: usr, var, and etc, each with further subdirectories like share, log, and ssh.](https://kodekloud.com/kk-media/image/upload/v1752881269/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Search-for-Files/directory-structure-root-usr-var-etc.jpg)
 
 ```bash theme={null}
 $ find /usr/share/ -name '*.jpg'
@@ -234,9 +226,7 @@ $ find -name file1.txt /bin
 
 may yield unexpected results. Think of it like entering your room before looking for your keys.
 
-<Callout icon="lightbulb">
-  Always specify the search path before your parameters to ensure accurate search results.
-</Callout>
+> **lightbulb** Always specify the search path before your parameters to ensure accurate search results.
 
 ## Detailed Search Parameters
 
@@ -278,9 +268,7 @@ $ find -mtime 2
 * `-mtime 0` matches files modified in the last 24 hours.
 * `-mtime 1` matches files modified between 24 and 48 hours ago.
 
-<Callout icon="lightbulb">
-  File modification time measures content changes, not the file creation time.
-</Callout>
+> **lightbulb** File modification time measures content changes, not the file creation time.
 
 ### Change Time Versus Modification Time
 
@@ -327,9 +315,7 @@ $ find -not -name "f*"
 $ find \! -name "f*"
 ```
 
-<Callout icon="triangle-alert">
-  Remember that in the Bash shell, the exclamation mark (!) has a special meaning. Escaping it with a backslash (i.e., `\!`) ensures it is interpreted literally.
-</Callout>
+> **triangle-alert** Remember that in the Bash shell, the exclamation mark (!) has a special meaning. Escaping it with a backslash (i.e., `\!`) ensures it is interpreted literally.
 
 ### Permission-Based Searches
 
@@ -383,8 +369,6 @@ For more in-depth information, refer to the following documentation:
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [Docker Hub](https://hub.docker.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/6627d7fe-6e6e-4ff1-879f-ce88e3847aa8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/6627d7fe-6e6e-4ff1-879f-ce88e3847aa8)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/9c5c2d7e-c91f-4ccc-95a8-7c7a8dbe079f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/9c5c2d7e-c91f-4ccc-95a8-7c7a8dbe079f)

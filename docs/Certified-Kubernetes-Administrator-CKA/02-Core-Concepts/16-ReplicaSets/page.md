@@ -8,19 +8,19 @@ Hello, and welcome to this lesson on Kubernetes controllers. I'm Mumshad Mannamb
 
 Imagine a scenario where a single pod runs your application. If that pod crashes or fails, users lose access. To prevent this risk, running multiple pod instances is key. A replication controller ensures high availability by creating and maintaining the desired number of pod replicas. Even if you intend to run a single pod, a replication controller adds redundancy by automatically creating a replacement if the pod fails.
 
-![The image illustrates a Kubernetes setup with a user interacting with a replication controller managing two pods on a node.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869738/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ReplicaSets/frame_70.jpg)
+![The image illustrates a Kubernetes setup with a user interacting with a replication controller managing two pods on a node.](https://kodekloud.com/kk-media/image/upload/v1752869738/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ReplicaSets/frame_70.jpg)
 
 If one pod serving your application crashes, the replication controller immediately deploys a new one to keep the service available.
 
-![The image illustrates a high availability setup with Kubernetes, showing a replication controller managing multiple pods across nodes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869739/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ReplicaSets/frame_80.jpg)
+![The image illustrates a high availability setup with Kubernetes, showing a replication controller managing multiple pods across nodes.](https://kodekloud.com/kk-media/image/upload/v1752869739/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ReplicaSets/frame_80.jpg)
 
 For example, if you need to maintain a constant service level, the controller ensures the desired number of pods—whether one or one hundred—are always running.
 
-![The image illustrates high availability using Kubernetes, showing nodes with replication controllers managing pods for redundancy and load balancing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869740/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ReplicaSets/frame_90.jpg)
+![The image illustrates high availability using Kubernetes, showing nodes with replication controllers managing pods for redundancy and load balancing.](https://kodekloud.com/kk-media/image/upload/v1752869740/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ReplicaSets/frame_90.jpg)
 
 Beyond availability, replication controllers also help distribute load. When user demand increases, additional pods can better balance that load. If resources on a particular node become scarce, new pods can be scheduled across other nodes in your cluster.
 
-![The image illustrates load balancing and scaling in Kubernetes, showing users accessing multiple pods managed by a replication controller across two nodes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869742/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ReplicaSets/frame_140.jpg)
+![The image illustrates load balancing and scaling in Kubernetes, showing users accessing multiple pods managed by a replication controller across two nodes.](https://kodekloud.com/kk-media/image/upload/v1752869742/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ReplicaSets/frame_140.jpg)
 
 > **lightbulb** While both replication controllers and replica sets serve similar purposes, the replication controller is the older technology being gradually replaced by the replica set. In this lesson, we will focus on replica sets for our demos and implementations.
 

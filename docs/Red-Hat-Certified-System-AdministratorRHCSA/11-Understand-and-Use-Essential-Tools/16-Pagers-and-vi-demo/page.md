@@ -13,9 +13,7 @@ sarah   localhost=/usr/bin/shutdown -r now
 #includedir /etc/sudoers.d
 ```
 
-<Callout icon="lightbulb">
-  Always use visudo to edit /etc/sudoers. visudo locks the file and checks for syntax errors before saving, preventing misconfiguration that could lock out administrative access.
-</Callout>
+> **lightbulb** Always use visudo to edit /etc/sudoers. visudo locks the file and checks for syntax errors before saving, preventing misconfiguration that could lock out administrative access.
 
 Sudo examples of delegation:
 
@@ -48,9 +46,7 @@ Practice exercises (suggested):
 * Configure a sudo rule that allows a non-root user to run a single administrative command.
 * Disable direct root SSH access and confirm you can still perform administrative tasks using sudo.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/a9083933-1ae8-464f-a13b-264ea915f3d4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/a9083933-1ae8-464f-a13b-264ea915f3d4)
 
 
 # Pagers and vi demo
@@ -102,9 +98,7 @@ Use the arrow keys to scroll through the text. Less also supports search functio
 * Press `n` to navigate to the next occurrence or `N` (Shift + n) to go back to the previous match.
 * Keep in mind that searches are case sensitive by default. To perform a case-insensitive search, include the `-i` option right after the slash (e.g., `/ -i debug`).
 
-<Callout icon="lightbulb">
-  When finished, press `Q` to exit the less pager.
-</Callout>
+> **lightbulb** When finished, press `Q` to exit the less pager.
 
 ***
 
@@ -129,9 +123,7 @@ Next, we explore Vim (Vi Improved), a modal text editor known for its efficiency
 
 When you launch Vim, you’ll be greeted by a welcome screen that includes useful information, version details, and basic commands:
 
-<Frame>
-  ![The image shows a terminal window displaying the welcome screen for Vim, a text editor, with version and usage information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883635/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Pagers-and-vi-demo/vim-welcome-screen-terminal.jpg)
-</Frame>
+![The image shows a terminal window displaying the welcome screen for Vim, a text editor, with version and usage information.](https://kodekloud.com/kk-media/image/upload/v1752883635/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Pagers-and-vi-demo/vim-welcome-screen-terminal.jpg)
 
 ### Inserting and Editing Text
 
@@ -139,9 +131,7 @@ Vim operates in different modes. To begin editing a file, switch to insert mode 
 
 Below is an example corresponding to entering text in Vim:
 
-<Frame>
-  ![The image shows a terminal window with a text editor open, displaying the sentence "This is our text for our vim demo." The word "This" is highlighted, and a search command is being typed at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883636/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Pagers-and-vi-demo/vim-demo-terminal-text-editor.jpg)
-</Frame>
+![The image shows a terminal window with a text editor open, displaying the sentence "This is our text for our vim demo." The word "This" is highlighted, and a search command is being typed at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752883636/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Pagers-and-vi-demo/vim-demo-terminal-text-editor.jpg)
 
 ### Navigating and Searching in Vim
 
@@ -191,9 +181,7 @@ new changes
 [aaron@LFCS-CentOS ~]$
 ```
 
-<Callout icon="lightbulb">
-  Remember that practice is key when learning Vim. The more you use it, the more intuitive its modal operations become.
-</Callout>
+> **lightbulb** Remember that practice is key when learning Vim. The more you use it, the more intuitive its modal operations become.
 
 ***
 
@@ -201,6 +189,4 @@ This guide provides a brief overview of the "less" and "more" pagers, along with
 
 Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/0b3f3d67-6fce-471e-b210-355c416c6e51" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/0b3f3d67-6fce-471e-b210-355c416c6e51)

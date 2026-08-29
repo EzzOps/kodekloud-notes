@@ -29,9 +29,7 @@ Telemetry typically flows from clients into multiple Collector instances. Each C
   <img alt="The image is a slide titled &#x22;Introduction – Scaling the OpenTelemetry Collector,&#x22; listing topics such as what to scale, when scaling is needed, when scaling is not effective, and how to execute scaling strategies." />
 </Frame>
 
-<Callout icon="lightbulb">
-  When planning scale operations, focus on the overloaded signal (logs, metrics, or traces), inspect collector metrics that indicate processor, queue, or exporter pressure, and decide whether to scale the Collector, tune configuration, or scale the backend.
-</Callout>
+> **lightbulb** When planning scale operations, focus on the overloaded signal (logs, metrics, or traces), inspect collector metrics that indicate processor, queue, or exporter pressure, and decide whether to scale the Collector, tune configuration, or scale the backend.
 
 What to scale: three broad categories
 
@@ -62,9 +60,7 @@ Inspect the Collector's internal metrics and exporter telemetry to determine if 
   <img alt="The image depicts a diagram illustrating how scaling collectors might not solve backend and network bottlenecks, highlighting issues like a rising queue and persistent errors." />
 </Frame>
 
-<Callout icon="warning">
-  If the network link to your backend is saturated or your backend is unable to ingest more telemetry, adding Collector replicas amplifies failures rather than resolving them. Diagnose and resolve backend or network issues before scaling the Collector tier.
-</Callout>
+> **warning** If the network link to your backend is saturated or your backend is unable to ingest more telemetry, adding Collector replicas amplifies failures rather than resolving them. Diagnose and resolve backend or network issues before scaling the Collector tier.
 
 Scaling patterns by component type
 
@@ -155,6 +151,4 @@ References and further reading
 
 This concludes the discussion on safe and effective scaling strategies for the OpenTelemetry Collector.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/da1341b9-9657-425c-9619-1a8370e327cd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/da1341b9-9657-425c-9619-1a8370e327cd)

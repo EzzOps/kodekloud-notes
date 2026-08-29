@@ -72,9 +72,7 @@ app1-75c78488c4-hvh9f:~# exit
 Capturing unencrypted traffic on the router
 Run tcpdump on the router interface connected to the cluster (ens38 in this demo). Save to unencrypted.pcap. Packet capture requires elevated privileges.
 
-<Callout icon="lightbulb">
-  Run tcpdump with sudo if you get "Operation not permitted" — packet capture needs root privileges.
-</Callout>
+> **lightbulb** Run tcpdump with sudo if you get "Operation not permitted" — packet capture needs root privileges.
 
 ```bash theme={null}
 user1@router:~$ sudo tcpdump -nnvv -i ens38 -w unencrypted.pcap
@@ -129,9 +127,7 @@ hubble-server-certs            kubernetes.io/tls     3      21m
 sh.helm.release.v1.cilium.v1   helm.sh/release.v1    1      21m
 ```
 
-<Callout icon="warning">
-  Keep IPsec keys secret and manage them securely. Use appropriate key lengths for your security requirements (e.g., 256-bit where needed).
-</Callout>
+> **warning** Keep IPsec keys secret and manage them securely. Use appropriate key lengths for your security requirements (e.g., 256-bit where needed).
 
 2. Edit the Cilium Helm values (values.yaml) to enable encryption. Set the encryption block like:
 

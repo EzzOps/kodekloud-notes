@@ -27,7 +27,7 @@ Learn how to specify and change the storage class of objects in Amazon S3 using 
 2. Choose **Add files** and select your file.
 3. Under **Properties**, expand **Storage class** and select **One Zone-IA** (default is Standard).
 
-![The image shows an Amazon S3 Management Console screen displaying different storage class options, including Standard, Intelligent-Tiering, and Glacier, with details about their availability zones and minimum storage duration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869343/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Storage-Classes-Demo/amazon-s3-management-console-storage-classes.jpg)
+![The image shows an Amazon S3 Management Console screen displaying different storage class options, including Standard, Intelligent-Tiering, and Glacier, with details about their availability zones and minimum storage duration.](https://kodekloud.com/kk-media/image/upload/v1752869343/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Storage-Classes-Demo/amazon-s3-management-console-storage-classes.jpg)
 
 4. Click **Upload**. The object now appears with the specified storage class.
 
@@ -49,7 +49,7 @@ Learn how to specify and change the storage class of objects in Amazon S3 using 
 2. Choose **Actions** → **Change storage class**.
 3. Select **Standard** (or another class) and click **Save**.
 
-![The image shows an Amazon S3 console with a bucket named "kk-sc-demo" containing a single file, "beach1.jpg," which is 1.3 MB in size.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869344/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Storage-Classes-Demo/amazon-s3-console-kk-sc-demo.jpg)
+![The image shows an Amazon S3 console with a bucket named "kk-sc-demo" containing a single file, "beach1.jpg," which is 1.3 MB in size.](https://kodekloud.com/kk-media/image/upload/v1752869344/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Storage-Classes-Demo/amazon-s3-console-kk-sc-demo.jpg)
 
 ***
 

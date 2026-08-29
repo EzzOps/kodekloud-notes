@@ -28,9 +28,7 @@ To manage Microsoft Defender for Endpoint, use the Microsoft 365 Defender Portal
 
 Within the portal, navigate to the Assets section and select Devices to view onboarded machines such as Azure virtual machines (VMs). These VMs are automatically onboarded through a policy configured in Azure. Each device displays key information including risk and exposure levels, operating system platform, and onboarding status. For example:
 
-<Frame>
-  ![The image shows a Microsoft 365 Defender dashboard displaying a device inventory with details such as risk level, exposure level, OS platform, and onboarding status for several devices. The sidebar includes navigation options like incidents, alerts, and threat intelligence.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881887/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Microsoft-Defender-for-Endpoint/microsoft-365-defender-dashboard-device-inventory.jpg)
-</Frame>
+![The image shows a Microsoft 365 Defender dashboard displaying a device inventory with details such as risk level, exposure level, OS platform, and onboarding status for several devices. The sidebar includes navigation options like incidents, alerts, and threat intelligence.](https://kodekloud.com/kk-media/image/upload/v1752881887/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Microsoft-Defender-for-Endpoint/microsoft-365-defender-dashboard-device-inventory.jpg)
 
 The onboarded extension—labeled as MDE Linux or MDE Windows—connects your machines to the Defender for Endpoint service. For onboarding on-premises or non-Azure devices, navigate to Settings in the portal, then to Endpoints, and scroll down to Onboarding. Here, you'll find the appropriate scripts and packages for different operating systems.
 
@@ -52,44 +50,30 @@ For devices onboarded through an Azure policy, use a curl command during the pro
 curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-<Callout icon="lightbulb">
-  When onboarding iOS or macOS devices, the portal provides specific instructions and corresponding packages to ensure seamless integration.
-</Callout>
+> **lightbulb** When onboarding iOS or macOS devices, the portal provides specific instructions and corresponding packages to ensure seamless integration.
 
 For example, when onboarding macOS devices, follow the steps provided in the portal that include instructions for installing an agent and running a detection test:
 
-<Frame>
-  ![The image shows a Microsoft 365 Defender interface for onboarding macOS devices. It includes instructions for installing an agent and running a detection test, with options to download installation and onboarding packages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881889/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Microsoft-Defender-for-Endpoint/microsoft-365-defender-macos-onboarding.jpg)
-</Frame>
+![The image shows a Microsoft 365 Defender interface for onboarding macOS devices. It includes instructions for installing an agent and running a detection test, with options to download installation and onboarding packages.](https://kodekloud.com/kk-media/image/upload/v1752881889/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Microsoft-Defender-for-Endpoint/microsoft-365-defender-macos-onboarding.jpg)
 
 ## Onboarding in Azure Environments
 
 In Azure environments, onboarding is typically managed by a policy. The Microsoft Defender for Cloud automatically deploys a policy that onboards virtual machines to Endpoint Protection. This ensures that any new virtual machine within the subscription is automatically enrolled. You can review this integration in the Defender for Cloud environment settings:
 
-<Frame>
-  ![The image shows the Microsoft Defender for Cloud environment settings page, displaying options for governance rules, data sensitivity, and direct onboarding, along with a summary of connected cloud accounts and resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881890/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Microsoft-Defender-for-Endpoint/microsoft-defender-cloud-settings.jpg)
-</Frame>
+![The image shows the Microsoft Defender for Cloud environment settings page, displaying options for governance rules, data sensitivity, and direct onboarding, along with a summary of connected cloud accounts and resources.](https://kodekloud.com/kk-media/image/upload/v1752881890/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Microsoft-Defender-for-Endpoint/microsoft-defender-cloud-settings.jpg)
 
 Under the server settings, confirm that Endpoint Protection powered by Microsoft Defender for Endpoint is enabled. As soon as a virtual machine is deployed in Azure, it is immediately onboarded:
 
-<Frame>
-  ![The image shows a Microsoft Azure settings and monitoring page for Defender plans, listing components like Log Analytics agent, vulnerability assessment, and endpoint protection, with options to configure and toggle their status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881892/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Microsoft-Defender-for-Endpoint/azure-defender-settings-monitoring.jpg)
-</Frame>
+![The image shows a Microsoft Azure settings and monitoring page for Defender plans, listing components like Log Analytics agent, vulnerability assessment, and endpoint protection, with options to configure and toggle their status.](https://kodekloud.com/kk-media/image/upload/v1752881892/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Microsoft-Defender-for-Endpoint/azure-defender-settings-monitoring.jpg)
 
 ## Viewing Alerts and Security Assessments
 
 After onboarding, you can view active alerts, security assessments, and device health statuses directly in the portal. The interface provides detailed reports on security scans—both full and quick scans—and shows exposure levels along with actionable recommendations. Simply click on "View Recommendations" to see a detailed list of security tasks specific to each device.
 
-<Frame>
-  ![The image shows a screenshot of the Microsoft 365 Defender interface, specifically the "Security recommendations" tab for a device named "win-demo," listing various security recommendations and their details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881893/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Microsoft-Defender-for-Endpoint/microsoft-365-defender-security-recommendations.jpg)
-</Frame>
+![The image shows a screenshot of the Microsoft 365 Defender interface, specifically the "Security recommendations" tab for a device named "win-demo," listing various security recommendations and their details.](https://kodekloud.com/kk-media/image/upload/v1752881893/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Microsoft-Defender-for-Endpoint/microsoft-365-defender-security-recommendations.jpg)
 
-<Callout icon="lightbulb">
-  This overview of Microsoft Defender for Endpoint highlights its core security features, the onboarding process, and management via the Microsoft 365 Defender Portal. By integrating advanced threat detection and automated response capabilities, MDE significantly enhances enterprise security across a range of platforms.
-</Callout>
+> **lightbulb** This overview of Microsoft Defender for Endpoint highlights its core security features, the onboarding process, and management via the Microsoft 365 Defender Portal. By integrating advanced threat detection and automated response capabilities, MDE significantly enhances enterprise security across a range of platforms.
 
 That concludes our overview of Microsoft Defender for Endpoint. Explore these features further to strengthen your organization's security framework. See you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d8d70777-3d80-4e41-803e-0929352de5e7/lesson/59654a12-d871-4f45-8b0f-1507b3762146" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d8d70777-3d80-4e41-803e-0929352de5e7/lesson/59654a12-d871-4f45-8b0f-1507b3762146)

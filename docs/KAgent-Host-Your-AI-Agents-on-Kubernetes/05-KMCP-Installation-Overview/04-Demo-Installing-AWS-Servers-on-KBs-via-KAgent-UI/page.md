@@ -114,9 +114,7 @@ created_at: 2025-12-19T07:38:32.303583657Z
 updated_at: 2025-12-19T07:38:32.338228897Z
 ```
 
-<Callout icon="warning">
-  Do not commit sensitive keys or API secrets to version control. Use `kmcp secrets` with a secrets provider (env files or Kubernetes Secrets) and reference them from `kmcp.yaml` so your tools can read them securely at runtime.
-</Callout>
+> **warning** Do not commit sensitive keys or API secrets to version control. Use `kmcp secrets` with a secrets provider (env files or Kubernetes Secrets) and reference them from `kmcp.yaml` so your tools can read them securely at runtime.
 
 ## Inspecting src/main.py
 
@@ -312,9 +310,7 @@ Links and references:
 
 Good luck building your custom MCP server!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/2ed12c2a-b9a8-43be-8272-cb1e782e655a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/2ed12c2a-b9a8-43be-8272-cb1e782e655a)
 
 
 # Demo Installing AWS Servers on KBs via KAgent UI
@@ -333,9 +329,7 @@ Hello — in this lesson we install and verify two AWS MCP (Managed Chat/Compute
 
 Prerequisites: the CRD and model config for KAgent are already installed and the `01-values-min` file has been provided.
 
-<Callout icon="lightbulb">
-  The values file used below enables only the minimal components required to run KAgent and disables optional agents. This reduces resource usage while you work through the lab.
-</Callout>
+> **lightbulb** The values file used below enables only the minimal components required to run KAgent and disables optional agents. This reduces resource usage while you work through the lab.
 
 ## Minimal values file (`01-values-min`)
 

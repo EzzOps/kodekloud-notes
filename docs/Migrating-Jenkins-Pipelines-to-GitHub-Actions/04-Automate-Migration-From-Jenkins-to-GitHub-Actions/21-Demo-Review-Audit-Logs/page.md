@@ -77,9 +77,7 @@ root@jenkins in /
 * The Pipeline Model Converter (`/pipeline-model-converter/toJson`) is used to convert declarative pipeline definitions to JSON for easier transformation.
 * The log contains transformer lookup results (located vs failed). Located transformers will attempt an automatic conversion to a GitHub Actions construct; missing ones need manual handling or new transformers.
 
-<Callout icon="lightbulb">
-  If a step was converted incorrectly or not converted at all, consult the audit log for the HTTP calls, transformer lookups, and any redactions. These entries help decide whether to create a custom transformer or edit the generated workflow manually.
-</Callout>
+> **lightbulb** If a step was converted incorrectly or not converted at all, consult the audit log for the HTTP calls, transformer lookups, and any redactions. These entries help decide whether to create a custom transformer or edit the generated workflow manually.
 
 ## Transformer results — summary
 
@@ -151,6 +149,4 @@ These warnings indicate where sensitive values were redacted in the generated ou
 
 If you need help mapping a specific Jenkins step or plugin to a GitHub Action, include the relevant `config.json`, `jenkinsfile`, and the fragment of the generated workflow YAML and I can suggest a conversion strategy.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/db2f7ebb-1ed6-4c13-a991-97e253d69d8e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/db2f7ebb-1ed6-4c13-a991-97e253d69d8e)

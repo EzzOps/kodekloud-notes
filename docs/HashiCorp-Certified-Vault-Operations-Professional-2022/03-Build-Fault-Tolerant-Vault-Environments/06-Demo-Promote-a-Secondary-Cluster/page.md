@@ -6,12 +6,10 @@ Learn to safely demote a primary cluster and promote a DR secondary cluster in H
 
 In this guide, you’ll learn how to safely **demote** the existing primary cluster in a Vault Disaster Recovery (DR) replication setup and then **promote** the DR secondary cluster to become the new primary. This procedure ensures minimal downtime and maintains data integrity across clusters.
 
-<Callout icon="lightbulb">
-  * Vault version **1.9+** installed on both clusters
+> **lightbulb** * Vault version **1.9+** installed on both clusters
   * Network connectivity between primary and secondary
   * Root or privileged token access on both clusters
   * `jq` installed for JSON formatting
-</Callout>
 
 ## Quick Reference
 

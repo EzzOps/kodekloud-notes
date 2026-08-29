@@ -19,7 +19,7 @@ Next, click on "Create Auto Scaling Group" and provide a descriptive name such a
 
 Since a launch template is not yet available, select the option to create one. A new tab will open for creating the launch template.
 
-![The image shows an AWS EC2 console screen for creating an Auto Scaling group, where a user can specify a launch template or configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864687/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-auto-scaling-group.jpg)
+![The image shows an AWS EC2 console screen for creating an Auto Scaling group, where a user can specify a launch template or configuration.](https://kodekloud.com/kk-media/image/upload/v1752864687/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-auto-scaling-group.jpg)
 
 ## Creating a Launch Template
 
@@ -27,17 +27,17 @@ In the new tab, complete the settings for your EC2 instances. For example, set t
 
 At the AMI selection section, choose your specific AMI. In this demonstration, we use a custom Linux AMI called "web ASG demo" that runs an Nginx server.
 
-![The image shows an AWS console interface for creating a launch template, with fields for the template name, description, and auto-scaling guidance options. A summary section on the right provides information about software image, server type, and storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864688/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-launch-template-console-interface.jpg)
+![The image shows an AWS console interface for creating a launch template, with fields for the template name, description, and auto-scaling guidance options. A summary section on the right provides information about software image, server type, and storage.](https://kodekloud.com/kk-media/image/upload/v1752864688/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-launch-template-console-interface.jpg)
 
 Next, set the instance type. For this demo, select "t2.micro" as it qualifies for the free tier. Choose your key pair (e.g., "main"). In the network settings, specify a security group (such as "web SG") that allows port 80. Leave the subnet settings blank to ensure flexibility when using the template in multiple auto scaling groups.
 
-![The image shows an AWS EC2 console screen for creating a launch template, with options to select an Amazon Machine Image (AMI) and other configuration details. A summary section on the right provides information about the selected AMI and storage volumes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864689/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-launch-template-ami.jpg)
+![The image shows an AWS EC2 console screen for creating a launch template, with options to select an Amazon Machine Image (AMI) and other configuration details. A summary section on the right provides information about the selected AMI and storage volumes.](https://kodekloud.com/kk-media/image/upload/v1752864689/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-launch-template-ami.jpg)
 
 Review the storage, resource tags, and advanced settings, retaining the defaults. Then click "Create launch template." Your new launch template ("my web template") will appear with version 1. Remember, you can update the template settings (like the AMI) and generate new versions later.
 
 Return to the Auto Scaling Group tab, refresh the page, and select your newly created launch template. If multiple versions exist, pick the default (version one).
 
-![The image shows an AWS EC2 console screen for creating an Auto Scaling group, with options to choose a launch template or configuration. The selected launch template is named "myweb-template" with instance type "t2.micro."](../../../../images/kodekloud.com/kk-media/image/upload/v1752864691/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-auto-scaling-myweb-template.jpg)
+![The image shows an AWS EC2 console screen for creating an Auto Scaling group, with options to choose a launch template or configuration. The selected launch template is named "myweb-template" with instance type "t2.micro."](https://kodekloud.com/kk-media/image/upload/v1752864691/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-auto-scaling-myweb-template.jpg)
 
 ## Configuring Network Settings
 
@@ -61,7 +61,7 @@ Define the capacity settings for your auto scaling group. For instance, you migh
 
 Next, establish a target tracking scaling policy based on average CPU utilization. For the demo, set the target CPU utilization to 40%. In a production scenario, you might choose a different threshold (such as 70% or lower) depending on your traffic tolerance. Optionally, configure an instance warm-up period and enable instance scaling protection. Leave additional notification settings as default, review all configurations, and create the auto scaling group.
 
-![The image shows an AWS EC2 console interface for configuring advanced options in an Auto Scaling group, including load balancing and VPC Lattice integration options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864692/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-auto-scaling-options.jpg)
+![The image shows an AWS EC2 console interface for configuring advanced options in an Auto Scaling group, including load balancing and VPC Lattice integration options.](https://kodekloud.com/kk-media/image/upload/v1752864692/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-auto-scaling-options.jpg)
 
 Once the auto scaling group is created, AWS deploys the desired number of EC2 instances (in this case, one), sets up the load balancer, and configures the target group.
 
@@ -75,13 +75,13 @@ After deployment, verify the auto scaling group's configuration. Confirm that:
 
 Ensure that the launch template, network settings, and load balancer details display correctly. For example, clicking on the load balancer should show the target group with the deployed instance.
 
-![The image shows an AWS EC2 Auto Scaling group configuration page, displaying details for a group named "web-autoscale" with a desired capacity of 1 and a maximum capacity of 3.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864693/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-auto-scaling-web-autoscale.jpg)
+![The image shows an AWS EC2 Auto Scaling group configuration page, displaying details for a group named "web-autoscale" with a desired capacity of 1 and a maximum capacity of 3.](https://kodekloud.com/kk-media/image/upload/v1752864693/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-auto-scaling-web-autoscale.jpg)
 
-![The image shows an AWS EC2 console screen displaying details of a target group named "web-autoscale-1-tg," including target type, protocol, and health status of registered targets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864694/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-target-group-details.jpg)
+![The image shows an AWS EC2 console screen displaying details of a target group named "web-autoscale-1-tg," including target type, protocol, and health status of registered targets.](https://kodekloud.com/kk-media/image/upload/v1752864694/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-target-group-details.jpg)
 
 At the load balancer level, double-check the security settings. Then, inspect the EC2 instances list to confirm that the instance from the auto scaling group is running—it may initially be in the "initialization" or "status check initialization" phase.
 
-![The image shows an AWS EC2 management console with a list of instances, including their states, types, and status checks. Two instances are running, while the others are terminated.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864695/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-management-console-instances.jpg)
+![The image shows an AWS EC2 management console with a list of instances, including their states, types, and status checks. Two instances are running, while the others are terminated.](https://kodekloud.com/kk-media/image/upload/v1752864695/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-management-console-instances.jpg)
 
 To test the setup, copy the load balancer's DNS name, paste it into a new browser tab, and verify that you see a welcome message (e.g., "Welcome to KodeKloud"). This confirms that the EC2 instance was deployed correctly and the load balancer is properly forwarding requests.
 
@@ -91,11 +91,11 @@ To confirm that the auto scaling group operates as expected, manually terminate 
 
 Wait a few moments and then check the auto scaling group's activity log. You should see an entry for an instance being removed due to a failed health check, followed by an entry for the launch of a new instance.
 
-![The image shows an AWS EC2 Auto Scaling activity dashboard with activity notifications and history, detailing the status and description of recent EC2 instance activities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864697/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-auto-scaling-dashboard.jpg)
+![The image shows an AWS EC2 Auto Scaling activity dashboard with activity notifications and history, detailing the status and description of recent EC2 instance activities.](https://kodekloud.com/kk-media/image/upload/v1752864697/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-auto-scaling-dashboard.jpg)
 
 Return to the EC2 instances list to verify that a new instance is running.
 
-![The image shows an AWS EC2 management console with a list of instances, their states, and details about a selected instance, which is terminated.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864698/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-management-console-terminated-instance.jpg)
+![The image shows an AWS EC2 management console with a list of instances, their states, and details about a selected instance, which is terminated.](https://kodekloud.com/kk-media/image/upload/v1752864698/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-management-console-terminated-instance.jpg)
 
 ## Simulating High CPU Load
 
@@ -133,13 +133,13 @@ Allow the stress test to run until the average CPU utilization exceeds 40%. This
 
 Examine the auto scaling activity log in the AWS console. You should see entries detailing the triggered alarm and the launch of additional instances.
 
-![The image shows an AWS console screen for configuring scaling policies, with options for setting a target tracking scaling policy and selecting a metric type like average CPU utilization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864700/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-console-scaling-policies-config.jpg)
+![The image shows an AWS console screen for configuring scaling policies, with options for setting a target tracking scaling policy and selecting a metric type like average CPU utilization.](https://kodekloud.com/kk-media/image/upload/v1752864700/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-console-scaling-policies-config.jpg)
 
-![The image shows an AWS console interface for setting up scaling policies, specifically a target tracking scaling policy for auto-scaling groups. It includes options for setting the scaling policy name, metric type, target value, and instance warmup time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864701/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-scaling-policy-interface-diagram.jpg)
+![The image shows an AWS console interface for setting up scaling policies, specifically a target tracking scaling policy for auto-scaling groups. It includes options for setting the scaling policy name, metric type, target value, and instance warmup time.](https://kodekloud.com/kk-media/image/upload/v1752864701/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-scaling-policy-interface-diagram.jpg)
 
 Refresh the EC2 instances list; you should now see three instances running in the auto scaling group. Despite any further CPU load, the maximum capacity remains capped at three as configured.
 
-![The image shows an AWS EC2 Auto Scaling Groups dashboard, displaying details of a group named "web-autoscale" with activity history logs indicating the launching of new EC2 instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864702/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-auto-scaling-dashboard-3.jpg)
+![The image shows an AWS EC2 Auto Scaling Groups dashboard, displaying details of a group named "web-autoscale" with activity history logs indicating the launching of new EC2 instances.](https://kodekloud.com/kk-media/image/upload/v1752864702/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-auto-scaling-dashboard-3.jpg)
 
 ## Cleaning Up
 
@@ -147,6 +147,6 @@ Refresh the EC2 instances list; you should now see three instances running in th
 
 To clean up, select the auto scaling group and choose "Delete." This action terminates the auto scaling group along with its associated resources.
 
-![The image shows an AWS EC2 Auto Scaling Groups dashboard, displaying details of an auto scaling group named "web-autoscale" with a status of "Deleting."](../../../../images/kodekloud.com/kk-media/image/upload/v1752864703/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-auto-scaling-dashboard-4.jpg)
+![The image shows an AWS EC2 Auto Scaling Groups dashboard, displaying details of an auto scaling group named "web-autoscale" with a status of "Deleting."](https://kodekloud.com/kk-media/image/upload/v1752864703/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling-Demo/aws-ec2-auto-scaling-dashboard-4.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/2a5c60f6-2d46-4dfe-a2e2-66c7eae45a70/lesson/88945ddd-0b09-4124-8a00-c6f251dbb4ac)

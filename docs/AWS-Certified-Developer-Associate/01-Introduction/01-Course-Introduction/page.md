@@ -33,7 +33,7 @@ By the end of this course, you'll be well-prepared to succeed in the AWS Certifi
 
 At KodeKloud, we know that community matters. We have built a vibrant forum where you can post questions, share insights, and support fellow learners. Become an active member of the KodeKloud community to further enrich your learning experience.
 
-![The image is a promotional graphic for KodeKloud's community, featuring a person on the right and a world map with profile icons on the left. It encourages joining their Discord and community forum.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858979/notes-assets/images/AWS-Certified-Developer-Associate-Course-Introduction/kodekloud-community-promo-graphic.jpg)
+![The image is a promotional graphic for KodeKloud's community, featuring a person on the right and a world map with profile icons on the left. It encourages joining their Discord and community forum.](https://kodekloud.com/kk-media/image/upload/v1752858979/notes-assets/images/AWS-Certified-Developer-Associate-Course-Introduction/kodekloud-community-promo-graphic.jpg)
 
 Enroll now and take your first steps toward becoming an AWS Certified Developer Associate.
 

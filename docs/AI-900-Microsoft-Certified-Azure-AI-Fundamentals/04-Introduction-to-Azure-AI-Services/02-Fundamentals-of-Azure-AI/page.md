@@ -22,7 +22,7 @@ Efficient AI workloads require dynamic compute resources. Azure delivers an arra
 
 These compute resources provide the processing power needed to train deep learning models, manage complex AI experiments, and scale your applications based on demand.
 
-![The image illustrates the fundamentals of Azure AI, showing a cloud structure with subscription, resource group, and resource, alongside Azure compute services like Virtual Machine, Kubernetes Services, and Functions for running AI tasks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857029/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Fundamentals-of-Azure-AI/azure-ai-fundamentals-cloud-diagram.jpg)
+![The image illustrates the fundamentals of Azure AI, showing a cloud structure with subscription, resource group, and resource, alongside Azure compute services like Virtual Machine, Kubernetes Services, and Functions for running AI tasks.](https://kodekloud.com/kk-media/image/upload/v1752857029/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Fundamentals-of-Azure-AI/azure-ai-fundamentals-cloud-diagram.jpg)
 
 ## AI Services
 
@@ -34,12 +34,12 @@ Azure simplifies the integration of intelligent features into your applications 
 
 These services help streamline AI model deployment and empower your applications with advanced cognitive capabilities such as image recognition, natural language processing, and automated decision-making.
 
-![The image illustrates the fundamentals of Azure AI, showing a cloud structure with subscription, resource group, and resource, alongside services like Azure Machine Learning, Azure Cognitive Services, and Azure Bot Services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857030/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Fundamentals-of-Azure-AI/azure-ai-fundamentals-diagram.jpg)
+![The image illustrates the fundamentals of Azure AI, showing a cloud structure with subscription, resource group, and resource, alongside services like Azure Machine Learning, Azure Cognitive Services, and Azure Bot Services.](https://kodekloud.com/kk-media/image/upload/v1752857030/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Fundamentals-of-Azure-AI/azure-ai-fundamentals-diagram.jpg)
 
 ## Conclusion
 
 By integrating robust data storage, flexible compute resources, and a suite of AI services, Azure AI establishes a solid foundation for building, deploying, and scaling intelligent applications in the cloud. This cohesive infrastructure ensures your AI endeavors can grow seamlessly while meeting evolving business demands.
 
-![The image illustrates the fundamentals of Azure AI, showing a cloud structure with components like subscription, resource group, and resource, alongside a conclusion about data storage, compute, and services for AI solutions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857031/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Fundamentals-of-Azure-AI/azure-ai-fundamentals-diagram-2.jpg)
+![The image illustrates the fundamentals of Azure AI, showing a cloud structure with components like subscription, resource group, and resource, alongside a conclusion about data storage, compute, and services for AI solutions.](https://kodekloud.com/kk-media/image/upload/v1752857031/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Fundamentals-of-Azure-AI/azure-ai-fundamentals-diagram-2.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/ai-900-microsoft-azure-ai-fundamental/module/3f906796-1fb2-415e-8fe4-22f1470c83d5/lesson/c2357671-a6ec-4bda-b60e-ddd0280dbc6e)

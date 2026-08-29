@@ -8,7 +8,7 @@ Document Intelligence Studio is a robust Azure-powered solution designed to simp
 
 Document Intelligence Studio features an intuitive interface that allows you to test its capabilities using prebuilt models on sample documents or your own uploads. This no-code environment supports advanced data extraction, reading, and layout analysis, making it easier to integrate extracted data into your workflows.
 
-![The image shows a screenshot of the "Document Intelligence Studio" interface, highlighting a no-code approach to document analysis with options for reading, layout, and general document processing. It includes sections for prebuilt models and a description of the service's functionality.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856849/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Document-Intelligence-Studio/document-intelligence-studio-screenshot.jpg)
+![The image shows a screenshot of the "Document Intelligence Studio" interface, highlighting a no-code approach to document analysis with options for reading, layout, and general document processing. It includes sections for prebuilt models and a description of the service's functionality.](https://kodekloud.com/kk-media/image/upload/v1752856849/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Document-Intelligence-Studio/document-intelligence-studio-screenshot.jpg)
 
 ## Getting Started
 
@@ -19,7 +19,7 @@ Before you begin using Document Intelligence Studio, you must create a resource.
 
 Once your resource is set up, enable it within Document Intelligence Studio to unlock its full capabilities. Then, navigate to the Getting Started page to explore a suite of prebuilt models specifically designed to extract relevant information from various document types such as forms, receipts, and invoices. This process leverages Azure AI-powered tools to streamline data extraction and facilitate seamless integration into your business processes.
 
-![The image is a guide for setting up a Document Intelligence Studio, detailing steps to create and enable resources, and showcasing features like document analysis and prebuilt models.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856851/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Document-Intelligence-Studio/document-intelligence-studio-guide.jpg)
+![The image is a guide for setting up a Document Intelligence Studio, detailing steps to create and enable resources, and showcasing features like document analysis and prebuilt models.](https://kodekloud.com/kk-media/image/upload/v1752856851/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Document-Intelligence-Studio/document-intelligence-studio-guide.jpg)
 
 ## Navigating Document Intelligence Studio
 
@@ -51,7 +51,7 @@ When opting for Azure AI Services, follow these steps to set up your resource co
 * Enter the copied endpoint and API key into Document Intelligence Studio.
 * Click "Continue" followed by "Finish" to complete the setup.
 
-![The image shows a configuration window for the Document Intelligence Studio on Azure, where a user is entering an API endpoint and key to set up a service resource.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856852/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Document-Intelligence-Studio/document-intelligence-studio-configuration.jpg)
+![The image shows a configuration window for the Document Intelligence Studio on Azure, where a user is entering an API endpoint and key to set up a service resource.](https://kodekloud.com/kk-media/image/upload/v1752856852/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Document-Intelligence-Studio/document-intelligence-studio-configuration.jpg)
 
 ## Using Pre-Built Models
 
@@ -63,7 +63,7 @@ A common scenario involves processing invoices. By selecting the invoice model, 
 * Billing address and recipient details
 * Customer address
 
-![The image shows a screenshot of the Azure AI Document Intelligence Studio interface, displaying an analyzed invoice with highlighted fields and extracted data on the right panel.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856853/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Document-Intelligence-Studio/azure-ai-document-intelligence-invoice.jpg)
+![The image shows a screenshot of the Azure AI Document Intelligence Studio interface, displaying an analyzed invoice with highlighted fields and extracted data on the right panel.](https://kodekloud.com/kk-media/image/upload/v1752856853/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Document-Intelligence-Studio/azure-ai-document-intelligence-invoice.jpg)
 
 Unlike traditional OCR, which merely converts image text into digital format, Document Intelligence Studio understands the context of the document. For example, rather than just extracting labels such as "Microsoft Finance" or "Bill Street," it can distinguish between "bill to" and "ship to" addresses by analyzing the document's structure.
 
@@ -78,7 +78,7 @@ Document Intelligence Studio is not limited to invoices and forms; it also excel
 
 This feature is particularly useful for documents such as Aadhaar cards (an Indian identity document) or United States PR IDs, providing efficient and accurate extraction of personal information.
 
-![The image shows a digital interface displaying an Aadhaar card, an Indian identity document, with personal details and a photograph. It appears to be part of a document analysis tool.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856854/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Document-Intelligence-Studio/aadhaar-card-digital-interface-analysis.jpg)
+![The image shows a digital interface displaying an Aadhaar card, an Indian identity document, with personal details and a photograph. It appears to be part of a document analysis tool.](https://kodekloud.com/kk-media/image/upload/v1752856854/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Document-Intelligence-Studio/aadhaar-card-digital-interface-analysis.jpg)
 
 ## Conclusion
 

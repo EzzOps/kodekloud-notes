@@ -24,21 +24,13 @@ GitHub supports two secret scopes:
 
 Most teams start by defining secrets directly in GitHub. You’ll find them at **Settings → Secrets and variables → Actions**.
 
-<Frame>
-  ![The image shows a GitHub repository page with files and a README section titled "Exploring Actions." The repository has a main branch with no protection and includes files like .github/workflows, README.md, and ascii-script.sh.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876756/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/github-repo-exploring-actions-readme.jpg)
-</Frame>
+![The image shows a GitHub repository page with files and a README section titled "Exploring Actions." The repository has a main branch with no protection and includes files like .github/workflows, README.md, and ascii-script.sh.](https://kodekloud.com/kk-media/image/upload/v1752876756/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/github-repo-exploring-actions-readme.jpg)
 
-<Frame>
-  ![The image shows the settings page of a GitHub repository, displaying options for general settings, default branch, and social preview. The interface is in dark mode with various configuration options visible on the left sidebar.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876757/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/github-repo-settings-dark-mode.jpg)
-</Frame>
+![The image shows the settings page of a GitHub repository, displaying options for general settings, default branch, and social preview. The interface is in dark mode with various configuration options visible on the left sidebar.](https://kodekloud.com/kk-media/image/upload/v1752876757/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/github-repo-settings-dark-mode.jpg)
 
-<Frame>
-  ![The image shows a GitHub repository settings page for managing secrets and variables, with a focus on repository secrets, including a "DOCKER\_PASSWORD" entry.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876758/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/github-repo-settings-secrets-variables.jpg)
-</Frame>
+![The image shows a GitHub repository settings page for managing secrets and variables, with a focus on repository secrets, including a "DOCKER\_PASSWORD" entry.](https://kodekloud.com/kk-media/image/upload/v1752876758/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/github-repo-settings-secrets-variables.jpg)
 
-<Callout icon="lightbulb">
-  Repository-level secrets are not versioned. Managing them individually across many repos can quickly become tedious and error-prone.
-</Callout>
+> **lightbulb** Repository-level secrets are not versioned. Managing them individually across many repos can quickly become tedious and error-prone.
 
 ***
 
@@ -46,9 +38,7 @@ Most teams start by defining secrets directly in GitHub. You’ll find them at *
 
 Create a workflow file at `.github/workflows/vault-demo.yml`:
 
-<Frame>
-  ![The image shows a GitHub repository interface with a list of YAML workflow files under the ".github/workflows" directory. The files have various commit messages and timestamps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876759/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/github-repo-yaml-workflows-directory.jpg)
-</Frame>
+![The image shows a GitHub repository interface with a list of YAML workflow files under the ".github/workflows" directory. The files have various commit messages and timestamps.](https://kodekloud.com/kk-media/image/upload/v1752876759/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/github-repo-yaml-workflows-directory.jpg)
 
 ```yaml theme={null}
 name: Vault Demo
@@ -81,25 +71,17 @@ Error: Process completed with exit code 1.
 
 1. Sign in to the [HashiCorp Cloud Platform](https://cloud.hashicorp.com) and select **Vault**:
 
-<Frame>
-  ![The image shows a webpage from HashiCorp Vault, highlighting "Standardize secrets management" with options to sign up for free or request a demo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876759/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/hashicorp-vault-secrets-management-webpage.jpg)
-</Frame>
+![The image shows a webpage from HashiCorp Vault, highlighting "Standardize secrets management" with options to sign up for free or request a demo.](https://kodekloud.com/kk-media/image/upload/v1752876759/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/hashicorp-vault-secrets-management-webpage.jpg)
 
 2. In the HCP dashboard, click **Vault Secrets** to open the managed secrets service:
 
-<Frame>
-  ![The image shows a project dashboard from HashiCorp Cloud Platform, displaying various services like Boundary, Consul, Packer, Vault, and others, along with sections for active resources and billing summary.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876760/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/hashicorp-cloud-platform-dashboard-services.jpg)
-</Frame>
+![The image shows a project dashboard from HashiCorp Cloud Platform, displaying various services like Boundary, Consul, Packer, Vault, and others, along with sections for active resources and billing summary.](https://kodekloud.com/kk-media/image/upload/v1752876760/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/hashicorp-cloud-platform-dashboard-services.jpg)
 
 3. Create an application (e.g., **Secret App**), then add a key `AWS_API_KEY` with your value:
 
-<Frame>
-  ![The image shows a dashboard interface for HashiCorp Vault Secrets, welcoming a user and offering options to create an application and access resources like documentation and blog posts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876761/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/hashicorp-vault-dashboard-interface.jpg)
-</Frame>
+![The image shows a dashboard interface for HashiCorp Vault Secrets, welcoming a user and offering options to create an application and access resources like documentation and blog posts.](https://kodekloud.com/kk-media/image/upload/v1752876761/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/hashicorp-vault-dashboard-interface.jpg)
 
-<Frame>
-  ![The image shows a web interface for managing secrets in HashiCorp Cloud, with options to add or import secrets. A notification at the top announces that Vault Secrets is now generally available.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876762/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/hashicorp-cloud-secrets-management-interface.jpg)
-</Frame>
+![The image shows a web interface for managing secrets in HashiCorp Cloud, with options to add or import secrets. A notification at the top announces that Vault Secrets is now generally available.](https://kodekloud.com/kk-media/image/upload/v1752876762/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/hashicorp-cloud-secrets-management-interface.jpg)
 
 ***
 
@@ -107,33 +89,23 @@ Error: Process completed with exit code 1.
 
 1. In the Vault UI, go to **Integrations → GitHub Actions**, then authorize the GitHub App on your organization or account:
 
-<Frame>
-  ![The image shows a web interface for integrating secret management tools, featuring options to add AWS Secrets Manager, GitHub Actions, and Vercel. It also includes documentation links for Terraform and Docker.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876763/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/secret-management-tools-web-interface.jpg)
-</Frame>
+![The image shows a web interface for integrating secret management tools, featuring options to add AWS Secrets Manager, GitHub Actions, and Vercel. It also includes documentation links for Terraform and Docker.](https://kodekloud.com/kk-media/image/upload/v1752876763/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/secret-management-tools-web-interface.jpg)
 
 2. Select the repo(s) to sync and install:
 
-<Frame>
-  ![The image shows a GitHub interface for selecting repositories to integrate with HCP Vault Secrets, with a list of repositories displayed in a dropdown menu.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876765/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/github-repositories-hcp-vault-secrets.jpg)
-</Frame>
+![The image shows a GitHub interface for selecting repositories to integrate with HCP Vault Secrets, with a list of repositories displayed in a dropdown menu.](https://kodekloud.com/kk-media/image/upload/v1752876765/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/github-repositories-hcp-vault-secrets.jpg)
 
 3. After installation, Vault Secrets pushes `AWS_API_KEY` to your repo. Refresh **Settings → Secrets and variables → Actions**:
 
-<Frame>
-  ![The image shows a GitHub repository settings page, specifically the "Secrets and variables" section, with two repository secrets listed: "AWS\_API\_KEY" and "DOCKER\_PASSWORD."](../../../../images/kodekloud.com/kk-media/image/upload/v1752876766/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/github-repo-settings-secrets-variables-2.jpg)
-</Frame>
+![The image shows a GitHub repository settings page, specifically the "Secrets and variables" section, with two repository secrets listed: "AWS\_API\_KEY" and "DOCKER\_PASSWORD."](https://kodekloud.com/kk-media/image/upload/v1752876766/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/github-repo-settings-secrets-variables-2.jpg)
 
 ***
 
 ## 5. Verifying the Pipeline
 
-<Callout icon="lightbulb">
-  If you ran the workflow before syncing, you might still see a failed status. Rerun to pick up the new secret.
-</Callout>
+> **lightbulb** If you ran the workflow before syncing, you might still see a failed status. Rerun to pick up the new secret.
 
-<Frame>
-  ![The image shows a GitHub Actions interface with a "Vault Demo" workflow that has been manually run, displaying a failed status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876767/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/github-actions-vault-demo-failed.jpg)
-</Frame>
+![The image shows a GitHub Actions interface with a "Vault Demo" workflow that has been manually run, displaying a failed status.](https://kodekloud.com/kk-media/image/upload/v1752876767/notes-assets/images/GitHub-Actions-Securing-Secrets-using-HashiCorp-Vault/github-actions-vault-demo-failed.jpg)
 
 Once synced, triggering **Vault Demo** again outputs:
 
@@ -153,6 +125,4 @@ Secret Found
 
 With this setup, your CI/CD pipelines gain centralized, versioned secret management—eliminating duplicated credentials and securing your workflows end‐to‐end.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/github-actions/module/48b4f34c-9ebb-4049-baa1-40490c46d2eb/lesson/9b0c9b12-b4e8-4f4e-932d-2f87dedf4c53" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/github-actions/module/48b4f34c-9ebb-4049-baa1-40490c46d2eb/lesson/9b0c9b12-b4e8-4f4e-932d-2f87dedf4c53)

@@ -30,15 +30,11 @@ In this part, we demonstrate remote access via **Windows Remote Desktop (RDP)**.
 1. Open your Remote Desktop connection tool.
 2. Enter the target IP address (pre-filled for demonstration) and click **Connect**.
 
-<Frame>
-  ![The image shows a CentOS virtual machine running in Oracle VM VirtualBox with a Remote Desktop Connection window open, prompting for a computer address and username.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883621/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Demo-Access-a-shell-prompt-and-issue-commands-with-correct-syntax/centos-vm-virtualbox-remote-desktop.jpg)
-</Frame>
+![The image shows a CentOS virtual machine running in Oracle VM VirtualBox with a Remote Desktop Connection window open, prompting for a computer address and username.](https://kodekloud.com/kk-media/image/upload/v1752883621/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Demo-Access-a-shell-prompt-and-issue-commands-with-correct-syntax/centos-vm-virtualbox-remote-desktop.jpg)
 
 A login screen appears, pre-populated with the username "student." Type the corresponding password and click **OK**. The remote graphical session will then commence, displaying the machine's IP address at the top of the window.
 
-<Frame>
-  ![The image shows a login screen for a remote desktop session with fields for session type, username, and password. The background is teal, and the interface includes an "OK" and "Cancel" button.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883622/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Demo-Access-a-shell-prompt-and-issue-commands-with-correct-syntax/remote-desktop-login-screen.jpg)
-</Frame>
+![The image shows a login screen for a remote desktop session with fields for session type, username, and password. The background is teal, and the interface includes an "OK" and "Cancel" button.](https://kodekloud.com/kk-media/image/upload/v1752883622/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Demo-Access-a-shell-prompt-and-issue-commands-with-correct-syntax/remote-desktop-login-screen.jpg)
 
 Within the session, navigate to the **Activities** menu and select the GNOME Terminal to launch a virtual terminal emulator.
 
@@ -71,9 +67,7 @@ After closing the terminal emulator, be sure to log out of your session to compl
 
 ***
 
-<Callout icon="lightbulb">
-  For more detailed guidance on SSH configurations and management, refer to the [OpenSSH documentation](https://www.openssh.com/manual.html).
-</Callout>
+> **lightbulb** For more detailed guidance on SSH configurations and management, refer to the [OpenSSH documentation](https://www.openssh.com/manual.html).
 
 This concludes our lesson on accessing a shell prompt and issuing commands with the correct syntax. Thank you for following along, and we look forward to guiding you in our next session.
 
@@ -82,6 +76,4 @@ For further reading and additional resources, check out:
 * [Linux Documentation Project](https://www.tldp.org/)
 * [CentOS Wiki](https://wiki.centos.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/6d092a50-22b8-4916-a518-e94a0c283b62" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/6d092a50-22b8-4916-a518-e94a0c283b62)

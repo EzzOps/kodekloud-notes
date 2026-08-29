@@ -3,9 +3,7 @@
 #   Then choose 'b' for W95 FAT32
 ```
 
-<Callout icon="lightbulb">
-  Always verify that you are working on the correct device and have backed up your important data before modifying disk partitions.
-</Callout>
+> **lightbulb** Always verify that you are working on the correct device and have backed up your important data before modifying disk partitions.
 
 ## Step 2: Creating the VFAT File System
 
@@ -40,9 +38,7 @@ Add the following line to associate `/dev/vdb1` with the mount point `/myvfat` u
 /dev/vdb1 /myvfat vfat defaults 0 0
 ```
 
-<Callout icon="lightbulb">
-  For added stability, consider using the partition's UUID instead of the device name in the `/etc/fstab` file, especially if device names might change between boots.
-</Callout>
+> **lightbulb** For added stability, consider using the partition's UUID instead of the device name in the `/etc/fstab` file, especially if device names might change between boots.
 
 ## Step 5: Unmounting the VFAT File System
 
@@ -65,9 +61,7 @@ sudo umount /dev/vdb1
 
 For additional insights on Linux file systems and partitioning, check out the [Linux Documentation](https://www.kernel.org/doc/html/latest/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/eb65d854-5137-4776-8ff8-73e274c43a0c/lesson/8a52fd2e-125e-443a-924c-eb8272dc8b25" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/eb65d854-5137-4776-8ff8-73e274c43a0c/lesson/8a52fd2e-125e-443a-924c-eb8272dc8b25)
 
 
 # Manage layered storage
@@ -78,29 +72,19 @@ Learn to manage layered storage using Stratis, an advanced Linux storage managem
 
 In this lesson, you will learn how to manage layered storage using Stratis—an advanced storage management tool for Linux. Stratis simplifies working with pools of physical storage, making it easier to configure, deploy, and manage complex storage scenarios.
 
-<Frame>
-  ![The image is a slide with the text "What Is Stratis?" and describes it as a "storage-management tool for Linux."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883575/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Manage-layered-storage/what-is-stratis-storage-tool.jpg)
-</Frame>
+![The image is a slide with the text "What Is Stratis?" and describes it as a "storage-management tool for Linux."](https://kodekloud.com/kk-media/image/upload/v1752883575/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Manage-layered-storage/what-is-stratis-storage-tool.jpg)
 
 Stratis efficiently handles pools of disks or partitions (block devices) and allows you to create volumes within those pools. These pools enable powerful features such as filesystem snapshots, thin provisioning, and tiering.
 
-<Frame>
-  ![The image is a diagram illustrating a network of servers connected to databases, labeled "What Is Stratis?" at the top. It shows three servers linked to two databases, suggesting a storage or data management system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883576/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Manage-layered-storage/what-is-stratis-network-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating a network of servers connected to databases, labeled "What Is Stratis?" at the top. It shows three servers linked to two databases, suggesting a storage or data management system.](https://kodekloud.com/kk-media/image/upload/v1752883576/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Manage-layered-storage/what-is-stratis-network-diagram.jpg)
 
-<Frame>
-  ![The image is a presentation slide titled "What Is Stratis?" featuring three icons with labels: "Filesystem Snapshots," "Thin Provisioning," and "Tiering."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883576/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Manage-layered-storage/what-is-stratis-filesystem-snapshots.jpg)
-</Frame>
+![The image is a presentation slide titled "What Is Stratis?" featuring three icons with labels: "Filesystem Snapshots," "Thin Provisioning," and "Tiering."](https://kodekloud.com/kk-media/image/upload/v1752883576/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Manage-layered-storage/what-is-stratis-filesystem-snapshots.jpg)
 
 While similar to LVM, Stratis offers a simpler and more straightforward approach. It utilizes the XFS filesystem for managing file systems.
 
-<Callout icon="triangle-alert">
-  Do not use traditional XFS command-line tools on filesystems managed by Stratis, as this may lead to unexpected behavior.
-</Callout>
+> **triangle-alert** Do not use traditional XFS command-line tools on filesystems managed by Stratis, as this may lead to unexpected behavior.
 
-<Frame>
-  ![The image is a diagram explaining "What Is Stratis?" with sections labeled "Configure," "Deploy," "Manage," and "XFS File System." It includes a warning not to use XFS tools to manage the Stratis filesystem.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883578/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Manage-layered-storage/what-is-stratis-diagram.jpg)
-</Frame>
+![The image is a diagram explaining "What Is Stratis?" with sections labeled "Configure," "Deploy," "Manage," and "XFS File System." It includes a warning not to use XFS tools to manage the Stratis filesystem.](https://kodekloud.com/kk-media/image/upload/v1752883578/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Manage-layered-storage/what-is-stratis-diagram.jpg)
 
 ## Installing and Starting Stratis
 
@@ -217,9 +201,7 @@ Both the original filesystem (`myfs1`) and its snapshot (`myfs1-snapshot`) shoul
 
 ### Using Snapshots for Data Recovery
 
-<Callout icon="lightbulb">
-  Filesystem snapshots are a powerful tool for quickly recovering lost or accidentally deleted data.
-</Callout>
+> **lightbulb** Filesystem snapshots are a powerful tool for quickly recovering lost or accidentally deleted data.
 
 If you accidentally delete data (for example, `/mnt/mystratis/mydata.txt`), follow these steps to restore from the snapshot:
 
@@ -259,8 +241,6 @@ You should now see that `mydata.txt` has been restored as part of the recovered 
 
 This concludes our lesson on managing layered storage with Stratis. For more detailed information and advanced usage, consider reviewing the Stratis documentation and additional Linux storage management resources.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/eb65d854-5137-4776-8ff8-73e274c43a0c/lesson/6f4d3101-8933-491c-a888-3a4c799de6ec" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/eb65d854-5137-4776-8ff8-73e274c43a0c/lesson/6f4d3101-8933-491c-a888-3a4c799de6ec)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/eb65d854-5137-4776-8ff8-73e274c43a0c/lesson/999010c5-2e07-46ad-a331-cceb9a0e14b0" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/eb65d854-5137-4776-8ff8-73e274c43a0c/lesson/999010c5-2e07-46ad-a331-cceb9a0e14b0)

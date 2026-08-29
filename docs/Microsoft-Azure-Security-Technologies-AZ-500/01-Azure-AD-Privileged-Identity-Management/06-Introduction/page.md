@@ -23,12 +23,8 @@ Welcome back to this lesson. In this module, we focus primarily on Azure AD Priv
 5. **PIM Workflow Implementation**\
    A comprehensive examination of the end-to-end process covering administrator setup, user experience, and auditing mechanisms to monitor and secure privileged access.
 
-<Callout icon="lightbulb">
-  Before diving into the details, ensure that you have reviewed the prerequisites for configuring Azure AD PIM in your environment.
-</Callout>
+> **lightbulb** Before diving into the details, ensure that you have reviewed the prerequisites for configuring Azure AD PIM in your environment.
 
 Let's begin by delving into the Zero Trust Model and how its principles provide the foundation for a secure digital environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/4c177d01-df52-459d-8089-073ff3170c4f/lesson/83e26986-3779-4efd-b653-a77119756ce9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/4c177d01-df52-459d-8089-073ff3170c4f/lesson/83e26986-3779-4efd-b653-a77119756ce9)

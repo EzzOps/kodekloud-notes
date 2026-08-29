@@ -11,7 +11,7 @@ Welcome to this module on Implementing Azure App Configuration. In this guide, w
 3. Implementing feature management.
 4. Securing configuration data within the service.
 
-![The image is an introduction slide outlining four topics related to Azure App Configuration: exploring its benefits, understanding how it stores information, implementing feature management, and securing app configuration data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866582/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Introduction/azure-app-configuration-introduction.jpg)
+![The image is an introduction slide outlining four topics related to Azure App Configuration: exploring its benefits, understanding how it stores information, implementing feature management, and securing app configuration data.](https://kodekloud.com/kk-media/image/upload/v1752866582/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Introduction/azure-app-configuration-introduction.jpg)
 
 > **lightbulb** Azure App Configuration provides a centralized location to manage your configuration settings across multiple environments. For more details, consider reading the [Azure App Configuration documentation](https://docs.microsoft.com/en-us/azure/azure-app-configuration/overview).
 

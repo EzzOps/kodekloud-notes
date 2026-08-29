@@ -161,11 +161,9 @@ For further queries and comprehensive documentation on cron, anacron, or at sche
 
 Thank you for reading, and please proceed to the next section for additional demonstrations and related topics.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/736506db-a70d-463d-a061-74c768d309b0/lesson/932ac452-6ea8-4fe9-8416-6e1a3903265f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/736506db-a70d-463d-a061-74c768d309b0/lesson/932ac452-6ea8-4fe9-8416-6e1a3903265f)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/736506db-a70d-463d-a061-74c768d309b0/lesson/f2c537b4-1787-4f9e-9f03-578aa7f0b98e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/736506db-a70d-463d-a061-74c768d309b0/lesson/f2c537b4-1787-4f9e-9f03-578aa7f0b98e)
 
 
 # Work with package module streams
@@ -178,9 +176,7 @@ In this lesson, you'll learn how to manage packaged module streams in RHEL 8. Ap
 
 A module is a collection of packages that are typically installed together, while a profile is a subset of that module tailored for a specific purpose—for example, server configuration, client setup, or development environment. Module streams can be active (enabled) or inactive (disabled), and only one version of a module stream can be active at any given time. This setup ensures that only the designated version of a package and its dependencies are installed, with the YUM package manager handling all dependencies automatically.
 
-<Callout icon="lightbulb">
-  If you ever need to verify which modules are available or currently active, the YUM package manager provides commands to list module streams and their profiles.
-</Callout>
+> **lightbulb** If you ever need to verify which modules are available or currently active, the YUM package manager provides commands to list module streams and their profiles.
 
 ## Viewing Available Modules
 
@@ -239,12 +235,8 @@ sudo yum module reset nodejs
 
 Once reset, you can install a different version (such as version 16 with the development profile) if needed. This modular approach simplifies the process of switching between different package versions to suit your current requirements.
 
-<Callout icon="lightbulb">
-  This lesson covered how to view available modules, install a specific module stream with a chosen profile, and reset module streams in RHEL 8 using the YUM package manager.
-</Callout>
+> **lightbulb** This lesson covered how to view available modules, install a specific module stream with a chosen profile, and reset module streams in RHEL 8 using the YUM package manager.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/736506db-a70d-463d-a061-74c768d309b0/lesson/6a7fcbd3-681c-41a6-8d4c-2465a85141b4" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/736506db-a70d-463d-a061-74c768d309b0/lesson/6a7fcbd3-681c-41a6-8d4c-2465a85141b4)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/736506db-a70d-463d-a061-74c768d309b0/lesson/2d44ca62-2a64-4588-8755-8a8ebcb91421" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/736506db-a70d-463d-a061-74c768d309b0/lesson/2d44ca62-2a64-4588-8755-8a8ebcb91421)

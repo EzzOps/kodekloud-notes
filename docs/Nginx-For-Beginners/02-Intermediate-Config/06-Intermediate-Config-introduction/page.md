@@ -99,11 +99,9 @@ References
 
 That's it for this demo on configuring a simple Nginx reverse proxy to forward requests to Flask applications running on port 5000.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/85497d1b-b7c7-46d0-a176-56ec8041abff" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/85497d1b-b7c7-46d0-a176-56ec8041abff)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/236908f4-ff1d-4bd9-8ff8-ffa770855e35" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/236908f4-ff1d-4bd9-8ff8-ffa770855e35)
 
 
 # Intermediate Config introduction

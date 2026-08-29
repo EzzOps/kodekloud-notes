@@ -23,7 +23,7 @@ In an Agile Scrum framework, work flows through a series of well-defined stages 
 
 > **lightbulb** A typical sprint lasts **1–4 weeks**. Adjust the duration based on team size, product complexity, and release cadence.
 
-![The image illustrates a "Flow of Work" diagram, depicting a process from customer input and requirements through stages like backlogs, planning, design, coding, testing, deployment, review, and deliverables, with a focus on a sprint cycle.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867416/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Processes/flow-of-work-sprint-cycle-diagram.jpg)
+![The image illustrates a "Flow of Work" diagram, depicting a process from customer input and requirements through stages like backlogs, planning, design, coding, testing, deployment, review, and deliverables, with a focus on a sprint cycle.](https://kodekloud.com/kk-media/image/upload/v1752867416/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Processes/flow-of-work-sprint-cycle-diagram.jpg)
 
 Next, let’s explore the four out-of-the-box process templates that Azure DevOps provides to support this workflow.
 
@@ -31,7 +31,7 @@ Next, let’s explore the four out-of-the-box process templates that Azure DevOp
 
 Azure DevOps provides four built-in templates—**Basic**, **Scrum**, **Agile**, and **CMMI**—to help teams standardize how they plan, track, and deliver work.
 
-![The image illustrates four methods for managing the flow of work items: Basic, Scrum, Agile, and CMMI, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867416/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Processes/work-item-management-methods-icons.jpg)
+![The image illustrates four methods for managing the flow of work items: Basic, Scrum, Agile, and CMMI, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752867416/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Processes/work-item-management-methods-icons.jpg)
 
 | Template | Best For               | Key Features                                          |
 | -------- | ---------------------- | ----------------------------------------------------- |
@@ -44,7 +44,7 @@ Azure DevOps provides four built-in templates—**Basic**, **Scrum**, **Agile**,
 
 The **Basic** template offers a lean setup with only the essential fields, making it perfect for small or newly formed teams that need to get started quickly.
 
-![The image is a flowchart titled "Flow of Work – Basic," illustrating three steps: simplified work tracking, ideal for small teams, and streamlined project management. Each step is represented by an icon and a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867418/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Processes/flow-of-work-basic-flowchart.jpg)
+![The image is a flowchart titled "Flow of Work – Basic," illustrating three steps: simplified work tracking, ideal for small teams, and streamlined project management. Each step is represented by an icon and a brief description.](https://kodekloud.com/kk-media/image/upload/v1752867418/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Processes/flow-of-work-basic-flowchart.jpg)
 
 * Minimal work item types: Issue, Epic, Task
 * Quick onboarding and minimal configuration
@@ -72,7 +72,7 @@ Designed for fast-moving teams, the **Agile** template emphasizes continuous del
 
 Organizations requiring a highly structured process often choose **CMMI**. This template enforces rigorous documentation, audit trails, and formal process controls to meet compliance standards.
 
-![The image illustrates the flow of work in CMMI, highlighting three components: process improvement focus, Capability Maturity Model Index, and structured product approach.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867419/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Processes/cmmi-workflow-process-improvement-diagram.jpg)
+![The image illustrates the flow of work in CMMI, highlighting three components: process improvement focus, Capability Maturity Model Index, and structured product approach.](https://kodekloud.com/kk-media/image/upload/v1752867419/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Processes/cmmi-workflow-process-improvement-diagram.jpg)
 
 * Detailed work item states and transitions
 * Rich reporting for audits and performance measurement

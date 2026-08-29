@@ -95,9 +95,7 @@ Useful references:
 * Prometheus overview: [https://prometheus.io/docs/introduction/overview/](https://prometheus.io/docs/introduction/overview/)
 * OpenTelemetry Collector components: [https://opentelemetry.io/docs/collector/](https://opentelemetry.io/docs/collector/)
 
-<Callout icon="warning">
-  Be cautious when exposing internal metrics publicly—ensure your network and authentication policies prevent unauthorized access to the `/metrics` endpoint. Limit exposure to trusted networks and enforce firewall and authentication controls as appropriate.
-</Callout>
+> **warning** Be cautious when exposing internal metrics publicly—ensure your network and authentication policies prevent unauthorized access to the `/metrics` endpoint. Limit exposure to trusted networks and enforce firewall and authentication controls as appropriate.
 
 ## Summary and quick checklist
 
@@ -107,9 +105,7 @@ Useful references:
 * Confirm by visiting `http://<collector-ip>:8888/metrics`.
 * For scale: configure a central Prometheus scrape or a centralized scraping pipeline and forward to a backend for aggregation, alerting, and storage.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/f0507d60-5de4-4ed8-a6dd-3c4e04249ce1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/f0507d60-5de4-4ed8-a6dd-3c4e04249ce1)
 
 
 # Demo OTel Collector Extensions
@@ -183,13 +179,9 @@ service:
       exporters: [otlphttp/dynatrace, debug]
 ```
 
-<Callout icon="warning">
-  `tls.insecure: true` is useful for local testing. Do NOT use it in production—configure TLS properly for production deployments.
-</Callout>
+> **warning** `tls.insecure: true` is useful for local testing. Do NOT use it in production—configure TLS properly for production deployments.
 
-<Callout icon="lightbulb">
-  Extensions must be both declared under `extensions` and enabled by listing them in `service.extensions`. Declaring them alone does not activate them.
-</Callout>
+> **lightbulb** Extensions must be both declared under `extensions` and enabled by listing them in `service.extensions`. Declaring them alone does not activate them.
 
 After updating the Collector configuration, restart the Collector process (or redeploy your Collector pod/container) so the configuration changes take effect.
 
@@ -288,6 +280,4 @@ pprof helps diagnose CPU hotspots, contention, blocking, and memory allocation p
 
 This page focused on enabling and accessing the Collector extensions. For production use, ensure you secure debug endpoints, configure TLS correctly, and restrict access to diagnostic endpoints.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/b1ff1d0d-674b-42f4-90c1-dc6ca407c8ef" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/b1ff1d0d-674b-42f4-90c1-dc6ca407c8ef)

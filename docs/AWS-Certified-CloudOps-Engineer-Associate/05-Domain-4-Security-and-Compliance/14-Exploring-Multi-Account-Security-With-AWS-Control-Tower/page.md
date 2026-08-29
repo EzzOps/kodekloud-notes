@@ -16,7 +16,7 @@ Imagine setting up test, staging, and production environments, along with dedica
 
 Control Tower establishes a robust landing zone, which serves as the foundation for a well-architected multi-account environment. In this setup, you create an organization with a root account and multiple organizational units (OUs) such as production, staging, test, sandbox, and security. For example, the security OU typically includes specialized accounts for log archiving and auditing:
 
-![The image is a diagram of a "Control Tower" setup, showing a hierarchical structure with a "Root" at the top and various environments like Security, Sandbox, Test, Staging, and Prod below it. Each environment contains specific accounts or components, such as Log Archive and Audit Account under Security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860485/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Exploring-Multi-Account-Security-With-AWS-Control-Tower/control-tower-hierarchical-structure-diagram.jpg)
+![The image is a diagram of a "Control Tower" setup, showing a hierarchical structure with a "Root" at the top and various environments like Security, Sandbox, Test, Staging, and Prod below it. Each environment contains specific accounts or components, such as Log Archive and Audit Account under Security.](https://kodekloud.com/kk-media/image/upload/v1752860485/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Exploring-Multi-Account-Security-With-AWS-Control-Tower/control-tower-hierarchical-structure-diagram.jpg)
 
 This structured approach ensures that audit logs and archived data are securely stored and protected from unauthorized modifications. Without such a centralized system, managing separate AWS accounts can become as complicated as coordinating multiple ships without a unified navigation system.
 
@@ -30,9 +30,9 @@ AWS Control Tower incorporates two types of guardrails to maintain security and 
 * **Detective Guardrails:**\
   These guardrails configure tools like AWS Config and CloudTrail to monitor, log, and alert you about non-compliant activities. While they do not block the action, they provide crucial insights for forensic analysis and post-incident investigations.
 
-![The image illustrates AWS Control Tower Guardrails, featuring two categories: Preventive Guardrails and Detective Guardrails, each represented by icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860486/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Exploring-Multi-Account-Security-With-AWS-Control-Tower/aws-control-tower-guardrails-icons.jpg)
+![The image illustrates AWS Control Tower Guardrails, featuring two categories: Preventive Guardrails and Detective Guardrails, each represented by icons.](https://kodekloud.com/kk-media/image/upload/v1752860486/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Exploring-Multi-Account-Security-With-AWS-Control-Tower/aws-control-tower-guardrails-icons.jpg)
 
-![The image illustrates the process of preventive and detective guardrails in AWS, showing how configurations are checked when a user tries to create a public S3 bucket and how resources are monitored when an EC2 instance is launched without a key pair.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860488/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Exploring-Multi-Account-Security-With-AWS-Control-Tower/aws-guardrails-s3-ec2-monitoring.jpg)
+![The image illustrates the process of preventive and detective guardrails in AWS, showing how configurations are checked when a user tries to create a public S3 bucket and how resources are monitored when an EC2 instance is launched without a key pair.](https://kodekloud.com/kk-media/image/upload/v1752860488/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Exploring-Multi-Account-Security-With-AWS-Control-Tower/aws-guardrails-s3-ec2-monitoring.jpg)
 
 > **lightbulb** Both sets of guardrails come pre-configured with AWS Control Tower, but you always have the flexibility to add additional custom guardrails as needed.
 
@@ -40,7 +40,7 @@ AWS Control Tower incorporates two types of guardrails to maintain security and 
 
 A pivotal feature of AWS Control Tower is the Account Factory. This automation tool streamlines the provisioning of new AWS accounts by applying your organization’s baseline configurations such as AWS Config, CloudTrail, and relevant policies right from the start. This ensures consistent security and compliance while expanding your cloud infrastructure to meet growing demands.
 
-![The image is a diagram titled "Account Factory," showing a process flow with inputs of organizational unit and account details leading to "New Account Creation" and "Configuration & Baseline," resulting in the output of a new AWS account with guardrails and configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860489/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Exploring-Multi-Account-Security-With-AWS-Control-Tower/account-factory-process-flow-diagram.jpg)
+![The image is a diagram titled "Account Factory," showing a process flow with inputs of organizational unit and account details leading to "New Account Creation" and "Configuration & Baseline," resulting in the output of a new AWS account with guardrails and configurations.](https://kodekloud.com/kk-media/image/upload/v1752860489/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Exploring-Multi-Account-Security-With-AWS-Control-Tower/account-factory-process-flow-diagram.jpg)
 
 ## Benefits of AWS Control Tower
 
@@ -56,7 +56,7 @@ Implementing AWS Control Tower provides several significant benefits:
 
 > **lightbulb** Leveraging AWS Control Tower reduces the complexity involved in managing a large-scale, multi-account environment while ensuring adherence to regulatory standards and internal policies.
 
-![The image lists five features: Simplified Multi-Account Environments, Reduce Risk of Human Error, Automated Policy Enforcement, Improve Operational Efficiency, and Continuous Monitoring. Each feature is represented with an icon and a gradient color background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860490/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Exploring-Multi-Account-Security-With-AWS-Control-Tower/features-multi-account-automation.jpg)
+![The image lists five features: Simplified Multi-Account Environments, Reduce Risk of Human Error, Automated Policy Enforcement, Improve Operational Efficiency, and Continuous Monitoring. Each feature is represented with an icon and a gradient color background.](https://kodekloud.com/kk-media/image/upload/v1752860490/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Exploring-Multi-Account-Security-With-AWS-Control-Tower/features-multi-account-automation.jpg)
 
 ## Summary
 

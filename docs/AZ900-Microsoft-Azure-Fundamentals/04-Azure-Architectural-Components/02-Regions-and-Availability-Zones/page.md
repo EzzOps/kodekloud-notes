@@ -14,7 +14,7 @@ Azure Global Infrastructure is organized into regions—clusters of data centers
 
 For instance, regulatory restrictions may require a military organization in Australia to store confidential data locally. Instead of using regions in China or Singapore, they can select from Australian data centers like Australia East, Australia Central, or Southeast, thereby ensuring sensitive data remains within national boundaries.
 
-![The image is a world map highlighting data residency and user proximity regions, with markers indicating available, announced, and availability zones in various countries. It emphasizes choosing regions based on proximity for optimal performance, with over 60 regions in 140 countries.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868188/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Regions-and-Availability-Zones/world-map-data-residency-proximity.jpg)
+![The image is a world map highlighting data residency and user proximity regions, with markers indicating available, announced, and availability zones in various countries. It emphasizes choosing regions based on proximity for optimal performance, with over 60 regions in 140 countries.](https://kodekloud.com/kk-media/image/upload/v1752868188/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Regions-and-Availability-Zones/world-map-data-residency-proximity.jpg)
 
 Optimizing region selection is critical. For example, users in India experience lower latency and enhanced performance when connected to servers in South, Central, or West India instead of those in the United States. Always verify the availability of specific Azure services in your chosen region, as some offerings might be region-specific.
 
@@ -28,7 +28,7 @@ Moving beyond regions, Availability Zones are a key aspect of Azure’s architec
 
 Consider the diagram below, which illustrates a data residency solution utilizing Azure Availability Zones:
 
-![The image illustrates a data residency solution using Azure's availability zones, showing three zones with fault domains (FD) and update domains (UD). It emphasizes leveraging availability zones in Azure for data management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868189/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Regions-and-Availability-Zones/azure-data-residency-availability-zones.jpg)
+![The image illustrates a data residency solution using Azure's availability zones, showing three zones with fault domains (FD) and update domains (UD). It emphasizes leveraging availability zones in Azure for data management.](https://kodekloud.com/kk-media/image/upload/v1752868189/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Regions-and-Availability-Zones/azure-data-residency-availability-zones.jpg)
 
 By incorporating Availability Zones into its strategy, Bella Innovation can guarantee continuous service availability, even during localized disruptions.
 
@@ -40,7 +40,7 @@ While Availability Zones address intra-region outages, Azure Regional Pairs offe
 
 For example, Bella Innovation needs to manage critical user data that must remain within the Singapore region due to strict residency rules. Azure Regional Pairs allow for efficient disaster recovery by designating a partner region as a backup. This pairing ensures that if one region goes down, the other can sustain operations without breaching data residency requirements.
 
-![The image illustrates a disaster recovery solution with two regions, each containing availability zones, highlighting Azure's regional pairs, data residency compliance, and resilience against failures.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868190/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Regions-and-Availability-Zones/disaster-recovery-azure-regions-zones.jpg)
+![The image illustrates a disaster recovery solution with two regions, each containing availability zones, highlighting Azure's regional pairs, data residency compliance, and resilience against failures.](https://kodekloud.com/kk-media/image/upload/v1752868190/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Regions-and-Availability-Zones/disaster-recovery-azure-regions-zones.jpg)
 
 Key benefits of Azure Regional Pairs include:
 
@@ -59,7 +59,7 @@ As Bella Innovation expands into regions with stringent regulatory constraints, 
 * **Purpose:** Tailored for US federal government entities, ensuring enhanced security.
 * **Features:** Provides physical and logical isolation from non-governmental deployments for increased protection.
 
-![The image is about "Sovereign Regions – Azure Government" and includes icons representing security and government, with text highlighting features like segregated Azure instances, physical separation, and authorized personnel access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868191/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Regions-and-Availability-Zones/sovereign-regions-azure-government.jpg)
+![The image is about "Sovereign Regions – Azure Government" and includes icons representing security and government, with text highlighting features like segregated Azure instances, physical separation, and authorized personnel access.](https://kodekloud.com/kk-media/image/upload/v1752868191/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Regions-and-Availability-Zones/sovereign-regions-azure-government.jpg)
 
 ### Azure China
 
@@ -68,7 +68,7 @@ As Bella Innovation expands into regions with stringent regulatory constraints, 
 
 These sovereign cloud solutions ensure that Bella Innovation can navigate local regulatory landscapes while harnessing the power of Azure cloud services.
 
-![The image is a diagram illustrating a solution for sovereign regulations, featuring a cloud icon over a map with a location marker, and listing four key points: Azure dedicated environments, regulatory compliance assurance, data sovereignty adherence, and robust cloud services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868192/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Regions-and-Availability-Zones/sovereign-regulations-cloud-diagram.jpg)
+![The image is a diagram illustrating a solution for sovereign regulations, featuring a cloud icon over a map with a location marker, and listing four key points: Azure dedicated environments, regulatory compliance assurance, data sovereignty adherence, and robust cloud services.](https://kodekloud.com/kk-media/image/upload/v1752868192/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Regions-and-Availability-Zones/sovereign-regulations-cloud-diagram.jpg)
 
 ## Exploring the Global Infrastructure
 
@@ -76,15 +76,15 @@ To gain deeper insights into Azure's expansive network, explore the Global Infra
 
 For example, selecting the "East US 3" region reveals details about its location, the configuration of availability zones, and compliance information:
 
-![The image shows a digital globe with highlighted data center locations and a sidebar detailing information about the "East US 3" data center region, including its location in Georgia and data residency details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868193/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Regions-and-Availability-Zones/digital-globe-east-us-3-data-center.jpg)
+![The image shows a digital globe with highlighted data center locations and a sidebar detailing information about the "East US 3" data center region, including its location in Georgia and data residency details.](https://kodekloud.com/kk-media/image/upload/v1752868193/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Regions-and-Availability-Zones/digital-globe-east-us-3-data-center.jpg)
 
 Similarly, you can explore Southeast Asia's data center region in Singapore, which serves as a practical example for Bella Innovation's deployment strategy:
 
-![The image shows a digital globe with highlighted data center locations and network connections, alongside information about Microsoft's Southeast Asia data center region in Singapore.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868194/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Regions-and-Availability-Zones/digital-globe-data-centers-singapore.jpg)
+![The image shows a digital globe with highlighted data center locations and network connections, alongside information about Microsoft's Southeast Asia data center region in Singapore.](https://kodekloud.com/kk-media/image/upload/v1752868194/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Regions-and-Availability-Zones/digital-globe-data-centers-singapore.jpg)
 
 Additionally, review data about sovereign cloud regions such as China East 2 to understand how regional offerings vary based on local requirements:
 
-![The image shows a digital globe with highlighted data center locations and a sidebar detailing information about the "China East 2" region, including its location in Shanghai and data residency details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868196/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Regions-and-Availability-Zones/digital-globe-data-centers-china-east-2.jpg)
+![The image shows a digital globe with highlighted data center locations and a sidebar detailing information about the "China East 2" region, including its location in Shanghai and data residency details.](https://kodekloud.com/kk-media/image/upload/v1752868196/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Regions-and-Availability-Zones/digital-globe-data-centers-china-east-2.jpg)
 
 This interactive view not only reveals regional locations but also provides insights into connectivity, points of presence, and sustainability projects, demonstrating how the Azure Global Infrastructure is aligned for optimal connectivity and high availability.
 

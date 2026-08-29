@@ -44,7 +44,7 @@ COPY ./start.ps1 ./
 CMD ["powershell", ".\\start.ps1"]
 ```
 
-![Dockerfile Save As dialog in code editor with filename "azpagentwindows.dockerfile"](../../../../images/kodekloud.com/kk-media/image/upload/v1752867853/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Containerized-Agents/save-as-dialog-dockerfile-code-editor.jpg)
+![Dockerfile Save As dialog in code editor with filename "azpagentwindows.dockerfile"](https://kodekloud.com/kk-media/image/upload/v1752867853/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Containerized-Agents/save-as-dialog-dockerfile-code-editor.jpg)
 
 ### 1.2 Add the `start.ps1` Script
 
@@ -166,7 +166,7 @@ Push to your repo, grant permissions, and verify the container agent executes th
 
 A plain Server Core image shows queued .NET pipelines:
 
-![Azure DevOps pipeline titled "Set up CI with Azure Pipelines" queued](../../../../images/kodekloud.com/kk-media/image/upload/v1752867854/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Containerized-Agents/azure-devops-pipeline-ci-queued.jpg)
+![Azure DevOps pipeline titled "Set up CI with Azure Pipelines" queued](https://kodekloud.com/kk-media/image/upload/v1752867854/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Containerized-Agents/azure-devops-pipeline-ci-queued.jpg)
 
 > **triangle-alert** The Server Core base lacks MSBuild, .NET SDK, and build tools. It reports zero capabilities and cannot pick up .NET jobs.
 

@@ -99,9 +99,7 @@ SELECT * FROM products WHERE inventory <> 0;
 
 Either query returns rows where inventory is not zero (i.e., items in stock).
 
-<Callout icon="lightbulb">
-  Use \<> when you want to follow SQL standard syntax. Many databases accept both `<>` and `!=`; pick one consistent with your team's style guide or your DBMS documentation.
-</Callout>
+> **lightbulb** Use \<> when you want to follow SQL standard syntax. Many databases accept both `<>` and `!=`; pick one consistent with your team's style guide or your DBMS documentation.
 
 Combining conditions: AND / OR
 
@@ -148,9 +146,7 @@ LINE 1: SELECT * FROM products inventory > 0 AND price > 20;
 SQL state: 42601
 ```
 
-<Callout icon="warning">
-  Always include WHERE after FROM (and after any JOIN clauses) when filtering rows. When queries become complex, format and indent conditions to make missing keywords obvious.
-</Callout>
+> **warning** Always include WHERE after FROM (and after any JOIN clauses) when filtering rows. When queries become complex, format and indent conditions to make missing keywords obvious.
 
 Summary and best practices
 
@@ -165,6 +161,4 @@ Links and references
 * [PostgreSQL WHERE documentation](https://www.postgresql.org/docs/current/queries-table-expressions.html)
 * [SQL Comparison Operators (general reference)](https://www.w3schools.com/sql/sql_operators.asp)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/18e29f1f-09d5-4a3d-886f-65f9f1dceb87" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/18e29f1f-09d5-4a3d-886f-65f9f1dceb87)

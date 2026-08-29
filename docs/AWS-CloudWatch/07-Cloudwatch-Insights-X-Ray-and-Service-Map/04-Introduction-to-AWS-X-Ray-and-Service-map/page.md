@@ -44,7 +44,7 @@ As your application grows into multiple microservices, you might encounter inter
 
 See our hands-on lab to get started with real-world examples and best practices.
 
-![The image is an introduction slide for AWS X-Ray and Service Map, highlighting features such as application tracing, service map feature, performance analysis, integration with AWS services, filtering, and security compliance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862526/notes-assets/images/AWS-CloudWatch-Introduction-to-AWS-X-Ray-and-Service-map/aws-xray-service-map-introduction-slide.jpg)
+![The image is an introduction slide for AWS X-Ray and Service Map, highlighting features such as application tracing, service map feature, performance analysis, integration with AWS services, filtering, and security compliance.](https://kodekloud.com/kk-media/image/upload/v1752862526/notes-assets/images/AWS-CloudWatch-Introduction-to-AWS-X-Ray-and-Service-map/aws-xray-service-map-introduction-slide.jpg)
 
 ***
 

@@ -16,13 +16,9 @@ Automated scanners detect unsafe patterns like raw SQL concatenation before code
 | Veracode  | Multiple                           | Cloud-based vulnerability scanning |
 | Codacy    | JavaScript, Python, Ruby, Java     | Inline code review with CI plugins |
 
-<Frame>
-  ![The image features the SonarQube logo and a dashboard showing a "Passed" quality gate with metrics on reliability, security, coverage, and duplications. It also highlights the benefits of detecting problematic code patterns and mitigating identified risks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880872/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Workload-and-Application-Code-Security/sonarqube-dashboard-quality-gate-metrics.jpg)
-</Frame>
+![The image features the SonarQube logo and a dashboard showing a "Passed" quality gate with metrics on reliability, security, coverage, and duplications. It also highlights the benefits of detecting problematic code patterns and mitigating identified risks.](https://kodekloud.com/kk-media/image/upload/v1752880872/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Workload-and-Application-Code-Security/sonarqube-dashboard-quality-gate-metrics.jpg)
 
-<Callout icon="lightbulb">
-  Incorporate static analysis into your CI/CD pipeline to catch vulnerabilities early and maintain code quality over time.
-</Callout>
+> **lightbulb** Incorporate static analysis into your CI/CD pipeline to catch vulnerabilities early and maintain code quality over time.
 
 ## 2. Scanning Third-Party Dependencies
 
@@ -49,9 +45,7 @@ engine = create_engine('sqlite:///test.db')
 | Snyk                   | JavaScript, Python, Go, Java | Continuous monitoring with automatic pull requests                     |
 | GitHub Dependabot      | Multiple                     | Native GitHub alerts and automated dependency updates                  |
 
-<Callout icon="triangle-alert">
-  Outdated dependencies can quickly become attack vectors. Schedule automated scans (e.g., daily or on pull requests) to remediate vulnerabilities promptly.
-</Callout>
+> **triangle-alert** Outdated dependencies can quickly become attack vectors. Schedule automated scans (e.g., daily or on pull requests) to remediate vulnerabilities promptly.
 
 ## 3. Log4j and Application Security Monitoring
 
@@ -84,9 +78,7 @@ Integrate runtime protection tools to catch anomalies, even for zero-day exploit
 
 Monitoring your application’s resource usage and behavior in real time is essential for both performance tuning and security forensic.
 
-<Frame>
-  ![The image is a presentation slide for "Sysdig Secure," featuring three icons labeled "Securing," "Monitoring," and "Control."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880873/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Workload-and-Application-Code-Security/sysdig-secure-securing-monitoring-control.jpg)
-</Frame>
+![The image is a presentation slide for "Sysdig Secure," featuring three icons labeled "Securing," "Monitoring," and "Control."](https://kodekloud.com/kk-media/image/upload/v1752880873/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Workload-and-Application-Code-Security/sysdig-secure-securing-monitoring-control.jpg)
 
 ### Key Observability Features
 
@@ -96,9 +88,7 @@ Monitoring your application’s resource usage and behavior in real time is esse
 | Resource Metrics    | Identify CPU/memory spikes that may signal attacks |
 | Network Monitoring  | Visualize container-to-container traffic flows     |
 
-<Callout icon="lightbulb">
-  Correlate logs, metrics, and traces to quickly pinpoint root causes—whether it’s a memory leak, cryptojacking, or container escape.
-</Callout>
+> **lightbulb** Correlate logs, metrics, and traces to quickly pinpoint root causes—whether it’s a memory leak, cryptojacking, or container escape.
 
 ***
 
@@ -117,9 +107,7 @@ By following these best practices, you’ll strengthen your application’s secu
 * [Sysdig Secure](https://sysdig.com/products/secure/)
 * [SonarQube Documentation](https://docs.sonarqube.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/a0ddd095-0114-4aa4-b3a5-2b31e773f241/lesson/bb4c4f9e-8293-4846-bde9-895e659743c3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/a0ddd095-0114-4aa4-b3a5-2b31e773f241/lesson/bb4c4f9e-8293-4846-bde9-895e659743c3)
 
 
 # Admission Controllers
@@ -139,9 +127,7 @@ When you run a `kubectl` command (e.g., creating a Pod), the request follows the
 3. **Admission Control** (Admission Controllers): Validate or mutate objects.
 4. **Persistence**: Store the final object in etcd.
 
-<Frame>
-  ![The image is a flowchart illustrating the process of creating a pod in Kubernetes, involving steps like authentication, authorization, and admission controllers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880875/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Admission-Controllers/kubernetes-pod-creation-flowchart.jpg)
-</Frame>
+![The image is a flowchart illustrating the process of creating a pod in Kubernetes, involving steps like authentication, authorization, and admission controllers.](https://kodekloud.com/kk-media/image/upload/v1752880875/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Admission-Controllers/kubernetes-pod-creation-flowchart.jpg)
 
 ## Authentication & Authorization Examples
 
@@ -220,9 +206,7 @@ spec:
         add: ["MAC_ADMIN"]
 ```
 
-<Callout icon="lightbulb">
-  Admission Controllers can **validate** (reject bad requests) or **mutate** (inject defaults, sidecars) before persistence.
-</Callout>
+> **lightbulb** Admission Controllers can **validate** (reject bad requests) or **mutate** (inject defaults, sidecars) before persistence.
 
 ## Built-in Admission Controllers
 

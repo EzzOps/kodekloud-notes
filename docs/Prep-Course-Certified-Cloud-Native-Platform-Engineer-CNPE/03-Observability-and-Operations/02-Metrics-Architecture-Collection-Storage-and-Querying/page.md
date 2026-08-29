@@ -63,9 +63,7 @@ Operational benefits:
 * Easier debugging (query the target directly)
 * Strong Kubernetes-native integration
 
-<Callout icon="warning">
-  Prometheus is primarily pull-based. For short-lived batch jobs that can't be scraped, the official escape hatch is the Pushgateway. Use Pushgateway sparingly — it’s an exception, not the default pattern. See the Prometheus push practices for details: [https://prometheus.io/docs/practices/pushing/](https://prometheus.io/docs/practices/pushing/)
-</Callout>
+> **warning** Prometheus is primarily pull-based. For short-lived batch jobs that can't be scraped, the official escape hatch is the Pushgateway. Use Pushgateway sparingly — it’s an exception, not the default pattern. See the Prometheus push practices for details: [https://prometheus.io/docs/practices/pushing/](https://prometheus.io/docs/practices/pushing/)
 
 <Frame>
   <img alt="The image is a diagram explaining Prometheus' pull-based collection process, highlighting components like scrape targets, service discovery, time series database, and PromQL. It also lists benefits such as central control, health monitoring, no client-side configuration, ease of debugging, and Kubernetes-native features." />

@@ -49,9 +49,7 @@ kubectl exec -it pod1 --container container1 -- ping -c 3 192.168.121.187
 
 You should receive replies, confirming open egress/ingress.
 
-<Callout icon="lightbulb">
-  By default, no NetworkPolicy is enforced, so all traffic flows freely.
-</Callout>
+> **lightbulb** By default, no NetworkPolicy is enforced, so all traffic flows freely.
 
 ***
 

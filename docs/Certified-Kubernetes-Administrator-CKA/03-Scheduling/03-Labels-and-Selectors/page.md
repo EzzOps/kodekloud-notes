@@ -50,7 +50,7 @@ kubectl describe daemonset monitoring-daemon
 
 Prior to Kubernetes version 1.12, scheduling a pod on a specific node was often achieved by manually setting the `nodeName` property within the pod specification. However, since version 1.12, DaemonSets leverage the default scheduler in conjunction with node affinity rules. This improvement ensures that a pod is automatically scheduled on every node without manual intervention.
 
-![The image explains Kubernetes node scheduling, showing default behavior till v1.12 and changes with NodeAffinity from v1.12, featuring nodes labeled node01 to node06.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869890/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-DaemonSets/frame_240.jpg)
+![The image explains Kubernetes node scheduling, showing default behavior till v1.12 and changes with NodeAffinity from v1.12, featuring nodes labeled node01 to node06.](https://kodekloud.com/kk-media/image/upload/v1752869890/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-DaemonSets/frame_240.jpg)
 
 :::note Tip
 DaemonSets are an ideal solution for deploying services that must run on every node, such as monitoring agents and essential networking components. Leveraging node affinity simplifies management as your cluster scales.
@@ -84,7 +84,7 @@ Welcome to this comprehensive guide on labels, selectors, and annotations in Kub
 
 Labels and selectors offer a systematic approach to categorizing items. Think of a scenario where you have various species of animals, and you need to filter them based on attributes such as class, kind, or color. For example, you might want to filter for all green animals or just the green birds. By attaching labels like class, kind, and color to each animal, you can later use selectors to efficiently filter and display the items that meet your criteria.
 
-![The image shows animal icons with labels for class, kind, and color, illustrating selectors for categorization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869891/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Labels-and-Selectors/frame_70.jpg)
+![The image shows animal icons with labels for class, kind, and color, illustrating selectors for categorization.](https://kodekloud.com/kk-media/image/upload/v1752869891/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Labels-and-Selectors/frame_70.jpg)
 
 In everyday applications, labels and selectors are ubiquitous. They function similarly to keywords in YouTube videos or blog posts, aiding users in finding relevant content. In online stores, labels empower customers to filter products based on various characteristics.
 
@@ -92,11 +92,11 @@ In everyday applications, labels and selectors are ubiquitous. They function sim
 
 In Kubernetes, labels and selectors are instrumental in managing an array of objects such as Pods, Services, ReplicaSets, and Deployments. As the number of objects in a cluster grows, these tools become essential for grouping and selecting objects by application, functionality, or type.
 
-![The image illustrates the use of labels and selectors in Kubernetes, featuring various colored shapes representing different components or services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869893/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Labels-and-Selectors/frame_140.jpg)
+![The image illustrates the use of labels and selectors in Kubernetes, featuring various colored shapes representing different components or services.](https://kodekloud.com/kk-media/image/upload/v1752869893/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Labels-and-Selectors/frame_140.jpg)
 
 For instance, you might attach labels like "app" or "function" to your Kubernetes objects and later use selectors to filter objects based on specific conditions (e.g., app equals "App1").
 
-![The image shows labeled shapes representing different apps and functions, including front-end, authentication, web servers, image processing, and databases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869894/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Labels-and-Selectors/frame_160.jpg)
+![The image shows labeled shapes representing different apps and functions, including front-end, authentication, web servers, image processing, and databases.](https://kodekloud.com/kk-media/image/upload/v1752869894/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Labels-and-Selectors/frame_160.jpg)
 
 ## Specifying Labels in Kubernetes
 

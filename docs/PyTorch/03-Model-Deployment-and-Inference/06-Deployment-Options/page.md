@@ -33,9 +33,7 @@ spec:
 
 Defining resource requests and limits ensures that your ML models receive the necessary CPU, GPU, or memory while preventing competition between workloads.
 
-<Frame>
-  ![The image is a slide titled "Specialized Workloads" focusing on "Resource Requests and Limits," advising the allocation of CPU, GPU, and memory to avoid resource contention and ensure proper job execution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883218/notes-assets/images/PyTorch-Deploying-to-Kubernetes/specialized-workloads-resource-requests-limits.jpg)
-</Frame>
+![The image is a slide titled "Specialized Workloads" focusing on "Resource Requests and Limits," advising the allocation of CPU, GPU, and memory to avoid resource contention and ensure proper job execution.](https://kodekloud.com/kk-media/image/upload/v1752883218/notes-assets/images/PyTorch-Deploying-to-Kubernetes/specialized-workloads-resource-requests-limits.jpg)
 
 For example, if your model requires one GPU and 4GB of memory, specifying these in your YAML manifest will help ensure efficient resource allocation.
 
@@ -48,35 +46,23 @@ Deploying an ML model with Kubernetes involves a series of well-defined steps:
 3. **Deployment:** Apply the YAML files using `kubectl` or integrate them into a GitOps pipeline. Verify the deployment using commands like `kubectl get pods` and `kubectl logs`.
 4. **Testing and Scaling:** Use a REST client (such as Postman) to test the model endpoint. Configure an autoscaler (e.g., Horizontal Pod Autoscaler) to adjust pod counts dynamically based on traffic.
 
-<Frame>
-  ![The image shows a "Deployment Workflow" diagram with steps including "Containerize the Model," "Prepare Kubernetes Resources," "Deploy to Kubernetes," and "Test and Scale." The highlighted step, "Prepare Kubernetes Resources," involves creating YAML files and specifying resource requests and limits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883219/notes-assets/images/PyTorch-Deploying-to-Kubernetes/deployment-workflow-kubernetes-diagram.jpg)
-</Frame>
+![The image shows a "Deployment Workflow" diagram with steps including "Containerize the Model," "Prepare Kubernetes Resources," "Deploy to Kubernetes," and "Test and Scale." The highlighted step, "Prepare Kubernetes Resources," involves creating YAML files and specifying resource requests and limits.](https://kodekloud.com/kk-media/image/upload/v1752883219/notes-assets/images/PyTorch-Deploying-to-Kubernetes/deployment-workflow-kubernetes-diagram.jpg)
 
-<Frame>
-  ![The image shows a "Deployment Workflow" for deploying to Kubernetes, highlighting steps like applying YAML files and verifying pod status. It includes a sidebar with steps: "Containerize the Model," "Prepare Kubernetes Resources," "Deploy to Kubernetes," and "Test and Scale."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883220/notes-assets/images/PyTorch-Deploying-to-Kubernetes/deployment-workflow-kubernetes-diagram-2.jpg)
-</Frame>
+![The image shows a "Deployment Workflow" for deploying to Kubernetes, highlighting steps like applying YAML files and verifying pod status. It includes a sidebar with steps: "Containerize the Model," "Prepare Kubernetes Resources," "Deploy to Kubernetes," and "Test and Scale."](https://kodekloud.com/kk-media/image/upload/v1752883220/notes-assets/images/PyTorch-Deploying-to-Kubernetes/deployment-workflow-kubernetes-diagram-2.jpg)
 
-<Frame>
-  ![The image shows a "Deployment Workflow" diagram with steps for containerizing a model, preparing Kubernetes resources, deploying to Kubernetes, and testing and scaling. The highlighted step, "Test and Scale," includes testing the model endpoint with a REST client and autoscaling using Horizontal Pod Autoscaler (HPA).](../../../../images/kodekloud.com/kk-media/image/upload/v1752883222/notes-assets/images/PyTorch-Deploying-to-Kubernetes/deployment-workflow-containerization-diagram.jpg)
-</Frame>
+![The image shows a "Deployment Workflow" diagram with steps for containerizing a model, preparing Kubernetes resources, deploying to Kubernetes, and testing and scaling. The highlighted step, "Test and Scale," includes testing the model endpoint with a REST client and autoscaling using Horizontal Pod Autoscaler (HPA).](https://kodekloud.com/kk-media/image/upload/v1752883222/notes-assets/images/PyTorch-Deploying-to-Kubernetes/deployment-workflow-containerization-diagram.jpg)
 
 ## Horizontal Pod Autoscaler (HPA)
 
 The Horizontal Pod Autoscaler (HPA) is critical for managing workload fluctuations. It automatically adjusts the number of pods based on real-time metrics such as CPU usage, memory consumption, or custom metrics, ensuring your deployment remains responsive and resource-efficient.
 
-<Frame>
-  ![The image illustrates a "Horizontal Pod Autoscaler" with a focus on low traffic during off-peak hours, showing a deployment of six pods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883223/notes-assets/images/PyTorch-Deploying-to-Kubernetes/horizontal-pod-autoscaler-low-traffic.jpg)
-</Frame>
+![The image illustrates a "Horizontal Pod Autoscaler" with a focus on low traffic during off-peak hours, showing a deployment of six pods.](https://kodekloud.com/kk-media/image/upload/v1752883223/notes-assets/images/PyTorch-Deploying-to-Kubernetes/horizontal-pod-autoscaler-low-traffic.jpg)
 
 HPA dynamically scales pods based on utilization metrics. The following diagram outlines key components such as CPU utilization, memory usage, and custom application metrics that influence scaling decisions:
 
-<Frame>
-  ![The image is a diagram titled "Horizontal Pod Autoscaler" showing three components: CPU Utilization, Memory Usage, and Custom Application Metrics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883225/notes-assets/images/PyTorch-Deploying-to-Kubernetes/horizontal-pod-autoscaler-diagram.jpg)
-</Frame>
+![The image is a diagram titled "Horizontal Pod Autoscaler" showing three components: CPU Utilization, Memory Usage, and Custom Application Metrics.](https://kodekloud.com/kk-media/image/upload/v1752883225/notes-assets/images/PyTorch-Deploying-to-Kubernetes/horizontal-pod-autoscaler-diagram.jpg)
 
-<Frame>
-  ![The image is a slide titled "Horizontal Pod Autoscaler," highlighting two benefits: handling high traffic to prevent downtime and optimizing resource usage during low traffic to reduce costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883225/notes-assets/images/PyTorch-Deploying-to-Kubernetes/horizontal-pod-autoscaler-benefits.jpg)
-</Frame>
+![The image is a slide titled "Horizontal Pod Autoscaler," highlighting two benefits: handling high traffic to prevent downtime and optimizing resource usage during low traffic to reduce costs.](https://kodekloud.com/kk-media/image/upload/v1752883225/notes-assets/images/PyTorch-Deploying-to-Kubernetes/horizontal-pod-autoscaler-benefits.jpg)
 
 Currently, GPU metrics are not natively supported, but you can integrate custom metric systems to monitor GPU usage.
 
@@ -134,30 +120,22 @@ Adopting best practices is crucial for robust and efficient ML model deployments
 1. **Container Optimization:**\
    Use lightweight, optimized containers such as slim Docker images that include only the necessary files and dependencies. This practice speeds up deployments and reduces resource overhead.
 
-<Frame>
-  ![The image is a slide titled "Best Practices" with a focus on using lightweight containers, suggesting the optimization of containers like slim Docker images.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883226/notes-assets/images/PyTorch-Deploying-to-Kubernetes/best-practices-lightweight-containers.jpg)
-</Frame>
+![The image is a slide titled "Best Practices" with a focus on using lightweight containers, suggesting the optimization of containers like slim Docker images.](https://kodekloud.com/kk-media/image/upload/v1752883226/notes-assets/images/PyTorch-Deploying-to-Kubernetes/best-practices-lightweight-containers.jpg)
 
 2. **Resource Monitoring:**\
    Leverage monitoring tools like Prometheus and Grafana to track CPU, memory, and GPU usage. Always define resource limits to avoid contention, especially in shared cluster environments.
 
-<Frame>
-  ![The image provides best practices for monitoring resource usage, suggesting the use of tools like Prometheus and Grafana, and setting resource limits for CPU, memory, and GPU.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883228/notes-assets/images/PyTorch-Deploying-to-Kubernetes/monitoring-resource-usage-best-practices.jpg)
-</Frame>
+![The image provides best practices for monitoring resource usage, suggesting the use of tools like Prometheus and Grafana, and setting resource limits for CPU, memory, and GPU.](https://kodekloud.com/kk-media/image/upload/v1752883228/notes-assets/images/PyTorch-Deploying-to-Kubernetes/monitoring-resource-usage-best-practices.jpg)
 
 3. **Rolling Updates:**\
    Employ rolling updates for model deployments to minimize downtime. This approach allows gradual updates and ensures a smooth user experience.
 
-<Frame>
-  ![The image is a slide titled "Best Practices" with a focus on "Leverage Rolling Updates," highlighting the benefits of gradual deployment and minimal downtime.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883229/notes-assets/images/PyTorch-Deploying-to-Kubernetes/best-practices-rolling-updates.jpg)
-</Frame>
+![The image is a slide titled "Best Practices" with a focus on "Leverage Rolling Updates," highlighting the benefits of gradual deployment and minimal downtime.](https://kodekloud.com/kk-media/image/upload/v1752883229/notes-assets/images/PyTorch-Deploying-to-Kubernetes/best-practices-rolling-updates.jpg)
 
 4. **Security Measures:**\
    Implement strict security best practices by using Role-Based Access Control (RBAC) and network policies to restrict permissions for pods. This minimizes unauthorized access risks.
 
-<Frame>
-  ![The image is a slide titled "Best Practices" with a focus on "Enforce Security," suggesting the use of RBAC (Role-Based Access Control) to restrict permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883230/notes-assets/images/PyTorch-Deploying-to-Kubernetes/best-practices-enforce-security-rbac.jpg)
-</Frame>
+![The image is a slide titled "Best Practices" with a focus on "Enforce Security," suggesting the use of RBAC (Role-Based Access Control) to restrict permissions.](https://kodekloud.com/kk-media/image/upload/v1752883230/notes-assets/images/PyTorch-Deploying-to-Kubernetes/best-practices-enforce-security-rbac.jpg)
 
 ## ML Serving Frameworks for Kubernetes
 
@@ -172,15 +150,11 @@ While Kubernetes' native resources (Deployments, Services, etc.) suffice for man
 * **Triton Inference Server:**\
   Developed by NVIDIA, Triton provides GPU-accelerated inference and supports dynamic batching across multiple ML frameworks (TensorFlow, PyTorch, ONNX).
 
-<Frame>
-  ![The image lists three ML serving frameworks: KServe, Seldon Core, and Triton Inference Server, each with a brief description of their features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883230/notes-assets/images/PyTorch-Deploying-to-Kubernetes/ml-serving-frameworks-kserve-seldon-triton.jpg)
-</Frame>
+![The image lists three ML serving frameworks: KServe, Seldon Core, and Triton Inference Server, each with a brief description of their features.](https://kodekloud.com/kk-media/image/upload/v1752883230/notes-assets/images/PyTorch-Deploying-to-Kubernetes/ml-serving-frameworks-kserve-seldon-triton.jpg)
 
 These frameworks also offer crucial capabilities such as model versioning, autoscaling, and integrated logging and monitoring, enabling efficient troubleshooting and management of multiple model versions.
 
-<Frame>
-  ![The image lists three key features of frameworks: model versioning and rollout strategies, autoscaling based on traffic, and logging and monitoring tools for ML workloads.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883232/notes-assets/images/PyTorch-Deploying-to-Kubernetes/frameworks-key-features-ml-tools.jpg)
-</Frame>
+![The image lists three key features of frameworks: model versioning and rollout strategies, autoscaling based on traffic, and logging and monitoring tools for ML workloads.](https://kodekloud.com/kk-media/image/upload/v1752883232/notes-assets/images/PyTorch-Deploying-to-Kubernetes/frameworks-key-features-ml-tools.jpg)
 
 ## Conclusion
 
@@ -190,9 +164,7 @@ By following best practices—optimizing containers, monitoring resources, emplo
 
 Let's now load up a Kubernetes cluster and deploy our model application using these best practices and real-world strategies.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/254f1dc1-743a-495f-b990-c6aa13a334d6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/254f1dc1-743a-495f-b990-c6aa13a334d6)
 
 
 # Deployment Options
@@ -205,9 +177,7 @@ Congratulations on reaching this stage of the course!
 
 After building and evaluating three models, it's time to share your best creation with your client at Awesome AI. In this lesson, we’ll provide an overview of model deployment options for PyTorch. You’ll learn about various deployment formats, serving frameworks, and essential infrastructure components. While some topics will be explored in further detail in later lessons, this guide offers a comprehensive outline to help you get started.
 
-<Frame>
-  ![The image shows an agenda with five points related to deployment options, formats, service frameworks, infrastructure components, and tools for effective deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883234/notes-assets/images/PyTorch-Deployment-Options/deployment-options-agenda.jpg)
-</Frame>
+![The image shows an agenda with five points related to deployment options, formats, service frameworks, infrastructure components, and tools for effective deployment.](https://kodekloud.com/kk-media/image/upload/v1752883234/notes-assets/images/PyTorch-Deployment-Options/deployment-options-agenda.jpg)
 
 ## Deployment Formats
 
@@ -221,17 +191,13 @@ ONNX (Open Neural Network Exchange) is a widely adopted format that enables cros
 
 Quantization reduces the size and computational requirements of your model, making it especially useful for devices with limited resources such as mobile phones or IoT devices. Techniques like Int8, Dynamic, and Mixed Precision Quantization can significantly boost inference speed with minimal impact on accuracy.
 
-<Callout icon="lightbulb">
-  Quantization is a complex topic and may warrant its own dedicated lesson.
-</Callout>
+> **lightbulb** Quantization is a complex topic and may warrant its own dedicated lesson.
 
 ### GGUF
 
 GGUF is a lightweight format optimized for low-latency inference, ideal for edge and mobile deployments where computational resources are limited. It has recently gained popularity, especially with tools like [Running Local LLMs With Ollama](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama), which allow large language models (LLMs) to run on devices with just a CPU.
 
-<Frame>
-  ![The image is a comparison of model formats for deployment, highlighting Open Neural Network Exchange (ONNX), Quantization, and GGUF, each with their respective benefits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883236/notes-assets/images/PyTorch-Deployment-Options/model-formats-comparison-onnx-quantization-gguf.jpg)
-</Frame>
+![The image is a comparison of model formats for deployment, highlighting Open Neural Network Exchange (ONNX), Quantization, and GGUF, each with their respective benefits.](https://kodekloud.com/kk-media/image/upload/v1752883236/notes-assets/images/PyTorch-Deployment-Options/model-formats-comparison-onnx-quantization-gguf.jpg)
 
 ## Serving Frameworks
 
@@ -245,17 +211,13 @@ Flask is a lightweight Python web framework known for its simplicity. It is idea
 
 Designed for high-performance applications, FastAPI is perfect for creating APIs that require asynchronous execution. It efficiently handles multiple requests simultaneously and offers a robust feature set, making it a favorite for serving models.
 
-<Frame>
-  ![The image is about FastAPI, highlighting it as a high-performance, feature-rich framework that is becoming popular for machine learning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883236/notes-assets/images/PyTorch-Deployment-Options/fastapi-high-performance-framework.jpg)
-</Frame>
+![The image is about FastAPI, highlighting it as a high-performance, feature-rich framework that is becoming popular for machine learning.](https://kodekloud.com/kk-media/image/upload/v1752883236/notes-assets/images/PyTorch-Deployment-Options/fastapi-high-performance-framework.jpg)
 
 ### TorchServe
 
 TorchServe is crafted specifically for serving PyTorch models. It includes useful features such as model versioning and inference batching, which facilitate managing model updates and optimizing performance. However, it may not offer the same level of flexibility as Flask or FastAPI.
 
-<Frame>
-  ![The image is a presentation slide about "Serving Frameworks," specifically focusing on TorchServe, a PyTorch-specific serving framework. It highlights features like model versioning and inference batching, noting it is less flexible compared to Flask or FastAPI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883237/notes-assets/images/PyTorch-Deployment-Options/serving-frameworks-torchserve-slide.jpg)
-</Frame>
+![The image is a presentation slide about "Serving Frameworks," specifically focusing on TorchServe, a PyTorch-specific serving framework. It highlights features like model versioning and inference batching, noting it is less flexible compared to Flask or FastAPI.](https://kodekloud.com/kk-media/image/upload/v1752883237/notes-assets/images/PyTorch-Deployment-Options/serving-frameworks-torchserve-slide.jpg)
 
 ## Deployment Infrastructure
 
@@ -268,13 +230,9 @@ Docker packages your application along with its dependencies into containers, en
 * Easy sharing and deployment of your model
 * Simplified scaling and dependency management
 
-<Frame>
-  ![The image explains containerization, highlighting that it packages apps with dependencies into containers and ensures consistent performance across deployments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883239/notes-assets/images/PyTorch-Deployment-Options/containerization-apps-dependencies-diagram.jpg)
-</Frame>
+![The image explains containerization, highlighting that it packages apps with dependencies into containers and ensures consistent performance across deployments.](https://kodekloud.com/kk-media/image/upload/v1752883239/notes-assets/images/PyTorch-Deployment-Options/containerization-apps-dependencies-diagram.jpg)
 
-<Frame>
-  ![The image illustrates the benefits of containerization, highlighting easy sharing and deployment of models, and simplified scaling and management of dependencies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883239/notes-assets/images/PyTorch-Deployment-Options/containerization-benefits-sharing-scaling.jpg)
-</Frame>
+![The image illustrates the benefits of containerization, highlighting easy sharing and deployment of models, and simplified scaling and management of dependencies.](https://kodekloud.com/kk-media/image/upload/v1752883239/notes-assets/images/PyTorch-Deployment-Options/containerization-benefits-sharing-scaling.jpg)
 
 ### Kubernetes
 
@@ -284,9 +242,7 @@ Kubernetes is an orchestration platform for managing containerized applications,
 * Rolling updates for seamless version transitions without downtime
 * Resource monitoring and management to optimize performance
 
-<Frame>
-  ![The image is an infographic titled "Scaling With Kubernetes," highlighting four features: autoscaling, rolling updates, resource monitoring and management, and preferred deployment platform.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883241/notes-assets/images/PyTorch-Deployment-Options/scaling-with-kubernetes-infographic.jpg)
-</Frame>
+![The image is an infographic titled "Scaling With Kubernetes," highlighting four features: autoscaling, rolling updates, resource monitoring and management, and preferred deployment platform.](https://kodekloud.com/kk-media/image/upload/v1752883241/notes-assets/images/PyTorch-Deployment-Options/scaling-with-kubernetes-infographic.jpg)
 
 ### Cloud Platforms
 
@@ -296,9 +252,7 @@ Deploying models to the cloud simplifies scaling and reduces the complexity of m
 * **Google Vertex AI:** Offers versatile options including serverless hosting for efficient deployment.
 * **Azure ML:** Known for robust MLOps support and suitability for hybrid and edge deployments.
 
-<Frame>
-  ![The image compares three cloud platforms for deploying machine learning models: AWS SageMaker, Google Cloud Vertex AI, and Azure ML, highlighting their features and capabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883242/notes-assets/images/PyTorch-Deployment-Options/cloud-platforms-ml-comparison.jpg)
-</Frame>
+![The image compares three cloud platforms for deploying machine learning models: AWS SageMaker, Google Cloud Vertex AI, and Azure ML, highlighting their features and capabilities.](https://kodekloud.com/kk-media/image/upload/v1752883242/notes-assets/images/PyTorch-Deployment-Options/cloud-platforms-ml-comparison.jpg)
 
 ## Best Practices for Model Deployment
 
@@ -309,9 +263,7 @@ Deploying your PyTorch model effectively requires a strategic approach. Consider
 * Optimize your model by converting it to ONNX for improved cross-platform compatibility.
 * Apply quantization techniques to minimize model size and reduce latency.
 
-<Frame>
-  ![The image is a slide titled "Model Deployment – Best Practices," focusing on "Model Preparation" with a note to use ONNX for compatibility and quantization for efficiency.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883243/notes-assets/images/PyTorch-Deployment-Options/model-deployment-best-practices-onnx.jpg)
-</Frame>
+![The image is a slide titled "Model Deployment – Best Practices," focusing on "Model Preparation" with a note to use ONNX for compatibility and quantization for efficiency.](https://kodekloud.com/kk-media/image/upload/v1752883243/notes-assets/images/PyTorch-Deployment-Options/model-deployment-best-practices-onnx.jpg)
 
 ### Testing
 
@@ -326,9 +278,7 @@ Deploying your PyTorch model effectively requires a strategic approach. Consider
 * Keep track of vital metrics such as latency, throughput, and error rates.
 * Regularly monitor both input data variations and model outputs to detect any performance degradation.
 
-<Frame>
-  ![The image is a slide titled "Model Deployment – Best Practices," focusing on "Monitoring and Maintenance" with a note to track metrics like latency, throughput, and error rates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883244/notes-assets/images/PyTorch-Deployment-Options/model-deployment-best-practices-monitoring.jpg)
-</Frame>
+![The image is a slide titled "Model Deployment – Best Practices," focusing on "Monitoring and Maintenance" with a note to track metrics like latency, throughput, and error rates.](https://kodekloud.com/kk-media/image/upload/v1752883244/notes-assets/images/PyTorch-Deployment-Options/model-deployment-best-practices-monitoring.jpg)
 
 ### Infrastructure and Scalability
 
@@ -341,9 +291,7 @@ Deploying your PyTorch model effectively requires a strategic approach. Consider
 * Secure your APIs using HTTPS, and implement robust authentication and authorization mechanisms.
 * Adhere to data privacy standards such as GDPR, ensuring that sensitive information is encrypted during transit and at rest.
 
-<Frame>
-  ![The image is a slide titled "Model Deployment – Best Practices" focusing on security, highlighting the importance of securing APIs with HTTPS, authentication, and authorization, and following data privacy standards like GDPR.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883246/notes-assets/images/PyTorch-Deployment-Options/model-deployment-best-practices-security.jpg)
-</Frame>
+![The image is a slide titled "Model Deployment – Best Practices" focusing on security, highlighting the importance of securing APIs with HTTPS, authentication, and authorization, and following data privacy standards like GDPR.](https://kodekloud.com/kk-media/image/upload/v1752883246/notes-assets/images/PyTorch-Deployment-Options/model-deployment-best-practices-security.jpg)
 
 ## Summary
 
@@ -354,14 +302,10 @@ In summary, deploying PyTorch models involves multiple layers of decision-making
 * **Infrastructure Tools:** Docker ensures consistent, containerized deployments, while Kubernetes provides scalability and seamless updates through automated resource management.
 * **Cloud Platforms:** Platforms like AWS SageMaker, Google Cloud Vertex AI, and Azure ML simplify the deployment process with managed services that handle scaling and infrastructure.
 
-<Frame>
-  ![The image is a summary of best practices for deploying models, including using specific formats, frameworks, tools, cloud platforms, and following optimization and security practices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883248/notes-assets/images/PyTorch-Deployment-Options/model-deployment-best-practices-summary.jpg)
-</Frame>
+![The image is a summary of best practices for deploying models, including using specific formats, frameworks, tools, cloud platforms, and following optimization and security practices.](https://kodekloud.com/kk-media/image/upload/v1752883248/notes-assets/images/PyTorch-Deployment-Options/model-deployment-best-practices-summary.jpg)
 
 Deploying models effectively requires a well-rounded approach that considers model optimization, infrastructure management, performance monitoring, and security. With these tools and best practices, your PyTorch models will be well-equipped for real-world applications.
 
 Let's move on to the demo where we will see some of these concepts in action.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/20d94f6c-8b89-4682-9878-3a3fcbc2c768" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/20d94f6c-8b89-4682-9878-3a3fcbc2c768)

@@ -34,9 +34,7 @@ you might not receive immediate error notifications even if the YAML file contai
   <img alt="The image shows a code editor with Kubernetes YAML file open, displaying API version options like v1, v1alpha1, and v1beta1." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Consider using IDE extensions or plugins that validate YAML structure as well as Kubernetes-specific configurations. This can help catch errors early before deployment.
-</Callout>
+> **lightbulb** Consider using IDE extensions or plugins that validate YAML structure as well as Kubernetes-specific configurations. This can help catch errors early before deployment.
 
 For instance, if you mistype a property name or use an incorrect structure (such as a dictionary instead of a list), your editor might not alert you immediately. Here’s an example of configuration that customizes editor settings (typically in a file like settings.json):
 
@@ -183,9 +181,7 @@ Save the file, and then check the file outline (typically shown in the sidebar) 
   <img alt="The image shows Visual Studio Code with a project named &#x22;KUBERNETES-FOR-BEGINNERS&#x22; containing two YAML files, &#x22;nginx.yaml&#x22; and &#x22;pod.yaml,&#x22; with &#x22;nginx.yaml&#x22; open and empty." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Use the outline view to quickly locate potential issues in your YAML structure, ensuring that every indentation and property is correct.
-</Callout>
+> **lightbulb** Use the outline view to quickly locate potential issues in your YAML structure, ensuring that every indentation and property is correct.
 
 ***
 
@@ -226,9 +222,7 @@ or
 kubectl apply -f nginx.yaml
 ```
 
-<Callout icon="lightbulb">
-  Using "kubectl apply" is recommended for managing changes to existing objects because it can update objects without needing to delete them first.
-</Callout>
+> **lightbulb** Using "kubectl apply" is recommended for managing changes to existing objects because it can update objects without needing to delete them first.
 
 ***
 
@@ -238,8 +232,6 @@ The following coding exercises provide an opportunity to further refine your YAM
 
 That concludes this lesson. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/eb9e6792-d788-499d-8afe-13f2427c1e57/lesson/01e70029-8d7d-4b59-97c2-5bcf21c553fe" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/eb9e6792-d788-499d-8afe-13f2427c1e57/lesson/01e70029-8d7d-4b59-97c2-5bcf21c553fe)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/e761907c-5e76-4e63-90d4-43b18a62b989" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/e761907c-5e76-4e63-90d4-43b18a62b989)

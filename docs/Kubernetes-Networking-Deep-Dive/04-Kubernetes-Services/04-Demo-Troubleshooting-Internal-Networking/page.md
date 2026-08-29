@@ -53,9 +53,7 @@ curl http://clusterip-svc.default.svc.cluster.local
 # Should return the NGINX welcome page
 ```
 
-<Callout icon="lightbulb">
-  ClusterIP services are only reachable from within the Kubernetes cluster. Use them for internal microservice communication.
-</Callout>
+> **lightbulb** ClusterIP services are only reachable from within the Kubernetes cluster. Use them for internal microservice communication.
 
 ***
 
@@ -103,9 +101,7 @@ kubectl get svc nodeport-svc
    ```
    This should return the NGINX welcome page.
 
-<Callout icon="triangle-alert">
-  Ensure that your cloud provider’s firewall or on-premise network allows traffic to the `nodePort` range (default 30000–32767).
-</Callout>
+> **triangle-alert** Ensure that your cloud provider’s firewall or on-premise network allows traffic to the `nodePort` range (default 30000–32767).
 
 ### 2.3 Internal DNS Resolution
 
@@ -165,9 +161,7 @@ for ip in $(nslookup headless-svc.default.svc.cluster.local | grep Address | awk
 done
 ```
 
-<Callout icon="lightbulb">
-  Headless Services are ideal for stateful applications (e.g., databases) where you need direct pod access for persistent storage or custom load balancing.
-</Callout>
+> **lightbulb** Headless Services are ideal for stateful applications (e.g., databases) where you need direct pod access for persistent storage or custom load balancing.
 
 ***
 
@@ -205,9 +199,7 @@ curl http://externalname-svc.default.svc.cluster.local/get
 # This request is forwarded to httpbin.org/get
 ```
 
-<Callout icon="lightbulb">
-  ExternalName does not proxy traffic through the cluster—it simply performs a DNS CNAME lookup. Use this to reference external APIs or services.
-</Callout>
+> **lightbulb** ExternalName does not proxy traffic through the cluster—it simply performs a DNS CNAME lookup. Use this to reference external APIs or services.
 
 ***
 
@@ -217,11 +209,9 @@ curl http://externalname-svc.default.svc.cluster.local/get
 * [Service Types](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types)
 * [DNS for Services and Pods](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/a007ca25-61da-47e0-bd8c-d81bd96cfc86" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/a007ca25-61da-47e0-bd8c-d81bd96cfc86)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/a3dadd51-f6ef-4e99-aa01-2f84e56582b4" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/a3dadd51-f6ef-4e99-aa01-2f84e56582b4)
 
 
 # Demo Troubleshooting Internal Networking
@@ -278,9 +268,7 @@ Inspect operator logs to catch any errors or warnings:
 kubectl logs -n kube-system cilium-operator-58684c48c9-4rntb
 ```
 
-<Frame>
-  ![The image shows a log output from a Kubernetes system, detailing operations related to Cilium, including node taints, pod scheduling, and garbage collection processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880343/notes-assets/images/Kubernetes-Networking-Deep-Dive-Demo-Troubleshooting-Internal-Networking/kubernetes-cilium-log-output-details.jpg)
-</Frame>
+![The image shows a log output from a Kubernetes system, detailing operations related to Cilium, including node taints, pod scheduling, and garbage collection processes.](https://kodekloud.com/kk-media/image/upload/v1752880343/notes-assets/images/Kubernetes-Networking-Deep-Dive-Demo-Troubleshooting-Internal-Networking/kubernetes-cilium-log-output-details.jpg)
 
 For agent diagnostics, view a Cilium DaemonSet pod log:
 
@@ -360,9 +348,7 @@ Policy Types: Egress
 Egress: <none>         # Denies all egress traffic
 ```
 
-<Callout icon="triangle-alert">
-  Deleting or modifying NetworkPolicies in production can expose workloads. Always validate in a non-production namespace first.
-</Callout>
+> **triangle-alert** Deleting or modifying NetworkPolicies in production can expose workloads. Always validate in a non-production namespace first.
 
 ### 2.1 Testing Egress Connectivity
 
@@ -402,9 +388,7 @@ If a pod is running but not behaving, inspect its details and events:
 kubectl describe pod nginx-deployment-56fcf95486-7d2dw
 ```
 
-<Frame>
-  ![The image shows a terminal output displaying Kubernetes pod details, including conditions, volumes, and events related to the deployment and startup of an Nginx container.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880344/notes-assets/images/Kubernetes-Networking-Deep-Dive-Demo-Troubleshooting-Internal-Networking/kubernetes-pod-details-nginx-container.jpg)
-</Frame>
+![The image shows a terminal output displaying Kubernetes pod details, including conditions, volumes, and events related to the deployment and startup of an Nginx container.](https://kodekloud.com/kk-media/image/upload/v1752880344/notes-assets/images/Kubernetes-Networking-Deep-Dive-Demo-Troubleshooting-Internal-Networking/kubernetes-pod-details-nginx-container.jpg)
 
 Follow up by streaming the logs:
 
@@ -482,8 +466,6 @@ Following these steps will help you quickly identify and resolve internal networ
 * [Kubernetes API Reference: NetworkPolicy](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.29/#networkpolicy-v1-networking-k8s-io)
 * [cilium CLI GitHub](https://github.com/cilium/cilium-cli)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/fd0eb557-015f-4090-999d-ee11e7eaa847" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/fd0eb557-015f-4090-999d-ee11e7eaa847)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/00eed1e5-013f-4b11-82dd-604cb24288d8" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/00eed1e5-013f-4b11-82dd-604cb24288d8)

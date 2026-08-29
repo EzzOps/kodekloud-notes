@@ -55,9 +55,7 @@ After pasting the configuration into the OpenShift console, click **Create** and
 
 Below is an image showing the deployment details in the OpenShift Container Platform interface:
 
-<Frame>
-  ![The image shows the Red Hat OpenShift Container Platform interface, displaying deployment details for "carts-db" with a scaling status. The sidebar includes options like Pods, Deployments, and ConfigMaps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882578/notes-assets/images/OpenShift-4-Demo-DeploymentConfigDeployment/openshift-carts-db-deployment-details.jpg)
-</Frame>
+![The image shows the Red Hat OpenShift Container Platform interface, displaying deployment details for "carts-db" with a scaling status. The sidebar includes options like Pods, Deployments, and ConfigMaps.](https://kodekloud.com/kk-media/image/upload/v1752882578/notes-assets/images/OpenShift-4-Demo-DeploymentConfigDeployment/openshift-carts-db-deployment-details.jpg)
 
 You can inspect the deployment details to view information such as the name, namespace, labels, update strategy, and pod selector. This visual interface in OpenShift provides a comprehensive view that is often more intuitive than terminal output.
 
@@ -72,9 +70,7 @@ MONGODB_ADMIN_PASSWORD: admin
 
 After the deployment, you can review the Replica Sets and any events generated. For example, an event may indicate that CartsDB was deployed successfully:
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Container Platform interface displaying the events for a deployment named "carts-db" in the default project. It indicates a recent scaling event for a replica set.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882580/notes-assets/images/OpenShift-4-Demo-DeploymentConfigDeployment/openshift-carts-db-deployment-events.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Container Platform interface displaying the events for a deployment named "carts-db" in the default project. It indicates a recent scaling event for a replica set.](https://kodekloud.com/kk-media/image/upload/v1752882580/notes-assets/images/OpenShift-4-Demo-DeploymentConfigDeployment/openshift-carts-db-deployment-events.jpg)
 
 If desired, you can delete this deployment after verifying that the Pod is running as expected.
 
@@ -133,29 +129,19 @@ After pasting the configuration, click **Create** and wait until the Pod becomes
 
 Review the DeploymentConfig details within the OpenShift console. You will see various details, such as the name, namespace, labels, events, and associated Replication Controllers.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Container Platform interface displaying the "carts-db" deployment configuration details, specifically the "Events" tab, with a notification about a new replication controller creation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882582/notes-assets/images/OpenShift-4-Demo-DeploymentConfigDeployment/openshift-carts-db-events-notification.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Container Platform interface displaying the "carts-db" deployment configuration details, specifically the "Events" tab, with a notification about a new replication controller creation.](https://kodekloud.com/kk-media/image/upload/v1752882582/notes-assets/images/OpenShift-4-Demo-DeploymentConfigDeployment/openshift-carts-db-events-notification.jpg)
 
-<Callout icon="lightbulb">
-  DeploymentConfigs use Replication Controllers to manage pods, unlike standard Deployments that use Replica Sets.
-</Callout>
+> **lightbulb** DeploymentConfigs use Replication Controllers to manage pods, unlike standard Deployments that use Replica Sets.
 
 For additional context, compare this image with the standard Deployment view:
 
-<Frame>
-  ![The image shows the Red Hat OpenShift Container Platform interface displaying a list of deployments with their names, status, labels, and pod selectors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882583/notes-assets/images/OpenShift-4-Demo-DeploymentConfigDeployment/openshift-container-platform-deployments.jpg)
-</Frame>
+![The image shows the Red Hat OpenShift Container Platform interface displaying a list of deployments with their names, status, labels, and pod selectors.](https://kodekloud.com/kk-media/image/upload/v1752882583/notes-assets/images/OpenShift-4-Demo-DeploymentConfigDeployment/openshift-container-platform-deployments.jpg)
 
 And view the detailed status for the CartsDB deployment:
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Container Platform interface displaying details of a deployment configuration named "carts-db," with a replication controller tab open. The status indicates that one pod is complete.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882584/notes-assets/images/OpenShift-4-Demo-DeploymentConfigDeployment/openshift-carts-db-deployment-status.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Container Platform interface displaying details of a deployment configuration named "carts-db," with a replication controller tab open. The status indicates that one pod is complete.](https://kodekloud.com/kk-media/image/upload/v1752882584/notes-assets/images/OpenShift-4-Demo-DeploymentConfigDeployment/openshift-carts-db-deployment-status.jpg)
 
-<Callout icon="triangle-alert">
-  Although Red Hat recommends using standard Deployments as a best practice, DeploymentConfigs remain a valid choice when specific OpenShift features are necessary.
-</Callout>
+> **triangle-alert** Although Red Hat recommends using standard Deployments as a best practice, DeploymentConfigs remain a valid choice when specific OpenShift features are necessary.
 
 ***
 
@@ -172,6 +158,4 @@ This walkthrough should help you understand and monitor your CartsDB deployment 
 
 Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/3200131b-dec7-4422-9e05-68c751bc4213/lesson/b827395f-08e6-4e66-bce3-da52905e464e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/3200131b-dec7-4422-9e05-68c751bc4213/lesson/b827395f-08e6-4e66-bce3-da52905e464e)

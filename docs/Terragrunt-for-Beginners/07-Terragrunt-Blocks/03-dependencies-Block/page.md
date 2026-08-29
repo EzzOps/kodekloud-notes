@@ -42,9 +42,7 @@ EOF
 * Learn how to combine `dependency` and `dependencies` in a real-world multi-module project.
 * Check out [Terraform CLI Docs](https://www.terraform.io/docs/cli/index.html) for all available commands and flags.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/62f6d615-b3b4-49cc-9a3f-90fb375a2b36" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/62f6d615-b3b4-49cc-9a3f-90fb375a2b36)
 
 
 # dependencies Block
@@ -61,21 +59,15 @@ The `dependencies` block in Terragrunt ensures that modules are applied in a spe
 | --------- | ------------ | ------------------------------------------------------------------------------- |
 | paths     | list(string) | A list of relative paths to modules that must finish before the current module. |
 
-<Callout icon="lightbulb">
-  The `dependencies` block only enforces execution order. It does **not** retrieve outputs from those modules. To reference outputs, use the `dependency` block with `config_path` and `outputs`.
-</Callout>
+> **lightbulb** The `dependencies` block only enforces execution order. It does **not** retrieve outputs from those modules. To reference outputs, use the `dependency` block with `config_path` and `outputs`.
 
-<Frame>
-  ![The image is a diagram titled "Dependencies Block" with two icons and descriptions: one for executing a module during run-all, and another for addressing dependencies across infrastructure. At the bottom, there's a "Considerations" label.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884302/notes-assets/images/Terragrunt-for-Beginners-dependencies-Block/dependencies-block-diagram-execution-considerations.jpg)
-</Frame>
+![The image is a diagram titled "Dependencies Block" with two icons and descriptions: one for executing a module during run-all, and another for addressing dependencies across infrastructure. At the bottom, there's a "Considerations" label.](https://kodekloud.com/kk-media/image/upload/v1752884302/notes-assets/images/Terragrunt-for-Beginners-dependencies-Block/dependencies-block-diagram-execution-considerations.jpg)
 
 ## Usage Scenario
 
 Imagine you have defined VPC and EC2 modules, and you want to add an S3 bucket that should only be provisioned after the EC2 instance. Even though the S3 bucket doesn’t consume any EC2 outputs, you can enforce this order:
 
-<Frame>
-  ![The image illustrates a "Dependencies Block" with a sequence of module apps and an icon representing infrastructure dependencies, highlighting usage scenarios.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884302/notes-assets/images/Terragrunt-for-Beginners-dependencies-Block/dependencies-block-module-apps-diagram.jpg)
-</Frame>
+![The image illustrates a "Dependencies Block" with a sequence of module apps and an icon representing infrastructure dependencies, highlighting usage scenarios.](https://kodekloud.com/kk-media/image/upload/v1752884302/notes-assets/images/Terragrunt-for-Beginners-dependencies-Block/dependencies-block-module-apps-diagram.jpg)
 
 ```hcl theme={null}
 terraform {
@@ -116,6 +108,4 @@ This command applies the EC2 module under `../ec2` first, then provisions the S3
 * [Terragrunt Documentation](https://terragrunt.gruntwork.io/docs/)
 * [Terragrunt CLI: run-all](https://terragrunt.gruntwork.io/docs/reference/cli-options/#run-all)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/b1db3990-c5d3-4b16-8d37-18772e878538" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/b1db3990-c5d3-4b16-8d37-18772e878538)

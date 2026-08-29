@@ -22,7 +22,7 @@ These rules determine how the WAF handles incoming traffic and ensure that your 
 
 When a client sends a request, it reaches the AWS WAF before being processed by your backend infrastructure. The WAF runs the request through the list of rules defined in your Web ACL. Depending on the rule evaluation, the request is either forwarded to your backend or blocked to prevent potential security breaches.
 
-![The image is a diagram illustrating the flow of data through AWS WAF, showing connections from a client to AWS WAF, then to WebACL, and finally to API Gateway, CloudFront, and Load Balancer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859416/notes-assets/images/AWS-Certified-Developer-Associate-WAF/aws-waf-data-flow-diagram.jpg)
+![The image is a diagram illustrating the flow of data through AWS WAF, showing connections from a client to AWS WAF, then to WebACL, and finally to API Gateway, CloudFront, and Load Balancer.](https://kodekloud.com/kk-media/image/upload/v1752859416/notes-assets/images/AWS-Certified-Developer-Associate-WAF/aws-waf-data-flow-diagram.jpg)
 
 ## Use Cases and Advantages
 
@@ -34,7 +34,7 @@ AWS WAF is versatile in its application:
 * Operating at the application layer, the WAF inspects and filters HTTP traffic with precision.
 * Its integration with AWS Firewall Manager and AWS CloudWatch supports robust security and compliance management.
 
-![The image lists five use cases for a Web Application Firewall (WAF): protection against common web attacks, API security, protection for serverless applications, application layer firewall, and integration with other AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859417/notes-assets/images/AWS-Certified-Developer-Associate-WAF/waf-use-cases-web-security.jpg)
+![The image lists five use cases for a Web Application Firewall (WAF): protection against common web attacks, API security, protection for serverless applications, application layer firewall, and integration with other AWS services.](https://kodekloud.com/kk-media/image/upload/v1752859417/notes-assets/images/AWS-Certified-Developer-Associate-WAF/waf-use-cases-web-security.jpg)
 
 ## Key Benefits of AWS WAF
 
@@ -54,6 +54,6 @@ The table below summarizes the core benefits and use cases of AWS WAF:
 
 AWS WAF serves as a crucial line of defense against Layer 7 web exploits, including SQL injection and XSS attacks. By leveraging Web ACLs that consist of rules with specific conditions, you can define how incoming requests are processed—whether they are forwarded, dropped, or redirected. This capability helps ensure that your web applications and APIs remain secure while maintaining high performance.
 
-![The image is a summary slide about AWS WAF, highlighting its protection against layer-7 web exploits, threats like SQL injection and XSS, and the use of WebACLs with rules for packet actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859418/notes-assets/images/AWS-Certified-Developer-Associate-WAF/aws-waf-summary-layer7-protection.jpg)
+![The image is a summary slide about AWS WAF, highlighting its protection against layer-7 web exploits, threats like SQL injection and XSS, and the use of WebACLs with rules for packet actions.](https://kodekloud.com/kk-media/image/upload/v1752859418/notes-assets/images/AWS-Certified-Developer-Associate-WAF/aws-waf-summary-layer7-protection.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/294fdab3-80dd-4183-aa7e-e5e3ffc9edd8/lesson/141d27d3-d809-46f3-8a5e-081d7ca9bb5e)

@@ -18,7 +18,7 @@ Consider the following architecture:
 * Each instance has its own attached instance store that is physically integrated with the host.
 * If an instance is restarted on a new host, it receives a new instance store that does not contain the data from the former host.
 
-![The image illustrates an instance storage architecture with two hosts, each containing a processor and connected to instance stores. Host 1 has two instance stores, while Host 2 has one.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859676/notes-assets/images/AWS-Certified-Developer-Associate-Instance-Store/instance-storage-architecture-hosts.jpg)
+![The image illustrates an instance storage architecture with two hosts, each containing a processor and connected to instance stores. Host 1 has two instance stores, while Host 2 has one.](https://kodekloud.com/kk-media/image/upload/v1752859676/notes-assets/images/AWS-Certified-Developer-Associate-Instance-Store/instance-storage-architecture-hosts.jpg)
 
 > **triangle-alert** When an EC2 instance is moved to a different physical host (for example, during a shutdown and restart), the data on the original instance store is lost. Always ensure that critical data is stored in persistent storage solutions, not in instance stores.
 
@@ -31,7 +31,7 @@ Use instance storage only for data that is temporary or can be regenerated. Its 
 
 **Important:** If an EC2 instance is restarted on a different host, the previously stored data will not be available in the new instance store.
 
-![The image is a summary slide highlighting two points: instance stores should be used for temporary data, and moving an EC2 instance will result in data loss from the original instance store.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859677/notes-assets/images/AWS-Certified-Developer-Associate-Instance-Store/instance-stores-temporary-data-summary.jpg)
+![The image is a summary slide highlighting two points: instance stores should be used for temporary data, and moving an EC2 instance will result in data loss from the original instance store.](https://kodekloud.com/kk-media/image/upload/v1752859677/notes-assets/images/AWS-Certified-Developer-Associate-Instance-Store/instance-stores-temporary-data-summary.jpg)
 
 ## Summary
 

@@ -75,11 +75,9 @@ Links and references
 * JMESPath query language: [https://jmespath.org/](https://jmespath.org/)
 * Kubernetes admission webhooks: [https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/decaf28b-10ff-4c9b-b107-b0156645592d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/decaf28b-10ff-4c9b-b107-b0156645592d)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/a382ed07-7980-462f-a6d2-affbaccb313c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/a382ed07-7980-462f-a6d2-affbaccb313c)
 
 
 # Demo Patterns Anchors
@@ -94,9 +92,7 @@ This lesson demonstrates how to use anchors in Kyverno validate rules. Anchors l
 * Equality anchors
 * Existence anchors
 
-<Callout icon="lightbulb">
-  Anchors are a Kyverno pattern feature that let you express conditional validation without adding an extra configuration block. `failureAction: Enforce` blocks resource creation when validation fails.
-</Callout>
+> **lightbulb** Anchors are a Kyverno pattern feature that let you express conditional validation without adding an extra configuration block. `failureAction: Enforce` blocks resource creation when validation fails.
 
 ***
 

@@ -60,9 +60,7 @@ class QAState(TypedDict):
     answer: str
 ```
 
-<Callout icon="lightbulb">
-  Using `TypedDict` makes your state shape explicit and helps catch type errors early during development.
-</Callout>
+> **lightbulb** Using `TypedDict` makes your state shape explicit and helps catch type errors early during development.
 
 Node function
 A node receives the current state, invokes an LLM (OpenAI, Anthropic, etc.), and returns only the keys it updates. Keep node logic modular and testable — you can call any API or library within the node (LangChain, raw HTTP, etc.) as long as it returns the updated state fragment.

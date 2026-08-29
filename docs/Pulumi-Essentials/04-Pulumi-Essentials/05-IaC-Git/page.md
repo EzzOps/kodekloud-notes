@@ -53,9 +53,7 @@ After deploying this stack with `pulumi up`, you might encounter a connection er
 ssh: connect to host 34.205.89.1 port 22: Connection timed out
 ```
 
-<Callout icon="lightbulb">
-  Ensure that your security group allows SSH access. If you experience a timeout, verify that the ingress rule for port 22 is correctly configured.
-</Callout>
+> **lightbulb** Ensure that your security group allows SSH access. If you experience a timeout, verify that the ingress rule for port 22 is correctly configured.
 
 You can verify the security group and its rules by reviewing the Pulumi preview output in your terminal:
 
@@ -96,9 +94,7 @@ systemctl status nginx
 
 When you navigate to the public IP of your instance in a web browser, you should see the default Nginx welcome page confirming that the server is configured correctly.
 
-<Frame>
-  ![The image shows a default "Welcome to nginx!" page, indicating successful installation of the nginx web server, with links for documentation and support.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883105/notes-assets/images/Pulumi-Essentials-Creating-Security-Group/frame_310.jpg)
-</Frame>
+![The image shows a default "Welcome to nginx!" page, indicating successful installation of the nginx web server, with links for documentation and support.](https://kodekloud.com/kk-media/image/upload/v1752883105/notes-assets/images/Pulumi-Essentials-Creating-Security-Group/frame_310.jpg)
 
 ***
 
@@ -174,13 +170,9 @@ Verify the changes by checking the AWS console for the newly created instances (
 
 After running an update, click the provided URL in the output to access the Pulumi dashboard. This dashboard offers a detailed view of the recent update, including resource creation, updates, or deletions. It also provides a comprehensive timeline of configuration changes and deployment events.
 
-<Frame>
-  ![The image shows a Pulumi dashboard with a successful update status for a stack named "pulumi-demo/dev," displaying configuration details and recent activity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883106/notes-assets/images/Pulumi-Essentials-Creating-Security-Group/frame_740.jpg)
-</Frame>
+![The image shows a Pulumi dashboard with a successful update status for a stack named "pulumi-demo/dev," displaying configuration details and recent activity.](https://kodekloud.com/kk-media/image/upload/v1752883106/notes-assets/images/Pulumi-Essentials-Creating-Security-Group/frame_740.jpg)
 
-<Callout icon="lightbulb">
-  The Pulumi dashboard is a powerful tool for tracking your deployment progress and understanding resource changes. Make sure to explore it after every update for better insight.
-</Callout>
+> **lightbulb** The Pulumi dashboard is a powerful tool for tracking your deployment progress and understanding resource changes. Make sure to explore it after every update for better insight.
 
 ***
 
@@ -216,9 +208,7 @@ Confirm the prompt to allow Pulumi to clean up the resources created during this
 
 This lesson demonstrated how to create and manage security groups and EC2 instances using Pulumi. From outputting useful connection information to scaling your deployment with a loop, you now have a solid foundation for using Pulumi in your infrastructure projects. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pulumi-essentials/module/883d8d6f-c8be-44af-ac4d-ba0835d32f5d/lesson/e2fd37dc-fe18-42d6-9393-5c8f3ec400e2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pulumi-essentials/module/883d8d6f-c8be-44af-ac4d-ba0835d32f5d/lesson/e2fd37dc-fe18-42d6-9393-5c8f3ec400e2)
 
 
 # IaC Git
@@ -231,18 +221,12 @@ Storing our Infrastructure as Code (IaC) in Git offers numerous benefits that st
 
 By defining setups as code rather than through manual console clicks, team members can easily recreate consistent environments using simple commands like "apply" or "deploy." This approach not only simplifies environment replication but also ensures that the infrastructure aligns precisely with the defined configuration at all times.
 
-<Callout icon="lightbulb">
-  Using Git for IaC enables seamless sharing of code between team members and, if desired, with a broader community when the repository is public. This fosters collaboration and knowledge sharing across teams.
-</Callout>
+> **lightbulb** Using Git for IaC enables seamless sharing of code between team members and, if desired, with a broader community when the repository is public. This fosters collaboration and knowledge sharing across teams.
 
 A key advantage of using Git for IaC is its robust version control. Git commits act as a historical record of our infrastructure modifications. In the event of an issue or failure, you can quickly trace back changes and revert to a known stable state—saving valuable time during troubleshooting or rollbacks.
 
 The image below illustrates the evolution of a cloud infrastructure managed via Git. Notice how the third version is marked as problematic with a fire icon, emphasizing the importance of version control when issues arise.
 
-<Frame>
-  ![The image illustrates three versions of a cloud infrastructure, with the third version depicted as problematic with a fire icon, under the title "IaC & Git."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883107/notes-assets/images/Pulumi-Essentials-IaC-Git/frame_60.jpg)
-</Frame>
+![The image illustrates three versions of a cloud infrastructure, with the third version depicted as problematic with a fire icon, under the title "IaC & Git."](https://kodekloud.com/kk-media/image/upload/v1752883107/notes-assets/images/Pulumi-Essentials-IaC-Git/frame_60.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pulumi-essentials/module/883d8d6f-c8be-44af-ac4d-ba0835d32f5d/lesson/4c23b3be-4e5e-4df1-8e0d-425a910e8b23" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pulumi-essentials/module/883d8d6f-c8be-44af-ac4d-ba0835d32f5d/lesson/4c23b3be-4e5e-4df1-8e0d-425a910e8b23)

@@ -71,13 +71,9 @@ Ensure secret is available: ${{ secrets.mongo_db_password }}
 Ensure build tool is available: nodejs
 ```
 
-<Callout icon="lightbulb">
-  Create any required secrets at the repository or organization level before you merge the PR. Without those secrets, the workflow may fail when it runs.
-</Callout>
+> **lightbulb** Create any required secrets at the repository or organization level before you merge the PR. Without those secrets, the workflow may fail when it runs.
 
-<Callout icon="warning">
-  Never commit plaintext credentials or secrets into the repository. Use GitHub repository or organization secrets for sensitive values referenced by the workflow.
-</Callout>
+> **warning** Never commit plaintext credentials or secrets into the repository. Use GitHub repository or organization secrets for sensitive values referenced by the workflow.
 
 ## What else to check in the PR
 
@@ -104,6 +100,4 @@ You can inspect logs and the job execution graph from the Actions tab to verify 
 * [Jenkins documentation](https://www.jenkins.io/doc/)
 * [GitHub CLI](https://cli.github.com/) (for `gh` command setup)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/82cf54bf-edd2-4967-b010-d3bf9959d20a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/82cf54bf-edd2-4967-b010-d3bf9959d20a)

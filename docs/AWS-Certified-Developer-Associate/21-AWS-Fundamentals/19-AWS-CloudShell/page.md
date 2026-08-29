@@ -17,7 +17,7 @@ Before utilizing AWS CloudShell, many users follow the traditional setup process
 3. Configuring the AWS CLI with the generated credentials.
 4. Opening a terminal and running the desired commands.
 
-![The image is a guide for setting up AWS CLI, showing four steps: installing AWS CLI, generating AWS credentials from IAM, configuring AWS CLI with credentials, and running commands on the terminal. It includes a CLI icon and is labeled "CloudShell."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858129/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudShell/aws-cli-setup-guide-cloudshell.jpg)
+![The image is a guide for setting up AWS CLI, showing four steps: installing AWS CLI, generating AWS credentials from IAM, configuring AWS CLI with credentials, and running commands on the terminal. It includes a CLI icon and is labeled "CloudShell."](https://kodekloud.com/kk-media/image/upload/v1752858129/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudShell/aws-cli-setup-guide-cloudshell.jpg)
 
 ## Simplified Workflow with AWS CloudShell
 

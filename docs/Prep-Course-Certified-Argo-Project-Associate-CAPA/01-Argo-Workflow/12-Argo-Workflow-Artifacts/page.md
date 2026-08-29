@@ -76,9 +76,7 @@ Flow summary:
 * The `arguments.artifacts.from` expression in `main` maps `MyGeneratedArtifact` from `generate-file` into `MessageFromProducer` for `consume-file`.
 * Before `consume-file` starts, Argo downloads the artifact and places it at `/tmp/message.txt`, allowing the container to run `cat /tmp/message.txt` to print the file contents.
 
-<Callout icon="lightbulb">
-  Argo Workflows (controller) handles artifact upload/download. Don’t confuse this with [Argo CD](https://learn.kodekloud.com/user/courses/gitops-with-argocd), which is a separate tool for GitOps and application delivery.
-</Callout>
+> **lightbulb** Argo Workflows (controller) handles artifact upload/download. Don’t confuse this with [Argo CD](https://learn.kodekloud.com/user/courses/gitops-with-argocd), which is a separate tool for GitOps and application delivery.
 
 ## Artifact garbage collection (GC) — manage storage and retention
 
@@ -134,6 +132,4 @@ This two-tiered approach (workflow-level default + per-artifact overrides) provi
 * [Minio](https://min.io)
 * [Google Cloud Storage (GCS)](https://cloud.google.com/storage)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/615aaf0f-c29e-4f9d-9169-7b514d3cec8f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/615aaf0f-c29e-4f9d-9169-7b514d3cec8f)

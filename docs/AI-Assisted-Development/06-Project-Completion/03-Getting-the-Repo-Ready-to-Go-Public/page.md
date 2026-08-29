@@ -286,7 +286,7 @@ Below is an example snippet:
 
 When you launch the image optimizer, the web interface should appear. For example, if you try to optimize a sample image named `coolgirl.jpeg`, you might notice that only one image is selected at a time, which confirms the current functionality.
 
-![The image shows a computer screen with a file explorer window open, displaying a folder named "samples" and highlighting an image file named "coolgirl.jpeg." The background appears to be a web application titled "Image Optimizer."](../../../../images/kodekloud.com/kk-media/image/upload/v1752857133/notes-assets/images/AI-Assisted-Development-Getting-the-Repo-Ready-to-Go-Public/file-explorer-samples-coolgirl-image.jpg)
+![The image shows a computer screen with a file explorer window open, displaying a folder named "samples" and highlighting an image file named "coolgirl.jpeg." The background appears to be a web application titled "Image Optimizer."](https://kodekloud.com/kk-media/image/upload/v1752857133/notes-assets/images/AI-Assisted-Development-Getting-the-Repo-Ready-to-Go-Public/file-explorer-samples-coolgirl-image.jpg)
 
 ## Further Project Setup and Contributions
 
@@ -314,7 +314,7 @@ For frontend components (if applicable), follow these steps:
 
 > **lightbulb** Consider using AI tools like GitHub Copilot to refine portions of your README, but always manually verify the generated content to ensure it accurately reflects your project.
 
-![The image shows a GitHub repository page for a project called "Super-Image-Optimizer," featuring folders, files, and a description of the project. The repository includes information about the project's features, such as image compression and optimization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857135/notes-assets/images/AI-Assisted-Development-Getting-the-Repo-Ready-to-Go-Public/super-image-optimizer-repo.jpg)
+![The image shows a GitHub repository page for a project called "Super-Image-Optimizer," featuring folders, files, and a description of the project. The repository includes information about the project's features, such as image compression and optimization.](https://kodekloud.com/kk-media/image/upload/v1752857135/notes-assets/images/AI-Assisted-Development-Getting-the-Repo-Ready-to-Go-Public/super-image-optimizer-repo.jpg)
 
 ## Summary
 

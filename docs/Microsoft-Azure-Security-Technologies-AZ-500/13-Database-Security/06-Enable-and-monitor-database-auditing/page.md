@@ -25,9 +25,7 @@ Auditing can be configured at the server level (applies to all databases on that
 | Storage account         | Use for long-term retention, offline archiving, or regulatory storage requirements. |
 | Event Hub               | Stream events to SIEMs or third-party analytics pipelines.                          |
 
-<Callout icon="lightbulb">
-  Choose the target that matches your operational and compliance needs: Log Analytics for analysis and alerts, Storage for long-term retention, or Event Hubs for streaming to third-party systems.
-</Callout>
+> **lightbulb** Choose the target that matches your operational and compliance needs: Log Analytics for analysis and alerts, Storage for long-term retention, or Event Hubs for streaming to third-party systems.
 
 ## Configure auditing in the Azure portal
 
@@ -66,18 +64,14 @@ DELETE FROM [SalesLT].[Product]
 WHERE ProductNumber = 'PRODUCT-NUMBER-123';
 ```
 
-<Callout icon="lightbulb">
-  When testing deletions or other destructive statements, run them in a development or staging environment, or ensure you have backups/snapshots in place before executing against production.
-</Callout>
+> **lightbulb** When testing deletions or other destructive statements, run them in a development or staging environment, or ensure you have backups/snapshots in place before executing against production.
 
 ## Viewing audit logs
 
 * The database Auditing blade in the portal includes a "View audit logs" option, but entries may take time to appear there.
 * For faster access, richer searches, and alerting, use the Log Analytics workspace where you directed the audit logs.
 
-<Callout icon="lightbulb">
-  Viewing audit logs from the database Auditing blade may show a delay. For more flexible analysis and faster querying, use the Log Analytics workspace where you sent the audit logs.
-</Callout>
+> **lightbulb** Viewing audit logs from the database Auditing blade may show a delay. For more flexible analysis and faster querying, use the Log Analytics workspace where you sent the audit logs.
 
 ## Analyze audit events in Log Analytics (KQL)
 
@@ -127,6 +121,4 @@ Tips:
 * [Log Analytics query language (Kusto Query Language)](https://learn.microsoft.com/azure/data-explorer/kusto/query/)
 * [Microsoft Defender for Cloud](https://learn.microsoft.com/azure/defender-for-cloud)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d199f126-f1df-43a8-bd3d-68cd689d509d/lesson/55cf9378-e717-4960-b73b-320fc733c7af" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d199f126-f1df-43a8-bd3d-68cd689d509d/lesson/55cf9378-e717-4960-b73b-320fc733c7af)

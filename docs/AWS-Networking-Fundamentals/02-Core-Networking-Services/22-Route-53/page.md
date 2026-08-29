@@ -27,7 +27,7 @@ A **hosted zone** in Route 53 is a container for DNS records related to a specif
 | Public Hosted Zone  | Global (Internet)           | Serve public DNS queries            |
 | Private Hosted Zone | VPC (Virtual Private Cloud) | Internal DNS resolution within VPCs |
 
-![The image illustrates the concept of hosted zones in Amazon Route 53, showing how DNS records are managed for different domains, each allocated four nameservers by AWS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863310/notes-assets/images/AWS-Networking-Fundamentals-Route-53/amazon-route53-hosted-zones-dns-records.jpg)
+![The image illustrates the concept of hosted zones in Amazon Route 53, showing how DNS records are managed for different domains, each allocated four nameservers by AWS.](https://kodekloud.com/kk-media/image/upload/v1752863310/notes-assets/images/AWS-Networking-Fundamentals-Route-53/amazon-route53-hosted-zones-dns-records.jpg)
 
 ## How It Works: Step by Step
 
@@ -57,7 +57,7 @@ Route 53 offers:
 * Global DNS infrastructure for low-latency queries
 * Hosted zones for organizing DNS records per domain
 
-![The image is a summary slide highlighting three points about AWS Route 53: it's a managed DNS service, a global service, and hosted zones are a collection of DNS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863311/notes-assets/images/AWS-Networking-Fundamentals-Route-53/aws-route-53-dns-summary-slide.jpg)
+![The image is a summary slide highlighting three points about AWS Route 53: it's a managed DNS service, a global service, and hosted zones are a collection of DNS.](https://kodekloud.com/kk-media/image/upload/v1752863311/notes-assets/images/AWS-Networking-Fundamentals-Route-53/aws-route-53-dns-summary-slide.jpg)
 
 ## Links and References
 

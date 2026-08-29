@@ -35,9 +35,7 @@ location /internal {
 Automated blocking with Fail2Ban
 Fail2Ban can monitor logs (e.g., Nginx access/error logs) and automatically add firewall rules to block IPs that show malicious behavior (repeated login failures, scan attempts, etc.). Configuring and running Fail2Ban requires elevated privileges and persistent access to system logs.
 
-<Callout icon="warning">
-  Fail2Ban requires access to system logs and the ability to modify firewall rules. In restricted environments we will show configuration examples, but a full live demo may not be possible.
-</Callout>
+> **warning** Fail2Ban requires access to system logs and the ability to modify firewall rules. In restricted environments we will show configuration examples, but a full live demo may not be possible.
 
 When to use Fail2Ban
 
@@ -60,9 +58,7 @@ Links and references
 * [Fail2Ban](https://www.fail2ban.org/)
 * [OAuth](https://oauth.net/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/f7f66739-dcb8-4386-976f-30308b76016c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/f7f66739-dcb8-4386-976f-30308b76016c)
 
 
 # Summary
@@ -89,9 +85,7 @@ server {
 }
 ```
 
-<Callout icon="lightbulb">
-  Always enforce HTTPS and configure an HSTS policy (for example: `Strict-Transport-Security: max-age=63072000; includeSubDomains; preload`) only after you are confident all subdomains support HTTPS.
-</Callout>
+> **lightbulb** Always enforce HTTPS and configure an HSTS policy (for example: `Strict-Transport-Security: max-age=63072000; includeSubDomains; preload`) only after you are confident all subdomains support HTTPS.
 
 ## SSL vs TLS and certificate sources
 
@@ -133,9 +127,7 @@ Table — important security and caching headers:
 * NGINX `auth_basic` (HTTP Basic Auth) is simple to set up and useful for internal, staging, or temporary protection.
 * For public-facing apps, prefer stronger, auditable authentication methods such as OAuth2, OpenID Connect, or SSO providers integrated with your app or identity provider.
 
-<Callout icon="warning">
-  Do not use HTTP Basic Auth for production user-facing authentication. It lacks modern features like session management, multifactor authentication, and robust auditing.
-</Callout>
+> **warning** Do not use HTTP Basic Auth for production user-facing authentication. It lacks modern features like session management, multifactor authentication, and robust auditing.
 
 ## Access control: `allow`/`deny` vs scalable protections
 
@@ -178,6 +170,4 @@ Combine layered controls for a secure, maintainable production environment:
 * [Fail2Ban](https://www.fail2ban.org)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/490c345b-92a0-427b-bfb2-93f1c8c5bf18" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/490c345b-92a0-427b-bfb2-93f1c8c5bf18)

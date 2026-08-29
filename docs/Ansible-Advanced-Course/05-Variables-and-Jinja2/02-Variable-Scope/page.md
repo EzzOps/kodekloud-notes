@@ -71,7 +71,7 @@ In both cases, the extra variable takes precedence over all others.
 
 Ansible applies variables following a defined hierarchical order. The order starts from the lowest precedence (role default variables), then proceeds through inventory and playbook variables, and finally applies extra vars provided directly on the command line (the highest precedence). This structure guarantees that more specific variables override more general ones.
 
-![The image shows a list of Ansible variable precedence, detailing the order in which variables are applied, from role defaults to extra vars.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869409/notes-assets/images/Ansible-Advanced-Course-Variable-Precedence/frame_190.jpg)
+![The image shows a list of Ansible variable precedence, detailing the order in which variables are applied, from role defaults to extra vars.](https://kodekloud.com/kk-media/image/upload/v1752869409/notes-assets/images/Ansible-Advanced-Course-Variable-Precedence/frame_190.jpg)
 
 That concludes our discussion on variable precedence in Ansible. In the next article, we will explore additional methods to manage and override variables effectively in your Ansible deployments.
 
@@ -126,7 +126,7 @@ ok: [web3] => {
 
 This demonstrates the host scope: each host only accesses the variables defined specifically for it.
 
-![The image illustrates a network diagram showing variable scopes for hosts, including web servers (web1, web2, web3) and a DNS server with IP 10.5.5.4.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869410/notes-assets/images/Ansible-Advanced-Course-Variable-Scope/frame_60.jpg)
+![The image illustrates a network diagram showing variable scopes for hosts, including web servers (web1, web2, web3) and a DNS server with IP 10.5.5.4.](https://kodekloud.com/kk-media/image/upload/v1752869410/notes-assets/images/Ansible-Advanced-Course-Variable-Scope/frame_60.jpg)
 
 When a playbook runs, Ansible associates variables with each host based on inventory and group variable files. By default, the primary scope during playbook execution is the host scope.
 

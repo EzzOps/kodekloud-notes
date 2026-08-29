@@ -10,7 +10,7 @@ In this article, we will explore AWS Launch Wizard and how it simplifies the dep
 
 AWS Launch Wizard is a managed service that accelerates the deployment of applications such as SQL Server, Microsoft Active Directory, and SAP on AWS. By providing pre-configured templates optimized for CPU, memory, and other critical configurations, it eliminates the need to manually configure complex settings. This ensures that your deployment is not only quick and efficient but also secure, scalable, and cost-effective.
 
-![The image illustrates the AWS Launch Wizard process, showing a user interacting with the wizard to deploy resources in a VPC across two availability zones, us-east-1a and us-east-1b.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865355/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Launch-Wizard/aws-launch-wizard-vpc-deployment.jpg)
+![The image illustrates the AWS Launch Wizard process, showing a user interacting with the wizard to deploy resources in a VPC across two availability zones, us-east-1a and us-east-1b.](https://kodekloud.com/kk-media/image/upload/v1752865355/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Launch-Wizard/aws-launch-wizard-vpc-deployment.jpg)
 
 > **lightbulb** AWS Launch Wizard automatically applies recommended security measures during resource provisioning, allowing you to deploy applications with confidence.
 
@@ -33,7 +33,7 @@ The AWS Launch Wizard deployment process is divided into several easy-to-follow 
 5. **Deployment and Integration:**\
    Finally, AWS Launch Wizard deploys the application and integrates it with AWS management and monitoring services such as [CloudWatch](https://learn.kodekloud.com/user/courses/aws-cloudwatch) and [AWS IAM](https://learn.kodekloud.com/user/courses/aws-iam) for enhanced security and access control.
 
-![The image is a flowchart illustrating the process of deploying an application, starting from choosing an application to deploy, entering specifications, getting resource recommendations and cost estimates, followed by approval, configuration, and finally deployment and integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865356/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Launch-Wizard/application-deployment-flowchart.jpg)
+![The image is a flowchart illustrating the process of deploying an application, starting from choosing an application to deploy, entering specifications, getting resource recommendations and cost estimates, followed by approval, configuration, and finally deployment and integration.](https://kodekloud.com/kk-media/image/upload/v1752865356/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Launch-Wizard/application-deployment-flowchart.jpg)
 
 ## Benefits of Using AWS Launch Wizard
 
@@ -51,7 +51,7 @@ Leveraging AWS Launch Wizard offers numerous advantages:
 * **Reusable CloudFormation Templates:**\
   Automatically generated CloudFormation templates serve as a reliable baseline for future deployments, significantly reducing setup time.
 
-![The image lists four features: Simplified Application Deployment, AWS Resource Selection, Cost Estimation, and Time-Saving with Repeatable Code Templates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865357/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Launch-Wizard/application-deployment-aws-features.jpg)
+![The image lists four features: Simplified Application Deployment, AWS Resource Selection, Cost Estimation, and Time-Saving with Repeatable Code Templates.](https://kodekloud.com/kk-media/image/upload/v1752865357/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Launch-Wizard/application-deployment-aws-features.jpg)
 
 > **lightbulb** There are no additional charges for using AWS Launch Wizard; you only pay for the AWS resources that are provisioned to run your solution.
 

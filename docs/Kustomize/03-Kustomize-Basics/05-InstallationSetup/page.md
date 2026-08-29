@@ -8,12 +8,10 @@ Learn how to install and configure Kustomize on your local machine. This guide c
 
 ## Prerequisites
 
-<Callout icon="lightbulb">
-  Before you begin, ensure you have the following:
+> **lightbulb** Before you begin, ensure you have the following:
 
   * A running Kubernetes cluster
   * `kubectl` installed and configured to communicate with your cluster
-</Callout>
 
 ## Supported Platforms
 
@@ -59,9 +57,7 @@ If you don’t see a version string:
 1. Close and reopen your terminal to refresh `PATH`.
 2. Rerun the installation script from above.
 
-<Callout icon="triangle-alert">
-  If the `kustomize` command is not found after installation, ensure `/usr/local/bin` (or your chosen install directory) is included in your `PATH` environment variable.
-</Callout>
+> **triangle-alert** If the `kustomize` command is not found after installation, ensure `/usr/local/bin` (or your chosen install directory) is included in your `PATH` environment variable.
 
 ## Links and References
 
@@ -69,6 +65,4 @@ If you don’t see a version string:
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [kubectl Installation Guide](https://kubernetes.io/docs/tasks/tools/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/5e33e25a-3607-4e71-823a-76a38ae0a3c0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/5e33e25a-3607-4e71-823a-76a38ae0a3c0)

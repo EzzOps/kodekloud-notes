@@ -6,9 +6,7 @@ This guide explains how to monitor Jenkins using plugins and integrate metrics w
 
 In this guide, we explain how to monitor Jenkins using various plugins and integrate Jenkins metrics with Prometheus. Organizations can choose from several monitoring solutions such as Datadog, Prometheus with Grafana, and Java Melody. This article focuses on leveraging the Prometheus plugin for Jenkins monitoring.
 
-<Frame>
-  ![The image shows a Jenkins documentation page focused on "Monitoring Jenkins," including sections on Datadog and Prometheus integration, with a user handbook and system administration links.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880145/notes-assets/images/Jenkins-Monitoring-Jenkins/frame_20.jpg)
-</Frame>
+![The image shows a Jenkins documentation page focused on "Monitoring Jenkins," including sections on Datadog and Prometheus integration, with a user handbook and system administration links.](https://kodekloud.com/kk-media/image/upload/v1752880145/notes-assets/images/Jenkins-Monitoring-Jenkins/frame_20.jpg)
 
 ## Overview of Available Monitoring Plugins
 
@@ -29,19 +27,13 @@ As you browse the search results, you may notice plugins such as:
 * **Prometheus Metrics:** Scroll down for details.
 * **Dynatrace:** This plugin appears outdated and may have security issues.
 
-<Callout icon="triangle-alert">
-  Some plugins may be outdated or have security vulnerabilities. Always check the plugin documentation before installing.
-</Callout>
+> **triangle-alert** Some plugins may be outdated or have security vulnerabilities. Always check the plugin documentation before installing.
 
-<Frame>
-  ![The image shows a list of software plugins with descriptions, versions, and warnings about security issues, specifically highlighting a missing permission check for one plugin.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880146/notes-assets/images/Jenkins-Monitoring-Jenkins/frame_70.jpg)
-</Frame>
+![The image shows a list of software plugins with descriptions, versions, and warnings about security issues, specifically highlighting a missing permission check for one plugin.](https://kodekloud.com/kk-media/image/upload/v1752880146/notes-assets/images/Jenkins-Monitoring-Jenkins/frame_70.jpg)
 
 For example, a search for Datadog will display the available Datadog plugin:
 
-<Frame>
-  ![The image shows a plugin installation interface for Datadog, displaying available plugins with options to install, including version details and release dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880147/notes-assets/images/Jenkins-Monitoring-Jenkins/frame_80.jpg)
-</Frame>
+![The image shows a plugin installation interface for Datadog, displaying available plugins with options to install, including version details and release dates.](https://kodekloud.com/kk-media/image/upload/v1752880147/notes-assets/images/Jenkins-Monitoring-Jenkins/frame_80.jpg)
 
 In this tutorial, we will use the Prometheus plugin.
 
@@ -52,23 +44,17 @@ To install the Prometheus plugin:
 1. Select the Prometheus plugin from the list.
 2. Click **Install Without Restart**.
 
-<Frame>
-  ![The image shows a list of Jenkins plugins with descriptions, versions, and update information, including "pipeline," "Build With Parameters," and "Prometheus metrics."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880149/notes-assets/images/Jenkins-Monitoring-Jenkins/frame_90.jpg)
-</Frame>
+![The image shows a list of Jenkins plugins with descriptions, versions, and update information, including "pipeline," "Build With Parameters," and "Prometheus metrics."](https://kodekloud.com/kk-media/image/upload/v1752880149/notes-assets/images/Jenkins-Monitoring-Jenkins/frame_90.jpg)
 
 After starting the installation, you will see the progress. Note that the Prometheus plugin, like some other plugins, might require a Jenkins restart to work completely.
 
-<Callout icon="lightbulb">
-  After installation, open your terminal and run the following command to restart Jenkins:
+> **lightbulb** After installation, open your terminal and run the following command to restart Jenkins:
 
   sudo systemctl restart jenkins
-</Callout>
 
 Allow Jenkins some time to restart. Once restarted, log in again. Then, navigate to the plugin's documentation to review the default environment variables and understand how Jenkins exposes metrics at the `/prometheus` endpoint.
 
-<Frame>
-  ![The image shows the Jenkins Prometheus Metrics Plugin page, detailing its purpose, metrics exposed, and environment variables, with links to documentation and related resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880150/notes-assets/images/Jenkins-Monitoring-Jenkins/frame_160.jpg)
-</Frame>
+![The image shows the Jenkins Prometheus Metrics Plugin page, detailing its purpose, metrics exposed, and environment variables, with links to documentation and related resources.](https://kodekloud.com/kk-media/image/upload/v1752880150/notes-assets/images/Jenkins-Monitoring-Jenkins/frame_160.jpg)
 
 ## Integrating Jenkins with Prometheus
 
@@ -142,10 +128,6 @@ This guide covers the essentials of monitoring Jenkins by installing the Prometh
 * [Jenkins Documentation](https://www.jenkins.io/doc/)
 * [Prometheus Documentation](https://prometheus.io/docs/)
 
-<Callout icon="lightbulb">
-  Practice the setup in your development environment to gain hands-on experience with Jenkins monitoring and Prometheus integration.
-</Callout>
+> **lightbulb** Practice the setup in your development environment to gain hands-on experience with Jenkins monitoring and Prometheus integration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/2f4991ca-76a6-4845-95ba-43ca90bb361e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/2f4991ca-76a6-4845-95ba-43ca90bb361e)

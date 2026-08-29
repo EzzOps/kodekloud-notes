@@ -46,9 +46,7 @@ How it works
 * templates.mock-database: sets `daemon: true`. Argo starts this container and does not wait for it to finish—so the container runs in the background for the workflow’s lifetime. The `readinessProbe` lets other steps know when Redis is accepting connections.
 * templates.test-step: an example step that prints a message and sleeps for 60 seconds. While this step runs, the Redis daemon remains available so tests can connect to it.
 
-<Callout icon="lightbulb">
-  Daemon containers are intended for short-lived supporting services used only during a workflow run. Use `daemon: true` for ephemeral helpers; for long-lived or production-facing services, use Kubernetes Deployments or StatefulSets instead.
-</Callout>
+> **lightbulb** Daemon containers are intended for short-lived supporting services used only during a workflow run. Use `daemon: true` for ephemeral helpers; for long-lived or production-facing services, use Kubernetes Deployments or StatefulSets instead.
 
 Observing the daemon lifecycle
 
@@ -79,10 +77,6 @@ Additional resources and references
 * Redis: [https://redis.io/](https://redis.io/)
 * kubectl CLI reference: [https://kubernetes.io/docs/reference/kubectl/overview/](https://kubernetes.io/docs/reference/kubectl/overview/)
 
-<Callout icon="warning">
-  Do not rely on daemon containers for production services or long-lived state. Daemon containers are cleaned up when the workflow exits; for persistent, scalable services use Kubernetes Deployments, StatefulSets, or external managed services.
-</Callout>
+> **warning** Do not rely on daemon containers for production services or long-lived state. Daemon containers are cleaned up when the workflow exits; for persistent, scalable services use Kubernetes Deployments, StatefulSets, or external managed services.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/10160868-696a-4966-95b5-7c20999062f4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/10160868-696a-4966-95b5-7c20999062f4)

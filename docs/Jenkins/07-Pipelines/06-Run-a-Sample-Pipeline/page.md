@@ -26,9 +26,7 @@ In the Jenkins dashboard, click on **New Item** and assign your pipeline a name.
 * **Organization Folder:**\
   Automatically creates a multi-branch project for all subfolders, making it easier to organize numerous projects.
 
-<Frame>
-  ![The image lists different Jenkins project types: Freestyle, Pipeline, Multi-configuration, Folder, Multibranch Pipeline, and Organization Folder, each with a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880089/notes-assets/images/Jenkins-Run-a-Sample-Pipeline/frame_70.jpg)
-</Frame>
+![The image lists different Jenkins project types: Freestyle, Pipeline, Multi-configuration, Folder, Multibranch Pipeline, and Organization Folder, each with a brief description.](https://kodekloud.com/kk-media/image/upload/v1752880089/notes-assets/images/Jenkins-Run-a-Sample-Pipeline/frame_70.jpg)
 
 For this lesson, select **Pipeline** and click **OK**.
 
@@ -56,9 +54,7 @@ Below are some of the key configuration options you might consider:
 
 Next, configure the build triggers:
 
-<Frame>
-  ![The image shows a software interface with options for configuring build triggers and project settings, including GitHub integration and build scheduling.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880090/notes-assets/images/Jenkins-Run-a-Sample-Pipeline/frame_310.jpg)
-</Frame>
+![The image shows a software interface with options for configuring build triggers and project settings, including GitHub integration and build scheduling.](https://kodekloud.com/kk-media/image/upload/v1752880090/notes-assets/images/Jenkins-Run-a-Sample-Pipeline/frame_310.jpg)
 
 The available build triggers include:
 
@@ -118,9 +114,7 @@ The pipeline utilizes the Groovy sandbox environment. Groovy is a powerful scrip
 
 Click **Save** to store your configuration. You can now trigger a build by clicking **Build Now**. The build will be scheduled and executed in a matter of seconds.
 
-<Frame>
-  ![The image shows a Jenkins dashboard with build options, stage view, and build history, highlighting a stage named "Hello" with a runtime of 245ms.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880091/notes-assets/images/Jenkins-Run-a-Sample-Pipeline/frame_460.jpg)
-</Frame>
+![The image shows a Jenkins dashboard with build options, stage view, and build history, highlighting a stage named "Hello" with a runtime of 245ms.](https://kodekloud.com/kk-media/image/upload/v1752880091/notes-assets/images/Jenkins-Run-a-Sample-Pipeline/frame_460.jpg)
 
 After the initial build completes, you can modify the configuration as needed. For example, to change the stage name, click on **Configure** again and update the stage section with the following configuration to rename the stage to "Dev":
 
@@ -139,10 +133,6 @@ pipeline {
 
 Click **Save** and then **Build Now**. The build will run again, and you will see that the stage name has been updated to "Dev".
 
-<Callout icon="lightbulb">
-  This concludes our lesson on setting up a sample pipeline in Jenkins. Experiment with different configurations to further optimize your deployments.
-</Callout>
+> **lightbulb** This concludes our lesson on setting up a sample pipeline in Jenkins. Experiment with different configurations to further optimize your deployments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/7eb2850a-fe15-47ab-90cc-975d6d284e45" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/7eb2850a-fe15-47ab-90cc-975d6d284e45)

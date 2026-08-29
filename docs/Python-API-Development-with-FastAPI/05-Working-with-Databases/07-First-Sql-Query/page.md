@@ -6,9 +6,7 @@ This lesson teaches you to run your first SQL command and essential querying tec
 
 In this lesson, you'll run your first SQL command and learn essential querying techniques. Before proceeding, ensure that you add six or seven extra entries to your database. Vary the prices, is\_sale Boolean values (mix of true and false), inventory numbers, and creation times. This variety in data will help you observe different query outcomes later on.
 
-<Callout icon="lightbulb">
-  Before you begin, run the following query to verify that your products table contains all the necessary entries:
-</Callout>
+> **lightbulb** Before you begin, run the following query to verify that your products table contains all the necessary entries:
 
 ```sql theme={null}
 SELECT * FROM public.products
@@ -37,9 +35,7 @@ Let's examine the structure of the SQL command:
 2. **Asterisk (\*)**: Specifies that you want to return every column from the table.
 3. **FROM Clause**: Identifies the source table (in this case, *products*) for retrieving the data.
 
-<Callout icon="lightbulb">
-  Always include a semicolon (;) at the end of every SQL command. While some tools like PgAdmin may execute commands without it, other environments (e.g., the command line interface) require the semicolon.
-</Callout>
+> **lightbulb** Always include a semicolon (;) at the end of every SQL command. While some tools like PgAdmin may execute commands without it, other environments (e.g., the command line interface) require the semicolon.
 
 ## Retrieving Specific Columns
 
@@ -106,6 +102,4 @@ Notice that the query remains identical; only the underlying data changes.
 
 By understanding these basic SQL commands and techniques, you can efficiently query your database and tailor the output to your needs. Experiment with selecting specific columns and renaming them to enhance data clarity. Happy querying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/bcc0d08c-f5ec-4a2b-ba76-2da367462a29" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/bcc0d08c-f5ec-4a2b-ba76-2da367462a29)

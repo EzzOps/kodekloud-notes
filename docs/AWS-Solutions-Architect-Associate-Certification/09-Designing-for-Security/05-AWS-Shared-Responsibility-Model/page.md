@@ -18,7 +18,7 @@ AWS recommends using managed services whenever possible to offload the operation
 
 Below is a diagram that illustrates the division of responsibilities across various service types:
 
-![The image illustrates the AWS Shared Responsibility Model, showing the division of responsibilities between the customer and AWS across infrastructure, platform, and managed services. It uses color coding to indicate areas of customer and AWS responsibility, with a legend explaining the customization and responsibility levels.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863942/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Shared-Responsibility-Model/aws-shared-responsibility-model.jpg)
+![The image illustrates the AWS Shared Responsibility Model, showing the division of responsibilities between the customer and AWS across infrastructure, platform, and managed services. It uses color coding to indicate areas of customer and AWS responsibility, with a legend explaining the customization and responsibility levels.](https://kodekloud.com/kk-media/image/upload/v1752863942/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Shared-Responsibility-Model/aws-shared-responsibility-model.jpg)
 
 In this diagram, you can see that with infrastructure services such as [Amazon Elastic Compute Cloud (EC2)](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2), you are responsible for managing compute, storage, databases, and networking. Imagine an additional block representing data centers—this block would give you more direct control over your network security. Conversely, services like serverless computing offer very little control over the underlying infrastructure since AWS fully manages those environments.
 
@@ -29,7 +29,7 @@ As you move from IaaS to Platform as a Service (PaaS) and finally to Software as
 
 Take a look at the following diagram for further clarity on how these responsibilities shift between AWS and the customer:
 
-![The image illustrates the AWS Shared Responsibility Model for infrastructure, showing the division of responsibilities between the customer and AWS, with a focus on services like AWS S3, AWS KMS, and AWS DynamoDB. It uses a gradient color scheme to differentiate customer responsibilities from AWS responsibilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863943/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Shared-Responsibility-Model/aws-shared-responsibility-model-2.jpg)
+![The image illustrates the AWS Shared Responsibility Model for infrastructure, showing the division of responsibilities between the customer and AWS, with a focus on services like AWS S3, AWS KMS, and AWS DynamoDB. It uses a gradient color scheme to differentiate customer responsibilities from AWS responsibilities.](https://kodekloud.com/kk-media/image/upload/v1752863943/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Shared-Responsibility-Model/aws-shared-responsibility-model-2.jpg)
 
 > **lightbulb** * If you can access, configure, or manage a component, you are responsible for its security.
   * If you cannot access or configure a component, AWS assumes responsibility for its security.
@@ -39,7 +39,7 @@ This model acts as a filtering mechanism to help you identify which aspects of s
 
 For additional documentation on AWS security, compliance details, or audit attestations, visit [AWS Artifact](https://aws.amazon.com/artifact/). AWS Artifact provides a repository of certifications, attestations, and compliance documents that are especially useful during compliance audits.
 
-![The image is a summary of the AWS Shared Responsibility Model, highlighting the division of security responsibilities between customers and AWS. It explains that customers are responsible for what they can configure, while AWS handles everything else, and notes that more managed services reduce customer responsibility.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863944/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Shared-Responsibility-Model/aws-shared-responsibility-model-summary.jpg)
+![The image is a summary of the AWS Shared Responsibility Model, highlighting the division of security responsibilities between customers and AWS. It explains that customers are responsible for what they can configure, while AWS handles everything else, and notes that more managed services reduce customer responsibility.](https://kodekloud.com/kk-media/image/upload/v1752863944/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Shared-Responsibility-Model/aws-shared-responsibility-model-summary.jpg)
 
 If you have any questions or need further clarification, feel free to reach out via KodeKloud.com, join our Slack community, or participate in our forums.
 

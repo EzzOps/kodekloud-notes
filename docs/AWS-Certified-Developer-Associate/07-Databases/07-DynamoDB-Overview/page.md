@@ -13,11 +13,11 @@ Before we dive into DynamoDB, let's briefly revisit NoSQL databases. Unlike trad
 * **Column-Family Stores:** Organize data into rows and columns, accommodating varied column structures.
 * **Graph Databases:** Represent data as nodes, edges, and properties, ideal for depicting complex relationships.
 
-![The image illustrates four types of NoSQL databases: Key-Value Stores, Document Stores, Column-Family Stores, and Graph Databases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858770/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Overview/nosql-databases-key-value-document-column-graph.jpg)
+![The image illustrates four types of NoSQL databases: Key-Value Stores, Document Stores, Column-Family Stores, and Graph Databases.](https://kodekloud.com/kk-media/image/upload/v1752858770/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Overview/nosql-databases-key-value-document-column-graph.jpg)
 
 DynamoDB offers high performance and seamless scalability with low latency, similar to how [AWS RDS](https://learn.kodekloud.com/user/courses/aws-rds) manages relational databases. With DynamoDB, AWS handles the infrastructure, allowing you to focus on storing application data—be it user information, product details, or other business-critical data.
 
-![The image is a diagram showing the interaction between end users, an application, and DynamoDB, illustrating data flow between these components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858771/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Overview/data-flow-application-dynamodb-diagram.jpg)
+![The image is a diagram showing the interaction between end users, an application, and DynamoDB, illustrating data flow between these components.](https://kodekloud.com/kk-media/image/upload/v1752858771/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Overview/data-flow-application-dynamodb-diagram.jpg)
 
 ## Key Benefits & Features
 
@@ -28,7 +28,7 @@ DynamoDB comes with several significant advantages:
 * **Flexible Data Model:** Design your data schema to perfectly match your application requirements.
 * **Cost-Effectiveness:** Only pay for the resources you actually use thanks to its pay-as-you-go pricing model.
 
-![The image highlights four features of DynamoDB: scalability, high performance, flexible data model, and cost-effectiveness, each represented by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858773/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Overview/dynamodb-features-scalability-performance.jpg)
+![The image highlights four features of DynamoDB: scalability, high performance, flexible data model, and cost-effectiveness, each represented by an icon.](https://kodekloud.com/kk-media/image/upload/v1752858773/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Overview/dynamodb-features-scalability-performance.jpg)
 
 Beyond these benefits, DynamoDB is engineered for high availability and durability. It replicates data across multiple Availability Zones automatically, ensuring continuous operation. Additional features include support for streams—capturing a time-ordered sequence of item-level modifications that can trigger workflows or enable data replication—and ACID-compliant transactions. These ensure that all database operations maintain:
 
@@ -37,7 +37,7 @@ Beyond these benefits, DynamoDB is engineered for high availability and durabili
 * **Isolation:** In-progress transactions remain invisible to other operations, eliminating race conditions.
 * **Durability:** Committed transactions remain permanent, even during system failures.
 
-![The image is an infographic highlighting the features of DynamoDB, including stream integration, AWS ecosystem integration, performance at scale, being fully managed, seamless scalability, and high availability and durability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858774/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Overview/dynamodb-features-infographic.jpg)
+![The image is an infographic highlighting the features of DynamoDB, including stream integration, AWS ecosystem integration, performance at scale, being fully managed, seamless scalability, and high availability and durability.](https://kodekloud.com/kk-media/image/upload/v1752858774/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Overview/dynamodb-features-infographic.jpg)
 
 ## Data Storage and Structure in DynamoDB
 
@@ -76,7 +76,7 @@ DynamoDB enforces specific naming conventions for tables, indexes, and attribute
 * Attribute names must be at least one character and less than 64 kilobytes.
 * Only allowed characters may be used.
 
-![The image outlines DynamoDB naming rules, showing examples for table, index, and attribute names, along with guidelines on encoding, case sensitivity, character length, and allowed characters.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858775/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Overview/dynamodb-naming-rules-examples.jpg)
+![The image outlines DynamoDB naming rules, showing examples for table, index, and attribute names, along with guidelines on encoding, case sensitivity, character length, and allowed characters.](https://kodekloud.com/kk-media/image/upload/v1752858775/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Overview/dynamodb-naming-rules-examples.jpg)
 
 > **lightbulb** Ensure your naming conventions are consistent to avoid any potential issues when interacting with DynamoDB.
 
@@ -87,9 +87,9 @@ Each DynamoDB item must have a unique primary key. You can define primary keys i
 1. **Partition Key:** A single attribute that uniquely identifies an item. For example, using "EmployeeID" ensures every employee record is unique.
 2. **Composite Key:** A combination of two attributes—a partition key and a sort key—where the combination uniquely identifies each item. For instance, in a product reviews table, a composite key combining "user ID" and "product ID" lets a user review multiple products while preventing duplicate reviews for a single product.
 
-![The image is a table illustrating the concept of a primary key as a partition key, showing employee data with columns for employee ID, name, email, and salary. It highlights that the partition key must be unique for each item in the table.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858776/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Overview/primary-key-partition-key-table.jpg)
+![The image is a table illustrating the concept of a primary key as a partition key, showing employee data with columns for employee ID, name, email, and salary. It highlights that the partition key must be unique for each item in the table.](https://kodekloud.com/kk-media/image/upload/v1752858776/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Overview/primary-key-partition-key-table.jpg)
 
-![The image explains the concept of a primary key composed of a partition key and a sort key, using a table with columns for user ID, product ID, rating, and review. It highlights that the combination of partition and sort keys must be unique.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858777/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Overview/primary-key-partition-sort-key-diagram.jpg)
+![The image explains the concept of a primary key composed of a partition key and a sort key, using a table with columns for user ID, product ID, rating, and review. It highlights that the combination of partition and sort keys must be unique.](https://kodekloud.com/kk-media/image/upload/v1752858777/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Overview/primary-key-partition-sort-key-diagram.jpg)
 
 Your choice of primary key should be guided by your application's requirements. For example, if each user has a unique email address, you might choose to use "email" as the primary key.
 
@@ -115,7 +115,7 @@ In summary, here's what you need to know about DynamoDB:
 * **Primary Keys:** Ensure uniqueness of each item, defined using either a single partition key or a composite key.
 * **PartiQL:** Simplifies query operations with SQL-like syntax.
 
-![The image is a summary slide about NoSQL databases, highlighting their ability to handle large volumes of unstructured data, scale horizontally, and mentioning DynamoDB as Amazon's flagship NoSQL service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858778/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Overview/nosql-databases-summary-dynamodb.jpg)
+![The image is a summary slide about NoSQL databases, highlighting their ability to handle large volumes of unstructured data, scale horizontally, and mentioning DynamoDB as Amazon's flagship NoSQL service.](https://kodekloud.com/kk-media/image/upload/v1752858778/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Overview/nosql-databases-summary-dynamodb.jpg)
 
 This overview should help you better understand DynamoDB's architecture and its powerful capabilities in managing application data efficiently.
 

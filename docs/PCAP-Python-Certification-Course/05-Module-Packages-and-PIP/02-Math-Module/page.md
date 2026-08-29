@@ -50,9 +50,7 @@ This will consistently produce the following sequence:
 0.3867352020073605
 ```
 
-<Callout icon="lightbulb">
-  For consistent results across executions, always set a fixed seed when generating random numbers.
-</Callout>
+> **lightbulb** For consistent results across executions, always set a fixed seed when generating random numbers.
 
 ## Generating Random Integers
 
@@ -102,8 +100,6 @@ For more details on these functions, consult the [Python random module documenta
 
 That’s it for our guide on the `math` and `random` modules in Python. Start experimenting with these functions to better understand the power of Python's standard library and enhance your coding projects. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/a65eb782-d2dc-4850-9046-e4bb57d38876/lesson/7b742a99-0975-4a71-b55c-a01aed0f4191" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/a65eb782-d2dc-4850-9046-e4bb57d38876/lesson/7b742a99-0975-4a71-b55c-a01aed0f4191)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/a65eb782-d2dc-4850-9046-e4bb57d38876/lesson/e437941e-4394-4c70-8f4a-2af723c8ad71" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/a65eb782-d2dc-4850-9046-e4bb57d38876/lesson/e437941e-4394-4c70-8f4a-2af723c8ad71)

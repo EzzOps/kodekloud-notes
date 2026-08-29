@@ -68,9 +68,7 @@ Key responsibilities of a service mesh:
   <img alt="The image illustrates the role of a service mesh using a classroom analogy, highlighting secure note-passing, timely delivery, and monitoring." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Service meshes typically use a lightweight proxy (called a sidecar) deployed alongside each service instance. Sidecars intercept inbound and outbound traffic so the mesh can apply security, telemetry, and routing logic transparently to the application.
-</Callout>
+> **lightbulb** Service meshes typically use a lightweight proxy (called a sidecar) deployed alongside each service instance. Sidecars intercept inbound and outbound traffic so the mesh can apply security, telemetry, and routing logic transparently to the application.
 
 Common service mesh options and a quick comparison:
 
@@ -94,9 +92,7 @@ Why learn and adopt a service mesh?
 Market context and career note:
 Service mesh adoption is growing rapidly. Industry reports project significant market expansion in the coming decade, making knowledge of service meshes (especially Istio and Linkerd) a valuable skill for cloud-native engineers and architects. Certification in Istio can help demonstrate expertise and increase visibility in the job market.
 
-<Callout icon="warning">
-  A service mesh adds operational complexity and resource overhead. Evaluate whether your environment needs it (for example, many microservices, strict security requirements, or advanced traffic control) before deploying. Start small and iterate.
-</Callout>
+> **warning** A service mesh adds operational complexity and resource overhead. Evaluate whether your environment needs it (for example, many microservices, strict security requirements, or advanced traffic control) before deploying. Start small and iterate.
 
 Summary
 
@@ -105,6 +101,4 @@ Summary
 * Choose a mesh based on your priorities: features and extensibility (Istio), simplicity and performance (Linkerd), or alternative approaches such as eBPF (Cilium).
 * Learning a service mesh is increasingly important for modern cloud-native development and operations.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/da4579eb-7769-4ab9-a0e8-b81f70a12978/lesson/77a61cd3-a5e8-475a-a566-f91fecd51528" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/da4579eb-7769-4ab9-a0e8-b81f70a12978/lesson/77a61cd3-a5e8-475a-a566-f91fecd51528)

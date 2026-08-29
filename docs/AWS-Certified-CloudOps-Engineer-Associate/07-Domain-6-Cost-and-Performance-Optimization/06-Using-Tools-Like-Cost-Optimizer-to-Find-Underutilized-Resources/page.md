@@ -10,7 +10,7 @@ Welcome to this guide on AWS cost management tools. In this lesson, we explore A
 
 AWS Compute Optimizer leverages machine learning to analyze your AWS environment continuously. It evaluates compute services, including Amazon EC2, AWS Fargate (for containerized applications in ECS/EKS), AWS Lambda, and associated Amazon EBS storage volumes. This analysis generates insightful recommendations that align your resource configurations with both performance and budget requirements.
 
-![The image illustrates AWS Compute Optimizer, showing its integration with AWS resources like Amazon EC2, Amazon EBS, AWS Fargate, and AWS Lambda.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861165/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-Tools-Like-Cost-Optimizer-to-Find-Underutilized-Resources/aws-compute-optimizer-integration.jpg)
+![The image illustrates AWS Compute Optimizer, showing its integration with AWS resources like Amazon EC2, Amazon EBS, AWS Fargate, and AWS Lambda.](https://kodekloud.com/kk-media/image/upload/v1752861165/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-Tools-Like-Cost-Optimizer-to-Find-Underutilized-Resources/aws-compute-optimizer-integration.jpg)
 
 ## How Compute Optimizer Works
 
@@ -20,21 +20,21 @@ Compute Optimizer performs a detailed resource analysis and delivers actionable 
 2. **Providing Recommendations** – Offers suggestions for optimal configurations to ensure efficiency.
 3. **Resource Reconfiguration** – Guides you on making adjustments manually or automatically.
 
-![The image is a diagram titled "Compute Optimizer" with three sections: "Resource analysis," "Provide recommendations," and "Reconfigure resource," each represented by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861166/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-Tools-Like-Cost-Optimizer-to-Find-Underutilized-Resources/compute-optimizer-diagram-icons.jpg)
+![The image is a diagram titled "Compute Optimizer" with three sections: "Resource analysis," "Provide recommendations," and "Reconfigure resource," each represented by an icon.](https://kodekloud.com/kk-media/image/upload/v1752861166/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-Tools-Like-Cost-Optimizer-to-Find-Underutilized-Resources/compute-optimizer-diagram-icons.jpg)
 
 ## Detailed Analysis and Recommendations
 
 Compute Optimizer examines key metrics such as CPU utilization, memory consumption, I/O throughput, and network bandwidth. By comparing current configurations against historical performance data, it ensures that your resources maintain an optimal balance between cost and performance. For example, the tool might suggest an instance type change if a resource is identified as either under-provisioned or over-provisioned.
 
-![The image lists five features: performance risk analysis, cost-saving recommendations, EC2 instance type recommendations, EBS volume recommendations, and optimization for Fargate.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861167/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-Tools-Like-Cost-Optimizer-to-Find-Underutilized-Resources/performance-risk-analysis-features.jpg)
+![The image lists five features: performance risk analysis, cost-saving recommendations, EC2 instance type recommendations, EBS volume recommendations, and optimization for Fargate.](https://kodekloud.com/kk-media/image/upload/v1752861167/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-Tools-Like-Cost-Optimizer-to-Find-Underutilized-Resources/performance-risk-analysis-features.jpg)
 
 ### EC2 Instance Recommendations
 
 For Amazon EC2, Compute Optimizer analyzes various parameters including local disk performance (with NVMe storage on certain instances) and attached EBS volumes. If, for instance, a T2 micro instance is deemed insufficient, the tool might recommend a switch to a T3 micro for improved performance and cost benefits.
 
-![The image is a chart titled "EC2 Instance Recommendations," categorizing resources into "Under-Provisioned," "Over-Provisioned," and "Optimized" with a list of components like CPU, Memory, and Network Bandwidth.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861168/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-Tools-Like-Cost-Optimizer-to-Find-Underutilized-Resources/ec2-instance-recommendations-chart.jpg)
+![The image is a chart titled "EC2 Instance Recommendations," categorizing resources into "Under-Provisioned," "Over-Provisioned," and "Optimized" with a list of components like CPU, Memory, and Network Bandwidth.](https://kodekloud.com/kk-media/image/upload/v1752861168/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-Tools-Like-Cost-Optimizer-to-Find-Underutilized-Resources/ec2-instance-recommendations-chart.jpg)
 
-![The image shows a table of EC2 instance recommendations, comparing current instance types and prices with recommended types and prices, along with the price differences.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861169/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-Tools-Like-Cost-Optimizer-to-Find-Underutilized-Resources/ec2-instance-recommendations-table.jpg)
+![The image shows a table of EC2 instance recommendations, comparing current instance types and prices with recommended types and prices, along with the price differences.](https://kodekloud.com/kk-media/image/upload/v1752861169/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-Tools-Like-Cost-Optimizer-to-Find-Underutilized-Resources/ec2-instance-recommendations-table.jpg)
 
 ### EBS, Fargate, and Lambda Optimization
 
@@ -44,7 +44,7 @@ Compute Optimizer also evaluates other services:
 * **AWS Fargate:** The tool assesses container configurations to detect if resources are under-provisioned, over-provisioned, or optimally configured.
 * **AWS Lambda:** It examines memory allocation, execution costs, and other parameters to ensure functions are tuned for efficiency while managing workloads effectively.
 
-![The image shows a dashboard for "Lambda Function Recommendations," displaying options to filter and view recommendations for improving cost and performance of Lambda functions. It includes fields for account information, tag filters, and columns for memory and cost details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861170/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-Tools-Like-Cost-Optimizer-to-Find-Underutilized-Resources/lambda-function-recommendations-dashboard.jpg)
+![The image shows a dashboard for "Lambda Function Recommendations," displaying options to filter and view recommendations for improving cost and performance of Lambda functions. It includes fields for account information, tag filters, and columns for memory and cost details.](https://kodekloud.com/kk-media/image/upload/v1752861170/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-Tools-Like-Cost-Optimizer-to-Find-Underutilized-Resources/lambda-function-recommendations-dashboard.jpg)
 
 > **lightbulb** AWS Compute Optimizer focuses exclusively on compute services and their associated EBS volumes. It does not extend recommendations to other storage solutions such as Amazon EFS, Lustre, FSx, or S3.
 

@@ -20,13 +20,9 @@ OpenAI began as a non-profit in December 2015 with a mission to ensure that arti
 | **Late 2022**  | Released ChatGPT, a conversational AI powered by GPT series models.                               |
 | **Early 2023** | Received an additional \$10 billion commitment from Microsoft and expanded availability on Azure. |
 
-<Frame>
-  ![The image is a timeline illustrating key events in the history of OpenAI from 2015 to 2023, including its founding, major investments, and the announcement of technologies like GPT-3, DALL-E, and ChatGPT.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881536/notes-assets/images/Mastering-Generative-AI-with-OpenAI-What-is-OpenAI/openai-history-timeline-2015-2023.jpg)
-</Frame>
+![The image is a timeline illustrating key events in the history of OpenAI from 2015 to 2023, including its founding, major investments, and the announcement of technologies like GPT-3, DALL-E, and ChatGPT.](https://kodekloud.com/kk-media/image/upload/v1752881536/notes-assets/images/Mastering-Generative-AI-with-OpenAI-What-is-OpenAI/openai-history-timeline-2015-2023.jpg)
 
-<Callout icon="lightbulb">
-  OpenAI’s shift from non-profit to for-profit aligned incentives for scaling infrastructure and delivering enterprise-grade AI services.
-</Callout>
+> **lightbulb** OpenAI’s shift from non-profit to for-profit aligned incentives for scaling infrastructure and delivering enterprise-grade AI services.
 
 ## High-Level View of the OpenAI Platform
 
@@ -41,9 +37,7 @@ At its core, OpenAI provides generative AI as a service, enabling developers and
 
 Applications can call the OpenAI API directly or use the official SDKs to streamline authentication, manage requests, and process responses in your preferred language.
 
-<Frame>
-  ![The image is a flowchart titled "OpenAI – 10,000 Ft. Overview," showing the interaction between tools, libraries, an API, OpenAI, and foundation models.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881537/notes-assets/images/Mastering-Generative-AI-with-OpenAI-What-is-OpenAI/openai-10000ft-overview-flowchart.jpg)
-</Frame>
+![The image is a flowchart titled "OpenAI – 10,000 Ft. Overview," showing the interaction between tools, libraries, an API, OpenAI, and foundation models.](https://kodekloud.com/kk-media/image/upload/v1752881537/notes-assets/images/Mastering-Generative-AI-with-OpenAI-What-is-OpenAI/openai-10000ft-overview-flowchart.jpg)
 
 ## Links and References
 
@@ -54,6 +48,4 @@ Applications can call the OpenAI API directly or use the official SDKs to stream
 * [Microsoft Azure OpenAI Service](https://azure.microsoft.com/en-us/services/cognitive-services/openai-service/)
 * [OpenAI Python SDK on GitHub](https://github.com/openai/openai-python)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/7cf291c5-4705-4a69-965a-b0ba7d2169c6/lesson/34875c73-2915-44cb-ba39-51cba50b6356" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/7cf291c5-4705-4a69-965a-b0ba7d2169c6/lesson/34875c73-2915-44cb-ba39-51cba50b6356)

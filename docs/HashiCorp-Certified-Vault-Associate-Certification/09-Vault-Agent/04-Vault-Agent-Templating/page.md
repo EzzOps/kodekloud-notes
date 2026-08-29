@@ -29,9 +29,7 @@ Consul Template follows a simple three-step workflow:
 3. **Application Consumption**\
    The app reads the rendered file at runtime as a static config.
 
-<Frame>
-  ![The image illustrates a three-step workflow for using a Consul Template, detailing the creation of a templated file, execution of the template, and application runtime reading. It includes icons and a certification badge for Vault.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878258/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Agent-Templating/consul-template-workflow-three-steps.jpg)
-</Frame>
+![The image illustrates a three-step workflow for using a Consul Template, detailing the creation of a templated file, execution of the template, and application runtime reading. It includes icons and a certification badge for Vault.](https://kodekloud.com/kk-media/image/upload/v1752878258/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Agent-Templating/consul-template-workflow-three-steps.jpg)
 
 ### Example Template (`config.tmpl`)
 
@@ -75,9 +73,7 @@ Vault Agent now embeds Consul Template functionality—no separate binary needed
 3. **Application**\
    The app reads the rendered file and connects to external services using up-to-date credentials.
 
-<Frame>
-  ![The image illustrates the process of Vault Agent Templating, showing the interaction between a Vault Agent, an application server/container, and a sink for storing tokens. It includes steps for authentication, token retrieval, secret reading, and rendering secrets to an output file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878258/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Agent-Templating/vault-agent-templating-process-diagram.jpg)
-</Frame>
+![The image illustrates the process of Vault Agent Templating, showing the interaction between a Vault Agent, an application server/container, and a sink for storing tokens. It includes steps for authentication, token retrieval, secret reading, and rendering secrets to an output file.](https://kodekloud.com/kk-media/image/upload/v1752878258/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Agent-Templating/vault-agent-templating-process-diagram.jpg)
 
 ### Comparing Consul Template vs. Vault Agent Templating
 
@@ -92,9 +88,7 @@ Vault Agent now embeds Consul Template functionality—no separate binary needed
 
 Use this HCL snippet to enable templating in Vault Agent:
 
-<Callout icon="lightbulb">
-  Ensure you’re running Vault Agent version 1.5+ to use built-in templating.
-</Callout>
+> **lightbulb** Ensure you’re running Vault Agent version 1.5+ to use built-in templating.
 
 ```hcl theme={null}
 auto_auth {
@@ -123,15 +117,11 @@ template {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Storing tokens on disk can be a security risk. Protect the sink file with appropriate OS permissions.
-</Callout>
+> **triangle-alert** Storing tokens on disk can be a security risk. Protect the sink file with appropriate OS permissions.
 
 The template file (`/etc/vault/web.tmpl`) can mirror the earlier Consul Template example.
 
-<Frame>
-  ![The image shows a template configuration for Vault, detailing sections for auto-auth configuration, sink configuration, global template configurations, and template configuration, with color-coded brackets for each section.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878259/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Agent-Templating/vault-template-configuration-auto-auth-sink.jpg)
-</Frame>
+![The image shows a template configuration for Vault, detailing sections for auto-auth configuration, sink configuration, global template configurations, and template configuration, with color-coded brackets for each section.](https://kodekloud.com/kk-media/image/upload/v1752878259/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Agent-Templating/vault-template-configuration-auto-auth-sink.jpg)
 
 With this setup, you can run legacy or unmodified applications without any Vault-specific code changes—they simply read secrets from a local file.
 
@@ -142,6 +132,4 @@ With this setup, you can run legacy or unmodified applications without any Vault
 * [Consul Template GitHub](https://github.com/hashicorp/consul-template)
 * [HashiCorp Vault Documentation](https://www.vaultproject.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/25b89318-77a0-4f52-a4d7-2df3696e3362/lesson/c2761fc2-04db-4142-8629-22f4fbb6f74a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/25b89318-77a0-4f52-a4d7-2df3696e3362/lesson/c2761fc2-04db-4142-8629-22f4fbb6f74a)

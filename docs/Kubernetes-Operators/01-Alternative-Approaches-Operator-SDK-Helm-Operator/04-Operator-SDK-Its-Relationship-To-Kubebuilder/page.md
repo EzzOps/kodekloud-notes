@@ -30,9 +30,7 @@ However, a Helm-based operator is not a good fit when the controller must implem
 
 In those cases, prefer a Go-based operator so you have a place to write application-specific reconciliation logic. Treat a Helm-based operator as an on-ramp—not a universal shortcut. It brings an existing chart into the operator ecosystem and exposes install/upgrade/delete via Kubernetes resources, but it does not replace custom controller development when your lifecycle requires real application reasoning.
 
-<Callout icon="lightbulb">
-  Use a Helm-based operator when your chart already encodes most deployment semantics and you want a Kubernetes-native API. Choose a Go-based operator when you need custom lifecycle logic or deep runtime reasoning.
-</Callout>
+> **lightbulb** Use a Helm-based operator when your chart already encodes most deployment semantics and you want a Kubernetes-native API. Choose a Go-based operator when you need custom lifecycle logic or deep runtime reasoning.
 
 Operator SDK scaffolds a Helm-based operator with this layout on disk: a Helm chart, a `watches.yaml` mapping a CRD type to that chart, and a control loop that delegates reconciliation to the Helm reconciler. This pattern makes it fast to expose existing Helm charts through Kubernetes APIs while keeping the chart as the source of manifest truth.
 
@@ -43,9 +41,7 @@ Links and references
 * Kubernetes documentation: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 * Learn Go (background/readiness): [https://learn.kodekloud.com/user/courses/golang](https://learn.kodekloud.com/user/courses/golang)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/d2537d70-4008-4d53-ad04-b7731ca0f7c0/lesson/27b94e89-16d3-4deb-92c2-a7cd320349b4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/d2537d70-4008-4d53-ad04-b7731ca0f7c0/lesson/27b94e89-16d3-4deb-92c2-a7cd320349b4)
 
 
 # Operator SDK Its Relationship To Kubebuilder
@@ -154,9 +150,7 @@ Operator SDK reaches beyond Go: it includes scaffolds and runtime support for He
   <img alt="The image compares Kubebuilder and Operator SDK, highlighting their goals, features, and suitable use cases in a table format." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Both tools share the same underlying operator model. Choose KubeBuilder for focused Go controller development; choose Operator SDK when you want out-of-the-box packaging, OLM integration, or non-Go operator styles.
-</Callout>
+> **lightbulb** Both tools share the same underlying operator model. Choose KubeBuilder for focused Go controller development; choose Operator SDK when you want out-of-the-box packaging, OLM integration, or non-Go operator styles.
 
 The key reassurance: you are not throwing away what you learned. Operator SDK does not replace the operator mental model — it wraps the familiar Go operator workflow in a broader distribution and ecosystem toolkit.
 
@@ -174,6 +168,4 @@ A demo that scaffolds a web-app operator with Operator SDK and compares it to a 
 * OLM (Operator Lifecycle Manager): [https://github.com/operator-framework/operator-lifecycle-manager](https://github.com/operator-framework/operator-lifecycle-manager)
 * OperatorHub: [https://operatorhub.io/](https://operatorhub.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/d2537d70-4008-4d53-ad04-b7731ca0f7c0/lesson/e01eada6-71d5-44ae-89cd-f34dc525b7b5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/d2537d70-4008-4d53-ad04-b7731ca0f7c0/lesson/e01eada6-71d5-44ae-89cd-f34dc525b7b5)

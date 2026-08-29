@@ -74,9 +74,7 @@ After saving the file, reboot your system and verify that the swap partition is 
 $ swapon --show
 ```
 
-<Callout icon="lightbulb">
-  Swap partitions do not mount to a directory. Instead, they enable virtual memory to improve system performance.
-</Callout>
+> **lightbulb** Swap partitions do not mount to a directory. Instead, they enable virtual memory to improve system performance.
 
 ─────────────────────────────────────────────
 
@@ -109,11 +107,9 @@ $ sudo blkid /dev/vdb1
 
 This guide has shown you how to mount file systems both manually and automatically using `/etc/fstab`, as well as how to configure a swap partition and use UUIDs for improved device management. Now it's time to put this knowledge into practice by mounting file systems and configuring the `/etc/fstab` file on your Linux system. Happy configuring!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/eb65d854-5137-4776-8ff8-73e274c43a0c/lesson/18d5741b-df3b-4515-b6be-d34704700203" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/eb65d854-5137-4776-8ff8-73e274c43a0c/lesson/18d5741b-df3b-4515-b6be-d34704700203)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/eb65d854-5137-4776-8ff8-73e274c43a0c/lesson/4ac25e93-7156-4ed2-9300-4e3d2e45f43a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/eb65d854-5137-4776-8ff8-73e274c43a0c/lesson/4ac25e93-7156-4ed2-9300-4e3d2e45f43a)
 
 
 # Create and configure file systems
@@ -156,15 +152,11 @@ sudo mkfs.xfs -L "BackupVolume" /dev/sdb1
 
 Below is an excerpt from the manual page that highlights the `-L` flag and additional options:
 
-<Frame>
-  ![The image shows a terminal window displaying a manual page for the mkfs.xfs command, which is used to construct an XFS filesystem. It includes sections like NAME, SYNOPSIS, and DESCRIPTION.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883572/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Create-and-configure-file-systems/mkfs-xfs-manual-page-terminal.jpg)
-</Frame>
+![The image shows a terminal window displaying a manual page for the mkfs.xfs command, which is used to construct an XFS filesystem. It includes sections like NAME, SYNOPSIS, and DESCRIPTION.](https://kodekloud.com/kk-media/image/upload/v1752883572/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Create-and-configure-file-systems/mkfs-xfs-manual-page-terminal.jpg)
 
 Remember, when searching within the manual for specific options, you might need to escape characters like dashes. The manual confirms the label length restriction:
 
-<Frame>
-  ![The image shows a terminal window displaying a manual page for the mkfs.xfs command, detailing options and usage for setting filesystem labels and other parameters.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883574/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Create-and-configure-file-systems/mkfs-xfs-manual-terminal.jpg)
-</Frame>
+![The image shows a terminal window displaying a manual page for the mkfs.xfs command, detailing options and usage for setting filesystem labels and other parameters.](https://kodekloud.com/kk-media/image/upload/v1752883574/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Create-and-configure-file-systems/mkfs-xfs-manual-terminal.jpg)
 
 Additionally, you can configure the inode size to store extended file attributes. For instance, to format the partition with 512-byte inodes and label it "BackupVolume", execute:
 
@@ -185,9 +177,7 @@ realtime               = none
 [aaron@LFCS-CentOS ~]$
 ```
 
-<Callout icon="lightbulb">
-  If you encounter any unexpected errors while formatting, double-check your partition identifier and ensure your system supports the chosen file system.
-</Callout>
+> **lightbulb** If you encounter any unexpected errors while formatting, double-check your partition identifier and ensure your system supports the chosen file system.
 
 ## XFS Utilities and Modifying File System Attributes
 
@@ -278,9 +268,7 @@ Filesystem volume name:   SecondFS
 ...
 ```
 
-<Callout icon="triangle-alert">
-  Ensure that you back up any critical data before modifying file system parameters. Changing labels or inode counts on active file systems without proper precautions can lead to data loss.
-</Callout>
+> **triangle-alert** Ensure that you back up any critical data before modifying file system parameters. Changing labels or inode counts on active file systems without proper precautions can lead to data loss.
 
 ## Summary
 
@@ -301,6 +289,4 @@ For additional resources, check out:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/eb65d854-5137-4776-8ff8-73e274c43a0c/lesson/daa33f27-f6d7-4097-9031-d12fe74deac9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/eb65d854-5137-4776-8ff8-73e274c43a0c/lesson/daa33f27-f6d7-4097-9031-d12fe74deac9)

@@ -43,7 +43,7 @@ A flowchart later in this article assists you with a series of “yes” or “n
 
 * Compare the capabilities required by your application with the features provided by each load balancing service. For example, if your application requires path-based routing, note that Azure Load Balancer does not support this function. In such cases, consider using Application Gateway or Azure Front Door.
 
-![The image is a guide for choosing a load balancing solution in Azure, comparing options like Azure Load Balancer, Application Gateway, Azure Front Door, and Traffic Manager based on criteria such as type of traffic, coverage, availability, cost, and limits/features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867058/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-application-delivery/azure-load-balancing-guide-comparison.jpg)
+![The image is a guide for choosing a load balancing solution in Azure, comparing options like Azure Load Balancer, Application Gateway, Azure Front Door, and Traffic Manager based on criteria such as type of traffic, coverage, availability, cost, and limits/features.](https://kodekloud.com/kk-media/image/upload/v1752867058/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-application-delivery/azure-load-balancing-guide-comparison.jpg)
 
 ## Overview of Azure Load Balancers
 
@@ -56,7 +56,7 @@ Azure Load Balancer efficiently directs TCP and UDP traffic to backend resources
 
 Additionally, Azure Load Balancer supports both inbound and outbound connectivity through defined rules. Network Address Translation (NAT) rules allow port mapping; for example, a connection to port 8080 on the load balancer may be translated to port 3389 on a backend VM, enabling a remote desktop session.
 
-![The image is an infographic about Azure Load Balancer, highlighting features such as TCP/UDP load balancing, connection management, NAT rules, health monitoring, and SKU options. It uses a colorful, wavy design to illustrate these points.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867061/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-application-delivery/azure-load-balancer-infographic.jpg)
+![The image is an infographic about Azure Load Balancer, highlighting features such as TCP/UDP load balancing, connection management, NAT rules, health monitoring, and SKU options. It uses a colorful, wavy design to illustrate these points.](https://kodekloud.com/kk-media/image/upload/v1752867061/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-application-delivery/azure-load-balancer-infographic.jpg)
 
 > **lightbulb** Health monitoring in Azure Load Balancer uses probes to detect unhealthy VMs. If a probe fails, that VM is excluded from the request routing list.
 
@@ -74,7 +74,7 @@ Azure Application Gateway is optimized for load balancing web requests. It can f
 * A browser sends a request to the Application Gateway.
 * A configured listener processes the request, which is then routed to backend resources based on predefined rules.
 
-![The image is a diagram illustrating the flow of web requests through an Azure Application Gateway, showing components like the browser, application gateway, HTTP/HTTPS listener, rules, and a pool of VMs, VMSS, and servers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867063/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-application-delivery/azure-application-gateway-flow-diagram.jpg)
+![The image is a diagram illustrating the flow of web requests through an Azure Application Gateway, showing components like the browser, application gateway, HTTP/HTTPS listener, rules, and a pool of VMs, VMSS, and servers.](https://kodekloud.com/kk-media/image/upload/v1752867063/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-application-delivery/azure-application-gateway-flow-diagram.jpg)
 
 Key benefits of using Azure Application Gateway include:
 
@@ -83,7 +83,7 @@ Key benefits of using Azure Application Gateway include:
 * SSL/TLS offloading to reduce decryption workloads on backend servers.
 * Support for both internal and external deployments with public or private IP addresses.
 
-![The image is an infographic about Azure Application Gateway, highlighting features like load balancing, SSL/TLS offloading, and regional service support. It includes a stylized path with icons and text describing various capabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867064/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-application-delivery/azure-application-gateway-infographic.jpg)
+![The image is an infographic about Azure Application Gateway, highlighting features like load balancing, SSL/TLS offloading, and regional service support. It includes a stylized path with icons and text describing various capabilities.](https://kodekloud.com/kk-media/image/upload/v1752867064/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-application-delivery/azure-application-gateway-infographic.jpg)
 
 ### Azure Front Door
 
@@ -95,14 +95,14 @@ Azure Front Door extends the capabilities of Application Gateway by offering glo
 
 For example, you can configure path-based routing where traffic for "/courses" is directed between two regions. This can be managed either by setting one region as a priority or by distributing traffic 70% to one region and 30% to another.
 
-![The image is a diagram illustrating Azure Front Door, showing how traffic is distributed across different regions (A, B, C, D) through edge locations within the Microsoft Global Network.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867064/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-application-delivery/azure-front-door-traffic-distribution-diagram.jpg)
+![The image is a diagram illustrating Azure Front Door, showing how traffic is distributed across different regions (A, B, C, D) through edge locations within the Microsoft Global Network.](https://kodekloud.com/kk-media/image/upload/v1752867064/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-application-delivery/azure-front-door-traffic-distribution-diagram.jpg)
 
 Additional advantages of Azure Front Door include:
 
 * Integration with Content Delivery Networks (CDNs) for enhanced caching performance.
 * A global solution that delivers high-speed performance for multi-region deployments.
 
-![The image is an infographic about Azure Front Door, highlighting features like load balancing, SSL/TLS offloading, CDN integration, and global routing solutions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867065/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-application-delivery/azure-front-door-infographic.jpg)
+![The image is an infographic about Azure Front Door, highlighting features like load balancing, SSL/TLS offloading, CDN integration, and global routing solutions.](https://kodekloud.com/kk-media/image/upload/v1752867065/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-application-delivery/azure-front-door-infographic.jpg)
 
 ### Azure Traffic Manager
 
@@ -117,9 +117,9 @@ Key routing methods in Traffic Manager include:
 
 Traffic Manager is ideal for external applications since internal endpoints using private IP addresses are not accessible through DNS load balancing.
 
-![The image is a diagram illustrating the Azure Traffic Manager, showing how DNS load balancing works with priority and failover endpoints. It includes a flow from user to browser, DNS service, and Traffic Manager, with endpoints prioritized based on their status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867066/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-application-delivery/azure-traffic-manager-dns-diagram.jpg)
+![The image is a diagram illustrating the Azure Traffic Manager, showing how DNS load balancing works with priority and failover endpoints. It includes a flow from user to browser, DNS service, and Traffic Manager, with endpoints prioritized based on their status.](https://kodekloud.com/kk-media/image/upload/v1752867066/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-application-delivery/azure-traffic-manager-dns-diagram.jpg)
 
-![The image is an infographic about Azure Traffic Manager, highlighting its features such as geographic routing, application availability, and compatibility with external applications, while noting that internal apps are not supported.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867067/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-application-delivery/azure-traffic-manager-infographic.jpg)
+![The image is an infographic about Azure Traffic Manager, highlighting its features such as geographic routing, application availability, and compatibility with external applications, while noting that internal apps are not supported.](https://kodekloud.com/kk-media/image/upload/v1752867067/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-application-delivery/azure-traffic-manager-infographic.jpg)
 
 Traffic Manager can also be used in combination with other load balancers (e.g., as a front-end to an Application Gateway) to address complex traffic distribution and routing strategies.
 
@@ -135,7 +135,7 @@ The following flowchart, adapted from Microsoft documentation, provides a step-b
   * If SSL offloading or application layer processing (such as path-based or multi-site routing) is needed, a combination of Azure Front Door and Application Gateway might be used.
   * The decision could vary based on whether you are hosting a PaaS solution, IaaS resources, or AKS, as well as the need for performance acceleration.
 
-![The image is a flowchart for choosing a load balancing solution in Azure, detailing decision criteria and options like Azure Load Balancer, Traffic Manager, and Application Gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867068/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-application-delivery/azure-load-balancing-flowchart.jpg)
+![The image is a flowchart for choosing a load balancing solution in Azure, detailing decision criteria and options like Azure Load Balancer, Traffic Manager, and Application Gateway.](https://kodekloud.com/kk-media/image/upload/v1752867068/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-application-delivery/azure-load-balancing-flowchart.jpg)
 
 This flowchart serves as a practical starting point for designing an effective load balancing architecture.
 

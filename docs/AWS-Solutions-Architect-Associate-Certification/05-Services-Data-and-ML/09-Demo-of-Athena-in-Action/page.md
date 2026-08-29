@@ -51,7 +51,7 @@ Once you have uploaded your CSV file to an S3 bucket, the next step is to set up
 
 The following image shows the AWS Athena console, where you configure the table details and database settings:
 
-![The image shows an AWS Athena console screen where a user is configuring table details and database settings, including naming a table and selecting or creating a database.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865042/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-Athena-in-Action/aws-athena-console-table-configuration.jpg)
+![The image shows an AWS Athena console screen where a user is configuring table details and database settings, including naming a table and selecting or creating a database.](https://kodekloud.com/kk-media/image/upload/v1752865042/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-Athena-in-Action/aws-athena-console-table-configuration.jpg)
 
 Upon completing the form, Athena will generate a SQL statement similar to the one below to create an external table:
 
@@ -108,7 +108,7 @@ To execute queries on your newly created table, follow these guidelines:
 
 The image below shows the AWS Athena query editor with the results displayed in a tabular format, featuring columns such as ID, first name, last name, email, profession, and country:
 
-![The image shows an AWS Athena query editor interface displaying a table with user data, including columns for ID, first name, last name, email, profession, and country. The query results are shown in a tabular format with multiple entries.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865043/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-Athena-in-Action/aws-athena-query-editor-user-data.jpg)
+![The image shows an AWS Athena query editor interface displaying a table with user data, including columns for ID, first name, last name, email, profession, and country. The query results are shown in a tabular format with multiple entries.](https://kodekloud.com/kk-media/image/upload/v1752865043/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-Athena-in-Action/aws-athena-query-editor-user-data.jpg)
 
 ## Cleaning Up Resources
 

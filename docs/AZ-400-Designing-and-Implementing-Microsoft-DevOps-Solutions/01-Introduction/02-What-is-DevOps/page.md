@@ -23,7 +23,7 @@ Agile workflows, value-stream mapping, and data-driven insights enable continuou
 **Products**\
 Toolchains for source control, build automation, infrastructure as code, monitoring, and feedback loops support end-to-end delivery.
 
-![The image is a diagram explaining DevOps, highlighting three components: People, Processes, and Product, each represented by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868098/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-DevOps/devops-diagram-people-processes-product.jpg)
+![The image is a diagram explaining DevOps, highlighting three components: People, Processes, and Product, each represented by an icon.](https://kodekloud.com/kk-media/image/upload/v1752868098/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-DevOps/devops-diagram-people-processes-product.jpg)
 
 > **lightbulb** Focusing on value delivery ensures your DevOps initiatives align with business outcomes and user satisfaction.
 
@@ -37,7 +37,7 @@ Azure DevOps provides integrated services to manage the entire value stream—fr
 
 By visualizing and optimizing each stage, teams eliminate bottlenecks and accelerate delivery.
 
-![The image illustrates a value stream process with three stages: "Idea," "Work," and "Using the feature," connected by a flow arrow.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868099/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-DevOps/value-stream-process-idea-work-feature.jpg)
+![The image illustrates a value stream process with three stages: "Idea," "Work," and "Using the feature," connected by a flow arrow.](https://kodekloud.com/kk-media/image/upload/v1752868099/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-DevOps/value-stream-process-idea-work-feature.jpg)
 
 ## The Three Ways: Flow, Feedback, and Experimentation
 
@@ -52,13 +52,13 @@ In *The DevOps Handbook*, three principles—known as the Three Ways—guide suc
 3. **Experimentation**\
    Cultivate a culture of continuous learning. Use small, safe-to-fail experiments to test hypotheses, improve processes, and validate new features.
 
-![The image shows three icons labeled "Flow," "Feedback," and "Experiment," each with a corresponding symbol: a waterfall, a group of people with a speech bubble, and laboratory flasks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868101/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-DevOps/flow-feedback-experiment-icons.jpg)
+![The image shows three icons labeled "Flow," "Feedback," and "Experiment," each with a corresponding symbol: a waterfall, a group of people with a speech bubble, and laboratory flasks.](https://kodekloud.com/kk-media/image/upload/v1752868101/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-DevOps/flow-feedback-experiment-icons.jpg)
 
 ## DevOps Application Lifecycle
 
 Let’s break down how DevOps transforms each phase of software delivery:
 
-![The image illustrates the application lifecycle, showing stages from idea and research to development, testing, and release. It includes steps like running build and release pipelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868102/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-DevOps/application-lifecycle-development-testing-release.jpg)
+![The image illustrates the application lifecycle, showing stages from idea and research to development, testing, and release. It includes steps like running build and release pipelines.](https://kodekloud.com/kk-media/image/upload/v1752868102/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-DevOps/application-lifecycle-development-testing-release.jpg)
 
 **Plan**
 
@@ -80,7 +80,7 @@ Let’s break down how DevOps transforms each phase of software delivery:
 * Monitor performance, manage incidents, and tune applications for reliability.
 * Tools: Azure Monitor, Application Insights, logging, alert rules.
 
-![The image illustrates the application lifecycle in a circular flow, highlighting four stages: Plan, Develop, Deliver, and Operate. Each stage is represented by a distinct icon and color.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868103/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-DevOps/application-lifecycle-circular-flow-diagram.jpg)
+![The image illustrates the application lifecycle in a circular flow, highlighting four stages: Plan, Develop, Deliver, and Operate. Each stage is represented by a distinct icon and color.](https://kodekloud.com/kk-media/image/upload/v1752868103/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-DevOps/application-lifecycle-circular-flow-diagram.jpg)
 
 > **lightbulb** Integrating feedback and telemetry into each phase ensures continuous improvement and faster mean time to recovery (MTTR).
 

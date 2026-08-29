@@ -14,9 +14,7 @@ High-level design is the zoomed-out blueprint. It identifies major components—
 
 Low-level design zooms into a single component or feature. It describes implementation details: function responsibilities, data structures, APIs, and edge-case handling. Examples of LLD interview prompts include "Design the Like feature" or "Implement an in-memory cache." These questions probe the detailed code structure, algorithms, and performance trade-offs.
 
-<Callout icon="lightbulb">
-  This lesson focuses on High-Level Design—component interaction, system behavior under load, and scaling strategies. We deliberately avoid internal implementation details for each component in this course.
-</Callout>
+> **lightbulb** This lesson focuses on High-Level Design—component interaction, system behavior under load, and scaling strategies. We deliberately avoid internal implementation details for each component in this course.
 
 To make the difference concrete, consider a photo-sharing app:
 
@@ -68,6 +66,4 @@ Further reading and references
 * [Designing Data-Intensive Applications (book)](https://dataintensive.net/)
 * [System Design Primer (GitHub)](https://github.com/donnemartin/system-design-primer)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/a74821f4-078b-4dfa-b6ef-00f0df665e29" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/a74821f4-078b-4dfa-b6ef-00f0df665e29)

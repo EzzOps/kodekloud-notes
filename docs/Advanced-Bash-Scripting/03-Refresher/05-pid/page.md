@@ -51,7 +51,7 @@ Run both scripts:
 
 When the kernel detects `#!` followed by a valid interpreter, it invokes that program directly.
 
-![The image shows the symbols "#" and "!" with their hexadecimal values, 0x23 and 0x21, respectively, under the title "Shebang."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868610/notes-assets/images/Advanced-Bash-Scripting-Shebang/shebang-symbols-hexadecimal-values.jpg)
+![The image shows the symbols "#" and "!" with their hexadecimal values, 0x23 and 0x21, respectively, under the title "Shebang."](https://kodekloud.com/kk-media/image/upload/v1752868610/notes-assets/images/Advanced-Bash-Scripting-Shebang/shebang-symbols-hexadecimal-values.jpg)
 
 ## Using a Different Shell: C Shell Example
 
@@ -86,7 +86,7 @@ endif
 # running on a c shell csh
 ```
 
-![The image illustrates a "Shebang" with a focus on the C shell (csh), featuring a triangle with a hash symbol and the text "CSH" inside, accompanied by a checkmark.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868610/notes-assets/images/Advanced-Bash-Scripting-Shebang/shebang-csh-triangle-checkmark.jpg)
+![The image illustrates a "Shebang" with a focus on the C shell (csh), featuring a triangle with a hash symbol and the text "CSH" inside, accompanied by a checkmark.](https://kodekloud.com/kk-media/image/upload/v1752868610/notes-assets/images/Advanced-Bash-Scripting-Shebang/shebang-csh-triangle-checkmark.jpg)
 
 ## Modern, Portable Shebang
 

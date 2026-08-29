@@ -11,9 +11,7 @@ Key concepts:
 * Outer list elements = sequential groups (one group runs after the previous completes).
 * Inner list items = tasks that run in parallel within their group.
 
-<Callout icon="lightbulb">
-  The steps template structure is a list of lists. Each top-level list element is a step group executed sequentially; items inside that group (an inner list) execute in parallel.
-</Callout>
+> **lightbulb** The steps template structure is a list of lists. Each top-level list element is a step group executed sequentially; items inside that group (an inner list) execute in parallel.
 
 ## Example workflow
 
@@ -112,6 +110,4 @@ This rendered graph helps you visualize which steps run sequentially and which r
 * Argo Workflows concepts: [https://argoproj.github.io/argo-workflows/workflows/what-is-workflow/](https://argoproj.github.io/argo-workflows/workflows/what-is-workflow/)
 * Docker image used in example: [https://hub.docker.com/r/rancher/cowsay](https://hub.docker.com/r/rancher/cowsay)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/1ce86319-4f82-4bee-bbe5-d66122d3d739" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/1ce86319-4f82-4bee-bbe5-d66122d3d739)

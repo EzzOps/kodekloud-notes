@@ -12,9 +12,7 @@ Overview
 * Download the appropriate tarball (example used in this lesson: `otelcol-contrib_0.135.0_linux_arm64.tar.gz`)
 * Extract the tarball and run `otelcol-contrib` with a configuration file (`--config`)
 
-<Callout icon="lightbulb">
-  Ensure you download the binary that matches your OS and CPU architecture (for example, `linux/amd64` vs `linux/arm64`). This lesson demonstrates the Linux/ARM64 tarball.
-</Callout>
+> **lightbulb** Ensure you download the binary that matches your OS and CPU architecture (for example, `linux/amd64` vs `linux/arm64`). This lesson demonstrates the Linux/ARM64 tarball.
 
 ## Quick commands (summary)
 
@@ -148,9 +146,7 @@ Ports and endpoints
   * Config syntax and indentation (YAML errors)
   * Port conflicts on `4317` / `4318`
 
-<Callout icon="warning">
-  If you see startup errors related to configuration or ports, use the `validate` command and inspect the logs printed by the `debug` exporter. Also confirm the downloaded binary matches your system architecture.
-</Callout>
+> **warning** If you see startup errors related to configuration or ports, use the `validate` command and inspect the logs printed by the `debug` exporter. Also confirm the downloaded binary matches your system architecture.
 
 ## 6) Next steps
 
@@ -165,6 +161,4 @@ Links and references
 * OpenTelemetry Collector Releases: [https://github.com/open-telemetry/opentelemetry-collector-releases/releases](https://github.com/open-telemetry/opentelemetry-collector-releases/releases)
 * OpenTelemetry Collector documentation: [https://opentelemetry.io/docs/collector/](https://opentelemetry.io/docs/collector/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/94d2710a-c270-4c49-9e4b-df67653f1b47/lesson/a779bfd1-4ebf-4c16-9717-66ac2b81ba3d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/94d2710a-c270-4c49-9e4b-df67653f1b47/lesson/a779bfd1-4ebf-4c16-9717-66ac2b81ba3d)

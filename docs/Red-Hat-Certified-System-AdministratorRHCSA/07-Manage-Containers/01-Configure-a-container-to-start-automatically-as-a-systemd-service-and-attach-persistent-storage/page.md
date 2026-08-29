@@ -6,9 +6,7 @@ Learn to configure a container for automatic startup as a systemd service with p
 
 In this guide, you'll learn how to configure a container to start automatically as a rootless systemd service while attaching persistent storage for serving static content from your local machine.
 
-<Callout icon="lightbulb">
-  Ensure that your system's container-tools module stream is updated to use at least Podman version 2.0. RHEL 8’s default module stream includes Podman version 1.6, which is insufficient for this demonstration.
-</Callout>
+> **lightbulb** Ensure that your system's container-tools module stream is updated to use at least Podman version 2.0. RHEL 8’s default module stream includes Podman version 1.6, which is insufficient for this demonstration.
 
 ## Step 1. Update the container-tools Module Stream
 
@@ -201,8 +199,6 @@ Before enabling the systemd service to manage the container, stop and remove the
 
 This guide demonstrated how to configure a container for automatic startup as a rootless systemd service with attached persistent storage. With these steps, you can streamline container management and serve static content efficiently on your system. For further details on container management, refer to the [Podman documentation](https://podman.io/getting-started/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/141c7a78-21ef-4dd8-86a3-fb0ef5037a8d/lesson/455bbe6b-c1e5-4ad0-938e-a33b601584de" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/141c7a78-21ef-4dd8-86a3-fb0ef5037a8d/lesson/455bbe6b-c1e5-4ad0-938e-a33b601584de)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/141c7a78-21ef-4dd8-86a3-fb0ef5037a8d/lesson/50b9b8f3-5fd9-4363-9a14-f2958ff73d68" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/141c7a78-21ef-4dd8-86a3-fb0ef5037a8d/lesson/50b9b8f3-5fd9-4363-9a14-f2958ff73d68)

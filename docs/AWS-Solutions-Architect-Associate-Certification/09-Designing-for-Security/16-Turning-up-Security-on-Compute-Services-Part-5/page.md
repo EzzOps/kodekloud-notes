@@ -12,7 +12,7 @@ In this lesson, we focus on designing secure architectures for AWS container ser
 
 ECR is a versatile container registry that can be configured as either public or private. It easily integrates with AWS services such as IAM for permission management, CI/CD pipelines, and VPC endpoints for secure, private connectivity. Additionally, ECR supports repository replication and can serve multiple purposes including pull-through caching, development registries, and production repositories.
 
-![The image is a diagram illustrating the workflow of an Elastic Container Repository using AWS services, including Amazon ECR, AWS CodeBuild, CodeDeploy, and ECS, with integration points for security and deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864119/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/elastic-container-repository-workflow-diagram.jpg)
+![The image is a diagram illustrating the workflow of an Elastic Container Repository using AWS services, including Amazon ECR, AWS CodeBuild, CodeDeploy, and ECS, with integration points for security and deployment.](https://kodekloud.com/kk-media/image/upload/v1752864119/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/elastic-container-repository-workflow-diagram.jpg)
 
 Consider a scenario where a global e-commerce company uses ECR to store container images for its microservices application. To ensure images are securely stored, only authorized entities can push or pull images, and vulnerabilities are automatically detected, implement the following measures:
 
@@ -21,7 +21,7 @@ Consider a scenario where a global e-commerce company uses ECR to store containe
 
 For enhanced security, integrate logging services such as CloudWatch, CloudTrail, and AWS Config. Using VPC endpoints further ensures that ECR traffic does not traverse the public internet.
 
-![The image illustrates the architecture of an AWS Elastic Container Repository (ECR) setup, showing the interaction between production and test AWS accounts with VPC endpoints and ECR registries.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864121/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/aws-ecr-architecture-diagram.jpg)
+![The image illustrates the architecture of an AWS Elastic Container Repository (ECR) setup, showing the interaction between production and test AWS accounts with VPC endpoints and ECR registries.](https://kodekloud.com/kk-media/image/upload/v1752864121/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/aws-ecr-architecture-diagram.jpg)
 
 ***
 
@@ -49,7 +49,7 @@ Consider a scenario where a startup prepares to deploy a web application using A
 * Automatic scaling and integrated monitoring.
 * Streamlined security features using CloudWatch, CloudTrail, and AWS Config.
 
-![The image presents a scenario where a startup wants to deploy a web application using AWS App Runner, with four suggested steps for secure and efficient deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864122/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/aws-app-runner-deployment-steps.jpg)
+![The image presents a scenario where a startup wants to deploy a web application using AWS App Runner, with four suggested steps for secure and efficient deployment.](https://kodekloud.com/kk-media/image/upload/v1752864122/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/aws-app-runner-deployment-steps.jpg)
 
 A standard App Runner workflow typically involves:
 
@@ -58,7 +58,7 @@ A standard App Runner workflow typically involves:
 * Deploying containerized applications.
 * Monitoring service performance and security.
 
-![The image is a diagram illustrating the workflow of an App Runner service, showing interactions between a user, App Runner, and a code/image repository. It highlights the process of creating, deploying, and monitoring services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864123/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/app-runner-workflow-diagram.jpg)
+![The image is a diagram illustrating the workflow of an App Runner service, showing interactions between a user, App Runner, and a code/image repository. It highlights the process of creating, deploying, and monitoring services.](https://kodekloud.com/kk-media/image/upload/v1752864123/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/app-runner-workflow-diagram.jpg)
 
 ***
 
@@ -66,7 +66,7 @@ A standard App Runner workflow typically involves:
 
 For organizations such as e-commerce companies migrating backend services to App Runner, maintaining private communication between the VPC and App Runner is essential. To avoid routing traffic over the public internet, configure VPC interface endpoints. This setup ensures that communications remain securely within the AWS network.
 
-![The image presents a scenario where an e-commerce company wants to integrate AWS App Runner with their VPC for private traffic, listing four potential steps to achieve this setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864126/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/aws-app-runner-vpc-setup-steps.jpg)
+![The image presents a scenario where an e-commerce company wants to integrate AWS App Runner with their VPC for private traffic, listing four potential steps to achieve this setup.](https://kodekloud.com/kk-media/image/upload/v1752864126/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/aws-app-runner-vpc-setup-steps.jpg)
 
 It’s best to use interface endpoints rather than alternatives like VPC peering, Direct Connect, or VPN. Note that gateway endpoints are applicable only to S3 and DynamoDB.
 
@@ -77,7 +77,7 @@ A detailed VPC-connected App Runner architecture typically includes components s
 * Multiple network interfaces directing traffic to tasks.
 * A NAT Gateway for controlled internet access by private VPC resources.
 
-![The image is a diagram illustrating the VPC Networking Mode Architecture for AWS App Runner, showing the flow of inbound and outbound traffic through various components like Network Load Balancer, Fargate, and customer VPC resources. It highlights the use of standard services for logging and monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864127/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/vpc-networking-architecture-aws-apprunner.jpg)
+![The image is a diagram illustrating the VPC Networking Mode Architecture for AWS App Runner, showing the flow of inbound and outbound traffic through various components like Network Load Balancer, Fargate, and customer VPC resources. It highlights the use of standard services for logging and monitoring.](https://kodekloud.com/kk-media/image/upload/v1752864127/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/vpc-networking-architecture-aws-apprunner.jpg)
 
 ***
 
@@ -96,7 +96,7 @@ For startups and enterprises that require encryption in transit and at rest, App
 
 AWS Batch simplifies the processing of large-scale jobs by efficiently orchestrating compute resources such as EC2, ECS, and EKS (with Fargate and Spot instances available). It divides workloads into smaller jobs that run at scale and typically stores outputs in S3.
 
-![The image is a diagram illustrating the workflow of AWS Batch, showing how a user submits a job container image, which is processed by AWS Batch in a compute environment within a VPC, and results are stored in S3.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864129/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/aws-batch-workflow-diagram.jpg)
+![The image is a diagram illustrating the workflow of AWS Batch, showing how a user submits a job container image, which is processed by AWS Batch in a compute environment within a VPC, and results are stored in S3.](https://kodekloud.com/kk-media/image/upload/v1752864129/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/aws-batch-workflow-diagram.jpg)
 
 ### Securing AWS Batch
 
@@ -108,17 +108,17 @@ When designing a secure AWS Batch environment, consider the following best pract
 
 For example, a pharmaceutical company using AWS Batch to process extensive datasets should adopt a hybrid approach to balance cost efficiency and workload prioritization.
 
-![The image presents a scenario where a pharmaceutical company is using AWS Batch for processing datasets and lists four strategies for choosing the right compute option to optimize costs and efficiency.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864130/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/aws-batch-pharmaceutical-compute-strategies.jpg)
+![The image presents a scenario where a pharmaceutical company is using AWS Batch for processing datasets and lists four strategies for choosing the right compute option to optimize costs and efficiency.](https://kodekloud.com/kk-media/image/upload/v1752864130/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/aws-batch-pharmaceutical-compute-strategies.jpg)
 
 Ensure effective IAM permission management by assigning distinct policies to different teams. This ensures that each team only accesses its designated job queues and definitions.
 
-![The image presents a scenario involving a media company using AWS Batch, with a question about managing IAM permissions effectively. It lists four strategies for managing these permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864131/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/aws-batch-iam-permissions-strategies.jpg)
+![The image presents a scenario involving a media company using AWS Batch, with a question about managing IAM permissions effectively. It lists four strategies for managing these permissions.](https://kodekloud.com/kk-media/image/upload/v1752864131/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/aws-batch-iam-permissions-strategies.jpg)
 
 ### Monitoring and Troubleshooting Batch Jobs
 
 For companies running complex simulations, integrating CloudWatch Logs to monitor error patterns and setting up alarms is highly recommended. This approach provides granular visibility into the job lifecycle and accelerates issue resolution.
 
-![The image describes a scenario where a pharmaceutical company uses AWS Batch for simulations and seeks solutions for monitoring, logging, and troubleshooting. It presents four approaches, including AWS Batch retry strategies, CloudWatch integration, AWS Lambda notifications, and storing outputs in S3.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864132/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/aws-batch-simulations-monitoring-solutions.jpg)
+![The image describes a scenario where a pharmaceutical company uses AWS Batch for simulations and seeks solutions for monitoring, logging, and troubleshooting. It presents four approaches, including AWS Batch retry strategies, CloudWatch integration, AWS Lambda notifications, and storing outputs in S3.](https://kodekloud.com/kk-media/image/upload/v1752864132/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/aws-batch-simulations-monitoring-solutions.jpg)
 
 ***
 
@@ -134,7 +134,7 @@ A typical workflow might involve:
 
 This sequence demonstrates how AWS Batch seamlessly integrates with other AWS services to ensure secure data management and operational efficiency.
 
-![The image is a diagram illustrating AWS Batch application orchestration using AWS Fargate, showing the flow of data and interactions between various AWS services like S3, Lambda, and DynamoDB. It includes components such as NAT Gateway, Elastic Network Interface, and CloudWatch, with a focus on batch job processing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864133/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/aws-batch-fargate-diagram.jpg)
+![The image is a diagram illustrating AWS Batch application orchestration using AWS Fargate, showing the flow of data and interactions between various AWS services like S3, Lambda, and DynamoDB. It includes components such as NAT Gateway, Elastic Network Interface, and CloudWatch, with a focus on batch job processing.](https://kodekloud.com/kk-media/image/upload/v1752864133/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-5/aws-batch-fargate-diagram.jpg)
 
 ***
 

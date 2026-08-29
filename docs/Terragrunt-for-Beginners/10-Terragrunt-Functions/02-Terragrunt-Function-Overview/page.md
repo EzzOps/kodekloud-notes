@@ -17,9 +17,7 @@ As you design your infrastructure with Terragrunt, leveraging its built-in funct
 | `get_parent_terragrunt_dir` | Retrieve the directory path of the parent Terragrunt configuration, supporting hierarchical inheritance.                |
 | `run_cmd`                   | Execute a shell command directly within Terragrunt, allowing automation of external tools or scripts.                   |
 
-<Callout icon="triangle-alert">
-  Use `run_cmd` with caution. Executing shell commands can expose sensitive information or introduce security risks. Always validate inputs and avoid hardcoding credentials.
-</Callout>
+> **triangle-alert** Use `run_cmd` with caution. Executing shell commands can expose sensitive information or introduce security risks. Always validate inputs and avoid hardcoding credentials.
 
 <Frame>
   <img alt="The image lists Terragrunt functions in a vertical flowchart format, including functions like read_terragrunt_config and run_cmd." />

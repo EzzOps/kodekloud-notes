@@ -79,9 +79,7 @@ inputs = {
    terragrunt apply
    ```
 
-<Callout icon="lightbulb">
-  Repeat these steps in each environment directory (`development`, `production`) to maintain isolation and environment-specific configurations.
-</Callout>
+> **lightbulb** Repeat these steps in each environment directory (`development`, `production`) to maintain isolation and environment-specific configurations.
 
 ## Customizing Input Variables
 
@@ -94,9 +92,7 @@ Adjust the following inputs for each environment:
 | `key_pair_name`           | Name for the EC2 Key Pair                    | `"dev-keypair"`                    |
 | `public_key_path`         | Local path to your public SSH key            | `"~/.ssh/id_rsa.pub"`              |
 
-<Callout icon="triangle-alert">
-  Never commit your private SSH keys (`~/.ssh/id_rsa`) to version control. Always reference only the public key in Terraform.
-</Callout>
+> **triangle-alert** Never commit your private SSH keys (`~/.ssh/id_rsa`) to version control. Always reference only the public key in Terraform.
 
 ## Links and References
 
@@ -105,6 +101,4 @@ Adjust the following inputs for each environment:
 * [Terragrunt Documentation](https://terragrunt.gruntwork.io/docs/)
 * [AWS Security Groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/07066843-7439-443b-b2d4-d31be3c50c97/lesson/c14dc46c-49b9-4852-ab65-f342c040c284" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/07066843-7439-443b-b2d4-d31be3c50c97/lesson/c14dc46c-49b9-4852-ab65-f342c040c284)

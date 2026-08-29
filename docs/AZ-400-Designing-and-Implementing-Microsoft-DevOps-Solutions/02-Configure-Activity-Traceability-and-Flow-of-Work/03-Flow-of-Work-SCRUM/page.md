@@ -6,7 +6,7 @@ This article explains the Scrum framework in Azure DevOps, detailing work item h
 
 Scrum is an agile framework that structures development into fixed-length iterations called **sprints**, enabling rapid feedback, continuous improvement, and high adaptability. In **Azure DevOps**, the Scrum process template extends the Basic process by introducing three additional states—**Approved**, **Committed**, and **Removed**—to give teams finer control over work-item progress and feedback loops.
 
-![The image is a slide titled "When to use a SCRUM template?" with three points: "Team anatomy emphasized," "Frequent stakeholder feedback," and "Agile product development," each accompanied by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867420/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-SCRUM/scrum-template-usage-points-slide.jpg)
+![The image is a slide titled "When to use a SCRUM template?" with three points: "Team anatomy emphasized," "Frequent stakeholder feedback," and "Agile product development," each accompanied by an icon.](https://kodekloud.com/kk-media/image/upload/v1752867420/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-SCRUM/scrum-template-usage-points-slide.jpg)
 
 **When to choose a Scrum template in Azure DevOps?**
 
@@ -37,7 +37,7 @@ Azure DevOps organizes Scrum work items into a clear hierarchy. This structure h
 
 The lifecycle of a backlog item in Scrum—from creation through completion or removal—follows a set of well-defined states:
 
-![The image is a workflow diagram showing the progression of a backlog item through stages: New, Approved, Committed, and Done. Each stage includes a condition, such as approval by the product owner or commitment by the team.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867421/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-SCRUM/backlog-item-workflow-diagram-stages.jpg)
+![The image is a workflow diagram showing the progression of a backlog item through stages: New, Approved, Committed, and Done. Each stage includes a condition, such as approval by the product owner or commitment by the team.](https://kodekloud.com/kk-media/image/upload/v1752867421/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-SCRUM/backlog-item-workflow-diagram-stages.jpg)
 
 1. **New**
    * A PBI (feature, bug, or task) is created to capture stakeholder requirements.

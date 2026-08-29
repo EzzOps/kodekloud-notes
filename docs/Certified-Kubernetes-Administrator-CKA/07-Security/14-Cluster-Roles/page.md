@@ -10,7 +10,7 @@ When you create roles and role bindings without specifying a namespace, they are
 
 Most resources (such as pods, replica sets, jobs, deployments, services, and secrets) are namespaced. In contrast, cluster-scoped resources, including nodes and persistent volumes, do not belong to any namespace. The following image clearly illustrates the difference between namespaced resources (e.g., pods, services) and cluster-scoped resources (e.g., nodes, cluster roles):
 
-![The image illustrates Kubernetes resources, distinguishing between namespaced resources (e.g., pods, services) and cluster-scoped resources (e.g., nodes, clusterroles).](../../../../images/kodekloud.com/kk-media/image/upload/v1752869933/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Cluster-Roles/frame_100.jpg)
+![The image illustrates Kubernetes resources, distinguishing between namespaced resources (e.g., pods, services) and cluster-scoped resources (e.g., nodes, clusterroles).](https://kodekloud.com/kk-media/image/upload/v1752869933/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Cluster-Roles/frame_100.jpg)
 
 To list namespaced and non-namespaced resources, you can use these commands:
 
@@ -63,7 +63,7 @@ It's important to note that while cluster roles and role bindings are primarily 
 
 The following image further distinguishes how cluster roles work for both namespaced and cluster-scoped resources:
 
-![The image illustrates Kubernetes cluster roles, distinguishing between namespaced and cluster-scoped resources, including pods, services, nodes, and cluster roles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869934/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Cluster-Roles/frame_240.jpg)
+![The image illustrates Kubernetes cluster roles, distinguishing between namespaced and cluster-scoped resources, including pods, services, nodes, and cluster roles.](https://kodekloud.com/kk-media/image/upload/v1752869934/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Cluster-Roles/frame_240.jpg)
 
 > **lightbulb** Kubernetes provides several default cluster roles when the cluster is initially set up. Be sure to review these defaults to understand the baseline permissions before creating custom roles.
 

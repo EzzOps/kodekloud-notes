@@ -6,13 +6,9 @@ This article discusses managing changes to infrastructure-as-code files, emphasi
 
 In this lesson, we discuss how to properly manage changes to an infrastructure-as-code file—for example, modifying a Terraform file (main.tf) to update a machine type. Imagine the file currently specifies a machine type "R4 2xlarge" that was changed 30 days ago, and you need to update it (perhaps to "t2.micro" or another type). The key consideration is to determine whether to simply update the file or follow a systematic approach.
 
-<Frame>
-  ![The image contains a question about making a change to a Git commit from 30 days ago related to a machine type, with handwritten notes and a diagram.](../../../../images/kodekloud.com/kk-media/image/upload/v1752873350/notes-assets/images/DevOps-Interview-Preparation-Course-Git-Question-2/git-commit-change-handwritten-notes.jpg)
-</Frame>
+![The image contains a question about making a change to a Git commit from 30 days ago related to a machine type, with handwritten notes and a diagram.](https://kodekloud.com/kk-media/image/upload/v1752873350/notes-assets/images/DevOps-Interview-Preparation-Course-Git-Question-2/git-commit-change-handwritten-notes.jpg)
 
-<Callout icon="lightbulb">
-  Before making any modifications, investigate the change history. Understanding who made the original change and why helps avoid unintended consequences—especially in a collaborative environment.
-</Callout>
+> **lightbulb** Before making any modifications, investigate the change history. Understanding who made the original change and why helps avoid unintended consequences—especially in a collaborative environment.
 
 ## Step-by-Step Approach
 
@@ -39,9 +35,7 @@ Follow these steps to ensure that your changes are well-informed and maintain th
 6. **Commit the Changes**\
    Commit your modifications and document your reasons clearly for future reference.
 
-<Frame>
-  ![The image contains a question about making a change to a Git commit from 30 days ago, with handwritten notes discussing machine types and a file named "main.tf".](../../../../images/kodekloud.com/kk-media/image/upload/v1752873351/notes-assets/images/DevOps-Interview-Preparation-Course-Git-Question-2/git-commit-change-handwritten-notes-2.jpg)
-</Frame>
+![The image contains a question about making a change to a Git commit from 30 days ago, with handwritten notes discussing machine types and a file named "main.tf".](https://kodekloud.com/kk-media/image/upload/v1752873351/notes-assets/images/DevOps-Interview-Preparation-Course-Git-Question-2/git-commit-change-handwritten-notes-2.jpg)
 
 ## Practical Example: Using Git Blame
 
@@ -68,9 +62,7 @@ git clone -> create new branch -> review changes on GitHub UI -> use Git Blame t
 
 This clear sequence ensures that you are aware of the historical context behind changes and helps maintain the integrity of your infrastructure code.
 
-<Callout icon="lightbulb">
-  Always investigate the context of past modifications before updating an infrastructure-as-code file. This practice not only ensures accuracy but also facilitates smoother team communication.
-</Callout>
+> **lightbulb** Always investigate the context of past modifications before updating an infrastructure-as-code file. This practice not only ensures accuracy but also facilitates smoother team communication.
 
 ## Conclusion
 
@@ -80,6 +72,4 @@ Thank you for going through this lesson. For further reading, check out [Kuberne
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/devops-interview-preparation-course/module/4edc26e9-82be-4ac9-a2bf-bf09a6c3bb98/lesson/f9447d12-0bcd-48ec-92af-523e6b389c6f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/devops-interview-preparation-course/module/4edc26e9-82be-4ac9-a2bf-bf09a6c3bb98/lesson/f9447d12-0bcd-48ec-92af-523e6b389c6f)

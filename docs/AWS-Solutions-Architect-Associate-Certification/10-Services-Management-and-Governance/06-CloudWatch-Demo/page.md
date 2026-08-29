@@ -8,7 +8,7 @@ In this article, we walk through a comprehensive demo of AWS CloudWatch, highlig
 
 To begin, access CloudWatch by searching for the service in the AWS console. Once on the CloudWatch page, explore the various features available on the left-hand panel. Each feature provides distinct capabilities for monitoring and managing your AWS resources.
 
-![The image shows the AWS CloudWatch dashboard interface, featuring options to set alarms, create dashboards, view logs, and configure application insights.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865291/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch-Demo/aws-cloudwatch-dashboard-interface.jpg)
+![The image shows the AWS CloudWatch dashboard interface, featuring options to set alarms, create dashboards, view logs, and configure application insights.](https://kodekloud.com/kk-media/image/upload/v1752865291/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch-Demo/aws-cloudwatch-dashboard-interface.jpg)
 
 ***
 
@@ -16,13 +16,13 @@ To begin, access CloudWatch by searching for the service in the AWS console. Onc
 
 CloudWatch's centralized log management lets you collect and analyze logs from different services and applications across your AWS account. Logs are organized into log groups based on your configurations or the specific service/resource generating them. This means you can have distinct log groups for your DataSync operations, each Lambda function, or services like AWS Macie.
 
-![The image shows an AWS CloudWatch interface displaying a list of log groups, each with options for data protection, retention, and other settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865293/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch-Demo/aws-cloudwatch-log-groups-interface.jpg)
+![The image shows an AWS CloudWatch interface displaying a list of log groups, each with options for data protection, retention, and other settings.](https://kodekloud.com/kk-media/image/upload/v1752865293/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch-Demo/aws-cloudwatch-log-groups-interface.jpg)
 
 ### Viewing Log Streams
 
 Within each log group, inspect individual log streams. For example, when you navigate to the logs of a Lambda function (e.g., "test one"), you'll notice several log streams that include timestamps of the last events. Selecting a log stream reveals detailed log data such as initialization messages, invocation details, and function output.
 
-![The image shows an AWS CloudWatch interface displaying a list of log streams with their corresponding last event times. The interface includes options for filtering and managing log streams.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865294/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch-Demo/aws-cloudwatch-log-streams-interface.jpg)
+![The image shows an AWS CloudWatch interface displaying a list of log streams with their corresponding last event times. The interface includes options for filtering and managing log streams.](https://kodekloud.com/kk-media/image/upload/v1752865294/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch-Demo/aws-cloudwatch-log-streams-interface.jpg)
 
 Below is a snippet from a Lambda log stream:
 
@@ -125,7 +125,7 @@ CloudWatch collects a variety of metrics for your AWS resources. To view these m
 
 Consider the following example for monitoring CPU utilization of an EC2 instance:
 
-![The image shows an AWS CloudWatch dashboard displaying a graph of CPU utilization over time, along with a list of metrics such as CPUCreditBalance and NetworkIn, all with no alarms set.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865295/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch-Demo/aws-cloudwatch-cpu-utilization-dashboard.jpg)
+![The image shows an AWS CloudWatch dashboard displaying a graph of CPU utilization over time, along with a list of metrics such as CPUCreditBalance and NetworkIn, all with no alarms set.](https://kodekloud.com/kk-media/image/upload/v1752865295/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch-Demo/aws-cloudwatch-cpu-utilization-dashboard.jpg)
 
 In this graph, you can observe periods of minimal usage and sudden spikes. Customize the display by adjusting the time range (e.g., last hour or three hours) or by choosing different visualization formats.
 
@@ -135,15 +135,15 @@ In this graph, you can observe periods of minimal usage and sudden spikes. Custo
 
 CloudWatch alarms allow you to monitor specific metrics and trigger notifications when thresholds are exceeded. For instance, you can create an alarm for CPU utilization. When the average CPU usage exceeds a predefined static threshold—say 60% over a five-minute period—an alarm is triggered.
 
-![The image shows a configuration screen from AWS CloudWatch for setting a CPU utilization alarm, with options to define conditions and thresholds. The threshold type is set to "Static," and the condition is configured for when CPU utilization is greater than a specified value.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865296/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch-Demo/aws-cloudwatch-cpu-alarm-configuration.jpg)
+![The image shows a configuration screen from AWS CloudWatch for setting a CPU utilization alarm, with options to define conditions and thresholds. The threshold type is set to "Static," and the condition is configured for when CPU utilization is greater than a specified value.](https://kodekloud.com/kk-media/image/upload/v1752865296/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch-Demo/aws-cloudwatch-cpu-alarm-configuration.jpg)
 
 After selecting the metric, configure the alarm conditions, and ensure notifications are sent via an SNS topic (such as an email alert). This setup guarantees that any sustained high CPU usage triggers an alert to the designated recipients.
 
-![The image shows an AWS CloudWatch interface for configuring alarm actions, including setting notifications via SNS topics and adding auto-scaling actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865297/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch-Demo/aws-cloudwatch-alarm-configurations.jpg)
+![The image shows an AWS CloudWatch interface for configuring alarm actions, including setting notifications via SNS topics and adding auto-scaling actions.](https://kodekloud.com/kk-media/image/upload/v1752865297/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch-Demo/aws-cloudwatch-alarm-configurations.jpg)
 
 Verify your settings with the corresponding graph display. If everything is in order, save your configurations; otherwise, cancel the setup if modifications are needed.
 
-![The image shows an AWS CloudWatch interface where a CPU utilization alarm is being configured. It includes a graph displaying CPU usage and settings for the alarm conditions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865299/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch-Demo/aws-cloudwatch-cpu-alarm-configuration-2.jpg)
+![The image shows an AWS CloudWatch interface where a CPU utilization alarm is being configured. It includes a graph displaying CPU usage and settings for the alarm conditions.](https://kodekloud.com/kk-media/image/upload/v1752865299/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch-Demo/aws-cloudwatch-cpu-alarm-configuration-2.jpg)
 
 ***
 
@@ -169,11 +169,11 @@ Dashboards in CloudWatch let you assemble metrics and logs into customizable vis
 
 Resize and rearrange the widgets as needed to optimize the layout.
 
-![The image shows an AWS CloudWatch dashboard with graphs displaying CPU utilization and network packets out over a selected time range.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865300/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch-Demo/aws-cloudwatch-dashboard-cpu-network.jpg)
+![The image shows an AWS CloudWatch dashboard with graphs displaying CPU utilization and network packets out over a selected time range.](https://kodekloud.com/kk-media/image/upload/v1752865300/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch-Demo/aws-cloudwatch-dashboard-cpu-network.jpg)
 
 Once satisfied with the layout, save your dashboard under an appropriate name. Use multiple dashboards to monitor different environments or teams, such as separate dashboards for ECS clusters or individual applications.
 
-![The image shows an AWS CloudWatch dashboard displaying metrics for an EC2-Lambda setup, including CPU utilization, network packets out, and invocation counts. The dashboard provides visual graphs and data for monitoring performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865301/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch-Demo/aws-cloudwatch-ec2-lambda-dashboard.jpg)
+![The image shows an AWS CloudWatch dashboard displaying metrics for an EC2-Lambda setup, including CPU utilization, network packets out, and invocation counts. The dashboard provides visual graphs and data for monitoring performance.](https://kodekloud.com/kk-media/image/upload/v1752865301/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch-Demo/aws-cloudwatch-ec2-lambda-dashboard.jpg)
 
 ***
 

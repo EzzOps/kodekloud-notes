@@ -6,9 +6,7 @@ This guide details the process of fine-tuning an OpenAI model, covering data pre
 
 Fine-tuning an OpenAI model involves four core phases: preparing your data, uploading & validating it, launching a training job, and then calling your custom model. This guide walks through each step, from creating a JSONL dataset to selecting a cost-effective base model.
 
-<Frame>
-  ![The image outlines four steps involved in fine-tuning: creating a JSONL dataset, uploading the dataset, starting a fine-tuning job through OpenAI CLI or SDK, and using the fine-tuned model for word/chat completion.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881506/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Steps-Involved-in-Fine-Tuning-a-Model/fine-tuning-steps-jsonl-dataset.jpg)
-</Frame>
+![The image outlines four steps involved in fine-tuning: creating a JSONL dataset, uploading the dataset, starting a fine-tuning job through OpenAI CLI or SDK, and using the fine-tuned model for word/chat completion.](https://kodekloud.com/kk-media/image/upload/v1752881506/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Steps-Involved-in-Fine-Tuning-a-Model/fine-tuning-steps-jsonl-dataset.jpg)
 
 ***
 
@@ -16,9 +14,7 @@ Fine-tuning an OpenAI model involves four core phases: preparing your data, uplo
 
 OpenAI fine-tuning requires a line-delimited JSON (JSONL) file. Each line should be a valid JSON object with two keys—`prompt` and `completion`—terminated by a stop token (e.g., `END`).
 
-<Callout icon="lightbulb">
-  Ensure each JSON object is newline-delimited (no commas between lines) and ends with your chosen stop token.
-</Callout>
+> **lightbulb** Ensure each JSON object is newline-delimited (no commas between lines) and ends with your chosen stop token.
 
 Example `qna.jsonl`:
 
@@ -99,9 +95,7 @@ Choosing the right base model balances performance and budget. Review the table 
 | Curie      | \$0.0020          | 2,048 tokens   | Summarization & chat    |
 | Davinci    | \$0.0200          | 4,096 tokens   | Complex reasoning tasks |
 
-<Callout icon="triangle-alert">
-  Fine-tuning costs include both training and usage. Always check the [OpenAI pricing page](https://openai.com/pricing) and monitor your token consumption to avoid unexpected charges.
-</Callout>
+> **triangle-alert** Fine-tuning costs include both training and usage. Always check the [OpenAI pricing page](https://openai.com/pricing) and monitor your token consumption to avoid unexpected charges.
 
 ***
 
@@ -114,6 +108,4 @@ Choosing the right base model balances performance and budget. Review the table 
 
 With this end-to-end workflow—dataset preparation, validation, training, and model invocation—you’re ready to fine-tune any future OpenAI model for your custom use cases.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/bdd763d1-210d-41de-a60c-607b722e7afe/lesson/f54f700f-743e-45bd-82aa-ce168feff1b0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/bdd763d1-210d-41de-a60c-607b722e7afe/lesson/f54f700f-743e-45bd-82aa-ce168feff1b0)

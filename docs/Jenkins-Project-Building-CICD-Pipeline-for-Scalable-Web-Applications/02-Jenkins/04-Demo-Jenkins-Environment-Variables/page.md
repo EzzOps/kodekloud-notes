@@ -57,9 +57,7 @@ test_app.py ... [100%]
 ============================== 3 passed in 0.14s ===============================
 ```
 
-<Callout icon="lightbulb">
-  In the "Test" stage, the pipeline echoes the username and password after running the tests with `pytest`. Make sure your sensitive information is managed carefully when echoing details in production environments.
-</Callout>
+> **lightbulb** In the "Test" stage, the pipeline echoes the username and password after running the tests with `pytest`. Make sure your sensitive information is managed carefully when echoing details in production environments.
 
 ***
 
@@ -173,9 +171,7 @@ Commit: 3c0f60195600d27092d173381dd5d7285b5c6668
 Finished: SUCCESS
 ```
 
-<Callout icon="lightbulb">
-  By leveraging both custom-defined and built-in environment variables, you can manage configuration settings and capture important build metadata seamlessly in your Jenkins pipelines.
-</Callout>
+> **lightbulb** By leveraging both custom-defined and built-in environment variables, you can manage configuration settings and capture important build metadata seamlessly in your Jenkins pipelines.
 
 ***
 
@@ -189,6 +185,4 @@ In this lesson, we covered the following key points:
 
 By applying these practices, you can build more reliable and maintainable Jenkins pipelines. For more detailed insights and further reading, consider visiting the [Jenkins Documentation](https://www.jenkins.io/doc/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/cb96dd4d-081a-495e-9659-477a388e324f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/cb96dd4d-081a-495e-9659-477a388e324f)

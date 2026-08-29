@@ -42,9 +42,7 @@ spec:
   dnsPolicy: Default
 ```
 
-<Callout icon="lightbulb">
-  The `Default` dnsPolicy is misleading: it does not mean “use the Kubernetes default behavior.” It means “use the node’s resolver.” If you need cluster DNS resolution, do not use `dnsPolicy: Default`.
-</Callout>
+> **lightbulb** The `Default` dnsPolicy is misleading: it does not mean “use the Kubernetes default behavior.” It means “use the node’s resolver.” If you need cluster DNS resolution, do not use `dnsPolicy: Default`.
 
 ## Host networking adds a wrinkle
 
@@ -120,9 +118,7 @@ Check `spec.dnsPolicy` and `spec.hostNetwork`.
 
 Use the checklist above to quickly identify whether a pod is pointed at the node resolver by mistake, and update `dnsPolicy` or the pod spec accordingly to restore cluster DNS resolution.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/devops-interview-prep/module/c1eb3967-23d3-4a34-b23d-14a892f95e1d/lesson/efdad69a-4abb-4985-aa8b-7053297d5939" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/devops-interview-prep/module/c1eb3967-23d3-4a34-b23d-14a892f95e1d/lesson/efdad69a-4abb-4985-aa8b-7053297d5939)
 
 
 # ndots5 Trap
@@ -207,13 +203,9 @@ spec:
 | Lower `ndots` (`dnsConfig: ndots: "1"` or `"2"`) | Pod-level fix for many apps in a pod                            | Centralized; preserves short cluster-name resolution | Needs pod spec modification or redeploy; be careful with apps relying on search domains |
 | Reduce search domains                            | Cluster-level optimization                                      | Fewer candidate lookups for every query              | May impact resolution of legitimate short names                                         |
 
-<Callout icon="lightbulb">
-  Kubernetes default `ndots` is commonly 5 (the “ndots:5 trap”). Lowering `ndots` to `1` or `2` reduces wasted search-domain lookups for typical external hostnames while still allowing short cluster-local names to resolve.
-</Callout>
+> **lightbulb** Kubernetes default `ndots` is commonly 5 (the “ndots:5 trap”). Lowering `ndots` to `1` or `2` reduces wasted search-domain lookups for typical external hostnames while still allowing short cluster-local names to resolve.
 
-<Callout icon="warning">
-  Avoid globally setting `ndots` too low without testing: some legacy apps rely on search-domain expansion to resolve internal services. Validate behavior in a staging environment before changing production pod specs.
-</Callout>
+> **warning** Avoid globally setting `ndots` too low without testing: some legacy apps rely on search-domain expansion to resolve internal services. Validate behavior in a staging environment before changing production pod specs.
 
 ## Additional resources
 
@@ -223,6 +215,4 @@ spec:
 
 By understanding `ndots` and how search domains are applied, you can eliminate a common source of DNS-related latency inside Kubernetes pods and reduce load on your cluster DNS service.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/devops-interview-prep/module/c1eb3967-23d3-4a34-b23d-14a892f95e1d/lesson/940f3a20-1f31-4e53-9479-f0ff2a4aa86f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/devops-interview-prep/module/c1eb3967-23d3-4a34-b23d-14a892f95e1d/lesson/940f3a20-1f31-4e53-9479-f0ff2a4aa86f)

@@ -12,9 +12,7 @@ Imagine you are a network engineer managing a vast infrastructure. You need to a
 
 Ansible Collections offer specialized content—including modules, roles, and playbooks—designed to work with each vendor's devices. For example, collections such as Network.Cisco, Network.Juniper, and Network.Arista provide functionalities tuned specifically for their respective devices.
 
-<Frame>
-  ![The image is a flowchart introducing network connections for Cisco, Juniper, and Arista, with icons representing different network functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881037/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Collections/frame_50.jpg)
-</Frame>
+![The image is a flowchart introducing network connections for Cisco, Juniper, and Arista, with icons representing different network functions.](https://kodekloud.com/kk-media/image/upload/v1752881037/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Collections/frame_50.jpg)
 
 By installing the appropriate collection, you unlock advanced capabilities for automating your network infrastructure. For instance, to install the Network.Cisco collection, run:
 
@@ -28,9 +26,7 @@ Once installed, integrate the collection's modules and roles directly into your 
 
 Ansible Collections package and distribute content such as modules, roles, plugins, and related assets into self-contained units. This modular design enables both community members and vendors to share specialized functionalities efficiently and widely.
 
-<Frame>
-  ![The image explains Ansible Collections as packages for modules, roles, and plugins, which are self-contained and created by the community and vendors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881038/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Collections/frame_110.jpg)
-</Frame>
+![The image explains Ansible Collections as packages for modules, roles, and plugins, which are self-contained and created by the community and vendors.](https://kodekloud.com/kk-media/image/upload/v1752881038/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Collections/frame_110.jpg)
 
 ## Key Benefits of Using Collections
 
@@ -99,9 +95,7 @@ Then, install all required collections with a single command:
 $ ansible-galaxy collection install -r requirements.yml
 ```
 
-<Callout icon="lightbulb">
-  Using a `requirements.yml` file centralizes collection management and helps maintain dependency integrity by ensuring you use the correct versions.
-</Callout>
+> **lightbulb** Using a `requirements.yml` file centralizes collection management and helps maintain dependency integrity by ensuring you use the correct versions.
 
 ## Conclusion
 
@@ -115,8 +109,6 @@ Adopting Ansible Collections not only streamlines your network automation tasks 
 
 Well, that's all for now—happy automating!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/e98a2ff3-ee65-4cf3-9bf3-b91507d617e3/lesson/08d1d213-3f27-486f-a1de-05b2010a511e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/e98a2ff3-ee65-4cf3-9bf3-b91507d617e3/lesson/08d1d213-3f27-486f-a1de-05b2010a511e)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/e98a2ff3-ee65-4cf3-9bf3-b91507d617e3/lesson/c00b4570-0236-48f2-9b46-d94679028cc9" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/e98a2ff3-ee65-4cf3-9bf3-b91507d617e3/lesson/c00b4570-0236-48f2-9b46-d94679028cc9)

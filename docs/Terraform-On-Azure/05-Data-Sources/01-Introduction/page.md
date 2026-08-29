@@ -19,9 +19,7 @@ By the end of this article you will clearly understand four things:
 
 Understanding the distinction between managing infrastructure and consuming infrastructure helps you design cleaner, more composable Terraform modules and reduce accidental drift or lifecycle ownership conflicts.
 
-<Callout icon="lightbulb">
-  Use data sources when you need to look up values from resources you do not manage directly in this Terraform project—such as shared subscriptions, centrally managed network components, or existing resource groups in Azure.
-</Callout>
+> **lightbulb** Use data sources when you need to look up values from resources you do not manage directly in this Terraform project—such as shared subscriptions, centrally managed network components, or existing resource groups in Azure.
 
 Why this matters
 
@@ -80,6 +78,4 @@ Further reading
 
 This article will next cover concrete data source examples for Azure, patterns for composing values safely, and techniques to avoid accidental lifecycle control.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/5e64ee11-c3c3-4d9c-be0c-53989a38ae8f/lesson/91b2c92b-999c-4360-acf4-dd71bb1995e9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/5e64ee11-c3c3-4d9c-be0c-53989a38ae8f/lesson/91b2c92b-999c-4360-acf4-dd71bb1995e9)

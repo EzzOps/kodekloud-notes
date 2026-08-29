@@ -27,13 +27,9 @@ Assume the interface `enp1s0` manages traffic from the internal network range 10
 sudo iptables -t nat -A PREROUTING -i enp1s0 -s 10.0.0.0/24 -p tcp --dport 8080 -j DNAT --to-destination 192.168.0.5:80
 ```
 
-<Frame>
-  ![The image is a flowchart illustrating the iptables chain, showing the sequence of processing steps like raw, connection tracking, mangle, nat, and filter between a network interface and a local process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881320/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Port-Redirection-and-Network-Address-Translation-NAT/iptables-chain-flowchart-processing-steps.jpg)
-</Frame>
+![The image is a flowchart illustrating the iptables chain, showing the sequence of processing steps like raw, connection tracking, mangle, nat, and filter between a network interface and a local process.](https://kodekloud.com/kk-media/image/upload/v1752881320/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Port-Redirection-and-Network-Address-Translation-NAT/iptables-chain-flowchart-processing-steps.jpg)
 
-<Callout icon="lightbulb">
-  Remember that while these iptables rules are useful for illustrating concepts, you should restrict the rules by specifying interfaces and source IP ranges in production environments to minimize potential abuse.
-</Callout>
+> **lightbulb** Remember that while these iptables rules are useful for illustrating concepts, you should restrict the rules by specifying interfaces and source IP ranges in production environments to minimize potential abuse.
 
 Even if a connection is initiated from an external machine, the packet's source address remains unchanged. As a result, when the internal server replies, it would attempt to send the response directly to the external IP address, which is not reachable from within the internal network.
 
@@ -45,9 +41,7 @@ sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/24 -o enp6s0 -j MASQUERADE
 
 This rule dynamically replaces the source IP with the public IP of the outgoing interface.
 
-<Frame>
-  ![The image illustrates a network diagram showing port redirection from an external network (10.0.0.0/24) through port 8080 to an internal network (192.168.0.1), directing traffic to Server 1 on port 80.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881322/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Port-Redirection-and-Network-Address-Translation-NAT/network-diagram-port-redirection.jpg)
-</Frame>
+![The image illustrates a network diagram showing port redirection from an external network (10.0.0.0/24) through port 8080 to an internal network (192.168.0.1), directing traffic to Server 1 on port 80.](https://kodekloud.com/kk-media/image/upload/v1752881322/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Port-Redirection-and-Network-Address-Translation-NAT/network-diagram-port-redirection.jpg)
 
 ***
 
@@ -92,9 +86,7 @@ When prompted, confirm the default options to save your rules. For subsequent ru
 sudo netfilter-persistent save
 ```
 
-<Callout icon="triangle-alert">
-  Avoid unrestricted forwarding. Always restrict rules to specific interfaces and IP ranges to prevent unauthorized use of your network setup.
-</Callout>
+> **triangle-alert** Avoid unrestricted forwarding. Always restrict rules to specific interfaces and IP ranges to prevent unauthorized use of your network setup.
 
 ***
 
@@ -136,9 +128,7 @@ Below is a table summarizing some useful commands for configuring port redirecti
 
 This lesson provided an overview of port redirection and NAT, including both underlying principles and practical configuration using iptables (with a glimpse at nftables). In the next lesson, we will explore advanced networking configurations to further enhance your network’s efficiency and security.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/975636ae-2572-4d22-899b-e4890128d9a4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/975636ae-2572-4d22-899b-e4890128d9a4)
 
 
 # Set and Synchronize System Time Using Time Servers
@@ -151,17 +141,13 @@ Accurate timekeeping is critical for server operations. Hardware clocks in compu
 
 Most modern operating systems include time synchronization software by default. In Ubuntu, the default utility is systemd-timesyncd, which is part of the systemd suite.
 
-<Frame>
-  ![The image illustrates the concept of setting and synchronizing system time using time servers, highlighting the role of Network Time Protocol (NTP) in ensuring accurate clocks for servers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881323/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Set-and-Synchronize-System-Time-Using-Time-Servers/ntp-system-time-synchronization-illustration.jpg)
-</Frame>
+![The image illustrates the concept of setting and synchronizing system time using time servers, highlighting the role of Network Time Protocol (NTP) in ensuring accurate clocks for servers.](https://kodekloud.com/kk-media/image/upload/v1752881323/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Set-and-Synchronize-System-Time-Using-Time-Servers/ntp-system-time-synchronization-illustration.jpg)
 
 ## Configure Time Zone Settings
 
 In addition to time synchronization, it is important to correctly set the time zone. Incorrect time zones can lead to confusion, especially when managing logs from servers located in different regions. For example, when it is 1:47 in Germany, it is 7:47 in Singapore. It is advisable to set your server’s time zone to your local zone or to that of your company’s main office.
 
-<Frame>
-  ![The image compares time synchronization methods in modern operating systems, highlighting Windows and Ubuntu's use of system utilities like "Systemd-timesyncd."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881324/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Set-and-Synchronize-System-Time-Using-Time-Servers/time-synchronization-windows-ubuntu.jpg)
-</Frame>
+![The image compares time synchronization methods in modern operating systems, highlighting Windows and Ubuntu's use of system utilities like "Systemd-timesyncd."](https://kodekloud.com/kk-media/image/upload/v1752881324/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Set-and-Synchronize-System-Time-Using-Time-Servers/time-synchronization-windows-ubuntu.jpg)
 
 Time-related operations can be managed using the `timedatectl` utility. To view the list of available time zones, run:
 
@@ -278,13 +264,9 @@ May 22 17:24:25 kodekloud systemd-timesyncd[809]: Contacted time server 91.189.9
 May 22 17:24:25 kodekloud systemd-timesyncd[809]: Initial clock synchronization to Thu 2024-05-23 00:2...
 ```
 
-<Frame>
-  ![The image illustrates the synchronization of system time using time servers in different locations, specifically Germany and Singapore, highlighting time zone differences and adjustments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881325/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Set-and-Synchronize-System-Time-Using-Time-Servers/time-synchronization-germany-singapore.jpg)
-</Frame>
+![The image illustrates the synchronization of system time using time servers in different locations, specifically Germany and Singapore, highlighting time zone differences and adjustments.](https://kodekloud.com/kk-media/image/upload/v1752881325/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Set-and-Synchronize-System-Time-Using-Time-Servers/time-synchronization-germany-singapore.jpg)
 
-<Callout icon="lightbulb">
-  Use tab completion in your terminal by typing `timedatectl ` and then pressing tab twice to explore additional commands such as `show-timesync` and `timesync-status`.
-</Callout>
+> **lightbulb** Use tab completion in your terminal by typing `timedatectl ` and then pressing tab twice to explore additional commands such as `show-timesync` and `timesync-status`.
 
 ## Configure Custom NTP Servers
 
@@ -361,9 +343,7 @@ jeremy@kodekloud:~$ timedatectl timesync-status
 jeremy@kodekloud:~$
 ```
 
-<Callout icon="triangle-alert">
-  Ensure that your network configuration allows NTP traffic. If synchronization fails, check your firewall and network settings.
-</Callout>
+> **triangle-alert** Ensure that your network configuration allows NTP traffic. If synchronization fails, check your firewall and network settings.
 
 ## Conclusion
 
@@ -371,6 +351,4 @@ This guide covered how to configure both the time zone and NTP synchronization o
 
 See you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/46c64e6e-5833-4e4f-b749-08f41f9a9f85" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/46c64e6e-5833-4e4f-b749-08f41f9a9f85)

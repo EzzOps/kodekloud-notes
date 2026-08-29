@@ -29,9 +29,7 @@ Consider a scenario where a SQL Server hosts four databases with both server-lev
 3. **Access Denial**\
    If the client's IP address does not match any rule at either level, the connection is rejected to ensure unauthorized users cannot access the data.
 
-<Callout icon="lightbulb">
-  Using both server- and database-level firewall rules allows organizations to balance between accessibility and strict security controls, ensuring only authorized clients have access.
-</Callout>
+> **lightbulb** Using both server- and database-level firewall rules allows organizations to balance between accessibility and strict security controls, ensuring only authorized clients have access.
 
 ## Configuring Firewall Rules in Azure Portal
 
@@ -62,9 +60,7 @@ The process for setting up database-level firewall rules involves an initial ser
 1. Configure the specific firewall rule within the database context using T-SQL.
 2. Once the database-level rule is in effect, you can remove the broader server-level rule if necessary to tighten security further.
 
-<Callout icon="lightbulb">
-  Always verify connectivity with a sample query before removing any server-level rules, ensuring that your database-level rules have been correctly enforced.
-</Callout>
+> **lightbulb** Always verify connectivity with a sample query before removing any server-level rules, ensuring that your database-level rules have been correctly enforced.
 
 ## Next Steps
 
@@ -74,6 +70,4 @@ For more detailed information on Azure SQL Database security, visit the [Azure S
 
 Happy securing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d199f126-f1df-43a8-bd3d-68cd689d509d/lesson/6910048b-56ad-4c2f-981f-b09879caa919" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d199f126-f1df-43a8-bd3d-68cd689d509d/lesson/6910048b-56ad-4c2f-981f-b09879caa919)

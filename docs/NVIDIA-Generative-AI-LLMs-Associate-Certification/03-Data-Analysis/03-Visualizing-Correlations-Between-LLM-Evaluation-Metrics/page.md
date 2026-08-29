@@ -45,10 +45,6 @@ Links and references
 * [Correlation and dependence — Wikipedia](https://en.wikipedia.org/wiki/Correlation_and_dependence)
 * [Seaborn heatmap documentation](https://seaborn.pydata.org/generated/seaborn.heatmap.html)
 
-<Callout icon="lightbulb">
-  Use a correlation matrix with a heat map to quickly identify redundant or complementary evaluation metrics when comparing LLM performance. Consider clustering or reordering metrics to surface meaningful groups and improve interpretability.
-</Callout>
+> **lightbulb** Use a correlation matrix with a heat map to quickly identify redundant or complementary evaluation metrics when comparing LLM performance. Consider clustering or reordering metrics to surface meaningful groups and improve interpretability.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/b8ad33c7-78ce-4828-a30c-4a8fc01d1781/lesson/d7ab3d6b-f81f-4cd2-9bc6-baeef62ba16a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/b8ad33c7-78ce-4828-a30c-4a8fc01d1781/lesson/d7ab3d6b-f81f-4cd2-9bc6-baeef62ba16a)

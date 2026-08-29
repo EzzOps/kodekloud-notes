@@ -10,9 +10,7 @@
 35 6 * * * root /bin/some_command --some_options
 ```
 
-<Callout icon="lightbulb">
-  When modifying the system-wide cron file, be aware that package updates may overwrite your changes. It is generally safer to add cron jobs using the user's personal cron table.
-</Callout>
+> **lightbulb** When modifying the system-wide cron file, be aware that package updates may overwrite your changes. It is generally safer to add cron jobs using the user's personal cron table.
 
 To edit your personal cron table, run:
 
@@ -137,13 +135,11 @@ anacron: /etc/anacrontab: Unknown named period on line 13, skipping
 
 If no errors are reported, your anacron entries are correctly formatted.
 
-<Callout icon="lightbulb">
-  For more detailed information on anacron, refer to the man pages by running:
+> **lightbulb** For more detailed information on anacron, refer to the man pages by running:
 
   ```bash theme={null}
   $ man 5 anacrontab
   ```
-</Callout>
 
 ***
 
@@ -189,9 +185,7 @@ Here, the first number is the job ID. To inspect a job's details, use the `-c` o
 $ atrm 1
 ```
 
-<Callout icon="lightbulb">
-  For more information on the at utility, refer to the [at documentation](https://linux.die.net/man/1/at).
-</Callout>
+> **lightbulb** For more information on the at utility, refer to the [at documentation](https://linux.die.net/man/1/at).
 
 ***
 
@@ -199,11 +193,9 @@ Each of these tools—cron, anacron, and at—has its unique strengths. Cron exc
 
 By mastering these scheduling utilities, you can automate and manage tasks efficiently on your Linux system, ensuring a more resilient and well-maintained environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/949118d4-a6f4-4db0-a22f-3ba4610fd59d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/949118d4-a6f4-4db0-a22f-3ba4610fd59d)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/742878c9-6670-4182-9615-47af709f2218" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/742878c9-6670-4182-9615-47af709f2218)
 
 
 # Use Scripting to Automate System Maintenance Tasks

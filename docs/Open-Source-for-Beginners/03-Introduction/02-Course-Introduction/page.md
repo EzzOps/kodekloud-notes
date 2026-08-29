@@ -22,9 +22,7 @@ Welcome to KodeKloud’s **Beginning with Open Source**! I’m Harsh Joshi, and 
 * **Experienced Contributors**\
   Reinforce core principles, learn advanced collaboration workflows, and discover emerging trends.
 
-<Callout icon="lightbulb">
-  Basic familiarity with the command line and a code editor will help you get the most out of the labs.
-</Callout>
+> **lightbulb** Basic familiarity with the command line and a code editor will help you get the most out of the labs.
 
 ## Course Structure
 
@@ -39,6 +37,4 @@ Welcome to KodeKloud’s **Beginning with Open Source**! I’m Harsh Joshi, and 
 
 By the end of this course, you’ll be equipped to contribute effectively, lead open source initiatives, and thrive in collaborative software communities. Let’s begin our journey into the world of open source—good luck!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/121c38d9-29cb-4995-83f5-867a9447b3ec/lesson/c862beeb-6009-49b2-91ca-877f9d8594fc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/121c38d9-29cb-4995-83f5-867a9447b3ec/lesson/c862beeb-6009-49b2-91ca-877f9d8594fc)

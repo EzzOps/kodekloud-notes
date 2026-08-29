@@ -33,11 +33,9 @@ argo submit wf.yaml \
 
 By combining `--entrypoint` with `-p` (or `--parameter-file`), you can call any template in your workflow and supply or override any parameter values at submission time.
 
-<Callout icon="warning">
-  Always quote substitutions and parameter values when they include spaces or
+> **warning** Always quote substitutions and parameter values when they include spaces or
   characters that YAML/CLI might interpret (for example, `-p message="Hello,
       world!"`). Unquoted braces or special characters may cause parsing errors.
-</Callout>
 
 Links and references
 
@@ -45,9 +43,7 @@ Links and references
 * [Argo CLI documentation](https://argoproj.github.io/argo-workflows/cli-overview/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/4540622d-951e-489f-a69f-503d1e226dbb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/4540622d-951e-489f-a69f-503d1e226dbb)
 
 
 # Application health
@@ -91,9 +87,7 @@ ArgoCD includes built-in checks for many common Kubernetes resources. The follow
 
 These defaults cover many use cases, but sometimes you need checks tailored to application semantics.
 
-<Callout icon="lightbulb">
-  Custom health Lua scripts run inside ArgoCD and should defensively handle missing fields to avoid runtime errors. Place these customizations in the argocd-cm ConfigMap (in the argocd namespace).
-</Callout>
+> **lightbulb** Custom health Lua scripts run inside ArgoCD and should defensively handle missing fields to avoid runtime errors. Place these customizations in the argocd-cm ConfigMap (in the argocd namespace).
 
 ## Custom health checks with Lua
 
@@ -158,6 +152,4 @@ How this works:
 
 By combining ArgoCD's built-in checks with focused custom Lua health checks, you can build precise, application-aware health assessments that help teams detect and fix configuration problems faster.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/9114675a-4f04-4296-8b66-53397dbe44a1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/9114675a-4f04-4296-8b66-53397dbe44a1)

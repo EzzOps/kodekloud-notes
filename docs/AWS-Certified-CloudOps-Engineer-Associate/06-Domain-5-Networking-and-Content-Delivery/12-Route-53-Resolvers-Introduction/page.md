@@ -8,7 +8,7 @@ Welcome back! In this lesson, we dive into AWS Route 53 resolvers—an essential
 
 Route 53 resolvers manage recursive DNS queries originating from your Virtual Private Clouds (VPCs). This allows resources hosted privately within your VPCs, as well as public resources on the internet, to efficiently resolve domain names. Moreover, you can forward queries to either external or internal DNS servers. For example, if you have an on-premises DNS server handling internal queries, this setup supports a hybrid architecture that seamlessly integrates on-premises networks with AWS-hosted VPCs.
 
-![The image lists key features of Route 53 Resolver, including recursive DNS resolution, DNS forwarding, conditional forwarding, integration with VPCs, and on-premises connectivity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860888/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Resolvers-Introduction/route-53-resolver-features-list.jpg)
+![The image lists key features of Route 53 Resolver, including recursive DNS resolution, DNS forwarding, conditional forwarding, integration with VPCs, and on-premises connectivity.](https://kodekloud.com/kk-media/image/upload/v1752860888/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Resolvers-Introduction/route-53-resolver-features-list.jpg)
 
 ## Types of Route 53 Resolver Endpoints
 
@@ -23,17 +23,17 @@ There are two types of endpoints in Route 53 resolvers: **inbound** and **outbou
 
 An inbound resolver processes DNS queries coming from external networks into your VPC. For instance, when an on-premises DNS forwarder is configured to send queries to an inbound endpoint, Route 53 resolver applies specific rules to handle these queries.
 
-![The image is a diagram showing the flow of data from "External Sources" to "AWS Resolver" labeled as "Inbound."](../../../../images/kodekloud.com/kk-media/image/upload/v1752860890/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Resolvers-Introduction/data-flow-external-sources-aws-resolver.jpg)
+![The image is a diagram showing the flow of data from "External Sources" to "AWS Resolver" labeled as "Inbound."](https://kodekloud.com/kk-media/image/upload/v1752860890/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Resolvers-Introduction/data-flow-external-sources-aws-resolver.jpg)
 
 The following diagram illustrates an inbound endpoint setup within a VPC in the "us-west-1" region. It shows how network traffic from your on-premises environment is directed into your VPC subnets before reaching the resolver managing the defined rules.
 
-![The image is a diagram illustrating an inbound endpoint setup within a VPC in the "us-west-1" region, showing connections from a network to VPC subnets and a resolver with rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860891/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Resolvers-Introduction/inbound-endpoint-vpc-diagram-us-west-1.jpg)
+![The image is a diagram illustrating an inbound endpoint setup within a VPC in the "us-west-1" region, showing connections from a network to VPC subnets and a resolver with rules.](https://kodekloud.com/kk-media/image/upload/v1752860891/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Resolvers-Introduction/inbound-endpoint-vpc-diagram-us-west-1.jpg)
 
 ### Outbound Resolver
 
 In contrast, an outbound resolver manages DNS queries that originate from within your VPC and must be forwarded externally. When a network interface in your VPC triggers a DNS query from an instance, the outbound endpoint ensures the query reaches the appropriate external DNS server that provides authoritative responses.
 
-![The image illustrates an outbound endpoint setup in a VPC within the us-west-1 region, showing DNS forwarding rules for specific domains to other VPCs. It includes components like VPC subnets, availability zones, and a resolver with forwarding rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860892/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Resolvers-Introduction/vpc-outbound-endpoint-setup-dns.jpg)
+![The image illustrates an outbound endpoint setup in a VPC within the us-west-1 region, showing DNS forwarding rules for specific domains to other VPCs. It includes components like VPC subnets, availability zones, and a resolver with forwarding rules.](https://kodekloud.com/kk-media/image/upload/v1752860892/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Resolvers-Introduction/vpc-outbound-endpoint-setup-dns.jpg)
 
 ## DNS Query Forwarding Flow
 
@@ -44,14 +44,14 @@ Let's summarize the flow:
 
 The flowchart below illustrates the process from an on-premises client all the way to the Route 53 resolver endpoints:
 
-![The image is a flowchart illustrating the process of forwarding DNS queries from an on-premise client to Route 53 resolver endpoints, involving a forwarder, inbound endpoint, and Amazon-provided DNS server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860894/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Resolvers-Introduction/dns-query-forwarding-flowchart.jpg)
+![The image is a flowchart illustrating the process of forwarding DNS queries from an on-premise client to Route 53 resolver endpoints, involving a forwarder, inbound endpoint, and Amazon-provided DNS server.](https://kodekloud.com/kk-media/image/upload/v1752860894/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Resolvers-Introduction/dns-query-forwarding-flowchart.jpg)
 
 In a practical scenario, if an instance in your VPC needs to resolve a corporate domain, it contacts the local Amazon DNS server. The outbound endpoint then applies the necessary forwarding rules to redirect the query to the designated external DNS server. This ensures:
 
 * Inbound endpoints serve queries from external networks within AWS.
 * Outbound endpoints forward internal AWS queries to an external authoritative DNS server.
 
-![The image is a diagram illustrating the Route 53 Resolver Endpoint, showing how DNS queries are forwarded from VPCs to an on-premise network. It includes components like a client, name servers, an outbound endpoint, an instance, a resolver, and a forwarder.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860895/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Resolvers-Introduction/route-53-resolver-endpoint-diagram.jpg)
+![The image is a diagram illustrating the Route 53 Resolver Endpoint, showing how DNS queries are forwarded from VPCs to an on-premise network. It includes components like a client, name servers, an outbound endpoint, an instance, a resolver, and a forwarder.](https://kodekloud.com/kk-media/image/upload/v1752860895/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Route-53-Resolvers-Introduction/route-53-resolver-endpoint-diagram.jpg)
 
 > **lightbulb** * The term **"Inbound"** applies to DNS queries originating from external (corporate) networks being resolved within AWS.
   * The term **"Outbound"** applies to DNS queries originating in AWS that require resolution via an external authoritative DNS server.

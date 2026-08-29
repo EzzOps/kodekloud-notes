@@ -56,9 +56,7 @@ A well-structured README:
 5. Maintain Consistent Style\
    Use a uniform tone, formatting rules, and naming conventions throughout your document.
 
-<Callout icon="lightbulb">
-  Link to external resources (e.g., [GitHub Best Practices](https://docs.github.com/en/get-started/quickstart)) for more in-depth explanations.
-</Callout>
+> **lightbulb** Link to external resources (e.g., [GitHub Best Practices](https://docs.github.com/en/get-started/quickstart)) for more in-depth explanations.
 
 ## Common Sections
 
@@ -73,9 +71,7 @@ A well-structured README:
 
 Adding diagrams, screenshots, or flowcharts can dramatically improve comprehension.
 
-<Frame>
-  ![The image is a slide titled "How to Write a ReadMe" with four bullet points: keep it concise, divide into parts, make it visual, and consistent format and style.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882565/notes-assets/images/Open-Source-for-Beginners-How-to-Write-a-README/how-to-write-readme-bullet-points.jpg)
-</Frame>
+![The image is a slide titled "How to Write a ReadMe" with four bullet points: keep it concise, divide into parts, make it visual, and consistent format and style.](https://kodekloud.com/kk-media/image/upload/v1752882565/notes-assets/images/Open-Source-for-Beginners-How-to-Write-a-README/how-to-write-readme-bullet-points.jpg)
 
 ## Choosing a Format
 
@@ -93,6 +89,4 @@ Markdown is the industry standard for READMEs on platforms like [GitHub](https:/
 * [Markdown Guide](https://www.markdownguide.org/)
 * [Open Source Documentation Best Practices](https://opensource.guide/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/767d06e2-2c02-403c-aa37-6e4a5549e6a6/lesson/b5ba394d-ec4f-4724-b1f6-ade1b64096d8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/767d06e2-2c02-403c-aa37-6e4a5549e6a6/lesson/b5ba394d-ec4f-4724-b1f6-ade1b64096d8)

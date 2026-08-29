@@ -30,9 +30,7 @@ Basic `argo` CLI examples
 
 Use the official docs and release notes as your source of truth for manifests, version-specific flags, and recommended production configuration patterns.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/0a13d180-e46e-4316-b4dd-da2c1370cbb6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/0a13d180-e46e-4316-b4dd-da2c1370cbb6)
 
 
 # Introduction to Argo Workflows and Features
@@ -119,9 +117,7 @@ spec:
 * You want UI-based visualization of pipeline execution and per-step logs.
 * You prefer declarative YAML workflow definitions that integrate with GitOps and CI/CD tooling.
 
-<Callout icon="lightbulb">
-  Argo runs natively on Kubernetes, so you'll need a Kubernetes cluster (local or cloud) to run workflows and to use the [Argo Server / UI](https://argoproj.github.io/argo-workflows/) for visualization and control.
-</Callout>
+> **lightbulb** Argo runs natively on Kubernetes, so you'll need a Kubernetes cluster (local or cloud) to run workflows and to use the [Argo Server / UI](https://argoproj.github.io/argo-workflows/) for visualization and control.
 
 ## Links and references
 
@@ -132,6 +128,4 @@ spec:
 
 For hands-on practice, deploy a lightweight Kubernetes cluster (minikube, kind, or a cloud cluster), install Argo Workflows, and try submitting the minimal workflow above.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/4871ca99-4f8b-4d67-8df8-7f0d130d69f9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/4871ca99-4f8b-4d67-8df8-7f0d130d69f9)

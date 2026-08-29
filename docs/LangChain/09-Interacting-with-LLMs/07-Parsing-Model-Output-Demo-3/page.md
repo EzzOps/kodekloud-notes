@@ -105,13 +105,9 @@ Example console output:
 * [LangChain: Output Parsers](https://langchain.readthedocs.io/en/latest/modules/output_parsers.html)
 * [OpenAI Python client](https://platform.openai.com/docs/api-reference)
 
-<Callout icon="lightbulb">
-  Always include the parser's format instructions in the prompt when you want structured output; otherwise the model may return freeform text that fails to parse.
-</Callout>
+> **lightbulb** Always include the parser's format instructions in the prompt when you want structured output; otherwise the model may return freeform text that fails to parse.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/0a72e0ca-6e2c-41db-b741-2a1763894c11" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/0a72e0ca-6e2c-41db-b741-2a1763894c11)
 
 
 # Parsing Model Output Demo 3

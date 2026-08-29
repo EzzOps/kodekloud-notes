@@ -6,9 +6,7 @@ This lesson explores Terragrunt’s iam_role attribute for assuming AWS IAM role
 
 In this lesson, we’ll dive into Terragrunt’s `iam_role` attribute, which tells Terraform to assume an AWS IAM role before executing any commands. Leveraging an IAM role helps enforce least privilege, centralize credential management, and maintain clear audit trails for your infrastructure changes.
 
-<Frame>
-  ![The image illustrates "iam\_role and Related Attributes," featuring icons for Terraform commands and AWS Identity and Access Management (IAM), with a focus on "Purpose."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884274/notes-assets/images/Terragrunt-for-Beginners-iam-role-And-Related-Attributes/iam-role-attributes-terraform-aws.jpg)
-</Frame>
+![The image illustrates "iam\_role and Related Attributes," featuring icons for Terraform commands and AWS Identity and Access Management (IAM), with a focus on "Purpose."](https://kodekloud.com/kk-media/image/upload/v1752884274/notes-assets/images/Terragrunt-for-Beginners-iam-role-And-Related-Attributes/iam-role-attributes-terraform-aws.jpg)
 
 ## Key IAM Role Attributes
 
@@ -19,13 +17,9 @@ In this lesson, we’ll dive into Terragrunt’s `iam_role` attribute, which tel
 | iam\_assume\_role\_duration      | Session duration (in seconds) for the assumed role.                                        | Optional (default: 3600 seconds) |
 | iam\_assume\_role\_session\_name | Custom session name for auditing and logging purposes when assuming the role.              | Optional                         |
 
-<Callout icon="triangle-alert">
-  Be careful when extending the `iam_assume_role_duration`. While longer sessions reduce the frequency of re-authentication, they also increase the window of risk if credentials are compromised.
-</Callout>
+> **triangle-alert** Be careful when extending the `iam_assume_role_duration`. While longer sessions reduce the frequency of re-authentication, they also increase the window of risk if credentials are compromised.
 
-<Frame>
-  ![The image shows a diagram related to "iam\_role and Related Attributes," featuring two attributes: "iam\_assume\_role\_duration" and "iam\_assume\_role\_session\_name," with a section labeled "Considerations" below.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884275/notes-assets/images/Terragrunt-for-Beginners-iam-role-And-Related-Attributes/iam-role-attributes-diagram-considerations.jpg)
-</Frame>
+![The image shows a diagram related to "iam\_role and Related Attributes," featuring two attributes: "iam\_assume\_role\_duration" and "iam\_assume\_role\_session\_name," with a section labeled "Considerations" below.](https://kodekloud.com/kk-media/image/upload/v1752884275/notes-assets/images/Terragrunt-for-Beginners-iam-role-And-Related-Attributes/iam-role-attributes-diagram-considerations.jpg)
 
 ***
 
@@ -110,9 +104,7 @@ aws_vpc.this[0]: Creating...
 Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
 ```
 
-<Callout icon="lightbulb">
-  By specifying `iam_role`, you restrict deployments to users who can assume the designated role—aligning with AWS security best practices for auditable, least-privilege operations.
-</Callout>
+> **lightbulb** By specifying `iam_role`, you restrict deployments to users who can assume the designated role—aligning with AWS security best practices for auditable, least-privilege operations.
 
 ## References
 
@@ -120,6 +112,4 @@ Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
 * [AWS IAM User Guide: AssumeRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use.html)
 * [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/33e40116-98cf-46bd-a576-5cd34d256bea" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/33e40116-98cf-46bd-a576-5cd34d256bea)

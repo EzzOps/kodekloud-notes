@@ -39,9 +39,7 @@ Errors were encountered while processing:
  gimp
 ```
 
-<Callout icon="lightbulb">
-  Using DPKG directly is useful for managing individual `.deb` files, but dependency issues might require additional manual resolution.
-</Callout>
+> **lightbulb** Using DPKG directly is useful for managing individual `.deb` files, but dependency issues might require additional manual resolution.
 
 ## APT
 
@@ -69,9 +67,7 @@ APT relies on software repositories defined in the sources file. The repository 
 
 This information can point to local directories (or even a CD-ROM) as well as to remote sources accessible via HTTP, HTTPS, or FTP.
 
-<Frame>
-  ![The image illustrates the APT package management process, showing the flow from a software repository to APT, then to DPKG, and finally to a computer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881129/notes-assets/images/Learning-Linux-Basics-Course-Labs-DPKG-and-APT/frame_150.jpg)
-</Frame>
+![The image illustrates the APT package management process, showing the flow from a software repository to APT, then to DPKG, and finally to a computer.](https://kodekloud.com/kk-media/image/upload/v1752881129/notes-assets/images/Learning-Linux-Basics-Course-Labs-DPKG-and-APT/frame_150.jpg)
 
 ### Common APT Commands
 
@@ -87,9 +83,7 @@ Below is a table summarizing key APT commands along with their use cases:
 
 Additionally, you can manage your repository sources using `apt edit-sources` or by directly editing the `/etc/apt/sources.list` file with your preferred text editor such as Vim or Nano.
 
-<Callout icon="lightbulb">
-  APT simplifies package management by automatically managing dependencies and providing an intuitive command-line interface. It is an essential tool for maintaining system packages on Debian-based distributions.
-</Callout>
+> **lightbulb** APT simplifies package management by automatically managing dependencies and providing an intuitive command-line interface. It is an essential tool for maintaining system packages on Debian-based distributions.
 
 ## Summary
 
@@ -97,6 +91,4 @@ This article introduced the basics of DPKG and APT for package management in Deb
 
 For further reading, consider reviewing the [Kubernetes Documentation](https://kubernetes.io/docs/) and exploring additional package management best practices.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/7ced7d44-760f-47a8-a9bc-69971bb0ca17/lesson/f2b05a59-4ae6-4bf1-ab77-5e28db99dd83" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/7ced7d44-760f-47a8-a9bc-69971bb0ca17/lesson/f2b05a59-4ae6-4bf1-ab77-5e28db99dd83)

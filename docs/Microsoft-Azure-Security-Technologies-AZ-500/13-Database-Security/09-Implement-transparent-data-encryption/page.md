@@ -25,9 +25,7 @@ TDE provides robust data protection with the following benefits:
 * **Regulatory Compliance:**\
   Implementing TDE helps meet stringent data protection regulations by enforcing industry-standard encryption practices.
 
-<Callout icon="lightbulb">
-  Azure SQL uses a server-level encryption key provided by Microsoft by default. If you opt for customer-managed keys, ensure you configure your server correctly, as reverting to the service-managed key requires a specific setup.
-</Callout>
+> **lightbulb** Azure SQL uses a server-level encryption key provided by Microsoft by default. If you opt for customer-managed keys, ensure you configure your server correctly, as reverting to the service-managed key requires a specific setup.
 
 ## Configuring TDE via the Azure Portal
 
@@ -37,9 +35,7 @@ To verify and review your TDE settings using the Azure Portal, follow these simp
 2. Click on the **Data Encryption** section.
 3. Confirm that TDE is enabled by default to ensure that your database is protected.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface focused on SQL database settings, specifically the "Data Encryption" section, where Transparent Data Encryption is enabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881779/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-transparent-data-encryption/azure-sql-database-data-encryption.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface focused on SQL database settings, specifically the "Data Encryption" section, where Transparent Data Encryption is enabled.](https://kodekloud.com/kk-media/image/upload/v1752881779/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-transparent-data-encryption/azure-sql-database-data-encryption.jpg)
 
 When setting up custom key management, create a user-managed identity. This identity allows your database to securely communicate with Azure Key Vault to retrieve and manage your encryption keys.
 
@@ -47,10 +43,6 @@ When setting up custom key management, create a user-managed identity. This iden
 
 Azure SQL also offers an encryption feature known as Always Encrypted, which protects sensitive data within your application by isolating encryption keys. While this article focuses on TDE, Always Encrypted provides an extra layer of defense and will be discussed in a future guide.
 
-<Callout icon="triangle-alert">
-  Although you can disable TDE, doing so is not recommended as it significantly reduces your database's security posture and may impact regulatory compliance.
-</Callout>
+> **triangle-alert** Although you can disable TDE, doing so is not recommended as it significantly reduces your database's security posture and may impact regulatory compliance.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d199f126-f1df-43a8-bd3d-68cd689d509d/lesson/9fbae17a-f401-4417-8fb0-f02700099e81" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d199f126-f1df-43a8-bd3d-68cd689d509d/lesson/9fbae17a-f401-4417-8fb0-f02700099e81)

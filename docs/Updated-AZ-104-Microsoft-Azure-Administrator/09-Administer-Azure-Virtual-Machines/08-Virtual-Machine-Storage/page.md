@@ -14,9 +14,7 @@ The OS disk acts as the primary storage device where the operating system reside
 
 The temporary disk is located on the host machine and provides storage for ephemeral data, such as swap or page files.
 
-<Callout icon="lightbulb">
-  Data stored on the temporary disk may be lost during maintenance events or when the VM is redeployed, so use it only for data that does not require persistence.
-</Callout>
+> **lightbulb** Data stored on the temporary disk may be lost during maintenance events or when the VM is redeployed, so use it only for data that does not require persistence.
 
 ## Data Disks
 
@@ -66,6 +64,4 @@ For additional resources, check out the following links:
 
 Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/34d9af06-fc33-4556-a3f2-2e7a5c5db484/lesson/f41c1fe0-a757-4826-841b-c44b6ae25b13" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/34d9af06-fc33-4556-a3f2-2e7a5c5db484/lesson/f41c1fe0-a757-4826-841b-c44b6ae25b13)

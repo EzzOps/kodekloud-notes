@@ -6,9 +6,7 @@ This article discusses troubleshooting network policy issues in Kubernetes names
 
 In this article, we troubleshoot network policy issues across two Kubernetes namespaces—"qa-test" and "staging". Both namespaces deploy the same applications with identical network policies. In our expected design, the frontend application should only communicate with the API, and the API should solely interact with the database. No other connections (for example, from the frontend directly to the database or API to frontend) should be allowed.
 
-<Frame>
-  ![The image shows two flow diagrams labeled "qa-test" and "staging," each depicting a sequence of components: DB, API, and Frontend, with arrows indicating data flow. The "qa-test" diagram includes additional red arrows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880444/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Unreachable-Pods-Leaky-Network-Policies/qa-test-staging-flow-diagrams.jpg)
-</Frame>
+![The image shows two flow diagrams labeled "qa-test" and "staging," each depicting a sequence of components: DB, API, and Frontend, with arrows indicating data flow. The "qa-test" diagram includes additional red arrows.](https://kodekloud.com/kk-media/image/upload/v1752880444/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Unreachable-Pods-Leaky-Network-Policies/qa-test-staging-flow-diagrams.jpg)
 
 However, the observed behavior deviates from this design. Unintended connections occur—such as the frontend directly connecting to the database—while some legitimate connections (like those between pods in the staging namespace) are failing. Let’s dive in and troubleshoot these discrepancies.
 
@@ -313,14 +311,10 @@ Key takeaways from this troubleshooting exercise include:
 !!! note "Reminder"
 Always test your network policies after applying changes by simulating both allowed and disallowed traffic. This ensures that the intended security boundaries are effectively enforced.
 
-<Frame>
-  ![The image is a recap of network policies, highlighting three points: "AND vs OR," "NetworkPolicies are additive," and "Be mindful of default behaviors."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880445/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Unreachable-Pods-Leaky-Network-Policies/network-policies-recap-and-or.jpg)
-</Frame>
+![The image is a recap of network policies, highlighting three points: "AND vs OR," "NetworkPolicies are additive," and "Be mindful of default behaviors."](https://kodekloud.com/kk-media/image/upload/v1752880445/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Unreachable-Pods-Leaky-Network-Policies/network-policies-recap-and-or.jpg)
 
 This article walked you through troubleshooting and refining network policies to ensure that only authorized connections occur between your Kubernetes namespaces. For further reading, explore [Kubernetes Documentation](https://kubernetes.io/docs/), which provides additional insights on concepts such as network policies and best practices in securing your clusters.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/0d7bf96c-d49c-452c-9816-8bd1c4c49207" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/0d7bf96c-d49c-452c-9816-8bd1c4c49207)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/3d4c9842-ef89-4e4f-bebd-d19bde3b0ef9" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/3d4c9842-ef89-4e4f-bebd-d19bde3b0ef9)

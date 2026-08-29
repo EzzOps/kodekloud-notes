@@ -12,7 +12,7 @@ In this lesson, we will delve into each of the 12 factors, explaining the concep
 
 > **lightbulb** Whether you're a developer, architect, or DevOps engineer, this lesson is designed to equip you with the essential knowledge and tools to build modern, cloud-native applications.
 
-![A person in a KodeKloud shirt standing beside a stylized diagram representing cloud-native architecture.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856822/notes-assets/images/12-Factor-App-Introduction/frame_40.jpg)
+![A person in a KodeKloud shirt standing beside a stylized diagram representing cloud-native architecture.](https://kodekloud.com/kk-media/image/upload/v1752856822/notes-assets/images/12-Factor-App-Introduction/frame_40.jpg)
 
 If you're ready to dive in and explore these principles further, let's get started on building applications that are not only efficient but also future-proof.
 

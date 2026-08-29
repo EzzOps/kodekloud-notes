@@ -82,9 +82,7 @@ For those who prefer the command line, create a service account named "mikesa" b
 PS C:\Users\mike> oc create serviceaccount mikesa
 ```
 
-<Callout icon="lightbulb">
-  If no namespace is specified, the service account will be created in the default namespace.
-</Callout>
+> **lightbulb** If no namespace is specified, the service account will be created in the default namespace.
 
 After creation, verify the existence of the service account by listing service accounts in the specified namespace.
 
@@ -155,9 +153,7 @@ To grant the "admin" role to the "testroles" group, perform the following steps 
 
 After completing these steps, all members of the "testroles" group, including the "tester", will have admin permissions for the designated namespace.
 
-<Callout icon="lightbulb">
-  A detailed discussion on roles, role bindings, cluster roles, and cluster role bindings is available in subsequent lessons.
-</Callout>
+> **lightbulb** A detailed discussion on roles, role bindings, cluster roles, and cluster role bindings is available in subsequent lessons.
 
 ***
 
@@ -171,6 +167,4 @@ This concludes our demonstration of user management in OpenShift. In this lesson
 
 For further details on these topics, explore the [OpenShift Documentation](https://docs.openshift.com/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/bc94c571-46ba-4880-a6a0-3e1766194e1a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/bc94c571-46ba-4880-a6a0-3e1766194e1a)

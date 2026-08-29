@@ -11,13 +11,9 @@ TuneD profiles cater to two main use cases:
 * **Power-saving profiles:** These adjust system settings to reduce energy consumption, for example by disabling inactive devices or enabling low-power hardware modes.
 * **Performance-boosting profiles:** These are designed to enhance system performance by reducing storage and network latency or by increasing throughput in environments such as virtualization.
 
-<Frame>
-  ![The image shows a menu from "TuneD" with options for "Power saving profiles" and "Performance-boosting profiles," each accompanied by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883604/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Manage-tuning-profiles/tuned-menu-power-performance-profiles.jpg)
-</Frame>
+![The image shows a menu from "TuneD" with options for "Power saving profiles" and "Performance-boosting profiles," each accompanied by an icon.](https://kodekloud.com/kk-media/image/upload/v1752883604/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Manage-tuning-profiles/tuned-menu-power-performance-profiles.jpg)
 
-<Frame>
-  ![The image shows a selection screen for "TuneD" with three options: "Throughput-performance," "Virtual-guest," and "Balanced," each accompanied by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883605/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Manage-tuning-profiles/tuned-selection-screen-options.jpg)
-</Frame>
+![The image shows a selection screen for "TuneD" with three options: "Throughput-performance," "Virtual-guest," and "Balanced," each accompanied by an icon.](https://kodekloud.com/kk-media/image/upload/v1752883605/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Manage-tuning-profiles/tuned-selection-screen-options.jpg)
 
 By default, TuneD automatically selects a profile based on the system environment. For example:
 
@@ -278,8 +274,6 @@ For further details, refer to the official TuneD documentation and related resou
 
 This guide should help you effectively manage and optimize TuneD profiles to suit your system's unique requirements.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/6ca44908-1b36-463b-b6e7-3ea279761cc8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/6ca44908-1b36-463b-b6e7-3ea279761cc8)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/b648d4c1-5e68-46ba-918b-e49851ecc1f9" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/b648d4c1-5e68-46ba-918b-e49851ecc1f9)

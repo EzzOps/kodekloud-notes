@@ -84,9 +84,7 @@ dependencies:
 
 When you install this umbrella chart, Helm typically renders and installs both the parent chart and its dependency into the same target namespace. That causes components representing different logical packages to live together in one namespace, which breaks common best practices for isolation and lifecycle management.
 
-<Callout icon="lightbulb">
-  Umbrella charts make dependency installation easy, but they do not provide built-in, declarative control over installing dependencies into separate namespaces. That often forces operators to adopt additional conventions or tooling to achieve proper isolation.
-</Callout>
+> **lightbulb** Umbrella charts make dependency installation easy, but they do not provide built-in, declarative control over installing dependencies into separate namespaces. That often forces operators to adopt additional conventions or tooling to achieve proper isolation.
 
 Current package management pain points
 
@@ -113,6 +111,4 @@ Links and references
 
 Keywords: Kubernetes package management, Helm umbrella charts, CRDs, GitOps, namespace isolation, secrets injection, package lifecycle, Argo CD.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/60afaf37-3ea5-4474-b262-dc8c13c3afd4/lesson/7d89da6a-302b-4975-a9d2-072d4a7db409" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/60afaf37-3ea5-4474-b262-dc8c13c3afd4/lesson/7d89da6a-302b-4975-a9d2-072d4a7db409)

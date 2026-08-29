@@ -14,9 +14,7 @@ Below is a detailed explanation of each section:
 
 The schema element specifies the location of the JSON schema that defines the version of the template language. Think of it as the grammar guide for your template—it ensures that your template adheres to the correct format. The schema you choose depends on the deployment scope (tenant, management groups, or subscriptions). Every ARM template requires a schema.
 
-<Callout icon="lightbulb">
-  The ARM template schema acts as the blueprint for the template structure, ensuring standardized deployments.
-</Callout>
+> **lightbulb** The ARM template schema acts as the blueprint for the template structure, ensuring standardized deployments.
 
 ***
 
@@ -24,9 +22,7 @@ The schema element specifies the location of the JSON schema that defines the ve
 
 The content version is used to version the template itself, with the default value being "1.0.0.0". As you update your template, especially when using source control systems like GitHub, you can adjust this versioning to reflect minor or major changes. For example, a minor change could update the version to "1.0.0.1" while a major update might change it significantly.
 
-<Frame>
-  ![ARM Template Versioning](../../../../images/kodekloud.com/kk-media/image/upload/v1752884362/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-ARM-template-structure/frame_120.jpg)
-</Frame>
+![ARM Template Versioning](https://kodekloud.com/kk-media/image/upload/v1752884362/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-ARM-template-structure/frame_120.jpg)
 
 ***
 
@@ -34,21 +30,13 @@ The content version is used to version the template itself, with the default val
 
 Parameters add flexibility to your template by allowing you to supply deployment-time values. They promote reusability and enable users to pass different values without modifying the entire template. Consider a parameter for location that accepts only predefined values like "East US" or "West US", with a default set to "East US". Metadata such as a description can also be provided to help clarify the purpose of the parameter.
 
-<Frame>
-  ![Parameters Explanation](../../../../images/kodekloud.com/kk-media/image/upload/v1752884363/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-ARM-template-structure/frame_140.jpg)
-</Frame>
+![Parameters Explanation](https://kodekloud.com/kk-media/image/upload/v1752884363/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-ARM-template-structure/frame_140.jpg)
 
-<Frame>
-  ![Allowed Values](../../../../images/kodekloud.com/kk-media/image/upload/v1752884364/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-ARM-template-structure/frame_160.jpg)
-</Frame>
+![Allowed Values](https://kodekloud.com/kk-media/image/upload/v1752884364/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-ARM-template-structure/frame_160.jpg)
 
-<Frame>
-  ![Default Value](../../../../images/kodekloud.com/kk-media/image/upload/v1752884365/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-ARM-template-structure/frame_170.jpg)
-</Frame>
+![Default Value](https://kodekloud.com/kk-media/image/upload/v1752884365/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-ARM-template-structure/frame_170.jpg)
 
-<Frame>
-  ![Parameter Metadata](../../../../images/kodekloud.com/kk-media/image/upload/v1752884366/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-ARM-template-structure/frame_180.jpg)
-</Frame>
+![Parameter Metadata](https://kodekloud.com/kk-media/image/upload/v1752884366/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-ARM-template-structure/frame_180.jpg)
 
 ***
 
@@ -68,9 +56,7 @@ Functions in ARM templates allow you to encapsulate and reuse code blocks, reduc
 
 The resources section is the heart of your ARM template, describing the infrastructure to be deployed. For example, when deploying an App Service Plan, you must define the resource name, type (e.g., "Microsoft.Web/serverFarms"), API version, location (which can be dynamic through a parameter), and other properties such as SKU details and tags.
 
-<Callout icon="lightbulb">
-  This section outlines all the components that Azure will create, making it a critical part of your ARM template.
-</Callout>
+> **lightbulb** This section outlines all the components that Azure will create, making it a critical part of your ARM template.
 
 ***
 
@@ -189,8 +175,6 @@ For a more streamlined approach to writing Infrastructure as Code, consider expl
 
 Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/7f421132-242f-4d10-85e5-6673b7307d12/lesson/28b13698-c6a4-4638-a297-e60fb2ab91d5" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/7f421132-242f-4d10-85e5-6673b7307d12/lesson/28b13698-c6a4-4638-a297-e60fb2ab91d5)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/7f421132-242f-4d10-85e5-6673b7307d12/lesson/88f0dbeb-d7e4-4ffc-a67b-e70eff7e2df5" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/7f421132-242f-4d10-85e5-6673b7307d12/lesson/88f0dbeb-d7e4-4ffc-a67b-e70eff7e2df5)

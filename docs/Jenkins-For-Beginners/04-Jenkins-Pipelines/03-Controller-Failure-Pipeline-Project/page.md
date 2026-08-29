@@ -10,9 +10,7 @@ In this article, we explore the impact of a Jenkins controller failure on a Pipe
 
 To simulate a delay during the unit test stage, open your GitHub repository and edit the pipeline script. The goal is to introduce a 60-second pause using a for loop before executing the Maven test command.
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying the status of a "hello-world-pipeline" with several build stages, including "Checkout SCM," "Tool Install," "Echo Version," "Build," and "Unit Test." The pipeline history shows different build attempts with their respective statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879484/notes-assets/images/Jenkins-For-Beginners-Controller-Failure-Pipeline-Project/jenkins-dashboard-hello-world-pipeline.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying the status of a "hello-world-pipeline" with several build stages, including "Checkout SCM," "Tool Install," "Echo Version," "Build," and "Unit Test." The pipeline history shows different build attempts with their respective statuses.](https://kodekloud.com/kk-media/image/upload/v1752879484/notes-assets/images/Jenkins-For-Beginners-Controller-Failure-Pipeline-Project/jenkins-dashboard-hello-world-pipeline.jpg)
 
 Initially, you might attempt to insert the for loop directly into the steps block as shown below:
 
@@ -34,9 +32,7 @@ stage('Unit Test') {
 }
 ```
 
-<Callout icon="triangle-alert">
-  In a Declarative Pipeline, complex Groovy logic (like loops) must be wrapped inside a `script` block. Failing to do so will cause the pipeline to fail.
-</Callout>
+> **triangle-alert** In a Declarative Pipeline, complex Groovy logic (like loops) must be wrapped inside a `script` block. Failing to do so will cause the pipeline to fail.
 
 The corrected version of the pipeline stage places the for loop within a `script` block:
 
@@ -86,9 +82,7 @@ With the revised pipeline in place, start a new build. As the unit test stage ru
 
 2. Open a terminal connected to your Jenkins controller and execute the commands to stop the Jenkins service:
 
-<Frame>
-  ![The image shows a Visual Studio Code window with an open terminal connected via SSH to a remote server named "jenkins-controller-1." The terminal prompt is ready for input.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879485/notes-assets/images/Jenkins-For-Beginners-Controller-Failure-Pipeline-Project/vscode-ssh-terminal-jenkins-controller.jpg)
-</Frame>
+![The image shows a Visual Studio Code window with an open terminal connected via SSH to a remote server named "jenkins-controller-1." The terminal prompt is ready for input.](https://kodekloud.com/kk-media/image/upload/v1752879485/notes-assets/images/Jenkins-For-Beginners-Controller-Failure-Pipeline-Project/vscode-ssh-terminal-jenkins-controller.jpg)
 
 ```bash theme={null}
 systemctl stop jenkins
@@ -119,9 +113,7 @@ systemctl restart jenkins
 
 Once Jenkins is back online, refresh the Jenkins UI and log in again.
 
-<Frame>
-  ![The image shows a Jenkins dashboard with the "Console Output" section open for a pipeline job. The interface displays various options like "Edit Build Information," "Pipeline Overview," and "Replay."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879486/notes-assets/images/Jenkins-For-Beginners-Controller-Failure-Pipeline-Project/jenkins-dashboard-console-output-pipeline.jpg)
-</Frame>
+![The image shows a Jenkins dashboard with the "Console Output" section open for a pipeline job. The interface displays various options like "Edit Build Information," "Pipeline Overview," and "Replay."](https://kodekloud.com/kk-media/image/upload/v1752879486/notes-assets/images/Jenkins-For-Beginners-Controller-Failure-Pipeline-Project/jenkins-dashboard-console-output-pipeline.jpg)
 
 The pipeline resumes from where it halted, and the output continues:
 
@@ -145,16 +137,10 @@ This behavior demonstrates that, unlike a Freestyle Project—which terminates u
 
 It is important to note that the resume behavior of your pipeline is configurable. Within the pipeline configuration settings, you can choose whether the job should resume after a controller restart. Disabling this feature causes the job to fail immediately upon a restart instead of resuming.
 
-<Callout icon="lightbulb">
-  Review your pipeline configuration settings in Jenkins to ensure the desired resume behavior is enabled or disabled based on your project requirements.
-</Callout>
+> **lightbulb** Review your pipeline configuration settings in Jenkins to ensure the desired resume behavior is enabled or disabled based on your project requirements.
 
-<Frame>
-  ![The image shows a Jenkins configuration page for a pipeline project, with various options like discarding old builds and GitHub project settings. There are buttons for saving and applying changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879487/notes-assets/images/Jenkins-For-Beginners-Controller-Failure-Pipeline-Project/jenkins-pipeline-configuration-page.jpg)
-</Frame>
+![The image shows a Jenkins configuration page for a pipeline project, with various options like discarding old builds and GitHub project settings. There are buttons for saving and applying changes.](https://kodekloud.com/kk-media/image/upload/v1752879487/notes-assets/images/Jenkins-For-Beginners-Controller-Failure-Pipeline-Project/jenkins-pipeline-configuration-page.jpg)
 
 Thank you for reading this article. Enjoy exploring the resilience of Jenkins Pipeline Projects in handling controller failures.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/b4f582ef-4bf9-4cb9-8a31-6d580a94000c/lesson/c857088a-4f90-45a5-8036-00bb991e3339" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/b4f582ef-4bf9-4cb9-8a31-6d580a94000c/lesson/c857088a-4f90-45a5-8036-00bb991e3339)

@@ -60,9 +60,7 @@ With the history included, the model can respond in context:
 AIMessage(content='Other types of triangles include equilateral (all sides equal), isosceles (two sides equal), and scalene (no sides equal).', response_metadata={...}, id='run-ed7687bf-...')
 ```
 
-<Callout icon="lightbulb">
-  The `variable_name` you assign to `MessagesPlaceholder` (for example, `"history"`) is the key you must use when passing the list to `invoke`. The name can be anything, but the invocation dictionary key must match the placeholder's `variable_name`.
-</Callout>
+> **lightbulb** The `variable_name` you assign to `MessagesPlaceholder` (for example, `"history"`) is the key you must use when passing the list to `invoke`. The name can be anything, but the invocation dictionary key must match the placeholder's `variable_name`.
 
 ## Quick reference
 
@@ -87,9 +85,7 @@ AIMessage(content='Other types of triangles include equilateral (all sides equal
 
 Experiment: try changing the contents of `history`, the `ability` parameter, or the user `input` to observe how the model's responses change when conversation history is included.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/abd1e527-3f6e-4e04-b421-3b1f8de5c69d/lesson/2b05e60c-8398-432c-8215-1bb3a9e64cb5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/abd1e527-3f6e-4e04-b421-3b1f8de5c69d/lesson/2b05e60c-8398-432c-8215-1bb3a9e64cb5)
 
 
 # Exploring Configurable Parameters

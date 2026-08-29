@@ -66,9 +66,7 @@ Other important concepts
   <img alt="A dark-themed presentation slide titled &#x22;Other Important Concepts&#x22; listing items like Context, Format, Agent Discovery on the left and Transport and Authentication on the right. The items are shown as horizontal rounded boxes with teal accent bars." />
 </Frame>
 
-<Callout icon="warning">
-  Security reminder: always authenticate and encrypt agent endpoints. Exposing discovery endpoints without proper authentication or TLS can leak capabilities and create attack surfaces.
-</Callout>
+> **warning** Security reminder: always authenticate and encrypt agent endpoints. Exposing discovery endpoints without proper authentication or TLS can leak capabilities and create attack surfaces.
 
 References
 
@@ -77,9 +75,7 @@ References
 * JSON-RPC 2.0: [https://www.jsonrpc.org/specification](https://www.jsonrpc.org/specification)
 * OAuth 2.0: [https://oauth.net/2/](https://oauth.net/2/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/0bf2ea88-d093-4254-94ba-f063c806baec" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/0bf2ea88-d093-4254-94ba-f063c806baec)
 
 
 # KAgent Architecture
@@ -169,9 +165,7 @@ kagent-ui (Dashboard)
   <img alt="A dark-themed diagram titled &#x22;Component Details&#x22; with labeled boxes for Controller, App/Engine, CLI, and Dashboard (UI). Below, a &#x22;kagent Dashboard&#x22; feeds into a &#x22;Web Interface&#x22; that branches to &#x22;Manage&#x22; and &#x22;Work&#x22; boxes next to a small robot icon." />
 </Frame>
 
-<Callout icon="lightbulb">
-  KAgent’s ADK foundation standardizes how agents, tools, and context are modeled. This interoperability allows you to run any ADK-compliant agent on KAgent with minimal adaptation — accelerating reuse across environments.
-</Callout>
+> **lightbulb** KAgent’s ADK foundation standardizes how agents, tools, and context are modeled. This interoperability allows you to run any ADK-compliant agent on KAgent with minimal adaptation — accelerating reuse across environments.
 
 Component summary table
 
@@ -198,6 +192,4 @@ Links and references
 * [Prometheus course](https://learn.kodekloud.com/user/courses/aiops-foundations-intelligent-monitoring-with-prometheus-grafana)
 * [kgateway course](https://learn.kodekloud.com/user/courses/kgateway)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/89058a9e-1b22-418a-8ee0-3d34b6405c69" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/89058a9e-1b22-418a-8ee0-3d34b6405c69)

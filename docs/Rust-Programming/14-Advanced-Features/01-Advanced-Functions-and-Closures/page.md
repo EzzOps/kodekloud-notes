@@ -12,9 +12,7 @@ Often, you might find the need to pass a function as an argument in your code. I
 
 Consider a common scenario: you have a function that calculates the square of a number and another function that applies an operation three times to a given value. With function pointers, you can seamlessly pass the square function as an argument to the other function, avoiding repetitive code.
 
-<Frame>
-  ![The image is a slide titled "Function Pointers – Using Functions as Arguments," explaining that in Rust, closures and regular functions can be passed to other functions using function pointers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883746/notes-assets/images/Rust-Programming-Advanced-Functions-and-Closures/function-pointers-rust-closures.jpg)
-</Frame>
+![The image is a slide titled "Function Pointers – Using Functions as Arguments," explaining that in Rust, closures and regular functions can be passed to other functions using function pointers.](https://kodekloud.com/kk-media/image/upload/v1752883746/notes-assets/images/Rust-Programming-Advanced-Functions-and-Closures/function-pointers-rust-closures.jpg)
 
 Below is an example of how this works in Rust:
 
@@ -35,9 +33,7 @@ fn main() {
 
 In this example, the `square` function returns the square of a number. The `apply_three_times` function accepts a function pointer `f` (which takes an `i32` and returns an `i32`) along with a value, applies `f` to that value three times, and then sums the results. Calling `apply_three_times(square, 2)` computes the square of 2 (i.e., 4) three times and sums them up, resulting in 12.
 
-<Callout icon="lightbulb">
-  Choosing function pointers is a great way to avoid code duplication when the same functionality is needed in multiple contexts.
-</Callout>
+> **lightbulb** Choosing function pointers is a great way to avoid code duplication when the same functionality is needed in multiple contexts.
 
 ## Closures Versus Functions
 
@@ -83,9 +79,7 @@ Both approaches produce an identical output:
 ["Number: 1", "Number: 2", "Number: 3"]
 ```
 
-<Callout icon="lightbulb">
-  When deciding between closures and regular functions, opt for closures if the transformation is simple and used only once. Use regular functions to promote code reuse and enhance maintainability.
-</Callout>
+> **lightbulb** When deciding between closures and regular functions, opt for closures if the transformation is simple and used only once. Use regular functions to promote code reuse and enhance maintainability.
 
 ## Key Takeaways
 
@@ -98,6 +92,4 @@ This advanced understanding of Rust's functional programming capabilities will e
 
 For more details on Rust's programming patterns and best practices, visit the [Rust Documentation](https://doc.rust-lang.org/book/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/bff86fa1-7afc-44e5-b0ac-00b8be577bf8/lesson/0a4897e2-c6f8-4bc8-81ce-5dfe6a8075ef" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/bff86fa1-7afc-44e5-b0ac-00b8be577bf8/lesson/0a4897e2-c6f8-4bc8-81ce-5dfe6a8075ef)

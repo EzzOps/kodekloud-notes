@@ -6,9 +6,7 @@ Using Kyverno podSecurity exclude to create narrow, image-scoped exemptions for 
 
 Previously, Alex applied Pod Security Standards (PSS) cluster-wide using the `podSecurity` sub-rule in Kyverno. This lesson shows how to create narrow, controlled exemptions when a small number of trusted workloads legitimately require settings that would otherwise violate the profile.
 
-<Callout icon="lightbulb">
-  This lesson explains how to use the `exclude` list inside `podSecurity` to create safe, scoped exemptions for Pod Security Standard (PSS) controls.
-</Callout>
+> **lightbulb** This lesson explains how to use the `exclude` list inside `podSecurity` to create safe, scoped exemptions for Pod Security Standard (PSS) controls.
 
 Real-world teams often need to allow a limited exception without disabling an entire policy. For example:
 
@@ -150,9 +148,7 @@ podSecurity:
 * The second `Seccomp` entry, with an `images` list, covers per-container checks.
 * Together they fully exempt Seccomp for the specified images.
 
-<Callout icon="warning">
-  Do not use `exclude` to broadly relax cluster security. Scope exemptions tightly (by control and by image) and document why each exemption exists to reduce attack surface and aid future audits.
-</Callout>
+> **warning** Do not use `exclude` to broadly relax cluster security. Scope exemptions tightly (by control and by image) and document why each exemption exists to reduce attack surface and aid future audits.
 
 Summary
 
@@ -173,8 +169,6 @@ References and further reading
 * Pod Security Standards (Kubernetes): [https://kubernetes.io/docs/concepts/security/pod-security-standards/](https://kubernetes.io/docs/concepts/security/pod-security-standards/)
 * Pod Security Admission docs: [https://kubernetes.io/docs/concepts/security/pod-security-admission/](https://kubernetes.io/docs/concepts/security/pod-security-admission/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/997aafa4-6eba-439b-98af-0449e98242b0" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/997aafa4-6eba-439b-98af-0449e98242b0)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/9ea19f57-3d60-403f-b0d8-832b5f527276" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/9ea19f57-3d60-403f-b0d8-832b5f527276)

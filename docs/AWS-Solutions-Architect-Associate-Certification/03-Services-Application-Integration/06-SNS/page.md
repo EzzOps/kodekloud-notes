@@ -6,7 +6,7 @@ This article explores AWS SNS and its role in enabling real-time communication f
 
 In this lesson, we explore AWS SNS (Amazon Simple Notification Service) and its role in enabling real-time communication for applications built with distributed architectures. When working in environments with multiple services, backend endpoints, and clients that need to interact, ensuring efficient real-time communication may be challenging. SNS simplifies this process by acting as a managed messaging service that delivers notifications from publishers to subscribers reliably and at scale.
 
-![The image is a diagram explaining the need for Amazon Simple Notification Service (SNS) within AWS Cloud, showing its integration with Lambda, EC2, and EKS, and its ability to send notifications to millions of devices. It highlights SNS as efficient, reliable, and scalable.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864744/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNS/amazon-sns-architecture-diagram.jpg)
+![The image is a diagram explaining the need for Amazon Simple Notification Service (SNS) within AWS Cloud, showing its integration with Lambda, EC2, and EKS, and its ability to send notifications to millions of devices. It highlights SNS as efficient, reliable, and scalable.](https://kodekloud.com/kk-media/image/upload/v1752864744/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNS/amazon-sns-architecture-diagram.jpg)
 
 ## Key Components of SNS
 
@@ -35,7 +35,7 @@ Publishers are the entities responsible for sending messages to a topic. They ty
 
 Messages are the units of data transmitted via SNS that include notifications, alerts, or updates. Their structure can be adjusted based on the subscribers' needs, ensuring each component receives information in the appropriate format.
 
-![The image is a diagram illustrating the components of Amazon SNS (Simple Notification Service), showing the flow from publishers like Lambda Function, Amazon EC2, and Amazon EKS to subscribers via Amazon SQS, Lambda Function, and other endpoints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864746/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNS/amazon-sns-components-diagram.jpg)
+![The image is a diagram illustrating the components of Amazon SNS (Simple Notification Service), showing the flow from publishers like Lambda Function, Amazon EC2, and Amazon EKS to subscribers via Amazon SQS, Lambda Function, and other endpoints.](https://kodekloud.com/kk-media/image/upload/v1752864746/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNS/amazon-sns-components-diagram.jpg)
 
 ## Types of Topics
 
@@ -45,13 +45,13 @@ SNS supports two primary types of topics: Standard and FIFO (First-In-First-Out)
 
 Standard topics deliver messages on a best-effort basis. This means that while messages are not guaranteed to be received in the exact order sent, the throughput is nearly unlimited. Standard topics are ideal for high-volume use cases where perfect ordering is not critical and occasional duplicate messages are tolerable.
 
-![The image illustrates the concept of an SNS (Simple Notification Service) Standard Topic, showing a sequence of messages and highlighting advantages like best-effort ordering and maximum throughput. It also depicts various application/subscriber icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864747/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNS/sns-standard-topic-messages-diagram.jpg)
+![The image illustrates the concept of an SNS (Simple Notification Service) Standard Topic, showing a sequence of messages and highlighting advantages like best-effort ordering and maximum throughput. It also depicts various application/subscriber icons.](https://kodekloud.com/kk-media/image/upload/v1752864747/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNS/sns-standard-topic-messages-diagram.jpg)
 
 ### FIFO Topics
 
 FIFO topics ensure strict message ordering and eliminate duplicate message delivery. These topics are essential in scenarios where the sequence of operations is critical, such as transaction logging, stock monitoring, flight tracking, inventory management, or price updates. However, FIFO topics support up to 300 messages per second or 10 megabytes per second per topic, which is lower compared to standard topics.
 
-![The image illustrates the concept of SNS FIFO (First-In-First-Out) Topic, showing a sequence of messages and its advantages, including strict ordering and a capacity of 300 messages per second or 10 MB per second. It also depicts various application/subscriber icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864748/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNS/sns-fifo-topic-messages-diagram.jpg)
+![The image illustrates the concept of SNS FIFO (First-In-First-Out) Topic, showing a sequence of messages and its advantages, including strict ordering and a capacity of 300 messages per second or 10 MB per second. It also depicts various application/subscriber icons.](https://kodekloud.com/kk-media/image/upload/v1752864748/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNS/sns-fifo-topic-messages-diagram.jpg)
 
 ## Additional Considerations
 
@@ -62,7 +62,7 @@ When integrating SNS into your application, keep these best practices in mind:
 
 > **lightbulb** Consider batching events when possible to reduce operational costs and improve system performance.
 
-![The image provides tips and tricks for SNS, highlighting sending 1-10 messages per API request, batching to save costs, and handling 256 KB data or 2 GB S3 links.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864749/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNS/sns-tips-tricks-api-batching.jpg)
+![The image provides tips and tricks for SNS, highlighting sending 1-10 messages per API request, batching to save costs, and handling 256 KB data or 2 GB S3 links.](https://kodekloud.com/kk-media/image/upload/v1752864749/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNS/sns-tips-tricks-api-batching.jpg)
 
 ## Common Use Cases for SNS
 
@@ -74,6 +74,6 @@ SNS is versatile and applies to a variety of use cases, including:
 
 > **lightbulb** For more in-depth details on AWS SNS, refer to the [AWS SNS Documentation](https://aws.amazon.com/sns/).
 
-![The image shows two use cases for SNS: securely encrypting notification message delivery and capturing and fanning out events from over 60 AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864750/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNS/sns-use-cases-encryption-events.jpg)
+![The image shows two use cases for SNS: securely encrypting notification message delivery and capturing and fanning out events from over 60 AWS services.](https://kodekloud.com/kk-media/image/upload/v1752864750/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNS/sns-use-cases-encryption-events.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/2a5c60f6-2d46-4dfe-a2e2-66c7eae45a70/lesson/0759b727-8528-45ce-962d-5d91f08fca29)

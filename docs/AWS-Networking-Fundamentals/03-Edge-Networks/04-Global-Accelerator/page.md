@@ -27,7 +27,7 @@ AWS Global Accelerator solves these issues by assigning your application two sta
 3. A user’s request is routed to the nearest edge location using the anycast IP.
 4. From that edge, traffic travels over the AWS private global network backbone to your endpoint (Application Load Balancer, Network Load Balancer, EC2 instance, or Elastic IP).
 
-![The image illustrates a map showing the AWS Backbone Network with various global locations marked by icons, connected by lines. It is labeled "Global Accelerator" and is copyrighted by KodeKloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863417/notes-assets/images/AWS-Networking-Fundamentals-Global-Accelerator/aws-backbone-network-global-accelerator-map.jpg)
+![The image illustrates a map showing the AWS Backbone Network with various global locations marked by icons, connected by lines. It is labeled "Global Accelerator" and is copyrighted by KodeKloud.](https://kodekloud.com/kk-media/image/upload/v1752863417/notes-assets/images/AWS-Networking-Fundamentals-Global-Accelerator/aws-backbone-network-global-accelerator-map.jpg)
 
 ### Key Benefits
 
@@ -60,7 +60,7 @@ Although both services leverage AWS edge locations, their primary goals differ:
 | Protocol Support     | TCP & UDP                                                      | HTTP, HTTPS, RTMP                              |
 | Typical Workloads    | Gaming, VoIP, financial applications, IoT                      | Websites, video streaming, API acceleration    |
 
-![The image is a summary slide discussing CloudFront for caching data at the edge and a global accelerator for routing users to AWS edge locations for optimized network efficiency.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863418/notes-assets/images/AWS-Networking-Fundamentals-Global-Accelerator/cloudfront-caching-data-optimization-summary.jpg)
+![The image is a summary slide discussing CloudFront for caching data at the edge and a global accelerator for routing users to AWS edge locations for optimized network efficiency.](https://kodekloud.com/kk-media/image/upload/v1752863418/notes-assets/images/AWS-Networking-Fundamentals-Global-Accelerator/cloudfront-caching-data-optimization-summary.jpg)
 
 ## Links and References
 

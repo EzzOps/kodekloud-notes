@@ -6,7 +6,7 @@ This article explains Bash globbing patterns for matching file and directory nam
 
 In earlier lessons, we explored **Bash parameter expansion**—using operators like `#` and `%` (and their double variants `##`/`%%`) to strip prefixes and suffixes from variable values. We even combined these with the wildcard `*` to broaden matches.
 
-![The image is a chart explaining different globbing patterns in programming, showing symbols like #, %, ##, %%, and \* with their respective functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868572/notes-assets/images/Advanced-Bash-Scripting-Overview/globbing-patterns-chart-programming.jpg)
+![The image is a chart explaining different globbing patterns in programming, showing symbols like #, %, ##, %%, and \* with their respective functions.](https://kodekloud.com/kk-media/image/upload/v1752868572/notes-assets/images/Advanced-Bash-Scripting-Overview/globbing-patterns-chart-programming.jpg)
 
 > **lightbulb** Globs (also called wildcards or pathname expansion patterns) differ from parameter expansion. They operate directly on filenames and strings in the shell, not on variable values.
 

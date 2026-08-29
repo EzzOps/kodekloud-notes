@@ -30,7 +30,7 @@ In multi-region deployments, conflicts may occur due to concurrent data modifica
 
 The diagram below provides a visual representation of the Cosmos DB resource hierarchy, beginning at the account level and progressing through databases, containers, items, and server-side functionalities such as stored procedures, triggers, and UDFs.
 
-![The image depicts a resource hierarchy diagram for a cloud service, showing the structure from an account to database, container, and various elements like item, sproc, trigger, UDF, and conflict. It includes references to Azure and a key icon, suggesting a focus on cloud resource management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866432/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Cosmos-DB-Resource-Hierarchy/cloud-resource-hierarchy-diagram.jpg)
+![The image depicts a resource hierarchy diagram for a cloud service, showing the structure from an account to database, container, and various elements like item, sproc, trigger, UDF, and conflict. It includes references to Azure and a key icon, suggesting a focus on cloud resource management.](https://kodekloud.com/kk-media/image/upload/v1752866432/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Cosmos-DB-Resource-Hierarchy/cloud-resource-hierarchy-diagram.jpg)
 
 ## JSON Document Handling in Azure Cosmos DB
 
@@ -38,7 +38,7 @@ Depending on the Cosmos DB API, an item can be represented as a document, row, n
 
 The diagram below highlights the key features of JSON documents utilized by Cosmos DB:
 
-![The image is a diagram explaining JSON documents, highlighting features such as being an open standard document format, language-dependent, made of attribute-value pairs, supporting recursive embedding, embedded arrays, and having a flexible schema.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866433/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Cosmos-DB-Resource-Hierarchy/json-document-features-diagram.jpg)
+![The image is a diagram explaining JSON documents, highlighting features such as being an open standard document format, language-dependent, made of attribute-value pairs, supporting recursive embedding, embedded arrays, and having a flexible schema.](https://kodekloud.com/kk-media/image/upload/v1752866433/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Cosmos-DB-Resource-Hierarchy/json-document-features-diagram.jpg)
 
 Below is a sample JSON document demonstrating the flexible schema capabilities of Azure Cosmos DB:
 

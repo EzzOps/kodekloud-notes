@@ -77,11 +77,11 @@ Default output format [json]:
 
 The following screenshots illustrate the process of creating an IAM user and generating access keys:
 
-![The image shows the AWS IAM console where a user is specifying details to create a new user, including a field for the username and options for providing access to the AWS Management Console.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858091/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK-Demo/aws-iam-console-create-user.jpg)
+![The image shows the AWS IAM console where a user is specifying details to create a new user, including a field for the username and options for providing access to the AWS Management Console.](https://kodekloud.com/kk-media/image/upload/v1752858091/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK-Demo/aws-iam-console-create-user.jpg)
 
-![The image shows an AWS IAM console screen for creating a user, with details like user name, permissions summary, and an option to add tags. The "Create user" button is visible at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858093/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK-Demo/aws-iam-create-user-console.jpg)
+![The image shows an AWS IAM console screen for creating a user, with details like user name, permissions summary, and an option to add tags. The "Create user" button is visible at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752858093/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK-Demo/aws-iam-create-user-console.jpg)
 
-![The image shows an AWS console screen for creating an access key, with options for different use cases like CLI, local code, and third-party services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858095/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK-Demo/aws-console-access-key-creation.jpg)
+![The image shows an AWS console screen for creating an access key, with options for different use cases like CLI, local code, and third-party services.](https://kodekloud.com/kk-media/image/upload/v1752858095/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK-Demo/aws-console-access-key-creation.jpg)
 
 ***
 
@@ -130,13 +130,13 @@ arn:aws:cloudformation:us-east-1:841860927337:stack/CdkStack/b0a6b4c0-6bd7-11ee-
 
 Once the deployment is complete, verify the S3 bucket in the AWS Management Console by refreshing the Buckets page.
 
-![The image shows an Amazon S3 bucket interface with no objects listed, and options to upload or manage files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858096/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK-Demo/amazon-s3-bucket-interface-empty.jpg)
+![The image shows an Amazon S3 bucket interface with no objects listed, and options to upload or manage files.](https://kodekloud.com/kk-media/image/upload/v1752858096/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK-Demo/amazon-s3-bucket-interface-empty.jpg)
 
 Also, inspect the CloudFormation console to ensure the stack was deployed correctly:
 
-![The image shows an AWS CloudFormation console with a list of stacks, their statuses, and creation times. One stack has a "DELETE\_FAILED" status, while others are marked "CREATE\_COMPLETE."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858099/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK-Demo/aws-cloudformation-stacks-statuses.jpg)
+![The image shows an AWS CloudFormation console with a list of stacks, their statuses, and creation times. One stack has a "DELETE\_FAILED" status, while others are marked "CREATE\_COMPLETE."](https://kodekloud.com/kk-media/image/upload/v1752858099/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK-Demo/aws-cloudformation-stacks-statuses.jpg)
 
-![The image shows an AWS CloudFormation console with a stack named "CdkStack" that has completed creation. It lists resources like "My-kodekloud-cdk-bucket" and "CDKMetadata" with a status of "CREATE\_COMPLETE."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858100/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK-Demo/aws-cloudformation-cdkstack-complete.jpg)
+![The image shows an AWS CloudFormation console with a stack named "CdkStack" that has completed creation. It lists resources like "My-kodekloud-cdk-bucket" and "CDKMetadata" with a status of "CREATE\_COMPLETE."](https://kodekloud.com/kk-media/image/upload/v1752858100/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK-Demo/aws-cloudformation-cdkstack-complete.jpg)
 
 ***
 
@@ -177,7 +177,7 @@ CdkStack: destroying... [1/1]
 
 After destruction, confirm in the AWS console that both the CloudFormation stack and the S3 bucket have been removed.
 
-![The image shows an Amazon S3 dashboard with a list of buckets, their regions, access settings, and creation dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858102/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK-Demo/amazon-s3-dashboard-buckets-list.jpg)
+![The image shows an Amazon S3 dashboard with a list of buckets, their regions, access settings, and creation dates.](https://kodekloud.com/kk-media/image/upload/v1752858102/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK-Demo/amazon-s3-dashboard-buckets-list.jpg)
 
 ***
 
@@ -202,7 +202,7 @@ When you build a CDK application, you work with constructs. These constructs are
 
 Moreover, AWS CDK supports a wide range of programming languages, allowing you to choose the one that best aligns with your team's expertise.
 
-![The image is a diagram illustrating the process of using AWS CDK to create CloudFormation templates from a CDK app, which are then deployed to AWS. It shows the flow from constructs in the CDK app to stacks in AWS CloudFormation, with programming languages like TypeScript, JavaScript, Java, .NET, and Python indicated at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858103/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK/aws-cdk-cloudformation-diagram.jpg)
+![The image is a diagram illustrating the process of using AWS CDK to create CloudFormation templates from a CDK app, which are then deployed to AWS. It shows the flow from constructs in the CDK app to stacks in AWS CloudFormation, with programming languages like TypeScript, JavaScript, Java, .NET, and Python indicated at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752858103/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK/aws-cdk-cloudformation-diagram.jpg)
 
 ## Key Features and Benefits
 
@@ -211,13 +211,13 @@ Moreover, AWS CDK supports a wide range of programming languages, allowing you t
 3. **Automated Synthesis**: Automatically generate CloudFormation templates from your application code, ensuring consistency across deployments.
 4. **Environment Agnosticism**: Write your infrastructure code once and deploy it seamlessly across different environments using parameterized configurations.
 
-![The image lists five features: Declarative Approach, Component Reusability, AWS Construct Library, Automated Synthesis, and Environment Agnosticism, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858104/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK/features-declarative-reusability-aws-icons.jpg)
+![The image lists five features: Declarative Approach, Component Reusability, AWS Construct Library, Automated Synthesis, and Environment Agnosticism, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752858104/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK/features-declarative-reusability-aws-icons.jpg)
 
 > **lightbulb** AWS CDK integrates seamlessly with various AWS services, enabling the construction of powerful and automated CI/CD pipelines for efficient infrastructure management.
 
 AWS CDK not only simplifies resource provisioning but also integrates with other AWS services to support comprehensive CI/CD pipelines. For example, you might update your CDK application and commit changes to AWS CodeCommit, triggering a pipeline in [AWS CodePipeline (CI/CD Pipeline)](https://learn.kodekloud.com/user/courses/aws-codepipeline-ci-cd-pipeline). Within this pipeline, tasks such as running `cdk synth` to generate CloudFormation templates, executing unit tests, building artifacts, and ultimately deploying AWS resources are automated.
 
-![The image illustrates a CDK Pipeline workflow using AWS services, including AWS CodeCommit, AWS CodePipeline, AWS CodeBuild, AWS CloudFormation, and a CloudFormation stack with S3, EC2, VPC, and RDS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858105/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK/cdk-pipeline-aws-services-workflow.jpg)
+![The image illustrates a CDK Pipeline workflow using AWS services, including AWS CodeCommit, AWS CodePipeline, AWS CodeBuild, AWS CloudFormation, and a CloudFormation stack with S3, EC2, VPC, and RDS.](https://kodekloud.com/kk-media/image/upload/v1752858105/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK/cdk-pipeline-aws-services-workflow.jpg)
 
 This integrated approach enhances the overall lifecycle management of your infrastructure and maximizes the effectiveness of AWS services in your CI/CD workflows.
 

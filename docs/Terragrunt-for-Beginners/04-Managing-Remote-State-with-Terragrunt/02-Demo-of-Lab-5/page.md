@@ -79,9 +79,7 @@ EOF
 }
 ```
 
-<Callout icon="lightbulb">
-  Ensure your `terragrunt.hcl` includes these `generate` blocks before initializing.
-</Callout>
+> **lightbulb** Ensure your `terragrunt.hcl` includes these `generate` blocks before initializing.
 
 ***
 
@@ -127,9 +125,7 @@ EOF
 }
 ```
 
-<Callout icon="triangle-alert">
-  Never commit your AWS access keys or state files to version control.
-</Callout>
+> **triangle-alert** Never commit your AWS access keys or state files to version control.
 
 ***
 

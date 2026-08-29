@@ -26,9 +26,7 @@ Jenkins supports several core project types (commonly called "jobs") to automate
 | Multi-configuration Project | Run builds across combinations of environment axes                  | Matrix testing across OS/JDK/dependency variants                                  |
 | Organization Folders        | Auto-discover and organize many repositories and their pipelines    | Large organizations managing many repos and teams                                 |
 
-<Callout icon="lightbulb">
-  Some Jenkins installations expose additional project types or UI features via plugins. When auditing or migrating pipelines, list installed plugins to identify available job types and any extended behavior.
-</Callout>
+> **lightbulb** Some Jenkins installations expose additional project types or UI features via plugins. When auditing or migrating pipelines, list installed plugins to identify available job types and any extended behavior.
 
 ## Freestyle Projects (overview and example)
 
@@ -66,9 +64,7 @@ Freestyle jobs are reliable for small tasks but show important limitations for m
   <img alt="A presentation slide titled &#x22;Freestyle Projects - Limitations&#x22; showing five numbered cards with colored icons. The cards list: Limited Workflow; Non-Code-Based Configuration; Complexity Challenges; Limited Functionality; and Cannot Resume After Failure." />
 </Frame>
 
-<Callout icon="warning">
-  Freestyle projects are generally considered legacy for complex CI/CD. For maintainability, reproducibility, and advanced workflow control, prefer `Pipeline` or `Multibranch Pipeline` with a versioned `Jenkinsfile`.
-</Callout>
+> **warning** Freestyle projects are generally considered legacy for complex CI/CD. For maintainability, reproducibility, and advanced workflow control, prefer `Pipeline` or `Multibranch Pipeline` with a versioned `Jenkinsfile`.
 
 ## Recommendation and next steps
 
@@ -82,6 +78,4 @@ Links and references:
 * [Jenkins Multibranch Pipeline](https://www.jenkins.io/doc/book/pipeline/multibranch/)
 * [Jenkins Plugin Index](https://plugins.jenkins.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/06e39454-0936-47cd-8708-c02914ddcfc3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/06e39454-0936-47cd-8708-c02914ddcfc3)

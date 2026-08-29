@@ -20,9 +20,7 @@ By default Argo CD creates a permissive `default` project. AppProjects let you n
 | roles                    | Role-based permissions for users and automation acting on applications in the project.     |
 | syncWindows              | Time windows that allow or block automated syncs for applications in the project.          |
 
-<Callout icon="lightbulb">
-  Create AppProjects for each team or environment to enforce least privilege and reduce the blast radius of potential mistakes or compromise.
-</Callout>
+> **lightbulb** Create AppProjects for each team or environment to enforce least privilege and reduce the blast radius of potential mistakes or compromise.
 
 Inspecting the default project with kubectl:
 
@@ -64,9 +62,7 @@ Explanation of the key fields shown above:
 
 You should tighten these fields to restrict which repos can be used and where apps can be deployed. In addition to the fields above, define fine-grained roles to control user and automation permissions, and configure sync windows to permit or block automated syncs during specific times.
 
-<Callout icon="warning">
-  The default AppProject is permissive (allows all repos, namespaces, and cluster resources). Always create scoped AppProjects for teams and production environments to prevent unauthorized access or accidental changes across clusters.
-</Callout>
+> **warning** The default AppProject is permissive (allows all repos, namespaces, and cluster resources). Always create scoped AppProjects for teams and production environments to prevent unauthorized access or accidental changes across clusters.
 
 Links and references:
 
@@ -76,6 +72,4 @@ Links and references:
 
 Summary: Use AppProjects to enforce repository and deployment boundaries, restrict cluster-scoped resource management, and apply role-based access and sync policies. Properly scoped projects are a core practice for Argo CD multi-tenancy and secure GitOps workflows.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/8cc0543a-c857-4ebb-b47a-fe1e222078b9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/8cc0543a-c857-4ebb-b47a-fe1e222078b9)

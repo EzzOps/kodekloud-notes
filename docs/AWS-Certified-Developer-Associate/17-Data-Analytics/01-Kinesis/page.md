@@ -6,7 +6,7 @@ Amazon Kinesis is a managed service for collecting, processing, and analyzing re
 
 Amazon Kinesis is a fully managed service that simplifies the collection, processing, and analysis of real-time data streams—including both video and textual data. In this lesson, we will explore its capabilities and learn how applications or devices continuously send data into a Kinesis stream. After ingestion, this data can be analyzed, transformed into a more convenient format, or stored in destinations such as Amazon S3.
 
-![The image is a diagram illustrating data flow through Amazon Kinesis, showing data being analyzed, transformed, and stored in S3.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858637/notes-assets/images/AWS-Certified-Developer-Associate-Kinesis/amazon-kinesis-data-flow-diagram.jpg)
+![The image is a diagram illustrating data flow through Amazon Kinesis, showing data being analyzed, transformed, and stored in S3.](https://kodekloud.com/kk-media/image/upload/v1752858637/notes-assets/images/AWS-Certified-Developer-Associate-Kinesis/amazon-kinesis-data-flow-diagram.jpg)
 
 > **lightbulb** Kinesis continuously handles incoming data, ensuring robust log processing and real-time metrics collection without worrying about system failures or data loss.
 
@@ -26,7 +26,7 @@ Amazon Kinesis supports a variety of real-time data processing scenarios:
 4. **IoT Telemetry:**\
    For systems with numerous IoT devices, Kinesis efficiently ingests telemetry data, providing a scalable solution for managing and analyzing a vast array of streaming data.
 
-![The image lists use cases for Kinesis, including log processing, real-time metrics, complex stream processing like Directed Acyclic Graphs (DAGs), and IoT telemetry data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858638/notes-assets/images/AWS-Certified-Developer-Associate-Kinesis/kinesis-use-cases-log-metrics-iot.jpg)
+![The image lists use cases for Kinesis, including log processing, real-time metrics, complex stream processing like Directed Acyclic Graphs (DAGs), and IoT telemetry data.](https://kodekloud.com/kk-media/image/upload/v1752858638/notes-assets/images/AWS-Certified-Developer-Associate-Kinesis/kinesis-use-cases-log-metrics-iot.jpg)
 
 ## Amazon Kinesis Service Variants
 

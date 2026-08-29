@@ -24,9 +24,7 @@ while true; do echo hello; sleep 10; done
 
 Good luck with your preparation — practice with purpose, and make use of the multi‑cluster labs to build confidence across all CKA domains.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/ultimate-certified-kubernetes-administrator-cka-mock-exam-series/module/e88f8a83-f202-45e4-9397-63f104b0e8cf/lesson/140bb955-0d24-49a2-bcb6-af2ed1898dca" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/ultimate-certified-kubernetes-administrator-cka-mock-exam-series/module/e88f8a83-f202-45e4-9397-63f104b0e8cf/lesson/140bb955-0d24-49a2-bcb6-af2ed1898dca)
 
 
 # Course Introduction
@@ -75,9 +73,7 @@ kubectl config use-context cluster1
 
 Practice switching contexts early in the exam so you don’t lose time later.
 
-<Callout icon="lightbulb">
-  The exam environment simulates the real CKAD experience: multiple clusters, time limits, and weighted questions. Practice switching contexts and reading each question’s weightage before you begin.
-</Callout>
+> **lightbulb** The exam environment simulates the real CKAD experience: multiple clusters, time limits, and weighted questions. Practice switching contexts and reading each question’s weightage before you begin.
 
 If a task requires a different cluster, switch to it the same way:
 
@@ -95,9 +91,7 @@ Scoring, submission, and feedback
 * The platform provides solutions and feedback for any questions you answered incorrectly so you can review and learn from mistakes.
 * Minimum passing score for the mock exam is 66%.
 
-<Callout icon="warning">
-  Time management is critical. Review each question’s weight and attempt higher-weight questions first. Remember: the mock exam enforces the same time pressure and cluster context switches as the real CKAD.
-</Callout>
+> **warning** Time management is critical. Review each question’s weight and attempt higher-weight questions first. Remember: the mock exam enforces the same time pressure and cluster context switches as the real CKAD.
 
 Quick checklist before you begin a mock exam
 
@@ -114,6 +108,4 @@ Links and references
 
 That’s all for this lesson. Good luck with your practice — use these mock exams to build speed, accuracy, and familiarity with real-world CKAD scenarios.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/ultimate-certified-kubernetes-application-developer-ckad-mock-exam-series/module/81339e83-64b3-4922-ad99-a5b0a55e1fd8/lesson/33750844-4eb1-4e2b-bec7-a862ee258337" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/ultimate-certified-kubernetes-application-developer-ckad-mock-exam-series/module/81339e83-64b3-4922-ad99-a5b0a55e1fd8/lesson/33750844-4eb1-4e2b-bec7-a862ee258337)

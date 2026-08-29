@@ -16,7 +16,7 @@ For a simpler solution, many cloud platforms such as [Google Cloud Platform (GCP
 
 Below is a diagram that illustrates a cloud-based voting app architecture on Google Cloud Platform. The image shows nodes, pods, deployments, and a load balancer configured to handle the voting and result services:
 
-![The image illustrates a cloud-based voting app architecture using Google Cloud Platform, featuring nodes, pods, deployments, and a load balancer for voting and result services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869744/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Services-Loadbalancer/frame_160.jpg)
+![The image illustrates a cloud-based voting app architecture using Google Cloud Platform, featuring nodes, pods, deployments, and a load balancer for voting and result services.](https://kodekloud.com/kk-media/image/upload/v1752869744/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Services-Loadbalancer/frame_160.jpg)
 
 > **lightbulb** Keep in mind that the LoadBalancer service type only functions as intended on supported cloud environments. In unsupported settings—such as VirtualBox—the LoadBalancer type behaves like NodePort by exposing the service on a high port without providing external load balancing.
 

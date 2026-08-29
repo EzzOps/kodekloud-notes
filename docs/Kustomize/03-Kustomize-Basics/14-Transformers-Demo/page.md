@@ -10,9 +10,7 @@ In this tutorial, you’ll learn how to apply common Kustomize transformers—la
 
 Our project structure separates API and database manifests into their own folders:
 
-<Frame>
-  ![The image shows the Visual Studio Code interface with a project open, displaying a file explorer on the left with YAML files organized under "api" and "db" folders. The main area shows the VS Code logo and some keyboard shortcuts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880927/notes-assets/images/Kustomize-Transformers-Demo/visual-studio-code-yaml-files-explorer.jpg)
-</Frame>
+![The image shows the Visual Studio Code interface with a project open, displaying a file explorer on the left with YAML files organized under "api" and "db" folders. The main area shows the VS Code logo and some keyboard shortcuts.](https://kodekloud.com/kk-media/image/upload/v1752880927/notes-assets/images/Kustomize-Transformers-Demo/visual-studio-code-yaml-files-explorer.jpg)
 
 ```text theme={null}
 k8s/
@@ -204,9 +202,7 @@ images:
     newTag: "4.2"
 ```
 
-<Callout icon="lightbulb">
-  Always quote `newTag` so that it’s parsed as a string by Kustomize.
-</Callout>
+> **lightbulb** Always quote `newTag` so that it’s parsed as a string by Kustomize.
 
 After building, the DB Deployment spec shows:
 
@@ -242,8 +238,6 @@ Next, try these transformers hands-on to see how they simplify your Kubernetes d
 * [Kustomize Transformers Reference](https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/transformers/)
 * [Kubernetes Concepts: Labels and Selectors](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/b54f75b3-9aa9-4c8d-b7e2-3ac6ac185c8c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/b54f75b3-9aa9-4c8d-b7e2-3ac6ac185c8c)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/4d6478a5-0a29-41af-b452-60ef4cbedbaf" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/4d6478a5-0a29-41af-b452-60ef4cbedbaf)

@@ -6,9 +6,7 @@ Explains how to set OpenTelemetry span status to OK or ERROR for HTTP calls, rec
 
 This lesson explains how to set the status code on OpenTelemetry spans to reflect success or failure of operations (for example, outgoing HTTP calls). By default OpenTelemetry leaves a span's status as `UNSET` until your application or instrumentation sets it explicitly. When an application crash occurs, instrumentation often marks the span as `ERROR` automatically. For normal request flows you should explicitly set status to `OK` for success and `ERROR` for handled failures.
 
-<Callout icon="lightbulb">
-  Spans default to `UNSET`. To represent success or failure in traces, explicitly set the span status to `OK` or `ERROR` and record relevant attributes like `http.status_code`.
-</Callout>
+> **lightbulb** Spans default to `UNSET`. To represent success or failure in traces, explicitly set the span status to `OK` or `ERROR` and record relevant attributes like `http.status_code`.
 
 Below is an example trace timeline from Jaeger showing a payment service with a failed request span (image preserved from original content):
 

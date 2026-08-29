@@ -15,16 +15,12 @@ There are four common methods for logging in:
 3. Logging into a remote Linux system using text-mode login.
 4. Logging into a remote Linux system using graphical-mode login.
 
-<Frame>
-  ![The image illustrates four login methods: local text-mode console, remote text-mode login, local graphical-mode console, and remote graphical-mode login. Each method is represented with icons showing a user and a console or graphical interface.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883606/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Access-a-shell-prompt-and-issue-commands-with-correct-syntax/login-methods-icons-illustration.jpg)
-</Frame>
+![The image illustrates four login methods: local text-mode console, remote text-mode login, local graphical-mode console, and remote graphical-mode login. Each method is represented with icons showing a user and a console or graphical interface.](https://kodekloud.com/kk-media/image/upload/v1752883606/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Access-a-shell-prompt-and-issue-commands-with-correct-syntax/login-methods-icons-illustration.jpg)
 
 You'll often come across terms such as console, virtual terminal, and terminal emulator. A console is a display for system messages and commands, whereas a terminal emulator is a graphical application that mimics this behavior within a window.
 
-<Callout icon="lightbulb">
-  • Console: Provides text display and command input.\
+> **lightbulb** • Console: Provides text display and command input.\
   • Terminal Emulator: A graphical application that replicates the console's functionality.
-</Callout>
 
 ## Text-Mode Login Examples
 
@@ -81,9 +77,7 @@ Activate the web console with: systemctl enable --now cockpit.socket
 
 For systems equipped with a GUI, you typically open a terminal emulator to enter your commands. When logging in to a local GUI, you might see a list of user accounts. For example:
 
-<Frame>
-  ![The image shows a CentOS login screen with a list of user accounts, highlighting one named "Aaron." The screen is labeled "Local GUI" and includes the KodeKloud logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883607/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Access-a-shell-prompt-and-issue-commands-with-correct-syntax/centos-login-screen-aaron-kodekloud.jpg)
-</Frame>
+![The image shows a CentOS login screen with a list of user accounts, highlighting one named "Aaron." The screen is labeled "Local GUI" and includes the KodeKloud logo.](https://kodekloud.com/kk-media/image/upload/v1752883607/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Access-a-shell-prompt-and-issue-commands-with-correct-syntax/centos-login-screen-aaron-kodekloud.jpg)
 
 Always remember to log out once your work is complete. For server-oriented Linux systems (those that typically operate without a GUI), you will see a login prompt asking you to enter your username and password manually:
 
@@ -110,23 +104,17 @@ Connecting to a remote server with a graphical interface can vary based on serve
 
 In both cases, you generally open the application, enter the remote system's IP address, provide your login credentials, and connect.
 
-<Frame>
-  ![The image shows a menu with two options for remote GUI access: VNC and RDP.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883608/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Access-a-shell-prompt-and-issue-commands-with-correct-syntax/remote-gui-access-menu-vnc-rdp.jpg)
-</Frame>
+![The image shows a menu with two options for remote GUI access: VNC and RDP.](https://kodekloud.com/kk-media/image/upload/v1752883608/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Access-a-shell-prompt-and-issue-commands-with-correct-syntax/remote-gui-access-menu-vnc-rdp.jpg)
 
 ## Remote Text-Mode Access via SSH
 
 For remote text-based logins, the most widely used tool is the OpenSSH daemon. Unlike Telnet, SSH (Secure Shell) encrypts the communication, ensuring that sensitive data like passwords remains protected during transmission.
 
-<Callout icon="lightbulb">
-  SSH is highly secure and has been proven over many years. Always use SSH for remote text-mode logins to maintain proper security standards.
-</Callout>
+> **lightbulb** SSH is highly secure and has been proven over many years. Always use SSH for remote text-mode logins to maintain proper security standards.
 
 A comparison image below shows that SSH (secured with a green lock) is far more secure than Telnet (which displays a red lock):
 
-<Frame>
-  ![The image compares remote text-mode login methods, showing SSH as secure with a green lock and Telnet as insecure with a red lock.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883609/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Access-a-shell-prompt-and-issue-commands-with-correct-syntax/remote-login-methods-ssh-telnet-comparison.jpg)
-</Frame>
+![The image compares remote text-mode login methods, showing SSH as secure with a green lock and Telnet as insecure with a red lock.](https://kodekloud.com/kk-media/image/upload/v1752883609/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Access-a-shell-prompt-and-issue-commands-with-correct-syntax/remote-login-methods-ssh-telnet-comparison.jpg)
 
 If you are following along on a virtual machine, log in locally and run the following command to check your machine’s IP address. The output highlights an example IP address (192.168.0.17) which you can use to simulate a remote server login:
 
@@ -178,6 +166,4 @@ Once connected, you can perform the exercises in this lesson within your SSH ses
 
 The demonstration above walks you through various login approaches available on Linux systems. Enjoy exploring these methods and happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/c6bffc39-e700-4da2-a971-2f45090276bb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/c6bffc39-e700-4da2-a971-2f45090276bb)

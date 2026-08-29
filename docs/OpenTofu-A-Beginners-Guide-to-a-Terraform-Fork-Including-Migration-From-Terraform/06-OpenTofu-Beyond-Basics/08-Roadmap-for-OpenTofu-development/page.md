@@ -11,10 +11,8 @@ OpenTofu’s development roadmap is maintained on GitHub under **Issues › Mile
 
 Each milestone aligns with a specific version, grouping related issues—bugs, features, and larger initiatives—into one place.
 
-<Callout icon="lightbulb">
-  You can always view the full roadmap on GitHub:\
+> **lightbulb** You can always view the full roadmap on GitHub:\
   [OpenTofu GitHub Milestones](https://github.com/opentofu/opentofu/issues/milestones)
-</Callout>
 
 ## Milestone Structure
 
@@ -41,9 +39,7 @@ OpenTofu thrives on community involvement. You can help by:
 * Opening pull requests with code improvements or documentation updates
 * Suggesting new features directly in the Milestones section
 
-<Callout icon="triangle-alert">
-  Ensure your pull request follows the [OpenTofu CONTRIBUTING guide](https://github.com/opentofu/opentofu/blob/main/CONTRIBUTING.md) and passes all CI checks before submission.
-</Callout>
+> **triangle-alert** Ensure your pull request follows the [OpenTofu CONTRIBUTING guide](https://github.com/opentofu/opentofu/blob/main/CONTRIBUTING.md) and passes all CI checks before submission.
 
 Every contribution—big or small—drives OpenTofu forward. Thank you for helping shape the future of this project!
 
@@ -53,6 +49,4 @@ Every contribution—big or small—drives OpenTofu forward. Thank you for helpi
 * [OpenTofu Contributing Guide](https://github.com/opentofu/opentofu/blob/main/CONTRIBUTING.md)
 * [Terraform State Documentation](https://www.terraform.io/docs/state/index.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/ee803549-505f-4f0e-846c-4c6992441cb3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/ee803549-505f-4f0e-846c-4c6992441cb3)

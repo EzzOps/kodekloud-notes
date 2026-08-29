@@ -10,7 +10,7 @@ In this lesson, we’ll explore how to implement Azure Load Balancer, Traffic Ma
 
 At its core, load balancing distributes network traffic evenly across multiple servers—much like having several checkout lines in a store to avoid long queues. Azure Load Balancer operates at Layer 4 (TCP/UDP) and can manage millions of requests per second.
 
-![The image is an introduction to Azure Load Balancers, showing a diagram of network traffic distribution from a cloud through a load balancer to multiple virtual machines (VMs) on TCP Port 80. It includes a description of load balancing as a technique to enhance application reliability and performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867660/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/azure-load-balancer-diagram-introduction.jpg)
+![The image is an introduction to Azure Load Balancers, showing a diagram of network traffic distribution from a cloud through a load balancer to multiple virtual machines (VMs) on TCP Port 80. It includes a description of load balancing as a technique to enhance application reliability and performance.](https://kodekloud.com/kk-media/image/upload/v1752867660/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/azure-load-balancer-diagram-introduction.jpg)
 
 ### Basic vs. Standard SKU
 
@@ -46,7 +46,7 @@ az network lb create \
   --public-ip-address MyPublicIP
 ```
 
-![The image is a step-by-step guide for configuring an Azure Load Balancer, detailing the process from logging in to reviewing and creating the setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867661/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/azure-load-balancer-configuration-guide.jpg)
+![The image is a step-by-step guide for configuring an Azure Load Balancer, detailing the process from logging in to reviewing and creating the setup.](https://kodekloud.com/kk-media/image/upload/v1752867661/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/azure-load-balancer-configuration-guide.jpg)
 
 ### Front-end and Back-end Pools
 
@@ -54,7 +54,7 @@ az network lb create \
 * **Back-end pool**: Contains VMs or instances that serve the traffic.
 * **Load-balancing rules** map front-end IPs/ports to back-end targets.
 
-![The image is a diagram titled "Configuring Azure Load Balancer," showing two sections: "Frontend Pools" where traffic enters, and "Backend Pools," a group of resources receiving traffic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867662/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/configuring-azure-load-balancer-diagram.jpg)
+![The image is a diagram titled "Configuring Azure Load Balancer," showing two sections: "Frontend Pools" where traffic enters, and "Backend Pools," a group of resources receiving traffic.](https://kodekloud.com/kk-media/image/upload/v1752867662/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/configuring-azure-load-balancer-diagram.jpg)
 
 ### Health Probes
 
@@ -62,7 +62,7 @@ Health probes periodically check each back-end instance. If a probe fails, the i
 
 > **lightbulb** Configure health probes with the correct protocol, port, and interval to ensure only healthy instances receive traffic.
 
-![The image is about configuring an Azure Load Balancer, focusing on health probes to monitor backend resources. It explains that if a probe fails, the load balancer stops sending traffic to the unhealthy instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867663/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/azure-load-balancer-health-probes-config.jpg)
+![The image is about configuring an Azure Load Balancer, focusing on health probes to monitor backend resources. It explains that if a probe fails, the load balancer stops sending traffic to the unhealthy instance.](https://kodekloud.com/kk-media/image/upload/v1752867663/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/azure-load-balancer-health-probes-config.jpg)
 
 ***
 
@@ -70,7 +70,7 @@ Health probes periodically check each back-end instance. If a probe fails, the i
 
 While Azure Load Balancer manages traffic within a region, Traffic Manager handles DNS-based load balancing across global endpoints. It routes client requests to the most appropriate endpoint based on your chosen method.
 
-![The image is an introduction to Azure Traffic Manager, describing it as a DNS-based traffic load balancer designed to distribute traffic optimally across global Azure regions to improve application availability and performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867665/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/azure-traffic-manager-introduction-diagram.jpg)
+![The image is an introduction to Azure Traffic Manager, describing it as a DNS-based traffic load balancer designed to distribute traffic optimally across global Azure regions to improve application availability and performance.](https://kodekloud.com/kk-media/image/upload/v1752867665/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/azure-traffic-manager-introduction-diagram.jpg)
 
 ### Traffic Routing Methods
 
@@ -80,19 +80,19 @@ While Azure Load Balancer manages traffic within a region, Traffic Manager handl
 | **Priority**   | Routes traffic to primary, with failover      | High-availability, active-passive setups      |
 | **Geographic** | Directs users based on their location         | Region-specific compliance, latency reduction |
 
-![The image is an introduction to Azure Traffic Manager, highlighting three routing methods: Weighted, Priority, and Geographic. Each method is briefly described with icons and text.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867666/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/azure-traffic-manager-routing-methods-intro.jpg)
+![The image is an introduction to Azure Traffic Manager, highlighting three routing methods: Weighted, Priority, and Geographic. Each method is briefly described with icons and text.](https://kodekloud.com/kk-media/image/upload/v1752867666/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/azure-traffic-manager-routing-methods-intro.jpg)
 
 ### Global Traffic Management
 
 This diagram shows how Traffic Manager directs users from Europe and North America to their nearest data centers, reducing latency and improving availability.
 
-![The image is an introduction to Azure Traffic Manager, showing a diagram of global traffic management with nodes in Europe and North America.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867667/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/azure-traffic-manager-global-diagram.jpg)
+![The image is an introduction to Azure Traffic Manager, showing a diagram of global traffic management with nodes in Europe and North America.](https://kodekloud.com/kk-media/image/upload/v1752867667/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/azure-traffic-manager-global-diagram.jpg)
 
 ### Integrating with DevOps
 
 Traffic Manager integrates with Azure DevOps and CI/CD pipelines to support blue/green and canary deployments by gradually shifting traffic to new instances.
 
-![The image is a slide titled "Implementing Traffic Manager in DevOps," highlighting two points: integration with Azure DevOps and enhancing CI/CD pipelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867669/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/implementing-traffic-manager-devops-azure.jpg)
+![The image is a slide titled "Implementing Traffic Manager in DevOps," highlighting two points: integration with Azure DevOps and enhancing CI/CD pipelines.](https://kodekloud.com/kk-media/image/upload/v1752867669/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/implementing-traffic-manager-devops-azure.jpg)
 
 ### Case Studies
 
@@ -100,7 +100,7 @@ Traffic Manager integrates with Azure DevOps and CI/CD pipelines to support blue
 * An international news outlet leveraged **Geographic** routing for region-specific content delivery.
 * A SaaS provider adopted **Weighted** routing to validate new features before a full launch.
 
-![The image presents case studies of Azure Traffic Manager in action, detailing scenarios, implementations, and outcomes for a global online retailer, an international news outlet, and a SaaS provider. Each case highlights different routing methods and their benefits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867670/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/azure-traffic-manager-case-studies.jpg)
+![The image presents case studies of Azure Traffic Manager in action, detailing scenarios, implementations, and outcomes for a global online retailer, an international news outlet, and a SaaS provider. Each case highlights different routing methods and their benefits.](https://kodekloud.com/kk-media/image/upload/v1752867670/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/azure-traffic-manager-case-studies.jpg)
 
 ***
 
@@ -116,7 +116,7 @@ Key benefits:
 
 Azure Web Apps supports multiple languages:
 
-![The image is an introduction to Azure Web Apps, listing six programming languages: .NET, Java, Ruby, Node.js, PHP, and Python, each in a colored box.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867671/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/azure-web-apps-programming-languages-intro.jpg)
+![The image is an introduction to Azure Web Apps, listing six programming languages: .NET, Java, Ruby, Node.js, PHP, and Python, each in a colored box.](https://kodekloud.com/kk-media/image/upload/v1752867671/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps/azure-web-apps-programming-languages-intro.jpg)
 
 ***
 

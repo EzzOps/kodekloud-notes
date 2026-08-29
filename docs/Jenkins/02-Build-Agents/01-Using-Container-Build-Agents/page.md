@@ -32,9 +32,7 @@ pipeline {
 
 Historically, you may have used a freestyle project to select an Ubuntu instance as your build agent. With Docker, however, the container itself becomes the build agent. For most cases, the built-in Docker images (like `golang:latest`) available on Docker Hub are sufficient.
 
-<Callout icon="lightbulb">
-  Using Docker containers as build agents eliminates the overhead of managing virtual machines and can streamline your CI/CD workflow.
-</Callout>
+> **lightbulb** Using Docker containers as build agents eliminates the overhead of managing virtual machines and can streamline your CI/CD workflow.
 
 ## Configuring the Pipeline in Jenkins
 
@@ -46,9 +44,7 @@ Once you have your pipeline code ready, follow these steps in Jenkins:
 
 The image below illustrates the Jenkins interface for creating a new item:
 
-<Frame>
-  ![The image shows a Jenkins interface for creating a new item, with options like Freestyle project, Pipeline, and Multi-configuration project.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880001/notes-assets/images/Jenkins-Using-Container-Build-Agents/frame_130.jpg)
-</Frame>
+![The image shows a Jenkins interface for creating a new item, with options like Freestyle project, Pipeline, and Multi-configuration project.](https://kodekloud.com/kk-media/image/upload/v1752880001/notes-assets/images/Jenkins-Using-Container-Build-Agents/frame_130.jpg)
 
 After pasting the code, save the configuration and click “Build Now” to trigger the pipeline.
 
@@ -58,9 +54,7 @@ When you initiate the build, Jenkins will launch the Docker container and execut
 
 Below is an overview of the Jenkins dashboard stage view:
 
-<Frame>
-  ![The image shows a Jenkins dashboard with options like "Build Now" and "Configure," displaying a stage view with development time and build history.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880002/notes-assets/images/Jenkins-Using-Container-Build-Agents/frame_150.jpg)
-</Frame>
+![The image shows a Jenkins dashboard with options like "Build Now" and "Configure," displaying a stage view with development time and build history.](https://kodekloud.com/kk-media/image/upload/v1752880002/notes-assets/images/Jenkins-Using-Container-Build-Agents/frame_150.jpg)
 
 Here is a sample console output from the pipeline execution:
 
@@ -93,9 +87,7 @@ Finished: SUCCESS
 
 As seen in the logs, the build process successfully clones the repository and executes the `go version` command inside the Docker container. Notice that the command output reports Go version 1.17.6.
 
-<Callout icon="lightbulb">
-  If you require a specific Go version for your project, consider using a tagged Docker image (e.g., `golang:1.17.6`) to ensure consistency across builds.
-</Callout>
+> **lightbulb** If you require a specific Go version for your project, consider using a tagged Docker image (e.g., `golang:1.17.6`) to ensure consistency across builds.
 
 ## Conclusion
 
@@ -103,6 +95,4 @@ This article demonstrated how to use Docker containers as ephemeral build agents
 
 In the next lesson, we will explore further enhancements to containerized build processes and additional customization options for your pipelines.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/1abff4aa-214c-48a2-98f1-2188e2e446bd/lesson/0a379185-c7ce-45c1-a08f-e21b8b6d12b1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/1abff4aa-214c-48a2-98f1-2188e2e446bd/lesson/0a379185-c7ce-45c1-a08f-e21b8b6d12b1)

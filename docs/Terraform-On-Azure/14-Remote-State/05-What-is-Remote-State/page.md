@@ -75,13 +75,9 @@ terraform init \
   -backend-config="key=prod.terraform.tfstate"
 ```
 
-<Callout icon="lightbulb">
-  Confirm the storage account and container exist and that the executing identity has the required permissions before running `terraform init`. If they don't, backend initialization will fail.
-</Callout>
+> **lightbulb** Confirm the storage account and container exist and that the executing identity has the required permissions before running `terraform init`. If they don't, backend initialization will fail.
 
-<Callout icon="warning">
-  Do not store Terraform state files in Git. This can expose sensitive data, create frequent merge conflicts, and lead to state corruption.
-</Callout>
+> **warning** Do not store Terraform state files in Git. This can expose sensitive data, create frequent merge conflicts, and lead to state corruption.
 
 How to migrate existing local state
 
@@ -100,6 +96,4 @@ Links and references
 * [Azure Storage documentation](https://docs.microsoft.com/azure/storage/)
 * [Terraform azurerm Backend Docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/terraform_backend)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4693ec96-f075-4e4f-922b-1f1e27202120/lesson/dd3e2db7-ff0b-4ded-be2f-211a2459c1bb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4693ec96-f075-4e4f-922b-1f1e27202120/lesson/dd3e2db7-ff0b-4ded-be2f-211a2459c1bb)

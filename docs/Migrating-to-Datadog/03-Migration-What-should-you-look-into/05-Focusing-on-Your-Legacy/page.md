@@ -6,9 +6,7 @@ Guidance for migrating observability systems, managing legacy components and tec
 
 When planning a migration, technical debt is the single most important risk you need to manage. Any legacy component that isn’t migrated—or at least integrated into the new solution—becomes technical debt and will almost certainly create problems later. Keep stakeholders and teams informed about the deactivation plan for legacy components and build contingency into your schedule.
 
-<Callout icon="lightbulb">
-  Document every legacy component and its owner as early as possible. A simple control log (Excel, Kanban board, or an issue tracker) that lists component state, owner, and deactivation date will save significant time and risk down the line.
-</Callout>
+> **lightbulb** Document every legacy component and its owner as early as possible. A simple control log (Excel, Kanban board, or an issue tracker) that lists component state, owner, and deactivation date will save significant time and risk down the line.
 
 <Frame>
   <img alt="The image illustrates the concept of technical debt, showing a diagram where a legacy component that wasn't migrated or integrated leads to technical debt." />
@@ -103,9 +101,7 @@ Best practices and practical tips
 * Keep documentation and runbooks updated as you migrate components.
 * Measure progress with clear milestones and a control log of deactivations.
 
-<Callout icon="warning">
-  Do not leave legacy components “running and forgotten.” Each unmanaged component is ongoing technical debt—plan explicit decommission dates and accountabilities before cutover.
-</Callout>
+> **warning** Do not leave legacy components “running and forgotten.” Each unmanaged component is ongoing technical debt—plan explicit decommission dates and accountabilities before cutover.
 
 Migration projects are opportunities to add value beyond parity. Good engineers will replicate functionality; great engineers will migrate and enhance monitoring so it better supports the business. Aim to study, migrate, and improve—deliver migrations that reduce risk and increase visibility.
 
@@ -117,6 +113,4 @@ Links and references
 
 That's it for this lesson. I hope you enjoyed it.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/d7aaa833-22da-4f94-af5c-5d196f04ab31/lesson/af3093de-aea1-48ab-8bd1-0938e3a05a40" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/d7aaa833-22da-4f94-af5c-5d196f04ab31/lesson/af3093de-aea1-48ab-8bd1-0938e3a05a40)

@@ -6,7 +6,7 @@ This article explores AWS Systems Manager Parameter Store, a secure service for 
 
 In this lesson, we explore AWS Systems Manager Parameter Store—a secure service designed to store configuration data and secrets such as passwords, database connection strings, and other vital configuration values. It supports both plain text and encrypted data, providing flexibility and security for your applications.
 
-![The image is an informational graphic about the Systems Manager Parameter Store, highlighting its features: secure storage for configuration data and secrets, storing passwords and database strings, and supporting plaintext and encrypted data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859397/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store/systems-manager-parameter-store-graphic.jpg)
+![The image is an informational graphic about the Systems Manager Parameter Store, highlighting its features: secure storage for configuration data and secrets, storing passwords and database strings, and supporting plaintext and encrypted data.](https://kodekloud.com/kk-media/image/upload/v1752859397/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store/systems-manager-parameter-store-graphic.jpg)
 
 ## Centralized Configuration Management
 
@@ -14,13 +14,13 @@ Applications often require configuration settings—like database connection det
 
 For example, when an application requires database access, it typically needs both a username and a password. By storing these credentials in Parameter Store, you eliminate the hassle of manual configuration across multiple application instances. Furthermore, updating the database password becomes a streamlined process, as you only need to change it in one centralized location.
 
-![The image illustrates the concept of an SSM Parameter Store with icons representing different applications accessing stored credentials (username and password).](../../../../images/kodekloud.com/kk-media/image/upload/v1752859398/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store/ssm-parameter-store-credentials-diagram.jpg)
+![The image illustrates the concept of an SSM Parameter Store with icons representing different applications accessing stored credentials (username and password).](https://kodekloud.com/kk-media/image/upload/v1752859398/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store/ssm-parameter-store-credentials-diagram.jpg)
 
 ## Hierarchical Organization and Permission Management
 
 Parameter Store organizes configurations into a hierarchical structure, allowing you to group parameters logically. For instance, you might create a hierarchy starting at the organization level (e.g., `/org`), then branching into various applications or services. Within each service (such as an authentication service or task service), you can further segregate parameters as necessary.
 
-![The image shows a hierarchical diagram of a parameter store, with levels including organization, application, auth/tasks, db, and username/password.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859399/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store/parameter-store-hierarchy-diagram.jpg)
+![The image shows a hierarchical diagram of a parameter store, with levels including organization, application, auth/tasks, db, and username/password.](https://kodekloud.com/kk-media/image/upload/v1752859399/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store/parameter-store-hierarchy-diagram.jpg)
 
 This hierarchical model simplifies permission management. If the authentication team requires access solely to parameters related to the authentication service, you can grant permissions specifically for that branch. This setup ensures they can retrieve necessary credentials (like database usernames and passwords) without exposing configurations unrelated to their responsibilities.
 
@@ -35,7 +35,7 @@ Parameter Store is offered in two tiers: Standard and Advanced. Below is a compa
 | Parameter Policies | Not supported        | Supported (e.g., expiration, notification) |
 | Additional Cost    | No additional charge | Additional cost applies                    |
 
-![The image is a table comparing AWS Parameter Store tiers, detailing differences in parameters allowed, size limits, policy availability, and costs between Standard and Advanced tiers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859400/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store/aws-parameter-store-comparison-table.jpg)
+![The image is a table comparing AWS Parameter Store tiers, detailing differences in parameters allowed, size limits, policy availability, and costs between Standard and Advanced tiers.](https://kodekloud.com/kk-media/image/upload/v1752859400/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store/aws-parameter-store-comparison-table.jpg)
 
 > **lightbulb** When choosing a tier, consider your application's needs. Use the Standard tier for basic requirements and the Advanced tier when you need enhanced features like parameter policies.
 
@@ -47,7 +47,7 @@ Within the Advanced tier, you can leverage various parameter policies to increas
 * **Expiration Notification Policy:** Send alerts via EventBridge when a parameter is nearing its expiration.
 * **No-Change Notification Policy:** Alert you if a parameter has not been modified within a designated period.
 
-![The image lists three parameter policies: "Expiration" for deleting parameters on a date/time, "ExpirationNotification" for sending expiration notifications via EventBridge, and "NoChangeNotification" for notifications when no changes occur.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859401/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store/parameter-policies-expiration-notifications.jpg)
+![The image lists three parameter policies: "Expiration" for deleting parameters on a date/time, "ExpirationNotification" for sending expiration notifications via EventBridge, and "NoChangeNotification" for notifications when no changes occur.](https://kodekloud.com/kk-media/image/upload/v1752859401/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store/parameter-policies-expiration-notifications.jpg)
 
 > **triangle-alert** Always ensure that sensitive parameters are properly encrypted using AWS KMS to prevent unauthorized access.
 
@@ -60,7 +60,7 @@ AWS Systems Manager Parameter Store offers a robust, secure method for storing c
 * **Enhanced Security:** Secure sensitive data with encryption using AWS KMS.
 * **Choice of Tiers:** Select the Standard tier for basic needs or the Advanced tier for higher limits and additional policy features.
 
-![The image is a summary slide with a gradient background, listing three points about securely storing configuration data, organizing configurations, and encryption using KMS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859402/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store/secure-configuration-storage-summary.jpg)
+![The image is a summary slide with a gradient background, listing three points about securely storing configuration data, organizing configurations, and encryption using KMS.](https://kodekloud.com/kk-media/image/upload/v1752859402/notes-assets/images/AWS-Certified-Developer-Associate-Parameter-Store/secure-configuration-storage-summary.jpg)
 
 For further details on AWS Systems Manager Parameter Store, please refer to the [AWS Documentation](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store.html).
 

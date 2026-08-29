@@ -210,9 +210,7 @@ kubectl exec fortio-deploy-689bd5969b-l82zv -c fortio -- /usr/bin/fortio load -c
 
 You should see fewer 503s as the proxy allows more concurrent connections/requests. Tune the values to match your upstream application's concurrency characteristics.
 
-<Callout icon="lightbulb">
-  When setting connection pools and circuit breakers, align limits with your application's real concurrency and connection behavior. Overly strict limits can cause apparent outages under legitimate load.
-</Callout>
+> **lightbulb** When setting connection pools and circuit breakers, align limits with your application's real concurrency and connection behavior. Overly strict limits can cause apparent outages under legitimate load.
 
 ## 8. Inspect Envoy proxy stats (pilot-agent)
 
@@ -236,9 +234,7 @@ cluster.outbound|80|echo-server.default.svc.cluster.local|upstream_rq_pending_ov
 * `upstream_rq_pending_total` — total pending requests.
 * `upstream_rq_pending_overflow` — number of requests rejected due to pending limits.
 
-<Callout icon="warning">
-  Circuit breaking and aggressive rate-limiting can be disruptive. Do not apply global or overly strict DestinationRule policies in production without monitoring, staging, and understanding application behavior.
-</Callout>
+> **warning** Circuit breaking and aggressive rate-limiting can be disruptive. Do not apply global or overly strict DestinationRule policies in production without monitoring, staging, and understanding application behavior.
 
 ## 9. DestinationRule options and examples
 
@@ -313,11 +309,9 @@ Links and references:
 
 For exam preparation: when you hear "circuit breaking" in Istio, think "DestinationRule" and be familiar with `connectionPool` and `outlierDetection` settings.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/518eba4a-4fda-4d47-97a1-45b616fe8388" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/518eba4a-4fda-4d47-97a1-45b616fe8388)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/fe71f163-15e5-48ad-a424-c7b74befa7f9" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/fe71f163-15e5-48ad-a424-c7b74befa7f9)
 
 
 # Demo Fault Injection

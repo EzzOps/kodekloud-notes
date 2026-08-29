@@ -36,9 +36,7 @@ Key collaborative capabilities in Datadog
 | Integration catalog     | Faster telemetry onboarding                | Add integrations for databases, cloud providers |
 | Cross-org sharing       | Reuse best practices across business units | Shared dashboards, monitors                     |
 
-<Callout icon="lightbulb">
-  Use notebooks and runbooks to keep operational knowledge close to the telemetry that matters. Embedding playbooks next to dashboards reduces time-to-response and preserves institutional knowledge.
-</Callout>
+> **lightbulb** Use notebooks and runbooks to keep operational knowledge close to the telemetry that matters. Embedding playbooks next to dashboards reduces time-to-response and preserves institutional knowledge.
 
 A small but powerful productivity feature is the ability to copy widgets and panels between dashboards. Instead of rebuilding visualizations from scratch, teams can duplicate components, adjust queries or time windows, and rapidly converge on consistent observability patterns.
 
@@ -46,9 +44,7 @@ A small but powerful productivity feature is the ability to copy widgets and pan
   <img alt="The image features the Datadog logo and a checklist with items including &#x22;Dashboards list,&#x22; &#x22;Notebooks,&#x22; &#x22;Apps,&#x22; and &#x22;Copyable components,&#x22; each marked with a green check." />
 </Frame>
 
-<Callout icon="warning">
-  When sharing dashboards, notebooks, or runbooks, be mindful of access controls and sensitive data. Review role-based permissions to avoid exposing credentials, PII, or internal-only metrics.
-</Callout>
+> **warning** When sharing dashboards, notebooks, or runbooks, be mindful of access controls and sensitive data. Review role-based permissions to avoid exposing credentials, PII, or internal-only metrics.
 
 Cross-organization collaboration features let teams maintain visibility while sharing reusable assets and operational context. These capabilities encourage reuse of best practices, speed up incident response, and help distributed teams operate with a common, observable understanding of services.
 
@@ -67,6 +63,4 @@ Links and references
 
 That's it for this lesson. I hope you found it useful.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9add8e22-a057-4808-880b-be8b91e0d5f2/lesson/fcef3b20-8e5d-4c4b-86ac-7b34e6a7f5b5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9add8e22-a057-4808-880b-be8b91e0d5f2/lesson/fcef3b20-8e5d-4c4b-86ac-7b34e6a7f5b5)

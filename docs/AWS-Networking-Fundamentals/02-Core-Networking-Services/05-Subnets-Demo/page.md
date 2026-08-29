@@ -26,14 +26,14 @@ By the end, you’ll understand how subnets control IP addressing and fault isol
 
 1. Sign in to the [AWS Management Console](https://aws.amazon.com/console/) and search for **VPC**.
 
-![The image shows the AWS Management Console with a search for "VPC" displaying various services and features related to Virtual Private Cloud, such as AWS Firewall Manager and Detective.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863362/notes-assets/images/AWS-Networking-Fundamentals-Subnets-Demo/aws-management-console-vpc-services.jpg)
+![The image shows the AWS Management Console with a search for "VPC" displaying various services and features related to Virtual Private Cloud, such as AWS Firewall Manager and Detective.](https://kodekloud.com/kk-media/image/upload/v1752863362/notes-assets/images/AWS-Networking-Fundamentals-Subnets-Demo/aws-management-console-vpc-services.jpg)
 
 2. In the VPC dashboard, click **VPCs** → **Create VPC**. Select **VPC only** and enter:
    * **Name tag**: `demo-vpc`
    * **IPv4 CIDR block**: `10.0.0.0/16`
    * **IPv6 CIDR block**: Enabled (Amazon provided)
 
-![The image shows the AWS Management Console interface for creating a VPC, with options for configuring IPv4 and IPv6 CIDR blocks and adding tags.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863363/notes-assets/images/AWS-Networking-Fundamentals-Subnets-Demo/aws-management-console-vpc-configuration.jpg)
+![The image shows the AWS Management Console interface for creating a VPC, with options for configuring IPv4 and IPv6 CIDR blocks and adding tags.](https://kodekloud.com/kk-media/image/upload/v1752863363/notes-assets/images/AWS-Networking-Fundamentals-Subnets-Demo/aws-management-console-vpc-configuration.jpg)
 
 ***
 
@@ -57,9 +57,9 @@ Navigate to **Subnets** in the VPC console and click **Create subnet**. Configur
 
 Optionally, assign an IPv6 block or choose IPv6-only. Click **Create subnet**.
 
-![This image shows the AWS Management Console displaying details of subnets within a Virtual Private Cloud (VPC), including subnet IDs, states, and CIDR blocks. The interface provides options for managing and viewing subnet configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863365/notes-assets/images/AWS-Networking-Fundamentals-Subnets-Demo/aws-management-console-vpc-subnets-details.jpg)
+![This image shows the AWS Management Console displaying details of subnets within a Virtual Private Cloud (VPC), including subnet IDs, states, and CIDR blocks. The interface provides options for managing and viewing subnet configurations.](https://kodekloud.com/kk-media/image/upload/v1752863365/notes-assets/images/AWS-Networking-Fundamentals-Subnets-Demo/aws-management-console-vpc-subnets-details.jpg)
 
-![The image shows an AWS VPC Management Console with a notification indicating a subnet has been successfully created. The console displays details such as IPv4 CIDR, IPv6 CIDR, and availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863366/notes-assets/images/AWS-Networking-Fundamentals-Subnets-Demo/aws-vpc-management-console-subnet-created.jpg)
+![The image shows an AWS VPC Management Console with a notification indicating a subnet has been successfully created. The console displays details such as IPv4 CIDR, IPv6 CIDR, and availability zone.](https://kodekloud.com/kk-media/image/upload/v1752863366/notes-assets/images/AWS-Networking-Fundamentals-Subnets-Demo/aws-vpc-management-console-subnet-created.jpg)
 
 ### Create Subnet-2
 
@@ -71,7 +71,7 @@ Repeat the steps for the second subnet:
 
 Remove any filters to display both subnets in your VPC.
 
-![This image shows the AWS Management Console displaying a list of subnets within a VPC, with details such as Subnet ID, State, VPC, and IPv4 CIDR. A notification at the top indicates a subnet was successfully created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863367/notes-assets/images/AWS-Networking-Fundamentals-Subnets-Demo/aws-management-console-subnets-vpc-details.jpg)
+![This image shows the AWS Management Console displaying a list of subnets within a VPC, with details such as Subnet ID, State, VPC, and IPv4 CIDR. A notification at the top indicates a subnet was successfully created.](https://kodekloud.com/kk-media/image/upload/v1752863367/notes-assets/images/AWS-Networking-Fundamentals-Subnets-Demo/aws-management-console-subnets-vpc-details.jpg)
 
 ***
 
@@ -92,11 +92,11 @@ Remove any filters to display both subnets in your VPC.
 
 4. Choose a security group (default or custom) and click **Launch instance**.
 
-![The image shows an AWS EC2 instance launch configuration screen, where network settings and instance details like VPC, subnet, and security group are being selected. The summary section on the right provides information about the instance type, software image, and storage volumes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863368/notes-assets/images/AWS-Networking-Fundamentals-Subnets-Demo/aws-ec2-instance-launch-configuration.jpg)
+![The image shows an AWS EC2 instance launch configuration screen, where network settings and instance details like VPC, subnet, and security group are being selected. The summary section on the right provides information about the instance type, software image, and storage volumes.](https://kodekloud.com/kk-media/image/upload/v1752863368/notes-assets/images/AWS-Networking-Fundamentals-Subnets-Demo/aws-ec2-instance-launch-configuration.jpg)
 
 After the instance is **running**, check its private IP under **Instance details**. You should see an IP like `10.0.5.xxx`, confirming it’s in subnet-2.
 
-![The image shows an AWS EC2 Management Console displaying details of a running EC2 instance with ID i-0c683936f4bf18119, of type t2.micro, in the us-east-1a availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863370/notes-assets/images/AWS-Networking-Fundamentals-Subnets-Demo/aws-ec2-management-console-instance-details.jpg)
+![The image shows an AWS EC2 Management Console displaying details of a running EC2 instance with ID i-0c683936f4bf18119, of type t2.micro, in the us-east-1a availability zone.](https://kodekloud.com/kk-media/image/upload/v1752863370/notes-assets/images/AWS-Networking-Fundamentals-Subnets-Demo/aws-ec2-management-console-instance-details.jpg)
 
 ***
 
@@ -109,9 +109,9 @@ After the instance is **running**, check its private IP under **Instance details
 
 3. Confirm by typing **delete** in the prompt. This also removes the associated subnets.
 
-![The image shows an AWS VPC management console with a "Delete VPC" dialog open, indicating that the VPC cannot be deleted due to existing instances and network interfaces.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863371/notes-assets/images/AWS-Networking-Fundamentals-Subnets-Demo/aws-vpc-management-console-delete-dialog.jpg)
+![The image shows an AWS VPC management console with a "Delete VPC" dialog open, indicating that the VPC cannot be deleted due to existing instances and network interfaces.](https://kodekloud.com/kk-media/image/upload/v1752863371/notes-assets/images/AWS-Networking-Fundamentals-Subnets-Demo/aws-vpc-management-console-delete-dialog.jpg)
 
-![The image shows an AWS console interface where a Virtual Private Cloud (VPC) named "demovpc" is being deleted, along with its associated resources. The deletion confirmation requires typing "delete" in a field.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863371/notes-assets/images/AWS-Networking-Fundamentals-Subnets-Demo/aws-console-vpc-demovpc-deletion.jpg)
+![The image shows an AWS console interface where a Virtual Private Cloud (VPC) named "demovpc" is being deleted, along with its associated resources. The deletion confirmation requires typing "delete" in a field.](https://kodekloud.com/kk-media/image/upload/v1752863371/notes-assets/images/AWS-Networking-Fundamentals-Subnets-Demo/aws-console-vpc-demovpc-deletion.jpg)
 
 ***
 

@@ -21,13 +21,9 @@ Both configurations offer secure, high-speed communication and reduce complexity
 * **Utilization of Microsoft Backbone Network:** When peered, data flows over Microsoft’s secure private backbone network instead of the public internet.
 * **Seamless Connectivity:** Supports connectivity across VNets in different regions, subscriptions, and even Azure Active Directory tenants, facilitating scalable and resilient network architectures.
 
-<Frame>
-  ![The image is an infographic about Virtual Network Peering, highlighting types of peering, high-speed data transfer, use of Microsoft's backbone network, and connectivity across Azure virtual networks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884652/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Virtual-Network-Peering/virtual-network-peering-infographic.jpg)
-</Frame>
+![The image is an infographic about Virtual Network Peering, highlighting types of peering, high-speed data transfer, use of Microsoft's backbone network, and connectivity across Azure virtual networks.](https://kodekloud.com/kk-media/image/upload/v1752884652/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Virtual-Network-Peering/virtual-network-peering-infographic.jpg)
 
-<Callout icon="lightbulb">
-  Ensure you have the necessary permissions and network configurations in place before starting the peering setup.
-</Callout>
+> **lightbulb** Ensure you have the necessary permissions and network configurations in place before starting the peering setup.
 
 ## Demonstration Setup
 
@@ -105,13 +101,9 @@ To establish a peering connection:
    * For the remote virtual network, select the corresponding VNet (e.g., "WUS US link") and enable forwarded traffic.
    * Click **Add** to create the peering connection.
 
-<Callout icon="lightbulb">
-  Both VNets must be configured simultaneously for peering to work correctly. The settings ensure secure data flow between the networks.
-</Callout>
+> **lightbulb** Both VNets must be configured simultaneously for peering to work correctly. The settings ensure secure data flow between the networks.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal interface, specifically the "Peerings" section for a virtual network named "vnet-wus," with a peering status of "Initiated" to "vnet-eus." Notifications indicate successful addition of virtual network peering.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884653/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Virtual-Network-Peering/azure-portal-peerings-vnet-wus.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal interface, specifically the "Peerings" section for a virtual network named "vnet-wus," with a peering status of "Initiated" to "vnet-eus." Notifications indicate successful addition of virtual network peering.](https://kodekloud.com/kk-media/image/upload/v1752884653/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Virtual-Network-Peering/azure-portal-peerings-vnet-wus.jpg)
 
 ### Verifying the Peering Connection
 
@@ -127,8 +119,6 @@ Stay tuned for the next section, which will cover setting up a VPN Gateway for a
 
 Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/f7470a91-91f6-4c6c-8a03-565abfeb7aee/lesson/ecfc5c37-65e2-497a-a222-57dafad279dc" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/f7470a91-91f6-4c6c-8a03-565abfeb7aee/lesson/ecfc5c37-65e2-497a-a222-57dafad279dc)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/f7470a91-91f6-4c6c-8a03-565abfeb7aee/lesson/628f77b7-26bd-4d3f-a13d-41811b13bc5a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/f7470a91-91f6-4c6c-8a03-565abfeb7aee/lesson/628f77b7-26bd-4d3f-a13d-41811b13bc5a)

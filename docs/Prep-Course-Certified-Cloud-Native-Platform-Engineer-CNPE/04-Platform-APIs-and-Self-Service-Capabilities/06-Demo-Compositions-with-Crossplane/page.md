@@ -97,9 +97,7 @@ spec:
                 - targetNamespace
 ```
 
-<Callout icon="lightbulb">
-  The XRD defines the user-facing API surface (the fields users can set). The Composition maps those fields into concrete resources, using patches and transforms to translate user-friendly values into provider-specific details.
-</Callout>
+> **lightbulb** The XRD defines the user-facing API surface (the fields users can set). The Composition maps those fields into concrete resources, using patches and transforms to translate user-friendly values into provider-specific details.
 
 Note about scope:
 
@@ -312,9 +310,7 @@ If provisioning fails:
 * Review `Events` and `Conditions` — they often include explanatory error messages.
   Start troubleshooting by checking the composite resource’s conditions and related events.
 
-<Callout icon="warning">
-  If your composition creates resources in target namespaces, ensure the Crossplane provider and RBAC permissions allow the provider to create resources in those namespaces. Incorrect RBAC or namespace permissions are a common cause of provisioning failures.
-</Callout>
+> **warning** If your composition creates resources in target namespaces, ensure the Crossplane provider and RBAC permissions allow the provider to create resources in those namespaces. Incorrect RBAC or namespace permissions are a common cause of provisioning failures.
 
 ## Quick summary
 
@@ -341,8 +337,6 @@ Further reading:
 
 This demo shows how a platform can expose a simple API while using Crossplane Compositions and transforms to map user-friendly inputs to concrete, provider-specific settings.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/61b03ce1-88c5-43c4-9da4-a305d870bc02" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/61b03ce1-88c5-43c4-9da4-a305d870bc02)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/07b9a478-b38c-404c-a60d-6626e84a91ce" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/07b9a478-b38c-404c-a60d-6626e84a91ce)

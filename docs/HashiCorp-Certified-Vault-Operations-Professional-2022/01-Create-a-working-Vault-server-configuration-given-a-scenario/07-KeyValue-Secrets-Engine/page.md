@@ -13,9 +13,7 @@ Vault supports two flavors of the KV Secrets Engine:
 
 Secrets can be accessed via the UI, CLI, or API. Access control is enforced by Vault policies that grant specific capabilities (`create`, `read`, `update`, `delete`) on defined paths. All data at rest is encrypted using AES-256. You can mount multiple KV engines at unique paths to isolate workloads.
 
-<Frame>
-  ![The image is a slide about the Key/Value Secrets Engine, explaining how it can be enabled at different paths, stores secrets as key-value pairs, and requires specific capabilities for writing and updating secrets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878473/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-KeyValue-Secrets-Engine/key-value-secrets-engine-slide.jpg)
-</Frame>
+![The image is a slide about the Key/Value Secrets Engine, explaining how it can be enabled at different paths, stores secrets as key-value pairs, and requires specific capabilities for writing and updating secrets.](https://kodekloud.com/kk-media/image/upload/v1752878473/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-KeyValue-Secrets-Engine/key-value-secrets-engine-slide.jpg)
 
 ***
 
@@ -33,9 +31,7 @@ vault write secret/applications/web01 \
 * **create** capability is required when writing to a new path.
 * **update** capability is required for overwriting an existing secret.
 
-<Callout icon="lightbulb">
-  Ensure your Vault policies explicitly grant `create` and `update` permissions on the exact path (e.g., `secret/applications/web01`) or via wildcards (e.g., `secret/applications/*`).
-</Callout>
+> **lightbulb** Ensure your Vault policies explicitly grant `create` and `update` permissions on the exact path (e.g., `secret/applications/web01`) or via wildcards (e.g., `secret/applications/*`).
 
 ***
 

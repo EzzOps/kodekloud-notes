@@ -43,9 +43,7 @@ By the end of this lesson you’ll have:
 * Criteria to choose Terraform versus other IaC tools.
 * Context for how Terraform is used in real-world cloud deployments.
 
-<Callout icon="lightbulb">
-  IaC is not just automation — it’s a way to treat your infrastructure with the same software engineering practices (versioning, code review, testing) you use for application code. This leads to more reliable and maintainable environments.
-</Callout>
+> **lightbulb** IaC is not just automation — it’s a way to treat your infrastructure with the same software engineering practices (versioning, code review, testing) you use for application code. This leads to more reliable and maintainable environments.
 
 ## Links and references
 
@@ -53,6 +51,4 @@ By the end of this lesson you’ll have:
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Ansible documentation](https://docs.ansible.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/ba3df1b5-1b9a-4f11-b32a-218c32aa1614/lesson/e5723f7f-9239-4366-a522-1210069f425f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/ba3df1b5-1b9a-4f11-b32a-218c32aa1614/lesson/e5723f7f-9239-4366-a522-1210069f425f)

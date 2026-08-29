@@ -23,9 +23,7 @@ Below, each diagram is integrated with its relevant explanation.
 
 The following image illustrates how to select the resource scope for your alert. In this example, you can see the "Create an alert rule" interface in Azure Monitor with icons representing steps like Scope, Condition, Actions, and Details.
 
-<Frame>
-  ![The image shows a screenshot of the "Create an alert rule" interface in Azure Monitor, focusing on setting the scope for an alert. Below are icons representing different steps in the process, such as Scope, Condition, Actions, and Details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881697/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-monitor-create-alert-rule-screenshot.jpg)
-</Frame>
+![The image shows a screenshot of the "Create an alert rule" interface in Azure Monitor, focusing on setting the scope for an alert. Below are icons representing different steps in the process, such as Scope, Condition, Actions, and Details.](https://kodekloud.com/kk-media/image/upload/v1752881697/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-monitor-create-alert-rule-screenshot.jpg)
 
 When setting the scope, choose the resources for which the alert should apply. For activity log or log query alerts, adjust the scope accordingly as shown in the demonstration later in this article.
 
@@ -33,9 +31,7 @@ When setting the scope, choose the resources for which the alert should apply. F
 
 Next, define the **Condition**. In this stage, you set up the signal (for example, Percentage CPU) and the criteria (for example, triggering the alert when CPU utilization exceeds 80%). When the measured value exceeds this threshold, the alert is activated.
 
-<Frame>
-  ![The image shows a setup screen for creating an Azure Monitor alert rule, focusing on configuring conditions like signal name and threshold values. Below, there are icons labeled "Scope," "Condition," and others, indicating steps in the alert creation process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881699/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-monitor-alert-rule-setup.jpg)
-</Frame>
+![The image shows a setup screen for creating an Azure Monitor alert rule, focusing on configuring conditions like signal name and threshold values. Below, there are icons labeled "Scope," "Condition," and others, indicating steps in the alert creation process.](https://kodekloud.com/kk-media/image/upload/v1752881699/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-monitor-alert-rule-setup.jpg)
 
 For example, by setting CPU utilization as the signal with an 80% threshold, the alert will trigger whenever CPU usage goes over that value.
 
@@ -43,9 +39,7 @@ For example, by setting CPU utilization as the signal with an 80% threshold, the
 
 The **Action** stage involves assigning an action group. Action groups manage the notification and automation preferences, such as sending emails, SMS messages, or triggering an automation runbook when the alert is activated.
 
-<Frame>
-  ![The image shows a screenshot of the "Create an alert rule" page in Azure Monitor, focusing on the "Actions" tab. Below the screenshot are colorful icons labeled "Scope," "Condition," "Action," and an unlabeled icon, representing the steps in the alert creation process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881700/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-monitor-create-alert-rule.jpg)
-</Frame>
+![The image shows a screenshot of the "Create an alert rule" page in Azure Monitor, focusing on the "Actions" tab. Below the screenshot are colorful icons labeled "Scope," "Condition," "Action," and an unlabeled icon, representing the steps in the alert creation process.](https://kodekloud.com/kk-media/image/upload/v1752881700/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-monitor-create-alert-rule.jpg)
 
 Later in this guide, you will see how to create a new action group if needed.
 
@@ -53,9 +47,7 @@ Later in this guide, you will see how to create a new action group if needed.
 
 Finally, the **Rule Details** stage requires you to provide the alert rule name, description, and severity. This information helps you quickly identify and prioritize alerts when you receive notifications—for example, via email.
 
-<Frame>
-  ![The image shows a setup screen for creating an alert rule in Azure Monitor, detailing project and alert rule specifics. Below, there are colorful icons labeled "Scope," "Condition," "Action," and "Rule details."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881700/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-monitor-alert-rule-setup-2.jpg)
-</Frame>
+![The image shows a setup screen for creating an alert rule in Azure Monitor, detailing project and alert rule specifics. Below, there are colorful icons labeled "Scope," "Condition," "Action," and "Rule details."](https://kodekloud.com/kk-media/image/upload/v1752881700/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-monitor-alert-rule-setup-2.jpg)
 
 ***
 
@@ -65,17 +57,13 @@ Action groups let you configure both notification options (such as emailing Azur
 
 In the Azure portal, select the notification and action types while creating the action group. The image below shows the action group creation interface, where you define these settings:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating an action group, with fields for project and instance details, and options to proceed to notifications or review and create.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881702/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-portal-action-group-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating an action group, with fields for project and instance details, and options to proceed to notifications or review and create.](https://kodekloud.com/kk-media/image/upload/v1752881702/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-portal-action-group-interface.jpg)
 
 ***
 
 After specifying the alert rule name, severity, and advanced options (such as enabling the rule upon creation), you can review and create the alert. The following diagram confirms that your alert rule has been set up with the necessary conditions and action groups:
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating an alert rule, with fields for project details, alert rule details, and advanced options. The alert rule is set to "Critical" severity with the name "cpu-alert-win-linux."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881703/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-alert-rule-creation-cpu-alert.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating an alert rule, with fields for project details, alert rule details, and advanced options. The alert rule is set to "Critical" severity with the name "cpu-alert-win-linux."](https://kodekloud.com/kk-media/image/upload/v1752881703/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-alert-rule-creation-cpu-alert.jpg)
 
 ***
 
@@ -92,15 +80,11 @@ AppServiceHTTPLogs
 
 If this query returns a count of 51, you can set up an alert rule so that if the count reaches 100 requests over 25 minutes, a notification is sent. The image below illustrates how to set measurement parameters, aggregation settings, and the threshold:
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating an alert rule, with options for measurement, aggregation, and dimensions. The user is setting parameters such as measure type, aggregation type, and granularity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881705/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-alert-rule-creation-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating an alert rule, with options for measurement, aggregation, and dimensions. The user is setting parameters such as measure type, aggregation type, and granularity.](https://kodekloud.com/kk-media/image/upload/v1752881705/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-alert-rule-creation-interface.jpg)
 
 A second view of the alert configuration is shown here:
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating an alert rule, with options to set alert logic, threshold value, and frequency of evaluation. A preview section displays a graph with a threshold line at 100.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881706/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-alert-rule-creation-interface-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating an alert rule, with options to set alert logic, threshold value, and frequency of evaluation. A preview section displays a graph with a threshold line at 100.](https://kodekloud.com/kk-media/image/upload/v1752881706/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-alert-rule-creation-interface-2.jpg)
 
 Similarly, you can create alerts from activity logs. For instance, you might set up an alert to notify you about any virtual machine creation or update operations by selecting the relevant actions and creating a new alert rule accordingly.
 
@@ -114,19 +98,13 @@ For critical production servers such as virtual machines, it is essential to rec
 2. Click on the Alerts blade and choose "Create a custom alert rule." The resource is auto-selected; if you want to include additional machines (such as a Windows machine), add them to the scope.
 3. In the **Condition** stage for the VM, select a signal such as **Percentage CPU**. In this demonstration, a static threshold is used with the average calculated over the last five minutes. For example, the alert fires if the average CPU usage exceeds 80% during that interval.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating an alert rule based on CPU percentage usage, with options to set conditions, thresholds, and preview the alert logic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881707/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-alert-rule-cpu-usage.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating an alert rule based on CPU percentage usage, with options to set conditions, thresholds, and preview the alert logic.](https://kodekloud.com/kk-media/image/upload/v1752881707/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-alert-rule-cpu-usage.jpg)
 
-<Callout icon="lightbulb">
-  Azure also offers dynamic thresholds that adapt based on historical usage patterns, which can help reduce noise in alerting.
-</Callout>
+> **lightbulb** Azure also offers dynamic thresholds that adapt based on historical usage patterns, which can help reduce noise in alerting.
 
 4. In the **Action** stage, create an action group. For example, name the action group "VM CPU" and configure a notification preference, such as an email alert. Once the action group is set up, it is automatically associated with the alert rule.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen for creating an alert rule, specifically on the "Actions" tab, where an action group named "vm-notification" containing an email action is listed. A notification confirms the successful creation of an action group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881708/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-portal-alert-rule-actions.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen for creating an alert rule, specifically on the "Actions" tab, where an action group named "vm-notification" containing an email action is listed. A notification confirms the successful creation of an action group.](https://kodekloud.com/kk-media/image/upload/v1752881708/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-portal-alert-rule-actions.jpg)
 
 5. In the **Rule Details** stage, set the alert rule name (for example, "CPU Alert for Linux VM"), define its severity (such as Critical), and decide whether the rule should be enabled immediately upon creation.
 6. Review the configuration and click "Create." The alert takes a few moments to deploy.

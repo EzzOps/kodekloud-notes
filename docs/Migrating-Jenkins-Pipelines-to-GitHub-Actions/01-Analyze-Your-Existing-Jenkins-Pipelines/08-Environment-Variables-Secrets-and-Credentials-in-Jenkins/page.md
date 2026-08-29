@@ -96,9 +96,7 @@ How it works:
 * `withCredentials` looks up the credential by `credentialsId` and injects the data into the specified environment variables (`MONGO_USER`, `MONGO_PASSWORD`) only for the enclosed block.
 * After the block ends, those environment variables are removed — reducing risk of accidental leakage.
 
-<Callout icon="lightbulb">
-  Never print secrets or credentials to logs. Avoid `echo` or `sh` commands that expose `MONGO_PASSWORD` or any secret in build output. Use credential masking features and avoid storing secrets in plain text.
-</Callout>
+> **lightbulb** Never print secrets or credentials to logs. Avoid `echo` or `sh` commands that expose `MONGO_PASSWORD` or any secret in build output. Use credential masking features and avoid storing secrets in plain text.
 
 Summary
 
@@ -112,6 +110,4 @@ Links and references
 * [withCredentials step (Pipeline Plugin)](https://www.jenkins.io/doc/pipeline/steps/credentials-binding/)
 * [Creating a GitHub personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/f7265a1f-b09b-457e-bcac-9e7850f12cb3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/f7265a1f-b09b-457e-bcac-9e7850f12cb3)

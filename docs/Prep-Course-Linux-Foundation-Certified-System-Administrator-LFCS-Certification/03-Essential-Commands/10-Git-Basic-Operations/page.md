@@ -6,9 +6,7 @@ This article explains basic Git operations for managing code changes in collabor
 
 In today's fast-paced software development environment, large teams often consist of 10 or more developers collaborating simultaneously. With numerous people adding, deleting, and modifying code concurrently, it can be challenging to keep track of every change made in just 24 hours. For instance, while the testing team may report a bug, one developer could be fixing it across multiple files, another adding new features by creating new files and modifying existing ones, and yet another removing outdated features. Manual tracking through messages or chats is quickly overwhelming.
 
-<Frame>
-  ![The image illustrates basic Git operations, showing a software project with multiple contributors who can add, delete, or modify code.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881237/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Basic-Operations/git-operations-multiple-contributors.jpg)
-</Frame>
+![The image illustrates basic Git operations, showing a software project with multiple contributors who can add, delete, or modify code.](https://kodekloud.com/kk-media/image/upload/v1752881237/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Basic-Operations/git-operations-multiple-contributors.jpg)
 
 When you log into your computer as part of this dynamic team, you need an efficient way to quickly see:
 
@@ -19,21 +17,15 @@ When you log into your computer as part of this dynamic team, you need an effici
 
 This comprehensive overview not only helps you understand your teammates’ contributions but also effectively communicates your own modifications.
 
-<Frame>
-  ![The image is a graphic about basic Git operations, showing a silhouette of a person at a computer with icons and text describing software development activities, such as bug fixing and feature addition.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881239/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Basic-Operations/git-operations-software-development-graphic.jpg)
-</Frame>
+![The image is a graphic about basic Git operations, showing a silhouette of a person at a computer with icons and text describing software development activities, such as bug fixing and feature addition.](https://kodekloud.com/kk-media/image/upload/v1752881239/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Basic-Operations/git-operations-software-development-graphic.jpg)
 
 One robust solution is using a distributed version control system like Git. Git allows many developers to work on the same project concurrently while automatically keeping track of every change. Instead of relying on manual updates or informal messaging, Git provides a structured method to both update and review changes across your team.
 
-<Frame>
-  ![The image illustrates a diagram of basic Git operations, showing a central code repository connected to multiple users, each with icons representing adding, deleting, and configuring code.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881240/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Basic-Operations/git-operations-diagram-users.jpg)
-</Frame>
+![The image illustrates a diagram of basic Git operations, showing a central code repository connected to multiple users, each with icons representing adding, deleting, and configuring code.](https://kodekloud.com/kk-media/image/upload/v1752881240/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Basic-Operations/git-operations-diagram-users.jpg)
 
 With Git, every change is recorded along with metadata—such as the author’s name, email, and a descriptive message—providing a clear history of modifications from your last visit.
 
-<Frame>
-  ![The image illustrates basic Git operations with a silhouette of a person at a computer, highlighting questions about file changes, code modifications, and authorship.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881241/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Basic-Operations/git-operations-silhouette-computer.jpg)
-</Frame>
+![The image illustrates basic Git operations with a silhouette of a person at a computer, highlighting questions about file changes, code modifications, and authorship.](https://kodekloud.com/kk-media/image/upload/v1752881241/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Basic-Operations/git-operations-silhouette-computer.jpg)
 
 ## Git Repositories: Local and Remote
 
@@ -44,27 +36,19 @@ At the core of Git is the repository. Each developer typically works with two re
 
 When you work on your local repository, you later upload (or "push") your changes to the remote repository. Similarly, at the start of your work session, you download (or "pull") the latest changes made by your colleagues.
 
-<Frame>
-  ![The image illustrates basic Git operations, showing a connection between local and remote repositories with the GitHub logo in the center.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881242/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Basic-Operations/git-operations-local-remote-repositories.jpg)
-</Frame>
+![The image illustrates basic Git operations, showing a connection between local and remote repositories with the GitHub logo in the center.](https://kodekloud.com/kk-media/image/upload/v1752881242/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Basic-Operations/git-operations-local-remote-repositories.jpg)
 
 Every project on platforms like GitHub is essentially a remote Git repository. By pushing your changes, you integrate your work with the team, and by pulling updates, you ensure you always have the most recent project version.
 
-<Frame>
-  ![The image illustrates basic Git operations, showing a local repository on the left and multiple repositories on GitHub on the right, connected by Git icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881244/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Basic-Operations/git-operations-local-repo-github.jpg)
-</Frame>
+![The image illustrates basic Git operations, showing a local repository on the left and multiple repositories on GitHub on the right, connected by Git icons.](https://kodekloud.com/kk-media/image/upload/v1752881244/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Basic-Operations/git-operations-local-repo-github.jpg)
 
 When you're ready to share your latest code, you perform a push operation:
 
-<Frame>
-  ![The image illustrates basic Git operations, showing a "push" action from a local repository to a remote repository, with icons representing users and computers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881244/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Basic-Operations/git-operations-push-diagram.jpg)
-</Frame>
+![The image illustrates basic Git operations, showing a "push" action from a local repository to a remote repository, with icons representing users and computers.](https://kodekloud.com/kk-media/image/upload/v1752881244/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Basic-Operations/git-operations-push-diagram.jpg)
 
 To update your local repository with changes made by others, you execute a pull:
 
-<Frame>
-  ![The image illustrates a basic Git operation, showing a "pull" action from a remote repository to a local repository. It includes icons representing users and computers for both repositories.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881245/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Basic-Operations/git-pull-remote-local-repositories.jpg)
-</Frame>
+![The image illustrates a basic Git operation, showing a "pull" action from a remote repository to a local repository. It includes icons representing users and computers for both repositories.](https://kodekloud.com/kk-media/image/upload/v1752881245/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Basic-Operations/git-pull-remote-local-repositories.jpg)
 
 The best way to grasp Git's functionality is to experience it firsthand. In this lesson, we will walk through practical Git exercises via the command line.
 
@@ -170,6 +154,4 @@ This initial setup demonstrates how Git monitors code modifications and manages 
 >
 > Stay tuned for the next lesson where we dive into staging and committing your changes with Git!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/62019573-45ff-4774-b422-c3d2a05ba488" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/62019573-45ff-4774-b422-c3d2a05ba488)

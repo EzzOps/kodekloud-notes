@@ -9,7 +9,7 @@
 
 1. On [GitHub New Repository](https://github.com/new), create **my-cool-project** (private), initialize with a README.
 
-![The image shows a GitHub interface for creating a new repository, with options to set the repository name, description, visibility, and initialization settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868182/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Working-with-Git-locally/github-new-repository-interface-settings.jpg)
+![The image shows a GitHub interface for creating a new repository, with options to set the repository name, description, visibility, and initialization settings.](https://kodekloud.com/kk-media/image/upload/v1752868182/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Working-with-Git-locally/github-new-repository-interface-settings.jpg)
 
 2. Clone via HTTPS:
    ```bash theme={null}
@@ -30,13 +30,13 @@
 
 Open the cloned folder in VS Code. The **Source Control** view shows your changes:
 
-![The image shows a text editor with a file named "hello.txt" containing the text "Hello world!" and "I have added some stuff today!" It also displays a Git changes panel indicating the file has been modified.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868184/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Working-with-Git-locally/text-editor-hello-txt-git-changes.jpg)
+![The image shows a text editor with a file named "hello.txt" containing the text "Hello world!" and "I have added some stuff today!" It also displays a Git changes panel indicating the file has been modified.](https://kodekloud.com/kk-media/image/upload/v1752868184/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Working-with-Git-locally/text-editor-hello-txt-git-changes.jpg)
 
 ### 5.3 Inside Visual Studio
 
 In [Visual Studio](https://visualstudio.microsoft.com/), use the **Git Changes** window to stage, commit, and push:
 
-![The image shows a Visual Studio interface with a Git Changes panel open, displaying a commit with the message "Added stuff" and a list of changed files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868184/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Working-with-Git-locally/visual-studio-git-changes-commit.jpg)
+![The image shows a Visual Studio interface with a Git Changes panel open, displaying a commit with the message "Added stuff" and a list of changed files.](https://kodekloud.com/kk-media/image/upload/v1752868184/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Working-with-Git-locally/visual-studio-git-changes-commit.jpg)
 
 ### 5.4 Cloning from Azure Repos
 
@@ -52,11 +52,11 @@ PS C:\Users\jeremy\Projects\azure-test> git clone https://KodeKloudDemo@dev.azur
 
 GitHub Desktop provides an intuitive interface for cloning, committing, and pushing. After installing and signing in, configure your identity:
 
-![The image shows a Git configuration screen where a user can choose to use their GitHub account name and email or configure them manually. It includes fields for name and email, with a space-themed illustration on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868186/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Working-with-Git-locally/git-configuration-screen-github-illustration.jpg)
+![The image shows a Git configuration screen where a user can choose to use their GitHub account name and email or configure them manually. It includes fields for name and email, with a space-themed illustration on the right.](https://kodekloud.com/kk-media/image/upload/v1752868186/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Working-with-Git-locally/git-configuration-screen-github-illustration.jpg)
 
 Clone your repo and open it in VS Code. When prompted:
 
-![The image shows a Visual Studio Code window with a prompt asking if the user trusts the authors of the files in a specific folder. The background also displays a GitHub authorization page in a browser.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868187/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Working-with-Git-locally/vscode-trust-authors-github-prompt.jpg)
+![The image shows a Visual Studio Code window with a prompt asking if the user trusts the authors of the files in a specific folder. The background also displays a GitHub authorization page in a browser.](https://kodekloud.com/kk-media/image/upload/v1752868187/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Working-with-Git-locally/vscode-trust-authors-github-prompt.jpg)
 
 > **triangle-alert** Only trust workspaces you recognize. Untrusted code can run arbitrary scripts on your machine.
 
@@ -102,11 +102,11 @@ Telemetry in Azure is the automated gathering and centralized reporting of your 
 * Track performance trends over time
 * Maintain visibility across distributed services
 
-![The image is an introduction slide about telemetry in Azure, highlighting the definition, importance in cloud environments, and an overview of telemetry data types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867256/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/azure-telemetry-introduction-overview-slide.jpg)
+![The image is an introduction slide about telemetry in Azure, highlighting the definition, importance in cloud environments, and an overview of telemetry data types.](https://kodekloud.com/kk-media/image/upload/v1752867256/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/azure-telemetry-introduction-overview-slide.jpg)
 
 Azure’s telemetry pipeline automatically captures data from application endpoints and infrastructure agents, pushing it to Azure Monitor for analysis.
 
-![The image is an introduction to telemetry in Azure, depicting a person at a desk with servers and a cloud, illustrating the automatic collection and transmission of data for monitoring and analyzing application performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867257/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/azure-telemetry-introduction-data-collection.jpg)
+![The image is an introduction to telemetry in Azure, depicting a person at a desk with servers and a cloud, illustrating the automatic collection and transmission of data for monitoring and analyzing application performance.](https://kodekloud.com/kk-media/image/upload/v1752867257/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/azure-telemetry-introduction-data-collection.jpg)
 
 ## Why Telemetry Matters
 
@@ -116,7 +116,7 @@ Implementing comprehensive telemetry in a cloud environment helps you:
 * Proactively surface and resolve anomalies
 * Optimize resource utilization and control costs
 
-![The image is an introduction to telemetry in Azure, highlighting its importance in cloud environments for proactive monitoring, identifying issues, and ensuring optimal performance. It features graphics of a robotic arm, a laptop, a magnifying glass, and a smartphone with security icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867258/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/azure-telemetry-introduction-monitoring-graphics.jpg)
+![The image is an introduction to telemetry in Azure, highlighting its importance in cloud environments for proactive monitoring, identifying issues, and ensuring optimal performance. It features graphics of a robotic arm, a laptop, a magnifying glass, and a smartphone with security icons.](https://kodekloud.com/kk-media/image/upload/v1752867258/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/azure-telemetry-introduction-monitoring-graphics.jpg)
 
 ## Types of Telemetry Data
 
@@ -128,7 +128,7 @@ Azure captures three primary telemetry categories:
 | Performance Metrics | Response times, throughput, CPU/memory utilization | Detect performance bottlenecks        |
 | Diagnostic Data     | Error logs, traces, exception details              | Troubleshoot failures and root causes |
 
-![The image is an introduction to telemetry in Azure, showing an overview of telemetry data types: usage metrics (e.g., user activity), performance metrics (e.g., response times), and diagnostic data (e.g., error logs).](../../../../images/kodekloud.com/kk-media/image/upload/v1752867259/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/azure-telemetry-introduction-data-types.jpg)
+![The image is an introduction to telemetry in Azure, showing an overview of telemetry data types: usage metrics (e.g., user activity), performance metrics (e.g., response times), and diagnostic data (e.g., error logs).](https://kodekloud.com/kk-media/image/upload/v1752867259/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/azure-telemetry-introduction-data-types.jpg)
 
 ## Key Azure Services for Telemetry
 
@@ -140,7 +140,7 @@ Azure provides three core services to collect and analyze telemetry:
 | Application Insights    | Application performance          | SDKs, Live Metrics, End-to-End Trace |
 | Log Analytics Workspace | Advanced log aggregation and KQL | Kusto Query Language                 |
 
-![The image illustrates a flowchart showing "Key Azure Services for Telemetry," specifically focusing on "Azure Application Insights," with icons representing app service environments and data flow.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867260/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/key-azure-services-telemetry-flowchart.jpg)
+![The image illustrates a flowchart showing "Key Azure Services for Telemetry," specifically focusing on "Azure Application Insights," with icons representing app service environments and data flow.](https://kodekloud.com/kk-media/image/upload/v1752867260/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/key-azure-services-telemetry-flowchart.jpg)
 
 ## Setting Up Azure Monitor
 
@@ -153,15 +153,15 @@ Follow these steps to onboard resources into Azure Monitor:
 
 > **lightbulb** You need Owner or Contributor permissions on the target resource to deploy monitoring agents.
 
-![The image is a flowchart illustrating the setup process for Azure Monitor, involving enabling it through the Azure Portal and configuring it for Virtual Machines, App Services, and Containers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867261/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/azure-monitor-setup-flowchart.jpg)
+![The image is a flowchart illustrating the setup process for Azure Monitor, involving enabling it through the Azure Portal and configuring it for Virtual Machines, App Services, and Containers.](https://kodekloud.com/kk-media/image/upload/v1752867261/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/azure-monitor-setup-flowchart.jpg)
 
 Data from agents can be ingested into Azure Data Lake Storage, Log Analytics, or custom endpoints for deeper analytics.
 
-![The image illustrates the setup process for Azure Monitor, showing data flow from Azure Agent and Extensions to Azure Data Lake Storage, and then to Azure Deployment Environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867261/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/azure-monitor-setup-data-flow-diagram.jpg)
+![The image illustrates the setup process for Azure Monitor, showing data flow from Azure Agent and Extensions to Azure Data Lake Storage, and then to Azure Deployment Environments.](https://kodekloud.com/kk-media/image/upload/v1752867261/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/azure-monitor-setup-data-flow-diagram.jpg)
 
 Key features include custom dashboards, actionable alerts, and integration with DevOps pipelines.
 
-![The image is a diagram titled "Setting Up Azure Monitor," showing key features like Custom Dashboard, Services, Alert, and Integration Service Environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867263/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/setting-up-azure-monitor-diagram.jpg)
+![The image is a diagram titled "Setting Up Azure Monitor," showing key features like Custom Dashboard, Services, Alert, and Integration Service Environment.](https://kodekloud.com/kk-media/image/upload/v1752867263/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/setting-up-azure-monitor-diagram.jpg)
 
 ## Integrating Azure Application Insights
 
@@ -171,7 +171,7 @@ Add Application Insights to web apps and services via SDKs or the Azure Portal:
 * Configure instrumentation keys or connection strings.
 * Enable auto-collection for HTTP requests, dependencies, and exceptions.
 
-![The image is a slide about using Application Insights, explaining integration with applications using SDKs or the Azure portal. It features a lightbulb icon and a gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867264/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/application-insights-sdk-integration-slide.jpg)
+![The image is a slide about using Application Insights, explaining integration with applications using SDKs or the Azure portal. It features a lightbulb icon and a gradient background.](https://kodekloud.com/kk-media/image/upload/v1752867264/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/application-insights-sdk-integration-slide.jpg)
 
 Application Insights captures rich metrics:
 
@@ -183,21 +183,21 @@ Application Insights captures rich metrics:
 | Dependency Calls | Outbound service and database responses |
 | User Analytics   | Session counts, page views, feature use |
 
-![The image outlines key metrics for using application insights, including request rates, response times, failure rates, dependency tracking, and user analytics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867265/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/application-insights-key-metrics-outline.jpg)
+![The image outlines key metrics for using application insights, including request rates, response times, failure rates, dependency tracking, and user analytics.](https://kodekloud.com/kk-media/image/upload/v1752867265/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/application-insights-key-metrics-outline.jpg)
 
 By combining real-time and historical data, you can quickly identify anomalies and track long-term performance trends.
 
-![The image illustrates the use of application insights, highlighting the analysis of real-time and historical data to identify trends and potential issues.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867266/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/application-insights-data-analysis-trends.jpg)
+![The image illustrates the use of application insights, highlighting the analysis of real-time and historical data to identify trends and potential issues.](https://kodekloud.com/kk-media/image/upload/v1752867266/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/application-insights-data-analysis-trends.jpg)
 
 ## Working with Azure Log Analytics
 
 A Log Analytics workspace centralizes log data from Azure services, on-premises systems, and custom apps. Use the [Kusto Query Language (KQL)](https://learn.microsoft.com/azure/data-explorer/kusto/query/) to filter, aggregate, and visualize logs.
 
-![The image is an introduction to log analytics, showing a flow from Azure Services, On-Premises Data Gateways, and App Services to collecting log data and analyzing it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867267/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/log-analytics-introduction-azure-flow.jpg)
+![The image is an introduction to log analytics, showing a flow from Azure Services, On-Premises Data Gateways, and App Services to collecting log data and analyzing it.](https://kodekloud.com/kk-media/image/upload/v1752867267/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/log-analytics-introduction-azure-flow.jpg)
 
 Key capabilities include log retention, cross-resource queries, and custom alerts.
 
-![The image is an introduction to Log Analytics, highlighting the use of Kusto Query Language (KQL) for creating queries and analyzing data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867269/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/log-analytics-introduction-kql-queries.jpg)
+![The image is an introduction to Log Analytics, highlighting the use of Kusto Query Language (KQL) for creating queries and analyzing data.](https://kodekloud.com/kk-media/image/upload/v1752867269/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/log-analytics-introduction-kql-queries.jpg)
 
 > **lightbulb** KQL supports time-series analysis, joins, and machine learning plugins for advanced insights.
 
@@ -215,9 +215,9 @@ Set up alert rules to act on critical conditions:
 * **Alert Suppression** prevents noisy notifications.
 * Tune thresholds based on historical baselines for accuracy.
 
-![The image illustrates a process flow for configuring alerts and notifications using Azure Monitor, showing alerts on critical conditions leading to notifications and automated actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867270/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/azure-monitor-alerts-notifications-flow.jpg)
+![The image illustrates a process flow for configuring alerts and notifications using Azure Monitor, showing alerts on critical conditions leading to notifications and automated actions.](https://kodekloud.com/kk-media/image/upload/v1752867270/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/azure-monitor-alerts-notifications-flow.jpg)
 
-![The image illustrates three types of alerts: Metric Alerts (e.g., CPU usage), Log Alerts (e.g., specific error codes), and Activity Log Alerts (e.g., resource changes).](../../../../images/kodekloud.com/kk-media/image/upload/v1752867271/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/alert-types-metric-log-activity.jpg)
+![The image illustrates three types of alerts: Metric Alerts (e.g., CPU usage), Log Alerts (e.g., specific error codes), and Activity Log Alerts (e.g., resource changes).](https://kodekloud.com/kk-media/image/upload/v1752867271/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/alert-types-metric-log-activity.jpg)
 
 ## Monitoring Application Performance
 
@@ -230,9 +230,9 @@ Track these KPIs to ensure your app meets SLAs:
 
 Use Application Insights charts and Workbooks to visualize trends and drill into anomalies.
 
-![The image illustrates a process for monitoring application performance, showing how application insights track KPIs using a performance monitor to understand application performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867273/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/application-performance-monitoring-kpis.jpg)
+![The image illustrates a process for monitoring application performance, showing how application insights track KPIs using a performance monitor to understand application performance.](https://kodekloud.com/kk-media/image/upload/v1752867273/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/application-performance-monitoring-kpis.jpg)
 
-![The image illustrates a process for monitoring application performance, showing performance trend analysis identifying bottlenecks, which are then optimized to achieve better performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867274/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/application-performance-monitoring-trend-analysis.jpg)
+![The image illustrates a process for monitoring application performance, showing performance trend analysis identifying bottlenecks, which are then optimized to achieve better performance.](https://kodekloud.com/kk-media/image/upload/v1752867274/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/application-performance-monitoring-trend-analysis.jpg)
 
 ## Analyzing Usage Metrics
 
@@ -242,7 +242,7 @@ Usage telemetry helps you understand user engagement:
 * **Page Views**: Feature popularity
 * **Events**: Customized tracking for critical workflows
 
-![The image is a diagram titled "Analyzing Usage Metrics," showing "Application Insights" tracking "User Sessions," "Page Views," and "Interactions."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867276/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/analyzing-usage-metrics-diagram.jpg)
+![The image is a diagram titled "Analyzing Usage Metrics," showing "Application Insights" tracking "User Sessions," "Page Views," and "Interactions."](https://kodekloud.com/kk-media/image/upload/v1752867276/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/analyzing-usage-metrics-diagram.jpg)
 
 Leverage these insights to refine features and prioritize development effort.
 
@@ -256,7 +256,7 @@ Collect detailed traces, activity logs, and exception reports to perform root-ca
 
 > **triangle-alert** Insufficient logging can slow down troubleshooting. Ensure critical paths emit structured logs and correlation IDs.
 
-![The image is a diagram titled "Diagnostic Data and Troubleshooting," showing components like "Activity Log," "Traces," and "Exception Reports" under "Diagnostic Data," with a "Troubleshoot" icon below.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867277/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/diagnostic-data-troubleshooting-diagram.jpg)
+![The image is a diagram titled "Diagnostic Data and Troubleshooting," showing components like "Activity Log," "Traces," and "Exception Reports" under "Diagnostic Data," with a "Troubleshoot" icon below.](https://kodekloud.com/kk-media/image/upload/v1752867277/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/diagnostic-data-troubleshooting-diagram.jpg)
 
 ## Creating Custom Dashboards
 
@@ -268,7 +268,7 @@ Build real-time, shareable dashboards in Azure Monitor:
 
 This centralized view fosters collaboration and rapid incident response.
 
-![The image is an illustration about creating custom dashboards in Azure Monitor, highlighting features like data visualization options and team sharing for real-time monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867278/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/azure-monitor-custom-dashboards-illustration.jpg)
+![The image is an illustration about creating custom dashboards in Azure Monitor, highlighting features like data visualization options and team sharing for real-time monitoring.](https://kodekloud.com/kk-media/image/upload/v1752867278/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/azure-monitor-custom-dashboards-illustration.jpg)
 
 ## Best Practices for Azure Telemetry
 
@@ -278,7 +278,7 @@ This centralized view fosters collaboration and rapid incident response.
 4. **Data Retention**: Balance retention periods with cost and compliance.
 5. **Actionable Insights**: Use telemetry to inform capacity planning and feature roadmaps.
 
-![The image outlines three best practices for application monitoring: ensuring all critical parts are monitored, consistently updating alert rules, and leveraging telemetry insights for continuous improvement.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867279/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/application-monitoring-best-practices.jpg)
+![The image outlines three best practices for application monitoring: ensuring all critical parts are monitored, consistently updating alert rules, and leveraging telemetry insights for continuous improvement.](https://kodekloud.com/kk-media/image/upload/v1752867279/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance/application-monitoring-best-practices.jpg)
 
 By continually refining your telemetry strategy, you’ll ensure high availability, performance, and user satisfaction for your Azure applications.
 

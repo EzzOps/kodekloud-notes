@@ -12,7 +12,7 @@ mark@email.com rajasekar@email.com ...
 
 > **lightbulb** Associative arrays are **unordered**; iteration order can vary.
 
-![The image is a slide about associative arrays, highlighting that they do not consider the order in which elements are stored.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868544/notes-assets/images/Advanced-Bash-Scripting-Associative/associative-arrays-order-slide.jpg)
+![The image is a slide about associative arrays, highlighting that they do not consider the order in which elements are stored.](https://kodekloud.com/kk-media/image/upload/v1752868544/notes-assets/images/Advanced-Bash-Scripting-Associative/associative-arrays-order-slide.jpg)
 
 ## Replacing a Value
 
@@ -113,7 +113,7 @@ In this article, we'll cover:
 * Other useful `declare` flags
 * Working with arrays using `declare -a`
 
-![The image features a list of programming-related topics with checkmarks, including explaining data types, dynamically typed syntax, the declare command in Bash, and using declare for arrays. It also includes simple line drawings of a person and a lightbulb.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868546/notes-assets/images/Advanced-Bash-Scripting-Declare/programming-topics-checklist-drawing.jpg)
+![The image features a list of programming-related topics with checkmarks, including explaining data types, dynamically typed syntax, the declare command in Bash, and using declare for arrays. It also includes simple line drawings of a person and a lightbulb.](https://kodekloud.com/kk-media/image/upload/v1752868546/notes-assets/images/Advanced-Bash-Scripting-Declare/programming-topics-checklist-drawing.jpg)
 
 ## Data Types in Bash
 
@@ -122,7 +122,7 @@ Bash offers two fundamental data types:
 1. **String**
 2. **Integer**
 
-![The image shows a split screen with "String" labeled as 1 on the left and "Integer" labeled as 2 on the right, under the title "arrays-declare."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868547/notes-assets/images/Advanced-Bash-Scripting-Declare/arrays-declare-string-integer.jpg)
+![The image shows a split screen with "String" labeled as 1 on the left and "Integer" labeled as 2 on the right, under the title "arrays-declare."](https://kodekloud.com/kk-media/image/upload/v1752868547/notes-assets/images/Advanced-Bash-Scripting-Declare/arrays-declare-string-integer.jpg)
 
 You can assign values using the typical syntax:
 

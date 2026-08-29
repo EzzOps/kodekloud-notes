@@ -21,9 +21,7 @@ Key points:
 * `terraform show` can also render saved plan files (for example, `terraform show plan.tfplan`) so you can inspect a planned change in the same human-readable format.
 * For programmatic consumption, use `terraform show -json` to obtain a machine-readable JSON representation of the state or plan.
 
-<Callout icon="lightbulb">
-  `terraform show` reads the state or a saved plan file and formats it for humans. It reports what is recorded in state or plan—it does not actively query the provider for live resource properties.
-</Callout>
+> **lightbulb** `terraform show` reads the state or a saved plan file and formats it for humans. It reports what is recorded in state or plan—it does not actively query the provider for live resource properties.
 
 In production and enterprise environments, `terraform show` is essential for auditing deployed resource properties, debugging drift against known configuration, and validating that applied infrastructure matches expectations.
 
@@ -54,9 +52,7 @@ Useful flags and variations:
 * `terraform output <NAME>` — prints a single output value by name.
 * Sensitive outputs: mark outputs with `sensitive = true` in your configuration to avoid displaying secrets in interactive output. Note how you handle sensitive outputs in automation and logs.
 
-<Callout icon="lightbulb">
-  Use `terraform output` (and `terraform output -json`) in CI/CD pipelines to retrieve values from state (for example, IPs or resource IDs) and pass them to downstream steps like configuration management, DNS updates, or deployment scripts.
-</Callout>
+> **lightbulb** Use `terraform output` (and `terraform output -json`) in CI/CD pipelines to retrieve values from state (for example, IPs or resource IDs) and pass them to downstream steps like configuration management, DNS updates, or deployment scripts.
 
 ## Command quick reference
 
@@ -87,9 +83,7 @@ Links and references:
 * [Terraform CLI docs — output](https://www.terraform.io/cli/commands/output)
 * [Terraform State](https://www.terraform.io/language/state)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/a87fc0ec-6ef6-409e-91cb-709bdcebb9eb/lesson/40bbea76-b88f-4725-b14f-e1fe5d46b8d4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/a87fc0ec-6ef6-409e-91cb-709bdcebb9eb/lesson/40bbea76-b88f-4725-b14f-e1fe5d46b8d4)
 
 
 # Terraform State and Refresh

@@ -12,9 +12,7 @@ Overview
 * The consume step accepts that artifact as an input artifact (passed via `arguments`) and prints its contents.
 * The templates run in sequence: `generate` finishes first, then `consume` runs and receives the artifact produced by `generate`.
 
-<Callout icon="lightbulb">
-  Use standard temporary paths such as /tmp inside container scripts to avoid confusion. This example uses /tmp consistently for both producer and consumer.
-</Callout>
+> **lightbulb** Use standard temporary paths such as /tmp inside container scripts to avoid confusion. This example uses /tmp consistently for both producer and consumer.
 
 Full workflow (single, corrected YAML)
 
@@ -141,6 +139,4 @@ References and further reading
 * [Argo Workflows Documentation](https://argoproj.github.io/argo-workflows/)
 * [MinIO — High Performance Object Storage](https://min.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/b02f6005-c4a1-44ca-a9af-48b19227d416" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/b02f6005-c4a1-44ca-a9af-48b19227d416)

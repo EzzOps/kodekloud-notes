@@ -28,7 +28,7 @@ An in-place upgrade involves two logical layers:
 * **Data Plane** (in your AWS account)\
   Node Groups, Karpenter nodes, Fargate pods, custom controllers, add-ons, and Helm charts.
 
-![The image illustrates an "In-Place Cluster Upgrade" with a control plane containing Etcd V2, API server V2, and Scheduler V2, and a data plane with nodes. It includes AWS and user icons, indicating cloud and user interaction.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862914/notes-assets/images/AWS-EKS-EKS-Upgrades/in-place-cluster-upgrade-aws-user-icons.jpg)
+![The image illustrates an "In-Place Cluster Upgrade" with a control plane containing Etcd V2, API server V2, and Scheduler V2, and a data plane with nodes. It includes AWS and user icons, indicating cloud and user interaction.](https://kodekloud.com/kk-media/image/upload/v1752862914/notes-assets/images/AWS-EKS-EKS-Upgrades/in-place-cluster-upgrade-aws-user-icons.jpg)
 
 ### Control Plane Upgrade
 
@@ -49,7 +49,7 @@ Once the control plane reports healthy, proceed to the data plane.
 
 Your workloads run on compute layers you control. Upgrade procedures differ by type:
 
-![The image is a diagram titled "In-Place Cluster Upgrade" showing components of a data plane, including Node Groups, Karpenter, AWS Fargate, Controllers, Add-ons, and Helm Charts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862916/notes-assets/images/AWS-EKS-EKS-Upgrades/in-place-cluster-upgrade-data-plane-diagram.jpg)
+![The image is a diagram titled "In-Place Cluster Upgrade" showing components of a data plane, including Node Groups, Karpenter, AWS Fargate, Controllers, Add-ons, and Helm Charts.](https://kodekloud.com/kk-media/image/upload/v1752862916/notes-assets/images/AWS-EKS-EKS-Upgrades/in-place-cluster-upgrade-data-plane-diagram.jpg)
 
 | Data Plane Type | Upgrade Mechanism                  | Configuration                            |
 | --------------- | ---------------------------------- | ---------------------------------------- |
@@ -119,7 +119,7 @@ Use the EKS Cluster Insights API to scan for deprecated or removed resources (fo
 
 [kubectl-no-trouble](https://github.com/doitintl/kubectl-no-trouble) inspects live cluster objects and reports API deprecations and removals in upcoming Kubernetes versions. Make sure your RBAC permits listing and describing all namespaces and resources.
 
-![The image shows a diagram with "AWS EKS" and "Kubernetes 124" alongside a "Pod Security Policy" icon. A user is asking if anything is going to be removed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862917/notes-assets/images/AWS-EKS-EKS-Upgrades/aws-eks-kubernetes-pod-security-diagram.jpg)
+![The image shows a diagram with "AWS EKS" and "Kubernetes 124" alongside a "Pod Security Policy" icon. A user is asking if anything is going to be removed.](https://kodekloud.com/kk-media/image/upload/v1752862917/notes-assets/images/AWS-EKS-EKS-Upgrades/aws-eks-kubernetes-pod-security-diagram.jpg)
 
 > **triangle-alert** Skipping compatibility checks can lead to broken workloads post-upgrade. Always fix deprecated APIs **before** starting the upgrade.
 
@@ -138,7 +138,7 @@ Blue-green upgrades require provisioning duplicate infrastructure and migrating 
 
 ## Summary
 
-![The image is a summary slide listing five topics related to EKS cluster upgrades, including node upgrades, control plane upgrades, and add-ons. It features a gradient background with a copyright notice for KodeKloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862919/notes-assets/images/AWS-EKS-EKS-Upgrades/eks-cluster-upgrades-summary-slide.jpg)
+![The image is a summary slide listing five topics related to EKS cluster upgrades, including node upgrades, control plane upgrades, and add-ons. It features a gradient background with a copyright notice for KodeKloud.](https://kodekloud.com/kk-media/image/upload/v1752862919/notes-assets/images/AWS-EKS-EKS-Upgrades/eks-cluster-upgrades-summary-slide.jpg)
 
 In this guide, we covered:
 

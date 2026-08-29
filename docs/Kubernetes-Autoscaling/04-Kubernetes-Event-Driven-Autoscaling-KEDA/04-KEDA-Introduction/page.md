@@ -40,9 +40,7 @@ Limitations:
 * Uses periodic polling (controller sync intervals), so it reacts on a timer rather than directly to events.
 * Requires predefined thresholds and at least one running pod; HPA cannot scale workloads to zero.
 
-<Callout icon="warning">
-  HPA cannot scale a workload down to zero replicas. If you need scale-to-zero behavior for cost savings during idle periods, you’ll need an event-driven scaler like KEDA.
-</Callout>
+> **warning** HPA cannot scale a workload down to zero replicas. If you need scale-to-zero behavior for cost savings during idle periods, you’ll need an event-driven scaler like KEDA.
 
 ## Vertical Pod Autoscaler (VPA)
 
@@ -64,9 +62,7 @@ Limitations:
 * VPA does not provide horizontal scaling; combining VPA and HPA needs careful coordination to avoid controller conflicts.
 * May react slower to sudden spikes because of restart/re-provision cycles.
 
-<Callout icon="warning">
-  VPA adjustments typically restart pods. For latency-sensitive or stateful workloads, plan carefully or avoid automatic restarts without testing.
-</Callout>
+> **warning** VPA adjustments typically restart pods. For latency-sensitive or stateful workloads, plan carefully or avoid automatic restarts without testing.
 
 ## Cluster Proportional Autoscaler (CPA)
 
@@ -115,9 +111,7 @@ HPA may not be ideal here (cannot scale to zero and may lag on CPU-based signals
 * Reacts quickly to metric changes and supports scaling down to zero when demand is zero.
 * Uses Kubernetes CRDs like ScaledObject and ScaledJob to define scaling behavior with minimal extra infrastructure.
 
-<Callout icon="lightbulb">
-  KEDA enables event-driven autoscaling, including scaling to zero, for any metric or event source that a supported scaler can access or that you can expose.
-</Callout>
+> **lightbulb** KEDA enables event-driven autoscaling, including scaling to zero, for any metric or event source that a supported scaler can access or that you can expose.
 
 ## KEDA architecture and components
 
@@ -199,6 +193,4 @@ This architecture makes KEDA an excellent choice when you need:
 
 Thanks for reading this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/1b14abfc-5f0a-41ce-8bb4-4b9908578d76" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/1b14abfc-5f0a-41ce-8bb4-4b9908578d76)

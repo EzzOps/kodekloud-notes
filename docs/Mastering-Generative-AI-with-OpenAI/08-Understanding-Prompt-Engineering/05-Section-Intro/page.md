@@ -14,12 +14,8 @@ Prompt engineering is a foundational component of generative AI. By carefully de
 | Avoiding AI Hallucinations | Techniques for minimizing incorrect or irrelevant responses from AI models. |
 | Best Practices & Methods   | Advanced tips, tools, and recommended workflows for prompt engineering.     |
 
-<Callout icon="lightbulb">
-  Strong prompts not only improve AI accuracy but also reduce the need for extensive post-processing. Experiment with different structures to find what works best for your use case.
-</Callout>
+> **lightbulb** Strong prompts not only improve AI accuracy but also reduce the need for extensive post-processing. Experiment with different structures to find what works best for your use case.
 
 Over the following sections, we'll cover these topics in detail, with practical examples and strategies to help you master prompt engineering. Let’s get started!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/8c96af76-fcd9-4bdf-a176-b7af1decdc5c/lesson/bf78bb38-91d1-4c47-98a6-99861665ec25" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/8c96af76-fcd9-4bdf-a176-b7af1decdc5c/lesson/bf78bb38-91d1-4c47-98a6-99861665ec25)

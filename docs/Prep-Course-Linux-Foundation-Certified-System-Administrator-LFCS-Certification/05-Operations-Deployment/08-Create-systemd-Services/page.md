@@ -24,12 +24,10 @@ sleep 5
 echo "MyApp Crashed" | systemd-cat -t MyApp -p err
 ```
 
-<Callout icon="lightbulb">
-  • `systemd-cat` sends messages directly to the system log.\
+> **lightbulb** • `systemd-cat` sends messages directly to the system log.\
   • The `-t` option attaches a tag (MyApp) to every log message.\
   • The `-p` option sets the logging priority (using `info` for normal status and `err` for error).\
   • The `sleep 5` command simulates a delay of five seconds before logging a crash.
-</Callout>
 
 Save the file and make it executable:
 
@@ -45,21 +43,15 @@ Detailed explanations for service unit files and configuration options are avail
 man systemd.service
 ```
 
-<Frame>
-  ![The image shows a manual page for "systemd.service," detailing the configuration of service unit files in systemd. It includes sections like NAME, SYNOPSIS, and DESCRIPTION, explaining how these files encode information about processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881337/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-systemd-Services/systemd-service-manual-page.jpg)
-</Frame>
+![The image shows a manual page for "systemd.service," detailing the configuration of service unit files in systemd. It includes sections like NAME, SYNOPSIS, and DESCRIPTION, explaining how these files encode information about processes.](https://kodekloud.com/kk-media/image/upload/v1752881337/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-systemd-Services/systemd-service-manual-page.jpg)
 
 The manual explains useful configuration options. For instance, the `Restart` option specifies under which conditions systemd will restart your application. Even if your application always returns a zero exit code, configuring it to restart every time it exits can be beneficial. Additionally, the `RestartSec` option introduces a delay before restarting, which helps avoid creating a rapid restart loop that can overwhelm the system.
 
-<Frame>
-  ![The image shows a section of a manual page for systemd.service, detailing the configuration options for the Restart= setting, which controls when a service should be restarted based on various conditions and exit statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881338/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-systemd-Services/systemd-service-restart-options.jpg)
-</Frame>
+![The image shows a section of a manual page for systemd.service, detailing the configuration options for the Restart= setting, which controls when a service should be restarted based on various conditions and exit statuses.](https://kodekloud.com/kk-media/image/upload/v1752881338/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-systemd-Services/systemd-service-restart-options.jpg)
 
 Other parameters, such as `RestartSec`, `RestartSteps`, `RestartMaxDelaySec`, and `TimeoutStartSec`, offer fine-tuned control over the timing and behavior of service restarts in different scenarios.
 
-<Frame>
-  ![The image shows a manual page for systemd service configuration options, detailing parameters like RestartSec, RestartSteps, RestartMaxDelaySec, and TimeoutStartSec. These settings control service restart intervals and timeouts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881340/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-systemd-Services/systemd-service-configuration-manual.jpg)
-</Frame>
+![The image shows a manual page for systemd service configuration options, detailing parameters like RestartSec, RestartSteps, RestartMaxDelaySec, and TimeoutStartSec. These settings control service restart intervals and timeouts.](https://kodekloud.com/kk-media/image/upload/v1752881340/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-systemd-Services/systemd-service-configuration-manual.jpg)
 
 ## Creating a Service Template
 
@@ -87,9 +79,7 @@ Description=My Application
 After=network.target auditd.service
 ```
 
-<Callout icon="lightbulb">
-  Some examples might include conditions like `ConditionPathExists=!/etc/ssh/sshd_not_to_be_run`. This condition prevents the service from starting if the file exists. For our simple application, you can omit such conditions.
-</Callout>
+> **lightbulb** Some examples might include conditions like `ConditionPathExists=!/etc/ssh/sshd_not_to_be_run`. This condition prevents the service from starting if the file exists. For our simple application, you can omit such conditions.
 
 ### Configuring the Service Section
 
@@ -207,8 +197,6 @@ This lesson has guided you through the process of creating a systemd service fil
 
 Happy coding, and see you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/93be34a1-7c73-4e44-ac19-a9b354327450" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/93be34a1-7c73-4e44-ac19-a9b354327450)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/991fc944-13f4-4b0b-98c2-d3a49c3d4595" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/991fc944-13f4-4b0b-98c2-d3a49c3d4595)

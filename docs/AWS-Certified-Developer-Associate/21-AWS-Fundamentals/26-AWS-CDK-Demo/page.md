@@ -28,7 +28,7 @@ cdk --version
 
 Ensure Node.js is installed correctly by referring to the [Node.js documentation](https://nodejs.org/en/docs/). The site usually detects your operating system and provides the appropriate download options.
 
-![The image shows the Node.js download page, offering options to download the LTS and Current versions for Windows (x64). It also mentions available security releases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858090/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK-Demo/nodejs-download-page-lts-current.jpg)
+![The image shows the Node.js download page, offering options to download the LTS and Current versions for Windows (x64). It also mentions available security releases.](https://kodekloud.com/kk-media/image/upload/v1752858090/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CDK-Demo/nodejs-download-page-lts-current.jpg)
 
 ***
 

@@ -23,7 +23,7 @@ Dedicated feature branches isolate new work from your main line of development. 
 * Cleaner history when merging completed features
 * Reduced risk of unstable code in the main branch
 
-![The image is a diagram illustrating dedicated feature branches in a version control system, showing a main branch with two feature branches labeled "Little Feature" and "Big Feature."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867347/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Diving-Into-Types-of-Branch-Workflows/dedicated-feature-branches-version-control-diagram.jpg)
+![The image is a diagram illustrating dedicated feature branches in a version control system, showing a main branch with two feature branches labeled "Little Feature" and "Big Feature."](https://kodekloud.com/kk-media/image/upload/v1752867347/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Diving-Into-Types-of-Branch-Workflows/dedicated-feature-branches-version-control-diagram.jpg)
 
 ***
 
@@ -35,7 +35,7 @@ The forking model gives each contributor a personal copy of the central repo. Wo
 * No need for direct push permissions on the upstream repo
 * A clear audit trail of contributions
 
-![The image illustrates a forking model, showing a cloud-based repository with folders and documents, indicating a separation between "Other's" and "Yours" sections. It includes icons representing a forked repository and a local machine.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867348/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Diving-Into-Types-of-Branch-Workflows/forking-model-cloud-repository-icons.jpg)
+![The image illustrates a forking model, showing a cloud-based repository with folders and documents, indicating a separation between "Other's" and "Yours" sections. It includes icons representing a forked repository and a local machine.](https://kodekloud.com/kk-media/image/upload/v1752867348/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Diving-Into-Types-of-Branch-Workflows/forking-model-cloud-repository-icons.jpg)
 
 ***
 
@@ -70,7 +70,7 @@ A **structured** approach to developing and integrating features:
 
 > **lightbulb** Use descriptive branch names (e.g., `feature/user-auth`) and follow your team’s prefix conventions (`feature/`, `bugfix/`, `hotfix/`).
 
-![The image illustrates a "Feature Branch Workflow" with six steps: Branch Creation, Committing Work, Pull Request Initiation, Code Discussion, Code Deployment, and Integration/Merge. Each step includes a brief description of the process involved.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867350/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Diving-Into-Types-of-Branch-Workflows/feature-branch-workflow-six-steps.jpg)
+![The image illustrates a "Feature Branch Workflow" with six steps: Branch Creation, Committing Work, Pull Request Initiation, Code Discussion, Code Deployment, and Integration/Merge. Each step includes a brief description of the process involved.](https://kodekloud.com/kk-media/image/upload/v1752867350/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Diving-Into-Types-of-Branch-Workflows/feature-branch-workflow-six-steps.jpg)
 
 ***
 
@@ -87,7 +87,7 @@ GitHub Flow is a lightweight, branch-based workflow optimized for continuous del
 
 This flow emphasizes rapid feedback and always-deployable code.
 
-![The image illustrates the GitHub Flow Process in six steps: create a new branch, make changes, initiate a pull request, collaborate, merge the pull request, and delete the branch.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867351/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Diving-Into-Types-of-Branch-Workflows/github-flow-process-six-steps.jpg)
+![The image illustrates the GitHub Flow Process in six steps: create a new branch, make changes, initiate a pull request, collaborate, merge the pull request, and delete the branch.](https://kodekloud.com/kk-media/image/upload/v1752867351/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Diving-Into-Types-of-Branch-Workflows/github-flow-process-six-steps.jpg)
 
 ***
 
@@ -103,7 +103,7 @@ Common in open-source, the fork workflow keeps the central repository protected 
 
 > **triangle-alert** Always sync your fork with the upstream `main` branch before starting new work to avoid merge conflicts.
 
-![The image illustrates a fork workflow in version control, showing the process of forking, cloning, editing, and pushing changes in a repository. It highlights the concepts of personal repository space, dual repository setup, and its common use in open-source projects.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867352/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Diving-Into-Types-of-Branch-Workflows/fork-workflow-version-control-diagram.jpg)
+![The image illustrates a fork workflow in version control, showing the process of forking, cloning, editing, and pushing changes in a repository. It highlights the concepts of personal repository space, dual repository setup, and its common use in open-source projects.](https://kodekloud.com/kk-media/image/upload/v1752867352/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Diving-Into-Types-of-Branch-Workflows/fork-workflow-version-control-diagram.jpg)
 
 ***
 

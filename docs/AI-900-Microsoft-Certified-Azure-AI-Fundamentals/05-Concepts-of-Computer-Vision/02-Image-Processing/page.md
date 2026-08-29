@@ -14,7 +14,7 @@ An image is essentially an array of pixel values. For a grayscale image, each pi
 
 Image processing techniques often rely on applying filters. Filters are typically composed of a kernel, which is a small matrix of weights. This kernel is convolved over the image: it moves across the image and, at each position, computes a new pixel value by combining the original pixel values with the kernel’s weights.
 
-![The image illustrates image processing, showing an array of pixel values and a filter matrix used to modify images.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856959/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Image-Processing/image-processing-pixel-values-filter.jpg)
+![The image illustrates image processing, showing an array of pixel values and a filter matrix used to modify images.](https://kodekloud.com/kk-media/image/upload/v1752856959/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Image-Processing/image-processing-pixel-values-filter.jpg)
 
 The convolution process results in a modified version of the original image. For example, certain areas of the image may show concentrations of pixel values like 255 (white), while others may display 0 (black), thereby emphasizing distinct visual features.
 
@@ -22,7 +22,7 @@ The convolution process results in a modified version of the original image. For
 
 A common filter used in image processing is the Laplace filter, which is highly effective for edge detection. As the Laplace kernel moves over the image, it accentuates regions with abrupt changes in pixel intensity, thus clearly defining the edges of objects within the image.
 
-![The image shows two grids representing pixel arrays, illustrating how filters are applied to change images in image processing. The left grid shows an original array of pixel values, while the right grid shows the result after a filter is applied.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856960/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Image-Processing/pixel-arrays-image-processing-filters.jpg)
+![The image shows two grids representing pixel arrays, illustrating how filters are applied to change images in image processing. The left grid shows an original array of pixel values, while the right grid shows the result after a filter is applied.](https://kodekloud.com/kk-media/image/upload/v1752856960/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Image-Processing/pixel-arrays-image-processing-filters.jpg)
 
 The output of this filtering process is an image where edges are prominently defined. Regions with minimal variation—such as the image center—may remain at a uniform value of 0. This clear delineation of features makes subsequent analysis and computer vision tasks more effective.
 

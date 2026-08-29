@@ -24,9 +24,7 @@ Those repeated lines indicate the proxy retried the request according to the Vir
 
 ## Notes and tips
 
-<Callout icon="lightbulb">
-  Timeouts and retries are configured on the VirtualService HTTP route. Use timeouts to bound request latency, and use retries to handle transient 5xx errors — but be careful: retries increase load on upstreams. Tune `attempts` and `perTryTimeout` according to your application behavior.
-</Callout>
+> **lightbulb** Timeouts and retries are configured on the VirtualService HTTP route. Use timeouts to bound request latency, and use retries to handle transient 5xx errors — but be careful: retries increase load on upstreams. Tune `attempts` and `perTryTimeout` according to your application behavior.
 
 Common guidance:
 
@@ -85,11 +83,9 @@ spec:
 
 That wraps up this lesson on configuring timeouts and retries with Istio VirtualServices.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/7935d043-5237-44e5-8fbf-33f442e9e765" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/7935d043-5237-44e5-8fbf-33f442e9e765)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/78ec0f28-7be6-422f-953e-117ee5150663" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/78ec0f28-7be6-422f-953e-117ee5150663)
 
 
 # Demo Workload Entry

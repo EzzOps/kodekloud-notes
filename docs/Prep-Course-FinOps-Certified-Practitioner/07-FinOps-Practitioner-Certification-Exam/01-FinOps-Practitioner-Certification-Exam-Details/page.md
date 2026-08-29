@@ -58,9 +58,7 @@ Exam providers may update proctoring or delivery methods. Confirm current polici
 * Scenario reasoning: Practice explaining your choices — why one trade-off is better than another — since many questions test judgment and application.
 * Review logistics: Confirm the latest policies on scheduling, proctoring, and refunds before registering.
 
-<Callout icon="lightbulb">
-  Policies, pricing, and delivery methods can change. Always confirm the latest exam details on the official [FinOps Foundation](https://www.finops.org/) or exam provider pages before registering.
-</Callout>
+> **lightbulb** Policies, pricing, and delivery methods can change. Always confirm the latest exam details on the official [FinOps Foundation](https://www.finops.org/) or exam provider pages before registering.
 
 ## Quick daily study checklist
 
@@ -75,8 +73,6 @@ With consistent practice, scenario-focused study, and familiarity with the exam 
 
 See you in the next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/d583e48e-f624-41a5-b906-ec029a846ba1/lesson/65a835c4-8f93-4d4a-b0ba-bf3e20ffba14" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/d583e48e-f624-41a5-b906-ec029a846ba1/lesson/65a835c4-8f93-4d4a-b0ba-bf3e20ffba14)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/d583e48e-f624-41a5-b906-ec029a846ba1/lesson/453fb484-abdc-4cb5-826f-15df85524e72" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/d583e48e-f624-41a5-b906-ec029a846ba1/lesson/453fb484-abdc-4cb5-826f-15df85524e72)

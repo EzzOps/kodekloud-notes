@@ -47,9 +47,7 @@ Because of that momentum, LangChain is now a standard tool for building applicat
 
 LangChain provides SDKs for both Python and JavaScript. This lesson focuses on the Python implementation and its integration with OpenAI. While LangChain supports many LLMs and providers, this article concentrates on the patterns and examples commonly used with OpenAI’s models.
 
-<Callout icon="lightbulb">
-  This lesson focuses on LangChain's Python SDK and examples using OpenAI. If you plan to use other providers (e.g., Anthropic, Cohere, local LLMs), the same core concepts apply—LangChain adapters make switching providers straightforward.
-</Callout>
+> **lightbulb** This lesson focuses on LangChain's Python SDK and examples using OpenAI. If you plan to use other providers (e.g., Anthropic, Cohere, local LLMs), the same core concepts apply—LangChain adapters make switching providers straightforward.
 
 <Frame>
   <img alt="The image features the text &#x22;The Rise of LangChain&#x22; with logos for LangChain and OpenAI, and an icon labeled &#x22;Application.&#x22;" />
@@ -60,9 +58,7 @@ Practical considerations
 * LangChain reduces integration complexity, but you still need to manage API keys, rate limits, and costs for LLM and embedding providers.
 * When switching providers, review differences in tokenization, embedding dimensions, and model behavior—LangChain standardizes interfaces but does not hide model-specific characteristics.
 
-<Callout icon="warning">
-  Never commit API keys or credentials to source control. Use environment variables, secret managers, or your platform’s secret store to keep keys secure.
-</Callout>
+> **warning** Never commit API keys or credentials to source control. Use environment variables, secret managers, or your platform’s secret store to keep keys secure.
 
 Further reading and references
 
@@ -70,6 +66,4 @@ Further reading and references
 * OpenAI Platform Docs: [https://platform.openai.com/docs/](https://platform.openai.com/docs/)
 * If you’re new to OpenAI, consider the [Introduction to OpenAI](https://learn.kodekloud.com/user/courses/introduction-to-openai) course on KodeKloud.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ab7ff6ea-63e2-4d3b-af7c-ed22616cc3b6/lesson/185f55c8-b528-4016-a4ea-e35690c295f4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/ab7ff6ea-63e2-4d3b-af7c-ed22616cc3b6/lesson/185f55c8-b528-4016-a4ea-e35690c295f4)

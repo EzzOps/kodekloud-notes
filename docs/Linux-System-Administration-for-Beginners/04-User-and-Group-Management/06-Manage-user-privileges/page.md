@@ -14,9 +14,7 @@ By default, only the **root** (superuser) can modify system-critical files and s
 $ sudo apt update
 ```
 
-<Callout icon="lightbulb">
-  When running `sudo` for the first time, you’ll be prompted for *your* password—not the root password.
-</Callout>
+> **lightbulb** When running `sudo` for the first time, you’ll be prompted for *your* password—not the root password.
 
 ## Granting `sudo` via the wheel group
 
@@ -50,9 +48,7 @@ Inside, you’ll find a line like:
 %wheel ALL=(ALL) ALL
 ```
 
-<Callout icon="triangle-alert">
-  A malformed `/etc/sudoers` can lock out all sudo access. Always use `visudo` to edit safely.
-</Callout>
+> **triangle-alert** A malformed `/etc/sudoers` can lock out all sudo access. Always use `visudo` to edit safely.
 
 ### Breakdown of a sudoers entry
 

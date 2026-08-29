@@ -101,9 +101,7 @@ For `clarify`, the router can direct to a node that prompts the user for more de
   <img alt="The image provides design tips for conditional graphs, including using explicit state keys, keeping routing functions pure, logging routes for visibility, and avoiding embedding routing inside nodes." />
 </Frame>
 
-<Callout icon="warning">
-  Do not perform side effects or call external services (including LLMs) inside your router function. Put that work in preceding nodes and let the router only read state and return a key.
-</Callout>
+> **warning** Do not perform side effects or call external services (including LLMs) inside your router function. Put that work in preceding nodes and let the router only read state and return a key.
 
 When routing is mixed into node logic it becomes harder to debug and test. Separating routing with `add_conditional_edges` keeps graphs maintainable and easier to reason about — a must for production systems.
 
@@ -111,9 +109,7 @@ When routing is mixed into node logic it becomes harder to debug and test. Separ
   <img alt="The image is a flowchart depicting a reusable routing pattern using a &#x22;Pluggable Router&#x22; connected to Context A (Graph 1) and Context B (Graph 2), emphasizing logic plug-ins and endpoint swapping or prototyping." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Design routers as pure, pluggable functions so they can be reused across graphs and contexts — for example, role-based routing, language switching, or escalation flows.
-</Callout>
+> **lightbulb** Design routers as pure, pluggable functions so they can be reused across graphs and contexts — for example, role-based routing, language switching, or escalation flows.
 
 ## Summary
 
@@ -124,9 +120,7 @@ The router is the brain of a LangGraph: it decides which work to run next but do
 * [LangChain LLMChain documentation](https://langchain.readthedocs.io/en/latest/modules/chains/index_examples/llm_chain.html)
 * LangGraph conditional routing concepts and best practices (internal docs and examples)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/2e37c751-0429-43c9-8ecf-2df222ce0663/lesson/a4054bd2-0a1b-4889-a3a9-da9d04fa34a4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/2e37c751-0429-43c9-8ecf-2df222ce0663/lesson/a4054bd2-0a1b-4889-a3a9-da9d04fa34a4)
 
 
 # The Path Building Simple Non Cyclical Sequences

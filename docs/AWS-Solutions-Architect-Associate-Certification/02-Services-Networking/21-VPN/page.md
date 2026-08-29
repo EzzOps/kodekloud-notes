@@ -19,11 +19,11 @@ Consider a VPC with a CIDR block of 10.0.0.0/16 where your resources are hosted 
 
 For instance, if the Customer Gateway is assigned the public IP 1.1.1.1 and the VPN Gateway uses 2.2.2.2, an IPsec tunnel is established over the internet between these endpoints.
 
-![The image illustrates a VPN architecture in AWS, showing a VPC with private subnets and a VPN gateway connected to an on-premise network via a customer gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865731/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPN/vpn-architecture-aws-diagram.jpg)
+![The image illustrates a VPN architecture in AWS, showing a VPC with private subnets and a VPN gateway connected to an on-premise network via a customer gateway.](https://kodekloud.com/kk-media/image/upload/v1752865731/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPN/vpn-architecture-aws-diagram.jpg)
 
 In this setup, the Customer Gateway represents your on-premises side, while the VPN Gateway is deployed on the AWS side.
 
-![The image illustrates a VPN architecture in AWS, showing the connection between a VPC with private subnets and an on-premise network via VPN and customer gateways over the internet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865732/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPN/vpn-architecture-aws-diagram-2.jpg)
+![The image illustrates a VPN architecture in AWS, showing the connection between a VPC with private subnets and an on-premise network via VPN and customer gateways over the internet.](https://kodekloud.com/kk-media/image/upload/v1752865732/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPN/vpn-architecture-aws-diagram-2.jpg)
 
 The encrypted IPsec tunnel ensures that all data transmitted across the public internet remains secure.
 
@@ -34,7 +34,7 @@ To facilitate communication between the on-premises network (192.168.0.0/16) and
 1. **Static Routing:** Manually add a route in the VPC routing table that directs traffic for 192.168.0.0/16 to the VPN Gateway.
 2. **Dynamic Routing:** Use a routing protocol like Border Gateway Protocol (BGP) to automatically exchange routes between the VPN Gateway and the Customer Gateway. This dynamic method allows AWS to learn the on-premises routes automatically.
 
-![The image illustrates a VPN routing setup, showing a VPC with private subnets connected to an on-premise network via a VPN gateway and customer gateway, with routes exchanged dynamically using BGP.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865733/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPN/vpn-routing-setup-vpc-bgp.jpg)
+![The image illustrates a VPN routing setup, showing a VPC with private subnets connected to an on-premise network via a VPN gateway and customer gateway, with routes exchanged dynamically using BGP.](https://kodekloud.com/kk-media/image/upload/v1752865733/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPN/vpn-routing-setup-vpc-bgp.jpg)
 
 > **lightbulb** Using dynamic routing with BGP simplifies route management and provides improved resiliency by automatically adapting to route changes.
 
@@ -45,7 +45,7 @@ AWS charges for VPN gateways in two main ways:
 * A fee for each hour that the VPN connection is available.
 * Additional charges for data transfer out (egress traffic) from Amazon EC2 over the VPN.
 
-![The image outlines VPN pricing details, indicating charges for each available VPN connection hour and for data transfer from Amazon EC2 to the internet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865734/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPN/vpn-pricing-details-ec2-internet.jpg)
+![The image outlines VPN pricing details, indicating charges for each available VPN connection hour and for data transfer from Amazon EC2 to the internet.](https://kodekloud.com/kk-media/image/upload/v1752865734/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPN/vpn-pricing-details-ec2-internet.jpg)
 
 > **triangle-alert** Monitor your outbound data transfer closely to manage costs, as VPN egress charges can accumulate quickly.
 
@@ -59,7 +59,7 @@ When deploying VPN gateways, consider these performance limits:
 
 If a single tunnel does not satisfy performance requirements, utilize Equal-Cost Multi-Path (ECMP) routing by establishing additional VPN tunnels to distribute the traffic load.
 
-![The image shows VPN gateway limits, indicating a maximum bandwidth of 1.25 Gbps per VPN tunnel and a maximum of 140,000 packets per second.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865734/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPN/vpn-gateway-limits-bandwidth-packets.jpg)
+![The image shows VPN gateway limits, indicating a maximum bandwidth of 1.25 Gbps per VPN tunnel and a maximum of 140,000 packets per second.](https://kodekloud.com/kk-media/image/upload/v1752865734/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPN/vpn-gateway-limits-bandwidth-packets.jpg)
 
 ## Summary
 
@@ -70,9 +70,9 @@ To summarize:
 * Routing can be managed either statically or dynamically using BGP to ensure proper packet flow.
 * AWS charges for VPN usage based on connection uptime and data egress, and VPN tunnels have defined performance limits.
 
-![The image is a summary slide outlining four key points about connecting VPCs to on-premise data centers, virtual private gateways, customer gateways, and VPN connections over the public internet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865735/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPN/vpc-onpremise-connection-summary.jpg)
+![The image is a summary slide outlining four key points about connecting VPCs to on-premise data centers, virtual private gateways, customer gateways, and VPN connections over the public internet.](https://kodekloud.com/kk-media/image/upload/v1752865735/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPN/vpc-onpremise-connection-summary.jpg)
 
-![The image is a summary slide with three points about network settings, VPN charges, and maximum bandwidth. It features a gradient background and numbered bullet points.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865736/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPN/network-settings-vpn-bandwidth-summary.jpg)
+![The image is a summary slide with three points about network settings, VPN charges, and maximum bandwidth. It features a gradient background and numbered bullet points.](https://kodekloud.com/kk-media/image/upload/v1752865736/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPN/network-settings-vpn-bandwidth-summary.jpg)
 
 For further reading, consider exploring the [AWS VPN Documentation](https://aws.amazon.com/vpn/) and general [VPN Concepts](https://www.cisco.com/c/en/us/products/security/vpn-endpoint-security-clients/what-is-vpn.html).
 

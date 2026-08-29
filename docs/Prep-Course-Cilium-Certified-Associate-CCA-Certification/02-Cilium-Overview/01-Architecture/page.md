@@ -18,9 +18,7 @@ loadBalancer:
         range: 192.0.2.2-192.0.2.14
 ```
 
-<Callout icon="warning">
-  BGP advertises routes into your network—misconfiguration can cause traffic blackholes or route leaks. Coordinate prefix announcements and AS numbers with your network team before enabling BGP.
-</Callout>
+> **warning** BGP advertises routes into your network—misconfiguration can cause traffic blackholes or route leaks. Coordinate prefix announcements and AS numbers with your network team before enabling BGP.
 
 ## Typical configuration flow
 
@@ -93,9 +91,7 @@ sudo tcpdump -i any host 192.0.2.2
 
 This lesson will expand each bullet above into concrete configuration and verification steps, with example manifests and commands to run. Follow the sections in order to ensure safe rollout and predictable behavior.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/fc66c3e4-b28d-440e-a771-66524646d81e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/fc66c3e4-b28d-440e-a771-66524646d81e)
 
 
 # Architecture
@@ -223,9 +219,7 @@ Benefits of kube-proxy replacement mode:
 * Improved performance and scalability compared to iptables/ipvs.
 * Reduced complexity by removing the need for kube-proxy in the datapath.
 
-<Callout icon="lightbulb">
-  Cilium can run in kube-proxy replacement mode: instead of running kube-proxy, Cilium programs the service datapath using eBPF for more efficient Service traffic handling.
-</Callout>
+> **lightbulb** Cilium can run in kube-proxy replacement mode: instead of running kube-proxy, Cilium programs the service datapath using eBPF for more efficient Service traffic handling.
 
 ## Service mesh: sidecar vs sidecarless
 
@@ -282,9 +276,7 @@ This approach lowers resource consumption and simplifies deployments while prese
 
 When L7 policy or observability is required, Cilium routes traffic to the node-level Envoy for L7 termination; otherwise eBPF handles the flow entirely in-kernel.
 
-<Callout icon="warning">
-  Sidecarless reduces per-pod resource usage and latency for L3/L4 flows, but advanced L7 features still depend on user‑space proxies (e.g., Envoy). Plan proxy placement and capacity accordingly.
-</Callout>
+> **warning** Sidecarless reduces per-pod resource usage and latency for L3/L4 flows, but advanced L7 features still depend on user‑space proxies (e.g., Envoy). Plan proxy placement and capacity accordingly.
 
 ### Traffic flow comparison
 
@@ -329,6 +321,4 @@ Trade-offs:
 * Hubble concepts: [https://cilium.io/docs/concepts/hubble/](https://cilium.io/docs/concepts/hubble/)
 * Kubernetes kube-proxy docs: [https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/9c9fa5ec-2721-4654-9383-5cb9b264e8b6/lesson/1d09126e-db65-4cfb-a60d-73d2c5494650" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/9c9fa5ec-2721-4654-9383-5cb9b264e8b6/lesson/1d09126e-db65-4cfb-a60d-73d2c5494650)

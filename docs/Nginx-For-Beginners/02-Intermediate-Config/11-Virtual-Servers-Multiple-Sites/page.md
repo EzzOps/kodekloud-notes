@@ -22,9 +22,7 @@ This concludes the conceptual portion. Next up: demo walkthroughs showing these 
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/55d731cf-41af-43c3-81f3-469afda88435" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/55d731cf-41af-43c3-81f3-469afda88435)
 
 
 # Virtual Servers Multiple Sites
@@ -150,9 +148,7 @@ Best practices and deployment tips
 * Consolidate TLS termination at the front-end reverse proxy, or use tools like Certbot/ACME to automate certificates per site.
 * Test configuration changes with `nginx -t` before reloading: `sudo nginx -t && sudo systemctl reload nginx`.
 
-<Callout icon="lightbulb">
-  Store each site's configuration in its own file and enable them individually (for example, with `/etc/nginx/sites-available/` and `/etc/nginx/sites-enabled/`). This reduces blast radius when editing configs and makes management easier.
-</Callout>
+> **lightbulb** Store each site's configuration in its own file and enable them individually (for example, with `/etc/nginx/sites-available/` and `/etc/nginx/sites-enabled/`). This reduces blast radius when editing configs and makes management easier.
 
 Additional resources
 
@@ -162,6 +158,4 @@ Additional resources
 
 You can now create a demo environment: add site files under `/var/www/`, create per-site server block files, test configuration, and reload NGINX to see multiple virtual servers served from a single NGINX instance.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/a594bfb1-dc4e-48a4-9e78-011dc56c0ef8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/a594bfb1-dc4e-48a4-9e78-011dc56c0ef8)

@@ -38,9 +38,7 @@ customresourcedefinition.apiextensions.k8s.io/certificates.cert-manager.io creat
 customresourcedefinition.apiextensions.k8s.io/clusterissuers.cert-manager.io created
 ```
 
-<Callout icon="warning">
-  Wait for cert-manager deployments to become available before creating Issuer or Certificate resources. The API server contacts the cert-manager webhook on resource creation; if the webhook is not ready, the API server may reject valid objects.
-</Callout>
+> **warning** Wait for cert-manager deployments to become available before creating Issuer or Certificate resources. The API server contacts the cert-manager webhook on resource creation; if the webhook is not ready, the API server may reject valid objects.
 
 Wait for the cert-manager deployments (controller, webhook, cainjector) to be ready:
 
@@ -81,9 +79,7 @@ NAME         READY   AGE
 selfsigned   True    25s
 ```
 
-<Callout icon="lightbulb">
-  Use a `ClusterIssuer` when you want an issuer available cluster-wide. For simple demos and per-namespace control, a namespaced `Issuer` is preferable.
-</Callout>
+> **lightbulb** Use a `ClusterIssuer` when you want an issuer available cluster-wide. For simple demos and per-namespace control, a namespaced `Issuer` is preferable.
 
 ## 4) Request a Certificate
 

@@ -39,9 +39,7 @@ Further reading and references
 
 That's it for this lesson. The course also covers KAgent architecture.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/424b0a61-376b-4ab7-8a27-fbc3f78a3bd7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/424b0a61-376b-4ab7-8a27-fbc3f78a3bd7)
 
 
 # Agent Discovery
@@ -173,9 +171,7 @@ Use cases:
 
 Remember: agent cards are often the first thing exchanged between client and agent. Because they can include sensitive information (internal endpoints, auth details, or descriptions of privileged skills), you should protect agent cards appropriately.
 
-<Callout icon="lightbulb">
-  Consider the sensitivity of the information exposed in agent cards and choose discovery and access controls accordingly.
-</Callout>
+> **lightbulb** Consider the sensitivity of the information exposed in agent cards and choose discovery and access controls accordingly.
 
 ## Securing Agent Cards
 
@@ -229,6 +225,4 @@ Choose discovery and security strategies that match your deployment goals (publi
 * OAuth 2.0 overview: [https://oauth.net/2/](https://oauth.net/2/)
 * mTLS concept summary: [https://en.wikipedia.org/wiki/Mutual\_authentication](https://en.wikipedia.org/wiki/Mutual_authentication)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/f721d92d-9e70-4265-8cae-4c55a230d034" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/f721d92d-9e70-4265-8cae-4c55a230d034)

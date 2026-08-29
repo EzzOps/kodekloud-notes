@@ -46,9 +46,7 @@ $ echo $?
 
 Although exit codes are not displayed in the command output, they are stored in the special variable `$?`. It is important to execute `echo $?` immediately after running the command, as any subsequent command may modify its value.
 
-<Callout icon="lightbulb">
-  Always check the exit code immediately after running a command using `echo $?` to ensure you capture the correct value.
-</Callout>
+> **lightbulb** Always check the exit code immediately after running a command using `echo $?` to ensure you capture the correct value.
 
 ## Best Practices for Scripts
 
@@ -84,12 +82,8 @@ In this script:
 2. The script continuously checks the rocket’s status until it is no longer "launching".
 3. If the status changes to "failed", the script runs `rocket-debug` and explicitly exits with an exit code of 1.
 
-<Callout icon="triangle-alert">
-  Without the `exit 1` command in the failure block, the script would default to an exit code of 0 even when the launch fails, which can lead to improper error handling.
-</Callout>
+> **triangle-alert** Without the `exit 1` command in the failure block, the script would default to an exit code of 0 even when the launch fails, which can lead to improper error handling.
 
 Returning a non-zero exit code upon failure is essential for robust error handling and seamless integration with other scripts. As a best practice, always ensure your scripts return a status code that accurately reflects the outcome of their execution.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/9225d80c-3f9d-4e8e-9135-febe7ca37af2/lesson/76e4844e-b2b8-4352-99bb-94a47883ccc8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/9225d80c-3f9d-4e8e-9135-febe7ca37af2/lesson/76e4844e-b2b8-4352-99bb-94a47883ccc8)

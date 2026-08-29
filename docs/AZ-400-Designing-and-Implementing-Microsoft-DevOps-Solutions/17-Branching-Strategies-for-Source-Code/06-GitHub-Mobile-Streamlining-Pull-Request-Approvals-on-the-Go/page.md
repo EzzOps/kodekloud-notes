@@ -72,7 +72,7 @@ Append a PowerShell step to generate `CHANGELOG.md` via `git log`, then copy and
 
 > **lightbulb** During execution, tasks run in sequence: job initialization, code checkout, dependency restore, build, release note generation, changelog creation, and file copying.
 
-![The image shows an Azure DevOps pipeline interface with a list of completed job tasks on the left and job details on the right. The tasks include initializing the job, checking out code, restoring dependencies, building the project, and generating release notes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867353/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Generating-a-Change-Log/azure-devops-pipeline-job-tasks.jpg)
+![The image shows an Azure DevOps pipeline interface with a list of completed job tasks on the left and job details on the right. The tasks include initializing the job, checking out code, restoring dependencies, building the project, and generating release notes.](https://kodekloud.com/kk-media/image/upload/v1752867353/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Generating-a-Change-Log/azure-devops-pipeline-job-tasks.jpg)
 
 After the “Copy Changelog to Wiki Folder” step, the logs will confirm file operations:
 
@@ -95,7 +95,7 @@ Finishing: Copy Changelog to Wiki Folder
 
 > **lightbulb** After pipeline completion, navigate to your Azure DevOps Wiki to see the updated `CHANGELOG.md` listing all recent commits automatically.
 
-![The image shows a changelog page from an Azure DevOps wiki, listing recent updates and commits. The interface includes navigation options on the left and detailed change entries on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867355/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Generating-a-Change-Log/azure-devops-wiki-changelog-page.jpg)
+![The image shows a changelog page from an Azure DevOps wiki, listing recent updates and commits. The interface includes navigation options on the left and detailed change entries on the right.](https://kodekloud.com/kk-media/image/upload/v1752867355/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Generating-a-Change-Log/azure-devops-wiki-changelog-page.jpg)
 
 ## 5. Further Customization
 
@@ -139,7 +139,7 @@ GitHub Mobile brings GitHub’s core workflows to your smartphone, so you can re
 * [Apple App Store](https://apps.apple.com/app/github/id1477376905)
 * [Google Play Store](https://play.google.com/store/apps/details?id=com.github.android)
 
-![The image shows a GitHub Mobile interface for managing pull requests, highlighting features like rich content compatibility and pull request management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867356/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-GitHub-Mobile-Streamlining-Pull-Request-Approvals-on-the-Go/github-mobile-pull-requests-interface.jpg)
+![The image shows a GitHub Mobile interface for managing pull requests, highlighting features like rich content compatibility and pull request management.](https://kodekloud.com/kk-media/image/upload/v1752867356/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-GitHub-Mobile-Streamlining-Pull-Request-Approvals-on-the-Go/github-mobile-pull-requests-interface.jpg)
 
 ## Further Reading & Resources
 

@@ -12,7 +12,7 @@ In this lesson, we explore how to leverage AWS X-Ray for analyzing application t
 
 Start by searching for "X-Ray" in the AWS Management Console, where you will discover that the X-Ray service is integrated within CloudWatch.
 
-![The image shows the AWS Management Console with a search for "xray," displaying results related to AWS X-Ray services, resources, and documentation. On the right, there is a panel showing AWS Health information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865342/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-X-ray-your-applications-on-AWS/aws-management-console-xray-search.jpg)
+![The image shows the AWS Management Console with a search for "xray," displaying results related to AWS X-Ray services, resources, and documentation. On the right, there is a panel showing AWS Health information.](https://kodekloud.com/kk-media/image/upload/v1752865342/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-X-ray-your-applications-on-AWS/aws-management-console-xray-search.jpg)
 
 If you navigate to CloudWatch, you will notice a dedicated section for X-Ray. This section is organized into two subsections: Service Map and Traces.
 
@@ -25,15 +25,15 @@ The Service Map provides a visual diagram detailing the interconnected component
 
 These interactions are clearly represented in the trace.
 
-![The image shows an AWS CloudWatch service map interface, displaying a network of interconnected services and nodes. The layout includes various AWS components like ECS containers and DynamoDB tables.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865344/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-X-ray-your-applications-on-AWS/aws-cloudwatch-service-map-interface.jpg)
+![The image shows an AWS CloudWatch service map interface, displaying a network of interconnected services and nodes. The layout includes various AWS components like ECS containers and DynamoDB tables.](https://kodekloud.com/kk-media/image/upload/v1752865344/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-X-ray-your-applications-on-AWS/aws-cloudwatch-service-map-interface.jpg)
 
 At the top of the interface, select a time frame (e.g., last 5 minutes or last 15 minutes). Clicking on a specific node will display all the traces involving that node. For instance, clicking a node reveals metrics like latency, request counts, total faults (including 500 status code failures), and response time distributions.
 
-![The image shows an AWS CloudWatch service map interface displaying metrics for a DynamoDB table named "scorekeep-game," including latency, requests, and faults over time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865346/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-X-ray-your-applications-on-AWS/aws-cloudwatch-dynamodb-scorekeep-metrics.jpg)
+![The image shows an AWS CloudWatch service map interface displaying metrics for a DynamoDB table named "scorekeep-game," including latency, requests, and faults over time.](https://kodekloud.com/kk-media/image/upload/v1752865346/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-X-ray-your-applications-on-AWS/aws-cloudwatch-dynamodb-scorekeep-metrics.jpg)
 
 The dashboard below highlights how metrics and traces are presented. Traces with failures or errors are emphasized, enabling rapid identification of problematic segments.
 
-![The image shows an AWS CloudWatch dashboard displaying metrics and traces for various services, including latency graphs and trace details with response times and HTTP methods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865347/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-X-ray-your-applications-on-AWS/aws-cloudwatch-dashboard-metrics-traces.jpg)
+![The image shows an AWS CloudWatch dashboard displaying metrics and traces for various services, including latency graphs and trace details with response times and HTTP methods.](https://kodekloud.com/kk-media/image/upload/v1752865347/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-X-ray-your-applications-on-AWS/aws-cloudwatch-dashboard-metrics-traces.jpg)
 
 ## Analyzing Individual Traces
 
@@ -47,15 +47,15 @@ service(id:{name:"scorekeep-game", type:"AWS::DynamoDB::Table"})
 
 This query indicates that the application sends a get item request to the scorekeep game table, in addition to performing operations like retrieving an item from the scorekeep state table and sending an SNS notification. By examining the duration of each segment, you can pinpoint operations that may be increasing overall latency.
 
-![The image shows an AWS CloudWatch Segments Timeline, displaying the performance of various operations like DynamoDB and SNS with their response codes, durations, and statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865348/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-X-ray-your-applications-on-AWS/aws-cloudwatch-segments-timeline.jpg)
+![The image shows an AWS CloudWatch Segments Timeline, displaying the performance of various operations like DynamoDB and SNS with their response codes, durations, and statuses.](https://kodekloud.com/kk-media/image/upload/v1752865348/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-X-ray-your-applications-on-AWS/aws-cloudwatch-segments-timeline.jpg)
 
 If a fault occurs (for example, a 500 error), the trace will highlight the location of the failure. The diagram below identifies a fault in the "Scorekeep" service, making it easier to isolate the problematic component.
 
-![The image shows an AWS CloudWatch console with a service map and segments timeline, indicating a fault in the "Scorekeep" service with a 5xx error. The timeline displays response codes and durations for different segments, including DynamoDB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865349/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-X-ray-your-applications-on-AWS/aws-cloudwatch-scorekeep-error-timeline.jpg)
+![The image shows an AWS CloudWatch console with a service map and segments timeline, indicating a fault in the "Scorekeep" service with a 5xx error. The timeline displays response codes and durations for different segments, including DynamoDB.](https://kodekloud.com/kk-media/image/upload/v1752865349/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-X-ray-your-applications-on-AWS/aws-cloudwatch-scorekeep-error-timeline.jpg)
 
 To view all traces within the selected time frame without filtering for a specific component, simply remove the current filter query and execute the query again. This will provide a comprehensive list of all captured traces. You can then click on each segment to view detailed information such as response codes and operation durations (e.g., 3 milliseconds, 2 milliseconds, etc.).
 
-![The image shows an AWS CloudWatch console displaying a segments timeline for a service called "Scorekeep," with various DynamoDB operations and their response times.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865350/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-X-ray-your-applications-on-AWS/aws-cloudwatch-scorekeep-timeline.jpg)
+![The image shows an AWS CloudWatch console displaying a segments timeline for a service called "Scorekeep," with various DynamoDB operations and their response times.](https://kodekloud.com/kk-media/image/upload/v1752865350/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-X-ray-your-applications-on-AWS/aws-cloudwatch-scorekeep-timeline.jpg)
 
 Moreover, refine your queries by selecting specific nodes. For example, adding a filter for traces that involve both the SNS topic and the scorekeep game table may yield a detailed list of 43 traces, complete with response time distributions and additional metrics.
 

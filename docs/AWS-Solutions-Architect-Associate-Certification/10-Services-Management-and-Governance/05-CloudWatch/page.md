@@ -10,7 +10,7 @@ CloudWatch automatically ingests logs and metrics from numerous AWS services suc
 
 Once CloudWatch receives these logs and metrics, it extracts detailed monitoring data and triggers alarms based on user-defined thresholds. Serving as a centralized platform, CloudWatch allows you to view metrics, logs, and traces in one place, streamlining your monitoring and troubleshooting workflows.
 
-![The image illustrates how AWS CloudWatch works, showing the flow from AWS Cloud, custom applications, and logs into CloudWatch for metrics monitoring, which triggers alarms and sends notifications via SNS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865302/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch/aws-cloudwatch-metrics-monitoring-diagram.jpg)
+![The image illustrates how AWS CloudWatch works, showing the flow from AWS Cloud, custom applications, and logs into CloudWatch for metrics monitoring, which triggers alarms and sends notifications via SNS.](https://kodekloud.com/kk-media/image/upload/v1752865302/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch/aws-cloudwatch-metrics-monitoring-diagram.jpg)
 
 ## Key Components of CloudWatch
 
@@ -46,7 +46,7 @@ CloudWatch empowers you to:
 * Stream near real-time system events using EventBridge.
 * Create and configure interactive dashboards to consolidate your monitoring data.
 
-![The image displays five feature icons labeled as Custom Metrics, Alarms, Logs, Events, and Dashboards. Each icon is uniquely colored and numbered from 01 to 05.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865304/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch/feature-icons-custom-metrics-alarms-logs-events-dashboards.jpg)
+![The image displays five feature icons labeled as Custom Metrics, Alarms, Logs, Events, and Dashboards. Each icon is uniquely colored and numbered from 01 to 05.](https://kodekloud.com/kk-media/image/upload/v1752865304/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudWatch/feature-icons-custom-metrics-alarms-logs-events-dashboards.jpg)
 
 For more information on AWS CloudWatch and its extensive capabilities, please refer to the [official AWS CloudWatch documentation](https://aws.amazon.com/cloudwatch/).
 

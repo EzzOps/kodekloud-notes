@@ -27,7 +27,7 @@ In this guide, we explore **AWS Default VPCs**, the network environment AWS prov
 2. Navigate to **VPC** (search “VPC” or select from recently visited services).
 3. Click **VPCs** in the sidebar and locate the one marked **Default VPC**.
 
-![The image shows the AWS Management Console, specifically the VPC dashboard, displaying various resources by region and options for managing virtual private clouds. It includes sections for creating VPCs, launching EC2 instances, and accessing network management tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863203/notes-assets/images/AWS-Networking-Fundamentals-Default-VPC-Demo/aws-vpc-dashboard-management-console.jpg)
+![The image shows the AWS Management Console, specifically the VPC dashboard, displaying various resources by region and options for managing virtual private clouds. It includes sections for creating VPCs, launching EC2 instances, and accessing network management tools.](https://kodekloud.com/kk-media/image/upload/v1752863203/notes-assets/images/AWS-Networking-Fundamentals-Default-VPC-Demo/aws-vpc-dashboard-management-console.jpg)
 
 You should see:
 
@@ -35,7 +35,7 @@ You should see:
 * **CIDR block**: `172.31.0.0/16`
 * **Default VPC**: Yes
 
-![The image shows an AWS VPC management console displaying details of a specific VPC, including its ID, state, and configuration settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863204/notes-assets/images/AWS-Networking-Fundamentals-Default-VPC-Demo/aws-vpc-management-console-details.jpg)
+![The image shows an AWS VPC management console displaying details of a specific VPC, including its ID, state, and configuration settings.](https://kodekloud.com/kk-media/image/upload/v1752863204/notes-assets/images/AWS-Networking-Fundamentals-Default-VPC-Demo/aws-vpc-management-console-details.jpg)
 
 > **lightbulb** Every AWS region automatically gets one default VPC with the same `172.31.0.0/16` CIDR block.
 
@@ -63,7 +63,7 @@ Within a default VPC, AWS provisions one subnet per Availability Zone (AZ). In *
 | us-east-1e        | 172.31.64.0/20 |
 | us-east-1f        | 172.31.80.0/20 |
 
-![The image shows the AWS Management Console displaying a list of subnets within a Virtual Private Cloud (VPC), including details like subnet ID, state, VPC, IPv4 CIDR, and availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863205/notes-assets/images/AWS-Networking-Fundamentals-Default-VPC-Demo/aws-management-console-vpc-subnets-list.jpg)
+![The image shows the AWS Management Console displaying a list of subnets within a Virtual Private Cloud (VPC), including details like subnet ID, state, VPC, IPv4 CIDR, and availability zone.](https://kodekloud.com/kk-media/image/upload/v1752863205/notes-assets/images/AWS-Networking-Fundamentals-Default-VPC-Demo/aws-management-console-vpc-subnets-list.jpg)
 
 ***
 
@@ -71,7 +71,7 @@ Within a default VPC, AWS provisions one subnet per Availability Zone (AZ). In *
 
 Use the **Resource Map** view to see the relationships between subnets, route tables, and the Internet Gateway.
 
-![The image shows an AWS VPC management console with details of a virtual private cloud, including subnets, route tables, and network connections. It displays a resource map illustrating the relationships between these components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863207/notes-assets/images/AWS-Networking-Fundamentals-Default-VPC-Demo/aws-vpc-management-console-resource-map.jpg)
+![The image shows an AWS VPC management console with details of a virtual private cloud, including subnets, route tables, and network connections. It displays a resource map illustrating the relationships between these components.](https://kodekloud.com/kk-media/image/upload/v1752863207/notes-assets/images/AWS-Networking-Fundamentals-Default-VPC-Demo/aws-vpc-management-console-resource-map.jpg)
 
 ***
 
@@ -93,7 +93,7 @@ Let’s launch a Linux instance into the default VPC to validate internet connec
 2. Select **Amazon Linux 2 AMI** and **t2.micro**.
 3. Click **Next** until **Key Pair**—create a new key named `aws-demo` and download the `.pem` file.
 
-![The image shows an AWS EC2 console screen with a "Create key pair" dialog box open. It includes options for naming the key pair, selecting the key pair type (RSA or ED25519), and choosing the private key file format (.pem or .ppk).](../../../../images/kodekloud.com/kk-media/image/upload/v1752863208/notes-assets/images/AWS-Networking-Fundamentals-Default-VPC-Demo/aws-ec2-create-key-pair-dialog.jpg)
+![The image shows an AWS EC2 console screen with a "Create key pair" dialog box open. It includes options for naming the key pair, selecting the key pair type (RSA or ED25519), and choosing the private key file format (.pem or .ppk).](https://kodekloud.com/kk-media/image/upload/v1752863208/notes-assets/images/AWS-Networking-Fundamentals-Default-VPC-Demo/aws-ec2-create-key-pair-dialog.jpg)
 
 4. In **Configure Security Group**, allow SSH (port 22) from your IP.
 5. Under **Configure Instance**, ensure:
@@ -102,7 +102,7 @@ Let’s launch a Linux instance into the default VPC to validate internet connec
    * **Auto-assign Public IP**: Enabled
 6. Review and **Launch**.
 
-![The image shows an AWS EC2 instance launch configuration screen, detailing security group settings, storage options, and a summary of the instance specifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863209/notes-assets/images/AWS-Networking-Fundamentals-Default-VPC-Demo/aws-ec2-instance-launch-configuration.jpg)
+![The image shows an AWS EC2 instance launch configuration screen, detailing security group settings, storage options, and a summary of the instance specifications.](https://kodekloud.com/kk-media/image/upload/v1752863209/notes-assets/images/AWS-Networking-Fundamentals-Default-VPC-Demo/aws-ec2-instance-launch-configuration.jpg)
 
 > **triangle-alert** Terminate your test instance when finished to avoid unexpected charges.
 

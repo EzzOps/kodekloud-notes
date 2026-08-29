@@ -128,9 +128,7 @@ Example developer workflow:
 
 Production considerations
 
-<Callout icon="lightbulb">
-  For production, Backstage recommends generating TechDocs artifacts in CI and publishing the generated static site to cloud storage ([Google Cloud Storage](https://cloud.google.com/storage) or [AWS S3](https://aws.amazon.com/s3)) instead of using the local publisher. This improves scalability, reduces on-demand build latency, and allows serving docs from highly-available object storage.
-</Callout>
+> **lightbulb** For production, Backstage recommends generating TechDocs artifacts in CI and publishing the generated static site to cloud storage ([Google Cloud Storage](https://cloud.google.com/storage) or [AWS S3](https://aws.amazon.com/s3)) instead of using the local publisher. This improves scalability, reduces on-demand build latency, and allows serving docs from highly-available object storage.
 
 Best practices and tips
 
@@ -154,11 +152,9 @@ Links and references
 * Google Cloud Storage: [https://cloud.google.com/storage](https://cloud.google.com/storage)
 * AWS S3: [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/ea371bfc-3770-4d25-80ef-e464e4b24fda/lesson/44ce2ea1-2bd5-4c6d-99ee-6159d2786336" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/ea371bfc-3770-4d25-80ef-e464e4b24fda/lesson/44ce2ea1-2bd5-4c6d-99ee-6159d2786336)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/ea371bfc-3770-4d25-80ef-e464e4b24fda/lesson/3c1a8d11-3762-4160-805d-6294b7c934ee" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/ea371bfc-3770-4d25-80ef-e464e4b24fda/lesson/3c1a8d11-3762-4160-805d-6294b7c934ee)
 
 
 # Search Basics
@@ -249,9 +245,7 @@ await backend.add(await import('@backstage/plugin-search-backend-module-elastics
 await backend.start();
 ```
 
-<Callout icon="lightbulb">
-  When using dynamic imports, ensure the surrounding context supports `await` (for example, by using top-level await in an ES module) or wrap this logic inside an async function. Restart the backend after adding new modules.
-</Callout>
+> **lightbulb** When using dynamic imports, ensure the surrounding context supports `await` (for example, by using top-level await in an ES module) or wrap this logic inside an async function. Restart the backend after adding new modules.
 
 Configure the Elasticsearch/OpenSearch connection in `app-config.yaml`. Example:
 
@@ -291,6 +285,4 @@ Links and References
 * Confluence: [https://www.atlassian.com/software/confluence](https://www.atlassian.com/software/confluence)
 * Stack Exchange: [https://stackexchange.com](https://stackexchange.com)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/ea371bfc-3770-4d25-80ef-e464e4b24fda/lesson/53322bb2-0984-402b-80c8-c88c4e98e72e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/ea371bfc-3770-4d25-80ef-e464e4b24fda/lesson/53322bb2-0984-402b-80c8-c88c4e98e72e)

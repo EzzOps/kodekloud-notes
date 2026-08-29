@@ -37,7 +37,7 @@ The Microsoft Identity Platform supports a broad range of user accounts includin
 
 The diagram below demonstrates the interaction between app registrations, client SDKs, the Microsoft Authentication Library (MSAL), and various Microsoft Entra endpoints for different account types:
 
-![The image is a diagram of the Microsoft Identity Platform, illustrating the flow from app registrations and client SDKs through the Microsoft Authentication Library (MSAL) to various Microsoft Entra endpoints for different account types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866554/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Microsoft-Identity-Platform/microsoft-identity-platform-diagram.jpg)
+![The image is a diagram of the Microsoft Identity Platform, illustrating the flow from app registrations and client SDKs through the Microsoft Authentication Library (MSAL) to various Microsoft Entra endpoints for different account types.](https://kodekloud.com/kk-media/image/upload/v1752866554/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Microsoft-Identity-Platform/microsoft-identity-platform-diagram.jpg)
 
 ## Summary
 

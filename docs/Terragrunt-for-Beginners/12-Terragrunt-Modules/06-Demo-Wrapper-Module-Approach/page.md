@@ -45,9 +45,7 @@ $ aws s3 ls
 2023-08-15 12:34:56 my-unique-bucket-name
 ```
 
-<Callout icon="triangle-alert">
-  Bucket names must be globally unique. If you encounter an error about the bucket already existing, choose a different name.
-</Callout>
+> **triangle-alert** Bucket names must be globally unique. If you encounter an error about the bucket already existing, choose a different name.
 
 ## Links and References
 
@@ -55,9 +53,7 @@ $ aws s3 ls
 * [Terraform Registry: S3 Bucket Module](https://registry.terraform.io/modules/terraform-aws-modules/s3-bucket/aws/latest)
 * [AWS CLI S3 Commands](https://docs.aws.amazon.com/cli/latest/reference/s3/index.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/10f295f9-2ab3-4c55-8c4a-2f26863db598" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/10f295f9-2ab3-4c55-8c4a-2f26863db598)
 
 
 # Demo Wrapper Module Approach
@@ -124,9 +120,7 @@ locals {
 }
 ```
 
-<Callout icon="lightbulb">
-  We set `special = false` and `upper = false` to keep the suffix alphanumeric and lowercase only.
-</Callout>
+> **lightbulb** We set `special = false` and `upper = false` to keep the suffix alphanumeric and lowercase only.
 
 ## 3. Update Module Outputs
 
@@ -156,9 +150,7 @@ inputs = {
 }
 ```
 
-<Callout icon="triangle-alert">
-  The final bucket name is not known until apply time since it depends on the random suffix.
-</Callout>
+> **triangle-alert** The final bucket name is not known until apply time since it depends on the random suffix.
 
 ## 5. Deploy with Terragrunt
 

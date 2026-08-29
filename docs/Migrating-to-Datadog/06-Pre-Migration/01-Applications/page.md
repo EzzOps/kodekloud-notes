@@ -42,9 +42,7 @@ Key considerations and recommended actions
 | Legacy deactivation      | Plan to remove old agents, collectors, and forwarding rules to avoid duplicated or inconsistent telemetry. Include deactivation steps in deployment recipes.                                                                                                              |
 | Migration recipes & docs | Provide clear, technology-specific guides: code snippets, config files, example manifests, CI/CD snippets, video walkthroughs, and troubleshooting steps.                                                                                                                 |
 
-<Callout icon="lightbulb">
-  Before migrating, validate tracer and library versions in a staging environment. Automated integration tests that assert telemetry is produced (`logs`, `metrics`, `traces`) will reduce surprises in production.
-</Callout>
+> **lightbulb** Before migrating, validate tracer and library versions in a staging environment. Automated integration tests that assert telemetry is produced (`logs`, `metrics`, `traces`) will reduce surprises in production.
 
 Operational coordination
 
@@ -60,9 +58,7 @@ Operational coordination
 * Communication\
   Coordinate with teams that own dependent services. Migration windows can overlap with normal traffic, so plan maintenance windows and communications to reduce impact.
 
-<Callout icon="warning">
-  Do not leave legacy collectors or agents running in parallel indefinitely. Duplicate collectors can create duplicated metrics and traces, skewing alerts and dashboards. Decommission legacy tooling as part of your migration checklist.
-</Callout>
+> **warning** Do not leave legacy collectors or agents running in parallel indefinitely. Duplicate collectors can create duplicated metrics and traces, skewing alerts and dashboards. Decommission legacy tooling as part of your migration checklist.
 
 * Legacy deactivation\
   Decommission legacy agents, collectors, and forwarding rules once the new instrumentation is verified. Include deactivation in deployment and rollback procedures so retries and rollbacks behave predictably.
@@ -82,6 +78,4 @@ Next steps
 
 That's it for this lesson. I hope you found it useful.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/a22bf0dd-7ecd-44f9-bd6f-28f3e9ead50c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/a22bf0dd-7ecd-44f9-bd6f-28f3e9ead50c)

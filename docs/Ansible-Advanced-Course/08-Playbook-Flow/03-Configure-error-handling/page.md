@@ -36,7 +36,7 @@ When deploying a web application to a single server, Ansible executes tasks sequ
 
 When running a playbook on multiple servers, Ansible completes each task on all targeted hosts before proceeding to the next one. For instance, it will install dependencies on all servers first, then continue with MySQL installation. If a task—such as starting the database—fails on one server (e.g., server two), Ansible removes that server from subsequent tasks and continues executing on the remaining healthy servers.
 
-![The image shows a task failure in deploying a web application across three servers, with steps like installing dependencies and MySQL, and running a web server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869404/notes-assets/images/Ansible-Advanced-Course-Configure-error-handling/frame_60.jpg)
+![The image shows a task failure in deploying a web application across three servers, with steps like installing dependencies and MySQL, and running a web server.](https://kodekloud.com/kk-media/image/upload/v1752869404/notes-assets/images/Ansible-Advanced-Course-Configure-error-handling/frame_60.jpg)
 
 Ansible’s default behavior is to execute as many tasks as possible unless an alternative configuration is provided.
 

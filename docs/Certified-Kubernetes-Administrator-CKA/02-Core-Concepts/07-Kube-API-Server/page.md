@@ -133,7 +133,7 @@ The scheduler continuously monitors the API Server for pods that need node assig
 
 > **lightbulb** At the heart of these operations is the Kube API Server, ensuring secure and validated communication between the cluster components.
 
-![The image lists six steps related to the Kube-api Server: Authenticate User, Validate Request, Retrieve Data, Update ETCD, Scheduler, and Kubelet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869720/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kube-API-Server/frame_130.jpg)
+![The image lists six steps related to the Kube-api Server: Authenticate User, Validate Request, Retrieve Data, Update ETCD, Scheduler, and Kubelet.](https://kodekloud.com/kk-media/image/upload/v1752869720/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kube-API-Server/frame_130.jpg)
 
 ## Deployment and Setup
 

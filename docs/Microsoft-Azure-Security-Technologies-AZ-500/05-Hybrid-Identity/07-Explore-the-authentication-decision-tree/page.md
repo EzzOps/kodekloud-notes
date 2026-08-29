@@ -43,9 +43,7 @@ Modern Azure AD supports various authentication protocols. However, if your appl
 If integrating with an existing federation provider, the next step is to assess your need for sign-in disaster recovery or leaked credential reports:\
 — Do you require sign-in disaster recovery or access to leaked credential reports?
 
-<Callout icon="lightbulb">
-  For scenarios involving ADFS and PTA, on-premises authentication may become unavailable in events such as network failures. Azure AD Identity Protection can provide valuable leaked credential reports—especially if user passwords have been exposed on the dark web.
-</Callout>
+> **lightbulb** For scenarios involving ADFS and PTA, on-premises authentication may become unavailable in events such as network failures. Azure AD Identity Protection can provide valuable leaked credential reports—especially if user passwords have been exposed on the dark web.
 
 Even when Azure AD does not natively support a particular authentication requirement, the decision regarding disaster recovery or leaked credential reports remains critical. If you don’t need these capabilities—and if you prefer cloud-based authentication with user-level policies disabled—PHS combined with Seamless SSO is the preferred solution.
 
@@ -60,9 +58,7 @@ If you prefer not to integrate with an existing federation environment yet requi
 
 This configuration ensures uninterrupted authentication services.
 
-<Callout icon="lightbulb">
-  If disaster recovery is not required, you may choose to rely solely on PTA with Seamless SSO.
-</Callout>
+> **lightbulb** If disaster recovery is not required, you may choose to rely solely on PTA with Seamless SSO.
 
 ***
 
@@ -78,6 +74,4 @@ This guide helps you determine the correct authentication method based on severa
 
 Let’s now move on to the demonstration of password write-back.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/ec3dd1c7-a3f1-4d9a-ae3c-59b398091a52/lesson/74dfe63f-002e-4a53-aed6-caf94d020a62" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/ec3dd1c7-a3f1-4d9a-ae3c-59b398091a52/lesson/74dfe63f-002e-4a53-aed6-caf94d020a62)

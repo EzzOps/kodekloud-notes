@@ -44,9 +44,7 @@ The fine-grained token creation screen (showing permission selections) is simila
 
 When the permission overview confirms you’ve selected the required scopes, click **Generate token**. GitHub will display the token one time only.
 
-<Callout icon="lightbulb">
-  Copy the token immediately after generation — GitHub will not show it again after you leave this page.
-</Callout>
+> **lightbulb** Copy the token immediately after generation — GitHub will not show it again after you leave this page.
 
 ## Recommended repository permissions for common Terraform tasks
 
@@ -81,9 +79,7 @@ setx GITHUB_TOKEN "github_pat_<YOUR_TOKEN_HERE>"
 
 Replace `github_pat_<YOUR_TOKEN_HERE>` with the token value you copied from GitHub.
 
-<Callout icon="warning">
-  Fine-grained tokens can expire or be revoked. If the token expires, generate a new one and update your environment variable. Keep tokens secret — do not commit them to source control or reveal them in logs.
-</Callout>
+> **warning** Fine-grained tokens can expire or be revoked. If the token expires, generate a new one and update your environment variable. Keep tokens secret — do not commit them to source control or reveal them in logs.
 
 ## How Terraform uses the token
 
@@ -113,6 +109,4 @@ Provider documentation: [https://registry.terraform.io/providers/integrations/gi
 * [Terraform GitHub provider documentation](https://registry.terraform.io/providers/integrations/github/latest/docs)
 * [GitHub fine-grained personal access tokens overview](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/df5b5815-c1ea-45f5-ba18-7a5c53ded28a/lesson/abfd8ae6-960c-45fa-a524-93ed17300fa0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/df5b5815-c1ea-45f5-ba18-7a5c53ded28a/lesson/abfd8ae6-960c-45fa-a524-93ed17300fa0)

@@ -6,9 +6,7 @@ This guide explains how to deploy and inspect a pod in a Minikube cluster using 
 
 In this guide, we will walk through the process of deploying a pod within your Minikube cluster and inspecting its details using the kubectl command-line utility. This tutorial is ideal for developers and Kubernetes practitioners looking to get started with pod management in a local environment.
 
-<Callout icon="lightbulb">
-  Ensure you have Minikube installed and a cluster running. Your kubectl should be configured to communicate with your Minikube cluster.
-</Callout>
+> **lightbulb** Ensure you have Minikube installed and a cluster running. Your kubectl should be configured to communicate with your Minikube cluster.
 
 ## Creating a Pod with Nginx
 
@@ -103,9 +101,7 @@ Events:
   Normal  Started       44s   kubelet, minikube  Started container nginx
 ```
 
-<Callout icon="lightbulb">
-  Each event provides a timestamp and message detailing stages such as scheduling, image pulling, container creation, and container start. This is crucial for troubleshooting.
-</Callout>
+> **lightbulb** Each event provides a timestamp and message detailing stages such as scheduling, image pulling, container creation, and container start. This is crucial for troubleshooting.
 
 ## Viewing Pods with Extended Information
 
@@ -134,6 +130,4 @@ For further reading, consider exploring:
 * [Kubernetes Concepts: Pods](https://kubernetes.io/docs/concepts/workloads/pods/)
 * [Minikube Installation Guide](https://minikube.sigs.k8s.io/docs/start/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/5b966a64-54c6-46ff-b284-4299f34c8f84/lesson/7b962369-07a0-44ce-9ebf-54c01042c16e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/5b966a64-54c6-46ff-b284-4299f34c8f84/lesson/7b962369-07a0-44ce-9ebf-54c01042c16e)

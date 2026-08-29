@@ -43,13 +43,13 @@ The Developer Portal is designed for API consumers. It provides a self-service i
 
 This portal is essential for fostering an active developer community and ensuring seamless API integration.
 
-![The image is a diagram explaining API Management, highlighting core functions such as Developer Participation, Business Insight, Security, and Protection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866314/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-API-Management-Service/api-management-diagram-functions.jpg)
+![The image is a diagram explaining API Management, highlighting core functions such as Developer Participation, Business Insight, Security, and Protection.](https://kodekloud.com/kk-media/image/upload/v1752866314/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-API-Management-Service/api-management-diagram-functions.jpg)
 
 The diagram above illustrates how API Management offers efficient, secure, and well-managed services.
 
 Additionally, the following diagram highlights the three primary components of API Management: API Gateway, Azure Portal, and Developer Portal.
 
-![The image illustrates three API management components: API Gateway, Azure Portal, and Developer Portal, each represented by a colored icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866315/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-API-Management-Service/api-management-components-gateway-portal.jpg)
+![The image illustrates three API management components: API Gateway, Azure Portal, and Developer Portal, each represented by a colored icon.](https://kodekloud.com/kk-media/image/upload/v1752866315/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-API-Management-Service/api-management-components-gateway-portal.jpg)
 
 ## Structuring and Managing APIs in Azure
 
@@ -71,7 +71,7 @@ Policies in Azure API Management allow you to define and enforce specific rules 
 
 As discussed earlier, the Developer Portal is a comprehensive self-service resource where developers can access detailed API documentation, experiment with API calls, and manage their subscriptions. This portal is key to ensuring a smooth and interactive developer experience.
 
-![The image is an infographic titled "Understanding APIs," explaining five components: Products, Groups, Developers, Policies, and Developer Portal, each with a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866317/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-API-Management-Service/understanding-apis-infographic-components.jpg)
+![The image is an infographic titled "Understanding APIs," explaining five components: Products, Groups, Developers, Policies, and Developer Portal, each with a brief description.](https://kodekloud.com/kk-media/image/upload/v1752866317/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-API-Management-Service/understanding-apis-infographic-components.jpg)
 
 With these foundational concepts, you now understand how to structure and expose your APIs effectively within Azure API Management, ensuring robust security and streamlined developer engagement.
 

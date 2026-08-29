@@ -154,9 +154,7 @@ DETAIL:  Key (email)=(hello123@gmail.com) already exists.
 ...
 ```
 
-<Callout icon="triangle-alert">
-  To avoid duplicate key errors, ensure that users are either removed from the database between tests or that you use unique email addresses for each test run.
-</Callout>
+> **triangle-alert** To avoid duplicate key errors, ensure that users are either removed from the database between tests or that you use unique email addresses for each test run.
 
 You can run the following SQL command in PgAdmin to view current user entries:
 
@@ -210,10 +208,6 @@ tests/test_users.py::test_create_user PASSED
 ================================== 2 passed, 5 warnings in 0.87s ==================================
 ```
 
-<Callout icon="lightbulb">
-  This approach leverages FastAPI's TestClient and Pydantic for automatic schema validation, reducing the need for multiple manual assertions and ensuring the correctness of the API responses.
-</Callout>
+> **lightbulb** This approach leverages FastAPI's TestClient and Pydantic for automatic schema validation, reducing the need for multiple manual assertions and ensuring the correctness of the API responses.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/898eae34-d3ed-4450-a3bd-e3e40746a422" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/898eae34-d3ed-4450-a3bd-e3e40746a422)

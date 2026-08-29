@@ -100,9 +100,7 @@ Resources and further reading:
 
 That’s it — you now have a minimal NGINX-hosted site and know how to test virtual hosts locally using the `Host` header.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/0de43784-b08d-4ce0-8470-a7541b78fe58/lesson/205db332-da0d-4f3d-8273-225f9566c386" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/0de43784-b08d-4ce0-8470-a7541b78fe58/lesson/205db332-da0d-4f3d-8273-225f9566c386)
 
 
 # Demo Nginx Install Config
@@ -113,9 +111,7 @@ Guide to installing, verifying, and inspecting Nginx on Ubuntu, covering apt com
 
 This lesson shows how to install, verify, and inspect Nginx on an Ubuntu-based system. Commands are shown for apt-based distributions; on CentOS/RHEL use `yum` or `dnf` instead. Paths like `/etc/nginx` and `/var/log/nginx` are common, but verify them for your specific OS.
 
-<Callout icon="lightbulb">
-  If you're on CentOS or Red Hat use `yum` or `dnf` instead of `apt`. The configuration directories (`/etc/nginx`, `/var/log/nginx`) are common across many Linux distributions but may vary—especially with custom packages or older releases.
-</Callout>
+> **lightbulb** If you're on CentOS or Red Hat use `yum` or `dnf` instead of `apt`. The configuration directories (`/etc/nginx`, `/var/log/nginx`) are common across many Linux distributions but may vary—especially with custom packages or older releases.
 
 ## Quick command reference
 

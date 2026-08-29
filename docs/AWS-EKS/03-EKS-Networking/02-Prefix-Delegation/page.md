@@ -12,15 +12,15 @@ In EKS, each worker node attaches an Elastic Network Interface (ENI) to the VPC 
 
 When a pod launches, the VPC CNI plugin requests a free IP from the node’s ENIs. Since each ENI can hold multiple secondary IPs, you can run many pods off one physical interface:
 
-![The image illustrates the process of attaching a node to a cluster using an Elastic Network Interface (ENI) connected to a Virtual Private Cloud (VPC) with the IP range 10.16.0.0/24.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862802/notes-assets/images/AWS-EKS-Prefix-Delegation/eni-attachment-node-cluster-vpc-diagram.jpg)
+![The image illustrates the process of attaching a node to a cluster using an Elastic Network Interface (ENI) connected to a Virtual Private Cloud (VPC) with the IP range 10.16.0.0/24.](https://kodekloud.com/kk-media/image/upload/v1752862802/notes-assets/images/AWS-EKS-Prefix-Delegation/eni-attachment-node-cluster-vpc-diagram.jpg)
 
 However, EC2 instance types impose limits on both the number of ENIs and IPs per ENI. For example, an instance with **1 ENI** and **5 IP addresses** will fill all addresses once you schedule four pods (plus the primary). Further pods cannot get an IP until another ENI attaches, which can take tens of seconds or more—and if you hit the maximum ENIs, pods remain `Pending`.
 
-![The image illustrates a network of EC2 instances with various IP addresses, represented by gears and icons, with one instance labeled as having "No IP Address."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862804/notes-assets/images/AWS-EKS-Prefix-Delegation/ec2-instances-network-ip-addresses-diagram.jpg)
+![The image illustrates a network of EC2 instances with various IP addresses, represented by gears and icons, with one instance labeled as having "No IP Address."](https://kodekloud.com/kk-media/image/upload/v1752862804/notes-assets/images/AWS-EKS-Prefix-Delegation/ec2-instances-network-ip-addresses-diagram.jpg)
 
 You can either move to larger instance types (with higher ENI/IP limits) or enable **Prefix Delegation** to boost pod IP capacity per ENI:
 
-![The image illustrates a network diagram showing "Prefix Delegation" with a central node connected to multiple "IP Address" nodes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862805/notes-assets/images/AWS-EKS-Prefix-Delegation/prefix-delegation-network-diagram-ip-nodes.jpg)
+![The image illustrates a network diagram showing "Prefix Delegation" with a central node connected to multiple "IP Address" nodes.](https://kodekloud.com/kk-media/image/upload/v1752862805/notes-assets/images/AWS-EKS-Prefix-Delegation/prefix-delegation-network-diagram-ip-nodes.jpg)
 
 ### Example Capacities
 
@@ -37,17 +37,17 @@ Attaching ENIs is relatively slow. To mitigate scheduling delays, the VPC CNI le
 
 This setting ensures a specified number of unused ENIs remain attached. For example, `WARM_ENI_TARGET=1` keeps one spare ENI ready. If you’re using 3 of 5 IPs on your primary ENI, the CNI will pre-attach a second ENI so that new pods get IPs immediately.
 
-![The image illustrates a network configuration concept labeled "WARM\_ENI\_TARGET," showing a VPC-CNI setup with IP addresses linked to pods, and a note about adding one more ENI for three more pods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862806/notes-assets/images/AWS-EKS-Prefix-Delegation/warm-eni-target-vpc-cni-setup.jpg)
+![The image illustrates a network configuration concept labeled "WARM\_ENI\_TARGET," showing a VPC-CNI setup with IP addresses linked to pods, and a note about adding one more ENI for three more pods.](https://kodekloud.com/kk-media/image/upload/v1752862806/notes-assets/images/AWS-EKS-Prefix-Delegation/warm-eni-target-vpc-cni-setup.jpg)
 
 ### WARM\_IP\_TARGET
 
 Instead of full ENIs, you can maintain a pool of free IPs across all ENIs. The CNI calculates how many ENIs are needed to meet the target and pre-allocates them.
 
-![The image illustrates a concept related to "WARM\_IP\_TARGET" with a node containing multiple "IP Address Slots" and a VPC-CNI component.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862807/notes-assets/images/AWS-EKS-Prefix-Delegation/warm-ip-target-ip-address-slots-vpc-cni.jpg)
+![The image illustrates a concept related to "WARM\_IP\_TARGET" with a node containing multiple "IP Address Slots" and a VPC-CNI component.](https://kodekloud.com/kk-media/image/upload/v1752862807/notes-assets/images/AWS-EKS-Prefix-Delegation/warm-ip-target-ip-address-slots-vpc-cni.jpg)
 
 * On an instance with **5 IPs/ENI**, setting `WARM_IP_TARGET=10` attaches two ENIs (5 IPs each):
 
-![The image illustrates a concept related to "WARM\_IP\_TARGET" with a target of 10, showing large instances, VPC-CNI, and 20 IPs per ENI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862808/notes-assets/images/AWS-EKS-Prefix-Delegation/warm-ip-target-large-instances-vpc-cni.jpg)
+![The image illustrates a concept related to "WARM\_IP\_TARGET" with a target of 10, showing large instances, VPC-CNI, and 20 IPs per ENI.](https://kodekloud.com/kk-media/image/upload/v1752862808/notes-assets/images/AWS-EKS-Prefix-Delegation/warm-ip-target-large-instances-vpc-cni.jpg)
 
 * On larger instances (e.g., 20 IPs/ENI), the same warm IP target can be satisfied by a single ENI.
 
@@ -55,15 +55,15 @@ Instead of full ENIs, you can maintain a pool of free IPs across all ENIs. The C
 
 Prefix Delegation lets each secondary allocation on an ENI be a `/28` block (16 addresses) instead of a single IP. Enable it via the `ENABLE_PREFIX_DELEGATION` environment variable:
 
-![The image shows a diagram related to "ENABLE\_PREFIX\_DELEGLAGTION" with a toggle switch for "Prefix Delegation" and a Boolean option indicating True/False or Yes/No. It also includes a VPC-CNI icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862809/notes-assets/images/AWS-EKS-Prefix-Delegation/enable-prefix-delegation-toggle-diagram.jpg)
+![The image shows a diagram related to "ENABLE\_PREFIX\_DELEGLAGTION" with a toggle switch for "Prefix Delegation" and a Boolean option indicating True/False or Yes/No. It also includes a VPC-CNI icon.](https://kodekloud.com/kk-media/image/upload/v1752862809/notes-assets/images/AWS-EKS-Prefix-Delegation/enable-prefix-delegation-toggle-diagram.jpg)
 
 When enabled, the CNI requests a `/28` prefix from the VPC and programs routes so that the node becomes the next hop for all 16 addresses. From one prefix you now get 16 pod IPs:
 
-![The image illustrates a network configuration with "ENABLE\_PREFIX\_DELEGATION" showing a VPC-CNI setup, distributing multiple sets of 16 IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862810/notes-assets/images/AWS-EKS-Prefix-Delegation/vpc-cni-network-configuration-ip-delegation.jpg)
+![The image illustrates a network configuration with "ENABLE\_PREFIX\_DELEGATION" showing a VPC-CNI setup, distributing multiple sets of 16 IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752862810/notes-assets/images/AWS-EKS-Prefix-Delegation/vpc-cni-network-configuration-ip-delegation.jpg)
 
 On an ENI limited to 5 IPs (1 primary + 4 secondary), prefix delegation yields 4 × 16 = 64 pod IPs. Adding a second ENI gives another 64, for 128 total—without waiting for new attachments:
 
-![The image illustrates a network configuration with "ENABLE\_PREFIX\_DELEGATION" showing a /28 CIDR block being divided into multiple groups of 16 IPs, connected to VPC-CNI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862811/notes-assets/images/AWS-EKS-Prefix-Delegation/network-configuration-enable-prefix-delegation.jpg)
+![The image illustrates a network configuration with "ENABLE\_PREFIX\_DELEGATION" showing a /28 CIDR block being divided into multiple groups of 16 IPs, connected to VPC-CNI.](https://kodekloud.com/kk-media/image/upload/v1752862811/notes-assets/images/AWS-EKS-Prefix-Delegation/network-configuration-enable-prefix-delegation.jpg)
 
 > **lightbulb** Enabling prefix delegation is an EKS best practice when you need high pod density per node.
 

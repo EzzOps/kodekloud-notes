@@ -25,13 +25,9 @@ Rotating keys and secrets is essential for keeping your systems secure. Here are
 * **Prevent Unauthorized Access:** Regularly updating credentials minimizes the risk of unauthorized or ex-employee access.
 * **Maintain Application Availability:** Updated keys and secrets ensure that your applications always run with current credentials, leading to more reliable operations.
 
-<Callout icon="lightbulb">
-  Rotating keys and secrets helps secure your applications by proactively addressing potential vulnerabilities and maintaining compliance with security policies.
-</Callout>
+> **lightbulb** Rotating keys and secrets helps secure your applications by proactively addressing potential vulnerabilities and maintaining compliance with security policies.
 
-<Frame>
-  ![The image illustrates a process for configuring secret rotation, involving components like Key Vault, Event Grid, and Function App, with benefits such as mitigating risks and maintaining security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881988/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-rotation/secret-rotation-configuration-diagram.jpg)
-</Frame>
+![The image illustrates a process for configuring secret rotation, involving components like Key Vault, Event Grid, and Function App, with benefits such as mitigating risks and maintaining security.](https://kodekloud.com/kk-media/image/upload/v1752881988/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-rotation/secret-rotation-configuration-diagram.jpg)
 
 ## Key Rotation Considerations
 
@@ -42,9 +38,7 @@ Before implementing key rotation, keep the following factors in mind:
 * **Application Updates:** Automate application updates using Azure DevOps or pipelines, ensuring that your services always reference the latest keys or secrets.
 * **Monitoring and Auditing:** Implement thorough monitoring and auditing mechanisms to track key rotation activities and support compliance reporting.
 
-<Frame>
-  ![The image illustrates a process for configuring key rotation, showing a flow from a Key Vault through an Event Grid and Function App to update secrets. It also lists considerations for establishing rotation frequency, secure distribution, application updates, and compliance monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881989/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-rotation/key-rotation-configuration-process.jpg)
-</Frame>
+![The image illustrates a process for configuring key rotation, showing a flow from a Key Vault through an Event Grid and Function App to update secrets. It also lists considerations for establishing rotation frequency, secure distribution, application updates, and compliance monitoring.](https://kodekloud.com/kk-media/image/upload/v1752881989/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-rotation/key-rotation-configuration-process.jpg)
 
 ## Configuring Key and Secret Rotation in the Azure Portal
 
@@ -60,17 +54,13 @@ Follow these steps to set up key and secret rotation in the Azure portal:
 6. Optionally, set up notifications (e.g., 30 days before expiry) to plan maintenance or immediate changes.
 7. Utilize the "Rotate Now" button if you need to immediately rotate the key.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying the details of a key vault named "app-key," including its version and status. On the right, there is a "Rotation policy" panel with options for setting expiry time, enabling auto-rotation, and configuring notifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881991/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-rotation/azure-portal-key-vault-details.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying the details of a key vault named "app-key," including its version and status. On the right, there is a "Rotation policy" panel with options for setting expiry time, enabling auto-rotation, and configuring notifications.](https://kodekloud.com/kk-media/image/upload/v1752881991/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-rotation/azure-portal-key-vault-details.jpg)
 
 ### Configuring Certificate Rotation
 
 To configure certificate rotation, navigate to the issuance policy section in your Azure portal. Here, you can manage certificate renewal settings, including triggering automatic renewal when the certificate has reached a specified portion (for example, 80%) of its validity period.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for configuring an issuance policy for certificates. It includes options for certificate authority type, subject, DNS names, validity period, and renewal settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881992/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-rotation/azure-portal-certificate-policy.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for configuring an issuance policy for certificates. It includes options for certificate authority type, subject, DNS names, validity period, and renewal settings.](https://kodekloud.com/kk-media/image/upload/v1752881992/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-rotation/azure-portal-certificate-policy.jpg)
 
 ### Automating Secret Rotation
 
@@ -80,13 +70,9 @@ Since Azure does not offer a built-in secret rotation mechanism, you can automat
 2. Create an event subscription to link with Azure Logic Apps or Azure Functions, specifically targeting near-expiry secret events.
 3. Configure the event subscription via the Event Grid interface. When a secret is nearing expiry, the event triggers a Function App to generate a new secret version and update your applications accordingly.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface focused on "Key vaults" with options for managing events, including Logic Apps, Azure Functions, and Web Hook. The interface displays navigation and configuration options for a specific key vault named "akvappsec."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881993/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-rotation/azure-portal-key-vault-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface focused on "Key vaults" with options for managing events, including Logic Apps, Azure Functions, and Web Hook. The interface displays navigation and configuration options for a specific key vault named "akvappsec."](https://kodekloud.com/kk-media/image/upload/v1752881993/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-rotation/azure-portal-key-vault-interface.jpg)
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating an event subscription in Event Grid. It includes fields for event subscription details, topic details, event types, and endpoint details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881994/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-rotation/azure-event-grid-subscription-portal.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating an event subscription in Event Grid. It includes fields for event subscription details, topic details, event types, and endpoint details.](https://kodekloud.com/kk-media/image/upload/v1752881994/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-rotation/azure-event-grid-subscription-portal.jpg)
 
 By integrating these steps into your CI/CD pipelines—such as those using Azure Pipelines—you ensure that your applications always operate using the most current secret.
 
@@ -102,6 +88,4 @@ Implementing these practices helps mitigate risks linked to outdated or exposed 
 
 Next, we will explore Key Vault safety and recovery features.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/e6ef26f3-b79d-482a-8f38-130223404051/lesson/583d4dd7-3dfa-42c2-a5a1-02c24f380bfe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/e6ef26f3-b79d-482a-8f38-130223404051/lesson/583d4dd7-3dfa-42c2-a5a1-02c24f380bfe)

@@ -20,9 +20,7 @@ Next, insert some TV items with descriptive names. For example, add products nam
 SELECT * FROM products;
 ```
 
-<Callout icon="lightbulb">
-  Ensure that you have the necessary permissions to insert and retrieve records from your products database.
-</Callout>
+> **lightbulb** Ensure that you have the necessary permissions to insert and retrieve records from your products database.
 
 ## Filtering Records Using the LIKE Operator
 
@@ -102,9 +100,7 @@ If you want to exclude rows containing a particular pattern—such as the substr
 SELECT * FROM products WHERE name NOT LIKE '%enn%';
 ```
 
-<Callout icon="lightbulb">
-  If you encounter an error due to a possible typo or syntax issue, retyping the query (for example, updating '%jené%' to '%enn%') might resolve the problem.
-</Callout>
+> **lightbulb** If you encounter an error due to a possible typo or syntax issue, retyping the query (for example, updating '%jené%' to '%enn%') might resolve the problem.
 
 ### Handling Unexpected Errors
 
@@ -128,6 +124,4 @@ The SQL LIKE operator is a powerful tool for pattern matching in text columns. W
 
 For further reading, check out the [SQL documentation](https://www.w3schools.com/sql/) for more advanced querying techniques.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/c66f07e5-f0f9-46b3-9dff-7f0c0e724d22" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/c66f07e5-f0f9-46b3-9dff-7f0c0e724d22)

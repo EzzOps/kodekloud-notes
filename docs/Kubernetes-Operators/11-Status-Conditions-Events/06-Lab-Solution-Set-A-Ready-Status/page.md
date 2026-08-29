@@ -77,9 +77,7 @@ Key flow and error handling details
 * If reading the Deployment fails, the Reconcile returns the error, causing controller-runtime to retry. The controller cannot truthfully report readiness without reading the child.
 * Status updates must use the status client: `r.Status().Update(...)`. The status subresource is for the controller's observed state and is distinct from spec fields that users edit.
 
-<Callout icon="lightbulb">
-  Always use `r.Status().Update` (the status client) to change `.status` fields. Using `r.Update` modifies the whole object and is intended for spec changes.
-</Callout>
+> **lightbulb** Always use `r.Status().Update` (the status client) to change `.status` fields. Using `r.Update` modifies the whole object and is intended for spec changes.
 
 Quick reference: API methods used
 
@@ -130,8 +128,6 @@ func deploymentFor(webapp *webappv1.WebApp) *appsv1.Deployment {
 }
 ```
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/dcda0b4e-c708-4217-8a7f-ee23d59556c1" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/dcda0b4e-c708-4217-8a7f-ee23d59556c1)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/2a7ff1bc-0f91-4d58-8033-125baa0471dc" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/2a7ff1bc-0f91-4d58-8033-125baa0471dc)

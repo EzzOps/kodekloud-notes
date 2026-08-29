@@ -35,9 +35,7 @@ Amira then asks for clarification:\
 
 At this moment, an illustration appears to visually support the discussion:
 
-<Frame>
-  ![An office worker participates in a video call with colleagues, Bob, Andrew, and Amira, each wearing headsets, depicted in a comic-style illustration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881159/notes-assets/images/Learning-Linux-Basics-Course-Labs-Behind-Schedule/frame_100.jpg)
-</Frame>
+![An office worker participates in a video call with colleagues, Bob, Andrew, and Amira, each wearing headsets, depicted in a comic-style illustration.](https://kodekloud.com/kk-media/image/upload/v1752881159/notes-assets/images/Learning-Linux-Basics-Course-Labs-Behind-Schedule/frame_100.jpg)
 
 Andrew confirms the new reporting requirement:\
 "Yes, please. And keep me updated on any showstoppers. We must have everything ready and functioning for Phase 1."
@@ -62,10 +60,6 @@ Bob now faces the task of setting up a Django project on Linux. This involves re
 
 To support his efforts, Bob reviews key commands for archiving, data extraction, and efficient use of text editors.
 
-<Callout icon="lightbulb">
-  For more information on setting up your Django project on Linux, refer to the official [Django Documentation](https://docs.djangoproject.com/).
-</Callout>
+> **lightbulb** For more information on setting up your Django project on Linux, refer to the official [Django Documentation](https://docs.djangoproject.com/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/8587333b-3a93-4eb5-8d3f-13c4a3435d1b/lesson/1b8fcf96-07e0-47b3-acf2-66db829b7170" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/8587333b-3a93-4eb5-8d3f-13c4a3435d1b/lesson/1b8fcf96-07e0-47b3-acf2-66db829b7170)

@@ -37,23 +37,17 @@ Establish foreign key constraints to maintain proper relationships among tables.
 
 Set a foreign key constraint on the post\_id column so it references the ID column in the posts table. Be sure to apply the "ON DELETE CASCADE" rule, which ensures that deleting a post will also remove its associated votes.
 
-<Frame>
-  ![The image shows a pgAdmin interface where a table is being created with columns for "post\_id" and "user\_id," both set as integers and primary keys. The interface includes a database schema with tables and other database objects visible on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883319/notes-assets/images/Python-API-Development-with-FastAPI-Creating-Votes-Table-Pgadmin/pgadmin-table-creation-post-user-id.jpg)
-</Frame>
+![The image shows a pgAdmin interface where a table is being created with columns for "post\_id" and "user\_id," both set as integers and primary keys. The interface includes a database schema with tables and other database objects visible on the left.](https://kodekloud.com/kk-media/image/upload/v1752883319/notes-assets/images/Python-API-Development-with-FastAPI-Creating-Votes-Table-Pgadmin/pgadmin-table-creation-post-user-id.jpg)
 
 During configuration, select the local column (post\_id) in the votes table and reference it to the ID column in the posts table. If an error occurs stating that the columns for the foreign key need specification, double-check that you have correctly selected the referencing column.
 
-<Frame>
-  ![The image shows a pgAdmin interface where a user is attempting to create a foreign key constraint in a PostgreSQL database table. An error message indicates that columns for the foreign key need to be specified.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883322/notes-assets/images/Python-API-Development-with-FastAPI-Creating-Votes-Table-Pgadmin/pgadmin-foreign-key-error-postgresql.jpg)
-</Frame>
+![The image shows a pgAdmin interface where a user is attempting to create a foreign key constraint in a PostgreSQL database table. An error message indicates that columns for the foreign key need to be specified.](https://kodekloud.com/kk-media/image/upload/v1752883322/notes-assets/images/Python-API-Development-with-FastAPI-Creating-Votes-Table-Pgadmin/pgadmin-foreign-key-error-postgresql.jpg)
 
 ### Adding the Foreign Key for user\_id
 
 Next, add a foreign key constraint for the user\_id column, setting it to reference the ID column in the users table. Again, configure the "ON DELETE CASCADE" rule to ensure that deleting a user also removes the associated votes.
 
-<Frame>
-  ![The image shows a pgAdmin interface with a table creation window open, focusing on setting a foreign key constraint for a database table. The left panel displays a database schema with tables and other database objects.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883325/notes-assets/images/Python-API-Development-with-FastAPI-Creating-Votes-Table-Pgadmin/pgadmin-table-creation-foreign-key.jpg)
-</Frame>
+![The image shows a pgAdmin interface with a table creation window open, focusing on setting a foreign key constraint for a database table. The left panel displays a database schema with tables and other database objects.](https://kodekloud.com/kk-media/image/upload/v1752883325/notes-assets/images/Python-API-Development-with-FastAPI-Creating-Votes-Table-Pgadmin/pgadmin-table-creation-foreign-key.jpg)
 
 After configuring both foreign keys, save your changes.
 
@@ -76,9 +70,7 @@ SELECT * FROM posts;
 SELECT * FROM users;
 ```
 
-<Callout icon="lightbulb">
-  When testing, try inserting a vote using valid post and user IDs (for example, post ID 10 and user ID 21) to ensure that the entry is successful. Conversely, attempt an insertion with an invalid post or user ID to confirm that the foreign key constraints properly prevent the entry. Leaving any foreign key field blank should trigger an error.
-</Callout>
+> **lightbulb** When testing, try inserting a vote using valid post and user IDs (for example, post ID 10 and user ID 21) to ensure that the entry is successful. Conversely, attempt an insertion with an invalid post or user ID to confirm that the foreign key constraints properly prevent the entry. Leaving any foreign key field blank should trigger an error.
 
 If you experience any issues while editing data (such as input bugs within pgAdmin), use the "View/Edit Data" feature for a smoother experience.
 
@@ -90,6 +82,4 @@ After confirming that the votes table functions correctly, you can remove it if 
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/c52cec63-de1e-4078-b109-bc9026e494fc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/c52cec63-de1e-4078-b109-bc9026e494fc)

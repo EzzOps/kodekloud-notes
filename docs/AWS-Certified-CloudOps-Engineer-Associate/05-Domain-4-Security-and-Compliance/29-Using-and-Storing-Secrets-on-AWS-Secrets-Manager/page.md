@@ -14,13 +14,13 @@ Secrets Manager not only handles database credentials but also manages applicati
 
 > **lightbulb** When your application has the correct permissions, it can retrieve and decrypt secrets securely. One major advantage of AWS Secrets Manager is its capability for automatic secret rotation, ensuring your credentials remain up-to-date and secure.
 
-![The image is a diagram illustrating a "Secrets Manager" system, showing interactions between a database, application, and a secrets manager for credential retrieval and secret rotation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860642/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-and-Storing-Secrets-on-AWS-Secrets-Manager/secrets-manager-diagram-interactions.jpg)
+![The image is a diagram illustrating a "Secrets Manager" system, showing interactions between a database, application, and a secrets manager for credential retrieval and secret rotation.](https://kodekloud.com/kk-media/image/upload/v1752860642/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-and-Storing-Secrets-on-AWS-Secrets-Manager/secrets-manager-diagram-interactions.jpg)
 
 Automatic password rotation in AWS Secrets Manager ensures that updated credentials are seamlessly provided to your application. If you encounter exam questions about automated password rotation, remember that AWS Secrets Manager is the correct choice—not the Systems Manager Parameter Store secure strings, as they do not support automatic rotation.
 
 For example, when managing API keys, Secrets Manager dynamically provides the required secret value to your application. This means the API key isn’t embedded in your Lambda code or stored as an environment variable; it remains securely managed by AWS Secrets Manager.
 
-![The image is a diagram showing the use of AWS Secrets Manager for managing API keys, involving AWS Lambda and an external API. It illustrates the flow of retrieving a secret value and using it as an API key.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860644/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-and-Storing-Secrets-on-AWS-Secrets-Manager/aws-secrets-manager-api-keys-diagram.jpg)
+![The image is a diagram showing the use of AWS Secrets Manager for managing API keys, involving AWS Lambda and an external API. It illustrates the flow of retrieving a secret value and using it as an API key.](https://kodekloud.com/kk-media/image/upload/v1752860644/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-and-Storing-Secrets-on-AWS-Secrets-Manager/aws-secrets-manager-api-keys-diagram.jpg)
 
 AWS Secrets Manager offers several robust features:
 
@@ -32,7 +32,7 @@ AWS Secrets Manager offers several robust features:
 
 > Note: When using AWS Managed Keys, encryption is free; however, custom KMS keys may incur extra charges.
 
-![The image lists five features: secure secret storage, easy retrieval, automatic rotation, fine-grained access control, and pricing, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860645/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-and-Storing-Secrets-on-AWS-Secrets-Manager/features-secure-storage-retrieval-rotation.jpg)
+![The image lists five features: secure secret storage, easy retrieval, automatic rotation, fine-grained access control, and pricing, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752860645/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-and-Storing-Secrets-on-AWS-Secrets-Manager/features-secure-storage-retrieval-rotation.jpg)
 
 Secret metadata is an important aspect of managing your secrets. It typically includes details such as the version ID, version stages (e.g., current, previous, or pending), creation date, and the KMS key IDs used for encryption. Below is an example of secret metadata in JSON format:
 
@@ -113,31 +113,31 @@ After replication, in a different region the ARN will appear as:
 arn:aws:secretsmanager:RegionB:123456789012:secret:secret1
 ```
 
-![The image explains the benefits of replicating secrets across regions, highlighting regional access and low latency for distributed applications, and disaster recovery for improved resilience and redundancy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860646/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-and-Storing-Secrets-on-AWS-Secrets-Manager/replicating-secrets-benefits-regions.jpg)
+![The image explains the benefits of replicating secrets across regions, highlighting regional access and low latency for distributed applications, and disaster recovery for improved resilience and redundancy.](https://kodekloud.com/kk-media/image/upload/v1752860646/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-and-Storing-Secrets-on-AWS-Secrets-Manager/replicating-secrets-benefits-regions.jpg)
 
 Rotating secrets in AWS Secrets Manager can be done effortlessly. The service automatically updates credentials based on your specified interval while keeping previous versions for reference. In the past, a custom Lambda function was required for rotation, but many modern services now support native rotation natively.
 
-![The image explains two methods of rotating secrets in AWS Secrets Manager: Managed Rotation, which is AWS-managed and requires no Lambda function, and Rotation by Lambda Function, which uses an AWS Lambda function to manage the rotation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860648/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-and-Storing-Secrets-on-AWS-Secrets-Manager/aws-secrets-manager-rotation-methods.jpg)
+![The image explains two methods of rotating secrets in AWS Secrets Manager: Managed Rotation, which is AWS-managed and requires no Lambda function, and Rotation by Lambda Function, which uses an AWS Lambda function to manage the rotation.](https://kodekloud.com/kk-media/image/upload/v1752860648/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-and-Storing-Secrets-on-AWS-Secrets-Manager/aws-secrets-manager-rotation-methods.jpg)
 
 AWS Secrets Manager also supports secret versioning. Versions can be labeled as current, previous, or pending, and you even have the flexibility to create custom labels. Unlabeled versions are automatically deprecated if more than 100 versions exist, with a grace period of 24 hours before deletion.
 
-![The image outlines three rules for secret versioning: creating custom labels, deprecating unlabeled versions if over 100 exist, and deleting versions not created within 24 hours.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860649/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-and-Storing-Secrets-on-AWS-Secrets-Manager/secret-versioning-rules-outline.jpg)
+![The image outlines three rules for secret versioning: creating custom labels, deprecating unlabeled versions if over 100 exist, and deleting versions not created within 24 hours.](https://kodekloud.com/kk-media/image/upload/v1752860649/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-and-Storing-Secrets-on-AWS-Secrets-Manager/secret-versioning-rules-outline.jpg)
 
 There are two primary rotation strategies available:
 
 1. **Single-User Rotation Strategy:**\
    In this strategy, a single user with access to a resource (such as a database) is used. AWS Secrets Manager rotates the secret at a defined interval, updates the resource with new credentials, and ensures the application retrieves the most recent version.
 
-![The image illustrates a "Single-User Rotation Strategy" where a user accesses a database using a key, with a clock symbol indicating time-based rotation. It also shows key versions, with the latest version in gold and the older version in gray.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860650/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-and-Storing-Secrets-on-AWS-Secrets-Manager/single-user-rotation-strategy-diagram.jpg)
+![The image illustrates a "Single-User Rotation Strategy" where a user accesses a database using a key, with a clock symbol indicating time-based rotation. It also shows key versions, with the latest version in gold and the older version in gray.](https://kodekloud.com/kk-media/image/upload/v1752860650/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-and-Storing-Secrets-on-AWS-Secrets-Manager/single-user-rotation-strategy-diagram.jpg)
 
 2. **Alternating User Rotation Strategy:**\
    This strategy involves creating two users with identical permissions. The rotation alternates between these two users, allowing one secret to remain active while the other is updated and verified, ensuring a smooth transition between credentials.
 
-![The image illustrates an "Alternating User Rotation Strategy" for database access, showing two users with keys of different versions to manage permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860651/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-and-Storing-Secrets-on-AWS-Secrets-Manager/alternating-user-rotation-strategy.jpg)
+![The image illustrates an "Alternating User Rotation Strategy" for database access, showing two users with keys of different versions to manage permissions.](https://kodekloud.com/kk-media/image/upload/v1752860651/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-and-Storing-Secrets-on-AWS-Secrets-Manager/alternating-user-rotation-strategy.jpg)
 
 For clarity, consider the following comparison highlighting key differences between the two rotation strategies:
 
-![The image is a comparison table between Single-User Rotation Strategy and Alternating User Rotation Strategy, highlighting differences in users, downtime risk, complexity, and rotation process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860653/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-and-Storing-Secrets-on-AWS-Secrets-Manager/rotation-strategy-comparison-table.jpg)
+![The image is a comparison table between Single-User Rotation Strategy and Alternating User Rotation Strategy, highlighting differences in users, downtime risk, complexity, and rotation process.](https://kodekloud.com/kk-media/image/upload/v1752860653/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-and-Storing-Secrets-on-AWS-Secrets-Manager/rotation-strategy-comparison-table.jpg)
 
 While the alternating user strategy offers advanced permission controls, a single-user rotation strategy often provides sufficient security and simplicity for many applications.
 

@@ -15,9 +15,7 @@ MCP has four primary responsibilities:
 
 MCP commonly exposes three core component types that work together to deliver reliable behavior: Tools, Resources, and Prompts. Implementations may include all three or a subset based on use case.
 
-<Callout icon="lightbulb">
-  Not all MCP servers expose Tools, Resources, and Prompts. An implementation may include only the components needed for its specific workflows.
-</Callout>
+> **lightbulb** Not all MCP servers expose Tools, Resources, and Prompts. An implementation may include only the components needed for its specific workflows.
 
 ## Overview: Tools, Resources, Prompts
 
@@ -62,9 +60,7 @@ Available tools:
 - file_read: Read contents of uploaded files
 ```
 
-<Callout icon="warning">
-  Tools can have side effects and access external systems. Ensure proper authorization, rate limiting, and input validation are in place before exposing tools to untrusted inputs.
-</Callout>
+> **warning** Tools can have side effects and access external systems. Ensure proper authorization, rate limiting, and input validation are in place before exposing tools to untrusted inputs.
 
 ***
 
@@ -162,6 +158,4 @@ Analogy — cooking:
 * [Designing safe tool access](https://example.com/tool-security)
 * [Prompt engineering guides](https://example.com/prompt-engineering)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/ef6da233-05e8-4813-b17a-52f829e130f1/lesson/7028be60-43bc-4a92-94f5-e8d65631efbd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/ef6da233-05e8-4813-b17a-52f829e130f1/lesson/7028be60-43bc-4a92-94f5-e8d65631efbd)

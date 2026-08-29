@@ -59,9 +59,7 @@ Running CI both for PRs and for `main` serves complementary purposes: PR pipelin
 
 This frequent integration and automated verification is the core of Continuous Integration: enabling parallel work while reducing integration risk.
 
-<Callout icon="lightbulb">
-  Continuous Integration is primarily about frequent automated builds and tests that validate integrations early and often, reducing the chance that defects reach production.
-</Callout>
+> **lightbulb** Continuous Integration is primarily about frequent automated builds and tests that validate integrations early and often, reducing the chance that defects reach production.
 
 ## CD: Continuous Deployment vs Continuous Delivery
 
@@ -123,6 +121,4 @@ Apply these patterns and adapt pipeline stages, approval gates, and environments
 * [Bitbucket](https://bitbucket.org/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/c8922198-0dcd-4910-9545-21e08f8a847c/lesson/11ac32ad-d4aa-441d-aefb-d703263ef226" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/c8922198-0dcd-4910-9545-21e08f8a847c/lesson/11ac32ad-d4aa-441d-aefb-d703263ef226)

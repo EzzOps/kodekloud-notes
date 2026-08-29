@@ -18,7 +18,7 @@ The DTU (Database Transaction Unit) model is a composite measure defined by Micr
 
 The image below compares the DTU purchasing model with the vCore purchasing model:
 
-![The image compares two Azure SQL Database purchasing models: the DTU model, which combines compute, storage, and IO resources, and the vCore model, which allows independent selection of compute and storage resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867178/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-database-scalability/azure-sql-dtu-vcore-comparison.jpg)
+![The image compares two Azure SQL Database purchasing models: the DTU model, which combines compute, storage, and IO resources, and the vCore model, which allows independent selection of compute and storage resources.](https://kodekloud.com/kk-media/image/upload/v1752867178/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-database-scalability/azure-sql-dtu-vcore-comparison.jpg)
 
 ### vCore Purchasing Model
 
@@ -41,7 +41,7 @@ When planning your database solution, consider the following questions to determ
 
 The infographic below visually summarizes these scaling strategies and offers guidance for managing Azure SQL databases while optimizing costs:
 
-![The image is an infographic by KodeKloud about scaling databases, featuring questions related to managing Azure SQL databases and optimizing costs, with visual elements like planes and database icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867179/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-database-scalability/scaling-azure-sql-databases-infographic.jpg)
+![The image is an infographic by KodeKloud about scaling databases, featuring questions related to managing Azure SQL databases and optimizing costs, with visual elements like planes and database icons.](https://kodekloud.com/kk-media/image/upload/v1752867179/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-database-scalability/scaling-azure-sql-databases-infographic.jpg)
 
 > **lightbulb** For more detailed information on Azure SQL Database scalability and purchasing options, visit the [Azure SQL Database documentation](https://docs.microsoft.com/en-us/azure/azure-sql/).
 

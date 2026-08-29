@@ -18,9 +18,7 @@ Azure Key Vault offers a scalable and secure cloud-based storage solution for ma
 
 Leveraging Azure's extensive security framework, Azure Key Vault implements fine-grained access control policies along with comprehensive logging. This setup allows you to monitor permission changes and access activities, ensuring that your sensitive data is consistently protected.
 
-<Callout icon="lightbulb">
-  Using detailed logging and access controls, administrators can quickly identify any unauthorized attempts to access the Key Vault, thereby enhancing overall security.
-</Callout>
+> **lightbulb** Using detailed logging and access controls, administrators can quickly identify any unauthorized attempts to access the Key Vault, thereby enhancing overall security.
 
 ## Integration with Azure Services
 
@@ -30,14 +28,10 @@ In a modern cloud environment, seamless integration across services is essential
 
 Azure Key Vault provides user-friendly APIs and SDKs that simplify the process of securely accessing and managing cryptographic materials. This ease-of-use enables developers to integrate robust security measures into their applications efficiently. By utilizing these APIs, teams can ensure that sensitive data handling adheres to best practices without compromising application performance.
 
-<Callout icon="lightbulb">
-  Take full advantage of the SDKs provided by Azure Key Vault to integrate security features incrementally into your development workflow.
-</Callout>
+> **lightbulb** Take full advantage of the SDKs provided by Azure Key Vault to integrate security features incrementally into your development workflow.
 
 Now that you have an overview of Azure Key Vault's purpose and capabilities, let's delve deeper into the management and protection of keys within the service.
 
 For more information on how to implement these features, you might find additional resources on [Azure Key Vault Documentation](https://docs.microsoft.com/en-us/azure/key-vault/overview) helpful.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/e6ef26f3-b79d-482a-8f38-130223404051/lesson/6cb0abbf-ee28-49b6-8772-4acb6a314ba8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/e6ef26f3-b79d-482a-8f38-130223404051/lesson/6cb0abbf-ee28-49b6-8772-4acb6a314ba8)

@@ -26,9 +26,7 @@ One engineer updates a health-check path in most files but misses three files fo
 * Tedious, error-prone updates
 * Hard-to-audit differences and silent failures
 
-<Callout icon="warning">
-  Avoid maintaining environment-specific manifests by copying files. Copy‑paste leads to drift, missed updates, and increased operational risk.
-</Callout>
+> **warning** Avoid maintaining environment-specific manifests by copying files. Copy‑paste leads to drift, missed updates, and increased operational risk.
 
 <Frame>
   <img alt="The image depicts a platform infrastructure configuration with three environments: Dev, Staging, and another Dev, each containing services for Patient, Appointment, and Payment. Each service consists of multiple microservices labeled &#x22;ms&#x22; with corresponding numbers." />
@@ -49,9 +47,7 @@ YAML is a data serialization format, not a programming language. It lacks variab
 
 To manage differences between environments, use external tooling that either generates or patches YAML based on parameters.
 
-<Callout icon="lightbulb">
-  YAML anchors and aliases reduce repetition within a single file, but they are not a replacement for templating or overlay tools when managing multiple environments.
-</Callout>
+> **lightbulb** YAML anchors and aliases reduce repetition within a single file, but they are not a replacement for templating or overlay tools when managing multiple environments.
 
 <Frame>
   <img alt="The image explains that YAML does not have variables but uses anchors and aliases, which only work within a single file and cannot reference external values." />

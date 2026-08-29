@@ -6,13 +6,9 @@ This article explores Istio’s service mesh security, covering certificate issu
 
 In this article, we explore how Istio’s service mesh delivers end-to-end security for microservices. You’ll learn how Istio issues certificates, enforces mutual TLS (mTLS), and applies authentication and authorization policies across your data plane.
 
-<Callout icon="lightbulb">
-  The following diagram illustrates Istio’s security architecture. It shows secure service-to-service communication via Envoy sidecars, how ingress and egress gateways handle external traffic, and how the istiod control plane manages certificates and policies.
-</Callout>
+> **lightbulb** The following diagram illustrates Istio’s security architecture. It shows secure service-to-service communication via Envoy sidecars, how ingress and egress gateways handle external traffic, and how the istiod control plane manages certificates and policies.
 
-<Frame>
-  ![The image illustrates the Istio Security Architecture, showing the interaction between services, proxies, and the control plane with secure communication protocols like mTLS. It highlights components such as Ingress, Egress, and the istiod control plane managing certificates and policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880900/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Service-Mesh-Istio-Security-Architecture/istio-security-architecture-diagram.jpg)
-</Frame>
+![The image illustrates the Istio Security Architecture, showing the interaction between services, proxies, and the control plane with secure communication protocols like mTLS. It highlights components such as Ingress, Egress, and the istiod control plane managing certificates and policies.](https://kodekloud.com/kk-media/image/upload/v1752880900/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Service-Mesh-Istio-Security-Architecture/istio-security-architecture-diagram.jpg)
 
 ## 1. istiod Control Plane as Certificate Authority
 

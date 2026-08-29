@@ -13,9 +13,7 @@ Trivy exit codes:
 * 1: matching vulnerabilities found (pipeline should fail)
 * 2: scanner error or unexpected problem (treat as a failure and investigate)
 
-<Callout icon="warning">
-  Treat a scanner error (exit code 2) as a pipeline failure. Silent failures or degraded scanners can let vulnerable images slip through.
-</Callout>
+> **warning** Treat a scanner error (exit code 2) as a pipeline failure. Silent failures or degraded scanners can let vulnerable images slip through.
 
 ## Image signing with Cosign (Sigstore)
 
@@ -91,9 +89,7 @@ spec:
 
 If an image is unsigned or the signature does not verify against the provided public key(s), Pod creation is rejected—closing the loop: Trivy ensures images are clean, Cosign proves provenance, and Kyverno enforces acceptance at runtime.
 
-<Callout icon="lightbulb">
-  Use a secure key management strategy (or keyless signing) and automate signing only after a successful scan to prevent accidental acceptance of unverified images.
-</Callout>
+> **lightbulb** Use a secure key management strategy (or keyless signing) and automate signing only after a successful scan to prevent accidental acceptance of unverified images.
 
 ## SLSA and SBOM — what they are and why they matter
 
@@ -139,11 +135,9 @@ cosign verify --key cosign.pub registry.company.com/app:v1.2
 
 A secure delivery pipeline enforces the four gates—build, scan, sign, and admit—automatically. Implement these controls to move security left into CI/CD, reduce the risk of supply-chain compromises, and ensure only verified artifacts reach your cluster.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/4fa48a7f-b1e6-4e09-bded-51f38be9355d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/4fa48a7f-b1e6-4e09-bded-51f38be9355d)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/b53de961-c16f-40c3-bae8-75ab707cb814" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/b53de961-c16f-40c3-bae8-75ab707cb814)
 
 
 # Service Mesh Security Encryption and Identity

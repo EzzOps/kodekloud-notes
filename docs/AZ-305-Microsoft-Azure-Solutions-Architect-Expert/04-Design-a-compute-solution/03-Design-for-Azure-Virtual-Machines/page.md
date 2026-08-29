@@ -35,7 +35,7 @@ Virtual Machines (VMs) in Azure offer flexibility and full control over the oper
 7. **Full Control**\
    With Infrastructure-as-a-Service (IaaS) solutions such as VMs, you retain complete control over the operating system, software installations, and environment configurations compared to Platform-as-a-Service (PaaS) offerings.
 
-![The image is a flowchart and guide from KodeKloud on when to select virtual machines, detailing scenarios like dev testing, datacenter extension, and legacy apps. It includes decision points such as whether to migrate or build new, and if full control is required.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866881/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Virtual-Machines/kodekloud-virtual-machines-flowchart.jpg)
+![The image is a flowchart and guide from KodeKloud on when to select virtual machines, detailing scenarios like dev testing, datacenter extension, and legacy apps. It includes decision points such as whether to migrate or build new, and if full control is required.](https://kodekloud.com/kk-media/image/upload/v1752866881/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Virtual-Machines/kodekloud-virtual-machines-flowchart.jpg)
 
 ***
 
@@ -91,7 +91,7 @@ When deploying Virtual Machines, carefully plan each aspect of your environment.
 * **Performance Monitoring:**\
   Implement comprehensive monitoring using Azure Monitor to track CPU, memory, and other vital metrics. This helps in troubleshooting, scaling decisions, and ensuring the overall health of your VMs. Configure alerts via email or SMS to stay informed about performance issues.
 
-![The image is a diagram from KodeKloud titled "Plan for virtual machines," outlining decision criteria for deploying virtual machines, such as network, location, operating system, pricing, naming conventions, storage performance, update management, and monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866883/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Virtual-Machines/plan-for-virtual-machines-diagram.jpg)
+![The image is a diagram from KodeKloud titled "Plan for virtual machines," outlining decision criteria for deploying virtual machines, such as network, location, operating system, pricing, naming conventions, storage performance, update management, and monitoring.](https://kodekloud.com/kk-media/image/upload/v1752866883/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Virtual-Machines/plan-for-virtual-machines-diagram.jpg)
 
 ***
 
@@ -104,7 +104,7 @@ Selecting the appropriate virtual machine family is crucial for matching your wo
 * **Specialized Workloads:**\
   Other categories include compute-optimized, memory-optimized, storage-optimized, GPU-enabled, HPC, and confidential computing VMs, each tailored for specific performance or workload requirements.
 
-![The image is a table from KodeKloud titled "Plan for virtual machine family," detailing different types of virtual machines, their sizes, and targeted workloads. It categorizes VMs into general purpose, compute optimized, memory optimized, storage optimized, GPU, HPC, and confidential computing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866885/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Virtual-Machines/virtual-machine-family-plan-table.jpg)
+![The image is a table from KodeKloud titled "Plan for virtual machine family," detailing different types of virtual machines, their sizes, and targeted workloads. It categorizes VMs into general purpose, compute optimized, memory optimized, storage optimized, GPU, HPC, and confidential computing.](https://kodekloud.com/kk-media/image/upload/v1752866885/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Virtual-Machines/virtual-machine-family-plan-table.jpg)
 
 Review the table above to determine which VM family and sizing are best aligned with your application's performance and scalability needs.
 
@@ -144,7 +144,7 @@ A frequent consideration is whether to use individual Virtual Machines or Virtua
 
 > Note: Virtual Machine Scale Sets are optimal for stateless applications, such as front-end services, where session or state management is not a critical requirement.
 
-![The image is a comparison between Virtual Machines (VM) and Virtual Machine Scale Sets (VMSS), highlighting differences in adding instances, load balancing, high availability, and autoscaling. It outlines the manual processes required for VMs versus the automated features of VMSS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866886/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Virtual-Machines/vm-vmss-comparison-autoscaling.jpg)
+![The image is a comparison between Virtual Machines (VM) and Virtual Machine Scale Sets (VMSS), highlighting differences in adding instances, load balancing, high availability, and autoscaling. It outlines the manual processes required for VMs versus the automated features of VMSS.](https://kodekloud.com/kk-media/image/upload/v1752866886/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Virtual-Machines/vm-vmss-comparison-autoscaling.jpg)
 
 ***
 

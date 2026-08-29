@@ -4,9 +4,7 @@
 - Include docstrings for all public functions.
 ```
 
-<Callout icon="lightbulb">
-  Commit this file to version control so that all collaborators benefit from the same Copilot behavior.
-</Callout>
+> **lightbulb** Commit this file to version control so that all collaborators benefit from the same Copilot behavior.
 
 ***
 
@@ -18,9 +16,7 @@
 
 You’re all set! Enjoy AI-powered completions, advanced settings, and the collaborative power of Copilot Chat to accelerate your development.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/github-copilot-certification/module/b02a5227-ee17-43dc-b006-51fef8272f13/lesson/f7cc5c19-f952-4a7e-92d6-2e77f1f1d82f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/github-copilot-certification/module/b02a5227-ee17-43dc-b006-51fef8272f13/lesson/f7cc5c19-f952-4a7e-92d6-2e77f1f1d82f)
 
 
 # Quick Wins for Immediate Productivity Gains

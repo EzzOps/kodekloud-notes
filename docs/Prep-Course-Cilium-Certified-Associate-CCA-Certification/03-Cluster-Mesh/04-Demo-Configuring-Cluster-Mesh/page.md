@@ -196,9 +196,7 @@ kubectx kind-cluster1
 kubectl exec -it frontend -- curl -sS myapp-service   # "This is Cluster1" when allowed
 ```
 
-<Callout icon="lightbulb">
-  CiliumNetworkPolicy is cluster-scoped. To enforce the same network policy across all clusters in a mesh, apply the policy manifest to every cluster that hosts endpoints you want protected.
-</Callout>
+> **lightbulb** CiliumNetworkPolicy is cluster-scoped. To enforce the same network policy across all clusters in a mesh, apply the policy manifest to every cluster that hosts endpoints you want protected.
 
 Table: Policy enforcement examples
 
@@ -283,9 +281,7 @@ Behavior after applying:
 * To limit allowed sources to a single cluster, use io.cilium.k8s.policy.cluster: \<cluster-name> in the fromEndpoints matchLabels.
 * Verify your Cilium cluster name configuration used at install time if you plan to use cluster-scoped label matching.
 
-<Callout icon="warning">
-  If you use global Services (service.cilium.io/global: "true"), remember: traffic to endpoints on a remote cluster is subject to the policies applied on that remote cluster. Ensure policies are deployed in every cluster you expect to enforce access controls.
-</Callout>
+> **warning** If you use global Services (service.cilium.io/global: "true"), remember: traffic to endpoints on a remote cluster is subject to the policies applied on that remote cluster. Ensure policies are deployed in every cluster you expect to enforce access controls.
 
 ## Links and References
 
@@ -297,9 +293,7 @@ Behavior after applying:
 * [hashicorp/http-echo image](https://hub.docker.com/r/hashicorp/http-echo)
 * [nicolaka/netshoot (debug image)](https://hub.docker.com/r/nicolaka/netshoot)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b8be180f-1719-47ca-b26e-7bf942694abf/lesson/e5f07eb6-ad1f-4d4b-b0b4-af7c3a61fca0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b8be180f-1719-47ca-b26e-7bf942694abf/lesson/e5f07eb6-ad1f-4d4b-b0b4-af7c3a61fca0)
 
 
 # Demo Configuring Cluster Mesh
@@ -318,9 +312,7 @@ In this guide you'll learn how to configure a Cilium Cluster Mesh across two Kub
 
 This tutorial assumes familiarity with kubectl contexts and Helm. Key prerequisites: unique cluster IDs and non-overlapping pod CIDR ranges for each cluster.
 
-<Callout icon="lightbulb">
-  Make sure each cluster has a unique cluster ID and non-overlapping pod CIDR ranges before enabling Cluster Mesh.
-</Callout>
+> **lightbulb** Make sure each cluster has a unique cluster ID and non-overlapping pod CIDR ranges before enabling Cluster Mesh.
 
 Table of Cilium annotations used in this guide:
 

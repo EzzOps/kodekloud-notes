@@ -8,7 +8,7 @@ ExpressRoute is a dedicated networking service that enhances your connectivity e
 
 Instead of routing traffic through the public internet, ExpressRoute uses a connectivity provider that leverages leased lines from telecom or ISP providers. This results in a secure and dedicated connection between your on-premises network and the cloud.
 
-![The image is a diagram illustrating Microsoft's ExpressRoute, showing a private connection between a customer's network and Microsoft Azure data centers, bypassing the public internet. It includes components like Partner Edge, Customer's Connection, and Microsoft Edge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868297/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-ExpressRoute/expressroute-private-connection-diagram.jpg)
+![The image is a diagram illustrating Microsoft's ExpressRoute, showing a private connection between a customer's network and Microsoft Azure data centers, bypassing the public internet. It includes components like Partner Edge, Customer's Connection, and Microsoft Edge.](https://kodekloud.com/kk-media/image/upload/v1752868297/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-ExpressRoute/expressroute-private-connection-diagram.jpg)
 
 ## Features of ExpressRoute
 
@@ -22,7 +22,7 @@ With bandwidth options ranging from 50 Mbps up to 100 Gbps, ExpressRoute is desi
 
 ### Integration with Microsoft Cloud Services
 
-![The image lists the key features of ExpressRoute: Private Connection, High-Speed Connectivity, and Integration with Microsoft Cloud Services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868298/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-ExpressRoute/expressroute-key-features-list.jpg)
+![The image lists the key features of ExpressRoute: Private Connection, High-Speed Connectivity, and Integration with Microsoft Cloud Services.](https://kodekloud.com/kk-media/image/upload/v1752868298/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-ExpressRoute/expressroute-key-features-list.jpg)
 
 ExpressRoute seamlessly integrates not only with Azure but also with other key Microsoft Cloud Services such as Microsoft 365 and Dynamics 365. This integration streamlines your overall cloud strategy and optimizes connectivity across services.
 
@@ -39,7 +39,7 @@ ExpressRoute seamlessly integrates not only with Azure but also with other key M
 3. **Speed:**\
    Optimized for high-speed data transfers, ExpressRoute is perfect for enterprises needing to move large volumes of data quickly and efficiently.
 
-![The image highlights the benefits of ExpressRoute, featuring three key points: reliability, privacy, and speed, each represented by an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868299/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-ExpressRoute/expressroute-benefits-reliability-privacy-speed.jpg)
+![The image highlights the benefits of ExpressRoute, featuring three key points: reliability, privacy, and speed, each represented by an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752868299/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-ExpressRoute/expressroute-benefits-reliability-privacy-speed.jpg)
 
 ## Common Use Cases
 
@@ -55,7 +55,7 @@ Organizations planning global expansion can leverage ExpressRoute to connect acr
 
 For companies subject to strict data protection regulations, ExpressRoute offers a secure, private connection that keeps sensitive data off the public internet. This feature supports compliance with rigorous data sovereignty and regulatory requirements.
 
-![The image illustrates common use cases for ExpressRoute, featuring a cloud connected to two computer monitors, with use cases listed as hybrid cloud deployments, global expansion, and compliance requirements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868300/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-ExpressRoute/expressroute-use-cases-diagram.jpg)
+![The image illustrates common use cases for ExpressRoute, featuring a cloud connected to two computer monitors, with use cases listed as hybrid cloud deployments, global expansion, and compliance requirements.](https://kodekloud.com/kk-media/image/upload/v1752868300/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-ExpressRoute/expressroute-use-cases-diagram.jpg)
 
 This concludes our discussion on ExpressRoute. For more detailed information on how ExpressRoute can benefit your organization, visit the [Microsoft Azure documentation](https://docs.microsoft.com/en-us/azure/expressroute/).
 

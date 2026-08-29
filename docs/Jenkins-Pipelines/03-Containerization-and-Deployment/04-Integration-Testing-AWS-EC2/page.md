@@ -56,9 +56,7 @@ To enhance this process, we now use a shell script that fetches EC2 instance det
 
 Within your Git repository's root directory, create a new shell script named `integration-testing-ec2.sh` and paste one of the versions below.
 
-<Callout icon="lightbulb">
-  Ensure that you have AWS CLI version 2.17.56 or later and the `jq` command-line JSON processor installed on your system.
-</Callout>
+> **lightbulb** Ensure that you have AWS CLI version 2.17.56 or later and the `jq` command-line JSON processor installed on your system.
 
 ### Version 1: Fetching Using Network Interface Details
 
@@ -188,9 +186,7 @@ stage('Integration Testing - AWS EC2') {
 }
 ```
 
-<Callout icon="lightbulb">
-  Make sure that your Jenkins controller node has the necessary AWS credentials and that the AWS CLI is properly configured with the correct region. You can verify the installation by running `aws --version`.
-</Callout>
+> **lightbulb** Make sure that your Jenkins controller node has the necessary AWS credentials and that the AWS CLI is properly configured with the correct region. You can verify the installation by running `aws --version`.
 
 ## AWS CLI Authentication and Jenkins Credentials
 
@@ -231,21 +227,13 @@ For further details on the AWS CLI `describe-instances` command, refer to the [o
 
 ## Visual References
 
-<Frame>
-  ![The image shows a webpage from the AWS CLI Command Reference, specifically the documentation for the "describe-instances" command. It includes a note about viewing an older version of the AWS CLI and provides a description of the command's functionality.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879638/notes-assets/images/Jenkins-Pipelines-Integration-Testing-AWS-EC2/aws-cli-describe-instances-docs.jpg)
-</Frame>
+![The image shows a webpage from the AWS CLI Command Reference, specifically the documentation for the "describe-instances" command. It includes a note about viewing an older version of the AWS CLI and provides a description of the command's functionality.](https://kodekloud.com/kk-media/image/upload/v1752879638/notes-assets/images/Jenkins-Pipelines-Integration-Testing-AWS-EC2/aws-cli-describe-instances-docs.jpg)
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying a list of stored credentials, including IDs and names for various services like MongoDB, Gitea, and DockerHub.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879640/notes-assets/images/Jenkins-Pipelines-Integration-Testing-AWS-EC2/jenkins-dashboard-credentials-list.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying a list of stored credentials, including IDs and names for various services like MongoDB, Gitea, and DockerHub.](https://kodekloud.com/kk-media/image/upload/v1752879640/notes-assets/images/Jenkins-Pipelines-Integration-Testing-AWS-EC2/jenkins-dashboard-credentials-list.jpg)
 
-<Frame>
-  ![The image shows a Jenkins Pipeline Syntax page with a snippet generator for configuring AWS settings, including fields for region, endpoint URL, and credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879641/notes-assets/images/Jenkins-Pipelines-Integration-Testing-AWS-EC2/jenkins-pipeline-aws-settings-syntax.jpg)
-</Frame>
+![The image shows a Jenkins Pipeline Syntax page with a snippet generator for configuring AWS settings, including fields for region, endpoint URL, and credentials.](https://kodekloud.com/kk-media/image/upload/v1752879641/notes-assets/images/Jenkins-Pipelines-Integration-Testing-AWS-EC2/jenkins-pipeline-aws-settings-syntax.jpg)
 
-<Frame>
-  ![The image shows a Jenkins pipeline interface for a project named "solar-system," displaying various stages of the build process with some completed and one marked with a warning. It includes details of integration testing on AWS EC2.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879642/notes-assets/images/Jenkins-Pipelines-Integration-Testing-AWS-EC2/jenkins-pipeline-solar-system-build.jpg)
-</Frame>
+![The image shows a Jenkins pipeline interface for a project named "solar-system," displaying various stages of the build process with some completed and one marked with a warning. It includes details of integration testing on AWS EC2.](https://kodekloud.com/kk-media/image/upload/v1752879642/notes-assets/images/Jenkins-Pipelines-Integration-Testing-AWS-EC2/jenkins-pipeline-solar-system-build.jpg)
 
 ## Conclusion
 
@@ -253,6 +241,4 @@ By dynamically fetching your AWS EC2 instance details using the AWS CLI and vali
 
 Thank you for exploring this integration testing approach on AWS EC2.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/a1289a46-be38-4446-a056-0b9730d05dfd/lesson/dd2c0aac-29c2-47ee-a067-a51de4cad358" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/a1289a46-be38-4446-a056-0b9730d05dfd/lesson/dd2c0aac-29c2-47ee-a067-a51de4cad358)

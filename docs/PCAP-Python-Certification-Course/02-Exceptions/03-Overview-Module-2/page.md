@@ -10,9 +10,7 @@ In this lesson, we revisit the key concepts covered in this module, focusing on 
 
 We began by discussing the limitations of ASCII and introduced Unicode to address internationalization issues. Unicode supports a vast array of characters from different languages, and UTF-8 is the most popular encoding format used to represent these characters.
 
-<Callout icon="lightbulb">
-  Python 3 is fully internationalized, meaning it supports both Unicode and UTF-8. This ensures your applications can handle text from any language with ease.
-</Callout>
+> **lightbulb** Python 3 is fully internationalized, meaning it supports both Unicode and UTF-8. This ensures your applications can handle text from any language with ease.
 
 ## String Operations in Python
 
@@ -48,12 +46,8 @@ Robust error handling is essential for creating reliable applications. In this l
 * **The assert Statement:**\
   Use `assert` to validate expressions and automatically trigger an exception when a condition is not met. This feature is critical for protecting your code against invalid results.
 
-<Callout icon="triangle-alert">
-  Be cautious when using the `assert` statement in production code, as assertions can be globally disabled with optimization flags. Always ensure critical validations are handled through proper error management strategies.
-</Callout>
+> **triangle-alert** Be cautious when using the `assert` statement in production code, as assertions can be globally disabled with optimization flags. Always ensure critical validations are handled through proper error management strategies.
 
 This module equips you with the essential Python techniques to handle international text and manage errors effectively, ensuring your code is both robust and versatile.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/8db6ee04-f51f-41fc-9539-029474f44a1b/lesson/7daf246c-f14e-4469-a91b-da0b05702a73" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/8db6ee04-f51f-41fc-9539-029474f44a1b/lesson/7daf246c-f14e-4469-a91b-da0b05702a73)

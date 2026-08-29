@@ -33,7 +33,7 @@ The process to set up Fraud Detector is streamlined into several clear steps:
 5. **Performance Evaluation:** Assess the model’s effectiveness using the generated confidence scores. Adjust thresholds—for instance, flagging transactions with risk scores above 90% for review—and retrain if necessary.
 6. **Deployment:** Deploy the detector for real-time monitoring or batch review, continuously comparing new data with historical trends.
 
-![The image outlines an eight-step process for a fraud detector, including defining the business use case, inputting historical data, selecting and training a model, evaluating performance, and deploying the detector.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865056/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Fraud-Detector/fraud-detector-eight-step-process.jpg)
+![The image outlines an eight-step process for a fraud detector, including defining the business use case, inputting historical data, selecting and training a model, evaluating performance, and deploying the detector.](https://kodekloud.com/kk-media/image/upload/v1752865056/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Fraud-Detector/fraud-detector-eight-step-process.jpg)
 
 ## Integrating with Client Applications
 
@@ -42,7 +42,7 @@ Once deployed, client applications can send requests to the Fraud Detector model
 * Route the transaction for human review.
 * Store the output in [Amazon S3](https://learn.kodekloud.com/user/courses/amazon-simple-storage-service-amazon-s3) for future model training and enhanced accuracy.
 
-![The image is a flowchart illustrating how a fraud detection system works, involving a client application, fraud detector model endpoints, human reviews, Amazon S3, and a fraud detector.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865058/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Fraud-Detector/fraud-detection-system-flowchart.jpg)
+![The image is a flowchart illustrating how a fraud detection system works, involving a client application, fraud detector model endpoints, human reviews, Amazon S3, and a fraud detector.](https://kodekloud.com/kk-media/image/upload/v1752865058/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Fraud-Detector/fraud-detection-system-flowchart.jpg)
 
 ## Practical Example: Fake or Abusive Reviews
 

@@ -6,7 +6,7 @@ This article explores essential networking concepts for configuring Kubernetes e
 
 In this article, we explore essential networking concepts from a Linux perspective that are fundamental for configuring Kubernetes environments. We will cover topics such as switching, routing, gateways, DNS, network namespaces, and Docker networking. This guide targets both system administrators and application developers. If you are already confident with Linux networking, feel free to jump ahead to the Kubernetes-focused sections.
 
-![The image lists networking prerequisites, including switching, routing, DNS configurations, network namespaces, and Docker networking.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869864/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Prerequisite-Switching-Routing-Gateways-CNI-in-kubernetes/frame_10.jpg)
+![The image lists networking prerequisites, including switching, routing, DNS configurations, network namespaces, and Docker networking.](https://kodekloud.com/kk-media/image/upload/v1752869864/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Prerequisite-Switching-Routing-Gateways-CNI-in-kubernetes/frame_10.jpg)
 
 ## Basic Networking Concepts
 
@@ -48,7 +48,7 @@ Now, consider a second network, such as 192.168.2.0, with hosts assigned IPs lik
 
 A router interconnects two or more networks and holds an IP address in each network—e.g., 192.168.1.1 for the first network and 192.168.2.1 for the second. When a system on network 192.168.1.0 (say, with IP 192.168.1.11) needs to communicate with a system on network 192.168.2.0, it forwards packets to the router.
 
-![The image illustrates a network routing diagram with devices A, B, C, and D connected through two subnets, 192.168.1.0 and 192.168.2.0, via a central router.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869865/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Prerequisite-Switching-Routing-Gateways-CNI-in-kubernetes/frame_240.jpg)
+![The image illustrates a network routing diagram with devices A, B, C, and D connected through two subnets, 192.168.1.0 and 192.168.2.0, via a central router.](https://kodekloud.com/kk-media/image/upload/v1752869865/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Prerequisite-Switching-Routing-Gateways-CNI-in-kubernetes/frame_240.jpg)
 
 Each system must be configured with a gateway or specific route entries to ensure that packets reach the intended destination. To view the current routing table, use:
 

@@ -12,11 +12,11 @@ EBS (Elastic Block Store) provides block storage by dividing data into blocks, e
 
 EBS volumes are created within a single Availability Zone (AZ). To transfer data to another AZ, you must generate an EBS snapshot and then create a new volume from that snapshot in the target AZ. Familiarize yourself with the various EBS volume types—general purpose, provisioned IOPS, and magnetic (HDD)—to choose the optimal option based on your performance and cost requirements. Billing is based on the number of gigabytes provisioned each month.
 
-![The image provides exam tips for EBS, explaining block storage, volume provisioning, and data copying across availability zones. It also mentions different EBS volume types for various storage needs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859658/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/ebs-exam-tips-storage-volumes.jpg)
+![The image provides exam tips for EBS, explaining block storage, volume provisioning, and data copying across availability zones. It also mentions different EBS volume types for various storage needs.](https://kodekloud.com/kk-media/image/upload/v1752859658/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/ebs-exam-tips-storage-volumes.jpg)
 
 In contrast, the instance store is intended solely for temporary data. Since the instance store is tied to the physical host, data stored there is lost if the EC2 instance migrates to a different host. Use the instance store only for ephemeral or scratch data.
 
-![The image provides exam tips about instance stores, advising that they should only be used for temporary data and noting that data will be lost if an EC2 instance is moved to another host.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859659/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/instance-stores-exam-tips.jpg)
+![The image provides exam tips about instance stores, advising that they should only be used for temporary data and noting that data will be lost if an EC2 instance is moved to another host.](https://kodekloud.com/kk-media/image/upload/v1752859659/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/instance-stores-exam-tips.jpg)
 
 ## Elastic File System (EFS)
 
@@ -26,9 +26,9 @@ When setting up an EFS file system, you must provision mount targets. Each mount
 
 EFS offers two main storage classes—Standard and One Zone—and supports two performance modes: general purpose and elastic throughput. Unlike EBS, EFS volumes are designed solely for mounting and cannot be used to boot an operating system.
 
-![The image provides exam tips about Amazon EFS, highlighting its compatibility with NFSv4, Linux-based EC2 instances, and its ability to be mounted on multiple instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859660/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/amazon-efs-exam-tips-nfs-linux.jpg)
+![The image provides exam tips about Amazon EFS, highlighting its compatibility with NFSv4, Linux-based EC2 instances, and its ability to be mounted on multiple instances.](https://kodekloud.com/kk-media/image/upload/v1752859660/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/amazon-efs-exam-tips-nfs-linux.jpg)
 
-![The image provides exam tips for EFS, highlighting its two storage classes, two modes, and noting that it can be mounted but not booted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859661/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/efs-exam-tips-storage-classes.jpg)
+![The image provides exam tips for EFS, highlighting its two storage classes, two modes, and noting that it can be mounted but not booted.](https://kodekloud.com/kk-media/image/upload/v1752859661/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/efs-exam-tips-storage-classes.jpg)
 
 ## Simple Storage Service (S3)
 
@@ -41,7 +41,7 @@ An S3 object comprises two parts:
 
 Within S3, you organize your objects into buckets. Each bucket acts as a container for objects. Although you can create multiple buckets for various purposes, bucket names must be globally unique across all AWS accounts. For instance, if you create a bucket named “example,” no other AWS user can create a bucket with the same name. S3 supports an unlimited number of objects, with individual objects allowed up to five terabytes. Additionally, multi-part upload facilitates the efficient upload of large objects by breaking them into smaller segments.
 
-![The image provides exam tips for Amazon S3, highlighting its scalability, use cases, and flat file structure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859662/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/amazon-s3-exam-tips-scalability.jpg)
+![The image provides exam tips for Amazon S3, highlighting its scalability, use cases, and flat file structure.](https://kodekloud.com/kk-media/image/upload/v1752859662/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/amazon-s3-exam-tips-scalability.jpg)
 
 ### S3 Storage Classes and Versioning
 
@@ -59,13 +59,13 @@ Buckets can have three versioning states:
 
 > **lightbulb** Once enabled, versioning cannot be completely turned off; it can only be suspended. Keep in mind that charges apply for every object version, so multiple versions of large files can lead to increased costs.
 
-![The image provides exam tips on S3 versioning, explaining its purpose, default settings, and the three versioning states for buckets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859663/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/s3-versioning-exam-tips.jpg)
+![The image provides exam tips on S3 versioning, explaining its purpose, default settings, and the three versioning states for buckets.](https://kodekloud.com/kk-media/image/upload/v1752859663/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/s3-versioning-exam-tips.jpg)
 
-![The image provides exam tips on S3 versioning, highlighting key points about enabling, suspending, and securing versioning, as well as associated costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859664/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/s3-versioning-exam-tips-2.jpg)
+![The image provides exam tips on S3 versioning, highlighting key points about enabling, suspending, and securing versioning, as well as associated costs.](https://kodekloud.com/kk-media/image/upload/v1752859664/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/s3-versioning-exam-tips-2.jpg)
 
 Multi-factor authentication (MFA) can also be enabled to protect the versioning state of a bucket.
 
-![The image provides exam tips on S3 encryption methods, including server-side encryption with Amazon S3-managed keys, customer-provided keys, and AWS Key Management Service keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859666/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/s3-encryption-methods-exam-tips.jpg)
+![The image provides exam tips on S3 encryption methods, including server-side encryption with Amazon S3-managed keys, customer-provided keys, and AWS Key Management Service keys.](https://kodekloud.com/kk-media/image/upload/v1752859666/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752859666/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/s3-encryption-methods-exam-tips.jpg)
 
 ### S3 Bucket Policies and Encryption
 
@@ -93,13 +93,13 @@ Files in S3 are encrypted on a per-object basis, and you can choose different en
 3. **Server-Side Encryption with AWS Key Management Service Keys (SSE-KMS):**\
    Manage and create your own keys using AWS KMS. S3 integrates with KMS so you can establish custom access policies for encryption and decryption.
 
-![The image provides exam tips on S3 encryption methods, including server-side encryption with Amazon S3-managed keys, customer-provided keys, and AWS Key Management Service keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859666/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/s3-encryption-methods-exam-tips.jpg)
+![The image provides exam tips on S3 encryption methods, including server-side encryption with Amazon S3-managed keys, customer-provided keys, and AWS Key Management Service keys.](https://kodekloud.com/kk-media/image/upload/v1752859666/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752859666/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/s3-encryption-methods-exam-tips.jpg)
 
 ### Pre-signed URLs in S3
 
 Pre-signed URLs offer temporary access to S3 objects without requiring AWS credentials. When you generate a pre-signed URL, it carries the access permissions of its creator. Consequently, anyone using the URL will have the same access rights as the original user. If the creator does not have permissions on the target object, the URL will not function for others.
 
-![The image provides exam tips about AWS S3 pre-signed URLs, explaining their function, how they work with AWS API, and access limitations based on the creator's permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859667/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-s3-pre-signed-urls-tips.jpg)
+![The image provides exam tips about AWS S3 pre-signed URLs, explaining their function, how they work with AWS API, and access limitations based on the creator's permissions.](https://kodekloud.com/kk-media/image/upload/v1752859667/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-s3-pre-signed-urls-tips.jpg)
 
 ### S3 Access Points
 

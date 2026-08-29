@@ -10,14 +10,12 @@ We’ll trace home networking decade by decade and focus on three things: the un
 
 Three key questions, one home, five NICs, and a lot of blinking lights.
 
-<Callout icon="lightbulb">
-  Before we dive in, keep four core performance characteristics in mind—think of them as road features for your data:
+> **lightbulb** Before we dive in, keep four core performance characteristics in mind—think of them as road features for your data:
 
   * Bandwidth — how much data can move simultaneously (more lanes = higher throughput).
   * Latency — how long it takes a packet to start moving (high latency = lag).
   * Jitter — variability in packet timing (causes choppy audio/video).
   * Congestion — too many devices competing for the same path (causes slowdowns even with high headline speeds).
-</Callout>
 
 As you read each decade, notice how new cables, devices, and layouts attempted to address one or more of these constraints.
 
@@ -124,9 +122,7 @@ Pause and choose the best answer.
 * B is false. Star topologies make it easier to isolate faults; one cable or device failure typically affects only that endpoint.
 * C is false. Jitter is uneven packet timing and directly affects call and video quality, causing choppy audio or stuttering video—even when bandwidth appears sufficient.
 
-<Callout icon="warning">
-  Common pitfalls to avoid: mixing multiple NAT layers unintentionally (e.g., ISP modem+router plus your own router) can create double NAT issues. Also, wireless extenders can reduce throughput if positioned poorly—prefer wired backhaul for mesh nodes when possible.
-</Callout>
+> **warning** Common pitfalls to avoid: mixing multiple NAT layers unintentionally (e.g., ISP modem+router plus your own router) can create double NAT issues. Also, wireless extenders can reduce throughput if positioned poorly—prefer wired backhaul for mesh nodes when possible.
 
 ## Summary — map back to the core ideas
 
@@ -144,6 +140,4 @@ We’ll next break down the protocols that make networks work—how devices agre
 * [Wi‑Fi Alliance (Wi‑Fi 6)](https://www.wi-fi.org/discover-wi-fi/wi-fi-6)
 * [Ethernet cabling standards (Cat5e vs Cat6)](https://en.wikipedia.org/wiki/Ethernet_cabling)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/networks-and-communications/module/a35e2604-798a-4eb8-a204-4c1b8a1d4943/lesson/2d4e01a0-bbd7-4fea-9afe-be34becfde8d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/networks-and-communications/module/a35e2604-798a-4eb8-a204-4c1b8a1d4943/lesson/2d4e01a0-bbd7-4fea-9afe-be34becfde8d)

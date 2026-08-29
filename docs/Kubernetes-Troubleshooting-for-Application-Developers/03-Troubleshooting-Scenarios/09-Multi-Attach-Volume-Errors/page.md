@@ -51,9 +51,7 @@ logger-6cf5d48f9f-txkrn                 0/1     ContainerCreating   0          2
 
 After a few seconds, you may observe that the new pod takes longer than expected to start, and a multi-attach error is reported. This error arises because the volume remains attached to the old pod while the new pod attempts to attach it. The correct behavior would have the new pod attach the volume only after the old pod terminates.
 
-<Callout icon="lightbulb">
-  One workaround is to manually remove the "blocking" old pod by scaling the Deployment down to zero and then back up. This intervention ensures only one pod is running at a time.
-</Callout>
+> **lightbulb** One workaround is to manually remove the "blocking" old pod by scaling the Deployment down to zero and then back up. This intervention ensures only one pod is running at a time.
 
 ### Manual Scaling Workaround
 

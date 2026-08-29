@@ -18,11 +18,11 @@ Imagine hosting your web application on a single EC2 instance at public IP `1.1.
 
 Which IP address should your users access? Manually switching between IPs is cumbersome and exposes internal details. A load balancer provides a single, stable endpoint that intelligently distributes requests to healthy backends.
 
-![The image illustrates an Elastic Load Balancer (ELB) in AWS, showing a user querying which IP to send data to, with three availability zones each having a different IP address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863260/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/elastic-load-balancer-aws-diagram.jpg)
+![The image illustrates an Elastic Load Balancer (ELB) in AWS, showing a user querying which IP to send data to, with three availability zones each having a different IP address.](https://kodekloud.com/kk-media/image/upload/v1752863260/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/elastic-load-balancer-aws-diagram.jpg)
 
 Once deployed, the ELB abstracts individual instance IPs and automatically routes traffic:
 
-![The image illustrates an Elastic Load Balancer (ELB) setup in AWS Cloud, showing how traffic is distributed from a single IP address to multiple availability zones with different IPs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863261/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/aws-elb-traffic-distribution-diagram.jpg)
+![The image illustrates an Elastic Load Balancer (ELB) setup in AWS Cloud, showing how traffic is distributed from a single IP address to multiple availability zones with different IPs.](https://kodekloud.com/kk-media/image/upload/v1752863261/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/aws-elb-traffic-distribution-diagram.jpg)
 
 ***
 
@@ -42,7 +42,7 @@ The original AWS load balancer supports HTTP, HTTPS, TCP, and SSL but lacks mode
 
 > **triangle-alert** Classic Load Balancer is considered legacy. AWS recommends using Application Load Balancer (ALB) or Network Load Balancer (NLB) for new deployments.
 
-![The image is an illustration of the Classic Load Balancer (CLB) by AWS, noting it was the first load balancer introduced by AWS and is not recommended for use. It includes a simple diagram showing the CLB distributing traffic to two applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863262/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/aws-classic-load-balancer-diagram.jpg)
+![The image is an illustration of the Classic Load Balancer (CLB) by AWS, noting it was the first load balancer introduced by AWS and is not recommended for use. It includes a simple diagram showing the CLB distributing traffic to two applications.](https://kodekloud.com/kk-media/image/upload/v1752863262/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/aws-classic-load-balancer-diagram.jpg)
 
 ### 2. Application Load Balancer (ALB)
 
@@ -53,9 +53,9 @@ ALBs operate at the application layer (Layer 7) and excel at HTTP, HTTPS, and We
 * HTTP redirects and custom responses
 * Application-level health checks
 
-![The image is an infographic about Application Load Balancer (ALB), highlighting its support for HTTP/HTTPS/WebSockets, functioning at the application layer (layer 7), and request forwarding based on URL path conditions, host domain, and HTTP fields.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863263/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/alb-infographic-http-https-websockets.jpg)
+![The image is an infographic about Application Load Balancer (ALB), highlighting its support for HTTP/HTTPS/WebSockets, functioning at the application layer (layer 7), and request forwarding based on URL path conditions, host domain, and HTTP fields.](https://kodekloud.com/kk-media/image/upload/v1752863263/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/alb-infographic-http-https-websockets.jpg)
 
-![The image is an infographic about Application Load Balancer (ALB), highlighting its support for HTTP/HTTPS/WebSockets, functioning at the application layer, request forwarding based on specific conditions, and performing application-specific health checks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863264/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/alb-infographic-http-https-websockets-2.jpg)
+![The image is an infographic about Application Load Balancer (ALB), highlighting its support for HTTP/HTTPS/WebSockets, functioning at the application layer, request forwarding based on specific conditions, and performing application-specific health checks.](https://kodekloud.com/kk-media/image/upload/v1752863264/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/alb-infographic-http-https-websockets-2.jpg)
 
 #### ALB Traffic Flow and SSL Termination
 
@@ -63,7 +63,7 @@ Application Load Balancers terminate SSL/TLS connections, decrypting traffic at 
 
 > **lightbulb** Ensure your backend instances are configured to handle re-encrypted HTTPS if you require end-to-end encryption.
 
-![The image illustrates the flow of data through an Application Load Balancer (ALB), showing SSL/TLS termination at the ALB and the transition from encrypted to unencrypted data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863265/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/alb-data-flow-ssl-termination.jpg)
+![The image illustrates the flow of data through an Application Load Balancer (ALB), showing SSL/TLS termination at the ALB and the transition from encrypted to unencrypted data.](https://kodekloud.com/kk-media/image/upload/v1752863265/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/alb-data-flow-ssl-termination.jpg)
 
 ### 3. Network Load Balancer (NLB)
 
@@ -73,7 +73,7 @@ Operating at the transport layer (Layer 4), NLBs handle millions of requests per
 * Static IP support and Elastic IP attachment
 * Basic transport-level health checks (TCP)
 
-![The image is an informational graphic about Network Load Balancers (NLB), highlighting features such as load balancing traffic based on TCP/UDP, suitability for non-HTTP/HTTPS applications, speed, basic health checks, and TCP connection forwarding.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863266/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/network-load-balancers-features-graphic.jpg)
+![The image is an informational graphic about Network Load Balancers (NLB), highlighting features such as load balancing traffic based on TCP/UDP, suitability for non-HTTP/HTTPS applications, speed, basic health checks, and TCP connection forwarding.](https://kodekloud.com/kk-media/image/upload/v1752863266/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/network-load-balancers-features-graphic.jpg)
 
 ***
 
@@ -81,7 +81,7 @@ Operating at the transport layer (Layer 4), NLBs handle millions of requests per
 
 When you create an ELB, AWS launches a load-balancer node in each selected subnet (one per AZ). Clients resolve the ELB’s DNS name, and AWS distributes traffic across all nodes, which in turn forward requests to registered targets.
 
-![The image illustrates the architecture of Elastic Load Balancers within a Virtual Private Cloud (VPC), showing public and private subnets across two availability zones. It includes a DNS record creation for the ELB and load balancer nodes in each public subnet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863267/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/elastic-load-balancer-vpc-architecture.jpg)
+![The image illustrates the architecture of Elastic Load Balancers within a Virtual Private Cloud (VPC), showing public and private subnets across two availability zones. It includes a DNS record creation for the ELB and load balancer nodes in each public subnet.](https://kodekloud.com/kk-media/image/upload/v1752863267/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/elastic-load-balancer-vpc-architecture.jpg)
 
 ***
 
@@ -91,7 +91,7 @@ By default, each ELB node only routes traffic to targets in its own Availability
 
 > **lightbulb** Cross-zone load balancing can improve utilization but may incur additional inter-AZ data transfer charges.
 
-![The image illustrates a cross-zone load balancing setup within a Virtual Private Cloud (VPC), showing traffic distribution between two availability zones, each with load balancing nodes and instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863268/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/cross-zone-load-balancing-vpc-setup.jpg)
+![The image illustrates a cross-zone load balancing setup within a Virtual Private Cloud (VPC), showing traffic distribution between two availability zones, each with load balancing nodes and instances.](https://kodekloud.com/kk-media/image/upload/v1752863268/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/cross-zone-load-balancing-vpc-setup.jpg)
 
 ***
 
@@ -102,9 +102,9 @@ When deploying an ELB, you specify subnets:
 * **Public Load Balancer**: Internet-facing on public subnets
 * **Private Load Balancer**: Internal-only on private subnets
 
-![The image compares public and private load balancers, highlighting that public load balancers are deployed on public subnets for internet access, while private load balancers are deployed on private subnets for access within an organization's AWS network.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863269/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/public-private-load-balancers-comparison.jpg)
+![The image compares public and private load balancers, highlighting that public load balancers are deployed on public subnets for internet access, while private load balancers are deployed on private subnets for access within an organization's AWS network.](https://kodekloud.com/kk-media/image/upload/v1752863269/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/public-private-load-balancers-comparison.jpg)
 
-![The image illustrates the difference between private and public subnets in AWS Cloud, showing that a private load balancer is not accessible from the internet, while a public subnet is.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863270/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/aws-private-public-subnets-difference.jpg)
+![The image illustrates the difference between private and public subnets in AWS Cloud, showing that a private load balancer is not accessible from the internet, while a public subnet is.](https://kodekloud.com/kk-media/image/upload/v1752863270/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/aws-private-public-subnets-difference.jpg)
 
 ***
 
@@ -122,7 +122,7 @@ Consider a two-tier application in a VPC across two Availability Zones:
 
 This setup exposes your frontend securely while keeping your backend protected.
 
-![The image illustrates an ELB (Elastic Load Balancer) architecture within a Virtual Private Cloud (VPC), showing how load balancers in public subnets forward requests to resources in private subnets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863270/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/elb-architecture-vpc-load-balancer.jpg)
+![The image illustrates an ELB (Elastic Load Balancer) architecture within a Virtual Private Cloud (VPC), showing how load balancers in public subnets forward requests to resources in private subnets.](https://kodekloud.com/kk-media/image/upload/v1752863270/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/elb-architecture-vpc-load-balancer.jpg)
 
 ***
 
@@ -133,7 +133,7 @@ Listeners and target groups define how ELBs receive and route traffic:
 * **Listeners**: Check for incoming connections on a specific protocol and port. ALB listeners support content-based rules (host, path, headers).
 * **Target Groups**: Logical groups of endpoints (EC2 instances, IPs, ECS tasks, Lambda functions). Each listener rule forwards traffic to one or more target groups, with configurable health checks.
 
-![The image illustrates a network architecture with listeners and target groups, showing how load balancers forward requests to resources like ECS and Lambda functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863271/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/network-architecture-load-balancers-ecs-lambda.jpg)
+![The image illustrates a network architecture with listeners and target groups, showing how load balancers forward requests to resources like ECS and Lambda functions.](https://kodekloud.com/kk-media/image/upload/v1752863271/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/network-architecture-load-balancers-ecs-lambda.jpg)
 
 ***
 
@@ -147,9 +147,9 @@ Listeners and target groups define how ELBs receive and route traffic:
 * **Cross-zone load balancing** for even traffic distribution across AZs.
 * **Listeners** parse connections; **target groups** manage backend health and routing.
 
-![The image is a summary slide about Elastic Load Balancing (ELB), highlighting its traffic distribution capabilities, types, and a note on outdated CLBs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863272/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/elastic-load-balancing-summary-slide.jpg)
+![The image is a summary slide about Elastic Load Balancing (ELB), highlighting its traffic distribution capabilities, types, and a note on outdated CLBs.](https://kodekloud.com/kk-media/image/upload/v1752863272/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/elastic-load-balancing-summary-slide.jpg)
 
-![The image is a summary slide comparing Application Load Balancers (ALBs) and Network Load Balancers (NLBs), highlighting their functions and differences in handling HTTP/HTTPS traffic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863273/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/alb-nlb-comparison-summary-slide.jpg)
+![The image is a summary slide comparing Application Load Balancers (ALBs) and Network Load Balancers (NLBs), highlighting their functions and differences in handling HTTP/HTTPS traffic.](https://kodekloud.com/kk-media/image/upload/v1752863273/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers/alb-nlb-comparison-summary-slide.jpg)
 
 ***
 

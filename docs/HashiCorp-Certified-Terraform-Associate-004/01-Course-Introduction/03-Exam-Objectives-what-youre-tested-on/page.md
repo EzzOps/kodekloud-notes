@@ -72,9 +72,7 @@ Detailed highlights and study suggestions
 * Get hands‑on with workspaces, remote runs, VCS integration, and state storage hosted on Terraform Cloud/HCP.
 * Study collaboration features and governance (policy as code). The 004 exam expanded this area—practical experience is important.
 
-<Callout icon="lightbulb">
-  This course is organized around these eight objectives. Each lesson pairs a focused lecture with practical labs so you can learn concepts and build real‑world Terraform workflows you’ll be tested on.
-</Callout>
+> **lightbulb** This course is organized around these eight objectives. Each lesson pairs a focused lecture with practical labs so you can learn concepts and build real‑world Terraform workflows you’ll be tested on.
 
 A quick note on exam versions
 
@@ -89,6 +87,4 @@ Links and references
 * [Terraform Documentation](https://www.terraform.io/docs)
 * [Terraform Cloud & Enterprise](https://www.hashicorp.com/products/terraform)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/ab6bded4-e4cf-4208-9368-f5313fcfcf03/lesson/b97ba521-a266-4a97-a443-d8a82bd23b22" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/ab6bded4-e4cf-4208-9368-f5313fcfcf03/lesson/b97ba521-a266-4a97-a443-d8a82bd23b22)

@@ -167,9 +167,7 @@ If you change the request URL to `/posts/latest`, you might see the following er
 }
 ```
 
-<Callout icon="lightbulb">
-  This error occurs because FastAPI processes routes in the order they are defined. The route `/posts/{id}` appears before `/posts/latest`, causing the string "latest" to be interpreted as the integer parameter `id`. Since "latest" is not an integer, FastAPI throws a type validation error.
-</Callout>
+> **lightbulb** This error occurs because FastAPI processes routes in the order they are defined. The route `/posts/{id}` appears before `/posts/latest`, causing the string "latest" to be interpreted as the integer parameter `id`. Since "latest" is not an integer, FastAPI throws a type validation error.
 
 ### Illustrative Route Definitions
 
@@ -254,12 +252,8 @@ For the latest post endpoint, a successful response might appear as follows:
 }
 ```
 
-<Callout icon="lightbulb">
-  Remember that FastAPI evaluates routes in the order they are added. Always define fixed routes (e.g., `/posts/latest`) before dynamic ones (e.g., `/posts/{id}`) to prevent unintended matches and to avoid type validation errors.
-</Callout>
+> **lightbulb** Remember that FastAPI evaluates routes in the order they are added. Always define fixed routes (e.g., `/posts/latest`) before dynamic ones (e.g., `/posts/{id}`) to prevent unintended matches and to avoid type validation errors.
 
 For more information on FastAPI routing, check out the [FastAPI Documentation](https://fastapi.tiangolo.com/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/f5656cd1-8318-4ad4-ae7c-ee728c91d141" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/f5656cd1-8318-4ad4-ae7c-ee728c91d141)

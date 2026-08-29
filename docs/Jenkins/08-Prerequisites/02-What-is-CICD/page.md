@@ -16,23 +16,15 @@ Continuous Integration (CI) is the process that takes code from a version contro
 
 During CI, automated tests (unit tests, integration tests, and security checks) validate that the code meets quality and dependency standards before moving to the next stage.
 
-<Frame>
-  ![The image illustrates a Continuous Integration and Continuous Delivery/Deployment (CI/CD) process, showing code, packaging, and deployment stages with icons representing each step.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880100/notes-assets/images/Jenkins-What-is-CICD/frame_40.jpg)
-</Frame>
+![The image illustrates a Continuous Integration and Continuous Delivery/Deployment (CI/CD) process, showing code, packaging, and deployment stages with icons representing each step.](https://kodekloud.com/kk-media/image/upload/v1752880100/notes-assets/images/Jenkins-What-is-CICD/frame_40.jpg)
 
 After the packaging phase, the code moves into the CD pipeline. In CI, testing ensures that each build is robust and ready for further processing.
 
-<Frame>
-  ![The image illustrates Continuous Integration (CI) with icons representing code and a package, connected by an arrow.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880101/notes-assets/images/Jenkins-What-is-CICD/frame_50.jpg)
-</Frame>
+![The image illustrates Continuous Integration (CI) with icons representing code and a package, connected by an arrow.](https://kodekloud.com/kk-media/image/upload/v1752880101/notes-assets/images/Jenkins-What-is-CICD/frame_50.jpg)
 
-<Frame>
-  ![The image illustrates the concept of Continuous Integration (CI) using a rocket assembly metaphor, showing stages from parts to a complete, packaged rocket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880106/notes-assets/images/Jenkins-What-is-CICD/frame_90.jpg)
-</Frame>
+![The image illustrates the concept of Continuous Integration (CI) using a rocket assembly metaphor, showing stages from parts to a complete, packaged rocket.](https://kodekloud.com/kk-media/image/upload/v1752880106/notes-assets/images/Jenkins-What-is-CICD/frame_90.jpg)
 
-<Frame>
-  ![The image illustrates key components of Continuous Integration (CI), including code testing (unit and integration tests) and security checks, with visual indicators of successful completion.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880111/notes-assets/images/Jenkins-What-is-CICD/frame_170.jpg)
-</Frame>
+![The image illustrates key components of Continuous Integration (CI), including code testing (unit and integration tests) and security checks, with visual indicators of successful completion.](https://kodekloud.com/kk-media/image/upload/v1752880111/notes-assets/images/Jenkins-What-is-CICD/frame_170.jpg)
 
 ## Continuous Delivery and Continuous Deployment (CD)
 
@@ -46,9 +38,7 @@ There are two primary approaches within the CD process:
 
 With Continuous Delivery, the deployment package is complete and fully tested, but releasing it to production requires manual approval. For instance, after the CI process concludes, an operator might log into [Jenkins](https://learn.kodekloud.com/user/courses/jenkins) or another CI/CD tool and click a button to deploy the code. This method combines automation (packaging and testing) with a human decision step before production rollout.
 
-<Frame>
-  ![The image compares Continuous Delivery and Continuous Deployment, highlighting a manual approval step in Continuous Delivery, absent in Continuous Deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880112/notes-assets/images/Jenkins-What-is-CICD/frame_290.jpg)
-</Frame>
+![The image compares Continuous Delivery and Continuous Deployment, highlighting a manual approval step in Continuous Delivery, absent in Continuous Deployment.](https://kodekloud.com/kk-media/image/upload/v1752880112/notes-assets/images/Jenkins-What-is-CICD/frame_290.jpg)
 
 ### Continuous Deployment
 
@@ -56,18 +46,12 @@ Continuous Deployment takes automation one step further by removing the manual a
 
 A critical aspect of Continuous Deployment is ensuring secure authentication with deployment targets (such as AWS or Azure) and running post-deployment tests to verify that the application operates correctly.
 
-<Frame>
-  ![The image illustrates key components of Continuous Deployment (CD), including authentication, cloud services (AWS, Azure), and testing processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880114/notes-assets/images/Jenkins-What-is-CICD/frame_400.jpg)
-</Frame>
+![The image illustrates key components of Continuous Deployment (CD), including authentication, cloud services (AWS, Azure), and testing processes.](https://kodekloud.com/kk-media/image/upload/v1752880114/notes-assets/images/Jenkins-What-is-CICD/frame_400.jpg)
 
-<Callout icon="lightbulb">
-  Both Continuous Delivery and Continuous Deployment streamline the software release process, but the choice between them depends on your organization’s requirements for automation and manual oversight.
-</Callout>
+> **lightbulb** Both Continuous Delivery and Continuous Deployment streamline the software release process, but the choice between them depends on your organization’s requirements for automation and manual oversight.
 
 This lesson provided an overview of the CI/CD process, detailing the role of Continuous Integration and the differences between Continuous Delivery and Continuous Deployment. In upcoming lessons, we will dive deeper into these concepts and explore advanced implementation strategies.
 
 Thank you for reading, and see you in the next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/bdecbf7a-016d-4b60-9731-1cdaaddb3e3c/lesson/7042dcbd-f254-4601-a08a-969df70e9e7f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/bdecbf7a-016d-4b60-9731-1cdaaddb3e3c/lesson/7042dcbd-f254-4601-a08a-969df70e9e7f)

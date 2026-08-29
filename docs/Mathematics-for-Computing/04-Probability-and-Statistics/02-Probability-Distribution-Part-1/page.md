@@ -83,9 +83,7 @@ Links and references
 * [Naive Bayes classifiers — scikit-learn](https://scikit-learn.org/stable/modules/naive_bayes.html)
 * Bishop, C. M. “Pattern Recognition and Machine Learning” — chapter on probabilistic models and inference
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/7badce97-9acb-48b8-9fb6-bd5ce7e09045/lesson/0f8cd34b-333f-408a-b9a6-9c5219a44fea" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/7badce97-9acb-48b8-9fb6-bd5ce7e09045/lesson/0f8cd34b-333f-408a-b9a6-9c5219a44fea)
 
 
 # Probability Distribution Part 1
@@ -227,9 +225,7 @@ So when `p = 0.7`, `E[X] = 0.7`. That is why a 70% predicted probability can be 
 
 Bernoulli distributions are compact but powerful: they underpin binary classifiers, components of weather simulation pipelines, A/B tests, and probabilistic modeling in machine learning.
 
-<Callout icon="lightbulb">
-  The Bernoulli distribution models single yes/no outcomes. Its expected value equals the success probability `p`, which is why a predicted probability (like 70%) can be interpreted as the long-run fraction of successes.
-</Callout>
+> **lightbulb** The Bernoulli distribution models single yes/no outcomes. Its expected value equals the success probability `p`, which is why a predicted probability (like 70%) can be interpreted as the long-run fraction of successes.
 
 ## Quick references and further reading
 
@@ -239,6 +235,4 @@ Bernoulli distributions are compact but powerful: they underpin binary classifie
 
 For the next lesson we'll build on Bernoulli trials to discuss repeated trials (Binomial distribution) and continuous-valued distributions such as the Normal distribution and how they apply to forecasting and model evaluation.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/7badce97-9acb-48b8-9fb6-bd5ce7e09045/lesson/f26f893c-133d-4cc6-8999-ea511dfdf434" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/7badce97-9acb-48b8-9fb6-bd5ce7e09045/lesson/f26f893c-133d-4cc6-8999-ea511dfdf434)

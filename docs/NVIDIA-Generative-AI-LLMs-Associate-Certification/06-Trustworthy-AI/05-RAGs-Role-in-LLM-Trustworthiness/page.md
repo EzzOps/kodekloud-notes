@@ -40,14 +40,10 @@ References and further reading
 * [Retrieval-Augmented Generation (RAG) — original paper and overviews](https://arxiv.org/abs/2005.11401)
 * [Best practices for knowledge base curation and source verification](https://www.microsoft.com/en-us/research/publication/grounding-language-models/)
 
-<Callout icon="lightbulb">
-  RAG helps make outputs more factual by grounding answers in retrieved evidence, but it is only as reliable as the sources and retrieval strategy. Validate and curate the knowledge base and include citation/verification steps for higher trustworthiness.
-</Callout>
+> **lightbulb** RAG helps make outputs more factual by grounding answers in retrieved evidence, but it is only as reliable as the sources and retrieval strategy. Validate and curate the knowledge base and include citation/verification steps for higher trustworthiness.
 
 <Frame>
   <img alt="The image is a question about the role of retrieval-augmented generation (RAG) in enhancing LLM trustworthiness, with a highlighted answer explaining that RAG improves factual accuracy by grounding responses in verified external sources." />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/f5fcaa31-ee4e-4d79-9474-be230c1c96b7/lesson/2f1a44e6-7d68-4fc0-92bc-22e97df89cb6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/f5fcaa31-ee4e-4d79-9474-be230c1c96b7/lesson/2f1a44e6-7d68-4fc0-92bc-22e97df89cb6)

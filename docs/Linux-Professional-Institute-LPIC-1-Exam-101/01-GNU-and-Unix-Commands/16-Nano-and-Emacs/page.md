@@ -21,9 +21,7 @@ Key features of Nano include:
 * File locking and backup files
 * Internationalization support
 
-<Frame>
-  ![The image lists features of GNU Nano, including undo/redo, syntax coloring, interactive search-and-replace, auto-indentation, line numbers, word completion, file locking, backup files, and internationalization support.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881392/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Nano-and-Emacs/gnu-nano-features-list-undo-redo.jpg)
-</Frame>
+![The image lists features of GNU Nano, including undo/redo, syntax coloring, interactive search-and-replace, auto-indentation, line numbers, word completion, file locking, backup files, and internationalization support.](https://kodekloud.com/kk-media/image/upload/v1752881392/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Nano-and-Emacs/gnu-nano-features-list-undo-redo.jpg)
 
 ### Nano Keyboard Shortcuts
 
@@ -40,17 +38,11 @@ Most Nano commands appear at the bottom of the interface, but here are some esse
 | Ctrl+\\  | Replace text                 |
 | Ctrl+T   | Spell check current document |
 
-<Frame>
-  ![The image shows keyboard shortcuts for the Nano text editor, including commands for starting a new session, copying, cutting, and pasting selections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881393/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Nano-and-Emacs/nano-text-editor-keyboard-shortcuts.jpg)
-</Frame>
+![The image shows keyboard shortcuts for the Nano text editor, including commands for starting a new session, copying, cutting, and pasting selections.](https://kodekloud.com/kk-media/image/upload/v1752881393/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Nano-and-Emacs/nano-text-editor-keyboard-shortcuts.jpg)
 
-<Frame>
-  ![The image shows keyboard shortcuts for the Nano text editor, including commands for undo, redo, replace text, and spell-check.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881393/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Nano-and-Emacs/nano-text-editor-keyboard-shortcuts-2.jpg)
-</Frame>
+![The image shows keyboard shortcuts for the Nano text editor, including commands for undo, redo, replace text, and spell-check.](https://kodekloud.com/kk-media/image/upload/v1752881393/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Nano-and-Emacs/nano-text-editor-keyboard-shortcuts-2.jpg)
 
-<Callout icon="lightbulb">
-  Press `Ctrl+G` at any time in Nano to open the Help menu. You can also customize Nano by editing your `~/.nanorc` file.
-</Callout>
+> **lightbulb** Press `Ctrl+G` at any time in Nano to open the Help menu. You can also customize Nano by editing your `~/.nanorc` file.
 
 ***
 
@@ -66,13 +58,9 @@ Core capabilities of Emacs include:
 * Extensible architecture via Emacs Lisp
 * Configuration as email, news, or RSS client
 
-<Frame>
-  ![The image is a text description of Emacs, highlighting its features as a text editor, IDE, and its ability to be configured as an email, news, or RSS client.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881395/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Nano-and-Emacs/emacs-text-editor-ide-features.jpg)
-</Frame>
+![The image is a text description of Emacs, highlighting its features as a text editor, IDE, and its ability to be configured as an email, news, or RSS client.](https://kodekloud.com/kk-media/image/upload/v1752881395/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Nano-and-Emacs/emacs-text-editor-ide-features.jpg)
 
-<Callout icon="lightbulb">
-  Emacs starts with `emacs filename` and provides built-in tutorials under `Ctrl+h t`. Explore packages via `M-x package-list-packages`.
-</Callout>
+> **lightbulb** Emacs starts with `emacs filename` and provides built-in tutorials under `Ctrl+h t`. Explore packages via `M-x package-list-packages`.
 
 ***
 
@@ -97,6 +85,4 @@ Core capabilities of Emacs include:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/a0b11f51-cccd-43ff-bfb6-60ff7d5b8e0b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/a0b11f51-cccd-43ff-bfb6-60ff7d5b8e0b)

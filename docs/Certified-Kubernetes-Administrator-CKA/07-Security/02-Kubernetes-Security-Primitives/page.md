@@ -17,7 +17,7 @@ The security of your Kubernetes cluster begins with the hosts themselves. Protec
 
 A compromised host can expose your entire cluster, so securing these systems is a critical first step.
 
-![The image illustrates "Secure Hosts" with three outlined devices and notes on disabling password authentication and using SSH key-based authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869937/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kubernetes-Security-Primitives/frame_40.jpg)
+![The image illustrates "Secure Hosts" with three outlined devices and notes on disabling password authentication and using SSH key-based authentication.](https://kodekloud.com/kk-media/image/upload/v1752869937/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kubernetes-Security-Primitives/frame_40.jpg)
 
 ## API Server Access Control
 
@@ -37,7 +37,7 @@ Authentication verifies the identity of a user or service before granting access
 
 Additionally, service accounts support non-human processes. Detailed guidance on these methods is available in dedicated sections of our documentation.
 
-![The image outlines authentication methods, including usernames, passwords, tokens, certificates, LDAP, and service accounts, under the question "Who can access?"](../../../../images/kodekloud.com/kk-media/image/upload/v1752869939/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kubernetes-Security-Primitives/frame_120.jpg)
+![The image outlines authentication methods, including usernames, passwords, tokens, certificates, LDAP, and service accounts, under the question "Who can access?"](https://kodekloud.com/kk-media/image/upload/v1752869939/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kubernetes-Security-Primitives/frame_120.jpg)
 
 ### Authorization
 
@@ -49,7 +49,7 @@ After authentication, authorization determines what actions a user or service is
 
 These mechanisms enforce granular access control policies, ensuring that authenticated entities can perform only the operations they are permitted to execute.
 
-![The image lists types of authorization: RBAC, ABAC, Node Authorization, and Webhook Mode, under the heading "Authorization: What can they do?"](../../../../images/kodekloud.com/kk-media/image/upload/v1752869939/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kubernetes-Security-Primitives/frame_140.jpg)
+![The image lists types of authorization: RBAC, ABAC, Node Authorization, and Webhook Mode, under the heading "Authorization: What can they do?"](https://kodekloud.com/kk-media/image/upload/v1752869939/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kubernetes-Security-Primitives/frame_140.jpg)
 
 ## Securing Component Communications
 
@@ -61,7 +61,7 @@ Secure communications between Kubernetes components are enabled via TLS encrypti
 
 For more detailed instructions on setting up and managing TLS certificates, refer to our comprehensive certificate management guides.
 
-![The image illustrates the relationship between Kubernetes components using TLS certificates, centered around the Kube ApiServer, connecting to ETCD Cluster, Kubelet, Kube Proxy, Kube Controller Manager, and Kube Scheduler.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869940/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kubernetes-Security-Primitives/frame_160.jpg)
+![The image illustrates the relationship between Kubernetes components using TLS certificates, centered around the Kube ApiServer, connecting to ETCD Cluster, Kubelet, Kube Proxy, Kube Controller Manager, and Kube Scheduler.](https://kodekloud.com/kk-media/image/upload/v1752869940/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kubernetes-Security-Primitives/frame_160.jpg)
 
 ## Network Policies
 
@@ -72,7 +72,7 @@ By default, pods in a Kubernetes cluster communicate freely with one another. To
 
 For an in-depth discussion on implementing network policies with practical examples, please see the related documentation.
 
-![The image illustrates network policies using abstract shapes and colors, depicting connections and groupings among elements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869941/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kubernetes-Security-Primitives/frame_190.jpg)
+![The image illustrates network policies using abstract shapes and colors, depicting connections and groupings among elements.](https://kodekloud.com/kk-media/image/upload/v1752869941/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kubernetes-Security-Primitives/frame_190.jpg)
 
 > **lightbulb** For a secure Kubernetes environment, consider combining these security primitives with additional best practices and tools to counter evolving threats.
 

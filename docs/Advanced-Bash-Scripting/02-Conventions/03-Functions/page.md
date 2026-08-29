@@ -15,7 +15,7 @@ Your height is = 170cm
 
 By default, unquoted expansions are split on whitespace defined by `IFS` (space, tab, newline). Use quotes to preserve the exact value.
 
-![The image illustrates how different whitespace characters (tabs, spaces, linebreaks) affect the formatting of a string variable containing "Hello World".](../../../../images/kodekloud.com/kk-media/image/upload/v1752868552/notes-assets/images/Advanced-Bash-Scripting-Expanding/whitespace-characters-string-formatting.jpg)
+![The image illustrates how different whitespace characters (tabs, spaces, linebreaks) affect the formatting of a string variable containing "Hello World".](https://kodekloud.com/kk-media/image/upload/v1752868552/notes-assets/images/Advanced-Bash-Scripting-Expanding/whitespace-characters-string-formatting.jpg)
 
 ### Unquoted Expansion
 
@@ -102,7 +102,7 @@ Use this quick reference to decide when to quote or brace variables:
 | Iterating over words intentionally | Optional    | Optional | `for x in ${list}; do ...; done` |
 | Preventing word splitting          | Required    | Optional | `read -r line <<< "${input}"`    |
 
-![The image is a slide titled "Expanding Variables" with checkmarks next to "Directory paths, filenames" and "Assigning URLs to variables."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868553/notes-assets/images/Advanced-Bash-Scripting-Expanding/expanding-variables-checkmarks.jpg)
+![The image is a slide titled "Expanding Variables" with checkmarks next to "Directory paths, filenames" and "Assigning URLs to variables."](https://kodekloud.com/kk-media/image/upload/v1752868553/notes-assets/images/Advanced-Bash-Scripting-Expanding/expanding-variables-checkmarks.jpg)
 
 > **triangle-alert** Never rely on unquoted variable expansions for user input or file names—they can introduce security risks or unexpected behavior.
 

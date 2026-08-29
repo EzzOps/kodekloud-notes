@@ -8,7 +8,7 @@ In this lesson, we explore the built-in crypto package in Go (Golang) and learn 
 
 Golang's crypto package provides robust support for cryptography and hashing with easy-to-use implementations for many algorithms.
 
-![The image is a slide titled "Crypto package" that explains cryptography as a practice for secure communication, using encryption and decryption techniques to protect digital data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868725/notes-assets/images/Advanced-Golang-Hashes-and-cryptography/crypto-package-cryptography-slide.jpg)
+![The image is a slide titled "Crypto package" that explains cryptography as a practice for secure communication, using encryption and decryption techniques to protect digital data.](https://kodekloud.com/kk-media/image/upload/v1752868725/notes-assets/images/Advanced-Golang-Hashes-and-cryptography/crypto-package-cryptography-slide.jpg)
 
 ## Practical Example: MD5 Hashing in Go
 

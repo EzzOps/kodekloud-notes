@@ -63,13 +63,9 @@ If a partition lets a user spend the same \$10 twice because two sides can't see
   <img alt="The image illustrates a network partition scenario affecting a payment transaction system, highlighting concepts of consistency, availability, and partition tolerance with two database nodes managing a $100 charge." />
 </Frame>
 
-<Callout icon="lightbulb">
-  When designing your system, classify each data type by how costly inconsistency is. Use eventual consistency for user-visible metrics and feed data, but require strong consistency for financial, inventory, or safety-critical operations.
-</Callout>
+> **lightbulb** When designing your system, classify each data type by how costly inconsistency is. Use eventual consistency for user-visible metrics and feed data, but require strong consistency for financial, inventory, or safety-critical operations.
 
-<Callout icon="warning">
-  Remember: network partitions are inevitable in distributed systems. Never assume perfect connectivity when making consistency/availability trade-offs for critical data.
-</Callout>
+> **warning** Remember: network partitions are inevitable in distributed systems. Never assume perfect connectivity when making consistency/availability trade-offs for critical data.
 
 References and further reading:
 
@@ -80,6 +76,4 @@ References and further reading:
 
 In summary: CAP tells you that when a partition divides your system, you must choose between consistency and availability. For ephemeral counters and feeds, teams usually prefer availability. For money, inventory, and other resources that must never be duplicated or lost, teams choose consistency. Your architecture should reflect these priorities explicitly and include reconciliation strategies for the cases where you accept temporary inconsistency.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/c7a8e3b7-9370-4462-a298-4a441dd68f8a/lesson/e209f8e9-445f-4455-b568-d735efe34f9d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/c7a8e3b7-9370-4462-a298-4a441dd68f8a/lesson/e209f8e9-445f-4455-b568-d735efe34f9d)

@@ -23,9 +23,7 @@ $ tofu output pub_ip
 * [Terraform Output Variables](https://www.terraform.io/language/values/outputs)
 * [AWS Provider for Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/b646ce21-3806-4df8-9e7e-8395f67da219" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/b646ce21-3806-4df8-9e7e-8395f67da219)
 
 
 # Resource Attributes And Dependencies

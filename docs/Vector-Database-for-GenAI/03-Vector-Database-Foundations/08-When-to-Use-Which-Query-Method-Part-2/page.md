@@ -30,9 +30,7 @@ Real-world examples
 
 Practical tip: validate thresholds on representative labeled data to balance precision and recall. Too low a threshold increases noise; too high misses borderline but valid matches.
 
-<Callout icon="lightbulb">
-  Thresholds are a filtering step. Choose them based on validation data: too low yields noise, too high may miss valid matches.
-</Callout>
+> **lightbulb** Thresholds are a filtering step. Choose them based on validation data: too low yields noise, too high may miss valid matches.
 
 Example query patterns
 
@@ -103,9 +101,7 @@ Performance trade-offs and tuning
 * ANN provides massive speedups but may reduce recall. Tune index parameters (e.g., number of probes, ef\_search, M) to balance latency vs. accuracy.
 * Monitor recall/precision on labeled queries to guide the acceptable operating point.
 
-<Callout icon="warning">
-  ANN is a trade-off: optimize index parameters and measure recall on real query workloads. A misconfigured ANN index can silently degrade user experience.
-</Callout>
+> **warning** ANN is a trade-off: optimize index parameters and measure recall on real query workloads. A misconfigured ANN index can silently degrade user experience.
 
 Example ANN parameters (tool-specific)
 

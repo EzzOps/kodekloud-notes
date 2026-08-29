@@ -42,7 +42,7 @@ With SSE-C, you provide the encryption key on each request:
 * Encryption/decryption: S3
 * S3 stores only the MD5 hash of your key for verification
 
-![The image illustrates a diagram of server-side encryption with customer-provided keys (SSE-C) in AWS Cloud, showing a user, a bucket, and encrypted data flow.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869232/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/sse-c-aws-encryption-diagram.jpg)
+![The image illustrates a diagram of server-side encryption with customer-provided keys (SSE-C) in AWS Cloud, showing a user, a bucket, and encrypted data flow.](https://kodekloud.com/kk-media/image/upload/v1752869232/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/sse-c-aws-encryption-diagram.jpg)
 
 Include these headers (or equivalent CLI/SDK options):
 
@@ -89,7 +89,7 @@ s3.put_object(
 
 Below is a quick reference of S3 server-side encryption headers:
 
-![The image shows a table listing Amazon S3 server-side encryption headers, including their names and descriptions, detailing how to specify encryption algorithms and keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869233/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/amazon-s3-server-side-encryption-headers.jpg)
+![The image shows a table listing Amazon S3 server-side encryption headers, including their names and descriptions, detailing how to specify encryption algorithms and keys.](https://kodekloud.com/kk-media/image/upload/v1752869233/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/amazon-s3-server-side-encryption-headers.jpg)
 
 | Encryption Method | Key Management | Encryption/Decryption |
 | ----------------- | -------------- | --------------------- |
@@ -98,7 +98,7 @@ Below is a quick reference of S3 server-side encryption headers:
 | SSE-S3            | AWS S3         | AWS S3                |
 | SSE-KMS           | AWS KMS        | AWS S3 / AWS KMS      |
 
-![The image is a summary table comparing different encryption methods (Client Side, SSE-C, SSE-S3, SSE-KMS) in terms of key generation and encryption/decryption responsibilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869234/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/encryption-methods-comparison-table.jpg)
+![The image is a summary table comparing different encryption methods (Client Side, SSE-C, SSE-S3, SSE-KMS) in terms of key generation and encryption/decryption responsibilities.](https://kodekloud.com/kk-media/image/upload/v1752869234/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/encryption-methods-comparison-table.jpg)
 
 Choose the encryption approach that balances control, security, and operational overhead for your use case.
 
@@ -130,7 +130,7 @@ Replication offers several benefits:
 * Reduce read latency by storing objects nearer to end users
 * Enhance application performance by keeping data close to processing servers
 
-![The image lists the uses of replication, highlighting data protection, compliance requirements, storing data closer to users, and keeping data near servers. It includes icons next to each point.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869235/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Replication/replication-uses-data-protection-compliance.jpg)
+![The image lists the uses of replication, highlighting data protection, compliance requirements, storing data closer to users, and keeping data near servers. It includes icons next to each point.](https://kodekloud.com/kk-media/image/upload/v1752869235/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Replication/replication-uses-data-protection-compliance.jpg)
 
 ## Types of Replication
 
@@ -149,7 +149,7 @@ Even when operating in a single Region, SRR can solve key challenges:
 * **Log Aggregation:** Consolidate logs from multiple application buckets into a central bucket for unified analytics.
 * **Prod-to-Test Synchronization:** Keep your development or staging environments up to date with production data for realistic testing.
 
-![The image illustrates same-region replication use cases, showing the aggregation of logs into a single bucket and live replication between production and test environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869237/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Replication/same-region-replication-use-cases.jpg)
+![The image illustrates same-region replication use cases, showing the aggregation of logs into a single bucket and live replication between production and test environments.](https://kodekloud.com/kk-media/image/upload/v1752869237/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Replication/same-region-replication-use-cases.jpg)
 
 ***
 
@@ -161,7 +161,7 @@ CRR is ideal when you need to:
 * Deliver content faster to global audiences by minimizing latency
 * Increase operational resilience by providing local access to data for multi-Region applications
 
-![The image lists cross-region replication use cases, including compliance requirements, minimizing latency, and operational efficiency, each with corresponding icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869238/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Replication/cross-region-replication-use-cases-icons.jpg)
+![The image lists cross-region replication use cases, including compliance requirements, minimizing latency, and operational efficiency, each with corresponding icons.](https://kodekloud.com/kk-media/image/upload/v1752869238/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Replication/cross-region-replication-use-cases-icons.jpg)
 
 ***
 
@@ -169,7 +169,7 @@ CRR is ideal when you need to:
 
 By default, replication in S3 is **one-way**: changes in the source bucket propagate to the destination, but updates in the destination do not return to the source. For active-active deployments or automated failover, you can configure **bidirectional replication** manually to synchronize changes both ways.
 
-![The image illustrates bidirectional replication between "Prod" and "Dev" buckets, indicating it can be configured manually, with a cross symbol suggesting a potential issue or restriction.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869239/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Replication/bidirectional-replication-prod-dev-buckets.jpg)
+![The image illustrates bidirectional replication between "Prod" and "Dev" buckets, indicating it can be configured manually, with a cross symbol suggesting a potential issue or restriction.](https://kodekloud.com/kk-media/image/upload/v1752869239/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Replication/bidirectional-replication-prod-dev-buckets.jpg)
 
 Use Case: During a regional failover, promote the replica bucket as primary. Bidirectional replication ensures that changes made in the failover Region synchronize back when the original Region is restored.
 
@@ -187,7 +187,7 @@ Before enabling replication, verify these prerequisites:
 
 > **triangle-alert** Replication will not start until versioning is activated on both buckets. The S3 console will prompt you if versioning is missing.
 
-![The image lists replication requirements for AWS S3, including versioning on both buckets, permission to replicate, and object lock on both buckets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869240/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Replication/aws-s3-replication-requirements-list.jpg)
+![The image lists replication requirements for AWS S3, including versioning on both buckets, permission to replicate, and object lock on both buckets.](https://kodekloud.com/kk-media/image/upload/v1752869240/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Replication/aws-s3-replication-requirements-list.jpg)
 
 ***
 
@@ -199,7 +199,7 @@ Before enabling replication, verify these prerequisites:
 * **Metadata & Tags:** All object metadata, ACLs, and tags are preserved during replication.
 * **Storage Class Overrides:** Optionally, convert storage classes on the destination—for example, replicate `S3 Standard` to `S3 Standard-IA` in the target bucket.
 
-![The image provides details about object replication in AWS S3, mentioning that only objects created after enabling replication will be replicated, including those with encryption, while objects in certain Glacier storage classes will not be replicated.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869244/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Replication/aws-s3-object-replication-details.jpg)
+![The image provides details about object replication in AWS S3, mentioning that only objects created after enabling replication will be replicated, including those with encryption, while objects in certain Glacier storage classes will not be replicated.](https://kodekloud.com/kk-media/image/upload/v1752869244/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Replication/aws-s3-object-replication-details.jpg)
 
 ***
 
@@ -208,7 +208,7 @@ Before enabling replication, verify these prerequisites:
 * **Delete Markers:** Not replicated by default. You can enable marker replication if your workflow requires it.
 * **Version Deletions:** Removing a specific object version in the source bucket does *not* delete it in the destination—protecting against accidental or malicious data loss.
 
-![The image explains that by default, delete markers do not get replicated, and if a specific version of an object is deleted on the source bucket, it will not be deleted on the destination bucket to protect data from malicious deletions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869245/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Replication/delete-markers-replication-explanation.jpg)
+![The image explains that by default, delete markers do not get replicated, and if a specific version of an object is deleted on the source bucket, it will not be deleted on the destination bucket to protect data from malicious deletions.](https://kodekloud.com/kk-media/image/upload/v1752869245/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Replication/delete-markers-replication-explanation.jpg)
 
 ***
 
@@ -219,7 +219,7 @@ Before enabling replication, verify these prerequisites:
 | Same AWS Account       | Create an IAM role in the source account with S3 replicate permissions.                             |
 | Different AWS Accounts | In addition to the source IAM role, attach a bucket policy on the destination to allow replication. |
 
-![The image illustrates AWS S3 bucket replication permissions, showing a source bucket with an IAM role and a destination bucket with a bucket policy, indicating replication to a different AWS account.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869246/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Replication/aws-s3-bucket-replication-permissions.jpg)
+![The image illustrates AWS S3 bucket replication permissions, showing a source bucket with an IAM role and a destination bucket with a bucket policy, indicating replication to a different AWS account.](https://kodekloud.com/kk-media/image/upload/v1752869246/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Replication/aws-s3-bucket-replication-permissions.jpg)
 
 ***
 

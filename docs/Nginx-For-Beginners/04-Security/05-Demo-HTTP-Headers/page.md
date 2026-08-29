@@ -9,9 +9,7 @@ curl https://example.com
 
 To bypass certificate verification for testing only, use `-k` (equivalent to `--insecure`):
 
-<Callout icon="lightbulb">
-  Using `-k` disables certificate verification. Only use it for testing; do not use it in production scripts.
-</Callout>
+> **lightbulb** Using `-k` disables certificate verification. Only use it for testing; do not use it in production scripts.
 
 ```bash theme={null}
 # Send a HEAD request and ignore cert verification
@@ -150,9 +148,7 @@ fail2ban option meanings:
 | `maxretry` | Number of failures before banning (`1` = ban after one failure).     |
 | `bantime`  | Duration of the ban in seconds (`600` = 10 minutes).                 |
 
-<Callout icon="warning">
-  Setting `maxretry = 1` will ban after a single failed authentication attempt. For production, increase `maxretry` to reduce false positives and tune `bantime` to suit your environment.
-</Callout>
+> **warning** Setting `maxretry = 1` will ban after a single failed authentication attempt. For production, increase `maxretry` to reduce false positives and tune `bantime` to suit your environment.
 
 Start/restart fail2ban and check the status:
 
@@ -253,11 +249,9 @@ Further reading:
 * [Nginx documentation — ngx\_http\_access\_module](https://nginx.org/en/docs/http/ngx_http_access_module.html)
 * [fail2ban documentation](https://www.fail2ban.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/a317f900-cb06-48ac-822a-12a9f64d432f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/a317f900-cb06-48ac-822a-12a9f64d432f)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/66fef843-b5b8-4c77-a01b-ce3999f9643c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/66fef843-b5b8-4c77-a01b-ce3999f9643c)
 
 
 # Demo HTTP Headers

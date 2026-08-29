@@ -29,9 +29,7 @@ $ tofu workspace new development
 Created and switched to workspace "development"!
 ```
 
-<Callout icon="lightbulb">
-  Each workspace has its own isolated state. New workspaces start empty until you run `tofu apply`.
-</Callout>
+> **lightbulb** Each workspace has its own isolated state. New workspaces start empty until you run `tofu apply`.
 
 Listing again shows the active workspace:
 
@@ -59,9 +57,7 @@ Suppose your project directory at `/root/opentofu/projects/webserver` defines an
 * **Region**: `ca-central-1`
 * **AMI**: same for both environments
 
-<Frame>
-  ![The image shows a directory structure for a Terraform project named "my-application" with files like variables.tf, main.tf, and terraform.tfstate. It also displays configurations for two environments, "development" and "production," specifying region, AMI, and instance type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882869/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-OpenTofu-Workspaces/terraform-project-directory-structure.jpg)
-</Frame>
+![The image shows a directory structure for a Terraform project named "my-application" with files like variables.tf, main.tf, and terraform.tfstate. It also displays configurations for two environments, "development" and "production," specifying region, AMI, and instance type.](https://kodekloud.com/kk-media/image/upload/v1752882869/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-OpenTofu-Workspaces/terraform-project-directory-structure.jpg)
 
 Update `variables.tf` to define `instance_type` as a map:
 
@@ -177,6 +173,4 @@ Each subdirectory holds the `terraform.tfstate` file for its workspace.
 
 That's it for this lesson. See you in the next one!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/042e7b27-75d9-46fc-8f8c-7357d81923c1/lesson/cb1d75f5-cf53-4c7a-8f92-c23cf0a98750" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/042e7b27-75d9-46fc-8f8c-7357d81923c1/lesson/cb1d75f5-cf53-4c7a-8f92-c23cf0a98750)

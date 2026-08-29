@@ -8,7 +8,7 @@ Understanding priority classes is essential for managing workload scheduling in 
 
 Priority classes allow you to assign a numerical value to Pods, where a higher number indicates higher priority. For user-deployed applications, the value can range from approximately -2 billion to +1 billion. Additionally, there is a reserved range for internal system-critical Pods (like the Kubernetes control plane) which can have values up to 2 billion.
 
-![The image is a diagram illustrating priorities for Kubernetes components, databases, critical apps, and jobs, with a focus on system and app allocation, and numerical values indicating priority levels.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869897/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Priority-Classes/kubernetes-priorities-diagram.jpg)
+![The image is a diagram illustrating priorities for Kubernetes components, databases, critical apps, and jobs, with a focus on system and app allocation, and numerical values indicating priority levels.](https://kodekloud.com/kk-media/image/upload/v1752869897/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Priority-Classes/kubernetes-priorities-diagram.jpg)
 
 :::note Note
 To check the current priority classes in your cluster, run the following command:

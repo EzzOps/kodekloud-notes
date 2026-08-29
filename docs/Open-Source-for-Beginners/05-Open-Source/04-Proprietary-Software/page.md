@@ -8,13 +8,9 @@ Proprietary software is distributed under restrictive licenses, with exclusive r
 
 Proprietary software refers to applications and operating systems distributed under restrictive licenses, where the publisher retains exclusive rights to the source code. In the early days of computing, vendors enforced legal protections—often via non-disclosure agreements (NDAs)—to prevent unauthorized access or modification.
 
-<Callout icon="lightbulb">
-  Users must agree to End User License Agreements (EULAs) before installing or using proprietary software.
-</Callout>
+> **lightbulb** Users must agree to End User License Agreements (EULAs) before installing or using proprietary software.
 
-<Frame>
-  ![The image compares proprietary and open-source software, using icons and labels to represent each type. The proprietary software is on the left, and the open-source software is on the right with a lock symbol.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882540/notes-assets/images/Open-Source-for-Beginners-Proprietary-Software/proprietary-vs-open-source-software-comparison.jpg)
-</Frame>
+![The image compares proprietary and open-source software, using icons and labels to represent each type. The proprietary software is on the left, and the open-source software is on the right with a lock symbol.](https://kodekloud.com/kk-media/image/upload/v1752882540/notes-assets/images/Open-Source-for-Beginners-Proprietary-Software/proprietary-vs-open-source-software-comparison.jpg)
 
 ### Key Characteristics
 
@@ -29,9 +25,7 @@ Proprietary software refers to applications and operating systems distributed un
 | macOS            | Apple Inc.      | Proprietary License |
 | Windows          | Microsoft Corp. | Proprietary License |
 
-<Callout icon="triangle-alert">
-  Relying on proprietary software can lead to vendor lock-in and ongoing licensing costs. Assess long-term maintenance and upgrade fees before committing.
-</Callout>
+> **triangle-alert** Relying on proprietary software can lead to vendor lock-in and ongoing licensing costs. Assess long-term maintenance and upgrade fees before committing.
 
 ## References
 
@@ -39,6 +33,4 @@ Proprietary software refers to applications and operating systems distributed un
 * [Microsoft Windows](https://www.microsoft.com/windows/)
 * [Software License](https://en.wikipedia.org/wiki/Software_license)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/649f4ff1-452a-46e6-9822-6cb8808ccc6f/lesson/504d1391-d895-41cf-bb60-39cf18de2220" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/649f4ff1-452a-46e6-9822-6cb8808ccc6f/lesson/504d1391-d895-41cf-bb60-39cf18de2220)

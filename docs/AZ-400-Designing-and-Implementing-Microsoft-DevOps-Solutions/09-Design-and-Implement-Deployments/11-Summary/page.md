@@ -33,7 +33,7 @@ We start by comparing multiple release patterns to minimize risk and maximize fe
 * **Feature Flags**: Toggle features on or off without redeploying code.
 * **A/B Testing**: Serve different variants to optimize user experience and measure impact.
 
-![The image is an infographic titled "Exploring Deployment Strategies," detailing various deployment methods such as Blue/Green Deployments, Canary Deployments, Ring Deployments, Progressive Exposure, Feature Flags, and A/B Testing. Each method is briefly described in colored boxes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867681/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/exploring-deployment-strategies-infographic.jpg)
+![The image is an infographic titled "Exploring Deployment Strategies," detailing various deployment methods such as Blue/Green Deployments, Canary Deployments, Ring Deployments, Progressive Exposure, Feature Flags, and A/B Testing. Each method is briefly described in colored boxes.](https://kodekloud.com/kk-media/image/upload/v1752867681/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/exploring-deployment-strategies-infographic.jpg)
 
 ***
 
@@ -51,7 +51,7 @@ Resilience ensures your application withstands failures and recovers gracefully.
 | Automated Failover | Instant switchover to standby environments  | Azure Site Recovery              |
 | Disaster Recovery  | End-to-end planning for catastrophic events | Azure Backup & Recovery Services |
 
-![The image is a diagram titled "Design and Implementation of a Resiliency Strategy for Deployment," featuring three sections: Core Concepts of Resiliency, Resiliency Strategies, and Implementing Resiliency with Azure Services. Each section briefly describes aspects of system resiliency and Azure services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867682/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/resiliency-strategy-deployment-diagram.jpg)
+![The image is a diagram titled "Design and Implementation of a Resiliency Strategy for Deployment," featuring three sections: Core Concepts of Resiliency, Resiliency Strategies, and Implementing Resiliency with Azure Services. Each section briefly describes aspects of system resiliency and Azure services.](https://kodekloud.com/kk-media/image/upload/v1752867682/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/resiliency-strategy-deployment-diagram.jpg)
 
 ***
 
@@ -69,7 +69,7 @@ Automate your database changes alongside application code for consistent environ
    * Continuous integration and unit testing
    * Real-time monitoring and drift detection
 
-![The image is a slide titled "Implementing a Deployment That Includes Database Tasks," featuring three sections: Understanding Database Deployments, Tools for Database Deployment, and Best Practices. Each section briefly describes aspects of database deployment strategies, tools, and best practices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867683/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/implementing-database-deployment-strategies-slide.jpg)
+![The image is a slide titled "Implementing a Deployment That Includes Database Tasks," featuring three sections: Understanding Database Deployments, Tools for Database Deployment, and Best Practices. Each section briefly describes aspects of database deployment strategies, tools, and best practices.](https://kodekloud.com/kk-media/image/upload/v1752867683/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/implementing-database-deployment-strategies-slide.jpg)
 
 ***
 
@@ -84,7 +84,7 @@ Complex solutions often consist of interdependent services. To manage them effec
 
 > **lightbulb** Keeping your deployment scripts idempotent and modular reduces errors when re-running failed stages.
 
-![The image is an infographic titled "Reliable Order of Dependency Deployments in Pipelines," outlining aspects of dependency deployments in Azure DevOps, key challenges, pipeline design strategies, and best practices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867684/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/reliable-order-dependency-deployments-infographic.jpg)
+![The image is an infographic titled "Reliable Order of Dependency Deployments in Pipelines," outlining aspects of dependency deployments in Azure DevOps, key challenges, pipeline design strategies, and best practices.](https://kodekloud.com/kk-media/image/upload/v1752867684/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/reliable-order-dependency-deployments-infographic.jpg)
 
 ***
 
@@ -103,7 +103,7 @@ Complex solutions often consist of interdependent services. To manage them effec
 | Streamlining        | Use CI/CD to validate before swap                |
 | Deployment & Review | Swap slots, monitor, and roll back if needed     |
 
-![The image outlines a "Hotfix Path Plan" with four steps: definition, components, streamlining implementation, and effective deployment, each with brief descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867684/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/hotfix-path-plan-four-steps.jpg)
+![The image outlines a "Hotfix Path Plan" with four steps: definition, components, streamlining implementation, and effective deployment, each with brief descriptions.](https://kodekloud.com/kk-media/image/upload/v1752867684/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/hotfix-path-plan-four-steps.jpg)
 
 ***
 
@@ -115,7 +115,7 @@ Deliver scalable, geo-distributed applications:
 * **Azure Traffic Manager**: DNS-based routing policies (Priority, Performance, Geographic) for global failover.
 * **Integration**: Embed Traffic Manager and Load Balancer configurations into IaC templates and pipelines.
 
-![The image is a slide titled "Implementing Load Balancer and Traffic Manager Releases and Web Apps," featuring three sections on implementing Traffic Manager in DevOps, case studies, and deploying web apps with load balancers and traffic managers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867685/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/implementing-load-balancer-traffic-manager.jpg)
+![The image is a slide titled "Implementing Load Balancer and Traffic Manager Releases and Web Apps," featuring three sections on implementing Traffic Manager in DevOps, case studies, and deploying web apps with load balancers and traffic managers.](https://kodekloud.com/kk-media/image/upload/v1752867685/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/implementing-load-balancer-traffic-manager.jpg)
 
 ***
 
@@ -129,7 +129,7 @@ Feature flags unlock gradual rollouts and A/B experiments without redeployment:
 
 > **triangle-alert** Avoid long-lived feature flags—clean up flags promptly to reduce technical debt.
 
-![The image is an infographic titled "Implementing Feature Flags," outlining five steps: definition, basic uses, introduction to Azure App Configuration, its role in managing settings, and configuring Azure for feature flags.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867686/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/implementing-feature-flags-infographic.jpg)
+![The image is an infographic titled "Implementing Feature Flags," outlining five steps: definition, basic uses, introduction to Azure App Configuration, its role in managing settings, and configuring Azure for feature flags.](https://kodekloud.com/kk-media/image/upload/v1752867686/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/implementing-feature-flags-infographic.jpg)
 
 ***
 
@@ -145,7 +145,7 @@ Compare and choose the right model for your workload:
 
 Leverage Azure Pipelines to automate deployments across dev, test, and production, ensuring repeatability and traceability.
 
-![The image is a slide titled "Implementing Application Deployment," featuring five sections that outline different aspects of application deployment, including container deployment, tools like Docker and Kubernetes, and Azure Pipelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867687/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/implementing-application-deployment-slides.jpg)
+![The image is a slide titled "Implementing Application Deployment," featuring five sections that outline different aspects of application deployment, including container deployment, tools like Docker and Kubernetes, and Azure Pipelines.](https://kodekloud.com/kk-media/image/upload/v1752867687/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/implementing-application-deployment-slides.jpg)
 
 ***
 

@@ -79,13 +79,9 @@ metadata:
 
 (See the Argo CD docs for other deletion-policy options.)
 
-<Callout icon="lightbulb">
-  By default, Argo CD applies resources concurrently. Use hook annotations (for example, `argocd.argoproj.io/hook: PreSync` or `PostSync`) to enforce ordering for tasks like database migrations or cleanup. For full details and advanced hook lifecycle options, refer to the Argo CD Sync Hooks documentation: [https://argo-cd.readthedocs.io/en/stable/user-guide/hooks/](https://argo-cd.readthedocs.io/en/stable/user-guide/hooks/)
-</Callout>
+> **lightbulb** By default, Argo CD applies resources concurrently. Use hook annotations (for example, `argocd.argoproj.io/hook: PreSync` or `PostSync`) to enforce ordering for tasks like database migrations or cleanup. For full details and advanced hook lifecycle options, refer to the Argo CD Sync Hooks documentation: [https://argo-cd.readthedocs.io/en/stable/user-guide/hooks/](https://argo-cd.readthedocs.io/en/stable/user-guide/hooks/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/c4033a0f-7848-4b31-b8fa-7d390035d3df" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/c4033a0f-7848-4b31-b8fa-7d390035d3df)
 
 
 # Demo Sync Hook 2

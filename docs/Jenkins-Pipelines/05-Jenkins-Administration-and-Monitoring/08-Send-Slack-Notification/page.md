@@ -30,9 +30,7 @@ You will need to specify:
 
 Below is a screenshot of the Jenkins Pipeline configuration screen:
 
-<Frame>
-  ![The image shows a Jenkins pipeline syntax configuration screen for sending a Slack message, with fields for channel, message, and color settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879688/notes-assets/images/Jenkins-Pipelines-Send-Slack-Notification/jenkins-pipeline-slack-message-config.jpg)
-</Frame>
+![The image shows a Jenkins pipeline syntax configuration screen for sending a Slack message, with fields for channel, message, and color settings.](https://kodekloud.com/kk-media/image/upload/v1752879688/notes-assets/images/Jenkins-Pipelines-Send-Slack-Notification/jenkins-pipeline-slack-message-config.jpg)
 
 After configuring the options, your command may look similar to the following:
 
@@ -83,9 +81,7 @@ git checkout -b feature/enabling-slack
 Switched to a new branch 'feature/enabling-slack'
 ```
 
-<Callout icon="lightbulb">
-  To simplify maintenance when working with many stages (20 or more), consider creating a reusable Groovy method for sending Slack notifications rather than adding duplicate post blocks in every stage.
-</Callout>
+> **lightbulb** To simplify maintenance when working with many stages (20 or more), consider creating a reusable Groovy method for sending Slack notifications rather than adding duplicate post blocks in every stage.
 
 ## Step 4: Create a Reusable Groovy Notification Method
 
@@ -267,9 +263,7 @@ root@jenkins-controller-1 in solar-system on feature/enabling-slack via v20.16.0
 
 In this case, the `post always` block will trigger a failure notification with the corresponding red color.
 
-<Callout icon="lightbulb">
-  Below is the final version of the reusable Groovy method used throughout the Jenkinsfile:
-</Callout>
+> **lightbulb** Below is the final version of the reusable Groovy method used throughout the Jenkinsfile:
 
 ```groovy theme={null}
 def slackNotificationMethod(String buildStatus = 'STARTED') {
@@ -306,14 +300,10 @@ root@jenkins-controller-1 in solar-system on ⬢ feature/enabling-slack via 🐱
 
 In larger environments, consider using shared libraries to reuse common methods (like the Slack notification method) across multiple Jenkinsfiles. This approach maintains consistency while reducing duplicated code and simplifying maintenance.
 
-<Frame>
-  ![The image shows a Jenkins pipeline interface for a project named "solar-system," displaying various stages of the build process, including dependency installation, testing, and deployment, with some stages marked as successful and one with a warning. Integration testing details are also visible, including a Slack message step.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879690/notes-assets/images/Jenkins-Pipelines-Send-Slack-Notification/jenkins-pipeline-solar-system-build.jpg)
-</Frame>
+![The image shows a Jenkins pipeline interface for a project named "solar-system," displaying various stages of the build process, including dependency installation, testing, and deployment, with some stages marked as successful and one with a warning. Integration testing details are also visible, including a Slack message step.](https://kodekloud.com/kk-media/image/upload/v1752879690/notes-assets/images/Jenkins-Pipelines-Send-Slack-Notification/jenkins-pipeline-solar-system-build.jpg)
 
 That concludes our guide on integrating Slack notifications in a Jenkins pipeline. Happy automating!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/f046d5d1-6fa6-4156-b38d-202ed885b64d/lesson/a1d794c7-eb2a-4848-8765-426b976df5ab" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/f046d5d1-6fa6-4156-b38d-202ed885b64d/lesson/a1d794c7-eb2a-4848-8765-426b976df5ab)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/f046d5d1-6fa6-4156-b38d-202ed885b64d/lesson/833ee576-11b7-4cbe-872e-bf91c4d3f93c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/f046d5d1-6fa6-4156-b38d-202ed885b64d/lesson/833ee576-11b7-4cbe-872e-bf91c4d3f93c)

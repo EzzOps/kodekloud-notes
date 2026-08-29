@@ -26,9 +26,7 @@ The basic syntax for inserting a new row is:
 INSERT INTO products (column1, column2, ...) VALUES (value1, value2, ...);
 ```
 
-<Callout icon="lightbulb">
-  Ensure that the order of the columns in the INSERT statement exactly matches the order of the corresponding values provided.
-</Callout>
+> **lightbulb** Ensure that the order of the columns in the INSERT statement exactly matches the order of the corresponding values provided.
 
 ## Inserting a Single Row
 
@@ -111,6 +109,4 @@ This lesson has demonstrated how to create new entries in a PostgreSQL database 
 
 By following these guidelines, you can effectively manage data insertion in your PostgreSQL database while ensuring data integrity and ease of maintenance.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/8504055c-33d7-4423-a4f5-cf955f98395c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/8504055c-33d7-4423-a4f5-cf955f98395c)

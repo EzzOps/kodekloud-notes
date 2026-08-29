@@ -124,9 +124,7 @@ tail /var/log/k8s-audit.log
 
 You should see a `delete` event for `webapp-pod` in `prod-namespace`.
 
-<Callout icon="lightbulb">
-  Use `kubectl apply -f audit-policy.yaml` to update your policy dynamically and trigger events for testing.
-</Callout>
+> **lightbulb** Use `kubectl apply -f audit-policy.yaml` to update your policy dynamically and trigger events for testing.
 
 ***
 
@@ -136,11 +134,9 @@ You should see a `delete` event for `webapp-pod` in `prod-namespace`.
 * [Falco Security Monitoring](https://falco.org/docs/)
 * [API Server Command-Line Flags](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/c3b4f553-f11b-4575-9326-5181c4ad914e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/c3b4f553-f11b-4575-9326-5181c4ad914e)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/b2419d37-95cc-40d0-9fa4-54400aacf84f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/b2419d37-95cc-40d0-9fa4-54400aacf84f)
 
 
 # Authentication
@@ -170,9 +166,7 @@ Supported authentication methods:
 | Client Certificates       | X.509 certificates for users                                      |
 | External Identity Service | LDAP, OIDC, webhook token authentication                          |
 
-<Frame>
-  ![The image illustrates authentication mechanisms for "kube-apiserver," including static password files, static token files, certificates, and identity services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880776/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Authentication/kube-apiserver-authentication-mechanisms.jpg)
-</Frame>
+![The image illustrates authentication mechanisms for "kube-apiserver," including static password files, static token files, certificates, and identity services.](https://kodekloud.com/kk-media/image/upload/v1752880776/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Authentication/kube-apiserver-authentication-mechanisms.jpg)
 
 ***
 
@@ -272,13 +266,9 @@ curl -H "Authorization: Bearer KpjCVbI7cCEAHYPkByTizRb7gulcUc4B" \
 
 ***
 
-<Callout icon="triangle-alert">
-  Storing usernames, passwords, or tokens in plain text is **not recommended** for production. Use secure vaults or external identity providers for sensitive environments.
-</Callout>
+> **triangle-alert** Storing usernames, passwords, or tokens in plain text is **not recommended** for production. Use secure vaults or external identity providers for sensitive environments.
 
-<Frame>
-  ![The image contains a note with three bullet points about authentication mechanisms, volume mounting in kubeadm setup, and setting up role-based authorization for new users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880777/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Authentication/authentication-volume-mounting-kubeadm.jpg)
-</Frame>
+![The image contains a note with three bullet points about authentication mechanisms, volume mounting in kubeadm setup, and setting up role-based authorization for new users.](https://kodekloud.com/kk-media/image/upload/v1752880777/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Authentication/authentication-volume-mounting-kubeadm.jpg)
 
 ## Security Considerations
 
@@ -290,6 +280,4 @@ curl -H "Authorization: Bearer KpjCVbI7cCEAHYPkByTizRb7gulcUc4B" \
 
 Next, we’ll explore certificate-based authentication and how Kubernetes components use TLS certificates to secure communication.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/e28adb71-1b9e-4f03-9194-898630bea28e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/e28adb71-1b9e-4f03-9194-898630bea28e)

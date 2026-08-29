@@ -42,9 +42,7 @@ I0419 16:17:21.619979   55 logs_generator.go:671] 622 PUT /api/v1/namespaces/kub
 I0419 16:17:22.619973   55 logs_generator.go:671] 623 GET /api/v1/namespaces/ns/pods/wm
 ```
 
-<Callout icon="lightbulb">
-  Without the follow flag, the kubectl logs command only retrieves the log entries that exist at that particular moment.
-</Callout>
+> **lightbulb** Without the follow flag, the kubectl logs command only retrieves the log entries that exist at that particular moment.
 
 To enable real-time streaming of log entries, use the -f (or --follow) flag:
 
@@ -67,6 +65,4 @@ This concludes our discussion on streaming logs with kubectl. For more detailed 
 
 Happy logging!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/4295bd15-6b66-4890-b377-267eea712a66" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/4295bd15-6b66-4890-b377-267eea712a66)

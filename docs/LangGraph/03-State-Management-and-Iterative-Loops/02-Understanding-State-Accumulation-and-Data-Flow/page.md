@@ -9,9 +9,7 @@ state["final_response"] = "Expect rain tomorrow with a high near 55°F."
 state["loop_count"] = state.get("loop_count", 0) + 1
 ```
 
-<Callout icon="lightbulb">
-  Design your schema to be permissive early (optional fields) and grow it intentionally as new nodes or tools are added. This balances development speed with safety and observability.
-</Callout>
+> **lightbulb** Design your schema to be permissive early (optional fields) and grow it intentionally as new nodes or tools are added. This balances development speed with safety and observability.
 
 Practical considerations and best practices
 
@@ -45,9 +43,7 @@ Further reading and references
 * mypy static type checker: [https://mypy-lang.org/](https://mypy-lang.org/)
 * LangChain message types: [https://python.langchain.com/en/latest/](https://python.langchain.com/en/latest/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/da3e22f3-9144-425a-bc83-4715c077857c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/da3e22f3-9144-425a-bc83-4715c077857c)
 
 
 # Understanding State Accumulation and Data Flow
@@ -137,15 +133,11 @@ Accumulating everything without control can bloat the state, increase memory use
   <img alt="The image lists strategies for avoiding overaccumulation, such as capping chat history length, expiring outdated tool logs, and integrating pruning into graphs, with the reminder that intentional design prevents overload." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Decide what to persist based on the agent's goals. Keep only the state that improves behavior or is required for auditing; summarize or drop the rest to maintain performance.
-</Callout>
+> **lightbulb** Decide what to persist based on the agent's goals. Keep only the state that improves behavior or is required for auditing; summarize or drop the rest to maintain performance.
 
 Further reading and references
 
 * State (computer science): [https://en.wikipedia.org/wiki/State\_(computer\_science)](https://en.wikipedia.org/wiki/State_\(computer_science\))
 * For practical designs, search for "conversational memory patterns", "agent tool logging", and "execution tracing best practices" to find implementation examples and community patterns.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/4ed8f20e-852a-442b-b728-7ab22f616b13" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/4ed8f20e-852a-442b-b728-7ab22f616b13)

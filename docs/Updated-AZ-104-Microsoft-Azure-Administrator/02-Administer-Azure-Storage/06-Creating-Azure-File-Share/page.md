@@ -23,17 +23,13 @@ In this section, we detail how to create and connect to an Azure File Share usin
 3. Select a performance tier that meets your requirements. Options include Transaction Optimized, Hot, and Cool—Transaction Optimized is optimal for applications requiring a reliable backend file store.
 4. Set the maximum capacity (up to five terabytes) and click "Review and Create." The portal will then generate a script that you can use to mount the file share by specifying the drive letter, storage account key, and your operating system.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating a new file share, with options for naming, tier selection, and performance settings like maximum I/O and capacity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884377/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Creating-Azure-File-Share/azure-file-share-creation-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating a new file share, with options for naming, tier selection, and performance settings like maximum I/O and capacity.](https://kodekloud.com/kk-media/image/upload/v1752884377/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Creating-Azure-File-Share/azure-file-share-creation-interface.jpg)
 
 ## Connecting to the Azure File Share
 
 After the file share has been created, click on "Connect" in the Azure Portal to view the mounting script tailored for your operating system. The portal will display different scripts for Windows, Linux, and macOS. Make sure your local network allows traffic through port 445 for SMB connections, as some Internet Service Providers might block this port.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying details of a file share named "files-01," including its properties, performance metrics, and backup status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884379/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Creating-Azure-File-Share/azure-portal-file-share-details.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying details of a file share named "files-01," including its properties, performance metrics, and backup status.](https://kodekloud.com/kk-media/image/upload/v1752884379/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Creating-Azure-File-Share/azure-portal-file-share-details.jpg)
 
 When you click "Show Script," the portal displays the relevant script for your operating system. Copy and execute the script on your system to mount the Azure File Share.
 

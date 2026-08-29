@@ -88,9 +88,7 @@ services:
 
 ## Mount path and --config flag
 
-<Callout icon="lightbulb">
-  If you mount the config file to a non-default path inside the container, pass the `--config` flag via the `command:` field in your compose file. In the example above we mount to `/etc/otelcol/config.yaml`, which is the collector's default config path, so no `command:` is necessary.
-</Callout>
+> **lightbulb** If you mount the config file to a non-default path inside the container, pass the `--config` flag via the `command:` field in your compose file. In the example above we mount to `/etc/otelcol/config.yaml`, which is the collector's default config path, so no `command:` is necessary.
 
 ## 4) Start the collector
 
@@ -124,17 +122,13 @@ otel-collector | 2025-09-29T22:23:04.587Z info  service@v0.135.0/service.go:234 
 
 ## Troubleshooting
 
-<Callout icon="warning">
-  If you see an error about a conflicting container name (for example: "Conflict. The container name "/otel-collector" is already in use..."), either remove or rename the existing container before reusing that name:
+> **warning** If you see an error about a conflicting container name (for example: "Conflict. The container name "/otel-collector" is already in use..."), either remove or rename the existing container before reusing that name:
 
   * Remove: `docker rm -f otel-collector`
   * Or choose a different `container_name` in the compose file.
-</Callout>
 
 That's it — your OpenTelemetry Collector is now running in Docker and ready to receive OTLP traffic on ports 4317 (gRPC) and 4318 (HTTP).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/94d2710a-c270-4c49-9e4b-df67653f1b47/lesson/cb582f0a-1013-4d4c-a00b-bead7ffff9c7" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/94d2710a-c270-4c49-9e4b-df67653f1b47/lesson/cb582f0a-1013-4d4c-a00b-bead7ffff9c7)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/94d2710a-c270-4c49-9e4b-df67653f1b47/lesson/d38de21f-be62-49a6-8543-9f2980326dc2" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/94d2710a-c270-4c49-9e4b-df67653f1b47/lesson/d38de21f-be62-49a6-8543-9f2980326dc2)

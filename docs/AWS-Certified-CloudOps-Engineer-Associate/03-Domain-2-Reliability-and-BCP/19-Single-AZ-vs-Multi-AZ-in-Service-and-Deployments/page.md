@@ -10,7 +10,7 @@ Welcome to this lesson on reliability, business continuity, and disaster recover
 
 An AWS Availability Zone is more than just a single data center—it is a cluster of data centers with independent power, cooling, and internet connectivity. Each AZ operates independently within a region, ensuring robust availability. For example, regions such as Mumbai, Frankfurt, or Virginia typically offer at least three Availability Zones, although some regions might have two, four, or even six AZs.
 
-![The image illustrates the concept of AWS Availability Zones within a region, showing three zones (A, B, and C) each containing data centers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860172/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Single-AZ-vs-Multi-AZ-in-Service-and-Deployments/aws-availability-zones-diagram.jpg)
+![The image illustrates the concept of AWS Availability Zones within a region, showing three zones (A, B, and C) each containing data centers.](https://kodekloud.com/kk-media/image/upload/v1752860172/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Single-AZ-vs-Multi-AZ-in-Service-and-Deployments/aws-availability-zones-diagram.jpg)
 
 Think of a region as a "cluster of clusters": it contains several Availability Zones, and each AZ itself is comprised of multiple data centers. These data centers host AWS services such as EC2 instances, Kubernetes clusters, and RDS databases. When deploying services—including Lambda functions with attached network interfaces—they reside within subnets in an Availability Zone.
 
@@ -22,7 +22,7 @@ In a single-AZ deployment, all components run within one Availability Zone. Whil
 
 In contrast, multi-AZ deployments replicate critical components across multiple Availability Zones. For example, enabling Multi-AZ for an RDS instance causes AWS to provision a secondary instance in a different AZ. In an active-passive configuration, the primary EC2 instance communicates with the RDS instance through a DNS name managed by AWS. Should a failure occur, the failover mechanism updates the DNS record to redirect traffic to the standby instance. Although DNS caching and TTL values might introduce minor delays, AWS mitigates these through tight DNS infrastructure control.
 
-![The image illustrates a Multi-AZ Deployment in AWS, showing a Virtual Private Cloud (VPC) with two Availability Zones, each containing an EC2 instance and an RDS instance with replication for redundancy and high availability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860174/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Single-AZ-vs-Multi-AZ-in-Service-and-Deployments/multi-az-deployment-aws-vpc-diagram.jpg)
+![The image illustrates a Multi-AZ Deployment in AWS, showing a Virtual Private Cloud (VPC) with two Availability Zones, each containing an EC2 instance and an RDS instance with replication for redundancy and high availability.](https://kodekloud.com/kk-media/image/upload/v1752860174/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Single-AZ-vs-Multi-AZ-in-Service-and-Deployments/multi-az-deployment-aws-vpc-diagram.jpg)
 
 For even higher availability, integrating an Auto Scaling group with a load balancer across EC2 instances is recommended. However, the diagram above focuses on the core multi-AZ redundancy framework.
 
@@ -43,7 +43,7 @@ Remember, these strategies primarily apply to AWS services that utilize compute 
 
 In a comprehensive multi-AZ architecture, multiple subnets and instance tiers are configured. For instance, web servers, application servers, and database servers might each operate in separate tiers, managed by Auto Scaling groups and fronted by load balancers. This design supports automatic scaling, health checks, and efficient failover. Moreover, incorporating a secondary region with Global Accelerator can enhance disaster recovery, though true disaster recovery typically necessitates a second region.
 
-![The image is a comparison table of Single-AZ and Multi-AZ deployments, highlighting differences in aspects like availability, fault tolerance, cost, complexity, data transfer, and use cases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860175/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Single-AZ-vs-Multi-AZ-in-Service-and-Deployments/single-az-multi-az-comparison-table.jpg)
+![The image is a comparison table of Single-AZ and Multi-AZ deployments, highlighting differences in aspects like availability, fault tolerance, cost, complexity, data transfer, and use cases.](https://kodekloud.com/kk-media/image/upload/v1752860175/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Single-AZ-vs-Multi-AZ-in-Service-and-Deployments/single-az-multi-az-comparison-table.jpg)
 
 > **lightbulb** Adding layers such as Auto Scaling, load balancing, and additional security groups (e.g., App Tier security group acting as a firewall) further fortifies the infrastructure.
 
@@ -51,7 +51,7 @@ In a comprehensive multi-AZ architecture, multiple subnets and instance tiers ar
 
 Understanding the differences between single-AZ and multi-AZ deployments is vital, especially for AWS certification exams. While single-AZ deployments may be acceptable for non-critical applications, production systems demand multi-AZ setups to achieve high availability and fault tolerance. Utilizing Auto Scaling groups and load balancers across AZs further enhances system reliability. For ultimate resilience, consider extending your architecture across multiple regions for disaster recovery.
 
-![The image illustrates a Multi-AZ (Availability Zone) architecture using AWS services, featuring a Virtual Private Cloud (VPC) with public and private subnets, auto-scaling groups, and Amazon RDS within different availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860176/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Single-AZ-vs-Multi-AZ-in-Service-and-Deployments/multi-az-architecture-aws-vpc.jpg)
+![The image illustrates a Multi-AZ (Availability Zone) architecture using AWS services, featuring a Virtual Private Cloud (VPC) with public and private subnets, auto-scaling groups, and Amazon RDS within different availability zones.](https://kodekloud.com/kk-media/image/upload/v1752860176/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Single-AZ-vs-Multi-AZ-in-Service-and-Deployments/multi-az-architecture-aws-vpc.jpg)
 
 By thoroughly understanding and applying these deployment strategies, you can ensure that your AWS infrastructure is both resilient and scalable. Happy learning and best of luck with your certification exam!
 

@@ -12,7 +12,7 @@ This demo uses two EC2 instances running in the US East 1C Availability Zone. Ou
 
 First, verify that your EC2 instances (instance one and instance two) are up and running in US East 1C. Once confirmed, proceed with creating the Elastic File System.
 
-![The image shows an AWS EC2 dashboard with two running instances, both of type t2.micro, in the us-east-1c availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861834/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EFS-Demo/frame_40.jpg)
+![The image shows an AWS EC2 dashboard with two running instances, both of type t2.micro, in the us-east-1c availability zone.](https://kodekloud.com/kk-media/image/upload/v1752861834/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EFS-Demo/frame_40.jpg)
 
 ## Creating the EFS File System
 
@@ -23,12 +23,12 @@ First, verify that your EC2 instances (instance one and instance two) are up and
      * **Standard:** Ensures redundancy across multiple Availability Zones.
      * **One Zone:** Stores the file system in a single Availability Zone.
 
-![The image shows the AWS EFS file system settings page, where users can configure general settings, storage class, automatic backups, lifecycle management, and encryption options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861836/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EFS-Demo/frame_70.jpg)
+![The image shows the AWS EFS file system settings page, where users can configure general settings, storage class, automatic backups, lifecycle management, and encryption options.](https://kodekloud.com/kk-media/image/upload/v1752861836/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EFS-Demo/frame_70.jpg)
 
 3. For this demonstration, disable automatic backups, choose lifecycle settings as needed, and leave encryption disabled. Use the default throughput mode.
 4. Click **Next**.
 
-![The image shows an AWS management console screen for configuring EFS settings, including lifecycle management, encryption, and performance settings with options for throughput modes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861838/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EFS-Demo/frame_90.jpg)
+![The image shows an AWS management console screen for configuring EFS settings, including lifecycle management, encryption, and performance settings with options for throughput modes.](https://kodekloud.com/kk-media/image/upload/v1752861838/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EFS-Demo/frame_90.jpg)
 
 ## Configuring Mount Targets
 
@@ -40,17 +40,17 @@ Mount targets expose your EFS file system to the instances within your VPC. They
 4. Confirm the correct VPC is selected.
 5. Click **Next**.
 
-![The image shows an AWS console screen for configuring network access, including VPC selection and mount targets for Amazon EFS across different availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861839/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EFS-Demo/frame_110.jpg)
+![The image shows an AWS console screen for configuring network access, including VPC selection and mount targets for Amazon EFS across different availability zones.](https://kodekloud.com/kk-media/image/upload/v1752861839/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EFS-Demo/frame_110.jpg)
 
 ## Setting File System Policies
 
 Set file system policies to control access—options include preventing root access or enforcing read-only mode. For this demo, leave the defaults.
 
-![The image shows an AWS EFS file system policy configuration screen with options for access control and encryption settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861840/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EFS-Demo/frame_210.jpg)
+![The image shows an AWS EFS file system policy configuration screen with options for access control and encryption settings.](https://kodekloud.com/kk-media/image/upload/v1752861840/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EFS-Demo/frame_210.jpg)
 
 Review your settings and click **Create**. The file system will initially appear in a "creating" state. Refresh the page until it becomes available.
 
-![The image shows an AWS Elastic File System dashboard with one available file system named "efsdemo," unencrypted, and a total size of 6.00 KiB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861841/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EFS-Demo/frame_230.jpg)
+![The image shows an AWS Elastic File System dashboard with one available file system named "efsdemo," unencrypted, and a total size of 6.00 KiB.](https://kodekloud.com/kk-media/image/upload/v1752861841/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EFS-Demo/frame_230.jpg)
 
 ## Preparing the EC2 Instances
 
@@ -246,7 +246,7 @@ To conclude the demo, delete the EFS file system through the AWS console:
 1. Select your EFS file system and click **Delete**.
 2. When prompted, copy the file system name, paste it into the confirmation box, and confirm deletion.
 
-![The image shows an AWS console screen with a prompt to confirm the deletion of a file system, warning that this action is irreversible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861842/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EFS-Demo/frame_620.jpg)
+![The image shows an AWS console screen with a prompt to confirm the deletion of a file system, warning that this action is irreversible.](https://kodekloud.com/kk-media/image/upload/v1752861842/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Storage-EFS-Demo/frame_620.jpg)
 
 After a few minutes, the file system will be successfully deleted.
 

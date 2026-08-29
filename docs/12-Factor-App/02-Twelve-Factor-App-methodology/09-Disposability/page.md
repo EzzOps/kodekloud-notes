@@ -10,7 +10,7 @@ In this lesson, we explore the essential principle of disposability as outlined 
 
 A core aspect of disposability is the process of graceful shutdown. When a process receives a termination signal (SIGTERM) from the process manager, it must not immediately exit but rather conclude its active operations to prevent abrupt disruption. This approach ensures users experience minimal interruption, even when scaling down resources.
 
-![The image explains the disposability principle of twelve-factor apps, highlighting their ability to start or stop quickly and shut down gracefully on receiving a SIGTERM signal.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856835/notes-assets/images/12-Factor-App-Disposability/frame_40.jpg)
+![The image explains the disposability principle of twelve-factor apps, highlighting their ability to start or stop quickly and shut down gracefully on receiving a SIGTERM signal.](https://kodekloud.com/kk-media/image/upload/v1752856835/notes-assets/images/12-Factor-App-Disposability/frame_40.jpg)
 
 ## Graceful Shutdown in Docker Containers
 

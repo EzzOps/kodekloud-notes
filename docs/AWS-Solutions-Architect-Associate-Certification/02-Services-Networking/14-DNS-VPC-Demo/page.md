@@ -6,7 +6,7 @@ This guide explores DNS options for a Virtual Private Cloud in AWS, demonstratin
 
 In this guide, we explore the various DNS options available for a Virtual Private Cloud (VPC) in AWS. In our example, a custom VPC is created with default settings, preconfigured with the standard DNS configuration. This VPC also includes an attached internet gateway, enabling public subnets.
 
-![The image shows an AWS VPC (Virtual Private Cloud) management console with details of a specific VPC named "vpcdemo," including its ID, state, and IP configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865507/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DNS-VPC-Demo/aws-vpc-management-console-vpcdemo.jpg)
+![The image shows an AWS VPC (Virtual Private Cloud) management console with details of a specific VPC named "vpcdemo," including its ID, state, and IP configurations.](https://kodekloud.com/kk-media/image/upload/v1752865507/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DNS-VPC-Demo/aws-vpc-management-console-vpcdemo.jpg)
 
 When selecting the VPC, navigating to "Actions" and then "Edit VPC settings" will display two critical configuration options:
 
@@ -28,7 +28,7 @@ Additionally, configure a security group rule that allows all ICMP traffic for p
 
 After the instance is launched, check its details. The private IP address is assigned an internal DNS name:
 
-![The image shows an AWS EC2 Management Console with a list of instances, highlighting one running instance named "dnsdemo" with details such as its public IPv4 address and instance type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865509/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DNS-VPC-Demo/aws-ec2-management-console-dnsdemo.jpg)
+![The image shows an AWS EC2 Management Console with a list of instances, highlighting one running instance named "dnsdemo" with details such as its public IPv4 address and instance type.](https://kodekloud.com/kk-media/image/upload/v1752865509/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DNS-VPC-Demo/aws-ec2-management-console-dnsdemo.jpg)
 
 The internal (private) DNS name ensures that other servers within the VPC can communicate with this instance. However, since the "Enable DNS Hostnames" is disabled, the public IPv4 address does not have an associated DNS name.
 
@@ -100,7 +100,7 @@ Address: 2607:f8b0:4004:c08::66
 
 This confirms that external domains are successfully resolved due to the enabled DNS resolution setting in the VPC.
 
-![The image shows the AWS VPC Management Console with settings for editing a VPC, including VPC details, DHCP settings, and DNS settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865510/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DNS-VPC-Demo/aws-vpc-management-console-settings.jpg)
+![The image shows the AWS VPC Management Console with settings for editing a VPC, including VPC details, DHCP settings, and DNS settings.](https://kodekloud.com/kk-media/image/upload/v1752865510/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DNS-VPC-Demo/aws-vpc-management-console-settings.jpg)
 
 > **lightbulb** For improved troubleshooting, verify your security group settings to ensure that ICMP traffic is permitted, as this is essential for successful ping tests.
 

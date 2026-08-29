@@ -8,11 +8,11 @@ In this lesson, we explore AWS Identity and Access Management (IAM), a service d
 
 IAM verifies that users are who they claim to be (authentication) and determines what AWS resources they can access (authorization).
 
-![The image is a diagram explaining the concepts of authentication and authorization, with icons and labels for each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865871/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM/authentication-authorization-diagram.jpg)
+![The image is a diagram explaining the concepts of authentication and authorization, with icons and labels for each.](https://kodekloud.com/kk-media/image/upload/v1752865871/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM/authentication-authorization-diagram.jpg)
 
 For example, when a user initiates an operation — such as creating an [S3 bucket](https://learn.kodekloud.com/user/courses/amazon-simple-storage-service-amazon-s3) — IAM first confirms the user's identity and then checks if they have the appropriate permissions to perform that action. This secure mechanism centralizes identity verification and permission management, ensuring compliance and robust audit trails based on the principle of least privilege. This principle restricts users to the permissions necessary for their tasks.
 
-![The image outlines four key aspects of Identity and Access Management (IAM): Enhanced Security, Centralized Management, Compliance and Auditing, and Least Privilege Principle.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865872/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM/iam-key-aspects-security-management.jpg)
+![The image outlines four key aspects of Identity and Access Management (IAM): Enhanced Security, Centralized Management, Compliance and Auditing, and Least Privilege Principle.](https://kodekloud.com/kk-media/image/upload/v1752865872/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM/iam-key-aspects-security-management.jpg)
 
 > **lightbulb** When granting AWS access, creating an individual IAM user is essential. An IAM user represents a single entity (whether a person or an application) and starts with no permissions by default. Administrators must explicitly assign permissions via IAM policies.
 
@@ -20,7 +20,7 @@ In practice, if a team is only responsible for working with [AWS RDS](https://le
 
 IAM also supports grouping similar users. Groups allow you to assign a common set of policies to multiple users at once. For instance, if both Smith and Clark are part of the "dev" group, they automatically inherit all permissions associated with that group. Since users can belong to multiple groups, Clark might also gain additional permissions if he is a member of the "audit" group.
 
-![The image illustrates IAM policy inheritance with three groups: Dev Group, Audit Group, and Ops Group, each containing a user.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865874/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM/iam-policy-inheritance-groups-users.jpg)
+![The image illustrates IAM policy inheritance with three groups: Dev Group, Audit Group, and Ops Group, each containing a user.](https://kodekloud.com/kk-media/image/upload/v1752865874/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-IAM/iam-policy-inheritance-groups-users.jpg)
 
 > **triangle-alert** Remember: New IAM users have no access to AWS resources until permissions are explicitly granted through IAM policies.
 

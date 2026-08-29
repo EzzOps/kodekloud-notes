@@ -24,9 +24,7 @@ Shadow IT causes three major problems: security blind spots (environments aren�
   <img alt="The image illustrates how different development teams manage multiple AWS accounts under the concept of &#x22;Shadow IT,&#x22; highlighting security blind spots and compliance violations." />
 </Frame>
 
-<Callout icon="warning">
-  Shadow IT is not just an organizational annoyance — it introduces real security, compliance, and cost risks. Preventing it requires replacing slow manual processes with fast, trustworthy self-service APIs.
-</Callout>
+> **warning** Shadow IT is not just an organizational annoyance — it introduces real security, compliance, and cost risks. Preventing it requires replacing slow manual processes with fast, trustworthy self-service APIs.
 
 The platform team itself isn’t the root cause — the ticket-driven process is. People need self-service, not more tickets.
 
@@ -139,9 +137,7 @@ Quick comparison table
 | Consistency                      | High human variability                 | Enforced by schema, policies, controllers |
 | Visibility & governance          | Fragmented                             | Centralized via API & status fields       |
 
-<Callout icon="lightbulb">
-  Design platform APIs with the developer experience in mind: provide concise intent-driven fields, sensible defaults, and clear validation errors. Think of the CRD schema as both the contract and the documentation.
-</Callout>
+> **lightbulb** Design platform APIs with the developer experience in mind: provide concise intent-driven fields, sensible defaults, and clear validation errors. Think of the CRD schema as both the contract and the documentation.
 
 Key takeaways
 
@@ -163,6 +159,4 @@ References and further reading
 * Operator pattern — [https://kubernetes.io/docs/concepts/extend-kubernetes/operator/](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/)
 * Consider workflow engines such as Argo Workflows or Temporal for orchestrating multi-step provisioning flows.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/79029d22-eae3-479b-835b-ba6f83bc0004" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/79029d22-eae3-479b-835b-ba6f83bc0004)

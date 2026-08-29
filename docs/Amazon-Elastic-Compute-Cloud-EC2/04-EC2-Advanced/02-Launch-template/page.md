@@ -10,11 +10,11 @@ In this lesson, we’ll explore how AWS EC2 launch templates bring standardizati
 
 When building multiple websites, you wouldn’t recreate your homepage layout from scratch each time. You’d use a template with common elements: header, footer, and content blocks.
 
-![The image shows a laptop screen displaying a website layout with sections labeled "Product," "Contact," "Blog," "Image," and "Text Content," under the question "Why Do We Need Launch Template?"](../../../../images/kodekloud.com/kk-media/image/upload/v1752869047/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Launch-template/laptop-website-layout-launch-template.jpg)
+![The image shows a laptop screen displaying a website layout with sections labeled "Product," "Contact," "Blog," "Image," and "Text Content," under the question "Why Do We Need Launch Template?"](https://kodekloud.com/kk-media/image/upload/v1752869047/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Launch-template/laptop-website-layout-launch-template.jpg)
 
 Similarly, EC2 instances often share recurring settings:
 
-![The image lists common features of an EC2 launch template, including IAM Role, Security Group, Network Configuration, Instance Type, AMI, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869048/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Launch-template/ec2-launch-template-features-list.jpg)
+![The image lists common features of an EC2 launch template, including IAM Role, Security Group, Network Configuration, Instance Type, AMI, and more.](https://kodekloud.com/kk-media/image/upload/v1752869048/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Launch-template/ec2-launch-template-features-list.jpg)
 
 Using a launch template ensures repeatability, compliance, and faster provisioning across teams.
 
@@ -22,7 +22,7 @@ Using a launch template ensures repeatability, compliance, and faster provisioni
 
 Launch templates let you bundle a wide range of EC2 settings:
 
-![The image outlines the features of a launch template, including instance configuration, versioning and update, and customization. It lists specific components like AMI, EBS volume, and security group under instance configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869050/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Launch-template/launch-template-features-instance-configuration.jpg)
+![The image outlines the features of a launch template, including instance configuration, versioning and update, and customization. It lists specific components like AMI, EBS volume, and security group under instance configuration.](https://kodekloud.com/kk-media/image/upload/v1752869050/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Launch-template/launch-template-features-instance-configuration.jpg)
 
 | Feature                        | Description                                    |
 | ------------------------------ | ---------------------------------------------- |

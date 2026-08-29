@@ -55,11 +55,11 @@ Terraform Cloud lets you define environment variables for each run phase. We’l
 | TF\_CLI\_ARGS\_plan  | `-replace=aws_instance.clumsy_bird -input=false`               | Automatically replace the instance during plan |
 | TF\_CLI\_ARGS\_apply | `-replace=aws_instance.clumsy_bird -auto-approve -input=false` | Bypass approval and replace on apply           |
 
-![The image shows a Terraform Cloud interface where a user is setting environment variables, including AWS keys and a CLI argument for replacing an AWS instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878715/notes-assets/images/HashiCorp-Terraform-Cloud-Targeting-Resource-for-Replacement-with-Terraform-Cloud/terraform-cloud-environment-variables-aws.jpg)
+![The image shows a Terraform Cloud interface where a user is setting environment variables, including AWS keys and a CLI argument for replacing an AWS instance.](https://kodekloud.com/kk-media/image/upload/v1752878715/notes-assets/images/HashiCorp-Terraform-Cloud-Targeting-Resource-for-Replacement-with-Terraform-Cloud/terraform-cloud-environment-variables-aws.jpg)
 
 After saving, your workspace’s environment variables list should appear similar to this:
 
-![The image shows a Terraform Cloud interface displaying workspace variables, including sensitive and environment variables, with options to add more variables.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878716/notes-assets/images/HashiCorp-Terraform-Cloud-Targeting-Resource-for-Replacement-with-Terraform-Cloud/terraform-cloud-workspace-variables-interface.jpg)
+![The image shows a Terraform Cloud interface displaying workspace variables, including sensitive and environment variables, with options to add more variables.](https://kodekloud.com/kk-media/image/upload/v1752878716/notes-assets/images/HashiCorp-Terraform-Cloud-Targeting-Resource-for-Replacement-with-Terraform-Cloud/terraform-cloud-workspace-variables-interface.jpg)
 
 ***
 
@@ -67,11 +67,11 @@ After saving, your workspace’s environment variables list should appear simila
 
 Now, start a new run from the Terraform Cloud UI. During **Plan** and **Apply**, Terraform Cloud automatically applies your `-replace` flags:
 
-![The image shows a Terraform Cloud interface displaying the details of a recent run, including resources and outputs, with a list of AWS resources such as subnets and instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878717/notes-assets/images/HashiCorp-Terraform-Cloud-Targeting-Resource-for-Replacement-with-Terraform-Cloud/terraform-cloud-run-aws-resources.jpg)
+![The image shows a Terraform Cloud interface displaying the details of a recent run, including resources and outputs, with a list of AWS resources such as subnets and instances.](https://kodekloud.com/kk-media/image/upload/v1752878717/notes-assets/images/HashiCorp-Terraform-Cloud-Targeting-Resource-for-Replacement-with-Terraform-Cloud/terraform-cloud-run-aws-resources.jpg)
 
 You’ll see the plan mark two resources for destruction and recreation, plus one change. After Apply completes, the targeted instance and its related resources have been replaced—**with no Git commits**.
 
-![The image shows a Terraform Cloud interface where a run has been triggered to replace the "Clumsy Bird Application." It indicates that the plan and apply processes have finished, resulting in 2 resources created, 1 changed, and 2 destroyed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878718/notes-assets/images/HashiCorp-Terraform-Cloud-Targeting-Resource-for-Replacement-with-Terraform-Cloud/terraform-cloud-run-trigger-replace.jpg)
+![The image shows a Terraform Cloud interface where a run has been triggered to replace the "Clumsy Bird Application." It indicates that the plan and apply processes have finished, resulting in 2 resources created, 1 changed, and 2 destroyed.](https://kodekloud.com/kk-media/image/upload/v1752878718/notes-assets/images/HashiCorp-Terraform-Cloud-Targeting-Resource-for-Replacement-with-Terraform-Cloud/terraform-cloud-run-trigger-replace.jpg)
 
 ***
 
@@ -102,7 +102,7 @@ Thank you for reading this article on Helm. In this lesson, we introduced Helm a
 
 We also demonstrated how you can write your own charts. Consider the following diagram for an overview of key Helm-related topics:
 
-![The image displays a grid of labeled buttons related to Helm, including topics like Installation, Architecture, Charts, Functions, and more. It appears to be a menu or overview of topics for a course or tutorial.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878954/notes-assets/images/Helm-for-Beginners-Conclusion/helm-buttons-menu-overview.jpg)
+![The image displays a grid of labeled buttons related to Helm, including topics like Installation, Architecture, Charts, Functions, and more. It appears to be a menu or overview of topics for a course or tutorial.](https://kodekloud.com/kk-media/image/upload/v1752878954/notes-assets/images/Helm-for-Beginners-Conclusion/helm-buttons-menu-overview.jpg)
 
 > **lightbulb** For a detailed exploration of Helm's advanced capabilities—including functions, pipelines, conditionals, with blocks, ranges, and hooks—refer to our additional modules.
 

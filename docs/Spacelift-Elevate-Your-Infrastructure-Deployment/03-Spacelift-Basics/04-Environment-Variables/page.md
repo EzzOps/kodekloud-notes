@@ -24,9 +24,7 @@ Planning failed. Terraform encountered an error while generating this plan.
 [1821G4J8XYZ43R5R3KGH3C] Unexpected exit code when planning changes: 1
 ```
 
-<Callout icon="lightbulb">
-  The same methods for configuring the AWS provider in Spacelift also apply when working on your local machine or within any containerized environment.
-</Callout>
+> **lightbulb** The same methods for configuring the AWS provider in Spacelift also apply when working on your local machine or within any containerized environment.
 
 ## Sample Terraform Configuration
 

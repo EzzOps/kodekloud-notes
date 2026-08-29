@@ -64,9 +64,7 @@ By default, `tar` preserves permissions and ownership metadata in the archive. H
 sudo tar -xf archive.tar -C /desired/path
 ```
 
-<Callout icon="triangle-alert">
-  Extracting as root (`sudo`) may overwrite critical system files if the archive contains absolute paths. Always verify archive contents before restoring.
-</Callout>
+> **triangle-alert** Extracting as root (`sudo`) may overwrite critical system files if the archive contains absolute paths. Always verify archive contents before restoring.
 
 ***
 
@@ -75,9 +73,7 @@ sudo tar -xf archive.tar -C /desired/path
 * [GNU tar Manual](https://www.gnu.org/software/tar/manual/tar.html)
 * [Linux File Permissions](https://www.kernel.org/doc/html/latest/filesystems/permissions.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/22512b65-d060-43a4-926c-d161e0fa3a66" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/22512b65-d060-43a4-926c-d161e0fa3a66)
 
 
 # Backup files to a Remote System Optional
@@ -99,9 +95,7 @@ These simple yet powerful utilities preserve file attributes, transfer only chan
 
 `rsync` (remote synchronization) is a fast, versatile tool that copies files between local and remote directories while preserving permissions, timestamps, and symbolic links. It only transfers the differences between the source and destination, making repeated backups efficient.
 
-<Frame>
-  ![The image illustrates the concept of syncing two directories using "rsync" (remote synchronization) between a remote server and a local server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881466/notes-assets/images/Linux-System-Administration-for-Beginners-Backup-files-to-a-Remote-System-Optional/rsync-sync-directories-illustration.jpg)
-</Frame>
+![The image illustrates the concept of syncing two directories using "rsync" (remote synchronization) between a remote server and a local server.](https://kodekloud.com/kk-media/image/upload/v1752881466/notes-assets/images/Linux-System-Administration-for-Beginners-Backup-files-to-a-Remote-System-Optional/rsync-sync-directories-illustration.jpg)
 
 ### Basic Syntax
 
@@ -116,9 +110,7 @@ rsync -a [source/] user@remote_host:[destination/]
 | -h     | Human-readable numbers                                                         |
 | -P     | Show progress and keep partially transferred files                             |
 
-<Callout icon="lightbulb">
-  Adding a trailing slash to the source (e.g., `~/pics/`) copies *contents* of the directory. Omitting the slash (e.g., `~/pics`) copies the directory itself.
-</Callout>
+> **lightbulb** Adding a trailing slash to the source (e.g., `~/pics/`) copies *contents* of the directory. Omitting the slash (e.g., `~/pics`) copies the directory itself.
 
 ### Examples
 
@@ -148,9 +140,7 @@ On subsequent runs, only changed files are transferred, dramatically speeding up
 
 When you need a complete disk or partition image (for cloning or disaster recovery), use `dd`. It performs a raw, byte-for-byte copy.
 
-<Callout icon="triangle-alert">
-  Always unmount the target device before creating or restoring an image with `dd` to avoid data corruption.
-</Callout>
+> **triangle-alert** Always unmount the target device before creating or restoring an image with `dd` to avoid data corruption.
 
 ### Create an Image
 
@@ -187,6 +177,4 @@ $ sudo dd if=diskimage.raw of=/dev/vda bs=1M status=progress
 * [dd command reference](http://man7.org/linux/man-pages/man1/dd.1.html)
 * [Linux System Administration Basics](https://tldp.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/3fad6b37-b828-41a0-a6ea-cb10e78f1b1b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/3fad6b37-b828-41a0-a6ea-cb10e78f1b1b)

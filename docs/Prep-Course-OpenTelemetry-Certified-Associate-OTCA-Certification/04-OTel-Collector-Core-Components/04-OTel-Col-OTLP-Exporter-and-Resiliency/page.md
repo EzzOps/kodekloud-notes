@@ -165,9 +165,7 @@ Links and references
 * [OTLP Protocol Overview](https://github.com/open-telemetry/opentelemetry-proto)
 * [Kubernetes Services (headless)](https://kubernetes.io/docs/concepts/services-networking/service/#headless-services)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/824c4579-1751-4525-9ebb-6b47f45af0e4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/824c4579-1751-4525-9ebb-6b47f45af0e4)
 
 
 # OTel Col OTLP Exporter and Resiliency
@@ -262,9 +260,7 @@ Exporters often require credentials or tokens. Common approaches:
   <img alt="The image illustrates authentication options for exporters, detailing static headers, authenticator extensions, and environment variables for handling secrets." />
 </Frame>
 
-<Callout icon="lightbulb">
-  For production, avoid hard-coding secrets in config. Externalize tokens (for example, via a secrets manager or Vault) and reference them through an auth extension or environment variables so the exporter can attach bearer tokens without secrets in plaintext.
-</Callout>
+> **lightbulb** For production, avoid hard-coding secrets in config. Externalize tokens (for example, via a secrets manager or Vault) and reference them through an auth extension or environment variables so the exporter can attach bearer tokens without secrets in plaintext.
 
 Resiliency best practices
 
@@ -327,6 +323,4 @@ Links and references
 * OAuth2: [https://oauth.net/2/](https://oauth.net/2/)
 * OpenID Connect (OIDC): [https://openid.net/connect/](https://openid.net/connect/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/cb69236b-8517-4e0c-9adc-52aa97517d91" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/cb69236b-8517-4e0c-9adc-52aa97517d91)

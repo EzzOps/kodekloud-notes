@@ -10,9 +10,7 @@ Terraform input variables enhance code reusability and flexibility by allowing y
 
 Hard-coding values limits the adaptability of your configuration. By leveraging input variables, you can easily update resource configurations without modifying multiple code sections. This not only improves maintenance but also supports better scaling practices.
 
-<Callout icon="lightbulb">
-  Using variables makes your configuration files more modular and easier to manage. Adjust values in a single file to propagate changes across your infrastructure.
-</Callout>
+> **lightbulb** Using variables makes your configuration files more modular and easier to manage. Adjust values in a single file to propagate changes across your infrastructure.
 
 ## Traditional Hard-Coded Resources
 

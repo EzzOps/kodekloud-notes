@@ -29,9 +29,7 @@ When your root session is complete, simply exit by typing:
 $ logout
 ```
 
-<Callout icon="lightbulb">
-  Using sudo for temporary privileges helps minimize the security risks associated with prolonged root sessions.
-</Callout>
+> **lightbulb** Using sudo for temporary privileges helps minimize the security risks associated with prolonged root sessions.
 
 ## Using su to Log In as Root
 
@@ -65,9 +63,7 @@ Once the root password is set or unlocked, log in as the root user using:
 $ su -     # Then enter the newly set root password when prompted
 ```
 
-<Callout icon="lightbulb">
-  Enabling password-based logins can be useful for specific administrative tasks but consider the security implications carefully.
-</Callout>
+> **lightbulb** Enabling password-based logins can be useful for specific administrative tasks but consider the security implications carefully.
 
 ### Locking the Root Account
 
@@ -79,9 +75,7 @@ $ sudo passwd --lock root     # Alternatively: $ sudo passwd -l root
 
 Before locking the root account, ensure that your current user has adequate sudo privileges. Losing both sudo access and root login may prevent you from performing essential system maintenance.
 
-<Callout icon="triangle-alert">
-  Make sure to verify that your user account has the necessary sudo privileges before locking the root account. Otherwise, you risk losing critical administrative access.
-</Callout>
+> **triangle-alert** Make sure to verify that your user account has the necessary sudo privileges before locking the root account. Otherwise, you risk losing critical administrative access.
 
 ## Conclusion
 
@@ -93,6 +87,4 @@ For further reading on Linux security and access management, check out the follo
 
 By following these practices, you can effectively manage root access and maintain a secure Linux environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/7978e813-053a-49bb-ad39-71bd3862c52e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/7978e813-053a-49bb-ad39-71bd3862c52e)

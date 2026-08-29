@@ -14,13 +14,9 @@ With Sentinel you can:
 * Enforce policies at three levels: advisory, soft mandatory, and hard mandatory
 * Reuse the same policies across Terraform, Nomad, Vault, and Consul (enterprise editions)
 
-<Callout icon="lightbulb">
-  Sentinel is embedded in the Vault binary. No additional services or agents are required.
-</Callout>
+> **lightbulb** Sentinel is embedded in the Vault binary. No additional services or agents are required.
 
-<Frame>
-  ![The image is an infographic describing features of a policy management system, including "Policy as Code," "Fine Grained, Conditioned-Based," "Embedded," "Enforcement Levels," "External Information," and "Multi-Cloud Compatible." It uses icons and brief descriptions to explain each feature.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878340/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Understanding-Sentinel-Policies/policy-management-system-infographic-features.jpg)
-</Frame>
+![The image is an infographic describing features of a policy management system, including "Policy as Code," "Fine Grained, Conditioned-Based," "Embedded," "Enforcement Levels," "External Information," and "Multi-Cloud Compatible." It uses icons and brief descriptions to explain each feature.](https://kodekloud.com/kk-media/image/upload/v1752878340/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Understanding-Sentinel-Policies/policy-management-system-infographic-features.jpg)
 
 ***
 
@@ -35,9 +31,7 @@ Sentinel isn’t limited to Vault. It’s part of HashiCorp’s enterprise offer
 
 Once you author a Sentinel policy, you can apply it across these platforms with minimal changes.
 
-<Frame>
-  ![The image highlights that Sentinel is not just a Vault feature and is available in the Enterprise versions of HashiCorp products like Terraform, Nomad, Vault, and Consul. It also features a Vault certification badge and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878341/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Understanding-Sentinel-Policies/sentinel-enterprise-hashi-corp-products.jpg)
-</Frame>
+![The image highlights that Sentinel is not just a Vault feature and is available in the Enterprise versions of HashiCorp products like Terraform, Nomad, Vault, and Consul. It also features a Vault certification badge and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878341/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Understanding-Sentinel-Policies/sentinel-enterprise-hashi-corp-products.jpg)
 
 ***
 
@@ -50,9 +44,7 @@ Vault supports two main policy types:
 |     **Role Governing Policy (RGP)** | Tokens, identity entities, and groups     | Govern actions identities can perform based on role logic        |
 | **Endpoint Governing Policy (EGP)** | Specific API paths (authenticated or not) | Enforce conditions (source IP, business hours, MFA) per endpoint |
 
-<Frame>
-  ![The image describes two types of Sentinel policies: Role Governing Policies (RGPs) tied to tokens and identity entities, and Endpoint Governing Policies (EGPs) tied to paths. It highlights their access controls and effects.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878342/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Understanding-Sentinel-Policies/sentinel-policies-rgps-egps-access-controls.jpg)
-</Frame>
+![The image describes two types of Sentinel policies: Role Governing Policies (RGPs) tied to tokens and identity entities, and Endpoint Governing Policies (EGPs) tied to paths. It highlights their access controls and effects.](https://kodekloud.com/kk-media/image/upload/v1752878342/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Understanding-Sentinel-Policies/sentinel-policies-rgps-egps-access-controls.jpg)
 
 *Example:* An EGP on `/dev/data` could deny all access outside business hours, regardless of token validity.
 
@@ -80,9 +72,7 @@ main = rule {
 }
 ```
 
-<Frame>
-  ![The image lists examples of imports that can be used with Sentinel, such as base64, decimal, http, json, and others, each with a brief description of their functions. It also includes a note about fine-grained controls over a Vault environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878344/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Understanding-Sentinel-Policies/sentinel-imports-examples-functions-controls.jpg)
-</Frame>
+![The image lists examples of imports that can be used with Sentinel, such as base64, decimal, http, json, and others, each with a brief description of their functions. It also includes a note about fine-grained controls over a Vault environment.](https://kodekloud.com/kk-media/image/upload/v1752878344/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Understanding-Sentinel-Policies/sentinel-imports-examples-functions-controls.jpg)
 
 ### Common Sentinel Imports
 

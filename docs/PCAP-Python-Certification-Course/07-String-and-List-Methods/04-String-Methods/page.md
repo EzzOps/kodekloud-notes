@@ -6,9 +6,7 @@ This article reviews useful Python string methods for creating new strings witho
 
 In this article, we review several useful Python string methods that create new strings from a source string without modifying the original. These methods are essential for effective string manipulation in your Python projects and can help you build cleaner and more readable code.
 
-<Callout icon="lightbulb">
-  All string methods demonstrated here return new string objects. The original strings remain unchanged throughout the transformations.
-</Callout>
+> **lightbulb** All string methods demonstrated here return new string objects. The original strings remain unchanged throughout the transformations.
 
 ## Capitalize
 
@@ -54,9 +52,7 @@ Expected output:
    1234
 ```
 
-<Callout icon="lightbulb">
-  When providing a second argument to the `center` method, it uses that character for padding instead of the default space.
-</Callout>
+> **lightbulb** When providing a second argument to the `center` method, it uses that character for padding instead of the default space.
 
 ## Combined Example for Capitalize and Center
 

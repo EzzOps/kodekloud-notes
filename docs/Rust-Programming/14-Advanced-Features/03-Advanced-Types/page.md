@@ -6,9 +6,7 @@ This lesson covers advanced features of Rusts type system, including new types, 
 
 In this lesson, we dive into some of the advanced features of Rust's type system, including new types, type aliases, the never type, and dynamically sized types. These tools enhance Rust's ability to produce safe and flexible code. Let's get started.
 
-<Frame>
-  ![The image shows an agenda with four items: Newtypes, Type aliases, The never type (!), and Dynamically sized types (DSTs), presented in a colorful, numbered list.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883747/notes-assets/images/Rust-Programming-Advanced-Types/agenda-newtypes-type-aliases-dsts.jpg)
-</Frame>
+![The image shows an agenda with four items: Newtypes, Type aliases, The never type (!), and Dynamically sized types (DSTs), presented in a colorful, numbered list.](https://kodekloud.com/kk-media/image/upload/v1752883747/notes-assets/images/Rust-Programming-Advanced-Types/agenda-newtypes-type-aliases-dsts.jpg)
 
 ## New Type Pattern
 
@@ -27,9 +25,7 @@ fn drive(distance: Meters) {
 
 In this code, the `drive` function strictly requires a `Meters` value, preventing accidental misuse. This pattern not only enforces type safety but also encapsulates the inner details of the wrapped type.
 
-<Frame>
-  ![The image explains the benefits of the newtype pattern in Rust, highlighting type safety to prevent mixing types like meters and kilometers, and abstraction to hide internal details of a type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883748/notes-assets/images/Rust-Programming-Advanced-Types/newtype-pattern-rust-benefits.jpg)
-</Frame>
+![The image explains the benefits of the newtype pattern in Rust, highlighting type safety to prevent mixing types like meters and kilometers, and abstraction to hide internal details of a type.](https://kodekloud.com/kk-media/image/upload/v1752883748/notes-assets/images/Rust-Programming-Advanced-Types/newtype-pattern-rust-benefits.jpg)
 
 ## Type Aliases
 
@@ -61,13 +57,9 @@ fn main() {
 }
 ```
 
-<Callout icon="lightbulb">
-  Type aliases simply provide alternate names to existing types and do not create new type-checking boundaries. For example, `UserId` and `u32` will be treated as the same type by the compiler.
-</Callout>
+> **lightbulb** Type aliases simply provide alternate names to existing types and do not create new type-checking boundaries. For example, `UserId` and `u32` will be treated as the same type by the compiler.
 
-<Frame>
-  ![The image explains how type aliases help in programming by reducing repetition and improving readability. It highlights that type aliases prevent the need to write long types repeatedly and make code clearer by using meaningful names.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883749/notes-assets/images/Rust-Programming-Advanced-Types/type-aliases-programming-readability.jpg)
-</Frame>
+![The image explains how type aliases help in programming by reducing repetition and improving readability. It highlights that type aliases prevent the need to write long types repeatedly and make code clearer by using meaningful names.](https://kodekloud.com/kk-media/image/upload/v1752883749/notes-assets/images/Rust-Programming-Advanced-Types/type-aliases-programming-readability.jpg)
 
 ## The Never Type
 
@@ -85,9 +77,7 @@ fn endless_loop() -> ! {
 
 Moreover, the `panic!` macro in Rust also returns the never type, which clearly indicates that the function call will not return normally.
 
-<Frame>
-  ![The image features a laptop icon with an exclamation mark on the screen, accompanied by text explaining the "Never Type" in programming, specifically related to the panic! macro.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883750/notes-assets/images/Rust-Programming-Advanced-Types/never-type-panic-macro-laptop.jpg)
-</Frame>
+![The image features a laptop icon with an exclamation mark on the screen, accompanied by text explaining the "Never Type" in programming, specifically related to the panic! macro.](https://kodekloud.com/kk-media/image/upload/v1752883750/notes-assets/images/Rust-Programming-Advanced-Types/never-type-panic-macro-laptop.jpg)
 
 ## Dynamically Sized Types (DSTs)
 
@@ -114,6 +104,4 @@ These techniques empower you to write robust, maintainable, and safe Rust code w
 
 For further details, consider exploring more on [Rust's Official Documentation](https://doc.rust-lang.org/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/bff86fa1-7afc-44e5-b0ac-00b8be577bf8/lesson/4bf3b6ac-987d-4e56-904e-8e1c1ada94e3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/bff86fa1-7afc-44e5-b0ac-00b8be577bf8/lesson/4bf3b6ac-987d-4e56-904e-8e1c1ada94e3)

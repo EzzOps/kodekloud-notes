@@ -10,7 +10,7 @@ This article demonstrates how to optimize your application performance using two
 
 Azure Redis Cache allows you to cache frequently accessed data so that your application retrieves information quickly without repeatedly querying the underlying database. For instance, rather than having web applications query a SQL database or Cosmos DB for every user request, commonly requested data is cached in Redis. If the data is missing, the application then queries the database for the most recent information. Azure Redis Cache integrates seamlessly with various Azure databases, including SQL DB, Cosmos DB, MySQL, PostgreSQL, and MariaDB.
 
-![The image is a diagram explaining Azure Redis Cache, showing how users interact with a web app that accesses data from various databases through the Azure Redis Cache for improved performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867186/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-application-optimization-solution/azure-redis-cache-diagram.jpg)
+![The image is a diagram explaining Azure Redis Cache, showing how users interact with a web app that accesses data from various databases through the Azure Redis Cache for improved performance.](https://kodekloud.com/kk-media/image/upload/v1752867186/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-application-optimization-solution/azure-redis-cache-diagram.jpg)
 
 ### When to Use Redis Cache
 
@@ -34,7 +34,7 @@ Azure Redis Cache can also be used for task queuing. When facing operations that
 
 For scenarios requiring multiple operations to be executed as a single transaction, Redis Cache supports atomic execution of multiple commands. This ensures that if any step fails, the entire set of operations can be rolled back to maintain data consistency.
 
-![The image is an infographic from KodeKloud explaining when to use Azure Redis Cache, highlighting five use cases: caching, content cache, session persistence, task queuing, and distributed transactions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867187/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-application-optimization-solution/azure-redis-cache-use-cases-infographic.jpg)
+![The image is an infographic from KodeKloud explaining when to use Azure Redis Cache, highlighting five use cases: caching, content cache, session persistence, task queuing, and distributed transactions.](https://kodekloud.com/kk-media/image/upload/v1752867187/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-application-optimization-solution/azure-redis-cache-use-cases-infographic.jpg)
 
 > **lightbulb** When implementing Redis Cache, consider the cache-aside pattern to minimize memory usage and maintain data integrity.
 
@@ -42,7 +42,7 @@ For scenarios requiring multiple operations to be executed as a single transacti
 
 Azure API Management is a fully managed service that enables you to publish, manage, secure, maintain, and analyze your APIs. Acting as a gateway, it ensures that API calls from a vast array of clients—such as mobile applications, business partners, developers, employees, IoT devices, and web applications—are properly routed to the appropriate backend servers.
 
-![The image is a diagram explaining Azure API Management, showing how various entities like mobile apps, business partners, developers, employees, IoT devices, and web apps connect through API management to different servers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867188/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-application-optimization-solution/azure-api-management-diagram.jpg)
+![The image is a diagram explaining Azure API Management, showing how various entities like mobile apps, business partners, developers, employees, IoT devices, and web apps connect through API management to different servers.](https://kodekloud.com/kk-media/image/upload/v1752867188/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-application-optimization-solution/azure-api-management-diagram.jpg)
 
 ### When to Use API Management
 
@@ -54,7 +54,7 @@ API Management is ideal for environments that require centralized control over a
 
 If these conditions are met, API Management will standardize your API ecosystem, streamline operations, and enhance security.
 
-![The image is an infographic from KodeKloud discussing the considerations for using API management, focusing on the number of APIs, rate of change, and administration load, with steps to standardize, centralize, and secure APIs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867189/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-application-optimization-solution/api-management-considerations-infographic.jpg)
+![The image is an infographic from KodeKloud discussing the considerations for using API management, focusing on the number of APIs, rate of change, and administration load, with steps to standardize, centralize, and secure APIs.](https://kodekloud.com/kk-media/image/upload/v1752867189/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-application-optimization-solution/api-management-considerations-infographic.jpg)
 
 > **lightbulb** Consider using API Management to gain centralized control and enforce uniform policies across your API ecosystem, especially if you handle a large number of APIs or require frequent updates.
 

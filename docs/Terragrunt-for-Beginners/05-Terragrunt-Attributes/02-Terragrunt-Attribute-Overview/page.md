@@ -6,9 +6,7 @@ This guide explores key Terragrunt configuration attributes for advanced control
 
 In this guide, we’ll dive into key Terragrunt configuration attributes that unlock advanced control over your Infrastructure as Code workflows. You’ll learn how to parameterize Terraform modules, optimize caching, enforce security safeguards, and handle transient errors—empowering you to build resilient, maintainable deployments.
 
-<Frame>
-  ![The image is a diagram titled "Terragrunt Attributes," listing attributes such as Inputs, Download dir, Prevent destroy, Skip, IAM role and related, Terraform binary, Version constraint, and Retryable errors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884272/notes-assets/images/Terragrunt-for-Beginners-Terragrunt-Attribute-Overview/terragrunt-attributes-diagram-inputs-iam-role.jpg)
-</Frame>
+![The image is a diagram titled "Terragrunt Attributes," listing attributes such as Inputs, Download dir, Prevent destroy, Skip, IAM role and related, Terraform binary, Version constraint, and Retryable errors.](https://kodekloud.com/kk-media/image/upload/v1752884272/notes-assets/images/Terragrunt-for-Beginners-Terragrunt-Attribute-Overview/terragrunt-attributes-diagram-inputs-iam-role.jpg)
 
 ## Attribute Summary
 

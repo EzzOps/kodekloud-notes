@@ -6,9 +6,7 @@ Packer automates the creation of machine images for various platforms using a si
 
 Packer by HashiCorp is an open-source tool that automates the creation of **machine images** for various platforms—AWS, Azure, Docker, and more—using a single source configuration. Instead of manually configuring each virtual machine or container, Packer enables you to bake your desired packages, dependencies, and application code into a **golden image** that’s ready for deployment.
 
-<Frame>
-  ![The image illustrates how Packer creates images for AWS, Azure, and Docker, showing the flow from source to deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878647/notes-assets/images/HashiCorp-Packer-What-is-Packer/packer-image-creation-aws-azure-docker.jpg)
-</Frame>
+![The image illustrates how Packer creates images for AWS, Azure, and Docker, showing the flow from source to deployment.](https://kodekloud.com/kk-media/image/upload/v1752878647/notes-assets/images/HashiCorp-Packer-What-is-Packer/packer-image-creation-aws-azure-docker.jpg)
 
 ## Key Benefits of Packer
 
@@ -17,9 +15,7 @@ Packer by HashiCorp is an open-source tool that automates the creation of **mach
 * **Portability**: Use a single HCL template across multiple cloud and container platforms.
 * **Scalability**: Integrate into CI/CD pipelines for fully automated image builds.
 
-<Callout icon="lightbulb">
-  Before you begin, ensure you have the latest [Packer CLI](https://www.packer.io/downloads) installed and your cloud provider credentials configured (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, etc.).
-</Callout>
+> **lightbulb** Before you begin, ensure you have the latest [Packer CLI](https://www.packer.io/downloads) installed and your cloud provider credentials configured (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, etc.).
 
 ## Packer Configuration Components
 

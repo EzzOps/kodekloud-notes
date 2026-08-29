@@ -51,17 +51,13 @@ curl localhost:4000
 {"status": "success"}
 ```
 
-<Callout icon="lightbulb">
-  Instead of manually switching URLs, you can use an environment variable to store your base URL, making your workflow more efficient.
-</Callout>
+> **lightbulb** Instead of manually switching URLs, you can use an environment variable to store your base URL, making your workflow more efficient.
 
 ## Configuring the Base URL Variable
 
 Instead of hardcoding URLs, create an environment variable (for example, "base URL") that represents your server's base address. In your development environment, set the base URL to `localhost:4000` and save the configuration. This ensures that all API requests reference the same variable.
 
-<Frame>
-  ![The image shows a Postman interface with environment variables set for a "Dev" environment, including email, password, token, and base URL. The sidebar displays options like Collections, APIs, and Environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882929/notes-assets/images/Postman-Essentials-Environments/postman-dev-environment-variables.jpg)
-</Frame>
+![The image shows a Postman interface with environment variables set for a "Dev" environment, including email, password, token, and base URL. The sidebar displays options like Collections, APIs, and Environments.](https://kodekloud.com/kk-media/image/upload/v1752882929/notes-assets/images/Postman-Essentials-Environments/postman-dev-environment-variables.jpg)
 
 Once the base URL is configured, your GET request for products will automatically use the environment's value. For instance, here's a sample JSON response when fetching products:
 
@@ -98,9 +94,7 @@ Once the base URL is configured, your GET request for products will automaticall
 
 By switching the environment configuration, you can easily toggle between development and production. For instance, for production, set the "base URL" variable to `192.168.1.42:4000` and save it. When you run the same GET request, your REST API client will use the production URL.
 
-<Frame>
-  ![The image shows a Postman interface with collections for "ecommerce" and "Auth" APIs, displaying various HTTP requests like GET, POST, and PATCH. The environment variables section is visible, showing a variable named "baseurl" with an IP address value.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882930/notes-assets/images/Postman-Essentials-Environments/postman-ecommerce-auth-api-requests.jpg)
-</Frame>
+![The image shows a Postman interface with collections for "ecommerce" and "Auth" APIs, displaying various HTTP requests like GET, POST, and PATCH. The environment variables section is visible, showing a variable named "baseurl" with an IP address value.](https://kodekloud.com/kk-media/image/upload/v1752882930/notes-assets/images/Postman-Essentials-Environments/postman-ecommerce-auth-api-requests.jpg)
 
 ## Switching Environments
 
@@ -153,9 +147,7 @@ This might return:
 
 You can either enter these parameters directly in the URL or specify them in the query parameters section of your API client.
 
-<Callout icon="lightbulb">
-  Using environment variables not only simplifies switching between different servers but also minimizes the risk of errors from manually updating URLs. Postman automatically replaces the variable with the corresponding value from the selected environment.
-</Callout>
+> **lightbulb** Using environment variables not only simplifies switching between different servers but also minimizes the risk of errors from manually updating URLs. Postman automatically replaces the variable with the corresponding value from the selected environment.
 
 ## Conclusion
 
@@ -163,6 +155,4 @@ By leveraging environment variables, you can streamline your workflow and avoid 
 
 For further reading on managing environments and testing APIs, check out the [Postman Documentation](https://learning.postman.com/docs/getting-started/introduction/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/postman-essentials/module/0a8a02c7-cab8-4bd9-886e-c7570885146f/lesson/e038a28d-5111-4bf3-bcd7-6c2976f211f3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/postman-essentials/module/0a8a02c7-cab8-4bd9-886e-c7570885146f/lesson/e038a28d-5111-4bf3-bcd7-6c2976f211f3)

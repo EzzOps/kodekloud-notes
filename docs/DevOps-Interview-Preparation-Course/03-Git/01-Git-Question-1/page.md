@@ -19,9 +19,7 @@ RUN yarn install --production
 CMD ["node", "src/index.js"]
 ```
 
-<Callout icon="lightbulb">
-  For Dockerfile 2, although the command uses `apk` for package installation, the default "node" image is typically based on a Debian-derived distribution that uses `apt-get`. You may need to adjust the package installation command for compatibility.
-</Callout>
+> **lightbulb** For Dockerfile 2, although the command uses `apk` for package installation, the default "node" image is typically based on a Debian-derived distribution that uses `apt-get`. You may need to adjust the package installation command for compatibility.
 
 ## Why Dockerfile 1 Results in a Smaller Image
 
@@ -35,9 +33,7 @@ When explaining this topic in an interview, you might say:
 
 ## Visual Comparison
 
-<Frame>
-  ![The image compares two Dockerfiles, highlighting that Dockerfile 1, which uses the "node:12-alpine" base image, will likely have a smaller size than Dockerfile 2, which uses the "node" base image.](../../../../images/kodekloud.com/kk-media/image/upload/v1752873349/notes-assets/images/DevOps-Interview-Preparation-Course-Docker-Question-6/dockerfile-size-comparison-node.jpg)
-</Frame>
+![The image compares two Dockerfiles, highlighting that Dockerfile 1, which uses the "node:12-alpine" base image, will likely have a smaller size than Dockerfile 2, which uses the "node" base image.](https://kodekloud.com/kk-media/image/upload/v1752873349/notes-assets/images/DevOps-Interview-Preparation-Course-Docker-Question-6/dockerfile-size-comparison-node.jpg)
 
 ## Conclusion
 
@@ -51,9 +47,7 @@ For further reading on Docker best practices, consider reviewing the following r
 
 Understanding these differences helps in designing efficient Docker images that are both secure and performance-oriented.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/devops-interview-preparation-course/module/955d2fcf-4c92-4480-b86e-081d67d83e88/lesson/8960778c-b7ac-42a0-a178-94070177198f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/devops-interview-preparation-course/module/955d2fcf-4c92-4480-b86e-081d67d83e88/lesson/8960778c-b7ac-42a0-a178-94070177198f)
 
 
 # Git Question 1
@@ -74,9 +68,7 @@ git commit -m "My message"
 
 In this example, Git records your changes along with the message “My message.” For instance, if you commit with a message like “Python with Docker,” that description will appear in your GitHub repository’s commit history and any associated pull requests, providing clear context for your changes.
 
-<Callout icon="lightbulb">
-  Always include a concise and descriptive commit message to help reviewers and future maintainers understand your changes quickly.
-</Callout>
+> **lightbulb** Always include a concise and descriptive commit message to help reviewers and future maintainers understand your changes quickly.
 
 ## The Importance of Descriptive Commit Messages
 
@@ -92,9 +84,7 @@ While it is technically possible to commit without a message, doing so creates a
 git commit -m "Python with Docker"
 ```
 
-<Callout icon="triangle-alert">
-  Avoid vague commit messages like "fix bug" or "update" that lack detail. Such messages can hinder effective code reviews and make it challenging to track changes in the long run.
-</Callout>
+> **triangle-alert** Avoid vague commit messages like "fix bug" or "update" that lack detail. Such messages can hinder effective code reviews and make it challenging to track changes in the long run.
 
 ## Summary
 
@@ -102,6 +92,4 @@ Every commit in Git, along with its corresponding message, is stored in your rep
 
 Let's move on to our next question.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/devops-interview-preparation-course/module/4edc26e9-82be-4ac9-a2bf-bf09a6c3bb98/lesson/20d9f2bf-cbef-4296-8c4b-8435d53b544f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/devops-interview-preparation-course/module/4edc26e9-82be-4ac9-a2bf-bf09a6c3bb98/lesson/20d9f2bf-cbef-4296-8c4b-8435d53b544f)

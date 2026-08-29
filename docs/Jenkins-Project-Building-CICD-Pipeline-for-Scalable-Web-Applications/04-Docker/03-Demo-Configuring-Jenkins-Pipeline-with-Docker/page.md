@@ -6,17 +6,13 @@ Learn to configure a Jenkins pipeline with Docker for continuous integration and
 
 In this lesson, you'll learn how to configure a Jenkins pipeline integrated with Docker, enabling continuous integration and deployment for your applications. Before you start, ensure Docker is installed on your Jenkins server so that it can access the Docker CLI. For installation instructions, please refer to the [Docker documentation page](https://docs.docker.com/get-docker/).
 
-<Callout icon="lightbulb">
-  Make sure Docker is installed and properly configured on your Jenkins server before proceeding.
-</Callout>
+> **lightbulb** Make sure Docker is installed and properly configured on your Jenkins server before proceeding.
 
 ## Setting Up Jenkins Credentials
 
 The first step is to configure Jenkins with your Docker Hub credentials. Create credentials within Jenkins using the "Username with password" type. Enter your Docker Hub account name as the username and your Docker Hub password as the password. In this example, the credentials are named "Docker creds".
 
-<Frame>
-  ![The image shows a Jenkins interface where new credentials are being added, including fields for username, password, and ID. The username is filled in as "sanjeevkr720" and the ID as "docker".](../../../../images/kodekloud.com/kk-media/image/upload/v1752879862/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-with-Docker/jenkins-add-credentials-sanjeevkr720.jpg)
-</Frame>
+![The image shows a Jenkins interface where new credentials are being added, including fields for username, password, and ID. The username is filled in as "sanjeevkr720" and the ID as "docker".](https://kodekloud.com/kk-media/image/upload/v1752879862/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-with-Docker/jenkins-add-credentials-sanjeevkr720.jpg)
 
 ## Creating a New Pipeline
 
@@ -27,9 +23,7 @@ Next, navigate back to the Jenkins dashboard and create a new pipeline named "Do
 * Select Git as your SCM and provide the URL of your repository.
 * Set the branch to "main" and keep the default path to your Jenkinsfile.
 
-<Frame>
-  ![The image shows a configuration screen for setting up a Docker pipeline, with options to define a pipeline script from SCM using Git, and a prompt to enter a Git repository URL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879864/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-with-Docker/docker-pipeline-configuration-screen.jpg)
-</Frame>
+![The image shows a configuration screen for setting up a Docker pipeline, with options to define a pipeline script from SCM using Git, and a prompt to enter a Git repository URL.](https://kodekloud.com/kk-media/image/upload/v1752879864/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-with-Docker/docker-pipeline-configuration-screen.jpg)
 
 ## The Jenkinsfile Pipeline Script
 

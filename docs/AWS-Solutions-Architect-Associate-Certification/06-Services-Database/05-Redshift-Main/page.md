@@ -18,13 +18,13 @@ Key points about data warehouses include:
 * They scale effectively by increasing compute and storage resources as data and query loads grow.
 * They often prove more cost-effective for analytical workloads compared to traditional databases.
 
-![The image illustrates the need for data warehouses, highlighting benefits such as data integration, transformation, optimized analytics, historical analysis, structured data, and scalability. It features a person with a pickaxe and another sitting on steps, symbolizing data processing and analysis.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865247/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Redshift-Main/data-warehouses-benefits-illustration.jpg)
+![The image illustrates the need for data warehouses, highlighting benefits such as data integration, transformation, optimized analytics, historical analysis, structured data, and scalability. It features a person with a pickaxe and another sitting on steps, symbolizing data processing and analysis.](https://kodekloud.com/kk-media/image/upload/v1752865247/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Redshift-Main/data-warehouses-benefits-illustration.jpg)
 
 ## Introduction to AWS Redshift
 
 AWS Redshift is designed for handling extremely large data sets with enterprise-class performance. Its ability to support a wide range of client connections makes it perfect for business intelligence (BI), reporting, and analytical applications. With Redshift, you benefit from efficient storage, optimized query performance, and seamless integration with various data sources and analytics tools.
 
-![The image is an infographic about AWS Redshift, highlighting its features as a fully managed, petabyte-scale data warehouse service, an enterprise-class relational database system, and its support for BI, reporting, and analytics tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865249/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Redshift-Main/aws-redshift-infographic-features.jpg)
+![The image is an infographic about AWS Redshift, highlighting its features as a fully managed, petabyte-scale data warehouse service, an enterprise-class relational database system, and its support for BI, reporting, and analytics tools.](https://kodekloud.com/kk-media/image/upload/v1752865249/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Redshift-Main/aws-redshift-infographic-features.jpg)
 
 ## Redshift Architecture and Components
 
@@ -57,7 +57,7 @@ Redshift decouples data storage from compute resources using Redshift Managed St
 
 Inside each cluster, one or more databases are maintained. AWS Redshift is a relational database management system (RDBMS) based on PostgreSQL. Despite the similarities, Redshift is optimized specifically for data warehousing applications.
 
-![The image is a diagram illustrating the components of AWS Redshift, showing a serverless or provisioned data warehouse setup with compute nodes, data sharing clusters, and storage options like Redshift Managed Storage and Amazon S3.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865250/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Redshift-Main/aws-redshift-data-warehouse-diagram.jpg)
+![The image is a diagram illustrating the components of AWS Redshift, showing a serverless or provisioned data warehouse setup with compute nodes, data sharing clusters, and storage options like Redshift Managed Storage and Amazon S3.](https://kodekloud.com/kk-media/image/upload/v1752865250/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Redshift-Main/aws-redshift-data-warehouse-diagram.jpg)
 
 ## Core Features of Redshift
 
@@ -85,7 +85,7 @@ AWS Redshift offers a rich set of features that empower efficient and secure dat
   | Deployment    | Managed pods with scaling | `kubectl create deployment nginx --image=nginx` |
   | Service       | Network access to pods    | `kubectl expose deployment nginx --port=80`     |
 
-![The image lists features of Redshift, including columnar storage, data compression, scalability, and security, among others, organized in a colorful grid format.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865252/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Redshift-Main/redshift-features-columnar-storage-grid.jpg)
+![The image lists features of Redshift, including columnar storage, data compression, scalability, and security, among others, organized in a colorful grid format.](https://kodekloud.com/kk-media/image/upload/v1752865252/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Redshift-Main/redshift-features-columnar-storage-grid.jpg)
 
 ## Use Cases for Redshift
 
@@ -108,7 +108,7 @@ AWS Redshift stands out as a robust, fully managed, petabyte-scale data warehous
 * **Elastic Scalability:** Automatically adjusts capacity to handle fluctuating query loads.
 * **Backup and Recovery:** Provides automated snapshots to Amazon S3 for reliable point-in-time recovery.
 
-![The image is a summary of Redshift Provisioned features, highlighting encryption, fine-grain access controls, and automatic cluster capacity adjustments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865253/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Redshift-Main/redshift-provisioned-features-summary.jpg)
+![The image is a summary of Redshift Provisioned features, highlighting encryption, fine-grain access controls, and automatic cluster capacity adjustments.](https://kodekloud.com/kk-media/image/upload/v1752865253/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Redshift-Main/redshift-provisioned-features-summary.jpg)
 
 > **lightbulb** For further information, check out these useful links:
 

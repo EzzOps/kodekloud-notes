@@ -4,9 +4,7 @@ Source: https://notes.kodekloud.com/docs/Kubernetes-Administration-Package-Manag
 
 Kubernetes overview covering cluster architecture, core components, objects, administrator responsibilities, and package management fundamentals for deploying and managing containerized applications
 
-<Callout icon="lightbulb">
-  If you're new to Kubernetes, start with Mumshad's "Kubernetes for the Absolute Beginners - Hands-on Tutorial" on KodeKloud: [https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial). This guide assumes a basic familiarity with Kubernetes concepts; the summary below focuses on the core ideas needed for package management and cluster administration.
-</Callout>
+> **lightbulb** If you're new to Kubernetes, start with Mumshad's "Kubernetes for the Absolute Beginners - Hands-on Tutorial" on KodeKloud: [https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial). This guide assumes a basic familiarity with Kubernetes concepts; the summary below focuses on the core ideas needed for package management and cluster administration.
 
 Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications. It provides a logical management plane that abstracts physical infrastructure so teams can deploy and run distributed, microservice-based applications reliably across environments.
 
@@ -97,9 +95,7 @@ spec:
         memory: "256Mi"
 ```
 
-<Callout icon="lightbulb">
-  Custom Resource Definitions (CRDs) extend the Kubernetes API by allowing you to define new resource types. After a CRD is created, the API accepts and stores objects of that new type and they can be managed with the same tooling (`kubectl`, operators, controllers).
-</Callout>
+> **lightbulb** Custom Resource Definitions (CRDs) extend the Kubernetes API by allowing you to define new resource types. After a CRD is created, the API accepts and stores objects of that new type and they can be managed with the same tooling (`kubectl`, operators, controllers).
 
 <Frame>
   <img alt="The image is a diagram of a Kubernetes single-node cluster, showing the control plane components (API Server, Scheduler, Controller Manager, etcd) and worker node components (Kubelet, Proxy) alongside various namespaces with Pods, Services, ConfigMaps, and other resources." />
@@ -152,6 +148,4 @@ With this refresher complete, you have the cluster and object context needed to 
 * Argo CD: [https://argo-cd.readthedocs.io/](https://argo-cd.readthedocs.io/)
 * Open Policy Agent (OPA): [https://www.openpolicyagent.org/](https://www.openpolicyagent.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/60afaf37-3ea5-4474-b262-dc8c13c3afd4/lesson/4879d74c-34ea-4c86-a14d-a7e7462e0e27" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/60afaf37-3ea5-4474-b262-dc8c13c3afd4/lesson/4879d74c-34ea-4c86-a14d-a7e7462e0e27)

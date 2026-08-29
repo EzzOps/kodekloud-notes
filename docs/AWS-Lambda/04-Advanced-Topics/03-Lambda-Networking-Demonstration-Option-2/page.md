@@ -6,7 +6,7 @@ This walkthrough explains how to connect a private VPC to AWS Lambda using an In
 
 In this walkthrough, you’ll learn how to connect your private VPC to the AWS-managed Lambda service VPC by creating an **AWS Lambda Interface Endpoint**. This approach lets your functions remain in the default service VPC while securely accessing resources in your own network.
 
-![The image is a diagram illustrating Lambda networking within a Virtual Private Cloud (VPC) across two availability zones, showing connections between various cloud services and components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863088/notes-assets/images/AWS-Lambda-Lambda-Networking-Demonstration-Option-2/lambda-networking-vpc-diagram.jpg)
+![The image is a diagram illustrating Lambda networking within a Virtual Private Cloud (VPC) across two availability zones, showing connections between various cloud services and components.](https://kodekloud.com/kk-media/image/upload/v1752863088/notes-assets/images/AWS-Lambda-Lambda-Networking-Demonstration-Option-2/lambda-networking-vpc-diagram.jpg)
 
 ## Step 1: Create the Lambda Interface Endpoint
 
@@ -34,7 +34,7 @@ Use the table below to set up your interface endpoint:
 * **Subnets**: Choose multiple subnets across AZs for redundancy.
 * **Security Groups**: Attach security groups to control inbound/outbound traffic for the endpoint’s Elastic Network Interfaces (ENIs).
 
-![The image shows an Amazon Web Services (AWS) console interface, specifically the VPC (Virtual Private Cloud) section, displaying security group settings and policy options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863089/notes-assets/images/AWS-Lambda-Lambda-Networking-Demonstration-Option-2/aws-vpc-console-security-group-settings.jpg)
+![The image shows an Amazon Web Services (AWS) console interface, specifically the VPC (Virtual Private Cloud) section, displaying security group settings and policy options.](https://kodekloud.com/kk-media/image/upload/v1752863089/notes-assets/images/AWS-Lambda-Lambda-Networking-Demonstration-Option-2/aws-vpc-console-security-group-settings.jpg)
 
 ### Set Endpoint Policy
 
@@ -62,7 +62,7 @@ Finally, click **Create Endpoint**. The console will show the new endpoint in **
 
 Once provisioning completes, the endpoint’s status changes to **Available**. Your private VPC is now linked to the AWS Lambda service VPC via the interface endpoint.
 
-![The image shows an AWS console screen where a VPC endpoint has been successfully created, with its status marked as "Available."](../../../../images/kodekloud.com/kk-media/image/upload/v1752863090/notes-assets/images/AWS-Lambda-Lambda-Networking-Demonstration-Option-2/aws-console-vpc-endpoint-available.jpg)
+![The image shows an AWS console screen where a VPC endpoint has been successfully created, with its status marked as "Available."](https://kodekloud.com/kk-media/image/upload/v1752863090/notes-assets/images/AWS-Lambda-Lambda-Networking-Demonstration-Option-2/aws-console-vpc-endpoint-available.jpg)
 
 ## Next Steps
 

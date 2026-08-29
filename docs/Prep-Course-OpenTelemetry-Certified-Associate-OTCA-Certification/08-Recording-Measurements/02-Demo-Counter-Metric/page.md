@@ -152,9 +152,7 @@ The ConsoleMetricExporter prints resource and scope metrics as JSON-like structu
 * The periodic exporter polls your observable callbacks at the configured interval (5 seconds in this example).
 * For production, run behind a proper WSGI server (e.g., Gunicorn, uWSGI) and replace the ConsoleMetricExporter with a production-ready exporter such as OTLP.
 
-<Callout icon="warning">
-  Do not use Flask's development server in production. Configure a production WSGI server and a proper exporter (e.g., OTLP) for reliable metric delivery and performance.
-</Callout>
+> **warning** Do not use Flask's development server in production. Configure a production WSGI server and a proper exporter (e.g., OTLP) for reliable metric delivery and performance.
 
 ## Links and references
 
@@ -164,9 +162,7 @@ The ConsoleMetricExporter prints resource and scope metrics as JSON-like structu
 * Flask documentation: [https://flask.palletsprojects.com/](https://flask.palletsprojects.com/)
 * OTLP exporter information: [https://github.com/open-telemetry/opentelemetry-specification/tree/main/specification/protocol/otlp](https://github.com/open-telemetry/opentelemetry-specification/tree/main/specification/protocol/otlp)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/e7a4e55e-dafc-4c51-b19f-f20e08b0eaee" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/e7a4e55e-dafc-4c51-b19f-f20e08b0eaee)
 
 
 # Demo Counter Metric
@@ -185,13 +181,9 @@ In this lesson you'll instrument a simple Flask app with an OpenTelemetry Counte
 
 This is intended for development and testing. For production, use a production-ready WSGI server (examples in References).
 
-<Callout icon="lightbulb">
-  This example uses the `ConsoleMetricExporter` with a `PeriodicExportingMetricReader` configured for a 5s export interval so you can see metrics printed to the console while testing.
-</Callout>
+> **lightbulb** This example uses the `ConsoleMetricExporter` with a `PeriodicExportingMetricReader` configured for a 5s export interval so you can see metrics printed to the console while testing.
 
-<Callout icon="warning">
-  The Flask development server is not suitable for production. Use a production WSGI server such as `gunicorn` or `uwsgi` for deployments.
-</Callout>
+> **warning** The Flask development server is not suitable for production. Use a production WSGI server such as `gunicorn` or `uwsgi` for deployments.
 
 ## 1. Configure the meter and console exporter
 

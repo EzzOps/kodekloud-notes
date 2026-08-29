@@ -13,13 +13,13 @@ CloudFront signed URLs are particularly useful for scenarios such as:
 
 When a client requests access, your application first verifies the user’s credentials. Once the credentials are confirmed, the application returns a signed URL. The user then uses this URL to interact with CloudFront, and CloudFront validates the signature before retrieving and delivering the requested content.
 
-![The image is an infographic titled "CloudFront Signed URLs" showing three use cases: streaming services, private documents, and confidential resources, each represented by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858490/notes-assets/images/AWS-Certified-Developer-Associate-Signed-URLs/cloudfront-signed-urls-infographic.jpg)
+![The image is an infographic titled "CloudFront Signed URLs" showing three use cases: streaming services, private documents, and confidential resources, each represented by an icon.](https://kodekloud.com/kk-media/image/upload/v1752858490/notes-assets/images/AWS-Certified-Developer-Associate-Signed-URLs/cloudfront-signed-urls-infographic.jpg)
 
 > **lightbulb** CloudFront signed URLs provide robust security by ensuring that only authenticated users can access individual files, making them perfect for serving downloadable applications or protecting single media resources.
 
 In addition to signed URLs, CloudFront supports signed cookies. While signed URLs are optimal for restricting access to individual files—especially in environments where client-side cookie support is limited—signed cookies are best suited for granting access to multiple files or an entire section of your website, such as a subscribers’ area. Rather than generating a signed URL for every file, you can authenticate the user with a signed cookie to provide seamless access to a group of resources.
 
-![The image compares signed URLs and signed cookies, illustrating how each method is used to access files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858492/notes-assets/images/AWS-Certified-Developer-Associate-Signed-URLs/signed-urls-vs-signed-cookies.jpg)
+![The image compares signed URLs and signed cookies, illustrating how each method is used to access files.](https://kodekloud.com/kk-media/image/upload/v1752858492/notes-assets/images/AWS-Certified-Developer-Associate-Signed-URLs/signed-urls-vs-signed-cookies.jpg)
 
 > **lightbulb** Choose the appropriate method for your use case: use signed URLs for individual files and signed cookies for grouped resources. This approach not only enhances security but also streamlines user access to CloudFront-distributed content.
 

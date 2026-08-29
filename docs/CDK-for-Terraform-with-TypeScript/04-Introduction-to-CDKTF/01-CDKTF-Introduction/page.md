@@ -103,9 +103,7 @@ cdktf --version
 
 If you prefer not to install a global CLI (recommended for CI reproducibility), add `cdktf-cli` to each project as a dev dependency — CI runners will then use the local binary.
 
-<Callout icon="lightbulb">
-  Using local Terraform state is convenient for demos and quick experiments, but it is not recommended for team or production environments. For collaborative workflows use remote state backends such as Terraform Cloud, S3 + DynamoDB locking, or other supported backends.
-</Callout>
+> **lightbulb** Using local Terraform state is convenient for demos and quick experiments, but it is not recommended for team or production environments. For collaborative workflows use remote state backends such as Terraform Cloud, S3 + DynamoDB locking, or other supported backends.
 
 Initialize a new TypeScript CDKTF project
 

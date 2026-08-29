@@ -19,7 +19,7 @@ By analyzing CloudTrail logs, you can:
 | API call tracking        | Filter logs by IAM users, resources, or specific event names.              |
 | Security event detection | Identify both successful and failed login attempts.                        |
 
-![The image is an infographic about "CloudTrail and User Access Audit," highlighting four key functions: logging API calls, auditing actions, tracking API calls, and detecting login attempts and security threats.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863004/notes-assets/images/AWS-IAM-Auditing-with-CloudTrail/cloudtrail-user-access-audit-infographic.jpg)
+![The image is an infographic about "CloudTrail and User Access Audit," highlighting four key functions: logging API calls, auditing actions, tracking API calls, and detecting login attempts and security threats.](https://kodekloud.com/kk-media/image/upload/v1752863004/notes-assets/images/AWS-IAM-Auditing-with-CloudTrail/cloudtrail-user-access-audit-infographic.jpg)
 
 ## Demo: Use CloudTrail to Audit User Access
 
@@ -30,7 +30,7 @@ Follow these steps to search the event history in the CloudTrail console:
 3. Use the filter bar to narrow down by **Event name**, **Username**, or **Resource name**.
 4. Click an individual event to view details such as the request time, source IP, and whether the request succeeded or failed.
 
-![The image is a slide titled "Use CloudTrail to Audit User Access," featuring a simple illustration of a person with a "Demo" sign and a list of steps for using CloudTrail on AWS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863005/notes-assets/images/AWS-IAM-Auditing-with-CloudTrail/use-cloudtrail-audit-user-access.jpg)
+![The image is a slide titled "Use CloudTrail to Audit User Access," featuring a simple illustration of a person with a "Demo" sign and a list of steps for using CloudTrail on AWS.](https://kodekloud.com/kk-media/image/upload/v1752863005/notes-assets/images/AWS-IAM-Auditing-with-CloudTrail/use-cloudtrail-audit-user-access.jpg)
 
 ## References
 

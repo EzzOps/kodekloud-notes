@@ -14,7 +14,7 @@ Purging a repository means removing unwanted or sensitive files from its commit 
 * Eliminate accidental commits
 * Protect secrets from exposure
 
-![The image shows a stack of documents with a magnifying glass, symbolizing examination or review. Below, there's text explaining "Purging" as the process of cleaning up a codebase by removing unnecessary or sensitive files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867520/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Purge-Data-from-Source-Control/documents-magnifying-glass-purging-review.jpg)
+![The image shows a stack of documents with a magnifying glass, symbolizing examination or review. Below, there's text explaining "Purging" as the process of cleaning up a codebase by removing unnecessary or sensitive files.](https://kodekloud.com/kk-media/image/upload/v1752867520/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Purge-Data-from-Source-Control/documents-magnifying-glass-purging-review.jpg)
 
 ## Why Purge Files?
 
@@ -24,7 +24,7 @@ By cleaning up your Git history, you can:
 * **Eliminate Mistakes:** Remove large or accidental commits.
 * **Protect Secrets:** Expunge API keys, passwords, and other sensitive data.
 
-![The image lists three reasons for purging files: shrinking repository size for performance, eliminating mistakenly committed large files, and removing files with sensitive information like passwords or API keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867521/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Purge-Data-from-Source-Control/purging-files-reasons-repository-size.jpg)
+![The image lists three reasons for purging files: shrinking repository size for performance, eliminating mistakenly committed large files, and removing files with sensitive information like passwords or API keys.](https://kodekloud.com/kk-media/image/upload/v1752867521/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Purge-Data-from-Source-Control/purging-files-reasons-repository-size.jpg)
 
 > **lightbulb** Always back up your repository before rewriting history. Purging is irreversible.
 
@@ -37,7 +37,7 @@ Here’s a quick comparison of the two leading Git history-rewriting tools:
 | Git filter-repo  | Official, highly configurable, fine-grained  | [Git filter-repo](https://github.com/newren/git-filter-repo)   |
 | BFG Repo-Cleaner | Fast, simple syntax for common cleanup tasks | [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/) |
 
-![The image lists two tools for repository cleanup: "Git filter-repo" and "BFG Repo-Cleaner," with brief descriptions of each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867522/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Purge-Data-from-Source-Control/repository-cleanup-tools-git-bfg.jpg)
+![The image lists two tools for repository cleanup: "Git filter-repo" and "BFG Repo-Cleaner," with brief descriptions of each.](https://kodekloud.com/kk-media/image/upload/v1752867522/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Purge-Data-from-Source-Control/repository-cleanup-tools-git-bfg.jpg)
 
 ## Practical Examples
 

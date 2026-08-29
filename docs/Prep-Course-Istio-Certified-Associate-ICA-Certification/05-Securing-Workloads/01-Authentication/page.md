@@ -33,9 +33,7 @@ Use a combination of strong identity, short-lived credentials, and centralized p
 | Short-lived credentials       | Minimize impact of credential compromise                  | Session tokens, temporary cloud credentials                         |
 | Centralized policy engines    | Enforce consistent access decisions                       | Gate authorization checks across services (RBAC/ABAC)               |
 
-<Callout icon="lightbulb">
-  Zero trust is not a single product — it’s an architecture. Combine identity validation, device posture checks, contextual signals, and policy enforcement to achieve effective zero-trust authentication.
-</Callout>
+> **lightbulb** Zero trust is not a single product — it’s an architecture. Combine identity validation, device posture checks, contextual signals, and policy enforcement to achieve effective zero-trust authentication.
 
 ## How to evaluate an identity request (practical checklist)
 
@@ -63,9 +61,7 @@ When a request arrives, apply this sequence:
 * Monitor and log authentication decisions for auditing and anomaly detection.
 * Apply least privilege: start with deny-by-default and grant the minimum required access.
 
-<Callout icon="warning">
-  Misconfigured identity providers, long-lived tokens, or inconsistent policies undermine zero-trust. Validate token issuers, use secure defaults, and automate policy propagation.
-</Callout>
+> **warning** Misconfigured identity providers, long-lived tokens, or inconsistent policies undermine zero-trust. Validate token issuers, use secure defaults, and automate policy propagation.
 
 ## Further reading and references
 
@@ -76,6 +72,4 @@ When a request arrives, apply this sequence:
 
 Use these resources to deepen your understanding and to implement zero-trust authentication across users, devices, and services.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/8ed665e7-46f4-4399-b00c-ffd3262dc9d6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/8ed665e7-46f4-4399-b00c-ffd3262dc9d6)

@@ -8,9 +8,7 @@ Artificial Intelligence (AI) is a field of computer science focused on creating 
 
 Machine Learning (ML), a subset of AI, designs algorithms that learn patterns from historical data to make decisions or predictions. Deep Learning, a specialized branch of ML, leverages artificial neural networks to process large volumes of unstructured data such as images, audio, and text.
 
-<Frame>
-  ![The image is an introduction to AI, illustrating the relationship between computer science, artificial intelligence, machine learning, and deep learning, with a focus on deep learning as a type of machine learning based on artificial neural networks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881590/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Introduction-to-AI/ai-introduction-computer-science-deep-learning.jpg)
-</Frame>
+![The image is an introduction to AI, illustrating the relationship between computer science, artificial intelligence, machine learning, and deep learning, with a focus on deep learning as a type of machine learning based on artificial neural networks.](https://kodekloud.com/kk-media/image/upload/v1752881590/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Introduction-to-AI/ai-introduction-computer-science-deep-learning.jpg)
 
 ## Traditional Programming vs. Machine Learning
 
@@ -18,9 +16,7 @@ In traditional programming, you explicitly write rules (business logic) that tra
 
 Machine Learning flips this paradigm: it ingests historical exchange-rate data and **learns** the conversion pattern without you specifying the rule.
 
-<Frame>
-  ![The image compares traditional coding and machine learning. Traditional coding uses data and rules to produce answers, while machine learning uses data and answers to derive patterns or rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881591/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Introduction-to-AI/traditional-coding-vs-machine-learning.jpg)
-</Frame>
+![The image compares traditional coding and machine learning. Traditional coding uses data and rules to produce answers, while machine learning uses data and answers to derive patterns or rules.](https://kodekloud.com/kk-media/image/upload/v1752881591/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Introduction-to-AI/traditional-coding-vs-machine-learning.jpg)
 
 ## Common Machine Learning Techniques
 
@@ -32,49 +28,35 @@ Machine Learning algorithms typically fall into three categories:
 | Unsupervised Learning | Unlabeled data | Discover patterns or clusters in the dataset          |
 | Semi-Supervised       | Mixed data     | Combine a small labeled set with large unlabeled data |
 
-<Frame>
-  ![The image is a diagram showing common techniques of machine learning, including supervised, unsupervised, and semi-supervised learning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881592/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Introduction-to-AI/machine-learning-techniques-diagram.jpg)
-</Frame>
+![The image is a diagram showing common techniques of machine learning, including supervised, unsupervised, and semi-supervised learning.](https://kodekloud.com/kk-media/image/upload/v1752881592/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Introduction-to-AI/machine-learning-techniques-diagram.jpg)
 
 ### Supervised Learning
 
 Supervised learning trains models on labeled datasets, teaching them to map inputs to known outputs. Once trained, the model generalizes to classify or predict labels on unseen data.
 
-<Frame>
-  ![The image illustrates a supervised learning process with labeled images of a dog, cat, and rabbit being used to train a model.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881593/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Introduction-to-AI/supervised-learning-labeled-images-model.jpg)
-</Frame>
+![The image illustrates a supervised learning process with labeled images of a dog, cat, and rabbit being used to train a model.](https://kodekloud.com/kk-media/image/upload/v1752881593/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Introduction-to-AI/supervised-learning-labeled-images-model.jpg)
 
-<Callout icon="lightbulb">
-  Ensure your labeled dataset covers diverse examples to avoid bias and improve model accuracy.
-</Callout>
+> **lightbulb** Ensure your labeled dataset covers diverse examples to avoid bias and improve model accuracy.
 
 ### Unsupervised Learning
 
 With no labels, unsupervised algorithms uncover inherent structures—such as clusters or hidden features—by analyzing the input data alone. This is useful for customer segmentation, anomaly detection, and feature extraction.
 
-<Frame>
-  ![The image illustrates the process of unsupervised learning, showing unlabelled data of animal silhouettes being processed through training to create a model that predicts and categorizes the animals.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881594/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Introduction-to-AI/unsupervised-learning-animal-silhouettes-model.jpg)
-</Frame>
+![The image illustrates the process of unsupervised learning, showing unlabelled data of animal silhouettes being processed through training to create a model that predicts and categorizes the animals.](https://kodekloud.com/kk-media/image/upload/v1752881594/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Introduction-to-AI/unsupervised-learning-animal-silhouettes-model.jpg)
 
 ### Semi-Supervised Learning
 
 Semi-supervised learning bridges supervised and unsupervised methods by pairing a small amount of labeled data with a large pool of unlabeled data. This approach often yields high accuracy while reducing labeling costs.
 
-<Frame>
-  ![The image illustrates semi-supervised learning, showing labeled and unlabeled animal icons and a model, with text explaining it as a mix of supervised and unsupervised learning requiring a smaller labeled dataset.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881596/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Introduction-to-AI/semi-supervised-learning-animal-icons-diagram.jpg)
-</Frame>
+![The image illustrates semi-supervised learning, showing labeled and unlabeled animal icons and a model, with text explaining it as a mix of supervised and unsupervised learning requiring a smaller labeled dataset.](https://kodekloud.com/kk-media/image/upload/v1752881596/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Introduction-to-AI/semi-supervised-learning-animal-icons-diagram.jpg)
 
-<Callout icon="triangle-alert">
-  Quality of unlabeled data affects performance. Preprocess and clean data to avoid propagating errors.
-</Callout>
+> **triangle-alert** Quality of unlabeled data affects performance. Preprocess and clean data to avoid propagating errors.
 
 ## Deep Learning
 
 Deep Learning models consist of multiple layers of interconnected neurons, inspired by the human brain. These neural networks can learn complex representations across supervised, unsupervised, and semi-supervised tasks, making them highly versatile for image recognition, natural language processing, and more.
 
-<Frame>
-  ![The image illustrates deep learning concepts, showing a brain, a neural network, and icons representing different learning types, with descriptions highlighting inspiration from the human brain and applications in various learning methods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881597/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Introduction-to-AI/deep-learning-brain-neural-network-icons.jpg)
-</Frame>
+![The image illustrates deep learning concepts, showing a brain, a neural network, and icons representing different learning types, with descriptions highlighting inspiration from the human brain and applications in various learning methods.](https://kodekloud.com/kk-media/image/upload/v1752881597/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Introduction-to-AI/deep-learning-brain-neural-network-icons.jpg)
 
 ## Summary
 
@@ -91,6 +73,4 @@ In the next lesson, we’ll dive into how these foundations power **Generative A
 * [Deep Learning Tutorial](https://en.wikipedia.org/wiki/Deep_learning)
 * [OpenAI](https://openai.com)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/5f4c8f03-fd62-495c-a094-5749ee57001d/lesson/13cc20ad-a1fe-4a0a-aad5-bbbaecbe9166" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/5f4c8f03-fd62-495c-a094-5749ee57001d/lesson/13cc20ad-a1fe-4a0a-aad5-bbbaecbe9166)

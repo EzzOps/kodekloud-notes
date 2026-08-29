@@ -83,13 +83,9 @@ In short:
 * If the measurement only ever increases, treat it as monotonic: use `Counter` and aggregate as `Sum`.
 * If it can go up and down, treat it as non-monotonic: use `Gauge`/`ObservableGauge` and aggregate as `LastValue`.
 
-<Callout icon="lightbulb">
-  Choosing the correct instrument and aggregation for monotonic vs. non-monotonic metrics ensures accurate downstream calculations (for example, computing rates, deltas, or current-state snapshots). This improves alerting, dashboards, and capacity planning.
-</Callout>
+> **lightbulb** Choosing the correct instrument and aggregation for monotonic vs. non-monotonic metrics ensures accurate downstream calculations (for example, computing rates, deltas, or current-state snapshots). This improves alerting, dashboards, and capacity planning.
 
-<Callout icon="warning">
-  Do not model decreasing values with a `Counter`. Treating non-monotonic data as monotonic leads to incorrect sums, rates, and alerts. If you need to represent decreases, use a `Gauge` or an appropriate observable instrument.
-</Callout>
+> **warning** Do not model decreasing values with a `Counter`. Treating non-monotonic data as monotonic leads to incorrect sums, rates, and alerts. If you need to represent decreases, use a `Gauge` or an appropriate observable instrument.
 
 Links and references:
 
@@ -97,6 +93,4 @@ Links and references:
 * [OpenTelemetry Instrumentation Concepts](https://opentelemetry.io/docs/concepts/)
 * [Monitoring Best Practices: Counters vs Gauges](https://prometheus.io/docs/practices/naming/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/6251147c-cf4c-4afa-b83d-558a4da5350e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/6251147c-cf4c-4afa-b83d-558a4da5350e)

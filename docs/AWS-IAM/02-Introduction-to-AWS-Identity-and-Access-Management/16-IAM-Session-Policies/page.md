@@ -44,7 +44,7 @@ This article explains how to grant temporary upload access to an S3 bucket using
 
 In this lesson, we’ll explore how to grant an IAM user temporary upload access to an S3 bucket by using session policies. Our user currently has a policy allowing only the `s3:GetObject` action, but now needs permission to upload files (`s3:PutObject`). We’ll create a session policy, attach the upload permissions to it, and generate temporary credentials that enforce both the user’s existing rights and the new session policy.
 
-![The image illustrates a process for allowing temporary uploads to an S3 bucket, involving an IAM user, a policy for S3:GetObject, and temporary keys with a session policy for S3:PutObject.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863066/notes-assets/images/AWS-IAM-IAM-Session-Policies/s3-temporary-uploads-iam-policy-diagram.jpg)
+![The image illustrates a process for allowing temporary uploads to an S3 bucket, involving an IAM user, a policy for S3:GetObject, and temporary keys with a session policy for S3:PutObject.](https://kodekloud.com/kk-media/image/upload/v1752863066/notes-assets/images/AWS-IAM-IAM-Session-Policies/s3-temporary-uploads-iam-policy-diagram.jpg)
 
 ## What Are Session Policies?
 
@@ -55,7 +55,7 @@ Session policies are inline JSON policies you pass when you assume a role. They:
 * Further restrict permissions granted by identity or resource policies
 * Enable fine-grained, scenario-specific access control
 
-![The image explains session policies, highlighting their role in defining maximum permissions for IAM users, their temporary nature, and their use in conjunction with IAM roles for granular access control.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863067/notes-assets/images/AWS-IAM-IAM-Session-Policies/session-policies-iam-roles-access-control.jpg)
+![The image explains session policies, highlighting their role in defining maximum permissions for IAM users, their temporary nature, and their use in conjunction with IAM roles for granular access control.](https://kodekloud.com/kk-media/image/upload/v1752863067/notes-assets/images/AWS-IAM-IAM-Session-Policies/session-policies-iam-roles-access-control.jpg)
 
 > **lightbulb** Session policies never grant more permissions than allowed by the user’s identity or resource policies. They only tighten the scope for the session.
 
@@ -70,7 +70,7 @@ In this demo, we will:
 
 First, sign in to the AWS Management Console, navigate to **IAM**, and begin creating the session policy.
 
-![The image is a slide titled "Create Session Policies" with a graphic of a person pointing to a "Demo" sign, and instructions for allowing S3 read-only access to upload files to an S3 bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863068/notes-assets/images/AWS-IAM-IAM-Session-Policies/create-session-policies-s3-access-demo.jpg)
+![The image is a slide titled "Create Session Policies" with a graphic of a person pointing to a "Demo" sign, and instructions for allowing S3 read-only access to upload files to an S3 bucket.](https://kodekloud.com/kk-media/image/upload/v1752863068/notes-assets/images/AWS-IAM-IAM-Session-Policies/create-session-policies-s3-access-demo.jpg)
 
 ### 1. Create the Session Policy JSON
 

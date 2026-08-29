@@ -62,9 +62,7 @@ You’ll see details on:
 * DNS proxy configuration
 * Traffic Manager health
 
-<Callout icon="lightbulb">
-  Ensure you have cluster-wide permissions to deploy the Traffic Manager via Helm. You may need a cluster-admin role.
-</Callout>
+> **lightbulb** Ensure you have cluster-wide permissions to deploy the Traffic Manager via Helm. You may need a cluster-admin role.
 
 ***
 
@@ -181,9 +179,7 @@ telepresence status
 * Helm: [https://helm.sh/](https://helm.sh/)
 * AWS EKS: [https://aws.amazon.com/eks/](https://aws.amazon.com/eks/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/d76ac3de-46c7-464e-8da6-43d4e332c65d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/d76ac3de-46c7-464e-8da6-43d4e332c65d)
 
 
 # Demo Telepresence Intercept
@@ -194,9 +190,7 @@ Learn to use Telepresence for intercepting Kubernetes service traffic and runnin
 
 In this lesson, you’ll learn how to use Telepresence to intercept traffic from a Kubernetes service and run the workload locally for fast, iterative debugging.
 
-<Frame>
-  ![The image shows a Visual Studio Code interface with a terminal open, displaying a command prompt connected via SSH. The file explorer on the left lists several project files and directories.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884089/notes-assets/images/Telepresence-For-Kubernetes-Demo-Telepresence-Intercept/vscode-terminal-ssh-file-explorer.jpg)
-</Frame>
+![The image shows a Visual Studio Code interface with a terminal open, displaying a command prompt connected via SSH. The file explorer on the left lists several project files and directories.](https://kodekloud.com/kk-media/image/upload/v1752884089/notes-assets/images/Telepresence-For-Kubernetes-Demo-Telepresence-Intercept/vscode-terminal-ssh-file-explorer.jpg)
 
 ## Prerequisites
 
@@ -204,9 +198,7 @@ In this lesson, you’ll learn how to use Telepresence to intercept traffic from
 * Telepresence CLI installed (`brew install telepresence` or see the [official docs](https://www.telepresence.io/docs/))
 * Node.js (v14+) and npm
 
-<Callout icon="lightbulb">
-  Make sure your Kubernetes context is set to the target namespace, and you have permissions to create interceptions.
-</Callout>
+> **lightbulb** Make sure your Kubernetes context is set to the target namespace, and you have permissions to create interceptions.
 
 ## 1. List Your Deployments
 

@@ -197,12 +197,8 @@ Five key takeaways
 * Monitor, review, and evolve quotas — governance is not "set-and-forget."
 * Good governance enables teams while protecting shared cluster resources and preventing accidental or malicious exhaustion.
 
-<Callout icon="lightbulb">
-  Design for variability: different workloads and environments require different default strategies. Start with sensible defaults, monitor real usage, and evolve quotas and limits to match observed needs.
-</Callout>
+> **lightbulb** Design for variability: different workloads and environments require different default strategies. Start with sensible defaults, monitor real usage, and evolve quotas and limits to match observed needs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/cdcb2f9a-9116-40d8-b148-0bf234f5438e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/cdcb2f9a-9116-40d8-b148-0bf234f5438e)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/c6feebc9-1b18-41f9-bc1d-65d36f2b27c3" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/c6feebc9-1b18-41f9-bc1d-65d36f2b27c3)

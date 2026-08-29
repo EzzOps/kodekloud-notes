@@ -34,9 +34,7 @@ less /var/log/dnf.log
 | Start `less` in case-insensitive mode   | `less -i /var/log/dnf.log` |
 | Jump to previous match                  | `N`                        |
 
-<Callout icon="lightbulb">
-  You can enable case-insensitive search at any time by typing `-i` inside `less`.
-</Callout>
+> **lightbulb** You can enable case-insensitive search at any time by typing `-i` inside `less`.
 
 ***
 
@@ -52,9 +50,7 @@ more /var/log/dnf.log
 * **Enter**: Next line
 * **q**: Quit
 
-<Callout icon="lightbulb">
-  For large files or complex searches, `less` is generally preferred over `more`.
-</Callout>
+> **lightbulb** For large files or complex searches, `less` is generally preferred over `more`.
 
 ***
 
@@ -96,9 +92,7 @@ type :q<Enter> to exit
 | `:wq`      | Command | Save and quit                  |
 | `:q!`      | Command | Quit without saving changes    |
 
-<Callout icon="triangle-alert">
-  Unsaved changes will be lost if you use `:q!`. Always use `:w` or `:wq` to preserve your edits.
-</Callout>
+> **triangle-alert** Unsaved changes will be lost if you use `:q!`. Always use `:w` or `:wq` to preserve your edits.
 
 ### Saving Your Work
 
@@ -106,9 +100,7 @@ type :q<Enter> to exit
 :w
 ```
 
-<Frame>
-  ![The image shows a terminal window with text being edited in a text editor, likely Vim, with the command :w at the bottom. The text reads "This is our text for our vim demo."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881388/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Basic-File-Editing-vi/vim-terminal-text-editor-demo.jpg)
-</Frame>
+![The image shows a terminal window with text being edited in a text editor, likely Vim, with the command :w at the bottom. The text reads "This is our text for our vim demo."](https://kodekloud.com/kk-media/image/upload/v1752881388/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Basic-File-Editing-vi/vim-terminal-text-editor-demo.jpg)
 
 ***
 
@@ -150,6 +142,4 @@ new changes
 * [less Man Page](https://linux.die.net/man/1/less)
 * [Linux Command Reference](https://linuxcommand.org/lc3_learning_the_shell.php)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/39615302-badb-46bc-8311-83a34a60fdbd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/39615302-badb-46bc-8311-83a34a60fdbd)

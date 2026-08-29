@@ -22,13 +22,11 @@ Enhance your Jupyter Notebook with interactive widgets and layouts using [Panel]
 * Python 3.7+
 * Panel library
 
-<Callout icon="lightbulb">
-  If you haven’t installed Panel yet, run:
+> **lightbulb** If you haven’t installed Panel yet, run:
 
   ```bash theme={null}
   pip install panel
   ```
-</Callout>
 
 ## Step 1: Install and Enable Panel
 

@@ -18,9 +18,7 @@ Below is a recap of the key takeaways:
 | Automated provisioning with builders & provisioners | Reduces manual steps and configuration drift                  |
 | Immutable infrastructure principles                 | Guarantees consistency across environments and minimizes toil |
 
-<Callout icon="lightbulb">
-  Immutable infrastructure means once an image is built and deployed, it isn’t modified in place. This approach reduces configuration drift and makes troubleshooting more predictable.
-</Callout>
+> **lightbulb** Immutable infrastructure means once an image is built and deployed, it isn’t modified in place. This approach reduces configuration drift and makes troubleshooting more predictable.
 
 ## Next Steps
 
@@ -34,6 +32,4 @@ Below is a recap of the key takeaways:
 * [AWS EC2 Image Builder](https://docs.aws.amazon.com/image-builder/)
 * [Immutable Infrastructure Best Practices](https://www.hashicorp.com/resources/immutable-infrastructure)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-packer/module/b275cadb-b68e-4319-aba0-fb20d616e855/lesson/08476a4d-ce18-4afd-b04b-08ee93819019" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-packer/module/b275cadb-b68e-4319-aba0-fb20d616e855/lesson/08476a4d-ce18-4afd-b04b-08ee93819019)

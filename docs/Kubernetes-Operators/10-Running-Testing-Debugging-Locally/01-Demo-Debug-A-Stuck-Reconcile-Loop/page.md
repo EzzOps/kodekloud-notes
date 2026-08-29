@@ -205,9 +205,7 @@ demo   12721   1
 
 When the symptom (rapid reconciling with failing updates) stops and the controller performs normal reconciles, the case is closed.
 
-<Callout icon="warning">
-  Important: Never put a changing cluster-controlled value (such as `metadata.resourceVersion`) into a Deployment selector or any field that the API treats as immutable. Doing so will repeatedly trigger rejected updates and a tight reconcile loop.
-</Callout>
+> **warning** Important: Never put a changing cluster-controlled value (such as `metadata.resourceVersion`) into a Deployment selector or any field that the API treats as immutable. Doing so will repeatedly trigger rejected updates and a tight reconcile loop.
 
 ## Quick triage checklist
 
@@ -219,9 +217,7 @@ When the symptom (rapid reconciling with failing updates) stops and the controll
 
 ## Root cause summary
 
-<Callout icon="lightbulb">
-  Root cause summary: never place a changing cluster-controlled value (like `metadata.resourceVersion`) into a Deployment selector (or any field that the API treats as immutable). Keep selectors stable and match them to pod template labels that do not change across reconciles.
-</Callout>
+> **lightbulb** Root cause summary: never place a changing cluster-controlled value (like `metadata.resourceVersion`) into a Deployment selector (or any field that the API treats as immutable). Keep selectors stable and match them to pod template labels that do not change across reconciles.
 
 The debugging pattern matters more than any single fix:
 
@@ -237,8 +233,6 @@ The debugging pattern matters more than any single fix:
 * [Deployments — Immutable fields](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#updating-a-deployment)
 * Controller-runtime docs: [https://pkg.go.dev/sigs.k8s.io/controller-runtime](https://pkg.go.dev/sigs.k8s.io/controller-runtime)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/245c1684-705c-4a53-9f56-897dfaf25c71/lesson/10f8df25-089f-4e04-af70-b608d1773818" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/245c1684-705c-4a53-9f56-897dfaf25c71/lesson/10f8df25-089f-4e04-af70-b608d1773818)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/245c1684-705c-4a53-9f56-897dfaf25c71/lesson/222c5ab1-448e-4fad-bbdf-909bc0daa420" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/245c1684-705c-4a53-9f56-897dfaf25c71/lesson/222c5ab1-448e-4fad-bbdf-909bc0daa420)

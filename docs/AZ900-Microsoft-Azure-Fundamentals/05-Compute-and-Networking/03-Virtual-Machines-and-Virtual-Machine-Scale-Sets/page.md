@@ -12,7 +12,7 @@ Azure offers an extensive range of VM sizes designed to support varied workloads
 
 Azure VMs integrate seamlessly with other Azure services such as [Microsoft Entra ID](https://docs.microsoft.com/en-us/azure/active-directory/), storage solutions, and SQL databases, forming a cohesive ecosystem experience.
 
-![The image highlights the key features of Azure Virtual Machines: a variety of sizes, customizability, and integrated support, presented in three colorful panels.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868305/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-virtual-machines-features-panels.jpg)
+![The image highlights the key features of Azure Virtual Machines: a variety of sizes, customizability, and integrated support, presented in three colorful panels.](https://kodekloud.com/kk-media/image/upload/v1752868305/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-virtual-machines-features-panels.jpg)
 
 ## Benefits and Connectivity Options
 
@@ -31,15 +31,15 @@ Azure Virtual Machines support several connectivity configurations:
 3. **Virtual Network Peering**\
    Virtual network peering connects two distinct virtual networks, allowing devices to communicate using private IP addresses. This process is similar to joining two separate networks via a private connection so that they function as one unified network.
 
-![The image lists the benefits of Azure Virtual Machines, highlighting flexibility and scalability, cost-effectiveness, and security and reliability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868306/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-virtual-machines-benefits.jpg)
+![The image lists the benefits of Azure Virtual Machines, highlighting flexibility and scalability, cost-effectiveness, and security and reliability.](https://kodekloud.com/kk-media/image/upload/v1752868306/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-virtual-machines-benefits.jpg)
 
-![The image shows three connectivity options for virtual networks: Public endpoints, Private endpoints, and Virtual Network Peering, each represented with a distinct icon and color.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868308/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/virtual-network-connectivity-options.jpg)
+![The image shows three connectivity options for virtual networks: Public endpoints, Private endpoints, and Virtual Network Peering, each represented with a distinct icon and color.](https://kodekloud.com/kk-media/image/upload/v1752868308/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/virtual-network-connectivity-options.jpg)
 
 ## Common Use Cases
 
 Azure VMs are versatile and are ideal for testing, development, or running production applications. They also help extend the capacity of your on-premises data center. For example, if your in-house data center is nearing capacity, you can deploy additional Azure VMs and integrate them with your existing infrastructure using Azure networking services.
 
-![The image illustrates common use cases for Azure Virtual Machines, including testing and development, running applications, and extending data centers, with visual representations of virtual machines labeled VM01, VM02, and VM03.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868309/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-virtual-machines-use-cases.jpg)
+![The image illustrates common use cases for Azure Virtual Machines, including testing and development, running applications, and extending data centers, with visual representations of virtual machines labeled VM01, VM02, and VM03.](https://kodekloud.com/kk-media/image/upload/v1752868309/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-virtual-machines-use-cases.jpg)
 
 ## Availability Sets
 
@@ -57,13 +57,13 @@ Availability Sets group VMs by two primary concepts:
 
 For instance, if a power issue affects fault domain 0, the VMs in fault domains 1 and 2 continue running. Similarly, during a planned update in one update domain, the other domains remain operational.
 
-![The image describes Azure's "Availability Sets," a feature ensuring application availability during planned and unplanned maintenance events. It includes a diagram with labels for "Planned Event" and "Unplanned Event."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868309/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-availability-sets-diagram.jpg)
+![The image describes Azure's "Availability Sets," a feature ensuring application availability during planned and unplanned maintenance events. It includes a diagram with labels for "Planned Event" and "Unplanned Event."](https://kodekloud.com/kk-media/image/upload/v1752868309/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-availability-sets-diagram.jpg)
 
-![The image explains "Availability Sets" with two domains: "Fault Domain," which protects machines from hardware failure with three domains, and "Update Domain," which protects machines from plant maintenance with up to 20 domains.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868310/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/availability-sets-fault-update-domains.jpg)
+![The image explains "Availability Sets" with two domains: "Fault Domain," which protects machines from hardware failure with three domains, and "Update Domain," which protects machines from plant maintenance with up to 20 domains.](https://kodekloud.com/kk-media/image/upload/v1752868310/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/availability-sets-fault-update-domains.jpg)
 
-![The image illustrates a diagram of availability sets with three fault domains, each containing virtual machines (VMs) and update domains (UDs). It highlights components like power source, networking switches, and cooling capabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868311/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/availability-sets-fault-domains-diagram.jpg)
+![The image illustrates a diagram of availability sets with three fault domains, each containing virtual machines (VMs) and update domains (UDs). It highlights components like power source, networking switches, and cooling capabilities.](https://kodekloud.com/kk-media/image/upload/v1752868311/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/availability-sets-fault-domains-diagram.jpg)
 
-![The image illustrates a diagram of availability sets with three fault domains, each containing virtual machines (VMs) and update domains (UDs).](../../../../images/kodekloud.com/kk-media/image/upload/v1752868312/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/availability-sets-fault-domains-diagram-2.jpg)
+![The image illustrates a diagram of availability sets with three fault domains, each containing virtual machines (VMs) and update domains (UDs).](https://kodekloud.com/kk-media/image/upload/v1752868312/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/availability-sets-fault-domains-diagram-2.jpg)
 
 For additional resilience, you can deploy VMs across Availability Zones. Each VM is placed in a separate zone (typically zone 1, zone 2, and zone 3), providing extra redundancy. Azure manages the distribution across fault and update domains automatically.
 
@@ -73,7 +73,7 @@ For additional resilience, you can deploy VMs across Availability Zones. Each VM
 * Critical for deploying production workloads.
 * Seamless integration during VM creation by selecting an availability set.
 
-![The image is a presentation slide titled "Availability Sets – Benefits," highlighting three benefits: Increased Availability, Best Practice, and Simple to Implement, each with a corresponding icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868313/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/availability-sets-benefits-slide.jpg)
+![The image is a presentation slide titled "Availability Sets – Benefits," highlighting three benefits: Increased Availability, Best Practice, and Simple to Implement, each with a corresponding icon.](https://kodekloud.com/kk-media/image/upload/v1752868313/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/availability-sets-benefits-slide.jpg)
 
 ## Azure Virtual Machine Scale Sets (VMSS)
 
@@ -90,11 +90,11 @@ While a single VM emulates a physical server, many applications demand a fleet o
 * **High Availability:**\
   VMSS continuously monitors the health of the VMs and automatically replaces any that become unhealthy, ensuring sustained uptime.
 
-![The image highlights the key features of Azure Virtual Machine Scale Set: Automatic Scaling, Load Balancing, and High Availability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868314/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-virtual-machine-scale-set-features.jpg)
+![The image highlights the key features of Azure Virtual Machine Scale Set: Automatic Scaling, Load Balancing, and High Availability.](https://kodekloud.com/kk-media/image/upload/v1752868314/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-virtual-machine-scale-set-features.jpg)
 
 VMSS is well-suited for scenarios that require high availability and scalability, such as web servers, online gaming platforms, and extensive data processing tasks.
 
-![The image illustrates an Azure Virtual Machine Scale Set with three virtual machines (VM01, VM02, VM03) and highlights common use cases such as high availability and scalability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868315/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-vm-scale-set-high-availability.jpg)
+![The image illustrates an Azure Virtual Machine Scale Set with three virtual machines (VM01, VM02, VM03) and highlights common use cases such as high availability and scalability.](https://kodekloud.com/kk-media/image/upload/v1752868315/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-vm-scale-set-high-availability.jpg)
 
 ## Deploying a Virtual Machine in Azure
 
@@ -106,7 +106,7 @@ In this section, you'll learn how to create a Virtual Machine using the Azure Po
 
 3. Click on “Create” and select “Azure Virtual Machine” to start the setup process.
 
-![The image shows a Microsoft Azure portal interface for creating a virtual machine. It includes fields for project and instance details, such as subscription, resource group, and virtual machine name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868316/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-portal-create-vm-interface.jpg)
+![The image shows a Microsoft Azure portal interface for creating a virtual machine. It includes fields for project and instance details, such as subscription, resource group, and virtual machine name.](https://kodekloud.com/kk-media/image/upload/v1752868316/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-portal-create-vm-interface.jpg)
 
 4. Configure the Basic Settings:
    * **Subscription and Resource Group:** Choose an existing subscription and select or create a resource group (for example, “AZ900 VM Resource Group”).
@@ -114,18 +114,18 @@ In this section, you'll learn how to create a Virtual Machine using the Azure Po
    * **Availability Options:** Select an availability set, scale set, or availability zone. For a basic setup, you may choose “no infrastructure redundancy.”
    * **Image and Size:** Pick the desired VM image (for example, Windows Server 2019 Datacenter) and select an appropriate size. The portal will present various VM sizes with details such as vCPUs, RAM, and estimated costs.
 
-![The image shows a Microsoft Azure portal interface for selecting a virtual machine size, displaying various VM options with details like vCPUs, RAM, data disks, and cost per hour.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868318/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-portal-vm-size-selection.jpg)
+![The image shows a Microsoft Azure portal interface for selecting a virtual machine size, displaying various VM options with details like vCPUs, RAM, data disks, and cost per hour.](https://kodekloud.com/kk-media/image/upload/v1752868318/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-portal-vm-size-selection.jpg)
 
 5. Provide administrator credentials by specifying a username and password.
 6. Click “Review + create” to validate your settings, and then select “Create” to deploy the VM. The deployment process, which creates compute resources, networking, and storage components, typically takes one to two minutes.
 
-![The image shows a Microsoft Azure portal interface for creating a virtual machine, with options for availability, security, image selection, VM architecture, size, and administrator account setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868319/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-portal-virtual-machine-setup.jpg)
+![The image shows a Microsoft Azure portal interface for creating a virtual machine, with options for availability, security, image selection, VM architecture, size, and administrator account setup.](https://kodekloud.com/kk-media/image/upload/v1752868319/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-portal-virtual-machine-setup.jpg)
 
 Once deployment is complete, you will see details about the deployed VM, including its public IP address, which allows remote access via Remote Desktop Connection or a similar tool.
 
-![The image shows a Microsoft Azure portal screen indicating that a virtual machine deployment is complete. It lists deployment details, including resources, types, and statuses, with options for next steps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868320/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-portal-virtual-machine-deployment.jpg)
+![The image shows a Microsoft Azure portal screen indicating that a virtual machine deployment is complete. It lists deployment details, including resources, types, and statuses, with options for next steps.](https://kodekloud.com/kk-media/image/upload/v1752868320/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-portal-virtual-machine-deployment.jpg)
 
-![The image shows a Microsoft Azure portal interface displaying details of a virtual machine named "az900-vm," including its status, operating system, and networking information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868321/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-portal-virtual-machine-details.jpg)
+![The image shows a Microsoft Azure portal interface displaying details of a virtual machine named "az900-vm," including its status, operating system, and networking information.](https://kodekloud.com/kk-media/image/upload/v1752868321/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Machines-and-Virtual-Machine-Scale-Sets/azure-portal-virtual-machine-details.jpg)
 
 > **lightbulb** Ensure that your VM credentials are kept secure. Changing passwords periodically and following best security practices helps safeguard your server access.
 

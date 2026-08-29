@@ -204,8 +204,7 @@ sudo netplan try
 
 This command initiates a countdown and will revert the changes if you do not confirm by pressing ENTER before the timeout expires. You may also specify a shorter timeout using the `--timeout` option. If a mistake is made, press Ctrl+C to cancel.
 
-<Callout icon="triangle-alert">
-  If you see a warning like:
+> **triangle-alert** If you see a warning like:
 
   Permissions for /etc/netplan/99-mysettings.yaml are too open. Netplan configuration should NOT be accessible by others.
 
@@ -214,7 +213,6 @@ This command initiates a countdown and will revert the changes if you do not con
   ```bash theme={null}
   sudo chmod 600 /etc/netplan/99-mysettings.yaml
   ```
-</Callout>
 
 ***
 
@@ -383,6 +381,4 @@ In this lesson, you learned how to discover and modify network settings using th
 
 Now, let's jump ahead to the next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/8ba863e9-3bc2-4ab2-97b5-51e946de0805" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/8ba863e9-3bc2-4ab2-97b5-51e946de0805)

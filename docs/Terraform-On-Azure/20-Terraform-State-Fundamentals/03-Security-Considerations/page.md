@@ -37,9 +37,7 @@ Further reading and references
 * AzureRM provider documentation: [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 * Azure Storage Account networking docs: [https://learn.microsoft.com/azure/storage/common/storage-network-security-overview](https://learn.microsoft.com/azure/storage/common/storage-network-security-overview)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/d0fef6dd-c271-403d-b4ac-ee1f20c1839b/lesson/7e31901f-16e5-435c-9f0a-6aff7e3ad43c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/d0fef6dd-c271-403d-b4ac-ee1f20c1839b/lesson/7e31901f-16e5-435c-9f0a-6aff7e3ad43c)
 
 
 # Security Considerations
@@ -125,9 +123,7 @@ terraform {
 }
 ```
 
-<Callout icon="warning">
-  Never commit `terraform.tfstate` or copies of state to source control. Treat state files like any other secret: add them to `.gitignore`, ensure CI logs do not capture their contents, and limit access to the minimal set of principals that need it.
-</Callout>
+> **warning** Never commit `terraform.tfstate` or copies of state to source control. Treat state files like any other secret: add them to `.gitignore`, ensure CI logs do not capture their contents, and limit access to the minimal set of principals that need it.
 
 Additional recommendations
 
@@ -136,9 +132,7 @@ Additional recommendations
 * Consider Terraform Cloud/Enterprise for built-in remote state management, locking, encryption, access controls, and audit logs.
 * When automating state inspection or migration, avoid writing sensitive values to logs or insecure temporary files. If you must write state to disk, restrict file permissions and securely delete artifacts after use.
 
-<Callout icon="lightbulb">
-  If you must inspect values from the state, prefer `terraform show` or `terraform state` subcommands instead of opening the raw state file. Mark outputs with `sensitive = true` to prevent accidental exposure in CLI output and logs.
-</Callout>
+> **lightbulb** If you must inspect values from the state, prefer `terraform show` or `terraform state` subcommands instead of opening the raw state file. Mark outputs with `sensitive = true` to prevent accidental exposure in CLI output and logs.
 
 Summary
 Terraform state is both powerful and sensitive. Mishandling state can expose secrets and put your entire infrastructure at risk. Secure state management — using encrypted, access-controlled remote backends with locking, RBAC, and auditability — is mandatory for production environments.
@@ -150,6 +144,4 @@ References and further reading
 * Azure Storage security best practices: [https://learn.microsoft.com/azure/storage/common/storage-security-guide](https://learn.microsoft.com/azure/storage/common/storage-security-guide)
 * Terraform Cloud: [https://www.hashicorp.com/products/terraform/cloud](https://www.hashicorp.com/products/terraform/cloud)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/d0fef6dd-c271-403d-b4ac-ee1f20c1839b/lesson/5af2910e-66fe-4508-8577-f7da9e090617" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/d0fef6dd-c271-403d-b4ac-ee1f20c1839b/lesson/5af2910e-66fe-4508-8577-f7da9e090617)

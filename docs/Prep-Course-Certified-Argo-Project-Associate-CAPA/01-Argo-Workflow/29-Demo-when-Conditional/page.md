@@ -100,18 +100,12 @@ Quick reference: behavior by `environment` value
 
 Best practices and tips
 
-<Callout icon="lightbulb">
-  Use `when` to make pipelines declarative and efficient: reference workflow parameters and the outputs of previous steps to implement conditional logic. Expressions must evaluate to a boolean-like result (true/false). For more details, see the Argo Workflows documentation: [Argo Workflows – Conditional Execution](https://argoproj.github.io/argo-workflows/workflow-expressions/#when-conditions).
-</Callout>
+> **lightbulb** Use `when` to make pipelines declarative and efficient: reference workflow parameters and the outputs of previous steps to implement conditional logic. Expressions must evaluate to a boolean-like result (true/false). For more details, see the Argo Workflows documentation: [Argo Workflows – Conditional Execution](https://argoproj.github.io/argo-workflows/workflow-expressions/#when-conditions).
 
 Common pitfalls
 
-<Callout icon="warning">
-  Be careful with quoting and whitespace in `when` expressions. If your parameter values contain spaces or special characters, quote them appropriately in the expression or ensure values are pre-normalized to avoid unexpected evaluation results.
-</Callout>
+> **warning** Be careful with quoting and whitespace in `when` expressions. If your parameter values contain spaces or special characters, quote them appropriately in the expression or ensure values are pre-normalized to avoid unexpected evaluation results.
 
 That’s how you use the `when` condition in Argo Workflows to control step execution based on parameters or outputs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/f791b295-b854-4697-a868-ae6edff1c7e7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/f791b295-b854-4697-a868-ae6edff1c7e7)

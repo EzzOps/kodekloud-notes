@@ -12,7 +12,7 @@ We will cover the following topics:
 * A breakdown of Azure Blob Storage's structure, including container hierarchy, naming conventions, and the types of blobs (block blobs, append blobs, and page blobs).
 * Essential security features that protect your data, such as encryption at rest, Shared Access Signatures (SAS), and role-based access control (RBAC).
 
-![The image is an introduction slide outlining four learning objectives related to Azure Storage, including understanding core features, availability, blob hierarchy, and security features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866429/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Introduction/azure-storage-learning-objectives-intro.jpg)
+![The image is an introduction slide outlining four learning objectives related to Azure Storage, including understanding core features, availability, blob hierarchy, and security features.](https://kodekloud.com/kk-media/image/upload/v1752866429/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Introduction/azure-storage-learning-objectives-intro.jpg)
 
 > **lightbulb** Azure Blob Storage is designed to handle massive amounts of unstructured data while providing high durability and availability. This makes it a perfect fit for enterprise-level applications.
 

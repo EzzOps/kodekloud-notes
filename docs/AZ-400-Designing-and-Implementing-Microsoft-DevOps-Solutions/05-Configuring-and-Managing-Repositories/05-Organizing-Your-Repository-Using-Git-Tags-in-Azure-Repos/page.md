@@ -33,7 +33,7 @@ Git tags provide fixed points in your project’s history—ideal for marking re
 
 Azure DevOps also offers a visual interface to streamline tag management:
 
-![The image shows a screenshot of the Azure Repos interface, highlighting the "Tags" section with a list of tags and their details. It includes options for creating new tags and searching existing ones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867517/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Organizing-Your-Repository-Using-Git-Tags-in-Azure-Repos/azure-repos-tags-screenshot.jpg)
+![The image shows a screenshot of the Azure Repos interface, highlighting the "Tags" section with a list of tags and their details. It includes options for creating new tags and searching existing ones.](https://kodekloud.com/kk-media/image/upload/v1752867517/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Organizing-Your-Repository-Using-Git-Tags-in-Azure-Repos/azure-repos-tags-screenshot.jpg)
 
 From this **Tags** page, you can:
 

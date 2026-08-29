@@ -14,9 +14,7 @@ In OpenShift, a user is typically an individual who logs into the system. Exampl
 
 Below is a diagram illustrating the structure of regular users and system users along with their permission levels:
 
-<Frame>
-  ![The image outlines two types of users, "Regular User" and "System User," who can have granular permissions such as "Read Only," "Read and Write," and "Literally Everything."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882754/notes-assets/images/OpenShift-4-User-Management-Overview-users-ServiceAccounts-Groups/user-permissions-regular-system-users.jpg)
-</Frame>
+![The image outlines two types of users, "Regular User" and "System User," who can have granular permissions such as "Read Only," "Read and Write," and "Literally Everything."](https://kodekloud.com/kk-media/image/upload/v1752882754/notes-assets/images/OpenShift-4-User-Management-Overview-users-ServiceAccounts-Groups/user-permissions-regular-system-users.jpg)
 
 ### Creating a User
 
@@ -44,15 +42,11 @@ oc delete user mike
 
 Service accounts are special accounts designed for automated tasks and direct API access. For security reasons, it is best practice to create dedicated service accounts rather than using the default one, which, if compromised, may pose a significant security risk.
 
-<Frame>
-  ![The image shows a section titled "Service Accounts" with a red button labeled "Direct Access to API" and an icon of a hand clicking on a red "API" button.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882754/notes-assets/images/OpenShift-4-User-Management-Overview-users-ServiceAccounts-Groups/service-accounts-direct-access-api.jpg)
-</Frame>
+![The image shows a section titled "Service Accounts" with a red button labeled "Direct Access to API" and an icon of a hand clicking on a red "API" button.](https://kodekloud.com/kk-media/image/upload/v1752882754/notes-assets/images/OpenShift-4-User-Management-Overview-users-ServiceAccounts-Groups/service-accounts-direct-access-api.jpg)
 
 Service accounts are treated as API resources similar to Deployments, Services, or Ingresses in Kubernetes.
 
-<Frame>
-  ![The image is a diagram showing "Service Accounts" as an API resource/object related to Kubernetes, with red arrow icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882755/notes-assets/images/OpenShift-4-User-Management-Overview-users-ServiceAccounts-Groups/service-accounts-kubernetes-diagram.jpg)
-</Frame>
+![The image is a diagram showing "Service Accounts" as an API resource/object related to Kubernetes, with red arrow icons.](https://kodekloud.com/kk-media/image/upload/v1752882755/notes-assets/images/OpenShift-4-User-Management-Overview-users-ServiceAccounts-Groups/service-accounts-kubernetes-diagram.jpg)
 
 ### Creating and Managing Service Accounts
 
@@ -80,9 +74,7 @@ You can also apply roles to a service account via a group command if necessary:
 oc policy add-role-to-group view system:serviceaccount:sockshop:mikesa
 ```
 
-<Callout icon="lightbulb">
-  Always create dedicated service accounts for each application or task to minimize the risk of exposing critical credentials and to adhere to the principle of least privilege.
-</Callout>
+> **lightbulb** Always create dedicated service accounts for each application or task to minimize the risk of exposing critical credentials and to adhere to the principle of least privilege.
 
 ***
 
@@ -90,9 +82,7 @@ oc policy add-role-to-group view system:serviceaccount:sockshop:mikesa
 
 Groups in OpenShift allow you to manage permissions for multiple users collectively. This approach simplifies role assignment, as you can target a group rather than assigning permissions individually. For example, if an engineering team requires "view" access across various projects, adding all team members to a group and binding a role to that group is more efficient and manageable.
 
-<Frame>
-  ![The image shows a user interface with options for managing groups, including adding roles or role bindings, and viewing access for engineers. There are icons representing users and a clickable option to view all.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882756/notes-assets/images/OpenShift-4-User-Management-Overview-users-ServiceAccounts-Groups/user-interface-managing-groups-access.jpg)
-</Frame>
+![The image shows a user interface with options for managing groups, including adding roles or role bindings, and viewing access for engineers. There are icons representing users and a clickable option to view all.](https://kodekloud.com/kk-media/image/upload/v1752882756/notes-assets/images/OpenShift-4-User-Management-Overview-users-ServiceAccounts-Groups/user-interface-managing-groups-access.jpg)
 
 Groups can also be scoped to specific namespaces. If a particular team needs read/write access only within a designated namespace, create the group and bind the role accordingly.
 
@@ -116,6 +106,4 @@ With this overview, you now have a solid understanding of how to create and mana
 
 For more information, refer to the [OpenShift Documentation](https://docs.openshift.com) and explore related topics such as [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/0dc2055f-bb3d-4716-ab6f-6fa60ed2daac" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/0dc2055f-bb3d-4716-ab6f-6fa60ed2daac)

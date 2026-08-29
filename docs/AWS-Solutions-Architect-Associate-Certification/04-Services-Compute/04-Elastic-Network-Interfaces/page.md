@@ -75,7 +75,7 @@ An ENI represents a logical version of a physical network card in a VPC. Its mai
 * A unique MAC address.
 * Configurable flags like the source/destination check.
 
-![The image illustrates a network architecture diagram showing an Elastic Network Interface within a VPC, including a public and private IP, a subnet, and security components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864957/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces/network-architecture-diagram-vpc.jpg)
+![The image illustrates a network architecture diagram showing an Elastic Network Interface within a VPC, including a public and private IP, a subnet, and security components.](https://kodekloud.com/kk-media/image/upload/v1752864957/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces/network-architecture-diagram-vpc.jpg)
 
 ## Primary vs. Secondary ENIs
 
@@ -89,11 +89,11 @@ Secondary ENIs offer enhanced flexibility:
 * They can host a primary private IP along with multiple secondary private IP addresses.
 * They may have different security groups compared to the primary ENI, allowing for distinct network and security configurations.
 
-![The image compares primary and secondary Elastic Network Interfaces (ENI), showing their associated public and private IP addresses. The primary ENI (eth0) has IPs 34.191.162.238 (public) and 10.0.0.35 (private), while the secondary ENI (eth1) has IPs 54.35.215.118 (public) and 10.0.1.69 (private).](../../../../images/kodekloud.com/kk-media/image/upload/v1752864958/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces/eni-ip-addresses-comparison.jpg)
+![The image compares primary and secondary Elastic Network Interfaces (ENI), showing their associated public and private IP addresses. The primary ENI (eth0) has IPs 34.191.162.238 (public) and 10.0.0.35 (private), while the secondary ENI (eth1) has IPs 54.35.215.118 (public) and 10.0.1.69 (private).](https://kodekloud.com/kk-media/image/upload/v1752864958/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces/eni-ip-addresses-comparison.jpg)
 
 Remember, while the primary ENI is immovable, secondary ENIs persist even when an instance is stopped or restarted, offering the ability to transfer them between instances when necessary.
 
-![The image illustrates the concept of Elastic Network Interfaces (ENI) in Amazon EC2, showing a central EC2 instance connected to one primary and two secondary ENIs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864959/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces/elastic-network-interfaces-ec2-diagram.jpg)
+![The image illustrates the concept of Elastic Network Interfaces (ENI) in Amazon EC2, showing a central EC2 instance connected to one primary and two secondary ENIs.](https://kodekloud.com/kk-media/image/upload/v1752864959/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces/elastic-network-interfaces-ec2-diagram.jpg)
 
 ## Elastic IP Addresses and Security Groups
 
@@ -111,7 +111,7 @@ ENIs offer several powerful features for designing flexible and secure network a
 | Hot Attach/Detach Capability | Attach or detach ENIs without stopping or restarting the instance          |
 | Flow Logs Configuration      | Capture detailed IP traffic information for monitoring and troubleshooting |
 
-![The image lists five features: Multiple IP Addresses, Elastic IP Addresses, Security, Hot Attach and Detach, and Network Flow Logs, each with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864959/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces/features-multiple-ip-elastic-security.jpg)
+![The image lists five features: Multiple IP Addresses, Elastic IP Addresses, Security, Hot Attach and Detach, and Network Flow Logs, each with an icon.](https://kodekloud.com/kk-media/image/upload/v1752864959/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces/features-multiple-ip-elastic-security.jpg)
 
 ## Summary
 

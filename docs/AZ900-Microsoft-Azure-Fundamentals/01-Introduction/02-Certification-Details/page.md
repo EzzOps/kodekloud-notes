@@ -16,19 +16,19 @@ Welcome to the comprehensive AZ-900 certification course—a gateway to masterin
 
 Begin your journey by exploring cloud computing fundamentals. This section demystifies cloud computing, discusses various service models, and establishes the base for understanding Azure’s vast capabilities.
 
-![The image outlines topics for the AZ-900 Certification, including "Cloud concepts," "Azure architecture and services," and "Management and governance."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868446/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Certification-Details/az-900-certification-topics-outline.jpg)
+![The image outlines topics for the AZ-900 Certification, including "Cloud concepts," "Azure architecture and services," and "Management and governance."](https://kodekloud.com/kk-media/image/upload/v1752868446/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Certification-Details/az-900-certification-topics-outline.jpg)
 
 ## Azure Architecture and Services
 
 Approximately 35 to 40 percent of the course is dedicated to Azure architecture and services. In this segment, you will learn about compute and networking options, dive into storage strategies, and explore critical aspects of identity, access, and security within Azure.
 
-![The image outlines the topics for the AZ-900 Certification, including Azure architecture and services (35-40%), cloud concepts, and management and governance. It also highlights areas like compute and networking, storage, and identity, access, and security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868448/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Certification-Details/az-900-certification-topics-outline-2.jpg)
+![The image outlines the topics for the AZ-900 Certification, including Azure architecture and services (35-40%), cloud concepts, and management and governance. It also highlights areas like compute and networking, storage, and identity, access, and security.](https://kodekloud.com/kk-media/image/upload/v1752868448/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Certification-Details/az-900-certification-topics-outline-2.jpg)
 
 ## Management and Governance
 
 The final part of the course, constituting 30 to 35 percent of the content, focuses on management and governance. This section covers effective cost management, resource deployment techniques, and robust monitoring practices using Azure’s suite of management tools.
 
-![The image outlines topics for the AZ-900 Certification, focusing on "Management and governance" (30-35%), "Cloud concepts," and "Azure architecture and services." It includes subtopics like cost management, resource deployment tools, governance and compliance, and monitoring tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868449/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Certification-Details/az-900-certification-topics-outline-3.jpg)
+![The image outlines topics for the AZ-900 Certification, focusing on "Management and governance" (30-35%), "Cloud concepts," and "Azure architecture and services." It includes subtopics like cost management, resource deployment tools, governance and compliance, and monitoring tools.](https://kodekloud.com/kk-media/image/upload/v1752868449/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Certification-Details/az-900-certification-topics-outline-3.jpg)
 
 ## Additional Learning Resources
 
@@ -44,11 +44,11 @@ Enhance your preparation with these valuable resources:
 
 Before progressing, here’s an overview of the Microsoft Certified: Azure Fundamentals exam page. This page provides comprehensive documentation on the certification, including a detailed learning path and a practice assessment. In addition to our course mock exams, you also have the option to take Microsoft's official practice exam.
 
-![The image shows a webpage for the "Microsoft Certified: Azure Fundamentals" certification, detailing foundational knowledge of Azure services. It includes information about the certification level, role, product, and subject.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868451/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Certification-Details/microsoft-azure-fundamentals-certification.jpg)
+![The image shows a webpage for the "Microsoft Certified: Azure Fundamentals" certification, detailing foundational knowledge of Azure services. It includes information about the certification level, role, product, and subject.](https://kodekloud.com/kk-media/image/upload/v1752868451/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Certification-Details/microsoft-azure-fundamentals-certification.jpg)
 
-![The image shows a webpage from Microsoft's learning platform, detailing Azure certification modules and offering practice assessments and exam sandbox experiences.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868452/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Certification-Details/azure-certification-modules-webpage.jpg)
+![The image shows a webpage from Microsoft's learning platform, detailing Azure certification modules and offering practice assessments and exam sandbox experiences.](https://kodekloud.com/kk-media/image/upload/v1752868452/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Certification-Details/azure-certification-modules-webpage.jpg)
 
-![The image shows a webpage detailing information about taking an exam, including exam policies, available languages, and scheduling options. It also mentions the exam duration, retake policy, and certification resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868454/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Certification-Details/exam-information-webpage-details.jpg)
+![The image shows a webpage detailing information about taking an exam, including exam policies, available languages, and scheduling options. It also mentions the exam duration, retake policy, and certification resources.](https://kodekloud.com/kk-media/image/upload/v1752868454/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Certification-Details/exam-information-webpage-details.jpg)
 
 Let's now dive into our first topic in the AZ-900 course. Good luck on your journey to mastering Microsoft Azure Fundamentals!
 

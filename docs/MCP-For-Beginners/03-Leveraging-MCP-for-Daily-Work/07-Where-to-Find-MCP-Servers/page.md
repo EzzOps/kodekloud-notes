@@ -23,9 +23,7 @@ Recommended scopes/permissions:
 | Fine‑grained PAT | Actions (Read & Write) or equivalent for workflows                |
 | Alternative      | Use GitHub Apps or OIDC where possible to avoid long‑lived tokens |
 
-<Callout icon="warning">
-  Store and manage PATs securely. Do not commit tokens to source control. Use secrets managers or environment variables with least privilege and proper access controls.
-</Callout>
+> **warning** Store and manage PATs securely. Do not commit tokens to source control. Use secrets managers or environment variables with least privilege and proper access controls.
 
 For more on PATs and security: [https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
@@ -110,9 +108,7 @@ This lesson demonstrated wiring an MCP server to GitHub Actions, configuring aut
 * [Azure Static Web Apps documentation](https://learn.microsoft.com/azure/static-web-apps/)
 * [@nextdrive/github-action-trigger-mcp on npm](https://www.npmjs.com/package/@nextdrive/github-action-trigger-mcp)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/910a0b7a-ac6e-43f1-956e-203a70c3d455/lesson/9a8d29b5-a1e1-4ae4-8628-8dd95e68f2a8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/910a0b7a-ac6e-43f1-956e-203a70c3d455/lesson/9a8d29b5-a1e1-4ae4-8628-8dd95e68f2a8)
 
 
 # Where to Find MCP Servers
@@ -184,9 +180,7 @@ Table — Quick resource summary
 
 If you have a client that only supports local STDIO MCP servers (for example, certain desktop apps) but you want to connect it to a remote, authenticated MCP server, the mcp-remote bridge proxies a remote SSE/HTTP MCP endpoint to a local STDIO-style server. This lets legacy or local-only clients connect to a remote MCP endpoint as if it were running locally.
 
-<Callout icon="lightbulb">
-  mcp-remote is very helpful when bridging remote MCP endpoints to local clients but can be experimental in some ecosystems. Pay attention to authentication, TLS, and network security when exposing remote services locally.
-</Callout>
+> **lightbulb** mcp-remote is very helpful when bridging remote MCP endpoints to local clients but can be experimental in some ecosystems. Pay attention to authentication, TLS, and network security when exposing remote services locally.
 
 Example client config (JSON snippet that launches the proxy via `npx`):
 

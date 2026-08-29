@@ -16,9 +16,7 @@ Following the merge, continuous deployment (CD) processes take over:
 * A GitOps operator, generally running within a Kubernetes cluster, ensures that the desired state defined in Git matches the actual state in production.
 * The operator continuously monitors the repository for any updates and applies them to the cluster as needed.
 
-<Callout icon="lightbulb">
-  Using Git as the source of truth not only simplifies deployments but also provides a complete audit trail for all infrastructure and application changes.
-</Callout>
+> **lightbulb** Using Git as the source of truth not only simplifies deployments but also provides a complete audit trail for all infrastructure and application changes.
 
 ## CI/CD Pipeline and GitOps
 
@@ -31,16 +29,10 @@ When new code is merged into the application Git repository, an automated CI/CD 
 
 The GitOps operator then detects any discrepancy between the desired state (as defined in Git) and the actual cluster state, retrieving and applying the updates to maintain consistency.
 
-<Callout icon="triangle-alert">
-  Ensure that your Git repositories and CI/CD pipelines are secured and properly managed to prevent unauthorized modifications or breaches.
-</Callout>
+> **triangle-alert** Ensure that your Git repositories and CI/CD pipelines are secured and properly managed to prevent unauthorized modifications or breaches.
 
 ## GitOps Workflow Diagram
 
-<Frame>
-  ![The image illustrates a GitOps workflow, showing the process from application code merging to continuous integration, and synchronization of Kubernetes manifests to achieve the desired state in production environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879722/notes-assets/images/Jenkins-Pipelines-Introduction-to-GitOps/gitops-workflow-continuous-integration.jpg)
-</Frame>
+![The image illustrates a GitOps workflow, showing the process from application code merging to continuous integration, and synchronization of Kubernetes manifests to achieve the desired state in production environments.](https://kodekloud.com/kk-media/image/upload/v1752879722/notes-assets/images/Jenkins-Pipelines-Introduction-to-GitOps/gitops-workflow-continuous-integration.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/fb6b2c83-178c-4962-b4e6-ca5528721170/lesson/584239f7-4360-4a86-b401-6a649d9f9cb7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/fb6b2c83-178c-4962-b4e6-ca5528721170/lesson/584239f7-4360-4a86-b401-6a649d9f9cb7)

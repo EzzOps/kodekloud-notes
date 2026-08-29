@@ -10,7 +10,7 @@ In this lesson, we explore various Azure services for Natural Language Processin
 
 We start by discussing how Azure supports text analysis to extract key phrases, entities, and other critical information. This capability is essential for summarizing large volumes of text and identifying core concepts. In the upcoming lab session, you will work hands-on with Azure Language Studio to apply these text analysis techniques on real-world examples.
 
-![The image is a module introduction slide listing four topics: Text Analysis, Text Analysis Using Language Studio (Lab), Question Answering, and Azure Bot Service. It features a gradient blue background on the left with numbered labels for each topic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856921/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Module-Introduction/module-introduction-text-analysis-topics.jpg)
+![The image is a module introduction slide listing four topics: Text Analysis, Text Analysis Using Language Studio (Lab), Question Answering, and Azure Bot Service. It features a gradient blue background on the left with numbered labels for each topic.](https://kodekloud.com/kk-media/image/upload/v1752856921/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Module-Introduction/module-introduction-text-analysis-topics.jpg)
 
 ## Question Answering and Azure Bot Service
 
@@ -26,7 +26,7 @@ In the subsequent section, we delve into conversational language understanding. 
 
 Finally, we cover speech recognition and synthesis. This topic addresses converting spoken words into text and vice versa, unlocking potential for developing voice-activated applications and digital assistants.
 
-![The image is a module introduction slide listing topics such as Q\&A Model Using Language Studio, Conversational Language and Understanding, and Speech Recognition and Synthesis. It features a gradient background with numbered labels for each topic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856922/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Module-Introduction/module-introduction-qa-topics.jpg)
+![The image is a module introduction slide listing topics such as Q\&A Model Using Language Studio, Conversational Language and Understanding, and Speech Recognition and Synthesis. It features a gradient background with numbered labels for each topic.](https://kodekloud.com/kk-media/image/upload/v1752856922/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Module-Introduction/module-introduction-qa-topics.jpg)
 
 We conclude the module with an in-depth exploration of speech recognition and synthesis. Now, let's get started with text analysis and uncover the power of Azure's NLP capabilities.
 

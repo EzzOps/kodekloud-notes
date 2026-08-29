@@ -36,9 +36,7 @@ tests/test_calculations.py ....                      [100%]
 4 passed in 0.07s
 ```
 
-<Callout icon="lightbulb">
-  Testing with a single set of input values does not guarantee that all possible scenarios are handled correctly by your functions.
-</Callout>
+> **lightbulb** Testing with a single set of input values does not guarantee that all possible scenarios are handled correctly by your functions.
 
 ## Introducing Pytest Parameterization
 
@@ -88,12 +86,8 @@ tests/test_calculations.py::test_divide PASSED
 6 passed in 0.08s
 ```
 
-<Callout icon="lightbulb">
-  The parameterization approach makes your tests more modular and maintainable. It facilitates the easy addition or modification of test cases without redundant code.
-</Callout>
+> **lightbulb** The parameterization approach makes your tests more modular and maintainable. It facilitates the easy addition or modification of test cases without redundant code.
 
 By adopting Pytest parameterization for your arithmetic function tests, you streamline your code and ensure a more robust and efficient testing strategy.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/8ed28f2f-e080-4f10-98fb-9e00d72bf4c4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/8ed28f2f-e080-4f10-98fb-9e00d72bf4c4)

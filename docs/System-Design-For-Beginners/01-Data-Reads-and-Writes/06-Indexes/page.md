@@ -83,9 +83,7 @@ Index trade-offs and considerations
 | Covering indexes      | If the index contains all columns a query needs, the database can satisfy the query using only the index (no table fetch). This is faster but can increase index size. |
 | ORDER BY optimization | An appropriate index can eliminate expensive sorts if the query ordering matches the index order.                                                                      |
 
-<Callout icon="lightbulb">
-  Index the columns used by your slow queries—typically those in `WHERE`, `JOIN`, `ORDER BY`, and `GROUP BY`. Use `EXPLAIN` / `EXPLAIN ANALYZE` and slow-query logs to identify which queries will benefit before adding an index.
-</Callout>
+> **lightbulb** Index the columns used by your slow queries—typically those in `WHERE`, `JOIN`, `ORDER BY`, and `GROUP BY`. Use `EXPLAIN` / `EXPLAIN ANALYZE` and slow-query logs to identify which queries will benefit before adding an index.
 
 Best-practice workflow
 
@@ -95,9 +93,7 @@ Best-practice workflow
 4. Add an index targeted to the query pattern (single-column, composite, or covering).
 5. Re-run the query and observe performance and write impact; iterate as needed.
 
-<Callout icon="warning">
-  Do not create indexes blindly. Adding many indexes increases write latency and storage cost. Start with no or few indexes, identify slow queries, and add indexes targeted at those queries only.
-</Callout>
+> **warning** Do not create indexes blindly. Adding many indexes increases write latency and storage cost. Start with no or few indexes, identify slow queries, and add indexes targeted at those queries only.
 
 How many indexes should a table have?
 There’s no one-size-fits-all number. Many production tables have 3–5 well-chosen indexes, but the right count depends on query patterns and write throughput. The pragmatic approach is the workflow above: measure, add targeted indexes, and re-measure.
@@ -110,6 +106,4 @@ References and further reading
 
 By following a measurement-driven approach to indexing—identify slow queries, inspect plans, and add focused indexes—you’ll improve read performance while keeping write overhead and storage costs under control.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/306ae548-f392-49e7-864f-d8501ffd5d8a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/306ae548-f392-49e7-864f-d8501ffd5d8a)

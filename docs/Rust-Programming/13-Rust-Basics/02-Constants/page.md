@@ -14,9 +14,7 @@ const MAX_USERS: u32 = 1000;
 
 In this snippet, `MAX_USERS` is a constant with a value of 1000. The type annotation `u32` indicates that this constant is an unsigned 32-bit integer.
 
-<Callout icon="lightbulb">
-  Constants are particularly useful for defining values that are referenced repeatedly across your codebase, enhancing readability and simplifying maintenance by centralizing changes.
-</Callout>
+> **lightbulb** Constants are particularly useful for defining values that are referenced repeatedly across your codebase, enhancing readability and simplifying maintenance by centralizing changes.
 
 ## Differences Between Constants and Variables
 
@@ -70,6 +68,4 @@ Using descriptive names like `PI`, `MAX_SCORE`, and `DEFAULT_TIMEOUT` helps elim
 
 By leveraging constants in Rust, you can write more robust, maintainable, and readable code. Their use enhances clarity, reduces errors, and simplifies future modifications.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/db3eb3af-a44d-45fa-a295-3ea769f60fb3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/db3eb3af-a44d-45fa-a295-3ea769f60fb3)

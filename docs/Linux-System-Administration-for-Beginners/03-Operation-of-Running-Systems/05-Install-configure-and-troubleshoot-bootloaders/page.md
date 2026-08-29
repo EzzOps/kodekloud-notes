@@ -6,11 +6,9 @@ This guide covers installing, configuring, and troubleshooting the GRUB bootload
 
 When a Linux system powers on, the very first program it executes is the bootloader. Its primary role is to initialize hardware and load the Linux kernel—the core of your operating system. GRUB (Grand Unified Bootloader) is the most widely used bootloader in Linux environments. In this guide, we’ll walk through installing, configuring, and troubleshooting GRUB on CentOS Stream systems.
 
-<Callout icon="lightbulb">
-  * A CentOS installation ISO on USB, CD, or DVD
+> **lightbulb** * A CentOS installation ISO on USB, CD, or DVD
   * Familiarity with basic Linux commands and partitioning
   * Backup of important data before making bootloader changes
-</Callout>
 
 ***
 
@@ -98,13 +96,11 @@ Installation finished. No error reported.
 bash-4.4#
 ```
 
-<Callout icon="lightbulb">
-  On EFI systems, reinstall the GRUB EFI packages instead of `grub2-install`:
+> **lightbulb** On EFI systems, reinstall the GRUB EFI packages instead of `grub2-install`:
 
   ```bash theme={null}
   dnf reinstall grub2-efi shim
   ```
-</Callout>
 
 ***
 
@@ -177,8 +173,6 @@ Watch for your updated GRUB menu and timeout.
 * [GRUB Manual](https://www.gnu.org/software/grub/manual/)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/a8f81b0f-268d-459e-875e-ccec76f81608" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/a8f81b0f-268d-459e-875e-ccec76f81608)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/f52d11e4-97fb-4b2c-b313-70c911ff0e36" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/f52d11e4-97fb-4b2c-b313-70c911ff0e36)

@@ -12,9 +12,7 @@ App Service Authentication adds a layer of protection by intercepting incoming r
 
 By default, anonymous access is permitted. For example, navigating directly to your app’s URL will load the landing page without any authentication prompts. To secure your app, switch the default setting and enforce the authentication mechanism of your choice.
 
-<Callout icon="lightbulb">
-  Ensure that you select a provider that complements your application's user base and security requirements.
-</Callout>
+> **lightbulb** Ensure that you select a provider that complements your application's user base and security requirements.
 
 ## Securing Data with SSL Certificates
 
@@ -28,17 +26,13 @@ Diagnostic settings are a key part of maintaining and troubleshooting your Azure
 
 Network ACLs further secure your App Service by specifying which IP addresses or networks are permitted to access your application. Configuring these rules minimizes the exposure of your web app to unauthorized traffic.
 
-<Callout icon="lightbulb">
-  Always evaluate your network access rules to ensure that only trusted sources can communicate with your App Service.
-</Callout>
+> **lightbulb** Always evaluate your network access rules to ensure that only trusted sources can communicate with your App Service.
 
 ## Key Vault Integration
 
 Managing sensitive data such as API keys, connection strings, and other secrets is streamlined with Azure Key Vault. By integrating your App Service with Key Vault, you eliminate the risk of exposing secrets in your code or configuration files, ensuring that sensitive information remains secure.
 
-<Frame>
-  ![The image is a presentation slide about securing an app service, highlighting authentication and security features, and showing a dropdown menu for selecting an identity provider.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884790/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Securing-App-Service/securing-app-service-authentication-slide.jpg)
-</Frame>
+![The image is a presentation slide about securing an app service, highlighting authentication and security features, and showing a dropdown menu for selecting an identity provider.](https://kodekloud.com/kk-media/image/upload/v1752884790/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Securing-App-Service/securing-app-service-authentication-slide.jpg)
 
 ## Deploying Code to Your App Service
 
@@ -140,9 +134,7 @@ By default, App Service does not enforce authentication. To enhance security, go
 
 After creating an app registration within Microsoft Entra ID, use the default configuration settings and click "Add." With the identity provider active, open an incognito window and navigate to your app’s URL. A sign-in prompt confirms that authentication is now required to access your application.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for adding an identity provider, with options for app registration and authentication settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884791/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Securing-App-Service/azure-portal-identity-provider-settings.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for adding an identity provider, with options for app registration and authentication settings.](https://kodekloud.com/kk-media/image/upload/v1752884791/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Securing-App-Service/azure-portal-identity-provider-settings.jpg)
 
 ## Additional Deployment Options
 
@@ -151,9 +143,7 @@ If Visual Studio Code is not your preferred deployment tool, consider these alte
 * **Deployment Center:** A centralized hub to explore various deployment methods.
 * **FTPS Credentials:** Retrieve your FTPS endpoint, username, and password to deploy files using any FTP client.
 
-<Frame>
-  ![The image shows the FTPS credentials section of the Deployment Center in Microsoft Azure for a web app named "kodekloudemoapp." It includes fields for FTPS endpoint, username, and password management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884792/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Securing-App-Service/ftps-credentials-deployment-center-kodekloudemoapp.jpg)
-</Frame>
+![The image shows the FTPS credentials section of the Deployment Center in Microsoft Azure for a web app named "kodekloudemoapp." It includes fields for FTPS endpoint, username, and password management.](https://kodekloud.com/kk-media/image/upload/v1752884792/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Securing-App-Service/ftps-credentials-deployment-center-kodekloudemoapp.jpg)
 
 * **Kudu Portal:** A web-based interface for file management and uploads.
 
@@ -179,9 +169,7 @@ Then, create an additional rule to deny all other traffic:
 * Priority: 101
 * Type: IPv4
 
-<Frame>
-  ![The image shows the Microsoft Azure portal with the "Access Restrictions" settings for a web app. It includes options for configuring site access rules and adding a new rule with specific settings like action, priority, and source IP address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884793/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Securing-App-Service/azure-portal-access-restrictions-settings.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal with the "Access Restrictions" settings for a web app. It includes options for configuring site access rules and adding a new rule with specific settings like action, priority, and source IP address.](https://kodekloud.com/kk-media/image/upload/v1752884793/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Securing-App-Service/azure-portal-access-restrictions-settings.jpg)
 
 With these rules configured, any access attempt from an unauthorized IP address will result in a "Forbidden" error message.
 
@@ -193,6 +181,4 @@ By default, your App Service is hosted under the azurewebsites.net domain. For b
 
 This guide has reviewed the key strategies for securing your App Service, deploying your application code, and enforcing robust authentication and network restrictions. Implement these best practices to safeguard your web applications and improve overall performance and security.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/c1871647-c1ec-478a-beab-b21781cec58f/lesson/5c87991c-d266-4f47-874a-8f455779ddf7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/c1871647-c1ec-478a-beab-b21781cec58f/lesson/5c87991c-d266-4f47-874a-8f455779ddf7)

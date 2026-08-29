@@ -73,8 +73,7 @@ Save the above configuration to a file (e.g., `role.yaml`) and apply it by runni
 PS C:\Users\mike\Desktop> oc apply -f .\role.yaml
 ```
 
-<Callout icon="triangle-alert">
-  If you encounter an error similar to:
+> **triangle-alert** If you encounter an error similar to:
 
   ```plaintext theme={null}
   clusterrole.rbac.authorization.k8s.io/mikesreaduser created
@@ -83,7 +82,6 @@ PS C:\Users\mike\Desktop> oc apply -f .\role.yaml
   ```
 
   This indicates a case sensitivity issue. Make sure to use "User" (capitalized) as the subject's kind in the ClusterRoleBinding.
-</Callout>
 
 ## Step 4: Verify the Configuration
 
@@ -108,12 +106,8 @@ subjects:
 
 After refreshing your cluster view, you should see that MikeUser now has the appropriate role binding to view Pods across the entire cluster.
 
-<Callout icon="lightbulb">
-  This configuration is ideal for monitoring purposes, ensuring that users can review resources without risking unintended modifications.
-</Callout>
+> **lightbulb** This configuration is ideal for monitoring purposes, ensuring that users can review resources without risking unintended modifications.
 
 Happy monitoring!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/ba7c6578-dee2-4e2c-937d-5466cad10b43" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/ba7c6578-dee2-4e2c-937d-5466cad10b43)

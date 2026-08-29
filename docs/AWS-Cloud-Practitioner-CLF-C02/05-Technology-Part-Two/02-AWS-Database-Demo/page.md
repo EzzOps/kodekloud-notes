@@ -18,7 +18,7 @@ We will create three types of databases:
 
 Start at the RDS console (logged in and with the region set to Ohio). Click on **Create Database** and select the **Easy Create** option. Remember, RDS offers two sub-options: standard Aurora and Aurora Serverless. In this section, we are working with the primary RDS option for PostgreSQL.
 
-![The image shows a configuration screen for selecting a database engine type on AWS, including options like PostgreSQL, MySQL, Oracle, and others.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862237/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_60.jpg)
+![The image shows a configuration screen for selecting a database engine type on AWS, including options like PostgreSQL, MySQL, Oracle, and others.](https://kodekloud.com/kk-media/image/upload/v1752862237/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_60.jpg)
 
 When creating your first database:
 
@@ -27,21 +27,21 @@ When creating your first database:
 * Close the side panel and click **Auto-Generate a Password**.
 * Leave default settings intact (e.g., encryption enabled and the default VPC is used).
 
-![The image shows an AWS RDS database creation interface, with options for setting a master username, password, EC2 connection, and default settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862238/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_80.jpg)
+![The image shows an AWS RDS database creation interface, with options for setting a master username, password, EC2 connection, and default settings.](https://kodekloud.com/kk-media/image/upload/v1752862238/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_80.jpg)
 
 After reviewing your settings:
 
-![The image shows an AWS RDS configuration screen detailing database settings, including VPC, backups, security, and engine version, with various options enabled or disabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862240/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_90.jpg)
+![The image shows an AWS RDS configuration screen detailing database settings, including VPC, backups, security, and engine version, with various options enabled or disabled.](https://kodekloud.com/kk-media/image/upload/v1752862240/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_90.jpg)
 
 Click **Create Database**. The system begins provisioning your PostgreSQL database, and you'll see a progress notification at the bottom of the screen. This instance is created as a T3 micro PostgreSQL database. Even though options like restoring a database from S3 exist, in this demo, we are focusing on a basic configuration.
 
-![The image shows an Amazon RDS dashboard with a PostgreSQL database named "database-1" being created, featuring options for database management and deployment suggestions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862242/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_140.jpg)
+![The image shows an Amazon RDS dashboard with a PostgreSQL database named "database-1" being created, featuring options for database management and deployment suggestions.](https://kodekloud.com/kk-media/image/upload/v1752862242/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_140.jpg)
 
 ## Creating an Aurora PostgreSQL Database
 
 To create the Aurora PostgreSQL database, click **Create Database** again and choose **Easy Create**. This time, select Aurora PostgreSQL. Notice the interface differences in the upper right between standard PostgreSQL and Aurora. For this example, use the **DevTest** mode with default configurations to create "database two."
 
-![The image shows an AWS RDS database creation interface, highlighting the selection of Aurora PostgreSQL-Compatible Edition with its features listed on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862243/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_170.jpg)
+![The image shows an AWS RDS database creation interface, highlighting the selection of Aurora PostgreSQL-Compatible Edition with its features listed on the right.](https://kodekloud.com/kk-media/image/upload/v1752862243/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_170.jpg)
 
 On the Aurora configuration page, you'll configure:
 
@@ -51,7 +51,7 @@ On the Aurora configuration page, you'll configure:
 
 After clicking **Create Database**, an Aurora cluster is provisioned. Unlike the standard PostgreSQL instance, Aurora instantly creates a database cluster. Initially, the cluster comprises one instance, but you have the flexibility to add more instances later. The dashboard will show the Aurora PostgreSQL instance along with a reader instance.
 
-![The image shows an AWS RDS setup page for creating an Aurora PostgreSQL database, with options for instance size, DB cluster identifier, and master username.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862244/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_190.jpg)
+![The image shows an AWS RDS setup page for creating an Aurora PostgreSQL database, with options for instance size, DB cluster identifier, and master username.](https://kodekloud.com/kk-media/image/upload/v1752862244/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_190.jpg)
 
 ## Deploying an Aurora Serverless PostgreSQL Database
 
@@ -64,19 +64,19 @@ During the serverless instance configuration:
 * Configure the compute capacity by choosing a range. Typically, this demo uses a minimum of 1 and a maximum of 4 Aurora Capacity Units (ACUs), with 1 ACU providing 2 GB of memory.
 * This configuration ensures that your serverless database scales automatically based on demand.
 
-![The image shows an AWS RDS configuration page for selecting Aurora DB cluster storage options, highlighting compatibility issues with the selected Aurora PostgreSQL version.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862246/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_290.jpg)
+![The image shows an AWS RDS configuration page for selecting Aurora DB cluster storage options, highlighting compatibility issues with the selected Aurora PostgreSQL version.](https://kodekloud.com/kk-media/image/upload/v1752862246/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_290.jpg)
 
 Additional instance settings include backup configurations, linking Aurora as a replica, and various networking options. In this demo, the default settings are sufficient. After confirming your settings by clicking **Create Database**, the serverless database is provisioned.
 
-![The image shows an AWS RDS instance configuration page, detailing options for DB instance class, capacity range, and availability settings, including serverless and memory-optimized classes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862247/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_320.jpg)
+![The image shows an AWS RDS instance configuration page, detailing options for DB instance class, capacity range, and availability settings, including serverless and memory-optimized classes.](https://kodekloud.com/kk-media/image/upload/v1752862247/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_320.jpg)
 
 An extra screenshot further details the serverless v2 settings, such as capacity ranges and supported DB engine versions.
 
-![The image shows an AWS RDS instance configuration page, highlighting options for serverless v2, capacity range, and DB engine versions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862248/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_350.jpg)
+![The image shows an AWS RDS instance configuration page, highlighting options for serverless v2, capacity range, and DB engine versions.](https://kodekloud.com/kk-media/image/upload/v1752862248/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_350.jpg)
 
 Another diagram illustrates additional networking and availability configurations, including connections to compute resources.
 
-![The image shows an AWS RDS configuration page, detailing options for availability, connectivity, and network type, with a list of supported DB engine versions on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862250/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_360.jpg)
+![The image shows an AWS RDS configuration page, detailing options for availability, connectivity, and network type, with a list of supported DB engine versions on the right.](https://kodekloud.com/kk-media/image/upload/v1752862250/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_360.jpg)
 
 ## Viewing Your Databases
 
@@ -86,11 +86,11 @@ Once all three databases are created, your dashboard displays:
 * An Aurora PostgreSQL database (with both instance and cluster details).
 * A serverless Aurora PostgreSQL database (showing scaling details from 1 to 4 ACUs).
 
-![The image shows an Amazon RDS dashboard displaying a list of databases with their identifiers, statuses, roles, engines, and regions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862251/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_400.jpg)
+![The image shows an Amazon RDS dashboard displaying a list of databases with their identifiers, statuses, roles, engines, and regions.](https://kodekloud.com/kk-media/image/upload/v1752862251/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_400.jpg)
 
 By clicking on the database credentials link, you can connect remotely to any of these databases just as if they were running locally. One of the PostgreSQL instances might display an ongoing backup process on the RDS summary view.
 
-![The image shows an Amazon RDS dashboard displaying database details, including summary, connectivity, security settings, and current status of a PostgreSQL instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862253/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_440.jpg)
+![The image shows an Amazon RDS dashboard displaying database details, including summary, connectivity, security settings, and current status of a PostgreSQL instance.](https://kodekloud.com/kk-media/image/upload/v1752862253/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Database-Demo/frame_440.jpg)
 
 > **lightbulb** In this demo, you learned how to launch three unique configurations on AWS RDS:
 

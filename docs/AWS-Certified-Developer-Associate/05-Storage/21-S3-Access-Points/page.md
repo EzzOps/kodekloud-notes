@@ -12,13 +12,13 @@ Managing an S3 bucket that supports multiple groups, users, and roles can quickl
 
 When developers need to access objects, they use their specific access point ARN instead of the generic bucket ARN. This method shifts policy management closer to the relevant teams and simplifies security for your S3 buckets.
 
-![The image illustrates access points for different roles (Developers, Admin, Infra, Legal) connecting to a central bucket, likely representing a data storage or resource access system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859729/notes-assets/images/AWS-Certified-Developer-Associate-S3-Access-Points/access-points-roles-data-bucket.jpg)
+![The image illustrates access points for different roles (Developers, Admin, Infra, Legal) connecting to a central bucket, likely representing a data storage or resource access system.](https://kodekloud.com/kk-media/image/upload/v1752859729/notes-assets/images/AWS-Certified-Developer-Associate-S3-Access-Points/access-points-roles-data-bucket.jpg)
 
 ## Restricting Access with VPC Endpoints
 
 Another key benefit of using access points is the ability to restrict bucket access based on Virtual Private Cloud (VPC) endpoints. By associating VPC endpoints with an access point, you ensure that only devices within a specified VPC, such as EC2 instances, can interact with the S3 bucket. This adds an additional layer of security, preventing unauthorized access from outside the designated network.
 
-![The image illustrates the concept of restricting access to a bucket using VPC endpoints, showing one VPC with access and another without.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859730/notes-assets/images/AWS-Certified-Developer-Associate-S3-Access-Points/vpc-endpoints-bucket-access-restriction.jpg)
+![The image illustrates the concept of restricting access to a bucket using VPC endpoints, showing one VPC with access and another without.](https://kodekloud.com/kk-media/image/upload/v1752859730/notes-assets/images/AWS-Certified-Developer-Associate-S3-Access-Points/vpc-endpoints-bucket-access-restriction.jpg)
 
 > **lightbulb** For added security, regularly review and update the VPC endpoint associations to ensure only approved networks can access your S3 buckets.
 
@@ -28,7 +28,7 @@ Access point policies are defined at the access point level. However, note that 
 
 A more scalable approach is to delegate policy management by configuring a central bucket policy that defers further access control decisions to the respective access points. This approach eliminates the need for constant updates to the bucket policy and centralizes control within each access point.
 
-![The image illustrates an "Access Point Policy" with diagrams showing the delegation of policies to an access point and the need to copy the same policies to a bucket policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859731/notes-assets/images/AWS-Certified-Developer-Associate-S3-Access-Points/access-point-policy-diagram.jpg)
+![The image illustrates an "Access Point Policy" with diagrams showing the delegation of policies to an access point and the need to copy the same policies to a bucket policy.](https://kodekloud.com/kk-media/image/upload/v1752859731/notes-assets/images/AWS-Certified-Developer-Associate-S3-Access-Points/access-point-policy-diagram.jpg)
 
 > **triangle-alert** Remember that your access points will not work as intended unless the corresponding bucket policy includes the necessary permissions. Always verify that the bucket policy reflects any changes made at the access point level.
 
@@ -42,7 +42,7 @@ Using S3 access points offers several advantages:
 * Enables applying targeted policies directly to individual access points, reducing the complexity of bucket-level policy management.
 * Restricts access to devices within specific VPCs by associating VPC endpoints with access points.
 
-![The image is a summary of managing access to S3 buckets, highlighting points like simplifying access, assigning access points to users, using access point URLs, managing policies, and restricting access to specific VPCs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859733/notes-assets/images/AWS-Certified-Developer-Associate-S3-Access-Points/s3-bucket-access-management-summary.jpg)
+![The image is a summary of managing access to S3 buckets, highlighting points like simplifying access, assigning access points to users, using access point URLs, managing policies, and restricting access to specific VPCs.](https://kodekloud.com/kk-media/image/upload/v1752859733/notes-assets/images/AWS-Certified-Developer-Associate-S3-Access-Points/s3-bucket-access-management-summary.jpg)
 
 ## Conclusion
 

@@ -11,9 +11,7 @@ apiVersion: apps/v1
 
 Scroll to the bottom of the documentation (if referenced) for further instructions on connecting to your cluster. The Azure Cloud Shell comes pre-installed with the kubectl client, so you can quickly grant access to your cluster.
 
-<Frame>
-  ![The image shows a Microsoft Azure documentation page about connecting to a Kubernetes cluster using the Azure portal, featuring a screenshot of the Azure interface.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884937/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-Azure-AKS/frame_210.jpg)
-</Frame>
+![The image shows a Microsoft Azure documentation page about connecting to a Kubernetes cluster using the Azure portal, featuring a screenshot of the Azure interface.](https://kodekloud.com/kk-media/image/upload/v1752884937/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-Azure-AKS/frame_210.jpg)
 
 ### Configuring kubectl in Cloud Shell
 
@@ -103,9 +101,7 @@ With your single-node cluster up and running, it’s time to deploy the voting a
    service/voting-service   LoadBalancer 10.0.100.120    52.152.240.186   80:32245/TCP       109s
    ```
 
-<Callout icon="lightbulb">
-  In some cases, the result app service may initially show a pending state while the load balancer is being provisioned. Give it a few minutes to complete this process.
-</Callout>
+> **lightbulb** In some cases, the result app service may initially show a pending state while the load balancer is being provisioned. Give it a few minutes to complete this process.
 
 ## Testing Your Deployment
 
@@ -114,9 +110,7 @@ Once all deployments are confirmed (each showing one out of one pod ready) and t
 * Open your browser in a new tab to access the voting application using the external IP provided for the "voting-service".
 * Similarly, open another tab to access the results application using the external IP of the "result-service".
 
-<Frame>
-  ![The image shows a split screen with equal blue and teal sections, labeled "CATS 50.0%" and "DOGS 50.0%".](../../../../images/kodekloud.com/kk-media/image/upload/v1752884938/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-Azure-AKS/frame_370.jpg)
-</Frame>
+![The image shows a split screen with equal blue and teal sections, labeled "CATS 50.0%" and "DOGS 50.0%".](https://kodekloud.com/kk-media/image/upload/v1752884938/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-Azure-AKS/frame_370.jpg)
 
 Vote on the application and watch the result update in real time. This confirms that the applications are functioning correctly.
 
@@ -126,9 +120,7 @@ After finishing your demonstration and learning session, remember to delete the 
 
 That concludes this Kubernetes on Azure AKS tutorial. Happy learning, and see you in the next guide!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/2f291cbc-acc2-4250-b96c-2094daff556d/lesson/87c36f17-1717-4060-9d0a-a02377d17196" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/2f291cbc-acc2-4250-b96c-2094daff556d/lesson/87c36f17-1717-4060-9d0a-a02377d17196)
 
 
 # Kubernetes on GCP GKE
@@ -139,18 +131,14 @@ Learn to deploy applications on Google Kubernetes Engine within Google
 
 In this article, you will learn how to deploy your application on Google Kubernetes Engine (GKE) within the Google Cloud Platform (GCP). Before getting started, ensure you have access to a Google Cloud account. Google offers a 12-month free trial with a \$300 credit, which is sufficient for following along with this guide.
 
-<Frame>
-  ![The image describes Google Cloud's Free Tier, offering a 12-month trial with \$300 credit and limited free access to resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884939/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-GCP-GKE/frame_10.jpg)
-</Frame>
+![The image describes Google Cloud's Free Tier, offering a 12-month trial with \$300 credit and limited free access to resources.](https://kodekloud.com/kk-media/image/upload/v1752884939/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-GCP-GKE/frame_10.jpg)
 
 A basic understanding of the GCP console and shell usage is essential, as you will configure the prerequisites directly in the cloud console.
 
-<Callout icon="lightbulb">
-  Ensure you have:
+> **lightbulb** Ensure you have:
 
   * A valid Google Cloud account.
   * Familiarity with GCP Console and basic terminal commands.
-</Callout>
 
 ***
 
@@ -164,9 +152,7 @@ After logging into the GCP console, locate your project. In this example, we wil
 
 This action opens the Kubernetes cluster creation interface:
 
-<Frame>
-  ![The image shows the Google Cloud Platform interface, specifically the Kubernetes Engine section, with options to create a cluster, deploy a container, or take a quickstart.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884940/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-GCP-GKE/frame_60.jpg)
-</Frame>
+![The image shows the Google Cloud Platform interface, specifically the Kubernetes Engine section, with options to create a cluster, deploy a container, or take a quickstart.](https://kodekloud.com/kk-media/image/upload/v1752884940/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-GCP-GKE/frame_60.jpg)
 
 ### Cluster Settings
 
@@ -176,19 +162,13 @@ This action opens the Kubernetes cluster creation interface:
 
 Additional options are available for worker nodes, such as configuring the VM type or size; however, the default settings will suffice for this tutorial.
 
-<Frame>
-  ![The image shows a Google Kubernetes Engine (GKE) cluster setup interface, detailing options for naming, location type, zone, and master version selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884941/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-GCP-GKE/frame_90.jpg)
-</Frame>
+![The image shows a Google Kubernetes Engine (GKE) cluster setup interface, detailing options for naming, location type, zone, and master version selection.](https://kodekloud.com/kk-media/image/upload/v1752884941/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-GCP-GKE/frame_90.jpg)
 
-<Frame>
-  ![The image shows a Google Cloud Platform interface for setting up a Kubernetes cluster, with options for naming, location type, and version selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884943/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-GCP-GKE/frame_110.jpg)
-</Frame>
+![The image shows a Google Cloud Platform interface for setting up a Kubernetes cluster, with options for naming, location type, and version selection.](https://kodekloud.com/kk-media/image/upload/v1752884943/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-GCP-GKE/frame_110.jpg)
 
 Once your configuration is complete, click **Create** to begin provision the cluster. Note that this process typically takes between 5 to 10 minutes. You can monitor the progress by clicking the Refresh button:
 
-<Frame>
-  ![The image shows the Google Cloud Platform interface for creating a Kubernetes cluster, with options for cluster basics, location, and master version settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884944/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-GCP-GKE/frame_130.jpg)
-</Frame>
+![The image shows the Google Cloud Platform interface for creating a Kubernetes cluster, with options for cluster basics, location, and master version settings.](https://kodekloud.com/kk-media/image/upload/v1752884944/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-GCP-GKE/frame_130.jpg)
 
 When the cluster setup is complete, you'll see a green check mark next to the cluster name.
 
@@ -198,9 +178,7 @@ When the cluster setup is complete, you'll see a green check mark next to the cl
 
 The simplest method to connect to your cluster is by clicking the **Connect** button:
 
-<Frame>
-  ![The image shows a Kubernetes clusters dashboard with one running cluster, displaying details like location, size, cores, and memory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884945/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-GCP-GKE/frame_150.jpg)
-</Frame>
+![The image shows a Kubernetes clusters dashboard with one running cluster, displaying details like location, size, cores, and memory.](https://kodekloud.com/kk-media/image/upload/v1752884945/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-GCP-GKE/frame_150.jpg)
 
 Click **Connect** to display the command needed to configure `kubectl` using Cloud Shell. Once the Cloud Shell opens (you can maximize the window for convenience), run the provided command:
 
@@ -332,9 +310,7 @@ service/result-service     LoadBalancer  10.71.3.179    <pending>     80:30764/T
 service/voting-service     LoadBalancer  10.71.0.147    <pending>     80:31036/TCP    48s
 ```
 
-<Callout icon="lightbulb">
-  Note that the external IP for load balancers might initially show as `<pending>`. Wait a few minutes and rerun the command to confirm that the IPs have been assigned.
-</Callout>
+> **lightbulb** Note that the external IP for load balancers might initially show as `<pending>`. Wait a few minutes and rerun the command to confirm that the IPs have been assigned.
 
 ***
 
@@ -342,9 +318,7 @@ service/voting-service     LoadBalancer  10.71.0.147    <pending>     80:31036/T
 
 Once all deployments are ready and pods are running, verify the load balancer settings in the GCP console. Navigate to **Services & Ingress** under the Kubernetes Engine section. Here, you'll see internal services (such as PostgreSQL and Redis) and front-end services that utilize the cloud provider’s native load balancer.
 
-<Frame>
-  ![The image shows the Google Cloud Platform Kubernetes Engine interface, displaying services and ingress details for an "example-voting-app" with various endpoints and statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884946/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-GCP-GKE/frame_420.jpg)
-</Frame>
+![The image shows the Google Cloud Platform Kubernetes Engine interface, displaying services and ingress details for an "example-voting-app" with various endpoints and statuses.](https://kodekloud.com/kk-media/image/upload/v1752884946/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-GCP-GKE/frame_420.jpg)
 
 Click on each service to view detailed information including ClusterIP, load balancer IP, and URL endpoints. Ensure that all statuses are marked as OK.
 
@@ -354,20 +328,14 @@ Click on each service to view detailed information including ClusterIP, load bal
 
 After the load balancers are assigned external IPs, open a new browser tab and navigate to the external IP associated with the voting service to load the voting application interface. Open another tab to view the results application.
 
-<Frame>
-  ![The image shows a webpage titled "Cats vs Dogs!" with buttons to vote for either "CATS" or "DOGS," processed by a container ID.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884947/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-GCP-GKE/frame_480.jpg)
-</Frame>
+![The image shows a webpage titled "Cats vs Dogs!" with buttons to vote for either "CATS" or "DOGS," processed by a container ID.](https://kodekloud.com/kk-media/image/upload/v1752884947/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-GCP-GKE/frame_480.jpg)
 
 Cast a vote and observe that the results update dynamically to reflect the percentage of votes. Further voting should continuously update the displayed results.
 
-<Frame>
-  ![The image shows a voting result with "CATS" at 100% and "DOGS" at 0% on a blue background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884948/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-GCP-GKE/frame_500.jpg)
-</Frame>
+![The image shows a voting result with "CATS" at 100% and "DOGS" at 0% on a blue background.](https://kodekloud.com/kk-media/image/upload/v1752884948/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-on-GCP-GKE/frame_500.jpg)
 
 ***
 
 This guide has demonstrated the process of deploying a Kubernetes cluster on GKE and launching a multi-component voting application. Happy deploying, and stay tuned for more advanced Kubernetes tutorials!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/2f291cbc-acc2-4250-b96c-2094daff556d/lesson/94a543ce-89a9-48e9-aedb-77a8b6b43f30" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/2f291cbc-acc2-4250-b96c-2094daff556d/lesson/94a543ce-89a9-48e9-aedb-77a8b6b43f30)

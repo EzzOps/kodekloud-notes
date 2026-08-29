@@ -22,9 +22,7 @@ PIM requires one of the following licenses:
 
 Ensure your organization subscribes to one of these plans. In your demo environment, you can sign up for a trial of either a P2 or an E5 license to test PIM.
 
-<Callout icon="lightbulb">
-  To verify your license, navigate to the Azure billing or subscription section and confirm that you are using one of the supported plans.
-</Callout>
+> **lightbulb** To verify your license, navigate to the Azure billing or subscription section and confirm that you are using one of the supported plans.
 
 ### 2. Administrative Access
 
@@ -36,9 +34,7 @@ Managing PIM requires specific administrative access levels:
 * **Role of Global Administrator:**\
   The Global Administrator is tasked with assigning additional privileged role administrators and consolidating administrative control over PIM.
 
-<Frame>
-  ![The image is an onboarding guide for Azure AD PIM, focusing on "Administrative Access" with three steps detailing access management and role assignments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881680/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Privileged-Identity-Management/azure-ad-pim-onboarding-guide.jpg)
-</Frame>
+![The image is an onboarding guide for Azure AD PIM, focusing on "Administrative Access" with three steps detailing access management and role assignments.](https://kodekloud.com/kk-media/image/upload/v1752881680/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Privileged-Identity-Management/azure-ad-pim-onboarding-guide.jpg)
 
 ### 3. PIM Activation and Effects
 
@@ -54,9 +50,7 @@ Once activated, you can configure role assignments as follows:
 
 Additionally, the activation process may produce notifications like the PIM Weekly Digest that summarizes weekly privileged access activities.
 
-<Frame>
-  ![The image is an infographic about Azure AD PIM onboarding, detailing license requirements, administrative access, and PIM activation effects. It includes three points explaining the automatic enabling of PIM, assignment options, and workflow impact.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881681/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Privileged-Identity-Management/azure-ad-pim-onboarding-infographic.jpg)
-</Frame>
+![The image is an infographic about Azure AD PIM onboarding, detailing license requirements, administrative access, and PIM activation effects. It includes three points explaining the automatic enabling of PIM, assignment options, and workflow impact.](https://kodekloud.com/kk-media/image/upload/v1752881681/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Privileged-Identity-Management/azure-ad-pim-onboarding-infographic.jpg)
 
 ***
 
@@ -71,13 +65,9 @@ After onboarding PIM, you can manage it via the Azure Portal:
    * Reviewing user access histories
    * Tracking the status of your own access requests
 
-<Frame>
-  ![The image shows a Microsoft Azure Privileged Identity Management dashboard, highlighting options for managing access, activating just-in-time access, and discovering and monitoring roles. It includes a sidebar with tasks and management options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881682/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Privileged-Identity-Management/azure-privileged-identity-management-dashboard.jpg)
-</Frame>
+![The image shows a Microsoft Azure Privileged Identity Management dashboard, highlighting options for managing access, activating just-in-time access, and discovering and monitoring roles. It includes a sidebar with tasks and management options.](https://kodekloud.com/kk-media/image/upload/v1752881682/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Privileged-Identity-Management/azure-privileged-identity-management-dashboard.jpg)
 
-<Callout icon="lightbulb">
-  Familiarize yourself with the dashboard's layout to quickly navigate between role assignments, access reviews, and other management tasks.
-</Callout>
+> **lightbulb** Familiarize yourself with the dashboard's layout to quickly navigate between role assignments, access reviews, and other management tasks.
 
 ***
 
@@ -108,9 +98,7 @@ To add a new assignment, select **Add Assignment**. For instance, you can assign
 
 When adding assignments, you must provide a justification for the role allocation.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for adding assignments in Privileged Identity Management. It includes options for assignment type, duration, and justification.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881683/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Privileged-Identity-Management/azure-portal-privileged-identity-management-assignments.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for adding assignments in Privileged Identity Management. It includes options for assignment type, duration, and justification.](https://kodekloud.com/kk-media/image/upload/v1752881683/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Privileged-Identity-Management/azure-portal-privileged-identity-management-assignments.jpg)
 
 ***
 
@@ -122,6 +110,4 @@ As you progress, you can explore more advanced features and configurations to ta
 
 Happy configuring!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/4c177d01-df52-459d-8089-073ff3170c4f/lesson/3ce3c7b6-f8ec-46e5-a5bb-6bb7795610fe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/4c177d01-df52-459d-8089-073ff3170c4f/lesson/3ce3c7b6-f8ec-46e5-a5bb-6bb7795610fe)

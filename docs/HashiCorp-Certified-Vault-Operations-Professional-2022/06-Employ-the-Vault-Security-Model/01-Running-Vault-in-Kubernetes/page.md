@@ -25,15 +25,11 @@ vault write auth/approle/role/hcvop \
 1. Choose the **Token** auth method.
 2. Paste your token and click **Sign In**.
 
-<Frame>
-  ![The image shows a login interface for "Vault" where users can authenticate using a token. It includes instructions to log in directly with a token and features a certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878544/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Tokens-Auth-Method/vault-login-interface-token-authentication.jpg)
-</Frame>
+![The image shows a login interface for "Vault" where users can authenticate using a token. It includes instructions to log in directly with a token and features a certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878544/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Tokens-Auth-Method/vault-login-interface-token-authentication.jpg)
 
 After signing in, select **Copy Token** from the user menu:
 
-<Frame>
-  ![The image shows a screenshot of a Vault interface with a dropdown menu highlighting the "Copy token" option. It includes instructions to "Copy the Token You are Using" and features a Vault certification badge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878545/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Tokens-Auth-Method/vault-interface-copy-token-screenshot.jpg)
-</Frame>
+![The image shows a screenshot of a Vault interface with a dropdown menu highlighting the "Copy token" option. It includes instructions to "Copy the Token You are Using" and features a Vault certification badge.](https://kodekloud.com/kk-media/image/upload/v1752878545/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Tokens-Auth-Method/vault-interface-copy-token-screenshot.jpg)
 
 ### API
 
@@ -65,9 +61,7 @@ Or pass the token directly (it will appear in your shell history):
 vault login hvs.cDIPyitdJKSm46ydTXJOsaQR
 ```
 
-<Callout icon="triangle-alert">
-  Avoid embedding long-lived tokens in scripts or logs. Use short-lived, renewable tokens and dynamic secrets where possible.
-</Callout>
+> **triangle-alert** Avoid embedding long-lived tokens in scripts or logs. Use short-lived, renewable tokens and dynamic secrets where possible.
 
 ***
 
@@ -83,11 +77,9 @@ vault token revoke hvs.cDIPyitdJKSm46ydTXJOsaQR
 
 Tokens are Vault’s fundamental authentication mechanism. You now know how to choose the right token type, create periodic/use-limited/orphan tokens, configure auth backends for specific token issuance, and authenticate or revoke tokens. For further reading, explore the [Vault Authentication Methods](https://www.vaultproject.io/docs/auth) guide.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/6904571f-302d-4646-9e9c-e115b5231dc6" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/6904571f-302d-4646-9e9c-e115b5231dc6)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/e034a521-c13c-44cc-8080-34a85853547e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/e034a521-c13c-44cc-8080-34a85853547e)
 
 
 # Running Vault in Kubernetes
@@ -117,19 +109,13 @@ This chart supports high availability, integrated storage backends, TLS, and mor
 
 Ensure that all traffic between clients, load balancers, and Vault pods is encrypted with TLS 1.2 or higher. Do **not** terminate TLS at the load balancer; instead, use TLS passthrough so that Vault pods handle the certificate handshake.
 
-<Callout icon="lightbulb">
-  Configure your cloud load balancer for TCP passthrough to maintain end-to-end encryption. This prevents cleartext traffic from ever reaching your Vault pods.
-</Callout>
+> **lightbulb** Configure your cloud load balancer for TCP passthrough to maintain end-to-end encryption. This prevents cleartext traffic from ever reaching your Vault pods.
 
-<Frame>
-  ![The image is a diagram illustrating TLS end-to-end encryption for a load balancer service with vault servers and persistent volume claims. It includes notes on not offloading TLS at the load balancer, ensuring encryption, using trusted CA-signed certificates, and requiring TLS 1.2 or higher.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878550/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Running-Vault-in-Kubernetes/tls-end-to-end-encryption-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating TLS end-to-end encryption for a load balancer service with vault servers and persistent volume claims. It includes notes on not offloading TLS at the load balancer, ensuring encryption, using trusted CA-signed certificates, and requiring TLS 1.2 or higher.](https://kodekloud.com/kk-media/image/upload/v1752878550/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Running-Vault-in-Kubernetes/tls-end-to-end-encryption-diagram.jpg)
 
 Use certificates signed by a trusted CA, enforce TLS 1.2+, and mount each Vault pod’s certificate and private key via a Kubernetes `Secret` and a `PersistentVolumeClaim`.
 
-<Frame>
-  ![The image illustrates a TLS end-to-end encryption setup with a load balancer service and multiple vault servers, emphasizing not offloading TLS at the load balancer and using trusted CA-signed certificates. It also highlights the requirement for TLS 1.2+ and includes persistent volume claims for each node.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878551/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Running-Vault-in-Kubernetes/tls-end-to-end-encryption-setup.jpg)
-</Frame>
+![The image illustrates a TLS end-to-end encryption setup with a load balancer service and multiple vault servers, emphasizing not offloading TLS at the load balancer and using trusted CA-signed certificates. It also highlights the requirement for TLS 1.2+ and includes persistent volume claims for each node.](https://kodekloud.com/kk-media/image/upload/v1752878551/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Running-Vault-in-Kubernetes/tls-end-to-end-encryption-setup.jpg)
 
 ## Disable Core Dumps
 

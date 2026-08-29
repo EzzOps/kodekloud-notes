@@ -13,15 +13,11 @@ To securely deploy your Lambda function, first configure AWS credentials within 
 1. Navigate to **Manage Jenkins > Credentials > Global Credentials**.
 2. Add a new credential of type **Secret Text** with the ID `aws-access-key`. Paste your AWS access key that you normally use locally.
 
-<Callout icon="lightbulb">
-  For enhanced security, create a dedicated AWS user with only the necessary permissions for Lambda and related services.
-</Callout>
+> **lightbulb** For enhanced security, create a dedicated AWS user with only the necessary permissions for Lambda and related services.
 
 3. Add a second credential of type **Secret Text** with the ID `aws-secret-key` and paste your AWS secret access key.
 
-<Frame>
-  ![The image shows a Jenkins interface displaying a list of global credentials, including a production server IP, SSH key, and AWS access key, with options to add or edit credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879945/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Pipeline-For-Lambda/jenkins-global-credentials-interface.jpg)
-</Frame>
+![The image shows a Jenkins interface displaying a list of global credentials, including a production server IP, SSH key, and AWS access key, with options to add or edit credentials.](https://kodekloud.com/kk-media/image/upload/v1752879945/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Pipeline-For-Lambda/jenkins-global-credentials-interface.jpg)
 
 ## Creating and Configuring the Pipeline
 
@@ -33,9 +29,7 @@ After setting up the credentials, create a new pipeline from the Jenkins dashboa
 * Select Git as the SCM, paste your repository URL, and specify the branch (typically "main").
 * Set the script path to `Jenkinsfile`.
 
-<Frame>
-  ![The image shows a configuration screen for setting up a Git repository in a pipeline, with fields for repository URL, credentials, and branch specification. The URL points to a GitHub repository, and the branch specified is "master".](../../../../images/kodekloud.com/kk-media/image/upload/v1752879946/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Pipeline-For-Lambda/git-repo-setup-pipeline-screen.jpg)
-</Frame>
+![The image shows a configuration screen for setting up a Git repository in a pipeline, with fields for repository URL, credentials, and branch specification. The URL points to a GitHub repository, and the branch specified is "master".](https://kodekloud.com/kk-media/image/upload/v1752879946/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Pipeline-For-Lambda/git-repo-setup-pipeline-screen.jpg)
 
 Save your configuration to complete the pipeline setup.
 
@@ -147,9 +141,7 @@ Requirement already satisfied: requests in /var/lib/jenkins/.local/lib/python3.9
 
 After deployment, the SAM CLI output will provide details including the IAM role, API Gateway endpoint, and the Lambda function ARN.
 
-<Frame>
-  ![The image shows a screenshot of an AWS CloudFormation console output, detailing the deployment of a stack named "lambda-app" with information about IAM roles, API Gateway endpoint, and Lambda function ARN.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879948/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Pipeline-For-Lambda/aws-cloudformation-lambda-app-output.jpg)
-</Frame>
+![The image shows a screenshot of an AWS CloudFormation console output, detailing the deployment of a stack named "lambda-app" with information about IAM roles, API Gateway endpoint, and Lambda function ARN.](https://kodekloud.com/kk-media/image/upload/v1752879948/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Pipeline-For-Lambda/aws-cloudformation-lambda-app-output.jpg)
 
 Click the API Gateway link provided in the output to test your deployed Lambda function. You should see a message similar to "Hello World version one" on your initial run.
 
@@ -190,6 +182,4 @@ This confirms that your CI/CD pipeline is properly set up to test, build, and de
 
 For more detailed guidance, refer to the official [AWS SAM Documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html) and [Jenkins Documentation](https://www.jenkins.io/doc/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/ddd997d7-0eea-4fa7-8265-5feeb01301e8/lesson/288cedd6-040c-4c52-89bc-45394b678f15" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/ddd997d7-0eea-4fa7-8265-5feeb01301e8/lesson/288cedd6-040c-4c52-89bc-45394b678f15)

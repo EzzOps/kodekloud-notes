@@ -8,9 +8,7 @@ Integrate Vault storage using the built-in Raft consensus protocol for a high-av
 
 ## Why Choose Integrated Storage (Raft)
 
-<Frame>
-  ![Deploying the Integrated Storage Backend](../../../../images/kodekloud.com/kk-media/image/upload/v1752878150/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Configuring-the-Integrated-Storage-Backend/deploying-integrated-storage-backend-vault.jpg)
-</Frame>
+![Deploying the Integrated Storage Backend](https://kodekloud.com/kk-media/image/upload/v1752878150/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Configuring-the-Integrated-Storage-Backend/deploying-integrated-storage-backend-vault.jpg)
 
 * **Raft Protocol**: Leader election and data replication ported from Consul directly into Vault.
 * **High Availability**: A 3–5 node cluster tolerates up to two node failures, since each node holds a full data copy.
@@ -22,9 +20,7 @@ Integrate Vault storage using the built-in Raft consensus protocol for a high-av
 
 This diagram shows five Vault nodes (A–E) forming a Raft cluster communicating over TCP port 8201:
 
-<Frame>
-  ![Network Diagram: Vault Integrated Storage Cluster](../../../../images/kodekloud.com/kk-media/image/upload/v1752878151/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Configuring-the-Integrated-Storage-Backend/network-diagram-vault-nodes-storage.jpg)
-</Frame>
+![Network Diagram: Vault Integrated Storage Cluster](https://kodekloud.com/kk-media/image/upload/v1752878151/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Configuring-the-Integrated-Storage-Backend/network-diagram-vault-nodes-storage.jpg)
 
 | Component  | Description                            |
 | ---------- | -------------------------------------- |

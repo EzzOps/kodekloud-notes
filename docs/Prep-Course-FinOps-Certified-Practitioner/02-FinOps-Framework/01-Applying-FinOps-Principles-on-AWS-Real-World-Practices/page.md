@@ -27,9 +27,7 @@ Example tags:
 * `Owner=team-name`
 * `CostCenter=12345`
 
-<Callout icon="lightbulb">
-  Create a small, stable set of billing-focused tags (for example: `Environment`, `Team`, `CostCenter`) and enforce them with automation or policy to ensure long-term consistency.
-</Callout>
+> **lightbulb** Create a small, stable set of billing-focused tags (for example: `Environment`, `Team`, `CostCenter`) and enforce them with automation or policy to ensure long-term consistency.
 
 ### Tagging: quick reference
 
@@ -40,9 +38,7 @@ Example tags:
 | `CostCenter`  | Finance allocation            | `12345`                  |
 | `Project`     | Product or initiative         | `checkout-refactor`      |
 
-<Callout icon="warning">
-  Missing or inconsistent tags make cost allocation inaccurate. Enforce required tags through Service Control Policies (SCPs), AWS Config rules, or automation in CI/CD pipelines.
-</Callout>
+> **warning** Missing or inconsistent tags make cost allocation inaccurate. Enforce required tags through Service Control Policies (SCPs), AWS Config rules, or automation in CI/CD pipelines.
 
 <Frame>
   <img alt="The image illustrates FinOps principles on AWS with conceptual graphics of financial planning and team collaboration. It emphasizes using cloud pay-as-you-go benefits and the need for team collaboration." />
@@ -138,6 +134,4 @@ Resources and further reading
 
 That’s it for this lesson — see you in the next one.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/77e6b2c4-f9cd-410f-a396-178e2aa962bb/lesson/dede3a70-9c20-4435-85ce-89e77e084166" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/77e6b2c4-f9cd-410f-a396-178e2aa962bb/lesson/dede3a70-9c20-4435-85ce-89e77e084166)

@@ -22,18 +22,14 @@ Code scanning is a built-in GitHub feature that uses the CodeQL semantic analysi
 1. Navigate to **Settings → Security → Code security and analysis**.
 2. Scroll to **CodeQL analysis** and toggle it on.
 
-<Frame>
-  ![The image shows a GitHub settings page for code security and analysis, featuring options for Dependabot updates, CodeQL analysis, protection rules, and secret scanning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876412/notes-assets/images/GitHub-Actions-Certification-Use-CodeQL-as-a-step-in-a-workflow/github-settings-code-security-analysis.jpg)
-</Frame>
+![The image shows a GitHub settings page for code security and analysis, featuring options for Dependabot updates, CodeQL analysis, protection rules, and secret scanning.](https://kodekloud.com/kk-media/image/upload/v1752876412/notes-assets/images/GitHub-Actions-Certification-Use-CodeQL-as-a-step-in-a-workflow/github-settings-code-security-analysis.jpg)
 
 ## 2. Configure a CodeQL Workflow
 
 1. Open the **Actions** tab.
 2. Search for **CodeQL Analysis** and select the starter workflow.
 
-<Frame>
-  ![The image shows a GitHub Actions setup page for a repository, highlighting the "CodeQL Analysis" workflow for security analysis.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876413/notes-assets/images/GitHub-Actions-Certification-Use-CodeQL-as-a-step-in-a-workflow/github-actions-codeql-analysis-setup.jpg)
-</Frame>
+![The image shows a GitHub Actions setup page for a repository, highlighting the "CodeQL Analysis" workflow for security analysis.](https://kodekloud.com/kk-media/image/upload/v1752876413/notes-assets/images/GitHub-Actions-Certification-Use-CodeQL-as-a-step-in-a-workflow/github-actions-codeql-analysis-setup.jpg)
 
 This creates `.github/workflows/codeql.yml`. Below is a **minimal** example you can customize:
 
@@ -90,23 +86,17 @@ jobs:
           category: '/language:${{ matrix.language }}'
 ```
 
-<Callout icon="lightbulb">
-  Adjust the `build-mode` and add any custom `run` commands needed to compile your project before analysis.
-</Callout>
+> **lightbulb** Adjust the `build-mode` and add any custom `run` commands needed to compile your project before analysis.
 
 Commit this file to trigger your first CodeQL run. Monitor progress in **Actions**.
 
-<Frame>
-  ![The image shows a GitHub Actions interface running a CodeQL analysis job for a JavaScript/TypeScript project. The job has succeeded, and the logs detail the steps taken during the analysis.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876414/notes-assets/images/GitHub-Actions-Certification-Use-CodeQL-as-a-step-in-a-workflow/github-actions-codeql-analysis-success.jpg)
-</Frame>
+![The image shows a GitHub Actions interface running a CodeQL analysis job for a JavaScript/TypeScript project. The job has succeeded, and the logs detail the steps taken during the analysis.](https://kodekloud.com/kk-media/image/upload/v1752876414/notes-assets/images/GitHub-Actions-Certification-Use-CodeQL-as-a-step-in-a-workflow/github-actions-codeql-analysis-success.jpg)
 
 ## Reviewing CodeQL Results
 
 When the workflow completes, findings are uploaded to GitHub. Go to **Security → Code scanning** to see alerts:
 
-<Frame>
-  ![The image shows a GitHub code scanning interface with three open security alerts, including issues like "Database query built from user-controlled sources" and "Missing rate limiting," all marked with high severity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752876415/notes-assets/images/GitHub-Actions-Certification-Use-CodeQL-as-a-step-in-a-workflow/github-code-scanning-security-alerts.jpg)
-</Frame>
+![The image shows a GitHub code scanning interface with three open security alerts, including issues like "Database query built from user-controlled sources" and "Missing rate limiting," all marked with high severity.](https://kodekloud.com/kk-media/image/upload/v1752876415/notes-assets/images/GitHub-Actions-Certification-Use-CodeQL-as-a-step-in-a-workflow/github-code-scanning-security-alerts.jpg)
 
 Click an alert to view:
 
@@ -162,8 +152,6 @@ app.get('/users/:id', (req, res) => {
 
 By embedding CodeQL into your CI workflow, you automate continuous security analysis with minimal setup—helping you catch and fix vulnerabilities before they hit production.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/github-actions-certification/module/a3e810f5-af92-4e1c-ac54-bdf50ddbe9cf/lesson/4b9846be-ddf6-4ddb-b8b2-88e6b7ae59e8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/github-actions-certification/module/a3e810f5-af92-4e1c-ac54-bdf50ddbe9cf/lesson/4b9846be-ddf6-4ddb-b8b2-88e6b7ae59e8)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/github-actions-certification/module/a3e810f5-af92-4e1c-ac54-bdf50ddbe9cf/lesson/5b5e2c07-2e6a-4e9a-bf2f-38725f011faa" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/github-actions-certification/module/a3e810f5-af92-4e1c-ac54-bdf50ddbe9cf/lesson/5b5e2c07-2e6a-4e9a-bf2f-38725f011faa)

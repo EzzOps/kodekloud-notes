@@ -37,9 +37,7 @@ Tradeoffs:
 * Introduces redundancy (more tokens to embed/store).
 * Larger total storage and slightly higher retrieval cost.
 
-<Callout icon="lightbulb">
-  Tip: If queries require longer context, increase `chunk_size`. For precise answers on short queries, reduce `chunk_size` but keep a modest `chunk_overlap` (e.g., 25–50 characters).
-</Callout>
+> **lightbulb** Tip: If queries require longer context, increase `chunk_size`. For precise answers on short queries, reduce `chunk_size` but keep a modest `chunk_overlap` (e.g., 25–50 characters).
 
 ## 4. Inspect the resulting chunks and metadata
 
@@ -101,9 +99,7 @@ Useful references:
 
 A solid understanding of chunking helps ensure your RAG pipeline retrieves coherent, contextually complete passages and produces higher-quality responses from LLMs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/fc020e0a-7253-4445-8fff-d30d8d639315" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/fc020e0a-7253-4445-8fff-d30d8d639315)
 
 
 # Generating Embeddings
@@ -180,9 +176,7 @@ len(embed_docs[0])
 3072
 ```
 
-<Callout icon="lightbulb">
-  Embeddings are not meant to be human-readable. They are high-dimensional numeric representations used by algorithms to compute semantic similarity (for example, via cosine similarity) during semantic search or retrieval.
-</Callout>
+> **lightbulb** Embeddings are not meant to be human-readable. They are high-dimensional numeric representations used by algorithms to compute semantic similarity (for example, via cosine similarity) during semantic search or retrieval.
 
 ## Quick reference — embedding workflow
 
@@ -211,6 +205,4 @@ For vector storage and retrieval, consider vector databases or specialized libra
 
 In the next part of this lesson we'll introduce a vector database and demonstrate a simple similarity search. After covering retrieval and storage, we'll continue building the Q\&A chatbot for the PDF.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/187f5776-2d66-4326-bee6-86ba7569e581" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/187f5776-2d66-4326-bee6-86ba7569e581)

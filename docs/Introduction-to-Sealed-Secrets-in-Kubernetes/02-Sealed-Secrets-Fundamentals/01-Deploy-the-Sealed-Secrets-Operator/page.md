@@ -6,11 +6,9 @@ This guide explains how to install the Sealed Secrets Operator using Helm and se
 
 Safely encrypt your Kubernetes Secrets using the [Sealed Secrets Operator](https://github.com/bitnami-labs/sealed-secrets). This guide walks you through installing the operator via Helm, fetching its public key, and sealing a Secret.
 
-<Callout icon="lightbulb">
-  * Helm 3.x installed
+> **lightbulb** * Helm 3.x installed
   * `kubectl` configured with access to your target cluster
   * Cluster-admin privileges (or equivalent)
-</Callout>
 
 ## 1. Add the Sealed-Secrets Helm Repository
 
@@ -53,9 +51,7 @@ kubeseal \
   > mycert.pem
 ```
 
-<Callout icon="lightbulb">
-  If you installed into the default namespace, omit `--controller-namespace` or set it to `default`.
-</Callout>
+> **lightbulb** If you installed into the default namespace, omit `--controller-namespace` or set it to `default`.
 
 ## 5. Create and Seal a Secret
 
@@ -104,6 +100,4 @@ Once verified, your Sealed Secrets Operator is ready to encrypt and manage Kuber
 * [Helm Documentation](https://helm.sh/docs/)
 * [kubectl Reference](https://kubernetes.io/docs/reference/kubectl/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/0f3ed562-f151-48f9-bb8c-8d3a4dbb4fc3/lesson/287c3990-00f9-4090-96ed-0d4797afc898" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/0f3ed562-f151-48f9-bb8c-8d3a4dbb4fc3/lesson/287c3990-00f9-4090-96ed-0d4797afc898)

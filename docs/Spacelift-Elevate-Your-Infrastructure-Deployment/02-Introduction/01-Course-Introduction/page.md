@@ -14,12 +14,8 @@ In this course, we'll:
 * Integrate Spacelift into your IaC workflows
 * Demonstrate best practices for secure, reliable deployments
 
-<Callout icon="lightbulb">
-  Spacelift was created to overcome the unique challenges of IaC environments, providing enhanced traceability, security checks, and collaboration features.
-</Callout>
+> **lightbulb** Spacelift was created to overcome the unique challenges of IaC environments, providing enhanced traceability, security checks, and collaboration features.
 
 Join me as we dive into how Spacelift can elevate your infrastructure deployment process.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/f7d98a18-65bd-44e3-909a-4fd72c70043a/lesson/577ea5da-e7c1-49b8-90e5-828ac151c62a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/f7d98a18-65bd-44e3-909a-4fd72c70043a/lesson/577ea5da-e7c1-49b8-90e5-828ac151c62a)

@@ -269,13 +269,9 @@ service:
 
 ## Callouts
 
-<Callout icon="lightbulb">
-  Ensure the `debug` exporter is declared under `exporters` and also listed in the pipeline `exporters` for the signal you want to inspect. Also keep `telemetry.logs.level` at or above `INFO` so debug exporter output is visible in logs.
-</Callout>
+> **lightbulb** Ensure the `debug` exporter is declared under `exporters` and also listed in the pipeline `exporters` for the signal you want to inspect. Also keep `telemetry.logs.level` at or above `INFO` so debug exporter output is visible in logs.
 
-<Callout icon="warning">
-  Do not use `tls.insecure: true` in production. Configure proper TLS for OTLP exporters and for any remote collectors to protect telemetry data.
-</Callout>
+> **warning** Do not use `tls.insecure: true` in production. Configure proper TLS for OTLP exporters and for any remote collectors to protect telemetry data.
 
 ## Summary
 
@@ -294,6 +290,4 @@ service:
 
 If you need an example to attach the `transform/fix_names` processor into a pipeline or want a sample `service` block with more pipelines (traces, logs, metrics) let me know and I’ll add a fully annotated example.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/4be96d1d-c9d9-4f65-aeff-2f110549c0f6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/4be96d1d-c9d9-4f65-aeff-2f110549c0f6)

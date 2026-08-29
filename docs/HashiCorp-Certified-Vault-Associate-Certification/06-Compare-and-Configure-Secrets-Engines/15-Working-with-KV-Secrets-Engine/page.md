@@ -59,9 +59,7 @@ key_version  1
 * `ciphertext`: Encrypted data with key version prefix (`vault:v1:`)
 * `key_version`: Version of the key used
 
-<Callout icon="lightbulb">
-  You can use `base64 -d` to decode any Base64 output from Vault.
-</Callout>
+> **lightbulb** You can use `base64 -d` to decode any Base64 output from Vault.
 
 ***
 
@@ -133,9 +131,7 @@ Reading the key:
 vault read transit/keys/vault_training
 ```
 
-<Frame>
-  ![The image is a slide titled "Working with Encryption Keys" discussing key configuration, specifically about limiting the version of keys used for decrypting data. It mentions configuring the minimum key version for each encryption key.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878125/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Using-the-Transit-Secrets-Engine/working-with-encryption-keys-configuration.jpg)
-</Frame>
+![The image is a slide titled "Working with Encryption Keys" discussing key configuration, specifically about limiting the version of keys used for decrypting data. It mentions configuring the minimum key version for each encryption key.](https://kodekloud.com/kk-media/image/upload/v1752878125/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Using-the-Transit-Secrets-Engine/working-with-encryption-keys-configuration.jpg)
 
 ```text theme={null}
 Key                        Value
@@ -148,9 +144,7 @@ latest_version             4
 
 Any ciphertext with versions below `4` will be rejected.
 
-<Callout icon="triangle-alert">
-  After raising `min_decryption_version`, older ciphertext **cannot** be decrypted. Plan rotations accordingly.
-</Callout>
+> **triangle-alert** After raising `min_decryption_version`, older ciphertext **cannot** be decrypted. Plan rotations accordingly.
 
 ***
 
@@ -174,9 +168,7 @@ key_version  4
 
 Vault decrypts with version `1` internally and re-encrypts with version `4`.
 
-<Callout icon="lightbulb">
-  Rewrap is ideal when you need to enforce new key policies on legacy data.
-</Callout>
+> **lightbulb** Rewrap is ideal when you need to enforce new key policies on legacy data.
 
 ***
 
@@ -186,9 +178,7 @@ Vault decrypts with version `1` internally and re-encrypts with version `4`.
 * [Vault CLI Documentation](https://www.vaultproject.io/docs/commands)
 * [Base64 Manual](https://linux.die.net/man/1/base64)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/fea3f659-ec9e-4df9-a616-7974b619aa02" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/fea3f659-ec9e-4df9-a616-7974b619aa02)
 
 
 # Working with KV Secrets Engine
@@ -219,9 +209,7 @@ Use `vault kv <subcommand>` to perform KV operations. The table below summarizes
 | patch      | Merge fields into an existing version     |
 | rollback   | Revert to a previous version (KV V2)      |
 
-<Frame>
-  ![The image is a guide on using the vault kv command in the CLI, detailing various operations like put, get, delete, and list, with additional commands available for KV V2.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878126/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Working-with-KV-Secrets-Engine/vault-kv-command-guide-cli-operations.jpg)
-</Frame>
+![The image is a guide on using the vault kv command in the CLI, detailing various operations like put, get, delete, and list, with additional commands available for KV V2.](https://kodekloud.com/kk-media/image/upload/v1752878126/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Working-with-KV-Secrets-Engine/vault-kv-command-guide-cli-operations.jpg)
 
 ***
 
@@ -268,8 +256,7 @@ $ vault kv put kv/app/db pass=123 user=admin api=a8ee4b50cce124
 Success! Data written to: kv/app/db
 ```
 
-<Callout icon="lightbulb">
-  You can also read key/value pairs from a JSON file:
+> **lightbulb** You can also read key/value pairs from a JSON file:
 
   ```bash theme={null}
   $ vault kv put kv/app/db @secrets.json
@@ -280,7 +267,6 @@ Success! Data written to: kv/app/db
   ```json theme={null}
   {"pass":"123","user":"admin","api":"a8ee4b50cce124"}
   ```
-</Callout>
 
 ***
 
@@ -385,9 +371,7 @@ version        4
 
 ## Deleting Secrets
 
-<Frame>
-  ![The image explains the process of deleting secrets from a KV store, detailing the differences between delete actions in KV V1 and KV V2, and the concept of a destroy action in KV V2. It highlights the permanence and recoverability of data in each scenario.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878127/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Working-with-KV-Secrets-Engine/delete-secrets-kv-store-process.jpg)
-</Frame>
+![The image explains the process of deleting secrets from a KV store, detailing the differences between delete actions in KV V1 and KV V2, and the concept of a destroy action in KV V2. It highlights the permanence and recoverability of data in each scenario.](https://kodekloud.com/kk-media/image/upload/v1752878127/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Working-with-KV-Secrets-Engine/delete-secrets-kv-store-process.jpg)
 
 ### Soft Delete with `delete`
 

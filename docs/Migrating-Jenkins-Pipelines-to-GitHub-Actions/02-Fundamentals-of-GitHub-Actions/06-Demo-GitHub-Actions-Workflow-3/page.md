@@ -147,9 +147,7 @@ jobs:
         run: cat hello.txt | grep -i "Hello, world!"
 ```
 
-<Callout icon="lightbulb">
-  Secrets are never shown in workflow logs. GitHub masks secret values (usually displayed as `***`) when commands that include them are printed to logs. Learn more at the GitHub Actions secrets docs: [Encrypted secrets for GitHub Actions](https://docs.github.com/en/actions/security-guides/encrypted-secrets).
-</Callout>
+> **lightbulb** Secrets are never shown in workflow logs. GitHub masks secret values (usually displayed as `***`) when commands that include them are printed to logs. Learn more at the GitHub Actions secrets docs: [Encrypted secrets for GitHub Actions](https://docs.github.com/en/actions/security-guides/encrypted-secrets).
 
 When the workflow runs, the build job creates `hello.txt` and uploads it as an artifact. In the build logs you will see the run command with the secret masked:
 
@@ -192,8 +190,6 @@ Hello, world!
 
 That's how you define and use environment variables and secrets in GitHub Actions workflows.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/7d6172e9-5a43-4701-9feb-e4cfdb65b256/lesson/b0b9e11b-a79e-455f-8050-0e38e24a0b26" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/7d6172e9-5a43-4701-9feb-e4cfdb65b256/lesson/b0b9e11b-a79e-455f-8050-0e38e24a0b26)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/7d6172e9-5a43-4701-9feb-e4cfdb65b256/lesson/4f037959-7939-4c87-8631-2c75182797d1" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/7d6172e9-5a43-4701-9feb-e4cfdb65b256/lesson/4f037959-7939-4c87-8631-2c75182797d1)

@@ -24,9 +24,7 @@ Use `module` blocks in the root configuration to instantiate the module instead 
 
 Callout on best practice
 
-<Callout icon="lightbulb">
-  DRY (Don't Repeat Yourself) is a core engineering principle: if you are replicating the same logic multiple times across environments, modularize it. Modules reduce duplication, increase consistency, and make updates easier to apply at scale.
-</Callout>
+> **lightbulb** DRY (Don't Repeat Yourself) is a core engineering principle: if you are replicating the same logic multiple times across environments, modularize it. Modules reduce duplication, increase consistency, and make updates easier to apply at scale.
 
 <Frame>
   <img alt="The image compares programming with and without modules, highlighting benefits such as reduced repetition, easier maintenance, and reusable code when using modules." />
@@ -98,8 +96,6 @@ With modular design — and with AVM as a curated starting point — you gain co
 
 With that, we have completed modules.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/e38de693-04a0-45e9-b67a-9f8d26ac03ee/lesson/be22365c-3992-4139-a558-869044e54a51" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/e38de693-04a0-45e9-b67a-9f8d26ac03ee/lesson/be22365c-3992-4139-a558-869044e54a51)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/e38de693-04a0-45e9-b67a-9f8d26ac03ee/lesson/52272372-9568-41a4-89d0-67373551f6af" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/e38de693-04a0-45e9-b67a-9f8d26ac03ee/lesson/52272372-9568-41a4-89d0-67373551f6af)

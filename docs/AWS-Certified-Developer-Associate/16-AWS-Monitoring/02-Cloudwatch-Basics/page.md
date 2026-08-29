@@ -12,7 +12,7 @@ When your services and applications—whether hosted on AWS or externally—gene
 
 CloudWatch also offers CloudWatch Metrics Insights, a powerful SQL-like querying tool that allows you to extract detailed insights from your metrics.
 
-![The image is a diagram explaining how AWS CloudWatch works, showing the flow from AWS Cloud, custom applications, and logs to CloudWatch, which then provides metrics, alarms, and insights to SNS and a management console.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858307/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/aws-cloudwatch-diagram-flow.jpg)
+![The image is a diagram explaining how AWS CloudWatch works, showing the flow from AWS Cloud, custom applications, and logs to CloudWatch, which then provides metrics, alarms, and insights to SNS and a management console.](https://kodekloud.com/kk-media/image/upload/v1752858307/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/aws-cloudwatch-diagram-flow.jpg)
 
 Beyond monitoring and logging, CloudWatch integrates seamlessly with other AWS services. For instance, when monitoring an EC2 instance within an Auto Scaling group, CloudWatch analyzes metrics like CPU utilization or network traffic. If a metric exceeds its threshold, CloudWatch can automatically adjust the number of instances in the Auto Scaling group.
 
@@ -26,13 +26,13 @@ CloudWatch is built on several fundamental components:
 * **Events (EventBridge):** Real-time event routing to different targets.
 * **Dashboards:** Customizable views for monitoring your environment.
 
-![The image is a diagram of CloudWatch components, including Metrics, Alarms, Logs, Events, and Dashboards, each with specific subcategories.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858308/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/cloudwatch-components-diagram.jpg)
+![The image is a diagram of CloudWatch components, including Metrics, Alarms, Logs, Events, and Dashboards, each with specific subcategories.](https://kodekloud.com/kk-media/image/upload/v1752858308/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/cloudwatch-components-diagram.jpg)
 
 ## Metrics in CloudWatch
 
 AWS services automatically send metrics to CloudWatch upon deployment. For example, when you launch an EC2 instance or create a Lambda function, default metrics such as CPU utilization, network packets, invocation counts, and errors are published without extra configuration.
 
-![The image is a diagram titled "Metrics," showing six metrics: CPU Utilization, Network Packets In, Disk Read Ops, Invocations, Errors, and Throttles, arranged in a circular layout with icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858310/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/metrics-diagram-circular-layout.jpg)
+![The image is a diagram titled "Metrics," showing six metrics: CPU Utilization, Network Packets In, Disk Read Ops, Invocations, Errors, and Throttles, arranged in a circular layout with icons.](https://kodekloud.com/kk-media/image/upload/v1752858310/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/metrics-diagram-circular-layout.jpg)
 
 ### Namespaces
 
@@ -40,15 +40,15 @@ A namespace in CloudWatch acts as a container for metrics, isolating data so tha
 
 > **lightbulb** Each AWS service automatically groups its metrics in its own namespace, such as AWS/ECS for ECS metrics or another namespace for Elastic Load Balancer metrics.
 
-![The image shows a comparison of error metrics for two applications, App1 and App2, with different error counts listed for each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858311/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/error-metrics-comparison-app1-app2.jpg)
+![The image shows a comparison of error metrics for two applications, App1 and App2, with different error counts listed for each.](https://kodekloud.com/kk-media/image/upload/v1752858311/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/error-metrics-comparison-app1-app2.jpg)
 
-![The image shows a table listing various AWS services alongside their corresponding namespaces. It also includes a note stating that metrics for each AWS service are grouped in their respective namespaces.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858312/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/aws-services-namespaces-table.jpg)
+![The image shows a table listing various AWS services alongside their corresponding namespaces. It also includes a note stating that metrics for each AWS service are grouped in their respective namespaces.](https://kodekloud.com/kk-media/image/upload/v1752858312/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/aws-services-namespaces-table.jpg)
 
 ### Dimensions
 
 Dimensions are key-value pairs that provide additional context for each metric. For instance, a metric for disk read bytes might include dimensions such as the disk identifier or the EC2 instance ID, helping to pinpoint performance characteristics more accurately.
 
-![The image explains "Metrics – Dimensions," showing how labels associated with a metric provide additional information, with examples like DiskReadBytes and MemoryUtilization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858313/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/metrics-dimensions-labels-explanation.jpg)
+![The image explains "Metrics – Dimensions," showing how labels associated with a metric provide additional information, with examples like DiskReadBytes and MemoryUtilization.](https://kodekloud.com/kk-media/image/upload/v1752858313/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/metrics-dimensions-labels-explanation.jpg)
 
 ### Metric Resolution
 
@@ -59,13 +59,13 @@ CloudWatch supports two types of metric resolutions:
 
 High-resolution metrics can be retrieved at intervals of 1, 5, 10, 30 seconds, or any multiple of 60 seconds.
 
-![The image explains custom metrics in CloudWatch, highlighting that high-resolution metrics are stored with a 1-second resolution and can be retrieved at specific intervals.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858314/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/custom-metrics-cloudwatch-high-resolution.jpg)
+![The image explains custom metrics in CloudWatch, highlighting that high-resolution metrics are stored with a 1-second resolution and can be retrieved at specific intervals.](https://kodekloud.com/kk-media/image/upload/v1752858314/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/custom-metrics-cloudwatch-high-resolution.jpg)
 
 ## Logs in CloudWatch
 
 CloudWatch not only collects metrics but also provides a central repository for logs from your applications and systems. You can forward logs from your infrastructure to CloudWatch, enabling centralized analysis and troubleshooting.
 
-![The image illustrates the process of sending and storing system logs to Amazon CloudWatch, with a note that services can be configured to send logs to CloudWatch.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858316/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/system-logs-amazon-cloudwatch.jpg)
+![The image illustrates the process of sending and storing system logs to Amazon CloudWatch, with a note that services can be configured to send logs to CloudWatch.](https://kodekloud.com/kk-media/image/upload/v1752858316/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/system-logs-amazon-cloudwatch.jpg)
 
 ### Log Groups and Log Streams
 
@@ -74,7 +74,7 @@ CloudWatch not only collects metrics but also provides a central repository for 
 
 For example, if an application is running on two servers, each server generates its own log stream, and these streams are organized under a single log group for the application.
 
-![The image is a diagram showing log groups and log streams for two applications, "app1" and "app2," being sent to Amazon CloudWatch.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858317/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/log-groups-streams-app1-app2-cloudwatch.jpg)
+![The image is a diagram showing log groups and log streams for two applications, "app1" and "app2," being sent to Amazon CloudWatch.](https://kodekloud.com/kk-media/image/upload/v1752858317/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/log-groups-streams-app1-app2-cloudwatch.jpg)
 
 ### CloudWatch Log Insights
 
@@ -88,7 +88,7 @@ fields @timestamp, @message, @logStream, @log
 
 > **lightbulb** By default, EC2 instances do not forward logs to CloudWatch. To enable log forwarding, install the CloudWatch agent on your EC2 instances or on-premises servers.
 
-![The image illustrates the process of sending logs from EC2 instances to Amazon CloudWatch. It also notes that the CloudWatch Log Agent can be set up on-premises.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858319/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/ec2-logs-to-cloudwatch-diagram.jpg)
+![The image illustrates the process of sending logs from EC2 instances to Amazon CloudWatch. It also notes that the CloudWatch Log Agent can be set up on-premises.](https://kodekloud.com/kk-media/image/upload/v1752858319/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/ec2-logs-to-cloudwatch-diagram.jpg)
 
 ### CloudWatch Agents
 
@@ -99,7 +99,7 @@ There are two main agents for log collection in CloudWatch:
 | CloudWatch Logs Agent    | Sends logs only             |
 | CloudWatch Unified Agent | Sends both logs and metrics |
 
-![The image compares CloudWatch Logs Agent and CloudWatch Unified Agent, highlighting that the former is an older version that only sends logs, while the latter is a newer version that can send both logs and metrics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858320/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/cloudwatch-logs-agent-comparison.jpg)
+![The image compares CloudWatch Logs Agent and CloudWatch Unified Agent, highlighting that the former is an older version that only sends logs, while the latter is a newer version that can send both logs and metrics.](https://kodekloud.com/kk-media/image/upload/v1752858320/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/cloudwatch-logs-agent-comparison.jpg)
 
 ## Summary
 
@@ -112,7 +112,7 @@ AWS CloudWatch is an essential tool for monitoring and logging, offering compreh
 * EC2 instances need the CloudWatch agent for log forwarding.
 * CloudWatch Log Insights facilitates robust log querying and analysis.
 
-![The image is a summary slide with five key points about tracking logs and metrics, metric isolation, dimensions, metric resolutions, and log groups. It features a blue gradient background with the word "Summary" on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858321/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/tracking-logs-metrics-summary.jpg)
+![The image is a summary slide with five key points about tracking logs and metrics, metric isolation, dimensions, metric resolutions, and log groups. It features a blue gradient background with the word "Summary" on the left.](https://kodekloud.com/kk-media/image/upload/v1752858321/notes-assets/images/AWS-Certified-Developer-Associate-Cloudwatch-Basics/tracking-logs-metrics-summary.jpg)
 
 For more detailed information on setting up and optimizing your CloudWatch environment, visit the [AWS Official Documentation](https://aws.amazon.com/cloudwatch/).
 

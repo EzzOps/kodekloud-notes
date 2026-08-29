@@ -17,9 +17,7 @@ Which prompt engineering strategy would be most effective?
 
 Answer: including multiple examples of different summary styles with clear instructions.
 
-<Callout icon="lightbulb">
-  Few-shot prompting—providing multiple, diverse examples with explicit instructions—is the most effective approach for reliable text summarization. Examples demonstrate the expected format, tone, length, and level of abstraction (extractive vs. abstractive), helping the model produce consistent and predictable summaries.
-</Callout>
+> **lightbulb** Few-shot prompting—providing multiple, diverse examples with explicit instructions—is the most effective approach for reliable text summarization. Examples demonstrate the expected format, tone, length, and level of abstraction (extractive vs. abstractive), helping the model produce consistent and predictable summaries.
 
 Why this is the best choice
 
@@ -75,9 +73,7 @@ Best practices and tips
 * For abstractive summaries, include examples that condense or rephrase content while preserving meaning.
 * Test with edge cases (long inputs, ambiguous language) and add targeted examples if the model struggles.
 
-<Callout icon="warning">
-  Avoid chain-of-thought prompting for production summarization where concise outputs are required: it can produce long, unnecessary internal reasoning and leak sensitive information. Use chain-of-thought only when you explicitly need the model to show intermediate steps for debugging or analysis.
-</Callout>
+> **warning** Avoid chain-of-thought prompting for production summarization where concise outputs are required: it can produce long, unnecessary internal reasoning and leak sensitive information. Use chain-of-thought only when you explicitly need the model to show intermediate steps for debugging or analysis.
 
 Links and references
 
@@ -91,6 +87,4 @@ Implementing this in your workflow
 * Iterate: collect failed summaries, add them as new examples, and refine instructions.
 * Consider automated evaluation: measure ROUGE/BLEU for extractive vs. abstractive targets or use human-in-the-loop feedback for quality control.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/f1ffe286-e6e2-419c-a738-c57f9827b6ad" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/f1ffe286-e6e2-419c-a738-c57f9827b6ad)

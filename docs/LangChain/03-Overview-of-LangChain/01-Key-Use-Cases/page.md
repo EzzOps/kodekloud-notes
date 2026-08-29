@@ -22,13 +22,9 @@ Tool behavior and usage notes
 | Toolkits           | Collections of related tools grouped together for a single purpose (e.g., search, user management)                 | Package related tools into toolkits for easier reuse and permissioning                 |
 | Extensibility      | LangChain provides many built-in toolkits; you can also create custom tools for private systems                    | Prefer built-ins when they meet requirements; add custom tools only when needed        |
 
-<Callout icon="lightbulb">
-  Use built-in tools for common services (e.g., Wikipedia, YouTube, Google Search). For proprietary data or specialized workflows, create a custom tool and publish it in a toolkit so multiple pipelines and agents can reuse it.
-</Callout>
+> **lightbulb** Use built-in tools for common services (e.g., Wikipedia, YouTube, Google Search). For proprietary data or specialized workflows, create a custom tool and publish it in a toolkit so multiple pipelines and agents can reuse it.
 
-<Callout icon="warning">
-  When tools perform actions (modify data, call external APIs, or trigger side effects), validate and sanitize all inputs and outputs. Apply least-privilege access, input validation, and rate-limiting to reduce security and stability risks.
-</Callout>
+> **warning** When tools perform actions (modify data, call external APIs, or trigger side effects), validate and sanitize all inputs and outputs. Apply least-privilege access, input validation, and rate-limiting to reduce security and stability risks.
 
 Summary
 
@@ -41,9 +37,7 @@ Further reading and references:
 * YouTube: [https://www.youtube.com](https://www.youtube.com)
 * Google Search: [https://www.google.com](https://www.google.com)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/f956bded-e65d-4693-b89d-31cb29adb543" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/f956bded-e65d-4693-b89d-31cb29adb543)
 
 
 # Key Use Cases
@@ -84,13 +78,9 @@ Summary: these capabilities are implemented by combining LangChain components—
 |                 NLP Pipelines | Structured extraction & transformation | Composable chains and validators                                    | Extract entities → normalize → save to DB     |
 |           Assistants & Agents | Multi-step automation & planning       | Memory, tools, agent frameworks                                     | Autonomous scheduler that interacts with APIs |
 
-<Callout icon="lightbulb">
-  LangChain is an orchestration framework: it simplifies connecting components (prompts, retrievers, chains, memory, tools) and interacting with LLMs. The models supply the core capabilities (understanding, generation, reasoning); LangChain wires those capabilities into repeatable application patterns.
-</Callout>
+> **lightbulb** LangChain is an orchestration framework: it simplifies connecting components (prompts, retrievers, chains, memory, tools) and interacting with LLMs. The models supply the core capabilities (understanding, generation, reasoning); LangChain wires those capabilities into repeatable application patterns.
 
-<Callout icon="warning">
-  Models can hallucinate, be sensitive to prompt phrasing, and may expose private data if not managed properly. Always validate model outputs, apply guardrails (e.g., verification with trusted data), and handle sensitive information carefully.
-</Callout>
+> **warning** Models can hallucinate, be sensitive to prompt phrasing, and may expose private data if not managed properly. Always validate model outputs, apply guardrails (e.g., verification with trusted data), and handle sensitive information carefully.
 
 In this article we highlighted where LangChain fits within typical LLM application architectures and the kinds of applications you can build with it. In the following sections we will examine LangChain’s foundations and main building blocks—prompts, chains, retrievers, memory, and agents—in detail, with implementation patterns and production considerations.
 
@@ -100,6 +90,4 @@ Links and references
 * [Retrieval-Augmented Generation (RAG) overview](https://en.wikipedia.org/wiki/Retrieval-augmented_generation)
 * [Best practices for prompt design and reducing hallucinations](https://platform.openai.com/docs/guides/prompt-design)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ab7ff6ea-63e2-4d3b-af7c-ed22616cc3b6/lesson/74aab9c2-595c-4d0e-9f2d-b4f22d218d87" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/ab7ff6ea-63e2-4d3b-af7c-ed22616cc3b6/lesson/74aab9c2-595c-4d0e-9f2d-b4f22d218d87)

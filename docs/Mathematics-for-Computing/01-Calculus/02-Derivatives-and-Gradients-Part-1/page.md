@@ -82,15 +82,11 @@ This slightly reduces w1 because the model was overpredicting. The same approach
 
 Callout: key intuition
 
-<Callout icon="lightbulb">
-  Backpropagation combines local derivatives: compute how a small change to a weight affects the node output, then multiply by how that output affects the loss. In practice this scales to many layers by repeatedly applying the chain rule from output back to inputs.
-</Callout>
+> **lightbulb** Backpropagation combines local derivatives: compute how a small change to a weight affects the node output, then multiply by how that output affects the loss. In practice this scales to many layers by repeatedly applying the chain rule from output back to inputs.
 
 Practical note about training
 
-<Callout icon="warning">
-  Choose the learning rate (`alpha`) carefully. Too large -> divergence/overshooting; too small -> very slow learning. Also, scale and normalize inputs for stable training.
-</Callout>
+> **warning** Choose the learning rate (`alpha`) carefully. Too large -> divergence/overshooting; too small -> very slow learning. Also, scale and normalize inputs for stable training.
 
 Generalization to deep networks
 At scale, the same pattern holds: for each weight you compute the partial derivative of the loss with respect to that weight by multiplying derivatives layer-by-layer (the chain rule). Optimizers (e.g., SGD, Adam) use these gradients to update all weights across layers.
@@ -161,9 +157,7 @@ Further reading and references
 
 This lesson connected the chain rule to neural network training with a concrete example: small network, explicit derivatives, and a gradient descent update — the core mechanics behind large-scale recommendation systems.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/582ff79b-c012-496e-8612-3ed7a8df5800/lesson/ceb39c46-0b4f-4a1a-83fd-ec3bdff660a7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/582ff79b-c012-496e-8612-3ed7a8df5800/lesson/ceb39c46-0b4f-4a1a-83fd-ec3bdff660a7)
 
 
 # Derivatives and Gradients Part 1
@@ -244,9 +238,7 @@ To understand passing an obstacle: imagine the car approaching a roadworks site.
   <img alt="The image shows a graph of distance versus time with a curved line and marked &#x22;accelerate,&#x22; alongside a person smiling and a cartoon animal character. A speech bubble asks if computers draw tangents every time." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Computers don’t literally draw geometric tangents each time. Instead they use algebraic formulas from calculus (and numerical methods) to compute derivatives quickly. These computations let systems evaluate rates of change in real time for control and optimization tasks.
-</Callout>
+> **lightbulb** Computers don’t literally draw geometric tangents each time. Instead they use algebraic formulas from calculus (and numerical methods) to compute derivatives quickly. These computations let systems evaluate rates of change in real time for control and optimization tasks.
 
 Next step: basic algebraic differentiation. The power rule is the simplest and most commonly used formula for derivatives. It states:
 
@@ -271,6 +263,4 @@ Further reading and references:
 
 In the next lesson we'll apply the power rule and begin computing derivatives for functions that commonly appear in machine learning models.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/582ff79b-c012-496e-8612-3ed7a8df5800/lesson/eb618e3c-aa00-4b68-b122-87713c7d3fb3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/582ff79b-c012-496e-8612-3ed7a8df5800/lesson/eb618e3c-aa00-4b68-b122-87713c7d3fb3)

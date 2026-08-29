@@ -155,7 +155,7 @@ In this lesson, we explore the fundamental distinctions between Bash built-in co
 | Documentation   | `help` or `man` available | No separate manual page     |
 | Role            | Utility operations        | Control structures & tokens |
 
-![The image compares "Shell-Builtin" and "Keywords," highlighting that shell-builtins are executables with flags and a man page, while keywords are special words for controlling execution structure parsed by the shell.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868593/notes-assets/images/Advanced-Bash-Scripting-Keywords-builtins/shell-builtins-vs-keywords-comparison.jpg)
+![The image compares "Shell-Builtin" and "Keywords," highlighting that shell-builtins are executables with flags and a man page, while keywords are special words for controlling execution structure parsed by the shell.](https://kodekloud.com/kk-media/image/upload/v1752868593/notes-assets/images/Advanced-Bash-Scripting-Keywords-builtins/shell-builtins-vs-keywords-comparison.jpg)
 
 Shell built-ins (like `echo`, `cd`, or `[ ]`) are implemented directly within Bash, complete with flags and documentation via `help` or `man`. Keywords (like `if`, `for`, or `[[ ]]`) are special words the shell interpreter parses to direct execution order and logic.
 
@@ -212,7 +212,7 @@ Since `[[ ]]` has no external binary, Bash handles it entirely as a keyword.
 
 ## Built-in vs Keyword Evaluations
 
-![The image compares "Built-in" and "Keyword" condition evaluations using brackets and double brackets, respectively. It visually distinguishes between the two types of condition evaluations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868595/notes-assets/images/Advanced-Bash-Scripting-Keywords-builtins/built-in-vs-keyword-evaluations.jpg)
+![The image compares "Built-in" and "Keyword" condition evaluations using brackets and double brackets, respectively. It visually distinguishes between the two types of condition evaluations.](https://kodekloud.com/kk-media/image/upload/v1752868595/notes-assets/images/Advanced-Bash-Scripting-Keywords-builtins/built-in-vs-keyword-evaluations.jpg)
 
 Single brackets interpret `<` as a redirection operator:
 
@@ -251,7 +251,7 @@ Regular expressions can be used
 
 ### Single Square Brackets (`[ ]`)
 
-![The image compares keywords and built-in features, highlighting that keywords are more portable and widely supported, while built-in features have a narrower selection of conditionals.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868596/notes-assets/images/Advanced-Bash-Scripting-Keywords-builtins/keywords-vs-built-in-features-comparison.jpg)
+![The image compares keywords and built-in features, highlighting that keywords are more portable and widely supported, while built-in features have a narrower selection of conditionals.](https://kodekloud.com/kk-media/image/upload/v1752868596/notes-assets/images/Advanced-Bash-Scripting-Keywords-builtins/keywords-vs-built-in-features-comparison.jpg)
 
 Advantages:
 
@@ -281,7 +281,7 @@ Disadvantages:
 
 ## Summary: Built-ins vs Keywords
 
-![The image is a slide titled "Guard Clause" with three check-marked statements about shell commands and keywords.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868597/notes-assets/images/Advanced-Bash-Scripting-Keywords-builtins/guard-clause-shell-commands-slide.jpg)
+![The image is a slide titled "Guard Clause" with three check-marked statements about shell commands and keywords.](https://kodekloud.com/kk-media/image/upload/v1752868597/notes-assets/images/Advanced-Bash-Scripting-Keywords-builtins/guard-clause-shell-commands-slide.jpg)
 
 * Shell built-ins run inside Bash without forking.
 * Keywords are parsed tokens controlling flow or behavior.

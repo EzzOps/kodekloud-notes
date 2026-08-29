@@ -58,9 +58,7 @@ Failed requests:        0
 Requests per second:    449.37 [#/sec] (mean)
 ```
 
-<Callout icon="lightbulb">
-  `ab` is useful for quick checks. For more realistic concurrent-connection or long-running stress tests, consider tools like [`wrk`](https://github.com/wg/wrk) or [`siege`](https://www.joedog.org/siege-home/).
-</Callout>
+> **lightbulb** `ab` is useful for quick checks. For more realistic concurrent-connection or long-running stress tests, consider tools like [`wrk`](https://github.com/wg/wrk) or [`siege`](https://www.joedog.org/siege-home/).
 
 ## 3) Add request rate limiting (limit\_req)
 
@@ -242,9 +240,7 @@ Failed requests:        0
 Requests per second:    1089.79 [#/sec] (mean)
 ```
 
-<Callout icon="warning">
-  Benchmarking tools behave differently: `ab` may not open all concurrent TCP connections perfectly simultaneously and results can vary. For more accurate concurrency testing use tools designed for high concurrency (e.g., `wrk`, `siege`) and consider running tests from multiple client hosts to simulate distributed load.
-</Callout>
+> **warning** Benchmarking tools behave differently: `ab` may not open all concurrent TCP connections perfectly simultaneously and results can vary. For more accurate concurrency testing use tools designed for high concurrency (e.g., `wrk`, `siege`) and consider running tests from multiple client hosts to simulate distributed load.
 
 ## 5) Combined example
 
@@ -308,11 +304,9 @@ Note: In table cells, examples containing braces or special characters are wrapp
 
 That concludes this demo on request and connection rate limiting with NGINX.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/19ad6278-d446-48b7-8766-86a5d6f9e015" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/19ad6278-d446-48b7-8766-86a5d6f9e015)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/23e7ce03-5a89-453e-b956-676972047b9a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/23e7ce03-5a89-453e-b956-676972047b9a)
 
 
 # Demo Troubleshooting

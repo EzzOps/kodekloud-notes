@@ -19,9 +19,7 @@ Prerequisites
 Repository and manifests
 We will work from the `patterns/release` directory in the `cgoa-demos` repository. It contains two manifests: `deployment.yml` and `service.yml`. The Deployment shown below does not explicitly set a `strategy`, so Kubernetes will default to `RollingUpdate`.
 
-<Callout icon="lightbulb">
-  If a Deployment does not specify `strategy.type`, Kubernetes uses `RollingUpdate` by default.
-</Callout>
+> **lightbulb** If a Deployment does not specify `strategy.type`, Kubernetes uses `RollingUpdate` by default.
 
 Initial Deployment manifest (as present in the repo)
 
@@ -141,9 +139,7 @@ Then trigger another rollout (for example, set the image back to `v1`):
 kubectl -n rolling-recreate set image deployment/app app=siddharth67/app:v1
 ```
 
-<Callout icon="warning">
-  With `Recreate`, Kubernetes first terminates all existing pods and then starts new pods. Expect downtime between termination and readiness of the new pods — the Service will be unreachable during that window.
-</Callout>
+> **warning** With `Recreate`, Kubernetes first terminates all existing pods and then starts new pods. Expect downtime between termination and readiness of the new pods — the Service will be unreachable during that window.
 
 Expected observation under Recreate
 
@@ -174,6 +170,4 @@ Further reading and references
 
 That's all for this lesson — you can repeat the experiment with different replica counts, readiness probes, and `maxSurge` / `maxUnavailable` values to explore more nuanced availability behavior.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/d40ff730-247a-47d6-beb5-26e21939353b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/d40ff730-247a-47d6-beb5-26e21939353b)

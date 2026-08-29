@@ -207,11 +207,9 @@ time="..." level=info msg="Peer Up" Key=5.5.5.5 State=BGP_FSM_OPENCONFIRM Topic=
 
 Best practices and tips
 
-<Callout icon="lightbulb">
-  * Choose ASNs, BGP timers and ebgp-multihop values consistent with your physical network and external router configuration.
+> **lightbulb** * Choose ASNs, BGP timers and ebgp-multihop values consistent with your physical network and external router configuration.
   * Use selectors in CiliumBGPAdvertisement to control which services are announced; avoid advertising all service IPs in production unless intentionally required.
   * Monitor route advertisements and BGP session health with the Cilium CLI and your router tooling (e.g., Bird, FRR).
-</Callout>
 
 Wrap-up
 
@@ -226,9 +224,7 @@ Links and references
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [BGP — Wikipedia](https://en.wikipedia.org/wiki/Border_Gateway_Protocol)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/3c2d3813-735e-4827-ae62-df13c6e51351" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/3c2d3813-735e-4827-ae62-df13c6e51351)
 
 
 # Demo Egress Gateway
@@ -253,9 +249,7 @@ Environment overview
 |      Networking | Each node attached to a router on a separate subnet; router used for packet captures                         |
 | Cilium features | kube-proxy replacement enabled, eBPF masquerade enabled, Cilium version with egress gateway support (v1.17+) |
 
-<Callout icon="lightbulb">
-  Prerequisites: Cilium must be installed with kube-proxy replacement enabled (kubeProxyReplacement), eBPF masquerade (bpf.masquerade) turned on, and a Cilium release that supports the egress gateway feature. Confirm your cluster networking and node labeling permissions before proceeding.
-</Callout>
+> **lightbulb** Prerequisites: Cilium must be installed with kube-proxy replacement enabled (kubeProxyReplacement), eBPF masquerade (bpf.masquerade) turned on, and a Cilium release that supports the egress gateway feature. Confirm your cluster networking and node labeling permissions before proceeding.
 
 Cluster pod listing (example)
 

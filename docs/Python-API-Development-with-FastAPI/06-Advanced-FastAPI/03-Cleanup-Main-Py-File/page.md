@@ -34,9 +34,7 @@ while True:
         cursor = conn.cursor()
 ```
 
-<Callout icon="lightbulb">
-  The code for connecting to the database using the traditional Postgres driver is now redundant because SQLAlchemy is managing our database connections. It is recommended to either move this logic into the database.py file for future reference or remove it completely.
-</Callout>
+> **lightbulb** The code for connecting to the database using the traditional Postgres driver is now redundant because SQLAlchemy is managing our database connections. It is recommended to either move this logic into the database.py file for future reference or remove it completely.
 
 For documentation purposes, here is how the section originally looked before the changes were implemented:
 
@@ -120,9 +118,7 @@ def find_index_post(id):
             return i
 ```
 
-<Callout icon="lightbulb">
-  Removing these unused sections not only makes your main.py file cleaner but also improves maintainability by reducing clutter. The focus is now solely on the application's main functionality.
-</Callout>
+> **lightbulb** Removing these unused sections not only makes your main.py file cleaner but also improves maintainability by reducing clutter. The focus is now solely on the application's main functionality.
 
 The final cleaned-up version of main.py is structured more succinctly. It now only imports the modules required for the proper functioning of the application and includes the essential routers. The refined file is as follows:
 
@@ -147,6 +143,4 @@ def root():
 
 With these changes, the application is free from redundant code and unused imports, making it easier to maintain and enhancing overall code clarity. This optimization is key for better project scalability and improved performance.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/8db72137-52c9-474b-b1d5-9a4c548af7b0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/8db72137-52c9-474b-b1d5-9a4c548af7b0)

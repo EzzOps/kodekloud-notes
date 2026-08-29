@@ -32,9 +32,7 @@ Verify Istio system pods are running:
 kubectl get pods -n istio-system
 ```
 
-<Callout icon="lightbulb">
-  Be aware: `REGISTRY_ONLY` blocks outbound traffic to external services unless they're registered with Istio (for example, via a ServiceEntry). Use ServiceEntry to explicitly allow specific external hosts when using this policy.
-</Callout>
+> **lightbulb** Be aware: `REGISTRY_ONLY` blocks outbound traffic to external services unless they're registered with Istio (for example, via a ServiceEntry). Use ServiceEntry to explicitly allow specific external hosts when using this policy.
 
 ***
 
@@ -104,9 +102,7 @@ Exit the pod shell:
 exit
 ```
 
-<Callout icon="lightbulb">
-  Labeling a namespace with `istio-injection=enabled` enables automatic sidecar injection for new pods in that namespace. Existing pods must be recreated to receive a sidecar.
-</Callout>
+> **lightbulb** Labeling a namespace with `istio-injection=enabled` enables automatic sidecar injection for new pods in that namespace. Existing pods must be recreated to receive a sidecar.
 
 ***
 
@@ -297,9 +293,7 @@ Expected results:
 "HEAD / HTTP/2" 301 - via_upstream ... "www.wikipedia.org" "208.80.153.224:80" outbound|80||www.wikipedia.org ...
 ```
 
-<Callout icon="warning">
-  Important: To force mesh-originating traffic through an Istio egress gateway, the VirtualService must include the `mesh` gateway in `gateways` and have a `match` for `gateways: [mesh]`. Without this, sidecar proxies are not instructed to route to the egress gateway and traffic may go directly to the Internet or be blocked by `REGISTRY_ONLY`.
-</Callout>
+> **warning** Important: To force mesh-originating traffic through an Istio egress gateway, the VirtualService must include the `mesh` gateway in `gateways` and have a `match` for `gateways: [mesh]`. Without this, sidecar proxies are not instructed to route to the egress gateway and traffic may go directly to the Internet or be blocked by `REGISTRY_ONLY`.
 
 ***
 
@@ -428,11 +422,9 @@ Links and references:
 * [Istio ServiceEntry docs](https://istio.io/latest/docs/reference/config/networking/service-entry/)
 * [Istio Egress Gateway example](https://istio.io/latest/docs/tasks/traffic-management/egress/egress-gateway/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/5674ec14-32a4-48c3-bb67-a08d54199396" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/5674ec14-32a4-48c3-bb67-a08d54199396)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/0b5f42c9-6182-4747-8253-554ce30147dc" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/0b5f42c9-6182-4747-8253-554ce30147dc)
 
 
 # Demo 2 Service Entries
@@ -497,9 +489,7 @@ Example entry:
 
 A ServiceEntry tells Istio how to resolve and route traffic for hosts that are outside the mesh. Use `MESH_EXTERNAL` for workloads outside the cluster and `resolution: STATIC` when you want to bind a fixed IP endpoint to a hostname.
 
-<Callout icon="lightbulb">
-  We use `MESH_EXTERNAL` because the workload is outside the mesh. Use `resolution: STATIC` for fixed IPs; use `resolution: DNS` for externally resolved hostnames.
-</Callout>
+> **lightbulb** We use `MESH_EXTERNAL` because the workload is outside the mesh. Use `resolution: STATIC` for fixed IPs; use `resolution: DNS` for externally resolved hostnames.
 
 ## 1) Create a ServiceEntry
 
@@ -668,8 +658,6 @@ You should now receive the expected NGINX default page served from the externall
 
 Give this a try in the labs to get hands-on experience bringing external workloads into the mesh.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/68e4e6ad-3398-4e12-a666-5b9f96fda7d2" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/68e4e6ad-3398-4e12-a666-5b9f96fda7d2)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/b96f41b7-7bd2-4022-b388-701bec8e39ff" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/b96f41b7-7bd2-4022-b388-701bec8e39ff)

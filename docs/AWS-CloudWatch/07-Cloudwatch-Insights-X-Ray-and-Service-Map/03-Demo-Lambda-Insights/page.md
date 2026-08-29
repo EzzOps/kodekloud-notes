@@ -104,17 +104,17 @@ chmod +x lambda_call.sh
 3. Upload the YAML template and click **Next**.
 4. Enter a stack name (e.g., `lambda-insights-demo`), acknowledge IAM capabilities, then click **Next** and **Create stack**.
 
-![The image shows an AWS CloudFormation console where a user is creating a stack. It includes steps for specifying a template and stack details, with fields for a template URL and stack name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862504/notes-assets/images/AWS-CloudWatch-Demo-Lambda-Insights/aws-cloudformation-create-stack-template.jpg)
+![The image shows an AWS CloudFormation console where a user is creating a stack. It includes steps for specifying a template and stack details, with fields for a template URL and stack name.](https://kodekloud.com/kk-media/image/upload/v1752862504/notes-assets/images/AWS-CloudWatch-Demo-Lambda-Insights/aws-cloudformation-create-stack-template.jpg)
 
 Wait until the status reads `CREATE_COMPLETE`.
 
-![The image shows an AWS CloudFormation console with a list of stack events for "lambda-insights," displaying timestamps, logical IDs, and statuses of various operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862505/notes-assets/images/AWS-CloudWatch-Demo-Lambda-Insights/aws-cloudformation-lambda-insights-events.jpg)
+![The image shows an AWS CloudFormation console with a list of stack events for "lambda-insights," displaying timestamps, logical IDs, and statuses of various operations.](https://kodekloud.com/kk-media/image/upload/v1752862505/notes-assets/images/AWS-CloudWatch-Demo-Lambda-Insights/aws-cloudformation-lambda-insights-events.jpg)
 
 ## 4. Verify Lambda Functions
 
 In the Lambda console, confirm that all three functions (`HelloWorldFunction01`, `HelloWorldFunction02`, `HelloWorldFunction03`) are present and using Python 3.9.
 
-![The image shows an AWS Lambda console with a list of functions named "HelloWorldFunction01," "HelloWorldFunction02," and "HelloWorldFunction03," all using Python 3.9.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862506/notes-assets/images/AWS-CloudWatch-Demo-Lambda-Insights/aws-lambda-console-functions-python39.jpg)
+![The image shows an AWS Lambda console with a list of functions named "HelloWorldFunction01," "HelloWorldFunction02," and "HelloWorldFunction03," all using Python 3.9.](https://kodekloud.com/kk-media/image/upload/v1752862506/notes-assets/images/AWS-CloudWatch-Demo-Lambda-Insights/aws-lambda-console-functions-python39.jpg)
 
 ## 5. Generate Load Using AWS CloudShell
 
@@ -153,11 +153,11 @@ Wait a few minutes for data to appear in CloudWatch.
 
 Navigate to **CloudWatch > Insights > Lambda Insights** to view consolidated metrics across all functions.
 
-![The image shows an AWS CloudWatch dashboard displaying metrics for a Lambda function, including graphs for invocations, errors, memory usage, CPU usage, and network usage, along with a table of recent invocations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862508/notes-assets/images/AWS-CloudWatch-Demo-Lambda-Insights/aws-cloudwatch-lambda-metrics-dashboard.jpg)
+![The image shows an AWS CloudWatch dashboard displaying metrics for a Lambda function, including graphs for invocations, errors, memory usage, CPU usage, and network usage, along with a table of recent invocations.](https://kodekloud.com/kk-media/image/upload/v1752862508/notes-assets/images/AWS-CloudWatch-Demo-Lambda-Insights/aws-cloudwatch-lambda-metrics-dashboard.jpg)
 
 To focus on a single function (e.g., `HelloWorldFunction03`), select it from the list:
 
-![The image shows an AWS CloudWatch dashboard displaying performance monitoring metrics for a Lambda function, including invocations, errors, duration, throttles, memory usage, CPU usage, and network usage over a custom time range.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862509/notes-assets/images/AWS-CloudWatch-Demo-Lambda-Insights/aws-cloudwatch-lambda-performance-dashboard.jpg)
+![The image shows an AWS CloudWatch dashboard displaying performance monitoring metrics for a Lambda function, including invocations, errors, duration, throttles, memory usage, CPU usage, and network usage over a custom time range.](https://kodekloud.com/kk-media/image/upload/v1752862509/notes-assets/images/AWS-CloudWatch-Demo-Lambda-Insights/aws-cloudwatch-lambda-performance-dashboard.jpg)
 
 ## 8. Creating a Custom Dashboard
 
@@ -167,11 +167,11 @@ If you manage many functions, a dedicated CloudWatch dashboard helps.
 2. Add Lambda Insights widgets and select your functions.
 3. Customize widgets for GB-s usage, duration, invocations, concurrent executions, and throttles.
 
-![The image shows an AWS CloudWatch dashboard displaying metrics for an application, including GB-s usage, duration, invocations, concurrent executions, and throttles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862510/notes-assets/images/AWS-CloudWatch-Demo-Lambda-Insights/aws-cloudwatch-dashboard-metrics.jpg)
+![The image shows an AWS CloudWatch dashboard displaying metrics for an application, including GB-s usage, duration, invocations, concurrent executions, and throttles.](https://kodekloud.com/kk-media/image/upload/v1752862510/notes-assets/images/AWS-CloudWatch-Demo-Lambda-Insights/aws-cloudwatch-dashboard-metrics.jpg)
 
 Here’s an example with multiple functions:
 
-![The image shows an AWS CloudWatch Lambda Insights dashboard displaying performance metrics such as GB-s usage, duration, invocations, errors, memory usage, and network usage for multiple functions. The interface includes graphs and options for customizing the time range and adding data to a dashboard.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862511/notes-assets/images/AWS-CloudWatch-Demo-Lambda-Insights/aws-cloudwatch-lambda-insights-dashboard.jpg)
+![The image shows an AWS CloudWatch Lambda Insights dashboard displaying performance metrics such as GB-s usage, duration, invocations, errors, memory usage, and network usage for multiple functions. The interface includes graphs and options for customizing the time range and adding data to a dashboard.](https://kodekloud.com/kk-media/image/upload/v1752862511/notes-assets/images/AWS-CloudWatch-Demo-Lambda-Insights/aws-cloudwatch-lambda-insights-dashboard.jpg)
 
 > Remember to disable Lambda Insights when not troubleshooting to avoid unnecessary costs.
 

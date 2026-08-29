@@ -47,7 +47,7 @@ Consider a mid-sized e-commerce company monitoring its application with these mo
 | Custom Events  | 1 M events × \$1.00 per million events | \$1.00 / million events | \$1.00      |
 | **Total**      |                                        |                         | **\$26.15** |
 
-![The image is a pricing breakdown for an e-commerce website, detailing costs for metrics, dashboards, alarms, logs, and events, with a total monthly cost of \$25.15.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862366/notes-assets/images/AWS-CloudWatch-Understanding-CloudWatch-Pricing/ecommerce-pricing-breakdown-costs-dashboard.jpg)
+![The image is a pricing breakdown for an e-commerce website, detailing costs for metrics, dashboards, alarms, logs, and events, with a total monthly cost of \$25.15.](https://kodekloud.com/kk-media/image/upload/v1752862366/notes-assets/images/AWS-CloudWatch-Understanding-CloudWatch-Pricing/ecommerce-pricing-breakdown-costs-dashboard.jpg)
 
 > **triangle-alert** AWS pricing varies by Region and can change over time. Always confirm the rates for your specific region in the AWS Console.
 

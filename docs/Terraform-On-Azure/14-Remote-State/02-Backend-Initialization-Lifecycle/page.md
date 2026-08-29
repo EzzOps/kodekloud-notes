@@ -20,9 +20,7 @@ Key points:
   * you run `terraform init -reconfigure`.
 * In all other cases you do not need to run `terraform init` again.
 
-<Callout icon="lightbulb">
-  Backend configuration is processed during initialization. Subsequent operations (plan, apply, refresh, import) all depend on the initialized backend and the state it provides. Terraform may automatically run `terraform init` when necessary (for example if the ` .terraform` directory is missing).
-</Callout>
+> **lightbulb** Backend configuration is processed during initialization. Subsequent operations (plan, apply, refresh, import) all depend on the initialized backend and the state it provides. Terraform may automatically run `terraform init` when necessary (for example if the ` .terraform` directory is missing).
 
 Example — a typical `terraform init` interaction (trimmed output):
 
@@ -60,9 +58,7 @@ Operational implications
 * Backend initialization failures are blocking errors — they prevent any further Terraform operations.
 * Every plan, apply, refresh, or import depends on a successfully initialized backend.
 
-<Callout icon="warning">
-  If you accidentally remove the ` .terraform` directory or change backend settings without reinitializing, Terraform will require re-running `terraform init` (or `terraform init -reconfigure`) before it can access state and continue.
-</Callout>
+> **warning** If you accidentally remove the ` .terraform` directory or change backend settings without reinitializing, Terraform will require re-running `terraform init` (or `terraform init -reconfigure`) before it can access state and continue.
 
 When the backend is re-initialized
 
@@ -88,6 +84,4 @@ Links and references
 * [Terraform CLI Commands — init](https://developer.hashicorp.com/terraform/cli/commands/init)
 * [Terraform State](https://developer.hashicorp.com/terraform/language/state)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4693ec96-f075-4e4f-922b-1f1e27202120/lesson/6ef3a3c3-d7bd-4e7d-96db-818c0b7291ce" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4693ec96-f075-4e4f-922b-1f1e27202120/lesson/6ef3a3c3-d7bd-4e7d-96db-818c0b7291ce)

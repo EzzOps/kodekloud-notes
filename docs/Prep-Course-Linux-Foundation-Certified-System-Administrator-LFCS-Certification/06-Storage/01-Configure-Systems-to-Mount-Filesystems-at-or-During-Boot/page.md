@@ -16,9 +16,7 @@ __________
 2 files
 ```
 
-<Callout icon="lightbulb">
-  Using the "-p" option with fsck.ext4 is especially useful when the file system has many errors, as it automates the repair process.
-</Callout>
+> **lightbulb** Using the "-p" option with fsck.ext4 is especially useful when the file system has many errors, as it automates the repair process.
 
 ─────────────────────────────────────────────
 
@@ -88,11 +86,9 @@ By using tools such as df, du, free, uptime, and file system check utilities lik
 
 Happy monitoring!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/9cda6cb2-2337-41e7-a671-2866f65ca44a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/9cda6cb2-2337-41e7-a671-2866f65ca44a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/975feb92-bf2c-4ced-945e-fc04b1814fac" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/975feb92-bf2c-4ced-945e-fc04b1814fac)
 
 
 # Configure Systems to Mount Filesystems at or During Boot
@@ -107,9 +103,7 @@ This guide explains how to mount filesystems both manually and automatically dur
 
 First, consider a temporary mount directory. In this example, we will mount an XFS filesystem (created in a previous lesson) located on `/dev/vdb1` at the directory `/mnt`.
 
-<Callout icon="lightbulb">
-  Ensure that the directory exists and is empty before mounting the filesystem.
-</Callout>
+> **lightbulb** Ensure that the directory exists and is empty before mounting the filesystem.
 
 Run the following commands to mount the device, create a test file, and verify the mount:
 
@@ -160,9 +154,7 @@ The `/etc/fstab` file uses six fields for each filesystem entry:
 5. **Dump**: Typically set to `0` to disable dump backups.
 6. **Pass**: Determines the order for filesystem checks at boot (usually `1` for the root and `2` for others; `0` disables checks).
 
-<Callout icon="lightbulb">
-  Use a text editor like Vim to modify the `/etc/fstab` file. Always back up this file before making changes.
-</Callout>
+> **lightbulb** Use a text editor like Vim to modify the `/etc/fstab` file. Always back up this file before making changes.
 
 For example, to set up your XFS filesystem to mount at `/mybackups`, follow these steps:
 
@@ -256,8 +248,6 @@ man fstab
 
 This concludes our guide on configuring systems to mount filesystems at boot. Happy computing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/e3d35648-d593-42c6-95fd-6bcaed170c5c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/e3d35648-d593-42c6-95fd-6bcaed170c5c)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/b950ad75-7bb1-4a62-86ec-17ece0693a3d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/b950ad75-7bb1-4a62-86ec-17ece0693a3d)

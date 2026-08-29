@@ -26,11 +26,11 @@ When creating a budget, you will be prompted to select a template that best fits
 
 Enter a descriptive name for your budget (e.g., "Monthly Budget \$10") and provide the email address where you would like to receive notifications. AWS sends alerts at milestones such as 85% and 100% of your budget, and also if the forecasted spend is expected to reach 100% of your budget. This proactive alert mechanism is key to preventing overages.
 
-![The image shows the AWS Billing Management Console, specifically the "Choose budget type" section, where users can select budget templates like "Zero spend budget" or "Monthly cost budget."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858149/notes-assets/images/AWS-Certified-Developer-Associate-Billing-2FA/aws-billing-management-console-budget-types.jpg)
+![The image shows the AWS Billing Management Console, specifically the "Choose budget type" section, where users can select budget templates like "Zero spend budget" or "Monthly cost budget."](https://kodekloud.com/kk-media/image/upload/v1752858149/notes-assets/images/AWS-Certified-Developer-Associate-Billing-2FA/aws-billing-management-console-budget-types.jpg)
 
 After entering the necessary details, click **Create Budget** to finalize the process. Your newly created budget is now visible in the billing console, and you can revisit or modify its settings at any time by selecting **Edit**.
 
-![The image shows an AWS Billing Management Console screen where a user is setting up a monthly cost budget with a budgeted amount of \$10 and an email recipient for notifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858150/notes-assets/images/AWS-Certified-Developer-Associate-Billing-2FA/aws-billing-management-budget-setup.jpg)
+![The image shows an AWS Billing Management Console screen where a user is setting up a monthly cost budget with a budgeted amount of \$10 and an email recipient for notifications.](https://kodekloud.com/kk-media/image/upload/v1752858150/notes-assets/images/AWS-Certified-Developer-Associate-Billing-2FA/aws-billing-management-budget-setup.jpg)
 
 > **lightbulb** AWS notifies you in three scenarios:
 
@@ -41,6 +41,6 @@ After entering the necessary details, click **Create Budget** to finalize the pr
 
 You can review your budget details at any time on the billing dashboard. Should you need to make any adjustments, simply click **Edit** and update the relevant settings.
 
-![The image shows an AWS Billing Management Console screen displaying details of a budget named "MonthlyBudget10" with a budget amount of \$10.00 and no current spending.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858151/notes-assets/images/AWS-Certified-Developer-Associate-Billing-2FA/aws-billing-monthlybudget10-details.jpg)
+![The image shows an AWS Billing Management Console screen displaying details of a budget named "MonthlyBudget10" with a budget amount of \$10.00 and no current spending.](https://kodekloud.com/kk-media/image/upload/v1752858151/notes-assets/images/AWS-Certified-Developer-Associate-Billing-2FA/aws-billing-monthlybudget10-details.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/6d3acaeb-020a-4e1e-9bd0-5fc6c50eb164/lesson/f2a805f2-2969-4d82-a242-34eec91f36d5)

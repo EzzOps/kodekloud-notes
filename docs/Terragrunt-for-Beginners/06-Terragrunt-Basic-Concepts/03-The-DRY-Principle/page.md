@@ -11,9 +11,7 @@ In Infrastructure as Code (IaC), the DRY (Don’t Repeat Yourself) principle is 
 * Inherit shared settings through a hierarchical layout
 * Streamline maintenance and promote changes safely
 
-<Callout icon="lightbulb">
-  This article assumes basic familiarity with Terraform and HCL. For a Terraform refresher, see [Terraform Overview](https://www.terraform.io/intro).
-</Callout>
+> **lightbulb** This article assumes basic familiarity with Terraform and HCL. For a Terraform refresher, see [Terraform Overview](https://www.terraform.io/intro).
 
 ***
 

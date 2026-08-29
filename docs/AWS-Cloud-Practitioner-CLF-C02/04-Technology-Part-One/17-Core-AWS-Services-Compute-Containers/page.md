@@ -10,7 +10,7 @@ In this lesson, we dive into container technology and explore the key AWS servic
 
 Containers enable you to package an application along with all its necessary files, libraries, and dependencies into a single, self-contained unit. With containers, your application can run uniformly across different environments—functioning similarly to lightweight virtual machines.
 
-![The image explains containers as tools for packaging applications with necessary files, deployable on machines, and likened to lightweight virtual machines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861877/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Containers/frame_60.jpg)
+![The image explains containers as tools for packaging applications with necessary files, deployable on machines, and likened to lightweight virtual machines.](https://kodekloud.com/kk-media/image/upload/v1752861877/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Containers/frame_60.jpg)
 
 By bundling everything together, containers ensure that your application behaves consistently, regardless of the underlying infrastructure.
 
@@ -26,7 +26,7 @@ Deploying containerized applications across multiple hosts introduces several ch
 
 Container orchestrators simplify these tasks by managing deployment, load balancing, inter-container communication, failure recovery, and auto-scaling for your containerized applications.
 
-![The image explains container orchestrators like Kubernetes, Apache Mesos, and ECS, highlighting their responsibilities such as deploying containers, load-balancing, connectivity, restarting, and moving containers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861878/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Containers/frame_200.jpg)
+![The image explains container orchestrators like Kubernetes, Apache Mesos, and ECS, highlighting their responsibilities such as deploying containers, load-balancing, connectivity, restarting, and moving containers.](https://kodekloud.com/kk-media/image/upload/v1752861878/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Containers/frame_200.jpg)
 
 ## AWS Elastic Container Service (ECS)
 
@@ -36,7 +36,7 @@ AWS Elastic Container Service (ECS) is a fully managed container orchestration s
 
 Although ECS offers simplicity and tight integration with AWS services, its proprietary nature may pose challenges when migrating to other cloud providers.
 
-![The image explains AWS Elastic Container Service (ECS), highlighting its management, scalability, and proprietary nature, with containers running on EC2 instances or Fargate.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861880/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Containers/frame_280.jpg)
+![The image explains AWS Elastic Container Service (ECS), highlighting its management, scalability, and proprietary nature, with containers running on EC2 instances or Fargate.](https://kodekloud.com/kk-media/image/upload/v1752861880/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Containers/frame_280.jpg)
 
 ## Introduction to Kubernetes and AWS Elastic Kubernetes Service (EKS)
 
@@ -45,13 +45,13 @@ Before exploring EKS, it’s essential to understand Kubernetes. Kubernetes is a
 * **Control Plane Nodes:** These nodes oversee the overall cluster state by managing tasks like scheduling, monitoring, and maintaining cluster health.
 * **Worker Nodes:** These nodes run your containerized applications and perform the actual workload processing.
 
-![The image explains Kubernetes, highlighting its open-source container orchestration, control-plane nodes for cluster management, and worker nodes for running containerized workloads.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861881/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Containers/frame_310.jpg)
+![The image explains Kubernetes, highlighting its open-source container orchestration, control-plane nodes for cluster management, and worker nodes for running containerized workloads.](https://kodekloud.com/kk-media/image/upload/v1752861881/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Containers/frame_310.jpg)
 
 Managing the control plane can be complex, involving challenges in setup, scaling, and security. This is where AWS Elastic Kubernetes Service (EKS) comes into the picture.
 
 EKS is a managed Kubernetes service that offloads the burden of running the control plane by handling scaling, high availability, and backups. While AWS manages the control plane, you are responsible for the worker nodes. With the Fargate integration in EKS, AWS can also handle worker node management for you.
 
-![The image explains AWS Elastic Kubernetes Service (EKS), highlighting user responsibilities, control plane management, and EKS's role in managing the control plane.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861882/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Containers/frame_360.jpg)
+![The image explains AWS Elastic Kubernetes Service (EKS), highlighting user responsibilities, control plane management, and EKS's role in managing the control plane.](https://kodekloud.com/kk-media/image/upload/v1752861882/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Containers/frame_360.jpg)
 
 ### Benefits of EKS
 
@@ -61,7 +61,7 @@ EKS offers several advantages, including:
 * Seamless integration with other AWS services like IAM for authentication, Elastic Load Balancing, and ECR for container image storage.
 * Simplified Kubernetes operation, allowing you to focus on deploying and scaling your applications.
 
-![The image outlines the benefits of AWS EKS, highlighting control-plane scaling across availability zones, integration with AWS services, IAM authentication, and elastic load balancing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861883/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Containers/frame_430.jpg)
+![The image outlines the benefits of AWS EKS, highlighting control-plane scaling across availability zones, integration with AWS services, IAM authentication, and elastic load balancing.](https://kodekloud.com/kk-media/image/upload/v1752861883/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Containers/frame_430.jpg)
 
 ## Comparing ECS and EKS
 
@@ -89,7 +89,7 @@ In this lesson, we covered the following key points:
 * Kubernetes is a popular open-source orchestrator, and AWS EKS further simplifies its operation by managing the control plane.
 * The choice between ECS and EKS depends on factors such as migration complexity, learning curve, ecosystem support, and cost.
 
-![The image summarizes container concepts, highlighting packaging applications, container orchestrators, AWS ECS, and Kubernetes as an open-source orchestrator.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861884/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Containers/frame_590.jpg)
+![The image summarizes container concepts, highlighting packaging applications, container orchestrators, AWS ECS, and Kubernetes as an open-source orchestrator.](https://kodekloud.com/kk-media/image/upload/v1752861884/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Containers/frame_590.jpg)
 
 EKS allows you to focus on your application workloads by automating control plane management, which is crucial for scaling and optimizing containerized environments.
 

@@ -10,9 +10,7 @@ In this article, you'll learn how to use Postman scripts to dynamically manage t
 
 First, navigate to your development environment and create a new variable called "token". Instead of embedding the token directly in your collection’s configuration, dynamically referencing the token variable ensures that its value is always pulled from your environment. Be sure to save your environment after making any changes.
 
-<Callout icon="lightbulb">
-  After a successful login, the token is automatically captured from the response body and set as the value of the token environment variable.
-</Callout>
+> **lightbulb** After a successful login, the token is automatically captured from the response body and set as the value of the token environment variable.
 
 ## Example Login Response
 
@@ -28,9 +26,7 @@ Below is an example of a token returned from a login response:
 
 To extract and store the token dynamically, add the following script to the Tests tab of your login request. This script parses the response JSON and sets the token environment variable:
 
-<Frame>
-  ![The image shows a Postman interface with a POST request to a login endpoint. The response body displays a JSON object containing a token.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882936/notes-assets/images/Postman-Essentials-Scripts/postman-post-request-login-json.jpg)
-</Frame>
+![The image shows a Postman interface with a POST request to a login endpoint. The response body displays a JSON object containing a token.](https://kodekloud.com/kk-media/image/upload/v1752882936/notes-assets/images/Postman-Essentials-Scripts/postman-post-request-login-json.jpg)
 
 ```javascript theme={null}
 var res = pm.response.json();
@@ -70,10 +66,6 @@ After running the login request, inspect your environment settings to confirm th
 
 The authentication is managed automatically by the script shown earlier, ensuring that every time you log in, the token is captured and stored in your environment variable. This streamlined setup helps maintain up-to-date configurations with the latest authentication token.
 
-<Callout icon="lightbulb">
-  For more detailed documentation on automating token management and optimizing your API testing workflow, check out the [Postman Documentation](https://learning.postman.com/docs/).
-</Callout>
+> **lightbulb** For more detailed documentation on automating token management and optimizing your API testing workflow, check out the [Postman Documentation](https://learning.postman.com/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/postman-essentials/module/0a8a02c7-cab8-4bd9-886e-c7570885146f/lesson/fbb1567f-6e06-4b28-b709-328054f0ce77" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/postman-essentials/module/0a8a02c7-cab8-4bd9-886e-c7570885146f/lesson/fbb1567f-6e06-4b28-b709-328054f0ce77)

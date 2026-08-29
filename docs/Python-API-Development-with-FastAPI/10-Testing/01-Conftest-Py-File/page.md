@@ -42,9 +42,7 @@ tests/test_calculations.py::test_calculations PASSED                  [100%]
 ============================== 2 passed, 5 warnings in 1.67s ==============================
 ```
 
-<Callout icon="lightbulb">
-  The `conftest.py` file makes its fixtures available to all tests in the same package, eliminating the need for repetitive import statements.
-</Callout>
+> **lightbulb** The `conftest.py` file makes its fixtures available to all tests in the same package, eliminating the need for repetitive import statements.
 
 ***
 
@@ -88,9 +86,7 @@ C:\users\sanje\documents\courses\fastapi\venv\lib\site-packages\aiofiles\os.py:1
 === 2 passed, 5 warnings in 1.67s ===
 ```
 
-<Callout icon="triangle-alert">
-  Ensure that you update deprecated decorators (such as `@coroutine`) in your dependencies to avoid future compatibility issues, particularly if upgrading Python versions.
-</Callout>
+> **triangle-alert** Ensure that you update deprecated decorators (such as `@coroutine`) in your dependencies to avoid future compatibility issues, particularly if upgrading Python versions.
 
 ***
 
@@ -184,6 +180,4 @@ For more information on testing with Pytest, refer to the [Pytest Documentation]
 
 Happy Testing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/37f8fe5c-3c5b-4c9e-b106-ab632664cae2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/37f8fe5c-3c5b-4c9e-b106-ab632664cae2)

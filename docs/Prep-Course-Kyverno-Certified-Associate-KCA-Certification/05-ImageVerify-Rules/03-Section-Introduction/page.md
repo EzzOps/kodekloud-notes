@@ -26,9 +26,7 @@ This command:
   <img alt="The image illustrates the process of signing an image using a private key and verifying it with a public certificate, as part of generating a private key and certificate." />
 </Frame>
 
-<Callout icon="warning">
-  The `generate-test` command is intended for development and demos only. In production, provision signing keys and certificates securely (for example, using an internal CA, hardware-backed keys, or a cloud KMS). Restrict access and audit usage.
-</Callout>
+> **warning** The `generate-test` command is intended for development and demos only. In production, provision signing keys and certificates securely (for example, using an internal CA, hardware-backed keys, or a cloud KMS). Restrict access and audit usage.
 
 ## Sign the image
 
@@ -141,9 +139,7 @@ If verification succeeds, the signature was created by the private key for a cer
 
 You now have a practical, step-by-step understanding of image signing with Notation and how a verifier validates those signatures. Translate this process into Kyverno image verification policies to automate verification inside your Kubernetes cluster.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/29b815f2-6996-4693-b4b5-993ad2c6659e/lesson/3e0e3f32-3b02-4cf0-a6f6-5615c852ea3c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/29b815f2-6996-4693-b4b5-993ad2c6659e/lesson/3e0e3f32-3b02-4cf0-a6f6-5615c852ea3c)
 
 
 # Section Introduction
@@ -178,9 +174,7 @@ How can I be certain that the image about to run in my cluster was actually sign
 
 Image signature verification solves this problem by enabling admission-time checks that confirm both the identity and integrity of container images.
 
-<Callout icon="lightbulb">
-  Learn how to cryptographically verify container images so your cluster only runs artifacts produced (and signed) by your trusted build pipeline.
-</Callout>
+> **lightbulb** Learn how to cryptographically verify container images so your cluster only runs artifacts produced (and signed) by your trusted build pipeline.
 
 What this guide covers
 
@@ -205,6 +199,4 @@ Links and references
 * [Notary — official site](https://notaryproject.dev)
 * [Kyverno documentation — policies and verifyImages](https://kyverno.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/29b815f2-6996-4693-b4b5-993ad2c6659e/lesson/1087e7b8-8d52-496d-b20c-331458c3e714" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/29b815f2-6996-4693-b4b5-993ad2c6659e/lesson/1087e7b8-8d52-496d-b20c-331458c3e714)

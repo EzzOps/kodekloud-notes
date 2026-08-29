@@ -16,11 +16,11 @@ AWS provides a Free Tier that offers access to various services under specific c
 
 When you launch an AWS account, you might receive an Amazon EC2 virtual machine available 24/7 for the first 12 months. Other key services, such as Amazon S3 and RDS, are available under defined usage limits within the Free Tier.
 
-![The image shows Amazon's Free Tier offerings: 750 hours of EC2 and RDS usage, and 5 GB of S3 storage, available for 12 months.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861589/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Economics/frame_60.jpg)
+![The image shows Amazon's Free Tier offerings: 750 hours of EC2 and RDS usage, and 5 GB of S3 storage, available for 12 months.](https://kodekloud.com/kk-media/image/upload/v1752861589/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Economics/frame_60.jpg)
 
 For a comprehensive list of Free Tier services, see the diagram below:
 
-![The image lists Amazon Web Services (AWS) Free Tier offerings, including EC2, S3, RDS, DynamoDB, SageMaker, and Lambda, with specific usage limits and durations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861590/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Economics/frame_90.jpg)
+![The image lists Amazon Web Services (AWS) Free Tier offerings, including EC2, S3, RDS, DynamoDB, SageMaker, and Lambda, with specific usage limits and durations.](https://kodekloud.com/kk-media/image/upload/v1752861590/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Economics/frame_90.jpg)
 
 > **lightbulb** While some services like DynamoDB and Lambda are free indefinitely, others convert to paid usage after the free period expires.
 
@@ -30,7 +30,7 @@ The On-Demand Pricing Model is AWS's most popular choice for many users. In this
 
 For instance, running a virtual machine with two processors and 16 GB of RAM for 10 hours will result in charges for just those 10 hours of operation:
 
-![The image shows specifications for an on-demand service: 2 processors, 16 gigabytes, and 10 hours, with a money icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861591/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Economics/frame_180.jpg)
+![The image shows specifications for an on-demand service: 2 processors, 16 gigabytes, and 10 hours, with a money icon.](https://kodekloud.com/kk-media/image/upload/v1752861591/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Economics/frame_180.jpg)
 
 This model is particularly advantageous for experimentation, testing new configurations, or short-term projects.
 
@@ -38,7 +38,7 @@ This model is particularly advantageous for experimentation, testing new configu
 
 For long-term projects, AWS offers Reserved Instances. With this model, you commit to a specific resource (such as a two-processor, 16 GB virtual machine) for a duration of one or three years. Even if you reduce your usage during the commitment period, you are billed for the entire term. In return for this commitment, AWS provides significant discounts—often up to 66% or 72%—compared to on-demand pricing.
 
-![The image shows a timeline labeled "Reservations" with two points: "1 Year" and "3 Years," connected by a line.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861592/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Economics/frame_200.jpg)
+![The image shows a timeline labeled "Reservations" with two points: "1 Year" and "3 Years," connected by a line.](https://kodekloud.com/kk-media/image/upload/v1752861592/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Economics/frame_200.jpg)
 
 > **lightbulb** Reserved Instances are cost-effective when you have predictable resource needs and can commit to long-term usage.
 
@@ -54,7 +54,7 @@ These figures are illustrative; actual pricing may differ. Volume discounts can 
 
 Since its launch, AWS has continuously reduced prices by enhancing service performance and adding new features. For example, S3 storage prices in US East 1 have dropped from approximately 15 cents per GB in 2006 to between 0.023 and 0.026 USD per GB today.
 
-![The image shows AWS storage price drops from 0.15 USD per GB in 2006 to 0.023-0.026 USD per GB in 2023.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861593/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Economics/frame_360.jpg)
+![The image shows AWS storage price drops from 0.15 USD per GB in 2006 to 0.023-0.026 USD per GB in 2023.](https://kodekloud.com/kk-media/image/upload/v1752861593/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Economics/frame_360.jpg)
 
 ## Summary
 
@@ -67,7 +67,7 @@ Below is a summary of AWS economic models for quick reference:
 | Reserved Instances | Long-term commitment (1 or 3 years) that offers significant discounts.                                      | Cost efficiency for predictable, long-term usage        |
 | Volume Discounts   | Reduced per-unit cost as consumption increases.                                                             | Savings through economies of scale                      |
 
-![The image summarizes cloud computing economics, detailing free tiers, on-demand pricing, reservations, volume discounts, and AWS price drops.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861595/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Economics/frame_490.jpg)
+![The image summarizes cloud computing economics, detailing free tiers, on-demand pricing, reservations, volume discounts, and AWS price drops.](https://kodekloud.com/kk-media/image/upload/v1752861595/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Economics/frame_490.jpg)
 
 Thank you for reading this guide on cloud economics. We look forward to exploring more related topics with you in the next lesson.
 

@@ -6,9 +6,7 @@ This article explores Terraform lifecycle rules for managing resource creation a
 
 In this article, we explore various Terraform lifecycle rules and their role in managing resource creation and destruction. Understanding these rules is essential to preventing unwanted resource downtime and ensuring smooth infrastructure updates.
 
-<Frame>
-  ![The image features the text "Lifecycle Rules" on a purple background with layered hexagonal shapes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884172/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Lifecycle-Rules/frame_0.jpg)
-</Frame>
+![The image features the text "Lifecycle Rules" on a purple background with layered hexagonal shapes.](https://kodekloud.com/kk-media/image/upload/v1752884172/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Lifecycle-Rules/frame_0.jpg)
 
 ## Default Behavior in Terraform
 
@@ -35,9 +33,7 @@ Terraform allows you to modify the default behavior with lifecycle rules. Below 
 
 To ensure a new resource is created before destroying the current one, you can use the `create_before_destroy` lifecycle rule. This ensures minimal downtime during updates.
 
-<Callout icon="lightbulb">
-  When updating critical resources, using `create_before_destroy` can help maintain availability.
-</Callout>
+> **lightbulb** When updating critical resources, using `create_before_destroy` can help maintain availability.
 
 Update the resource as shown below:
 
@@ -104,9 +100,7 @@ resource "aws_instance" "cerberus" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Remember, `prevent_destroy` only protects against deletions during configuration changes with `terraform apply`. It does not override the `terraform destroy` command.
-</Callout>
+> **triangle-alert** Remember, `prevent_destroy` only protects against deletions during configuration changes with `terraform apply`. It does not override the `terraform destroy` command.
 
 ### 3. Ignore Changes
 
@@ -155,6 +149,4 @@ That concludes this overview of Terraform lifecycle rules. Please proceed to the
 
 Happy Terraforming!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/ed4291fc-57a9-43d3-abff-eb82bba4a679/lesson/1b6fc6ca-bff0-40b3-a9a5-d9f5c6cc911d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/ed4291fc-57a9-43d3-abff-eb82bba4a679/lesson/1b6fc6ca-bff0-40b3-a9a5-d9f5c6cc911d)

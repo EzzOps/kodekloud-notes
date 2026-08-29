@@ -17,9 +17,7 @@ variable "ami" {
 }
 ```
 
-<Callout icon="lightbulb">
-  Running `tofu init`, `tofu plan`, or `tofu apply` inside `aws-instance` treats it as the **root module**.
-</Callout>
+> **lightbulb** Running `tofu init`, `tofu plan`, or `tofu apply` inside `aws-instance` treats it as the **root module**.
 
 ## Calling Child Modules
 
@@ -55,9 +53,7 @@ FlexIT Consulting needs the same payroll stack in multiple regions. The architec
 
 All resources live in the default VPC:
 
-<Frame>
-  ![The image is a diagram of a simplified AWS architecture for FlexIT Consulting's payroll software, showing components like an AWS instance, S3 bucket, and DynamoDB table within a default VPC. It highlights aspects such as no IAM role considerations and default VPC and subnet usage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882878/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-What-are-Modules/aws-architecture-flexit-payroll-diagram.jpg)
-</Frame>
+![The image is a diagram of a simplified AWS architecture for FlexIT Consulting's payroll software, showing components like an AWS instance, S3 bucket, and DynamoDB table within a default VPC. It highlights aspects such as no IAM role considerations and default VPC and subnet usage.](https://kodekloud.com/kk-media/image/upload/v1752882878/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-What-are-Modules/aws-architecture-flexit-payroll-diagram.jpg)
 
 ### Define the Module
 
@@ -181,9 +177,7 @@ module.us_payroll.aws_instance.app_server     will be created
 module.us_payroll.aws_s3_bucket.payroll_data will be created
 ```
 
-<Callout icon="lightbulb">
-  The S3 bucket name combines the region prefix with the default bucket variable.
-</Callout>
+> **lightbulb** The S3 bucket name combines the region prefix with the default bucket variable.
 
 ***
 
@@ -232,9 +226,7 @@ module.uk_payroll.aws_dynamodb_table.payroll_db
 
 OpenTofu can source community or verified modules from the registry, just like Terraform. For example, to provision a security group:
 
-<Frame>
-  ![The image shows a search interface from the OpenTofu Registry, displaying results for "security-group" modules, including details about a Terraform module for creating EC2-VPC security groups on AWS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882880/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-What-are-Modules/opentofu-registry-security-group-module.jpg)
-</Frame>
+![The image shows a search interface from the OpenTofu Registry, displaying results for "security-group" modules, including details about a Terraform module for creating EC2-VPC security groups on AWS.](https://kodekloud.com/kk-media/image/upload/v1752882880/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-What-are-Modules/opentofu-registry-security-group-module.jpg)
 
 ```hcl theme={null}
 module "security_group_ssh" {
@@ -246,15 +238,11 @@ module "security_group_ssh" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Always pin the `version` to prevent unexpected module changes. Use `tofu get` or `tofu init` to fetch registry modules.
-</Callout>
+> **triangle-alert** Always pin the `version` to prevent unexpected module changes. Use `tofu get` or `tofu init` to fetch registry modules.
 
 ***
 
-<Frame>
-  ![The image is an infographic titled "OpenTofu Module" highlighting the benefits of using modules, including simpler configuration files, lower risk, and reusability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882880/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-What-are-Modules/opentofu-module-benefits-infographic.jpg)
-</Frame>
+![The image is an infographic titled "OpenTofu Module" highlighting the benefits of using modules, including simpler configuration files, lower risk, and reusability.](https://kodekloud.com/kk-media/image/upload/v1752882880/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-What-are-Modules/opentofu-module-benefits-infographic.jpg)
 
 | Benefit         | Description                                                      |
 | --------------- | ---------------------------------------------------------------- |
@@ -271,9 +259,7 @@ module "security_group_ssh" {
 * [Terraform Module Registry](https://registry.terraform.io/)
 * [AWS Provider for Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/d4c286c6-b8ee-47b1-bea3-abcf408b00ed/lesson/9d09c96a-4d2d-4f7c-81a1-5d46b790dd99" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/d4c286c6-b8ee-47b1-bea3-abcf408b00ed/lesson/9d09c96a-4d2d-4f7c-81a1-5d46b790dd99)
 
 
 # Demo AWS EC2 and Provisioners
@@ -439,9 +425,7 @@ Provision your instance to install Nginx at launch:
    }
    ```
 
-<Callout icon="lightbulb">
-  User data scripts run only on the first instance launch. Future `tofu apply` runs will not re-execute `user_data`.
-</Callout>
+> **lightbulb** User data scripts run only on the first instance launch. Future `tofu apply` runs will not re-execute `user_data`.
 
 Attempt to apply:
 
@@ -505,13 +489,9 @@ EOT
 }
 ```
 
-<Callout icon="lightbulb">
-  This block allocates and associates an Elastic IP, then writes the instance’s public DNS to `/root/serverless_publicDNS.txt`.
-</Callout>
+> **lightbulb** This block allocates and associates an Elastic IP, then writes the instance’s public DNS to `/root/serverless_publicDNS.txt`.
 
-<Frame>
-  ![The image shows a split-screen view with a task description on the left about creating an Elastic IP in Terraform, and a code editor on the right displaying a Terraform configuration file with AWS resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882882/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-AWS-EC2-and-Provisioners/elastic-ip-terraform-configuration-editor.jpg)
-</Frame>
+![The image shows a split-screen view with a task description on the left about creating an Elastic IP in Terraform, and a code editor on the right displaying a Terraform configuration file with AWS resources.](https://kodekloud.com/kk-media/image/upload/v1752882882/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-AWS-EC2-and-Provisioners/elastic-ip-terraform-configuration-editor.jpg)
 
 Apply your changes:
 
@@ -533,13 +513,9 @@ Note the `public_ip` (e.g., `52.47.169.195`).
 
 Because `aws_eip.eip` references `aws_instance.cerberus.id`, Terraform automatically creates the EC2 instance before allocating the EIP. There’s no reverse dependency.
 
-<Callout icon="lightbulb">
-  Terraform’s graph engine infers resource creation order by scanning references. No explicit `depends_on` is needed here.
-</Callout>
+> **lightbulb** Terraform’s graph engine infers resource creation order by scanning references. No explicit `depends_on` is needed here.
 
-<Frame>
-  ![The image shows a split screen with a multiple-choice question on the left and a code editor on the right displaying Terraform configuration files. The terminal at the bottom shows the output of a Terraform apply command.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882884/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-AWS-EC2-and-Provisioners/terraform-multiple-choice-code-editor.jpg)
-</Frame>
+![The image shows a split screen with a multiple-choice question on the left and a code editor on the right displaying Terraform configuration files. The terminal at the bottom shows the output of a Terraform apply command.](https://kodekloud.com/kk-media/image/upload/v1752882884/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-AWS-EC2-and-Provisioners/terraform-multiple-choice-code-editor.jpg)
 
 ***
 
@@ -552,8 +528,6 @@ That completes this lab. Thank you for following along!
 * [Terraform Provisioners](https://www.terraform.io/docs/language/resources/provisioners/syntax.html)
 * [SSH Key Management](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/98011198-b847-4ee1-a7bd-7593bfe5576c/lesson/f86348a1-e5b4-41e1-9265-34c3fa2dc375" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/98011198-b847-4ee1-a7bd-7593bfe5576c/lesson/f86348a1-e5b4-41e1-9265-34c3fa2dc375)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/98011198-b847-4ee1-a7bd-7593bfe5576c/lesson/67b0b9cc-3146-41a2-8b4f-7a0762841f04" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/98011198-b847-4ee1-a7bd-7593bfe5576c/lesson/67b0b9cc-3146-41a2-8b4f-7a0762841f04)

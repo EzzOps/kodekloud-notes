@@ -46,9 +46,7 @@ case $choice in
 esac
 ```
 
-<Callout icon="lightbulb">
-  Using a case statement not only simplifies the code but also improves its readability and maintenance, especially when dealing with multiple conditions.
-</Callout>
+> **lightbulb** Using a case statement not only simplifies the code but also improves its readability and maintenance, especially when dealing with multiple conditions.
 
 ## A Complete Menu-Driven Program
 
@@ -81,8 +79,6 @@ Practice incorporating case statements into your shell scripts to reinforce the 
 
 Happy scripting!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/054d2eb5-f3b9-47d4-af5a-37b9f0d15f2c/lesson/c0b72a68-7d6d-4441-acfa-40490557842a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/054d2eb5-f3b9-47d4-af5a-37b9f0d15f2c/lesson/c0b72a68-7d6d-4441-acfa-40490557842a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/054d2eb5-f3b9-47d4-af5a-37b9f0d15f2c/lesson/60356d99-44e3-421f-a2b0-3337d7c1a43c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/054d2eb5-f3b9-47d4-af5a-37b9f0d15f2c/lesson/60356d99-44e3-421f-a2b0-3337d7c1a43c)

@@ -6,9 +6,7 @@ Learn to enforce Terraform and Terragrunt version constraints in your configurat
 
 In this guide, you’ll learn how to enforce Terraform and Terragrunt version constraints directly within your Terragrunt configuration. By pinning approved versions of the binaries, you’ll avoid unexpected upgrades and ensure consistency across your infrastructure deployments.
 
-<Frame>
-  ![The image illustrates the benefits and considerations of using terraform\_version\_constraint and terragrunt\_version\_constraint attributes, highlighting version limitations and compatibility with setting constraints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884283/notes-assets/images/Terragrunt-for-Beginners-terraformterragrunt-version-constraint-Attribute/terraform-terragrunt-version-constraints-benefits.jpg)
-</Frame>
+![The image illustrates the benefits and considerations of using terraform\_version\_constraint and terragrunt\_version\_constraint attributes, highlighting version limitations and compatibility with setting constraints.](https://kodekloud.com/kk-media/image/upload/v1752884283/notes-assets/images/Terragrunt-for-Beginners-terraformterragrunt-version-constraint-Attribute/terraform-terragrunt-version-constraints-benefits.jpg)
 
 ## Why Version Constraints?
 
@@ -18,9 +16,7 @@ Use version constraints to:
 * Prevent accidental upgrades during CI/CD runs
 * Enforce organizational compliance on approved tool versions
 
-<Callout icon="lightbulb">
-  Always review your infrastructure modules and provider versions before updating constraints to avoid breaking changes.
-</Callout>
+> **lightbulb** Always review your infrastructure modules and provider versions before updating constraints to avoid breaking changes.
 
 ## Key Attributes
 

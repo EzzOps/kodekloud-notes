@@ -61,9 +61,7 @@ Key points:
 * Node functions return only the new or updated fields.
 * The framework merges partial updates into the global state so subsequent nodes always receive the complete current state.
 
-<Callout icon="lightbulb">
-  If you're using Python versions prior to 3.11, import `NotRequired` from `typing_extensions` instead of `typing`.
-</Callout>
+> **lightbulb** If you're using Python versions prior to 3.11, import `NotRequired` from `typing_extensions` instead of `typing`.
 
 This full-state-in, partial-state-out pattern keeps nodes decoupled. Nodes never pass values directly to one another; they communicate exclusively through the shared state object. That separation simplifies extensions like validation, external tool calls, and alternative routing without changing node signatures.
 
@@ -139,13 +137,9 @@ Links and references
 * LangGraph concepts: builder, nodes, edges, typed state (search for “LangGraph builder nodes edges” for more examples)
 * For typing help: `typing_extensions` documentation (if on Python \<3.11)
 
-<Callout icon="warning">
-  When evolving a linear graph into a branching or looping graph, keep node interfaces unchanged where possible — break changes across many nodes make maintenance harder.
-</Callout>
+> **warning** When evolving a linear graph into a branching or looping graph, keep node interfaces unchanged where possible — break changes across many nodes make maintenance harder.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/2e37c751-0429-43c9-8ecf-2df222ce0663/lesson/dc7a3746-fc97-46fd-b06e-0a82d5760404" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/2e37c751-0429-43c9-8ecf-2df222ce0663/lesson/dc7a3746-fc97-46fd-b06e-0a82d5760404)
 
 
 # Demo Time Travel with State Injection

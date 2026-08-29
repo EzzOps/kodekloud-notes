@@ -18,9 +18,7 @@ Using Azure AD authentication, users can access the SQL database with their Azur
 * **Granular Access Control:** Utilize Azure Role-Based Access Control (Azure RBAC) for fine-grained permissions management.
 * **Simplified Administration:** Reduce administrative overhead by centralizing authentication processes.
 
-<Frame>
-  ![The image illustrates the process of enabling Azure AD Authentication for SQL, highlighting benefits like secure methods, centralized identity management, and improved access control. It includes a diagram showing the connection between on-premises Active Directory and Azure services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881770/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-AD-authentication-for-SQL-database/azure-ad-authentication-sql-diagram.jpg)
-</Frame>
+![The image illustrates the process of enabling Azure AD Authentication for SQL, highlighting benefits like secure methods, centralized identity management, and improved access control. It includes a diagram showing the connection between on-premises Active Directory and Azure services.](https://kodekloud.com/kk-media/image/upload/v1752881770/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-AD-authentication-for-SQL-database/azure-ad-authentication-sql-diagram.jpg)
 
 By using Azure AD for authentication, you avoid creating separate SQL accounts. Instead, you rely on Azure AD's centralized management, which simplifies administration, enhances overall security, and streamlines user management. For instance, if a security breach occurs, such as password exposure, Azure AD’s Identity Protection features can lock the affected account immediately.
 
@@ -64,13 +62,9 @@ Follow these steps to configure Azure AD authentication for your SQL database:
 4. Save the configuration; this action enables Azure AD authentication and disables SQL authentication automatically.
 5. Return to your database and open the query editor to confirm that SQL authentication is disabled. Attempting to use SQL authentication will result in an error, while integrated (Azure AD) authentication is now active.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal with an SQL database query editor open. It displays a login error message indicating that Azure Active Directory only authentication is enabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881771/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-AD-authentication-for-SQL-database/azure-portal-sql-query-error.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal with an SQL database query editor open. It displays a login error message indicating that Azure Active Directory only authentication is enabled.](https://kodekloud.com/kk-media/image/upload/v1752881771/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-AD-authentication-for-SQL-database/azure-portal-sql-query-error.jpg)
 
-<Callout icon="lightbulb">
-  If you encounter an error when attempting integrated authentication, it could indicate that your IP address is not included in the SQL firewall settings. To resolve this, add your IP address to the SQL firewall.
-</Callout>
+> **lightbulb** If you encounter an error when attempting integrated authentication, it could indicate that your IP address is not included in the SQL firewall settings. To resolve this, add your IP address to the SQL firewall.
 
 By centralizing user authentication, you benefit from enhanced security and a simplified management process that leverages the power of Azure AD.
 
@@ -81,6 +75,4 @@ For further information, explore the following resources:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d199f126-f1df-43a8-bd3d-68cd689d509d/lesson/294b728e-a8c1-453a-976b-25798e787d2f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d199f126-f1df-43a8-bd3d-68cd689d509d/lesson/294b728e-a8c1-453a-976b-25798e787d2f)

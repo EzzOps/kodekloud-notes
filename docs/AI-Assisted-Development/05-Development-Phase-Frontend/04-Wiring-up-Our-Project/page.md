@@ -182,7 +182,7 @@ In this React component, the selected image is uploaded to the Flask backend. Up
 
 When testing your application, open your browser's developer tools to monitor network activity and validate that the Flask server is accessible at `127.0.0.1:5000`. For instance, after choosing an image like "coolgirl.jpeg" from your computer, you should see a preview similar to the one below:
 
-![The image shows a computer screen with a file explorer window open, displaying a folder containing image files. The selected file is "coolgirl.jpeg," and a preview of the image is visible on the right side of the window.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857070/notes-assets/images/AI-Assisted-Development-Wiring-up-Our-Project/file-explorer-image-preview-coolgirl.jpg)
+![The image shows a computer screen with a file explorer window open, displaying a folder containing image files. The selected file is "coolgirl.jpeg," and a preview of the image is visible on the right side of the window.](https://kodekloud.com/kk-media/image/upload/v1752857070/notes-assets/images/AI-Assisted-Development-Wiring-up-Our-Project/file-explorer-image-preview-coolgirl.jpg)
 
 ***
 
@@ -225,7 +225,7 @@ def create_app():
 
 A major feature of this project is the display of both the original and optimized images, including their file sizes, for side-by-side comparison. Once you click the "Optimize Image" button, the React component processes the binary response from the Flask endpoint and displays the optimized image with its size information. For example:
 
-![The image shows a computer screen with a web development environment open, displaying a cartoon character in a hoodie and sunglasses holding a phone. The browser window is running a local server with an "Optimize Image" button and developer tools open.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857073/notes-assets/images/AI-Assisted-Development-Wiring-up-Our-Project/web-development-cartoon-character-screen.jpg)
+![The image shows a computer screen with a web development environment open, displaying a cartoon character in a hoodie and sunglasses holding a phone. The browser window is running a local server with an "Optimize Image" button and developer tools open.](https://kodekloud.com/kk-media/image/upload/v1752857073/notes-assets/images/AI-Assisted-Development-Wiring-up-Our-Project/web-development-cartoon-character-screen.jpg)
 
 In some cases, an initial image (e.g., 85.95 kilobytes) might be optimized to 24.94 kilobytes, resulting in a 71% size reduction. Experiment with various quality settings to see how they affect the file size and visual quality.
 
@@ -243,7 +243,7 @@ You can find the complete source code for both the Flask backend and the React f
 
 [Super-Image Optimizer on GitHub](https://github.com/JeremyMorgan/super-image-optimizer)
 
-![The image shows a GitHub repository page for a project called "Super-Image-Optimizer." It includes details like files, commits, and a brief description of the project as a web-based image optimizer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857074/notes-assets/images/AI-Assisted-Development-Wiring-up-Our-Project/super-image-optimizer-repo.jpg)
+![The image shows a GitHub repository page for a project called "Super-Image-Optimizer." It includes details like files, commits, and a brief description of the project as a web-based image optimizer.](https://kodekloud.com/kk-media/image/upload/v1752857074/notes-assets/images/AI-Assisted-Development-Wiring-up-Our-Project/super-image-optimizer-repo.jpg)
 
 Thank you for following along. With the project now fully integrated, we're ready to explore further enhancements and refinements to our application.
 

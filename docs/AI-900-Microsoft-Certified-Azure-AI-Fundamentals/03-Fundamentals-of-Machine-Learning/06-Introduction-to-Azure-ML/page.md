@@ -8,13 +8,13 @@ Welcome to this comprehensive guide on Azure Machine Learning—a powerful, clou
 
 Azure Machine Learning offers a full suite of tools that support every stage of the machine learning lifecycle, from data preparation to deployment. One of its key features is the intuitive Azure Machine Learning Studio, a virtual workspace that allows you to drag and drop components to build models without extensive coding experience.
 
-![The image is an introduction to Azure Machine Learning, showcasing a user-friendly interface with a diagram explaining the workflow and a screenshot of the Azure Machine Learning Studio displaying metrics and a confusion matrix for a penguin classifier model.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856994/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Azure-ML/azure-machine-learning-introduction-diagram.jpg)
+![The image is an introduction to Azure Machine Learning, showcasing a user-friendly interface with a diagram explaining the workflow and a screenshot of the Azure Machine Learning Studio displaying metrics and a confusion matrix for a penguin classifier model.](https://kodekloud.com/kk-media/image/upload/v1752856994/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Azure-ML/azure-machine-learning-introduction-diagram.jpg)
 
 > **lightbulb** Azure Machine Learning Studio is designed for simplicity. Its visual tools help you quickly build and modify your machine learning models, which you can then deploy as web services.
 
 This user-friendly interface makes the platform ideal for those new to machine learning. After developing a model, you can deploy it as a web service and integrate it into your applications to provide real-time predictions.
 
-![The image is an introduction to Azure Machine Learning, showing a diagram of deploying machine learning models as services and a screenshot of the Azure Machine Learning Studio interface with metrics and a confusion matrix for a penguin classifier model.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856995/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Azure-ML/azure-machine-learning-introduction-diagram-2.jpg)
+![The image is an introduction to Azure Machine Learning, showing a diagram of deploying machine learning models as services and a screenshot of the Azure Machine Learning Studio interface with metrics and a confusion matrix for a penguin classifier model.](https://kodekloud.com/kk-media/image/upload/v1752856995/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Azure-ML/azure-machine-learning-introduction-diagram-2.jpg)
 
 The streamlined deployment process ensures that your model delivers insights quickly and efficiently by combining robust cloud capabilities with an easy-to-use interface.
 
@@ -31,23 +31,23 @@ When you click on "Launch Studio," you are presented with a user-friendly interf
 
 For example, you might work with a dataset like the "house price sheet"—a CSV file containing various parameters related to house pricing.
 
-![The image shows a screenshot of the Azure Machine Learning Studio interface, displaying details of a dataset named "house\_price\_sheet," including its attributes, data sources, and version information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856996/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Azure-ML/azure-machine-learning-house-price-dataset.jpg)
+![The image shows a screenshot of the Azure Machine Learning Studio interface, displaying details of a dataset named "house\_price\_sheet," including its attributes, data sources, and version information.](https://kodekloud.com/kk-media/image/upload/v1752856996/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Azure-ML/azure-machine-learning-house-price-dataset.jpg)
 
 After uploading your dataset, you can initiate a job that builds and trains a model using AutoML.
 
-![The image shows the "Jobs" section of Azure Machine Learning Studio, displaying a list of experiments with details such as the latest job, submission date, and job type. The sidebar includes options like Notebooks, Automated ML, and Pipelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856997/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Azure-ML/azure-machine-learning-jobs-section.jpg)
+![The image shows the "Jobs" section of Azure Machine Learning Studio, displaying a list of experiments with details such as the latest job, submission date, and job type. The sidebar includes options like Notebooks, Automated ML, and Pipelines.](https://kodekloud.com/kk-media/image/upload/v1752856997/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Azure-ML/azure-machine-learning-jobs-section.jpg)
 
 Once the training is complete, Azure Machine Learning Studio displays the best model generated from the AutoML job.
 
-![The image shows a screenshot of the Azure Machine Learning Studio interface, displaying details of a completed automated machine learning job named "house\_price," including properties, inputs, outputs, and best model summary.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856998/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Azure-ML/azure-machine-learning-house-price-job.jpg)
+![The image shows a screenshot of the Azure Machine Learning Studio interface, displaying details of a completed automated machine learning job named "house\_price," including properties, inputs, outputs, and best model summary.](https://kodekloud.com/kk-media/image/upload/v1752856998/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Azure-ML/azure-machine-learning-house-price-job.jpg)
 
 The developed algorithm can then be deployed as an endpoint for real-time predictions.
 
-![The image shows the Azure Machine Learning Studio interface with a completed job for a house prices model. It displays model details, including the algorithm name "VotingEnsemble" and performance metrics like the normalized root mean squared error.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856999/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Azure-ML/azure-machine-learning-house-prices-model.jpg)
+![The image shows the Azure Machine Learning Studio interface with a completed job for a house prices model. It displays model details, including the algorithm name "VotingEnsemble" and performance metrics like the normalized root mean squared error.](https://kodekloud.com/kk-media/image/upload/v1752856999/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Azure-ML/azure-machine-learning-house-prices-model.jpg)
 
 Once deployed, you can access and test the endpoint directly from the Studio interface. For instance, selecting the endpoint offers options to test the service with sample data, ensuring that your model integrates smoothly into your applications.
 
-![The image shows the Azure Machine Learning Studio interface, specifically the "Endpoints" section, listing a real-time endpoint named "ml-house-prices-ai900."](../../../../images/kodekloud.com/kk-media/image/upload/v1752857000/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Azure-ML/azure-machine-learning-endpoints-ml-house-prices.jpg)
+![The image shows the Azure Machine Learning Studio interface, specifically the "Endpoints" section, listing a real-time endpoint named "ml-house-prices-ai900."](https://kodekloud.com/kk-media/image/upload/v1752857000/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Azure-ML/azure-machine-learning-endpoints-ml-house-prices.jpg)
 
 ## Testing the Endpoint
 

@@ -82,11 +82,9 @@ Links and references
 * [Prometheus](https://prometheus.io)
 * jq: [https://stedolan.github.io/jq/](https://stedolan.github.io/jq/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/4dfb9257-7cc3-4837-b314-207a8d758584" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/4dfb9257-7cc3-4837-b314-207a8d758584)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/9d957351-7ded-4b48-a240-cd70699a17e1" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/9d957351-7ded-4b48-a240-cd70699a17e1)
 
 
 # Demo Storage Classes in Action
@@ -125,9 +123,7 @@ local-path   rancher.io/local-path   Delete          WaitForFirstConsumer     fa
 
 Note: The cluster’s default StorageClass (if set) is indicated by an annotation/marker in some `kubectl get sc` output. If a PVC omits `storageClassName`, Kubernetes uses the default StorageClass automatically (if one exists).
 
-<Callout icon="lightbulb">
-  If a PVC does not set `storageClassName`, Kubernetes assigns the default StorageClass (if one exists). This behavior is important in production clusters to avoid unexpected storage types being provisioned.
-</Callout>
+> **lightbulb** If a PVC does not set `storageClassName`, Kubernetes assigns the default StorageClass (if one exists). This behavior is important in production clusters to avoid unexpected storage types being provisioned.
 
 ## Inspect a StorageClass
 

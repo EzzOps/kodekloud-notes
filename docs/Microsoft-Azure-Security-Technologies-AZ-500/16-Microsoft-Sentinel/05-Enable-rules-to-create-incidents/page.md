@@ -14,13 +14,9 @@ After gathering data and visualizing it through workbooks, you can now turn the 
 
 To get started, log in to the [Azure portal](https://portal.azure.com) and open Microsoft Sentinel. Next, navigate to **Analytics** where you can either create your own scheduled queries or select from the rule templates provided by Sentinel. By default, Microsoft Sentinel includes an enabled rule called "Advanced Multistage Attack Detection." This rule is specifically designed to analyze multiple events sourced from your connected systems.
 
-<Frame>
-  ![The image shows a Microsoft Sentinel Analytics dashboard with a focus on "Advanced Multistage Attack Detection" rules, highlighting a high-severity alert. The interface includes options for managing rules and viewing threat management features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882061/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-rules-to-create-incidents/microsoft-sentinel-advanced-attack-dashboard.jpg)
-</Frame>
+![The image shows a Microsoft Sentinel Analytics dashboard with a focus on "Advanced Multistage Attack Detection" rules, highlighting a high-severity alert. The interface includes options for managing rules and viewing threat management features.](https://kodekloud.com/kk-media/image/upload/v1752882061/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-rules-to-create-incidents/microsoft-sentinel-advanced-attack-dashboard.jpg)
 
-<Callout icon="lightbulb">
-  For this exercise, we will explore a different scenario that focuses on Windows security events.
-</Callout>
+> **lightbulb** For this exercise, we will explore a different scenario that focuses on Windows security events.
 
 ***
 
@@ -87,13 +83,9 @@ You also have options to:
 * Group alerts based on similarity to minimize noise.
 * Configure incident settings to automatically create an incident in Microsoft Sentinel under specific conditions.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating a new scheduled analytics rule, specifically for excessive Windows logon failures. It includes options for setting query scheduling and alert details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882062/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-rules-to-create-incidents/azure-scheduled-analytics-rule.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating a new scheduled analytics rule, specifically for excessive Windows logon failures. It includes options for setting query scheduling and alert details.](https://kodekloud.com/kk-media/image/upload/v1752882062/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-rules-to-create-incidents/azure-scheduled-analytics-rule.jpg)
 
-<Callout icon="lightbulb">
-  You can further enhance the alert by incorporating custom fields from your Log Analytics query. However, the default setup will suffice for a basic configuration.
-</Callout>
+> **lightbulb** You can further enhance the alert by incorporating custom fields from your Log Analytics query. However, the default setup will suffice for a basic configuration.
 
 ***
 
@@ -105,19 +97,13 @@ To complete the process, review your settings and click **Create**. The analytic
 
 Once an incident is recorded, you can inspect its details. This includes information such as the administrator username, the affected VM, and other relevant event data. Testing can be performed by simulating failed logins from the command line; after a few minutes, an incident should appear on the Sentinel dashboard.
 
-<Frame>
-  ![The image shows a Microsoft Sentinel Analytics dashboard with active rules listed, including "Excessive Windows Logon Failures" and "Advanced Multistage Attack Detection," each with their severity, status, and other details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882064/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-rules-to-create-incidents/microsoft-sentinel-analytics-dashboard.jpg)
-</Frame>
+![The image shows a Microsoft Sentinel Analytics dashboard with active rules listed, including "Excessive Windows Logon Failures" and "Advanced Multistage Attack Detection," each with their severity, status, and other details.](https://kodekloud.com/kk-media/image/upload/v1752882064/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-rules-to-create-incidents/microsoft-sentinel-analytics-dashboard.jpg)
 
-<Frame>
-  ![The image shows a Microsoft Sentinel dashboard displaying an incident related to "Excessive Windows Logon Failures," with details about severity, alerts, and evidence.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882065/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-rules-to-create-incidents/microsoft-sentinel-dashboard-windows-logon-failures.jpg)
-</Frame>
+![The image shows a Microsoft Sentinel dashboard displaying an incident related to "Excessive Windows Logon Failures," with details about severity, alerts, and evidence.](https://kodekloud.com/kk-media/image/upload/v1752882065/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-rules-to-create-incidents/microsoft-sentinel-dashboard-windows-logon-failures.jpg)
 
 Within the incident view, details such as the administrator’s information, VM name, and other event specifics are made available. To display additional information like IP addresses, simply map the corresponding field from your query to the incident layout.
 
-<Frame>
-  ![The image shows a Microsoft Azure Sentinel dashboard displaying an incident titled "Excessive Windows Logon Failures," with details about the incident's severity, status, and entities involved.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882066/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-rules-to-create-incidents/azure-sentinel-dashboard-windows-logon-failures.jpg)
-</Frame>
+![The image shows a Microsoft Azure Sentinel dashboard displaying an incident titled "Excessive Windows Logon Failures," with details about the incident's severity, status, and entities involved.](https://kodekloud.com/kk-media/image/upload/v1752882066/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-rules-to-create-incidents/azure-sentinel-dashboard-windows-logon-failures.jpg)
 
 ***
 
@@ -127,6 +113,4 @@ By enabling rules in Microsoft Sentinel, you empower your organization to automa
 
 Happy securing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/fdf529c7-54c7-4550-a622-aec81172dcad/lesson/0fb29554-1228-4567-9a36-706c2dd3eebc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/fdf529c7-54c7-4550-a622-aec81172dcad/lesson/0fb29554-1228-4567-9a36-706c2dd3eebc)

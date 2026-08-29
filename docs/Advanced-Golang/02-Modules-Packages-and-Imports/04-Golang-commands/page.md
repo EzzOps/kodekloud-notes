@@ -50,7 +50,7 @@ go env GOPATH
 
 Below is a diagram that illustrates the difference between `go build` and `go install`:
 
-![The image explains the difference between the go build and go install commands in Go programming. go build compiles and creates an executable in the current directory, while go install compiles, moves the executable to \$GOPATH/bin, and allows it to run from any terminal path.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868736/notes-assets/images/Advanced-Golang-Golang-commands/go-build-vs-go-install-explained.jpg)
+![The image explains the difference between the go build and go install commands in Go programming. go build compiles and creates an executable in the current directory, while go install compiles, moves the executable to \$GOPATH/bin, and allows it to run from any terminal path.](https://kodekloud.com/kk-media/image/upload/v1752868736/notes-assets/images/Advanced-Golang-Golang-commands/go-build-vs-go-install-explained.jpg)
 
 ## Managing Dependencies with go get
 

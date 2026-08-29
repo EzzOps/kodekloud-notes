@@ -8,7 +8,7 @@ CloudTrail is an essential AWS service for auditing user activity and API usage.
 
 CloudTrail captures a variety of events, including configuration changes, data access, and logging operations, and allows you to configure real-time alerts for specific activities. These alerts can be integrated with additional AWS services such as S3, EventBridge, Lambda, SNS, Elasticsearch, Athena, and CloudWatch Logs Insights for deeper analysis.
 
-![The image is a diagram illustrating AWS CloudTrail's integration with various AWS services for API calls, triggers, alerts, and analysis, including EventBridge, Lambda, SNS, Elasticsearch, and Athena.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859839/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Auditing-With-CloudTrail/aws-cloudtrail-integration-diagram.jpg)
+![The image is a diagram illustrating AWS CloudTrail's integration with various AWS services for API calls, triggers, alerts, and analysis, including EventBridge, Lambda, SNS, Elasticsearch, and Athena.](https://kodekloud.com/kk-media/image/upload/v1752859839/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Auditing-With-CloudTrail/aws-cloudtrail-integration-diagram.jpg)
 
 CloudTrail is also critical for meeting compliance requirements. Its clear audit trail supports:
 
@@ -17,13 +17,13 @@ CloudTrail is also critical for meeting compliance requirements. Its clear audit
 * **Operational Auditing:** Tracks changes within the AWS environment.
 * **Governance:** Offers comprehensive visibility and accountability.
 
-![The image outlines the benefits of using CloudTrail for auditing, highlighting compliance, security monitoring, operational auditing, and governance. Each benefit is represented by a numbered icon with a relevant symbol.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859840/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Auditing-With-CloudTrail/cloudtrail-auditing-benefits-diagram.jpg)
+![The image outlines the benefits of using CloudTrail for auditing, highlighting compliance, security monitoring, operational auditing, and governance. Each benefit is represented by a numbered icon with a relevant symbol.](https://kodekloud.com/kk-media/image/upload/v1752859840/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Auditing-With-CloudTrail/cloudtrail-auditing-benefits-diagram.jpg)
 
 ## Setting Up CloudTrail for Auditing
 
 Configuring CloudTrail is straightforward. Begin by specifying a meaningful trail name and selecting a destination, such as an S3 bucket, for log storage. If needed, you can enable CloudWatch Logs to leverage CloudWatch Logs Insights for a more detailed analysis. CloudTrail allows you to filter the types of events that are captured, including management events, data events, and other specific event types.
 
-![The image is a flowchart illustrating the steps for setting up AWS CloudTrail for auditing, including naming the trail, creating an S3 bucket, enabling CloudWatch logs, and choosing events.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859841/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Auditing-With-CloudTrail/aws-cloudtrail-setup-flowchart.jpg)
+![The image is a flowchart illustrating the steps for setting up AWS CloudTrail for auditing, including naming the trail, creating an S3 bucket, enabling CloudWatch logs, and choosing events.](https://kodekloud.com/kk-media/image/upload/v1752859841/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Auditing-With-CloudTrail/aws-cloudtrail-setup-flowchart.jpg)
 
 Additional configuration options include:
 
@@ -44,11 +44,11 @@ In such cases, a security engineer can leverage CloudTrail to:
 3. Utilize CloudWatch Logs Insights for a more in-depth exploration of the logs.
 4. Configure CloudWatch alarms to trigger notifications for similar future anomalies.
 
-![The image illustrates a process of using AWS CloudTrail for security auditing, showing how a cloud engineer watches logs, identifies user actions, and uses CloudWatch for further investigation and alarm creation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859843/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Auditing-With-CloudTrail/aws-cloudtrail-security-auditing.jpg)
+![The image illustrates a process of using AWS CloudTrail for security auditing, showing how a cloud engineer watches logs, identifies user actions, and uses CloudWatch for further investigation and alarm creation.](https://kodekloud.com/kk-media/image/upload/v1752859843/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Auditing-With-CloudTrail/aws-cloudtrail-security-auditing.jpg)
 
 By providing detailed logging information, CloudTrail helps you understand who made changes, what was modified, and when the changes occurred.
 
-![The image is a slide titled "Using CloudTrail for Security Auditing," highlighting CloudTrail's role in tracking changes to critical resources and providing detailed logs for incident investigation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859844/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Auditing-With-CloudTrail/using-cloudtrail-security-auditing.jpg)
+![The image is a slide titled "Using CloudTrail for Security Auditing," highlighting CloudTrail's role in tracking changes to critical resources and providing detailed logs for incident investigation.](https://kodekloud.com/kk-media/image/upload/v1752859844/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Auditing-With-CloudTrail/using-cloudtrail-security-auditing.jpg)
 
 ## Integration with CloudWatch
 

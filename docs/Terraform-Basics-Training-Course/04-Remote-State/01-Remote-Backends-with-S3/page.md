@@ -6,16 +6,12 @@ This article explains how to configure Terraform to use a remote backend with AW
 
 In this lesson, we explain how to configure Terraform to use a remote backend with an AWS S3 bucket and DynamoDB for state locking and consistency checks. This approach helps centralize your state file and improve collaboration when managing infrastructure as code.
 
-<Callout icon="lightbulb">
-  Before you begin, ensure you have completed the following:
+> **lightbulb** Before you begin, ensure you have completed the following:
 
   1. Created an S3 bucket to store your Terraform state file.
   2. Set up a DynamoDB table with a primary (hash) key named "lockid" for state locking.
-</Callout>
 
-<Frame>
-  ![The image illustrates a remote backend setup for Terraform, showing components like Terraform State and State Locking, with configuration details for a bucket and DynamoDB table.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884185/notes-assets/images/Terraform-Basics-Training-Course-Remote-Backends-with-S3/frame_20.jpg)
-</Frame>
+![The image illustrates a remote backend setup for Terraform, showing components like Terraform State and State Locking, with configuration details for a bucket and DynamoDB table.](https://kodekloud.com/kk-media/image/upload/v1752884185/notes-assets/images/Terraform-Basics-Training-Course-Remote-Backends-with-S3/frame_20.jpg)
 
 Make note of the following details:
 
@@ -53,9 +49,7 @@ terraform {
 * **region:** The AWS region where your S3 bucket is located.
 * **dynamodb\_table:** Name of the pre-created DynamoDB table enabling state locking to ensure safe concurrent updates.
 
-<Callout icon="lightbulb">
-  It is recommended to separate your backend configuration from your infrastructure code. Consider moving the Terraform block (or at least the backend settings) from `main.tf` to a separate file (e.g., `terraform.tf`) to improve clarity.
-</Callout>
+> **lightbulb** It is recommended to separate your backend configuration from your infrastructure code. Consider moving the Terraform block (or at least the backend settings) from `main.tf` to a separate file (e.g., `terraform.tf`) to improve clarity.
 
 ## Initializing the Remote Backend
 
@@ -103,8 +97,6 @@ For additional resources and documentation, see:
 * [AWS S3 Documentation](https://aws.amazon.com/s3/)
 * [DynamoDB Documentation](https://aws.amazon.com/dynamodb/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9464f9ce-236c-4f22-a61b-5398307b47b4/lesson/679971cc-3f97-4c67-8788-30574aad8083" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9464f9ce-236c-4f22-a61b-5398307b47b4/lesson/679971cc-3f97-4c67-8788-30574aad8083)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9464f9ce-236c-4f22-a61b-5398307b47b4/lesson/31d4668f-3bef-442e-b7df-aac695f52719" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9464f9ce-236c-4f22-a61b-5398307b47b4/lesson/31d4668f-3bef-442e-b7df-aac695f52719)

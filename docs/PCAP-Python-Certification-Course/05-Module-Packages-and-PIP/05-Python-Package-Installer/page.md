@@ -26,9 +26,7 @@ For instance, the output might be similar to:
 pip 21.2.dev0 from /opt/virtualenvs/python3/lib/python3.8/site-packages/pip (python 3.8)
 ```
 
-<Callout icon="lightbulb">
-  A working network connection is required since pip downloads packages over the internet.
-</Callout>
+> **lightbulb** A working network connection is required since pip downloads packages over the internet.
 
 ## Searching and Installing Packages
 
@@ -85,8 +83,6 @@ Replace `<package-name>` with the name of the package you wish to uninstall.
 
 That's it for now! It's time to gain some hands-on experience with installing and managing Python packages from PyPI. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/a65eb782-d2dc-4850-9046-e4bb57d38876/lesson/558ab462-f878-4af8-bfaf-bdd0ba378b83" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/a65eb782-d2dc-4850-9046-e4bb57d38876/lesson/558ab462-f878-4af8-bfaf-bdd0ba378b83)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/a65eb782-d2dc-4850-9046-e4bb57d38876/lesson/b17ee4d6-0859-42c6-9989-8f1201e7c88f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/a65eb782-d2dc-4850-9046-e4bb57d38876/lesson/b17ee4d6-0859-42c6-9989-8f1201e7c88f)

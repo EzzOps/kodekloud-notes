@@ -19,11 +19,11 @@ Before registering an agent, you must generate a PAT in Azure DevOps.
 
 > **triangle-alert** Always restrict your PAT to the least-privilege scopes required. Avoid selecting **Full Access** unless absolutely necessary.
 
-![The image shows a user interface for creating a new personal access token in Azure DevOps, with options to set the token's name, organization, expiration, and access scopes. The left panel displays user settings, including personal access tokens and SSH public keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867856/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Self-Hosted-Build-Agents/azure-devops-personal-access-token-ui.jpg)
+![The image shows a user interface for creating a new personal access token in Azure DevOps, with options to set the token's name, organization, expiration, and access scopes. The left panel displays user settings, including personal access tokens and SSH public keys.](https://kodekloud.com/kk-media/image/upload/v1752867856/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Self-Hosted-Build-Agents/azure-devops-personal-access-token-ui.jpg)
 
 5. Click **Create**, then immediately **Copy** the token—this is the only time it will be displayed.
 
-![The image shows a screenshot of the Azure DevOps user settings page, specifically the "Personal Access Tokens" section, with a success message indicating a new token has been created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867857/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Self-Hosted-Build-Agents/azure-devops-personal-access-tokens-screenshot.jpg)
+![The image shows a screenshot of the Azure DevOps user settings page, specifically the "Personal Access Tokens" section, with a success message indicating a new token has been created.](https://kodekloud.com/kk-media/image/upload/v1752867857/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Self-Hosted-Build-Agents/azure-devops-personal-access-tokens-screenshot.jpg)
 
 ## 2. Add a Self-Hosted Agent Pool
 
@@ -35,7 +35,7 @@ Now create a dedicated pool to organize your self-hosted agents.
    * **Pool name:** `KodeKloudCustomer`
    * Optionally, check **Grant access permission to all pipelines**
 
-![The image shows a web interface for Azure DevOps, specifically the "Agent pools" settings page, with a dialog open for adding a new self-hosted agent pool named "KodeKloudCus."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867857/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Self-Hosted-Build-Agents/azure-devops-agent-pools-settings-dialog.jpg)
+![The image shows a web interface for Azure DevOps, specifically the "Agent pools" settings page, with a dialog open for adding a new self-hosted agent pool named "KodeKloudCus."](https://kodekloud.com/kk-media/image/upload/v1752867857/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Self-Hosted-Build-Agents/azure-devops-agent-pools-settings-dialog.jpg)
 
 4. Click **Create**.
 
@@ -98,7 +98,7 @@ PS C:\agent> .\run.cmd
 2024-09-11 05:24:11Z: Listening for Jobs
 ```
 
-![The image shows an Azure DevOps interface displaying the "Agent pools" settings for "KodeKloudCustomer," with one agent named "KodeKloudAgent1" listed as online and idle.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867858/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Self-Hosted-Build-Agents/azure-devops-agent-pools-kodekloud.jpg)
+![The image shows an Azure DevOps interface displaying the "Agent pools" settings for "KodeKloudCustomer," with one agent named "KodeKloudAgent1" listed as online and idle.](https://kodekloud.com/kk-media/image/upload/v1752867858/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Self-Hosted-Build-Agents/azure-devops-agent-pools-kodekloud.jpg)
 
 Your agent should now appear **Online** and **Idle** in the `KodeKloudCustomer` pool, ready to process pipeline jobs.
 

@@ -6,10 +6,8 @@ Terragrunt’s terraform_binary attribute allows specifying a custom Terraform e
 
 Terragrunt’s `terraform_binary` attribute enables you to specify a custom Terraform executable instead of relying on the system default. By pointing Terragrunt to a specific binary—either by name or full path—you can maintain consistent Terraform versions across multiple environments, projects, and CI/CD pipelines.
 
-<Callout icon="lightbulb">
-  Before you begin, verify that the path to your custom Terraform binary is correct and that the file has execute permissions.\
+> **lightbulb** Before you begin, verify that the path to your custom Terraform binary is correct and that the file has execute permissions.\
   You can check permissions with `ls -l /path/to/terraform`.
-</Callout>
 
 ## Why Override the Terraform Binary?
 
@@ -108,9 +106,7 @@ took 875ms
 
 Terragrunt will use Terraform **v1.9.0-beta** instead of the default in your `PATH`.
 
-<Callout icon="triangle-alert">
-  If the specified binary is not found or not executable, Terragrunt will fail to initialize. Always include the correct path and ensure execution rights.
-</Callout>
+> **triangle-alert** If the specified binary is not found or not executable, Terragrunt will fail to initialize. Always include the correct path and ensure execution rights.
 
 ***
 
@@ -129,6 +125,4 @@ Terragrunt will use Terraform **v1.9.0-beta** instead of the default in your `PA
 * [Terraform CLI](https://www.terraform.io/docs/cli)
 * [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/4980c20c-508c-44f3-9890-a0527e0296c8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/4980c20c-508c-44f3-9890-a0527e0296c8)

@@ -6,7 +6,7 @@ This lesson explores AWS CodeBuilds role in CI/CD pipelines, focusing on automat
 
 Welcome to this lesson on AWS CodeBuild. In this module, we’ll explore how CodeBuild fits into the **Build** phase of your CI/CD pipeline, automating compilation, testing, and artifact generation. By integrating CodeBuild, you can achieve a fully managed, scalable build process that feeds seamlessly into Continuous Deployment.
 
-![The image illustrates a CI/CD pipeline with stages labeled Source, Build, Test, and Deploy, featuring AWS CodeBuild. It includes an infinity loop symbolizing continuous integration and delivery.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862640/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeBuild/ci-cd-pipeline-aws-codebuild.jpg)
+![The image illustrates a CI/CD pipeline with stages labeled Source, Build, Test, and Deploy, featuring AWS CodeBuild. It includes an infinity loop symbolizing continuous integration and delivery.](https://kodekloud.com/kk-media/image/upload/v1752862640/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeBuild/ci-cd-pipeline-aws-codebuild.jpg)
 
 ## Why Choose AWS CodeBuild?
 
@@ -18,7 +18,7 @@ AWS CodeBuild is a serverless, fully managed build service that scales with your
 
 > **lightbulb** You’re billed only for the compute minutes consumed by your builds, making CodeBuild cost-effective for fluctuating workloads.
 
-![The image is a split screen with the left side listing features like "Fully managed," "Scalable," and "IAM," and the right side displaying the AWS CodeBuild logo with a crane and code symbol.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862641/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeBuild/aws-codebuild-features-split-screen.jpg)
+![The image is a split screen with the left side listing features like "Fully managed," "Scalable," and "IAM," and the right side displaying the AWS CodeBuild logo with a crane and code symbol.](https://kodekloud.com/kk-media/image/upload/v1752862641/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeBuild/aws-codebuild-features-split-screen.jpg)
 
 ## Supported Source Repositories
 
@@ -31,7 +31,7 @@ CodeBuild integrates with popular source providers:
 | GitHub         | [https://github.com](https://github.com)                                 | Public & private code hosting  |
 | Bitbucket      | [https://bitbucket.org](https://bitbucket.org)                           | Atlassian’s Git platform       |
 
-![The image shows a DevOps CI/CD pipeline diagram with stages labeled Source, Build, Test, and Deploy, alongside icons for AWS Cloud services (Amazon S3, AWS CodeCommit) and third-party services (GitHub, Bitbucket).](../../../../images/kodekloud.com/kk-media/image/upload/v1752862642/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeBuild/devops-cicd-pipeline-diagram-aws-github.jpg)
+![The image shows a DevOps CI/CD pipeline diagram with stages labeled Source, Build, Test, and Deploy, alongside icons for AWS Cloud services (Amazon S3, AWS CodeCommit) and third-party services (GitHub, Bitbucket).](https://kodekloud.com/kk-media/image/upload/v1752862642/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeBuild/devops-cicd-pipeline-diagram-aws-github.jpg)
 
 ## Integrating or Replacing Jenkins
 
@@ -40,7 +40,7 @@ If you use [Jenkins](https://www.jenkins.io/), you can either:
 1. **Replace** Jenkins entirely with CodeBuild for an all-AWS solution.
 2. **Integrate** Jenkins and CodeBuild by installing the AWS CodeBuild plugin, offloading build jobs to CodeBuild while maintaining existing pipelines.
 
-![The image shows a DevOps lifecycle diagram with stages labeled Source, Build, Test, and Deploy, alongside logos for AWS CodeBuild and Jenkins.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862643/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeBuild/devops-lifecycle-diagram-source-build-test-deploy.jpg)
+![The image shows a DevOps lifecycle diagram with stages labeled Source, Build, Test, and Deploy, alongside logos for AWS CodeBuild and Jenkins.](https://kodekloud.com/kk-media/image/upload/v1752862643/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeBuild/devops-lifecycle-diagram-source-build-test-deploy.jpg)
 
 ### Feature Comparison
 
@@ -51,7 +51,7 @@ If you use [Jenkins](https://www.jenkins.io/), you can either:
 | Security    | IAM roles & KMS encryption       | Plugin-based or custom configuration    |
 | Ecosystem   | Native AWS integrations          | Large plugin ecosystem, external to AWS |
 
-![The image shows a comparison between AWS CodeBuild and Jenkins, with AWS CodeBuild labeled as part of the AWS Cloud and Jenkins as a third-party tool.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862644/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeBuild/aws-codebuild-jenkins-comparison.jpg)
+![The image shows a comparison between AWS CodeBuild and Jenkins, with AWS CodeBuild labeled as part of the AWS Cloud and Jenkins as a third-party tool.](https://kodekloud.com/kk-media/image/upload/v1752862644/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeBuild/aws-codebuild-jenkins-comparison.jpg)
 
 That wraps up our high-level overview of AWS CodeBuild. In the next lesson, we’ll dive into:
 

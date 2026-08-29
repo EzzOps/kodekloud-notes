@@ -10,7 +10,7 @@ In this tutorial, you'll learn how to host a static website using Amazon S3. We'
 
 Before uploading your site to S3, it’s important to familiarize yourself with the file structure. Below is an illustration of the website components:
 
-![The image shows an AWS Console Home page with a Windows File Explorer window open, displaying a folder named "static-demo" containing files like "404.html," "index.css," and "index.html."](../../../../images/kodekloud.com/kk-media/image/upload/v1752866072/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting-Demo/aws-console-windows-file-explorer-static-demo.jpg)
+![The image shows an AWS Console Home page with a Windows File Explorer window open, displaying a folder named "static-demo" containing files like "404.html," "index.css," and "index.html."](https://kodekloud.com/kk-media/image/upload/v1752866072/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting-Demo/aws-console-windows-file-explorer-static-demo.jpg)
 
 The main components include:
 
@@ -79,15 +79,15 @@ To get started, log in to the S3 console and create a new bucket for your static
 
 1. Create a new bucket (e.g., "static-demo") using the default settings.
 
-![The image shows the AWS S3 console interface for creating a new bucket, with fields for bucket name, AWS region, and object ownership settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866073/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting-Demo/aws-s3-console-create-bucket.jpg)
+![The image shows the AWS S3 console interface for creating a new bucket, with fields for bucket name, AWS region, and object ownership settings.](https://kodekloud.com/kk-media/image/upload/v1752866073/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting-Demo/aws-s3-console-create-bucket.jpg)
 
 2. After creating the bucket, you will receive a confirmation notification.
 
-![The image shows an Amazon S3 console with a notification of a successfully created bucket named "kk-static-demo." The interface displays bucket details such as name, AWS region, access, and creation date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866074/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting-Demo/amazon-s3-bucket-creation-notification.jpg)
+![The image shows an Amazon S3 console with a notification of a successfully created bucket named "kk-static-demo." The interface displays bucket details such as name, AWS region, access, and creation date.](https://kodekloud.com/kk-media/image/upload/v1752866074/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting-Demo/amazon-s3-bucket-creation-notification.jpg)
 
 3. Open the bucket and proceed to upload all website files, including HTML, CSS, the 404 error page, and the images folder. Note that the upload duration may vary based on file size and quantity.
 
-![The image shows an AWS S3 console screen with a successful upload status for 13 files totaling 2.5 MB. The files include images and an HTML file, all marked as succeeded.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866076/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting-Demo/aws-s3-console-upload-success-13-files.jpg)
+![The image shows an AWS S3 console screen with a successful upload status for 13 files totaling 2.5 MB. The files include images and an HTML file, all marked as succeeded.](https://kodekloud.com/kk-media/image/upload/v1752866076/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting-Demo/aws-s3-console-upload-success-13-files.jpg)
 
 ## Enabling Static Website Hosting
 
@@ -104,7 +104,7 @@ Click **Save** to update your settings.
 
 After saving, you will see a bucket website endpoint URL in the static website hosting section. This URL is how users will access your website.
 
-![The image shows an Amazon S3 console page with settings for transfer acceleration, object lock, requester pays, and static website hosting. Static website hosting is enabled, and a bucket website endpoint URL is provided.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866077/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting-Demo/amazon-s3-console-settings-static-hosting.jpg)
+![The image shows an Amazon S3 console page with settings for transfer acceleration, object lock, requester pays, and static website hosting. Static website hosting is enabled, and a bucket website endpoint URL is provided.](https://kodekloud.com/kk-media/image/upload/v1752866077/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting-Demo/amazon-s3-console-settings-static-hosting.jpg)
 
 > **lightbulb** Clicking the website endpoint URL might initially result in an "Access Denied" error. This is expected until you configure public access.
 
@@ -114,11 +114,11 @@ To allow public access to your website, you'll need to adjust the bucket's permi
 
 1. Click on the **Permissions** tab and disable the "Block all public access" setting.
 
-![The image shows an Amazon S3 console screen with settings for blocking public access to a bucket. The "Block all public access" option is turned on, and there is a note indicating that public access is blocked.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866078/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting-Demo/amazon-s3-block-public-access.jpg)
+![The image shows an Amazon S3 console screen with settings for blocking public access to a bucket. The "Block all public access" option is turned on, and there is a note indicating that public access is blocked.](https://kodekloud.com/kk-media/image/upload/v1752866078/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting-Demo/amazon-s3-block-public-access.jpg)
 
 2. Confirm your changes to allow public access.
 
-![The image shows an AWS S3 settings page for editing block public access options for a bucket, with checkboxes for various access control settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866080/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting-Demo/aws-s3-block-public-access-settings.jpg)
+![The image shows an AWS S3 settings page for editing block public access options for a bucket, with checkboxes for various access control settings.](https://kodekloud.com/kk-media/image/upload/v1752866080/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting-Demo/aws-s3-block-public-access-settings.jpg)
 
 Even after these changes, your bucket is not entirely public. You must add a proper bucket policy to permit public read (GetObject) access. Open the bucket policy editor and add the following policy:
 
@@ -149,7 +149,7 @@ Return to the **Properties** tab and check the **Static website hosting** sectio
 * You can access specific assets by appending their paths (for example, `/images/food1.jpg`) to the URL.
 * If a user navigates to an invalid path, the custom `404.html` page will be shown.
 
-![The image shows an Amazon S3 bucket interface with a list of objects, including HTML and CSS files, and a folder named "images/". The bucket is labeled "kk-static-demo" and is publicly accessible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866081/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting-Demo/amazon-s3-bucket-kk-static-demo.jpg)
+![The image shows an Amazon S3 bucket interface with a list of objects, including HTML and CSS files, and a folder named "images/". The bucket is labeled "kk-static-demo" and is publicly accessible.](https://kodekloud.com/kk-media/image/upload/v1752866081/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting-Demo/amazon-s3-bucket-kk-static-demo.jpg)
 
 This concludes the lesson on hosting a static website with Amazon S3. By following these steps, you can create a secure and publicly accessible static website with ease.
 

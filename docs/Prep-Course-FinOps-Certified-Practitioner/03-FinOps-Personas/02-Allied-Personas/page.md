@@ -6,9 +6,7 @@ Cross-functional allied personas for autonomous driving that embed cost, asset, 
 
 Welcome to the session on Allied Personas. To make this concrete, imagine we work for a cutting-edge autonomous driving company. Our mission: build the safest, most efficient self-driving vehicles on the planet. That requires massive cloud usage — AI model training, sensor-data processing, large-scale simulations, and many SaaS tools. Managing cloud cost and optimizing resources therefore becomes a company-wide responsibility, not just an IT task.
 
-<Callout icon="lightbulb">
-  Allied personas are cross-functional teams that embed cost-awareness into day-to-day operations. They provide asset visibility, financial controls, sustainability metrics, operational checks, and security cost-tracking so FinOps and core cost-management teams can make informed decisions.
-</Callout>
+> **lightbulb** Allied personas are cross-functional teams that embed cost-awareness into day-to-day operations. They provide asset visibility, financial controls, sustainability metrics, operational checks, and security cost-tracking so FinOps and core cost-management teams can make informed decisions.
 
 Below we describe the main allied personas, their responsibilities, and why each is essential for effective cloud cost management in an autonomous-driving organization.
 
@@ -70,9 +68,7 @@ Security is non-negotiable in autonomous systems, and it has measurable cloud co
 * Why it matters: security teams balance risk mitigation with cost-efficiency, ensuring protection measures are effective without excessive spend.
 * How they support cost-management: by aligning security controls to budget priorities and identifying opportunities to achieve protection more efficiently.
 
-<Callout icon="warning">
-  Security spending must be tracked and optimized — cutting costs at the expense of protection can introduce unacceptable risk, especially in safety-critical systems like autonomous vehicles.
-</Callout>
+> **warning** Security spending must be tracked and optimized — cutting costs at the expense of protection can introduce unacceptable risk, especially in safety-critical systems like autonomous vehicles.
 
 <Frame>
   <img alt="The image displays a comparison between IT Service Management (ITSM/ITIL) and Security, highlighting their key responsibilities and reasons for alignment concerning cost-awareness and financial efficiency in cloud operations." />
@@ -106,6 +102,4 @@ This coalition enables FinOps and core cost-management teams to make data-driven
 
 In a dynamic environment like autonomous driving, allied personas are essential partners in delivering technology that is safe, performant, and cost-effective. Thanks for watching — see you in the next video.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/17116beb-dcd6-4099-9424-bcb9554af3f3/lesson/597263a0-4189-48f3-8503-07051635a4b4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/17116beb-dcd6-4099-9424-bcb9554af3f3/lesson/597263a0-4189-48f3-8503-07051635a4b4)

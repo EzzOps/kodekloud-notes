@@ -22,9 +22,7 @@ path "*" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Use root tokens sparingly. They grant complete control over the Vault cluster.
-</Callout>
+> **triangle-alert** Use root tokens sparingly. They grant complete control over the Vault cluster.
 
 ## Managing Policies with the CLI
 
@@ -63,9 +61,7 @@ EOF
 
 In the Vault web UI, go to **Policies** to view ACLs. The `root` policy appears grayed out (non-editable). Use the three-dot menu on any other policy to edit or delete it, or click **Create ACL Policy** to add a new one.
 
-<Frame>
-  ![The image is a screenshot of a user interface for managing policies in Vault, showing options to create, view, edit, or delete ACL policies. It includes annotations and a small illustration of a person in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878368/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Policies-Part-1/vault-acl-policies-management-screenshot.jpg)
-</Frame>
+![The image is a screenshot of a user interface for managing policies in Vault, showing options to create, view, edit, or delete ACL policies. It includes annotations and a small illustration of a person in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878368/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Policies-Part-1/vault-acl-policies-management-screenshot.jpg)
 
 ## Managing Policies via the HTTP API
 
@@ -123,9 +119,7 @@ path "aws/creds/web-app" {
 
 Every Vault feature—secret engines, auth methods, KV data—is namespaced under a path. Examples:
 
-<Frame>
-  ![The image is a slide titled "Vault Policies - Path," listing examples of paths used in a system, with a certification badge in the top right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878370/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Policies-Part-1/vault-policies-path-examples-slide.jpg)
-</Frame>
+![The image is a slide titled "Vault Policies - Path," listing examples of paths used in a system, with a certification badge in the top right corner.](https://kodekloud.com/kk-media/image/upload/v1752878370/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Policies-Part-1/vault-policies-path-examples-slide.jpg)
 
 * `sys/policy`: Manage Vault’s own ACLs
 * `kv/app1/app01/web`: KV v1 secrets
@@ -144,9 +138,7 @@ Here, `secrets` = mount point, `data` = v2 API prefix.
 
 Certain operations require a root token or `sudo` capability. Examples:
 
-<Frame>
-  ![The image is a slide about Vault Policies, specifically focusing on root-protected paths that require a root token or sudo capability. It lists examples of such paths and their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878371/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Policies-Part-1/vault-policies-root-protected-paths.jpg)
-</Frame>
+![The image is a slide about Vault Policies, specifically focusing on root-protected paths that require a root token or sudo capability. It lists examples of such paths and their functions.](https://kodekloud.com/kk-media/image/upload/v1752878371/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Policies-Part-1/vault-policies-root-protected-paths.jpg)
 
 * `auth/token/create-orphan`: Create orphan tokens
 * `pki/root/sign-self-issued`: Sign certificates
@@ -168,9 +160,7 @@ path "sys/step-down" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Grant sudo sparingly—only highly trusted operators should have these elevated rights.
-</Callout>
+> **triangle-alert** Grant sudo sparingly—only highly trusted operators should have these elevated rights.
 
 ## Links and References
 
@@ -179,9 +169,7 @@ path "sys/step-down" {
 * [Terraform Registry](https://registry.terraform.io/)
 * [Packer Documentation](https://www.packer.io/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/968cf007-376b-48c8-83f9-17521b5dd575/lesson/ec697a75-1b71-465c-a7bc-ccbbbed23773" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/968cf007-376b-48c8-83f9-17521b5dd575/lesson/ec697a75-1b71-465c-a7bc-ccbbbed23773)
 
 
 # Vault Policies Part 2
@@ -206,13 +194,9 @@ Vault policy capabilities are declared as lists of strings within each `path` bl
 | sudo       | Required for root-protected endpoints (e.g., seal, rekey) |
 | deny       | Explicitly blocks access to a path (highest precedence)   |
 
-<Callout icon="lightbulb">
-  There is no generic `write` capability in Vault. Use `create` or `update` depending on whether the path should already exist.
-</Callout>
+> **lightbulb** There is no generic `write` capability in Vault. Use `create` or `update` depending on whether the path should already exist.
 
-<Callout icon="triangle-alert">
-  The `deny` capability always takes precedence over any granted rights. Use it carefully to lock down sensitive paths.
-</Callout>
+> **triangle-alert** The `deny` capability always takes precedence over any granted rights. Use it carefully to lock down sensitive paths.
 
 ***
 

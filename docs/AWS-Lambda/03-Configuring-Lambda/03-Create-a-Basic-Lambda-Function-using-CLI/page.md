@@ -17,11 +17,11 @@ Before we dive in, ensure you have the following:
 
 > **lightbulb** Run `aws configure` to set up your credentials, default region (e.g., `us-east-1`), and output format (`json`).
 
-![The image is a slide titled "Create Basic Function Demo" showing an environment setup with AWS CLI, Visual Studio Code (or equivalent), and AWS Console.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863111/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function-using-CLI/create-basic-function-demo-aws-cli.jpg)
+![The image is a slide titled "Create Basic Function Demo" showing an environment setup with AWS CLI, Visual Studio Code (or equivalent), and AWS Console.](https://kodekloud.com/kk-media/image/upload/v1752863111/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function-using-CLI/create-basic-function-demo-aws-cli.jpg)
 
 To begin, verify there are no existing Lambda functions in your target region:
 
-![The image shows the AWS Lambda dashboard for the US East (N. Virginia) region, displaying metrics such as Lambda functions, code storage, and account concurrency, along with graphs for error count, throttles, and invocations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863112/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function-using-CLI/aws-lambda-dashboard-us-east-metrics.jpg)
+![The image shows the AWS Lambda dashboard for the US East (N. Virginia) region, displaying metrics such as Lambda functions, code storage, and account concurrency, along with graphs for error count, throttles, and invocations.](https://kodekloud.com/kk-media/image/upload/v1752863112/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function-using-CLI/aws-lambda-dashboard-us-east-metrics.jpg)
 
 ***
 
@@ -48,7 +48,7 @@ AWS Lambda requires your function code in a ZIP archive. On Windows:
 2. Select **Send to → Compressed (zipped) folder**
 3. Name it `basic_hello_world.zip`
 
-![The image shows a Windows File Explorer window with a Python source file named "basichelloworld" and an "Archive name and parameters" dialog box for creating a ZIP archive.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863114/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function-using-CLI/windows-file-explorer-python-zip-archive.jpg)
+![The image shows a Windows File Explorer window with a Python source file named "basichelloworld" and an "Archive name and parameters" dialog box for creating a ZIP archive.](https://kodekloud.com/kk-media/image/upload/v1752863114/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function-using-CLI/windows-file-explorer-python-zip-archive.jpg)
 
 ***
 
@@ -60,7 +60,7 @@ Your function needs permission to write logs to CloudWatch. In the IAM console:
 * Attach the **AWSLambdaBasicExecutionRole** policy
 * Copy the Role ARN for use in the CLI
 
-![The image shows the AWS Identity and Access Management (IAM) console, specifically the details of a role named "LambdaDemoRole," which allows Lambda functions to call AWS services. It includes information like the creation date, last activity, ARN, and permissions policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863115/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function-using-CLI/aws-iam-console-lambdademorole-details.jpg)
+![The image shows the AWS Identity and Access Management (IAM) console, specifically the details of a role named "LambdaDemoRole," which allows Lambda functions to call AWS services. It includes information like the creation date, last activity, ARN, and permissions policies.](https://kodekloud.com/kk-media/image/upload/v1752863115/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function-using-CLI/aws-iam-console-lambdademorole-details.jpg)
 
 > **triangle-alert** Keep your IAM credentials secure. Grant only the permissions your function requires.
 
@@ -87,7 +87,7 @@ On success, you’ll see a JSON payload with details like function name, runtime
 
 Refresh the AWS Lambda console in the **us-east-1** region. Your function should appear in the list:
 
-![The image shows the AWS Lambda console with a list of functions, including one named "basichelloworld" using Python 3.7. The interface includes options to create a new function and manage existing ones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863116/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function-using-CLI/aws-lambda-console-basichelloworld-functions.jpg)
+![The image shows the AWS Lambda console with a list of functions, including one named "basichelloworld" using Python 3.7. The interface includes options to create a new function and manage existing ones.](https://kodekloud.com/kk-media/image/upload/v1752863116/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function-using-CLI/aws-lambda-console-basichelloworld-functions.jpg)
 
 ***
 
@@ -103,7 +103,7 @@ Refresh the AWS Lambda console in the **us-east-1** region. Your function should
    }
    ```
 
-![The image shows an AWS Lambda console interface where a test event is being configured. It includes options for creating a new event, setting the event name, and choosing event sharing settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863118/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function-using-CLI/aws-lambda-console-test-event-configuration.jpg)
+![The image shows an AWS Lambda console interface where a test event is being configured. It includes options for creating a new event, setting the event name, and choosing event sharing settings.](https://kodekloud.com/kk-media/image/upload/v1752863118/notes-assets/images/AWS-Lambda-Create-a-Basic-Lambda-Function-using-CLI/aws-lambda-console-test-event-configuration.jpg)
 
 4. Save and run. The execution result should return:
 

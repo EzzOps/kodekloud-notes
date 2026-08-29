@@ -112,9 +112,7 @@ NTFS (Windows default)
 
 ### A short note on journaling
 
-<Callout icon="lightbulb">
-  Journaling records pending filesystem operations (a short transaction log). After a crash, the OS replays or rolls back those journal entries to restore consistency, greatly reducing the chance of corruption and improving recovery time.
-</Callout>
+> **lightbulb** Journaling records pending filesystem operations (a short transaction log). After a crash, the OS replays or rolls back those journal entries to restore consistency, greatly reducing the chance of corruption and improving recovery time.
 
 ## Mounting: attaching a device into the directory tree
 
@@ -137,9 +135,7 @@ D:\
 
 Mounting connects the device’s root into the OS directory tree so you can navigate it with the normal path hierarchy.
 
-<Callout icon="warning">
-  Formatting a disk erases its data. Always back up important files before reformatting or changing the filesystem on removable or internal drives.
-</Callout>
+> **warning** Formatting a disk erases its data. Always back up important files before reformatting or changing the filesystem on removable or internal drives.
 
 ## Quick decision guides
 
@@ -165,9 +161,7 @@ Correct answer: B — ExFAT. FAT32 has a \~4 GB file-size limit. NTFS is typical
 * Common filesystems (FAT32, ExFAT, ext4, NTFS) trade compatibility, maximum file size, permissions, and journaling differently — pick the right one for the job.
 * Journaling improves crash recovery; mounting integrates a device’s filesystem into your directory tree so it’s accessible.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/edbf48fe-cad8-4a13-ad00-644b613f7867/lesson/f3bb4db3-f4b5-4ea4-9904-4957ca32fab2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/edbf48fe-cad8-4a13-ad00-644b613f7867/lesson/f3bb4db3-f4b5-4ea4-9904-4957ca32fab2)
 
 
 # File Management Part 2
@@ -202,9 +196,7 @@ There are three basic permission types:
 
 These three permissions apply separately to the three roles (user, group, other), producing nine permission bits in total. The common textual representation you see from `ls -l` is a ten-character string: the first character indicates file type and the next nine are the permission bits.
 
-<Callout icon="lightbulb">
-  The first character in the `ls -l` string indicates the file type (for example, `-` for a regular file, `d` for a directory, `l` for a symlink). The following nine characters appear as three groups of `rwx` corresponding to user, group, and other.
-</Callout>
+> **lightbulb** The first character in the `ls -l` string indicates the file type (for example, `-` for a regular file, `d` for a directory, `l` for a symlink). The following nine characters appear as three groups of `rwx` corresponding to user, group, and other.
 
 Example permission string:
 

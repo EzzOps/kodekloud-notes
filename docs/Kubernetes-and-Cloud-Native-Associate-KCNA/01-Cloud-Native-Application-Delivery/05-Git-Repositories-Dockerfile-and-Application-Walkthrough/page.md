@@ -13,21 +13,15 @@ The demonstration is organized into two primary segments:
 
 Since our primary goal is to explore continuous deployment, we assume that the CI process is handled by tools such as [Jenkins](https://learn.kodekloud.com/user/courses/jenkins). As a result, topics like unit testing, artifact building, and Docker image creation are not covered here.
 
-<Callout icon="lightbulb">
-  This lesson emphasizes setting up the [Argo CD](https://learn.kodekloud.com/user/courses/gitops-with-argocd) operator in your Kubernetes cluster. It illustrates how changes in the Kubernetes manifest Git repository are detected automatically by Argo CD, ensuring that the cluster's state matches the desired configuration.
-</Callout>
+> **lightbulb** This lesson emphasizes setting up the [Argo CD](https://learn.kodekloud.com/user/courses/gitops-with-argocd) operator in your Kubernetes cluster. It illustrates how changes in the Kubernetes manifest Git repository are detected automatically by Argo CD, ensuring that the cluster's state matches the desired configuration.
 
-<Frame>
-  ![The image illustrates a CI/CD pipeline integrating application code and Kubernetes manifests, using Git repositories, Docker, and ArgoCD for deployment and state management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880457/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Git-Repositories-Dockerfile-and-Application-Walkthrough/frame_20.jpg)
-</Frame>
+![The image illustrates a CI/CD pipeline integrating application code and Kubernetes manifests, using Git repositories, Docker, and ArgoCD for deployment and state management.](https://kodekloud.com/kk-media/image/upload/v1752880457/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Git-Repositories-Dockerfile-and-Application-Walkthrough/frame_20.jpg)
 
 ## Git Repository Overview
 
 The continuous deployment pipeline is driven by a dedicated Git repository containing all the necessary Kubernetes manifests and YAML configuration files. When you explore the repository, locate the **nginx-deployment** folder. Inside this folder, you will find a single file named `deployment.yaml`.
 
-<Frame>
-  ![The image shows a GitHub repository page named "CDPipelineArgo" with files and recent commit details, including an "nginx-deployment" folder and a README.md file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880458/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Git-Repositories-Dockerfile-and-Application-Walkthrough/frame_60.jpg)
-</Frame>
+![The image shows a GitHub repository page named "CDPipelineArgo" with files and recent commit details, including an "nginx-deployment" folder and a README.md file.](https://kodekloud.com/kk-media/image/upload/v1752880458/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Git-Repositories-Dockerfile-and-Application-Walkthrough/frame_60.jpg)
 
 ## NGINX Deployment Configuration
 
@@ -63,10 +57,6 @@ This walkthrough has detailed the setup of a continuous deployment pipeline usin
 
 In the next lesson, we will delve deeper into [Argo CD](https://learn.kodekloud.com/user/courses/gitops-with-argocd) to explore its advanced features and configurations.
 
-<Callout icon="lightbulb">
-  For more information on building robust CI/CD pipelines, check out the [Kubernetes Documentation](https://kubernetes.io/docs/) and explore industry best practices for continuous deployment.
-</Callout>
+> **lightbulb** For more information on building robust CI/CD pipelines, check out the [Kubernetes Documentation](https://kubernetes.io/docs/) and explore industry best practices for continuous deployment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/7221af3a-169a-4c55-bc00-b7b40e1dceda/lesson/a5195803-cdae-482f-a82a-8141f0ec9858" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/7221af3a-169a-4c55-bc00-b7b40e1dceda/lesson/a5195803-cdae-482f-a82a-8141f0ec9858)

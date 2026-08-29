@@ -13,9 +13,7 @@ In this lesson, you will explore:
 * Transition strategies: best practices for migrating from Terraform to OpenTofu
 * The future of IaC: upcoming enhancements and the roadmap for OpenTofu
 
-<Callout icon="lightbulb">
-  This lesson assumes you have a foundational understanding of infrastructure automation tools like [Terraform](https://www.terraform.io/). If you’re new to IaC, be sure to review the basics before proceeding.
-</Callout>
+> **lightbulb** This lesson assumes you have a foundational understanding of infrastructure automation tools like [Terraform](https://www.terraform.io/). If you’re new to IaC, be sure to review the basics before proceeding.
 
 Here’s an overview of what we’ll cover:
 
@@ -28,6 +26,4 @@ Here’s an overview of what we’ll cover:
 
 Let’s get started!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/72dc17e7-52e2-4e4d-a293-0f247e103232" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/72dc17e7-52e2-4e4d-a293-0f247e103232)

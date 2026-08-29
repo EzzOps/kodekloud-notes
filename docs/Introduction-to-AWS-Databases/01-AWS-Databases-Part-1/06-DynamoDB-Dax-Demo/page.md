@@ -51,9 +51,7 @@ Useful references
   <img alt="A screenshot of the AWS Management Console during Amazon DAX cluster creation showing the &#x22;Access control&#x22; section with a security group selector and a notice to open inbound port 8111 (or 9111 if encrypted). The lower part shows Availability Zones options and navigation buttons (Cancel, Previous, Next)." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Make sure your application instances (EC2, ECS tasks, Lambda functions in a VPC, etc.) are allowed to reach the DAX cluster on the required port. If using encryption in transit, ensure clients are configured to use TLS when connecting.
-</Callout>
+> **lightbulb** Make sure your application instances (EC2, ECS tasks, Lambda functions in a VPC, etc.) are allowed to reach the DAX cluster on the required port. If using encryption in transit, ensure clients are configured to use TLS when connecting.
 
 6. Availability Zones (AZs): choose whether AWS should select AZs automatically (recommended for even distribution) or choose specific AZs manually to meet locality or compliance requirements.
 
@@ -147,10 +145,6 @@ Settings: on the Settings page you can change the parameter group, edit the subn
 
 When finished experimenting, delete any test clusters to avoid ongoing charges.
 
-<Callout icon="warning">
-  For production deployments, use a multi-node cluster (minimum three nodes) for availability and replication, restrict IAM policies to only necessary tables, and secure network access with tightly scoped security group rules.
-</Callout>
+> **warning** For production deployments, use a multi-node cluster (minimum three nodes) for availability and replication, restrict IAM policies to only necessary tables, and secure network access with tightly scoped security group rules.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/7dbec95b-192e-4727-b97b-913864038fe0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/7dbec95b-192e-4727-b97b-913864038fe0)

@@ -28,9 +28,7 @@ In this lesson, we learned how to define and use variables in Ansible playbooks 
 
 For more details about Ansible and best practices, be sure to check the [Ansible Documentation](https://docs.ansible.com/ansible/latest/index.html).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/c85e487f-ca75-448b-b7dd-f72e9519d9b9/lesson/7e54d942-3b14-4171-93f4-9450be50b9ca" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/c85e487f-ca75-448b-b7dd-f72e9519d9b9/lesson/7e54d942-3b14-4171-93f4-9450be50b9ca)
 
 
 # Magic Variables
@@ -181,6 +179,4 @@ Below are some other frequently used magic variables in Ansible:
 
 This concludes our discussion on magic variables in Ansible. By leveraging these powerful features, you can create more dynamic and efficient playbooks that adapt based on the data available across your entire inventory.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/c85e487f-ca75-448b-b7dd-f72e9519d9b9/lesson/aabf3fd3-1a3f-4bb5-8843-65aed0bf576a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/c85e487f-ca75-448b-b7dd-f72e9519d9b9/lesson/aabf3fd3-1a3f-4bb5-8843-65aed0bf576a)

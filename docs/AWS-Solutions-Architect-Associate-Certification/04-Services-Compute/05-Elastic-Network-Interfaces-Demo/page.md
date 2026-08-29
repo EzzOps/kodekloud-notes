@@ -20,15 +20,15 @@ Follow these steps to create a network interface in AWS:
 
 After configuring these details, create the network interface. You should see the new interface in your list (e.g., "my EC2 interface").
 
-![The image shows an AWS EC2 console interface for creating a network interface, with options to set a description, subnet, private IPv4 address, and security groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864949/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces-Demo/aws-ec2-network-interface-creation.jpg)
+![The image shows an AWS EC2 console interface for creating a network interface, with options to set a description, subnet, private IPv4 address, and security groups.](https://kodekloud.com/kk-media/image/upload/v1752864949/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces-Demo/aws-ec2-network-interface-creation.jpg)
 
 At this point, you have the option to attach the network interface to an existing EC2 instance or assign it during the launch of a new instance. AWS also allows you to associate an Elastic IP with the network interface so that a reserved public IP remains consistently linked to the interface.
 
-![The image shows an AWS EC2 console interface displaying network interfaces, with options to manage them, such as attaching, detaching, and associating addresses. A specific network interface is selected, showing its details like ID, status, and associated security groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864950/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces-Demo/aws-ec2-console-network-interfaces.jpg)
+![The image shows an AWS EC2 console interface displaying network interfaces, with options to manage them, such as attaching, detaching, and associating addresses. A specific network interface is selected, showing its details like ID, status, and associated security groups.](https://kodekloud.com/kk-media/image/upload/v1752864950/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces-Demo/aws-ec2-console-network-interfaces.jpg)
 
 When associating an Elastic IP, simply select the Elastic IP from the dropdown menu:
 
-![The image shows an AWS console interface for associating an Elastic IP address with a network interface. It includes a dropdown menu to select an Elastic IP address and buttons to cancel or associate the selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864951/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces-Demo/aws-console-elastic-ip-association.jpg)
+![The image shows an AWS console interface for associating an Elastic IP address with a network interface. It includes a dropdown menu to select an Elastic IP address and buttons to cancel or associate the selection.](https://kodekloud.com/kk-media/image/upload/v1752864951/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces-Demo/aws-console-elastic-ip-association.jpg)
 
 ## Launching an EC2 Instance with an Existing Network Interface
 
@@ -43,7 +43,7 @@ Next, you'll learn how to launch an EC2 instance using an existing network inter
 
 Once the instance is up and running, inspect its network configuration to verify the assigned private IP address. Even though no public IP is directly assigned to the instance, AWS maps a public Elastic IP to the instance via network address translation (NAT).
 
-![The image shows an AWS EC2 management console with two instances listed, both in a running state. The details of one instance, "ec2-demo-instance," are displayed, including its networking information and instance ID.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864953/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces-Demo/aws-ec2-management-console-instances.jpg)
+![The image shows an AWS EC2 management console with two instances listed, both in a running state. The details of one instance, "ec2-demo-instance," are displayed, including its networking information and instance ID.](https://kodekloud.com/kk-media/image/upload/v1752864953/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces-Demo/aws-ec2-management-console-instances.jpg)
 
 ## Attaching Additional Network Interfaces
 
@@ -52,14 +52,14 @@ An EC2 instance can have multiple network interfaces. To attach an additional in
 1. Create a new network interface (e.g., named "NIC 2") in the same availability zone as your EC2 instance. This interface can reside in a different subnet, provided it's within the same zone. You may use the same security group if desired.
 2. Optionally, associate an Elastic IP with "NIC 2" by selecting one from your Elastic IP addresses.
 
-![The image shows an AWS EC2 console displaying a list of network interfaces, with details of a selected network interface highlighted at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864955/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces-Demo/aws-ec2-network-interfaces-console.jpg)
+![The image shows an AWS EC2 console displaying a list of network interfaces, with details of a selected network interface highlighted at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752864955/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces-Demo/aws-ec2-network-interfaces-console.jpg)
 
 3. Return to the EC2 instances page, select your demo instance, and choose the attach option for network interfaces.
 4. Select "NIC 2" from the list and attach it. This action can be performed while the instance is running.
 
 After the attachment, your instance will have two network interfaces: the original one and "NIC 2" (with its associated Elastic IP if configured).
 
-![The image shows an AWS EC2 management console with two running instances, including details for "ec2-demo-instance" such as its instance ID, state, and IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864956/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces-Demo/aws-ec2-management-console-instances-2.jpg)
+![The image shows an AWS EC2 management console with two running instances, including details for "ec2-demo-instance" such as its instance ID, state, and IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752864956/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Network-Interfaces-Demo/aws-ec2-management-console-instances-2.jpg)
 
 > **lightbulb** Using the public Elastic IP associated with "NIC 2," you can SSH into the server without directly exposing the instance’s primary network configuration.
 

@@ -10,9 +10,7 @@ cat /etc/shadow
 
 Even legitimate administrative tasks can generate alerts—allowing you to confirm whether activity is expected or malicious.
 
-<Callout icon="triangle-alert">
-  Suppressing Falco alerts for critical rules can blind you to real threats. Tune rules carefully rather than disabling them.
-</Callout>
+> **triangle-alert** Suppressing Falco alerts for critical rules can blind you to real threats. Tune rules carefully rather than disabling them.
 
 ## Next Steps
 
@@ -26,9 +24,7 @@ In the next lesson, we’ll install Falco in our Kubernetes cluster, configure i
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [Securing Kubernetes Clusters](https://kubernetes.io/docs/concepts/security/overview/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/5d53d882-cdd8-4140-a832-7a80755e31f2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/5d53d882-cdd8-4140-a832-7a80755e31f2)
 
 
 # Observability Using Falco to Detect Threats
@@ -70,9 +66,7 @@ You should see output similar to:
            └─17994 /usr/bin/falco --pidfile=/var/run/falco.pid -c /etc/falco/falco.yaml
 ```
 
-<Callout icon="lightbulb">
-  If Falco is deployed as a DaemonSet, use `kubectl get pods -n falco-driver-loader` to verify all Falco pods are running.
-</Callout>
+> **lightbulb** If Falco is deployed as a DaemonSet, use `kubectl get pods -n falco-driver-loader` to verify all Falco pods are running.
 
 ***
 
@@ -115,9 +109,7 @@ Falco will immediately log alerts for the shell spawn and file access events.
 
 ## 3. Falco Architecture
 
-<Frame>
-  ![The image is a diagram illustrating the architecture of Falco, showing the interaction between applications, system calls, the Falco kernel module, eBPF, libraries, policy engine, and Falco rules, leading to various outputs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880898/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Observability-Using-Falco-to-Detect-Threats/falco-architecture-diagram-interaction.jpg)
-</Frame>
+![The image is a diagram illustrating the architecture of Falco, showing the interaction between applications, system calls, the Falco kernel module, eBPF, libraries, policy engine, and Falco rules, leading to various outputs.](https://kodekloud.com/kk-media/image/upload/v1752880898/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Observability-Using-Falco-to-Detect-Threats/falco-architecture-diagram-interaction.jpg)
 
 This diagram shows:
 
@@ -242,8 +234,6 @@ For a complete list of macros and filters, see the [Falco documentation][falco-d
 
 [falco-docs]: https://falco.org/docs/
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/9c2272fe-13a0-45a0-acbe-5f6e392e3a69" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/9c2272fe-13a0-45a0-acbe-5f6e392e3a69)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/295d91f3-8651-447b-9e51-91913cfc0638" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/295d91f3-8651-447b-9e51-91913cfc0638)

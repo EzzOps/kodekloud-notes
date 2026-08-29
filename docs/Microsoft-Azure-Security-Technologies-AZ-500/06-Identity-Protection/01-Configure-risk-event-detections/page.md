@@ -25,9 +25,7 @@ Below is a table summarizing several key risk event types and illustrating real-
 | New Country                   | Tracks logins from countries not previously associated with the user.          | An employee based in the United States signs in from Japan for the first time.                                              |
 | MCAS-Integrated Events        | Monitors anonymous IP activity and suspicious inbox forwarding via MCAS.       | Alerts are generated when logins occur from anonymous IP addresses or emails are forwarded to unfamiliar external accounts. |
 
-<Callout icon="lightbulb">
-  The integration with Microsoft Cloud App Security (MCAS) provides additional monitoring for events such as anonymous IP activity and suspicious inbox forwarding. These events help administrators to pinpoint anomalous behavior that may indicate a security compromise.
-</Callout>
+> **lightbulb** The integration with Microsoft Cloud App Security (MCAS) provides additional monitoring for events such as anonymous IP activity and suspicious inbox forwarding. These events help administrators to pinpoint anomalous behavior that may indicate a security compromise.
 
 ## Detailed Risk Event Examples
 
@@ -67,20 +65,14 @@ The "new country" feature monitors logins from locations that have not been prev
 
 To visualize these risk events, refer to the Azure AD Identity Protection dashboard in Azure AD. Even if no risks are currently detected, switching from a seven-day to a 90-day view can reveal recent risk activity. For example, risk activity recorded on September 1st might have been intentionally triggered from a virtual machine deployed in East US. This unusual sign-in displays properties—such as browser, device, IP address, location, Exchange ActiveSync ID, and tenant subnet IP—that differ from normal user behavior.
 
-<Frame>
-  ![The image shows a Microsoft Azure Identity Protection dashboard displaying risk detection details for an unfamiliar sign-in, including information about the detection type, risk state, and sign-in location.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881932/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-risk-event-detections/azure-identity-protection-dashboard.jpg)
-</Frame>
+![The image shows a Microsoft Azure Identity Protection dashboard displaying risk detection details for an unfamiliar sign-in, including information about the detection type, risk state, and sign-in location.](https://kodekloud.com/kk-media/image/upload/v1752881932/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-risk-event-detections/azure-identity-protection-dashboard.jpg)
 
 As illustrated above, the combination of these properties results in the sign-in being flagged as unfamiliar. Administrators responsible for securing environments with risky user activity can review these risk detections to take appropriate action.
 
 For another perspective of the dashboard view:
 
-<Frame>
-  ![The image shows a Microsoft Azure Identity Protection dashboard displaying risk detections, including details like detection time, user, IP address, location, detection type, risk state, and risk level.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881932/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-risk-event-detections/azure-identity-protection-dashboard-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure Identity Protection dashboard displaying risk detections, including details like detection time, user, IP address, location, detection type, risk state, and risk level.](https://kodekloud.com/kk-media/image/upload/v1752881932/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-risk-event-detections/azure-identity-protection-dashboard-2.jpg)
 
 This detailed view reinforces how Azure AD Identity Protection continuously monitors and safeguards user identities. In the next section, we will discuss the user risk policy and explore how to configure it for enhanced security.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d856cd5d-a782-4723-82b7-5a6e69cba71d/lesson/3d01ed5c-404c-4489-a179-0f7296fc2858" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d856cd5d-a782-4723-82b7-5a6e69cba71d/lesson/3d01ed5c-404c-4489-a179-0f7296fc2858)

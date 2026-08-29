@@ -22,11 +22,11 @@ In this hands-on tutorial, you’ll learn how to launch an EC2 instance, generat
 5. Keep the default VPC and subnet. Under **Security groups**, select **Create security group** with default rules.
 6. Click **Launch instances**, then view your instance on the Instances page. Wait until its status changes from **Pending** to **Running**.
 
-![The image shows the AWS EC2 console interface for launching an instance, with options to configure the instance name, application and OS images, and other settings. The summary section on the right provides details about the selected configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862397/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-ec2-console-launch-instance-settings.jpg)
+![The image shows the AWS EC2 console interface for launching an instance, with options to configure the instance name, application and OS images, and other settings. The summary section on the right provides details about the selected configuration.](https://kodekloud.com/kk-media/image/upload/v1752862397/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-ec2-console-launch-instance-settings.jpg)
 
-![The image shows an AWS EC2 instance launch configuration page, detailing options for key pair login, network settings, and instance summary. The "Launch instance" button is visible at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862398/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-ec2-instance-launch-configuration.jpg)
+![The image shows an AWS EC2 instance launch configuration page, detailing options for key pair login, network settings, and instance summary. The "Launch instance" button is visible at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752862398/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-ec2-instance-launch-configuration.jpg)
 
-![The image shows an AWS EC2 dashboard with an instance listed as "pending" in the Frankfurt region. The instance type is t2.micro, and there are no alarms set.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862400/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-ec2-dashboard-frankfurt-pending-instance.jpg)
+![The image shows an AWS EC2 dashboard with an instance listed as "pending" in the Frankfurt region. The instance type is t2.micro, and there are no alarms set.](https://kodekloud.com/kk-media/image/upload/v1752862400/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-ec2-dashboard-frankfurt-pending-instance.jpg)
 
 ## 2. Connect to the Instance
 
@@ -39,7 +39,7 @@ In this hands-on tutorial, you’ll learn how to launch an EC2 instance, generat
 [root@ip-172-31-16-22 ~]#
 ```
 
-![The image shows an AWS EC2 console interface for connecting to an instance, with options for EC2 Instance Connect, Session Manager, SSH client, and EC2 serial console. The instance ID and connection details are displayed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862401/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-ec2-console-instance-connection-options.jpg)
+![The image shows an AWS EC2 console interface for connecting to an instance, with options for EC2 Instance Connect, Session Manager, SSH client, and EC2 serial console. The instance ID and connection details are displayed.](https://kodekloud.com/kk-media/image/upload/v1752862401/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-ec2-console-instance-connection-options.jpg)
 
 ## 3. Install and Run the stress Utility
 
@@ -72,15 +72,15 @@ Use `Ctrl+C` to stop the load.
 1. Open the **CloudWatch** console in a new tab.
 2. Go to **Alarms → Create an alarm**.
 
-![The image shows an AWS EC2 management console with details of a running instance, including monitoring metrics like CPU utilization and network activity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862403/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-ec2-management-console-instance-metrics.jpg)
+![The image shows an AWS EC2 management console with details of a running instance, including monitoring metrics like CPU utilization and network activity.](https://kodekloud.com/kk-media/image/upload/v1752862403/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-ec2-management-console-instance-metrics.jpg)
 
-![The image shows the AWS CloudWatch dashboard, displaying options for setting alarms, creating dashboards, and monitoring logs and events. It includes navigation links on the left for various CloudWatch features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862406/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-cloudwatch-dashboard-alarms-logs.jpg)
+![The image shows the AWS CloudWatch dashboard, displaying options for setting alarms, creating dashboards, and monitoring logs and events. It includes navigation links on the left for various CloudWatch features.](https://kodekloud.com/kk-media/image/upload/v1752862406/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-cloudwatch-dashboard-alarms-logs.jpg)
 
 3. Click **Select metric**, navigate to **EC2 → Per-Instance Metrics**, and search your instance ID.
 4. Initially select **CPU Credit Balance**, **CPU Credit Usage**, and **CPU Utilization**, then set the graph to a 1-hour view to spot spikes.
 5. Because alarms support only one metric at a time, uncheck the credit metrics and keep **CPU Utilization** selected, then click **Select metric**.
 
-![The image shows an AWS CloudWatch interface displaying a graph of CPU utilization metrics over time, with options to select and view different metrics related to CPU performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862407/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-cloudwatch-cpu-utilization-graph.jpg)
+![The image shows an AWS CloudWatch interface displaying a graph of CPU utilization metrics over time, with options to select and view different metrics related to CPU performance.](https://kodekloud.com/kk-media/image/upload/v1752862407/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-cloudwatch-cpu-utilization-graph.jpg)
 
 ## 5. Configure Alarm Conditions
 
@@ -90,9 +90,9 @@ Use `Ctrl+C` to stop the load.
 
 > **lightbulb** You can also use **Anomaly detection** for adaptive thresholds that adjust based on historical data.
 
-![The image shows an AWS CloudWatch interface for setting up an alarm condition based on CPU utilization. It includes options for threshold type, condition settings, and a graph displaying CPU usage data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862409/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-cloudwatch-alarm-cpu-utilization.jpg)
+![The image shows an AWS CloudWatch interface for setting up an alarm condition based on CPU utilization. It includes options for threshold type, condition settings, and a graph displaying CPU usage data.](https://kodekloud.com/kk-media/image/upload/v1752862409/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-cloudwatch-alarm-cpu-utilization.jpg)
 
-![The image shows an AWS CloudWatch interface for setting up an alarm with anomaly detection for CPU utilization. It includes options for threshold types and conditions for triggering the alarm.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862410/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-cloudwatch-alarm-anomaly-detection.jpg)
+![The image shows an AWS CloudWatch interface for setting up an alarm with anomaly detection for CPU utilization. It includes options for threshold types and conditions for triggering the alarm.](https://kodekloud.com/kk-media/image/upload/v1752862410/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-cloudwatch-alarm-anomaly-detection.jpg)
 
 ## 6. Set Alarm Actions
 
@@ -102,17 +102,17 @@ Use `Ctrl+C` to stop the load.
 4. Provide an alarm name (e.g., `cpu-utilization-alarm`) and an optional message. Preview the email content.
 5. Click **Next**, then **Create alarm**. Initially, the alarm shows **Insufficient data**; once metrics arrive and CPU ≥ 65%, it shifts to **In alarm**.
 
-![The image shows an AWS CloudWatch interface where a user is configuring actions for an alarm, including setting notifications via SNS topics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862411/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-cloudwatch-alarm-sns-configuration.jpg)
+![The image shows an AWS CloudWatch interface where a user is configuring actions for an alarm, including setting notifications via SNS topics.](https://kodekloud.com/kk-media/image/upload/v1752862411/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-cloudwatch-alarm-sns-configuration.jpg)
 
-![The image shows an AWS CloudWatch interface for creating an alarm, displaying a graph of CPU utilization with specified metric conditions. The alarm is set to trigger when the CPU utilization exceeds a certain threshold.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862412/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-cloudwatch-alarm-cpu-utilization-2.jpg)
+![The image shows an AWS CloudWatch interface for creating an alarm, displaying a graph of CPU utilization with specified metric conditions. The alarm is set to trigger when the CPU utilization exceeds a certain threshold.](https://kodekloud.com/kk-media/image/upload/v1752862412/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-cloudwatch-alarm-cpu-utilization-2.jpg)
 
-![The image shows an AWS CloudWatch dashboard with an alarm named "cloudwatch-alarm-demo" in an "In alarm" state, indicating high CPU utilization. The graph displays CPU utilization over time, exceeding the threshold.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862414/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-cloudwatch-alarm-high-cpu-utilization.jpg)
+![The image shows an AWS CloudWatch dashboard with an alarm named "cloudwatch-alarm-demo" in an "In alarm" state, indicating high CPU utilization. The graph displays CPU utilization over time, exceeding the threshold.](https://kodekloud.com/kk-media/image/upload/v1752862414/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-cloudwatch-alarm-high-cpu-utilization.jpg)
 
 ## 7. Verify Notifications
 
 Check your email inbox for an alert:
 
-![The image shows an email notification from AWS CloudWatch indicating that a CPU utilization alarm for an EC2 instance in Frankfurt has been triggered due to a threshold breach.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862415/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-cloudwatch-ec2-cpu-alarm-notification.jpg)
+![The image shows an email notification from AWS CloudWatch indicating that a CPU utilization alarm for an EC2 instance in Frankfurt has been triggered due to a threshold breach.](https://kodekloud.com/kk-media/image/upload/v1752862415/notes-assets/images/AWS-CloudWatch-Demo-Creating-and-Configuring-Alarms-with-alerting/aws-cloudwatch-ec2-cpu-alarm-notification.jpg)
 
 Email contents include:
 

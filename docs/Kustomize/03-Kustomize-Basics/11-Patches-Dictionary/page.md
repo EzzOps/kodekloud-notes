@@ -28,9 +28,7 @@ spec:
           image: nginx:latest
 ```
 
-<Callout icon="lightbulb">
-  Make sure each file listed under `resources:` has a valid manifest. You can [validate your YAML](https://kubectl.docs.kubernetes.io/guides/validation/) with `kubectl apply --dry-run=client -f`.
-</Callout>
+> **lightbulb** Make sure each file listed under `resources:` has a valid manifest. You can [validate your YAML](https://kubectl.docs.kubernetes.io/guides/validation/) with `kubectl apply --dry-run=client -f`.
 
 ***
 
@@ -119,9 +117,7 @@ spec:
           image: grafana/grafana:latest
 ```
 
-<Callout icon="triangle-alert">
-  Ensure new resources like `grafana-depl.yaml` are listed under `resources:` in the overlay’s `kustomization.yaml`. Otherwise, they won’t be rendered.
-</Callout>
+> **triangle-alert** Ensure new resources like `grafana-depl.yaml` are listed under `resources:` in the overlay’s `kustomization.yaml`. Otherwise, they won’t be rendered.
 
 ***
 
@@ -169,11 +165,9 @@ k8s/
 * [JSON 6902 Patch](https://tools.ietf.org/html/rfc6902)
 * [Kubernetes Concepts](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/5feb97e6-536b-4eb9-adf9-f14ce520c327" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/5feb97e6-536b-4eb9-adf9-f14ce520c327)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/20de59f0-9654-405a-af9e-6ebb063c29e1" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/20de59f0-9654-405a-af9e-6ebb063c29e1)
 
 
 # Patches Dictionary
@@ -193,9 +187,7 @@ Kustomize supports two main patch mechanisms:
 | JSON 6902 Patch       | JSON Pointer | Precise `add`, `replace`, `remove` ops | [JSON Patch (RFC6902)](https://tools.ietf.org/html/rfc6902)                                                       |
 | Strategic Merge Patch | YAML merge   | Declarative updates, merges by key     | [Strategic Merge Patch](https://kubernetes.io/docs/concepts/overview/working-with-objects/strategic-merge-patch/) |
 
-<Callout icon="lightbulb">
-  Use JSON 6902 when you need fine-grained control. Choose Strategic Merge for simpler, declarative label or annotation updates.
-</Callout>
+> **lightbulb** Use JSON 6902 when you need fine-grained control. Choose Strategic Merge for simpler, declarative label or annotation updates.
 
 ***
 
@@ -391,9 +383,7 @@ spec:
         org: null
 ```
 
-<Callout icon="lightbulb">
-  Setting `org: null` instructs Kustomize to remove that label key.
-</Callout>
+> **lightbulb** Setting `org: null` instructs Kustomize to remove that label key.
 
 ***
 
@@ -403,6 +393,4 @@ spec:
 * [JSON Patch (RFC6902)](https://tools.ietf.org/html/rfc6902)
 * [Strategic Merge Patch](https://kubernetes.io/docs/concepts/overview/working-with-objects/strategic-merge-patch/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/581f5ca5-823d-4415-9f90-3853ccf009ab" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/581f5ca5-823d-4415-9f90-3853ccf009ab)

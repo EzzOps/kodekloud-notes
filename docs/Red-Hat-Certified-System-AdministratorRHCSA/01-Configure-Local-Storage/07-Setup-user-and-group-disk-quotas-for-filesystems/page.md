@@ -9,9 +9,7 @@ Block device           253:2
 
 This LV path (/dev/my\_volume/partition1) works in a similar way to standard device files like `/dev/vda`.
 
-<Frame>
-  ![The image shows a terminal window displaying information about a logical volume in a CentOS system, including details like path, name, size, and status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883555/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Manage-and-configure-LVM-storage/centos-logical-volume-terminal-info.jpg)
-</Frame>
+![The image shows a terminal window displaying information about a logical volume in a CentOS system, including details like path, name, size, and status.](https://kodekloud.com/kk-media/image/upload/v1752883555/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Manage-and-configure-LVM-storage/centos-logical-volume-terminal-info.jpg)
 
 ## Additional LVM Commands and Tips
 
@@ -40,13 +38,9 @@ While navigating the manual, you can use tab-completion in the terminal. For exa
 
 This concludes our guide on managing and configuring LVM storage in Linux. Armed with these commands and tips, you are now ready to explore further lab exercises and enhance your Linux storage management skills.
 
-<Frame>
-  ![The image shows a terminal window displaying a list of Linux Logical Volume Manager (LVM) commands and related utilities. The text is part of a manual page, as indicated by the footer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883556/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Manage-and-configure-LVM-storage/linux-lvm-commands-terminal.jpg)
-</Frame>
+![The image shows a terminal window displaying a list of Linux Logical Volume Manager (LVM) commands and related utilities. The text is part of a manual page, as indicated by the footer.](https://kodekloud.com/kk-media/image/upload/v1752883556/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Manage-and-configure-LVM-storage/linux-lvm-commands-terminal.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/207496ef-0e82-42c8-aa9d-7996cfb968a6/lesson/ffca6cd1-f450-491b-a7b9-609f2752674c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/207496ef-0e82-42c8-aa9d-7996cfb968a6/lesson/ffca6cd1-f450-491b-a7b9-609f2752674c)
 
 
 # Setup user and group disk quotas for filesystems
@@ -57,9 +51,7 @@ This guide explains how to set up user and group disk quotas on Linux filesystem
 
 In this guide, you'll learn how to set up user and group disk quotas for file systems in Linux. Disk quotas prevent any user or group from monopolizing storage resources, ensuring fair distribution among all system users. For instance, on a 100-terabyte server, instead of one user consuming 80 terabytes and leaving only 20 terabytes for 99 users, you can enforce quotas—such as allowing each user 1 terabyte of storage.
 
-<Callout icon="lightbulb">
-  Enforcing disk quotas helps maintain balanced resource usage on shared storage systems, preventing individual users or groups from overwhelming the system capacity.
-</Callout>
+> **lightbulb** Enforcing disk quotas helps maintain balanced resource usage on shared storage systems, preventing individual users or groups from overwhelming the system capacity.
 
 ## Prerequisites
 
@@ -89,9 +81,7 @@ Update it to:
 
 Here, `usrquota` activates user quotas and `grqquota` activates group quotas.
 
-<Callout icon="triangle-alert">
-  Before modifying /etc/fstab, ensure you have a backup of the file. A misconfiguration could render your system unbootable.
-</Callout>
+> **triangle-alert** Before modifying /etc/fstab, ensure you have a backup of the file. A misconfiguration could render your system unbootable.
 
 ### Applying Changes
 
@@ -205,8 +195,6 @@ By following these steps, you can efficiently set up and manage disk quotas for 
 
 Now, it's time to get some hands-on lab practice and deepen your understanding of disk quota management!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/207496ef-0e82-42c8-aa9d-7996cfb968a6/lesson/d2e9ecaa-ee35-43f8-bac7-4ac64eceefd9" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/207496ef-0e82-42c8-aa9d-7996cfb968a6/lesson/d2e9ecaa-ee35-43f8-bac7-4ac64eceefd9)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/207496ef-0e82-42c8-aa9d-7996cfb968a6/lesson/cf7eac38-499b-477b-bad7-ae5c9505a76a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/207496ef-0e82-42c8-aa9d-7996cfb968a6/lesson/cf7eac38-499b-477b-bad7-ae5c9505a76a)

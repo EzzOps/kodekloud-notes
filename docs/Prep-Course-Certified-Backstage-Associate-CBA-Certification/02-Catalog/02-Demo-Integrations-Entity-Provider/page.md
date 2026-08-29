@@ -70,9 +70,7 @@ backend.add(import('@backstage/plugin-catalog-backend-module-github'));
 backend.start();
 ```
 
-<Callout icon="lightbulb">
-  Ensure you add the GitHub module just once. Many Backstage projects already include `@backstage/plugin-catalog-backend`; the new step is adding the `_module_github` provider module to enable GitHub-backed discovery.
-</Callout>
+> **lightbulb** Ensure you add the GitHub module just once. Many Backstage projects already include `@backstage/plugin-catalog-backend`; the new step is adding the `_module_github` provider module to enable GitHub-backed discovery.
 
 Step 3 — Add GitHub integration credentials
 Configure your GitHub integration in `app-config.yaml` or `app-config.local.yaml`:
@@ -133,12 +131,10 @@ Configuration reference
 | `schedule.timeout`      | Timeout for each scan run                | `{ minutes: 2 }`     |
 | `import.entityFilename` | Filename used when creating locations    | `catalog-info.yaml`  |
 
-<Callout icon="lightbulb">
-  * The provider ID (e.g., `sanjeevAccount`) is the key under `github:` and can be any camelCase identifier.
+> **lightbulb** * The provider ID (e.g., `sanjeevAccount`) is the key under `github:` and can be any camelCase identifier.
   * `catalogPath` is relative to the repository root; default is `/catalog-info.yaml`.
   * Use `filters.repository` regex to limit which repos are scanned.
   * Be conservative with schedule frequency to avoid hitting GitHub API rate limits.
-</Callout>
 
 How Backstage discovers entity files
 Backstage scans repositories in the configured organization/account and looks for the `catalogPath`. For example, if a repository contains `catalog-info.yaml` at the root on the `main` branch, Backstage will import it automatically.
@@ -240,11 +236,9 @@ Check provider-specific docs for required credentials and module names.
 
 Final tips
 
-<Callout icon="lightbulb">
-  * Store secrets like PATs in `app-config.local.yaml` or environment variables — never commit them.
+> **lightbulb** * Store secrets like PATs in `app-config.local.yaml` or environment variables — never commit them.
   * Start with a conservative polling schedule (30–60 minutes) to reduce GitHub API usage.
   * Use repository filters to scope discovery and avoid importing irrelevant repositories.
-</Callout>
 
 Troubleshooting & useful links
 
@@ -257,6 +251,4 @@ References
 * Backstage Integrations docs: [https://backstage.io/docs/integrations](https://backstage.io/docs/integrations)
 * Backstage Catalog provider modules: [https://backstage.io/docs/features/software-catalog/providers](https://backstage.io/docs/features/software-catalog/providers)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/9d20eb93-f189-4438-99c5-0fe4c53cbc19" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/9d20eb93-f189-4438-99c5-0fe4c53cbc19)

@@ -66,21 +66,15 @@ Let's review each mechanism in detail.
 
 The Kubernetes API server is accessed by both administrators and kubelets (nodes) for internal cluster management. For example, kubelets need to access service, pod, and node information to report their status. These internal requests are processed by a specialized authorizer known as the node authorizer.
 
-<Frame>
-  ![The image lists four authorization mechanisms: Node, ABAC, RBAC, and Webhook.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880587/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Authorization/frame_130.jpg)
-</Frame>
+![The image lists four authorization mechanisms: Node, ABAC, RBAC, and Webhook.](https://kodekloud.com/kk-media/image/upload/v1752880587/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Authorization/frame_130.jpg)
 
 In earlier modules, we discussed that kubelets use certificates to authenticate. These certificates place them in the "system:nodes" group, with names prefixed by "system:node". The node authorizer then validates requests based on these certificates, granting the necessary privileges for proper operation.
 
-<Frame>
-  ![The image illustrates a Kubernetes node interaction, showing a user, Kube API, and kubelet, with read/write operations for services, endpoints, nodes, pods, and statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880588/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Authorization/frame_150.jpg)
-</Frame>
+![The image illustrates a Kubernetes node interaction, showing a user, Kube API, and kubelet, with read/write operations for services, endpoints, nodes, pods, and statuses.](https://kodekloud.com/kk-media/image/upload/v1752880588/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Authorization/frame_150.jpg)
 
 The following diagram details how the node authorizer verifies requests using certificates:
 
-<Frame>
-  ![The image illustrates the Node Authorizer process in Kubernetes, showing interactions between a user, Kube API, kubelet, and a certificate for authentication and authorization tasks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880589/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Authorization/frame_180.jpg)
-</Frame>
+![The image illustrates the Node Authorizer process in Kubernetes, showing interactions between a user, Kube API, kubelet, and a certificate for authentication and authorization tasks.](https://kodekloud.com/kk-media/image/upload/v1752880589/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Authorization/frame_180.jpg)
 
 ### Attribute-Based Access Control (ABAC)
 
@@ -92,17 +86,13 @@ For external access, one common method is attribute-based access control (ABAC).
 {"kind": "Policy", "spec": {"group": "dev-users", "namespace": "*", "resource": "pods", "apiGroup": "*"}}
 ```
 
-<Callout icon="lightbulb">
-  Modifying ABAC policies requires editing the JSON file and restarting the API server, which can make management more cumbersome compared to other authorization methods.
-</Callout>
+> **lightbulb** Modifying ABAC policies requires editing the JSON file and restarting the API server, which can make management more cumbersome compared to other authorization methods.
 
 ### Role-Based Access Control (RBAC)
 
 RBAC streamlines authorization management by allowing administrators to define roles that bundle specific permissions and then bind these roles to users or groups. For example, you could create a "developer" role with permissions appropriate for application deployment, and any changes made to that role are instantly applied to all bound users.
 
-<Frame>
-  ![The image illustrates RBAC roles, showing user permissions for developers and security, including actions like viewing, creating, and deleting PODs, and approving CSRs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880590/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Authorization/frame_290.jpg)
-</Frame>
+![The image illustrates RBAC roles, showing user permissions for developers and security, including actions like viewing, creating, and deleting PODs, and approving CSRs.](https://kodekloud.com/kk-media/image/upload/v1752880590/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Authorization/frame_290.jpg)
 
 We will dive deeper into RBAC in a subsequent lesson.
 
@@ -110,9 +100,7 @@ We will dive deeper into RBAC in a subsequent lesson.
 
 For a more extensible approach, Kubernetes supports external authorization via Webhooks. In this setup, the API server sends relevant access information to an external service—such as the Open Policy Agent—and grants or denies access based on its response.
 
-<Frame>
-  ![The image illustrates a webhook process involving a user, Kube API, and Open Policy Agent, checking access permissions for reading Kubernetes pods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880591/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Authorization/frame_340.jpg)
-</Frame>
+![The image illustrates a webhook process involving a user, Kube API, and Open Policy Agent, checking access permissions for reading Kubernetes pods.](https://kodekloud.com/kk-media/image/upload/v1752880591/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Authorization/frame_340.jpg)
 
 ### Always Allow and Always Deny Modes
 
@@ -195,6 +183,4 @@ That concludes our discussion on authorization for this lesson. For further read
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/c69f9bd1-5a73-48f6-886c-d919866f3287" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/c69f9bd1-5a73-48f6-886c-d919866f3287)

@@ -108,9 +108,7 @@ Apply the resource quota using:
 kubectl create -f compute-quota.yaml
 ```
 
-<Callout icon="lightbulb">
-  This configuration ensures that the dev namespace does not exceed the defined resource limits.
-</Callout>
+> **lightbulb** This configuration ensures that the dev namespace does not exceed the defined resource limits.
 
 ## Conclusion
 
@@ -124,9 +122,7 @@ For more information on Kubernetes concepts, visit the following resources:
 
 Happy clustering!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/eb66d4ad-0202-4731-a35e-95d20772f003" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/eb66d4ad-0202-4731-a35e-95d20772f003)
 
 
 # Pods with YAML
@@ -143,9 +139,7 @@ Every Kubernetes YAML definition file must include the following properties:
 
 1. The four main properties in every file are: **apiVersion**, **kind**, \*\*metad...
 
-<Callout icon="lightbulb">
-  The four main properties in every file are: **apiVersion**, **kind**, **metadata**, and **spec**. These are essential for Kubernetes to correctly parse and create objects.
-</Callout>
+> **lightbulb** The four main properties in every file are: **apiVersion**, **kind**, **metadata**, and **spec**. These are essential for Kubernetes to correctly parse and create objects.
 
 ### 1. apiVersion
 
@@ -283,10 +277,6 @@ In summary, when creating a YAML file for Kubernetes, always include the four to
 
 This lesson demonstrated how to create a Pod using YAML. The same principles apply when defining other Kubernetes objects such as Deployments, Services, and ReplicaSets. For more information, explore the [Kubernetes Documentation](https://kubernetes.io/docs/).
 
-<Callout icon="lightbulb">
-  Consider experimenting with more complex configurations and exploring labels and selectors for robust application management in Kubernetes.
-</Callout>
+> **lightbulb** Consider experimenting with more complex configurations and exploring labels and selectors for robust application management in Kubernetes.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/c8905088-2df1-4c8d-bfa4-aab04d774863" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/c8905088-2df1-4c8d-bfa4-aab04d774863)

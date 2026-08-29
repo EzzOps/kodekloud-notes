@@ -13,9 +13,7 @@ Which experimental method most effectively isolates the impact of training datas
 * Comparing a single model before and after fine-tuning.
 * Comparing models trained on completely different datasets of the same size.
 
-<Callout icon="lightbulb">
-  Compare models with identical architectures trained on progressively larger subsets of the same dataset.
-</Callout>
+> **lightbulb** Compare models with identical architectures trained on progressively larger subsets of the same dataset.
 
 Why this approach is the best choice
 
@@ -45,9 +43,7 @@ Recommended experimental best practices
   <img alt="The image presents a question about effective experimental methods for evaluating the impact of training dataset size on LLM performance, with an answer suggesting comparison of identical models on progressively larger dataset subsets." />
 </Frame>
 
-<Callout icon="warning">
-  Avoid confounding variables: architecture changes, dataset composition shifts, or fine-tuning procedures will obscure the effect of dataset size. Always document dataset sampling method and training conditions.
-</Callout>
+> **warning** Avoid confounding variables: architecture changes, dataset composition shifts, or fine-tuning procedures will obscure the effect of dataset size. Always document dataset sampling method and training conditions.
 
 Further reading and references
 
@@ -55,6 +51,4 @@ Further reading and references
 * Practical guidance on experimental design for ML: [https://www.microsoft.com/en-us/research/publication/rigorous-evaluation-machine-learning/](https://www.microsoft.com/en-us/research/publication/rigorous-evaluation-machine-learning/)
 * For learning-curve visualization and statistical tests, see common resources on model evaluation and reproducibility.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/006dd317-fa78-474a-a340-3c58c17299b1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/006dd317-fa78-474a-a340-3c58c17299b1)

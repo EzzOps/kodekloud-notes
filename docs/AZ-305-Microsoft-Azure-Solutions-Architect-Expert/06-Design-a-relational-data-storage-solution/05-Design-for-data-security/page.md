@@ -69,7 +69,7 @@ A comprehensive data security strategy combines technical safeguards with ongoin
 * **Data Discovery and Classification**\
   This feature assists in labeling and classifying data based on sensitivity levels (e.g., confidential or general), reducing the risk of exposing highly sensitive information.
 
-![The image is a diagram outlining a data security strategy, featuring categories like Network, IAM, Data Protection, and Security Management with specific security measures listed under each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867170/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-data-security/data-security-strategy-diagram.jpg)
+![The image is a diagram outlining a data security strategy, featuring categories like Network, IAM, Data Protection, and Security Management with specific security measures listed under each.](https://kodekloud.com/kk-media/image/upload/v1752867170/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-data-security/data-security-strategy-diagram.jpg)
 
 Collectively, these measures form a comprehensive data security strategy tailored for SQL databases.
 

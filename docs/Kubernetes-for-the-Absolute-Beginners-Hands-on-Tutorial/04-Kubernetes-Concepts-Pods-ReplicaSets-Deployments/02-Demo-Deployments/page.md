@@ -37,9 +37,7 @@ spec:
         image: nginx
 ```
 
-<Callout icon="lightbulb">
-  Review this ReplicaSet definition carefully, as you will reuse its structure when defining your new deployment.
-</Callout>
+> **lightbulb** Review this ReplicaSet definition carefully, as you will reuse its structure when defining your new deployment.
 
 ## Step 3: Create the Deployment Configuration
 

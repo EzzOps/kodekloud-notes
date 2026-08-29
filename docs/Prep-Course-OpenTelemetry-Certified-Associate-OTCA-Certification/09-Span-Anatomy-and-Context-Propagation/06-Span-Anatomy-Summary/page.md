@@ -53,9 +53,7 @@ Tracing tracks requests as they flow through a distributed system to capture lat
   <img alt="The image is a summary table of OpenTelemetry Span Concepts, outlining various concepts like Span Attributes, Span Events, Span Status & Exception Recording, Span Resource, Context Propagation, and Baggage, along with their descriptions." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Keep baggage minimal and never include sensitive or personally identifiable information. Baggage is propagated to every downstream service that receives the trace context.
-</Callout>
+> **lightbulb** Keep baggage minimal and never include sensitive or personally identifiable information. Baggage is propagated to every downstream service that receives the trace context.
 
 ## Span kinds (roles)
 
@@ -88,9 +86,7 @@ Instrumentation is the process of creating spans and propagating context. There 
   <img alt="The image is a diagram depicting different instrumentation techniques: Manual Instrumentation, Library Instrumentation, and Auto-Instrumentation. It's part of a presentation titled &#x22;Next Section: Instrumentation Deep Dive.&#x22;" />
 </Frame>
 
-<Callout icon="lightbulb">
-  Choosing an instrumentation approach depends on your goals: start with auto-instrumentation for quick coverage, add library instrumentation for framework-specific support, and use manual spans for business-critical or custom operations.
-</Callout>
+> **lightbulb** Choosing an instrumentation approach depends on your goals: start with auto-instrumentation for quick coverage, add library instrumentation for framework-specific support, and use manual spans for business-critical or custom operations.
 
 We’ll next take a deep dive into instrumentation: starting with manual instrumentation to understand fundamentals, then covering library-based helpers, and finally exploring auto-instrumentation for large-scale, low-effort tracing.
 
@@ -102,6 +98,4 @@ We’ll next take a deep dive into instrumentation: starting with manual instrum
 
 Well done completing the span anatomy section.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/21cd96a5-0c33-444b-bca5-b98883617c7e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/21cd96a5-0c33-444b-bca5-b98883617c7e)

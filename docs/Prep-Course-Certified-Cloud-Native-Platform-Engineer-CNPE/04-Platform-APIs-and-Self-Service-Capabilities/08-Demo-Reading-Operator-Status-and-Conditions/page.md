@@ -80,9 +80,7 @@ Append this patch to `resources[].patches` to copy the composed resource's `meta
   toFieldPath: status.configName
 ```
 
-<Callout icon="warning">
-  The XRD must declare `status.configName` (or whatever status field you write to). If the XRD does not include the named status property, Crossplane will reject the status write. Reapply the XRD after updating it.
-</Callout>
+> **warning** The XRD must declare `status.configName` (or whatever status field you write to). If the XRD does not include the named status property, Crossplane will reject the status write. Reapply the XRD after updating it.
 
 Apply the XRD and Composition, then recreate the XR:
 
@@ -157,11 +155,9 @@ Next steps: experiment with these transforms in your own Composition to implemen
 * Kubernetes ConfigMap: [https://kubernetes.io/docs/concepts/configuration/configmap/](https://kubernetes.io/docs/concepts/configuration/configmap/)
 * Kubernetes API Extensions (CRDs/XRD): [https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/248dcf28-f81b-417f-ab7a-c9fd53237e28" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/248dcf28-f81b-417f-ab7a-c9fd53237e28)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/5c8eaf8d-b487-45cc-be5d-bb228eea6645" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/5c8eaf8d-b487-45cc-be5d-bb228eea6645)
 
 
 # Demo Reading Operator Status and Conditions

@@ -6,7 +6,7 @@ This article explains developing an API server to manage product information usi
 
 In this article, we will develop an API server to manage product information using a database. Each product has four attributes: ID, name, quantity, and price.
 
-![The image shows a table labeled "Product table" with columns for Id, name, quantity, and price, but no data is filled in.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868685/notes-assets/images/Advanced-Golang-Project-Explanation/product-table-empty-columns.jpg)
+![The image shows a table labeled "Product table" with columns for Id, name, quantity, and price, but no data is filled in.](https://kodekloud.com/kk-media/image/upload/v1752868685/notes-assets/images/Advanced-Golang-Project-Explanation/product-table-empty-columns.jpg)
 
 We have planned the following five RESTful API endpoints:
 
@@ -25,7 +25,7 @@ We have planned the following five RESTful API endpoints:
 5. **DELETE /product/**\
    Deletes a specific product from the database.
 
-![The image shows a list of API endpoints with HTTP methods (GET, POST, PUT, DELETE) and their corresponding paths and descriptions for managing products.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868686/notes-assets/images/Advanced-Golang-Project-Explanation/api-endpoints-http-methods-products.jpg)
+![The image shows a list of API endpoints with HTTP methods (GET, POST, PUT, DELETE) and their corresponding paths and descriptions for managing products.](https://kodekloud.com/kk-media/image/upload/v1752868686/notes-assets/images/Advanced-Golang-Project-Explanation/api-endpoints-http-methods-products.jpg)
 
 > **lightbulb** Ensure that each endpoint strictly follows RESTful conventions to maintain consistency and reliability in your API design.
 

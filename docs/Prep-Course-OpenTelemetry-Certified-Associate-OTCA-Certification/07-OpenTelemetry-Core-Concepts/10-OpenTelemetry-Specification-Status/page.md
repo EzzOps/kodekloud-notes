@@ -21,9 +21,7 @@ Understanding component maturity helps set expectations for design, support, and
   <img alt="The image illustrates the OpenTelemetry Component Lifecycle, showing four stages: Draft, Experimental, Stable, and Deprecated. Each stage is described with its current status and purpose in the lifecycle." />
 </Frame>
 
-<Callout icon="lightbulb">
-  The specification status pages evolve over time. Check the official OpenTelemetry specs/status pages ([OpenTelemetry specification repository](https://github.com/open-telemetry/opentelemetry-specification)) for the latest maturity indicators before making production decisions.
-</Callout>
+> **lightbulb** The specification status pages evolve over time. Check the official OpenTelemetry specs/status pages ([OpenTelemetry specification repository](https://github.com/open-telemetry/opentelemetry-specification)) for the latest maturity indicators before making production decisions.
 
 ## Official status summary (signals and components)
 
@@ -58,6 +56,4 @@ Links and references
 
 That's it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/877fa624-b2d6-411e-8f41-fc9fba15b7c7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/877fa624-b2d6-411e-8f41-fc9fba15b7c7)

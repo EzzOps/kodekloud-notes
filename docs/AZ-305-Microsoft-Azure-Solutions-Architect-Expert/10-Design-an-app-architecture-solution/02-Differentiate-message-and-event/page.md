@@ -22,7 +22,7 @@ On the other hand, events provide a lightweight communication mechanism, ideal f
 
 A helpful analogy is subscribing to marketing emails. When you subscribe, you expect to receive notifications whenever new content is available. However, if no subscribers are present at the time of the event, no email is sent. Although the analogy is not a perfect match, it illustrates that events are broadcast to all potential receivers without ensuring that each event is processed.
 
-![The image is a table comparing "Message" and "Event" in terms of definition and usage. It explains that messages contain raw data for guaranteed processing, while events are lightweight, used for broadcasts, and may not be handled if no subscriber is present.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867196/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Differentiate-message-and-event/message-vs-event-comparison-table.jpg)
+![The image is a table comparing "Message" and "Event" in terms of definition and usage. It explains that messages contain raw data for guaranteed processing, while events are lightweight, used for broadcasts, and may not be handled if no subscriber is present.](https://kodekloud.com/kk-media/image/upload/v1752867196/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Differentiate-message-and-event/message-vs-event-comparison-table.jpg)
 
 Consider another scenario: an application publishes an event that several components or services can subscribe to. In this setup, if subscribers are actively listening, multiple subscribers may consume the broadcasted event.
 

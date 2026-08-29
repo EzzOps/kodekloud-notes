@@ -32,9 +32,7 @@ The `terraform state` command exposes subcommands for advanced state maintenance
 
 The commands are intentionally simple and script-friendly (work well with grep, awk, etc.) for advanced automation and auditing.
 
-<Callout icon="warning">
-  State modification commands can cause drift between Terraform and your real infrastructure if used incorrectly. Always work against a backup and prefer non-destructive commands unless you fully understand the implications.
-</Callout>
+> **warning** State modification commands can cause drift between Terraform and your real infrastructure if used incorrectly. Always work against a backup and prefer non-destructive commands unless you fully understand the implications.
 
 ## Refreshing state
 
@@ -69,9 +67,7 @@ azurerm_storage_account.example: Refreshing state...
 
 After running, Terraform has fetched the current resource attributes from Azure and updated the local state to match — no remote changes are made.
 
-<Callout icon="lightbulb">
-  Modern Terraform performs an automatic refresh during operations like `terraform plan` and `terraform apply`, so manually running `terraform refresh` is less common. Still, it's valuable when resolving drift or preparing for direct state edits.
-</Callout>
+> **lightbulb** Modern Terraform performs an automatic refresh during operations like `terraform plan` and `terraform apply`, so manually running `terraform refresh` is less common. Still, it's valuable when resolving drift or preparing for direct state edits.
 
 ## Key takeaways
 
@@ -87,9 +83,7 @@ After running, Terraform has fetched the current resource attributes from Azure 
 * [Terraform CLI Commands](https://www.terraform.io/docs/commands/index.html)
 * [Azure Provider for Terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/a87fc0ec-6ef6-409e-91cb-709bdcebb9eb/lesson/b55fe31e-bb64-4e13-8a58-102864b8b5a5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/a87fc0ec-6ef6-409e-91cb-709bdcebb9eb/lesson/b55fe31e-bb64-4e13-8a58-102864b8b5a5)
 
 
 # Terraform Validate and fmt
@@ -153,9 +147,7 @@ Key characteristics of `terraform validate`:
 * Does not make API calls to create or modify cloud resources — no infrastructure changes.
 * Excellent to use in pre-commit hooks and CI pipelines to catch schema and syntax problems early.
 
-<Callout icon="lightbulb">
-  Run `terraform init` before `terraform validate` to ensure provider schemas are available for full validation.
-</Callout>
+> **lightbulb** Run `terraform init` before `terraform validate` to ensure provider schemas are available for full validation.
 
 ## terraform fmt — enforce consistent HCL formatting
 
@@ -192,9 +184,7 @@ Notes about `terraform fmt`:
 * Does not validate argument names, types, or provider schemas.
 * Useful as an automatic pre-commit hook step or CI gate to enforce a consistent code style.
 
-<Callout icon="warning">
-  `terraform validate` does not check runtime constraints or whether a given resource name is already taken by the cloud provider. Those checks require interacting with the provider (for example via `terraform plan`/`apply` or provider APIs).
-</Callout>
+> **warning** `terraform validate` does not check runtime constraints or whether a given resource name is already taken by the cloud provider. Those checks require interacting with the provider (for example via `terraform plan`/`apply` or provider APIs).
 
 ## Quick reference
 
@@ -225,6 +215,4 @@ Summary:
 
 We'll now cover another Terraform command.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/a87fc0ec-6ef6-409e-91cb-709bdcebb9eb/lesson/8c459611-f77e-4c1f-95e1-7dc4d9ae312a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/a87fc0ec-6ef6-409e-91cb-709bdcebb9eb/lesson/8c459611-f77e-4c1f-95e1-7dc4d9ae312a)

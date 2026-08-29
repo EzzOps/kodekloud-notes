@@ -29,9 +29,7 @@ total 0
 [aaron@LFCS-CentOS attributes]$
 ```
 
-<Callout icon="lightbulb">
-  Notice how the permissions allow the group and others different levels of access. For a user like Aaron Lockhart, who is not in the "ftp" group, only the read permission from the third set is applicable.
-</Callout>
+> **lightbulb** Notice how the permissions allow the group and others different levels of access. For a user like Aaron Lockhart, who is not in the "ftp" group, only the read permission from the third set is applicable.
 
 If we need to grant specific users additional access—such as providing Aaron Lockhart with write access to "file3" without altering his permissions for "file1" and "file2"—reassigning file ownership is not ideal, as it would remove write access from the regular owner ("adm"). Instead, Access Control Lists (ACLs) offer a more granular approach.
 

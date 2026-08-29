@@ -15,13 +15,9 @@ securityContext:
       core: 0
 ```
 
-<Callout icon="triangle-alert">
-  A core dump could expose sensitive encryption keys. Always set `RLIMIT_CORE` to `0` in your containers.
-</Callout>
+> **triangle-alert** A core dump could expose sensitive encryption keys. Always set `RLIMIT_CORE` to `0` in your containers.
 
-<Frame>
-  ![The image provides guidance on disabling core dumps in a Kubernetes cluster, highlighting the importance of setting RLIMIT\_CORE to 0 to prevent core dumps that may contain sensitive encryption keys. It includes a diagram of a Kubernetes cluster with nodes running Vault servers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878552/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Running-Vault-in-Kubernetes/disable-core-dumps-kubernetes-diagram.jpg)
-</Frame>
+![The image provides guidance on disabling core dumps in a Kubernetes cluster, highlighting the importance of setting RLIMIT\_CORE to 0 to prevent core dumps that may contain sensitive encryption keys. It includes a diagram of a Kubernetes cluster with nodes running Vault servers.](https://kodekloud.com/kk-media/image/upload/v1752878552/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Running-Vault-in-Kubernetes/disable-core-dumps-kubernetes-diagram.jpg)
 
 ## Enable mlock
 
@@ -55,9 +51,7 @@ spec:
           add: ["IPC_LOCK"]
 ```
 
-<Frame>
-  ![The image is a slide advising not to run Vault as root, explaining that it should run as an unprivileged user to prevent exposure of process memory and encryption keys. It features a yellow background with a cartoon character in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878553/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Running-Vault-in-Kubernetes/vault-not-run-as-root-advice.jpg)
-</Frame>
+![The image is a slide advising not to run Vault as root, explaining that it should run as an unprivileged user to prevent exposure of process memory and encryption keys. It features a yellow background with a cartoon character in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878553/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Running-Vault-in-Kubernetes/vault-not-run-as-root-advice.jpg)
 
 ## Security Context Cheat Sheet
 
@@ -82,9 +76,7 @@ Other useful references:
 * [Vault Helm Chart](https://artifacthub.io/packages/helm/hashicorp/vault)
 * [Kubernetes Security Context](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/e5e1dc8a-e494-400d-8c96-44665ed5981d/lesson/900fe81c-0d64-466a-adc0-75c07d1d27d0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/e5e1dc8a-e494-400d-8c96-44665ed5981d/lesson/900fe81c-0d64-466a-adc0-75c07d1d27d0)
 
 
 # Section Overview Employ the Vault Security Model
@@ -100,22 +92,14 @@ In this section, we dive into the HashiCorp Vault security model. This conceptua
 | Secure introduction of Vault clients                 | Best practices for authenticating and authorizing applications and users. |
 | Security implications of running Vault on Kubernetes | Key considerations when deploying Vault within Kubernetes clusters.       |
 
-<Frame>
-  ![The image is an objective overview slide titled "Employ the Vault Security Model," listing two objectives: describing the secure introduction of Vault clients and the security implications of running Vault on Kubernetes. It also features a Vault certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878554/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Section-Overview-Employ-the-Vault-Security-Model/employ-vault-security-model-overview.jpg)
-</Frame>
+![The image is an objective overview slide titled "Employ the Vault Security Model," listing two objectives: describing the secure introduction of Vault clients and the security implications of running Vault on Kubernetes. It also features a Vault certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878554/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Section-Overview-Employ-the-Vault-Security-Model/employ-vault-security-model-overview.jpg)
 
-<Callout icon="lightbulb">
-  This section is purely conceptual. Focus on terminology, security considerations, and Vault architecture rather than practical implementation.
-</Callout>
+> **lightbulb** This section is purely conceptual. Focus on terminology, security considerations, and Vault architecture rather than practical implementation.
 
 When preparing for the [HashiCorp Certified: Vault Operations Professional](https://www.hashicorp.com/certification/vault) exam, “describe” questions assess your theoretical grasp of these topics, often in a multiple-choice format.
 
-<Callout icon="triangle-alert">
-  No demos or labs are provided here. For hands-on practice, consult the [Vault documentation](https://www.vaultproject.io/docs) and [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/).
-</Callout>
+> **triangle-alert** No demos or labs are provided here. For hands-on practice, consult the [Vault documentation](https://www.vaultproject.io/docs) and [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/).
 
 Focus on understanding how Vault handles client authentication, authorization, and the security trade-offs when running Vault in a Kubernetes environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/e5e1dc8a-e494-400d-8c96-44665ed5981d/lesson/32283549-a43a-4b76-9002-73a34c558ccd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/e5e1dc8a-e494-400d-8c96-44665ed5981d/lesson/32283549-a43a-4b76-9002-73a34c558ccd)

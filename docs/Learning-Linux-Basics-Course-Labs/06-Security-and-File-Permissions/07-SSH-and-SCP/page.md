@@ -24,9 +24,7 @@ The sudoers file is organized as follows:
 
 By carefully configuring these fields, administrators can grant precise command execution rights, minimizing the risk of unauthorized actions.
 
-<Frame>
-  ![The image categorizes account types: User, Superuser, System, and Service Accounts, with examples and UID specifications for each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881141/notes-assets/images/Learning-Linux-Basics-Course-Labs-Linux-Accounts/frame_340.jpg)
-</Frame>
+![The image categorizes account types: User, Superuser, System, and Service Accounts, with examples and UID specifications for each.](https://kodekloud.com/kk-media/image/upload/v1752881141/notes-assets/images/Learning-Linux-Basics-Course-Labs-Linux-Accounts/frame_340.jpg)
 
 ***
 
@@ -37,9 +35,7 @@ For more insights into Linux security and administration:
 * [Linux Security Guide](https://www.linux.com/topic/rights/linux-security-basics/)
 * [Linux User Management](https://www.cyberciti.biz/tips/linux-managing-users.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/302fcc6e-6555-4646-b71e-6fb2dee21474" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/302fcc6e-6555-4646-b71e-6fb2dee21474)
 
 
 # SSH and SCP
@@ -68,9 +64,7 @@ Last login: Tue Apr  7 20:08:58 2020 from 192.168.1.109
 
 In the example above, because the username is not explicitly mentioned, SSH attempts to log in using the current local user ("bob"). Upon connection, the system prompts you to enter the password for that account on the remote server.
 
-<Callout icon="lightbulb">
-  If connecting to a new server, ensure that the host key is trusted to prevent any security warnings.
-</Callout>
+> **lightbulb** If connecting to a new server, ensure that the host key is trusted to prevent any security warnings.
 
 ## Passwordless SSH with Key Pairs
 
@@ -147,9 +141,7 @@ caleston-code.tar.gz                             100% 2498KB  51MB/s  00:00
 
 This command transfers the file to the destination path specified after the colon. Make sure you have the necessary write permissions on the destination directory to avoid errors.
 
-<Callout icon="triangle-alert">
-  If you attempt to copy the file to a directory without the required permissions (e.g., `/root`), the transfer will fail with a "Permission denied" error.
-</Callout>
+> **triangle-alert** If you attempt to copy the file to a directory without the required permissions (e.g., `/root`), the transfer will fail with a "Permission denied" error.
 
 ```bash theme={null}
 [bob@caleston-lp10 ~]$ scp /home/bob/caleston-code.tar.gz devapp01:/root
@@ -167,8 +159,6 @@ Bob thanks Dave for the insightful lesson and heads back to his desk.
 
 Thank you for reading.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/1dbc03e4-14e5-4c73-929a-55f2b6900acb" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/1dbc03e4-14e5-4c73-929a-55f2b6900acb)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/86b0b1d4-3223-4f43-ba6d-de27822bb299" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/86b0b1d4-3223-4f43-ba6d-de27822bb299)

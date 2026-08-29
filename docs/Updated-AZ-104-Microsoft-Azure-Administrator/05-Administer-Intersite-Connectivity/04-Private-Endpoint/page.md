@@ -17,9 +17,7 @@ Azure Private Link resolves these limitations. By creating a private endpoint fo
 * **Enhanced Data Exfiltration Protection:** Keeping traffic within a private network mitigates the chance of unauthorized data exposure.
 * **Direct Access within Azure VNets:** Services become directly available via private IP addresses without the need for additional network configurations.
 
-<Callout icon="lightbulb">
-  Disabling public network access will render any previously configured service endpoints non-functional. Attempting to access the storage account via a VM without the proper configuration will result in an "Authorization Failure" error.
-</Callout>
+> **lightbulb** Disabling public network access will render any previously configured service endpoints non-functional. Attempting to access the storage account via a VM without the proper configuration will result in an "Authorization Failure" error.
 
 In the next sections, we will configure a private endpoint for your storage account using the Azure portal, integrate DNS settings, test connectivity, and verify that your configuration is working as expected.
 
@@ -34,29 +32,21 @@ To configure a private endpoint for your storage account, follow these steps:
 
 The image below illustrates the private endpoint creation page in the Azure portal:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a private endpoint, with fields for project and instance details such as subscription, resource group, name, and region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884621/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-Endpoint/azure-portal-private-endpoint-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a private endpoint, with fields for project and instance details such as subscription, resource group, name, and region.](https://kodekloud.com/kk-media/image/upload/v1752884621/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-Endpoint/azure-portal-private-endpoint-creation.jpg)
 
 Next, configure the Virtual Network settings:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a private endpoint, specifically on the "Virtual Network" configuration step. It includes options for selecting a virtual network, subnet, and configuring private IP settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884623/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-Endpoint/azure-portal-private-endpoint-configuration.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a private endpoint, specifically on the "Virtual Network" configuration step. It includes options for selecting a virtual network, subnet, and configuring private IP settings.](https://kodekloud.com/kk-media/image/upload/v1752884623/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-Endpoint/azure-portal-private-endpoint-configuration.jpg)
 
 After configuring the private endpoint, Azure automatically creates a private DNS zone to enable name resolution for the storage account. The DNS zone is formatted as "privatelink.blob.core.windows.net" and holds an A record mapping the storage account’s name to its private IP address. For Azure VMs using the Azure-provided DNS, the integration is automatic. However, for on-premises hosts, you must configure a conditional forwarder from your on-premises DNS to an Azure DNS resolver or a private resolver.
 
 Review the DNS integration settings on the portal:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a private endpoint, specifically focusing on DNS integration settings. It includes options for configuring a private DNS zone and selecting a resource group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884624/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-Endpoint/azure-portal-private-endpoint-dns-settings.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a private endpoint, specifically focusing on DNS integration settings. It includes options for configuring a private DNS zone and selecting a resource group.](https://kodekloud.com/kk-media/image/upload/v1752884624/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-Endpoint/azure-portal-private-endpoint-dns-settings.jpg)
 
 Once all settings are applied, wait for the private endpoint deployment to complete. The image below indicates the deployment progress:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a private endpoint, with details about the subscription, resource group, and virtual network. A notification indicates that a template deployment is being initialized.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884625/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-Endpoint/azure-portal-private-endpoint-creation-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a private endpoint, with details about the subscription, resource group, and virtual network. A notification indicates that a template deployment is being initialized.](https://kodekloud.com/kk-media/image/upload/v1752884625/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-Endpoint/azure-portal-private-endpoint-creation-2.jpg)
 
 After creation, the Azure portal displays the following details:
 
@@ -65,21 +55,15 @@ After creation, the Azure portal displays the following details:
 
 The dashboard summarizes these details:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying details of a private endpoint named "pe-st," including its resource group, location, subscription ID, and connection status. The provisioning state is marked as "Succeeded," and the connection status is "Approved."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884627/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-Endpoint/azure-portal-private-endpoint-details.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying details of a private endpoint named "pe-st," including its resource group, location, subscription ID, and connection status. The provisioning state is marked as "Succeeded," and the connection status is "Approved."](https://kodekloud.com/kk-media/image/upload/v1752884627/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-Endpoint/azure-portal-private-endpoint-details.jpg)
 
 Additionally, you can review the private DNS zone configuration:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying details of a private DNS zone configuration for "privatelink.blob.core.windows.net," including resource group and subscription information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884628/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-Endpoint/azure-private-dns-zone-configuration.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying details of a private DNS zone configuration for "privatelink.blob.core.windows.net," including resource group and subscription information.](https://kodekloud.com/kk-media/image/upload/v1752884628/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-Endpoint/azure-private-dns-zone-configuration.jpg)
 
 Verify that your Virtual Network (e.g., vnet01) is properly linked:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying virtual network links for a private DNS zone. It lists a completed link with the virtual network "vnet-01" and auto-registration disabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884630/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-Endpoint/azure-portal-private-dns-vnet-links.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying virtual network links for a private DNS zone. It lists a completed link with the virtual network "vnet-01" and auto-registration disabled.](https://kodekloud.com/kk-media/image/upload/v1752884630/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-Endpoint/azure-portal-private-dns-vnet-links.jpg)
 
 ## Testing Private Endpoint Connectivity
 
@@ -135,10 +119,6 @@ This confirms that the storage account now resolves via the private endpoint usi
 
 Azure Private Endpoints offer a secure method for accessing storage accounts and other Azure services over a private connection using an IP from your Virtual Network. The seamless integration with Azure Private DNS Zones allows service names to resolve accurately to private IP addresses, simplifying connectivity for both Azure VMs and on-premises systems (when DNS forwarders are configured). This configuration improves your security posture by eliminating exposure to the public internet and reducing the risk of data exfiltration.
 
-<Callout icon="lightbulb">
-  In the next module, we will explore techniques for managing and administering network traffic within your Azure environment.
-</Callout>
+> **lightbulb** In the next module, we will explore techniques for managing and administering network traffic within your Azure environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/f7470a91-91f6-4c6c-8a03-565abfeb7aee/lesson/052b4988-4be8-4f66-8979-d5c22fb02036" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/f7470a91-91f6-4c6c-8a03-565abfeb7aee/lesson/052b4988-4be8-4f66-8979-d5c22fb02036)

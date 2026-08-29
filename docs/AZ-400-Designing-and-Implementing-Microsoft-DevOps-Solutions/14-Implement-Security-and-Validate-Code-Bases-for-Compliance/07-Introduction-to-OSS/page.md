@@ -16,13 +16,13 @@ When examined closely, up to 80% of a modern application’s architecture is ass
 | Third-Party Commercial Vendors | Licensed middleware, frameworks, or complete software | Enterprise databases, paid analytics packages |
 | Open Source Community          | Freely available libraries, tools, and frameworks     | React, Kubernetes, TensorFlow                 |
 
-![The image illustrates the software build process, highlighting that 80% of the architecture involves contributions from teams within the organization, third-party commercial entities, and the open-source community.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868017/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction-to-OSS/software-build-process-architecture-contributions.jpg)
+![The image illustrates the software build process, highlighting that 80% of the architecture involves contributions from teams within the organization, third-party commercial entities, and the open-source community.](https://kodekloud.com/kk-media/image/upload/v1752868017/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction-to-OSS/software-build-process-architecture-contributions.jpg)
 
 ## Ubiquity of Open Source in Development
 
 Open source components are now embedded in nearly every software project. Whether you’re building microservices or a large-scale web application, OSS libraries and frameworks are almost always part of the stack.
 
-![The image illustrates the concept of the software build process, highlighting the ubiquity of open-source integration, with a person interacting with a computer screen displaying gears and icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868018/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction-to-OSS/software-build-process-open-source-integration.jpg)
+![The image illustrates the concept of the software build process, highlighting the ubiquity of open-source integration, with a person interacting with a computer screen displaying gears and icons.](https://kodekloud.com/kk-media/image/upload/v1752868018/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction-to-OSS/software-build-process-open-source-integration.jpg)
 
 ## Defining Open Source Software
 

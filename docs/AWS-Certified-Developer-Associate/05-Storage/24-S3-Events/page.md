@@ -6,7 +6,7 @@ Learn how S3 events trigger actions in response to specific events in an Amazon 
 
 In this lesson, you'll learn how S3 events automatically trigger actions when specific events occur within an Amazon S3 bucket. For example, when a user uploads or deletes an object, S3 can generate an event that integrates with other AWS services such as Lambda, SNS, SQS, or EventBridge.
 
-![The image illustrates the flow of S3 events from an S3 bucket to various AWS services, including Amazon SNS, AWS Lambda, Amazon SQS, and Amazon EventBridge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859758/notes-assets/images/AWS-Certified-Developer-Associate-S3-Events/s3-events-flow-aws-services.jpg)
+![The image illustrates the flow of S3 events from an S3 bucket to various AWS services, including Amazon SNS, AWS Lambda, Amazon SQS, and Amazon EventBridge.](https://kodekloud.com/kk-media/image/upload/v1752859758/notes-assets/images/AWS-Certified-Developer-Associate-S3-Events/s3-events-flow-aws-services.jpg)
 
 When a user uploads an object, S3 can trigger an event that either publishes a message to an SNS topic, starts a Lambda function, sends a message to an SQS queue, or integrates with EventBridge. For instance, if a user uploads a video, you can have S3 automatically invoke a Lambda function that processes and converts the video—removing the need for continuous polling.
 
@@ -19,7 +19,7 @@ When a user uploads an object, S3 can trigger an event that either publishes a m
 
 Below is an image showcasing the ten different types of Amazon S3 events that can generate notifications, including events for new object creation, removal, and lifecycle expiration:
 
-![The image lists ten types of Amazon S3 events for which notifications can be published, including new object creation, object removal, and lifecycle expiration events. Each event type is color-coded and numbered.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859760/notes-assets/images/AWS-Certified-Developer-Associate-S3-Events/amazon-s3-event-notifications-list.jpg)
+![The image lists ten types of Amazon S3 events for which notifications can be published, including new object creation, object removal, and lifecycle expiration events. Each event type is color-coded and numbered.](https://kodekloud.com/kk-media/image/upload/v1752859760/notes-assets/images/AWS-Certified-Developer-Associate-S3-Events/amazon-s3-event-notifications-list.jpg)
 
 ## Configuring S3 Events with a Lambda Function
 
@@ -49,7 +49,7 @@ In this demo, you'll set up S3 event notifications to trigger a simple Lambda fu
 
    For this example, select **Lambda function**.
 
-![The image shows a configuration screen for setting up an event notification in Amazon S3, with fields for event name, prefix, and suffix, and options for selecting event types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859761/notes-assets/images/AWS-Certified-Developer-Associate-S3-Events/amazon-s3-event-notification-setup.jpg)
+![The image shows a configuration screen for setting up an event notification in Amazon S3, with fields for event name, prefix, and suffix, and options for selecting event types.](https://kodekloud.com/kk-media/image/upload/v1752859761/notes-assets/images/AWS-Certified-Developer-Associate-S3-Events/amazon-s3-event-notification-setup.jpg)
 
 ### Lambda Function Setup
 
@@ -72,7 +72,7 @@ After configuring the Lambda function:
 * Set the event type to "new objects created" (or an appropriate equivalent).
 * Click **Save changes**. S3 will update the Lambda function’s permissions to allow it to be triggered by S3 events.
 
-![The image shows an AWS interface for configuring event notifications, with options to select a destination such as a Lambda function, SNS topic, or SQS queue. The "Lambda function" option is selected, and there is a dropdown to choose a specific function.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859762/notes-assets/images/AWS-Certified-Developer-Associate-S3-Events/aws-event-notifications-lambda-config.jpg)
+![The image shows an AWS interface for configuring event notifications, with options to select a destination such as a Lambda function, SNS topic, or SQS queue. The "Lambda function" option is selected, and there is a dropdown to choose a specific function.](https://kodekloud.com/kk-media/image/upload/v1752859762/notes-assets/images/AWS-Certified-Developer-Associate-S3-Events/aws-event-notifications-lambda-config.jpg)
 
 ## Testing Your Configuration
 
@@ -87,9 +87,9 @@ Verify that your configuration is working by following these steps:
    * Open the latest log stream to review the output.
    * Look for logged event details that include the event name, the S3 operation (such as a PUT event), and metadata related to the uploaded object.
 
-![The image shows an AWS CloudWatch interface displaying log group details for "/aws/lambda/new-object-created," including information like ARN, creation time, and metric filters.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859764/notes-assets/images/AWS-Certified-Developer-Associate-S3-Events/aws-cloudwatch-log-group-details.jpg)
+![The image shows an AWS CloudWatch interface displaying log group details for "/aws/lambda/new-object-created," including information like ARN, creation time, and metric filters.](https://kodekloud.com/kk-media/image/upload/v1752859764/notes-assets/images/AWS-Certified-Developer-Associate-S3-Events/aws-cloudwatch-log-group-details.jpg)
 
-![The image shows an AWS CloudWatch interface displaying log entries for a Lambda function, including details like timestamps, request IDs, and event information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859765/notes-assets/images/AWS-Certified-Developer-Associate-S3-Events/aws-cloudwatch-lambda-logs.jpg)
+![The image shows an AWS CloudWatch interface displaying log entries for a Lambda function, including details like timestamps, request IDs, and event information.](https://kodekloud.com/kk-media/image/upload/v1752859765/notes-assets/images/AWS-Certified-Developer-Associate-S3-Events/aws-cloudwatch-lambda-logs.jpg)
 
 The CloudWatch logs confirm that the Lambda function was successfully triggered by the S3 event, validating your configuration.
 

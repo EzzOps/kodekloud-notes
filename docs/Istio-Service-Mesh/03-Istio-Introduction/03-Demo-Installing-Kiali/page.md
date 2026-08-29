@@ -14,9 +14,7 @@ To begin, apply the configuration files from the samples folder to install Kiali
 kubectl apply
 ```
 
-<Callout icon="lightbulb">
-  The add-ons, such as Grafana and Jaeger, are intended for demonstration purposes only. They are not tuned for production performance or security.
-</Callout>
+> **lightbulb** The add-ons, such as Grafana and Jaeger, are intended for demonstration purposes only. They are not tuned for production performance or security.
 
 ## Step 2: Review the Installation Output
 
@@ -117,17 +115,13 @@ Once the installation and verification steps are complete, start the Kiali dashb
 
 After launching the dashboard, you'll see all the namespaces in your service mesh. Clicking the number next to the applications takes you to the applications page, which is also accessible from the left menu. In this view, you'll find the four Bookinfo applications and have the option to switch namespaces for more details.
 
-<Frame>
-  ![The image shows the Kiali Console interface displaying a list of applications within the "default" namespace, each with health status, labels, and details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879336/notes-assets/images/Istio-Service-Mesh-Demo-Installing-Kiali/kiali-console-default-namespace-apps.jpg)
-</Frame>
+![The image shows the Kiali Console interface displaying a list of applications within the "default" namespace, each with health status, labels, and details.](https://kodekloud.com/kk-media/image/upload/v1752879336/notes-assets/images/Istio-Service-Mesh-Demo-Installing-Kiali/kiali-console-default-namespace-apps.jpg)
 
 ### Workloads Overview
 
 Navigate to the "Workloads" section from the menu to view all deployments listed as workloads. Each workload is displayed as healthy with labels indicating its application name and version.
 
-<Frame>
-  ![The image shows the Kiali Console interface displaying a list of workloads in the "default" namespace, all marked as healthy. Each workload is labeled with its application name and version.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879337/notes-assets/images/Istio-Service-Mesh-Demo-Installing-Kiali/kiali-console-default-workloads-healthy.jpg)
-</Frame>
+![The image shows the Kiali Console interface displaying a list of workloads in the "default" namespace, all marked as healthy. Each workload is labeled with its application name and version.](https://kodekloud.com/kk-media/image/upload/v1752879337/notes-assets/images/Istio-Service-Mesh-Demo-Installing-Kiali/kiali-console-default-workloads-healthy.jpg)
 
 ### Services and Istio Config
 
@@ -135,9 +129,7 @@ Next, check the "Services" section. Initially, no services might be displayed, w
 
 When you access the "Istio Config" menu, you might notice that no configurations are shown. This indicates that there are currently no Istio configurations for the selected namespace.
 
-<Frame>
-  ![The image shows a Kiali Console interface displaying a list of services within the "default" namespace, including details like health, labels, and configuration status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879339/notes-assets/images/Istio-Service-Mesh-Demo-Installing-Kiali/kiali-console-default-namespace-services.jpg)
-</Frame>
+![The image shows a Kiali Console interface displaying a list of services within the "default" namespace, including details like health, labels, and configuration status.](https://kodekloud.com/kk-media/image/upload/v1752879339/notes-assets/images/Istio-Service-Mesh-Demo-Installing-Kiali/kiali-console-default-namespace-services.jpg)
 
 ### Graph Visualization
 
@@ -154,6 +146,4 @@ For more detailed information on Kubernetes and service mesh concepts, refer to 
 
 By following these steps, you can effectively install Kiali on your cluster and take advantage of its robust monitoring and visualization capabilities for your service mesh.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/7ef212b0-cd34-4a60-a108-54d254555612" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/7ef212b0-cd34-4a60-a108-54d254555612)

@@ -70,10 +70,6 @@ Links and references:
   <img alt="A high-level architecture diagram of Argo Workflows on a Kubernetes cluster. It shows users and CLIs interacting with an Argo server/load balancer and workflow controller, workflow pods running in namespaces, and external services like artifact storage, OAuth provider, and monitoring." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Note: The Workflow Controller reconciles Workflow CRs and must have the ServiceAccount RBAC permissions to create and manage the resources your workflows require (pods, configmaps, secrets, pvc, etc.). Verify Role/ClusterRole bindings for multi-namespace or cluster-scoped workflows.
-</Callout>
+> **lightbulb** Note: The Workflow Controller reconciles Workflow CRs and must have the ServiceAccount RBAC permissions to create and manage the resources your workflows require (pods, configmaps, secrets, pvc, etc.). Verify Role/ClusterRole bindings for multi-namespace or cluster-scoped workflows.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/2b1fcf85-c045-4af3-bb2c-5172dcfec048" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/2b1fcf85-c045-4af3-bb2c-5172dcfec048)

@@ -52,9 +52,7 @@ First, create a file named `greetings.txt`:
 nano greetings.txt
 ```
 
-<Frame>
-  ![The image shows a GNU Nano text editor screen with a new file named "greetings.txt" open. The screen displays various command options at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882506/notes-assets/images/Open-Source-for-Beginners-Demo-2-Basic-Git-Commands/gnu-nano-text-editor-greetings-file.jpg)
-</Frame>
+![The image shows a GNU Nano text editor screen with a new file named "greetings.txt" open. The screen displays various command options at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752882506/notes-assets/images/Open-Source-for-Beginners-Demo-2-Basic-Git-Commands/gnu-nano-text-editor-greetings-file.jpg)
 
 Check the repository status to see untracked files:
 
@@ -95,9 +93,7 @@ Date:   Sat Sep 24 06:15:31 2022 +0530
     Add greetings.txt with initial message
 ```
 
-<Callout icon="lightbulb">
-  A clear, descriptive commit message helps you and your team understand the purpose of each change.
-</Callout>
+> **lightbulb** A clear, descriptive commit message helps you and your team understand the purpose of each change.
 
 ***
 
@@ -137,9 +133,7 @@ Repeat the workflow to add a second file:
 
 You’ll see both commits listed, with the most recent on top.
 
-<Callout icon="triangle-alert">
-  Always run `git status` before committing to avoid accidentally omitting or including unwanted files.
-</Callout>
+> **triangle-alert** Always run `git status` before committing to avoid accidentally omitting or including unwanted files.
 
 ***
 
@@ -164,6 +158,4 @@ You’ll see both commits listed, with the most recent on top.
 
 Start practicing these commands today to build a solid foundation in version control!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/fbb6900d-94ee-411a-8821-42557ca81867/lesson/b82f73e9-02cf-42af-a04d-64db6db328f0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/fbb6900d-94ee-411a-8821-42557ca81867/lesson/b82f73e9-02cf-42af-a04d-64db6db328f0)

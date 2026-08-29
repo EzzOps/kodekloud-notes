@@ -6,9 +6,7 @@ This article explains fault injection as a testing strategy to simulate errors a
 
 Fault injection is a testing strategy designed to simulate errors and validate the resilience of your error handling mechanisms. In this guide, we explain how to simulate faults in your Virtual Services to ensure that your application gracefully handles failures.
 
-<Callout icon="lightbulb">
-  Before proceeding, make sure you have successfully deployed your application, configured a Gateway, and set up the product page and reviews Virtual Services. All components should be functioning as expected.
-</Callout>
+> **lightbulb** Before proceeding, make sure you have successfully deployed your application, configured a Gateway, and set up the product page and reviews Virtual Services. All components should be functioning as expected.
 
 Fault injection in Istio supports the simulation of two primary error types in Virtual Services:
 
@@ -55,6 +53,4 @@ For further reading, consider exploring these resources:
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Error Handling Best Practices](https://www.example.com/error-handling)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/6358d65b-15a3-4498-8e0b-61c2cae90233" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/6358d65b-15a3-4498-8e0b-61c2cae90233)

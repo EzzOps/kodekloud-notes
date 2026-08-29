@@ -32,7 +32,7 @@ AWS Private Certificate Authority offers numerous features designed to simplify 
 * Automating the full lifecycle of private certificates—from issuance and renewal to revocation.
 * Supporting a cost-effective pay-as-you-go pricing model.
 
-![The image lists four features: Private Certificates, Integration with AWS Certificate Manager (ACM), Audit-Friendly, and Lifecycle Management. Each feature is represented with an icon and a gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865912/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Private-Certificate-Authority/features-private-certificates-acm.jpg)
+![The image lists four features: Private Certificates, Integration with AWS Certificate Manager (ACM), Audit-Friendly, and Lifecycle Management. Each feature is represented with an icon and a gradient background.](https://kodekloud.com/kk-media/image/upload/v1752865912/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Private-Certificate-Authority/features-private-certificates-acm.jpg)
 
 > **lightbulb** By leveraging AWS Private Certificate Authority, your organization can enhance internal security and streamline certificate management without the complexity and overhead of maintaining your own certificate infrastructure.
 

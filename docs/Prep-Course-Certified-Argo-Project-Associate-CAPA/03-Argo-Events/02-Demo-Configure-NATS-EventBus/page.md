@@ -56,9 +56,7 @@ spec:
         volumeSize: 10Gi
 ```
 
-<Callout icon="lightbulb">
-  NATS streaming (native) typically expects at least three replicas to form a quorum for high availability. Set replicas to match your HA requirements and ensure your cluster has capacity to schedule those pods.
-</Callout>
+> **lightbulb** NATS streaming (native) typically expects at least three replicas to form a quorum for high availability. Set replicas to match your HA requirements and ensure your cluster has capacity to schedule those pods.
 
 ## NATS (exotic) — connect to an existing NATS streaming server
 
@@ -102,9 +100,7 @@ spec:
     version: "2.11.0" # specify a concrete version for production
 ```
 
-<Callout icon="warning">
-  Do NOT use "latest" in production. Pin a concrete JetStream version to avoid unexpected upgrades or incompatibilities.
-</Callout>
+> **warning** Do NOT use "latest" in production. Pin a concrete JetStream version to avoid unexpected upgrades or incompatibilities.
 
 ## Kafka
 
@@ -184,6 +180,4 @@ Once the EventBus pods are Ready, proceed to create event sources and sensors th
 
 That's all for this lesson/article.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/90bfebed-61e0-4b64-baeb-a583e78651e8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/90bfebed-61e0-4b64-baeb-a583e78651e8)

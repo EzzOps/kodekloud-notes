@@ -6,11 +6,11 @@ This article provides an overview of Azure Content Delivery Networks, detailing 
 
 Azure Content Delivery Networks (CDN) empower your applications by delivering high-bandwidth content quickly and reliably. By caching content on globally distributed edge servers, Azure CDN reduces latency and improves the user experience. This article provides an in-depth overview of Azure CDN, its benefits, how it works, its requirements and limitations, and the various product offerings.
 
-![The image is a world map showing the locations of Azure Content Delivery Networks, marked with blue cloud icons in various regions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866257/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Content-Delivery-Networks/azure-cdn-world-map-clouds.jpg)
+![The image is a world map showing the locations of Azure Content Delivery Networks, marked with blue cloud icons in various regions.](https://kodekloud.com/kk-media/image/upload/v1752866257/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Content-Delivery-Networks/azure-cdn-world-map-clouds.jpg)
 
 Azure CDN caches high-bandwidth assets at strategically placed physical nodes worldwide, ensuring that content is delivered from a location closer to your users. This proximity reduces latency and ensures smooth, fast content delivery.
 
-![The image is an overview diagram of Azure Content Delivery Networks (CDN), showing the difference in content delivery with and without a CDN. With a CDN, content is cached and delivered optimally, while without a CDN, content is delivered directly from the origin server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866259/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Content-Delivery-Networks/azure-cdn-overview-diagram.jpg)
+![The image is an overview diagram of Azure Content Delivery Networks (CDN), showing the difference in content delivery with and without a CDN. With a CDN, content is cached and delivered optimally, while without a CDN, content is delivered directly from the origin server.](https://kodekloud.com/kk-media/image/upload/v1752866259/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Content-Delivery-Networks/azure-cdn-overview-diagram.jpg)
 
 ## Benefits of Using Azure CDN
 
@@ -20,7 +20,7 @@ Azure CDN offers several advantages that can significantly enhance your content 
 * **Efficient Traffic Distribution:** During high-traffic events like live streams or product launches, Azure CDN distributes the load across multiple servers, reducing the risk of server overload.
 * **Reduced Origin Server Load:** By offloading traffic to edge servers, the origin server handles fewer requests, improving its overall reliability and performance.
 
-![The image lists the benefits of Azure Content Delivery Networks, highlighting enhanced performance, scalability, and traffic distribution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866260/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Content-Delivery-Networks/azure-cdn-benefits-performance-scalability.jpg)
+![The image lists the benefits of Azure Content Delivery Networks, highlighting enhanced performance, scalability, and traffic distribution.](https://kodekloud.com/kk-media/image/upload/v1752866260/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Content-Delivery-Networks/azure-cdn-benefits-performance-scalability.jpg)
 
 > **lightbulb** Azure CDN not only speeds up access to static assets but also improves website scalability by efficiently managing high volumes of traffic.
 
@@ -34,7 +34,7 @@ Azure CDN optimizes content delivery through a streamlined flow that begins with
 2. **Cache Check at the Edge Server:**\
    The request reaches the nearest edge server in the point of presence (POP), where the server checks if the requested file is already cached.
 
-![The image illustrates how Azure Content Delivery Network (CDN) works, showing the flow from users to an edge server and origin, with steps like cache check and file retrieval.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866261/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Content-Delivery-Networks/azure-cdn-flow-diagram.jpg)
+![The image illustrates how Azure Content Delivery Network (CDN) works, showing the flow from users to an edge server and origin, with steps like cache check and file retrieval.](https://kodekloud.com/kk-media/image/upload/v1752866261/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Content-Delivery-Networks/azure-cdn-flow-diagram.jpg)
 
 3. **Content Fetching:**
    * **If Cached:** The edge server immediately provides the cached file to the user, ensuring a rapid response.
@@ -55,7 +55,7 @@ To start using Azure CDN, you need to set up a CDN profile. Consider the followi
 * Each CDN endpoint defines specific settings for asset delivery.
 * The ability to organize endpoints into multiple profiles depending on your domain or application needs.
 
-![The image outlines the requirements for Azure Content Delivery Networks, listing three points: creating at least one CDN profile, each CDN endpoint representing a specific configuration, and the ability to use multiple profiles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866263/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Content-Delivery-Networks/azure-cdn-requirements-outline.jpg)
+![The image outlines the requirements for Azure Content Delivery Networks, listing three points: creating at least one CDN profile, each CDN endpoint representing a specific configuration, and the ability to use multiple profiles.](https://kodekloud.com/kk-media/image/upload/v1752866263/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Content-Delivery-Networks/azure-cdn-requirements-outline.jpg)
 
 ### Limitations
 
@@ -65,7 +65,7 @@ While Azure CDN is a robust solution for content delivery, there are some limita
 * **Endpoint Limits:** Each CDN profile supports a limited number of endpoints.
 * **Custom Domain Limits:** There is a restriction on the number of custom domains that can be associated with CDN endpoints.
 
-![The image outlines the limitations of Azure Content Delivery Networks, highlighting the number of CDN profiles, endpoints, and custom domains that can be created or mapped.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866264/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Content-Delivery-Networks/azure-cdn-limitations-profiles-endpoints.jpg)
+![The image outlines the limitations of Azure Content Delivery Networks, highlighting the number of CDN profiles, endpoints, and custom domains that can be created or mapped.](https://kodekloud.com/kk-media/image/upload/v1752866264/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Content-Delivery-Networks/azure-cdn-limitations-profiles-endpoints.jpg)
 
 > **triangle-alert** When planning large-scale deployments, be sure to verify your subscription and endpoint limits, as these factors can impact your CDN strategy.
 
@@ -80,7 +80,7 @@ Azure offers a variety of CDN products to meet diverse content delivery needs:
 3. **Azure CDN Premium from Edgio:**\
    Provides advanced features, including enhanced traffic management and more configuration options, for applications with specific performance requirements.
 
-![The image lists three Azure Content Delivery Network products: Azure CDN Standard from Microsoft, Azure CDN Standard from Edgio (formerly Verizon), and Azure CDN Premium from Edgio (formerly Verizon).](../../../../images/kodekloud.com/kk-media/image/upload/v1752866266/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Content-Delivery-Networks/azure-cdn-products-list.jpg)
+![The image lists three Azure Content Delivery Network products: Azure CDN Standard from Microsoft, Azure CDN Standard from Edgio (formerly Verizon), and Azure CDN Premium from Edgio (formerly Verizon).](https://kodekloud.com/kk-media/image/upload/v1752866266/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Content-Delivery-Networks/azure-cdn-products-list.jpg)
 
 Below is a table summarizing these product offerings:
 

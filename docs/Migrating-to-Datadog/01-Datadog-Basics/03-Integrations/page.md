@@ -78,13 +78,9 @@ Quick rollout checklist
 | 4    | Validate dashboards and alerts using the collected telemetry            |
 | 5    | Roll out to production and monitor ingestion, alerts, and costs         |
 
-<Callout icon="warning">
-  Misconfigured credentials or excessive permissions can cause missing data or security exposure. Always use scoped service accounts and test in a non-production environment first.
-</Callout>
+> **warning** Misconfigured credentials or excessive permissions can cause missing data or security exposure. Always use scoped service accounts and test in a non-production environment first.
 
-<Callout icon="lightbulb">
-  Before enabling integrations in production, confirm your Datadog Agent version and the permissions needed (API keys, service accounts, or IAM roles). This prevents partial data collection and permission-related failures.
-</Callout>
+> **lightbulb** Before enabling integrations in production, confirm your Datadog Agent version and the permissions needed (API keys, service accounts, or IAM roles). This prevents partial data collection and permission-related failures.
 
 Links and references
 
@@ -100,6 +96,4 @@ Links and references
 
 That covers the essentials of Datadog integrations—where to find them, what they collect, marketplace options, and safe rollout practices. This concludes the lesson. I hope you found it useful; see you in the next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/10421186-d141-4fde-9847-73ea4e4e675a/lesson/1b92b0b0-78a7-4b7e-9e7a-785dde12db8d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/10421186-d141-4fde-9847-73ea4e4e675a/lesson/1b92b0b0-78a7-4b7e-9e7a-785dde12db8d)

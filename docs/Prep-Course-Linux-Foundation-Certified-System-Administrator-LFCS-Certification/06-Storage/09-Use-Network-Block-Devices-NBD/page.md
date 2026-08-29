@@ -8,9 +8,7 @@ In this lesson, you'll learn how to mount remote block devices using Network Blo
 
 Special files in Linux typically reference local storage devices. For example, `/dev/sda` or `/dev/vda` represents the entire first storage device, while `/dev/sda1` or `/dev/vda1` refers to a specific partition on that disk.
 
-<Frame>
-  ![The image illustrates network block devices, showing storage devices linked to special files, with paths like /dev/sda or /dev/vda for the entire first disk and /dev/sda1 or /dev/vda1 for the first partition.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881365/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Use-Network-Block-Devices-NBD/network-block-devices-storage-diagram.jpg)
-</Frame>
+![The image illustrates network block devices, showing storage devices linked to special files, with paths like /dev/sda or /dev/vda for the entire first disk and /dev/sda1 or /dev/vda1 for the first partition.](https://kodekloud.com/kk-media/image/upload/v1752881365/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Use-Network-Block-Devices-NBD/network-block-devices-storage-diagram.jpg)
 
 NBDs function similarly to local block special files; however, they map remote storage devices over the network. Consider the following scenario with two servers:
 
@@ -19,9 +17,7 @@ NBDs function similarly to local block special files; however, they map remote s
 
 With NBD, Server 1 can seamlessly incorporate a third disk that physically resides on Server 2. The NBD tools create a special file (e.g., `/dev/nbd0`), which applications treat as a standard block device, while all read and write operations on `/dev/nbd0` are transparently forwarded to the actual block device (e.g., `/dev/vdb`) on Server 2.
 
-<Frame>
-  ![The image illustrates a network block device setup between two servers, showing the connection and mapping of disks between Server 1 and Server 2. Server 1 has two disks and an NBD disk, while Server 2 has two disks, with arrows indicating data flow between them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881366/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Use-Network-Block-Devices-NBD/network-block-device-setup-servers.jpg)
-</Frame>
+![The image illustrates a network block device setup between two servers, showing the connection and mapping of disks between Server 1 and Server 2. Server 1 has two disks and an NBD disk, while Server 2 has two disks, with arrows indicating data flow between them.](https://kodekloud.com/kk-media/image/upload/v1752881366/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Use-Network-Block-Devices-NBD/network-block-device-setup-servers.jpg)
 
 Below, we cover how to configure both the NBD server (the system that shares its block device) and the NBD client (the system that connects to and uses the remote block device).
 
@@ -37,8 +33,7 @@ Follow these steps on the server that will export the block device:
    sudo apt in...
    ```
 
-<Callout icon="lightbulb">
-  Use the package manager to install the NBD server:
+> **lightbulb** Use the package manager to install the NBD server:
 
   ```bash theme={null}
   sudo apt install nbd-server
@@ -71,7 +66,6 @@ Follow these steps on the server that will export the block device:
   info: Adding new group `nbd' (GID 113) ...
   Progress: [ 60%] [#################################################......................]
   ```
-</Callout>
 
 2. Open the configuration file using your preferred text editor:
 
@@ -79,8 +73,7 @@ Follow these steps on the server that will export the block device:
    ...
    ```
 
-<Callout icon="lightbulb">
-  Open the configuration file using your preferred text editor:
+> **lightbulb** Open the configuration file using your preferred text editor:
 
   ```bash theme={null}
   sudo vim /etc/nbd-server/config
@@ -104,13 +97,11 @@ Follow these steps on the server that will export the block device:
   ```
 
   In this example, the export definition under `[partition2]` specifies that `/dev/sda1` will be shared. Make sure the device path matches your intended configuration.
-</Callout>
 
 3. Save your changes and restart the NBD server to apply the new configuration:
    ...
 
-<Callout icon="lightbulb">
-  Save your changes and restart the NBD server to apply the new configuration:
+> **lightbulb** Save your changes and restart the NBD server to apply the new configuration:
 
   ```bash theme={null}
   sudo systemctl restart nbd-server.service
@@ -123,11 +114,8 @@ Follow these steps on the server that will export the block device:
   ```
 
   This manual details generic and export-specific settings.
-</Callout>
 
-<Frame>
-  ![The image shows a section of a manual page for "nbd-server" with options for configuration, including "allowlist," "cacertfile," "certfile," and "force\_tls," each with descriptions and usage details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881368/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Use-Network-Block-Devices-NBD/nbd-server-manual-options-config.jpg)
-</Frame>
+![The image shows a section of a manual page for "nbd-server" with options for configuration, including "allowlist," "cacertfile," "certfile," and "force\_tls," each with descriptions and usage details.](https://kodekloud.com/kk-media/image/upload/v1752881368/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Use-Network-Block-Devices-NBD/nbd-server-manual-options-config.jpg)
 
 ***
 
@@ -143,8 +131,7 @@ On the client machine where you want to access the remote block device, complete
 
 ...
 
-<Callout icon="lightbulb">
-  Install the NBD client utilities:
+> **lightbulb** Install the NBD client utilities:
 
   ```bash theme={null}
   sudo apt install nbd-client
@@ -178,15 +165,13 @@ On the client machine where you want to access the remote block device, complete
   No VM guests are running outdated hypervisor (qemu) binaries on this host.
   jeremy@kodekloud:~$
   ```
-</Callout>
 
 2. To support remote block devices, load the necessary kernel module:
 
    ```bas... theme={null}
    ```
 
-<Callout icon="lightbulb">
-  To support remote block devices, load the necessary kernel module:
+> **lightbulb** To support remote block devices, load the necessary kernel module:
 
   ```bash theme={null}
   sudo modprobe nbd
@@ -205,12 +190,10 @@ On the client machine where you want to access the remote block device, complete
   ```
 
   Save and exit the file.
-</Callout>
 
 3. Establish an NBD connection by specifying the server's IP and the export name...
 
-<Callout icon="lightbulb">
-  Establish an NBD connection by specifying the server's IP and the export name with the `-N` option (for example, `partition2`):
+> **lightbulb** Establish an NBD connection by specifying the server's IP and the export name with the `-N` option (for example, `partition2`):
 
   ```bash theme={null}
   sudo nbd-client 127.0.0.1 -N partition2
@@ -226,12 +209,10 @@ On the client machine where you want to access the remote block device, complete
   ```
 
   The special file `/dev/nbd0` now represents the remote block device. Every operation on `/dev/nbd0` is forwarded to the designated block device on the server.
-</Callout>
 
 4. Treat the remote block device like any local one
 
-<Callout icon="lightbulb">
-  Treat the remote block device like any local one. For instance, mount it to the `/mnt` directory:
+> **lightbulb** Treat the remote block device like any local one. For instance, mount it to the `/mnt` directory:
 
   ```bash theme={null}
   sudo mount /dev/nbd0 /mnt
@@ -257,14 +238,12 @@ On the client machine where you want to access the remote block device, complete
   vmlinuz-6.8.0-35-generic
   vmlinuz.old
   ```
-</Callout>
 
 5. When it’s time to disconnect the remote device, follow these steps:
 
    * \*\*U...
 
-<Callout icon="lightbulb">
-  When it’s time to disconnect the remote device, follow these steps:
+> **lightbulb** When it’s time to disconnect the remote device, follow these steps:
 
   * **Unmount the file system:**
 
@@ -312,15 +291,13 @@ On the client machine where you want to access the remote block device, complete
   nbd0                     43:16   0    0B  0 disk
   ...
   ```
-</Callout>
 
 6. To view all available exports on the NBD server, use the `-l` option:
 
    ```... theme={null}
    ```
 
-<Callout icon="lightbulb">
-  To view all available exports on the NBD server, use the `-l` option:
+> **lightbulb** To view all available exports on the NBD server, use the `-l` option:
 
   ```bash theme={null}
   sudo nbd-client -l 127.0.0.1
@@ -335,7 +312,6 @@ On the client machine where you want to access the remote block device, complete
   ```
 
   This capability is enabled by the `allowlist = true` setting in the **generic** section of the NBD server configuration.
-</Callout>
 
 ***
 
@@ -359,6 +335,4 @@ This completes the core concepts of using Network Block Devices. Armed with thes
 
 Let's move on to our next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/9a236191-e721-489e-99a4-9382da1249f4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/9a236191-e721-489e-99a4-9382da1249f4)

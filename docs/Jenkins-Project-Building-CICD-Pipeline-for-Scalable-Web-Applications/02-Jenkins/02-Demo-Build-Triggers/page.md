@@ -12,19 +12,13 @@ One effective trigger is to initiate a build once another project has completed 
 
 For example, the Jenkins pipeline configuration page displays a range of build trigger options to achieve this behavior:
 
-<Frame>
-  ![The image shows a configuration page for a Jenkins pipeline, with options for build triggers and other settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879879/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Build-Triggers/jenkins-pipeline-configuration-page.jpg)
-</Frame>
+![The image shows a configuration page for a Jenkins pipeline, with options for build triggers and other settings.](https://kodekloud.com/kk-media/image/upload/v1752879879/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Build-Triggers/jenkins-pipeline-configuration-page.jpg)
 
 After setting your preferred option (for instance, "Always trigger"), simply click Save. Note that the configuration screen may alert you if a required project is missing:
 
-<Frame>
-  ![The image shows a Jenkins configuration screen for a project pipeline, with options for build triggers and a warning about a missing project.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879880/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Build-Triggers/jenkins-project-pipeline-configuration.jpg)
-</Frame>
+![The image shows a Jenkins configuration screen for a project pipeline, with options for build triggers and a warning about a missing project.](https://kodekloud.com/kk-media/image/upload/v1752879880/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Build-Triggers/jenkins-project-pipeline-configuration.jpg)
 
-<Callout icon="lightbulb">
-  Configuring downstream triggers can help maintain sequential builds and ensure that all dependent projects are built only after successful completions.
-</Callout>
+> **lightbulb** Configuring downstream triggers can help maintain sequential builds and ensure that all dependent projects are built only after successful completions.
 
 ## Build Periodically
 
@@ -38,13 +32,9 @@ For example, the cron expression:
 
 triggers a build every minute. If you require a less frequent schedule—say, once an hour—you can adjust the cron expression accordingly. Once you configure and click Save, the Jenkins dashboard will update with the new build schedule and history:
 
-<Frame>
-  ![The image shows a Jenkins dashboard for a project named "flaskpipeline," displaying build status and history with permalinks to recent builds.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879882/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Build-Triggers/jenkins-dashboard-flaskpipeline-builds.jpg)
-</Frame>
+![The image shows a Jenkins dashboard for a project named "flaskpipeline," displaying build status and history with permalinks to recent builds.](https://kodekloud.com/kk-media/image/upload/v1752879882/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Build-Triggers/jenkins-dashboard-flaskpipeline-builds.jpg)
 
-<Callout icon="triangle-alert">
-  Be sure to configure your cron expressions carefully to avoid excessive build triggers which could overload your Jenkins server.
-</Callout>
+> **triangle-alert** Be sure to configure your cron expressions carefully to avoid excessive build triggers which could overload your Jenkins server.
 
 ## Poll SCM
 
@@ -62,9 +52,7 @@ Jenkins offers a quiet period feature to mitigate the issue of multiple triggers
 
 For example, setting a quiet period of five seconds can reduce redundant builds when developers push several commits in a short timeframe. The configuration page for this feature displays related build trigger and scheduling options, and might include warnings about the effects of frequent polling:
 
-<Frame>
-  ![The image shows a Jenkins configuration page for a project, with options for build triggers and scheduling, including a warning about frequent polling.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879883/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Build-Triggers/jenkins-configuration-build-triggers.jpg)
-</Frame>
+![The image shows a Jenkins configuration page for a project, with options for build triggers and scheduling, including a warning about frequent polling.](https://kodekloud.com/kk-media/image/upload/v1752879883/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Build-Triggers/jenkins-configuration-build-triggers.jpg)
 
 ## Triggering Builds Remotely
 
@@ -87,9 +75,7 @@ Remote triggering enables you to start builds via an HTTP request, which is part
 
 After saving your configuration, any application capable of making HTTP requests can trigger a Jenkins build using these URLs. The configuration screen typically displays the URL details, which may include information about the hosting environment, such as an AWS EC2 instance:
 
-<Frame>
-  ![The image shows a configuration screen for a Jenkins pipeline with a text editor open, displaying a URL related to an AWS EC2 instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879884/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Build-Triggers/jenkins-pipeline-configuration-aws-ec2.jpg)
-</Frame>
+![The image shows a configuration screen for a Jenkins pipeline with a text editor open, displaying a URL related to an AWS EC2 instance.](https://kodekloud.com/kk-media/image/upload/v1752879884/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Build-Triggers/jenkins-pipeline-configuration-aws-ec2.jpg)
 
 Once you click Save and access the appropriate URL in your browser, you should see the build count increase, confirming that external triggering is operational.
 
@@ -99,6 +85,4 @@ These Jenkins build triggers—sequential builds, periodic scheduling, SCM polli
 
 For more detailed information on Jenkins and CI/CD processes, consider visiting the [Jenkins Documentation](https://www.jenkins.io/doc/). Happy building!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/c7f09c29-4433-4cd8-91a9-6367b5a672ba" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/c7f09c29-4433-4cd8-91a9-6367b5a672ba)

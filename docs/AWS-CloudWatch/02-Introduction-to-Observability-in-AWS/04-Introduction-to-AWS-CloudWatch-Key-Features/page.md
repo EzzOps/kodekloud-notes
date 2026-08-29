@@ -6,7 +6,7 @@ Learn to build a centralized observability system in AWS using CloudWatch for al
 
 Welcome! In this guide, you’ll learn how to build a centralized observability system in AWS using CloudWatch. You’ll see how to configure alarms, notifications, logging, and more—so you can maintain application health and swiftly diagnose issues.
 
-![The image illustrates AWS CloudWatch use cases, focusing on building centralized alarms, notifications, logging, and observability systems, with a detailed architecture diagram of AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862533/notes-assets/images/AWS-CloudWatch-Introduction-to-AWS-CloudWatch-Key-Features/aws-cloudwatch-use-cases-architecture.jpg)
+![The image illustrates AWS CloudWatch use cases, focusing on building centralized alarms, notifications, logging, and observability systems, with a detailed architecture diagram of AWS services.](https://kodekloud.com/kk-media/image/upload/v1752862533/notes-assets/images/AWS-CloudWatch-Introduction-to-AWS-CloudWatch-Key-Features/aws-cloudwatch-use-cases-architecture.jpg)
 
 ## What Is AWS CloudWatch?
 
@@ -24,7 +24,7 @@ AWS CloudWatch is a unified monitoring service that collects metrics, logs, and 
 * **Faster troubleshooting**: Correlate logs, metrics, and traces in one console.
 * **Cost optimization**: Identify underutilized resources.
 
-![The image is an introduction to AWS CloudWatch, highlighting its key features such as alarms, rules, RUM, metrics insights, events, logs, and synthetics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862534/notes-assets/images/AWS-CloudWatch-Introduction-to-AWS-CloudWatch-Key-Features/aws-cloudwatch-introduction-key-features.jpg)
+![The image is an introduction to AWS CloudWatch, highlighting its key features such as alarms, rules, RUM, metrics insights, events, logs, and synthetics.](https://kodekloud.com/kk-media/image/upload/v1752862534/notes-assets/images/AWS-CloudWatch-Introduction-to-AWS-CloudWatch-Key-Features/aws-cloudwatch-introduction-key-features.jpg)
 
 ## AWS CloudWatch Feature Overview
 

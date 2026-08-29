@@ -10,7 +10,7 @@ This guide explores Elastic IPs in AWS and demonstrates how they offer a static,
 
 Initially, the server is accessible via the public IP address 52.90.159.117. However, to illustrate the non-persistent nature of ephemeral public IPs, we will stop the server and then start it again. When the instance shuts down, it loses its public IP address. Upon restarting, the instance is assigned a new public IP address, which may differ from the original (for instance, starting with a different digit).
 
-![The image shows an AWS EC2 management console with a list of instances, highlighting one named "myserver" that is currently running. The instance details, including its ID, public IP address, and instance type, are displayed below.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859128/notes-assets/images/AWS-Certified-Developer-Associate-Elastic-IP-Demo/aws-ec2-console-myserver-instance.jpg)
+![The image shows an AWS EC2 management console with a list of instances, highlighting one named "myserver" that is currently running. The instance details, including its ID, public IP address, and instance type, are displayed below.](https://kodekloud.com/kk-media/image/upload/v1752859128/notes-assets/images/AWS-Certified-Developer-Associate-Elastic-IP-Demo/aws-ec2-console-myserver-instance.jpg)
 
 This behavior underscores a significant challenge: if your application’s users rely on an ephemeral IP, a server restart can break connectivity until client configurations or code are updated.
 
@@ -28,11 +28,11 @@ To allocate an Elastic IP, follow these steps:
 
 After a successful allocation, you might receive an IP address like 35.173.92.86.
 
-![The image shows an AWS EC2 console page for allocating an Elastic IP address, with options for selecting a network border group and public IPv4 address pool.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859129/notes-assets/images/AWS-Certified-Developer-Associate-Elastic-IP-Demo/aws-ec2-elastic-ip-allocation.jpg)
+![The image shows an AWS EC2 console page for allocating an Elastic IP address, with options for selecting a network border group and public IPv4 address pool.](https://kodekloud.com/kk-media/image/upload/v1752859129/notes-assets/images/AWS-Certified-Developer-Associate-Elastic-IP-Demo/aws-ec2-elastic-ip-allocation.jpg)
 
 You can further verify the allocation with the following display:
 
-![The image shows an AWS Management Console screen displaying the allocation of an Elastic IP address, specifically 35.173.92.86, in the EC2 section.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859130/notes-assets/images/AWS-Certified-Developer-Associate-Elastic-IP-Demo/aws-ec2-elastic-ip-allocation-2.jpg)
+![The image shows an AWS Management Console screen displaying the allocation of an Elastic IP address, specifically 35.173.92.86, in the EC2 section.](https://kodekloud.com/kk-media/image/upload/v1752859130/notes-assets/images/AWS-Certified-Developer-Associate-Elastic-IP-Demo/aws-ec2-elastic-ip-allocation-2.jpg)
 
 ### Associating the Elastic IP with an Instance
 
@@ -42,7 +42,7 @@ Once allocated, the next step is associating the Elastic IP with your instance. 
 2. Click on “Actions” and then select “Associate Elastic IP address”.
 3. Choose to associate it with an instance (or network interface) and select your instance. If the environment includes multiple private IP addresses, specify the correct one. In our case, the instance has only one.
 
-![The image shows an AWS EC2 console screen for associating an Elastic IP address with an instance. It includes options to select the resource type and instance, with a warning about disassociating previous IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859131/notes-assets/images/AWS-Certified-Developer-Associate-Elastic-IP-Demo/aws-ec2-associate-elastic-ip.jpg)
+![The image shows an AWS EC2 console screen for associating an Elastic IP address with an instance. It includes options to select the resource type and instance, with a warning about disassociating previous IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752859131/notes-assets/images/AWS-Certified-Developer-Associate-Elastic-IP-Demo/aws-ec2-associate-elastic-ip.jpg)
 
 After associating, the instance’s public IP address should now appear as 35.173.92.86.
 

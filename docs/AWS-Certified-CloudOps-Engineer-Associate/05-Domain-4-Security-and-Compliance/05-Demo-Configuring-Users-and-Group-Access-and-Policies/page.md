@@ -8,13 +8,13 @@ Welcome to this instructional session where Michael Forrester demonstrates how t
 
 > **lightbulb** Using groups with intuitive names (e.g., "Project\_A\_S3\_Readonly") enhances clarity and streamlines user management, especially when dealing with multiple projects and varying access levels.
 
-![The image shows an AWS Identity and Access Management (IAM) dashboard with security recommendations and account details. It includes information about multi-factor authentication and IAM resources like user groups, users, roles, and policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860437/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Configuring-Users-and-Group-Access-and-Policies/aws-iam-dashboard-security-recommendations.jpg)
+![The image shows an AWS Identity and Access Management (IAM) dashboard with security recommendations and account details. It includes information about multi-factor authentication and IAM resources like user groups, users, roles, and policies.](https://kodekloud.com/kk-media/image/upload/v1752860437/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Configuring-Users-and-Group-Access-and-Policies/aws-iam-dashboard-security-recommendations.jpg)
 
 For example, imagine you want to create a group named "Project\_A\_S3\_Readonly". The name clearly indicates that the group is linked to Project A and is intended for users who need read-only access to the S3 service. Enterprises often organize groups based on project name, service type, and role (e.g., operations, developer) to easily locate and manage permissions.
 
 Consider a scenario where your environment includes multiple users (such as yourself and a colleague named Fani) and several S3 buckets for Project A. You might need one group for read-only access and another for read-write access. By attaching a read-only access policy to the appropriate group, you maintain clear and secure permission boundaries.
 
-![The image shows an AWS Identity and Access Management (IAM) dashboard displaying a list of user groups with details such as name, number of users, and activity timestamps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860438/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Configuring-Users-and-Group-Access-and-Policies/aws-iam-dashboard-user-groups.jpg)
+![The image shows an AWS Identity and Access Management (IAM) dashboard displaying a list of user groups with details such as name, number of users, and activity timestamps.](https://kodekloud.com/kk-media/image/upload/v1752860438/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Configuring-Users-and-Group-Access-and-Policies/aws-iam-dashboard-user-groups.jpg)
 
 AWS provides a range of managed policies, but many enterprises favor customer-managed policies to have complete control over fine-grained permissions. In this demonstration, Michael creates a custom JSON-based policy for S3 read-only access. Although this example is generic, remember that in production environments, you should limit access by specifying resource names (such as the bucket name) in your policy conditions.
 
@@ -96,11 +96,11 @@ Next, he further enhances security by adding a condition that limits access to a
 
 This final policy is applied to the “Project\_A\_S3\_Readonly” group. It not only grants S3 read-only access but also restricts access to a predetermined bucket ("mrfkservices") and enforces network restrictions with a designated IP address. Remember, if any deny statements were specified, they would override these allow statements.
 
-![The image shows an AWS Identity and Access Management (IAM) console screen, displaying the permissions for a user group named "Project\_A\_S3\_Readonly," which has an "AmazonS3ReadOnlyAccess" policy attached.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860440/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Configuring-Users-and-Group-Access-and-Policies/aws-iam-console-project-a-s3-readonly.jpg)
+![The image shows an AWS Identity and Access Management (IAM) console screen, displaying the permissions for a user group named "Project\_A\_S3\_Readonly," which has an "AmazonS3ReadOnlyAccess" policy attached.](https://kodekloud.com/kk-media/image/upload/v1752860440/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Configuring-Users-and-Group-Access-and-Policies/aws-iam-console-project-a-s3-readonly.jpg)
 
 Once the policy is configured, attach it to the relevant user group via the IAM console. You will notice that the policy type changes from an AWS-managed policy to a customer-managed policy, indicating that you now have full control and can modify the policy as needed. Enterprises typically prefer customer-managed policies to prevent unexpected changes from AWS that might affect their security setup.
 
-![The image shows an AWS IAM console screen displaying a list of permission policies, including their names, types, usage, and descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860441/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Configuring-Users-and-Group-Access-and-Policies/aws-iam-console-permission-policies.jpg)
+![The image shows an AWS IAM console screen displaying a list of permission policies, including their names, types, usage, and descriptions.](https://kodekloud.com/kk-media/image/upload/v1752860441/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Configuring-Users-and-Group-Access-and-Policies/aws-iam-console-permission-policies.jpg)
 
 ## Summary
 

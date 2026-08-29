@@ -26,9 +26,7 @@ By following these steps, you ensure that each commit is deliberate and meaningf
 
 Happy committing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/ed378ae8-6434-4056-8f27-f197b6f5cfdf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/ed378ae8-6434-4056-8f27-f197b6f5cfdf)
 
 
 # List Set and Change Standard File Permissions
@@ -74,9 +72,7 @@ $ groups
 aaron sudo family
 ```
 
-<Callout icon="lightbulb">
-  Only the root user can change the file group to any group available on the system.
-</Callout>
+> **lightbulb** Only the root user can change the file group to any group available on the system.
 
 ## Changing the User Owner with chown
 
@@ -303,15 +299,11 @@ Similarly, 777 means full permissions (read, write, and execute) for all.
 
 Below is an image that illustrates the conversion of binary file permissions to octal values:
 
-<Frame>
-  ![The image illustrates octal file permissions, showing the conversion of binary to decimal values, with a specific example of "rw-r-----" corresponding to the octal number 640.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881255/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-List-Set-and-Change-Standard-File-Permissions/octal-file-permissions-binary-decimal.jpg)
-</Frame>
+![The image illustrates octal file permissions, showing the conversion of binary to decimal values, with a specific example of "rw-r-----" corresponding to the octal number 640.](https://kodekloud.com/kk-media/image/upload/v1752881255/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-List-Set-and-Change-Standard-File-Permissions/octal-file-permissions-binary-decimal.jpg)
 
 Another image further explains the octal permission notation used in Unix-like systems:
 
-<Frame>
-  ![The image illustrates octal permissions in a Unix-like system, showing how read, write, and execute permissions are converted to numerical values.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881256/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-List-Set-and-Change-Standard-File-Permissions/octal-permissions-unix-system-diagram.jpg)
-</Frame>
+![The image illustrates octal permissions in a Unix-like system, showing how read, write, and execute permissions are converted to numerical values.](https://kodekloud.com/kk-media/image/upload/v1752881256/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-List-Set-and-Change-Standard-File-Permissions/octal-permissions-unix-system-diagram.jpg)
 
 ## Summary
 
@@ -325,6 +317,4 @@ In this article, we covered the following key topics:
 
 With this detailed guide, you now have the knowledge to effectively manage file permissions on Linux systems, ensuring both security and proper access control. Happy learning and see you in the next article!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/98b89aec-f75a-43ae-943a-15f08bca9447" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/98b89aec-f75a-43ae-943a-15f08bca9447)

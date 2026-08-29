@@ -62,11 +62,9 @@ Use the Operator API and the Istio documentation to find profile defaults, avail
 
 That completes this demo on customizing Istio installations using the Istio Operator (IstioOperator CR).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/68d83bec-a2d9-4373-9027-b7df4f3fb748" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/68d83bec-a2d9-4373-9027-b7df4f3fb748)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/2714c649-e381-44a3-8c51-2e34408d6ab9" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/2714c649-e381-44a3-8c51-2e34408d6ab9)
 
 
 # Demo Install Istio Ambient Mode via CLI
@@ -77,9 +75,7 @@ Guide to install and verify Istio Ambient Mode using istioctl, configure namespa
 
 This guide walks through installing Istio in ambient mode using the CLI, verifying dataplane behavior (ztunnel and CNI), labeling namespaces for ambient dataplane mode, running a test pod to confirm layer‑4 interception, and optionally deploying a waypoint proxy for layer‑7 features.
 
-<Callout icon="lightbulb">
-  Ambient mode removes the sidecar proxy from workloads and uses a host‑level daemon (ztunnel) plus the Istio CNI for transparent L4 interception. Use waypoint proxies when you need layer‑7 features (HTTP routing, mirroring, fault injection).
-</Callout>
+> **lightbulb** Ambient mode removes the sidecar proxy from workloads and uses a host‑level daemon (ztunnel) plus the Istio CNI for transparent L4 interception. Use waypoint proxies when you need layer‑7 features (HTTP routing, mirroring, fault injection).
 
 ## 1 — Download Istio and add istioctl to PATH
 

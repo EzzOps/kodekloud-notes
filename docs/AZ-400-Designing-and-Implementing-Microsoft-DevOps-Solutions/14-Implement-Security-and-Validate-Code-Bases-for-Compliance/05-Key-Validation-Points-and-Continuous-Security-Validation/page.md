@@ -32,7 +32,7 @@ In modern DevOps pipelines, integrating validation checks and continuous securit
 
 At every phase of the DevOps lifecycle, targeted validation steps provide rapid feedback. Early detection through IDE plugins or CI scans prevents defects from propagating downstream.
 
-![The image outlines key validation points in a software development process, highlighting stages like feedback, CI, development, and testing, with associated tasks such as code review, vulnerability scanning, and performance testing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868027/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Key-Validation-Points-and-Continuous-Security-Validation/software-development-validation-points-diagram.jpg)
+![The image outlines key validation points in a software development process, highlighting stages like feedback, CI, development, and testing, with associated tasks such as code review, vulnerability scanning, and performance testing.](https://kodekloud.com/kk-media/image/upload/v1752868027/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Key-Validation-Points-and-Continuous-Security-Validation/software-development-validation-points-diagram.jpg)
 
 | Stage                  | Validation Checks                              | Examples                                        |
 | ---------------------- | ---------------------------------------------- | ----------------------------------------------- |
@@ -47,7 +47,7 @@ At every phase of the DevOps lifecycle, targeted validation steps provide rapid 
 
 Defect remediation cost escalates dramatically the later you catch it. Below are industry averages:
 
-![The image illustrates the cost of defects at different stages of software development: Coding (80/defect), Build (240/defect), QA & Security (960/defect), and Production (7,600/defect). It highlights the increasing cost of defects as they progress through the development lifecycle.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868027/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Key-Validation-Points-and-Continuous-Security-Validation/cost-of-defects-software-development.jpg)
+![The image illustrates the cost of defects at different stages of software development: Coding (80/defect), Build (240/defect), QA & Security (960/defect), and Production (7,600/defect). It highlights the increasing cost of defects as they progress through the development lifecycle.](https://kodekloud.com/kk-media/image/upload/v1752868027/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Key-Validation-Points-and-Continuous-Security-Validation/cost-of-defects-software-development.jpg)
 
 | Phase         | Average Cost per Defect |
 | ------------- | ----------------------- |
@@ -62,7 +62,7 @@ Defect remediation cost escalates dramatically the later you catch it. Below are
 
 Embedding security early in your DevOps pipeline empowers developers to remediate vulnerabilities before they become critical.
 
-![The image illustrates a process of continuous security validation, emphasizing the need to integrate security early in the development cycle to avoid issues before deployment to production. It shows a flow from coding to production with a focus on shifting security left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868028/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Key-Validation-Points-and-Continuous-Security-Validation/continuous-security-validation-development-cycle.jpg)
+![The image illustrates a process of continuous security validation, emphasizing the need to integrate security early in the development cycle to avoid issues before deployment to production. It shows a flow from coding to production with a focus on shifting security left.](https://kodekloud.com/kk-media/image/upload/v1752868028/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Key-Validation-Points-and-Continuous-Security-Validation/continuous-security-validation-development-cycle.jpg)
 
 Key benefits of shift-left security include:
 
@@ -76,7 +76,7 @@ Key benefits of shift-left security include:
 
 Automating security checks at every commit, build, and release ensures that security keeps pace with rapid deployments.
 
-![The image is about "Continuous Security Validation" and highlights the importance of shifting Secure DevOps practices earlier in the development process to reduce costs, and implementing automated tooling to identify issues.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868029/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Key-Validation-Points-and-Continuous-Security-Validation/continuous-security-validation-devops-automation.jpg)
+![The image is about "Continuous Security Validation" and highlights the importance of shifting Secure DevOps practices earlier in the development process to reduce costs, and implementing automated tooling to identify issues.](https://kodekloud.com/kk-media/image/upload/v1752868029/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Key-Validation-Points-and-Continuous-Security-Validation/continuous-security-validation-devops-automation.jpg)
 
 Incorporate these automated security tools:
 

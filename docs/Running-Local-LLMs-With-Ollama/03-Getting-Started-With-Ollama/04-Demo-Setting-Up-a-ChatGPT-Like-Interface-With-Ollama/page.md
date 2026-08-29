@@ -10,9 +10,7 @@ Ollama is an open-source project that lets you run large language models locally
 
 Start by visiting the Ollama GitHub repository for code, documentation, and community links:
 
-<Frame>
-  ![The image shows a GitHub repository page for "ollama/ollama," displaying a list of directories and files, along with repository statistics and information on the right side.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883699/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Setting-Up-a-ChatGPT-Like-Interface-With-Ollama/github-repo-ollama-directory-list.jpg)
-</Frame>
+![The image shows a GitHub repository page for "ollama/ollama," displaying a list of directories and files, along with repository statistics and information on the right side.](https://kodekloud.com/kk-media/image/upload/v1752883699/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Setting-Up-a-ChatGPT-Like-Interface-With-Ollama/github-repo-ollama-directory-list.jpg)
 
 Scroll to the **Community Integrations** section to find tools, scripts, and libraries contributed by users.
 
@@ -37,9 +35,7 @@ ollama run gemma2:27b
 
 These cover everything from basic LLMs to vision-enabled models and domain-specific variants.
 
-<Frame>
-  ![The image shows a list of links and descriptions for various software projects or tools, likely from a README file on a code repository platform.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883700/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Setting-Up-a-ChatGPT-Like-Interface-With-Ollama/software-projects-links-list.jpg)
-</Frame>
+![The image shows a list of links and descriptions for various software projects or tools, likely from a README file on a code repository platform.](https://kodekloud.com/kk-media/image/upload/v1752883700/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Setting-Up-a-ChatGPT-Like-Interface-With-Ollama/software-projects-links-list.jpg)
 
 ## 2. Integrate with Open Web UI
 
@@ -67,9 +63,7 @@ You can choose between a Python package or Docker container.
 | Python package       | `bash<br>pip install open-webui<br>open-webui serve`                                                                                                                                                                                    | Quick dev setup                          |
 | Docker (recommended) | `bash<br>docker run -d \ <br>  -p 3000:8080 \ <br>  --add-host host.docker.internal:host-gateway \ <br>  -v open-webui:/app/backend/data \ <br>  --name open-webui \ <br>  --restart always \ <br>  ghcr.io/open-webui/open-webui:main` | Isolated, auto-updates, production-ready |
 
-<Callout icon="lightbulb">
-  If you plan to share the UI across a team or deploy in production, Docker ensures consistent environments and easy upgrades.
-</Callout>
+> **lightbulb** If you plan to share the UI across a team or deploy in production, Docker ensures consistent environments and easy upgrades.
 
 When using Docker, you should see output like:
 
@@ -118,9 +112,7 @@ After the download completes, refresh the UI and choose **llama3.3**. Compare ou
 
 For team deployments, Open Web UI includes an **Admin Panel** to manage users, roles, and permissions—all within your on-prem infrastructure.
 
-<Frame>
-  ![The image shows a user management interface with one user listed as an admin, displaying details like name, email, last active time, and creation date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883701/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Setting-Up-a-ChatGPT-Like-Interface-With-Ollama/user-management-interface-admin-details.jpg)
-</Frame>
+![The image shows a user management interface with one user listed as an admin, displaying details like name, email, last active time, and creation date.](https://kodekloud.com/kk-media/image/upload/v1752883701/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Setting-Up-a-ChatGPT-Like-Interface-With-Ollama/user-management-interface-admin-details.jpg)
 
 Here you can:
 
@@ -128,9 +120,7 @@ Here you can:
 * Assign roles (admin, member)
 * Monitor last active times and creation dates
 
-<Callout icon="triangle-alert">
-  Always ensure your admin account has a strong, unique password to protect your on-premises data.
-</Callout>
+> **triangle-alert** Always ensure your admin account has a strong, unique password to protect your on-premises data.
 
 ***
 
@@ -142,6 +132,4 @@ Here you can:
 
 Explore these resources to extend your local LLM setup and discover more community integrations!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/836a96fe-9951-42b6-83ba-a602299c87c9/lesson/2047b4e6-8bc7-481c-8341-83caf01254fe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/836a96fe-9951-42b6-83ba-a602299c87c9/lesson/2047b4e6-8bc7-481c-8341-83caf01254fe)

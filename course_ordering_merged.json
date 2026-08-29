@@ -1,0 +1,3801 @@
+{
+  "course_modules": {
+    "12-Factor-App": [
+      "Introduction",
+      "Twelve-Factor-App-methodology",
+      "Conclusion"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate": [
+      "Introduction",
+      "Introduction-to-AI-and-Azure-AI-Services",
+      "Get-Started-with-Azure-AI-Services",
+      "Using-Azure-AI-Services-for-Enterprise-Applications",
+      "Analyzing-Videos",
+      "Analyzing-Text",
+      "Translating-Text",
+      "Develop-a-Question-Answering-Solution",
+      "Develop-a-Conversational-Language-Understanding-App",
+      "Custom-Classification-and-Named-Entity-Extraction",
+      "Speech-Recognition-Translation-and-Synthesis",
+      "Get-Started-with-Azure-OpenAI-Service",
+      "Develop-Apps-with-Azure-OpenAI-Service",
+      "Apply-Prompt-Engineering",
+      "Implement-Retrieval-Augmented-Generation-RAG-with-Azure-OpenAI-Service",
+      "Implementing-an-Intelligent-Search-Solution",
+      "Create-a-Custom-Skill-for-Azure-AI-Search",
+      "Creating-a-Knowledge-Store",
+      "Develop-a-Document-Intelligence-Solution",
+      "Analyze-and-Manipulate-Images",
+      "Detecting-Faces-with-the-Azure-AI-Vision",
+      "Custom-Vision-Models-with-Azure-AI-Custom-Vision"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals": [
+      "Introduction",
+      "Fundamental-AI-Concepts",
+      "Fundamentals-of-Machine-Learning",
+      "Introduction-to-Azure-AI-Services",
+      "Concepts-of-Computer-Vision",
+      "Azure-Computer-Vision-Capabilities",
+      "Natural-Language-Processing-NLP",
+      "Azure-NLP-Services",
+      "Azure-AI-Document-Intelligence",
+      "Azure-AI-Search",
+      "Generative-AI",
+      "Fundamentals-of-Azure-OpenAI",
+      "Responsible-Generative-AI"
+    ],
+    "AI-Agents": [
+      "Introduction",
+      "Prerequisites",
+      "Agent-Architecture-Multi-Agent-Systems",
+      "Building-AI-Agents",
+      "API-Integrations-Tools",
+      "Practical-Projects",
+      "Advanced-Agents-Projects"
+    ],
+    "AI-Agents-Fundamentals": [
+      "AI-Agents-Part-1",
+      "AI-Agents-Part-2",
+      "Introduction"
+    ],
+    "AI-Assisted-Ansible": [
+      "Prerequisites",
+      "Ansible-Refresher",
+      "Working-With-VS-Code-Extension",
+      "Using-ChatGPT-With-Ansible",
+      "GitHub-Copilot",
+      "Claude-Code-CLI-With-Ansible",
+      "Red-Hat-Ansible-Lightspeed"
+    ],
+    "AI-Assisted-Development": [
+      "Course-Introduction",
+      "Introduction-to-AI-Assisted-Development",
+      "Planning-Phase",
+      "Development-Phase-Backend",
+      "Development-Phase-Frontend",
+      "Project-Completion"
+    ],
+    "AWS-Certified-AI-Practitioner": [
+      "Introduction",
+      "Fundamentals-of-AI-and-ML",
+      "Fundamentals-of-Generative-AI",
+      "Applications-of-Foundation-Models",
+      "Guidelines-for-Responsible-AI",
+      "Security-Compliance-and-Governance-for-AI-Solutions",
+      "Conclusion-and-Next-Steps"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate": [
+      "Introduction-Prerequisites",
+      "Domain-1-Monitoring-Logging-and-Remediation",
+      "Domain-2-Reliability-and-BCP",
+      "Domain-3-Deployment-Provisioning-and-Automation",
+      "Domain-4-Security-and-Compliance",
+      "Domain-5-Networking-and-Content-Delivery",
+      "Domain-6-Cost-and-Performance-Optimization",
+      "Summary",
+      "Practice-Exams-and-Closing-Steps"
+    ],
+    "AWS-Certified-Developer-Associate": [
+      "Introduction",
+      "Networking-Fundamentals",
+      "Identity-and-Access-Management-IAM",
+      "Elastic-Compute-CloudEC2",
+      "Storage",
+      "Load-Balancing-AutoScaling",
+      "Databases"
+    ],
+    "AWS-Certified-Machine-Learning-Engineer-Associate": [
+      "Prerequisites",
+      "Data-Preparation-for-Machine-Learning-ML",
+      "ML-Model-Development",
+      "Deployment-and-Orchestration-of-ML-Workflows",
+      "ML-Solution-Monitoring-Maintenance-and-Security",
+      "Bringing-it-all-together"
+    ],
+    "AWS-Cloud-Practitioner-CLF-C02": [
+      "Introduction",
+      "Cloud-Computing",
+      "Security-and-Compliance",
+      "Technology-Part-One",
+      "Technology-Part-Two",
+      "Technology-Part-Three",
+      "Billing-and-Pricing",
+      "Bringing-it-all-together"
+    ],
+    "AWS-CloudFormation": [
+      "Course-Introduction",
+      "Cloud-Service-Models",
+      "Code-Editor-Setup-and-Source-Code",
+      "AWS-CloudFormation-Introduction",
+      "Resources",
+      "From-Template-to-Stack",
+      "Metadata-and-Tags",
+      "Intrinsic-Functions",
+      "Parameters",
+      "Mappings",
+      "CloudFormation-Conditions-and-Policies",
+      "Outputs",
+      "Infrastructure-Composer",
+      "EC2-Instance-Setup-With-an-HTTP-Server",
+      "AWS-CLI",
+      "Access-Control",
+      "Drift-Detection",
+      "Nested-Stacks",
+      "StackSets",
+      "Deployment-Modes",
+      "SSM-Parameters",
+      "CFN-init-and-Resource-Imports",
+      "Automation-and-Integration",
+      "Registry",
+      "Conclusion"
+    ],
+    "AWS-CloudWatch": [
+      "Introduction",
+      "Introduction-to-Observability-in-AWS",
+      "Anatomy-of-Alarms",
+      "CloudWatch-Logs",
+      "Cloudwatch-Dashboards",
+      "CloudWatch-Events-EventBridge-Event-Buses",
+      "Cloudwatch-Insights-X-Ray-and-Service-Map",
+      "Advanced-Observability-with-CloudWatch"
+    ],
+    "AWS-CodePipeline-CICD-Pipeline": [
+      "Introduction",
+      "Basics-of-AWS-CodePipeline",
+      "Creating-a-CICD-pipeline-with-AWS-CodePipeline",
+      "CICD-Pipeline-with-CodeCommit-CodeBuild-and-CodeDeploy",
+      "Conclusion"
+    ],
+    "AWS-EKS": [
+      "Introduction",
+      "EKS-Fundamentals",
+      "EKS-Networking",
+      "EKS-Storage",
+      "Compute-Scaling",
+      "Load-Balancers",
+      "EKS-Secrets",
+      "Redundancy-Resiliency",
+      "Upgrades-and-Maintenance"
+    ],
+    "AWS-For-Beginners-with-Hands-On-Labs": [
+      "AWS-Essentials",
+      "AWS-Essentials-Part-2"
+    ],
+    "AWS-IAM": [
+      "Introduction",
+      "Introduction-to-AWS-Identity-and-Access-Management",
+      "IAM-Policies-Federation-STS-and-MFA",
+      "Configure-AWS-IAM-at-Scale"
+    ],
+    "AWS-Lambda": [
+      "Introduction",
+      "Understanding-Lambda",
+      "Configuring-Lambda",
+      "Advanced-Topics",
+      "Conclusion"
+    ],
+    "AWS-Networking-Fundamentals": [
+      "Introduction",
+      "Core-Networking-Services",
+      "Edge-Networks",
+      "Transit-Networks"
+    ],
+    "AWS-RDS": [
+      "Introduction",
+      "Understanding-why-we-need-databases",
+      "Different-Database-Engines-in-RDS",
+      "RDS-Architecture-and-Concepts",
+      "RDS-Networking-and-Security",
+      "Backup-and-Restore-with-RDS",
+      "Monitoring-RDS-Database",
+      "Scaling-AWS-RDS",
+      "AWS-Aurora",
+      "Conclusion"
+    ],
+    "AWS-SageMaker": [
+      "Machine-Learning-Prerequisites",
+      "SageMaker-Introduction",
+      "SageMaker-User-Interface",
+      "Persona-SageMaker-Activities-Data-Engineer",
+      "Persona-SageMaker-Activities-Data-Scientist",
+      "Persona-SageMaker-Activities-MLOps-Engineer",
+      "Wrap-Up",
+      "Course-Introduction"
+    ],
+    "AWS-Solutions-Architect-Associate-Certification": [
+      "Introduction",
+      "Services-Networking",
+      "Services-Application-Integration",
+      "Services-Compute",
+      "Services-Data-and-ML",
+      "Services-Database",
+      "Services-Storage",
+      "Bringing-it-all-together",
+      "Designing-for-Security",
+      "Services-Management-and-Governance",
+      "Services-Migration-and-Transfer",
+      "Services-Security",
+      "Applying-your-Design-Skills",
+      "Designing-for-Cost-Optimization",
+      "Designing-for-Performance",
+      "Designing-for-Reliability"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure": [
+      "Introduction",
+      "Exploring-Azure-App-Service",
+      "Configuring-Web-App-Settings",
+      "Scaling-Apps-in-Azure-App-Service",
+      "Exploring-App-Service-Deployment-Slots",
+      "Exploring-Azure-Functions",
+      "Developing-Azure-Functions",
+      "Exploring-Azure-Blob-Storage",
+      "Managing-Azure-Blob-Storage-Lifecycle",
+      "Working-With-Azure-Blob-Storage",
+      "Exploring-Azure-Cosmos-DB",
+      "Working-With-Azure-Cosmos-DB",
+      "Managing-Container-Images-in-Azure-Container-Registry",
+      "Running-Container-Images-in-Azure-Container-Instances",
+      "Implementing-Azure-Container-Apps",
+      "Exploring-the-Microsoft-Identity-Platform",
+      "Implementing-Authentication-Using-MSAL",
+      "Implementing-Shared-Access-Signatures",
+      "Exploring-Microsoft-Graph",
+      "Implementing-Azure-Key-Vault",
+      "Implementing-Managed-Identities",
+      "Implementing-Azure-App-Configuration",
+      "Exploring-API-Management",
+      "Exploring-Azure-Event-Grid",
+      "Exploring-Azure-Event-Hubs",
+      "Discovering-Azure-Message-Queues",
+      "Monitoring-App-Performance",
+      "Developing-Azure-Cache-for-Redis",
+      "Developing-for-storage-on-CDNs"
+    ],
+    "AZ-305-Microsoft-Azure-Solutions-Architect-Expert": [
+      "Introduction",
+      "Design-a-governance-solution",
+      "Design-a-network-architecture",
+      "Design-a-compute-solution",
+      "Design-a-nonrelational-data-storage-solution",
+      "Design-a-relational-data-storage-solution",
+      "Design-a-data-integration-solution",
+      "Design-a-migration-solution",
+      "Design-a-business-continuity-solution",
+      "Design-an-app-architecture-solution",
+      "Design-a-logging-and-monitoring-solution",
+      "Design-for-authentication-and-authorization",
+      "Conclusion-and-Mock-Exam"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions": [
+      "Introduction",
+      "Configure-Activity-Traceability-and-Flow-of-Work",
+      "Configure-Collaboration-Communication",
+      "Work-with-Azure-Repos-and-GitHub",
+      "Configuring-and-Managing-Repositories",
+      "Design-and-Implement-Pipeline-Automation",
+      "Design-and-Implement-Pipelines",
+      "Implementing-an-Orchestration-Automation-Solution",
+      "Design-and-Implement-Deployments",
+      "Design-and-Implement-Infrastructure-as-Code-IaC",
+      "Maintain-Pipelines",
+      "Design-and-Implement-Authentication-and-Authorization-Methods",
+      "Design-and-Implement-a-Strategy-for-Managing-Sensitive-Information-in-Automation",
+      "Implement-Security-and-Validate-Code-Bases-for-Compliance",
+      "Configure-Monitoring-for-a-DevOps-Environment",
+      "Analyze-Metrics",
+      "Branching-Strategies-for-Source-Code",
+      "Design-and-Implement-a-Package-Management-Strategy"
+    ],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions": [
+      "Introduction",
+      "Explore-Azure-Virtual-Networks",
+      "Configure-Public-IP-Addresses",
+      "Design-Name-Resolution-for-Azure-Virtual-Network",
+      "Enable-Cross-VNet-Connectivity",
+      "Implement-Virtual-Network-Traffic-Routing",
+      "Configure-Internet-Access-with-Azure-Virtual-NAT",
+      "Design-and-Implement-Azure-VPN-Gateway",
+      "Connect-Networks-with-Site-to-Site-VPN-Connections",
+      "Connect-Devices-to-Networks-with-Point-to-Site-VPN-Connections",
+      "Connect-Remote-Resources-by-using-Azure-Virtual-WANs",
+      "Create-a-Network-Virtual-Appliance-NVA-in-a-Virtual-Hub",
+      "Explore-Azure-ExpressRoute",
+      "Design-an-ExpressRoute-deployment",
+      "Configure-Peering-for-an-ExpressRoute-Deployment",
+      "ExpressRoute-Advanced-Features",
+      "Troubleshooting-ExpressRoute-Connections",
+      "Explore-Load-Balancing-Options-in-the-Azure",
+      "Design-and-Implement-Azure-Load-Balancer",
+      "Explore-Azure-Traffic-Manager",
+      "Design-Azure-Application-Gateway",
+      "Design-Azure-Front-Door",
+      "Get-Network-Security-Recommendations-with-Microsoft-Defender-for-Cloud",
+      "Deploy-Azure-DDoS-Protection",
+      "Deploy-and-configure-Network-Security-Groups",
+      "Design-and-implement-Azure-Bastion",
+      "Design-and-Implement-Azure-Firewall",
+      "Working-with-Azure-Firewall-Manager",
+      "Implement-a-Web-Application-Firewall",
+      "Explain-Virtual-Network-Service-Endpoints",
+      "Private-Link-Services-and-Private-Endpoints",
+      "Monitor-your-networks-using-Azure-Monitor",
+      "Monitor-your-networks-using-Azure-Network-Watcher"
+    ],
+    "AZ900-Microsoft-Azure-Fundamentals": [
+      "Introduction",
+      "Cloud-Computing",
+      "Cloud-Service-Types",
+      "Azure-Architectural-Components",
+      "Compute-and-Networking",
+      "Storage",
+      "Identity-Access-and-Security",
+      "Cost-Management",
+      "Governance-and-Compliance",
+      "Resource-Deployment-Tools",
+      "Monitoring-Tools"
+    ],
+    "Advanced-Bash-Scripting": [
+      "Introduction",
+      "Conventions",
+      "Refresher",
+      "Streams",
+      "Expansions-Part-One",
+      "Globs",
+      "Expansions-Part-Two",
+      "Special-Shell-Variables",
+      "Arrays",
+      "Good-Practices-applied",
+      "awk",
+      "sed"
+    ],
+    "Advanced-Golang": [
+      "Introduction",
+      "Modules-Packages-and-Imports",
+      "Core-packages",
+      "API-Development-Project",
+      "CICD-pipeline",
+      "Concurrency"
+    ],
+    "Advanced-Jenkins": [
+      "Introduction",
+      "Pipeline-Structure-and-Scripted-vs-Declarative",
+      "Pipeline-Enhancement-and-Caching",
+      "Jenkins-Administration-and-Monitoring",
+      "Agents-and-Nodes-in-Jenkins",
+      "Shared-Libraries-in-Jenkins",
+      "Backup-and-Configuration-Management"
+    ],
+    "Amazon-Elastic-Compute-Cloud-EC2": [
+      "Course-Overview",
+      "Introduction",
+      "Basics-of-EC2",
+      "EC2-Advanced",
+      "EC2-Real-Life-Problems-and-Solutions"
+    ],
+    "Amazon-Elastic-Container-Service-AWS-ECS": [
+      "Introduction",
+      "Understanding-ECS",
+      "Working-with-AWS-ECS",
+      "Deploying-a-new-application-from-scratch",
+      "Conclusion"
+    ],
+    "Amazon-Simple-Storage-Service-Amazon-S3": [
+      "Introduction",
+      "AWS-S3-Basic-Features",
+      "AWS-S3-Advanced-Features",
+      "AWS-S3-Management",
+      "Summary",
+      "AWS-S3-Core-Concepts"
+    ],
+    "Ansible-Advanced-Course": [
+      "Introduction",
+      "Core-Components",
+      "Install-and-Configure",
+      "Ansible-Modules",
+      "Variables-and-Jinja2",
+      "Include-and-Roles",
+      "Other-Topics",
+      "Playbook-Flow"
+    ],
+    "Certified-Kubernetes-Administrator-CKA": [
+      "Introduction",
+      "Core-Concepts",
+      "Scheduling",
+      "Logging-Monitoring",
+      "Application-Lifecycle-Management",
+      "Cluster-Maintenance",
+      "Security",
+      "Storage",
+      "Networking",
+      "Troubleshooting",
+      "Design-and-Install-a-Kubernetes-Cluster",
+      "Helm-Basics-2025-Updates",
+      "Kustomize-Basics-2025-Updates",
+      "Mock-Exams",
+      "Install-Kubernetes-the-kubeadm-way"
+    ],
+    "Helm-for-Beginners": [
+      "Introduction",
+      "Introduction-to-Helm",
+      "Helm-Charts-Anatomy",
+      "Conclusion"
+    ],
+    "Prep-Course-Prometheus-Certified-Associate-PCA-Certification": [
+      "Monitoring-Kubernetes",
+      "Conclusion",
+      "Dashboarding-Visualization",
+      "Scaling-Long-Term-Storage",
+      "Application-Instrumentation",
+      "Introduction",
+      "Service-Discovery",
+      "PromQL",
+      "Observability-Fundamentals",
+      "Prometheus-Fundamentals",
+      "Push-Gateway",
+      "Alerting"
+    ]
+  },
+  "course_lessons": {
+    "12-Factor-App|Introduction": [
+      "Introduction",
+      "Why-12-Factor-app"
+    ],
+    "12-Factor-App|Twelve-Factor-App-methodology": [
+      "Codebase",
+      "Dependencies",
+      "Concurrency",
+      "Processes",
+      "Backing-Services",
+      "Config",
+      "Build-Release-and-Run",
+      "Port-Binding",
+      "Disposability",
+      "Dev-Prod-Parity",
+      "Logs",
+      "Admin-Processes"
+    ],
+    "12-Factor-App|Conclusion": [
+      "Conclusion"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Introduction": [
+      "Course-Introduction",
+      "Certification-Details"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Introduction-to-AI-and-Azure-AI-Services": [
+      "Module-Introduction",
+      "What-Is-Artificial-Intelligence",
+      "Responsible-AI-Considerations",
+      "Azure-Machine-Learning",
+      "Azure-AI-Services",
+      "Azure-AI-Search"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Get-Started-with-Azure-AI-Services": [
+      "Module-Introduction",
+      "Deploying-Azure-AI-Services",
+      "Working-with-Azure-AI-Services"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Using-Azure-AI-Services-for-Enterprise-Applications": [
+      "Module-Introduction",
+      "Securing-Azure-AI-Services",
+      "Monitoring-Azure-AI-Services",
+      "Containerizing-Azure-AI-Services"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Analyzing-Videos": [
+      "Module-Introduction",
+      "Video-Indexer",
+      "Building-Insights"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Analyzing-Text": [
+      "Module-Introduction",
+      "Azure-AI-Language-Services",
+      "Working-with-Azure-AI-Language-Services"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Translating-Text": [
+      "Module-Introduction",
+      "Translator-Service",
+      "Working-with-Translator-Service",
+      "Custom-Translation"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Develop-a-Question-Answering-Solution": [
+      "Module-Introduction",
+      "Introduction-to-QnA",
+      "Working-with-Question-Answering",
+      "Fine-Tuning-Question-Answering-Performance"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Develop-a-Conversational-Language-Understanding-App": [
+      "Module-Introduction",
+      "What-Is-Language-Understanding",
+      "Intents-Utterances-and-Entities",
+      "Azure-AI-Language-Capabilities",
+      "Training-Testing-Publishing-and-Reviewing"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Custom-Classification-and-Named-Entity-Extraction": [
+      "Module-Introduction",
+      "Custom-Text-Classification",
+      "Custom-Named-Entity-Recognition",
+      "Review-and-Improve-Model"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Speech-Recognition-Translation-and-Synthesis": [
+      "Module-Introduction",
+      "Speech-Service",
+      "Speech-to-Text-and-Text-to-Speech",
+      "Audio-Format-and-Voices",
+      "Speech-Synthesis-Markup-Language-SSML",
+      "Translating-Speech-to-Text"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Get-Started-with-Azure-OpenAI-Service": [
+      "Module-Introduction",
+      "What-Is-Generative-AI",
+      "Deploying-an-Azure-OpenAI-Resource",
+      "AI-Foundry-Portal",
+      "Deploying-Generative-AI-Models",
+      "Using-Prompts-to-Get-Completions-and-Testing-Models"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Develop-Apps-with-Azure-OpenAI-Service": [
+      "Module-Introduction",
+      "Integrating-Azure-OpenAI-into-Your-App",
+      "Using-the-Azure-OpenAI-REST-API",
+      "Using-Language-Specific-SDKs"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Apply-Prompt-Engineering": [
+      "Module-Introduction",
+      "What-Is-Prompt-Engineering",
+      "Using-Prompt-Engineering",
+      "Providing-Clear-Instructions",
+      "Using-System-Messages",
+      "Conversation-History",
+      "Chain-of-Thought"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Implement-Retrieval-Augmented-Generation-RAG-with-Azure-OpenAI-Service": [
+      "Module-Introduction",
+      "What-Is-RAG",
+      "How-Azure-OpenAI-Can-Use-Your-Data",
+      "Working-with-Custom-Data-Sources"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Implementing-an-Intelligent-Search-Solution": [
+      "Module-Introduction",
+      "Azure-AI-Search",
+      "Enrichment-Pipeline"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Create-a-Custom-Skill-for-Azure-AI-Search": [
+      "Module-Introduction",
+      "What-Are-Custom-Skills",
+      "Custom-Skill-Interfaces",
+      "Adding-a-Custom-Skill-to-a-Skillset"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Creating-a-Knowledge-Store": [
+      "Module-Introduction",
+      "What-Is-Knowledge-Store",
+      "Using-the-Shaper-Skill-for-Projections",
+      "Implementing-a-Knowledge-Store"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Develop-a-Document-Intelligence-Solution": [
+      "Module-Introduction",
+      "Document-Intelligence-Service",
+      "Working-with-Document-Intelligence-Service",
+      "Training-Custom-Models",
+      "Accuracy-and-Confidence-Scores",
+      "Analyzing-Documents-Using-Custom-Model"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Analyze-and-Manipulate-Images": [
+      "Image-Analysis-Using-Azure-AI-Vision",
+      "Working-with-Image-Analysis",
+      "OCR-Using-Azure-AI-Vision"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Detecting-Faces-with-the-Azure-AI-Vision": [
+      "Face-Detection-Analysis-and-Recognition",
+      "Considerations-for-Face-Detection-and-Recognition",
+      "Face-Service",
+      "Face-Detection-Using-Azure-AI-Vision"
+    ],
+    "AI-102-Microsoft-Certified-Azure-AI-Engineer-Associate|Custom-Vision-Models-with-Azure-AI-Custom-Vision": [
+      "Custom-Vision-Model",
+      "Image-Classification-and-Object-Detection",
+      "Training-Custom-Models"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Introduction": [
+      "Course-Introduction",
+      "Certification-Details"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Fundamental-AI-Concepts": [
+      "Module-Introduction",
+      "What-Is-Artificial-Intelligence",
+      "Common-AI-Workloads",
+      "Principles-of-Responsible-AI"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Fundamentals-of-Machine-Learning": [
+      "Module-Introduction",
+      "What-Is-Machine-Learning",
+      "Types-of-Machine-Learning",
+      "Training-and-Evaluation-of-Models",
+      "Deep-Learning",
+      "Introduction-to-Azure-ML"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Introduction-to-Azure-AI-Services": [
+      "Module-Introduction",
+      "Fundamentals-of-Azure-AI",
+      "Azure-AI-Services"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Concepts-of-Computer-Vision": [
+      "Module-Introduction",
+      "Image-Processing",
+      "Convolutional-Neural-Networks",
+      "Explore-Multi-Modal-Models",
+      "Azure-Computer-Vision-Services"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Azure-Computer-Vision-Capabilities": [
+      "Module-Introduction",
+      "AI-Vision-Service-and-Image-Analysis",
+      "Face-Service-to-Detect-Faces",
+      "Optical-Character-Recognition-OCR-to-Read-Text"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Natural-Language-Processing-NLP": [
+      "Module-Introduction",
+      "Introduction-to-Natural-Language-Processing",
+      "NLP-and-Conversational-AI-in-Azure"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Azure-NLP-Services": [
+      "Module-Introduction",
+      "Text-Analysis",
+      "Question-Answering",
+      "Azure-Bot-Service",
+      "Conversational-Language-and-Understanding",
+      "Speech-Recognition-and-Synthesis"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Azure-AI-Document-Intelligence": [
+      "Module-Introduction",
+      "AI-Document-Intelligence-Services",
+      "Form-Analysis-Using-Document-Intelligence",
+      "Document-Intelligence-Studio"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Azure-AI-Search": [
+      "Module-Introduction",
+      "Introduction-to-Knowledge-Mining",
+      "Azure-AI-Search-Services",
+      "AI-Enrichment"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Generative-AI": [
+      "Module-Introduction",
+      "Introduction-to-Generative-AI",
+      "Language-Models",
+      "Language-Model-Training",
+      "Foundation-Models",
+      "Large-and-Small-Language-Models",
+      "What-Are-Copilots",
+      "Microsoft-Copilot-Services",
+      "Copilot-Prompts-Considerations",
+      "Developing-And-Extending-Copilot"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Fundamentals-of-Azure-OpenAI": [
+      "Module-Introduction",
+      "What-Is-Azure-OpenAI",
+      "Models-Supported-by-Azure-Open-AI",
+      "Azure-OpenAI-Capabilities"
+    ],
+    "AI-900-Microsoft-Certified-Azure-AI-Fundamentals|Responsible-Generative-AI": [
+      "Module-Introduction",
+      "Plan-a-Responsible-Generative-AI-Solution"
+    ],
+    "AI-Agents|Introduction": [
+      "Course-Introduction"
+    ],
+    "AI-Agents|Prerequisites": [
+      "AI-Agents-Introduction",
+      "Types-of-AI-Agents",
+      "Types-of-Agentic-Agents-and-Multi-Agentic-Agents",
+      "AI-Development-Key-Concepts",
+      "Ethical-Considerations",
+      "AI-Technologies-for-Agents-Overview",
+      "Testing-and-Evaluation-of-AI-Agents"
+    ],
+    "AI-Agents|Agent-Architecture-Multi-Agent-Systems": [
+      "Agentic-Architecture-and-Inter-Agent-Communication",
+      "Multi-Agent-Frameworks-and-Architecture",
+      "Autonomous-Agent-Frameworks",
+      "Security-and-Ethical-AI-in-Multi-Agent-Systems"
+    ],
+    "AI-Agents|Building-AI-Agents": [
+      "Development-Environment-Overview",
+      "Demo-Setting-Up-Development-Environment",
+      "Understanding-Conversational-AI-Theories-and-Design",
+      "Demo-Building-a-Simple-Chatbot"
+    ],
+    "AI-Agents|API-Integrations-Tools": [
+      "Claude-API-Overview",
+      "Demo-How-to-Use-Claude-API",
+      "Poe-Overview",
+      "Demo-How-to-Use-Poe",
+      "Kubernetes-MCP",
+      "Manus-AI-Overview"
+    ],
+    "AI-Agents|Practical-Projects": [
+      "Task-Automation-in-AI-Agents",
+      "Demo-Exploring-Computer-Tools-Playwright",
+      "Demo-Building-a-News-Aggretor-Using-WebSearchTool",
+      "Understanding-Agent-Computer-Tools",
+      "Understanding-FireSearchTool",
+      "Demo-Searching-Resumes-for-Keywords"
+    ],
+    "AI-Agents|Advanced-Agents-Projects": [
+      "Audio-AI-Agent-Speech-Translator",
+      "Demo-Automatic-Language-Recognition-and-Translation",
+      "Understanding-Multi-Agent-Systems",
+      "Demo-Building-a-Multi-Agent-System"
+    ],
+    "AI-Agents-Fundamentals|AI-Agents-Part-1": [
+      "Introduction-to-AI-Agents",
+      "How-LLMs-work-in-real-time",
+      "Embeddings-Vector-Representations",
+      "How-LangChain-works",
+      "Practice-Labs-Your-First-AI-API-Call",
+      "Practice-Labs-LangChain",
+      "Prompt-Engineering-Techniques",
+      "Practice-Labs-Master-Prompt-Engineering"
+    ],
+    "AI-Agents-Fundamentals|Introduction": [
+      "Course-Introduction"
+    ],
+    "AI-Agents-Fundamentals|AI-Agents-Part-2": [
+      "Vector-Databases-Deep-Dive",
+      "Practice-Labs-Build-Semantic-Search-Engine",
+      "RAG",
+      "Practice-Labs-RAG-Implementation",
+      "LangGraph-for-AI-Workflows",
+      "Practice-Labs-Build-Stateful-AI-Workflows",
+      "Model-Context-Protocol",
+      "Practice-Labs-Advanced-MCP-Concepts",
+      "Conclusion"
+    ],
+    "AI-Assisted-Ansible|Prerequisites": [
+      "Course-Introduction",
+      "Prerequisites"
+    ],
+    "AI-Assisted-Ansible|Ansible-Refresher": [
+      "Ansible-Playbook-Basics",
+      "Demo-Writing-a-Simple-Playbook"
+    ],
+    "AI-Assisted-Ansible|Working-With-VS-Code-Extension": [
+      "VS-Code-Extension-Features",
+      "Demo-Setting-Up-VS-Code-With-Ansible-VS-Code-Extension",
+      "Demo-Using-Linting-and-Validation",
+      "Demo-Integrating-Cursor"
+    ],
+    "AI-Assisted-Ansible|Using-ChatGPT-With-Ansible": [
+      "Playbook-Generation-Using-Prompts",
+      "Demo-Generating-a-Playbook-With-ChatGPT",
+      "Demo-Iterating-With-ChatGPT-to-Fix-Errors"
+    ],
+    "AI-Assisted-Ansible|GitHub-Copilot": [
+      "Demo-Installing-and-Enabling-Copilot",
+      "Demo-Writing-Playbooks-With-Copilot",
+      "Comparing-Copilot-vs-ChatGPT"
+    ],
+    "AI-Assisted-Ansible|Claude-Code-CLI-With-Ansible": [
+      "Demo-Integrating-Claude-Code-CLI",
+      "Demo-Writting-Playbook-With-Claude-Code-Cli"
+    ],
+    "AI-Assisted-Ansible|Red-Hat-Ansible-Lightspeed": [
+      "What-is-Lightspeed",
+      "Demo-Setting-Up-Lightspeed",
+      "Demo-Generating-Playbooks-With-Lightspeed"
+    ],
+    "AI-Assisted-Development|Course-Introduction": [
+      "Course-Overview"
+    ],
+    "AI-Assisted-Development|Introduction-to-AI-Assisted-Development": [
+      "Introduction-to-AI-Assisted-Development",
+      "Common-Concerns-on-AI",
+      "Benefits-of-AI",
+      "A-Quick-Look-ChatGPT",
+      "A-Quick-Look-BlackboxAI",
+      "A-Quick-Look-Tabnine",
+      "A-Quick-Look-GitHub-Copilot",
+      "A-Quick-Look-Cursor",
+      "What-We-Will-build"
+    ],
+    "AI-Assisted-Development|Planning-Phase": [
+      "Section-Introduction",
+      "Requirements-Analysis-with-ChatGPT",
+      "Generating-User-Stories",
+      "Creating-a-Technical-Specification-Document",
+      "Creating-Component-Diagrams-and-Data-Flow"
+    ],
+    "AI-Assisted-Development|Development-Phase-Backend": [
+      "Section-Introduction",
+      "Configuring-Our-Virtual-Environment",
+      "Setting-up-Our-Project-Structure",
+      "Setting-up-Flask-for-the-API",
+      "Implementing-OpenCV",
+      "Debugging-Our-Application",
+      "Image-Loading-and-Validation",
+      "Error-Handling",
+      "Testing-with-Postman"
+    ],
+    "AI-Assisted-Development|Development-Phase-Frontend": [
+      "Section-Introduction",
+      "Scaffolding-a-New-React-APP",
+      "Creating-a-UI",
+      "Wiring-up-Our-Project"
+    ],
+    "AI-Assisted-Development|Project-Completion": [
+      "Generating-Comments-with-Tabnine",
+      "Creating-Documentation-with-BlackboxAI",
+      "Getting-the-Repo-Ready-to-Go-Public",
+      "Conclusion"
+    ],
+    "AWS-Certified-AI-Practitioner|Introduction": [
+      "Introduction",
+      "Course-Overview",
+      "Why-AWS-AI-Practitioner-Certification-and-what-is-an-AI-Practitioner",
+      "RegisteringTaking-an-exam-for-the-first-time-What-to-know-Demo",
+      "AI-Practitioner-Exam-Guide-Exam-Details-and-Domains",
+      "Setting-up-your-own-AWS-Account-A-walk-through"
+    ],
+    "AWS-Certified-AI-Practitioner|Fundamentals-of-AI-and-ML": [
+      "Basic-AI-Concepts-and-Terminologies",
+      "AI-ML-and-Deep-Learning-Similarities-and-Differences",
+      "Types-of-Inferencing",
+      "Data-Types-in-AI-Models",
+      "Supervised-Unsupervised-and-Reinforcement-Learning",
+      "Identifying-Practice-Use-cases-for-AIML",
+      "ML-Development-Lifecycle-and-the-ML-Pipeline",
+      "Introduction-to-MLOps-concepts-from-design-to-metrics",
+      "Overview-of-AI-and-ML-Services-on-AWS"
+    ],
+    "AWS-Certified-AI-Practitioner|Fundamentals-of-Generative-AI": [
+      "Basic-Concepts-of-Generative-AI-tokens-chunking-embeddings-and-more",
+      "Generative-AI-Use-Cases-and-Applications",
+      "Foundation-Model-Lifecycle",
+      "Capabilities-and-Limitations-of-Generative-AI-Applications",
+      "Cost-Consideration-for-AWS-Gen-AI-Services-redundancy-availability-performance-and-more"
+    ],
+    "AWS-Certified-AI-Practitioner|Applications-of-Foundation-Models": [
+      "Design-considerations-for-Foundation-Model-Applications",
+      "Selecting-Pre-Trained-Models",
+      "Inference-Parameters-and-their-effects",
+      "Retrieval-Augmented-Generation-RAG-and-its-uses",
+      "Vector-Databases-on-AWS",
+      "Foundation-Model-Customization-Approaches",
+      "Agents-for-Multi-step-tasks",
+      "Prompt-Engineering-Techniques-and-Best-Practices",
+      "Training-and-Fine-tuning-Process-for-Foundation-Models",
+      "Evaluating-Foundation-Model-Performance"
+    ],
+    "AWS-Certified-AI-Practitioner|Guidelines-for-Responsible-AI": [
+      "Features-of-Responsible-AI",
+      "Tools-for-Identifying-Responsible-AI-Features",
+      "Responsible-Model-Selection-Practices",
+      "Legal-Risks-in-Generative-AI",
+      "Dataset-Characteristics-and-Bias",
+      "Transparent-and-Explainable-Models",
+      "Human-centered-Design-for-Explainable-AI"
+    ],
+    "AWS-Certified-AI-Practitioner|Security-Compliance-and-Governance-for-AI-Solutions": [
+      "Securing-AI-Systems-with-AWS-Services",
+      "Source-Citation-and-Data-Lineage",
+      "Best-Practices-for-Secure-Data-Engineering",
+      "Security-and-Privacy-Considerations-for-AI-Systems",
+      "Regulatory-Compliance-Standards-for-AI-Systems",
+      "AWS-Services-for-Governance-and-Compliance",
+      "AI-Data-Governance-Strategies"
+    ],
+    "AWS-Certified-AI-Practitioner|Conclusion-and-Next-Steps": [
+      "Next-Steps-and-Resources-in-Certification",
+      "Continual-Learning-in-the-AIML-Space-for-AWS",
+      "A-Final-Word-The-future-impact-of-AI-in-AWS-and-beyond"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate|Introduction-Prerequisites": [
+      "Course-Introduction",
+      "Demo-RegisteringTaking-an-Exam-for-the-First-Time-What-to-know",
+      "Where-Are-You-Now-Take-an-assessment-to-know-what-you-dont-know",
+      "Demo-The-KodeKloud-AWS-Playgrounds",
+      "Demo-Setting-Up-Your-Own-AWS-Account-A-walkthrough"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate|Domain-1-Monitoring-Logging-and-Remediation": [
+      "Importance-of-Monitoring-and-Logging-in-Cloud-Operations",
+      "CloudWatch-and-CloudTrail-Overview",
+      "Logging-With-CloudWatch-Logs",
+      "Demo-Finding-Logs-with-CloudWatch-Logs",
+      "Discovering-With-CloudWatch-Log-Insights",
+      "Auditing-With-CloudTrail",
+      "Demo-Tracking-Access-with-CloudTrail",
+      "Monitoring-With-CloudWatch",
+      "Using-CloudWatch-Agent-to-Collect-Metrics-and-Logs",
+      "Demo-Installing-and-Configuring-CloudWatch-Agent",
+      "Understanding-and-Responding-to-CloudWatch-Alarms",
+      "Configuring-Metric-Filters-for-Specific-Log-Data",
+      "Demo-Creating-CloudWatch-Alarms",
+      "Building-Cloudwatch-Dashboards-for-Visualization",
+      "Demo-Building-a-simple-CloudWatch-Dashboard",
+      "Configuring-Notifications-With-SNS",
+      "Demo-Setting-up-SNSSQS-to-send-Messages",
+      "AWS-EventBridge-Introduction",
+      "Configuring-EventBridge-Rules-to-Trigger-Actions",
+      "Systems-Manager-and-Its-Sub-Services-Overview",
+      "Remediation-With-Systems-Manager-Automation-Runbooks",
+      "Triggering-Automated-Actions-With-AWS-Config",
+      "Demo-Creating-and-Executing-Automation-Runbooks"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate|Domain-2-Reliability-and-BCP": [
+      "Importance-of-Reliability-and-Business-Continuity-in-Cloud-Operations",
+      "AWS-Auto-Scaling-Overview",
+      "The-Various-Scaling-Types-in-AWS-Auto-Scaling",
+      "Demo-Setting-up-Various-Autoscaling-Plans",
+      "Understanding-Caching-and-Caching-Strategies",
+      "Implementing-Caching-With-Elasticache",
+      "Implementing-Caching-With-DynamoDB-and-DAX",
+      "General-Replication-Options-for-Data-Services-on-AWS",
+      "AWS-RDS-Replication-Types-Introduction",
+      "AWS-Aurora-Replication-Options-Introduction",
+      "Demo-Setting-up-AWS-RDS-Multi-AZ-Cluster-Deployment-with-Read-Replicas",
+      "Understanding-and-Exploring-Global-Tables-on-Dynamodb",
+      "Demo-Setting-up-Global-Tables-with-DynamoDB",
+      "Understanding-Loosely-Coupled-and-Various-Scenarios",
+      "High-Availability-and-Fault-Tolerance-in-AWS-Introduction",
+      "Understanding-Elastic-Load-Balancing-and-Load-Distribution",
+      "Adding-Route-53-Health-Checks-With-an-ELB-and-Route-53-Policies",
+      "Adding-in-Global-Accelerator-With-ELB",
+      "Single-AZ-vs-Multi-AZ-in-Service-and-Deployments",
+      "Multi-AZ-Architectures-for-Various-AWS-Services-Overview",
+      "Strategies-for-Fault-Tolerant-Workloads-on-AWS",
+      "Demo-Implementing-Fault-Tolerant-Storage-using-EFS",
+      "Backup-and-Snapshot-Options-on-AWS-Overview",
+      "Demo-Configuring-RDS-Snapshots-for-your-Database",
+      "Configuring-AWS-Backup-for-Various-Services",
+      "Performing-Point-in-Time-Restores-for-Various-Database-Services",
+      "Promoting-Read-Replicas-as-a-Restoration",
+      "Demo-Promoting-your-own-Read-Replica-to-a-Primary",
+      "Versioning-and-Lifecycle-Options-in-AWS-Overview",
+      "Implementing-Versioning-on-S3",
+      "Implementing-Lifecycle-Rules-on-S3",
+      "Demo-Memory-Stress-on-Enabling-Versioning-and-Lifecycle-Rules-for-S3",
+      "CRR-and-DR-Options-in-AWS-Overview",
+      "Setting-Up-S3-for-CRR",
+      "Demo-Setting-up-S3-for-CRR"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate|Domain-3-Deployment-Provisioning-and-Automation": [
+      "Cloud-Resource-Provisioning-Introduction",
+      "Importance-of-Automation-and-IaC-in-Service-Provisioning",
+      "Amazon-Machine-Images-in-AWS-Overview",
+      "Building-With-EC2-Image-Builder-for-Automated-Image-Creation-VMs-and-Containers",
+      "Demo-Creating-and-Managing-AMIs-with-EC2-Image-Builder",
+      "CloudFormation-Overview",
+      "Creating-and-Managing-Services-With-CloudFormation-Templates",
+      "Demo-The-Anatomy-of-a-CloudFormation-Template",
+      "Advanced-Automation-Features-of-CloudFormation",
+      "Demo-Creating-a-simple-S3-Bucket-with-CloudFormation",
+      "Strategies-for-Service-Provisioning-Across-AWS-Globally",
+      "Utilizing-CloudFormation-StackSets-for-Distributing-Globally",
+      "Discovering-Services-Using-the-Resource-Access-Manager",
+      "Understanding-Different-Deployment-Strategies",
+      "Configuring-Different-Deployment-Strategies-for-Various-AWS-Services",
+      "Common-Deployment-Issues-and-Challenges",
+      "Strategies-for-Identifying-and-Remedying-Deployment-Issues"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate|Domain-4-Security-and-Compliance": [
+      "Security-and-Compliance-Policies-in-AWS-Overview",
+      "IAM-Overview",
+      "Implementing-IAM-Features-MFA-Password-Policies-and-Roles",
+      "Configuring-IAM-Policies-for-Fine-Grained-Access-Control",
+      "Demo-Configuring-Users-and-Group-Access-and-Policies",
+      "Utilizing-Permissions-Boundaries-to-Scope-User-Permissions",
+      "Enabling-Service-Control-Policies-to-Scope-Account-Permissions",
+      "Using-Organizational-Policies-to-Scope-Organization-Permissions",
+      "Auditing-Access-Policies-With-IAM-Policy-Simulator",
+      "Troubleshooting-Access-With-IAM-Access-Analyzer",
+      "Trusted-Advisor-Security-Checks-Overview",
+      "Multi-Account-in-AWS-Strategies",
+      "Multi-Account-Security-With-AWS-Organizations",
+      "Exploring-Multi-Account-Security-With-AWS-Control-Tower",
+      "Protection-Strategies-Overview",
+      "Classifying-Data-Based-on-Sensitivity-and-Regulatory-Requirements",
+      "Importance-of-Network-Defense",
+      "VPC-and-Its-Defenses-Overview",
+      "Demo-Exploring-the-VPCs-Security-Groups-and-NACLs",
+      "Network-Firewall-Service-Overview",
+      "AWS-GuardDuty-Overview",
+      "Encryption-at-Rest-Options-for-AWS-Services-Overview",
+      "Demo-Migrating-an-EBS-Volumes-from-Unencrypted-to-Encrypted",
+      "Encryption-in-Transit-Options-for-AWS-Services-Overview",
+      "Key-Management-Service-KMS",
+      "KMS-Around-Encryption-Keys-Best-Practices",
+      "AWS-Inspector-Overview",
+      "WAF-and-Shield-Overview",
+      "Using-and-Storing-Secrets-on-AWS-Secrets-Manager",
+      "Using-and-Storing-Secrets-on-AWS-Systems-Manager-Parameter-Store",
+      "Demo-Setting-up-Secrets-Manager-with-RDS",
+      "Security-Hub-Overview",
+      "AWS-Config-Overview",
+      "AWS-Audit-Manager-Overview"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate|Domain-5-Networking-and-Content-Delivery": [
+      "Configuring-VPC-Components-Subnets-Route-Tables-and-Security-GroupsNACLs",
+      "Setting-Up-External-Access-NAT-Gateways-Internet-Gateways-and-Egress-Only-IGW",
+      "Configuring-EC2-Connectivity-Using-Systems-Manager-Session-Manager",
+      "Implementing-Private-Service-Connectivity-Using-VPC-Endpoints-and-PrivateLink",
+      "Internal-Network-to-Network-Connectivity-With-VPC-Peering",
+      "Internal-Network-to-Network-Connectivity-With-Transit-Gateway",
+      "Client-and-Site-to-Site-VPN-Overview",
+      "AWS-Direct-Connect",
+      "Route-53-Overview",
+      "Configuring-Domain-Names-Hosted-Zones-and-Records",
+      "Route-53-Routing-Policies",
+      "Route-53-Resolvers-Introduction",
+      "Setting-Up-DNS-Forwarding-and-Conditional-Forwarding",
+      "CloudFront-Overview",
+      "Demo-Exploring-the-Options-with-CloudFront",
+      "Access-Controls-and-Security-With-CloudFront",
+      "Configuring-Amazon-S3-for-Hosting-Static-Sites",
+      "Common-Misconfigurations-and-Troubleshooting-VPC-Issues",
+      "Networking-in-AWS-Understanding-Various-Logs-Available",
+      "CloudFront-Caching-Mechanism-and-Potential-Issues",
+      "VPN-Direct-Connect-Peering-and-VPC-Endpoints-Common-Issues"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate|Domain-6-Cost-and-Performance-Optimization": [
+      "Importance-of-Cost-optimization",
+      "Cost-Optimization-Strategies-Overview-and-Best-Practices",
+      "Configuring-Cost-Allocation-Tags",
+      "Tagging-Resources-for-Cost-Management-Best-Practices",
+      "Using-Tools-Like-Trusted-Advisor-and-Cost-Explorer-to-Find-Unused-Resources",
+      "Using-Tools-Like-Cost-Optimizer-to-Find-Underutilized-Resources",
+      "Setting-Up-AWS-Budgets-to-Monitor-and-Control-Costs",
+      "Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring",
+      "EC2-Spot-Instances-Pros-and-Cons",
+      "What-Workloads-Are-Perfect-for-EC2-Spot-Instances",
+      "Highly-Managed-AWS-Services-Overview",
+      "Trade-Offs-Between-Managed-Services-and-Self-Managed-Services"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate|Summary": [
+      "Summary-of-Domain-1-Monitoring-Logging-and-Remediation",
+      "Summary-of-Domain-2-Reliability-and-Business-Continuity",
+      "Summary-of-Domain-3-Deployment-Provisioning-and-Automation",
+      "Summary-of-Domain-4-Security-and-Compliance",
+      "Summary-of-Domain-5-Networking-and-Content-Delivery",
+      "Summary-of-Domain-6-Cost-and-Performance-Optimization"
+    ],
+    "AWS-Certified-CloudOps-Engineer-Associate|Practice-Exams-and-Closing-Steps": [
+      "The-Day-of-the-Exam-How-to-Prepare",
+      "Continual-Learning-Resources"
+    ],
+    "AWS-Certified-Developer-Associate|Introduction": [
+      "Course-Introduction",
+      "Certification-Details",
+      "Registering-for-the-Exam"
+    ],
+    "AWS-Certified-Developer-Associate|Networking-Fundamentals": [
+      "Section-Introduction",
+      "VPC-Recap",
+      "Subnets",
+      "Subnets-Demo",
+      "Routing-in-VPCs",
+      "Routing-Demo",
+      "Internet-Gateway",
+      "Internet-Gateway-Demo",
+      "NAT-Gateway",
+      "NAT-Gateway-Demo",
+      "Public-vs-Private-Subnets",
+      "Elastic-IP",
+      "Elastic-IP-Demo",
+      "Security-Groups-NACLs",
+      "Security-Groups-Demo",
+      "NACLs-Demo",
+      "VPC-Peering",
+      "VPC-Peering-Demo",
+      "Exam-Tips"
+    ],
+    "AWS-Certified-Developer-Associate|Identity-and-Access-Management-IAM": [
+      "Section-Introduction",
+      "IAM-Overview",
+      "IAM-Demo",
+      "Dynamic-Policies",
+      "Roles-for-AWS-Services",
+      "Roles-for-AWS-Services-Demo",
+      "IAM-PassRole-for-AWS-Services",
+      "IAM-PassRole-for-AWS-Services-Demo",
+      "EC2-Instance-Roles-Demo",
+      "STSSecurity-Token-Service",
+      "Exam-Tips"
+    ],
+    "AWS-Certified-Developer-Associate|Elastic-Compute-CloudEC2": [
+      "Section-Introduction",
+      "EC2-Pricing",
+      "EC2-Storage",
+      "EC2-Placement",
+      "EC2-Userdata",
+      "EC2-Userdata-demo",
+      "Exam-Tips"
+    ],
+    "AWS-Certified-Developer-Associate|Storage": [
+      "Section-Introduction",
+      "EBS",
+      "EBS-Demo-1",
+      "EBS-Demo-2",
+      "Instance-Store",
+      "Instance-Store-Demo",
+      "EFS",
+      "EFS-Demo",
+      "S3-Review-Storage-Classes",
+      "S3-Storage-Classes-Demo",
+      "S3-Versioning",
+      "S3-Versioning-Demo",
+      "S3-ACL-and-Resource-Policies",
+      "S3-ACL-and-Resource-Policies-Demo",
+      "S3-Static-Website-Hosting",
+      "S3-Static-Website-Hosting-Demo",
+      "S3-Encryption",
+      "S3-Encryption-Demo",
+      "S3-Pres-Signed-URLs",
+      "S3-Pres-Signed-URLs-Demo",
+      "S3-Access-Points",
+      "S3-Access-Points-Demo",
+      "S3-Access-Logs",
+      "S3-Events",
+      "Exam-Tips"
+    ],
+    "AWS-Certified-Developer-Associate|Load-Balancing-AutoScaling": [
+      "Section-Introduction",
+      "Elastic-LoadBalancer-Overview",
+      "Application-Load-Balancer",
+      "Network-Load-Balancer",
+      "Gateway-Load-Balancer",
+      "Application-Loadbalancer-Demo",
+      "Sticky-sessions",
+      "Autoscaling-Groups-Overview",
+      "Autoscaling-Groups-Demo",
+      "Exam-Tips"
+    ],
+    "AWS-Certified-Developer-Associate|Databases": [
+      "Section-Introduction",
+      "AWS-RDS-Overview",
+      "AWS-RDS-Demo",
+      "Aurora",
+      "Aurora-Demo",
+      "RDS-Proxy",
+      "DynamoDB-Overview",
+      "DynamoDB-Basics-Demo",
+      "DynamoDB-Pricing-Throughput",
+      "DynamoDB-Pricing-Throughput-Demo",
+      "DynamoDB-Indexes-GSI-LSI",
+      "DynamoDB-Indexes-GSI-LSI-Demo",
+      "DynamoDB-API",
+      "DynamoDB-CLI-Demo",
+      "DynamoDB-SDK-Part1-Demo",
+      "DynamoDB-SDK-Part2-Demo",
+      "DynamoDB-Conditional-writes",
+      "DynamoDB-Optimistic-Locking",
+      "DynamoDB-Transactions",
+      "DynamoDB-TTL",
+      "DynamoDB-TTL-Demo"
+    ],
+    "AWS-Certified-Developer-Associate|CDNs-CloudFront": [
+      "CDN-CloudFront-Basics",
+      "CloudFront-Basics-Demo",
+      "Cache-Key-Caching-Policies-Cache-Behavior",
+      "Cache-Key-Caching-Policies-Cache-Behavior-Demo",
+      "Signed-URLs",
+      "Cloudfront-Geographic-Restriction",
+      "Exam-Tips"
+    ],
+    "AWS-Certified-Developer-Associate|Elastic-Beanstalk": [
+      "Section-Introduction",
+      "Elastic-BeanStalk-Basics",
+      "Elastic-Beanstalk-Basics-demo",
+      "Deployment-Options",
+      "Deployment-Modes-Demo",
+      "Lifecycle-Policies",
+      "Lifecycle-Policies-Demo",
+      "Ebextensions",
+      "ebextensions-demo",
+      "Exam-tips"
+    ],
+    "AWS-Certified-Developer-Associate|Containers-on-AWS": [
+      "Containers-Overview",
+      "ECS-Overview",
+      "ECS-Demo-Part-1",
+      "ECS-Demo-Part-2",
+      "Updating-ECS-Task",
+      "Updating-ECS-Task-Demo",
+      "ECR",
+      "ECR-Demo",
+      "EKS-Overview",
+      "Exam-Tips"
+    ],
+    "AWS-Certified-Developer-Associate|Application-Integrations": [
+      "Section-Introduction",
+      "AWS-SQS-Overview",
+      "SQS-Basics-Demo",
+      "SQS-Settings",
+      "SQS-Settings-demo",
+      "SQS-Dead-Letter-Queue",
+      "SQS-Dead-Letter-Queue-Demo",
+      "SNS-Overview",
+      "SNS-Demo",
+      "Amazon-EventBridge",
+      "Amazon-EventBridge-Demo",
+      "AWS-Step-Functions",
+      "AWS-Step-Functions-Demo",
+      "Exam-TIps"
+    ],
+    "AWS-Certified-Developer-Associate|Serverless": [
+      "Lambda-Basics",
+      "Lambda-Basics-Demo",
+      "Synchronous-vs-Asynchronous",
+      "Lambda-with-CLI-Demo",
+      "Lambda-Layers",
+      "Lambda-Layers-Demo",
+      "Lambda-Application-LoadBalancer",
+      "Lambda-Application-LoadBalancer-Demo",
+      "Permissions-Resource-Policies",
+      "Permissions-Resource-Policies-Demo",
+      "Environment-Variables",
+      "Environment-Variables-Demo",
+      "Lambda-Versions-Aliases",
+      "Lambda-Versions-Aliases-Demo",
+      "Dead-Letter-Queue",
+      "Dead-Letter-Queue-Demo",
+      "Lambda-Destinations",
+      "Lambda-Destinations-Demo",
+      "Logging-Monitoring",
+      "Lambda-Networking",
+      "Lambda-Networking-Demo",
+      "Execution-Context-and-tmp",
+      "Execution-Context-and-tmp-Demo",
+      "Lambda-Storage",
+      "Limits-Concurrency",
+      "Limits-Concurrency-Demo",
+      "Lambda-EventBridge-Integration",
+      "Lambda-EventBridge-Integration-Demo",
+      "LambdaEdge-Cloudfront-Functions",
+      "Exam-Tips"
+    ],
+    "AWS-Certified-Developer-Associate|API-Gateway": [
+      "API-Gateway-Basics",
+      "API-Gateway-Demo",
+      "Stages-Deployments",
+      "Stages-Deployments-Demo",
+      "Canary",
+      "Canary-Demo",
+      "Integration-Types-mapping-Templates",
+      "Integration-Types-mapping-Templates-Demo",
+      "CORS",
+      "OpenAPI",
+      "OpenAPI-Demo",
+      "Caching",
+      "Caching-Demo",
+      "Authentication-Authorization",
+      "Authentication-Authorization-Demo",
+      "API-Keys-Usage-Plans",
+      "API-Keys-Usage-Plans-Demo",
+      "Websockets-vs-REST-API",
+      "Exam-Tips"
+    ],
+    "AWS-Certified-Developer-Associate|Serverless-Application-Model-SAM": [
+      "SAM-Basics",
+      "SAM-Basics-Demo",
+      "SAM-Policy-Templates",
+      "SAM-Advanced-Demo",
+      "Exam-tips"
+    ],
+    "AWS-Certified-Developer-Associate|Security": [
+      "KMSKey-Management-Service",
+      "KMS-Basics-Demo",
+      "KMS-Envelope-Encryption-Demo",
+      "KMS-Encryption-SDK-Demo",
+      "Parameter-Store",
+      "Parameter-Store-Demo",
+      "Secrets-Manager",
+      "Secrets-Manager-Demo",
+      "ACM",
+      "ACM-Demo",
+      "Cognito",
+      "Cognito-User-Pool-Demo",
+      "Cognito-Identity-Pool-Demo",
+      "WAF",
+      "Exam-Tips"
+    ],
+    "AWS-Certified-Developer-Associate|AWS-Monitoring": [
+      "Section-Introduction",
+      "Cloudwatch-Basics",
+      "Cloudwatch-Alarm",
+      "CloudTrail",
+      "CloudTrail-Demo",
+      "Exam-Tips"
+    ],
+    "AWS-Certified-Developer-Associate|Data-Analytics": [
+      "Kinesis",
+      "Kinesis-Data-Streams",
+      "Kinesis-Firehose",
+      "Kinesis-Data-analytics",
+      "Kinesis-Demo",
+      "SQS-vs-SNS-vs-Kineses",
+      "Athena",
+      "Athena-Demo",
+      "OpenSearch",
+      "Exam-Tips"
+    ],
+    "AWS-Certified-Developer-Associate|AWS-CICD-Developer-Tools": [
+      "Section-Introduction",
+      "CodeCommit",
+      "CodeCommit-Demo-part-1",
+      "CodeCommit-Demo-part-2",
+      "CodeBuild",
+      "CodeBuild-Demo",
+      "CodePipeline",
+      "CodePipeline-Demo",
+      "CodeDeploy",
+      "CodeDeploy-Demo",
+      "CodeDeploy-with-codepipeline-Demo",
+      "CodeStar",
+      "Code-Artifact",
+      "CodeGuru",
+      "Cloud9",
+      "Cloud9-Demo",
+      "Code-Whisperer",
+      "Amplify",
+      "Exam-Tips"
+    ],
+    "AWS-Certified-Developer-Associate|Miscellaneous-Services": [
+      "Section-Introduction",
+      "AppConfig",
+      "MSK-Kafka",
+      "AWS-Systems-Manager",
+      "AWS-Systems-Manager-Demo"
+    ],
+    "AWS-Certified-Developer-Associate|Conclusion": [
+      "Conclusion"
+    ],
+    "AWS-Certified-Developer-Associate|AWS-Fundamentals": [
+      "Section-Introduction",
+      "What-is-AWS",
+      "AWS-Global-Infrastructure",
+      "Accessing-AWS",
+      "AWS-Account-Setup",
+      "Billing-2FA",
+      "Exploring-the-AWS-Console",
+      "VPC-Basics",
+      "Custom-VPC-Demo",
+      "Default-VPC-Demo",
+      "EC2-Basics",
+      "EC2-Basics-Demo",
+      "S3-Basics",
+      "S3-Basics-Demo",
+      "Route53-Basics",
+      "Route53-Basics-Demo",
+      "AWS-CLI",
+      "AWS-CLI-Demo",
+      "AWS-CloudShell",
+      "AWS-CloudShell-Demo",
+      "AWS-SDK",
+      "AWS-SDK-Demo",
+      "AWS-CloudFormation",
+      "AWS-CloudFormation-Demo",
+      "AWS-CDK",
+      "AWS-CDK-Demo"
+    ],
+    "AWS-Certified-Machine-Learning-Engineer-Associate|Prerequisites": [
+      "Introduction",
+      "Course-Overview",
+      "Why-AWS-Machine-Learning-Engineer-Associate-Certification",
+      "Demo-RegisteringTaking-an-Exam-for-the-First-Time-What-to-know",
+      "Demo-Machine-Learning-Engineer-Associate-Exam-Guide-What-to-focus-on"
+    ],
+    "AWS-Certified-Machine-Learning-Engineer-Associate|Data-Preparation-for-Machine-Learning-ML": [
+      "Section-Introduction",
+      "Importance-of-Data-Preparation-in-Machine-Learning",
+      "Overview-of-AWS-Data-Services-for-ML",
+      "Data-Formats-for-Machine-Learning",
+      "Core-AWS-Data-Sources-S3-EFS-FSx",
+      "Demo-Setting-up-S3-Buckets-for-ML-Data-Lakes",
+      "Streaming-Data-Sources-Kinesis-Flink-Kafka",
+      "Demo-Using-Kinesis-for-Real-time-Data-Ingestion",
+      "Introduction-to-Data-Transformation-and-Cleaning",
+      "Feature-Engineering-Techniques",
+      "Encoding-Techniques-for-ML-Data",
+      "AWS-Glue-and-Glue-DataBrew-for-Data-Transformation",
+      "Demo-AWS-Glue-ETL-Jobs-for-ML-Data-Preparation",
+      "Working-with-SageMaker-Feature-Store",
+      "Demo-Creating-and-Managing-Features-in-SageMaker-Feature-Store",
+      "Data-Quality-and-Validation",
+      "Pre-training-Bias-Metrics-for-Different-Data-Types",
+      "Strategies-for-Addressing-Class-Imbalance",
+      "SageMaker-Clarify-for-Bias-Detection",
+      "Demo-Detecting-and-Mitigating-Bias-with-SageMaker-Clarify",
+      "Data-Labeling-with-SageMaker-Ground-Truth",
+      "Demo-Setting-up-a-Labeling-Job-with-SageMaker-Ground-Truth",
+      "Data-Security-Considerations-for-ML",
+      "Data-Encryption-Techniques-for-ML-Datasets",
+      "Data-Classification-Anonymization-and-Masking",
+      "Compliance-Requirements-for-ML-Data-PII-PHI-Data-Residency"
+    ],
+    "AWS-Certified-Machine-Learning-Engineer-Associate|ML-Model-Development": [
+      "Section-Introduction",
+      "Introduction-to-ML-Model-Development-on-AWS",
+      "ML-Algorithms-and-Business-Problem-Mapping",
+      "AWS-AI-Services-Overview",
+      "Model-Interpretability-Considerations",
+      "SageMaker-Built-in-Algorithms",
+      "Demo-Exploring-SageMaker-Built-in-Algorithms",
+      "Foundation-Models-and-SageMaker-JumpStart",
+      "Demo-Using-SageMaker-JumpStart-for-Quick-Model-Development",
+      "ML-Training-Process",
+      "Methods-to-Reduce-Model-Training-Time",
+      "Regularization-Techniques-in-ML",
+      "Hyperparameter-Tuning-Techniques",
+      "Using-SageMaker-Script-Mode-with-Frameworks",
+      "Fine-Tuning-Pre-Trained-Models",
+      "Demo-Fine-tuning-a-Pre-trained-Model-with-SageMaker-JumpStart",
+      "Ensemble-Learning-Methods",
+      "Model-Size-Reduction-Techniques",
+      "Demo-Model-Version-Management-with-SageMaker-Model-Registry",
+      "Model-Evaluation-Techniques-and-Metrics",
+      "Creating-Performance-Baselines",
+      "Shadow-Deployment-for-Model-Evaluation"
+    ],
+    "AWS-Certified-Machine-Learning-Engineer-Associate|Deployment-and-Orchestration-of-ML-Workflows": [
+      "Section-Introduction",
+      "Introduction-to-ML-Deployment-and-Orchestration",
+      "ML-Deployment-Best-Practices",
+      "AWS-Deployment-Services-for-ML",
+      "Real-time-vs-Batch-Inference",
+      "Demo-Deploying-a-Model-for-Real-time-Inference",
+      "Demo-Setting-up-Batch-Transform-Jobs",
+      "SageMaker-Endpoint-Types-Serverless-Real-time-Asynchronous",
+      "Container-Options-for-ML-Deployment",
+      "Demo-Creating-Custom-Containers-for-SageMaker",
+      "Edge-Deployment-with-SageMaker-Neo",
+      "On-Demand-vs-Provisioned-Resources-for-ML",
+      "Infrastructure-as-Code-Options-for-ML-Workloads",
+      "Containerization-for-ML-Workloads",
+      "Auto-Scaling-SageMaker-Endpoints",
+      "VPC-Configuration-for-SageMaker",
+      "CICD-Principles-for-ML-Workflows",
+      "AWS-CodePipeline-CodeBuild-and-CodeDeploy-for-ML",
+      "Version-Control-Systems-for-ML-Projects",
+      "Deployment-Strategies-and-Rollback-Actions",
+      "Automating-Data-Ingestion-with-Orchestration-Services",
+      "Demo-Setting-up-SageMaker-Pipelines",
+      "Implementing-Automated-Tests-in-ML-Pipelines"
+    ],
+    "AWS-Certified-Machine-Learning-Engineer-Associate|ML-Solution-Monitoring-Maintenance-and-Security": [
+      "Section-Introduction",
+      "Understanding-Drift-in-ML-Models",
+      "Model-Performance-Monitoring-Techniques",
+      "Using-SageMaker-Model-Monitor",
+      "Demo-Setting-up-Model-Monitoring-with-SageMaker",
+      "Detecting-Data-Drift-with-SageMaker-Clarify",
+      "Demo-Implementing-Data-Drift-Detection",
+      "Monitoring-Workflows-for-Anomalies",
+      "AB-Testing-for-Model-Performance-Monitoring",
+      "Demo-Setting-up-AB-Testing-with-SageMaker",
+      "Key-Performance-Metrics-for-ML-Infrastructure",
+      "Monitoring-Tools-for-ML-Systems",
+      "Demo-Using-CloudWatch-for-ML-Infrastructure-Monitoring",
+      "Using-CloudTrail-for-ML-Activity-Logging",
+      "ML-Specific-Instance-Types-and-Performance-Considerations",
+      "Demo-Using-AWS-Cost-Explorer-for-ML-Cost-Tracking",
+      "Rightsizing-ML-Instances-with-SageMaker-Inference-Recommender",
+      "Demo-Using-SageMaker-Inference-Recommender",
+      "Optimizing-Infrastructure-Costs-with-Spot-Instances",
+      "IAM-Roles-Policies-and-Groups-for-ML-Services",
+      "SageMaker-Security-and-Compliance-Features",
+      "SageMaker-Role-Manager",
+      "Network-Access-Controls-for-ML-Resources",
+      "Security-Best-Practices-for-ML-CICD-Pipelines",
+      "Monitoring-and-Auditing-ML-Systems"
+    ],
+    "AWS-Certified-Machine-Learning-Engineer-Associate|Bringing-it-all-together": [
+      "Summary-of-Domain-1-Data-Preparation-for-ML",
+      "Summary-of-Domain-2-ML-Model-Development",
+      "Summary-of-Domain-3-Deployment-and-Orchestration-of-ML-Workflows",
+      "Summary-of-Domain-4-ML-Solution-Monitoring-Maintenance-and-Security",
+      "Continual-Learning-Resources",
+      "Specific-Next-Steps"
+    ],
+    "AWS-Cloud-Practitioner-CLF-C02|Introduction": [
+      "Course-Introduction",
+      "Why-take-this-Course-AWS-CP",
+      "RegisterTaking-an-AWS-Exam-for-the-1st-time-what-to-know-Demo",
+      "Cloud-Practitioners-Exam-guide"
+    ],
+    "AWS-Cloud-Practitioner-CLF-C02|Cloud-Computing": [
+      "What-is-Cloud-Computing-in-a-nutshell",
+      "What-is-AWS-Specifically",
+      "Benefits-of-Cloud",
+      "Cloud-Economics",
+      "Cloud-Design-Principals"
+    ],
+    "AWS-Cloud-Practitioner-CLF-C02|Security-and-Compliance": [
+      "AWS-Shared-Responsibility-Model-for-Security",
+      "AWS-Cloud-security-and-compliance-concepts",
+      "AWS-Identity-Access-Management",
+      "AWS-IAM-user-groups-and-roles-Demo",
+      "Organizations",
+      "Resources-for-Security-of-AWS"
+    ],
+    "AWS-Cloud-Practitioner-CLF-C02|Technology-Part-One": [
+      "Methods-of-Deploying-and-Operating-in-the-Cloud",
+      "AWS-Console-Demo",
+      "AWS-CLI-Demo",
+      "AWS-SDK-Demo",
+      "AWS-global-infrastructure",
+      "Core-AWS-Services-Networking",
+      "Networking-Default-VPC",
+      "Networking-Firewall",
+      "Networking-Overview",
+      "AWS-Networking-Demo",
+      "Core-AWS-Services-Storage",
+      "AWS-Storage-EBS-Demo",
+      "AWS-Storage-EFS-Demo",
+      "AWS-Storage-S3-Demo",
+      "Core-AWS-Services-Compute-EC2",
+      "Core-AWS-Services-Compute-Lambda",
+      "Core-AWS-Services-Compute-Containers",
+      "AWS-Compute-EC2-Demo"
+    ],
+    "AWS-Cloud-Practitioner-CLF-C02|Technology-Part-Two": [
+      "Core-AWS-Services-Database",
+      "AWS-Database-Demo",
+      "Core-AWS-Services-Application-Integration",
+      "AWS-App-Integration-Demo",
+      "Core-AWS-Services-Management",
+      "AWS-Management-Demo",
+      "Core-AWS-Services-Migration-and-Transfer",
+      "AWS-Migration-and-Transfer-Demo"
+    ],
+    "AWS-Cloud-Practitioner-CLF-C02|Technology-Part-Three": [
+      "Introduction-to-AIML-Services",
+      "AIML-Sagemaker",
+      "AIML-Lex-for-Chatbots",
+      "AIML-Kendra",
+      "AIML-Comprehend",
+      "AIML-Polly",
+      "AIML-Rekognition",
+      "AIML-Textract",
+      "AIML-Transcribe",
+      "AIML-Translate",
+      "AIML-Summary",
+      "AWS-SageMaker-Demo",
+      "Secondary-AWS-Services-Analytics-Services",
+      "AWS-Athena-Demo",
+      "Secondary-AWS-Services-Business-Application-Services",
+      "Amazon-Connect-Demo",
+      "Secondary-AWS-Services-Customer-Engagement-Services",
+      "Secondary-AWS-Services-Developer-Tools",
+      "AWS-Cloud9-Demo",
+      "Secondary-AWS-Services-End-User-Computing",
+      "AWS-Workspaces-Demo",
+      "Secondary-AWS-Services-Frontend-Web-and-Mobile-Services",
+      "AWS-Amplify-Demo",
+      "Secondary-AWS-Services-IoT-Services"
+    ],
+    "AWS-Cloud-Practitioner-CLF-C02|Billing-and-Pricing": [
+      "General-Billing-in-AWS",
+      "Specific-Billing-EC2",
+      "Calculate-the-following-Compute-Costs-Calculator-Exercise",
+      "Specific-Billing-RDS",
+      "Calculate-the-following-Database-Costs-Calculator-Exercise",
+      "Specific-Billing-VPC",
+      "Calculate-the-following-Network-Costs-Calculator-Exercise",
+      "Specific-Billing-Lambda",
+      "Billing-for-other-services-in-general",
+      "Calculate-the-following-Random-Service-Costs-Calculator-Exercise",
+      "How-Account-Structures-can-affect-billing",
+      "Tools-for-Billing-Analysis-and-Support",
+      "AWS-Support-Options"
+    ],
+    "AWS-Cloud-Practitioner-CLF-C02|Bringing-it-all-together": [
+      "Summary-on-Cloud-Computing",
+      "Summary-on-Security-and-Compliance",
+      "Summary-on-Technology",
+      "Summary-on-Billing-and-Pricing",
+      "The-Road-ahead-on-your-AWS-Journey",
+      "Conclusion"
+    ],
+    "AWS-CloudFormation|Course-Introduction": [
+      "Introduction",
+      "Course-Prerequisites",
+      "Course-Overview",
+      "Course-Structure",
+      "Thought-Process"
+    ],
+    "AWS-CloudFormation|Cloud-Service-Models": [
+      "Cloud-Service-Models-Overview",
+      "Complete-Lifecycle-Workflow"
+    ],
+    "AWS-CloudFormation|Code-Editor-Setup-and-Source-Code": [
+      "Demo-Visual-Studio-Code-Installation-Windows",
+      "Demo-Visual-Studio-Code-Installation-MacOS",
+      "Demo-Source-Code-reference-and-download"
+    ],
+    "AWS-CloudFormation|AWS-CloudFormation-Introduction": [
+      "AWS-CloudFormation-Introduction",
+      "How-Does-AWS-CloudFormation-Work",
+      "Demo-Creating-a-base-IAM-user",
+      "Demo-Using-AWS-CloudFormation-for-the-first-time",
+      "Deploying-CloudFormation-Templates",
+      "Demo-Accessing-documentation-on-CloudFormation"
+    ],
+    "AWS-CloudFormation|Resources": [
+      "CloudFormation-Resources-Introduction",
+      "Demo-Creating-a-base-template-in-YAML-for-Amazon-S3",
+      "Optional-Attributes-to-Use-for-Resources"
+    ],
+    "AWS-CloudFormation|From-Template-to-Stack": [
+      "Linting-and-Validating-our-Templates-With-CFN-Lint",
+      "Demo-Defining-and-setting-up-CFN-Lint-for-our-templates-Part-1",
+      "Demo-Python-Installation-and-setup-Windows",
+      "Demo-Python-Installation-and-setup-MacOS",
+      "Demo-Defining-and-setting-up-CFN-Lint-for-our-templates-Part-2",
+      "DemoModifying-the-name-of-an-S3-Bucket",
+      "Demo-Using-a-CloudFormation-template-to-provision-an-S3-Bucket"
+    ],
+    "AWS-CloudFormation|Metadata-and-Tags": [
+      "Metadata-and-Tags-Introduction",
+      "Demo-Adding-Metadata-in-the-template-resource",
+      "Demo-Adding-Tags-in-the-template-resource",
+      "Demo-Tagging-resources-in-the-AWS-Management-Console"
+    ],
+    "AWS-CloudFormation|Intrinsic-Functions": [
+      "Intrinsic-Functions-Introduction"
+    ],
+    "AWS-CloudFormation|Parameters": [],
+    "AWS-CloudFormation|Mappings": [
+      "Mappings-Introduction",
+      "Accessing-Mapped-Values",
+      "Demo-Defining-mappings-in-CloudFormation",
+      "Demo-Accessing-our-mapped-values",
+      "Demo-Using-FindInMap-dynamically-with-parameters"
+    ],
+    "AWS-CloudFormation|CloudFormation-Conditions-and-Policies": [
+      "Conditions-Introduction",
+      "Demo-Defining-a-basic-public-read-policy",
+      "Demo-Using-Sub-dynamically-with-parameters",
+      "Demo-Creating-a-condition-to-differentiate-environments",
+      "Demo-Applying-a-condition-to-a-public-read-policy",
+      "DependsOn-Attribute",
+      "Demo-Utilizing-the-DependsOn-attribute",
+      "Demo-Managing-public-access-settings-with-conditions",
+      "Demo-Conditional-resource-based-creation-Part-1",
+      "Demo-Conditional-resource-based-creation-Part-2",
+      "Policies-Overview"
+    ],
+    "AWS-CloudFormation|Outputs": [
+      "Outputs-Introduction",
+      "Demo-Working-with-Outputs-in-CloudFormation"
+    ],
+    "AWS-CloudFormation|Infrastructure-Composer": [
+      "AWS-Infrastructure-Composer-Introduction",
+      "Demo-Editing-your-existing-template-with-Infrastructure-Composer",
+      "Demo-Resource-cleanup",
+      "Demo-Creating-your-stack-and-template-with-Infrastructure-Composer"
+    ],
+    "AWS-CloudFormation|EC2-Instance-Setup-With-an-HTTP-Server": [
+      "EC2-Instance-for-CloudFormation-Overview",
+      "Demo-Using-a-CloudFormation-template-to-provision-a-basic-EC2-Instance",
+      "Demo-Defining-a-security-group-with-your-template",
+      "Demo-Allowing-SSH-access-in-your-security-group",
+      "Demo-Integrating-metadata-and-parameters",
+      "Demo-Integrating-tags-and-outputs",
+      "Demo-Using-a-CloudFormation-template-to-provision-a-complete-EC2-Instance",
+      "Demo-Replacing-hardcoded-values-with-a-pseudo-parameter",
+      "Demo-Managing-and-working-with-multiple-regions-Part-1",
+      "Demo-Managing-and-working-with-multiple-regions-Part-2"
+    ],
+    "AWS-CloudFormation|AWS-CLI": [
+      "AWS-CLI-for-CloudFormation-Overview",
+      "Demo-Installing-and-setting-up-AWS-CLI",
+      "Demo-Creating-an-S3-bucket-and-EC2-Instance-with-AWS-CLI"
+    ],
+    "AWS-CloudFormation|Access-Control": [
+      "Access-Control-for-CloudFormation-Stack-Actions",
+      "Demo-Managing-basic-permission-policies",
+      "Demo-Creating-a-custom-permission-policy-Update-a-stack-Part-1",
+      "Demo-Creating-a-custom-permission-policy-Update-a-stack-Part-2",
+      "Demo-Creating-a-custom-permission-policy-Delete-a-stack"
+    ],
+    "AWS-CloudFormation|Drift-Detection": [
+      "CloudFormation-Drift-Introduction",
+      "Demo-Utilizing-CloudFormation-Drift"
+    ],
+    "AWS-CloudFormation|Nested-Stacks": [
+      "Nested-Stacks-Introduction",
+      "Demo-Resource-cleanup",
+      "Demo-Working-with-nested-stacks",
+      "Demo-Updating-nested-stacks",
+      "Demo-Deleting-nested-stacks"
+    ],
+    "AWS-CloudFormation|StackSets": [
+      "StackSets-Introduction",
+      "Demo-Creating-a-StackSet",
+      "Demo-Analyzing-a-StackSet",
+      "Demo-Updating-a-StackSet",
+      "StackSet-Drift-Detection",
+      "Demo-Utilizing-Drift-detection-with-a-StackSet",
+      "Demo-Deleting-a-StackSet"
+    ],
+    "AWS-CloudFormation|Deployment-Modes": [
+      "Evaluating-Stack-Creation-Failures",
+      "Demo-Handling-stack-creation-failures",
+      "Rollback-Triggers-Overview",
+      "Demo-Utilizing-rollback-triggers",
+      "Stack-Policies-Overview",
+      "Demo-Utilizing-a-stack-policy",
+      "Preventing-Accidental-Deletion-of-a-stack",
+      "Demo-Applying-termination-protection-on-a-stack"
+    ],
+    "AWS-CloudFormation|SSM-Parameters": [
+      "SSM-Parameter-Types-Overview",
+      "Demo-Working-with-SSM-parameter-store"
+    ],
+    "AWS-CloudFormation|CFN-init-and-Resource-Imports": [
+      "CFN-init-Overview",
+      "Demo-Setting-up-an-IAM-roleInstance-profile-for-EC2",
+      "Demo-Working-with-CFN-init-scripting-Part-1",
+      "Demo-Working-with-CFN-init-scripting-Part-2",
+      "Resource-Imports-Overview",
+      "Demo-Working-with-resource-imports"
+    ],
+    "AWS-CloudFormation|Automation-and-Integration": [
+      "CloudFormation-for-Continuous-Delivery-With-CodePipeline",
+      "Demo-Creating-a-pipeline-for-continuous-delivery",
+      "Demo-Updating-our-templates-and-resource-cleanup"
+    ],
+    "AWS-CloudFormation|Registry": [
+      "CloudFormation-Registry-Introduction",
+      "Demo-A-brief-overview-of-the-CloudFormation-registry"
+    ],
+    "AWS-CloudFormation|Conclusion": [
+      "Conclusion"
+    ],
+    "AWS-CloudWatch|Introduction": [
+      "Introduction"
+    ],
+    "AWS-CloudWatch|Introduction-to-Observability-in-AWS": [
+      "What-is-observability",
+      "Proactive-problem-detection",
+      "Monitoring-strategy-and-Categories-of-insights",
+      "Introduction-to-AWS-CloudWatch-Key-Features",
+      "Demo-Explore-CloudWatch-Console"
+    ],
+    "AWS-CloudWatch|Anatomy-of-Alarms": [
+      "What-are-Metrics-and-Metric-Dimensions",
+      "Built-in-and-Custom-Metrics",
+      "Metric-Granularity-and-Aggregation",
+      "Alarm-Anatomy",
+      "Alarm-States",
+      "Demo-Creating-and-Configuring-Alarms-with-alerting",
+      "Composite-Alarms",
+      "Demo-Creating-a-composite-alarm"
+    ],
+    "AWS-CloudWatch|CloudWatch-Logs": [
+      "Introduction-to-CloudWatch-Logs",
+      "Understanding-Log-Stream-and-Log-Group",
+      "Understanding-Log-Events",
+      "Metric-Filters",
+      "Demo-Metric-Filter",
+      "What-is-Cloudwatch-agent",
+      "Demo-Cloudwatch-agent-to-setup-SSH-connection-failure-alert-dashboard-for-EC2-instance"
+    ],
+    "AWS-CloudWatch|Cloudwatch-Dashboards": [
+      "Dashboards-in-Cloudwatch",
+      "Different-types-of-Visualizations",
+      "Demo-Hands-on-with-Cloudwatch-Dashboards"
+    ],
+    "AWS-CloudWatch|CloudWatch-Events-EventBridge-Event-Buses": [
+      "CloudWatch-Events-EventBridge-Event-Buses",
+      "Event-Event-Bus-and-Event-Rule",
+      "Event-Patterns-Scheduled-Events-and-Pipes",
+      "Demo-Hands-on-with-AWS-Eventbridge-schedulers"
+    ],
+    "AWS-CloudWatch|Cloudwatch-Insights-X-Ray-and-Service-Map": [
+      "Cloudwatch-Insights-and-X-Ray",
+      "Container-InsightsLambda-InsightsContributor-InsightsApplication-Insights",
+      "Demo-Lambda-Insights",
+      "Introduction-to-AWS-X-Ray-and-Service-map",
+      "Demo-Setting-up-X-Ray-with-a-Sample-Application"
+    ],
+    "AWS-CloudWatch|Advanced-Observability-with-CloudWatch": [
+      "Internet-Monitor",
+      "Synthetics-Canaries",
+      "Demo-Synthetics-Canaries",
+      "Resource-Health",
+      "Demo-Resource-Health",
+      "Evidently",
+      "Real-Time-User-Monitoring-RUM",
+      "Understanding-CloudWatch-Pricing",
+      "Tips-for-Cloudwatch-Cost-Optimization"
+    ],
+    "AWS-CodePipeline-CICD-Pipeline|Introduction": [
+      "Course-Introduction"
+    ],
+    "AWS-CodePipeline-CICD-Pipeline|Basics-of-AWS-CodePipeline": [
+      "CodePipeline-Basics",
+      "Use-cases-of-AWS-CodePipeline",
+      "Integrations",
+      "Security",
+      "Cost-Structure",
+      "Monitoring"
+    ],
+    "AWS-CodePipeline-CICD-Pipeline|Creating-a-CICD-pipeline-with-AWS-CodePipeline": [
+      "Introduction-to-Sample-Application",
+      "Demonstration-1-Create-2-Stage-Pipeline",
+      "Demonstration-2-Create-2-Stage-Pipeline",
+      "Demonstration-3-Create-4-Stage-Pipeline"
+    ],
+    "AWS-CodePipeline-CICD-Pipeline|CICD-Pipeline-with-CodeCommit-CodeBuild-and-CodeDeploy": [
+      "Repositories",
+      "CodeCommit-Demo",
+      "Introduction-to-CodeBuild",
+      "Build-stage-with-AWS-CodeBuild",
+      "CodeBuild-Demo",
+      "Introduction-to-CodeDeploy",
+      "CodeDeploy-Demo",
+      "CodePipeline-Limitations"
+    ],
+    "AWS-CodePipeline-CICD-Pipeline|Conclusion": [
+      "Course-Summary"
+    ],
+    "AWS-EKS|Introduction": [
+      "Course-Introduction"
+    ],
+    "AWS-EKS|EKS-Fundamentals": [
+      "What-is-EKS",
+      "Common-Use-Cases",
+      "Architecture",
+      "Deployment-Options",
+      "Tools-needed-for-EKS",
+      "Networking",
+      "Authentication"
+    ],
+    "AWS-EKS|EKS-Networking": [
+      "How-networking-works",
+      "Prefix-Delegation",
+      "IPv6",
+      "Network-Policies",
+      "Network-Policies-Demo"
+    ],
+    "AWS-EKS|EKS-Storage": [
+      "EKS-EBSElastic-Block-Store",
+      "EKS-EFSElastic-File-System",
+      "EKS-Other-Storage"
+    ],
+    "AWS-EKS|Compute-Scaling": [
+      "Fargate",
+      "EKS-Node-Groups",
+      "Karpenter",
+      "Compute-Demo"
+    ],
+    "AWS-EKS|Load-Balancers": [
+      "LoadBalancers-Intro",
+      "Gateway-Ingress",
+      "VPC-Lattice"
+    ],
+    "AWS-EKS|EKS-Secrets": [
+      "EKS-Secrets-Intro",
+      "Kubernetes-Secrets-Options"
+    ],
+    "AWS-EKS|Redundancy-Resiliency": [
+      "Cluster-Access",
+      "IRSAIAM-Roles-for-Service-Accounts",
+      "Pod-Identity"
+    ],
+    "AWS-EKS|Upgrades-and-Maintenance": [
+      "EKS-monitoring",
+      "Upgrade-Cycles",
+      "EKS-Upgrades",
+      "EKS-Addon"
+    ],
+    "AWS-For-Beginners-with-Hands-On-Labs|AWS-Essentials": [
+      "Introduction",
+      "Amazon-EC2",
+      "Amazon-S3-Simple-Storage-Service-Part-1",
+      "Amazon-S3-Simple-Storage-Service-Part-2",
+      "Amazon-VPC",
+      "AWS-Lambda"
+    ],
+    "AWS-For-Beginners-with-Hands-On-Labs|AWS-Essentials-Part-2": [
+      "AWS-RDS",
+      "AWS-DynamoDB",
+      "AWS-IAM",
+      "AWS-CloudWatch",
+      "AWS-AutoscalingELB",
+      "AWS-SNSSQS"
+    ],
+    "AWS-IAM|Introduction": [
+      "Course-Introduction"
+    ],
+    "AWS-IAM|Introduction-to-AWS-Identity-and-Access-Management": [
+      "IAM-Overview",
+      "AWS-Account",
+      "Demo-Creating-AWS-Account",
+      "IAM-Users",
+      "Demo-Create-IAM-User",
+      "AWS-CLI-and-SDK",
+      "Demo-IAM-Groups",
+      "IAM-Policies-and-Permissions",
+      "Demo-Identity-Policy",
+      "IAM-Resource-Based-Policy",
+      "Demo-Resource-Based-Policy",
+      "IAM-Permission-Boundaries",
+      "Demo-Permission-Boundaries",
+      "IAM-Roles",
+      "Demo-Creating-IAM-Role",
+      "IAM-Session-Policies",
+      "Demo-Session-Policies",
+      "Auditing-with-CloudTrail",
+      "Demo-CloudTrail"
+    ],
+    "AWS-IAM|IAM-Policies-Federation-STS-and-MFA": [
+      "Inline-vs-Managed-Policy",
+      "Demo-Inline-Policy",
+      "IAM-Policy-Building-Blocks",
+      "Demo-Policy-with-Conditions",
+      "MFA-and-Password-Policies",
+      "Demo-MFA-and-Password-Policies",
+      "Security-Token-ServiceSTS",
+      "AWS-Resource-Access-Manager",
+      "Identity-Federation",
+      "AWS-Private-Link"
+    ],
+    "AWS-IAM|Configure-AWS-IAM-at-Scale": [
+      "Overview",
+      "AWS-Organizations",
+      "IAM-Cross-Account-Access",
+      "Demo-Cross-Account-Access",
+      "Centralized-Logging-and-Monitoring",
+      "CloudTrail",
+      "Monitoring-Demo-CloudTrail",
+      "CloudWatch",
+      "Demo-CloudWatch",
+      "AWS-Config",
+      "Demo-AWS-Config",
+      "IAM-Anywhere",
+      "IAM-Identity-Center",
+      "Demo-IAM-Identity-Center"
+    ],
+    "AWS-Lambda|Introduction": [
+      "Course-Introduction"
+    ],
+    "AWS-Lambda|Understanding-Lambda": [
+      "Lambda-Service-Basics",
+      "Event-Sources",
+      "Access-Permissions",
+      "Functions",
+      "Pricing",
+      "Pricing-Demo",
+      "AWS-Lambda-labs-Instructions-and-Fair-Usage-Policy"
+    ],
+    "AWS-Lambda|Configuring-Lambda": [
+      "Prerequisites",
+      "Create-a-Basic-Lambda-Function",
+      "Create-a-Basic-Lambda-Function-using-CLI",
+      "Create-a-Canary-Function-using-Blueprint",
+      "Create-a-Pull-Event-SQS-Function-using-Blueprint",
+      "Limitations",
+      "Monitoring-Options"
+    ],
+    "AWS-Lambda|Advanced-Topics": [
+      "Lambda-Networking",
+      "Lambda-Networking-Demonstration-Option-1",
+      "Lambda-Networking-Demonstration-Option-2",
+      "Reserved-and-Unreserved-Concurrency",
+      "Provisioned-Concurrency",
+      "Lambda-Containers",
+      "Lambda-Containers-Demonstration"
+    ],
+    "AWS-Lambda|Conclusion": [
+      "Conclusion"
+    ],
+    "AWS-Networking-Fundamentals|Introduction": [
+      "Course-Introduction"
+    ],
+    "AWS-Networking-Fundamentals|Core-Networking-Services": [
+      "VPC-Overview",
+      "Custom-VPC-Demo",
+      "Default-VPC-Demo",
+      "Subnets",
+      "Subnets-Demo",
+      "Routing-in-VPC",
+      "Route-Table-Demo",
+      "Internet-Gateways-VPC",
+      "Internet-Gateway-Demo",
+      "NAT-Gateways-VPC",
+      "NAT-Gateways-VPC-Demo",
+      "Public-vs-Private-Subnets",
+      "DNS-VPC",
+      "DNS-VPC-Demo",
+      "Elastic-IP",
+      "Elastic-IP-Demo",
+      "Security-Groups-NACLs",
+      "Security-Groups-Demo",
+      "NACLs-Demo",
+      "Load-Balancers",
+      "Load-Balancers-Demo",
+      "Route-53",
+      "Route-53-Demo"
+    ],
+    "AWS-Networking-Fundamentals|Edge-Networks": [
+      "CloudFront",
+      "CloudFront-Demo",
+      "Cloudfront-and-LambdaEdge",
+      "Global-Accelerator"
+    ],
+    "AWS-Networking-Fundamentals|Transit-Networks": [
+      "VPN",
+      "Direct-Connect",
+      "VPC-Peering",
+      "VPC-Peering-Demo",
+      "Transit-Gateway",
+      "Privatelink"
+    ],
+    "AWS-RDS|Introduction": [
+      "Introduction"
+    ],
+    "AWS-RDS|Understanding-why-we-need-databases": [
+      "Understanding-why-we-need-databases",
+      "Overview-of-RDS-and-its-benefits",
+      "Overview-of-the-AWS-management-console",
+      "Creating-a-single-MariaDB-RDS-instance"
+    ],
+    "AWS-RDS|Different-Database-Engines-in-RDS": [
+      "Different-Database-Engines-in-RDS",
+      "Postgresql-on-RDS",
+      "MariaDB-on-RDS",
+      "MSSQL-on-RDS",
+      "Oracle-on-RDS",
+      "Mysql-on-RDS",
+      "Choosing-a-Right-Database",
+      "Licensing-on-RDS"
+    ],
+    "AWS-RDS|RDS-Architecture-and-Concepts": [
+      "RDS-Architecture-and-Concepts",
+      "Deploying-the-sample-application-on-EC2-instance",
+      "Creating-and-connecting-the-RDS-instance-to-the-application",
+      "The-Instance-typesfamilies",
+      "AWS-RDS-Storage",
+      "Read-Replicas",
+      "Creating-Read-Replicas",
+      "RDS-Cross-region-read-replicas",
+      "Summary-of-RDS-architecture-and-core-concepts"
+    ],
+    "AWS-RDS|RDS-Networking-and-Security": [
+      "Understanding-RDS-Networking-and-Securities",
+      "Database-authentication-and-access-management-with-Amazon-RDS",
+      "Password-management-with-Amazon-RDS-and-AWS-Secrets-Manager",
+      "Demo-Password-management-with-Amazon-RDS-and-AWS-Secrets-Manager",
+      "Demo-Password-management-with-Amazon-RDS-and-AWS-Secrets-Manager-Part-2",
+      "Infrastructure-security-in-Amazon-RDS",
+      "Security-Best-Practices-for-Amazon-RDS",
+      "Controlling-access-with-security-groups",
+      "RDS-Proxy",
+      "Working-with-Amazon-RDS-Proxy-endpoints-Demo"
+    ],
+    "AWS-RDS|Backup-and-Restore-with-RDS": [
+      "Backup-and-Restore-with-RDS",
+      "Demo-Backup-and-Restore-with-RDS",
+      "Costing-your-RDS-instance"
+    ],
+    "AWS-RDS|Monitoring-RDS-Database": [
+      "Monitoring-RDS-databases",
+      "Performance-Insights",
+      "Cloudwatch-and-RDS-integrations",
+      "Query-Editor-console"
+    ],
+    "AWS-RDS|Scaling-AWS-RDS": [
+      "Single-vs-multi-az-instance-deployment-vs-multi-az-cluster-deployment",
+      "BlueGreen-Deployments",
+      "Optimized-ReadsWrites"
+    ],
+    "AWS-RDS|AWS-Aurora": [
+      "Features-and-Benefits-of-Aurora",
+      "Aurora-Architecture-vs-RDS-Whats-different",
+      "Setting-up-Managing-Aurora",
+      "AWS-Aurora-distributed-storage",
+      "Backup-and-Restore-with-Aurora",
+      "Demo-Backup-and-Restore-with-Aurora",
+      "Pricing-of-Aurora",
+      "Aurora-vs-Aurora-Serverless-V2"
+    ],
+    "AWS-RDS|Conclusion": [
+      "Conclusion"
+    ],
+    "AWS-SageMaker|Machine-Learning-Prerequisites": [
+      "Course-Introduction",
+      "Prerequisites",
+      "ML-Basics-Fundamentals-of-Model-Training-and-Inference",
+      "ML-Basics-Fundamentals-of-Model-Training-and-Inference-Part-2",
+      "ML-Pipeline",
+      "How-Much-Math-Do-I-Need",
+      "How-Much-Math-Do-I-Need-Part-2",
+      "How-Much-Math-Do-I-Need-Part-3",
+      "Why-is-SageMaker-Intimidating",
+      "Why-Learn-SageMaker-by-Persona",
+      "Why-Learn-SageMaker-by-Persona-Part-2"
+    ],
+    "AWS-SageMaker|SageMaker-Introduction": [
+      "SageMaker-What-Makes-it-a-Managed-Service",
+      "Introduction-to-Jupyter-Notebooks",
+      "Introduction-to-Jupyter-Notebooks-Part-2",
+      "Demo-Jupyter-Notebooks",
+      "The-SageMaker-SDK-for-Python-Why-not-boto3"
+    ],
+    "AWS-SageMaker|SageMaker-User-Interface": [
+      "Navigating-the-UI",
+      "Demo-Navigating-the-UI",
+      "SageMaker-Domains-and-SageMaker-Studio",
+      "SageMaker-Domains-and-SageMaker-Studio-Part-2",
+      "SageMaker-Domains-and-SageMaker-Studio-Part-3",
+      "Options-for-Collaboration-in-SageMaker-Studio",
+      "Code-Editor-Alternative-to-JupyterLab",
+      "Code-Editor-Alternative-to-JupyterLab-Part-2",
+      "SageMaker-Studio-Classic-vs-SageMaker-Studio-New"
+    ],
+    "AWS-SageMaker|Persona-SageMaker-Activities-Data-Engineer": [
+      "Tabular-Data-Preparation",
+      "SageMaker-Canvas-Low-Code-Data-Preparation-and-ML-Training",
+      "SageMaker-Canvas-Low-Code-Data-Preparation-and-ML-Training-Part-2",
+      "Demo-SageMaker-Canvas-Data-Wrangler",
+      "Demo-SageMaker-Canvas-Data-Wrangler-Part-2",
+      "Demo-SageMaker-Canvas-AutoML",
+      "SageMaker-Data-Processing-Jobs"
+    ],
+    "AWS-SageMaker|Persona-SageMaker-Activities-Data-Scientist": [
+      "An-Introduction-to-Feature-Engineering",
+      "An-Introduction-to-Feature-Engineering-Part-2",
+      "Demo-Feature-Engineering-in-SageMaker-Studio",
+      "Training-Model-in-SageMaker-Studio-and-Monitoring-Training-Jobs",
+      "Training-Model-in-SageMaker-Studio-and-Monitoring-Training-Jobs-Part-2",
+      "Training-Model-in-SageMaker-Studio-and-Monitoring-Training-Jobs-Part-3",
+      "Demo-Training-Your-Model-in-SageMaker-Studio-Using-Python-SDK",
+      "Introduction-to-Experiment-Management",
+      "Optimizing-the-Training-Process-with-Automation",
+      "Keeping-Track-of-Models-Using-the-SageMaker-Model-Registry",
+      "Keeping-Track-of-Models-Using-the-SageMaker-Model-Registry-Part-2",
+      "Demo-Keeping-Track-of-Models-Using-the-SageMaker-Model-Registry"
+    ],
+    "AWS-SageMaker|Persona-SageMaker-Activities-MLOps-Engineer": [
+      "Options-to-Host-a-Model-for-Inference",
+      "Options-to-Host-a-Model-for-Inference-Part-2",
+      "Advanced-Inference-Options",
+      "Advanced-Inference-Options-Part-2",
+      "Advanced-Inference-Options-Part-3",
+      "Demo-Deploy-a-Hosted-Model-Using-SageMaker-Endpoints",
+      "Demo-Deploy-a-Hosted-Model-Using-SageMaker-Endpoints-Part-2",
+      "Automate-ML-Pipeline-with-SageMaker-Pipeline",
+      "End-to-End-CICD-ML-Pipelines-from-SageMaker-Project-Templates",
+      "Demo-End-to-End-CICD-ML-Pipelines-from-SageMaker-Project-Templates",
+      "Monitoring-and-Observability",
+      "Monitoring-and-Observability-Part-2",
+      "Demo-Add-Monitoring-to-Deployed-Model"
+    ],
+    "AWS-SageMaker|Wrap-Up": [
+      "Demystifying-Advanced-SageMaker",
+      "Demystifying-Advanced-SageMaker-Part-2",
+      "Demystifying-Advanced-SageMaker-Part-3",
+      "Whats-New-for-2025",
+      "Is-SageMaker-Demystified-for-You"
+    ],
+    "AWS-SageMaker|Course-Introduction": [
+      "Course-Overview"
+    ],
+    "AWS-Solutions-Architect-Associate-Certification|Introduction": [
+      "Course-Overview",
+      "Why-take-this-course",
+      "Optional-Do-you-meet-the-pre-requisites-A-Cloud-Practitioner-Mock-Exam",
+      "Why-AWS-Solutions-Architecture-Certification-and-what-is-a-solutions-architect",
+      "Where-are-you-now-Take-an-Assessment-to-know-what-you-dont-know",
+      "The-KodeKloud-AWS-Playgrounds",
+      "Setting-up-your-own-AWS-Account-A-walkthrough",
+      "RegisteringTaking-an-exam-for-the-first-time-What-to-know-Demo"
+    ],
+    "AWS-Solutions-Architect-Associate-Certification|Services-Networking": [
+      "VPC-Overview",
+      "Custom-VPC-Demo",
+      "Default-VPC-Demo",
+      "Subnets",
+      "Subnets-Demo",
+      "Routing-in-VPC",
+      "Route-Table-Demo",
+      "Internet-Gateways-VPC",
+      "Internet-Gateways-VPC-Demo",
+      "NAT-Gateways-VPC",
+      "NAT-Gateways-VPC-Demo",
+      "Private-and-Public-Subnets",
+      "DNS-VPC",
+      "DNS-VPC-Demo",
+      "Elastic-IP",
+      "Elastic-IP-Demo",
+      "Security-Groups-Demo",
+      "NACLs-Demo",
+      "Load-Balancers",
+      "Load-Balancers-Demo",
+      "VPN",
+      "Direct-Connect",
+      "VPC-Peering",
+      "VPC-Peering-DEMO",
+      "Transit-Gateway",
+      "Privatelink",
+      "CloudFront",
+      "CloudFront-Demo",
+      "LambdaEdge",
+      "Global-Accelerator",
+      "Route-53",
+      "Demo-Route-53",
+      "Route-53-Application-Recovery-Controller"
+    ],
+    "AWS-Solutions-Architect-Associate-Certification|Services-Application-Integration": [
+      "Autoscaling",
+      "Autoscaling-Demo",
+      "API-Gateway",
+      "API-Gateway-Demo",
+      "AppFlow",
+      "SNS",
+      "SQS",
+      "SNSSQS-Demo",
+      "Amazon-MQ",
+      "Eventbridge",
+      "Demo-of-using-Eventbridge-to-respond-to-changes-in-your-environment-with-AWS-config",
+      "Simple-Email-Service",
+      "Step-Functions",
+      "Simple-Workflow-Service",
+      "Managed-Apache-Airflow"
+    ],
+    "AWS-Solutions-Architect-Associate-Certification|Services-Compute": [
+      "EC2",
+      "EC2-Demo",
+      "EC2-Image-Builder",
+      "Elastic-Network-Interfaces",
+      "Elastic-Network-Interfaces-Demo",
+      "Elastic-Beanstalk",
+      "Elastic-Beanstalk-Demo",
+      "Lightsail",
+      "ECS",
+      "ECS-Demo-Part-1",
+      "ECS-Demo-Part-2",
+      "EKS",
+      "ECR",
+      "ECR-Demo",
+      "App-Runner",
+      "Batch",
+      "Lambda",
+      "Lambda-Demo",
+      "Serverless-Application-Model",
+      "Amplify",
+      "Outposts",
+      "ECSEKS-Anywhere",
+      "VMware-Cloud-on-AWS",
+      "The-Snow-Family-compute-mainly"
+    ],
+    "AWS-Solutions-Architect-Associate-Certification|Services-Data-and-ML": [
+      "Kinesis",
+      "Demo-Kinesis-in-real-time-consumption-and-production",
+      "Managed-Service-for-Kafka",
+      "Glue",
+      "EMR",
+      "Glue-Databrew",
+      "Lake-Formation",
+      "Athena",
+      "Demo-of-Athena-in-Action",
+      "Quicksight",
+      "Sagemaker",
+      "Rekognition",
+      "Demo-of-Rekognition-recognizing-an-image",
+      "Polly",
+      "Lex",
+      "Comprehend",
+      "Forecast",
+      "Augmented-AI",
+      "Fraud-Detector",
+      "Transcribe",
+      "Translate",
+      "Demo-AWS-Translate",
+      "Textract"
+    ],
+    "AWS-Solutions-Architect-Associate-Certification|Services-Database": [
+      "Database-Agenda-and-Introduction",
+      "AWS-RDS",
+      "RDS-Aurora-and-Aurora-Serverless",
+      "RDS-RDS-proxy",
+      "Redshift-Main",
+      "Redshift-Serverless",
+      "DynamoDB",
+      "DynamoDB-Demo",
+      "DynamoDB-Accelerator",
+      "OpenSearch",
+      "OpenSearch-Demo",
+      "ElastiCache",
+      "MemoryDB-for-Redis",
+      "DocumentDB",
+      "Keyspaces",
+      "Neptune",
+      "QLDB",
+      "TimeStream"
+    ],
+    "AWS-Solutions-Architect-Associate-Certification|Services-Storage": [
+      "EBS",
+      "EBS-Demo-part-1",
+      "EBS-Demo-part-2",
+      "Instance-Store",
+      "Instance-Store-Demo",
+      "EFS",
+      "EFS-Demo",
+      "FSx-for-WindowsLustreNetAppOpenZFS",
+      "S3-Overview",
+      "S3-demo",
+      "S3-Storage-Classes",
+      "S3-Storage-Classes-Demo",
+      "S3-Versioning",
+      "S3-Versioning-Demo",
+      "S3-ACL-and-Resource-Policies",
+      "S3-ACL-and-Resource-Policies-Demo",
+      "S3-Static-Website-Hosting",
+      "S3-Static-Website-Hosting-Demo",
+      "S3-Pres-Signed-URLs",
+      "S3-Pres-Signed-URLs-Demo",
+      "S3-Access-Points",
+      "S3-Access-Points-Demo",
+      "AWS-Backup",
+      "Elastic-Disaster-Recovery",
+      "Storage-Gateway"
+    ],
+    "AWS-Solutions-Architect-Associate-Certification|Bringing-it-all-together": [
+      "Preparing-for-the-SAA-MockPractice-Exam",
+      "Tools-for-Well-Architected-Framework",
+      "Preparing-for-the-real-Exam",
+      "The-Road-ahead-on-your-AWS-Journey"
+    ],
+    "AWS-Solutions-Architect-Associate-Certification|Designing-for-Security": [
+      "MegaSection-Introduction-The-Design-for-X-Portion",
+      "Agenda-and-Introduction-for-Designing-for-Security",
+      "Design-Principles-of-the-Security",
+      "Understanding-the-seven-foundations-of-Security",
+      "AWS-Shared-Responsibility-Model",
+      "Turning-up-Security-on-Network-Services-Part-1",
+      "Turning-up-Security-on-Network-Services-Part-2",
+      "Turning-up-Security-on-Network-Services-Part-3",
+      "Turning-up-Security-on-Storage-Services-Part-1",
+      "Turning-up-Security-on-Storage-Services-Part-2",
+      "Turning-up-Security-on-Storage-Services-Part-3",
+      "Turning-up-Security-on-Compute-Services-Part-1",
+      "Turning-up-Security-on-Compute-Services-Part-2",
+      "Turning-up-Security-on-Compute-Services-Part-3",
+      "Turning-up-Security-on-Compute-Services-Part-4",
+      "Turning-up-Security-on-Compute-Services-Part-5",
+      "Turning-up-Security-on-Compute-Services-Part-6",
+      "Turning-up-Security-on-Database-Services-Part-1",
+      "Turning-up-Security-on-Database-Services-Part-2",
+      "Turning-up-Security-on-Database-Services-Part-3",
+      "Turning-up-Security-on-Database-Services-Part-4",
+      "Turning-up-Security-on-Database-Services-Part-5",
+      "Turning-up-Security-on-Database-Services-Part-6",
+      "Turning-up-Security-on-Application-Integration-Part-1",
+      "Turning-up-Security-on-Application-Integration-Part-2",
+      "Turning-up-Security-on-Data-Services-Part-1",
+      "Turning-up-Security-on-Data-Services-Part-2",
+      "Turning-up-Security-on-MigrationTransfer-Services",
+      "Turning-up-Security-on-Management-Services-Part-1",
+      "Turning-up-Security-on-Management-Services-Part-2",
+      "Turning-up-Security-on-Security-Services-Part-1",
+      "Turning-up-Security-on-Security-Services-Part-2"
+    ],
+    "AWS-Solutions-Architect-Associate-Certification|Services-Management-and-Governance": [
+      "CloudFormation",
+      "CloudFormation-Demo",
+      "CDK",
+      "Demo-Create-an-S3-bucket-with-Python-and-the-CDK",
+      "CloudWatch",
+      "CloudWatch-Demo",
+      "X-Ray",
+      "Demo-X-ray-your-applications-on-AWS",
+      "AWS-Health-Dashboard",
+      "Prometheus",
+      "Grafana",
+      "Trusted-Advisor",
+      "Launch-Wizard",
+      "Compute-Optimizer",
+      "AWS-Organizations",
+      "Control-Tower",
+      "Demo-SSO-Audit-and-Security-inside-of-a-Control-Tower-account",
+      "Systems-Manager",
+      "Service-Catalog",
+      "License-Manager",
+      "Proton",
+      "Resource-Group-and-Tag-Manager",
+      "Resilience-Hub",
+      "Resource-Explorer",
+      "Resource-Access-Manager"
+    ],
+    "AWS-Solutions-Architect-Associate-Certification|Services-Migration-and-Transfer": [
+      "MigrationTransfer-Agenda-and-Introduction",
+      "Migration-Hub",
+      "Application-Discovery-Service",
+      "Application-Migration-Service",
+      "Database-Migration-Service",
+      "Elastic-Disaster-Recovery",
+      "AWS-Mainframe-Modernization",
+      "Datasync",
+      "Demo-Move-files-from-File-Server-to-EFS-using-Datasync",
+      "AWS-Transfer-Family-for-FTPAS2",
+      "The-Snow-Family-storage-focused"
+    ],
+    "AWS-Solutions-Architect-Associate-Certification|Services-Security": [
+      "IAM",
+      "IAM-Demo",
+      "IAM-Demo-Roles-for-EC2-instances",
+      "IAM-identity-Center-SSO",
+      "IAM-identity-Center-SSO-Demo",
+      "Cognito",
+      "Directory-Service",
+      "Verified-Permissions",
+      "CloudTrail",
+      "Demo-Setting-up-CloudTrail-for-the-first-time",
+      "Config",
+      "Artifact",
+      "GuardDuty",
+      "Inspector",
+      "Macie",
+      "Demo-Showing-Macie-in-Action",
+      "Security-Hub",
+      "KMS",
+      "CloudHSM",
+      "Certificate-Manager",
+      "Private-Certificate-Authority",
+      "Secrets-Manager",
+      "NACLs-and-SecGroups",
+      "Security-Lake",
+      "WAF",
+      "Shield-and-Shield-Advanced",
+      "Network-Firewall",
+      "Firewall-Manager"
+    ],
+    "AWS-Solutions-Architect-Associate-Certification|Applying-your-Design-Skills": [
+      "The-Ultimate-Design-challenge-Intro-and-Agenda"
+    ],
+    "AWS-Solutions-Architect-Associate-Certification|Designing-for-Cost-Optimization": [
+      "Agenda-and-Introduction-to-Cost-Optimization",
+      "Design-Principles-for-Costs",
+      "Foundation-Areas-of-Cost-Optimization-on-AWS"
+    ],
+    "AWS-Solutions-Architect-Associate-Certification|Designing-for-Performance": [
+      "Agenda-and-Introduction-to-Performance",
+      "Design-Principles-for-Performance",
+      "Foundational-Areas-of-Performance-Optimization-on-AWS"
+    ],
+    "AWS-Solutions-Architect-Associate-Certification|Designing-for-Reliability": [
+      "Agenda-and-Introduction-for-Reliability",
+      "Design-Principles-for-Resilience",
+      "Models-of-Disaster-Recovery",
+      "Understanding-the-Foundations-of-Reliability-in-any-Design",
+      "Turning-up-Reliability-on-Network-Services",
+      "Turning-up-Reliability-on-Storage-Services",
+      "Turning-up-Reliability-on-Compute-Services-Part-1",
+      "Turning-up-Reliability-on-Compute-Services-Part-2",
+      "Turning-up-Reliability-on-Compute-Services-Part-3",
+      "Turning-up-Reliability-on-Database-Services",
+      "Turning-up-Reliability-on-Application-Integration",
+      "Turning-up-Reliability-on-Data-Services",
+      "Turning-up-Reliability-on-MigrationTransfer-Services",
+      "Turning-up-Reliability-on-Management-Services",
+      "Turning-up-Reliability-on-Security-Services"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Introduction": [
+      "Course-Introduction",
+      "Certification-Details"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Exploring-Azure-App-Service": [
+      "Introduction",
+      "Azure-App-Service",
+      "Deploying-to-Azure-App-Service",
+      "Authentication-and-Authorization-in-Azure-App-Service",
+      "App-Service-Networking"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Configuring-Web-App-Settings": [
+      "Introduction",
+      "Configuring-Application-Settings",
+      "Configuring-General-Settings",
+      "Configuring-Path-Mappings",
+      "Configuring-Security-Certificates",
+      "Configuring-Diagnostic-Logging"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Scaling-Apps-in-Azure-App-Service": [
+      "Introduction",
+      "Examining-Autoscale-Factors",
+      "Identifying-Autoscale-Factors",
+      "Enabling-Autoscale-in-Azure-App-Service",
+      "Autoscale-Best-Practices"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Exploring-App-Service-Deployment-Slots": [
+      "Introduction",
+      "Staging-Environments",
+      "Examining-Slot-Swapping",
+      "Swapping-Deployment-Slots",
+      "Routing-Traffic-in-Slots"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Exploring-Azure-Functions": [
+      "Introduction",
+      "Azure-Functions",
+      "Azure-Functions-Hosting-Options",
+      "Azure-Functions-Scaling"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Developing-Azure-Functions": [
+      "Introduction",
+      "Exploring-Azure-Functions-Development",
+      "Triggers-and-Bindings",
+      "Connecting-to-Azure-Services"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Exploring-Azure-Blob-Storage": [
+      "Introduction",
+      "Azure-Storage-Services",
+      "Azure-Storage-Availability-and-Performance",
+      "Azure-Storage-Security-Features",
+      "Azure-Blob-Storage"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Managing-Azure-Blob-Storage-Lifecycle": [
+      "Introduction",
+      "Storage-Access-Tiers",
+      "Azure-Blob-Lifecycle-Management-Policies",
+      "Rehydrating-Data-From-Archive-Tier"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Working-With-Azure-Blob-Storage": [
+      "Introduction",
+      "Developing-Static-Websites",
+      "Developing-Using-Azure-Blob-Storage-Client-Library",
+      "Managing-Container-Properties-and-Metadata"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Exploring-Azure-Cosmos-DB": [
+      "Introduction",
+      "Exploring-Azure-Cosmos-DB",
+      "Azure-Cosmos-DB-Resource-Hierarchy",
+      "Provisioning-Azure-Cosmos-DB",
+      "Azure-Cosmos-DB-Request-Units",
+      "Consistency-Levels"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Working-With-Azure-Cosmos-DB": [
+      "Introduction",
+      "Creating-Stored-Procedures",
+      "Creating-Triggers-and-User-Defined-Functions",
+      "Change-Feed-in-Azure-Cosmos-DB"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Managing-Container-Images-in-Azure-Container-Registry": [
+      "Introduction",
+      "Discovering-Azure-Container-Registry",
+      "Exploring-Elements-of-a-Dockerfile",
+      "Building-and-Managing-Containers-With-ACR-Tasks"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Running-Container-Images-in-Azure-Container-Instances": [
+      "Introduction",
+      "Exploring-Azure-Container-Instances",
+      "Restart-Policies-and-Environmental-Variables",
+      "Mounting-Storage-to-ACI"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Implementing-Azure-Container-Apps": [
+      "Introduction",
+      "Exploring-Azure-Container-Apps",
+      "Authentication-and-Authorization-in-Azure-Container-Apps",
+      "Managing-Revisions-and-Secrets-in-Azure-Container-Apps",
+      "Dapr-Integration-With-Azure-Container-Instances"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Exploring-the-Microsoft-Identity-Platform": [
+      "Introduction",
+      "Microsoft-Identity-Platform",
+      "Exploring-Service-Principals",
+      "Permissions-and-Consent",
+      "Conditional-Access-Policies"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Implementing-Authentication-Using-MSAL": [
+      "Introduction",
+      "Microsoft-Authentication-Library-MSAL",
+      "Initializing-Client-Applications"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Implementing-Shared-Access-Signatures": [
+      "Introduction",
+      "Shared-Access-Signatures-SAS",
+      "When-to-Use-Shared-Access-Signatures",
+      "Stored-Access-Policies"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Exploring-Microsoft-Graph": [
+      "Introduction",
+      "Discovering-Microsoft-Graph",
+      "Querying-Microsoft-Graph",
+      "Best-Practices"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Implementing-Azure-Key-Vault": [
+      "Introduction",
+      "Exploring-Azure-Key-Vault",
+      "Azure-Key-Vault-Best-Practices",
+      "Authenticating-to-Azure-Key-Vault"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Implementing-Managed-Identities": [
+      "Introduction",
+      "Exploring-Managed-Identities",
+      "Managed-Identity-Authentication-Flow",
+      "Configuring-Managed-Identities",
+      "Acquiring-Access-Tokens"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Implementing-Azure-App-Configuration": [
+      "Introduction",
+      "Exploring-App-Service-Configuration",
+      "Creating-Paired-Keys-and-Values",
+      "Managing-Application-Features",
+      "Securing-App-Configuration-Data"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Exploring-API-Management": [
+      "Introduction",
+      "Discovering-API-Management-Service",
+      "Exploring-API-Gateways",
+      "API-Management-Policies",
+      "Creating-Advanced-Policies",
+      "Securing-APIs-by-Using-Subscriptions",
+      "Securing-APIs-by-Using-Certificates"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Exploring-Azure-Event-Grid": [
+      "Introduction",
+      "Overview-of-Azure-Event-Grid",
+      "Discovering-Event-Schemas",
+      "Exploring-Event-DeliverynbspDurability",
+      "Controlling-Access-to-Events",
+      "Receiving-Events-by-UsingnbspWebhooks",
+      "Filtering-Events"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Exploring-Azure-Event-Hubs": [
+      "Introduction",
+      "Discovering-Azure-Event-Hubs",
+      "Exploring-Event-Hubs-Capture",
+      "Scaling-Your-Processing-Application",
+      "Controlling-Access-to-Events"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Discovering-Azure-Message-Queues": [
+      "Introduction",
+      "Choosing-a-Message-Queue-Solution",
+      "Discovering-Service-Bus-Queues-Topics-and-Subscriptions",
+      "Exploring-Service-Bus-Message-Payloads-and-Serialization",
+      "Exploring-Azure-Queue-Storage"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Monitoring-App-Performance": [
+      "Introduction",
+      "Exploring-Application-Insights",
+      "Collecting-Application-Logs",
+      "Troubleshooting-App-Performance-by-Using-Application-Map"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Developing-Azure-Cache-for-Redis": [
+      "Introduction",
+      "Exploring-Azure-Cache-for-Redis",
+      "Configuring-Azure-Cache-for-Redis"
+    ],
+    "AZ-204-Developing-Solutions-for-Microsoft-Azure|Developing-for-storage-on-CDNs": [
+      "Introduction",
+      "Exploring-Azure-Content-Delivery-Networks",
+      "Controlling-Caching-Behavior"
+    ],
+    "AZ-305-Microsoft-Azure-Solutions-Architect-Expert|Introduction": [
+      "Course-Introduction",
+      "Certification-Details"
+    ],
+    "AZ-305-Microsoft-Azure-Solutions-Architect-Expert|Design-a-governance-solution": [
+      "Section-Introduction",
+      "Design-for-governance",
+      "Design-for-management-groups",
+      "Design-for-subscription",
+      "Design-for-resource-groups",
+      "Design-Azure-Policy-and-RBAC",
+      "Design-Azure-Blueprints",
+      "Summary"
+    ],
+    "AZ-305-Microsoft-Azure-Solutions-Architect-Expert|Design-a-network-architecture": [
+      "Section-Introduction",
+      "Design-for-virtual-networks",
+      "Design-for-on-premises-connectivity",
+      "Design-for-network-connectivity",
+      "Design-for-application-delivery",
+      "Design-for-network-security-and-application-protection",
+      "Summary"
+    ],
+    "AZ-305-Microsoft-Azure-Solutions-Architect-Expert|Design-a-compute-solution": [
+      "Section-Introduction",
+      "Choose-a-compute-solution",
+      "Design-for-Azure-Virtual-Machines",
+      "Design-for-Azure-Batch-solutions",
+      "Design-for-Azure-App-Service",
+      "Design-for-Azure-Container-Instances",
+      "Design-for-Azure-Kubernetes-Services",
+      "Design-for-Azure-Functions",
+      "Design-for-Azure-Logic-Apps"
+    ],
+    "AZ-305-Microsoft-Azure-Solutions-Architect-Expert|Design-a-nonrelational-data-storage-solution": [
+      "Design-for-data-storage",
+      "Design-for-Azure-Storage-Accounts",
+      "Design-for-data-redundancy",
+      "Design-for-Azure-Blob-Storage",
+      "Design-for-Azure-Files",
+      "Design-for-Azure-Disks",
+      "Design-for-storage-security",
+      "Design-for-Cosmos-DB-and-tables"
+    ],
+    "AZ-305-Microsoft-Azure-Solutions-Architect-Expert|Design-a-relational-data-storage-solution": [
+      "Section-Introduction",
+      "Design-for-Azure-SQL-Database",
+      "Design-for-database-scalability",
+      "Design-for-database-availability",
+      "Design-for-data-security",
+      "Design-for-SQL-Edge"
+    ],
+    "AZ-305-Microsoft-Azure-Solutions-Architect-Expert|Design-a-data-integration-solution": [
+      "Section-Introduction",
+      "Design-for-Azure-Data-Factory",
+      "Design-for-Azure-Data-Lake-Storage",
+      "Design-for-Azure-Databricks",
+      "Design-for-Azure-Synapse-Analytics",
+      "Design-for-Azure-Stream-Analytics",
+      "Design-data-flow-strategy"
+    ],
+    "AZ-305-Microsoft-Azure-Solutions-Architect-Expert|Design-a-migration-solution": [
+      "Section-Introduction",
+      "Design-using-Cloud-Adoption-Framework",
+      "Azure-Migration-Framework",
+      "Assessing-workloads",
+      "Migration-tools",
+      "Database-migration",
+      "Storage-migration"
+    ],
+    "AZ-305-Microsoft-Azure-Solutions-Architect-Expert|Design-a-business-continuity-solution": [
+      "Section-Introduction",
+      "Design-for-backup-and-recovery",
+      "Design-for-Azure-Backup",
+      "Design-for-Azure-Blob-Backup-and-Recovery",
+      "Design-for-Azure-Files-Backup-and-Recovery",
+      "Design-for-Azure-VM-Backup-and-Recovery",
+      "Design-for-Azure-SQL-Backup-and-Recovery",
+      "Design-for-Azure-Site-Recovery"
+    ],
+    "AZ-305-Microsoft-Azure-Solutions-Architect-Expert|Design-an-app-architecture-solution": [
+      "Section-Introduction",
+      "Differentiate-message-and-event",
+      "Design-a-messaging-solution",
+      "Design-an-event-solution",
+      "Design-an-application-optimization-solution",
+      "Design-an-application-lifecycle"
+    ],
+    "AZ-305-Microsoft-Azure-Solutions-Architect-Expert|Design-a-logging-and-monitoring-solution": [
+      "Section-Introduction",
+      "Design-for-Azure-Monitor",
+      "Design-for-Log-Analytics",
+      "Design-for-Azure-workbooks-and-Insights",
+      "Design-for-Azure-Data-Explorer"
+    ],
+    "AZ-305-Microsoft-Azure-Solutions-Architect-Expert|Design-for-authentication-and-authorization": [
+      "Section-Introduction",
+      "Design-for-identity-and-access-management",
+      "Design-for-Azure-AD",
+      "Design-for-Azure-AD-B2B",
+      "Design-for-Azure-AD-B2C",
+      "Design-for-MFA-and-Conditional-Access",
+      "Design-for-Identity-Protection",
+      "Design-for-access-reviews",
+      "Design-for-managed-identities",
+      "Design-for-keyvault",
+      "Summary"
+    ],
+    "AZ-305-Microsoft-Azure-Solutions-Architect-Expert|Conclusion-and-Mock-Exam": [
+      "Conclusion"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions|Introduction": [
+      "Course-Introduction-AZ-400",
+      "What-is-DevOps",
+      "Unifying-People-Process-and-Technology",
+      "What-is-Azure-DevOps",
+      "About-the-Exam-and-its-Role-in-the-Microsoft-Certification-Landscape"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions|Configure-Activity-Traceability-and-Flow-of-Work": [
+      "Flow-of-Work-Processes",
+      "Flow-of-Work-Basic",
+      "Flow-of-Work-SCRUM",
+      "Flow-of-Work-Agile",
+      "Flow-of-Work-CMMI",
+      "Configure-Activity-Traceability",
+      "Demo-Generating-Release-Notes",
+      "Demo-Repository-Integration-with-Azure-Boards",
+      "Demo-Integrate-Azure-Pipelines-and-GitHub-Actions"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions|Configure-Collaboration-Communication": [
+      "Activity-Traceability-Dashboards-Charts-and-Widgets",
+      "Documentation-with-Azure-Wikis",
+      "Demo-Creating-a-Wiki",
+      "Azure-DevOps-Boards",
+      "Using-Dashboards",
+      "Demo-Creating-a-Dashboard",
+      "Demo-Notifications-from-Webhooks"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions|Work-with-Azure-Repos-and-GitHub": [
+      "What-is-source-control",
+      "Types-of-source-control-systems",
+      "Working-with-Git-locally",
+      "Getting-Started-with-Azure-Repos",
+      "Getting-Started-with-GitHub",
+      "Creating-repository-in-Azure-Repos",
+      "Transitioning-from-TFVC-to-Git",
+      "Innovating-with-GitHub-Codespaces"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions|Configuring-and-Managing-Repositories": [
+      "Introduction-to-managing-repositories",
+      "Working-with-large-repositories",
+      "Large-repositories-with-Scalar",
+      "Configure-Git-tags-to-organize-the-source-control-repository",
+      "Organizing-Your-Repository-Using-Git-Tags-in-Azure-Repos",
+      "Organizing-Your-Repository-Using-Git-Tags-in-GitHub-Releases",
+      "Recovering-Data-by-Using-Git-Commands",
+      "Recovering-Data-From-Source-Control-Using-Azure-Repos",
+      "Purge-Data-from-Source-Control"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions|Design-and-Implement-Pipeline-Automation": [
+      "Introduction",
+      "Dependency-and-security-scanning",
+      "Integration-of-automated-tests-into-pipelines",
+      "Local-Tests-Unit-Tests-Integration-Tests-Load-Tests",
+      "Understanding-Code-Coverage",
+      "Orchestration-of-GitHub-Actions-and-Azure-Pipelines",
+      "Summary"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions|Design-and-Implement-Pipelines": [
+      "Introduction-Designing-and-Implementing-Pipelines",
+      "Getting-Started-with-Azure-Pipelines",
+      "Demo-Azure-Pipelines",
+      "Deployment-Automation-with-GitHub-Actions",
+      "Designing-an-Agent-Infrastructure",
+      "Evaluating-Cost",
+      "Tool-Selection",
+      "Licensing",
+      "Connectivity",
+      "Maintainability",
+      "Pipeline-triggers",
+      "Exploring-Classic-Pipelines",
+      "Exploring-YAML-Pipelines",
+      "Understanding-Build-Agents-and-Parallelism",
+      "Exploring-Self-Hosted-Build-Agents",
+      "Building-a-Linux-Self-Hosted-Build-Agent-with-WSL",
+      "Using-Build-Trigger-Rules",
+      "Exploring-Containerized-Agents",
+      "Summary-Designing-and-Implementing-Pipelines"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions|Implementing-an-Orchestration-Automation-Solution": [
+      "Introduction-Implementing-an-Orchestration-Automation-Solution",
+      "Release-Strategies",
+      "Stages-Dependencies-and-Conditions",
+      "Implementing-Release-Gates",
+      "YAML-Templates",
+      "Summary"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions|Design-and-Implement-Deployments": [
+      "Introduction-Designing-and-Implementing-Deployments",
+      "Exploring-Deployment-Strategies",
+      "Design-and-implement-a-resiliency-strategy-for-deployment",
+      "Implement-a-deployment-that-includes-database-tasks",
+      "Design-a-pipeline-to-ensure-reliable-order-of-dependency-deployments",
+      "Plan-for-minimizing-downtime-during-deployments",
+      "Design-a-hotfix-path-plan",
+      "Implementing-Load-Balancer-Traffic-Manager-Releases-and-Web-Apps",
+      "Implement-feature-flags-by-using-Azure-App-Configuration-Feature-Manager",
+      "Application-deployment-using-Containers-Binaries-and-Scripts",
+      "Summary"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions|Design-and-Implement-Infrastructure-as-Code-IaC": [
+      "Introduction",
+      "Exploring-Configuration-management-technology-for-application-infrastructure",
+      "Design-and-implement-desired-state-configuration-for-environments",
+      "Azure-Automation-State-Configuration",
+      "Azure-Resource-Manager-Templates",
+      "Introduction-to-Bicep",
+      "Define-an-IaC-strategy",
+      "Design-and-implement-Azure-Deployment-Environments-for-on-demand-self-deployment",
+      "Summary"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions|Maintain-Pipelines": [
+      "Introduction",
+      "Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests",
+      "Optimize-pipeline-concurrency-for-performance-and-cost",
+      "Migrate-a-pipeline-from-classic-to-YAML-in-Azure-Pipelines",
+      "Analyze-pipeline-load-to-determine-agent-configuration-and-capacity",
+      "Design-and-implement-a-retention-strategy-for-pipeline-artifacts-and-dependencies",
+      "Summary-Maintaining-Pipelines"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions|Design-and-Implement-Authentication-and-Authorization-Methods": [
+      "Introduction",
+      "Choose-between-Service-Principals-and-Managed-Identity",
+      "Implement-and-manage-GitHub-Authentication",
+      "Implement-and-manage-Azure-DevOps-service-connections-and-personal-access-tokens",
+      "Design-and-implement-permissions-and-roles-in-GitHub",
+      "Design-and-implement-permissions-and-security-groups-in-Azure-DevOps",
+      "Configure-projects-and-teams-in-Azure-DevOps",
+      "Summary"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions|Design-and-Implement-a-Strategy-for-Managing-Sensitive-Information-in-Automation": [
+      "Introduction",
+      "Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault",
+      "Implement-and-manage-secrets-in-GitHub-Actions-and-Azure-Pipelines",
+      "Using-Service-Connections-in-Pipeline",
+      "Exploring-Azure-Pipelines-Secrets-with-Azure-Key-Vault",
+      "Exploring-GitHub-Secrets",
+      "Summary"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions|Implement-Security-and-Validate-Code-Bases-for-Compliance": [
+      "Introduction",
+      "Understand-SQL-Injection-Attacks",
+      "Embracing-DevSecOps-Culture",
+      "Architecting-a-Secure-DevOps-Pipeline",
+      "Key-Validation-Points-and-Continuous-Security-Validation",
+      "Comprehending-Threat-Modeling",
+      "Introduction-to-OSS",
+      "Working-with-open-source-software",
+      "Review-and-Confirm-Code-Base-Compliance",
+      "Delving-into-Software-Composition-Analysis-SCA",
+      "Integrating-Mend-and-GitHub-Dependabot",
+      "Integrating-SCA-into-pipelines",
+      "Evaluating-Tools-for-Package-Security-and-License-Compliance",
+      "Decoding-Notifications-from-Scanning-Instruments",
+      "Exploring-SonarCloud-Features",
+      "Navigating-CodeQL-on-GitHub",
+      "Strategizing-the-Adoption-of-OWASP-Secure-Coding-Guidelines",
+      "Investigating-ZAP-for-Penetration-Testing",
+      "Establishing-Security-in-Development-Pipelines",
+      "Exploring-Use-Cases-for-Microsoft-Defender-for-Cloud",
+      "Delving-into-Azure-Policy",
+      "Explore-Azure-Resource-Locks"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions|Configure-Monitoring-for-a-DevOps-Environment": [
+      "Introduction",
+      "Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools",
+      "Configure-collection-of-telemetry-by-using-Azure-various-services",
+      "Configure-monitoring-in-GitHub",
+      "Summary"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions|Analyze-Metrics": [
+      "Introduction",
+      "Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network",
+      "Analyze-metrics-by-using-collected-telemetry-including-usage-and-application-performance",
+      "Inspect-distributed-tracing-by-using-Application-Insights",
+      "Interrogate-logs-using-basic-Kusto-Query-Language-KQL-queries",
+      "Summary-Analyzing-Metrics"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions|Branching-Strategies-for-Source-Code": [
+      "Creating-an-Effective-Change-Log",
+      "Generating-a-Change-Log",
+      "Diving-Into-Types-of-Branch-Workflows",
+      "Collaborate-with-pull-requests",
+      "Azure-Repos-collaborating-with-pull-requests",
+      "GitHub-Mobile-Streamlining-Pull-Request-Approvals-on-the-Go",
+      "Demystifying-Git-Hooks",
+      "Embracing-Inner-Source-with-Forking-Workflow",
+      "Implement-fork-workflow"
+    ],
+    "AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions|Design-and-Implement-a-Package-Management-Strategy": [
+      "Discovering-Package-Management-Tools",
+      "Exploring-Azure-Artifacts",
+      "Exploring-GitHub-Packages",
+      "Implementing-package-feeds",
+      "Versioning-Strategies-Semantic-Versioning-Date-Based-Versioning",
+      "Summary"
+    ],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Introduction": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Explore-Azure-Virtual-Networks": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Configure-Public-IP-Addresses": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Design-Name-Resolution-for-Azure-Virtual-Network": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Enable-Cross-VNet-Connectivity": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Implement-Virtual-Network-Traffic-Routing": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Configure-Internet-Access-with-Azure-Virtual-NAT": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Design-and-Implement-Azure-VPN-Gateway": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Connect-Networks-with-Site-to-Site-VPN-Connections": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Connect-Devices-to-Networks-with-Point-to-Site-VPN-Connections": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Connect-Remote-Resources-by-using-Azure-Virtual-WANs": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Create-a-Network-Virtual-Appliance-NVA-in-a-Virtual-Hub": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Explore-Azure-ExpressRoute": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Design-an-ExpressRoute-deployment": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Configure-Peering-for-an-ExpressRoute-Deployment": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|ExpressRoute-Advanced-Features": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Troubleshooting-ExpressRoute-Connections": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Explore-Load-Balancing-Options-in-the-Azure": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Design-and-Implement-Azure-Load-Balancer": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Explore-Azure-Traffic-Manager": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Design-Azure-Application-Gateway": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Design-Azure-Front-Door": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Get-Network-Security-Recommendations-with-Microsoft-Defender-for-Cloud": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Deploy-Azure-DDoS-Protection": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Deploy-and-configure-Network-Security-Groups": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Design-and-implement-Azure-Bastion": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Design-and-Implement-Azure-Firewall": [
+      "Azure-Firewall"
+    ],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Working-with-Azure-Firewall-Manager": [
+      "Azure-Firewall-Manager"
+    ],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Implement-a-Web-Application-Firewall": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Explain-Virtual-Network-Service-Endpoints": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Private-Link-Services-and-Private-Endpoints": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Monitor-your-networks-using-Azure-Monitor": [],
+    "AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions|Monitor-your-networks-using-Azure-Network-Watcher": [],
+    "AZ900-Microsoft-Azure-Fundamentals|Introduction": [
+      "Course-Introduction",
+      "Certification-Details"
+    ],
+    "AZ900-Microsoft-Azure-Fundamentals|Cloud-Computing": [
+      "Introduction",
+      "What-is-Cloud-Computing",
+      "Cloud-Models",
+      "Capital-vs-Operational-Costing",
+      "Consumption-Based-Model",
+      "Cloud-Benefits-Part-1",
+      "Cloud-Benefits-Part-2"
+    ],
+    "AZ900-Microsoft-Azure-Fundamentals|Cloud-Service-Types": [
+      "Introduction",
+      "Infrastructure-as-a-Service",
+      "Platform-as-a-Service",
+      "Software-as-a-Service",
+      "Shared-Responsibility-Model"
+    ],
+    "AZ900-Microsoft-Azure-Fundamentals|Azure-Architectural-Components": [
+      "Introduction",
+      "Regions-and-Availability-Zones",
+      "Subscriptions-and-Resource-Groups"
+    ],
+    "AZ900-Microsoft-Azure-Fundamentals|Compute-and-Networking": [
+      "Introduction",
+      "Compute-Types",
+      "Virtual-Machines-and-Virtual-Machine-Scale-Sets",
+      "Azure-Virtual-Desktops",
+      "Azure-App-Services",
+      "Azure-Container-Services",
+      "Azure-Functions",
+      "Compare-Compute-Services",
+      "Virtual-Networking",
+      "VPN-Gateway",
+      "ExpressRoute",
+      "Azure-DNS"
+    ],
+    "AZ900-Microsoft-Azure-Fundamentals|Storage": [
+      "Introduction",
+      "Storage-Accounts",
+      "Redundancy-Options",
+      "Storage-Services",
+      "Access-Tiers",
+      "Azure-Migrate",
+      "Azure-Data-Box",
+      "File-Management-Options"
+    ],
+    "AZ900-Microsoft-Azure-Fundamentals|Identity-Access-and-Security": [
+      "Introduction",
+      "Microsoft-Entra-ID",
+      "Microsoft-Entra-Domain-Services",
+      "Authentication-and-Authorization",
+      "Multi-Factor-Authentication",
+      "Conditional-Access",
+      "B2B-and-B2C",
+      "Role-Based-Access-Control",
+      "Zero-Trust",
+      "Defense-in-Depth",
+      "Microsoft-Defender-for-Cloud"
+    ],
+    "AZ900-Microsoft-Azure-Fundamentals|Cost-Management": [
+      "Introduction",
+      "Factors-Affecting-Cost",
+      "Azure-Marketplace",
+      "Pricing-Calculator",
+      "TCO-Calculator",
+      "Azure-Cost-Management",
+      "Resource-Tags"
+    ],
+    "AZ900-Microsoft-Azure-Fundamentals|Governance-and-Compliance": [
+      "Introduction",
+      "Azure-Policies",
+      "Resource-Locks",
+      "Service-Trust-Portal",
+      "Microsoft-Purview"
+    ],
+    "AZ900-Microsoft-Azure-Fundamentals|Resource-Deployment-Tools": [
+      "Introduction",
+      "Tools-for-Interacting-with-Azure",
+      "Azure-Arc",
+      "Azure-Resource-Manager",
+      "Infrastructure-as-Code"
+    ],
+    "AZ900-Microsoft-Azure-Fundamentals|Monitoring-Tools": [
+      "Introduction",
+      "Azure-Advisor",
+      "Azure-Service-Health",
+      "Azure-Monitor"
+    ],
+    "Advanced-Bash-Scripting|Introduction": [
+      "Course-Introduction",
+      "Why-learn-advanced-bash-scripting",
+      "Interactive-vs-non-interactive-shell",
+      "Shell-scripting-vs-Bash-scripting",
+      "Terminology"
+    ],
+    "Advanced-Bash-Scripting|Conventions": [
+      "Overview",
+      "Variables",
+      "Functions",
+      "Expanding"
+    ],
+    "Advanced-Bash-Scripting|Refresher": [
+      "Overview",
+      "Scriptflow",
+      "Functions",
+      "Command-Line-Arguments",
+      "pid",
+      "Built-in-Commands",
+      "Keywords-builtins",
+      "Guard-clause",
+      "Shebang"
+    ],
+    "Advanced-Bash-Scripting|Streams": [
+      "Overview",
+      "File-descriptors",
+      "devnull",
+      "Input",
+      "Heredocs",
+      "Pipes",
+      "Pipefail",
+      "Exit-code",
+      "Xargs",
+      "printf"
+    ],
+    "Advanced-Bash-Scripting|Expansions-Part-One": [
+      "Overview",
+      "Variables",
+      "Parameter-Part-One",
+      "Parameter-Part-Two"
+    ],
+    "Advanced-Bash-Scripting|Globs": [
+      "Overview",
+      "Globs-Question-Mark",
+      "Star",
+      "Escape",
+      "Mixed",
+      "Square"
+    ],
+    "Advanced-Bash-Scripting|Expansions-Part-Two": [
+      "Brace",
+      "Command-Substitution",
+      "Subshells"
+    ],
+    "Advanced-Bash-Scripting|Special-Shell-Variables": [
+      "Overview",
+      "Special-shell-Question-mark",
+      "Hashtag",
+      "ifs",
+      "Args",
+      "pid",
+      "Zero",
+      "Underscore",
+      "Dash"
+    ],
+    "Advanced-Bash-Scripting|Arrays": [
+      "Declare",
+      "Arrays",
+      "Insert",
+      "Remove",
+      "Sort",
+      "Associative",
+      "Arrays-demo"
+    ],
+    "Advanced-Bash-Scripting|Good-Practices-applied": [
+      "Strict-Mode",
+      "no-op-Commands",
+      "Comments",
+      "Logging"
+    ],
+    "Advanced-Bash-Scripting|awk": [
+      "Introduction-to-awk",
+      "awk-print",
+      "Built-in-Variables",
+      "Option-F",
+      "Option-v",
+      "Option-Files",
+      "Bash-Hybrid"
+    ],
+    "Advanced-Bash-Scripting|sed": [
+      "Introduction",
+      "sed-print",
+      "Delete",
+      "Find",
+      "Substitute"
+    ],
+    "Advanced-Golang|Introduction": [
+      "Course-Introduction"
+    ],
+    "Advanced-Golang|Modules-Packages-and-Imports": [
+      "Repositories-Modules-and-Packages",
+      "Creating-and-accessing-a-package",
+      "Imports-and-exports",
+      "Golang-commands",
+      "Compiling-and-installing-the-application",
+      "Developing-and-Publishing-modules-workflow",
+      "Module-version-numbering",
+      "Publishing-a-module",
+      "Package-comments-and-godoc",
+      "Package-name-collision",
+      "Naming-packages"
+    ],
+    "Advanced-Golang|Core-packages": [
+      "Core-Packages-Intro",
+      "Strings",
+      "InputOutput",
+      "File-Handling",
+      "Errors",
+      "Logging",
+      "Sort",
+      "Hashes-and-cryptography",
+      "Testing"
+    ],
+    "Advanced-Golang|API-Development-Project": [
+      "Web-Server-and-API",
+      "Creating-an-API-server",
+      "HTTP-verbs",
+      "REST-Architecture",
+      "Project-Explanation",
+      "Mux-Router",
+      "MySQL-Package",
+      "Demo-Project-Setup",
+      "Demo-1-Get-method",
+      "Demo-2-Get-method",
+      "Demo-Post-method",
+      "Demo-Put-method",
+      "Demo-Delete-method",
+      "Testing-API",
+      "Test-Get-Product",
+      "Test-Post-Product",
+      "Test-Delete-Product",
+      "Test-Update-Product"
+    ],
+    "Advanced-Golang|CICD-pipeline": [
+      "CICD-pipeline-for-Go-app-with-Github-actions-and-docker"
+    ],
+    "Advanced-Golang|Concurrency": [
+      "Sequential-vs-Concurrent-Processing",
+      "Go-routines",
+      "Sequential-program",
+      "Go-routines-program",
+      "Main-Go-routine",
+      "Anonymous-Go-routine",
+      "Go-runtime-scheduler",
+      "WaitGroups",
+      "WaitGroup-Examples",
+      "Channels-Introduction",
+      "Channels-Reading-and-Writing",
+      "Buffered-Channels",
+      "Channels-Closing-a-channel",
+      "Panic-Situations",
+      "Channels-for-range",
+      "Select-Statement",
+      "Concurrency-practices-Cleaning-up-Go-routines",
+      "Concurrency-practices-Spawning-Go-routine-closures-in-a-loop",
+      "Concurrency-Practices-Buffered-and-Unbuffered-Channels",
+      "Concurrency-practices-Time-out-code"
+    ],
+    "Advanced-Jenkins|Introduction": [
+      "Course-Introduction"
+    ],
+    "Advanced-Jenkins|Pipeline-Structure-and-Scripted-vs-Declarative": [
+      "Declarative-vs-Scripted-Pipeline",
+      "Demo-Declarative-vs-Scripted-Pipeline",
+      "Scripted-Pipeline-Initialize",
+      "Scripted-Pipeline-Static-Agent",
+      "Scripted-Pipeline-K8S-Agent"
+    ],
+    "Advanced-Jenkins|Pipeline-Enhancement-and-Caching": [
+      "Sharing-a-File-between-Containers",
+      "Refactoring-Solar-System-Pipeline",
+      "Refactoring-Unit-Test-Stage",
+      "Sequential-Stages",
+      "Stash-and-Unstash",
+      "Pipeline-Caching",
+      "Invalidate-Cache"
+    ],
+    "Advanced-Jenkins|Jenkins-Administration-and-Monitoring": [
+      "Jenkins-Supervision",
+      "Monitoring-with-Prometheus-Grafana",
+      "Log-Recorder",
+      "Install-and-Configure-Audit-Trail",
+      "Forward-Audit-Logs-to-External-Server",
+      "Migrating-Jenkins-to-Another-Node"
+    ],
+    "Advanced-Jenkins|Agents-and-Nodes-in-Jenkins": [
+      "Types-of-Agents",
+      "Create-and-Configure-Node",
+      "Utilize-Agents-in-Jobs",
+      "Utilize-Docker-Image-Agent",
+      "Utilize-Dockerfile-Agent",
+      "Utilize-newContainerPerStage",
+      "Configure-cloud-instances-Kubernetes",
+      "Utilize-Kubernetes-Pod-as-Agent"
+    ],
+    "Advanced-Jenkins|Shared-Libraries-in-Jenkins": [
+      "Demo-Refactor-existing-Jenkinsfile",
+      "Introduction-to-Shared-Libraries",
+      "Create-a-Shared-Library-for-Slack-Notification",
+      "Configure-Shared-Library-in-Jenkins",
+      "Loading-the-Shared-Library-in-Pipeline",
+      "Create-Shared-Library-for-Trivy-Scan",
+      "Load-TrivyScan-Library-in-Jenkins-Pipeline",
+      "WhatWhyCreate-LibraryResource"
+    ],
+    "Advanced-Jenkins|Backup-and-Configuration-Management": [
+      "Github-Actions-Basics",
+      "Migrating-Jenkins-Pipeline-to-GitHub-Action",
+      "Backing-upRestoring-Jenkins",
+      "Backing-upRestoring-Jenkins-Demo",
+      "Jenkins-Configuration-as-Code-JCasC",
+      "Configure-and-Explore-JCasC",
+      "Use-JCasC-create-jobs",
+      "Pipeline-Durability"
+    ],
+    "Amazon-Elastic-Compute-Cloud-EC2|Course-Overview": [
+      "Course-Overview"
+    ],
+    "Amazon-Elastic-Compute-Cloud-EC2|Introduction": [
+      "Background-what-and-why-of-EC2",
+      "Introduction-to-VPC-subnet-route-table-internet-gateway-and-nat-gateway",
+      "Introduction-to-Security-Group",
+      "Introduction-to-NACL",
+      "Section-Summary"
+    ],
+    "Amazon-Elastic-Compute-Cloud-EC2|Basics-of-EC2": [
+      "AMIs-and-need-of-it",
+      "Instance-Types",
+      "EC2-Storage",
+      "Demo-Create-EC2-instance-using-UI-Part-1",
+      "Demo-Create-EC2-instance-using-UI-Part-2",
+      "Create-EC2-instance-using-CLI",
+      "EC2-Instance-Lifecycle",
+      "Demo-Create-AMI-from-AWS-Console",
+      "EC2-User-data",
+      "Demo-Access-EC2-Instance-web-console-SSH-Key",
+      "EC2-static-and-dynamic-IP-address"
+    ],
+    "Amazon-Elastic-Compute-Cloud-EC2|EC2-Advanced": [
+      "EC2-Instance-and-IAM-role",
+      "Launch-template",
+      "EC2-Instance-Autoscaling-Group",
+      "EC2-and-Load-Balancer-amp-Target-Groups",
+      "EC2-Cloudwatch-and-Monitoring",
+      "EC2-and-pricing-spot-on-demand-savings-plan-reserved-instance-dedicated-host-Capacity-Reservation",
+      "EC2-Placement-Groups"
+    ],
+    "Amazon-Elastic-Compute-Cloud-EC2|EC2-Real-Life-Problems-and-Solutions": [
+      "EC2-Golden-Image-Pipeline",
+      "Demo-EC2-image-builder",
+      "Immutable-vs-non-immutable",
+      "Mandatory-best-practice",
+      "Mandatory-best-practice-Part-2",
+      "Disk-partition-management-snapshots"
+    ],
+    "Amazon-Elastic-Container-Service-AWS-ECS|Introduction": [
+      "Course-Introduction"
+    ],
+    "Amazon-Elastic-Container-Service-AWS-ECS|Understanding-ECS": [
+      "What-is-ECS",
+      "ECS-vs-Others",
+      "ECS-Infrastructure-and-launch",
+      "EC2-vs-Fargate",
+      "ECS-task",
+      "ECS-Services",
+      "Load-Balancers"
+    ],
+    "Amazon-Elastic-Container-Service-AWS-ECS|Working-with-AWS-ECS": [
+      "Getting-started-with-ECS",
+      "Understanding-project-configuration",
+      "Demo-Deleting-cluster"
+    ],
+    "Amazon-Elastic-Container-Service-AWS-ECS|Deploying-a-new-application-from-scratch": [
+      "Demo-Creating-new-cluster",
+      "Demo-Creating-Task-Definition",
+      "Demo-Deploying-task-revisions",
+      "Demo-Deleting-application",
+      "Understanding-multi-container-application",
+      "Demo-Creating-security-group",
+      "Demo-Creating-multi-container-application"
+    ],
+    "Amazon-Elastic-Container-Service-AWS-ECS|Conclusion": [
+      "Conclusion"
+    ],
+    "Amazon-Simple-Storage-Service-Amazon-S3|Introduction": [
+      "Course-Introduction"
+    ],
+    "Amazon-Simple-Storage-Service-Amazon-S3|AWS-S3-Basic-Features": [
+      "Versioning",
+      "Demo-Versioning",
+      "Lifecycle-Policies",
+      "Demo-Lifecycle-Policies",
+      "Static-Website",
+      "Demo-Static-Website"
+    ],
+    "Amazon-Simple-Storage-Service-Amazon-S3|AWS-S3-Advanced-Features": [
+      "S3-Replication",
+      "Demo-S3-Replication",
+      "S3-Encryption",
+      "Demo-S3-Encryption",
+      "Presigned-URLs",
+      "Demo-Presigned-URLs"
+    ],
+    "Amazon-Simple-Storage-Service-Amazon-S3|AWS-S3-Management": [
+      "S3-Object-Lock",
+      "Demo-S3-Object-Lock",
+      "S3-Access-Logs",
+      "Inventory",
+      "Access-Points",
+      "Demo-Access-Points"
+    ],
+    "Amazon-Simple-Storage-Service-Amazon-S3|Summary": [
+      "Conclusion"
+    ],
+    "Amazon-Simple-Storage-Service-Amazon-S3|AWS-S3-Core-Concepts": [
+      "What-is-AWS-S3",
+      "S3-Basics-Demo",
+      "Storage-Classes",
+      "Storage-Classes-Demo",
+      "Create-Bucket-using-AWS-CLI",
+      "Demo-Create-Bucket-using-AWS-CLI",
+      "S3-ACLs-Resource-Policies",
+      "Demo-S3-ACLs-Resource-Policies"
+    ],
+    "Ansible-Advanced-Course|Introduction": [
+      "Course-Introduction",
+      "Course-Pre-Requisites"
+    ],
+    "Ansible-Advanced-Course|Core-Components": [
+      "Core-Components-Introduction",
+      "Playbook-run-options",
+      "Lab-Introduction-Demo",
+      "Facts",
+      "Configuration-files"
+    ],
+    "Ansible-Advanced-Course|Install-and-Configure": [
+      "Install-required-packages-create-static-host-inventory-file-create-config-file",
+      "Create-and-distribute-SSH-keys-to-managed-nodes",
+      "Validate-a-working-configuration-using-ad-hoc-Ansible-commands",
+      "Create-simple-shell-scripts-that-run-ad-hoc-Ansible-commands",
+      "Privilege-Escalation",
+      "Frequently-Asked-Questions"
+    ],
+    "Ansible-Advanced-Course|Ansible-Modules": [
+      "Additional-Modules",
+      "Project-Introduction",
+      "Project-Demo"
+    ],
+    "Ansible-Advanced-Course|Variables-and-Jinja2": [
+      "Variable-Precedence",
+      "Variable-Scope",
+      "Use-variables-to-retrieve-the-results-of-running-commands",
+      "Magic-Variables",
+      "Jinja2-Basics",
+      "Jinja2-in-Ansible",
+      "Create-and-use-templates-to-create-customized-configuration-files"
+    ],
+    "Ansible-Advanced-Course|Include-and-Roles": [
+      "Ansible-File-Separation",
+      "Ansible-Roles"
+    ],
+    "Ansible-Advanced-Course|Other-Topics": [
+      "Ansible-Vault",
+      "Dynamic-Inventory"
+    ],
+    "Ansible-Advanced-Course|Playbook-Flow": [
+      "Use-conditionals-to-control-play-execution",
+      "Blocks",
+      "Configure-error-handling",
+      "Manage-parallelism"
+    ],
+    "Certified-Kubernetes-Administrator-CKA|Introduction": [
+      "Course-Introduction",
+      "Certification"
+    ],
+    "Certified-Kubernetes-Administrator-CKA|Core-Concepts": [
+      "Core-Concepts-Section-Introduction",
+      "Cluster-Architecture",
+      "Docker-vs-ContainerD",
+      "A-Note-on-Docker-Deprecation",
+      "ETCD-for-Beginners",
+      "ETCD-in-Kubernetes",
+      "Kube-API-Server",
+      "Kube-Controller-Manager",
+      "Kube-Scheduler",
+      "Kubelet",
+      "Kube-Proxy",
+      "Pods",
+      "Pods-With-YAML",
+      "Demo-Pods-With-YAML",
+      "Practice-Test-Introduction",
+      "ReplicaSets",
+      "Deployments",
+      "Services",
+      "Services-Cluster-IP",
+      "Services-Loadbalancer",
+      "Namespaces",
+      "Solution-Namespaces-optional",
+      "Imperative-vs-Declarative",
+      "Kubectl-Apply-Command",
+      "A-Quick-Reminder"
+    ],
+    "Certified-Kubernetes-Administrator-CKA|Scheduling": [
+      "Scheduling-Section-Introduction",
+      "Manual-Scheduling",
+      "Labels-and-Selectors",
+      "Taints-and-Tolerations",
+      "Node-Selectors",
+      "Node-Affinity",
+      "Taints-and-Tolerations-vs-Node-Affinity",
+      "DaemonSets",
+      "Static-Pods",
+      "Priority-Classes",
+      "Multiple-Schedulers",
+      "Configuring-Scheduler-Profiles",
+      "2025-Updates-Admission-Controllers",
+      "2025-Updates-Validating-and-Mutating-Admission-Controllers"
+    ],
+    "Certified-Kubernetes-Administrator-CKA|Logging-Monitoring": [
+      "Logging-and-Monitoring-Section-Introduction",
+      "Managing-Application-Logs"
+    ],
+    "Certified-Kubernetes-Administrator-CKA|Application-Lifecycle-Management": [
+      "Application-Lifecycle-Management-Section-Introduction",
+      "Rolling-Updates-and-Rollbacks",
+      "Commands-and-Arguments-in-Docker",
+      "Commands-and-Arguments-in-Kubernetes",
+      "Secrets",
+      "Demo-Encrypting-Secret-Data-at-Rest",
+      "Multi-Container-Pods",
+      "Introduction-to-Autoscaling-2025-Updates",
+      "Horizontal-Pod-Autoscaler-HPA-2025-Updates",
+      "In-place-Resize-of-Pods-2025-Updates",
+      "Vertical-Pod-Autoscaling-VPA-2025-Updates"
+    ],
+    "Certified-Kubernetes-Administrator-CKA|Cluster-Maintenance": [
+      "Cluster-Maintenance-Section-Introduction",
+      "OS-Upgrades",
+      "Cluster-Upgrade-Introduction",
+      "Demo-Cluster-Upgrade",
+      "Backup-and-Restore-Methods"
+    ],
+    "Certified-Kubernetes-Administrator-CKA|Security": [
+      "Security-Section-Introduction",
+      "Kubernetes-Security-Primitives",
+      "Authentication",
+      "TLS-Introduction",
+      "TLS-Basics",
+      "TLS-in-Kubernetes",
+      "TLS-in-Kubernetes-Certificate-Creation",
+      "View-Certificate-Details",
+      "Certificates-API",
+      "KubeConfig",
+      "API-Groups",
+      "Authorization",
+      "Role-Based-Access-Controls",
+      "Cluster-Roles",
+      "Service-Accounts",
+      "Image-Security",
+      "Security-Contexts",
+      "Network-Policies",
+      "Developing-Network-Policies",
+      "2025-Updates-Custom-Resource-Definition-CRD",
+      "2025-Updates-Custom-Controllers",
+      "2025-Updates-Operator-Framework"
+    ],
+    "Certified-Kubernetes-Administrator-CKA|Storage": [
+      "Storage-Section-Introduction",
+      "Storage-in-Docker",
+      "Volume-Driver-Plugins-in-Docker",
+      "Container-Storage-Interface",
+      "Volumes",
+      "Persistent-Volumes",
+      "Persistent-Volume-Claims",
+      "Storage-Class"
+    ],
+    "Certified-Kubernetes-Administrator-CKA|Networking": [
+      "Networking-Introduction",
+      "Prerequisite-Switching-Routing-Gateways-CNI-in-kubernetes",
+      "Prerequisite-DNS",
+      "Prerequisite-Network-Namespaces",
+      "Prerequisite-Docker-Networking",
+      "Prerequisite-CNI",
+      "Cluster-Networking",
+      "Pod-Networking",
+      "CNI-in-kubernetes",
+      "Service-Networking",
+      "DNS-in-kubernetes",
+      "CoreDNS-in-Kubernetes",
+      "Ingress",
+      "Introduction-to-Gateway-API-2025-Updates"
+    ],
+    "Certified-Kubernetes-Administrator-CKA|Troubleshooting": [
+      "Troubleshooting-Section-Introduction",
+      "Application-Failure",
+      "Control-Plane-Failure",
+      "Worker-Node-Failure"
+    ],
+    "Certified-Kubernetes-Administrator-CKA|Design-and-Install-a-Kubernetes-Cluster": [
+      "Choosing-Kubernetes-Infrastructure",
+      "ETCD-in-HA"
+    ],
+    "Certified-Kubernetes-Administrator-CKA|Helm-Basics-2025-Updates": [
+      "Installation-and-Configuration",
+      "A-quick-note-about-Helm2-vs-Helm3",
+      "Helm-Components",
+      "Helm-charts",
+      "Working-with-Helm-basics",
+      "Customizing-chart-parameters",
+      "Lifecycle-management-with-Helm"
+    ],
+    "Certified-Kubernetes-Administrator-CKA|Kustomize-Basics-2025-Updates": [
+      "Kustomize-vs-Helm",
+      "InstallationSetup",
+      "Kustomize-Output",
+      "Managing-Directories",
+      "Managing-Directories-Demo",
+      "Common-Transformers",
+      "Image-Transformers",
+      "Transformers-Demo",
+      "Patches-Intro",
+      "Different-Types-of-Patches",
+      "Patches-Dictionary",
+      "Patches-List",
+      "Overlays",
+      "Components"
+    ],
+    "Certified-Kubernetes-Administrator-CKA|Mock-Exams": [
+      "Mock-Exam-1-Step-by-Step-Solutions",
+      "Mock-Exam-2-Step-by-Step-Solutions",
+      "Mock-Exam-3-Step-by-Step-Solutions",
+      "Whats-Next"
+    ],
+    "Certified-Kubernetes-Administrator-CKA|Install-Kubernetes-the-kubeadm-way": [
+      "Demo-Deployment-With-Kubeadm"
+    ],
+    "Helm-for-Beginners|Introduction": [
+      "Course-Introduction"
+    ],
+    "Helm-for-Beginners|Introduction-to-Helm": [
+      "What-is-Helm",
+      "Installation-and-configuration",
+      "A-quick-note-about-Helm2-vs-Helm3",
+      "Helm-Components",
+      "Helm-charts",
+      "Working-with-Helm-basics",
+      "Customizing-chart-parameters",
+      "Lifecycle-management-with-Helm"
+    ],
+    "Helm-for-Beginners|Helm-Charts-Anatomy": [
+      "Understanding-Helm-charts",
+      "Writing-a-Helm-chart",
+      "Making-sure-Chart-is-working-as-intended",
+      "Functions",
+      "Pipelines",
+      "Conditionals",
+      "With-Blocks",
+      "Ranges",
+      "Named-Templates",
+      "Chart-Hooks",
+      "Packaging-and-Signing-Charts",
+      "Uploading-Charts"
+    ],
+    "Helm-for-Beginners|Conclusion": [
+      "Conclusion"
+    ],
+    "Prep-Course-Prometheus-Certified-Associate-PCA-Certification|Monitoring-Kubernetes": [
+      "Deploy-Demo-Application",
+      "Alertmanager-Rules",
+      "Connecting-To-Prometheus",
+      "Introduction",
+      "Additional-Scrape-Configs",
+      "Prometheus-Configuration",
+      "Adding-Rules",
+      "Installing-Helm-Chart",
+      "Prometheus-Chart-Overview",
+      "Service-Monitors"
+    ],
+    "Prep-Course-Prometheus-Certified-Associate-PCA-Certification|Conclusion": [
+      "Registering-for-Exam",
+      "Conclusion"
+    ],
+    "Prep-Course-Prometheus-Certified-Associate-PCA-Certification|Dashboarding-Visualization": [
+      "Introduction",
+      "Expression-Browser",
+      "Console-Templates"
+    ],
+    "Prep-Course-Prometheus-Certified-Associate-PCA-Certification|Scaling-Long-Term-Storage": [
+      "Thanos",
+      "Scaling-Prometheus",
+      "Horizontal-Sharding",
+      "Long-Term-Storage",
+      "Federation"
+    ],
+    "Prep-Course-Prometheus-Certified-Associate-PCA-Certification|Application-Instrumentation": [
+      "Gauge",
+      "Best-Practice",
+      "Introduction",
+      "Labels",
+      "Instrumentation-basics",
+      "HistogramSummary"
+    ],
+    "Prep-Course-Prometheus-Certified-Associate-PCA-Certification|Introduction": [
+      "Course-Introduction"
+    ],
+    "Prep-Course-Prometheus-Certified-Associate-PCA-Certification|Service-Discovery": [
+      "Re-Labeling",
+      "AWS",
+      "Re-Labeling-Demo",
+      "Introduction",
+      "File"
+    ],
+    "Prep-Course-Prometheus-Certified-Associate-PCA-Certification|PromQL": [
+      "HTTP-API",
+      "Vector-Matching",
+      "Selectors-Matchers",
+      "Functions",
+      "Subquery",
+      "Aggregation",
+      "HistogramSummary",
+      "Introduction",
+      "Operators",
+      "PromQL-Demo",
+      "Modifiers",
+      "Recording-Rules"
+    ],
+    "Prep-Course-Prometheus-Certified-Associate-PCA-Certification|Observability-Fundamentals": [
+      "SLOSLASLI",
+      "Intro-to-Observability"
+    ],
+    "Prep-Course-Prometheus-Certified-Associate-PCA-Certification|Prometheus-Fundamentals": [
+      "Node-Exporter-systemd",
+      "Prometheus-Installation",
+      "Prometheus-Use-Case",
+      "Intro-to-PromTools",
+      "Prometheus-in-Docker-Container",
+      "Prometheus-Installation-Demo",
+      "Node-Exporter",
+      "Prometheus-Architecture",
+      "Prometheus-Configuration",
+      "AuthenticationEncryption",
+      "Metrics",
+      "Monitoring-Containers",
+      "Exploring-Expression-Browser",
+      "Prometheus-Basics",
+      "Prometheus-Installation-systemd"
+    ],
+    "Prep-Course-Prometheus-Certified-Associate-PCA-Certification|Push-Gateway": [
+      "Introduction",
+      "Pushing-Metrics",
+      "Installation",
+      "Client-Library"
+    ],
+    "Prep-Course-Prometheus-Certified-Associate-PCA-Certification|Alerting": [
+      "Alertmanager-Installation",
+      "Alertmanager-Architecture",
+      "Introduction",
+      "Configuration",
+      "Alertmanager-Installation-Systemd",
+      "Alertmanager-Demo",
+      "Silences",
+      "Labels-Annotations",
+      "Receivers-Notifiers"
+    ]
+  }
+}

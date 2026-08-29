@@ -8,7 +8,7 @@ In this lesson, we explore how to enable networking for AWS Lambda functions by 
 
 By default, a deployed Lambda function has access to the internet. However, it cannot directly connect to resources within your VPC. To allow a Lambda function to communicate with these internal resources, you must configure it to run inside your VPC. When you do so, AWS Lambda provisions an Elastic Network Interface (ENI) within your specified private subnet. This ENI acts as a bridge between the Lambda function and the private resources in your VPC.
 
-![The image is a diagram illustrating how AWS Lambda can be configured to access a VPC, showing the creation of an Elastic Network Interface (ENI) in a private subnet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859546/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Networking/aws-lambda-vpc-eni-diagram.jpg)
+![The image is a diagram illustrating how AWS Lambda can be configured to access a VPC, showing the creation of an Elastic Network Interface (ENI) in a private subnet.](https://kodekloud.com/kk-media/image/upload/v1752859546/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Networking/aws-lambda-vpc-eni-diagram.jpg)
 
 > **lightbulb** Before enabling VPC access, ensure that AWS Lambda is granted the necessary permissions to create and manage ENIs within your VPC.
 
@@ -22,7 +22,7 @@ To restore internet connectivity for your Lambda function while it operates in t
 2. **Set Up a VPC Endpoint:**\
    If your Lambda function only requires access to specific AWS services that are typically available via the internet, you can create a VPC endpoint. This establishes a private connection to the desired AWS service, eliminating the need for a NAT Gateway.
 
-![The image illustrates a diagram of an AWS Lambda function within a VPC, showing its interaction with a database service through a private subnet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859547/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Networking/aws-lambda-vpc-database-diagram.jpg)
+![The image illustrates a diagram of an AWS Lambda function within a VPC, showing its interaction with a database service through a private subnet.](https://kodekloud.com/kk-media/image/upload/v1752859547/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Networking/aws-lambda-vpc-database-diagram.jpg)
 
 > **triangle-alert** When running a Lambda function within a VPC, remember that it loses default internet access. Plan your network configurations accordingly and ensure a NAT Gateway or VPC endpoint is in place if external connectivity is required.
 

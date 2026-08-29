@@ -42,9 +42,7 @@ rules:
 
 This example uses the `object` variable, which represents the full resource being submitted to the API server. We access `object.spec.replicas` to inspect the Deployment replica count.
 
-<Callout icon="lightbulb">
-  CEL expressions must evaluate to a boolean. If an expression returns `false` (or a non-boolean that cannot be interpreted as true), the request is rejected and the provided `message` is shown.
-</Callout>
+> **lightbulb** CEL expressions must evaluate to a boolean. If an expression returns `false` (or a non-boolean that cannot be interpreted as true), the request is rejected and the provided `message` is shown.
 
 Namespace-aware validation
 
@@ -80,9 +78,7 @@ The most commonly used variables in Kyverno CEL expressions provide runtime cont
 
 * object\
   The incoming resource manifest being created or updated. Example: `object.spec.replicas`.
-  <Callout icon="lightbulb">
-    Note: For delete operations, `object` is `null` because there is no incoming resource body.
-  </Callout>
+  > **lightbulb** Note: For delete operations, `object` is `null` because there is no incoming resource body.
 
 * oldObject\
   The current cluster version of the resource (available for updates). Use this to compare previous and new state.
@@ -128,6 +124,4 @@ Further reading and references
 
 That's it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/f9c71d88-0851-4308-b17a-1fd3917f571b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/f9c71d88-0851-4308-b17a-1fd3917f571b)

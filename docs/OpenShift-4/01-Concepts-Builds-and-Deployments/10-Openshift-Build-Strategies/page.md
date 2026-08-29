@@ -22,9 +22,7 @@ OpenShift provides four primary strategies for creating build configurations:
 4. **Custom:**\
    The custom build strategy offers flexibility by allowing developers to define their own builder image. This plain Docker-formatted container image includes custom build process logic, which can be used to build artifacts such as RPMs, base images, or any artifacts not supported by the other strategies.
 
-<Frame>
-  ![The image illustrates a "Build Configuration Strategy" with a central grid of four red arrows pointing in different directions, labeled as Custom, Source to Image, Docker, and Pipeline.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882597/notes-assets/images/OpenShift-4-Openshift-Build-Strategies/build-configuration-strategy-arrows.jpg)
-</Frame>
+![The image illustrates a "Build Configuration Strategy" with a central grid of four red arrows pointing in different directions, labeled as Custom, Source to Image, Docker, and Pipeline.](https://kodekloud.com/kk-media/image/upload/v1752882597/notes-assets/images/OpenShift-4-Openshift-Build-Strategies/build-configuration-strategy-arrows.jpg)
 
 ## Build Input Options
 
@@ -42,9 +40,7 @@ When configuring a build, you supply build input that contains your applicationâ
 * **Image:**\
   Additional files necessary for the image build process can be supplied via an image source, allowing for more advanced build scenarios.
 
-<Callout icon="lightbulb">
-  For users who incorporate a Dockerfile in their build configuration, ensure that the file includes clear instructions such as `FROM`, `RUN`, and `CMD` to facilitate a smooth build process.
-</Callout>
+> **lightbulb** For users who incorporate a Dockerfile in their build configuration, ensure that the file includes clear instructions such as `FROM`, `RUN`, and `CMD` to facilitate a smooth build process.
 
 ### Additional Build Parameters
 
@@ -54,13 +50,9 @@ When configuring a build, you supply build input that contains your applicationâ
 * **External Artifacts:**\
   Although you have the option to include external artifacts (such as a Java JAR file), it is generally discouraged in modern containerized environments. Traditionally, binaries were deployed directly onto servers (using commands like `java -jar`), but today's best practice is to use a Dockerfile to build container images.
 
-<Callout icon="triangle-alert">
-  Avoid storing binaries as external artifacts. Embrace container-driven workflows by building images with Dockerfiles to ensure consistency, scalability, and ease of deployment in modern environments.
-</Callout>
+> **triangle-alert** Avoid storing binaries as external artifacts. Embrace container-driven workflows by building images with Dockerfiles to ensure consistency, scalability, and ease of deployment in modern environments.
 
-<Frame>
-  ![The image shows a list of build input options, including Git, Dockerfile, Binary, Image, Input Secrets, and External Artifacts, each represented by a red icon with a downward arrow.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882598/notes-assets/images/OpenShift-4-Openshift-Build-Strategies/build-input-options-git-dockerfile.jpg)
-</Frame>
+![The image shows a list of build input options, including Git, Dockerfile, Binary, Image, Input Secrets, and External Artifacts, each represented by a red icon with a downward arrow.](https://kodekloud.com/kk-media/image/upload/v1752882598/notes-assets/images/OpenShift-4-Openshift-Build-Strategies/build-input-options-git-dockerfile.jpg)
 
 ## Conclusion
 
@@ -68,6 +60,4 @@ This article has provided an overview of OpenShift build strategies and their va
 
 For more insights into OpenShift and containerized development, continue exploring our further lessons and detailed technical guides.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/3200131b-dec7-4422-9e05-68c751bc4213/lesson/bd16c674-e58a-41d3-9774-0fb98a54f826" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/3200131b-dec7-4422-9e05-68c751bc4213/lesson/bd16c674-e58a-41d3-9774-0fb98a54f826)

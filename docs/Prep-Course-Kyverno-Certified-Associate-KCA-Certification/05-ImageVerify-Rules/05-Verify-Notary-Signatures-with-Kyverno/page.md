@@ -69,9 +69,7 @@ verifyImages: # The specialized rule block
 
 Use `count` to support flexible trust models, for example accepting images signed by either a dev team key or a security team key.
 
-<Callout icon="warning">
-  If you omit `count`, Kyverno requires all listed attestors to validate (logical AND). This can be stricter than intended — explicitly set `count` to express OR semantics or multi-signer requirements.
-</Callout>
+> **warning** If you omit `count`, Kyverno requires all listed attestors to validate (logical AND). This can be stricter than intended — explicitly set `count` to express OR semantics or multi-signer requirements.
 
 Complete ClusterPolicy example
 
@@ -139,9 +137,7 @@ How the cache helps:
 * The first time a specific image digest is successfully verified for a given policy, Kyverno stores a positive result in an in-memory TTL cache.
 * Subsequent Pods using the same image digest will hit the cache and be allowed immediately, avoiding a remote registry call and expensive crypto operations.
 
-<Callout icon="lightbulb">
-  The cache trades freshness for performance. The default TTL (60m) may allow a revoked signature to be accepted until the cache entry expires. Choose cache settings based on your operational risk tolerance.
-</Callout>
+> **lightbulb** The cache trades freshness for performance. The default TTL (60m) may allow a revoked signature to be accepted until the cache entry expires. Choose cache settings based on your operational risk tolerance.
 
 <Frame>
   <img alt="The image describes performance and caching strategies, highlighting image verification caching by default and the benefits of using cached results for policy evaluation. It includes cache configuration details such as enabling cache, max size, and TTL duration." />
@@ -175,6 +171,4 @@ Links and references
 * Notary (The Update Framework): [https://github.com/theupdateframework/notary](https://github.com/theupdateframework/notary)
 * Cosign: [https://docs.sigstore.dev/cosign/](https://docs.sigstore.dev/cosign/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/29b815f2-6996-4693-b4b5-993ad2c6659e/lesson/72fe9077-7c56-40be-9863-379150e924da" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/29b815f2-6996-4693-b4b5-993ad2c6659e/lesson/72fe9077-7c56-40be-9863-379150e924da)

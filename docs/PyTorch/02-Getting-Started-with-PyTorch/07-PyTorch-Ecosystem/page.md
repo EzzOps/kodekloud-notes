@@ -76,9 +76,7 @@ Developed by Hugging Face, Transformers is a widely adopted library that offers 
 
 The vibrant PyTorch community offers extensive resources to help you overcome challenges and deepen your understanding. Engage with peers on the official discussion forum at [discuss.pytorch.org](https://discuss.pytorch.org), where you can ask questions, share insights, and contribute to the collective knowledge base.
 
-<Callout icon="lightbulb">
-  Consider signing up for the PyTorch forum and Slack channel to stay updated on advanced topics, network with industry experts, and discover emerging projects.
-</Callout>
+> **lightbulb** Consider signing up for the PyTorch forum and Slack channel to stay updated on advanced topics, network with industry experts, and discover emerging projects.
 
 Additionally, a dedicated Slack channel provides a platform for discussing advanced topics and fostering collaboration with peers. Request access through the available community link to join the conversation.
 
@@ -100,10 +98,6 @@ Beyond community support, PyTorch offers an array of resources to empower both b
 
 For more detailed information and updates, visit [PyTorch.org](https://pytorch.org). The ecosystem is continuously evolving, so we encourage you to explore and experiment with these tools to harness the full potential of PyTorch.
 
-<Callout icon="lightbulb">
-  This lesson only scratches the surface of the PyTorch ecosystem. Conduct further research and explore additional resources to gain a deeper understanding of the powerful tools and vibrant community that PyTorch offers.
-</Callout>
+> **lightbulb** This lesson only scratches the surface of the PyTorch ecosystem. Conduct further research and explore additional resources to gain a deeper understanding of the powerful tools and vibrant community that PyTorch offers.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/c4bbb303-1a12-4868-8bff-86d8b42d478b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/c4bbb303-1a12-4868-8bff-86d8b42d478b)

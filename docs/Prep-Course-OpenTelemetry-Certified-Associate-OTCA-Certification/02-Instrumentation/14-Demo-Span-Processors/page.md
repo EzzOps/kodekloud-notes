@@ -55,9 +55,7 @@ Explanation:
 
 * SimpleSpanProcessor synchronously invokes the exporter when each span ends, which can block the application thread and increase latency.
 
-<Callout icon="lightbulb">
-  Use SimpleSpanProcessor only for local development or interactive debugging. For production deployments, prefer BatchSpanProcessor to avoid adding latency to your application's main threads.
-</Callout>
+> **lightbulb** Use SimpleSpanProcessor only for local development or interactive debugging. For production deployments, prefer BatchSpanProcessor to avoid adding latency to your application's main threads.
 
 ## Switching to BatchSpanProcessor (production)
 
@@ -90,15 +88,13 @@ if __name__ == "__main__":
     trace.get_tracer_provider().shutdown()
 ```
 
-<Callout icon="warning">
-  If you call `BatchSpanProcessor()` without passing an exporter you will see:
+> **warning** If you call `BatchSpanProcessor()` without passing an exporter you will see:
 
   ```Python theme={null}
   TypeError: BatchSpanProcessor.__init__() missing 1 required positional argument: 'span_exporter'
   ```
 
   Always pass the exporter instance (for example, `ConsoleSpanExporter()` or an `OTLP` exporter).
-</Callout>
 
 Notes on behavior and best practices:
 
@@ -151,6 +147,4 @@ Summary
 * [OTLP exporter configuration](https://opentelemetry.io/docs/reference/specification/protocol/otlp/)
 * [OpenTelemetry Tracing SDK for Python](https://github.com/open-telemetry/opentelemetry-python)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/cde88149-90da-4fb4-ab35-8e277e8e6960" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/cde88149-90da-4fb4-ab35-8e277e8e6960)

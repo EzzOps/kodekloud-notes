@@ -25,9 +25,7 @@ Update the API server’s startup arguments:
 --enable-admission-plugins=NodeRestriction,NamespaceAutoProvision
 ```
 
-<Callout icon="triangle-alert">
-  Editing the `kube-apiserver` flags requires careful coordination. After changes, restart the API server or apply the updated control-plane manifest.
-</Callout>
+> **triangle-alert** Editing the `kube-apiserver` flags requires careful coordination. After changes, restart the API server or apply the updated control-plane manifest.
 
 **Example (systemd service):**
 
@@ -82,11 +80,9 @@ The **NamespaceLifecycle** plugin supersedes both `NamespaceExists` and `Namespa
 * [Kubernetes RBAC Overview](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
 * [kube-apiserver Command-Line Flags](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/fce29d1e-7bd6-43b5-b11e-863367854881" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/fce29d1e-7bd6-43b5-b11e-863367854881)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/2df29ee2-5c77-4ab1-a3e3-8ce28aa498a4" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/2df29ee2-5c77-4ab1-a3e3-8ce28aa498a4)
 
 
 # Connectivity Mutual TLS
@@ -115,13 +111,9 @@ When you visit an HTTPS website—like your online bank—the browser and server
 5. Server decrypts the symmetric key with its private key.
 6. Both parties use the symmetric key to encrypt application data.
 
-<Callout icon="lightbulb">
-  One-way TLS ensures confidentiality and server authenticity but relies on application-layer credentials (usernames, passwords) to authenticate the client.
-</Callout>
+> **lightbulb** One-way TLS ensures confidentiality and server authenticity but relies on application-layer credentials (usernames, passwords) to authenticate the client.
 
-<Frame>
-  ![The image illustrates the concept of a Certificate Authority (CA) with logos of various CAs, a secure online banking webpage, and a digital certificate for "my-bank.com."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880876/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Connectivity-Mutual-TLS/certificate-authority-online-banking.jpg)
-</Frame>
+![The image illustrates the concept of a Certificate Authority (CA) with logos of various CAs, a secure online banking webpage, and a digital certificate for "my-bank.com."](https://kodekloud.com/kk-media/image/upload/v1752880876/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Connectivity-Mutual-TLS/certificate-authority-online-banking.jpg)
 
 ### TLS Handshake Steps
 
@@ -146,9 +138,7 @@ In mTLS, both sides present certificates. This is ideal for machine-to-machine c
 | Automated Trust Management   | Certificates can be rotated and validated automatically.                        |
 | Defense in Depth             | Prevents unauthorized services from connecting, even if they know the endpoint. |
 
-<Callout icon="triangle-alert">
-  Ensure your CA certificates are stored securely and rotated regularly to prevent unauthorized access.
-</Callout>
+> **triangle-alert** Ensure your CA certificates are stored securely and rotated regularly to prevent unauthorized access.
 
 ### mTLS Handshake Sequence
 

@@ -43,9 +43,7 @@ Control ports and protocols (requires Kubernetes v1.25+ for port ranges):
 
 By default, all ingress and egress traffic is allowed. You can enforce a “deny all” or “allow all” baseline by using an empty `podSelector: {}`.
 
-<Callout icon="lightbulb">
-  An empty `podSelector: {}` matches every pod in the namespace.
-</Callout>
+> **lightbulb** An empty `podSelector: {}` matches every pod in the namespace.
 
 ### Ingress Defaults
 
@@ -113,9 +111,7 @@ You may combine Ingress and Egress in a single policy or separate them.
 * Reduced attack surface by blocking unused paths
 * Consistent enforcement across applications
 
-<Frame>
-  ![The image lists the benefits of network policies, including enhanced security, workload isolation, compliance, reduced attack surface, and consistency, each with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880286/notes-assets/images/Kubernetes-Networking-Deep-Dive-Network-Policies-Overview/network-policies-benefits-security-isolation.jpg)
-</Frame>
+![The image lists the benefits of network policies, including enhanced security, workload isolation, compliance, reduced attack surface, and consistency, each with an icon.](https://kodekloud.com/kk-media/image/upload/v1752880286/notes-assets/images/Kubernetes-Networking-Deep-Dive-Network-Policies-Overview/network-policies-benefits-security-isolation.jpg)
 
 ## Limitations
 
@@ -128,9 +124,7 @@ Network Policies operate at layers 3 & 4 and have some constraints:
 * Label-based only—cannot target Service objects
 * No Layer 7 (HTTP/gRPC) filtering
 
-<Frame>
-  ![The image outlines the limitations of network policies, listing six specific tasks they cannot perform, such as forcing traffic through a gateway and handling TLS-related activities. It features a diagram with icons connected to a "Limitation" label.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880288/notes-assets/images/Kubernetes-Networking-Deep-Dive-Network-Policies-Overview/network-policies-limitations-diagram.jpg)
-</Frame>
+![The image outlines the limitations of network policies, listing six specific tasks they cannot perform, such as forcing traffic through a gateway and handling TLS-related activities. It features a diagram with icons connected to a "Limitation" label.](https://kodekloud.com/kk-media/image/upload/v1752880288/notes-assets/images/Kubernetes-Networking-Deep-Dive-Network-Policies-Overview/network-policies-limitations-diagram.jpg)
 
 ## CNI-Specific Enhancements
 
@@ -142,9 +136,7 @@ Several CNI providers extend Kubernetes Network Policies with advanced capabilit
 | Cilium         | Layer 7 HTTP/gRPC filtering, eBPF datapath, Hubble insights |
 | Istio          | Service mesh policies, mTLS, ingress/egress gateways        |
 
-<Frame>
-  ![The image displays logos and names of various CNI (Container Network Interface) network policies, including Project Calico, Cilium, and Istio.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880289/notes-assets/images/Kubernetes-Networking-Deep-Dive-Network-Policies-Overview/cni-network-policies-logos-calico-cilium-istio.jpg)
-</Frame>
+![The image displays logos and names of various CNI (Container Network Interface) network policies, including Project Calico, Cilium, and Istio.](https://kodekloud.com/kk-media/image/upload/v1752880289/notes-assets/images/Kubernetes-Networking-Deep-Dive-Network-Policies-Overview/cni-network-policies-logos-calico-cilium-istio.jpg)
 
 ## Next Steps
 
@@ -157,9 +149,7 @@ You now understand native Kubernetes Network Policies—how to control ingress a
 * [Cilium](https://cilium.io)
 * [Istio](https://istio.io)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/7c0a7521-1366-4036-ab35-f93c414d71b1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/7c0a7521-1366-4036-ab35-f93c414d71b1)
 
 
 # Pod to Pod Communication
@@ -197,9 +187,7 @@ Image versions:     cilium: quay.io/cilium/cilium:v1.15.3
                     cilium-operator: quay.io/cilium/operator-generic:v1.15.3
 ```
 
-<Callout icon="lightbulb">
-  If `Envoy DaemonSet` is disabled, Cilium is using its embedded proxy mode. For full L7 gateway features, enable the Envoy DaemonSet.
-</Callout>
+> **lightbulb** If `Envoy DaemonSet` is disabled, Cilium is using its embedded proxy mode. For full L7 gateway features, enable the Envoy DaemonSet.
 
 ## 2. Deploy Pods and Observe Interface Creation
 
@@ -350,9 +338,7 @@ Or curl by name:
 kubectl exec -it pod1 -- curl -vvv http://10-0-0-245.default.pod.cluster.local:80
 ```
 
-<Callout icon="triangle-alert">
-  Pod IPs are ephemeral. DNS A records tied to pod IPs can break when the pod restarts. For stable discovery, use a [Kubernetes Service](https://kubernetes.io/docs/concepts/services-networking/service/).
-</Callout>
+> **triangle-alert** Pod IPs are ephemeral. DNS A records tied to pod IPs can break when the pod restarts. For stable discovery, use a [Kubernetes Service](https://kubernetes.io/docs/concepts/services-networking/service/).
 
 ## 7. Summary of Commands
 
@@ -375,6 +361,4 @@ kubectl exec -it pod1 -- curl -vvv http://10-0-0-245.default.pod.cluster.local:8
 * [Linux Network Namespaces](https://man7.org/linux/man-pages/man7/namespaces.7.html)
 * [Kubernetes DNS for Services and Pods](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/4907e379-345a-457a-a53f-3869a820d06a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/4907e379-345a-457a-a53f-3869a820d06a)

@@ -11,7 +11,7 @@ Securing your AWS CodePipeline is essential for safeguarding every stage of your
 * Encryption (Data at Rest & In Transit)
 * Secrets Management
 
-![The image lists main areas related to AWS Identity and Access Management (IAM), including authentication, authorization, and encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862570/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Security/aws-iam-authentication-authorization-encryption.jpg)
+![The image lists main areas related to AWS Identity and Access Management (IAM), including authentication, authorization, and encryption.](https://kodekloud.com/kk-media/image/upload/v1752862570/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Security/aws-iam-authentication-authorization-encryption.jpg)
 
 ***
 
@@ -34,11 +34,11 @@ Roles are ideal for:
 * Federated users (e.g., SAML, OIDC)
 * Applications running on EC2 (via instance profiles)
 
-![The image is a slide about authentication, detailing "Users and Groups" with long-term credentials and "Roles" with temporary access, federated users, and applications on EC2 instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862571/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Security/authentication-users-groups-roles-ec2.jpg)
+![The image is a slide about authentication, detailing "Users and Groups" with long-term credentials and "Roles" with temporary access, federated users, and applications on EC2 instances.](https://kodekloud.com/kk-media/image/upload/v1752862571/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Security/authentication-users-groups-roles-ec2.jpg)
 
 When a user assumes the CodePipeline service role, they inherit its permissions—such as accessing S3 for artifacts:
 
-![The image is a diagram showing a user assuming a role in AWS CodePipeline, which allows permissions to access Amazon S3.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862572/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Security/aws-codepipeline-user-role-s3-diagram.jpg)
+![The image is a diagram showing a user assuming a role in AWS CodePipeline, which allows permissions to access Amazon S3.](https://kodekloud.com/kk-media/image/upload/v1752862572/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Security/aws-codepipeline-user-role-s3-diagram.jpg)
 
 ### 1.2 Authorization
 
@@ -49,11 +49,11 @@ Fine-grained permissions are enforced through IAM policies. These JSON documents
 | Identity-based policy | IAM Users, Groups, Roles | Grant or deny actions to principals  |
 | Resource-based policy | S3 Buckets, KMS Keys     | Control access at the resource level |
 
-![The image is about "Authorization" and features an icon of a document labeled "Policies" with a shield, alongside text mentioning "JSON" and "Identity or Resource based."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862573/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Security/authorization-policies-json-shield-icon.jpg)
+![The image is about "Authorization" and features an icon of a document labeled "Policies" with a shield, alongside text mentioning "JSON" and "Identity or Resource based."](https://kodekloud.com/kk-media/image/upload/v1752862573/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Security/authorization-policies-json-shield-icon.jpg)
 
 For example, if UserA has no identity policy but the target S3 bucket’s resource policy allows `s3:DeleteObject`, UserA can delete items:
 
-![The image shows a diagram of a user with no policy permissions accessing Amazon S3, with a resource policy allowing S3 delete permissions to UserA.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862574/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Security/user-no-policy-amazon-s3-diagram.jpg)
+![The image shows a diagram of a user with no policy permissions accessing Amazon S3, with a resource policy allowing S3 delete permissions to UserA.](https://kodekloud.com/kk-media/image/upload/v1752862574/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Security/user-no-policy-amazon-s3-diagram.jpg)
 
 ***
 
@@ -71,7 +71,7 @@ When storing build artifacts in S3, enforce server-side encryption (SSE). Compar
 | SSE-KMS (AWS-managed)      | AWS KMS        | Automatic, limited policies       |
 | SSE-KMS (Customer-managed) | AWS KMS CMK    | Full rotation & policy control    |
 
-![The image illustrates a CI/CD pipeline with AWS CodeBuild and Amazon S3, highlighting the use of AWS Managed Keys and Customer Managed Keys for security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862576/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Security/ci-cd-pipeline-aws-codebuild-s3.jpg)
+![The image illustrates a CI/CD pipeline with AWS CodeBuild and Amazon S3, highlighting the use of AWS Managed Keys and Customer Managed Keys for security.](https://kodekloud.com/kk-media/image/upload/v1752862576/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Security/ci-cd-pipeline-aws-codebuild-s3.jpg)
 
 > **triangle-alert** Always enforce HTTPS and server-side encryption in your S3 bucket policy to block unencrypted uploads or insecure connections.
 
@@ -123,7 +123,7 @@ Always use TLS (HTTPS) for:
 
 Avoid hard-coding credentials such as API keys or passwords in your pipeline. Instead, centralize secrets in AWS Secrets Manager:
 
-![The image is a split design with a list of items like passwords and API keys on the left, and a lock icon with "AWS Secrets Manager" text on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862577/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Security/aws-secrets-manager-lock-passwords-list.jpg)
+![The image is a split design with a list of items like passwords and API keys on the left, and a lock icon with "AWS Secrets Manager" text on the right.](https://kodekloud.com/kk-media/image/upload/v1752862577/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Security/aws-secrets-manager-lock-passwords-list.jpg)
 
 > **lightbulb** Use the [AWS SDK](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) or AWS CLI to fetch secrets at runtime:
 
@@ -143,7 +143,7 @@ We’ve covered the critical security controls for AWS CodePipeline:
 * Encryption of artifacts **at rest** (SSE) and **in transit** (TLS)
 * Secure secret handling with **AWS Secrets Manager**
 
-![The image is a summary slide listing key topics: AWS Identity and Access Management (IAM), Authentication, Authorization (identity-based and resource-based), and Encryption. It is copyrighted by KodeKloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862578/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Security/aws-iam-authentication-authorization-encryption-2.jpg)
+![The image is a summary slide listing key topics: AWS Identity and Access Management (IAM), Authentication, Authorization (identity-based and resource-based), and Encryption. It is copyrighted by KodeKloud.](https://kodekloud.com/kk-media/image/upload/v1752862578/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Security/aws-iam-authentication-authorization-encryption-2.jpg)
 
 ***
 

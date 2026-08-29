@@ -45,9 +45,7 @@ kubernetes      192.168.121.182:6443 40m
 nginx-service   10.0.0.55:80         5m
 ```
 
-<Callout icon="lightbulb">
-  The `nginx-service` Endpoints resource shows the Pod’s IP (`10.0.0.55`) and port (`80`).
-</Callout>
+> **lightbulb** The `nginx-service` Endpoints resource shows the Pod’s IP (`10.0.0.55`) and port (`80`).
 
 ### 1.3 Inspect the Endpoints Resource
 
@@ -197,9 +195,7 @@ Endpoints:
     NodeName:    node01
 ```
 
-<Callout icon="triangle-alert">
-  Endpoint Slices are created by default in Kubernetes v1.21+. Make sure your cluster version supports discovery.k8s.io/v1.
-</Callout>
+> **triangle-alert** Endpoint Slices are created by default in Kubernetes v1.21+. Make sure your cluster version supports discovery.k8s.io/v1.
 
 ### 3.3 EndpointSlice Updates on Scaling
 
@@ -252,6 +248,4 @@ Kubernetes manages both Endpoints and Endpoint Slices automatically. Use Endpoin
 * [Endpoint Slice Documentation](https://kubernetes.io/docs/concepts/services-networking/endpoint-slices/)
 * [Nginx on Kubernetes](https://kubernetes.io/docs/tutorials/stateless-application/guestbook/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/3de266e9-fb99-489c-81fd-28cc192cf606" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/3de266e9-fb99-489c-81fd-28cc192cf606)

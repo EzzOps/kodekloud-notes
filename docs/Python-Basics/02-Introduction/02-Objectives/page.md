@@ -10,22 +10,14 @@ Mastering these basics will not only help you understand how Python works but wi
 
 The diagram below outlines the key topics covered in this lesson:
 
-<Frame>
-  ![The image displays six labeled boxes: Basic Concepts, Data Types, Operators, Flow Control, Data Collections, and Functions & Exceptions, likely representing programming topics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883529/notes-assets/images/Python-Basics-Objectives/frame_10.jpg)
-</Frame>
+![The image displays six labeled boxes: Basic Concepts, Data Types, Operators, Flow Control, Data Collections, and Functions & Exceptions, likely representing programming topics.](https://kodekloud.com/kk-media/image/upload/v1752883529/notes-assets/images/Python-Basics-Objectives/frame_10.jpg)
 
-<Callout icon="lightbulb">
-  Be sure to revisit the practice questions at the end of each module, as they are designed to solidify your understanding and boost your confidence before you attempt the certification exam.
-</Callout>
+> **lightbulb** Be sure to revisit the practice questions at the end of each module, as they are designed to solidify your understanding and boost your confidence before you attempt the certification exam.
 
 A solid grasp of these fundamentals is vital, as the certification preparation involves understanding even the finer details. The following diagram illustrates an example mock exam question:
 
-<Frame>
-  ![The image shows a mock exam question asking for the special character used for a new line, with options: \d, \r, \t, \n.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883530/notes-assets/images/Python-Basics-Objectives/frame_30.jpg)
-</Frame>
+![The image shows a mock exam question asking for the special character used for a new line, with options: \d, \r, \t, \n.](https://kodekloud.com/kk-media/image/upload/v1752883530/notes-assets/images/Python-Basics-Objectives/frame_30.jpg)
 
 Future modules in this series will expand on these basic concepts, introducing more advanced topics and further enhancing your Python programming skills. Explore the subsequent lessons to continue your journey towards Python mastery!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/45777680-808e-4e3e-b107-7d44bc32921e/lesson/32b6739b-4ade-4dae-9c56-0073d85f5fbd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/45777680-808e-4e3e-b107-7d44bc32921e/lesson/32b6739b-4ade-4dae-9c56-0073d85f5fbd)

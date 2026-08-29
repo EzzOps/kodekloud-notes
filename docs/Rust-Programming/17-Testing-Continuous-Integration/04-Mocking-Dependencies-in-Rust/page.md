@@ -12,9 +12,7 @@ Mocking is the practice of creating simulated objects that mimic the behavior of
 * Controlling the test environment to ensure repeatability.
 * Verifying interactions between components to confirm expected behaviors.
 
-<Frame>
-  ![The image is an introduction to mocking, highlighting three concepts: isolating the unit by replacing dependencies with mocks, controlling the environment for predictable tests, and verifying interactions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884008/notes-assets/images/Rust-Programming-Mocking-Dependencies-in-Rust/introduction-to-mocking-concepts.jpg)
-</Frame>
+![The image is an introduction to mocking, highlighting three concepts: isolating the unit by replacing dependencies with mocks, controlling the environment for predictable tests, and verifying interactions.](https://kodekloud.com/kk-media/image/upload/v1752884008/notes-assets/images/Rust-Programming-Mocking-Dependencies-in-Rust/introduction-to-mocking-concepts.jpg)
 
 ## When to Use Mocks
 
@@ -24,9 +22,7 @@ Mocks are ideal in scenarios where:
 * Unpredictable behavior of the real object could lead to flaky tests.
 * You need to simulate error conditions that are difficult to reproduce with the actual dependency.
 
-<Frame>
-  ![The image is a diagram titled "When to Use Mocks," listing three scenarios: "Unavailable or slow object," "Unpredictable behavior," and "Simulating hard-to-reproduce errors."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884009/notes-assets/images/Rust-Programming-Mocking-Dependencies-in-Rust/when-to-use-mocks-diagram.jpg)
-</Frame>
+![The image is a diagram titled "When to Use Mocks," listing three scenarios: "Unavailable or slow object," "Unpredictable behavior," and "Simulating hard-to-reproduce errors."](https://kodekloud.com/kk-media/image/upload/v1752884009/notes-assets/images/Rust-Programming-Mocking-Dependencies-in-Rust/when-to-use-mocks-diagram.jpg)
 
 ## Why Use mockall?
 
@@ -36,9 +32,7 @@ The `mockall` crate offers a simple yet powerful API for creating mocks, setting
 * Support for returning specific values and simulating errors.
 * Robust interaction verification to ensure your components communicate as expected.
 
-<Frame>
-  ![The image highlights the advantages of using "mockall," emphasizing ease of use with a simple API for creating mocks and powerful features for setting expectations and verifying interactions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884010/notes-assets/images/Rust-Programming-Mocking-Dependencies-in-Rust/mockall-advantages-simple-api.jpg)
-</Frame>
+![The image highlights the advantages of using "mockall," emphasizing ease of use with a simple API for creating mocks and powerful features for setting expectations and verifying interactions.](https://kodekloud.com/kk-media/image/upload/v1752884010/notes-assets/images/Rust-Programming-Mocking-Dependencies-in-Rust/mockall-advantages-simple-api.jpg)
 
 ## Setting Up the Project
 
@@ -223,23 +217,15 @@ Mocking is a powerful tool for isolating units under test. Here are some best pr
 
 * Use mocks judiciously.
 
-<Callout icon="lightbulb">
-  Use mocks judiciously to avoid creating tests that depend too heavily on implementation details.
-</Callout>
+> **lightbulb** Use mocks judiciously to avoid creating tests that depend too heavily on implementation details.
 
 * Simulate realistic scenarios to maintain meaningful tests.
 * Utilize mocks to verify that your code interacts correctly with its dependencies, especially in complex interaction scenarios.
 
-<Frame>
-  ![The image is a summary slide outlining three points about mocks: understanding mocks, using the mockall crate, and isolating tests. It features a gradient background with numbered sections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884011/notes-assets/images/Rust-Programming-Mocking-Dependencies-in-Rust/mocks-summary-understanding-using-isolating.jpg)
-</Frame>
+![The image is a summary slide outlining three points about mocks: understanding mocks, using the mockall crate, and isolating tests. It features a gradient background with numbered sections.](https://kodekloud.com/kk-media/image/upload/v1752884011/notes-assets/images/Rust-Programming-Mocking-Dependencies-in-Rust/mocks-summary-understanding-using-isolating.jpg)
 
-<Frame>
-  ![The image presents three best practices for using mocks in testing: "Use Mocks Sparingly," "Test Realistic Scenarios," and "Verify Interactions," each with a brief explanation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884013/notes-assets/images/Rust-Programming-Mocking-Dependencies-in-Rust/best-practices-mocks-testing.jpg)
-</Frame>
+![The image presents three best practices for using mocks in testing: "Use Mocks Sparingly," "Test Realistic Scenarios," and "Verify Interactions," each with a brief explanation.](https://kodekloud.com/kk-media/image/upload/v1752884013/notes-assets/images/Rust-Programming-Mocking-Dependencies-in-Rust/best-practices-mocks-testing.jpg)
 
 By understanding and applying these mocking techniques, you can write robust tests that ensure each component of your Rust application functions correctly. This approach not only improves code quality but also enhances test reliability, making your development process smoother and more efficient.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/e9736aa9-07fd-49d2-b348-ab9c4534b367/lesson/c853c57d-8704-4864-84f4-1cc4cee75c0c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/e9736aa9-07fd-49d2-b348-ab9c4534b367/lesson/c853c57d-8704-4864-84f4-1cc4cee75c0c)

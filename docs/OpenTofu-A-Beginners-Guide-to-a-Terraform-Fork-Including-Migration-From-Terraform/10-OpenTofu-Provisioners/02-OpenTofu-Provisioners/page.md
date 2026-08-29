@@ -43,11 +43,9 @@ resource "aws_instance" "webserver" {
 }
 ```
 
-<Callout icon="lightbulb">
-  * A security group allowing SSH (`22`) or WinRM (`5986` for Windows).
+> **lightbulb** * A security group allowing SSH (`22`) or WinRM (`5986` for Windows).
   * An SSH key pair created via `aws_key_pair` or your preferred key management.
   * Correct user name for your AMI (e.g., `ubuntu`, `ec2-user`, `admin`).
-</Callout>
 
 ### Example Resources
 
@@ -157,9 +155,7 @@ provisioner "local-exec" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Overusing `on_failure = "continue"` can hide critical bootstrap errors. Use it only when failures are non-fatal.
-</Callout>
+> **triangle-alert** Overusing `on_failure = "continue"` can hide critical bootstrap errors. Use it only when failures are non-fatal.
 
 ## Best Practices
 
@@ -191,9 +187,7 @@ resource "aws_instance" "webserver" {
 }
 ```
 
-<Callout icon="lightbulb">
-  Using `user_data` or cloud-init reduces complexity and maintains idempotency compared to provisioners.
-</Callout>
+> **lightbulb** Using `user_data` or cloud-init reduces complexity and maintains idempotency compared to provisioners.
 
 ## Links and References
 
@@ -207,6 +201,4 @@ resource "aws_instance" "webserver" {
 
 [aws-instance]: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/98011198-b847-4ee1-a7bd-7593bfe5576c/lesson/373ac6fd-f67c-4596-9de4-1f158c1025bb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/98011198-b847-4ee1-a7bd-7593bfe5576c/lesson/373ac6fd-f67c-4596-9de4-1f158c1025bb)

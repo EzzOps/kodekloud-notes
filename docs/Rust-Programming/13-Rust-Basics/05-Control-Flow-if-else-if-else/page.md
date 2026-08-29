@@ -89,9 +89,7 @@ The number is 20 or greater
 
 You can build more complex conditional statements by combining multiple conditions with logical operators like AND (&&) and OR (||).
 
-<Callout icon="lightbulb">
-  In Rust, combining conditions allows you to create highly specific checks. For example, use the && operator to ensure multiple conditions are true before executing a block.
-</Callout>
+> **lightbulb** In Rust, combining conditions allows you to create highly specific checks. For example, use the && operator to ensure multiple conditions are true before executing a block.
 
 Consider the example below where the number is initialized to 25:
 
@@ -140,6 +138,4 @@ In this overview, we covered the following control flow structures in Rust:
 
 By mastering these control flow structures, you can write more dynamic and responsive Rust programs that efficiently handle various scenarios.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/15158759-10b6-4ace-8f0e-c0f3c5cdfe35" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/15158759-10b6-4ace-8f0e-c0f3c5cdfe35)

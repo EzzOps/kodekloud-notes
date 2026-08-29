@@ -122,9 +122,7 @@ NAME        READY   AGE
 selfsigned  True    10s
 ```
 
-<Callout icon="lightbulb">
-  This demonstrates the operator pattern in \~60 seconds: apply an operator manifest (CRDs + controllers), observe new API kinds, create a custom resource, and let the controller reconcile it to the desired state.
-</Callout>
+> **lightbulb** This demonstrates the operator pattern in \~60 seconds: apply an operator manifest (CRDs + controllers), observe new API kinds, create a custom resource, and let the controller reconcile it to the desired state.
 
 Summary checklist
 
@@ -143,6 +141,4 @@ Links and references
 * cert-manager docs: [https://cert-manager.io/docs/](https://cert-manager.io/docs/)
 * Kubernetes docs — CustomResourceDefinitions: [https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/e05a5c27-dcf1-4107-8ad7-9f2c4602e011" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/e05a5c27-dcf1-4107-8ad7-9f2c4602e011)

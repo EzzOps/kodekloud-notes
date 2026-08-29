@@ -81,9 +81,7 @@ Continue to the AppRole, userpass, and token method deep-dives for detailed work
 * [Vault CLI Documentation](https://www.vaultproject.io/docs/commands/auth)
 * [HashiCorp Vault Best Practices](https://www.vaultproject.io/docs/best-practices)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/f668107c-8068-453b-8bc3-685a3cda6c5b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/f668107c-8068-453b-8bc3-685a3cda6c5b)
 
 
 # Implementing Integrated Storage
@@ -94,9 +92,7 @@ This guide covers Vault’s Integrated Storage, its configuration, operation, an
 
 In this guide, we cover Vault’s Integrated Storage: what it is, why it matters, and how to configure and operate it. Introduced in Vault 1.4, Integrated Storage embeds a Raft-based backend directly within Vault for high availability and durability—without any external storage system.
 
-<Frame>
-  ![The image is an informational graphic about Vault Integrated Storage, highlighting its use of the Raft protocol and locally stored data for high availability and durability without external systems.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878459/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/vault-integrated-storage-raft-protocol.jpg)
-</Frame>
+![The image is an informational graphic about Vault Integrated Storage, highlighting its use of the Raft protocol and locally stored data for high availability and durability without external systems.](https://kodekloud.com/kk-media/image/upload/v1752878459/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/vault-integrated-storage-raft-protocol.jpg)
 
 ***
 
@@ -114,21 +110,15 @@ In a three- or five-node cluster, every node maintains the same dataset. If node
 
 ## Key Benefits
 
-<Frame>
-  ![The image is a slide titled "Introduction to Integrated Storage," highlighting benefits such as replicated data copies in a Vault cluster, eliminating network hops, and reducing administrative overhead. It includes a certification badge and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878460/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/introduction-integrated-storage-benefits-slide.jpg)
-</Frame>
+![The image is a slide titled "Introduction to Integrated Storage," highlighting benefits such as replicated data copies in a Vault cluster, eliminating network hops, and reducing administrative overhead. It includes a certification badge and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878460/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/introduction-integrated-storage-benefits-slide.jpg)
 
 * **No external backend**: Run Vault without Consul or other storage.
 * **Reduced latency**: Reads and writes occur on local disk.
 * **Simplified operations**: Troubleshoot only Vault, not two systems.
 
-<Callout icon="lightbulb">
-  For best performance, use storage-optimized volumes with high IOPS.
-</Callout>
+> **lightbulb** For best performance, use storage-optimized volumes with high IOPS.
 
-<Frame>
-  ![The image is a slide titled "Introduction to Integrated Storage," recommending the use of storage-optimized, high IOPS volumes for local disk data storage. It features a Vault certification badge and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878461/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/introduction-integrated-storage-high-iops.jpg)
-</Frame>
+![The image is a slide titled "Introduction to Integrated Storage," recommending the use of storage-optimized, high IOPS volumes for local disk data storage. It features a Vault certification badge and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878461/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/introduction-integrated-storage-high-iops.jpg)
 
 ***
 
@@ -143,26 +133,20 @@ Since version 1.4, Vault’s Integrated Storage has gained:
 | Cloud Auto-Join               | Enterprise       |
 | Autopilot (cleanup, upgrades) | Enterprise       |
 
-<Frame>
-  ![The image describes integrated storage features for Vault Enterprise, highlighting replication, auto snapshots, cloud autojoin, and autopilot functionalities. It includes a certification badge and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878462/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/vault-enterprise-storage-features-diagram.jpg)
-</Frame>
+![The image describes integrated storage features for Vault Enterprise, highlighting replication, auto snapshots, cloud autojoin, and autopilot functionalities. It includes a certification badge and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878462/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/vault-enterprise-storage-features-diagram.jpg)
 
 ***
 
 ## Comparative Advantages
 
-<Frame>
-  ![The image outlines the benefits of integrated storage over other solutions, highlighting reduced complexity, decreased costs, and easier troubleshooting. It includes icons and a character illustration, with a focus on Vault's integrated storage features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878463/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/integrated-storage-benefits-vault-illustration.jpg)
-</Frame>
+![The image outlines the benefits of integrated storage over other solutions, highlighting reduced complexity, decreased costs, and easier troubleshooting. It includes icons and a character illustration, with a focus on Vault's integrated storage features.](https://kodekloud.com/kk-media/image/upload/v1752878463/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/integrated-storage-benefits-vault-illustration.jpg)
 
 * **Lower complexity**: Single system for secrets and storage
 * **Cost savings**: No additional Consul cluster or VMs
 * **Easier troubleshooting**: Inspect only Vault logs and metrics
 * **Disk-backed**: No in-memory bottlenecks
 
-<Frame>
-  ![The image outlines the benefits of integrated storage, highlighting similar architecture, fewer networking requirements, not being memory-bound, and no network hops required. It includes icons and brief descriptions for each benefit.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878465/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/integrated-storage-benefits-architecture-diagram.jpg)
-</Frame>
+![The image outlines the benefits of integrated storage, highlighting similar architecture, fewer networking requirements, not being memory-bound, and no network hops required. It includes icons and brief descriptions for each benefit.](https://kodekloud.com/kk-media/image/upload/v1752878465/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/integrated-storage-benefits-architecture-diagram.jpg)
 
 * **Familiar Raft** if you know Consul
 * **Only two ports**: 8200 (API), 8201 (Raft RPC)
@@ -180,9 +164,7 @@ Since version 1.4, Vault’s Integrated Storage has gained:
 
 ### Development Cluster (3 Nodes)
 
-<Frame>
-  ![The image illustrates a reference architecture for a development cluster, showing three nodes (A, B, C) across different fault zones with data replication between them. Node B is the Raft leader, while Nodes A and C are Raft followers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878466/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/development-cluster-reference-architecture.jpg)
-</Frame>
+![The image illustrates a reference architecture for a development cluster, showing three nodes (A, B, C) across different fault zones with data replication between them. Node B is the Raft leader, while Nodes A and C are Raft followers.](https://kodekloud.com/kk-media/image/upload/v1752878466/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/development-cluster-reference-architecture.jpg)
 
 * Three nodes in separate fault zones
 * Local disk on each node
@@ -190,9 +172,7 @@ Since version 1.4, Vault’s Integrated Storage has gained:
 
 ### Production Cluster (5 Nodes)
 
-<Frame>
-  ![The image illustrates a reference architecture for a production cluster with nodes distributed across three fault zones, highlighting a RAFT leader and followers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878467/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/production-cluster-reference-architecture-raft.jpg)
-</Frame>
+![The image illustrates a reference architecture for a production cluster with nodes distributed across three fault zones, highlighting a RAFT leader and followers.](https://kodekloud.com/kk-media/image/upload/v1752878467/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/production-cluster-reference-architecture-raft.jpg)
 
 * Five nodes across three zones
 * Tolerates up to two node failures (quorum of three)
@@ -200,9 +180,7 @@ Since version 1.4, Vault’s Integrated Storage has gained:
 
 ### Enterprise Replication
 
-<Frame>
-  ![The image illustrates a replicated environment for enterprise-level deployments, showing a map of the United States with data centers for performance and disaster recovery replication. It includes a diagram of primary and DR clusters, emphasizing high availability and disaster recovery.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878468/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/enterprise-replication-us-data-centers-diagram.jpg)
-</Frame>
+![The image illustrates a replicated environment for enterprise-level deployments, showing a map of the United States with data centers for performance and disaster recovery replication. It includes a diagram of primary and DR clusters, emphasizing high availability and disaster recovery.](https://kodekloud.com/kk-media/image/upload/v1752878468/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/enterprise-replication-us-data-centers-diagram.jpg)
 
 Use Integrated Storage in primary, performance, and DR clusters—replicate data across regions or data centers for disaster recovery.
 
@@ -216,13 +194,9 @@ Use Integrated Storage in primary, performance, and DR clusters—replicate data
 | Storage      | High-IOPS, ample capacity (*disk full → Vault stops*) |
 | Networking   | Low latency, high throughput between nodes            |
 
-<Frame>
-  ![The image outlines performance requirements for CPU & Memory, Storage, and Networking, emphasizing resource consolidation, high-performing disks, and low latency connectivity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878469/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/performance-requirements-cpu-memory-storage.jpg)
-</Frame>
+![The image outlines performance requirements for CPU & Memory, Storage, and Networking, emphasizing resource consolidation, high-performing disks, and low latency connectivity.](https://kodekloud.com/kk-media/image/upload/v1752878469/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/performance-requirements-cpu-memory-storage.jpg)
 
-<Callout icon="triangle-alert">
-  If storage fills up, Vault will halt. Monitor disk usage closely.
-</Callout>
+> **triangle-alert** If storage fills up, Vault will halt. Monitor disk usage closely.
 
 ***
 
@@ -279,9 +253,7 @@ retry_join {
 }
 ```
 
-<Frame>
-  ![The image is a slide titled "Configuring Integrated Storage" with instructions on setting up a leader node in a cluster, including parameters like leader\_api\_addr, auto\_join, and certificate file paths. It also features a Vault certification badge and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878470/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/configuring-integrated-storage-leader-node.jpg)
-</Frame>
+![The image is a slide titled "Configuring Integrated Storage" with instructions on setting up a leader node in a cluster, including parameters like leader\_api\_addr, auto\_join, and certificate file paths. It also features a Vault certification badge and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878470/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/configuring-integrated-storage-leader-node.jpg)
 
 You can include multiple `retry_join` blocks to cover diverse discovery methods:
 

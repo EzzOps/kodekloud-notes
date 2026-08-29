@@ -22,7 +22,7 @@ Dapr equips your microservices with essential building blocks that streamline in
 | Observability                 | Integrates native tracing and logging capabilities, sending data to monitoring tools like Azure Application Insights for performance insights. |
 | Secure Secret Management      | Facilitates secure retrieval of sensitive information from secret stores such as Azure Key Vault, eliminating the risks of hard-coded secrets. |
 
-![The image is a table describing Dapr API features and their descriptions for integration with Azure Container Apps, covering aspects like service-to-service invocation, state management, and observability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866606/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Dapr-Integration-With-Azure-Container-Instances/dapr-api-features-azure-container-apps.jpg)
+![The image is a table describing Dapr API features and their descriptions for integration with Azure Container Apps, covering aspects like service-to-service invocation, state management, and observability.](https://kodekloud.com/kk-media/image/upload/v1752866606/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Dapr-Integration-With-Azure-Container-Instances/dapr-api-features-azure-container-apps.jpg)
 
 ## Detailed Feature Explanations
 
@@ -66,7 +66,7 @@ To enable and configure Dapr for your container app, navigate to the Azure Porta
 
 This user-friendly configuration process minimizes setup complexity and expedites the integration of Dapr into your containerized microservices application.
 
-![The image shows the Microsoft Azure portal interface for configuring Dapr settings in a container app. It includes options for enabling Dapr, setting the app ID and port, choosing the protocol, and other related configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866607/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Dapr-Integration-With-Azure-Container-Instances/azure-portal-dapr-settings-container-app.jpg)
+![The image shows the Microsoft Azure portal interface for configuring Dapr settings in a container app. It includes options for enabling Dapr, setting the app ID and port, choosing the protocol, and other related configurations.](https://kodekloud.com/kk-media/image/upload/v1752866607/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Dapr-Integration-With-Azure-Container-Instances/azure-portal-dapr-settings-container-app.jpg)
 
 ## Conclusion
 

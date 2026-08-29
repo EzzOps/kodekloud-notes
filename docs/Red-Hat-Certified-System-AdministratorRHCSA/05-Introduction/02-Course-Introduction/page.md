@@ -20,9 +20,7 @@ The course content is structured as follows:
 
 This structure provides over 28 hours of lab practice. You can repeat the labs as many times as needed to master the underlying concepts. Our concise lectures simplify complex topics with clear illustrations and animations, while live demonstration videos provide step-by-step guidance. Every lab includes a series of exercises with an interactive terminal, and hints along with solutions are available if required.
 
-<Callout icon="lightbulb">
-  The labs can be launched directly from your browser, so there's no need to set up additional infrastructure to prepare for the exam.
-</Callout>
+> **lightbulb** The labs can be launched directly from your browser, so there's no need to set up additional infrastructure to prepare for the exam.
 
 ## Hands-On Practice
 
@@ -44,12 +42,8 @@ In this lesson, we will address the essential topics required for the RHCSA exam
 * Security with SELinux
 * Container management using tools like Podman and Skopeo
 
-<Callout icon="lightbulb">
-  I look forward to guiding you through each topic with clear explanations and hands-on exercises. Jump right in to enhance your skills and build a strong foundation for your future in system administration!
-</Callout>
+> **lightbulb** I look forward to guiding you through each topic with clear explanations and hands-on exercises. Jump right in to enhance your skills and build a strong foundation for your future in system administration!
 
 Let's begin our journey together. I'll see you in the first lecture!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/42c76fd6-7faf-4e97-9038-d23fceeb7843/lesson/fdc72f40-439f-4cc5-a5bf-c5341c3faa04" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/42c76fd6-7faf-4e97-9038-d23fceeb7843/lesson/fdc72f40-439f-4cc5-a5bf-c5341c3faa04)

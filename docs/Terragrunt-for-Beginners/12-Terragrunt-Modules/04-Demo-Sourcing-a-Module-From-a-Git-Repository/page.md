@@ -8,10 +8,8 @@ inputs = {
 }
 ```
 
-<Callout icon="lightbulb">
-  Terragrunt lets you keep your Terraform code DRY by abstracting common configurations.\
+> **lightbulb** Terragrunt lets you keep your Terraform code DRY by abstracting common configurations.\
   Learn more in the [Terragrunt documentation](https://terragrunt.gruntwork.io/).
-</Callout>
 
 ***
 
@@ -86,9 +84,7 @@ Example:
 * [Terragrunt Documentation](https://terragrunt.gruntwork.io/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/89935bb9-9e3b-4621-9c7d-7fe0a1f32f16" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/89935bb9-9e3b-4621-9c7d-7fe0a1f32f16)
 
 
 # Demo Sourcing a Module From a Git Repository
@@ -120,9 +116,7 @@ inputs = {
 }
 ```
 
-<Callout icon="lightbulb">
-  Appending `?ref=v4.1.2` to the Git URL locks the module to version 4.1.2. This prevents unexpected changes due to upstream updates.
-</Callout>
+> **lightbulb** Appending `?ref=v4.1.2` to the Git URL locks the module to version 4.1.2. This prevents unexpected changes due to upstream updates.
 
 ## Module Inputs
 
@@ -178,9 +172,7 @@ If your module resides in a private Git repo, update the `source` URL to point t
 * **SSH**: Configure SSH keys and add them to your Git provider.
 * **HTTPS**: Use `git-credential-helper` or environment variables for credentials.
 
-<Callout icon="triangle-alert">
-  Do not store credentials in version control. Use secure credential helpers or environment variables to manage access.
-</Callout>
+> **triangle-alert** Do not store credentials in version control. Use secure credential helpers or environment variables to manage access.
 
 ## Links and References
 
@@ -191,6 +183,4 @@ If your module resides in a private Git repo, update the `source` URL to point t
 | Terraform Documentation  | [https://www.terraform.io/docs/](https://www.terraform.io/docs/)                                                                     |
 | AWS CLI                  | [https://aws.amazon.com/cli/](https://aws.amazon.com/cli/)                                                                           |
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/8a3a7434-c751-49b0-8ff8-4d5e3f342d3c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/8a3a7434-c751-49b0-8ff8-4d5e3f342d3c)

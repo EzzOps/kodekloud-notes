@@ -150,9 +150,7 @@ func (r *WebAppReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctr
 }
 ```
 
-<Callout icon="warning">
-  Always set the controller reference (owner reference) on child objects. Without it, the garbage collector won't remove children when the parent is deleted, and the relationship won't be visible to controller-runtime's owner-based watches.
-</Callout>
+> **warning** Always set the controller reference (owner reference) on child objects. Without it, the garbage collector won't remove children when the parent is deleted, and the relationship won't be visible to controller-runtime's owner-based watches.
 
 Error handling notes
 

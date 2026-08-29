@@ -147,9 +147,7 @@ Replace the placeholder connection string with your actual database credentials.
 sqlalchemy.url = postgresql+psycopg2://postgres:password123@localhost:5432/fastapi
 ```
 
-<Callout icon="lightbulb">
-  While the above example hardcodes credentials for demonstration purposes, it is advisable to manage sensitive information using environment variables in production.
-</Callout>
+> **lightbulb** While the above example hardcodes credentials for demonstration purposes, it is advisable to manage sensitive information using environment variables in production.
 
 ## Overriding the Database URL in env.py
 
@@ -229,9 +227,7 @@ alembic upgrade head
 
 Happy migrating!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/a6a7b30d-5ca7-4d69-a323-c508340e9931/lesson/3ad8ae82-a1b2-4e6c-b89a-b2bae924f121" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/a6a7b30d-5ca7-4d69-a323-c508340e9931/lesson/3ad8ae82-a1b2-4e6c-b89a-b2bae924f121)
 
 
 # First Revision

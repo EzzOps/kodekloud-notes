@@ -38,7 +38,7 @@ Set up two Aurora MySQL instances to compare different storage models:
 
 This scenario highlights the price variations between conventional and optimized storage configurations.
 
-![The image lists tasks for database calculations involving RDS MySQL, Aurora MySQL, and Aurora Serverless, focusing on size, price, and disk types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861443/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Database-Costs-Calculator-Exercise/frame_60.jpg)
+![The image lists tasks for database calculations involving RDS MySQL, Aurora MySQL, and Aurora Serverless, focusing on size, price, and disk types.](https://kodekloud.com/kk-media/image/upload/v1752861443/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Database-Costs-Calculator-Exercise/frame_60.jpg)
 
 > **lightbulb** These exercises are designed to familiarize you with the AWS Pricing Calculator by encouraging hands-on experimentation with various configurations.
 

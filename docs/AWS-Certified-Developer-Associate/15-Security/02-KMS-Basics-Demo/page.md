@@ -17,7 +17,7 @@ Begin by searching for the KMS service in the AWS Console. Once selected, you'll
 
 If you haven't created any keys yet, the Customer Managed Keys section may be empty. In contrast, the AWS Managed Keys tab displays automatically created keys. For instance, when you use services like Amazon S3 that offer built-in or default encryption, AWS will create and manage keys on your behalf.
 
-![The image shows the AWS Key Management Service (KMS) console, displaying a list of AWS managed keys with their aliases, key IDs, and statuses. All keys listed are enabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859362/notes-assets/images/AWS-Certified-Developer-Associate-KMS-Basics-Demo/aws-kms-console-managed-keys.jpg)
+![The image shows the AWS Key Management Service (KMS) console, displaying a list of AWS managed keys with their aliases, key IDs, and statuses. All keys listed are enabled.](https://kodekloud.com/kk-media/image/upload/v1752859362/notes-assets/images/AWS-Certified-Developer-Associate-KMS-Basics-Demo/aws-kms-console-managed-keys.jpg)
 
 AWS S3 uses these AWS Managed Keys to encrypt files stored in buckets by default. The key policy determines which entities can perform cryptographic actions (e.g., encrypt, decrypt, re-encrypt, generate data keys, and describe the key). For example, a typical AWS managed key policy may look like this:
 
@@ -64,7 +64,7 @@ Another example policy allows access through S3 for all principals in the accoun
 
 Additionally, AWS KMS uses symmetric keys, which allow both encryption and decryption of data.
 
-![The image shows an AWS Key Management Service (KMS) console page displaying details of a managed key, including its ID, alias, status, and cryptographic configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859364/notes-assets/images/AWS-Certified-Developer-Associate-KMS-Basics-Demo/aws-kms-managed-key-details.jpg)
+![The image shows an AWS Key Management Service (KMS) console page displaying details of a managed key, including its ID, alias, status, and cryptographic configuration.](https://kodekloud.com/kk-media/image/upload/v1752859364/notes-assets/images/AWS-Certified-Developer-Associate-KMS-Basics-Demo/aws-kms-managed-key-details.jpg)
 
 ## Creating a Customer Managed Key
 
@@ -73,12 +73,12 @@ Now, we'll create a customer-managed key that gives you full control over key ma
 1. **Start Key Creation:**
    * Click on "Create key" and select whether you want a symmetric or asymmetric key. For this demonstration, choose a symmetric key that supports both encryption and decryption.
 
-![The image shows an AWS KMS (Key Management Service) interface for configuring a key, with options for selecting key type (symmetric or asymmetric) and key usage (encrypt and decrypt or generate and verify MAC).](../../../../images/kodekloud.com/kk-media/image/upload/v1752859365/notes-assets/images/AWS-Certified-Developer-Associate-KMS-Basics-Demo/aws-kms-key-configuration-interface.jpg)
+![The image shows an AWS KMS (Key Management Service) interface for configuring a key, with options for selecting key type (symmetric or asymmetric) and key usage (encrypt and decrypt or generate and verify MAC).](https://kodekloud.com/kk-media/image/upload/v1752859365/notes-assets/images/AWS-Certified-Developer-Associate-KMS-Basics-Demo/aws-kms-key-configuration-interface.jpg)
 
 2. **Key Material Origin:**
    * Select the source of key material. Options include AWS KMS-managed key material, imported key material, using an external key store, or CloudHSM. In this demo, allow AWS KMS to manage the key material.
 
-![The image shows an AWS console interface for creating a key, with options for key usage and advanced options like key material origin and regionality.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859366/notes-assets/images/AWS-Certified-Developer-Associate-KMS-Basics-Demo/aws-console-key-creation-interface.jpg)
+![The image shows an AWS console interface for creating a key, with options for key usage and advanced options like key material origin and regionality.](https://kodekloud.com/kk-media/image/upload/v1752859366/notes-assets/images/AWS-Certified-Developer-Associate-KMS-Basics-Demo/aws-console-key-creation-interface.jpg)
 
 3. **Regionality:**
    * Choose whether to create a single-region key or a multi-region key. For this demonstration, select a single-region key.
@@ -89,12 +89,12 @@ Now, we'll create a customer-managed key that gives you full control over key ma
 5. **Defining Key Administrators:**
    * Administrators can manage key configurations and delete the key. By default, your user account is set as an administrator, but you may add others if needed.
 
-![The image shows an AWS console interface for defining key administrative permissions, listing various IAM users and roles that can administer a key. It includes options for configuring key deletion permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859367/notes-assets/images/AWS-Certified-Developer-Associate-KMS-Basics-Demo/aws-console-iam-users-roles-permissions.jpg)
+![The image shows an AWS console interface for defining key administrative permissions, listing various IAM users and roles that can administer a key. It includes options for configuring key deletion permissions.](https://kodekloud.com/kk-media/image/upload/v1752859367/notes-assets/images/AWS-Certified-Developer-Associate-KMS-Basics-Demo/aws-console-iam-users-roles-permissions.jpg)
 
 6. **Defining Key Usage Permissions:**
    * Key users are granted permissions for cryptographic operations like encryption and decryption, while administrators manage key settings. Though IAM users with KMS access can use the key by default, you can restrict these permissions to specific users.
 
-![The image shows an AWS KMS console screen where key usage permissions are being defined for various IAM users and roles. It lists users and roles with options to select them for cryptographic operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859368/notes-assets/images/AWS-Certified-Developer-Associate-KMS-Basics-Demo/aws-kms-key-usage-permissions.jpg)
+![The image shows an AWS KMS console screen where key usage permissions are being defined for various IAM users and roles. It lists users and roles with options to select them for cryptographic operations.](https://kodekloud.com/kk-media/image/upload/v1752859368/notes-assets/images/AWS-Certified-Developer-Associate-KMS-Basics-Demo/aws-kms-key-usage-permissions.jpg)
 
 After reviewing the key policy, you might see a policy similar to the following:
 
@@ -177,13 +177,13 @@ Similarly, a key user (e.g., an "external secrets operator" or a dedicated role)
 
 Complete the key creation process. Once created, the key's details will appear under Customer Managed Keys. The key policy displays administrator and user permissions, and the cryptographic configuration confirms that the key is symmetric. The key’s alias (such as "demo"), ARN, and status (enabled) are also visible. You also have the option to disable the key or schedule it for deletion if needed.
 
-![The image shows an AWS Key Management Service (KMS) interface displaying details of a customer-managed key, including its ID, alias, status, and cryptographic configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859370/notes-assets/images/AWS-Certified-Developer-Associate-KMS-Basics-Demo/aws-kms-customer-managed-key.jpg)
+![The image shows an AWS Key Management Service (KMS) interface displaying details of a customer-managed key, including its ID, alias, status, and cryptographic configuration.](https://kodekloud.com/kk-media/image/upload/v1752859370/notes-assets/images/AWS-Certified-Developer-Associate-KMS-Basics-Demo/aws-kms-customer-managed-key.jpg)
 
 ### Key Rotation
 
 AWS KMS supports automatic key rotation. To activate key rotation, click the "Edit" button in the key rotation settings, enable automatic rotation, and set the desired rotation period (in days).
 
-![The image shows an AWS Key Management Service (KMS) interface for editing automatic key rotation settings, with options to enable or disable key rotation and set the rotation period in days.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859370/notes-assets/images/AWS-Certified-Developer-Associate-KMS-Basics-Demo/aws-kms-key-rotation-settings.jpg)
+![The image shows an AWS Key Management Service (KMS) interface for editing automatic key rotation settings, with options to enable or disable key rotation and set the rotation period in days.](https://kodekloud.com/kk-media/image/upload/v1752859370/notes-assets/images/AWS-Certified-Developer-Associate-KMS-Basics-Demo/aws-kms-key-rotation-settings.jpg)
 
 ## Encrypting and Decrypting Data Using AWS CLI
 

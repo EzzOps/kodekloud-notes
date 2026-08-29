@@ -10,19 +10,19 @@ In this lesson, we will guide you through configuring an AWS Lambda function wit
 
 Begin by creating your Lambda function. For this demonstration, we'll name the function "VPC demo". By default, Lambda functions run in an environment that provides internet access. This initial setup allows you to later integrate VPC connectivity without impacting the function's execution.
 
-![The image shows the AWS Lambda function creation page, where options for authoring from scratch, using a blueprint, or a container image are available. It includes fields for function name, runtime selection, architecture choice, and permissions settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859537/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Networking-Demo/aws-lambda-function-creation-page.jpg)
+![The image shows the AWS Lambda function creation page, where options for authoring from scratch, using a blueprint, or a container image are available. It includes fields for function name, runtime selection, architecture choice, and permissions settings.](https://kodekloud.com/kk-media/image/upload/v1752859537/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Networking-Demo/aws-lambda-function-creation-page.jpg)
 
 ## Step 2: Configure VPC Settings
 
 To connect your Lambda function to internal resources within your VPC, navigate to the function's configuration tab and locate the VPC settings. Click "Edit" and then choose the desired VPC—using the default VPC is a convenient option. Select two subnets and assign a security group that allows the necessary traffic for your application.
 
-![The image shows an AWS Lambda interface where a user is editing the VPC settings for a function. A dropdown menu is open, displaying various VPC options to select from.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859538/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Networking-Demo/aws-lambda-vpc-settings-dropdown.jpg)
+![The image shows an AWS Lambda interface where a user is editing the VPC settings for a function. A dropdown menu is open, displaying various VPC options to select from.](https://kodekloud.com/kk-media/image/upload/v1752859538/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Networking-Demo/aws-lambda-vpc-settings-dropdown.jpg)
 
 After selecting the subnets and security group, click "Save". At this stage, you may encounter an error indicating that the execution role does not have permissions to call CreateNetworkInterface on EC2.
 
-![The image shows an AWS Lambda configuration screen where a VPC, subnets, and security groups are being set up. It includes details about inbound rules for specific ports.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859540/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Networking-Demo/aws-lambda-vpc-configuration.jpg)
+![The image shows an AWS Lambda configuration screen where a VPC, subnets, and security groups are being set up. It includes details about inbound rules for specific ports.](https://kodekloud.com/kk-media/image/upload/v1752859540/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Networking-Demo/aws-lambda-vpc-configuration.jpg)
 
-![The image shows an AWS Lambda configuration screen where subnets and security groups are being set up. An error message indicates that the execution role lacks permissions to call CreateNetworkInterface on EC2.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859541/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Networking-Demo/aws-lambda-configuration-error.jpg)
+![The image shows an AWS Lambda configuration screen where subnets and security groups are being set up. An error message indicates that the execution role lacks permissions to call CreateNetworkInterface on EC2.](https://kodekloud.com/kk-media/image/upload/v1752859541/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Networking-Demo/aws-lambda-configuration-error.jpg)
 
 > **lightbulb** If you encounter the `CreateNetworkInterface` error, it indicates that your Lambda function’s execution role lacks the required permissions. Proceed to Step 3 to resolve this issue.
 
@@ -75,17 +75,17 @@ After updating the policy, return to your Lambda function and save the VPC confi
 
 After saving the configuration, review the VPC settings in your Lambda function. Verify that the selected VPC, configured subnets, and chosen security group (along with its rules) correctly reflect your intended setup.
 
-![The image shows an AWS Lambda console screen for a function named "vpc-demo," displaying its configuration details, including VPC settings and subnets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859543/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Networking-Demo/aws-lambda-vpc-demo-config.jpg)
+![The image shows an AWS Lambda console screen for a function named "vpc-demo," displaying its configuration details, including VPC settings and subnets.](https://kodekloud.com/kk-media/image/upload/v1752859543/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Networking-Demo/aws-lambda-vpc-demo-config.jpg)
 
 ## Step 5: Test and Validate Network Interfaces
 
 To ensure that your Lambda function is successfully connected to the VPC, run a test to confirm that your code executes as expected. Then, proceed to the EC2 console and inspect the network interfaces. You should observe one or more network interfaces associated with your Lambda function in the default VPC.
 
-![The image shows an AWS console displaying a list of network interfaces, including details like security group IDs, interface type, instance ID, status, and IP addresses. The interface types include Elastic network interfaces and AWS Lambda VPC ENI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859544/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Networking-Demo/aws-console-network-interfaces-details.jpg)
+![The image shows an AWS console displaying a list of network interfaces, including details like security group IDs, interface type, instance ID, status, and IP addresses. The interface types include Elastic network interfaces and AWS Lambda VPC ENI.](https://kodekloud.com/kk-media/image/upload/v1752859544/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Networking-Demo/aws-console-network-interfaces-details.jpg)
 
 For a refined view, filter by the default VPC to display only the relevant network interfaces created for your Lambda function along with their configuration details.
 
-![The image shows an AWS console interface displaying a list of network interfaces, including details like interface IDs, availability zones, security groups, and descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859545/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Networking-Demo/aws-console-network-interfaces-list.jpg)
+![The image shows an AWS console interface displaying a list of network interfaces, including details like interface IDs, availability zones, security groups, and descriptions.](https://kodekloud.com/kk-media/image/upload/v1752859545/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Networking-Demo/aws-console-network-interfaces-list.jpg)
 
 Once the network interfaces are in place, your Lambda function can securely communicate with resources located within the VPC.
 

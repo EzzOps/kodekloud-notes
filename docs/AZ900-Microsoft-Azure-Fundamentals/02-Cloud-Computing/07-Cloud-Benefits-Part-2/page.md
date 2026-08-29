@@ -15,7 +15,7 @@ Let's explore how cloud computing tackles these limitations. In the cloud, elast
 
 This rapid adjustment in the cloud guarantees dynamic resource allocation and cost-efficient usage—running instances only when they are necessary.
 
-![The image illustrates the concept of cloud elasticity with a graph showing demand over time and lists four key aspects: cloud elasticity definition, dynamic resource allocation, automatic scaling, and cost-efficient resource usage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868215/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Cloud-Benefits-Part-2/cloud-elasticity-graph-aspects.jpg)
+![The image illustrates the concept of cloud elasticity with a graph showing demand over time and lists four key aspects: cloud elasticity definition, dynamic resource allocation, automatic scaling, and cost-efficient resource usage.](https://kodekloud.com/kk-media/image/upload/v1752868215/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Cloud-Benefits-Part-2/cloud-elasticity-graph-aspects.jpg)
 
 > **lightbulb** Running instances on-demand rather than continuously offers significant cost savings.
 
@@ -27,7 +27,7 @@ Data protection poses another concern. On-premises systems typically depend on l
 
 Cloud computing addresses these challenges by providing robust disaster recovery and backup solutions. Features such as data replication, automated failover, and regular backups ensure both data integrity and uninterrupted service continuity, even during unexpected disruptions.
 
-![The image is a diagram titled "Reliability – Solution," illustrating cloud computing concepts with icons of a cloud, devices, and a list of four reliability strategies: disaster recovery options, data integrity assurance, service continuity measures, and minimizing downtime and loss.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868216/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Cloud-Benefits-Part-2/reliability-solution-cloud-diagram.jpg)
+![The image is a diagram titled "Reliability – Solution," illustrating cloud computing concepts with icons of a cloud, devices, and a list of four reliability strategies: disaster recovery options, data integrity assurance, service continuity measures, and minimizing downtime and loss.](https://kodekloud.com/kk-media/image/upload/v1752868216/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Cloud-Benefits-Part-2/reliability-solution-cloud-diagram.jpg)
 
 ## Security
 
@@ -42,11 +42,11 @@ Cloud services offer a range of advanced security features designed to counter t
 
 Tools such as Microsoft Sentinel further enhance security by providing automated mitigation strategies.
 
-![The image illustrates security challenges, featuring an icon of documents secured with a lock and chain, alongside a list of challenges: security threats, data breach risks, unauthorized access concerns, and customer trust protection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868217/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Cloud-Benefits-Part-2/security-challenges-documents-lock-chain.jpg)
+![The image illustrates security challenges, featuring an icon of documents secured with a lock and chain, alongside a list of challenges: security threats, data breach risks, unauthorized access concerns, and customer trust protection.](https://kodekloud.com/kk-media/image/upload/v1752868217/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Cloud-Benefits-Part-2/security-challenges-documents-lock-chain.jpg)
 
 Implementing these measures helps safeguard data and reinforces customer trust.
 
-![The image is a diagram titled "Security Solution," featuring a central cloud labeled "Security" surrounded by various components like Threat Protection, Cloud Security, and Identity & Access Management. It also lists key areas such as Network Security, Data Encryption, Identity Management, and Threat Detection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868219/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Cloud-Benefits-Part-2/security-solution-diagram-cloud-components.jpg)
+![The image is a diagram titled "Security Solution," featuring a central cloud labeled "Security" surrounded by various components like Threat Protection, Cloud Security, and Identity & Access Management. It also lists key areas such as Network Security, Data Encryption, Identity Management, and Threat Detection.](https://kodekloud.com/kk-media/image/upload/v1752868219/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Cloud-Benefits-Part-2/security-solution-diagram-cloud-components.jpg)
 
 ## Manageability
 
@@ -64,7 +64,7 @@ Cloud platforms simplify manageability by offering centralized control and autom
 
 These tools support an efficient, well-managed, and cost-effective cloud environment.
 
-![The image illustrates a cloud-based manageability solution with interconnected devices, highlighting centralized monitoring, automated tuning, and resource optimization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868220/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Cloud-Benefits-Part-2/cloud-manageability-solution-diagram.jpg)
+![The image illustrates a cloud-based manageability solution with interconnected devices, highlighting centralized monitoring, automated tuning, and resource optimization.](https://kodekloud.com/kk-media/image/upload/v1752868220/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Cloud-Benefits-Part-2/cloud-manageability-solution-diagram.jpg)
 
 ## Conclusion
 

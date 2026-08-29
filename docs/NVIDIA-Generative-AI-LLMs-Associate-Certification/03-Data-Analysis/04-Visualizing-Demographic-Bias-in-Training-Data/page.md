@@ -54,14 +54,10 @@ Tools and references
 * Practical guidance: “Effective Data Visualization” and tutorials on comparing categorical distributions
 * Responsible AI and fairness resources: follow best practices for dataset audits and bias reporting to pair visual findings with documentation and mitigation steps
 
-<Callout icon="lightbulb">
-  When comparing datasets with different total sizes, display proportions (percent of the dataset) rather than raw counts to accurately identify underrepresentation.
-</Callout>
+> **lightbulb** When comparing datasets with different total sizes, display proportions (percent of the dataset) rather than raw counts to accurately identify underrepresentation.
 
 <Frame>
   <img alt="The image shows a stacked bar chart illustrating demographic representation across different datasets, alongside text explaining the effectiveness of this visualization for comparing categorical data distributions." />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/b8ad33c7-78ce-4828-a30c-4a8fc01d1781/lesson/bed0a4e3-9175-4ea1-9a0f-aa66e433577e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/b8ad33c7-78ce-4828-a30c-4a8fc01d1781/lesson/bed0a4e3-9175-4ea1-9a0f-aa66e433577e)

@@ -59,9 +59,7 @@ Interpretation guidance
 * Beware of over-interpreting absolute distances—UMAP/t-SNE emphasize relative neighborhood relationships, not exact metric preservation.
 * Validate clusters quantitatively (e.g., silhouette score, cluster purity) rather than relying solely on visual appearance.
 
-<Callout icon="warning">
-  t-SNE and UMAP are stochastic. To ensure reproducibility and comparability, set `random_state`/seed, log hyperparameters (e.g., `perplexity`, `n_neighbors`, `min_dist`), and, when appropriate, run multiple seeds to check stability.
-</Callout>
+> **warning** t-SNE and UMAP are stochastic. To ensure reproducibility and comparability, set `random_state`/seed, log hyperparameters (e.g., `perplexity`, `n_neighbors`, `min_dist`), and, when appropriate, run multiple seeds to check stability.
 
 Summary
 
@@ -74,9 +72,7 @@ Links and references
 * [t-SNE (scikit-learn)](https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html)
 * [PCA (scikit-learn)](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/b8ad33c7-78ce-4828-a30c-4a8fc01d1781/lesson/21e82dab-3f67-4258-8dfc-d42f13a42249" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/b8ad33c7-78ce-4828-a30c-4a8fc01d1781/lesson/21e82dab-3f67-4258-8dfc-d42f13a42249)
 
 
 # Visualizing Transformer Attention Weights

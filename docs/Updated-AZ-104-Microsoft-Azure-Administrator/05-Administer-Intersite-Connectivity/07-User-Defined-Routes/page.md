@@ -29,9 +29,7 @@ To enforce this level of security:
 
 The diagram below illustrates this setup:
 
-<Frame>
-  ![The image illustrates a network diagram showing user-defined routes with a DMZ subnet, frontend subnet, and database subnet within virtual networks. It includes a route table and network virtual appliance (NVA) for managing traffic flow.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884645/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-User-Defined-Routes/network-diagram-user-routes-dmz.jpg)
-</Frame>
+![The image illustrates a network diagram showing user-defined routes with a DMZ subnet, frontend subnet, and database subnet within virtual networks. It includes a route table and network virtual appliance (NVA) for managing traffic flow.](https://kodekloud.com/kk-media/image/upload/v1752884645/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-User-Defined-Routes/network-diagram-user-routes-dmz.jpg)
 
 After associating the route table with the frontend subnet, all outbound traffic destined for the database subnet is routed through the NVA. The NVA inspects and then forwards the traffic to the database subnet—an extra layer of security that system routes alone cannot provide.
 
@@ -46,13 +44,9 @@ To configure a UDR in the Azure portal, follow these steps:
 
 After deployment, the portal displays a confirmation message similar to the following:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page indicating that a deployment named "Microsoft.RouteTable-20231208142724" is complete. It includes options to view deployment details and next steps, with a "Go to resource" button.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884646/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-User-Defined-Routes/azure-portal-deployment-complete.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page indicating that a deployment named "Microsoft.RouteTable-20231208142724" is complete. It includes options to view deployment details and next steps, with a "Go to resource" button.](https://kodekloud.com/kk-media/image/upload/v1752884646/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-User-Defined-Routes/azure-portal-deployment-complete.jpg)
 
-<Callout icon="lightbulb">
-  After deployment, review the deployment details to ensure your route table is configured correctly before association.
-</Callout>
+> **lightbulb** After deployment, review the deployment details to ensure your route table is configured correctly before association.
 
 ### Associating the Route Table with a Subnet
 
@@ -81,13 +75,9 @@ If further segmentation is needed, you can add additional routes. For example, t
    * Destination IP address range: 192.168.1.0/24
    * Next Hop Type: Virtual network
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface where a user is adding a route to a route table named "rt-intersite." The route being added has a destination IP address range of 192.168.1.0/24 with a next hop type set to "Virtual network."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884647/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-User-Defined-Routes/azure-portal-route-table-addition.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface where a user is adding a route to a route table named "rt-intersite." The route being added has a destination IP address range of 192.168.1.0/24 with a next hop type set to "Virtual network."](https://kodekloud.com/kk-media/image/upload/v1752884647/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-User-Defined-Routes/azure-portal-route-table-addition.jpg)
 
-<Callout icon="lightbulb">
-  When multiple routes are configured, Azure selects the route with the most specific address range. For example, a route for 192.168.1.0/24 takes precedence over one for 0.0.0.0/0. Adding an even more specific CIDR (like /27) will override both.
-</Callout>
+> **lightbulb** When multiple routes are configured, Azure selects the route with the most specific address range. For example, a route for 192.168.1.0/24 takes precedence over one for 0.0.0.0/0. Adding an even more specific CIDR (like /27) will override both.
 
 ## Route Priority
 
@@ -114,6 +104,4 @@ For more detailed information on Azure networking concepts, explore these resour
 
 Understanding and properly configuring UDRs is essential for maintaining secure and efficient network architectures in Azure.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/f7470a91-91f6-4c6c-8a03-565abfeb7aee/lesson/f9401c2a-65fc-4d9f-a647-9aee85e8ec56" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/f7470a91-91f6-4c6c-8a03-565abfeb7aee/lesson/f9401c2a-65fc-4d9f-a647-9aee85e8ec56)

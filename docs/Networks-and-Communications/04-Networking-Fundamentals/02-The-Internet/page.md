@@ -43,9 +43,7 @@ Human-friendly names like [www.calicatnip.com](http://www.calicatnip.com) must b
 * Kody’s laptop uses a private IP inside her home LAN; her home router holds a public IP visible to the wider Internet.
 * The packet header therefore carries a source IP (where it originated) and a destination IP (where it should arrive).
 
-<Callout icon="lightbulb">
-  DNS: try `dig +short www.calicatnip.com` or `nslookup www.calicatnip.com` to see how names map to addresses. Note that `private` IPs (RFC 1918) are only meaningful inside a local network; NAT translates private-to-public at the router.
-</Callout>
+> **lightbulb** DNS: try `dig +short www.calicatnip.com` or `nslookup www.calicatnip.com` to see how names map to addresses. Note that `private` IPs (RFC 1918) are only meaningful inside a local network; NAT translates private-to-public at the router.
 
 Devices also need a way to identify which physical interface should receive a frame on a local link. That role is filled by MAC addresses — hardware identifiers burned into network interfaces. In short:
 

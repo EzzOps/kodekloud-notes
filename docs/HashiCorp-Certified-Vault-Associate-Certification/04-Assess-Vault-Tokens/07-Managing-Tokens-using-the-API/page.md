@@ -49,9 +49,7 @@ You have two common options for storing the token.
 | File        | \`curl …                        | jq -r ".auth.client\_token" > token.txt\` | Easy persistence; file permissions are critical |
 | Environment | \`export VAULT\_TOKEN=\$(curl … | jq -r ".auth.client\_token")\`            | Session-scoped; not persisted to disk           |
 
-<Callout icon="triangle-alert">
-  Storing tokens in plain text files can expose secrets if file permissions aren’t locked down. Always enforce least-privilege access.
-</Callout>
+> **triangle-alert** Storing tokens in plain text files can expose secrets if file permissions aren’t locked down. Always enforce least-privilege access.
 
 ### 2.1 Save to a File
 

@@ -15,7 +15,7 @@ AWS offers a Free Tier for CodePipeline, allowing you to try the service at no c
 * After 30 days, charges apply only if the pipeline remains active and processes changes
 * Only the **first** active pipeline is free; additional pipelines cost \$1/month each
 
-![The image shows a timeline indicating a transition from a free to a paid service on day 30, with a series of numbered, color-coded active pipelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862549/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Cost-Structure/timeline-free-to-paid-service-pipelines.jpg)
+![The image shows a timeline indicating a transition from a free to a paid service on day 30, with a series of numbered, color-coded active pipelines.](https://kodekloud.com/kk-media/image/upload/v1752862549/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Cost-Structure/timeline-free-to-paid-service-pipelines.jpg)
 
 > **lightbulb** You can create multiple pipelines, but only one remains free each month. Monitor your active pipelines to stay within the Free Tier.
 
@@ -29,7 +29,7 @@ AWS offers a Free Tier for CodePipeline, allowing you to try the service at no c
 
 For example, if you run **10 active pipelines**, you pay `$9/month` for pipelines #2 through #10.
 
-![The image illustrates a pricing model for active pipelines, showing one free pipeline and additional pipelines costing 1 each, totaling 9 for nine paid pipelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862550/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Cost-Structure/pricing-model-active-pipelines-diagram.jpg)
+![The image illustrates a pricing model for active pipelines, showing one free pipeline and additional pipelines costing 1 each, totaling 9 for nine paid pipelines.](https://kodekloud.com/kk-media/image/upload/v1752862550/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Cost-Structure/pricing-model-active-pipelines-diagram.jpg)
 
 ## Additional Service Costs in a CI/CD Workflow
 
@@ -40,7 +40,7 @@ A production-grade CI/CD pipeline often integrates multiple services, each with 
 * **Artifact storage**: Amazon S3
 * **Deployment**: AWS CodeDeploy, third-party tools
 
-![The image is a diagram comparing free and paid source and build services, featuring AWS CodeCommit, Amazon S3, AWS CodeBuild, GitHub, and Jenkins.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862552/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Cost-Structure/free-vs-paid-source-build-services-diagram.jpg)
+![The image is a diagram comparing free and paid source and build services, featuring AWS CodeCommit, Amazon S3, AWS CodeBuild, GitHub, and Jenkins.](https://kodekloud.com/kk-media/image/upload/v1752862552/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Cost-Structure/free-vs-paid-source-build-services-diagram.jpg)
 
 Below, find detailed pricing for the most common AWS services in a CodePipeline.
 
@@ -69,7 +69,7 @@ AWS CodeBuild charges based on **build duration** and **compute type**.
 | Build minutes | 100 minutes/month          | Varies by compute type ($0.005–$0.10/min) |
 | Compute tiers | general1.small, arm1.small | Higher CPU/memory tiers available         |
 
-![The image shows two sections: "Build Duration" with 100 build minutes per month, and "Compute Type" with options for general1.small or arm1.small instance types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862552/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Cost-Structure/build-duration-compute-type-options.jpg)
+![The image shows two sections: "Build Duration" with 100 build minutes per month, and "Compute Type" with options for general1.small or arm1.small instance types.](https://kodekloud.com/kk-media/image/upload/v1752862552/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Cost-Structure/build-duration-compute-type-options.jpg)
 
 > **lightbulb** Choose the smallest compute tier that meets your performance needs to optimize costs.
 
@@ -80,7 +80,7 @@ CodeDeploy automates application deployments to EC2 instances or on-premises ser
 * **EC2 deployments**: no additional CodeDeploy fee
 * **On-premises**: \$0.02 per instance update
 
-![The image is a diagram showing AWS CodeDeploy deploying to both AWS EC2 and an on-premise server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862553/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Cost-Structure/aws-codedeploy-ec2-onpremise-diagram.jpg)
+![The image is a diagram showing AWS CodeDeploy deploying to both AWS EC2 and an on-premise server.](https://kodekloud.com/kk-media/image/upload/v1752862553/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Cost-Structure/aws-codedeploy-ec2-onpremise-diagram.jpg)
 
 > **lightbulb** EC2 instances incur separate compute charges detailed in the next section.
 
@@ -88,7 +88,7 @@ CodeDeploy automates application deployments to EC2 instances or on-premises ser
 
 When deploying to Amazon EC2, you pay per instance based on:
 
-![The image shows the AWS EC2 logo and a list of four factors: Type, Region, Software loaded, and Pricing model.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862554/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Cost-Structure/aws-ec2-logo-factors-list.jpg)
+![The image shows the AWS EC2 logo and a list of four factors: Type, Region, Software loaded, and Pricing model.](https://kodekloud.com/kk-media/image/upload/v1752862554/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Cost-Structure/aws-ec2-logo-factors-list.jpg)
 
 1. **Instance type & size**
    * CPU, memory, storage, and networking profile

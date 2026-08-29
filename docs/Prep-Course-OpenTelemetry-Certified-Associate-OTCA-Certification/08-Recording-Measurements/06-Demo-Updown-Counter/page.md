@@ -82,9 +82,7 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
 ```
 
-<Callout icon="warning">
-  If you want Prometheus (running on another host or in a container) to scrape your app, bind the metrics server to an address accessible to Prometheus. In the example above `start_http_server(port=8000, addr="localhost")` binds to `localhost`—change to `0.0.0.0` or the appropriate host if external scraping is required.
-</Callout>
+> **warning** If you want Prometheus (running on another host or in a container) to scrape your app, bind the metrics server to an address accessible to Prometheus. In the example above `start_http_server(port=8000, addr="localhost")` binds to `localhost`—change to `0.0.0.0` or the appropriate host if external scraping is required.
 
 ## Key parts explained
 
@@ -167,11 +165,9 @@ To expose OpenTelemetry metrics to Prometheus:
 * [Prometheus Python client library](https://github.com/prometheus/client_python)
 * [Flask Documentation](https://flask.palletsprojects.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/6c005157-aba9-4784-ac50-c6334944bf94" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/6c005157-aba9-4784-ac50-c6334944bf94)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/5289ccef-8df6-436a-912b-bdd4e993b218" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/5289ccef-8df6-436a-912b-bdd4e993b218)
 
 
 # Demo Updown Counter
@@ -198,9 +194,7 @@ Compare the options:
 | Gauge           | Arbitrary instantaneous value                      | Point-in-time measurements that aren't relative to previous values (e.g., memory usage). |
 | Up-down counter | Increment and decrement relative to previous value | Active/in-progress counts that should rise and fall (e.g., concurrent requests).         |
 
-<Callout icon="lightbulb">
-  For tracking concurrent requests, an up-down counter is the preferred choice because its value moves up and down relative to the previous state.
-</Callout>
+> **lightbulb** For tracking concurrent requests, an up-down counter is the preferred choice because its value moves up and down relative to the previous state.
 
 Complete Flask example
 

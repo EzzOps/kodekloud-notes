@@ -21,9 +21,7 @@ RestartSec=5
 WantedBy=multi-user.target
 ```
 
-<Callout icon="lightbulb">
-  With **kubeadm** (v1.10+), most flags migrate into `/var/lib/kubelet/config.yaml` and are maintained automatically during `kubeadm join`.
-</Callout>
+> **lightbulb** With **kubeadm** (v1.10+), most flags migrate into `/var/lib/kubelet/config.yaml` and are maintained automatically during `kubeadm join`.
 
 ### Dedicated Config File
 
@@ -82,9 +80,7 @@ cat /var/lib/kubelet/config.yaml
 | 10250 | Secure API        | TLS + AuthN/AuthZ required | Keep enabled and locked down |
 | 10255 | Read-only metrics | Unauthenticated, HTTP only | Disable in production        |
 
-<Frame>
-  ![The image shows a table titled "Kubelet" with two ports, 10250 and 10255, and their descriptions regarding API access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880767/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-the-Kubelet/kubelet-ports-api-access-table.jpg)
-</Frame>
+![The image shows a table titled "Kubelet" with two ports, 10250 and 10255, and their descriptions regarding API access.](https://kodekloud.com/kk-media/image/upload/v1752880767/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-the-Kubelet/kubelet-ports-api-access-table.jpg)
 
 Anyone with network access to port 10255 can scrape metrics:
 
@@ -95,9 +91,7 @@ curl -s http://localhost:10255/metrics | head -n 5
 # process_cpu_seconds_total 0.01
 ```
 
-<Callout icon="triangle-alert">
-  Port `10255` is unauthenticated and exposes sensitive metrics. It should always be disabled in production.
-</Callout>
+> **triangle-alert** Port `10255` is unauthenticated and exposes sensitive metrics. It should always be disabled in production.
 
 ***
 
@@ -180,9 +174,7 @@ To completely turn off port `10255`:
 readOnlyPort: 0
 ```
 
-<Callout icon="triangle-alert">
-  Always set `readOnlyPort: 0` in production to prevent unauthenticated access to metrics.
-</Callout>
+> **triangle-alert** Always set `readOnlyPort: 0` in production to prevent unauthenticated access to metrics.
 
 ***
 
@@ -233,11 +225,9 @@ You’re now ready to apply these settings and secure the kubelet in your cluste
 * [Kubelet Configuration Reference](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/)
 * [Kubeadm Configuration](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-init/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/01b01297-c7b8-409c-b37e-10af456416fd" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/01b01297-c7b8-409c-b37e-10af456416fd)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/3d54f860-f552-48a2-8ac2-886bacd00893" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/3d54f860-f552-48a2-8ac2-886bacd00893)
 
 
 # Storage
@@ -248,21 +238,15 @@ This article discusses securing storage in Kubernetes, focusing on encryption, a
 
 Securing storage is critical for maintaining data integrity, confidentiality, and availability in your Kubernetes clusters. Pods access storage through Persistent Volumes (PVs) and Persistent Volume Claims (PVCs). Misconfigurations can lead to unauthorized data exposure, interception of unencrypted traffic, or even permanent data loss.
 
-<Frame>
-  ![The image illustrates a Kubernetes storage setup with nodes and persistent volumes, highlighting a security risk due to misconfigured access leading to potential exposure of sensitive data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880768/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Storage/kubernetes-storage-setup-security-risk.jpg)
-</Frame>
+![The image illustrates a Kubernetes storage setup with nodes and persistent volumes, highlighting a security risk due to misconfigured access leading to potential exposure of sensitive data.](https://kodekloud.com/kk-media/image/upload/v1752880768/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Storage/kubernetes-storage-setup-security-risk.jpg)
 
-<Callout icon="triangle-alert">
-  Unencrypted or improperly scoped storage access can allow attackers to read, modify, or destroy sensitive data. Always review your storage configurations and access policies.
-</Callout>
+> **triangle-alert** Unencrypted or improperly scoped storage access can allow attackers to read, modify, or destroy sensitive data. Always review your storage configurations and access policies.
 
 ## Encrypting Data at Rest and in Transit
 
 Encrypting both disk data and network traffic prevents unauthorized access and eavesdropping. Kubernetes natively supports etcd encryption, and most cloud providers offer disk-level encryption:
 
-<Frame>
-  ![The image shows icons representing three cloud storage services: AWS EBS, Azure Disk Storage, and Google Cloud Persistent Disk, under the title "Using Encryption."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880769/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Storage/using-encryption-cloud-storage-icons.jpg)
-</Frame>
+![The image shows icons representing three cloud storage services: AWS EBS, Azure Disk Storage, and Google Cloud Persistent Disk, under the title "Using Encryption."](https://kodekloud.com/kk-media/image/upload/v1752880769/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Storage/using-encryption-cloud-storage-icons.jpg)
 
 | Provider                     | Encryption Feature                                            | Reference                                                                                                  |
 | ---------------------------- | ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
@@ -283,9 +267,7 @@ parameters:
   encrypted: "true"
 ```
 
-<Callout icon="lightbulb">
-  Ensure your cloud IAM policies grant permissions to use the specified encryption keys.
-</Callout>
+> **lightbulb** Ensure your cloud IAM policies grant permissions to use the specified encryption keys.
 
 ## Role-Based Access Control (RBAC) for Storage
 
@@ -325,9 +307,7 @@ By scoping roles to namespaces and specific verbs (`get`, `list`, `create`, `del
 
 StorageClasses let you standardize storage parameters—such as encryption, IOPS, and backup policies—across your cluster.
 
-<Frame>
-  ![The image illustrates the concept of storage in Kubernetes, showing nodes within a cluster, storage classes, persistent volumes, and features like encryption, IOPS limits, and backup policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880770/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Storage/kubernetes-storage-concept-diagram.jpg)
-</Frame>
+![The image illustrates the concept of storage in Kubernetes, showing nodes within a cluster, storage classes, persistent volumes, and features like encryption, IOPS limits, and backup policies.](https://kodekloud.com/kk-media/image/upload/v1752880770/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Storage/kubernetes-storage-concept-diagram.jpg)
 
 ```yaml theme={null}
 apiVersion: storage.k8s.io/v1
@@ -351,9 +331,7 @@ Key benefits:
 
 Implement automated backups and cross-cluster replication to guard against data loss, corruption, and ransomware.
 
-<Frame>
-  ![The image is a presentation slide titled "Implementing Backup and Disaster Recovery" featuring the Velero logo and a list of use cases related to backup and disaster recovery.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880771/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Storage/implementing-backup-disaster-recovery-velero.jpg)
-</Frame>
+![The image is a presentation slide titled "Implementing Backup and Disaster Recovery" featuring the Velero logo and a list of use cases related to backup and disaster recovery.](https://kodekloud.com/kk-media/image/upload/v1752880771/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Storage/implementing-backup-disaster-recovery-velero.jpg)
 
 | Tool     | Description                                              | Link                                           |
 | -------- | -------------------------------------------------------- | ---------------------------------------------- |
@@ -366,9 +344,7 @@ Implement automated backups and cross-cluster replication to guard against data 
 
 Track storage metrics and access patterns to detect anomalies early. Use Prometheus for data collection and Grafana for visualization.
 
-<Frame>
-  ![The image shows a Kubernetes monitoring dashboard with metrics on clusters, nodes, namespaces, workloads, pods, and containers, using Prometheus and Grafana.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880773/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Storage/kubernetes-monitoring-dashboard-prometheus-grafana.jpg)
-</Frame>
+![The image shows a Kubernetes monitoring dashboard with metrics on clusters, nodes, namespaces, workloads, pods, and containers, using Prometheus and Grafana.](https://kodekloud.com/kk-media/image/upload/v1752880773/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Storage/kubernetes-monitoring-dashboard-prometheus-grafana.jpg)
 
 Important metrics:
 
@@ -381,9 +357,7 @@ Integrate alerting rules to notify on threshold breaches or suspicious activity.
 
 ## Summary
 
-<Frame>
-  ![The image illustrates a Kubernetes storage setup, showing nodes within a cluster accessing a persistent volume, with emphasis on using RBAC for access control, regular backups, and data encryption at rest.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880774/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Storage/kubernetes-storage-setup-rbac-backups.jpg)
-</Frame>
+![The image illustrates a Kubernetes storage setup, showing nodes within a cluster accessing a persistent volume, with emphasis on using RBAC for access control, regular backups, and data encryption at rest.](https://kodekloud.com/kk-media/image/upload/v1752880774/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Storage/kubernetes-storage-setup-rbac-backups.jpg)
 
 In this lesson, you learned how to:
 
@@ -395,6 +369,4 @@ In this lesson, you learned how to:
 
 For deeper dives, see the [Kubernetes Storage Concepts](https://kubernetes.io/docs/concepts/storage/) and the [Kubernetes Security Best Practices](https://kubernetes.io/docs/concepts/security/overview/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/676d9ab1-8a6f-48ca-9b46-3f9502ab9981" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/676d9ab1-8a6f-48ca-9b46-3f9502ab9981)

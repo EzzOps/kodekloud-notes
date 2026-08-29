@@ -60,9 +60,7 @@ Azure Tables offer a scalable NoSQL data storage solution for structured data. T
 
 Azure Queue Storage is designed to handle storage of large volumes of messages, accessible globally over authenticated HTTP or HTTPS. For instance, a video processing service might use queues to manage encoding tasks, where processing jobs are queued and processed by background services.
 
-<Frame>
-  ![The image is a diagram illustrating Azure Storage Services, showing the relationship between containers, files, tables, and queues with their respective data types like blobs, directories, entities, and messages. It highlights Azure Containers, Azure Files, Azure Tables, and Azure Queues.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884406/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Storage-accounts/azure-storage-services-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating Azure Storage Services, showing the relationship between containers, files, tables, and queues with their respective data types like blobs, directories, entities, and messages. It highlights Azure Containers, Azure Files, Azure Tables, and Azure Queues.](https://kodekloud.com/kk-media/image/upload/v1752884406/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Storage-accounts/azure-storage-services-diagram.jpg)
 
 Each of these services is engineered for high availability, durability, and scalability, ensuring that your application maintains excellent performance as it grows.
 
@@ -90,13 +88,9 @@ Optimized for block blobs and append blobs, this account type is ideal for textu
 
 Specifically designed for cloud-based file shares, File Storage is perfect for legacy applications that rely on traditional file systems. Available in the premium tier, this account type ensures high throughput and low latency with replication options such as LRS and GRS.
 
-<Frame>
-  ![The image is a table listing different storage account types, their services, performance tiers, and replication options. It includes types like Blob storage, General Purpose V1 and V2, Block blob storage, and File storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884407/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Storage-accounts/storage-account-types-table.jpg)
-</Frame>
+![The image is a table listing different storage account types, their services, performance tiers, and replication options. It includes types like Blob storage, General Purpose V1 and V2, Block blob storage, and File storage.](https://kodekloud.com/kk-media/image/upload/v1752884407/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Storage-accounts/storage-account-types-table.jpg)
 
-<Callout icon="lightbulb">
-  If you find the various replication options such as LRS, GRS, and REGRS confusing, detailed explanations of each method are provided in the subsequent discussion.
-</Callout>
+> **lightbulb** If you find the various replication options such as LRS, GRS, and REGRS confusing, detailed explanations of each method are provided in the subsequent discussion.
 
 ## Storage Redundancy
 
@@ -109,6 +103,4 @@ For more information on Azure Storage services and best practices, consider visi
 
 Stay tuned for our upcoming discussion on storage redundancy to further optimize your Azure environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/48d08f66-feb9-4bae-83b0-2e6aa34e24ae/lesson/1d82ecd0-b25b-4c2b-b8a7-e197aed0a16c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/48d08f66-feb9-4bae-83b0-2e6aa34e24ae/lesson/1d82ecd0-b25b-4c2b-b8a7-e197aed0a16c)

@@ -37,7 +37,7 @@ Managing system topics and custom topics requires appropriate write permissions 
 * For system topics, you must have write access at the scope of the publishing resource. For instance, capturing events from a storage account demands write permissions on that storage account.
 * When creating custom topics, it is necessary to have permissions to write a new event subscription at the scope of the Event Grid topic. This level of access guarantees complete control to deliver events correctly.
 
-![The image outlines permissions for event subscriptions, highlighting the need for write access for non-WebHook event handlers and ensuring only authorized users can send events. It also describes permissions for system and custom topics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866459/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Controlling-Access-to-Events/event-subscription-permissions-outline.jpg)
+![The image outlines permissions for event subscriptions, highlighting the need for write access for non-WebHook event handlers and ensuring only authorized users can send events. It also describes permissions for system and custom topics.](https://kodekloud.com/kk-media/image/upload/v1752866459/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Controlling-Access-to-Events/event-subscription-permissions-outline.jpg)
 
 ## Receiving Events Using Webhooks
 

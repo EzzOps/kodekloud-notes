@@ -10,9 +10,7 @@ If you're here, you're ready to dive into Backstage — the open platform for bu
 
 I'm Sanjeev, and I'll guide you from beginner to confident Backstage user. Whether your goal is to boost developer experience inside your organization or to pass the Certified Backstage Associate exam, this course combines conceptual depth with practical labs to get you there.
 
-<Callout icon="lightbulb">
-  This course emphasizes hands-on learning. Each module includes practical labs that let you experiment, make mistakes, and learn by doing — the best way to prepare for real-world Backstage adoption.
-</Callout>
+> **lightbulb** This course emphasizes hands-on learning. Each module includes practical labs that let you experiment, make mistakes, and learn by doing — the best way to prepare for real-world Backstage adoption.
 
 ## Quick setup (local lab files)
 

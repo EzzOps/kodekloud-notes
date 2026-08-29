@@ -6,9 +6,7 @@ The Terragrunt dependency block allows module dependencies, enhancing modular in
 
 The **Terragrunt dependency block** lets you declare dependencies between modules, enabling one module to consume another’s outputs. This promotes modular infrastructure, improves code reuse, and streamlines inter-module communication.
 
-<Callout icon="lightbulb">
-  Using dependency blocks helps enforce a clear execution order and guarantees that required resources are available before they’re referenced.
-</Callout>
+> **lightbulb** Using dependency blocks helps enforce a clear execution order and guarantees that required resources are available before they’re referenced.
 
 ## Key Attributes
 
@@ -41,9 +39,7 @@ The **Terragrunt dependency block** lets you declare dependencies between module
 
 Terragrunt fetches dependencies in parallel at each root level but parses nested dependencies serially. When using remote state and optimization flags, it retrieves only the lowest-level outputs, significantly speeding up large infrastructures.
 
-<Callout icon="triangle-alert">
-  Overusing mock outputs can mask real configuration issues. Always validate with real outputs before production deployments.
-</Callout>
+> **triangle-alert** Overusing mock outputs can mask real configuration issues. Always validate with real outputs before production deployments.
 
 ## Best Practices
 
@@ -114,6 +110,4 @@ This configuration guarantees that the VPC is provisioned before the EC2 instanc
 * [Terraform AWS EC2 Module](https://registry.terraform.io/modules/terraform-aws-modules/ec2-instance/aws/latest)
 * [Terragrunt Best Practices](https://terragrunt.gruntwork.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/c29a672f-f103-4fe7-a4a8-3f57dea8d4e4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/c29a672f-f103-4fe7-a4a8-3f57dea8d4e4)

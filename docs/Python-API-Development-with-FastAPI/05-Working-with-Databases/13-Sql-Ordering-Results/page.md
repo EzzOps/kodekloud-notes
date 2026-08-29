@@ -20,9 +20,7 @@ By default, the ORDER BY clause sorts the results in ascending order. If you wan
 SELECT * FROM products ORDER BY price DESC;
 ```
 
-<Callout icon="lightbulb">
-  If no sort direction is specified, PostgreSQL uses ascending order by default.
-</Callout>
+> **lightbulb** If no sort direction is specified, PostgreSQL uses ascending order by default.
 
 ## Sorting Products by Inventory
 
@@ -76,6 +74,4 @@ Using the ORDER BY clause in SQL gives you precise control over how your query r
 
 Happy querying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/83abcc21-a129-45e9-84a6-ea42f682d7c5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/83abcc21-a129-45e9-84a6-ea42f682d7c5)

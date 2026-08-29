@@ -61,9 +61,7 @@ With `synchronize: true`, Kyverno detects updates to the golden secret in `defau
 
 Best practices and security
 
-<Callout icon="lightbulb">
-  When cloning Secrets across namespaces, ensure proper RBAC and policy scoping so only authorized controllers and users can view or create clones. Consider encryption-at-rest, `imagePullSecrets` usage patterns, and tools like Sealed Secrets for additional protection. See the Kyverno documentation for generate/clone details: [https://kyverno.io/docs/writing-policies/generate/](https://kyverno.io/docs/writing-policies/generate/)
-</Callout>
+> **lightbulb** When cloning Secrets across namespaces, ensure proper RBAC and policy scoping so only authorized controllers and users can view or create clones. Consider encryption-at-rest, `imagePullSecrets` usage patterns, and tools like Sealed Secrets for additional protection. See the Kyverno documentation for generate/clone details: [https://kyverno.io/docs/writing-policies/generate/](https://kyverno.io/docs/writing-policies/generate/)
 
 Synchronization: effects and behaviors
 
@@ -83,9 +81,7 @@ The `synchronize` flag controls how Kyverno reconciles differences between the s
   <img alt="The image is a table detailing the effects of synchronization settings (true vs. false) on downstream modifications, deletions, and source changes. The outcomes vary based on the synchronization setting applied, such as reverting or deleting downstream resources." />
 </Frame>
 
-<Callout icon="warning">
-  Note: `synchronize: true` can delete downstream resources if the source is deleted or if the trigger no longer matches. Use caution to avoid accidental data loss and verify the source lifecycle before enabling synchronization.
-</Callout>
+> **warning** Note: `synchronize: true` can delete downstream resources if the source is deleted or if the trigger no longer matches. Use caution to avoid accidental data loss and verify the source lifecycle before enabling synchronization.
 
 Additional tips
 
@@ -109,8 +105,6 @@ Summary
 
 `cloneList` allows cloning an entire list of resources with a single rule.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/9024a647-736d-4de4-8b1a-d0efe638df18/lesson/1d4898b5-4058-4b07-ab5b-d199e08c078f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/9024a647-736d-4de4-8b1a-d0efe638df18/lesson/1d4898b5-4058-4b07-ab5b-d199e08c078f)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/9024a647-736d-4de4-8b1a-d0efe638df18/lesson/04321378-e9c5-412d-a3c3-b33af5dcbfb8" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/9024a647-736d-4de4-8b1a-d0efe638df18/lesson/04321378-e9c5-412d-a3c3-b33af5dcbfb8)

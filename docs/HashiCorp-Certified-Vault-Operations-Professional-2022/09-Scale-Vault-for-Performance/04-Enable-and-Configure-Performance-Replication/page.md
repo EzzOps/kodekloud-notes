@@ -15,9 +15,7 @@ Password (will be hidden):
 Success! Token policies: ["default"]
 ```
 
-<Callout icon="lightbulb">
-  Service tokens created on the primary do *not* replicate. Only Vault’s native auth methods and user credentials are mirrored.
-</Callout>
+> **lightbulb** Service tokens created on the primary do *not* replicate. Only Vault’s native auth methods and user credentials are mirrored.
 
 ***
 
@@ -31,9 +29,7 @@ With performance replication enabled, your secondary cluster stays in near real-
 * [HashiCorp Vault Replication Concepts](https://www.vaultproject.io/docs/concepts/replication)
 * [HashiCorp Vault Documentation](https://www.vaultproject.io/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b6a41fdb-447c-43b2-9489-6c8459821fab/lesson/75a4d87b-1685-42b3-8c6a-bb005b2ae5f3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b6a41fdb-447c-43b2-9489-6c8459821fab/lesson/75a4d87b-1685-42b3-8c6a-bb005b2ae5f3)
 
 
 # Enable and Configure Performance Replication
@@ -61,9 +57,7 @@ Performance replication synchronizes Vault policies, secrets engine configuratio
 | Audit backends            | Yes                     | Yes                           |
 | Tokens & leases           | No                      | Yes                           |
 
-<Frame>
-  ![The image is a diagram comparing performance and disaster recovery (DR) replication across clusters, showing data flow and replication types between a primary cluster, a performance secondary cluster, and a DR secondary cluster. It includes details on replicated data such as vault policies, secrets engines, auth methods, and audit configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878603/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Performance-Replication/performance-disaster-recovery-replication-diagram.jpg)
-</Frame>
+![The image is a diagram comparing performance and disaster recovery (DR) replication across clusters, showing data flow and replication types between a primary cluster, a performance secondary cluster, and a DR secondary cluster. It includes details on replicated data such as vault policies, secrets engines, auth methods, and audit configurations.](https://kodekloud.com/kk-media/image/upload/v1752878603/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Performance-Replication/performance-disaster-recovery-replication-diagram.jpg)
 
 * Primary cluster: handles reads & writes.
 * Performance secondaries: serve local reads; forward writes to primary.
@@ -73,9 +67,7 @@ Performance replication synchronizes Vault policies, secrets engine configuratio
 
 You can provision multiple performance secondaries from a single primary. Each region points to its nearest Vault cluster for read-heavy operations and dynamic secret generation, minimizing latency.
 
-<Frame>
-  ![The image illustrates application communication across three cloud regions (US-East, US-East2, and EU-West) with performance replication clusters and local apps interacting with local vault clusters. It shows the flow of performance replication between the regions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878604/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Performance-Replication/application-communication-cloud-regions-diagram.jpg)
-</Frame>
+![The image illustrates application communication across three cloud regions (US-East, US-East2, and EU-West) with performance replication clusters and local apps interacting with local vault clusters. It shows the flow of performance replication between the regions.](https://kodekloud.com/kk-media/image/upload/v1752878604/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Performance-Replication/application-communication-cloud-regions-diagram.jpg)
 
 * Local apps authenticate and read secrets from the regional cluster.
 * Write requests (e.g., secret writes, policy updates) travel to the primary and propagate back to all secondaries.
@@ -84,24 +76,18 @@ You can provision multiple performance secondaries from a single primary. Each r
 
 With performance replication, Vault clusters operate in an active–active mode. Applications always connect to their closest endpoint for optimal performance.
 
-<Frame>
-  ![The image is a slide about "Performance Replication," explaining its role in providing active solutions for applications across multiple data centers, with details on authentication and failover processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878605/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Performance-Replication/performance-replication-active-solutions-slide.jpg)
-</Frame>
+![The image is a slide about "Performance Replication," explaining its role in providing active solutions for applications across multiple data centers, with details on authentication and failover processes.](https://kodekloud.com/kk-media/image/upload/v1752878605/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Performance-Replication/performance-replication-active-solutions-slide.jpg)
 
 * Apps authenticate to the local cluster; tokens and leases remain local.
 * On secondary failover, clients must point to the new endpoint and re-authenticate.
 
-<Callout icon="triangle-alert">
-  If a performance secondary becomes unavailable, update client DNS or endpoint settings and re-authenticate against the promoted cluster.
-</Callout>
+> **triangle-alert** If a performance secondary becomes unavailable, update client DNS or endpoint settings and re-authenticate against the promoted cluster.
 
 ## Token and Lease Behavior
 
 Tokens and leases created on a performance secondary are scoped to that cluster and **cannot** be used on the primary or other secondaries.
 
-<Frame>
-  ![The image illustrates a performance replication process, showing a failed cluster with a red cross and skull, and a transition to another cluster where clients need to re-authenticate. It includes icons representing code and a character in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878606/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Performance-Replication/performance-replication-failed-cluster.jpg)
-</Frame>
+![The image illustrates a performance replication process, showing a failed cluster with a red cross and skull, and a transition to another cluster where clients need to re-authenticate. It includes icons representing code and a character in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878606/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Performance-Replication/performance-replication-failed-cluster.jpg)
 
 * Failure of a secondary requires clients to switch endpoints and re-authenticate.
 * **Exception**: DR replicas retain valid tokens and leases upon promotion.
@@ -110,9 +96,7 @@ Tokens and leases created on a performance secondary are scoped to that cluster 
 
 Secondaries handle dynamic credential generation (e.g., AWS IAM, database creds) locally, reducing write load on the primary and improving scalability.
 
-<Frame>
-  ![The image is a slide about "Performance Replication" in Vault, explaining how performance replicated clusters handle secret retrieval and dynamic credential generation locally, offloading some write operations from the primary cluster. It also notes that requests to write data or update configurations are forwarded to the primary cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878607/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Performance-Replication/performance-replication-vault-clusters-slide.jpg)
-</Frame>
+![The image is a slide about "Performance Replication" in Vault, explaining how performance replicated clusters handle secret retrieval and dynamic credential generation locally, offloading some write operations from the primary cluster. It also notes that requests to write data or update configurations are forwarded to the primary cluster.](https://kodekloud.com/kk-media/image/upload/v1752878607/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Performance-Replication/performance-replication-vault-clusters-slide.jpg)
 
 * Local operations (token creation, lease issuance, dynamic secrets) stay within the secondary.
 * Configuration changes (KV updates, policy and auth method modifications) are forwarded to the primary and then replicated.
@@ -121,9 +105,7 @@ Secondaries handle dynamic credential generation (e.g., AWS IAM, database creds)
 
 Performance secondaries directly contact external services—such as AWS or databases—for dynamic credential issuance, further offloading the primary.
 
-<Frame>
-  ![The image illustrates a diagram of interaction with external services, showing a primary cluster and a performance replication cluster connecting to AWS and a database, with requests for database and AWS credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878608/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Performance-Replication/interaction-diagram-external-services-aws-database.jpg)
-</Frame>
+![The image illustrates a diagram of interaction with external services, showing a primary cluster and a performance replication cluster connecting to AWS and a database, with requests for database and AWS credentials.](https://kodekloud.com/kk-media/image/upload/v1752878608/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Performance-Replication/interaction-diagram-external-services-aws-database.jpg)
 
 ## Setup Flow
 
@@ -134,9 +116,7 @@ The performance replication setup mirrors DR replication steps:
 3. Enable the secondary with the token.
 4. Monitor replication health.
 
-<Frame>
-  ![The image is a flowchart illustrating the setup process for a system, involving steps like activating a primary, fetching a secondary token, activating a secondary, and replication. It includes icons and brief descriptions for each step, with a Vault certification badge in the corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878609/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Performance-Replication/system-setup-flowchart-activation-replication.jpg)
-</Frame>
+![The image is a flowchart illustrating the setup process for a system, involving steps like activating a primary, fetching a secondary token, activating a secondary, and replication. It includes icons and brief descriptions for each step, with a Vault certification badge in the corner.](https://kodekloud.com/kk-media/image/upload/v1752878609/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Performance-Replication/system-setup-flowchart-activation-replication.jpg)
 
 ### CLI Commands
 

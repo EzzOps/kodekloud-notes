@@ -14,17 +14,13 @@ Sealed Secrets provides a secure, GitOps-friendly method for managing Kubernetes
 | kubeseal CLI                 | Local or CI command-line utility     | Encrypts plain `Secret` manifests into `SealedSecret` manifests               |
 | SealedSecret Custom Resource | CRD defining encrypted secret schema | Lets the Operator recognize and decrypt your encrypted payloads automatically |
 
-<Callout icon="lightbulb">
-  * A running Kubernetes cluster (v1.13+).
+> **lightbulb** * A running Kubernetes cluster (v1.13+).
   * The Sealed Secrets Operator installed:\
     `kubectl apply -f https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.23.0/controller.yaml`
   * Public key accessible for `kubeseal`:\
     `kubeseal --fetch-cert > public-cert.pem`
-</Callout>
 
-<Callout icon="triangle-alert">
-  Always back up the private key used by the Sealed Secrets controller. Losing it means you won’t be able to decrypt existing `SealedSecret` resources.
-</Callout>
+> **triangle-alert** Always back up the private key used by the Sealed Secrets controller. Losing it means you won’t be able to decrypt existing `SealedSecret` resources.
 
 ## GitOps Workflow for Encrypted Secrets
 
@@ -52,6 +48,4 @@ Sealed Secrets provides a secure, GitOps-friendly method for managing Kubernetes
 * [Kubernetes Secrets Documentation](https://kubernetes.io/docs/concepts/configuration/secret/)
 * [kubeseal CLI Usage](https://github.com/bitnami-labs/sealed-secrets#kubeseal)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/0f3ed562-f151-48f9-bb8c-8d3a4dbb4fc3/lesson/1c5a084a-038e-426c-9d6c-3fb04f1de2b5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/0f3ed562-f151-48f9-bb8c-8d3a4dbb4fc3/lesson/1c5a084a-038e-426c-9d6c-3fb04f1de2b5)

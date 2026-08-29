@@ -145,20 +145,14 @@ Table: Common VirtualService capabilities and typical uses
 
 Important: VirtualServices only take effect when traffic passes through the Envoy sidecar proxy. If the target namespace does not have Istio sidecar injection enabled or a sidecar proxy is not injected into the pod, the VirtualService routing will not be applied.
 
-<Callout icon="warning">
-  If a namespace is not Istio-enabled (no sidecar proxy), a VirtualService will not have any effect. Ensure sidecar injection is enabled or that the workload includes the Envoy sidecar. See Istio sidecar injection docs: [https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/](https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/)
-</Callout>
+> **warning** If a namespace is not Istio-enabled (no sidecar proxy), a VirtualService will not have any effect. Ensure sidecar injection is enabled or that the workload includes the Envoy sidecar. See Istio sidecar injection docs: [https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/](https://istio.io/latest/docs/setup/additional-setup/sidecar-injection/)
 
 Most advanced Istio traffic-management features require a VirtualService. If you want mirroring, rewrites, fault injection, or any L7 policies, you will do it via VirtualService configuration. Become familiar with the Istio VirtualService reference so you can quickly craft the right rules:
 
 * Istio VirtualService reference: [https://istio.io/latest/docs/reference/config/networking/virtual-service/](https://istio.io/latest/docs/reference/config/networking/virtual-service/)
 
-<Callout icon="lightbulb">
-  Traffic management and VirtualServices are heavily tested topics on the Istio certification. Spend time practicing match conditions, routing rules, rewrites, retries, and fault injection scenarios. Many exam tasks involve creating or troubleshooting VirtualServices.
-</Callout>
+> **lightbulb** Traffic management and VirtualServices are heavily tested topics on the Istio certification. Spend time practicing match conditions, routing rules, rewrites, retries, and fault injection scenarios. Many exam tasks involve creating or troubleshooting VirtualServices.
 
 Now that you understand the concepts and examples, try creating a VirtualService in a lab environment and observe how rules are applied when Envoy sidecars are present. This hands-on practice will solidify your understanding of routing behavior, rewrites, and canary strategies.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/0b22c7ab-b9bd-4abe-a20e-a7ba9d6f4441" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/0b22c7ab-b9bd-4abe-a20e-a7ba9d6f4441)

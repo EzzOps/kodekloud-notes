@@ -37,9 +37,7 @@ When migrating the repository from GitHub to Gitea using the web UI (as shown ab
 * The source repository URL on GitHub.
 * A GitHub personal access token with the appropriate scopes (e.g., `repo`) so Gitea can read/import the source repo.
 
-<Callout icon="lightbulb">
-  When migrating from GitHub to Gitea, ensure your GitHub personal access token includes the necessary scopes (for example, `repo`). This allows the migration to read the source repository and import it into your Gitea instance.
-</Callout>
+> **lightbulb** When migrating from GitHub to Gitea, ensure your GitHub personal access token includes the necessary scopes (for example, `repo`). This allows the migration to read the source repository and import it into your Gitea instance.
 
 Local Kubernetes environment
 For this demo I’m using Docker Desktop’s single-node Kubernetes cluster. Confirm that your node and namespaces are ready with these commands:
@@ -59,9 +57,7 @@ kube-public       Active   42m
 kube-system       Active   42m
 ```
 
-<Callout icon="warning">
-  Ensure Kubernetes is enabled in Docker Desktop (or your local runtime) before applying manifests or onboarding Argo CD. If the cluster is not ready, Argo CD and the deployed manifests will fail to sync.
-</Callout>
+> **warning** Ensure Kubernetes is enabled in Docker Desktop (or your local runtime) before applying manifests or onboarding Argo CD. If the cluster is not ready, Argo CD and the deployed manifests will fail to sync.
 
 Next steps — Argo CD and GitOps
 In the upcoming lessons we will:
@@ -79,6 +75,4 @@ References and further reading
 
 That’s all for this demo. In the next lesson we’ll run through installing Argo CD and onboarding this repository to showcase GitOps in action.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/69f00b55-1cf4-4c02-a008-d0fad48af77a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/69f00b55-1cf4-4c02-a008-d0fad48af77a)

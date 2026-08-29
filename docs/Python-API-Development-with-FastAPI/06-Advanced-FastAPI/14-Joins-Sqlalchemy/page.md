@@ -116,13 +116,9 @@ select * from users;
 
 This query will confirm that the application stores only the hashed password, significantly reducing security risks in the event of a data breach.
 
-<Callout icon="lightbulb">
-  By following these steps, you enhance your application's security by ensuring user passwords are hashed rather than stored in plain text. This practice is essential for maintaining user data integrity.
-</Callout>
+> **lightbulb** By following these steps, you enhance your application's security by ensuring user passwords are hashed rather than stored in plain text. This practice is essential for maintaining user data integrity.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/08fbff1f-121f-4210-ad9a-e600223963d0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/08fbff1f-121f-4210-ad9a-e600223963d0)
 
 
 # Joins Sqlalchemy
@@ -197,10 +193,8 @@ results = db.query(models.Post).join(
 )
 ```
 
-<Callout icon="lightbulb">
-  By default SQLAlchemy produces an inner join. Use `isouter=True` to create a
+> **lightbulb** By default SQLAlchemy produces an inner join. Use `isouter=True` to create a
   LEFT OUTER JOIN so posts with zero votes are included.
-</Callout>
 
 If you want to include posts without any votes (i.e., zero votes), use a left outer join:
 
@@ -300,11 +294,9 @@ class PostOut(BaseModel):
 
 Important: If your query serialization nests the Post under a capitalized `Post` key, your Pydantic model must match that key exactly. Otherwise set a different returned shape or adjust your schema accordingly.
 
-<Callout icon="warning">
-  If your response model does not match the exact shape (keys, nesting,
+> **warning** If your response model does not match the exact shape (keys, nesting,
   capitalization) of the returned data, FastAPI/Pydantic will raise validation
   errors. Update the returned data shape or the response model to match.
-</Callout>
 
 ## Final router implementation (response model matches joined results)
 

@@ -15,9 +15,7 @@ module "backup_storage" {
 
 Think of a module like a function: you define inputs (variables) and the module returns outputs. When Terraform evaluates the configuration, it injects the passed input values into the module and evaluates the resources inside as part of the calling configuration's graph.
 
-<Callout icon="lightbulb">
-  Module block names are local identifiers only. They do not automatically set Azure resource names — pass explicit values through variables for resource naming.
-</Callout>
+> **lightbulb** Module block names are local identifiers only. They do not automatically set Azure resource names — pass explicit values through variables for resource naming.
 
 ## Module sources: local and remote
 
@@ -245,9 +243,7 @@ module "rg2" {
 
 Then add `rg_name2` to `variables.tf` / `terraform.tfvars` to provide the second resource group name.
 
-<Callout icon="warning">
-  Keep module variable names and the calling attributes aligned. A mismatch (for example, passing `rg` to a module that expects `resource_group_name`) will cause validation or planning errors.
-</Callout>
+> **warning** Keep module variable names and the calling attributes aligned. A mismatch (for example, passing `rg` to a module that expects `resource_group_name`) will cause validation or planning errors.
 
 ## Summary
 
@@ -262,9 +258,7 @@ Links and references
 * [Azure Provider (azurerm) documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 * [Azure CLI docs](https://learn.microsoft.com/cli/azure/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/e38de693-04a0-45e9-b67a-9f8d26ac03ee/lesson/ad9c5d69-215a-492c-a468-1c9257bbce9b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/e38de693-04a0-45e9-b67a-9f8d26ac03ee/lesson/ad9c5d69-215a-492c-a468-1c9257bbce9b)
 
 
 # Introduction
@@ -285,9 +279,7 @@ Learning objectives
 * Call and consume a module using inputs and outputs.
 * Compare configurations with and without modules and reason about trade-offs for reusability, consistency, and maintainability in enterprise Azure deployments.
 
-<Callout icon="lightbulb">
-  A Terraform module is simply a folder containing Terraform configuration files. The root module is the configuration in your current working directory; any other folder referenced with a `module` block is a child (or remote) module.
-</Callout>
+> **lightbulb** A Terraform module is simply a folder containing Terraform configuration files. The root module is the configuration in your current working directory; any other folder referenced with a `module` block is a child (or remote) module.
 
 This overview introduces core concepts with minimal, focused examples to make ideas concrete and actionable.
 

@@ -10,19 +10,19 @@ In this article, we explore the fundamental components that empower conversation
 
 An utterance is the spoken or typed input provided by a user. For instance, when a user says "Set a timer for 10 minutes," this complete input is processed as an utterance. Conversational AI systems analyze such inputs to understand the user's requirements.
 
-![The image illustrates a person sitting at a desk with a laptop, discussing "Conversational Language and Understanding" with a focus on "Utterance." It includes a text box saying "Set a timer for 10 minutes" and a note about user input.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856907/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Conversational-Language-and-Understanding/conversational-language-utterance-discussion.jpg)
+![The image illustrates a person sitting at a desk with a laptop, discussing "Conversational Language and Understanding" with a focus on "Utterance." It includes a text box saying "Set a timer for 10 minutes" and a note about user input.](https://kodekloud.com/kk-media/image/upload/v1752856907/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Conversational-Language-and-Understanding/conversational-language-utterance-discussion.jpg)
 
 ## Intent
 
 The intent represents the underlying purpose or goal behind the user’s utterance. In the previous example, the intent is "set timer." The system identifies this intent to decide on the appropriate course of action.
 
-![The image is about "Conversational Language and Understanding," focusing on "Intent," which is described as the action a user wants the system to perform. It includes an illustration of a person with a laptop and a computer screen, along with the example "Set a timer for 10 minutes."](../../../../images/kodekloud.com/kk-media/image/upload/v1752856908/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Conversational-Language-and-Understanding/conversational-language-intent-illustration.jpg)
+![The image is about "Conversational Language and Understanding," focusing on "Intent," which is described as the action a user wants the system to perform. It includes an illustration of a person with a laptop and a computer screen, along with the example "Set a timer for 10 minutes."](https://kodekloud.com/kk-media/image/upload/v1752856908/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Conversational-Language-and-Understanding/conversational-language-intent-illustration.jpg)
 
 ## Entity
 
 An entity provides specific details extracted from an utterance. In our timer example, the phrase "10 minutes" is an entity that specifies the duration. By extracting entities, the system can execute the user's request with greater precision.
 
-![The image is a slide titled "Conversational Language and Understanding," focusing on the concept of "Entity" as a specific detail in an utterance that provides context, with an example of setting a timer for 10 minutes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856909/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Conversational-Language-and-Understanding/conversational-language-entity-timer.jpg)
+![The image is a slide titled "Conversational Language and Understanding," focusing on the concept of "Entity" as a specific detail in an utterance that provides context, with an example of setting a timer for 10 minutes.](https://kodekloud.com/kk-media/image/upload/v1752856909/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Conversational-Language-and-Understanding/conversational-language-entity-timer.jpg)
 
 ## How Conversational AI Works
 
@@ -43,7 +43,7 @@ Follow these steps to create, train, test, and deploy a conversational language 
 
 * In Language Studio, click on **"Create New"** and choose **"Conversational Language Understanding."**
 
-![The image shows the Azure Language Studio interface, featuring options for creating new projects and exploring capabilities like call transcription, summarization, and document translation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856910/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Conversational-Language-and-Understanding/azure-language-studio-interface.jpg)
+![The image shows the Azure Language Studio interface, featuring options for creating new projects and exploring capabilities like call transcription, summarization, and document translation.](https://kodekloud.com/kk-media/image/upload/v1752856910/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Conversational-Language-and-Understanding/azure-language-studio-interface.jpg)
 
 ### 2. Project Setup
 
@@ -56,7 +56,7 @@ Follow these steps to create, train, test, and deploy a conversational language 
 * Create an intent called "Set Reminder."
 * You can add additional intents such as "Cancel Reminder," "Set Alarm," "Modify Alarm," "Cancel Alarm," or "Set Recurring Alarm" as required.
 
-![The image shows a screenshot of Azure Language Studio, specifically the "Schema definition" section, where a user is adding a new intent named "CancelRemind."](../../../../images/kodekloud.com/kk-media/image/upload/v1752856911/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Conversational-Language-and-Understanding/azure-language-studio-schema-cancelremind.jpg)
+![The image shows a screenshot of Azure Language Studio, specifically the "Schema definition" section, where a user is adding a new intent named "CancelRemind."](https://kodekloud.com/kk-media/image/upload/v1752856911/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Conversational-Language-and-Understanding/azure-language-studio-schema-cancelremind.jpg)
 
 ### 4. Labeling the Data
 
@@ -79,9 +79,9 @@ For this utterance:
 * Time: "morning"
 * Date: (optional, e.g., "tomorrow")
 
-![The image shows a screenshot of the Azure Language Studio interface, specifically the data labeling section for a conversational language understanding project. It includes options for setting intents and utterances, with a focus on creating a reminder-related task.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856913/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Conversational-Language-and-Understanding/azure-language-studio-data-labeling.jpg)
+![The image shows a screenshot of the Azure Language Studio interface, specifically the data labeling section for a conversational language understanding project. It includes options for setting intents and utterances, with a focus on creating a reminder-related task.](https://kodekloud.com/kk-media/image/upload/v1752856913/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Conversational-Language-and-Understanding/azure-language-studio-data-labeling.jpg)
 
-![The image shows a screenshot of the Microsoft Azure Language Studio interface, specifically the data labeling section for a conversational language understanding project. It includes labeled utterances for intents like "SetReminder" with entities such as "Action," "Date," and "Time."](../../../../images/kodekloud.com/kk-media/image/upload/v1752856917/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Conversational-Language-and-Understanding/azure-language-studio-data-labeling-2.jpg)
+![The image shows a screenshot of the Microsoft Azure Language Studio interface, specifically the data labeling section for a conversational language understanding project. It includes labeled utterances for intents like "SetReminder" with entities such as "Action," "Date," and "Time."](https://kodekloud.com/kk-media/image/upload/v1752856917/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Conversational-Language-and-Understanding/azure-language-studio-data-labeling-2.jpg)
 
 ### 5. Additional Example – Cancel Reminder
 
@@ -113,7 +113,7 @@ Test your deployed model using sample utterances:
 * **Example 1:** "Set an alarm for 11 a.m."\
   The model should recognize the intent "Set Alarm" with a high confidence score and extract the time "11 a.m."
 
-![The image shows a screenshot of the Azure Language Studio interface, specifically the "Testing deployments" section, where a text input "Set an alarm for 11:00 AM" is analyzed to identify the intent "SetAlarm" with a confidence of 98.90% and the entity "Time" with a confidence of 100%.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856919/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Conversational-Language-and-Understanding/azure-language-studio-testing-deployments.jpg)
+![The image shows a screenshot of the Azure Language Studio interface, specifically the "Testing deployments" section, where a text input "Set an alarm for 11:00 AM" is analyzed to identify the intent "SetAlarm" with a confidence of 98.90% and the entity "Time" with a confidence of 100%.](https://kodekloud.com/kk-media/image/upload/v1752856919/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Conversational-Language-and-Understanding/azure-language-studio-testing-deployments.jpg)
 
 * **Example 2:** "Cancel all meetings for tomorrow."\
   The system should detect the "Cancel Reminder" intent, though it might not capture any entities if they are not precisely defined.
@@ -121,7 +121,7 @@ Test your deployed model using sample utterances:
 * **Example 3:** "Cancel my reminder to call the hospital."\
   Here, the extracted entity "Action" should be recognized as "call hospital," confirming the accuracy of the system’s understanding.
 
-![The image shows a screenshot of the Azure Language Studio interface, specifically the "Testing deployments" section, where a text input "Cancel my reminder to call hospital" is being analyzed for intent and entities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856920/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Conversational-Language-and-Understanding/azure-language-studio-testing-deployments-2.jpg)
+![The image shows a screenshot of the Azure Language Studio interface, specifically the "Testing deployments" section, where a text input "Cancel my reminder to call hospital" is being analyzed for intent and entities.](https://kodekloud.com/kk-media/image/upload/v1752856920/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Conversational-Language-and-Understanding/azure-language-studio-testing-deployments-2.jpg)
 
 > **lightbulb** Regular testing of your model with varied examples ensures robust performance and accurate entity extraction.
 

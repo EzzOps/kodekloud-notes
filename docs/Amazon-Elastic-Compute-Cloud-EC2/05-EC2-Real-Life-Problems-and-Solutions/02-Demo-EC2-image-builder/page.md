@@ -18,7 +18,7 @@ Learn how to automate AMI creation with EC2 Image Builder. In this guide, we'll 
 2. In the Services menu, search for **EC2 Image Builder**.
 3. Open the service to view the Image Builder dashboard, which highlights three main steps: Recipe, Infrastructure configuration, and Distribution.
 
-![The image shows the AWS EC2 Image Builder interface, detailing steps for creating an image pipeline, including creating a recipe, defining infrastructure configuration, and setting distribution options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869051/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-ec2-image-builder-pipeline-steps.jpg)
+![The image shows the AWS EC2 Image Builder interface, detailing steps for creating an image pipeline, including creating a recipe, defining infrastructure configuration, and setting distribution options.](https://kodekloud.com/kk-media/image/upload/v1752869051/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-ec2-image-builder-pipeline-steps.jpg)
 
 ***
 
@@ -30,7 +30,7 @@ Learn how to automate AMI creation with EC2 Image Builder. In this guide, we'll 
 4. Enable **Enhanced metadata collection** to capture detailed build metrics.
 5. Optionally, turn on security scanning for vulnerability reports.
 
-![The image shows an AWS console interface for creating an image pipeline, with options for enhanced metadata collection and security scanning settings. A description field is filled with "install nginx," and there are scheduling options for the build.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869053/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-console-image-pipeline-settings.jpg)
+![The image shows an AWS console interface for creating an image pipeline, with options for enhanced metadata collection and security scanning settings. A description field is filled with "install nginx," and there are scheduling options for the build.](https://kodekloud.com/kk-media/image/upload/v1752869053/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-console-image-pipeline-settings.jpg)
 
 ***
 
@@ -45,7 +45,7 @@ You can trigger your image builds automatically or manually.
 
 For this demo, select **Manual**.
 
-![The image shows an AWS console interface for setting up a build schedule in Image Builder, with options for schedule builder, CRON expression, and manual execution. The selected schedule is set to run weekly on Mondays at 09:00 UTC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869054/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-console-image-builder-schedule.jpg)
+![The image shows an AWS console interface for setting up a build schedule in Image Builder, with options for schedule builder, CRON expression, and manual execution. The selected schedule is set to run weekly on Mondays at 09:00 UTC.](https://kodekloud.com/kk-media/image/upload/v1752869054/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-console-image-builder-schedule.jpg)
 
 ***
 
@@ -69,9 +69,9 @@ A recipe lists the components and settings for your AMI.
 
 > **lightbulb** Ensure the version follows semantic versioning (`x.y.z`) to avoid validation errors.
 
-![The image shows an AWS Image Builder configuration screen where a user is setting up a pipeline with the name "nginx" and version "1.22," but there's an error indicating the version format is incorrect.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869055/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-image-builder-nginx-pipeline-error.jpg)
+![The image shows an AWS Image Builder configuration screen where a user is setting up a pipeline with the name "nginx" and version "1.22," but there's an error indicating the version format is incorrect.](https://kodekloud.com/kk-media/image/upload/v1752869055/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-image-builder-nginx-pipeline-error.jpg)
 
-![The image shows an AWS console interface for creating a pipeline, with options to select image origins like CentOS, Red Hat, and SUSE, and configuration settings for instance management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869056/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-console-pipeline-image-origins-settings.jpg)
+![The image shows an AWS console interface for creating a pipeline, with options to select image origins like CentOS, Red Hat, and SUSE, and configuration settings for instance management.](https://kodekloud.com/kk-media/image/upload/v1752869056/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-console-pipeline-image-origins-settings.jpg)
 
 ***
 
@@ -133,9 +133,9 @@ phases:
             - sudo reboot
 ```
 
-![The image shows an AWS console interface for creating a build component in Amazon Linux, with options to select and filter components. A cursor is hovering over the "Create build component" button.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869057/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-console-create-build-component.jpg)
+![The image shows an AWS console interface for creating a build component in Amazon Linux, with options to select and filter components. A cursor is hovering over the "Create build component" button.](https://kodekloud.com/kk-media/image/upload/v1752869057/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-console-create-build-component.jpg)
 
-![The image shows an AWS Image Builder console screen where a user is configuring component details, including selecting the operating system as Linux and specifying component version and name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869059/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-image-builder-linux-component-configuration.jpg)
+![The image shows an AWS Image Builder console screen where a user is configuring component details, including selecting the operating system as Linux and specifying component version and name.](https://kodekloud.com/kk-media/image/upload/v1752869059/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-image-builder-linux-component-configuration.jpg)
 
 Save the component. Back in the pipeline wizard, filter **Components** by **Owned by me** and select your `nginx` component.
 
@@ -145,9 +145,9 @@ Save the component. Back in the pipeline wizard, filter **Components** by **Owne
 
 By default, Image Builder offers several tests. Select the **Reboot Test** to ensure the AMI boots correctly after a restart.
 
-![The image shows an AWS console interface for creating an image pipeline, specifically focusing on selecting test components for Amazon Linux. It includes options for verifying the output AMI and a list of test components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869060/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-console-image-pipeline-test-components.jpg)
+![The image shows an AWS console interface for creating an image pipeline, specifically focusing on selecting test components for Amazon Linux. It includes options for verifying the output AMI and a list of test components.](https://kodekloud.com/kk-media/image/upload/v1752869060/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-console-image-pipeline-test-components.jpg)
 
-![The image shows an AWS console interface for creating a pipeline, specifically selecting test components for Amazon Linux, with a focus on a "reboot-test-linux" component.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869062/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-console-pipeline-reboot-test-linux.jpg)
+![The image shows an AWS console interface for creating a pipeline, specifically selecting test components for Amazon Linux, with a focus on a "reboot-test-linux" component.](https://kodekloud.com/kk-media/image/upload/v1752869062/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-console-pipeline-reboot-test-linux.jpg)
 
 ***
 
@@ -160,7 +160,7 @@ Specify EBS settings for the build instance’s root volume:
 * **IOPS**: Default
 * **Encryption**: Enable (recommended)
 
-![The image shows an AWS console interface for configuring storage volumes, including options for EBS volume size, type, and encryption settings. There are also fields for adding tags to the configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869063/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-console-storage-volumes-configuration.jpg)
+![The image shows an AWS console interface for configuring storage volumes, including options for EBS volume size, type, and encryption settings. There are also fields for adding tags to the configuration.](https://kodekloud.com/kk-media/image/upload/v1752869063/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-console-storage-volumes-configuration.jpg)
 
 ***
 
@@ -168,7 +168,7 @@ Specify EBS settings for the build instance’s root volume:
 
 Choose **Default** to let Image Builder orchestrate phases automatically. Use **Custom** if you need to reorder or skip specific steps.
 
-![The image shows an AWS EC2 Image Builder interface where a user is defining an image creation process, with options for selecting default or custom workflows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869064/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-ec2-image-builder-workflow-interface.jpg)
+![The image shows an AWS EC2 Image Builder interface where a user is defining an image creation process, with options for selecting default or custom workflows.](https://kodekloud.com/kk-media/image/upload/v1752869064/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-ec2-image-builder-workflow-interface.jpg)
 
 ***
 
@@ -182,7 +182,7 @@ Define the compute environment for builds:
 4. Choose an instance type, such as `t4g.medium` for ARM64.
 5. Optionally, add an SNS topic for notifications.
 
-![The image shows an AWS EC2 Image Builder interface for defining infrastructure configuration, with options to create or use existing configurations and details about IAM instance profiles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869065/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-ec2-image-builder-interface.jpg)
+![The image shows an AWS EC2 Image Builder interface for defining infrastructure configuration, with options to create or use existing configurations and details about IAM instance profiles.](https://kodekloud.com/kk-media/image/upload/v1752869065/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-ec2-image-builder-interface.jpg)
 
 ***
 
@@ -190,7 +190,7 @@ Define the compute environment for builds:
 
 By default, the AMI is shared in the current account and region. Add other accounts or regions if you need cross-account or cross-region distribution.
 
-![The image shows an AWS console interface for defining distribution settings in an EC2 image builder pipeline. It includes options for configuration and region settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869066/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-console-ec2-image-builder-settings.jpg)
+![The image shows an AWS console interface for defining distribution settings in an EC2 image builder pipeline. It includes options for configuration and region settings.](https://kodekloud.com/kk-media/image/upload/v1752869066/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-console-ec2-image-builder-settings.jpg)
 
 ***
 
@@ -208,9 +208,9 @@ Double-check all settings:
 
 Click **Create pipeline** to launch.
 
-![The image shows an AWS EC2 Image Builder interface reviewing pipeline details for creating an image pipeline named "nginx," with settings for metadata collection and scanning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869067/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-ec2-image-builder-nginx-pipeline.jpg)
+![The image shows an AWS EC2 Image Builder interface reviewing pipeline details for creating an image pipeline named "nginx," with settings for metadata collection and scanning.](https://kodekloud.com/kk-media/image/upload/v1752869067/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-ec2-image-builder-nginx-pipeline.jpg)
 
-![The image shows an AWS console interface for creating an image pipeline, detailing instance configuration, storage volumes, and image creation process steps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869068/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-console-image-pipeline-configuration.jpg)
+![The image shows an AWS console interface for creating an image pipeline, detailing instance configuration, storage volumes, and image creation process steps.](https://kodekloud.com/kk-media/image/upload/v1752869068/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-console-image-pipeline-configuration.jpg)
 
 ***
 
@@ -222,7 +222,7 @@ Click **Create pipeline** to launch.
 
 The status will change to **Building**.
 
-![The image shows the AWS EC2 Image Builder interface with a successful image pipeline execution notification. It displays details of an image pipeline named "nginx" with its status, type, creation time, version, and ARN.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869069/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-ec2-image-builder-nginx-pipeline-2.jpg)
+![The image shows the AWS EC2 Image Builder interface with a successful image pipeline execution notification. It displays details of an image pipeline named "nginx" with its status, type, creation time, version, and ARN.](https://kodekloud.com/kk-media/image/upload/v1752869069/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-ec2-image-builder-nginx-pipeline-2.jpg)
 
 ***
 
@@ -233,7 +233,7 @@ As the pipeline runs, a build instance spins up. To view logs:
 1. Under **Pipeline executions**, select the active run.
 2. Click **Log stream** to open CloudWatch Logs.
 
-![The image shows an AWS CloudWatch interface displaying log events related to an image build process, including timestamps and messages about the state transitions and instance launches.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869070/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-cloudwatch-log-events-image-build.jpg)
+![The image shows an AWS CloudWatch interface displaying log events related to an image build process, including timestamps and messages about the state transitions and instance launches.](https://kodekloud.com/kk-media/image/upload/v1752869070/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-cloudwatch-log-events-image-build.jpg)
 
 ***
 
@@ -242,7 +242,7 @@ As the pipeline runs, a build instance spins up. To view logs:
 After completion, go to the EC2 **AMIs** console.\
 Filter by **Owned by me** to confirm your new AMI and its status.
 
-![The image shows an Amazon Web Services (AWS) EC2 console displaying details of an Amazon Machine Image (AMI) with ID ami-053941b29e996e446, including its status, architecture, and platform details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869071/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-ec2-console-ami-details.jpg)
+![The image shows an Amazon Web Services (AWS) EC2 console displaying details of an Amazon Machine Image (AMI) with ID ami-053941b29e996e446, including its status, architecture, and platform details.](https://kodekloud.com/kk-media/image/upload/v1752869071/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-ec2-console-ami-details.jpg)
 
 ***
 
@@ -256,11 +256,11 @@ Image Builder automatically launches a test instance:
 
 Check the EC2 Instances console or the component library to confirm.
 
-![The image shows an AWS EC2 Image Builder interface displaying a list of components, with one component named "nginx latest" for Linux. There's a notification about viewing components after subscribing to a CIS-hardened image.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869072/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-ec2-image-builder-nginx-latest.jpg)
+![The image shows an AWS EC2 Image Builder interface displaying a list of components, with one component named "nginx latest" for Linux. There's a notification about viewing components after subscribing to a CIS-hardened image.](https://kodekloud.com/kk-media/image/upload/v1752869072/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-ec2-image-builder-nginx-latest.jpg)
 
 To dive deeper into execution details, view the CloudWatch logs:
 
-![The image shows an AWS CloudWatch console displaying log entries related to system executions and command completions. The logs include timestamps and details about various execution steps and their outcomes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869073/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-cloudwatch-logs-execution-details.jpg)
+![The image shows an AWS CloudWatch console displaying log entries related to system executions and command completions. The logs include timestamps and details about various execution steps and their outcomes.](https://kodekloud.com/kk-media/image/upload/v1752869073/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-EC2-image-builder/aws-cloudwatch-logs-execution-details.jpg)
 
 ***
 

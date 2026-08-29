@@ -8,7 +8,7 @@ This lesson explores key concerns raised by developers and managers regarding th
 
 There is ongoing debate about the impact of generative AI on development practices. Critics suggest that leaders might overreact or be resistant to change, while others stress the importance of addressing legitimate challenges. In this context, understanding these concerns and implementing precautionary strategies is critical.
 
-![The image lists top concerns in software development, including code quality, maintainability, skills rot, open-source licensing, violations, copyright issues, IP leakage, and security. Each concern is represented by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857092/notes-assets/images/AI-Assisted-Development-Common-Concerns-on-AI/software-development-top-concerns-icons.jpg)
+![The image lists top concerns in software development, including code quality, maintainability, skills rot, open-source licensing, violations, copyright issues, IP leakage, and security. Each concern is represented by an icon.](https://kodekloud.com/kk-media/image/upload/v1752857092/notes-assets/images/AI-Assisted-Development-Common-Concerns-on-AI/software-development-top-concerns-icons.jpg)
 
 > **lightbulb** Balanced approaches that accept innovation while addressing risks can help organizations adapt efficiently to new technology trends.
 
@@ -16,7 +16,7 @@ There is ongoing debate about the impact of generative AI on development practic
 
 One major concern with AI-assisted development is ensuring that AI-generated code is production-ready, secure, and maintainable over time. Leaders worry that rapidly generated code might be difficult to understand or manage, and there is concern around inadvertent violations of proprietary intellectual property or open source licenses.
 
-![The image is a slide titled "Code Quality and Reliability," posing questions about the quality and maintainability of AI-generated code.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857093/notes-assets/images/AI-Assisted-Development-Common-Concerns-on-AI/code-quality-reliability-ai-code.jpg)
+![The image is a slide titled "Code Quality and Reliability," posing questions about the quality and maintainability of AI-generated code.](https://kodekloud.com/kk-media/image/upload/v1752857093/notes-assets/images/AI-Assisted-Development-Common-Concerns-on-AI/code-quality-reliability-ai-code.jpg)
 
 Historically, code generators—such as early 2000s PHP code generators—dramatically increased development speed but also introduced significant maintenance challenges. This historical perspective reinforces the need for careful evaluation of AI-generated code.
 
@@ -34,11 +34,11 @@ Historically, code generators—such as early 2000s PHP code generators—dramat
 4. **Provide Constructive Criticism:**\
    Document any shortcomings and propose ideal alternatives to continuously refine both the code and the AI tool's performance.
 
-![The image outlines four principles for code quality and maintainability: getting multiple reviews, treating generated code as finished, defining success and failure, and offering solutions with criticism.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857095/notes-assets/images/AI-Assisted-Development-Common-Concerns-on-AI/code-quality-maintainability-principles.jpg)
+![The image outlines four principles for code quality and maintainability: getting multiple reviews, treating generated code as finished, defining success and failure, and offering solutions with criticism.](https://kodekloud.com/kk-media/image/upload/v1752857095/notes-assets/images/AI-Assisted-Development-Common-Concerns-on-AI/code-quality-maintainability-principles.jpg)
 
 In addition, enforcing practices such as mandatory two-person code reviews and investing extra time saved on mundane tasks to create more automated tests can significantly boost overall software quality.
 
-![The image outlines three principles for code quality and maintainability: adhering to coding standards, ensuring two-person code reviews, and using saved time to build more tests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857096/notes-assets/images/AI-Assisted-Development-Common-Concerns-on-AI/code-quality-maintainability-principles-2.jpg)
+![The image outlines three principles for code quality and maintainability: adhering to coding standards, ensuring two-person code reviews, and using saved time to build more tests.](https://kodekloud.com/kk-media/image/upload/v1752857096/notes-assets/images/AI-Assisted-Development-Common-Concerns-on-AI/code-quality-maintainability-principles-2.jpg)
 
 ## 2. Mitigating Skills Degradation
 
@@ -58,7 +58,7 @@ A frequent concern is that over-reliance on AI could lead to skills rot, where d
 * **Utilize AI for Personal Skill Development:**\
   Tailor personalized learning paths and study plans using AI tools to foster continuous growth.
 
-![The image outlines four steps to combat skills rot: making training a company policy, organizing brown bag lunches, rewarding certifications and achievements, and using generative AI to create skill plans.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857097/notes-assets/images/AI-Assisted-Development-Common-Concerns-on-AI/combat-skills-rot-training-steps.jpg)
+![The image outlines four steps to combat skills rot: making training a company policy, organizing brown bag lunches, rewarding certifications and achievements, and using generative AI to create skill plans.](https://kodekloud.com/kk-media/image/upload/v1752857097/notes-assets/images/AI-Assisted-Development-Common-Concerns-on-AI/combat-skills-rot-training-steps.jpg)
 
 ## 3. Addressing Legal and Compliance Challenges
 
@@ -75,11 +75,11 @@ Legal risks remain a major challenge, including potential issues with open sourc
 * **Implement Data Sanitization:**\
   Remove sensitive or proprietary data from code before it is exposed externally or used for AI training.
 
-![The image lists three legal issues: potential violation of open-source licenses, unintentional copyright law violations, and risks to intellectual property.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857098/notes-assets/images/AI-Assisted-Development-Common-Concerns-on-AI/legal-issues-open-source-copyright.jpg)
+![The image lists three legal issues: potential violation of open-source licenses, unintentional copyright law violations, and risks to intellectual property.](https://kodekloud.com/kk-media/image/upload/v1752857098/notes-assets/images/AI-Assisted-Development-Common-Concerns-on-AI/legal-issues-open-source-copyright.jpg)
 
 Additionally, evaluate vendor security practices. Tools such as Tabnine offer local server options, ensuring that code remains within your secure network. Always confirm and document a vendor’s data handling protocols.
 
-![The image is a slide titled "Legal Issues" with three points: frequent code reviews, code compliance software, and choosing tools based on IP needs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857099/notes-assets/images/AI-Assisted-Development-Common-Concerns-on-AI/legal-issues-code-reviews-compliance-tools.jpg)
+![The image is a slide titled "Legal Issues" with three points: frequent code reviews, code compliance software, and choosing tools based on IP needs.](https://kodekloud.com/kk-media/image/upload/v1752857099/notes-assets/images/AI-Assisted-Development-Common-Concerns-on-AI/legal-issues-code-reviews-compliance-tools.jpg)
 
 > **triangle-alert** Inadvertent exposure of proprietary or licensed code can have significant legal consequences. Prioritize thorough review and compliance assessments.
 
@@ -98,12 +98,12 @@ Security is paramount when integrating AI into your software development. Concer
 3. **Combine Automated and Human Reviews:**\
    Use a blend of automated security scans and human intervention to verify AI outputs for vulnerabilities.
 
-![The image is a slide titled "Security" with three points: securing the AI supply chain, considering hosting your own LLM, and validating AI-generated inputs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857099/notes-assets/images/AI-Assisted-Development-Common-Concerns-on-AI/security-ai-supply-chain-slide.jpg)
+![The image is a slide titled "Security" with three points: securing the AI supply chain, considering hosting your own LLM, and validating AI-generated inputs.](https://kodekloud.com/kk-media/image/upload/v1752857099/notes-assets/images/AI-Assisted-Development-Common-Concerns-on-AI/security-ai-supply-chain-slide.jpg)
 
 4. **Conduct Regular Audits and Anonymize Data:**\
    Work closely with your security team to perform regular audits. Ensure data fed into AI models is anonymized to prevent leaks of confidential details.
 
-![The image is a slide titled "Security" with three points: conducting security audits on models, anonymizing data, and validating AI-generated outputs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857100/notes-assets/images/AI-Assisted-Development-Common-Concerns-on-AI/security-audits-anonymizing-data-validation.jpg)
+![The image is a slide titled "Security" with three points: conducting security audits on models, anonymizing data, and validating AI-generated outputs.](https://kodekloud.com/kk-media/image/upload/v1752857100/notes-assets/images/AI-Assisted-Development-Common-Concerns-on-AI/security-audits-anonymizing-data-validation.jpg)
 
 ## Conclusion
 

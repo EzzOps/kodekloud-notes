@@ -26,24 +26,16 @@ We discussed the Container Storage Interface (CSI) in the context of both Kubern
 
 Security was also a major focus, with an emphasis on role-based access control (RBAC) as a cornerstone in both Kubernetes and OpenShift environments. Establishing robust security practices is crucial for maintaining the integrity and resilience of modern, distributed systems.
 
-<Callout icon="lightbulb">
-  With these fundamentals, you now have a solid understanding of core concepts applicable not only to OpenShift but also to broader Kubernetes environments.
-</Callout>
+> **lightbulb** With these fundamentals, you now have a solid understanding of core concepts applicable not only to OpenShift but also to broader Kubernetes environments.
 
 Thank you for engaging with this article from CodeCloud. Your feedback is invaluable to us, so please share any suggestions for improvement or ideas for future updates.
 
-<Frame>
-  ![The image shows a person speaking into a microphone with a graphic overlay of an envelope and a document labeled "Feedback."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882629/notes-assets/images/OpenShift-4-Conclusion/person-speaking-feedback-envelope-document.jpg)
-</Frame>
+![The image shows a person speaking into a microphone with a graphic overlay of an envelope and a document labeled "Feedback."](https://kodekloud.com/kk-media/image/upload/v1752882629/notes-assets/images/OpenShift-4-Conclusion/person-speaking-feedback-envelope-document.jpg)
 
 If you have suggestions, we would love to hear from you. Additionally, upon completing the course, you will receive a certificate of completion.
 
-<Frame>
-  ![The image shows a person speaking into a microphone, with a graphic overlay of a "Certificate of Completion" on the right side.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882630/notes-assets/images/OpenShift-4-Conclusion/person-speaking-microphone-certificate.jpg)
-</Frame>
+![The image shows a person speaking into a microphone, with a graphic overlay of a "Certificate of Completion" on the right side.](https://kodekloud.com/kk-media/image/upload/v1752882630/notes-assets/images/OpenShift-4-Conclusion/person-speaking-microphone-certificate.jpg)
 
 Be sure to share your certificate on [LinkedIn](https://www.linkedin.com), [Twitter](https://twitter.com), and other social platforms—and don’t forget to tag us! We’re excited to see your success. Thank you again for reading, and we look forward to welcoming you in our next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/d84e1350-21eb-421e-87d0-2d7bf019360f/lesson/a99066b9-dc89-40ca-9a0f-727e60ea2b5c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/d84e1350-21eb-421e-87d0-2d7bf019360f/lesson/a99066b9-dc89-40ca-9a0f-727e60ea2b5c)

@@ -100,9 +100,7 @@ Gateway API supports richer cross-namespace semantics and explicit restrictions:
 * Gateways can restrict which namespaces' Routes are allowed to bind to them via `allowedRoutes.namespaces.from` (e.g., `Same`, `All`, or `FromList`).
 * This prevents arbitrary namespaces from attaching routes to a shared gateway and centralizes operator control.
 
-<Callout icon="warning">
-  Gateways can tightly control which namespaces may bind Routes. If you expect cross-namespace routing, verify the Gateway's `allowedRoutes` policy and, if needed, explicitly include the namespaces allowed to attach Routes.
-</Callout>
+> **warning** Gateways can tightly control which namespaces may bind Routes. If you expect cross-namespace routing, verify the Gateway's `allowedRoutes` policy and, if needed, explicitly include the namespaces allowed to attach Routes.
 
 <Frame>
   <img alt="A slide titled &#x22;Gateway API – Cross Namespace&#x22; showing a Gateway in the &#x22;infra&#x22; namespace attempting to route (dashed arrow with an error X) to HTTPRoute and Service objects in &#x22;blue&#x22; and &#x22;red&#x22; namespaces, illustrating a cross-namespace routing restriction." />
@@ -185,9 +183,7 @@ gatewayAPI:
 
 After updating configuration you should restart the Cilium operator and agents so the new behavior is applied.
 
-<Callout icon="lightbulb">
-  After enabling gatewayAPI in Cilium, Cilium will automatically create a GatewayClass named cilium (or a similar name) for its controller. Use that GatewayClass name when creating Gateway resources intended to be handled by Cilium.
-</Callout>
+> **lightbulb** After enabling gatewayAPI in Cilium, Cilium will automatically create a GatewayClass named cilium (or a similar name) for its controller. Use that GatewayClass name when creating Gateway resources intended to be handled by Cilium.
 
 ### Typical runtime behavior with Cilium
 
@@ -275,6 +271,4 @@ spec:
 * [Kubernetes Ingress Concepts](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 * [Cilium Documentation](https://docs.cilium.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/aafd317b-57fe-4805-b41f-11da522be96f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/aafd317b-57fe-4805-b41f-11da522be96f)

@@ -6,9 +6,7 @@
 
 ## Creating Intermediate Certificates
 
-<Callout icon="lightbulb">
-  It is not recommended to use the root certificate directly for workload authentication. Instead, generate intermediate certificates to enhance security and ease certificate revocation.
-</Callout>
+> **lightbulb** It is not recommended to use the root certificate directly for workload authentication. Instead, generate intermediate certificates to enhance security and ease certificate revocation.
 
 Generate the intermediate certificates by running the following command. This creates an intermediate Certificate Authority (CA) for your cluster under the "localcluster" directory. The following files are produced:
 
@@ -244,11 +242,9 @@ This confirms that Istio is signing workload certificates using your provided ro
 
 This guide has shown how to configure a custom certificate authority within Istio and verify its proper use in your service mesh. For more in-depth information, consider exploring additional resources on [Istio Security](https://istio.io/latest/docs/tasks/security/) and [Kubernetes Security Best Practices](https://kubernetes.io/docs/concepts/security/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/e4a2171d-d190-4dc9-873e-a0dad6d3cb62/lesson/57a83d19-0bcd-471b-ac0d-9070420d9e85" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/e4a2171d-d190-4dc9-873e-a0dad6d3cb62/lesson/57a83d19-0bcd-471b-ac0d-9070420d9e85)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/e4a2171d-d190-4dc9-873e-a0dad6d3cb62/lesson/41f39dd4-0f29-4d3f-9f10-8143bb6fc65d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/e4a2171d-d190-4dc9-873e-a0dad6d3cb62/lesson/41f39dd4-0f29-4d3f-9f10-8143bb6fc65d)
 
 
 # Istio Security Architecture
@@ -281,9 +277,7 @@ The Configuration API Server plays a crucial role by distributing authentication
 
 Both these proxy types serve as policy enforcement points, continuously receiving certificates, keys, and current security policies, ensuring that every point in the network enforces robust security checks.
 
-<Callout icon="lightbulb">
-  The layered enforcement of security policies across all proxies in the service mesh exemplifies the defense-in-depth approach. This strategy ensures that even if one security layer is compromised, additional layers remain to protect the overall system.
-</Callout>
+> **lightbulb** The layered enforcement of security policies across all proxies in the service mesh exemplifies the defense-in-depth approach. This strategy ensures that even if one security layer is compromised, additional layers remain to protect the overall system.
 
 ## Next Steps
 
@@ -294,6 +288,4 @@ In upcoming lessons, we will dive deeper into each component and examine their i
 * [Istio Documentation](https://istio.io/latest/docs/)
 * [Microservices Security Strategies](https://example.com/microservices-security)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/e4a2171d-d190-4dc9-873e-a0dad6d3cb62/lesson/10ca824d-10b4-4e56-b723-d4b30c75f5a9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/e4a2171d-d190-4dc9-873e-a0dad6d3cb62/lesson/10ca824d-10b4-4e56-b723-d4b30c75f5a9)

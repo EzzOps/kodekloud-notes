@@ -10,7 +10,7 @@ In this guide, we demonstrate how to use Amazon Simple Notification Service (SNS
 
 Navigate to the SNS page and click "Create Topic" to start. For this demonstration, name your topic **createJob**. Imagine a backend system where every new job results in a message published to an SNS topic. Other backend services can subscribe to this topic to pick up messages and process them as needed.
 
-![The image shows the Amazon Simple Notification Service (SNS) page on AWS, highlighting its features for pub/sub messaging in microservices and serverless applications, with options to create a topic and view pricing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858394/notes-assets/images/AWS-Certified-Developer-Associate-SNS-Demo/amazon-sns-pub-sub-messaging.jpg)
+![The image shows the Amazon Simple Notification Service (SNS) page on AWS, highlighting its features for pub/sub messaging in microservices and serverless applications, with options to create a topic and view pricing.](https://kodekloud.com/kk-media/image/upload/v1752858394/notes-assets/images/AWS-Certified-Developer-Associate-SNS-Demo/amazon-sns-pub-sub-messaging.jpg)
 
 After entering the topic name, click **Next** to choose between a Standard or FIFO topic. This decision depends on your specific use case. You also have the option to enable encryption and configure various access policies. While additional settings such as data protection and delivery policy exist, we focus only on the essentials here. Finally, click **Create** to finalize the topic creation.
 
@@ -18,7 +18,7 @@ After entering the topic name, click **Next** to choose between a Standard or FI
 
 With your topic created, it's time to set up the endpoints that will subscribe to it. Each time a message is published, all subscribed endpoints will receive a notification.
 
-![The image shows an Amazon SNS (Simple Notification Service) console screen with a topic named "createJob" successfully created, displaying its details and options for managing subscriptions and policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858395/notes-assets/images/AWS-Certified-Developer-Associate-SNS-Demo/amazon-sns-createjob-console-screen.jpg)
+![The image shows an Amazon SNS (Simple Notification Service) console screen with a topic named "createJob" successfully created, displaying its details and options for managing subscriptions and policies.](https://kodekloud.com/kk-media/image/upload/v1752858395/notes-assets/images/AWS-Certified-Developer-Associate-SNS-Demo/amazon-sns-createjob-console-screen.jpg)
 
 ### Creating a Subscription
 
@@ -27,7 +27,7 @@ With your topic created, it's time to set up the endpoints that will subscribe t
 
    For this demo, we'll subscribe an SQS queue named **processJob**.
 
-![The image shows an Amazon SNS (Simple Notification Service) subscription details page, indicating a confirmed subscription with specific ARN and endpoint information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858397/notes-assets/images/AWS-Certified-Developer-Associate-SNS-Demo/amazon-sns-subscription-details.jpg)
+![The image shows an Amazon SNS (Simple Notification Service) subscription details page, indicating a confirmed subscription with specific ARN and endpoint information.](https://kodekloud.com/kk-media/image/upload/v1752858397/notes-assets/images/AWS-Certified-Developer-Associate-SNS-Demo/amazon-sns-subscription-details.jpg)
 
 ## Publishing a Message
 

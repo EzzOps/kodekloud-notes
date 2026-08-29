@@ -22,7 +22,7 @@ Azure Cosmos DB is engineered to deliver consistent performance—even during tr
 
 As a fully managed service, Azure Cosmos DB handles infrastructure tasks such as patching and scaling, allowing developers to focus on building innovative applications. Its pricing model, based on Request Units (RUs), ensures you only pay for the resources you use. This cost-effectiveness makes Cosmos DB suitable for organizations of all sizes—from startups to large enterprises.
 
-![The image highlights four features of Azure Cosmos DB: AI-powered web and mobile experiences, simplified app development, mission-critical performance at any scale, and being fully managed and cost-effective.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866451/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Cosmos-DB/azure-cosmos-db-features-highlight.jpg)
+![The image highlights four features of Azure Cosmos DB: AI-powered web and mobile experiences, simplified app development, mission-critical performance at any scale, and being fully managed and cost-effective.](https://kodekloud.com/kk-media/image/upload/v1752866451/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Cosmos-DB/azure-cosmos-db-features-highlight.jpg)
 
 ## Architectural Overview and Benefits
 
@@ -54,7 +54,7 @@ Designed for real-time applications, Cosmos DB offers sub-10 millisecond respons
 
 Azure Cosmos DB supports both manual and automatic scaling, quickly adapting to varying workloads. Its elastic scaling capability is perfect for scenarios such as e-commerce websites, which may experience heavy traffic during flash sales or special promotions.
 
-![The image illustrates the benefits of Azure Cosmos DB, showing a flow from a browser through Azure Traffic Manager to multiple Azure regions, highlighting features like global replication, flexible consistency models, ultra-low latency, and elastic scaling.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866453/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Cosmos-DB/azure-cosmos-db-benefits-diagram.jpg)
+![The image illustrates the benefits of Azure Cosmos DB, showing a flow from a browser through Azure Traffic Manager to multiple Azure regions, highlighting features like global replication, flexible consistency models, ultra-low latency, and elastic scaling.](https://kodekloud.com/kk-media/image/upload/v1752866453/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Cosmos-DB/azure-cosmos-db-benefits-diagram.jpg)
 
 ## Conclusion
 

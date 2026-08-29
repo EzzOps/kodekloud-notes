@@ -8,9 +8,7 @@ In this lesson, we introduce the concept of remote state in Terraform and explai
 
 Terraform uses a state file to map your configuration resources to your real-world infrastructure. Initially, this state file was stored locally. When you first run `terraform apply`, a file named `terraform.tfstate` is created in your configuration directory.
 
-<Frame>
-  ![The image illustrates a comparison between real-world infrastructure and a Terraform state file, showing icons for a server, dog, and document linked to their representations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884186/notes-assets/images/Terraform-Basics-Training-Course-What-is-Remote-State-and-State-Locking/frame_10.jpg)
-</Frame>
+![The image illustrates a comparison between real-world infrastructure and a Terraform state file, showing icons for a server, dog, and document linked to their representations.](https://kodekloud.com/kk-media/image/upload/v1752884186/notes-assets/images/Terraform-Basics-Training-Course-What-is-Remote-State-and-State-Locking/frame_10.jpg)
 
 ## Benefits of the Terraform State
 
@@ -28,9 +26,7 @@ $ ls
 main.tf  variables.tf  terraform.tfstate
 ```
 
-<Callout icon="lightbulb">
-  For individual projects, a local state file might suffice. However, as your team grows and your infrastructure becomes more complex, managing state locally can lead to significant challenges.
-</Callout>
+> **lightbulb** For individual projects, a local state file might suffice. However, as your team grows and your infrastructure becomes more complex, managing state locally can lead to significant challenges.
 
 ## Challenges with Local State Files
 
@@ -96,9 +92,7 @@ And here is an excerpt from the corresponding state file in JSON format:
 
 Imagine a scenario where a developer named Abdul creates a Terraform configuration for provisioning an S3 bucket. After running `terraform plan` and applying the configuration, Terraform generates a local state file (`terraform.tfstate`). Abdul then commits all configuration files, including the state file, into a Git repository. Later, when another developer, Lee, pulls the repository, he makes his modifications, reviews the plan, applies the changes, and pushes the updated configuration and state file back to the Git repository.
 
-<Frame>
-  ![The image illustrates a workflow where two users, Abdul and Lee, use Terraform and GitHub to manage infrastructure, storing state files in an S3 bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884187/notes-assets/images/Terraform-Basics-Training-Course-What-is-Remote-State-and-State-Locking/frame_190.jpg)
-</Frame>
+![The image illustrates a workflow where two users, Abdul and Lee, use Terraform and GitHub to manage infrastructure, storing state files in an S3 bucket.](https://kodekloud.com/kk-media/image/upload/v1752884187/notes-assets/images/Terraform-Basics-Training-Course-What-is-Remote-State-and-State-Locking/frame_190.jpg)
 
 This process, while seemingly functional, introduces significant risks:
 
@@ -150,13 +144,9 @@ Info:
 Terraform acquires a state lock to protect the state from being written by multiple users at the same time. Please resolve the issue above and try again. For most commands, you can disable locking with the "-lock=false" flag, but this is not recommended.
 ```
 
-<Frame>
-  ![The image illustrates Terraform state locking, showing two operations accessing a local Terraform state, with one operation blocked to prevent simultaneous changes to infrastructure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884188/notes-assets/images/Terraform-Basics-Training-Course-What-is-Remote-State-and-State-Locking/frame_280.jpg)
-</Frame>
+![The image illustrates Terraform state locking, showing two operations accessing a local Terraform state, with one operation blocked to prevent simultaneous changes to infrastructure.](https://kodekloud.com/kk-media/image/upload/v1752884188/notes-assets/images/Terraform-Basics-Training-Course-What-is-Remote-State-and-State-Locking/frame_280.jpg)
 
-<Callout icon="triangle-alert">
-  Avoid disabling state locking with the "-lock=false" flag in a team environment, as doing so can lead to concurrent modifications and potential data loss.
-</Callout>
+> **triangle-alert** Avoid disabling state locking with the "-lock=false" flag in a team environment, as doing so can lead to concurrent modifications and potential data loss.
 
 ## Remote Backends: A Secure Alternative
 
@@ -169,14 +159,10 @@ A far better approach is to store the Terraform state in a secured, shared stora
 * Provides state locking to maintain state integrity.
 * Enhances security by offering features like encryption at rest and in transit.
 
-<Frame>
-  ![The image illustrates Terraform state locking with remote backends like AWS S3, Google Cloud Storage, HashiCorp Consul, and Terraform Cloud, supporting automatic state file management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884189/notes-assets/images/Terraform-Basics-Training-Course-What-is-Remote-State-and-State-Locking/frame_360.jpg)
-</Frame>
+![The image illustrates Terraform state locking with remote backends like AWS S3, Google Cloud Storage, HashiCorp Consul, and Terraform Cloud, supporting automatic state file management.](https://kodekloud.com/kk-media/image/upload/v1752884189/notes-assets/images/Terraform-Basics-Training-Course-What-is-Remote-State-and-State-Locking/frame_360.jpg)
 
 Using remote backends ensures that your Terraform state is managed centrally and securely, supporting team collaboration and reducing the risks associated with local state management.
 
 For additional details on configuring remote backends in Terraform, refer to the [Terraform documentation](https://www.terraform.io/docs/backends/index.html).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9464f9ce-236c-4f22-a61b-5398307b47b4/lesson/d3b1b09d-75a3-4641-a4a0-9a4ec6b5b705" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9464f9ce-236c-4f22-a61b-5398307b47b4/lesson/d3b1b09d-75a3-4641-a4a0-9a4ec6b5b705)

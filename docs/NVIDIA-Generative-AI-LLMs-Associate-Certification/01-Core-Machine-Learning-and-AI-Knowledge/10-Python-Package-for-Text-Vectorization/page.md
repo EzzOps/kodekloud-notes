@@ -19,9 +19,7 @@ Given those demonstrations, the model should infer the mapping from "Instruction
 rm old.txt
 ```
 
-<Callout icon="lightbulb">
-  Few-shot prompts provide examples that shape the model's output format and style at inference time. They do not train the model or change its weights; they simply bias the model toward the pattern shown in the prompt.
-</Callout>
+> **lightbulb** Few-shot prompts provide examples that shape the model's output format and style at inference time. They do not train the model or change its weights; they simply bias the model toward the pattern shown in the prompt.
 
 Quick comparison
 
@@ -38,9 +36,7 @@ Further reading and references
 * [Prompting strategies and best practices — Practical guides on prompt engineering](https://learnprompting.org/)
 * [Research overview: Few-shot learning and in-context learning](https://arxiv.org/abs/2103.10385)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/8da9d9e9-78bf-45aa-b511-bb4b1244c34f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/8da9d9e9-78bf-45aa-b511-bb4b1244c34f)
 
 
 # Python Package for Text Vectorization
@@ -63,9 +59,7 @@ spaCy is a production-ready natural language processing library that includes ea
 
 spaCy directly provides token and document `.vector` embeddings that are convenient for semantic search workflows.
 
-<Callout icon="lightbulb">
-  Use a spaCy model that includes vectors (for example, `en_core_web_lg`) when you need ready-made dense embeddings. For higher-quality sentence or paragraph embeddings, consider transformer-based libraries such as [`sentence-transformers`](https://www.sbert.net/) (SBERT) or Hugging Face models, and combine those embeddings with spaCy or your retrieval pipeline as needed.
-</Callout>
+> **lightbulb** Use a spaCy model that includes vectors (for example, `en_core_web_lg`) when you need ready-made dense embeddings. For higher-quality sentence or paragraph embeddings, consider transformer-based libraries such as [`sentence-transformers`](https://www.sbert.net/) (SBERT) or Hugging Face models, and combine those embeddings with spaCy or your retrieval pipeline as needed.
 
 ## Quick comparison
 

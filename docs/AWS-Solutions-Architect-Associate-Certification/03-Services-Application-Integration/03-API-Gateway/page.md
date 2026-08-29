@@ -14,7 +14,7 @@ Another key benefit is the efficient management of APIs at scale. Deploying, ver
 
 Moreover, API Gateway helps transform requests and responses between differing data formats. It validates and maps data from backend services to client-required formats, ensuring consistency and reliability across end-to-end communication.
 
-![The image is a diagram explaining the need for an API Gateway, showing its integration with AWS services like Lambda, EC2, and ECS, and highlighting features such as backend integration, API management, request transformation, and security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864674/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-API-Gateway/api-gateway-aws-integration-diagram.jpg)
+![The image is a diagram explaining the need for an API Gateway, showing its integration with AWS services like Lambda, EC2, and ECS, and highlighting features such as backend integration, API management, request transformation, and security.](https://kodekloud.com/kk-media/image/upload/v1752864674/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-API-Gateway/api-gateway-aws-integration-diagram.jpg)
 
 > **lightbulb** API Gateway is particularly beneficial for organizations looking to streamline complex integrations while reducing operational overhead.
 
@@ -26,7 +26,7 @@ In addition, API Gateway is equipped to handle excess traffic and mitigate abuse
 
 For insights into your API’s performance, API Gateway uses comprehensive monitoring, logging, and analytics features. These capabilities allow you to track usage, diagnose issues, and measure latency, facilitating rapid optimization and troubleshooting.
 
-![The image illustrates the need for an API Gateway in AWS Cloud, showing its role in managing backend services like Lambda, EC2, and ECS, with features such as security, rate limiting, and monitoring. It highlights integration with AWS IAM, OAuth, and Amazon Cognito for access control.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864676/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-API-Gateway/api-gateway-aws-cloud-diagram.jpg)
+![The image illustrates the need for an API Gateway in AWS Cloud, showing its role in managing backend services like Lambda, EC2, and ECS, with features such as security, rate limiting, and monitoring. It highlights integration with AWS IAM, OAuth, and Amazon Cognito for access control.](https://kodekloud.com/kk-media/image/upload/v1752864676/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-API-Gateway/api-gateway-aws-cloud-diagram.jpg)
 
 ## Documentation and Developer Experience
 
@@ -48,7 +48,7 @@ WebSocket APIs support bi-directional, real-time communication, making them idea
 
 REST APIs consist of resources and methods integrated with backend HTTP endpoints, Lambda functions, or other AWS services. They operate on a synchronous request-response model, making them suitable for applications requiring immediate responses.
 
-![The image is a diagram illustrating supported API types in AWS, showing how Lambda, EC2, and ECS interact with HTTP, WebSocket, and REST APIs through Amazon API Gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864676/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-API-Gateway/aws-api-types-lambda-ec2-ecs-diagram.jpg)
+![The image is a diagram illustrating supported API types in AWS, showing how Lambda, EC2, and ECS interact with HTTP, WebSocket, and REST APIs through Amazon API Gateway.](https://kodekloud.com/kk-media/image/upload/v1752864676/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-API-Gateway/aws-api-types-lambda-ec2-ecs-diagram.jpg)
 
 ## Key Features and Benefits
 
@@ -60,7 +60,7 @@ REST APIs consist of resources and methods integrated with backend HTTP endpoint
 * **SDK Generation:** Automatically generate client SDKs for platforms such as Java, JavaScript, Android, Objective-C, Swift, and Ruby, complete with integrated API key handling and AWS request signing.
 * **Lifecycle Management:** Manage multiple versions and stages (e.g., alpha, beta, production) concurrently, with the ability to associate custom domain names to streamline transitions between environments.
 
-![The image lists features of the Amazon API Gateway, including RESTful APIs, private integration, resiliency, and monitoring, among others. It is part of the AWS Cloud services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864677/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-API-Gateway/amazon-api-gateway-features.jpg)
+![The image lists features of the Amazon API Gateway, including RESTful APIs, private integration, resiliency, and monitoring, among others. It is part of the AWS Cloud services.](https://kodekloud.com/kk-media/image/upload/v1752864677/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-API-Gateway/amazon-api-gateway-features.jpg)
 
 ## Integrations
 
@@ -76,7 +76,7 @@ API Gateway seamlessly integrates with a wide range of AWS services, including:
 * **Cognito:** Manage user authentication and authorization.
 * **Secrets Manager:** Securely store and manage sensitive credentials and API keys.
 
-![The image shows a diagram of API integrations within the AWS Cloud, featuring services like AWS Lambda, Amazon S3, and Amazon API Gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864678/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-API-Gateway/aws-api-integrations-diagram.jpg)
+![The image shows a diagram of API integrations within the AWS Cloud, featuring services like AWS Lambda, Amazon S3, and Amazon API Gateway.](https://kodekloud.com/kk-media/image/upload/v1752864678/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-API-Gateway/aws-api-integrations-diagram.jpg)
 
 By leveraging these integrations, API Gateway offers a flexible and robust platform for building, deploying, and securing modern APIs on AWS.
 

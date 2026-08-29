@@ -18,7 +18,7 @@ Normally, deploying an application on AWS follows these steps:
 2. **Deploying and Maintaining Your Application:**\
    After securing the instance, copy your application code and configure it to run smoothly. However, ongoing maintenance tasks—such as patching vulnerabilities, applying software upgrades, and managing scaling during traffic spikes—remain your responsibility. For instance, if traffic increases, you'll either need to manually add more instances or configure auto-scaling to handle the load. Conversely, when traffic subsides, you must scale down to avoid unnecessary costs.
 
-![The image illustrates deploying applications on AWS, showing operating systems, AMI, code, dependencies, security, and a processor, emphasizing secure and efficient deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861902/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Lambda/frame_60.jpg)
+![The image illustrates deploying applications on AWS, showing operating systems, AMI, code, dependencies, security, and a processor, emphasizing secure and efficient deployment.](https://kodekloud.com/kk-media/image/upload/v1752861902/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Lambda/frame_60.jpg)
 
 Managing these infrastructure tasks can be complex and time-consuming, distracting developers from their primary task of writing code.
 
@@ -30,13 +30,13 @@ AWS Lambda eliminates the need for manual server management by handling infrastr
 
 AWS Lambda is a serverless compute service that allows you to run your code without provisioning or managing servers. Once deployed, Lambda automatically handles the infrastructure, such as creating EC2 instances, deploying your code, and executing it. This transforms your development approach, allowing you to concentrate on coding rather than managing servers.
 
-![The image explains AWS Lambda, a serverless compute service that runs code without provisioning servers, with AWS handling maintenance, scaling, capacity, and logging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861904/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Lambda/frame_170.jpg)
+![The image explains AWS Lambda, a serverless compute service that runs code without provisioning servers, with AWS handling maintenance, scaling, capacity, and logging.](https://kodekloud.com/kk-media/image/upload/v1752861904/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Lambda/frame_170.jpg)
 
 Lambda scales automatically to meet demand by running more instances as needed—all without any extra intervention.
 
 > **lightbulb** Although the term "serverless" implies the absence of servers, AWS Lambda still uses servers behind the scenes. AWS manages a pool of execution environments, which it dynamically allocates when an event triggers your function.
 
-![The image explains serverless architecture, highlighting AWS Lambda, event-driven execution, and clarifying that servers are still required to run applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861906/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Lambda/frame_250.jpg)
+![The image explains serverless architecture, highlighting AWS Lambda, event-driven execution, and clarifying that servers are still required to run applications.](https://kodekloud.com/kk-media/image/upload/v1752861906/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Lambda/frame_250.jpg)
 
 ## Lambda Use Cases
 
@@ -46,7 +46,7 @@ AWS Lambda is ideal for various scenarios:
 * **Stream Processing:** Real-time data stream processing.
 * **Web Applications & Mobile Backends:** Building APIs and handling backend logic without server management.
 
-![The image illustrates AWS Lambda use cases, including file processing, stream processing, web applications, and mobile/web backend, with a diagram of image resizing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861907/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Lambda/frame_310.jpg)
+![The image illustrates AWS Lambda use cases, including file processing, stream processing, web applications, and mobile/web backend, with a diagram of image resizing.](https://kodekloud.com/kk-media/image/upload/v1752861907/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Lambda/frame_310.jpg)
 
 ## Core Components of AWS Lambda
 
@@ -83,7 +83,7 @@ AWS Lambda provides several advantages that simplify application development:
 * **Cost Efficiency:**\
   Costs are based on the number of invocations and the duration of your code execution. If your function isn’t running, you incur no charges.
 
-![The image outlines the benefits of Lambda, highlighting no server management, auto-scaling, and cost efficiency, with colorful icons and text emphasizing key points.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861908/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Lambda/frame_410.jpg)
+![The image outlines the benefits of Lambda, highlighting no server management, auto-scaling, and cost efficiency, with colorful icons and text emphasizing key points.](https://kodekloud.com/kk-media/image/upload/v1752861908/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Lambda/frame_410.jpg)
 
 ## Considerations and Limitations
 
@@ -98,7 +98,7 @@ While AWS Lambda is powerful, it comes with specific limitations:
 * **Cold Start Issues:**\
   When a function is idle, subsequent invocations might experience delays known as cold starts. Techniques like SnapStart and Provisioned Concurrency can help mitigate these delays.
 
-![The image outlines the downsides of Lambda, including no local state, limited execution duration, and cold starts, with accompanying icons and brief explanations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861909/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Lambda/frame_450.jpg)
+![The image outlines the downsides of Lambda, including no local state, limited execution duration, and cold starts, with accompanying icons and brief explanations.](https://kodekloud.com/kk-media/image/upload/v1752861909/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Lambda/frame_450.jpg)
 
 ## AWS Lambda Pricing Model
 
@@ -121,7 +121,7 @@ Below is a table summarizing the pricing model:
 | Execution Duration  | Billed based on run time         | Longer execution increases costs      |
 | Allocated Resources | Based on assigned memory and CPU | More resources lead to higher pricing |
 
-![The image explains Lambda pricing, highlighting factors like function execution count, duration, and memory/CPU requirements, with related icons and text.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861910/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Lambda/frame_490.jpg)
+![The image explains Lambda pricing, highlighting factors like function execution count, duration, and memory/CPU requirements, with related icons and text.](https://kodekloud.com/kk-media/image/upload/v1752861910/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Lambda/frame_490.jpg)
 
 ## Summary
 
@@ -131,7 +131,7 @@ AWS Lambda is a robust compute service that enables you to run code without prov
 * It is ideally suited for use cases such as file processing, stream processing, and serving as a backend for web and mobile applications.
 * The pay-per-invocation pricing model ensures that you only pay for what you use, making it a cost-effective solution.
 
-![The image summarizes AWS Lambda features, highlighting serverless computing, automatic scaling, diverse use cases, and a pay-per-invocation pricing model.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861911/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Lambda/frame_520.jpg)
+![The image summarizes AWS Lambda features, highlighting serverless computing, automatic scaling, diverse use cases, and a pay-per-invocation pricing model.](https://kodekloud.com/kk-media/image/upload/v1752861911/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Compute-Lambda/frame_520.jpg)
 
 > **lightbulb** For further reading on AWS Lambda, consider visiting the [AWS Lambda documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) for detailed insights and additional use cases.
 

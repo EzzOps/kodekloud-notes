@@ -8,15 +8,15 @@ Welcome to this article on Persistent Volume Claims (PVCs) in Kubernetes. In our
 
 Persistent volumes and persistent volume claims are two distinct objects in Kubernetes. An administrator is responsible for creating PVs, while users create PVCs to request storage resources. When a PVC is created, Kubernetes automatically binds it to a PV that meets the requested capacity, access modes, volume modes, and storage class.
 
-![The image illustrates the concept of Persistent Volume Claims (PVC) and Persistent Volumes (PV) in Kubernetes, showing their relationship with various colored blocks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869984/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Persistent-Volume-Claims/frame_30.jpg)
+![The image illustrates the concept of Persistent Volume Claims (PVC) and Persistent Volumes (PV) in Kubernetes, showing their relationship with various colored blocks.](https://kodekloud.com/kk-media/image/upload/v1752869984/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Persistent-Volume-Claims/frame_30.jpg)
 
 Kubernetes evaluates several factors when binding a PVC to a PV. If multiple PVs can satisfy a claim, you can use labels and selectors to bind the claim to a specific volume.
 
-![The image illustrates the concept of "Binding" in Kubernetes, showing PV (Persistent Volume) and PVC (Persistent Volume Claim) with conditions like capacity, access, volume modes, and storage class.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869985/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Persistent-Volume-Claims/frame_60.jpg)
+![The image illustrates the concept of "Binding" in Kubernetes, showing PV (Persistent Volume) and PVC (Persistent Volume Claim) with conditions like capacity, access, volume modes, and storage class.](https://kodekloud.com/kk-media/image/upload/v1752869985/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Persistent-Volume-Claims/frame_60.jpg)
 
 It is important to note that if a smaller PVC is matched with a larger PV that meets all criteria, the unrequested capacity remains unused by any other PVC. If no PV satisfies the claim’s requirements, the PVC will remain in a pending state until a new, suitable PV becomes available.
 
-![The image illustrates Kubernetes binding between Persistent Volume (PV) and Persistent Volume Claim (PVC) using labels and selectors, highlighting capacity, access, volume modes, storage class, and selector criteria.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869986/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Persistent-Volume-Claims/frame_80.jpg)
+![The image illustrates Kubernetes binding between Persistent Volume (PV) and Persistent Volume Claim (PVC) using labels and selectors, highlighting capacity, access, volume modes, storage class, and selector criteria.](https://kodekloud.com/kk-media/image/upload/v1752869986/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Persistent-Volume-Claims/frame_80.jpg)
 
 ## Creating a Persistent Volume Claim
 

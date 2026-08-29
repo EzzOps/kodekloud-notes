@@ -8,9 +8,7 @@ In this article, we explore how query parameters work in FastAPI and demonstrate
 
 Everything to the right of the question mark constitutes the query parameters. These optional parameters help refine results, such as retrieving posts created in the last two hours or posts with over 100 likes. In Yelp's case, a parameter like `find_location=Miami, Florida` instructs the API to filter results by location.
 
-<Frame>
-  ![The image shows a Yelp search results page for businesses in Miami, FL, with a list of restaurants on the left and a map with location markers on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883339/notes-assets/images/Python-API-Development-with-FastAPI-Query-Parameters/yelp-miami-restaurants-map.jpg)
-</Frame>
+![The image shows a Yelp search results page for businesses in Miami, FL, with a list of restaurants on the left and a map with location markers on the right.](https://kodekloud.com/kk-media/image/upload/v1752883339/notes-assets/images/Python-API-Development-with-FastAPI-Query-Parameters/yelp-miami-restaurants-map.jpg)
 
 Let's see how you can implement query parameter filtering, pagination, and search in FastAPI.
 
@@ -200,15 +198,11 @@ def create_posts(
     pass
 ```
 
-<Callout icon="lightbulb">
-  You can test the API endpoints using various query parameters:
+> **lightbulb** You can test the API endpoints using various query parameters:
   • `/posts?limit=3` retrieves three posts.
   • `/posts?limit=2&skip=1` retrieves posts after skipping the first one.
   • `/posts?limit=2&skip=1&search=beaches` filters posts based on the keyword "beaches" in the title.
-</Callout>
 
 This implementation demonstrates how query parameters in FastAPI can work together to build robust and flexible APIs that support filtering, pagination, and search functionality.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/380504be-3ac9-4b62-b24d-2cddd2450ad9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/380504be-3ac9-4b62-b24d-2cddd2450ad9)

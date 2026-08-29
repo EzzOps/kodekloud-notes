@@ -40,9 +40,7 @@ sys/             system        system_66b0d8ee         system endpoints used for
 transit/         transit       transit_7b8038ca        n/a
 ```
 
-<Callout icon="triangle-alert">
-  Ensure your Vault token has the `root` policy or appropriate `sys/mount` and `sys/cap` capabilities to enable and configure Secrets Engines.
-</Callout>
+> **triangle-alert** Ensure your Vault token has the `root` policy or appropriate `sys/mount` and `sys/cap` capabilities to enable and configure Secrets Engines.
 
 ## Enabling Engines via UI
 
@@ -51,9 +49,7 @@ transit/         transit       transit_7b8038ca        n/a
 3. Select an engine type, configure the mount path and options, then click **Save**.
 4. For engines not fully supported in the UI, switch to the CLI or API for advanced settings.
 
-<Frame>
-  ![The image is a screenshot of a user interface for enabling secrets engines, showing a list of already enabled engines and an option to add more. It includes annotations and a cartoon character in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878448/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Secrets-Engines/secrets-engines-ui-screenshot-annotations.jpg)
-</Frame>
+![The image is a screenshot of a user interface for enabling secrets engines, showing a list of already enabled engines and an option to add more. It includes annotations and a cartoon character in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878448/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Secrets-Engines/secrets-engines-ui-screenshot-annotations.jpg)
 
 ## Next Steps
 
@@ -73,9 +69,7 @@ Stay tuned to master dynamic secrets, encryption, and certificate automation in 
 * [Vault CLI Commands](https://www.vaultproject.io/docs/commands/secrets)
 * [HashiCorp Learn: Vault Secrets Engines](https://learn.hashicorp.com/collections/vault/secrets)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/0aa8745e-4c7d-4213-9c38-b099d71c6c8e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/0aa8745e-4c7d-4213-9c38-b099d71c6c8e)
 
 
 # Identity Secrets Engine
@@ -88,9 +82,7 @@ Vault’s Identity Secrets Engine is the core component for managing identities 
 
 ## Overview
 
-<Callout icon="lightbulb">
-  The Identity Secrets Engine is mounted by default in Vault (path: `identity/`). It cannot be disabled or moved.
-</Callout>
+> **lightbulb** The Identity Secrets Engine is mounted by default in Vault (path: `identity/`). It cannot be disabled or moved.
 
 Key characteristics:
 
@@ -124,9 +116,7 @@ vault write identity/entity name="Julie Smith" metadata=department=finance polic
 vault write identity/entity-alias name="JSmith" canonical_id="E48C..." mount_accessor="$(vault auth list -format=json | jq -r '.userpass_accessor')"
 ```
 
-<Frame>
-  ![The image illustrates a Vault entity setup, showing a user with an alias, entity ID, and associated policy. It includes a character labeled as a finance specialist and a certification badge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878449/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Identity-Secrets-Engine/vault-entity-setup-user-policy.jpg)
-</Frame>
+![The image illustrates a Vault entity setup, showing a user with an alias, entity ID, and associated policy. It includes a character labeled as a finance specialist and a certification badge.](https://kodekloud.com/kk-media/image/upload/v1752878449/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Identity-Secrets-Engine/vault-entity-setup-user-policy.jpg)
 
 ## Multiple Authentication Methods
 
@@ -138,9 +128,7 @@ Without consolidation, multiple auth methods create separate entities:
 
 This fragmentation can complicate policy management and reporting.
 
-<Frame>
-  ![The image illustrates a "Vault Entities" diagram featuring a character named Julie Smith, a finance specialist, with authentication options and entity details for accounting and finance departments. It also includes a certification badge labeled "Vault Certified Operations Professional."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878450/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Identity-Secrets-Engine/vault-entities-julie-smith-diagram.jpg)
-</Frame>
+![The image illustrates a "Vault Entities" diagram featuring a character named Julie Smith, a finance specialist, with authentication options and entity details for accounting and finance departments. It also includes a certification badge labeled "Vault Certified Operations Professional."](https://kodekloud.com/kk-media/image/upload/v1752878450/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Identity-Secrets-Engine/vault-entities-julie-smith-diagram.jpg)
 
 ### Consolidating into a Single Entity
 
@@ -160,9 +148,7 @@ To unify access, create one **Julie Smith** entity and attach all auth method al
    * Alias-level policy (e.g., `accounting`)
    * Entity-level policy (`management`)
 
-<Frame>
-  ![The image illustrates the concept of Vault Entities, showing how a user named Julie Smith is authenticated via LDAP to receive a Vault token, which inherits capabilities from multiple policies. It includes a diagram of the authentication process and lists aliases with associated policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878452/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Identity-Secrets-Engine/vault-entities-authentication-diagram.jpg)
-</Frame>
+![The image illustrates the concept of Vault Entities, showing how a user named Julie Smith is authenticated via LDAP to receive a Vault token, which inherits capabilities from multiple policies. It includes a diagram of the authentication process and lists aliases with associated policies.](https://kodekloud.com/kk-media/image/upload/v1752878452/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Identity-Secrets-Engine/vault-entities-authentication-diagram.jpg)
 
 ## Vault Groups
 
@@ -183,9 +169,7 @@ On login, tokens merge policies from:
 2. Entity
 3. Group
 
-<Frame>
-  ![The image illustrates a "Vault Groups" structure, showing members with their entity IDs, policies, and aliases, and explaining how tokens inherit capabilities from aliases, entities, and groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878453/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Identity-Secrets-Engine/vault-groups-structure-illustration.jpg)
-</Frame>
+![The image illustrates a "Vault Groups" structure, showing members with their entity IDs, policies, and aliases, and explaining how tokens inherit capabilities from aliases, entities, and groups.](https://kodekloud.com/kk-media/image/upload/v1752878453/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Identity-Secrets-Engine/vault-groups-structure-illustration.jpg)
 
 ## Internal vs. External Groups
 
@@ -196,9 +180,7 @@ Vault supports two group types:
 | Internal Group | Manually in Vault    | Vault managed          | Propagate permissions across namespaces               |
 | External Group | Auto-mapped from IdP | LDAP, OIDC, Okta, etc. | Mirror external identity provider groups and policies |
 
-<Frame>
-  ![The image compares internal and external Vault groups, explaining that internal groups are manually created to propagate identical permissions, while external groups are inferred and created based on group associations from authentication methods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878455/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Identity-Secrets-Engine/vault-groups-internal-external-comparison.jpg)
-</Frame>
+![The image compares internal and external Vault groups, explaining that internal groups are manually created to propagate identical permissions, while external groups are inferred and created based on group associations from authentication methods.](https://kodekloud.com/kk-media/image/upload/v1752878455/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Identity-Secrets-Engine/vault-groups-internal-external-comparison.jpg)
 
 ### Internal Groups and Namespaces
 
@@ -208,9 +190,7 @@ Use internal groups at the root namespace to grant child namespaces access witho
 * In child namespace (`finance`): reference the root group as a subgroup.
 * Users authenticated at root automatically gain child namespace permissions.
 
-<Frame>
-  ![The image is an informational slide about internal groups in Vault, explaining their use in managing permissions and propagating them through namespaces. It includes a diagram showing the relationship between a root namespace and a child namespace.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878456/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Identity-Secrets-Engine/vault-internal-groups-permissions-diagram.jpg)
-</Frame>
+![The image is an informational slide about internal groups in Vault, explaining their use in managing permissions and propagating them through namespaces. It includes a diagram showing the relationship between a root namespace and a child namespace.](https://kodekloud.com/kk-media/image/upload/v1752878456/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Identity-Secrets-Engine/vault-internal-groups-permissions-diagram.jpg)
 
 ### External Groups
 
@@ -222,9 +202,7 @@ External groups sync with your identity provider’s groups:
 
 On login, Vault reflects current IdP memberships and applies policies.
 
-<Frame>
-  ![The image explains how external groups are used to set permissions based on group membership from an external identity provider, with a diagram showing integration between Active Directory and HashiCorp Vault.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878458/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Identity-Secrets-Engine/external-groups-permissions-active-directory-vault.jpg)
-</Frame>
+![The image explains how external groups are used to set permissions based on group membership from an external identity provider, with a diagram showing integration between Active Directory and HashiCorp Vault.](https://kodekloud.com/kk-media/image/upload/v1752878458/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Identity-Secrets-Engine/external-groups-permissions-active-directory-vault.jpg)
 
 ## Summary
 
@@ -239,6 +217,4 @@ On login, Vault reflects current IdP memberships and applies policies.
 * [Managing Identities and Access](https://www.vaultproject.io/guides/identity)
 * [HashiCorp Vault CLI](https://www.vaultproject.io/docs/commands)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/48dbcef3-9a97-4549-8cfb-90a89176bc65" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/48dbcef3-9a97-4549-8cfb-90a89176bc65)

@@ -6,13 +6,13 @@ AWS Lightsail simplifies cloud deployment for developers and businesses by offer
 
 AWS Lightsail is an ideal solution for developers, students, and small business owners who wish to deploy applications quickly without the complexity of the full AWS ecosystem. By offering a streamlined virtual private server (VPS) experience, Lightsail provides essential services like compute instances, container deployments, managed databases, and networking configurations in an easy-to-use package.
 
-![The image is a diagram illustrating the components of AWS Lightsail, including instances, containers, database and storage, and networking and DNS, connected to a user.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864976/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lightsail/aws-lightsail-components-diagram.jpg)
+![The image is a diagram illustrating the components of AWS Lightsail, including instances, containers, database and storage, and networking and DNS, connected to a user.](https://kodekloud.com/kk-media/image/upload/v1752864976/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lightsail/aws-lightsail-components-diagram.jpg)
 
 Lightsail can be seen as a simplified version of EC2, where many pre-configured software stacks are readily available. For instance, deploying a WordPress site requires just a single click—no need to manually configure VPCs, subnets, or public IP addresses. Lightsail takes care of these technical details behind the scenes.
 
 With Lightsail, you not only get virtual servers equipped with built-in firewalls for traffic management but also the ability to deploy containerized applications, use scalable load balancers, and leverage managed databases and content delivery networks (CDNs). This consolidation of essential AWS elements helps minimize complexity while maintaining the robust reliability of AWS infrastructure.
 
-![The image lists five features: Virtual Servers, Containers, Load Balancers, Managed Databases, and Global Content Delivery, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864977/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lightsail/features-virtual-servers-containers-icons.jpg)
+![The image lists five features: Virtual Servers, Containers, Load Balancers, Managed Databases, and Global Content Delivery, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752864977/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lightsail/features-virtual-servers-containers-icons.jpg)
 
 ## How to Deploy a Lightsail Instance
 
@@ -24,7 +24,7 @@ Deploying an instance on Lightsail involves a few straightforward steps:
 4. **Choose Your Instance Plan:** Define the resources that fit your project requirements.
 5. **Name Your Server and Launch:** Once configured, click the "Create Instance" button. Lightsail automatically handles the underlying VPC configuration and provides public internet access to your instance.
 
-![The image is a flowchart for setting up a LightSail instance, showing steps to choose the instance location, platform, development stack, and plan.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864978/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lightsail/lightsail-instance-setup-flowchart.jpg)
+![The image is a flowchart for setting up a LightSail instance, showing steps to choose the instance location, platform, development stack, and plan.](https://kodekloud.com/kk-media/image/upload/v1752864978/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lightsail/lightsail-instance-setup-flowchart.jpg)
 
 > **lightbulb** For a seamless setup experience, review your instance location and platform selection carefully to improve latency and resource availability for your target audience.
 
@@ -40,13 +40,13 @@ Lightsail is compatible with a broad range of operating systems to suit your dep
 * FreeBSD
 * Windows
 
-![The image shows a selection of Linux operating system options available on Amazon Lightsail, including Amazon Linux, Ubuntu, Debian, openSUSE, CentOS, and FreeBSD, each with specific version numbers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864980/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lightsail/linux-os-options-amazon-lightsail.jpg)
+![The image shows a selection of Linux operating system options available on Amazon Lightsail, including Amazon Linux, Ubuntu, Debian, openSUSE, CentOS, and FreeBSD, each with specific version numbers.](https://kodekloud.com/kk-media/image/upload/v1752864980/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lightsail/linux-os-options-amazon-lightsail.jpg)
 
 ## Pre-configured Software Stacks
 
 For users requiring rapid deployment of content management systems and other applications, Lightsail offers a variety of blueprints. These pre-configured software stacks include popular solutions such as WordPress, Joomla, Magento, and many more. This feature eliminates the need for manual configuration post-deployment, saving time and effort.
 
-![The image shows a selection of software blueprints available on LightSail, including applications like WordPress, Joomla, Magento, and others, with their respective version numbers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864981/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lightsail/lightsail-software-blueprints-apps.jpg)
+![The image shows a selection of software blueprints available on LightSail, including applications like WordPress, Joomla, Magento, and others, with their respective version numbers.](https://kodekloud.com/kk-media/image/upload/v1752864981/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lightsail/lightsail-software-blueprints-apps.jpg)
 
 ## Deploying Containerized Applications
 
@@ -56,7 +56,7 @@ If your application is containerized, Lightsail supports direct deployment of co
 2. Push the image to Lightsail.
 3. Deploy the containerized application so users can immediately interact with it.
 
-![The image illustrates a workflow for deploying an image using Amazon ECR and Amazon LightSail, showing steps from building and pushing an image to configuring and deploying it for users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864982/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lightsail/ecr-lightsail-deployment-workflow.jpg)
+![The image illustrates a workflow for deploying an image using Amazon ECR and Amazon LightSail, showing steps from building and pushing an image to configuring and deploying it for users.](https://kodekloud.com/kk-media/image/upload/v1752864982/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lightsail/ecr-lightsail-deployment-workflow.jpg)
 
 ## Key Benefits of AWS Lightsail
 

@@ -28,17 +28,13 @@ AKS integrates seamlessly with popular DevOps tools and services such as Azure D
 
 Focused on advanced security practices relevant to [Microsoft Azure Security Technologies (AZ-500)](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500), AKS offers robust security features. These include integration with Azure Active Directory for authentication and access control, encryption of data at rest and in transit, and the ability to enforce network policies and firewall rules to meet strict compliance standards.
 
-<Callout icon="lightbulb">
-  For enhanced security, ensure that your AKS clusters are regularly audited and integrated with Azure's monitoring solutions to spot potential vulnerabilities early.
-</Callout>
+> **lightbulb** For enhanced security, ensure that your AKS clusters are regularly audited and integrated with Azure's monitoring solutions to spot potential vulnerabilities early.
 
 ### Monitoring and Insights
 
 AKS integrates with Azure Monitor and Azure Log Analytics to provide comprehensive monitoring, logging, and diagnostics. These tools give deep insights into the health of your cluster, performance metrics, and application logs. They are essential for troubleshooting issues, optimizing performance, and ensuring efficient resource utilization.
 
-<Frame>
-  ![The image is a diagram highlighting the features of Azure Kubernetes Service (AKS), including monitoring, security, scalability, management, DevOps integration, and high availability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881756/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Review-Azure-Kubernetes-Service-AKS/azure-kubernetes-service-diagram.jpg)
-</Frame>
+![The image is a diagram highlighting the features of Azure Kubernetes Service (AKS), including monitoring, security, scalability, management, DevOps integration, and high availability.](https://kodekloud.com/kk-media/image/upload/v1752881756/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Review-Azure-Kubernetes-Service-AKS/azure-kubernetes-service-diagram.jpg)
 
 ## AKS Terminology
 
@@ -64,20 +60,14 @@ A deployment in Kubernetes defines the desired state for your pods. By creating 
 
 Kubernetes manifests are declarative configuration files (in YAML or JSON) that articulate the desired state for Kubernetes resources such as deployments, services, config maps, and secrets. In AKS, tools like kubectl are used to apply these manifests, instructing the cluster on how to run your workloads. Additionally, AKS integrates with Azure-specific services like Azure Monitor, Azure Network Watcher, and Azure Active Directory to enhance the overall experience.
 
-<Frame>
-  ![The image explains AKS (Azure Kubernetes Service) terminology, including concepts like pools, nodes, pods, deployment, and manifest, with a diagram illustrating their relationships.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881757/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Review-Azure-Kubernetes-Service-AKS/aks-terminology-diagram-pools-nodes.jpg)
-</Frame>
+![The image explains AKS (Azure Kubernetes Service) terminology, including concepts like pools, nodes, pods, deployment, and manifest, with a diagram illustrating their relationships.](https://kodekloud.com/kk-media/image/upload/v1752881757/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Review-Azure-Kubernetes-Service-AKS/aks-terminology-diagram-pools-nodes.jpg)
 
 ## AKS Architecture Overview
 
 The architecture of AKS is designed to provide a secure, high-performance environment for running containerized applications. Azure manages the control plane, while worker nodes (virtual machines) are delegated to managed services. This setup guarantees a smooth, secure, and highly available environment with integrated monitoring, enhanced security, and seamless DevOps practices.
 
-<Callout icon="lightbulb">
-  This architecture not only simplifies operations but also allows you to focus on building applications, leaving the heavy lifting of infrastructure management to Azure.
-</Callout>
+> **lightbulb** This architecture not only simplifies operations but also allows you to focus on building applications, leaving the heavy lifting of infrastructure management to Azure.
 
 In summary, AKS offers a robust platform for deploying containerized workloads by emphasizing ease of management, scalability, security, and seamless integration with modern DevOps tools and practices. For more information, explore the [Kubernetes Documentation](https://kubernetes.io/docs/) and [Azure Kubernetes Service Overview](https://learn.microsoft.com/en-us/azure/aks/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/146650b0-63f9-4c4b-b452-716a780e5fc7/lesson/e5bd96e4-7fb9-43f8-95dc-517b4d397142" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/146650b0-63f9-4c4b-b452-716a780e5fc7/lesson/e5bd96e4-7fb9-43f8-95dc-517b4d397142)

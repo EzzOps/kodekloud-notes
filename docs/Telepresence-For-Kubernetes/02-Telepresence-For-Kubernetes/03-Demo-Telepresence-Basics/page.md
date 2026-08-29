@@ -18,9 +18,7 @@ Our sample app comprises three microservices:
 
 When a client requests product data, **products** calls **inventory** to fetch stock counts and then merges the results. **auth** runs independently.
 
-<Frame>
-  ![The image is a diagram of a demo app architecture, showing a user interacting with an authentication service, products, and inventory, all within a Kubernetes environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884086/notes-assets/images/Telepresence-For-Kubernetes-Demo-Telepresence-Basics/demo-app-architecture-kubernetes-diagram.jpg)
-</Frame>
+![The image is a diagram of a demo app architecture, showing a user interacting with an authentication service, products, and inventory, all within a Kubernetes environment.](https://kodekloud.com/kk-media/image/upload/v1752884086/notes-assets/images/Telepresence-For-Kubernetes-Demo-Telepresence-Basics/demo-app-architecture-kubernetes-diagram.jpg)
 
 ## What We’ll Cover
 
@@ -31,9 +29,7 @@ When a client requests product data, **products** calls **inventory** to fetch s
 5. Test DNS, service endpoints, and pod IPs from your laptop
 6. Cleanly disconnect when finished
 
-<Frame>
-  ![The image is a diagram of a demo app architecture, showing interactions between a user, authentication, products, and inventory services, with a Kubernetes logo indicating deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884087/notes-assets/images/Telepresence-For-Kubernetes-Demo-Telepresence-Basics/demo-app-architecture-diagram.jpg)
-</Frame>
+![The image is a diagram of a demo app architecture, showing interactions between a user, authentication, products, and inventory services, with a Kubernetes logo indicating deployment.](https://kodekloud.com/kk-media/image/upload/v1752884087/notes-assets/images/Telepresence-For-Kubernetes-Demo-Telepresence-Basics/demo-app-architecture-diagram.jpg)
 
 ***
 
@@ -47,9 +43,7 @@ Open the project in [VS Code](https://code.visualstudio.com/) or your preferred 
 
 Under the `k8s/` directory are the Kubernetes YAML manifests for each service.
 
-<Frame>
-  ![The image shows a Visual Studio Code interface with a file explorer open on the left, displaying a project structure with folders and files. The main area is empty, showing the VS Code logo and some shortcut keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884088/notes-assets/images/Telepresence-For-Kubernetes-Demo-Telepresence-Basics/visual-studio-code-file-explorer.jpg)
-</Frame>
+![The image shows a Visual Studio Code interface with a file explorer open on the left, displaying a project structure with folders and files. The main area is empty, showing the VS Code logo and some shortcut keys.](https://kodekloud.com/kk-media/image/upload/v1752884088/notes-assets/images/Telepresence-For-Kubernetes-Demo-Telepresence-Basics/visual-studio-code-file-explorer.jpg)
 
 ***
 
@@ -180,9 +174,7 @@ kubectl get nodes
 
 You should see multiple nodes in the `Ready` state.
 
-<Callout icon="lightbulb">
-  Make sure your kubeconfig points to the correct context. On managed services like [AWS EKS](https://aws.amazon.com/eks/), verify your cluster endpoint and authentication.
-</Callout>
+> **lightbulb** Make sure your kubeconfig points to the correct context. On managed services like [AWS EKS](https://aws.amazon.com/eks/), verify your cluster endpoint and authentication.
 
 ***
 

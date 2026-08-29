@@ -114,13 +114,9 @@ The application exposes a `/health` endpoint that returns a simple JSON payload:
 }
 ```
 
-<Callout icon="lightbulb">
-  This `/health` endpoint is a good target for an Argo Rollouts [AnalysisTemplate](https://argoproj.github.io/argo-rollouts/features/analysis/). An AnalysisRun can query the endpoint and assert that `"status" == "OK"` before promoting the preview to active.
-</Callout>
+> **lightbulb** This `/health` endpoint is a good target for an Argo Rollouts [AnalysisTemplate](https://argoproj.github.io/argo-rollouts/features/analysis/). An AnalysisRun can query the endpoint and assert that `"status" == "OK"` before promoting the preview to active.
 
-<Callout icon="warning">
-  The Rollout is configured with `autoPromotionEnabled: false`. Promotion must be performed manually via the Argo Rollouts UI/CLI or gated using an AnalysisRun. Also be cautious exposing NodePorts in production clusters — prefer Ingress or LoadBalancer for controlled external access.
-</Callout>
+> **warning** The Rollout is configured with `autoPromotionEnabled: false`. Promotion must be performed manually via the Argo Rollouts UI/CLI or gated using an AnalysisRun. Also be cautious exposing NodePorts in production clusters — prefer Ingress or LoadBalancer for controlled external access.
 
 Resources at a glance:
 
@@ -138,9 +134,7 @@ Links and references:
 
 That's the health-check setup for this Rollout. You can now author an AnalysisTemplate that probes `/health`, run an AnalysisRun during promotion, and use its result to gate the transition from preview to active.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/4589c468-b93e-431d-93da-b6f5f6d7eef8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/4589c468-b93e-431d-93da-b6f5f6d7eef8)
 
 
 # Demo Rolling vs Recreate
@@ -186,9 +180,7 @@ spec:
 
 Note: The manifest above omits a `strategy` section. Kubernetes defaults to the RollingUpdate strategy when `strategy` is not specified.
 
-<Callout icon="lightbulb">
-  If you require zero-downtime updates, RollingUpdate is the default and preferred choice. The Recreate strategy will terminate all existing pods before creating new ones, which causes an interruption in service.
-</Callout>
+> **lightbulb** If you require zero-downtime updates, RollingUpdate is the default and preferred choice. The Recreate strategy will terminate all existing pods before creating new ones, which causes an interruption in service.
 
 ## 1) Clone the repo and apply resources
 

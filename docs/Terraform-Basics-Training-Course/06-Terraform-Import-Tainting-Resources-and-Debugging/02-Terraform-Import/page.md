@@ -68,9 +68,7 @@ $ unset TF_LOG
 $ unset TF_LOG_PATH
 ```
 
-<Callout icon="triangle-alert">
-  Remember to unset these variables when you no longer need detailed logs, as verbose logging can expose sensitive information and impact performance.
-</Callout>
+> **triangle-alert** Remember to unset these variables when you no longer need detailed logs, as verbose logging can expose sensitive information and impact performance.
 
 ***
 
@@ -78,11 +76,9 @@ That concludes our discussion on debugging Terraform. Up next, you'll have the o
 
 For more information, visit the [Terraform Documentation](https://www.terraform.io/docs/cli/index.html) for an in-depth look at other available commands and best practices.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/29825b4d-c0d3-4732-a4e0-ec3a2988e2a3/lesson/70e5a377-3313-4c19-ab5e-c0f20777a147" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/29825b4d-c0d3-4732-a4e0-ec3a2988e2a3/lesson/70e5a377-3313-4c19-ab5e-c0f20777a147)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/29825b4d-c0d3-4732-a4e0-ec3a2988e2a3/lesson/b8679030-52b9-4c91-aaad-42f1eafa5997" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/29825b4d-c0d3-4732-a4e0-ec3a2988e2a3/lesson/b8679030-52b9-4c91-aaad-42f1eafa5997)
 
 
 # Terraform Import
@@ -95,9 +91,7 @@ In this guide, we will explain how to import existing infrastructure into your T
 
 For instance, consider the following diagram illustrating AWS services managed by Terraform, Ansible, and the AWS Management Console:
 
-<Frame>
-  ![The image shows AWS services managed by Terraform, Ansible, and AWS Management Console, including EC2, DynamoDB, S3, Route 53, Elastic Block Store, and VPC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884193/notes-assets/images/Terraform-Basics-Training-Course-Terraform-Import/frame_40.jpg)
-</Frame>
+![The image shows AWS services managed by Terraform, Ansible, and AWS Management Console, including EC2, DynamoDB, S3, Route 53, Elastic Block Store, and VPC.](https://kodekloud.com/kk-media/image/upload/v1752884193/notes-assets/images/Terraform-Basics-Training-Course-Terraform-Import/frame_40.jpg)
 
 This diagram sets the stage for your inquiry: How can you bring externally created resources under Terraform’s direct management?
 

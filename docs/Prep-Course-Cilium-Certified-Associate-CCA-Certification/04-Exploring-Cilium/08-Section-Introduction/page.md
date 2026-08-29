@@ -20,9 +20,7 @@ Notes about these settings:
 | Full visibility into packets (no tunnel headers)                | Adds operational complexity (BGP peering, route management)                |
 | No MTU overhead related to encapsulation                        | Less portable where providers restrict route advertisement or BGP          |
 
-<Callout icon="warning">
-  Native routing requires careful underlay configuration. If your physical network lacks routes for the pod CIDRs (or your cloud provider blocks route advertisement), pod-to-pod traffic can be dropped. Plan route distribution (e.g., BGP) before switching to native routing.
-</Callout>
+> **warning** Native routing requires careful underlay configuration. If your physical network lacks routes for the pod CIDRs (or your cloud provider blocks route advertisement), pod-to-pod traffic can be dropped. Plan route distribution (e.g., BGP) before switching to native routing.
 
 ***
 
@@ -68,9 +66,7 @@ Summary
 * Native routing removes encapsulation overhead and improves performance but requires route distribution into the physical network (BGP or static routes).
 * Cilium supports both modes and allows mixing them by CIDR. Choose based on your underlay capabilities, performance goals, and operational constraints.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/0807e400-fd1b-4f25-bba5-d0fdb0f4e3f2/lesson/4d28cf35-5a75-45be-a5a0-7c709017d8f9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/0807e400-fd1b-4f25-bba5-d0fdb0f4e3f2/lesson/4d28cf35-5a75-45be-a5a0-7c709017d8f9)
 
 
 # Section Introduction
@@ -93,9 +89,7 @@ What you'll learn:
   <img alt="A presentation agenda slide with a vertical timeline of five numbered colored markers beside the word &#x22;Agenda.&#x22; The items list Cilium topics: configuration options, routing modes, kube-proxy-less architecture, terminology, and understanding packet flow." />
 </Frame>
 
-<Callout icon="lightbulb">
-  This lesson focuses on actionable, production-relevant topics. If you're preparing for Cilium-related certification or improving cluster networking performance, pay close attention to the routing modes and kube-proxy-less sections — they cover common pitfalls and optimization strategies.
-</Callout>
+> **lightbulb** This lesson focuses on actionable, production-relevant topics. If you're preparing for Cilium-related certification or improving cluster networking performance, pay close attention to the routing modes and kube-proxy-less sections — they cover common pitfalls and optimization strategies.
 
 Key topics at a glance:
 
@@ -115,6 +109,4 @@ Links and references:
 
 Next, we'll dive into Cilium's configuration options, followed by routing modes and the kube-proxy-less architecture.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/0807e400-fd1b-4f25-bba5-d0fdb0f4e3f2/lesson/8975df5e-e56d-4131-a91d-4780a3564123" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/0807e400-fd1b-4f25-bba5-d0fdb0f4e3f2/lesson/8975df5e-e56d-4131-a91d-4780a3564123)

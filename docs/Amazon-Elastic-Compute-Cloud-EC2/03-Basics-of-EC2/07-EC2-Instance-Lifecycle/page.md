@@ -19,7 +19,7 @@ Understanding the Amazon EC2 instance lifecycle is crucial for managing compute 
 
 > **lightbulb** Stopping an instance does **not** delete attached EBS volumes or Elastic IP addresses—you will continue to incur charges for those resources until you release them.
 
-![The image illustrates the EC2 Instance Life Cycle, showing the stages from launch to termination, including states like pending, running, stopping, and stopped. It also highlights the differences in resources between running and stopped instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868979/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Lifecycle/ec2-instance-life-cycle-diagram.jpg)
+![The image illustrates the EC2 Instance Life Cycle, showing the stages from launch to termination, including states like pending, running, stopping, and stopped. It also highlights the differences in resources between running and stopped instances.](https://kodekloud.com/kk-media/image/upload/v1752868979/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Lifecycle/ec2-instance-life-cycle-diagram.jpg)
 
 ## Detailed State Transitions
 

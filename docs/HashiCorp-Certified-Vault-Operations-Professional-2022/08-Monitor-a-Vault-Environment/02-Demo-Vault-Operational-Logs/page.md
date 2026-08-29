@@ -55,9 +55,7 @@ Error parsing Seal configuration: error fetching AWS KMS wrapping key informatio
 
 Vault reports `NoCredentialProviders`—it can’t find IAM credentials to access the KMS key.
 
-<Callout icon="lightbulb">
-  Missing IAM permissions is the most common cause of AWS KMS seal failures. You can also provide AWS credentials via environment variables (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`), but using an IAM role is recommended.
-</Callout>
+> **lightbulb** Missing IAM permissions is the most common cause of AWS KMS seal failures. You can also provide AWS credentials via environment variables (`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`), but using an IAM role is recommended.
 
 ## 3. Vault Configuration
 
@@ -137,9 +135,7 @@ vault operator init
 
 You’ll receive unseal keys and the initial root token. Store them securely!
 
-<Callout icon="triangle-alert">
-  Never commit unseal keys or the root token to source control. Use a secure secret-management workflow.
-</Callout>
+> **triangle-alert** Never commit unseal keys or the root token to source control. Use a secure secret-management workflow.
 
 Watch initialization in the journal:
 
@@ -178,6 +174,4 @@ core: replication setup finished
 * [AWS EC2 IAM Roles](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html)
 * [Raft Storage Backend](https://www.vaultproject.io/docs/configuration/storage/raft)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/36cf9665-35d2-4dbc-9ddc-fc00ca80cbd4/lesson/6c53f083-a3f8-4b0b-9add-2074ad1026bf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/36cf9665-35d2-4dbc-9ddc-fc00ca80cbd4/lesson/6c53f083-a3f8-4b0b-9add-2074ad1026bf)

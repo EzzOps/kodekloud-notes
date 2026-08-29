@@ -20,11 +20,11 @@ For this demonstration, we will **author the function from scratch**. Enter a na
 
 Once you provide the function details, AWS will prompt you to create an execution role to grant the necessary permissions. You can use an existing role or create a new one. In this demo, we create a new role specifically for our Lambda function.
 
-![The image shows the AWS Lambda console where a user is creating a new function named "demoFunction" with Node.js 20.x as the runtime and x86\_64 architecture.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859487/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Basics-Demo/aws-lambda-console-demofunction-nodejs.jpg)
+![The image shows the AWS Lambda console where a user is creating a new function named "demoFunction" with Node.js 20.x as the runtime and x86\_64 architecture.](https://kodekloud.com/kk-media/image/upload/v1752859487/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Basics-Demo/aws-lambda-console-demofunction-nodejs.jpg)
 
 Review any advanced settings if required, then click **Create function**.
 
-![The image shows the AWS Lambda console where a user is setting permissions and advanced settings for creating a new function. Options for execution roles and advanced settings like code signing and VPC are visible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859488/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Basics-Demo/aws-lambda-console-permissions-settings.jpg)
+![The image shows the AWS Lambda console where a user is setting permissions and advanced settings for creating a new function. Options for execution roles and advanced settings like code signing and VPC are visible.](https://kodekloud.com/kk-media/image/upload/v1752859488/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Basics-Demo/aws-lambda-console-permissions-settings.jpg)
 
 ***
 
@@ -108,7 +108,7 @@ Under the **Configuration** tab, you can review and adjust various settings incl
 * **Timeout settings:** defaults are 3 seconds (maximum 15 minutes)
 * **Execution IAM role details**
 
-![The image shows an AWS Lambda console screen with a function named "demoFunction" and its configuration details, including execution role and permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859489/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Basics-Demo/aws-lambda-console-demo-function.jpg)
+![The image shows an AWS Lambda console screen with a function named "demoFunction" and its configuration details, including execution role and permissions.](https://kodekloud.com/kk-media/image/upload/v1752859489/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Basics-Demo/aws-lambda-console-demo-function.jpg)
 
 ### Monitoring and CloudWatch Logs
 
@@ -117,7 +117,7 @@ AWS Lambda automatically collects CloudWatch metrics such as invocation counts, 
 1. Click **View CloudWatch logs** from the Lambda console.
 2. This action will redirect you to the corresponding log group in CloudWatch, where you can explore individual log streams.
 
-![The image shows the AWS Lambda console, specifically the monitoring tab for a function named "demoFunction," displaying CloudWatch metrics such as invocations, duration, and error count.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859491/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Basics-Demo/aws-lambda-monitoring-demo-function.jpg)
+![The image shows the AWS Lambda console, specifically the monitoring tab for a function named "demoFunction," displaying CloudWatch metrics such as invocations, duration, and error count.](https://kodekloud.com/kk-media/image/upload/v1752859491/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Basics-Demo/aws-lambda-monitoring-demo-function.jpg)
 
 Logs include vital details such as request ID, duration, billed duration, memory usage, and any custom messages logged through `console.log`. For instance, after adding a log statement:
 
@@ -136,11 +136,11 @@ REPORT RequestId: 431b959c-4e5d-4ae0-9c50-37b38ada3a87 Duration: 23.77 ms Billed
 
 To review detailed logs, select the latest log stream within CloudWatch:
 
-![The image shows an AWS CloudWatch interface displaying log groups, each with options for configuration and retention settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859499/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Basics-Demo/aws-cloudwatch-log-groups-interface.jpg)
+![The image shows an AWS CloudWatch interface displaying log groups, each with options for configuration and retention settings.](https://kodekloud.com/kk-media/image/upload/v1752859499/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Basics-Demo/aws-cloudwatch-log-groups-interface.jpg)
 
-![The image shows an AWS CloudWatch interface displaying log group details for a Lambda function, including log streams and various configuration options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859500/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Basics-Demo/aws-cloudwatch-lambda-log-details.jpg)
+![The image shows an AWS CloudWatch interface displaying log group details for a Lambda function, including log streams and various configuration options.](https://kodekloud.com/kk-media/image/upload/v1752859500/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Basics-Demo/aws-cloudwatch-lambda-log-details.jpg)
 
-![The image shows an AWS CloudWatch interface displaying log events for a Lambda function, including timestamps and messages related to function execution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859501/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Basics-Demo/aws-cloudwatch-lambda-logs-interface.jpg)
+![The image shows an AWS CloudWatch interface displaying log events for a Lambda function, including timestamps and messages related to function execution.](https://kodekloud.com/kk-media/image/upload/v1752859501/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Basics-Demo/aws-cloudwatch-lambda-logs-interface.jpg)
 
 ***
 
@@ -196,7 +196,7 @@ If your function requires access to other AWS services such as S3, update the IA
 }
 ```
 
-![The image shows an AWS Lambda console screen, specifically the configuration tab for a function named "demoFunction." It displays the execution role details and resource permissions related to Amazon CloudWatch Logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859503/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Basics-Demo/aws-lambda-demo-function-config.jpg)
+![The image shows an AWS Lambda console screen, specifically the configuration tab for a function named "demoFunction." It displays the execution role details and resource permissions related to Amazon CloudWatch Logs.](https://kodekloud.com/kk-media/image/upload/v1752859503/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Basics-Demo/aws-lambda-demo-function-config.jpg)
 
 ***
 
@@ -210,7 +210,7 @@ After testing or if you need to free up resources, deleting your Lambda function
 
 AWS will remove the function along with its associated configurations.
 
-![The image shows the AWS Lambda console with details of a function named "demoFunction," including its configuration and execution role.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859504/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Basics-Demo/aws-lambda-console-demo-function-2.jpg)
+![The image shows the AWS Lambda console with details of a function named "demoFunction," including its configuration and execution role.](https://kodekloud.com/kk-media/image/upload/v1752859504/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Basics-Demo/aws-lambda-console-demo-function-2.jpg)
 
 ***
 

@@ -15,21 +15,15 @@ $ ls
 main.tf  variables.tf  terraform.tfstate
 ```
 
-<Callout icon="lightbulb">
-  Local state files are stored on the client machine and should not be used when working in a team environment. Additionally, avoid storing them in version control systems like GitHub as they may contain sensitive infrastructure details.
-</Callout>
+> **lightbulb** Local state files are stored on the client machine and should not be used when working in a team environment. Additionally, avoid storing them in version control systems like GitHub as they may contain sensitive infrastructure details.
 
 For example, if two users modify the same S3 bucket resource by pulling, modifying, and committing changes simultaneously, it can lead to conflicts and potential data loss. Furthermore, issues with state locking can occur; when Terraform applies changes, it locks the state file to prevent concurrent modifications. Running parallel Terraform operations without proper state locking can result in corrupted or conflicted state.
 
-<Frame>
-  ![The image illustrates a workflow involving GitHub, users, and an S3 bucket, managing files "main.tf" and "terraform.tfstate" for infrastructure configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884164/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Remote-State/frame_170.jpg)
-</Frame>
+![The image illustrates a workflow involving GitHub, users, and an S3 bucket, managing files "main.tf" and "terraform.tfstate" for infrastructure configuration.](https://kodekloud.com/kk-media/image/upload/v1752884164/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Remote-State/frame_170.jpg)
 
 To mitigate these concerns, it's best to store the Terraform state securely in shared storage using remote backends. With remote backends, the state file is stored outside the configuration directory and version control system, in secure storage solutions such as AWS S3 buckets, HashiCorp Consul, Google Cloud Storage, or Terraform Cloud. When configured, Terraform downloads the state file from the shared storage at the beginning of each operation and uploads the updated state after applying changes. Many remote backends support state locking, ensuring state integrity, and provide encryption both at rest and in transit.
 
-<Frame>
-  ![The image illustrates Terraform state locking with remote backends like AWS S3, Google Cloud Storage, and HashiCorp Consul, supporting automatic state file management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884165/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Remote-State/frame_240.jpg)
-</Frame>
+![The image illustrates Terraform state locking with remote backends like AWS S3, Google Cloud Storage, and HashiCorp Consul, supporting automatic state file management.](https://kodekloud.com/kk-media/image/upload/v1752884165/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Remote-State/frame_240.jpg)
 
 ## Configuring Remote State with AWS S3
 
@@ -89,12 +83,8 @@ Releasing state lock. This may take a few moments.
 
 With the remote backend successfully configured, your state file is managed securely and efficiently, independent of your local configuration.
 
-<Frame>
-  ![The image illustrates a remote backend setup for Terraform, showing components like Terraform State and State Locking, with a transition from local to remote state backend.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884166/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Remote-State/frame_270.jpg)
-</Frame>
+![The image illustrates a remote backend setup for Terraform, showing components like Terraform State and State Locking, with a transition from local to remote state backend.](https://kodekloud.com/kk-media/image/upload/v1752884166/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Remote-State/frame_270.jpg)
 
 That concludes the article on remote state in Terraform. Please proceed to the multiple choice quiz for this section to test your understanding.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/4b6ab52b-4fbb-4a33-9dbc-0fb1c6900c7e/lesson/466f38ac-67f8-4bc8-8253-a7ab27bb7894" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/4b6ab52b-4fbb-4a33-9dbc-0fb1c6900c7e/lesson/466f38ac-67f8-4bc8-8253-a7ab27bb7894)

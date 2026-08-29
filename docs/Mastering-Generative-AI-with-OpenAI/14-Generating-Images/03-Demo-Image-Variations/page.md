@@ -48,9 +48,7 @@ for result in response['data']:
     display(Image(url=result['url']))
 ```
 
-<Callout icon="triangle-alert">
-  Requesting a large number of edits or very high resolutions may incur higher usage costs. Monitor your [API usage dashboard](https://platform.openai.com/account/usage).
-</Callout>
+> **triangle-alert** Requesting a large number of edits or very high resolutions may incur higher usage costs. Monitor your [API usage dashboard](https://platform.openai.com/account/usage).
 
 ## 5. Parameter Reference
 
@@ -78,11 +76,9 @@ for img in response['data']:
 
 For full details on both endpoints, see the [OpenAI Image API Reference](https://platform.openai.com/docs/api-reference/images).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/ad3893f7-fba6-4142-a575-422006496a97/lesson/ff7f071e-87be-41fd-8f4c-0d3fa959250a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/ad3893f7-fba6-4142-a575-422006496a97/lesson/ff7f071e-87be-41fd-8f4c-0d3fa959250a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/ad3893f7-fba6-4142-a575-422006496a97/lesson/0dfd8ad8-78ca-4419-9380-653e4f34b845" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/ad3893f7-fba6-4142-a575-422006496a97/lesson/0dfd8ad8-78ca-4419-9380-653e4f34b845)
 
 
 # Demo Image Variations
@@ -146,9 +142,7 @@ response = openai.Image.create_variation(
 )
 ```
 
-<Callout icon="lightbulb">
-  You can modify the `size` or the `n` parameter to control the resolution and the number of variations returned.
-</Callout>
+> **lightbulb** You can modify the `size` or the `n` parameter to control the resolution and the number of variations returned.
 
 ## 4. Render the Generated Variations
 

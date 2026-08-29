@@ -27,9 +27,7 @@ At runtime, the controller automatically decrypts the sealed payload and creates
 * [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
 * [GitOps with Sealed Secrets](https://github.com/bitnami-labs/sealed-secrets#usage)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/0f3ed562-f151-48f9-bb8c-8d3a4dbb4fc3/lesson/53d78662-3e7a-4fe7-9145-84a6bc0d90b8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/0f3ed562-f151-48f9-bb8c-8d3a4dbb4fc3/lesson/53d78662-3e7a-4fe7-9145-84a6bc0d90b8)
 
 
 # Conclusion
@@ -55,10 +53,6 @@ Looking ahead, you can explore other secret-management solutions to fit your org
 * [Azure Key Vault](https://azure.microsoft.com/services/key-vault/)
 * [Google Cloud KMS](https://cloud.google.com/kms)
 
-<Callout icon="lightbulb">
-  Stay tuned for our upcoming articles, where we'll dive deeper into these tools and help you choose the best secret-management solution for your environment.
-</Callout>
+> **lightbulb** Stay tuned for our upcoming articles, where we'll dive deeper into these tools and help you choose the best secret-management solution for your environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/98693b4f-e95e-4c07-a237-eaa630149b52/lesson/6a08a5b7-d15d-4c5b-9920-eecf45dd4eeb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/98693b4f-e95e-4c07-a237-eaa630149b52/lesson/6a08a5b7-d15d-4c5b-9920-eecf45dd4eeb)

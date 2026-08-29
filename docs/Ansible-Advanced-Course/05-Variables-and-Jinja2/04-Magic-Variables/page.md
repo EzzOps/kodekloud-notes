@@ -14,7 +14,7 @@ web3 ansible_host=172.20.1.102 dns_server=10.5.5.4
 
 > **lightbulb** For more examples and detailed explanations on using filters with Ansible, please visit the [Ansible documentation on filters](https://docs.ansible.com/ansible/latest/user_guide/playbooks_filters.html).
 
-![The image lists links to Jinja2 and Ansible documentation for additional filters, with URLs provided for each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869408/notes-assets/images/Ansible-Advanced-Course-Jinja2-in-Ansible/frame_160.jpg)
+![The image lists links to Jinja2 and Ansible documentation for additional filters, with URLs provided for each.](https://kodekloud.com/kk-media/image/upload/v1752869408/notes-assets/images/Ansible-Advanced-Course-Jinja2-in-Ansible/frame_160.jpg)
 
 ## Hands-On Exercises
 

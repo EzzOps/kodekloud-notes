@@ -31,9 +31,7 @@ For example, consider the following JSON response when fetching posts:
 
 Without a relationship, you would need to execute a separate query for each post, fetching the user details associated with the owner ID. With SQLAlchemy's relationship feature, the ORM automatically performs the necessary join to include the corresponding user details.
 
-<Callout icon="lightbulb">
-  This setup does not add a foreign key constraint in the database by itself; it simply instructs SQLAlchemy to retrieve the related user based on the `owner_id` when querying the posts.
-</Callout>
+> **lightbulb** This setup does not add a foreign key constraint in the database by itself; it simply instructs SQLAlchemy to retrieve the related user based on the `owner_id` when querying the posts.
 
 ## Setting Up the Models
 
@@ -103,9 +101,7 @@ class UserCreate(BaseModel):
     password: str
 ```
 
-<Callout icon="lightbulb">
-  Ensure that the `UserOut` class is defined before the `Post` schema to avoid any errors due to the order of declaration.
-</Callout>
+> **lightbulb** Ensure that the `UserOut` class is defined before the `Post` schema to avoid any errors due to the order of declaration.
 
 After these changes, the posts endpoint will provide responses that include user details such as user ID, email, and account creation date. This enhancement eliminates the need for an extra query to fetch user details on the client side.
 
@@ -165,6 +161,4 @@ By defining a relationship in your SQLAlchemy model and updating your Pydantic s
 
 For more details on SQLAlchemy relationships, check out the [SQLAlchemy documentation](https://docs.sqlalchemy.org/en/14/orm/basic_relationships.html).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/78ac5ab4-6a0f-459b-aa3f-96b86b60cc7e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/78ac5ab4-6a0f-459b-aa3f-96b86b60cc7e)

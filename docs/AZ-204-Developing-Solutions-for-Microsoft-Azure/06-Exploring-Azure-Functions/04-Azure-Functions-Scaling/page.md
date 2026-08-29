@@ -16,11 +16,11 @@ Azure Functions are designed to dynamically scale based on event demand. The key
 
 > **lightbulb** Be mindful that while scaling to zero maximizes cost efficiency, it may introduce latency if a cold start is required.
 
-![The image is an infographic explaining the scaling process of Azure Functions, detailing four steps: function app scaling, scale controller monitoring, instances scaling to zero, and cold start scaling.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866530/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions-Scaling/azure-functions-scaling-infographic.jpg)
+![The image is an infographic explaining the scaling process of Azure Functions, detailing four steps: function app scaling, scale controller monitoring, instances scaling to zero, and cold start scaling.](https://kodekloud.com/kk-media/image/upload/v1752866530/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions-Scaling/azure-functions-scaling-infographic.jpg)
 
 Once an event is detected, the scale controller promptly spins up the necessary instances to process it without compromising performance.
 
-![The image illustrates the process of scaling Azure Functions, showing how a scale controller monitors events from various sources and creates instances to process them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866531/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions-Scaling/azure-functions-scaling-process-diagram.jpg)
+![The image illustrates the process of scaling Azure Functions, showing how a scale controller monitors events from various sources and creates instances to process them.](https://kodekloud.com/kk-media/image/upload/v1752866531/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions-Scaling/azure-functions-scaling-process-diagram.jpg)
 
 ## Scaling by Hosting Plan
 
@@ -42,7 +42,7 @@ The available instance limits and scaling behaviors vary by hosting plan. Below 
 * **Container Apps:**
   * Functions can be hosted using Container Apps, similar to Kubernetes orchestrators provided by Azure, with instance limits ranging from 10 to 300 depending on the selected tier.
 
-![The image is a table describing the scaling options for Azure Functions, detailing different plans, their scale-out methods, and maximum instances for Windows and Linux.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866532/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions-Scaling/azure-functions-scaling-options-table.jpg)
+![The image is a table describing the scaling options for Azure Functions, detailing different plans, their scale-out methods, and maximum instances for Windows and Linux.](https://kodekloud.com/kk-media/image/upload/v1752866532/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions-Scaling/azure-functions-scaling-options-table.jpg)
 
 ## Function Timeout Configuration
 
@@ -69,7 +69,7 @@ Timeouts are established via the host.json file using the `functionTimeout` prop
 }
 ```
 
-![The image is a table comparing Azure Functions plans, showing default and maximum timeout values for Consumption, Premium, Dedicated, and Container Apps plans.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866533/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions-Scaling/azure-functions-plans-timeout-comparison.jpg)
+![The image is a table comparing Azure Functions plans, showing default and maximum timeout values for Consumption, Premium, Dedicated, and Container Apps plans.](https://kodekloud.com/kk-media/image/upload/v1752866533/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions-Scaling/azure-functions-plans-timeout-comparison.jpg)
 
 ## Summary
 

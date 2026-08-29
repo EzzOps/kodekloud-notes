@@ -41,9 +41,7 @@ Ensure the following before creating the EventSource:
 | Kubernetes Secret with MinIO creds | EventSource reads credentials from a secret in `argo-events` | `minio-creds` containing `accesskey` and `secretkey`      |
 | Bucket to watch                    | The bucket that will emit notifications                      | `argo-events-bucket`                                      |
 
-<Callout icon="lightbulb">
-  If your cluster's DNS or service discovery differs, adjust the endpoint to the correct FQDN or ClusterIP:port. Confirm the MinIO API is accessible from the `argo-events` namespace.
-</Callout>
+> **lightbulb** If your cluster's DNS or service discovery differs, adjust the endpoint to the correct FQDN or ClusterIP:port. Confirm the MinIO API is accessible from the `argo-events` namespace.
 
 ## Port-forward locally and set up the MinIO client (optional)
 

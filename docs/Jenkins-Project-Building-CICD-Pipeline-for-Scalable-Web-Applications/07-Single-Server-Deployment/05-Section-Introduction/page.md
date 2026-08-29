@@ -12,9 +12,7 @@ cd /home/ec2-user/app
 python3 -m venv venv
 ```
 
-<Callout icon="lightbulb">
-  Using a virtual environment ensures that the package dependencies for your Flask application do not interfere with other applications on your server.
-</Callout>
+> **lightbulb** Using a virtual environment ensures that the package dependencies for your Flask application do not interfere with other applications on your server.
 
 ## Configuring the systemd Service
 
@@ -54,9 +52,7 @@ WantedBy=multi-user.target
 * **\[Install] Section**
   * **WantedBy=multi-user.target:** Configures the service to start when the system reaches the multi-user runlevel, which is standard for servers without a graphical interface.
 
-<Callout icon="lightbulb">
-  Make sure your `app.py` file is located in the `/home/ec2-user/app/` directory and that it is configured correctly to run your Flask application.
-</Callout>
+> **lightbulb** Make sure your `app.py` file is located in the `/home/ec2-user/app/` directory and that it is configured correctly to run your Flask application.
 
 ## Reloading systemd and Starting the Service
 
@@ -77,9 +73,7 @@ sudo systemctl start flask-app.service
 
 Ensure that your server’s firewall or security groups (for AWS users) allow traffic on the application's designated port. For example, if your application listens on port 5000, make sure this port is open to allow external access.
 
-<Callout icon="triangle-alert">
-  If your server’s firewall or security groups are not configured correctly, the Flask application might not be accessible from outside, even if it is running.
-</Callout>
+> **triangle-alert** If your server’s firewall or security groups are not configured correctly, the Flask application might not be accessible from outside, even if it is running.
 
 ## Summary
 
@@ -98,9 +92,7 @@ For additional details on deploying Flask applications and automating deployment
 * [Flask Official Documentation](https://flask.palletsprojects.com/)
 * [Systemd Documentation](https://www.freedesktop.org/wiki/Software/systemd/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/5fe5875c-d1e2-4f35-8161-af0830fe0deb/lesson/30c1074d-3562-41ee-9f7d-fe7738fb1df2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/5fe5875c-d1e2-4f35-8161-af0830fe0deb/lesson/30c1074d-3562-41ee-9f7d-fe7738fb1df2)
 
 
 # Section Introduction
@@ -115,12 +107,8 @@ For a single server deployment, the entire application is hosted on one dedicate
 
 By automating the deployment process, the CI/CD pipeline updates the server automatically post-testing, ensuring minimal manual intervention and reducing the possibilities of errors during deployment.
 
-<Callout icon="lightbulb">
-  This article focuses exclusively on continuous deployment within a CI/CD pipeline for single server environments. For multi-server or cloud-native architectures, additional configurations may be necessary.
-</Callout>
+> **lightbulb** This article focuses exclusively on continuous deployment within a CI/CD pipeline for single server environments. For multi-server or cloud-native architectures, additional configurations may be necessary.
 
 Transcribed by [Otter.ai](https://otter.ai)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/5fe5875c-d1e2-4f35-8161-af0830fe0deb/lesson/7463b813-8320-4b7f-9146-5cbf8890f4c8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/5fe5875c-d1e2-4f35-8161-af0830fe0deb/lesson/7463b813-8320-4b7f-9146-5cbf8890f4c8)

@@ -20,9 +20,7 @@ What workspaces do and do not do:
 * Resource naming collisions can occur when different workspaces deploy resources with identical names to the same provider account. Avoid collisions by making resource names workspace-aware (for example: `\`${local.prefix}-$\`\`).
 * The default workspace is named `default`. Creating a new workspace does not modify your configuration files.
 
-<Callout icon="lightbulb">
-  Terraform CLI workspaces are a state-scoping mechanism only. If you need stronger isolation (different accounts, different backends, or different provider configurations), consider separate state files/backends or separate configurations.
-</Callout>
+> **lightbulb** Terraform CLI workspaces are a state-scoping mechanism only. If you need stronger isolation (different accounts, different backends, or different provider configurations), consider separate state files/backends or separate configurations.
 
 Common workspace commands
 

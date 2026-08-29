@@ -16,9 +16,7 @@ Answer: providing clear documentation about the model's capabilities and limitat
 
 Providing clear, accessible documentation about a model's capabilities and limitations is the best way to demonstrate transparency in an LLM deployment. Clear documentation empowers users to understand expected behavior, known failure modes, and appropriate safeguards. It also enables better risk assessment, encourages responsible use, and supports accountability and auditing over time.
 
-<Callout icon="lightbulb">
-  Good documentation should include: intended use cases, known limitations and failure modes, evaluation metrics and results, known biases, data provenance (where appropriate), update/change history, and guidance for safe/appropriate use.
-</Callout>
+> **lightbulb** Good documentation should include: intended use cases, known limitations and failure modes, evaluation metrics and results, known biases, data provenance (where appropriate), update/change history, and guidance for safe/appropriate use.
 
 <Frame>
   <img alt="The image contains a question about demonstrating transparency in an LLM deployment, with the answer highlighting the importance of providing clear documentation about a model's capabilities and limitations." />
@@ -47,6 +45,4 @@ Links and references
 
 By prioritizing clear, structured documentation and transparent policies, organizations show a genuine commitment to trustworthy LLM deployment and enable safer, more accountable adoption.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/f5fcaa31-ee4e-4d79-9474-be230c1c96b7/lesson/3434f8f5-727f-4319-9138-a86d71a70410" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/f5fcaa31-ee4e-4d79-9474-be230c1c96b7/lesson/3434f8f5-727f-4319-9138-a86d71a70410)

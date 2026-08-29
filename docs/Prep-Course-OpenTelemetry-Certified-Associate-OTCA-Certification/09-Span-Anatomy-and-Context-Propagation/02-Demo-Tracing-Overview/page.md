@@ -164,9 +164,7 @@ Context is the object that carries trace data (trace ID, span ID, trace flags, o
   <img alt="The image is a summary of points regarding context and propagation in OpenTelemetry, highlighting standards, APIs, and support for older formats." />
 </Frame>
 
-<Callout icon="lightbulb">
-  OpenTelemetry defaults to the W3C Trace Context and W3C Baggage formats. Use composite propagators when you need to support multiple propagation standards simultaneously (for example, during a migration or when integrating with legacy tooling).
-</Callout>
+> **lightbulb** OpenTelemetry defaults to the W3C Trace Context and W3C Baggage formats. Use composite propagators when you need to support multiple propagation standards simultaneously (for example, during a migration or when integrating with legacy tooling).
 
 Links and references
 
@@ -177,9 +175,7 @@ Links and references
 
 That's it for this article on context propagation.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/01d79812-b5b1-4b5d-b791-136c910bb5a2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/01d79812-b5b1-4b5d-b791-136c910bb5a2)
 
 
 # Demo Tracing Overview
@@ -190,9 +186,7 @@ Walkthrough of using OpenTelemetry, Jaeger, and Grafana to inspect distributed t
 
 In this lesson we'll walk through real distributed traces so you can quickly see what trace data looks like, how to read spans, and how to use traces to troubleshoot production issues. The demo uses an application instrumented with OpenTelemetry that exports traces to Jaeger. Grafana is connected to the Jaeger datasource so we can search and inspect traces inside Grafana’s Explore view.
 
-<Callout icon="lightbulb">
-  This guide assumes you have traces being exported to a Jaeger-compatible backend and Grafana configured with a Jaeger datasource. If you need setup guidance, see the OpenTelemetry, Jaeger, and Grafana docs linked in References.
-</Callout>
+> **lightbulb** This guide assumes you have traces being exported to a Jaeger-compatible backend and Grafana configured with a Jaeger datasource. If you need setup guidance, see the OpenTelemetry, Jaeger, and Grafana docs linked in References.
 
 How to query traces in Grafana
 
@@ -304,9 +298,7 @@ Example span attributes for the slow DB client span:
 
 These attributes let you hand off the exact problematic query and timing to the team that owns the database.
 
-<Callout icon="lightbulb">
-  Use duration filters when troubleshooting performance problems: start broad (for example, `min duration > 1s`) and then drill into individual traces to identify the single offending span(s).
-</Callout>
+> **lightbulb** Use duration filters when troubleshooting performance problems: start broad (for example, `min duration > 1s`) and then drill into individual traces to identify the single offending span(s).
 
 Traces and errors
 Traces capture errors and exceptions. When a request fails, the span may be marked `error = true` and include an exception event with a stack trace. Searching for traces where `error = true` helps you quickly surface failing requests.
@@ -361,8 +353,6 @@ References
 * [Jaeger Tracing](https://www.jaegertracing.io/)
 * [Grafana](https://grafana.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/08ca5e35-f17f-4d9e-8af0-b682096c902d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/08ca5e35-f17f-4d9e-8af0-b682096c902d)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/ea587a18-6533-4256-96a8-6a0a20fea583" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/ea587a18-6533-4256-96a8-6a0a20fea583)

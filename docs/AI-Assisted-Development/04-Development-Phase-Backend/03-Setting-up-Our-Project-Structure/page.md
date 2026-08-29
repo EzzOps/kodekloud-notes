@@ -83,7 +83,7 @@ Successfully installed Flask-2.2.3 Jinja2-3.1.0 MarkupSafe-2.1.1 Werkzeug-2.2.3
 
 This AI-assisted scaffolding approach can be very effective, and in our case, we are leveraging a custom AI model for setup instructions, although other models provide similar support.
 
-![The image shows a coding environment with a file structure for a Flask application and a terminal displaying package installation details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857063/notes-assets/images/AI-Assisted-Development-Setting-up-Our-Project-Structure/flask-application-coding-environment.jpg)
+![The image shows a coding environment with a file structure for a Flask application and a terminal displaying package installation details.](https://kodekloud.com/kk-media/image/upload/v1752857063/notes-assets/images/AI-Assisted-Development-Setting-up-Our-Project-Structure/flask-application-coding-environment.jpg)
 
 ***
 
@@ -215,7 +215,7 @@ git push origin main
 
 This setup ensures your repository remains clean, excluding unnecessary files such as the virtual environment.
 
-![The image shows a GitHub repository page for a project called "Super-Image-Optimizer," which is a web-based image optimizer. The repository has one branch and no tags, with an initial commit.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857064/notes-assets/images/AI-Assisted-Development-Setting-up-Our-Project-Structure/super-image-optimizer-repo-page.jpg)
+![The image shows a GitHub repository page for a project called "Super-Image-Optimizer," which is a web-based image optimizer. The repository has one branch and no tags, with an initial commit.](https://kodekloud.com/kk-media/image/upload/v1752857064/notes-assets/images/AI-Assisted-Development-Setting-up-Our-Project-Structure/super-image-optimizer-repo-page.jpg)
 
 ***
 

@@ -11,9 +11,7 @@ In this guide, we detail the diagnostic steps taken to resolve a connection prob
 * Routing issues to the server.
 * Server-side problems, such as connectivity issues or an inactive service.
 
-<Callout icon="lightbulb">
-  This troubleshooting guide covers verifying local connectivity, confirming DNS resolution, testing remote connectivity, tracing the network route, and diagnosing the repository server settings.
-</Callout>
+> **lightbulb** This troubleshooting guide covers verifying local connectivity, confirming DNS resolution, testing remote connectivity, tracing the network route, and diagnosing the repository server settings.
 
 ## Step 1: Verify Local Network Interface
 
@@ -117,14 +115,8 @@ To diagnose the issue further on the server side, Jackie initiated a screen-shar
 
 After these corrective steps, Jackie re-tested the URL. Both she and Bob were now able to successfully access the repository server.
 
-<Callout icon="lightbulb">
-  Bob expressed his gratitude for the effective troubleshooting, marking the successful resolution of the problem.
-</Callout>
+> **lightbulb** Bob expressed his gratitude for the effective troubleshooting, marking the successful resolution of the problem.
 
-<Frame>
-  ![The image shows a network diagram with a DNS server, routers, and a repository, alongside a directory index listing Debian and RedHat packages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881128/notes-assets/images/Learning-Linux-Basics-Course-Labs-Troubleshooting/frame_300.jpg)
-</Frame>
+![The image shows a network diagram with a DNS server, routers, and a repository, alongside a directory index listing Debian and RedHat packages.](https://kodekloud.com/kk-media/image/upload/v1752881128/notes-assets/images/Learning-Linux-Basics-Course-Labs-Troubleshooting/frame_300.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/beae84be-64d2-41b6-b807-575f4107dfc9/lesson/8e37b996-3b9c-42bc-b3c2-ee6971459c42" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/beae84be-64d2-41b6-b807-575f4107dfc9/lesson/8e37b996-3b9c-42bc-b3c2-ee6971459c42)

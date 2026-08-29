@@ -6,9 +6,7 @@ Azure Network Watcher offers diagnostic and monitoring tools for insights into A
 
 Azure Network Watcher is a robust suite of diagnostic and monitoring tools designed to help you gain deep insights into your Azure network infrastructure's performance, health, and security.
 
-<Frame>
-  ![The image shows a list of network diagnostic tools, monitoring options, and logs under the title "Network Watcher." It includes tools like IP flow verify, NSG diagnostic, and monitoring options like Topology and Network Performance Monitor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884707/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Watcher/network-watcher-diagnostic-tools.jpg)
-</Frame>
+![The image shows a list of network diagnostic tools, monitoring options, and logs under the title "Network Watcher." It includes tools like IP flow verify, NSG diagnostic, and monitoring options like Topology and Network Performance Monitor.](https://kodekloud.com/kk-media/image/upload/v1752884707/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Watcher/network-watcher-diagnostic-tools.jpg)
 
 Below, you will find a detailed overview of several key network diagnostic tools that are essential for both troubleshooting and exam preparation:
 
@@ -36,9 +34,7 @@ Below, you will find a detailed overview of several key network diagnostic tools
 
    The Topology feature offers a visual map of the components within your Virtual Network. It displays the arrangement of resources such as virtual machines, subnets, and network interfaces, helping you understand the overall architectural layout of your solution.
 
-<Callout icon="lightbulb">
-  Each tool within Network Watcher plays a vital role in ensuring clear visibility into your network's operation and security. This guide will walk you through how each feature functions within the Azure Portal.
-</Callout>
+> **lightbulb** Each tool within Network Watcher plays a vital role in ensuring clear visibility into your network's operation and security. This guide will walk you through how each feature functions within the Azure Portal.
 
 ***
 
@@ -55,9 +51,7 @@ To diagnose traffic connectivity issues for a virtual machine:
 3. Set the protocol to TCP and the direction to inbound.
 4. Specify the local IP address and port (for example, local port 3389) and then provide the remote IP address along with its corresponding port (e.g., 3389).
 
-<Frame>
-  ![The image shows the "Network Watcher | IP flow verify" page in the Microsoft Azure portal, where users can specify network diagnostic settings for a virtual machine.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884709/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Watcher/network-watcher-ip-flow-verify.jpg)
-</Frame>
+![The image shows the "Network Watcher | IP flow verify" page in the Microsoft Azure portal, where users can specify network diagnostic settings for a virtual machine.](https://kodekloud.com/kk-media/image/upload/v1752884709/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Watcher/network-watcher-ip-flow-verify.jpg)
 
 This tool checks if traffic from the specified remote IP and port can reach the target machine. For instance, if using a Linux VM configured with a "deny all inbound" rule, port 3389 may be blocked. In such cases, testing port 22 (a common SSH port) might show successful connectivity.
 
@@ -69,9 +63,7 @@ NSG Diagnostics collects logs from your NSGs and sends them to a storage account
 
 The Next Hop tool determines the subsequent route for network packets. For instance, if two virtual machines within the same Virtual Network are involved, the expected next hop is typically "vnet local." The test will indicate if the system’s default route or a user-defined route (UDR) is in effect. If an external internet destination is involved or a virtual appliance with a UDR is used, the tool will display "internet" or "virtual appliance" along with the corresponding IP address and details.
 
-<Frame>
-  ![The image shows the "Network Watcher | Next hop" page in Microsoft Azure, where a user is configuring network diagnostic tools by specifying a target virtual machine and destination IP address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884710/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Watcher/network-watcher-next-hop-azure.jpg)
-</Frame>
+![The image shows the "Network Watcher | Next hop" page in Microsoft Azure, where a user is configuring network diagnostic tools by specifying a target virtual machine and destination IP address.](https://kodekloud.com/kk-media/image/upload/v1752884710/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Watcher/network-watcher-next-hop-azure.jpg)
 
 ### Effective Security Rules
 
@@ -81,9 +73,7 @@ This feature aggregates and displays all effective NSG rules when multiple NSGs 
 
 VPN Troubleshoot allows you to diagnose issues with your VPN Gateway and its connections. By selecting an appropriate storage account, you can capture diagnostic metrics like bandwidth and throughput, which help identify potential issues such as packet drops.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal, specifically the Network Watcher VPN troubleshoot page, where users can diagnose the health of virtual network gateways or connections. It includes options to select a subscription, resource group, and location, with a section for selecting a storage account.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884711/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Watcher/azure-portal-network-watcher-vpn-troubleshoot.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal, specifically the Network Watcher VPN troubleshoot page, where users can diagnose the health of virtual network gateways or connections. It includes options to select a subscription, resource group, and location, with a section for selecting a storage account.](https://kodekloud.com/kk-media/image/upload/v1752884711/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Watcher/azure-portal-network-watcher-vpn-troubleshoot.jpg)
 
 ### Packet Capture
 
@@ -95,9 +85,7 @@ Packet Capture eliminates the need to install separate tools like Wireshark or T
 
 After capturing the network traffic, you can download the .pcap file and analyze it using Wireshark.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal with the "Network Watcher | Packet capture" interface open, displaying options for configuring a packet capture session.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884713/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Watcher/azure-portal-network-watcher-packet-capture.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal with the "Network Watcher | Packet capture" interface open, displaying options for configuring a packet capture session.](https://kodekloud.com/kk-media/image/upload/v1752884713/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Watcher/azure-portal-network-watcher-packet-capture.jpg)
 
 ### Connection Troubleshoot
 
@@ -107,9 +95,7 @@ Connection Troubleshoot helps verify connectivity between two endpoints. For exa
 2. Select the desired protocol (such as TCP) and specify the destination port (e.g., 22).
 3. Run the diagnostic test to collect data on next hop details, round trip times, effective NSG rules, and port accessibility.
 
-<Frame>
-  ![The image shows the Microsoft Azure Network Watcher interface, specifically the "Connection Troubleshoot" section, where a user is configuring settings for diagnosing network connectivity issues between virtual machines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884714/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Watcher/azure-network-watcher-connection-troubleshoot.jpg)
-</Frame>
+![The image shows the Microsoft Azure Network Watcher interface, specifically the "Connection Troubleshoot" section, where a user is configuring settings for diagnosing network connectivity issues between virtual machines.](https://kodekloud.com/kk-media/image/upload/v1752884714/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Watcher/azure-network-watcher-connection-troubleshoot.jpg)
 
 The detailed results will include insights into connectivity status, NSG rules (both inbound and outbound), next hop information, and overall network performance.
 
@@ -117,15 +103,11 @@ The detailed results will include insights into connectivity status, NSG rules (
 
 The Topology tool provides a visual layout of your Virtual Network. By selecting a particular virtual network, you can view its topology, which includes resources such as virtual machines, network interfaces, and subnets. For example, you might see a diagram displaying components such as a gateway NSG, blue subnet, and red subnet. Expanding a subnet (like the blue subnet) allows you to view the underlying resources, including each virtual machine and its associated network interface.
 
-<Frame>
-  ![The image shows the Microsoft Azure Network Watcher interface displaying a network topology with two nodes, "blue-01" and "jumpbox-vm," both showing successful status. A pop-up message indicates unsaved edits will be discarded.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884715/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Watcher/azure-network-watcher-topology.jpg)
-</Frame>
+![The image shows the Microsoft Azure Network Watcher interface displaying a network topology with two nodes, "blue-01" and "jumpbox-vm," both showing successful status. A pop-up message indicates unsaved edits will be discarded.](https://kodekloud.com/kk-media/image/upload/v1752884715/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Watcher/azure-network-watcher-topology.jpg)
 
 Expanding further:
 
-<Frame>
-  ![The image shows the Microsoft Azure Network Watcher interface displaying a network topology diagram. It includes various nodes and connections representing virtual networks and resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884716/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Watcher/azure-network-watcher-topology-diagram.jpg)
-</Frame>
+![The image shows the Microsoft Azure Network Watcher interface displaying a network topology diagram. It includes various nodes and connections representing virtual networks and resources.](https://kodekloud.com/kk-media/image/upload/v1752884716/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Watcher/azure-network-watcher-topology-diagram.jpg)
 
 This visual representation provides a clear understanding of how virtual machines, multiple NICs, and their IP configurations are interconnected.
 
@@ -133,10 +115,6 @@ This visual representation provides a clear understanding of how virtual machine
 
 That concludes our in-depth overview of Azure Network Watcher. With these powerful tools at your disposal, managing and troubleshooting your Azure network has never been easier.
 
-<Callout icon="lightbulb">
-  In the next section, we will dive into best practices for administering Azure Storage. Stay tuned to expand your Azure knowledge!
-</Callout>
+> **lightbulb** In the next section, we will dive into best practices for administering Azure Storage. Stay tuned to expand your Azure knowledge!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/50248c52-4b17-4c2d-87f8-52a42eff2d2f/lesson/1e4f0186-2a9f-4d86-af45-e86419735858" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/50248c52-4b17-4c2d-87f8-52a42eff2d2f/lesson/1e4f0186-2a9f-4d86-af45-e86419735858)

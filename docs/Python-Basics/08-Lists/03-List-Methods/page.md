@@ -2,15 +2,11 @@
 # 49.5
 ```
 
-<Callout icon="lightbulb">
-  In this example, the average age is computed by dividing the sum of ages (198) by the length of the list (4), which results in an average age of 49.5.
-</Callout>
+> **lightbulb** In this example, the average age is computed by dividing the sum of ages (198) by the length of the list (4), which results in an average age of 49.5.
 
 That’s all for this lesson. More exciting topics and tutorials will be covered soon—stay tuned for further updates on Python programming techniques!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/a115db9d-996c-4cfc-be27-9cfd7e6d77f5/lesson/0340fa6d-022a-4e45-a628-39b26b33a538" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/a115db9d-996c-4cfc-be27-9cfd7e6d77f5/lesson/0340fa6d-022a-4e45-a628-39b26b33a538)
 
 
 # List Methods
@@ -36,9 +32,7 @@ countries.append("Spain")
 countries.insert(2, "Italy")
 ```
 
-<Callout icon="lightbulb">
-  Ensure that you choose between `append` and `insert` based on whether the element's position matters in your program.
-</Callout>
+> **lightbulb** Ensure that you choose between `append` and `insert` based on whether the element's position matters in your program.
 
 ## Swapping Values in a List
 
@@ -117,6 +111,4 @@ When executed, the `reverse` method flips the order of elements relative to thei
 
 This concludes our comprehensive discussion on built-in Python list methods. Experiment with these techniques to enhance your programming skills and efficiently manage your data with Python lists.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/a115db9d-996c-4cfc-be27-9cfd7e6d77f5/lesson/4d2e93ca-94d6-40e0-a0c8-dee625f38c23" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/a115db9d-996c-4cfc-be27-9cfd7e6d77f5/lesson/4d2e93ca-94d6-40e0-a0c8-dee625f38c23)

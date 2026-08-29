@@ -202,13 +202,9 @@ Key notes about the event call:
 | `message`   | Human-friendly formatted message (supports `Eventf` placeholders)   |
 | `object`    | Pass the parent CR pointer (so the event is attached to the WebApp) |
 
-<Callout icon="lightbulb">
-  Attach events to the parent CR so users can inspect progress and decisions without needing to hunt for child resources or controller logs. Use a timed requeue to poll for readiness rather than treating a non-ready deployment as an error.
-</Callout>
+> **lightbulb** Attach events to the parent CR so users can inspect progress and decisions without needing to hunt for child resources or controller logs. Use a timed requeue to poll for readiness rather than treating a non-ready deployment as an error.
 
-<Callout icon="warning">
-  Choose a requeue delay that balances responsiveness with controller load. Very frequent requeues can increase API server pressure; very slow requeues can delay progress visibility.
-</Callout>
+> **warning** Choose a requeue delay that balances responsiveness with controller load. Very frequent requeues can increase API server pressure; very slow requeues can delay progress visibility.
 
 ## Build and run
 
@@ -257,6 +253,4 @@ Together, status + events + timed requeues make custom resources easier to under
 * Kubernetes Events and Troubleshooting: [https://kubernetes.io/docs/tasks/debug-application-cluster/events-custom-metrics-pipeline/](https://kubernetes.io/docs/tasks/debug-application-cluster/events-custom-metrics-pipeline/)
 * Controller Runtime (sigs.k8s.io/controller-runtime): [https://pkg.go.dev/sigs.k8s.io/controller-runtime](https://pkg.go.dev/sigs.k8s.io/controller-runtime)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/344c359d-abf3-4286-a12f-710dbb68d656" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/344c359d-abf3-4286-a12f-710dbb68d656)

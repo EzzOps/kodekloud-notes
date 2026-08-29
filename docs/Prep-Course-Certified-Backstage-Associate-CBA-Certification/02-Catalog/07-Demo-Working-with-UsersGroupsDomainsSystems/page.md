@@ -52,9 +52,7 @@ Key points:
   <img alt="A schematic diagram titled &#x22;Entity – Users&#x22; showing a central user/stack icon fed by LDAP, Single Sign‑On, and an internal HR database. Below, a &#x22;Sync&#x22; step exports user records into YAML files (user1.yaml, user2.yaml)." />
 </Frame>
 
-<Callout icon="lightbulb">
-  If you use LDAP, SSO, GitHub organizations, or an HR system, configure a catalog processor or a sync integration so `User` and `Group` entities are imported automatically rather than edited by hand.
-</Callout>
+> **lightbulb** If you use LDAP, SSO, GitHub organizations, or an HR system, configure a catalog processor or a sync integration so `User` and `Group` entities are imported automatically rather than edited by hand.
 
 Groups
 
@@ -262,6 +260,4 @@ All Backstage entities use the same foundational YAML structure and connect thro
 
 That's all for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/f1c4777e-f92c-46d0-8234-3f7ed5ea2cf8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/f1c4777e-f92c-46d0-8234-3f7ed5ea2cf8)

@@ -23,9 +23,7 @@ Python classes are central to object-oriented programming. In this module, we co
 
 We also examined how to use class introspection by exploring properties such as `name`, `module`, and `bases`, which are valuable for understanding class hierarchies and superclasses.
 
-<Callout icon="lightbulb">
-  Class introspection is a powerful tool for debugging and analyzing object behavior at runtime.
-</Callout>
+> **lightbulb** Class introspection is a powerful tool for debugging and analyzing object behavior at runtime.
 
 ## Advanced Object-Oriented Topics
 
@@ -43,9 +41,7 @@ The module also enhanced your exception handling strategies by reviewing:
 * **Else Block:** Use an `else` block after an `except` block to execute code when no exception is raised in the corresponding `try` block.
 * **Finally Block:** Utilize a `finally` block to ensure that certain code always executes, regardless of whether an exception occurs.
 
-<Callout icon="lightbulb">
-  Proper exception handling not only makes your code more robust but also facilitates easier debugging and maintenance.
-</Callout>
+> **lightbulb** Proper exception handling not only makes your code more robust but also facilitates easier debugging and maintenance.
 
 ## Key Takeaways
 
@@ -60,6 +56,4 @@ The module also enhanced your exception handling strategies by reviewing:
 
 This module provided a comprehensive overview of fundamental and advanced object-oriented techniques in Python. For more details, refer to our [Python Programming Guide](#) and continue refining your coding expertise.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/7e473cae-90c2-4d9a-8e81-6509481b52ce/lesson/391ca09d-73c1-49da-aaf6-66a2e5b1b395" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/7e473cae-90c2-4d9a-8e81-6509481b52ce/lesson/391ca09d-73c1-49da-aaf6-66a2e5b1b395)

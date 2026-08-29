@@ -175,9 +175,7 @@ Notes:
 * The backend storage account/container/key are provided to the `init` task so the remote state is configured during pipeline execution.
 * Remove the `trigger` block if you prefer to run pipelines manually (useful when approvals are required before execution).
 
-<Callout icon="warning">
-  Using `-auto-approve` bypasses interactive confirmation. Ensure you have robust approvals and artifact-based plan reviews before enabling automatic apply in production.
-</Callout>
+> **warning** Using `-auto-approve` bypasses interactive confirmation. Ensure you have robust approvals and artifact-based plan reviews before enabling automatic apply in production.
 
 Working Terraform files
 
@@ -279,9 +277,7 @@ What’s next?
 * Harden self-hosted agents: apply least privilege, automate updates, and restrict network access; use Microsoft-hosted agents when possible to reduce maintenance.
 * Extend pipeline tasks with linting (tflint), validation (terraform validate), and automated tests for modules (terratest).
 
-<Callout icon="lightbulb">
-  Keep Terraform state in a secured remote backend and ensure your Azure service connection has the minimum required permissions for the operations your pipeline performs.
-</Callout>
+> **lightbulb** Keep Terraform state in a secured remote backend and ensure your Azure service connection has the minimum required permissions for the operations your pipeline performs.
 
 References
 
@@ -291,6 +287,4 @@ References
 
 This completes an end-to-end example of running Terraform from Azure DevOps using a self-hosted agent. You now have a reproducible CI/CD flow from code commit to infrastructure apply, with checkpoints for visibility and governance.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/66c0006d-c716-4381-8b15-e4edb4f4fbe5/lesson/513335c4-aef9-4800-822e-74e042c9a553" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/66c0006d-c716-4381-8b15-e4edb4f4fbe5/lesson/513335c4-aef9-4800-822e-74e042c9a553)

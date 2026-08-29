@@ -105,9 +105,7 @@ Details on retryPolicy options:
 * OnError: retry on internal engine errors.
 * OnTransientError: retry only for transient errors (for example, temporary network/TLS issues).
 
-<Callout icon="lightbulb">
-  Argo template variables such as  can be used in the container command/args to show which attempt is running.
-</Callout>
+> **lightbulb** Argo template variables such as  can be used in the container command/args to show which attempt is running.
 
 ## Example log flow with retries
 
@@ -136,8 +134,6 @@ Retries with exponential backoff prevent immediately failing workflows and reduc
 * Argo Workflows — RetryStrategy: [https://argoproj.github.io/argo-workflows/workflows/retries/](https://argoproj.github.io/argo-workflows/workflows/retries/)
 * Argo Workflows Documentation: [https://argoproj.github.io/argo-workflows/](https://argoproj.github.io/argo-workflows/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/61233f32-f908-4466-9cb1-f02671eb1fbc" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/61233f32-f908-4466-9cb1-f02671eb1fbc)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/5c948821-5400-4cb2-8f05-dd37f3d723f2" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/5c948821-5400-4cb2-8f05-dd37f3d723f2)

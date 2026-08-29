@@ -8,9 +8,7 @@ Welcome to Kubernetes Troubleshooting for Application Developers! I'm Nourhan Kh
 
 Learning Kubernetes from tutorials is one thing, but deploying a production application introduces a unique set of challenges that often feel like you're constantly putting out fires. This lesson bridges the gap between theory and practice—the very course I wish I had during those frustrating debugging sessions.
 
-<Callout icon="lightbulb">
-  Ensure you have a basic understanding of Kubernetes resources such as pods, deployments, services, storage, and network policies before you begin.
-</Callout>
+> **lightbulb** Ensure you have a basic understanding of Kubernetes resources such as pods, deployments, services, storage, and network policies before you begin.
 
 ## Course Overview
 
@@ -30,9 +28,7 @@ Throughout the lesson, you will explore a range of troubleshooting challenges in
 * Networking challenges such as service misconfigurations, network policies, and ingress troubleshooting
 * Diagnosing RBAC and storage-related issues
 
-<Callout icon="triangle-alert">
-  Always test changes in a controlled environment before applying fixes to production. Insufficient testing can lead to unexpected disruptions.
-</Callout>
+> **triangle-alert** Always test changes in a controlled environment before applying fixes to production. Insufficient testing can lead to unexpected disruptions.
 
 ## Hands-On Labs
 
@@ -40,10 +36,6 @@ Like all KodeKloud courses, this lesson features multiple hands-on labs. These b
 
 If you're ready for a challenge, enroll now and start mastering Kubernetes troubleshooting!
 
-<Frame>
-  ![The image shows a list of Kubernetes troubleshooting scenarios on the left, and a person speaking on the right, sitting in front of a plant.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880417/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Course-Introduction/kubernetes-troubleshooting-scenarios.jpg)
-</Frame>
+![The image shows a list of Kubernetes troubleshooting scenarios on the left, and a person speaking on the right, sitting in front of a plant.](https://kodekloud.com/kk-media/image/upload/v1752880417/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Course-Introduction/kubernetes-troubleshooting-scenarios.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/16f28a74-042b-40e7-95e1-8f37ee1c1b07/lesson/5a15ffba-b9e0-45a5-9215-e650d89d02b6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/16f28a74-042b-40e7-95e1-8f37ee1c1b07/lesson/5a15ffba-b9e0-45a5-9215-e650d89d02b6)

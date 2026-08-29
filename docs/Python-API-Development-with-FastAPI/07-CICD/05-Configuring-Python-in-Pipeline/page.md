@@ -75,9 +75,7 @@ To https://github.com/Sanjeev-Thiyagarajan/fastapi-course.git
 
 For visual reference, see the image below which shows the GitHub page for the Python setup action:
 
-<Frame>
-  ![The image shows a GitHub page for "Setup Python," detailing a GitHub Action for setting up a Python environment, including features and usage instructions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883366/notes-assets/images/Python-API-Development-with-FastAPI-Configuring-Python-in-Pipeline/setup-python-github-action.jpg)
-</Frame>
+![The image shows a GitHub page for "Setup Python," detailing a GitHub Action for setting up a Python environment, including features and usage instructions.](https://kodekloud.com/kk-media/image/upload/v1752883366/notes-assets/images/Python-API-Development-with-FastAPI-Configuring-Python-in-Pipeline/setup-python-github-action.jpg)
 
 :::note Tip
 Using the setup-python action makes it easy to extend your pipeline to test multiple versions of Python by simply adjusting the matrix strategy.
@@ -205,9 +203,7 @@ git version 2.31.0
 
 The image below highlights the error details from the GitHub Actions log:
 
-<Frame>
-  ![The image shows a computer screen displaying a GitHub Actions log with error messages related to missing environment variables during a job run. The left side of the screen shows a navigation pane with a job labeled "job1."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883368/notes-assets/images/Python-API-Development-with-FastAPI-Configuring-Python-in-Pipeline/github-actions-error-log-job1.jpg)
-</Frame>
+![The image shows a computer screen displaying a GitHub Actions log with error messages related to missing environment variables during a job run. The left side of the screen shows a navigation pane with a job labeled "job1."](https://kodekloud.com/kk-media/image/upload/v1752883368/notes-assets/images/Python-API-Development-with-FastAPI-Configuring-Python-in-Pipeline/github-actions-error-log-job1.jpg)
 
 :::warning Warning
 The failure indicates that certain environment variables for the database connection have not been set. Ensure that these variables are configured before running the tests.
@@ -228,6 +224,4 @@ In the next lesson, we will discuss how to configure environment variables withi
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/4979410a-af57-460b-8f71-5a177fa10d2d/lesson/3a05d90b-1c8d-4f6d-9c24-39d872cf3972" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/4979410a-af57-460b-8f71-5a177fa10d2d/lesson/3a05d90b-1c8d-4f6d-9c24-39d872cf3972)

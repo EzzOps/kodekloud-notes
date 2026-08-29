@@ -2,9 +2,7 @@
 # torch.Size([2, 2]) torch.float32 cpu
 ```
 
-<Callout icon="lightbulb">
-  Knowing these attributes helps you manage tensor operations efficiently and debug your deep learning models.
-</Callout>
+> **lightbulb** Knowing these attributes helps you manage tensor operations efficiently and debug your deep learning models.
 
 ## Common Tensor Operations
 
@@ -12,21 +10,15 @@ PyTorch supports over 100 tensor operations. Here are several commonly used ones
 
 1. **Indexing and Slicing:** Extract specific elements or sections of a tensor. For instance, you can select certain rows or columns in a 2D tensor.
 
-<Frame>
-  ![The image is a slide titled "Tensor Operations" focusing on "Indexing and Slicing," explaining that these operations select elements or portions of a tensor and retrieve specific rows or columns in a 2D tensor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883178/notes-assets/images/PyTorch-Introduction-to-PyTorch-Tensors/tensor-operations-indexing-slicing.jpg)
-</Frame>
+![The image is a slide titled "Tensor Operations" focusing on "Indexing and Slicing," explaining that these operations select elements or portions of a tensor and retrieve specific rows or columns in a 2D tensor.](https://kodekloud.com/kk-media/image/upload/v1752883178/notes-assets/images/PyTorch-Introduction-to-PyTorch-Tensors/tensor-operations-indexing-slicing.jpg)
 
 2. **Joining Tensors:** Concatenate tensors along a specific dimension (row-wise or column-wise) using functions like `torch.cat()`.
 
-<Frame>
-  ![The image is a slide titled "Tensor Operations" focusing on "Joining Tensors," explaining that tensors can be combined using torch.cat() either row-wise or column-wise.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883179/notes-assets/images/PyTorch-Introduction-to-PyTorch-Tensors/tensor-operations-joining-tensors.jpg)
-</Frame>
+![The image is a slide titled "Tensor Operations" focusing on "Joining Tensors," explaining that tensors can be combined using torch.cat() either row-wise or column-wise.](https://kodekloud.com/kk-media/image/upload/v1752883179/notes-assets/images/PyTorch-Introduction-to-PyTorch-Tensors/tensor-operations-joining-tensors.jpg)
 
 3. **Reshaping Tensors:** Adjust the dimensions of a tensor (e.g., flatten a 2D matrix into a 1D vector) with the `torch.reshape()` function.
 
-<Frame>
-  ![The image is a slide titled "Tensor Operations" focusing on "Reshaping Tensors," explaining how tensors can be reshaped using torch.reshape() and its usefulness in flattening a 2D matrix into a 1D vector.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883180/notes-assets/images/PyTorch-Introduction-to-PyTorch-Tensors/tensor-operations-reshaping-tensors.jpg)
-</Frame>
+![The image is a slide titled "Tensor Operations" focusing on "Reshaping Tensors," explaining how tensors can be reshaped using torch.reshape() and its usefulness in flattening a 2D matrix into a 1D vector.](https://kodekloud.com/kk-media/image/upload/v1752883180/notes-assets/images/PyTorch-Introduction-to-PyTorch-Tensors/tensor-operations-reshaping-tensors.jpg)
 
 Below is an example that compares common indexing approaches in both PyTorch and NumPy:
 
@@ -95,15 +87,11 @@ This output indicates that the image tensor contains 4 channels (possibly RGBA) 
 
 PyTorch's strong GPU support significantly boosts deep learning performance. GPUs specialize in handling parallel computations, making them ideal for the heavy matrix operations found in deep learning.
 
-<Frame>
-  ![The image outlines the benefits of using a Graphics Processing Unit (GPU) for deep learning, including faster training, parallel computations, suitability for large datasets, reduced training time, and optimization for PyTorch.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883182/notes-assets/images/PyTorch-Introduction-to-PyTorch-Tensors/gpu-deep-learning-benefits.jpg)
-</Frame>
+![The image outlines the benefits of using a Graphics Processing Unit (GPU) for deep learning, including faster training, parallel computations, suitability for large datasets, reduced training time, and optimization for PyTorch.](https://kodekloud.com/kk-media/image/upload/v1752883182/notes-assets/images/PyTorch-Introduction-to-PyTorch-Tensors/gpu-deep-learning-benefits.jpg)
 
 PyTorch utilizes NVIDIA’s CUDA (Compute Unified Device Architecture) to enable GPUs to handle tasks beyond rendering graphics, such as scientific computations and model training.
 
-<Frame>
-  ![The image is a presentation slide about NVIDIA's Compute Unified Device Architecture (CUDA), highlighting its use in scientific computing, machine learning, and leveraging GPU power for deep learning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883183/notes-assets/images/PyTorch-Introduction-to-PyTorch-Tensors/nvidia-cuda-scientific-computing-slide.jpg)
-</Frame>
+![The image is a presentation slide about NVIDIA's Compute Unified Device Architecture (CUDA), highlighting its use in scientific computing, machine learning, and leveraging GPU power for deep learning.](https://kodekloud.com/kk-media/image/upload/v1752883183/notes-assets/images/PyTorch-Introduction-to-PyTorch-Tensors/nvidia-cuda-scientific-computing-slide.jpg)
 
 Check for GPU availability and move tensors as follows:
 
@@ -137,9 +125,7 @@ tensor = torch.tensor([1, 2, 3], device=device)
 print(tensor.device)
 ```
 
-<Callout icon="lightbulb">
-  Using dynamic device selection ensures that your code runs efficiently on both GPUs and CPUs.
-</Callout>
+> **lightbulb** Using dynamic device selection ensures that your code runs efficiently on both GPUs and CPUs.
 
 ## Conclusion
 
@@ -147,9 +133,7 @@ This lesson established a strong foundation for understanding and working with P
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/22db0214-825f-4f68-b444-49e0bc1f7713" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/22db0214-825f-4f68-b444-49e0bc1f7713)
 
 
 # Introduction to PyTorch
@@ -160,15 +144,11 @@ This article introduces PyTorch, its applications, advantages, and ecosystem in 
 
 Artificial intelligence and machine learning are not mere buzzwords—they are transformative forces reshaping industries, enhancing daily lives, and pushing the boundaries of technology. Frameworks like PyTorch power these advancements by enabling developers and researchers to build and experiment with deep learning models efficiently.
 
-<Frame>
-  ![The image illustrates AI and machine learning's impact on various sectors, featuring icons of a car, house, chat, and gear connected to a central AI symbol. The text reads "AI and Machine Learning – Transforming the Future."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883184/notes-assets/images/PyTorch-Introduction-to-PyTorch/ai-machine-learning-impact-icons.jpg)
-</Frame>
+![The image illustrates AI and machine learning's impact on various sectors, featuring icons of a car, house, chat, and gear connected to a central AI symbol. The text reads "AI and Machine Learning – Transforming the Future."](https://kodekloud.com/kk-media/image/upload/v1752883184/notes-assets/images/PyTorch-Introduction-to-PyTorch/ai-machine-learning-impact-icons.jpg)
 
 From powering virtual assistants and delivering personalized recommendations to enabling autonomous vehicles and driving medical breakthroughs, these transformative technologies are redefining the future.
 
-<Frame>
-  ![The image illustrates four applications of AI and machine learning: powering virtual assistants, personalized recommendations, enabling autonomous vehicles, and driving medical breakthroughs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883186/notes-assets/images/PyTorch-Introduction-to-PyTorch/ai-machine-learning-applications.jpg)
-</Frame>
+![The image illustrates four applications of AI and machine learning: powering virtual assistants, personalized recommendations, enabling autonomous vehicles, and driving medical breakthroughs.](https://kodekloud.com/kk-media/image/upload/v1752883186/notes-assets/images/PyTorch-Introduction-to-PyTorch/ai-machine-learning-applications.jpg)
 
 At the heart of many of these innovations is the PyTorch framework, developed by Facebook's AI Research Lab in 2016. As an open-source machine learning library written in Python, PyTorch is celebrated for its ease of use, flexibility, and high performance. Its dynamic computation graph allows developers to modify model architectures on the fly, making it especially popular for research and experimental projects.
 
@@ -176,15 +156,11 @@ At the heart of many of these innovations is the PyTorch framework, developed by
 
 PyTorch is widely applied in various machine learning domains. Its strength in deep learning is evident in the construction of convolutional neural networks (CNNs) and recurrent neural networks (RNNs). Furthermore, PyTorch is highly effective for natural language processing tasks—such as machine translation, sentiment analysis, and language generation—as well as for computer vision tasks including image classification, object detection, and image segmentation when paired with the TorchVision library.
 
-<Frame>
-  ![The image is a diagram titled "PyTorch – Applications," showing three categories: Deep Learning (with CNNs and RNNs), NLP (with Machine Translation, Sentiment Analysis, and Language Generation), and Computer Vision (with Image Classification, Object Detection, and Image Segmentation).](../../../../images/kodekloud.com/kk-media/image/upload/v1752883187/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-applications-deep-learning-nlp-computer-vision.jpg)
-</Frame>
+![The image is a diagram titled "PyTorch – Applications," showing three categories: Deep Learning (with CNNs and RNNs), NLP (with Machine Translation, Sentiment Analysis, and Language Generation), and Computer Vision (with Image Classification, Object Detection, and Image Segmentation).](https://kodekloud.com/kk-media/image/upload/v1752883187/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-applications-deep-learning-nlp-computer-vision.jpg)
 
 When compared to other frameworks such as TensorFlow and Keras, PyTorch distinguishes itself with an intuitive Pythonic syntax and a dynamic approach to computation. While TensorFlow is known for its expansive ecosystem and benefits in production-scale projects, its static graph structure can be less flexible. Similarly, Keras, serving as a high-level API for TensorFlow, does not offer the same level of low-level control available in PyTorch.
 
-<Frame>
-  ![The image compares PyTorch, TensorFlow, and Keras, highlighting their key features and differences. PyTorch is noted for being intuitive and using dynamic graphs, TensorFlow for its larger ecosystem and production-scale projects, and Keras as a high-level API for TensorFlow with less low-level control.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883188/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-tensorflow-keras-comparison.jpg)
-</Frame>
+![The image compares PyTorch, TensorFlow, and Keras, highlighting their key features and differences. PyTorch is noted for being intuitive and using dynamic graphs, TensorFlow for its larger ecosystem and production-scale projects, and Keras as a high-level API for TensorFlow with less low-level control.](https://kodekloud.com/kk-media/image/upload/v1752883188/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-tensorflow-keras-comparison.jpg)
 
 PyTorch also boasts native GPU support and seamless integration with the Python ecosystem, making it a versatile option for both academic research and industrial applications.
 
@@ -192,9 +168,7 @@ PyTorch also boasts native GPU support and seamless integration with the Python 
 
 One of the standout features of PyTorch is its dynamic computation graph, enabling eager execution. This means that operations are computed immediately, which simplifies debugging and accelerates iterative experimentation. Its highly Pythonic design ensures a smooth integration with existing Python libraries, easing the learning curve for new users.
 
-<Frame>
-  ![The image is a slide titled "PyTorch – Advantages" highlighting the "Pythonic Nature" of PyTorch, noting it integrates seamlessly with Python.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883190/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-advantages-pythonic-nature.jpg)
-</Frame>
+![The image is a slide titled "PyTorch – Advantages" highlighting the "Pythonic Nature" of PyTorch, noting it integrates seamlessly with Python.](https://kodekloud.com/kk-media/image/upload/v1752883190/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-advantages-pythonic-nature.jpg)
 
 The extensive PyTorch ecosystem further enhances its functionality:
 
@@ -203,59 +177,41 @@ The extensive PyTorch ecosystem further enhances its functionality:
 * **TorchAudio:** Optimizes audio data processing.
 * **TorchVision:** Provides utilities and pre-trained models for computer vision tasks.
 
-<Frame>
-  ![The image lists PyTorch tools, including PyTorch Lightning, TorchServe, Torchaudio, and Torchvision, with a note that Torchvision focuses on computer vision tasks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883191/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-tools-lightning-serve-audio-vision.jpg)
-</Frame>
+![The image lists PyTorch tools, including PyTorch Lightning, TorchServe, Torchaudio, and Torchvision, with a note that Torchvision focuses on computer vision tasks.](https://kodekloud.com/kk-media/image/upload/v1752883191/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-tools-lightning-serve-audio-vision.jpg)
 
 Additionally, support for both CPU and GPU acceleration, combined with a dynamic and active community, ensures that PyTorch continues to evolve and deliver comprehensive support and improvements.
 
-<Frame>
-  ![The image outlines the advantages of PyTorch, highlighting strong community support, suitability for research and production, and a large ecosystem with many resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883192/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-advantages-community-support.jpg)
-</Frame>
+![The image outlines the advantages of PyTorch, highlighting strong community support, suitability for research and production, and a large ecosystem with many resources.](https://kodekloud.com/kk-media/image/upload/v1752883192/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-advantages-community-support.jpg)
 
 ## PyTorch Tensors
 
 A fundamental component of PyTorch is the Tensor, akin to a NumPy array but optimized for GPU acceleration and enhanced computations. Tensors are versatile data containers capable of representing everything from single values to complex multi-dimensional arrays. This flexibility is essential for deep learning applications where efficient data manipulation is critical.
 
-<Frame>
-  ![The image explains PyTorch tensors, showing vectors as simple lists of numbers, matrices as grids of numbers, and tensors as multi-dimensional data. It highlights tensors as the core data structure in PyTorch, optimized with GPU acceleration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883193/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-tensors-vectors-matrices.jpg)
-</Frame>
+![The image explains PyTorch tensors, showing vectors as simple lists of numbers, matrices as grids of numbers, and tensors as multi-dimensional data. It highlights tensors as the core data structure in PyTorch, optimized with GPU acceleration.](https://kodekloud.com/kk-media/image/upload/v1752883193/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-tensors-vectors-matrices.jpg)
 
 With operations ranging from element-wise addition and multiplication to matrix-level computations, PyTorch Tensors can be reshaped, sliced, and manipulated effortlessly. For example, image data stored in a tensor may need reshaping to fit the input specifications of a neural network—a process that PyTorch handles efficiently.
 
-<Frame>
-  ![The image describes PyTorch Tensors, highlighting their versatile operations like addition and multiplication, and their flexible manipulation capabilities such as reshaping and slicing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883194/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-tensors-operations-manipulation.jpg)
-</Frame>
+![The image describes PyTorch Tensors, highlighting their versatile operations like addition and multiplication, and their flexible manipulation capabilities such as reshaping and slicing.](https://kodekloud.com/kk-media/image/upload/v1752883194/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-tensors-operations-manipulation.jpg)
 
-<Callout icon="lightbulb">
-  For an in-depth exploration of tensors and their operations, look out for our detailed guide on PyTorch Tensors in the upcoming sections.
-</Callout>
+> **lightbulb** For an in-depth exploration of tensors and their operations, look out for our detailed guide on PyTorch Tensors in the upcoming sections.
 
 ## Autograd: Automatic Differentiation
 
 A pivotal feature of PyTorch is its Autograd library for automatic differentiation. Autograd tracks all operations performed on tensors and automatically computes the gradients required to optimize machine learning models. This process simplifies backpropagation, streamlining the training process and reducing common errors associated with manual gradient computation.
 
-<Frame>
-  ![The image describes PyTorch's autograd as an automatic differentiation library essential for training machine learning models, with a flowchart showing the process involving AccumulateGrad, PowBackward0, and AddBackward0.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883195/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-autograd-differentiation-flowchart.jpg)
-</Frame>
+![The image describes PyTorch's autograd as an automatic differentiation library essential for training machine learning models, with a flowchart showing the process involving AccumulateGrad, PowBackward0, and AddBackward0.](https://kodekloud.com/kk-media/image/upload/v1752883195/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-autograd-differentiation-flowchart.jpg)
 
-<Callout icon="lightbulb">
-  Keep an eye on upcoming sections where we delve deeper into Autograd and its critical role in model training and optimization.
-</Callout>
+> **lightbulb** Keep an eye on upcoming sections where we delve deeper into Autograd and its critical role in model training and optimization.
 
 ## Building Neural Networks with PyTorch
 
 PyTorch simplifies the creation of neural networks—computational models inspired by the human brain that process data through interconnected layers. Its torch.nn module provides an array of pre-built components, including layers, activation functions, and loss functions, which enable developers to build and train neural networks with ease.
 
-<Frame>
-  ![The image illustrates a neural network diagram inside a silhouette of a head, showing input, hidden, and output layers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883196/notes-assets/images/PyTorch-Introduction-to-PyTorch/neural-network-diagram-silhouette-head.jpg)
-</Frame>
+![The image illustrates a neural network diagram inside a silhouette of a head, showing input, hidden, and output layers.](https://kodekloud.com/kk-media/image/upload/v1752883196/notes-assets/images/PyTorch-Introduction-to-PyTorch/neural-network-diagram-silhouette-head.jpg)
 
 Using torch.nn, developers can construct simple feedforward networks by stacking layers and selecting appropriate activation functions and loss metrics. This modular approach allows for the creation of both simple and sophisticated network architectures.
 
-<Frame>
-  ![The image describes PyTorch's torch.nn module, highlighting its components: Layers, Activation Functions, and Loss Functions, which are used for building and training neural networks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883198/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-torch-nn-module-components.jpg)
-</Frame>
+![The image describes PyTorch's torch.nn module, highlighting its components: Layers, Activation Functions, and Loss Functions, which are used for building and training neural networks.](https://kodekloud.com/kk-media/image/upload/v1752883198/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-torch-nn-module-components.jpg)
 
 ## The PyTorch Ecosystem
 
@@ -268,9 +224,7 @@ Beyond the core framework, PyTorch features a vibrant ecosystem of libraries and
 | PyTorch Lightning | High-level interface to streamline model training          | Simplifying complex training procedures     |
 | TorchServe        | Deploying trained models into production                   | Serving models in production environments   |
 
-<Frame>
-  ![The image shows a diagram of the PyTorch ecosystem of libraries, including Torchvision, Torchaudio, PyTorch Lightning, and TorchServe, with a focus on "Vision tasks" under Torchvision.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883198/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-ecosystem-vision-tasks-diagram.jpg)
-</Frame>
+![The image shows a diagram of the PyTorch ecosystem of libraries, including Torchvision, Torchaudio, PyTorch Lightning, and TorchServe, with a focus on "Vision tasks" under Torchvision.](https://kodekloud.com/kk-media/image/upload/v1752883198/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-ecosystem-vision-tasks-diagram.jpg)
 
 These libraries, among others, extend PyTorch’s functionality and make it a comprehensive solution for tasks ranging from research to deployment.
 
@@ -283,24 +237,16 @@ PyTorch is trusted by major companies and academic institutions alike. Some nota
 * **Stanford University:** Employing PyTorch in cutting-edge research projects.
 * **Uber:** Applying PyTorch in predictive modeling and autonomous driving research.
 
-<Frame>
-  ![The image shows logos of organizations that use PyTorch, including Meta, Stanford University, and Tesla.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883200/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-logos-meta-stanford-tesla.jpg)
-</Frame>
+![The image shows logos of organizations that use PyTorch, including Meta, Stanford University, and Tesla.](https://kodekloud.com/kk-media/image/upload/v1752883200/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-logos-meta-stanford-tesla.jpg)
 
 The PyTorch Foundation, established in 2022 under the guidance of the Linux Foundation, plays a crucial role in fostering community development and supporting the ecosystem’s growth. A robust open-source community, active forums, and continuous contributions further ensure that PyTorch remains on the cutting edge of technological innovation.
 
-<Frame>
-  ![The image outlines the PyTorch Foundation and Community, highlighting its open-source project, active community forums, and participation in major AI conferences.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883200/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-foundation-community-overview.jpg)
-</Frame>
+![The image outlines the PyTorch Foundation and Community, highlighting its open-source project, active community forums, and participation in major AI conferences.](https://kodekloud.com/kk-media/image/upload/v1752883200/notes-assets/images/PyTorch-Introduction-to-PyTorch/pytorch-foundation-community-overview.jpg)
 
 ## Summary
 
 In this article, we introduced the core components and advantages of PyTorch—from dynamic tensors and automatic differentiation with Autograd to powerful neural network modules and an extensive ecosystem. Whether you are a researcher or an industry practitioner, understanding these fundamental concepts will serve as a solid foundation as you dive deeper into machine learning with PyTorch.
 
-<Callout icon="lightbulb">
-  Explore our upcoming tutorials for detailed insights into PyTorch’s tensor operations, model building, and optimization techniques.
-</Callout>
+> **lightbulb** Explore our upcoming tutorials for detailed insights into PyTorch’s tensor operations, model building, and optimization techniques.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/b649ab9a-901e-440f-8499-2cfaf7629d3d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/b649ab9a-901e-440f-8499-2cfaf7629d3d)

@@ -18,9 +18,7 @@ However, there are some considerations:
 * Managing a larger number of machines and configurations can introduce complexity.
 * It might not be cost-effective for smaller workloads.
 
-<Frame>
-  ![The image explains horizontal scaling, showing multiple servers added to share workload, with benefits like easier scaling and improved fault tolerance, and drawbacks such as managing multiple machines and potential cost issues.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879662/notes-assets/images/Jenkins-Pipelines-Jenkins-Scaling-Capacity-Planning/horizontal-scaling-multiple-servers.jpg)
-</Frame>
+![The image explains horizontal scaling, showing multiple servers added to share workload, with benefits like easier scaling and improved fault tolerance, and drawbacks such as managing multiple machines and potential cost issues.](https://kodekloud.com/kk-media/image/upload/v1752879662/notes-assets/images/Jenkins-Pipelines-Jenkins-Scaling-Capacity-Planning/horizontal-scaling-multiple-servers.jpg)
 
 ## Vertical Scaling
 
@@ -34,13 +32,9 @@ The drawbacks include:
 * Scalability is limited by the maximum hardware specifications available for a single machine.
 * Creates a single point of failure—if the upgraded machine fails, the entire system can be affected.
 
-<Frame>
-  ![The image compares horizontal and vertical scaling, focusing on vertical scaling, which involves upgrading a server's CPU and memory. It lists benefits like simpler management and cost-effectiveness for smaller workloads, and drawbacks such as physical limits and a single point of failure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879662/notes-assets/images/Jenkins-Pipelines-Jenkins-Scaling-Capacity-Planning/vertical-scaling-comparison-diagram.jpg)
-</Frame>
+![The image compares horizontal and vertical scaling, focusing on vertical scaling, which involves upgrading a server's CPU and memory. It lists benefits like simpler management and cost-effectiveness for smaller workloads, and drawbacks such as physical limits and a single point of failure.](https://kodekloud.com/kk-media/image/upload/v1752879662/notes-assets/images/Jenkins-Pipelines-Jenkins-Scaling-Capacity-Planning/vertical-scaling-comparison-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Choosing between horizontal and vertical scaling should be based on your application’s specific workload, performance needs, and fault tolerance requirements.
-</Callout>
+> **lightbulb** Choosing between horizontal and vertical scaling should be based on your application’s specific workload, performance needs, and fault tolerance requirements.
 
 ## Scaling Jenkins: Best Practices
 
@@ -51,9 +45,7 @@ As your organization adopts CI/CD across more projects, your central Jenkins ins
 
 The recommended strategy is to implement horizontal scaling by adding worker nodes. This distributes the load away from the central controller, improves system resilience, and enhances overall scalability.
 
-<Frame>
-  ![The image illustrates Jenkins scaling, showing vertical scaling with increased CPU and memory, and horizontal scaling with additional worker nodes. It also highlights issues like garbage collection, physical limits, and single points of failure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879664/notes-assets/images/Jenkins-Pipelines-Jenkins-Scaling-Capacity-Planning/jenkins-scaling-vertical-horizontal.jpg)
-</Frame>
+![The image illustrates Jenkins scaling, showing vertical scaling with increased CPU and memory, and horizontal scaling with additional worker nodes. It also highlights issues like garbage collection, physical limits, and single points of failure.](https://kodekloud.com/kk-media/image/upload/v1752879664/notes-assets/images/Jenkins-Pipelines-Jenkins-Scaling-Capacity-Planning/jenkins-scaling-vertical-horizontal.jpg)
 
 ## Conclusion
 
@@ -66,6 +58,4 @@ For further insights, consider exploring these resources:
 
 Thank you.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/f046d5d1-6fa6-4156-b38d-202ed885b64d/lesson/8ef1f4bf-f678-4ec1-a9bd-44b96037bd75" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/f046d5d1-6fa6-4156-b38d-202ed885b64d/lesson/8ef1f4bf-f678-4ec1-a9bd-44b96037bd75)

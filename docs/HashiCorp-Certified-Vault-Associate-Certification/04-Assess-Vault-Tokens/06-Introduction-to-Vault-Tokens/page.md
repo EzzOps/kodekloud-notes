@@ -8,27 +8,19 @@ This article explains Vault tokens, their generation, usage, types, and metadata
 
 Imagine checking in at a hotel: you show your government-issued ID, and the receptionist hands you a single key card. With that card you can access your room, the gym, the VIP lounge, the spa—any area included in your reservation. You can swipe once and go in, without re-authenticating every time.
 
-<Frame>
-  ![The image shows a gym with various exercise equipment, including treadmills and stationary bikes, and a keycard with instructions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877992/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Vault-Tokens/gym-exercise-equipment-treadmills-bikes.jpg)
-</Frame>
+![The image shows a gym with various exercise equipment, including treadmills and stationary bikes, and a keycard with instructions.](https://kodekloud.com/kk-media/image/upload/v1752877992/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Vault-Tokens/gym-exercise-equipment-treadmills-bikes.jpg)
 
 ## Token Generation in Vault
 
 Vault follows the same concept. After you authenticate—whether by username/password, [AppRole](https://www.vaultproject.io/docs/auth/approle), TLS certificate, or cloud credentials—Vault verifies your identity and issues a token. Each token has a configurable TTL (time to live), measured in seconds, minutes, hours, or days. Once the TTL expires, the token no longer works.
 
-<Callout icon="triangle-alert">
-  If you don’t renew a token before it expires, any requests using that token will be denied until you re-authenticate.
-</Callout>
+> **triangle-alert** If you don’t renew a token before it expires, any requests using that token will be denied until you re-authenticate.
 
-<Frame>
-  ![The image shows a gym with various exercise equipment, including treadmills and stationary bikes, alongside a graphic of a keycard with instructions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877993/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Vault-Tokens/gym-exercise-equipment-keycard-instructions.jpg)
-</Frame>
+![The image shows a gym with various exercise equipment, including treadmills and stationary bikes, alongside a graphic of a keycard with instructions.](https://kodekloud.com/kk-media/image/upload/v1752877993/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Vault-Tokens/gym-exercise-equipment-keycard-instructions.jpg)
 
 Vault tokens encapsulate permissions (read, write, list, etc.) tied to specific paths—much like a hotel key card restricts you to certain areas.
 
-<Frame>
-  ![The image illustrates a process of token generation in vault interfaces, showing authentication methods and token validity, with a visual representation of user interaction and access permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877994/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Vault-Tokens/token-generation-vault-authentication-diagram.jpg)
-</Frame>
+![The image illustrates a process of token generation in vault interfaces, showing authentication methods and token validity, with a visual representation of user interaction and access permissions.](https://kodekloud.com/kk-media/image/upload/v1752877994/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Vault-Tokens/token-generation-vault-authentication-diagram.jpg)
 
 ## Using Tokens to Retrieve Data
 
@@ -39,9 +31,7 @@ Whenever an application or user needs a secret or wants to perform an operation,
 
 On successful validation, Vault returns the data—whether it’s a static secret or dynamically generated credentials (e.g., database or AWS access keys).
 
-<Frame>
-  ![The image illustrates the process of using a token to retrieve data from a vault, highlighting token validation, expiration, and permission checks. It includes a diagram showing data retrieval and return, with a focus on not needing to re-authenticate.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877995/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Vault-Tokens/token-data-retrieval-vault-diagram.jpg)
-</Frame>
+![The image illustrates the process of using a token to retrieve data from a vault, highlighting token validation, expiration, and permission checks. It includes a diagram showing data retrieval and return, with a focus on not needing to re-authenticate.](https://kodekloud.com/kk-media/image/upload/v1752877995/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Vault-Tokens/token-data-retrieval-vault-diagram.jpg)
 
 ## Vault Tokens Overview
 
@@ -56,17 +46,13 @@ Vault’s built-in token authentication method is always enabled. You can:
 * Attach one or more policies to each token to control its permissions
 * Use external auth methods that ultimately issue Vault tokens
 
-<Frame>
-  ![The image is a slide titled "Vault Tokens," explaining that tokens are the core method for authentication in Vault, with details on their usage and policies. It includes bullet points and highlights key terms in different colors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877997/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Vault-Tokens/vault-tokens-authentication-policies-slide.jpg)
-</Frame>
+![The image is a slide titled "Vault Tokens," explaining that tokens are the core method for authentication in Vault, with details on their usage and policies. It includes bullet points and highlights key terms in different colors.](https://kodekloud.com/kk-media/image/upload/v1752877997/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Vault-Tokens/vault-tokens-authentication-policies-slide.jpg)
 
 ## Types of Tokens
 
 Vault supports two main token types:
 
-<Frame>
-  ![The image is a slide titled "Types of Tokens," comparing service tokens and batch tokens in terms of storage, renewability, and use cases. Service tokens are default, persisted to storage, and can be renewed, while batch tokens are lightweight, not stored, and ideal for high-volume operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877998/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Vault-Tokens/types-of-tokens-service-batch-comparison.jpg)
-</Frame>
+![The image is a slide titled "Types of Tokens," comparing service tokens and batch tokens in terms of storage, renewability, and use cases. Service tokens are default, persisted to storage, and can be renewed, while batch tokens are lightweight, not stored, and ideal for high-volume operations.](https://kodekloud.com/kk-media/image/upload/v1752877998/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Vault-Tokens/types-of-tokens-service-batch-comparison.jpg)
 
 1. Service Tokens (default)
    * Persisted to the storage backend (creation & lookup involve reads/writes)
@@ -81,9 +67,7 @@ Vault supports two main token types:
    * Cannot be renewed or revoked
    * Automatically propagate to performance replication clusters
 
-<Frame>
-  ![The image is a comparison table of service tokens and batch tokens, highlighting their characteristics and performance costs. Service tokens are described as "Heavyweight" with multiple writes per token creation, while batch tokens are "Lightweight" with no storage cost for token creation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877999/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Vault-Tokens/service-tokens-vs-batch-tokens-table.jpg)
-</Frame>
+![The image is a comparison table of service tokens and batch tokens, highlighting their characteristics and performance costs. Service tokens are described as "Heavyweight" with multiple writes per token creation, while batch tokens are "Lightweight" with no storage cost for token creation.](https://kodekloud.com/kk-media/image/upload/v1752877999/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Vault-Tokens/service-tokens-vs-batch-tokens-table.jpg)
 
 ## Token Metadata
 
@@ -100,9 +84,7 @@ Every Vault token includes metadata fields that govern its behavior:
 | renewable          | Whether the token can be renewed                                   |
 | type               | `service` or `batch`                                               |
 
-<Frame>
-  ![The image describes information and metadata attached to a token, including details like accessor, policies, TTL, max TTL, number of uses left, orphaned token, and renewal status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878000/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Vault-Tokens/token-metadata-accessor-policies-ttl.jpg)
-</Frame>
+![The image describes information and metadata attached to a token, including details like accessor, policies, TTL, max TTL, number of uses left, orphaned token, and renewal status.](https://kodekloud.com/kk-media/image/upload/v1752878000/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Vault-Tokens/token-metadata-accessor-policies-ttl.jpg)
 
 ### Inspecting a Service Token
 
@@ -141,9 +123,7 @@ type              service
 * **ttl** shows the remaining lifespan.
 * **type = service** confirms it’s a service token (`s.` prefix).
 
-<Callout icon="lightbulb">
-  Batch tokens start with `b.` and will display `type = batch` in the lookup output.
-</Callout>
+> **lightbulb** Batch tokens start with `b.` and will display `type = batch` in the lookup output.
 
 ## References
 
@@ -151,6 +131,4 @@ type              service
 * [Vault CLI Documentation](https://www.vaultproject.io/docs/commands)
 * [Token Concepts in Vault](https://www.vaultproject.io/docs/concepts/tokens)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/04167e06-49b1-49b3-8299-b00833e21b6f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/04167e06-49b1-49b3-8299-b00833e21b6f)

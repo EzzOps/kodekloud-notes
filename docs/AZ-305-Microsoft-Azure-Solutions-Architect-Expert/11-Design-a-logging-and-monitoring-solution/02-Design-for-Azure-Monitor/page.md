@@ -25,27 +25,27 @@ Identifying and prioritizing the right data sources is essential for efficient m
 
 The collected data can be stored in internal services such as Log Analytics, Azure Storage, or Event Hub, or forwarded to external systems like Grafana and Splunk. The key is to understand the data required and prioritize its collection.
 
-![The image is an infographic from KodeKloud about data sources for collecting logs and metrics, detailing different tiers and tools like Application Insights and Azure Active Directory. It explains data collection methods and emphasizes prioritizing data for monitoring to manage billing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866982/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Monitor/data-sources-logs-metrics-infographic.jpg)
+![The image is an infographic from KodeKloud about data sources for collecting logs and metrics, detailing different tiers and tools like Application Insights and Azure Active Directory. It explains data collection methods and emphasizes prioritizing data for monitoring to manage billing.](https://kodekloud.com/kk-media/image/upload/v1752866982/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Monitor/data-sources-logs-metrics-infographic.jpg)
 
 ## Configuring Monitoring on Virtual Machines
 
 Configuring monitoring for a Virtual Machine (VM) in Azure is straightforward. By accessing a VM's Insights section in the Azure portal (which requires an installed agent), you can enable monitoring. Once activated, the VM’s data is sent to a configured Log Analytics workspace, where you can review monitoring configurations and performance metrics.
 
-![The image shows a Microsoft Azure portal interface with a focus on configuring monitoring settings for a virtual machine named "sde-vm-01." The configuration options include enabling insights using the Azure Monitor agent and selecting a subscription and data collection rule.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866983/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Monitor/azure-portal-monitoring-sde-vm-01.jpg)
+![The image shows a Microsoft Azure portal interface with a focus on configuring monitoring settings for a virtual machine named "sde-vm-01." The configuration options include enabling insights using the Azure Monitor agent and selecting a subscription and data collection rule.](https://kodekloud.com/kk-media/image/upload/v1752866983/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Monitor/azure-portal-monitoring-sde-vm-01.jpg)
 
 Additionally, out-of-the-box metrics for the VM are available without requiring additional configuration.
 
-![The image shows the Microsoft Azure portal displaying metrics for a virtual machine named "sde-vm-01." It includes options for selecting different metrics and aggregations to monitor the virtual machine's performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866987/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Monitor/azure-portal-sde-vm-01-metrics.jpg)
+![The image shows the Microsoft Azure portal displaying metrics for a virtual machine named "sde-vm-01." It includes options for selecting different metrics and aggregations to monitor the virtual machine's performance.](https://kodekloud.com/kk-media/image/upload/v1752866987/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Monitor/azure-portal-sde-vm-01-metrics.jpg)
 
 ## Diagnostic Settings for SQL Databases
 
 For resources such as SQL databases, diagnostic settings provide enhanced logging capabilities. By accessing these settings, you can add new diagnostics and choose from various log categories and destinations. For example, if you only need security audit logs, enable just that category. Keep in mind that adding more log categories increases the ingested data volume, which can affect billing.
 
-![The image shows a Microsoft Azure portal page for configuring diagnostic settings for a SQL database, with options to select log categories and destination details for log analytics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866988/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Monitor/azure-portal-sql-database-diagnostics.jpg)
+![The image shows a Microsoft Azure portal page for configuring diagnostic settings for a SQL database, with options to select log categories and destination details for log analytics.](https://kodekloud.com/kk-media/image/upload/v1752866988/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Monitor/azure-portal-sql-database-diagnostics.jpg)
 
 In some scenarios, the Azure portal may display a page with no diagnostic settings defined, prompting you to configure the necessary logs and metrics based on your monitoring strategy.
 
-![The image shows a Microsoft Azure portal interface displaying the diagnostic settings for a SQL database. It includes options for configuring logs and metrics, with no diagnostic settings currently defined.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866990/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Monitor/azure-portal-sql-database-settings.jpg)
+![The image shows a Microsoft Azure portal interface displaying the diagnostic settings for a SQL database. It includes options for configuring logs and metrics, with no diagnostic settings currently defined.](https://kodekloud.com/kk-media/image/upload/v1752866990/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Monitor/azure-portal-sql-database-settings.jpg)
 
 ## Monitoring Data Collection Methods
 

@@ -6,9 +6,7 @@ This guide explains how to organize unit and integration tests in Rust projects 
 
 Testing is a critical aspect of software development in Rust. Effective testing not only catches bugs early but also ensures code correctness and prevents regressions. In this guide, we will dive into how to organize tests in a Rust project by exploring both unit tests and integration tests.
 
-<Frame>
-  ![The image is an introduction slide about test organization in Rust, highlighting the importance of testing in software development to catch bugs early, ensure code correctness, and prevent regressions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884014/notes-assets/images/Rust-Programming-Organizing-Tests-in-Rust/rust-test-organization-introduction.jpg)
-</Frame>
+![The image is an introduction slide about test organization in Rust, highlighting the importance of testing in software development to catch bugs early, ensure code correctness, and prevent regressions.](https://kodekloud.com/kk-media/image/upload/v1752884014/notes-assets/images/Rust-Programming-Organizing-Tests-in-Rust/rust-test-organization-introduction.jpg)
 
 There are two primary types of tests in Rust:
 
@@ -18,9 +16,7 @@ There are two primary types of tests in Rust:
 2. **Integration Tests**\
    Integration tests validate that various components of your application work together. They focus on the public interfaces and test the interactions between different parts of your code to ensure comprehensive functionality.
 
-<Frame>
-  ![The image is a comparison between unit tests and integration tests in Rust, highlighting their focus, speed, and comprehensiveness. Unit tests focus on individual components and are quick to run, while integration tests ensure parts work together and provide comprehensive testing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884015/notes-assets/images/Rust-Programming-Organizing-Tests-in-Rust/rust-unit-integration-tests-comparison.jpg)
-</Frame>
+![The image is a comparison between unit tests and integration tests in Rust, highlighting their focus, speed, and comprehensiveness. Unit tests focus on individual components and are quick to run, while integration tests ensure parts work together and provide comprehensive testing.](https://kodekloud.com/kk-media/image/upload/v1752884015/notes-assets/images/Rust-Programming-Organizing-Tests-in-Rust/rust-unit-integration-tests-comparison.jpg)
 
 ***
 
@@ -72,9 +68,7 @@ mod tests {
 }
 ```
 
-<Callout icon="lightbulb">
-  Unit tests are best kept fast and deterministic. This approach aids in rapid development feedback during code changes.
-</Callout>
+> **lightbulb** Unit tests are best kept fast and deterministic. This approach aids in rapid development feedback during code changes.
 
 ***
 
@@ -82,15 +76,11 @@ mod tests {
 
 Integration tests in Rust reside outside your crate and are used to verify that various parts of your library work together correctly. These tests are designed around public interfaces and are located in a dedicated `tests` directory at the project root.
 
-<Frame>
-  ![The image explains integration tests, highlighting that they are external to your crate, test collaboration among library parts, and verify component integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884016/notes-assets/images/Rust-Programming-Organizing-Tests-in-Rust/integration-tests-explained-diagram.jpg)
-</Frame>
+![The image explains integration tests, highlighting that they are external to your crate, test collaboration among library parts, and verify component integration.](https://kodekloud.com/kk-media/image/upload/v1752884016/notes-assets/images/Rust-Programming-Organizing-Tests-in-Rust/integration-tests-explained-diagram.jpg)
 
 Integration tests often require more complex setups because they involve multiple modules or even multiple crates.
 
-<Frame>
-  ![The image is an infographic about integration tests, highlighting their purpose to ensure correct component interaction, involve complex setups, and test across multiple modules or crates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884017/notes-assets/images/Rust-Programming-Organizing-Tests-in-Rust/integration-tests-infographic.jpg)
-</Frame>
+![The image is an infographic about integration tests, highlighting their purpose to ensure correct component interaction, involve complex setups, and test across multiple modules or crates.](https://kodekloud.com/kk-media/image/upload/v1752884017/notes-assets/images/Rust-Programming-Organizing-Tests-in-Rust/integration-tests-infographic.jpg)
 
 ### Setting Up Integration Tests
 
@@ -178,9 +168,7 @@ To view the setup logs during test execution, run the tests with:
 cargo test -- --nocapture
 ```
 
-<Callout icon="lightbulb">
-  Using the `--nocapture` flag ensures that all `println!` statements are displayed in the test output, which is useful for debugging and understanding the test setup flow.
-</Callout>
+> **lightbulb** Using the `--nocapture` flag ensures that all `println!` statements are displayed in the test output, which is useful for debugging and understanding the test setup flow.
 
 ***
 
@@ -198,6 +186,4 @@ By structuring your tests effectively, you can maintain a robust Rust applicatio
 
 For further information, consider exploring resources such as [Rust's Testing Documentation](https://doc.rust-lang.org/book/ch11-00-testing.html) and other [Rust Programming Guides](https://www.rust-lang.org/learn).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/e9736aa9-07fd-49d2-b348-ab9c4534b367/lesson/c8adac87-2732-4d29-88d7-eff643783171" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/e9736aa9-07fd-49d2-b348-ab9c4534b367/lesson/c8adac87-2732-4d29-88d7-eff643783171)

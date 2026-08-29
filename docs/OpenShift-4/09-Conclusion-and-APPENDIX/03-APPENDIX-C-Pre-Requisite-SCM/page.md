@@ -62,13 +62,9 @@ exports = module.exports = {
 };
 ```
 
-<Frame>
-  ![The image illustrates aspects of source code management, including revision history, file merging, access control, and hosting, alongside a list of code commits with dates and descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882628/notes-assets/images/OpenShift-4-APPENDIX-C-Pre-Requisite-SCM/source-code-management-revision-history.jpg)
-</Frame>
+![The image illustrates aspects of source code management, including revision history, file merging, access control, and hosting, alongside a list of code commits with dates and descriptions.](https://kodekloud.com/kk-media/image/upload/v1752882628/notes-assets/images/OpenShift-4-APPENDIX-C-Pre-Requisite-SCM/source-code-management-revision-history.jpg)
 
-<Callout icon="lightbulb">
-  Source Code Management (SCM) is fundamental not only for version control but also for facilitating collaborative development and ensuring a detailed history of changes across the project lifecycle.
-</Callout>
+> **lightbulb** Source Code Management (SCM) is fundamental not only for version control but also for facilitating collaborative development and ensuring a detailed history of changes across the project lifecycle.
 
 ## Next Steps
 
@@ -83,6 +79,4 @@ For more detailed insights into related topics, consider exploring the following
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/d84e1350-21eb-421e-87d0-2d7bf019360f/lesson/1783d843-d41d-4f7a-a209-a7a1510dd176" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/d84e1350-21eb-421e-87d0-2d7bf019360f/lesson/1783d843-d41d-4f7a-a209-a7a1510dd176)

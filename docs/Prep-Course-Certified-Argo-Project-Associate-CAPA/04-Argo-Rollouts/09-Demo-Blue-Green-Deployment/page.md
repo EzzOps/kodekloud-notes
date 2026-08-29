@@ -26,9 +26,7 @@ kubectl-argo-rollouts: v1.8.3+49fa151
     Platform: linux/amd64
 ```
 
-<Callout icon="lightbulb">
-  After installing the binary as /usr/local/bin/kubectl-argo-rollouts the plugin is available as the kubectl subcommand `kubectl argo rollouts`.
-</Callout>
+> **lightbulb** After installing the binary as /usr/local/bin/kubectl-argo-rollouts the plugin is available as the kubectl subcommand `kubectl argo rollouts`.
 
 ## Launch the Rollouts dashboard
 
@@ -50,9 +48,7 @@ Open [http://localhost:3100/rollouts](http://localhost:3100/rollouts) in your br
 * Integrate metrics providers (Prometheus) and AnalysisTemplates for automated, metric-driven promotion or rollback.
 * See the Argo Rollouts docs for examples and advanced configuration: [https://argoproj.github.io/argo-rollouts/](https://argoproj.github.io/argo-rollouts/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/8085d4fd-d85d-45dd-99a7-eba5ced8e438" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/8085d4fd-d85d-45dd-99a7-eba5ced8e438)
 
 
 # Demo Blue Green Deployment
@@ -195,9 +191,7 @@ spec:
   type: NodePort
 ```
 
-<Callout icon="lightbulb">
-  The preview service is optional. When present, it provides a non-production endpoint for the new ReplicaSet so you can validate the new version before switching production traffic to it.
-</Callout>
+> **lightbulb** The preview service is optional. When present, it provides a non-production endpoint for the new ReplicaSet so you can validate the new version before switching production traffic to it.
 
 Deployment steps
 

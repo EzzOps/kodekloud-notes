@@ -2,9 +2,7 @@
 # Connected to context arn:aws:eks:us-east-1:195725640053:cluster/telepresence, namespace default (...)
 ```
 
-<Callout icon="lightbulb">
-  Make sure your Kubernetes context and namespace are correctly configured before running `telepresence connect --docker`.
-</Callout>
+> **lightbulb** Make sure your Kubernetes context and namespace are correctly configured before running `telepresence connect --docker`.
 
 ### Verify Telepresence Status
 
@@ -204,9 +202,7 @@ This command:
 * [Kubernetes Services](https://kubernetes.io/docs/concepts/services-networking/service/)
 * [Docker Engine CLI](https://docs.docker.com/engine/reference/commandline/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/409f313b-7c84-4815-b0ba-6973f5a1975f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/409f313b-7c84-4815-b0ba-6973f5a1975f)
 
 
 # Demo Volumes
@@ -234,9 +230,7 @@ Intercept a Kubernetes pod using Telepresence, mount its ConfigMap volume on you
 * Telepresence installed
 * A local `.env` file for environment variables
 
-<Callout icon="lightbulb">
-  Ensure your `kubectl` context is pointing to the intended cluster before starting the intercept.
-</Callout>
+> **lightbulb** Ensure your `kubectl` context is pointing to the intended cluster before starting the intercept.
 
 ## Node.js Service Example
 
@@ -342,9 +336,7 @@ data:
      --mount
    ```
 
-<Callout icon="triangle-alert">
-  Redirecting service traffic through your local machine may impact production workloads. Proceed with caution.
-</Callout>
+> **triangle-alert** Redirecting service traffic through your local machine may impact production workloads. Proceed with caution.
 
 Example output (identifiers will vary):
 

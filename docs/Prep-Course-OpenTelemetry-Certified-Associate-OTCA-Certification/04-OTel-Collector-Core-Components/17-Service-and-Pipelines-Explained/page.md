@@ -84,9 +84,7 @@ Telemetry and internal metrics
 * The `service` block also configures the Collector’s internal logs and metrics.
 * Older configs used a single `metrics.address` field. Current Collector releases prefer `telemetry.metrics.readers` for flexible pull (Prometheus) and push (periodic) strategies.
 
-<Callout icon="lightbulb">
-  Processor order matters. Put limiters or normalizers (for example `memory_limiter`, `attributes`) before the `batch` processor so transformations and limits are applied prior to batching.
-</Callout>
+> **lightbulb** Processor order matters. Put limiters or normalizers (for example `memory_limiter`, `attributes`) before the `batch` processor so transformations and limits are applied prior to batching.
 
 Deprecated (older style):
 

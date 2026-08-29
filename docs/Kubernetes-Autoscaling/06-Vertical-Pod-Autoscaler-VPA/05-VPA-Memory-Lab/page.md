@@ -11,11 +11,9 @@ That completes the end-to-end demo. You can now practice applying VPA manifests,
 * Kubernetes VPA in the Autoscaler repo: [https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
 * Kubernetes documentation: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/7e2670d7-d84d-4b77-bdd9-76412f7eb472" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/7e2670d7-d84d-4b77-bdd9-76412f7eb472)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/b054efb8-e4cf-4587-aa92-57fa6faa837b" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/b054efb8-e4cf-4587-aa92-57fa6faa837b)
 
 
 # VPA Memory Lab
@@ -105,9 +103,7 @@ spec:
         controlledResources: ["memory"]
 ```
 
-<Callout icon="lightbulb">
-  This VPA is restricted to memory recommendations (`controlledResources`). With `updateMode: "Off"`, VPA only reports recommendations — it will not modify pod resource requests automatically.
-</Callout>
+> **lightbulb** This VPA is restricted to memory recommendations (`controlledResources`). With `updateMode: "Off"`, VPA only reports recommendations — it will not modify pod resource requests automatically.
 
 Apply the VPA manifest
 
@@ -123,9 +119,7 @@ Example create output:
 verticalpodautoscaler.autoscaling.k8s.io/flask-app created
 ```
 
-<Callout icon="warning">
-  If the VPA controller or CRD is missing, `kubectl get vpa` may return “no resources found” or the resource may appear but never populate `status.recommendation`. Install the VPA components from the official project before proceeding: [https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
-</Callout>
+> **warning** If the VPA controller or CRD is missing, `kubectl get vpa` may return “no resources found” or the resource may appear but never populate `status.recommendation`. Install the VPA components from the official project before proceeding: [https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
 
 Inspecting VPA recommendations (before load)
 
@@ -222,8 +216,6 @@ Useful links and references
 
 This finishes the conceptual walkthrough for the VPA Memory Lab. In the hands-on lab you will perform these steps and observe how recommendations change between baseline and under load.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/d02e101a-4066-4706-adcd-63257e5c21d3" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/d02e101a-4066-4706-adcd-63257e5c21d3)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/e1d6eeb2-ce5f-493d-8883-6a11c06109b8" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/e1d6eeb2-ce5f-493d-8883-6a11c06109b8)

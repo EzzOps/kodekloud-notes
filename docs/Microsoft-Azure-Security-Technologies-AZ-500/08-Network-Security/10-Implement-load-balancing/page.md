@@ -42,13 +42,9 @@ Designed for production workloads, the Standard Load Balancer provides advanced 
 
 Below is a comparison diagram summarizing the features of the Basic and Standard SKUs:
 
-<Frame>
-  ![The image is a comparison table of Load Balancer SKUs, detailing features like backend pool size, health probes, redundancy, multiple frontends, security, and SLA for Basic and Standard options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882141/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-load-balancing/load-balancer-sku-comparison-table.jpg)
-</Frame>
+![The image is a comparison table of Load Balancer SKUs, detailing features like backend pool size, health probes, redundancy, multiple frontends, security, and SLA for Basic and Standard options.](https://kodekloud.com/kk-media/image/upload/v1752882141/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-load-balancing/load-balancer-sku-comparison-table.jpg)
 
-<Callout icon="lightbulb">
-  For non-critical development or testing workloads, the Basic SKU may be sufficient. However, for production deployments requiring scalability and enhanced reliability, the Standard SKU is recommended.
-</Callout>
+> **lightbulb** For non-critical development or testing workloads, the Basic SKU may be sufficient. However, for production deployments requiring scalability and enhanced reliability, the Standard SKU is recommended.
 
 ***
 
@@ -60,9 +56,7 @@ For scenarios such as hosting a static website in a virtual network's web subnet
 
 The following diagram illustrates a typical Public Load Balancer setup:
 
-<Frame>
-  ![The image illustrates a public load balancer setup, showing traffic on port 80 being distributed to multiple servers within a virtual network and a subnet labeled "WebSubnet."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882142/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-load-balancing/public-load-balancer-setup.jpg)
-</Frame>
+![The image illustrates a public load balancer setup, showing traffic on port 80 being distributed to multiple servers within a virtual network and a subnet labeled "WebSubnet."](https://kodekloud.com/kk-media/image/upload/v1752882142/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-load-balancing/public-load-balancer-setup.jpg)
 
 ### Internal Load Balancer
 
@@ -168,9 +162,7 @@ Follow these steps to configure a standard public-facing load balancer via the A
 
 The diagram below shows the Azure Portal interface when adding IP configurations to the backend pool:
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for adding IP configurations to a backend pool, with a list of virtual machines and their details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882143/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-load-balancing/azure-ip-configurations-backend-pool.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for adding IP configurations to a backend pool, with a list of virtual machines and their details.](https://kodekloud.com/kk-media/image/upload/v1752882143/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-load-balancing/azure-ip-configurations-backend-pool.jpg)
 
 4. **Create Load Balancing Rules and Health Probes:**
    * **Load Balancing Rule:**\
@@ -186,35 +178,25 @@ The diagram below shows the Azure Portal interface when adding IP configurations
 
 The diagram below illustrates the settings panel for configuring load balancer rules:
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating a load balancer, with options to add load balancing and inbound NAT rules. The right panel displays settings for adding a load balancing rule, including fields for name, IP version, frontend IP address, and protocol.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882144/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-load-balancing/azure-load-balancer-interface-settings.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating a load balancer, with options to add load balancing and inbound NAT rules. The right panel displays settings for adding a load balancing rule, including fields for name, IP version, frontend IP address, and protocol.](https://kodekloud.com/kk-media/image/upload/v1752882144/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-load-balancing/azure-load-balancer-interface-settings.jpg)
 
 5. **Configure Inbound NAT Rules (if needed):**\
    Use inbound NAT rules to enable direct access (e.g., SSH) to individual backend servers by mapping unique frontend ports (such as 22 or 3000) to port 22 on specific backend instances.
 
 The diagram below focuses on configuring inbound NAT rules:
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating a load balancer, specifically focusing on configuring inbound rules, including load balancing and NAT rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882146/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-load-balancing/azure-load-balancer-inbound-rules.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating a load balancer, specifically focusing on configuring inbound rules, including load balancing and NAT rules.](https://kodekloud.com/kk-media/image/upload/v1752882146/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-load-balancing/azure-load-balancer-inbound-rules.jpg)
 
 6. **Review and Create the Load Balancer:**\
    Double-check all settings (frontend, backend, load balancing rules, and health probes) and create the load balancer. The resulting configuration will share the public IP address among the web servers, facilitating the distribution of incoming traffic based on your defined rules.
 
 After creation, you can verify the load balancer and associated public IP address on the Azure Portal with the following interfaces:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal displaying a list of virtual machines, all running Linux, with details such as name, type, subscription, location, status, and public IP address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882147/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-load-balancing/azure-portal-linux-virtual-machines.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal displaying a list of virtual machines, all running Linux, with details such as name, type, subscription, location, status, and public IP address.](https://kodekloud.com/kk-media/image/upload/v1752882147/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-load-balancing/azure-portal-linux-virtual-machines.jpg)
 
-<Frame>
-  ![The image shows the Microsoft Azure portal interface for managing a load balancer, displaying details like resource group, location, and configuration options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882148/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-load-balancing/azure-portal-load-balancer-management.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal interface for managing a load balancer, displaying details like resource group, location, and configuration options.](https://kodekloud.com/kk-media/image/upload/v1752882148/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-load-balancing/azure-portal-load-balancer-management.jpg)
 
-<Callout icon="triangle-alert">
-  Ensure that your NSG rules allow traffic on port 80 to avoid any disruption in load balancing functionality.
-</Callout>
+> **triangle-alert** Ensure that your NSG rules allow traffic on port 80 to avoid any disruption in load balancing functionality.
 
 ***
 
@@ -237,6 +219,4 @@ For more details on Azure services, check out these resources:
 
 Happy scaling!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/0489a935-a4dd-41c6-b5d3-6054c570299b/lesson/01702e8e-9793-4964-ba25-53d5a1a71c00" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/0489a935-a4dd-41c6-b5d3-6054c570299b/lesson/01702e8e-9793-4964-ba25-53d5a1a71c00)

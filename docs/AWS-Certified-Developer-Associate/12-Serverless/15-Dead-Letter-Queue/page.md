@@ -18,7 +18,7 @@ After resolving these issues, you can reintroduce the messages back to the origi
 
 > **lightbulb** When configuring a dead-letter queue, ensure that its type matches that of the source queue. For instance, if your primary queue is a FIFO queue, the associated dead-letter queue must also be FIFO.
 
-![The image illustrates the concept of a Dead Letter Queue (DLQ) in AWS, showing how failed jobs are sent to a DLQ and can be retried or moved back to the original queue after issues are fixed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859458/notes-assets/images/AWS-Certified-Developer-Associate-Dead-Letter-Queue/aws-dead-letter-queue-diagram.jpg)
+![The image illustrates the concept of a Dead Letter Queue (DLQ) in AWS, showing how failed jobs are sent to a DLQ and can be retried or moved back to the original queue after issues are fixed.](https://kodekloud.com/kk-media/image/upload/v1752859458/notes-assets/images/AWS-Certified-Developer-Associate-Dead-Letter-Queue/aws-dead-letter-queue-diagram.jpg)
 
 This explanation highlights the importance of dead-letter queues in the context of AWS Lambda functions. Implementing a DLQ provides a reliable mechanism to ensure that failed messages do not go unnoticed, thereby streamlining the process of debugging and improving system resilience.
 

@@ -25,13 +25,9 @@ References and tooling
 * LangChain: an ecosystem of components for building RAG pipelines and LLM apps.
 * Vector DBs: [Chroma](https://www.trychroma.com/), [Milvus](https://milvus.io/), [Weaviate](https://weaviate.io/), [Qdrant](https://qdrant.tech/)
 
-<Callout icon="lightbulb">
-  RAG combines semantic search with generation: the search finds evidence and the LLM composes the answer. For reliable semantic matching, always use the same embeddings model for both indexing and query encoding.
-</Callout>
+> **lightbulb** RAG combines semantic search with generation: the search finds evidence and the LLM composes the answer. For reliable semantic matching, always use the same embeddings model for both indexing and query encoding.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/fa08ba22-b76f-4355-8a50-4a40dd49aba8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/fa08ba22-b76f-4355-8a50-4a40dd49aba8)
 
 
 # Performing Semantic Search

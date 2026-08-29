@@ -61,9 +61,7 @@ For production workloads, prefer platform-native or dedicated configuration solu
 
 These approaches provide better operational reliability, idempotency, and lifecycle management than ad-hoc provisioner scripts.
 
-<Callout icon="warning">
-  Provisioners are a last resort. For repeatable, auditable, and reliable configuration, prefer platform-native extensions, configuration management tools, or image-based pipelines over Terraform provisioners.
-</Callout>
+> **warning** Provisioners are a last resort. For repeatable, auditable, and reliable configuration, prefer platform-native extensions, configuration management tools, or image-based pipelines over Terraform provisioners.
 
 In short: use provisioners sparingly, keep them simple and idempotent, and prefer built-in configuration management or platform-native solutions for production systems.
 
@@ -78,8 +76,6 @@ With that, we have completed the provisioners section.
 * [Puppet Documentation](https://puppet.com/docs/)
 * [Azure Automation DSC Overview](https://learn.microsoft.com/azure/automation/automation-dsc/overview)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/cb34375e-505a-4794-a260-d12aeba6440e/lesson/089b19e7-f5fc-4d64-aa94-ac2cbc1a2680" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/cb34375e-505a-4794-a260-d12aeba6440e/lesson/089b19e7-f5fc-4d64-aa94-ac2cbc1a2680)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/cb34375e-505a-4794-a260-d12aeba6440e/lesson/9144a174-a0d6-4b92-9c4e-831b7bd059b2" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/cb34375e-505a-4794-a260-d12aeba6440e/lesson/9144a174-a0d6-4b92-9c4e-831b7bd059b2)

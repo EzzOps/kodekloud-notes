@@ -27,13 +27,13 @@ The AWS Ramp-Up Guide for Machine Learning is ideal for users ready to advance b
 
 The guide also familiarizes you with essential AWS services, such as Textract, Comprehend, and SageMaker. While some classroom training sessions are incorporated into this guide, they can be costly. Instead, consider starting with free introductory courses available on platforms like Coursera and edX, and take advantage of the extensive resources offered through Machine Learning University.
 
-![The image is a table listing various AWS training resources for developers and data scientists, including classroom and digital training options with durations and types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857306/notes-assets/images/AWS-Certified-AI-Practitioner-Continual-Learning-in-the-AIML-Space-for-AWS/aws-training-resources-table.jpg)
+![The image is a table listing various AWS training resources for developers and data scientists, including classroom and digital training options with durations and types.](https://kodekloud.com/kk-media/image/upload/v1752857306/notes-assets/images/AWS-Certified-AI-Practitioner-Continual-Learning-in-the-AIML-Space-for-AWS/aws-training-resources-table.jpg)
 
 > **lightbulb** AWS Machine Learning University offers an expansive channel that covers everything from natural language processing and computer vision to handling tabular data and understanding responsible AI practices. It is an excellent starting point for deepening your expertise in generative AI, machine learning, or data engineering.
 
 For example, if computer vision is your area of interest, you can utilize the GitHub repositories associated with Machine Learning University. These repositories let you run experiments and explore critical topics, such as training neural networks, object detection, and semantic segmentation. Additionally, you can launch these projects directly in SageMaker Studio Lab for hands-on learning.
 
-![The image shows a course overview with a list of lectures and topics related to machine learning and computer vision, including links to studio labs for certain topics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857307/notes-assets/images/AWS-Certified-AI-Practitioner-Continual-Learning-in-the-AIML-Space-for-AWS/course-overview-machine-learning-computer-vision.jpg)
+![The image shows a course overview with a list of lectures and topics related to machine learning and computer vision, including links to studio labs for certain topics.](https://kodekloud.com/kk-media/image/upload/v1752857307/notes-assets/images/AWS-Certified-AI-Practitioner-Continual-Learning-in-the-AIML-Space-for-AWS/course-overview-machine-learning-computer-vision.jpg)
 
 By leveraging the GitHub repositories and the integrated SageMaker Studio Labs, you gain practical experience with fundamental machine learning processes using AWS. Moreover, AWS's YouTube channel offers a rich collection of videos that further support your exploration of advanced machine learning and AI concepts.
 

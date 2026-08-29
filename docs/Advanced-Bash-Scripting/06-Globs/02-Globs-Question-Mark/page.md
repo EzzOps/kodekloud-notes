@@ -23,7 +23,7 @@ In this lesson, we dive into how the `?` wildcard works in glob patterns. In Bas
 Assume the directory contains:\
 rail, Document.doc, fail, hail, bar, sail, foo, mail, 4ail, foobar.
 
-![The image shows a list of words with checkmarks and crosses, indicating matches and non-matches for a pattern "ail" with different prefixes. It illustrates the concept of expansion globs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868568/notes-assets/images/Advanced-Bash-Scripting-Globs-Question-Mark/expansion-globs-checkmarks-crosses.jpg)
+![The image shows a list of words with checkmarks and crosses, indicating matches and non-matches for a pattern "ail" with different prefixes. It illustrates the concept of expansion globs.](https://kodekloud.com/kk-media/image/upload/v1752868568/notes-assets/images/Advanced-Bash-Scripting-Globs-Question-Mark/expansion-globs-checkmarks-crosses.jpg)
 
 Use `?ail` to match any single-character prefix followed by `ail`:
 
@@ -45,7 +45,7 @@ rail  fail  hail  sail  mail  4ail
 Directory listing:\
 test.sh, file.txt, tes1t.txt, test2.txt, file1.txt.
 
-![The image illustrates the concept of expansion globs, showing a list of filenames with checkmarks and crosses indicating matches to the pattern "tes??.txt".](../../../../images/kodekloud.com/kk-media/image/upload/v1752868569/notes-assets/images/Advanced-Bash-Scripting-Globs-Question-Mark/expansion-globs-filenames-checkmarks.jpg)
+![The image illustrates the concept of expansion globs, showing a list of filenames with checkmarks and crosses indicating matches to the pattern "tes??.txt".](https://kodekloud.com/kk-media/image/upload/v1752868569/notes-assets/images/Advanced-Bash-Scripting-Globs-Question-Mark/expansion-globs-filenames-checkmarks.jpg)
 
 With the pattern `tes??.txt`:
 
@@ -68,7 +68,7 @@ tes1t.txt  test2.txt
 Consider these files:\
 test1-2.txt, tes1t.txt, test2.txt, test3.sh, test1.txt, file1.txt.
 
-![The image illustrates file name matching using expansion globs, showing which files match the pattern "test?.txt" with checkmarks and crosses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868570/notes-assets/images/Advanced-Bash-Scripting-Globs-Question-Mark/file-name-matching-globs-diagram.jpg)
+![The image illustrates file name matching using expansion globs, showing which files match the pattern "test?.txt" with checkmarks and crosses.](https://kodekloud.com/kk-media/image/upload/v1752868570/notes-assets/images/Advanced-Bash-Scripting-Globs-Question-Mark/file-name-matching-globs-diagram.jpg)
 
 Use `test?.txt` to find files with a single character after `test` and before `.txt`:
 
@@ -109,7 +109,7 @@ test.txt  vest.txt  test.jpg  rest.txt  west.doc
 Directory content:\
 1234, abcd, kei5, some\_file.txt, x0f4p, 90c1, dir, keio5, touch, x0fp.
 
-![The image shows a list of strings with checkmarks and crosses, indicating which strings match a certain pattern, and a column of matching strings on the right. The title is "Expansion Globs," suggesting a demonstration of pattern matching.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868571/notes-assets/images/Advanced-Bash-Scripting-Globs-Question-Mark/expansion-globs-pattern-matching.jpg)
+![The image shows a list of strings with checkmarks and crosses, indicating which strings match a certain pattern, and a column of matching strings on the right. The title is "Expansion Globs," suggesting a demonstration of pattern matching.](https://kodekloud.com/kk-media/image/upload/v1752868571/notes-assets/images/Advanced-Bash-Scripting-Globs-Question-Mark/expansion-globs-pattern-matching.jpg)
 
 Pattern `????` finds names exactly four characters long:
 

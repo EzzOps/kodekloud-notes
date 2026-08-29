@@ -29,13 +29,13 @@ Since each environment might require distinct settings, API Gateway introduces s
 
 The diagram below illustrates the API lifecycle, highlighting key tasks and processes at each stage:
 
-![The image illustrates the API lifecycle, detailing the stages of Development, Staging, and Production, with specific tasks and processes for each phase.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857908/notes-assets/images/AWS-Certified-Developer-Associate-Stages-Deployments/api-lifecycle-development-staging-production.jpg)
+![The image illustrates the API lifecycle, detailing the stages of Development, Staging, and Production, with specific tasks and processes for each phase.](https://kodekloud.com/kk-media/image/upload/v1752857908/notes-assets/images/AWS-Certified-Developer-Associate-Stages-Deployments/api-lifecycle-development-staging-production.jpg)
 
 This visual clearly outlines the progression from development through staging to production, emphasizing the unique role of each environment.
 
 The following diagram demonstrates how API Gateway employs stage variables to manage interactions between different environments. It ensures that production and staging requests are accurately routed to their respective Lambda functions based on custom parameters:
 
-![The image is a flowchart illustrating the use of API Gateway with stage variables, showing interactions between users, developers, and Lambda functions through production and staging stages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857910/notes-assets/images/AWS-Certified-Developer-Associate-Stages-Deployments/api-gateway-flowchart-stage-variables.jpg)
+![The image is a flowchart illustrating the use of API Gateway with stage variables, showing interactions between users, developers, and Lambda functions through production and staging stages.](https://kodekloud.com/kk-media/image/upload/v1752857910/notes-assets/images/AWS-Certified-Developer-Associate-Stages-Deployments/api-gateway-flowchart-stage-variables.jpg)
 
 > **lightbulb** The use of stage variables is critical for maintaining distinct environment configurations under a unified API Gateway. This approach minimizes risks by isolating production from potentially disruptive changes in development or staging.
 

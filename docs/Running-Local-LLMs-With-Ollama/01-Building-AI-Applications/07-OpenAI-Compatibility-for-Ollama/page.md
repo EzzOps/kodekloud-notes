@@ -16,9 +16,7 @@ By leveraging the OpenAI client libraries against a local Ollama endpoint, you g
 
 Let’s follow Jane’s journey from local development to production-ready deployment.
 
-<Frame>
-  ![The image illustrates "Jane's Story," showing a progression from "Jane" to "Development" with Ollama, and then to "Production" with OpenAI Library.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883670/notes-assets/images/Running-Local-LLMs-With-Ollama-OpenAI-Compatibility-for-Ollama/janes-story-development-production-illustration.jpg)
-</Frame>
+![The image illustrates "Jane's Story," showing a progression from "Jane" to "Development" with Ollama, and then to "Production" with OpenAI Library.](https://kodekloud.com/kk-media/image/upload/v1752883670/notes-assets/images/Running-Local-LLMs-With-Ollama-OpenAI-Compatibility-for-Ollama/janes-story-development-production-illustration.jpg)
 
 ## 1. Development Environment Setup
 

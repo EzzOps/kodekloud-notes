@@ -15,9 +15,7 @@ When you migrate from the Vault CLI to its HTTP API, authentication works slight
 
 You must parse this JSON response, extract the `client_token`, and include it in the `X-Vault-Token` header for all future requests.
 
-<Callout icon="lightbulb">
-  You’re not storing tokens on disk as the CLI does. Securely manage your tokens in environment variables or secret managers.
-</Callout>
+> **lightbulb** You’re not storing tokens on disk as the CLI does. Securely manage your tokens in environment variables or secret managers.
 
 ## Authenticating with AppRole
 
@@ -82,9 +80,7 @@ curl --header "X-Vault-Token: s.wjkffdrqM9QYTOYrUnUxXyX6" \
 
 Replace `my-secret` with the path to your desired secret. All reads, writes, renewals, and revocations follow the same pattern.
 
-<Callout icon="triangle-alert">
-  Avoid exposing your Vault token in shared logs or command-history. Use environment variables or CI/CD secret storage to keep tokens confidential.
-</Callout>
+> **triangle-alert** Avoid exposing your Vault token in shared logs or command-history. Use environment variables or CI/CD secret storage to keep tokens confidential.
 
 ## Links and References
 
@@ -92,6 +88,4 @@ Replace `my-secret` with the path to your desired secret. All reads, writes, ren
 * [AppRole Auth Method Guide](https://www.vaultproject.io/docs/auth/approle)
 * [Vault CLI vs. API Overview](https://www.vaultproject.io/docs/commands)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/89372a2e-9d14-42ea-8b00-296a0656708a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/89372a2e-9d14-42ea-8b00-296a0656708a)

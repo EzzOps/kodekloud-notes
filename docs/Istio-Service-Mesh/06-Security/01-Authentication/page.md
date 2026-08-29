@@ -10,15 +10,11 @@ With mTLS, each service is assigned a unique identity secured by automatically m
 
 In addition to authenticating service-to-service interactions, Istio also supports end-user authentication. This is achieved using JWT validation or via OpenID Connect providers like [Ory Hydra](https://www.ory.sh/hydra), [Keycloak](https://www.keycloak.org), [Firebase](https://firebase.google.com), or [Google](https://about.google).
 
-<Frame>
-  ![The image is a diagram illustrating a microservices architecture with components like "Product Page," "Reviews," and "Ratings," showing interactions and authentication processes. It includes elements like "istio-ingress gateway" and various authentication methods such as JWT and Keycloak.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879374/notes-assets/images/Istio-Service-Mesh-Authentication/microservices-architecture-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating a microservices architecture with components like "Product Page," "Reviews," and "Ratings," showing interactions and authentication processes. It includes elements like "istio-ingress gateway" and various authentication methods such as JWT and Keycloak.](https://kodekloud.com/kk-media/image/upload/v1752879374/notes-assets/images/Istio-Service-Mesh-Authentication/microservices-architecture-diagram.jpg)
 
 Below are examples of Istio's authentication configurations using PeerAuthentication resources. These configurations define authentication policies and determine how rules are applied to workloads.
 
-<Callout icon="lightbulb">
-  For optimal security, consider applying stricter policies first on a per-workload basis before extending them to namespace or mesh-wide scopes.
-</Callout>
+> **lightbulb** For optimal security, consider applying stricter policies first on a per-workload basis before extending them to namespace or mesh-wide scopes.
 
 ## Workload-Specific Policy with PeerAuthentication
 
@@ -70,6 +66,4 @@ spec:
 
 These examples illustrate how Istio supports comprehensive authentication policies, from targeting specific workloads to applying mesh-wide security protocols. For further details, refer to the [Istio Documentation](https://istio.io/latest/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/e4a2171d-d190-4dc9-873e-a0dad6d3cb62/lesson/df02dfa4-dd16-43dd-9b21-6fdd0ceaba6d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/e4a2171d-d190-4dc9-873e-a0dad6d3cb62/lesson/df02dfa4-dd16-43dd-9b21-6fdd0ceaba6d)

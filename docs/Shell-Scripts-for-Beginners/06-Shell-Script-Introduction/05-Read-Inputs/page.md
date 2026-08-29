@@ -57,9 +57,7 @@ echo "Status of launch: $rocket_status"
 
 With this approach, when the script reaches the `read` statement, it displays the message "Enter mission name: " and waits for the user to input the mission name. The entered value is stored in the `mission_name` variable, and the script continues with that input.
 
-<Callout icon="lightbulb">
-  Using the `-p` option with `read` improves user experience by clearly indicating what input is expected.
-</Callout>
+> **lightbulb** Using the `-p` option with `read` improves user experience by clearly indicating what input is expected.
 
 ## When to Use Command-Line Arguments vs. Prompts
 
@@ -93,14 +91,10 @@ echo "Status of launch: $rocket_status"
 
 This script checks if the first argument is empty. If it is, the script prompts the user for the mission name, otherwise, it uses the command-line argument.
 
-<Callout icon="lightbulb">
-  In upcoming lessons, we will explore control and conditional statements in shell scripting to design scripts that behave dynamically based on the available input.
-</Callout>
+> **lightbulb** In upcoming lessons, we will explore control and conditional statements in shell scripting to design scripts that behave dynamically based on the available input.
 
 Now, let's move on to some practical exercises to work with both command-line arguments and `read` input statements.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/dc9c16a1-010d-4993-adac-a78bd69f53f3" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/dc9c16a1-010d-4993-adac-a78bd69f53f3)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/e592522a-7006-4635-a823-40ac75d93225" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/e592522a-7006-4635-a823-40ac75d93225)

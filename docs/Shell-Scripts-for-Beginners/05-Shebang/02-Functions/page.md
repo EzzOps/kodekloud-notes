@@ -6,9 +6,7 @@ Learn to use functions in shell scripts for code reusability and improved mainta
 
 In this article, you'll learn how to use functions in shell scripts to eliminate code duplication and improve maintainability. Previously, a lengthy sequence of commands was used to create and launch a rocket. If you needed to launch additional rockets, you would duplicate the same set of commands for every mission. This non-modular approach can lead to issues when updates are required, as changing one block would necessitate modifications in every duplicated section.
 
-<Callout icon="lightbulb">
-  Using functions in your shell scripts promotes code reusability and makes maintenance easier. Instead of repeating code, you encapsulate the functionality and simply call the function with a parameter.
-</Callout>
+> **lightbulb** Using functions in your shell scripts promotes code reusability and makes maintenance easier. Instead of repeating code, you encapsulate the functionality and simply call the function with a parameter.
 
 ## Example without Functions
 

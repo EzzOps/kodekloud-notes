@@ -62,9 +62,7 @@ Below are common mappings of operational contexts to the Iron Triangle and what 
   <img alt="The image depicts the &#x22;Iron Triangle in Cloud Context,&#x22; outlining key responsibilities such as production, testing, and disaster recovery, with a focus on quality, speed, and cost. It summarizes trade-offs between high quality, speed, and cost with associated impacts like premium pricing and performance compromises." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Use the Iron Triangle as a conversation tool: explicitly identify which two dimensions you will prioritize for a given effort, and document the expected impact on the third.
-</Callout>
+> **lightbulb** Use the Iron Triangle as a conversation tool: explicitly identify which two dimensions you will prioritize for a given effort, and document the expected impact on the third.
 
 ## Applying the framework — practical steps
 
@@ -96,6 +94,4 @@ Further reading and references:
 
 That wraps up this lesson. Thanks for reading.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/43eb9684-91c6-4323-bf98-cf3389a3b94b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/43eb9684-91c6-4323-bf98-cf3389a3b94b)

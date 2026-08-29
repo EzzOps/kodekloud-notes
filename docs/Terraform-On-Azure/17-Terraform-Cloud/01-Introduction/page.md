@@ -29,9 +29,7 @@ Terraform Cloud is HashiCorp’s SaaS offering that centralizes Terraform operat
 * Policy enforcement with Sentinel or policy as code frameworks.
 * Team collaboration features like role-based access control (RBAC), audit logs, and notifications.
 
-<Callout icon="lightbulb">
-  Terraform Cloud helps teams scale infrastructure safely by removing local state files and centralizing automation. Use VCS-backed workspaces to ensure reproducible, auditable changes.
-</Callout>
+> **lightbulb** Terraform Cloud helps teams scale infrastructure safely by removing local state files and centralizing automation. Use VCS-backed workspaces to ensure reproducible, auditable changes.
 
 ## Terraform Cloud Plans (Overview)
 
@@ -67,9 +65,7 @@ The following table summarizes differences to help you evaluate which approach f
 | Cost model             | Infrastructure + maintenance costs                                         | Subscription-based with predictable tiers and support                             |
 | Recommended when       | You need bespoke integrations, no external network access, or full control | You want faster onboarding, lower ops burden, and built-in collaboration features |
 
-<Callout icon="warning">
-  If your environment requires complete air-gapped operation or very specific compliance controls, self-hosting Terraform and a private state backend may be necessary. Consider Terraform Enterprise if you want managed features with stronger isolation controls.
-</Callout>
+> **warning** If your environment requires complete air-gapped operation or very specific compliance controls, self-hosting Terraform and a private state backend may be necessary. Consider Terraform Enterprise if you want managed features with stronger isolation controls.
 
 ## When to choose each option
 
@@ -90,6 +86,4 @@ The following table summarizes differences to help you evaluate which approach f
 * [Using VCS with Terraform Cloud](https://www.terraform.io/cloud/docs/vcs)
 * [Terraform Enterprise overview](https://www.hashicorp.com/products/terraform/enterprise)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/ca386519-4725-417d-a46f-642d0a683a01/lesson/8b594ec3-97b8-4510-98e7-b2ab30edde2c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/ca386519-4725-417d-a46f-642d0a683a01/lesson/8b594ec3-97b8-4510-98e7-b2ab30edde2c)

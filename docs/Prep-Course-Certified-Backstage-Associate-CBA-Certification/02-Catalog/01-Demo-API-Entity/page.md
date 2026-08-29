@@ -142,9 +142,7 @@ Permission to read external raw hosts
 Error: Processor PlaceholderProcessor threw an error while preprocessing; caused by Error: Placeholder $json could not read location https://raw.githubusercontent.com/Sanjeev-Thiyagarajan/backstage-auth-service/main/openapi/auth-api-spec.yaml, NotAllowedError: Reading from 'https://raw.githubusercontent.com/Sanjeev-Thiyagarajan/backstage-auth-service/main/openapi/auth-api-spec.yaml' is not allowed. You may need to configure an integration for the target host, or add it to the configured list of allowed hosts at 'backend.reading.allow'
 ```
 
-<Callout icon="lightbulb">
-  Add hosts you trust and only do this for required sources. Changes to the backend configuration require restarting the backend process.
-</Callout>
+> **lightbulb** Add hosts you trust and only do this for required sources. Changes to the backend configuration require restarting the backend process.
 
 Add the host to `backend.reading.allow` in your `app-config.yaml` so Backstage can read raw files. Example:
 
@@ -161,9 +159,7 @@ integrations:
     #   token: ${GITHUB_TOKEN}
 ```
 
-<Callout icon="warning">
-  After updating `app-config.yaml`, restart the Backstage backend; otherwise changes won't take effect and the raw file will still be blocked.
-</Callout>
+> **warning** After updating `app-config.yaml`, restart the Backstage backend; otherwise changes won't take effect and the raw file will still be blocked.
 
 Once allowed and the backend is restarted, Backstage will fetch the raw OpenAPI spec and render the API definition using its OpenAPI viewer — endpoints, paths, and request/response models will be shown in the API’s definition pane.
 
@@ -215,6 +211,4 @@ Links and references
 
 With these patterns you can model APIs and their relationships in Backstage so teams can discover, document, and manage APIs and their consumers/providers across your organization.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/b9bd1cb4-2841-41b9-95cc-c0433f48663a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/b9bd1cb4-2841-41b9-95cc-c0433f48663a)

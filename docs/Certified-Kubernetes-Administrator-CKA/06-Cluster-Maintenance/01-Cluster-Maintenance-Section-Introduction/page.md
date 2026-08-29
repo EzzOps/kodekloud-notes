@@ -10,7 +10,7 @@ Hello, this is Mumshad Mannambeth. In this article, we will explore essential cl
 
 We begin by discussing operating system upgrades and the considerations involved when a node is lost from the cluster, either unintentionally or due to deliberate removal for patching or upgrading purposes. Understanding these procedures is critical to ensuring minimal disruption to your Kubernetes environment.
 
-![The image lists course objectives related to Kubernetes, including core concepts, scheduling, logging, application lifecycle management, cluster maintenance, security, storage, networking, installation, and troubleshooting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869688/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Cluster-Maintenance-Section-Introduction/frame_30.jpg)
+![The image lists course objectives related to Kubernetes, including core concepts, scheduling, logging, application lifecycle management, cluster maintenance, security, storage, networking, installation, and troubleshooting.](https://kodekloud.com/kk-media/image/upload/v1752869688/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Cluster-Maintenance-Section-Introduction/frame_30.jpg)
 
 ## Cluster Upgrade Process
 

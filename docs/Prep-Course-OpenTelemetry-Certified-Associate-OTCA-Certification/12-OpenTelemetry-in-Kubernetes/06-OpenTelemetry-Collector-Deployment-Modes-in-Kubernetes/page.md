@@ -180,9 +180,7 @@ For tail-based sampling, traces must be routed consistently to the same collecto
   <img alt="The image illustrates different OpenTelemetry Collector deployment modes within a Kubernetes cluster, including Deployment, DaemonSet, Sidecar, and StatefulSet, each connecting to a backend." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Choose the deployment mode based on the telemetry type (node vs pod vs cluster-wide), the need for persistent storage or sticky routing, and your scalability/availability goals. Hybrid architectures (e.g., DaemonSet + gateway Deployment or sidecars with a central gateway) are common and provide a good balance between locality and centralized processing.
-</Callout>
+> **lightbulb** Choose the deployment mode based on the telemetry type (node vs pod vs cluster-wide), the need for persistent storage or sticky routing, and your scalability/availability goals. Hybrid architectures (e.g., DaemonSet + gateway Deployment or sidecars with a central gateway) are common and provide a good balance between locality and centralized processing.
 
 Links and References
 
@@ -192,6 +190,4 @@ Links and References
 * [Kubernetes StatefulSet Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
 * [Prometheus Target Allocation Patterns](https://prometheus.io/docs/prometheus/latest/configuration/configuration/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/0caf0713-b2cc-4703-8b45-eb32430de424" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/0caf0713-b2cc-4703-8b45-eb32430de424)

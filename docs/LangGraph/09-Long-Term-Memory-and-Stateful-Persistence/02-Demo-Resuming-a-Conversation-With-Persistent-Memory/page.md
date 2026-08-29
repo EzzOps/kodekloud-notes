@@ -59,9 +59,7 @@ Memory hygiene and best practices
   <img alt="The image outlines three best practices: using consistent metadata, preprocessing text before storing, and experimenting with similarity thresholds and k-values." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Store and index metadata alongside embeddings (e.g., user ID, timestamp, source). This drastically improves targeted retrieval and enables efficient filtering of memories.
-</Callout>
+> **lightbulb** Store and index metadata alongside embeddings (e.g., user ID, timestamp, source). This drastically improves targeted retrieval and enables efficient filtering of memories.
 
 Avoid over-injecting
 
@@ -88,9 +86,7 @@ Further reading and references
 * Retrieval-augmented generation (RAG): [https://en.wikipedia.org/wiki/Retrieval-augmented\_generation](https://en.wikipedia.org/wiki/Retrieval-augmented_generation)
 * LangGraph concepts and workflow patterns (see your LangGraph docs for implementation specifics)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/286ff108-f2af-457e-914f-5665501b7ec0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/286ff108-f2af-457e-914f-5665501b7ec0)
 
 
 # Demo Resuming a Conversation With Persistent Memory

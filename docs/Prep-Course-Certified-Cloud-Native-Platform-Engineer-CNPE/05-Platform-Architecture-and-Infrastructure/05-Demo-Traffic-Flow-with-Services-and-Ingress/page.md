@@ -156,13 +156,11 @@ When a PV is `Released` with `Retain`, an administrator must:
 * Remove or update `claimRef` on the PV to allow re-binding
 * Or manually delete the underlying storage resource
 
-<Callout icon="lightbulb">
-  Choose reclaim policies based on workload needs:
+> **lightbulb** Choose reclaim policies based on workload needs:
 
   * Use `Retain` for critical, stateful workloads (databases, logs) to prevent accidental data loss.
   * Use `Delete` for ephemeral or test workloads to automate cleanup.
     Also confirm correct access modes (`ReadWriteOnce`, `ReadWriteMany`) and zone affinity by using `WaitForFirstConsumer` in multi-zone clusters.
-</Callout>
 
 ## Recap / Best practices
 
@@ -186,11 +184,9 @@ When a PV is `Released` with `Retain`, an administrator must:
 
 Explore your cluster’s StorageClasses, create PVCs and Pods, and observe how Kubernetes dynamically provisions and manages storage according to StorageClass settings.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/d09019f0-e51f-485c-aa53-736128144afd" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/d09019f0-e51f-485c-aa53-736128144afd)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/b55e9c11-0076-440f-b2bb-735326813468" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/b55e9c11-0076-440f-b2bb-735326813468)
 
 
 # Demo Traffic Flow with Services and Ingress
@@ -308,9 +304,7 @@ You should receive the NGINX default welcome page HTML.
 
 Note: NodePort assigns a port in the 30000–32767 range. This is convenient for testing but not ideal for production (awkward ports, limited range, no TLS termination). For path-based routing, virtual hosts, and TLS termination, use Ingress (with an Ingress controller).
 
-<Callout icon="lightbulb">
-  Ingress provides host-based and path-based routing, and TLS termination. It requires an Ingress controller to implement the routing (for example, [nginx-ingress](https://kubernetes.github.io/ingress-nginx/), [Traefik](https://traefik.io/), or other controllers).
-</Callout>
+> **lightbulb** Ingress provides host-based and path-based routing, and TLS termination. It requires an Ingress controller to implement the routing (for example, [nginx-ingress](https://kubernetes.github.io/ingress-nginx/), [Traefik](https://traefik.io/), or other controllers).
 
 ## 4) Ingress controller — verify it's running
 

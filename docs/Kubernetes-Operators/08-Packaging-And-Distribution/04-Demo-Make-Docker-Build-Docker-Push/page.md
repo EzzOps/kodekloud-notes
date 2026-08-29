@@ -21,9 +21,7 @@ deploy: manifests kustomize ## Deploy controller to the K8s cluster specified in
 	"$(KUSTOMIZE)" build config/default | "$(KUBECTL)" apply -f -
 ```
 
-<Callout icon="lightbulb">
-  Always pass the exact `IMG` value to `make deploy` that you used when building and pushing the image. If `IMG` is omitted or incorrect, the generated Deployment can reference a placeholder image and your pods may fail to pull.
-</Callout>
+> **lightbulb** Always pass the exact `IMG` value to `make deploy` that you used when building and pushing the image. If `IMG` is omitted or incorrect, the generated Deployment can reference a placeholder image and your pods may fail to pull.
 
 ## Run make deploy
 
@@ -48,9 +46,7 @@ deployment.apps/webapp-operator-controller-manager created
 
 If the image reference is wrong or your cluster cannot pull from the registry, pod events will typically show `ImagePullBackOff` or similar error messages.
 
-<Callout icon="warning">
-  Ensure the registry referenced by `IMG` is accessible from the cluster nodes (network and authentication). Private registries often require imagePullSecrets or registry credentials configured on the nodes.
-</Callout>
+> **warning** Ensure the registry referenced by `IMG` is accessible from the cluster nodes (network and authentication). Private registries often require imagePullSecrets or registry credentials configured on the nodes.
 
 ## Verify rollout and controller readiness
 
@@ -116,11 +112,9 @@ A present CRD proves the cluster can accept WebApp objects and the in-cluster co
 * [kubectl reference](https://kubernetes.io/docs/reference/kubectl/)
 * [Kubernetes CRD concepts](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/5a9bfe56-bc26-4325-b659-06027d4e815f/lesson/c25b009f-0952-4fdb-8dbc-e57ade3dfc37" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/5a9bfe56-bc26-4325-b659-06027d4e815f/lesson/c25b009f-0952-4fdb-8dbc-e57ade3dfc37)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/5a9bfe56-bc26-4325-b659-06027d4e815f/lesson/9b287938-25fd-40eb-990d-13e36b711ef2" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/5a9bfe56-bc26-4325-b659-06027d4e815f/lesson/9b287938-25fd-40eb-990d-13e36b711ef2)
 
 
 # Demo Make Docker Build Docker Push
@@ -222,13 +216,9 @@ Manifests:
   Platform: unknown/unknown
 ```
 
-<Callout icon="lightbulb">
-  Tags (like `v0.1.0`) are mutable references, while the digest (`sha256:...`) is the immutable content identifier. Using the digest (for example `image: 127.0.0.1:5000/course/webapp-operator@sha256:<digest>`) in manifests or deployment specs guarantees the exact image bytes that will be pulled.
-</Callout>
+> **lightbulb** Tags (like `v0.1.0`) are mutable references, while the digest (`sha256:...`) is the immutable content identifier. Using the digest (for example `image: 127.0.0.1:5000/course/webapp-operator@sha256:<digest>`) in manifests or deployment specs guarantees the exact image bytes that will be pulled.
 
-<Callout icon="warning">
-  If you're using a local registry (e.g., `127.0.0.1:5000`) make sure the registry service is running and your Docker daemon is configured to allow pushing to that host (insecure registry settings may be required). Pushing to remote registries may also require authentication.
-</Callout>
+> **warning** If you're using a local registry (e.g., `127.0.0.1:5000`) make sure the registry service is running and your Docker daemon is configured to allow pushing to that host (insecure registry settings may be required). Pushing to remote registries may also require authentication.
 
 ## Quick reference — common commands
 

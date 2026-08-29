@@ -148,9 +148,7 @@ Alice's grade is 85
 
 ## Updating Values with Ownership Considerations
 
-<Frame>
-  ![The image is a slide titled "Updating Values in a HashMap," explaining two methods: overwriting with insert() and using entry() to insert or modify if the key doesn’t exist.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883843/notes-assets/images/Rust-Programming-Hashmaps/updating-values-hashmap-insert-entry.jpg)
-</Frame>
+![The image is a slide titled "Updating Values in a HashMap," explaining two methods: overwriting with insert() and using entry() to insert or modify if the key doesn’t exist.](https://kodekloud.com/kk-media/image/upload/v1752883843/notes-assets/images/Rust-Programming-Hashmaps/updating-values-hashmap-insert-entry.jpg)
 
 ### Overwriting with insert()
 
@@ -335,9 +333,7 @@ Borrowed grades: Some(85)
 Original grades: Some(85)
 ```
 
-<Callout icon="lightbulb">
-  While borrowing immutably, the HashMap cannot be modified. Any attempt to mutate it through an immutable reference will trigger a compile-time error.
-</Callout>
+> **lightbulb** While borrowing immutably, the HashMap cannot be modified. Any attempt to mutate it through an immutable reference will trigger a compile-time error.
 
 ### Borrowing a Mutable Reference
 
@@ -380,12 +376,8 @@ Hashmaps are generally efficient, but several factors can affect their performan
 * **Rehashing:** When a HashMap becomes overly full, it may rehash its entries into a larger array. Although rehashing is computationally expensive, Rust handles it automatically.
 * **Hash Function:** Rust's default HashMap employs a cryptographically secure hashing algorithm. While this enhances security, it might be slower compared to non-secure alternatives. In performance-critical applications where security is less of a concern, you can opt for a different hashing function.
 
-<Frame>
-  ![The image outlines performance considerations for HashMaps, focusing on hash collisions, load factor, and hashing functions, with specific notes on Rust's implementation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883844/notes-assets/images/Rust-Programming-Hashmaps/hashmap-performance-considerations-rust.jpg)
-</Frame>
+![The image outlines performance considerations for HashMaps, focusing on hash collisions, load factor, and hashing functions, with specific notes on Rust's implementation.](https://kodekloud.com/kk-media/image/upload/v1752883844/notes-assets/images/Rust-Programming-Hashmaps/hashmap-performance-considerations-rust.jpg)
 
 Understanding rehashing, load factors, and the underlying hash functions can help optimize the performance of your application when working with Hashmaps.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/29fbe393-bae3-4a16-8fc5-a854a2400daa/lesson/07190eb2-998a-4c92-8a9d-d1cc1d8cfc26" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/29fbe393-bae3-4a16-8fc5-a854a2400daa/lesson/07190eb2-998a-4c92-8a9d-d1cc1d8cfc26)

@@ -47,9 +47,7 @@ spec:
 
 Tasks whose dependencies are satisfied will run immediately, letting Argo maximize parallelism safely.
 
-<Callout icon="lightbulb">
-  Use Steps for straightforward, mostly linear pipelines. Choose DAGs when explicit dependency control and multiple concurrent paths are required.
-</Callout>
+> **lightbulb** Use Steps for straightforward, mostly linear pipelines. Choose DAGs when explicit dependency control and multiple concurrent paths are required.
 
 Templates: reusable building blocks
 
@@ -186,9 +184,7 @@ Further reading and references
 * AWS S3: [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/)
 * Google Cloud Storage: [https://cloud.google.com/storage/](https://cloud.google.com/storage/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/12ee1a17-ba58-41bc-a43d-b7091cd52324" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/12ee1a17-ba58-41bc-a43d-b7091cd52324)
 
 
 # Cost for Platforms What Drives Spend and How to Reduce It
@@ -259,9 +255,7 @@ Bridging this gap requires a tool that understands cloud pricing and Kubernetes 
   <img alt="The image illustrates a &#x22;visibility problem&#x22; between cloud billing at the infrastructure level and Kubernetes usage at the platform level, highlighting OpenCost as a bridging solution." />
 </Frame>
 
-<Callout icon="lightbulb">
-  [OpenCost](https://opencost.io) is an open-source, vendor-neutral project (CNCF incubating) that maps Kubernetes usage to cloud pricing so you can attribute dollars to namespaces, labels, and pods.
-</Callout>
+> **lightbulb** [OpenCost](https://opencost.io) is an open-source, vendor-neutral project (CNCF incubating) that maps Kubernetes usage to cloud pricing so you can attribute dollars to namespaces, labels, and pods.
 
 ## OpenCost overview: how it works and what it provides
 
@@ -327,9 +321,7 @@ Aim for the 60–80% band. Below 50% indicates significant waste; above 90% sugg
   <img alt="The image is a cost-efficiency spectrum comparing requested versus used efficiency, categorized into zones: &#x22;Wasted Money&#x22; (below 50%), &#x22;Target Zone&#x22; (60-80%), and &#x22;High Risk&#x22; (90%+), with the tool OpenCost used to show namespace placement on this spectrum." />
 </Frame>
 
-<Callout icon="warning">
-  Be careful when right-sizing: aggressive reductions can cause production outages. Always validate changes in a staging or canary environment and combine metrics with business context.
-</Callout>
+> **warning** Be careful when right-sizing: aggressive reductions can cause production outages. Always validate changes in a staging or canary environment and combine metrics with business context.
 
 ## How to reduce costs — an operational roadmap
 
@@ -365,6 +357,4 @@ This concludes the module covering architecture, resources, multi-tenancy, gover
 * Amazon EC2 docs: [https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2)
 * Kubernetes docs: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/36ec1768-6ce1-430d-962a-e8359f9c6c1d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/36ec1768-6ce1-430d-962a-e8359f9c6c1d)

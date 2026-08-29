@@ -40,9 +40,7 @@ Installing for i386-pc platform.
 Installation finished. No error reported.
 ```
 
-<Callout icon="triangle-alert">
-  Ensure you specify the correct disk (e.g., `/dev/sda`). Installing GRUB to the wrong device can overwrite another OS or data.
-</Callout>
+> **triangle-alert** Ensure you specify the correct disk (e.g., `/dev/sda`). Installing GRUB to the wrong device can overwrite another OS or data.
 
 ***
 
@@ -132,9 +130,7 @@ You should see the GRUB menu for the new timeout duration, and your kernel optio
 * [GNU GRUB Manual](https://www.gnu.org/software/grub/manual/)
 * [Red Hat Enterprise Linux Booting](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/04c4f60d-8cda-4174-a12d-7147437ee42d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/04c4f60d-8cda-4174-a12d-7147437ee42d)
 
 
 # Linux as a Virtualization Guest Containers
@@ -166,9 +162,7 @@ sudo dnf install podman
 
 The podman-docker package provides docker CLI compatibility so many existing Docker commands (docker pull, docker run, docker ps, etc.) work unchanged.
 
-<Callout icon="lightbulb">
-  Podman includes a Docker-CLI compatibility wrapper (podman-docker). You can use `docker ...` commands, or call `podman` directly. Podman is daemonless and integrates with systemd and rootless workflows.
-</Callout>
+> **lightbulb** Podman includes a Docker-CLI compatibility wrapper (podman-docker). You can use `docker ...` commands, or call `podman` directly. Podman is daemonless and integrates with systemd and rootless workflows.
 
 Configuring default registries (optional)
 

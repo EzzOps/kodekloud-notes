@@ -105,9 +105,7 @@ print(response.content)  # Expected: 'lizarB'
 * The system role ("You are a linguistic specialist.") nudges the model toward language-focused behaviors.
 * At runtime you only supply the new `input`; the model infers the mapping from the examples.
 
-<Callout icon="lightbulb">
-  Few-shot prompting is especially effective when you want the model to generalize from a small set of representative examples (e.g., rows from a CSV or entries from a database). Choose examples that cover the variations you expect the model to handle.
-</Callout>
+> **lightbulb** Few-shot prompting is especially effective when you want the model to generalize from a small set of representative examples (e.g., rows from a CSV or entries from a database). Choose examples that cover the variations you expect the model to handle.
 
 ## Notes and best practices
 
@@ -130,11 +128,9 @@ Links and references:
 * [LangChain Documentation](https://python.langchain.com)
 * [OpenAI API Documentation](https://platform.openai.com/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/e2f5f01a-0ea8-4905-8b0b-29d174baedb8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/e2f5f01a-0ea8-4905-8b0b-29d174baedb8)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/c6cfbec7-d94d-4eaa-990e-4845b4b0ab5b" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/c6cfbec7-d94d-4eaa-990e-4845b4b0ab5b)
 
 
 # Getting Started with LLMs
@@ -149,9 +145,7 @@ Welcome to the first demo of this course. In this lesson you'll learn how to int
 * Demonstrate how to switch providers (OpenAI and Google Generative AI / Gemini) while keeping the same prompt and code flow.
 * Highlight the environment variables and authentication patterns required for each provider.
 
-<Callout icon="lightbulb">
-  Before you begin, install the core LangChain package and any provider-specific integrations you plan to use. Make sure provider API keys or credentials are set as environment variables as shown below.
-</Callout>
+> **lightbulb** Before you begin, install the core LangChain package and any provider-specific integrations you plan to use. Make sure provider API keys or credentials are set as environment variables as shown below.
 
 ***
 

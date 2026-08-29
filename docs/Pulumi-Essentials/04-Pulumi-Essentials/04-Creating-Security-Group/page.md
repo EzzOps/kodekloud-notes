@@ -24,9 +24,7 @@ ec2_instance = ec2.Instance('web-server',
 pulumi.export('public_ip', ec2_instance.public_ip)
 ```
 
-<Callout icon="lightbulb">
-  AMI IDs are region-specific. Select an AMI appropriate for your region (for example, Ubuntu 22.04 LTS) from the EC2 console or query the AWS CLI. See the EC2 console's Launch Instance workflow for the image's AMI ID.
-</Callout>
+> **lightbulb** AMI IDs are region-specific. Select an AMI appropriate for your region (for example, Ubuntu 22.04 LTS) from the EC2 console or query the AWS CLI. See the EC2 console's Launch Instance workflow for the image's AMI ID.
 
 To find and copy an AMI ID from the AWS Console, open the EC2 Launch Instance workflow and choose the desired image (Ubuntu in this example). Paste the AMI ID into the `ami` field of the code above.
 
@@ -91,9 +89,7 @@ With the public IP printed, SSH into the instance using the PEM file for the key
 ssh -i test1.pem ubuntu@34.205.89.1
 ```
 
-<Callout icon="warning">
-  By default, the security group attached to a new EC2 instance may not allow SSH from the internet. If you cannot connect, check the instance’s Security Group inbound rules and ensure SSH (port 22) is allowed from your IP (or an appropriate CIDR). Restrict access to your IP rather than opening SSH to 0.0.0.0/0 whenever possible.
-</Callout>
+> **warning** By default, the security group attached to a new EC2 instance may not allow SSH from the internet. If you cannot connect, check the instance’s Security Group inbound rules and ensure SSH (port 22) is allowed from your IP (or an appropriate CIDR). Restrict access to your IP rather than opening SSH to 0.0.0.0/0 whenever possible.
 
 Troubleshooting checklist:
 
@@ -113,9 +109,7 @@ References and further reading:
   <img alt="A screenshot of the AWS EC2 console displaying an instance's Details and Security sections, including public IP, VPC/subnet, launch time, and security group inbound/outbound rules. The left sidebar shows EC2 navigation options like Instances, Images, and Elastic Block Store." />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pulumi-essentials/module/883d8d6f-c8be-44af-ac4d-ba0835d32f5d/lesson/84cfaf53-946e-4164-943e-82555a2374d6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pulumi-essentials/module/883d8d6f-c8be-44af-ac4d-ba0835d32f5d/lesson/84cfaf53-946e-4164-943e-82555a2374d6)
 
 
 # Creating Security Group

@@ -13,9 +13,7 @@ CI/CD stands for Continuous Integration and Continuous Delivery.
 * **Continuous Integration** is the automated process of building, packaging, and testing your application.
 * **Continuous Delivery** automatically deploys the latest tested code to your production environment, ensuring your live system is always up-to-date.
 
-<Callout icon="lightbulb">
-  Automating your deployment process with a CI/CD pipeline not only saves time but also improves consistency and reliability.
-</Callout>
+> **lightbulb** Automating your deployment process with a CI/CD pipeline not only saves time but also improves consistency and reliability.
 
 ## Our Current Manual Process
 
@@ -27,9 +25,7 @@ Before implementing a CI/CD pipeline, our workflow involves several manual steps
 4. Optionally build Docker images if required.
 5. Deploy the application. This deployment step can range from a simple `git push` (as on Heroku) to complex server logins, code pulls, and service restarts.
 
-<Frame>
-  ![The image outlines a "Current Manual Process" for software development, including steps like making changes to code, committing changes, running tests, building an image, and deploying.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883357/notes-assets/images/Python-API-Development-with-FastAPI-CI-CD-Basics/current-manual-process-software-dev.jpg)
-</Frame>
+![The image outlines a "Current Manual Process" for software development, including steps like making changes to code, committing changes, running tests, building an image, and deploying.](https://kodekloud.com/kk-media/image/upload/v1752883357/notes-assets/images/Python-API-Development-with-FastAPI-CI-CD-Basics/current-manual-process-software-dev.jpg)
 
 > Note: Although the deployment step is presented as a single action, it often involves multiple sub-steps based on your deployment strategy.
 
@@ -52,13 +48,9 @@ Implementing a CI/CD pipeline transforms our deployment process by automating cr
 4. **Continuous Delivery Phase:**
    * Deploy the updated application or Docker image to production automatically based on your configuration.
 
-<Frame>
-  ![The image is a flowchart illustrating an automated CI/CD process, showing steps from making code changes to updating production.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883358/notes-assets/images/Python-API-Development-with-FastAPI-CI-CD-Basics/ci-cd-automation-flowchart.jpg)
-</Frame>
+![The image is a flowchart illustrating an automated CI/CD process, showing steps from making code changes to updating production.](https://kodekloud.com/kk-media/image/upload/v1752883358/notes-assets/images/Python-API-Development-with-FastAPI-CI-CD-Basics/ci-cd-automation-flowchart.jpg)
 
-<Callout icon="lightbulb">
-  With CI/CD, only the code commit requires manual intervention. The pipeline handles the build, test, and deployment processes seamlessly.
-</Callout>
+> **lightbulb** With CI/CD, only the code commit requires manual intervention. The pipeline handles the build, test, and deployment processes seamlessly.
 
 ## Popular CI/CD Tools
 
@@ -71,9 +63,7 @@ There are several tools available to facilitate CI/CD, including:
 
 For this discussion, we focus on [GitHub Actions](https://learn.kodekloud.com/user/courses/github-actions) due to its seamless integration with GitHub, ease-of-use, and free hosted service.
 
-<Frame>
-  ![The image is a presentation slide about CI/CD tools, mentioning GitHub Actions for integration with GitHub repositories, and includes logos of Jenkins, Travis CI, CircleCI, TeamCity, and others.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883359/notes-assets/images/Python-API-Development-with-FastAPI-CI-CD-Basics/ci-cd-tools-github-actions-logos.jpg)
-</Frame>
+![The image is a presentation slide about CI/CD tools, mentioning GitHub Actions for integration with GitHub repositories, and includes logos of Jenkins, Travis CI, CircleCI, TeamCity, and others.](https://kodekloud.com/kk-media/image/upload/v1752883359/notes-assets/images/Python-API-Development-with-FastAPI-CI-CD-Basics/ci-cd-tools-github-actions-logos.jpg)
 
 ## Understanding CI/CD Tools
 
@@ -81,9 +71,7 @@ A CI/CD tool provides a "runner"—a dedicated computer or virtual machine that 
 
 Triggers for these automated tasks can include events like a git push or merge request, or even scheduled times (e.g., nightly builds). Despite its complexity, the CI/CD process is essentially a sequence of simple steps executed automatically.
 
-<Frame>
-  ![The image is a slide explaining what a CI/CD tool does, highlighting its simplicity, use of runners, configuration through YAML/JSON or GUI, and event-triggered pipelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883360/notes-assets/images/Python-API-Development-with-FastAPI-CI-CD-Basics/ci-cd-tool-explanation-slide.jpg)
-</Frame>
+![The image is a slide explaining what a CI/CD tool does, highlighting its simplicity, use of runners, configuration through YAML/JSON or GUI, and event-triggered pipelines.](https://kodekloud.com/kk-media/image/upload/v1752883360/notes-assets/images/Python-API-Development-with-FastAPI-CI-CD-Basics/ci-cd-tool-explanation-slide.jpg)
 
 ## Example: GitHub Actions Configuration
 
@@ -120,6 +108,4 @@ Adopting a CI/CD pipeline streamlines the deployment process by automating repet
 
 In the next lesson, we will explore how to set up [GitHub Actions](https://learn.kodekloud.com/user/courses/github-actions) to enhance our CI/CD pipeline further.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/4979410a-af57-460b-8f71-5a177fa10d2d/lesson/1d19a1cf-cba7-4d79-b887-909fd7082d53" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/4979410a-af57-460b-8f71-5a177fa10d2d/lesson/1d19a1cf-cba7-4d79-b887-909fd7082d53)

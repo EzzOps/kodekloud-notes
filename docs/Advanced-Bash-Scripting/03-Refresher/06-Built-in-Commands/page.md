@@ -14,7 +14,7 @@ In this guide, we’ll cover:
 * Verifying process creation with `strace`
 * Listing all built-in commands and keywords
 
-![The image is a slide titled "Built-in" with a list of topics: command categories and types, how to identify built-in commands, and their performance benefits. It includes a checkmark icon next to each topic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868589/notes-assets/images/Advanced-Bash-Scripting-Built-in-Commands/built-in-commands-topics-checkmark.jpg)
+![The image is a slide titled "Built-in" with a list of topics: command categories and types, how to identify built-in commands, and their performance benefits. It includes a checkmark icon next to each topic.](https://kodekloud.com/kk-media/image/upload/v1752868589/notes-assets/images/Advanced-Bash-Scripting-Built-in-Commands/built-in-commands-topics-checkmark.jpg)
 
 ## The Chef Analogy
 

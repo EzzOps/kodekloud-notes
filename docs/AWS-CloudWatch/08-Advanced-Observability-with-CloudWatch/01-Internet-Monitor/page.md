@@ -28,7 +28,7 @@ CloudWatch Internet Monitor provides end-to-end visibility into internet traffic
 | Thresholds & Alarms           | Set custom alerts on latency, bandwidth, or active connections.            |
 | Detailed Traffic Records      | Aggregate IP traffic data for security audits and compliance.              |
 
-![The image is an infographic titled "Internet Monitor," highlighting features such as monitoring network flow data, anomaly detection, AWS integration, real-time visibility, setting alarms, and supporting VPC flow logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862353/notes-assets/images/AWS-CloudWatch-Internet-Monitor/internet-monitor-network-flow-infographic.jpg)
+![The image is an infographic titled "Internet Monitor," highlighting features such as monitoring network flow data, anomaly detection, AWS integration, real-time visibility, setting alarms, and supporting VPC flow logs.](https://kodekloud.com/kk-media/image/upload/v1752862353/notes-assets/images/AWS-CloudWatch-Internet-Monitor/internet-monitor-network-flow-infographic.jpg)
 
 > **lightbulb** Ensure VPC Flow Logs are enabled and your IAM role has `internetmonitor:*` permissions before creating a monitor. See the [CloudWatch IAM Policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazoncloudwatch.html) for details.
 

@@ -87,9 +87,7 @@ Without `sudo`, roles cannot enable, disable, or reconfigure audit devices.
 
 This concludes our overview of Vault audit devices and log management. In the next hands-on lab, you’ll enable devices, generate log entries, and configure a log collector for centralized monitoring.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/36cf9665-35d2-4dbc-9ddc-fc00ca80cbd4/lesson/bc202187-a5f5-43d7-a625-b7e904688541" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/36cf9665-35d2-4dbc-9ddc-fc00ca80cbd4/lesson/bc202187-a5f5-43d7-a625-b7e904688541)
 
 
 # Monitor and Understand Operational Logs
@@ -111,13 +109,9 @@ Vault emits logs at startup and continuously during operation. These logs captur
 
 They’re critical for diagnosing syntax errors, configuration mistakes, or runtime failures.
 
-<Frame>
-  ![The image is a slide titled "Vault Server Logs," explaining how Vault logs configuration information during startup and continues logging for troubleshooting, with configurable log levels like err, warn, info, debug, and trace.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878579/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Monitor-and-Understand-Operational-Logs/vault-server-logs-configuration-troubleshooting.jpg)
-</Frame>
+![The image is a slide titled "Vault Server Logs," explaining how Vault logs configuration information during startup and continues logging for troubleshooting, with configurable log levels like err, warn, info, debug, and trace.](https://kodekloud.com/kk-media/image/upload/v1752878579/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Monitor-and-Understand-Operational-Logs/vault-server-logs-configuration-troubleshooting.jpg)
 
-<Callout icon="lightbulb">
-  If your HCL file has a syntax error (for example, a missing comma or bracket), Vault’s startup logs will identify the exact line number and issue.
-</Callout>
+> **lightbulb** If your HCL file has a syntax error (for example, a missing comma or bracket), Vault’s startup logs will identify the exact line number and issue.
 
 ## Vault Log Levels
 
@@ -131,9 +125,7 @@ Vault supports five log levels, from least to most verbose. Choose the level tha
 | debug | Detailed internal operations           | In-depth debugging     |
 | trace | Full trace of Vault internals          | Deep diagnostics       |
 
-<Frame>
-  ![The image illustrates "Vault Log Levels" with a gradient arrow indicating log detail from "ERROR" to "TRACE," and a star marking the default setting. It also features a certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878579/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Monitor-and-Understand-Operational-Logs/vault-log-levels-gradient-arrow-diagram.jpg)
-</Frame>
+![The image illustrates "Vault Log Levels" with a gradient arrow indicating log detail from "ERROR" to "TRACE," and a star marking the default setting. It also features a certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878579/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Monitor-and-Understand-Operational-Logs/vault-log-levels-gradient-arrow-diagram.jpg)
 
 ## Configuring the Log Level
 
@@ -162,9 +154,7 @@ log_level = "warn"
 
 Then restart Vault.
 
-<Callout icon="triangle-alert">
-  An invalid `log_level` value in your HCL will prevent Vault from starting. Always verify the syntax.
-</Callout>
+> **triangle-alert** An invalid `log_level` value in your HCL will prevent Vault from starting. Always verify the syntax.
 
 ## Viewing Vault Logs
 
@@ -211,6 +201,4 @@ In exam or lab environments, Vault containers may be managed via Portainer. Use 
 * [Docker Documentation](https://docs.docker.com/)
 * [systemd journalctl Manual](https://www.freedesktop.org/software/systemd/man/journalctl.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/36cf9665-35d2-4dbc-9ddc-fc00ca80cbd4/lesson/0a0fa240-1bd2-4b34-b181-97678db1134c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/36cf9665-35d2-4dbc-9ddc-fc00ca80cbd4/lesson/0a0fa240-1bd2-4b34-b181-97678db1134c)

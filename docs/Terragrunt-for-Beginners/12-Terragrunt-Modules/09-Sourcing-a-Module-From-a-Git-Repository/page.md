@@ -21,9 +21,7 @@ Choose one of the following authentication options to securely fetch private mod
 | HTTPS + Personal Access Token | Use a PAT stored in an environment variable. | `bash<br>export GIT_TOKEN="your_token_here"<br>`<br />Configure `~/.netrc` or a Git credential helper.       |
 | SSH Keys                      | Authenticate via your SSH keypair.           | `bash<br>eval "$(ssh-agent -s)"<br>ssh-add ~/.ssh/id_rsa<br>`<br />Add your public key to your Git provider. |
 
-<Callout icon="lightbulb">
-  Avoid hard-coding tokens or keys in your `.tf` files. Instead, use environment variables, `~/.netrc`, or a Git credential helper.
-</Callout>
+> **lightbulb** Avoid hard-coding tokens or keys in your `.tf` files. Instead, use environment variables, `~/.netrc`, or a Git credential helper.
 
 ## Referencing a Module in Terraform
 
@@ -54,9 +52,7 @@ module "my_module" {
 * The double slash (`//modules/my_module`) specifies the subdirectory within the repository.
 * The `?ref=v1.0.0` suffix pins the module to a tag, branch, or commit.
 
-<Callout icon="triangle-alert">
-  Embedding credentials in URLs can expose sensitive data if your configuration is shared. Use variables and environment-based authentication whenever possible.
-</Callout>
+> **triangle-alert** Embedding credentials in URLs can expose sensitive data if your configuration is shared. Use variables and environment-based authentication whenever possible.
 
 ## Initializing and Updating Modules
 
@@ -86,6 +82,4 @@ module "my_module" {
 * [SSH Key Setup](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 * [Terraform CLI Commands](https://www.terraform.io/docs/cli/index.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/f0b5f16b-2caf-423c-bc3c-44dd38a3ae9e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/f0b5f16b-2caf-423c-bc3c-44dd38a3ae9e)

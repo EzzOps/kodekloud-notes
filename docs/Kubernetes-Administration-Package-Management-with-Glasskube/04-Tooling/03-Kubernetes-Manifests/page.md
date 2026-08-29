@@ -36,9 +36,7 @@ To install (render and submit) a chart into a cluster, give it a release name an
 helm install my-release ./my-chart -f values.yaml
 ```
 
-<Callout icon="warning">
-  Be careful with templates that manipulate namespaces or CRDs. Helm does not automatically update CRDs, and dependency namespace handling can cause unexpected results unless charts are designed properly.
-</Callout>
+> **warning** Be careful with templates that manipulate namespaces or CRDs. Helm does not automatically update CRDs, and dependency namespace handling can cause unexpected results unless charts are designed properly.
 
 ## Pros and cons of using Helm
 
@@ -66,9 +64,7 @@ Glasskube addresses some of these Helm limitations; this article series explores
 * [Kubernetes documentation](https://kubernetes.io/docs/) — core API and resource references
 * Helm for Beginners course (Mumshad Mannambeth) — recommended beginner resource
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/140a6ea0-1539-4d23-9aa6-0d07654a4526/lesson/56a35556-b899-412b-a19e-1ab1010723f4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/140a6ea0-1539-4d23-9aa6-0d07654a4526/lesson/56a35556-b899-412b-a19e-1ab1010723f4)
 
 
 # Kubernetes Manifests
@@ -132,9 +128,7 @@ Apply this manifest to your cluster using kubectl:
 kubectl apply -f my-manifests.yaml
 ```
 
-<Callout icon="lightbulb">
-  Keep YAML indentation consistent and ensure the Deployment's pod template (spec.template under spec) is present — otherwise the API will reject the object.
-</Callout>
+> **lightbulb** Keep YAML indentation consistent and ensure the Deployment's pod template (spec.template under spec) is present — otherwise the API will reject the object.
 
 Advantages and trade-offs of using raw Kubernetes manifests:
 
@@ -163,6 +157,4 @@ Links and references
 * [kubectl apply — Kubernetes CLI documentation](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply)
 * [Helm — The Kubernetes Package Manager](https://helm.sh/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/140a6ea0-1539-4d23-9aa6-0d07654a4526/lesson/c78e8d70-c8e4-41e4-8a8f-92e5e6b1d20b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/140a6ea0-1539-4d23-9aa6-0d07654a4526/lesson/c78e8d70-c8e4-41e4-8a8f-92e5e6b1d20b)

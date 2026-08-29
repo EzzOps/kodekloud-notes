@@ -6,9 +6,7 @@ This article explores the usage of the kubectl diff command to compare YAML conf
 
 In this article, we explore the usage of the `kubectl diff` command. This powerful tool allows you to compare the configuration specified in your YAML files against the corresponding resources deployed in your Kubernetes cluster. It is particularly useful for identifying discrepancies and ensuring consistency between your intended state and the actual state of your environment.
 
-<Callout icon="lightbulb">
-  Before using `kubectl diff`, ensure you have the correct context set for your Kubernetes cluster.
-</Callout>
+> **lightbulb** Before using `kubectl diff`, ensure you have the correct context set for your Kubernetes cluster.
 
 ## Basic Command Usage
 
@@ -90,9 +88,7 @@ diff -u -N /tmp/LIVE-1719420227/apps.v1.Deployment.redis-deployment /tmp/MERGED-
 
 The diff output clearly indicates that while the file defines 3 replicas, the active deployment in the cluster currently has 2 replicas. This example demonstrates how `kubectl diff` can guide you in cross-referencing your configuration files with live deployments.
 
-<Callout icon="triangle-alert">
-  Ensure that any changes you make based on diff outputs are tested before applying them to production environments. This prevents unintended disruptions.
-</Callout>
+> **triangle-alert** Ensure that any changes you make based on diff outputs are tested before applying them to production environments. This prevents unintended disruptions.
 
 ## Conclusion
 
@@ -105,8 +101,6 @@ We hope this guide has provided a clear understanding of how to use `kubectl dif
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [Kubernetes Diff Plugin FAQ](https://kubernetes.io/docs/reference/command-line-tools-reference/kubectl-diff/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/191e1df3-27f6-4f9f-8875-79aae4a9bb38" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/191e1df3-27f6-4f9f-8875-79aae4a9bb38)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/565d794e-cc7e-42fa-9297-e50da7afdb70" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/565d794e-cc7e-42fa-9297-e50da7afdb70)

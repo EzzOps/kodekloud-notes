@@ -17,13 +17,9 @@ We cover:
 
 The Terraform Associate 003 exam was retired on January 8, 2026 and replaced by the 004 version. After that date, the 004 exam is the only available Associate-level test. If you currently hold the 003 certification, it remains valid until its original expiration — you only need to take 004 when you recertify or upgrade.
 
-<Callout icon="lightbulb">
-  If you currently hold the 003 certification, it remains valid for its original two-year period. When it’s time to recertify, you will take the 004 exam.
-</Callout>
+> **lightbulb** If you currently hold the 003 certification, it remains valid for its original two-year period. When it’s time to recertify, you will take the 004 exam.
 
-<Callout icon="warning">
-  Follow all candidate instructions on exam day (name matching, test room rules, ID requirements, etc.). Delivery providers changed in 2025 from PSI to Certiverse; adhering to the rules prevents delivery delays or disqualification.
-</Callout>
+> **warning** Follow all candidate instructions on exam day (name matching, test room rules, ID requirements, etc.). Delivery providers changed in 2025 from PSI to Certiverse; adhering to the rules prevents delivery delays or disqualification.
 
 ## What stayed the same
 
@@ -147,6 +143,4 @@ Overall, the candidate experience is familiar, but the 004 exam shifts focus tow
 
 So let’s get into the actual content and get started.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/ab6bded4-e4cf-4208-9368-f5313fcfcf03/lesson/7d47d4d2-367b-4b32-b8a8-b172d0b2b40e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/ab6bded4-e4cf-4208-9368-f5313fcfcf03/lesson/7d47d4d2-367b-4b32-b8a8-b172d0b2b40e)

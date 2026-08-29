@@ -128,9 +128,7 @@ service:
       exporters: [debug]
 ```
 
-<Callout icon="lightbulb">
-  When you require multiple OTLP exporters (for example, one to Jaeger and another to a different backend), name them like `otlp/jaeger` and `otlp/backend2`. Use those exact names in your pipeline exporter lists.
-</Callout>
+> **lightbulb** When you require multiple OTLP exporters (for example, one to Jaeger and another to a different backend), name them like `otlp/jaeger` and `otlp/backend2`. Use those exact names in your pipeline exporter lists.
 
 Start and stop the Compose stack
 Start the stack in detached mode:
@@ -200,6 +198,4 @@ Links and references
 * Jaeger OTLP documentation: [https://www.jaegertracing.io/docs/1.43/deployment/#opentelemetry-collector](https://www.jaegertracing.io/docs/1.43/deployment/#opentelemetry-collector)
 * telemetrygen project (example generator): [https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/cmd/telemetrygen](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/cmd/telemetrygen)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/1e0e8bd2-7cb9-41fd-86e1-0361110b418f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/1e0e8bd2-7cb9-41fd-86e1-0361110b418f)

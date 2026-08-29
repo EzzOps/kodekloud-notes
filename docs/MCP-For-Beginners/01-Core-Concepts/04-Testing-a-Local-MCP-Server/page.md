@@ -72,9 +72,7 @@ Below is a concise comparison of the three transports to help you decide which t
 * HTTP: Use when you need a network-accessible API, multi-client access, load balancing, authentication, or short, atomic requests.
 * SSE: Use when you want server-to-client streaming (for example, streaming model tokens for a chat UI). For full two-way streaming, prefer [WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket) or another bidirectional protocol.
 
-<Callout icon="lightbulb">
-  SSE is a one-way stream (server → client). If your use case requires simultaneous client↔server streaming, use WebSockets or another full-duplex protocol.
-</Callout>
+> **lightbulb** SSE is a one-way stream (server → client). If your use case requires simultaneous client↔server streaming, use WebSockets or another full-duplex protocol.
 
 Further reading and references:
 
@@ -85,9 +83,7 @@ Further reading and references:
 
 Now you should understand the differences between STDIO, HTTP, and SSE MCP service types and which transport to choose for common scenarios.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/a27f1996-5412-4f48-a085-c87d68c51206/lesson/1c04f1d1-a2e5-4e6b-aa8e-9e2e8b3e9d35" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/a27f1996-5412-4f48-a085-c87d68c51206/lesson/1c04f1d1-a2e5-4e6b-aa8e-9e2e8b3e9d35)
 
 
 # Testing a Local MCP Server
@@ -104,9 +100,7 @@ Hey — this lesson walks through practical ways to test a local MCP (Model Cont
 
 Callouts
 
-<Callout icon="lightbulb">
-  Use interactive tools for quick debugging ([Postman](https://www.postman.com/), [MCP Inspector](https://www.npmjs.com/package/@modelcontextprotocol/inspector)), and automated tests for CI/CD (MCP Tester or language-specific test frameworks).
-</Callout>
+> **lightbulb** Use interactive tools for quick debugging ([Postman](https://www.postman.com/), [MCP Inspector](https://www.npmjs.com/package/@modelcontextprotocol/inspector)), and automated tests for CI/CD (MCP Tester or language-specific test frameworks).
 
 Why test locally?
 
@@ -455,9 +449,7 @@ Use this approach for quick smoke tests or to write simple shell-based checks an
   * Add explicit readiness checks before sending requests.
   * Capture and assert on both structured JSON-RPC responses and important logs.
 
-<Callout icon="lightbulb">
-  Automated tests are essential. Manual checks are helpful for debugging, but CI/CD tests prevent regressions and give confidence when deploying changes.
-</Callout>
+> **lightbulb** Automated tests are essential. Manual checks are helpful for debugging, but CI/CD tests prevent regressions and give confidence when deploying changes.
 
 ## Links and references
 
@@ -468,8 +460,6 @@ Use this approach for quick smoke tests or to write simple shell-based checks an
 
 If you want, I can adapt the automated test to use a line-delimited JSON framing strategy or convert the tester into a Jest/Mocha test suite ready for CI.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/a27f1996-5412-4f48-a085-c87d68c51206/lesson/83d1f673-c1c9-4b33-93dc-198bd818a56b" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/a27f1996-5412-4f48-a085-c87d68c51206/lesson/83d1f673-c1c9-4b33-93dc-198bd818a56b)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/a27f1996-5412-4f48-a085-c87d68c51206/lesson/9693b203-2dbe-43a7-8554-471b9d76a834" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/a27f1996-5412-4f48-a085-c87d68c51206/lesson/9693b203-2dbe-43a7-8554-471b9d76a834)

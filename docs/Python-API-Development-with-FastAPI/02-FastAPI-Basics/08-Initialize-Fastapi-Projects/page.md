@@ -41,9 +41,7 @@ email-validator==1.1.3
 ...
 ```
 
-<Callout icon="lightbulb">
-  If you're curious about the package code, you can find all installed packages within the `lib` folder of your virtual environment.
-</Callout>
+> **lightbulb** If you're curious about the package code, you can find all installed packages within the `lib` folder of your virtual environment.
 
 ## Creating a Basic FastAPI Application
 
@@ -107,10 +105,6 @@ In this lesson, you learned to:
 2. Create a basic FastAPI application that provides a "Hello World" JSON response.
 3. Run the FastAPI server with Uvicorn and observe its output.
 
-<Callout icon="lightbulb">
-  In the next section, we will explore each component of the code in more detail to understand the underlying functionality better.
-</Callout>
+> **lightbulb** In the next section, we will explore each component of the code in more detail to understand the underlying functionality better.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/dd2bd926-02d8-45e5-939f-e32395e75f80" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/dd2bd926-02d8-45e5-939f-e32395e75f80)

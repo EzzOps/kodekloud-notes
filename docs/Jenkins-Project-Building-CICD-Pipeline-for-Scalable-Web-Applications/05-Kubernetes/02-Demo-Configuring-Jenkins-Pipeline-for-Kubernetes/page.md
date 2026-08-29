@@ -12,15 +12,11 @@ In this lesson, you'll learn how to configure a Jenkins pipeline to deploy a Doc
 
 Begin by navigating to **Manage Jenkins → Credentials**. Note that Docker credentials are preconfigured. You now need to create a credential for the kubeconfig file, which typically resides in your home directory at `.kube/config`.
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying a list of credentials, including IDs and names for various global domains.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879924/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-for-Kubernetes/jenkins-dashboard-credentials-list.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying a list of credentials, including IDs and names for various global domains.](https://kodekloud.com/kk-media/image/upload/v1752879924/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-for-Kubernetes/jenkins-dashboard-credentials-list.jpg)
 
 Click on **Add Credentials**. Choose the credential type "Secret file". For the file field, enter the full path (for example, `/home/username/.kube/config`) and assign a credential ID such as `kubeconfig-credentials-id`.
 
-<Frame>
-  ![The image shows a Jenkins interface for creating new credentials, specifically a secret file with fields for scope, file, ID, and description. The "Create" button is visible at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879925/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-for-Kubernetes/jenkins-create-credentials-secret-file.jpg)
-</Frame>
+![The image shows a Jenkins interface for creating new credentials, specifically a secret file with fields for scope, file, ID, and description. The "Create" button is visible at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752879925/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-for-Kubernetes/jenkins-create-credentials-secret-file.jpg)
 
 ***
 
@@ -28,23 +24,15 @@ Click on **Add Credentials**. Choose the credential type "Secret file". For the 
 
 Next, set up a new pipeline project. Click on **New Item**, give it a name (for example, "Amazon EKS Pipeline"), and select **Pipeline** as the project type.
 
-<Frame>
-  ![The image shows a Jenkins interface displaying a list of global credentials, including secret texts, SSH keys, and usernames with passwords.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879925/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-for-Kubernetes/jenkins-global-credentials-interface.jpg)
-</Frame>
+![The image shows a Jenkins interface displaying a list of global credentials, including secret texts, SSH keys, and usernames with passwords.](https://kodekloud.com/kk-media/image/upload/v1752879925/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-for-Kubernetes/jenkins-global-credentials-interface.jpg)
 
 Configure the job by enabling the GitHub hook trigger for Git SCM polling. Under the pipeline configuration, select "Pipeline script from SCM" and set the SCM option to Git. Enter your Git repository URL and select the branch (in this example, **main**).
 
-<Frame>
-  ![The image shows a Jenkins interface for creating a new item, with options to select different project types such as Freestyle project, Pipeline, and Multi-configuration project. The item name "EKS-Pipeline" is entered in the text box.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879927/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-for-Kubernetes/jenkins-new-item-eks-pipeline.jpg)
-</Frame>
+![The image shows a Jenkins interface for creating a new item, with options to select different project types such as Freestyle project, Pipeline, and Multi-configuration project. The item name "EKS-Pipeline" is entered in the text box.](https://kodekloud.com/kk-media/image/upload/v1752879927/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-for-Kubernetes/jenkins-new-item-eks-pipeline.jpg)
 
-<Frame>
-  ![The image shows a configuration screen for setting up a pipeline, with options to select a source control management (SCM) system, enter a repository URL, and manage credentials. The SCM is set to Git, and there's a prompt to enter a Git repository URL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879928/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-for-Kubernetes/pipeline-configuration-git-scm.jpg)
-</Frame>
+![The image shows a configuration screen for setting up a pipeline, with options to select a source control management (SCM) system, enter a repository URL, and manage credentials. The SCM is set to Git, and there's a prompt to enter a Git repository URL.](https://kodekloud.com/kk-media/image/upload/v1752879928/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-for-Kubernetes/pipeline-configuration-git-scm.jpg)
 
-<Frame>
-  ![The image shows a configuration screen for a pipeline setup, with options to specify branches to build and other repository settings. The branch specifier is set to "\*/main".](../../../../images/kodekloud.com/kk-media/image/upload/v1752879929/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-for-Kubernetes/pipeline-setup-configuration-main.jpg)
-</Frame>
+![The image shows a configuration screen for a pipeline setup, with options to specify branches to build and other repository settings. The branch specifier is set to "\*/main".](https://kodekloud.com/kk-media/image/upload/v1752879929/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-for-Kubernetes/pipeline-setup-configuration-main.jpg)
 
 ***
 
@@ -151,9 +139,7 @@ During one of the builds, a file permission error occurred when attempting to ch
 
 Review the Jenkins build output to verify that the permissions have been updated successfully. Once the permissions are correct, subsequent commands (such as switching contexts with `kubectl config use-context`) will execute without error.
 
-<Frame>
-  ![The image shows a Jenkins dashboard for an "EKS-Pipeline" with build history and status details, including recent build times and outcomes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879929/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-for-Kubernetes/jenkins-dashboard-eks-pipeline.jpg)
-</Frame>
+![The image shows a Jenkins dashboard for an "EKS-Pipeline" with build history and status details, including recent build times and outcomes.](https://kodekloud.com/kk-media/image/upload/v1752879929/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-for-Kubernetes/jenkins-dashboard-eks-pipeline.jpg)
 
 ***
 
@@ -190,12 +176,8 @@ When you update the app to a new version (e.g., version 2) and push the changes 
 
 By following these steps, you can implement a robust Jenkins pipeline that automates the build, testing, and deployment of a Dockerized application on Kubernetes using Amazon EKS. This streamlined pipeline also addresses common permission issues, ensuring a smooth continuous delivery workflow.
 
-<Callout icon="lightbulb">
-  Automating the deployment with Jenkins reduces manual errors and accelerates your development pipeline, helping you achieve faster delivery cycles while maintaining consistency across environments.
-</Callout>
+> **lightbulb** Automating the deployment with Jenkins reduces manual errors and accelerates your development pipeline, helping you achieve faster delivery cycles while maintaining consistency across environments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/1d8036bf-2606-4587-beef-925546e0c655/lesson/78e4d6a9-d800-4037-bb91-bc0313ef84f7" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/1d8036bf-2606-4587-beef-925546e0c655/lesson/78e4d6a9-d800-4037-bb91-bc0313ef84f7)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/1d8036bf-2606-4587-beef-925546e0c655/lesson/5f22840b-1725-481b-834d-2633965d98b0" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/1d8036bf-2606-4587-beef-925546e0c655/lesson/5f22840b-1725-481b-834d-2633965d98b0)

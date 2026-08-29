@@ -148,9 +148,7 @@ When the dev application server initiates a database connection, an ephemeral so
 tcp        0      0 172.16.238.10:44060   172.16.238.11:5432    ESTABLISHED
 ```
 
-<Callout icon="lightbulb">
-  Linux typically assigns ephemeral ports in the range of 32768 to 60999. This dynamic assignment facilitates proper handling of return traffic without manual configuration.
-</Callout>
+> **lightbulb** Linux typically assigns ephemeral ports in the range of 32768 to 60999. This dynamic assignment facilitates proper handling of return traffic without manual configuration.
 
 ***
 
@@ -163,8 +161,6 @@ For further reading on iptables and network security best practices, consider ch
 * [Understanding iptables](https://linux.die.net/man/8/iptables)
 * [Linux Firewall Documentation](https://wiki.archlinux.org/title/iptables)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/c2d0531f-8eaf-429d-a56d-2c9693f7a3bb" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/c2d0531f-8eaf-429d-a56d-2c9693f7a3bb)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/022332de-0140-41ff-a8cd-775edc19ddfa" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/022332de-0140-41ff-a8cd-775edc19ddfa)

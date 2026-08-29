@@ -53,9 +53,7 @@ spec:
   type: LoadBalancer
 ```
 
-<Callout icon="lightbulb">
-  The `LoadBalancer` service type on LKE provisions a cloud load balancer and assigns it an external IP automatically.
-</Callout>
+> **lightbulb** The `LoadBalancer` service type on LKE provisions a cloud load balancer and assigns it an external IP automatically.
 
 ***
 
@@ -129,9 +127,7 @@ NAME           TYPE           CLUSTER-IP      EXTERNAL-IP       PORT(S)        A
 nginxservice   LoadBalancer   10.128.88.229   104.200.23.238    80:31279/TCP   17s
 ```
 
-<Callout icon="triangle-alert">
-  It can take a minute or two for the `EXTERNAL-IP` to provision. If `<pending>` appears, wait a bit and run the command again.
-</Callout>
+> **triangle-alert** It can take a minute or two for the `EXTERNAL-IP` to provision. If `<pending>` appears, wait a bit and run the command again.
 
 ***
 
@@ -151,21 +147,15 @@ You should see the default Nginx welcome page, confirming your application is li
 
 You can also verify the deployment and service in the Kubernetes Dashboard.
 
-<Frame>
-  ![The image shows a Kubernetes dashboard displaying workloads, including deployments and pods, with details about an Nginx deployment. The interface lists various Kubernetes resources like Cron Jobs, Daemon Sets, and Replica Sets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881211/notes-assets/images/Linode-Kubernetes-Engine-Deploying-an-application-to-LKE-intro/kubernetes-dashboard-workloads-nginx.jpg)
-</Frame>
+![The image shows a Kubernetes dashboard displaying workloads, including deployments and pods, with details about an Nginx deployment. The interface lists various Kubernetes resources like Cron Jobs, Daemon Sets, and Replica Sets.](https://kodekloud.com/kk-media/image/upload/v1752881211/notes-assets/images/Linode-Kubernetes-Engine-Deploying-an-application-to-LKE-intro/kubernetes-dashboard-workloads-nginx.jpg)
 
 Here you’ll find the **nginx-deployment** with two Pods and a ReplicaSet.
 
-<Frame>
-  ![The image shows a Kubernetes dashboard displaying details of a service named "nginxservice," including its type as a LoadBalancer, cluster IP, and endpoints. The interface also lists various Kubernetes resources like Workloads, Services, and Config Maps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881212/notes-assets/images/Linode-Kubernetes-Engine-Deploying-an-application-to-LKE-intro/kubernetes-dashboard-nginxservice-details.jpg)
-</Frame>
+![The image shows a Kubernetes dashboard displaying details of a service named "nginxservice," including its type as a LoadBalancer, cluster IP, and endpoints. The interface also lists various Kubernetes resources like Workloads, Services, and Config Maps.](https://kodekloud.com/kk-media/image/upload/v1752881212/notes-assets/images/Linode-Kubernetes-Engine-Deploying-an-application-to-LKE-intro/kubernetes-dashboard-nginxservice-details.jpg)
 
 Inspect the **nginxservice** object to confirm it’s of type LoadBalancer with the correct cluster IP and external endpoints.
 
-<Frame>
-  ![The image shows a Kubernetes dashboard displaying services, including "nginxservice" and "kubernetes," with details like type and IP addresses. The sidebar lists various Kubernetes resources such as Workloads and Config Maps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881212/notes-assets/images/Linode-Kubernetes-Engine-Deploying-an-application-to-LKE-intro/kubernetes-dashboard-services-details.jpg)
-</Frame>
+![The image shows a Kubernetes dashboard displaying services, including "nginxservice" and "kubernetes," with details like type and IP addresses. The sidebar lists various Kubernetes resources such as Workloads and Config Maps.](https://kodekloud.com/kk-media/image/upload/v1752881212/notes-assets/images/Linode-Kubernetes-Engine-Deploying-an-application-to-LKE-intro/kubernetes-dashboard-services-details.jpg)
 
 ***
 
@@ -175,6 +165,4 @@ Inspect the **nginxservice** object to confirm it’s of type LoadBalancer with 
 * [Kubernetes Concepts: Services](https://kubernetes.io/docs/concepts/services-networking/service/)
 * [Nginx Docker Image on Docker Hub](https://hub.docker.com/_/nginx)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/9702fbe2-4321-41c5-87e8-8ea364da097d/lesson/f48c11c9-bffc-4735-bffc-f051c2f89b56" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/9702fbe2-4321-41c5-87e8-8ea364da097d/lesson/f48c11c9-bffc-4735-bffc-f051c2f89b56)

@@ -8,7 +8,7 @@ Azure Marketplace provides a structured platform to control costs and streamline
 
 Think of Azure Marketplace as a digital shopping mall offering thousands of software products, services, and solutions that integrate seamlessly with your Azure environment. The marketplace is organized into intuitive categories and features innovative solutions in AI, machine learning, analytics, and security. It includes offerings from Microsoft as well as a diverse range of community and partner-developed solutions.
 
-![The image is a diagram representing the Azure Marketplace, featuring icons for "Applications" and "Services" within an online store interface.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868331/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Marketplace/azure-marketplace-apps-services-diagram.jpg)
+![The image is a diagram representing the Azure Marketplace, featuring icons for "Applications" and "Services" within an online store interface.](https://kodekloud.com/kk-media/image/upload/v1752868331/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Marketplace/azure-marketplace-apps-services-diagram.jpg)
 
 Just like a mall provides a variety of stores, Azure Marketplace offers solutions tailored to different needs:
 
@@ -16,7 +16,7 @@ Just like a mall provides a variety of stores, Azure Marketplace offers solution
 * Options from both Microsoft and independent developers
 * Comprehensive solutions encompassing AI, machine learning, analytics, and security
 
-![The image highlights key features of Azure Marketplace, including a wide range of products, categorized solutions, and community and partner contributions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868333/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Marketplace/azure-marketplace-key-features.jpg)
+![The image highlights key features of Azure Marketplace, including a wide range of products, categorized solutions, and community and partner contributions.](https://kodekloud.com/kk-media/image/upload/v1752868333/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Marketplace/azure-marketplace-key-features.jpg)
 
 > **lightbulb** Benefits of using Azure Marketplace include:
 
@@ -26,15 +26,15 @@ Just like a mall provides a variety of stores, Azure Marketplace offers solution
 
 Azure Marketplace is an ideal platform for discovering and deploying software solutions that extend Azure’s capabilities, whether you require infrastructure management, data analytics, or enhanced cybersecurity.
 
-![The image highlights the benefits of Azure Marketplace, featuring easy integration, flexibility, and quality and compliance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868334/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Marketplace/azure-marketplace-benefits-integration.jpg)
+![The image highlights the benefits of Azure Marketplace, featuring easy integration, flexibility, and quality and compliance.](https://kodekloud.com/kk-media/image/upload/v1752868334/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Marketplace/azure-marketplace-benefits-integration.jpg)
 
 Next, explore how to access and deploy a solution from Azure Marketplace via the Azure Portal. In the portal, simply search for "Marketplace" in the search bar. This will display a variety of service categories and offerings with publisher details, including names like SendGrid, SaaS, Kali Linux, Mistral AI, and Cloudera.
 
-![The image shows the Microsoft Azure portal interface with a search bar open, displaying options like "Microsoft Entra ID" and "Marketplace." Below, there is a list of resources with their names and last viewed dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868336/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Marketplace/azure-portal-interface-search-bar.jpg)
+![The image shows the Microsoft Azure portal interface with a search bar open, displaying options like "Microsoft Entra ID" and "Marketplace." Below, there is a list of resources with their names and last viewed dates.](https://kodekloud.com/kk-media/image/upload/v1752868336/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Marketplace/azure-portal-interface-search-bar.jpg)
 
 For a WordPress deployment, you can choose from several offerings by multiple publishers. One popular option from Microsoft deploys WordPress directly on Azure App Service. Clicking on a WordPress offering will present detailed information such as an overview of the solution, screenshots, pricing plans, and the associated services to be deployed. Additionally, you can view usage statistics and user ratings.
 
-![The image shows a Microsoft Azure page for "WordPress on App Service," detailing an instance optimized for security and performance, with options for deployment and support. It includes an overview of WordPress as a content management system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868337/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Marketplace/azure-wordpress-app-service-overview.jpg)
+![The image shows a Microsoft Azure page for "WordPress on App Service," detailing an instance optimized for security and performance, with options for deployment and support. It includes an overview of WordPress as a content management system.](https://kodekloud.com/kk-media/image/upload/v1752868337/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Marketplace/azure-wordpress-app-service-overview.jpg)
 
 Deploying an application is as simple as choosing a plan, clicking "Create," and allowing Azure to automatically deploy WordPress along with all the necessary components into your Azure subscription—much like downloading an app from your mobile app store.
 

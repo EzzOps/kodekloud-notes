@@ -136,9 +136,7 @@ def create_posts(
 
 This concludes the explanation on how to verify a user's token and how to protect endpoints using JWT and FastAPI.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/802a6fee-da8c-45b8-b77e-b8ce7e2cb422" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/802a6fee-da8c-45b8-b77e-b8ce7e2cb422)
 
 
 # Vote Like Theory
@@ -166,9 +164,7 @@ Similar to how most applications separate concerns by using individual tables fo
 | Post ID     | ID of the post being liked        |
 | User ID     | ID of the user who liked the post |
 
-<Callout icon="lightbulb">
-  For systems with a more complex voting mechanism, like Reddit's upvote/downvote model, an additional column can be added to indicate the vote direction. However, in our simple like system, this extra detail is unnecessary.
-</Callout>
+> **lightbulb** For systems with a more complex voting mechanism, like Reddit's upvote/downvote model, an additional column can be added to indicate the vote direction. However, in our simple like system, this extra detail is unnecessary.
 
 The most critical aspect of designing our likes table is enforcing the uniqueness of each entry. While it is acceptable to have repeated post or user IDs individually, the combination of both (i.e., the composite pair) must be unique. For instance:
 
@@ -186,18 +182,12 @@ Consider the following scenarios:
 * User 9 can like both post 28 and post 12, resulting in two unique pairs: (28, 9) and (12, 9).
 * If there is an attempt to record a like with the combination (55, 2) when user 2 has already liked post 55, the database will reject this duplicate.
 
-<Callout icon="triangle-alert">
-  Ensure that the composite key is properly indexed to enforce the uniqueness constraint. Failure to do so might lead to duplicate records, thereby compromising the integrity of the like count.
-</Callout>
+> **triangle-alert** Ensure that the composite key is properly indexed to enforce the uniqueness constraint. Failure to do so might lead to duplicate records, thereby compromising the integrity of the like count.
 
-<Frame>
-  ![The image explains composite keys in a database, showing a table with "Post\_id" and "User\_id" columns forming a primary key to ensure uniqueness.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883343/notes-assets/images/Python-API-Development-with-FastAPI-Vote-Like-Theory/composite-keys-database-table.jpg)
-</Frame>
+![The image explains composite keys in a database, showing a table with "Post\_id" and "User\_id" columns forming a primary key to ensure uniqueness.](https://kodekloud.com/kk-media/image/upload/v1752883343/notes-assets/images/Python-API-Development-with-FastAPI-Vote-Like-Theory/composite-keys-database-table.jpg)
 
 By implementing a composite primary key, our database automatically guarantees that every record with a specific post ID and user ID pair is unique. This design effectively prevents users from liking the same post multiple times while still allowing a post to be liked by numerous users and a user to like multiple posts.
 
 This concludes our discussion on the basic like system and the application of composite keys to maintain the uniqueness of likes in our application.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/3730c12c-6116-4109-81de-df951fe95a0d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/3730c12c-6116-4109-81de-df951fe95a0d)

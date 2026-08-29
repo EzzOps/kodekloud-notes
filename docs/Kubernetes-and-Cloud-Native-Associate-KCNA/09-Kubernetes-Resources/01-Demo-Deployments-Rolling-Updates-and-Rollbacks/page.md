@@ -31,9 +31,7 @@ spec:
           image: nginx
 ```
 
-<Callout icon="lightbulb">
-  Before creating the deployment, verify that no similar objects exist in your cluster.
-</Callout>
+> **lightbulb** Before creating the deployment, verify that no similar objects exist in your cluster.
 
 ## Creating the Deployment
 
@@ -202,9 +200,7 @@ kubectl rollout history deployment.apps/myapp-deployment
 
 You should now see a new entry corresponding to the `kubectl edit` action.
 
-<Frame>
-  ![The image shows a terminal displaying Kubernetes deployment details, including namespace, replicas, strategy type, and container image version (nginx:1.18).](../../../../images/kodekloud.com/kk-media/image/upload/v1752880668/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Demo-Deployments-Rolling-Updates-and-Rollbacks/frame_430.jpg)
-</Frame>
+![The image shows a terminal displaying Kubernetes deployment details, including namespace, replicas, strategy type, and container image version (nginx:1.18).](https://kodekloud.com/kk-media/image/upload/v1752880668/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Demo-Deployments-Rolling-Updates-and-Rollbacks/frame_430.jpg)
 
 ## Using kubectl set image for a Different Update Method
 
@@ -361,6 +357,4 @@ This approach ensures that your updates are applied smoothly and, if issues aris
 
 For further reading, consider exploring the [Kubernetes Documentation](https://kubernetes.io/docs/) and additional [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/d9aca439-a22f-4436-a879-a3fd10dc9070" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/d9aca439-a22f-4436-a879-a3fd10dc9070)

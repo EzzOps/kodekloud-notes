@@ -21,11 +21,11 @@ We’ve created:
 * A managed Node Group named **main** (desired capacity: 2)
 * Two Fargate profiles: **default** and **fargate** (selects `namespace: fargate`)
 
-![The image shows an AWS Elastic Kubernetes Service (EKS) console with details about node groups and Fargate profiles. It indicates no nodes are present, but there is one active node group and two active Fargate profiles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862747/notes-assets/images/AWS-EKS-Compute-Demo/aws-eks-console-node-groups-fargate.jpg)
+![The image shows an AWS Elastic Kubernetes Service (EKS) console with details about node groups and Fargate profiles. It indicates no nodes are present, but there is one active node group and two active Fargate profiles.](https://kodekloud.com/kk-media/image/upload/v1752862747/notes-assets/images/AWS-EKS-Compute-Demo/aws-eks-console-node-groups-fargate.jpg)
 
 When you schedule a Pod in the **fargate** namespace, the Fargate mutating webhook injects a custom scheduler that routes Pods to serverless Fargate compute.
 
-![The image shows an AWS console page for configuring a Fargate profile in an Elastic Kubernetes Service (EKS) cluster, with the status marked as active and a section for pod selectors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862748/notes-assets/images/AWS-EKS-Compute-Demo/aws-eks-fargate-profile-configuration.jpg)
+![The image shows an AWS console page for configuring a Fargate profile in an Elastic Kubernetes Service (EKS) cluster, with the status marked as active and a section for pod selectors.](https://kodekloud.com/kk-media/image/upload/v1752862748/notes-assets/images/AWS-EKS-Compute-Demo/aws-eks-fargate-profile-configuration.jpg)
 
 ***
 

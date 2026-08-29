@@ -15,11 +15,11 @@ Pre-signed URLs are a powerful feature of Amazon S3 that allow you to grant time
 
 Start by creating a new S3 bucket using default settings:
 
-![The image shows the AWS S3 console interface for creating a new bucket, with fields for bucket name, region selection, and object ownership settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869176/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Presigned-URLs/aws-s3-console-create-bucket-interface.jpg)
+![The image shows the AWS S3 console interface for creating a new bucket, with fields for bucket name, region selection, and object ownership settings.](https://kodekloud.com/kk-media/image/upload/v1752869176/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Presigned-URLs/aws-s3-console-create-bucket-interface.jpg)
 
 Ensure all options remain at their defaults and **block public access** for enhanced security:
 
-![The image shows an AWS S3 console screen with settings for blocking public access to a bucket, including options for access control lists and policies. There is also a section for bucket versioning settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869178/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Presigned-URLs/aws-s3-console-block-public-access.jpg)
+![The image shows an AWS S3 console screen with settings for blocking public access to a bucket, including options for access control lists and policies. There is also a section for bucket versioning settings.](https://kodekloud.com/kk-media/image/upload/v1752869178/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Presigned-URLs/aws-s3-console-block-public-access.jpg)
 
 > **lightbulb** By blocking public access and relying on IAM, you safeguard your data against unintended exposure.
 
@@ -29,15 +29,15 @@ At this point, only your AWS account (root user or explicitly granted IAM identi
 
 Next, upload a test file (e.g., `boat.jpg`) to your bucket:
 
-![The image shows an Amazon S3 management console with a list of two buckets, their regions, access status, and creation dates. The console also displays options for managing buckets and accessing various AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869179/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Presigned-URLs/amazon-s3-management-console-buckets.jpg)
+![The image shows an Amazon S3 management console with a list of two buckets, their regions, access status, and creation dates. The console also displays options for managing buckets and accessing various AWS services.](https://kodekloud.com/kk-media/image/upload/v1752869179/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Presigned-URLs/amazon-s3-management-console-buckets.jpg)
 
 After initiating the upload, watch for the completion notification:
 
-![The image shows an AWS S3 Management Console screen indicating a successful upload of a file named "boat.jpg" with a size of 3.6 MB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869180/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Presigned-URLs/aws-s3-console-successful-upload-boatjpg.jpg)
+![The image shows an AWS S3 Management Console screen indicating a successful upload of a file named "boat.jpg" with a size of 3.6 MB.](https://kodekloud.com/kk-media/image/upload/v1752869180/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Presigned-URLs/aws-s3-console-successful-upload-boatjpg.jpg)
 
 You can view the object details as an authenticated user:
 
-![The image shows an Amazon S3 console interface displaying details of an object named "boat.jpg" in a bucket. It includes information such as the object's size, type, last modified date, and URLs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869181/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Presigned-URLs/amazon-s3-console-boatjpg-details.jpg)
+![The image shows an Amazon S3 console interface displaying details of an object named "boat.jpg" in a bucket. It includes information such as the object's size, type, last modified date, and URLs.](https://kodekloud.com/kk-media/image/upload/v1752869181/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Presigned-URLs/amazon-s3-console-boatjpg-details.jpg)
 
 If you open the S3 URL in a private browser session, you’ll see an **Access Denied** error since the object is private.
 
@@ -47,11 +47,11 @@ To share your object temporarily without altering bucket policies, generate a pr
 
 1. Open the object’s detail page and click **Share with a pre-signed URL**:
 
-![The image shows an Amazon S3 permissions overview page, indicating that the bucket and objects are not public, with block public access settings enabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869183/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Presigned-URLs/amazon-s3-permissions-overview-block-access.jpg)
+![The image shows an Amazon S3 permissions overview page, indicating that the bucket and objects are not public, with block public access settings enabled.](https://kodekloud.com/kk-media/image/upload/v1752869183/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Presigned-URLs/amazon-s3-permissions-overview-block-access.jpg)
 
 2. In the sharing dialog, set an expiration (e.g., 30 minutes) and click **Create pre-signed URL**:
 
-![The image shows an Amazon S3 console screen with a pop-up for sharing "boat.jpg" using a presigned URL, allowing temporary access to the object. The pop-up includes options to set the expiration time for the URL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869186/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Presigned-URLs/amazon-s3-presigned-url-sharing-popup.jpg)
+![The image shows an Amazon S3 console screen with a pop-up for sharing "boat.jpg" using a presigned URL, allowing temporary access to the object. The pop-up includes options to set the expiration time for the URL.](https://kodekloud.com/kk-media/image/upload/v1752869186/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Presigned-URLs/amazon-s3-presigned-url-sharing-popup.jpg)
 
 3. The generated URL is automatically copied to your clipboard. Any user with this link can retrieve `boat.jpg` until it expires.
 
@@ -61,7 +61,7 @@ While the Console is great for one-off sharing, production workflows typically u
 
 Let’s illustrate how IAM policies affect pre-signed URLs. We have a user named **user2** who only has permissions to list buckets:
 
-![The image shows the AWS Identity and Access Management (IAM) console, displaying a list of users with details such as last activity and MFA status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869188/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Presigned-URLs/aws-iam-console-users-list-details.jpg)
+![The image shows the AWS Identity and Access Management (IAM) console, displaying a list of users with details such as last activity and MFA status.](https://kodekloud.com/kk-media/image/upload/v1752869188/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Presigned-URLs/aws-iam-console-users-list-details.jpg)
 
 Below is the policy attached to **user2**:
 

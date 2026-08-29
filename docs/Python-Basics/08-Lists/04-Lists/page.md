@@ -58,12 +58,8 @@ Accessing an index that does not exist, such as trying to retrieve a fourth elem
 print(countries[4])
 ```
 
-<Callout icon="triangle-alert">
-  Attempting to access an out-of-range index will raise an `IndexError: list index out of range`. Always validate the existence of an element before accessing its index.
-</Callout>
+> **triangle-alert** Attempting to access an out-of-range index will raise an `IndexError: list index out of range`. Always validate the existence of an element before accessing its index.
 
 This concludes our explanation of Python lists. With these fundamentals, you're ready to gain some hands-on practice and explore more advanced list operations.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/a115db9d-996c-4cfc-be27-9cfd7e6d77f5/lesson/3db6a9ed-88c8-47c4-a67d-c9a45908e113" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/a115db9d-996c-4cfc-be27-9cfd7e6d77f5/lesson/3db6a9ed-88c8-47c4-a67d-c9a45908e113)

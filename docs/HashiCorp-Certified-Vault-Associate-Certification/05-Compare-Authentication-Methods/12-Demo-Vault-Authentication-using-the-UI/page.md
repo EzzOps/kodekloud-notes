@@ -26,9 +26,7 @@ http://<your-vault-address>:8200
 
 You will see the login screen where only the enabled methods appear in the dropdown.
 
-<Callout icon="lightbulb">
-  Only methods enabled on your Vault server will show up in the dropdown. Contact your administrator if you need a new auth method enabled.
-</Callout>
+> **lightbulb** Only methods enabled on your Vault server will show up in the dropdown. Contact your administrator if you need a new auth method enabled.
 
 ## Step 2: Select and Authenticate
 
@@ -36,9 +34,7 @@ You will see the login screen where only the enabled methods appear in the dropd
 2. Enter your **Username** and **Password**.
 3. Click **Sign In**.
 
-<Frame>
-  ![The image shows a login page for "Vault" with fields for method, username, and password, and a "Sign In" button. The method selected is "Okta," and there are options for more settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878024/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Vault-Authentication-using-the-UI/vault-login-page-okta-sign-in.jpg)
-</Frame>
+![The image shows a login page for "Vault" with fields for method, username, and password, and a "Sign In" button. The method selected is "Okta," and there are options for more settings.](https://kodekloud.com/kk-media/image/upload/v1752878024/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Vault-Authentication-using-the-UI/vault-login-page-okta-sign-in.jpg)
 
 After successful authentication, Vault redirects you to its home screen.
 
@@ -52,9 +48,7 @@ On the UI home screen, you can:
 
 Click the user menu in the top-right corner to copy the client token issued during login.
 
-<Frame>
-  ![The image shows a web interface for HashiCorp Vault, displaying a list of secret engines, including "cubbyhole" and "secret." The interface includes options for managing tokens and adding new engines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878024/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Vault-Authentication-using-the-UI/hashicorp-vault-web-interface-secret-engines.jpg)
-</Frame>
+![The image shows a web interface for HashiCorp Vault, displaying a list of secret engines, including "cubbyhole" and "secret." The interface includes options for managing tokens and adding new engines.](https://kodekloud.com/kk-media/image/upload/v1752878024/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Vault-Authentication-using-the-UI/hashicorp-vault-web-interface-secret-engines.jpg)
 
 ## Step 4: Use Your Token in the CLI
 

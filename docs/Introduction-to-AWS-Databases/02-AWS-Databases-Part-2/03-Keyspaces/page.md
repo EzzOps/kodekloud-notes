@@ -64,13 +64,9 @@ Keyspaces supports two throughput capacity modes. Choose the mode that matches y
 | On-demand capacity   | You pay per read/write request. Keyspaces instantly scales to adapt to unpredictable or spiky traffic. | Applications with irregular, bursty, or unpredictable traffic.             |
 | Provisioned capacity | You specify read/write capacity units; enable auto scaling to adjust capacity as load changes.         | Stable, predictable workloads where cost can be optimized by provisioning. |
 
-<Callout icon="lightbulb">
-  Choose on‑demand for unpredictable or bursty workloads and provisioned capacity (with auto scaling) for predictable workloads where cost optimization matters.
-</Callout>
+> **lightbulb** Choose on‑demand for unpredictable or bursty workloads and provisioned capacity (with auto scaling) for predictable workloads where cost optimization matters.
 
-<Callout icon="warning">
-  You can switch a table’s capacity mode (on‑demand ↔ provisioned) at most once per day. Plan capacity changes accordingly.
-</Callout>
+> **warning** You can switch a table’s capacity mode (on‑demand ↔ provisioned) at most once per day. Plan capacity changes accordingly.
 
 Multi-region Keyspaces
 
@@ -129,6 +125,4 @@ Further reading and references
 * Cassandra Query Language (CQL) — [https://cassandra.apache.org/doc/latest/cql/](https://cassandra.apache.org/doc/latest/cql/)
 * Cassandra drivers — [https://cassandra.apache.org/doc/latest/drivers/](https://cassandra.apache.org/doc/latest/drivers/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/6b775562-0b27-41e9-93fc-bb16dab05d87/lesson/fbfdea6c-92f2-4add-90d3-42d70ad5dc3a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/6b775562-0b27-41e9-93fc-bb16dab05d87/lesson/fbfdea6c-92f2-4add-90d3-42d70ad5dc3a)

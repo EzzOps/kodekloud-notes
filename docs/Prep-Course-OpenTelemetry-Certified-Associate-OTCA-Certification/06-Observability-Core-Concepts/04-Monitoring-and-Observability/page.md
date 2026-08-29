@@ -66,9 +66,7 @@ Example: if database latency spikes:
   <img alt="The image compares monitoring and observability by highlighting differences in focus, examples, insight levels, and approaches. Monitoring tracks what is happening, while observability explains why it is happening." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Monitoring and observability are complementary: monitoring gives rapid detection via metrics and alerts, while observability provides the richer telemetry and context needed to investigate and diagnose unknown or complex failures.
-</Callout>
+> **lightbulb** Monitoring and observability are complementary: monitoring gives rapid detection via metrics and alerts, while observability provides the richer telemetry and context needed to investigate and diagnose unknown or complex failures.
 
 ***
 
@@ -102,6 +100,4 @@ Example: if database latency spikes:
 
 That's it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/79b34fea-6f94-4854-a31e-9ac0fbc10eca/lesson/bde139d7-bd99-4517-8e29-472c9495dca2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/79b34fea-6f94-4854-a31e-9ac0fbc10eca/lesson/bde139d7-bd99-4517-8e29-472c9495dca2)

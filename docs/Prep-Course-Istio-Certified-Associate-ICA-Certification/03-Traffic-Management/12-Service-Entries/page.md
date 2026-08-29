@@ -11,9 +11,7 @@ Outbound traffic policy modes
 * ALLOW\_ANY (default): Envoy will pass through requests to external services that are not in Istio’s internal service registry.
 * REGISTRY\_ONLY: Envoy will only allow outbound traffic to services registered in Istio’s internal service registry (typically via a ServiceEntry). Any attempt to reach unknown external services will be dropped.
 
-<Callout icon="lightbulb">
-  By default Istio runs in permissive mode (`ALLOW_ANY`), so workloads can reach external services without a `ServiceEntry`. However, Istio will not apply traffic management, observability, or security features to those external flows unless the external services are added to the registry.
-</Callout>
+> **lightbulb** By default Istio runs in permissive mode (`ALLOW_ANY`), so workloads can reach external services without a `ServiceEntry`. However, Istio will not apply traffic management, observability, or security features to those external flows unless the external services are added to the registry.
 
 Why ServiceEntry?
 A ServiceEntry adds an external service (for example, an external PostgreSQL database) to Istio’s internal service registry. This enables Envoy to route to that service and allows Istio to enforce traffic policies, telemetry collection, and mTLS for egress traffic.
@@ -85,9 +83,7 @@ Scoping and visibility
 * `ServiceEntry` is a namespaced resource. By default, a `ServiceEntry` created in namespace `frontend` is visible only to sidecars and workloads in `frontend`.
 * To make a `ServiceEntry` available to other namespaces, use the `exportTo` field (or create the resource in a namespace that is visible to others).
 
-<Callout icon="warning">
-  If your mesh is configured with `REGISTRY_ONLY`, you must ensure any external dependency is registered in the namespace(s) that require access (or exported). Failing to do so will result in blocked egress traffic.
-</Callout>
+> **warning** If your mesh is configured with `REGISTRY_ONLY`, you must ensure any external dependency is registered in the namespace(s) that require access (or exported). Failing to do so will result in blocked egress traffic.
 
 Common reasons to declare external services with ServiceEntry
 
@@ -125,6 +121,4 @@ Summary
 * `ServiceEntry` resources are namespaced — use `exportTo` when cross-namespace visibility is required.
 * Practice creating `ServiceEntry` objects and toggling `outboundTrafficPolicy` to observe differences in connectivity and telemetry.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/12622866-bfdc-4071-8286-720c135f1124" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/12622866-bfdc-4071-8286-720c135f1124)

@@ -15,15 +15,15 @@ When reviewing the instance configuration, you will see details such as:
 * An 8 GiB root volume.
 * An additional instance store volume (e.g., 75 GiB) attached with a device name like `/dev/nvme0n1`.
 
-![The image shows an AWS EC2 instance launch configuration screen, where a user is selecting a key pair for secure access and reviewing instance details like type, security group, and storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859668/notes-assets/images/AWS-Certified-Developer-Associate-Instance-Store-Demo/aws-ec2-instance-launch-configuration.jpg)
+![The image shows an AWS EC2 instance launch configuration screen, where a user is selecting a key pair for secure access and reviewing instance details like type, security group, and storage.](https://kodekloud.com/kk-media/image/upload/v1752859668/notes-assets/images/AWS-Certified-Developer-Associate-Instance-Store-Demo/aws-ec2-instance-launch-configuration.jpg)
 
 Proceed with the launch. In the storage configuration details, both the root volume and the instance store volume will be clearly indicated.
 
-![The image shows an AWS EC2 instance configuration screen, detailing storage options and a summary of the instance settings, including software image, server type, and storage volumes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859669/notes-assets/images/AWS-Certified-Developer-Associate-Instance-Store-Demo/aws-ec2-instance-configuration-screen.jpg)
+![The image shows an AWS EC2 instance configuration screen, detailing storage options and a summary of the instance settings, including software image, server type, and storage volumes.](https://kodekloud.com/kk-media/image/upload/v1752859669/notes-assets/images/AWS-Certified-Developer-Associate-Instance-Store-Demo/aws-ec2-instance-configuration-screen.jpg)
 
 Ensure that the auto-assign public IP option is enabled to allow future connectivity. After launching, navigate to the Instances tab.
 
-![The image shows an AWS EC2 dashboard indicating a successful instance launch, with options for next steps like connecting to the instance, creating billing alerts, and managing monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859671/notes-assets/images/AWS-Certified-Developer-Associate-Instance-Store-Demo/aws-ec2-dashboard-instance-launch.jpg)
+![The image shows an AWS EC2 dashboard indicating a successful instance launch, with options for next steps like connecting to the instance, creating billing alerts, and managing monitoring.](https://kodekloud.com/kk-media/image/upload/v1752859671/notes-assets/images/AWS-Certified-Developer-Associate-Instance-Store-Demo/aws-ec2-dashboard-instance-launch.jpg)
 
 ## Setting Up the Instance Store Volume
 
@@ -116,18 +116,18 @@ To demonstrate that a simple reboot does not affect the instance store:
 3. SSH back into the instance.
 4. Use `lsblk` and `df -k` to verify that the instance store volume is still present and mounted.
 
-![The image shows an AWS EC2 management console with two running instances, displaying details such as instance IDs, types, and status checks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859672/notes-assets/images/AWS-Certified-Developer-Associate-Instance-Store-Demo/aws-ec2-management-console-instances.jpg)
+![The image shows an AWS EC2 management console with two running instances, displaying details such as instance IDs, types, and status checks.](https://kodekloud.com/kk-media/image/upload/v1752859672/notes-assets/images/AWS-Certified-Developer-Associate-Instance-Store-Demo/aws-ec2-management-console-instances.jpg)
 
 In contrast, stopping and then starting the instance moves it to a different physical host. In this demonstration, after performing a stop/start, notice that:
 
 * The public IP has changed.
 * The instance store volume is freshly attached with no pre-existing data.
 
-![The image shows an AWS EC2 management console with a pop-up window asking for confirmation to stop an instance. The user is prompted to click "Stop" to proceed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859673/notes-assets/images/AWS-Certified-Developer-Associate-Instance-Store-Demo/aws-ec2-stop-instance-confirmation.jpg)
+![The image shows an AWS EC2 management console with a pop-up window asking for confirmation to stop an instance. The user is prompted to click "Stop" to proceed.](https://kodekloud.com/kk-media/image/upload/v1752859673/notes-assets/images/AWS-Certified-Developer-Associate-Instance-Store-Demo/aws-ec2-stop-instance-confirmation.jpg)
 
 Upon restarting the instance, confirm the new details in the management console:
 
-![The image shows an AWS EC2 management console with details of two running instances, including their instance IDs, types, and status checks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859675/notes-assets/images/AWS-Certified-Developer-Associate-Instance-Store-Demo/aws-ec2-management-console-instances-2.jpg)
+![The image shows an AWS EC2 management console with details of two running instances, including their instance IDs, types, and status checks.](https://kodekloud.com/kk-media/image/upload/v1752859675/notes-assets/images/AWS-Certified-Developer-Associate-Instance-Store-Demo/aws-ec2-management-console-instances-2.jpg)
 
 SSH into the instance using the new IP address and check the block devices:
 

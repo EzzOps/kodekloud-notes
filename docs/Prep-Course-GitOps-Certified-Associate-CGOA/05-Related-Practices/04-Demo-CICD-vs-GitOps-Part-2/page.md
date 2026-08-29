@@ -22,9 +22,7 @@ Pipeline filename mismatch issue
 * The pipeline previously failed because some stages referenced `deployment.yaml` while the repository file is named `deployment.yml`. That made the `sed` / `cat` commands error out.
 * Always verify file names and paths in the workspace before running commands that assume a file exists.
 
-<Callout icon="lightbulb">
-  Always validate filenames and paths in the pipeline workspace (for example `deployment.yml` vs `deployment.yaml`) before using `sed` or `cat` to avoid stage failures.
-</Callout>
+> **lightbulb** Always validate filenames and paths in the pipeline workspace (for example `deployment.yml` vs `deployment.yaml`) before using `sed` or `cat` to avoid stage failures.
 
 Repository layout reminder — in this demo the Kubernetes manifests live under `cgoa-demos/jenkins-demo` and the manifest file is `deployment.yml` (note the single-letter extension):
 
@@ -161,9 +159,7 @@ Credentials and secure tokens
 * Ensure Jenkins has Docker Hub credentials configured in "Manage Jenkins" → "Credentials" and referenced by the pipeline (this example uses `docker-hub-credentials`).
 * Also store the Gitea token as a Jenkins credential (here referenced as `gitea-token`) so scripts can push and create PRs securely.
 
-<Callout icon="warning">
-  Store registry credentials and Git/Gitea tokens in Jenkins credentials (not inline in the pipeline). Avoid exposing tokens in console output and remote URLs without proper masking.
-</Callout>
+> **warning** Store registry credentials and Git/Gitea tokens in Jenkins credentials (not inline in the pipeline). Avoid exposing tokens in console output and remote URLs without proper masking.
 
 <Frame>
   <img alt="The image shows a Jenkins dashboard displaying a list of stored credentials, including IDs, domains, and names for various systems such as MongoDB, DockerHub, AWS, and Gitea." />
@@ -271,8 +267,6 @@ Further reading and references
 
 That's all for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/673786b2-bedb-4405-a2c9-835aea1a9dd4/lesson/ef58a657-d865-464c-82ee-689becaa27de" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/673786b2-bedb-4405-a2c9-835aea1a9dd4/lesson/ef58a657-d865-464c-82ee-689becaa27de)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/673786b2-bedb-4405-a2c9-835aea1a9dd4/lesson/9ad91c9e-c683-458c-8ffb-8e56470fddc9" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/673786b2-bedb-4405-a2c9-835aea1a9dd4/lesson/9ad91c9e-c683-458c-8ffb-8e56470fddc9)

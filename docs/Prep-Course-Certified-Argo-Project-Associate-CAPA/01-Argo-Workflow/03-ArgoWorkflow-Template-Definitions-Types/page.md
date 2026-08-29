@@ -4,9 +4,7 @@ argo submit -n argo workflow.yml
 
 The Argo UI is available if your Argo server is exposed; it provides a visual representation of templates, DAGs, and steps.
 
-<Callout icon="warning">
-  The `entrypoint` must match one of the template names defined under `templates`. If it does not, the workflow will fail to start.
-</Callout>
+> **warning** The `entrypoint` must match one of the template names defined under `templates`. If it does not, the workflow will fail to start.
 
 ## Practical tips and best practices
 
@@ -38,9 +36,7 @@ Notes:
 * The `container` section within a template maps directly to a Kubernetes container spec and supports `env`, `volumeMounts`, and `resources`.
 * Always ensure the `entrypoint` value matches a defined template name under `templates`.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/efefd18f-5e64-43db-8805-c1f80550fa30" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/efefd18f-5e64-43db-8805-c1f80550fa30)
 
 
 # ArgoWorkflow Template Definitions Types
@@ -67,9 +63,7 @@ Script template (definition)
 
 * The script template is a convenience wrapper around a container. It provides the same container fields (image, command) and adds a source field where you can embed a script directly. Argo writes the source into a file inside the container and executes it using the provided command.
 
-<Callout icon="lightbulb">
-  When using a script template, make sure the command you provide runs the interpreter (for example, `python`) and that the image includes that interpreter. The script content is placed into a file and executed inside the container.
-</Callout>
+> **lightbulb** When using a script template, make sure the command you provide runs the interpreter (for example, `python`) and that the image includes that interpreter. The script content is placed into a file and executed inside the container.
 
 Example script template:
 
@@ -224,6 +218,4 @@ Template invokers
 
 With these template types you can express a wide variety of orchestration patterns — from simple container tasks to complex multi-resource automation and integrations with other systems.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/d43f266a-9efa-44ed-8ab2-da20a2986461" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/d43f266a-9efa-44ed-8ab2-da20a2986461)

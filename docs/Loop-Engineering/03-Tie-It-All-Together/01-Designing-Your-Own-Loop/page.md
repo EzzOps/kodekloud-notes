@@ -13,9 +13,7 @@ Make the goal small, specific, and finishable — not a long wishlist. Then defi
 * Goal: one focused outcome the loop should produce.
 * Scorekeeper: an objective test that returns a clear pass or fail.
 
-<Callout icon="lightbulb">
-  Write the scorekeeper first. Without a robust, hard-to-game scorekeeper, a loop cannot safely run autonomously.
-</Callout>
+> **lightbulb** Write the scorekeeper first. Without a robust, hard-to-game scorekeeper, a loop cannot safely run autonomously.
 
 ## Step two — Start the loop and get one small win saved
 
@@ -81,9 +79,7 @@ Decide up front when the loop should pause and ask a human: blockers it cannot c
   <img alt="The image is an infographic titled &#x22;A Few More Traps,&#x22; listing three traps: Thrashing, Unsafe Autonomy, and Comprehension Debt, each with descriptions and suggested fixes." />
 </Frame>
 
-<Callout icon="warning">
-  Be cautious with autonomy. Never give the loop unchecked access to destructive actions. Gate risky operations behind explicit human approval and limit the loop’s editing scope.
-</Callout>
+> **warning** Be cautious with autonomy. Never give the loop unchecked access to destructive actions. Gate risky operations behind explicit human approval and limit the loop’s editing scope.
 
 ## A habit that ties it all together
 
@@ -118,6 +114,4 @@ Checklist:
 
 Keep loops small, testable, and auditable — and add complexity only in response to real, observed needs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/loop-engineering/module/e7187c25-1255-491d-84dd-87fedf03d4c1/lesson/17471a84-3ede-4903-803e-f316a55c80c3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/loop-engineering/module/e7187c25-1255-491d-84dd-87fedf03d4c1/lesson/17471a84-3ede-4903-803e-f316a55c80c3)

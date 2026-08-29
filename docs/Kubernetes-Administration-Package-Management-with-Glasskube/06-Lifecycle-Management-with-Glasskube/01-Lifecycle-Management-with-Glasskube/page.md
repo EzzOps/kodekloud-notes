@@ -168,9 +168,7 @@ kubetail uninstalled successfully.
 Purge Glasskube (complete cleanup)
 To completely remove Glasskube components, CRDs, controllers, and all installed packages, use `glasskube purge`. This performs a full cleanup of Glasskube-managed resources and should be used with caution.
 
-<Callout icon="warning">
-  Using `glasskube purge` removes Glasskube components, CRDs, controllers, and all installed packages from the target cluster. Only run this when you intend to perform a full cleanup.
-</Callout>
+> **warning** Using `glasskube purge` removes Glasskube components, CRDs, controllers, and all installed packages from the target cluster. Only run this when you intend to perform a full cleanup.
 
 Example `glasskube purge` confirmation:
 
@@ -204,6 +202,4 @@ References and further reading
 * Glasskube packages repository: [https://github.com/glasskube/packages](https://github.com/glasskube/packages)
 * Kubernetes Concepts: [https://kubernetes.io/docs/concepts/](https://kubernetes.io/docs/concepts/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/e651aa8d-8cb5-4d5c-ab54-c5e732ff9c21/lesson/69aa6f0f-bb6b-4a93-b694-36693b4d20e3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/e651aa8d-8cb5-4d5c-ab54-c5e732ff9c21/lesson/69aa6f0f-bb6b-4a93-b694-36693b4d20e3)

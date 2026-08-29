@@ -6,15 +6,11 @@ Learn to manage network services on Linux by starting, stopping, and checking th
 
 In this article, you will learn to manage network services on Linux by starting, stopping, and checking their status. Most servers run multiple services handling network connections. A common example is the SSH daemon (sshd), which continuously runs in the background and listens for remote login connections.
 
-<Frame>
-  ![The image shows a diagram with a user icon connected to a server running three services: sshd, httpd, and chronyd. The background is dark, and the services are highlighted in blue.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883586/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Start-stop-and-check-the-status-of-network-services/user-icon-server-services-diagram.jpg)
-</Frame>
+![The image shows a diagram with a user icon connected to a server running three services: sshd, httpd, and chronyd. The background is dark, and the services are highlighted in blue.](https://kodekloud.com/kk-media/image/upload/v1752883586/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Start-stop-and-check-the-status-of-network-services/user-icon-server-services-diagram.jpg)
 
 Begin by inspecting the active programs and their waiting connections. Two useful utilities for this purpose are ss and netstat. While ss is the modern choice, netstat has been widely used historically and might be phased out on some distributions.
 
-<Frame>
-  ![The image shows a dark-themed interface with two utility icons labeled "ss" and "netstat," each featuring a gear symbol. The title "Utilities" is displayed at the top.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883588/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Start-stop-and-check-the-status-of-network-services/dark-utilities-interface-ss-netstat.jpg)
-</Frame>
+![The image shows a dark-themed interface with two utility icons labeled "ss" and "netstat," each featuring a gear symbol. The title "Utilities" is displayed at the top.](https://kodekloud.com/kk-media/image/upload/v1752883588/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Start-stop-and-check-the-status-of-network-services/dark-utilities-interface-ss-netstat.jpg)
 
 ## Using ss to Display Listening Services
 
@@ -26,9 +22,7 @@ The ss command is effective for viewing programs that are ready to accept incomi
 * **-n:** Show numeric values instead of resolving service names.
 * **-p:** Display the process using each socket.
 
-<Callout icon="lightbulb">
-  Using the -p flag requires root privileges to reveal processes that are owned by root. Prepend your command with sudo.
-</Callout>
+> **lightbulb** Using the -p flag requires root privileges to reveal processes that are owned by root. Prepend your command with sudo.
 
 A helpful mnemonic for these options is "l-t-u-n-p" (listening, TCP, UDP, numeric, process) or simply remember "tunnel P." Execute the command below to see what is listening on your network ports:
 
@@ -98,9 +92,7 @@ udp6  0      0     :::323                :::*                                366
 udp6  0      0     fe80::a00:27ff:fe6b:546 :::*                                1024/NetworkManager
 ```
 
-<Callout icon="lightbulb">
-  Netstat's formatted output can be more appealing and easier to read for some users. Ensure it is installed on your system before use.
-</Callout>
+> **lightbulb** Netstat's formatted output can be more appealing and easier to read for some users. Ensure it is installed on your system before use.
 
 ## Conclusion
 
@@ -113,8 +105,6 @@ For additional information on Linux service management, check out the following 
 
 Happy administrating!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5f16da06-6c71-4058-bfc5-6f4dd8754e9f/lesson/f9573a22-df51-4cc0-a815-02d6e8328b42" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5f16da06-6c71-4058-bfc5-6f4dd8754e9f/lesson/f9573a22-df51-4cc0-a815-02d6e8328b42)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5f16da06-6c71-4058-bfc5-6f4dd8754e9f/lesson/7e2e97ab-424b-4669-8244-6dac1325a4d1" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5f16da06-6c71-4058-bfc5-6f4dd8754e9f/lesson/7e2e97ab-424b-4669-8244-6dac1325a4d1)

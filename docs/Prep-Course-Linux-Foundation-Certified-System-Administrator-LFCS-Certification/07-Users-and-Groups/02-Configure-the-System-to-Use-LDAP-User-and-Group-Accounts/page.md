@@ -24,9 +24,7 @@ The domain field defines the scope of the limit:
 
 In this example, an asterisk (`*`) entry is used to impose a default CPU time limit of 5 minutes for every user unless overridden by a specific user configuration.
 
-<Callout icon="lightbulb">
-  User-specific limits take precedence over global (`*`) entries. For instance, if `trinity` has a defined limit, it will override the global settings.
-</Callout>
+> **lightbulb** User-specific limits take precedence over global (`*`) entries. For instance, if `trinity` has a defined limit, it will override the global settings.
 
 ## Detailed Examples of Configuration
 
@@ -216,9 +214,7 @@ For example, the `-u` flag shows the maximum number of processes a user can run.
 $ ulimit -u 5000
 ```
 
-<Callout icon="lightbulb">
-  By default, a user can only decrease their limits. If both hard and soft limits exist, the soft limit can be increased up to the hard limit only once per session.
-</Callout>
+> **lightbulb** By default, a user can only decrease their limits. If both hard and soft limits exist, the soft limit can be increased up to the hard limit only once per session.
 
 After adjusting the limit, verify the changes with another `ulimit -a`. Remember, any future commands can only lower the limit further unless restarted.
 
@@ -228,9 +224,7 @@ In this lesson, you have learned how to configure and enforce user resource limi
 
 For more information, refer to the [Linux man pages](https://linux.die.net/man/5/limits.conf) and additional resources on system administration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/d1ff1109-94fb-4ee8-9c41-6aaa85250142" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/d1ff1109-94fb-4ee8-9c41-6aaa85250142)
 
 
 # Configure the System to Use LDAP User and Group Accounts
@@ -388,9 +382,7 @@ jeremy@kodekloud:~$ sudo apt update && sudo apt install libnss-ldapd
 
 A configuration wizard will appear to assist you in setting up libnss-ldapd.
 
-<Callout icon="lightbulb">
-  When prompted for the NSLCD URL, replace the default "ldap\://127.0.0.1/" with the actual IP address of your LDAP server (e.g., "ldap\://10.0.142.218/") and ensure you include the trailing slash.
-</Callout>
+> **lightbulb** When prompted for the NSLCD URL, replace the default "ldap\://127.0.0.1/" with the actual IP address of your LDAP server (e.g., "ldap\://10.0.142.218/") and ensure you include the trailing slash.
 
 Next, provide the distinguished name (DN) for the LDAP search base. Although an example like "dc=hsd1,dc=or,dc=comcast,dc=net" might be shown, our pre-configured server uses the domain "kodekloud.com." Therefore, enter:
 
@@ -402,9 +394,7 @@ When choosing the services to use LDAP lookups, ensure that you select passwd (u
 
 Below is the relevant image of the LDAP configuration interface (do not modify the image link or description):
 
-<Frame>
-  ![The image shows a configuration screen for "libnss-ldapd," where users can select services for LDAP lookups, such as passwd, group, and shadow.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881371/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Configure-the-System-to-Use-LDAP-User-and-Group-Accounts/libnss-ldapd-configuration-screen.jpg)
-</Frame>
+![The image shows a configuration screen for "libnss-ldapd," where users can select services for LDAP lookups, such as passwd, group, and shadow.](https://kodekloud.com/kk-media/image/upload/v1752881371/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Configure-the-System-to-Use-LDAP-User-and-Group-Accounts/libnss-ldapd-configuration-screen.jpg)
 
 Press Enter to complete the configuration. The wizard updates files such as /etc/nsswitch.conf and sets up the NSLCD service.
 

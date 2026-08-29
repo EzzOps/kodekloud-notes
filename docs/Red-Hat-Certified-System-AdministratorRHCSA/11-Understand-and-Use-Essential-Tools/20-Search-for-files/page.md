@@ -6,9 +6,7 @@ This article explores how to search for files on a Linux system using the find c
 
 In this article, we explore how to search for files on a Linux system using the versatile and powerful find command. Familiarity with your system’s directory structure is essential—for example, SSH configuration files are typically found in /etc/ssh, while system logs reside in /var/log.
 
-<Frame>
-  ![The image shows a directory structure diagram with a root directory ("/") branching into "usr," "var," and "etc," with further subdirectories "share," "log," and "ssh."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883638/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Search-for-files/directory-structure-diagram-root.jpg)
-</Frame>
+![The image shows a directory structure diagram with a root directory ("/") branching into "usr," "var," and "etc," with further subdirectories "share," "log," and "ssh."](https://kodekloud.com/kk-media/image/upload/v1752883638/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Search-for-files/directory-structure-diagram-root.jpg)
 
 Most of the time, you have a good idea of where your files are located. However, certain scenarios require more specific searches:
 

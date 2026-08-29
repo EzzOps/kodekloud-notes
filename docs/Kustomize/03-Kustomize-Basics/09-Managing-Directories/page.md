@@ -47,9 +47,7 @@ kubectl apply -f k8s/api/
 kubectl apply -f k8s/db/
 ```
 
-<Callout icon="triangle-alert">
-  Manually running `kubectl apply` in each subfolder can be error-prone and difficult to automate in CI/CD.
-</Callout>
+> **triangle-alert** Manually running `kubectl apply` in each subfolder can be error-prone and difficult to automate in CI/CD.
 
 ## Single Root kustomization.yaml
 

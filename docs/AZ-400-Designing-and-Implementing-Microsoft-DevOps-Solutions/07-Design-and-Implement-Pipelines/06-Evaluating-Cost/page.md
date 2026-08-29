@@ -45,7 +45,7 @@ Now both your native Windows agent and the containerized agent will appear onlin
 
 In the **Linux** pool you may have agents for WSL or standalone servers:
 
-![The image shows an Azure DevOps interface displaying the settings for agent pools, specifically listing two Linux agents that are currently offline.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867840/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Designing-an-Agent-Infrastructure/azure-devops-agent-pools-linux-offline.jpg)
+![The image shows an Azure DevOps interface displaying the settings for agent pools, specifically listing two Linux agents that are currently offline.](https://kodekloud.com/kk-media/image/upload/v1752867840/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Designing-an-Agent-Infrastructure/azure-devops-agent-pools-linux-offline.jpg)
 
 #### WSL Agent
 
@@ -136,7 +136,7 @@ In this lesson, we’ll walk through how to **evaluate**, **manage**, and **opti
 
 > **lightbulb** Azure Pipelines includes free build minutes and a free self-hosted agent for open-source projects. Leverage these allowances to experiment before moving to paid plans.
 
-![The image explains Azure Pipelines pricing, highlighting additional costs for more pipelines, parallel jobs, and the use of Microsoft-hosted versus self-hosted agents, alongside free tiers and included services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867841/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Evaluating-Cost/azure-pipelines-pricing-costs-diagram.jpg)
+![The image explains Azure Pipelines pricing, highlighting additional costs for more pipelines, parallel jobs, and the use of Microsoft-hosted versus self-hosted agents, alongside free tiers and included services.](https://kodekloud.com/kk-media/image/upload/v1752867841/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Evaluating-Cost/azure-pipelines-pricing-costs-diagram.jpg)
 
 ## Cost Factors
 
@@ -150,7 +150,7 @@ Azure Pipelines charges are driven by three primary factors. Knowing how each on
 
 > **triangle-alert** Self-hosted agents require you to provision, secure, and maintain VMs or hardware. Underestimate this at your own risk.
 
-![The image outlines three factors influencing Azure Pipeline costs: choice of agents, pipeline complexity, and frequency of pipeline runs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867842/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Evaluating-Cost/azure-pipeline-costs-factors-diagram.jpg)
+![The image outlines three factors influencing Azure Pipeline costs: choice of agents, pipeline complexity, and frequency of pipeline runs.](https://kodekloud.com/kk-media/image/upload/v1752867842/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Evaluating-Cost/azure-pipeline-costs-factors-diagram.jpg)
 
 ## Cost Management Strategies
 
@@ -163,7 +163,7 @@ Optimize your Azure Pipelines spending by adopting these proven strategies:
 | Batch and Schedule Runs | Group related jobs or schedule off-peak builds to smooth out agent consumption  |
 | Monitor Usage           | Use Azure Cost Management dashboards and alerts to identify spikes and outliers |
 
-![The image outlines four cost management strategies: optimizing pipeline efficiency, choosing the right agent types, batching jobs and runs, and using monitoring tools for cost tracking.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867843/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Evaluating-Cost/cost-management-strategies-pipeline-agent-monitoring.jpg)
+![The image outlines four cost management strategies: optimizing pipeline efficiency, choosing the right agent types, batching jobs and runs, and using monitoring tools for cost tracking.](https://kodekloud.com/kk-media/image/upload/v1752867843/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Evaluating-Cost/cost-management-strategies-pipeline-agent-monitoring.jpg)
 
 ## Best Practices for Cost Optimization
 
@@ -173,7 +173,7 @@ Embed cost-efficient practices directly into your DevOps workflows:
 * **Improve code quality** early with linting, static analysis, and unit tests to reduce build failures.
 * **Use conditional triggers** (`paths`, `branches`) and **pipeline caching** to run jobs only when necessary.
 
-![The image outlines three best practices for optimizing pipeline costs with Azure DevOps: streamlining workflows, improving code quality, and using conditional access and pipeline triggers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867844/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Evaluating-Cost/azure-devops-pipeline-cost-optimization.jpg)
+![The image outlines three best practices for optimizing pipeline costs with Azure DevOps: streamlining workflows, improving code quality, and using conditional access and pipeline triggers.](https://kodekloud.com/kk-media/image/upload/v1752867844/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Evaluating-Cost/azure-devops-pipeline-cost-optimization.jpg)
 
 ## Tools and Resources
 
@@ -183,7 +183,7 @@ Leverage these native and third-party tools to track, analyze, and optimize your
 * [Azure Advisor](https://learn.microsoft.com/azure/advisor): Personalized recommendations to improve performance and efficiency.
 * Third-party analytics platforms (e.g., CloudHealth, Harness) for deeper pipeline-specific insights.
 
-![The image lists tools and resources for cost evaluation, including Azure Cost Management, Azure Advisor, and third-party tools and resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867845/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Evaluating-Cost/cost-evaluation-tools-resources-azure.jpg)
+![The image lists tools and resources for cost evaluation, including Azure Cost Management, Azure Advisor, and third-party tools and resources.](https://kodekloud.com/kk-media/image/upload/v1752867845/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Evaluating-Cost/cost-evaluation-tools-resources-azure.jpg)
 
 ## Summary
 

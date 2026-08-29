@@ -95,15 +95,11 @@ The CNPE exam runs in a browser‑based Linux remote desktop. Typical aspects of
 * Practice reading documentation quickly and applying examples — each task gives quick reference links, so speed and comprehension matter more than memorization.
 * During practice, time yourself on representative tasks to get comfortable with the 6–8 minute cadence per task.
 
-<Callout icon="lightbulb">
-  Focus study time proportionally to the domain weights, practice hands‑on labs and mock exams, and build the habit of quickly reading and applying documentation. This combination gives the best chance of success on the CNPE exam.
-</Callout>
+> **lightbulb** Focus study time proportionally to the domain weights, practice hands‑on labs and mock exams, and build the habit of quickly reading and applying documentation. This combination gives the best chance of success on the CNPE exam.
 
 ## Links and references
 
 * CNCF CNPE certification: [https://www.cncf.io/certification/cnpe/](https://www.cncf.io/certification/cnpe/)
 * Kubernetes documentation: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/cde3e2ef-28b1-4c9a-988b-49cbeb851f45/lesson/bafb1557-c12c-42d6-91ad-f14384292b11" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/cde3e2ef-28b1-4c9a-988b-49cbeb851f45/lesson/bafb1557-c12c-42d6-91ad-f14384292b11)

@@ -62,9 +62,7 @@ Links and references
 * tcpdump: [https://www.tcpdump.org](https://www.tcpdump.org)
 * Wireshark: [https://www.wireshark.org](https://www.wireshark.org)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/31c5a508-842b-4023-b234-bf6ad7dbc967" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/31c5a508-842b-4023-b234-bf6ad7dbc967)
 
 
 # Demo Cilium Gateway API

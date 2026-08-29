@@ -44,9 +44,7 @@ You begin on the API side. A CustomResourceDefinition (CRD) teaches Kubernetes t
 Scaffolding with Kubebuilder
 We use [Kubebuilder](https://book.kubebuilder.io/) to scaffold the operator project. Kubebuilder generates the project structure, boilerplate files, and controller entry points so you don't start from an empty folder. You will examine the generated code and then add your reconcile logic.
 
-<Callout icon="lightbulb">
-  Kubebuilder gives you a solid starting point: CRD manifests, `api/` types, and controller skeletons. Use the scaffold to focus on reconcile logic rather than plumbing.
-</Callout>
+> **lightbulb** Kubebuilder gives you a solid starting point: CRD manifests, `api/` types, and controller skeletons. Use the scaffold to focus on reconcile logic rather than plumbing.
 
 The reconcile loop
 Reconcile is the controller’s watch-and-fix function. In practice the reconcile loop:
@@ -88,6 +86,4 @@ The path is approachable but thorough: one web app object → a controller that 
 
 Next up: start with CRDs — the API side.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/43fca606-90a7-45b0-968d-9f6265003fcf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/43fca606-90a7-45b0-968d-9f6265003fcf)

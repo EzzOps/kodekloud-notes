@@ -21,15 +21,11 @@ This output indicates that Dave’s system is running at runlevel 3, which is no
 
 The boot process utilizes the runlevel setting by having the init process check the current runlevel and start only those services required for that mode. For instance, graphical mode (runlevel 5) needs a display manager service to start the GUI, whereas this service is unnecessary in non-graphical mode.
 
-<Frame>
-  ![The image explains systemd runlevels, showing graphical and command line interfaces, with indicators for display-manager service enabled or disabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881120/notes-assets/images/Learning-Linux-Basics-Course-Labs-Runlevels/frame_80.jpg)
-</Frame>
+![The image explains systemd runlevels, showing graphical and command line interfaces, with indicators for display-manager service enabled or disabled.](https://kodekloud.com/kk-media/image/upload/v1752881120/notes-assets/images/Learning-Linux-Basics-Course-Labs-Runlevels/frame_80.jpg)
 
 In modern Linux distributions like Ubuntu 18.04, the system uses systemd as the init process. Under systemd, traditional runlevels are represented as targets:
 
-<Frame>
-  ![The image explains systemd targets and runlevels, showing how they boot into graphical or command line interfaces on RHEL and Ubuntu systems.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881121/notes-assets/images/Learning-Linux-Basics-Course-Labs-Runlevels/frame_110.jpg)
-</Frame>
+![The image explains systemd targets and runlevels, showing how they boot into graphical or command line interfaces on RHEL and Ubuntu systems.](https://kodekloud.com/kk-media/image/upload/v1752881121/notes-assets/images/Learning-Linux-Basics-Course-Labs-Runlevels/frame_110.jpg)
 
 In this context:
 
@@ -38,9 +34,7 @@ In this context:
 
 While additional runlevels (or targets) exist, these two are the most commonly used. For a detailed list of available runlevels/targets, refer to the official [systemd documentation](https://www.freedesktop.org/wiki/Software/systemd/).
 
-<Callout icon="lightbulb">
-  If your system boots into a command line interface by default, it's likely configured to use the multi-user target.
-</Callout>
+> **lightbulb** If your system boots into a command line interface by default, it's likely configured to use the multi-user target.
 
 ## Changing the Default Target
 
@@ -70,10 +64,6 @@ Created symlink /etc/systemd/system/default.target -> /lib/systemd/system/multi-
 
 This command updates the default target, effectively switching your system's mode of operation from graphical to non-graphical.
 
-<Callout icon="lightbulb">
-  After changing the default target, you may need to reboot your system for the changes to take effect.
-</Callout>
+> **lightbulb** After changing the default target, you may need to reboot your system for the changes to take effect.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/19296611-5fb9-4e5d-a926-d157d3f3c3db/lesson/b2e0b8bc-8823-4a2c-b66d-3f85184a2404" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/19296611-5fb9-4e5d-a926-d157d3f3c3db/lesson/b2e0b8bc-8823-4a2c-b66d-3f85184a2404)

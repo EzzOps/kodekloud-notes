@@ -9,9 +9,7 @@ $ find /bin -name file1.txt
 
 If you don’t specify a directory path, the command searches from your current working directory. Always specify the search location first, followed by the desired search parameters.
 
-<Callout icon="lightbulb">
-  If no directory is specified, remember that find will perform a recursive search starting in the current directory.
-</Callout>
+> **lightbulb** If no directory is specified, remember that find will perform a recursive search starting in the current directory.
 
 ## Common Search Parameters
 
@@ -152,11 +150,9 @@ The find command is an indispensable tool in Linux for locating files based on n
 
 Now that you have a deeper understanding of how to leverage the find command, it’s time to practice these techniques and sharpen your Linux file management skills.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/0e6594ac-243a-4549-85b9-fc5d38ad635d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/0e6594ac-243a-4549-85b9-fc5d38ad635d)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/c37f6f1c-ab04-4201-9586-4da2577f8041" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/c37f6f1c-ab04-4201-9586-4da2577f8041)
 
 
 # Securely transfer files between systems
@@ -198,9 +194,7 @@ You can also transfer files directly between two remote systems. In that case, s
 $ scp aaron@192.168.1.27:/home/aaron/familyphoto.jpg aaron@192.168.1.59:/home/aaron/familyphoto.jpg
 ```
 
-<Callout icon="lightbulb">
-  When using SCP without explicitly specifying a username, the current local user will be assumed for the remote host.
-</Callout>
+> **lightbulb** When using SCP without explicitly specifying a username, the current local user will be assumed for the remote host.
 
 To explore more options and learn about additional flags, refer to the SCP manual:
 
@@ -272,9 +266,7 @@ For more detailed usage of SFTP and its commands, consult the manual page:
 $ man sftp
 ```
 
-<Callout icon="triangle-alert">
-  Always ensure that you have the necessary permissions on both the local and remote systems to transfer files securely.
-</Callout>
+> **triangle-alert** Always ensure that you have the necessary permissions on both the local and remote systems to transfer files securely.
 
 ***
 
@@ -289,8 +281,6 @@ For further insights, consider exploring additional resources:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/30ef7b0d-8b9f-4209-8b6c-e2991539a2bd" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/30ef7b0d-8b9f-4209-8b6c-e2991539a2bd)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/90f18e8f-3edc-4cb5-b7d4-1f8cd2d7750f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/90f18e8f-3edc-4cb5-b7d4-1f8cd2d7750f)

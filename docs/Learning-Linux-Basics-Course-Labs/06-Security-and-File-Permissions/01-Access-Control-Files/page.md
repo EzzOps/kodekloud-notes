@@ -10,9 +10,7 @@ In this article, we explore key Linux access control files that are essential fo
 * /etc/shadow for secure password storage and password expiry information
 * /etc/group for managing group memberships
 
-<Callout icon="lightbulb">
-  Always use built-in commands to modify these files rather than editing them directly with a text editor.
-</Callout>
+> **lightbulb** Always use built-in commands to modify these files rather than editing them directly with a text editor.
 
 Although the /etc directory is world-readable by default, only the root user has permission to make modifications.
 
@@ -99,14 +97,10 @@ Where:
 
 ***
 
-<Callout icon="lightbulb">
-  Linux access control files such as `/etc/passwd`, `/etc/shadow`, and `/etc/group` are fundamental for both user management and overall system security. Always use the appropriate commands to update these files, ensuring system integrity.
-</Callout>
+> **lightbulb** Linux access control files such as `/etc/passwd`, `/etc/shadow`, and `/etc/group` are fundamental for both user management and overall system security. Always use the appropriate commands to update these files, ensuring system integrity.
 
 In a future lesson, we will review the commands and best practices for safely modifying these access control files.
 
 For further learning, check out additional resources on [Linux User Management](https://linux.die.net/man/) and [Linux Security Best Practices](https://www.cyberciti.biz/tips/linux-security.html).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/270657d0-f377-4b16-b7ee-9be342ae8669" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/270657d0-f377-4b16-b7ee-9be342ae8669)

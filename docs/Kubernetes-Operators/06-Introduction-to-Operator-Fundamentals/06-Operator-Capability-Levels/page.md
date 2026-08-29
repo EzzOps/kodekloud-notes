@@ -96,13 +96,9 @@ Two practical takeaways:
 * When evaluating an operator outside your team, check its declared capability level on `OperatorHub`. A Level 2 operator managing your production database is often a red flag — you probably want Level 3 or higher for stateful systems.
 * When building your own operator, start at Level 1 and add capabilities incrementally. Evolve through the levels as operational requirements (backup, restore, observability, automation) justify the added complexity.
 
-<Callout icon="warning">
-  If your workload stores critical data, prefer operators declared as Level 3+ for production use. Level 2 is about upgrade behavior, not full lifecycle management — it may not provide automated recovery or backups.
-</Callout>
+> **warning** If your workload stores critical data, prefer operators declared as Level 3+ for production use. Level 2 is about upgrade behavior, not full lifecycle management — it may not provide automated recovery or backups.
 
-<Callout icon="lightbulb">
-  Build iteratively: implement reliable installs first (Level 1), add upgrade/migration support (Level 2), then introduce backups and recovery (Level 3). Use metrics and events later to reach Level 4.
-</Callout>
+> **lightbulb** Build iteratively: implement reliable installs first (Level 1), add upgrade/migration support (Level 2), then introduce backups and recovery (Level 3). Use metrics and events later to reach Level 4.
 
 <Frame>
   <img alt="The image contains two takeaways: checking a declared level (L3) and the red flag of L2 on a production database, illustrated with a level progression graphic featuring a car moving upwards." />
@@ -117,6 +113,4 @@ Links and references
 * `cert-manager` — [https://cert-manager.io/](https://cert-manager.io/)
 * `controller-runtime` — [https://pkg.go.dev/sigs.k8s.io/controller-runtime](https://pkg.go.dev/sigs.k8s.io/controller-runtime)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/8bcb92e2-cc85-4ecc-9467-7d967f94bf2d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/8bcb92e2-cc85-4ecc-9467-7d967f94bf2d)

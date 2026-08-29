@@ -6,9 +6,7 @@ This article offers a brief introduction to Python, highlighting its key feature
 
 This article offers a brief introduction to Python, highlighting its key features and capabilities. Python is renowned for its simplicity, making it one of the most accessible programming languages. It is intuitive, free, open source, and versatile enough to solve a wide range of everyday problems.
 
-<Frame>
-  ![The image features the Python logo and describes Python as an easy, intuitive, free, open-source programming language suitable for various tasks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883522/notes-assets/images/Python-Basics-Python-Introduction/frame_20.jpg)
-</Frame>
+![The image features the Python logo and describes Python as an easy, intuitive, free, open-source programming language suitable for various tasks.](https://kodekloud.com/kk-media/image/upload/v1752883522/notes-assets/images/Python-Basics-Python-Introduction/frame_20.jpg)
 
 ## Getting Started with Python
 
@@ -30,9 +28,7 @@ Type "help", "copyright", "credits" or "license" for more information
 >>>
 ```
 
-<Callout icon="lightbulb">
-  If the above output appears, you're ready to start working with Python. Otherwise, visit the [official Python website](https://www.python.org) to download the installer suitable for your operating system.
-</Callout>
+> **lightbulb** If the above output appears, you're ready to start working with Python. Otherwise, visit the [official Python website](https://www.python.org) to download the installer suitable for your operating system.
 
 ## Writing and Running Your First Python Script
 
@@ -64,6 +60,4 @@ We'll predominantly use the Python shell to demonstrate various concepts, but fe
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/4178f96e-8dcd-46a2-a9c9-f65a8c9c73b0/lesson/bfc36259-08d8-4fb2-9e6e-d45977a20319" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/4178f96e-8dcd-46a2-a9c9-f65a8c9c73b0/lesson/bfc36259-08d8-4fb2-9e6e-d45977a20319)

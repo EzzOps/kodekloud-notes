@@ -10,9 +10,7 @@ Before provisioning infrastructure, it’s crucial to understand how Terraform C
 
 A Terraform Cloud Organization provides a shared environment where teams collaborate on infrastructure as code. When you sign up, you either create a new organization or join one via invitation. You must belong to at least one organization to work in Terraform Cloud.
 
-<Frame>
-  ![The image is a slide titled "What is an Organization?" describing shared spaces for teams, the role of Sentinel policies, and management options using APIs, UI, or Terraform provider.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878847/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Organizations/what-is-an-organization-slide.jpg)
-</Frame>
+![The image is a slide titled "What is an Organization?" describing shared spaces for teams, the role of Sentinel policies, and management options using APIs, UI, or Terraform provider.](https://kodekloud.com/kk-media/image/upload/v1752878847/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Organizations/what-is-an-organization-slide.jpg)
 
 An organization typically contains:
 
@@ -21,18 +19,14 @@ An organization typically contains:
 * **Private Module Registry**: A private catalog for your Terraform modules and providers.
 * **Integrations**: Connections to VCS, CLI, and APIs.
 
-<Callout icon="lightbulb">
-  You can manage Organizations not only via the web UI or API but also through the Terraform `tfe` provider—enabling infrastructure-as-code for your Terraform Cloud setup!
-</Callout>
+> **lightbulb** You can manage Organizations not only via the web UI or API but also through the Terraform `tfe` provider—enabling infrastructure-as-code for your Terraform Cloud setup!
 
 ## Organization-Level Settings
 
 Organization settings control access, governance, and integrations across all your workspaces.\
 Below is an overview of key settings at the org level:
 
-<Frame>
-  ![The image displays a diagram of "Organization Settings" for Terraform Cloud, featuring icons and labels for various settings like Tokens, VCS, Private Module Registry, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878848/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Organizations/terraform-cloud-organization-settings-diagram.jpg)
-</Frame>
+![The image displays a diagram of "Organization Settings" for Terraform Cloud, featuring icons and labels for various settings like Tokens, VCS, Private Module Registry, and more.](https://kodekloud.com/kk-media/image/upload/v1752878848/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Organizations/terraform-cloud-organization-settings-diagram.jpg)
 
 | Setting                     | Description                                                                                                                          |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
@@ -45,17 +39,13 @@ Below is an overview of key settings at the org level:
 | Sentinel Policies           | Apply policy sets for governance at global or workspace levels.                                                                      |
 | Tags & Permissions          | Organize resources and control access with tags.                                                                                     |
 
-<Callout icon="triangle-alert">
-  Treat API tokens like secrets. Do not commit them to version control or expose them in public. Use environment variables or secret managers where possible.
-</Callout>
+> **triangle-alert** Treat API tokens like secrets. Do not commit them to version control or expose them in public. Use environment variables or secret managers where possible.
 
 ## Single vs. Multi-Organization Models
 
 Terraform Cloud supports both single-organization and multi-organization deployments. Your choice depends on the level of isolation and governance required.
 
-<Frame>
-  ![The image illustrates two organizational structures: a single organization model for "35K Airlines" and a multi-organization model for "Big Food, Inc" with separate divisions for pizza, taco, and sandwich businesses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878849/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Organizations/35k-airlines-big-food-organization-models.jpg)
-</Frame>
+![The image illustrates two organizational structures: a single organization model for "35K Airlines" and a multi-organization model for "Big Food, Inc" with separate divisions for pizza, taco, and sandwich businesses.](https://kodekloud.com/kk-media/image/upload/v1752878849/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Organizations/35k-airlines-big-food-organization-models.jpg)
 
 | Model      | Use Case                                             | Example                                |
 | ---------- | ---------------------------------------------------- | -------------------------------------- |
@@ -73,9 +63,7 @@ To add a user:
 1. Send an email invitation from your org’s **Users & Teams** page.
 2. The recipient accepts the invite and is added to the team you specified.
 
-<Frame>
-  ![The image is a flowchart illustrating the process of adding users to an organization using Terraform Cloud, involving sending an email invite, accepting the invitation, and joining a group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878850/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Organizations/terraform-cloud-user-invitation-flowchart.jpg)
-</Frame>
+![The image is a flowchart illustrating the process of adding users to an organization using Terraform Cloud, involving sending an email invite, accepting the invitation, and joining a group.](https://kodekloud.com/kk-media/image/upload/v1752878850/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Organizations/terraform-cloud-user-invitation-flowchart.jpg)
 
 ## Summary
 
@@ -95,6 +83,4 @@ With a firm grasp of Organizations, you’re ready to configure workspaces, conn
 * [Terraform `tfe` Provider](https://registry.terraform.io/providers/hashicorp/tfe/latest)
 * [Sentinel Governance](https://www.hashicorp.com/products/sentinel)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/f0c13760-a79c-42c2-a089-44f1c0a59bee/lesson/1465ac2a-d7eb-455f-8346-cca3ecba6aba" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/f0c13760-a79c-42c2-a089-44f1c0a59bee/lesson/1465ac2a-d7eb-455f-8346-cca3ecba6aba)

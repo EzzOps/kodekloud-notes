@@ -22,7 +22,7 @@ Begin your journey with the foundational concepts of artificial intelligence. Th
 
 This module makes up 15% to 20% of the certification exam, ensuring you have a robust understanding of how AI can be applied in diverse business and technical scenarios.
 
-![The image outlines the topics for the AI-900 Certification, including AI workloads, machine learning principles, computer vision, NLP, and generative AI features on Azure. It also highlights fundamental AI concepts and Azure AI services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857032/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Certification-Details/ai-900-certification-topics-outline.jpg)
+![The image outlines the topics for the AI-900 Certification, including AI workloads, machine learning principles, computer vision, NLP, and generative AI features on Azure. It also highlights fundamental AI concepts and Azure AI services.](https://kodekloud.com/kk-media/image/upload/v1752857032/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Certification-Details/ai-900-certification-topics-outline.jpg)
 
 ***
 
@@ -30,7 +30,7 @@ This module makes up 15% to 20% of the certification exam, ensuring you have a r
 
 Machine learning is the backbone of AI, and this module demystifies its core concepts and principles. Representing 20% to 25% of the exam, you will learn how to leverage various Azure tools to build, train, and deploy machine learning models. The module covers the entire machine learning lifecycle, preparing you to tackle real-world challenges with confidence.
 
-![The image outlines topics for the AI-900 Certification, including machine learning principles on Azure, AI workloads, computer vision, NLP workloads, and generative AI features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857033/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Certification-Details/ai-900-certification-topics-outline-2.jpg)
+![The image outlines topics for the AI-900 Certification, including machine learning principles on Azure, AI workloads, computer vision, NLP workloads, and generative AI features.](https://kodekloud.com/kk-media/image/upload/v1752857033/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Certification-Details/ai-900-certification-topics-outline-2.jpg)
 
 > **lightbulb** Understanding the machine learning lifecycle is crucial. Master the steps from data preparation to model deployment for a successful implementation.
 
@@ -40,7 +40,7 @@ Machine learning is the backbone of AI, and this module demystifies its core con
 
 Delve into the transformative technology of computer vision in this module, which makes up 15% to 20% of the certification exam. Discover how machines interpret and act upon visual data, and explore Azure’s powerful solutions for analyzing, detecting, and interpreting images. This module highlights practical applications that demonstrate the impact of computer vision technology.
 
-![The image outlines topics for the AI-900 Certification, including computer vision, AI workloads, machine learning principles, NLP workloads, and generative AI features on Azure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857034/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Certification-Details/ai-900-certification-topics-outline-3.jpg)
+![The image outlines topics for the AI-900 Certification, including computer vision, AI workloads, machine learning principles, NLP workloads, and generative AI features on Azure.](https://kodekloud.com/kk-media/image/upload/v1752857034/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Certification-Details/ai-900-certification-topics-outline-3.jpg)
 
 ***
 
@@ -48,7 +48,7 @@ Delve into the transformative technology of computer vision in this module, whic
 
 NLP is central to modern AI, enabling machines to understand and generate human language. In this module, which accounts for 15% to 20% of the exam, you will examine Azure’s NLP capabilities and services. Learn how to develop applications that can analyze sentiment, extract key information, and perform language translation—skills that are increasingly essential across industries.
 
-![The image outlines topics for the AI-900 Certification, focusing on natural language processing workloads and other AI-related subjects on Azure, such as machine learning, computer vision, and generative AI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857035/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Certification-Details/ai-900-certification-topics-outline-4.jpg)
+![The image outlines topics for the AI-900 Certification, focusing on natural language processing workloads and other AI-related subjects on Azure, such as machine learning, computer vision, and generative AI.](https://kodekloud.com/kk-media/image/upload/v1752857035/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Certification-Details/ai-900-certification-topics-outline-4.jpg)
 
 ***
 
@@ -56,7 +56,7 @@ NLP is central to modern AI, enabling machines to understand and generate human 
 
 Step into the cutting edge of AI with the generative AI module. Accounting for 15% to 20% of the exam, this module explores Azure’s innovative approaches to generative AI, including integrations with OpenAI. You will review practical applications ranging from content creation to solution design, while also learning how to implement responsible and ethical AI practices.
 
-![The image outlines topics for the AI-900 Certification, focusing on generative AI workloads on Azure, AI workloads and considerations, machine learning principles, computer vision, and NLP workloads. It includes sections on Generative AI, Azure OpenAI fundamentals, and responsible AI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857036/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Certification-Details/ai-900-certification-topics-outline-5.jpg)
+![The image outlines topics for the AI-900 Certification, focusing on generative AI workloads on Azure, AI workloads and considerations, machine learning principles, computer vision, and NLP workloads. It includes sections on Generative AI, Azure OpenAI fundamentals, and responsible AI.](https://kodekloud.com/kk-media/image/upload/v1752857036/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Certification-Details/ai-900-certification-topics-outline-5.jpg)
 
 > **triangle-alert** Be sure to review each module thoroughly. The balanced weighting of topics means that even a moderate misunderstanding in one area can impact your overall performance.
 

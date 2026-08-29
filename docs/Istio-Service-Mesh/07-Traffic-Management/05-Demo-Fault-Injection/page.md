@@ -90,9 +90,7 @@ deployment.apps "reviews-v3" deleted
 istiotraining@local istio-1.10.3 $ kube
 ```
 
-<Frame>
-  ![The image shows a Kiali Console interface displaying a list of workloads in the "default" namespace, each labeled with its name, type, and version. The sidebar includes options like Overview, Graph, Applications, Workloads, Services, and Istio Config.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879387/notes-assets/images/Istio-Service-Mesh-Demo-Destination-Rules/kiali-console-workloads-default-namespace.jpg)
-</Frame>
+![The image shows a Kiali Console interface displaying a list of workloads in the "default" namespace, each labeled with its name, type, and version. The sidebar includes options like Overview, Graph, Applications, Workloads, Services, and Istio Config.](https://kodekloud.com/kk-media/image/upload/v1752879387/notes-assets/images/Istio-Service-Mesh-Demo-Destination-Rules/kiali-console-workloads-default-namespace.jpg)
 
 Notice that the new `test: beta` label appears only in Version V2 and Version V3, while Version V1 remains unchanged. In the Applications page, you can now observe the service reflecting the new label.
 
@@ -382,11 +380,9 @@ By leveraging Destination Rules and Virtual Services, Istio provides a powerful 
 
 For additional details on Istio and traffic management strategies, refer to the [Istio Documentation](https://istio.io/latest/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/4bedbf0b-5f51-4021-8161-4332380b8fcb" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/4bedbf0b-5f51-4021-8161-4332380b8fcb)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/09363f9a-0751-42b6-9238-a5c7401de8c1" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/09363f9a-0751-42b6-9238-a5c7401de8c1)
 
 
 # Demo Fault Injection
@@ -425,9 +421,7 @@ spec:
             subset: v1
 ```
 
-<Callout icon="lightbulb">
-  Save the above configuration to a file (for example, `virtual-service-fault.yaml`) and apply it using `kubectl` to implement the fault injection rule.
-</Callout>
+> **lightbulb** Save the above configuration to a file (for example, `virtual-service-fault.yaml`) and apply it using `kubectl` to implement the fault injection rule.
 
 Apply the configuration with the following commands:
 
@@ -443,9 +437,7 @@ This rule instructs Istio to inject a 7-second delay to 70% of the requests reac
 
 After applying the configuration, verify that the Virtual Service and associated settings are active and error-free within your service mesh. Kiali provides a visual confirmation of the Istio configurations in use:
 
-<Frame>
-  ![The image shows the Kiali console interface displaying Istio configuration details for the "default" namespace, listing a VirtualService and a Gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879388/notes-assets/images/Istio-Service-Mesh-Demo-Fault-Injection/kiali-console-istio-configuration-default.jpg)
-</Frame>
+![The image shows the Kiali console interface displaying Istio configuration details for the "default" namespace, listing a VirtualService and a Gateway.](https://kodekloud.com/kk-media/image/upload/v1752879388/notes-assets/images/Istio-Service-Mesh-Demo-Fault-Injection/kiali-console-istio-configuration-default.jpg)
 
 ## Step 4: Observe the Impact on the Application
 
@@ -454,15 +446,11 @@ Navigate to the application to see the effect of the fault injection. In Kiali, 
 * The details service experiences performance degradation, as indicated by problematic connections from the product page.
 * Some requests (approximately 30%) remain unaffected and continue to operate normally.
 
-<Frame>
-  ![The image shows a Kiali console interface displaying a service mesh graph with nodes representing different services and their interactions. It includes metrics on HTTP requests, success rates, and errors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879389/notes-assets/images/Istio-Service-Mesh-Demo-Fault-Injection/kiali-console-service-mesh-graph.jpg)
-</Frame>
+![The image shows a Kiali console interface displaying a service mesh graph with nodes representing different services and their interactions. It includes metrics on HTTP requests, success rates, and errors.](https://kodekloud.com/kk-media/image/upload/v1752879389/notes-assets/images/Istio-Service-Mesh-Demo-Fault-Injection/kiali-console-service-mesh-graph.jpg)
 
 When you refresh the browser, you might notice that the details service occasionally fails to respond within the expected time frame due to the injected delay. Conversely, the healthy traffic (30%) may still provide timely responses.
 
-<Callout icon="lightbulb">
-  Fault injection is an effective technique to simulate real-world service degradations. It can help identify weaknesses in your service architecture and guide you in developing stronger, more resilient applications.
-</Callout>
+> **lightbulb** Fault injection is an effective technique to simulate real-world service degradations. It can help identify weaknesses in your service architecture and guide you in developing stronger, more resilient applications.
 
 ## Conclusion
 
@@ -473,6 +461,4 @@ For more detailed information, consider exploring:
 * [Istio Fault Injection Documentation](https://istio.io/latest/docs/tasks/traffic-management/fault-injection/)
 * [Kiali Documentation](https://www.kiali.io/documentation/latest/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/b5053789-8d11-43ec-b03d-9d06c27a0fd6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/b5053789-8d11-43ec-b03d-9d06c27a0fd6)

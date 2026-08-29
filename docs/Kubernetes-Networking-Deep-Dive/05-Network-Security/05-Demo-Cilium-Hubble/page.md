@@ -17,9 +17,7 @@ Wait until all pods in the `cert-manager` namespace are in the `Running` state:
 kubectl get pods -n cert-manager
 ```
 
-<Callout icon="lightbulb">
-  Make sure your cluster meets the [Cert-Manager prerequisites](https://cert-manager.io/docs/installation/).
-</Callout>
+> **lightbulb** Make sure your cluster meets the [Cert-Manager prerequisites](https://cert-manager.io/docs/installation/).
 
 ***
 
@@ -127,9 +125,7 @@ Apply the updated Ingress:
 kubectl apply -f whoami-ingress.yaml
 ```
 
-<Callout icon="triangle-alert">
-  Ensure DNS for `test-example.com` points to your Traefik load balancer before requesting a certificate.
-</Callout>
+> **triangle-alert** Ensure DNS for `test-example.com` points to your Traefik load balancer before requesting a certificate.
 
 ***
 
@@ -227,11 +223,9 @@ Your Traefik Ingress is now secured with a Let’s Encrypt production certificat
 * [Traefik Ingress Controller](https://doc.traefik.io/traefik/)
 * [Kubernetes Ingress Basics](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/733b4868-57b0-497e-a4bb-47956f1cb24a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/733b4868-57b0-497e-a4bb-47956f1cb24a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/3cbd85fd-6665-41a7-b190-91a30b0c9a67" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/3cbd85fd-6665-41a7-b190-91a30b0c9a67)
 
 
 # Demo Cilium Hubble
@@ -245,9 +239,7 @@ This article provides a guide on setting up Cilium Hubble for metrics, monitorin
 * A running Kubernetes cluster with Cilium installed (v1.15.3 or later).
 * Prometheus and Grafana deployed in the `cilium-monitoring` namespace.
 
-<Callout icon="lightbulb">
-  Hubble components (Relay, UI, metrics) are disabled by default. You must enable them via Helm to collect and visualize network flows.
-</Callout>
+> **lightbulb** Hubble components (Relay, UI, metrics) are disabled by default. You must enable them via Helm to collect and visualize network flows.
 
 ## 1. Verify Cilium and Hubble Status
 
@@ -311,15 +303,13 @@ root@controlplane ~ ➜ helm upgrade cilium cilium/cilium --version 1.15.4 \
   --set hubble.metrics.enabled="{dns,drop,tcp,flow,port_distribution,icmp,httpV2:exemplars=true;labelsContext=source_ip,source_namespace,destination_ip,destination_namespace,destination_workload,traffic_direction}"
 ```
 
-<Callout icon="lightbulb">
-  | Metric Type        | Description                                   |
+> **lightbulb** | Metric Type        | Description                                   |
   | ------------------ | --------------------------------------------- |
   | dns                | DNS query and response details                |
   | drop               | Packets dropped by policy or misconfiguration |
   | tcp, icmp          | L4 protocol-specific flow statistics          |
   | port\_distribution | Top ports by traffic volume                   |
   | httpV2             | HTTP/2 requests and response summaries        |
-</Callout>
 
 After a minute, confirm that Hubble Relay and UI are healthy:
 
@@ -334,9 +324,7 @@ Hubble UI:       OK
 
 Navigate to the Grafana dashboard in the `cilium-monitoring` namespace. You should see Hubble flow metrics such as flows per node, dropped vs forwarded traffic, and protocol distribution:
 
-<Frame>
-  ![The image shows a dashboard with various graphs displaying network flow metrics, such as "Flows processed Per Node," "Flow Types," and "Forwarded vs Dropped," over a time period.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880402/notes-assets/images/Kubernetes-Networking-Deep-Dive-Demo-Cilium-Hubble/network-flow-metrics-dashboard-graphs.jpg)
-</Frame>
+![The image shows a dashboard with various graphs displaying network flow metrics, such as "Flows processed Per Node," "Flow Types," and "Forwarded vs Dropped," over a time period.](https://kodekloud.com/kk-media/image/upload/v1752880402/notes-assets/images/Kubernetes-Networking-Deep-Dive-Demo-Cilium-Hubble/network-flow-metrics-dashboard-graphs.jpg)
 
 ## 4. Expose the Hubble UI as NodePort
 
@@ -365,9 +353,7 @@ spec:
     k8s-app: hubble-ui
 ```
 
-<Callout icon="triangle-alert">
-  Exposing services via NodePort can open your cluster to external traffic. Ensure proper firewall rules or security groups are in place.
-</Callout>
+> **triangle-alert** Exposing services via NodePort can open your cluster to external traffic. Ensure proper firewall rules or security groups are in place.
 
 Now you can access the Hubble UI at `<NodeIP>:30000`.
 
@@ -425,17 +411,13 @@ curl: (28) Failed to connect to app-svc-80 port 80 after 2001 ms: Timeout was re
 
 Return to Grafana to see the changes in the “Forwarded vs Dropped” panel and other flow statistics:
 
-<Frame>
-  ![The image shows a network monitoring dashboard with various graphs displaying metrics such as forwarded vs. dropped packets, protocol usage, port distribution, and TCP statistics over time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880403/notes-assets/images/Kubernetes-Networking-Deep-Dive-Demo-Cilium-Hubble/network-monitoring-dashboard-graphs-metrics.jpg)
-</Frame>
+![The image shows a network monitoring dashboard with various graphs displaying metrics such as forwarded vs. dropped packets, protocol usage, port distribution, and TCP statistics over time.](https://kodekloud.com/kk-media/image/upload/v1752880403/notes-assets/images/Kubernetes-Networking-Deep-Dive-Demo-Cilium-Hubble/network-monitoring-dashboard-graphs-metrics.jpg)
 
 ## 6. Visualize Live Flows in Hubble UI
 
 Open the Hubble UI at `<NodeIP>:30000` to explore live network flows. Click on any flow to see detailed metadata and policy verdicts:
 
-<Frame>
-  ![The image shows a network flow diagram with nodes labeled "admin," "default," and "demo," indicating traffic flow to port 80 using TCP and HTTP. The flow details section indicates a dropped connection due to a policy denial.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880404/notes-assets/images/Kubernetes-Networking-Deep-Dive-Demo-Cilium-Hubble/network-flow-diagram-admin-default-demo.jpg)
-</Frame>
+![The image shows a network flow diagram with nodes labeled "admin," "default," and "demo," indicating traffic flow to port 80 using TCP and HTTP. The flow details section indicates a dropped connection due to a policy denial.](https://kodekloud.com/kk-media/image/upload/v1752880404/notes-assets/images/Kubernetes-Networking-Deep-Dive-Demo-Cilium-Hubble/network-flow-diagram-admin-default-demo.jpg)
 
 ## 7. Using the Hubble CLI
 

@@ -11,9 +11,7 @@ Before proceeding, ensure the following prerequisites are met:
 * Valid authentication mechanisms (username/password or SSH key-based).
 * Port 22 open between your client and the remote server.
 
-<Callout icon="lightbulb">
-  In complex environments featuring multiple clients and servers interconnected by various routers and switches, implementing robust network security is essential. You can secure the network using external firewall appliances or apply filtering rules directly on each server with tools like iptables, firewalld on Linux, or the built-in firewalls on Windows.
-</Callout>
+> **lightbulb** In complex environments featuring multiple clients and servers interconnected by various routers and switches, implementing robust network security is essential. You can secure the network using external firewall appliances or apply filtering rules directly on each server with tools like iptables, firewalld on Linux, or the built-in firewalls on Windows.
 
 In this guide, we demonstrate how to configure local iptables rules on a Linux server to regulate network traffic. Consider the following Project Mercury environment setup:
 
@@ -32,9 +30,7 @@ Without a firewall, all servers can communicate freely. We will enhance security
 * Block outgoing internet access from the application server.
 * Restrict the database server to accept connections on port 5432 solely from the application server.
 
-<Frame>
-  ![The image illustrates a network setup with a client, application server, database server, and software repo server, highlighting connections and blocked HTTP access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881138/notes-assets/images/Learning-Linux-Basics-Course-Labs-IPTABLES-Introduction/frame_240.jpg)
-</Frame>
+![The image illustrates a network setup with a client, application server, database server, and software repo server, highlighting connections and blocked HTTP access.](https://kodekloud.com/kk-media/image/upload/v1752881138/notes-assets/images/Learning-Linux-Basics-Course-Labs-IPTABLES-Introduction/frame_240.jpg)
 
 ## Establishing SSH Connectivity
 
@@ -80,9 +76,7 @@ Chain OUTPUT (policy ACCEPT)
 target     prot opt source               destination
 ```
 
-<Callout icon="lightbulb">
-  A "chain" is essentially a list of rules. Each rule checks network packets and decides whether to accept or drop them based on defined conditions such as source IP, destination IP, port number, or protocol. If a packet does not match any rule, it continues to the next rule until it either matches one or reaches the chain's end.
-</Callout>
+> **lightbulb** A "chain" is essentially a list of rules. Each rule checks network packets and decides whether to accept or drop them based on defined conditions such as source IP, destination IP, port number, or protocol. If a packet does not match any rule, it continues to the next rule until it either matches one or reaches the chain's end.
 
 For example:
 
@@ -90,10 +84,6 @@ For example:
 * A packet from client 02 does not match the first rule and is evaluated by subsequent rules.
 * A packet from client 05 might not match any allow rules and is eventually dropped by a default drop rule.
 
-<Frame>
-  ![The image illustrates an iptables flowchart showing rules to accept or drop packets based on source clients and specific conditions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881139/notes-assets/images/Learning-Linux-Basics-Course-Labs-IPTABLES-Introduction/frame_470.jpg)
-</Frame>
+![The image illustrates an iptables flowchart showing rules to accept or drop packets based on source clients and specific conditions.](https://kodekloud.com/kk-media/image/upload/v1752881139/notes-assets/images/Learning-Linux-Basics-Course-Labs-IPTABLES-Introduction/frame_470.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/a64c5795-84a5-4820-86cb-c244243aab08" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/a64c5795-84a5-4820-86cb-c244243aab08)

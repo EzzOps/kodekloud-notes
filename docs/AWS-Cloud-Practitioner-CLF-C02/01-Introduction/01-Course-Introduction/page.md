@@ -34,7 +34,7 @@ Prepare to immerse yourself in the exciting realm of AWS. In our lessons, you wi
 
 Security remains a vital component throughout your cloud journey. I will personally guide you through effective IAM practices and the shared responsibility model, ensuring you master the knowledge needed to protect cloud resources.
 
-![Instructor guiding through security concepts on stage under a neon cloud and lightning sign.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861650/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Course-Introduction/frame_160.jpg)
+![Instructor guiding through security concepts on stage under a neon cloud and lightning sign.](https://kodekloud.com/kk-media/image/upload/v1752861650/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Course-Introduction/frame_160.jpg)
 
 Additionally, we'll examine other core AWS components, including EC2, S3, and VPC, to provide you with a well-rounded foundation in cloud technologies.
 
@@ -46,11 +46,11 @@ This course is an incredible opportunity to gain valuable insights and develop p
 
 Whether you are an experienced IT professional or a first-time learner, this course is tailored to help you grasp every concept with clarity. Our step-by-step approach ensures that the transition into cloud computing is smooth, logical, and fully digestible.
 
-![KodeKloud platform showcasing courses, labs, and student success statistics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861652/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Course-Introduction/frame_210.jpg)
+![KodeKloud platform showcasing courses, labs, and student success statistics.](https://kodekloud.com/kk-media/image/upload/v1752861652/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Course-Introduction/frame_210.jpg)
 
 Don't miss this opportunity to accelerate your cloud career. At KodeKloud, we believe the right combination of guidance, determination, and practical coding skills can lead you to remarkable career achievements.
 
-![Promo for AWS Cloud Practitioner Certification course with trainers and student testimonials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861653/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Course-Introduction/frame_220.jpg)
+![Promo for AWS Cloud Practitioner Certification course with trainers and student testimonials.](https://kodekloud.com/kk-media/image/upload/v1752861653/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Course-Introduction/frame_220.jpg)
 
 ## Your Path to Certification
 

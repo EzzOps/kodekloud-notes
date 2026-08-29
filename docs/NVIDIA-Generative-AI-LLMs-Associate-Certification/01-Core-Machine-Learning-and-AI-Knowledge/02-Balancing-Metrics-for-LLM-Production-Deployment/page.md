@@ -15,9 +15,7 @@ When evaluating an LLM for deployment in a production environment, which pair of
 
 The most important pair to balance is accuracy and computational cost.
 
-<Callout icon="lightbulb">
-  When deploying LLMs, weigh the quality of responses (relevance, correctness, and appropriateness) against the computational resources required (inference latency, memory footprint, and processing costs). This trade-off determines whether the model meets performance targets while remaining economically viable.
-</Callout>
+> **lightbulb** When deploying LLMs, weigh the quality of responses (relevance, correctness, and appropriateness) against the computational resources required (inference latency, memory footprint, and processing costs). This trade-off determines whether the model meets performance targets while remaining economically viable.
 
 <Frame>
   <img alt="The image shows a question about evaluating LLMs in production, emphasizing the importance of balancing accuracy and computational cost. There is also an explanation highlighting the need for this balance to meet performance requirements effectively." />
@@ -60,6 +58,4 @@ Recommended resources
 
 Balancing accuracy and computational cost ensures your LLM meets both user-facing quality expectations and operational constraints — a critical step for reliable, scalable production deployments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/94bc0562-2891-4ee7-a40e-a2ce50d783d4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/94bc0562-2891-4ee7-a40e-a2ce50d783d4)

@@ -19,9 +19,7 @@ Welcome to **OpenTofu for Beginners**! OpenTofu was born as a fully open, commun
 * Navigating the **OpenTofu CLI**: common commands, lifecycle rules, logging, debugging, import, and workspaces.
 * Working with **Modules**: creating and consuming modules from the registry.
 
-<Frame>
-  ![The image lists objectives related to IaC concepts, OpenTofu providers, variables, resource attributes, dependencies, OpenTofu state, configuration, CLI, and modules. It features a gradient background with the word "Objectives" on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882814/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Course-Objectives/iac-objectives-opentofu-variables-modules.jpg)
-</Frame>
+![The image lists objectives related to IaC concepts, OpenTofu providers, variables, resource attributes, dependencies, OpenTofu state, configuration, CLI, and modules. It features a gradient background with the word "Objectives" on the left.](https://kodekloud.com/kk-media/image/upload/v1752882814/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Course-Objectives/iac-objectives-opentofu-variables-modules.jpg)
 
 Each section concludes with a graded multiple-choice quiz. You’ll get instant feedback and detailed explanations for any incorrect answers.
 
@@ -31,9 +29,7 @@ Each section concludes with a graded multiple-choice quiz. You’ll get instant 
 
 So far, you’ve likely run OpenTofu locally—storing both configuration files and state on your machine. However, when collaborating in a team, local state files become risky:
 
-<Callout icon="triangle-alert">
-  Never commit your `*.tfstate` files to Git or any public repository. They may contain sensitive data (e.g., resource IDs, secrets).
-</Callout>
+> **triangle-alert** Never commit your `*.tfstate` files to Git or any public repository. They may contain sensitive data (e.g., resource IDs, secrets).
 
 Instead, keep your `.tf` files in a VCS and configure a **remote backend** for state management.
 
@@ -43,13 +39,9 @@ Instead, keep your `.tf` files in a VCS and configure a **remote backend** for s
 | GitLab                 | [Google Cloud Storage](https://cloud.google.com/storage)                  |
 | Bitbucket              | [Azure Blob Storage](https://azure.microsoft.com/services/storage/blobs/) |
 
-<Frame>
-  ![The image is a diagram showing the integration of version control systems (GitHub, GitLab, Bitbucket) and remote state backends (Amazon S3, Google Cloud Storage) with OpenTofu, using .tf files and opentofo.tfstate.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882815/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Course-Objectives/version-control-integration-opentofu-diagram.jpg)
-</Frame>
+![The image is a diagram showing the integration of version control systems (GitHub, GitLab, Bitbucket) and remote state backends (Amazon S3, Google Cloud Storage) with OpenTofu, using .tf files and opentofo.tfstate.](https://kodekloud.com/kk-media/image/upload/v1752882815/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Course-Objectives/version-control-integration-opentofu-diagram.jpg)
 
-<Callout icon="lightbulb">
-  When you run `opentofu init` after configuring your backend, OpenTofu will migrate state automatically or prompt you for migration options.
-</Callout>
+> **lightbulb** When you run `opentofu init` after configuring your backend, OpenTofu will migrate state automatically or prompt you for migration options.
 
 ***
 
@@ -65,9 +57,7 @@ OpenTofu follows semantic versioning, progressing from alpha/beta to stable GA r
 | 1.7.0   | Minor         | Beta                 |
 | 1.8.0   | Minor         | Alpha                |
 
-<Frame>
-  ![The image features the OpenTofu logo with two computer screens displaying versions 1.6.1 and 1.6.2, alongside a list of other versions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882816/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Course-Objectives/opentofu-logo-computer-screens-versions.jpg)
-</Frame>
+![The image features the OpenTofu logo with two computer screens displaying versions 1.6.1 and 1.6.2, alongside a list of other versions.](https://kodekloud.com/kk-media/image/upload/v1752882816/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Course-Objectives/opentofu-logo-computer-screens-versions.jpg)
 
 Throughout this course, **KodeKloud** uses **OpenTofu v1.6.1** for all examples and hands-on labs.
 
@@ -85,6 +75,4 @@ In the next section, you’ll build your first custom module and learn to levera
 * [Google Cloud Storage Backend](https://www.terraform.io/language/settings/backends/gcs)
 * [Azure Blob Storage Backend](https://www.terraform.io/language/settings/backends/azurerm)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c11180fa-345f-4ff9-9d8d-352e624e0047/lesson/364887dd-aa95-4dcf-9cad-eee13b65c599" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c11180fa-345f-4ff9-9d8d-352e624e0047/lesson/364887dd-aa95-4dcf-9cad-eee13b65c599)

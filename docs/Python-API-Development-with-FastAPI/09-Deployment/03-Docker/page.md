@@ -41,25 +41,15 @@ Your FastAPI deployment is now fully configured and running:
 
 This setup improves performance, enhances security, and provides a robust production environment for your FastAPI application.
 
-<Frame>
-  ![The image shows the pgAdmin interface with a "Create - Server" dialog open, where connection details for a PostgreSQL server are being configured.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883408/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/pgadmin-create-server-dialog.jpg)
-</Frame>
+![The image shows the pgAdmin interface with a "Create - Server" dialog open, where connection details for a PostgreSQL server are being configured.](https://kodekloud.com/kk-media/image/upload/v1752883408/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/pgadmin-create-server-dialog.jpg)
 
-<Frame>
-  ![The image shows a Swagger UI interface displaying various API endpoints for managing posts and users, including GET, POST, PUT, and DELETE methods. Each endpoint is color-coded and includes options for creating, retrieving, updating, and deleting posts and users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883409/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/swagger-ui-api-endpoints-posts-users.jpg)
-</Frame>
+![The image shows a Swagger UI interface displaying various API endpoints for managing posts and users, including GET, POST, PUT, and DELETE methods. Each endpoint is color-coded and includes options for creating, retrieving, updating, and deleting posts and users.](https://kodekloud.com/kk-media/image/upload/v1752883409/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/swagger-ui-api-endpoints-posts-users.jpg)
 
-<Frame>
-  ![The image shows a FastAPI Swagger UI interface displaying various HTTP methods (GET, POST, PUT, DELETE) for managing posts. It includes options to get, create, update, and delete posts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883413/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/fastapi-swagger-http-methods-posts.jpg)
-</Frame>
+![The image shows a FastAPI Swagger UI interface displaying various HTTP methods (GET, POST, PUT, DELETE) for managing posts. It includes options to get, create, update, and delete posts.](https://kodekloud.com/kk-media/image/upload/v1752883413/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/fastapi-swagger-http-methods-posts.jpg)
 
-<Frame>
-  ![The image shows a diagram explaining how NGINX acts as a high-performance web server and proxy, handling SSL termination and forwarding HTTP requests to Gunicorn workers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883418/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/nginx-web-server-proxy-diagram.jpg)
-</Frame>
+![The image shows a diagram explaining how NGINX acts as a high-performance web server and proxy, handling SSL termination and forwarding HTTP requests to Gunicorn workers.](https://kodekloud.com/kk-media/image/upload/v1752883418/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/nginx-web-server-proxy-diagram.jpg)
 
-<Frame>
-  ![The image shows a webpage with instructions on how to configure domain name servers using Namecheap and 1&1 registrars. It includes screenshots of the interface and step-by-step guidance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883421/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/domain-name-server-configuration-guide.jpg)
-</Frame>
+![The image shows a webpage with instructions on how to configure domain name servers using Namecheap and 1&1 registrars. It includes screenshots of the interface and step-by-step guidance.](https://kodekloud.com/kk-media/image/upload/v1752883421/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/domain-name-server-configuration-guide.jpg)
 
 ***
 
@@ -67,9 +57,7 @@ By following these comprehensive steps, you have successfully deployed your Fast
 
 Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1af49f64-16e1-4559-841f-4b684c6a8f15/lesson/ae4d8123-2665-4064-bee5-01835bec331a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1af49f64-16e1-4559-841f-4b684c6a8f15/lesson/ae4d8123-2665-4064-bee5-01835bec331a)
 
 
 # Docker
@@ -86,21 +74,15 @@ In this lesson, you'll learn how to Dockerize a FastAPI application and set up a
 
 We begin by visiting Docker Hub to select our base image. For this FastAPI container, we will use the official Python image. While multiple versions and variants (such as slim and Alpine) are available, we are using Python version **3.9.7**.
 
-<Frame>
-  ![The image shows a webpage from Docker Hub displaying information about Python Docker images, including supported tags and respective Dockerfile links.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883424/notes-assets/images/Python-API-Development-with-FastAPI-Docker/python-docker-images-hub-info.jpg)
-</Frame>
+![The image shows a webpage from Docker Hub displaying information about Python Docker images, including supported tags and respective Dockerfile links.](https://kodekloud.com/kk-media/image/upload/v1752883424/notes-assets/images/Python-API-Development-with-FastAPI-Docker/python-docker-images-hub-info.jpg)
 
 Scroll down to review the available versions. The default image provides a range of tags and comprehensive documentation detailing supported architectures, Dockerfile links, and more.
 
-<Frame>
-  ![The image shows a webpage listing shared tags for Python Docker images, along with a quick reference section containing links and information about file issues, supported architectures, and image updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883426/notes-assets/images/Python-API-Development-with-FastAPI-Docker/python-docker-images-tags-reference.jpg)
-</Frame>
+![The image shows a webpage listing shared tags for Python Docker images, along with a quick reference section containing links and information about file issues, supported architectures, and image updates.](https://kodekloud.com/kk-media/image/upload/v1752883426/notes-assets/images/Python-API-Development-with-FastAPI-Docker/python-docker-images-tags-reference.jpg)
 
 Selecting the official image provides a clean and consistent starting point. However, note that the basic Python image does not include your application code or its dependencies—you will need to copy your source code and manually install dependencies. The essence of Docker is building an image that already contains everything required to run your application.
 
-<Frame>
-  ![The image shows the Docker Hub page for the official Python image, including details like tags and Dockerfile links.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883427/notes-assets/images/Python-API-Development-with-FastAPI-Docker/docker-hub-official-python-image.jpg)
-</Frame>
+![The image shows the Docker Hub page for the official Python image, including details like tags and Dockerfile links.](https://kodekloud.com/kk-media/image/upload/v1752883427/notes-assets/images/Python-API-Development-with-FastAPI-Docker/docker-hub-official-python-image.jpg)
 
 ***
 
@@ -192,9 +174,7 @@ COPY .
 
 Docker reuses the cached layers up to the `COPY requirements.txt` step, saving significant time during rebuilds.
 
-<Callout icon="lightbulb">
-  Avoid copying all files before installing dependencies. Any change in source code may trigger a complete reinstallation of dependencies.
-</Callout>
+> **lightbulb** Avoid copying all files before installing dependencies. Any change in source code may trigger a complete reinstallation of dependencies.
 
 ***
 
@@ -236,13 +216,11 @@ To view logs, execute:
 $ docker-compose logs
 ```
 
-<Callout icon="lightbulb">
-  If you modify the Dockerfile and need to rebuild the image, run:
+> **lightbulb** If you modify the Dockerfile and need to rebuild the image, run:
 
   ```bash theme={null}
   $ docker-compose up --build
   ```
-</Callout>
 
 ***
 
@@ -263,9 +241,7 @@ services:
 
 The volume configuration ensures that database data is persisted even if the container stops.
 
-<Frame>
-  ![The image shows a webpage with documentation about PostgreSQL environment variables, detailing their usage and configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883428/notes-assets/images/Python-API-Development-with-FastAPI-Docker/postgresql-environment-variables-docs.jpg)
-</Frame>
+![The image shows a webpage with documentation about PostgreSQL environment variables, detailing their usage and configuration.](https://kodekloud.com/kk-media/image/upload/v1752883428/notes-assets/images/Python-API-Development-with-FastAPI-Docker/postgresql-environment-variables-docs.jpg)
 
 When the containers start together, Docker’s DNS resolves service names. Specifying `DATABASE_HOSTNAME: postgres` in the API configuration ensures that the FastAPI container connects seamlessly with the PostgreSQL container.
 
@@ -447,6 +423,4 @@ By following these steps, you can create consistent, streamlined, and easily man
 
 Happy Dockerizing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1af49f64-16e1-4559-841f-4b684c6a8f15/lesson/85240ed9-ac3d-4041-93b7-5a627febaed6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1af49f64-16e1-4559-841f-4b684c6a8f15/lesson/85240ed9-ac3d-4041-93b7-5a627febaed6)

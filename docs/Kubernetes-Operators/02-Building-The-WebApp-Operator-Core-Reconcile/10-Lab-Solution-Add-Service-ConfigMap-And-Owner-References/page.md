@@ -42,9 +42,7 @@ Overview of the reconcile pattern
   * If found, optionally `Update` if desired state differs.
 * Return any real errors encountered.
 
-<Callout icon="lightbulb">
-  This pattern — build desired, set controller reference, get current, create-if-missing — is repeated for each child type (Deployment, Service, ConfigMap). Once you understand it for one resource, it applies to the others.
-</Callout>
+> **lightbulb** This pattern — build desired, set controller reference, get current, create-if-missing — is repeated for each child type (Deployment, Service, ConfigMap). Once you understand it for one resource, it applies to the others.
 
 Start by setting the owner reference on the Deployment before attempting to create it:
 
@@ -270,12 +268,8 @@ Links and references
 * [Controller Runtime SetControllerReference](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/controller/controllerutil)
 * [Kubebuilder RBAC markers](https://book.kubebuilder.io/reference/markers/crd.html)
 
-<Callout icon="warning">
-  Ensure your controller has the proper RBAC permissions for creating and updating Deployments, Services, and ConfigMaps. Missing RBAC rules will surface as permission-denied errors when the controller attempts resource operations.
-</Callout>
+> **warning** Ensure your controller has the proper RBAC permissions for creating and updating Deployments, Services, and ConfigMaps. Missing RBAC rules will surface as permission-denied errors when the controller attempts resource operations.
 
 This pattern — repeated for Deployment, Service, and ConfigMap — makes the controller predictable and easy to extend. Later sections will build on this by adding updates, status updates, and more advanced reconciliation logic.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/fb45983a-b0f1-4da4-931e-25fd2ebe8e73" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/fb45983a-b0f1-4da4-931e-25fd2ebe8e73)

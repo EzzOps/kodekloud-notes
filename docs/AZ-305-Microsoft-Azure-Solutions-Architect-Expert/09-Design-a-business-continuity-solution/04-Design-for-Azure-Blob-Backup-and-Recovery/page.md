@@ -26,7 +26,7 @@ Azure Blob Storage provides two primary data protection features:
 1. Log in to the Azure portal and navigate to your storage account.
 2. In the Overview pane, inspect the settings for soft delete, container soft delete, versioning, change feed, and other features.
 
-![The image shows a Microsoft Azure portal interface displaying details of a storage account named "eventstorage010," including its properties, security settings, and networking configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866808/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Backup-and-Recovery/azure-portal-eventstorage010-details.jpg)
+![The image shows a Microsoft Azure portal interface displaying details of a storage account named "eventstorage010," including its properties, security settings, and networking configurations.](https://kodekloud.com/kk-media/image/upload/v1752866808/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Backup-and-Recovery/azure-portal-eventstorage010-details.jpg)
 
 At this stage, you can:
 
@@ -66,7 +66,7 @@ Point-In-Time Restore (PITR) provides an additional layer of protection by allow
 * Two days ago (T minus two days), some blobs were deleted, leaving Container A with only one blob.
 * With PITR enabled, you can restore all blobs to their state from three days ago.
 
-![The image illustrates a process of point-in-time restore (PITR) for blobs, showing the deletion and restoration of data in storage accounts over a timeline of three days.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866809/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Backup-and-Recovery/point-in-time-restore-blobs-timeline.jpg)
+![The image illustrates a process of point-in-time restore (PITR) for blobs, showing the deletion and restoration of data in storage accounts over a timeline of three days.](https://kodekloud.com/kk-media/image/upload/v1752866809/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Backup-and-Recovery/point-in-time-restore-blobs-timeline.jpg)
 
 To enable PITR:
 

@@ -12,11 +12,11 @@ When a consumer (for example, a Lambda function) polls an SQS queue, the queue r
 
 By default, the visibility timeout is set to 30 seconds. If your message processing routinely takes longer—say, about two minutes—it's best to configure the timeout to accommodate that extra time. If additional time is required during processing, the consumer can call the Change Message Visibility API to extend the timeout and keep the message hidden.
 
-![The image illustrates the concept of SQS Visibility Timeout, showing a timeline with multiple "ReceiveMessage Request" events and indicating when messages are returned or not returned during the visibility timeout period.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858433/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings/sqs-visibility-timeout-timeline-diagram.jpg)
+![The image illustrates the concept of SQS Visibility Timeout, showing a timeline with multiple "ReceiveMessage Request" events and indicating when messages are returned or not returned during the visibility timeout period.](https://kodekloud.com/kk-media/image/upload/v1752858433/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings/sqs-visibility-timeout-timeline-diagram.jpg)
 
 This diagram emphasizes that once a consumer pulls a message from the SQS queue, the message remains hidden from other consumers for the duration of the configured timeout.
 
-![The image explains the concept of SQS Visibility Timeout, detailing how it prevents other consumers from seeing a message for a set duration, with a default of 30 seconds, and the need to adjust it based on processing time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858435/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings/sqs-visibility-timeout-explanation.jpg)
+![The image explains the concept of SQS Visibility Timeout, detailing how it prevents other consumers from seeing a message for a set duration, with a default of 30 seconds, and the need to adjust it based on processing time.](https://kodekloud.com/kk-media/image/upload/v1752858435/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings/sqs-visibility-timeout-explanation.jpg)
 
 > **lightbulb** Consider aligning the visibility timeout with the average processing time of your messages to reduce the risk of duplicate processing.
 
@@ -24,9 +24,9 @@ This diagram emphasizes that once a consumer pulls a message from the SQS queue,
 
 A delay queue allows you to postpone the delivery of messages. When a producer sends a message, you can specify a delay during which the message remains invisible to consumers. Although the default delay is zero seconds, it can be increased up to 15 minutes. The delay can be set at the queue level, and producers have the option to override this setting using the DelaySeconds parameter.
 
-![The image illustrates an SQS delay queue process, showing a message flow from a producer to a queue, where it is delayed for a specified time, before reaching the consumer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858437/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings/sqs-delay-queue-message-flow.jpg)
+![The image illustrates an SQS delay queue process, showing a message flow from a producer to a queue, where it is delayed for a specified time, before reaching the consumer.](https://kodekloud.com/kk-media/image/upload/v1752858437/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings/sqs-delay-queue-message-flow.jpg)
 
-![The image is a slide about SQS Delay Queue, explaining that the delay message defaults to 0 seconds but can be increased to 15 minutes, can be configured at the queue level, and publishers can override the default delay using the DelaySeconds parameter.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858438/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings/sqs-delay-queue-message-settings.jpg)
+![The image is a slide about SQS Delay Queue, explaining that the delay message defaults to 0 seconds but can be increased to 15 minutes, can be configured at the queue level, and publishers can override the default delay using the DelaySeconds parameter.](https://kodekloud.com/kk-media/image/upload/v1752858438/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings/sqs-delay-queue-message-settings.jpg)
 
 > **lightbulb** Adjust the delay queue settings to ensure that messages are delivered only when your system is ready to process them.
 
@@ -38,15 +38,15 @@ SQS uses a pull-based model for retrieving messages, with two primary methods: s
 
 In short polling, the consumer sends a request to the SQS queue and immediately receives any available messages. If there are no messages, the response is empty, and the consumer must continually poll until a message becomes available. This method often results in many empty responses, leading to increased costs and inefficiencies.
 
-![The image illustrates a short polling process involving AWS Lambda functions and a central service, showing multiple empty responses before a message is published.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858440/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings/aws-lambda-short-polling-process.jpg)
+![The image illustrates a short polling process involving AWS Lambda functions and a central service, showing multiple empty responses before a message is published.](https://kodekloud.com/kk-media/image/upload/v1752858440/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings/aws-lambda-short-polling-process.jpg)
 
 ### Long Polling
 
 Long polling addresses the inefficiencies of short polling by keeping the connection open for up to 20 seconds. If a new message arrives during this window, it is immediately delivered over the open connection. This reduces the number of empty responses, lowers polling costs, decreases network traffic, and improves overall throughput. Long polling can be enabled at the queue level using the ReceiveMessageWaitTimeSeconds parameter.
 
-![The image illustrates a long polling process involving two Lambda functions and a central service, with connections labeled "Keep connection open" and "Publish."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858441/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings/long-polling-lambda-functions-diagram.jpg)
+![The image illustrates a long polling process involving two Lambda functions and a central service, with connections labeled "Keep connection open" and "Publish."](https://kodekloud.com/kk-media/image/upload/v1752858441/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings/long-polling-lambda-functions-diagram.jpg)
 
-![The image is a slide about SQS long polling, stating it can be configured up to 20 seconds and enabled at the queue level or via the ReceiveMessageWaitTimeSeconds API.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858442/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings/sqs-long-polling-configuration-slide.jpg)
+![The image is a slide about SQS long polling, stating it can be configured up to 20 seconds and enabled at the queue level or via the ReceiveMessageWaitTimeSeconds API.](https://kodekloud.com/kk-media/image/upload/v1752858442/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings/sqs-long-polling-configuration-slide.jpg)
 
 The benefits of long polling over short polling include:
 
@@ -57,7 +57,7 @@ The benefits of long polling over short polling include:
 * Improved scalability and throughput
 * Simplified code logic
 
-![The image lists six advantages of long polling over short polling, including reduced empty responses, reduced polling costs, efficient message retrieval, decreased network traffic, scalability and improved throughput, and simplified code logic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858443/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings/long-polling-advantages-list.jpg)
+![The image lists six advantages of long polling over short polling, including reduced empty responses, reduced polling costs, efficient message retrieval, decreased network traffic, scalability and improved throughput, and simplified code logic.](https://kodekloud.com/kk-media/image/upload/v1752858443/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings/long-polling-advantages-list.jpg)
 
 > **lightbulb** When designing your SQS-based system, enable long polling to improve performance and reduce operational costs.
 
@@ -83,7 +83,7 @@ Effective management and configuration of AWS SQS settings are vital to achievin
 * The delay queue allows you to postpone the delivery of messages based on your system’s readiness.
 * Long polling minimizes empty responses and reduces the number of API calls, which enhances efficiency and lowers costs.
 
-![The image is a summary slide with four key points about message processing, visibility timeout, delay queues, and long polling in a queue system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858444/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings/message-processing-queue-summary.jpg)
+![The image is a summary slide with four key points about message processing, visibility timeout, delay queues, and long polling in a queue system.](https://kodekloud.com/kk-media/image/upload/v1752858444/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings/message-processing-queue-summary.jpg)
 
 By understanding and properly configuring these SQS settings, you can optimize system performance and manage costs effectively. For more in-depth information on AWS queues, consider exploring the [AWS Documentation](https://aws.amazon.com/documentation/sqs/).
 

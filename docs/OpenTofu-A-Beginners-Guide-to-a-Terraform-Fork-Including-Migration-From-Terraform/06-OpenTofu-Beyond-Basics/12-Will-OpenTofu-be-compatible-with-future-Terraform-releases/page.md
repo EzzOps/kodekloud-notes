@@ -28,9 +28,7 @@ OpenTofu’s CI/CD pipeline executes a comprehensive suite of tests—including 
 * Module compatibility across multiple Terraform versions.
 * Immediate detection of API mismatches or provider regressions.
 
-<Callout icon="lightbulb">
-  OpenTofu integrates with [GitHub Actions](https://github.com/features/actions) and community-maintained test harnesses to validate every commit.
-</Callout>
+> **lightbulb** OpenTofu integrates with [GitHub Actions](https://github.com/features/actions) and community-maintained test harnesses to validate every commit.
 
 ## 2. Structured Versioning
 
@@ -56,9 +54,7 @@ By rolling out changes in small increments, OpenTofu minimizes disruption:
 2. Opt-in CI pipelines allow teams to test upcoming releases in isolation.
 3. Clear deprecation notices provide weeks or months of transition time.
 
-<Callout icon="triangle-alert">
-  Always review the [Changelog](https://github.com/opentofu/opentofu/releases) before upgrading. Deprecated features will include migration guidance.
-</Callout>
+> **triangle-alert** Always review the [Changelog](https://github.com/opentofu/opentofu/releases) before upgrading. Deprecated features will include migration guidance.
 
 ## 4. Change Analysis and Impact Assessment
 
@@ -89,6 +85,4 @@ Our engineering team continuously tracks Terraform’s upstream [CHANGELOG.md](h
 
 By leveraging automated testing, clear versioning, incremental rollouts, and proactive impact analysis, OpenTofu delivers a stable, forward-compatible experience—so you can confidently adopt the latest Terraform innovations without fear of disruption.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/2cd98f42-3b24-497f-a51a-d98eaea8a694" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/2cd98f42-3b24-497f-a51a-d98eaea8a694)

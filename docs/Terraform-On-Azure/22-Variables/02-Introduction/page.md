@@ -35,9 +35,7 @@ resource "azurerm_storage_account" "storage2" {
 
 Referencing `var.location` and `var.resource_group_name` allows multiple resources to reuse the same inputs. If the region or resource group needs to change, update the variable defaults or supply different values at runtime in one place instead of editing every resource block.
 
-<Callout icon="lightbulb">
-  Variables can be provided by default values, environment variables, a `.tfvars` file, or via CLI flags when you run Terraform. This makes configurations portable and easier to manage across environments.
-</Callout>
+> **lightbulb** Variables can be provided by default values, environment variables, a `.tfvars` file, or via CLI flags when you run Terraform. This makes configurations portable and easier to manage across environments.
 
 Common ways to provide variable values
 
@@ -122,9 +120,7 @@ Plan: 1 to add, 0 to change, 0 to destroy.
 
 Note that the plan shows the resolved values (for example, `eastus` and `kodekloud-tf-var-rg`) rather than `var.rg` or `var.region`. This makes it easy to review what Terraform will deploy.
 
-<Callout icon="warning">
-  Do not store sensitive secrets (API keys, passwords) in plaintext `variables.tf` defaults or checked-in `.tfvars` files. Use environment variables, Terraform Cloud/Enterprise workspace variables, or secret management integrations to protect sensitive data.
-</Callout>
+> **warning** Do not store sensitive secrets (API keys, passwords) in plaintext `variables.tf` defaults or checked-in `.tfvars` files. Use environment variables, Terraform Cloud/Enterprise workspace variables, or secret management integrations to protect sensitive data.
 
 Quick reference: variable block essentials
 
@@ -150,9 +146,7 @@ Further reading and references
 
 A deeper dive into the `variable` block would cover advanced topics such as type constraints, `validation` blocks, `sensitive` attributes, and multiple ways to provide variable values across CI/CD and team workflows.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/6909fa70-4ccc-40c3-a918-1188673d8985/lesson/4499ac01-c650-4fa8-b55c-f75a90691478" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/6909fa70-4ccc-40c3-a918-1188673d8985/lesson/4499ac01-c650-4fa8-b55c-f75a90691478)
 
 
 # Introduction
@@ -183,9 +177,7 @@ Agenda for this lesson:
   <img alt="The image presents an agenda with four points about using input variables in Terraform configurations, including defining variables, understanding variable blocks, setting variable values, and identifying data types. The agenda is visually organized with numbered markers and a gradient background." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Use variables to decouple environment-specific data from configuration. This enables the same Terraform codebase to provision different environments by supplying different variable values.
-</Callout>
+> **lightbulb** Use variables to decouple environment-specific data from configuration. This enables the same Terraform codebase to provision different environments by supplying different variable values.
 
 We will now start by looking at how to declare input variables and the structure of a `variable` block.
 
@@ -298,9 +290,7 @@ CLI example:
 terraform apply -var='location=westus2' -var='resource_name=my-rg'
 ```
 
-<Callout icon="warning">
-  Do not commit secrets (passwords, API keys) into `.tfvars` files stored in version control. Use a secrets manager or mark variables `sensitive = true` and supply values via secure pipelines or Terraform Cloud/Enterprise variable sets.
-</Callout>
+> **warning** Do not commit secrets (passwords, API keys) into `.tfvars` files stored in version control. Use a secrets manager or mark variables `sensitive = true` and supply values via secure pipelines or Terraform Cloud/Enterprise variable sets.
 
 ## Best practices
 
@@ -316,6 +306,4 @@ terraform apply -var='location=westus2' -var='resource_name=my-rg'
 
 We will next walk through concrete examples of using variables in modules and how to organize `tfvars` files per environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/6909fa70-4ccc-40c3-a918-1188673d8985/lesson/fb6658ce-0f7a-4c42-b3a7-9cdd5dd21331" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/6909fa70-4ccc-40c3-a918-1188673d8985/lesson/fb6658ce-0f7a-4c42-b3a7-9cdd5dd21331)

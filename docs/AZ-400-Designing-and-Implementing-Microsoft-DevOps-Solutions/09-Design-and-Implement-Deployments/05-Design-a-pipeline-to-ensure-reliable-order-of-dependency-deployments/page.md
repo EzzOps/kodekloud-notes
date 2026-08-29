@@ -23,7 +23,7 @@ Managing dependencies is like following a recipe: deploy a database before a web
 * **ManualValidation\@0**: Add human approval gates.
 * **Gates & Checks**: Automate conditional validations.
 
-![The image is a flowchart titled "Designing a Pipeline for Reliable Dependency Deployments," illustrating steps like utilizing Azure Pipelines, structuring YAML, and implementing approval gates for managing deployments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867616/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-pipeline-to-ensure-reliable-order-of-dependency-deployments/designing-pipeline-reliable-deployments-flowchart.jpg)
+![The image is a flowchart titled "Designing a Pipeline for Reliable Dependency Deployments," illustrating steps like utilizing Azure Pipelines, structuring YAML, and implementing approval gates for managing deployments.](https://kodekloud.com/kk-media/image/upload/v1752867616/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-pipeline-to-ensure-reliable-order-of-dependency-deployments/designing-pipeline-reliable-deployments-flowchart.jpg)
 
 > **lightbulb** Deploying components out of sequence can cause runtime errors, data corruption, or service downtime. Always model your pipeline to mirror real-world dependencies.
 
@@ -103,7 +103,7 @@ Approval gates provide an extra layer of control before critical stages run:
 | Manual Approvals | High-impact releases requiring human verification |
 | Automated Checks | Validate service endpoints, version constraints   |
 
-![The image is a slide titled "Implementing Approval Gates," listing two points: "Adding manual approvals" and "Using automated gates for dependency checks."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867617/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-pipeline-to-ensure-reliable-order-of-dependency-deployments/implementing-approval-gates-manual-automated.jpg)
+![The image is a slide titled "Implementing Approval Gates," listing two points: "Adding manual approvals" and "Using automated gates for dependency checks."](https://kodekloud.com/kk-media/image/upload/v1752867617/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-pipeline-to-ensure-reliable-order-of-dependency-deployments/implementing-approval-gates-manual-automated.jpg)
 
 > **triangle-alert** Excessive manual approvals can slow down your delivery cadence. Balance manual and automated gates to maintain speed and safety.
 
@@ -111,7 +111,7 @@ Approval gates provide an extra layer of control before critical stages run:
 
 After deployment, continuous monitoring ensures your application stays healthy and performant. Integrate Azure Monitor and Application Insights to collect metrics, logs, and alerts:
 
-![The image shows icons for Azure Monitor and Application Insights under the heading "Monitoring and Logging," with a description about tracking deployment status and health.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867618/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-pipeline-to-ensure-reliable-order-of-dependency-deployments/azure-monitor-application-insights-logging.jpg)
+![The image shows icons for Azure Monitor and Application Insights under the heading "Monitoring and Logging," with a description about tracking deployment status and health.](https://kodekloud.com/kk-media/image/upload/v1752867618/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-pipeline-to-ensure-reliable-order-of-dependency-deployments/azure-monitor-application-insights-logging.jpg)
 
 * **Azure Monitor**: Track resource health, set alerts on failures.
 * **Application Insights**: Diagnose application performance issues in real time.
@@ -122,7 +122,7 @@ After deployment, continuous monitoring ensures your application stays healthy a
 2. Keep your YAML definitions DRY—use templates and parameters.
 3. Collaborate closely with database and infrastructure teams.
 
-![The image presents three best practices and tips for deployment: continuous testing of deployment sequences, regular updates to deployment scripts, and collaboration between development and operations teams.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867620/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-pipeline-to-ensure-reliable-order-of-dependency-deployments/deployment-best-practices-tips.jpg)
+![The image presents three best practices and tips for deployment: continuous testing of deployment sequences, regular updates to deployment scripts, and collaboration between development and operations teams.](https://kodekloud.com/kk-media/image/upload/v1752867620/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-pipeline-to-ensure-reliable-order-of-dependency-deployments/deployment-best-practices-tips.jpg)
 
 ## Links and References
 

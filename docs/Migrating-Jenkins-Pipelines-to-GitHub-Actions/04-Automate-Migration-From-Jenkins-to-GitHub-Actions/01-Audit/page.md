@@ -56,9 +56,7 @@ Jenkins requires ongoing server maintenance, plugin updates, and security patchi
 
 Overall, for teams already using GitHub, adopting GitHub Actions can reduce DevOps toil and simplify CI/CD through native integration, readable YAML workflows, scalable hosted runners, reusable marketplace components, and lower maintenance.
 
-<Callout icon="lightbulb">
-  [Jenkins](https://learn.kodekloud.com/user/courses/jenkins) remains a powerful choice for advanced on‑premises use cases that require heavy customization, unique plugin ecosystems, or strict network isolation. Evaluate migration based on your specific requirements, compliance constraints, and plugin dependencies.
-</Callout>
+> **lightbulb** [Jenkins](https://learn.kodekloud.com/user/courses/jenkins) remains a powerful choice for advanced on‑premises use cases that require heavy customization, unique plugin ecosystems, or strict network isolation. Evaluate migration based on your specific requirements, compliance constraints, and plugin dependencies.
 
 When to consider staying with Jenkins
 
@@ -84,9 +82,7 @@ To conclude: Jenkins is still a valid and capable CI/CD platform for specific, a
   <img alt="A slide titled &#x22;Why Migrate from Jenkins to GitHub Actions?&#x22; comparing Jenkins (left) and GitHub Actions (right). Jenkins is described as powerful for complex, on‑premises pipelines with heavy customization, while GitHub Actions is said to simplify CI/CD with native integration and reduced maintenance." />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/c8922198-0dcd-4910-9545-21e08f8a847c/lesson/e805e71a-4e1e-4ac6-bb01-e348c027d912" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/c8922198-0dcd-4910-9545-21e08f8a847c/lesson/e805e71a-4e1e-4ac6-bb01-e348c027d912)
 
 
 # Audit
@@ -109,9 +105,7 @@ The `audit` command gives a complete overview of pipelines on a Jenkins server a
 
 By default the audit inspects the entire Jenkins instance. To limit the audit to a single folder, use the `-f` flag and specify the folder path. You must also set the output directory with `--output-dir` (or `-o`); the path must be located beneath the directory from which you run the GitHub Actions Importer commands.
 
-<Callout icon="lightbulb">
-  When you provide `--output-dir`, the tool writes all artifacts (converted workflows, logs, and metadata) into that directory. Ensure you have write permissions and sufficient disk space before starting the audit.
-</Callout>
+> **lightbulb** When you provide `--output-dir`, the tool writes all artifacts (converted workflows, logs, and metadata) into that directory. Ensure you have write permissions and sufficient disk space before starting the audit.
 
 Example audit invocation and sample console output:
 
@@ -277,9 +271,7 @@ Manual tasks explained:
 * Secrets: repository/organization secrets referenced by converted workflows. Create these manually in GitHub so workflows run correctly.
 * Self-hosted runners: runner labels referenced by workflows. Provision and register these runners in GitHub if required.
 
-<Callout icon="warning">
-  Workflows that reference secrets or self-hosted runners will not run until those resources are created and configured. Plan to create required secrets and register self-hosted runners before enabling converted workflows in production.
-</Callout>
+> **warning** Workflows that reference secrets or self-hosted runners will not run until those resources are created and configured. Plan to create required secrets and register self-hosted runners before enabling converted workflows in production.
 
 ## Manifest of conversion artifacts (example)
 
@@ -357,6 +349,4 @@ test_freestyle_project,DemoRunner,tmp/audit/test_freestyle_project/.github/workf
 
 That concludes the audit overview.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/5103f5c1-1448-4082-b951-24a1cc395056" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/5103f5c1-1448-4082-b951-24a1cc395056)

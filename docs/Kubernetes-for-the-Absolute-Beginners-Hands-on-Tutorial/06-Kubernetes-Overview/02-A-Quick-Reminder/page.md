@@ -4,9 +4,7 @@ Source: https://notes.kodekloud.com/docs/Kubernetes-for-the-Absolute-Beginners-H
 
 This article emphasizes the importance of using labs and videos for effective learning in containerization and orchestration before setting up a local environment.
 
-<Callout icon="lightbulb">
-  Before diving into setting up your local environment, remember that the labs and videos integrated into this course provide a structured and effective learning path. Following these hands-on labs and detailed videos first will ensure you gain a comprehensive understanding, helping you avoid potential distractions.
-</Callout>
+> **lightbulb** Before diving into setting up your local environment, remember that the labs and videos integrated into this course provide a structured and effective learning path. Following these hands-on labs and detailed videos first will ensure you gain a comprehensive understanding, helping you avoid potential distractions.
 
 This article emphasizes the significance of utilizing the provided labs and video sessions. These resources are meticulously designed to enhance your learning experience and build a strong foundation in containerization and orchestration concepts. While it may be tempting to set up your environment immediately, postponing that process until after completing all guided activities will maximize your progress and competence.
 
@@ -33,6 +31,4 @@ $ docker run redis
 
 Thank you for choosing our course and becoming a part of KodeKloud. We are here to support you at every step as you work towards achieving your learning goals.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/101e958e-d0aa-4b44-8f0b-abda59a1e398/lesson/6bf9346d-b7cd-43e2-bb86-bd83f97c550a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/101e958e-d0aa-4b44-8f0b-abda59a1e398/lesson/6bf9346d-b7cd-43e2-bb86-bd83f97c550a)

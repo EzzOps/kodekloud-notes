@@ -10,7 +10,7 @@ In this article, we discuss the concept of instance stores and their relationshi
 
 Instance stores provide **temporary storage** that is physically attached to the host machine. Unlike EBS volumes—which reside on separate machines and are accessed via protocols like iSCSI—instance stores enable your EC2 instance to access a local physical drive directly on the host. Their temporary nature means that the stored data is lost if the instance is moved to a different host.
 
-![The image is a diagram titled "Instance Store Volumes," showing four block storage options, with "Block Storage 02" connected to "Instance Storage" via an arrow.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865996/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Instance-Store/instance-store-volumes-diagram.jpg)
+![The image is a diagram titled "Instance Store Volumes," showing four block storage options, with "Block Storage 02" connected to "Instance Storage" via an arrow.](https://kodekloud.com/kk-media/image/upload/v1752865996/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Instance-Store/instance-store-volumes-diagram.jpg)
 
 ## How Instance Stores Work
 
@@ -21,7 +21,7 @@ Consider a scenario where multiple EC2 instances run on the same host machine. W
 
 However, when an instance is shut down and later restarted on a different host, it loses access to the original instance store and all associated data because the new host has a different storage configuration.
 
-![The image illustrates an instance storage architecture with two hosts, each containing a processor and connected instance stores. Host 1 has two instance stores, while Host 2 has one.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865998/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Instance-Store/instance-storage-architecture-hosts.jpg)
+![The image illustrates an instance storage architecture with two hosts, each containing a processor and connected instance stores. Host 1 has two instance stores, while Host 2 has one.](https://kodekloud.com/kk-media/image/upload/v1752865998/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Instance-Store/instance-storage-architecture-hosts.jpg)
 
 > **triangle-alert** Moving an EC2 instance to a different host results in the loss of any data stored on the original instance store. Use instance stores only for data that can be safely discarded.
 
@@ -45,7 +45,7 @@ To summarize:
 * Data on an instance store is lost if the instance migrates to a different host.
 * They are ideal for transient data such as caches or scratch files, but not for persistent storage.
 
-![The image is a summary slide with two points: instance stores should be used for temporary data, and moving an EC2 instance will result in data loss from the original instance store.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865998/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Instance-Store/ec2-instance-stores-summary-slide.jpg)
+![The image is a summary slide with two points: instance stores should be used for temporary data, and moving an EC2 instance will result in data loss from the original instance store.](https://kodekloud.com/kk-media/image/upload/v1752865998/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Instance-Store/ec2-instance-stores-summary-slide.jpg)
 
 By understanding the inherent limitations and ideal use cases for instance stores, you can better architect your cloud infrastructure to maximize performance and efficiency while safeguarding critical data.
 

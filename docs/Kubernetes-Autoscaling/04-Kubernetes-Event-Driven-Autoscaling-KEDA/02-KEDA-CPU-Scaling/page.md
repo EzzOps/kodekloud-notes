@@ -6,9 +6,7 @@ Guide to configuring KEDA to autoscale Kubernetes workloads based on CPU utiliza
 
 Welcome — this guide explains how to configure KEDA to scale workloads based on CPU utilization. KEDA leverages the Kubernetes Horizontal Pod Autoscaler (HPA) to perform horizontal scaling, so CPU-based scaling requires both the Metrics Server and proper resource requests to produce reliable behavior.
 
-<Callout icon="lightbulb">
-  Ensure the Kubernetes Metrics Server is installed and that each container in your Pod defines CPU `requests` (or `limits`) in the `resources` block. Without metrics and resource requests, CPU-based autoscaling will not behave as expected.
-</Callout>
+> **lightbulb** Ensure the Kubernetes Metrics Server is installed and that each container in your Pod defines CPU `requests` (or `limits`) in the `resources` block. Without metrics and resource requests, CPU-based autoscaling will not behave as expected.
 
 Summary of core requirements
 
@@ -50,9 +48,7 @@ triggers:
     containerName: "app"   # Optional. Use to target a specific container in a Pod with multiple containers.
 ```
 
-<Callout icon="lightbulb">
-  If your Pod contains only a single application container (recommended), `containerName` is not required. Add `containerName` when you have sidecars to ensure scaling is driven by the correct container.
-</Callout>
+> **lightbulb** If your Pod contains only a single application container (recommended), `containerName` is not required. Add `containerName` when you have sidecars to ensure scaling is driven by the correct container.
 
 Example: ScaledObject for CPU-based scaling
 
@@ -91,9 +87,7 @@ Practical tips and common pitfalls
 * Tune `minReplicaCount`, `maxReplicaCount`, and the trigger `value` to match real application load patterns and SLAs.
 * Monitor the HPA object created by KEDA to ensure metrics are available: `kubectl get hpa -n <namespace>` and `kubectl describe hpa <name>`.
 
-<Callout icon="warning">
-  Do not rely on CPU scaling alone for bursty or short-lived workloads. Consider combining CPU-based triggers with other KEDA scalers (e.g., queue length, custom metrics) for more responsive behavior.
-</Callout>
+> **warning** Do not rely on CPU scaling alone for bursty or short-lived workloads. Consider combining CPU-based triggers with other KEDA scalers (e.g., queue length, custom metrics) for more responsive behavior.
 
 Reference links
 
@@ -103,8 +97,6 @@ Reference links
 
 This guide explained how to configure KEDA to scale based on CPU using a ScaledObject and a CPU trigger. Other KEDA scalers follow the same ScaledObject + trigger pattern, but each scaler requires its specific trigger metadata.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/24de6c5a-a759-451a-a3ec-b9abaee06425" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/24de6c5a-a759-451a-a3ec-b9abaee06425)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/a592bf82-74d3-435b-b3af-4807e73ab7c5" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/a592bf82-74d3-435b-b3af-4807e73ab7c5)

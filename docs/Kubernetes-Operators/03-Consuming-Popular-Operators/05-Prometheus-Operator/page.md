@@ -243,9 +243,7 @@ Running multiple operators side-by-side is a common pattern; namespaces are conv
 * [cert-manager documentation](https://cert-manager.io/docs/)
 * [Prometheus Operator documentation](https://prometheus-operator.dev/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/b5e6237b-c98e-4357-b26a-f18c583af395/lesson/27b5fb3a-47d5-4240-8c0e-d0bb2eae96b8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/b5e6237b-c98e-4357-b26a-f18c583af395/lesson/27b5fb3a-47d5-4240-8c0e-d0bb2eae96b8)
 
 
 # Prometheus Operator
@@ -377,9 +375,7 @@ In production clusters, the Prometheus Operator is frequently installed as part 
 
 After installation, cluster resources (ServiceMonitors, PodMonitors, PrometheusRules) are the primary extension points teams use to customize monitoring behavior for their applications.
 
-<Callout icon="lightbulb">
-  Selectors in the Prometheus resource control which monitoring objects a Prometheus instance will ingest. Use labels and selectors to enforce clear ownership boundaries in shared clusters.
-</Callout>
+> **lightbulb** Selectors in the Prometheus resource control which monitoring objects a Prometheus instance will ingest. Use labels and selectors to enforce clear ownership boundaries in shared clusters.
 
 ## Links and references
 
@@ -391,6 +387,4 @@ After installation, cluster resources (ServiceMonitors, PodMonitors, PrometheusR
 
 You will deploy Prometheus through the operator, create a monitored target, and use a ServiceMonitor to connect it to the Prometheus instance.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/b5e6237b-c98e-4357-b26a-f18c583af395/lesson/3e771024-889a-41f8-b990-bdbdcea51ec4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/b5e6237b-c98e-4357-b26a-f18c583af395/lesson/3e771024-889a-41f8-b990-bdbdcea51ec4)

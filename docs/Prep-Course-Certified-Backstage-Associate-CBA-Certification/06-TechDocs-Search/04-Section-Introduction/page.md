@@ -16,9 +16,7 @@ This section covers:
 * An overview of Search: how Backstage indexes catalog entities and TechDocs content to deliver unified discovery.
 * A high-level workflow: authoring docs, connecting them to catalog entities, and ensuring they are indexed by Search.
 
-<Callout icon="lightbulb">
-  Tip: Treat TechDocs and the Software Catalog as a combined workflow—author documentation in your repo, point a catalog entity to that repo, and Backstage will render and index the docs so your team can discover them via Search.
-</Callout>
+> **lightbulb** Tip: Treat TechDocs and the Software Catalog as a combined workflow—author documentation in your repo, point a catalog entity to that repo, and Backstage will render and index the docs so your team can discover them via Search.
 
 Why this matters
 
@@ -48,6 +46,4 @@ Links and references
 
 This article will include setup instructions, configuration examples, and practical guidance to help you author TechDocs content so it becomes discoverable through Backstage Search.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/ea371bfc-3770-4d25-80ef-e464e4b24fda/lesson/7729e54c-1815-464d-9556-ce07f7afb7cb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/ea371bfc-3770-4d25-80ef-e464e4b24fda/lesson/7729e54c-1815-464d-9556-ce07f7afb7cb)

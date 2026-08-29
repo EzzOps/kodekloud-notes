@@ -12,9 +12,7 @@ Cilium supports two modes for provisioning external cloud load balancers for Ing
 | dedicated | Each Ingress resource provisions its own external Load Balancer (e.g., AWS ELB/ALB per Ingress).                                                    | Use when you need strict isolation per Ingress or separate public endpoints.  |
 | shared    | Multiple Ingress resources share a single external Load Balancer. Cilium programs forwarding rules so a single LB routes traffic to many Ingresses. | Use to minimize cloud LB count and cost; centralize routing and certificates. |
 
-<Callout icon="warning">
-  Using dedicated mode increases the number of cloud load balancers (and cost). Use shared mode to consolidate LB resources, and prefer dedicated only when endpoint isolation or separate LB features are required.
-</Callout>
+> **warning** Using dedicated mode increases the number of cloud load balancers (and cost). Use shared mode to consolidate LB resources, and prefer dedicated only when endpoint isolation or separate LB features are required.
 
 You can also control the LB mode per-Ingress with an annotation:
 
@@ -82,9 +80,7 @@ Shared mode
 
 This concludes the Cilium Ingress overview. Gateway API integration and advanced Envoy configuration are covered in separate Cilium documentation and guides.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/f3332407-b4cd-41ed-91da-b2567243ae07" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/f3332407-b4cd-41ed-91da-b2567243ae07)
 
 
 # Cilium Service Mesh vs Others
@@ -160,10 +156,6 @@ Links and references:
 * [Envoy](https://www.envoyproxy.io) — high-performance edge and service proxy
 * [Istio](https://istio.io) — example sidecar-based service mesh
 
-<Callout icon="lightbulb">
-  Cilium’s approach reduces per-pod overhead by using eBPF for L3/L4 while still providing L7 capabilities via node-local Envoy instances—combining performance with feature completeness.
-</Callout>
+> **lightbulb** Cilium’s approach reduces per-pod overhead by using eBPF for L3/L4 while still providing L7 capabilities via node-local Envoy instances—combining performance with feature completeness.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/1da8eb0c-d53a-4aae-a0fa-454991ff41f2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/1da8eb0c-d53a-4aae-a0fa-454991ff41f2)

@@ -43,9 +43,7 @@ A checkpoint is a snapshot of your training state at a given time. It typically 
 
 Checkpoints allow you to resume training exactly where it left off.
 
-<Frame>
-  ![The image explains the benefits of saving and loading a checkpoint during training, including saving parameters, resuming from where it left off, and choosing specific models.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883166/notes-assets/images/PyTorch-Saving-and-loading-models/checkpoint-saving-loading-benefits.jpg)
-</Frame>
+![The image explains the benefits of saving and loading a checkpoint during training, including saving parameters, resuming from where it left off, and choosing specific models.](https://kodekloud.com/kk-media/image/upload/v1752883166/notes-assets/images/PyTorch-Saving-and-loading-models/checkpoint-saving-loading-benefits.jpg)
 
 ### Saving a Checkpoint
 
@@ -97,9 +95,7 @@ for epoch in range(N_EPOCHS):
 
 Warm starting means initializing a new model with parameters from a previously trained one rather than starting from scratch. This is particularly useful in transfer learning scenarios where a pre-trained model is adapted to a related task, leading to faster convergence and improved performance.
 
-<Frame>
-  ![The image explains "Warmstarting" in machine learning, highlighting its benefits such as faster convergence and adaptation to new tasks using pre-trained models.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883166/notes-assets/images/PyTorch-Saving-and-loading-models/warmstarting-machine-learning-benefits.jpg)
-</Frame>
+![The image explains "Warmstarting" in machine learning, highlighting its benefits such as faster convergence and adaptation to new tasks using pre-trained models.](https://kodekloud.com/kk-media/image/upload/v1752883166/notes-assets/images/PyTorch-Saving-and-loading-models/warmstarting-machine-learning-benefits.jpg)
 
 To warm start a model, load its state dictionary. If there are discrepancies between the keys (due to missing or extra parameters), you can set the `strict` flag to `False`.
 
@@ -136,21 +132,15 @@ model.to(torch.device('cuda'))
 
 Always ensure that both your model and input data are on the same device for optimal performance.
 
-<Frame>
-  ![The image provides tips for saving and loading models across devices, including training on GPU and inferring on CPU, using map\_location in torch.load(), and mapping between GPU and CPU.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883167/notes-assets/images/PyTorch-Saving-and-loading-models/model-saving-loading-tips-gpu-cpu.jpg)
-</Frame>
+![The image provides tips for saving and loading models across devices, including training on GPU and inferring on CPU, using map\_location in torch.load(), and mapping between GPU and CPU.](https://kodekloud.com/kk-media/image/upload/v1752883167/notes-assets/images/PyTorch-Saving-and-loading-models/model-saving-loading-tips-gpu-cpu.jpg)
 
 ## Model Registries
 
 A model registry is a centralized system to organize, store, and manage models. It simplifies tracking model versions, sharing across teams, and managing deployments. Popular solutions like MLflow, AWS SageMaker Model Registry, and Azure Machine Learning Model Registry integrate seamlessly with PyTorch. Although this guide doesn't delve deeply into model registries, they are invaluable for efficient production workflows.
 
-<Frame>
-  ![The image is a presentation slide titled "Model Registry," highlighting three benefits: organizing and managing models, tracking versions for easy sharing and deployment, and improving collaboration with version control across teams.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883168/notes-assets/images/PyTorch-Saving-and-loading-models/model-registry-benefits-slide.jpg)
-</Frame>
+![The image is a presentation slide titled "Model Registry," highlighting three benefits: organizing and managing models, tracking versions for easy sharing and deployment, and improving collaboration with version control across teams.](https://kodekloud.com/kk-media/image/upload/v1752883168/notes-assets/images/PyTorch-Saving-and-loading-models/model-registry-benefits-slide.jpg)
 
-<Frame>
-  ![The image shows logos and names of three model registry platforms: MLflow, Amazon SageMaker Model Registry, and Azure Machine Learning Model Registry.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883169/notes-assets/images/PyTorch-Saving-and-loading-models/model-registry-logos-mlflow-sagemaker-azure.jpg)
-</Frame>
+![The image shows logos and names of three model registry platforms: MLflow, Amazon SageMaker Model Registry, and Azure Machine Learning Model Registry.](https://kodekloud.com/kk-media/image/upload/v1752883169/notes-assets/images/PyTorch-Saving-and-loading-models/model-registry-logos-mlflow-sagemaker-azure.jpg)
 
 ## Summary
 
@@ -163,23 +153,15 @@ We've explored several methods for saving and loading models in PyTorch:
 * Handling device differences by using the `map_location` parameter.
 * Managing model versions through a centralized model registry.
 
-<Frame>
-  ![The image is a summary slide listing three points: methods for saving and loading models, the importance of state\_dict in PyTorch, and using TorchScript for high-performance environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883170/notes-assets/images/PyTorch-Saving-and-loading-models/model-saving-loading-pytorch-summary.jpg)
-</Frame>
+![The image is a summary slide listing three points: methods for saving and loading models, the importance of state\_dict in PyTorch, and using TorchScript for high-performance environments.](https://kodekloud.com/kk-media/image/upload/v1752883170/notes-assets/images/PyTorch-Saving-and-loading-models/model-saving-loading-pytorch-summary.jpg)
 
-<Frame>
-  ![The image is a summary slide with two points: "Warmstarting and its connection to transfer learning" and "Using models across CPUs and GPUs."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883171/notes-assets/images/PyTorch-Saving-and-loading-models/warmstarting-transfer-learning-cpus-gpus.jpg)
-</Frame>
+![The image is a summary slide with two points: "Warmstarting and its connection to transfer learning" and "Using models across CPUs and GPUs."](https://kodekloud.com/kk-media/image/upload/v1752883171/notes-assets/images/PyTorch-Saving-and-loading-models/warmstarting-transfer-learning-cpus-gpus.jpg)
 
-<Callout icon="lightbulb">
-  Ensure that you save and load your models consistently with the same configuration and device mappings to avoid runtime errors.
-</Callout>
+> **lightbulb** Ensure that you save and load your models consistently with the same configuration and device mappings to avoid runtime errors.
 
 This comprehensive walkthrough of saving and loading models in PyTorch should provide you with the tools you need to manage your models effectively. Now, try out these techniques in your demo and optimize your workflow!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/916cc3d9-f79d-425a-9a29-08ddc0f2a80a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/916cc3d9-f79d-425a-9a29-08ddc0f2a80a)
 
 
 # Course Introduction
@@ -214,6 +196,4 @@ In the final phase, you will learn how to serve your trained models in productio
 
 By the end of this course, you will have built, trained, and deployed a complete image classification solution. Are you ready to make a significant impact in the fields of AI and healthcare? Let’s get started on this transformative journey to elevate your PyTorch expertise!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/24f499b9-3958-4227-abe2-54dc3abf6433" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/5a59db15-2490-4be0-a894-4b3d3cc78fac/lesson/24f499b9-3958-4227-abe2-54dc3abf6433)

@@ -35,9 +35,7 @@ service/httpbin created
 | httpbin                                                 | Demo HTTP service                 | Useful for example workflows          |
 | CRDs (Workflows, WorkflowTemplates, CronWorkflows, ...) | Custom resource definitions       | Required for Argo CRs to work         |
 
-<Callout icon="lightbulb">
-  MinIO provided in the quick-start is suitable for demos and testing. For production systems, configure Argo to use a durable artifact repository (S3/GCS) and supply appropriate credentials.
-</Callout>
+> **lightbulb** MinIO provided in the quick-start is suitable for demos and testing. For production systems, configure Argo to use a durable artifact repository (S3/GCS) and supply appropriate credentials.
 
 ## 3. Expose the Argo Server (optional)
 
@@ -163,9 +161,7 @@ That completes the installation and initial setup of Argo Workflows. You can now
 * Kubernetes docs: [Kubernetes Concepts](https://kubernetes.io/docs/concepts/)
 * MinIO: [MinIO Documentation](https://min.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/24755975-b290-466e-b861-14fa52acf911" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/24755975-b290-466e-b861-14fa52acf911)
 
 
 # Demo Parameters
@@ -206,9 +202,7 @@ Key points
 * Inside a template, declare the same parameter name under `inputs.parameters` and reference it with `{{inputs.parameters.<name>}}`.
 * Some fields also support direct workflow-level references using `{{workflow.parameters.<name>}}`.
 
-<Callout icon="lightbulb">
-  A common way to reference a workflow parameter inside a template is to declare the parameter under the template's `inputs.parameters` and then use the expression `{{inputs.parameters.<name>}}` in container args or other fields that accept template expressions. You can also reference workflow-level parameters directly using `{{workflow.parameters.<name>}}` in fields that accept template expressions.
-</Callout>
+> **lightbulb** A common way to reference a workflow parameter inside a template is to declare the parameter under the template's `inputs.parameters` and then use the expression `{{inputs.parameters.<name>}}` in container args or other fields that accept template expressions. You can also reference workflow-level parameters directly using `{{workflow.parameters.<name>}}` in fields that accept template expressions.
 
 Submit the workflow and watch the run (example using a public manifest URL):
 
@@ -354,6 +348,4 @@ Further reading
 * [Argo Workflows Documentation](https://argoproj.github.io/argo-workflows/)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/afa0672d-7cf5-4470-9f12-18e1394157a6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/afa0672d-7cf5-4470-9f12-18e1394157a6)

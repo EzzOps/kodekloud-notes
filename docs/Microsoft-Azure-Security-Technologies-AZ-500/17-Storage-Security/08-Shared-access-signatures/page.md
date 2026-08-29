@@ -6,9 +6,7 @@ Shared Access Signatures provide granular control over access to Azure storage r
 
 Shared Access Signatures (SAS) provide a powerful, granular way to control access to your Azure storage resources. Instead of relying on storage account keys—which grant broad, unrestricted access—SAS enables you to specify precise permissions, resource scopes, and timeframes for accessing blobs, queues, tables, or files.
 
-<Callout icon="lightbulb">
-  Using SAS allows you to grant temporary and limited access to Azure Storage resources without exposing your account keys. It serves as a tailor-made access card that improves security and control.
-</Callout>
+> **lightbulb** Using SAS allows you to grant temporary and limited access to Azure Storage resources without exposing your account keys. It serves as a tailor-made access card that improves security and control.
 
 Below is a breakdown of key features and configuration options for SAS:
 
@@ -27,9 +25,7 @@ Not all SAS tokens are created equal. There are three primary types:
 
 2. **Service SAS**
 
-<Frame>
-  ![The image explains Shared Access Signature (SAS) with details on fine-tuned access, types of SAS keys, and configurable permissions and settings. It includes options for services, resource types, permissions, and time settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882285/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Shared-access-signatures/shared-access-signature-explained.jpg)
-</Frame>
+![The image explains Shared Access Signature (SAS) with details on fine-tuned access, types of SAS keys, and configurable permissions and settings. It includes options for services, resource types, permissions, and time settings.](https://kodekloud.com/kk-media/image/upload/v1752882285/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Shared-access-signatures/shared-access-signature-explained.jpg)
 
 A Service SAS provides limited access at the individual service level (blobs, files, queues, or tables). For example, if a third-party application needs to upload photos to a specific container in your Blob storage, a Service SAS can be generated to allow uploads solely to that container.
 
@@ -92,14 +88,12 @@ Follow these steps to create and configure SAS tokens within the Azure portal:
 
 Before creating a container, decide whether to enable anonymous access for blobs as per your testing scenario.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface with a storage account container view. A new container named "images" is being created with private access settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882286/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Shared-access-signatures/azure-portal-storage-container-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface with a storage account container view. A new container named "images" is being created with private access settings.](https://kodekloud.com/kk-media/image/upload/v1752882286/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Shared-access-signatures/azure-portal-storage-container-creation.jpg)
 
 By default, anonymous access is disabled. To modify this:
 
 * Visit the storage account configuration page.
-* ![The image shows a Microsoft Azure portal configuration page for a storage account, displaying various settings such as account kind, performance, and access options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882287/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Shared-access-signatures/azure-portal-storage-account-settings.jpg)
+* ![The image shows a Microsoft Azure portal configuration page for a storage account, displaying various settings such as account kind, performance, and access options.](https://kodekloud.com/kk-media/image/upload/v1752882287/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Shared-access-signatures/azure-portal-storage-account-settings.jpg)
 * Enable "allow anonymous blob access" if needed, then create the container (for example, named "images") with blob-level access. Note: Selecting container-level access permits anonymous users to list all blobs in the container.
 
 ### 4. Upload Files to the Container
@@ -107,15 +101,11 @@ By default, anonymous access is disabled. To modify this:
 * Open the new container and click "Upload" to add files (e.g., images).
 * Use the file explorer to drag and drop files, such as images of mountains or cityscapes.
 
-<Frame>
-  ![The image shows a file explorer window open on a computer, displaying various folders, alongside a web interface for uploading files to a cloud service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882288/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Shared-access-signatures/file-explorer-cloud-upload-interface.jpg)
-</Frame>
+![The image shows a file explorer window open on a computer, displaying various folders, alongside a web interface for uploading files to a cloud service.](https://kodekloud.com/kk-media/image/upload/v1752882288/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Shared-access-signatures/file-explorer-cloud-upload-interface.jpg)
 
 * Monitor the upload progress:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for uploading blobs to a container named "images," with a list of successfully uploaded files displayed on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882289/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Shared-access-signatures/azure-portal-upload-blobs-images.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for uploading blobs to a container named "images," with a list of successfully uploaded files displayed on the right.](https://kodekloud.com/kk-media/image/upload/v1752882289/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Shared-access-signatures/azure-portal-upload-blobs-images.jpg)
 
 * Once the files are uploaded, you can select an image and copy its URL to view it in your browser. This demonstrates how anonymous access works. If you require restricted access for authorized users only, set the container’s access level to private.
 
@@ -144,9 +134,7 @@ Zoom in on the key components of the SAS token:
 • The start and expiry times determine the validity period.\
 • Protocol restrictions and the signature ensure secure access.
 
-<Callout icon="lightbulb">
-  Always safeguard your SAS tokens. Use them only as needed, and avoid exposing them publicly. Rotating account keys invalidates previously issued SAS tokens, adding an extra layer of security.
-</Callout>
+> **lightbulb** Always safeguard your SAS tokens. Use them only as needed, and avoid exposing them publicly. Rotating account keys invalidates previously issued SAS tokens, adding an extra layer of security.
 
 With the SAS token configured, authorized users can access designated storage resources without exposing the master account key.
 
@@ -154,6 +142,4 @@ With the SAS token configured, authorized users can access designated storage re
 
 Next, learn how to authenticate requests using [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/) for enhanced security and streamlined access management.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7acacade-befa-46b1-99e2-3f298d33623d/lesson/5333ee9a-e1e5-43ec-9c1a-219b1091d89b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7acacade-befa-46b1-99e2-3f298d33623d/lesson/5333ee9a-e1e5-43ec-9c1a-219b1091d89b)

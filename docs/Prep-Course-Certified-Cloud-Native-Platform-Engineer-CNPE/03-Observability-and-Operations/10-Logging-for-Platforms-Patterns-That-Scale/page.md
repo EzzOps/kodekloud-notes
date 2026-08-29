@@ -83,9 +83,7 @@ Why structured logging matters
 * Aggregatable: count and group errors per service.
 * Correlatable: link logs to traces using trace IDs.
 
-<Callout icon="lightbulb">
-  Application teams should emit structured JSON to stdout. Platform teams are responsible for collection, enrichment, shipping, storage, and the query UI.
-</Callout>
+> **lightbulb** Application teams should emit structured JSON to stdout. Platform teams are responsible for collection, enrichment, shipping, storage, and the query UI.
 
 The log pipeline — five stages
 
@@ -150,9 +148,7 @@ Choosing appropriate log levels prevents you from drowning in logs or missing cr
   <img alt="The image is a table outlining log levels, their meanings, examples, and actions, comparing signal and noise in logging contexts. It includes levels like ERROR, WARN, INFO, and DEBUG." />
 </Frame>
 
-<Callout icon="warning">
-  Do not run DEBUG logging globally in production — it generates high volume and may expose sensitive diagnostic data. Enable DEBUG only for targeted troubleshooting.
-</Callout>
+> **warning** Do not run DEBUG logging globally in production — it generates high volume and may expose sensitive diagnostic data. Enable DEBUG only for targeted troubleshooting.
 
 Recommended production strategy
 
@@ -195,6 +191,4 @@ Links and references
 * Elasticsearch: [https://www.elastic.co/elasticsearch](https://www.elastic.co/elasticsearch)
 * Prometheus: [https://prometheus.io/](https://prometheus.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/96beb568-bbf6-4b91-9be1-543fdff42992" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/96beb568-bbf6-4b91-9be1-543fdff42992)

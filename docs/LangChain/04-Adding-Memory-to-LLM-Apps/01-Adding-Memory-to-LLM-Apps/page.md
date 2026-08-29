@@ -18,9 +18,7 @@ Why history is necessary
 * Without history, the model has no memory of earlier turns and can produce inconsistent or hallucinated responses.
 * To preserve continuity, you must capture relevant prior exchanges, persist them as needed, and send the appropriate context with each prompt.
 
-<Callout icon="lightbulb">
-  LLMs do not remember past requests on their own. Think of each model call like a single HTTP request: to provide continuity, you need to re-supply the prior conversation or a summary of it with each request.
-</Callout>
+> **lightbulb** LLMs do not remember past requests on their own. Think of each model call like a single HTTP request: to provide continuity, you need to re-supply the prior conversation or a summary of it with each request.
 
 Memory: short-term vs long-term
 Memory for LLMs generally falls into two categories:

@@ -18,7 +18,7 @@ The Kubernetes API Server plays a pivotal role in the cluster but is not part of
 
 The Kubernetes Certificates API allows users to submit their CSRs via an API call, creating a CertificateSigningRequest object. Administrators can then review and approve these requests using `kubectl` commands. Once approved, Kubernetes signs the certificate using the CA's key pair. The signed certificate is then available for extraction and distribution to the requesting user.
 
-![The image illustrates a process involving creating, reviewing, and approving CertificateSigningRequest objects using a Certificates API, with icons representing users and servers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869930/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Certificates-API/frame_200.jpg)
+![The image illustrates a process involving creating, reviewing, and approving CertificateSigningRequest objects using a Certificates API, with icons representing users and servers.](https://kodekloud.com/kk-media/image/upload/v1752869930/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Certificates-API/frame_200.jpg)
 
 ### Step 1: User Generates Private Key and CSR
 
@@ -102,9 +102,9 @@ status:
 
 Within the Kubernetes control plane, components such as the API Server, Scheduler, and Controller Manager work together. However, all certificate-related operations—such as CSR approval and signing—are managed by the Controller Manager.
 
-![The image depicts a diagram of a Kubernetes architecture component, showing the Kube-API Server, Scheduler, and Controller Manager within a bordered rectangle.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869931/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Certificates-API/frame_320.jpg)
+![The image depicts a diagram of a Kubernetes architecture component, showing the Kube-API Server, Scheduler, and Controller Manager within a bordered rectangle.](https://kodekloud.com/kk-media/image/upload/v1752869931/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Certificates-API/frame_320.jpg)
 
-![The image shows a diagram labeled "Controller Manager" with two buttons: "CSR-APPROVING" and "CSR-SIGNING."](../../../../images/kodekloud.com/kk-media/image/upload/v1752869932/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Certificates-API/frame_330.jpg)
+![The image shows a diagram labeled "Controller Manager" with two buttons: "CSR-APPROVING" and "CSR-SIGNING."](https://kodekloud.com/kk-media/image/upload/v1752869932/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Certificates-API/frame_330.jpg)
 
 The Controller Manager includes dedicated controllers for CSR approval and CSR signing tasks. Since signing certificates requires access to the CA's root certificate and private key, its configuration specifies the file paths to these credentials. For example, the Controller Manager’s configuration file might include settings like the following:
 

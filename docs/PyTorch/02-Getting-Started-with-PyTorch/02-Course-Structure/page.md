@@ -36,9 +36,7 @@ def visualize_tensor(tensor):
         axes[i].set_yticklabels([1, height // 2, height])
 ```
 
-<Callout icon="lightbulb">
-  Make sure to download the helper function from our [GitHub repository](https://github.com/) to test it on your own machine.
-</Callout>
+> **lightbulb** Make sure to download the helper function from our [GitHub repository](https://github.com/) to test it on your own machine.
 
 ***
 

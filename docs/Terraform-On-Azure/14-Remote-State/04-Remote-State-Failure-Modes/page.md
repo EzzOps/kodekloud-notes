@@ -25,9 +25,7 @@ Recovery options:
 terraform force-unlock LOCK_ID
 ```
 
-<Callout icon="warning">
-  Use `terraform force-unlock` only after confirming the lock holder is not active. Forcibly removing a valid lock can cause concurrent writes and lead to state corruption. Investigate the origin of the lock and prefer coordination or waiting over forcing when possible.
-</Callout>
+> **warning** Use `terraform force-unlock` only after confirming the lock holder is not active. Forcibly removing a valid lock can cause concurrent writes and lead to state corruption. Investigate the origin of the lock and prefer coordination or waiting over forcing when possible.
 
 ***
 
@@ -81,9 +79,7 @@ terraform force-unlock LOCK_ID
 
 This article includes Azure-specific configuration examples and practical recovery advice to help teams set up reliable Terraform remote state workflows.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4693ec96-f075-4e4f-922b-1f1e27202120/lesson/5dffda35-1d74-457b-99bb-cd8d46b8e333" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4693ec96-f075-4e4f-922b-1f1e27202120/lesson/5dffda35-1d74-457b-99bb-cd8d46b8e333)
 
 
 # Remote State Failure Modes
@@ -162,9 +158,7 @@ Adopt these practices to reduce both the likelihood of remote-state failures and
   <img alt="The image shows a person working on a laptop at a desk with coding icons around, alongside a list of best practices: restrict backend access, monitor availability, and avoid manual storage changes." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Treat the remote state backend as a critical, highly-available system: restrict direct human access, monitor it closely, enable storage protections (soft-delete/versioning), and document recovery steps for stale locks and credential failures.
-</Callout>
+> **lightbulb** Treat the remote state backend as a critical, highly-available system: restrict direct human access, monitor it closely, enable storage protections (soft-delete/versioning), and document recovery steps for stale locks and credential failures.
 
 ## Actionable recovery steps
 
@@ -224,8 +218,6 @@ Remote state is the coordination point for Terraform and a single point of failu
 * Azure Storage: soft-delete — [https://learn.microsoft.com/azure/storage/blobs/storage-blob-soft-delete](https://learn.microsoft.com/azure/storage/blobs/storage-blob-soft-delete)
 * Azure Storage: blob versioning — [https://learn.microsoft.com/azure/storage/blobs/storage-blob-versioning](https://learn.microsoft.com/azure/storage/blobs/storage-blob-versioning)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4693ec96-f075-4e4f-922b-1f1e27202120/lesson/75acf611-6fbb-420f-b9b1-26a0798a178e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4693ec96-f075-4e4f-922b-1f1e27202120/lesson/75acf611-6fbb-420f-b9b1-26a0798a178e)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4693ec96-f075-4e4f-922b-1f1e27202120/lesson/0fec8bcd-42a1-4009-8e31-997641e4fa83" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4693ec96-f075-4e4f-922b-1f1e27202120/lesson/0fec8bcd-42a1-4009-8e31-997641e4fa83)

@@ -14,6 +14,6 @@ In earlier architectures, scaling was achieved by vertically enhancing a server,
 
 A decade ago, engineers at Heroku distilled a set of guiding principles for building modern applications, known today as the 12-Factor App. These twelve principles provide a blueprint for creating scalable, resilient, and maintainable applications. For additional details, refer to the [12factor.net](https://12factor.net/) website.
 
-![The image features the text "The Twelve-Factor App" with a logo above and a URL "https://12factor.net/" below.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856823/notes-assets/images/12-Factor-App-Why-12-Factor-app/frame_200.jpg)
+![The image features the text "The Twelve-Factor App" with a logo above and a URL "https://12factor.net/" below.](https://kodekloud.com/kk-media/image/upload/v1752856823/notes-assets/images/12-Factor-App-Why-12-Factor-app/frame_200.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/12-factor-app/module/9a3eed42-9319-4f4c-ae45-47fd5ec2fcb5/lesson/d48719ae-7523-4b12-bf0d-b746820340a0)

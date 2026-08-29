@@ -68,9 +68,7 @@ processors:
     error_mode: ignore
 ```
 
-<Callout icon="lightbulb">
-  Setting `error_mode: ignore` prevents a single statement failure from stopping processing of the signal. This is useful for experimentation or when applying many optional transformations.
-</Callout>
+> **lightbulb** Setting `error_mode: ignore` prevents a single statement failure from stopping processing of the signal. This is useful for experimentation or when applying many optional transformations.
 
 Transform rules are scoped by signal type. Use the appropriate statements block per signal:
 
@@ -152,9 +150,7 @@ Resource attributes:
   -> platform: Str(kubernetes)
 ```
 
-<Callout icon="warning">
-  In production, avoid applying broad resource or span changes to all signals. Scope transformations to only the resources or spans that need modification to reduce risk of unintended side effects.
-</Callout>
+> **warning** In production, avoid applying broad resource or span changes to all signals. Scope transformations to only the resources or spans that need modification to reduce risk of unintended side effects.
 
 ***
 

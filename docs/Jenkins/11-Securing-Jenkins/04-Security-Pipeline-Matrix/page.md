@@ -26,13 +26,9 @@ After saving these changes and returning to the Global Security settings, you wi
 
 Jenkins also offers **Project-Based Matrix Authorization**. This method applies permissions on a per-project basis, allowing you to customize access control lists for each project.
 
-<Frame>
-  ![The image shows a Jenkins security configuration screen with matrix-based security settings, displaying user permissions for various actions like read, create, and delete.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880136/notes-assets/images/Jenkins-Security-Pipeline-Matrix/frame_120.jpg)
-</Frame>
+![The image shows a Jenkins security configuration screen with matrix-based security settings, displaying user permissions for various actions like read, create, and delete.](https://kodekloud.com/kk-media/image/upload/v1752880136/notes-assets/images/Jenkins-Security-Pipeline-Matrix/frame_120.jpg)
 
-<Callout icon="lightbulb">
-  Be cautious when configuring project-based permissions. Ensure that all users have the essential permissions required to view the dashboard and access resources.
-</Callout>
+> **lightbulb** Be cautious when configuring project-based permissions. Ensure that all users have the essential permissions required to view the dashboard and access resources.
 
 For example, if Bob only has permission to read a job and update a run, he might not be able to access the dashboard due to the lack of overall read permission.
 
@@ -43,18 +39,12 @@ To demonstrate the resolution:
 3. Navigate to **Manage Jenkins** > **Configure Global Security**.
 4. Under the overall permissions section, add the necessary read permission for Bob.
 
-<Frame>
-  ![The image shows a Jenkins security configuration screen with matrix-based security settings, displaying user permissions for various actions, including read access for specific users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880137/notes-assets/images/Jenkins-Security-Pipeline-Matrix/frame_180.jpg)
-</Frame>
+![The image shows a Jenkins security configuration screen with matrix-based security settings, displaying user permissions for various actions, including read access for specific users.](https://kodekloud.com/kk-media/image/upload/v1752880137/notes-assets/images/Jenkins-Security-Pipeline-Matrix/frame_180.jpg)
 
 After updating Bob's permissions, log out of the administrator account and log in as Bob again. Now, Bob will be able to view builds although his actions remain restricted to read-only.
 
-<Callout icon="lightbulb">
-  This granular approach to configuring security is ideal for environments that demand strict access control, ensuring that each user receives only the permissions necessary for their role.
-</Callout>
+> **lightbulb** This granular approach to configuring security is ideal for environments that demand strict access control, ensuring that each user receives only the permissions necessary for their role.
 
 Thank you for reading this guide on Jenkins security. We hope this exploration has been valuable in strengthening your Jenkins deployment. For more detailed information and best practices, explore the [Jenkins Documentation](https://www.jenkins.io/doc/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/7c4c28a9-3607-46d4-920a-3f94ed6a7d5b/lesson/e44511d1-04bc-4dc5-9966-ee7b1daa0461" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/7c4c28a9-3607-46d4-920a-3f94ed6a7d5b/lesson/e44511d1-04bc-4dc5-9966-ee7b1daa0461)

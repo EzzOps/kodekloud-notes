@@ -21,9 +21,7 @@ Example output:
 Linux-5.11.0-1018-gcp-x86_64-with-glibc2.27
 ```
 
-<Callout icon="lightbulb">
-  Using the `alias` parameter, when set to `True`, displays alternative underlying names, while the `terse` parameter produces a more compact output. The behavior of these parameters may vary across different platforms.
-</Callout>
+> **lightbulb** Using the `alias` parameter, when set to `True`, displays alternative underlying names, while the `terse` parameter produces a more compact output. The behavior of these parameters may vary across different platforms.
 
 ## Other Useful Functions in the Platform Module
 
@@ -70,12 +68,8 @@ It is often valuable to determine the Python version in use. The platform module
 
 This comprehensive functionality facilitates the development of cross-platform applications by adapting behavior based on the environment.
 
-<Callout icon="lightbulb">
-  Now is the perfect time to practice using these functions in your projects. Experiment with different outputs and explore how they change across different platforms.
-</Callout>
+> **lightbulb** Now is the perfect time to practice using these functions in your projects. Experiment with different outputs and explore how they change across different platforms.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/a65eb782-d2dc-4850-9046-e4bb57d38876/lesson/76c926c0-d64d-4e48-bb2b-3e7bf7251a38" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/a65eb782-d2dc-4850-9046-e4bb57d38876/lesson/76c926c0-d64d-4e48-bb2b-3e7bf7251a38)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/a65eb782-d2dc-4850-9046-e4bb57d38876/lesson/0efa3fee-f05a-4348-b5a0-f1256f2132a9" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/a65eb782-d2dc-4850-9046-e4bb57d38876/lesson/0efa3fee-f05a-4348-b5a0-f1256f2132a9)

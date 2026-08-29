@@ -6,9 +6,7 @@ Vaults Key/Value Secrets Engine securely stores static secrets and integrates wi
 
 Vault's Key/Value (KV) Secrets Engine securely stores static secrets—API keys, certificates, credentials—that Vault doesn’t generate dynamically. You can retrieve these secrets via UI, CLI, or API and integrate with tools like Terraform, Jenkins, or GitLab CI/CD.
 
-<Callout icon="lightbulb">
-  Almost every Vault deployment uses at least one KV mount. You can enable multiple KV instances at different paths to isolate secrets by team, environment, or application.
-</Callout>
+> **lightbulb** Almost every Vault deployment uses at least one KV mount. You can enable multiple KV instances at different paths to isolate secrets by team, environment, or application.
 
 ## Why Use KV for Static Secrets
 
@@ -23,9 +21,7 @@ Vault's Key/Value (KV) Secrets Engine securely stores static secrets—API keys,
 | Jenkins      | CI/CD pipelines             | Vault CLI plugin for secret injection      |
 | GitLab CI/CD | Pipeline secret storage     | Store Vault token and KV path in variables |
 
-<Frame>
-  ![The image is a slide explaining the Key/Value Secrets Engine, detailing how secrets are stored as key-value pairs at defined paths and the capabilities required for writing and updating secrets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878108/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-KeyValue-Secrets-Engine/key-value-secrets-engine-explanation.jpg)
-</Frame>
+![The image is a slide explaining the Key/Value Secrets Engine, detailing how secrets are stored as key-value pairs at defined paths and the capabilities required for writing and updating secrets.](https://kodekloud.com/kk-media/image/upload/v1752878108/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-KeyValue-Secrets-Engine/key-value-secrets-engine-explanation.jpg)
 
 ## KV Engine Versions: v1 vs. v2
 
@@ -49,9 +45,7 @@ KV v2 is not enabled by default in production.
 3. Set **Mount path** (default `kv`) and choose version
 4. (Optional) Add description, tune max versions or CAS, configure deletion
 
-<Frame>
-  ![The image shows a user interface for enabling a Key/Value Secrets Engine, with options for selecting different types of secrets and configuring settings. It includes sections for generic, cloud, and infrastructure options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878109/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-KeyValue-Secrets-Engine/key-value-secrets-engine-ui-options.jpg)
-</Frame>
+![The image shows a user interface for enabling a Key/Value Secrets Engine, with options for selecting different types of secrets and configuring settings. It includes sections for generic, cloud, and infrastructure options.](https://kodekloud.com/kk-media/image/upload/v1752878109/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-KeyValue-Secrets-Engine/key-value-secrets-engine-ui-options.jpg)
 
 ### Via CLI
 

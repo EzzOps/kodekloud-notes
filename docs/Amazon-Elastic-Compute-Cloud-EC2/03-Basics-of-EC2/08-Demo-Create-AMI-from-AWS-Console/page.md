@@ -14,7 +14,7 @@ Learn how to create a reusable Amazon Machine Image (AMI) from an existing EC2 i
 2. In the **Instances** pane, choose the target instance.
 3. Click **Actions** → **Image and templates** → **Create image**.
 
-![The image shows an AWS EC2 management console with a running instance named "demo," displaying details like instance ID, type, and IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868959/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-AMI-from-AWS-Console/aws-ec2-management-console-demo-instance.jpg)
+![The image shows an AWS EC2 management console with a running instance named "demo," displaying details like instance ID, type, and IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752868959/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-AMI-from-AWS-Console/aws-ec2-management-console-demo-instance.jpg)
 
 ***
 
@@ -28,7 +28,7 @@ On the **Create Image** dialog:
 
 > **lightbulb** Skipping the reboot option may lead to file system inconsistencies. Use it only when uptime is critical.
 
-![The image shows an AWS EC2 console screen for creating an image, with options for instance volumes, storage type, and tagging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868960/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-AMI-from-AWS-Console/aws-ec2-create-image-console.jpg)
+![The image shows an AWS EC2 console screen for creating an image, with options for instance volumes, storage type, and tagging.](https://kodekloud.com/kk-media/image/upload/v1752868960/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-AMI-from-AWS-Console/aws-ec2-create-image-console.jpg)
 
 ***
 
@@ -50,7 +50,7 @@ Once tags are set, click **Create image**. AWS will snapshot each volume, then r
 1. In the left menu, select **Snapshots**.
 2. Locate the snapshot(s) with **Status: pending**.
 
-![The image shows an AWS EC2 console displaying a list of snapshots, with one snapshot having a status of "Pending." The interface includes options for managing snapshots and other AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868961/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-AMI-from-AWS-Console/aws-ec2-snapshots-pending-status.jpg)
+![The image shows an AWS EC2 console displaying a list of snapshots, with one snapshot having a status of "Pending." The interface includes options for managing snapshots and other AWS services.](https://kodekloud.com/kk-media/image/upload/v1752868961/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-AMI-from-AWS-Console/aws-ec2-snapshots-pending-status.jpg)
 
 ***
 
@@ -61,7 +61,7 @@ Once tags are set, click **Create image**. AWS will snapshot each volume, then r
 
 After a few minutes, both the snapshot and AMI statuses will switch to **available**.
 
-![The image shows an Amazon Web Services (AWS) EC2 console displaying details of an Amazon Machine Image (AMI) with ID ami-00c089143fc0b12f1, including its status, platform details, and creation date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868962/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-AMI-from-AWS-Console/aws-ec2-console-ami-details.jpg)
+![The image shows an Amazon Web Services (AWS) EC2 console displaying details of an Amazon Machine Image (AMI) with ID ami-00c089143fc0b12f1, including its status, platform details, and creation date.](https://kodekloud.com/kk-media/image/upload/v1752868962/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-AMI-from-AWS-Console/aws-ec2-console-ami-details.jpg)
 
 ***
 
@@ -69,7 +69,7 @@ After a few minutes, both the snapshot and AMI statuses will switch to **availab
 
 Once complete, click on the snapshot ID to review its metadata, size, and status.
 
-![The image shows an AWS EC2 console displaying details of a snapshot, including its ID, volume size, and status. The snapshot is completed and available, with additional metadata shown below.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868963/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-AMI-from-AWS-Console/aws-ec2-snapshot-details-console.jpg)
+![The image shows an AWS EC2 console displaying details of a snapshot, including its ID, volume size, and status. The snapshot is completed and available, with additional metadata shown below.](https://kodekloud.com/kk-media/image/upload/v1752868963/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-AMI-from-AWS-Console/aws-ec2-snapshot-details-console.jpg)
 
 ***
 
@@ -80,7 +80,7 @@ Once complete, click on the snapshot ID to review its metadata, size, and status
 3. Under **Application and OS Images (Amazon Machine Image)**, switch to **My AMIs** and pick yours.
 4. Continue with the standard launch workflow (instance type, networking, storage, etc.).
 
-![The image shows an AWS EC2 console interface for launching an instance, displaying details about an Amazon Machine Image (AMI) and instance configuration options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868964/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-AMI-from-AWS-Console/aws-ec2-console-launch-instance-ami.jpg)
+![The image shows an AWS EC2 console interface for launching an instance, displaying details about an Amazon Machine Image (AMI) and instance configuration options.](https://kodekloud.com/kk-media/image/upload/v1752868964/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-AMI-from-AWS-Console/aws-ec2-console-launch-instance-ami.jpg)
 
 ***
 
@@ -94,7 +94,7 @@ To remove an AMI:
 
 > **triangle-alert** Deregistering an AMI does *not* delete its associated snapshots. Manually delete any orphaned snapshots to prevent unexpected storage charges.
 
-![The image shows an AWS EC2 console with a pop-up window for deregistering an AMI. It includes a warning about snapshots not being automatically deleted when deregistering the AMI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868966/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-AMI-from-AWS-Console/aws-ec2-deregister-ami-warning.jpg)
+![The image shows an AWS EC2 console with a pop-up window for deregistering an AMI. It includes a warning about snapshots not being automatically deleted when deregistering the AMI.](https://kodekloud.com/kk-media/image/upload/v1752868966/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-AMI-from-AWS-Console/aws-ec2-deregister-ami-warning.jpg)
 
 ***
 

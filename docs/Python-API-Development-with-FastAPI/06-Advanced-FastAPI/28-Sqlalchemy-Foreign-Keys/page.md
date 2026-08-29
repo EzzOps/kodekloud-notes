@@ -51,9 +51,7 @@ class User(Base):
 
 When you restart your application, SQLAlchemy verifies if the table already exists. If the `posts` table is already present, the new column won’t be added automatically. In production environments, it is recommended to use a migration tool, such as Alembic, to update table schemas safely. However, during development, you can manually drop the `posts` table using PgAdmin or executing SQL, then restart the application to let SQLAlchemy create a new table based on the updated models.
 
-<Callout icon="lightbulb">
-  Remember to always back up your data before performing manual database schema modifications.
-</Callout>
+> **lightbulb** Remember to always back up your data before performing manual database schema modifications.
 
 ────────────────────────────────────────────
 
@@ -105,9 +103,7 @@ select * from posts;
 
 Any post associated with an `owner_id` of `20` should have been automatically deleted because of the cascade rule.
 
-<Callout icon="triangle-alert">
-  Be cautious when using cascading deletes in production. Unintended deletions may occur if proper validations and backups are not in place.
-</Callout>
+> **triangle-alert** Be cautious when using cascading deletes in production. Unintended deletions may occur if proper validations and backups are not in place.
 
 ────────────────────────────────────────────
 
@@ -119,6 +115,4 @@ This lesson has demonstrated how to set up foreign key relationships in SQLAlche
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/9d8f7bb1-f950-4bad-885d-3030208aa9ed" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/9d8f7bb1-f950-4bad-885d-3030208aa9ed)

@@ -4,9 +4,7 @@ cursor.execute(f"INSERT INTO posts (title, content, published) VALUES({post.titl
 
 Always use parameterized queries to ensure that values are treated strictly as data. This practice helps safeguard your database from possible SQL injection attacks.
 
-<Callout icon="triangle-alert">
-  Never interpolate user inputs directly into SQL queries. Always use parameterized queries to prevent malicious code execution.
-</Callout>
+> **triangle-alert** Never interpolate user inputs directly into SQL queries. Always use parameterized queries to prevent malicious code execution.
 
 ***
 
@@ -80,9 +78,7 @@ SELECT * FROM posts;
 
 The results will display the details of the posts, including the newly inserted record.
 
-<Frame>
-  ![The image shows the pgAdmin interface connected to a PostgreSQL database, displaying the query editor and database schema details on the left panel.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883384/notes-assets/images/Python-API-Development-with-FastAPI-Create-Posts-Sql/pgadmin-postgresql-query-editor-schema.jpg)
-</Frame>
+![The image shows the pgAdmin interface connected to a PostgreSQL database, displaying the query editor and database schema details on the left panel.](https://kodekloud.com/kk-media/image/upload/v1752883384/notes-assets/images/Python-API-Development-with-FastAPI-Create-Posts-Sql/pgadmin-postgresql-query-editor-schema.jpg)
 
 ***
 
@@ -90,9 +86,7 @@ The results will display the details of the posts, including the newly inserted 
 
 When working within an integrated development environment such as Visual Studio Code, ensure that the transaction is committed by invoking `conn.commit()`. This results in visible output in the terminal confirming that the commit was successful.
 
-<Frame>
-  ![The image shows a Visual Studio Code interface with Python code for a FastAPI application. The code editor displays a function definition, and there's an autocomplete suggestion box visible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883385/notes-assets/images/Python-API-Development-with-FastAPI-Create-Posts-Sql/visual-studio-code-fastapi-python.jpg)
-</Frame>
+![The image shows a Visual Studio Code interface with Python code for a FastAPI application. The code editor displays a function definition, and there's an autocomplete suggestion box visible.](https://kodekloud.com/kk-media/image/upload/v1752883385/notes-assets/images/Python-API-Development-with-FastAPI-Create-Posts-Sql/visual-studio-code-fastapi-python.jpg)
 
 ***
 
@@ -100,9 +94,7 @@ By following these best practices—using parameterized SQL queries, retrieving 
 
 For further reading on best practices in SQL operations and FastAPI development, check out the [FastAPI documentation](https://fastapi.tiangolo.com/) and [PostgreSQL documentation](https://www.postgresql.org/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/4382e166-c165-457e-8287-a7c43116e582" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/4382e166-c165-457e-8287-a7c43116e582)
 
 
 # Delete Posts Sql
@@ -113,9 +105,7 @@ Learn to safely delete a post from a database in a Python API using SQL with par
 
 In this lesson, you will learn how to safely delete a post from a database within a Python API using SQL. This process uses a DELETE statement with a parameterized query, ensuring that user input is properly handled to prevent SQL injection. The SQL statement also incorporates a RETURNING clause to retrieve the details of the post before it is deleted, which can be useful for validation and logging purposes.
 
-<Callout icon="lightbulb">
-  Converting the post ID to a string and including an extra comma in the parameter tuple is essential for preventing errors during query execution.
-</Callout>
+> **lightbulb** Converting the post ID to a string and including an extra comma in the parameter tuple is essential for preventing errors during query execution.
 
 Below is the updated Python code for the DELETE endpoint:
 
@@ -167,10 +157,6 @@ Database connection was successful!
 
 If you attempt to delete the post with ID 4 again, the API returns a 404 error with a message stating that the post does not exist. This precaution ensures that the client is informed of any attempts to delete non-existent resources, thereby maintaining the integrity of the application.
 
-<Callout icon="lightbulb">
-  Using clear, structured steps and code examples not only assists developers in understanding the process but also improves the page's SEO by including relevant keywords like "Python API", "SQL DELETE", and "safe database operations".
-</Callout>
+> **lightbulb** Using clear, structured steps and code examples not only assists developers in understanding the process but also improves the page's SEO by including relevant keywords like "Python API", "SQL DELETE", and "safe database operations".
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/1bf3969e-7e12-4061-8817-e993a7b4c68a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/1bf3969e-7e12-4061-8817-e993a7b4c68a)

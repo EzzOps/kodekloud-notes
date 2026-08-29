@@ -34,7 +34,7 @@ To support this traffic flow, the following rules must be established:
 * An egress rule for the API server to allow traffic to port 3306 on the database server.
 * An ingress rule for the database server to allow traffic on port 3306.
 
-![The image illustrates network traffic flow, showing ingress and egress ports (80, 5000, 3306) associated with web, API, and database icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869942/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Network-Policies/frame_120.jpg)
+![The image illustrates network traffic flow, showing ingress and egress ports (80, 5000, 3306) associated with web, API, and database icons.](https://kodekloud.com/kk-media/image/upload/v1752869942/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Network-Policies/frame_120.jpg)
 
 ## Network Security in Kubernetes
 
@@ -42,7 +42,7 @@ In a Kubernetes cluster, nodes host pods and services, each assigned a unique IP
 
 By default, Kubernetes employs an "all-allow" rule permitting any pod to communicate with every other pod or service within the cluster.
 
-![The image illustrates a network security concept labeled "All Allow," showing interconnected nodes with various shapes and colors within a cloud-like structure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869943/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Network-Policies/frame_210.jpg)
+![The image illustrates a network security concept labeled "All Allow," showing interconnected nodes with various shapes and colors within a cloud-like structure.](https://kodekloud.com/kk-media/image/upload/v1752869943/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Network-Policies/frame_210.jpg)
 
 Now, consider the earlier scenario with three pods: one for the front-end web server, one for the API server, and one for the database server. Services facilitate communication between these pods and external users, while the default configuration allows free communication across the cluster.
 
@@ -52,7 +52,7 @@ If your security requirements dictate that the front-end web server should not c
 
 A network policy in Kubernetes is defined as an object, which you attach to one or more pods using labels and selectors. In this scenario, the policy would only allow ingress traffic from the API pod on port 3306 while blocking all other sources from accessing the database pod.
 
-![The image illustrates a network policy diagram showing connections between a user, Web Pod, API Pod, and DB Pod with specific port numbers and policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869944/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Network-Policies/frame_290.jpg)
+![The image illustrates a network policy diagram showing connections between a user, Web Pod, API Pod, and DB Pod with specific port numbers and policies.](https://kodekloud.com/kk-media/image/upload/v1752869944/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Network-Policies/frame_290.jpg)
 
 ### Implementing a Network Policy
 
@@ -66,7 +66,7 @@ podSelector:
 
 This configuration ensures the network policy only applies to pods labeled with `role: db`. Next, you define policy rules to allow only ingress traffic from the API pod on port 3306.
 
-![The image illustrates a network policy allowing ingress traffic from an API pod to a DB pod on port 3306, depicted with directional lines and labels.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869946/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Network-Policies/frame_320.jpg)
+![The image illustrates a network policy allowing ingress traffic from an API pod to a DB pod on port 3306, depicted with directional lines and labels.](https://kodekloud.com/kk-media/image/upload/v1752869946/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Network-Policies/frame_320.jpg)
 
 Below is the complete network policy configuration:
 

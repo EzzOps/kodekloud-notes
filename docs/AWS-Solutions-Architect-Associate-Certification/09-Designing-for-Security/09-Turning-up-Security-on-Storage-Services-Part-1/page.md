@@ -27,7 +27,7 @@ For this discussion, our focus is mostly on EBS volumes (with additional coverag
 
 The diagram below summarizes key relationships among EBS volumes, their snapshots stored in S3, EFS file systems for shared access, backups handled via AWS Backup, and connections with RDS transactional storage plus cross-region backup capabilities.
 
-![The image is a diagram of an AWS cloud architecture, showing components like VPC, EBS, S3, and AWS Backup across two regions with availability zones. It illustrates data flow and backup processes within the cloud infrastructure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864534/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/aws-cloud-architecture-diagram.jpg)
+![The image is a diagram of an AWS cloud architecture, showing components like VPC, EBS, S3, and AWS Backup across two regions with availability zones. It illustrates data flow and backup processes within the cloud infrastructure.](https://kodekloud.com/kk-media/image/upload/v1752864534/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/aws-cloud-architecture-diagram.jpg)
 
 ***
 
@@ -53,7 +53,7 @@ The best practice is option 2—enabling encryption when the volume is created s
 
 Below is a screenshot from the AWS console. Notice the checkbox for encryption and the section displaying the master key for a GP2 volume.
 
-![The image shows a form for creating a volume in a cloud service, with options for volume type, size, IOPS, availability zone, and encryption settings. The encryption section is highlighted, indicating the selection of a master key for encrypting the volume.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864535/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/cloud-volume-creation-form-encryption.jpg)
+![The image shows a form for creating a volume in a cloud service, with options for volume type, size, IOPS, availability zone, and encryption settings. The encryption section is highlighted, indicating the selection of a master key for encrypting the volume.](https://kodekloud.com/kk-media/image/upload/v1752864535/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/cloud-volume-creation-form-encryption.jpg)
 
 ***
 
@@ -65,7 +65,7 @@ The solution is to specify a KMS key during the snapshot creation process. This 
 
 With AWS managing data in transit between the instance and its volume automatically, leveraging native encryption is the simplest and most secure option.
 
-![The image presents a scenario involving a global financial institution using Amazon EC2 instances with EBS volumes, seeking to ensure all snapshots are encrypted. It lists four approaches to achieve encryption of EBS volume snapshots.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864536/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/amazon-ec2-ebs-snapshot-encryption.jpg)
+![The image presents a scenario involving a global financial institution using Amazon EC2 instances with EBS volumes, seeking to ensure all snapshots are encrypted. It lists four approaches to achieve encryption of EBS volume snapshots.](https://kodekloud.com/kk-media/image/upload/v1752864536/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/amazon-ec2-ebs-snapshot-encryption.jpg)
 
 ***
 
@@ -79,7 +79,7 @@ For example, a gaming company using instance store volumes for high-speed, real-
 
 In summary, while instance store volumes offer high IOPS and low latency, they lack persistence and AWS security controls such as built-in encryption.
 
-![The image presents a scenario about a gaming company considering EC2 instance store volumes for real-time processing, with four statements regarding data persistence and durability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864538/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/gaming-company-ec2-instance-store.jpg)
+![The image presents a scenario about a gaming company considering EC2 instance store volumes for real-time processing, with four statements regarding data persistence and durability.](https://kodekloud.com/kk-media/image/upload/v1752864538/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/gaming-company-ec2-instance-store.jpg)
 
 ***
 
@@ -93,7 +93,7 @@ Amazon EFS offers a shared file system that spans an entire AWS region—unlike 
 
 The diagram below shows an EFS file system mounted by multiple instances, which illustrates its capability as shared storage across several Availability Zones.
 
-![The image is a diagram of an AWS cloud architecture, showing components like VPC, EBS, S3, and AWS Backup across two regions with connections for storage and backup processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864539/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/aws-cloud-architecture-diagram-2.jpg)
+![The image is a diagram of an AWS cloud architecture, showing components like VPC, EBS, S3, and AWS Backup across two regions with connections for storage and backup processes.](https://kodekloud.com/kk-media/image/upload/v1752864539/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/aws-cloud-architecture-diagram-2.jpg)
 
 #### EFS and Video Editing Workloads
 
@@ -106,7 +106,7 @@ Consider a media production company evaluating EFS for video editing:
 
 The correct understanding here is that EFS’s regional nature with built-in replication makes it ideal for such workloads.
 
-![The image presents a scenario where a media production company is considering using Amazon EFS for video editing workloads, with four statements evaluating its suitability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864540/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/amazon-efs-video-editing-evaluation.jpg)
+![The image presents a scenario where a media production company is considering using Amazon EFS for video editing workloads, with four statements evaluating its suitability.](https://kodekloud.com/kk-media/image/upload/v1752864540/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/amazon-efs-video-editing-evaluation.jpg)
 
 #### Amazon EFS Infrequent Access (EFS IA)
 
@@ -121,7 +121,7 @@ Key benefits of EFS IA include:
 
 Option 3 correctly highlights that EFS IA delivers a lower-cost storage class without compromising performance.
 
-![The image describes considerations for using Amazon EFS Infrequent Access (EFS IA) for storing large datasets, highlighting cost optimization and performance needs. It lists four statements about EFS IA's functionality and requirements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864541/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/amazon-efs-ia-considerations-dataset.jpg)
+![The image describes considerations for using Amazon EFS Infrequent Access (EFS IA) for storing large datasets, highlighting cost optimization and performance needs. It lists four statements about EFS IA's functionality and requirements.](https://kodekloud.com/kk-media/image/upload/v1752864541/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/amazon-efs-ia-considerations-dataset.jpg)
 
 > **lightbulb** Remember, EFS does not encrypt file systems by default. If encryption is needed, it must be enabled during the setup. For existing unencrypted file systems, migrating data to a new, encrypted file system is required.
 
@@ -137,7 +137,7 @@ FSx for Windows File Server is tailored for Windows-based applications and suppo
 
 For instance, a multinational corporation migrating on-premise Windows applications to AWS would benefit from a managed, secure Windows file system integrated with Active Directory.
 
-![The image presents a scenario about a corporation migrating to AWS, considering Amazon FSx for Windows File Server, and lists four statements regarding its security features and considerations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864543/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/aws-migration-amazon-fsx-security.jpg)
+![The image presents a scenario about a corporation migrating to AWS, considering Amazon FSx for Windows File Server, and lists four statements regarding its security features and considerations.](https://kodekloud.com/kk-media/image/upload/v1752864543/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864543/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/aws-migration-amazon-fsx-security.jpg)
 
 ***
 
@@ -149,9 +149,9 @@ For research institutions needing both top-tier performance and robust security,
 
 * Automatic encryption of data at rest with an option for customer-managed keys.
 
-![The image presents a scenario about a research institution considering Amazon FSx for Lustre for data storage, with a question about its security features and four possible statements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864543/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/amazon-fsx-lustre-security-research.jpg)
+![The image presents a scenario about a research institution considering Amazon FSx for Lustre for data storage, with a question about its security features and four possible statements.](https://kodekloud.com/kk-media/image/upload/v1752864543/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/amazon-fsx-lustre-security-research.jpg)
 
-![The image presents a scenario about a research institution considering Amazon FSx for Lustre for data storage, with a question about its security features. Four statements are provided as options to describe the security features accurately.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864545/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/amazon-fsx-lustre-security-options.jpg)
+![The image presents a scenario about a research institution considering Amazon FSx for Lustre for data storage, with a question about its security features. Four statements are provided as options to describe the security features accurately.](https://kodekloud.com/kk-media/image/upload/v1752864545/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/amazon-fsx-lustre-security-options.jpg)
 
 ***
 
@@ -164,7 +164,7 @@ Amazon FSx for OpenZFS leverages the proven capabilities of the OpenZFS file sys
 
 This makes FSx for OpenZFS an excellent choice for multinational corporations requiring stringent security measures during migrations.
 
-![The image presents a scenario about a corporation planning to migrate to Amazon FSx for OpenZFS, with a focus on security features like encryption and VPC integration, followed by four statements to choose from.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864546/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/amazon-fsx-openzfs-migration-security.jpg)
+![The image presents a scenario about a corporation planning to migrate to Amazon FSx for OpenZFS, with a focus on security features like encryption and VPC integration, followed by four statements to choose from.](https://kodekloud.com/kk-media/image/upload/v1752864546/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/amazon-fsx-openzfs-migration-security.jpg)
 
 ***
 
@@ -178,7 +178,7 @@ FSx for NetApp ONTAP is a managed file system built for shared storage with adva
 
 These capabilities make FSx for NetApp ONTAP particularly attractive for sensitive industries like healthcare, where managing patient data securely is paramount.
 
-![The image presents a scenario about a healthcare provider considering migrating their file storage solution to FSx for NetApp ONTAP, listing four statements regarding its security features and considerations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864543/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/aws-migration-amazon-fsx-security.jpg)
+![The image presents a scenario about a healthcare provider considering migrating their file storage solution to FSx for NetApp ONTAP, listing four statements regarding its security features and considerations.](https://kodekloud.com/kk-media/image/upload/v1752864543/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864543/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Storage-Services-Part-1/aws-migration-amazon-fsx-security.jpg)
 
 ***
 

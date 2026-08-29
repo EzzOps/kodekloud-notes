@@ -159,9 +159,7 @@ vault operator init
 # You will see Recovery Keys and an Initial Root Token
 ```
 
-<Callout icon="lightbulb">
-  Since AWS KMS auto-unseal is enabled, Vault will automatically unseal itself—no manual unseal commands are needed.
-</Callout>
+> **lightbulb** Since AWS KMS auto-unseal is enabled, Vault will automatically unseal itself—no manual unseal commands are needed.
 
 ***
 
@@ -194,9 +192,7 @@ Congratulations—your Vault HA cluster is up and running, with each node automa
 * Explore [AWS Auto-Join via Tags](https://www.vaultproject.io/docs/configuration/storage/raft#retry_join-aws) to replace static IPs with dynamic discovery.
 * Review the official [Vault HA documentation](https://www.vaultproject.io/docs/enterprise/ha).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/8dd8efdb-098a-4bca-b2dd-1753b74c0590" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/8dd8efdb-098a-4bca-b2dd-1753b74c0590)
 
 
 # Demo Disaster Recovery DR Replication
@@ -238,9 +234,7 @@ WARNING! The following warnings were returned from Vault:
 * This cluster is being enabled as a primary for replication. Vault will be unavailable for a brief period and will resume service shortly.
 ```
 
-<Callout icon="lightbulb">
-  Enabling primary DR replication causes a short downtime. Plan accordingly for production environments.
-</Callout>
+> **lightbulb** Enabling primary DR replication causes a short downtime. Plan accordingly for production environments.
 
 Verify that DR is now **primary**:
 
@@ -299,9 +293,7 @@ WARNING! The following warnings were returned from Vault:
 * Vault has successfully found secondary information; it may take a while to perform setup tasks. Vault will be unavailable until these tasks and initial sync complete.
 ```
 
-<Callout icon="triangle-alert">
-  Enabling DR on a secondary **will wipe any existing data**. Be sure this node is dedicated for DR replication.
-</Callout>
+> **triangle-alert** Enabling DR on a secondary **will wipe any existing data**. Be sure this node is dedicated for DR replication.
 
 ***
 
@@ -366,35 +358,25 @@ Back on the **primary**, list known secondaries:
 
 1. Log in to the primary UI and go to **Status → Disaster Recovery**.
 
-<Frame>
-  ![The image shows a web interface for HashiCorp Vault, displaying the "Secrets Engines" section with a "cubbyhole" engine listed. The status menu on the right indicates the server is unsealed and operational.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878298/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Disaster-Recovery-DR-Replication/hashicorp-vault-secrets-engines-interface.jpg)
-</Frame>
+![The image shows a web interface for HashiCorp Vault, displaying the "Secrets Engines" section with a "cubbyhole" engine listed. The status menu on the right indicates the server is unsealed and operational.](https://kodekloud.com/kk-media/image/upload/v1752878298/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Disaster-Recovery-DR-Replication/hashicorp-vault-secrets-engines-interface.jpg)
 
 2. Click **Disaster Recovery** to view replication details:
 
-<Frame>
-  ![The image shows a web interface for disaster recovery management, indicating the cluster's state as "running" and listing one known secondary connection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878298/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Disaster-Recovery-DR-Replication/disaster-recovery-management-web-interface.jpg)
-</Frame>
+![The image shows a web interface for disaster recovery management, indicating the cluster's state as "running" and listing one known secondary connection.](https://kodekloud.com/kk-media/image/upload/v1752878298/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Disaster-Recovery-DR-Replication/disaster-recovery-management-web-interface.jpg)
 
 3. Under **Manage**, you can disable replication, force a re-index, or demote this primary:
 
-<Frame>
-  ![The image shows a web interface for managing disaster recovery settings, with options to disable replication, recover, reindex, and demote a cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878299/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Disaster-Recovery-DR-Replication/disaster-recovery-settings-web-interface.jpg)
-</Frame>
+![The image shows a web interface for managing disaster recovery settings, with options to disable replication, recover, reindex, and demote a cluster.](https://kodekloud.com/kk-media/image/upload/v1752878299/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Disaster-Recovery-DR-Replication/disaster-recovery-settings-web-interface.jpg)
 
 ### Secondary Cluster Dashboard
 
 On the secondary UI, you’ll land directly in the DR dashboard (no login prompt). It shows the cluster in **stream-wals** state:
 
-<Frame>
-  ![The image shows a "Disaster Recovery" dashboard from a Vault application, displaying the status and details of a secondary cluster's connection and replication settings. It includes information about the primary cluster address, connection state, and replication set ID.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878300/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Disaster-Recovery-DR-Replication/disaster-recovery-dashboard-vault-application.jpg)
-</Frame>
+![The image shows a "Disaster Recovery" dashboard from a Vault application, displaying the status and details of a secondary cluster's connection and replication settings. It includes information about the primary cluster address, connection state, and replication set ID.](https://kodekloud.com/kk-media/image/upload/v1752878300/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Disaster-Recovery-DR-Replication/disaster-recovery-dashboard-vault-application.jpg)
 
 Under **Manage**, you can promote this secondary or generate an operational token:
 
-<Frame>
-  ![The image shows a web interface for promoting a disaster recovery cluster in Vault, with fields for entering a DR operation token and an optional primary cluster address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878301/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Disaster-Recovery-DR-Replication/disaster-recovery-cluster-vault-interface.jpg)
-</Frame>
+![The image shows a web interface for promoting a disaster recovery cluster in Vault, with fields for entering a DR operation token and an optional primary cluster address.](https://kodekloud.com/kk-media/image/upload/v1752878301/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Disaster-Recovery-DR-Replication/disaster-recovery-cluster-vault-interface.jpg)
 
 ***
 
@@ -417,8 +399,6 @@ Under **Manage**, you can promote this secondary or generate an operational toke
 * [sys/replication/dr API](https://www.vaultproject.io/api-docs/replication/dr)
 * [Vault Enterprise Licensing](https://www.vaultproject.io/docs/enterprise)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/b87b9aa9-5eb3-4277-972f-8cc96c4b4ab3" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/b87b9aa9-5eb3-4277-972f-8cc96c4b4ab3)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/7a7b4f9a-81c9-4a18-b3d4-06af23c64438" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/7a7b4f9a-81c9-4a18-b3d4-06af23c64438)

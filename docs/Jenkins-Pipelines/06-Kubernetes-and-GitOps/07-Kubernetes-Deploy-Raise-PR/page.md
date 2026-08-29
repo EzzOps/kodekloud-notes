@@ -19,21 +19,15 @@ GitHub's REST API allows you to perform almost any action available in the GitHu
 1. Open your repository's API interface and search for "pull".\
    You will find that the endpoint for creating a pull request uses the POST method. Expanding this endpoint reveals the required parameters including repository owner, repository name, base branch, head branch, title, body, labels, and milestones.
 
-<Frame>
-  ![The image shows a list of API endpoints related to repository management, with various HTTP methods like GET, PUT, POST, and DELETE, displayed in a web interface.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879724/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Raise-PR/api-endpoints-repository-management.jpg)
-</Frame>
+![The image shows a list of API endpoints related to repository management, with various HTTP methods like GET, PUT, POST, and DELETE, displayed in a web interface.](https://kodekloud.com/kk-media/image/upload/v1752879724/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Raise-PR/api-endpoints-repository-management.jpg)
 
 2. Next, open the API interface for creating a pull request and fill in the required fields (for example, owner: "Dasher-org" and repository: "Solar System GitOps Agostini").
 
-<Frame>
-  ![The image shows a Gitea API interface for creating a pull request, with fields for the repository owner, repository name, and pull request options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879725/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Raise-PR/gitea-api-pull-request-interface.jpg)
-</Frame>
+![The image shows a Gitea API interface for creating a pull request, with fields for the repository owner, repository name, and pull request options.](https://kodekloud.com/kk-media/image/upload/v1752879725/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Raise-PR/gitea-api-pull-request-interface.jpg)
 
 3. Click “Try it out” and enter the repository name along with a JSON body containing the PR details.
 
-<Frame>
-  ![The image shows a web interface for creating a pull request using an API, with fields for specifying the repository owner, repository name, and pull request options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879726/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Raise-PR/pull-request-api-interface.jpg)
-</Frame>
+![The image shows a web interface for creating a pull request using an API, with fields for specifying the repository owner, repository name, and pull request options.](https://kodekloud.com/kk-media/image/upload/v1752879726/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Raise-PR/pull-request-api-interface.jpg)
 
 The JSON payload generally resembles:
 
@@ -58,9 +52,7 @@ The JSON payload generally resembles:
 After clicking “Execute,” a cURL command is generated that mirrors the endpoint, headers, and payload provided.\
 If you encounter a 404 error, verify that the endpoint URL and parameters are correctly formatted (e.g., no extra spaces).
 
-<Callout icon="lightbulb">
-  A missing token will result in a 401 Unauthorized response.
-</Callout>
+> **lightbulb** A missing token will result in a 401 Unauthorized response.
 
 For instance, a missing token response might look like:
 
@@ -248,9 +240,7 @@ Key aspects of the command:
 
 Upon executing this stage, the feature branch (e.g., feature-2) will be created and a new PR will automatically appear in GitHub with the specified details. After the commit, a new Jenkins pipeline triggers on the PR branch, runs subsequent builds, and updates the PR status with direct build details. Additionally, you can enforce branch protection rules that require passing status checks before merging.
 
-<Frame>
-  ![The image shows a pull request interface with a list of commits and their statuses, some marked with warnings or errors. There are options for setting a due date, adding dependencies, and managing the pull request.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879727/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Raise-PR/pull-request-interface-commits-statuses.jpg)
-</Frame>
+![The image shows a pull request interface with a list of commits and their statuses, some marked with warnings or errors. There are options for setting a due date, adding dependencies, and managing the pull request.](https://kodekloud.com/kk-media/image/upload/v1752879727/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Raise-PR/pull-request-interface-commits-statuses.jpg)
 
 ***
 
@@ -271,9 +261,7 @@ For example, the update in the deployment manifest might appear as:
 
 Post merge, the repository shows the updated commit ID and the Argo CD dashboard reflects the health and sync status of your application.
 
-<Frame>
-  ![The image shows an Argo CD application dashboard displaying the health and sync status of a "solar-system-argo-app" with a visual representation of its components and dependencies. The application is healthy and synced, with various services, deployments, and pods illustrated in a tree structure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879728/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Raise-PR/argo-cd-solar-system-dashboard.jpg)
-</Frame>
+![The image shows an Argo CD application dashboard displaying the health and sync status of a "solar-system-argo-app" with a visual representation of its components and dependencies. The application is healthy and synced, with various services, deployments, and pods illustrated in a tree structure.](https://kodekloud.com/kk-media/image/upload/v1752879728/notes-assets/images/Jenkins-Pipelines-Kubernetes-Deploy-Raise-PR/argo-cd-solar-system-dashboard.jpg)
 
 On your Kubernetes cluster (within the solar-system namespace), verify the creation of the pods, service, deployment, and replica set:
 
@@ -339,6 +327,4 @@ By integrating the steps above into your Jenkins pipeline, you can fully automat
 
 Happy automating!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/fb6b2c83-178c-4962-b4e6-ca5528721170/lesson/673eee31-75ba-4d5f-bc31-a9a59f4b4999" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/fb6b2c83-178c-4962-b4e6-ca5528721170/lesson/673eee31-75ba-4d5f-bc31-a9a59f4b4999)

@@ -6,9 +6,7 @@ Learn to mark variables and outputs as sensitive in Terraform for secure handlin
 
 In this lesson, you'll learn how to mark variables and outputs as sensitive in Terraform, ensuring secure handling of critical information such as passwords, API keys, and other secrets. Terraform provides built-in mechanisms to safeguard sensitive data, preventing accidental exposure in logs or terminal outputs.
 
-<Frame>
-  ![The image shows a HashiCorp Terraform interface for defining sensitive information, with options for passwords, API keys, and other data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884175/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Variables-Resource-Attributes-and-Dependencies/frame_30.jpg)
-</Frame>
+![The image shows a HashiCorp Terraform interface for defining sensitive information, with options for passwords, API keys, and other data.](https://kodekloud.com/kk-media/image/upload/v1752884175/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Variables-Resource-Attributes-and-Dependencies/frame_30.jpg)
 
 ## Marking a Variable as Sensitive
 

@@ -39,9 +39,7 @@ In this walkthrough, we’ll use a single CA:
 * **CA Public Certificate**: `ca.crt`
 * **CA Private Key**: `ca.key`
 
-<Callout icon="triangle-alert">
-  Never store `ca.key` on nodes that aren’t fully secured. Loss of the CA key compromises your entire cluster.
-</Callout>
+> **triangle-alert** Never store `ca.key` on nodes that aren’t fully secured. Loss of the CA key compromises your entire cluster.
 
 ### 4.1 CA-Managed Certificate Hierarchy
 
@@ -67,9 +65,7 @@ In this walkthrough, we’ll use a single CA:
 
 By following these steps, you’ll ensure that every interaction within your Kubernetes cluster is both encrypted and authenticated, delivering a robust security posture for your applications and infrastructure.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/bcccc856-d8a2-4b5f-9f08-c880a46fa7ca" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/bcccc856-d8a2-4b5f-9f08-c880a46fa7ca)
 
 
 # Image Repository Security
@@ -108,8 +104,7 @@ Docker interprets `image: nginx` as `library/nginx` under the hood. The full nam
 * Omit the registry → defaults to Docker Hub (`docker.io`)
 * Omit the namespace → defaults to `library` (the official account)
 
-<Callout icon="lightbulb">
-  Specifying:
+> **lightbulb** Specifying:
 
   ```yaml theme={null}
   image: library/nginx
@@ -120,7 +115,6 @@ Docker interprets `image: nginx` as `library/nginx` under the hood. The full nam
   ```yaml theme={null}
   image: docker.io/library/nginx
   ```
-</Callout>
 
 You can also pull from other public registries. For example, Google’s registry hosts Kubernetes test images:
 
@@ -157,10 +151,8 @@ To pull from a private registry, follow these steps:
    # Login Succeeded
    ```
 
-<Callout icon="triangle-alert">
-  Avoid committing `~/.docker/config.json` to version control.\
+> **triangle-alert** Avoid committing `~/.docker/config.json` to version control.\
   Store credentials securely (e.g., using a secrets manager).
-</Callout>
 
 2. **Create a Kubernetes Secret** of type `docker-registry` so worker nodes can pull the image:
    ```bash theme={null}
@@ -195,8 +187,6 @@ To pull from a private registry, follow these steps:
 * [Terraform Registry](https://registry.terraform.io/)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/616e31b2-8442-4d08-906e-f23f831a8b0b" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/616e31b2-8442-4d08-906e-f23f831a8b0b)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/913962b3-08a6-483d-aa5d-9aca945afd44" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/913962b3-08a6-483d-aa5d-9aca945afd44)

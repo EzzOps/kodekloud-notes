@@ -24,17 +24,13 @@ Using this five-tuple, each request is independently load balanced to a server. 
 
 Selecting the "client IP" option, also known as the two-tuple hash, causes the load balancer to use a combination of the source and destination IP addresses. This ensures that all requests from a specific client IP are directed to the same server. This approach is particularly beneficial for applications that maintain user state, such as e-commerce shopping carts or scenarios requiring persistent server-side sessions.
 
-<Frame>
-  ![The image shows options for session persistence, including "None (default)" and "Client IP," with a dropdown menu listing "None," "Client IP," and "Client IP and protocol."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884728/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Session-Persistence/session-persistence-options-dropdown.jpg)
-</Frame>
+![The image shows options for session persistence, including "None (default)" and "Client IP," with a dropdown menu listing "None," "Client IP," and "Client IP and protocol."](https://kodekloud.com/kk-media/image/upload/v1752884728/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Session-Persistence/session-persistence-options-dropdown.jpg)
 
 ### Client IP and Protocol
 
 The "client IP and protocol" option, known as the three-tuple hash, adds the protocol to the source and destination IP addresses. This method is particularly useful when a single virtual machine hosts multiple services (for example, secure and non-secure traffic on different protocols, even when sharing the same IP address).
 
-<Callout icon="lightbulb">
-  Choosing the appropriate session persistence option is key to balancing session affinity with efficient resource utilization and delivering an optimal user experience.
-</Callout>
+> **lightbulb** Choosing the appropriate session persistence option is key to balancing session affinity with efficient resource utilization and delivering an optimal user experience.
 
 ***
 
@@ -134,21 +130,15 @@ Follow these steps to create and configure your Azure Load Balancer:
    * Create a public IP address resource (for example, `sclbpip` or named "fe" for frontend).
    * Associate this public IP with the frontend configuration of the load balancer.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal interface for creating a load balancer, with options to configure project and instance details such as subscription, resource group, name, region, SKU, type, and tier.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884729/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Session-Persistence/azure-load-balancer-creation-page.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal interface for creating a load balancer, with options to configure project and instance details such as subscription, resource group, name, region, SKU, type, and tier.](https://kodekloud.com/kk-media/image/upload/v1752884729/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Session-Persistence/azure-load-balancer-creation-page.jpg)
 
-<Frame>
-  ![The image shows the Microsoft Azure portal interface for creating a load balancer, specifically the "Frontend IP configuration" section. It includes options to add a frontend IP configuration with fields for name, IP version, IP type, and public IP address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884731/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Session-Persistence/azure-portal-load-balancer-frontend-ip.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal interface for creating a load balancer, specifically the "Frontend IP configuration" section. It includes options to add a frontend IP configuration with fields for name, IP version, IP type, and public IP address.](https://kodekloud.com/kk-media/image/upload/v1752884731/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Session-Persistence/azure-portal-load-balancer-frontend-ip.jpg)
 
 3. **Set Up the Backend Pool:**
    * Create a backend pool and choose the virtual network where your web servers are located.
    * Add all three web servers to the backend pool.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for adding a backend pool to a load balancer, listing virtual machines with their IP configurations and addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884732/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Session-Persistence/azure-portal-load-balancer-backend-pool.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for adding a backend pool to a load balancer, listing virtual machines with their IP configurations and addresses.](https://kodekloud.com/kk-media/image/upload/v1752884732/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Session-Persistence/azure-portal-load-balancer-backend-pool.jpg)
 
 4. **Add Load Balancing Rules:**\
    Create a load balancing rule to connect the frontend with the backend pool:
@@ -158,9 +148,7 @@ Follow these steps to create and configure your Azure Load Balancer:
    * Set both the frontend and backend TCP port to 80.
    * Create a new health probe (e.g., `sclb_http_probe`) that checks port 80 every 5 seconds. If a server fails to respond, it is marked as unhealthy and excluded from the load-balanced pool.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a load balancer, with options to add load balancing and inbound NAT rules. A sidebar is open for adding a load balancing rule, displaying various configuration settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884733/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Session-Persistence/azure-portal-load-balancer-setup.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a load balancer, with options to add load balancing and inbound NAT rules. A sidebar is open for adding a load balancing rule, displaying various configuration settings.](https://kodekloud.com/kk-media/image/upload/v1752884733/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Session-Persistence/azure-portal-load-balancer-setup.jpg)
 
 5. **Configure Session Persistence:**\
    Within the load balancing rule settings, select the session persistence method. By default, the five-tuple hash (none) is used. You may choose the two-tuple (client IP) or three-tuple (client IP and protocol) option based on your application's needs. For demonstration purposes, we'll keep the default "none" setting.
@@ -170,13 +158,9 @@ Follow these steps to create and configure your Azure Load Balancer:
 
 After the load balancer is deployed, navigate back to its resource page to view its details.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal displaying details of a load balancer named "azlb-web-01," including its resource group, location, and configuration settings. The interface provides options for managing IP configurations, backend pools, health probes, and load balancing rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884734/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Session-Persistence/azure-portal-load-balancer-details.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal displaying details of a load balancer named "azlb-web-01," including its resource group, location, and configuration settings. The interface provides options for managing IP configurations, backend pools, health probes, and load balancing rules.](https://kodekloud.com/kk-media/image/upload/v1752884734/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Session-Persistence/azure-portal-load-balancer-details.jpg)
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page listing virtual machines, including their names, types, locations, statuses, operating systems, sizes, public IP addresses, and disk counts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884735/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Session-Persistence/azure-portal-virtual-machines-list.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page listing virtual machines, including their names, types, locations, statuses, operating systems, sizes, public IP addresses, and disk counts.](https://kodekloud.com/kk-media/image/upload/v1752884735/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Session-Persistence/azure-portal-virtual-machines-list.jpg)
 
 Once the public IP of the load balancer is associated with the web servers, entering the IP address in your browser will direct you to one of the servers based on the configured session persistence mechanism. Depending on the underlying session details, you may see different responses (red, green, or blue).
 
@@ -188,8 +172,6 @@ In this lesson, you learned how Azure Load Balancer manages session persistence 
 
 Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/50248c52-4b17-4c2d-87f8-52a42eff2d2f/lesson/42d31a2b-2cbb-4808-8d9e-d2dd3050d5c5" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/50248c52-4b17-4c2d-87f8-52a42eff2d2f/lesson/42d31a2b-2cbb-4808-8d9e-d2dd3050d5c5)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/50248c52-4b17-4c2d-87f8-52a42eff2d2f/lesson/2fc7374a-2d09-4449-91cd-9ab8d83aea60" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/50248c52-4b17-4c2d-87f8-52a42eff2d2f/lesson/2fc7374a-2d09-4449-91cd-9ab8d83aea60)

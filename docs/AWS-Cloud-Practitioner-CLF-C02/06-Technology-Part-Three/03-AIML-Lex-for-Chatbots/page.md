@@ -27,17 +27,17 @@ Amazon Lex is widely used to develop chatbots for a variety of applications, inc
 * **Voice-Enabled Applications:** Delivers interactive voice responses ideal for call centers and smart devices.
 * **Information Bots:** Provides real-time updates on topics such as stocks or medical data, customized according to your specific security and data requirements.
 
-![The image illustrates general use cases of Amazon Lex, including customer service chatbots, voice-enabled applications, and informational bots, connected through a central icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861982/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Lex-for-Chatbots/frame_130.jpg)
+![The image illustrates general use cases of Amazon Lex, including customer service chatbots, voice-enabled applications, and informational bots, connected through a central icon.](https://kodekloud.com/kk-media/image/upload/v1752861982/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Lex-for-Chatbots/frame_130.jpg)
 
 These chatbots improve user engagement by delivering swift information and expanding accessibility for diverse user groups, including those with visual or hearing impairments.
 
-![The image highlights three aspects of modern computing: enhancing user experiences, automation and efficiency, and accessibility, with corresponding icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861983/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Lex-for-Chatbots/frame_180.jpg)
+![The image highlights three aspects of modern computing: enhancing user experiences, automation and efficiency, and accessibility, with corresponding icons.](https://kodekloud.com/kk-media/image/upload/v1752861983/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Lex-for-Chatbots/frame_180.jpg)
 
 ## Why Choose Amazon Lex?
 
 Amazon Lex distinguishes itself as a purpose-built solution for creating conversational interfaces. Unlike generic natural language processing tools, Lex is specifically designed to simplify chatbot development and integrate seamlessly with other AWS services. This allows you to rapidly build scalable, efficient, and automated solutions.
 
-![The image highlights reasons to choose Amazon Lex, emphasizing its distinction from other NLP tools and its capability to build conversational interfaces.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861984/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Lex-for-Chatbots/frame_210.jpg)
+![The image highlights reasons to choose Amazon Lex, emphasizing its distinction from other NLP tools and its capability to build conversational interfaces.](https://kodekloud.com/kk-media/image/upload/v1752861984/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Lex-for-Chatbots/frame_210.jpg)
 
 By harnessing the power of NLU and ASR, Amazon Lex not only boosts user engagement but also ensures information is accessible and relevant.
 
@@ -47,6 +47,6 @@ In summary, Amazon Lex is built on core technologies—natural language understa
 
 Thank you for exploring this lesson on Amazon Lex. We look forward to introducing more innovative topics in our next session.
 
-![The image is a conclusion slide listing key points: NLU and ASR, building chatbots, AWS integration, enhancing user experiences, and accessibility, automation, and efficiency.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861985/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Lex-for-Chatbots/frame_260.jpg)
+![The image is a conclusion slide listing key points: NLU and ASR, building chatbots, AWS integration, enhancing user experiences, and accessibility, automation, and efficiency.](https://kodekloud.com/kk-media/image/upload/v1752861985/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Lex-for-Chatbots/frame_260.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-cloud-practitioner-clf-c02/module/bc372a48-ec05-4d1c-a3ef-e6b3ac1caf48/lesson/f288d1b6-2761-4be8-9a36-64e9c570b06c)

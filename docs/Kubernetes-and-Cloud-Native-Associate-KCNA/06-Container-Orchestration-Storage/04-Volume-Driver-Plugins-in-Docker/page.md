@@ -16,15 +16,11 @@ Some volume drivers support multiple storage providers. For instance, the Rex Ra
 * Google Persistent Disk
 * OpenStack Cinder
 
-<Frame>
-  ![The image lists Docker storage and volume drivers, including AUFS, ZFS, BTRFS, and others, with a link to Docker's legacy plugins documentation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880635/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Volume-Driver-Plugins-in-Docker/frame_70.jpg)
-</Frame>
+![The image lists Docker storage and volume drivers, including AUFS, ZFS, BTRFS, and others, with a link to Docker's legacy plugins documentation.](https://kodekloud.com/kk-media/image/upload/v1752880635/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Volume-Driver-Plugins-in-Docker/frame_70.jpg)
 
 When you run a Docker container, you can specify a particular volume driver—such as Rex Ray EBS—to provision a volume from a cloud provider like Amazon EBS. This process creates a container with an attached volume from the AWS cloud, ensuring that even if the container stops running, your data will remain safely stored.
 
-<Callout icon="lightbulb">
-  Use volume driver plugins to connect your containers to various cloud storage solutions, enabling scalable and persistent data storage across different environments.
-</Callout>
+> **lightbulb** Use volume driver plugins to connect your containers to various cloud storage solutions, enabling scalable and persistent data storage across different environments.
 
 Below is an example command demonstrating how to run a MySQL container using the Rex Ray EBS volume driver:
 
@@ -38,6 +34,4 @@ docker run -it \
 
 For more details on Docker volume plugins and their integration with cloud storage, consider exploring the official [Docker Documentation](https://docs.docker.com/engine/extend/plugins_volume/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/fbd7b99a-b2c1-4eda-9ef9-f5e0d7a20fce/lesson/4d7ef9ed-c431-46ce-bb6f-179d87feba1e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/fbd7b99a-b2c1-4eda-9ef9-f5e0d7a20fce/lesson/4d7ef9ed-c431-46ce-bb6f-179d87feba1e)

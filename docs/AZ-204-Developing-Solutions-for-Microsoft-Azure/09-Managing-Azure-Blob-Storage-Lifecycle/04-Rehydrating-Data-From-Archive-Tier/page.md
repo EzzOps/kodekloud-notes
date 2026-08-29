@@ -14,7 +14,7 @@ In this method, the archived blob is copied into an online tier (either hot or c
 
 Alternatively, you can change the blob's access tier directly to move it into an online tier, such as hot or cool, by using the `setBlobTier` API. With this method, the blob is entirely moved out of the archive tier. Keep in mind that rehydration through this approach may take additional time depending on the selected priority.
 
-![The image outlines two options for rehydrating blob data from an archive tier: copying an archived blob to an online tier and changing a blob's access tier to an online tier.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866691/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Rehydrating-Data-From-Archive-Tier/rehydrate-blob-data-options.jpg)
+![The image outlines two options for rehydrating blob data from an archive tier: copying an archived blob to an online tier and changing a blob's access tier to an online tier.](https://kodekloud.com/kk-media/image/upload/v1752866691/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Rehydrating-Data-From-Archive-Tier/rehydrate-blob-data-options.jpg)
 
 ## Rehydration Priority Options
 
@@ -26,7 +26,7 @@ When rehydrating data, you can choose between different priority settings that a
 * **High Priority:**\
   For scenarios requiring rapid access, setting a high priority can accelerate the process, usually completing within one to five hours depending on the blob's size. Note that opting for high priority may incur additional costs.
 
-![The image illustrates the concept of rehydrating blob data from an archive tier, showing two options: Standard Priority and High Priority, under the category of Rehydration Priority.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866693/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Rehydrating-Data-From-Archive-Tier/rehydrating-blob-data-priority-options.jpg)
+![The image illustrates the concept of rehydrating blob data from an archive tier, showing two options: Standard Priority and High Priority, under the category of Rehydration Priority.](https://kodekloud.com/kk-media/image/upload/v1752866693/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Rehydrating-Data-From-Archive-Tier/rehydrating-blob-data-priority-options.jpg)
 
 > **lightbulb** To specify the desired rehydration priority in your API calls, include the header `X-MS-Rehydrate-Priority` with either a value of `standard` or `high`. This informs the system about your urgency, ensuring the data movement is prioritized accordingly.
 

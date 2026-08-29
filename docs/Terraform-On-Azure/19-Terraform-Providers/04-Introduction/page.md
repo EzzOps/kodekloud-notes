@@ -94,9 +94,7 @@ Initializing provider plugins...
 Terraform has been successfully initialized!
 ```
 
-<Callout icon="lightbulb">
-  Include `terraform.lock.hcl` in version control. The lock file ensures everyone (local developers and CI) uses the exact same provider versions for reproducible, deterministic runs.
-</Callout>
+> **lightbulb** Include `terraform.lock.hcl` in version control. The lock file ensures everyone (local developers and CI) uses the exact same provider versions for reproducible, deterministic runs.
 
 When to re-run terraform init
 
@@ -149,9 +147,7 @@ Links and references
 * Terraform CLI documentation — [https://www.terraform.io/docs/cli/index.html](https://www.terraform.io/docs/cli/index.html)
 * Managing providers and modules — [https://www.terraform.io/docs/language/providers/index.html](https://www.terraform.io/docs/language/providers/index.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/eeac3f53-157e-493c-a726-7e5d9190c4c3/lesson/fc69f181-2bca-4316-bb35-25e8976111d0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/eeac3f53-157e-493c-a726-7e5d9190c4c3/lesson/fc69f181-2bca-4316-bb35-25e8976111d0)
 
 
 # Introduction
@@ -232,9 +228,7 @@ Best practices:
 * Commit `.terraform.lock.hcl` to version control to guarantee consistent provider installs across machines and CI.
 * Upgrade providers intentionally: update constraints, run `terraform init -upgrade`, and test in non-production environments first.
 
-<Callout icon="lightbulb">
-  Always commit `.terraform.lock.hcl` and pin provider versions to ensure reproducible provider installs across developer machines and CI.
-</Callout>
+> **lightbulb** Always commit `.terraform.lock.hcl` and pin provider versions to ensure reproducible provider installs across developer machines and CI.
 
 ## Provider configuration and aliases
 
@@ -338,9 +332,7 @@ Guidelines:
 * Use `azapi` when you need immediate access to new API versions, preview features, or raw ARM payloads not yet covered by `azurerm`.
 * It’s common to mix both providers in a single configuration — choose the right tool for the resource and be mindful of implicit dependencies (outputs, references, or ordering) between resources managed by different providers.
 
-<Callout icon="warning">
-  When mixing `azurerm` and `azapi`, explicitly manage dependencies (e.g., using `depends_on`) if the ordering matters and verify resource state interactions to avoid drift or race conditions.
-</Callout>
+> **warning** When mixing `azurerm` and `azapi`, explicitly manage dependencies (e.g., using `depends_on`) if the ordering matters and verify resource state interactions to avoid drift or race conditions.
 
 ## Additional operational notes
 
@@ -365,6 +357,4 @@ Guidelines:
 
 Practice these concepts with hands-on examples and incrementally apply provider upgrades in isolated environments to validate changes before production deployments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/eeac3f53-157e-493c-a726-7e5d9190c4c3/lesson/e75c10ce-2c16-473f-a84a-6f2f642461a6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/eeac3f53-157e-493c-a726-7e5d9190c4c3/lesson/e75c10ce-2c16-473f-a84a-6f2f642461a6)

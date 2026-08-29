@@ -6,9 +6,7 @@ This guide covers the process of defining, deploying, and managing an S3 bucket 
 
 In this lesson, you'll learn how to create and manage an AWS S3 bucket using Pulumi's AWS library with Python. The example below demonstrates the basic structure of a Pulumi program that imports necessary libraries, creates an S3 bucket, and exports its identifier.
 
-<Callout icon="lightbulb">
-  This guide covers the process of defining, deploying, and managing an S3 bucket using Pulumi's Infrastructure as Code approach.
-</Callout>
+> **lightbulb** This guide covers the process of defining, deploying, and managing an S3 bucket using Pulumi's Infrastructure as Code approach.
 
 ## Example: Creating an S3 Bucket with Pulumi
 

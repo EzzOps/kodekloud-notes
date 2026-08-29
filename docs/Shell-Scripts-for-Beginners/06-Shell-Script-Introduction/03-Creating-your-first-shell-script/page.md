@@ -100,10 +100,8 @@ $ chmod +x create-and-launch-rocket
 
 Once you’ve added the execute permission, your script will run as expected.
 
-<Callout icon="lightbulb">
-  * Choose descriptive script names. Avoid generic names like "script1.sh," "my\_script.sh," or "test.sh" to make the script’s purpose clear.
+> **lightbulb** * Choose descriptive script names. Avoid generic names like "script1.sh," "my\_script.sh," or "test.sh" to make the script’s purpose clear.
   * If you plan to use the script as an executable command, consider omitting the `.sh` extension for a more natural command-line experience.
-</Callout>
 
 ## Summary
 
@@ -117,8 +115,6 @@ Let's practice creating and executing your first shell script. Happy scripting, 
 * [Shell Script Best Practices](https://www.shellscript.sh/)
 * [Linux Command Line Basics](https://linuxjourney.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/bed31683-dcad-4a23-8bb9-c2402635b125" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/bed31683-dcad-4a23-8bb9-c2402635b125)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/558a44a8-6237-4f38-af65-d2059da05eb7" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/558a44a8-6237-4f38-af65-d2059da05eb7)

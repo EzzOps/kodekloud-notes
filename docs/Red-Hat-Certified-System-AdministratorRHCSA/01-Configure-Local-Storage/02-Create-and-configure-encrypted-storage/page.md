@@ -12,13 +12,9 @@ Encryption transforms readable data into an unreadable format. For example, with
 
 After encryption, the data might appear as a series of random characters:
 
-<Frame>
-  ![The image shows a digital representation of encrypted storage, featuring an icon of a gift box with a sequence of numbers below it, set against a dark background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883542/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Create-and-configure-encrypted-storage/encrypted-storage-gift-box-icon.jpg)
-</Frame>
+![The image shows a digital representation of encrypted storage, featuring an icon of a gift box with a sequence of numbers below it, set against a dark background.](https://kodekloud.com/kk-media/image/upload/v1752883542/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Create-and-configure-encrypted-storage/encrypted-storage-gift-box-icon.jpg)
 
-<Callout icon="lightbulb">
-  Encryption not only protects data from unauthorized access if the disk is stolen but also ensures that sensitive information remains safe even in environments with high-security requirements.
-</Callout>
+> **lightbulb** Encryption not only protects data from unauthorized access if the disk is stolen but also ensures that sensitive information remains safe even in environments with high-security requirements.
 
 To implement encryption on a Linux storage device, we utilize Cryptsetup. Cryptsetup offers two primary encryption modes:
 
@@ -55,9 +51,7 @@ $ sudo mount /dev/mapper/mysecuredisk /mnt
 
 When data is written using `mkfs.xfs`, the Linux kernel automatically encrypts it before saving it to the physical device. Similarly, data is decrypted on the fly when reading from `/dev/mapper/mysecuredisk`.
 
-<Callout icon="triangle-alert">
-  Always unmount and close the mapped device when it is not in use. Failing to do so may expose the encrypted data to unauthorized access.
-</Callout>
+> **triangle-alert** Always unmount and close the mapped device when it is not in use. Failing to do so may expose the encrypted data to unauthorized access.
 
 To close the mapped device after use, unmount the filesystem and run:
 
@@ -137,8 +131,6 @@ Both plain mode and LUKS encryption methods can effectively secure data on Linux
 
 Now, put these techniques into practice to ensure your sensitive data remains secure.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/207496ef-0e82-42c8-aa9d-7996cfb968a6/lesson/79677ecb-3e36-44d3-820c-31857ce3a1af" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/207496ef-0e82-42c8-aa9d-7996cfb968a6/lesson/79677ecb-3e36-44d3-820c-31857ce3a1af)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/207496ef-0e82-42c8-aa9d-7996cfb968a6/lesson/22b6de66-9ae8-41d9-b73f-7efba5271255" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/207496ef-0e82-42c8-aa9d-7996cfb968a6/lesson/22b6de66-9ae8-41d9-b73f-7efba5271255)

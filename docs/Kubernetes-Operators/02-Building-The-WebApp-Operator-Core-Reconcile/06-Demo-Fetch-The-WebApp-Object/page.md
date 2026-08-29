@@ -94,9 +94,7 @@ func (r *WebAppReconciler) SetupWithManager(mgr ctrl.Manager) error {
 }
 ```
 
-<Callout icon="lightbulb">
-  Use `client.IgnoreNotFound(err)` to treat deleted objects as a normal condition. That prevents your controller from requeuing errors for resources that no longer exist.
-</Callout>
+> **lightbulb** Use `client.IgnoreNotFound(err)` to treat deleted objects as a normal condition. That prevents your controller from requeuing errors for resources that no longer exist.
 
 Build and test locally
 
@@ -114,8 +112,6 @@ Useful links and references
 * Kubebuilder docs: [https://book.kubebuilder.io/](https://book.kubebuilder.io/)
 * controller-runtime client API: [https://pkg.go.dev/sigs.k8s.io/controller-runtime@v0.23.3/pkg/client](https://pkg.go.dev/sigs.k8s.io/controller-runtime@v0.23.3/pkg/client)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/a47e78e1-626a-4375-b8a2-3780e4560437" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/a47e78e1-626a-4375-b8a2-3780e4560437)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/1e4a2132-3a94-4b40-ba14-c2a8046e2728" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/1e4a2132-3a94-4b40-ba14-c2a8046e2728)

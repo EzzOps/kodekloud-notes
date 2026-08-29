@@ -54,9 +54,7 @@ Redshift is based on PostgreSQL and supports many PostgreSQL client tools and SQ
 * COPY command optimizations for high-performance bulk loading from S3 or other sources.
 * Compression encodings and vacuum/ANALYZE patterns to maintain performance.
 
-<Callout icon="lightbulb">
-  Redshift is PostgreSQL-compatible for many client tools and SQL constructs, but it has its own performance and distribution characteristics. Test queries and indexing/distribution strategies in Redshift rather than assuming PostgreSQL defaults.
-</Callout>
+> **lightbulb** Redshift is PostgreSQL-compatible for many client tools and SQL constructs, but it has its own performance and distribution characteristics. Test queries and indexing/distribution strategies in Redshift rather than assuming PostgreSQL defaults.
 
 Key Redshift features and capabilities
 
@@ -108,6 +106,4 @@ References and further reading
 * Amazon S3: [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/)
 * Redshift best practices and performance tuning guides: [https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html](https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/6b775562-0b27-41e9-93fc-bb16dab05d87/lesson/40c10aa9-8805-4ec8-a7e2-ba1e195d0176" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/6b775562-0b27-41e9-93fc-bb16dab05d87/lesson/40c10aa9-8805-4ec8-a7e2-ba1e195d0176)

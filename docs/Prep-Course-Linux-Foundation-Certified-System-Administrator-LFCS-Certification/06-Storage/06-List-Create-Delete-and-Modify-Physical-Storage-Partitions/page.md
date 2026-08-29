@@ -6,9 +6,7 @@ This guide covers managing disk partitions on Linux systems, including listing, 
 
 In this guide, we'll explore how to effectively manage disk partitions on Linux systems. Using a practical example, imagine you have a 2TB SSD to be split for dual-booting Windows and Ubuntu. Since Windows requires NTFS and Ubuntu uses EXT4, you must divide the SSD into partitions—1TB for Windows and 1TB for Ubuntu. This process is known as partitioning, ensuring each operating system functions independently.
 
-<Frame>
-  ![The image illustrates a partitioning concept, showing a 1 TB drive split between Windows (NTFS) and Ubuntu (EXT4).](../../../../images/kodekloud.com/kk-media/image/upload/v1752881358/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-List-Create-Delete-and-Modify-Physical-Storage-Partitions/partitioning-1tb-drive-windows-ubuntu.jpg)
-</Frame>
+![The image illustrates a partitioning concept, showing a 1 TB drive split between Windows (NTFS) and Ubuntu (EXT4).](https://kodekloud.com/kk-media/image/upload/v1752881358/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-List-Create-Delete-and-Modify-Physical-Storage-Partitions/partitioning-1tb-drive-windows-ubuntu.jpg)
 
 ## Inspecting Partitions with lsblk
 
@@ -70,9 +68,7 @@ Device         Start      End Sectors Size Type
 /dev/sda3   4198400  9436791 90171392  43G Linux filesystem
 ```
 
-<Callout icon="lightbulb">
-  The partition table divides a storage device into sectors. For instance, with a sector size of 512 bytes, starting at sector 2048 means the partition begins after 512 × 2048 = 1,048,576 bytes (1MB). Adjust the calculation based on your disk's sector size if it is different.
-</Callout>
+> **lightbulb** The partition table divides a storage device into sectors. For instance, with a sector size of 512 bytes, starting at sector 2048 means the partition begins after 512 × 2048 = 1,048,576 bytes (1MB). Adjust the calculation based on your disk's sector size if it is different.
 
 ## Partitioning Using cfdisk
 
@@ -84,9 +80,7 @@ sudo cfdisk /dev/sdb
 
 In the cfdisk interface, you'll see how data is stored as a series of 0s and 1s, with the partition table clearly marking start and end points.
 
-<Frame>
-  ![The image shows a computer interface prompting the user to select a label type for a partition table, with options including "gpt," "dos," "sgi," and "sun." A message indicates that the device does not contain a recognized partition table.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881359/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-List-Create-Delete-and-Modify-Physical-Storage-Partitions/partition-table-label-selection-interface.jpg)
-</Frame>
+![The image shows a computer interface prompting the user to select a label type for a partition table, with options including "gpt," "dos," "sgi," and "sun." A message indicates that the device does not contain a recognized partition table.](https://kodekloud.com/kk-media/image/upload/v1752881359/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-List-Create-Delete-and-Modify-Physical-Storage-Partitions/partition-table-label-selection-interface.jpg)
 
 Modern systems generally prefer GPT (GUID Partition Table) as it offers enhanced reliability, supports more primary partitions, and supports larger partition sizes compared to older MBR (DOS) systems.
 
@@ -115,9 +109,7 @@ Partition type: Linux filesystem (OFC63DAF-8483-4772-8E79-3D69D8477DE4)
 [ Delete ] [ Resize ] [ Quit ] [ Type ] [ Help ] [ Write ] [ Dump ]
 ```
 
-<Callout icon="lightbulb">
-  Partitions in cfdisk are numbered in the order of creation rather than by physical location. In other words, a partition created later may appear as SDB2 even if it's located at the end of the disk. Use the Sort option in cfdisk to reorder partitions naturally.
-</Callout>
+> **lightbulb** Partitions in cfdisk are numbered in the order of creation rather than by physical location. In other words, a partition created later may appear as SDB2 even if it's located at the end of the disk. Use the Sort option in cfdisk to reorder partitions naturally.
 
 After sorting, the partition layout might display as follows:
 
@@ -139,13 +131,9 @@ Partition type: Linux filesystem (OFC63DAF-8483-4772-8E79-3D69D8477DE4)
 
 If you wish to change a partition’s type (for example, to designate the 2G partition as Linux swap), select the partition, press the Type button, and then choose "Linux swap" from the available options. Similarly, you can change a partition to the EFI system type if you're setting up a boot partition.
 
-<Frame>
-  ![The image shows a disk partitioning interface for a 10 GiB disk labeled /dev/sdb, displaying existing partitions and free space, with options to create a new partition.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881359/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-List-Create-Delete-and-Modify-Physical-Storage-Partitions/disk-partitioning-interface-10gib.jpg)
-</Frame>
+![The image shows a disk partitioning interface for a 10 GiB disk labeled /dev/sdb, displaying existing partitions and free space, with options to create a new partition.](https://kodekloud.com/kk-media/image/upload/v1752881359/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-List-Create-Delete-and-Modify-Physical-Storage-Partitions/disk-partitioning-interface-10gib.jpg)
 
-<Frame>
-  ![The image shows a disk partitioning interface for a 10 GiB disk with three partitions: two 4G Linux filesystems and one 2G Linux swap. The highlighted partition is being modified to a Linux swap type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881361/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-List-Create-Delete-and-Modify-Physical-Storage-Partitions/disk-partitioning-interface-linux-swap.jpg)
-</Frame>
+![The image shows a disk partitioning interface for a 10 GiB disk with three partitions: two 4G Linux filesystems and one 2G Linux swap. The highlighted partition is being modified to a Linux swap type.](https://kodekloud.com/kk-media/image/upload/v1752881361/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-List-Create-Delete-and-Modify-Physical-Storage-Partitions/disk-partitioning-interface-linux-swap.jpg)
 
 ### Committing Your Changes in cfdisk
 
@@ -163,6 +151,4 @@ For further reading and advanced partition management strategies, explore our re
 
 Happy partitioning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/58e80236-a7a0-4ec8-91bd-b7e603fc7df2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/58e80236-a7a0-4ec8-91bd-b7e603fc7df2)

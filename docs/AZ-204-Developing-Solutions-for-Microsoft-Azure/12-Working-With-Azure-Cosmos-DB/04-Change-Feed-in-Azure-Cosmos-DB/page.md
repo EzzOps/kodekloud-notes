@@ -22,7 +22,7 @@ The following example demonstrates how to work with container properties and met
 
 1. Create a new Console Application project in Visual Studio (targeting .NET 6) and name it "Container Metadata Demo".
 
-![The image shows a software development environment with a dialog box for configuring a new console application, where you can enter a project name, solution name, and set the location. The left panel displays a project structure with dependencies and a program file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866782/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Container-Properties-and-Metadata/software-development-console-application-config.jpg)
+![The image shows a software development environment with a dialog box for configuring a new console application, where you can enter a project name, solution name, and set the location. The left panel displays a project structure with dependencies and a program file.](https://kodekloud.com/kk-media/image/upload/v1752866782/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Container-Properties-and-Metadata/software-development-console-application-config.jpg)
 
 2. Open the NuGet Package Manager and install the required Azure Storage libraries. Once added, replace the default code with the following:
 
@@ -124,7 +124,7 @@ There are two primary models for utilizing the change feed: the push model and t
 
 For most real-time processing scenarios, the push model is often preferred as it eliminates the need for constant polling and simplifies the overall process.
 
-![The image illustrates the change feed in Azure Cosmos DB, showing a flow from Azure Cosmos DB to push and pull models, with Azure Functions triggers and a change feed processor library.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866783/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Change-Feed-in-Azure-Cosmos-DB/azure-cosmos-db-change-feed-diagram.jpg)
+![The image illustrates the change feed in Azure Cosmos DB, showing a flow from Azure Cosmos DB to push and pull models, with Azure Functions triggers and a change feed processor library.](https://kodekloud.com/kk-media/image/upload/v1752866783/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Change-Feed-in-Azure-Cosmos-DB/azure-cosmos-db-change-feed-diagram.jpg)
 
 Azure recommends two native options for implementing the push model:
 
@@ -134,7 +134,7 @@ Azure recommends two native options for implementing the push model:
 2. **Change Feed Processor Library**\
    Available as part of the Cosmos DB SDK for .NET and Java, this library facilitates reading the change feed and distributing events across multiple consumers, ensuring horizontally scalable processing.
 
-![The image explains the use of Azure Functions and Change Feed Processor in Azure Cosmos DB. It highlights how Azure Functions are triggered by new events in the change feed, and how the Change Feed Processor simplifies event processing across multiple consumers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866785/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Change-Feed-in-Azure-Cosmos-DB/azure-functions-change-feed-processor.jpg)
+![The image explains the use of Azure Functions and Change Feed Processor in Azure Cosmos DB. It highlights how Azure Functions are triggered by new events in the change feed, and how the Change Feed Processor simplifies event processing across multiple consumers.](https://kodekloud.com/kk-media/image/upload/v1752866785/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Change-Feed-in-Azure-Cosmos-DB/azure-functions-change-feed-processor.jpg)
 
 ## Key Components of the Change Feed Processor Architecture
 

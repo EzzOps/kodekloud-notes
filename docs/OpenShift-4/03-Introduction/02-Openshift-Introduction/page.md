@@ -25,9 +25,7 @@ OpenShift Origin is built on Docker containers and the Kubernetes Cluster Manage
 
 Below is a diagram that illustrates how OpenShift Origin integrates Docker with Kubernetes:
 
-<Frame>
-  ![The image contains text describing OpenShift Origin as a platform based on Docker containers and Kubernetes, designed for rapid application development, deployment, and lifecycle management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882663/notes-assets/images/OpenShift-4-Openshift-Introduction/openshift-origin-docker-kubernetes.jpg)
-</Frame>
+![The image contains text describing OpenShift Origin as a platform based on Docker containers and Kubernetes, designed for rapid application development, deployment, and lifecycle management.](https://kodekloud.com/kk-media/image/upload/v1752882663/notes-assets/images/OpenShift-4-Openshift-Introduction/openshift-origin-docker-kubernetes.jpg)
 
 ### Docker
 
@@ -37,13 +35,11 @@ Docker is the technology that powers containerized applications. It enables you 
 
 Kubernetes orchestrates the deployment and management of Docker images across large clusters, offering features like self-healing and auto-scaling. OpenShift builds upon Kubernetes by integrating additional tools and streamlining infrastructure management. It also offers seamless integration with developer tools such as GitHub for source code management.
 
-<Callout icon="lightbulb">
-  * **Integrated Build Pipelines:** Ensure consistent development, testing, and deployment.
+> **lightbulb** * **Integrated Build Pipelines:** Ensure consistent development, testing, and deployment.
   * **Built-in Docker Image Registry:** Manage application images efficiently.
   * **Software-Defined Networking:** Provides built-in networking capabilities.
   * **Extensive API Support:** Facilitates smooth integration with existing systems.
   * **User and Project Management Tools:** Enable effective management of teams, projects, and access controls.
-</Callout>
 
 ## Understanding the Software Development Process
 
@@ -51,16 +47,12 @@ Before diving into the advanced features of OpenShift, it is important to unders
 
 The following diagram outlines the various tools used in the software development process, including Source Code Management (SCM), build pipelines, registries, software-defined networking, APIs, and governance—all represented by interconnected red circles:
 
-<Frame>
-  ![The image is a flowchart illustrating various tools in a software development process, including SCM, Pipeline, Registry, Software Defined Networking, API, and Governance. Each tool is represented by an icon within interconnected red circles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882664/notes-assets/images/OpenShift-4-Openshift-Introduction/software-development-tools-flowchart.jpg)
-</Frame>
+![The image is a flowchart illustrating various tools in a software development process, including SCM, Pipeline, Registry, Software Defined Networking, API, and Governance. Each tool is represented by an icon within interconnected red circles.](https://kodekloud.com/kk-media/image/upload/v1752882664/notes-assets/images/OpenShift-4-Openshift-Introduction/software-development-tools-flowchart.jpg)
 
-<Callout icon="lightbulb">
-  For newcomers to Docker and Kubernetes, consider enrolling in these hands-on courses:
+> **lightbulb** For newcomers to Docker and Kubernetes, consider enrolling in these hands-on courses:
 
   * [Docker for the Absolute Beginners](https://learn.kodekloud.com/user/courses/docker-training-course-for-the-absolute-beginner)
   * [Kubernetes for the Absolute Beginners](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial)
-</Callout>
 
 ## Conclusion
 
@@ -70,6 +62,4 @@ See you in the next lesson!
 
 ***
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/1823500d-7c58-4ab6-9edf-f41169a20df9/lesson/c9888be8-0a94-494d-a9bd-3835d7a37d08" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/1823500d-7c58-4ab6-9edf-f41169a20df9/lesson/c9888be8-0a94-494d-a9bd-3835d7a37d08)

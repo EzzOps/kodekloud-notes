@@ -93,9 +93,7 @@ bin    etc   lib    lib64   boot  home   cdrom   initrd.img   lost+found   dev  
 bob@caleston-lp10 ~ $
 ```
 
-<Callout icon="lightbulb">
-  Dave reassures Bob, “There's no need to worry about making mistakes. We'll be working in a lab environment where you will access a temporary operating system setup. These sessions are hands-on, and the environment will automatically reset after an hour.”
-</Callout>
+> **lightbulb** Dave reassures Bob, “There's no need to worry about making mistakes. We'll be working in a lab environment where you will access a temporary operating system setup. These sessions are hands-on, and the environment will automatically reset after an hour.”
 
 ***
 
@@ -123,6 +121,4 @@ Bob nods enthusiastically, “Yes, absolutely.”
 
 And so, the training begins.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/19296611-5fb9-4e5d-a926-d157d3f3c3db/lesson/517f0ad3-c629-46c1-9c3a-670d27a246d5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/19296611-5fb9-4e5d-a926-d157d3f3c3db/lesson/517f0ad3-c629-46c1-9c3a-670d27a246d5)

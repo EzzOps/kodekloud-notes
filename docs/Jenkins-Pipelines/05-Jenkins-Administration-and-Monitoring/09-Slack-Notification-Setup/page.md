@@ -12,15 +12,11 @@ In this lesson, you'll learn how to integrate the Slack Notification plugin with
 
 Begin by installing the Slack Notification plugin on your Jenkins instance. This plugin is accessible via the Plugin Manager in Jenkins, helping to integrate Jenkins with Slack by sending build status messages.
 
-<Frame>
-  ![The image shows the Jenkins plugin management interface, specifically the "Available plugins" section, with a search for "Slack Notification" displayed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879691/notes-assets/images/Jenkins-Pipelines-Slack-Notification-Setup/jenkins-plugin-management-slack-notification.jpg)
-</Frame>
+![The image shows the Jenkins plugin management interface, specifically the "Available plugins" section, with a search for "Slack Notification" displayed.](https://kodekloud.com/kk-media/image/upload/v1752879691/notes-assets/images/Jenkins-Pipelines-Slack-Notification-Setup/jenkins-plugin-management-slack-notification.jpg)
 
 After locating the plugin using the search feature, proceed with its installation. You can monitor the plugin download progress during the installation process:
 
-<Frame>
-  ![The image shows a Jenkins interface displaying the download progress of plugins, with options for managing plugins and checking connectivity status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879692/notes-assets/images/Jenkins-Pipelines-Slack-Notification-Setup/jenkins-plugin-download-progress.jpg)
-</Frame>
+![The image shows a Jenkins interface displaying the download progress of plugins, with options for managing plugins and checking connectivity status.](https://kodekloud.com/kk-media/image/upload/v1752879692/notes-assets/images/Jenkins-Pipelines-Slack-Notification-Setup/jenkins-plugin-download-progress.jpg)
 
 Once the installation is complete, restart Jenkins to apply the new settings.
 
@@ -30,9 +26,7 @@ Once the installation is complete, restart Jenkins to apply the new settings.
 
 Before diving into configuration, it is essential to review the Slack Notification plugin documentation. If you are new to Slack, first create an account and set up your workspace. Within this workspace, create a dedicated Slack channel for receiving Jenkins notifications. For instance, you might create a channel named "Dasher notifications."
 
-<Frame>
-  ![The image shows a Slack interface where a user is in the process of creating a new channel named "das" within a workspace.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879693/notes-assets/images/Jenkins-Pipelines-Slack-Notification-Setup/slack-new-channel-creation-das.jpg)
-</Frame>
+![The image shows a Slack interface where a user is in the process of creating a new channel named "das" within a workspace.](https://kodekloud.com/kk-media/image/upload/v1752879693/notes-assets/images/Jenkins-Pipelines-Slack-Notification-Setup/slack-new-channel-creation-das.jpg)
 
 ***
 
@@ -40,9 +34,7 @@ Before diving into configuration, it is essential to review the Slack Notificati
 
 Next, create a new Slack App in your workspace. In Slack’s app configuration, choose to create an app from an app manifest. Select your workspace (for our purposes, the Jenkins workspace), and replace any pre-filled content with the YAML manifest provided below.
 
-<Frame>
-  ![The image shows a webpage from the Jenkins plugins site, specifically for the Slack Notification plugin, including installation instructions and version details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879694/notes-assets/images/Jenkins-Pipelines-Slack-Notification-Setup/jenkins-slack-notification-plugin.jpg)
-</Frame>
+![The image shows a webpage from the Jenkins plugins site, specifically for the Slack Notification plugin, including installation instructions and version details.](https://kodekloud.com/kk-media/image/upload/v1752879694/notes-assets/images/Jenkins-Pipelines-Slack-Notification-Setup/jenkins-slack-notification-plugin.jpg)
 
 ### YAML Manifest for Slack App
 
@@ -77,9 +69,7 @@ settings:
 
 After pasting the manifest into Slack’s configuration, click **Next**. You will see a summary page displaying the eight permissions associated with your bot user.
 
-<Frame>
-  ![The image shows a Slack API page where a user is selecting a workspace named "Jenkins" to develop an app. A pop-up window is prompting the user to pick the workspace and proceed to the next step.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879695/notes-assets/images/Jenkins-Pipelines-Slack-Notification-Setup/slack-api-jenkins-workspace-selection.jpg)
-</Frame>
+![The image shows a Slack API page where a user is selecting a workspace named "Jenkins" to develop an app. A pop-up window is prompting the user to pick the workspace and proceed to the next step.](https://kodekloud.com/kk-media/image/upload/v1752879695/notes-assets/images/Jenkins-Pipelines-Slack-Notification-Setup/slack-api-jenkins-workspace-selection.jpg)
 
 Review the summary details:
 
@@ -132,15 +122,11 @@ settings:
 
 After the installation, keep the provided OAuth token secure as it is crucial for connecting Jenkins with Slack.
 
-<Frame>
-  ![The image shows a Slack authorization page where Jenkins is requesting permission to access a Slack workspace, with options to allow or cancel.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879696/notes-assets/images/Jenkins-Pipelines-Slack-Notification-Setup/slack-authorization-jenkins-access.jpg)
-</Frame>
+![The image shows a Slack authorization page where Jenkins is requesting permission to access a Slack workspace, with options to allow or cancel.](https://kodekloud.com/kk-media/image/upload/v1752879696/notes-assets/images/Jenkins-Pipelines-Slack-Notification-Setup/slack-authorization-jenkins-access.jpg)
 
 You can also review the installed app settings and OAuth token information:
 
-<Frame>
-  ![The image shows the Slack API interface for installed app settings, displaying an OAuth token for a Jenkins app with options to copy the token or reinstall the app.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879700/notes-assets/images/Jenkins-Pipelines-Slack-Notification-Setup/slack-api-jenkins-app-settings.jpg)
-</Frame>
+![The image shows the Slack API interface for installed app settings, displaying an OAuth token for a Jenkins app with options to copy the token or reinstall the app.](https://kodekloud.com/kk-media/image/upload/v1752879700/notes-assets/images/Jenkins-Pipelines-Slack-Notification-Setup/slack-api-jenkins-app-settings.jpg)
 
 ***
 
@@ -153,9 +139,7 @@ With your OAuth token ready, proceed to configure the Slack integration within J
 3. Enter your workspace name (for example, Jenkins).
 4. Create new credentials of type **Secret Text**, then paste your bot user OAuth token. For instance, set the credential ID as "Slack bot token."
 
-<Frame>
-  ![The image shows a Jenkins interface for adding credentials, with fields for domain, kind, scope, secret, ID, and description. The "Kind" is set to "Secret text," and there are suggestions for the ID field.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879701/notes-assets/images/Jenkins-Pipelines-Slack-Notification-Setup/jenkins-add-credentials-interface.jpg)
-</Frame>
+![The image shows a Jenkins interface for adding credentials, with fields for domain, kind, scope, secret, ID, and description. The "Kind" is set to "Secret text," and there are suggestions for the ID field.](https://kodekloud.com/kk-media/image/upload/v1752879701/notes-assets/images/Jenkins-Pipelines-Slack-Notification-Setup/jenkins-add-credentials-interface.jpg)
 
 After adding the credentials, select the newly created Slack token in your configuration settings. Specify the Slack channel where notifications should be sent (e.g., "Dasher notifications"). For advanced settings, you may leave the default values for icon emoji and username.
 
@@ -165,9 +149,7 @@ Click **Test Connection**. If you receive an error message like:
 Failure(["ok":false,"error":"not_in_channel"])
 ```
 
-<Callout icon="triangle-alert">
-  This error indicates that your Jenkins app user is not a member of the specified Slack channel. To resolve this, invite the Jenkins app to the channel by typing @Jenkins (or the app’s display name) within the channel.
-</Callout>
+> **triangle-alert** This error indicates that your Jenkins app user is not a member of the specified Slack channel. To resolve this, invite the Jenkins app to the channel by typing @Jenkins (or the app’s display name) within the channel.
 
 Once the app is added to the channel, test the connection again until you receive a success confirmation.
 
@@ -189,13 +171,9 @@ For further details about the Slack/Jenkins integration, you can visit the plugi
 
 Thank you for following this lesson.
 
-<Callout icon="lightbulb">
-  For more information, consider reviewing the following resources:
+> **lightbulb** For more information, consider reviewing the following resources:
 
   * [Jenkins Documentation](https://www.jenkins.io/doc/)
   * [Slack API Documentation](https://api.slack.com/)
-</Callout>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/f046d5d1-6fa6-4156-b38d-202ed885b64d/lesson/9b13f9d8-dbc7-4deb-834c-a8ddb5d71feb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/f046d5d1-6fa6-4156-b38d-202ed885b64d/lesson/9b13f9d8-dbc7-4deb-834c-a8ddb5d71feb)

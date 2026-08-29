@@ -20,9 +20,7 @@ spec:
 
 ## Warning about protecting signing keys
 
-<Callout icon="warning">
-  Private signing keys must be stored and rotated securely. If an attacker obtains a private key they can sign malicious images that will pass verification. Use hardware-backed keys, secure secret management, or Sigstore keyless workflows where appropriate.
-</Callout>
+> **warning** Private signing keys must be stored and rotated securely. If an attacker obtains a private key they can sign malicious images that will pass verification. Use hardware-backed keys, secure secret management, or Sigstore keyless workflows where appropriate.
 
 ## Summary
 
@@ -46,9 +44,7 @@ We will now put this theory into practice and walk through the actual commands a
 * [Notary (The Update Framework)](https://github.com/theupdateframework/notary) — Trusted signing framework
 * [Kubernetes Documentation](https://kubernetes.io/docs/) — Kubernetes resources and admission controllers
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/29b815f2-6996-4693-b4b5-993ad2c6659e/lesson/3adc55ba-928a-465e-95df-d8ead92857b0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/29b815f2-6996-4693-b4b5-993ad2c6659e/lesson/3adc55ba-928a-465e-95df-d8ead92857b0)
 
 
 # Image Signature using Notary
@@ -59,9 +55,7 @@ Guide to signing container images with Notation, inspecting Notary v2 signatures
 
 In the previous lesson we covered why signing container images matters. This article walks through the practical steps to sign a container image using Notation, inspect the resulting signature artifact, and verify the signature (locally and conceptually how a verifier like Kyverno checks it). The workflow emphasizes operating on an image's immutable content-addressable digest so the signature binds to the exact image content.
 
-<Callout icon="lightbulb">
-  Always sign and verify an image by its immutable digest (for example, `registry.example.com/app@sha256:...`) rather than a mutable tag. This ensures the signature cryptographically covers the exact image bytes.
-</Callout>
+> **lightbulb** Always sign and verify an image by its immutable digest (for example, `registry.example.com/app@sha256:...`) rather than a mutable tag. This ensures the signature cryptographically covers the exact image bytes.
 
 ## Quick checklist
 

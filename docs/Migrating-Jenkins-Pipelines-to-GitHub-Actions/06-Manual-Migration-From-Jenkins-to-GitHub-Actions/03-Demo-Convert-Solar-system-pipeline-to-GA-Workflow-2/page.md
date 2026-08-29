@@ -83,9 +83,7 @@ Next, add a repository variable for the Mongo username:
   <img alt="A GitHub repository settings screenshot showing the &#x22;Actions variables / New variable&#x22; page with the Name field set to MONGO_USERNAME and the Value field containing &#x22;superuser,&#x22; plus a green &#x22;Add variable&#x22; button. The dark-themed UI shows repository navigation and the settings sidebar on the left." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Use Actions Secrets for sensitive data (passwords, API keys) and Actions Variables for non-sensitive configuration (usernames, environment names). Secrets are masked in logs and are not visible after creation; variables can be edited and viewed in the repository settings by users with appropriate access.
-</Callout>
+> **lightbulb** Use Actions Secrets for sensitive data (passwords, API keys) and Actions Variables for non-sensitive configuration (usernames, environment names). Secrets are masked in logs and are not visible after creation; variables can be edited and viewed in the repository settings by users with appropriate access.
 
 Below is a concise GitHub Actions workflow demonstrating the correct YAML syntax and how to reference the repository variable and secret. Note:
 
@@ -145,9 +143,7 @@ Key points and best practices
 * Use `actions/setup-node@v4` to install a Node version compatible with your app (example uses Node 22).
 * If your tests produce JUnit XML (for example via `mocha-junit-reporter`), upload the XML as an artifact in a follow-up step so the test results are accessible from the Actions UI.
 
-<Callout icon="warning">
-  Do not store credentials or secrets in plaintext in your repository. Secrets are masked in logs, but treating secrets responsibly (scoped, rotated, and audited) is critical for secure CI/CD.
-</Callout>
+> **warning** Do not store credentials or secrets in plaintext in your repository. Secrets are masked in logs, but treating secrets responsibly (scoped, rotated, and audited) is critical for secure CI/CD.
 
 After adding the secret and the variable, I committed and pushed the workflow changes. The workflow ran and the unit-testing job succeeded:
 
@@ -180,6 +176,4 @@ Related references
 * [actions/setup-node](https://github.com/actions/setup-node)
 * [Mocha](https://mochajs.org/) and [mocha-junit-reporter](https://github.com/michaelleeallen/mocha-junit-reporter)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/f63e67f3-f04a-474f-87b9-ae17930e9e67/lesson/d4f034e7-6327-4ba6-be64-f1f9c8ae3dcd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/f63e67f3-f04a-474f-87b9-ae17930e9e67/lesson/d4f034e7-6327-4ba6-be64-f1f9c8ae3dcd)

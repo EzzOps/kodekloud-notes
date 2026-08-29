@@ -6,9 +6,7 @@ Istio Gateways manage ingress and egress traffic, perform TLS termination, and u
 
 A Gateway is an entry point that controls traffic between the outside world and the Istio service mesh. Gateways are optional: if your workloads don't need external exposure, you can rely on VirtualServices alone. Use the Istio Operator to enable or disable gateway components as needed.
 
-<Callout icon="lightbulb">
-  Gateways are used only when you need to control ingress or egress traffic at the mesh boundary. Inside the mesh, VirtualServices and DestinationRules control routing and subsets.
-</Callout>
+> **lightbulb** Gateways are used only when you need to control ingress or egress traffic at the mesh boundary. Inside the mesh, VirtualServices and DestinationRules control routing and subsets.
 
 ## Types of Gateways
 

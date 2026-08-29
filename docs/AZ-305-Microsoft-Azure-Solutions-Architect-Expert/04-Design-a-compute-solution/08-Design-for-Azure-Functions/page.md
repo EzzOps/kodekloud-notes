@@ -42,7 +42,7 @@ When architecting solutions with Azure Functions, keep these key considerations 
 5. **Defensive Programming**\
    Emphasize proper exception handling within your function code to maintain uninterrupted service even when encountering unexpected errors.
 
-![The image is an infographic from KodeKloud outlining considerations for designing solutions with Azure Functions, including long-running functions, durable functions, performance, scalability, and designing defensive functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866857/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Functions/azure-functions-design-considerations.jpg)
+![The image is an infographic from KodeKloud outlining considerations for designing solutions with Azure Functions, including long-running functions, durable functions, performance, scalability, and designing defensive functions.](https://kodekloud.com/kk-media/image/upload/v1752866857/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Functions/azure-functions-design-considerations.jpg)
 
 ***
 
@@ -68,11 +68,11 @@ Once the Function App is deployed:
 
 * Navigate to your Function App and create a new function.
 
-![The image shows a Microsoft Azure portal screen indicating that a deployment is complete, with options for next steps and feedback.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866858/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Functions/azure-portal-deployment-complete.jpg)
+![The image shows a Microsoft Azure portal screen indicating that a deployment is complete, with options for next steps and feedback.](https://kodekloud.com/kk-media/image/upload/v1752866858/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Functions/azure-portal-deployment-complete.jpg)
 
 * Select the HTTP trigger template and give your function a name (e.g., "ShowFlagFunction").
 
-![The image shows the Microsoft Azure portal interface for creating a function within a Function App. It displays options for selecting a template and configuring function details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866859/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Functions/azure-portal-function-app-creation.jpg)
+![The image shows the Microsoft Azure portal interface for creating a function within a Function App. It displays options for selecting a template and configuring function details.](https://kodekloud.com/kk-media/image/upload/v1752866859/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Functions/azure-portal-function-app-creation.jpg)
 
 ### Step 3: Editing the Function Code
 

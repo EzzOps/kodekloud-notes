@@ -62,9 +62,7 @@ Links and references
 * [zPages extension repo](https://github.com/open-telemetry/opentelemetry-collector/tree/main/extension/zpages)
 * [pprof (net/http/pprof)](https://pkg.go.dev/net/http/pprof)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/080eea24-a1d3-48e7-8e67-194225f719a9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/080eea24-a1d3-48e7-8e67-194225f719a9)
 
 
 # Recap When to Use What
@@ -147,9 +145,7 @@ pipelines:
     exporters: [debug]
 ```
 
-<Callout icon="lightbulb">
-  pprof is powerful but advanced. Use it when you need CPU or memory profiles to diagnose performance bottlenecks. For day-to-day checks, rely on metrics, health checks, and zPages.
-</Callout>
+> **lightbulb** pprof is powerful but advanced. Use it when you need CPU or memory profiles to diagnose performance bottlenecks. For day-to-day checks, rely on metrics, health checks, and zPages.
 
 Below is a quick reference table for these endpoints and when to use them:
 
@@ -172,6 +168,4 @@ Links and references:
 
 That wraps up this topic.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/1aa0f7c7-0925-4936-bccc-608de6aa3a8d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/1aa0f7c7-0925-4936-bccc-608de6aa3a8d)

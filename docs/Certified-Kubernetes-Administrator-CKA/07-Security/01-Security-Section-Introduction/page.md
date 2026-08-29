@@ -19,11 +19,11 @@ password123,user5,u0005
 
 We then discuss TLS certificates and the role they play in securing components within the cluster. If you are a Kubernetes administrator setting up a cluster on your own, you might encounter challenges related to certificate management. This article covers the basics of certificates from the ground up.
 
-![The image outlines course objectives for Kubernetes, covering core concepts, security, storage, networking, and troubleshooting, with a diagram illustrating client certificate interactions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869948/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Security-Section-Introduction/frame_50.jpg)
+![The image outlines course objectives for Kubernetes, covering core concepts, security, storage, networking, and troubleshooting, with a diagram illustrating client certificate interactions.](https://kodekloud.com/kk-media/image/upload/v1752869948/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Security-Section-Introduction/frame_50.jpg)
 
 One of the key sections in this article simplifies the core concepts of certificates. For beginners, several prerequisite lectures have been included to build a strong foundation. A poll conducted among the audience revealed that most respondents were new to TLS certificates. This valuable feedback prompted a detailed explanation of how certificates are used within Kubernetes, a topic that often confuses newcomers.
 
-![The image shows a pie chart with percentages and a list of pre-requisite lectures on TLS basics, certificate details, and generation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869949/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Security-Section-Introduction/frame_80.jpg)
+![The image shows a pie chart with percentages and a list of pre-requisite lectures on TLS basics, certificate details, and generation.](https://kodekloud.com/kk-media/image/upload/v1752869949/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Security-Section-Introduction/frame_80.jpg)
 
 > **lightbulb** The prerequisite lectures and accompanying practice tests are designed to help you bridge any gaps in your understanding of TLS certificates. Depending on your level of expertise, you might choose to skip some of these sessions.
 

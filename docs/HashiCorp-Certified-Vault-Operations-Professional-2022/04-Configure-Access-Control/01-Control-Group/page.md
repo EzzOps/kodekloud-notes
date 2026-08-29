@@ -6,9 +6,7 @@ Control groups require designated approvers to authorize requests for sensitive 
 
 Control groups provide an extra layer of approval for sensitive Vault paths, requiring designated approvers to explicitly authorize each request. This feature is covered in the Vault Certified Operations Professional exam and can be useful when you need multi-party approval on top of ACL and Sentinel policies.
 
-<Callout icon="lightbulb">
-  Control groups are rarely used in production environments but are essential for high-security workflows and exam preparation.
-</Callout>
+> **lightbulb** Control groups are rarely used in production environments but are essential for high-security workflows and exam preparation.
 
 ***
 
@@ -21,9 +19,7 @@ By default, Vault evaluates:
 
 With a control group configured on a path, Vault enforces a **third** requirement: an explicit approval step from one or more designated identity groups before returning secrets.
 
-<Frame>
-  ![The image is a slide about "Control Groups" in a Vault certification context, explaining the additional authorization requirements and the process when a control group is created. It includes a list of steps and a Vault certification badge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878324/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Control-Group/control-groups-vault-certification-slide.jpg)
-</Frame>
+![The image is a slide about "Control Groups" in a Vault certification context, explaining the additional authorization requirements and the process when a control group is created. It includes a list of steps and a Vault certification badge.](https://kodekloud.com/kk-media/image/upload/v1752878324/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Control-Group/control-groups-vault-certification-slide.jpg)
 
 ***
 
@@ -41,9 +37,7 @@ Currently, the only supported factor is an **Identity Group**, which specifies b
 | Identity Group | Approver group names and approval count | Require 2 approvals from `account-managers`                         |
 |                |                                         | Require 1 approval each from `account-managers` and `security-team` |
 
-<Frame>
-  ![The image is a slide about "Control Group Factors," explaining that requirements can be specified in ACL policies or Sentinel policies, with the only supported factor being an Identity Group. It includes a certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878325/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Control-Group/control-group-factors-acl-sentinel-slide.jpg)
-</Frame>
+![The image is a slide about "Control Group Factors," explaining that requirements can be specified in ACL policies or Sentinel policies, with the only supported factor being an Identity Group. It includes a certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878325/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Control-Group/control-group-factors-acl-sentinel-slide.jpg)
 
 ***
 
@@ -51,9 +45,7 @@ Currently, the only supported factor is an **Identity Group**, which specifies b
 
 When a control group is applied, Vault follows this sequence:
 
-<Frame>
-  ![The image illustrates a "Control Group Workflow" with a diagram showing authorization steps involving account managers and a policy for data access. It includes a person sitting with a laptop and a badge labeled "Vault Certified Operations Professional."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878327/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Control-Group/control-group-workflow-authorization-diagram.jpg)
-</Frame>
+![The image illustrates a "Control Group Workflow" with a diagram showing authorization steps involving account managers and a policy for data access. It includes a person sitting with a laptop and a badge labeled "Vault Certified Operations Professional."](https://kodekloud.com/kk-media/image/upload/v1752878327/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Control-Group/control-group-workflow-authorization-diagram.jpg)
 
 1. **Client requests** a secret at the protected path.
 2. Vault returns a **wrapping token** instead of the secret.
@@ -86,15 +78,11 @@ Approvers log in (CLI or UI) and run:
 vault write sys/control-group/authorize accessor="cql9n3r4kMeIQZekoLrMWMWN"
 ```
 
-<Frame>
-  ![The image shows a software interface for an account manager, highlighting a request for access authorization to a specific data path. It includes a button labeled "Authorize" and a certification badge for a Vault Certified Operations Professional.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878328/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Control-Group/account-manager-access-authorization-interface.jpg)
-</Frame>
+![The image shows a software interface for an account manager, highlighting a request for access authorization to a specific data path. It includes a button labeled "Authorize" and a certification badge for a Vault Certified Operations Professional.](https://kodekloud.com/kk-media/image/upload/v1752878328/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Control-Group/account-manager-access-authorization-interface.jpg)
 
 If the policy requires multiple sign-offs, Vault waits until all approvals are recorded:
 
-<Frame>
-  ![The image shows a software interface for managing access control groups, with a focus on authorizing user access. It includes a notification confirming authorization for a user to access specific data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878329/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Control-Group/access-control-groups-user-authorization.jpg)
-</Frame>
+![The image shows a software interface for managing access control groups, with a focus on authorizing user access. It includes a notification confirming authorization for a user to access specific data.](https://kodekloud.com/kk-media/image/upload/v1752878329/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Control-Group/access-control-groups-user-authorization.jpg)
 
 ### 3. Client Unwraps the Secret
 
@@ -106,9 +94,7 @@ vault unwrap hvs.CAESIPvNkRgluUVNT_ccLsm6aZ-
 
 If approvals are missing, unwrap returns an error:
 
-<Frame>
-  ![The image shows a software interface with an error message indicating that a request needs further authorization to unwrap data. It also features a menu with options like Wrap, Lookup, and Unwrap, and includes a Vault certification badge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878330/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Control-Group/software-interface-error-message-authorization.jpg)
-</Frame>
+![The image shows a software interface with an error message indicating that a request needs further authorization to unwrap data. It also features a menu with options like Wrap, Lookup, and Unwrap, and includes a Vault certification badge.](https://kodekloud.com/kk-media/image/upload/v1752878330/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Control-Group/software-interface-error-message-authorization.jpg)
 
 ***
 
@@ -198,6 +184,4 @@ Control groups add a mandatory multi-party approval step on top of standard ACL 
 * [Vault Wrapping API](https://www.vaultproject.io/api-docs/sys/wrapping)
 * [Vault Identity Groups](https://www.vaultproject.io/docs/enterprise/identity#groups)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/968cf007-376b-48c8-83f9-17521b5dd575/lesson/1594ec26-e2a2-4331-9e1d-cb6ad50d686f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/968cf007-376b-48c8-83f9-17521b5dd575/lesson/1594ec26-e2a2-4331-9e1d-cb6ad50d686f)

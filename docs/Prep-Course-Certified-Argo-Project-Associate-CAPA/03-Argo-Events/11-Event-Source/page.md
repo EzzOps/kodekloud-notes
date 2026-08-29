@@ -113,13 +113,9 @@ Highlights:
 * `filter` restricts matches to object keys with a `prefix` and/or `suffix`.
 * `accessKey` and `secretKey` reference a Kubernetes Secret (`aws-creds`) containing the AWS credentials.
 
-<Callout icon="lightbulb">
-  The generated ClusterIP Service (via the `service` field) is intended for internal/testing use only. If you need external exposure, use Kubernetes-native objects (Ingress, LoadBalancer) or an API gateway rather than relying on the testing service.
-</Callout>
+> **lightbulb** The generated ClusterIP Service (via the `service` field) is intended for internal/testing use only. If you need external exposure, use Kubernetes-native objects (Ingress, LoadBalancer) or an API gateway rather than relying on the testing service.
 
-<Callout icon="warning">
-  Never store plain-text credentials in your YAML. Always reference credentials via Kubernetes Secrets and follow least-privilege principles for IAM keys. Rotate and audit credentials regularly.
-</Callout>
+> **warning** Never store plain-text credentials in your YAML. Always reference credentials via Kubernetes Secrets and follow least-privilege principles for IAM keys. Rotate and audit credentials regularly.
 
 Some event sources (Webhooks, GitHub, GitLab, SNS, etc.) require a reachable HTTP endpoint to receive events. The `service` field in an EventSource spec provides a convenience ClusterIP service for internal testing, but it isn’t a replacement for a production-grade exposure strategy.
 
@@ -131,6 +127,4 @@ References and further reading:
 * CloudEvents: [https://cloudevents.io/](https://cloudevents.io/)
 * Kubernetes Secrets: [https://kubernetes.io/docs/concepts/configuration/secret/](https://kubernetes.io/docs/concepts/configuration/secret/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/4fb2cac0-e3fc-43e4-8918-990d012b6c92" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/4fb2cac0-e3fc-43e4-8918-990d012b6c92)

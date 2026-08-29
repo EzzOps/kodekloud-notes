@@ -61,9 +61,7 @@ This guide walks through a concise Amazon Aurora demo: create an Aurora cluster 
   <img alt="A screenshot of the AWS RDS configuration page showing Virtual Private Cloud (VPC) and DB subnet group selection, public access options, and VPC security group choices. The console is in the N. Virginia region with the default VPC/subnet group selected." />
 </Frame>
 
-<Callout icon="warning">
-  Do not enable public access for production databases. If you temporarily enable public access for testing, restrict inbound traffic with security groups and remove public access when finished.
-</Callout>
+> **warning** Do not enable public access for production databases. If you temporarily enable public access for testing, restrict inbound traffic with security groups and remove public access when finished.
 
 ## 6 — Security and additional networking
 
@@ -131,9 +129,7 @@ To delete a cluster:
   <img alt="A screenshot of the Amazon RDS console showing a confirmation dialog to delete the &#x22;database-aurora-example&#x22; Aurora DB cluster, with warnings and options to create a final snapshot, retain automated backups, and require typed confirmation. The modal overlays the RDS Databases page." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Before deleting a cluster: disable deletion protection and decide whether a final snapshot is required for recovery.
-</Callout>
+> **lightbulb** Before deleting a cluster: disable deletion protection and decide whether a final snapshot is required for recovery.
 
 ## Best practices checklist
 
@@ -151,6 +147,4 @@ To delete a cluster:
 
 That covers the core Aurora demo: creating a cluster in the RDS console, understanding endpoints and configuration options, and safely tearing down the resources afterward.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/851f8f01-0dc4-4d68-894b-b7a9719a9b93" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/851f8f01-0dc4-4d68-894b-b7a9719a9b93)

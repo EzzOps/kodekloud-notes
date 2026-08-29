@@ -4,9 +4,7 @@
 
 5. Paste the key into your Ollama **Ollama Key** field and save.
 
-<Callout icon="lightbulb">
-  Once added, Ollama will recognize and authenticate your machine for publishing.
-</Callout>
+> **lightbulb** Once added, Ollama will recognize and authenticate your machine for publishing.
 
 ***
 
@@ -75,9 +73,7 @@ https://ollama.com/your_username/harris
 
 Visit the URL to view details such as architecture, parameter count, quantization, and any custom system instructions.
 
-<Frame>
-  ![The image shows a user interface for a model named "harris" with details about its architecture, parameters, and quantization. It includes sections for model information, parameters, system description, template, and license details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883677/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Uploading-Custom-Models/harris-model-ui-architecture-details.jpg)
-</Frame>
+![The image shows a user interface for a model named "harris" with details about its architecture, parameters, and quantization. It includes sections for model information, parameters, system description, template, and license details.](https://kodekloud.com/kk-media/image/upload/v1752883677/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Uploading-Custom-Models/harris-model-ui-architecture-details.jpg)
 
 ***
 
@@ -106,9 +102,7 @@ ollama pull your_username/harris:latest
 
 Uploading custom models to the Ollama Model Registry simplifies sharing, version control, and collaboration. Experiment with tagging, pushing, and pulling your own models to integrate this workflow into your development process.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/5785c7c7-5088-4ac3-b82f-8835e72b66d0/lesson/83650bbf-180c-4956-b5be-cd6560320385" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/5785c7c7-5088-4ac3-b82f-8835e72b66d0/lesson/83650bbf-180c-4956-b5be-cd6560320385)
 
 
 # Modelfile Introduction
@@ -125,9 +119,7 @@ In this lesson, you’ll discover what a Modelfile is and how to tailor open-sou
 * Key commands and features
 * Building AI-powered applications for production
 
-<Frame>
-  ![The image is a slide titled "Recap" with three points: running models locally with Ollama, various commands and features, and building AI applications for production.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883678/notes-assets/images/Running-Local-LLMs-With-Ollama-Modelfile-Introduction/recap-running-models-ollama-ai-apps.jpg)
-</Frame>
+![The image is a slide titled "Recap" with three points: running models locally with Ollama, various commands and features, and building AI applications for production.](https://kodekloud.com/kk-media/image/upload/v1752883678/notes-assets/images/Running-Local-LLMs-With-Ollama-Modelfile-Introduction/recap-running-models-ollama-ai-apps.jpg)
 
 ***
 
@@ -135,9 +127,7 @@ In this lesson, you’ll discover what a Modelfile is and how to tailor open-sou
 
 Gromor, an investment and portfolio management firm, wants its AI assistant to interpret monetary values in Indian rupees. By creating a Modelfile, Gromor can instruct the base model to output “₹100” instead of “100” when dealing with rupees.
 
-<Frame>
-  ![The image illustrates a process where open-source models interpret the number "100" as Indian Rupees, resulting in "₹100."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883679/notes-assets/images/Running-Local-LLMs-With-Ollama-Modelfile-Introduction/open-source-models-interpret-100-rs.jpg)
-</Frame>
+![The image illustrates a process where open-source models interpret the number "100" as Indian Rupees, resulting in "₹100."](https://kodekloud.com/kk-media/image/upload/v1752883679/notes-assets/images/Running-Local-LLMs-With-Ollama-Modelfile-Introduction/open-source-models-interpret-100-rs.jpg)
 
 ***
 
@@ -145,19 +135,13 @@ Gromor, an investment and portfolio management firm, wants its AI assistant to i
 
 A Modelfile is to Ollama what a Dockerfile is to Docker.
 
-<Frame>
-  ![The image shows an analogy comparing Docker with a Modelfile, suggesting a comparison between a Docker file and a Modelfile.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883680/notes-assets/images/Running-Local-LLMs-With-Ollama-Modelfile-Introduction/docker-modelfile-comparison-analogy.jpg)
-</Frame>
+![The image shows an analogy comparing Docker with a Modelfile, suggesting a comparison between a Docker file and a Modelfile.](https://kodekloud.com/kk-media/image/upload/v1752883680/notes-assets/images/Running-Local-LLMs-With-Ollama-Modelfile-Introduction/docker-modelfile-comparison-analogy.jpg)
 
-<Callout icon="lightbulb">
-  Both files start from a base image and layer on custom instructions to produce a final artifact.
-</Callout>
+> **lightbulb** Both files start from a base image and layer on custom instructions to produce a final artifact.
 
 ### Dockerfile Workflow
 
-<Frame>
-  ![The image illustrates an analogy between Docker and another concept, showing a process flow from a base image to defining steps to build a container image.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883681/notes-assets/images/Running-Local-LLMs-With-Ollama-Modelfile-Introduction/docker-analogy-process-flow.jpg)
-</Frame>
+![The image illustrates an analogy between Docker and another concept, showing a process flow from a base image to defining steps to build a container image.](https://kodekloud.com/kk-media/image/upload/v1752883681/notes-assets/images/Running-Local-LLMs-With-Ollama-Modelfile-Introduction/docker-analogy-process-flow.jpg)
 
 1. `FROM ubuntu:20.04`
 2. `RUN apt-get update && apt-get install -y python3`
@@ -179,9 +163,7 @@ Below are the most frequently used instructions in a Modelfile:
 
 Specifies the base model image to extend:
 
-<Frame>
-  ![The image shows a diagram with two labeled circles, "Base Model" and "New Model," connected by an arrow, indicating a transformation or progression.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883682/notes-assets/images/Running-Local-LLMs-With-Ollama-Modelfile-Introduction/base-model-new-model-diagram.jpg)
-</Frame>
+![The image shows a diagram with two labeled circles, "Base Model" and "New Model," connected by an arrow, indicating a transformation or progression.](https://kodekloud.com/kk-media/image/upload/v1752883682/notes-assets/images/Running-Local-LLMs-With-Ollama-Modelfile-Introduction/base-model-new-model-diagram.jpg)
 
 ```dockerfile theme={null}
 FROM facebook/opt-1.3b:latest
@@ -191,9 +173,7 @@ FROM facebook/opt-1.3b:latest
 
 Declare hyperparameters that control the model’s output:
 
-<Frame>
-  ![The image describes three parameters for a language model: "temperature" for creativity, "num\_ctx" for the number of context tokens, and "top\_k" for response diversity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883683/notes-assets/images/Running-Local-LLMs-With-Ollama-Modelfile-Introduction/language-model-parameters-temperature-numctx-topk.jpg)
-</Frame>
+![The image describes three parameters for a language model: "temperature" for creativity, "num\_ctx" for the number of context tokens, and "top\_k" for response diversity.](https://kodekloud.com/kk-media/image/upload/v1752883683/notes-assets/images/Running-Local-LLMs-With-Ollama-Modelfile-Introduction/language-model-parameters-temperature-numctx-topk.jpg)
 
 | Parameter   | Purpose                                  | Example           |
 | ----------- | ---------------------------------------- | ----------------- |

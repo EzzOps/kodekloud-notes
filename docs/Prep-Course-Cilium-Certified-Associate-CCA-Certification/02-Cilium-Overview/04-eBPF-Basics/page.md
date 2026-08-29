@@ -71,9 +71,7 @@ What is eBPF?
 
 Originally developed for packet filtering, eBPF has evolved into a general mechanism for in-kernel extensibility used for observability, networking, security enforcement, tracing, and other kernel‑level tasks—exposed and controlled from user space.
 
-<Callout icon="lightbulb">
-  eBPF programs are verified and sandboxed by the kernel verifier, and communicate with user-space via BPF maps. Once verified, eBPF bytecode can be JIT-compiled for high throughput and low latency. Learn more at the official eBPF site: [https://ebpf.io/](https://ebpf.io/).
-</Callout>
+> **lightbulb** eBPF programs are verified and sandboxed by the kernel verifier, and communicate with user-space via BPF maps. Once verified, eBPF bytecode can be JIT-compiled for high throughput and low latency. Learn more at the official eBPF site: [https://ebpf.io/](https://ebpf.io/).
 
 <Frame>
   <img alt="A slide titled &#x22;eBPF – Introduction&#x22; showing a three-circle Venn-style diagram of colored circles numbered 01–03 labeled Observability, Networking, and Security. A caption at the bottom reads &#x22;eBPF unlocks kernel features for user-space applications.&#x22;" />
@@ -145,9 +143,7 @@ Common eBPF use cases
 
 One important eBPF-based framework: XDP (eXpress Data Path). XDP allows eBPF programs to attach at the earliest packet receive hook—inside the NIC driver—so packets can be accepted, modified, redirected, or dropped before they go through the kernel network stack. This yields ultra-low-latency packet handling for DDoS mitigation, load balancing, and other high-performance networking tasks.
 
-<Callout icon="lightbulb">
-  XDP programs run at the earliest receive hook (NIC/driver level) and are ideal for high-performance packet ops such as drop/redirect/modify. XDP is widely used when ultra-low latency and extreme throughput are required.
-</Callout>
+> **lightbulb** XDP programs run at the earliest receive hook (NIC/driver level) and are ideal for high-performance packet ops such as drop/redirect/modify. XDP is widely used when ultra-low latency and extreme throughput are required.
 
 <Frame>
   <img alt="A presentation slide titled &#x22;XDP – Introduction&#x22; with a stylized gauge icon and upward arrows. The caption explains XDP is a high‑performance packet processing framework that runs eBPF programs at the NIC driver level." />
@@ -216,6 +212,4 @@ Further reading and references
 * iptables: [https://netfilter.org/projects/iptables/index.html](https://netfilter.org/projects/iptables/index.html)
 * nftables: [https://wiki.nftables.org/](https://wiki.nftables.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/9c9fa5ec-2721-4654-9383-5cb9b264e8b6/lesson/58731990-66de-48cf-8c16-025e8ebe7410" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/9c9fa5ec-2721-4654-9383-5cb9b264e8b6/lesson/58731990-66de-48cf-8c16-025e8ebe7410)

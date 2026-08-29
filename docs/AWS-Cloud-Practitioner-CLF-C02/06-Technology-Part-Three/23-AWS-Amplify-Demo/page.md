@@ -139,7 +139,7 @@ Afterward, click on "Launch Studio" in the Amplify Console to access a graphical
 
 Below is an image displaying the AWS Amplify Console with project configuration details:
 
-![The image shows a code editor with a terminal, displaying AWS Amplify deployment logs and project configuration details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862028/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Amplify-Demo/frame_120.jpg)
+![The image shows a code editor with a terminal, displaying AWS Amplify deployment logs and project configuration details.](https://kodekloud.com/kk-media/image/upload/v1752862028/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Amplify-Demo/frame_120.jpg)
 
 ***
 
@@ -149,11 +149,11 @@ Within Amplify Studio, select "Launch Studio" and allow any necessary pop-ups. T
 
 For demonstration, create a user (e.g., Michael at KodeKloud) with a temporary password and assign them to the "admins" group. The image below shows the "Create user" form:
 
-![The image shows a user management interface with a "Create user" form, including fields for email and password, and a password generator tool.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862029/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Amplify-Demo/frame_580.jpg)
+![The image shows a user management interface with a "Create user" form, including fields for email and password, and a password generator tool.](https://kodekloud.com/kk-media/image/upload/v1752862029/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Amplify-Demo/frame_580.jpg)
 
 After the user is created, you will see confirmation and status details as shown here:
 
-![The image shows a user management interface in AWS Amplify Studio, displaying a confirmation message for adding a user with email details and status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862031/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Amplify-Demo/frame_600.jpg)
+![The image shows a user management interface in AWS Amplify Studio, displaying a confirmation message for adding a user with email details and status.](https://kodekloud.com/kk-media/image/upload/v1752862031/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Amplify-Demo/frame_600.jpg)
 
 ***
 
@@ -185,15 +185,15 @@ amplify pull --appId d2gihSzi5j5g5 --envName dev
 
 Revisit the AWS Amplify Console to monitor and manage your backend. In the backend environment tab, view the "dev" environment with details on authentication and hosting configurations. The image below shows access control and backend environment details:
 
-![The image shows the AWS Amplify console, displaying app settings for "myeventplanner," including access control and backend environment details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862032/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Amplify-Demo/frame_510.jpg)
+![The image shows the AWS Amplify console, displaying app settings for "myeventplanner," including access control and backend environment details.](https://kodekloud.com/kk-media/image/upload/v1752862032/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Amplify-Demo/frame_510.jpg)
 
 Additionally, explore Amplify Studio for data modeling, UI development, and further backend configurations:
 
-![The image shows the AWS Amplify Studio interface for "myeventplanner's" development environment, displaying deployment activity logs and options for data modeling and UI development.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862033/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Amplify-Demo/frame_540.jpg)
+![The image shows the AWS Amplify Studio interface for "myeventplanner's" development environment, displaying deployment activity logs and options for data modeling and UI development.](https://kodekloud.com/kk-media/image/upload/v1752862033/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Amplify-Demo/frame_540.jpg)
 
 Review the authentication configuration in detail:
 
-![The image shows the authentication configuration page in AWS Amplify Studio, detailing login and sign-up settings with options for email and multi-factor authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862034/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Amplify-Demo/frame_660.jpg)
+![The image shows the authentication configuration page in AWS Amplify Studio, detailing login and sign-up settings with options for email and multi-factor authentication.](https://kodekloud.com/kk-media/image/upload/v1752862034/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Amplify-Demo/frame_660.jpg)
 
 ***
 

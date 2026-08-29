@@ -10,9 +10,7 @@ By leveraging Terragrunt’s hierarchical configuration, you can inherit and ove
 
 ## remote\_state Block Attributes
 
-<Frame>
-  ![The image is an infographic titled "remote\_state Block" showing three attributes: "backend" (defines remote backend used), "config" (contains configuration settings), and "generate" (simplifies configuration process).](../../../../images/kodekloud.com/kk-media/image/upload/v1752884310/notes-assets/images/Terragrunt-for-Beginners-remote-state-Block/remote-state-block-infographic-attributes.jpg)
-</Frame>
+![The image is an infographic titled "remote\_state Block" showing three attributes: "backend" (defines remote backend used), "config" (contains configuration settings), and "generate" (simplifies configuration process).](https://kodekloud.com/kk-media/image/upload/v1752884310/notes-assets/images/Terragrunt-for-Beginners-remote-state-Block/remote-state-block-infographic-attributes.jpg)
 
 | Attribute | Description                                                                                          |
 | --------- | ---------------------------------------------------------------------------------------------------- |
@@ -20,9 +18,7 @@ By leveraging Terragrunt’s hierarchical configuration, you can inherit and ove
 | config    | Map of backend-specific settings: bucket names, storage accounts, encryption, etc.                   |
 | generate  | *Optional.* Auto-generates a Terraform backend file (e.g., `backend.tf`) following your conventions. |
 
-<Callout icon="lightbulb">
-  The `generate` block helps maintain a standard backend configuration across modules without manually creating `backend.tf` files.
-</Callout>
+> **lightbulb** The `generate` block helps maintain a standard backend configuration across modules without manually creating `backend.tf` files.
 
 ## Benefits of Using remote\_state
 
@@ -44,9 +40,7 @@ By leveraging Terragrunt’s hierarchical configuration, you can inherit and ove
 * Leverage `generate` to auto-create backend configuration and reduce manual errors.
 * Use dynamic paths like `path_relative_to_include()` to isolate state per module.
 
-<Callout icon="triangle-alert">
-  Using `generate.if_exists = "overwrite_terragrunt"` will replace any existing backend file. Ensure you don’t lose custom modifications.
-</Callout>
+> **triangle-alert** Using `generate.if_exists = "overwrite_terragrunt"` will replace any existing backend file. Ensure you don’t lose custom modifications.
 
 ## Example Configuration
 
@@ -96,6 +90,4 @@ By following this pattern, you achieve a secure, consistent, and maintainable re
 * [Terragrunt Documentation: remote\_state](https://terragrunt.gruntwork.io/docs/features/keep-your-terraform-code-dry/#remote-state)
 * [AWS S3 Backend Guide](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/ac68b50d-e420-445b-a51f-6c61aa38c4d6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/ac68b50d-e420-445b-a51f-6c61aa38c4d6)

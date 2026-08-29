@@ -162,9 +162,7 @@ Prior to the introduction of the `loop` directive, Ansible used `with_items` for
         - mani
 ```
 
-<Callout icon="lightbulb">
-  For better clarity and future-proof playbooks, prefer using `loop` over `with_items`.
-</Callout>
+> **lightbulb** For better clarity and future-proof playbooks, prefer using `loop` over `with_items`.
 
 ## Other Looping Directives and Lookup Plugins
 
@@ -237,12 +235,8 @@ These lookup plugins can be considered as custom scripts that enable you to acce
 
 Understanding and utilizing loops in Ansible is critical for creating efficient, scalable, and maintainable playbooks. By leveraging loops, whether simple arrays or complex dictionaries, you can significantly reduce code duplication and enhance the clarity of your automation scripts.
 
-<Callout icon="lightbulb">
-  Experiment with different looping constructs to find the best fit for your automation needs. For additional guidance, explore the [Ansible Documentation](https://docs.ansible.com/ansible/latest/index.html).
-</Callout>
+> **lightbulb** Experiment with different looping constructs to find the best fit for your automation needs. For additional guidance, explore the [Ansible Documentation](https://docs.ansible.com/ansible/latest/index.html).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/f7bcdbad-4792-4e82-beaa-b799773214fd/lesson/29b70a5a-01c8-4f73-8b84-b05cf561aeff" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/f7bcdbad-4792-4e82-beaa-b799773214fd/lesson/29b70a5a-01c8-4f73-8b84-b05cf561aeff)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/f7bcdbad-4792-4e82-beaa-b799773214fd/lesson/22b01097-2e79-4c84-9f8c-4af7e837006c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/f7bcdbad-4792-4e82-beaa-b799773214fd/lesson/22b01097-2e79-4c84-9f8c-4af7e837006c)

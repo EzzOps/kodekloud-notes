@@ -37,7 +37,7 @@ Consider the following flow for managing credentials securely with AWS Secrets M
 
 > **lightbulb** This workflow is applicable not only for database credentials but also for any sensitive data like API keys. Using AWS Secrets Manager helps centralize and secure all your critical secrets.
 
-![The image illustrates a flowchart showing how AWS Secrets Manager is used to manage API keys for an external API, involving AWS Lambda within the AWS Cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865914/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Secrets-Manager/aws-secrets-manager-api-keys-flowchart.jpg)
+![The image illustrates a flowchart showing how AWS Secrets Manager is used to manage API keys for an external API, involving AWS Lambda within the AWS Cloud.](https://kodekloud.com/kk-media/image/upload/v1752865914/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Secrets-Manager/aws-secrets-manager-api-keys-flowchart.jpg)
 
 ## Key Features of AWS Secrets Manager
 
@@ -50,7 +50,7 @@ AWS Secrets Manager offers a range of benefits:
 | Automatic Rotation          | Facilitates scheduled secret rotation, minimizing the risk of credential compromise.      |
 | Fine-Grained Access Control | Provides detailed access policies to control who can access specific secrets.             |
 
-![The image lists four features: Secure Secret Storage, Easy Retrieval, Automatic Rotation, and Fine-Grained Access Control, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865915/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Secrets-Manager/secure-secret-storage-features.jpg)
+![The image lists four features: Secure Secret Storage, Easy Retrieval, Automatic Rotation, and Fine-Grained Access Control, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752865915/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Secrets-Manager/secure-secret-storage-features.jpg)
 
 AWS Secrets Manager eliminates the need to hard-code sensitive data, allowing your application to dynamically retrieve necessary credentials at runtime while maintaining a high security standard. This service not only protects your application but also simplifies credential management and enhances overall system integrity.
 

@@ -6,9 +6,7 @@ Describes connectors and plugins that link the Loop to external tools, MCP stand
 
 On its own, a loop can only touch the files in front of it. Real work usually lives in external tools — for example, GitHub, Slack, or project trackers. Connectors and plugins are how the loop reaches those tools and participates in real work.
 
-<Callout icon="lightbulb">
-  Connectors give the Loop a single, focused link to an external tool. Plugins are installable bundles that can contain multiple connectors plus skills and tools. Use connectors for targeted access; use plugins to install a package of capabilities in one step.
-</Callout>
+> **lightbulb** Connectors give the Loop a single, focused link to an external tool. Plugins are installable bundles that can contain multiple connectors plus skills and tools. Use connectors for targeted access; use plugins to install a package of capabilities in one step.
 
 Connectors
 

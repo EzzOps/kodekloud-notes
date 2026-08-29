@@ -136,9 +136,7 @@ end
 Allow or block unverified actions
 Some imports may reference unverified or older Marketplace actions. You can either allow them explicitly or replace them with maintained/verified alternatives.
 
-<Callout icon="warning">
-  If your pipeline uses unverified actions (for example `EnricoMi/publish-unit-test-result-action@v2`), either replace them with maintained verified alternatives (like `actions/upload-artifact@v4.1.0`) or run the importer with flags that allow unverified actions. Using unverified or deprecated actions can cause runtime failures.
-</Callout>
+> **warning** If your pipeline uses unverified actions (for example `EnricoMi/publish-unit-test-result-action@v2`), either replace them with maintained verified alternatives (like `actions/upload-artifact@v4.1.0`) or run the importer with flags that allow unverified actions. Using unverified or deprecated actions can cause runtime failures.
 
 Example CLI flag (restrict importer to verified actions)
 
@@ -229,12 +227,10 @@ Failure example (screenshot)
 
 Final notes and best practices
 
-<Callout icon="lightbulb">
-  * Ensure essential setup steps (checkout, install dependencies) are present before running tests to avoid missing binaries like Mocha.
+> **lightbulb** * Ensure essential setup steps (checkout, install dependencies) are present before running tests to avoid missing binaries like Mocha.
   * Extract dynamic values (commands, file names, retry counts) from Jenkins identifiers whenever possible so transformers apply across multiple contexts.
   * Prefer verified and actively maintained action versions; the importer can be configured to allow only verified actions so unverified steps are commented out or flagged.
   * Use `gh actions-importer` dry-run to iterate quickly and validate transformer output before migration.
-</Callout>
 
 References and further reading
 
@@ -243,9 +239,7 @@ References and further reading
 * Jenkins Pipeline Syntax: [https://www.jenkins.io/doc/book/pipeline/syntax/](https://www.jenkins.io/doc/book/pipeline/syntax/)
 * gh actions-importer CLI: [https://github.com/cli/gh-actions-importer](https://github.com/cli/gh-actions-importer) (see repo for usage and flags)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/a57d32e4-454b-4eec-895a-0d3d154e3507" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/a57d32e4-454b-4eec-895a-0d3d154e3507)
 
 
 # Demo Custom Transformer environment variable

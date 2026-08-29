@@ -8,9 +8,7 @@ chmod +x ./argo-rollouts-linux-amd64
 sudo mv ./argo-rollouts-linux-amd64 /usr/local/bin/argo-rollouts
 ```
 
-<Callout icon="lightbulb">
-  Using the CLI enables quick rollout status checks, traffic-shift visualizations, and troubleshooting commands. Check the official Argo Rollouts documentation for the latest installation instructions and binaries.
-</Callout>
+> **lightbulb** Using the CLI enables quick rollout status checks, traffic-shift visualizations, and troubleshooting commands. Check the official Argo Rollouts documentation for the latest installation instructions and binaries.
 
 ## Quick decision guide
 
@@ -28,9 +26,7 @@ sudo mv ./argo-rollouts-linux-amd64 /usr/local/bin/argo-rollouts
 * [GitOps with ArgoCD](https://learn.kodekloud.com/user/courses/gitops-with-argocd)
 * Kubernetes documentation: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/d2348f60-f369-4535-8291-d534d09567ef" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/d2348f60-f369-4535-8291-d534d09567ef)
 
 
 # Introduction to Argo Rollouts and Features
@@ -54,9 +50,7 @@ The diagram above shows a typical canary workflow:
 * Pause to collect and analyze metrics and probes.
 * If the analysis passes, increase the canary weight or promote to stable; if it fails, automatically rollback to the previous stable revision.
 
-<Callout icon="lightbulb">
-  Argo Rollouts introduces the Rollout CRD (kind: Rollout). You continue to use ordinary Kubernetes primitives (Services, Ingress, etc.), but replace Deployments with a Rollout resource when you need progressive delivery features like canary or blue/green strategies and automated analysis.
-</Callout>
+> **lightbulb** Argo Rollouts introduces the Rollout CRD (kind: Rollout). You continue to use ordinary Kubernetes primitives (Services, Ingress, etc.), but replace Deployments with a Rollout resource when you need progressive delivery features like canary or blue/green strategies and automated analysis.
 
 ## Core features — what Argo Rollouts provides
 
@@ -107,6 +101,4 @@ The diagram above shows a typical canary workflow:
 
 This overview introduced the primary concepts and capabilities of Argo Rollouts. From here, explore example Rollout manifests, integrations with Prometheus and service meshes (for example, Istio), and how to configure automated analyses, pause steps, and manual approvals to make your Kubernetes deployments safer and more controlled.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/1617b29d-aac9-478d-8f04-37364db38df9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/1617b29d-aac9-478d-8f04-37364db38df9)

@@ -8,9 +8,7 @@ In this article, you'll learn how to install Terraform and understand the basics
 
 Terraform is a popular Infrastructure as Code (IaC) tool that allows you to provision and manage a wide range of infrastructure resources. It supports various operating systems including Windows, macOS, Linux, Solaris, and OpenBSD.
 
-<Callout icon="lightbulb">
-  Before you begin, ensure that you have the necessary permissions to install software on your system.
-</Callout>
+> **lightbulb** Before you begin, ensure that you have the necessary permissions to install software on your system.
 
 ## Installing Terraform
 
@@ -89,9 +87,7 @@ A resource in Terraform is any object that it manages. This includes:
 
 Terraform supports hundreds of providers. For detailed information on available arguments and configurations for a specific resource, always refer to the [Terraform Documentation](https://www.terraform.io/docs).
 
-<Frame>
-  ![The image shows a diagram and text detailing a provider's resource type and argument reference, including optional and required parameters for file creation and permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884167/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Installing-Terraform-HCL-Basics/frame_560.jpg)
-</Frame>
+![The image shows a diagram and text detailing a provider's resource type and argument reference, including optional and required parameters for file creation and permissions.](https://kodekloud.com/kk-media/image/upload/v1752884167/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Installing-Terraform-HCL-Basics/frame_560.jpg)
 
 In the provider documentation, you will see that some arguments are mandatory (like `filename` for `local_file`), while others, including ACLs or permissions, may be optional.
 
@@ -178,9 +174,7 @@ After writing your configuration files, use the following steps to provision you
 
    The `terraform show` command displays the state of the created resource.
 
-<Callout icon="lightbulb">
-  For more details on Terraform state management and best practices, check out the official [Terraform Documentation](https://www.terraform.io/docs/state).
-</Callout>
+> **lightbulb** For more details on Terraform state management and best practices, check out the official [Terraform Documentation](https://www.terraform.io/docs/state).
 
 ## Recap
 
@@ -195,6 +189,4 @@ After writing your configuration files, use the following steps to provision you
 
 This concludes our article on installing Terraform and HCL basics. In future discussions, we will explore methods for updating and destroying resources using Terraform.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/e27c7cfe-a9f1-4e56-b55b-f908bd92d21c/lesson/0128c5a1-722c-4738-9a0b-30e527a38fff" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/e27c7cfe-a9f1-4e56-b55b-f908bd92d21c/lesson/0128c5a1-722c-4738-9a0b-30e527a38fff)

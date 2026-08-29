@@ -52,9 +52,7 @@ Example: if the model’s limit is 4,097 tokens and your prompt uses 3,900 token
   <img alt="A slide titled &#x22;Token Limits&#x22; that states OpenAI models have a maximum token size of 4,097. It notes that a 4,000-token prompt leaves up to 97 tokens for the completion and suggests breaking prompts into parts to work around the limit." />
 </Frame>
 
-<Callout icon="warning">
-  Be mindful of the combined token usage (input + output). Exceeding a model’s context window will cause errors or truncated responses. If you need more context than the model allows, consider summarization, retrieval-augmented generation (RAG), or splitting inputs across multiple calls.
-</Callout>
+> **warning** Be mindful of the combined token usage (input + output). Exceeding a model’s context window will cause errors or truncated responses. If you need more context than the model allows, consider summarization, retrieval-augmented generation (RAG), or splitting inputs across multiple calls.
 
 ## Tokens and cost
 
@@ -98,9 +96,7 @@ References and further reading:
 * tiktoken GitHub: [https://github.com/openai/tiktoken](https://github.com/openai/tiktoken)
 * [Kubernetes Documentation](https://kubernetes.io/docs/) (example external reference)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/e983525e-3a5a-4043-9319-4f259e41bc79/lesson/79a3c5fa-415e-4e90-a032-391ad1a0fd61" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/e983525e-3a5a-4043-9319-4f259e41bc79/lesson/79a3c5fa-415e-4e90-a032-391ad1a0fd61)
 
 
 # Demo Performing Similarity Search
@@ -135,9 +131,7 @@ def text_embedding(text: str) -> list[float]:
     return response["data"][0]["embedding"]
 ```
 
-<Callout icon="lightbulb">
-  Each embedding from `text-embedding-ada-002` has a fixed dimension of 1536, regardless of the input length.
-</Callout>
+> **lightbulb** Each embedding from `text-embedding-ada-002` has a fixed dimension of 1536, regardless of the input length.
 
 ## 2. Sample Phrases
 
@@ -214,9 +208,7 @@ Expected outputs:
 * All vectors have the same dimensionality (1536) to sit in a common embedding space.
 * Cosine similarity retrieves items by **meaning**, not by exact word overlap.
 
-<Callout icon="lightbulb">
-  This approach powers many AI-driven features such as semantic search, recommendation engines, and dynamic context for chatbots.
-</Callout>
+> **lightbulb** This approach powers many AI-driven features such as semantic search, recommendation engines, and dynamic context for chatbots.
 
 Experiment by adding new phrases, querying different sentences, and watching how similarity scores adapt to meaning.
 
@@ -226,6 +218,4 @@ Experiment by adding new phrases, querying different sentences, and watching how
 * [Cosine Similarity on Wikipedia](https://en.wikipedia.org/wiki/Cosine_similarity)
 * [NumPy API Reference](https://numpy.org/doc/stable/reference/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/cf879fc5-dcc3-4470-830d-4393645105c9/lesson/d78345f7-7490-4860-b9fe-da2730b087d8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/cf879fc5-dcc3-4470-830d-4393645105c9/lesson/d78345f7-7490-4860-b9fe-da2730b087d8)

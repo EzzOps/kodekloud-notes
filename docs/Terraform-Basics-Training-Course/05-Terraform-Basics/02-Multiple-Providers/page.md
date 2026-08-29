@@ -38,9 +38,7 @@ resource "random_pet" "my-pet" {
 
 This configuration now contains resource definitions for both the local file and the random pet.
 
-<Callout icon="lightbulb">
-  Before proceeding with any changes or deployments, always run the Terraform initialization command to download and configure all required provider plugins.
-</Callout>
+> **lightbulb** Before proceeding with any changes or deployments, always run the Terraform initialization command to download and configure all required provider plugins.
 
 ## Initializing Providers
 

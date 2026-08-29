@@ -267,11 +267,9 @@ Once you master Tasks and Pipelines:
 * [Tekton Dashboard](https://tekton.dev/docs/dashboard/)
 * [kubectl reference](https://kubernetes.io/docs/reference/kubectl/overview/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/231fc569-3421-4ad0-9aa7-8c5fff348d7e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/231fc569-3421-4ad0-9aa7-8c5fff348d7e)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/f963fc71-6121-47e8-89a4-681bf8bc36a8" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/f963fc71-6121-47e8-89a4-681bf8bc36a8)
 
 
 # GitOps Explained Desired State Drift and Reconciliation

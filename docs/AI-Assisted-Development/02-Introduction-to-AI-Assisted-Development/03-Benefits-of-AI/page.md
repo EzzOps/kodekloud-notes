@@ -188,7 +188,7 @@ Generative AI tools streamline the development process by automating repetitive 
 
 Overall, these tools improve maintainability and efficiency by automating routine tasks and providing intelligent suggestions.
 
-![The image outlines four aspects of code quality: automated code generation, smart code suggestions, intelligent bug detection, and refactoring assistance. It highlights how generative AI tools enhance code quality by automating tasks and providing smart recommendations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857087/notes-assets/images/AI-Assisted-Development-Benefits-of-AI/code-quality-generative-ai-tools.jpg)
+![The image outlines four aspects of code quality: automated code generation, smart code suggestions, intelligent bug detection, and refactoring assistance. It highlights how generative AI tools enhance code quality by automating tasks and providing smart recommendations.](https://kodekloud.com/kk-media/image/upload/v1752857087/notes-assets/images/AI-Assisted-Development-Benefits-of-AI/code-quality-generative-ai-tools.jpg)
 
 ## Faster Feature Development
 
@@ -200,7 +200,7 @@ AI-powered tools accelerate feature development by automating repetitive tasks s
 
 This streamlined process significantly reduces development time and fosters creative problem-solving.
 
-![The image shows a flowchart with three steps for faster feature development: automating repetitive tasks, generating code snippets, and providing feature suggestions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857088/notes-assets/images/AI-Assisted-Development-Benefits-of-AI/feature-development-flowchart-steps.jpg)
+![The image shows a flowchart with three steps for faster feature development: automating repetitive tasks, generating code snippets, and providing feature suggestions.](https://kodekloud.com/kk-media/image/upload/v1752857088/notes-assets/images/AI-Assisted-Development-Benefits-of-AI/feature-development-flowchart-steps.jpg)
 
 ## Smoother Deployments
 
@@ -212,7 +212,7 @@ AI-assisted testing and deployment processes make releases more reliable and eff
 * AI-powered pipelines that detect issues and roll back problematic deployments to minimize downtime.
 * Continuous monitoring with actionable insights to enhance deployment processes.
 
-![The image is a diagram titled "Smoother Deployments," showing a timeline with key steps: automated testing, infrastructure optimization, deployment script generation, deployment rollback, and intelligent monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857088/notes-assets/images/AI-Assisted-Development-Benefits-of-AI/smoother-deployments-timeline-diagram.jpg)
+![The image is a diagram titled "Smoother Deployments," showing a timeline with key steps: automated testing, infrastructure optimization, deployment script generation, deployment rollback, and intelligent monitoring.](https://kodekloud.com/kk-media/image/upload/v1752857088/notes-assets/images/AI-Assisted-Development-Benefits-of-AI/smoother-deployments-timeline-diagram.jpg)
 
 ## Reduced Bugs
 
@@ -224,7 +224,7 @@ Generative AI models not only maintain high code quality but also proactively re
 
 This proactive approach leads to a more reliable application with fewer bugs.
 
-![The image illustrates three concepts related to reducing bugs: automated bug detection, predictive bug fixing, and continuous improvement, each represented by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857089/notes-assets/images/AI-Assisted-Development-Benefits-of-AI/bug-reduction-automation-icons.jpg)
+![The image illustrates three concepts related to reducing bugs: automated bug detection, predictive bug fixing, and continuous improvement, each represented by an icon.](https://kodekloud.com/kk-media/image/upload/v1752857089/notes-assets/images/AI-Assisted-Development-Benefits-of-AI/bug-reduction-automation-icons.jpg)
 
 ## Enhanced Productivity and Empowerment
 
@@ -237,7 +237,7 @@ By automating routine tasks and offering valuable code recommendations, AI tools
 
 For DevOps teams, these tools streamline workflows and significantly enhance overall performance, creating a supportive environment where every team member can excel.
 
-![The image outlines three goals for empowering engineers: tackling complex problems, increasing creativity, and boosting productivity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857090/notes-assets/images/AI-Assisted-Development-Benefits-of-AI/empowering-engineers-goals-diagram.jpg)
+![The image outlines three goals for empowering engineers: tackling complex problems, increasing creativity, and boosting productivity.](https://kodekloud.com/kk-media/image/upload/v1752857090/notes-assets/images/AI-Assisted-Development-Benefits-of-AI/empowering-engineers-goals-diagram.jpg)
 
 ## Strategic Implementation
 

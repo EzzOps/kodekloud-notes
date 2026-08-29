@@ -23,7 +23,7 @@ Site-to-Site VPN secures the connection between an on-premises network and an AW
 * **Transit Gateway Integration:**\
   For complex scenarios involving multiple VPCs or endpoints, AWS Transit Gateway centralizes management and routing of VPN connections for efficient network communication.
 
-![The image illustrates a Site-to-Site VPN architecture, showing a connection between a corporate data center and an AWS region via a VPN connection, with components like customer and transit gateways, and various VPCs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860738/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/site-to-site-vpn-architecture.jpg)
+![The image illustrates a Site-to-Site VPN architecture, showing a connection between a corporate data center and an AWS region via a VPN connection, with components like customer and transit gateways, and various VPCs.](https://kodekloud.com/kk-media/image/upload/v1752860738/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/site-to-site-vpn-architecture.jpg)
 
 In the diagram above, note that encrypted traffic flows over the public internet between the on-premises customer gateway and the AWS Virtual Private Gateway.
 
@@ -33,11 +33,11 @@ In the diagram above, note that encrypted traffic flows over the public internet
 
 Proper routing ensures that traffic between the AWS VPC and on-premises network reaches its intended destination. For example, if your VPC uses the CIDR block 10.1.0.0/16 and your on-premises network uses 10.2.0.0/16, you must advertise these routes correctly.
 
-![The image explains routing concepts, specifically route tables and Border Gateway Protocol (BGP) in the context of AWS Site-to-Site VPN, highlighting their roles in traffic management between on-premises networks and VPCs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860740/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/routing-concepts-bgp-aws-vpn.jpg)
+![The image explains routing concepts, specifically route tables and Border Gateway Protocol (BGP) in the context of AWS Site-to-Site VPN, highlighting their roles in traffic management between on-premises networks and VPCs.](https://kodekloud.com/kk-media/image/upload/v1752860740/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/routing-concepts-bgp-aws-vpn.jpg)
 
 Using AWS Transit Gateway can further simplify routing by providing a centralized routing hub for managing multiple VPN and VPC interconnections.
 
-![The image illustrates the components of a Site-to-Site VPN using a Transit Gateway, showing the connection between multiple VPCs in a region and an on-premise network via a VPN connection and customer gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860741/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/site-to-site-vpn-transit-gateway-diagram.jpg)
+![The image illustrates the components of a Site-to-Site VPN using a Transit Gateway, showing the connection between multiple VPCs in a region and an on-premise network via a VPN connection and customer gateway.](https://kodekloud.com/kk-media/image/upload/v1752860741/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/site-to-site-vpn-transit-gateway-diagram.jpg)
 
 ### Limitations and Tunnel Redundancy
 
@@ -49,13 +49,13 @@ There are a few key limitations and design considerations with Site-to-Site VPN:
 
 AWS typically employs two VPN tunnels per connection. In the event one tunnel fails, traffic automatically fails over to the secondary tunnel. Each tunnel has a unique IP address and must be separately configured on your customer gateway.
 
-![The image lists limitations of a Site-to-Site VPN, including lack of support for IPv6 traffic, Path MTU Discovery, and the recommendation to use non-overlapping CIDR blocks for VPC connections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860743/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/site-to-site-vpn-limitations.jpg)
+![The image lists limitations of a Site-to-Site VPN, including lack of support for IPv6 traffic, Path MTU Discovery, and the recommendation to use non-overlapping CIDR blocks for VPC connections.](https://kodekloud.com/kk-media/image/upload/v1752860743/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/site-to-site-vpn-limitations.jpg)
 
 Enhanced configurations such as accelerated connections using AWS Global Accelerator are available to optimize performance, particularly during peak congestion periods.
 
-![The image illustrates a Site-to-Site VPN connection with tunnel options, showing the connection between a Virtual Private Cloud (VPC) in a region and an on-premise network. It includes components like availability zones, subnets, routers, and gateways, with a note on automatic traffic routing when a tunnel is unavailable.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860744/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/site-to-site-vpn-connection-diagram.jpg)
+![The image illustrates a Site-to-Site VPN connection with tunnel options, showing the connection between a Virtual Private Cloud (VPC) in a region and an on-premise network. It includes components like availability zones, subnets, routers, and gateways, with a note on automatic traffic routing when a tunnel is unavailable.](https://kodekloud.com/kk-media/image/upload/v1752860744/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/site-to-site-vpn-connection-diagram.jpg)
 
-![The image illustrates an accelerated site-to-site VPN connection setup using AWS, showing the flow from a corporate data center through a customer gateway, AWS Transit Gateway, and VPCs within AWS Cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860745/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/aws-site-to-site-vpn-setup.jpg)
+![The image illustrates an accelerated site-to-site VPN connection setup using AWS, showing the flow from a corporate data center through a customer gateway, AWS Transit Gateway, and VPCs within AWS Cloud.](https://kodekloud.com/kk-media/image/upload/v1752860745/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/aws-site-to-site-vpn-setup.jpg)
 
 Additionally, features such as Dead Peer Detection (DPD) help identify unresponsive tunnels and trigger failover or re-establishment of sessions automatically.
 
@@ -69,7 +69,7 @@ AWS Client VPN allows individual users to establish a secure connection from the
 
 In a Client VPN setup, users connect to a managed VPN endpoint that terminates the VPN session. This endpoint is linked to a specific subnet that routes traffic to target resources. The service supports OpenVPN-based clients and leverages AWS-managed infrastructure to provide a scalable and secure connection.
 
-![The image illustrates a network diagram for Dead Peer Detection (DPD), showing a Virtual Private Cloud (VPC) connected to an on-premise network via a VPN connection. It includes components like an instance, virtual private gateway, and customer gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860746/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/dpd-network-diagram-vpc-vpn.jpg)
+![The image illustrates a network diagram for Dead Peer Detection (DPD), showing a Virtual Private Cloud (VPC) connected to an on-premise network via a VPN connection. It includes components like an instance, virtual private gateway, and customer gateway.](https://kodekloud.com/kk-media/image/upload/v1752860746/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/dpd-network-diagram-vpc-vpn.jpg)
 
 ### Key Features
 
@@ -78,13 +78,13 @@ In a Client VPN setup, users connect to a managed VPN endpoint that terminates t
 * Each client receives a unique IP address from a predetermined, non-overlapping client CIDR range.
 * Centralized management of sessions with integration into AWS routing mechanisms, using choices like Transit Gateway or VPC peering for complex scenarios.
 
-![The image illustrates a network diagram showing how to access a peered VPC using a client VPN. It includes components like a client VPN endpoint, VPC A with a subnet, a VPC peering connection, and VPC B.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860747/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/vpc-peering-client-vpn-diagram.jpg)
+![The image illustrates a network diagram showing how to access a peered VPC using a client VPN. It includes components like a client VPN endpoint, VPC A with a subnet, a VPC peering connection, and VPC B.](https://kodekloud.com/kk-media/image/upload/v1752860747/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/vpc-peering-client-vpn-diagram.jpg)
 
 For handling more complex architectures that span multiple VPCs, AWS Transit Gateway is the favored solution. For simpler scenarios with fewer connections, VPC peering can be a suitable alternative.
 
 Client VPN can also extend connectivity to on-premises networks, effectively integrating both site-to-site and client-based connectivity within one comprehensive solution.
 
-![The image illustrates a network diagram showing how to access an on-premises network using a client VPN. It includes components like client devices, a client VPN endpoint, a VPC with a subnet, and a site-to-site VPN connection to the on-premises network.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860748/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/client-vpn-network-diagram.jpg)
+![The image illustrates a network diagram showing how to access an on-premises network using a client VPN. It includes components like client devices, a client VPN endpoint, a VPC with a subnet, and a site-to-site VPN connection to the on-premises network.](https://kodekloud.com/kk-media/image/upload/v1752860748/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/client-vpn-network-diagram.jpg)
 
 ### Client VPN Configuration Considerations
 
@@ -97,7 +97,7 @@ When configuring a Client VPN endpoint, keep these important rules in mind:
 | Client CIDR Block       | Defined during endpoint creation and immutable; ranges from /22 to /12         |
 | Subnet Association      | All associated subnets must be in the same VPC; only one per availability zone |
 
-![The image lists rules related to network configurations, including bandwidth requirements, CIDR range restrictions, and subnet associations for VPN endpoints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860749/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/network-configuration-rules-vpn-endpoints.jpg)
+![The image lists rules related to network configurations, including bandwidth requirements, CIDR range restrictions, and subnet associations for VPN endpoints.](https://kodekloud.com/kk-media/image/upload/v1752860749/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Client-and-Site-to-Site-VPN-Overview/network-configuration-rules-vpn-endpoints.jpg)
 
 Typically, you designate a single client landing subnet. From there, access and routing rules manage connectivity within the VPC and to external on-premises networks via Site-to-Site VPN.
 

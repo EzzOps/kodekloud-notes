@@ -14,7 +14,7 @@ Consider an RDS database instance configured with asynchronous replication to a 
 
 The primary benefit of this setup is that you can interrupt asynchronous replication to promote the read replica, turning it into a standalone database with full read/write functionality. This process is ideal for offloading read operations, scaling capacity, and ensuring data redundancy through controlled replication.
 
-![The image illustrates the concept of read replicas in databases using Amazon RDS, showing asynchronous replication from a primary DB instance to a read replica for offloading read operations, scaling read capacity, and providing data redundancy. It highlights the benefits of read replicas, such as handling read-heavy workloads and ensuring data availability across regions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860163/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Promoting-Read-Replicas-as-a-Restoration/read-replicas-amazon-rds-diagram.jpg)
+![The image illustrates the concept of read replicas in databases using Amazon RDS, showing asynchronous replication from a primary DB instance to a read replica for offloading read operations, scaling read capacity, and providing data redundancy. It highlights the benefits of read replicas, such as handling read-heavy workloads and ensuring data availability across regions.](https://kodekloud.com/kk-media/image/upload/v1752860163/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Promoting-Read-Replicas-as-a-Restoration/read-replicas-amazon-rds-diagram.jpg)
 
 This approach is especially useful in scenarios such as cross-region replication, reporting, and creating production database copies for testing and quality assurance.
 
@@ -39,7 +39,7 @@ Before promoting a read replica, follow these precautions:
 * Set the read-only parameter to zero in the database parameter group for the replica.\
   This adjustment allows you to perform modifications—such as creating indexes or executing DDL operations—on the replica prior to its promotion.
 
-![The image outlines three prerequisites for promoting a read replica: reviewing backup strategy, stopping write transactions to the primary database, and setting the read-only parameter to 0 in the database parameter group for the read replica.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860164/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Promoting-Read-Replicas-as-a-Restoration/read-replica-prerequisites-diagram.jpg)
+![The image outlines three prerequisites for promoting a read replica: reviewing backup strategy, stopping write transactions to the primary database, and setting the read-only parameter to 0 in the database parameter group for the read replica.](https://kodekloud.com/kk-media/image/upload/v1752860164/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Promoting-Read-Replicas-as-a-Restoration/read-replica-prerequisites-diagram.jpg)
 
 ## Steps to Promote a Read Replica
 
@@ -51,7 +51,7 @@ Follow these steps to successfully promote a read replica:
 4. Provide any additional parameters needed, such as backup settings or adjustments to the parameter group.
 5. Monitor the process to ensure that replication has ceased and that the new primary database is functioning correctly.
 
-![The image outlines steps to promote a read replica, including locating the replica, promoting it, configuring promotion settings, and monitoring the replication status. It also shows a database replication table with details on instances and their roles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860165/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Promoting-Read-Replicas-as-a-Restoration/promote-read-replica-steps-diagram.jpg)
+![The image outlines steps to promote a read replica, including locating the replica, promoting it, configuring promotion settings, and monitoring the replication status. It also shows a database replication table with details on instances and their roles.](https://kodekloud.com/kk-media/image/upload/v1752860165/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Promoting-Read-Replicas-as-a-Restoration/promote-read-replica-steps-diagram.jpg)
 
 AWS has streamlined this process to provide a reliable and straightforward mechanism for database restoration. Whether promoting a replica within the same region or across regions, this technique offers diverse options for maintaining database availability and performance.
 

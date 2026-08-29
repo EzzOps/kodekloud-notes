@@ -10,19 +10,13 @@ In this lab, you’ll implement a GitOps workflow by integrating Terraform Cloud
 
 First, inspect the **Clumsy Bird** repository structure and branch layout:
 
-<Frame>
-  ![The image shows a GitHub repository page for a project named "clumsy\_bird," which includes several Terraform configuration files and a README.md file. The repository is private, with recent commits related to uploading Terraform configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878882/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/github-repo-clumsy-bird-terraform.jpg)
-</Frame>
+![The image shows a GitHub repository page for a project named "clumsy\_bird," which includes several Terraform configuration files and a README.md file. The repository is private, with recent commits related to uploading Terraform configurations.](https://kodekloud.com/kk-media/image/upload/v1752878882/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/github-repo-clumsy-bird-terraform.jpg)
 
 Next, open Terraform Cloud and confirm you have three VCS-connected workspaces:
 
-<Frame>
-  ![The image shows a Terraform Cloud interface displaying three workspaces with their run statuses marked as "Applied." Each workspace is associated with a repository and shows the time of the latest change.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878883/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-workspaces-applied-statuses.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface displaying three workspaces with their run statuses marked as "Applied." Each workspace is associated with a repository and shows the time of the latest change.](https://kodekloud.com/kk-media/image/upload/v1752878883/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-workspaces-applied-statuses.jpg)
 
-<Callout icon="lightbulb">
-  Each workspace must map to a Git branch (development, staging, main) for GitOps workflows to work seamlessly.
-</Callout>
+> **lightbulb** Each workspace must map to a Git branch (development, staging, main) for GitOps workflows to work seamlessly.
 
 Here’s a quick overview:
 
@@ -34,17 +28,13 @@ Here’s a quick overview:
 
 Finally, check your AWS console to see the existing EC2 instances for Clumsy Bird:
 
-<Frame>
-  ![The image shows an AWS EC2 dashboard with three running instances listed, each with a unique instance ID and type "t2.micro."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878884/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/aws-ec2-dashboard-three-instances.jpg)
-</Frame>
+![The image shows an AWS EC2 dashboard with three running instances listed, each with a unique instance ID and type "t2.micro."](https://kodekloud.com/kk-media/image/upload/v1752878884/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/aws-ec2-dashboard-three-instances.jpg)
 
 ## 2. Clone the Repository and Checkout the Development Branch
 
 In your terminal (e.g., VS Code integrated terminal), clone the repo and switch to `development`:
 
-<Frame>
-  ![The image shows a KodeKloud lab interface for a GitOps workflow, featuring instructions to clone a GitHub repository and a Visual Studio Code editor with a README file open.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878885/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/kodekloud-gitops-workflow-lab-interface.jpg)
-</Frame>
+![The image shows a KodeKloud lab interface for a GitOps workflow, featuring instructions to clone a GitHub repository and a Visual Studio Code editor with a README file open.](https://kodekloud.com/kk-media/image/upload/v1752878885/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/kodekloud-gitops-workflow-lab-interface.jpg)
 
 ```bash theme={null}
 cd ~/vcs
@@ -110,9 +100,7 @@ terraform plan \
   -var="project=clumsy_bird"
 ```
 
-<Frame>
-  ![The image shows a Terraform Cloud interface with a speculative plan triggered via CLI for a development workspace. It includes details about the plan's status and navigation improvements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878886/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-interface-speculative-plan.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface with a speculative plan triggered via CLI for a development workspace. It includes details about the plan's status and navigation improvements.](https://kodekloud.com/kk-media/image/upload/v1752878886/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-interface-speculative-plan.jpg)
 
 You should see **four** new resources to add for the S3 bucket.
 
@@ -128,37 +116,27 @@ git commit -m "Add S3 bucket module for development"
 git push origin development
 ```
 
-<Callout icon="triangle-alert">
-  Do not attempt `terraform apply` locally when using a VCS-connected workspace. All applies must occur in Terraform Cloud.
-</Callout>
+> **triangle-alert** Do not attempt `terraform apply` locally when using a VCS-connected workspace. All applies must occur in Terraform Cloud.
 
 ## 8. Observe the Terraform Cloud Run
 
 After pushing, Terraform Cloud will automatically plan and apply in the **dev** workspace. View the run details:
 
-<Frame>
-  ![The image shows a Terraform Cloud interface with a run that updates to include an S3 bucket. The plan and apply processes are finished, resulting in four resources being created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878888/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-s3-bucket-update.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface with a run that updates to include an S3 bucket. The plan and apply processes are finished, resulting in four resources being created.](https://kodekloud.com/kk-media/image/upload/v1752878888/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-s3-bucket-update.jpg)
 
 ## 9. Promote to Staging via Pull Request
 
 Create a PR from `development` into `staging` on GitHub:
 
-<Frame>
-  ![The image shows a GitHub repository page for a project named "Clumsy Birds," with details about branches, commits, and files. The "development" branch has recent updates, and there's an option to compare and create a pull request.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878889/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/clumsy-birds-github-repo-branches.jpg)
-</Frame>
+![The image shows a GitHub repository page for a project named "Clumsy Birds," with details about branches, commits, and files. The "development" branch has recent updates, and there's an option to compare and create a pull request.](https://kodekloud.com/kk-media/image/upload/v1752878889/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/clumsy-birds-github-repo-branches.jpg)
 
 Once the PR is open, Terraform Cloud runs a speculative plan in **staging**:
 
-<Frame>
-  ![The image shows a Terraform Cloud interface with a plan summary indicating resources to be created. It includes a notification about a pull request that needs to be merged before applying changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878890/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-plan-summary-pull-request.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface with a plan summary indicating resources to be created. It includes a notification about a pull request that needs to be merged before applying changes.](https://kodekloud.com/kk-media/image/upload/v1752878890/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-plan-summary-pull-request.jpg)
 
 Click **Details** to review:
 
-<Frame>
-  ![The image shows a Terraform Cloud interface with a plan running for a pull request. It includes details of resources to be created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878891/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-interface-pull-request-plan.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface with a plan running for a pull request. It includes details of resources to be created.](https://kodekloud.com/kk-media/image/upload/v1752878891/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752878891/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-interface-pull-request-plan.jpg)
 
 When checks succeed, merge the PR.
 
@@ -166,45 +144,31 @@ When checks succeed, merge the PR.
 
 After merging, Terraform Cloud detects the new `staging` commit and applies the changes:
 
-<Frame>
-  ![The image shows a Terraform Cloud interface displaying a list of workspaces with their names, run statuses, repositories, and latest change timestamps. The workspaces have statuses like "Applied" and "Planning."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878891/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-workspaces-statuses-interface.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface displaying a list of workspaces with their names, run statuses, repositories, and latest change timestamps. The workspaces have statuses like "Applied" and "Planning."](https://kodekloud.com/kk-media/image/upload/v1752878891/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-workspaces-statuses-interface.jpg)
 
 Once complete:
 
-<Frame>
-  ![The image shows a Terraform Cloud interface with a completed run, indicating that four AWS S3 bucket resources were created. The sidebar includes options like Workspaces, Runs, and Settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878893/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-interface-aws-s3-buckets.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface with a completed run, indicating that four AWS S3 bucket resources were created. The sidebar includes options like Workspaces, Runs, and Settings.](https://kodekloud.com/kk-media/image/upload/v1752878893/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-interface-aws-s3-buckets.jpg)
 
 Finally, confirm the new bucket in the AWS S3 console:
 
-<Frame>
-  ![The image shows an Amazon S3 dashboard with a list of two storage buckets named "my-app-dev-s3-development" and "my-app-staging-s3-staging," both located in the US East (N. Virginia) region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878894/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/amazon-s3-dashboard-storage-buckets.jpg)
-</Frame>
+![The image shows an Amazon S3 dashboard with a list of two storage buckets named "my-app-dev-s3-development" and "my-app-staging-s3-staging," both located in the US East (N. Virginia) region.](https://kodekloud.com/kk-media/image/upload/v1752878894/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/amazon-s3-dashboard-storage-buckets.jpg)
 
 ## 11. Promote to Production
 
 Repeat the PR process from `staging` into `main`:
 
-<Frame>
-  ![The image shows a GitHub pull request interface for creating an S3 bucket in production. It includes commit details, pending checks, and a note that the branch has no conflicts with the base branch.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878896/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/github-pull-request-s3-bucket-interface.jpg)
-</Frame>
+![The image shows a GitHub pull request interface for creating an S3 bucket in production. It includes commit details, pending checks, and a note that the branch has no conflicts with the base branch.](https://kodekloud.com/kk-media/image/upload/v1752878896/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/github-pull-request-s3-bucket-interface.jpg)
 
 Terraform Cloud runs the final plan for **prod**:
 
-<Frame>
-  ![The image shows a Terraform Cloud interface with a plan running for a pull request, indicating resources to be created in AWS, such as S3 buckets and related configurations. The sidebar includes navigation options like Workspaces, Runs, and Settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878891/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-interface-pull-request-plan.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface with a plan running for a pull request, indicating resources to be created in AWS, such as S3 buckets and related configurations. The sidebar includes navigation options like Workspaces, Runs, and Settings.](https://kodekloud.com/kk-media/image/upload/v1752878891/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752878891/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-interface-pull-request-plan.jpg)
 
 Merge the PR. Once the apply finishes, verify all three buckets exist:
 
-<Frame>
-  ![The image shows a Terraform Cloud interface where a plan and apply process has finished, resulting in the creation of four AWS S3 bucket resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878897/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-plan-apply-s3-buckets.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface where a plan and apply process has finished, resulting in the creation of four AWS S3 bucket resources.](https://kodekloud.com/kk-media/image/upload/v1752878897/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-plan-apply-s3-buckets.jpg)
 
-<Frame>
-  ![The image shows a Terraform Cloud interface where a plan and apply process has finished, resulting in the creation of four AWS S3 bucket resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878898/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-plan-apply-s3-buckets-2.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface where a plan and apply process has finished, resulting in the creation of four AWS S3 bucket resources.](https://kodekloud.com/kk-media/image/upload/v1752878898/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-GitOps-Workflow-using-Terraform-Cloud/terraform-cloud-plan-apply-s3-buckets-2.jpg)
 
 ## Conclusion
 
@@ -216,6 +180,4 @@ You’ve successfully implemented a GitOps workflow using Terraform Cloud and Gi
 * [AWS S3 User Guide](https://docs.aws.amazon.com/s3/index.html)
 * [Git Branches and Merging](https://docs.github.com/en/get-started/using-git/about-branches)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/8dc830bd-1e70-4a76-bc45-b417ff7c1771/lesson/c989fc3c-894e-4c3c-b5c6-0d61bd4e7aed" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/8dc830bd-1e70-4a76-bc45-b417ff7c1771/lesson/c989fc3c-894e-4c3c-b5c6-0d61bd4e7aed)

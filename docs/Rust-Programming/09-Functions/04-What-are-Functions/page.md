@@ -44,12 +44,8 @@ When you run this program, the output will be:
 Hello, world!
 ```
 
-<Callout icon="lightbulb">
-  The simple `greet` function illustrated above is an excellent starting point for understanding function definitions in Rust. In upcoming sections, we will expand on this foundation to include functions with parameters and detailed return values.
-</Callout>
+> **lightbulb** The simple `greet` function illustrated above is an excellent starting point for understanding function definitions in Rust. In upcoming sections, we will expand on this foundation to include functions with parameters and detailed return values.
 
 In the following sections, you'll dive deeper into how to define functions with parameters and how to work with return values, further enhancing the modularity and flexibility of your Rust programs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/7ec396a4-7aea-4d77-abd2-48f4cee7fd94/lesson/0ed9be45-d7b0-46bf-a82c-37b17cfbc665" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/7ec396a4-7aea-4d77-abd2-48f4cee7fd94/lesson/0ed9be45-d7b0-46bf-a82c-37b17cfbc665)

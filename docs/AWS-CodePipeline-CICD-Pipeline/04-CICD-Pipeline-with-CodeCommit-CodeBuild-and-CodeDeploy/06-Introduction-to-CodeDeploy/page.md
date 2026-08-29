@@ -16,7 +16,7 @@ AWS CodeDeploy deploys application revisions (code, scripts, web assets, multime
 * Amazon ECS services
 * AWS Fargate tasks
 
-![The image shows a list of deployment targets for AWS CodeDeploy, including Amazon EC2 instances, on-premise instances, Lambda, and ECS, alongside the AWS CodeDeploy logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862645/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeDeploy/aws-codedeploy-deployment-targets-list.jpg)
+![The image shows a list of deployment targets for AWS CodeDeploy, including Amazon EC2 instances, on-premise instances, Lambda, and ECS, alongside the AWS CodeDeploy logo.](https://kodekloud.com/kk-media/image/upload/v1752862645/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeDeploy/aws-codedeploy-deployment-targets-list.jpg)
 
 At the **source** stage of your pipeline, you can store your application bundle in:
 
@@ -25,7 +25,7 @@ At the **source** stage of your pipeline, you can store your application bundle 
 * GitHub
 * Bitbucket
 
-![The image shows a DevOps lifecycle diagram with stages like Source, Build, Test, Deploy, and tools such as AWS S3, AWS CodeCommit, GitHub, and Bitbucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862647/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeDeploy/devops-lifecycle-diagram-source-build-test-deploy.jpg)
+![The image shows a DevOps lifecycle diagram with stages like Source, Build, Test, Deploy, and tools such as AWS S3, AWS CodeCommit, GitHub, and Bitbucket.](https://kodekloud.com/kk-media/image/upload/v1752862647/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeDeploy/devops-lifecycle-diagram-source-build-test-deploy.jpg)
 
 As a fully managed service, CodeDeploy handles infrastructure provisioning, scaling, and maintenance. Key benefits include:
 
@@ -33,7 +33,7 @@ As a fully managed service, CodeDeploy handles infrastructure provisioning, scal
 * Built-in deployment strategies to minimize downtime
 * Monitoring and rollback capabilities via AWS Console, CLI, or SDKs
 
-![The image is a promotional graphic for AWS CodeDeploy, highlighting features such as being fully managed, scalable, and minimizing downtime.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862648/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeDeploy/aws-codedeploy-promotional-graphic.jpg)
+![The image is a promotional graphic for AWS CodeDeploy, highlighting features such as being fully managed, scalable, and minimizing downtime.](https://kodekloud.com/kk-media/image/upload/v1752862648/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeDeploy/aws-codedeploy-promotional-graphic.jpg)
 
 ## Deployment Strategies
 
@@ -46,7 +46,7 @@ AWS CodeDeploy offers four primary strategies:
 | Immutable  | Launch new instances with the updated application, then swap over traffic.      | Zero-downtime requirements; high reliability.   |
 | Blue/Green | Maintain two environments (“blue” and “green”) and switch traffic between them. | Instant rollback and seamless cutover.          |
 
-![The image shows three types of deployment: In Place, Rolling, and Immutable, each represented by a distinct icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862649/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeDeploy/deployment-in-place-rolling-immutable-icons.jpg)
+![The image shows three types of deployment: In Place, Rolling, and Immutable, each represented by a distinct icon.](https://kodekloud.com/kk-media/image/upload/v1752862649/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeDeploy/deployment-in-place-rolling-immutable-icons.jpg)
 
 ### Blue/Green Deployments
 
@@ -57,7 +57,7 @@ In a blue/green deployment, you maintain:
 
 After validating the green environment, you shift traffic using DNS, load balancers, or Auto Scaling. If any issues occur, switch back to blue instantly. Otherwise, complete the traffic migration to green.
 
-![The image depicts a blue-green deployment architecture using AWS services, including EC2 instances, Route 53 DNS, Elastic Load Balancing, and Auto Scaling.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862650/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeDeploy/blue-green-deployment-aws-architecture.jpg)
+![The image depicts a blue-green deployment architecture using AWS services, including EC2 instances, Route 53 DNS, Elastic Load Balancing, and Auto Scaling.](https://kodekloud.com/kk-media/image/upload/v1752862650/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeDeploy/blue-green-deployment-aws-architecture.jpg)
 
 #### Traffic Shifting Configurations
 
@@ -67,7 +67,7 @@ After validating the green environment, you shift traffic using DNS, load balanc
 | Linear        | Shift equal percentages at regular intervals until complete.             |
 | All-at-once   | Move 100% of traffic to green in a single step.                          |
 
-![The image illustrates three types of blue/green deployment methods: Canary, Linear, and All-at-once, each represented by a distinct icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862651/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeDeploy/blue-green-deployment-methods-icons.jpg)
+![The image illustrates three types of blue/green deployment methods: Canary, Linear, and All-at-once, each represented by a distinct icon.](https://kodekloud.com/kk-media/image/upload/v1752862651/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeDeploy/blue-green-deployment-methods-icons.jpg)
 
 > **lightbulb** You can integrate health checks or manual approval actions before, during, or after traffic shifts to ensure deployment safety.
 
@@ -99,7 +99,7 @@ hooks:
     - location: scripts/start_server.sh
 ```
 
-![The image shows a split design with "Appspec.yml" on the left and "AWS CodeDeploy" on the right, featuring their respective icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862652/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeDeploy/appspec-yml-aws-codedeploy-design.jpg)
+![The image shows a split design with "Appspec.yml" on the left and "AWS CodeDeploy" on the right, featuring their respective icons.](https://kodekloud.com/kk-media/image/upload/v1752862652/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-CodeDeploy/appspec-yml-aws-codedeploy-design.jpg)
 
 ## References
 

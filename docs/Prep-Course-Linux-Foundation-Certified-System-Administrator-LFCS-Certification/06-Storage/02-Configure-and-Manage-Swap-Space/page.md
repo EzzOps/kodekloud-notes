@@ -13,13 +13,9 @@ Imagine a computer with 4 GB of RAM. You open a video editor that uses 2 GB of R
 * Linux monitors memory usage and identifies inactive applications (e.g., a video editor that hasn't been used for a while).
 * It moves data from RAM to a designated swap area, for example, a 2 GB swap partition. This process frees up RAM, allowing new applications like Chrome to run.
 
-<Frame>
-  ![The image illustrates the concept of managing swap space, showing RAM usage by an audio editor and Chrome, and a swap partition used by a video editor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881357/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Configure-and-Manage-Swap-Space/swap-space-management-ram-usage.jpg)
-</Frame>
+![The image illustrates the concept of managing swap space, showing RAM usage by an audio editor and Chrome, and a swap partition used by a video editor.](https://kodekloud.com/kk-media/image/upload/v1752881357/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Configure-and-Manage-Swap-Space/swap-space-management-ram-usage.jpg)
 
-<Callout icon="lightbulb">
-  The scenario above is a simplified illustration that demonstrates why and how swap space is used in Linux systems.
-</Callout>
+> **lightbulb** The scenario above is a simplified illustration that demonstrates why and how swap space is used in Linux systems.
 
 ## Setting Up a Swap Partition
 
@@ -72,9 +68,7 @@ NAME       TYPE      SIZE USED PRIO
 /dev/vdb3 partition  2G   0B   -2
 ```
 
-<Callout icon="lightbulb">
-  The swap configuration made above is temporary. After a reboot, the swap partition will not activate automatically unless it is added to the system's fstab file.
-</Callout>
+> **lightbulb** The swap configuration made above is temporary. After a reboot, the swap partition will not activate automatically unless it is added to the system's fstab file.
 
 To disable the swap partition when needed, use:
 
@@ -156,8 +150,6 @@ For additional information, check out these resources:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/e4de40a8-049e-4813-82c6-cdd3bf90642e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/e4de40a8-049e-4813-82c6-cdd3bf90642e)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/63b8626b-df10-48c7-8712-64696022dbae" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/63b8626b-df10-48c7-8712-64696022dbae)

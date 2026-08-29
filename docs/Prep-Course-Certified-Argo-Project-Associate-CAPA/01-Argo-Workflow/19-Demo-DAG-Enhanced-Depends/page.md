@@ -130,21 +130,15 @@ depends: "task-1.AnySucceeded || task-2.AllFailed"
 | Forgetting YAML quoting for the `depends` expression | Always wrap the expression in quotes to avoid YAML parsing issues with \`                                             |   | `, `&&`, and `!\`. |
 | Mixing `dependencies` and `depends` on the same task | Use one or the other. Convert `dependencies: [A, B, C]` to `depends: "A && B && C"` if you need the `depends` syntax. |   |                    |
 
-<Callout icon="lightbulb">
-  Use quotes around the `depends` expression so YAML treats operators (`||`, `&&`, `!`) correctly. `depends` supports boolean operators and selectors like `Succeeded`, `Failed`, `Skipped`, `Daemoned`, `AnySucceeded`, `AllFailed`.
-</Callout>
+> **lightbulb** Use quotes around the `depends` expression so YAML treats operators (`||`, `&&`, `!`) correctly. `depends` supports boolean operators and selectors like `Succeeded`, `Failed`, `Skipped`, `Daemoned`, `AnySucceeded`, `AllFailed`.
 
-<Callout icon="warning">
-  Do not use both `dependencies` and `depends` on the same task. To convert `dependencies: [A, B, C]` into `depends`, use: `depends: "A && B && C"`.
-</Callout>
+> **warning** Do not use both `dependencies` and `depends` on the same task. To convert `dependencies: [A, B, C]` into `depends`, use: `depends: "A && B && C"`.
 
 Links and references:
 
 * [Argo Workflows documentation](https://argoproj.github.io/argo-workflows/)
 * For more DAG patterns and examples, consult the Argo docs and community examples.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/4ea238df-f582-426e-9069-8b0691a59eb7" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/4ea238df-f582-426e-9069-8b0691a59eb7)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/9d88de1f-c669-4157-8d28-de88c3873d91" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/9d88de1f-c669-4157-8d28-de88c3873d91)

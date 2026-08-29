@@ -32,9 +32,7 @@ resource "aws_instance" "db" {
 }
 ```
 
-<Callout icon="lightbulb">
-  Defining the same tags in multiple resources increases maintenance overhead. Locals allow you to declare shared values in one place.
-</Callout>
+> **lightbulb** Defining the same tags in multiple resources increases maintenance overhead. Locals allow you to declare shared values in one place.
 
 ## Step 1: Define a `locals` Block
 

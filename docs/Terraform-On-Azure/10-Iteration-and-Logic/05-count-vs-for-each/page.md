@@ -95,9 +95,7 @@ You are creating a plan with the -target option, which means that the result of 
 The -target option is not for routine use...
 ```
 
-<Callout icon="warning">
-  Avoid relying on `-target` for normal workflows. Targeting can produce incomplete or unsafe plans when resources have dependencies, and may cause unintended changes.
-</Callout>
+> **warning** Avoid relying on `-target` for normal workflows. Targeting can produce incomplete or unsafe plans when resources have dependencies, and may cause unintended changes.
 
 Recommended pattern to remove an instance managed by `for_each`
 
@@ -157,9 +155,7 @@ Links and references
 * [Terraform: Expressions — each object](https://www.terraform.io/docs/language/expressions/each.html)
 * [Azure Provider (azurerm) Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/fb5019bb-df21-4583-818e-6dae40fde2ec/lesson/316db583-71fc-4563-8f19-72bbf9be8a2b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/fb5019bb-df21-4583-818e-6dae40fde2ec/lesson/316db583-71fc-4563-8f19-72bbf9be8a2b)
 
 
 # count vs for each

@@ -24,13 +24,13 @@ Policies are expressed in XML and structured to manage various scenarios through
 
 If an error occurs during processing, the system halts the standard flow and triggers the instructions specified in the error block.
 
-![The image outlines the role of policies in API management, highlighting their functions such as enabling API behavior changes, executing statements in response to requests, applying in the gateway, and modifying requests and responses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866311/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-API-Management-Policies/api-management-policies-overview.jpg)
+![The image outlines the role of policies in API management, highlighting their functions such as enabling API behavior changes, executing statements in response to requests, applying in the gateway, and modifying requests and responses.](https://kodekloud.com/kk-media/image/upload/v1752866311/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-API-Management-Policies/api-management-policies-overview.jpg)
 
 ## Policy Configuration Diagram
 
 The diagram below presents the key components of policy configuration in API Management:
 
-![The image is a diagram titled "Policy Configuration" with three sections: "Policy Definition Overview," "Configuration Segments," and "Error Handling Mechanism," each describing different aspects of policy configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866312/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-API-Management-Policies/policy-configuration-diagram.jpg)
+![The image is a diagram titled "Policy Configuration" with three sections: "Policy Definition Overview," "Configuration Segments," and "Error Handling Mechanism," each describing different aspects of policy configuration.](https://kodekloud.com/kk-media/image/upload/v1752866312/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-API-Management-Policies/policy-configuration-diagram.jpg)
 
 ## Basic Policy Structure
 
@@ -107,7 +107,7 @@ x-powered-by: ASP.NET
 
 The error can occur if the inbound policy, such as URI rewriting, is missing or misconfigured. The backend service URL might not match the intended API path.
 
-![The image shows the Microsoft Azure portal interface, specifically the API Management service section, where an "Employee API" is being managed and tested. The console displays logs and details about API requests and backend services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866313/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-API-Management-Policies/azure-portal-api-management-employee-api.jpg)
+![The image shows the Microsoft Azure portal interface, specifically the API Management service section, where an "Employee API" is being managed and tested. The console displays logs and details about API requests and backend services.](https://kodekloud.com/kk-media/image/upload/v1752866313/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-API-Management-Policies/azure-portal-api-management-employee-api.jpg)
 
 To address this issue, advanced policies like URI rewriting can be applied. A rewrite URI policy updates the request URL to match the correct backend endpoint. Here is the policy syntax:
 

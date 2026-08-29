@@ -12,9 +12,7 @@ Welcome to this comprehensive guide on deploying an application using Google Kub
 
 Begin by signing in to your Google Cloud Platform account. Once logged in, your dashboard will resemble the image below:
 
-<Frame>
-  ![The image shows a Google Cloud Platform dashboard with project information, API requests graph, billing details, and error reporting. It includes a banner for setting up a Google Kubernetes Engine environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752874106/notes-assets/images/Docker-SWARM-SERVICES-STACKS-Hands-on-Demo-Kubernetes-on-Google-Cloud-Platform/frame_50.jpg)
-</Frame>
+![The image shows a Google Cloud Platform dashboard with project information, API requests graph, billing details, and error reporting. It includes a banner for setting up a Google Kubernetes Engine environment.](https://kodekloud.com/kk-media/image/upload/v1752874106/notes-assets/images/Docker-SWARM-SERVICES-STACKS-Hands-on-Demo-Kubernetes-on-Google-Cloud-Platform/frame_50.jpg)
 
 Kubernetes Engine provides a managed environment for deploying containerized applications. To get started with the command-line tool, run:
 
@@ -24,9 +22,7 @@ gcloud components install kubectl
 
 Next, from the Cloud Console menu, select **Kubernetes Engine** to access the dashboard. If no cluster exists yet, click on **Create a Cluster** as shown below:
 
-<Frame>
-  ![The image shows the Google Cloud Platform interface for managing Kubernetes clusters, with options to create a cluster or take a quickstart tutorial.](../../../../images/kodekloud.com/kk-media/image/upload/v1752874107/notes-assets/images/Docker-SWARM-SERVICES-STACKS-Hands-on-Demo-Kubernetes-on-Google-Cloud-Platform/frame_120.jpg)
-</Frame>
+![The image shows the Google Cloud Platform interface for managing Kubernetes clusters, with options to create a cluster or take a quickstart tutorial.](https://kodekloud.com/kk-media/image/upload/v1752874107/notes-assets/images/Docker-SWARM-SERVICES-STACKS-Hands-on-Demo-Kubernetes-on-Google-Cloud-Platform/frame_120.jpg)
 
 Fill in the cluster details:
 
@@ -38,9 +34,7 @@ This process provisions a master node along with three worker nodes. When setup 
 
 Next, click on the **Google Cloud Shell** button located in the top right corner. The Cloud Shell offers a temporary terminal for running Kubernetes commands and will display a screen similar to the one below:
 
-<Frame>
-  ![The image shows the Google Cloud Platform interface displaying Kubernetes clusters, with a Cloud Shell terminal open at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752874108/notes-assets/images/Docker-SWARM-SERVICES-STACKS-Hands-on-Demo-Kubernetes-on-Google-Cloud-Platform/frame_180.jpg)
-</Frame>
+![The image shows the Google Cloud Platform interface displaying Kubernetes clusters, with a Cloud Shell terminal open at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752874108/notes-assets/images/Docker-SWARM-SERVICES-STACKS-Hands-on-Demo-Kubernetes-on-Google-Cloud-Platform/frame_180.jpg)
 
 Once your cluster is ready, click the **Connect** button for the Voting Application cluster. Follow the provided instructions to retrieve credentials and start a proxy by running:
 
@@ -49,9 +43,7 @@ gcloud container clusters get-credentials example-voting-app --zone us-central1-
 kubectl proxy
 ```
 
-<Callout icon="lightbulb">
-  If the command warns that the cluster is not running, wait until the green check mark appears and execute the command again. This step ensures that your kubeconfig is correctly configured for further commands.
-</Callout>
+> **lightbulb** If the command warns that the cluster is not running, wait until the green check mark appears and execute the command again. This step ensures that your kubeconfig is correctly configured for further commands.
 
 To verify your cluster, list the nodes:
 
@@ -294,9 +286,7 @@ spec:
     app: demo-voting-app
 ```
 
-<Callout icon="lightbulb">
-  Although service labels can sometimes be optional, it is best practice to define them consistently for ease of management.
-</Callout>
+> **lightbulb** Although service labels can sometimes be optional, it is best practice to define them consistently for ease of management.
 
 ***
 
@@ -422,6 +412,4 @@ For further reading, consider exploring the following resources:
 
 Happy Kubernetes-ing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/docker-swarm-services-stacks-hands-on/module/9b8ffcd1-c5b0-45d0-968d-55a5146c3e39/lesson/a1211188-d46b-488d-bd88-67d4d03bae6d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/docker-swarm-services-stacks-hands-on/module/9b8ffcd1-c5b0-45d0-968d-55a5146c3e39/lesson/a1211188-d46b-488d-bd88-67d4d03bae6d)

@@ -88,9 +88,7 @@ When to use a CDN
 * You want to reduce origin bandwidth and cost.
 * You need consistent, low-latency delivery for a global audience.
 
-<Callout icon="lightbulb">
-  Use a CDN when serving photos, videos, or other large static assets to a global audience: it reduces latency for users and offloads traffic from your origin.
-</Callout>
+> **lightbulb** Use a CDN when serving photos, videos, or other large static assets to a global audience: it reduces latency for users and offloads traffic from your origin.
 
 Further reading and providers
 
@@ -99,6 +97,4 @@ Further reading and providers
 
 In short: if you serve photos or videos to a global audience, a CDN is essential for low-latency delivery and cost-effective scaling.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/02240fc4-695f-4112-9594-bb05cfc5ca73/lesson/45984917-829b-4b22-bea3-599daf2c86c1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/02240fc4-695f-4112-9594-bb05cfc5ca73/lesson/45984917-829b-4b22-bea3-599daf2c86c1)

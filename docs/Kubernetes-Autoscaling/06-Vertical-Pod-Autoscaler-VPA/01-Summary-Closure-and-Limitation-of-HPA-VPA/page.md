@@ -67,9 +67,7 @@ Interaction and potential conflicts between HPA and VPA
   * If both must run on CPU/memory, test extensively in staging to observe interactions and tune policies.
 * Always validate combined HPA+VPA behavior in a representative environment.
 
-<Callout icon="warning">
-  Avoid running HPA on CPU/memory while VPA is in an active update mode without careful testing — concurrent changes to pod requests can create unstable or unpredictable autoscaling behavior.
-</Callout>
+> **warning** Avoid running HPA on CPU/memory while VPA is in an active update mode without careful testing — concurrent changes to pod requests can create unstable or unpredictable autoscaling behavior.
 
 Operational considerations
 
@@ -125,9 +123,7 @@ Final summary
 * Avoid direct conflicts by separating the metrics driving HPA and VPA, or run VPA in recommendation/initial modes.
 * Test thoroughly and consider cluster autoscaling when VPA increases pod resource requests.
 
-<Callout icon="lightbulb">
-  Autoscaling is about balancing performance and cost. Validate autoscalers together in realistic environments and choose the approach that meets availability, performance, and cost goals for your workload.
-</Callout>
+> **lightbulb** Autoscaling is about balancing performance and cost. Validate autoscalers together in realistic environments and choose the approach that meets availability, performance, and cost goals for your workload.
 
 Thanks for reading.
 
@@ -140,6 +136,4 @@ Links and references
 * KEDA (Kubernetes Event-Driven Autoscaling): [https://keda.sh/](https://keda.sh/)
 * Cluster Autoscaler: [https://cluster-autoscaler.kubernetes.io/](https://cluster-autoscaler.kubernetes.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/06e84505-415c-4ede-88ab-c64f8467b84a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/06e84505-415c-4ede-88ab-c64f8467b84a)

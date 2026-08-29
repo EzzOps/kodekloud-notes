@@ -14,9 +14,7 @@ An attacker may overload worker nodes and kubelets to reduce cluster capacity:
 * Block kubelet health checks, forcing the scheduler to mark nodes as unschedulable.
 * Trigger runaway CPU or memory consumption via malicious Pods to deplete node resources.
 
-<Callout icon="lightbulb">
-  Resource exhaustion not only disrupts workloads but can also trigger automatic node replacement if cluster autoscaling is enabled.
-</Callout>
+> **lightbulb** Resource exhaustion not only disrupts workloads but can also trigger automatic node replacement if cluster autoscaling is enabled.
 
 ## Disrupting the Control Plane
 
@@ -29,13 +27,9 @@ Targeting core control-plane components can bring the entire cluster down. Commo
 | Scheduler          | `10251`, `10259`     | Prevent new Pods from being assigned to nodes          |
 | Controller Manager | `10252`, `10257`     | Halt replica loops, scaling, and other control tasks   |
 
-<Callout icon="triangle-alert">
-  Disrupting the API server or etcd can cause a full outage. Always secure these ports and validate firewall rules to avoid accidental lockouts.
-</Callout>
+> **triangle-alert** Disrupting the API server or etcd can cause a full outage. Always secure these ports and validate firewall rules to avoid accidental lockouts.
 
-<Frame>
-  ![The image is a diagram of a "Compromised Network Attack Tree" showing various methods to disrupt a Kubernetes (K8s) cluster, including exhausting compute resources and disrupting networking.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880804/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Attacker-on-the-Network/compromised-network-attack-tree-k8s.jpg)
-</Frame>
+![The image is a diagram of a "Compromised Network Attack Tree" showing various methods to disrupt a Kubernetes (K8s) cluster, including exhausting compute resources and disrupting networking.](https://kodekloud.com/kk-media/image/upload/v1752880804/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Attacker-on-the-Network/compromised-network-attack-tree-k8s.jpg)
 
 ## Disrupting Networking
 
@@ -62,9 +56,7 @@ Restrict access to critical control-plane endpoints by allowing only trusted IP 
 
 ### Securing Nodes
 
-<Frame>
-  ![The image is a diagram illustrating a Kubernetes setup for securing nodes, showing a flow from users through Nginx to frontend, Node.js, and MySQL pods. It emphasizes applying security patches and monitoring vulnerabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880805/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Attacker-on-the-Network/kubernetes-security-setup-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating a Kubernetes setup for securing nodes, showing a flow from users through Nginx to frontend, Node.js, and MySQL pods. It emphasizes applying security patches and monitoring vulnerabilities.](https://kodekloud.com/kk-media/image/upload/v1752880805/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Attacker-on-the-Network/kubernetes-security-setup-diagram.jpg)
 
 * Keep the host OS and Kubernetes components patched to the latest stable versions.
 * Apply CIS Benchmarks or [Node Hardening Guides](https://kubernetes.io/docs/tasks/administer-cluster/securing-a-cluster/) for best practices.
@@ -92,9 +84,7 @@ spec:
       podSelector: {}
 ```
 
-<Callout icon="lightbulb">
-  Define both `Ingress` and `Egress` policies to ensure complete traffic segmentation between namespaces and Pods.
-</Callout>
+> **lightbulb** Define both `Ingress` and `Egress` policies to ensure complete traffic segmentation between namespaces and Pods.
 
 ### Strong Authentication and Authorization
 
@@ -155,6 +145,4 @@ References:
 * [etcd Documentation](https://etcd.io/docs/)
 * [CIS Kubernetes Benchmark](https://www.cisecurity.org/benchmark/kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/6da25ade-b162-485c-b9b9-f351990e99c2/lesson/9242d8ee-730b-4b61-9a9f-2458d937eecd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/6da25ade-b162-485c-b9b9-f351990e99c2/lesson/9242d8ee-730b-4b61-9a9f-2458d937eecd)

@@ -54,13 +54,9 @@ public_ip_address = "13.92.100.148"
 
 Note: Outputs are stored in the Terraform state. Terraform prints them after `apply`, and subsequent `terraform output` reads values from state (not by re-querying the provider).
 
-<Callout icon="lightbulb">
-  Outputs are stored in the Terraform state file. If an output contains sensitive information, mark it with `sensitive = true` to avoid printing it to the CLI by default.
-</Callout>
+> **lightbulb** Outputs are stored in the Terraform state file. If an output contains sensitive information, mark it with `sensitive = true` to avoid printing it to the CLI by default.
 
-<Callout icon="warning">
-  Do not expose secrets via outputs unless absolutely necessary. Use `sensitive = true` and restrict access to your remote state backend.
-</Callout>
+> **warning** Do not expose secrets via outputs unless absolutely necessary. Use `sensitive = true` and restrict access to your remote state backend.
 
 ## Output arguments reference (quick)
 
@@ -194,11 +190,9 @@ Terraform outputs let you expose runtime values for humans and automation. Use o
 
 Always mark secrets with `sensitive = true` and protect access to your state backend. For more provider-specific exported attributes, consult the provider docs such as the AzureRM `azurerm_public_ip` resource: [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/public\_ip](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/public_ip).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/866718d2-695e-4ee4-b25d-1aab3b014e85/lesson/4f867dbb-d2bf-4977-9131-29ea7d316d0a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/866718d2-695e-4ee4-b25d-1aab3b014e85/lesson/4f867dbb-d2bf-4977-9131-29ea7d316d0a)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/866718d2-695e-4ee4-b25d-1aab3b014e85/lesson/cae027d8-660f-43d0-9f8a-2f517abe92a8" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/866718d2-695e-4ee4-b25d-1aab3b014e85/lesson/cae027d8-660f-43d0-9f8a-2f517abe92a8)
 
 
 # Resource Attributes and Dependencies
@@ -312,9 +306,7 @@ resource "azurerm_subnet_network_security_group_association" "subnet_nsg_assoc" 
 }
 ```
 
-<Callout icon="lightbulb">
-  Use `depends_on` sparingly — only when Terraform cannot infer the dependency. Overusing `depends_on` makes configurations harder to read and less flexible. Always ask: is an attribute reference already providing the dependency?
-</Callout>
+> **lightbulb** Use `depends_on` sparingly — only when Terraform cannot infer the dependency. Overusing `depends_on` makes configurations harder to read and less flexible. Always ask: is an attribute reference already providing the dependency?
 
 A typical example configuration (main.tf)
 

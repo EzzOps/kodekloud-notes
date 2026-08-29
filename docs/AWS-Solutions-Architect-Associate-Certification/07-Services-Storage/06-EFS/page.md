@@ -12,7 +12,7 @@ Once you create an EFS file system within your Virtual Private Cloud (VPC), your
 
 When deploying EFS, you associate it with your VPC by creating mount targets in selected subnets. A mount target is assigned its own IP address, which EC2 instances use to connect to the file system. For high availability, it is highly recommended to create mount targets in multiple availability zones. This ensures that if one mount target becomes unavailable, an alternative is readily available.
 
-![The image illustrates how an EFS (Elastic File System) works within a Virtual Private Cloud (VPC), showing two availability zones with mount targets connected to an EFS filesystem.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865984/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EFS/efs-vpc-architecture-diagram.jpg)
+![The image illustrates how an EFS (Elastic File System) works within a Virtual Private Cloud (VPC), showing two availability zones with mount targets connected to an EFS filesystem.](https://kodekloud.com/kk-media/image/upload/v1752865984/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EFS/efs-vpc-architecture-diagram.jpg)
 
 ## EFS Storage Classes
 
@@ -28,7 +28,7 @@ Amazon EFS offers different storage classes to address a variety of use cases:
   * EFS One Zone Infrequent Access\
     These options help reduce costs by storing data in a single availability zone.
 
-![The image is a diagram explaining Elastic File System (EFS) storage classes, divided into "Standard Storage Classes" and "One Zone Storage Classes," with brief descriptions of each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865985/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EFS/efs-storage-classes-diagram.jpg)
+![The image is a diagram explaining Elastic File System (EFS) storage classes, divided into "Standard Storage Classes" and "One Zone Storage Classes," with brief descriptions of each.](https://kodekloud.com/kk-media/image/upload/v1752865985/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EFS/efs-storage-classes-diagram.jpg)
 
 ## Performance Modes in EFS
 
@@ -100,7 +100,7 @@ This command mounts the EFS file system similarly to other file system types, wi
 | Performance Modes       | General Purpose, Elastic Throughput, Max I/O, Provisioned Throughput, and Bursting Throughput |
 | Boot Storage Limitation | Cannot be used as boot storage for operating systems; EBS is recommended for boot volumes     |
 
-![The image is a summary slide about EFS (Elastic File System), detailing its availability in a VPC, storage classes, modes, and limitations regarding booting and operating system installation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865986/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EFS/efs-summary-vpc-storage-classes.jpg)
+![The image is a summary slide about EFS (Elastic File System), detailing its availability in a VPC, storage classes, modes, and limitations regarding booting and operating system installation.](https://kodekloud.com/kk-media/image/upload/v1752865986/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EFS/efs-summary-vpc-storage-classes.jpg)
 
 > **triangle-alert** Remember, EFS is ideal for shared file systems used by Linux-based applications but is not a substitute for block storage solutions like EBS, especially when used for booting operating systems.
 

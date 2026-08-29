@@ -10,11 +10,11 @@ Welcome to this lesson on creating a custom AWS CloudWatch dashboard. In this gu
 
 Begin by navigating to the CloudWatch service and clicking on "Dashboards." Here you will see a list of existing dashboards:
 
-![The image shows the AWS CloudWatch dashboard interface, displaying a list of custom dashboards with options to share, delete, or create new dashboards.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859874/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-dashboard-interface.jpg)
+![The image shows the AWS CloudWatch dashboard interface, displaying a list of custom dashboards with options to share, delete, or create new dashboards.](https://kodekloud.com/kk-media/image/upload/v1752859874/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-dashboard-interface.jpg)
 
 Click on "Create dashboard" to start building your new dashboard. For this demonstration, we will name the dashboard "KodeKloud demo dashboard":
 
-![The image shows a web interface for creating a new dashboard in AWS CloudWatch, with a dialog box where "KK-demo" is entered as the dashboard name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859875/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-dashboard-kk-demo.jpg)
+![The image shows a web interface for creating a new dashboard in AWS CloudWatch, with a dialog box where "KK-demo" is entered as the dashboard name.](https://kodekloud.com/kk-media/image/upload/v1752859875/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-dashboard-kk-demo.jpg)
 
 ## Choosing the Data Source
 
@@ -22,41 +22,41 @@ After specifying your dashboard name, you will be presented with several data so
 
 For this demo, we will continue to use CloudWatch as our primary data source:
 
-![The image shows a widget configuration screen in AWS CloudWatch, where users can select data source types and widget types such as line, data table, number, gauge, stacked area, and bar.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859876/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-widget-configuration.jpg)
+![The image shows a widget configuration screen in AWS CloudWatch, where users can select data source types and widget types such as line, data table, number, gauge, stacked area, and bar.](https://kodekloud.com/kk-media/image/upload/v1752859876/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-widget-configuration.jpg)
 
 When adding a widget, you have a variety of options. You can choose from eight different widget types for metrics—including line charts, data tables, gauges, bar charts, stacked areas, and pie charts—five options for logs, and one for an alarm status view.
 
-![The image shows an AWS CloudWatch interface for adding a widget, with options to select data source types such as CloudWatch, other content types, or create new data sources. There are buttons for creating a data source and refreshing the list.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859877/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-widget-interface.jpg)
+![The image shows an AWS CloudWatch interface for adding a widget, with options to select data source types such as CloudWatch, other content types, or create new data sources. There are buttons for creating a data source and refreshing the list.](https://kodekloud.com/kk-media/image/upload/v1752859877/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-widget-interface.jpg)
 
 ## Configuring Alarms
 
 Let's configure an alarm to monitor resource health via an alarm status widget. Although no alarms exist by default, you can easily create one based on a single metric. For instance, if you are monitoring EC2 instances, you might want to trigger an alarm when an instance’s CPU credit balance exceeds a specified threshold—a crucial factor for T-series instances.
 
-![The image shows a configuration screen for adding a widget in AWS CloudWatch, with options to select data source types and configure widget settings for alarms.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859879/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-widget-configuration-2.jpg)
+![The image shows a configuration screen for adding a widget in AWS CloudWatch, with options to select data source types and configure widget settings for alarms.](https://kodekloud.com/kk-media/image/upload/v1752859879/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-widget-configuration-2.jpg)
 
 Select the CPU credit balance metric that corresponds to your EC2 instance. You can set an alarm threshold to trigger if the CPU credit balance is greater than, for example, five:
 
-![The image shows an AWS CloudWatch interface for creating an alarm, specifically for monitoring the CPUCreditBalance metric of an EC2 instance. It includes a graph and fields for specifying metric details and conditions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859880/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-alarm-cpu-metric.jpg)
+![The image shows an AWS CloudWatch interface for creating an alarm, specifically for monitoring the CPUCreditBalance metric of an EC2 instance. It includes a graph and fields for specifying metric details and conditions.](https://kodekloud.com/kk-media/image/upload/v1752859880/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-alarm-cpu-metric.jpg)
 
-![The image shows an AWS CloudWatch configuration screen for setting an alarm condition based on CPU credit balance. It includes options for threshold type, condition settings, and a numeric input for the threshold value.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859881/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-alarm-cpu-credits.jpg)
+![The image shows an AWS CloudWatch configuration screen for setting an alarm condition based on CPU credit balance. It includes options for threshold type, condition settings, and a numeric input for the threshold value.](https://kodekloud.com/kk-media/image/upload/v1752859881/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-alarm-cpu-credits.jpg)
 
 You are not required to add notification actions, Lambda functions, or other advanced configurations for this demonstration. Simply proceed by assigning a name to your alarm (e.g., "Instance alarm for CPU credits"):
 
-![The image shows an AWS CloudWatch interface where a user is adding a name and description for an alarm. The alarm name is "kk-demo-instance" and there are formatting guidelines for the description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859882/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-alarm-kk-demo.jpg)
+![The image shows an AWS CloudWatch interface where a user is adding a name and description for an alarm. The alarm name is "kk-demo-instance" and there are formatting guidelines for the description.](https://kodekloud.com/kk-media/image/upload/v1752859882/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-alarm-kk-demo.jpg)
 
 The alarm utilizes a static threshold. When the defined condition is met—such as CPU utilization exceeding five—the alarm will trigger. For this demo, no follow-up actions are configured.
 
-![The image shows an AWS CloudWatch dashboard displaying a graph of CPU credit balance for an EC2 instance, with conditions set for an alarm when the balance is greater than 5.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859883/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-cpu-credit-graph.jpg)
+![The image shows an AWS CloudWatch dashboard displaying a graph of CPU credit balance for an EC2 instance, with conditions set for an alarm when the balance is greater than 5.](https://kodekloud.com/kk-media/image/upload/v1752859883/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-cpu-credit-graph.jpg)
 
 ## Adding Widgets to the Dashboard
 
 Return to your demo dashboard to start adding widgets. First, include an alarm status widget and select the alarm you just created to display its status.
 
-![The image shows an AWS CloudWatch Alarms dashboard with one alarm named "kk-demo-instance-cpucredits" in a state of "Insufficient data." The condition is set for CPUCreditBalance to be greater than 5 for one datapoint within 5 minutes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859884/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-alarms-dashboard-kk-demo.jpg)
+![The image shows an AWS CloudWatch Alarms dashboard with one alarm named "kk-demo-instance-cpucredits" in a state of "Insufficient data." The condition is set for CPUCreditBalance to be greater than 5 for one datapoint within 5 minutes.](https://kodekloud.com/kk-media/image/upload/v1752859884/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-alarms-dashboard-kk-demo.jpg)
 
 Next, add another widget for displaying critical metrics. For example, you can use a "Number" widget to illustrate network packets in or out. Note that if no data is available, the widget may appear empty until data starts flowing.
 
-![The image shows an AWS CloudWatch dashboard with an empty graph area and a list of metrics related to CPU and network usage, with no alarms set.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859885/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-dashboard-empty-graph.jpg)
+![The image shows an AWS CloudWatch dashboard with an empty graph area and a list of metrics related to CPU and network usage, with no alarms set.](https://kodekloud.com/kk-media/image/upload/v1752859885/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-dashboard-empty-graph.jpg)
 
 You can also add a gauge widget to monitor metrics like the total write time for a specific EBS volume. After configuring the gauge range (e.g., from 1 to 5), you will observe a real-time visualization of this metric. Hovering over the widget provides additional insights, such as write time per hour.
 
@@ -85,7 +85,7 @@ At this stage, your CloudWatch dashboard aggregates multiple widgets, providing 
 
 These widgets collectively provide deep insights into your resources. Additionally, the dashboard supports customizable time ranges, refresh intervals, a full-screen mode, and options to add variables or additional components.
 
-![The image shows an AWS CloudWatch dashboard named "KK-demo" displaying metrics like NetworkPacketsIn and VolumeTotalWriteTime, along with a log group containing CloudTrail logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859887/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-kk-demo-dashboard.jpg)
+![The image shows an AWS CloudWatch dashboard named "KK-demo" displaying metrics like NetworkPacketsIn and VolumeTotalWriteTime, along with a log group containing CloudTrail logs.](https://kodekloud.com/kk-media/image/upload/v1752859887/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Building-a-simple-CloudWatch-Dashboard/aws-cloudwatch-kk-demo-dashboard.jpg)
 
 ## Conclusion
 

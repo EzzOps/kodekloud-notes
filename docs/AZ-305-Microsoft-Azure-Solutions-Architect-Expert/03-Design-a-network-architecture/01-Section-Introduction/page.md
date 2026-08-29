@@ -15,7 +15,7 @@ Venator Corp has set the following requirements for its network infrastructure:
 * Establish a private connection between the on-premises environment and Azure.
 * Include a failover path in case the private connection experiences downtime.
 
-![The image outlines a scenario for Vendetta Corp's network requirements, including private Azure connections, failover paths, and a central virtual network with specific traffic and application needs. It also details requirements for a three-tier application, such as web request inspection and load balancing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867100/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Section-Introduction/vendetta-corp-network-requirements-diagram.jpg)
+![The image outlines a scenario for Vendetta Corp's network requirements, including private Azure connections, failover paths, and a central virtual network with specific traffic and application needs. It also details requirements for a three-tier application, such as web request inspection and load balancing.](https://kodekloud.com/kk-media/image/upload/v1752867100/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Section-Introduction/vendetta-corp-network-requirements-diagram.jpg)
 
 > **lightbulb** The diagram above illustrates the network requirements for Venator Corp. It details how private connections, failover strategies, and centralized virtual networks come together to support mission-critical applications.
 

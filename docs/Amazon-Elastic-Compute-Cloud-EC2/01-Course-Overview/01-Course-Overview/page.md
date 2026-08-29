@@ -27,7 +27,7 @@ In this module, you’ll learn:
 * Core networking components: VPCs, subnets, Availability Zones, and NAT gateways
 * Real-world architectures demonstrating how these elements interact
 
-![The image shows a person speaking in front of a presentation slide that lists topics related to cloud computing, such as EC2, VPC, and NAT Gateway. The background features a computer setup with colorful lighting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868989/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Course-Overview/cloud-computing-presentation-ec2-vpc-nat.jpg)
+![The image shows a person speaking in front of a presentation slide that lists topics related to cloud computing, such as EC2, VPC, and NAT Gateway. The background features a computer setup with colorful lighting.](https://kodekloud.com/kk-media/image/upload/v1752868989/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Course-Overview/cloud-computing-presentation-ec2-vpc-nat.jpg)
 
 Key resources:
 
@@ -56,7 +56,7 @@ Dive deeper into:
 * Scaling your application with Auto Scaling groups and Elastic Load Balancers
 * Monitoring performance and logs using Amazon CloudWatch
 
-![The image shows a person speaking in front of a list of advanced topics related to cloud computing, including IAM Role with EC2, Launch Template, Autoscaling, Load Balancer, and CloudWatch. The person is wearing a shirt with the "CodeKloud" logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868991/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Course-Overview/cloud-computing-advanced-topics-presentation.jpg)
+![The image shows a person speaking in front of a list of advanced topics related to cloud computing, including IAM Role with EC2, Launch Template, Autoscaling, Load Balancer, and CloudWatch. The person is wearing a shirt with the "CodeKloud" logo.](https://kodekloud.com/kk-media/image/upload/v1752868991/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Course-Overview/cloud-computing-advanced-topics-presentation.jpg)
 
 For more on IAM roles, see the [AWS IAM Documentation](https://docs.aws.amazon.com/iam/).
 

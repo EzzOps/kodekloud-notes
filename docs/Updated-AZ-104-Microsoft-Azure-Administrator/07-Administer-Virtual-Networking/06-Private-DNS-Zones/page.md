@@ -14,9 +14,7 @@ However, when you need to resolve names across different VNets—such as resolvi
 
 An auto-registration feature can be optionally enabled so that any new VM added to the linked networks automatically registers its DNS record.
 
-<Frame>
-  ![The image illustrates a diagram of private DNS zones, showing virtual machines (VMs) with their names and IP addresses linked to two virtual networks (vnet-a and vnet-b). It includes a table listing the VMs and their corresponding IPs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884821/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-DNS-Zones/private-dns-zones-vms-diagram.jpg)
-</Frame>
+![The image illustrates a diagram of private DNS zones, showing virtual machines (VMs) with their names and IP addresses linked to two virtual networks (vnet-a and vnet-b). It includes a table listing the VMs and their corresponding IPs.](https://kodekloud.com/kk-media/image/upload/v1752884821/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-DNS-Zones/private-dns-zones-vms-diagram.jpg)
 
 Once connected via virtual network links, VMs are able to resolve each other’s names across different networks. For example, VM1 can resolve VM5 and VM6, while VM4 can resolve VM3. Note that this configuration only ensures DNS resolution; actual communication between VMs requires additional settings, like Virtual Network Peering.
 
@@ -27,13 +25,9 @@ To get started, follow these steps in the Azure Portal:
 1. Search for "Private DNS Zones."
 2. Create a new DNS zone within the appropriate resource group (e.g., kodecloudinternal.com, sometimes abbreviated as "int" for internal use).
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a Private DNS zone, with fields for project and instance details being filled out.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884822/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-DNS-Zones/azure-portal-private-dns-zone.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a Private DNS zone, with fields for project and instance details being filled out.](https://kodekloud.com/kk-media/image/upload/v1752884822/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-DNS-Zones/azure-portal-private-dns-zone.jpg)
 
-<Callout icon="lightbulb">
-  Private DNS Zones are global resources. You do not need to specify a resource location since the zone’s metadata is stored in the resource group's location.
-</Callout>
+> **lightbulb** Private DNS Zones are global resources. You do not need to specify a resource location since the zone’s metadata is stored in the resource group's location.
 
 After creating your DNS zone, you can begin managing virtual machines. For demonstration, we use pre-deployed VMs to verify name resolution using the nslookup command-line tool.
 
@@ -138,19 +132,13 @@ To enable automatic DNS record registration across virtual networks, configure v
    * Enable auto-registration to allow both new and existing VMs to automatically add their DNS records.
 3. Repeat the process for a second virtual network (e.g., vnlvnetworkloads), linking it to your NSG workload VNet.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for adding a virtual network link to a private DNS zone. It includes fields for link name, subscription, and virtual network selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884823/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-DNS-Zones/azure-portal-virtual-network-link.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for adding a virtual network link to a private DNS zone. It includes fields for link name, subscription, and virtual network selection.](https://kodekloud.com/kk-media/image/upload/v1752884823/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-DNS-Zones/azure-portal-virtual-network-link.jpg)
 
 After creating the virtual network links, ensure that each displays a "Completed" status. With these links active, DNS records from all linked networks populate automatically in the Private DNS Zone.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying the "Virtual network links" section for a private DNS zone named "kodekloud-int.com," with details about link status, virtual networks, and auto-registration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884823/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-DNS-Zones/azure-portal-virtual-network-links.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying the "Virtual network links" section for a private DNS zone named "kodekloud-int.com," with details about link status, virtual networks, and auto-registration.](https://kodekloud.com/kk-media/image/upload/v1752884823/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-DNS-Zones/azure-portal-virtual-network-links.jpg)
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying details of a private DNS zone for "kodekloud-int.com," including resource group, subscription information, and DNS record sets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884824/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-DNS-Zones/azure-portal-private-dns-zone-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying details of a private DNS zone for "kodekloud-int.com," including resource group, subscription information, and DNS record sets.](https://kodekloud.com/kk-media/image/upload/v1752884824/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Private-DNS-Zones/azure-portal-private-dns-zone-2.jpg)
 
 ## Verifying Enhanced DNS Resolution
 
@@ -198,6 +186,4 @@ For further exploration, upcoming articles will delve into Virtual Network Peeri
 
 Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/809fc274-7871-4b13-8f85-052b43442c81/lesson/ebe40b5c-4a2f-49ae-bf69-f95688ad75d8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/809fc274-7871-4b13-8f85-052b43442c81/lesson/ebe40b5c-4a2f-49ae-bf69-f95688ad75d8)

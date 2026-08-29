@@ -12,7 +12,7 @@ Beyond these options, consider the differences between a pure software developme
 
 > **lightbulb** As you advance into the security domain, artificial intelligence is playing an increasingly pivotal role in both machine learning and AI system security. Certain cloud security certifications now include AI components, reinforcing the value of pairing this certification with the [AWS Cloud Practitioner (CLF-C02)](https://learn.kodekloud.com/user/courses/aws-cloud-practitioner-clf-c02) for those pursuing AI/ML careers.
 
-![The image outlines career paths and certifications for roles in AI/ML, including Prompt Engineer, Machine Learning Engineer, and Machine Learning Ops Engineer, with corresponding AWS certifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857309/notes-assets/images/AWS-Certified-AI-Practitioner-Next-Steps-and-Resources-in-Certification/ai-ml-career-paths-certifications.jpg)
+![The image outlines career paths and certifications for roles in AI/ML, including Prompt Engineer, Machine Learning Engineer, and Machine Learning Ops Engineer, with corresponding AWS certifications.](https://kodekloud.com/kk-media/image/upload/v1752857309/notes-assets/images/AWS-Certified-AI-Practitioner-Next-Steps-and-Resources-in-Certification/ai-ml-career-paths-certifications.jpg)
 
 In the realm of Prompt Engineering, professionals are encouraged to advance from associate-level machine learning exams to specialty-level evaluations. This trend is also evident in the integration of solutions architecture and data engineering within machine learning tracks. Additionally, Ops Engineers may find it beneficial to progress to a professional-level DevOps certification, using this certification as a foundational prerequisite. A similar approach is recommended for those pursuing a career as a data scientist.
 
@@ -22,6 +22,6 @@ Furthermore, the emerging field of Prompt Engineering is expected to influence a
 
 If you are contemplating your next certification milestone, evaluating these suggested paths will help you transition seamlessly from a foundational exam to an associate-level certification that aligns with your career objectives. We look forward to sharing more resources in the upcoming lesson to support your journey into artificial intelligence and machine learning.
 
-![The image outlines career paths and certifications for roles like Prompt Engineer, Machine Learning Engineer, and Machine Learning Ops Engineer, with corresponding AWS certifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857310/notes-assets/images/AWS-Certified-AI-Practitioner-Next-Steps-and-Resources-in-Certification/career-paths-certifications-aws.jpg)
+![The image outlines career paths and certifications for roles like Prompt Engineer, Machine Learning Engineer, and Machine Learning Ops Engineer, with corresponding AWS certifications.](https://kodekloud.com/kk-media/image/upload/v1752857310/notes-assets/images/AWS-Certified-AI-Practitioner-Next-Steps-and-Resources-in-Certification/career-paths-certifications-aws.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-ai-practitioner/module/aeae0a82-b633-47ff-9383-e821c3a06cf5/lesson/f71d3d90-f6f2-46a8-af87-1f97c6ad6a8d)

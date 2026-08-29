@@ -31,9 +31,7 @@ Choose a routing key that preserves the consistency required by your downstream 
 | `streamID`   | Metrics only                           | Routes by metric stream ID (hash of attributes). Most granular for metrics.                             |
 | `attributes` | Traces & Metrics                       | Custom attribute routing. Requires a `routing_attributes` list to define keys to hash on.               |
 
-<Callout icon="lightbulb">
-  Choose the routing key that preserves the data consistency you need. For tail-based sampling, prefer `traceID`. For metric sharding, prefer `metric` or `streamID`.
-</Callout>
+> **lightbulb** Choose the routing key that preserves the data consistency you need. For tail-based sampling, prefer `traceID`. For metric sharding, prefer `metric` or `streamID`.
 
 Example: routing\_key variants
 

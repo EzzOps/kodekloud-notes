@@ -30,9 +30,7 @@ Hello World!
 
 This demonstrates that the NodePort Service is routing traffic from the node's IP at port `30008` to the Pod's web server.
 
-<Frame>
-  ![The image illustrates three types of services: NodePort, ClusterIP, and LoadBalancer, each represented by a simple diagram.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884972/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Services-NodePort/frame_270.jpg)
-</Frame>
+![The image illustrates three types of services: NodePort, ClusterIP, and LoadBalancer, each represented by a simple diagram.](https://kodekloud.com/kk-media/image/upload/v1752884972/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Services-NodePort/frame_270.jpg)
 
 ## Kubernetes Service Types
 
@@ -79,9 +77,7 @@ In this YAML file:
   * `port` which defines the Service's port within the cluster.
   * `nodePort` representing the port accessible externally on each node.
 
-<Callout icon="lightbulb">
-  The only mandatory field in the ports configuration is `port`. If you omit `targetPort`, it defaults to the same value as `port`. Likewise, if you don't specify `nodePort`, Kubernetes will allocate one automatically from the valid range.
-</Callout>
+> **lightbulb** The only mandatory field in the ports configuration is `port`. If you omit `targetPort`, it defaults to the same value as `port`. Likewise, if you don't specify `nodePort`, Kubernetes will allocate one automatically from the valid range.
 
 This configuration only creates the Service. To bind it to the appropriate Pods, you must use labels and selectors. For example, if your Pod is labeled with `app: myapp`, update your Service definition to include a matching selector:
 
@@ -147,30 +143,20 @@ In production environments, you often run multiple instances of your web applica
 
 For example, if there are three Pods with the label `app: myapp`, the NodePort Service will distribute incoming requests among all three. The load balancing algorithm employed is simple and effective—it distributes the requests randomly across the available Pods.
 
-<Frame>
-  ![The image illustrates a Kubernetes NodePort service, showing a user accessing a service through a node's IP and port, which routes to multiple pods within a node.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884973/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Services-NodePort/frame_660.jpg)
-</Frame>
+![The image illustrates a Kubernetes NodePort service, showing a user accessing a service through a node's IP and port, which routes to multiple pods within a node.](https://kodekloud.com/kk-media/image/upload/v1752884973/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Services-NodePort/frame_660.jpg)
 
 When your Pods are spread across multiple nodes, the Service spans the entire cluster. Kubernetes consistently maps the target port across all nodes. This ensures that you can use any node IP with the designated NodePort (in our case, `30008`) to access your application without any disruption.
 
-<Frame>
-  ![The image illustrates a Kubernetes NodePort service setup, showing a user accessing a service through a node's IP and port, distributing traffic to three pods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884974/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Services-NodePort/frame_710.jpg)
-</Frame>
+![The image illustrates a Kubernetes NodePort service setup, showing a user accessing a service through a node's IP and port, distributing traffic to three pods.](https://kodekloud.com/kk-media/image/upload/v1752884974/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Services-NodePort/frame_710.jpg)
 
-<Frame>
-  ![The image illustrates a Kubernetes NodePort service setup, showing nodes with pods and their IP addresses, enabling external access to the service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884975/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Services-NodePort/frame_750.jpg)
-</Frame>
+![The image illustrates a Kubernetes NodePort service setup, showing nodes with pods and their IP addresses, enabling external access to the service.](https://kodekloud.com/kk-media/image/upload/v1752884975/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Services-NodePort/frame_750.jpg)
 
 ## Summary
 
 In summary, whether you have a single Pod on one node, multiple Pods on a single node, or Pods distributed across several nodes, a NodePort Service is configured in the same manner. Kubernetes automatically updates the Service endpoints as Pods are added or removed, making this approach a robust solution for providing external access to your application.
 
-<Callout icon="lightbulb">
-  For a hands-on demonstration, proceed to the demo section where you'll see NodePort Services in action. Continue exploring Kubernetes by reviewing the official [Kubernetes Documentation](https://kubernetes.io/docs/).
-</Callout>
+> **lightbulb** For a hands-on demonstration, proceed to the demo section where you'll see NodePort Services in action. Continue exploring Kubernetes by reviewing the official [Kubernetes Documentation](https://kubernetes.io/docs/).
 
 That concludes this lesson. Enjoy the demo and see you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/7e491918-c5e6-47e3-b4b2-54e6e311292c/lesson/e7065953-5727-4b1b-b92a-9550db6f6b93" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/7e491918-c5e6-47e3-b4b2-54e6e311292c/lesson/e7065953-5727-4b1b-b92a-9550db6f6b93)

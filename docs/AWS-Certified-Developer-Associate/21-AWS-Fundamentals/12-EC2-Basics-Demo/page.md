@@ -12,15 +12,15 @@ In this lesson, you will learn how to deploy an Amazon EC2 instance, connect sec
 
 Begin by accessing the EC2 service from the AWS Management Console. In the EC2 dashboard, navigate to "Instances" where you will find a shortcut to launch a new instance:
 
-![The image shows the Amazon Web Services (AWS) EC2 dashboard, displaying various resources and options for managing instances in the US East (N. Virginia) region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858173/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-dashboard-us-east.jpg)
+![The image shows the Amazon Web Services (AWS) EC2 dashboard, displaying various resources and options for managing instances in the US East (N. Virginia) region.](https://kodekloud.com/kk-media/image/upload/v1752858173/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-dashboard-us-east.jpg)
 
 Click the **Launch Instances** button. First, assign a name to your instance (e.g., "EC2 demo instance") and then select an Amazon Machine Image (AMI).
 
-![The image shows an AWS EC2 instance launch configuration screen, where a user is selecting an Amazon Machine Image (AMI) and configuring instance details like type and storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858175/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-instance-launch-configuration.jpg)
+![The image shows an AWS EC2 instance launch configuration screen, where a user is selecting an Amazon Machine Image (AMI) and configuring instance details like type and storage.](https://kodekloud.com/kk-media/image/upload/v1752858175/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-instance-launch-configuration.jpg)
 
 The chosen AMI serves as a blueprint by defining the operating system and including any pre-installed applications or services. You have the option to select popular AMIs like Amazon Linux, macOS, or Ubuntu in the Quick Start section. If you require a custom or specific AMI, use the "My AMIs" tab or search (e.g., type "Ubuntu"):
 
-![The image shows an AWS EC2 console displaying a list of Ubuntu AMIs available for selection, with options for different versions and architectures.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858176/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-ubuntu-amis-list.jpg)
+![The image shows an AWS EC2 console displaying a list of Ubuntu AMIs available for selection, with options for different versions and architectures.](https://kodekloud.com/kk-media/image/upload/v1752858176/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-ubuntu-amis-list.jpg)
 
 You may also explore the Amazon Marketplace for additional AMIs. In this demo, we select the Amazon Linux 2023 AMI from Quick Start. Remember, each AMI has a region-specific unique AMI ID. For instance, the AMI ID in Northern Virginia will differ from Ohio. Verify the AMI ID for your region before proceeding.
 
@@ -37,19 +37,19 @@ Next, specify the key pair required for secure connection management. You can se
 3. Leave the RSA option and the .pem file format as default.
 4. Click **Create key pair** and securely save the downloaded PEM file (e.g., "EC2.pem").
 
-![The image shows a dialog box on the AWS EC2 console for creating a key pair, with options to name the key pair, select the key pair type (RSA or ED25519), and choose the private key file format (.pem or .ppk).](../../../../images/kodekloud.com/kk-media/image/upload/v1752858177/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-key-pair-dialog.jpg)
+![The image shows a dialog box on the AWS EC2 console for creating a key pair, with options to name the key pair, select the key pair type (RSA or ED25519), and choose the private key file format (.pem or .ppk).](https://kodekloud.com/kk-media/image/upload/v1752858177/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-key-pair-dialog.jpg)
 
 Scroll down to the network settings. Choose the desired VPC and subnet (the default settings are pre-selected). Ensure that the instance is assigned a public IP address by enabling the appropriate option.
 
 Proceed to set up the Security Group. Either choose an existing security group or create a new one. A new security group by default allows SSH access. Unless you require customization, the default settings are sufficient.
 
-![The image shows an AWS EC2 instance launch configuration screen, detailing security group settings and instance summary information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858178/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-instance-launch-configuration-2.jpg)
+![The image shows an AWS EC2 instance launch configuration screen, detailing security group settings and instance summary information.](https://kodekloud.com/kk-media/image/upload/v1752858178/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-instance-launch-configuration-2.jpg)
 
 The storage configuration displays a default root volume (typically 8 GB). Additional volumes can be added later if needed. In the "Advanced Details" section, options such as Spot Instances, instance profiles, or auto recovery are available, but the default settings are appropriate for this demo.
 
 Once all options are configured, click the **Launch Instance** button. A confirmation message indicates that your instance ("EC2 demo instance") has been successfully launched.
 
-![The image shows an AWS EC2 console with a success message indicating the launch of an instance. Below, there are options for next steps, such as creating billing alerts, connecting to the instance, and managing monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858180/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-console-instance-launch.jpg)
+![The image shows an AWS EC2 console with a success message indicating the launch of an instance. Below, there are options for next steps, such as creating billing alerts, connecting to the instance, and managing monitoring.](https://kodekloud.com/kk-media/image/upload/v1752858180/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-console-instance-launch.jpg)
 
 ***
 
@@ -65,11 +65,11 @@ Additional instance information includes:
 * Monitoring metrics (CPU utilization, status checks)
 * Tags
 
-![The image shows an Amazon Web Services (AWS) EC2 management console with details of a running instance named "ec2-demo-instance." It displays security group settings, including inbound and outbound rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858181/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-management-console-instance.jpg)
+![The image shows an Amazon Web Services (AWS) EC2 management console with details of a running instance named "ec2-demo-instance." It displays security group settings, including inbound and outbound rules.](https://kodekloud.com/kk-media/image/upload/v1752858181/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-management-console-instance.jpg)
 
-![The image shows an AWS EC2 management console with details of a running instance named "ec2-demo-instance," including its instance ID, public and private IP addresses, and instance type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858185/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-management-console-instance-2.jpg)
+![The image shows an AWS EC2 management console with details of a running instance named "ec2-demo-instance," including its instance ID, public and private IP addresses, and instance type.](https://kodekloud.com/kk-media/image/upload/v1752858185/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-management-console-instance-2.jpg)
 
-![The image shows an AWS EC2 management console displaying the monitoring metrics for an instance named "ec2-demo-instance," including CPU utilization, status checks, and network activity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858186/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-monitoring-metrics.jpg)
+![The image shows an AWS EC2 management console displaying the monitoring metrics for an instance named "ec2-demo-instance," including CPU utilization, status checks, and network activity.](https://kodekloud.com/kk-media/image/upload/v1752858186/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-monitoring-metrics.jpg)
 
 ***
 
@@ -153,7 +153,7 @@ When you have finished using the instance, return to the AWS Management Console 
 
 To stop the instance, select it and choose **Stop Instance** from the Instance State menu. The instance will change from running to stopping, and eventually to stopped.
 
-![The image shows an AWS EC2 management console with details of a stopped instance named "ec2-demo-instance," including its instance ID, type, and private IP address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858187/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-console-stopped-instance.jpg)
+![The image shows an AWS EC2 management console with details of a stopped instance named "ec2-demo-instance," including its instance ID, type, and private IP address.](https://kodekloud.com/kk-media/image/upload/v1752858187/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Basics-Demo/aws-ec2-console-stopped-instance.jpg)
 
 Once the instance is stopped, you can either start it again, reboot, or hibernate. If you no longer need the instance and want to avoid additional charges, terminate it. The instance will enter a terminating state and then be deleted from your account.
 

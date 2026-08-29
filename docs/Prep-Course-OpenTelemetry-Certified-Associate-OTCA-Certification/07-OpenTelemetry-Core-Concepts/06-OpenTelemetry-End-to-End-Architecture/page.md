@@ -55,9 +55,7 @@ Key requirements driven by this separation:
   <img alt="The image outlines four requirements for client design in the context of OpenTelemetry, focusing on API definition, third-party library dependencies, application developer choices, and functionality of instrumented libraries." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Keep instrumentation dependent only on the API. This enables swapping SDKs or running with no SDK without breaking instrumented libraries.
-</Callout>
+> **lightbulb** Keep instrumentation dependent only on the API. This enables swapping SDKs or running with no SDK without breaking instrumented libraries.
 
 ## SDK responsibilities and exporters
 
@@ -169,9 +167,7 @@ The ecosystem page also lists many observability backends and vendors that nativ
 
 That concludes this lesson on OpenTelemetry client design principles. Use the API for instrumentation, select the SDK or distribution that fits your deployment needs, and prefer the Collector when you need central processing, transformation, or cross-service telemetry routing.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/e6689d1f-364b-465e-b79a-ea2967614616" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/e6689d1f-364b-465e-b79a-ea2967614616)
 
 
 # OpenTelemetry End to End Architecture
@@ -209,9 +205,7 @@ Core API components:
 * Propagators — encode/decode context across process boundaries (for example, W3C Trace Context headers).
 * Semantic conventions — standardized attribute names such as `service.name`, `http.method`, and `db.system`.
 
-<Callout icon="lightbulb">
-  Semantic conventions enable consistent attribute naming across languages and libraries so telemetry from different sources can be correlated more easily.
-</Callout>
+> **lightbulb** Semantic conventions enable consistent attribute naming across languages and libraries so telemetry from different sources can be correlated more easily.
 
 ## The SDKs (language implementations)
 
@@ -303,9 +297,7 @@ Table — Collector building blocks
 | Processor | `batch`, `attributes`, `probabilistic_sampler` | Enrich, filter, sample, or limit data          |
 | Exporter  | `otlp`, `prometheusremotewrite`, vendor        | Send telemetry to backends or other collectors |
 
-<Callout icon="lightbulb">
-  Use the Collector to centralize configuration, reduce per-host resource usage, and perform transformations such as sampling, redaction, and enrichment before sending data to backends.
-</Callout>
+> **lightbulb** Use the Collector to centralize configuration, reduce per-host resource usage, and perform transformations such as sampling, redaction, and enrichment before sending data to backends.
 
 Benefits of the Collector:
 
@@ -354,9 +346,7 @@ End-to-end telemetry flow:
 5. Kubernetes Operator/Helm charts and FaaS integrations help deploy and configure SDKs and Collectors in cloud-native environments.
 6. Observability backends receive, store, and visualize telemetry for querying and analysis.
 
-<Callout icon="warning">
-  Carefully choose sampling and aggregation strategies. Aggressive sampling or overly coarse Views can lose important signals; overly fine-grained telemetry increases cost and cardinality. Tune sampling, Views, and collectors to match your observability goals and budget.
-</Callout>
+> **warning** Carefully choose sampling and aggregation strategies. Aggressive sampling or overly coarse Views can lose important signals; overly fine-grained telemetry increases cost and cardinality. Tune sampling, Views, and collectors to match your observability goals and budget.
 
 ## Links and references
 
@@ -369,6 +359,4 @@ End-to-end telemetry flow:
 
 That’s the OpenTelemetry end-to-end architecture. This overview should give you a clear mental model of the components involved and how traces, metrics, and logs flow from application APIs through SDKs and the Collector into your observability backend.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/b4609151-d001-40a6-a5e8-ac1f6e6165a8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/b4609151-d001-40a6-a5e8-ac1f6e6165a8)

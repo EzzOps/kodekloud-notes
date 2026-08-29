@@ -29,9 +29,7 @@ What you’ll learn:
 
 These concepts are foundational for scripting, automation, system administration, cloud deployments, and security—so understanding interfaces and lifecycles will pay off across many tasks.
 
-<Callout icon="lightbulb">
-  Understanding both GUI and CLI workflows helps you pick the right tool for the job: GUI for discoverability and ease, CLI for automation and precision.
-</Callout>
+> **lightbulb** Understanding both GUI and CLI workflows helps you pick the right tool for the job: GUI for discoverability and ease, CLI for automation and precision.
 
 ***
 

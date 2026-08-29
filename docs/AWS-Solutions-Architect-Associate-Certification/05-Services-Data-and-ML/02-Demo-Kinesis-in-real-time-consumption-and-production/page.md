@@ -19,7 +19,7 @@ Start by navigating to the Kinesis service page in the AWS console and creating 
 
 3. Configure additional stream settings as required.
 
-![The image shows an Amazon Kinesis services webpage, detailing options for collecting, processing, and analyzing data streams in real time. It includes sections on how it works, pricing, and getting started with options like Kinesis Data Streams and Firehose.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865029/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Kinesis-in-real-time-consumption-and-production/amazon-kinesis-data-streams-webpage.jpg)
+![The image shows an Amazon Kinesis services webpage, detailing options for collecting, processing, and analyzing data streams in real time. It includes sections on how it works, pricing, and getting started with options like Kinesis Data Streams and Firehose.](https://kodekloud.com/kk-media/image/upload/v1752865029/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Kinesis-in-real-time-consumption-and-production/amazon-kinesis-data-streams-webpage.jpg)
 
 After configuring your settings, click **Create data stream** to complete this step.
 
@@ -32,11 +32,11 @@ Next, configure a Kinesis Data Firehose to channel data from the Kinesis data st
 3. Optionally, enable data transformation by activating a Lambda function. For this demo, leave the transformation settings as default.
 4. Review your settings and create the delivery stream.
 
-![The image shows an AWS Kinesis console screen with settings for creating a data stream, including options for capacity mode, data retention, and encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865030/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Kinesis-in-real-time-consumption-and-production/aws-kinesis-console-data-stream-settings.jpg)
+![The image shows an AWS Kinesis console screen with settings for creating a data stream, including options for capacity mode, data retention, and encryption.](https://kodekloud.com/kk-media/image/upload/v1752865030/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Kinesis-in-real-time-consumption-and-production/aws-kinesis-console-data-stream-settings.jpg)
 
-![The image shows an Amazon Kinesis console screen where a data stream named "crypto-stock-price" is being created. It includes details like capacity mode, ARN, and creation time, with options for producers and consumers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865036/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Kinesis-in-real-time-consumption-and-production/amazon-kinesis-crypto-stock-price-creation.jpg)
+![The image shows an Amazon Kinesis console screen where a data stream named "crypto-stock-price" is being created. It includes details like capacity mode, ARN, and creation time, with options for producers and consumers.](https://kodekloud.com/kk-media/image/upload/v1752865036/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Kinesis-in-real-time-consumption-and-production/amazon-kinesis-crypto-stock-price-creation.jpg)
 
-![The image shows an AWS Kinesis Data Firehose configuration page, where users can set a delivery stream name, transform and convert records, and specify destination settings like an S3 bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865037/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Kinesis-in-real-time-consumption-and-production/aws-kinesis-data-firehose-configuration.jpg)
+![The image shows an AWS Kinesis Data Firehose configuration page, where users can set a delivery stream name, transform and convert records, and specify destination settings like an S3 bucket.](https://kodekloud.com/kk-media/image/upload/v1752865037/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Kinesis-in-real-time-consumption-and-production/aws-kinesis-data-firehose-configuration.jpg)
 
 ## Setting Up an S3 Bucket
 
@@ -46,11 +46,11 @@ If you do not already have an S3 bucket, follow these steps to create one:
 2. Select your AWS region and configure additional settings as needed.
 3. Click **Create bucket** to finalize the setup.
 
-![The image shows the AWS S3 interface for creating a new bucket, with fields for bucket name, AWS region, and object ownership settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865039/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Kinesis-in-real-time-consumption-and-production/aws-s3-create-bucket-interface.jpg)
+![The image shows the AWS S3 interface for creating a new bucket, with fields for bucket name, AWS region, and object ownership settings.](https://kodekloud.com/kk-media/image/upload/v1752865039/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Kinesis-in-real-time-consumption-and-production/aws-s3-create-bucket-interface.jpg)
 
 After creation, verify the bucket's availability by browsing your bucket list.
 
-![The image shows an Amazon S3 interface with a list of buckets, each with a name and region, allowing the user to choose one.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865040/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Kinesis-in-real-time-consumption-and-production/amazon-s3-bucket-list-interface.jpg)
+![The image shows an Amazon S3 interface with a list of buckets, each with a name and region, allowing the user to choose one.](https://kodekloud.com/kk-media/image/upload/v1752865040/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Kinesis-in-real-time-consumption-and-production/amazon-s3-bucket-list-interface.jpg)
 
 ## Sending Test Data to the Data Stream
 
@@ -90,7 +90,7 @@ setInterval(async () => {
 
 Run this code from your working directory (for example, C:\Users\sanje\Documents\scratch\kinesis). It will continuously generate and send data into the stream over several minutes.
 
-![The image shows an Amazon Kinesis dashboard for a data stream named "crypto-stock-price," displaying its status, capacity mode, and stream metrics. The dashboard includes monitoring tabs and graphs for metrics like GetRecords and iterator age.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865041/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Kinesis-in-real-time-consumption-and-production/amazon-kinesis-crypto-stock-dashboard.jpg)
+![The image shows an Amazon Kinesis dashboard for a data stream named "crypto-stock-price," displaying its status, capacity mode, and stream metrics. The dashboard includes monitoring tabs and graphs for metrics like GetRecords and iterator age.](https://kodekloud.com/kk-media/image/upload/v1752865041/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-Kinesis-in-real-time-consumption-and-production/amazon-kinesis-crypto-stock-dashboard.jpg)
 
 ## Verifying Data Delivery in S3
 

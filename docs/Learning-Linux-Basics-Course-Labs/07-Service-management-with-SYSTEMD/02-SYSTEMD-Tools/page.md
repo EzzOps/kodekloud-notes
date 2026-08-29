@@ -78,13 +78,11 @@ Mar 21 00:45:22 bob-Bionic dockerd[23340]: time="2020-03-21T00:45:22.188341543-0
 Mar 21 00:45:22 bob-Bionic systemd[1]: Started Docker Application Container Engine.
 ```
 
-<Callout icon="lightbulb">
-  In addition to the "active" state, be aware of:
+> **lightbulb** In addition to the "active" state, be aware of:
 
   * **Inactive (dead)**: The service is stopped.
   * **Activating/Deactivating**: Transitory states while a service is starting or stopping.
   * **Failed**: Indicates an error, usually due to issues with the service's command or configuration.
-</Callout>
 
 ### Reloading Systemd Configuration
 
@@ -177,13 +175,9 @@ Mar 19 17:43:23 dockerd[2590]: level=info msg="API listen on /var/run/d"
 Mar 19 17:43:23 systemd[1]: Started Docker Application Container Engine.
 ```
 
-<Callout icon="lightbulb">
-  Using `journalctl` can help diagnose configuration issues or failed services by providing detailed log entries.
-</Callout>
+> **lightbulb** Using `journalctl` can help diagnose configuration issues or failed services by providing detailed log entries.
 
-<Frame>
-  ![The image outlines systemd tools, highlighting "systemctl" for managing system states and "journalctl" for querying systemd journals.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881143/notes-assets/images/Learning-Linux-Basics-Course-Labs-SYSTEMD-Tools/frame_70.jpg)
-</Frame>
+![The image outlines systemd tools, highlighting "systemctl" for managing system states and "journalctl" for querying systemd journals.](https://kodekloud.com/kk-media/image/upload/v1752881143/notes-assets/images/Learning-Linux-Basics-Course-Labs-SYSTEMD-Tools/frame_70.jpg)
 
 ## Conclusion
 
@@ -197,8 +191,6 @@ For additional resources, consider exploring:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/35ba7692-62b1-429d-87e3-74ac7cc25061/lesson/2473fb67-fabe-4847-bf33-0b4838c23951" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/35ba7692-62b1-429d-87e3-74ac7cc25061/lesson/2473fb67-fabe-4847-bf33-0b4838c23951)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/35ba7692-62b1-429d-87e3-74ac7cc25061/lesson/92472043-c883-4d97-af9a-a256d229326c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/35ba7692-62b1-429d-87e3-74ac7cc25061/lesson/92472043-c883-4d97-af9a-a256d229326c)

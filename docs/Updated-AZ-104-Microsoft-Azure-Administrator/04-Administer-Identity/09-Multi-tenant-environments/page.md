@@ -14,9 +14,7 @@ Each Microsoft Entra ID organization, often referred to as a tenant, functions a
 
 Actions performed in one tenant—whether it's the creation or deletion of resources—do not influence other tenants. This strict isolation guarantees that each tenant's data and assets remain secure and separate from those in other tenants.
 
-<Callout icon="lightbulb">
-  Resource independence ensures that any changes, issues, or maintenance activities in one tenant have no unintended consequences on another, maintaining a robust security posture.
-</Callout>
+> **lightbulb** Resource independence ensures that any changes, issues, or maintenance activities in one tenant have no unintended consequences on another, maintaining a robust security posture.
 
 ## Administration Independence
 
@@ -34,18 +32,12 @@ The Azure portal facilitates effortless tenant management, allowing you to switc
 
 Clicking on the settings icon reveals a list of tenants accessible to you. This feature makes it simple to switch profiles and manage tenant-specific resources. Notably, the visual theme of the portal—including its color scheme—changes dynamically to reflect the identity of the currently selected tenant.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal settings page, specifically the "Directories + subscriptions" section, where different directories and their details are listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884598/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Multi-tenant-environments/azure-portal-directories-subscriptions.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal settings page, specifically the "Directories + subscriptions" section, where different directories and their details are listed.](https://kodekloud.com/kk-media/image/upload/v1752884598/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Multi-tenant-environments/azure-portal-directories-subscriptions.jpg)
 
 Switching between tenants enables you to manage your home tenant as well as additional tenants you might be invited to join through a B2B process. Even though this is not a primary focus of the exam, understanding the concept of multiple tenant memberships is critical.
 
-<Callout icon="lightbulb">
-  Familiarity with the multi-tenant environment is essential not only for exam success but also for real-world administration and security management.
-</Callout>
+> **lightbulb** Familiarity with the multi-tenant environment is essential not only for exam success but also for real-world administration and security management.
 
 With this overview, you now understand the foundational aspects of administering identity within Microsoft Entra ID as part of the [AZ-104: Microsoft Azure Administrator](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator) training. Next, we will explore governance and compliance.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/07e3a37e-65a9-430c-9919-011cc605b25d/lesson/64e01d4f-a2d0-4933-99cd-096d87011320" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/07e3a37e-65a9-430c-9919-011cc605b25d/lesson/64e01d4f-a2d0-4933-99cd-096d87011320)

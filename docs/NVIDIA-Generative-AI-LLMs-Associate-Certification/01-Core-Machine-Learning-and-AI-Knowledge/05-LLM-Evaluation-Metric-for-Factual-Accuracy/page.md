@@ -43,13 +43,9 @@ Best practices for assessing factual accuracy
 * Complement automated truthfulness metrics with downstream task checks (retrieval-augmented verification, knowledge-grounded generation) to reduce hallucinations.
 * Keep separate evaluation axes for fluency (perplexity), similarity (BLEU), and performance (latency) — each serves different decisions in model development and deployment.
 
-<Callout icon="lightbulb">
-  When measuring factual accuracy, prefer truthfulness-oriented evaluations (automated fact-checkers, QA-based factuality tests, or specialized benchmarks). Combine automated truthfulness scores with focused human evaluation to catch subtle or context-dependent errors.
-</Callout>
+> **lightbulb** When measuring factual accuracy, prefer truthfulness-oriented evaluations (automated fact-checkers, QA-based factuality tests, or specialized benchmarks). Combine automated truthfulness scores with focused human evaluation to catch subtle or context-dependent errors.
 
-<Callout icon="warning">
-  Do not rely solely on perplexity, BLEU, or generation speed to judge factual accuracy. These metrics can indicate fluency or system performance but will miss hallucinations unless paired with truthfulness-specific evaluations.
-</Callout>
+> **warning** Do not rely solely on perplexity, BLEU, or generation speed to judge factual accuracy. These metrics can indicate fluency or system performance but will miss hallucinations unless paired with truthfulness-specific evaluations.
 
 Further reading and resources
 
@@ -57,6 +53,4 @@ Further reading and resources
 * FEVER fact verification dataset: [https://fever.ai/](https://fever.ai/)
 * Survey of evaluation for factuality and hallucinations in NLG: see recent literature on factuality metrics and QA-based evaluation methods.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/7ca35633-42ec-46be-97ac-c7120066c9ea" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/7ca35633-42ec-46be-97ac-c7120066c9ea)

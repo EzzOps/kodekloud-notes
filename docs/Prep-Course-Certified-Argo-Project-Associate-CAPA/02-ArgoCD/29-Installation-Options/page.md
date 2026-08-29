@@ -32,13 +32,9 @@ Why rollback matters:
 * Kubernetes concepts: [https://kubernetes.io/docs/concepts/](https://kubernetes.io/docs/concepts/)
 * Git basics: [https://git-scm.com/docs](https://git-scm.com/docs)
 
-<Callout icon="warning">
-  While GitOps automates reconciliation, ensure you have proper observability and guardrails (health checks, alerts, RBAC) in place—automation without visibility can amplify issues.
-</Callout>
+> **warning** While GitOps automates reconciliation, ensure you have proper observability and guardrails (health checks, alerts, RBAC) in place—automation without visibility can amplify issues.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/75fb1813-439b-4d52-8730-b47d7eb59702" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/75fb1813-439b-4d52-8730-b47d7eb59702)
 
 
 # Installation Options
@@ -54,9 +50,7 @@ Argo CD supports two broad deployment modes:
 * Core — a minimal, single-user or single-team installation. Fewer components and simpler configuration, suitable for lightweight use cases and labs.
 * Multi-tenant — intended for platform teams managing multiple development teams. Multi-tenant installs come in two operational modes: non-high-availability (non-HA) and high-availability (HA).
 
-<Callout icon="warning">
-  The non-HA manifests are intended for testing and proof-of-concept (POC) usage only; they are not recommended for production. For production, use the HA manifests which run multiple replicas for resilience.
-</Callout>
+> **warning** The non-HA manifests are intended for testing and proof-of-concept (POC) usage only; they are not recommended for production. For production, use the HA manifests which run multiple replicas for resilience.
 
 Multi-tenant manifest flavors (common in the official repo):
 
@@ -65,9 +59,7 @@ Multi-tenant manifest flavors (common in the official repo):
 
 The HA variants follow the same cluster-scoped or namespace-scoped options, but add multiple replicas and production-grade resources for resilience.
 
-<Callout icon="lightbulb">
-  Choose install.yaml (cluster-scoped) if Argo CD will manage the cluster it runs in and you can grant cluster-admin permissions. Choose namespace-install.yaml for a namespace-scoped installation, commonly used when managing remote clusters.
-</Callout>
+> **lightbulb** Choose install.yaml (cluster-scoped) if Argo CD will manage the cluster it runs in and you can grant cluster-admin permissions. Choose namespace-install.yaml for a namespace-scoped installation, commonly used when managing remote clusters.
 
 Summary of the options
 

@@ -31,7 +31,7 @@ PING 10.2.1.139 (10.2.1.139) 56(84) bytes of data.
 4. Under **Accepter**, select your account and region, then choose **VPC-B**.
 5. Click **Create Peering Connection**.
 
-![The image shows the AWS VPC Management Console interface for creating a peering connection, with options to select a local VPC and specify regions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863426/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering-Demo/aws-vpc-management-console-peering-connection.jpg)
+![The image shows the AWS VPC Management Console interface for creating a peering connection, with options to select a local VPC and specify regions.](https://kodekloud.com/kk-media/image/upload/v1752863426/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering-Demo/aws-vpc-management-console-peering-connection.jpg)
 
 > **lightbulb** You can also provision VPC peering using Infrastructure as Code tools like Terraform or AWS CloudFormation.
 
@@ -40,11 +40,11 @@ PING 10.2.1.139 (10.2.1.139) 56(84) bytes of data.
 1. In **Peering Connections**, locate the new connection in **Pending Acceptance**.
 2. Select it, then choose **Actions** → **Accept Request**.
 
-![The image shows an AWS Management Console screen displaying details of a VPC peering connection request, which is pending acceptance. It includes information such as requester and accepter IDs, VPCs, and regions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863427/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering-Demo/aws-management-console-vpc-peering-request.jpg)
+![The image shows an AWS Management Console screen displaying details of a VPC peering connection request, which is pending acceptance. It includes information such as requester and accepter IDs, VPCs, and regions.](https://kodekloud.com/kk-media/image/upload/v1752863427/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering-Demo/aws-management-console-vpc-peering-request.jpg)
 
 Once accepted, its status changes to **Active**:
 
-![The image shows an AWS VPC dashboard with a peering connection established between two VPCs, indicated by a green status bar and details about the connection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863428/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering-Demo/aws-vpc-dashboard-peering-connection.jpg)
+![The image shows an AWS VPC dashboard with a peering connection established between two VPCs, indicated by a green status bar and details about the connection.](https://kodekloud.com/kk-media/image/upload/v1752863428/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering-Demo/aws-vpc-dashboard-peering-connection.jpg)
 
 > **triangle-alert** Even after peering is active, traffic won’t flow until you update each VPC’s route tables.
 
@@ -55,14 +55,14 @@ Each VPC needs a route pointing to the other VPC’s CIDR block through the peer
 1. In the VPC console, go to **Route Tables**.
 2. Select the route table for **VPC-A**.
 
-![The image shows the AWS management console displaying the route tables for a Virtual Private Cloud (VPC). It lists several route tables with details such as route table ID, subnet associations, and routes with their destinations and targets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863429/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering-Demo/aws-management-console-vpc-route-tables.jpg)
+![The image shows the AWS management console displaying the route tables for a Virtual Private Cloud (VPC). It lists several route tables with details such as route table ID, subnet associations, and routes with their destinations and targets.](https://kodekloud.com/kk-media/image/upload/v1752863429/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering-Demo/aws-management-console-vpc-route-tables.jpg)
 
 3. Under **Routes**, click **Edit routes** → **Add route**:
    * Destination: `10.2.0.0/16`
    * Target: the peering connection (`VPC-A-to-VPC-B`)
 4. Save changes.
 
-![The image shows the AWS Management Console with a VPC route table being edited, displaying routes with their destinations, targets, and statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863430/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering-Demo/aws-management-console-vpc-route-table.jpg)
+![The image shows the AWS Management Console with a VPC route table being edited, displaying routes with their destinations, targets, and statuses.](https://kodekloud.com/kk-media/image/upload/v1752863430/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering-Demo/aws-management-console-vpc-route-table.jpg)
 
 5. Repeat these steps on **VPC-B**’s route table, adding a route to `10.1.0.0/16` via the same peering connection.
 

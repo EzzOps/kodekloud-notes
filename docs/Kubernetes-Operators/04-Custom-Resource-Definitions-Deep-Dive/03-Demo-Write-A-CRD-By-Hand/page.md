@@ -47,9 +47,7 @@ With this in place:
 * `kubectl scale wa <name> --replicas=<n>` is routed to the scale subresource and updates `.spec.replicas`.
 * HorizontalPodAutoscalers (HPAs) that target this resource can read replicas and update the scale endpoint.
 
-<Callout icon="lightbulb">
-  Enabling the `status` subresource prevents ordinary `apply`/`update` requests from modifying `.status`. Only the `/status` endpoint (used by controllers) may change status fields.
-</Callout>
+> **lightbulb** Enabling the `status` subresource prevents ordinary `apply`/`update` requests from modifying `.status`. Only the `/status` endpoint (used by controllers) may change status fields.
 
 ## Step 3 — Add additional printer columns for `kubectl get`
 
@@ -95,9 +93,7 @@ names:
 
 Note: `kubectl get all` is a hard-coded convenience command and will not list CRDs even if they declare `categories: [all]`. The category is still useful for other tooling and `kubectl api-resources --categories=all`.
 
-<Callout icon="warning">
-  `kubectl get all` will not list your CRs even if `categories: [all]` is set. Use `kubectl api-resources --categories=all` or `kubectl get webapps` / `kubectl get wa` to view your resources.
-</Callout>
+> **warning** `kubectl get all` will not list your CRs even if `categories: [all]` is set. Use `kubectl api-resources --categories=all` or `kubectl get webapps` / `kubectl get wa` to view your resources.
 
 ***
 
@@ -212,11 +208,9 @@ References:
 
 * [Kubebuilder](https://kubebuilder.io) can generate these CRD fields automatically from Go marker comments on your types.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ba392f08-9d70-442b-9751-fdc2052b777e/lesson/e548531a-9522-478c-a1f2-5b2d4467a0c3" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ba392f08-9d70-442b-9751-fdc2052b777e/lesson/e548531a-9522-478c-a1f2-5b2d4467a0c3)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ba392f08-9d70-442b-9751-fdc2052b777e/lesson/bdaa4a6c-ee26-4b84-8fcf-1f0074e15286" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ba392f08-9d70-442b-9751-fdc2052b777e/lesson/bdaa4a6c-ee26-4b84-8fcf-1f0074e15286)
 
 
 # Demo Write A CRD By Hand
@@ -236,9 +230,7 @@ A CRD is itself a Kubernetes object and uses the same top-level fields you alrea
 * `metadata.name` must be set to the plural form of your resource followed by a dot and the API group (see note below)
 * `spec` contains `group`, `scope`, `names`, and `versions`
 
-<Callout icon="lightbulb">
-  Always set `metadata.name` to `<plural>.<group>`. For example, if your group is `webapp.kodekloud.com` and your plural is `webapps`, the metadata name must be `webapps.webapp.kodekloud.com`.
-</Callout>
+> **lightbulb** Always set `metadata.name` to `<plural>.<group>`. For example, if your group is `webapp.kodekloud.com` and your plural is `webapps`, the metadata name must be `webapps.webapp.kodekloud.com`.
 
 Minimal header example:
 
@@ -465,12 +457,10 @@ Table: common kubectl checks and commands for CRDs
 | Create instance        | `kubectl apply -f sample-webapp.yaml`                                                     |
 | Inspect created object | `kubectl get webapp bad-sample -o json \| jq .spec`                                       |
 
-<Callout icon="warning">
-  Two common mistakes to watch for:
+> **warning** Two common mistakes to watch for:
 
   * `metadata.name` must be `plural.group` (example: `webapps.webapp.kodekloud.com`).
   * Exactly one version must have `storage: true` — that is the version persisted in etcd.
-</Callout>
 
 ## Links and references
 
@@ -479,8 +469,6 @@ Table: common kubectl checks and commands for CRDs
 
 This demonstrates a complete, hand-authored CRD: names, group, versioning, schema validation, and defaults — all defined in a single YAML manifest.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ba392f08-9d70-442b-9751-fdc2052b777e/lesson/2d5366fc-2798-4b9e-abb3-2cc01fbf16fb" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ba392f08-9d70-442b-9751-fdc2052b777e/lesson/2d5366fc-2798-4b9e-abb3-2cc01fbf16fb)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ba392f08-9d70-442b-9751-fdc2052b777e/lesson/4c1e3c6d-8185-4c15-865f-6ac7aa58f4a8" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ba392f08-9d70-442b-9751-fdc2052b777e/lesson/4c1e3c6d-8185-4c15-865f-6ac7aa58f4a8)

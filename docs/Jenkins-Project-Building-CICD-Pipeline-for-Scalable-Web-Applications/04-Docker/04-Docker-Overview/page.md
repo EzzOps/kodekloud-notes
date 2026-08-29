@@ -45,15 +45,11 @@ cb72ec1da28c: Waiting
 
 Tagging your Docker images with the Git commit hash creates a direct link between the image and a specific commit in your repository. This makes it easy to track deployments back to the source code changes. For example, checking the commit history on GitHub can help you verify that the correct changes have been deployed.
 
-<Frame>
-  ![The image shows a GitHub repository page displaying a list of commits for a project named "course-jenkins-project" under the user "kodekloudhub." Each commit entry includes a message, author, and timestamp.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879865/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-with-Docker/github-repo-commits-course-jenkins.jpg)
-</Frame>
+![The image shows a GitHub repository page displaying a list of commits for a project named "course-jenkins-project" under the user "kodekloudhub." Each commit entry includes a message, author, and timestamp.](https://kodekloud.com/kk-media/image/upload/v1752879865/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-with-Docker/github-repo-commits-course-jenkins.jpg)
 
 If you view a commit diff, you might see something like this:
 
-<Frame>
-  ![The image shows a GitHub commit page for a project, displaying changes in files with additions and deletions highlighted in a diff view.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879866/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-with-Docker/github-commit-diff-view.jpg)
-</Frame>
+![The image shows a GitHub commit page for a project, displaying changes in files with additions and deletions highlighted in a diff view.](https://kodekloud.com/kk-media/image/upload/v1752879866/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-with-Docker/github-commit-diff-view.jpg)
 
 After making changes (for example, updating the version to "version four"), commit and push the modifications. Jenkins will trigger another build, and your updated Docker image—now tagged with the new commit hash—will be pushed to Docker Hub.
 
@@ -61,17 +57,13 @@ After making changes (for example, updating the version to "version four"), comm
 
 Finally, you can verify the pushed Docker image on Docker Hub. The Docker Hub interface displays details such as the manifest digest, OS/architecture, compressed size, and image layers.
 
-<Frame>
-  ![The image shows a Docker Hub page displaying details of a Docker image, including its manifest digest, OS/architecture, compressed size, and image layers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879867/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-with-Docker/docker-hub-image-details-manifest.jpg)
-</Frame>
+![The image shows a Docker Hub page displaying details of a Docker image, including its manifest digest, OS/architecture, compressed size, and image layers.](https://kodekloud.com/kk-media/image/upload/v1752879867/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Configuring-Jenkins-Pipeline-with-Docker/docker-hub-image-details-manifest.jpg)
 
 This completes the process of integrating Docker into your Jenkins CI/CD pipeline, enabling streamlined testing, building, and deployment of your applications.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/9eb65ce1-0aef-4f00-b661-5f8308aef2bd/lesson/71491108-5621-40e1-9b47-b091bc18bb35" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/9eb65ce1-0aef-4f00-b661-5f8308aef2bd/lesson/71491108-5621-40e1-9b47-b091bc18bb35)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/9eb65ce1-0aef-4f00-b661-5f8308aef2bd/lesson/86910176-a0dd-4cc7-897a-7a1390f4748c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/9eb65ce1-0aef-4f00-b661-5f8308aef2bd/lesson/86910176-a0dd-4cc7-897a-7a1390f4748c)
 
 
 # Docker Overview
@@ -86,15 +78,11 @@ In this lesson, we delve into Docker containers, exploring their core concepts a
 
 Docker is a platform that packages every component your application requires into a single, portable container. Think of a Docker container like a shipping container: just as shipping containers transport a variety of goods without repacking at each stop, Docker containers bundle your application’s source code, libraries, dependencies, and runtime environment. This ensures that your application runs reliably regardless of the deployment environment.
 
-<Frame>
-  ![The image compares a ship container and a Docker container, illustrating the concept of containers in computing with symbolic representations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879869/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Docker-Overview/ship-container-vs-docker-container.jpg)
-</Frame>
+![The image compares a ship container and a Docker container, illustrating the concept of containers in computing with symbolic representations.](https://kodekloud.com/kk-media/image/upload/v1752879869/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Docker-Overview/ship-container-vs-docker-container.jpg)
 
 The isolated nature of Docker containers ensures that everything an application needs is encapsulated, allowing it to run immediately upon deployment—eliminating the need for additional configuration.
 
-<Frame>
-  ![The image illustrates a concept of Docker Containers, featuring a central cube labeled "Docker Container" with four surrounding icons representing different aspects of containerization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879870/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Docker-Overview/docker-containers-concept-diagram.jpg)
-</Frame>
+![The image illustrates a concept of Docker Containers, featuring a central cube labeled "Docker Container" with four surrounding icons representing different aspects of containerization.](https://kodekloud.com/kk-media/image/upload/v1752879870/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Docker-Overview/docker-containers-concept-diagram.jpg)
 
 ## How Docker Works
 
@@ -104,15 +92,11 @@ Using the shipping container analogy further: once your goods are securely packa
 * Starting and monitoring container health
 * Managing container lifecycles by restarting them as required
 
-<Frame>
-  ![The image shows an illustration of a cargo ship carrying containers on the ocean, with the text "Moving Docker Containers" above it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879872/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Docker-Overview/cargo-ship-moving-docker-containers.jpg)
-</Frame>
+![The image shows an illustration of a cargo ship carrying containers on the ocean, with the text "Moving Docker Containers" above it.](https://kodekloud.com/kk-media/image/upload/v1752879872/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Docker-Overview/cargo-ship-moving-docker-containers.jpg)
 
 The Docker engine also ensures that containers run in isolation from one another, efficiently managing resources and overseeing lifecycle operations.
 
-<Frame>
-  ![The image shows a stylized Docker whale with containers on its back, floating on waves, alongside icons representing code and settings, with the text "Moving Docker Containers."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879872/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Docker-Overview/docker-whale-containers-waves.jpg)
-</Frame>
+![The image shows a stylized Docker whale with containers on its back, floating on waves, alongside icons representing code and settings, with the text "Moving Docker Containers."](https://kodekloud.com/kk-media/image/upload/v1752879872/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Docker-Overview/docker-whale-containers-waves.jpg)
 
 ## Advantages of Docker
 
@@ -128,13 +112,9 @@ Docker provides several powerful advantages that make it ideal for modern applic
 
 * **Scalability:** Docker simplifies the scaling process. When additional capacity is needed, additional container instances can be quickly deployed to handle increased demand.
 
-<Frame>
-  ![The image lists five advantages: Standardization, Isolation, Efficiency, Portability, and Scaling, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879873/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Docker-Overview/advantages-standardization-isolation-efficiency-portability-scaling.jpg)
-</Frame>
+![The image lists five advantages: Standardization, Isolation, Efficiency, Portability, and Scaling, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752879873/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Docker-Overview/advantages-standardization-isolation-efficiency-portability-scaling.jpg)
 
-<Callout icon="lightbulb">
-  Docker's portability ensures that your development and production environments are identical, reducing the notorious "it works on my machine" dilemma.
-</Callout>
+> **lightbulb** Docker's portability ensures that your development and production environments are identical, reducing the notorious "it works on my machine" dilemma.
 
 ## Conclusion
 
@@ -142,6 +122,4 @@ This article provided an introduction to Docker containers, highlighting their b
 
 Transcribed by [https://otter.ai](https://otter.ai)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/9eb65ce1-0aef-4f00-b661-5f8308aef2bd/lesson/8d8da417-2f5a-4926-bf69-0ded2772dd38" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/9eb65ce1-0aef-4f00-b661-5f8308aef2bd/lesson/8d8da417-2f5a-4926-bf69-0ded2772dd38)

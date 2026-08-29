@@ -101,9 +101,7 @@ Mounts only the root filesystem (read-only) and gives you a minimal shell:
 sudo systemctl isolate emergency.target
 ```
 
-<Callout icon="lightbulb">
-  Both `rescue.target` and `emergency.target` require a root password. Ensure `root` has a valid password before invoking these modes.
-</Callout>
+> **lightbulb** Both `rescue.target` and `emergency.target` require a root password. Ensure `root` has a valid password before invoking these modes.
 
 ***
 
@@ -131,6 +129,4 @@ Created symlink /etc/systemd/system/default.target → /usr/lib/systemd/system/g
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Linux Command Line Cheat Sheet](https://www.linuxtrainingacademy.com/linux-commands-cheat-sheet/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/e4327fde-ec56-4d9d-bd75-8b7625734abf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/e4327fde-ec56-4d9d-bd75-8b7625734abf)

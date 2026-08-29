@@ -40,9 +40,7 @@ Practical tips for building an effective scatterplot for LLM context-length anal
 * Annotation: Label notable outliers or regions (e.g., "diminishing returns beyond 4k tokens") to guide interpretation.
 * Statistical checks: Complement visuals with tests for heteroscedasticity or segmented regression if you suspect regime changes.
 
-<Callout icon="lightbulb">
-  Use a scatterplot with an appropriate smoothing or regression curve (choose LOESS/GAM for nonlinear trends) and include confidence intervals to better assess uncertainty around the trend.
-</Callout>
+> **lightbulb** Use a scatterplot with an appropriate smoothing or regression curve (choose LOESS/GAM for nonlinear trends) and include confidence intervals to better assess uncertainty around the trend.
 
 Further reading and tools
 
@@ -53,6 +51,4 @@ Further reading and tools
 
 And that concludes this section on data analysis.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/b8ad33c7-78ce-4828-a30c-4a8fc01d1781/lesson/29de8bb8-09e0-4182-a9fd-3b0e79bd3c0c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/b8ad33c7-78ce-4828-a30c-4a8fc01d1781/lesson/29de8bb8-09e0-4182-a9fd-3b0e79bd3c0c)

@@ -6,9 +6,7 @@ This guide explains how to configure an Ubuntu server as a Jenkins build agent, 
 
 This guide walks you through configuring an Ubuntu server as a Jenkins build agent. The setup process is similar to a standard Jenkins installation, with a focus on preparing a dedicated build agent. Ensure that Jenkins is already installed and operational on your main server before proceeding.
 
-<Callout icon="lightbulb">
-  Before you begin, verify that your Jenkins master is functioning properly. This ensures a smooth integration with the new build agent.
-</Callout>
+> **lightbulb** Before you begin, verify that your Jenkins master is functioning properly. This ensures a smooth integration with the new build agent.
 
 ## Step 1: Create a New User for the Jenkins Agent
 
@@ -41,9 +39,7 @@ Log into your Jenkins dashboard and navigate to:
 
 Select "Jenkins" under Global credentials (if necessary), then click on **Add credential**. Choose the **Username with password** type and provide the credentials of the new user you just created. The password is the one you set up during the user creation process.
 
-<Frame>
-  ![The image shows a form for adding global credentials in Jenkins, including fields for username, password, ID, and description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880003/notes-assets/images/Jenkins-Using-an-Ubuntu-Server-as-a-Build-Agent/frame_120.jpg)
-</Frame>
+![The image shows a form for adding global credentials in Jenkins, including fields for username, password, ID, and description.](https://kodekloud.com/kk-media/image/upload/v1752880003/notes-assets/images/Jenkins-Using-an-Ubuntu-Server-as-a-Build-Agent/frame_120.jpg)
 
 ## Step 3: Configure the Jenkins Node
 
@@ -53,9 +49,7 @@ Next, set up the build agent node by going to:
 
 Click **New Node** to create a new build agent. In the popup window, assign a name (for example, "Ubuntu agent") and select **Permanent Agent**. This setting allows the agent to handle any assigned job without interruption.
 
-<Frame>
-  ![The image shows a Jenkins interface for adding a new node, specifically a permanent agent named "ubuntuagent."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880004/notes-assets/images/Jenkins-Using-an-Ubuntu-Server-as-a-Build-Agent/frame_150.jpg)
-</Frame>
+![The image shows a Jenkins interface for adding a new node, specifically a permanent agent named "ubuntuagent."](https://kodekloud.com/kk-media/image/upload/v1752880004/notes-assets/images/Jenkins-Using-an-Ubuntu-Server-as-a-Build-Agent/frame_150.jpg)
 
 Fill in the required details on the node configuration page:
 
@@ -71,9 +65,7 @@ For the SSH settings, provide the following:
 * **Credentials:** Select the credentials you added in the previous step
 * **Host Key Verification Strategy:** Choose "Manually trusted key verification strategy"
 
-<Frame>
-  ![The image shows a configuration screen for setting up a node with SSH launch method, host key verification strategies, and node properties options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880005/notes-assets/images/Jenkins-Using-an-Ubuntu-Server-as-a-Build-Agent/frame_220.jpg)
-</Frame>
+![The image shows a configuration screen for setting up a node with SSH launch method, host key verification strategies, and node properties options.](https://kodekloud.com/kk-media/image/upload/v1752880005/notes-assets/images/Jenkins-Using-an-Ubuntu-Server-as-a-Build-Agent/frame_220.jpg)
 
 Click **Save** to store your configuration.
 
@@ -118,6 +110,4 @@ Your Ubuntu build agent is now configured and ready to execute Jenkins jobs. Thi
 
 We hope this guide has been helpful. Keep exploring to further optimize your Jenkins environment!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/1abff4aa-214c-48a2-98f1-2188e2e446bd/lesson/274b4587-e0a1-4425-ae4e-8ce8948b1a8b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/1abff4aa-214c-48a2-98f1-2188e2e446bd/lesson/274b4587-e0a1-4425-ae4e-8ce8948b1a8b)

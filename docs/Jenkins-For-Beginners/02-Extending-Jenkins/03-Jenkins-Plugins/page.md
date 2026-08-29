@@ -21,9 +21,7 @@ Jenkins plugins extend the core capabilities of Jenkins in multiple areas:
 
 Jenkins plugins are packaged as JAR files with either an HPI or JPI extension. While HPI (Hudson Plugin) is the legacy format, JPI denotes a native Jenkins plugin. These archive files reside within the Jenkins home plugins directory and include all the necessary code, resources, and configuration data required for integration.
 
-<Callout icon="lightbulb">
-  If duplicate plugins exist with both extensions, Jenkins will prioritize the `.jpi` version over the `.hpi`.
-</Callout>
+> **lightbulb** If duplicate plugins exist with both extensions, Jenkins will prioritize the `.jpi` version over the `.hpi`.
 
 ### Exploring the Plugins Directory
 
@@ -33,9 +31,7 @@ To inspect the plugins installed on your system, navigate to the Jenkins plugins
 cd /var/lib/jenkins/plugin
 ```
 
-<Frame>
-  ![The image shows a Jenkins plugin customization interface with options to install suggested plugins or select specific ones, along with a "Getting Started" section listing various plugins.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879462/notes-assets/images/Jenkins-For-Beginners-Jenkins-Plugins/jenkins-plugin-customization-interface.jpg)
-</Frame>
+![The image shows a Jenkins plugin customization interface with options to install suggested plugins or select specific ones, along with a "Getting Started" section listing various plugins.](https://kodekloud.com/kk-media/image/upload/v1752879462/notes-assets/images/Jenkins-For-Beginners-Jenkins-Plugins/jenkins-plugin-customization-interface.jpg)
 
 ## Plugin Installation Options
 
@@ -50,16 +46,10 @@ This recommended list is particularly useful for newcomers or when setting up a 
 
 Popular plugins such as Git, Pipeline, Gradle, and Maven are commonly used to enhance Jenkins' core functionalities. The Jenkins management console provides a centralized location where you can review, enable, disable, or uninstall plugins.
 
-<Callout icon="triangle-alert">
-  Be cautious when uninstalling plugins—certain plugins may have dependencies that could affect your CI/CD pipeline.
-</Callout>
+> **triangle-alert** Be cautious when uninstalling plugins—certain plugins may have dependencies that could affect your CI/CD pipeline.
 
-<Frame>
-  ![The image shows a Jenkins interface for managing plugins, displaying a list of installed plugins with options to enable or disable them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879463/notes-assets/images/Jenkins-For-Beginners-Jenkins-Plugins/jenkins-plugin-management-interface.jpg)
-</Frame>
+![The image shows a Jenkins interface for managing plugins, displaying a list of installed plugins with options to enable or disable them.](https://kodekloud.com/kk-media/image/upload/v1752879463/notes-assets/images/Jenkins-For-Beginners-Jenkins-Plugins/jenkins-plugin-management-interface.jpg)
 
 In upcoming lessons, we will delve deeper into the processes surrounding plugin installation, managing plugin dependencies, and using the update center to keep your plugins current.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/6a945431-1040-4467-b874-ef7d24d5a6a0/lesson/e8361901-2fcd-4251-895d-75efc0253595" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/6a945431-1040-4467-b874-ef7d24d5a6a0/lesson/e8361901-2fcd-4251-895d-75efc0253595)

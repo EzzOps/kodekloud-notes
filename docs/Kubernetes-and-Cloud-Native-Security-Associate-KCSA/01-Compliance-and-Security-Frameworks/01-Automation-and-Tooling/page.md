@@ -169,13 +169,9 @@ When creating a PVC, simply specify the desired storage class name and Kubernete
 
 ***
 
-<Callout icon="lightbulb">
-  Storage classes enhance Kubernetes' storage management by automating the provisioning process and reducing manual intervention. By using dynamic provisioning, administrators can streamline resource allocation and ensure that storage resources match their application requirements.
-</Callout>
+> **lightbulb** Storage classes enhance Kubernetes' storage management by automating the provisioning process and reducing manual intervention. By using dynamic provisioning, administrators can streamline resource allocation and ensure that storage resources match their application requirements.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/fbd7b99a-b2c1-4eda-9ef9-f5e0d7a20fce/lesson/c5a0cb55-fdfe-4262-91d9-0e92330a1942" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/fbd7b99a-b2c1-4eda-9ef9-f5e0d7a20fce/lesson/c5a0cb55-fdfe-4262-91d9-0e92330a1942)
 
 
 # Automation and Tooling
@@ -186,19 +182,13 @@ This lesson reviews essential automation and tooling for cloud-native security, 
 
 In this lesson, we recap essential automation and tooling for cloud-native security. Throughout this course, you’ve explored multiple open source and commercial solutions. Here, we review those tools, highlight alternatives, and reference key resources such as the **Cloud Native Security Whitepaper** by SIG Security.
 
-<Frame>
-  ![The image is a cover for the "Cloud Native Security Whitepaper" by TAG Security, featuring a blue abstract background and a list of contributors and reviewers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880715/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Automation-and-Tooling/cloud-native-security-whitepaper-cover.jpg)
-</Frame>
+![The image is a cover for the "Cloud Native Security Whitepaper" by TAG Security, featuring a blue abstract background and a list of contributors and reviewers.](https://kodekloud.com/kk-media/image/upload/v1752880715/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Automation-and-Tooling/cloud-native-security-whitepaper-cover.jpg)
 
 The Cloud Native Security Whitepaper provides foundational guidance authored by industry experts. To interactively explore security tools mapped to each phase of the application lifecycle, visit the Cloud Native Security Map:
 
-<Frame>
-  ![The image is a cover for a "Cloud Native Security Whitepaper" featuring a "Cloud Native Security Map," which serves as a guide for navigating the cloud native security landscape. It includes sections on development, distribution, deployment, runtime, security assurance, and compliance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880716/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Automation-and-Tooling/cloud-native-security-whitepaper-map.jpg)
-</Frame>
+![The image is a cover for a "Cloud Native Security Whitepaper" featuring a "Cloud Native Security Map," which serves as a guide for navigating the cloud native security landscape. It includes sections on development, distribution, deployment, runtime, security assurance, and compliance.](https://kodekloud.com/kk-media/image/upload/v1752880716/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Automation-and-Tooling/cloud-native-security-whitepaper-map.jpg)
 
-<Callout icon="lightbulb">
-  Explore the interactive map at [cnsmap.netfly.app](https://cnsmap.netfly.app) to discover security tools and best practices organized by **Develop**, **Distribute**, **Deploy**, and **Runtime** phases.
-</Callout>
+> **lightbulb** Explore the interactive map at [cnsmap.netfly.app](https://cnsmap.netfly.app) to discover security tools and best practices organized by **Develop**, **Distribute**, **Deploy**, and **Runtime** phases.
 
 ***
 
@@ -210,9 +200,7 @@ The **Develop** phase emphasizes “shift-left” testing by integrating securit
 * Enforce non-root container execution
 * Restrict allowed base images
 
-<Frame>
-  ![The image is a diagram illustrating a software development process, highlighting stages like coding, committing, distributing, deploying, and runtime, with an emphasis on "Shift-Left" for early testing and integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880717/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Automation-and-Tooling/software-development-process-shift-left-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating a software development process, highlighting stages like coding, committing, distributing, deploying, and runtime, with an emphasis on "Shift-Left" for early testing and integration.](https://kodekloud.com/kk-media/image/upload/v1752880717/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Automation-and-Tooling/software-development-process-shift-left-diagram.jpg)
 
 ### Fuzz Testing with OSS-Fuzz
 
@@ -290,9 +278,7 @@ Violation Details =
   Rule ID: AWS.S3Bucket.IAM.High.0370
 ```
 
-<Callout icon="triangle-alert">
-  Always validate manifests before image builds to prevent deployment of insecure configurations.
-</Callout>
+> **triangle-alert** Always validate manifests before image builds to prevent deployment of insecure configurations.
 
 After validation, build and scan images:
 
@@ -308,9 +294,7 @@ To secure the software supply chain, use signing frameworks:
 * **\[in-toto]\[in-toto]** – End-to-end supply chain security
 * **\[Notary]\[notary]**, **\[TUF]\[tuf]**, **\[Sigstore]\[sigstore]**
 
-<Frame>
-  ![The image is a diagram illustrating a software development and distribution pipeline, featuring tools for build pipelines, app tests, container manifests, security tests, signing/trust, and container registry. It includes logos of various tools like Tekton, Jenkins, Trivy, and Dockerhub, organized under different stages from development to deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880718/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Automation-and-Tooling/software-development-distribution-pipeline-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating a software development and distribution pipeline, featuring tools for build pipelines, app tests, container manifests, security tests, signing/trust, and container registry. It includes logos of various tools like Tekton, Jenkins, Trivy, and Dockerhub, organized under different stages from development to deployment.](https://kodekloud.com/kk-media/image/upload/v1752880718/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Automation-and-Tooling/software-development-distribution-pipeline-diagram.jpg)
 
 ***
 
@@ -332,9 +316,7 @@ The **Deploy** phase covers pre-flight checks, observability, and incident respo
   * **\[Snort]\[snort]**
   * **\[Zeek]\[zeek]**
 
-<Frame>
-  ![The image illustrates a software development and deployment process, highlighting tools for pre-flight checks, observability, and response & investigation, with a dashboard showing incident response data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880719/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Automation-and-Tooling/software-development-deployment-process-dashboard.jpg)
-</Frame>
+![The image illustrates a software development and deployment process, highlighting tools for pre-flight checks, observability, and response & investigation, with a dashboard showing incident response data.](https://kodekloud.com/kk-media/image/upload/v1752880719/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Automation-and-Tooling/software-development-deployment-process-dashboard.jpg)
 
 ***
 
@@ -364,9 +346,7 @@ Once applications are live, enforce continuous security and reliability:
 * **Access Management**
   * **Keycloak**, **Teleport**, **HashiCorp Vault**
 
-<Frame>
-  ![The image is a categorized list of DevOps tools used for development, distribution, and deployment processes, including sections for build pipelines, security tests, observability, and more. Each category contains specific tools like Jenkins, Prometheus, and Istio.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880721/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Automation-and-Tooling/devops-tools-categorized-list-diagram.jpg)
-</Frame>
+![The image is a categorized list of DevOps tools used for development, distribution, and deployment processes, including sections for build pipelines, security tests, observability, and more. Each category contains specific tools like Jenkins, Prometheus, and Istio.](https://kodekloud.com/kk-media/image/upload/v1752880721/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Automation-and-Tooling/devops-tools-categorized-list-diagram.jpg)
 
 ***
 
@@ -413,6 +393,4 @@ Map these tools to your cloud-native lifecycle for improved security and efficie
 * GitHub Container Registry: [https://github.com/features/packages](https://github.com/features/packages)
 * Nexus Repository: [https://www.sonatype.com/product-nexus-repository](https://www.sonatype.com/product-nexus-repository)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/2d1969ad-ad49-4d47-93ca-493416c81c76/lesson/9157766e-1dc0-4d4e-8ffd-f4c384d5d2d5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/2d1969ad-ad49-4d47-93ca-493416c81c76/lesson/9157766e-1dc0-4d4e-8ffd-f4c384d5d2d5)

@@ -67,9 +67,7 @@ Design consumers to tolerate duplicate deliveries:
   <img alt="The image is a flowchart illustrating a photo processing system, showing steps from uploading photos via an app to resizing through a message queue system. It includes components like an app server, object storage, metadata, and a consumer for resizing photos." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Message queues typically expose visibility timeouts and acknowledgement semantics. Consumers should acknowledge/delete messages only after successfully finishing their work. Implement idempotency checks or persistent flags so re-delivered messages do not cause duplicate side effects.
-</Callout>
+> **lightbulb** Message queues typically expose visibility timeouts and acknowledgement semantics. Consumers should acknowledge/delete messages only after successfully finishing their work. Implement idempotency checks or persistent flags so re-delivered messages do not cause duplicate side effects.
 
 Minimal examples (illustrative pseudocode)
 

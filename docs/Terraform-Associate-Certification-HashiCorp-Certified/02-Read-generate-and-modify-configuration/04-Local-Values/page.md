@@ -63,9 +63,7 @@ resource "aws_instance" "db" {
 
 By referencing `local.common_tags`, both EC2 instances now share the same tag definitions, reducing redundancy and simplifying maintenance.
 
-<Callout icon="lightbulb">
-  Using local values not only enhances code readability but also minimizes typographical errors when managing multiple similar configurations.
-</Callout>
+> **lightbulb** Using local values not only enhances code readability but also minimizes typographical errors when managing multiple similar configurations.
 
 ## Creating an S3 Bucket with a Unique Name
 
@@ -114,9 +112,7 @@ aws_s3_bucket.finance_bucket: Creation complete after 0s [id=cerberus-dhiabk-buc
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```
 
-<Callout icon="lightbulb">
-  Using clear variable names and concise descriptions improves both code maintainability and search engine discoverability. Consider periodically reviewing your documentation to ensure it remains up-to-date with best practices.
-</Callout>
+> **lightbulb** Using clear variable names and concise descriptions improves both code maintainability and search engine discoverability. Consider periodically reviewing your documentation to ensure it remains up-to-date with best practices.
 
 ## Summary
 
@@ -130,8 +126,6 @@ By centralizing common attributes through local values, you maintain cleaner and
 
 For further reading on Terraform best practices and AWS resource management, explore the [Terraform Documentation](https://www.terraform.io/docs) and [AWS Provider Guides](https://registry.terraform.io/providers/hashicorp/aws/latest/docs).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/c59e52ed-8a8c-4a6c-8ad0-8dcc38c1598e/lesson/9be48c25-004e-4ef3-917f-65eab7cc32bd" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/c59e52ed-8a8c-4a6c-8ad0-8dcc38c1598e/lesson/9be48c25-004e-4ef3-917f-65eab7cc32bd)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/c59e52ed-8a8c-4a6c-8ad0-8dcc38c1598e/lesson/9ac3b0d9-672c-49e7-83e0-7960299fb0c6" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/c59e52ed-8a8c-4a6c-8ad0-8dcc38c1598e/lesson/9ac3b0d9-672c-49e7-83e0-7960299fb0c6)

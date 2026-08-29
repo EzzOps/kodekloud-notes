@@ -12,7 +12,7 @@ This article provides an in-depth look at how caching works in CloudFront by exa
 
 CloudFront's cache behavior determines which origin is used to retrieve various objects based on the incoming request's path. For example, you can configure requests sent to the `/images` path to be directed to one origin (such as an S3 bucket) while those sent to the `/app` path may be delivered from another origin (like an EC2 instance). This configuration allows you to customize the delivery path for different types of content within the same CloudFront distribution.
 
-![The image illustrates cache behavior in CloudFront, showing how requests are directed to different origins, such as an S3 bucket for images and an EC2 instance for applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858461/notes-assets/images/AWS-Certified-Developer-Associate-Cache-Key-Caching-Policies-Cache-Behavior/cloudfront-cache-behavior-diagram.jpg)
+![The image illustrates cache behavior in CloudFront, showing how requests are directed to different origins, such as an S3 bucket for images and an EC2 instance for applications.](https://kodekloud.com/kk-media/image/upload/v1752858461/notes-assets/images/AWS-Certified-Developer-Associate-Cache-Key-Caching-Policies-Cache-Behavior/cloudfront-cache-behavior-diagram.jpg)
 
 ***
 
@@ -26,7 +26,7 @@ When a user makes a request to CloudFront, the following steps occur:
    * If there is a cache hit, CloudFront returns the stored object immediately.
    * If there is a cache miss, CloudFront forwards the request to the origin, retrieves the object, caches it for future requests, and returns it to the user.
 
-![The image is a flowchart illustrating the CloudFront caching process, showing the steps from a user request to edge location, cache key generation, cache check (hit or miss), and retrieval from cache or origin.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858463/notes-assets/images/AWS-Certified-Developer-Associate-Cache-Key-Caching-Policies-Cache-Behavior/cloudfront-caching-flowchart.jpg)
+![The image is a flowchart illustrating the CloudFront caching process, showing the steps from a user request to edge location, cache key generation, cache check (hit or miss), and retrieval from cache or origin.](https://kodekloud.com/kk-media/image/upload/v1752858463/notes-assets/images/AWS-Certified-Developer-Associate-Cache-Key-Caching-Policies-Cache-Behavior/cloudfront-caching-flowchart.jpg)
 
 > **lightbulb** Understanding the cache key generation process is critical for optimizing your caching strategy and reducing origin load.
 
@@ -51,7 +51,7 @@ Compression: True
 
 In this example, apart from the URI, CloudFront can include the query parameters (`?resolution=1080p`), headers, or cookies as part of the cache key. The cache policy (discussed in the next section) defines which components are used to construct the cache key as well as the Time To Live (TTL) for cached objects.
 
-![The image illustrates the process of CloudFront cache keys, showing how users access a webpage, with a cache key based on the hostname and resource. If the content is not in the cache, it retrieves it from a storage bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858464/notes-assets/images/AWS-Certified-Developer-Associate-Cache-Key-Caching-Policies-Cache-Behavior/cloudfront-cache-keys-process.jpg)
+![The image illustrates the process of CloudFront cache keys, showing how users access a webpage, with a cache key based on the hostname and resource. If the content is not in the cache, it retrieves it from a storage bucket.](https://kodekloud.com/kk-media/image/upload/v1752858464/notes-assets/images/AWS-Certified-Developer-Associate-Cache-Key-Caching-Policies-Cache-Behavior/cloudfront-cache-keys-process.jpg)
 
 ***
 
@@ -77,7 +77,7 @@ Host: www.carparts.com
 
 Since the query parameter differs (`type=wheel` versus `type=motor`), CloudFront will generate a unique cache key for this request. Without a matching cache entry, the request is forwarded to the origin, the new object is cached, and then returned to the user.
 
-![The image illustrates a cache policy for a web request to "www.carparts.com" using CloudFront Distribution, showing the flow from the user to a custom HTTP backend and detailing cache keys based on hostname, resource, and query type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858466/notes-assets/images/AWS-Certified-Developer-Associate-Cache-Key-Caching-Policies-Cache-Behavior/cache-policy-cloudfront-carparts.jpg)
+![The image illustrates a cache policy for a web request to "www.carparts.com" using CloudFront Distribution, showing the flow from the user to a custom HTTP backend and detailing cache keys based on hostname, resource, and query type.](https://kodekloud.com/kk-media/image/upload/v1752858466/notes-assets/images/AWS-Certified-Developer-Associate-Cache-Key-Caching-Policies-Cache-Behavior/cache-policy-cloudfront-carparts.jpg)
 
 > **lightbulb** When designing cache policies, ensure you include only the necessary request components to maximize cache hit ratios while avoiding redundant duplicates.
 
@@ -89,7 +89,7 @@ In the event of a cache miss, CloudFront sends an origin request which includes 
 
 The solution is to define an origin request policy. This policy specifies additional headers, cookies, or query strings to be forwarded to the origin server without impacting the cache key. AWS offers several pre-configured managed policies that cover common scenarios, or you can customize a policy to fit your requirements.
 
-![The image illustrates an "Origin Request Policy" flow, showing a user accessing an S3 bucket through CloudFront Distribution, with details on cache policy including hostname, resource, and query type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858467/notes-assets/images/AWS-Certified-Developer-Associate-Cache-Key-Caching-Policies-Cache-Behavior/origin-request-policy-flow-cloudfront.jpg)
+![The image illustrates an "Origin Request Policy" flow, showing a user accessing an S3 bucket through CloudFront Distribution, with details on cache policy including hostname, resource, and query type.](https://kodekloud.com/kk-media/image/upload/v1752858467/notes-assets/images/AWS-Certified-Developer-Associate-Cache-Key-Caching-Policies-Cache-Behavior/origin-request-policy-flow-cloudfront.jpg)
 
 > **lightbulb** Using origin request policies allows you to optimize your caching strategy while passing critical headers or cookies to your origin server for customized responses.
 
@@ -106,7 +106,7 @@ Below is a table that encapsulates the key aspects of CloudFront caching:
 | Cache Policy          | Configures which request components form the cache key and specifies the TTL for cached objects. | Hostname, resource path, query string (as needed)                             |
 | Origin Request Policy | Specifies additional request details to forward to the origin without altering the cache key.    | Extra headers, cookies, or query strings not included in the caching criteria |
 
-![The image is a summary slide outlining key points about CloudFront caching, including cache behavior, cache keys, cache policies, and origin request policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858468/notes-assets/images/AWS-Certified-Developer-Associate-Cache-Key-Caching-Policies-Cache-Behavior/cloudfront-caching-summary-slide.jpg)
+![The image is a summary slide outlining key points about CloudFront caching, including cache behavior, cache keys, cache policies, and origin request policies.](https://kodekloud.com/kk-media/image/upload/v1752858468/notes-assets/images/AWS-Certified-Developer-Associate-Cache-Key-Caching-Policies-Cache-Behavior/cloudfront-caching-summary-slide.jpg)
 
 By carefully configuring these policies, you can improve cache hit ratios, enhance content delivery performance, and ensure your origin server receives the necessary data when required. This not only optimizes resource utilization but also enhances end-user experience by reducing latency.
 

@@ -44,9 +44,7 @@ After running the BentoML service command and refreshing the service endpoint, b
 
 Below, the following diagram shows the BentoML Prediction Service’s web interface. It displays the available API endpoints for house price prediction and provides additional information on infrastructure observability:
 
-<Frame>
-  ![The image shows a web interface for a BentoML Prediction Service, displaying API endpoints for house price prediction and infrastructure observability. It includes sections for service APIs, infrastructure endpoints, and schemas.](../../../../images/kodekloud.com/kk-media/image/upload/v1752875135/notes-assets/images/Fundamentals-of-MLOps-Demo-Upgrading-Model-Versions-with-BentoML-Serving/bentoml-prediction-service-api-endpoints.jpg)
-</Frame>
+![The image shows a web interface for a BentoML Prediction Service, displaying API endpoints for house price prediction and infrastructure observability. It includes sections for service APIs, infrastructure endpoints, and schemas.](https://kodekloud.com/kk-media/image/upload/v1752875135/notes-assets/images/Fundamentals-of-MLOps-Demo-Upgrading-Model-Versions-with-BentoML-Serving/bentoml-prediction-service-api-endpoints.jpg)
 
 ## Testing the API Endpoints
 
@@ -87,9 +85,7 @@ predicted_price_v1: 366794.6602055242
 predicted_price_v2: 367670.9746143092
 ```
 
-<Callout icon="lightbulb">
-  Managing both endpoints within a single service simplifies the transition and allows controlled traffic routing. In the future, depending on your production needs and traffic patterns, you may consider separating these endpoints into different services.
-</Callout>
+> **lightbulb** Managing both endpoints within a single service simplifies the transition and allows controlled traffic routing. In the future, depending on your production needs and traffic patterns, you may consider separating these endpoints into different services.
 
 ## Additional Context: Extended Model Input Schema
 
@@ -165,11 +161,9 @@ curl -X POST "http://127.0.0.1:3000/predict_house_price_v1" \
     -d '{"square_footage": 2500, "num_rooms": 5}'
 ```
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/fundamentals-of-mlops/module/2bd484e3-8ec0-4fe4-8dd9-0f7f92e52970/lesson/1fe0d1ad-057b-4a58-8e5a-cf42989c11d3" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/fundamentals-of-mlops/module/2bd484e3-8ec0-4fe4-8dd9-0f7f92e52970/lesson/1fe0d1ad-057b-4a58-8e5a-cf42989c11d3)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/fundamentals-of-mlops/module/2bd484e3-8ec0-4fe4-8dd9-0f7f92e52970/lesson/d76264e2-e5d0-4e0c-8d30-a70707537723" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/fundamentals-of-mlops/module/2bd484e3-8ec0-4fe4-8dd9-0f7f92e52970/lesson/d76264e2-e5d0-4e0c-8d30-a70707537723)
 
 
 # Model Deployment and Serving
@@ -186,9 +180,7 @@ For example, if you are working on a TensorFlow-based computer vision model that
 
 BentoML has become a favorite among organizations because deploying models with BentoML Serving is very similar to deploying any microservice.
 
-<Frame>
-  ![The image lists three model serving tools: TensorFlow Serving for computer vision models, Torch Serve for PyTorch NLP models, and BentoML for framework-agnostic solutions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752875136/notes-assets/images/Fundamentals-of-MLOps-Model-Deployment-and-Serving/model-serving-tools-tensorflow-torch-bentoml.jpg)
-</Frame>
+![The image lists three model serving tools: TensorFlow Serving for computer vision models, Torch Serve for PyTorch NLP models, and BentoML for framework-agnostic solutions.](https://kodekloud.com/kk-media/image/upload/v1752875136/notes-assets/images/Fundamentals-of-MLOps-Model-Deployment-and-Serving/model-serving-tools-tensorflow-torch-bentoml.jpg)
 
 Let's dive into the key characteristics that make these frameworks essential for production-grade machine learning deployments.
 
@@ -208,9 +200,7 @@ Performance is critical in production settings. These tools are optimized for fa
 
 Integration with DevOps and MLOps tools is smooth and efficient. You can integrate TorchServe with AWS SageMaker or Kubernetes to automate deployments, ensuring that machine learning models are updated and scaled to meet enterprise requirements.
 
-<Frame>
-  ![The image is an infographic titled "Model Serving Tools," highlighting four key features: Purpose, Flexibility, Performance, and Integration, each with a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752875138/notes-assets/images/Fundamentals-of-MLOps-Model-Deployment-and-Serving/model-serving-tools-infographic.jpg)
-</Frame>
+![The image is an infographic titled "Model Serving Tools," highlighting four key features: Purpose, Flexibility, Performance, and Integration, each with a brief description.](https://kodekloud.com/kk-media/image/upload/v1752875138/notes-assets/images/Fundamentals-of-MLOps-Model-Deployment-and-Serving/model-serving-tools-infographic.jpg)
 
 ## Advanced Capabilities
 
@@ -220,9 +210,7 @@ Production environments often require more than just scalability and speed. Here
 * **Monitoring:** Maintain high performance by tracking key metrics such as inference time, throughput, and model accuracy drift. Integrate with monitoring tools like Prometheus to stay on top of performance changes.
 * **Scalability:** Efficiently manage high-throughput requests. TensorFlow Serving can automatically scale to manage hundreds or even thousands of requests per second through load balancing and replica management.
 
-<Callout icon="lightbulb">
-  Remember that each framework has its strengths. Your choice should align with your project’s specific requirements and deployment environment.
-</Callout>
+> **lightbulb** Remember that each framework has its strengths. Your choice should align with your project’s specific requirements and deployment environment.
 
 ## Deployment Example: Inventory Prediction Dashboard
 
@@ -232,16 +220,10 @@ When a prediction is required, the front-end namespace makes an API call to the 
 
 This architecture mirrors common microservice deployments and traditional DevOps processes, with the primary difference being the deployment of an ML model rather than a conventional application.
 
-<Frame>
-  ![The image illustrates a "Simple Model Serving Architecture" showing a flow from a warehouse operator to a dashboard, then through frontend and ML serving namespaces, connected to a CI/CD system and a machine learning model.](../../../../images/kodekloud.com/kk-media/image/upload/v1752875139/notes-assets/images/Fundamentals-of-MLOps-Model-Deployment-and-Serving/simple-model-serving-architecture.jpg)
-</Frame>
+![The image illustrates a "Simple Model Serving Architecture" showing a flow from a warehouse operator to a dashboard, then through frontend and ML serving namespaces, connected to a CI/CD system and a machine learning model.](https://kodekloud.com/kk-media/image/upload/v1752875139/notes-assets/images/Fundamentals-of-MLOps-Model-Deployment-and-Serving/simple-model-serving-architecture.jpg)
 
-<Callout icon="lightbulb">
-  In the next lesson, we will deploy an ML serving layer using BentoML. Stay tuned to continue your journey into production-grade ML deployments.
-</Callout>
+> **lightbulb** In the next lesson, we will deploy an ML serving layer using BentoML. Stay tuned to continue your journey into production-grade ML deployments.
 
 Thank you for reading, and see you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/fundamentals-of-mlops/module/2bd484e3-8ec0-4fe4-8dd9-0f7f92e52970/lesson/5d5f9d15-8382-4dec-ba25-e018c24df5ef" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/fundamentals-of-mlops/module/2bd484e3-8ec0-4fe4-8dd9-0f7f92e52970/lesson/5d5f9d15-8382-4dec-ba25-e018c24df5ef)

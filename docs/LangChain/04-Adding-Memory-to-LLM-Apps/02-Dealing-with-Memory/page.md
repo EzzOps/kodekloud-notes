@@ -19,9 +19,7 @@ This pattern can be adapted for vector stores: instead of saving raw text only, 
 
 Security, privacy, and retention
 
-<Callout icon="warning">
-  Be mindful of privacy and compliance when persisting conversation data. Mask or redact sensitive information, enforce retention policies, and secure access to your storage backend.
-</Callout>
+> **warning** Be mindful of privacy and compliance when persisting conversation data. Mask or redact sensitive information, enforce retention policies, and secure access to your storage backend.
 
 Putting it together
 
@@ -36,9 +34,7 @@ Further reading and references
 * [SQLite](https://www.sqlite.org/)
 * Vector store and embedding solutions (Faiss, Milvus, Pinecone, Weaviate)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/abd1e527-3f6e-4e04-b421-3b1f8de5c69d/lesson/e48e21f4-e63a-4cc1-83b3-5f4d6c5582c3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/abd1e527-3f6e-4e04-b421-3b1f8de5c69d/lesson/e48e21f4-e63a-4cc1-83b3-5f4d6c5582c3)
 
 
 # Dealing with Memory

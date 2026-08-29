@@ -115,9 +115,7 @@ Examples:
 * `http.method` — standard attribute for the HTTP method.
 * `db.system` — identifies the database type (for example, `mysql`, `postgresql`), not the database name.
 
-<Callout icon="lightbulb">
-  Semantic conventions are the reason instrumentation libraries across languages can reliably set and query attributes without name collisions or ambiguity.
-</Callout>
+> **lightbulb** Semantic conventions are the reason instrumentation libraries across languages can reliably set and query attributes without name collisions or ambiguity.
 
 <Frame>
   <img alt="The image explains consistent attributes with semantic conventions defined in YAML 1.2, featuring examples like &#x22;http.method&#x22; used in HTTP spans, metrics, and logs, and &#x22;db.system&#x22; identifying database types such as MySQL and PostgreSQL." />
@@ -154,9 +152,7 @@ Each spec component is versioned to indicate its stability and compatibility gua
   <img alt="The image illustrates &#x22;Spec Versioning and Stability&#x22; with tags indicating statuses: &#x22;Stable,&#x22; &#x22;Experimental,&#x22; and &#x22;Deprecated,&#x22; highlighting their reliability for production and likelihood of changes. It emphasizes that specification stability ensures long-term compatibility." />
 </Frame>
 
-<Callout icon="warning">
-  Do not rely on experimental components for critical production paths—experimental APIs or behaviors can change and may require rework.
-</Callout>
+> **warning** Do not rely on experimental components for critical production paths—experimental APIs or behaviors can change and may require rework.
 
 Summary
 
@@ -175,6 +171,4 @@ Links and references
 
 Study these resources and focus on stable spec components for production readiness and exam preparation.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/a7472e8e-99c8-4498-9542-970b44d258bb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/a7472e8e-99c8-4498-9542-970b44d258bb)

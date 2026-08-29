@@ -31,9 +31,7 @@ Created symlink /etc/systemd/system/sysstat.service.wants/sysstat-collect.timer 
 
 iostat, short for input/output statistics, monitors data being written to or read from a storage device. In contrast, pidstat shows statistics for process IDs (PID) interacting with the storage subsystem. Every process in Linux has a unique identifier, and pidstat helps you understand which processes create heavy I/O loads.
 
-<Frame>
-  ![The image is an infographic about storage monitoring, showing how the sysstat package, including iostat and pidstat, is used to gather I/O and process ID statistics from read/write operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881363/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Monitor-Storage-Performance/storage-monitoring-sysstat-infographic.jpg)
-</Frame>
+![The image is an infographic about storage monitoring, showing how the sysstat package, including iostat and pidstat, is used to gather I/O and process ID statistics from read/write operations.](https://kodekloud.com/kk-media/image/upload/v1752881363/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Monitor-Storage-Performance/storage-monitoring-sysstat-infographic.jpg)
 
 Below, we begin by running iostat without any arguments. This command produces a summary of storage device usage since boot:
 
@@ -71,9 +69,7 @@ loop3      2.46   90.73    0.00    0.00      45097     0    0
 vda      155.28 535.50   600.66   0.00      265686 298016  0
 ```
 
-<Frame>
-  ![The image explains how the iostat command calculates the average kilobytes per second read over three seconds, resulting in 100 kilobytes per second.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881364/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Monitor-Storage-Performance/iostat-average-kilobytes-per-second.jpg)
-</Frame>
+![The image explains how the iostat command calculates the average kilobytes per second read over three seconds, resulting in 100 kilobytes per second.](https://kodekloud.com/kk-media/image/upload/v1752881364/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Monitor-Storage-Performance/iostat-average-kilobytes-per-second.jpg)
 
 In practical terms, a process that writes 1 kB repeatedly in rapid succession can cause high TPS values even if the individual write size is small. Conversely, operations involving large data transfers are more apparent when you review the cumulative values in kB\_read and kB\_wrtn.
 
@@ -102,9 +98,7 @@ Even a seemingly small write (such as 1 kB) may be reported as a larger block, p
 
 For example, if a device capable of 2 GB/s is nearly saturated by one process, other processes may experience significant delays. Both iostat and pidstat are essential in identifying and diagnosing these issues.
 
-<Callout icon="lightbulb">
-  For quick diagnostics, consider running iostat with a delay parameter (e.g., 1 second) to refresh the output and capture current activity.
-</Callout>
+> **lightbulb** For quick diagnostics, consider running iostat with a delay parameter (e.g., 1 second) to refresh the output and capture current activity.
 
 ## Creating a Storage Load Scenario
 
@@ -212,9 +206,7 @@ Press Ctrl+C to exit. A sample repeated output might look like:
 Average:   UID     1000    PID     1411     kB_rd/s  kB_wr/s  kB_ccwr/s  iodelay  Command
 ```
 
-<Callout icon="lightbulb">
-  Both dm-0 and /dev/sda show significant write activity in the iostat output, and the dd process (PID 1411) is the main contributor based on pidstat.
-</Callout>
+> **lightbulb** Both dm-0 and /dev/sda show significant write activity in the iostat output, and the dd process (PID 1411) is the main contributor based on pidstat.
 
 ## Understanding Device Mapper (dm-0)
 
@@ -305,9 +297,7 @@ If the process does not terminate gracefully, you may force termination with the
 kill -9 1411
 ```
 
-<Callout icon="triangle-alert">
-  Using SIGKILL (kill -9) stops a process immediately without allowing it to perform any cleanup. Use this option only as a last resort.
-</Callout>
+> **triangle-alert** Using SIGKILL (kill -9) stops a process immediately without allowing it to perform any cleanup. Use this option only as a last resort.
 
 ## Additional Command-Line Options
 
@@ -389,6 +379,4 @@ This lesson demonstrated the techniques to monitor storage performance, diagnose
 
 Now that you have learned these valuable monitoring techniques, let's move on to our next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/9ba247d2-68fd-4b85-aacc-c98d0dd1a6db" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/9ba247d2-68fd-4b85-aacc-c98d0dd1a6db)

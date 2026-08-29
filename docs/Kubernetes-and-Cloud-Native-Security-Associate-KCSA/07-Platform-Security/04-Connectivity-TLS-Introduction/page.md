@@ -18,9 +18,7 @@ ssh -i ~/.ssh/id_rsa user1@server1
 
 To grant access on multiple servers, copy your public key to each server’s `authorized_keys`. To onboard other users, they generate their own key pairs and provide you with their `.pub` file.
 
-<Callout icon="lightbulb">
-  Keep your private key (`id_rsa`) out of version control and never share it. If compromised, revoke and generate a new key pair.
-</Callout>
+> **lightbulb** Keep your private key (`id_rsa`) out of version control and never share it. If compromised, revoke and generate a new key pair.
 
 ## HTTPS Key Exchange Process
 
@@ -70,9 +68,7 @@ openssl req -new -key my-bank.key -out my-bank.csr \
 # my-bank.csr → send to CA for signing
 ```
 
-<Frame>
-  ![The image illustrates the process of obtaining a digital certificate from a Certificate Authority (CA), featuring logos of various CAs and a sample certificate for "MY-BANK.COM." It includes steps like Certificate Signing Request (CSR), information validation, and certificate signing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880880/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Connectivity-TLS-Basics/digital-certificate-process-ca-logos.jpg)
-</Frame>
+![The image illustrates the process of obtaining a digital certificate from a Certificate Authority (CA), featuring logos of various CAs and a sample certificate for "MY-BANK.COM." It includes steps like Certificate Signing Request (CSR), information validation, and certificate signing.](https://kodekloud.com/kk-media/image/upload/v1752880880/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Connectivity-TLS-Basics/digital-certificate-process-ca-logos.jpg)
 
 ## Browser Trust Chain
 
@@ -82,13 +78,9 @@ Browsers ship with a root store of trusted CA public keys. When presented with y
 2. Confirms the certificate’s validity period and domain match.
 3. Establishes a secure HTTPS session.
 
-<Frame>
-  ![The image shows a concept of online banking security with a browser displaying a secure website and a digital certificate issued to "my-bank.com" by a certificate authority.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880881/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Connectivity-TLS-Basics/online-banking-security-digital-certificate.jpg)
-</Frame>
+![The image shows a concept of online banking security with a browser displaying a secure website and a digital certificate issued to "my-bank.com" by a certificate authority.](https://kodekloud.com/kk-media/image/upload/v1752880881/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Connectivity-TLS-Basics/online-banking-security-digital-certificate.jpg)
 
-<Callout icon="lightbulb">
-  For internal applications, consider deploying your own private CA and distributing its root certificate to employee devices.
-</Callout>
+> **lightbulb** For internal applications, consider deploying your own private CA and distributing its root certificate to employee devices.
 
 ## Summary
 
@@ -124,9 +116,7 @@ Always secure private keys and limit their filesystem permissions.
 * [GlobalSign](https://www.globalsign.com/)
 * [Kubernetes Security](https://kubernetes.io/docs/concepts/security/overview/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/dee32061-d4e1-4fc8-ba3b-c3630f294225" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/dee32061-d4e1-4fc8-ba3b-c3630f294225)
 
 
 # Connectivity TLS Introduction
@@ -139,15 +129,11 @@ Securing communication in a Kubernetes cluster hinges on a solid understanding o
 
 In a recent poll, many participants indicated limited experience with TLS certificates. To address this gap, this lesson series covers both general TLS fundamentals and Kubernetes-specific implementations.
 
-<Callout icon="lightbulb">
-  This section starts with the basics of public key cryptography and certificate lifecycles. If you’re already familiar with these topics, you can skip ahead to the [Kubernetes-Specific Topics](#kubernetes-specific-topics) further below.
-</Callout>
+> **lightbulb** This section starts with the basics of public key cryptography and certificate lifecycles. If you’re already familiar with these topics, you can skip ahead to the [Kubernetes-Specific Topics](#kubernetes-specific-topics) further below.
 
 ## Goals for TLS Certificate Mastery
 
-<Frame>
-  ![The image is a slide titled "Goals!" listing objectives related to TLS certificates, including understanding, generating, configuring, viewing, and troubleshooting them in the context of Kubernetes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880882/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Connectivity-TLS-Introduction/tls-certificates-goals-kubernetes.jpg)
-</Frame>
+![The image is a slide titled "Goals!" listing objectives related to TLS certificates, including understanding, generating, configuring, viewing, and troubleshooting them in the context of Kubernetes.](https://kodekloud.com/kk-media/image/upload/v1752880882/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Connectivity-TLS-Introduction/tls-certificates-goals-kubernetes.jpg)
 
 By the end of this module, you will be able to:
 
@@ -160,9 +146,7 @@ By the end of this module, you will be able to:
 
 ## Prerequisites: Core TLS Concepts
 
-<Frame>
-  ![The image is an orange slide with the text "TLS Certificates (Pre-Req)" and an icon of a certificate.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880883/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Connectivity-TLS-Introduction/tls-certificates-pre-req-slide.jpg)
-</Frame>
+![The image is an orange slide with the text "TLS Certificates (Pre-Req)" and an icon of a certificate.](https://kodekloud.com/kk-media/image/upload/v1752880883/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Connectivity-TLS-Introduction/tls-certificates-pre-req-slide.jpg)
 
 Before diving into Kubernetes integrations, make sure you understand:
 
@@ -170,9 +154,7 @@ Before diving into Kubernetes integrations, make sure you understand:
 * **Certificate Authorities (CAs)**: Root vs. intermediate CAs, trust stores, and signing processes.
 * **Certificate Lifecycle**: Creation (CSR), issuance, renewal, and revocation.
 
-<Callout icon="triangle-alert">
-  Ensure that `openssl` (version 1.1 or higher) is installed on your system. Certificate operations in this course rely on OpenSSL commands.
-</Callout>
+> **triangle-alert** Ensure that `openssl` (version 1.1 or higher) is installed on your system. Certificate operations in this course rely on OpenSSL commands.
 
 ## Kubernetes-Specific Topics
 
@@ -190,6 +172,4 @@ Once you’ve reviewed the TLS fundamentals above, the following Kubernetes-focu
 * [OpenSSL Documentation](https://www.openssl.org/docs/)
 * [Cert-Manager](https://cert-manager.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/d37ea1ed-8ec2-4c84-8a49-86cabb952cf0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/d37ea1ed-8ec2-4c84-8a49-86cabb952cf0)

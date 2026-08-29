@@ -10,7 +10,7 @@ Amazon Augmented AI (A2I) is an AWS service that integrates human reviewers into
 
 Below is a flowchart illustrating the augmented AI process. The diagram shows how input data is analyzed by an AI/ML model and, based on the prediction's confidence level, either accepted automatically as high-confidence output or forwarded for human review when needed:
 
-![The image is a flowchart illustrating an Augmented AI process where input data is analyzed by an AI or ML model, leading to either high-confidence predictions or low-confidence cases that require human review.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865016/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Augmented-AI/augmented-ai-process-flowchart.jpg)
+![The image is a flowchart illustrating an Augmented AI process where input data is analyzed by an AI or ML model, leading to either high-confidence predictions or low-confidence cases that require human review.](https://kodekloud.com/kk-media/image/upload/v1752865016/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Augmented-AI/augmented-ai-process-flowchart.jpg)
 
 > **lightbulb** Augmented AI allows you to designate specific low-confidence data for human review, ensuring that each critical decision—like verifying if an image indeed contains a dog—is confirmed by a subject matter expert.
 
@@ -29,11 +29,11 @@ The image below highlights five key features of augmented AI:
 * Continuous learning and improvement
 * Seamless scaling
 
-![The image lists five features: easy integration with ML services, built-in human review workflows, access to human reviewers, continuous learning and improvement, and seamless scaling.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865018/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Augmented-AI/ml-services-integration-features.jpg)
+![The image lists five features: easy integration with ML services, built-in human review workflows, access to human reviewers, continuous learning and improvement, and seamless scaling.](https://kodekloud.com/kk-media/image/upload/v1752865018/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Augmented-AI/ml-services-integration-features.jpg)
 
 In use cases like language translation where nuance is paramount, a translation service may sometimes generate low-confidence outputs. Human review in these instances ensures the translations are both nuanced and correct. Both reviewed outputs and automatically accepted high-confidence results can be stored in [Amazon S3](https://aws.amazon.com/s3/) for later use. The following flowchart demonstrates this process: input data is translated using [Amazon Translate](https://aws.amazon.com/translate/); low-confidence translations are sent for human review, while high-confidence outputs are directly stored in Amazon S3.
 
-![The image is a flowchart illustrating a process involving input data being translated by Amazon Translate, with low-confidence translations reviewed by humans, and high-confidence translations stored in Amazon S3.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865019/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Augmented-AI/amazon-translate-flowchart-process.jpg)
+![The image is a flowchart illustrating a process involving input data being translated by Amazon Translate, with low-confidence translations reviewed by humans, and high-confidence translations stored in Amazon S3.](https://kodekloud.com/kk-media/image/upload/v1752865019/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Augmented-AI/amazon-translate-flowchart-process.jpg)
 
 Additionally, when augmented AI identifies data that requires human validation, it can automatically dispatch review jobs to Mechanical Turk. Once the human experts verify the data, the results are reintegrated into the augmented AI process, maintaining high standards of accuracy throughout your workflow.
 

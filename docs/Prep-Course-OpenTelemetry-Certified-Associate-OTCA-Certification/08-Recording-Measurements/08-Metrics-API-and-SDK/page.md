@@ -48,9 +48,7 @@ Configuration — processors, exporters, views, aggregation rules, resource attr
   <img alt="The image is a flowchart depicting the responsibilities of creating instruments and not configuration, with elements such as &#x22;Instrument,&#x22; &#x22;Meter,&#x22; &#x22;Configuration,&#x22; and &#x22;MeterProvider,&#x22; along with arrows indicating relationships and ownership." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Using the global default MeterProvider is convenient for most applications. Create a custom MeterProvider only when you need separate configuration or isolation (for example, to separate business metrics from runtime or platform metrics).
-</Callout>
+> **lightbulb** Using the global default MeterProvider is convenient for most applications. Create a custom MeterProvider only when you need separate configuration or isolation (for example, to separate business metrics from runtime or platform metrics).
 
 ## MeterProvider in detail
 
@@ -178,6 +176,4 @@ That covers the Metrics API and SDK: how Meters and Instruments are structured, 
 * [OTLP Protocol](https://opentelemetry.io/docs/reference/specification/protocol/otlp/)
 * [OpenTelemetry Metrics SDK & API docs](https://opentelemetry.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/4666522a-059d-44c3-a197-35a49c72c511" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/4666522a-059d-44c3-a197-35a49c72c511)

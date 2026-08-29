@@ -8,9 +8,7 @@ In this lesson we cover how to read and configure the OpenTelemetry Collector's 
 
 By default the Collector writes internal logs to standard error (stderr) at the INFO level even if you do not configure `service.telemetry.logs`. These logs include startup/shutdown messages, pipeline readiness confirmations, component warnings, and metadata such as the Collector version and service instance ID.
 
-<Callout icon="lightbulb">
-  By default the Collector logs internal activity at INFO to standard error (`stderr`). This provides immediate visibility into startup and runtime behavior without adding any telemetry configuration.
-</Callout>
+> **lightbulb** By default the Collector logs internal activity at INFO to standard error (`stderr`). This provides immediate visibility into startup and runtime behavior without adding any telemetry configuration.
 
 ## Minimal configuration example
 

@@ -16,11 +16,11 @@ C:\Users\sanje\OneDrive\Documents\courses-sanjeev-desktop\aws-developer-associat
 
 During initialization, the CLI prompts a series of questions to configure your project. AWS offers several Quick Start templates, such as the simple Hello World example, data processing workflows, serverless APIs, DynamoDB integrations, and machine learning samples. For this demo, choose the simple "Hello World" template.
 
-![The image shows a Visual Studio Code interface with a terminal open, displaying a list of AWS Quick Start application templates to choose from. The templates include options like "Hello World Example," "Data processing," and "Machine Learning."](../../../../images/kodekloud.com/kk-media/image/upload/v1752859420/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Advanced-Demo/vscode-terminal-aws-templates.jpg)
+![The image shows a Visual Studio Code interface with a terminal open, displaying a list of AWS Quick Start application templates to choose from. The templates include options like "Hello World Example," "Data processing," and "Machine Learning."](https://kodekloud.com/kk-media/image/upload/v1752859420/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Advanced-Demo/vscode-terminal-aws-templates.jpg)
 
 Next, select your desired runtime. Even though Python is typically the default, this example uses Node.js (e.g., Node.js 20). Choose the zip package type and plain JavaScript.
 
-![The image shows a Visual Studio Code interface with a terminal open, displaying options for selecting runtimes, package types, and starter templates for a project setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859421/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Advanced-Demo/visual-studio-code-terminal-runtimes.jpg)
+![The image shows a Visual Studio Code interface with a terminal open, displaying options for selecting runtimes, package types, and starter templates for a project setup.](https://kodekloud.com/kk-media/image/upload/v1752859421/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Advanced-Demo/visual-studio-code-terminal-runtimes.jpg)
 
 The CLI then asks if you want to enable additional features such as X-Ray tracing or CloudWatch monitoring. For simplicity, answer "no" for these options and provide a project name, for example, "SAM API."
 
@@ -213,7 +213,7 @@ C:\Users\sanje\OneDrive\Documents\courses-sanjeev-desktop\aws-developer-associat
 
 Follow the interactive prompts to configure deployment parameters such as stack name, region, and IAM role confirmations. After deployment, CloudFormation creates the DynamoDB table, API Gateway, Lambda functions, and assigns the required permissions.
 
-![The image shows an AWS CloudFormation dashboard displaying details of a stack named "sam-api," including its status as "CREATE\_COMPLETE" and various metadata like stack ID and creation time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859422/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Advanced-Demo/aws-cloudformation-sam-api-dashboard.jpg)
+![The image shows an AWS CloudFormation dashboard displaying details of a stack named "sam-api," including its status as "CREATE\_COMPLETE" and various metadata like stack ID and creation time.](https://kodekloud.com/kk-media/image/upload/v1752859422/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Advanced-Demo/aws-cloudformation-sam-api-dashboard.jpg)
 
 Verify the deployed resources in your AWS Console:
 
@@ -221,11 +221,11 @@ Verify the deployed resources in your AWS Console:
 * **Lambda:** Confirm the createProduct Lambda function.
 * **API Gateway:** Ensure that the API properly triggers your Lambda functions.
 
-![The image shows an AWS Lambda console page displaying details of a function named "aws-sam-HelloWorld-EAYDQV69Ok4P," including options to add triggers and destinations, and a sidebar with a tutorial on creating a simple web app.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859424/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Advanced-Demo/aws-lambda-console-hello-world.jpg)
+![The image shows an AWS Lambda console page displaying details of a function named "aws-sam-HelloWorld-EAYDQV69Ok4P," including options to add triggers and destinations, and a sidebar with a tutorial on creating a simple web app.](https://kodekloud.com/kk-media/image/upload/v1752859424/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Advanced-Demo/aws-lambda-console-hello-world.jpg)
 
-![The image shows an AWS API Gateway interface with a resource named "/products" and a POST method. The right panel displays resource details and indicates no methods are defined.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859425/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Advanced-Demo/aws-api-gateway-products-post-method.jpg)
+![The image shows an AWS API Gateway interface with a resource named "/products" and a POST method. The right panel displays resource details and indicates no methods are defined.](https://kodekloud.com/kk-media/image/upload/v1752859425/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Advanced-Demo/aws-api-gateway-products-post-method.jpg)
 
-![The image shows the AWS API Gateway console, specifically the "Stages" section for an API named "sam-api," displaying details for the "Prod" stage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859426/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Advanced-Demo/aws-api-gateway-stages-sam-api-prod.jpg)
+![The image shows the AWS API Gateway console, specifically the "Stages" section for an API named "sam-api," displaying details for the "Prod" stage.](https://kodekloud.com/kk-media/image/upload/v1752859426/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Advanced-Demo/aws-api-gateway-stages-sam-api-prod.jpg)
 
 ## Testing the API
 

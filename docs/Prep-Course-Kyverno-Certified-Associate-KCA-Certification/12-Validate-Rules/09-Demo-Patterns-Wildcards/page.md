@@ -24,13 +24,9 @@ Key points:
 * `failureAction: Enforce` blocks resources that don't meet the policy.
 * `pattern.spec.replicas: ">=2"` lets Kyverno accept any numeric value >= 2 (no exact value required).
 
-<Callout icon="warning">
-  If you match on `replicas`, Kyverno may warn about the `scale` subresource not being included in the policy. This is informational only and doesn't change validation behavior, but add `subresources` to your `match` block if you also want to handle scale subresource requests.
-</Callout>
+> **warning** If you match on `replicas`, Kyverno may warn about the `scale` subresource not being included in the policy. This is informational only and doesn't change validation behavior, but add `subresources` to your `match` block if you also want to handle scale subresource requests.
 
-<Callout icon="lightbulb">
-  When using numeric operators in Kyverno `pattern` values, put the operator and the number in a string (for example `">=2"`). This enables comparison-style validation in patterns.
-</Callout>
+> **lightbulb** When using numeric operators in Kyverno `pattern` values, put the operator and the number in a string (for example `">=2"`). This enables comparison-style validation in patterns.
 
 Apply the policy:
 
@@ -175,11 +171,9 @@ These pattern operators let you express flexible, readable validation rules with
 * Kyverno Policy Examples: [https://kyverno.io/docs/writing-policies/](https://kyverno.io/docs/writing-policies/)
 * Kubernetes Concepts — Namespaces: [https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/642241f1-910d-47ff-92b7-ea67b08b5a93" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/642241f1-910d-47ff-92b7-ea67b08b5a93)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/5c3fecdf-d399-457b-a46d-90b977b212b2" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/5c3fecdf-d399-457b-a46d-90b977b212b2)
 
 
 # Demo Patterns Wildcards
@@ -244,13 +238,9 @@ Wildcard summary
 | `?`      | Matches exactly one character.                                                 |
 | `?*`     | Combined usage — requires at least one character (ensures a non-empty string). |
 
-<Callout icon="lightbulb">
-  In Kyverno patterns, using `?*` on a string field ensures the field is present and contains at least one character (examples: `100m`, `128Mi`). Use this when you need to validate presence without enforcing a specific value format.
-</Callout>
+> **lightbulb** In Kyverno patterns, using `?*` on a string field ensures the field is present and contains at least one character (examples: `100m`, `128Mi`). Use this when you need to validate presence without enforcing a specific value format.
 
-<Callout icon="warning">
-  This policy uses `validationFailureAction: enforce`, so requests that violate the rule are rejected by the admission webhook. During development, consider `validationFailureAction: audit` if you want to observe violations without blocking resources.
-</Callout>
+> **warning** This policy uses `validationFailureAction: enforce`, so requests that violate the rule are rejected by the admission webhook. During development, consider `validationFailureAction: audit` if you want to observe violations without blocking resources.
 
 Apply the policy
 

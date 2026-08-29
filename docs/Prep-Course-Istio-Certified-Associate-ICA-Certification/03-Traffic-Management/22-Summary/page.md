@@ -54,9 +54,7 @@ Links and References
 * [Istio Service Mesh course](https://learn.kodekloud.com/user/courses/istio-service-mesh) — contextual learning resources.
 * [Netflix Chaos Monkey](https://netflix.github.io/chaosmonkey/) — example of large-scale chaos engineering practices.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/7c3bd89f-cc7b-41d8-8265-25cfe0d44c4e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/7c3bd89f-cc7b-41d8-8265-25cfe0d44c4e)
 
 
 # Summary
@@ -75,9 +73,7 @@ This lesson reviewed the key Istio traffic-management concepts you need for the 
 * Use a `Sidecar` resource to restrict the set of outbound listeners and hosts for a workload. This hardens egress and reduces blast radius.
 * Use `PeerAuthentication` to control workload mTLS. Setting `mode: STRICT` enforces mutual TLS for workloads covered by the policy.
 
-<Callout icon="lightbulb">
-  `PeerAuthentication` has three modes (`DISABLE`, `PERMISSIVE`, `STRICT`). For strict mTLS enforcement, use `mode: STRICT`. Use a `Sidecar` resource when you need to limit which outbound hosts a workload can access.
-</Callout>
+> **lightbulb** `PeerAuthentication` has three modes (`DISABLE`, `PERMISSIVE`, `STRICT`). For strict mTLS enforcement, use `mode: STRICT`. Use a `Sidecar` resource when you need to limit which outbound hosts a workload can access.
 
 Example PeerAuthentication (enforce mTLS):
 
@@ -159,9 +155,7 @@ http:
 * Waypoint proxies centralize traffic capture for workloads and can integrate with Gateway API resources (e.g., `HTTPRoute`) for advanced routing and observability.
 * These capabilities are valuable for large meshes and progressive adoption patterns but are less likely to be a heavy focus on the certification beyond basic installation and labels.
 
-<Callout icon="warning">
-  If you use Ambient mode or waypoint proxies, ensure namespaces are labeled correctly and the waypoint proxy is installed where required. Missing labels or waypoint installation will break expected behavior.
-</Callout>
+> **warning** If you use Ambient mode or waypoint proxies, ensure namespaces are labeled correctly and the waypoint proxy is installed where required. Missing labels or waypoint installation will break expected behavior.
 
 ## Quick reference: Istio traffic-management objects
 
@@ -188,6 +182,4 @@ Further reading:
 
 Great job getting through the material. Take a break — you deserve it. I’ll see you in the next section where we’ll continue with the remaining topics.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/ec420b2a-4212-4fab-ba1d-2366edc80bb9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/ec420b2a-4212-4fab-ba1d-2366edc80bb9)

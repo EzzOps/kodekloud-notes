@@ -22,7 +22,7 @@ Microsoft Graph offers a robust set of APIs that allow you to build entirely new
 
 This flexibility not only streamlines workflows but also supports innovative use cases that leverage cloud computing, data analytics, and custom application development.
 
-![The image is an infographic about the Microsoft 365 Platform, highlighting how to extend and build experiences using Microsoft Graph, with connections to external data and the Azure AI platform.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866544/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Microsoft-Graph/microsoft-365-platform-infographic.jpg)
+![The image is an infographic about the Microsoft 365 Platform, highlighting how to extend and build experiences using Microsoft Graph, with connections to external data and the Azure AI platform.](https://kodekloud.com/kk-media/image/upload/v1752866544/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Microsoft-Graph/microsoft-365-platform-infographic.jpg)
 
 ## Integration and Connectivity
 

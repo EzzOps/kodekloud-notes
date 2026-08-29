@@ -33,15 +33,11 @@ PS C:\Users\RithinSkaria\Documents\kodekloud-az500> Get-Module Az.Account
 
 A Windows Security prompt will then appear to verify your credentials for RDP connectivity.
 
-<Frame>
-  ![The image shows a Windows Security prompt asking for credentials to connect to a specific IP address, overlaid on a code editor with a PowerShell script open.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881904/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/windows-security-prompt-powershell.jpg)
-</Frame>
+![The image shows a Windows Security prompt asking for credentials to connect to a specific IP address, overlaid on a code editor with a PowerShell script open.](https://kodekloud.com/kk-media/image/upload/v1752881904/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/windows-security-prompt-powershell.jpg)
 
 Once logged into the server, allow time for Server Manager to launch. Open "Active Directory Users and Computers" (found in Windows Administrative Tools) to view the domain users created by the script.
 
-<Frame>
-  ![The image shows a Windows Server Manager dashboard with the Start menu open, displaying various administrative tools and settings options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881905/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/windows-server-manager-dashboard.jpg)
-</Frame>
+![The image shows a Windows Server Manager dashboard with the Start menu open, displaying various administrative tools and settings options.](https://kodekloud.com/kk-media/image/upload/v1752881905/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/windows-server-manager-dashboard.jpg)
 
 ## Creating User Accounts with the "prep-users" Script
 
@@ -70,9 +66,7 @@ for ($i = 1; $i -le $Users; $i++) {
 
 After verifying the new users in Active Directory, return to the Azure portal and log into the client machine (e.g., "vc01") using its public IP address. Use the same credentials specified during VM creation.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying details of a virtual machine named "server-01," alongside a Remote Desktop Connection window with an IP address entered.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881906/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/azure-portal-server01-remote-desktop.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying details of a virtual machine named "server-01," alongside a Remote Desktop Connection window with an IP address entered.](https://kodekloud.com/kk-media/image/upload/v1752881906/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/azure-portal-server01-remote-desktop.jpg)
 
 ## Joining the Domain and Installing Azure AD Connect
 
@@ -99,9 +93,7 @@ Restart-Computer
 
 After the computer reboots, you should receive a welcome message for the "KodeKloud lab.local" domain. Verify the client machine appears in the Computers container via "Active Directory Users and Computers" on the domain controller.
 
-<Frame>
-  ![The image shows a Windows Server settings screen with a dialog box for changing the computer's domain, requiring a username and password for domain access. The system properties and Windows specifications are also visible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881908/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/windows-server-domain-settings-dialog.jpg)
-</Frame>
+![The image shows a Windows Server settings screen with a dialog box for changing the computer's domain, requiring a username and password for domain access. The system properties and Windows specifications are also visible.](https://kodekloud.com/kk-media/image/upload/v1752881908/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/windows-server-domain-settings-dialog.jpg)
 
 ### Installing Azure AD Connect
 
@@ -110,21 +102,15 @@ With the client machine now domain joined, proceed to install Azure AD Connect:
 1. Open Microsoft Edge and search for [Azure AD Connect download](https://www.microsoft.com/en-us/download/details.aspx?id=47594).
 2. Download the installer, launch it, and agree to the licensing terms.
 
-<Frame>
-  ![The image shows a Microsoft Azure AD Connect installation window with instructions and options for setting up identity synchronization. In the background, there's a webpage with a graphic indicating a transition from Internet Explorer to Microsoft Edge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881909/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/azure-ad-connect-installation-window.jpg)
-</Frame>
+![The image shows a Microsoft Azure AD Connect installation window with instructions and options for setting up identity synchronization. In the background, there's a webpage with a graphic indicating a transition from Internet Explorer to Microsoft Edge.](https://kodekloud.com/kk-media/image/upload/v1752881909/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/azure-ad-connect-installation-window.jpg)
 
 Choose the "Customize" option during installation. This allows you to review the components to be installed, such as a SQL Server Express instance (if you don’t already have one). For the sign-on methods, select Password Hash Synchronization (PHS) and enable Single Sign-On. Connect to Azure AD by entering the global administrator credentials for your tenant (note that lab environments might not grant global administrator privileges).
 
-<Frame>
-  ![The image shows a Microsoft Azure Active Directory Connect setup window prompting for Azure AD credentials, with a background webpage about downloading Azure AD Connect.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881910/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/azure-ad-connect-setup-window.jpg)
-</Frame>
+![The image shows a Microsoft Azure Active Directory Connect setup window prompting for Azure AD credentials, with a background webpage about downloading Azure AD Connect.](https://kodekloud.com/kk-media/image/upload/v1752881910/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/azure-ad-connect-setup-window.jpg)
 
 Next, configure the connection to your on-premises directory. Provide the custom domain name (e.g., "CloudCloudLab.local") and enter the corresponding enterprise admin credentials. After the directory schema is retrieved, the default setting for matching on-premises user principal names (UPNs) with Azure AD is applied.
 
-<Frame>
-  ![The image shows a Microsoft Azure AD Connect configuration window for Azure AD sign-in, with options for setting up UPN suffixes and user principal names. In the background, there's a webpage indicating that Internet Explorer 11 is no longer accessible, suggesting a transition to Microsoft Edge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881912/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/azure-ad-connect-configuration-window.jpg)
-</Frame>
+![The image shows a Microsoft Azure AD Connect configuration window for Azure AD sign-in, with options for setting up UPN suffixes and user principal names. In the background, there's a webpage indicating that Internet Explorer 11 is no longer accessible, suggesting a transition to Microsoft Edge.](https://kodekloud.com/kk-media/image/upload/v1752881912/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/azure-ad-connect-configuration-window.jpg)
 
 Optional filtering (e.g., synchronizing specific Organizational Units) is available, though the defaults suit most greenfield single OU environments. You can also enable features like password writeback for disaster recovery and verify that Single Sign-On is active by providing the relevant domain credentials.
 
@@ -134,21 +120,15 @@ Once the configuration checks are complete, the installation and initial synchro
 
 After installation, return to the Azure portal to confirm that on-premises users are synchronized. You can run a PowerShell script to filter and display only those accounts that have the "on-premises sync enabled" flag set to "Yes"—this will exclude the service account created during synchronization.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal displaying a list of users with details such as display name, user principal name, and user type. The interface includes options for managing users, such as adding filters and performing bulk operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881913/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/azure-portal-user-list-management.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal displaying a list of users with details such as display name, user principal name, and user type. The interface includes options for managing users, such as adding filters and performing bulk operations.](https://kodekloud.com/kk-media/image/upload/v1752881913/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/azure-portal-user-list-management.jpg)
 
 Keep in mind that the service account should not be modified or deleted. Additionally, you can monitor Azure AD Connect health metrics and sync errors from the Azure portal:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for AAD Connect, displaying settings and statuses for Azure AD Connect Sync, user sign-in options, and other related features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881915/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/azure-portal-aad-connect-settings.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for AAD Connect, displaying settings and statuses for Azure AD Connect Sync, user sign-in options, and other related features.](https://kodekloud.com/kk-media/image/upload/v1752881915/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/azure-portal-aad-connect-settings.jpg)
 
 If necessary, you can trigger an immediate synchronization using PowerShell instead of waiting for the default 30-minute interval. The Synchronization Service Manager provides detailed logs for each sync operation.
 
-<Frame>
-  ![The image shows a computer screen with a Microsoft Download Center webpage open, and a "Synchronization Service Manager" window displaying synchronization operations and their statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881916/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/microsoft-download-center-synchronization-manager.jpg)
-</Frame>
+![The image shows a computer screen with a Microsoft Download Center webpage open, and a "Synchronization Service Manager" window displaying synchronization operations and their statuses.](https://kodekloud.com/kk-media/image/upload/v1752881916/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/microsoft-download-center-synchronization-manager.jpg)
 
 ## Final Thoughts
 
@@ -156,9 +136,7 @@ In this guide, you learned how to deploy Azure AD Connect, join client machines 
 
 Feel free to ask questions in our community or try the lab yourself if you have your own tenant. Happy synchronizing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/ec3dd1c7-a3f1-4d9a-ae3c-59b398091a52/lesson/fb2477a1-eea8-4a8b-a4a8-33c0bc1feaab" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/ec3dd1c7-a3f1-4d9a-ae3c-59b398091a52/lesson/fb2477a1-eea8-4a8b-a4a8-33c0bc1feaab)
 
 
 # Configure Password Hash Synchronization PHS
@@ -193,13 +171,11 @@ PHS works by synchronizing user password hashes from your on-premises Active Dir
    * The combined value is processed using a PBKDF2 function with 1,000 iterations of HMAC SHA-256, resulting in a final SHA-256 hash.
    * This SHA-256 hash is then securely transmitted to Azure AD over TLS.
 
-<Callout icon="lightbulb">
-  * The MD4 hash from on-premises Active Directory is transformed into a SHA-256 hash stored in Azure AD.
+> **lightbulb** * The MD4 hash from on-premises Active Directory is transformed into a SHA-256 hash stored in Azure AD.
   * The distinct transformation means a pass-the-hash attack cannot leverage the Azure AD hash back on-premises.
   * Azure AD Connect never accesses the plaintext password.
   * The process incorporates 1,000 iterations of HMAC SHA-256 along with mechanisms like smart lockout and IP lockout for enhanced security.
   * Azure AD Identity Protection monitors credentials for exposure on malicious websites or the dark web.
-</Callout>
 
 ## Authentication Flow Using PHS
 
@@ -210,9 +186,7 @@ When a user sends an authentication request (for example, to access SharePoint O
 * The password entered is validated against the SHA-256 hash that was synchronized from the on-premises Active Directory.
 * If the hashed values match, the user gains access; otherwise, the sign-in attempt is denied.
 
-<Frame>
-  ![The image illustrates the process of configuring Password Hash Synchronization (PHS) between on-premises Active Directory and Azure Active Directory, detailing the steps and encryption methods involved. It shows the flow from Active Directory through Azure AD Connect to Azure AD, using MD4, MD5, SHA256, and RSA2048 encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881917/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Password-Hash-Synchronization-PHS/password-hash-synchronization-configuration.jpg)
-</Frame>
+![The image illustrates the process of configuring Password Hash Synchronization (PHS) between on-premises Active Directory and Azure Active Directory, detailing the steps and encryption methods involved. It shows the flow from Active Directory through Azure AD Connect to Azure AD, using MD4, MD5, SHA256, and RSA2048 encryption.](https://kodekloud.com/kk-media/image/upload/v1752881917/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Password-Hash-Synchronization-PHS/password-hash-synchronization-configuration.jpg)
 
 ## Advantages of Password Hash Synchronization
 
@@ -222,6 +196,4 @@ By handling the entire authentication process in the cloud, PHS simplifies the l
 
 For a deeper understanding, our next section will delve into Pass-Through Authentication (PTA), which employs a more complex process than PHS. Stay tuned to learn how PTA compares with Password Hash Synchronization and when it might be the appropriate choice for your environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/ec3dd1c7-a3f1-4d9a-ae3c-59b398091a52/lesson/bad76575-1b6d-494a-b334-cb7309e31f24" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/ec3dd1c7-a3f1-4d9a-ae3c-59b398091a52/lesson/bad76575-1b6d-494a-b334-cb7309e31f24)

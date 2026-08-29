@@ -10,9 +10,7 @@ We use bar charts for discrete data — values that take distinct steps, like co
   <img alt="The image compares bar charts representing discrete data with a curve representing continuous data, featuring a person standing beside them." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Continuous-variable probabilities are expressed as areas under the curve. For truly continuous variables the probability of any single exact value is effectively zero — we always compute probabilities over intervals (for example, 15–16°C).
-</Callout>
+> **lightbulb** Continuous-variable probabilities are expressed as areas under the curve. For truly continuous variables the probability of any single exact value is effectively zero — we always compute probabilities over intervals (for example, 15–16°C).
 
 What you usually see as a smooth, symmetric bell curve is the normal distribution (also called the Gaussian distribution). It models how many natural and social phenomena cluster around an average. Important properties:
 
@@ -82,9 +80,7 @@ The normal distribution is a compact, powerful model: the mean locates the centr
   <img alt="The image shows a slide on &#x22;Normal Distribution&#x22; with key points about mean, standard deviation, probability, and the 68-95-99.7 rule, alongside a person gesturing." />
 </Frame>
 
-<Callout icon="warning">
-  Not all data are perfectly normal. Always visualise your data (histograms, Q-Q plots) and run appropriate normality checks before assuming a normal model — many real-world datasets only approximate normality or are clearly non-normal.
-</Callout>
+> **warning** Not all data are perfectly normal. Always visualise your data (histograms, Q-Q plots) and run appropriate normality checks before assuming a normal model — many real-world datasets only approximate normality or are clearly non-normal.
 
 Links and further reading
 
@@ -93,6 +89,4 @@ Links and further reading
 * [Understanding the normal distribution and the 68-95-99.7 rule — Khan Academy](https://www.khanacademy.org/math/statistics-probability/modeling-distributions-of-data)
 * [Anomaly detection overview — Towards Data Science](https://towardsdatascience.com/anomaly-detection-techniques-in-python-50f650c75aaf)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/7badce97-9acb-48b8-9fb6-bd5ce7e09045/lesson/eee3103d-f1c3-40c2-b665-f8a56b30a0ad" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/7badce97-9acb-48b8-9fb6-bd5ce7e09045/lesson/eee3103d-f1c3-40c2-b665-f8a56b30a0ad)

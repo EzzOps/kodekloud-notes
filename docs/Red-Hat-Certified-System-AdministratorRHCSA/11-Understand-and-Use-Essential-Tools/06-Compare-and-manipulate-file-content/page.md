@@ -73,9 +73,7 @@ $ head -n 20 /var/log/dnf.log
 2021-10-19T00:54:07-0500 DDEBUG repo: downloading from remote: extras
 ```
 
-<Callout icon="lightbulb">
-  For files with warnings or error messages, consider piping the output to a pager like `less` to navigate the content easily.
-</Callout>
+> **lightbulb** For files with warnings or error messages, consider piping the output to a pager like `less` to navigate the content easily.
 
 ## Automating Text Manipulation with sed
 
@@ -98,9 +96,7 @@ After confirming the output, apply the changes in-place using the `-i` option:
 $ sed -i 's/canda/canada/g' userinfo.txt
 ```
 
-<Callout icon="triangle-alert">
-  Always preview changes before applying them with the `-i` option to avoid accidental modifications.
-</Callout>
+> **triangle-alert** Always preview changes before applying them with the `-i` option to avoid accidental modifications.
 
 ## Extracting Specific File Content
 
@@ -217,17 +213,13 @@ If you need to extract just the names (the first column) from "userinfo.txt", th
 $ cut -d ' ' -f 1 userinfo.txt
 ```
 
-<Frame>
-  ![The image shows a terminal interface with a command prompt on the left and a text file named "userinfo.txt" on the right, containing a list of names, cities, countries, and numbers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883616/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Compare-and-manipulate-file-content/terminal-command-prompt-userinfo-file.jpg)
-</Frame>
+![The image shows a terminal interface with a command prompt on the left and a text file named "userinfo.txt" on the right, containing a list of names, cities, countries, and numbers.](https://kodekloud.com/kk-media/image/upload/v1752883616/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Compare-and-manipulate-file-content/terminal-command-prompt-userinfo-file.jpg)
 
 ## Removing Duplicates and Sorting
 
 After extracting data, such as a list of countries, you might notice duplicates. Combining the `sort` and `uniq` commands will both sort the entries and remove duplicates, ensuring an ordered list.
 
-<Frame>
-  ![The image shows a terminal interface with a file named "countries.txt" containing a list of country names, including duplicates. The title "uniq and sort" suggests a task involving sorting and removing duplicates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883617/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Compare-and-manipulate-file-content/uniq-sort-countries-terminal.jpg)
-</Frame>
+![The image shows a terminal interface with a file named "countries.txt" containing a list of country names, including duplicates. The title "uniq and sort" suggests a task involving sorting and removing duplicates.](https://kodekloud.com/kk-media/image/upload/v1752883617/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Compare-and-manipulate-file-content/uniq-sort-countries-terminal.jpg)
 
 ## Conclusion
 
@@ -243,6 +235,4 @@ These tools are indispensable for system administration and everyday Linux opera
 
 Happy scripting!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/84d9254d-3be9-4ad3-b72c-e38347075176" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/84d9254d-3be9-4ad3-b72c-e38347075176)

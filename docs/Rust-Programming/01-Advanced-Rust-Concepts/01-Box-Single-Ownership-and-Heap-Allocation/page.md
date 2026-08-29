@@ -6,9 +6,7 @@ This article explores Rusts Box<T> smart pointer, focusing on heap memory manage
 
 In this lesson, we delve into Rust's smart pointers with a focus on one of the most fundamental types: Box\<T>. We will explore how Box\<T> functions within heap memory management, its role in Rust's ownership model, and the scenarios where employing Box\<T> is beneficial.
 
-<Frame>
-  ![The image shows an agenda with three points related to the Box\<T> smart pointer in Rust, focusing on exploration, heap memory management, and usage within Rust's ownership model.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883756/notes-assets/images/Rust-Programming-Box-Single-Ownership-and-Heap-Allocation/box-smart-pointer-agenda-rust.jpg)
-</Frame>
+![The image shows an agenda with three points related to the Box\<T> smart pointer in Rust, focusing on exploration, heap memory management, and usage within Rust's ownership model.](https://kodekloud.com/kk-media/image/upload/v1752883756/notes-assets/images/Rust-Programming-Box-Single-Ownership-and-Heap-Allocation/box-smart-pointer-agenda-rust.jpg)
 
 ## What is Box\<T>?
 
@@ -16,9 +14,7 @@ In Rust, a Box\<T> is a smart pointer used to allocate data on the heap rather t
 
 Using Box\<T> ensures that the data it points to has a single owner at any time. This enforcement helps prevent common memory management bugs such as memory leaks and dangling pointers, as the associated heap memory is freed when its owner goes out of scope.
 
-<Frame>
-  ![The image illustrates the concept of Box\\\<T> in programming, showing the separation of stack and heap memory, with a focus on single ownership to prevent memory leaks and dangling pointers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883757/notes-assets/images/Rust-Programming-Box-Single-Ownership-and-Heap-Allocation/box-t-memory-ownership-diagram.jpg)
-</Frame>
+![The image illustrates the concept of Box\\\<T> in programming, showing the separation of stack and heap memory, with a focus on single ownership to prevent memory leaks and dangling pointers.](https://kodekloud.com/kk-media/image/upload/v1752883757/notes-assets/images/Rust-Programming-Box-Single-Ownership-and-Heap-Allocation/box-t-memory-ownership-diagram.jpg)
 
 When you create a Box\<T>, Rust allocates memory on the heap to store the value, while the Box\<T> itself remains on the stack holding a pointer to that dynamically allocated memory.
 
@@ -41,17 +37,13 @@ Box\<T> offers several advantages:
 * **Recursive Data Structures:** Useful when dealing with recursive types, as Rust requires each type's size to be known at compile time.
 * **Single Ownership:** Ensures memory safety by enforcing a single owner policy, reducing risks like memory leaks.
 
-<Frame>
-  ![The image explains the benefits of using Box\\\<T> in programming, highlighting heap allocation for large data structures and enabling recursive data structures with unknown sizes at compile time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883758/notes-assets/images/Rust-Programming-Box-Single-Ownership-and-Heap-Allocation/box-t-benefits-heap-allocation.jpg)
-</Frame>
+![The image explains the benefits of using Box\\\<T> in programming, highlighting heap allocation for large data structures and enabling recursive data structures with unknown sizes at compile time.](https://kodekloud.com/kk-media/image/upload/v1752883758/notes-assets/images/Rust-Programming-Box-Single-Ownership-and-Heap-Allocation/box-t-benefits-heap-allocation.jpg)
 
 ## Recursive Data Structures and Box\<T>
 
 When implementing recursive data structures like linked lists, direct self-references are problematic because the compiler must know the size of the type. Box\<T> solves this by providing a layer of indirection with a fixed-size pointer.
 
-<Frame>
-  ![The image illustrates a simple linked list with three nodes, each containing data values (5, 10, 15), and notes that nodes cannot directly refer to themselves in Rust due to size constraints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883759/notes-assets/images/Rust-Programming-Box-Single-Ownership-and-Heap-Allocation/linked-list-nodes-rust-illustration.jpg)
-</Frame>
+![The image illustrates a simple linked list with three nodes, each containing data values (5, 10, 15), and notes that nodes cannot directly refer to themselves in Rust due to size constraints.](https://kodekloud.com/kk-media/image/upload/v1752883759/notes-assets/images/Rust-Programming-Box-Single-Ownership-and-Heap-Allocation/linked-list-nodes-rust-illustration.jpg)
 
 ### Example: Defining a Linked List
 
@@ -100,9 +92,7 @@ help: insert some indirection (e.g., a `Box`, `Rc`, or `&`) to break the cycle
 3 |     Cons(i32, Box<List>), // direct recursion
 ```
 
-<Callout icon="lightbulb">
-  Wrapping recursive calls in a Box\<T> provides a fixed-size pointer, resolving the infinite size issue and allowing the recursive type to compile successfully.
-</Callout>
+> **lightbulb** Wrapping recursive calls in a Box\<T> provides a fixed-size pointer, resolving the infinite size issue and allowing the recursive type to compile successfully.
 
 ### Revised Code Using Box\<T>
 
@@ -149,9 +139,7 @@ While Box\<T> is a powerful tool, it is not the right choice for every scenario.
 * When interior mutability is needed, [`RefCell\<T>`](https://doc.rust-lang.org/std/cell/struct.RefCell.html) might be more appropriate.
 * In performance-sensitive sections, be aware that heap allocation is slower than stack allocation.
 
-<Frame>
-  ![The image lists reasons not to use Box\\\<T> in programming, suggesting alternatives like Rc\\\<T>, Arc\\\<T>, RefCell\\\<T>, and mentioning performance considerations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883760/notes-assets/images/Rust-Programming-Box-Single-Ownership-and-Heap-Allocation/reasons-not-to-use-box-alternatives.jpg)
-</Frame>
+![The image lists reasons not to use Box\\\<T> in programming, suggesting alternatives like Rc\\\<T>, Arc\\\<T>, RefCell\\\<T>, and mentioning performance considerations.](https://kodekloud.com/kk-media/image/upload/v1752883760/notes-assets/images/Rust-Programming-Box-Single-Ownership-and-Heap-Allocation/reasons-not-to-use-box-alternatives.jpg)
 
 ## Summary
 
@@ -161,12 +149,8 @@ Box\<T> is a crucial component of Rust's memory management toolkit. It provides:
 * Single ownership for robust memory management,
 * The capability to define recursive data structures with unknown sizes at compile time.
 
-<Frame>
-  ![The image is a summary slide with two points: enabling safe heap allocation and single ownership, and being ideal for recursive data structures and large data types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883761/notes-assets/images/Rust-Programming-Box-Single-Ownership-and-Heap-Allocation/safe-heap-allocation-summary-slide.jpg)
-</Frame>
+![The image is a summary slide with two points: enabling safe heap allocation and single ownership, and being ideal for recursive data structures and large data types.](https://kodekloud.com/kk-media/image/upload/v1752883761/notes-assets/images/Rust-Programming-Box-Single-Ownership-and-Heap-Allocation/safe-heap-allocation-summary-slide.jpg)
 
 Mastering Box\<T> is an essential step towards building more complex and efficient applications in Rust, empowering you to leverage safe memory management and powerful data structure definitions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/37d4032f-c90d-43ee-a0cd-981b95ab22b0/lesson/d327d31e-381d-4f81-819c-5ad655f3b8d4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/37d4032f-c90d-43ee-a0cd-981b95ab22b0/lesson/d327d31e-381d-4f81-819c-5ad655f3b8d4)

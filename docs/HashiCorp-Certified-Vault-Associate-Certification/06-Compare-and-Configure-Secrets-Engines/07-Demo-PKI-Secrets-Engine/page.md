@@ -13,15 +13,11 @@ Welcome to this hands-on guide for Vault’s PKI Secrets Engine. In this tutoria
 
 Follow along with the full HashiCorp Learn tutorial: [Building Your Own Certificate Authority (CA) Using Vault](https://learn.hashicorp.com/tutorials/vault/pki-engine).
 
-<Frame>
-  ![The image shows a webpage from HashiCorp Learn about building your own Certificate Authority (CA) using Vault. It includes a navigation menu and a list of steps for the process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878073/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-PKI-Secrets-Engine/hashicorp-learn-build-certificate-authority.jpg)
-</Frame>
+![The image shows a webpage from HashiCorp Learn about building your own Certificate Authority (CA) using Vault. It includes a navigation menu and a list of steps for the process.](https://kodekloud.com/kk-media/image/upload/v1752878073/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-PKI-Secrets-Engine/hashicorp-learn-build-certificate-authority.jpg)
 
-<Callout icon="lightbulb">
-  * A running Vault cluster (we’ll use AWS).
+> **lightbulb** * A running Vault cluster (we’ll use AWS).
   * Vault CLI installed and authenticated.
   * `jq` installed for JSON parsing.
-</Callout>
 
 ## Step-by-Step Overview
 
@@ -169,9 +165,7 @@ vault write pki_int/issue/vaultadvanced \
     common_name="learn.vaultadvanced.com" ttl="24h"
 ```
 
-<Callout icon="triangle-alert">
-  The `private_key` is only returned at issuance. Store it securely, as Vault will not retain it for later retrieval.
-</Callout>
+> **triangle-alert** The `private_key` is only returned at issuance. Store it securely, as Vault will not retain it for later retrieval.
 
 You can issue additional short-lived certificates, for example:
 
@@ -184,9 +178,7 @@ vault write pki_int/issue/vaultadvanced \
 
 ## 10. View Engines and Certificates in the Vault Web UI
 
-<Frame>
-  ![The image shows a web interface for HashiCorp Vault, displaying a list of secret engines such as "cubbyhole" and "pki." There is a warning about using a root token and a welcome message offering a tour of the Vault Web UI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878074/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-PKI-Secrets-Engine/hashicorp-vault-web-ui-secret-engines.jpg)
-</Frame>
+![The image shows a web interface for HashiCorp Vault, displaying a list of secret engines such as "cubbyhole" and "pki." There is a warning about using a root token and a welcome message offering a tour of the Vault Web UI.](https://kodekloud.com/kk-media/image/upload/v1752878074/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-PKI-Secrets-Engine/hashicorp-vault-web-ui-secret-engines.jpg)
 
 In the UI, navigate to **pki/** and **pki\_int/** to inspect roles and issued certificates (serial numbers only, no private keys).
 
@@ -198,6 +190,4 @@ In the UI, navigate to **pki/** and **pki\_int/** to inspect roles and issued ce
 * [Building Your Own Certificate Authority (CA) Using Vault](https://learn.hashicorp.com/tutorials/vault/pki-engine)
 * [Vault CLI Installation](https://www.vaultproject.io/docs/commands)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/e1eac443-0e80-4628-868d-87484e7a4d49" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/e1eac443-0e80-4628-868d-87484e7a4d49)

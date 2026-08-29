@@ -23,9 +23,7 @@ Vault policies are declarative, path-based rules that grant or deny access. All 
   2. Retrieve policies with `vault policy read default`.
   3. Inspect allowed paths and capabilities.
 
-<Frame>
-  ![The image provides exam tips related to understanding default policy permissions, capabilities like CRUD, and the difference between "create" and "update" actions. It includes a decorative pixelated border and a cartoon character at the bottom right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878138/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Exam-Tips-for-Objective-2/exam-tips-default-policy-permissions.jpg)
-</Frame>
+![The image provides exam tips related to understanding default policy permissions, capabilities like CRUD, and the difference between "create" and "update" actions. It includes a decorative pixelated border and a cartoon character at the bottom right.](https://kodekloud.com/kk-media/image/upload/v1752878138/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Exam-Tips-for-Objective-2/exam-tips-default-policy-permissions.jpg)
 
 ## 2. Key Capabilities in Vault Policies
 
@@ -41,9 +39,7 @@ Vault supports a defined set of capabilities. Understanding each is critical for
 | sudo       | Perform privileged operations on an endpoint | `capabilities = ["sudo"]`                              |
 | deny       | Explicitly deny access                       | `capabilities = ["deny"]`                              |
 
-<Callout icon="lightbulb">
-  `write` is **not** a valid capability. Use **create** for resources that don’t exist and **update** for modifying existing ones.
-</Callout>
+> **lightbulb** `write` is **not** a valid capability. Use **create** for resources that don’t exist and **update** for modifying existing ones.
 
 ## 3. Root-Protected Paths
 
@@ -56,9 +52,7 @@ Some Vault endpoints require the **root** policy. While you don’t need to memo
 
 Review the [Vault API references][vault-api] to recognize which operations are gated.
 
-<Frame>
-  ![The image provides exam tips related to understanding root-protected paths and customizing policies, including using specific symbols and templating options. It includes a link for further learning and features a small illustration of a person in sunglasses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878139/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Exam-Tips-for-Objective-2/exam-tips-root-paths-customization.jpg)
-</Frame>
+![The image provides exam tips related to understanding root-protected paths and customizing policies, including using specific symbols and templating options. It includes a link for further learning and features a small illustration of a person in sunglasses.](https://kodekloud.com/kk-media/image/upload/v1752878139/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Exam-Tips-for-Objective-2/exam-tips-root-paths-customization.jpg)
 
 ## 4. Policy Customization Techniques
 
@@ -103,6 +97,4 @@ Good luck, and happy vaulting!
 
 [vault-docs]: https://www.vaultproject.io/docs/overview/what-is-vault
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/0e1b8550-b265-4b0b-8e32-8f0996a6da67" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/0e1b8550-b265-4b0b-8e32-8f0996a6da67)

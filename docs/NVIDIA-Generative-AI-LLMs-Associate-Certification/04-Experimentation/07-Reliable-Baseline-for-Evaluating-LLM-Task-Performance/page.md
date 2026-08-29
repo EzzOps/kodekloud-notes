@@ -49,10 +49,6 @@ Useful references
 * PapersWithCode (for SOTA comparisons): [https://paperswithcode.com/](https://paperswithcode.com/)
 * Human evaluation guidelines and best practices: search for “human evaluation in NLP” and review ACL/NAACL workshop resources for annotation protocols and agreement metrics.
 
-<Callout icon="lightbulb">
-  Collect the human baseline under the same conditions and using the same evaluation metrics as the model. Document inter-annotator agreement and variability so comparisons are fair and interpretable.
-</Callout>
+> **lightbulb** Collect the human baseline under the same conditions and using the same evaluation metrics as the model. Document inter-annotator agreement and variability so comparisons are fair and interpretable.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/81b7f4c6-fba2-4af4-a9ec-774fd31f3258" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/81b7f4c6-fba2-4af4-a9ec-774fd31f3258)

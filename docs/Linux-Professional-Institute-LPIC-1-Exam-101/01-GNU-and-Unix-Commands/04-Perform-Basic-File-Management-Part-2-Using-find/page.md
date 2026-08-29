@@ -8,9 +8,7 @@ In this lesson, we combine `find` with powerful regular expressions in `grep` to
 
 Regular expressions let you define constraints, much like restricting a variable ( x ) in mathematics:
 
-<Frame>
-  ![The image shows a number line with conditions for an integer ( x ) where ( x > 3 ) and ( x \< 8 ). The numbers 3 and 8 are marked, with question marks in between.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881400/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Perform-Basic-File-Management-Part-2-Using-find/number-line-conditions-integer-x.jpg)
-</Frame>
+![The image shows a number line with conditions for an integer ( x ) where ( x > 3 ) and ( x \< 8 ). The numbers 3 and 8 are marked, with question marks in between.](https://kodekloud.com/kk-media/image/upload/v1752881400/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Perform-Basic-File-Management-Part-2-Using-find/number-line-conditions-integer-x.jpg)
 
 By combining operators, you create a single pattern that matches only what you allow.
 
@@ -60,9 +58,7 @@ samuel
 
 You can apply the same technique to system files. For instance, find lines in `/etc/login.defs` that start with `PASS`:
 
-<Frame>
-  ![The image shows a dark-themed command-line interface with the text "The line begins with" at the top. The prompt is ready for input, and "KodeKloud" is visible in the corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881403/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Perform-Basic-File-Management-Part-2-Using-find/dark-command-line-interface-kodekloud.jpg)
-</Frame>
+![The image shows a dark-themed command-line interface with the text "The line begins with" at the top. The prompt is ready for input, and "KodeKloud" is visible in the corner.](https://kodekloud.com/kk-media/image/upload/v1752881403/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Perform-Basic-File-Management-Part-2-Using-find/dark-command-line-interface-kodekloud.jpg)
 
 ```bash theme={null}
 $ grep '^PASS' /etc/login.defs

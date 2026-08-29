@@ -62,13 +62,9 @@ spec:
 | `{{steps.<step>.outputs.result}}` | The stdout result captured from a previous step (script templates) | `{{steps.generate.outputs.result}}` |
 | `{{inputs.parameters.<name>}}`    | The value of an input parameter inside the template                | `{{inputs.parameters.message}}`     |
 
-<Callout icon="lightbulb">
-  When a template uses `script`, Argo Workflows automatically captures the script's stdout as `outputs.result`. For container templates, echo or write to a defined output path and map it explicitly to expose outputs, or wrap the container output so it becomes available as `outputs.result`.
-</Callout>
+> **lightbulb** When a template uses `script`, Argo Workflows automatically captures the script's stdout as `outputs.result`. For container templates, echo or write to a defined output path and map it explicitly to expose outputs, or wrap the container output so it becomes available as `outputs.result`.
 
-<Callout icon="warning">
-  Output parameters are only available after the producing step has completed. If a downstream step references an output from a still-running or failed step, it will not receive a valid value.
-</Callout>
+> **warning** Output parameters are only available after the producing step has completed. If a downstream step references an output from a still-running or failed step, it will not receive a valid value.
 
 ## What you will see in the UI
 
@@ -106,6 +102,4 @@ This confirms that the `producer` script output was captured as `steps.generate.
 * Official docs: [Argo Workflows — Parameters and Results](https://argoproj.github.io/argo-workflows/)
 * Getting started: [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/f38290b2-a9f7-4f39-b2ea-0e505e03079e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/f38290b2-a9f7-4f39-b2ea-0e505e03079e)

@@ -67,13 +67,9 @@ By adding the `--timestamps` flag to your kubectl logs command, you enrich your 
 
 For more detailed information on Kubernetes log management and best practices, refer to the [Kubernetes Documentation](https://kubernetes.io/docs/).
 
-<Callout icon="lightbulb">
-  Both flags are crucial in environments with high logging volumes where pinpointing the exact moment of an issue can lead to faster resolutions.
-</Callout>
+> **lightbulb** Both flags are crucial in environments with high logging volumes where pinpointing the exact moment of an issue can lead to faster resolutions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/8c0130ec-31e4-4e87-b996-8d8e1fb27fad" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/8c0130ec-31e4-4e87-b996-8d8e1fb27fad)
 
 
 # kubectl logs
@@ -104,9 +100,7 @@ controlplane ~ ➜
 
 The output above shows the log messages produced during the startup of the application.
 
-<Callout icon="lightbulb">
-  For a complete list of `kubectl logs` options and other Kubernetes commands, check out the [Kubernetes Documentation](https://kubernetes.io/docs/).
-</Callout>
+> **lightbulb** For a complete list of `kubectl logs` options and other Kubernetes commands, check out the [Kubernetes Documentation](https://kubernetes.io/docs/).
 
 ## Viewing Logs in Multicontainer Pods
 
@@ -135,9 +129,7 @@ controlplane ~ →
 
 While this approach consolidates logs from every container in the pod, it may become challenging to determine the source container for each log entry.
 
-<Callout icon="triangle-alert">
-  Avoid using `--all-containers` when you need to diagnose issues specific to a single container. Explicitly targeting a container clarifies the troubleshooting process.
-</Callout>
+> **triangle-alert** Avoid using `--all-containers` when you need to diagnose issues specific to a single container. Explicitly targeting a container clarifies the troubleshooting process.
 
 ## Retrieving Container-Specific Logs
 
@@ -217,6 +209,4 @@ For further details and advanced use cases, visit the official [Kubernetes Docum
 
 Happy troubleshooting!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/8d1b7b1f-3a2c-40f2-b5da-e979a842c9b8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/8d1b7b1f-3a2c-40f2-b5da-e979a842c9b8)

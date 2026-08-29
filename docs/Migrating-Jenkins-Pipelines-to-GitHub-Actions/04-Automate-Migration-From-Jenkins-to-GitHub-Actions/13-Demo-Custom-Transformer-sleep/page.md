@@ -51,15 +51,13 @@ gh actions-importer dry-run jenkins \
   --custom-transformers ss-pipeline-transformer.rb
 ```
 
-<Callout icon="warning">
-  If you see a message such as:
+> **warning** If you see a message such as:
 
   ```bash theme={null}
   [2025-05-22 12:58:53] No custom transformers found at path: /data/ss-pipeline-transformer.rb
   ```
 
   it usually means the transformer path is incorrect relative to your current working directory. Verify the file exists (for example `ls ss-pipeline-transformer.rb`) and either run the command from that directory or supply an absolute path to `--custom-transformers`.
-</Callout>
 
 Resulting transformed workflow (excerpt)
 After applying the custom transformer, the `env` section reflects the mappings and secrets:
@@ -89,11 +87,9 @@ jobs:
 
 Best practices and tips
 
-<Callout icon="lightbulb">
-  * Keep transformer files in your project repository and reference them with a relative or absolute path to avoid "not found" errors.
+> **lightbulb** * Keep transformer files in your project repository and reference them with a relative or absolute path to avoid "not found" errors.
   * Prefer mapping credentials to GitHub Actions secrets rather than hard-coding sensitive values.
   * Use regular expressions cautiously to avoid accidentally removing environment variables you need.
-</Callout>
 
 Summary
 
@@ -106,9 +102,7 @@ Links and references
 * [GitHub Actions: Secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
 * [gh actions-importer — CLI repository / documentation](/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/d9e086da-5595-4bd8-9f86-767774b8eb56" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/d9e086da-5595-4bd8-9f86-767774b8eb56)
 
 
 # Demo Custom Transformer sleep

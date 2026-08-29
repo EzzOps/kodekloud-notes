@@ -17,9 +17,7 @@ $ pwd
 /home/aaron
 ```
 
-<Frame>
-  ![The image shows a directory structure with a command line interface on the left. The directory tree includes folders like "home," "var," and "root," with a file named "Invoice.pdf" under "aaron/Documents."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881468/notes-assets/images/Linux-System-Administration-for-Beginners-Create-Delete-Copy-and-Move-Files-and-Directories/directory-structure-command-line-invoice.jpg)
-</Frame>
+![The image shows a directory structure with a command line interface on the left. The directory tree includes folders like "home," "var," and "root," with a file named "Invoice.pdf" under "aaron/Documents."](https://kodekloud.com/kk-media/image/upload/v1752881468/notes-assets/images/Linux-System-Administration-for-Beginners-Create-Delete-Copy-and-Move-Files-and-Directories/directory-structure-command-line-invoice.jpg)
 
 ## Creating Files and Directories
 
@@ -54,9 +52,7 @@ To copy and rename at the same time:
 $ cp receipt.pdf receipts/receipt_backup.pdf
 ```
 
-<Frame>
-  ![The image shows a file directory structure with a command line interface on the left. The directory path includes folders named "home," "aaron," and "Receipts," leading to a file named "Receipt.pdf."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881469/notes-assets/images/Linux-System-Administration-for-Beginners-Create-Delete-Copy-and-Move-Files-and-Directories/file-directory-structure-command-line.jpg)
-</Frame>
+![The image shows a file directory structure with a command line interface on the left. The directory path includes folders named "home," "aaron," and "Receipts," leading to a file named "Receipt.pdf."](https://kodekloud.com/kk-media/image/upload/v1752881469/notes-assets/images/Linux-System-Administration-for-Beginners-Create-Delete-Copy-and-Move-Files-and-Directories/file-directory-structure-command-line.jpg)
 
 ### Copying Directories Recursively
 
@@ -98,9 +94,7 @@ Use caution when removing files and directories:
   $ rm -r invoices/
   ```
 
-<Callout icon="triangle-alert">
-  The `rm -r` command permanently deletes directories and their contents. Always double-check the path before pressing Enter!
-</Callout>
+> **triangle-alert** The `rm -r` command permanently deletes directories and their contents. Always double-check the path before pressing Enter!
 
 ***
 
@@ -110,9 +104,7 @@ Use caution when removing files and directories:
 * [GNU coreutils Documentation](https://www.gnu.org/software/coreutils/)
 * [Introduction to Linux File System](https://en.wikipedia.org/wiki/File_system#Unix_and_Unix-like_systems)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/8ab7329a-f096-4f27-99a5-e7d94c813bce" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/8ab7329a-f096-4f27-99a5-e7d94c813bce)
 
 
 # Create and manage hard links
@@ -169,9 +161,7 @@ Now both entries share one set of data blocks.
 | Data Consistency  | Separate files      | Always the same content            |
 | Link Count Effect | Independent inodes  | Inode “Links” count increases by 1 |
 
-<Callout icon="lightbulb">
-  Hard links only work on regular files within the same filesystem. See limitations below.
-</Callout>
+> **lightbulb** Hard links only work on regular files within the same filesystem. See limitations below.
 
 ## Inspecting Link Counts
 
@@ -213,17 +203,13 @@ You **cannot**:
 * Link directories (to prevent cycles in the filesystem tree).
 * Cross filesystem boundaries (e.g., SSD → external drive).
 
-<Frame>
-  ![The image illustrates limitations and considerations of hardlinking, showing that hardlinks can only be created for files, not folders, and must be on the same filesystem.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881470/notes-assets/images/Linux-System-Administration-for-Beginners-Create-and-manage-hard-links/hardlinking-limitations-filesystem-considerations.jpg)
-</Frame>
+![The image illustrates limitations and considerations of hardlinking, showing that hardlinks can only be created for files, not folders, and must be on the same filesystem.](https://kodekloud.com/kk-media/image/upload/v1752881470/notes-assets/images/Linux-System-Administration-for-Beginners-Create-and-manage-hard-links/hardlinking-limitations-filesystem-considerations.jpg)
 
-<Callout icon="triangle-alert">
-  Attempting to `ln` a file across different mounts will fail silently or return an error:
+> **triangle-alert** Attempting to `ln` a file across different mounts will fail silently or return an error:
 
   ```bash theme={null}
   ln: failed to create hard link ... Invalid cross-device link
   ```
-</Callout>
 
 ## Permissions and Hard Links
 

@@ -101,9 +101,7 @@ After the `for` window elapses and the alert fires, Alertmanager will show the n
 
 Once the alert appears in Alertmanager you can route it to external receivers (Slack, PagerDuty, email, etc.) by configuring Alertmanager receivers and routes.
 
-<Callout icon="lightbulb">
-  Ensure the `argocd_app_info` metric is being scraped by Prometheus. Argo CD exposes metrics via the argocd-metrics endpoint; if Prometheus isn't scraping `argocd-metrics`, the rule cannot evaluate true.
-</Callout>
+> **lightbulb** Ensure the `argocd_app_info` metric is being scraped by Prometheus. Argo CD exposes metrics via the argocd-metrics endpoint; if Prometheus isn't scraping `argocd-metrics`, the rule cannot evaluate true.
 
 Example Alertmanager Slack configuration (in Alertmanager YAML):
 
@@ -157,11 +155,9 @@ Useful references:
 
 That’s how you create an alert for Argo CD application drift, see it in Alertmanager, and route notifications to external systems like Slack.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/8a7954bf-9255-4fd0-bd62-ce42c48a0012" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/8a7954bf-9255-4fd0-bd62-ce42c48a0012)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/34cc2558-9ccc-46cd-b446-e597de03f41b" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/34cc2558-9ccc-46cd-b446-e597de03f41b)
 
 
 # Interoperability with Notifications Observability and Continuous Integration Tools
@@ -189,9 +185,7 @@ DORA metrics are industry-standard benchmarks that help teams measure how effect
 | Change failure rate     | % of deployments causing a failure requiring remediation | Lower rates imply more reliable releases                              |
 | Time to restore service | Time to recover after an incident                        | Faster recovery reduces user impact and increases reliability         |
 
-<Callout icon="lightbulb">
-  DORA metrics are complementary to GitOps: declarative manifests, version control, and automated reconciliation help improve deployment frequency and reduce lead time and failure rates.
-</Callout>
+> **lightbulb** DORA metrics are complementary to GitOps: declarative manifests, version control, and automated reconciliation help improve deployment frequency and reduce lead time and failure rates.
 
 ## Continuous Integration (CI) and GitOps
 
@@ -235,9 +229,7 @@ Example end-to-end sequence:
 
 Rollback is straightforward because the desired state is versioned in Git. Reverting a commit or using the GitOps operator’s rollback feature returns the cluster to the previous good state.
 
-<Callout icon="warning">
-  Automatic rollbacks can speed recovery but must be used with care. Ensure health checks and observability thresholds are well-defined to avoid oscillations or cascading rollbacks.
-</Callout>
+> **warning** Automatic rollbacks can speed recovery but must be used with care. Ensure health checks and observability thresholds are well-defined to avoid oscillations or cascading rollbacks.
 
 ## Observability and notifications: closing the feedback loop
 
@@ -280,6 +272,4 @@ Benefits of integrating observability and notifications with GitOps:
 
 This overview ties together CI, GitOps, and observability to form a resilient delivery pipeline that supports rapid, safe deployments and clear feedback loops for continuous improvement.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/6974e6f3-41ee-4563-af84-5a5ef529029d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/6974e6f3-41ee-4563-af84-5a5ef529029d)

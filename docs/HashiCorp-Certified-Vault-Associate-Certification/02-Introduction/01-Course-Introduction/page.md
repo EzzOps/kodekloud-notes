@@ -10,9 +10,7 @@ Welcome to the **HashiCorp Vault** training series. In this lesson, you’ll lea
 
 I’m Bryan Krausen, a Principal Solutions Architect based in Central Kentucky. With over 20 years in IT and 4.5 years specializing in Vault, I work directly with HashiCorp partners to implement Vault at customer sites and develop certification content. I co-authored *Running HashiCorp Vault in Production* and have taught more than 12,000 students, maintaining a 4.62 rating across my courses.
 
-<Frame>
-  ![Bryan Krausen, Principal Solutions Architect, instructor profile and certifications](../../../../images/kodekloud.com/kk-media/image/upload/v1752878199/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Course-Introduction/bryan-krausen-teaching-certifications-badges.jpg)
-</Frame>
+![Bryan Krausen, Principal Solutions Architect, instructor profile and certifications](https://kodekloud.com/kk-media/image/upload/v1752878199/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Course-Introduction/bryan-krausen-teaching-certifications-badges.jpg)
 
 ***
 
@@ -24,9 +22,7 @@ Connect with me for updates, code samples, and ongoing Vault discussions:
 * **GitHub**: [btkrausen](https://github.com/btkrausen)
 * **Course Repository**: [github.com/btkrausen/HashiCorp](https://github.com/btkrausen/HashiCorp)
 
-<Frame>
-  ![Contact info and social media handles for the instructor](../../../../images/kodekloud.com/kk-media/image/upload/v1752878200/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Course-Introduction/contact-info-social-media-purple-background.jpg)
-</Frame>
+![Contact info and social media handles for the instructor](https://kodekloud.com/kk-media/image/upload/v1752878200/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Course-Introduction/contact-info-social-media-purple-background.jpg)
 
 ***
 
@@ -41,9 +37,7 @@ By the end of this course, you will:
 * Perform Day 2 operations, monitoring, and backups
 * Apply Vault in DevOps workflows and CI/CD pipelines
 
-<Frame>
-  ![Outline of key course objectives](../../../../images/kodekloud.com/kk-media/image/upload/v1752878201/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Course-Introduction/hashicorp-vault-course-objectives-outline.jpg)
-</Frame>
+![Outline of key course objectives](https://kodekloud.com/kk-media/image/upload/v1752878201/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Course-Introduction/hashicorp-vault-course-objectives-outline.jpg)
 
 ***
 
@@ -57,9 +51,7 @@ By the end of this course, you will:
    * Live demos using Vault CLI, UI, and API on AWS clusters
    * Single-region fundamentals; multi-region replication scenarios
 
-<Frame>
-  ![Overview of lectures and hands-on labs format](../../../../images/kodekloud.com/kk-media/image/upload/v1752878202/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Course-Introduction/training-format-lecture-slides-vault-lab.jpg)
-</Frame>
+![Overview of lectures and hands-on labs format](https://kodekloud.com/kk-media/image/upload/v1752878202/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Course-Introduction/training-format-lecture-slides-vault-lab.jpg)
 
 ***
 
@@ -74,9 +66,7 @@ Each module includes:
 * **Quizzes** – 5–10 questions to reinforce learning
 * **Practice Exam** – Comprehensive test covering all key objectives
 
-<Frame>
-  ![Diagram of module components: slides, resources, mind maps, lab guides, and quizzes](../../../../images/kodekloud.com/kk-media/image/upload/v1752878203/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Course-Introduction/course-content-slides-resources-maps.jpg)
-</Frame>
+![Diagram of module components: slides, resources, mind maps, lab guides, and quizzes](https://kodekloud.com/kk-media/image/upload/v1752878203/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Course-Introduction/course-content-slides-resources-maps.jpg)
 
 ***
 
@@ -87,13 +77,9 @@ Each module includes:
 * Announcements posted on the learning platform
 * Feedback welcome in the course discussion area
 
-<Callout icon="lightbulb">
-  We monitor HashiCorp’s certification site for new requirements—any changes will be reflected here.
-</Callout>
+> **lightbulb** We monitor HashiCorp’s certification site for new requirements—any changes will be reflected here.
 
-<Frame>
-  ![Slide summarizing course update practices and feedback channels](../../../../images/kodekloud.com/kk-media/image/upload/v1752878204/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Course-Introduction/course-updates-frequent-content-feedback.jpg)
-</Frame>
+![Slide summarizing course update practices and feedback channels](https://kodekloud.com/kk-media/image/upload/v1752878204/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Course-Introduction/course-updates-frequent-content-feedback.jpg)
 
 ***
 
@@ -109,9 +95,7 @@ Each module includes:
 | Validity  | 2 years (renewal details TBD)                     |
 | Cost      | \$70.50 USD                                       |
 
-<Frame>
-  ![Exam details for the HashiCorp Vault Associate certification](../../../../images/kodekloud.com/kk-media/image/upload/v1752878206/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Course-Introduction/hashicorp-vault-associate-exam-details.jpg)
-</Frame>
+![Exam details for the HashiCorp Vault Associate certification](https://kodekloud.com/kk-media/image/upload/v1752878206/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Course-Introduction/hashicorp-vault-associate-exam-details.jpg)
 
 ***
 
@@ -130,9 +114,7 @@ You will be assessed on **Vault 1.4+** across these core topics:
 9. Explain the Vault architecture
 10. Describe encryption as a service (Transit engine)
 
-<Frame>
-  ![List of exam objectives for HashiCorp Vault Associate](../../../../images/kodekloud.com/kk-media/image/upload/v1752878207/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Course-Introduction/vault-exam-objectives-introduction-use-cases.jpg)
-</Frame>
+![List of exam objectives for HashiCorp Vault Associate](https://kodekloud.com/kk-media/image/upload/v1752878207/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Course-Introduction/vault-exam-objectives-introduction-use-cases.jpg)
 
 We’ll also cover installing Vault, writing configuration files, and setting up audit devices—essential skills for production environments.
 
@@ -146,14 +128,10 @@ We’ll also cover installing Vault, writing configuration files, and setting up
 * **Vault API Reference**: [vaultproject.io/api](https://www.vaultproject.io/api)
 * **Practice Exam**: Nearly 200 questions (included in this course)
 
-<Callout icon="lightbulb">
-  Explore community videos, blog posts, and open-source tools to deepen your understanding of Vault.
-</Callout>
+> **lightbulb** Explore community videos, blog posts, and open-source tools to deepen your understanding of Vault.
 
 ***
 
 With the introduction complete, let’s begin with **General Introduction and Use Cases**.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/146dad4d-c944-4640-9c24-17556eafa1a0/lesson/9d4a3337-e76d-45dd-97fd-0bdeb52bb767" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/146dad4d-c944-4640-9c24-17556eafa1a0/lesson/9d4a3337-e76d-45dd-97fd-0bdeb52bb767)

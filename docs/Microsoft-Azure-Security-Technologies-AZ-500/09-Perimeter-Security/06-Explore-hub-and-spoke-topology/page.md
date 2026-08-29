@@ -4,9 +4,7 @@ Source: https://notes.kodekloud.com/docs/Microsoft-Azure-Security-Technologies-A
 
 Guide to configuring Azure hub-and-spoke networking with route tables and Azure Firewall to control spoke-to-spoke and outbound traffic, plus verification steps and firewall rule examples.
 
-<Callout icon="lightbulb">
-  This guide shows a practical Azure hub-and-spoke network pattern focused on perimeter security using Azure Firewall in the hub to control traffic between two spoke VNets. Bastion and VPN Gateway configuration are intentionally out of scope — this lesson concentrates on routing, firewall rules, and verifying connectivity.
-</Callout>
+> **lightbulb** This guide shows a practical Azure hub-and-spoke network pattern focused on perimeter security using Azure Firewall in the hub to control traffic between two spoke VNets. Bastion and VPN Gateway configuration are intentionally out of scope — this lesson concentrates on routing, firewall rules, and verifying connectivity.
 
 In a typical Azure hub-and-spoke topology the hub VNet hosts shared services such as Azure Firewall, Azure Bastion, and a VPN gateway, while spoke VNets host application or workload subnets. The hub acts as a central inspection and routing point and can connect to on-premises networks or other hubs.
 
@@ -156,13 +154,9 @@ Important considerations and next steps
 * Forced tunneling routes internet-bound traffic to on-premises NVAs or other inspection points if required by your security architecture.
 * Use Azure Monitor and diagnostic settings on Firewall and VNets for centralized telemetry and alerting.
 
-<Callout icon="lightbulb">
-  Firewall rules are stateful: if a network rule allows A → B, return traffic from B → A is allowed automatically — you do not need a separate reverse rule.
-</Callout>
+> **lightbulb** Firewall rules are stateful: if a network rule allows A → B, return traffic from B → A is allowed automatically — you do not need a separate reverse rule.
 
 Summary
 This walkthrough demonstrates how to route Spoke B’s non-local traffic to an Azure Firewall in the hub using a route table, how to create network rules to allow specific spoke-to-spoke traffic, and how to verify connectivity and application-level access. From here you can expand the topology to include Bastion for management, VPN/ExpressRoute connectivity to on-premises, forced tunneling to NVAs, and comprehensive telemetry with Azure Monitor.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/cb10a3ae-53f4-4588-ad61-042af34f31ab/lesson/ba97ade4-62d2-4367-af4f-a693a2d8b6c7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/cb10a3ae-53f4-4588-ad61-042af34f31ab/lesson/ba97ade4-62d2-4367-af4f-a693a2d8b6c7)

@@ -21,13 +21,9 @@ webapp-sample-config     1      20s
 Summary
 This pattern is reusable for other child types (Secrets, Services, etc.). The key steps are: construct the desired child object, set the owner reference so the parent controls lifecycle and ownership, Get the existing child, Create if missing, and return errors to allow controller-runtime to requeue and retry.
 
-<Callout icon="lightbulb">
-  ConfigMaps are namespaced. Always set the child's `Namespace` to the parent's namespace and set the controller reference so garbage collection and ownership are handled correctly.
-</Callout>
+> **lightbulb** ConfigMaps are namespaced. Always set the child's `Namespace` to the parent's namespace and set the controller reference so garbage collection and ownership are handled correctly.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/1b686f11-43b3-42b9-b57b-2c3cca6a4dea" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/1b686f11-43b3-42b9-b57b-2c3cca6a4dea)
 
 
 # Demo Add The Service Builder
@@ -94,9 +90,7 @@ func serviceFor(w *webappv1.WebApp) *corev1.Service {
 }
 ```
 
-<Callout icon="lightbulb">
-  The Service `selector` must exactly match the labels applied to the Deployment's Pod template. If these labels differ, the Service will be present but will not route traffic to any pods.
-</Callout>
+> **lightbulb** The Service `selector` must exactly match the labels applied to the Deployment's Pod template. If these labels differ, the Service will be present but will not route traffic to any pods.
 
 Wire the Service creation into Reconcile
 Follow the same reconcile pattern used for the ConfigMap and Deployment:
@@ -207,6 +201,4 @@ Summary table
 
 This completes adding a Service builder and wiring it into the reconcile loop so the WebApp controller manages Service lifecycle along with its other children.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/f0f094bb-15eb-4a9a-987c-2c803c3d37c4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/f0f094bb-15eb-4a9a-987c-2c803c3d37c4)

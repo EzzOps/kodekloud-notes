@@ -2,9 +2,7 @@
 API_KEY = "sk-live-REDACTED"
 ```
 
-<Callout icon="warning">
-  Never commit real secrets (API keys, passwords) to source control or paste them into prompts. Use secure credential stores, environment variables, or secret managers instead.
-</Callout>
+> **warning** Never commit real secrets (API keys, passwords) to source control or paste them into prompts. Use secure credential stores, environment variables, or secret managers instead.
 
 Also be sure you know precisely what a connector can do before enabling it. Typical connector privileges vary; understand whether a connector is read-only, can change specific items, or has full access.
 
@@ -41,9 +39,7 @@ Links and references
 * [GitHub Documentation](https://docs.github.com/)
 * [Best practices for secret management](https://12factor.net/config)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/loop-engineering/module/6371e2a8-2e13-4841-ba89-95dd842b1bdd/lesson/31981d32-1b94-4c61-ba95-592883e630db" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/loop-engineering/module/6371e2a8-2e13-4841-ba89-95dd842b1bdd/lesson/31981d32-1b94-4c61-ba95-592883e630db)
 
 
 # Memory
@@ -58,9 +54,7 @@ Without persistent memory: nothing.
 
 It wakes up blank, unsure of the goal and unsure of what it already did. This is why memory matters for any loop-based system: memory provides the persistent notes the loop reads at the start of a session so it can resume work without redoing finished tasks or repeating past mistakes.
 
-<Callout icon="lightbulb">
-  Keep memory small and focused. A few targeted notes let the loop resume quickly while avoiding information overload.
-</Callout>
+> **lightbulb** Keep memory small and focused. A few targeted notes let the loop resume quickly while avoiding information overload.
 
 A memory setup can be simple.
 
@@ -109,9 +103,7 @@ Keep the five fields concise and machine-readable where possible so automated re
 Avoid context drift
 Memory must be kept current. If the loop trusts old notes after the environment, data schema, or goals have changed, it will act on a stale picture and make wrong calls. This failure mode is called context drift. The fix is simple: refresh or invalidate related notes whenever the system, goals, or external constraints change.
 
-<Callout icon="warning">
-  Context drift is a practical failure mode: stale memory causes wrong assumptions. Update or invalidate related notes whenever the system, goals, or external constraints change.
-</Callout>
+> **warning** Context drift is a practical failure mode: stale memory causes wrong assumptions. Update or invalidate related notes whenever the system, goals, or external constraints change.
 
 Why this pays off
 Memory lets a loop pause and pick back up where it left off without starting over. It can stop at the end of the day, persist its notes, and continue the next morning as if no time had passed. For long-running jobs that span many sessions, consistent memory is essential: individual sessions perform work well, but memory makes many sessions add up to continuous, steady progress.
@@ -133,6 +125,4 @@ Recap
 
 This completes the module.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/loop-engineering/module/6371e2a8-2e13-4841-ba89-95dd842b1bdd/lesson/f7fb211f-8f21-47f1-8f6d-5ddb89a4bd2f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/loop-engineering/module/6371e2a8-2e13-4841-ba89-95dd842b1bdd/lesson/f7fb211f-8f21-47f1-8f6d-5ddb89a4bd2f)

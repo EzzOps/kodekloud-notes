@@ -14,9 +14,7 @@ Core post-migration verification
 * Validate that reliability and functionality are maintained or improved compared to the legacy platform.
 * Ensure visibility parity: don’t lose monitoring coverage, alerting fidelity, or key observability signals.
 
-<Callout icon="lightbulb">
-  Collect structured telemetry and incident data during the first few weeks after cutover so you can quantify differences between the old and new environments.
-</Callout>
+> **lightbulb** Collect structured telemetry and incident data during the first few weeks after cutover so you can quantify differences between the old and new environments.
 
 Gather end-user feedback
 
@@ -38,9 +36,7 @@ Now that the full system runs in production, revisit your observability design t
 Inventory, documentation, and governance
 One commonly overlooked but critical activity is updating your inventory and documentation. Accurate, versioned records make future troubleshooting, audits, and migrations predictable and less error-prone.
 
-<Callout icon="warning">
-  Keep an authoritative, versioned inventory of services, hosts, dashboards, monitors, and alerting policies. This prevents repeating past mistakes and makes future migrations smoother.
-</Callout>
+> **warning** Keep an authoritative, versioned inventory of services, hosts, dashboards, monitors, and alerting policies. This prevents repeating past mistakes and makes future migrations smoother.
 
 Post-migration checklist
 Use the table below as a concise checklist to guide your post-cutover evaluation and stabilization work.
@@ -63,6 +59,4 @@ Links and references
 
 That concludes this lesson. Use these steps to validate your migration, prioritize follow-ups, and keep your monitoring and operations predictable and resilient.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9add8e22-a057-4808-880b-be8b91e0d5f2/lesson/6278c35c-3b6a-4bfa-880b-45ebdca39a56" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9add8e22-a057-4808-880b-be8b91e0d5f2/lesson/6278c35c-3b6a-4bfa-880b-45ebdca39a56)

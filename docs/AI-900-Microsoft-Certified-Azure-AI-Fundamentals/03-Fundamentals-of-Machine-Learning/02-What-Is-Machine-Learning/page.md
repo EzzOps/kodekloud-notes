@@ -58,7 +58,7 @@ This leads to a predicted price of approximately \$590,000.
 
 > **lightbulb** The inferencing phase applies the model’s learned patterns to new data, enabling reliable predictions even when the label is not provided.
 
-![The image explains the process of machine learning, illustrating how predictive models are developed by discovering patterns in data. It includes steps like training with historical data, using algorithms to generalize relationships, and creating models to make predictions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857003/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-What-Is-Machine-Learning/machine-learning-predictive-models-process.jpg)
+![The image explains the process of machine learning, illustrating how predictive models are developed by discovering patterns in data. It includes steps like training with historical data, using algorithms to generalize relationships, and creating models to make predictions.](https://kodekloud.com/kk-media/image/upload/v1752857003/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-What-Is-Machine-Learning/machine-learning-predictive-models-process.jpg)
 
 ## Summary
 

@@ -127,9 +127,7 @@ Best practices and considerations:
 * Use dimensions to narrow the scope of queries and reduce costs without losing actionable context.
 * Follow naming and semantic conventions (e.g., OpenTelemetry attribute names) for consistency across tools.
 
-<Callout icon="lightbulb">
-  Use dimensions that assist analysis but avoid introducing unnecessary high-cardinality attributes (like raw user IDs) into frequently queried metrics. High cardinality increases storage, query complexity, and cost.
-</Callout>
+> **lightbulb** Use dimensions that assist analysis but avoid introducing unnecessary high-cardinality attributes (like raw user IDs) into frequently queried metrics. High cardinality increases storage, query complexity, and cost.
 
 Dimensions are fundamental to observability: they transform aggregated metrics into actionable time series and provide the context needed to detect, investigate, and resolve issues more efficiently.
 
@@ -139,6 +137,4 @@ Links and references
 * [Observability best practices](https://www.oreilly.com/library/view/observability-engineering/9781492083168/)
 * [Prometheus relabeling and labels guide](https://prometheus.io/docs/practices/naming/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/c80d3029-2d18-4226-a77e-689e9374916e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/c80d3029-2d18-4226-a77e-689e9374916e)

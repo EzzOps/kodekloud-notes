@@ -16,9 +16,7 @@ Target audience: Kubernetes users who want to replace or install a CNI with Cili
 | kubectl configured               | kubectl must point to the target cluster context.                                                             |
 | (Optional) kind                  | Useful for local testing. The examples below show how to create a kind cluster with the default CNI disabled. |
 
-<Callout icon="lightbulb">
-  You can use any Kubernetes distribution (kind, Minikube, EKS, GKE, etc.). The important requirement for this demonstration is that the cluster must not have a CNI installed — otherwise kubelet nodes will report NotReady until a CNI is present.
-</Callout>
+> **lightbulb** You can use any Kubernetes distribution (kind, Minikube, EKS, GKE, etc.). The important requirement for this demonstration is that the cluster must not have a CNI installed — otherwise kubelet nodes will report NotReady until a CNI is present.
 
 ## 1 — Create a kind cluster (example)
 

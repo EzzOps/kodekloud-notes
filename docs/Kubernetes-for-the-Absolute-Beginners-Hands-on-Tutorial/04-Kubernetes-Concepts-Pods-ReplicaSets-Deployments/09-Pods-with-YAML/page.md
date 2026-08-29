@@ -44,9 +44,7 @@ In the `metadata` section, you provide key information about the Kubernetes obje
 
 For instance, if you set labels such as `app: myapp` and `type: front-end`, it becomes easier to filter and manage your Pods later.
 
-<Callout icon="lightbulb">
-  Ensure that within the metadata section you only include properties expected by Kubernetes. Proper indentation is crucial—children properties must be indented relative to their parent, and sibling properties must share the same indentation level.
-</Callout>
+> **lightbulb** Ensure that within the metadata section you only include properties expected by Kubernetes. Proper indentation is crucial—children properties must be indented relative to their parent, and sibling properties must share the same indentation level.
 
 ## Spec
 
@@ -68,9 +66,7 @@ spec:
     image: nginx
 ```
 
-<Callout icon="lightbulb">
-  Save the above configuration as a file (for example, `pod-definition.yml`) and use it to deploy your Pod.
-</Callout>
+> **lightbulb** Save the above configuration as a file (for example, `pod-definition.yml`) and use it to deploy your Pod.
 
 ## Creating the Pod
 
@@ -157,6 +153,4 @@ Happy learning and happy deploying!
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/adaf98fb-6681-41b8-abc4-059391ab4c17" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/adaf98fb-6681-41b8-abc4-059391ab4c17)

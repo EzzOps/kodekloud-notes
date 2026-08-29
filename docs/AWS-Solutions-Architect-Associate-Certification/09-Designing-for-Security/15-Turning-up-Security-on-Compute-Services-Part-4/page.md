@@ -16,7 +16,7 @@ For secure interactions with AWS, the entire cluster must trust IAM. To achieve 
 
 Consider the flow below that illustrates how a pod uses its JWT and role information to acquire temporary credentials from STS:
 
-![The image is a flowchart explaining how to access AWS Elastic Kubernetes Service (EKS) using IAM roles and JWT tokens. It outlines the process of authenticating and issuing temporary credentials for accessing S3 buckets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864091/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/aws-eks-access-flowchart.jpg)
+![The image is a flowchart explaining how to access AWS Elastic Kubernetes Service (EKS) using IAM roles and JWT tokens. It outlines the process of authenticating and issuing temporary credentials for accessing S3 buckets.](https://kodekloud.com/kk-media/image/upload/v1752864091/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/aws-eks-access-flowchart.jpg)
 
 Once the cluster establishes trust with IAM, the pod (using its service account and JWT token) sends its credentials to STS. After validation against IAM policies, temporary credentials are issued to grant access to the required AWS resource.
 
@@ -31,7 +31,7 @@ The typical process involves:
 * Enabling OIDC for the EKS cluster.
 * Providing the cluster’s URL during IAM OIDC provider creation, which allows automatic discovery of necessary details.
 
-![The image presents a scenario where a global retail company is integrating OpenID Connect (OIDC) with IAM for their Amazon EKS cluster, listing four potential steps for successful integration. The options include creating an OIDC provider, enabling OIDC for the cluster, using AWS SSO, and directly associating IAM roles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864092/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/oidc-integration-amazon-eks-steps.jpg)
+![The image presents a scenario where a global retail company is integrating OpenID Connect (OIDC) with IAM for their Amazon EKS cluster, listing four potential steps for successful integration. The options include creating an OIDC provider, enabling OIDC for the cluster, using AWS SSO, and directly associating IAM roles.](https://kodekloud.com/kk-media/image/upload/v1752864092/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/oidc-integration-amazon-eks-steps.jpg)
 
 Other alternatives, such as AWS Single Sign-On (SSO) or directly associating IAM roles with nodes, may not be as secure. While AWS is moving toward direct pod-level IAM associations with the Pod Identity Service, the current best practice is to use Kubernetes service accounts to map roles.
 
@@ -52,25 +52,25 @@ Proper IAM integration involves several distinct role assignments that work coll
 
 Before creating an EKS cluster, assign an IAM role that includes the Amazon EKS cluster policy. This role enables the control plane (e.g., cloud controllers) to interact with AWS resources such as EC2 instances and Elastic Load Balancers. For instance, if new EC2 instances are launched to host additional containers, the cluster role must have the appropriate permissions to manage these resources.
 
-![The image is a question about essential permissions for an Amazon EKS cluster IAM role, with four options related to managing AWS resources and user access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864093/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/eks-cluster-iam-role-permissions.jpg)
+![The image is a question about essential permissions for an Amazon EKS cluster IAM role, with four options related to managing AWS resources and user access.](https://kodekloud.com/kk-media/image/upload/v1752864093/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/eks-cluster-iam-role-permissions.jpg)
 
 ### Node IAM Roles
 
 Worker nodes (typically EC2 instances in your EKS cluster) require an IAM role for registration with the control plane as well as to access other AWS services—such as ECR for pulling container images and CloudWatch for logging. These roles should be precisely scoped to allow only the required permissions.
 
-![The image describes a scenario where a retail company is deploying a microservices application on Amazon EKS, requiring an IAM role for worker nodes. It lists four potential permissions for the Amazon EKS node IAM role to function correctly.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864095/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/retail-microservices-eks-iam-role.jpg)
+![The image describes a scenario where a retail company is deploying a microservices application on Amazon EKS, requiring an IAM role for worker nodes. It lists four potential permissions for the Amazon EKS node IAM role to function correctly.](https://kodekloud.com/kk-media/image/upload/v1752864095/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/retail-microservices-eks-iam-role.jpg)
 
 ### Pod Execution Roles
 
 The pod execution role allows individual pods to assume an IAM role and access AWS services independently of the worker node’s role. Even though advances such as the Pod Identity Service are changing the landscape, understanding pod execution roles remains important.
 
-![The image presents a scenario about a healthcare company deploying an application on Amazon EKS, focusing on the Pod Execution Role. It lists four statements to determine which best describes the role's use in an EKS environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864096/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/healthcare-application-amazon-eks-pod-role.jpg)
+![The image presents a scenario about a healthcare company deploying an application on Amazon EKS, focusing on the Pod Execution Role. It lists four statements to determine which best describes the role's use in an EKS environment.](https://kodekloud.com/kk-media/image/upload/v1752864096/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/healthcare-application-amazon-eks-pod-role.jpg)
 
 ### IAM Connector Role
 
 The IAM connector role integrates the Kubernetes RBAC system with AWS IAM, allowing the Kubernetes cluster to be managed and monitored via the AWS Management Console. This role is essential for achieving seamless visual management.
 
-![The image presents a scenario about a global retail company using Amazon EKS and explores the purpose of the IAM connector role, offering four options for its use in an EKS environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864098/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/global-retail-amazon-eks-iam-role.jpg)
+![The image presents a scenario about a global retail company using Amazon EKS and explores the purpose of the IAM connector role, offering four options for its use in an EKS environment.](https://kodekloud.com/kk-media/image/upload/v1752864098/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/global-retail-amazon-eks-iam-role.jpg)
 
 > **lightbulb** These distinct roles—cluster, node, pod execution, and connector—work together to ensure your Kubernetes workloads have necessary permissions while maintaining robust security boundaries.
 
@@ -84,7 +84,7 @@ When deploying EKS, you must choose the appropriate type of worker nodes dependi
 * **Managed Node Groups:** AWS automatically applies operating system security patches and supports features like auto-scaling, reducing management effort.
 * **Fargate Pods:** AWS manages the underlying operating system entirely, further reducing your security responsibilities.
 
-![The image is a diagram comparing responsibilities between AWS and customers for self-managed workers and managed node groups in a Kubernetes environment. It uses color coding to differentiate between AWS and customer responsibilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864099/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/aws-customers-kubernetes-responsibilities-diagram.jpg)
+![The image is a diagram comparing responsibilities between AWS and customers for self-managed workers and managed node groups in a Kubernetes environment. It uses color coding to differentiate between AWS and customer responsibilities.](https://kodekloud.com/kk-media/image/upload/v1752864099/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/aws-customers-kubernetes-responsibilities-diagram.jpg)
 
 For most deployments—especially those focused on reducing management overhead while maintaining security—managed node groups offer an attractive option.
 
@@ -92,7 +92,7 @@ Consider a scenario where a healthcare company opts for managed node groups to b
 
 Conversely, self-managed nodes offer the flexibility needed for applications that require custom compliance configurations, albeit at the cost of increased management.
 
-![The image outlines considerations for using self-managed nodes with Amazon EKS, highlighting aspects like automatic registration, control over EC2 instances, integration limitations, and AWS backup solutions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864100/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/self-managed-nodes-amazon-eks-considerations.jpg)
+![The image outlines considerations for using self-managed nodes with Amazon EKS, highlighting aspects like automatic registration, control over EC2 instances, integration limitations, and AWS backup solutions.](https://kodekloud.com/kk-media/image/upload/v1752864100/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/self-managed-nodes-amazon-eks-considerations.jpg)
 
 ***
 
@@ -105,7 +105,7 @@ Regulatory compliance and security best practices require detailed logging of al
 * Enable logging for the API server, controller manager, and scheduler.
 * Configure CloudWatch Logs to capture these events, simplifying auditing and monitoring.
 
-![The image outlines steps for a financial institution to ensure detailed logging in an Amazon EKS cluster, including enabling CloudWatch Logs, AWS X-Ray, configuring AWS Lambda, and using Amazon Kinesis with QuickSight.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864102/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/financial-institution-eks-logging-steps.jpg)
+![The image outlines steps for a financial institution to ensure detailed logging in an Amazon EKS cluster, including enabling CloudWatch Logs, AWS X-Ray, configuring AWS Lambda, and using Amazon Kinesis with QuickSight.](https://kodekloud.com/kk-media/image/upload/v1752864102/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/financial-institution-eks-logging-steps.jpg)
 
 ### Data Protection
 
@@ -115,7 +115,7 @@ To secure data both in transit and at rest:
 * Configure your storage class with the encrypted parameter set to true for EBS volumes.
 * Use encrypted EFS configurations for secure shared file storage.
 
-![The image presents a scenario where an e-commerce company plans to deploy microservices on Amazon EKS and seeks to ensure data encryption. It lists four steps for encrypting data within EKS, including using AWS KMS, manual encryption, AWS Certificate Manager, and enabling EC2 instance encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864103/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/ecommerce-microservices-eks-encryption.jpg)
+![The image presents a scenario where an e-commerce company plans to deploy microservices on Amazon EKS and seeks to ensure data encryption. It lists four steps for encrypting data within EKS, including using AWS KMS, manual encryption, AWS Certificate Manager, and enabling EC2 instance encryption.](https://kodekloud.com/kk-media/image/upload/v1752864103/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/ecommerce-microservices-eks-encryption.jpg)
 
 > **triangle-alert** Without KMS integration, Kubernetes secrets are simply base64 encoded and do not provide true encryption—ensuring proper encryption is critical for protecting sensitive data.
 
@@ -125,12 +125,12 @@ For containerized storage:
 
 * **EBS Volumes:** Use the EBS CSI driver with your Storage Class defined to enable encryption by default when persistent volumes are dynamically provisioned.
 
-![The image presents a scenario where a global finance company is deploying an application on Amazon EKS and needs to ensure data-at-rest encryption on EBS volumes. It lists four steps the company could take to achieve this encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864104/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-eks-ebs-encryption-steps.jpg)
+![The image presents a scenario where a global finance company is deploying an application on Amazon EKS and needs to ensure data-at-rest encryption on EBS volumes. It lists four steps the company could take to achieve this encryption.](https://kodekloud.com/kk-media/image/upload/v1752864104/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864104/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-eks-ebs-encryption-steps.jpg)
 
 * **EFS:** Ensure storage classes or PersistentVolume definitions are configured to enforce data encryption.
 * **FSx for Lustre or OpenZFS:** Although many FSx solutions are encrypted by default, review the CSI driver configuration to confirm proper encryption parameters.
 
-![The image is a diagram illustrating the integration of Amazon EMR on EKS with FSx for Lustre, showing the workflow from a developer submitting a Spark job to the dynamic provisioning of a Lustre filesystem, with components like Kubernetes Scheduler and Persistent Volume Claims.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864105/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-emr-eks-fsx-lustre-diagram.jpg)
+![The image is a diagram illustrating the integration of Amazon EMR on EKS with FSx for Lustre, showing the workflow from a developer submitting a Spark job to the dynamic provisioning of a Lustre filesystem, with components like Kubernetes Scheduler and Persistent Volume Claims.](https://kodekloud.com/kk-media/image/upload/v1752864105/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864105/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-emr-eks-fsx-lustre-diagram.jpg)
 
 ***
 
@@ -142,11 +142,11 @@ Kubernetes is not inherently multi-tenant because its control plane is shared by
 * Implementing role-based access control (RBAC) to isolate tenant resources.
 * Applying resource quotas and limit ranges to manage resource consumption effectively.
 
-![The image is a diagram illustrating a multi-tenancy architecture using Elastic Kubernetes Service, showing how different tenants interact with a SaaS application through namespaces, microservices, and DynamoDB tables. It includes components like IAM roles, ingress resources, and AWS deployment tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864106/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/multi-tenancy-architecture-eks-diagram.jpg)
+![The image is a diagram illustrating a multi-tenancy architecture using Elastic Kubernetes Service, showing how different tenants interact with a SaaS application through namespaces, microservices, and DynamoDB tables. It includes components like IAM roles, ingress resources, and AWS deployment tools.](https://kodekloud.com/kk-media/image/upload/v1752864106/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/multi-tenancy-architecture-eks-diagram.jpg)
 
 For enhanced security in multi-tenancy, it is recommended to use a single cluster with logically isolated namespaces combined with strict RBAC controls rather than operating multiple clusters or segregating by instance type.
 
-![The image presents a scenario where a software company is considering different approaches to achieve secure multi-tenancy in Amazon EKS clusters, listing four options for implementation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864108/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/secure-multi-tenancy-amazon-eks-options.jpg)
+![The image presents a scenario where a software company is considering different approaches to achieve secure multi-tenancy in Amazon EKS clusters, listing four options for implementation.](https://kodekloud.com/kk-media/image/upload/v1752864108/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/secure-multi-tenancy-amazon-eks-options.jpg)
 
 ***
 
@@ -157,18 +157,18 @@ By default, Kubernetes allows all pod-to-pod communication within the cluster. T
 * Leverage the Amazon VPC Container Network Interface (CNI) plugin that assigns each pod its own IP address.
 * Implement Kubernetes Network Policies to limit both inbound and outbound communications between pods.
 
-![The image shows a configuration screen for Amazon VPC CNI within the Elastic Kubernetes Service, focusing on network security and policy settings. It includes options for selecting versions, IAM roles, and configuration settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864109/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-vpc-cni-eks-configuration.jpg)
+![The image shows a configuration screen for Amazon VPC CNI within the Elastic Kubernetes Service, focusing on network security and policy settings. It includes options for selecting versions, IAM roles, and configuration settings.](https://kodekloud.com/kk-media/image/upload/v1752864109/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-vpc-cni-eks-configuration.jpg)
 
 For example, if fine-grained pod-level network restrictions are required, use the VPC CNI integration which allows security groups to be associated with pod ENIs:
 
-![The image is a diagram illustrating network security groups within an Elastic Kubernetes Service (EKS) setup, showing IP addresses and ENI configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864110/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/network-security-groups-eks-diagram.jpg)
+![The image is a diagram illustrating network security groups within an Elastic Kubernetes Service (EKS) setup, showing IP addresses and ENI configurations.](https://kodekloud.com/kk-media/image/upload/v1752864110/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/network-security-groups-eks-diagram.jpg)
 
 When designing your network controls:
 
 * Avoid assigning individual security groups directly to each pod (this is not yet the norm).
 * Instead, group pods by namespace and combine Kubernetes Network Policies with VPC-level security groups.
 
-![The image presents a scenario where an e-commerce company is deploying a microservices-based application on Amazon EKS and is considering using Security Groups for pod-level network policies. It lists four approaches for implementing these policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864112/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/ecommerce-microservices-eks-security-groups.jpg)
+![The image presents a scenario where an e-commerce company is deploying a microservices-based application on Amazon EKS and is considering using Security Groups for pod-level network policies. It lists four approaches for implementing these policies.](https://kodekloud.com/kk-media/image/upload/v1752864112/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/ecommerce-microservices-eks-security-groups.jpg)
 
 ***
 
@@ -176,21 +176,21 @@ When designing your network controls:
 
 To secure data in transit between services, many organizations deploy a service mesh. AWS App Mesh is one solution that implements mutual TLS (mTLS) for secure service-to-service communication within EKS. Sidecar proxies, such as Envoy, handle encryption seamlessly and protect all intra-cluster traffic without requiring significant changes to your application configurations.
 
-![The image is a diagram illustrating an Elastic Kubernetes Service setup with a service mesh for encryption, showing two VPCs (A and B) connected via VPC peering, each containing various components like envoy, yelb-ui, yelb-appserver, redis, and postgres.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864113/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/elastic-kubernetes-service-diagram.jpg)
+![The image is a diagram illustrating an Elastic Kubernetes Service setup with a service mesh for encryption, showing two VPCs (A and B) connected via VPC peering, each containing various components like envoy, yelb-ui, yelb-appserver, redis, and postgres.](https://kodekloud.com/kk-media/image/upload/v1752864113/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/elastic-kubernetes-service-diagram.jpg)
 
 When configuring a service mesh:
 
 * Enable AWS App Mesh and set up mTLS across all services.
 * Avoid deploying without TLS support; relying solely on EKS-level encryption may not offer comprehensive protection.
 
-![The image presents a scenario where a financial institution is considering service mesh solutions for end-to-end encryption on Amazon EKS. It lists four options, including using AWS App Mesh with mTLS and other configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864114/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/service-mesh-encryption-aws-eks.jpg)
+![The image presents a scenario where a financial institution is considering service mesh solutions for end-to-end encryption on Amazon EKS. It lists four options, including using AWS App Mesh with mTLS and other configurations.](https://kodekloud.com/kk-media/image/upload/v1752864114/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/service-mesh-encryption-aws-eks.jpg)
 
 For applications with high throughput and low latency requirements:
 
 * Use an Application Load Balancer (ALB) with the ALB Ingress Controller for standard HTTP/HTTPS traffic with intelligent routing.
 * For ultra-high throughput and minimal overhead, consider a Network Load Balancer (NLB), though ALB is generally recommended for its advanced routing capabilities.
 
-![The image is a diagram illustrating the architecture of an Elastic Kubernetes Service (EKS) with encryption, ingress controllers, and load balancers. It shows the flow from an API server to nodes and pods, detailing the use of application load balancers and target groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864115/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/eks-architecture-diagram-encryption-load-balancers.jpg)
+![The image is a diagram illustrating the architecture of an Elastic Kubernetes Service (EKS) with encryption, ingress controllers, and load balancers. It shows the flow from an API server to nodes and pods, detailing the use of application load balancers and target groups.](https://kodekloud.com/kk-media/image/upload/v1752864115/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/eks-architecture-diagram-encryption-load-balancers.jpg)
 
 For example, a global retail company using ALB can benefit from the automatic provisioning of the ALB Ingress Controller, which directs traffic efficiently to the correct pods.
 
@@ -203,14 +203,14 @@ When working with Container Storage Interface (CSI) drivers for persistent stora
 * **EBS Volumes:**\
   Ensure your Storage Class is defined with encryption enabled. The EBS CSI driver will provision encrypted volumes when the encrypted parameter is set to true.
 
-![The image presents a scenario where a global finance company is deploying an application on Amazon EKS and needs to ensure data-at-rest encryption on EBS volumes. It lists four steps the company could take to achieve this encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864104/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-eks-ebs-encryption-steps.jpg)
+![The image presents a scenario where a global finance company is deploying an application on Amazon EKS and needs to ensure data-at-rest encryption on EBS volumes. It lists four steps the company could take to achieve this encryption.](https://kodekloud.com/kk-media/image/upload/v1752864104/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864104/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-eks-ebs-encryption-steps.jpg)
 
 * **EFS:**\
   Configure the Storage Class or PersistentVolume definitions to require encryption for shared file systems.
 * **FSx for Lustre or OpenZFS:**\
   Although many FSx solutions are encrypted by default, verify the CSI driver configuration to ensure encryption settings are correctly specified.
 
-![The image is a diagram illustrating the integration of Amazon EMR on EKS with FSx for Lustre, showing the workflow from a developer submitting a Spark job to the dynamic provisioning of a Lustre filesystem, with components like Kubernetes Scheduler and Persistent Volume Claims.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864105/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-emr-eks-fsx-lustre-diagram.jpg)
+![The image is a diagram illustrating the integration of Amazon EMR on EKS with FSx for Lustre, showing the workflow from a developer submitting a Spark job to the dynamic provisioning of a Lustre filesystem, with components like Kubernetes Scheduler and Persistent Volume Claims.](https://kodekloud.com/kk-media/image/upload/v1752864105/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752864105/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-emr-eks-fsx-lustre-diagram.jpg)
 
 ***
 
@@ -223,14 +223,14 @@ Review the following comprehensive diagram that combines all of the discussed co
 * Integration with essential components like load balancers, NAT gateways, endpoints, and AWS services such as S3, SES, and CloudTrail.
 * Inclusion of security services like AWS Config, Systems Manager, and Certificate Manager.
 
-![The image is a diagram illustrating the architecture of an AWS Elastic Kubernetes Service (EKS) setup, showing the interaction between on-premises networks, the internet, and AWS components like EC2 instances and Fargate pods. It highlights how node options in EKS affect security responsibilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864117/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-eks-architecture-diagram.jpg)
+![The image is a diagram illustrating the architecture of an AWS Elastic Kubernetes Service (EKS) setup, showing the interaction between on-premises networks, the internet, and AWS components like EC2 instances and Fargate pods. It highlights how node options in EKS affect security responsibilities.](https://kodekloud.com/kk-media/image/upload/v1752864117/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/amazon-eks-architecture-diagram.jpg)
 
 This integrated architecture demonstrates the layered security and scalability provided by EKS. A multinational corporation evaluating EKS versus self-hosted Kubernetes will note several advantages:
 
 1. Automatic patching and management of the control plane.
 2. Native integrations with CloudWatch, IAM, and VPCs for enhanced security and operational simplicity.
 
-![The image presents a scenario where a corporation is evaluating Amazon Elastic Kubernetes Service (EKS) against self-hosted Kubernetes, highlighting potential advantages in security, scalability, and management. It lists five statements, asking which two are primary advantages of using EKS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864118/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/eks-vs-self-hosted-kubernetes.jpg)
+![The image presents a scenario where a corporation is evaluating Amazon Elastic Kubernetes Service (EKS) against self-hosted Kubernetes, highlighting potential advantages in security, scalability, and management. It lists five statements, asking which two are primary advantages of using EKS.](https://kodekloud.com/kk-media/image/upload/v1752864118/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Security-on-Compute-Services-Part-4/eks-vs-self-hosted-kubernetes.jpg)
 
 ***
 

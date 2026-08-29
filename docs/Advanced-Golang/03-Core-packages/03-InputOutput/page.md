@@ -6,11 +6,11 @@ This article provides a comprehensive guide on Gos I/O library, focusing on Read
 
 Welcome to this comprehensive guide on Go’s I/O library. This tutorial will help you understand the fundamental concepts of input (Reader) and output (Writer) interfaces along with practical examples for file handling, HTTP responses, database operations, and more. The Go standard library abstracts these tasks into common interfaces, making your code more modular and flexible.
 
-![The image is a slide discussing Input/Output (I/O) processes, highlighting their role in tasks like file handling and database operations, and mentioning the standard library's role in abstracting these processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868726/notes-assets/images/Advanced-Golang-InputOutput/io-processes-file-handling-database.jpg)
+![The image is a slide discussing Input/Output (I/O) processes, highlighting their role in tasks like file handling and database operations, and mentioning the standard library's role in abstracting these processes.](https://kodekloud.com/kk-media/image/upload/v1752868726/notes-assets/images/Advanced-Golang-InputOutput/io-processes-file-handling-database.jpg)
 
 We will start by exploring two primary interfaces in the I/O library: the Reader interface and the Writer interface. Before diving into these specific interfaces, let's quickly review how interfaces work in Go.
 
-![The image is a slide titled "io interfaces" listing two items: "The Reader interface" and "The Writer interface."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868727/notes-assets/images/Advanced-Golang-InputOutput/io-interfaces-reader-writer.jpg)
+![The image is a slide titled "io interfaces" listing two items: "The Reader interface" and "The Writer interface."](https://kodekloud.com/kk-media/image/upload/v1752868727/notes-assets/images/Advanced-Golang-InputOutput/io-interfaces-reader-writer.jpg)
 
 ***
 

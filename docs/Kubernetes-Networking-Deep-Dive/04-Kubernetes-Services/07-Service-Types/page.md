@@ -6,9 +6,7 @@ This article explains Kubernetes service types, detailing how they route network
 
 Kubernetes service types are powerful abstractions that expose applications running inside a cluster to both internal and external clients. Each service type determines how network traffic is routed to your pods. In this guide, we’ll cover the four primary service types—ClusterIP, NodePort, LoadBalancer, and ExternalName—as well as Headless Services for direct pod addressing.
 
-<Frame>
-  ![The image is a diagram showing four types of services: ClusterIP, NodePort, ExternalName, and LoadBalancer, arranged around a central circle labeled "Service Types."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880355/notes-assets/images/Kubernetes-Networking-Deep-Dive-Service-Types/service-types-clusterip-nodeport-loadbalancer.jpg)
-</Frame>
+![The image is a diagram showing four types of services: ClusterIP, NodePort, ExternalName, and LoadBalancer, arranged around a central circle labeled "Service Types."](https://kodekloud.com/kk-media/image/upload/v1752880355/notes-assets/images/Kubernetes-Networking-Deep-Dive-Service-Types/service-types-clusterip-nodeport-loadbalancer.jpg)
 
 Every Service resource sets its type in `spec.type`. Use this template to get started:
 

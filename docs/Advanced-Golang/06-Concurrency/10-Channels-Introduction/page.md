@@ -12,11 +12,11 @@ In this lesson, we explore channels in Go and how they enable seamless communica
 
 Traditionally, multithreaded programming involves protecting shared data structures using locks. Threads often compete for these locks, which can lead to complexities and performance bottlenecks. In contrast, Go's concurrency model leverages goroutines and channels to handle data exchange more elegantly. Instead of managing locks explicitly, developers pass references or copies of data between goroutines using channels—ensuring that only one goroutine interacts with a particular piece of data at any given time.
 
-![The image is a slide discussing channels in programming, highlighting a quote by Rob Pike about sharing memory by communicating, and contrasting it with traditional methods like threads and mutexes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868700/notes-assets/images/Advanced-Golang-Channels-Introduction/programming-channels-rob-pike-quote.jpg)
+![The image is a slide discussing channels in programming, highlighting a quote by Rob Pike about sharing memory by communicating, and contrasting it with traditional methods like threads and mutexes.](https://kodekloud.com/kk-media/image/upload/v1752868700/notes-assets/images/Advanced-Golang-Channels-Introduction/programming-channels-rob-pike-quote.jpg)
 
 Channels support bidirectional communication by default, meaning that you can both send and receive values on the same channel. This bidirectional capability allows goroutines to synchronize without the need for explicit locks or condition variables.
 
-![The image is a slide discussing channels, highlighting that communication is bidirectional by default, allowing sending and receiving from the same channel. It also notes that channels send and receive until the other side is ready.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868701/notes-assets/images/Advanced-Golang-Channels-Introduction/bidirectional-communication-channels-slide.jpg)
+![The image is a slide discussing channels, highlighting that communication is bidirectional by default, allowing sending and receiving from the same channel. It also notes that channels send and receive until the other side is ready.](https://kodekloud.com/kk-media/image/upload/v1752868701/notes-assets/images/Advanced-Golang-Channels-Introduction/bidirectional-communication-channels-slide.jpg)
 
 ## Declaring and Initializing Channels
 
@@ -32,7 +32,7 @@ c = make(chan string)
 
 Channels in Go offer several built-in operations that simplify the management of concurrent tasks. These operations include sending and receiving values, closing the channel, and checking its capacity or current length.
 
-![The image is a slide titled "Channel Operations," listing four operations: sending a value, receiving a value, closing a channel, and querying the buffer of a channel.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868702/notes-assets/images/Advanced-Golang-Channels-Introduction/channel-operations-send-receive-close-query.jpg)
+![The image is a slide titled "Channel Operations," listing four operations: sending a value, receiving a value, closing a channel, and querying the buffer of a channel.](https://kodekloud.com/kk-media/image/upload/v1752868702/notes-assets/images/Advanced-Golang-Channels-Introduction/channel-operations-send-receive-close-query.jpg)
 
 Let's dive into these operations:
 

@@ -242,9 +242,7 @@ Alternatively, use the Backstage UI to "Register Existing Component" and paste t
 3. Use the Backstage UI (“Register Existing Component”) to import an entity by URL — convenient for quick imports.
 4. Use templates or repository-scanning integrations to auto-create and register `catalog-info.yaml` files across many repositories.
 
-<Callout icon="lightbulb">
-  After changing `app-config.yaml`, restart the Backstage backend (or `yarn dev` when developing) so new locations are picked up. If you update a `catalog-info.yaml` in a remote repository, use the Catalog's refresh action to fetch updates sooner than the configured polling interval.
-</Callout>
+> **lightbulb** After changing `app-config.yaml`, restart the Backstage backend (or `yarn dev` when developing) so new locations are picked up. If you update a `catalog-info.yaml` in a remote repository, use the Catalog's refresh action to fetch updates sooner than the configured polling interval.
 
 ## Links and references
 
@@ -254,11 +252,9 @@ Alternatively, use the Backstage UI to "Register Existing Component" and paste t
 
 This completes the demo for registering a component with Backstage.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/f07e27d6-12c8-4688-a61b-a1fc9df9b291" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/f07e27d6-12c8-4688-a61b-a1fc9df9b291)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/71558f5a-be40-4d55-836f-2d73ac1c8aea" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/71558f5a-be40-4d55-836f-2d73ac1c8aea)
 
 
 # Demo Relationships
@@ -313,9 +309,7 @@ Then open the repository on GitHub to confirm the entity file is present.
 
 In Backstage, go to Create → Register Existing Component and point to the GitHub repo URL (or your configured file location). If Backstage previously fetched the file and returned an error due to a transient issue (such as a typo you already fixed), wait a minute and try Analyze again.
 
-<Callout icon="lightbulb">
-  Backstage may cache a location's content for a short period. If you fixed a typo in your repository and the UI still shows the old error, wait a minute and click Analyze again before re-importing.
-</Callout>
+> **lightbulb** Backstage may cache a location's content for a short period. If you fixed a typo in your repository and the UI still shows the old error, wait a minute and click Analyze again before re-importing.
 
 <Frame>
   <img alt="A Backstage web UI showing the &#x22;Create a new component&#x22; page with a left navigation menu and a central Templates area. The main card displays an &#x22;Example Node.js Template&#x22; with search and filter options on the left." />
@@ -385,9 +379,7 @@ catalog:
       target: ../../examples/entities.yaml
 ```
 
-<Callout icon="warning">
-  Any changes to `app-config.yaml` require you to restart the Backstage dev server for the new rules to take effect.
-</Callout>
+> **warning** Any changes to `app-config.yaml` require you to restart the Backstage dev server for the new rules to take effect.
 
 After restarting, re-import the location. If you want faster iteration, unregister the location in the UI and register it again to force immediate processing.
 
@@ -636,8 +628,6 @@ Ensure `Resource` is permitted by your catalog rules. After importing, the `inve
 
 API entities and more advanced relationship modeling (custom relations, annotations, and entity refs across namespaces) are useful next topics to explore as you expand your catalog.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/9d4c3f12-387c-4851-b681-c49ad9bc636e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/9d4c3f12-387c-4851-b681-c49ad9bc636e)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/1dbf42bd-8fab-446b-91f1-dcea0ff429f7" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/1dbf42bd-8fab-446b-91f1-dcea0ff429f7)

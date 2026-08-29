@@ -50,9 +50,7 @@ Best practices for `plan` in pipelines:
 * Persist the produced plan as an artifact so the exact plan can be consumed by the `apply` stage.
 * Always run `plan` before any `apply`.
 
-<Callout icon="lightbulb">
-  Best practice: Run plans automatically (on every commit or PR) but gate `apply` with explicit approvals for non-development environments. This preserves visibility while limiting destructive actions.
-</Callout>
+> **lightbulb** Best practice: Run plans automatically (on every commit or PR) but gate `apply` with explicit approvals for non-development environments. This preserves visibility while limiting destructive actions.
 
 ## Plan vs Apply separation and approvals
 
@@ -93,9 +91,7 @@ Notes:
 * `--auto-approve` is required for non-interactive pipelines but should only be used after an explicit approval gate.
 * `apply` is production-impacting — restrict it to authorized runs and environments.
 
-<Callout icon="warning">
-  Warning: Never enable automated `apply` in production pipelines without a gated approval. `--auto-approve` will apply changes immediately and cannot prompt for interactive confirmation.
-</Callout>
+> **warning** Warning: Never enable automated `apply` in production pipelines without a gated approval. `--auto-approve` will apply changes immediately and cannot prompt for interactive confirmation.
 
 ## Quick reference: init, plan, apply
 
@@ -122,6 +118,4 @@ By separating plan and apply and leveraging Azure DevOps approvals and environme
 * [Azure DevOps Pipelines documentation](https://learn.microsoft.com/azure/devops/pipelines/)
 * [Azure Provider for Terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/66c0006d-c716-4381-8b15-e4edb4f4fbe5/lesson/1b6f2b55-57ac-447e-ae59-b23ae44e74a6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/66c0006d-c716-4381-8b15-e4edb4f4fbe5/lesson/1b6f2b55-57ac-447e-ae59-b23ae44e74a6)

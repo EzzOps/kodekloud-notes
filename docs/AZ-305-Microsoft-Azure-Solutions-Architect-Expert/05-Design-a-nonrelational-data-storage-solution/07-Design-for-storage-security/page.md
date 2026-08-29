@@ -20,7 +20,7 @@ Account keys provide full control over your storage account, including deletion,
 
 Azure Storage comes with an integrated firewall to restrict access to designated virtual networks and IP ranges. By default, access is permitted from all networks; however, you can tighten security by modifying settings to allow only selected virtual networks or specifying particular IP ranges.
 
-![The image is a visual guide on storage security best practices in Azure, highlighting limited access, using SAS instead of sharing account keys, and enabling firewall policies. It features a step-like design with colored blocks and text annotations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867149/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-storage-security/azure-storage-security-best-practices.jpg)
+![The image is a visual guide on storage security best practices in Azure, highlighting limited access, using SAS instead of sharing account keys, and enabling firewall policies. It features a step-like design with colored blocks and text annotations.](https://kodekloud.com/kk-media/image/upload/v1752867149/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-storage-security/azure-storage-security-best-practices.jpg)
 
 ## Restrict Access Using Service Endpoints
 
@@ -34,13 +34,13 @@ For hybrid environments where secure access from on-premises systems through Exp
 
 Customer-managed keys (CMK) allow you to control the encryption keys that secure your data, an essential feature for organizations with strict compliance and key rotation requirements. To utilize CMK, navigate to the encryption settings in your storage account and select a key from one of your Azure Key Vaults.
 
-![The image outlines best practices for storage security in Azure, including using SAS, enabling firewall policies, and restricting access with service endpoints. It features a flowchart design with various security tips.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867150/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-storage-security/azure-storage-security-best-practices-2.jpg)
+![The image outlines best practices for storage security in Azure, including using SAS, enabling firewall policies, and restricting access with service endpoints. It features a flowchart design with various security tips.](https://kodekloud.com/kk-media/image/upload/v1752867150/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-storage-security/azure-storage-security-best-practices-2.jpg)
 
 ## Enable Secure Transfer
 
 Enforcing secure transfers ensures that all connections to your storage account use HTTPS. Any attempts to connect via an insecure channel are automatically blocked. This critical security feature is enabled by default when a storage account is created.
 
-![The image shows a Microsoft Azure portal interface focused on the encryption settings for a storage account named "eventanalyticsab46." It displays options for encryption selection, key selection, and identity type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867151/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-storage-security/azure-portal-encryption-settings-eventanalyticsab46.jpg)
+![The image shows a Microsoft Azure portal interface focused on the encryption settings for a storage account named "eventanalyticsab46." It displays options for encryption selection, key selection, and identity type.](https://kodekloud.com/kk-media/image/upload/v1752867151/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-storage-security/azure-portal-encryption-settings-eventanalyticsab46.jpg)
 
 ## Conclusion
 

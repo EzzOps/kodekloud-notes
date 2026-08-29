@@ -10,7 +10,7 @@ In this article, we explore OpenSearch—a robust tool forked from Elasticsearch
 
 OpenSearch empowers you to ingest, secure, search, aggregate, view, and analyze your data efficiently. Its robust features are particularly useful for log analytics and enhancing search functionality in modern applications—especially when traditional relational databases fall short.
 
-![The image is a diagram illustrating the features of OpenSearch, including ingesting, securing, searching, aggregating, viewing, and analyzing data, with applications in log analytics, application search, and enterprise search.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858639/notes-assets/images/AWS-Certified-Developer-Associate-OpenSearch/opensearch-features-diagram.jpg)
+![The image is a diagram illustrating the features of OpenSearch, including ingesting, securing, searching, aggregating, viewing, and analyzing data, with applications in log analytics, application search, and enterprise search.](https://kodekloud.com/kk-media/image/upload/v1752858639/notes-assets/images/AWS-Certified-Developer-Associate-OpenSearch/opensearch-features-diagram.jpg)
 
 > **lightbulb** OpenSearch allows efficient queries on any field, making it ideal for versatile search functionalities.
 
@@ -23,11 +23,11 @@ OpenSearch is provided as a fully managed service, simplifying the tasks of depl
 
 This flexibility, combined with its ability to query on any field, makes OpenSearch a preferred solution for applications that require dynamic search and log analytics capabilities.
 
-![The image describes OpenSearch as a fully managed service supporting two modes: Managed Cluster and Serverless Cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858641/notes-assets/images/AWS-Certified-Developer-Associate-OpenSearch/opensearch-managed-serverless-cluster.jpg)
+![The image describes OpenSearch as a fully managed service supporting two modes: Managed Cluster and Serverless Cluster.](https://kodekloud.com/kk-media/image/upload/v1752858641/notes-assets/images/AWS-Certified-Developer-Associate-OpenSearch/opensearch-managed-serverless-cluster.jpg)
 
 When compared to services like DynamoDB—which restrict queries to primary keys or predefined indexes—and relational databases that rely on specific column indexes, OpenSearch stands out. It enables comprehensive queries across all attributes without the need for extra configuration.
 
-![The image is a comparison of query capabilities between DynamoDB, relational databases, and OpenSearch, highlighting OpenSearch's ability to efficiently query data on any field or attribute.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858643/notes-assets/images/AWS-Certified-Developer-Associate-OpenSearch/query-capabilities-dynamodb-relational-opensearch.jpg)
+![The image is a comparison of query capabilities between DynamoDB, relational databases, and OpenSearch, highlighting OpenSearch's ability to efficiently query data on any field or attribute.](https://kodekloud.com/kk-media/image/upload/v1752858643/notes-assets/images/AWS-Certified-Developer-Associate-OpenSearch/query-capabilities-dynamodb-relational-opensearch.jpg)
 
 ## Integrating OpenSearch into Your Application
 
@@ -35,7 +35,7 @@ Integrating OpenSearch into your application architecture is straightforward. Im
 
 When you insert, update, or delete an entry in your primary database, OpenSearch receives a corresponding update. Therefore, when you perform searches, your application leverages the indexed copy in OpenSearch to deliver fast and comprehensive results.
 
-![The image is a diagram showing a data flow from Amazon DynamoDB and RDS as primary databases to OpenSearch, with user interactions for creating, updating, deleting, and getting data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858644/notes-assets/images/AWS-Certified-Developer-Associate-OpenSearch/dynamodb-rds-opensearch-data-flow-diagram.jpg)
+![The image is a diagram showing a data flow from Amazon DynamoDB and RDS as primary databases to OpenSearch, with user interactions for creating, updating, deleting, and getting data.](https://kodekloud.com/kk-media/image/upload/v1752858644/notes-assets/images/AWS-Certified-Developer-Associate-OpenSearch/dynamodb-rds-opensearch-data-flow-diagram.jpg)
 
 > **lightbulb** Ensure continuous synchronization between your primary database and OpenSearch to maintain data consistency across your applications.
 
@@ -43,6 +43,6 @@ When you insert, update, or delete an entry in your primary database, OpenSearch
 
 OpenSearch, a fork of Elasticsearch managed by AWS, offers a fully managed service that streamlines the deployment, operation, and scaling of search clusters. Its unique ability to conduct efficient queries on any field makes it an excellent choice for log analytics and dynamic search functionalities.
 
-![The image is a summary slide highlighting two points: OpenSearch is a fork of Elasticsearch, and it is a fully managed service for deploying, operating, and scaling OpenSearch clusters.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858645/notes-assets/images/AWS-Certified-Developer-Associate-OpenSearch/opensearch-elasticsearch-summary-slide.jpg)
+![The image is a summary slide highlighting two points: OpenSearch is a fork of Elasticsearch, and it is a fully managed service for deploying, operating, and scaling OpenSearch clusters.](https://kodekloud.com/kk-media/image/upload/v1752858645/notes-assets/images/AWS-Certified-Developer-Associate-OpenSearch/opensearch-elasticsearch-summary-slide.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/ac3fe785-4e7a-4f57-ae16-99fcd3cfde7e/lesson/7751f975-b0eb-4451-9b8a-afeb8dda15d5)

@@ -6,9 +6,7 @@ This guide explains how to build and sustain a thriving open source community ar
 
 In this guide, we’ll show you how to cultivate a thriving open source community around your project. Launching your repository is just the beginning—sustained success depends on engaged contributors, transparent governance, and seamless collaboration. A healthy community not only boosts your project’s reputation but also drives innovation and adoption.
 
-<Callout icon="lightbulb">
-  Contributor experience (CX) is as crucial as user experience (UX). Happy contributors become your most passionate advocates.
-</Callout>
+> **lightbulb** Contributor experience (CX) is as crucial as user experience (UX). Happy contributors become your most passionate advocates.
 
 ## Table of Contents
 
@@ -35,13 +33,9 @@ Building trust starts with a respectful, welcoming atmosphere. Reflect on these 
 * Is your Code of Conduct visible, enforced, and linked in key files?
 * Does the community greet newcomers and help them find their first tasks?
 
-<Frame>
-  ![The image shows a search interface with questions related to community building, such as contributors' comfort and code of conduct. It includes icons on the left and a copyright notice for KodexCloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882554/notes-assets/images/Open-Source-for-Beginners-Building-a-Community/community-building-search-interface-kodexcloud.jpg)
-</Frame>
+![The image shows a search interface with questions related to community building, such as contributors' comfort and code of conduct. It includes icons on the left and a copyright notice for KodexCloud.](https://kodekloud.com/kk-media/image/upload/v1752882554/notes-assets/images/Open-Source-for-Beginners-Building-a-Community/community-building-search-interface-kodexcloud.jpg)
 
-<Callout icon="triangle-alert">
-  An ambiguous or unenforced Code of Conduct can lead to misunderstandings and conflict. Keep it up to date and ensure everyone follows it.
-</Callout>
+> **triangle-alert** An ambiguous or unenforced Code of Conduct can lead to misunderstandings and conflict. Keep it up to date and ensure everyone follows it.
 
 ## 2. Access to Knowledge
 
@@ -61,9 +55,7 @@ People join projects with different skill levels. Set clear, realistic expectati
 * Offer mentorship programs or pairing sessions for first-timers.
 * Gradually expose contributors to larger issues as they gain confidence.
 
-<Frame>
-  ![The image shows a diagram with icons of people and speech bubbles containing numbers, labeled "Day 0," suggesting a community-building or communication process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882556/notes-assets/images/Open-Source-for-Beginners-Building-a-Community/community-building-speech-bubbles-diagram.jpg)
-</Frame>
+![The image shows a diagram with icons of people and speech bubbles containing numbers, labeled "Day 0," suggesting a community-building or communication process.](https://kodekloud.com/kk-media/image/upload/v1752882556/notes-assets/images/Open-Source-for-Beginners-Building-a-Community/community-building-speech-bubbles-diagram.jpg)
 
 By fostering a supportive environment, granting easy access to information, and setting achievable milestones, you’ll establish the foundation for a sustainable, engaged open source community. Start applying these practices from day zero to make contributors feel valued and empowered throughout their journey.
 
@@ -73,6 +65,4 @@ By fostering a supportive environment, granting easy access to information, and 
 * [GitHub Community Guidelines](https://docs.github.com/en/site-policy/github-community-guidelines)
 * [Open Source Guides](https://opensource.guide/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/767d06e2-2c02-403c-aa37-6e4a5549e6a6/lesson/bfc496fd-f8ec-4c12-8649-f0a93f4c5598" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/767d06e2-2c02-403c-aa37-6e4a5549e6a6/lesson/bfc496fd-f8ec-4c12-8649-f0a93f4c5598)

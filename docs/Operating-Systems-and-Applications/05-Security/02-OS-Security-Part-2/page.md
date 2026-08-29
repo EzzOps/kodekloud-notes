@@ -25,9 +25,7 @@ Antivirus
 * Quarantines or blocks detected threats to prevent damage and help recovery.
 * Acts as an internal surveillance layer that complements the firewall.
 
-<Callout icon="lightbulb">
-  Modern operating systems include many protections by default — packet filtering, signed-driver checks, and automatic scanning of downloads. These features often run silently to reduce user friction while improving safety.
-</Callout>
+> **lightbulb** Modern operating systems include many protections by default — packet filtering, signed-driver checks, and automatic scanning of downloads. These features often run silently to reduce user friction while improving safety.
 
 Most desktop OSes provide easy controls (for example, macOS has an application-level firewall and options like “block all incoming connections” and “stealth mode”). Mobile platforms rely more on sandboxing, store controls, and automatic scanning rather than separate firewall toggles or traditional antivirus apps.
 
@@ -62,9 +60,7 @@ Common hardening steps:
 | Account lockout & rate limiting          | Prevents brute-force login attempts                     | Configure temporary lockouts after repeated failed logins                       |
 | Logging & monitoring                     | Enables detection and incident response                 | Keep audit logs, configure centralized logging, and enable alerts               |
 
-<Callout icon="warning">
-  Guest accounts and default service accounts are common, easy targets. Disable or remove them unless absolutely needed, and avoid weak default credentials.
-</Callout>
+> **warning** Guest accounts and default service accounts are common, easy targets. Disable or remove them unless absolutely needed, and avoid weak default credentials.
 
 Hardening reduces complexity. If an OS runs 20 services but you only need 5, the other 15 are extra potential targets that may be overlooked during patching or audits. Hardening focuses on running only what is necessary so the system is smaller and easier to secure.
 
@@ -122,6 +118,4 @@ These layers work together to protect confidentiality (who can see data), integr
 
 Use these resources to build and verify secure configurations, implement monitoring, and keep your systems patched. Security is layered: combine perimeter controls (firewalls), internal detection (antivirus), and configuration discipline (hardening) to create a resilient environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/98269c55-06d3-4512-b631-b104a6df02f9/lesson/c36b7fd3-35a7-4eea-b705-d33878aa5d4c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/98269c55-06d3-4512-b631-b104a6df02f9/lesson/c36b7fd3-35a7-4eea-b705-d33878aa5d4c)

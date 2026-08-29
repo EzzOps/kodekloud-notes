@@ -8,9 +8,7 @@ sudo mv vault /usr/local/bin/vault
 vault --version
 ```
 
-<Callout icon="lightbulb">
-  Ensure that `/usr/local/bin` is in your `$PATH` so you can run `vault` without providing the full path.
-</Callout>
+> **lightbulb** Ensure that `/usr/local/bin` is in your `$PATH` so you can run `vault` without providing the full path.
 
 ## 2. Create a Vault System User and Directories
 
@@ -116,9 +114,7 @@ ui        = true
 log_level = "INFO"
 ```
 
-<Callout icon="triangle-alert">
-  For a production setup, **always** enable TLS by adding `tls_cert_file` and `tls_key_file` under the `listener` block.
-</Callout>
+> **triangle-alert** For a production setup, **always** enable TLS by adding `tls_cert_file` and `tls_key_file` under the `listener` block.
 
 ## 5. Start and Verify Vault
 
@@ -175,11 +171,9 @@ You should see AWS KMS auto-unseal messages if IAM and KMS permissions are corre
 
 [packer]: https://www.packer.io
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/bd3e90d0-1ae9-419a-9113-1c1863d62848" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/bd3e90d0-1ae9-419a-9113-1c1863d62848)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/b55773a1-515f-4a4a-ad56-70a8f624c5f2" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/b55773a1-515f-4a4a-ad56-70a8f624c5f2)
 
 
 # Installing and Running Vault Server
@@ -199,9 +193,7 @@ Vault is intentionally platform-agnostic, supporting a wide range of deployment 
 
 ## Supported Platforms
 
-<Frame>
-  ![The image is a slide titled "Installing Vault," explaining that Vault is platform agnostic and can run on various platforms like Kubernetes, cloud-based machines, VMware virtual machines, physical servers, and laptops.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878165/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Installing-and-Running-Vault-Server/installing-vault-platform-agnostic-slide.jpg)
-</Frame>
+![The image is a slide titled "Installing Vault," explaining that Vault is platform agnostic and can run on various platforms like Kubernetes, cloud-based machines, VMware virtual machines, physical servers, and laptops.](https://kodekloud.com/kk-media/image/upload/v1752878165/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Installing-and-Running-Vault-Server/installing-vault-platform-agnostic-slide.jpg)
 
 Vault can run anywhere you need it:
 
@@ -215,9 +207,7 @@ Some security-conscious teams opt for physical servers to isolate Vault’s cryp
 
 ## Supported Operating Systems
 
-<Frame>
-  ![The image is a slide titled "Installing Vault," listing operating systems where Vault is available, including macOS, Windows, Linux, FreeBSD, NetBSD, OpenBSD, and Solaris. It features a pixelated design on the right and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878166/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Installing-and-Running-Vault-Server/installing-vault-operating-systems-slide.jpg)
-</Frame>
+![The image is a slide titled "Installing Vault," listing operating systems where Vault is available, including macOS, Windows, Linux, FreeBSD, NetBSD, OpenBSD, and Solaris. It features a pixelated design on the right and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878166/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Installing-and-Running-Vault-Server/installing-vault-operating-systems-slide.jpg)
 
 Vault binaries are distributed for multiple OS platforms:
 
@@ -232,9 +222,7 @@ Enterprises typically deploy Vault on Linux distributions such as Ubuntu, Amazon
 
 ## Installation Workflow
 
-<Frame>
-  ![The image outlines the steps for installing Vault, including installing Vault, creating a configuration file, initializing Vault, and unsealing Vault. It features a colorful design with a pixelated character in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878167/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Installing-and-Running-Vault-Server/vault-installation-steps-diagram.jpg)
-</Frame>
+![The image outlines the steps for installing Vault, including installing Vault, creating a configuration file, initializing Vault, and unsealing Vault. It features a colorful design with a pixelated character in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878167/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Installing-and-Running-Vault-Server/vault-installation-steps-diagram.jpg)
 
 Follow this sequence for a manual deployment or when scripting an automated install:
 
@@ -246,9 +234,7 @@ Follow this sequence for a manual deployment or when scripting an automated inst
 
 After unsealing, your Vault instance is ready to store secrets or issue dynamic credentials.
 
-<Callout icon="lightbulb">
-  Automating these steps with tools like Terraform, Ansible, or Helm can ensure consistency across environments.
-</Callout>
+> **lightbulb** Automating these steps with tools like Terraform, Ansible, or Helm can ensure consistency across environments.
 
 ## Installing Vault
 
@@ -277,8 +263,6 @@ Deploy Vault as a Kubernetes Deployment with a Service and StatefulSet backing t
 
 ### Manual Download and Installation
 
-<Frame>
-  ![The image is a guide for installing Vault, showing three steps: downloading from HashiCorp, unpackaging to a directory, and setting the path to the executable. It features a computer graphic and a character illustration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878168/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Installing-and-Running-Vault-Server/vault-installation-guide-three-steps.jpg)
-</Frame>
+![The image is a guide for installing Vault, showing three steps: downloading from HashiCorp, unpackaging to a directory, and setting the path to the executable. It features a computer graphic and a character illustration.](https://kodekloud.com/kk-media/image/upload/v1752878168/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Installing-and-Running-Vault-Server/vault-installation-guide-three-steps.jpg)
 
 ```bash theme={null}

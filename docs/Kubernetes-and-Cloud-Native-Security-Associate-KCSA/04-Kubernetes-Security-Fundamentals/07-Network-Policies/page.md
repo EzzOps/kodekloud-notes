@@ -40,9 +40,7 @@ spec:
       command: ["sleep", "3600"]
 ```
 
-<Callout icon="lightbulb">
-  You cannot set Linux capabilities (`capabilities.add`) at the Pod level. To grant capabilities, use a container-level security context.
-</Callout>
+> **lightbulb** You cannot set Linux capabilities (`capabilities.add`) at the Pod level. To grant capabilities, use a container-level security context.
 
 ***
 
@@ -69,9 +67,7 @@ spec:
         privileged: false
 ```
 
-<Callout icon="triangle-alert">
-  Running containers in `privileged` mode grants all Linux capabilities and should be avoided unless absolutely necessary.
-</Callout>
+> **triangle-alert** Running containers in `privileged` mode grants all Linux capabilities and should be avoided unless absolutely necessary.
 
 ***
 
@@ -91,11 +87,9 @@ spec:
 
 Keep practicing with these configurations to strengthen your cluster’s security. See you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/87ba5cde-ab72-444a-a323-6cd6a9d1bafd" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/87ba5cde-ab72-444a-a323-6cd6a9d1bafd)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/ae705c0e-4b0f-4921-a49d-b02b75cb12d7" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/ae705c0e-4b0f-4921-a49d-b02b75cb12d7)
 
 
 # Network Policies
@@ -130,9 +124,7 @@ spec:
     - Ingress
 ```
 
-<Callout icon="lightbulb">
-  This policy ensures no traffic can reach the DB pod until you add explicit `ingress` rules.
-</Callout>
+> **lightbulb** This policy ensures no traffic can reach the DB pod until you add explicit `ingress` rules.
 
 ## 3. Allow Ingress from the API Pod on Port 3306
 
@@ -159,9 +151,7 @@ spec:
           port: 3306
 ```
 
-<Callout icon="lightbulb">
-  Responses from the DB pod back to the API pod are automatically allowed—no `egress` rule is required for reply traffic.
-</Callout>
+> **lightbulb** Responses from the DB pod back to the API pod are automatically allowed—no `egress` rule is required for reply traffic.
 
 ## 4. Restrict API Access by Namespace
 
@@ -191,9 +181,7 @@ spec:
           port: 3306
 ```
 
-<Callout icon="triangle-alert">
-  The target namespace must have the label `name=prod` before this selector will match.
-</Callout>
+> **triangle-alert** The target namespace must have the label `name=prod` before this selector will match.
 
 ## 5. Allow Traffic from an External IP Range
 
@@ -284,8 +272,6 @@ This allows the DB pod to send TCP traffic on port 80 to the backup server at `1
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [Docker Hub](https://hub.docker.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/34baae73-2cab-46bc-b5aa-688076e57052" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/34baae73-2cab-46bc-b5aa-688076e57052)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/749eb79d-ebfc-40ad-af35-8639abfd721e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/749eb79d-ebfc-40ad-af35-8639abfd721e)

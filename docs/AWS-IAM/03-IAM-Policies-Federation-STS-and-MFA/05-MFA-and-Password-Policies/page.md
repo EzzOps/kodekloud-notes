@@ -25,7 +25,7 @@ Multi-Factor Authentication adds an additional proof of identity beyond a userna
 
 By default, AWS IAM does not enforce any password policy. Creating a custom policy allows you to align password complexity, expiration, and reuse rules with your organization’s governance standards.
 
-![The image outlines AWS password policies, highlighting account-level policies, default IAM policies, and the ability to configure custom policies based on governance requirements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862995/notes-assets/images/AWS-IAM-MFA-and-Password-Policies/aws-password-policies-account-iam-custom.jpg)
+![The image outlines AWS password policies, highlighting account-level policies, default IAM policies, and the ability to configure custom policies based on governance requirements.](https://kodekloud.com/kk-media/image/upload/v1752862995/notes-assets/images/AWS-IAM-MFA-and-Password-Policies/aws-password-policies-account-iam-custom.jpg)
 
 ### Key Password Policy Settings
 

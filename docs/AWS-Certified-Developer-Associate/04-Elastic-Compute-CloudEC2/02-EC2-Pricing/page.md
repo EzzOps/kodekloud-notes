@@ -12,7 +12,7 @@ In this article, we explore the various Amazon EC2 pricing models to help you ch
 
 On-demand pricing allows you to pay for compute capacity by the hour. With this model, you can quickly launch an EC2 instance when needed and terminate it when the work is complete. Billing is only active when the instance runs; however, attached storage costs continue even when the instance is stopped. This model requires no upfront payment or long-term commitment, making it ideal for short-term, irregular, or unpredictable workloads. Note that on-demand instances run on shared physical servers.
 
-![The image explains AWS On-Demand Pricing, highlighting features like hourly compute capacity billing, no upfront payment, and suitability for short-term or unpredictable workloads. It includes icons representing AWS cloud instances and billing concepts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858885/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Pricing/aws-on-demand-pricing-explained.jpg)
+![The image explains AWS On-Demand Pricing, highlighting features like hourly compute capacity billing, no upfront payment, and suitability for short-term or unpredictable workloads. It includes icons representing AWS cloud instances and billing concepts.](https://kodekloud.com/kk-media/image/upload/v1752858885/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Pricing/aws-on-demand-pricing-explained.jpg)
 
 ## Spot Pricing
 
@@ -22,13 +22,13 @@ Spot pricing takes advantage of spare EC2 capacity on physical servers. When Ama
 
 Reserved instances provide cost savings by allowing you to commit to a one- or three-year term. When you reserve an instance, you secure the capacity of an on-demand instance based on specific parameters such as instance type, region, and operating system. For instance, reserving an m3.large instance in the US East 1 region running Linux means any matching on-demand instance is billed at the reserved rate. If you launch an instance that does not match this reservation (for example, an m4.large), the full on-demand rate applies.
 
-![The image explains AWS EC2 reserve pricing, highlighting the benefits of reserving instances for discounted rates over 1 or 3-year contracts, and includes a diagram comparing reserved and full pricing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858886/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Pricing/aws-ec2-reserve-pricing-diagram.jpg)
+![The image explains AWS EC2 reserve pricing, highlighting the benefits of reserving instances for discounted rates over 1 or 3-year contracts, and includes a diagram comparing reserved and full pricing.](https://kodekloud.com/kk-media/image/upload/v1752858886/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Pricing/aws-ec2-reserve-pricing-diagram.jpg)
 
 ## Dedicated Hosts
 
 Dedicated hosts offer you an entire physical server solely for your use. With this option, you can run one or more EC2 instances on a server that is not shared with other customers. Dedicated hosts are particularly beneficial if you need to use existing server-bound software licenses, since these licenses might be tied to a specific physical device. Pricing is based on the host rather than individual instances, meaning you're charged for the dedicated server regardless of how many instances you deploy on it.
 
-![The image explains the concept of dedicated hosts, highlighting features like cost reduction, purchase options, and payment structure, alongside a diagram of a dedicated server setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858887/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Pricing/dedicated-hosts-cost-reduction-diagram.jpg)
+![The image explains the concept of dedicated hosts, highlighting features like cost reduction, purchase options, and payment structure, alongside a diagram of a dedicated server setup.](https://kodekloud.com/kk-media/image/upload/v1752858887/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Pricing/dedicated-hosts-cost-reduction-diagram.jpg)
 
 ## Dedicated Instances
 

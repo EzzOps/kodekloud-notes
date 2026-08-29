@@ -14,19 +14,19 @@ Begin by navigating to the "Task Definitions" section in the AWS ECS console and
 2. Select the launch type "AWS Fargate."
 3. Use the default task size settings, as this demo employs an Nginx container.
 
-![The image shows the AWS Elastic Container Service interface for creating a new task definition, with options for task definition configuration and infrastructure requirements. The interface includes fields for entering a task definition name and selecting launch types like AWS Fargate.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858589/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/aws-elastic-container-service-task-definition.jpg)
+![The image shows the AWS Elastic Container Service interface for creating a new task definition, with options for task definition configuration and infrastructure requirements. The interface includes fields for entering a task definition name and selecting launch types like AWS Fargate.](https://kodekloud.com/kk-media/image/upload/v1752858589/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/aws-elastic-container-service-task-definition.jpg)
 
 Next, configure the container settings. For this demo, the container image "my-dash-web-app" is available in three different versions (v1, v2, and v3). Start with version v1 and later update the service to version v2.
 
-![The image shows a screenshot of the Amazon Elastic Container Service (ECS) console, specifically the task definition creation page, where container details such as name, image URI, and port mappings are being configured.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858591/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/amazon-ecs-task-definition-screenshot.jpg)
+![The image shows a screenshot of the Amazon Elastic Container Service (ECS) console, specifically the task definition creation page, where container details such as name, image URI, and port mappings are being configured.](https://kodekloud.com/kk-media/image/upload/v1752858591/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/amazon-ecs-task-definition-screenshot.jpg)
 
 Ensure that the container listens on port 80, which is the default port for Nginx:
 
-![The image shows a configuration screen for creating a task definition in Amazon Elastic Container Service (ECS), detailing container settings such as name, image URI, port mappings, and resource allocation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858592/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/ecs-task-definition-configuration.jpg)
+![The image shows a configuration screen for creating a task definition in Amazon Elastic Container Service (ECS), detailing container settings such as name, image URI, port mappings, and resource allocation.](https://kodekloud.com/kk-media/image/upload/v1752858592/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/ecs-task-definition-configuration.jpg)
 
 Keep the CPU resource settings at their default values:
 
-![The image shows a screenshot of the Amazon Elastic Container Service (ECS) interface, specifically the task definition creation page, where resource allocation limits and environment variables can be configured.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858593/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/amazon-ecs-task-definition-screenshot-2.jpg)
+![The image shows a screenshot of the Amazon Elastic Container Service (ECS) interface, specifically the task definition creation page, where resource allocation limits and environment variables can be configured.](https://kodekloud.com/kk-media/image/upload/v1752858593/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/amazon-ecs-task-definition-screenshot-2.jpg)
 
 Once all settings have been reviewed and confirmed, create the task definition.
 
@@ -47,7 +47,7 @@ For deployment type, you can choose from the following:
 
 For this demo, select the **Rolling Update** option. With the minimum running tasks set at 100%, ECS ensures that five tasks remain running during updates. The maximum running tasks are set at 200%, allowing up to ten tasks (five existing plus five new) during a deployment.
 
-![The image shows a configuration page for creating a service in Amazon Elastic Container Service (ECS), with options for service name, type, desired tasks, and deployment settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858594/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/ecs-service-configuration-page.jpg)
+![The image shows a configuration page for creating a service in Amazon Elastic Container Service (ECS), with options for service name, type, desired tasks, and deployment settings.](https://kodekloud.com/kk-media/image/upload/v1752858594/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/ecs-service-configuration-page.jpg)
 
 > **lightbulb** If you lower the minimum running percentage (for example, to 50%), fewer tasks might run temporarily before the new version is fully deployed. For this tutorial, we maintain it at 100%.
 
@@ -57,19 +57,19 @@ For this demo, select the **Rolling Update** option. With the minimum running ta
 2. Update the security group to allow HTTP access for the Nginx container.
 3. Create a load balancer to forward traffic to Nginx on port 80 and name it "web app - lb."
 
-![The image shows a configuration screen for Amazon Elastic Container Service (ECS) on the AWS Management Console, with options for security groups, load balancing, service auto-scaling, and volume settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858596/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/amazon-ecs-configuration-screen.jpg)
+![The image shows a configuration screen for Amazon Elastic Container Service (ECS) on the AWS Management Console, with options for security groups, load balancing, service auto-scaling, and volume settings.](https://kodekloud.com/kk-media/image/upload/v1752858596/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/amazon-ecs-configuration-screen.jpg)
 
 Establish a new listener on port 80 and configure a corresponding target group that utilizes the HTTP protocol.
 
-![The image shows a configuration screen for setting up load balancing in Amazon Elastic Container Service (ECS), where options for load balancer type, container, and listener settings are being specified.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858597/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/ecs-load-balancing-configuration.jpg)
+![The image shows a configuration screen for setting up load balancing in Amazon Elastic Container Service (ECS), where options for load balancer type, container, and listener settings are being specified.](https://kodekloud.com/kk-media/image/upload/v1752858597/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/ecs-load-balancing-configuration.jpg)
 
-![The image shows a configuration screen for creating a service in Amazon Elastic Container Service (ECS), including options for setting up a listener and target group with HTTP protocol.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858598/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/ecs-service-configuration-screen.jpg)
+![The image shows a configuration screen for creating a service in Amazon Elastic Container Service (ECS), including options for setting up a listener and target group with HTTP protocol.](https://kodekloud.com/kk-media/image/upload/v1752858598/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/ecs-service-configuration-screen.jpg)
 
 After finalizing these settings, create the service. Once deployed, verify that five tasks are running by checking the ECS dashboard.
 
-![The image displays an Amazon Elastic Container Service (ECS) dashboard with a task definition named "webapp:1" that has been successfully created and is active. It shows details like task size, environment, and execution role.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858599/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/amazon-ecs-dashboard-webapp-task.jpg)
+![The image displays an Amazon Elastic Container Service (ECS) dashboard with a task definition named "webapp:1" that has been successfully created and is active. It shows details like task size, environment, and execution role.](https://kodekloud.com/kk-media/image/upload/v1752858599/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/amazon-ecs-dashboard-webapp-task.jpg)
 
-![The image shows the Amazon Elastic Container Service (ECS) dashboard, displaying the health and metrics of a service named "webapp," which is active with 5 running tasks and all targets healthy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858600/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/amazon-ecs-dashboard-webapp-metrics.jpg)
+![The image shows the Amazon Elastic Container Service (ECS) dashboard, displaying the health and metrics of a service named "webapp," which is active with 5 running tasks and all targets healthy.](https://kodekloud.com/kk-media/image/upload/v1752858600/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/amazon-ecs-dashboard-webapp-metrics.jpg)
 
 ## Verifying the Deployment
 
@@ -81,7 +81,7 @@ To confirm that your application has been successfully deployed:
 
 If version v1 is deployed correctly, you should see a page displaying "version one."
 
-![The image shows the Amazon Elastic Container Service (ECS) interface displaying a list of running tasks for a service named "webapp." Each task is running on Fargate with a status of "Running" and a health status of "Unknown."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858601/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/amazon-ecs-webapp-running-tasks.jpg)
+![The image shows the Amazon Elastic Container Service (ECS) interface displaying a list of running tasks for a service named "webapp." Each task is running on Fargate with a status of "Running" and a health status of "Unknown."](https://kodekloud.com/kk-media/image/upload/v1752858601/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/amazon-ecs-webapp-running-tasks.jpg)
 
 ## Updating the Service to Version Two
 
@@ -91,7 +91,7 @@ To update the application to version v2, follow these steps:
 2. Create a new revision by updating the container image tag from v1 to v2.
 3. Update the service configuration to use revision two.
 
-![The image shows an Amazon Elastic Container Service (ECS) dashboard with details of a task definition named "webapp:2," indicating its active status and configuration settings like CPU and memory allocation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858602/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/amazon-ecs-dashboard-webapp-task-2.jpg)
+![The image shows an Amazon Elastic Container Service (ECS) dashboard with details of a task definition named "webapp:2," indicating its active status and configuration settings like CPU and memory allocation.](https://kodekloud.com/kk-media/image/upload/v1752858602/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task-Demo/amazon-ecs-dashboard-webapp-task-2.jpg)
 
 When updating the service:
 

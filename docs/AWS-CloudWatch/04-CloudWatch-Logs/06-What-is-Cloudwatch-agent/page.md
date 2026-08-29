@@ -27,7 +27,7 @@ The CloudWatch Agent is a self-managed package you install on EC2 instances, ser
 
 Once deployed across your fleet, the agent sends both default and custom data to CloudWatch, where you can convert logs into metrics, visualize trends, and trigger notifications.
 
-![The image is a diagram illustrating the AWS CloudWatch Agent setup, showing an EC2 instance sending default metrics at 5-minute intervals and custom application logs/metrics at 1-second intervals to AWS CloudWatch.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862472/notes-assets/images/AWS-CloudWatch-What-is-Cloudwatch-agent/aws-cloudwatch-agent-setup-diagram.jpg)
+![The image is a diagram illustrating the AWS CloudWatch Agent setup, showing an EC2 instance sending default metrics at 5-minute intervals and custom application logs/metrics at 1-second intervals to AWS CloudWatch.](https://kodekloud.com/kk-media/image/upload/v1752862472/notes-assets/images/AWS-CloudWatch-What-is-Cloudwatch-agent/aws-cloudwatch-agent-setup-diagram.jpg)
 
 ## Core Functionalities
 
@@ -38,7 +38,7 @@ CloudWatch Agent extends built-in monitoring by:
 * Capturing **memory, disk, and other OS metrics** not available by default
 * Eliminating third-party monitoring agents and licensing fees
 
-![The image outlines the features of CloudWatch Agents, highlighting functionality such as custom metrics, log collection, and viewing metrics in Amazon CloudWatch. It also mentions EC2 monitoring dashboards and the absence of a need for third-party software installation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862473/notes-assets/images/AWS-CloudWatch-What-is-Cloudwatch-agent/cloudwatch-agents-features-metrics-logs.jpg)
+![The image outlines the features of CloudWatch Agents, highlighting functionality such as custom metrics, log collection, and viewing metrics in Amazon CloudWatch. It also mentions EC2 monitoring dashboards and the absence of a need for third-party software installation.](https://kodekloud.com/kk-media/image/upload/v1752862473/notes-assets/images/AWS-CloudWatch-What-is-Cloudwatch-agent/cloudwatch-agents-features-metrics-logs.jpg)
 
 ### Custom Metrics
 
@@ -56,7 +56,7 @@ With simple configuration, the agent tails specified log files and streams entri
 * Run Log Insights queries for troubleshooting
 * Generate alerts on error patterns
 
-![The image is a slide titled "Features of Cloudwatch Agents," highlighting the "Log collection" feature, which includes collecting and streaming logs to CloudWatch Logs, enabling centralized log management, and noting that EC2 monitoring dashboards lack built-in log collection and streaming.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862474/notes-assets/images/AWS-CloudWatch-What-is-Cloudwatch-agent/cloudwatch-agents-log-collection-features.jpg)
+![The image is a slide titled "Features of Cloudwatch Agents," highlighting the "Log collection" feature, which includes collecting and streaming logs to CloudWatch Logs, enabling centralized log management, and noting that EC2 monitoring dashboards lack built-in log collection and streaming.](https://kodekloud.com/kk-media/image/upload/v1752862474/notes-assets/images/AWS-CloudWatch-What-is-Cloudwatch-agent/cloudwatch-agents-log-collection-features.jpg)
 
 ### High-Resolution Data
 
@@ -66,7 +66,7 @@ For performance-sensitive workloads, the agent captures metrics at **1-second in
 * Tune autoscaling policies more precisely
 * Troubleshoot performance degradation quickly
 
-![The image lists features of CloudWatch Agents, highlighting "Higher resolution data" which enables high-resolution data collection at 1-second intervals and provides more granular insights.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862475/notes-assets/images/AWS-CloudWatch-What-is-Cloudwatch-agent/cloudwatch-agents-higher-resolution-data.jpg)
+![The image lists features of CloudWatch Agents, highlighting "Higher resolution data" which enables high-resolution data collection at 1-second intervals and provides more granular insights.](https://kodekloud.com/kk-media/image/upload/v1752862475/notes-assets/images/AWS-CloudWatch-What-is-Cloudwatch-agent/cloudwatch-agents-higher-resolution-data.jpg)
 
 ## Pricing Overview
 
@@ -85,7 +85,7 @@ Example monthly spend:
 
 Compared to third-party tools (licensing, hosting), AWS CloudWatch Agent offers a cost-effective, integrated solution.
 
-![The image is a slide titled "Features of Cloudwatch Agents," highlighting the "Logs pricing" feature with details on ingested log costs, an example of metrics, monthly log cost, and total CloudWatch cost.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862476/notes-assets/images/AWS-CloudWatch-What-is-Cloudwatch-agent/cloudwatch-agents-logs-pricing-features.jpg)
+![The image is a slide titled "Features of Cloudwatch Agents," highlighting the "Logs pricing" feature with details on ingested log costs, an example of metrics, monthly log cost, and total CloudWatch cost.](https://kodekloud.com/kk-media/image/upload/v1752862476/notes-assets/images/AWS-CloudWatch-What-is-Cloudwatch-agent/cloudwatch-agents-logs-pricing-features.jpg)
 
 ## Agent Restrictions
 
@@ -98,7 +98,7 @@ Be aware of these limitations when deploying the CloudWatch Agent:
 
 > **triangle-alert** If your instance runs an older SSM Agent, update it to version ≥ 2.2.93 before installing the CloudWatch Agent.
 
-![The image outlines features and restrictions of CloudWatch Agents, including log size limits and installation requirements. It highlights specific metrics and pricing considerations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862478/notes-assets/images/AWS-CloudWatch-What-is-Cloudwatch-agent/cloudwatch-agents-features-restrictions.jpg)
+![The image outlines features and restrictions of CloudWatch Agents, including log size limits and installation requirements. It highlights specific metrics and pricing considerations.](https://kodekloud.com/kk-media/image/upload/v1752862478/notes-assets/images/AWS-CloudWatch-What-is-Cloudwatch-agent/cloudwatch-agents-features-restrictions.jpg)
 
 ***
 

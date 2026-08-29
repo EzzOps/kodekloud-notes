@@ -81,9 +81,7 @@ hello there!
 
 To make changes in your file, switch from Command Mode to Insert Mode by pressing the lowercase i. In Insert Mode, a blinking cursor and the indicator “-- INSERT --” appear at the bottom of the screen, allowing you to add or modify text. Other keys such as a, o, I, A, or O may also be used to enter Insert Mode based on where you want to position the cursor.
 
-<Callout icon="lightbulb">
-  To exit Insert Mode and return to Command Mode, simply press the Esc key.
-</Callout>
+> **lightbulb** To exit Insert Mode and return to Command Mode, simply press the Esc key.
 
 ### Working with VI Commands
 
@@ -240,26 +238,18 @@ I made some changes to this file.
 :w
 ```
 
-<Frame>
-  ![The image describes VIM as "VI Improved," highlighting features like completion, spell check, plugins, syntax highlighting, and more, with a "KodeKloud" logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881161/notes-assets/images/Learning-Linux-Basics-Course-Labs-VI-Editor/frame_440.jpg)
-</Frame>
+![The image describes VIM as "VI Improved," highlighting features like completion, spell check, plugins, syntax highlighting, and more, with a "KodeKloud" logo.](https://kodekloud.com/kk-media/image/upload/v1752881161/notes-assets/images/Learning-Linux-Basics-Course-Labs-VI-Editor/frame_440.jpg)
 
-<Callout icon="lightbulb">
-  For more detailed information on command usage and advanced features, refer to the [VIM documentation](https://www.vim.org/docs.php) or use the built-in help command within VIM.
-</Callout>
+> **lightbulb** For more detailed information on command usage and advanced features, refer to the [VIM documentation](https://www.vim.org/docs.php) or use the built-in help command within VIM.
 
 ## Practice Makes Perfect
 
 Now that you have a solid understanding of the VI Editor's modes and commands, it's time to practice. Experiment with switching between modes, executing commands, and utilizing VI's extensive feature set to streamline your text editing and coding workflow.
 
-<Frame>
-  ![The image shows a text editor in "Insert Mode" with instructions for switching between modes using specific keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881162/notes-assets/images/Learning-Linux-Basics-Course-Labs-VI-Editor/frame_350.jpg)
-</Frame>
+![The image shows a text editor in "Insert Mode" with instructions for switching between modes using specific keys.](https://kodekloud.com/kk-media/image/upload/v1752881162/notes-assets/images/Learning-Linux-Basics-Course-Labs-VI-Editor/frame_350.jpg)
 
 Happy editing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/8587333b-3a93-4eb5-8d3f-13c4a3435d1b/lesson/1092a86b-6407-4ef2-939c-f7cf25589d2a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/8587333b-3a93-4eb5-8d3f-13c4a3435d1b/lesson/1092a86b-6407-4ef2-939c-f7cf25589d2a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/8587333b-3a93-4eb5-8d3f-13c4a3435d1b/lesson/01b4c5bb-ca91-48c0-91f4-a79a1f0fcac1" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/8587333b-3a93-4eb5-8d3f-13c4a3435d1b/lesson/01b4c5bb-ca91-48c0-91f4-a79a1f0fcac1)

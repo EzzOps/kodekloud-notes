@@ -57,9 +57,7 @@ Operational difference: CPU vs Memory
 * Hitting a CPU limit results in throttling — your application will run slower but is generally not terminated.
 * Hitting a memory limit typically results in an immediate OOM kill — the container process can be terminated abruptly.
 
-<Callout icon="warning">
-  Memory limit breaches are often fatal for a Pod. Always set memory limits intentionally and monitor OOMKilled events — they can indicate that requests were underestimated or the workload requires more memory headroom.
-</Callout>
+> **warning** Memory limit breaches are often fatal for a Pod. Always set memory limits intentionally and monitor OOMKilled events — they can indicate that requests were underestimated or the workload requires more memory headroom.
 
 Right-sizing workflow — pick the right request and limit values
 
@@ -79,14 +77,12 @@ Right-sizing workflow — pick the right request and limit values
   <img alt="The image outlines a four-step workflow for right-sizing resources, including profiling actual usage, setting requests at the 95th percentile, setting limits at 2-3 times the request, and monitoring and adjusting performance." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Four practical takeaways:
+> **lightbulb** Four practical takeaways:
 
   1. Requests drive scheduling; limits enforce runtime. Confusing them risks outages or wasted nodes.
   2. QoS classes determine eviction order—use Guaranteed (requests == limits) for critical workloads.
   3. CPU throttles; memory kills. Set memory limits carefully and monitor OOMKilled events.
   4. Profile first: use the 95th percentile for requests, set limits 2–3× higher, and validate with monitoring or VPA.
-</Callout>
 
 References and further reading
 
@@ -97,6 +93,4 @@ References and further reading
 
 Right-sizing reduces waste, improves scheduling accuracy, and lowers the risk of performance regressions and production failures. Follow a measurement-first approach and iterate using data and observability.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/197f7f9c-c8bd-4515-890d-5026b0471809" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/197f7f9c-c8bd-4515-890d-5026b0471809)

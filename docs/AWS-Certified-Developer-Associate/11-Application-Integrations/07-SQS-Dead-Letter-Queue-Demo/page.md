@@ -10,7 +10,7 @@ In this article, we demonstrate how to configure a dead-letter queue (DLQ) for y
 
 Begin by creating a new queue that will serve as the DLQ. It’s important that the DLQ type matches the type of the primary queue that sends messages to it. For example, if your primary queue is standard, the DLQ must also be standard. In our demo, we name the DLQ "new user dead letter queue."
 
-![The image shows the Amazon SQS (Simple Queue Service) interface for creating a new queue, with options for selecting queue type, naming, and configuring settings like visibility timeout and message retention period.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858414/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Dead-Letter-Queue-Demo/amazon-sqs-create-queue-interface.jpg)
+![The image shows the Amazon SQS (Simple Queue Service) interface for creating a new queue, with options for selecting queue type, naming, and configuring settings like visibility timeout and message retention period.](https://kodekloud.com/kk-media/image/upload/v1752858414/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Dead-Letter-Queue-Demo/amazon-sqs-create-queue-interface.jpg)
 
 When setting up your DLQ, pay attention to the following configuration options:
 
@@ -21,7 +21,7 @@ When setting up your DLQ, pay attention to the following configuration options:
 
 After adjusting these settings, proceed to create the queue.
 
-![The image shows the Amazon SQS (Simple Queue Service) interface for creating a new queue, with configuration options for visibility timeout, message retention, delivery delay, and encryption settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858415/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Dead-Letter-Queue-Demo/amazon-sqs-create-queue-interface-2.jpg)
+![The image shows the Amazon SQS (Simple Queue Service) interface for creating a new queue, with configuration options for visibility timeout, message retention, delivery delay, and encryption settings.](https://kodekloud.com/kk-media/image/upload/v1752858415/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Dead-Letter-Queue-Demo/amazon-sqs-create-queue-interface-2.jpg)
 
 ## Linking the DLQ to Your Source Queue
 
@@ -29,7 +29,7 @@ Once the DLQ is created, return to your original source queue and edit its confi
 
 The critical parameter here is the **Maximum Receives** value—the number of times a message can be retrieved and fail processing before being rerouted to the DLQ. In this example, the maximum receives is set to three.
 
-![The image shows an Amazon SQS (Simple Queue Service) configuration screen, where options for "Redrive allow policy" and "Dead-letter queue" are being set, with fields for enabling these features and specifying queue details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858416/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Dead-Letter-Queue-Demo/amazon-sqs-redrive-dead-letter-config.jpg)
+![The image shows an Amazon SQS (Simple Queue Service) configuration screen, where options for "Redrive allow policy" and "Dead-letter queue" are being set, with fields for enabling these features and specifying queue details.](https://kodekloud.com/kk-media/image/upload/v1752858416/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Dead-Letter-Queue-Demo/amazon-sqs-redrive-dead-letter-config.jpg)
 
 ## Testing the DLQ Configuration
 
@@ -42,11 +42,11 @@ After saving your settings, it’s time to test the configuration. Follow these 
    * Following the first visibility timeout cycle, it increments to two.
    * Upon the third cycle (receive count of three), the message is removed from the primary queue and moved to the DLQ.
 
-![The image shows an Amazon SQS (Simple Queue Service) dashboard with details of a queue named "newUser," including its type, URL, and dead-letter queue settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858418/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Dead-Letter-Queue-Demo/amazon-sqs-newuser-dashboard.jpg)
+![The image shows an Amazon SQS (Simple Queue Service) dashboard with details of a queue named "newUser," including its type, URL, and dead-letter queue settings.](https://kodekloud.com/kk-media/image/upload/v1752858418/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Dead-Letter-Queue-Demo/amazon-sqs-newuser-dashboard.jpg)
 
 Next, verify that the message has been successfully transferred by checking the DLQ’s "Send and receive messages" section.
 
-![The image shows an Amazon SQS interface where a message has been sent and is ready to be received. It includes details about the message body, delivery delay, and message attributes, along with options for receiving messages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858420/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Dead-Letter-Queue-Demo/amazon-sqs-message-interface.jpg)
+![The image shows an Amazon SQS interface where a message has been sent and is ready to be received. It includes details about the message body, delivery delay, and message attributes, along with options for receiving messages.](https://kodekloud.com/kk-media/image/upload/v1752858420/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Dead-Letter-Queue-Demo/amazon-sqs-message-interface.jpg)
 
 ## Conclusion
 

@@ -40,9 +40,7 @@ Quick feature summary
 | Cross-platform visibility | Correlates app, infra, logs, and traces  | Faster identification of upstream/downstream causes |
 | AI-native baselining      | Learns normal behavior across conditions | Fewer false positives and better prioritization     |
 
-<Callout icon="lightbulb">
-  Watchdog uses historical baselining and multi-signal correlation to lower false positives and provide contextualized, prioritized insights. You can find these insights under [Monitors](https://docs.datadoghq.com/monitors/) in the [Datadog console](https://app.datadoghq.com/).
-</Callout>
+> **lightbulb** Watchdog uses historical baselining and multi-signal correlation to lower false positives and provide contextualized, prioritized insights. You can find these insights under [Monitors](https://docs.datadoghq.com/monitors/) in the [Datadog console](https://app.datadoghq.com/).
 
 Further reading and resources
 
@@ -52,6 +50,4 @@ Further reading and resources
 
 That's it for this lesson. I hope you found it helpful.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9add8e22-a057-4808-880b-be8b91e0d5f2/lesson/88c07302-3f47-4411-90c2-723b0c5cb129" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9add8e22-a057-4808-880b-be8b91e0d5f2/lesson/88c07302-3f47-4411-90c2-723b0c5cb129)

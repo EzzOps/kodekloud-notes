@@ -54,20 +54,16 @@ Guidance:
   <img alt="A network diagram titled &#x22;Intersite Connectivity – Azure-to-On-Premises Connectivity.&#x22; It shows an Azure VNet with Subnet, GatewaySubnet and ERSubnet connected to an on-premises network via Site-to-Site and ExpressRoute links, plus a Point-to-Site connection for remote users." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Key operational notes:
+> **lightbulb** Key operational notes:
 
   * GatewaySubnet: When deploying any Azure VPN Gateway (VNet-to-VNet, Site-to-Site, or Point-to-Site), create a subnet named exactly `GatewaySubnet`. Size it according to the gateway SKU you choose. See Azure VPN Gateway guidance: [https://learn.microsoft.com/azure/vpn-gateway/vpn-gateway-about-gateway-subnet](https://learn.microsoft.com/azure/vpn-gateway/vpn-gateway-about-gateway-subnet).
   * VNet Peering: Uses Azure’s private backbone, requires non-overlapping address spaces, and provides low-latency/high-throughput connectivity without explicit gateways.
   * ExpressRoute: Provides a private circuit via connectivity providers—better throughput and latency than internet VPNs but requires provider setup and higher cost.
-</Callout>
 
-<Callout icon="warning">
-  Important caveats:
+> **warning** Important caveats:
 
   * VNet Peering does not encrypt traffic across public internet because peering traffic stays on Azure’s backbone; if you require encryption end-to-end, use VPN Gateway (IPsec/IKE) or implement application-level encryption.
   * Address space overlap prevents peering and can complicate routing for all connection types—plan IP addressing to avoid conflicts.
-</Callout>
 
 ## Quick decision checklist
 
@@ -85,6 +81,4 @@ Guidance:
 
 This article introduced the main inter-site connectivity options in Azure. For deeper configuration steps, gateway SKU selection, IPsec/IKE version support, P2S transport protocols, and cost tradeoffs, refer to the linked Microsoft documentation above.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/f7470a91-91f6-4c6c-8a03-565abfeb7aee/lesson/05cb5db3-2482-4b3f-8567-df19b115ce9f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/f7470a91-91f6-4c6c-8a03-565abfeb7aee/lesson/05cb5db3-2482-4b3f-8567-df19b115ce9f)

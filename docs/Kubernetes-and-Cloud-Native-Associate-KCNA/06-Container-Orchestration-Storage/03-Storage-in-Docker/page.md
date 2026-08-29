@@ -86,9 +86,7 @@ docker build -t mmumshad/my-custom-app-2 -f Dockerfile2 .
 
 Since the first three layers are identical, Docker reuses the cached layers and only rebuilds the layers that differ (i.e., the source code copy and the entry point configuration). This efficient caching mechanism speeds up your builds and minimizes disk usage.
 
-<Callout icon="lightbulb">
-  If you modify only your application code (for example, updating `app.py`), Docker leverages the cache for unchanged layers and only rebuilds the updated code layer.
-</Callout>
+> **lightbulb** If you modify only your application code (for example, updating `app.py`), Docker leverages the cache for unchanged layers and only rebuilds the updated code layer.
 
 ### Understanding Image and Container Layers
 
@@ -104,9 +102,7 @@ When a container is launched, Docker appends a writable layer on top of these re
 
 The diagram below illustrates the "Copy-On-Write" concept:
 
-<Frame>
-  ![The image illustrates the "Copy-On-Write" concept, showing a container layer with read-write access and image layers with read-only access, featuring files "app.py" and "temp.txt".](../../../../images/kodekloud.com/kk-media/image/upload/v1752880634/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Storage-in-Docker/frame_400.jpg)
-</Frame>
+![The image illustrates the "Copy-On-Write" concept, showing a container layer with read-write access and image layers with read-only access, featuring files "app.py" and "temp.txt".](https://kodekloud.com/kk-media/image/upload/v1752880634/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Storage-in-Docker/frame_400.jpg)
 
 ## Persisting Data with Volumes and Bind Mounts
 
@@ -164,15 +160,11 @@ Docker storage drivers are key to implementing the layered filesystem and managi
 
 The selection of a storage driver depends on your operating system. For example, Ubuntu typically uses AUFS, while Fedora or CentOS might use Device Mapper. Docker automatically picks the optimal storage driver based on your system, but each driver offers unique performance and stability characteristics.
 
-<Callout icon="lightbulb">
-  For a deeper understanding of Docker storage drivers and their use cases, consult the official [Docker Documentation](https://docs.docker.com/storage/storagedriver/) and other relevant resources.
-</Callout>
+> **lightbulb** For a deeper understanding of Docker storage drivers and their use cases, consult the official [Docker Documentation](https://docs.docker.com/storage/storagedriver/) and other relevant resources.
 
 The diagram below showcases various storage drivers, including AUFS, ZFS, BTRFS, Device Mapper, Overlay, and Overlay2:
 
-<Frame>
-  ![The image lists storage drivers: AUFS, ZFS, BTRFS, Device Mapper, Overlay, and Overlay2, with a Docker-themed background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880634/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Storage-in-Docker/frame_700.jpg)
-</Frame>
+![The image lists storage drivers: AUFS, ZFS, BTRFS, Device Mapper, Overlay, and Overlay2, with a Docker-themed background.](https://kodekloud.com/kk-media/image/upload/v1752880634/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Storage-in-Docker/frame_700.jpg)
 
 This concludes our exploration of Docker storage concepts, including layered architecture, the copy-on-write mechanism, persistent data storage with volumes and bind mounts, and the role of storage drivers.
 
@@ -182,6 +174,4 @@ For more related topics, check out these resources:
 * [Docker Storage Overview](https://docs.docker.com/storage/)
 * [Containerized Application Best Practices](https://www.docker.com/resources/what-container)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/fbd7b99a-b2c1-4eda-9ef9-f5e0d7a20fce/lesson/b6af7e62-cc37-43cd-8d8b-f687963d36ca" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/fbd7b99a-b2c1-4eda-9ef9-f5e0d7a20fce/lesson/b6af7e62-cc37-43cd-8d8b-f687963d36ca)

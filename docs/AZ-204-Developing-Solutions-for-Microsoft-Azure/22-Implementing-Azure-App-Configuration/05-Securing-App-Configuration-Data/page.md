@@ -17,17 +17,17 @@ To implement customer-managed encryption, you must store your keys in Azure Key 
 
 Next, generate an RSA or RSA-HSM key in Azure Key Vault. These cryptographic keys are essential for securely encrypting and decrypting your app configuration data. RSA-HSM keys offer enhanced security by being generated and stored in hardware security modules, ensuring additional tamper resistance.
 
-![The image outlines steps for securing app configuration data using customer-managed keys, involving a standard-tier Azure App Configuration instance, an Azure Key Vault with specific features, and an RSA or RSA-HSM key.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866596/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-App-Configuration-Data/secure-app-config-keys-diagram.jpg)
+![The image outlines steps for securing app configuration data using customer-managed keys, involving a standard-tier Azure App Configuration instance, an Azure Key Vault with specific features, and an RSA or RSA-HSM key.](https://kodekloud.com/kk-media/image/upload/v1752866596/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-App-Configuration-Data/secure-app-config-keys-diagram.jpg)
 
 To enable Azure App Service configuration to use Key Vault keys, assign a Managed Identity to your App Configuration instance. Managed Identities allow for secure, credential-free access to the Key Vault. Once the managed identity is assigned, ensure that it has the necessary permissions to read the keys by configuring either the Key Vault access policy or Role-Based Access Control (RBAC).
 
-![The image outlines steps for securing app configuration data using customer-managed keys, including assigning a managed identity to the Azure App Configuration instance and granting permissions in the Key Vault's access policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866597/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-App-Configuration-Data/securing-app-configuration-keys.jpg)
+![The image outlines steps for securing app configuration data using customer-managed keys, including assigning a managed identity to the Azure App Configuration instance and granting permissions in the Key Vault's access policy.](https://kodekloud.com/kk-media/image/upload/v1752866597/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-App-Configuration-Data/securing-app-configuration-keys.jpg)
 
 From a networking perspective, restricting access to your configuration store is equally important. By default, the configuration store is publicly accessible—albeit requiring a connection string for use. To enhance security, configure the Azure App Configuration firewall to block all public connections. This measure ensures that only trusted networks have access, thereby reducing the risk of unauthorized entry.
 
 For environments that require on-premises connectivity, consider establishing a secure connection to your Azure virtual network using a VPN or ExpressRoute. This approach guarantees secure data transfer without exposing sensitive configurations to the public internet.
 
-![The image outlines three steps for securing app configuration data using private endpoints: configuring firewalls, enhancing virtual network security, and securely connecting from on-premises networks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866599/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-App-Configuration-Data/secure-app-config-private-endpoints.jpg)
+![The image outlines three steps for securing app configuration data using private endpoints: configuring firewalls, enhancing virtual network security, and securely connecting from on-premises networks.](https://kodekloud.com/kk-media/image/upload/v1752866599/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-App-Configuration-Data/secure-app-config-private-endpoints.jpg)
 
 This article outlined the critical steps in securing app configuration data in Azure App Configuration:
 

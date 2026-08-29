@@ -16,11 +16,11 @@ AWS Audit Manager streamlines the auditing process by automatically tracking com
 
 This level of automation significantly reduces the time and effort required during audits, easing the compliance process for organizations.
 
-![The image outlines how AWS Audit Manager assists ABC Media by tracking compliance standards, collecting data automatically, preparing for audits, identifying issues, and reducing audit stress.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860347/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Audit-Manager-Overview/aws-audit-manager-abc-media.jpg)
+![The image outlines how AWS Audit Manager assists ABC Media by tracking compliance standards, collecting data automatically, preparing for audits, identifying issues, and reducing audit stress.](https://kodekloud.com/kk-media/image/upload/v1752860347/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Audit-Manager-Overview/aws-audit-manager-abc-media.jpg)
 
 For instance, consider ABC Media. AWS Audit Manager maps your AWS usage to relevant compliance requirements, continuously gathers evidence in real time, and employs pre-built frameworks tailored for regulations such as GDPR, SOC 2, and CCPA. This streamlined setup simplifies evidence collection and assists in generating detailed compliance reports.
 
-![The image is a diagram showing the flow of data from "ABC Media" to "AWS Audit Manager" and then to a database containing personal information fields. It also lists compliance standards: GDPR, SOC 2, and CCPA.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860349/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Audit-Manager-Overview/abc-media-aws-audit-manager-diagram.jpg)
+![The image is a diagram showing the flow of data from "ABC Media" to "AWS Audit Manager" and then to a database containing personal information fields. It also lists compliance standards: GDPR, SOC 2, and CCPA.](https://kodekloud.com/kk-media/image/upload/v1752860349/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Audit-Manager-Overview/abc-media-aws-audit-manager-diagram.jpg)
 
 > **lightbulb** AWS Audit Manager enables organizations to:
 

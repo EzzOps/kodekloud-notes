@@ -112,7 +112,7 @@ Applications and commands in Unix return an exit status—a numerical code indic
 
 Consider a food delivery driver verifying an address before dispatch. If the address is correct, the driver proceeds. If it’s wrong, they return with an error report. This mirrors how scripts and commands operate: they check conditions, perform tasks, and then report their status.
 
-![The image shows a graphic of a smartphone with a map and location pins, alongside an icon of a delivery person on a scooter. There are checkmarks next to "Address" and "Task completion."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868628/notes-assets/images/Advanced-Bash-Scripting-Exit-code/smartphone-map-delivery-icon.jpg)
+![The image shows a graphic of a smartphone with a map and location pins, alongside an icon of a delivery person on a scooter. There are checkmarks next to "Address" and "Task completion."](https://kodekloud.com/kk-media/image/upload/v1752868628/notes-assets/images/Advanced-Bash-Scripting-Exit-code/smartphone-map-delivery-icon.jpg)
 
 ## How Exit Codes Work in Unix
 
@@ -121,7 +121,7 @@ Every Unix-based command finishes with an exit code:
 * **0**: Success
 * **Non-zero**: An error occurred
 
-![The image displays the text "Exit Code" with the number "0" and a checkmark, indicating a successful operation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868629/notes-assets/images/Advanced-Bash-Scripting-Exit-code/exit-code-0-success-checkmark.jpg)
+![The image displays the text "Exit Code" with the number "0" and a checkmark, indicating a successful operation.](https://kodekloud.com/kk-media/image/upload/v1752868629/notes-assets/images/Advanced-Bash-Scripting-Exit-code/exit-code-0-success-checkmark.jpg)
 
 ### Common Exit Codes Table
 

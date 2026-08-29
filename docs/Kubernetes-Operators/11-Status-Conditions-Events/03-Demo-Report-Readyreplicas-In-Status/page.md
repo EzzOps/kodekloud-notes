@@ -175,9 +175,7 @@ Why the guard matters
 
 * Status updates write to the API server and can trigger additional reconcile loops. Only updating when the observed value actually changes reduces noise and unnecessary API usage.
 
-<Callout icon="lightbulb">
-  Use `r.Status().Update(ctx, &obj)` to write only the status subresource. This keeps observed state separate from the desired state in `spec`, which users edit.
-</Callout>
+> **lightbulb** Use `r.Status().Update(ctx, &obj)` to write only the status subresource. This keeps observed state separate from the desired state in `spec`, which users edit.
 
 If the status update fails, return the error so controller-runtime retries the reconcile.
 
@@ -215,6 +213,4 @@ References
 * [controller-runtime: Status Writer](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/client#StatusWriter)
 * [Kubebuilder Book](https://book.kubebuilder.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/0a9f4820-8012-4f05-bc2b-030ee38dd113" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/0a9f4820-8012-4f05-bc2b-030ee38dd113)

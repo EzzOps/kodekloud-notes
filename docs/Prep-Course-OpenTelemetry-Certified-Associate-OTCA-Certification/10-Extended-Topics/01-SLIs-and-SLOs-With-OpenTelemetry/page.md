@@ -49,9 +49,7 @@ Quick formulas for common SLIs
   * Definition: Fraction of requests finishing below a chosen latency threshold.
   * Formula: (requests below latency threshold / total requests) × 100
 
-<Callout icon="lightbulb">
-  When converting a fraction to a percentage, multiply by `× 100`. If you see diagrams showing `× 1000` in this context, that is incorrect for percentage conversion.
-</Callout>
+> **lightbulb** When converting a fraction to a percentage, multiply by `× 100`. If you see diagrams showing `× 1000` in this context, that is incorrect for percentage conversion.
 
 <Frame>
   <img alt="The image shows a formula for &#x22;Latency Compliance,&#x22; which measures the percentage of requests meeting a specified latency target. It calculates the proportion of requests below a latency threshold out of total requests, multiplied by 1000." />
@@ -143,9 +141,7 @@ OpenTelemetry does not perform SLO evaluation; it provides the signals that feed
   <img alt="The image outlines where Service Level Objectives (SLOs) are evaluated, divided into three levels: Application, Collector (optional), and Backend/Platform, with specific actions and notes for each level." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Avoid aggressive sampling when generating SLIs. Dropping or heavily sampling requests can reduce SLI accuracy and mask real reliability problems. If sampling is necessary, document its effect on SLI accuracy and consider adjustments in the backend.
-</Callout>
+> **lightbulb** Avoid aggressive sampling when generating SLIs. Dropping or heavily sampling requests can reduce SLI accuracy and mask real reliability problems. If sampling is necessary, document its effect on SLI accuracy and consider adjustments in the backend.
 
 Summary
 
@@ -160,6 +156,4 @@ Further reading and references
 * SLO concepts and examples: [https://landing.google.com/sre/sre-book/chapters/service-level-objectives/](https://landing.google.com/sre/sre-book/chapters/service-level-objectives/)
 * Practical SLI/SLO tooling: check your monitoring vendor docs for SLO evaluation and alerting workflows.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/b5241624-cc5d-43c9-a373-650368d82e61/lesson/966ab480-18fb-4d9f-9fd0-4d5f1a16f81f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/b5241624-cc5d-43c9-a373-650368d82e61/lesson/966ab480-18fb-4d9f-9fd0-4d5f1a16f81f)

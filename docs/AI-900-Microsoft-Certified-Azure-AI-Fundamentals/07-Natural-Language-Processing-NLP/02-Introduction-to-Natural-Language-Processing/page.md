@@ -14,9 +14,9 @@ The journey begins with raw text—unprocessed language data gathered from sourc
 
 Preprocessing is the essential step that prepares raw text for detailed analysis. During this stage, non-essential words like "the" or "and"—known as stop words—are removed to enhance clarity. Additionally, techniques such as stemming and lemmatization are applied to reduce words to their root forms. For instance, words like "universe" and "universal" are simplified to "universal," thus streamlining the text for better focus on key concepts.
 
-![The image is an introduction to Natural Language Processing, showing a flow from "Raw Text" through "Preprocessing" to a "Language Model."](../../../../images/kodekloud.com/kk-media/image/upload/v1752857037/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Natural-Language-Processing/natural-language-processing-flow.jpg)
+![The image is an introduction to Natural Language Processing, showing a flow from "Raw Text" through "Preprocessing" to a "Language Model."](https://kodekloud.com/kk-media/image/upload/v1752857037/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Natural-Language-Processing/natural-language-processing-flow.jpg)
 
-![The image is an introduction to Natural Language Processing, focusing on the preprocessing technique of stemming or lemmatization, which involves coalescing words with the same root. It shows an example with the words "Universe" and "Universal" being reduced to "Universal."](../../../../images/kodekloud.com/kk-media/image/upload/v1752857038/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Natural-Language-Processing/natural-language-processing-stemming-lemmatization.jpg)
+![The image is an introduction to Natural Language Processing, focusing on the preprocessing technique of stemming or lemmatization, which involves coalescing words with the same root. It shows an example with the words "Universe" and "Universal" being reduced to "Universal."](https://kodekloud.com/kk-media/image/upload/v1752857038/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Natural-Language-Processing/natural-language-processing-stemming-lemmatization.jpg)
 
 ## Tokenization
 
@@ -59,6 +59,6 @@ In summary, Natural Language Processing comprises a series of critical steps—f
 
 > **lightbulb** Now that you have an overview of NLP, explore how to implement NLP solutions using Microsoft Azure to leverage advanced AI capabilities in your projects.
 
-![The image is a flowchart illustrating the process of Natural Language Processing (NLP), starting from raw text, going through preprocessing, tokenization, and training a language model, leading to applications like text analysis, opinion mining, machine translation, summarization, and conversational AI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857039/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Natural-Language-Processing/nlp-process-flowchart-diagram.jpg)
+![The image is a flowchart illustrating the process of Natural Language Processing (NLP), starting from raw text, going through preprocessing, tokenization, and training a language model, leading to applications like text analysis, opinion mining, machine translation, summarization, and conversational AI.](https://kodekloud.com/kk-media/image/upload/v1752857039/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Introduction-to-Natural-Language-Processing/nlp-process-flowchart-diagram.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/ai-900-microsoft-azure-ai-fundamental/module/acaa763e-8e75-43d9-850c-fc5c92cd52a0/lesson/f4b1365c-72dc-4a6b-a471-7daaa22c2506)

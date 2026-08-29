@@ -43,18 +43,12 @@ Azure Monitor's functionality can be summarized into three essential features th
 2. Query and analyze logs.
 3. Send alerts and notifications.
 
-<Callout icon="lightbulb">
-  Utilizing these core features provides a robust framework for proactive system management and improved operational efficiency.
-</Callout>
+> **lightbulb** Utilizing these core features provides a robust framework for proactive system management and improved operational efficiency.
 
-<Frame>
-  ![The image is a diagram explaining Azure Monitor, showing its components and functionalities like monitoring metrics, analyzing logs, and sending alerts. It includes various elements such as applications, containers, and dashboards.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881713/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Explore-Azure-Monitor/azure-monitor-diagram-components.jpg)
-</Frame>
+![The image is a diagram explaining Azure Monitor, showing its components and functionalities like monitoring metrics, analyzing logs, and sending alerts. It includes various elements such as applications, containers, and dashboards.](https://kodekloud.com/kk-media/image/upload/v1752881713/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Explore-Azure-Monitor/azure-monitor-diagram-components.jpg)
 
 In this lesson, we will start by exploring metrics and logs to build a strong foundation for understanding how Azure Monitor operates. This will equip you with the insights needed to leverage its capabilities for enhanced application insights and better overall system management.
 
 For more information, check out the [Azure Monitor Documentation](https://docs.microsoft.com/en-us/azure/azure-monitor/overview).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7b98ab58-5aa5-4f2b-9cfa-fdfef40ddc37/lesson/709426a2-2c09-4e68-8cc0-ff856351a88b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7b98ab58-5aa5-4f2b-9cfa-fdfef40ddc37/lesson/709426a2-2c09-4e68-8cc0-ff856351a88b)

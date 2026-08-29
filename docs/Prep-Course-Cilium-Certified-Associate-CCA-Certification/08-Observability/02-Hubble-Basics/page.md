@@ -12,9 +12,7 @@ ui:
     enabled: false
 ```
 
-<Callout icon="warning">
-  After updating Helm values you must upgrade the release and restart the operator/agents so the new components are started and configuration is picked up.
-</Callout>
+> **warning** After updating Helm values you must upgrade the release and restart the operator/agents so the new components are started and configuration is picked up.
 
 Upgrade and restart:
 
@@ -274,9 +272,7 @@ May 16 15:14:01.783: default/ecom-products-... <> default/ecom-user-... Policy d
 
 Note: `policy-verdict` indicates whether traffic was allowed or denied and at which layer (L3/L4 vs. L7).
 
-<Callout icon="lightbulb">
-  To capture and display L7 (HTTP) details in Hubble, include L7 rules (e.g., `rules.http`) in your CiliumNetworkPolicy. When an L7 rule is present, Hubble can report HTTP requests and responses alongside verdicts.
-</Callout>
+> **lightbulb** To capture and display L7 (HTTP) details in Hubble, include L7 rules (e.g., `rules.http`) in your CiliumNetworkPolicy. When an L7 rule is present, Hubble can report HTTP requests and responses alongside verdicts.
 
 With the HTTP GET-only policy, Hubble can show HTTP-level details:
 
@@ -337,11 +333,9 @@ This command typically sets up a port-forward and prints a local URL you can ope
 * Helm docs (chart values): [https://helm.sh/docs/topics/charts\_values/](https://helm.sh/docs/topics/charts_values/)
 * Kubernetes port-forward docs: [https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/](https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b4c15752-3e42-43af-bedf-4a4c204ef5d8/lesson/d5e9a0ec-181f-4f1f-92bb-196324c1a802" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b4c15752-3e42-43af-bedf-4a4c204ef5d8/lesson/d5e9a0ec-181f-4f1f-92bb-196324c1a802)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b4c15752-3e42-43af-bedf-4a4c204ef5d8/lesson/2c573ca0-aa8e-4bf6-ac75-9dc52dc99e2a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b4c15752-3e42-43af-bedf-4a4c204ef5d8/lesson/2c573ca0-aa8e-4bf6-ac75-9dc52dc99e2a)
 
 
 # Hubble Basics

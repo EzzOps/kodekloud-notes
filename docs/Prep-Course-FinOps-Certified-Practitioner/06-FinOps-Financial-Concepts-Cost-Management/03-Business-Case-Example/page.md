@@ -66,9 +66,7 @@ These figures show a strong return and a short payback window, which are compell
   <img alt="The image is a chart illustrating financial metrics of investment, showing a ROI of 267 and a payback period of 3.3, with icons representing high return and quick recovery." />
 </Frame>
 
-<Callout icon="lightbulb">
-  These numbers are illustrative. Use your organization’s actual spend, waste estimates, and staffing costs when building your business case. Directionally accurate estimates are better than waiting for perfect precision—start small and iterate.
-</Callout>
+> **lightbulb** These numbers are illustrative. Use your organization’s actual spend, waste estimates, and staffing costs when building your business case. Directionally accurate estimates are better than waiting for perfect precision—start small and iterate.
 
 ## Summary and next steps
 
@@ -83,6 +81,4 @@ Links and references
 * [Cloud cost optimization best practices (AWS)](https://aws.amazon.com/answers/management-tools/cost-optimization/)
 * [Cloud cost management overview (Google Cloud)](https://cloud.google.com/products/cost-management)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/5c2c0aed-fc43-4dd5-a4c2-e56c8efdd730" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/5c2c0aed-fc43-4dd5-a4c2-e56c8efdd730)

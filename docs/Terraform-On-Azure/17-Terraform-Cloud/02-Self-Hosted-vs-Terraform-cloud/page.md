@@ -40,9 +40,7 @@ These capabilities can be implemented with third-party tools or bespoke automati
   <img alt="The image outlines the limitations of using Terraform locally, highlighting issues like the lack of policy as code (Sentinel), no centralized run logs and UI, and no cost estimation or drift detection capabilities." />
 </Frame>
 
-<Callout icon="lightbulb">
-  This lesson intentionally uses a self-hosted Terraform setup so you can see how state, backends, locking, security controls, and CI integrations are designed and operated—concepts that are often abstracted away by SaaS platforms.
-</Callout>
+> **lightbulb** This lesson intentionally uses a self-hosted Terraform setup so you can see how state, backends, locking, security controls, and CI integrations are designed and operated—concepts that are often abstracted away by SaaS platforms.
 
 ## Why we chose self-hosted for this course
 
@@ -76,6 +74,4 @@ Now that you understand the trade-offs between [Terraform Cloud](https://www.ter
 * [Terraform State](https://www.terraform.io/language/state)
 * [Terraform Sentinel (policy as code)](https://developer.hashicorp.com/sentinel)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/ca386519-4725-417d-a46f-642d0a683a01/lesson/19de60fb-4742-4fab-8f5a-a8daae2abf36" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/ca386519-4725-417d-a46f-642d0a683a01/lesson/19de60fb-4742-4fab-8f5a-a8daae2abf36)

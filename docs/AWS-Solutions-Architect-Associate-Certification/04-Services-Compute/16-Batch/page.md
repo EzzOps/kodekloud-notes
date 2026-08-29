@@ -12,7 +12,7 @@ AWS Batch automates the entire process—when you specify your job requirements,
 
 > **lightbulb** AWS Batch eliminates the manual burden of managing compute resource allocation so you can focus on improving your application and workflows.
 
-![The image is a flowchart illustrating a batch processing system, showing a sequence from user input to compute environments and task completion.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864814/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Batch/batch-processing-flowchart-sequence.jpg)
+![The image is a flowchart illustrating a batch processing system, showing a sequence from user input to compute environments and task completion.](https://kodekloud.com/kk-media/image/upload/v1752864814/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Batch/batch-processing-flowchart-sequence.jpg)
 
 ## Job Lifecycle
 
@@ -25,7 +25,7 @@ The lifecycle of an AWS Batch job is comprised of several well-defined stages:
 5. **Running:** The job is actively executed, processing the prescribed commands.
 6. **Succeeded/Failed:** The job concludes by entering a "succeeded" state if it completed successfully or "failed" if any issues arose during execution.
 
-![The image depicts a flowchart illustrating the stages of a job lifecycle, including Submitted, Pending, Runnable, Starting, Running, and the outcomes of Failed or Succeeded.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864815/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Batch/job-lifecycle-flowchart-stages.jpg)
+![The image depicts a flowchart illustrating the stages of a job lifecycle, including Submitted, Pending, Runnable, Starting, Running, and the outcomes of Failed or Succeeded.](https://kodekloud.com/kk-media/image/upload/v1752864815/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Batch/job-lifecycle-flowchart-stages.jpg)
 
 ## Key AWS Batch Components
 
@@ -49,7 +49,7 @@ AWS Batch is built around several core components that work together to streamli
 
   AWS Batch automatically scales these environments based on the job queue, ensuring optimal resource utilization.
 
-![The image illustrates the components of a batch processing system, showing the flow from job definition to job queues, job scheduler, and compute environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864816/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Batch/batch-processing-system-components.jpg)
+![The image illustrates the components of a batch processing system, showing the flow from job definition to job queues, job scheduler, and compute environments.](https://kodekloud.com/kk-media/image/upload/v1752864816/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Batch/batch-processing-system-components.jpg)
 
 ## Features and Benefits
 
@@ -63,7 +63,7 @@ Leveraging AWS Batch can significantly optimize your workflow and resource manag
 
 > **lightbulb** By leveraging AWS Batch’s automated scaling and priority-based job scheduling, you can enhance both performance and resource utilization while keeping costs under control.
 
-![The image lists five features: Dynamic Resource Provisioning, Job Queues and Prioritization, Cost Efficiency, Integration with AWS Services, and Customizable Compute Environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864818/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Batch/dynamic-resource-provisioning-features.jpg)
+![The image lists five features: Dynamic Resource Provisioning, Job Queues and Prioritization, Cost Efficiency, Integration with AWS Services, and Customizable Compute Environments.](https://kodekloud.com/kk-media/image/upload/v1752864818/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Batch/dynamic-resource-provisioning-features.jpg)
 
 Transcribed by [https://otter.ai](https://otter.ai)
 

@@ -14,18 +14,12 @@ In this lesson, you will delve into several key Python topics through a series o
 * Object-Oriented Programming
 * Additional Topics: List Comprehensions, Lambdas, Closures, and I/O Operations
 
-<Callout icon="lightbulb">
-  After watching the videos, you'll engage with hands-on labs that allow you to practice coding directly in your browser. These labs provide challenging tasks where you'll write short programs, which are instantly validated to offer immediate feedback.
-</Callout>
+> **lightbulb** After watching the videos, you'll engage with hands-on labs that allow you to practice coding directly in your browser. These labs provide challenging tasks where you'll write short programs, which are instantly validated to offer immediate feedback.
 
-<Frame>
-  ![Split-screen lab interface showing a task list and code editor](../../../../images/kodekloud.com/kk-media/image/upload/v1752882909/notes-assets/images/PCAP-Python-Certification-Course-Course-Introduction/split-screen-task-list-vscode.jpg)
-</Frame>
+![Split-screen lab interface showing a task list and code editor](https://kodekloud.com/kk-media/image/upload/v1752882909/notes-assets/images/PCAP-Python-Certification-Course-Course-Introduction/split-screen-task-list-vscode.jpg)
 
 If you experience any difficulties along the way, solutions for the coding exercises are available to guide you through the challenges. With sufficient practice and determination, you'll be well-prepared to ace the certification exam.
 
 Let's get started with this exciting lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/440d977e-8d7a-4703-8621-adc0691e7fa1/lesson/a19c47f6-f868-4cb3-90fb-0de9041a259e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/440d977e-8d7a-4703-8621-adc0691e7fa1/lesson/a19c47f6-f868-4cb3-90fb-0de9041a259e)

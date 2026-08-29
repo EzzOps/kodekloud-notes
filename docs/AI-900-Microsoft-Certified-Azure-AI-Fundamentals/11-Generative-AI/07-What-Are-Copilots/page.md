@@ -6,7 +6,7 @@ This article explores how copilots, AI-powered assistants, enhance user interact
 
 In this article, we explore the concept of copilots and how they are revolutionizing user interactions within modern applications. Copilots are generative AI-powered assistants integrated directly into applications to facilitate a wide range of tasks. They are most commonly presented as chat interfaces or interactive tools that interpret user commands and queries to generate natural language responses or perform actions.
 
-![The image shows a user interface for "Copilot," an AI-powered assistant with various task options like writing, coding, and organizing. It highlights generative AI assistants integrated into applications, often as chat interfaces.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857021/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-What-Are-Copilots/copilot-ai-assistant-interface.jpg)
+![The image shows a user interface for "Copilot," an AI-powered assistant with various task options like writing, coding, and organizing. It highlights generative AI assistants integrated into applications, often as chat interfaces.](https://kodekloud.com/kk-media/image/upload/v1752857021/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-What-Are-Copilots/copilot-ai-assistant-interface.jpg)
 
 ## Functions of a Copilot
 
@@ -36,7 +36,7 @@ At the second level, organizations enhance copilot capabilities by integrating c
 
 At the highest level, organizations create fully personalized copilots that embed generative AI deeply into their workflows. This approach facilitates the development of unique, branded AI experiences. For instance, a retail company could develop a custom copilot that not only navigates the product catalog but also offers personalized recommendations. This highly tailored solution provides complete control over the design and functionality of the copilot, yielding a powerful tool specific to the business needs.
 
-![The image outlines three levels of Copilot adoption: enhancing productivity with AI Copilot, extending AI Copilot with custom integration, and developing personalized Copilots.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857021/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-What-Are-Copilots/copilot-adoption-productivity-integration-personalization.jpg)
+![The image outlines three levels of Copilot adoption: enhancing productivity with AI Copilot, extending AI Copilot with custom integration, and developing personalized Copilots.](https://kodekloud.com/kk-media/image/upload/v1752857021/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-What-Are-Copilots/copilot-adoption-productivity-integration-personalization.jpg)
 
 > **lightbulb** As organizations progress through these levels, they achieve deeper AI integration, enhanced personalization, and a greater overall impact from their copilot solutions.
 

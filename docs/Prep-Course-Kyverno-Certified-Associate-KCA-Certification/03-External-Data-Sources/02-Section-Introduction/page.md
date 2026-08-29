@@ -46,9 +46,7 @@ This lesson covers how Kyverno fetches and consumes external data. We’ll proce
 | Global context           | Cache frequently-read data to reduce repeated API calls         | Store cost-center mappings in global context                                |
 | Image registry variables | Make decisions based on image metadata (digest, labels)         | Use registry variables to validate or mutate based on image info            |
 
-<Callout icon="lightbulb">
-  Note: ConfigMap keys are case-sensitive; when referencing a key from `billing-info`, ensure you use the exact key name. Also ensure the ConfigMap name matches exactly (Kubernetes resource names are typically lowercase and must follow DNS label rules).
-</Callout>
+> **lightbulb** Note: ConfigMap keys are case-sensitive; when referencing a key from `billing-info`, ensure you use the exact key name. Also ensure the ConfigMap name matches exactly (Kubernetes resource names are typically lowercase and must follow DNS label rules).
 
 Example: reading a ConfigMap in a Kyverno policy
 
@@ -90,6 +88,4 @@ Further resources and references
 
 By the end of this lesson, you’ll be able to author Kyverno policies that consult ConfigMaps, query the Kubernetes API, cache values via the global context, and use image registry metadata to make automated, accurate policy decisions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/470bb961-febf-41b6-b75b-4c439def6eae/lesson/67868d61-6091-49f8-b9f5-b8bc9d76c071" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/470bb961-febf-41b6-b75b-4c439def6eae/lesson/67868d61-6091-49f8-b9f5-b8bc9d76c071)

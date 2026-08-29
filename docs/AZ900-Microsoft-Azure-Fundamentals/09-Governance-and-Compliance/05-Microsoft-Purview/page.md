@@ -10,7 +10,7 @@ Microsoft Purview is a unified data governance service that empowers organizatio
 
 Microsoft Purview unifies your data estate by automating data discovery and classification. It identifies, labels, and protects critical data regardless of its location. Additionally, Purview offers advanced tools to track data lineage, enforce data policies, and control data access.
 
-![The image is a diagram showing Microsoft Purview at the center, connected to Amazon Web Services, Google Cloud, Azure, and an On-Premises Data Center.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868375/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Purview/microsoft-purview-cloud-diagram.jpg)
+![The image is a diagram showing Microsoft Purview at the center, connected to Amazon Web Services, Google Cloud, Azure, and an On-Premises Data Center.](https://kodekloud.com/kk-media/image/upload/v1752868375/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Purview/microsoft-purview-cloud-diagram.jpg)
 
 ## Key Features
 
@@ -25,7 +25,7 @@ Microsoft Purview delivers a range of essential features that streamline data ma
 3. **Advanced Data Security**\
    Monitor sensitive data on an enterprise-wide scale, implement protective measures, and assess compliance with regulatory standards.
 
-![The image outlines the key features of Microsoft Purview, highlighting Data Discovery and Classification, Data Governance, and Advanced Data Security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868376/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Purview/microsoft-purview-features-diagram.jpg)
+![The image outlines the key features of Microsoft Purview, highlighting Data Discovery and Classification, Data Governance, and Advanced Data Security.](https://kodekloud.com/kk-media/image/upload/v1752868376/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Purview/microsoft-purview-features-diagram.jpg)
 
 > **lightbulb** Implementing Microsoft Purview can be a strategic move to safeguard your data assets and streamline compliance across all environments.
 
@@ -42,7 +42,7 @@ Adopting Microsoft Purview offers several critical benefits for businesses:
 * **Insightful Data Analysis:**\
   Utilize advanced analytics to monitor data usage, detect access patterns, and identify potential risks, enabling informed data-driven decisions.
 
-![The image outlines the benefits of Microsoft Purview, highlighting enhanced data governance, compliance and risk management, and insightful data analysis.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868377/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Purview/microsoft-purview-benefits-governance.jpg)
+![The image outlines the benefits of Microsoft Purview, highlighting enhanced data governance, compliance and risk management, and insightful data analysis.](https://kodekloud.com/kk-media/image/upload/v1752868377/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Purview/microsoft-purview-benefits-governance.jpg)
 
 ## Use Cases for Microsoft Purview
 
@@ -52,7 +52,7 @@ Organizations managing large volumes of diverse data will benefit from Microsoft
 * Enhancing data protection measures
 * Assuring regulatory compliance
 
-![The image outlines three use cases for Microsoft Purview: a holistic view of the data landscape, enhanced data protection, and regulatory compliance assurance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868378/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Purview/microsoft-purview-use-cases.jpg)
+![The image outlines three use cases for Microsoft Purview: a holistic view of the data landscape, enhanced data protection, and regulatory compliance assurance.](https://kodekloud.com/kk-media/image/upload/v1752868378/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Purview/microsoft-purview-use-cases.jpg)
 
 > **triangle-alert** Ensure you regularly update your data governance policies to align with evolving regulatory requirements and data usage trends.
 

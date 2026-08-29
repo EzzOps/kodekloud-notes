@@ -57,9 +57,7 @@ round-trip min/avg/max/stddev = 3.245/4.014/5.447/1.014 ms
 
 Each reply shows round‑trip time for that packet. When you stop the command (Control+C), the summary helps spot packet loss or latency spikes — useful for diagnosing flaky Wi‑Fi or an overloaded local network.
 
-<Callout icon="lightbulb">
-  If the router responds, your device’s network interface and local link are working. If it doesn’t, focus on Wi‑Fi settings, physical cables, and your network adapter configuration.
-</Callout>
+> **lightbulb** If the router responds, your device’s network interface and local link are working. If it doesn’t, focus on Wi‑Fi settings, physical cables, and your network adapter configuration.
 
 Check the device IP configuration
 
@@ -238,6 +236,4 @@ Notes on the false options:
 
 That’s the end of this article.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/networks-and-communications/module/ef02f990-7cd1-40e2-90ed-b8fd88f079cb/lesson/6741cb5b-ddaf-46a3-b5f6-fc8f0f8538e1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/networks-and-communications/module/ef02f990-7cd1-40e2-90ed-b8fd88f079cb/lesson/6741cb5b-ddaf-46a3-b5f6-fc8f0f8538e1)

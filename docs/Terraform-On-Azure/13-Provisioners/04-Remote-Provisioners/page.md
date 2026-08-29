@@ -39,9 +39,7 @@ Before using remote provisioners ensure the following:
   <img alt="The image displays a list of requirements for network access, including the need for a specific port for SSH, a correct username and private key, and a public IP or reachable hostname." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Prefer SSH key-based authentication for Linux VMs and avoid embedding plaintext secrets in your Terraform files. Use an absolute path or pass keys via variables (Terraform does not expand `~` in `file()` calls).
-</Callout>
+> **lightbulb** Prefer SSH key-based authentication for Linux VMs and avoid embedding plaintext secrets in your Terraform files. Use an absolute path or pass keys via variables (Terraform does not expand `~` in `file()` calls).
 
 ## Example: remote-exec to install Apache (apache2)
 

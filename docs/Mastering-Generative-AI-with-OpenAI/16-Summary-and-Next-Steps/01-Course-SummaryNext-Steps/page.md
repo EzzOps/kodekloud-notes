@@ -24,13 +24,11 @@ Congratulations on completing **Mastering Generative AI with OpenAI**! You’ve 
 4. Join community forums and GitHub repos to collaborate and share best practices.
 5. Monitor the official resources below for new model releases, feature updates, and pricing changes.
 
-<Callout icon="lightbulb">
-  The OpenAI platform evolves quickly. Bookmark these links to keep your projects current:
+> **lightbulb** The OpenAI platform evolves quickly. Bookmark these links to keep your projects current:
 
   * [OpenAI Blog](https://openai.com/blog/)
   * [API Reference](https://platform.openai.com/docs/)
   * [Pricing & Usage Plans](https://openai.com/pricing/)
-</Callout>
 
 ## References and Further Reading
 
@@ -42,6 +40,4 @@ Congratulations on completing **Mastering Generative AI with OpenAI**! You’ve 
 
 Your enthusiasm and hard work have laid a strong foundation for innovation in AI. Keep exploring, building, and sharing—your next breakthrough is just around the corner!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/dfc4b2b1-3ffa-4fd8-9fd0-4b8e286cd53b/lesson/1d46e727-3b64-4f0c-9d13-313735a06bf4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/dfc4b2b1-3ffa-4fd8-9fd0-4b8e286cd53b/lesson/1d46e727-3b64-4f0c-9d13-313735a06bf4)

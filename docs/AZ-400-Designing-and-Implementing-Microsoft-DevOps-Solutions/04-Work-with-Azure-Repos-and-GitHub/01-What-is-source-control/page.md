@@ -14,7 +14,7 @@ When multiple developers work on the same project, source control systems:
 * Simplify merging concurrent edits
 * Provide audit trails for accountability
 
-![The image illustrates a collaborative coding process involving code modification and management, with four teams (A, B, C, D) represented by colored icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868176/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-source-control/collaborative-coding-process-teams-icons.jpg)
+![The image illustrates a collaborative coding process involving code modification and management, with four teams (A, B, C, D) represented by colored icons.](https://kodekloud.com/kk-media/image/upload/v1752868176/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-source-control/collaborative-coding-process-teams-icons.jpg)
 
 In Azure DevOps, you can enforce branch policies, require pull requests, and set up code reviewers to ensure high-quality merges.
 
@@ -26,7 +26,7 @@ Every commit in a source control system records a snapshot of your code at a spe
 * Compare changes across versions
 * Diagnose when and where bugs were introduced
 
-![The image shows a timeline of codebase snapshots with four versions, each marked at one-minute intervals from Version 01 to Version 04.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868177/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-source-control/codebase-snapshots-timeline-versions.jpg)
+![The image shows a timeline of codebase snapshots with four versions, each marked at one-minute intervals from Version 01 to Version 04.](https://kodekloud.com/kk-media/image/upload/v1752868177/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-source-control/codebase-snapshots-timeline-versions.jpg)
 
 > **lightbulb** Use Azure DevOps’s `Revert` and `Cherry-pick` features to roll back or selectively apply commits without disrupting your main branch.
 
@@ -42,7 +42,7 @@ Implementing a robust source control strategy yields the following advantages:
 | Change Accountability  | Audit trails provide visibility into what changed, who changed it, and why.                 |
 | Automated Tasks        | Hooks and pipelines can run linting, unit tests, and deployments on every push or PR merge. |
 
-![The image illustrates a source control process flow, highlighting stages from version control to deployment and validation, with benefits like streamlined development and enhanced teamwork.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868178/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-source-control/source-control-process-flow-diagram.jpg)
+![The image illustrates a source control process flow, highlighting stages from version control to deployment and validation, with benefits like streamlined development and enhanced teamwork.](https://kodekloud.com/kk-media/image/upload/v1752868178/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-source-control/source-control-process-flow-diagram.jpg)
 
 ## Best Practices for Source Control
 
@@ -63,7 +63,7 @@ Follow these guidelines to keep your repository organized and maintainable:
 7. Team-Agreed Conventions\
    Define and document branch naming—e.g., `feature/`, `release/`, `hotfix/`—and commit style guides.
 
-![The image lists seven best practices for software development, including incremental updates, keeping personal files separate, and ensuring quality assurance pre-push. Each practice is presented in a colorful box with a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868180/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-source-control/best-practices-software-development-list.jpg)
+![The image lists seven best practices for software development, including incremental updates, keeping personal files separate, and ensuring quality assurance pre-push. Each practice is presented in a colorful box with a number.](https://kodekloud.com/kk-media/image/upload/v1752868180/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-source-control/best-practices-software-development-list.jpg)
 
 > **triangle-alert** Neglecting to sync branches or enforce code reviews can lead to difficult-to-resolve merge conflicts and unstable builds.
 

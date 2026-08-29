@@ -10,7 +10,7 @@ When discussing application integration, we focus on managing and optimizing the
 
 Consider the diagram below which illustrates how an application sends traffic to SNS. SNS duplicates the traffic and forwards it to both applications and customers:
 
-![The image illustrates application integration using Amazon SNS, SQS, Elastic Load Balancing, and AWS Application Auto Scaling, showing traffic flow from an app to customers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862273/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Application-Integration/frame_120.jpg)
+![The image illustrates application integration using Amazon SNS, SQS, Elastic Load Balancing, and AWS Application Auto Scaling, showing traffic flow from an app to customers.](https://kodekloud.com/kk-media/image/upload/v1752862273/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Application-Integration/frame_120.jpg)
 
 In essence, application integration is about managing flow, quality, buffering capacity, and the rate of communications. This ensures that messages or requests are delivered in a controlled fashion—much like managing a queue in a busy line.
 
@@ -18,13 +18,13 @@ In essence, application integration is about managing flow, quality, buffering c
 
 We begin with SNS, the duplicator service. When a message is sent to SNS, it replicates the message across all endpoints subscribed to a specific topic. For example, publishing a message on SNS ensures that every device or service subscribed to that topic receives a copy, similar to an email subscription system.
 
-![The image explains Amazon Simple Notification Service (SNS) for sending messages via text, email, or mobile push, and copying messages to multiple applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862274/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Application-Integration/frame_200.jpg)
+![The image explains Amazon Simple Notification Service (SNS) for sending messages via text, email, or mobile push, and copying messages to multiple applications.](https://kodekloud.com/kk-media/image/upload/v1752862274/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Application-Integration/frame_200.jpg)
 
 ## Simple Queue Service (SQS)
 
 SNS pairs naturally with SQS, a service built around the concept of a queue. SQS manages a large influx of messages by storing them until the receiving application is ready to process them. This buffering mechanism prevents backend systems from getting overwhelmed during peak loads. Unlike SNS, which duplicates messages, SQS ensures that messages are held and then processed one-by-one, maintaining system stability.
 
-![The image explains Amazon Simple Queue Service (SQS) for managing message traffic between applications, highlighting its use in handling sudden user traffic increases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862275/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Application-Integration/frame_290.jpg)
+![The image explains Amazon Simple Queue Service (SQS) for managing message traffic between applications, highlighting its use in handling sudden user traffic increases.](https://kodekloud.com/kk-media/image/upload/v1752862275/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Application-Integration/frame_290.jpg)
 
 ## Elastic Load Balancing (ELB)
 
@@ -32,7 +32,7 @@ Next, we examine Elastic Load Balancing. ELB distributes incoming traffic evenly
 
 ELB directs traffic to the first available server and automatically reroutes requests if a server fails. This functionality applies to diverse compute environments, including virtual machines, containers, and Lambda functions. The diagram below demonstrates how ELB distributes incoming traffic across multiple availability zones:
 
-![The image explains AWS Elastic Load Balancing, highlighting its use in directing traffic, distributing workloads, and integrating with services like EC2, ECS, EKS, and Lambda.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862277/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Application-Integration/frame_370.jpg)
+![The image explains AWS Elastic Load Balancing, highlighting its use in directing traffic, distributing workloads, and integrating with services like EC2, ECS, EKS, and Lambda.](https://kodekloud.com/kk-media/image/upload/v1752862277/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Application-Integration/frame_370.jpg)
 
 ## Auto Scaling
 
@@ -40,7 +40,7 @@ Working hand in hand with load balancing is Auto Scaling. This service monitors 
 
 Below is a diagram showing how increased traffic results in an expanded Auto Scaling group, with the load balancer redistributing requests among all instances:
 
-![The image explains Amazon Autoscaling, highlighting its ability to scale applications like DynamoDB and EC2, with a focus on elastic load balancing and instance limits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862278/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Application-Integration/frame_490.jpg)
+![The image explains Amazon Autoscaling, highlighting its ability to scale applications like DynamoDB and EC2, with a focus on elastic load balancing and instance limits.](https://kodekloud.com/kk-media/image/upload/v1752862278/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Core-AWS-Services-Application-Integration/frame_490.jpg)
 
 ## Additional Application Integration Services
 

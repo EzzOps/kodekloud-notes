@@ -22,9 +22,9 @@ Navigate to Amazon S3 → **Access points** and create two points:
 
 Select **kk-accesspoint** as the data source, choose **Internet** for Network origin, and keep public access blocking enabled.
 
-![The image shows an AWS S3 console interface for creating an access point, with fields for access point name, bucket selection, and network origin settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869374/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/aws-s3-access-point-creation-interface.jpg)
+![The image shows an AWS S3 console interface for creating an access point, with fields for access point name, bucket selection, and network origin settings.](https://kodekloud.com/kk-media/image/upload/v1752869374/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/aws-s3-access-point-creation-interface.jpg)
 
-![The image shows an AWS S3 Access Point configuration screen, where settings for bucket selection, AWS region, network origin, and public access blocking are being configured.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869375/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/aws-s3-access-point-configuration.jpg)
+![The image shows an AWS S3 Access Point configuration screen, where settings for bucket selection, AWS region, network origin, and public access blocking are being configured.](https://kodekloud.com/kk-media/image/upload/v1752869375/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/aws-s3-access-point-configuration.jpg)
 
 > **triangle-alert** Always keep **Block all public access** enabled on buckets and access points to prevent accidental exposure.
 
@@ -55,7 +55,7 @@ To let your access points list bucket contents, add this bucket policy. Replace 
 
 Apply under **Bucket → Permissions → Bucket policy**:
 
-![The image shows an Amazon S3 console screen with the "Permissions" tab open for a bucket named "kk-access-point." It displays settings related to blocking public access and bucket policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869377/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/amazon-s3-console-permissions-kk-access-point.jpg)
+![The image shows an Amazon S3 console screen with the "Permissions" tab open for a bucket named "kk-access-point." It displays settings related to blocking public access and bucket policies.](https://kodekloud.com/kk-media/image/upload/v1752869377/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/amazon-s3-console-permissions-kk-access-point.jpg)
 
 ***
 
@@ -88,7 +88,7 @@ Go to **Access points → developers → Permissions → Edit** and paste:
 }
 ```
 
-![The image shows an AWS management console screen for editing an S3 Access Point policy, indicating that public access is blocked due to current settings. There are options to check and learn more about public access settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869378/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/aws-s3-access-point-policy-settings.jpg)
+![The image shows an AWS management console screen for editing an S3 Access Point policy, indicating that public access is blocked due to current settings. There are options to check and learn more about public access settings.](https://kodekloud.com/kk-media/image/upload/v1752869378/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/aws-s3-access-point-policy-settings.jpg)
 
 ### 5.2 Finance Access Point Policy
 
@@ -119,7 +119,7 @@ For **finance**, allow user3:
 
 After saving, review each access point’s overview:
 
-![The image shows an Amazon S3 Access Point overview page, displaying details such as bucket name, account ID, AWS region, creation date, and network origin.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869378/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/amazon-s3-access-point-overview.jpg)
+![The image shows an Amazon S3 Access Point overview page, displaying details such as bucket name, account ID, AWS region, creation date, and network origin.](https://kodekloud.com/kk-media/image/upload/v1752869378/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/amazon-s3-access-point-overview.jpg)
 
 ***
 
@@ -175,7 +175,7 @@ As **user3**, perform the same steps and upload a new file:
 
 Inspect the finance access point’s permissions tab:
 
-![The image shows an AWS S3 Access Point settings page, specifically the "Permissions" tab for an access point named "finance," with options to block public access enabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869379/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/aws-s3-access-point-permissions-finance.jpg)
+![The image shows an AWS S3 Access Point settings page, specifically the "Permissions" tab for an access point named "finance," with options to block public access enabled.](https://kodekloud.com/kk-media/image/upload/v1752869379/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/aws-s3-access-point-permissions-finance.jpg)
 
 ***
 
@@ -237,7 +237,7 @@ Learn how to enable and enforce Object Lock on Amazon S3 buckets, apply governan
 1. In the AWS S3 console, click **Create bucket**.
 2. Under **Advanced settings**, check **Enable Object Lock**.
 
-![The image shows an AWS S3 bucket configuration page with options for default encryption and advanced settings, including Object Lock.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869380/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Object-Lock/aws-s3-bucket-configuration-page.jpg)
+![The image shows an AWS S3 bucket configuration page with options for default encryption and advanced settings, including Object Lock.](https://kodekloud.com/kk-media/image/upload/v1752869380/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Object-Lock/aws-s3-bucket-configuration-page.jpg)
 
 > **lightbulb** Object Lock requires versioning. When you enable Object Lock, S3 automatically enables versioning for the bucket (the Versioning option is grayed out).
 
@@ -251,7 +251,7 @@ Upload a test file, for example `file1.txt`, to your new bucket:
 2. Select `file1.txt`.
 3. Confirm and upload.
 
-![The image shows an AWS S3 Management Console screen where a file named "file1.txt" is being prepared for upload to a bucket named "kk-objectclock-demo." The file is 7.0 bytes in size and is of type "text/plain."](../../../../images/kodekloud.com/kk-media/image/upload/v1752869381/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Object-Lock/aws-s3-console-file-upload-kk-objectclock.jpg)
+![The image shows an AWS S3 Management Console screen where a file named "file1.txt" is being prepared for upload to a bucket named "kk-objectclock-demo." The file is 7.0 bytes in size and is of type "text/plain."](https://kodekloud.com/kk-media/image/upload/v1752869381/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Object-Lock/aws-s3-console-file-upload-kk-objectclock.jpg)
 
 After upload, open the object’s **Properties** to configure Object Lock.
 
@@ -269,7 +269,7 @@ In the object’s **Object Lock** section you can choose:
 | Governance Mode | `s3:BypassGovernanceRetention` | Temporary holds with exception    |
 | Compliance Mode | Not bypassable                 | Regulatory or compliance mandates |
 
-![The image shows an Amazon S3 interface for editing object lock retention settings, with options for retention mode and a warning about governance mode. A specified object, "file1.txt," is listed below with details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869382/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Object-Lock/amazon-s3-object-lock-settings-file1.jpg)
+![The image shows an Amazon S3 interface for editing object lock retention settings, with options for retention mode and a warning about governance mode. A specified object, "file1.txt," is listed below with details.](https://kodekloud.com/kk-media/image/upload/v1752869382/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Object-Lock/amazon-s3-object-lock-settings-file1.jpg)
 
 1. Select **Governance** mode.
 2. Set the retention date (e.g., tomorrow).
@@ -299,7 +299,7 @@ Switch to **User Two**, who has a policy denying `s3:BypassGovernanceRetention`.
 
 When User Two tries to delete the locked object version, the request fails:
 
-![The image shows an AWS S3 console screen with a "Failed to delete objects" error message, indicating an object could not be deleted due to access denial.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869383/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Object-Lock/aws-s3-failed-delete-objects-error.jpg)
+![The image shows an AWS S3 console screen with a "Failed to delete objects" error message, indicating an object could not be deleted due to access denial.](https://kodekloud.com/kk-media/image/upload/v1752869383/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Object-Lock/aws-s3-failed-delete-objects-error.jpg)
 
 User Two also cannot modify retention settings.
 
@@ -332,7 +332,7 @@ User One can now permanently delete the locked object version.
 2. Open its **Properties** and scroll to **Object Lock**.
 3. Enable **Legal Hold**, then **Save**.
 
-![The image shows an Amazon S3 console interface displaying details of an object, including the owner, AWS region, last modified date, size, and object URL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869384/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Object-Lock/amazon-s3-console-file1-details.jpg)
+![The image shows an Amazon S3 console interface displaying details of an object, including the owner, AWS region, last modified date, size, and object URL.](https://kodekloud.com/kk-media/image/upload/v1752869384/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Object-Lock/amazon-s3-console-file1-details.jpg)
 
 The object is now held indefinitely under Legal Hold.
 
@@ -361,7 +361,7 @@ Update **User Two**’s policy to also deny `s3:PutObjectLegalHold`, preventing 
 
 Now, when User Two tries to disable the legal hold, they see a permission error:
 
-![The image shows an AWS S3 console screen where a user is attempting to edit an Object Lock legal hold but receives a permission error message.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869385/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Object-Lock/aws-s3-console-object-lock-error.jpg)
+![The image shows an AWS S3 console screen where a user is attempting to edit an Object Lock legal hold but receives a permission error message.](https://kodekloud.com/kk-media/image/upload/v1752869385/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Object-Lock/aws-s3-console-object-lock-error.jpg)
 
 Only users with the correct permissions (e.g., User One) can remove a legal hold.
 

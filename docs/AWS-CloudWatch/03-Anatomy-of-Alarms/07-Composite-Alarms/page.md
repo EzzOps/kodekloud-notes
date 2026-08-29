@@ -20,7 +20,7 @@ Benefits at a glance:
 | Scenario Detection    | Define complex conditions that single alarms can’t express.       | Alert if network traffic is high *OR* a custom application error rate exceeds threshold.    |
 | Simplified Management | Replace multiple notification workflows with one composite alarm. | One alarm configuration in SNS/ChatOps instead of dozens of individual alarm subscriptions. |
 
-![The image illustrates the concept of AWS CloudWatch Composite Alarms, showing how multiple alarms from EC2 instances in an Auto Scaling Group can be combined to reduce alarm noise and detect specific scenarios.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862374/notes-assets/images/AWS-CloudWatch-Composite-Alarms/aws-cloudwatch-composite-alarms-diagram.jpg)
+![The image illustrates the concept of AWS CloudWatch Composite Alarms, showing how multiple alarms from EC2 instances in an Auto Scaling Group can be combined to reduce alarm noise and detect specific scenarios.](https://kodekloud.com/kk-media/image/upload/v1752862374/notes-assets/images/AWS-CloudWatch-Composite-Alarms/aws-cloudwatch-composite-alarms-diagram.jpg)
 
 ## How to Create a Composite Alarm
 

@@ -318,9 +318,7 @@ Refresh the voting service URL in your browser several times to observe that req
 
 This lesson demonstrates how Kubernetes Deployments simplify application management by enabling effortless scaling, rolling updates, and high availability. Happy deploying, and see you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/a603e70d-8473-4de4-aec9-7cc76c396ad3/lesson/3cf172f2-c6b0-4676-bfb0-6da0d0792814" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/a603e70d-8473-4de4-aec9-7cc76c396ad3/lesson/3cf172f2-c6b0-4676-bfb0-6da0d0792814)
 
 
 # Demo Deploying voting app on Kubernetes

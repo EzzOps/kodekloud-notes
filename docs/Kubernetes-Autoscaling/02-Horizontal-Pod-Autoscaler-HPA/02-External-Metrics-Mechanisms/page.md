@@ -47,9 +47,7 @@ Components summary
 | Metrics adapter        | Implements Kubernetes External Metrics API and bridges collector → K8s API | `prometheus-adapter`, cloud provider adapters                       |
 | HPA                    | Queries the External Metrics API and makes scaling decisions               | `HorizontalPodAutoscaler` (autoscaling/v2)                          |
 
-<Callout icon="lightbulb">
-  The default Kubernetes Metrics Server only serves resource metrics (CPU/memory) and does not expose external metrics. Deploy a metrics adapter that implements the External Metrics API (for example, the [Prometheus Adapter](https://github.com/kubernetes-sigs/prometheus-adapter) or a cloud-specific adapter) to allow the HPA to consume external signals.
-</Callout>
+> **lightbulb** The default Kubernetes Metrics Server only serves resource metrics (CPU/memory) and does not expose external metrics. Deploy a metrics adapter that implements the External Metrics API (for example, the [Prometheus Adapter](https://github.com/kubernetes-sigs/prometheus-adapter) or a cloud-specific adapter) to allow the HPA to consume external signals.
 
 Important considerations
 
@@ -105,9 +103,7 @@ Testing and observability checklist
   * `kubectl describe hpa example-external-hpa`
 * Monitor adapter and collector logs/alerts to detect failures or missing series.
 
-<Callout icon="warning">
-  If the adapter or collector is misconfigured or unavailable, the HPA will not receive external metrics and scaling may not occur. Continuously monitor adapter health and metric endpoints to avoid gaps in autoscaling.
-</Callout>
+> **warning** If the adapter or collector is misconfigured or unavailable, the HPA will not receive external metrics and scaling may not occur. Continuously monitor adapter health and metric endpoints to avoid gaps in autoscaling.
 
 Further reading and references
 
@@ -117,8 +113,6 @@ Further reading and references
 
 And that's it — use external metrics to incorporate business- and infrastructure-level signals into HPA-driven scaling. Explore adapters that match your monitoring backend and external sources to make autoscaling both reliable and proactive.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/f0e21343-4242-4359-a321-c77a082ad324" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/f0e21343-4242-4359-a321-c77a082ad324)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/bbb01344-6729-4736-a876-cbbc454998cc" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/bbb01344-6729-4736-a876-cbbc454998cc)

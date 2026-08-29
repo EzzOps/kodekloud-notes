@@ -21,9 +21,7 @@ new changes
 * [GNU less Manual](https://www.gnu.org/software/less/manual/)
 * [Linux Command-Line Navigation](https://linuxcommand.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/23449ef2-bfb1-4049-9f2c-092fd9fd492d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/23449ef2-bfb1-4049-9f2c-092fd9fd492d)
 
 
 # Extended Regular Expressions
@@ -48,9 +46,7 @@ $ grep -Er '0+' /etc/
 $ egrep -r '0+' /etc/
 ```
 
-<Callout icon="lightbulb">
-  Under the hood, `egrep` is equivalent to `grep -E`. Future versions of GNU grep may deprecate `egrep`.
-</Callout>
+> **lightbulb** Under the hood, `egrep` is equivalent to `grep -E`. Future versions of GNU grep may deprecate `egrep`.
 
 ***
 

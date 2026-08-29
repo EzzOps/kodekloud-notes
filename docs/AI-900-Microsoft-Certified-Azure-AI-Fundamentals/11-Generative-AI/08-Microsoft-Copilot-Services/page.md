@@ -26,11 +26,11 @@ Within Microsoft 365, Copilot is deeply integrated with popular applications suc
 
 Microsoft Copilot is an asset for business processes by optimizing operations and enhancing customer interactions. In [Microsoft Dynamics 365](https://dynamics.microsoft.com), Copilot improves customer relationship management by retrieving relevant customer data, qualifying leads, and preparing proposals—allowing teams to focus on delivering superior service.
 
-![The image shows a screenshot of Microsoft Dynamics 365, highlighting AI features for managing customer information and leads. It includes sections for daily tasks, business processes, and software development, with a focus on improving sales and customer service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857016/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Microsoft-Copilot-Services/microsoft-dynamics-365-ai-features.jpg)
+![The image shows a screenshot of Microsoft Dynamics 365, highlighting AI features for managing customer information and leads. It includes sections for daily tasks, business processes, and software development, with a focus on improving sales and customer service.](https://kodekloud.com/kk-media/image/upload/v1752857016/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Microsoft-Copilot-Services/microsoft-dynamics-365-ai-features.jpg)
 
 On platforms like [Power Platform](https://powerplatform.microsoft.com) and [Microsoft Fabric](https://fabric.microsoft.com), Copilot simplifies application development and data analysis. Within [Power BI](https://powerbi.microsoft.com), it can generate code to transform raw data into actionable insights, supporting real-time decision making.
 
-![The image shows a comparison of two software interfaces related to AI in Power Platform and Microsoft Fabric, highlighting features for developing apps and using Power BI to write code. It includes sections labeled "Daily Tasks," "Business Processes," and "Infra, Security, and Software Development."](../../../../images/kodekloud.com/kk-media/image/upload/v1752857017/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Microsoft-Copilot-Services/ai-power-platform-microsoft-fabric-comparison.jpg)
+![The image shows a comparison of two software interfaces related to AI in Power Platform and Microsoft Fabric, highlighting features for developing apps and using Power BI to write code. It includes sections labeled "Daily Tasks," "Business Processes," and "Infra, Security, and Software Development."](https://kodekloud.com/kk-media/image/upload/v1752857017/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Microsoft-Copilot-Services/ai-power-platform-microsoft-fabric-comparison.jpg)
 
 ***
 

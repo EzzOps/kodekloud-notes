@@ -20,7 +20,7 @@ You can also specify the working region directly in your commands using the `--r
 
 Below is an image that demonstrates a terminal window displaying the AWS CLI documentation:
 
-![The image shows a terminal window with AWS CLI documentation, including a description, synopsis, and global options for managing AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861758/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-CLI-Demo/frame_80.jpg)
+![The image shows a terminal window with AWS CLI documentation, including a description, synopsis, and global options for managing AWS services.](https://kodekloud.com/kk-media/image/upload/v1752861758/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-CLI-Demo/frame_80.jpg)
 
 ## Command Structure and Service Exploration
 
@@ -39,7 +39,7 @@ aws s3
 
 This command displays a list of available S3-related commands along with other services, as shown in the image below:
 
-![The image shows a terminal interface with AWS CLI configuration options and a list of available services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861759/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-CLI-Demo/frame_120.jpg)
+![The image shows a terminal interface with AWS CLI configuration options and a list of available services.](https://kodekloud.com/kk-media/image/upload/v1752861759/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-CLI-Demo/frame_120.jpg)
 
 > **lightbulb** To view detailed information about S3 commands (or any command), append `help` to your command. For example, to learn more about the `mb` (make bucket) command, execute:
 

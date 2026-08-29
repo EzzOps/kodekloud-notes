@@ -18,9 +18,7 @@ result = app.invoke({"messages": ["Hi!"]}, config=config)
 print(result)
 ```
 
-<Callout icon="lightbulb">
-  Using the same `thread_id` on subsequent invokes lets LangGraph load the latest checkpoint for that session and resume from the stored state.
-</Callout>
+> **lightbulb** Using the same `thread_id` on subsequent invokes lets LangGraph load the latest checkpoint for that session and resume from the stored state.
 
 As the graph runs, LangGraph will save checkpoints automatically to supported backends (for example, SQLite or Redis). These checkpoints act as recoverable snapshots so workflows can continue later by reconnecting to the same checkpointer and invoking the graph again with the same `thread_id`.
 
@@ -47,9 +45,7 @@ result = app.invoke({"messages": ["Continue our conversation"]}, config=config)
 print(result)
 ```
 
-<Callout icon="warning">
-  Ensure the compiled graph's structure and state schema match the original run. Mismatched graph definitions can cause rehydration errors or inconsistent state.
-</Callout>
+> **warning** Ensure the compiled graph's structure and state schema match the original run. Mismatched graph definitions can cause rehydration errors or inconsistent state.
 
 Why checkpointing matters
 
@@ -141,9 +137,7 @@ Links and references
 * [Redis](https://redis.io)
 * [LangGraph repository and docs](/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/55b77569-eff2-40c3-859a-a5e5de30cbd9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/55b77569-eff2-40c3-859a-a5e5de30cbd9)
 
 
 # Managing Concurrency and State Isolation per User Session

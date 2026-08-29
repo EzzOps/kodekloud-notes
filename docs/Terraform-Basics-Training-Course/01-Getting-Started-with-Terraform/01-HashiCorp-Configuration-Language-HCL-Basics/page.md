@@ -65,9 +65,7 @@ Terraform will perform the following actions:
 }
 ```
 
-<Callout icon="lightbulb">
-  Storing sensitive values in a dedicated `.tfvars` file and using the `-var-file` option significantly reduces the risk of accidentally exposing secret information.
-</Callout>
+> **lightbulb** Storing sensitive values in a dedicated `.tfvars` file and using the `-var-file` option significantly reduces the risk of accidentally exposing secret information.
 
 Alternatively, you can export sensitive values as environment variables. This approach is especially useful in CI/CD pipelines, where Terraform can securely access sensitive data without manual input.
 
@@ -112,19 +110,13 @@ terraform output info_string
 "AMI=ami-06178cf087598769c; Instance Type=t3.micro"
 ```
 
-<Callout icon="triangle-alert">
-  Remember that even if sensitive attributes are masked in terminal outputs, they are stored as plain text in the Terraform state file. Ensure that you manage access to your state file securely and consider using encryption to protect it.
-</Callout>
+> **triangle-alert** Remember that even if sensitive attributes are masked in terminal outputs, they are stored as plain text in the Terraform state file. Ensure that you manage access to your state file securely and consider using encryption to protect it.
 
 That's it for this lesson on marking variables as sensitive in Terraform. Continue exploring Terraform best practices to further enhance your infrastructure security and efficiency.
 
-<Frame>
-  ![The image shows a selection interface for securing a state file, with options: "Sensitive attributes hidden," "Plain text in state file" (highlighted), and "Secure state file."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884177/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Variables-Resource-Attributes-and-Dependencies/frame_200.jpg)
-</Frame>
+![The image shows a selection interface for securing a state file, with options: "Sensitive attributes hidden," "Plain text in state file" (highlighted), and "Secure state file."](https://kodekloud.com/kk-media/image/upload/v1752884177/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Variables-Resource-Attributes-and-Dependencies/frame_200.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/cca81ade-f05a-42b2-af56-1926cade6582/lesson/fdb35cae-60fd-43c6-a997-b981b359efbd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/cca81ade-f05a-42b2-af56-1926cade6582/lesson/fdb35cae-60fd-43c6-a997-b981b359efbd)
 
 
 # HashiCorp Configuration Language HCL Basics
@@ -220,9 +212,7 @@ A typical Terraform workflow involves the following steps:
    $ terraform init
    ```
 
-<Callout icon="lightbulb">
-  When running `terraform init`, Terraform identifies the use of the local provider based on your resource configuration.
-</Callout>
+> **lightbulb** When running `terraform init`, Terraform identifies the use of the local provider based on your resource configuration.
 
 Example output:
 

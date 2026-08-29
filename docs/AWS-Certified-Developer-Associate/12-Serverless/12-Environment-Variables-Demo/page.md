@@ -10,7 +10,7 @@ In this article, we demonstrate how to configure environment variables for an [A
 
 Begin by creating a new [AWS Lambda](https://learn.kodekloud.com/user/courses/aws-lambda) function named "env demo". During the setup process, you will configure essential settings including the function name, runtime, and permissions.
 
-![The image shows the AWS Lambda console where a user is creating a new function. The interface includes options for function name, runtime, architecture, and permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859459/notes-assets/images/AWS-Certified-Developer-Associate-Environment-Variables-Demo/aws-lambda-console-new-function.jpg)
+![The image shows the AWS Lambda console where a user is creating a new function. The interface includes options for function name, runtime, architecture, and permissions.](https://kodekloud.com/kk-media/image/upload/v1752859459/notes-assets/images/AWS-Certified-Developer-Associate-Environment-Variables-Demo/aws-lambda-console-new-function.jpg)
 
 ## Accessing Environment Variables in Code
 
@@ -44,7 +44,7 @@ To configure the environment variable, follow these steps in the [AWS Lambda](ht
 2. Click the Edit button.
 3. Add a new environment variable with the key `PASSWORD` and the value `password123`.
 
-![The image shows an AWS Lambda console where a user is editing environment variables, with a key labeled "PASSWORD" and an empty value field.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859461/notes-assets/images/AWS-Certified-Developer-Associate-Environment-Variables-Demo/aws-lambda-editing-env-vars.jpg)
+![The image shows an AWS Lambda console where a user is editing environment variables, with a key labeled "PASSWORD" and an empty value field.](https://kodekloud.com/kk-media/image/upload/v1752859461/notes-assets/images/AWS-Certified-Developer-Associate-Environment-Variables-Demo/aws-lambda-editing-env-vars.jpg)
 
 After saving and deploying the changes, invoke the function again. The updated configuration will now provide the set password as part of the function's output.
 

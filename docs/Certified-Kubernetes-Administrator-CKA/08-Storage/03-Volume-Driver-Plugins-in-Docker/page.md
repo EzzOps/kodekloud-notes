@@ -54,7 +54,7 @@ docker run mmumshad/my-custom-app
 
 If you log into the container and modify a file (say, creating `temp.txt`), Docker employs a copy-on-write mechanism. Before modifying a file originating from the read-only image layer, Docker first copies it to the writable layer, and subsequent changes are applied to the copied file—leaving the original image intact. When the container is removed, the writable layer and any changes in it are deleted.
 
-![The image illustrates the "Copy-On-Write" concept, showing container layers with read-write access and image layers with read-only access, featuring files like "app.py" and "temp.txt".](../../../../images/kodekloud.com/kk-media/image/upload/v1752869991/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Storage-in-Docker/frame_410.jpg)
+![The image illustrates the "Copy-On-Write" concept, showing container layers with read-write access and image layers with read-only access, featuring files like "app.py" and "temp.txt".](https://kodekloud.com/kk-media/image/upload/v1752869991/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Storage-in-Docker/frame_410.jpg)
 
 ## Persistent Data with Volumes and Bind Mounts
 
@@ -97,7 +97,7 @@ docker run \
 
 Docker’s storage drivers manage everything from maintaining image layers to handling writable container layers with copy-on-write. Common storage drivers include AUFS, ZFS, BTRFS, Device Mapper, Overlay, and Overlay2. The selection of a storage driver depends on the host OS. For example, Ubuntu often uses AUFS by default, while Fedora or CentOS might prefer Device Mapper. Docker automatically selects the most appropriate driver for your system based on performance and stability factors.
 
-![The image lists storage drivers: AUFS, ZFS, BTRFS, Device Mapper, Overlay, and Overlay2, with a whale graphic in the background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869992/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Storage-in-Docker/frame_700.jpg)
+![The image lists storage drivers: AUFS, ZFS, BTRFS, Device Mapper, Overlay, and Overlay2, with a whale graphic in the background.](https://kodekloud.com/kk-media/image/upload/v1752869992/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Storage-in-Docker/frame_700.jpg)
 
 For more detailed information on these storage drivers, please refer to the [Docker documentation](https://docs.docker.com/storage/).
 
@@ -120,7 +120,7 @@ In previous discussions, we explored storage drivers and their role in managing 
 
 By default, Docker uses the local volume driver plugin. This plugin creates a volume on the Docker host and stores its data under the /var/lib/docker/volumes directory. However, many other volume driver plugins are available, enabling you to create volumes on third-party storage solutions such as Azure File Storage, Convoy, DigitalOcean Block Storage, Blocker, Google Compute Persistent Disks, ClusterFS, NetApp, Rex Ray, Portworx, and VMware vSphere Storage.
 
-![The image lists storage and volume drivers for Docker, including AUFS, ZFS, BTRFS, and others, with a link to Docker documentation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869994/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Volume-Driver-Plugins-in-Docker/frame_60.jpg)
+![The image lists storage and volume drivers for Docker, including AUFS, ZFS, BTRFS, and others, with a link to Docker documentation.](https://kodekloud.com/kk-media/image/upload/v1752869994/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Volume-Driver-Plugins-in-Docker/frame_60.jpg)
 
 > **lightbulb** When selecting a volume driver plugin, consider your storage infrastructure requirements. Plugins such as Rex Ray offer flexibility by supporting various storage providers.
 

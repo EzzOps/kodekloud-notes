@@ -28,9 +28,7 @@ Key difference: kyverno apply vs kyverno test
 * `kyverno apply`: Imperative, ad-hoc. Use when you want to quickly check how a policy affects a resource during development.
 * `kyverno test`: Declarative test framework. Use to assert expected outcomes (pass/fail/skip/warn or expected mutated/generated resources) and run those assertions automatically.
 
-<Callout icon="lightbulb">
-  Use `kyverno apply` for interactive debugging; use `kyverno test` to create reproducible assertions suitable for CI/CD and regression detection.
-</Callout>
+> **lightbulb** Use `kyverno apply` for interactive debugging; use `kyverno test` to create reproducible assertions suitable for CI/CD and regression detection.
 
 <Frame>
   <img alt="The image is a table comparing &#x22;kyverno apply&#x22; and &#x22;kyverno test&#x22; in terms of use case, question it answers, and workflow. It outlines differences between ad-hoc checks and structured test suites." />

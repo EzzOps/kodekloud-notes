@@ -67,15 +67,11 @@ Summary
 * If `conditions` is omitted, all sensor dependencies must be satisfied (implicit AND).
 * For Argo Workflow triggers, set `serviceAccountName` and ensure the service account has RBAC permissions to create Workflows in the target namespace.
 
-<Callout icon="lightbulb">
-  Tip: When testing triggers, inspect sensor logs (kubectl -n \<ns> logs \<sensor-pod>) to see why a trigger did or didn't execute. Permission errors and missing dependency events are common causes for trigger failures.
-</Callout>
+> **lightbulb** Tip: When testing triggers, inspect sensor logs (kubectl -n \<ns> logs \<sensor-pod>) to see why a trigger did or didn't execute. Permission errors and missing dependency events are common causes for trigger failures.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/9aa7ef66-4228-49f6-88b5-ea0620c511ac" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/9aa7ef66-4228-49f6-88b5-ea0620c511ac)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/f2ab6559-02a0-4c5e-8ad9-fd950b0c4c89" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/f2ab6559-02a0-4c5e-8ad9-fd950b0c4c89)
 
 
 # DemoArgo Events Installation

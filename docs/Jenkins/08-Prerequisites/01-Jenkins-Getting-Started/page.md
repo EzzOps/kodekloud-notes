@@ -32,35 +32,25 @@ docker run \
   myjenkins-blueocean:1.1
 ```
 
-<Callout icon="lightbulb">
-  This Docker command is a clear example of the easy-to-follow instructions available in Jenkins documentation. It simplifies the setup process, allowing you to get started quickly.
-</Callout>
+> **lightbulb** This Docker command is a clear example of the easy-to-follow instructions available in Jenkins documentation. It simplifies the setup process, allowing you to get started quickly.
 
 Visual guides in the documentation further enhance your understanding. For instance:
 
-<Frame>
-  ![The image shows the Jenkins Community Blog webpage with a dropdown menu under "Documentation" and articles about deprecating non-Java plugins and an Apache Log4j vulnerability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880095/notes-assets/images/Jenkins-Jenkins-Getting-Started/frame_80.jpg)
-</Frame>
+![The image shows the Jenkins Community Blog webpage with a dropdown menu under "Documentation" and articles about deprecating non-Java plugins and an Apache Log4j vulnerability.](https://kodekloud.com/kk-media/image/upload/v1752880095/notes-assets/images/Jenkins-Jenkins-Getting-Started/frame_80.jpg)
 
 When exploring Docker installations, the documentation details prerequisites, OS-specific steps, and essential commands:
 
-<Frame>
-  ![The image shows a Jenkins documentation page detailing Docker installation prerequisites, including hardware requirements and configuration recommendations for running Jenkins.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880096/notes-assets/images/Jenkins-Jenkins-Getting-Started/frame_90.jpg)
-</Frame>
+![The image shows a Jenkins documentation page detailing Docker installation prerequisites, including hardware requirements and configuration recommendations for running Jenkins.](https://kodekloud.com/kk-media/image/upload/v1752880096/notes-assets/images/Jenkins-Jenkins-Getting-Started/frame_90.jpg)
 
 ## Plugins
 
 Jenkins plugins extend the server's capabilities by integrating with external systems. For example, searching for "Azure" in the plugins section reveals a variety of options that support Azure CLI, Azure App Services, Key Vault, and more—ensuring seamless automation within the Azure ecosystem.
 
-<Frame>
-  ![The image shows the Jenkins Plugins Index webpage, featuring a search bar, plugin categories, new and updated plugins, and trending topics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880097/notes-assets/images/Jenkins-Jenkins-Getting-Started/frame_110.jpg)
-</Frame>
+![The image shows the Jenkins Plugins Index webpage, featuring a search bar, plugin categories, new and updated plugins, and trending topics.](https://kodekloud.com/kk-media/image/upload/v1752880097/notes-assets/images/Jenkins-Jenkins-Getting-Started/frame_110.jpg)
 
 Specific results for Azure-related plugins include:
 
-<Frame>
-  ![The image shows a Jenkins plugin search page with results for "Azure," displaying various Azure-related plugins, their install counts, and release dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880098/notes-assets/images/Jenkins-Jenkins-Getting-Started/frame_120.jpg)
-</Frame>
+![The image shows a Jenkins plugin search page with results for "Azure," displaying various Azure-related plugins, their install counts, and release dates.](https://kodekloud.com/kk-media/image/upload/v1752880098/notes-assets/images/Jenkins-Jenkins-Getting-Started/frame_120.jpg)
 
 These integrations are key to optimizing your cloud-based automation processes.
 
@@ -81,12 +71,8 @@ Additionally, the website navigation features dedicated sections for security up
 
 Whether you’re aiming to boost your CI/CD pipeline or exploring automation tools, Jenkins offers an exceptional platform for innovation. Visit jenkins.io for detailed documentation, a wide array of plugins, and active community discussion to further advance your skills.
 
-<Frame>
-  ![The image shows the Jenkins website homepage, featuring its logo and options to access documentation and download the software. Jenkins is an open-source automation server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880100/notes-assets/images/Jenkins-Jenkins-Getting-Started/frame_220.jpg)
-</Frame>
+![The image shows the Jenkins website homepage, featuring its logo and options to access documentation and download the software. Jenkins is an open-source automation server.](https://kodekloud.com/kk-media/image/upload/v1752880100/notes-assets/images/Jenkins-Jenkins-Getting-Started/frame_220.jpg)
 
 Happy automating, and see you in the next article!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/bdecbf7a-016d-4b60-9731-1cdaaddb3e3c/lesson/7f063a61-a24f-48d4-ac44-7163c42ea752" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/bdecbf7a-016d-4b60-9731-1cdaaddb3e3c/lesson/7f063a61-a24f-48d4-ac44-7163c42ea752)

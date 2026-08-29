@@ -18,7 +18,7 @@ Key features include:
 * Reliable message delivery with disk persistence
 * Support for multiple messaging protocols, including MQTT, STOMP, AMQP, and OpenWire
 
-![The image explains the need for Amazon MQ, highlighting features like message queuing, reliable delivery, durability, and protocol support. It includes logos for RabbitMQ and Apache ActiveMQ.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864679/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Amazon-MQ/amazon-mq-features-message-queuing.jpg)
+![The image explains the need for Amazon MQ, highlighting features like message queuing, reliable delivery, durability, and protocol support. It includes logos for RabbitMQ and Apache ActiveMQ.](https://kodekloud.com/kk-media/image/upload/v1752864679/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Amazon-MQ/amazon-mq-features-message-queuing.jpg)
 
 > **lightbulb** When deciding between Amazon MQ and AWS Simple Queue Service (SQS), consider your application's requirements. SQS is ideal for new applications due to its simplicity, while Amazon MQ serves as a drop-in replacement for existing applications that already use RabbitMQ or ActiveMQ—eliminating the need for code changes.
 
@@ -32,7 +32,7 @@ Amazon MQ alleviates the burden of many administrative tasks such as hardware pr
 
 Additionally, Amazon MQ offers various broker instance types, providing different combinations of CPU, memory, and network performance to meet diverse application needs.
 
-![The image outlines Amazon MQ features, highlighting administrative tasks, security (encryption and private access), and various instance types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864680/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Amazon-MQ/amazon-mq-features-security-instances.jpg)
+![The image outlines Amazon MQ features, highlighting administrative tasks, security (encryption and private access), and various instance types.](https://kodekloud.com/kk-media/image/upload/v1752864680/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Amazon-MQ/amazon-mq-features-security-instances.jpg)
 
 ## Use Cases and Integration
 
@@ -40,7 +40,7 @@ Amazon MQ is designed as a drop-in replacement for RabbitMQ or ActiveMQ and supp
 
 Another powerful integration is with [AWS Lambda](https://learn.kodekloud.com/user/courses/aws-lambda). By triggering Lambda functions based on queue messages, you can build serverless, event-driven architectures that respond instantly to new events.
 
-![The image shows three use cases for Amazon MQ: low-latency event messaging, migration with flexible configuration, and invoking AWS Lambda functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864681/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Amazon-MQ/amazon-mq-use-cases-messaging.jpg)
+![The image shows three use cases for Amazon MQ: low-latency event messaging, migration with flexible configuration, and invoking AWS Lambda functions.](https://kodekloud.com/kk-media/image/upload/v1752864681/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Amazon-MQ/amazon-mq-use-cases-messaging.jpg)
 
 > **lightbulb** Leveraging Amazon MQ can streamline your messaging architecture, especially when transitioning from on-premises solutions or when your application demands high throughput and reliable message delivery.
 

@@ -22,9 +22,7 @@ OpenTofu honors the standard Terraform log levels via the `TF_LOG` environment v
 | DEBUG | Detailed execution and decision points |
 | TRACE | Full internal trace (most verbose)     |
 
-<Callout icon="lightbulb">
-  Setting `TF_LOG=TRACE` produces the most comprehensive output, including plugin operations, HTTP requests, and configuration decisions.
-</Callout>
+> **lightbulb** Setting `TF_LOG=TRACE` produces the most comprehensive output, including plugin operations, HTTP requests, and configuration decisions.
 
 To enable debugging, export the desired level:
 
@@ -43,9 +41,7 @@ $ opentofu plan
 2023/11/05T10:12:45.123-0400 [DEBUG] plugin: starting plugin: path=/…/terraform-provider-aws_v3.11.0_x5 pid=34016
 ```
 
-<Callout icon="triangle-alert">
-  Log levels below `TRACE` can sometimes omit critical details. If you’re troubleshooting core OpenTofu behavior, always default to `TF_LOG=TRACE`.
-</Callout>
+> **triangle-alert** Log levels below `TRACE` can sometimes omit critical details. If you’re troubleshooting core OpenTofu behavior, always default to `TF_LOG=TRACE`.
 
 ## 2. Persisting Logs to a File
 
@@ -85,6 +81,4 @@ unset TF_LOG_PATH
 * [OpenTofu CLI Reference](https://opentofu.io/docs/cli)
 * [Terraform Logging Overview](https://www.terraform.io/docs/internals/debugging.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/0fda982f-8bb2-4b57-8009-996870d27e43/lesson/535d87f1-adeb-4587-9fdb-579fcf154891" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/0fda982f-8bb2-4b57-8009-996870d27e43/lesson/535d87f1-adeb-4587-9fdb-579fcf154891)

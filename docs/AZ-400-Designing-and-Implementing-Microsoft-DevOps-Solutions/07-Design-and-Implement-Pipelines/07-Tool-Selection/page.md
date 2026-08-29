@@ -6,7 +6,7 @@ Choosing the right tools is essential for efficient and reliable CI/CD workflows
 
 Choosing the right tools is critical to building efficient, scalable, and reliable CI/CD workflows in Azure Pipelines. A thoughtful selection process ensures that your DevOps pipeline aligns with team skills, project requirements, and future growth.
 
-![The image shows a diagram with five colored gear icons connected in a line, labeled "Efficient," "Scalable," and "Reliable," with a central icon at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867893/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Tool-Selection/colored-gears-diagram-efficient-scalable-reliable.jpg)
+![The image shows a diagram with five colored gear icons connected in a line, labeled "Efficient," "Scalable," and "Reliable," with a central icon at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752867893/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Tool-Selection/colored-gears-diagram-efficient-scalable-reliable.jpg)
 
 ## Why Tool Selection Matters
 
@@ -18,7 +18,7 @@ The tools you integrate into your pipeline will shape development velocity, depl
 
 > **triangle-alert** Avoid selecting tools solely based on popularity or feature count. Always weigh options against your team’s expertise, budget, and roadmap.
 
-![The image is a diagram titled "Understanding Tool Selection," showing three interconnected steps: Team's Skill, Project Requirement, and Future Growth, each marked with a checkmark.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867894/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Tool-Selection/understanding-tool-selection-diagram.jpg)
+![The image is a diagram titled "Understanding Tool Selection," showing three interconnected steps: Team's Skill, Project Requirement, and Future Growth, each marked with a checkmark.](https://kodekloud.com/kk-media/image/upload/v1752867894/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Tool-Selection/understanding-tool-selection-diagram.jpg)
 
 ## Tool Categories in Azure Pipelines
 
@@ -31,7 +31,7 @@ Azure Pipelines supports a wide range of integrations. Use the table below to ma
 | Testing Tools    | Selenium, JUnit, pytest             |
 | Deployment Tools | Azure CLI, ARM Templates, Terraform |
 
-![The image shows a categorized list of tools used in Azure Pipelines, including Source Control, Build Tools, Testing Tools, and Deployment Tools. Each category lists specific tools like Azure Repos, GitHub, Maven, Selenium, and Azure CLI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867895/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Tool-Selection/azure-pipelines-tools-categorized-list.jpg)
+![The image shows a categorized list of tools used in Azure Pipelines, including Source Control, Build Tools, Testing Tools, and Deployment Tools. Each category lists specific tools like Azure Repos, GitHub, Maven, Selenium, and Azure CLI.](https://kodekloud.com/kk-media/image/upload/v1752867895/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Tool-Selection/azure-pipelines-tools-categorized-list.jpg)
 
 ## Key Selection Criteria
 
@@ -44,7 +44,7 @@ Before finalizing a tool, evaluate it against these core criteria:
 
 Always start by defining your desired outcomes—be it faster releases, increased stability, or improved team collaboration—and then measure each option against those goals.
 
-![The image outlines best practices for tool selection, including starting with the end in mind, prioritizing ease of use, considering the tool's ecosystem, and testing before full integration. It features a linear progression with numbered steps leading to a target.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867896/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Tool-Selection/best-practices-tool-selection-diagram.jpg)
+![The image outlines best practices for tool selection, including starting with the end in mind, prioritizing ease of use, considering the tool's ecosystem, and testing before full integration. It features a linear progression with numbered steps leading to a target.](https://kodekloud.com/kk-media/image/upload/v1752867896/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Tool-Selection/best-practices-tool-selection-diagram.jpg)
 
 > **lightbulb** Pilot new tools in isolated environments before full rollout. This reduces risk and ensures alignment with your success metrics.
 

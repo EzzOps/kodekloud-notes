@@ -46,9 +46,7 @@ As projects grow, clear structure becomes essential. This article covers how Ter
 
 We will now examine HCL syntax and its building blocks—how to write blocks and arguments, form expressions, and structure files so Terraform can correctly interpret and act on your declared desired state.
 
-<Callout icon="lightbulb">
-  HCL is declarative: you describe the desired end state, and Terraform determines the actions required to reach that state. Precise syntax and a clear file structure prevent surprises when Terraform evaluates and applies changes.
-</Callout>
+> **lightbulb** HCL is declarative: you describe the desired end state, and Terraform determines the actions required to reach that state. Precise syntax and a clear file structure prevent surprises when Terraform evaluates and applies changes.
 
 ## Links and references
 
@@ -57,6 +55,4 @@ We will now examine HCL syntax and its building blocks—how to write blocks and
 * [Azure Provider for Terraform](https://registry.terraform.io/providers/hashicorp/azurerm/latest)
 * [Terraform Best Practices](https://www.terraform.io/docs/language/code.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/2dc00bf7-fa00-41df-a4e0-bce9fb23c19d/lesson/0bebf486-b920-4d8f-ac24-46615b9f9e1e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/2dc00bf7-fa00-41df-a4e0-bce9fb23c19d/lesson/0bebf486-b920-4d8f-ac24-46615b9f9e1e)

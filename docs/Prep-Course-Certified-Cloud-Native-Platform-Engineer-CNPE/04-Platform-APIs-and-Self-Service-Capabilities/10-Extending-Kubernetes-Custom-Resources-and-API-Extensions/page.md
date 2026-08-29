@@ -162,9 +162,7 @@ hello-world-xxxx                    0/2     Completed   0         67s
 ...
 ```
 
-<Callout icon="warning">
-  Do not run workflows with overly permissive credentials. Avoid using the cluster-admin `default` ServiceAccount in production. Create a dedicated ServiceAccount with only the RBAC rules it needs (Role/ClusterRole and RoleBinding/ClusterRoleBinding).
-</Callout>
+> **warning** Do not run workflows with overly permissive credentials. Avoid using the cluster-admin `default` ServiceAccount in production. Create a dedicated ServiceAccount with only the RBAC rules it needs (Role/ClusterRole and RoleBinding/ClusterRoleBinding).
 
 ***
 
@@ -194,11 +192,9 @@ Further reading:
 * Argo CLI reference: [https://argoproj.github.io/argo-workflows/cli/](https://argoproj.github.io/argo-workflows/cli/)
 * Kubernetes RBAC: [https://kubernetes.io/docs/reference/access-authn-authz/rbac/](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/417a9437-044d-4734-9691-8d489a034f2b" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/417a9437-044d-4734-9691-8d489a034f2b)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/868fe7a5-4cdd-41c9-b7e4-f1cdfdb5902d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/868fe7a5-4cdd-41c9-b7e4-f1cdfdb5902d)
 
 
 # Extending Kubernetes Custom Resources and API Extensions

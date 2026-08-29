@@ -6,11 +6,11 @@ This article covers essential testing stages and their integration into CI/CD wo
 
 In this article, we’ll cover four essential testing stages—local tests, unit tests, integration tests, and load tests—and show you how to plug them into your CI/CD workflows with Azure Pipelines. By automating these checks, you can catch defects early, maintain high quality, and ensure your services scale under pressure.
 
-![The image illustrates the importance of testing in the CI/CD process, featuring an infinity loop diagram with stages like code, build, release, deploy, and monitor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867764/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Local-Tests-Unit-Tests-Integration-Tests-Load-Tests/ci-cd-testing-infinity-loop-diagram.jpg)
+![The image illustrates the importance of testing in the CI/CD process, featuring an infinity loop diagram with stages like code, build, release, deploy, and monitor.](https://kodekloud.com/kk-media/image/upload/v1752867764/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Local-Tests-Unit-Tests-Integration-Tests-Load-Tests/ci-cd-testing-infinity-loop-diagram.jpg)
 
 Testing is crucial in CI/CD to maintain application quality and performance.
 
-![The image illustrates the importance of testing in CI/CD, featuring a person with a magnifying glass examining gears and a graph, symbolizing quality and performance assurance of applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867765/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Local-Tests-Unit-Tests-Integration-Tests-Load-Tests/ci-cd-testing-quality-performance-illustration.jpg)
+![The image illustrates the importance of testing in CI/CD, featuring a person with a magnifying glass examining gears and a graph, symbolizing quality and performance assurance of applications.](https://kodekloud.com/kk-media/image/upload/v1752867765/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Local-Tests-Unit-Tests-Integration-Tests-Load-Tests/ci-cd-testing-quality-performance-illustration.jpg)
 
 Azure Pipelines provides the automation framework to execute these tests efficiently, ensuring smooth integration and deployment.
 
@@ -29,11 +29,11 @@ Azure Pipelines provides the automation framework to execute these tests efficie
 
 Local tests execute on your machine before code is pushed. They help catch syntax errors, style violations, and basic logical flaws without any external dependencies.
 
-![The image illustrates a process where changes are tested in a developer's environment before being pushed to a repository.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867766/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Local-Tests-Unit-Tests-Integration-Tests-Load-Tests/developer-environment-testing-process-repository.jpg)
+![The image illustrates a process where changes are tested in a developer's environment before being pushed to a repository.](https://kodekloud.com/kk-media/image/upload/v1752867766/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Local-Tests-Unit-Tests-Integration-Tests-Load-Tests/developer-environment-testing-process-repository.jpg)
 
 ### Benefits of Local Tests
 
-![The image highlights the benefits of local tests, featuring icons and text that emphasize "Quick Feedback" and "Reduced Build Failures."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867767/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Local-Tests-Unit-Tests-Integration-Tests-Load-Tests/local-tests-quick-feedback-build-failures.jpg)
+![The image highlights the benefits of local tests, featuring icons and text that emphasize "Quick Feedback" and "Reduced Build Failures."](https://kodekloud.com/kk-media/image/upload/v1752867767/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Local-Tests-Unit-Tests-Integration-Tests-Load-Tests/local-tests-quick-feedback-build-failures.jpg)
 
 * Quick feedback loop
 * Fewer build failures in CI
@@ -43,7 +43,7 @@ Local tests execute on your machine before code is pushed. They help catch synta
 
 Unit tests isolate and verify the smallest testable parts of your codebase. They run fast and serve as documentation for expected behavior.
 
-![The image illustrates the concept of unit testing using puzzle pieces, showing a real system with interconnected parts and a unit test isolating specific components. It highlights the focus on a particular method/unit and its dependencies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867768/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Local-Tests-Unit-Tests-Integration-Tests-Load-Tests/unit-testing-puzzle-pieces-diagram.jpg)
+![The image illustrates the concept of unit testing using puzzle pieces, showing a real system with interconnected parts and a unit test isolating specific components. It highlights the focus on a particular method/unit and its dependencies.](https://kodekloud.com/kk-media/image/upload/v1752867768/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Local-Tests-Unit-Tests-Integration-Tests-Load-Tests/unit-testing-puzzle-pieces-diagram.jpg)
 
 ### Popular Frameworks
 
@@ -52,7 +52,7 @@ Unit tests isolate and verify the smallest testable parts of your codebase. They
 | NUnit     | .NET     | [nunit.org](https://nunit.org/) |
 | JUnit     | Java     | [junit.org](https://junit.org/) |
 
-![The image is a comparison of two unit-testing frameworks: NUnit for .NET languages and JUnit for Java applications, used in Azure Pipelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867771/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Local-Tests-Unit-Tests-Integration-Tests-Load-Tests/nunit-vs-junit-unit-testing-comparison.jpg)
+![The image is a comparison of two unit-testing frameworks: NUnit for .NET languages and JUnit for Java applications, used in Azure Pipelines.](https://kodekloud.com/kk-media/image/upload/v1752867771/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Local-Tests-Unit-Tests-Integration-Tests-Load-Tests/nunit-vs-junit-unit-testing-comparison.jpg)
 
 ### Azure Pipelines YAML Examples
 
@@ -111,7 +111,7 @@ steps:
 
 Integration tests validate that multiple components work together correctly. They are vital for catching interface mismatches and environment-specific issues.
 
-![The image illustrates integration testing using a Venn diagram, showing the overlap between Module A and Module B, with a note explaining that it combines modules to find interface defects.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867772/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Local-Tests-Unit-Tests-Integration-Tests-Load-Tests/integration-testing-venn-diagram-modules.jpg)
+![The image illustrates integration testing using a Venn diagram, showing the overlap between Module A and Module B, with a note explaining that it combines modules to find interface defects.](https://kodekloud.com/kk-media/image/upload/v1752867772/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Local-Tests-Unit-Tests-Integration-Tests-Load-Tests/integration-testing-venn-diagram-modules.jpg)
 
 ### Azure Pipelines Configuration
 
@@ -153,11 +153,11 @@ Load tests simulate concurrent users to verify performance and scalability under
 
 Tools such as [Apache JMeter](https://jmeter.apache.org/) and [BlazeMeter](https://www.blazemeter.com/) integrate seamlessly with Azure Pipelines.
 
-![The image describes configuring load tests in Azure Pipelines using Apache JMeter and BlazeMeter, highlighting their uses for simulating heavy loads and integrating cloud-based testing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867773/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Local-Tests-Unit-Tests-Integration-Tests-Load-Tests/azure-pipelines-load-testing-jmeter-blazemeter.jpg)
+![The image describes configuring load tests in Azure Pipelines using Apache JMeter and BlazeMeter, highlighting their uses for simulating heavy loads and integrating cloud-based testing.](https://kodekloud.com/kk-media/image/upload/v1752867773/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Local-Tests-Unit-Tests-Integration-Tests-Load-Tests/azure-pipelines-load-testing-jmeter-blazemeter.jpg)
 
 ### Choosing the Right Tool
 
-![The image is a guide for configuring load tests in Azure Pipelines, suggesting tool selection based on the application's technology stack, complexity of scenarios, and specific performance metrics. It includes a graphic of a checklist with a magnifying glass.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867774/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Local-Tests-Unit-Tests-Integration-Tests-Load-Tests/azure-pipelines-load-test-guide-checklist.jpg)
+![The image is a guide for configuring load tests in Azure Pipelines, suggesting tool selection based on the application's technology stack, complexity of scenarios, and specific performance metrics. It includes a graphic of a checklist with a magnifying glass.](https://kodekloud.com/kk-media/image/upload/v1752867774/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Local-Tests-Unit-Tests-Integration-Tests-Load-Tests/azure-pipelines-load-test-guide-checklist.jpg)
 
 Select a load-testing solution based on:
 

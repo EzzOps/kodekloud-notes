@@ -18,7 +18,7 @@ Many teams inadvertently introduce vulnerabilities simply because they lack awar
 
 By strengthening foundational knowledge, you elevate the security posture across every repository.
 
-![The image illustrates a process for reviewing and confirming code base compliance, highlighting steps such as identifying and solving issues to achieve secure code practices. It emphasizes addressing the knowledge gap in crafting and launching secure applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868033/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Review-and-Confirm-Code-Base-Compliance/code-compliance-review-process-illustration.jpg)
+![The image illustrates a process for reviewing and confirming code base compliance, highlighting steps such as identifying and solving issues to achieve secure code practices. It emphasizes addressing the knowledge gap in crafting and launching secure applications.](https://kodekloud.com/kk-media/image/upload/v1752868033/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Review-and-Confirm-Code-Base-Compliance/code-compliance-review-process-illustration.jpg)
 
 > **lightbulb** Regular code reviews and security workshops not only catch issues early but also foster a culture of continuous improvement.
 
@@ -34,7 +34,7 @@ Adopt a “shift-left” mentality where each code change is assessed for both f
 
 Combining precise code with proactive security checks reduces technical debt and accelerates safe releases.
 
-![The image is about "Reviewing and Confirming Code Base Compliance" with a focus on "Security-First Coding," highlighting accuracy, code base, and security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868034/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Review-and-Confirm-Code-Base-Compliance/reviewing-confirming-code-compliance-security.jpg)
+![The image is about "Reviewing and Confirming Code Base Compliance" with a focus on "Security-First Coding," highlighting accuracy, code base, and security.](https://kodekloud.com/kk-media/image/upload/v1752868034/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Review-and-Confirm-Code-Base-Compliance/reviewing-confirming-code-compliance-security.jpg)
 
 > **triangle-alert** Skipping security validation in early development phases can lead to costly post–release patches and compliance breaches.
 
@@ -54,7 +54,7 @@ Embedding compliance into your workflow ensures that you’re audit-ready at eve
 | HIPAA    | Healthcare data security (US) | `aws cloudtrail` + encryption   |
 | PCI-DSS  | Payment card data protection  | [Qualys Policy Compliance][pci] |
 
-![The image illustrates the process of reviewing and confirming code base compliance, highlighting adherence to regulatory and compliance standards. It features icons representing regulatory standards, a code base, and compliance standards.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868035/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Review-and-Confirm-Code-Base-Compliance/code-compliance-review-regulatory-standards.jpg)
+![The image illustrates the process of reviewing and confirming code base compliance, highlighting adherence to regulatory and compliance standards. It features icons representing regulatory standards, a code base, and compliance standards.](https://kodekloud.com/kk-media/image/upload/v1752868035/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Review-and-Confirm-Code-Base-Compliance/code-compliance-review-regulatory-standards.jpg)
 
 ***
 

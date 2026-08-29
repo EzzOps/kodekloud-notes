@@ -24,7 +24,7 @@ Other valuable tools are:
 
 Within the Azure portal, the Azure Migrate section provides a central location to initiate workload assessments.
 
-![The image shows a Microsoft Azure Migrate portal page with options for getting started, exploring more, and setting migration goals like servers, databases, and web apps. It includes a notification about a vulnerability mitigation and features sections for migrating and modernizing datacenters.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867013/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Assessing-workloads/azure-migrate-portal-overview.jpg)
+![The image shows a Microsoft Azure Migrate portal page with options for getting started, exploring more, and setting migration goals like servers, databases, and web apps. It includes a notification about a vulnerability mitigation and features sections for migrating and modernizing datacenters.](https://kodekloud.com/kk-media/image/upload/v1752867013/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Assessing-workloads/azure-migrate-portal-overview.jpg)
 
 ### Creating a Migration Project
 
@@ -53,18 +53,18 @@ Within your Azure Migrate project, the assessment process is divided into two pr
 
 Data can be collected in two primary ways: using an on-premises appliance or by importing a CSV file.
 
-![The image shows a Microsoft Azure portal page for Azure Migrate, focusing on servers, databases, and web apps. It includes sections for assessment tools and migration tools, with options for discovery, business case building, dependency analysis, and assessment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867015/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Assessing-workloads/azure-migrate-portal-assessment-tools.jpg)
+![The image shows a Microsoft Azure portal page for Azure Migrate, focusing on servers, databases, and web apps. It includes sections for assessment tools and migration tools, with options for discovery, business case building, dependency analysis, and assessment.](https://kodekloud.com/kk-media/image/upload/v1752867015/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Assessing-workloads/azure-migrate-portal-assessment-tools.jpg)
 
 #### Importing Data via CSV
 
 1. Download the CSV template provided by Azure.
 2. Populate the template with the required details such as server name, IP address, core count, memory, and operating system information. Some fields are mandatory while others are optional.
 
-![The image shows a Microsoft Azure portal page for importing server inventory using a CSV file. It provides steps for downloading a CSV template, adding server data, and importing the file for migration assessment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867016/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Assessing-workloads/azure-portal-import-server-inventory.jpg)
+![The image shows a Microsoft Azure portal page for importing server inventory using a CSV file. It provides steps for downloading a CSV template, adding server data, and importing the file for migration assessment.](https://kodekloud.com/kk-media/image/upload/v1752867016/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Assessing-workloads/azure-portal-import-server-inventory.jpg)
 
 3. Upload the completed CSV file back to Azure.
 
-![The image shows an Excel spreadsheet titled "Azure Migrate import template" with data about virtual machines, including server names, IP addresses, cores, memory, OS names, and other specifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867017/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Assessing-workloads/azure-migrate-import-template-excel.jpg)
+![The image shows an Excel spreadsheet titled "Azure Migrate import template" with data about virtual machines, including server names, IP addresses, cores, memory, OS names, and other specifications.](https://kodekloud.com/kk-media/image/upload/v1752867017/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Assessing-workloads/azure-migrate-import-template-excel.jpg)
 
 #### Using an On-Premises Appliance
 
@@ -74,7 +74,7 @@ Deploy an appliance within your environment for automated data collection. Depen
 * For Hyper-V: Utilize the provided VHD file.
 * For physical servers or AWS environments: Download a ZIP file and run a PowerShell script on a Windows Server (minimum requirements: Windows Server 2016, 16 GB memory, 8 vCPUs, and 80 GB storage).
 
-![The image shows a Microsoft Azure portal page for Azure Migrate, detailing steps to set up and configure an appliance for discovering on-premises environments. It includes options for generating a project key, downloading the Azure Migrate appliance, and setting up the appliance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867018/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Assessing-workloads/azure-migrate-portal-setup.jpg)
+![The image shows a Microsoft Azure portal page for Azure Migrate, detailing steps to set up and configure an appliance for discovering on-premises environments. It includes options for generating a project key, downloading the Azure Migrate appliance, and setting up the appliance.](https://kodekloud.com/kk-media/image/upload/v1752867018/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Assessing-workloads/azure-migrate-portal-setup.jpg)
 
 The appliance automatically sends the required data to Azure for the assessment.
 
@@ -82,7 +82,7 @@ The appliance automatically sends the required data to Azure for the assessment.
 
 Install the Database Migration Assistant (DMA) on your on-premises SQL Server to identify compatibility issues and examine migration challenges.
 
-![The image shows a webpage from Microsoft Azure's documentation about the Data Migration Assistant, detailing its capabilities and features for migrating SQL Server instances to Azure SQL databases. The page includes a navigation menu on the left and content about migration issues and solutions on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867019/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Assessing-workloads/azure-data-migration-assistant-docs.jpg)
+![The image shows a webpage from Microsoft Azure's documentation about the Data Migration Assistant, detailing its capabilities and features for migrating SQL Server instances to Azure SQL databases. The page includes a navigation menu on the left and content about migration issues and solutions on the right.](https://kodekloud.com/kk-media/image/upload/v1752867019/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Assessing-workloads/azure-data-migration-assistant-docs.jpg)
 
 ## Initiating an Assessment
 
@@ -92,11 +92,11 @@ After gathering your server data, begin the assessment process with these steps:
 2. Wait approximately 10 minutes for the import process to complete.
 3. Review the assessment results, including any warnings (e.g., disk sizing issues) and the total number of records processed.
 
-![The image shows a Microsoft Azure portal page for importing server inventory using a CSV file, with steps for downloading a template, adding data, and importing the file. It also displays import details, including status and records inserted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867020/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Assessing-workloads/azure-portal-import-csv-inventory.jpg)
+![The image shows a Microsoft Azure portal page for importing server inventory using a CSV file, with steps for downloading a template, adding data, and importing the file. It also displays import details, including status and records inserted.](https://kodekloud.com/kk-media/image/upload/v1752867020/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Assessing-workloads/azure-portal-import-csv-inventory.jpg)
 
 Once the import is successful and your environment data is discovered (for example, 10 servers comprising 8 Windows and 2 Linux servers), proceed to configure the assessment for Azure VMs.
 
-![The image shows a Microsoft Azure Migrate dashboard displaying assessment tools for servers, databases, and web apps, including details on discovered servers and operating system distribution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867022/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Assessing-workloads/azure-migrate-dashboard-assessment-tools.jpg)
+![The image shows a Microsoft Azure Migrate dashboard displaying assessment tools for servers, databases, and web apps, including details on discovered servers and operating system distribution.](https://kodekloud.com/kk-media/image/upload/v1752867022/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Assessing-workloads/azure-migrate-dashboard-assessment-tools.jpg)
 
 ### Configuring Assessment Settings
 
@@ -104,7 +104,7 @@ Once the import is successful and your environment data is discovered (for examp
 2. Click "Edit" within the assessment settings to adjust parameters such as reservation options and target VM series. For example, choose "None" for reservation and "Select All" for VM series.
 3. Configure additional licensing options like Azure Hybrid Benefit if applicable.
 
-![The image shows the "Assessment settings" page in Microsoft Azure, where various options for target settings, VM size, and pricing are configured for a migration assessment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867023/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Assessing-workloads/azure-assessment-settings-page.jpg)
+![The image shows the "Assessment settings" page in Microsoft Azure, where various options for target settings, VM size, and pricing are configured for a migration assessment.](https://kodekloud.com/kk-media/image/upload/v1752867023/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Assessing-workloads/azure-assessment-settings-page.jpg)
 
 Running the assessment will generate a detailed report that includes:
 

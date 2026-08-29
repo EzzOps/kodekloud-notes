@@ -8,13 +8,11 @@ with open(file_name, "rb") as audio_file:
 print(transcript.text)
 ```
 
-<Callout icon="lightbulb">
-  Make sure `OPENAI_API_KEY` is correctly set. On macOS/Linux:
+> **lightbulb** Make sure `OPENAI_API_KEY` is correctly set. On macOS/Linux:
 
   ```bash theme={null}
   export OPENAI_API_KEY="your_api_key_here"
   ```
-</Callout>
 
 ## 3. Next Steps: NLP Pipelines
 
@@ -35,9 +33,7 @@ Once you have the raw transcript, you can feed it into large language models lik
 
 If you prefer not to use the API, you can run Whisper on your machine via the [open-source repository][3]:
 
-<Frame>
-  ![The image shows a code editor with Python code for transcribing audio using OpenAI's API, along with a large block of transcribed text.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881496/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Demo-Audio-Transcription/python-code-editor-openai-transcription.jpg)
-</Frame>
+![The image shows a code editor with Python code for transcribing audio using OpenAI's API, along with a large block of transcribed text.](https://kodekloud.com/kk-media/image/upload/v1752881496/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Demo-Audio-Transcription/python-code-editor-openai-transcription.jpg)
 
 ## References
 
@@ -45,11 +41,9 @@ If you prefer not to use the API, you can run Whisper on your machine via the [o
 * [2]: https://platform.openai.com/docs/models/gpt-4
 * [3]: https://github.com/openai/whisper
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/574a8a5c-b7a8-4902-aa33-c26eff12ee0b/lesson/8d23bf62-f4b5-42c8-b193-908989182ca9" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/574a8a5c-b7a8-4902-aa33-c26eff12ee0b/lesson/8d23bf62-f4b5-42c8-b193-908989182ca9)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/574a8a5c-b7a8-4902-aa33-c26eff12ee0b/lesson/61015f41-8233-46a7-9e17-44dea34d524e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/574a8a5c-b7a8-4902-aa33-c26eff12ee0b/lesson/61015f41-8233-46a7-9e17-44dea34d524e)
 
 
 # Demo Audio Translation
@@ -72,9 +66,7 @@ Install the SDK with:
 pip install --upgrade openai
 ```
 
-<Callout icon="lightbulb">
-  Ensure your MP3 file is under 25 MB. Whisper supports formats like MP3, WAV, and FLAC.
-</Callout>
+> **lightbulb** Ensure your MP3 file is under 25 MB. Whisper supports formats like MP3, WAV, and FLAC.
 
 ## Translation Code Example
 

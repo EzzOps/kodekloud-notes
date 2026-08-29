@@ -67,9 +67,7 @@ Argo CD supports a numeric annotation `argocd.argoproj.io/sync-wave` (string val
   <img alt="A screenshot of Argo CD documentation titled &#x22;Combining Sync waves and hooks&#x22; showing a diagram with PreSync, Sync, and PostSync phases, each containing labeled &#x22;Wave&#x22; boxes and a vertical arrow for order of execution. The page also shows a left navigation menu and a right table of contents." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Sync waves and hook phases (PreSync/Sync/PostSync) are combinable: Argo CD groups resources by hook phase and wave, then processes groups in increasing wave order within each phase. Use this to implement precise, deterministic sync sequences.
-</Callout>
+> **lightbulb** Sync waves and hook phases (PreSync/Sync/PostSync) are combinable: Argo CD groups resources by hook phase and wave, then processes groups in increasing wave order within each phase. Use this to implement precise, deterministic sync sequences.
 
 Updated manifest: apply sync-wave annotations to enforce ordering. The planned sequence:
 
@@ -269,9 +267,7 @@ Important notes:
   * Use --sync-option CreateNamespace=true when creating the Argo CD app, or
   * Make the Namespace a PreSync resource with an earlier wave value than the jobs.
 
-<Callout icon="warning">
-  Remember: multiple resources with the same hook phase and the same sync-wave value will be synced in parallel. Assign distinct sync-wave numbers to achieve strict, sequential ordering.
-</Callout>
+> **warning** Remember: multiple resources with the same hook phase and the same sync-wave value will be synced in parallel. Assign distinct sync-wave numbers to achieve strict, sequential ordering.
 
 Summary
 
@@ -296,11 +292,9 @@ Links and references
 * Argo CD hooks and sync options: [https://argo-cd.readthedocs.io/en/stable/operations/notifications/](https://argo-cd.readthedocs.io/en/stable/operations/notifications/) (see hooks and app options)
 * Argo CD CLI guide: [https://argo-cd.readthedocs.io/en/stable/cli\_installation/](https://argo-cd.readthedocs.io/en/stable/cli_installation/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/fc27f168-3c7b-43ef-90dd-10d66430bb61" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/fc27f168-3c7b-43ef-90dd-10d66430bb61)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/5db528c5-d8a8-410a-a6bc-7a868f99ded1" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/5db528c5-d8a8-410a-a6bc-7a868f99ded1)
 
 
 # Demo ignoreDifferences

@@ -20,7 +20,7 @@ Append blobs are optimized for append operations. They are ideal for use cases w
 
 ### Page Blobs
 
-![The image illustrates different types of blobs: Block Blobs, Append Blobs, and Page Blobs, with visual representations and examples of their structure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866418/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Blob-Storage/blob-types-block-append-page.jpg)
+![The image illustrates different types of blobs: Block Blobs, Append Blobs, and Page Blobs, with visual representations and examples of their structure.](https://kodekloud.com/kk-media/image/upload/v1752866418/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Blob-Storage/blob-types-block-append-page.jpg)
 
 Page blobs are engineered for scenarios that require random read-write access. They are commonly used to store virtual hard drives for Azure Virtual Machines. With page blobs, you can update specific byte ranges, making them highly efficient when only parts of a file need to be read or modified (for example, updating a VM disk or database storage).
 
@@ -55,7 +55,7 @@ For instance, to access the file file1.txt located in the "files" container of t
 https://corecloud123.blob.core.windows.net/files/file1.txt
 ```
 
-![The image illustrates a "Blob Storage Hierarchy" showing the structure from subscriptions to storage accounts, containers, and blobs, with examples of file types and a URL format.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866420/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Blob-Storage/blob-storage-hierarchy-structure.jpg)
+![The image illustrates a "Blob Storage Hierarchy" showing the structure from subscriptions to storage accounts, containers, and blobs, with examples of file types and a URL format.](https://kodekloud.com/kk-media/image/upload/v1752866420/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Blob-Storage/blob-storage-hierarchy-structure.jpg)
 
 ## Naming Conventions
 
@@ -68,7 +68,7 @@ Proper naming of Azure Blob Storage components is essential for smooth operation
 
 For instance, within a container, you can create virtual directories (folders) to logically separate and organize your blobs, making it easier to navigate and manage large volumes of data.
 
-![The image provides guidelines for naming Azure Blob Storage components, detailing character limits and case sensitivity for storage account names, container names, and blob names.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866421/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Blob-Storage/azure-blob-storage-naming-guidelines.jpg)
+![The image provides guidelines for naming Azure Blob Storage components, detailing character limits and case sensitivity for storage account names, container names, and blob names.](https://kodekloud.com/kk-media/image/upload/v1752866421/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Blob-Storage/azure-blob-storage-naming-guidelines.jpg)
 
 ## Managing the Blob Storage Lifecycle
 

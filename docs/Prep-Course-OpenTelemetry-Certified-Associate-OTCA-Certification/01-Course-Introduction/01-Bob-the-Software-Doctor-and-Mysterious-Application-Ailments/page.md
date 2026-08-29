@@ -31,9 +31,7 @@ To get the full picture, Bob adopts a vendor-neutral telemetry framework—OpenT
 * Logs: record detailed events and contextual information useful for debugging single requests.
 * Collector: aggregates, processes, and exports telemetry consistently across environments.
 
-<Callout icon="lightbulb">
-  Traces, metrics, and logs are most powerful when correlated: traces point to the problematic component, metrics reveal trends and scope, and logs provide the contextual details required to fix root causes.
-</Callout>
+> **lightbulb** Traces, metrics, and logs are most powerful when correlated: traces point to the problematic component, metrics reveal trends and scope, and logs provide the contextual details required to fix root causes.
 
 <Frame>
   <img alt="The image is an infographic titled &#x22;The Turning Point: Discovering OpenTelemetry,&#x22; describing components like Traces, Metrics, Logs, and Collector, each with a brief explanation of their functions. The OpenTelemetry logo is also displayed." />
@@ -80,10 +78,6 @@ Further reading and references
 * Observability and incident response best practices: [https://www.elastic.co/observability](https://www.elastic.co/observability)
 * Distributed tracing concepts: [https://kubernetes.io/docs/concepts/cluster-administration/logging/](https://kubernetes.io/docs/concepts/cluster-administration/logging/) (for related logging and tracing context)
 
-<Callout icon="warning">
-  Important: Telemetry is only useful if you collect the right signals and retain linkable identifiers (like trace IDs). Instrumentation gaps or inconsistent identifiers will create blind spots—even with a collector in place.
-</Callout>
+> **warning** Important: Telemetry is only useful if you collect the right signals and retain linkable identifiers (like trace IDs). Instrumentation gaps or inconsistent identifiers will create blind spots—even with a collector in place.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/edd3acd9-21a8-4513-a22f-19649e85cae9/lesson/929e10ff-fae1-471a-98eb-4f0d190a418e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/edd3acd9-21a8-4513-a22f-19649e85cae9/lesson/929e10ff-fae1-471a-98eb-4f0d190a418e)

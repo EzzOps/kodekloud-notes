@@ -39,9 +39,7 @@ Create the role using the following command:
 kubectl create -f <role-definition.yaml>
 ```
 
-<Callout icon="lightbulb">
-  Both roles and role bindings in Kubernetes are namespace-scoped. In this example, the `developer` role applies only to the default namespace. To apply a role in another namespace, add the `namespace` field within the metadata section of your YAML file.
-</Callout>
+> **lightbulb** Both roles and role bindings in Kubernetes are namespace-scoped. In this example, the `developer` role applies only to the default namespace. To apply a role in another namespace, add the `namespace` field within the metadata section of your YAML file.
 
 ## Creating a Role Binding
 

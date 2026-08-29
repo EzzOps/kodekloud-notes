@@ -33,7 +33,7 @@ In our first lab, we use Amazon S3 (with versioning enabled) as the source and A
 
 > **lightbulb** Ensure your S3 bucket has versioning enabled to track every deployment artifact.
 
-![The image illustrates a DevOps process flow using AWS services, featuring Amazon S3 as the source and AWS CodeDeploy and EC2 for deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862743/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-Sample-Application/devops-process-flow-aws-s3-codedeploy-ec2.jpg)
+![The image illustrates a DevOps process flow using AWS services, featuring Amazon S3 as the source and AWS CodeDeploy and EC2 for deployment.](https://kodekloud.com/kk-media/image/upload/v1752862743/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-Sample-Application/devops-process-flow-aws-s3-codedeploy-ec2.jpg)
 
 **Key Steps**
 
@@ -49,7 +49,7 @@ Next, we replace S3 with AWS CodeCommit, AWS’s managed Git repository, as our 
 
 > **triangle-alert** Make sure your CodeCommit repository has the correct [IAM permissions](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up.html) for CodePipeline access.
 
-![The image illustrates a DevOps process flow with AWS services, featuring AWS CodeCommit for source control and AWS CodeDeploy for deployment, integrated with AWS EC2.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862745/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-Sample-Application/devops-process-flow-aws-services.jpg)
+![The image illustrates a DevOps process flow with AWS services, featuring AWS CodeCommit for source control and AWS CodeDeploy for deployment, integrated with AWS EC2.](https://kodekloud.com/kk-media/image/upload/v1752862745/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Introduction-to-Sample-Application/devops-process-flow-aws-services.jpg)
 
 **Key Steps**
 

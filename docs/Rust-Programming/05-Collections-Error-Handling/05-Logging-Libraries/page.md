@@ -15,9 +15,7 @@ Effective logging serves multiple purposes:
 * **Audit Trails:** Detailed logs provide a sequence of events leading to specific states or errors.
 * **Performance Tuning:** By recording operation durations, logs help pinpoint performance bottlenecks.
 
-<Frame>
-  ![The image illustrates the importance of logging, highlighting its roles in debugging, monitoring, audit trails, and performance tuning. Each section explains how logging provides insights, detects problems, helps understand issues, and identifies performance bottlenecks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883847/notes-assets/images/Rust-Programming-Logging-Libraries/importance-of-logging-debugging-monitoring.jpg)
-</Frame>
+![The image illustrates the importance of logging, highlighting its roles in debugging, monitoring, audit trails, and performance tuning. Each section explains how logging provides insights, detects problems, helps understand issues, and identifies performance bottlenecks.](https://kodekloud.com/kk-media/image/upload/v1752883847/notes-assets/images/Rust-Programming-Logging-Libraries/importance-of-logging-debugging-monitoring.jpg)
 
 ## Using the log Crate
 
@@ -94,9 +92,7 @@ Output:
 [2024-10-16T22:39:31Z ERROR log_demo] This is an error
 ```
 
-<Callout icon="lightbulb">
-  Using `env_logger` makes your logging behavior dynamic, adapting to various execution environments without code changes.
-</Callout>
+> **lightbulb** Using `env_logger` makes your logging behavior dynamic, adapting to various execution environments without code changes.
 
 ## Advanced Logging with Structured Logging (Slog)
 
@@ -165,9 +161,7 @@ Oct 16 22:46:43.123 INFO Application started; version: 1.0.0
 Oct 16 22:46:43.123 INFO This is an info message; user: JohnDoe
 ```
 
-<Callout icon="lightbulb">
-  The use of `slog_async` ensures that logging does not block your application, which is crucial for high-throughput systems.
-</Callout>
+> **lightbulb** The use of `slog_async` ensures that logging does not block your application, which is crucial for high-throughput systems.
 
 ### Explaining the Slog Components
 
@@ -192,6 +186,4 @@ In this article, we've covered two popular logging solutions in Rust:
 
 Both approaches offer scalability and flexibility, enabling developers to monitor and debug Rust applications effectively. For further reading and exploration, consider browsing the [official Rust logging documentation](https://docs.rs/log) and exploring structured logging patterns with [slog](https://crates.io/crates/slog).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/29fbe393-bae3-4a16-8fc5-a854a2400daa/lesson/6879a9f7-ab0d-448e-a0a5-fb9d34b7d102" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/29fbe393-bae3-4a16-8fc5-a854a2400daa/lesson/6879a9f7-ab0d-448e-a0a5-fb9d34b7d102)

@@ -6,13 +6,9 @@ This lesson explains how to deploy a voting app on Kubernetes using
 
 In this lesson, we enhance the initial demo—which deployed Pods and Services directly—by leveraging Kubernetes Deployments. This improved approach addresses the challenges of scaling and updating applications without downtime. By using Deployments, you can automate the management of ReplicaSets, making it simple to scale, roll out updates, and perform rollbacks while retaining a history of revisions.
 
-<Frame>
-  ![The image illustrates a Kubernetes deployment architecture for a voting app, featuring multiple pods for voting, results, Redis, database, and worker services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884953/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Demo-Deploying-voting-app-on-Kubernetes-with-Deployments/frame_50.jpg)
-</Frame>
+![The image illustrates a Kubernetes deployment architecture for a voting app, featuring multiple pods for voting, results, Redis, database, and worker services.](https://kodekloud.com/kk-media/image/upload/v1752884953/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Demo-Deploying-voting-app-on-Kubernetes-with-Deployments/frame_50.jpg)
 
-<Callout icon="lightbulb">
-  Deploying individual Pods limits your ability to easily increase the number of service instances or update the container image without downtime. Using Deployments streamlines these processes.
-</Callout>
+> **lightbulb** Deploying individual Pods limits your ability to easily increase the number of service instances or update the container image without downtime. Using Deployments streamlines these processes.
 
 In the upgraded setup, each application component—including the front-end apps (voting and results), databases, and worker applications—is encapsulated within its own Deployment. The project directory now hosts both the original Pod and Service definition files, along with new files for the Deployments.
 

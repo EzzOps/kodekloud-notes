@@ -16,9 +16,7 @@ What you'll learn
 * Configuring Kafka brokers and creating topics for a local development environment.
 * Hands-on experience sending and receiving messages through Kafka topics.
 
-<Callout icon="lightbulb">
-  Use the Overview tab for course material and background context. Use the Tasks tab as your step-by-step workbook. Each lab includes an embedded terminal that you’ll use to run commands. If you get stuck, open the Hint or Solution tab; use the Check button to validate tasks and progress.
-</Callout>
+> **lightbulb** Use the Overview tab for course material and background context. Use the Tasks tab as your step-by-step workbook. Each lab includes an embedded terminal that you’ll use to run commands. If you get stuck, open the Hint or Solution tab; use the Check button to validate tasks and progress.
 
 How the course is structured
 

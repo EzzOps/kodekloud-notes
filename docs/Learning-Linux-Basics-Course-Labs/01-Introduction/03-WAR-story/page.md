@@ -8,12 +8,8 @@ In a high-pressure war room scenario, Bob found himself facing a career-defining
 
 He glanced over at Andrew, who was pacing nervously, adding to the urgency of the moment. Bob thought, "I have to fix this ASAP—or I might get fired." Although he was confident in his approach using KodeKloud, his web application stubbornly refused to work.
 
-<Callout icon="lightbulb">
-  Bob's mounting anxiety stemmed from a flood of questions: Were there network issues? Could a permissions error be the culprit? Or was an entirely different problem at work? In that moment of panic, every possibility raced through his mind.
-</Callout>
+> **lightbulb** Bob's mounting anxiety stemmed from a flood of questions: Were there network issues? Could a permissions error be the culprit? Or was an entirely different problem at work? In that moment of panic, every possibility raced through his mind.
 
 Determined not to let his team down, Bob scrambled for answers and prepared to troubleshoot the issue swiftly, hoping to turn the crisis around before it was too late.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/571673f9-96f0-4212-bd13-a61a069c9e1f/lesson/cc02915f-50d4-45fe-9e11-916032187579" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/571673f9-96f0-4212-bd13-a61a069c9e1f/lesson/cc02915f-50d4-45fe-9e11-916032187579)

@@ -22,11 +22,9 @@ EOF
 * [Envoy Proxy Architecture](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/overview)
 * [SPIFFE and SPIRE](https://spiffe.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/014b7517-1b8b-4f36-913a-6f0cc19fc7db" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/014b7517-1b8b-4f36-913a-6f0cc19fc7db)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/41f39dd4-0f29-4d3f-9f10-8143bb6fc65d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/41f39dd4-0f29-4d3f-9f10-8143bb6fc65d)
 
 
 # Service Mesh Istio
@@ -65,9 +63,7 @@ Originally built from Pilot, Citadel, and Galley, Istio’s control plane is now
 * Certificate issuance and rotation (mutual TLS)
 * Configuration validation and distribution
 
-<Callout icon="lightbulb">
-  Istiod simplifies management by consolidating multiple components into one. Upgrading or securing Istiod affects all control-plane functionality.
-</Callout>
+> **lightbulb** Istiod simplifies management by consolidating multiple components into one. Upgrading or securing Istiod affects all control-plane functionality.
 
 ### Data Plane: Envoy Sidecars
 

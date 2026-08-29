@@ -12,7 +12,7 @@ Amazon Rekognition's label detection feature automatically identifies objects, s
 
 Below is an illustration of a real-world scenario where the service accurately tags objects in an image:
 
-![A person is skateboarding on a city street lined with parked cars and trees. The image is part of an Amazon Rekognition demo for label detection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865045/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-Rekognition-recognizing-an-image/skateboarding-city-street-demo.jpg)
+![A person is skateboarding on a city street lined with parked cars and trees. The image is part of an Amazon Rekognition demo for label detection.](https://kodekloud.com/kk-media/image/upload/v1752865045/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-Rekognition-recognizing-an-image/skateboarding-city-street-demo.jpg)
 
 For instance, by testing with an image of a crosswalk, Rekognition identifies multiple details including road tarmac, zebra crossing, bag, handbag, person, car, wheels, and traffic lights. Every detected object is carefully mapped with its respective location, providing detailed information useful for real-time applications.
 
@@ -20,7 +20,7 @@ For instance, by testing with an image of a crosswalk, Rekognition identifies mu
 
 Another impressive feature of Amazon Rekognition is its ability to analyze image properties. When an image is uploaded, the service returns essential details such as dominant colors, foreground and background distinctions, and overall quality metrics.
 
-![The image shows a screenshot of the Amazon Rekognition console displaying image properties for a cityscape photo, including dominant colors and image quality metrics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865046/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-Rekognition-recognizing-an-image/amazon-rekognition-cityscape-screenshot.jpg)
+![The image shows a screenshot of the Amazon Rekognition console displaying image properties for a cityscape photo, including dominant colors and image quality metrics.](https://kodekloud.com/kk-media/image/upload/v1752865046/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-Rekognition-recognizing-an-image/amazon-rekognition-cityscape-screenshot.jpg)
 
 By understanding these properties, developers can better manage and optimize images for various use cases like automated image enhancements or content organization.
 
@@ -36,7 +36,7 @@ Facial analysis is another robust capability of Amazon Rekognition. By uploading
 
 For example, an analysis of an image of a woman might confirm the presence of a face with 99.9% confidence, classify the subject as female with an age range of 18 to 24, and note attributes like a calm expression with a closed mouth and open eyes.
 
-![The image shows a screenshot of the Amazon Rekognition service analyzing a photo of a person standing in front of greenery. The analysis includes attributes like gender, age range, and emotional state.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865047/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-Rekognition-recognizing-an-image/amazon-rekognition-photo-analysis.jpg)
+![The image shows a screenshot of the Amazon Rekognition service analyzing a photo of a person standing in front of greenery. The analysis includes attributes like gender, age range, and emotional state.](https://kodekloud.com/kk-media/image/upload/v1752865047/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-Rekognition-recognizing-an-image/amazon-rekognition-photo-analysis.jpg)
 
 This detailed facial analysis enables more intelligent applications, from personalized marketing to advanced security systems.
 
@@ -44,7 +44,7 @@ This detailed facial analysis enables more intelligent applications, from person
 
 Face comparison allows you to verify whether the same individual appears in different images by comparing a reference image with one or more target images. Rekognition calculates a similarity score for each comparison, providing a precise match—such as a 99.9% similarity score confirming the identity in one of the target images.
 
-![The image shows an Amazon Rekognition interface for face comparison, displaying a reference face on the left and comparison faces on the right, with similarity results indicating a 99.9% match for one of the faces.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865048/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-Rekognition-recognizing-an-image/amazon-rekognition-face-comparison.jpg)
+![The image shows an Amazon Rekognition interface for face comparison, displaying a reference face on the left and comparison faces on the right, with similarity results indicating a 99.9% match for one of the faces.](https://kodekloud.com/kk-media/image/upload/v1752865048/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-Rekognition-recognizing-an-image/amazon-rekognition-face-comparison.jpg)
 
 This feature is especially useful in security systems, user authentication, and systems that require identity verification across different datasets.
 

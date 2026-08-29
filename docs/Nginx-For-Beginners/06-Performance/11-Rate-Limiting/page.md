@@ -151,9 +151,7 @@ Quick reference — common Nginx rate-limiting directives
 
 Best-practice notes
 
-<Callout icon="lightbulb">
-  Choose an appropriate shared memory zone size (for example, `10m`) based on the expected number of distinct clients you need to track. Shared zones are per Nginx instance (shared across worker processes on the same host) and are not synchronized across multiple machines — for distributed deployments use a centralized rate-limiting layer or an external store if you need cross-instance coordination.
-</Callout>
+> **lightbulb** Choose an appropriate shared memory zone size (for example, `10m`) based on the expected number of distinct clients you need to track. Shared zones are per Nginx instance (shared across worker processes on the same host) and are not synchronized across multiple machines — for distributed deployments use a centralized rate-limiting layer or an external store if you need cross-instance coordination.
 
 Additional recommendations
 
@@ -171,6 +169,4 @@ Links and references
 
 That concludes this lesson on rate limiting. Use `limit_req` for request smoothing and `limit_conn` for concurrent-connection caps, and tune the values to match your application’s traffic and resiliency requirements.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/83239034-1ac5-475b-bdf5-d6805c67a613" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/83239034-1ac5-475b-bdf5-d6805c67a613)

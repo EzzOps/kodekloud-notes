@@ -17,13 +17,9 @@ The diagram below outlines the key network components and their roles:
   * **Microsoft Peering:** Connects to cloud services such as Microsoft 365.
   * **Azure Private Peering:** Enables direct connectivity to Azure services.
 
-<Frame>
-  ![The image illustrates the ExpressRoute network architecture, showing connections between a customer's network, partner edge, and cloud services, highlighting primary and secondary connections, and peering options. It also emphasizes private connectivity, partner network, and features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882127/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-ExpressRoute/expressroute-network-architecture-diagram.jpg)
-</Frame>
+![The image illustrates the ExpressRoute network architecture, showing connections between a customer's network, partner edge, and cloud services, highlighting primary and secondary connections, and peering options. It also emphasizes private connectivity, partner network, and features.](https://kodekloud.com/kk-media/image/upload/v1752882127/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-ExpressRoute/expressroute-network-architecture-diagram.jpg)
 
-<Callout icon="lightbulb">
-  ExpressRoute creates a secure, direct connectivity bridge between your on-premises data centers and Microsoft’s data centers, effectively minimizing common vulnerabilities and disruptions associated with public internet routing.
-</Callout>
+> **lightbulb** ExpressRoute creates a secure, direct connectivity bridge between your on-premises data centers and Microsoft’s data centers, effectively minimizing common vulnerabilities and disruptions associated with public internet routing.
 
 Additionally, Microsoft offers ExpressRoute Direct, which establishes connectivity without the need for a partner. More details on this option are provided in the ExpressRoute offerings section.
 
@@ -68,13 +64,9 @@ ExpressRoute supports multiple connectivity models suited for different organiza
 * **Direct Connect (ExpressRoute Direct):**\
   Provides a high-speed, low-latency connection by establishing direct connectivity to Microsoft’s global network without a partner intermediary. This option is available if your organization is located near a Microsoft peering location.
 
-<Frame>
-  ![The image illustrates different ExpressRoute connectivity models for Microsoft Azure, including cloud exchange co-location, point-to-point Ethernet connection, any-to-any (IPVPN) connection, and ExpressRoute Direct.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882129/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-ExpressRoute/expressroute-connectivity-models-azure.jpg)
-</Frame>
+![The image illustrates different ExpressRoute connectivity models for Microsoft Azure, including cloud exchange co-location, point-to-point Ethernet connection, any-to-any (IPVPN) connection, and ExpressRoute Direct.](https://kodekloud.com/kk-media/image/upload/v1752882129/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-ExpressRoute/expressroute-connectivity-models-azure.jpg)
 
-<Callout icon="lightbulb">
-  For cloud exchange co-location, point-to-point Ethernet, and any-to-any IP VPN deployments, a service provider is typically involved. In contrast, ExpressRoute Direct delivers connectivity without an intermediary.
-</Callout>
+> **lightbulb** For cloud exchange co-location, point-to-point Ethernet, and any-to-any IP VPN deployments, a service provider is typically involved. In contrast, ExpressRoute Direct delivers connectivity without an intermediary.
 
 ## Limitations and Demonstration
 
@@ -84,6 +76,4 @@ This concludes our detailed overview of ExpressRoute. Up next, we will delve int
 
 Thank you for reading, and see you in the next discussion.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/0489a935-a4dd-41c6-b5d3-6054c570299b/lesson/64670dd3-941a-4bbc-bf83-c272f35059cb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/0489a935-a4dd-41c6-b5d3-6054c570299b/lesson/64670dd3-941a-4bbc-bf83-c272f35059cb)

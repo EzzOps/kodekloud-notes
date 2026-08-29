@@ -18,7 +18,7 @@ In this guide, you’ll learn how to enable and use AWS IAM Identity Center to c
 1. Sign in to the AWS Management Console with your **management account**.
 2. In the top search bar, type **IAM Identity Center** and select it:
 
-![The image shows the AWS Console Home with a search for "IAM Identity Center," displaying services like IAM Identity Center, IAM, Cloud9, and Amazon CodeWhisperer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862966/notes-assets/images/AWS-IAM-Demo-IAM-Identity-Center/aws-console-home-iam-identity-center.jpg)
+![The image shows the AWS Console Home with a search for "IAM Identity Center," displaying services like IAM Identity Center, IAM, Cloud9, and Amazon CodeWhisperer.](https://kodekloud.com/kk-media/image/upload/v1752862966/notes-assets/images/AWS-IAM-Demo-IAM-Identity-Center/aws-console-home-iam-identity-center.jpg)
 
 3. Click **Enable**.
 4. Choose your identity source:
@@ -30,7 +30,7 @@ In this guide, you’ll learn how to enable and use AWS IAM Identity Center to c
 
 When you go to the **IAM** console and click **Create user**, selecting **Provide console access** will direct you to specify an Identity Center user:
 
-![The image shows a webpage from the AWS Management Console, specifically the "Specify user details" section for creating a new user in IAM. It includes fields for entering a username and options for providing console access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862968/notes-assets/images/AWS-IAM-Demo-IAM-Identity-Center/aws-iam-create-user-console-access.jpg)
+![The image shows a webpage from the AWS Management Console, specifically the "Specify user details" section for creating a new user in IAM. It includes fields for entering a username and options for providing console access.](https://kodekloud.com/kk-media/image/upload/v1752862968/notes-assets/images/AWS-IAM-Demo-IAM-Identity-Center/aws-iam-create-user-console-access.jpg)
 
 Use the following table to decide between IAM users and IAM Identity Center:
 

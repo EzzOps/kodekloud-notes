@@ -224,22 +224,14 @@ To keep your API requests organized:
 
 Below is an image of the Postman interface showing the structure of the ecommerce API requests for products:
 
-<Frame>
-  ![The image shows a Postman interface with an "ecommerce" collection containing various API requests like "Get Products" and "Create Products." The authorization tab is open, displaying options for setting up request authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882941/notes-assets/images/Postman-Essentials-Testing-Authentication-in-Postman/postman-ecommerce-api-requests.jpg)
-</Frame>
+![The image shows a Postman interface with an "ecommerce" collection containing various API requests like "Get Products" and "Create Products." The authorization tab is open, displaying options for setting up request authentication.](https://kodekloud.com/kk-media/image/upload/v1752882941/notes-assets/images/Postman-Essentials-Testing-Authentication-in-Postman/postman-ecommerce-api-requests.jpg)
 
 After organizing your requests, resend the login request to verify the creation of the session cookie. Postman's cookie management feature allows you to manually add, view, or delete cookies, which helps simulate different testing scenarios. For instance, if you delete the cookie, trying to create a product returns an "Unauthorized" error. Logging in again refreshes the cookie, and product operations can then proceed seamlessly.
 
 The following image illustrates the Postman interface with the authentication requests and the cookie details for a successful login:
 
-<Frame>
-  ![The image shows a Postman interface with a collection of API requests related to "ecommerce" and "Auth," specifically highlighting a POST request to "localhost:4000/login." The response includes a cookie named "connect.sid" with details about its domain, path, and expiration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882942/notes-assets/images/Postman-Essentials-Testing-Authentication-in-Postman/postman-ecommerce-auth-api-requests.jpg)
-</Frame>
+![The image shows a Postman interface with a collection of API requests related to "ecommerce" and "Auth," specifically highlighting a POST request to "localhost:4000/login." The response includes a cookie named "connect.sid" with details about its domain, path, and expiration.](https://kodekloud.com/kk-media/image/upload/v1752882942/notes-assets/images/Postman-Essentials-Testing-Authentication-in-Postman/postman-ecommerce-auth-api-requests.jpg)
 
-<Callout icon="lightbulb">
-  With these configurations, your API now requires authentication (via a valid cookie) to create, update, or delete a product, while retrieving product lists remains open to all users.
-</Callout>
+> **lightbulb** With these configurations, your API now requires authentication (via a valid cookie) to create, update, or delete a product, while retrieving product lists remains open to all users.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/postman-essentials/module/0a8a02c7-cab8-4bd9-886e-c7570885146f/lesson/15e971c8-b56f-4894-829e-02e8b8dfc5c8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/postman-essentials/module/0a8a02c7-cab8-4bd9-886e-c7570885146f/lesson/15e971c8-b56f-4894-829e-02e8b8dfc5c8)

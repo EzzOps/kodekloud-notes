@@ -99,13 +99,9 @@ Practical examples and common Redis commands
   * Matchmaking queue: `LPUSH rides:requests <requestId>` / `BRPOP rides:requests 0`
 * Because MemoryDB is Redis‑compatible, existing Redis commands and client libraries continue to work.
 
-<Callout icon="lightbulb">
-  MemoryDB is Redis‑compatible, so most Redis clients and commands work unchanged. You can migrate or reuse Redis-based code with minimal changes while gaining durability and Multi‑AZ availability.
-</Callout>
+> **lightbulb** MemoryDB is Redis‑compatible, so most Redis clients and commands work unchanged. You can migrate or reuse Redis-based code with minimal changes while gaining durability and Multi‑AZ availability.
 
-<Callout icon="warning">
-  Evaluate failure modes and recovery procedures before switching to MemoryDB. Strong durability reduces data loss risk, but application-level handling for edge cases (split‑brain, propagation lag, or replica promotion) is still important.
-</Callout>
+> **warning** Evaluate failure modes and recovery procedures before switching to MemoryDB. Strong durability reduces data loss risk, but application-level handling for edge cases (split‑brain, propagation lag, or replica promotion) is still important.
 
 Links and references
 
@@ -119,6 +115,4 @@ Further reading
 * Designing for eventual consistency vs. strong consistency
 * Capacity planning for in‑memory datastores
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/6a7580a8-a2a6-4356-bc28-457f769ebff2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/6a7580a8-a2a6-4356-bc28-457f769ebff2)

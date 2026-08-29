@@ -10,11 +10,11 @@ Verified Permissions centralizes authorization, allowing you to control user acc
 
 It leverages the Cedar policy language to define granular permissions. With Verified Permissions, you can manage policies via the AWS console, CLI, or SDK. Billing is based on the number of authorization requests processed each month, encouraging efficient permission management.
 
-![The image is an infographic titled "Verified Permission" that outlines five features of a service for managing permissions in custom apps, including scalability, security, and pricing details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865928/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Verified-Permissions/verified-permission-infographic-features.jpg)
+![The image is an infographic titled "Verified Permission" that outlines five features of a service for managing permissions in custom apps, including scalability, security, and pricing details.](https://kodekloud.com/kk-media/image/upload/v1752865928/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Verified-Permissions/verified-permission-infographic-features.jpg)
 
 The process begins by creating a policy schema, where developers define the authorization model—specifying what actions users are permitted or forbidden to perform. These schemas and their associated policies are securely stored in Amazon Verified Permissions.
 
-![The image is a flowchart explaining Amazon Verified Permissions, detailing the process of creating schemas, managing policies, and authorizing access for applications. It includes components like identity providers, Amazon API Gateway, AWS Lambda, and AWS AppSync.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865929/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Verified-Permissions/amazon-verified-permissions-flowchart.jpg)
+![The image is a flowchart explaining Amazon Verified Permissions, detailing the process of creating schemas, managing policies, and authorizing access for applications. It includes components like identity providers, Amazon API Gateway, AWS Lambda, and AWS AppSync.](https://kodekloud.com/kk-media/image/upload/v1752865929/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Verified-Permissions/amazon-verified-permissions-flowchart.jpg)
 
 When your application—whether running on AWS Lambda, Amazon ECS, or another platform—needs to verify a user's permission, it sends a request to the Verified Permissions service. The service cross-references the relevant policy documents and responds with whether the user is authorized to perform the requested action.
 

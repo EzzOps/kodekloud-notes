@@ -15,7 +15,7 @@ Before initiating your cloud migration, gathering detailed information about you
 
 This process compiles information such as CPU utilization, memory usage, and network traffic, providing you with the necessary details to plan your migration accurately.
 
-![The image is a diagram illustrating the AWS Migration Hub's discovery process, showing agent and agentless discovery from data centers leading to insights on service inventory, CPU usage, memory usage, and network utilization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865461/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Migration-Hub/aws-migration-hub-discovery-diagram.jpg)
+![The image is a diagram illustrating the AWS Migration Hub's discovery process, showing agent and agentless discovery from data centers leading to insights on service inventory, CPU usage, memory usage, and network utilization.](https://kodekloud.com/kk-media/image/upload/v1752865461/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Migration-Hub/aws-migration-hub-discovery-diagram.jpg)
 
 > **lightbulb** For optimal accuracy, ensure that the chosen discovery method aligns with your current infrastructure and privacy requirements.
 
@@ -28,7 +28,7 @@ After completing the discovery phase, AWS Migration Hub transitions into the ass
 
 These assessments simplify the planning process by offering actionable insights tailored to your specific environment.
 
-![The image is a flowchart illustrating the assessment process in AWS Migration Hub, showing inputs like service inventory, CPU usage, memory usage, and network utilization leading to assessment outcomes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865462/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Migration-Hub/aws-migration-hub-assessment-flowchart.jpg)
+![The image is a flowchart illustrating the assessment process in AWS Migration Hub, showing inputs like service inventory, CPU usage, memory usage, and network utilization leading to assessment outcomes.](https://kodekloud.com/kk-media/image/upload/v1752865462/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Migration-Hub/aws-migration-hub-assessment-flowchart.jpg)
 
 ## Migration Process
 
@@ -41,7 +41,7 @@ Upon finalizing instance sizing and evaluating costs, you can move forward with 
 
 During this stage, Migration Hub continuously provides updates on your migration progress until the entire process is successfully completed.
 
-![The image is a diagram illustrating the AWS Migration Hub, showing data flow from a data center to AWS Cloud using MGN and DMS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865463/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Migration-Hub/aws-migration-hub-diagram.jpg)
+![The image is a diagram illustrating the AWS Migration Hub, showing data flow from a data center to AWS Cloud using MGN and DMS services.](https://kodekloud.com/kk-media/image/upload/v1752865463/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Migration-Hub/aws-migration-hub-diagram.jpg)
 
 > **lightbulb** Integrate with multiple migration tools to leverage specialized functionalities and streamline the overall migration process.
 
@@ -55,7 +55,7 @@ AWS Migration Hub offers a streamlined and centralized approach for managing you
 * **Integration with Migration Tools:** Seamlessly work with various AWS and partner migration services.
 * **Reporting and Analytics:** Generate detailed reports and analytics to optimize migration strategy and effectiveness.
 
-![The image is a summary slide with four key points about migration progress, application cataloging, organization into migration groups, and integration with migration tools. It features a gradient background and numbered icons for each point.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865464/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Migration-Hub/migration-progress-summary-slide.jpg)
+![The image is a summary slide with four key points about migration progress, application cataloging, organization into migration groups, and integration with migration tools. It features a gradient background and numbered icons for each point.](https://kodekloud.com/kk-media/image/upload/v1752865464/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Migration-Hub/migration-progress-summary-slide.jpg)
 
 > **lightbulb** AWS Migration Hub simplifies your migration journey by offering a comprehensive set of tools to handle discovery, assessment, and management. This centralized console helps ensure your migration is efficient, well-planned, and cost-effective.
 

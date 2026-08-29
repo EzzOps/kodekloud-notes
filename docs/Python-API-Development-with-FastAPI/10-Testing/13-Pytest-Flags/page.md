@@ -36,9 +36,7 @@ c:\users\sanje\documents\courses\fastapi\venv\lib\site-packages\aiofiles\os.py:1
 16 passed, 5 warnings in 0.63s
 ```
 
-<Callout icon="lightbulb">
-  To eliminate these distractions, run Pytest with a flag such as `--disable-warnings`. This ensures that your test output remains focused on essential information.
-</Callout>
+> **lightbulb** To eliminate these distractions, run Pytest with a flag such as `--disable-warnings`. This ensures that your test output remains focused on essential information.
 
 ***
 
@@ -168,6 +166,4 @@ Once all issues are resolved, the complete suite of tests will run successfully,
 
 By leveraging these Pytest flags, you can create a more efficient and developer-friendly testing environment. Whether you're suppressing unnecessary warnings or halting on the first failure for rapid debugging, these techniques help maintain a smooth and effective workflow.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/0a275a8c-c649-419d-af5a-ec420127256e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/0a275a8c-c649-419d-af5a-ec420127256e)

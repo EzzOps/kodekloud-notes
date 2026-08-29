@@ -32,7 +32,7 @@ The differences between REST API and HTTP API are significant and impact feature
   * Supports only regional endpoints.
   * Delivers higher performance and lower latency.
 
-![The image provides exam tips for API Gateway, comparing REST API and HTTP API types, highlighting features, costs, and support options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857870/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/api-gateway-exam-tips-comparison.jpg)
+![The image provides exam tips for API Gateway, comparing REST API and HTTP API types, highlighting features, costs, and support options.](https://kodekloud.com/kk-media/image/upload/v1752857870/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/api-gateway-exam-tips-comparison.jpg)
 
 ## Stages and Stage Variables
 
@@ -45,7 +45,7 @@ There are several integration types available in API Gateway that enable seamles
 * **Mock Integration:**\
   Returns a response without contacting a backend service. This is especially useful during testing, as it avoids additional costs.
 
-![The image provides exam tips for API Gateway, highlighting features like stage support, stage variables, and integration types, including mock integration for testing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857871/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/api-gateway-exam-tips-features.jpg)
+![The image provides exam tips for API Gateway, highlighting features like stage support, stage variables, and integration types, including mock integration for testing.](https://kodekloud.com/kk-media/image/upload/v1752857871/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/api-gateway-exam-tips-features.jpg)
 
 * **AWS Proxy:**\
   Directly passes incoming requests to a backend Lambda function, acting as an efficient proxy.
@@ -59,7 +59,7 @@ There are several integration types available in API Gateway that enable seamles
 * **HTTP Integration:**\
   Allows API Gateway to expose HTTP endpoints with data mapping templates to facilitate data transmission.
 
-![The image provides exam tips for API Gateway, detailing different proxy types and data mapping configurations in AWS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857872/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/api-gateway-exam-tips-aws.jpg)
+![The image provides exam tips for API Gateway, detailing different proxy types and data mapping configurations in AWS.](https://kodekloud.com/kk-media/image/upload/v1752857872/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/api-gateway-exam-tips-aws.jpg)
 
 ## Additional Features
 
@@ -74,7 +74,7 @@ API Gateway comes equipped with several additional features that enhance its fun
 * **Caching:**\
   Enable caching on a per-stage basis to reduce backend calls and improve latency. The cache is invalidated when a header with "cache-control: max-age=0" is provided.
 
-![The image provides exam tips for API Gateway, including support for CORS, OpenAPI spec import/export, and caching features in Amazon API Gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857873/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/api-gateway-exam-tips-caching.jpg)
+![The image provides exam tips for API Gateway, including support for CORS, OpenAPI spec import/export, and caching features in Amazon API Gateway.](https://kodekloud.com/kk-media/image/upload/v1752857873/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/api-gateway-exam-tips-caching.jpg)
 
 ## Authentication and Authorization
 
@@ -91,7 +91,7 @@ Implementing robust authentication and authorization is straightforward with API
 
 API keys, which are alphanumeric strings, play a crucial role in controlling access to your API. They allow you to monitor API usage and enforce throttling limits. These keys are associated with usage plans that define access levels and rate limits.
 
-![The image provides exam tips for API Gateway, covering methods for authentication/authorization, the use of API keys, and usage plans in AWS API Gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857875/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/api-gateway-exam-tips-authentication.jpg)
+![The image provides exam tips for API Gateway, covering methods for authentication/authorization, the use of API keys, and usage plans in AWS API Gateway.](https://kodekloud.com/kk-media/image/upload/v1752857875/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/api-gateway-exam-tips-authentication.jpg)
 
 > **lightbulb** When planning your API Gateway architecture, carefully select the integration and authentication methods that best meet your application’s needs. This helps ensure both performance optimization and security.
 

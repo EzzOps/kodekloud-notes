@@ -129,9 +129,7 @@ Notes on key fields:
 * attestors: Verifies the signature of the attestation document itself (not the base image). Provide trusted keys/certificates here.
 * conditions: After the attestation signature is validated, Kyverno parses the attestation JSON and evaluates JMESPath-based conditions. The `key` field uses a JMESPath expression; the example extracts all license expressions from components.
 
-<Callout icon="lightbulb">
-  The `attestors` block verifies the attestation document's signature — it does not verify the base image signature. Only when the attestation signature is trusted will Kyverno evaluate the specified conditions against the attestation's JSON content.
-</Callout>
+> **lightbulb** The `attestors` block verifies the attestation document's signature — it does not verify the base image signature. Only when the attestation signature is trusted will Kyverno evaluate the specified conditions against the attestation's JSON content.
 
 Example policy: require a signed SBOM and enforce component licenses
 
@@ -206,6 +204,4 @@ Links and references
 * JMESPath — [https://jmespath.org](https://jmespath.org)
 * Kyverno verifyImages documentation — [https://kyverno.io/docs/writing-policies/validate-images/](https://kyverno.io/docs/writing-policies/validate-images/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/29b815f2-6996-4693-b4b5-993ad2c6659e/lesson/9ca56f23-4cfc-4688-bf79-579e1afb3e76" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/29b815f2-6996-4693-b4b5-993ad2c6659e/lesson/9ca56f23-4cfc-4688-bf79-579e1afb3e76)

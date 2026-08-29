@@ -15,7 +15,7 @@ When managing AWS environments, organizations often operate several AWS accounts
 
 AWS Organizations addresses these issues by creating a centralized management model for all your AWS accounts.
 
-![The image illustrates an AWS organization structure with a company headquarters and two subsidiary sites, each featuring icons for development (dev) and operations (ops) teams.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865270/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Organizations/aws-organization-structure-headquarters-subsidiaries.jpg)
+![The image illustrates an AWS organization structure with a company headquarters and two subsidiary sites, each featuring icons for development (dev) and operations (ops) teams.](https://kodekloud.com/kk-media/image/upload/v1752865270/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Organizations/aws-organization-structure-headquarters-subsidiaries.jpg)
 
 Think of AWS Organizations as a multinational company where the master account functions similarly to a corporate headquarters. The master account sets high-level policies and oversees subsidiary accounts, ensuring that every account follows centralized guidelines while retaining a degree of autonomy.
 
@@ -46,11 +46,11 @@ The management account is responsible for administrative tasks within the AWS Or
 
 SCPs establish the schema for permitted or denied operations within your accounts. Operating similarly to IAM policies but on an organizational level, SCPs can restrict actions—for instance, preventing the launch of oversized EC2 instances in development environments. These policies can be applied organizationally, to specific OUs, or at the individual account level.
 
-![The image is a diagram illustrating AWS Organizations, showing a hierarchical structure with a root account, management account, and separate environments for Dev, Staging, and Prod, each with their own policies and SCPs (Service Control Policies).](../../../../images/kodekloud.com/kk-media/image/upload/v1752865271/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Organizations/aws-organizations-hierarchy-diagram.jpg)
+![The image is a diagram illustrating AWS Organizations, showing a hierarchical structure with a root account, management account, and separate environments for Dev, Staging, and Prod, each with their own policies and SCPs (Service Control Policies).](https://kodekloud.com/kk-media/image/upload/v1752865271/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Organizations/aws-organizations-hierarchy-diagram.jpg)
 
 Consider the example of a development account where an SCP might restrict users from launching EC2 instances above a certain size. This approach helps prevent over-allocation of resources in non-production environments. Such policies can be universally applied or tailored to specific accounts or groups.
 
-![The image illustrates the application of Service Control Policies (SCPs) within an organization, showing how they can be applied to the entire organization, specific organizational units (OUs), or individual accounts. It includes a diagram with labeled sections for Dev OU, Staging OU, Prod, and individual accounts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865272/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Organizations/scp-application-organization-diagram.jpg)
+![The image illustrates the application of Service Control Policies (SCPs) within an organization, showing how they can be applied to the entire organization, specific organizational units (OUs), or individual accounts. It includes a diagram with labeled sections for Dev OU, Staging OU, Prod, and individual accounts.](https://kodekloud.com/kk-media/image/upload/v1752865272/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Organizations/scp-application-organization-diagram.jpg)
 
 ## Benefits and Features of AWS Organizations
 
@@ -62,11 +62,11 @@ AWS Organizations offer a range of features designed to improve operational effi
 * **Seamless Integration with AWS Services:** Integrate effortlessly with services such as AWS IAM, IAM Identity Center, and CloudTrail, enhancing both security and insight.
 * **Cost Efficiency:** AWS Organizations itself does not incur extra charges; you only pay for the AWS resources you deploy.
 
-![The image lists five features: Centralized Account Management, Consolidated Billing, Service Control Policies, Integration with AWS Services, and No Additional Charges.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865273/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Organizations/centralized-account-management-features.jpg)
+![The image lists five features: Centralized Account Management, Consolidated Billing, Service Control Policies, Integration with AWS Services, and No Additional Charges.](https://kodekloud.com/kk-media/image/upload/v1752865273/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Organizations/centralized-account-management-features.jpg)
 
 > **lightbulb** Integrations like single sign-on through AWS IAM Identity Center simplify access by eliminating the need for multiple logins. Additionally, enabling CloudTrail across your organization offers comprehensive API activity insights, bolstering both security and operational oversight.
 
-![The image is a diagram illustrating an integration setup involving AWS CloudTrail, AWS IAM Identity Center, and a business application, with environments labeled as Dev OU, Staging, and Prod.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865274/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Organizations/aws-cloudtrail-iam-integration-diagram.jpg)
+![The image is a diagram illustrating an integration setup involving AWS CloudTrail, AWS IAM Identity Center, and a business application, with environments labeled as Dev OU, Staging, and Prod.](https://kodekloud.com/kk-media/image/upload/v1752865274/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Organizations/aws-cloudtrail-iam-integration-diagram.jpg)
 
 In summary, AWS Organizations centralizes the management of multiple AWS accounts, simplifies billing, and reinforces security through SCPs. This integrated approach ensures a more efficient and secure cloud environment while fostering consistency across your entire organization.
 

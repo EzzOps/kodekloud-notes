@@ -30,9 +30,7 @@ Since both `ages` and `ages2` refer to the same list, modifying the list through
 
 The change will also be reflected when accessing `ages2` because both variables share the same memory address for the list.
 
-<Callout icon="lightbulb">
-  To avoid such side effects, it's crucial to understand that assigning a list to another variable copies the reference, not the actual list content.
-</Callout>
+> **lightbulb** To avoid such side effects, it's crucial to understand that assigning a list to another variable copies the reference, not the actual list content.
 
 ## Creating an Independent Copy of a List
 
@@ -50,6 +48,4 @@ This tutorial has provided an overview of how list references work in Python and
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/a115db9d-996c-4cfc-be27-9cfd7e6d77f5/lesson/167c3b8b-a264-4f31-acbb-ed84f3c82a45" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/a115db9d-996c-4cfc-be27-9cfd7e6d77f5/lesson/167c3b8b-a264-4f31-acbb-ed84f3c82a45)

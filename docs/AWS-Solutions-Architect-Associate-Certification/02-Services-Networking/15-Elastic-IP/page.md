@@ -21,7 +21,7 @@ Elastic IP addresses are static IPv4 addresses allocated to your AWS account. On
 
 The diagram below shows how an Elastic IP (1.1.1.1) is reassigned from Server A to Server B, ensuring uninterrupted service:
 
-![The image illustrates an AWS Cloud setup with two servers, Server A and Server B, where an Elastic IP (1.1.1.1) is reassigned from Server A to Server B.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865550/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-IP/aws-cloud-setup-elastic-ip-reassign.jpg)
+![The image illustrates an AWS Cloud setup with two servers, Server A and Server B, where an Elastic IP (1.1.1.1) is reassigned from Server A to Server B.](https://kodekloud.com/kk-media/image/upload/v1752865550/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-IP/aws-cloud-setup-elastic-ip-reassign.jpg)
 
 ## Pricing Structure
 
@@ -32,7 +32,7 @@ Elastic IPs assigned to a running instance incur no additional cost. However, ad
 
 Both scenarios will result in a small hourly fee. The following diagram outlines the pricing model, showing that additional or unused reserved Elastic IPs are billed per hour:
 
-![The image illustrates "Elastic IP Pricing" with a diagram showing multiple IPs, where additional IPs are charged per hour.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865551/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-IP/elastic-ip-pricing-diagram.jpg)
+![The image illustrates "Elastic IP Pricing" with a diagram showing multiple IPs, where additional IPs are charged per hour.](https://kodekloud.com/kk-media/image/upload/v1752865551/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-IP/elastic-ip-pricing-diagram.jpg)
 
 > **triangle-alert** Ensure you manage and monitor your Elastic IP usage to avoid unexpected charges, especially for unused or extra reserved IPs.
 
@@ -40,7 +40,7 @@ Both scenarios will result in a small hourly fee. The following diagram outlines
 
 Elastic IPs are tied to specific AWS regions and cannot be transferred across regions. They can be associated only with EC2 instances within the same region. Additionally, these IP addresses are sourced either from AWS’s pool of IPv4 addresses or from a custom pool you bring to your account. The infographic below reinforces these points:
 
-![The image is an infographic about Elastic IPs, highlighting that they are specific to a region and come from Amazon's pool of IPv4 addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865553/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-IP/elastic-ips-infographic-amazon-ipv4.jpg)
+![The image is an infographic about Elastic IPs, highlighting that they are specific to a region and come from Amazon's pool of IPv4 addresses.](https://kodekloud.com/kk-media/image/upload/v1752865553/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-IP/elastic-ips-infographic-amazon-ipv4.jpg)
 
 ## How to Use an Elastic IP
 
@@ -51,6 +51,6 @@ To take advantage of Elastic IPs:
 
 In summary, while public IP addresses assigned to EC2 instances are dynamic and can change, Elastic IPs offer a static solution that ensures a consistent point of entry for your applications. Remember, Elastic IPs are region-specific and must be allocated and associated within the same region.
 
-![The image is a summary slide explaining the differences between public IPs and Elastic IPs, highlighting that public IPs are not static, while Elastic IPs are static IPv4 addresses. It also notes the process of allocating and associating an Elastic IP with an instance or network interface.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865554/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-IP/public-vs-elastic-ips-summary.jpg)
+![The image is a summary slide explaining the differences between public IPs and Elastic IPs, highlighting that public IPs are not static, while Elastic IPs are static IPv4 addresses. It also notes the process of allocating and associating an Elastic IP with an instance or network interface.](https://kodekloud.com/kk-media/image/upload/v1752865554/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-IP/public-vs-elastic-ips-summary.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/e03ffb87-3345-4fbb-9576-cb53d21d7a6a/lesson/b346d1e9-2d70-40e0-8d4a-16f364f230a3)

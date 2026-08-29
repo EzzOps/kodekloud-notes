@@ -79,13 +79,9 @@ Practical reminders
 * Sharding complicates cross-shard joins and multi-shard transactions. These require application-level coordination, two-phase commits, or compensating logic.
 * Avoid premature sharding. Introduce sharding when a single machine can no longer handle your storage or throughput needs — sharding is difficult to undo.
 
-<Callout icon="lightbulb">
-  Choose a shard key that matches your dominant access patterns. A poor shard key can create hot shards, hurt performance, and make queries or transactions inefficient.
-</Callout>
+> **lightbulb** Choose a shard key that matches your dominant access patterns. A poor shard key can create hot shards, hurt performance, and make queries or transactions inefficient.
 
-<Callout icon="warning">
-  Sharding adds operational complexity: monitor load distribution, plan for rebalancing, and test how your application handles partial failures and cross-shard operations.
-</Callout>
+> **warning** Sharding adds operational complexity: monitor load distribution, plan for rebalancing, and test how your application handles partial failures and cross-shard operations.
 
 Many modern databases provide built-in sharding and rebalancing support (for example, MongoDB, Cassandra, DynamoDB), which simplify deployment and maintenance. Regardless of the tooling you choose, sharding is a tradeoff: it increases scalability and capacity at the cost of added system complexity.
 
@@ -95,6 +91,4 @@ Links and references
 * [Apache Cassandra Documentation](https://cassandra.apache.org/doc/latest/)
 * [Amazon DynamoDB Introduction](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/defd8a34-b63f-4232-8736-37d5a04eefa1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/defd8a34-b63f-4232-8736-37d5a04eefa1)

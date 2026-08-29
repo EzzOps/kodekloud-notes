@@ -14,9 +14,7 @@ This hands-on lab demonstrates how a single index can transform a slow PostgreSQ
 
 Follow the steps below on a local PostgreSQL instance. Adjust database names and connection strings as needed.
 
-<Callout icon="lightbulb">
-  This lesson uses PostgreSQL for examples ([PostgreSQL documentation](https://www.postgresql.org/docs/current/)). The same concepts apply to other relational databases, though bulk-insert and EXPLAIN output may differ slightly.
-</Callout>
+> **lightbulb** This lesson uses PostgreSQL for examples ([PostgreSQL documentation](https://www.postgresql.org/docs/current/)). The same concepts apply to other relational databases, though bulk-insert and EXPLAIN output may differ slightly.
 
 ## At-a-glance: What you will run
 
@@ -156,17 +154,13 @@ Helpful links and references:
 * [PostgreSQL Documentation — EXPLAIN](https://www.postgresql.org/docs/current/sql-explain.html)
 * [PostgreSQL Documentation — ANALYZE](https://www.postgresql.org/docs/current/sql-analyze.html)
 
-<Callout icon="lightbulb">
-  If you want to repeat this experiment from a clean state, drop the index and truncate the table between runs:
+> **lightbulb** If you want to repeat this experiment from a clean state, drop the index and truncate the table between runs:
 
   ```sql theme={null}
   DROP INDEX IF EXISTS idx_events_user_id;
   TRUNCATE TABLE events;
   ```
-</Callout>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/9afb0146-2b6e-43f0-bf70-c1a007d2260e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/9afb0146-2b6e-43f0-bf70-c1a007d2260e)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/685e02e8-1a11-4ea5-aa7c-f9d814c29caa" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/685e02e8-1a11-4ea5-aa7c-f9d814c29caa)

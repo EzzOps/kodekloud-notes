@@ -10,7 +10,7 @@ Building on proactive problem reduction, this guide shows how to design a monito
 
 Imagine your IT ecosystem as a dynamic organism—complex, interconnected, and requiring constant vigilance.
 
-![The image is a diagram titled "Monitoring Strategy – Components," showing interconnected elements: System Architecture, Telemetry, Insight, People, and Actions, surrounded by labels like Information, Data, Knowledge, and Insight.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862535/notes-assets/images/AWS-CloudWatch-Monitoring-strategy-and-Categories-of-insights/monitoring-strategy-components-diagram.jpg)
+![The image is a diagram titled "Monitoring Strategy – Components," showing interconnected elements: System Architecture, Telemetry, Insight, People, and Actions, surrounded by labels like Information, Data, Knowledge, and Insight.](https://kodekloud.com/kk-media/image/upload/v1752862535/notes-assets/images/AWS-CloudWatch-Monitoring-strategy-and-Categories-of-insights/monitoring-strategy-components-diagram.jpg)
 
 A **comprehensive monitoring strategy** converts raw data into operations-ready guidance:
 
@@ -50,7 +50,7 @@ Fault management acts like an on-demand diagnostic system:
 
 Configuration management ensures settings and changes are versioned, documented, and enforceable.
 
-![The image illustrates the FCAPS model, highlighting "Configuration management" among categories like fault, accounting, performance, and security management, with an accompanying illustration of a person at a computer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862536/notes-assets/images/AWS-CloudWatch-Monitoring-strategy-and-Categories-of-insights/fcaps-model-configuration-management-illustration.jpg)
+![The image illustrates the FCAPS model, highlighting "Configuration management" among categories like fault, accounting, performance, and security management, with an accompanying illustration of a person at a computer.](https://kodekloud.com/kk-media/image/upload/v1752862536/notes-assets/images/AWS-CloudWatch-Monitoring-strategy-and-Categories-of-insights/fcaps-model-configuration-management-illustration.jpg)
 
 Use IaC tools (Terraform, CloudFormation) and drift detection to maintain a single source of truth and meet compliance requirements.
 
@@ -66,7 +66,7 @@ Accounting management functions like a utility meter—tracking compute, storage
 
 Performance management focuses on resource utilization and end-user experience:
 
-![The image shows a list of categories of insights related to the FCAPS model, highlighting "Performance management." It includes an illustration of a person analyzing a graph, symbolizing performance monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862538/notes-assets/images/AWS-CloudWatch-Monitoring-strategy-and-Categories-of-insights/fcaps-performance-management-insights-graph.jpg)
+![The image shows a list of categories of insights related to the FCAPS model, highlighting "Performance management." It includes an illustration of a person analyzing a graph, symbolizing performance monitoring.](https://kodekloud.com/kk-media/image/upload/v1752862538/notes-assets/images/AWS-CloudWatch-Monitoring-strategy-and-Categories-of-insights/fcaps-performance-management-insights-graph.jpg)
 
 * Leverages historical metrics and trend analysis.
 * Implements SLO/SLI tracking to uphold service levels.
@@ -78,7 +78,7 @@ Performance management focuses on resource utilization and end-user experience:
 
 Security management underpins trust and resilience:
 
-![The image illustrates the FCAPS model, highlighting categories of insights such as fault, configuration, accounting, performance, and security management, with a focus on security management. It includes a graphic depicting security-related elements like a lock, bug, and error symbols.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862539/notes-assets/images/AWS-CloudWatch-Monitoring-strategy-and-Categories-of-insights/fcaps-model-security-management-diagram.jpg)
+![The image illustrates the FCAPS model, highlighting categories of insights such as fault, configuration, accounting, performance, and security management, with a focus on security management. It includes a graphic depicting security-related elements like a lock, bug, and error symbols.](https://kodekloud.com/kk-media/image/upload/v1752862539/notes-assets/images/AWS-CloudWatch-Monitoring-strategy-and-Categories-of-insights/fcaps-model-security-management-diagram.jpg)
 
 * Monitors IAM policy changes, suspicious API calls, and vulnerability scans.
 * Enforces encryption, MFA, and network segmentation.

@@ -12,9 +12,7 @@ Linux lets you divide a physical disk into multiple partitions, each with its ow
 * Isolate data, swap, and boot partitions
 * Use different partition table formats: MBR (DOS) vs. GPT (modern systems)
 
-<Callout icon="lightbulb">
-  Leaving 1 MiB unallocated at the start of the disk is a best practice. Many bootloaders require this alignment for optimal performance.
-</Callout>
+> **lightbulb** Leaving 1 MiB unallocated at the start of the disk is a best practice. Many bootloaders require this alignment for optimal performance.
 
 ## 1. Viewing Existing Partitions
 
@@ -91,9 +89,7 @@ Device         Boot    Start      End  Sectors Size Id Type
    * Highlight a partition → **Resize** → enter new size (e.g., `4G`).
    * Use freed space to create another partition.
 
-<Frame>
-  ![The image shows a terminal window displaying disk partition information for /dev/sdb, including details about partitions, free space, and options for managing them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881375/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Create-Partitions-and-Filesystems-Manage-MBR-and-GPT-partition-tables/disk-partition-info-terminal-dev-sdb.jpg)
-</Frame>
+![The image shows a terminal window displaying disk partition information for /dev/sdb, including details about partitions, free space, and options for managing them.](https://kodekloud.com/kk-media/image/upload/v1752881375/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Create-Partitions-and-Filesystems-Manage-MBR-and-GPT-partition-tables/disk-partition-info-terminal-dev-sdb.jpg)
 
 ```bash theme={null}
 Disk: /dev/sdb
@@ -112,19 +108,13 @@ The default type is “Linux filesystem.” To mark `/dev/sdb3` as swap:
 
 * Highlight **sdb3** → **Type** → select **Linux swap** → **Enter**.
 
-<Frame>
-  ![The image shows a terminal window with a menu for selecting a partition type, highlighting "Linux swap" among various options like EFI System and Microsoft reserved.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881376/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Create-Partitions-and-Filesystems-Manage-MBR-and-GPT-partition-tables/terminal-partition-type-linux-swap.jpg)
-</Frame>
+![The image shows a terminal window with a menu for selecting a partition type, highlighting "Linux swap" among various options like EFI System and Microsoft reserved.](https://kodekloud.com/kk-media/image/upload/v1752881376/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Create-Partitions-and-Filesystems-Manage-MBR-and-GPT-partition-tables/terminal-partition-type-linux-swap.jpg)
 
 You can also choose types like **EFI System** for UEFI boot partitions or **Microsoft reserved** for Windows.
 
-<Frame>
-  ![The image shows a terminal window displaying a disk partitioning tool on a CentOS system, listing partitions on the disk /dev/sdb with details like size and type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881377/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Create-Partitions-and-Filesystems-Manage-MBR-and-GPT-partition-tables/centos-terminal-disk-partitioning-tool.jpg)
-</Frame>
+![The image shows a terminal window displaying a disk partitioning tool on a CentOS system, listing partitions on the disk /dev/sdb with details like size and type.](https://kodekloud.com/kk-media/image/upload/v1752881377/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Create-Partitions-and-Filesystems-Manage-MBR-and-GPT-partition-tables/centos-terminal-disk-partitioning-tool.jpg)
 
-<Callout icon="triangle-alert">
-  When you **Write** changes in `cfdisk`, all partition modifications become permanent. Double-check before confirming.
-</Callout>
+> **triangle-alert** When you **Write** changes in `cfdisk`, all partition modifications become permanent. Double-check before confirming.
 
 ### 3.2 Writing and Quitting
 
@@ -172,6 +162,4 @@ Now `/dev/sdb` has three partitions: two 4 GiB data partitions and one 2 GiB swa
 * [cfdisk(8) — curses-based partition editor](https://man7.org/linux/man-pages/man8/cfdisk.8.html)
 * [GPT vs. MBR Partition Tables](https://en.wikipedia.org/wiki/GUID_Partition_Table)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/bab260a6-adfc-4282-a694-8d300163b66c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/bab260a6-adfc-4282-a694-8d300163b66c)

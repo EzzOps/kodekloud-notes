@@ -91,9 +91,7 @@ This demonstration has shown how to deploy a pod in a Minikube environment using
 
 For further reading and detailed Kubernetes concepts, visit the [Kubernetes Documentation](https://kubernetes.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/9c2de9f5-180b-494e-970b-639cad788168" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/9c2de9f5-180b-494e-970b-639cad788168)
 
 
 # Demo ReplicaSets
@@ -118,9 +116,7 @@ Under the `spec` section:
 * Set the number of replicas (e.g., 3).
 * Provide the Pod template. You can copy the template from your existing Pod definition, but ensure that the indentation is correct after pasting.
 
-<Callout icon="lightbulb">
-  Ensure that the labels under the `selector` and in the Pod template exactly match, as these are the only labels that affect the ReplicaSet's operation. The label assigned to the ReplicaSet itself in the metadata is not used for matching.
-</Callout>
+> **lightbulb** Ensure that the labels under the `selector` and in the Pod template exactly match, as these are the only labels that affect the ReplicaSet's operation. The label assigned to the ReplicaSet itself in the metadata is not used for matching.
 
 Below is an example ReplicaSet definition:
 
@@ -355,6 +351,4 @@ In this lesson, you learned how to create a ReplicaSet from an existing Pod defi
 
 Happy clustering, and see you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/95e8d2c6-3d72-44a5-9824-d60f54808b97" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/95e8d2c6-3d72-44a5-9824-d60f54808b97)

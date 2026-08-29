@@ -24,13 +24,13 @@ A key configuration requirement is to designate one subnet from each availabilit
 
 Transit Gateway also significantly simplifies on-premises connectivity. Traditionally, connecting an on-premises data center to multiple VPCs required establishing separate VPN connections for each VPC. With Transit Gateway, a single VPN connection to the gateway suffices, as it routes traffic to all connected VPCs. Additionally, AWS Direct Connect can be integrated with Transit Gateway to offer enhanced connectivity options for high-performance and low-latency needs.
 
-![The image illustrates an AWS Transit Gateway setup, showing connections between a corporate data center, customer gateway, and multiple cloud networks. It highlights the transit gateway's role in routing traffic between VPCs and the requirement to specify subnets from each availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865702/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Transit-Gateway/aws-transit-gateway-setup-diagram.jpg)
+![The image illustrates an AWS Transit Gateway setup, showing connections between a corporate data center, customer gateway, and multiple cloud networks. It highlights the transit gateway's role in routing traffic between VPCs and the requirement to specify subnets from each availability zone.](https://kodekloud.com/kk-media/image/upload/v1752865702/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Transit-Gateway/aws-transit-gateway-setup-diagram.jpg)
 
 ## Advanced Connectivity Options
 
 A standout feature of Transit Gateways is their ability to peer with other Transit Gateways. This enables inter-region connectivity as well as connectivity across different AWS accounts. For example, if you need to link resources in two regions or manage networks across separate AWS accounts, establishing a peering relationship between Transit Gateways simplifies these scenarios considerably.
 
-![The image illustrates a diagram of AWS Transit Gateway peerings between two regions, each containing an AWS Transit Gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865703/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Transit-Gateway/aws-transit-gateway-peerings-diagram.jpg)
+![The image illustrates a diagram of AWS Transit Gateway peerings between two regions, each containing an AWS Transit Gateway.](https://kodekloud.com/kk-media/image/upload/v1752865703/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Transit-Gateway/aws-transit-gateway-peerings-diagram.jpg)
 
 ## Summary
 
@@ -41,6 +41,6 @@ AWS Transit Gateway is a powerful tool that streamlines network connectivity. It
 * Integration with both VPN and AWS Direct Connect enhances on-premises connection options.
 * Peering capabilities allow Transit Gateways to connect across regions and AWS accounts.
 
-![The image is a summary of key points about Transit Gateways, highlighting their role in simplifying networking, allowing transitive routing, specifying subnets for traffic routing, and peering with other gateways.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865704/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Transit-Gateway/transit-gateways-summary-key-points.jpg)
+![The image is a summary of key points about Transit Gateways, highlighting their role in simplifying networking, allowing transitive routing, specifying subnets for traffic routing, and peering with other gateways.](https://kodekloud.com/kk-media/image/upload/v1752865704/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Transit-Gateway/transit-gateways-summary-key-points.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/e03ffb87-3345-4fbb-9576-cb53d21d7a6a/lesson/5d34d747-949a-4668-93a1-33e74e03cacc)

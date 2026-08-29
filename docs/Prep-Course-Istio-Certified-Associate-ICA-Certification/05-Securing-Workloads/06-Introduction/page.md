@@ -116,9 +116,7 @@ kubectl get authorizationpolicies.security.istio.io
 
 Important: `curl --head` issues an HTTP `HEAD` request, not `GET`. Because this policy allows only `GET`, `HEAD` requests will be denied.
 
-<Callout icon="lightbulb">
-  Tip: When testing method-based policies, use `curl --request GET` or a plain `curl` (defaults to GET). If you prefer HEAD behavior, include `HEAD` in the policy (e.g., `methods: ["GET", "HEAD"]`).
-</Callout>
+> **lightbulb** Tip: When testing method-based policies, use `curl --request GET` or a plain `curl` (defaults to GET). If you prefer HEAD behavior, include `HEAD` in the policy (e.g., `methods: ["GET", "HEAD"]`).
 
 Update the policy to allow both GET and HEAD:
 
@@ -216,9 +214,7 @@ spec:
 
 Before applying, note the API warning behavior:
 
-<Callout icon="warning">
-  Warning: A DENY rule that uses only HTTP attributes (methods, paths) can impact TCP traffic under its scope unless you explicitly specify `ports`. Istio will warn when you apply such a rule. To avoid unintended TCP denial, scope the policy by `ports`, `selector`, or namespace.
-</Callout>
+> **warning** Warning: A DENY rule that uses only HTTP attributes (methods, paths) can impact TCP traffic under its scope unless you explicitly specify `ports`. Istio will warn when you apply such a rule. To avoid unintended TCP denial, scope the policy by `ports`, `selector`, or namespace.
 
 Apply the DENY policy:
 
@@ -338,9 +334,7 @@ kubectl get authorizationpolicies.security.istio.io -A
 # default    httpbin-auth-policy  ALLOW  33m
 ```
 
-<Callout icon="lightbulb">
-  Deny rules are evaluated before allow rules. If both DENY and ALLOW match a request, the DENY takes precedence. Use targeted DENY rules (by selector, namespace, port, or path) rather than a broad deny-all unless you intend to explicitly allow everything else.
-</Callout>
+> **lightbulb** Deny rules are evaluated before allow rules. If both DENY and ALLOW match a request, the DENY takes precedence. Use targeted DENY rules (by selector, namespace, port, or path) rather than a broad deny-all unless you intend to explicitly allow everything else.
 
 ***
 
@@ -389,11 +383,9 @@ For authoritative documentation and examples, see the Istio Authorization Policy
   * Warnings about `DENY` rules with only HTTP attributes and their potential effect on TCP traffic
 * Practice common patterns: allow-by-namespace, allow-by-service-account, deny-by-path, and per-workload deny to build confidence for production and certification scenarios.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/a1c6e62c-1037-47a6-8ed9-d7cda24ad89b" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/a1c6e62c-1037-47a6-8ed9-d7cda24ad89b)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/4720e4dc-a793-4ae5-945d-1f639d5b6612" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/4720e4dc-a793-4ae5-945d-1f639d5b6612)
 
 
 # Introduction
@@ -416,9 +408,7 @@ You should expect three core questions around authentication and authorization; 
 
 Finally, we'll discuss how Istio's ambient mode interacts with security resources. Ambient mode material is useful to understand modern Istio deployments, although it is not required for the exam objectives.
 
-<Callout icon="lightbulb">
-  This lesson focuses on concepts and configurations for Istio authentication and authorization. Ambient mode details are included for completeness but are not required for the exam.
-</Callout>
+> **lightbulb** This lesson focuses on concepts and configurations for Istio authentication and authorization. Ambient mode details are included for completeness but are not required for the exam.
 
 What you'll learn in this lesson:
 
@@ -443,6 +433,4 @@ Expect to answer these three core questions by the end of this lesson:
 
 If you're ready, grab a cup of coffee and let's begin the lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/1bef1776-edd7-44d5-99db-28b02fee0f36" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/1bef1776-edd7-44d5-99db-28b02fee0f36)

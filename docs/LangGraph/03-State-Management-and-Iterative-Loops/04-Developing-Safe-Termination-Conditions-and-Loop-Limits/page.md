@@ -18,9 +18,7 @@ openai_client = OpenAI()  # reads OPENAI_API_KEY from env
 tavily_client = TavilyClient(api_key=os.environ.get("TAVILY_API_KEY"))
 ```
 
-<Callout icon="warning">
-  Make sure `OPENAI_API_KEY` and `TAVILY_API_KEY` are available in your environment before running the examples. Leaving keys in source code is not recommended for production.
-</Callout>
+> **warning** Make sure `OPENAI_API_KEY` and `TAVILY_API_KEY` are available in your environment before running the examples. Leaving keys in source code is not recommended for production.
 
 This example uses:
 
@@ -88,9 +86,7 @@ def classify_intent(state: AgentState) -> dict:
     return {"intent": label}
 ```
 
-<Callout icon="lightbulb">
-  Use a terse classifier prompt to minimize hallucination and to make the decision deterministic. If you want higher fidelity, consider a small validation step after classification.
-</Callout>
+> **lightbulb** Use a terse classifier prompt to minimize hallucination and to make the decision deterministic. If you want higher fidelity, consider a small validation step after classification.
 
 ***
 
@@ -236,9 +232,7 @@ builder.add_edge("format_output", END)
 app = builder.compile()
 ```
 
-<Callout icon="lightbulb">
-  Conditional edges let the graph decide the next node dynamically based on the current `state`. This makes branching explicit, easier to reason about, and straightforward to visualize.
-</Callout>
+> **lightbulb** Conditional edges let the graph decide the next node dynamically based on the current `state`. This makes branching explicit, easier to reason about, and straightforward to visualize.
 
 ***
 
@@ -292,9 +286,7 @@ References and further reading:
 * [LangGraph (concepts)](https://example.com/langgraph-docs) &#x20;
 * [Tavily (search API)](https://tavily.ai/) &#x20;
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/59a2609f-b3cc-4ec4-836c-342af3155b7e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/59a2609f-b3cc-4ec4-836c-342af3155b7e)
 
 
 # Developing Safe Termination Conditions and Loop Limits
@@ -385,9 +377,7 @@ Even with safeguards, loops can fail to meet their conditions. Include fallback 
 
 Ravi doesn't keep driving forever if something blocks him — he reports back to dispatch. Your graph should behave the same way.
 
-<Callout icon="lightbulb">
-  Use combined patterns for production: a semantic completion flag for efficiency plus a loop counter for safety. Log which condition triggered the exit so you can analyze and improve flows later.
-</Callout>
+> **lightbulb** Use combined patterns for production: a semantic completion flag for efficiency plus a loop counter for safety. Log which condition triggered the exit so you can analyze and improve flows later.
 
 Observability
 
@@ -495,9 +485,7 @@ Key patterns at a glance
   <img alt="The image displays two takeaways regarding loops: ensuring termination for safety and usefulness, and using counters, goals, and guards." />
 </Frame>
 
-<Callout icon="warning">
-  Never rely solely on semantic confidence for termination in production. Always include a hard iteration limit and structured logging so you can understand why a flow ended.
-</Callout>
+> **warning** Never rely solely on semantic confidence for termination in production. Always include a hard iteration limit and structured logging so you can understand why a flow ended.
 
 Key takeaways
 
@@ -514,8 +502,6 @@ Links and references
 
 Implement these patterns in your routers and state management to keep LangGraph flows responsive, predictable, and safe.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/b125b0f3-0de9-467e-a15d-d41957c4cb81" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/b125b0f3-0de9-467e-a15d-d41957c4cb81)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/2e2dc1e6-ba1c-4dba-8390-ad105ce7cedd" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/2e2dc1e6-ba1c-4dba-8390-ad105ce7cedd)

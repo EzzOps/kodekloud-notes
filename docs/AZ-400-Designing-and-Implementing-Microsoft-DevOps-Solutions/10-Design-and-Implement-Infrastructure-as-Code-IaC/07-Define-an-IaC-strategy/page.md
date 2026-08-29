@@ -14,7 +14,7 @@ Infrastructure as Code (IaC) refers to managing and provisioning computing resou
 * Version-control all changes
 * Scale environments reliably
 
-![The image is an introduction slide for "Infrastructure as Code (IaC)" with a cloud icon and a brief description of IaC as a DevOps practice involving infrastructure management through machine-readable files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867707/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Define-an-IaC-strategy/infrastructure-as-code-introduction-slide.jpg)
+![The image is an introduction slide for "Infrastructure as Code (IaC)" with a cloud icon and a brief description of IaC as a DevOps practice involving infrastructure management through machine-readable files.](https://kodekloud.com/kk-media/image/upload/v1752867707/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Define-an-IaC-strategy/infrastructure-as-code-introduction-slide.jpg)
 
 ### Key Benefits of IaC
 
@@ -24,7 +24,7 @@ Infrastructure as Code (IaC) refers to managing and provisioning computing resou
 | Repeatability | Ensures identical environment setups across deployments     |
 | Scalability   | Simplifies management of large, distributed infrastructures |
 
-![The image is an introduction to "Infrastructure as Code (IaC)" highlighting three key concepts: Reliability, Repeatability, and Scalability, each represented by a numbered card.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867708/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Define-an-IaC-strategy/infrastructure-as-code-iac-introduction.jpg)
+![The image is an introduction to "Infrastructure as Code (IaC)" highlighting three key concepts: Reliability, Repeatability, and Scalability, each represented by a numbered card.](https://kodekloud.com/kk-media/image/upload/v1752867708/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Define-an-IaC-strategy/infrastructure-as-code-iac-introduction.jpg)
 
 ## How IaC Works in Azure
 
@@ -56,7 +56,7 @@ Best practices:
 | GitHub      | Public and private repositories with community CI | GitHub Actions  |
 | Azure Repos | Enterprise-grade Git with built-in Azure security | Azure Pipelines |
 
-![The image outlines three aspects of source control in Infrastructure as Code (IaC): branching strategies, commit guidelines, and pull requests for code reviews.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867709/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Define-an-IaC-strategy/source-control-iac-branching-commit-pull.jpg)
+![The image outlines three aspects of source control in Infrastructure as Code (IaC): branching strategies, commit guidelines, and pull requests for code reviews.](https://kodekloud.com/kk-media/image/upload/v1752867709/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Define-an-IaC-strategy/source-control-iac-branching-commit-pull.jpg)
 
 ## Automated Testing for IaC
 
@@ -68,13 +68,13 @@ Incorporating automated tests into your IaC workflow catches issues early and en
 | Integration Tests | Verify interactions among multiple components | Terratest (Go)      |
 | Security Tests    | Enforce security and policy compliance        | InSpec, Checkov     |
 
-![The image illustrates the automation of testing for Infrastructure as Code (IaC) with three steps: unit tests for individual modules, integration tests for combined components, and security tests for compliance checks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867710/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Define-an-IaC-strategy/iac-testing-automation-diagram.jpg)
+![The image illustrates the automation of testing for Infrastructure as Code (IaC) with three steps: unit tests for individual modules, integration tests for combined components, and security tests for compliance checks.](https://kodekloud.com/kk-media/image/upload/v1752867710/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Define-an-IaC-strategy/iac-testing-automation-diagram.jpg)
 
 ## Automating IaC Deployments
 
 Continuous deployment for IaC ensures that every infrastructure change is automatically tested, validated, and applied in a consistent manner.
 
-![The image is a slide titled "Automating Deployment for IaC," explaining that continuous deployment for Infrastructure as Code involves automating the deployment process to ensure reliable and repeatable infrastructure changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867712/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Define-an-IaC-strategy/automating-deployment-iac-slide.jpg)
+![The image is a slide titled "Automating Deployment for IaC," explaining that continuous deployment for Infrastructure as Code involves automating the deployment process to ensure reliable and repeatable infrastructure changes.](https://kodekloud.com/kk-media/image/upload/v1752867712/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Define-an-IaC-strategy/automating-deployment-iac-slide.jpg)
 
 ### Principles of Continuous Deployment
 
@@ -95,7 +95,7 @@ Azure Pipelines provides a cloud-hosted CI/CD service for both application and i
 * Run automated tests to enforce quality and compliance.
 * Deploy resource changes safely and at scale in Azure.
 
-![The image is an infographic about automating deployment for Infrastructure as Code (IaC) using Azure Pipelines, highlighting three steps: building, testing, and deploying applications and infrastructure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867713/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Define-an-IaC-strategy/iac-automation-azure-pipelines-infographic.jpg)
+![The image is an infographic about automating deployment for Infrastructure as Code (IaC) using Azure Pipelines, highlighting three steps: building, testing, and deploying applications and infrastructure.](https://kodekloud.com/kk-media/image/upload/v1752867713/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Define-an-IaC-strategy/iac-automation-azure-pipelines-infographic.jpg)
 
 ## Links and References
 

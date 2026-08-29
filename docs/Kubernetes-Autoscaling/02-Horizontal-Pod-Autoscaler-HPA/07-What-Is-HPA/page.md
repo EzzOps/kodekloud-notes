@@ -39,9 +39,7 @@ This is exactly what the Horizontal Pod Autoscaler does for applications: it mon
 
 Practical tips:
 
-<Callout icon="lightbulb">
-  HPA requires access to metric APIs. For built-in resource metrics like CPU and memory, install a Metrics Server (or another compatible provider) in the cluster. For custom or external metrics, configure the corresponding metrics adapter/provider.
-</Callout>
+> **lightbulb** HPA requires access to metric APIs. For built-in resource metrics like CPU and memory, install a Metrics Server (or another compatible provider) in the cluster. For custom or external metrics, configure the corresponding metrics adapter/provider.
 
 ## Metric types — quick reference
 
@@ -88,9 +86,7 @@ Notes on the example:
 * `behavior` provides rate-limiting and stabilization controls to avoid rapid scale-in/scale-out cycles.
 * Use `autoscaling/v2` when you need multi-metric support and advanced behavior configuration.
 
-<Callout icon="warning">
-  HPA responsiveness depends on metric availability and scraping frequency. Ensure your metrics provider is properly configured, and be cautious when exposing custom metrics—misconfiguration can lead to unexpected scaling or resource exhaustion.
-</Callout>
+> **warning** HPA responsiveness depends on metric availability and scraping frequency. Ensure your metrics provider is properly configured, and be cautious when exposing custom metrics—misconfiguration can lead to unexpected scaling or resource exhaustion.
 
 <Frame>
   <img alt="A slide-style infographic titled &#x22;Horizontal Pod Autoscaler (HPA)&#x22; showing a central HPA box with arrows to features: &#x22;Observes metrics&#x22;, &#x22;Adds pods&#x22;, &#x22;Balances thresholds&#x22;, and &#x22;Tracks multiple metrics.&#x22;" />
@@ -108,6 +104,4 @@ Notes on the example:
 * Metrics Server: [https://github.com/kubernetes-sigs/metrics-server](https://github.com/kubernetes-sigs/metrics-server)
 * Custom Metrics Adapter examples: [https://github.com/kubernetes-sigs/custom-metrics-apiserver](https://github.com/kubernetes-sigs/custom-metrics-apiserver)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/272ed778-7f30-4abc-9c4d-5c7ebac166e3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/272ed778-7f30-4abc-9c4d-5c7ebac166e3)

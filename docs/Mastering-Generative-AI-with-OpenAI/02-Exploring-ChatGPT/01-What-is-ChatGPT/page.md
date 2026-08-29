@@ -14,17 +14,13 @@ ChatGPT is a conversational AI assistant built on OpenAI’s GPT (Generative Pre
 * Paid tier (ChatGPT Plus): powered by **GPT-4**
 * Mobile access: available via the [ChatGPT iOS app](https://apps.apple.com/app/openai-chatgpt/id6448311069)
 
-<Callout icon="lightbulb">
-  ChatGPT’s training data cuts off in 2021, so it won’t know about events or developments after that year.
-</Callout>
+> **lightbulb** ChatGPT’s training data cuts off in 2021, so it won’t know about events or developments after that year.
 
 ## Free Version of ChatGPT
 
 If you already have an [OpenAI account](https://platform.openai.com/), click **Log in** to access the free ChatGPT interface.
 
-<Frame>
-  ![The image shows the ChatGPT interface with sections highlighting examples, capabilities, and limitations of the AI. It includes example prompts and descriptions of what the AI can and cannot do.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881502/notes-assets/images/Mastering-Generative-AI-with-OpenAI-What-is-ChatGPT/chatgpt-interface-examples-capabilities-limitations.jpg)
-</Frame>
+![The image shows the ChatGPT interface with sections highlighting examples, capabilities, and limitations of the AI. It includes example prompts and descriptions of what the AI can and cannot do.](https://kodekloud.com/kk-media/image/upload/v1752881502/notes-assets/images/Mastering-Generative-AI-with-OpenAI-What-is-ChatGPT/chatgpt-interface-examples-capabilities-limitations.jpg)
 
 * **Prompt box**: Enter your text prompt to guide the model’s response.
 * **Examples & Capabilities**: Predefined prompts and features you can try.
@@ -38,9 +34,7 @@ To unlock GPT-4 and additional features:
 2. Enter payment details (\$20/month).
 3. Confirm your subscription.
 
-<Callout icon="triangle-alert">
-  ChatGPT Plus subscriptions are billed separately from your OpenAI API usage. Monitor both accounts to avoid unexpected charges.
-</Callout>
+> **triangle-alert** ChatGPT Plus subscriptions are billed separately from your OpenAI API usage. Monitor both accounts to avoid unexpected charges.
 
 ### Feature Comparison
 
@@ -78,6 +72,4 @@ By the end of this course, you’ll master:
 
 Explore the next sections to start building AI-driven tools with OpenAI’s powerful models.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/8a22dad7-381f-463c-9b71-18ca8cda36a4/lesson/d2a0f119-2091-4a29-8400-36f04454ef5c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/8a22dad7-381f-463c-9b71-18ca8cda36a4/lesson/d2a0f119-2091-4a29-8400-36f04454ef5c)

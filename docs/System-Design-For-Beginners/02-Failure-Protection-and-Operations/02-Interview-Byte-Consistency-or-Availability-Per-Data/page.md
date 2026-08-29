@@ -15,9 +15,7 @@ For each class of operation you should explicitly state:
 * How you will implement it (replication strategy, consensus or async replication, reconciliation, etc.).
 * What the user will see during a partition and how you will recover or reconcile afterwards.
 
-<Callout icon="lightbulb">
-  Always answer per operation. Explain the user-visible behavior during a partition, the trade-offs, and the reconciliation or protection mechanisms you will use.
-</Callout>
+> **lightbulb** Always answer per operation. Explain the user-visible behavior during a partition, the trade-offs, and the reconciliation or protection mechanisms you will use.
 
 ## Example: High-throughput, Non-critical Actions — Prefer Availability
 
@@ -85,6 +83,4 @@ This approach shows both theoretical knowledge of the CAP trade-offs and practic
 
 By answering per operation with clear rationale and specific mechanisms, you demonstrate practical command of CAP trade-offs and how to build resilient, user-friendly systems.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/c7a8e3b7-9370-4462-a298-4a441dd68f8a/lesson/ff3f0189-2026-478e-84b1-c1a418c5656e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/c7a8e3b7-9370-4462-a298-4a441dd68f8a/lesson/ff3f0189-2026-478e-84b1-c1a418c5656e)

@@ -78,9 +78,7 @@ Links and references
 
 This should give you a clear understanding of how metric data moves from your application to a collector or backend, the role of each component in the pipeline, and practical tips for configuring MeterProvider, Meter names, Views, Readers, and Exporters. That's it for the Metrics pipeline section.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/9705cf40-60fa-4c98-8f33-a0e1b27bf7b3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/9705cf40-60fa-4c98-8f33-a0e1b27bf7b3)
 
 
 # Metrics SDK Lifecycle APIs and Views
@@ -93,9 +91,7 @@ You now understand the high-level metrics pipeline. This article examines the li
 
 Metric exporters are lightweight plugins whose sole responsibility is to transmit metrics to a destination (a backend, collector, or monitoring system). They always work in tandem with a MetricReader: the reader handles aggregation and temporality, while the exporter packages and sends already-summarized metrics. Keep exporters simple — if an exporter receives a format or timing it cannot support, it should log a clear error so users know why data was not exported.
 
-<Callout icon="warning">
-  Exporters should not perform aggregation or alter temporality. If a destination requires a custom metric format that the SDK does not natively support, the exporter must surface this clearly in logs and documentation.
-</Callout>
+> **warning** Exporters should not perform aggregation or alter temporality. If a destination requires a custom metric format that the SDK does not natively support, the exporter must surface this clearly in logs and documentation.
 
 <Frame>
   <img alt="The image is an infographic about &#x22;Metric Exporter,&#x22; explaining its role as a plug-in for sending metrics, its collaboration with a MetricReader, and its operation principles like simplicity, error logging, and scheduling." />
@@ -163,9 +159,7 @@ ForceFlush
 * It is intended for push-based workflows where you want to ensure buffered metrics are delivered before shutdown or at critical moments.
 * Pull exporters (scrape-based) are unaffected by `ForceFlush`; they only expose metrics in response to scrapes. For scrape-based setups, ensure the external scraper performs a final scrape if you need the last metrics exported.
 
-<Callout icon="lightbulb">
-  ForceFlush is intended for push-based workflows (e.g., ensuring buffered metrics are sent before shutdown). For scrape-based setups (Prometheus), ensure the scraper scrapes the endpoint at least once before shutdown if you need the final data exported.
-</Callout>
+> **lightbulb** ForceFlush is intended for push-based workflows (e.g., ensuring buffered metrics are sent before shutdown). For scrape-based setups (Prometheus), ensure the scraper scrapes the endpoint at least once before shutdown if you need the final data exported.
 
 Lifecycle summary and best practices
 
@@ -190,6 +184,4 @@ References and further reading
 
 This article covered metrics SDK lifecycle topics: MetricExporters (push and pull), MetricReaders, `ForceFlush`, and `Shutdown` semantics, including best practices for ensuring final metrics are reliably exported.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/4a118783-522b-4895-8327-fb598928db7c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/4a118783-522b-4895-8327-fb598928db7c)

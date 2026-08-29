@@ -15,7 +15,7 @@ To visualize Auto Scaling, imagine a bakery that manages ovens based on customer
 * When ovens reach 80% capacity, a new oven turns on.
 * When utilization drops below 20%, an oven shuts off.
 
-![The image illustrates the concept of autoscaling using a bakery analogy, showing a bakery, ovens, and users with cupcakes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868999/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/autoscaling-bakery-analogy-cupcakes.jpg)
+![The image illustrates the concept of autoscaling using a bakery analogy, showing a bakery, ovens, and users with cupcakes.](https://kodekloud.com/kk-media/image/upload/v1752868999/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/autoscaling-bakery-analogy-cupcakes.jpg)
 
 This model ensures resources dynamically match demand—just like AWS Auto Scaling Groups.
 
@@ -23,7 +23,7 @@ This model ensures resources dynamically match demand—just like AWS Auto Scali
 
 AWS Auto Scaling Groups automatically add or remove EC2 instances to maintain performance and availability. When incoming traffic spikes, ASGs launch new instances; when demand subsides, they terminate unneeded instances.
 
-![The image illustrates the concept of EC2 Autoscaling, showing a group of computing resources that can scale up or down in response to demand, connected to a user interface.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869000/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/ec2-autoscaling-computing-resources-diagram.jpg)
+![The image illustrates the concept of EC2 Autoscaling, showing a group of computing resources that can scale up or down in response to demand, connected to a user interface.](https://kodekloud.com/kk-media/image/upload/v1752869000/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/ec2-autoscaling-computing-resources-diagram.jpg)
 
 ## Key Features
 
@@ -31,7 +31,7 @@ AWS Auto Scaling Groups automatically add or remove EC2 instances to maintain pe
 * **Auto Healing** to replace unhealthy instances
 * Seamless integration with Elastic Load Balancing and CloudWatch
 
-![The image outlines features of autoscaling, highlighting "Scaling Policy" with options for manual, dynamic, and scheduled scaling, and "Auto Healing."](../../../../images/kodekloud.com/kk-media/image/upload/v1752869001/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/autoscaling-features-scaling-policy-diagram.jpg)
+![The image outlines features of autoscaling, highlighting "Scaling Policy" with options for manual, dynamic, and scheduled scaling, and "Auto Healing."](https://kodekloud.com/kk-media/image/upload/v1752869001/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/autoscaling-features-scaling-policy-diagram.jpg)
 
 ## Fixed Limit (Manual) Scaling
 
@@ -41,13 +41,13 @@ Specify **minimum**, **desired**, and **maximum** capacity for your ASG. The gro
 2. Launches up to the desired count.
 3. Never exceeds the maximum.
 
-![The image illustrates three scenarios of autoscaling with manual fixed limits, showing different configurations of minimum, desired, and maximum values for scaling. Each scenario includes icons representing scaling operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869003/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/autoscaling-manual-limits-scenarios.jpg)
+![The image illustrates three scenarios of autoscaling with manual fixed limits, showing different configurations of minimum, desired, and maximum values for scaling. Each scenario includes icons representing scaling operations.](https://kodekloud.com/kk-media/image/upload/v1752869003/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/autoscaling-manual-limits-scenarios.jpg)
 
 ## Auto Healing
 
 Auto Healing leverages health checks to detect failed instances. When an instance is marked unhealthy, ASG terminates and replaces it to preserve capacity.
 
-![The image illustrates an autoscaling group with auto-recovery, showing a desired number of instances and a mechanism for managing them. It includes icons representing scaling and recovery processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869005/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/autoscaling-group-auto-recovery-diagram.jpg)
+![The image illustrates an autoscaling group with auto-recovery, showing a desired number of instances and a mechanism for managing them. It includes icons representing scaling and recovery processes.](https://kodekloud.com/kk-media/image/upload/v1752869005/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/autoscaling-group-auto-recovery-diagram.jpg)
 
 ## Dynamic Scaling Policies
 
@@ -59,7 +59,7 @@ Dynamic scaling adapts in real time to workload fluctuations. ASGs support three
 | Simple Scaling      | Triggered by one CloudWatch alarm          | S3 ObjectCount        |
 | Step Scaling        | Multi-tier adjustments based on thresholds | ≥70% adds 2 instances |
 
-![The image illustrates an autoscaling dynamic scaling policy with three types: Target Tracking Scaling, Step Scaling, and Simple Scaling.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869005/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/autoscaling-dynamic-scaling-policy-diagram.jpg)
+![The image illustrates an autoscaling dynamic scaling policy with three types: Target Tracking Scaling, Step Scaling, and Simple Scaling.](https://kodekloud.com/kk-media/image/upload/v1752869005/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/autoscaling-dynamic-scaling-policy-diagram.jpg)
 
 > **lightbulb** You can monitor default metrics like CPU, network in/out, or Application Load Balancer request count. For custom metrics, publish them to CloudWatch first.
 
@@ -67,19 +67,19 @@ Dynamic scaling adapts in real time to workload fluctuations. ASGs support three
 
 Automatically keeps a metric at your target value. For instance, set a 50% average CPU utilization across two instances. If utilization exceeds 50% for five minutes, ASG adds an instance; if it falls below, it removes one.
 
-![The image illustrates "Target Tracking Scaling" with five microchip icons, each partially filled with green, and a central icon representing scaling options. The text indicates minimum, desired, and maximum values for scaling.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869007/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/target-tracking-scaling-microchips-diagram.jpg)
+![The image illustrates "Target Tracking Scaling" with five microchip icons, each partially filled with green, and a central icon representing scaling options. The text indicates minimum, desired, and maximum values for scaling.](https://kodekloud.com/kk-media/image/upload/v1752869007/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/target-tracking-scaling-microchips-diagram.jpg)
 
 ### Simple Scaling
 
 Uses a pair of CloudWatch alarms—one for scale-out and one for scale-in. When an alarm triggers, ASG adjusts capacity by a fixed number or to a specific size.
 
-![The image illustrates a simple scaling concept with CPU icons, a cloud monitoring symbol, and a bar graph indicating EC2 CPU utilization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869008/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/scaling-concept-cpu-cloud-ec2-utilization.jpg)
+![The image illustrates a simple scaling concept with CPU icons, a cloud monitoring symbol, and a bar graph indicating EC2 CPU utilization.](https://kodekloud.com/kk-media/image/upload/v1752869008/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/scaling-concept-cpu-cloud-ec2-utilization.jpg)
 
 ### Step Scaling
 
 Allows tiered responses to metric breaches. Define thresholds and corresponding adjustments (e.g., >60% CPU adds 1 instance, >90% adds 3).
 
-![The image illustrates a step scaling process for EC2 CPU utilization, showing a series of CPU icons connected to a monitoring and scaling system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869009/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/ec2-cpu-utilization-scaling-process.jpg)
+![The image illustrates a step scaling process for EC2 CPU utilization, showing a series of CPU icons connected to a monitoring and scaling system.](https://kodekloud.com/kk-media/image/upload/v1752869009/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/ec2-cpu-utilization-scaling-process.jpg)
 
 > **triangle-alert** Ensure your CloudWatch alarms have sufficient evaluation periods to prevent flapping (rapid scale up/down).
 
@@ -87,7 +87,7 @@ Allows tiered responses to metric breaches. Define thresholds and corresponding 
 
 Plan capacity around predictable load patterns. For example, increase desired capacity from 10 a.m. to 8 p.m. and schedule scale-down afterward. Scheduled actions support one-time or recurring [cron expressions](https://docs.aws.amazon.com/autoscaling/ec2/userguide/schedule_time.html#schedule-cron).
 
-![The image illustrates how scheduled autoscaling works for a website, showing different scaling parameters for two time periods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869010/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/scheduled-autoscaling-website-illustration.jpg)
+![The image illustrates how scheduled autoscaling works for a website, showing different scaling parameters for two time periods.](https://kodekloud.com/kk-media/image/upload/v1752869010/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-Autoscaling-Group/scheduled-autoscaling-website-illustration.jpg)
 
 ## Launch Templates
 

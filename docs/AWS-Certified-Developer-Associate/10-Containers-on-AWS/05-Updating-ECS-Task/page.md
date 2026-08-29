@@ -37,7 +37,7 @@ During the update:
 * Initially, you might have one task running the old version and three tasks running the new version.
 * Once the new tasks are verified as healthy, the remaining old task is terminated and replaced by a new version.
 
-![The image illustrates an ECS updating task process, showing a transition from version 1 (v1) to version 2 (v2) with a minimum of 25% and a maximum of 100% tasks updated, out of a total of 4 tasks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858603/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task/ecs-task-update-v1-v2.jpg)
+![The image illustrates an ECS updating task process, showing a transition from version 1 (v1) to version 2 (v2) with a minimum of 25% and a maximum of 100% tasks updated, out of a total of 4 tasks.](https://kodekloud.com/kk-media/image/upload/v1752858603/notes-assets/images/AWS-Certified-Developer-Associate-Updating-ECS-Task/ecs-task-update-v1-v2.jpg)
 
 ***
 

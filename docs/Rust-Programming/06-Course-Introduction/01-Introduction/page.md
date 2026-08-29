@@ -78,14 +78,8 @@ In the final module, you will have the chance to apply everything you’ve learn
 
 What makes this course stand out is the thriving community at KodeKloud. Join our passionate forums where you can connect with fellow learners, seek help, and share your achievements as you progress.
 
-<Frame>
-  ![KodeKloud DevOps Community Map](../../../../images/kodekloud.com/kk-media/image/upload/v1752883856/notes-assets/images/Rust-Programming-Introduction/kodekloud-devops-community-map.jpg)
-</Frame>
+![KodeKloud DevOps Community Map](https://kodekloud.com/kk-media/image/upload/v1752883856/notes-assets/images/Rust-Programming-Introduction/kodekloud-devops-community-map.jpg)
 
-<Callout icon="lightbulb">
-  Community is at the heart of the learning experience. Engage with other Rust enthusiasts and gain insights by participating in our forums and discussions.
-</Callout>
+> **lightbulb** Community is at the heart of the learning experience. Engage with other Rust enthusiasts and gain insights by participating in our forums and discussions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/db7ede8b-f965-4beb-8e4f-d7e932329f74/lesson/13de2383-6a6a-4d14-b2bd-dd178bbf285d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/db7ede8b-f965-4beb-8e4f-d7e932329f74/lesson/13de2383-6a6a-4d14-b2bd-dd178bbf285d)

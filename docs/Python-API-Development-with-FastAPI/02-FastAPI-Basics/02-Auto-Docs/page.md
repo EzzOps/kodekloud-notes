@@ -8,17 +8,13 @@ FastAPI is renowned for its built-in support for automatic API documentation. Th
 
 When you build your API, simply navigate to `/docs` in your browser to access interactive documentation powered by Swagger UI. If you prefer a different interface, FastAPI also offers documentation via Redoc—allowing you to choose the interface that best suits your needs without any extra configuration.
 
-<Callout icon="lightbulb">
-  FastAPI automatically generates and updates documentation based on your path operations, ensuring that your documentation is always in sync with your API implementation.
-</Callout>
+> **lightbulb** FastAPI automatically generates and updates documentation based on your path operations, ensuring that your documentation is always in sync with your API implementation.
 
 ## Managing Posts with HTTP Methods
 
 The diagram below illustrates the HTTP methods available for managing posts:
 
-<Frame>
-  ![The image shows a FastAPI Swagger UI interface displaying various HTTP methods (GET, POST, PUT, DELETE) for managing posts, along with their respective endpoints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883433/notes-assets/images/Python-API-Development-with-FastAPI-Auto-Docs/fastapi-swagger-http-methods-posts.jpg)
-</Frame>
+![The image shows a FastAPI Swagger UI interface displaying various HTTP methods (GET, POST, PUT, DELETE) for managing posts, along with their respective endpoints.](https://kodekloud.com/kk-media/image/upload/v1752883433/notes-assets/images/Python-API-Development-with-FastAPI-Auto-Docs/fastapi-swagger-http-methods-posts.jpg)
 
 Common operations include:
 
@@ -133,9 +129,7 @@ date: Sat, 21 Aug 2021 23:32:46 GMT
 server: uvicorn
 ```
 
-<Callout icon="lightbulb">
-  FastAPI's interactive documentation via Swagger UI or Redoc allows you to experiment with API endpoints without requiring external tools like Postman.
-</Callout>
+> **lightbulb** FastAPI's interactive documentation via Swagger UI or Redoc allows you to experiment with API endpoints without requiring external tools like Postman.
 
 ## Dynamic Documentation Updates
 
@@ -149,6 +143,4 @@ Explore FastAPI's automatic documentation feature to streamline the process of A
 * [Swagger UI](https://swagger.io/tools/swagger-ui/)
 * [Redoc](https://github.com/Redocly/redoc)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/c66aba83-bf8a-415b-86ab-5de77f1c73d3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/c66aba83-bf8a-415b-86ab-5de77f1c73d3)

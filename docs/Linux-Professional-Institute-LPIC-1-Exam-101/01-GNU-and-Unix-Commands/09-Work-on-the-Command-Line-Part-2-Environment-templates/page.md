@@ -30,9 +30,7 @@ Please don’t run CPU-intensive processes between 8 am and 10 pm.
 
 Save and exit. Every future user will see this notice in their home directory.
 
-<Callout icon="lightbulb">
-  Files in `/etc/skel` are only applied when a home directory is created (e.g., via `useradd -m`). Existing users are unaffected.
-</Callout>
+> **lightbulb** Files in `/etc/skel` are only applied when a home directory is created (e.g., via `useradd -m`). Existing users are unaffected.
 
 ## 2. Testing with a New User
 

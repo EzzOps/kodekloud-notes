@@ -26,9 +26,7 @@ To provide further support, Dave offers a training session on how to prevent sim
 
 Bob, feeling reassured by the support, agrees, "Okay. Let's do that now." He expresses his gratitude for Dave's guidance.
 
-<Callout icon="lightbulb">
-  This incident underscores the importance of proper file permissions and account management in preventing inadvertent security breaches. Adhering to industry best practices can reduce risks significantly.
-</Callout>
+> **lightbulb** This incident underscores the importance of proper file permissions and account management in preventing inadvertent security breaches. Adhering to industry best practices can reduce risks significantly.
 
 ***
 
@@ -48,6 +46,4 @@ In the following sections, we will delve deeper into the technical implementatio
 
 By understanding and applying these security measures, teams can effectively prevent similar incidents, ensuring a more secure and resilient infrastructure.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/5a51319c-0877-45c2-a0dd-514f65f2ecb5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/5a51319c-0877-45c2-a0dd-514f65f2ecb5)

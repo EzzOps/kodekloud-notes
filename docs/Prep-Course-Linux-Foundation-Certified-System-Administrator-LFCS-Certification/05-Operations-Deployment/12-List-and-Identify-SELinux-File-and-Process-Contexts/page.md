@@ -6,13 +6,9 @@ This article explains how SELinux applies security contexts to files and process
 
 In this lesson, we explore how SELinux applies security contexts to both files and processes. Traditional Linux access controls such as file permissions and directory settings are often too coarse to handle sophisticated cyber threats. Although these basic permissions allow read, write, or execute actions, they typically do not enforce fine-grained restrictions. SELinux bridges this gap by introducing advanced security contexts that enable highly granular access control.
 
-<Callout icon="lightbulb">
-  SELinux is enabled by default on Red Hat-based operating systems, whereas it requires manual configuration on Ubuntu. We will discuss Ubuntu SELinux configuration in a future lesson.
-</Callout>
+> **lightbulb** SELinux is enabled by default on Red Hat-based operating systems, whereas it requires manual configuration on Ubuntu. We will discuss Ubuntu SELinux configuration in a future lesson.
 
-<Frame>
-  ![The image shows a graphic of SELinux with a Linux penguin icon, stating it is enabled by default on Red Hat OS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881345/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-List-and-Identify-SELinux-File-and-Process-Contexts/selinux-redhat-default-enabled-graphic.jpg)
-</Frame>
+![The image shows a graphic of SELinux with a Linux penguin icon, stating it is enabled by default on Red Hat OS.](https://kodekloud.com/kk-media/image/upload/v1752881345/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-List-and-Identify-SELinux-File-and-Process-Contexts/selinux-redhat-default-enabled-graphic.jpg)
 
 ## How SELinux Works at a High Level
 
@@ -113,10 +109,6 @@ Enforcing
 
 If the output is "Enforcing," SELinux is actively blocking unauthorized actions. If the output shows "Permissive," SELinux logs actions that would be denied but does not block them. A status of "Disabled" indicates that SELinux is currently inactive.
 
-<Callout icon="lightbulb">
-  In summary, SELinux uses multi-layered security contexts—composed of user, role, type, and level—to enforce strict access controls on both files and processes. Even if a process is compromised, these stringent policies confine it to a safe security domain, significantly reducing potential system damage.
-</Callout>
+> **lightbulb** In summary, SELinux uses multi-layered security contexts—composed of user, role, type, and level—to enforce strict access controls on both files and processes. Even if a process is compromised, these stringent policies confine it to a safe security domain, significantly reducing potential system damage.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/7a8d974f-fbdb-4962-989d-2e7bb511bd1f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/7a8d974f-fbdb-4962-989d-2e7bb511bd1f)

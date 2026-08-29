@@ -51,9 +51,7 @@ Let's look at another example that demonstrates how mutable objects like lists b
 
 Since `nums` is a mutable object, the change made inside the function affects the original list. This example reinforces the fact that mutable objects are passed by reference, and modifications within a function impact the original data.
 
-<Callout icon="lightbulb">
-  Understanding the distinction between mutable and immutable data types is essential for writing predictable and bug-free code. Always consider whether a function should alter the original object or work with a copy to avoid unintended side effects.
-</Callout>
+> **lightbulb** Understanding the distinction between mutable and immutable data types is essential for writing predictable and bug-free code. Always consider whether a function should alter the original object or work with a copy to avoid unintended side effects.
 
 ## Summary
 
@@ -62,6 +60,4 @@ Since `nums` is a mutable object, the change made inside the function affects th
 
 That’s all for this article, and I’ll see you in the next one!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/e169dc83-5d71-40ac-8437-4f500246efe6/lesson/d768c65f-6d6b-4bd2-b8b8-8adbdd648e02" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/e169dc83-5d71-40ac-8437-4f500246efe6/lesson/d768c65f-6d6b-4bd2-b8b8-8adbdd648e02)

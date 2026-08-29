@@ -35,13 +35,9 @@ You need a **Personal Access Token (PAT)** with `repo` scope to allow Terraform 
 2. Click **Generate new token**, select **repo** scope, then **Generate token**.
 3. Copy the token now—you won’t be able to see it again.
 
-<Frame>
-  ![The image shows a GitHub settings page for personal access tokens, displaying generated tokens with options to delete or generate new ones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878900/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/github-settings-personal-access-tokens.jpg)
-</Frame>
+![The image shows a GitHub settings page for personal access tokens, displaying generated tokens with options to delete or generate new ones.](https://kodekloud.com/kk-media/image/upload/v1752878900/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-to-GitHub/github-settings-personal-access-tokens.jpg)
 
-<Callout icon="triangle-alert">
-  Keep your PAT secure. Do not commit it to any repository or share it publicly.
-</Callout>
+> **triangle-alert** Keep your PAT secure. Do not commit it to any repository or share it publicly.
 
 ***
 

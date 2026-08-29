@@ -61,13 +61,11 @@ The Sensors UI page also shows an empty state until sensors are created. The vis
   <img alt="A browser screenshot of the Argo Events &#x22;Sensors&#x22; page displaying a &#x22;No sensors&#x22; message and explanatory text, with a &#x22;+ CREATE NEW SENSOR&#x22; button at the top. The UI shows a left icon sidebar and the page title &#x22;argo-events&#x22; in the header." />
 </Frame>
 
-<Callout icon="lightbulb">
-  If the controller pod remains in ContainerCreating or enters CrashLoopBackOff, inspect the pod events and logs with:
+> **lightbulb** If the controller pod remains in ContainerCreating or enters CrashLoopBackOff, inspect the pod events and logs with:
 
   * `kubectl -n argo-events describe pod <pod-name>`
   * `kubectl -n argo-events logs <pod-name>`
     These commands help identify scheduling, image pull, or runtime errors.
-</Callout>
 
 ## Common resources created by the install
 
@@ -101,9 +99,7 @@ The Sensors UI page also shows an empty state until sensors are created. The vis
 * Argo Workflows (project): [https://argoproj.github.io/argo-workflows/](https://argoproj.github.io/argo-workflows/)
 * Kubernetes documentation: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/8deb0625-970f-4706-a9bb-95f3a15a5590" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/8deb0625-970f-4706-a9bb-95f3a15a5590)
 
 
 # Event Bus
@@ -126,9 +122,7 @@ See the official Argo Events documentation for the CRD reference and the NATS do
 * [Argo Events — EventBus CRD](https://argoproj.github.io/argo-events/)
 * [NATS Documentation (JetStream & STAN)](https://nats.io/)
 
-<Callout icon="lightbulb">
-  Argo Events supports two general EventBus deployment modes: a managed (native) mode where Argo Events installs and manages a NATS cluster for you, and an external mode where Argo Events connects to an existing NATS/JetStream cluster you already operate.
-</Callout>
+> **lightbulb** Argo Events supports two general EventBus deployment modes: a managed (native) mode where Argo Events installs and manages a NATS cluster for you, and an external mode where Argo Events connects to an existing NATS/JetStream cluster you already operate.
 
 ## What the EventBus spec configures
 
@@ -180,9 +174,7 @@ Notes:
 * Running at least three replicas is a common high-availability pattern for production clusters.
 * Persistence (disk-backed storage) prevents message loss if NATS instances restart; in-memory-only clusters can lose messages on crash/restart.
 
-<Callout icon="lightbulb">
-  Always enable persistence and select an appropriate storageClass and size for production. If you plan to use JetStream, persistent storage is required to meet durability guarantees.
-</Callout>
+> **lightbulb** Always enable persistence and select an appropriate storageClass and size for production. If you plan to use JetStream, persistent storage is required to meet durability guarantees.
 
 ### External / existing cluster example
 
@@ -246,6 +238,4 @@ Notes:
 
 This covers the key concepts and configuration choices when setting up the EventBus in Argo Events. Adjust the example fields above to match the exact EventBus CRD for the Argo Events release you are running.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/219faf14-5ff0-4a36-b705-ef6956d8019d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/219faf14-5ff0-4a36-b705-ef6956d8019d)

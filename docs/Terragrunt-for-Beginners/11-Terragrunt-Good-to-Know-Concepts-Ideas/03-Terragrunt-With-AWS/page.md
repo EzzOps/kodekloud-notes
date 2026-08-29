@@ -58,9 +58,7 @@ remote_state {
 }
 ```
 
-<Callout icon="lightbulb">
-  Enabling `encrypt = true` ensures that state files are encrypted at rest. DynamoDB locking prevents concurrent state mutations.
-</Callout>
+> **lightbulb** Enabling `encrypt = true` ensures that state files are encrypted at rest. DynamoDB locking prevents concurrent state mutations.
 
 ***
 
@@ -146,9 +144,7 @@ Adopt a modular layout and separate environments for scalable, maintainable Terr
 * **AWS Well-Architected Framework**\
   Follow [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/) for security, performance, and cost optimization.
 
-<Callout icon="triangle-alert">
-  Avoid committing sensitive credentials to version control. Use AWS IAM roles, environment variables, or [Secrets Manager](https://aws.amazon.com/secrets-manager/) instead.
-</Callout>
+> **triangle-alert** Avoid committing sensitive credentials to version control. Use AWS IAM roles, environment variables, or [Secrets Manager](https://aws.amazon.com/secrets-manager/) instead.
 
 ***
 
@@ -159,6 +155,4 @@ Adopt a modular layout and separate environments for scalable, maintainable Terr
 * [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
 * [DynamoDB State Locking](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/c2ee1192-4547-4149-82dc-d7e2940cb844/lesson/d1d8ffe3-5aaa-450f-a343-30867f62eb1a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/c2ee1192-4547-4149-82dc-d7e2940cb844/lesson/d1d8ffe3-5aaa-450f-a343-30867f62eb1a)

@@ -40,7 +40,7 @@ Access tiers are crucial for optimizing storage costs based on data access frequ
 
 The table below summarizes the differences among these access tiers:
 
-![The image is a table comparing different storage access tiers, detailing data storage cost, retrieval cost, storage duration, and use cases for each tier.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867101/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/storage-access-tiers-comparison-table.jpg)
+![The image is a table comparing different storage access tiers, detailing data storage cost, retrieval cost, storage duration, and use cases for each tier.](https://kodekloud.com/kk-media/image/upload/v1752867101/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/storage-access-tiers-comparison-table.jpg)
 
 > **lightbulb** * At the storage account level, you can only set the hot or cool tier.
   * The archive tier is configurable at the blob level.
@@ -53,7 +53,7 @@ Additionally, you can automate tier transitions using lifecycle management polic
 
 Immutable storage is essential for scenarios where compliance or business-critical data must adhere to a Write Once, Read Many (WORM) model. For example, regulations might require data retention for five years under strict policies. Once data is written, immutable storage ensures that it cannot be modified or deleted until the retention period expires. This is achieved by enforcing container-level policies that cover all blobs within the container.
 
-![The image outlines the requirements for Azure blob immutable storage, showing a timeline from 1-year to older data, with container-level policies and audit logs applied. It includes a visual representation of data retention and deletion.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867103/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/azure-blob-immutable-storage-requirements.jpg)
+![The image outlines the requirements for Azure blob immutable storage, showing a timeline from 1-year to older data, with container-level policies and audit logs applied. It includes a visual representation of data retention and deletion.](https://kodekloud.com/kk-media/image/upload/v1752867103/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/azure-blob-immutable-storage-requirements.jpg)
 
 Two types of immutability policies can be applied:
 
@@ -65,7 +65,7 @@ Two types of immutability policies can be applied:
 
 In both cases, read operations remain permitted. The diagram below illustrates that while reads are allowed, writes and deletes are blocked under these policies:
 
-![The image illustrates the requirements for Azure blob immutable storage, comparing time-based retention policies and legal holds, both of which allow reads but prohibit writes and deletes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867104/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/azure-blob-immutable-storage-requirements-2.jpg)
+![The image illustrates the requirements for Azure blob immutable storage, comparing time-based retention policies and legal holds, both of which allow reads but prohibit writes and deletes.](https://kodekloud.com/kk-media/image/upload/v1752867104/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/azure-blob-immutable-storage-requirements-2.jpg)
 
 ***
 
@@ -76,37 +76,37 @@ Follow the steps below to configure immutable storage policies directly through 
 1. **Creating a Storage Account:**\
    Begin by navigating to the Storage Accounts section and create a new storage account. Provide a unique name, select the standard performance tier, and choose Locally-redundant Storage (LRS).
 
-![The image shows a Microsoft Azure portal interface for creating a storage account, with options for selecting subscription, resource group, and redundancy settings. Various redundancy options like Locally-redundant storage (LRS) and Geo-redundant storage (GRS) are displayed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867105/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/azure-portal-storage-account-setup.jpg)
+![The image shows a Microsoft Azure portal interface for creating a storage account, with options for selecting subscription, resource group, and redundancy settings. Various redundancy options like Locally-redundant storage (LRS) and Geo-redundant storage (GRS) are displayed.](https://kodekloud.com/kk-media/image/upload/v1752867105/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/azure-portal-storage-account-setup.jpg)
 
 2. **Advanced Options:**\
    In the advanced settings, select an access tier. Remember, only hot and cool tiers are available at the account level.
 
-![The image shows a Microsoft Azure portal interface for creating a storage account, specifically on the "Advanced" tab, with options for enabling hierarchical namespace, blob storage settings, and access tier selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867106/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/azure-portal-storage-account-advanced.jpg)
+![The image shows a Microsoft Azure portal interface for creating a storage account, specifically on the "Advanced" tab, with options for enabling hierarchical namespace, blob storage settings, and access tier selection.](https://kodekloud.com/kk-media/image/upload/v1752867106/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/azure-portal-storage-account-advanced.jpg)
 
 3. **Enabling Version-Level Immutability:**\
    Switch to the Data Protection tab and enable "Enable version-level immutability support." This configuration allows you to set a default time-based retention policy at the account level for all blobs. Note that this option must be enabled during the initial creation of the account. If not enabled, you will need to configure immutability at the container level or for individual blob versions later.
 
-![The image shows a Microsoft Azure portal page for creating a storage account, specifically on the "Encryption" tab, where options for encryption type and customer-managed keys are being configured.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867107/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/azure-portal-storage-account-encryption.jpg)
+![The image shows a Microsoft Azure portal page for creating a storage account, specifically on the "Encryption" tab, where options for encryption type and customer-managed keys are being configured.](https://kodekloud.com/kk-media/image/upload/v1752867107/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/azure-portal-storage-account-encryption.jpg)
 
 4. **Verifying Immutable Settings Post-Creation:**\
    After creating the storage account, inspect the Data Protection settings. In accounts without initial version-level immutability enabled, the option will be grayed out. In such cases, immutable policies can still be added at the container level.
 
-![The image shows a Microsoft Azure portal interface focused on data protection settings for a storage account named "eventstorage010." Options for enabling soft delete for blobs and containers are visible, along with other data management and access control settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867108/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/azure-portal-data-protection-settings.jpg)
+![The image shows a Microsoft Azure portal interface focused on data protection settings for a storage account named "eventstorage010." Options for enabling soft delete for blobs and containers are visible, along with other data management and access control settings.](https://kodekloud.com/kk-media/image/upload/v1752867108/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/azure-portal-data-protection-settings.jpg)
 
 5. **Configuring Container-Level Policies:**\
    Create a new container (for example, "random") and set its access policy to add either a time-based retention policy or a legal hold. For a time-based retention policy, you might specify a duration of 365 days. You can also define whether this policy applies only to append blobs.
 
-![The image shows a Microsoft Azure portal interface displaying storage account details, specifically the "eventstorage010" account with its containers, "\$logs" and "random," both marked as private.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867111/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/azure-portal-eventstorage010-details.jpg)
+![The image shows a Microsoft Azure portal interface displaying storage account details, specifically the "eventstorage010" account with its containers, "\$logs" and "random," both marked as private.](https://kodekloud.com/kk-media/image/upload/v1752867111/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/azure-portal-eventstorage010-details.jpg)
 
 6. **Managing Immutable Policy on a Newly Created Storage Account:**\
    For storage accounts with immutability support enabled during creation, navigate to the Data Protection section and select "Manage Policy." Here, set a default account-level retention period (e.g., 365 days). Keep in mind that while time-based retention can be managed at the account level, legal holds must be applied at the container level.
 
-![The image shows a Microsoft Azure portal interface focused on managing data protection settings for a storage account named "immutablesa01." It includes options for enabling soft delete, versioning for blobs, and adding an immutability policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867112/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/azure-portal-data-protection-settings-2.jpg)
+![The image shows a Microsoft Azure portal interface focused on managing data protection settings for a storage account named "immutablesa01." It includes options for enabling soft delete, versioning for blobs, and adding an immutability policy.](https://kodekloud.com/kk-media/image/upload/v1752867112/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/azure-portal-data-protection-settings-2.jpg)
 
 7. **Testing the Immutable Policy:**\
    To verify that the immutable policy is in effect, create a container (for example, "so random"), upload a file, and inspect its version details. The version ID will show the active immutability policy with a retention end date (e.g., until 1.8.2024, given a 365-day policy set on January 8, 2023). Any attempt to delete the blob will result in an error message indicating that the blob is immutable.
 
-![The image shows a Microsoft Azure portal interface displaying a storage account named "immutablesa01" with containers listed, including "\$logs" and "random," both marked as private. A context menu is open with options like "Access policy" and "Generate SAS."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867113/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/azure-portal-storage-account-immutablesa01.jpg)
+![The image shows a Microsoft Azure portal interface displaying a storage account named "immutablesa01" with containers listed, including "\$logs" and "random," both marked as private. A context menu is open with options like "Access policy" and "Generate SAS."](https://kodekloud.com/kk-media/image/upload/v1752867113/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Blob-Storage/azure-portal-storage-account-immutablesa01.jpg)
 
 ***
 

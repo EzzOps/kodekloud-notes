@@ -14,9 +14,7 @@ In hybrid identity scenarios, where users are synchronized from on-premises dire
 
 During the Azure AD Connect setup, you'll encounter a dedicated checkbox that allows you to activate seamless SSO. This option is designed exclusively for hybrid identities, ensuring that users can utilize their existing on-premises credentials to sign into Azure AD, cloud-based applications, and even on-premises applications—all without the need to repeatedly input their login information.
 
-<Callout icon="lightbulb">
-  Activating seamless SSO is a critical step in simplifying the login experience for hybrid environments. Ensure that you review your authentication method settings—whether you're using PTA or password hash synchronization—during the Azure AD Connect setup.
-</Callout>
+> **lightbulb** Activating seamless SSO is a critical step in simplifying the login experience for hybrid environments. Ensure that you review your authentication method settings—whether you're using PTA or password hash synchronization—during the Azure AD Connect setup.
 
 ## Key Benefits of Seamless SSO
 
@@ -34,6 +32,4 @@ This article has explored the seamless SSO option supported by both Pass-Through
 
 For more in-depth information, be sure to check out related documentation on [Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-custom) and [Hybrid Identity](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/ec3dd1c7-a3f1-4d9a-ae3c-59b398091a52/lesson/6e05cfcc-ca7d-4461-a153-23c99cb12791" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/ec3dd1c7-a3f1-4d9a-ae3c-59b398091a52/lesson/6e05cfcc-ca7d-4461-a153-23c99cb12791)

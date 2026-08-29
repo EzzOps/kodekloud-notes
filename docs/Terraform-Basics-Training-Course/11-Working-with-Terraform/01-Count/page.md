@@ -29,9 +29,7 @@ After successfully creating the S3 bucket, the next step is to upload a file. We
 * The content (or reference to the file), and
 * The key, which is the file name.
 
-<Callout icon="lightbulb">
-  If you want to upload the actual contents of a file instead of a literal string, use the `file()` function. For example, replace the content argument with `content = file("/root/finance/finance-2020.doc")` to correctly read the file's contents.
-</Callout>
+> **lightbulb** If you want to upload the actual contents of a file instead of a literal string, use the `file()` function. For example, replace the content argument with `content = file("/root/finance/finance-2020.doc")` to correctly read the file's contents.
 
 Below is an example configuration for uploading a file to your bucket:
 
@@ -49,9 +47,7 @@ After updating your Terraform configuration, run `terraform apply` to upload the
 
 To grant access to members of an IAM entity named "finance-analysts", we must attach a bucket policy to the S3 bucket. Note that IAM groups cannot be directly used as principals in S3 bucket policies. Instead, you should use individual IAM users or roles. In this example, we retrieve IAM group details using a data source.
 
-<Callout icon="triangle-alert">
-  IAM groups are not valid principals in S3 bucket policies. To grant access to a group's members, ensure you reference the ARNs of individual IAM users or roles.
-</Callout>
+> **triangle-alert** IAM groups are not valid principals in S3 bucket policies. To grant access to a group's members, ensure you reference the ARNs of individual IAM users or roles.
 
 The following data source fetches the details of the IAM group "finance-analysts":
 
@@ -129,11 +125,9 @@ In this article, we demonstrated how to:
 
 With these steps, you can now efficiently manage S3 resources in your AWS environment using Terraform. For more detailed documentation on Terraform and AWS integration, consider reviewing additional resources like the [Terraform AWS Provider Documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs) and [AWS S3 Documentation](https://aws.amazon.com/s3/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/8102451c-8a2e-4add-99f4-34d552c04a8d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/8102451c-8a2e-4add-99f4-34d552c04a8d)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/2c63e33a-7462-4659-a0d1-0dc6559e9e41" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/2c63e33a-7462-4659-a0d1-0dc6559e9e41)
 
 
 # Count

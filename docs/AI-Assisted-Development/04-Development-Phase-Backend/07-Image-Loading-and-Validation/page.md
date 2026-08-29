@@ -189,7 +189,7 @@ This article discusses implementing image loading and validation in a web applic
 
 In our last lesson, we successfully launched our application. Although it needed refinement, we were able to upload an image, compress it, and return the processed image as expected. The following slide from the presentation summarizes our progress:
 
-![The image is a presentation slide with the text "Image loading and validation" and "Demo" on a light and dark background. It includes a copyright notice for KodeKloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857055/notes-assets/images/AI-Assisted-Development-Image-Loading-and-Validation/image-loading-validation-demo-slide.jpg)
+![The image is a presentation slide with the text "Image loading and validation" and "Demo" on a light and dark background. It includes a copyright notice for KodeKloud.](https://kodekloud.com/kk-media/image/upload/v1752857055/notes-assets/images/AI-Assisted-Development-Image-Loading-and-Validation/image-loading-validation-demo-slide.jpg)
 
 Below is the initial version of the upload function that enabled image processing:
 

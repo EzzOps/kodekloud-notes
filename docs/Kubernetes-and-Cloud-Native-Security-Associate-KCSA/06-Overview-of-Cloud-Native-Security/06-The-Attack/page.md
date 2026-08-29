@@ -25,9 +25,7 @@ In this demo, we’ll walk through a real-world breach scenario targeting Kubern
 
 It’s the final day of the election between cats and dogs. Voters submit ballots at **[www.vote.com](http://www.vote.com)**, and live results appear at **[www.result.com](http://www.result.com)**. Currently, dogs lead 71% to 29%:
 
-<Frame>
-  ![The image shows a poll result with 29% for cats and 71% for dogs. The background is split into blue and teal sections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880867/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-The-Attack/poll-results-cats-dogs-chart.jpg)
-</Frame>
+![The image shows a poll result with 29% for cats and 71% for dogs. The background is split into blue and teal sections.](https://kodekloud.com/kk-media/image/upload/v1752880867/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-The-Attack/poll-results-cats-dogs-chart.jpg)
 
 A disgruntled user (“cat girl”) only knows these domains—nothing about the underlying stack. She embarks on a black-box attack, discovering:
 
@@ -69,9 +67,7 @@ zsh port-scan.sh 104.21.63.124
 | 3306  | MySQL         | Closed |                                     |
 | 30080 | N/A           | Closed | (discovered later via iptables NAT) |
 
-<Callout icon="triangle-alert">
-  An exposed Docker daemon on port `2375` allows unauthenticated remote commands. Always secure Docker API with TLS and authentication.
-</Callout>
+> **triangle-alert** An exposed Docker daemon on port `2375` allows unauthenticated remote commands. Always secure Docker API with TLS and authentication.
 
 ***
 
@@ -110,9 +106,7 @@ chmod +x dirty-cow.sh
 
 The exploit grants root access on the host.
 
-<Callout icon="lightbulb">
-  Dirty COW is a Linux kernel privilege escalation vulnerability (CVE-2016-5195). Always keep kernels patched and restrict `--privileged` container usage.
-</Callout>
+> **lightbulb** Dirty COW is a Linux kernel privilege escalation vulnerability (CVE-2016-5195). Always keep kernels patched and restrict `--privileged` container usage.
 
 ***
 
@@ -129,19 +123,13 @@ The `k8s_` prefixes reveal a Kubernetes cluster. By examining `iptables` NAT rul
 
 Visiting `http://104.21.63.124:30080` shows an unsecured dashboard:
 
-<Frame>
-  ![The image shows a Kubernetes dashboard displaying information about two nodes, "worker" and "master," including their labels, readiness status, CPU and memory usage, and creation date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880869/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-The-Attack/kubernetes-dashboard-nodes-info.jpg)
-</Frame>
+![The image shows a Kubernetes dashboard displaying information about two nodes, "worker" and "master," including their labels, readiness status, CPU and memory usage, and creation date.](https://kodekloud.com/kk-media/image/upload/v1752880869/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-The-Attack/kubernetes-dashboard-nodes-info.jpg)
 
 Under **Deployments**, all services—`db`, `redis`, `vote`, `result`, `worker`—are visible:
 
-<Frame>
-  ![The image shows a Kubernetes dashboard with a list of deployments, including "db," "redis," "result," "vote," and "worker." On the right, there is a diagram with Docker and Kubernetes logos, and URLs for "www.vote.com" and "www.result.com."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880870/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-The-Attack/kubernetes-dashboard-deployments-diagram.jpg)
-</Frame>
+![The image shows a Kubernetes dashboard with a list of deployments, including "db," "redis," "result," "vote," and "worker." On the right, there is a diagram with Docker and Kubernetes logos, and URLs for "www.vote.com" and "www.result.com."](https://kodekloud.com/kk-media/image/upload/v1752880870/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-The-Attack/kubernetes-dashboard-deployments-diagram.jpg)
 
-<Callout icon="triangle-alert">
-  An unauthenticated Kubernetes Dashboard exposes cluster control. Always enforce RBAC, authentication, and network policies.
-</Callout>
+> **triangle-alert** An unauthenticated Kubernetes Dashboard exposes cluster control. Always enforce RBAC, authentication, and network policies.
 
 ***
 
@@ -157,9 +145,7 @@ psql --username=$POSTGRES_USER --dbname=$POSTGRES_DB
 
 A quick check of running pods in the dashboard confirms all services are live:
 
-<Frame>
-  ![The image shows a Kubernetes dashboard displaying a list of running pods with details such as name, namespace, labels, node, status, restarts, and creation time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880871/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-The-Attack/kubernetes-dashboard-running-pods.jpg)
-</Frame>
+![The image shows a Kubernetes dashboard displaying a list of running pods with details such as name, namespace, labels, node, status, restarts, and creation time.](https://kodekloud.com/kk-media/image/upload/v1752880871/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-The-Attack/kubernetes-dashboard-running-pods.jpg)
 
 ***
 
@@ -199,6 +185,4 @@ The election results are now reversed.
 * [Kubernetes Dashboard Security](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
 * [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/a0ddd095-0114-4aa4-b3a5-2b31e773f241/lesson/318a7443-f76c-4991-a20d-431ae21b2ef3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/a0ddd095-0114-4aa4-b3a5-2b31e773f241/lesson/318a7443-f76c-4991-a20d-431ae21b2ef3)

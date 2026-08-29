@@ -39,13 +39,9 @@ Think of VMs as separate houses—each with their own infrastructure—whereas c
 | Storage               | Uses block storage with its own file system                             | Supports ephemeral storage or persistent storage via volumes                                          |
 | Fault Tolerance       | Achieved through replication, failover clustering, or availability sets | Utilizes orchestration tools (e.g., [Kubernetes](https://kubernetes.io/docs/)) for automatic recovery |
 
-<Frame>
-  ![The image compares virtual machines and containers, illustrating their architecture layers, including applications, libraries, guest OS, hypervisor, container runtime, host OS, and server. It highlights key features like isolation, deployment, storage, and fault tolerance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884744/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Container-Instances/vm-vs-containers-architecture-comparison.jpg)
-</Frame>
+![The image compares virtual machines and containers, illustrating their architecture layers, including applications, libraries, guest OS, hypervisor, container runtime, host OS, and server. It highlights key features like isolation, deployment, storage, and fault tolerance.](https://kodekloud.com/kk-media/image/upload/v1752884744/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Container-Instances/vm-vs-containers-architecture-comparison.jpg)
 
-<Callout icon="lightbulb">
-  Containers provide faster startup times and efficient resource usage, which makes them ideal for dynamic scaling and microservices architectures compared to traditional VMs.
-</Callout>
+> **lightbulb** Containers provide faster startup times and efficient resource usage, which makes them ideal for dynamic scaling and microservices architectures compared to traditional VMs.
 
 ## Azure Container Instances Overview
 
@@ -66,9 +62,7 @@ Key advantages of ACI include:
 * **Multi-OS Support:**\
   Depending on your container image, ACI supports both Windows and Linux containers.
 
-<Frame>
-  ![The image illustrates the features and network setup of Azure Container Instances, highlighting benefits like faster startup, scalability, and isolation, alongside a diagram showing a container host within a virtual network.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884745/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Container-Instances/azure-container-instances-network-setup.jpg)
-</Frame>
+![The image illustrates the features and network setup of Azure Container Instances, highlighting benefits like faster startup, scalability, and isolation, alongside a diagram showing a container host within a virtual network.](https://kodekloud.com/kk-media/image/upload/v1752884745/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Container-Instances/azure-container-instances-network-setup.jpg)
 
 ## Deploying a Container Instance in Azure
 
@@ -88,18 +82,14 @@ Follow these steps to deploy a container instance using the Azure Portal:
 4. **Set Container Sizing and Advanced Options:**\
    Determine the container size and configure additional settings, like enabling GPU support if necessary.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a container instance, with fields for subscription, resource group, container details, and image selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884747/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Container-Instances/azure-portal-container-instance-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a container instance, with fields for subscription, resource group, container details, and image selection.](https://kodekloud.com/kk-media/image/upload/v1752884747/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Container-Instances/azure-portal-container-instance-creation.jpg)
 
 5. **Configure Networking Options:**
    * Decide on the networking type (public, private, or none).
    * Optionally set a DNS label and specify open port numbers.
    * Adjust the container restart policy based on your requirements.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a container instance, specifically on the "Networking" tab, where options for networking type, DNS name label, and port settings are being configured.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884748/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Container-Instances/azure-portal-container-networking.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a container instance, specifically on the "Networking" tab, where options for networking type, DNS name label, and port settings are being configured.](https://kodekloud.com/kk-media/image/upload/v1752884748/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Container-Instances/azure-portal-container-networking.jpg)
 
 6. **Override Commands (Optional):**\
    If necessary, customize startup commands or scripts to run when the container launches.
@@ -110,9 +100,7 @@ Follow these steps to deploy a container instance using the Azure Portal:
 8. **Access the Container Instance:**\
    When the deployment finishes, select **Go to resource**. You'll find details of your container instance, including its public IP address for direct access. For example, visiting the NGINX welcome page confirms the container is running smoothly.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying details of a container instance named "aci-web-01," including its status, location, and resource usage metrics like CPU and memory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884749/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Container-Instances/azure-portal-aci-web-01-details.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying details of a container instance named "aci-web-01," including its status, location, and resource usage metrics like CPU and memory.](https://kodekloud.com/kk-media/image/upload/v1752884749/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Container-Instances/azure-portal-aci-web-01-details.jpg)
 
 9. **Interact with the Container:**\
    Review logs and connect to your container using the integrated terminal. For example, you can navigate directories within a running NGINX container as shown below:

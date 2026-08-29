@@ -170,9 +170,7 @@ Some tools need to perform long-running tasks. Add `long_process` to simulate a 
 
 Warning: writing arbitrary text to stdout while using the STDIO transport can corrupt the MCP message stream. Use logging or the library's streaming/event APIs for progress updates.
 
-<Callout icon="warning">
-  Avoid printing arbitrary text to stdout when using the STDIO transport — it can interfere with the MCP protocol and break communication. Use logging or FastMCP's streaming features for progress reporting.
-</Callout>
+> **warning** Avoid printing arbitrary text to stdout when using the STDIO transport — it can interfere with the MCP protocol and break communication. Use logging or FastMCP's streaming features for progress reporting.
 
 Example `long_process` that uses logging (preferred):
 
@@ -199,9 +197,7 @@ Invoke `long_process(10)` from the Inspector to see how the server performs a sh
 
 ## Transports and the Inspector
 
-<Callout icon="lightbulb">
-  STDIO is convenient for local development and tooling. FastMCP and the MCP Inspector also support other transports (for example, SSE or HTTP) when you need to expose your MCP server to other processes or to a network.
-</Callout>
+> **lightbulb** STDIO is convenient for local development and tooling. FastMCP and the MCP Inspector also support other transports (for example, SSE or HTTP) when you need to expose your MCP server to other processes or to a network.
 
 ## Adding logging
 
@@ -333,9 +329,7 @@ Example tool calls and expected outputs
 | `divide(12, 0)`    | Error with message: `[400] Division by zero is not allowed.` |
 | `long_process(10)` | `{ "result": "Process complete!" }`                          |
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/a27f1996-5412-4f48-a085-c87d68c51206/lesson/a14e7566-5dbb-42d5-8e11-d7399488cdd2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/a27f1996-5412-4f48-a085-c87d68c51206/lesson/a14e7566-5dbb-42d5-8e11-d7399488cdd2)
 
 
 # HTTP vs STDIO for Connections
@@ -346,13 +340,11 @@ Comparison of STDIO, HTTP, and SSE transports for MCP services, explaining opera
 
 In this lesson we'll compare the three MCP service transports (service types): STDIO, HTTP, and SSE. You’ll learn how each transport works, the typical data flow, and which scenarios make each the best choice—local IPC, remote APIs, or streaming outputs.
 
-<Callout icon="lightbulb">
-  Choose a transport based on locality, latency, and streaming needs:
+> **lightbulb** Choose a transport based on locality, latency, and streaming needs:
 
   * Use STDIO for simple local processes and developer workflows.
   * Use HTTP for remote, network-accessible APIs and short atomic requests.
   * Use SSE for server-to-client streaming, e.g., progressive model token delivery.
-</Callout>
 
 ## STDIO (Standard Input / Standard Output)
 

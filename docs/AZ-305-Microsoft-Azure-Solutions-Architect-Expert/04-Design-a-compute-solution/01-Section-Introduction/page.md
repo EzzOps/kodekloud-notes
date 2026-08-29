@@ -23,6 +23,6 @@ The objective is to design an architecture for Vendata that meets these requirem
 
 > **lightbulb** Below is a quick recap emphasizing the placement of load balancers for the front-end and mid-tier components.
 
-![The image is a scenario description for Vendetta Corp's deployment of a three-tier application to Azure, detailing requirements for web applications, authentication, load balancing, and SQL container management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866888/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Section-Introduction/vendetta-corp-azure-three-tier-deployment.jpg)
+![The image is a scenario description for Vendetta Corp's deployment of a three-tier application to Azure, detailing requirements for web applications, authentication, load balancing, and SQL container management.](https://kodekloud.com/kk-media/image/upload/v1752866888/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Section-Introduction/vendetta-corp-azure-three-tier-deployment.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/az-305-microsoft-azure-solutions-architect-expert/module/bf1d18e5-9589-48cf-99af-4150d985241a/lesson/9a5b9703-63bc-4342-b18a-467c03622abc)

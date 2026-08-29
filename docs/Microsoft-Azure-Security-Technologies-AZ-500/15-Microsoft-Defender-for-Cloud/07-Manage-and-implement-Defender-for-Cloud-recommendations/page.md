@@ -20,17 +20,13 @@ Every organization has its unique security needs. Defender for Cloud provides pe
 
 One of the standout features of Defender for Cloud is its Secure Score—a quantifiable metric that reflects the strength of your security posture. Each recommendation you implement adds points (e.g., three or six points) to your overall score, offering a clear, measurable way to track your progress.
 
-<Callout icon="lightbulb">
-  Monitoring your Secure Score helps you understand the impact of each security enhancement, enabling continuous improvement in your cloud security.
-</Callout>
+> **lightbulb** Monitoring your Secure Score helps you understand the impact of each security enhancement, enabling continuous improvement in your cloud security.
 
 ### Holistic Oversight
 
 Gain a 360-degree view of your cloud environment. Defender for Cloud covers everything from misconfigurations to potential breach vectors, offering a comprehensive dashboard that keeps you informed.
 
-<Frame>
-  ![The image shows a dashboard for managing and implementing security center recommendations, highlighting a secure score and resource health. It also lists benefits like proactive protection, tailored security posture, improved secure score, and holistic oversight.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882036/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-and-implement-Defender-for-Cloud-recommendations/security-center-dashboard-recommendations.jpg)
-</Frame>
+![The image shows a dashboard for managing and implementing security center recommendations, highlighting a secure score and resource health. It also lists benefits like proactive protection, tailored security posture, improved secure score, and holistic oversight.](https://kodekloud.com/kk-media/image/upload/v1752882036/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-and-implement-Defender-for-Cloud-recommendations/security-center-dashboard-recommendations.jpg)
 
 ### Future-Proofing
 
@@ -52,9 +48,7 @@ Follow these steps to access and apply recommendations directly from the Azure p
 4. **Protecting Internet-Facing Applications:**\
    For internet-facing applications, recommendations might advise the use of Network Security Groups (NSGs). For instance, the recommendation titled “All network ports should be restricted on NSGs” details how to add rules within the networking blade to block specific IP ranges.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen with a security recommendation to restrict all network ports on virtual machines. It lists affected resources with details like name, subscription, and last change date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882037/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-and-implement-Defender-for-Cloud-recommendations/azure-portal-security-recommendation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen with a security recommendation to restrict all network ports on virtual machines. It lists affected resources with details like name, subscription, and last change date.](https://kodekloud.com/kk-media/image/upload/v1752882037/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-and-implement-Defender-for-Cloud-recommendations/azure-portal-security-recommendation.jpg)
 
 If an internet connection is required, you can configure allowed IP ranges; otherwise, consider removing the public IP address to minimize exposure.
 
@@ -67,6 +61,4 @@ Once you implement the appropriate recommendations, monitor your Secure Score to
 
 By leveraging the tailored recommendations provided by Microsoft Defender for Cloud, you can ensure your cloud environment remains secure, compliant, and resilient against evolving threats.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/aea85892-224f-4bd2-8013-e36764e15f37/lesson/3bec30f2-6c75-47c4-8f38-aa5e24954a95" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/aea85892-224f-4bd2-8013-e36764e15f37/lesson/3bec30f2-6c75-47c4-8f38-aa5e24954a95)

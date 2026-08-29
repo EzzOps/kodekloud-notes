@@ -11,15 +11,11 @@ Once executed, you should observe the "demo" file or folder you created reflecte
 
 Currently, the file share is accessible over the public internet. If you require enhanced security, Azure provides several options to restrict access. Consider using Azure P2S VPN or ExpressRoute to tunnel SMB traffic through an alternative port.
 
-<Callout icon="lightbulb">
-  For improved security and compliance, always review and configure your storage account's network settings according to your organization's best practices.
-</Callout>
+> **lightbulb** For improved security and compliance, always review and configure your storage account's network settings according to your organization's best practices.
 
 This guide has demonstrated how to create an Azure File Share, mount it on your computer, and troubleshoot connectivity issues. Enjoy exploring the robust capabilities of Azure File Share and streamline your file storage solutions in the cloud!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/48d08f66-feb9-4bae-83b0-2e6aa34e24ae/lesson/b5a6ca91-86a6-46bd-8e03-f0b6ec3ccac4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/48d08f66-feb9-4bae-83b0-2e6aa34e24ae/lesson/b5a6ca91-86a6-46bd-8e03-f0b6ec3ccac4)
 
 
 # Lifecycle Management
@@ -80,15 +76,11 @@ Below is an example of a JSON lifecycle policy definition. In this example:
 
 The policy above illustrates how a blob transitions to the cool tier after 60 days, to the archive tier after 180 days, and is ultimately deleted after 365 days.
 
-<Callout icon="lightbulb">
-  You do not need to write this JSON manually. The Azure portal offers a graphical interface to create these rules without any coding. Simply navigate to your storage account, select the Lifecycle Management option, and use the list view to add and configure your rule.
-</Callout>
+> **lightbulb** You do not need to write this JSON manually. The Azure portal offers a graphical interface to create these rules without any coding. Simply navigate to your storage account, select the Lifecycle Management option, and use the list view to add and configure your rule.
 
 Returning to your storage account, select the Lifecycle Management option. Click "Add Rule" and enter a name (for example, "Policy 1"). Then you can set up filters to limit the policy to specific blob types—such as append blobs or block blobs—and even include snapshots and versions.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for adding a rule in lifecycle management. It includes options for rule name, rule scope, and blob type selections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884380/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Lifecycle-Management/azure-portal-lifecycle-management-rule.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for adding a rule in lifecycle management. It includes options for rule name, rule scope, and blob type selections.](https://kodekloud.com/kk-media/image/upload/v1752884380/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Lifecycle-Management/azure-portal-lifecycle-management-rule.jpg)
 
 After naming the rule, click "Next" to define the policy conditions. For example:
 
@@ -99,9 +91,7 @@ After naming the rule, click "Next" to define the policy conditions. For example
 
 Each condition can be added using the "Add" button. Once you have finalized these settings, the policy will be created, and you can review its JSON representation directly within the portal.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for adding a rule in lifecycle management, where users can set conditions to move blobs to cooler storage or delete them based on their last modified or created date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884381/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Lifecycle-Management/azure-lifecycle-management-rule-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for adding a rule in lifecycle management, where users can set conditions to move blobs to cooler storage or delete them based on their last modified or created date.](https://kodekloud.com/kk-media/image/upload/v1752884381/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Lifecycle-Management/azure-lifecycle-management-rule-interface.jpg)
 
 Below is another example JSON policy that demonstrates executing multiple actions within a single rule. In this scenario, besides the cool and archive transitions, there is also a transition to the cold tier:
 
@@ -143,14 +133,10 @@ Below is another example JSON policy that demonstrates executing multiple action
 
 After you create the policy, you have the flexibility to enable or disable it as needed from the portal.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal, specifically the "Lifecycle management" section of a storage account, with a policy named "policy-1" that is enabled for block blob type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884382/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Lifecycle-Management/azure-portal-lifecycle-management-policy1.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal, specifically the "Lifecycle management" section of a storage account, with a policy named "policy-1" that is enabled for block blob type.](https://kodekloud.com/kk-media/image/upload/v1752884382/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Lifecycle-Management/azure-portal-lifecycle-management-policy1.jpg)
 
 ## Azure File Share Lifecycle Management
 
 Now, let's focus on how lifecycle management applies to Azure File Share. (Content regarding Azure File Share lifecycle management continues here.)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/48d08f66-feb9-4bae-83b0-2e6aa34e24ae/lesson/7dddf5a5-609c-47a0-aea2-276dc2af440b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/48d08f66-feb9-4bae-83b0-2e6aa34e24ae/lesson/7dddf5a5-609c-47a0-aea2-276dc2af440b)

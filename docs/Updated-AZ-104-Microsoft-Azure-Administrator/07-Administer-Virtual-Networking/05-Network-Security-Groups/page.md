@@ -11,9 +11,7 @@ Azure provides two primary services for network security:
 * **Azure Firewall:** Best for centralized rule and logging management, supporting layer-seven filtering (e.g., by application or Fully Qualified Domain Name).
 * **Network Security Groups (NSGs):** Operate at layer four of the OSI model and govern inbound and outbound access to network resources such as network interfaces, subnets, and VMs. NSGs enforce rules based on IP protocol, port number, and address prefix.
 
-<Callout icon="lightbulb">
-  For complex, large-scale environments requiring centralized management, use Azure Firewall. For simpler, resource-level access control, NSGs are ideal. Both services can complement each other to deliver multiple layers of filtering.
-</Callout>
+> **lightbulb** For complex, large-scale environments requiring centralized management, use Azure Firewall. For simpler, resource-level access control, NSGs are ideal. Both services can complement each other to deliver multiple layers of filtering.
 
 ***
 
@@ -38,9 +36,7 @@ An NSG can be associated with both subnets and individual network interfaces. Th
 * Rules applied at both the subnet and NIC levels are evaluated independently.
 * Inbound or outbound traffic must be permitted at both levels to successfully reach a resource.
 
-<Frame>
-  ![The image is a diagram about Network Security Groups (NSG), showing four components: Filter Traffic, Rule Set, Evaluation, and Association, surrounding a shield icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884810/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Security-Groups/network-security-groups-diagram.jpg)
-</Frame>
+![The image is a diagram about Network Security Groups (NSG), showing four components: Filter Traffic, Rule Set, Evaluation, and Association, surrounding a shield icon.](https://kodekloud.com/kk-media/image/upload/v1752884810/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Security-Groups/network-security-groups-diagram.jpg)
 
 The diagram above illustrates that an inbound or outbound packet must be approved by both subnet and NIC NSGs before reaching its destination, thus establishing a secure perimeter around Azure resources.
 
@@ -55,9 +51,7 @@ When configuring NSG rules, you specify several attributes to control network tr
 * **Priority:** A numerical value (commonly between 100 and 4,096 for custom rules; default rules use values around 65,000) that indicates rule precedence.
 * **Action:** Determine whether traffic will be allowed or denied.
 
-<Frame>
-  ![The image is a graphic titled "Explore Network Security Groups (NSG)" featuring four colorful icons labeled Service, Priority, Port Range, and Action.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884812/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Security-Groups/explore-network-security-groups-icons.jpg)
-</Frame>
+![The image is a graphic titled "Explore Network Security Groups (NSG)" featuring four colorful icons labeled Service, Priority, Port Range, and Action.](https://kodekloud.com/kk-media/image/upload/v1752884812/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Security-Groups/explore-network-security-groups-icons.jpg)
 
 These attributes empower administrators to craft robust NSG rule sets that effectively manage network traffic and enforce security policies.
 
@@ -78,9 +72,7 @@ For outbound connections initiated from a VM:
 * Then, the subnet-level NSG evaluates it.
 * The outgoing traffic is allowed only if both NSG levels approve it.
 
-<Frame>
-  ![The image illustrates the deployment of Network Security Groups (NSG) within a subnet, showing the flow of HTTP traffic through two NSGs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884813/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Security-Groups/nsg-deployment-http-traffic-diagram.jpg)
-</Frame>
+![The image illustrates the deployment of Network Security Groups (NSG) within a subnet, showing the flow of HTTP traffic through two NSGs.](https://kodekloud.com/kk-media/image/upload/v1752884813/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Security-Groups/nsg-deployment-http-traffic-diagram.jpg)
 
 This example demonstrates how paired NSG evaluations enforce a secure environment for both inbound and outbound communications.
 
@@ -125,9 +117,7 @@ The script will create a resource group and deploy four VMs (workload-a-vm-1, wo
 
 These default settings ensure that only permitted traffic (e.g., SSH on port 22) reaches the VM.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying details of a virtual machine named "workload-a-vm-1," including its status, location, operating system, and network information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884814/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Security-Groups/azure-portal-workload-a-vm-1.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying details of a virtual machine named "workload-a-vm-1," including its status, location, operating system, and network information.](https://kodekloud.com/kk-media/image/upload/v1752884814/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Security-Groups/azure-portal-workload-a-vm-1.jpg)
 
 ### Establishing Connectivity via SSH
 
@@ -175,9 +165,7 @@ To further refine security, NSG rules can be modified to block specific traffic.
 
 Even though a default rule (priority 65,000) may allow VNet communication, a higher priority deny rule will override this behavior.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface, specifically the networking settings for a virtual machine named "workload-a-vm-1." It includes configuration details for inbound port rules, with a focus on allowing HTTP traffic from a specified IP range.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884816/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Security-Groups/azure-portal-networking-workload-a-vm-1.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface, specifically the networking settings for a virtual machine named "workload-a-vm-1." It includes configuration details for inbound port rules, with a focus on allowing HTTP traffic from a specified IP range.](https://kodekloud.com/kk-media/image/upload/v1752884816/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Security-Groups/azure-portal-networking-workload-a-vm-1.jpg)
 
 To test the modified rule:
 
@@ -193,15 +181,11 @@ kodekloud@workload-b-vm-1:~$ curl 192.168.1.4
 
 After updating the NSG rule, the connection should fail if the deny policy is correctly enforced.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal interface, specifically the networking settings for a virtual machine named "workload-a-vm-1," displaying inbound port rules and network security group details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884817/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Security-Groups/azure-portal-network-settings-workload-a-vm-1.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal interface, specifically the networking settings for a virtual machine named "workload-a-vm-1," displaying inbound port rules and network security group details.](https://kodekloud.com/kk-media/image/upload/v1752884817/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Security-Groups/azure-portal-network-settings-workload-a-vm-1.jpg)
 
 For outbound traffic, note that if an inbound rule allows traffic, the corresponding outbound connection is automatically permitted. Outbound traffic that does not match an allow rule will be blocked.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying the networking settings for a virtual machine named "workload-a-vm-1," including outbound port rules and network security group details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884818/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Security-Groups/azure-portal-network-settings-workload-a-vm-1-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying the networking settings for a virtual machine named "workload-a-vm-1," including outbound port rules and network security group details.](https://kodekloud.com/kk-media/image/upload/v1752884818/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Security-Groups/azure-portal-network-settings-workload-a-vm-1-2.jpg)
 
 ***
 
@@ -215,13 +199,9 @@ Next, create a new NSG to block SSH traffic at the subnet level, effectively ove
 
 Once associated, attempts to SSH into any VM within that subnet will be blocked at the subnet level, bypassing the NIC-level allow rule.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal page indicating that a deployment named "Microsoft.NetworkSecurityGroup-20230929123037" is complete. It includes details like the subscription, resource group, and options for further actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884819/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Security-Groups/azure-portal-deployment-complete.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal page indicating that a deployment named "Microsoft.NetworkSecurityGroup-20230929123037" is complete. It includes details like the subscription, resource group, and options for further actions.](https://kodekloud.com/kk-media/image/upload/v1752884819/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Security-Groups/azure-portal-deployment-complete.jpg)
 
-<Frame>
-  ![The image shows the Microsoft Azure portal displaying inbound security rules for a network security group. It lists rules with details such as priority, name, port, protocol, source, destination, and action (allow or deny).](../../../../images/kodekloud.com/kk-media/image/upload/v1752884820/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Security-Groups/azure-portal-inbound-security-rules.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal displaying inbound security rules for a network security group. It lists rules with details such as priority, name, port, protocol, source, destination, and action (allow or deny).](https://kodekloud.com/kk-media/image/upload/v1752884820/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Network-Security-Groups/azure-portal-inbound-security-rules.jpg)
 
 Test the new configuration by attempting to SSH into a VM from the affected subnet. You should receive a connection error (for example, “connection reset by port 22”), confirming that the NSG rule is blocking SSH traffic.
 
@@ -246,6 +226,4 @@ For more detailed guidance on Azure networking and security, refer to the follow
 * [Azure Firewall Overview](https://docs.microsoft.com/azure/firewall/overview)
 * [Microsoft Azure Security Documentation](https://docs.microsoft.com/azure/security/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/809fc274-7871-4b13-8f85-052b43442c81/lesson/d9e36647-99bc-4e75-9b04-0806991313f3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/809fc274-7871-4b13-8f85-052b43442c81/lesson/d9e36647-99bc-4e75-9b04-0806991313f3)

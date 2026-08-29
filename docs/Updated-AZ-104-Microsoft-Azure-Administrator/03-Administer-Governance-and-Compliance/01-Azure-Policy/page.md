@@ -822,6 +822,4 @@ In the next lesson,
 
 we will see how we can work with Azure initiatives.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/d4ea929f-4a17-4446-a218-1fdab0b8627f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/d4ea929f-4a17-4446-a218-1fdab0b8627f)

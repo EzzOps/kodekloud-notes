@@ -6,13 +6,9 @@ This article examines participation and communication management in the Ubuntu o
 
 In this lesson, we examine how participation and communication are managed within a large open-source ecosystem, using Ubuntu as our example. Ubuntu is one of the world’s most popular Linux distributions, driven by a mission to deliver free software to the widest audience possible. The community operates on meritocracy—contributors with proven expertise are empowered to lead.
 
-<Callout icon="lightbulb">
-  Ubuntu’s meritocratic model prioritizes decision-making by those with demonstrated skills and contributions.
-</Callout>
+> **lightbulb** Ubuntu’s meritocratic model prioritizes decision-making by those with demonstrated skills and contributions.
 
-<Frame>
-  ![The image features a sequence of icons including the Ubuntu logo, a medal, and a group of people, with the text "Best Equipped" below. It appears to be part of a case study on communication in Ubuntu.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882557/notes-assets/images/Open-Source-for-Beginners-Case-Study-Ubuntu-Community/ubuntu-best-equipped-icons-case-study.jpg)
-</Frame>
+![The image features a sequence of icons including the Ubuntu logo, a medal, and a group of people, with the text "Best Equipped" below. It appears to be part of a case study on communication in Ubuntu.](https://kodekloud.com/kk-media/image/upload/v1752882557/notes-assets/images/Open-Source-for-Beginners-Case-Study-Ubuntu-Community/ubuntu-best-equipped-icons-case-study.jpg)
 
 ## Participation Channels
 
@@ -27,9 +23,7 @@ The Ubuntu community offers several engagement points. Each channel serves a dis
 | IRC Channels         | Real-time chat rooms for immediate support and ad-hoc collaboration on specialized topics.                      |
 | Public Forums        | Subscription-free forums that help new users discover resources and stay informed about Ubuntu project updates. |
 
-<Frame>
-  ![The image features the "Ask Ubuntu" logo with the text "for technical answers" above it, set against a dark background with Ubuntu-themed icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882557/notes-assets/images/Open-Source-for-Beginners-Case-Study-Ubuntu-Community/ask-ubuntu-logo-technical-answers.jpg)
-</Frame>
+![The image features the "Ask Ubuntu" logo with the text "for technical answers" above it, set against a dark background with Ubuntu-themed icons.](https://kodekloud.com/kk-media/image/upload/v1752882557/notes-assets/images/Open-Source-for-Beginners-Case-Study-Ubuntu-Community/ask-ubuntu-logo-technical-answers.jpg)
 
 ## Key Takeaways
 
@@ -39,16 +33,12 @@ The Ubuntu community offers several engagement points. Each channel serves a dis
 2. **Persist if Needed**\
    Both forum discussions and Ask Ubuntu Q\&A remain available indefinitely. This long-term visibility ensures that future users can find solutions to similar problems.
 
-<Frame>
-  ![The image is a slide titled "Persist if Needed" featuring the "Ask Ubuntu" logo, with a sidebar showing a highlighted step labeled "2."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882558/notes-assets/images/Open-Source-for-Beginners-Case-Study-Ubuntu-Community/persist-if-needed-ask-ubuntu-slide.jpg)
-</Frame>
+![The image is a slide titled "Persist if Needed" featuring the "Ask Ubuntu" logo, with a sidebar showing a highlighted step labeled "2."](https://kodekloud.com/kk-media/image/upload/v1752882558/notes-assets/images/Open-Source-for-Beginners-Case-Study-Ubuntu-Community/persist-if-needed-ask-ubuntu-slide.jpg)
 
 3. **Make It Easy to Discover**\
    Publicly accessible channels boost discoverability. At the same time, deciding which discussions should be open versus restricted helps maintain security and relevance.
 
-<Frame>
-  ![The image is a slide titled "Make it Easy to Discover," featuring icons of speech bubbles, an unlocked padlock, and a warning symbol. It is part of a case study on communication in Ubuntu by KodeKloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882559/notes-assets/images/Open-Source-for-Beginners-Case-Study-Ubuntu-Community/make-it-easy-to-discover-icons.jpg)
-</Frame>
+![The image is a slide titled "Make it Easy to Discover," featuring icons of speech bubbles, an unlocked padlock, and a warning symbol. It is part of a case study on communication in Ubuntu by KodeKloud.](https://kodekloud.com/kk-media/image/upload/v1752882559/notes-assets/images/Open-Source-for-Beginners-Case-Study-Ubuntu-Community/make-it-easy-to-discover-icons.jpg)
 
 As your own project community grows, incorporate additional best practices from Ubuntu and other open-source ecosystems to foster effective communication and collaboration.
 
@@ -60,6 +50,4 @@ As your own project community grows, incorporate additional best practices from 
 * [Ubuntu Mailing Lists](https://lists.ubuntu.com/)
 * [Ubuntu IRC Channels](https://ubuntu.com/support/community/irc)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/767d06e2-2c02-403c-aa37-6e4a5549e6a6/lesson/58f424ff-c27a-4112-9eee-834ef2593eff" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/767d06e2-2c02-403c-aa37-6e4a5549e6a6/lesson/58f424ff-c27a-4112-9eee-834ef2593eff)

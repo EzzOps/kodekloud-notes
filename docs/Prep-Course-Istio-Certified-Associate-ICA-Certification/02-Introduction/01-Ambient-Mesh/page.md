@@ -42,9 +42,7 @@ Key points:
 * Use the operator to manage profiles, component enablement, and resource sizing.
 * Keep your `IstioOperator` or Helm values in source control for reproducibility (ideal for GitOps).
 
-<Callout icon="warning">
-  The Istio Operator and revision-based installation workflow are frequently covered in [certification exams](https://learn.kodekloud.com/user/courses/istio-certified-associate). Be comfortable with configuring via IstioOperator, updating values, and applying changes with `istioctl` or Helm.
-</Callout>
+> **warning** The Istio Operator and revision-based installation workflow are frequently covered in [certification exams](https://learn.kodekloud.com/user/courses/istio-certified-associate). Be comfortable with configuring via IstioOperator, updating values, and applying changes with `istioctl` or Helm.
 
 ## Canary (revision) upgrades for the Istio control plane
 
@@ -108,9 +106,7 @@ Checklist during canary upgrades:
 * [GitOps with Argo CD](https://learn.kodekloud.com/user/courses/gitops-with-argocd)
 * [Istio Certified Associate course (exam prep)](https://learn.kodekloud.com/user/courses/istio-certified-associate)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/09d3bcf7-365a-4c37-b6e5-f38d8f003f01" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/09d3bcf7-365a-4c37-b6e5-f38d8f003f01)
 
 
 # Ambient Mesh
@@ -132,9 +128,7 @@ Core components
 * ztunnel — a Rust-based transparent proxy deployed as a DaemonSet (one per node). It intercepts inbound and outbound traffic for the node’s workloads and provides mTLS, authentication/authorization checks, and telemetry for pod traffic on that node.
 * Waypoint — an Envoy-based proxy deployed as a standalone pod in a namespace when Layer 7 features are required. It handles application-layer routing and policies without being injected as a per-pod sidecar.
 
-<Callout icon="lightbulb">
-  ztunnel is a Rust-based transparent proxy running as a DaemonSet (one per node). Waypoint is an Envoy-based proxy deployed as a pod (per-namespace) when L7 features are required.
-</Callout>
+> **lightbulb** ztunnel is a Rust-based transparent proxy running as a DaemonSet (one per node). Waypoint is an Envoy-based proxy deployed as a pod (per-namespace) when L7 features are required.
 
 Layer responsibilities
 
@@ -183,9 +177,7 @@ spec:
           weight: 95
 ```
 
-<Callout icon="lightbulb">
-  The Gateway API approach differs from Istio’s sidecar-based VirtualService and DestinationRule model. For the Prep Course - Istio Certified Associate (ICA) Certification, installing Ambient mode and labeling namespaces is the primary requirement — in-depth Gateway API and Waypoint configuration is outside the exam scope. For current feature details and roadmap, see the Istio Ambient Mesh docs.
-</Callout>
+> **lightbulb** The Gateway API approach differs from Istio’s sidecar-based VirtualService and DestinationRule model. For the Prep Course - Istio Certified Associate (ICA) Certification, installing Ambient mode and labeling namespaces is the primary requirement — in-depth Gateway API and Waypoint configuration is outside the exam scope. For current feature details and roadmap, see the Istio Ambient Mesh docs.
 
 Architecture overview
 
@@ -225,6 +217,4 @@ Ambient Mesh offers a compelling, sidecar-less alternative to traditional Istio 
 
 Following this introduction, you will find a summary and hands-on configuration and installation tasks to practice Ambient mode setup and namespace labeling.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/da4579eb-7769-4ab9-a0e8-b81f70a12978/lesson/2a577a51-a17d-4e29-a47d-87b4b4e2e46d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/da4579eb-7769-4ab9-a0e8-b81f70a12978/lesson/2a577a51-a17d-4e29-a47d-87b4b4e2e46d)

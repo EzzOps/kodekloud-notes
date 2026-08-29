@@ -89,9 +89,7 @@ on main.tf line 1:
 Resource local_file.my-pet has lifecycle.prevent_destroy set, but the plan calls for this resource to be destroyed. To avoid this error and continue with the plan, either disable lifecycle.prevent_destroy or reduce the scope of the plan using the -target flag.
 ```
 
-<Callout icon="triangle-alert">
-  Even with `prevent_destroy` enabled, running `terraform destroy` explicitly will still remove the resource. This rule only prevents destruction triggered by configuration changes.
-</Callout>
+> **triangle-alert** Even with `prevent_destroy` enabled, running `terraform destroy` explicitly will still remove the resource. This rule only prevents destruction triggered by configuration changes.
 
 ### The ignore\_changes Rule
 
@@ -191,15 +189,11 @@ In this article, we reviewed three key lifecycle rules in Terraform:
 
 Now, put these lifecycle rules into practice in your Terraform configurations for better resource management and more predictable infrastructure deployments.
 
-<Frame>
-  ![The image is a table listing three options for resource management: "create\_before\_destroy," "prevent\_destroy," and "ignore\_changes," each with a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884247/notes-assets/images/Terraform-Basics-Training-Course-LifeCycle-Rules/frame_340.jpg)
-</Frame>
+![The image is a table listing three options for resource management: "create\_before\_destroy," "prevent\_destroy," and "ignore\_changes," each with a brief description.](https://kodekloud.com/kk-media/image/upload/v1752884247/notes-assets/images/Terraform-Basics-Training-Course-LifeCycle-Rules/frame_340.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/cb4518bb-3a35-4aa1-9232-a70ead9587a7" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/cb4518bb-3a35-4aa1-9232-a70ead9587a7)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/c3a7a9c5-5763-4c1e-a25a-d724473e0c1b" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/c3a7a9c5-5763-4c1e-a25a-d724473e0c1b)
 
 
 # Meta Arguments
@@ -254,9 +248,7 @@ $ ls -ltr /root/
 -rw-r--r-- 1 root root 0 Sep  9 02:04 pet3
 ```
 
-<Callout icon="lightbulb">
-  While Terraform does not directly support loop constructs within a resource block like traditional shell scripts, its meta-arguments provide mechanisms to achieve equivalent outcomes.
-</Callout>
+> **lightbulb** While Terraform does not directly support loop constructs within a resource block like traditional shell scripts, its meta-arguments provide mechanisms to achieve equivalent outcomes.
 
 ## Utilizing Meta-Arguments
 
@@ -312,6 +304,4 @@ In the upcoming sections, we will explore additional meta-arguments in Terraform
 
 By understanding and utilizing meta-arguments, you can significantly enhance your Terraform configurations, making them both robust and flexible. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/b1a20b38-be8b-43d5-95e4-4d23d8ca2c34" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/b1a20b38-be8b-43d5-95e4-4d23d8ca2c34)

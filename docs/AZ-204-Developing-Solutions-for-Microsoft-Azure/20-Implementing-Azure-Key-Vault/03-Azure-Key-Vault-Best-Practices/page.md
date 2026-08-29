@@ -30,7 +30,7 @@ Activating detailed logging and configuring alerts are vital steps in monitoring
 
 Azure Key Vault supports robust recovery options through features such as soft delete and purge protection. Soft delete allows you to recover items even after deletion, while purge protection prevents permanent deletion until these safeguards are explicitly removed. These features are critical for protecting your secrets against both accidental and malicious deletion.
 
-![The image outlines best practices for Azure Key Vault, including using separate key vaults, controlling access, ensuring backup, logging, and having recovery options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866635/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Key-Vault-Best-Practices/azure-key-vault-best-practices.jpg)
+![The image outlines best practices for Azure Key Vault, including using separate key vaults, controlling access, ensuring backup, logging, and having recovery options.](https://kodekloud.com/kk-media/image/upload/v1752866635/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Key-Vault-Best-Practices/azure-key-vault-best-practices.jpg)
 
 ## Next Steps: Enhancing Authentication
 

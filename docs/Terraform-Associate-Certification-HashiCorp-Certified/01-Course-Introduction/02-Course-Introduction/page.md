@@ -6,19 +6,13 @@ This guide covers fundamental concepts and skills for the HashiCorp Certified Te
 
 Welcome to the HashiCorp Certified Terraform Associate Preparation article. In this guide, you'll learn the fundamental concepts and practical skills needed to succeed in the Terraform Associate exam.
 
-<Frame>
-  ![The image shows a HashiCorp Certified Terraform Associate badge, with the KodeKloud logo, indicating certification in Terraform skills.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884101/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Course-Introduction/frame_10.jpg)
-</Frame>
+![The image shows a HashiCorp Certified Terraform Associate badge, with the KodeKloud logo, indicating certification in Terraform skills.](https://kodekloud.com/kk-media/image/upload/v1752884101/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Course-Introduction/frame_10.jpg)
 
 My name is Vijin Palazhi, and I'll be your instructor throughout this article.
 
-<Callout icon="lightbulb">
-  The HashiCorp Certified Terraform Associate Certification is an associate-level exam focused on infrastructure automation using Terraform. Although a basic understanding of on-premises and cloud architecture is useful, it is not mandatory. If you are new to cloud concepts or Terraform, I highly recommend starting with the [Lab - Terraform for Beginners](https://learn.kodekloud.com/user/courses/lab-terraform-for-beginners) course. This beginner-friendly course offers hands-on labs, demos, and an introductory overview of AWS, making it easier to grasp the examples and sample code used throughout this article.
-</Callout>
+> **lightbulb** The HashiCorp Certified Terraform Associate Certification is an associate-level exam focused on infrastructure automation using Terraform. Although a basic understanding of on-premises and cloud architecture is useful, it is not mandatory. If you are new to cloud concepts or Terraform, I highly recommend starting with the [Lab - Terraform for Beginners](https://learn.kodekloud.com/user/courses/lab-terraform-for-beginners) course. This beginner-friendly course offers hands-on labs, demos, and an introductory overview of AWS, making it easier to grasp the examples and sample code used throughout this article.
 
-<Frame>
-  ![The image depicts a digital illustration of a network infrastructure with cubes, labeled "Prerequisites" and "Terraform for Beginners."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884102/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Course-Introduction/frame_60.jpg)
-</Frame>
+![The image depicts a digital illustration of a network infrastructure with cubes, labeled "Prerequisites" and "Terraform for Beginners."](https://kodekloud.com/kk-media/image/upload/v1752884102/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Course-Introduction/frame_60.jpg)
 
 If you're already comfortable with these prerequisites, feel free to skip the introductory section and dive directly into the content.
 
@@ -35,14 +29,10 @@ The content in this article is tailored to match the objectives of the HashiCorp
 * **Terraform Modules:** Discover why modules are essential, learn how to integrate modules from the Terraform Registry, and create your own modules complete with input and output variables.
 * **Terraform Cloud:** Explore how Terraform Cloud supports collaborative infrastructure management, including account setup, organization and workspace creation, integration with version control systems, governance plans, and an overview of policy-as-code frameworks.
 
-<Frame>
-  ![The image lists objectives related to Terraform, including IaC concepts, providers, variables, state, configuration, CLI, modules, and cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884103/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Course-Introduction/frame_200.jpg)
-</Frame>
+![The image lists objectives related to Terraform, including IaC concepts, providers, variables, state, configuration, CLI, modules, and cloud.](https://kodekloud.com/kk-media/image/upload/v1752884103/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Course-Introduction/frame_200.jpg)
 
 Each section of this guide is accompanied by multiple-choice quizzes to test your knowledge and solidify your understanding. These quizzes are graded, and you'll receive instant feedback on any incorrect answers. Please note that the quiz interface here might differ from the actual exam layout.
 
 That concludes our introductory overview of the course. I'm excited to embark on this learning journey with you—let's dive in and explore the first lecture!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/0e080ff2-cfef-475c-bf5c-b66fcd80ed45/lesson/13e69d6b-b3a2-4700-b4b2-c9b1dd3c3560" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/0e080ff2-cfef-475c-bf5c-b66fcd80ed45/lesson/13e69d6b-b3a2-4700-b4b2-c9b1dd3c3560)

@@ -6,9 +6,7 @@ This lesson covers building a code quality pipeline in Jenkins using a GitHub ac
 
 In this lesson, we will build our pipelines starting with the code quality pipeline. Both the code quality and release pipelines require a GitHub access token. This token is essential for avoiding GitHub’s rate limits when accessing public repositories and is necessary for publishing tags and releases in the release pipeline.
 
-<Callout icon="lightbulb">
-  Using an access token when accessing GitHub repositories via a public URL ensures that you avoid accidental rate limiting.
-</Callout>
+> **lightbulb** Using an access token when accessing GitHub repositories via a public URL ensures that you avoid accidental rate limiting.
 
 ## Generating a GitHub Access Token
 
@@ -20,13 +18,9 @@ To generate an access token:
 4. Provide a name (e.g., "Jenkins") and select the required scopes (for instance, the "repo" scope for full control over private repositories).
 5. Generate the token and copy it.
 
-<Frame>
-  ![The image shows a GitHub repository page for a project named "course-jenkins-project," displaying a list of files and folders along with commit details. The repository is public and includes information about branches, tags, and contributors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879824/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/github-repo-course-jenkins-project.jpg)
-</Frame>
+![The image shows a GitHub repository page for a project named "course-jenkins-project," displaying a list of files and folders along with commit details. The repository is public and includes information about branches, tags, and contributors.](https://kodekloud.com/kk-media/image/upload/v1752879824/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/github-repo-course-jenkins-project.jpg)
 
-<Frame>
-  ![The image shows a GitHub settings page for creating a new personal access token, with options to select various scopes for access permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879825/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/github-settings-personal-access-token.jpg)
-</Frame>
+![The image shows a GitHub settings page for creating a new personal access token, with options to select various scopes for access permissions.](https://kodekloud.com/kk-media/image/upload/v1752879825/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/github-settings-personal-access-token.jpg)
 
 ## Adding GitHub Credentials in Jenkins
 
@@ -37,15 +31,11 @@ After copying your token, switch to Jenkins and perform the following steps:
 3. Use a placeholder username (e.g., "Jenkins") and paste your access token as the password.
 4. Assign an ID, such as "GitHub-access-token," then save the credential.
 
-<Frame>
-  ![The image shows a Jenkins interface where new credentials are being added, including fields for username, password, and ID. The "Create" button is visible at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879825/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/jenkins-add-credentials-interface.jpg)
-</Frame>
+![The image shows a Jenkins interface where new credentials are being added, including fields for username, password, and ID. The "Create" button is visible at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752879825/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/jenkins-add-credentials-interface.jpg)
 
 Once saved, return to the Jenkins main dashboard.
 
-<Frame>
-  ![The image shows a Jenkins interface displaying a list of global credentials, including IDs, names, kinds, and descriptions for various secret texts, SSH keys, and usernames with passwords.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879826/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/jenkins-global-credentials-list.jpg)
-</Frame>
+![The image shows a Jenkins interface displaying a list of global credentials, including IDs, names, kinds, and descriptions for various secret texts, SSH keys, and usernames with passwords.](https://kodekloud.com/kk-media/image/upload/v1752879826/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/jenkins-global-credentials-list.jpg)
 
 ## Organizing Your Pipelines
 
@@ -55,9 +45,7 @@ To keep your pipelines organized:
 2. Name it "Final Project" and choose the **Folder** type.
 3. Optionally assign a display name, then click **Save**.
 
-<Frame>
-  ![The image shows a Jenkins interface where a user is creating a new item named "Final Project." Various project types like Freestyle, Pipeline, and Multibranch Pipeline are listed as options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879827/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/jenkins-new-item-final-project.jpg)
-</Frame>
+![The image shows a Jenkins interface where a user is creating a new item named "Final Project." Various project types like Freestyle, Pipeline, and Multibranch Pipeline are listed as options.](https://kodekloud.com/kk-media/image/upload/v1752879827/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/jenkins-new-item-final-project.jpg)
 
 Within the "Final Project" folder, create a new pipeline:
 
@@ -75,17 +63,11 @@ In the **Branch Sources** configuration:
 * Set the script path to "Jenkinsfile - code quality".
 * Choose a periodic scan interval (e.g., every two minutes for demonstration purposes) and save your configuration.
 
-<Frame>
-  ![The image shows a configuration page for a project in Jenkins, specifically focusing on the "Branch Sources" section where GitHub credentials are being selected from a dropdown menu.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879828/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/jenkins-branch-sources-github-config.jpg)
-</Frame>
+![The image shows a configuration page for a project in Jenkins, specifically focusing on the "Branch Sources" section where GitHub credentials are being selected from a dropdown menu.](https://kodekloud.com/kk-media/image/upload/v1752879828/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/jenkins-branch-sources-github-config.jpg)
 
-<Frame>
-  ![The image shows a configuration screen for a code quality tool, with options for discovering branches and pull requests. A dropdown menu is open, displaying branch discovery strategies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879829/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/code-quality-tool-configuration-dropdown.jpg)
-</Frame>
+![The image shows a configuration screen for a code quality tool, with options for discovering branches and pull requests. A dropdown menu is open, displaying branch discovery strategies.](https://kodekloud.com/kk-media/image/upload/v1752879829/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/code-quality-tool-configuration-dropdown.jpg)
 
-<Frame>
-  ![The image shows a Jenkins configuration page for a project, detailing settings for multibranch pipeline triggers and orphaned item strategy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879830/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/jenkins-multibranch-pipeline-config.jpg)
-</Frame>
+![The image shows a Jenkins configuration page for a project, detailing settings for multibranch pipeline triggers and orphaned item strategy.](https://kodekloud.com/kk-media/image/upload/v1752879830/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/jenkins-multibranch-pipeline-config.jpg)
 
 After saving, Jenkins will scan your repository. The scan log should indicate that the main branch has been processed. For example, you might see output resembling the following in the scan log:
 
@@ -188,9 +170,7 @@ To ensure that the code quality pipeline does not run on pushes to the main bran
 1. Modify the branch source configuration to include a name filter with wildcards.
 2. Add an exclude filter for the main branch, then save the configuration.
 
-<Frame>
-  ![The image shows a Jenkins interface displaying a "Scan Repository Log" for a project, indicating successful branch indexing. The log details the process of checking branches and pull requests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879831/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/jenkins-scan-repository-log-success.jpg)
-</Frame>
+![The image shows a Jenkins interface displaying a "Scan Repository Log" for a project, indicating successful branch indexing. The log details the process of checking branches and pull requests.](https://kodekloud.com/kk-media/image/upload/v1752879831/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/jenkins-scan-repository-log-success.jpg)
 
 After pushing new commits to the main branch, Jenkins will no longer trigger a build for that branch in the code quality pipeline. You can verify this exclusion via the Jenkins UI.
 
@@ -214,9 +194,7 @@ To demonstrate how pull requests trigger the pipeline:
 
 Once the new branch is detected by Jenkins, a new build entry will appear under the "Final Project/Code-Quality" folder. You can open the build’s console output to inspect environment variables, such as the branch name now set to "feature-one."
 
-<Frame>
-  ![The image shows a Jenkins dashboard for a project named "feature1," displaying build information and permalinks for recent builds. A dropdown menu is open, showing various build and pipeline options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879832/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/jenkins-dashboard-feature1-build-info.jpg)
-</Frame>
+![The image shows a Jenkins dashboard for a project named "feature1," displaying build information and permalinks for recent builds. A dropdown menu is open, showing various build and pipeline options.](https://kodekloud.com/kk-media/image/upload/v1752879832/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/jenkins-dashboard-feature1-build-info.jpg)
 
 The console output will display values for variables like WORKSPACE, JOB\_NAME, and GIT\_COMMIT. For example:
 
@@ -251,9 +229,7 @@ test_app.py ...      [100%]
 
 When the new feature branch is ready, create a pull request from the feature branch to the main branch. The Jenkins multibranch pipeline will then detect the pull request and build it accordingly.
 
-<Frame>
-  ![The image shows a GitHub repository page for a project named "course-jenkins-project," displaying files, branches, and recent commits. It includes options for code management and a notification about recent pushes to a branch.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879833/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/github-repo-course-jenkins-project-2.jpg)
-</Frame>
+![The image shows a GitHub repository page for a project named "course-jenkins-project," displaying files, branches, and recent commits. It includes options for code management and a notification about recent pushes to a branch.](https://kodekloud.com/kk-media/image/upload/v1752879833/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/github-repo-course-jenkins-project-2.jpg)
 
 After creating the pull request, Jenkins will generate a build. In the build’s console output, you will notice environment variables such as `CHANGE_BRANCH` (indicating the feature branch), `CHANGE_TARGET` (showing "main"), and `CHANGE_ID` (the pull request number):
 
@@ -282,19 +258,13 @@ PR: 31
 
 After a successful test run, GitHub is notified of the build result.
 
-<Frame>
-  ![The image shows a Jenkins console output with various environment variables and URLs related to a project build. It includes details like job name, workspace path, and GitHub repository links.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879835/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/jenkins-console-output-environment-variables.jpg)
-</Frame>
+![The image shows a Jenkins console output with various environment variables and URLs related to a project build. It includes details like job name, workspace path, and GitHub repository links.](https://kodekloud.com/kk-media/image/upload/v1752879835/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/jenkins-console-output-environment-variables.jpg)
 
 Once the pull request is reviewed and merged into the main branch, no build is triggered in the code quality pipeline due to the exclusion. The release pipeline will handle main branch integrations instead.
 
-<Frame>
-  ![The image shows a GitHub pull request page for a project named "course-jenkins-project." The pull request is open, with all checks passed and no conflicts with the base branch.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879836/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/github-pull-request-course-jenkins.jpg)
-</Frame>
+![The image shows a GitHub pull request page for a project named "course-jenkins-project." The pull request is open, with all checks passed and no conflicts with the base branch.](https://kodekloud.com/kk-media/image/upload/v1752879836/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/github-pull-request-course-jenkins.jpg)
 
-<Frame>
-  ![The image shows a GitHub pull request page where a pull request has been successfully merged and closed. There are options to add a comment and delete the branch, with various details about the pull request visible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879836/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/github-pull-request-merged.jpg)
-</Frame>
+![The image shows a GitHub pull request page where a pull request has been successfully merged and closed. There are options to add a comment and delete the branch, with various details about the pull request visible.](https://kodekloud.com/kk-media/image/upload/v1752879836/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Code-Quality-Pipeline-Demo/github-pull-request-merged.jpg)
 
 ## Next Steps
 
@@ -304,6 +274,4 @@ For more detailed documentation on Jenkins pipelines and continuous integration 
 
 Happy building!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/79ea1422-fc3a-48da-851d-232fc09690de/lesson/139ce66e-884a-42fc-b2bd-2eb1d30e0828" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/79ea1422-fc3a-48da-851d-232fc09690de/lesson/139ce66e-884a-42fc-b2bd-2eb1d30e0828)

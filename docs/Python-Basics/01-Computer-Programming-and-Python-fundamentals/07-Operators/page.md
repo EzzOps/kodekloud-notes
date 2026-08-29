@@ -10,9 +10,7 @@ When writing programs in Python, operators are essential for performing calculat
 
 Python uses the double asterisk (\*\*) as the exponentiation operator instead of superscripts. For example, to raise a number to a power:
 
-<Frame>
-  ![The image displays various arithmetic operators: Add, Subtract, Multiply, Divide, Floor Divide, Modulo, and Exponential, each represented by their respective symbols.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883517/notes-assets/images/Python-Basics-Operators/frame_10.jpg)
-</Frame>
+![The image displays various arithmetic operators: Add, Subtract, Multiply, Divide, Floor Divide, Modulo, and Exponential, each represented by their respective symbols.](https://kodekloud.com/kk-media/image/upload/v1752883517/notes-assets/images/Python-Basics-Operators/frame_10.jpg)
 
 Below are some examples demonstrating exponentiation:
 
@@ -67,9 +65,7 @@ print(6 / -4)   # -1.5
 print(6 // -4)  # -2.0
 ```
 
-<Callout icon="lightbulb">
-  Floor division always rounds down to the next lower integer. Positive results round down (e.g., 1.5 to 1.0), while negative results round further away from zero (e.g., -1.5 to -2.0).
-</Callout>
+> **lightbulb** Floor division always rounds down to the next lower integer. Positive results round down (e.g., 1.5 to 1.0), while negative results round further away from zero (e.g., -1.5 to -2.0).
 
 ### Modulo
 
@@ -89,9 +85,7 @@ print(5 % 2)    # 1
 
 In Python, the plus sign (+) functions as an addition operator and the minus sign (−) serves as a subtraction operator. These are examples of binary operators, where an operator takes two operands (one on the left and one on the right). However, the minus sign can also be a unary operator to indicate a negative number.
 
-<Frame>
-  ![The image illustrates the difference between binary and unary operators using the number 2 and the minus sign.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883518/notes-assets/images/Python-Basics-Operators/frame_180.jpg)
-</Frame>
+![The image illustrates the difference between binary and unary operators using the number 2 and the minus sign.](https://kodekloud.com/kk-media/image/upload/v1752883518/notes-assets/images/Python-Basics-Operators/frame_180.jpg)
 
 Here are some examples showcasing both usages:
 
@@ -109,9 +103,7 @@ Operator precedence determines the order in which parts of an expression are eva
 3. Multiplication, true division (/), floor division (//), and modulo (%)
 4. Addition and subtraction
 
-<Frame>
-  ![The image shows operator precedence in programming, with unary operators having the highest priority and binary operators having the lowest.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883519/notes-assets/images/Python-Basics-Operators/frame_220.jpg)
-</Frame>
+![The image shows operator precedence in programming, with unary operators having the highest priority and binary operators having the lowest.](https://kodekloud.com/kk-media/image/upload/v1752883519/notes-assets/images/Python-Basics-Operators/frame_220.jpg)
 
 For example, consider the expression:
 
@@ -137,9 +129,7 @@ print(2 * (2 + 3))  # 10
 
 In this case, (2 + 3) is evaluated first to produce 5, and then multiplied by 2 for the final result.
 
-<Callout icon="lightbulb">
-  Using parentheses can simplify complex expressions and improve readability within your code.
-</Callout>
+> **lightbulb** Using parentheses can simplify complex expressions and improve readability within your code.
 
 That’s the essence of Python arithmetic operators. With a solid understanding of these operators, you can now practice and incorporate them into your coding projects for effective computation. Happy coding!
 
@@ -149,6 +139,4 @@ That’s the essence of Python arithmetic operators. With a solid understanding 
 * [Learn Python](https://www.python.org/about/gettingstarted/)
 * [Arithmetic Operators in Python](https://realpython.com/python-operators-expressions/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/4178f96e-8dcd-46a2-a9c9-f65a8c9c73b0/lesson/6bcafad3-e93a-4997-abac-dc974d54d188" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/4178f96e-8dcd-46a2-a9c9-f65a8c9c73b0/lesson/6bcafad3-e93a-4997-abac-dc974d54d188)

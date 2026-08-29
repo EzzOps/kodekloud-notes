@@ -2,9 +2,7 @@
 # traefik   NodePort   10.xx.xx.xx     80:32080/TCP,443:32443/TCP
 ```
 
-<Callout icon="lightbulb">
-  If you change ports in `values.yaml`, ensure your firewall or cloud provider permits traffic on the new NodePorts.
-</Callout>
+> **lightbulb** If you change ports in `values.yaml`, ensure your firewall or cloud provider permits traffic on the new NodePorts.
 
 ***
 
@@ -117,11 +115,9 @@ With `logs.access.enabled: true`, each HTTP request is recorded in the logs.
 * [Helm Chart for Traefik](https://artifacthub.io/packages/helm/traefik/traefik)
 * [Traefik “whoami” Docker Image](https://hub.docker.com/r/traefik/whoami)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/19677663-2b7d-4c3d-92ee-06df9f5530eb/lesson/7318bf47-e385-467b-9f22-4ada897c41b8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/19677663-2b7d-4c3d-92ee-06df9f5530eb/lesson/7318bf47-e385-467b-9f22-4ada897c41b8)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/19677663-2b7d-4c3d-92ee-06df9f5530eb/lesson/143c0736-4ff1-4980-9c39-04c1d9977d78" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/19677663-2b7d-4c3d-92ee-06df9f5530eb/lesson/143c0736-4ff1-4980-9c39-04c1d9977d78)
 
 
 # Demo Traefik Observability

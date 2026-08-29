@@ -115,9 +115,7 @@ Timing may vary slightly due to controller scheduling and cluster load. If `time
 
 This walkthrough demonstrates how to tune ArgoCD's pull/poll frequency by updating `timeout.reconciliation` in the `argocd-cm` ConfigMap and ensuring the application controller loads the new configuration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/5818fb58-625e-49da-96e9-ea1d5ad611ba" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/5818fb58-625e-49da-96e9-ea1d5ad611ba)
 
 
 # Demo Encrypt Secrets Using Bitnami Sealed Secrets
@@ -251,9 +249,7 @@ spec:
         sealedsecrets.bitnami.com/cluster-wide: "true"
 ```
 
-<Callout icon="lightbulb">
-  Do not commit plain Secret YAML files to Git. Commit only the SealedSecret YAML so secrets remain encrypted in the repository.
-</Callout>
+> **lightbulb** Do not commit plain Secret YAML files to Git. Commit only the SealedSecret YAML so secrets remain encrypted in the repository.
 
 Step 4 — commit the SealedSecret to Git and deploy with Argo CD
 
@@ -354,8 +350,6 @@ Alternatives and further reading
 
 This concludes the demo.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/5ea48f92-ff16-413d-bd6c-825bd3e109b9" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/5ea48f92-ff16-413d-bd6c-825bd3e109b9)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/d2278d36-c266-43a8-9465-62f77bd3a4cb" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/d2278d36-c266-43a8-9465-62f77bd3a4cb)

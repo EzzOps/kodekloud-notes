@@ -50,7 +50,7 @@ Imagine your customers browse your e-commerce site from desktops, tablets, and s
 * **User Session Replay**: Inspect individual sessions to understand the exact user journey.
 * **Data-Driven Improvements**: Use RUM insights to prioritize frontend optimizations and feature rollouts.
 
-![The image is an infographic about Real-Time User Monitoring (RUM), detailing features like performance data visualization, retention and export options, and web application monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862354/notes-assets/images/AWS-CloudWatch-Real-Time-User-Monitoring-RUM/real-time-user-monitoring-infographic.jpg)
+![The image is an infographic about Real-Time User Monitoring (RUM), detailing features like performance data visualization, retention and export options, and web application monitoring.](https://kodekloud.com/kk-media/image/upload/v1752862354/notes-assets/images/AWS-CloudWatch-Real-Time-User-Monitoring-RUM/real-time-user-monitoring-infographic.jpg)
 
 ## Conclusion
 

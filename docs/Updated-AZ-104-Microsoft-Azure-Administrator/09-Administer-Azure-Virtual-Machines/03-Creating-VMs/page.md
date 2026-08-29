@@ -17,9 +17,7 @@ Before you begin, you need to specify the following details:
   * The **size** should match your application's performance and scalability requirements.
   * Configure the disk settings to choose between SSDs or HDDs, set the desired disk size, and add additional data disks if necessary.
 
-<Frame>
-  ![The image shows a guide for creating a virtual machine using a portal, highlighting the "Basics" section with details like subscription, resource group, and instance details. It includes options for disks, networking, and management settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884434/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Creating-VMs/virtual-machine-creation-guide-basics.jpg)
-</Frame>
+![The image shows a guide for creating a virtual machine using a portal, highlighting the "Basics" section with details like subscription, resource group, and instance details. It includes options for disks, networking, and management settings.](https://kodekloud.com/kk-media/image/upload/v1752884434/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Creating-VMs/virtual-machine-creation-guide-basics.jpg)
 
 ## Networking Configuration
 
@@ -39,9 +37,7 @@ The management section offers additional configurations:
 * **Microsoft Entra ID (Azure AD):** Integrate for streamlined login and identity management.
 * **Backup & Auto Shutdown:** Configure backups and scheduled shutdowns to optimize cost control, especially useful during testing.
 
-<Callout icon="lightbulb">
-  For optimal cost management, always review the auto shutdown and backup options when configuring your VM.
-</Callout>
+> **lightbulb** For optimal cost management, always review the auto shutdown and backup options when configuring your VM.
 
 ## Creating VMs Using Command-Line Tools
 
@@ -93,9 +89,7 @@ Follow these steps to deploy a VM using the Azure Portal:
    * Under the **Image** section, pick your preferred operating system (e.g., Ubuntu 22.04 for a Linux environment).
    * Click "See all sizes" in the **Size** section. Use filters (e.g., general purpose) to choose an appropriate size, such as the B1S for a cost-effective instance.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for selecting a virtual machine (VM) size, listing various VM options with details like vCPUs, RAM, and cost per hour.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884435/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Creating-VMs/azure-portal-vm-size-selection.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for selecting a virtual machine (VM) size, listing various VM options with details like vCPUs, RAM, and cost per hour.](https://kodekloud.com/kk-media/image/upload/v1752884435/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Creating-VMs/azure-portal-vm-size-selection.jpg)
 
 4. **Configure Authentication and Inbound Ports:**
    * Set the administrative credentials, choosing a robust password and username.
@@ -105,31 +99,23 @@ Follow these steps to deploy a VM using the Azure Portal:
    * In the **Disk** tab, choose the disk type (e.g., Standard SSD) and specify the disk size (e.g., 30 GB).
    * Optionally, add more data disks as needed.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a virtual machine, with options for configuring the OS disk and data disks. A notification about a saved password in Microsoft Edge is also visible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884437/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Creating-VMs/azure-portal-virtual-machine-setup.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a virtual machine, with options for configuring the OS disk and data disks. A notification about a saved password in Microsoft Edge is also visible.](https://kodekloud.com/kk-media/image/upload/v1752884437/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Creating-VMs/azure-portal-virtual-machine-setup.jpg)
 
 6. **Networking Configuration:**
    * Under the **Networking** tab, either select an existing virtual network or create a new one.
    * Configure the public IP and associate a network security group (NSG) appropriately.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a virtual machine, specifically focusing on the networking configuration options. It includes settings for virtual network, subnet, public IP, and network security group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884438/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Creating-VMs/azure-portal-virtual-machine-networking.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a virtual machine, specifically focusing on the networking configuration options. It includes settings for virtual network, subnet, public IP, and network security group.](https://kodekloud.com/kk-media/image/upload/v1752884438/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Creating-VMs/azure-portal-virtual-machine-networking.jpg)
 
 7. **Management Settings:**\
    Configure options including Defender for Cloud, managed identities, Azure AD login, auto shutdown, backup, and monitoring (alerts, diagnostics, and health monitoring).
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a virtual machine, specifically on the "Monitoring" tab, where options for configuring alerts, diagnostics, and health monitoring are available.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884440/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Creating-VMs/azure-portal-virtual-machine-monitoring.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a virtual machine, specifically on the "Monitoring" tab, where options for configuring alerts, diagnostics, and health monitoring are available.](https://kodekloud.com/kk-media/image/upload/v1752884440/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Creating-VMs/azure-portal-virtual-machine-monitoring.jpg)
 
 8. **Advanced Configuration:**\
    Use the **Advanced** tab to set up extensions for post-deployment configuration and automation.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a virtual machine, specifically on the "Advanced" tab, where users can configure extensions, VM applications, and custom data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884440/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Creating-VMs/azure-portal-virtual-machine-advanced.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a virtual machine, specifically on the "Advanced" tab, where users can configure extensions, VM applications, and custom data.](https://kodekloud.com/kk-media/image/upload/v1752884440/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Creating-VMs/azure-portal-virtual-machine-advanced.jpg)
 
 9. **Finalize and Create:**
    * Optionally, add tags to your VM for better organization.
@@ -137,9 +123,7 @@ Follow these steps to deploy a VM using the Azure Portal:
 
 After deployment, you can access your VM using a terminal or remote access tool.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page indicating that a deployment of an Ubuntu server virtual machine is complete. It includes deployment details, next steps, and options for cost management and security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884442/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Creating-VMs/azure-portal-ubuntu-vm-deployment.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page indicating that a deployment of an Ubuntu server virtual machine is complete. It includes deployment details, next steps, and options for cost management and security.](https://kodekloud.com/kk-media/image/upload/v1752884442/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Creating-VMs/azure-portal-ubuntu-vm-deployment.jpg)
 
 ## Connecting to Your Deployed VM
 
@@ -150,16 +134,12 @@ Once the VM is running, connect using your preferred remote access method:
 
 You can use Cloud Shell or a locally installed version of PowerShell/Azure CLI for further management tasks.
 
-<Callout icon="lightbulb">
-  Remember to update your firewall rules or NSG configurations to allow the required inbound connections.
-</Callout>
+> **lightbulb** Remember to update your firewall rules or NSG configurations to allow the required inbound connections.
 
 This guide has provided a step-by-step walkthrough for deploying a VM in Azure using both the Portal and command-line tools. With your VM now in place, you can focus on installing applications and configuring additional services as needed.
 
 For further reading and more advanced configurations, visit the [Azure Documentation](https://docs.microsoft.com/en-us/azure/virtual-machines/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/34d9af06-fc33-4556-a3f2-2e7a5c5db484/lesson/3de0eaa9-8fc7-41b2-a176-6b07346b9e89" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/34d9af06-fc33-4556-a3f2-2e7a5c5db484/lesson/3de0eaa9-8fc7-41b2-a176-6b07346b9e89)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/34d9af06-fc33-4556-a3f2-2e7a5c5db484/lesson/ccf84311-6da6-41c3-a74f-895fc9cbd732" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/34d9af06-fc33-4556-a3f2-2e7a5c5db484/lesson/ccf84311-6da6-41c3-a74f-895fc9cbd732)

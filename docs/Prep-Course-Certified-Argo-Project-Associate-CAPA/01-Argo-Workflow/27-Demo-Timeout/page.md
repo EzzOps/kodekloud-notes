@@ -11,9 +11,7 @@ In this lesson you'll learn how to use timeouts to limit how long a template or 
 
 You can use either level independently or both together. The effective behavior is a combination: a template can be terminated early by its own activeDeadlineSeconds, and the entire workflow can be terminated by the workflow-level activeDeadlineSeconds.
 
-<Callout icon="lightbulb">
-  activeDeadlineSeconds is measured in seconds. Template-level timeouts normally translate to the pod's activeDeadlineSeconds and cause Kubernetes to terminate the pod when exceeded. The workflow-level timeout is enforced by the Argo controller and will terminate the whole workflow if it runs longer than the specified value.
-</Callout>
+> **lightbulb** activeDeadlineSeconds is measured in seconds. Template-level timeouts normally translate to the pod's activeDeadlineSeconds and cause Kubernetes to terminate the pod when exceeded. The workflow-level timeout is enforced by the Argo controller and will terminate the whole workflow if it runs longer than the specified value.
 
 ## How activeDeadlineSeconds works (quick overview)
 
@@ -80,9 +78,7 @@ spec:
 | Workflow-level timeout | Bound the entire workflow runtime (enforced by Argo controller)   | `spec.activeDeadlineSeconds: 60`       |
 | Template-level timeout | Bound an individual template/pod runtime (enforced by Kubernetes) | `templates[].activeDeadlineSeconds: 5` |
 
-<Callout icon="warning">
-  Important: activeDeadlineSeconds is an integer number of seconds. Template-level timeouts usually translate to the pod's activeDeadlineSeconds and will be enforced by Kubernetes; the workflow-level timeout is enforced by the Argo controller. Ensure you pick values that reflect the longest acceptable runtime for each scope and test how retries or continueOn affect behavior.
-</Callout>
+> **warning** Important: activeDeadlineSeconds is an integer number of seconds. Template-level timeouts usually translate to the pod's activeDeadlineSeconds and will be enforced by Kubernetes; the workflow-level timeout is enforced by the Argo controller. Ensure you pick values that reflect the longest acceptable runtime for each scope and test how retries or continueOn affect behavior.
 
 ## Best practices
 
@@ -98,6 +94,4 @@ spec:
 * [Kubernetes - Pod activeDeadlineSeconds](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-disruption-and-deletion)
 * [Argo Workflows Documentation](https://argoproj.github.io/argo-workflows/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/de9d8db6-8441-41fb-a873-3c8024ab6d6c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/de9d8db6-8441-41fb-a873-3c8024ab6d6c)

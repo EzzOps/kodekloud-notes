@@ -15,9 +15,7 @@ What is the primary advantage of implementing Retrieval-Augmented Generation, or
 
 Answer: RAG models can access external, up-to-date information.
 
-<Callout icon="lightbulb">
-  The primary benefit of a RAG system is that it augments LLM responses with external knowledge sources that can be updated independently of the model. This helps mitigate limitations of standalone LLMs, whose knowledge is fixed at training time and can become outdated or cause hallucinations.
-</Callout>
+> **lightbulb** The primary benefit of a RAG system is that it augments LLM responses with external knowledge sources that can be updated independently of the model. This helps mitigate limitations of standalone LLMs, whose knowledge is fixed at training time and can become outdated or cause hallucinations.
 
 ## Why this is the correct answer
 
@@ -66,6 +64,4 @@ This architecture shifts the information flow from being purely internal to a hy
 * LangChain documentation for practical RAG patterns and integrations.
 * Vector database providers and docs (e.g., Pinecone, Milvus, Weaviate) for implementing dense retrieval.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/ec6e76ae-5e6b-410b-a73a-9e90e2bc9c65" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/ec6e76ae-5e6b-410b-a73a-9e90e2bc9c65)

@@ -12,11 +12,11 @@ AWS Transfer Family is distinct from other services like DataSync. While DataSyn
 
 When setting up AWS Transfer Family, AWS provides a public access endpoint for the FTP server, allowing access over the internet. If your requirements demand restricted access—such as internal resources within a specific VPC—you can configure the service to use a VPC endpoint. In addition, files can be directly transferred to S3 or EFS, and Amazon CloudWatch integration offers comprehensive logging and monitoring capabilities.
 
-![The image is a diagram of a Transfer Family Server setup, showing connections between an internet endpoint, file processing workflows, a virtual private cloud, and services like S3 Standard, Amazon EFS, and Amazon CloudWatch.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865400/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Transfer-Family-for-FTPAS2/transfer-family-server-setup-diagram.jpg)
+![The image is a diagram of a Transfer Family Server setup, showing connections between an internet endpoint, file processing workflows, a virtual private cloud, and services like S3 Standard, Amazon EFS, and Amazon CloudWatch.](https://kodekloud.com/kk-media/image/upload/v1752865400/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Transfer-Family-for-FTPAS2/transfer-family-server-setup-diagram.jpg)
 
 The AWS SFTP Connector enhances the capabilities of AWS Transfer Family by enabling secure communication with remote servers—be they in the cloud or on-premises. This integration facilitates the merging of externally generated and stored data with AWS-hosted data warehouses, supporting robust analytics, business applications, reporting, and auditing.
 
-![The image is a diagram illustrating the AWS Transfer Family SFTP Connector, showing the flow of files between a remote SFTP server and Amazon S3, with options for processing, analytics, archival, machine learning, and content distribution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865404/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Transfer-Family-for-FTPAS2/aws-transfer-family-sftp-diagram.jpg)
+![The image is a diagram illustrating the AWS Transfer Family SFTP Connector, showing the flow of files between a remote SFTP server and Amazon S3, with options for processing, analytics, archival, machine learning, and content distribution.](https://kodekloud.com/kk-media/image/upload/v1752865404/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Transfer-Family-for-FTPAS2/aws-transfer-family-sftp-diagram.jpg)
 
 From an integration standpoint, AWS Transfer Family works seamlessly with S3 and EFS by directly copying files to these services. This smooth integration with AWS storage options, along with its support for multiple transfer protocols and robust CloudWatch logging, positions AWS Transfer Family as a versatile and efficient solution.
 
@@ -29,7 +29,7 @@ Some key use cases for AWS Transfer Family include:
 * **Enhanced Collaboration:** Improve connectivity among supply chain trading partners to drive real-time insights across various business applications like ERP and transportation management systems.
 * **Expanding Subscriber Reach:** Offer diverse connectivity options with built-in fine-grained access controls that protect revenue across different channels.
 
-![The image shows four use cases for the "Transfer Family": Modernize File Transfer, Data Lake Insights, Improve Collaboration, and Expand Content Distribution, each represented by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865406/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Transfer-Family-for-FTPAS2/transfer-family-use-cases-icons.jpg)
+![The image shows four use cases for the "Transfer Family": Modernize File Transfer, Data Lake Insights, Improve Collaboration, and Expand Content Distribution, each represented by an icon.](https://kodekloud.com/kk-media/image/upload/v1752865406/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Transfer-Family-for-FTPAS2/transfer-family-use-cases-icons.jpg)
 
 ## Summary
 

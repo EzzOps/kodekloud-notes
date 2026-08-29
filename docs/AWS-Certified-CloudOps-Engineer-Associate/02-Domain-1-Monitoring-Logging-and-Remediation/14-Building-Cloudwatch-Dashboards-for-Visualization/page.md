@@ -8,7 +8,7 @@ CloudWatch Dashboards offer a powerful way to visualize your application data, m
 
 CloudWatch—AWS’s integrated monitoring service—brings together logs, metrics, and alarms into a single consolidated view. Whether you're managing an application, a web server, or a virtual machine, visual dashboards can help you monitor key performance indicators like CPU utilization over the past 24 hours, or quickly diagnose performance drops.
 
-![The image shows a CloudWatch dashboard with various graphs and a pie chart displaying metrics like call count, incoming log events, and incoming bytes. It also includes a log group with timestamped messages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859845/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Building-Cloudwatch-Dashboards-for-Visualization/cloudwatch-dashboard-metrics-graphs.jpg)
+![The image shows a CloudWatch dashboard with various graphs and a pie chart displaying metrics like call count, incoming log events, and incoming bytes. It also includes a log group with timestamped messages.](https://kodekloud.com/kk-media/image/upload/v1752859845/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Building-Cloudwatch-Dashboards-for-Visualization/cloudwatch-dashboard-metrics-graphs.jpg)
 
 ## How to Create a CloudWatch Dashboard
 
@@ -20,7 +20,7 @@ Creating a CloudWatch dashboard is a straightforward process. Follow these steps
 4. Choose the visualization format—line charts, pie charts, graphs, etc.—and arrange your widgets in a logical layout.
 5. Optionally, configure the dashboard for public sharing or integrate metrics from additional AWS accounts.
 
-![The image is a step-by-step guide for creating a CloudWatch Dashboard, including creating a new dashboard, adding widgets, customizing the layout, and sharing the dashboard.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859847/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Building-Cloudwatch-Dashboards-for-Visualization/cloudwatch-dashboard-creation-guide.jpg)
+![The image is a step-by-step guide for creating a CloudWatch Dashboard, including creating a new dashboard, adding widgets, customizing the layout, and sharing the dashboard.](https://kodekloud.com/kk-media/image/upload/v1752859847/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Building-Cloudwatch-Dashboards-for-Visualization/cloudwatch-dashboard-creation-guide.jpg)
 
 ## Widget Types in CloudWatch
 
@@ -31,7 +31,7 @@ Understanding the different widget types available in CloudWatch dashboards is c
 * Alarm Widgets
 * Text/Image Widgets
 
-![The image shows four types of widgets: Metric Widget, Log Widget, Alarm Widget, and Text/Image Widget, each represented by a colorful icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859847/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Building-Cloudwatch-Dashboards-for-Visualization/widget-types-icons-diagram.jpg)
+![The image shows four types of widgets: Metric Widget, Log Widget, Alarm Widget, and Text/Image Widget, each represented by a colorful icon.](https://kodekloud.com/kk-media/image/upload/v1752859847/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Building-Cloudwatch-Dashboards-for-Visualization/widget-types-icons-diagram.jpg)
 
 ## Dashboard Example and Use Cases
 
@@ -61,7 +61,7 @@ To maximize the effectiveness of your dashboards, keep these best practices in m
 * **Configure Alarms for Critical Issues:** Appropriately set up alarms to alert you to any significant deviations or potential issues.
 * **Regular Updates:** Continually update your dashboard components (especially if using static images or documentation) to reflect current system performance and operational practices.
 
-![The image outlines best practices for CloudWatch Dashboards, including using relevant metrics, grouping related metrics, using alarms for critical issues, and regularly updating dashboard contents.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859849/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Building-Cloudwatch-Dashboards-for-Visualization/cloudwatch-dashboard-best-practices.jpg)
+![The image outlines best practices for CloudWatch Dashboards, including using relevant metrics, grouping related metrics, using alarms for critical issues, and regularly updating dashboard contents.](https://kodekloud.com/kk-media/image/upload/v1752859849/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Building-Cloudwatch-Dashboards-for-Visualization/cloudwatch-dashboard-best-practices.jpg)
 
 That's all for our overview of CloudWatch dashboards. By visualizing your data effectively, you can enhance monitoring, streamline troubleshooting, and ultimately improve overall system performance. Happy monitoring!
 

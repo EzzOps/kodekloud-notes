@@ -317,13 +317,9 @@ pipeline {
 }
 ```
 
-<Callout icon="warning">
-  Never hard-code tokens or registry credentials in pipelines or repository files. Use Jenkins Credentials (or a secret manager) and reference them via `credentials()` in the pipeline.
-</Callout>
+> **warning** Never hard-code tokens or registry credentials in pipelines or repository files. Use Jenkins Credentials (or a secret manager) and reference them via `credentials()` in the pipeline.
 
-<Callout icon="lightbulb">
-  Store tokens and registry credentials in Jenkins Credentials (or another secret manager) and reference them via `credentials()` in the pipeline. Avoid hard-coding secrets in scripts or repository files.
-</Callout>
+> **lightbulb** Store tokens and registry credentials in Jenkins Credentials (or another secret manager) and reference them via `credentials()` in the pipeline. Avoid hard-coding secrets in scripts or repository files.
 
 ## Gitea: creating tokens and using the API
 
@@ -398,6 +394,4 @@ For more background reading:
 
 Later we will create the Jenkins job, run the pipeline, and observe the full flow end-to-end — from source change to Argo CD applying the updated manifest.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/673786b2-bedb-4405-a2c9-835aea1a9dd4/lesson/1e9837b5-169d-43e4-9bc8-f1012ec33bd2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/673786b2-bedb-4405-a2c9-835aea1a9dd4/lesson/1e9837b5-169d-43e4-9bc8-f1012ec33bd2)

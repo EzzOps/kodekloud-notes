@@ -14,9 +14,7 @@ You will learn practical, production-focused topics:
 * How to create system prompts, define agents declaratively, and debug agent behavior using observability tools like Jaeger.
 * How to connect external tools and services (for example, Slack, AWS CloudWatch, Billing) to your agents.
 
-<Callout icon="lightbulb">
-  Recommended prerequisites: basic Kubernetes knowledge (kubectl), familiarity with YAML manifests, and experience with Python or other scripting languages for building local integrations.
-</Callout>
+> **lightbulb** Recommended prerequisites: basic Kubernetes knowledge (kubectl), familiarity with YAML manifests, and experience with Python or other scripting languages for building local integrations.
 
 We begin with an overview of KAgent and a hands-on lab that walks you through the KAgent portal and agent lifecycle.
 

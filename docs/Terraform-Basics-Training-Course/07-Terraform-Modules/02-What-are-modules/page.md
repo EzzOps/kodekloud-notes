@@ -159,9 +159,7 @@ module.uk_payroll.aws_s3_bucket.payroll_data: Creating...
 module.uk_payroll.aws_dynamodb_table.payroll_db: Creation complete after 1s [id=user_data]
 ```
 
-<Callout icon="lightbulb">
-  Ensure you have the appropriate AWS credentials configured for each target region before running Terraform commands.
-</Callout>
+> **lightbulb** Ensure you have the appropriate AWS credentials configured for each target region before running Terraform commands.
 
 ## Module Resource Addressing
 
@@ -185,9 +183,7 @@ For further reading and additional resources, consider checking out:
 * [AWS Provider for Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e6838c6b-3208-4396-a744-34b0ed2cd292/lesson/4badb52f-7640-4260-805d-afd9931a2d9b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e6838c6b-3208-4396-a744-34b0ed2cd292/lesson/4badb52f-7640-4260-805d-afd9931a2d9b)
 
 
 # What are modules

@@ -25,7 +25,7 @@ Azure DevOps provides robust authentication mechanisms to secure pipelines, REST
 
 Service Connections in Azure DevOps let pipelines and services authenticate with external resources—such as Azure Subscriptions, Docker registries, GitHub, and more—without embedding secrets directly in your YAML definitions.
 
-![The image is a diagram illustrating Azure DevOps Service Connections, showing how service connections manage and authenticate internal and external services like Azure Subscription, Docker Registries, and GitHub.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867580/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-Azure-DevOps-service-connections-and-personal-access-tokens/azure-devops-service-connections-diagram.jpg)
+![The image is a diagram illustrating Azure DevOps Service Connections, showing how service connections manage and authenticate internal and external services like Azure Subscription, Docker Registries, and GitHub.](https://kodekloud.com/kk-media/image/upload/v1752867580/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-Azure-DevOps-service-connections-and-personal-access-tokens/azure-devops-service-connections-diagram.jpg)
 
 ### Benefits
 
@@ -43,7 +43,7 @@ Service Connections in Azure DevOps let pipelines and services authenticate with
 
 > **lightbulb** The [AZ-400 certification exam](https://learn.microsoft.com/en-us/certifications/exams/az-400) often tests your ability to walk through these steps. Practice creating and referencing service connections in sample pipelines.
 
-![The image provides a step-by-step guide for creating an Azure Service Connection in Azure DevOps, alongside a list of service connection types to choose from.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867581/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-Azure-DevOps-service-connections-and-personal-access-tokens/azure-service-connection-guide-devops.jpg)
+![The image provides a step-by-step guide for creating an Azure Service Connection in Azure DevOps, alongside a list of service connection types to choose from.](https://kodekloud.com/kk-media/image/upload/v1752867581/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-Azure-DevOps-service-connections-and-personal-access-tokens/azure-service-connection-guide-devops.jpg)
 
 ### Managing Service Connections
 
@@ -56,7 +56,7 @@ Service Connections in Azure DevOps let pipelines and services authenticate with
 
 Personal Access Tokens (PATs) are OAuth-like tokens used to access Azure DevOps REST APIs. They are perfect for automation scripts, third-party integrations, and CLI operations.
 
-![The image outlines use cases for Personal Access Tokens (PATs), including scripting, integrating third-party applications, and automating tasks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867582/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-Azure-DevOps-service-connections-and-personal-access-tokens/personal-access-tokens-use-cases.jpg)
+![The image outlines use cases for Personal Access Tokens (PATs), including scripting, integrating third-party applications, and automating tasks.](https://kodekloud.com/kk-media/image/upload/v1752867582/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-Azure-DevOps-service-connections-and-personal-access-tokens/personal-access-tokens-use-cases.jpg)
 
 ### Generating a PAT
 
@@ -66,7 +66,7 @@ Personal Access Tokens (PATs) are OAuth-like tokens used to access Azure DevOps 
 
 > **triangle-alert** Treat PATs like passwords. Store them in a secure vault and never check them into source control.
 
-![The image shows a form for creating a new personal access token, with fields for name, organization, expiration date, and scope options. It is labeled as "Step 04" in a process for generating a personal access token.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867584/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-Azure-DevOps-service-connections-and-personal-access-tokens/personal-access-token-form-step-04.jpg)
+![The image shows a form for creating a new personal access token, with fields for name, organization, expiration date, and scope options. It is labeled as "Step 04" in a process for generating a personal access token.](https://kodekloud.com/kk-media/image/upload/v1752867584/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-Azure-DevOps-service-connections-and-personal-access-tokens/personal-access-token-form-step-04.jpg)
 
 ### Using PATs with cURL
 
@@ -114,7 +114,7 @@ print(response.json())
 
 ## Service Connections vs. Personal Access Tokens
 
-![The image is a comparison chart between Service Connections and PATs, highlighting key differences and when to use each. Service Connections focus on centralized credential management and security, while PATs offer flexible access for personal use and require careful management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867585/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-Azure-DevOps-service-connections-and-personal-access-tokens/service-connections-vs-pats-comparison-chart.jpg)
+![The image is a comparison chart between Service Connections and PATs, highlighting key differences and when to use each. Service Connections focus on centralized credential management and security, while PATs offer flexible access for personal use and require careful management.](https://kodekloud.com/kk-media/image/upload/v1752867585/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-Azure-DevOps-service-connections-and-personal-access-tokens/service-connections-vs-pats-comparison-chart.jpg)
 
 | Feature         | Service Connections                                   | Personal Access Tokens (PATs)                         |
 | --------------- | ----------------------------------------------------- | ----------------------------------------------------- |
@@ -127,7 +127,7 @@ print(response.json())
 
 ## Security Best Practices
 
-![The image outlines three security best practices for authentication: minimizing permissions, regularly rotating tokens and credentials, and monitoring and auditing access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867586/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-Azure-DevOps-service-connections-and-personal-access-tokens/security-best-practices-authentication.jpg)
+![The image outlines three security best practices for authentication: minimizing permissions, regularly rotating tokens and credentials, and monitoring and auditing access.](https://kodekloud.com/kk-media/image/upload/v1752867586/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-Azure-DevOps-service-connections-and-personal-access-tokens/security-best-practices-authentication.jpg)
 
 1. Grant **least privilege** on both service connections and PATs.
 2. Rotate tokens and credentials regularly to reduce exposure.

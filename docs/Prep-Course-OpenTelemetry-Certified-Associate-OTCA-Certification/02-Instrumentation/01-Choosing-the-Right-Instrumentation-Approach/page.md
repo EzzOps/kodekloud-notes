@@ -55,9 +55,7 @@ This layered approach balances ease of adoption against observability depth: aut
   <img alt="The image depicts a balance scale illustrating the concept of &#x22;Balancing Ease vs. Depth,&#x22; with &#x22;Ease of Adoption&#x22; and &#x22;Observability Depth&#x22; on either side." />
 </Frame>
 
-<Callout icon="lightbulb">
-  A practical cadence: enable auto-instrumentation, inspect traces to find coverage gaps, then add targeted manual or library-based instrumentation where business value or debugging needs justify the effort.
-</Callout>
+> **lightbulb** A practical cadence: enable auto-instrumentation, inspect traces to find coverage gaps, then add targeted manual or library-based instrumentation where business value or debugging needs justify the effort.
 
 Further reading and references:
 
@@ -71,6 +69,4 @@ Further reading and references:
 
 That covers the core approaches to instrumentation and a practical way to combine them for fast, meaningful observability.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/c366a2e9-0dc6-4bfa-980d-1672fa6d6ad3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/c366a2e9-0dc6-4bfa-980d-1672fa6d6ad3)

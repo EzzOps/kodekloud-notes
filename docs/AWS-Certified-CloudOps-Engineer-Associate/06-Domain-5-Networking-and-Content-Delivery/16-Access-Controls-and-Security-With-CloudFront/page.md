@@ -10,7 +10,7 @@ In this article, we explore CloudFront's advanced access controls and security f
 
 CloudFront provides robust capabilities that ensure secure data transmission and protect sensitive content. These features help you secure communications between users, CloudFront, and your origin servers while complying with best practices and certification requirements.
 
-![The image outlines four access control and security features of CloudFront: configuring HTTPS connections, setting up field-level encryption, preventing access based on geographic location, and using signed URLs or cookies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860732/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Access-Controls-and-Security-With-CloudFront/cloudfront-access-control-security-features.jpg)
+![The image outlines four access control and security features of CloudFront: configuring HTTPS connections, setting up field-level encryption, preventing access based on geographic location, and using signed URLs or cookies.](https://kodekloud.com/kk-media/image/upload/v1752860732/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Access-Controls-and-Security-With-CloudFront/cloudfront-access-control-security-features.jpg)
 
 ## Enforcing HTTPS Connections
 
@@ -22,7 +22,7 @@ CloudFront supports enforcing secure connections using a viewer policy, which ma
 
 In some situations, CloudFront can decrypt the response at the backend, process it as necessary, and then re-encrypt it before forwarding it to the viewer. While end-to-end TLS encryption is generally recommended, this flexibility allows for varied configurations based on your application needs.
 
-![The image illustrates the configuration of HTTPS connections between a viewer, CloudFront edge location, and an S3 bucket. It shows secure communication paths using HTTPS between each component.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860734/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Access-Controls-and-Security-With-CloudFront/https-configuration-cloudfront-s3-diagram.jpg)
+![The image illustrates the configuration of HTTPS connections between a viewer, CloudFront edge location, and an S3 bucket. It shows secure communication paths using HTTPS between each component.](https://kodekloud.com/kk-media/image/upload/v1752860734/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Access-Controls-and-Security-With-CloudFront/https-configuration-cloudfront-s3-diagram.jpg)
 
 > **lightbulb** Ensuring HTTPS is critical for protecting data integrity and confidentiality during transit. Always verify that your origin servers support secure protocols.
 
@@ -32,7 +32,7 @@ Rather than encrypting an entire connection, CloudFront allows you to specifical
 
 CloudFront’s field-level encryption uses asymmetric (public key) encryption to secure these specific content elements without impacting overall data flow. After configuring the necessary key management settings, CloudFront manages the encryption process, simplifying the implementation.
 
-![The image illustrates the process of setting up field-level encryption for specific content fields using CloudFront, showing the flow of data from user agents to a custom origin with public and private key encryption. It includes examples of data types like personally identifiable information and payments data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860735/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Access-Controls-and-Security-With-CloudFront/field-level-encryption-cloudfront-setup.jpg)
+![The image illustrates the process of setting up field-level encryption for specific content fields using CloudFront, showing the flow of data from user agents to a custom origin with public and private key encryption. It includes examples of data types like personally identifiable information and payments data.](https://kodekloud.com/kk-media/image/upload/v1752860735/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Access-Controls-and-Security-With-CloudFront/field-level-encryption-cloudfront-setup.jpg)
 
 ## Geographic Restrictions
 
@@ -47,11 +47,11 @@ For content requiring restricted access—such as private documents, downloadabl
 * **Pre-signed URLs:** Ideal for granting access to a single file, these URLs include parameters such as time-to-live, signature, and policy details. AWS services like IAM verify these parameters to provide secure access.
 * **Signed Cookies:** Best suited for scenarios with multiple files or when you want to avoid changing existing URL structures. Signed cookies enable authenticated users to seamlessly access multiple resources without modifying URLs.
 
-![The image illustrates the process of CloudFront Signed URLs, showing steps from user verification to fetching and responding to requests via signed URLs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860736/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Access-Controls-and-Security-With-CloudFront/cloudfront-signed-urls-process.jpg)
+![The image illustrates the process of CloudFront Signed URLs, showing steps from user verification to fetching and responding to requests via signed URLs.](https://kodekloud.com/kk-media/image/upload/v1752860736/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Access-Controls-and-Security-With-CloudFront/cloudfront-signed-urls-process.jpg)
 
 > **triangle-alert** When choosing between pre-signed URLs and signed cookies, remember that pre-signed URLs require modifying the URL structure, while signed cookies do not. Evaluate your application's architecture and user experience before implementation.
 
-![The image compares signed URLs and signed cookies, showing a user accessing a single file with a signed URL and multiple files with signed cookies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860737/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Access-Controls-and-Security-With-CloudFront/signed-urls-vs-signed-cookies.jpg)
+![The image compares signed URLs and signed cookies, showing a user accessing a single file with a signed URL and multiple files with signed cookies.](https://kodekloud.com/kk-media/image/upload/v1752860737/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Access-Controls-and-Security-With-CloudFront/signed-urls-vs-signed-cookies.jpg)
 
 ## Summary
 

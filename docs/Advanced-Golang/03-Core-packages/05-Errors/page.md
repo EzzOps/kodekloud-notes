@@ -10,7 +10,7 @@ In this article, we explore error handling in Go programming, a fundamental aspe
 
 Go provides two commonly used functions for creating and formatting errors: `New()` and `Errorf()`. These functions are part of Go's standard libraries and help streamline error handling in your code.
 
-![The image is a slide titled "Errors" that lists two functions: "New()" and "Errorf()".](../../../../images/kodekloud.com/kk-media/image/upload/v1752868722/notes-assets/images/Advanced-Golang-Errors/errors-new-errorf-functions-slide.jpg)
+![The image is a slide titled "Errors" that lists two functions: "New()" and "Errorf()".](https://kodekloud.com/kk-media/image/upload/v1752868722/notes-assets/images/Advanced-Golang-Errors/errors-new-errorf-functions-slide.jpg)
 
 ### Using errors.New
 

@@ -12,9 +12,7 @@ We encourage you to apply these concepts through practice exercises and explore 
 
 Happy automating, and see you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/d7059d07-b28b-4e04-a4a4-3638100f5266/lesson/ee852353-de0a-47f9-9795-a9afdb7badb7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/d7059d07-b28b-4e04-a4a4-3638100f5266/lesson/ee852353-de0a-47f9-9795-a9afdb7badb7)
 
 
 # Grouping and Parent Child Relationships
@@ -25,21 +23,15 @@ This article discusses effective grouping strategies and parent-child relationsh
 
 Imagine you are an IT administrator responsible for a vast and complex infrastructure spanning multiple locations. In such an environment, you may be managing hundreds of servers that serve various roles—such as web servers, database servers, or application servers.
 
-<Frame>
-  ![The image illustrates an IT infrastructure overview, showing an IT administrator managing web, database, and application servers within a multinational organization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881045/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Grouping-and-Parent-Child-Relationships/frame_20.jpg)
-</Frame>
+![The image illustrates an IT infrastructure overview, showing an IT administrator managing web, database, and application servers within a multinational organization.](https://kodekloud.com/kk-media/image/upload/v1752881045/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Grouping-and-Parent-Child-Relationships/frame_20.jpg)
 
 Manually managing each server can quickly become overwhelming. For instance, when updating all web servers, manually specifying each host is both time-consuming and prone to error. This is where effective grouping strategies make a significant difference.
 
 By categorizing servers based on roles, geographic locations, or other criteria, you can simplify many routine tasks. For example, grouping all web servers under a common label allows you to apply updates or configuration changes to the entire group with a single command.
 
-<Frame>
-  ![The image illustrates the need for grouping in a multinational organization, focusing on web servers and their connections to users and locations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881046/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Grouping-and-Parent-Child-Relationships/frame_50.jpg)
-</Frame>
+![The image illustrates the need for grouping in a multinational organization, focusing on web servers and their connections to users and locations.](https://kodekloud.com/kk-media/image/upload/v1752881046/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Grouping-and-Parent-Child-Relationships/frame_50.jpg)
 
-<Callout icon="lightbulb">
-  Ansible’s grouping feature lets you assign a common label to a set of servers, enabling efficient bulk operations.
-</Callout>
+> **lightbulb** Ansible’s grouping feature lets you assign a common label to a set of servers, enabling efficient bulk operations.
 
 Ansible's grouping functionality comes to the rescue when managing multiple servers simultaneously. You can define groups that represent collections of servers sharing similar roles. Once a group is defined, targeting that group for updates or configuration changes applies those changes to all associated servers.
 
@@ -48,9 +40,7 @@ However, challenges can arise when servers in the same role are distributed acro
 * Define a parent group (for example, "Web Servers") to hold common configurations.
 * Create child groups (such as "Web Servers US" and "Web Servers EU") for location-specific settings.
 
-<Frame>
-  ![The image illustrates the concept of parent-child relationships in Ansible, showing server groupings across different regions on a world map.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881048/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Grouping-and-Parent-Child-Relationships/frame_120.jpg)
-</Frame>
+![The image illustrates the concept of parent-child relationships in Ansible, showing server groupings across different regions on a world map.](https://kodekloud.com/kk-media/image/upload/v1752881048/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Grouping-and-Parent-Child-Relationships/frame_120.jpg)
 
 ## Grouping and Parent-Child Structures in Ansible
 
@@ -91,12 +81,8 @@ all:
 
 This YAML structure begins by defining all groups under the `all` key. It then creates a parent group "webservers" with its respective child groups "webservers\_us" and "webservers\_eu". Each child group contains its specific server configurations.
 
-<Callout icon="lightbulb">
-  Organizing your servers into groups and establishing parent-child relationships minimizes configuration duplication and streamlines management, resulting in a more efficient and error-free IT infrastructure.
-</Callout>
+> **lightbulb** Organizing your servers into groups and establishing parent-child relationships minimizes configuration duplication and streamlines management, resulting in a more efficient and error-free IT infrastructure.
 
 By leveraging Ansible’s grouping and parent-child relationship features, you simplify server management, reduce the risk of configuration errors, and boost operational efficiency across your diverse IT infrastructure.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/d7059d07-b28b-4e04-a4a4-3638100f5266/lesson/f6869f88-9247-49ae-9c55-7d7dfce173ff" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/d7059d07-b28b-4e04-a4a4-3638100f5266/lesson/f6869f88-9247-49ae-9c55-7d7dfce173ff)

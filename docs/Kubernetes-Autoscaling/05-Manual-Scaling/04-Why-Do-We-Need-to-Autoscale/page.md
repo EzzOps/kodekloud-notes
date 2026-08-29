@@ -40,9 +40,7 @@ Cluster scaling offers OS-level resources (CPU, memory, disk, GPUs). Pod scaling
 
 Cluster scaling changes the number of worker nodes available to schedule pods. The most common implementation is the Cluster Autoscaler, which reacts to unschedulable pods and node utilization patterns — adding nodes when pods can't be scheduled and removing nodes when they become unnecessary (only when pods can be safely moved).
 
-<Callout icon="lightbulb">
-  Note: The Cluster Autoscaler is different from the Cluster Proportional Autoscaler (CPA). CPA adjusts replica counts of cluster add-on controllers (for example, scaling add-on Deployments relative to cluster size), while the Cluster Autoscaler manages worker node counts. They solve different problems — don’t confuse them.
-</Callout>
+> **lightbulb** Note: The Cluster Autoscaler is different from the Cluster Proportional Autoscaler (CPA). CPA adjusts replica counts of cluster add-on controllers (for example, scaling add-on Deployments relative to cluster size), while the Cluster Autoscaler manages worker node counts. They solve different problems — don’t confuse them.
 
 Cluster autoscaling increases the cluster’s total compute capacity (CPU, RAM, disk, GPUs), enabling pod-level autoscalers such as HPA or VPA to place new pods and meet resource requests.
 
@@ -110,6 +108,4 @@ Further reading and references:
 
 This lesson introduced the "why" and "what" of autoscaling in Kubernetes. The course continues with practical configuration and operational examples for Cluster Autoscaler, HPA, VPA, and event-driven scalers.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/66710f67-c094-4a4c-b718-4a031d1ddebe/lesson/e57460fa-c121-4d31-b5a2-1d54caee9b49" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/66710f67-c094-4a4c-b718-4a031d1ddebe/lesson/e57460fa-c121-4d31-b5a2-1d54caee9b49)

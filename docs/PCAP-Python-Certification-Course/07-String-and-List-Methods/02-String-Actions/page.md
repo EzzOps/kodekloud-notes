@@ -22,13 +22,9 @@ True
 
 Two strings are considered equal only if they consist of the same characters in the same order. If the strings differ, even if they are of the same length, Python determines the result based on the first pair of characters that differ. Remember that string comparisons are case sensitive; uppercase letters have different code point values than lowercase ones.
 
-<Frame>
-  ![The image shows a comparison between the strings 'abc' and 'adc', with their ASCII values displayed below each character, illustrating that 'abc' is less than 'adc'.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882927/notes-assets/images/PCAP-Python-Certification-Course-String-Actions/string-comparison-abc-adc-ascii.jpg)
-</Frame>
+![The image shows a comparison between the strings 'abc' and 'adc', with their ASCII values displayed below each character, illustrating that 'abc' is less than 'adc'.](https://kodekloud.com/kk-media/image/upload/v1752882927/notes-assets/images/PCAP-Python-Certification-Course-String-Actions/string-comparison-abc-adc-ascii.jpg)
 
-<Callout icon="lightbulb">
-  Be mindful that comparisons between strings are influenced by Unicode character values. This means that special characters and punctuation might affect comparison outcomes.
-</Callout>
+> **lightbulb** Be mindful that comparisons between strings are influenced by Unicode character values. This means that special characters and punctuation might affect comparison outcomes.
 
 ## Sorting Strings and Lists
 
@@ -110,14 +106,10 @@ TypeError: '>' not supported between instances of 'str' and 'int'
 
 If you do not convert the string to a floating-point number before making the comparison, Python will raise a `TypeError`.
 
-<Callout icon="triangle-alert">
-  Always ensure that you convert data types appropriately when performing operations. Failure to do so may result in errors that can interrupt your program's execution.
-</Callout>
+> **triangle-alert** Always ensure that you convert data types appropriately when performing operations. Failure to do so may result in errors that can interrupt your program's execution.
 
 That's it for now! It's time to put these concepts into practice. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/2c9c597a-cb2d-43ca-ba29-2dc1b630cae6/lesson/923d3d8d-c9a8-4a64-96d4-ef783a8b5617" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/2c9c597a-cb2d-43ca-ba29-2dc1b630cae6/lesson/923d3d8d-c9a8-4a64-96d4-ef783a8b5617)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/2c9c597a-cb2d-43ca-ba29-2dc1b630cae6/lesson/74d04e40-bf06-425d-93c0-1aac2171a85e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/2c9c597a-cb2d-43ca-ba29-2dc1b630cae6/lesson/74d04e40-bf06-425d-93c0-1aac2171a85e)

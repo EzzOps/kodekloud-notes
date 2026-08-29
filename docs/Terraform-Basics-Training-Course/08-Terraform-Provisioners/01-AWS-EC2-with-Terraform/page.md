@@ -67,9 +67,7 @@ dynamo_db.tf
 local.tf
 ```
 
-<Callout icon="lightbulb">
-  Using modules in Terraform allows you to manage complexity, reduce code duplication, and enhance reusability across projects and environments.
-</Callout>
+> **lightbulb** Using modules in Terraform allows you to manage complexity, reduce code duplication, and enhance reusability across projects and environments.
 
 ## What Is a Terraform Module?
 
@@ -141,9 +139,7 @@ The `module` keyword is followed by a logical name, in this case, `dev-webserver
 
 This modular approach effectively addresses earlier challenges by reducing code duplication, simplifying updates, and boosting reusability. It encapsulates specific infrastructure logic in a module that can be reused across different environments or projects.
 
-<Callout icon="lightbulb">
-  Modules not only help in organizing your Terraform configurations but also promote best practices by isolating infrastructure components. This makes your configurations easier to manage and share.
-</Callout>
+> **lightbulb** Modules not only help in organizing your Terraform configurations but also promote best practices by isolating infrastructure components. This makes your configurations easier to manage and share.
 
 That concludes this article. In the next section, we will dive deeper into creating custom modules and harnessing their full potential with Terraform.
 
@@ -154,9 +150,7 @@ Learn more about related topics in the following links:
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e6838c6b-3208-4396-a744-34b0ed2cd292/lesson/e5a998ed-cd36-48db-81a4-95b1235ebb7f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e6838c6b-3208-4396-a744-34b0ed2cd292/lesson/e5a998ed-cd36-48db-81a4-95b1235ebb7f)
 
 
 # AWS EC2 with Terraform

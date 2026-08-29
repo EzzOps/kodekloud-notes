@@ -60,9 +60,7 @@ How do you make a model artifact available so other systems — a web app, mobil
 * Create InferenceService manifests in YAML to declare the models we want to serve.
 * Use [curl](https://curl.se/) and [jq](https://stedolan.github.io/jq/) to interact with the served models during demos and testing.
 
-<Callout icon="lightbulb">
-  Recommended prerequisites: familiarity with core Kubernetes concepts, basic `kubectl` usage, and Helm. You should also be comfortable using the command line for testing (curl, jq). These skills will help you follow the hands-on demos more effectively.
-</Callout>
+> **lightbulb** Recommended prerequisites: familiarity with core Kubernetes concepts, basic `kubectl` usage, and Helm. You should also be comfortable using the command line for testing (curl, jq). These skills will help you follow the hands-on demos more effectively.
 
 If you've wrapped a model in a simple [Flask](https://flask.palletsprojects.com/) app and called it a day, you probably discovered the gap between "it works on my laptop" and "it works reliably under real traffic." Common real-world serving challenges include:
 
@@ -120,6 +118,4 @@ Links and references
 * [curl](https://curl.se/)
 * [jq](https://stedolan.github.io/jq/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/5231587b-53d5-4ea2-a084-44550d4ce9bb/lesson/5193d2e4-a243-442d-97b8-b1a236f1e6e3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/5231587b-53d5-4ea2-a084-44550d4ce9bb/lesson/5193d2e4-a243-442d-97b8-b1a236f1e6e3)

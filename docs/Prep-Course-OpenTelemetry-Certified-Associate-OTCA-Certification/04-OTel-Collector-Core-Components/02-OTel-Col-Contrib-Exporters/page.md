@@ -18,9 +18,7 @@ Below is a quick summary of the most common exporters covered in this article.
 | File                    | Write OTLP payloads to local files                      | Debugging, offline analysis                          |
 | Vendor-specific         | Proprietary protocols or auth                           | Vendor-managed backends (API keys, custom encodings) |
 
-<Callout icon="lightbulb">
-  Check the OpenTelemetry Collector contrib repository for a complete list of exporters and examples: [https://github.com/open-telemetry/opentelemetry-collector-contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib). There are many vendor and community exporters beyond the ones shown here.
-</Callout>
+> **lightbulb** Check the OpenTelemetry Collector contrib repository for a complete list of exporters and examples: [https://github.com/open-telemetry/opentelemetry-collector-contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib). There are many vendor and community exporters beyond the ones shown here.
 
 <Frame>
   <img alt="The image is a list titled &#x22;Community and Vendor Exporters&#x22; with options like Prometheus, Zipkin, Jaeger, Kafka, file, and vendor-specific exporters, each describing its function." />
@@ -215,9 +213,7 @@ service:
       exporters: [kafka]
 ```
 
-<Callout icon="warning">
-  Do not hard-code secrets (for example, `KAFKA_PASSWORD`) directly in Collector YAML. Use environment variables, secret mounts, or your orchestration platform's secret management to protect sensitive credentials.
-</Callout>
+> **warning** Do not hard-code secrets (for example, `KAFKA_PASSWORD`) directly in Collector YAML. Use environment variables, secret mounts, or your orchestration platform's secret management to protect sensitive credentials.
 
 ## File exporter
 
@@ -271,6 +267,4 @@ Links and references
 * Thanos: [https://thanos.io/](https://thanos.io/)
 * Kafka: [https://kafka.apache.org/](https://kafka.apache.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/acbb5dd7-b27b-4109-a6c6-eaf92c79e6cb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/acbb5dd7-b27b-4109-a6c6-eaf92c79e6cb)

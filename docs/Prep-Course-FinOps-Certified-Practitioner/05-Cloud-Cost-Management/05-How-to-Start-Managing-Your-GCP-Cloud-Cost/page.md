@@ -18,9 +18,7 @@ Focus first on controls that immediately reduce surprise spend and give you acti
 | Resource labels (tags)             | Enables attribution, filtering, and chargeback reports                               | Enforce labels such as `team`, `cost_center`, `environment`, `application` on every resource |
 | Runtime limits / frequency capping | Prevents runaway costs from long‑running or idle non-prod workloads                  | Use instance schedules, autoscaling, or automation to stop idle VMs and CI agents            |
 
-<Callout icon="lightbulb">
-  Always enforce a labeling standard (and automate it via IaC or organization policies when possible). Without consistent labels, cost breakdowns become a detective exercise and require manual reconciliation.
-</Callout>
+> **lightbulb** Always enforce a labeling standard (and automate it via IaC or organization policies when possible). Without consistent labels, cost breakdowns become a detective exercise and require manual reconciliation.
 
 These three controls — budgets, labels, and runtime limits — are the fastest way to get baseline cost visibility and basic prevention. Once they’re in place, you can move on to tracking and analysis.
 
@@ -82,9 +80,7 @@ Key governance controls:
   <img alt="The image illustrates governance and policy enforcement related to GDPR, highlighting aspects like billing account management, quota management, cloud identity access management, and organization policies. It uses a padlock graphic to symbolize security." />
 </Frame>
 
-<Callout icon="warning">
-  Carefully manage who has billing and project-creation permissions. Unrestricted access can lead to hidden spend and orphaned projects that continue to bill.
-</Callout>
+> **warning** Carefully manage who has billing and project-creation permissions. Unrestricted access can lead to hidden spend and orphaned projects that continue to bill.
 
 Operational suggestions:
 
@@ -112,6 +108,4 @@ We will also compare GCP cost management with Azure and highlight the key differ
 * [Preemptible VMs](https://cloud.google.com/compute/docs/instances/preemptible)
 * [Organization Policy Service](https://cloud.google.com/resource-manager/docs/organization-policy/overview)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/b623bd4d-2f47-4afb-a61b-f224315cfbe1/lesson/47b2c978-dfd0-424c-b739-0c3ecc727652" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/b623bd4d-2f47-4afb-a61b-f224315cfbe1/lesson/47b2c978-dfd0-424c-b739-0c3ecc727652)

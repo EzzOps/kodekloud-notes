@@ -17,9 +17,7 @@ vault operator raft list-peers
 
 ### 5. Raft Snapshots
 
-<Frame>
-  ![The image describes "Raft Snapshots," highlighting that integrated storage allows for manual or scheduled snapshot creation, which serves as a point-in-time backup including configuration data and KV store data. It also features a Vault certification badge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878471/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/raft-snapshots-manual-scheduled-backup.jpg)
-</Frame>
+![The image describes "Raft Snapshots," highlighting that integrated storage allows for manual or scheduled snapshot creation, which serves as a point-in-time backup including configuration data and KV store data. It also features a Vault certification badge.](https://kodekloud.com/kk-media/image/upload/v1752878471/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Implementing-Integrated-Storage/raft-snapshots-manual-scheduled-backup.jpg)
 
 #### Manual Snapshot
 
@@ -41,9 +39,7 @@ Automate these commands via cron or your preferred scheduler—even in open sour
 
 Integrated Storage is now the default choice for Vault clusters, offering durability, high availability, and simplified operations without sacrificing performance. Use these guidelines to plan, configure, and manage your Vault Integrated Storage deployments effectively.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/cc08ce0d-3179-436b-9d9a-bcf1618a9646" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/cc08ce0d-3179-436b-9d9a-bcf1618a9646)
 
 
 # PKI Secrets Engine
@@ -64,9 +60,7 @@ The PKI Secrets Engine in HashiCorp Vault dynamically issues and manages X.509 c
 | Ephemeral TTLs                           | Ensures certificates expire quickly                             |
 | Integration with Existing CA Hierarchies | Acts as an intermediate CA under an offline root                |
 
-<Frame>
-  ![The image is a slide about the PKI Secrets Engine, highlighting its benefits such as short TTLs for certificates, ease of allocation, and prevention of certificate sharing and MITM attacks. It also features a Vault certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878478/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-PKI-Secrets-Engine/pki-secrets-engine-benefits-slide.jpg)
-</Frame>
+![The image is a slide about the PKI Secrets Engine, highlighting its benefits such as short TTLs for certificates, ease of allocation, and prevention of certificate sharing and MITM attacks. It also features a Vault certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878478/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-PKI-Secrets-Engine/pki-secrets-engine-benefits-slide.jpg)
 
 Workloads can request certificates at runtime and discard them on shutdown, avoiding long-lived revocation lists.
 
@@ -79,13 +73,9 @@ Vault typically functions as an intermediate CA, integrating seamlessly with you
 3. You import the signed intermediate certificate into Vault.
 4. Vault issues end-entity certificates on behalf of your root.
 
-<Frame>
-  ![The image is a slide about the PKI Secrets Engine, explaining the use of Vault as an intermediate CA, its integration with existing CA structures, and its capability to perform root and intermediate CA functions. It includes a Vault certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878479/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-PKI-Secrets-Engine/pki-secrets-engine-vault-ca-slide.jpg)
-</Frame>
+![The image is a slide about the PKI Secrets Engine, explaining the use of Vault as an intermediate CA, its integration with existing CA structures, and its capability to perform root and intermediate CA functions. It includes a Vault certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878479/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-PKI-Secrets-Engine/pki-secrets-engine-vault-ca-slide.jpg)
 
-<Callout icon="triangle-alert">
-  Never expose your root CA online. Keep the root CA offline and only use Vault’s intermediate for runtime operations.
-</Callout>
+> **triangle-alert** Never expose your root CA online. Keep the root CA offline and only use Vault’s intermediate for runtime operations.
 
 ## Certificate Management Architecture
 
@@ -95,9 +85,7 @@ A typical deployment architecture:
 2. **Vault** running the PKI Secrets Engine (intermediate CA)
 3. **Clients** (VMs, containers, applications) that authenticate to Vault and request certificates
 
-<Frame>
-  ![The image illustrates a common architecture for certificate management, showing a Root Certificate Authority, a Vault with a PKI Secrets Engine as an Intermediate CA, and a process for requesting and responding with certificates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878480/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-PKI-Secrets-Engine/certificate-management-architecture-diagram.jpg)
-</Frame>
+![The image illustrates a common architecture for certificate management, showing a Root Certificate Authority, a Vault with a PKI Secrets Engine as an Intermediate CA, and a process for requesting and responding with certificates.](https://kodekloud.com/kk-media/image/upload/v1752878480/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-PKI-Secrets-Engine/certificate-management-architecture-diagram.jpg)
 
 Clients receive their unique certificates and private keys securely at runtime.
 

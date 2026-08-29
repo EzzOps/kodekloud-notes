@@ -68,9 +68,7 @@ spec:
 
 Once a matching entity exists, the GitHub-authenticated user can sign in successfully.
 
-<Callout icon="lightbulb">
-  By default, Backstage requires the identity provider username to match a catalog `User` entity metadata name exactly. To avoid manual creation of every user, configure integrations to automatically import users from external systems (for example, a GitHub organization, LDAP, or another user directory).
-</Callout>
+> **lightbulb** By default, Backstage requires the identity provider username to match a catalog `User` entity metadata name exactly. To avoid manual creation of every user, configure integrations to automatically import users from external systems (for example, a GitHub organization, LDAP, or another user directory).
 
 ## Automating user and team provisioning (integrations)
 
@@ -104,6 +102,4 @@ With integrations in place, Backstage will have the required `User` entities ahe
 * [Auth0](https://auth0.com)
 * [OneLogin](https://www.onelogin.com)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/d82fc857-4b5c-42a7-ab46-3772f749a741/lesson/2dd37cf6-a29b-403c-886f-5aa1804d4295" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/d82fc857-4b5c-42a7-ab46-3772f749a741/lesson/2dd37cf6-a29b-403c-886f-5aa1804d4295)

@@ -15,7 +15,7 @@ We start with two pre-configured VPCs:
 * **VPC-B:** CIDR block 10.2.0.0/16\
   Contains an EC2 instance with a private IP address of 10.2.1.139.
 
-![The image shows an AWS VPC (Virtual Private Cloud) management console with a list of VPCs, their IDs, states, and CIDR blocks. The details of a selected VPC are displayed at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865717/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering-DEMO/aws-vpc-management-console-details.jpg)
+![The image shows an AWS VPC (Virtual Private Cloud) management console with a list of VPCs, their IDs, states, and CIDR blocks. The details of a selected VPC are displayed at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752865717/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering-DEMO/aws-vpc-management-console-details.jpg)
 
 ## Initial Connectivity Test
 
@@ -39,14 +39,14 @@ Follow these steps to configure the VPC peering connection:
 5. Verify that the CIDR blocks do not overlap. VPC peering requires distinct CIDR blocks for proper routing.
 6. Click **Create Peering Connection**.
 
-![The image shows the AWS VPC Management Console, specifically the "Create peering connection" page, where a user is selecting a local VPC to peer with another VPC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865718/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering-DEMO/aws-vpc-peering-connection-console.jpg)
+![The image shows the AWS VPC Management Console, specifically the "Create peering connection" page, where a user is selecting a local VPC to peer with another VPC.](https://kodekloud.com/kk-media/image/upload/v1752865718/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering-DEMO/aws-vpc-peering-connection-console.jpg)
 
 Once the request is sent, the peering connection appears in a “pending acceptance” state. Since both VPCs are in the same account, you need to manually accept the request:
 
 1. Select the pending peering connection.
 2. Click **Actions** and choose **Accept Request**.
 
-![The image shows an AWS VPC Management Console screen with details of a VPC peering connection request, which is pending acceptance. It includes information such as requester and accepter VPCs, owner IDs, and expiration time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865719/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering-DEMO/aws-vpc-peering-connection-pending.jpg)
+![The image shows an AWS VPC Management Console screen with details of a VPC peering connection request, which is pending acceptance. It includes information such as requester and accepter VPCs, owner IDs, and expiration time.](https://kodekloud.com/kk-media/image/upload/v1752865719/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering-DEMO/aws-vpc-peering-connection-pending.jpg)
 
 > **lightbulb** After accepting the peering request, the connection is established but resources still cannot communicate until the routing tables are correctly configured.
 
@@ -62,11 +62,11 @@ To enable communication:
 1. In VPC A’s route table, add a route with the destination CIDR **10.2.0.0/16** and set its target to the VPC peering connection.
 2. In VPC B’s route table, add a route with the destination CIDR **10.1.0.0/16** and set its target to the same peering connection.
 
-![The image shows an AWS Management Console screen displaying route tables for a Virtual Private Cloud (VPC). It lists various route tables with details such as route table ID, associations, and routes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865721/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering-DEMO/aws-management-console-vpc-route-tables.jpg)
+![The image shows an AWS Management Console screen displaying route tables for a Virtual Private Cloud (VPC). It lists various route tables with details such as route table ID, associations, and routes.](https://kodekloud.com/kk-media/image/upload/v1752865721/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering-DEMO/aws-management-console-vpc-route-tables.jpg)
 
-![The image shows the AWS Management Console with a focus on editing route tables. It displays routes with destinations, targets, and their statuses, allowing for modifications and saving changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865722/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering-DEMO/aws-management-console-route-tables.jpg)
+![The image shows the AWS Management Console with a focus on editing route tables. It displays routes with destinations, targets, and their statuses, allowing for modifications and saving changes.](https://kodekloud.com/kk-media/image/upload/v1752865722/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering-DEMO/aws-management-console-route-tables.jpg)
 
-![The image shows the AWS Management Console with a VPC route table being edited. It displays routes with destinations, targets, and their statuses, with options to add or remove routes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865723/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering-DEMO/aws-management-console-vpc-route-table.jpg)
+![The image shows the AWS Management Console with a VPC route table being edited. It displays routes with destinations, targets, and their statuses, with options to add or remove routes.](https://kodekloud.com/kk-media/image/upload/v1752865723/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering-DEMO/aws-management-console-vpc-route-table.jpg)
 
 > **triangle-alert** Ensure that the routing changes are applied to the correct route tables associated with the subnets containing your EC2 instances. Misconfigurations can prevent successful connectivity.
 

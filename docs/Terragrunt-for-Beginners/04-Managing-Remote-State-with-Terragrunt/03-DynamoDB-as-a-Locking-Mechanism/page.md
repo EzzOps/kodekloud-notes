@@ -23,11 +23,9 @@ terragrunt init --reconfigure
 * [Terragrunt Documentation](https://terragrunt.gruntwork.io/docs/)
 * [AWS S3 Backend](https://www.terraform.io/docs/backends/types/s3.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/2eef056a-8494-4e5d-acf0-25b04fad55c4/lesson/7e959b9e-c5b3-4dae-b9fd-08788512f552" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/2eef056a-8494-4e5d-acf0-25b04fad55c4/lesson/7e959b9e-c5b3-4dae-b9fd-08788512f552)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/2eef056a-8494-4e5d-acf0-25b04fad55c4/lesson/e61ba193-3780-4e0a-ae45-cc97b0afa1e0" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/2eef056a-8494-4e5d-acf0-25b04fad55c4/lesson/e61ba193-3780-4e0a-ae45-cc97b0afa1e0)
 
 
 # DynamoDB as a Locking Mechanism
@@ -42,9 +40,7 @@ Leveraging **AWS DynamoDB** for state locking is a best practice when using Terr
 * Prevents concurrent `terraform apply` or `terragrunt apply` runs
 * Provides a scalable, highly available lock backend in AWS
 
-<Frame>
-  ![The image describes the benefits of using Terraform/Terragrunt locks with AWS DynamoDB, highlighting state file locking, prevention of multiple user access, and the use of DynamoDB for state locking.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884265/notes-assets/images/Terragrunt-for-Beginners-DynamoDB-as-a-Locking-Mechanism/terraform-terragrunt-dynamodb-locking-benefits.jpg)
-</Frame>
+![The image describes the benefits of using Terraform/Terragrunt locks with AWS DynamoDB, highlighting state file locking, prevention of multiple user access, and the use of DynamoDB for state locking.](https://kodekloud.com/kk-media/image/upload/v1752884265/notes-assets/images/Terragrunt-for-Beginners-DynamoDB-as-a-Locking-Mechanism/terraform-terragrunt-dynamodb-locking-benefits.jpg)
 
 ## Understanding Terraform & Terragrunt State Locks
 
@@ -79,9 +75,7 @@ remote_state {
 }
 ```
 
-<Callout icon="lightbulb">
-  Terragrunt checks for the existence of the DynamoDB table and creates it if missing—no manual setup required. Ensure your IAM role has permissions for `dynamodb:CreateTable`.
-</Callout>
+> **lightbulb** Terragrunt checks for the existence of the DynamoDB table and creates it if missing—no manual setup required. Ensure your IAM role has permissions for `dynamodb:CreateTable`.
 
 ## Handling Stuck Locks
 
@@ -93,9 +87,7 @@ terraform force-unlock LOCK_ID
 
 Replace `LOCK_ID` with the identifier from the error message. This removes the lock entry in DynamoDB and lets you proceed.
 
-<Callout icon="triangle-alert">
-  `force-unlock` bypasses safety checks. Only use it when you are certain no other process is applying changes.
-</Callout>
+> **triangle-alert** `force-unlock` bypasses safety checks. Only use it when you are certain no other process is applying changes.
 
 ***
 
@@ -106,6 +98,4 @@ Replace `LOCK_ID` with the identifier from the error message. This removes the l
 * [AWS DynamoDB Developer Guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)
 * [Managing State Locking](https://www.terraform.io/language/state/locking)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/2eef056a-8494-4e5d-acf0-25b04fad55c4/lesson/5ba2c408-e273-4c0a-b42c-9ce0fae2e754" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/2eef056a-8494-4e5d-acf0-25b04fad55c4/lesson/5ba2c408-e273-4c0a-b42c-9ce0fae2e754)

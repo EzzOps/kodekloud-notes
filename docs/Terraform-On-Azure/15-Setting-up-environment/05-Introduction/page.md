@@ -42,9 +42,7 @@ To use Cloud Shell:
   <img alt="The image shows the Microsoft Azure portal interface with options for Azure services and resources, along with a Cloud Shell terminal being connected at the bottom." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Azure Cloud Shell is great for quick tests, demos, or when you're away from your usual workstation. It is not recommended as the primary environment for production Terraform workflows—use CI/CD pipelines or local development environments for reproducible, auditable runs.
-</Callout>
+> **lightbulb** Azure Cloud Shell is great for quick tests, demos, or when you're away from your usual workstation. It is not recommended as the primary environment for production Terraform workflows—use CI/CD pipelines or local development environments for reproducible, auditable runs.
 
 Common Terraform commands (summary)
 
@@ -81,9 +79,7 @@ Links and References
 * [Azure Cloud Shell documentation](https://learn.microsoft.com/azure/cloud-shell/overview)
 * [Azure Terraform Provider docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/db2adc19-fa48-4b03-9d9a-8ef71c4c28db/lesson/33827f9f-94da-434d-b60b-fc4433c3925a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/db2adc19-fa48-4b03-9d9a-8ef71c4c28db/lesson/33827f9f-94da-434d-b60b-fc4433c3925a)
 
 
 # Introduction

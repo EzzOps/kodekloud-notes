@@ -10,9 +10,7 @@ In this article, you'll learn how to write, compile, and run your very first Rus
 
 Begin by creating a new Rust source file named `main.rs`. Remember that Rust source files must have the `.rs` extension. If you want to use multiple words for the filename, separate them with an underscore. For example, use `hello_world.rs` instead of `hello world.rs`.
 
-<Frame>
-  ![The image shows a folder icon labeled "main.rs" and a file named "hello\_world.rs" with a checkmark, under the title "Writing and Running Your First Rust Program."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883993/notes-assets/images/Rust-Programming-Writing-and-Running-Your-First-Rust-program/writing-running-first-rust-program.jpg)
-</Frame>
+![The image shows a folder icon labeled "main.rs" and a file named "hello\_world.rs" with a checkmark, under the title "Writing and Running Your First Rust Program."](https://kodekloud.com/kk-media/image/upload/v1752883993/notes-assets/images/Rust-Programming-Writing-and-Running-Your-First-Rust-program/writing-running-first-rust-program.jpg)
 
 ## Writing the Code
 
@@ -26,9 +24,7 @@ fn main() {
 
 The code above defines the `main` function, which serves as the entry point for every Rust executable program. Inside the `main` function, the `println!` macro (identified by the exclamation mark) outputs the string "Hello, world!" to the console.
 
-<Callout icon="lightbulb">
-  In Rust, semicolons are used to differentiate between expressions and statements. Understanding when and how to use them is essential to prevent unexpected behavior.
-</Callout>
+> **lightbulb** In Rust, semicolons are used to differentiate between expressions and statements. Understanding when and how to use them is essential to prevent unexpected behavior.
 
 ## Compiling and Running the Program
 
@@ -67,9 +63,7 @@ In this lesson, you have:
 * Compiled the Rust program with `rustc`.
 * Executed the generated executable file from your terminal.
 
-<Callout icon="lightbulb">
-  While using `rustc` is sufficient for compiling simple programs, larger projects benefit from Cargo—a tool that manages dependencies, build configurations, and code sharing.
-</Callout>
+> **lightbulb** While using `rustc` is sufficient for compiling simple programs, larger projects benefit from Cargo—a tool that manages dependencies, build configurations, and code sharing.
 
 ## Quick Exercise: Creating a New Rust Project with Cargo
 
@@ -81,10 +75,6 @@ $ rustfmt main.rs
 
 This command automatically formats your Rust code according to community style guidelines.
 
-<Frame>
-  ![The image provides a quick exercise for creating a new Rust project using Cargo, writing a "Hello World" program, and using the rustfmt tool for code formatting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883994/notes-assets/images/Rust-Programming-Writing-and-Running-Your-First-Rust-program/rust-project-hello-world-exercise.jpg)
-</Frame>
+![The image provides a quick exercise for creating a new Rust project using Cargo, writing a "Hello World" program, and using the rustfmt tool for code formatting.](https://kodekloud.com/kk-media/image/upload/v1752883994/notes-assets/images/Rust-Programming-Writing-and-Running-Your-First-Rust-program/rust-project-hello-world-exercise.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/f0beaa1a-4703-42c6-b7ce-c1efd94cc5a7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/f0beaa1a-4703-42c6-b7ce-c1efd94cc5a7)

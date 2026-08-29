@@ -41,9 +41,7 @@ rules:
   - list
 ```
 
-<Callout icon="lightbulb">
-  The **intern-role** is strictly limited to pod operations within the staging namespace.
-</Callout>
+> **lightbulb** The **intern-role** is strictly limited to pod operations within the staging namespace.
 
 ***
 
@@ -128,9 +126,7 @@ Output:
 yes
 ```
 
-<Callout icon="triangle-alert">
-  The result is concerning because an intern (Bob) should not be allowed to retrieve secrets in the **top-secret** namespace.
-</Callout>
+> **triangle-alert** The result is concerning because an intern (Bob) should not be allowed to retrieve secrets in the **top-secret** namespace.
 
 ***
 
@@ -273,8 +269,6 @@ The verbose output can assist in pinpointing which role or binding is granting t
 
 By following these steps, you can effectively diagnose and remediate RBAC misconfigurations within your Kubernetes clusters, ensuring that each user group has only the permissions intended for their roles. This not only bolsters security but also adheres to the principle of least privilege.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/f9ea629b-174f-46a0-a098-ba5912259497" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/f9ea629b-174f-46a0-a098-ba5912259497)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/bdb42aa7-bdae-4d46-9454-891e05404507" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/bdb42aa7-bdae-4d46-9454-891e05404507)

@@ -11,7 +11,7 @@ In this tutorial, we’ll build a complete CI/CD workflow for a Blazor WebAssemb
 1. Sign in to [Azure DevOps](https://dev.azure.com/).
 2. Click **New project**, name it **KodeKloudBlog**, and create.
 
-![The image shows an Azure DevOps interface with a "Create new project" dialog open, where a user is entering details for a new project named "KodeKloudBlog."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867801/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-create-new-project-kodekloudblog.jpg)
+![The image shows an Azure DevOps interface with a "Create new project" dialog open, where a user is entering details for a new project named "KodeKloudBlog."](https://kodekloud.com/kk-media/image/upload/v1752867801/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-create-new-project-kodekloudblog.jpg)
 
 ## 2. Initialize the Repository
 
@@ -34,11 +34,11 @@ In this tutorial, we’ll build a complete CI/CD workflow for a Blazor WebAssemb
    git push -u origin master
    ```
 
-![The image shows a screenshot of an Azure DevOps project dashboard named "KodeKloudBlog," featuring options for Boards, Repos, Pipelines, Test Plans, and Artifacts. It includes a welcome message and a section for project stats, which are currently unavailable.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867804/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-kodekloudblog-dashboard-screenshot.jpg)
+![The image shows a screenshot of an Azure DevOps project dashboard named "KodeKloudBlog," featuring options for Boards, Repos, Pipelines, Test Plans, and Artifacts. It includes a welcome message and a section for project stats, which are currently unavailable.](https://kodekloud.com/kk-media/image/upload/v1752867804/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-kodekloudblog-dashboard-screenshot.jpg)
 
 Now your code is versioned:
 
-![The image shows an Azure DevOps interface for a repository, listing files and folders for the "KodeKloudBlog" project with last change timestamps and commit details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867806/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-kodekloudblog-repo-interface.jpg)
+![The image shows an Azure DevOps interface for a repository, listing files and folders for the "KodeKloudBlog" project with last change timestamps and commit details.](https://kodekloud.com/kk-media/image/upload/v1752867806/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-kodekloudblog-repo-interface.jpg)
 
 ## 3. Create the Build Pipeline
 
@@ -46,11 +46,11 @@ Now your code is versioned:
 
 1. Navigate to **Pipelines** > **Create Pipeline**.
 
-![The image shows an Azure DevOps interface prompting the user to create their first pipeline, with a sidebar menu on the left and a "Create Pipeline" button in the center.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867807/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-create-pipeline-interface.jpg)
+![The image shows an Azure DevOps interface prompting the user to create their first pipeline, with a sidebar menu on the left and a "Create Pipeline" button in the center.](https://kodekloud.com/kk-media/image/upload/v1752867807/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-create-pipeline-interface.jpg)
 
 2. Select **Azure Repos Git** as the source.
 
-![The image shows an Azure DevOps interface for creating a new pipeline, asking "Where is your code?" with options like Azure Repos Git, Bitbucket Cloud, GitHub, and GitHub Enterprise Server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867807/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-new-pipeline-interface.jpg)
+![The image shows an Azure DevOps interface for creating a new pipeline, asking "Where is your code?" with options like Azure Repos Git, Bitbucket Cloud, GitHub, and GitHub Enterprise Server.](https://kodekloud.com/kk-media/image/upload/v1752867807/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-new-pipeline-interface.jpg)
 
 3. Choose the **ASP.NET Core** template and review the YAML:
 
@@ -104,15 +104,15 @@ Now your code is versioned:
 * Save and run the pipeline.
 * If prompted to grant permissions for the agent pool, approve to continue.
 
-![The image shows an Azure DevOps pipeline interface with a pop-up asking for permission to access a resource, specifically to permit the use of an agent pool for the pipeline.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867808/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-pipeline-permission-popup.jpg)
+![The image shows an Azure DevOps pipeline interface with a pop-up asking for permission to access a resource, specifically to permit the use of an agent pool for the pipeline.](https://kodekloud.com/kk-media/image/upload/v1752867808/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-pipeline-permission-popup.jpg)
 
 * After completion, click the build to see each step’s logs:
 
-![The image shows an Azure DevOps pipeline interface with a completed job run, displaying the steps and their statuses on the left and job details on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867809/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-pipeline-job-run-interface.jpg)
+![The image shows an Azure DevOps pipeline interface with a completed job run, displaying the steps and their statuses on the left and job details on the right.](https://kodekloud.com/kk-media/image/upload/v1752867809/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-pipeline-job-run-interface.jpg)
 
 Review your agent pool:
 
-![The image shows a web interface for Azure DevOps, specifically the "Agent pools" settings page, displaying two agents with their status, last run time, and version information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867810/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-agent-pools-settings.jpg)
+![The image shows a web interface for Azure DevOps, specifically the "Agent pools" settings page, displaying two agents with their status, last run time, and version information.](https://kodekloud.com/kk-media/image/upload/v1752867810/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-devops-agent-pools-settings.jpg)
 
 ## 4. Deploy to Azure Static Web Apps
 
@@ -121,19 +121,19 @@ Review your agent pool:
 3. Choose **Free** plan.
 4. Under **Deployment Details**, select **Azure DevOps**, then your organization, project, repo, and branch.
 
-![The image shows a Microsoft Azure portal page for creating a Static Web App, with fields for subscription, resource group, app details, hosting plan, and deployment details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867811/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-portal-static-web-app-creation.jpg)
+![The image shows a Microsoft Azure portal page for creating a Static Web App, with fields for subscription, resource group, app details, hosting plan, and deployment details.](https://kodekloud.com/kk-media/image/upload/v1752867811/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-portal-static-web-app-creation.jpg)
 
 On **Advanced**, pick region and API settings if needed:
 
-![The image shows a Microsoft Azure portal page for creating a Static Web App, specifically on the "Advanced" tab, where users can select the region for Azure Functions API and staging environments. There are options for distributed functions and a note about hosting plans.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867812/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-portal-static-web-app-advanced.jpg)
+![The image shows a Microsoft Azure portal page for creating a Static Web App, specifically on the "Advanced" tab, where users can select the region for Azure Functions API and staging environments. There are options for distributed functions and a note about hosting plans.](https://kodekloud.com/kk-media/image/upload/v1752867812/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-portal-static-web-app-advanced.jpg)
 
 Review and **Create**:
 
-![The image shows a Microsoft Azure portal page for creating a static web app, displaying details such as subscription, resource group, name, region, and repository information. There is a "Create" button at the bottom for finalizing the setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867813/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-portal-static-web-app-setup.jpg)
+![The image shows a Microsoft Azure portal page for creating a static web app, displaying details such as subscription, resource group, name, region, and repository information. There is a "Create" button at the bottom for finalizing the setup.](https://kodekloud.com/kk-media/image/upload/v1752867813/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-portal-static-web-app-setup.jpg)
 
 Once provisioned, you’ll see this confirmation:
 
-![The image shows a Microsoft Azure congratulatory message for a new site, with recommended next steps including learning about Azure Static Web Apps, creating a static web app from VS Code, and installing the Static Web Apps CLI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867815/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-congratulatory-message-static-web-apps.jpg)
+![The image shows a Microsoft Azure congratulatory message for a new site, with recommended next steps including learning about Azure Static Web Apps, creating a static web app from VS Code, and installing the Static Web Apps CLI.](https://kodekloud.com/kk-media/image/upload/v1752867815/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Azure-Pipelines/azure-congratulatory-message-static-web-apps.jpg)
 
 Azure DevOps automatically creates a second pipeline for the Static Web App.
 

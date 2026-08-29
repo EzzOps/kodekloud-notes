@@ -10,13 +10,9 @@ Welcome to this detailed guide on deploying Azure AD Connect for a hybrid identi
 2. Preparing the users
 3. Preparing the Domain Controller
 
-<Frame>
-  ![The image shows a GitHub repository interface with a list of PowerShell script files related to "Hybrid Identity" under the "kodekloud-az500" project. The files include "prep-dc.ps1," "prep-users.ps1," "prep-vms.ps1," and "prepare-vms.ps1."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881899/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/github-repo-hybrid-identity-scripts.jpg)
-</Frame>
+![The image shows a GitHub repository interface with a list of PowerShell script files related to "Hybrid Identity" under the "kodekloud-az500" project. The files include "prep-dc.ps1," "prep-users.ps1," "prep-vms.ps1," and "prepare-vms.ps1."](https://kodekloud.com/kk-media/image/upload/v1752881899/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/github-repo-hybrid-identity-scripts.jpg)
 
-<Callout icon="lightbulb">
-  To deploy all required resources, clone the repository and execute the scripts from the specified deployment directory. Running the scripts from a different directory may lead to internal script reference issues.
-</Callout>
+> **lightbulb** To deploy all required resources, clone the repository and execute the scripts from the specified deployment directory. Running the scripts from a different directory may lead to internal script reference issues.
 
 ## Running the Deployment Scripts
 
@@ -38,15 +34,11 @@ INFO: Az Module is already installed, skipping to next step
 WARNING: To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code L8KN8A64WG to authenticate.
 ```
 
-<Callout icon="triangle-alert">
-  Ensure you run the console window as an administrator. The script needs administrator privileges to update the execution policy and import necessary modules.
-</Callout>
+> **triangle-alert** Ensure you run the console window as an administrator. The script needs administrator privileges to update the execution policy and import necessary modules.
 
 After authentication via the Microsoft device login, the script deploys the resource group, subnet, virtual network, and the domain controller.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface with a PowerShell window open, displaying a command prompt in a specific directory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881899/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/azure-portal-powershell-command.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface with a PowerShell window open, displaying a command prompt in a specific directory.](https://kodekloud.com/kk-media/image/upload/v1752881899/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/azure-portal-powershell-command.jpg)
 
 During deployment, you might see output similar to this:
 
@@ -66,17 +58,13 @@ Creating domain controller
 
 After the DC is provisioned, additional resources, including the client VM and user accounts, are automatically deployed. The on-premises users are later synchronized to Azure AD.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying a list of virtual machines, including details like name, type, subscription, location, status, operating system, and IP address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881902/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/azure-portal-virtual-machines-list.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying a list of virtual machines, including details like name, type, subscription, location, status, operating system, and IP address.](https://kodekloud.com/kk-media/image/upload/v1752881902/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/azure-portal-virtual-machines-list.jpg)
 
 ## Deploying and Logging Into the Domain Controller
 
 Once the deployment completes, navigate to the virtual machine named "dc-01" in the Azure portal and copy its public IP address for Remote Desktop (RDP) access. The username and password details are provided at the top of the `prep-dc.ps1` module.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface with a virtual machine named "dc-01" selected, displaying its details and a Windows Security prompt for entering credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881903/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/azure-portal-virtual-machine-dc-01.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface with a virtual machine named "dc-01" selected, displaying its details and a Windows Security prompt for entering credentials.](https://kodekloud.com/kk-media/image/upload/v1752881903/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Connect-Demonstration/azure-portal-virtual-machine-dc-01.jpg)
 
 Below is an example snippet used in the domain controller configuration script:
 

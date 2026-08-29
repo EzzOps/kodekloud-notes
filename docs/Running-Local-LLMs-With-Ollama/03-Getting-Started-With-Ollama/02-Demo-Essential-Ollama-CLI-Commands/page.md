@@ -50,13 +50,11 @@ Flags:
   -v, --version  Show version information
 ```
 
-<Callout icon="lightbulb">
-  Append `--help` to any command to view detailed usage information, for example:
+> **lightbulb** Append `--help` to any command to view detailed usage information, for example:
 
   ```bash theme={null}
   ollama run --help
   ```
-</Callout>
 
 ***
 
@@ -91,9 +89,7 @@ Models continue running in the background even after you exit the chat interface
 ollama stop llama3.2
 ```
 
-<Callout icon="triangle-alert">
-  Leaving unused models running can consume memory and GPU resources. Always stop models you’re no longer using.
-</Callout>
+> **triangle-alert** Leaving unused models running can consume memory and GPU resources. Always stop models you’re no longer using.
 
 ***
 
@@ -136,9 +132,7 @@ ollama list
 
 Use `ollama pull` to fetch a model without immediately launching it. For example, to pull Mistral 7B:
 
-<Frame>
-  ![The image shows a webpage for the Mistral AI 7B model, detailing its version, parameters, and license information. The page includes options for searching models and accessing tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883698/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Essential-Ollama-CLI-Commands/mistral-ai-7b-model-page.jpg)
-</Frame>
+![The image shows a webpage for the Mistral AI 7B model, detailing its version, parameters, and license information. The page includes options for searching models and accessing tools.](https://kodekloud.com/kk-media/image/upload/v1752883698/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Essential-Ollama-CLI-Commands/mistral-ai-7b-model-page.jpg)
 
 ```bash theme={null}
 ollama pull mistral
@@ -151,9 +145,7 @@ pulling manifest
 pulling ff82381e2bea... 28%
 ```
 
-<Callout icon="lightbulb">
-  Press `Ctrl+C` at any point to abort the download.
-</Callout>
+> **lightbulb** Press `Ctrl+C` at any point to abort the download.
 
 ***
 
@@ -232,8 +224,6 @@ ollama ps
 * [LLAMA 3.2 License Details](https://example.com/llama3-license)
 * [Local LLM Best Practices](https://example.com/local-llm-guide)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/836a96fe-9951-42b6-83ba-a602299c87c9/lesson/7bb1f793-6edb-4b13-8e2c-5fd9027b0ed8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/836a96fe-9951-42b6-83ba-a602299c87c9/lesson/7bb1f793-6edb-4b13-8e2c-5fd9027b0ed8)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/836a96fe-9951-42b6-83ba-a602299c87c9/lesson/1e1ade67-8661-4f08-bfe0-5177df20caea" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/836a96fe-9951-42b6-83ba-a602299c87c9/lesson/1e1ade67-8661-4f08-bfe0-5177df20caea)

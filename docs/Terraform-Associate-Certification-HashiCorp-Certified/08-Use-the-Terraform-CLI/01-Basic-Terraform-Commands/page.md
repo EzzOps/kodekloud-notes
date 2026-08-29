@@ -43,9 +43,7 @@ Error: Unsupported argument
 An argument named "file_permissions" is not expected here. Did you mean "file_permission"?
 ```
 
-<Callout icon="lightbulb">
-  Always review the error messages carefully—Terraform’s hints help you quickly identify and fix configuration mistakes.
-</Callout>
+> **lightbulb** Always review the error messages carefully—Terraform’s hints help you quickly identify and fix configuration mistakes.
 
 ## Terraform fmt
 
@@ -360,6 +358,4 @@ For additional resources and more detailed explanations, consider visiting the f
 * [Terraform State Management](https://www.terraform.io/docs/state)
 * [Terraform Commands](https://www.terraform.io/docs/cli/commands-index.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/ed4291fc-57a9-43d3-abff-eb82bba4a679/lesson/8d5ee4a6-584a-4300-8d76-ea654f8f2a04" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/ed4291fc-57a9-43d3-abff-eb82bba4a679/lesson/8d5ee4a6-584a-4300-8d76-ea654f8f2a04)

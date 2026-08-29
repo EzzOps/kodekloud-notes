@@ -45,9 +45,7 @@ $ sudo echo "Test passed?"
 Sorry, user trinity is not allowed to execute '/bin/echo Test passed?' as root on kodekloud.
 ```
 
-<Callout icon="lightbulb">
-  By default, sudo commands run as root. To run a command as a different user, specify the desired user with the `-u` option.
-</Callout>
+> **lightbulb** By default, sudo commands run as root. To run a command as a different user, specify the desired user with the `-u` option.
 
 For example, to run a command as Trinity herself:
 
@@ -59,19 +57,15 @@ If the run-as field is set to `ALL`, the policy permits execution as any user. H
 
 Additionally, the first time a sudo command is executed in a session, it prompts for the current user’s password. The sudoers file also provides options to disable this password prompt for specific users if configured appropriately.
 
-<Callout icon="triangle-alert">
-  Always back up your sudoers file before making changes. Use the visudo utility to edit this file, ensuring that syntax errors do not lock you out of administrative privileges.
-</Callout>
+> **triangle-alert** Always back up your sudoers file before making changes. Use the visudo utility to edit this file, ensuring that syntax errors do not lock you out of administrative privileges.
 
 By carefully setting these policies, you can secure your system with fine-tuned administrative rights rather than granting universal sudo access.
 
 For more detailed guidance on managing user privileges in Linux, consider exploring [Linux Administration Best Practices](https://www.linux.com/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/1f6adaa6-ada5-47f3-add4-8c2c0861fa69" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/1f6adaa6-ada5-47f3-add4-8c2c0861fa69)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/b9cd8286-ad81-4652-99c2-34dc337a10d1" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/b9cd8286-ad81-4652-99c2-34dc337a10d1)
 
 
 # Conclusion
@@ -88,26 +82,20 @@ Congratulations on completing this lesson! You’re now ready to register for th
 2. Click **Sign Up** and fill in your details.
 3. Check your inbox for your LPI ID.
 
-<Callout icon="lightbulb">
-  Your LPI ID is required when registering for any LPI exam and viewing your results.
-</Callout>
+> **lightbulb** Your LPI ID is required when registering for any LPI exam and viewing your results.
 
 ## Step 2: Purchase Your LPIC-1 101 Exam Voucher
 
 1. Log in to your [LPI account](https://lpi.org).
 2. Navigate to **Certifications** → **LPIC-1**.
 
-<Frame>
-  ![The image shows a webpage from the Linux Professional Institute detailing the LPIC-1 certification, including its objectives, requirements, and available resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881373/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Conclusion/lpic-1-certification-objectives-requirements.jpg)
-</Frame>
+![The image shows a webpage from the Linux Professional Institute detailing the LPIC-1 certification, including its objectives, requirements, and available resources.](https://kodekloud.com/kk-media/image/upload/v1752881373/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Conclusion/lpic-1-certification-objectives-requirements.jpg)
 
 3. Click **Purchase Voucher** to be redirected to Pearson VUE.
 4. Select your region and country.
 5. Choose the **LPIC-1 101** voucher and complete payment (current price: USD 200).
 
-<Callout icon="triangle-alert">
-  Exam fees vary by country. Always confirm the latest cost before checkout.
-</Callout>
+> **triangle-alert** Exam fees vary by country. Always confirm the latest cost before checkout.
 
 ## Registration Summary
 
@@ -129,6 +117,4 @@ Congratulations on completing this lesson! You’re now ready to register for th
 
 Best of luck on your exams! We hope this lesson empowers you to achieve LPIC-1 success.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/81f13773-2c1f-492a-87b9-0d537670bd90/lesson/74dbc20c-ee21-4dac-bc69-a9089179cabe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/81f13773-2c1f-492a-87b9-0d537670bd90/lesson/74dbc20c-ee21-4dac-bc69-a9089179cabe)

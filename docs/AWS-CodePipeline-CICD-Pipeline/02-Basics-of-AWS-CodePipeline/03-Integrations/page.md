@@ -17,7 +17,7 @@ A robust CI/CD pipeline typically follows four core stages:
 
 You can also insert **Approvals** or **Invocations** anywhere in the flow to meet compliance or automation requirements.
 
-![The image shows a slide titled "Additional Actions" with icons labeled "Approve" and "Invoke," alongside a simple flowchart with three colored dots connected by arrows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862555/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Integrations/additional-actions-approve-invoke-flowchart.jpg)
+![The image shows a slide titled "Additional Actions" with icons labeled "Approve" and "Invoke," alongside a simple flowchart with three colored dots connected by arrows.](https://kodekloud.com/kk-media/image/upload/v1752862555/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Integrations/additional-actions-approve-invoke-flowchart.jpg)
 
 ***
 
@@ -36,7 +36,7 @@ CodePipeline supports multiple source providers, enabling you to trigger pipelin
 
 Amazon S3 offers durable object storage with versioning and event-based triggers. Configure an S3 bucket event to start your pipeline whenever a new object arrives.
 
-![The image shows a green bucket icon at the center, surrounded by a dotted circle with a pink cloud search icon and an orange lambda icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862556/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Integrations/green-bucket-icon-cloud-lambda-circle.jpg)
+![The image shows a green bucket icon at the center, surrounded by a dotted circle with a pink cloud search icon and an orange lambda icon.](https://kodekloud.com/kk-media/image/upload/v1752862556/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Integrations/green-bucket-icon-cloud-lambda-circle.jpg)
 
 ### AWS CodeCommit
 
@@ -50,7 +50,7 @@ Store and manage Docker container images. Use `docker push` to upload images—p
 
 Link GitHub or Bitbucket via AWS CodeStar Connections. Grant repository access and select the branch to trigger your pipeline.
 
-![The image illustrates a DevOps CI/CD pipeline with AWS Cloud services (Amazon S3, AWS CodeCommit, Amazon ECR) and third-party tools (GitHub, Bitbucket). It shows the stages of Source, Build, Test, Deploy in a continuous loop.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862557/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Integrations/devops-cicd-pipeline-aws-tools.jpg)
+![The image illustrates a DevOps CI/CD pipeline with AWS Cloud services (Amazon S3, AWS CodeCommit, Amazon ECR) and third-party tools (GitHub, Bitbucket). It shows the stages of Source, Build, Test, Deploy in a continuous loop.](https://kodekloud.com/kk-media/image/upload/v1752862557/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Integrations/devops-cicd-pipeline-aws-tools.jpg)
 
 ***
 
@@ -84,7 +84,7 @@ artifacts:
     - '**/*'
 ```
 
-![The image illustrates a DevOps lifecycle with a focus on the "Build" phase, highlighting AWS CodeBuild as a fully managed service that compiles, runs tests, and produces artifacts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862559/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Integrations/devops-lifecycle-build-aws-codebuild.jpg)
+![The image illustrates a DevOps lifecycle with a focus on the "Build" phase, highlighting AWS CodeBuild as a fully managed service that compiles, runs tests, and produces artifacts.](https://kodekloud.com/kk-media/image/upload/v1752862559/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Integrations/devops-lifecycle-build-aws-codebuild.jpg)
 
 > **lightbulb** Ensure your CodeBuild service role has permissions to pull source and write artifacts to S3 or Amazon ECR.
 
@@ -102,7 +102,7 @@ Run unit and integration tests within CodeBuild, Jenkins, TeamCity, or CloudBees
 * **AWS Device Farm** for mobile and web app testing
 * Third-party services: BlazeMeter, RunScope, Micro Focus, Ghost Inspector
 
-![The image shows a DevOps lifecycle diagram with stages like Source, Build, Test, and Deploy, alongside logos for AWS Device Farm and third-party tools like Runscope, BlazeMeter, MicroFocus, and Ghost Inspector.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862560/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Integrations/devops-lifecycle-diagram-aws-tools.jpg)
+![The image shows a DevOps lifecycle diagram with stages like Source, Build, Test, and Deploy, alongside logos for AWS Device Farm and third-party tools like Runscope, BlazeMeter, MicroFocus, and Ghost Inspector.](https://kodekloud.com/kk-media/image/upload/v1752862560/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Integrations/devops-lifecycle-diagram-aws-tools.jpg)
 
 ***
 
@@ -126,7 +126,7 @@ Target servers, serverless environments, containers, or static sites with flexib
 * **AWS OpsWorks**: Chef-based server configurations
 * **CloudFormation**, **Service Catalog**, **AppConfig**, **Alexa Skills**
 
-![The image shows a DevOps lifecycle diagram with CI/CD stages and a list of AWS Cloud services, including Amazon S3 and AWS CodeDeploy, alongside a third-party service, XebiaLabs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862561/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Integrations/devops-lifecycle-cicd-aws-diagram.jpg)
+![The image shows a DevOps lifecycle diagram with CI/CD stages and a list of AWS Cloud services, including Amazon S3 and AWS CodeDeploy, alongside a third-party service, XebiaLabs.](https://kodekloud.com/kk-media/image/upload/v1752862561/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Integrations/devops-lifecycle-cicd-aws-diagram.jpg)
 
 ***
 
@@ -138,7 +138,7 @@ Beyond core stages, incorporate approvals or invoke custom logic as needed.
 
 Use Amazon SNS or AWS Chatbot to notify stakeholders. Approvers click an action in the AWS Console or via email/SMS to proceed.
 
-![The image shows a diagram labeled "Approvals" with a section for "AWS Cloud" featuring the Amazon Simple Notification Service (SNS) logo and text.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862562/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Integrations/approvals-aws-cloud-sns-diagram.jpg)
+![The image shows a diagram labeled "Approvals" with a section for "AWS Cloud" featuring the Amazon Simple Notification Service (SNS) logo and text.](https://kodekloud.com/kk-media/image/upload/v1752862562/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Integrations/approvals-aws-cloud-sns-diagram.jpg)
 
 > **triangle-alert** Configure your SNS topics and endpoints carefully to avoid spamming recipients.
 
@@ -146,7 +146,7 @@ Use Amazon SNS or AWS Chatbot to notify stakeholders. Approvers click an action 
 
 Trigger AWS Lambda functions or Step Functions to run custom validations, security scans (e.g., Snyk), or complex orchestrations.
 
-![The image shows a diagram labeled "Invocations" with two sections: "AWS Cloud" featuring AWS Lambda and AWS Step Functions, and "Third Party" featuring Snyk.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862563/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Integrations/invocations-aws-cloud-third-party-diagram.jpg)
+![The image shows a diagram labeled "Invocations" with two sections: "AWS Cloud" featuring AWS Lambda and AWS Step Functions, and "Third Party" featuring Snyk.](https://kodekloud.com/kk-media/image/upload/v1752862563/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Integrations/invocations-aws-cloud-third-party-diagram.jpg)
 
 ***
 

@@ -10,7 +10,7 @@ Next, we delve into various caching control techniques that empower you to manag
 
 Finally, we introduce the Azure CDN Library, a powerful toolkit that allows you to execute a range of actions on your Azure CDN, from configuration to monitoring. This library is designed to simplify the process of optimizing and managing your content delivery strategy.
 
-![The image is an introduction slide outlining three learning objectives related to Azure Content Delivery, including understanding its workings, controlling caching, and using the Azure CDN Library.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866267/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Introduction/azure-content-delivery-learning-objectives.jpg)
+![The image is an introduction slide outlining three learning objectives related to Azure Content Delivery, including understanding its workings, controlling caching, and using the Azure CDN Library.](https://kodekloud.com/kk-media/image/upload/v1752866267/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Introduction/azure-content-delivery-learning-objectives.jpg)
 
 Let's begin by exploring the core concepts of Azure Content Delivery Networks.
 

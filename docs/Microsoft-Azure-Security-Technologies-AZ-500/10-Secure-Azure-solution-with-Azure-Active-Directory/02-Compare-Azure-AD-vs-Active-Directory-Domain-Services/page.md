@@ -12,13 +12,9 @@ Azure AD is a cloud-powered identity and access management solution ideal for mo
 
 Azure AD also supports external collaboration through robust B2B and B2C capabilities and integrates seamlessly with both Azure services and third-party applications. This integration helps create a cohesive identity management framework that is both powerful and flexible.
 
-<Frame>
-  ![The image compares Azure Active Directory, Azure AD Domain Services, and AD Domain Services, highlighting features like cloud-based identity management, user authentication, collaboration, and integration with Azure services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882191/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Compare-Azure-AD-vs-Active-Directory-Domain-Services/azure-active-directory-comparison.jpg)
-</Frame>
+![The image compares Azure Active Directory, Azure AD Domain Services, and AD Domain Services, highlighting features like cloud-based identity management, user authentication, collaboration, and integration with Azure services.](https://kodekloud.com/kk-media/image/upload/v1752882191/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Compare-Azure-AD-vs-Active-Directory-Domain-Services/azure-active-directory-comparison.jpg)
 
-<Callout icon="lightbulb">
-  If your organization is moving towards a cloud-first strategy, Azure AD provides an extensive suite of tools and integrations designed to secure and simplify identity management.
-</Callout>
+> **lightbulb** If your organization is moving towards a cloud-first strategy, Azure AD provides an extensive suite of tools and integrations designed to secure and simplify identity management.
 
 ## Azure AD Domain Services (Azure AD DS)
 
@@ -26,9 +22,7 @@ Azure AD DS serves as a bridge between traditional on-premises Active Directory 
 
 By integrating directly with Azure AD, Azure AD DS allows administrators to leverage centralized identity management while maintaining the traditional Active Directory experience. This is particularly useful during migration projects, as it minimizes the need for on-premises infrastructure.
 
-<Frame>
-  ![The image compares Azure Active Directory, Azure AD Domain Services, and AD Domain Services, highlighting features like fully managed domain service, compatibility, domain join, lift-and-shift scenarios, and secure integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882192/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Compare-Azure-AD-vs-Active-Directory-Domain-Services/azure-ad-comparison-features.jpg)
-</Frame>
+![The image compares Azure Active Directory, Azure AD Domain Services, and AD Domain Services, highlighting features like fully managed domain service, compatibility, domain join, lift-and-shift scenarios, and secure integration.](https://kodekloud.com/kk-media/image/upload/v1752882192/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Compare-Azure-AD-vs-Active-Directory-Domain-Services/azure-ad-comparison-features.jpg)
 
 ## Active Directory Domain Services (AD DS)
 
@@ -36,9 +30,7 @@ Active Directory Domain Services (AD DS) is the on-premises solution that has po
 
 Deploying AD DS, however, requires dedicated on-premises infrastructure, which may not be ideal for organizations looking to leverage cloud benefits. It remains the go-to solution for environments that rely heavily on Windows Server deployments and require complete control over their identity services.
 
-<Frame>
-  ![The image compares Azure Active Directory, Azure AD Domain Services, and AD Domain Services, highlighting features like on-premises service, authentication, infrastructure setup, and suitability for traditional environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882193/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Compare-Azure-AD-vs-Active-Directory-Domain-Services/azure-active-directory-comparison-2.jpg)
-</Frame>
+![The image compares Azure Active Directory, Azure AD Domain Services, and AD Domain Services, highlighting features like on-premises service, authentication, infrastructure setup, and suitability for traditional environments.](https://kodekloud.com/kk-media/image/upload/v1752882193/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Compare-Azure-AD-vs-Active-Directory-Domain-Services/azure-active-directory-comparison-2.jpg)
 
 ## Conclusion
 
@@ -50,10 +42,6 @@ To summarize, each service brings specific benefits tailored to different IT str
 
 Choosing the correct service is crucial for ensuring secure, flexible, and efficient management of user identities. Organizations looking to modernize their IT infrastructure may benefit from leveraging Azure's cloud capabilities, while those with a heavy on-premises investment might continue using AD DS.
 
-<Callout icon="lightbulb">
-  For more detailed insights into identity management solutions, consider exploring [Azure Active Directory Documentation](https://docs.microsoft.com/en-us/azure/active-directory/) and [Active Directory Domain Services Overview](https://docs.microsoft.com/en-us/windows-server/identity/active-directory-domain-services).
-</Callout>
+> **lightbulb** For more detailed insights into identity management solutions, consider exploring [Azure Active Directory Documentation](https://docs.microsoft.com/en-us/azure/active-directory/) and [Active Directory Domain Services Overview](https://docs.microsoft.com/en-us/windows-server/identity/active-directory-domain-services).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c0f70ae1-790f-4a5d-8e09-29450b5ee610/lesson/c9e89192-ed34-4742-b2a7-57a0beb22d70" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c0f70ae1-790f-4a5d-8e09-29450b5ee610/lesson/c9e89192-ed34-4742-b2a7-57a0beb22d70)

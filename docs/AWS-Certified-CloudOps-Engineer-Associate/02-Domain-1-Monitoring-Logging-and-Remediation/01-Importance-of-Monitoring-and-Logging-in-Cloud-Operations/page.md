@@ -14,7 +14,7 @@ Imagine you are responsible for a web application running on an [EC2 instance](h
 
 Metrics are essential for setting up alerts and visualizing performance trends over time. This proactive approach allows you to detect issues early and ensures smooth operational continuity. The diagram below elucidates how a web application on [Amazon EC2](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2) is monitored through comprehensive metrics collection—from infrastructure health to application performance and network latency—with these metrics linking directly to alerts and a visualization dashboard.
 
-![The image is a diagram explaining monitoring, showing how a web application on Amazon EC2 is monitored through metrics collection (infrastructure health, application performance, network latency) and linked to alerts and a visualization dashboard.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859940/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Monitoring-and-Logging-in-Cloud-Operations/ec2-monitoring-metrics-diagram.jpg)
+![The image is a diagram explaining monitoring, showing how a web application on Amazon EC2 is monitored through metrics collection (infrastructure health, application performance, network latency) and linked to alerts and a visualization dashboard.](https://kodekloud.com/kk-media/image/upload/v1752859940/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Monitoring-and-Logging-in-Cloud-Operations/ec2-monitoring-metrics-diagram.jpg)
 
 ## Logging
 
@@ -22,7 +22,7 @@ Logging acts as a detailed diary for your application, capturing extensive event
 
 When used alongside metrics, logs provide deep insights into system operations and help recognize underlying patterns and trends over time. The diagram below demonstrates how logs consolidate input from multiple sources, supporting effective troubleshooting and in-depth analysis to maintain optimal system performance.
 
-![The image is a diagram explaining logging, showing how applications, servers, databases, and network devices feed into logs, which are used for gaining insights, troubleshooting, and identifying bugs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859941/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Monitoring-and-Logging-in-Cloud-Operations/logging-diagram-insights-troubleshooting.jpg)
+![The image is a diagram explaining logging, showing how applications, servers, databases, and network devices feed into logs, which are used for gaining insights, troubleshooting, and identifying bugs.](https://kodekloud.com/kk-media/image/upload/v1752859941/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Monitoring-and-Logging-in-Cloud-Operations/logging-diagram-insights-troubleshooting.jpg)
 
 ## The Combined Value of Monitoring and Logging
 
@@ -38,7 +38,7 @@ Key benefits of implementing effective monitoring and logging include:
 
 The diagram below encapsulates the significance of monitoring and logging by highlighting these five key focus areas: system health and performance, security, compliance and auditing, troubleshooting and debugging, and cost management.
 
-![The image illustrates the importance of monitoring and logging, highlighting five key areas: system health and performance, security, compliance and auditing, troubleshooting and debugging, and cost management, arranged in a circular flow.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859942/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Monitoring-and-Logging-in-Cloud-Operations/monitoring-logging-importance-diagram.jpg)
+![The image illustrates the importance of monitoring and logging, highlighting five key areas: system health and performance, security, compliance and auditing, troubleshooting and debugging, and cost management, arranged in a circular flow.](https://kodekloud.com/kk-media/image/upload/v1752859942/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Monitoring-and-Logging-in-Cloud-Operations/monitoring-logging-importance-diagram.jpg)
 
 > **lightbulb** By comprehensively monitoring metrics and maintaining detailed logs, you can ensure reliable application performance and operational efficiency for your cloud infrastructure.
 

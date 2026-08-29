@@ -14,9 +14,7 @@ sum by (service) (
 )
 ```
 
-<Callout icon="lightbulb">
-  Remember: counters may reset when a process restarts. Functions like `rate()` and `increase()` are resilient to resets. Use gauges for instantaneous values and avoid `rate()` on non-monotonic series.
-</Callout>
+> **lightbulb** Remember: counters may reset when a process restarts. Functions like `rate()` and `increase()` are resilient to resets. Use gauges for instantaneous values and avoid `rate()` on non-monotonic series.
 
 ## Prometheus in Kubernetes — discovery and common targets
 
@@ -97,9 +95,7 @@ histogram_quantile(0.95, sum by (le) (rate(request_duration_seconds_bucket[5m]))
 * node-exporter: [https://github.com/prometheus/node\_exporter](https://github.com/prometheus/node_exporter)
 * Pushgateway best practices: [https://prometheus.io/docs/practices/pushing/](https://prometheus.io/docs/practices/pushing/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/dafd2315-36be-4318-b3e4-cc408da620c5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/dafd2315-36be-4318-b3e4-cc408da620c5)
 
 
 # Observability for Platforms What to Measure and Why
@@ -182,9 +178,7 @@ When choosing signals, group them into logical categories that support both inci
    * Saturation: resource usage that limits capacity (CPU, memory, disk, network).
      These are the highest-value signals — if you measure only a few things, start here.
 
-<Callout icon="lightbulb">
-  The golden signals give immediate insight into user experience and capacity. Instrument critical endpoints and paths to capture latency, traffic, errors, and saturation with labels for service, endpoint, and region to keep cardinality manageable.
-</Callout>
+> **lightbulb** The golden signals give immediate insight into user experience and capacity. Instrument critical endpoints and paths to capture latency, traffic, errors, and saturation with labels for service, endpoint, and region to keep cardinality manageable.
 
 2. Platform health
    * Node metrics: CPU, memory, disk I/O, network throughput, and filesystem metrics.
@@ -211,9 +205,7 @@ Key metrics and examples
 | DORA            | `deployments_total`, `lead_time_seconds`                                                               | Measure delivery performance and correlate with incidents |
 | Cost            | `namespace_cpu_cost`, `pod_memory_actual_bytes`                                                        | Optimize spend and identify wasteful workloads            |
 
-<Callout icon="warning">
-  High-cardinality metrics and verbose log retention can dramatically increase storage and costs. Instrument thoughtfully (sample, aggregate, or use histograms), set sensible retention policies, and label with necessary dimensions only.
-</Callout>
+> **warning** High-cardinality metrics and verbose log retention can dramatically increase storage and costs. Instrument thoughtfully (sample, aggregate, or use histograms), set sensible retention policies, and label with necessary dimensions only.
 
 Operational responsibilities — who owns observability?
 
@@ -250,6 +242,4 @@ Recommended references
 * DORA metrics: [https://devops-research.com/](https://devops-research.com/)
 * OpenCost: [https://opencost.io/](https://opencost.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/cbe0340a-9f87-477d-8288-1353a3c3a688" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/cbe0340a-9f87-477d-8288-1353a3c3a688)

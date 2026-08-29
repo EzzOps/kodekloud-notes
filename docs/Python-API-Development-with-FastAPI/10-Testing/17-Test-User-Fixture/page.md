@@ -64,9 +64,7 @@ def run(*args, loop=None, executor=None, **kwargs):
 FAILED tests/test_users.py::test_login_user - assert 403 == 200
 ```
 
-<Callout icon="lightbulb">
-  Centralizing the user creation logic in a fixture makes our tests modular and avoids code duplication.
-</Callout>
+> **lightbulb** Centralizing the user creation logic in a fixture makes our tests modular and avoids code duplication.
 
 ## Setting Up the User Fixture
 
@@ -171,12 +169,8 @@ tests/test_users.py::test_create_user PASSED
 tests/test_users.py::test_login_user PASSED
 ```
 
-<Callout icon="lightbulb">
-  By refactoring our tests in this way, any changes to user credentials in the fixture will automatically reflect in the login test. This modular approach improves the maintainability and reliability of your test suite.
-</Callout>
+> **lightbulb** By refactoring our tests in this way, any changes to user credentials in the fixture will automatically reflect in the login test. This modular approach improves the maintainability and reliability of your test suite.
 
 Happy testing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/01fc22c9-7488-4c06-a0ac-96a719d3e5bd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/01fc22c9-7488-4c06-a0ac-96a719d3e5bd)

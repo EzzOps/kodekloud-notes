@@ -20,9 +20,7 @@ The time series database serves as a dedicated repository for the collected metr
 
 The HTTP server provides a query interface that allows users to access, visualize, and analyze stored metrics. By leveraging PromQL—Prometheus’s built-in query language—users can interact with the data via either the Prometheus web UI or third-party visualization tools such as Grafana.
 
-<Callout icon="lightbulb">
-  Additional components such as exporters, service discovery, and Alertmanager extend Prometheus’s functionality in dynamic environments.
-</Callout>
+> **lightbulb** Additional components such as exporters, service discovery, and Alertmanager extend Prometheus’s functionality in dynamic environments.
 
 ## Exporters and Data Collection
 
@@ -38,23 +36,17 @@ Prometheus supports alerting by evaluating collected metrics against defined thr
 
 The overall interaction among these components is illustrated below:
 
-<Frame>
-  ![The image illustrates the Prometheus architecture, showing components like Pushgateway, Service Discovery, Alertmanager, and their interactions for metrics collection and alerting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880521/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Architecture/frame_240.jpg)
-</Frame>
+![The image illustrates the Prometheus architecture, showing components like Pushgateway, Service Discovery, Alertmanager, and their interactions for metrics collection and alerting.](https://kodekloud.com/kk-media/image/upload/v1752880521/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Architecture/frame_240.jpg)
 
 ## Querying Metrics with PromQL
 
 Prometheus enables users to query and visualize metrics using PromQL, its powerful query language. Whether via the Prometheus web UI or third-party tools like Grafana, PromQL provides flexibility for retrieving and analyzing data. By default, Prometheus scrapes metrics from the `/metrics` endpoint of each target, though this endpoint can be customized in the configuration if needed.
 
-<Frame>
-  ![The image illustrates Prometheus collecting metrics by sending HTTP requests to the /metrics endpoint of each target server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880522/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Architecture/frame_270.jpg)
-</Frame>
+![The image illustrates Prometheus collecting metrics by sending HTTP requests to the /metrics endpoint of each target server.](https://kodekloud.com/kk-media/image/upload/v1752880522/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Architecture/frame_270.jpg)
 
 Many systems do not expose metrics in the required format; exporters bridge this gap by collecting metrics from applications, converting them into a compatible format, and exposing them on the `/metrics` endpoint for Prometheus to scrape.
 
-<Frame>
-  ![The image explains how exporters collect and convert metrics from services into a format for Prometheus, addressing systems not listening on the /metrics endpoint.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880523/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Architecture/frame_300.jpg)
-</Frame>
+![The image explains how exporters collect and convert metrics from services into a format for Prometheus, addressing systems not listening on the /metrics endpoint.](https://kodekloud.com/kk-media/image/upload/v1752880523/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Architecture/frame_300.jpg)
 
 Prometheus offers a range of native exporters, such as Node Exporter for Linux systems, along with exporters for Windows, MySQL, Apache, HAProxy, and more. Detailed documentation is available to help you select the right exporter for your environment.
 
@@ -62,9 +54,7 @@ Prometheus offers a range of native exporters, such as Node Exporter for Linux s
 
 For applications that require monitoring of custom metrics—such as tracking errors, latency, or execution time—Prometheus provides client libraries in multiple programming languages, including Go, Java, Python, Ruby, and Rust. These libraries enable you to expose application-specific metrics tailored to your needs.
 
-<Frame>
-  ![The image explains Prometheus client libraries for monitoring application metrics like errors, latency, and execution time, with support for Go, Java, Python, Ruby, and Rust.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880524/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Architecture/frame_370.jpg)
-</Frame>
+![The image explains Prometheus client libraries for monitoring application metrics like errors, latency, and execution time, with support for Go, Java, Python, Ruby, and Rust.](https://kodekloud.com/kk-media/image/upload/v1752880524/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Architecture/frame_370.jpg)
 
 ## Pull-Based vs. Push-Based Collection Models
 
@@ -76,13 +66,9 @@ Prometheus is primarily built around a pull-based model, meaning it scrapes metr
 
 In contrast, push-based models—used by systems like Logstash, Graphite, and OpenTSDB—rely on targets sending metrics directly to the server without the need for prior registration.
 
-<Frame>
-  ![The image explains Prometheus’s pull-based model, requiring a target list for scraping, and mentions other solutions like Zabbix and Nagios.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880525/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Architecture/frame_400.jpg)
-</Frame>
+![The image explains Prometheus’s pull-based model, requiring a target list for scraping, and mentions other solutions like Zabbix and Nagios.](https://kodekloud.com/kk-media/image/upload/v1752880525/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Architecture/frame_400.jpg)
 
-<Frame>
-  ![The image illustrates a push-based monitoring model, where targets send metric data to a server. Examples include Logstash, Graphite, and OpenTSDB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880526/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Architecture/frame_430.jpg)
-</Frame>
+![The image illustrates a push-based monitoring model, where targets send metric data to a server. Examples include Logstash, Graphite, and OpenTSDB.](https://kodekloud.com/kk-media/image/upload/v1752880526/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Architecture/frame_430.jpg)
 
 ### Advantages of the Pull-Based Model
 
@@ -92,15 +78,11 @@ The benefits of using a pull-based model include:
 * Reduced risk of server overload by controlling the rate of metric collection.
 * Maintaining a centralized registry of monitored targets.
 
-<Frame>
-  ![The image lists benefits of a pull-based system, highlighting easier target status detection, avoiding server overload, and maintaining a central monitoring list.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880527/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Architecture/frame_460.jpg)
-</Frame>
+![The image lists benefits of a pull-based system, highlighting easier target status detection, avoiding server overload, and maintaining a central monitoring list.](https://kodekloud.com/kk-media/image/upload/v1752880527/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Architecture/frame_460.jpg)
 
 Although the pull-based model is effective for numeric metrics, it may not be ideal for event-based data or short-lived jobs. In such cases, the Pushgateway allows these jobs to push their metrics for subsequent scraping by Prometheus.
 
-<Frame>
-  ![The image explains the advantages of push-based monitoring for event-based systems and short-lived jobs, highlighting limitations of Prometheus in these scenarios.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880528/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Architecture/frame_500.jpg)
-</Frame>
+![The image explains the advantages of push-based monitoring for event-based systems and short-lived jobs, highlighting limitations of Prometheus in these scenarios.](https://kodekloud.com/kk-media/image/upload/v1752880528/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Architecture/frame_500.jpg)
 
 ## Conclusion
 
@@ -108,10 +90,6 @@ Prometheus is engineered for the efficient collection, storage, and querying of 
 
 For more detailed information, consult the [Prometheus Documentation](https://prometheus.io/docs/introduction/overview/).
 
-<Callout icon="lightbulb">
-  Learn about setting up exporters and configuring service discovery to streamline your monitoring setup.
-</Callout>
+> **lightbulb** Learn about setting up exporters and configuring service discovery to streamline your monitoring setup.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/70e17eea-7e9b-4f65-87a4-1cdb5631e0dc/lesson/c891ef07-8a67-4460-84c7-4dc53ef35567" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/70e17eea-7e9b-4f65-87a4-1cdb5631e0dc/lesson/c891ef07-8a67-4460-84c7-4dc53ef35567)

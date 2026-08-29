@@ -120,9 +120,7 @@ Interpretation:
 
 That covers the fundamentals: how Cilium L2 announcement operates on flat L2 networks, how to enable it, how to write per‑service policies, and how to verify which nodes are announcing which service IPs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/044a2c60-e7c5-42dc-8715-0385137cc255" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/044a2c60-e7c5-42dc-8715-0385137cc255)
 
 
 # LoadBalancer IPAM
@@ -237,10 +235,6 @@ Important: you must ensure that external routing/forwarding is configured so tra
 
 BGP and other advertisement mechanisms are commonly used to advertise those allocated external IPs to the wider network so they become reachable.
 
-<Callout icon="lightbulb">
-  When creating pools, include only ranges that your network fabric can actually route to the cluster. Otherwise external traffic won't reach the assigned IPs even though Services will show the EXTERNAL-IP.
-</Callout>
+> **lightbulb** When creating pools, include only ranges that your network fabric can actually route to the cluster. Otherwise external traffic won't reach the assigned IPs even though Services will show the EXTERNAL-IP.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/9d32cc1f-26d5-424a-8f19-461cab3ab72d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/9d32cc1f-26d5-424a-8f19-461cab3ab72d)

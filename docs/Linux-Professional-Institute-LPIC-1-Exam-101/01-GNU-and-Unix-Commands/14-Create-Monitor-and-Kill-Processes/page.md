@@ -3,9 +3,7 @@
 
 Here, `date +%Y-%m-%d` generates `2022-12-13`, which `mkdir` uses as the directory name.
 
-<Callout icon="lightbulb">
-  Backquotes can be harder to nest and read. Consider using `$(...)` for complex commands.
-</Callout>
+> **lightbulb** Backquotes can be harder to nest and read. Consider using `$(...)` for complex commands.
 
 ### Using `$(...)` Syntax
 
@@ -89,9 +87,7 @@ find . \
 2. `xargs -0` reads these safely.
 3. `du` shows disk usage, then `sort -n` orders by size.
 
-<Callout icon="triangle-alert">
-  Always use `-print0` with `find` and `-0` with `xargs` when processing arbitrary filenames to avoid word-splitting issues.
-</Callout>
+> **triangle-alert** Always use `-print0` with `find` and `-0` with `xargs` when processing arbitrary filenames to avoid word-splitting issues.
 
 ### Placing Arguments at a Specific Position
 
@@ -127,9 +123,7 @@ This moves each video file from subdirectories into the current directory, repla
 * [find(1) – GNU findutils](https://man7.org/linux/man-pages/man1/find.1.html)
 * [ImageMagick identify](https://imagemagick.org/script/identify.php)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/8bc8d1be-2bf6-4a77-a9c2-87896e510687" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/8bc8d1be-2bf6-4a77-a9c2-87896e510687)
 
 
 # Create Monitor and Kill Processes
@@ -182,9 +176,7 @@ aaron     6601  6.2  4.8 3142460 185096 ?       S    10:27   0:06 gnome-shell
 
 ### 2.1 Exploring `ps` Options
 
-<Frame>
-  ![The image shows a terminal window displaying the manual page for the ps command, which reports a snapshot of current processes. It includes sections like NAME, SYNOPSIS, and DESCRIPTION, explaining the command's usage and options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881389/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Create-Monitor-and-Kill-Processes/ps-command-manual-terminal-snapshot.jpg)
-</Frame>
+![The image shows a terminal window displaying the manual page for the ps command, which reports a snapshot of current processes. It includes sections like NAME, SYNOPSIS, and DESCRIPTION, explaining the command's usage and options.](https://kodekloud.com/kk-media/image/upload/v1752881389/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Create-Monitor-and-Kill-Processes/ps-command-manual-terminal-snapshot.jpg)
 
 Common invocations from the manual:
 
@@ -219,9 +211,7 @@ Common invocations from the manual:
 | TIME    | Cumulative CPU time      |
 | COMMAND | Command with arguments   |
 
-<Callout icon="lightbulb">
-  Kernel threads run in kernel space and appear in square brackets, e.g., `[kworker/0:1]`.
-</Callout>
+> **lightbulb** Kernel threads run in kernel space and appear in square brackets, e.g., `[kworker/0:1]`.
 
 ***
 

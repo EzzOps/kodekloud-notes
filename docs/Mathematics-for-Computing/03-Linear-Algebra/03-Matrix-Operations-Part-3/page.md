@@ -84,9 +84,7 @@ Example scenario: the car detects two objects — a tree (further away) and a pe
 
 To correct for motion-induced distortion you apply the inverse of the movement matrix to the observed sensor matrix. The inverse “undoes” the mixing and scaling introduced by the vehicle’s motion so that the measurements reflect stable world coordinates again.
 
-<Callout icon="lightbulb">
-  Diagonal transformation matrices scale each corresponding column of the data matrix; their inverse rescales columns back to the original units. For non-diagonal movement matrices, the inverse reverses how channels (distance, height, etc.) were mixed.
-</Callout>
+> **lightbulb** Diagonal transformation matrices scale each corresponding column of the data matrix; their inverse rescales columns back to the original units. For non-diagonal movement matrices, the inverse reverses how channels (distance, height, etc.) were mixed.
 
 Next up: we’ll dive into inverse matrices — how to compute them, when they exist, and how they let us remove the effect of motion from sensor readings so the vehicle builds an accurate map of its surroundings.
 
@@ -96,9 +94,7 @@ References and further reading
 * [Matrix inverse — Wikipedia](https://en.wikipedia.org/wiki/Invertible_matrix)
 * [Introduction to linear algebra (concepts & applications)](https://mathinsight.org/matrix_inverse)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/d8fa251f-80d2-4813-8b52-ad57051b1dcf/lesson/c8c87999-c8d9-4739-9804-412eae4012d1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/d8fa251f-80d2-4813-8b52-ad57051b1dcf/lesson/c8c87999-c8d9-4739-9804-412eae4012d1)
 
 
 # Matrix Operations Part 3
@@ -191,9 +187,7 @@ Example of a zero determinant:
 
 det = 2×6 − 4×3 = 12 − 12 = 0
 
-<Callout icon="warning">
-  If the determinant equals zero the matrix has no inverse. Such matrices are called singular.
-</Callout>
+> **warning** If the determinant equals zero the matrix has no inverse. Such matrices are called singular.
 
 You can apply this determinant test to any small square matrix: only square matrices with nonzero determinant have inverses.
 
@@ -268,6 +262,4 @@ Further reading and references
 * [MIT OCW — Linear Algebra](https://ocw.mit.edu/courses/18-06-linear-algebra/)
 * [Wikipedia — Matrix inverse](https://en.wikipedia.org/wiki/Inverse_matrix)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/d8fa251f-80d2-4813-8b52-ad57051b1dcf/lesson/d1a68dcf-0b26-48fa-a1bd-4411472a1077" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/d8fa251f-80d2-4813-8b52-ad57051b1dcf/lesson/d1a68dcf-0b26-48fa-a1bd-4411472a1077)

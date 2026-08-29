@@ -84,9 +84,7 @@ spec:
 
 This allows TCP port 80 traffic from app1 to addresses in 192.168.1.0/24 only.
 
-<Callout icon="lightbulb">
-  Egress policies are deny-by-default: when you add egress rules, Cilium blocks anything not explicitly allowed. Common control-plane traffic (for example DNS) will be blocked unless you permit it.
-</Callout>
+> **lightbulb** Egress policies are deny-by-default: when you add egress rules, Cilium blocks anything not explicitly allowed. Common control-plane traffic (for example DNS) will be blocked unless you permit it.
 
 ## DNS gets blocked by default — add an explicit rule
 
@@ -140,9 +138,7 @@ Name:    google.com
 Address: 142.250.176.206
 ```
 
-<Callout icon="warning">
-  If you forget to allow DNS, many higher-level application behaviors will fail (package downloads, image pulls inside pods, service discovery, etc.). Always include DNS allowances when applying restrictive egress policies.
-</Callout>
+> **warning** If you forget to allow DNS, many higher-level application behaviors will fail (package downloads, image pulls inside pods, service discovery, etc.). Always include DNS allowances when applying restrictive egress policies.
 
 ## L7: DNS filtering (match names / patterns)
 
@@ -338,11 +334,9 @@ Notes:
 
 For advanced tactics like entities, additional L7 rules, HTTP header or host matching, consult the Cilium policy documentation above.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/bf652c52-bb30-4bcc-9d18-c703f7b3e88a/lesson/09fd7ca2-c277-4ef1-b77c-3616cbc9d2c0" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/bf652c52-bb30-4bcc-9d18-c703f7b3e88a/lesson/09fd7ca2-c277-4ef1-b77c-3616cbc9d2c0)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/bf652c52-bb30-4bcc-9d18-c703f7b3e88a/lesson/0e692f32-82dd-433b-a0dd-8ff541c33f67" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/bf652c52-bb30-4bcc-9d18-c703f7b3e88a/lesson/0e692f32-82dd-433b-a0dd-8ff541c33f67)
 
 
 # Network Policy Limitations
@@ -380,9 +374,7 @@ spec:
       port: 6379
 ```
 
-<Callout icon="lightbulb">
-  Standard NetworkPolicy is L3/L4-only. It cannot inspect or filter Layer 7 protocol semantics (for example, HTTP method or HTTP path), and it does not support DNS/FQDN-based matching, service-account selectors, or cluster-wide policies out of the box.
-</Callout>
+> **lightbulb** Standard NetworkPolicy is L3/L4-only. It cannot inspect or filter Layer 7 protocol semantics (for example, HTTP method or HTTP path), and it does not support DNS/FQDN-based matching, service-account selectors, or cluster-wide policies out of the box.
 
 ## Key limitations of networking.k8s.io/v1 NetworkPolicy
 
@@ -637,6 +629,4 @@ apiVersion: "cilium.io/v2"
 kind: CiliumClusterwideNetworkPolicy
 ```
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/bf652c52-bb30-4bcc-9d18-c703f7b3e88a/lesson/f2670466-592b-42d0-9e94-09433ea15324" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/bf652c52-bb30-4bcc-9d18-c703f7b3e88a/lesson/f2670466-592b-42d0-9e94-09433ea15324)

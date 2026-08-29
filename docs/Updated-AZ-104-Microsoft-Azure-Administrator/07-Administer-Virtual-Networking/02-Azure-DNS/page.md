@@ -53,9 +53,7 @@ azure.kodekloud.org. 3600 IN  A 13.11.15.11
 ;; MSG SIZE  rcvd: 64
 ```
 
-<Callout icon="lightbulb">
-  If your domain registrar manages your DNS, update the domain’s name server settings to point to the Azure DNS servers. Otherwise, you might need to manually specify the Azure name servers when performing DNS lookups, or consider purchasing domains directly from Azure for seamless integration.
-</Callout>
+> **lightbulb** If your domain registrar manages your DNS, update the domain’s name server settings to point to the Azure DNS servers. Otherwise, you might need to manually specify the Azure name servers when performing DNS lookups, or consider purchasing domains directly from Azure for seamless integration.
 
 ## Creating a DNS Zone in the Azure Portal
 
@@ -67,21 +65,15 @@ Follow these steps to create a DNS zone in the Azure Portal:
 
 Since DNS zones are global resources, they do not have a specific region. However, the zone metadata will inherit the region from the resource group, even though the DNS records are globally replicated.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a DNS zone, with fields for project and instance details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884800/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-DNS/azure-portal-dns-zone-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a DNS zone, with fields for project and instance details.](https://kodekloud.com/kk-media/image/upload/v1752884800/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-DNS/azure-portal-dns-zone-creation.jpg)
 
 Review your details and then create the DNS zone.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a DNS zone, with details about the subscription, resource group, and location. A notification indicates the initialization of a template deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884802/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-DNS/azure-portal-dns-zone-creation-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a DNS zone, with details about the subscription, resource group, and location. A notification indicates the initialization of a template deployment.](https://kodekloud.com/kk-media/image/upload/v1752884802/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-DNS/azure-portal-dns-zone-creation-2.jpg)
 
 Once the deployment is complete, you can add DNS records and verify query resolution.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page indicating that a DNS zone deployment is complete, with options to view deployment details and next steps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884803/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-DNS/azure-portal-dns-zone-deployment.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page indicating that a DNS zone deployment is complete, with options to view deployment details and next steps.](https://kodekloud.com/kk-media/image/upload/v1752884803/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-DNS/azure-portal-dns-zone-deployment.jpg)
 
 ## Managing DNS Records
 
@@ -92,15 +84,11 @@ After creating your DNS zone, navigate to its resources. You will notice that de
 3. Set the record type to A and specify the IP address.
 4. Confirm by clicking "OK".
 
-<Frame>
-  ![The image shows a Microsoft Azure DNS zone management interface for the domain "kodekloud.org," where a new A record is being added with the IP address "1.1.1.1."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884804/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-DNS/azure-dns-zone-kodekloud-a-record.jpg)
-</Frame>
+![The image shows a Microsoft Azure DNS zone management interface for the domain "kodekloud.org," where a new A record is being added with the IP address "1.1.1.1."](https://kodekloud.com/kk-media/image/upload/v1752884804/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-DNS/azure-dns-zone-kodekloud-a-record.jpg)
 
 Azure DNS supports various other record types as well, such as CAA, CNAME, and more. For instance, if you create a CNAME record so that google.cloud.org points to [www.google.com](http://www.google.com), any DNS queries for google.cloud.org will resolve to [www.google.com](http://www.google.com).
 
-<Frame>
-  ![The image shows a Microsoft Azure DNS zone management interface for the domain "kodekloud.org," displaying DNS records such as NS, SOA, CNAME, and A records.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884806/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-DNS/azure-dns-zone-management-kodekloud.jpg)
-</Frame>
+![The image shows a Microsoft Azure DNS zone management interface for the domain "kodekloud.org," displaying DNS records such as NS, SOA, CNAME, and A records.](https://kodekloud.com/kk-media/image/upload/v1752884806/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-DNS/azure-dns-zone-management-kodekloud.jpg)
 
 Additionally, you may configure subzones (or child zones) within your DNS zone. For example, configuring azure.corecloud.org as a subzone provides a separate domain space if needed.
 
@@ -139,12 +127,8 @@ Similarly, you can test a CNAME lookup by setting the query type to CNAME and qu
 
 While this guide focuses on public-facing DNS zones, there are situations where a Private DNS zone is required for internal name resolution. Private DNS zones enable you to resolve the names of internal resources, like virtual machines, to their private IP addresses without exposing those records to the internet.
 
-<Callout icon="lightbulb">
-  For detailed guidance on configuring and using Private DNS zones, refer to the related documentation and best practices for network security.
-</Callout>
+> **lightbulb** For detailed guidance on configuring and using Private DNS zones, refer to the related documentation and best practices for network security.
 
 Thank you for reading this guide on Azure DNS. For more detailed information and updates, consider checking the [Azure DNS documentation](https://docs.microsoft.com/en-us/azure/dns/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/809fc274-7871-4b13-8f85-052b43442c81/lesson/ad4ccf01-7b4f-4286-a403-fcef56ed5505" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/809fc274-7871-4b13-8f85-052b43442c81/lesson/ad4ccf01-7b4f-4286-a403-fcef56ed5505)

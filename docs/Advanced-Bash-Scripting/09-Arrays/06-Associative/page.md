@@ -147,7 +147,7 @@ Associative arrays map **keys** (identifiers) to **values** (data).
 
 > **lightbulb** In Bash associative arrays, each key is unique and case-sensitive: `"Mark"` ≠ `"mark"`.
 
-![The image explains associative arrays, highlighting the concepts of "key" as an identifier and "value" as the actual data to interact with.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868543/notes-assets/images/Advanced-Bash-Scripting-Associative/associative-arrays-key-value-explained.jpg)
+![The image explains associative arrays, highlighting the concepts of "key" as an identifier and "value" as the actual data to interact with.](https://kodekloud.com/kk-media/image/upload/v1752868543/notes-assets/images/Advanced-Bash-Scripting-Associative/associative-arrays-key-value-explained.jpg)
 
 ## Example: Email Addresses
 

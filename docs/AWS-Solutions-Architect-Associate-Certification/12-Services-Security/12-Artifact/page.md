@@ -12,7 +12,7 @@ In this lesson, you'll explore AWS Artifact—a service that centralizes access 
 
 AWS undergoes regular audits by multiple governing bodies to confirm its adherence to global standards. The audit documents available through AWS Artifact offer detailed insights on security and compliance measures for various AWS services. These documents are essential when demonstrating compliance during organizational audits.
 
-![The image is a flowchart showing a process where artifacts are downloaded from the cloud, turned into reports, and then shared with an auditor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865737/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Artifact/cloud-artifacts-reports-flowchart.jpg)
+![The image is a flowchart showing a process where artifacts are downloaded from the cloud, turned into reports, and then shared with an auditor.](https://kodekloud.com/kk-media/image/upload/v1752865737/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Artifact/cloud-artifacts-reports-flowchart.jpg)
 
 ## User-Friendly Compliance Management
 
@@ -20,7 +20,7 @@ AWS Artifact features an intuitive portal within the AWS Management Console. Wit
 
 In addition to providing easy access, AWS Artifact covers a wide range of global compliance standards. Whether you're looking for documentation to meet SOC, PCI, ISO, or other regulatory requirements, AWS Artifact delivers the necessary reports quickly and conveniently.
 
-![The image lists four features: centralized access to compliance reports, ease of use, global compliance coverage, and saving time and effort, each with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865741/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Artifact/compliance-features-report-icons.jpg)
+![The image lists four features: centralized access to compliance reports, ease of use, global compliance coverage, and saving time and effort, each with an icon.](https://kodekloud.com/kk-media/image/upload/v1752865741/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Artifact/compliance-features-report-icons.jpg)
 
 ## Cost Efficiency and Benefits
 

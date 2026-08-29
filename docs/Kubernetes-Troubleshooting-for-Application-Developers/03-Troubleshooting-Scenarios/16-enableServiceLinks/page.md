@@ -22,9 +22,7 @@ The solution involves using the Nginx Ingress Controller's Rewrite Target annota
 
 Refer to the [Nginx Ingress Controller documentation on rewrite annotations](https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/) for additional details.
 
-<Frame>
-  ![The image shows a webpage from the Ingress-Nginx Controller documentation, specifically focusing on rewrite annotations. It includes sections on prerequisites and deployment, with a table listing annotation names, descriptions, and values.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880448/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-What-the-Ingress/ingress-nginx-rewrite-annotations-docs.jpg)
-</Frame>
+![The image shows a webpage from the Ingress-Nginx Controller documentation, specifically focusing on rewrite annotations. It includes sections on prerequisites and deployment, with a table listing annotation names, descriptions, and values.](https://kodekloud.com/kk-media/image/upload/v1752880448/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-What-the-Ingress/ingress-nginx-rewrite-annotations-docs.jpg)
 
 A common pattern uses a capture group in a regular expression to pass only the desired part of the path to the backend. Consider this example configuration:
 
@@ -209,9 +207,7 @@ proxy_next_upstream error timeout;
 proxy_next_upstream_timeout 0;
 ```
 
-<Callout icon="lightbulb">
-  Reviewing the effective Nginx configuration is critical to ensure that your timeout and proxy settings match your expectations. Adjust these values as necessary to optimize your application's performance.
-</Callout>
+> **lightbulb** Reviewing the effective Nginx configuration is critical to ensure that your timeout and proxy settings match your expectations. Adjust these values as necessary to optimize your application's performance.
 
 ## Conclusion
 
@@ -219,11 +215,9 @@ This troubleshooting session has demonstrated not only how to define an Ingress 
 
 Mastering the nuances of Ingress configurations is essential for managing traffic routing and resolving production issues effectively. Happy troubleshooting!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/78d21774-d968-41cb-ab3e-64c0f60fee14" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/78d21774-d968-41cb-ab3e-64c0f60fee14)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/71a34877-3a04-43c2-a31e-f7bebad3f29c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/71a34877-3a04-43c2-a31e-f7bebad3f29c)
 
 
 # enableServiceLinks
@@ -260,13 +254,9 @@ standard_init_linux.go:228: exec user process caused: argument list too long
 
 This error is common on Linux when a process is provided with an excessively long list of arguments, which in this case was due to a large number of environment variables injected into the pod. Although my application did not originally require many environment variables, the staging namespace had numerous additional services, leading to the buildup of excessive environment variables.
 
-<Callout icon="lightbulb">
-  Kubernetes automatically injects environment variables for every service in the namespace into each pod, ensuring that pods can discover and connect with services without relying solely on DNS.
-</Callout>
+> **lightbulb** Kubernetes automatically injects environment variables for every service in the namespace into each pod, ensuring that pods can discover and connect with services without relying solely on DNS.
 
-<Frame>
-  ![The image explains a Linux command error "Argument List Too Long" due to a long list of arguments or environment variables, with a comparison between development and staging environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880448/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-enableServiceLinks/linux-command-error-argument-list.jpg)
-</Frame>
+![The image explains a Linux command error "Argument List Too Long" due to a long list of arguments or environment variables, with a comparison between development and staging environments.](https://kodekloud.com/kk-media/image/upload/v1752880448/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-enableServiceLinks/linux-command-error-argument-list.jpg)
 
 ## Diagnosing the Issue
 
@@ -300,9 +290,7 @@ PWD=/
 
 This comparison highlights how the default behavior of Kubernetes leads to the accumulation of environment variables, which can cause issues such as the "argument list too long" error.
 
-<Frame>
-  ![The image describes a "Primary Approach - DNS Plugin," highlighting it as a reliable and common method where resolution happens using DNS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880449/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-enableServiceLinks/primary-approach-dns-plugin.jpg)
-</Frame>
+![The image describes a "Primary Approach - DNS Plugin," highlighting it as a reliable and common method where resolution happens using DNS.](https://kodekloud.com/kk-media/image/upload/v1752880449/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-enableServiceLinks/primary-approach-dns-plugin.jpg)
 
 ## Impact of Environment Variable Injection
 
@@ -327,15 +315,11 @@ SERVICE_LOGGING_SERVICE_PORT=80
 
 Such injected information enables applications to connect to services without DNS queries. However, in environments with thousands of services, the cumulative length of environment variables can become unmanageable.
 
-<Frame>
-  ![The image illustrates a Kubernetes cluster with services A, B, C, and D, where Service D deploys with injected environment variables from Services A, B, and C.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880451/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-enableServiceLinks/kubernetes-cluster-services-a-b-c-d.jpg)
-</Frame>
+![The image illustrates a Kubernetes cluster with services A, B, C, and D, where Service D deploys with injected environment variables from Services A, B, and C.](https://kodekloud.com/kk-media/image/upload/v1752880451/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-enableServiceLinks/kubernetes-cluster-services-a-b-c-d.jpg)
 
 A side-by-side comparison between development and staging environments might look like this:
 
-<Frame>
-  ![The image shows a comparison between Development and Staging Environments, listing environment variables (env\_var\_1 to env\_var\_4) under each. The Development Environments section highlights env\_var\_1 and env\_var\_2.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880452/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-enableServiceLinks/development-staging-env-comparison.jpg)
-</Frame>
+![The image shows a comparison between Development and Staging Environments, listing environment variables (env\_var\_1 to env\_var\_4) under each. The Development Environments section highlights env\_var\_1 and env\_var\_2.](https://kodekloud.com/kk-media/image/upload/v1752880452/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-enableServiceLinks/development-staging-env-comparison.jpg)
 
 ## Disabling Service Links with enableServiceLinks
 
@@ -395,9 +379,7 @@ NGINX_VERSION=1.19.10
 _= /usr/bin/printenv
 ```
 
-<Callout icon="lightbulb">
-  The enableServiceLinks parameter is enabled by default, leading to the injection of environment variables for every service in the namespace. When using a DNS plugin like CoreDNS, disable this behavior by setting enableServiceLinks to false to prevent potential errors.
-</Callout>
+> **lightbulb** The enableServiceLinks parameter is enabled by default, leading to the injection of environment variables for every service in the namespace. When using a DNS plugin like CoreDNS, disable this behavior by setting enableServiceLinks to false to prevent potential errors.
 
 ## Summary
 
@@ -411,8 +393,6 @@ Happy deploying, and see you in the next article!
 * [Getting Started with CoreDNS](https://coredns.io/)
 * [Kubernetes Pod Design Best Practices](https://kubernetes.io/docs/concepts/workloads/pods/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/145f4424-ee1d-4e0c-b117-321501e6db15" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/145f4424-ee1d-4e0c-b117-321501e6db15)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/03d199f6-ed62-4459-98fc-bb88f6842b77" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/03d199f6-ed62-4459-98fc-bb88f6842b77)

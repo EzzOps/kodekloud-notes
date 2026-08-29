@@ -16,9 +16,7 @@ Why this matters — a real-world scenario
 
 Imagine a fintech startup operating a shared Kubernetes cluster for six teams. One team installs a debugging tool that runs as `cluster-admin` and exposes a web shell via a `NodePort`. An attacker discovers that endpoint, escalates to cluster-admin, and enumerates secrets across namespaces—database credentials, API keys, payment processor tokens.
 
-<Callout icon="warning">
-  Exposed debugging tools, excessive privileges like `cluster-admin`, and publicly reachable NodePorts are a common attack chain. Treat any privileged tooling as high-risk and restrict network exposure.
-</Callout>
+> **warning** Exposed debugging tools, excessive privileges like `cluster-admin`, and publicly reachable NodePorts are a common attack chain. Treat any privileged tooling as high-risk and restrict network exposure.
 
 <Frame>
   <img alt="The image illustrates the risk of shared platforms, showing a person with a laptop gaining access through a debugging tool and a NodePort web shell, with cluster-admin access and secret enumeration across namespaces." />
@@ -76,9 +74,7 @@ Defense in depth means overlapping controls so a single failed control doesn’t
   <img alt="The image illustrates &#x22;Defense in Depth: Six Security Layers,&#x22; which include RBAC, Admission Control, Pod Security, Network Policy, Service Mesh, and Supply Chain Security, each with a brief description." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Defense in depth reduces single points of failure. Apply platform-wide defaults so teams inherit secure settings automatically, and require explicit exceptions for risky actions.
-</Callout>
+> **lightbulb** Defense in depth reduces single points of failure. Apply platform-wide defaults so teams inherit secure settings automatically, and require explicit exceptions for risky actions.
 
 How these layers connect — follow a request
 
@@ -120,6 +116,4 @@ Summary
 
 By the end of this module you should be able to identify likely attack chains, pick the right controls for each risk, and implement platform defaults that protect teams without blocking productivity.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/2b352493-edac-45fb-9bbe-a54dfafe892d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/2b352493-edac-45fb-9bbe-a54dfafe892d)

@@ -8,9 +8,7 @@ Welcome to this comprehensive guide on Kubernetes Deployments. In this article, 
 
 When deploying an application like a web server, you typically run multiple instances to handle load and ensure uptime. As new versions of your application become available in the Docker registry, seamless upgrades are crucial. Since upgrading all instances simultaneously can disrupt active users, Kubernetes Deployments support rolling updates—updating instances one by one. Additionally, if an update introduces an error, you can quickly roll back changes. Deployments also allow you to bundle changes—such as updating the web server version, scaling resources, or adjusting resource allocations—and apply them together rather than individually.
 
-<Callout icon="lightbulb">
-  Kubernetes Deployments build on foundational concepts: Pods encapsulate individual application instances, while ReplicaSets (or ReplicationControllers) manage multiple Pods. A Deployment is a higher-level construct that not only creates a ReplicaSet but also orchestrates rolling updates, rollbacks, and pause/resume operations.
-</Callout>
+> **lightbulb** Kubernetes Deployments build on foundational concepts: Pods encapsulate individual application instances, while ReplicaSets (or ReplicationControllers) manage multiple Pods. A Deployment is a higher-level construct that not only creates a ReplicaSet but also orchestrates rolling updates, rollbacks, and pause/resume operations.
 
 Below is an example of a ReplicaSet definition used for context:
 
@@ -133,14 +131,10 @@ po/myapp-deployment-6795844b58-h4w55 1/1     Running      0         9h
 po/myapp-deployment-6795844b58-1fjhv 1/1     Running      0         9h
 ```
 
-<Callout icon="lightbulb">
-  In upcoming sections, we will cover advanced Deployment features, including how to perform rolling updates, execute rollbacks, and pause/resume changes to manage your application lifecycle efficiently.
-</Callout>
+> **lightbulb** In upcoming sections, we will cover advanced Deployment features, including how to perform rolling updates, execute rollbacks, and pause/resume changes to manage your application lifecycle efficiently.
 
 For more information, refer to the [Kubernetes Documentation](https://kubernetes.io/docs/) and explore other related resources such as [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/).
 
 Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/66456821-f15b-4084-8f72-d6232cf69f4a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/66456821-f15b-4084-8f72-d6232cf69f4a)

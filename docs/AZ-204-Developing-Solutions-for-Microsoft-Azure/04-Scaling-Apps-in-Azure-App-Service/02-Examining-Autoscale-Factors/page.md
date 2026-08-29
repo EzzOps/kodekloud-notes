@@ -19,7 +19,7 @@ This approach eliminates downtime that could occur while changing service tiers 
 
 > **lightbulb** Autoscaling also monitors the real-time cost of your web app, ensuring your application performs optimally without overspending on underutilized resources.
 
-![The image describes three autoscale factors: adjusting resources based on demand, performing scaling in and out, and monitoring resource metrics to detect when additional resources are needed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866753/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Examining-Autoscale-Factors/autoscale-factors-resource-adjustment.jpg)
+![The image describes three autoscale factors: adjusting resources based on demand, performing scaling in and out, and monitoring resource metrics to detect when additional resources are needed.](https://kodekloud.com/kk-media/image/upload/v1752866753/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Examining-Autoscale-Factors/autoscale-factors-resource-adjustment.jpg)
 
 ## When to Consider Autoscaling
 
@@ -32,7 +32,7 @@ However, autoscaling should not be viewed as a complete long-term solution. It e
 
 > **triangle-alert** Relying exclusively on autoscaling for sustained long-term growth may not be sufficient. Evaluate and implement additional infrastructure improvements to ensure stability as your application scales continuously.
 
-![The image lists three considerations for autoscaling: providing elasticity for services, improving availability and fault tolerance, and noting it may not be the best for long-term growth.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866754/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Examining-Autoscale-Factors/autoscaling-considerations-elasticity-availability.jpg)
+![The image lists three considerations for autoscaling: providing elasticity for services, improving availability and fault tolerance, and noting it may not be the best for long-term growth.](https://kodekloud.com/kk-media/image/upload/v1752866754/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Examining-Autoscale-Factors/autoscaling-considerations-elasticity-availability.jpg)
 
 ## Conclusion
 

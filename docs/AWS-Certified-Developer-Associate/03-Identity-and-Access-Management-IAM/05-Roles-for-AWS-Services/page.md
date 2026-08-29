@@ -21,7 +21,7 @@ To assign an IAM role to an EC2 instance, follow these steps:
 2. Under the "Actions" menu, select "Security" and then "Modify IAM Role."
 3. Once the role is assigned, any application running on that EC2 instance automatically inherits the permissions associated with the IAM role.
 
-![The image shows an AWS EC2 management console interface with options to manage instances, including launching instances and modifying IAM roles. It highlights a running instance named "mywebapp."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858968/notes-assets/images/AWS-Certified-Developer-Associate-Roles-for-AWS-Services/aws-ec2-management-console-mywebapp.jpg)
+![The image shows an AWS EC2 management console interface with options to manage instances, including launching instances and modifying IAM roles. It highlights a running instance named "mywebapp."](https://kodekloud.com/kk-media/image/upload/v1752858968/notes-assets/images/AWS-Certified-Developer-Associate-Roles-for-AWS-Services/aws-ec2-management-console-mywebapp.jpg)
 
 ## Assigning Roles to Lambda Functions
 

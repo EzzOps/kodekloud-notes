@@ -30,9 +30,7 @@ Example output:
 | ------ | ----- | ------------------------------- |
 | token/ | token | default token-based credentials |
 
-<Callout icon="lightbulb">
-  The `token` method is enabled by default and provides basic token authentication.
-</Callout>
+> **lightbulb** The `token` method is enabled by default and provides basic token authentication.
 
 ***
 
@@ -77,9 +75,7 @@ vault write auth/userpass/users/jamie \
     policies=bryan
 ```
 
-<Callout icon="triangle-alert">
-  Storing plaintext passwords in scripts can be insecure. Consider using environment variables or a secure secrets store.
-</Callout>
+> **triangle-alert** Storing plaintext passwords in scripts can be insecure. Consider using environment variables or a secure secrets store.
 
 ***
 
@@ -159,8 +155,6 @@ Each session returns token details:
 * [Vault Authentication Overview](https://www.vaultproject.io/docs/auth)
 * [Vault CLI Commands](https://www.vaultproject.io/docs/commands)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/92fadff8-1b0e-42ce-b2f2-80a2d8d05e1c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/92fadff8-1b0e-42ce-b2f2-80a2d8d05e1c)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/f62930b5-58f2-4c69-aad0-f9710e962cd2" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/f62930b5-58f2-4c69-aad0-f9710e962cd2)

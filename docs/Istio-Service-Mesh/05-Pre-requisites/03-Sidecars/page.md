@@ -17,9 +17,7 @@ Much like a sidecar on a motorcycle, which is a small passenger compartment atta
 
 Both containers share the same network namespace and storage volumes, yet they operate in isolated environments to ensure modularity and maintainability.
 
-<Callout icon="lightbulb">
-  Sidecar containers extend the capabilities of the main container without interfering with its direct operations. This separation of concerns enhances performance and simplifies troubleshooting.
-</Callout>
+> **lightbulb** Sidecar containers extend the capabilities of the main container without interfering with its direct operations. This separation of concerns enhances performance and simplifies troubleshooting.
 
 ## Sample Pod Definition with a Sidecar
 
@@ -47,6 +45,4 @@ For further exploration of related technologies, consider the following resource
 
 Understanding and effectively utilizing sidecars in your Kubernetes deployments can lead to more resilient and maintainable applications by offloading supportive tasks from the main application container. Enjoy building your robust microservices architecture with this pattern!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/1095f3e0-a80d-4c31-941b-6423a5b6d74c/lesson/28598205-cde6-4fb3-bf01-b5dee727746d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/1095f3e0-a80d-4c31-941b-6423a5b6d74c/lesson/28598205-cde6-4fb3-bf01-b5dee727746d)

@@ -27,9 +27,7 @@ SQL databases also provide transactions and referential integrity. Transactions 
   <img alt="The image illustrates a SQL database schema showing the relationship between tables for photos, likes, and comments, highlighting the transactional deletion of a photo." />
 </Frame>
 
-<Callout icon="lightbulb">
-  ACID stands for Atomicity, Consistency, Isolation, and Durability — properties that help ensure reliable transactions in relational databases.
-</Callout>
+> **lightbulb** ACID stands for Atomicity, Consistency, Isolation, and Durability — properties that help ensure reliable transactions in relational databases.
 
 Common relational database examples:
 
@@ -124,6 +122,4 @@ A database is software that runs on standard servers with CPU, RAM, and disk —
 * [Elasticsearch](https://www.elastic.co/elasticsearch/)
 * [ACID (Wikipedia)](https://en.wikipedia.org/wiki/ACID_\(database_systems\))
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/2b5a1335-edfa-4cfb-aba6-6d1a19668588" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/2b5a1335-edfa-4cfb-aba6-6d1a19668588)

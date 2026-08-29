@@ -8,9 +8,7 @@ In this guide, we'll explain how to back up files on Linux using built-in tools.
 
 A widely used tool for this process is rsync. The name "rsync" is derived from its core functionality—remote synchronization. It allows you to synchronize a directory from one system with a corresponding directory on another system over a network connection. For instance, you might sync "/some/directory" on server 1 with "/some/other/directory" on server 2. Remember, the remote server must have an SSH daemon running so that rsync can transfer data securely.
 
-<Frame>
-  ![The image illustrates the concept of syncing two directories using "rsync" for remote synchronization between a remote server and a local server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881233/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Back-Up-Files-to-a-Remote-System-Optional/rsync-sync-directories-illustration.jpg)
-</Frame>
+![The image illustrates the concept of syncing two directories using "rsync" for remote synchronization between a remote server and a local server.](https://kodekloud.com/kk-media/image/upload/v1752881233/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Back-Up-Files-to-a-Remote-System-Optional/rsync-sync-directories-illustration.jpg)
 
 The basic syntax for rsync is as follows:
 
@@ -32,9 +30,7 @@ An advantage of using rsync is that on subsequent runs, it only transfers change
 
 You can also reverse the source and destination to copy data from a remote directory back to a local directory. Additionally, rsync works for synchronizing between two local directories.
 
-<Callout icon="lightbulb">
-  If you're looking to create a bit-for-bit copy of an entire disk or partition, consider using the dd utility instead of rsync.
-</Callout>
+> **lightbulb** If you're looking to create a bit-for-bit copy of an entire disk or partition, consider using the dd utility instead of rsync.
 
 The dd command creates an exact clone (or image) of a disk, making it ideal for tasks such as creating full disk backups. To ensure data consistency, always unmount the disk or partition before running dd, so that no data is altered during the imaging process.
 
@@ -56,9 +52,7 @@ To restore a disk image from a file back to a disk, simply reverse the input and
 sudo dd if=diskimage.raw of=/dev/vda bs=1M status=progress
 ```
 
-<Callout icon="triangle-alert">
-  Avoid running these dd commands on a virtual machine unless you are absolutely sure you want to overwrite the virtual disk, as this operation can result in data loss.
-</Callout>
+> **triangle-alert** Avoid running these dd commands on a virtual machine unless you are absolutely sure you want to overwrite the virtual disk, as this operation can result in data loss.
 
 This guide demonstrated how to use native Linux tools—rsync for file synchronization and dd for full disk imaging—to perform backup operations in a simple and efficient way.
 
@@ -71,6 +65,4 @@ This guide demonstrated how to use native Linux tools—rsync for file synchroni
 
 For further reading, consider visiting [Linux Backup Strategies](https://linux.die.net/man/1/rsync) and [dd Command Tutorial](https://www.tecmint.com/backup-and-restore-disk-using-dd-command-in-linux/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/c01a1a61-aae5-4525-8e0e-1973ea26a726" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/c01a1a61-aae5-4525-8e0e-1973ea26a726)

@@ -8,15 +8,11 @@ In this lesson, we demonstrate how to work with Jenkins credentials to securely 
 
 First, navigate to the main dashboard and select **Manage Jenkins**. Then, scroll down to the **Credentials** section.
 
-<Frame>
-  ![The image shows the "Manage Jenkins" page of a Jenkins dashboard, displaying system configuration options and a warning about security vulnerabilities in a plugin.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879885/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Jenkins-Credentials/manage-jenkins-dashboard-security-warning.jpg)
-</Frame>
+![The image shows the "Manage Jenkins" page of a Jenkins dashboard, displaying system configuration options and a warning about security vulnerabilities in a plugin.](https://kodekloud.com/kk-media/image/upload/v1752879885/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Jenkins-Credentials/manage-jenkins-dashboard-security-warning.jpg)
 
 Within the Credentials section, you will see different domains such as System and Global. For our purposes, we will create a global credential to be used within the Jenkins Pipeline.
 
-<Frame>
-  ![The image shows a Jenkins dashboard on the "Credentials" page, displaying a section for "Stores scoped to Jenkins" with a "System" store and a global domain.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879886/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Jenkins-Credentials/jenkins-dashboard-credentials-page.jpg)
-</Frame>
+![The image shows a Jenkins dashboard on the "Credentials" page, displaying a section for "Stores scoped to Jenkins" with a "System" store and a global domain.](https://kodekloud.com/kk-media/image/upload/v1752879886/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Jenkins-Credentials/jenkins-dashboard-credentials-page.jpg)
 
 Click **Add credentials**. You will be presented with several types of credentials, including:
 
@@ -29,21 +25,15 @@ Click **Add credentials**. You will be presented with several types of credentia
 
 For this demonstration, we will use the **username and password** type. Set the scope to **Global** and input the values for the username and password to simulate connecting to a server (for example, using "ec2-user" as the username and "password123" as the password on an AWS Linux AMI).
 
-<Frame>
-  ![The image shows a Jenkins interface for creating new credentials, with fields for kind, scope, username, password, ID, and description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879886/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Jenkins-Credentials/jenkins-create-credentials-interface.jpg)
-</Frame>
+![The image shows a Jenkins interface for creating new credentials, with fields for kind, scope, username, password, ID, and description.](https://kodekloud.com/kk-media/image/upload/v1752879886/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Jenkins-Credentials/jenkins-create-credentials-interface.jpg)
 
 Assign an ID to this credential (e.g., "server-creds") and optionally add a description. By default, the password is treated as secret. If you would also like the username to be hidden, check the corresponding option. Finally, click **Create**.
 
-<Frame>
-  ![The image shows a Jenkins interface displaying global credentials, with one entry labeled "server-creds" for an "ec2-user" using a username and password. There's an option to add more credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879887/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Jenkins-Credentials/jenkins-global-credentials-server-creds.jpg)
-</Frame>
+![The image shows a Jenkins interface displaying global credentials, with one entry labeled "server-creds" for an "ec2-user" using a username and password. There's an option to add more credentials.](https://kodekloud.com/kk-media/image/upload/v1752879887/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Jenkins-Credentials/jenkins-global-credentials-server-creds.jpg)
 
 Once the credential is created, you can integrate it into your Jenkins Pipeline. Below is an example Pipeline script that clears any previously defined environment variables.
 
-<Callout icon="lightbulb">
-  This script demonstrates a basic pipeline with separate stages for setup and testing.
-</Callout>
+> **lightbulb** This script demonstrates a basic pipeline with separate stages for setup and testing.
 
 ```groovy theme={null}
 pipeline {
@@ -199,9 +189,7 @@ pipeline {
 }
 ```
 
-<Callout icon="lightbulb">
-  Variables defined within the `withCredentials` block are only available within that block. This practice helps keep sensitive information secure by ensuring that credentials are not exposed outside their intended scope.
-</Callout>
+> **lightbulb** Variables defined within the `withCredentials` block are only available within that block. This practice helps keep sensitive information secure by ensuring that credentials are not exposed outside their intended scope.
 
 After testing the configuration, commit and push your changes:
 
@@ -228,6 +216,4 @@ For more information on managing Jenkins credentials, check out the [Jenkins Doc
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/03fe649a-f7f5-4252-87b1-9140abbf85b8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/03fe649a-f7f5-4252-87b1-9140abbf85b8)

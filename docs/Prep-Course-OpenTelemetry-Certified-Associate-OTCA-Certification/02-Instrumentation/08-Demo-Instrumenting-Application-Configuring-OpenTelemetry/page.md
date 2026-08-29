@@ -122,9 +122,7 @@ Notes:
 * `BatchSpanProcessor` is recommended in production to improve performance.
 * Setting `Resource` attributes like `service.name` and `service.version` improves trace filtering and service identification in a backend.
 
-<Callout icon="lightbulb">
-  Make sure an [OTLP-compatible collector](https://opentelemetry.io/docs/collector/) (or backend) is reachable at the OTLP endpoint you configured (here, `http://localhost:4318/v1/traces`). If you want console output only for quick testing, you can swap `OTLPSpanExporter` for `ConsoleSpanExporter`.
-</Callout>
+> **lightbulb** Make sure an [OTLP-compatible collector](https://opentelemetry.io/docs/collector/) (or backend) is reachable at the OTLP endpoint you configured (here, `http://localhost:4318/v1/traces`). If you want console output only for quick testing, you can swap `OTLPSpanExporter` for `ConsoleSpanExporter`.
 
 Start the instrumented service and test
 
@@ -174,9 +172,7 @@ Links and References
 * [Jaeger Tracing](https://www.jaegertracing.io/)
 * [Grafana Tempo](https://grafana.com/oss/tempo/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/6937673a-33fe-4a40-aa41-a889659c3b64" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/6937673a-33fe-4a40-aa41-a889659c3b64)
 
 
 # Demo Instrumenting Application Configuring OpenTelemetry
@@ -238,9 +234,7 @@ Example of packages installed (condensed):
 Successfully installed opentelemetry-api-1.36.0 opentelemetry-sdk-1.36.0 opentelemetry-semantic-conventions-0.57b0 typing-extensions-4.15.0 importlib-metadata-8.7.0 zipp-3.23.0
 ```
 
-<Callout icon="lightbulb">
-  OpenTelemetry is split into API and SDK: the API provides the interfaces you call from application code, while the SDK provides concrete implementations (exporters, processors, and providers) that produce and export telemetry.
-</Callout>
+> **lightbulb** OpenTelemetry is split into API and SDK: the API provides the interfaces you call from application code, while the SDK provides concrete implementations (exporters, processors, and providers) that produce and export telemetry.
 
 Configuring tracing in Python
 Below is a small helper that configures a tracer provider, a span processor, and a `ConsoleSpanExporter`. The `ConsoleSpanExporter` prints spans to stdout — this is useful for local development and debugging.

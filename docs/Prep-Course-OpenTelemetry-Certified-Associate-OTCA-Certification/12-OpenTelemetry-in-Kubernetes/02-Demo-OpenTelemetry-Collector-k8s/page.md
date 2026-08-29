@@ -86,9 +86,7 @@ metadata:
     instrumentation.opentelemetry.io/inject-python: "true"
 ```
 
-<Callout icon="warning">
-  Use namespace-level injection with care. It will affect all pods in the namespace, including system, test, or utility pods that may not need instrumentation.
-</Callout>
+> **warning** Use namespace-level injection with care. It will affect all pods in the namespace, including system, test, or utility pods that may not need instrumentation.
 
 Supported languages
 
@@ -117,9 +115,7 @@ Links and references
 
 That covers the essentials of OpenTelemetry auto-instrumentation using the Operator.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/4ac6b8ec-ac71-475f-bb59-b5823a7b89db" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/4ac6b8ec-ac71-475f-bb59-b5823a7b89db)
 
 
 # Demo OpenTelemetry Collector k8s

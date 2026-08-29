@@ -21,7 +21,7 @@ Azure API Management allows you to apply subscription keys at different scopes t
 
 > **lightbulb** API Management also supports additional security mechanisms such as OAuth 2.0, client certificates, and IP allow listings, providing multiple layers of protection.
 
-![The image is a table describing subscription key scopes for APIs, detailing how they apply to all APIs, a single API, or a product. It also notes that API management supports various security mechanisms.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866334/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-APIs-by-Using-Subscriptions/subscription-key-scopes-api-table.jpg)
+![The image is a table describing subscription key scopes for APIs, detailing how they apply to all APIs, a single API, or a product. It also notes that API management supports various security mechanisms.](https://kodekloud.com/kk-media/image/upload/v1752866334/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-APIs-by-Using-Subscriptions/subscription-key-scopes-api-table.jpg)
 
 ## Managing Subscription Keys in the API Management Portal
 
@@ -29,7 +29,7 @@ When you make a request to a secured API, the subscription key must be included 
 
 You can regenerate subscription keys at any time from the Azure portal. Regular key regeneration is a best practice to maintain security, especially if a key is compromised.
 
-![The image shows a screenshot of an API management service interface, focusing on subscriptions with options for adding and managing keys. It includes a note about the necessity of including keys in requests and the ability to regenerate them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866336/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-APIs-by-Using-Subscriptions/api-management-subscriptions-keys-screenshot.jpg)
+![The image shows a screenshot of an API management service interface, focusing on subscriptions with options for adding and managing keys. It includes a note about the necessity of including keys in requests and the ability to regenerate them.](https://kodekloud.com/kk-media/image/upload/v1752866336/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-APIs-by-Using-Subscriptions/api-management-subscriptions-keys-screenshot.jpg)
 
 Each subscription includes both primary and secondary keys to enable seamless key rotation. For instance, you can switch to the secondary key while regenerating the primary key to ensure uninterrupted API access.
 
@@ -37,7 +37,7 @@ Each subscription includes both primary and secondary keys to enable seamless ke
 
 To authenticate API requests, include the subscription key as either a request header or a query string parameter. By default, Azure API Management expects the key to be passed in the header named `OCP-Apim-Subscription-Key`.
 
-![The image shows a user interface for managing API access with a subscription key, highlighting options for passing keys in the request header or URL query string. It includes settings for subscription requirements and header names.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866337/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-APIs-by-Using-Subscriptions/api-access-management-ui.jpg)
+![The image shows a user interface for managing API access with a subscription key, highlighting options for passing keys in the request header or URL query string. It includes settings for subscription requirements and header names.](https://kodekloud.com/kk-media/image/upload/v1752866337/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-APIs-by-Using-Subscriptions/api-access-management-ui.jpg)
 
 Azure API Management also features a developer portal that allows you to test API calls, ensuring your subscription key is properly integrated before the API goes live.
 
@@ -49,11 +49,11 @@ To manage subscription keys in the Azure portal:
 2. Select the "Subscriptions" section to view both product-level keys and service-level keys that grant access to all APIs.
 3. Click "Add Subscription" to create a new subscription. Provide a name (for example, "Flight API") and select the appropriate scope.
 
-![The image shows a Microsoft Azure API Management portal with a list of subscriptions and a panel for creating a new subscription.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866338/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-APIs-by-Using-Subscriptions/azure-api-management-subscriptions-panel.jpg)
+![The image shows a Microsoft Azure API Management portal with a list of subscriptions and a panel for creating a new subscription.](https://kodekloud.com/kk-media/image/upload/v1752866338/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-APIs-by-Using-Subscriptions/azure-api-management-subscriptions-panel.jpg)
 
 For example, you might choose the "Specific API" option and select the "Flight Logs API." After creating the subscription, click on "Show/Hide Keys" to view the primary key. You will then integrate this key in your API calls, either as a header with the name `OCP-Apim-Subscription-Key` or as a query string parameter.
 
-![The image shows the Microsoft Azure portal interface, specifically the API Management service settings for a "Flight Logs API," including configuration options for URL, subscription, and security settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866340/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-APIs-by-Using-Subscriptions/azure-portal-api-management-flight-logs.jpg)
+![The image shows the Microsoft Azure portal interface, specifically the API Management service settings for a "Flight Logs API," including configuration options for URL, subscription, and security settings.](https://kodekloud.com/kk-media/image/upload/v1752866340/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-APIs-by-Using-Subscriptions/azure-portal-api-management-flight-logs.jpg)
 
 ## Testing API Calls with Postman
 

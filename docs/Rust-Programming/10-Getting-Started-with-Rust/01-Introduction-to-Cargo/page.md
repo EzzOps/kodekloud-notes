@@ -6,15 +6,11 @@ Cargo is the essential tool for managing Rust projects, serving as both the pack
 
 Cargo is the essential tool for managing Rust projects, serving as both the package manager and build system. It streamlines many aspects of Rust development—including project management, dependency resolution, testing, and more—all in one handy command-line utility.
 
-<Frame>
-  ![The image explains that Cargo is the Rust package manager and build system, highlighting its functions: managing Rust projects, handling dependencies, and running tests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883902/notes-assets/images/Rust-Programming-Introduction-to-Cargo/cargo-rust-package-manager-functions.jpg)
-</Frame>
+![The image explains that Cargo is the Rust package manager and build system, highlighting its functions: managing Rust projects, handling dependencies, and running tests.](https://kodekloud.com/kk-media/image/upload/v1752883902/notes-assets/images/Rust-Programming-Introduction-to-Cargo/cargo-rust-package-manager-functions.jpg)
 
 Rust applications can quickly become complex with numerous dependencies. Manually managing these can be error-prone and time-consuming. Cargo automates this process, ensuring all libraries are at the correct versions and that your project compiles successfully.
 
-<Frame>
-  ![The image explains that Rust projects often involve multiple dependencies, which can be error-prone and time-consuming, and highlights that Cargo automates version control and ensures proper compilation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883904/notes-assets/images/Rust-Programming-Introduction-to-Cargo/rust-projects-dependencies-cargo.jpg)
-</Frame>
+![The image explains that Rust projects often involve multiple dependencies, which can be error-prone and time-consuming, and highlights that Cargo automates version control and ensures proper compilation.](https://kodekloud.com/kk-media/image/upload/v1752883904/notes-assets/images/Rust-Programming-Introduction-to-Cargo/rust-projects-dependencies-cargo.jpg)
 
 ## Creating a New Rust Project
 

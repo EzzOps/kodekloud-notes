@@ -4,9 +4,7 @@ date >> /tmp/script.log
 cat /proc/version >> /tmp/script.log
 ```
 
-<Callout icon="lightbulb">
-  The first line (`#!/bin/bash`) is the **shebang**, telling the system which interpreter to use.
-</Callout>
+> **lightbulb** The first line (`#!/bin/bash`) is the **shebang**, telling the system which interpreter to use.
 
 * Lines beginning with `#` are comments.
 * `>>` appends output rather than overwriting.
@@ -84,9 +82,7 @@ To avoid overwriting a good backup, rename the old archive before creating a new
    archive.tar.gz.OLD
    ```
 
-<Callout icon="triangle-alert">
-  Moving or deleting files in `/tmp` can remove critical data if misused. Always verify paths and filenames before executing backup scripts.
-</Callout>
+> **triangle-alert** Moving or deleting files in `/tmp` can remove critical data if misused. Always verify paths and filenames before executing backup scripts.
 
 ***
 
@@ -170,9 +166,7 @@ fi
 
 Make sure to explore bash built-ins (`help`) and system scripts under `/etc/cron.*` for more real-world patterns and advanced techniques.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/1dc5ee08-21f3-4716-8495-459735938e6b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/1dc5ee08-21f3-4716-8495-459735938e6b)
 
 
 # Verify completion of scheduled jobs

@@ -24,21 +24,21 @@ In this hands-on tutorial, you’ll set up an AWS Application Load Balancer (ALB
 
 Our EC2 console shows both instances running:
 
-![The image shows an AWS EC2 Management Console with two running instances, "web-server1" and "web-server2," both of type t2.micro. The details of "web-server2" are displayed, including its instance ID, public IP address, and status checks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863240/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-ec2-management-console-instances.jpg)
+![The image shows an AWS EC2 Management Console with two running instances, "web-server1" and "web-server2," both of type t2.micro. The details of "web-server2" are displayed, including its instance ID, public IP address, and status checks.](https://kodekloud.com/kk-media/image/upload/v1752863240/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-ec2-management-console-instances.jpg)
 
 Visiting **web-server-1** confirms Nginx is up:
 
-![The image shows a web page with a message indicating that "server1" is running, confirming the successful installation of the Nginx web server. It includes links for online documentation and support.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863242/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/nginx-server1-running-installation-confirmation.jpg)
+![The image shows a web page with a message indicating that "server1" is running, confirming the successful installation of the Nginx web server. It includes links for online documentation and support.](https://kodekloud.com/kk-media/image/upload/v1752863242/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/nginx-server1-running-installation-confirmation.jpg)
 
 And **web-server-2** is similarly healthy:
 
-![The image shows an AWS EC2 Management Console with two running instances, "web-server1" and "web-server2," both of type t2.micro, with status checks passed and no alarms. Monitoring graphs for CPU utilization and network activity are displayed below.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863243/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-ec2-management-console-instances-2.jpg)
+![The image shows an AWS EC2 Management Console with two running instances, "web-server1" and "web-server2," both of type t2.micro, with status checks passed and no alarms. Monitoring graphs for CPU utilization and network activity are displayed below.](https://kodekloud.com/kk-media/image/upload/v1752863243/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-ec2-management-console-instances-2.jpg)
 
 ### Network Layout
 
 Your VPC’s public subnets:
 
-![The image shows an AWS Management Console screen displaying the subnets section of a VPC dashboard, listing two subnets with their details such as VPC ID, IPv4 CIDR, and availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863244/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-management-console-vpc-subnets-dashboard.jpg)
+![The image shows an AWS Management Console screen displaying the subnets section of a VPC dashboard, listing two subnets with their details such as VPC ID, IPv4 CIDR, and availability zones.](https://kodekloud.com/kk-media/image/upload/v1752863244/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-management-console-vpc-subnets-dashboard.jpg)
 
 * **web-us-east-1a**: 10.0.201.0/24
 * **web-us-east-1b**: 10.0.202.0/24
@@ -56,11 +56,11 @@ Add two new public subnets—one in each AZ—for the ALB:
    * **LB-us-east-1a**: us-east-1a, 10.0.101.0/24
    * **LB-us-east-1b**: us-east-1b, 10.0.102.0/24
 
-![The image shows a screenshot of the AWS Management Console, specifically the VPC (Virtual Private Cloud) setup page, where subnet settings are being configured. It includes fields for VPC ID, associated CIDRs, subnet name, availability zone, and IPv4 CIDR block.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863245/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-vpc-setup-screenshot-subnet-settings.jpg)
+![The image shows a screenshot of the AWS Management Console, specifically the VPC (Virtual Private Cloud) setup page, where subnet settings are being configured. It includes fields for VPC ID, associated CIDRs, subnet name, availability zone, and IPv4 CIDR block.](https://kodekloud.com/kk-media/image/upload/v1752863245/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-vpc-setup-screenshot-subnet-settings.jpg)
 
 After creation, verify you have four public subnets:
 
-![The image shows the AWS Management Console displaying the VPC dashboard with a list of subnets. A notification at the top indicates that a new subnet has been successfully created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863247/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-management-console-vpc-dashboard-subnets.jpg)
+![The image shows the AWS Management Console displaying the VPC dashboard with a list of subnets. A notification at the top indicates that a new subnet has been successfully created.](https://kodekloud.com/kk-media/image/upload/v1752863247/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-management-console-vpc-dashboard-subnets.jpg)
 
 ***
 
@@ -70,7 +70,7 @@ After creation, verify you have four public subnets:
 
 Select **LB-us-east-1a** (and **LB-us-east-1b**) to inspect its Route Table:
 
-![The image shows an AWS VPC Management Console displaying a list of subnets, with details of a selected subnet including its ID, state, and availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863248/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-vpc-management-console-subnets-details.jpg)
+![The image shows an AWS VPC Management Console displaying a list of subnets, with details of a selected subnet including its ID, state, and availability zone.](https://kodekloud.com/kk-media/image/upload/v1752863248/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-vpc-management-console-subnets-details.jpg)
 
 ***
 
@@ -84,15 +84,15 @@ Select **LB-us-east-1a** (and **LB-us-east-1b**) to inspect its Route Table:
    * **VPC**: demo
 3. Select subnets **LB-us-east-1a** and **LB-us-east-1b**.
 
-![The image shows a comparison of three types of AWS load balancers: Application Load Balancer, Network Load Balancer, and Gateway Load Balancer, each with a brief description and a "Create" button.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863249/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-load-balancer-comparison-diagram.jpg)
+![The image shows a comparison of three types of AWS load balancers: Application Load Balancer, Network Load Balancer, and Gateway Load Balancer, each with a brief description and a "Create" button.](https://kodekloud.com/kk-media/image/upload/v1752863249/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-load-balancer-comparison-diagram.jpg)
 
 Configure the ALB network mapping:
 
-![The image shows a configuration page for creating an application load balancer in the AWS Management Console, with options for naming, scheme selection, IP address type, and network mapping.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863250/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-application-load-balancer-configuration.jpg)
+![The image shows a configuration page for creating an application load balancer in the AWS Management Console, with options for naming, scheme selection, IP address type, and network mapping.](https://kodekloud.com/kk-media/image/upload/v1752863250/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-application-load-balancer-configuration.jpg)
 
 Attach a security group allowing HTTP (80) and HTTPS (443):
 
-![The image shows a screenshot of the AWS Management Console, specifically the section for configuring security groups for a load balancer. It includes options to select or create security groups and displays a dropdown list of available groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863251/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-management-console-security-groups-load-balancer.jpg)
+![The image shows a screenshot of the AWS Management Console, specifically the section for configuring security groups for a load balancer. It includes options to select or create security groups and displays a dropdown list of available groups.](https://kodekloud.com/kk-media/image/upload/v1752863251/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-management-console-security-groups-load-balancer.jpg)
 
 ***
 
@@ -102,7 +102,7 @@ Attach a security group allowing HTTP (80) and HTTPS (443):
 
 Add an HTTP listener on port 80:
 
-![The image shows an AWS Management Console interface for configuring a load balancer, including settings for security groups and listener routing with HTTP protocol on port 80.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863252/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-management-console-load-balancer-configuration.jpg)
+![The image shows an AWS Management Console interface for configuring a load balancer, including settings for security groups and listener routing with HTTP protocol on port 80.](https://kodekloud.com/kk-media/image/upload/v1752863252/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-management-console-load-balancer-configuration.jpg)
 
 ### Target Group
 
@@ -114,19 +114,19 @@ Add an HTTP listener on port 80:
    * **VPC**: demo
    * **Health check path**: `/`
 
-![The image shows a screenshot of the AWS Management Console, specifically the section for creating a target group for a load balancer. It includes options for setting the target group name, protocol, port, VPC, and protocol version.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863253/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-management-console-target-group-creation.jpg)
+![The image shows a screenshot of the AWS Management Console, specifically the section for creating a target group for a load balancer. It includes options for setting the target group name, protocol, port, VPC, and protocol version.](https://kodekloud.com/kk-media/image/upload/v1752863253/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-management-console-target-group-creation.jpg)
 
 2. Register **web-server-1** and **web-server-2** on port 80:
 
-![The image shows an AWS Management Console interface, specifically the section for creating a target group for load balancing, with two instances listed as targets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863255/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-management-console-target-group-load-balancing.jpg)
+![The image shows an AWS Management Console interface, specifically the section for creating a target group for load balancing, with two instances listed as targets.](https://kodekloud.com/kk-media/image/upload/v1752863255/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-management-console-target-group-load-balancing.jpg)
 
 3. Back in the ALB wizard, set **web-targets** as the default action for the HTTP listener:
 
-![The image shows an AWS Management Console interface for configuring listeners and routing for a load balancer, with options for HTTP and HTTPS protocols. It includes settings for ports, default actions, and listener tags.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863256/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-management-console-load-balancer-listeners.jpg)
+![The image shows an AWS Management Console interface for configuring listeners and routing for a load balancer, with options for HTTP and HTTPS protocols. It includes settings for ports, default actions, and listener tags.](https://kodekloud.com/kk-media/image/upload/v1752863256/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-management-console-load-balancer-listeners.jpg)
 
 4. Review and create the ALB:
 
-![The image shows an AWS Management Console screen for configuring a load balancer, displaying sections for basic configuration, security groups, network mapping, and listeners and routing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863257/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-management-console-load-balancer-config.jpg)
+![The image shows an AWS Management Console screen for configuring a load balancer, displaying sections for basic configuration, security groups, network mapping, and listeners and routing.](https://kodekloud.com/kk-media/image/upload/v1752863257/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-management-console-load-balancer-config.jpg)
 
 ***
 
@@ -134,7 +134,7 @@ Add an HTTP listener on port 80:
 
 Wait until the ALB status is **active**, then copy its DNS name:
 
-![The image shows an AWS EC2 Management Console displaying details of a load balancer named "web-lb," which is active and internet-facing, with information about its VPC, availability zones, and other settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863258/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-ec2-load-balancer-web-lb.jpg)
+![The image shows an AWS EC2 Management Console displaying details of a load balancer named "web-lb," which is active and internet-facing, with information about its VPC, availability zones, and other settings.](https://kodekloud.com/kk-media/image/upload/v1752863258/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-ec2-load-balancer-web-lb.jpg)
 
 From your terminal or browser:
 
@@ -150,7 +150,7 @@ Refreshing the request should alternate responses between **server1** and **serv
 
 > **triangle-alert** Currently, both web servers have public IPs:
 
-  ![The image shows an AWS EC2 Management Console with a list of instances, some running and some terminated. The user is searching for instances with the state "running."](../../../../images/kodekloud.com/kk-media/image/upload/v1752863259/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-ec2-management-console-running-instances.jpg)
+  ![The image shows an AWS EC2 Management Console with a list of instances, some running and some terminated. The user is searching for instances with the state "running."](https://kodekloud.com/kk-media/image/upload/v1752863259/notes-assets/images/AWS-Networking-Fundamentals-Load-Balancers-Demo/aws-ec2-management-console-running-instances.jpg)
 
   To harden your architecture:
 

@@ -24,7 +24,7 @@ Diagnostic logging is a critical component for monitoring and troubleshooting yo
 
 Mapping virtual applications to directories helps organize your web app’s content, especially in complex web structures. This setup simplifies management and supports a more organized and maintainable application framework.
 
-![The image is an introduction slide with a list of four tasks related to application configuration, TLS certificate installation, diagnostic logging, and virtual application setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866207/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Introduction/application-configuration-tasks-intro.jpg)
+![The image is an introduction slide with a list of four tasks related to application configuration, TLS certificate installation, diagnostic logging, and virtual application setup.](https://kodekloud.com/kk-media/image/upload/v1752866207/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Introduction/application-configuration-tasks-intro.jpg)
 
 By the end of this lesson, you will have a thorough understanding of these configuration tasks, ensuring that your Azure web app is not only fully functional but also secure, well-structured, and ready to meet modern web demands.
 

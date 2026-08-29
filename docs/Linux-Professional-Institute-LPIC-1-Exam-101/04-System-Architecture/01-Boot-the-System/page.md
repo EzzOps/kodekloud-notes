@@ -165,13 +165,11 @@ Apply all updates:
 sudo yum update
 ```
 
-<Callout icon="triangle-alert">
-  If a kernel or critical component is updated, reboot to ensure changes take effect:
+> **triangle-alert** If a kernel or critical component is updated, reboot to ensure changes take effect:
 
   ```bash theme={null}
   sudo reboot
   ```
-</Callout>
 
 ***
 
@@ -181,9 +179,7 @@ sudo yum update
 * [YUM Official Documentation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_packages_with_yum/index)
 * [Docker CE Repository for RHEL](https://docs.docker.com/engine/install/centos/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/4c5f841d-94ae-4b1d-bb25-4f3564494554" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/4c5f841d-94ae-4b1d-bb25-4f3564494554)
 
 
 # Boot the System
@@ -194,9 +190,7 @@ This guide explains the Linux boot process, covering stages from firmware to the
 
 Understanding the Linux boot process is essential for troubleshooting and optimizing system startup. This guide walks through each stage—from firmware to the init system—detailing BIOS/UEFI, the GRUB bootloader, kernel initialization with initramfs, and the init process.
 
-<Frame>
-  ![The image is a flowchart illustrating the system boot process, showing the sequence from BIOS or UEFI to Bootloader, Kernel, and Init.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881446/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Boot-the-System/system-boot-process-flowchart.jpg)
-</Frame>
+![The image is a flowchart illustrating the system boot process, showing the sequence from BIOS or UEFI to Bootloader, Kernel, and Init.](https://kodekloud.com/kk-media/image/upload/v1752881446/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Boot-the-System/system-boot-process-flowchart.jpg)
 
 ## 1. BIOS and the Master Boot Record (MBR)
 
@@ -207,17 +201,11 @@ The Basic Input/Output System (BIOS) resides on a motherboard chip and executes 
 3. **MBR Read:** Loads the first 512 bytes—the Master Boot Record—from the configured disk.
 4. **Bootstrap Loader:** Executes the first-stage bootloader (440 bytes), reads the partition table, then transfers control to the second stage to load the bootloader and kernel.
 
-<Callout icon="lightbulb">
-  The MBR format supports disks up to 2 TiB and allows a maximum of four primary partitions. Consider GPT for larger disks.
-</Callout>
+> **lightbulb** The MBR format supports disks up to 2 TiB and allows a maximum of four primary partitions. Consider GPT for larger disks.
 
-<Frame>
-  ![The image illustrates a comparison between two storage sections: one with 440 bytes for the first device bootstrap and another with 512 bytes for the MBR and DOS partition.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881447/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Boot-the-System/storage-comparison-bootstrap-mbr-dos.jpg)
-</Frame>
+![The image illustrates a comparison between two storage sections: one with 440 bytes for the first device bootstrap and another with 512 bytes for the MBR and DOS partition.](https://kodekloud.com/kk-media/image/upload/v1752881447/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Boot-the-System/storage-comparison-bootstrap-mbr-dos.jpg)
 
-<Frame>
-  ![The image is a slide explaining the BIOS POST process, detailing its functions like identifying hardware failures, activating components, loading the bootstrap from the MBR, and loading the bootloader's second stage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881448/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Boot-the-System/bios-post-process-explanation-slide.jpg)
-</Frame>
+![The image is a slide explaining the BIOS POST process, detailing its functions like identifying hardware failures, activating components, loading the bootstrap from the MBR, and loading the bootloader's second stage.](https://kodekloud.com/kk-media/image/upload/v1752881448/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Boot-the-System/bios-post-process-explanation-slide.jpg)
 
 ## 2. UEFI (Unified Extensible Firmware Interface)
 
@@ -230,25 +218,17 @@ UEFI modernizes BIOS by using non-volatile memory (NVRAM) to locate EFI applicat
 
 UEFI’s Secure Boot verifies digital signatures, preventing unauthorized kernels and bootloaders.
 
-<Callout icon="triangle-alert">
-  Disabling Secure Boot is often required when installing unsigned or custom kernels. Ensure you understand the security implications.
-</Callout>
+> **triangle-alert** Disabling Secure Boot is often required when installing unsigned or custom kernels. Ensure you understand the security implications.
 
-<Frame>
-  ![The image is a diagram related to UEFI, showing components like NVRAM, EFI applications, FAT filesystems or ISO-9660, and the EFI System Partition (ESP).](../../../../images/kodekloud.com/kk-media/image/upload/v1752881449/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Boot-the-System/uefi-diagram-nvram-efi-applications.jpg)
-</Frame>
+![The image is a diagram related to UEFI, showing components like NVRAM, EFI applications, FAT filesystems or ISO-9660, and the EFI System Partition (ESP).](https://kodekloud.com/kk-media/image/upload/v1752881449/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Boot-the-System/uefi-diagram-nvram-efi-applications.jpg)
 
-<Frame>
-  ![The image is a slide describing the functions of UEFI, including identifying hardware failures, activating components, executing EFI applications, loading the kernel, and supporting Secure Boot.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881450/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Boot-the-System/uefi-functions-hardware-failures-secure-boot.jpg)
-</Frame>
+![The image is a slide describing the functions of UEFI, including identifying hardware failures, activating components, executing EFI applications, loading the kernel, and supporting Secure Boot.](https://kodekloud.com/kk-media/image/upload/v1752881450/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Boot-the-System/uefi-functions-hardware-failures-secure-boot.jpg)
 
 ## 3. GRUB: The Grand Unified Bootloader
 
 GRUB is the most common x86 bootloader for BIOS and UEFI systems. Press **Shift** (BIOS) or **Esc** (UEFI) to access the menu if it doesn’t appear.
 
-<Frame>
-  ![The image is an informational graphic about the Grand Unified Bootloader (GRUB), showing key combinations for BIOS (SHIFT) and UEFI (ESC) booting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881451/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Boot-the-System/grub-bootloader-bios-uefi-graphic.jpg)
-</Frame>
+![The image is an informational graphic about the Grand Unified Bootloader (GRUB), showing key combinations for BIOS (SHIFT) and UEFI (ESC) booting.](https://kodekloud.com/kk-media/image/upload/v1752881451/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Boot-the-System/grub-bootloader-bios-uefi-graphic.jpg)
 
 From GRUB, you can select kernels and pass parameters in `option=value` format:
 
@@ -264,9 +244,7 @@ From GRUB, you can select kernels and pass parameters in `option=value` format:
 | `root=/dev/sda3`                 | Specify root filesystem partition                    |
 | `rootflags=ro` or `rootflags=rw` | Mount root filesystem read-only or read-write        |
 
-<Frame>
-  ![The image is a list of bootloader commands and their descriptions, including examples for setting system parameters like ACPI, system initialization, RAM, processors, and root filesystem options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881452/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Boot-the-System/bootloader-commands-system-parameters-list.jpg)
-</Frame>
+![The image is a list of bootloader commands and their descriptions, including examples for setting system parameters like ACPI, system initialization, RAM, processors, and root filesystem options.](https://kodekloud.com/kk-media/image/upload/v1752881452/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Boot-the-System/bootloader-commands-system-parameters-list.jpg)
 
 We’ll cover permanent GRUB configuration in a later lesson.
 
@@ -285,9 +263,7 @@ exec /sbin/init
 
 This launches the init system and frees the initramfs from memory.
 
-<Frame>
-  ![The image is a slide explaining the Linux boot process, detailing how the kernel is loaded into RAM, mounts filesystems, and loads the init program.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881453/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Boot-the-System/linux-boot-process-kernel-init-slide.jpg)
-</Frame>
+![The image is a slide explaining the Linux boot process, detailing how the kernel is loaded into RAM, mounts filesystems, and loads the init program.](https://kodekloud.com/kk-media/image/upload/v1752881453/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Boot-the-System/linux-boot-process-kernel-init-slide.jpg)
 
 ## 5. Init Systems: SysV, systemd, and Upstart
 
@@ -299,9 +275,7 @@ Linux distributions may use different init managers:
 | systemd     | Service manager | Parallel startup, socket/D-Bus activation, cgroups, dependency-based units      |
 | Upstart     | Event-driven    | Responds to system events for parallel service startup (legacy Ubuntu releases) |
 
-<Frame>
-  ![The image is a comparison of three init systems: SysV standard, systemd, and Upstart, describing their functions and usage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881454/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Boot-the-System/init-systems-comparison-sysv-systemd-upstart.jpg)
-</Frame>
+![The image is a comparison of three init systems: SysV standard, systemd, and Upstart, describing their functions and usage.](https://kodekloud.com/kk-media/image/upload/v1752881454/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Boot-the-System/init-systems-comparison-sysv-systemd-upstart.jpg)
 
 ## Viewing and Analyzing Boot Messages
 
@@ -339,6 +313,4 @@ journalctl -D /var/log/other_directory
 * [BIOS Basics on Wikipedia](https://en.wikipedia.org/wiki/BIOS)
 * [Unified Extensible Firmware Interface Forum](https://uefi.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/55c2d118-3a85-4da1-8a7f-e9f8671cc818/lesson/f59861cb-06f6-4c38-8d5f-f19970b20ea2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/55c2d118-3a85-4da1-8a7f-e9f8671cc818/lesson/f59861cb-06f6-4c38-8d5f-f19970b20ea2)

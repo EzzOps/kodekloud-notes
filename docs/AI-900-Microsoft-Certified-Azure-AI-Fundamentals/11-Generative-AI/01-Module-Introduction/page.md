@@ -22,7 +22,7 @@ Discover how these models are trained to recognize patterns and make accurate pr
 
 We also examine foundation models, which form the base of many sophisticated AI systems. Understand how these models serve as the groundwork for numerous advanced applications in modern AI.
 
-![The image is a module introduction slide with a gradient background, listing four topics: Introduction to Generative AI, Language Models, Language Model Training, and Foundation Models.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857018/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Module-Introduction/generative-ai-introduction-topics.jpg)
+![The image is a module introduction slide with a gradient background, listing four topics: Introduction to Generative AI, Language Models, Language Model Training, and Foundation Models.](https://kodekloud.com/kk-media/image/upload/v1752857018/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Module-Introduction/generative-ai-introduction-topics.jpg)
 
 ## Language Models: Large vs. Small
 
@@ -38,7 +38,7 @@ We then introduce the concept of Copilot—AI-driven assistants designed to help
 
 Explore Microsoft Copilot Services and their seamless integration with tools such as Microsoft 365. Gain insights into crafting effective Copilot prompts and optimizing their use to maximize the benefits provided by these services.
 
-![The image is a module introduction slide listing topics such as large and small language models, copilots, Microsoft Copilot services, and copilot prompts considerations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857019/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Module-Introduction/module-introduction-language-models-copilots.jpg)
+![The image is a module introduction slide listing topics such as large and small language models, copilots, Microsoft Copilot services, and copilot prompts considerations.](https://kodekloud.com/kk-media/image/upload/v1752857019/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Module-Introduction/module-introduction-language-models-copilots.jpg)
 
 ## Developing Your Own Copilot
 

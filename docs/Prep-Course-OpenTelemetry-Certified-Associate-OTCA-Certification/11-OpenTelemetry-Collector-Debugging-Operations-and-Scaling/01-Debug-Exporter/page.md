@@ -112,9 +112,7 @@ service:
 # Flip upstream routing or switch receiver instances when ready
 ```
 
-<Callout icon="warning">
-  If both blue and green pipelines are active and receive the same input, you will produce duplicate telemetry at the destination(s). Use routing rules or switch receivers to avoid duplication during cutover.
-</Callout>
+> **warning** If both blue and green pipelines are active and receive the same input, you will produce duplicate telemetry at the destination(s). Use routing rules or switch receivers to avoid duplication during cutover.
 
 Common failure modes and quick fixes
 
@@ -216,11 +214,9 @@ Links and references
 
 That's it for the Collector's service section and pipelines — use these patterns to design robust collection flows, avoid duplicates during cutovers, and ensure internal telemetry is observable.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/3cf8dbc3-c711-4775-b58a-e59eef131a92" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/3cf8dbc3-c711-4775-b58a-e59eef131a92)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/69d88262-9bbf-42aa-9d85-a532e07d7b2a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/69d88262-9bbf-42aa-9d85-a532e07d7b2a)
 
 
 # Debug Exporter
@@ -231,9 +227,7 @@ Practical guide to the OpenTelemetry Collector debug exporter explaining purpose
 
 This article gives a concise, practical guide to the OpenTelemetry Collector debug exporter: what it is, how to configure it, and when to use it. The debug exporter writes telemetry (traces, metrics, logs) to the collector’s logs (stdout/stderr) with configurable verbosity and optional sampling. It is ideal for validating data, testing new configurations, and troubleshooting pipeline behavior during development.
 
-<Callout icon="lightbulb">
-  The debug exporter is intended for debugging and testing only — it is not recommended for production use.
-</Callout>
+> **lightbulb** The debug exporter is intended for debugging and testing only — it is not recommended for production use.
 
 <Frame>
   <img alt="The image is a flowchart introducing a &#x22;Debug Exporter&#x22; involving stages like Testing, Validation, and Troubleshooting within Pipelines." />
@@ -333,9 +327,7 @@ Detailed output is particularly useful to:
 * inspect attribute and field transformations applied by processors, and
 * diagnose pipeline routing or dropping issues.
 
-<Callout icon="warning">
-  Be cautious: detailed debug output can include sensitive information and generate very large log volumes. Do not enable `detailed` verbosity in production. If needed, redirect collector stdout/stderr to a controlled file and restrict access.
-</Callout>
+> **warning** Be cautious: detailed debug output can include sensitive information and generate very large log volumes. Do not enable `detailed` verbosity in production. If needed, redirect collector stdout/stderr to a controlled file and restrict access.
 
 ## Additional notes and best practices
 
@@ -351,6 +343,4 @@ Detailed output is particularly useful to:
 
 This concludes the overview of the debug exporter.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/ea53fa1a-71bb-4cd4-9768-48f5bb3aadc7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/ea53fa1a-71bb-4cd4-9768-48f5bb3aadc7)

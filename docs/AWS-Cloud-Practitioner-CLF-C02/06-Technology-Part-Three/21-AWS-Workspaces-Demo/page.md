@@ -32,7 +32,7 @@ This script initializes your connection with AWS services by setting parameters 
 
 If you'd like to verify the instance, check the notebook instances section in the SageMaker interface or the corresponding section in Studio.
 
-![The image shows the Amazon SageMaker interface, highlighting features like Studio Notebooks, One-click Training, and Deployment options for machine learning workflows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862053/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_320.jpg)
+![The image shows the Amazon SageMaker interface, highlighting features like Studio Notebooks, One-click Training, and Deployment options for machine learning workflows.](https://kodekloud.com/kk-media/image/upload/v1752862053/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_320.jpg)
 
 > **lightbulb** Once the kernel is up and running, click the play button on each cell to execute the code.
 
@@ -104,9 +104,9 @@ This cell performs the following tasks:
 
 After running this cell, check the SageMaker Feature Store in Studio to confirm that the data has loaded successfully.
 
-![The image shows Amazon SageMaker Studio with a Jupyter notebook open, displaying code and instructions related to data processing and feature store setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862054/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_460.jpg)
+![The image shows Amazon SageMaker Studio with a Jupyter notebook open, displaying code and instructions related to data processing and feature store setup.](https://kodekloud.com/kk-media/image/upload/v1752862054/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_460.jpg)
 
-![The image shows the Amazon SageMaker Studio interface, specifically the Feature Store section, displaying a feature group catalog with details like name, description, and status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862056/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_470.jpg)
+![The image shows the Amazon SageMaker Studio interface, specifically the Feature Store section, displaying a feature group catalog with details like name, description, and status.](https://kodekloud.com/kk-media/image/upload/v1752862056/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_470.jpg)
 
 ## Running Autopilot for Tabular Data Problems
 
@@ -134,7 +134,7 @@ print(image_uri)
 
 This portion of the demo underlines SageMaker Studio’s support for a wide range of machine learning workflows—from basic model training to advanced AutoML experiments.
 
-![The image shows the Amazon SageMaker Studio interface with a file explorer, terminal, and a notebook open, discussing starting with SageMaker Autopilot for machine learning tasks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862057/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_500.jpg)
+![The image shows the Amazon SageMaker Studio interface with a file explorer, terminal, and a notebook open, discussing starting with SageMaker Autopilot for machine learning tasks.](https://kodekloud.com/kk-media/image/upload/v1752862057/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_500.jpg)
 
 ## Querying the Feature Store
 
@@ -177,15 +177,15 @@ In summary, this process:
 
 A similar version of the query is provided later in the notebook, featuring slight variations in syntax.
 
-![The image shows the Amazon SageMaker Studio interface, focusing on setting up an AutoML experiment with input data from an S3 location.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862058/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_650.jpg)
+![The image shows the Amazon SageMaker Studio interface, focusing on setting up an AutoML experiment with input data from an S3 location.](https://kodekloud.com/kk-media/image/upload/v1752862058/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_650.jpg)
 
-![The image shows the Amazon SageMaker Studio interface, focusing on setting up a machine learning experiment with target and feature selection options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862059/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_710.jpg)
+![The image shows the Amazon SageMaker Studio interface, focusing on setting up a machine learning experiment with target and feature selection options.](https://kodekloud.com/kk-media/image/upload/v1752862059/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_710.jpg)
 
-![The image shows the Amazon SageMaker Studio interface for creating an Autopilot experiment, focusing on selecting training methods and algorithms.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862060/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_780.jpg)
+![The image shows the Amazon SageMaker Studio interface for creating an Autopilot experiment, focusing on selecting training methods and algorithms.](https://kodekloud.com/kk-media/image/upload/v1752862060/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_780.jpg)
 
-![The image shows the Amazon SageMaker Studio interface, specifically the "Create an Autopilot experiment" section with deployment settings and advanced options for machine learning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862062/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_800.jpg)
+![The image shows the Amazon SageMaker Studio interface, specifically the "Create an Autopilot experiment" section with deployment settings and advanced options for machine learning.](https://kodekloud.com/kk-media/image/upload/v1752862062/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_800.jpg)
 
-![The image shows the Amazon SageMaker Studio interface, specifically the "Create an Autopilot experiment" section, detailing experiment configuration and data input settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862063/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_820.jpg)
+![The image shows the Amazon SageMaker Studio interface, specifically the "Create an Autopilot experiment" section, detailing experiment configuration and data input settings.](https://kodekloud.com/kk-media/image/upload/v1752862063/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_820.jpg)
 
 ## Conclusion
 
@@ -220,7 +220,7 @@ We start our demo in the Northern Virginia region as Amazon WorkSpaces is not su
 
 All necessary features are active, such as WorkDocs, internet access, and local administrator rights. Additionally, web access and Linux client support are enabled. This directory was pre-configured for Active Directory management, which simplifies user administration.
 
-![The image shows an AWS WorkSpaces directory summary page with details like directory type, organization name, status, VPC, subnets, and encryption settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862064/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Workspaces-Demo/frame_60.jpg)
+![The image shows an AWS WorkSpaces directory summary page with details like directory type, organization name, status, VPC, subnets, and encryption settings.](https://kodekloud.com/kk-media/image/upload/v1752862064/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Workspaces-Demo/frame_60.jpg)
 
 ***
 
@@ -228,11 +228,11 @@ All necessary features are active, such as WorkDocs, internet access, and local 
 
 The next step is to select the appropriate directory containing your users and click **Next**. In this phase, an additional user is created specifically for the WorkSpace. For demonstration purposes, the user is named "Amazon Linux" (abbreviated as AL2) with the email "[Michael+AL2@KodeKloud.com](mailto:Michael+AL2@KodeKloud.com)". Note that many email providers ignore text after the plus sign, so the email still routes to [Michael@KodeKloud.com](mailto:Michael@KodeKloud.com).
 
-![The image shows an AWS WorkSpaces interface for creating users, with fields for username, first name, last name, and email, alongside navigation and password management options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862066/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Workspaces-Demo/frame_120.jpg)
+![The image shows an AWS WorkSpaces interface for creating users, with fields for username, first name, last name, and email, alongside navigation and password management options.](https://kodekloud.com/kk-media/image/upload/v1752862066/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Workspaces-Demo/frame_120.jpg)
 
 After creating the user, verify its presence along with other users (such as mForrester and Ubuntu) in the directory and then click **Next**.
 
-![The image shows an AWS WorkSpaces interface for identifying users, listing usernames, names, and emails, with "amazonl2" selected. Steps for creating WorkSpaces are on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862067/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Workspaces-Demo/frame_150.jpg)
+![The image shows an AWS WorkSpaces interface for identifying users, listing usernames, names, and emails, with "amazonl2" selected. Steps for creating WorkSpaces are on the left.](https://kodekloud.com/kk-media/image/upload/v1752862067/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Workspaces-Demo/frame_150.jpg)
 
 ### Selecting a Bundle and Operating System
 
@@ -247,9 +247,9 @@ In the next phase of the configuration, you need to choose a system bundle. The 
 
 For this demo, the "Power" bundle was chosen for its balanced performance. Although the user is named after Amazon Linux, the demo opts for the Ubuntu operating system. Additionally, the WorkSpace is configured to auto-stop after one hour, and tag configuration is skipped to streamline the setup.
 
-![The image shows an AWS WorkSpaces interface for selecting a bundle, highlighting a "Power" option with 4 vCPU and 16 GB memory, suitable for software development and data processing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862069/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Workspaces-Demo/frame_160.jpg)
+![The image shows an AWS WorkSpaces interface for selecting a bundle, highlighting a "Power" option with 4 vCPU and 16 GB memory, suitable for software development and data processing.](https://kodekloud.com/kk-media/image/upload/v1752862069/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Workspaces-Demo/frame_160.jpg)
 
-![The image shows an AWS WorkSpaces configuration screen, highlighting running mode options (AlwaysOn, AutoStop) and tag management, with navigation steps on the left sidebar.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862070/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Workspaces-Demo/frame_230.jpg)
+![The image shows an AWS WorkSpaces configuration screen, highlighting running mode options (AlwaysOn, AutoStop) and tag management, with navigation steps on the left sidebar.](https://kodekloud.com/kk-media/image/upload/v1752862070/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Workspaces-Demo/frame_230.jpg)
 
 After reviewing the selected settings, click **Create**. Note that new WorkSpaces typically take around 20 minutes to become fully active. In this demo, two WorkSpaces were preloaded, providing immediate visual feedback without a long wait period.
 
@@ -259,11 +259,11 @@ After reviewing the selected settings, click **Create**. Note that new WorkSpace
 
 Once the WorkSpaces are created, you'll notice that one might be in an available state while another still shows as pending. For instance, the WorkSpace configured with Amazon Linux might remain pending for a short time, whereas another (such as one running Windows Server) may be available. Select an available WorkSpace to proceed with connecting.
 
-![The image shows an AWS WorkSpaces management console with details of a specific workspace, including user information, connection state, and available actions like editing users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862071/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Workspaces-Demo/frame_300.jpg)
+![The image shows an AWS WorkSpaces management console with details of a specific workspace, including user information, connection state, and available actions like editing users.](https://kodekloud.com/kk-media/image/upload/v1752862071/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Workspaces-Demo/frame_300.jpg)
 
 Next, click the **Invite Users** action. AWS provides a registration code that is needed to access the WorkSpace. Copy the code and note that the associated username is “Enforcer.”
 
-![The image shows an Amazon WorkSpaces interface for inviting users, with instructions for downloading the client and registration details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862074/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Workspaces-Demo/frame_320.jpg)
+![The image shows an Amazon WorkSpaces interface for inviting users, with instructions for downloading the client and registration details.](https://kodekloud.com/kk-media/image/upload/v1752862074/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Workspaces-Demo/frame_320.jpg)
 
 Right-click the provided link and proceed with the invitation process. With the WorkSpaces client already installed, open the application and register your WorkSpace using the registration code. After confirming that the username “Enforcer” is correctly set and entering the correct credentials, the client establishes a connection.
 
@@ -275,11 +275,11 @@ Once connected, the WorkSpace applies personalized settings, logs you into the v
 
 Inside the virtual desktop, launch Firefox to assess network performance. Running an internet speed test reveals that the connection speed significantly exceeds typical desktop network speeds. The results demonstrate speeds that are well above standard Ethernet limits, likely powered by high-speed network backplanes.
 
-![The image shows an internet speed test in progress, displaying a download speed of 1213.0 Mbps on a computer screen.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862075/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Workspaces-Demo/frame_470.jpg)
+![The image shows an internet speed test in progress, displaying a download speed of 1213.0 Mbps on a computer screen.](https://kodekloud.com/kk-media/image/upload/v1752862075/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Workspaces-Demo/frame_470.jpg)
 
 A subsequent test confirms similar results:
 
-![A screenshot of an internet speed test result showing 1147 Mbps download and 1656 Mbps upload, with 1 ms latency, indicating a very fast connection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862076/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Workspaces-Demo/frame_490.jpg)
+![A screenshot of an internet speed test result showing 1147 Mbps download and 1656 Mbps upload, with 1 ms latency, indicating a very fast connection.](https://kodekloud.com/kk-media/image/upload/v1752862076/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Workspaces-Demo/frame_490.jpg)
 
 > **lightbulb** For a smooth user experience, remember to customize your virtual desktop settings and install only the necessary software, enhancing both security and performance.
 

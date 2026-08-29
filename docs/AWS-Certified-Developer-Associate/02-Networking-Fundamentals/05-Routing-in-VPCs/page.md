@@ -24,7 +24,7 @@ Every route table includes one default route—the local route—which matches t
 
 The diagram below summarizes key VPC routing concepts, illustrating the roles of routers, interfaces, route tables, and the packet forwarding process:
 
-![The image is a summary of VPC routing concepts, detailing the role of routers, interfaces, route tables, and packet forwarding processes. It includes five key points, each marked with a numbered arrow.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859208/notes-assets/images/AWS-Certified-Developer-Associate-Routing-in-VPCs/vpc-routing-concepts-summary.jpg)
+![The image is a summary of VPC routing concepts, detailing the role of routers, interfaces, route tables, and packet forwarding processes. It includes five key points, each marked with a numbered arrow.](https://kodekloud.com/kk-media/image/upload/v1752859208/notes-assets/images/AWS-Certified-Developer-Associate-Routing-in-VPCs/vpc-routing-concepts-summary.jpg)
 
 ## Subnets and Their Association with Route Tables
 
@@ -34,7 +34,7 @@ Note that while multiple subnets can share the same route table, each subnet can
 
 The following diagram reviews key concepts regarding route tables and subnet associations:
 
-![The image is a summary slide with two points about route tables and subnets, highlighting default routes and subnet associations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859209/notes-assets/images/AWS-Certified-Developer-Associate-Routing-in-VPCs/route-tables-subnets-summary-slide.jpg)
+![The image is a summary slide with two points about route tables and subnets, highlighting default routes and subnet associations.](https://kodekloud.com/kk-media/image/upload/v1752859209/notes-assets/images/AWS-Certified-Developer-Associate-Routing-in-VPCs/route-tables-subnets-summary-slide.jpg)
 
 ## Summary of VPC Routing
 

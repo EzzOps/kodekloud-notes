@@ -64,10 +64,6 @@ Resources and further reading
 * [Practical recommendations for evaluating generative models](https://arxiv.org/abs/2103.00020) (example research on best practices)
 * [Checklist for Reproducible NLP Experiments](https://www.aclweb.org/anthology/2020.findings-emnlp.206/) — guidelines for experimental rigor
 
-<Callout icon="lightbulb">
-  For rigorous zero-shot testing: use strictly held-out datasets, define evaluation metrics up front, and document any pre-processing or prompt engineering to ensure reproducibility.
-</Callout>
+> **lightbulb** For rigorous zero-shot testing: use strictly held-out datasets, define evaluation metrics up front, and document any pre-processing or prompt engineering to ensure reproducibility.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/a0461f78-0a93-410f-bd12-bbf3c8d9a3ad" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/a0461f78-0a93-410f-bd12-bbf3c8d9a3ad)

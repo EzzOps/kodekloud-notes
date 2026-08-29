@@ -10,9 +10,7 @@ In this lesson, we explore one of Rust's fundamental features: structs. Structs 
 
 In Rust, a struct is a custom data type that groups related values together. Think of a struct as a container that bundles multiple pieces of data under one name. For example, a `Person` struct can group attributes like name, age, and phone number together.
 
-<Frame>
-  ![The image illustrates the concept of a "struct" in programming, showing how it groups related attributes like name, age, and phone number under one name to create a custom data type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883850/notes-assets/images/Rust-Programming-Structs/struct-programming-data-type-attributes.jpg)
-</Frame>
+![The image illustrates the concept of a "struct" in programming, showing how it groups related attributes like name, age, and phone number under one name to create a custom data type.](https://kodekloud.com/kk-media/image/upload/v1752883850/notes-assets/images/Rust-Programming-Structs/struct-programming-data-type-attributes.jpg)
 
 In the diagram above, the `Person` struct gathers multiple attributes—name, age, and phone number—into a single, coherent unit.
 
@@ -24,9 +22,7 @@ Structs offer several advantages:
 * **Type Safety:** They enforce specific data types for each field.
 * **Reusability:** Structs can be reused across various parts of your program, which promotes modularity.
 
-<Frame>
-  ![The image illustrates the benefits of structs, highlighting organization, type safety, and reusability with brief descriptions for each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883850/notes-assets/images/Rust-Programming-Structs/structs-benefits-organization-type-safety-reusability.jpg)
-</Frame>
+![The image illustrates the benefits of structs, highlighting organization, type safety, and reusability with brief descriptions for each.](https://kodekloud.com/kk-media/image/upload/v1752883850/notes-assets/images/Rust-Programming-Structs/structs-benefits-organization-type-safety-reusability.jpg)
 
 ## Defining a Struct
 
@@ -113,9 +109,7 @@ In this snippet, `r2` reuses the `width` from `r1` while updating the `height` t
 
 Understanding ownership is crucial when working with structs in Rust. Each struct field might have different ownership rules.
 
-<Callout icon="lightbulb">
-  When you assign one struct instance to another without implementing the `Copy` trait, ownership moves, and the original variable becomes invalid.
-</Callout>
+> **lightbulb** When you assign one struct instance to another without implementing the `Copy` trait, ownership moves, and the original variable becomes invalid.
 
 Consider the following example:
 
@@ -282,6 +276,4 @@ Implementing `Display` gives you full control over how the struct is printed.
 
 We will continue our discussion in upcoming lessons by exploring traits and their implementations in greater detail. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/29fbe393-bae3-4a16-8fc5-a854a2400daa/lesson/cd603eb7-c392-4510-bfc3-61c662e9d7ed" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/29fbe393-bae3-4a16-8fc5-a854a2400daa/lesson/cd603eb7-c392-4510-bfc3-61c662e9d7ed)

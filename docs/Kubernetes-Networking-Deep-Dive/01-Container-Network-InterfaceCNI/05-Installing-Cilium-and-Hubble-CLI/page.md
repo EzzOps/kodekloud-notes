@@ -11,9 +11,7 @@ cilium hubble enable
 cilium install
 ```
 
-<Callout icon="lightbulb">
-  The Cilium CLI v0.14+ supports both direct CLI installs and Helm-style deployments, giving you full flexibility.
-</Callout>
+> **lightbulb** The Cilium CLI v0.14+ supports both direct CLI installs and Helm-style deployments, giving you full flexibility.
 
 ## 2. Installation Methods: CLI vs. Helm
 
@@ -24,9 +22,7 @@ Cilium can be installed in two interchangeable ways:
 | Cilium CLI          | `cilium install`                                    | All-in-one tool; built-in validation |
 | Helm Chart          | `helm install cilium cilium/cilium --version 1.x.y` | Familiar Helm workflow; chart config |
 
-<Frame>
-  ![The image shows logos for "Cilium" and "Helm" under the title "Installation Options and Components," with a note about the benefits for Helm users who also use the Cilium CLI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880260/notes-assets/images/Kubernetes-Networking-Deep-Dive-Installing-Cilium-Overview/cilium-helm-installation-options-components.jpg)
-</Frame>
+![The image shows logos for "Cilium" and "Helm" under the title "Installation Options and Components," with a note about the benefits for Helm users who also use the Cilium CLI.](https://kodekloud.com/kk-media/image/upload/v1752880260/notes-assets/images/Kubernetes-Networking-Deep-Dive-Installing-Cilium-Overview/cilium-helm-installation-options-components.jpg)
 
 In this demo, we’ll walk through both methods side by side.
 
@@ -43,9 +39,7 @@ In this demo, we’ll walk through both methods side by side.
   cilium hubble enable
   ```
 
-<Callout icon="triangle-alert">
-  You must install Cilium before enabling Hubble, as Hubble relies on core Cilium components.
-</Callout>
+> **triangle-alert** You must install Cilium before enabling Hubble, as Hubble relies on core Cilium components.
 
 To interact with Hubble:
 
@@ -77,9 +71,7 @@ hubble observe
 
 [cilium-helm]: https://docs.cilium.io/gettingstarted/k8s-install-default/
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/a8f11d12-c943-4891-b899-e28bb4a94c03" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/a8f11d12-c943-4891-b899-e28bb4a94c03)
 
 
 # Installing Cilium and Hubble CLI
@@ -96,8 +88,6 @@ Follow these steps to fetch the latest stable Cilium CLI release, verify its int
 
 ### 1. Download and verify the Cilium CLI
 
-<Callout icon="lightbulb">
-  Make sure you have `curl`, `sha256sum`, and `tar` installed. You’ll also need `sudo` privileges to copy the binary into `/usr/local/bin`.
-</Callout>
+> **lightbulb** Make sure you have `curl`, `sha256sum`, and `tar` installed. You’ll also need `sudo` privileges to copy the binary into `/usr/local/bin`.
 
 ```bash theme={null}

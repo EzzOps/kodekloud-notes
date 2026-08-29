@@ -8,9 +8,7 @@ Welcome to this comprehensive guide on managing deployments in Kubernetes. In th
 
 When you create a deployment, Kubernetes automatically triggers a rollout, establishing your initial deployment revision (revision one). Later, when you upgrade your application (for example, by updating the container image version), a new rollout is triggered and a new deployment revision (revision two) is created.
 
-<Frame>
-  ![The image illustrates a rollout and versioning process, showing two revisions of Nginx versions 1.7.0 and 1.7.1, each with multiple instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880669/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Deployments-Rolling-Updates-and-Rollbacks/frame_40.jpg)
-</Frame>
+![The image illustrates a rollout and versioning process, showing two revisions of Nginx versions 1.7.0 and 1.7.1, each with multiple instances.](https://kodekloud.com/kk-media/image/upload/v1752880669/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Deployments-Rolling-Updates-and-Rollbacks/frame_40.jpg)
 
 This revision history lets you track changes and enables you to roll back to a previous version if necessary.
 
@@ -46,13 +44,9 @@ There are two primary deployment strategies to consider when updating your appli
 2. **Rolling Update Strategy**:\
    This strategy updates instances incrementally. Kubernetes gradually terminates old pods while simultaneously starting new ones, ensuring continuous application availability. Rolling updates are applied by default unless a different strategy is specified during deployment creation.
 
-<Frame>
-  ![The image illustrates two deployment strategies, "Recreate" and "Rolling Update," showing version transitions of nginx with corresponding application downtime and uptime indicators.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880670/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Deployments-Rolling-Updates-and-Rollbacks/frame_140.jpg)
-</Frame>
+![The image illustrates two deployment strategies, "Recreate" and "Rolling Update," showing version transitions of nginx with corresponding application downtime and uptime indicators.](https://kodekloud.com/kk-media/image/upload/v1752880670/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Deployments-Rolling-Updates-and-Rollbacks/frame_140.jpg)
 
-<Callout icon="lightbulb">
-  Kubernetes defaults to the rolling update strategy to minimize downtime during deployments.
-</Callout>
+> **lightbulb** Kubernetes defaults to the rolling update strategy to minimize downtime during deployments.
 
 ## Updating a Deployment
 
@@ -97,9 +91,7 @@ Alternatively, update the container image directly with:
 kubectl set image deployment/myapp-deployment nginx-container=nginx:1.9.1
 ```
 
-<Callout icon="triangle-alert">
-  The `kubectl set image` command edits the live deployment configuration. This modification may not be reflected in your deployment definition file, so use it with care if you plan to maintain consistency through file-based updates.
-</Callout>
+> **triangle-alert** The `kubectl set image` command edits the live deployment configuration. This modification may not be reflected in your deployment definition file, so use it with care if you plan to maintain consistency through file-based updates.
 
 ## Examining Deployment Details
 
@@ -174,9 +166,7 @@ These examples clearly illustrate the differences between the recreate and rolli
 
 When a deployment is initially created (for example, deploying five replicas), Kubernetes automatically creates a replica set that spawns the required pods. During an upgrade, a new replica set is generated for the updated containers while the pods from the previous replica set are gradually terminated according to the rolling update strategy.
 
-<Frame>
-  ![The image shows a Kubernetes deployment diagram with five pods in a replica set, labeled "Upgrades."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880670/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Deployments-Rolling-Updates-and-Rollbacks/frame_280.jpg)
-</Frame>
+![The image shows a Kubernetes deployment diagram with five pods in a replica set, labeled "Upgrades."](https://kodekloud.com/kk-media/image/upload/v1752880670/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Deployments-Rolling-Updates-and-Rollbacks/frame_280.jpg)
 
 You can verify the changes by listing the replica sets:
 
@@ -219,6 +209,4 @@ These commands empower you to create, update, monitor, and roll back deployments
 
 For further insights, consider reviewing the [Kubernetes Documentation](https://kubernetes.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/d489a337-a9e9-40f2-bae7-5e4b2abea964" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/d489a337-a9e9-40f2-bae7-5e4b2abea964)

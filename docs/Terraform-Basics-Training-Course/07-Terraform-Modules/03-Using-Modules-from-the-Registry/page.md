@@ -56,9 +56,7 @@ terraform.tfstate.d/
 2 directories, 2 files
 ```
 
-<Callout icon="lightbulb">
-  Using workspaces ensures that changes in one environment (e.g., ProjectA) do not impact another (e.g., ProjectB), thanks to the isolated state files.
-</Callout>
+> **lightbulb** Using workspaces ensures that changes in one environment (e.g., ProjectA) do not impact another (e.g., ProjectB), thanks to the isolated state files.
 
 That concludes this lesson on Terraform workspaces. Practice managing multiple environments using a single configuration directory to maximize efficiency and maintainability in your Terraform projects.
 
@@ -68,11 +66,9 @@ For further insights:
 * [AWS EC2 Instance Guide](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2)
 * [Amazon S3 Overview](https://learn.kodekloud.com/user/courses/amazon-simple-storage-service-amazon-s3)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/cdfc2941-5d41-4d7c-b701-cddd299de4c5/lesson/d805227d-3dc1-4d85-80d5-968bbfa12958" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/cdfc2941-5d41-4d7c-b701-cddd299de4c5/lesson/d805227d-3dc1-4d85-80d5-968bbfa12958)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/cdfc2941-5d41-4d7c-b701-cddd299de4c5/lesson/efca6a14-da3b-4bb6-a9fe-1d83d47101f7" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/cdfc2941-5d41-4d7c-b701-cddd299de4c5/lesson/efca6a14-da3b-4bb6-a9fe-1d83d47101f7)
 
 
 # Using Modules from the Registry
@@ -135,9 +131,7 @@ module "security-group_ssh" {
 }
 ```
 
-<Callout icon="lightbulb">
-  It is highly recommended to specify the module version to ensure consistency and prevent unintended updates. Omitting the version may cause Terraform to download the latest module revision, potentially introducing changes that could disrupt your environment.
-</Callout>
+> **lightbulb** It is highly recommended to specify the module version to ensure consistency and prevent unintended updates. Omitting the version may cause Terraform to download the latest module revision, potentially introducing changes that could disrupt your environment.
 
 ## Initializing and Downloading Modules
 
@@ -164,8 +158,6 @@ For more detailed information, explore these resources:
 * [Terraform Registry](https://registry.terraform.io/)
 * [AWS Provider Documentation](https://docs.aws.amazon.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e6838c6b-3208-4396-a744-34b0ed2cd292/lesson/1ad02134-86c6-4f1d-b8c9-ab4a53e08cf5" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e6838c6b-3208-4396-a744-34b0ed2cd292/lesson/1ad02134-86c6-4f1d-b8c9-ab4a53e08cf5)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e6838c6b-3208-4396-a744-34b0ed2cd292/lesson/ec3d12ee-9a6a-42b6-a26b-1e8bcd88ce3f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e6838c6b-3208-4396-a744-34b0ed2cd292/lesson/ec3d12ee-9a6a-42b6-a26b-1e8bcd88ce3f)

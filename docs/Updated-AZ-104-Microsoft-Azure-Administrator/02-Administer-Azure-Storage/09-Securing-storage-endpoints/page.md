@@ -13,13 +13,9 @@ When you access the Networking blade in your storage account, you will observe t
 * Integrate your existing virtual networks or create new ones for communication through service endpoints.
 * Add designated IP ranges from your organization to the firewall for precise access control.
 
-<Frame>
-  ![The image is a screenshot of a networking settings interface for securing storage endpoints, highlighting options to control public access, restrict access to specific virtual networks, and allow IP ranges from the internet or on-premises.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884391/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Securing-storage-endpoints/networking-settings-storage-endpoints.jpg)
-</Frame>
+![The image is a screenshot of a networking settings interface for securing storage endpoints, highlighting options to control public access, restrict access to specific virtual networks, and allow IP ranges from the internet or on-premises.](https://kodekloud.com/kk-media/image/upload/v1752884391/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Securing-storage-endpoints/networking-settings-storage-endpoints.jpg)
 
-<Callout icon="lightbulb">
-  For organizations that prefer to eliminate all public communication, consider disabling public network access and configuring a private endpoint. This approach ensures a fully private connection to your storage accounts.
-</Callout>
+> **lightbulb** For organizations that prefer to eliminate all public communication, consider disabling public network access and configuring a private endpoint. This approach ensures a fully private connection to your storage accounts.
 
 ## Key Security Capabilities for Storage Accounts
 
@@ -37,9 +33,7 @@ Storage accounts are equipped with built-in security features that provide compr
 * **Shared Access Signatures (SAS):**\
   SAS tokens provide granular control by defining which operations can be performed on your storage account, enhancing overall security and access management.
 
-<Frame>
-  ![The image illustrates "Storage Security Capabilities" with icons and labels for encryption, authentication, data in transit, disk encryption, and shared access signature.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884392/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Securing-storage-endpoints/storage-security-capabilities-icons.jpg)
-</Frame>
+![The image illustrates "Storage Security Capabilities" with icons and labels for encryption, authentication, data in transit, disk encryption, and shared access signature.](https://kodekloud.com/kk-media/image/upload/v1752884392/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Securing-storage-endpoints/storage-security-capabilities-icons.jpg)
 
 ## In-Depth Topics Covered
 
@@ -60,6 +54,4 @@ For further details on securing your Azure resources, consider exploring the fol
 
 Implement these best practices to strengthen the security posture of your Azure storage accounts and safeguard your critical data.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/48d08f66-feb9-4bae-83b0-2e6aa34e24ae/lesson/4468a3ee-4be1-427e-9774-0654b86bd6f5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/48d08f66-feb9-4bae-83b0-2e6aa34e24ae/lesson/4468a3ee-4be1-427e-9774-0654b86bd6f5)

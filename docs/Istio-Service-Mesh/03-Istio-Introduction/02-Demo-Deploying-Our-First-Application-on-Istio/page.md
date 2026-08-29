@@ -70,9 +70,7 @@ kubectl get pods
 
 You should now notice that each pod has an additional container, indicating that the Istio sidecar has been successfully injected. If you see some pods marked as terminating, they will disappear after a short period.
 
-<Callout icon="lightbulb">
-  You can always verify successful sidecar injection by ensuring that each pod reports two containers as ready.
-</Callout>
+> **lightbulb** You can always verify successful sidecar injection by ensuring that each pod reports two containers as ready.
 
 Finally, run Istioctl analyze one more time to ensure that there are no issues:
 
@@ -114,9 +112,7 @@ reviews-v1-7bf8c9648f-jnn4r            2/2     Running       0          20s
 reviews-v1-84779c7bbc-6dxkv            2/2     Running       0          20s
 ```
 
-<Callout icon="triangle-alert">
-  If you observe pods stuck in a terminating state for an extended period, wait a short while and perform the status check again.
-</Callout>
+> **triangle-alert** If you observe pods stuck in a terminating state for an extended period, wait a short while and perform the status check again.
 
 Congratulations! Your service mesh is now correctly configured with Istio sidecar injection, and you are ready to begin building and testing your service mesh interactions.
 
@@ -125,8 +121,6 @@ For more information on Istio and service meshes in Kubernetes, explore the foll
 * [Istio Documentation](https://istio.io/latest/docs/)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/da65d53d-91d7-4d4f-904e-9b292b657401" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/da65d53d-91d7-4d4f-904e-9b292b657401)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/ae4b770b-d01a-44b6-991b-342e359c16e8" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/ae4b770b-d01a-44b6-991b-342e359c16e8)

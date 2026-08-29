@@ -28,9 +28,7 @@ Setup
 
 * Load your API key from an environment variable and define a helper that wraps the ChatCompletion API. Keep API keys out of source code and follow your organization’s secret management policies.
 
-<Callout icon="lightbulb">
-  Store sensitive credentials (like OPENAI\_API\_KEY) in environment variables or
+> **lightbulb** Store sensitive credentials (like OPENAI\_API\_KEY) in environment variables or
   a secrets manager. Avoid hard-coding keys in notebooks.
-</Callout>
 
 ```python theme={null}

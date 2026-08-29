@@ -24,9 +24,7 @@ Or simply:
 $ egrep -r '0+' /etc/
 ```
 
-<Callout icon="lightbulb">
-  On some systems, `egrep` is a deprecated symlink to `grep -E`. The two commands are functionally equivalent.
-</Callout>
+> **lightbulb** On some systems, `egrep` is a deprecated symlink to `grep -E`. The two commands are functionally equivalent.
 
 ## Quantifiers at a Glance
 
@@ -156,9 +154,7 @@ A naive `'/dev/.*'` catches entire paths. Refine step by step:
 
 Parentheses group patterns or apply quantifiers to the entire subexpression:
 
-<Frame>
-![The image shows a dark-themed interface with a command line on the left and a mathematical expression evaluation on the right, demonstrating the use of parentheses in subexpressions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881398/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Perform-Basic-File-Management-Part-2-Regular-expressions-2/dark-interface-command-line-math-evaluation.jpg)
-</Frame>
+![The image shows a dark-themed interface with a command line on the left and a mathematical expression evaluation on the right, demonstrating the use of parentheses in subexpressions.](https://kodekloud.com/kk-media/image/upload/v1752881398/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Perform-Basic-File-Management-Part-2-Regular-expressions-2/dark-interface-command-line-math-evaluation.jpg)
 
 For instance, `(ab){2}` matches `abab` but not `aba`.
 
@@ -194,6 +190,4 @@ Extended regex patterns also work with `sed`, `awk`, `perl`, and many text edito
 * [Regular Expression (Regex) Tutorial](https://www.regular-expressions.info/)
 * [Tutorialspoint: Linux grep Command](https://www.tutorialspoint.com/unix_commands/grep.htm)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/895dca43-1b10-45ba-8666-d48be9fe1a17" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/895dca43-1b10-45ba-8666-d48be9fe1a17)

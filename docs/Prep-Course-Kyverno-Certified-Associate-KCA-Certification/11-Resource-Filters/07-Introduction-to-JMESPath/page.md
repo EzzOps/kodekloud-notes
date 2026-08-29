@@ -41,9 +41,7 @@ Example AdmissionReview (simplified):
 }
 ```
 
-<Callout icon="lightbulb">
-  The AdmissionReview's top-level `request` object is your primary data source in Kyverno. Start JMESPath expressions with `request` to access the incoming resource and request metadata.
-</Callout>
+> **lightbulb** The AdmissionReview's top-level `request` object is your primary data source in Kyverno. Start JMESPath expressions with `request` to access the incoming resource and request metadata.
 
 Common paths and examples
 
@@ -109,9 +107,7 @@ Kyverno evaluates policies in two primary modes:
   <img alt="The image describes two predefined variables in Kyverno: &#x22;Admission Request&#x22; checks live requests and knows the user, while &#x22;Background Scan&#x22; audits resources without user information." />
 </Frame>
 
-<Callout icon="warning">
-  Background scans run without user context. Do not rely on requester-specific data (for example, `request.userInfo.username`) in background-mode rules — use admission-time policies for checks that require user information.
-</Callout>
+> **warning** Background scans run without user context. Do not rely on requester-specific data (for example, `request.userInfo.username`) in background-mode rules — use admission-time policies for checks that require user information.
 
 Links and references
 
@@ -119,6 +115,4 @@ Links and references
 * Kyverno policy variables and context: [https://kyverno.io/docs/writing-policies/variables/](https://kyverno.io/docs/writing-policies/variables/)
 * Kubernetes AdmissionReview concept: [https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/b7815cd8-f12b-4a91-8394-feaa7086f2a3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/b7815cd8-f12b-4a91-8394-feaa7086f2a3)

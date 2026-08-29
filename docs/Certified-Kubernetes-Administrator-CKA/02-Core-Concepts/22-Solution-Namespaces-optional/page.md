@@ -248,7 +248,7 @@ Using this fully qualified domain name ensures traffic is correctly directed to 
 
 > **lightbulb** When performing connectivity tests from the blue application, the console output should verify that the connection to the DB service is successfully established.
 
-![The image shows a "Connectivity Test" interface with a host name and port, indicating a successful connection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869752/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Solution-Namespaces-optional/frame_350.jpg)
+![The image shows a "Connectivity Test" interface with a host name and port, indicating a successful connection.](https://kodekloud.com/kk-media/image/upload/v1752869752/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Solution-Namespaces-optional/frame_350.jpg)
 
 ***
 

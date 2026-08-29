@@ -148,7 +148,7 @@ Apply a similar approach to verify the status of the database (DB) service. Exam
 
 The diagram below illustrates the troubleshooting flow for dependent applications. It outlines the sequence from the database (DB) to the web service (WEB-Service), including both the DB-Service and WEB components:
 
-![The image illustrates a flowchart titled "Check Dependent Applications," showing a sequence from DB to WEB-Service, involving DB-Service and WEB components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869994/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Application-Failure/frame_160.jpg)
+![The image illustrates a flowchart titled "Check Dependent Applications," showing a sequence from DB to WEB-Service, involving DB-Service and WEB components.](https://kodekloud.com/kk-media/image/upload/v1752869994/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Application-Failure/frame_160.jpg)
 
 ## Additional Resources
 

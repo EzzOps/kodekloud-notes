@@ -55,9 +55,7 @@ FIELDS:
 controlplane ~ ➜
 ```
 
-<Callout icon="lightbulb">
-  If you're unsure about any Kubernetes resource or its fields, remember that the `kubectl explain` command is a quick way to access the documentation you need directly from your CLI.
-</Callout>
+> **lightbulb** If you're unsure about any Kubernetes resource or its fields, remember that the `kubectl explain` command is a quick way to access the documentation you need directly from your CLI.
 
 ## Exploring Nested Fields with the Recursive Flag
 
@@ -101,9 +99,7 @@ controlplane ~ ➜
 
 This recursive command offers a comprehensive view of all fields within the `PodSecurityContext`. The same approach can be employed for Custom Resource Definitions (CRDs) and any non-native Kubernetes resources. Simply run the command against the desired CRD to retrieve complete documentation.
 
-<Callout icon="lightbulb">
-  Using the recursive flag is particularly useful when troubleshooting or configuring complex deployments, as it helps you understand the full hierarchy of nested fields.
-</Callout>
+> **lightbulb** Using the recursive flag is particularly useful when troubleshooting or configuring complex deployments, as it helps you understand the full hierarchy of nested fields.
 
 Happy exploring!
 
@@ -113,6 +109,4 @@ Happy exploring!
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [Kubernetes API Conventions](https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/58553521-e68c-4341-9943-485081893ebd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/58553521-e68c-4341-9943-485081893ebd)

@@ -13,9 +13,7 @@ Before you begin, ensure you have the following:
 * A unique identifier for the resource you wish to import (for example, the EC2 instance ID).
 * The resource’s current configuration information from AWS.
 
-<Callout icon="lightbulb">
-  Remember that the Terraform Import command updates only the state file. You must manually update your configuration files to reflect the imported resources.
-</Callout>
+> **lightbulb** Remember that the Terraform Import command updates only the state file. You must manually update your configuration files to reflect the imported resources.
 
 ## Step 1: Define an Empty Resource Block
 
@@ -105,12 +103,8 @@ No changes. Infrastructure is up-to-date.
 
 The message "No changes. Infrastructure is up-to-date." confirms that your EC2 instance is now fully managed by Terraform with no discrepancies.
 
-<Callout icon="lightbulb">
-  Now that your EC2 instance is under Terraform management, proceed with the usual Terraform workflow for future modifications. Always update your configuration file and run `terraform plan` followed by `terraform apply` to implement changes.
-</Callout>
+> **lightbulb** Now that your EC2 instance is under Terraform management, proceed with the usual Terraform workflow for future modifications. Always update your configuration file and run `terraform plan` followed by `terraform apply` to implement changes.
 
 By following these steps, you effectively bring your external AWS resources under the management of Terraform, streamlining your infrastructure as code practices. Happy provisioning, and see you in the next guide!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/ed4291fc-57a9-43d3-abff-eb82bba4a679/lesson/50a657ce-0ad2-4469-8eeb-2651633c2a25" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/ed4291fc-57a9-43d3-abff-eb82bba4a679/lesson/50a657ce-0ad2-4469-8eeb-2651633c2a25)

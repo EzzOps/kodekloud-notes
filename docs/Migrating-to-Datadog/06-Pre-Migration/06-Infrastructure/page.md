@@ -31,9 +31,7 @@ Because infrastructure components are often shared across teams, a single miscon
 | Define rollback procedures     | Reduce downtime if issues occur            | Automated rollback thresholds and manual steps                                       |
 | Communicate status             | Keep teams informed                        | Daily standups, status dashboard, incident channel                                   |
 
-<Callout icon="lightbulb">
-  Start by creating a shared migration plan and a migration runbook per component that includes owners, a test checklist, and rollback steps.
-</Callout>
+> **lightbulb** Start by creating a shared migration plan and a migration runbook per component that includes owners, a test checklist, and rollback steps.
 
 ## Migration steps (detailed)
 
@@ -65,9 +63,7 @@ Because infrastructure components are often shared across teams, a single miscon
 * Connectivity: Are components reachable and performing within SLAs?
 * Performance: No regressions in latency or throughput compared to baseline.
 
-<Callout icon="warning">
-  Because infrastructure is shared, validate changes in a staging environment first and communicate rollbacks immediately. A single misconfiguration can affect many teams.
-</Callout>
+> **warning** Because infrastructure is shared, validate changes in a staging environment first and communicate rollbacks immediately. A single misconfiguration can affect many teams.
 
 ## Communication & coordination
 
@@ -93,6 +89,4 @@ References
 
 That's it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/d7ad7244-375e-4070-be0d-b2b1c3f4d8de" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/d7ad7244-375e-4070-be0d-b2b1c3f4d8de)

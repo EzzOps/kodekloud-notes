@@ -99,9 +99,7 @@ Key differences in workflow syntax:
 | `uses:` | Run a prebuilt action from the Marketplace or a repository | `actions/checkout@v4`, `docker/build-push-action@v6` |
 | `run:`  | Execute inline shell commands on the runner                | `echo`, `ls`, `cat`, `npm`                           |
 
-<Callout icon="lightbulb">
-  Always include `- uses: actions/checkout@v4` (or the appropriate version) as the first step if your job needs repository files. Note: hidden files (like `.github`) won't appear with `ls` unless you run `ls -a`.
-</Callout>
+> **lightbulb** Always include `- uses: actions/checkout@v4` (or the appropriate version) as the first step if your job needs repository files. Note: hidden files (like `.github`) won't appear with `ls` unless you run `ls -a`.
 
 After adding (or uncommenting) the checkout step and rerunning the workflow, the job has access to repository files and `cat README.md` will succeed. Here is the final example workflow:
 
@@ -186,18 +184,14 @@ You can also manually trigger workflows from the Actions tab (Run workflow) or r
 3. Use `actions/checkout` to access repository files.
 4. Combine Marketplace `uses` actions with `run` shell steps to build, test, and deploy.
 
-<Callout icon="warning">
-  If your job needs repository content, do not forget `actions/checkout`. Missing this step is the most common cause of "No such file or directory" errors when reading files in Actions.
-</Callout>
+> **warning** If your job needs repository content, do not forget `actions/checkout`. Missing this step is the most common cause of "No such file or directory" errors when reading files in Actions.
 
 That's the basics of creating and troubleshooting your first GitHub Actions workflow. For deeper reference and runner images, see:
 
 * GitHub Actions documentation: [https://docs.github.com/en/actions](https://docs.github.com/en/actions)
 * About GitHub-hosted runners: [https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/7d6172e9-5a43-4701-9feb-e4cfdb65b256/lesson/81c93a39-28b3-4d89-9ef5-612fc4e584e5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/7d6172e9-5a43-4701-9feb-e4cfdb65b256/lesson/81c93a39-28b3-4d89-9ef5-612fc4e584e5)
 
 
 # Demo GitHub Actions Workflow 2
@@ -239,9 +233,7 @@ After committing and pushing this file you must manually trigger it from the Act
 
 If your repository already has another workflow that triggers on `push`, pushing commits can inadvertently trigger that existing workflow. To avoid triggering push-based workflows while you push changes, include `[skip CI]` or `[ci skip]` in your commit message.
 
-<Callout icon="lightbulb">
-  Include `[skip CI]` (or `[ci skip]`) in the commit message to prevent workflows that trigger on `push` from running for that commit.
-</Callout>
+> **lightbulb** Include `[skip CI]` (or `[ci skip]`) in the commit message to prevent workflows that trigger on `push` from running for that commit.
 
 A common CI workflow configuration that supports both `push` and manual dispatch looks like this:
 
@@ -397,9 +389,7 @@ jobs:
 * `needs` accepts an array when a job depends on multiple jobs, for example: `needs: [build, job-xyz]`.
 * If you specify a non-existent job in `needs`, the workflow will fail to parse or run.
 
-<Callout icon="warning">
-  Do not reference job names that don't exist in `needs` (for example: `needs: [build, job-xyz]` where `job-xyz` is not defined). That causes the workflow to fail to parse or execute.
-</Callout>
+> **warning** Do not reference job names that don't exist in `needs` (for example: `needs: [build, job-xyz]` where `job-xyz` is not defined). That causes the workflow to fail to parse or execute.
 
 ## 7. Successful artifact download logs (example)
 
@@ -448,6 +438,4 @@ Quick reference table:
 
 That covers uploading/downloading artifacts between jobs and controlling job order using `needs`.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/7d6172e9-5a43-4701-9feb-e4cfdb65b256/lesson/6ed2faac-6e72-4472-ae10-22607c581542" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/7d6172e9-5a43-4701-9feb-e4cfdb65b256/lesson/6ed2faac-6e72-4472-ae10-22607c581542)

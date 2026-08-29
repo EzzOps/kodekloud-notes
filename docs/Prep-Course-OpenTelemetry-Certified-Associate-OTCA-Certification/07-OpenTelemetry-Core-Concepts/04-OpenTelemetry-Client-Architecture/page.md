@@ -76,13 +76,9 @@ Don't:
 * Leak SDK classes or types in public library signatures.
 * Configure exporters, samplers, or processors inside library code.
 
-<Callout icon="lightbulb">
-  Library authors: prefer API-only instrumentation. This ensures your instrumented library works regardless of which SDK or exporter the application selects.
-</Callout>
+> **lightbulb** Library authors: prefer API-only instrumentation. This ensures your instrumented library works regardless of which SDK or exporter the application selects.
 
-<Callout icon="warning">
-  Do not configure SDK components (exporters, processors, samplers) inside libraries. SDK setup belongs to the application or deployment environment.
-</Callout>
+> **warning** Do not configure SDK components (exporters, processors, samplers) inside libraries. SDK setup belongs to the application or deployment environment.
 
 <Frame>
   <img alt="The image provides guidelines for using the OpenTelemetry API, recommending library authors to use the API for its advantages and application developers to choose the SDK while listing &#x22;do&#x22; and &#x22;avoid&#x22; practices." />
@@ -177,9 +173,7 @@ Links and references
 * Python instrumentation guide: [https://opentelemetry.io/docs/instrumentation/python/](https://opentelemetry.io/docs/instrumentation/python/)
 * Semantic conventions: [https://opentelemetry.io/docs/reference/specification/semantic\_conventions/](https://opentelemetry.io/docs/reference/specification/semantic_conventions/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/81da0512-b628-459a-941a-7ed90b163b3c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/81da0512-b628-459a-941a-7ed90b163b3c)
 
 
 # OpenTelemetry Client Architecture
@@ -190,9 +184,7 @@ Explains OpenTelemetry client architecture, detailing layers Instrumentation, Se
 
 Hello OTel client experts — in this lesson we'll examine how OpenTelemetry clients are layered and how the pieces relate. This article keeps the original ordering and diagrams while clarifying responsibilities, common patterns, and best practices for instrumentation authors and runtime operators.
 
-<Callout icon="lightbulb">
-  OpenTelemetry defines a vendor-agnostic model for telemetry signals: traces, metrics, logs, and baggage. Each signal follows a consistent layering pattern — Instrumentation, Semantic Conventions, API, SDK, and Contrib — which separates the contract from runtime behavior and integrations.
-</Callout>
+> **lightbulb** OpenTelemetry defines a vendor-agnostic model for telemetry signals: traces, metrics, logs, and baggage. Each signal follows a consistent layering pattern — Instrumentation, Semantic Conventions, API, SDK, and Contrib — which separates the contract from runtime behavior and integrations.
 
 Overview
 
@@ -257,9 +249,7 @@ The common design principle
 
 Best practice: instrumentation libraries should depend only on the API and semantic conventions. The SDK is an implementation detail that varies by deployment. Coupling libraries to the SDK reduces portability.
 
-<Callout icon="warning">
-  Do not import or rely on SDK internals from instrumentation libraries. Instrumentation should use the OpenTelemetry API (and semantic conventions) only. The SDK can be configured by the application or platform at runtime.
-</Callout>
+> **warning** Do not import or rely on SDK internals from instrumentation libraries. Instrumentation should use the OpenTelemetry API (and semantic conventions) only. The SDK can be configured by the application or platform at runtime.
 
 Quizzes
 
@@ -346,6 +336,4 @@ Links and references
 * B3 Propagation: [https://github.com/openzipkin/b3-propagation](https://github.com/openzipkin/b3-propagation)
 * W3C Trace Context: [https://www.w3.org/TR/trace-context/](https://www.w3.org/TR/trace-context/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/a8aa4a33-4e6c-4aa1-8ad4-7f1f98235b0b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/a8aa4a33-4e6c-4aa1-8ad4-7f1f98235b0b)

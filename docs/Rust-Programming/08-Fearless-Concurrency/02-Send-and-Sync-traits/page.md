@@ -6,17 +6,13 @@ This article explores Rusts Send and Sync traits, which are essential for ensuri
 
 In this article, we explore Rust's Send and Sync traits—cornerstones of thread safety in concurrent programming. Leveraging Rust’s robust ownership and borrowing rules, these traits help prevent concurrency bugs such as data races, ensuring that types shared across threads are used safely.
 
-<Frame>
-  ![The image illustrates "Concurrency Safety With Send and Sync" using two icons: one for "Send" with an envelope symbol and another for "Sync" with overlapping documents.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883875/notes-assets/images/Rust-Programming-Send-and-Sync-traits/concurrency-safety-send-sync-icons.jpg)
-</Frame>
+![The image illustrates "Concurrency Safety With Send and Sync" using two icons: one for "Send" with an envelope symbol and another for "Sync" with overlapping documents.](https://kodekloud.com/kk-media/image/upload/v1752883875/notes-assets/images/Rust-Programming-Send-and-Sync-traits/concurrency-safety-send-sync-icons.jpg)
 
 ## Understanding the Send Trait
 
 The Send trait permits ownership of a value to be transferred across threads. When a type implements Send, it indicates that moving its ownership into another thread is safe. The Rust compiler auto-implements Send for types that are thread-safe to transfer.
 
-<Frame>
-  ![The image is a slide titled "Understanding Send Trait" with two sections: "Ownership" represented by an icon, and "Threads" in a blue rectangle.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883876/notes-assets/images/Rust-Programming-Send-and-Sync-traits/understanding-send-trait-ownership-threads.jpg)
-</Frame>
+![The image is a slide titled "Understanding Send Trait" with two sections: "Ownership" represented by an icon, and "Threads" in a blue rectangle.](https://kodekloud.com/kk-media/image/upload/v1752883876/notes-assets/images/Rust-Programming-Send-and-Sync-traits/understanding-send-trait-ownership-threads.jpg)
 
 Consider the following example where a vector is transferred to a new thread using the `move` keyword:
 
@@ -36,9 +32,7 @@ fn main() {
 
 In this code, the vector `v` is moved into a new thread because `Vec<T>` implements Send. If it didn't, the compiler would prevent the transfer to ensure safety.
 
-<Callout icon="lightbulb">
-  Use the Send trait to safely pass data between threads, enabling concurrent operations without risking data corruption.
-</Callout>
+> **lightbulb** Use the Send trait to safely pass data between threads, enabling concurrent operations without risking data corruption.
 
 ## Understanding the Sync Trait
 
@@ -66,9 +60,7 @@ fn main() {
 
 In this example, `Arc` provides thread-safe shared ownership. If `Arc` were not Sync, the Rust compiler would prevent such shared access, thereby averting potential data races.
 
-<Callout icon="lightbulb">
-  Most types in Rust automatically implement both Send and Sync. This seamless implementation is part of what makes Rust a powerful language for concurrent programming.
-</Callout>
+> **lightbulb** Most types in Rust automatically implement both Send and Sync. This seamless implementation is part of what makes Rust a powerful language for concurrent programming.
 
 ## Manual Implementation of Send and Sync
 
@@ -90,9 +82,7 @@ fn main() {
 
 In the example above, since raw pointers are inherently unsafe for thread sharing, the `unsafe impl Send` declaration must be used only when you are completely certain that transferring the type across threads is secure.
 
-<Callout icon="triangle-alert">
-  Manual implementations of Send and Sync should be used sparingly. Always ensure a thorough understanding of concurrency implications before overriding the compiler's safety guarantees.
-</Callout>
+> **triangle-alert** Manual implementations of Send and Sync should be used sparingly. Always ensure a thorough understanding of concurrency implications before overriding the compiler's safety guarantees.
 
 ## Ownership Transfer and Channels
 
@@ -125,18 +115,12 @@ Here, the vector's ownership is seamlessly transferred through the channel becau
 
 The Send and Sync traits are essential to Rust's approach to concurrency. The Send trait ensures that data ownership can be moved between threads, while the Sync trait allows multiple threads to share immutable references safely. Together, these traits provide a solid foundation for building reliable and concurrent Rust applications.
 
-<Frame>
-  ![The image explains the interaction between "Send" and "Sync" in programming, where "Send" allows data ownership to move between threads, and "Sync" allows data references to be shared between threads.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883877/notes-assets/images/Rust-Programming-Send-and-Sync-traits/send-sync-thread-interaction.jpg)
-</Frame>
+![The image explains the interaction between "Send" and "Sync" in programming, where "Send" allows data ownership to move between threads, and "Sync" allows data references to be shared between threads.](https://kodekloud.com/kk-media/image/upload/v1752883877/notes-assets/images/Rust-Programming-Send-and-Sync-traits/send-sync-thread-interaction.jpg)
 
 In practice, most Rust types automatically implement these traits, reducing the manual overhead on developers. However, with complex types involving interior mutability or raw pointers, always verify and ensure the correct implementation of Send and Sync to maintain concurrency safety.
 
-<Frame>
-  ![The image outlines best practices for Rust programming, emphasizing trust in the compiler's automatic implementations, caution in manual trait implementation, and the use of concurrency tools for safe data management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883878/notes-assets/images/Rust-Programming-Send-and-Sync-traits/rust-programming-best-practices.jpg)
-</Frame>
+![The image outlines best practices for Rust programming, emphasizing trust in the compiler's automatic implementations, caution in manual trait implementation, and the use of concurrency tools for safe data management.](https://kodekloud.com/kk-media/image/upload/v1752883878/notes-assets/images/Rust-Programming-Send-and-Sync-traits/rust-programming-best-practices.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/0418d83c-2090-4aac-8b6e-8c3eab45d649/lesson/a9178bb8-b90f-425f-8b8b-b139e5c65d97" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/0418d83c-2090-4aac-8b6e-8c3eab45d649/lesson/a9178bb8-b90f-425f-8b8b-b139e5c65d97)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/rust/module/0418d83c-2090-4aac-8b6e-8c3eab45d649/lesson/aff4e058-f816-4768-a4c0-93475f5afbcf" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/rust/module/0418d83c-2090-4aac-8b6e-8c3eab45d649/lesson/aff4e058-f816-4768-a4c0-93475f5afbcf)

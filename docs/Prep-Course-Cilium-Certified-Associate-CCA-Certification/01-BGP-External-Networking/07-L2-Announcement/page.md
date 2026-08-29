@@ -22,9 +22,7 @@ When to use L2 announce
 * Use L2 announce when cluster nodes and external clients share the same L2 broadcast domain (same VLAN/subnet).
 * Do not use L2 announce to advertise services across routed networks or different subnets — use BGP-based advertisement for routed domains.
 
-<Callout icon="lightbulb">
-  Enable L2 announce only when your nodes and external clients are on the same broadcast domain. If your network is routed across subnets, use BGP-based advertisement instead.
-</Callout>
+> **lightbulb** Enable L2 announce only when your nodes and external clients are on the same broadcast domain. If your network is routed across subnets, use BGP-based advertisement instead.
 
 ## Benefits and tradeoffs
 

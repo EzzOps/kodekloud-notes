@@ -156,9 +156,7 @@ Use IaC to create and manage platform resources; use CaC to manage how workloads
 
 Are you ready to become a GitOps Certified Associate and lead cloud-native operational excellence? This course will prepare you with the practical skills and exam-focused practice to succeed.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/b51e7927-03a2-4bb9-a900-6a55c35e6a0c/lesson/cdf68874-2b28-4011-925b-1025405c736c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/b51e7927-03a2-4bb9-a900-6a55c35e6a0c/lesson/cdf68874-2b28-4011-925b-1025405c736c)
 
 
 # CI and CD
@@ -194,9 +192,7 @@ Common risks when CI is missing
 * Inefficient deployments: Manual steps increase the chance of inconsistent environment states.
 * Reduced quality assurance: Heavy reliance on manual testing introduces human error and bottlenecks.
 
-<Callout icon="warning">
-  Deploying untested code directly to production is risky. Automated CI and testing reduce the likelihood of regressions and outages.
-</Callout>
+> **warning** Deploying untested code directly to production is risky. Automated CI and testing reduce the likelihood of regressions and outages.
 
 <Frame>
   <img alt="The image illustrates the need for continuous integration by showing a workflow of feature branches being committed, reviewed, and merged before manual deployment to production. Below, it highlights challenges such as delayed testing, inefficient deployment, and quality assurance issues in the absence of continuous integration." />
@@ -256,9 +252,7 @@ Recommended pipeline stages
   <img alt="The image illustrates a continuous deployment/delivery pipeline, showing processes like feature branching, continuous integration, deployment to staging and production, unit testing, and code scanning." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Continuous Delivery keeps your codebase always in a deployable state but uses a manual approval before production. Continuous Deployment automates the last step: code moves to production automatically when all checks succeed.
-</Callout>
+> **lightbulb** Continuous Delivery keeps your codebase always in a deployable state but uses a manual approval before production. Continuous Deployment automates the last step: code moves to production automatically when all checks succeed.
 
 Further reading and references
 
@@ -271,6 +265,4 @@ Further reading and references
 
 Adopting CI/CD transforms code delivery from a risky manual process into a reliable, repeatable pipeline—improving quality, accelerating releases, and increasing team confidence.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/673786b2-bedb-4405-a2c9-835aea1a9dd4/lesson/28ade285-972f-4e49-b304-1b4a59ce29e4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/673786b2-bedb-4405-a2c9-835aea1a9dd4/lesson/28ade285-972f-4e49-b304-1b4a59ce29e4)

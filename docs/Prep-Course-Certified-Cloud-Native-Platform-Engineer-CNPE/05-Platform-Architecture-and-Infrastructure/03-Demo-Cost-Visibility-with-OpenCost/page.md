@@ -141,9 +141,7 @@ Why is Team Frontend more expensive in OpenCost?
 
 OpenCost attributes cost based on resource requests (and observed usage) to allocate spend to namespaces and workloads. Team Frontend requested 500m per replica across three replicas (1.5 CPUs total requested), while Backend requested only 100m per replica with two replicas (0.2 CPUs total). Those request differences explain the larger cost for frontend.
 
-<Callout icon="lightbulb">
-  OpenCost maps requested resources (requests/limits) and observed usage to cost. Over-requesting increases allocated cost even if actual usage is low — that’s why rightsizing requests and replica counts matters.
-</Callout>
+> **lightbulb** OpenCost maps requested resources (requests/limits) and observed usage to cost. Over-requesting increases allocated cost even if actual usage is low — that’s why rightsizing requests and replica counts matters.
 
 Actionable steps: scale or rightsize based on OpenCost insights
 

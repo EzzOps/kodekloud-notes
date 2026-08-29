@@ -38,9 +38,7 @@ spec:
     # triggers are defined below
 ```
 
-<Callout icon="lightbulb">
-  EventSource names and event names are defined in your EventSource manifest. Use `eventSourceName` to reference the EventSource metadata.name and `eventName` to reference the specific event key under `spec`.
-</Callout>
+> **lightbulb** EventSource names and event names are defined in your EventSource manifest. Use `eventSourceName` to reference the EventSource metadata.name and `eventName` to reference the specific event key under `spec`.
 
 How to find the eventSourceName and eventName
 

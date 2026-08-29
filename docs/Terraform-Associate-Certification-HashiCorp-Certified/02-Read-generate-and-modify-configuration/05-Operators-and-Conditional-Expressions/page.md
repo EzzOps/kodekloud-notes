@@ -78,9 +78,7 @@ condition ? true\_val : false\_val
 
 Use conditional expressions to determine values inside resource arguments, locals, or outputs without creating conditional resources. Important: both `true_val` and `false_val` must be expressions that produce compatible types because the conditional expression must evaluate to a single consistent type.
 
-<Callout icon="lightbulb">
-  The true and false branches of a conditional expression must produce compatible types. For example, both should be numbers, both strings, or both lists containing the same element type.
-</Callout>
+> **lightbulb** The true and false branches of a conditional expression must produce compatible types. For example, both should be numbers, both strings, or both lists containing the same element type.
 
 ## Practical example — password length validation
 
@@ -141,6 +139,4 @@ If you pass `-var=length=12`, Terraform will use 12 because it satisfies the con
 
 That covers the basic operators and how to use conditional expressions in Terraform to select values based on input or calculated conditions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/c59e52ed-8a8c-4a6c-8ad0-8dcc38c1598e/lesson/57e88010-91d8-497f-bb4a-a8c8d9e1438e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/c59e52ed-8a8c-4a6c-8ad0-8dcc38c1598e/lesson/57e88010-91d8-497f-bb4a-a8c8d9e1438e)

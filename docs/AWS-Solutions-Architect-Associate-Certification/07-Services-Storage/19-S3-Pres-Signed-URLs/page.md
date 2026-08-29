@@ -10,7 +10,7 @@ This article explores a powerful AWS S3 feature called pre-signed URLs and expla
 
 Imagine you have an AWS account with a private S3 bucket. As an authenticated IAM user with the necessary permissions, you can retrieve or upload objects to that bucket. However, if you need to share a specific file with someone who does not have an AWS account, the bucket's private settings prevent public access.
 
-![The image illustrates the concept of pre-signed URLs in AWS, showing that an AWS IAM user can access an S3 bucket, while a public user cannot.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866064/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Pres-Signed-URLs/pre-signed-urls-aws-iam-s3.jpg)
+![The image illustrates the concept of pre-signed URLs in AWS, showing that an AWS IAM user can access an S3 bucket, while a public user cannot.](https://kodekloud.com/kk-media/image/upload/v1752866064/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Pres-Signed-URLs/pre-signed-urls-aws-iam-s3.jpg)
 
 There are a couple of approaches to manage this situation:
 
@@ -23,7 +23,7 @@ This is where pre-signed URLs shine. They allow you to grant temporary, secured 
 
 Even though your S3 bucket remains private, you as an authenticated IAM user can generate a pre-signed URL using an API call to S3. The URL incorporates your full credentials, making S3 believe the request is coming from you. Sharing this URL with a public user enables them to access the specific object without opening up your entire bucket.
 
-![The image illustrates the concept of pre-signed URLs in AWS, showing an AWS IAM user with access to an S3 bucket, while a public user is denied access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866066/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Pres-Signed-URLs/pre-signed-urls-aws-iam-s3-2.jpg)
+![The image illustrates the concept of pre-signed URLs in AWS, showing an AWS IAM user with access to an S3 bucket, while a public user is denied access.](https://kodekloud.com/kk-media/image/upload/v1752866066/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Pres-Signed-URLs/pre-signed-urls-aws-iam-s3-2.jpg)
 
 > **lightbulb** Only the holder of the pre-signed URL can access the specific content, based on the embedded credentials. Unintended access is prevented, ensuring secure sharing.
 
@@ -33,7 +33,7 @@ Consider a video hosting website similar to Netflix, where a vast library of vid
 
 When a paying customer requests a video, the server generates a unique pre-signed URL for that particular video (for instance, tied to UserX) and returns it to the customer. S3 then processes the request using the permissions of UserX, enabling the video to be streamed directly. Conversely, non-paying or unauthenticated users cannot access these videos because they do not receive a valid pre-signed URL.
 
-![The image illustrates a pre-signed URL use case involving AWS Cloud, showing a user interacting with cloud services and an S3 bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866067/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Pres-Signed-URLs/aws-cloud-presigned-url-use-case.jpg)
+![The image illustrates a pre-signed URL use case involving AWS Cloud, showing a user interacting with cloud services and an S3 bucket.](https://kodekloud.com/kk-media/image/upload/v1752866067/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Pres-Signed-URLs/aws-cloud-presigned-url-use-case.jpg)
 
 ## Pre-Signed URLs for Uploads
 
@@ -45,17 +45,17 @@ Using a pre-signed URL, the workflow simplifies: once the API server generates a
 
 When creating a pre-signed URL, you must specify an expiration time to limit its validity. Typically, when using an IAM user's credentials, the maximum expiration period is seven days. This duration can be adjusted based on the requirements of your application.
 
-![The image provides information about pre-signed URLs, highlighting the need for an expiration date, a maximum duration of 7 days, and the ability to generate URLs without S3 bucket access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866068/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Pres-Signed-URLs/presigned-urls-expiration-7-days.jpg)
+![The image provides information about pre-signed URLs, highlighting the need for an expiration date, a maximum duration of 7 days, and the ability to generate URLs without S3 bucket access.](https://kodekloud.com/kk-media/image/upload/v1752866068/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Pres-Signed-URLs/presigned-urls-expiration-7-days.jpg)
 
 > **triangle-alert** Remember, a pre-signed URL does not grant new permissions. It merely allows a request to be executed using the IAM user's current permissions. If the user lacks access to a particular object, then any pre-signed URL they generate will also fail to access it.
 
-![The image illustrates the concept of pre-signed URLs, showing how an IAM user without direct access to an S3 bucket can use a pre-signed URL to gain temporary access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866069/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Pres-Signed-URLs/pre-signed-urls-iam-user-access.jpg)
+![The image illustrates the concept of pre-signed URLs, showing how an IAM user without direct access to an S3 bucket can use a pre-signed URL to gain temporary access.](https://kodekloud.com/kk-media/image/upload/v1752866069/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Pres-Signed-URLs/pre-signed-urls-iam-user-access.jpg)
 
 ## Summary
 
 Pre-signed URLs offer secure, time-limited access to objects within a private S3 bucket by embedding authentication credentials into the URL. When the URL is accessed, the request is executed using the permissions of the IAM user who originally generated it. If that user lacks access to a specific object, the URL will also be invalid for accessing that object.
 
-![The image is a summary slide explaining pre-signed URLs, highlighting their use of security credentials for time-limited access, the identity association with AWS API requests, and access limitations based on the creator's permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866070/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Pres-Signed-URLs/presigned-urls-security-summary.jpg)
+![The image is a summary slide explaining pre-signed URLs, highlighting their use of security credentials for time-limited access, the identity association with AWS API requests, and access limitations based on the creator's permissions.](https://kodekloud.com/kk-media/image/upload/v1752866070/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Pres-Signed-URLs/presigned-urls-security-summary.jpg)
 
 Understanding these concepts is essential for integrating pre-signed URLs into your AWS architecture, whether you're handling secure downloads or enabling direct-to-S3 uploads.
 

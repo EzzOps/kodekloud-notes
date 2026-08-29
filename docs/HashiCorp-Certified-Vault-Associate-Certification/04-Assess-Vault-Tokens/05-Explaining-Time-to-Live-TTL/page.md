@@ -10,9 +10,7 @@ vault token revoke <token>
 
 ## Root Token Essentials
 
-<Frame>
-  ![The image provides exam tips related to root tokens and Vault, including creating and revoking root tokens, actions with a token accessor, and the default TTL in Vault.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877988/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Exam-Tips-for-Objective-3/exam-tips-root-tokens-vault.jpg)
-</Frame>
+![The image provides exam tips related to root tokens and Vault, including creating and revoking root tokens, actions with a token accessor, and the default TTL in Vault.](https://kodekloud.com/kk-media/image/upload/v1752877988/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Exam-Tips-for-Objective-3/exam-tips-root-tokens-vault.jpg)
 
 * **Creation Methods**\
   • Initial root token at initialization\
@@ -22,9 +20,7 @@ vault token revoke <token>
 * **Token Accessors** support only these operations: lookup, renew, revoke\_self, revocation. For any other action, the actual token is required.
 * **Default TTL**: 768 hours (32 days) if none specified.
 
-<Callout icon="triangle-alert">
-  Root tokens never expire by default and grant full access—handle them with extreme care.
-</Callout>
+> **triangle-alert** Root tokens never expire by default and grant full access—handle them with extreme care.
 
 ***
 
@@ -36,9 +32,7 @@ After reviewing these concepts, be sure to complete the practice quizzes in this
 * [Vault Token CLI](https://www.vaultproject.io/docs/commands/token)
 * [Vault Authentication Methods](https://www.vaultproject.io/docs/auth)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/a5c8f0d1-9cbd-4315-a108-5c5a54a72df7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/a5c8f0d1-9cbd-4315-a108-5c5a54a72df7)
 
 
 # Explaining Time to Live TTL
@@ -51,9 +45,7 @@ Time-to-Live (TTL) in HashiCorp Vault determines how long a non-root token remai
 
 Every non-root token you create or renew in Vault receives a TTL. Root tokens, by default, do not have a TTL and stay active until explicitly revoked.
 
-<Frame>
-  ![The image explains the concept of Time-To-Live (TTL) for non-root tokens, detailing how TTL is determined by creation or renewal time and the necessity of renewal before expiration to maintain validity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877989/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Explaining-Time-to-Live-TTL/ttl-non-root-tokens-explanation.jpg)
-</Frame>
+![The image explains the concept of Time-To-Live (TTL) for non-root tokens, detailing how TTL is determined by creation or renewal time and the necessity of renewal before expiration to maintain validity.](https://kodekloud.com/kk-media/image/upload/v1752877989/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Explaining-Time-to-Live-TTL/ttl-non-root-tokens-explanation.jpg)
 
 When you issue a token with a specified TTL (for example, 30 minutes), Vault calculates its expiration time from the creation or last renewal timestamp. Renewing the token before it expires resets the TTL countdown. Letting the TTL lapse causes Vault to revoke the token, after which it cannot be renewed or used again.
 
@@ -61,9 +53,7 @@ When you issue a token with a specified TTL (for example, 30 minutes), Vault cal
 
 In addition to the rolling TTL, Vault enforces a **Max TTL**, an absolute cap on a token’s lifetime. No matter how many times you renew, the token cannot live longer than its Max TTL from the original creation time.
 
-<Frame>
-  ![The image explains the concept of Time-To-Live (TTL) and Max TTL for tokens, illustrating how a token can be renewed until it reaches its Max TTL of 6 hours, beyond which it cannot be renewed. A timeline shows token creation and renewal events.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877990/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Explaining-Time-to-Live-TTL/ttl-max-ttl-token-renewal-timeline.jpg)
-</Frame>
+![The image explains the concept of Time-To-Live (TTL) and Max TTL for tokens, illustrating how a token can be renewed until it reaches its Max TTL of 6 hours, beyond which it cannot be renewed. A timeline shows token creation and renewal events.](https://kodekloud.com/kk-media/image/upload/v1752877990/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Explaining-Time-to-Live-TTL/ttl-max-ttl-token-renewal-timeline.jpg)
 
 **Example Timeline**
 
@@ -72,13 +62,9 @@ In addition to the rolling TTL, Vault enforces a **Max TTL**, an absolute cap on
 * **3 h:** Renew → New expiry at 5 h
 * **6 h:** Max TTL reached → Token revoked
 
-<Frame>
-  ![The image explains the concept of Time-To-Live (TTL) and Max TTL for tokens, illustrating how a token can be renewed until it reaches its Max TTL of 6 hours, after which it cannot be renewed further. A timeline shows the token's creation, renewal, and eventual revocation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877991/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Explaining-Time-to-Live-TTL/ttl-max-ttl-token-renewal-diagram.jpg)
-</Frame>
+![The image explains the concept of Time-To-Live (TTL) and Max TTL for tokens, illustrating how a token can be renewed until it reaches its Max TTL of 6 hours, after which it cannot be renewed further. A timeline shows the token's creation, renewal, and eventual revocation.](https://kodekloud.com/kk-media/image/upload/v1752877991/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Explaining-Time-to-Live-TTL/ttl-max-ttl-token-renewal-diagram.jpg)
 
-<Callout icon="triangle-alert">
-  If you fail to renew the token before its current TTL expires (e.g., at 2 h), Vault revokes it immediately—even if its Max TTL (6 h) hasn’t been reached.
-</Callout>
+> **triangle-alert** If you fail to renew the token before its current TTL expires (e.g., at 2 h), Vault revokes it immediately—even if its Max TTL (6 h) hasn’t been reached.
 
 ## Default Token TTL
 
@@ -88,9 +74,7 @@ If you don’t specify a TTL when creating a token, Vault applies a **default TT
 default_lease_ttl = "24h"
 ```
 
-<Callout icon="lightbulb">
-  In many development environments, you may still see the unchanged default of `768h` in screenshots or logs.
-</Callout>
+> **lightbulb** In many development environments, you may still see the unchanged default of `768h` in screenshots or logs.
 
 ## How to Set Token TTL
 
@@ -138,6 +122,4 @@ Vault applies the default TTL defined in your configuration (`default_lease_ttl`
 * [Vault Configuration](https://www.vaultproject.io/docs/configuration)
 * [HashiCorp Vault – Lease and Renewal](https://www.vaultproject.io/docs/concepts/lease)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/c2bffc28-80f8-4959-bc25-32271d82e8ed" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/c2bffc28-80f8-4959-bc25-32271d82e8ed)

@@ -110,9 +110,7 @@ cargo run --quiet
 File deleted successfully.
 ```
 
-<Callout icon="triangle-alert">
-  Be cautious when deleting files since removed files cannot be recovered using the Rust standard library.
-</Callout>
+> **triangle-alert** Be cautious when deleting files since removed files cannot be recovered using the Rust standard library.
 
 ***
 
@@ -216,16 +214,10 @@ In this tutorial, we reviewed several key filesystem operations in Rust:
 | Reading Directory Contents | Listing files and folders within a directory   | [`fs::read_dir`](https://doc.rust-lang.org/std/fs/fn.read_dir.html)             |
 | Removing Directories       | Deleting directories, including non-empty ones | [`fs::remove_dir_all`](https://doc.rust-lang.org/std/fs/fn.remove_dir_all.html) |
 
-<Callout icon="lightbulb">
-  This guide covers essential file and directory manipulation techniques in Rust, including copying, moving, renaming, and deleting operations. Always ensure to handle errors appropriately when working with file systems, and be mindful of concurrency control for performance-critical applications.
-</Callout>
+> **lightbulb** This guide covers essential file and directory manipulation techniques in Rust, including copying, moving, renaming, and deleting operations. Always ensure to handle errors appropriately when working with file systems, and be mindful of concurrency control for performance-critical applications.
 
-<Frame>
-  ![The image is a summary of key concepts related to file operations, including advanced file operations, directories and buffers, error handling, buffered I/O, and race conditions. Each concept is numbered and briefly explained.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883935/notes-assets/images/Rust-Programming-Performing-Common-Filesystem-Operations/file-operations-summary-concepts.jpg)
-</Frame>
+![The image is a summary of key concepts related to file operations, including advanced file operations, directories and buffers, error handling, buffered I/O, and race conditions. Each concept is numbered and briefly explained.](https://kodekloud.com/kk-media/image/upload/v1752883935/notes-assets/images/Rust-Programming-Performing-Common-Filesystem-Operations/file-operations-summary-concepts.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/5b50abd7-c86a-4458-a1a3-90a7ebb3d776/lesson/61b84d05-1d02-4758-99a7-22ac647b2d1c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/5b50abd7-c86a-4458-a1a3-90a7ebb3d776/lesson/61b84d05-1d02-4758-99a7-22ac647b2d1c)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/rust/module/5b50abd7-c86a-4458-a1a3-90a7ebb3d776/lesson/71658051-a1d2-401e-8ffe-7f22673cf86a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/rust/module/5b50abd7-c86a-4458-a1a3-90a7ebb3d776/lesson/71658051-a1d2-401e-8ffe-7f22673cf86a)

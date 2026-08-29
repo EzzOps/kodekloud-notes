@@ -45,9 +45,7 @@ Open or download those JSON objects from the S3 console and you'll find the same
 * When connector thresholds are reached (for example, `flush.size`, `rotate.interval.ms`, or file-size-based rotation), the connector writes a file to S3 containing the buffered records.
 * The original topic data remains intact — the sink reads and copies data; it does not delete messages from Kafka. Other consumers can still read the same topic.
 
-<Callout icon="lightbulb">
-  Kafka Connect removes the need to write and maintain custom consumers for many common integrations. S3 is one of many available sinks (others include GCS, Redis, Elasticsearch, and various databases). The connector acts as a downstream service that pulls data from Kafka and writes it to the external system.
-</Callout>
+> **lightbulb** Kafka Connect removes the need to write and maintain custom consumers for many common integrations. S3 is one of many available sinks (others include GCS, Redis, Elasticsearch, and various databases). The connector acts as a downstream service that pulls data from Kafka and writes it to the external system.
 
 ## Practical notes and tuning
 
@@ -80,11 +78,9 @@ Use these settings to balance latency, file size, and downstream processing need
 
 That concludes this demo where we produced events to a Kafka topic and verified the S3 sink wrote topic events into S3. See you in the next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/event-streaming-with-kafka/module/68c7ef21-4d7c-405e-8fae-5500f90b82a2/lesson/edc5bbb5-0c56-4cce-8b89-b16707019dc6" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/event-streaming-with-kafka/module/68c7ef21-4d7c-405e-8fae-5500f90b82a2/lesson/edc5bbb5-0c56-4cce-8b89-b16707019dc6)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/event-streaming-with-kafka/module/68c7ef21-4d7c-405e-8fae-5500f90b82a2/lesson/6a7bdc70-cd7d-403d-8c82-39492c1837ed" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/event-streaming-with-kafka/module/68c7ef21-4d7c-405e-8fae-5500f90b82a2/lesson/6a7bdc70-cd7d-403d-8c82-39492c1837ed)
 
 
 # Demo Setting up S3 Kafka Connect
@@ -144,9 +140,7 @@ Attach the S3 policy to the role:
   <img alt="The image shows an AWS IAM permissions management interface where a user is selecting policy options related to Amazon S3, with &#x22;AmazonS3FullAccess&#x22; highlighted." />
 </Frame>
 
-<Callout icon="lightbulb">
-  For production use, follow least-privilege principles. Grant only the S3 actions and bucket resources the connector requires (for example `s3:PutObject`, `s3:ListBucket` on the specific bucket).
-</Callout>
+> **lightbulb** For production use, follow least-privilege principles. Grant only the S3 actions and bucket resources the connector requires (for example `s3:PutObject`, `s3:ListBucket` on the specific bucket).
 
 After attaching the policy, re-run the `aws s3 cp` command. Successful download example:
 

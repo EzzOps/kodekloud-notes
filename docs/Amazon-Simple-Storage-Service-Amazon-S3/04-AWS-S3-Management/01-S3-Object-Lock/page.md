@@ -6,7 +6,7 @@ Amazon S3’s Object Lock feature enforces data immutability, preventing deletio
 
 Amazon S3’s Object Lock feature enables you to enforce a write-once-read-many (WORM) model, ensuring complete data immutability. By preventing objects from being permanently deleted or overwritten, Object Lock helps you meet stringent regulatory and compliance requirements.
 
-![The image describes "Object Lock," highlighting its features: preventing permanent data deletion or overwriting, meeting regulatory requirements, and enforcing a write-once-read-many (WORM) model.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869389/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Object-Lock/object-lock-features-worm-regulations.jpg)
+![The image describes "Object Lock," highlighting its features: preventing permanent data deletion or overwriting, meeting regulatory requirements, and enforcing a write-once-read-many (WORM) model.](https://kodekloud.com/kk-media/image/upload/v1752869389/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Object-Lock/object-lock-features-worm-regulations.jpg)
 
 ## How Object Lock Works
 
@@ -21,7 +21,7 @@ Once locked, objects cannot be deleted or altered until the retention period exp
 
 Regulated industries—such as banking and insurance—must often retain records for a defined period. With Object Lock, you can specify exactly how long data must remain immutable.
 
-![The image shows a diagram with a blue building icon on the left, an arrow labeled "5 Years" pointing to a green bucket icon on the right, under the title "Object Lock."](../../../../images/kodekloud.com/kk-media/image/upload/v1752869390/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Object-Lock/object-lock-diagram-blue-green-icons.jpg)
+![The image shows a diagram with a blue building icon on the left, an arrow labeled "5 Years" pointing to a green bucket icon on the right, under the title "Object Lock."](https://kodekloud.com/kk-media/image/upload/v1752869390/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Object-Lock/object-lock-diagram-blue-green-icons.jpg)
 
 For example, enforcing a five-year retention period ensures that critical financial records remain tamper-proof until that timeframe ends.
 
@@ -37,7 +37,7 @@ Choose one of two retention modes when locking an object:
 > **lightbulb** Governance Mode lets security admins with the `s3:BypassGovernanceRetention` permission perform emergency deletions if needed.\
   Compliance Mode guarantees unbreakable WORM protection—for any removal, you must delete the entire AWS account.
 
-![The image illustrates two object lock modes: Governance Mode, where most users are restricted but users with bypass rights can access, and Compliance Mode, where all users, including root users, are restricted during the retention period.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869392/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Object-Lock/object-lock-modes-governance-compliance.jpg)
+![The image illustrates two object lock modes: Governance Mode, where most users are restricted but users with bypass rights can access, and Compliance Mode, where all users, including root users, are restricted during the retention period.](https://kodekloud.com/kk-media/image/upload/v1752869392/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Object-Lock/object-lock-modes-governance-compliance.jpg)
 
 ## Legal Hold
 
@@ -52,7 +52,7 @@ aws s3api put-object-legal-hold \
   --legal-hold Status=ON
 ```
 
-![The image illustrates a "Legal Hold" process, showing that only users with "PutObjectLegalHold" permission can interact with a storage bucket, while regular users cannot. It includes a use case for documents used during active litigation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869393/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Object-Lock/legal-hold-process-storage-bucket.jpg)
+![The image illustrates a "Legal Hold" process, showing that only users with "PutObjectLegalHold" permission can interact with a storage bucket, while regular users cannot. It includes a use case for documents used during active litigation.](https://kodekloud.com/kk-media/image/upload/v1752869393/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Object-Lock/legal-hold-process-storage-bucket.jpg)
 
 ## Prerequisites
 
@@ -62,7 +62,7 @@ aws s3api put-object-legal-hold \
 * Enable **Versioning** on your S3 bucket.
 * Enable **Object Lock** when you create the bucket.
 
-![The image provides instructions for using "Object Lock," stating that versioning and object locking must be enabled in the bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869393/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Object-Lock/object-lock-instructions-versioning-bucket.jpg)
+![The image provides instructions for using "Object Lock," stating that versioning and object locking must be enabled in the bucket.](https://kodekloud.com/kk-media/image/upload/v1752869393/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Object-Lock/object-lock-instructions-versioning-bucket.jpg)
 
 Once both settings are enabled, you can configure retention periods, switch modes, and apply Legal Holds to satisfy compliance mandates.
 

@@ -34,9 +34,7 @@ Reading state information… Done
 unzip is already the newest version (6.0-20ubuntu1.1).
 ```
 
-<Callout icon="lightbulb">
-  Ready to advance your IaC expertise? Check out [KodeKloud’s OpenTofu course](https://kodekloud.com/course/opentofu) for in-depth coverage of Terraform-compatible best practices.
-</Callout>
+> **lightbulb** Ready to advance your IaC expertise? Check out [KodeKloud’s OpenTofu course](https://kodekloud.com/course/opentofu) for in-depth coverage of Terraform-compatible best practices.
 
 ***
 
@@ -48,6 +46,4 @@ Thank you for your dedication and enthusiasm throughout this journey. Remember, 
 * [Terraform Official Docs](https://www.terraform.io/docs)
 * [KodeKloud OpenTofu Course](https://kodekloud.com/course/opentofu)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/de1489a1-f671-441f-b106-09b11e9ca96c/lesson/dc163f78-3c4a-4906-b1ba-fa8b31d0cf0e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/de1489a1-f671-441f-b106-09b11e9ca96c/lesson/dc163f78-3c4a-4906-b1ba-fa8b31d0cf0e)

@@ -12,9 +12,7 @@ Similarly, in a social media application, there might be a table for users and a
 
 Tables are fundamentally composed of columns and rows. Columns represent different attributes of the data. For example, in a users table, you might include columns for the user's name, age, gender, email, and addresses. Each column is designed to store a specific type of information.
 
-<Frame>
-  ![The image explains the difference between columns and rows in a table, with an example table showing IDs, names, ages, and sexes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883486/notes-assets/images/Python-API-Development-with-FastAPI-Database-Schema-And-Tables/table-columns-rows-example.jpg)
-</Frame>
+![The image explains the difference between columns and rows in a table, with an example table showing IDs, names, ages, and sexes.](https://kodekloud.com/kk-media/image/upload/v1752883486/notes-assets/images/Python-API-Development-with-FastAPI-Database-Schema-And-Tables/table-columns-rows-example.jpg)
 
 Rows, on the other hand, represent individual entries within the table. In the users table example, each row corresponds to a unique user—such as Vanessa in the first row and Carl in the second.
 
@@ -24,17 +22,13 @@ Just as programming languages have data types, so do databases. When defining a 
 
 Additionally, PostgreSQL supports Boolean values (true/false), just like Python. When you need to represent a collection of values, PostgreSQL provides an array type, much like Python lists. However, it is often more effective to establish a separate table when dealing with multiple related items.
 
-<Frame>
-  ![The image is a comparison table showing data types in Postgres and Python, highlighting numeric, text, boolean, and sequence types. It emphasizes that databases have data types similar to programming languages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883487/notes-assets/images/Python-API-Development-with-FastAPI-Database-Schema-And-Tables/postgres-python-data-types-comparison.jpg)
-</Frame>
+![The image is a comparison table showing data types in Postgres and Python, highlighting numeric, text, boolean, and sequence types. It emphasizes that databases have data types similar to programming languages.](https://kodekloud.com/kk-media/image/upload/v1752883487/notes-assets/images/Python-API-Development-with-FastAPI-Database-Schema-And-Tables/postgres-python-data-types-comparison.jpg)
 
 ## Primary Keys
 
 When creating a table, you designate one or more columns as the primary key. The primary key uniquely identifies each record in the table, ensuring no two rows share the same key. While this is commonly an “ID” column, any unique attribute—such as an email address in a users table—can serve as the primary key. Other unique identifiers like phone numbers or social security numbers can also be used.
 
-<Frame>
-  ![The image explains the concept of a primary key in a database, highlighting that the email column can serve as a primary key because it uniquely identifies each record. It includes a table with columns for ID, name, email, password, and phone number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883489/notes-assets/images/Python-API-Development-with-FastAPI-Database-Schema-And-Tables/primary-key-email-database-diagram.jpg)
-</Frame>
+![The image explains the concept of a primary key in a database, highlighting that the email column can serve as a primary key because it uniquely identifies each record. It includes a table with columns for ID, name, email, password, and phone number.](https://kodekloud.com/kk-media/image/upload/v1752883489/notes-assets/images/Python-API-Development-with-FastAPI-Database-Schema-And-Tables/primary-key-email-database-diagram.jpg)
 
 The key requirement for primary keys is that they must be unique for every row, ensuring reliable record identification across the database.
 
@@ -46,21 +40,15 @@ In addition to specifying data types, you can enforce extra constraints on table
 
 A unique constraint ensures that every entry in a specific column contains a distinct value. For example, if you want to ensure that no two users have the same name, you can add a unique constraint to the name column. PostgreSQL then validates entries, throwing an error if a duplicate is detected.
 
-<Frame>
-  ![The image explains the concept of unique constraints in databases, showing a table where the "name" column is marked as unique, highlighting that duplicates are not allowed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883490/notes-assets/images/Python-API-Development-with-FastAPI-Database-Schema-And-Tables/unique-constraints-database-table.jpg)
-</Frame>
+![The image explains the concept of unique constraints in databases, showing a table where the "name" column is marked as unique, highlighting that duplicates are not allowed.](https://kodekloud.com/kk-media/image/upload/v1752883490/notes-assets/images/Python-API-Development-with-FastAPI-Database-Schema-And-Tables/unique-constraints-database-table.jpg)
 
 ### Not Null Constraint
 
 By default, PostgreSQL allows columns to contain null values. For instance, if you create a user without specifying a name or age, PostgreSQL will store a null value in those columns. To enforce that certain columns always contain a valid entry, you can apply a NOT NULL constraint. This ensures that any attempt to insert a record without a necessary value will result in an error.
 
-<Frame>
-  ![The image explains null constraints in databases, highlighting that columns can be left blank by default, resulting in a null value, and that a NOT NULL constraint ensures a column is never left blank. It includes a table example showing a null value in the "Age" column.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883491/notes-assets/images/Python-API-Development-with-FastAPI-Database-Schema-And-Tables/null-constraints-database-example.jpg)
-</Frame>
+![The image explains null constraints in databases, highlighting that columns can be left blank by default, resulting in a null value, and that a NOT NULL constraint ensures a column is never left blank. It includes a table example showing a null value in the "Age" column.](https://kodekloud.com/kk-media/image/upload/v1752883491/notes-assets/images/Python-API-Development-with-FastAPI-Database-Schema-And-Tables/null-constraints-database-example.jpg)
 
-<Callout icon="lightbulb">
-  Ensuring your constraints are well-defined is key to maintaining the integrity and reliability of your database.
-</Callout>
+> **lightbulb** Ensuring your constraints are well-defined is key to maintaining the integrity and reliability of your database.
 
 ## Conclusion
 
@@ -68,6 +56,4 @@ A solid understanding of tables, columns, rows, data types, primary keys, and co
 
 For more detailed documentation on PostgreSQL and database design, consider exploring the [PostgreSQL Documentation](https://www.postgresql.org/docs/) and related resources.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/38c9dfa8-e705-42e2-8db5-7e2559a4fdac" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/38c9dfa8-e705-42e2-8db5-7e2559a4fdac)

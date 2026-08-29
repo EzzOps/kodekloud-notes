@@ -6,9 +6,7 @@ This article explores advanced features of Kiali for managing and monitoring Ist
 
 In this article, we explore various advanced features of Kiali using a modern configuration on the Bookinfo application. Kiali not only provides observability but also assists in configuring, updating, and validating your Istio service mesh. We will guide you through modifying fault injection settings, analyzing traffic flow, and reviewing Istio configurations to ensure your service mesh operates smoothly.
 
-<Callout icon="lightbulb">
-  Ensure your Bookinfo app is deployed and your Kiali and Istio environments are correctly configured before following these steps.
-</Callout>
+> **lightbulb** Ensure your Bookinfo app is deployed and your Kiali and Istio environments are correctly configured before following these steps.
 
 ## Adjusting Fault Injection Delay
 
@@ -42,17 +40,13 @@ spec:
             subset: v1
 ```
 
-<Frame>
-  ![The image shows the Kiali console interface displaying Istio configuration details, including various services and their types within the "default" namespace. The listed configurations include VirtualService, Gateway, and DestinationRule.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879357/notes-assets/images/Istio-Service-Mesh-Demo-Kiali-in-Detail/kiali-console-istio-configuration-default.jpg)
-</Frame>
+![The image shows the Kiali console interface displaying Istio configuration details, including various services and their types within the "default" namespace. The listed configurations include VirtualService, Gateway, and DestinationRule.](https://kodekloud.com/kk-media/image/upload/v1752879357/notes-assets/images/Istio-Service-Mesh-Demo-Kiali-in-Detail/kiali-console-istio-configuration-default.jpg)
 
 ## Observing Service Mesh Behavior
 
 In the diagram below, you can notice that some errors exist in the mesh, yet traffic continues to be processed.
 
-<Frame>
-  ![The image shows a Kiali console interface displaying a service mesh graph with nodes and connections representing different services and their interactions. The graph includes metrics for HTTP requests, success rates, and errors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879358/notes-assets/images/Istio-Service-Mesh-Demo-Kiali-in-Detail/kiali-console-service-mesh-graph.jpg)
-</Frame>
+![The image shows a Kiali console interface displaying a service mesh graph with nodes and connections representing different services and their interactions. The graph includes metrics for HTTP requests, success rates, and errors.](https://kodekloud.com/kk-media/image/upload/v1752879358/notes-assets/images/Istio-Service-Mesh-Demo-Kiali-in-Detail/kiali-console-service-mesh-graph.jpg)
 
 ## Exploring Kiali Features
 
@@ -80,9 +74,7 @@ The Display section in the lower-left corner of the interface lets you customize
 
 Below is an enhanced view of the service mesh graph with additional display options:
 
-<Frame>
-  ![The image shows a Kiali console interface displaying a service mesh graph with nodes representing different services and their interactions. It includes options for displaying edge labels and various metrics like request distribution and response time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879359/notes-assets/images/Istio-Service-Mesh-Demo-Kiali-in-Detail/kiali-console-service-mesh-graph-2.jpg)
-</Frame>
+![The image shows a Kiali console interface displaying a service mesh graph with nodes representing different services and their interactions. It includes options for displaying edge labels and various metrics like request distribution and response time.](https://kodekloud.com/kk-media/image/upload/v1752879359/notes-assets/images/Istio-Service-Mesh-Demo-Kiali-in-Detail/kiali-console-service-mesh-graph-2.jpg)
 
 ## Removing Fault Injection
 
@@ -131,9 +123,7 @@ Double-clicking a service node (e.g., "reviews") brings you to a detailed view o
 
 In the Traffic tab, you can evaluate both inbound and outbound traffic details, including data on rate, success percentage, protocol, and links to detailed metrics. Here is an example of the reviews service traffic metrics interface:
 
-<Frame>
-  ![The image shows a Kiali Console interface displaying traffic metrics for a service named "reviews" in the "default" namespace. It includes inbound and outbound traffic details with rate, percent success, and protocol information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879360/notes-assets/images/Istio-Service-Mesh-Demo-Kiali-in-Detail/kiali-console-reviews-traffic-metrics.jpg)
-</Frame>
+![The image shows a Kiali Console interface displaying traffic metrics for a service named "reviews" in the "default" namespace. It includes inbound and outbound traffic details with rate, percent success, and protocol information.](https://kodekloud.com/kk-media/image/upload/v1752879360/notes-assets/images/Istio-Service-Mesh-Demo-Kiali-in-Detail/kiali-console-reviews-traffic-metrics.jpg)
 
 ### Workload Logs and Metrics
 
@@ -193,9 +183,7 @@ spec:
       name: v3
 ```
 
-<Callout icon="lightbulb">
-  Using Kiali wizards to create Istio configurations minimizes manual errors and ensures your service mesh definitions are validated in real-time.
-</Callout>
+> **lightbulb** Using Kiali wizards to create Istio configurations minimizes manual errors and ensures your service mesh definitions are validated in real-time.
 
 ## Conclusion
 
@@ -203,6 +191,4 @@ Kiali provides a powerful graphical and configuration toolset to manage and moni
 
 Explore all the interesting features of Kiali and enhance your observability and management of your service mesh today!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/7696566a-6631-4367-9fbc-ce86b23cd608/lesson/b8f6b0fa-6424-43cc-8b93-4e38245d86e2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/7696566a-6631-4367-9fbc-ce86b23cd608/lesson/b8f6b0fa-6424-43cc-8b93-4e38245d86e2)

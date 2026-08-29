@@ -38,12 +38,10 @@ To illustrate the differences, consider the following analogy:
 
 ## Advantages of Containers
 
-<Callout icon="lightbulb">
-  * **Isolation and Efficiency:** Containers package an application with all its dependencies, running in user mode using the host kernel. This reduces overhead and ensures rapid startup.
+> **lightbulb** * **Isolation and Efficiency:** Containers package an application with all its dependencies, running in user mode using the host kernel. This reduces overhead and ensures rapid startup.
   * **Consistent Deployments:** Containers encapsulate both the application and its dependencies, ensuring that deployments behave the same way across development, testing, and production environments. Tools like Docker and Kubernetes streamline this process.
   * **Optimized Storage:** With features like image layering, containers update only the modified layers, conserving storage space. Multiple containers can share the same base image, leading to improved efficiency.
   * **Enhanced Fault Tolerance:** Container orchestration systems such as Kubernetes manage container lifecycles. They automatically replace failed containers, ensuring continuous availability and enabling seamless scaling.
-</Callout>
 
 ## Conclusion
 
@@ -55,6 +53,4 @@ Now that you have a clear understanding of the differences between VMs and conta
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/146650b0-63f9-4c4b-b452-716a780e5fc7/lesson/877bd6b6-bfb4-4222-92e8-0d7b2d95e24e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/146650b0-63f9-4c4b-b452-716a780e5fc7/lesson/877bd6b6-bfb4-4222-92e8-0d7b2d95e24e)

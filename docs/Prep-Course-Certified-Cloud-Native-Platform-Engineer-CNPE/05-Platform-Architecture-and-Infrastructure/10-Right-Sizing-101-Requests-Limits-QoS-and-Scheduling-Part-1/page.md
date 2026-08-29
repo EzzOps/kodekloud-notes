@@ -79,9 +79,7 @@ Kubernetes needs explicit resource hints. Quick recap of why each field matters:
   <img alt="The image explains why Kubernetes needs explicit resource hints, highlighting issues related to missing requests, limits, and default behavior. It notes that without requests, scheduling decisions are affected; without limits, a pod can crash a node; and default behavior assumes manual configuration." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Best practice: enforce platform-wide defaults using `LimitRange` and control consumption with `ResourceQuota`. Combine these with observability to make data-driven adjustments rather than guessing.
-</Callout>
+> **lightbulb** Best practice: enforce platform-wide defaults using `LimitRange` and control consumption with `ResourceQuota`. Combine these with observability to make data-driven adjustments rather than guessing.
 
 Quick reference: QoS class rules
 
@@ -111,9 +109,7 @@ spec:
         memory: "512Mi"
 ```
 
-<Callout icon="warning">
-  Memory limits are critical. Exceeding memory triggers OOM kills that can cascade into customer-visible failures—so require memory limits and monitor tail latencies and OOM events.
-</Callout>
+> **warning** Memory limits are critical. Exceeding memory triggers OOM kills that can cascade into customer-visible failures—so require memory limits and monitor tail latencies and OOM events.
 
 Recommended right-sizing workflow (practical, repeatable)
 
@@ -131,6 +127,4 @@ Links and references
 * [LimitRange](https://kubernetes.io/docs/concepts/policy/limit-range/)
 * [ResourceQuota](https://kubernetes.io/docs/concepts/policy/resource-quotas/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/55fffdb1-b6d8-4915-af0e-b66a18c6a3fb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/55fffdb1-b6d8-4915-af0e-b66a18c6a3fb)

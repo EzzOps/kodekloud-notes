@@ -12,9 +12,7 @@ In this guide, we’ll convert an existing Terraform Cloud workspace (`devops-aw
 2. Choose your organization **Mastering-Terraform-Cloud**.
 3. Under **Workspaces**, click **devops-aws-myapp-dev**.
 
-<Frame>
-  ![The image shows a Terraform Cloud workspace interface for "devops-aws-myapp-dev," displaying options for settings like General, Locking, SSH Key, Version Control, and Destruction and Deletion. The workspace has no resources, and the Terraform version is 1.2.7.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878934/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Remote-Execution/terraform-cloud-workspace-devops-aws.jpg)
-</Frame>
+![The image shows a Terraform Cloud workspace interface for "devops-aws-myapp-dev," displaying options for settings like General, Locking, SSH Key, Version Control, and Destruction and Deletion. The workspace has no resources, and the Terraform version is 1.2.7.](https://kodekloud.com/kk-media/image/upload/v1752878934/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Remote-Execution/terraform-cloud-workspace-devops-aws.jpg)
 
 ## 2. Enable Remote Execution
 
@@ -22,9 +20,7 @@ In this guide, we’ll convert an existing Terraform Cloud workspace (`devops-aw
 2. Change **Execution Mode** from **Local** to **Remote**.
 3. Click **Save settings**.
 
-<Frame>
-  ![The image shows the General Settings page of a Terraform Cloud workspace, with options for setting the workspace ID, name, description, execution mode, and apply method.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878935/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Remote-Execution/terraform-cloud-workspace-settings-page.jpg)
-</Frame>
+![The image shows the General Settings page of a Terraform Cloud workspace, with options for setting the workspace ID, name, description, execution mode, and apply method.](https://kodekloud.com/kk-media/image/upload/v1752878935/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Remote-Execution/terraform-cloud-workspace-settings-page.jpg)
 
 ## 3. Rename Your Variables File
 
@@ -43,13 +39,9 @@ environment   = "development"
 instance_type = "t2.micro"
 ```
 
-<Callout icon="lightbulb">
-  Files with the `*.auto.tfvars` suffix are auto-loaded by Terraform Cloud—no manual variable uploads required.
-</Callout>
+> **lightbulb** Files with the `*.auto.tfvars` suffix are auto-loaded by Terraform Cloud—no manual variable uploads required.
 
-<Frame>
-  ![The image shows a Terraform Cloud workspace interface, specifically the "Variables" section, where no variables or variable sets have been added.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878936/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Remote-Execution/terraform-cloud-workspace-variables-empty.jpg)
-</Frame>
+![The image shows a Terraform Cloud workspace interface, specifically the "Variables" section, where no variables or variable sets have been added.](https://kodekloud.com/kk-media/image/upload/v1752878936/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Remote-Execution/terraform-cloud-workspace-variables-empty.jpg)
 
 ## 4. Configure the Remote Backend
 
@@ -77,9 +69,7 @@ terraform login
 
 When prompted, paste your API token. Generate or copy it from **User Settings** → **Tokens** in the web UI.
 
-<Frame>
-  ![The image shows a web interface for creating an API token, with a warning to save the token securely as it will not be displayed again. The token is visible along with options to copy it and a "Done" button.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878937/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Remote-Execution/api-token-creation-interface-warning.jpg)
-</Frame>
+![The image shows a web interface for creating an API token, with a warning to save the token securely as it will not be displayed again. The token is visible along with options to copy it and a "Done" button.](https://kodekloud.com/kk-media/image/upload/v1752878937/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Remote-Execution/api-token-creation-interface-warning.jpg)
 
 ## 6. Initialize Terraform
 
@@ -107,13 +97,9 @@ In the Terraform Cloud UI, go to **Variables** and add:
 | AWS\_ACCESS\_KEY\_ID     | Environment | No        |
 | AWS\_SECRET\_ACCESS\_KEY | Environment | Yes       |
 
-<Callout icon="triangle-alert">
-  Mark `AWS_SECRET_ACCESS_KEY` as **Sensitive** to prevent it from being exposed in logs or state files.
-</Callout>
+> **triangle-alert** Mark `AWS_SECRET_ACCESS_KEY` as **Sensitive** to prevent it from being exposed in logs or state files.
 
-<Frame>
-  ![The image shows a Terraform Cloud workspace interface displaying variables, including sensitive AWS keys, with a success message indicating a variable was saved.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878938/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Remote-Execution/terraform-cloud-workspace-variables-saved.jpg)
-</Frame>
+![The image shows a Terraform Cloud workspace interface displaying variables, including sensitive AWS keys, with a success message indicating a variable was saved.](https://kodekloud.com/kk-media/image/upload/v1752878938/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Remote-Execution/terraform-cloud-workspace-variables-saved.jpg)
 
 ## 8. Run a Remote Plan
 
@@ -135,9 +121,7 @@ https://app.terraform.io/app/Mastering-Terraform-Cloud/devops-aws-myapp-dev/runs
 
 You can also watch progress in the UI:
 
-<Frame>
-  ![The image shows a Terraform Cloud interface with a speculative plan triggered via CLI for a development workspace. It includes details of the plan running and a log output.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878939/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Remote-Execution/terraform-cloud-cli-plan-log-output.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface with a speculative plan triggered via CLI for a development workspace. It includes details of the plan running and a log output.](https://kodekloud.com/kk-media/image/upload/v1752878939/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Remote-Execution/terraform-cloud-cli-plan-log-output.jpg)
 
 At the end, you’ll see:
 
@@ -161,9 +145,7 @@ Approve and apply your plan:
 
 * **UI**: Click **Confirm & Apply** in the **Runs** tab.
 
-<Frame>
-  ![The image shows a Terraform Cloud workspace interface with a run triggered via CLI. It indicates that the plan has finished and the apply process is currently running.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878940/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Remote-Execution/terraform-cloud-workspace-cli-run.jpg)
-</Frame>
+![The image shows a Terraform Cloud workspace interface with a run triggered via CLI. It indicates that the plan has finished and the apply process is currently running.](https://kodekloud.com/kk-media/image/upload/v1752878940/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Remote-Execution/terraform-cloud-workspace-cli-run.jpg)
 
 Once complete, outputs appear:
 
@@ -216,8 +198,6 @@ Congratulations! You’ve successfully switched your Terraform Cloud workspace t
 * [Managing Variables in Terraform Cloud](https://www.terraform.io/cloud/workspaces/variables)
 * [AWS CLI Documentation](https://docs.aws.amazon.com/cli/latest/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/69fc91b2-bf0f-4922-831c-2aee42d19b03/lesson/01418c27-6579-463f-b9da-d1d86fa4cd80" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/69fc91b2-bf0f-4922-831c-2aee42d19b03/lesson/01418c27-6579-463f-b9da-d1d86fa4cd80)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/69fc91b2-bf0f-4922-831c-2aee42d19b03/lesson/2c9247c7-1126-4bba-84ed-44b67fc0297d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/69fc91b2-bf0f-4922-831c-2aee42d19b03/lesson/2c9247c7-1126-4bba-84ed-44b67fc0297d)

@@ -15,7 +15,7 @@ Before diving into the CLI commands, it's important to understand the two primar
 * **Synchronous:** The function returns an immediate response, making it ideal when a load balancer or API Gateway invokes your Lambda.
 * **Asynchronous:** The function is executed in the background, which is suitable for processing events from sources like SQS.
 
-![The image is a screenshot from the AWS Lambda Operator Guide, comparing different Lambda invocation modes: synchronous, asynchronous, and polling, with examples of services for each mode.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859566/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-with-CLI-Demo/aws-lambda-invocation-modes-comparison.jpg)
+![The image is a screenshot from the AWS Lambda Operator Guide, comparing different Lambda invocation modes: synchronous, asynchronous, and polling, with examples of services for each mode.](https://kodekloud.com/kk-media/image/upload/v1752859566/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-with-CLI-Demo/aws-lambda-invocation-modes-comparison.jpg)
 
 Using the AWS CLI, you can invoke functions in both of these modes.
 
@@ -153,7 +153,7 @@ The asynchronous invocation returns a status code, for example:
 
 Since execution happens in the background, the output is not stored in `response.json`. To check the results of the function, review the associated CloudWatch logs.
 
-![The image shows an AWS CloudWatch interface displaying log events for a Lambda function, with details such as timestamps, request IDs, and memory usage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859568/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-with-CLI-Demo/aws-cloudwatch-lambda-logs.jpg)
+![The image shows an AWS CloudWatch interface displaying log events for a Lambda function, with details such as timestamps, request IDs, and memory usage.](https://kodekloud.com/kk-media/image/upload/v1752859568/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-with-CLI-Demo/aws-cloudwatch-lambda-logs.jpg)
 
 > **triangle-alert** When invoking functions asynchronously, ensure you monitor CloudWatch logs to verify execution and troubleshoot issues.
 

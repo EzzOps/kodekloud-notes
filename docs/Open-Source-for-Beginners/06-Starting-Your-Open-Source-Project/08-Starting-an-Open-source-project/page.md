@@ -16,13 +16,9 @@ Before diving in, confirm that your project fills a genuine gap in the ecosystem
 | Evaluate popularity metrics | Check stars, forks, and community activity.                              |
 | Consider collaboration      | If a project exists, propose features or join its maintainers.           |
 
-<Frame>
-  ![The image shows a search bar with the text "is there a need?" and an icon of a light bulb labeled "Existing Idea," suggesting a focus on evaluating the necessity of an idea.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882568/notes-assets/images/Open-Source-for-Beginners-Starting-an-Open-source-project/search-bar-evaluating-idea-lightbulb.jpg)
-</Frame>
+![The image shows a search bar with the text "is there a need?" and an icon of a light bulb labeled "Existing Idea," suggesting a focus on evaluating the necessity of an idea.](https://kodekloud.com/kk-media/image/upload/v1752882568/notes-assets/images/Open-Source-for-Beginners-Starting-an-Open-source-project/search-bar-evaluating-idea-lightbulb.jpg)
 
-<Callout icon="lightbulb">
-  Leverage platforms like [LibHunt][1] or [Awesome Lists][2] to discover popular open source tools.
-</Callout>
+> **lightbulb** Leverage platforms like [LibHunt][1] or [Awesome Lists][2] to discover popular open source tools.
 
 ## 2. Plan Your Project Sponsorship
 
@@ -35,9 +31,7 @@ Open source projects often incur costs. Outline your budget and funding model:
 | CI/CD        | Free tier services, community donations |
 | Maintenance  | Paid support, consulting services       |
 
-<Callout icon="lightbulb">
-  Set realistic funding goals and review expenses quarterly to adjust your sponsorship strategy.
-</Callout>
+> **lightbulb** Set realistic funding goals and review expenses quarterly to adjust your sponsorship strategy.
 
 ## 3. Define Contributor Value
 
@@ -47,13 +41,9 @@ Attracting contributors requires a clear value proposition:
 * **Project roadmap**: short-term milestones and long-term vision
 * **Recognition**: contributors earn commit access, acknowledgments, or swag
 
-<Frame>
-  ![The image shows a search bar with the text "what’s in it for contributors?" and a stylized plant icon above it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882569/notes-assets/images/Open-Source-for-Beginners-Starting-an-Open-source-project/search-bar-contributors-plant-icon.jpg)
-</Frame>
+![The image shows a search bar with the text "what’s in it for contributors?" and a stylized plant icon above it.](https://kodekloud.com/kk-media/image/upload/v1752882569/notes-assets/images/Open-Source-for-Beginners-Starting-an-Open-source-project/search-bar-contributors-plant-icon.jpg)
 
-<Callout icon="triangle-alert">
-  Ambiguous goals can deter contributors. Maintain transparent roadmaps and publish regular updates.
-</Callout>
+> **triangle-alert** Ambiguous goals can deter contributors. Maintain transparent roadmaps and publish regular updates.
 
 ## Next Steps
 
@@ -79,6 +69,4 @@ For additional resources, see:
 
 [5]: https://github.community/
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/767d06e2-2c02-403c-aa37-6e4a5549e6a6/lesson/ea0390cd-33dc-4cd4-98f9-41aadeac19d7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/767d06e2-2c02-403c-aa37-6e4a5549e6a6/lesson/ea0390cd-33dc-4cd4-98f9-41aadeac19d7)

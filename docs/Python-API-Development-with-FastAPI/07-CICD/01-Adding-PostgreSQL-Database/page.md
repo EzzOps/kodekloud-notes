@@ -191,9 +191,7 @@ steps:
     uses: actions/setup-python@v2
 ```
 
-<Callout icon="lightbulb">
-  In this YAML configuration, the port mapping for PostgreSQL is hardcoded as `5432:5432`. Although you might consider using variables for flexibility, GitHub Actions requires these values to be specified explicitly.
-</Callout>
+> **lightbulb** In this YAML configuration, the port mapping for PostgreSQL is hardcoded as `5432:5432`. Although you might consider using variables for flexibility, GitHub Actions requires these values to be specified explicitly.
 
 If you need to explicitly specify the health check options elsewhere, refer to the following snippet:
 
@@ -270,6 +268,4 @@ This automated CI pipeline pulls your code, installs dependencies, and runs your
 
 With these configurations, you've successfully integrated PostgreSQL into your CI pipeline and verified connectivity through your tests. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/4979410a-af57-460b-8f71-5a177fa10d2d/lesson/a2d250f7-bbaf-4308-ac79-2613b69a1de0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/4979410a-af57-460b-8f71-5a177fa10d2d/lesson/a2d250f7-bbaf-4308-ac79-2613b69a1de0)

@@ -11,12 +11,10 @@ In this guide, we provide a detailed yet simplified overview of the Linux boot p
 3. Kernel Initialization
 4. Service Initialization
 
-<Callout icon="lightbulb">
-  The Linux boot process can be initiated in one of two ways:
+> **lightbulb** The Linux boot process can be initiated in one of two ways:
 
   * Starting a Linux device that is currently halted.
   * Rebooting or resetting a running system.
-</Callout>
 
 ## 1. BIOS POST
 
@@ -89,6 +87,4 @@ Once SYSTEMD ensures that all necessary services are running, the boot sequence 
 
 This concludes our detailed overview of the Linux boot process.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/19296611-5fb9-4e5d-a926-d157d3f3c3db/lesson/0a14f33e-f3ac-4cbc-98a3-2f3fb17c4b70" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/19296611-5fb9-4e5d-a926-d157d3f3c3db/lesson/0a14f33e-f3ac-4cbc-98a3-2f3fb17c4b70)

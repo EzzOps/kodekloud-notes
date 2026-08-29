@@ -8,9 +8,7 @@ When planning virtual machines (VMs) in Azure, it's critical to understand the s
 
 In an IaaS scenario such as Azure VMs, the cloud provider (e.g., Microsoft) ensures the physical security of the data center, physical network, host, and virtualization layer. Meanwhile, the customer is responsible for managing the operating system, network configuration, access controls, and the data and applications running on the VM. As you shift toward PaaS or SaaS, additional responsibilities, such as handling runtime, middleware, or even parts of the operating system, transfer to the cloud provider. However, the customer always retains full responsibility for their data—ensuring proper data classification, accountability, and protection.
 
-<Callout icon="lightbulb">
-  Understanding these distinctions is essential for effective security, compliance, and management practices within your cloud environment.
-</Callout>
+> **lightbulb** Understanding these distinctions is essential for effective security, compliance, and management practices within your cloud environment.
 
 ***
 
@@ -56,12 +54,8 @@ Familiarize yourself with Azure's pricing strategies to optimize your budget:
 * Factor in potential advantages from existing on-premises Windows Server or SQL Server licenses when migrating to Azure.
 * Explore advanced cost-management strategies to further optimize expenses.
 
-<Callout icon="lightbulb">
-  Balancing performance, availability, and cost is crucial when deploying virtual machines in Azure. Integrating these planning considerations will contribute to a robust and scalable cloud strategy.
-</Callout>
+> **lightbulb** Balancing performance, availability, and cost is crucial when deploying virtual machines in Azure. Integrating these planning considerations will contribute to a robust and scalable cloud strategy.
 
 On that note, let's take a closer look at the VM sizes available in Azure.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/34d9af06-fc33-4556-a3f2-2e7a5c5db484/lesson/441f90ea-2cf7-43f0-8928-364f8d78b8c1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/34d9af06-fc33-4556-a3f2-2e7a5c5db484/lesson/441f90ea-2cf7-43f0-8928-364f8d78b8c1)

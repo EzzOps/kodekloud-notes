@@ -63,31 +63,21 @@ sudo nmtui
 
 You will see an interface similar to the following:
 
-<Frame>
-  ![The image shows a terminal window with the NetworkManager TUI interface, offering options to edit a connection, activate a connection, set the system hostname, or quit.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883580/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-networking-and-hostname-resolution-statically-or-dynamically/networkmanager-tui-terminal-interface.jpg)
-</Frame>
+![The image shows a terminal window with the NetworkManager TUI interface, offering options to edit a connection, activate a connection, set the system hostname, or quit.](https://kodekloud.com/kk-media/image/upload/v1752883580/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-networking-and-hostname-resolution-statically-or-dynamically/networkmanager-tui-terminal-interface.jpg)
 
 Select "Edit a connection" and choose the network connection corresponding to enp0s3:
 
-<Frame>
-  ![The image shows a terminal window on a CentOS system displaying a network configuration interface, listing an Ethernet connection "enp0s3" and a bridge "virbr0" with options to add, edit, or delete.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883582/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-networking-and-hostname-resolution-statically-or-dynamically/centos-network-configuration-terminal.jpg)
-</Frame>
+![The image shows a terminal window on a CentOS system displaying a network configuration interface, listing an Ethernet connection "enp0s3" and a bridge "virbr0" with options to add, edit, or delete.](https://kodekloud.com/kk-media/image/upload/v1752883582/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-networking-and-hostname-resolution-statically-or-dynamically/centos-network-configuration-terminal.jpg)
 
 Within the editor, use the Tab and arrow keys to navigate between fields. The profile name can be arbitrary, but the "Device" field must exactly match the network interface (e.g., enp0s3). By default, the IPv4 and IPv6 settings use DHCP. To configure IPv4 with a static IP, change the method from "automatic" to "manual" and specify your desired static address (e.g., 192.168.1.79/24) along with the default gateway and DNS information.
 
-<Frame>
-  ![The image shows a network configuration window on a CentOS system, displaying settings for an Ethernet connection, including IPv4 configuration options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883583/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-networking-and-hostname-resolution-statically-or-dynamically/centos-network-configuration-ethernet.jpg)
-</Frame>
+![The image shows a network configuration window on a CentOS system, displaying settings for an Ethernet connection, including IPv4 configuration options.](https://kodekloud.com/kk-media/image/upload/v1752883583/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-networking-and-hostname-resolution-statically-or-dynamically/centos-network-configuration-ethernet.jpg)
 
 After entering the static settings, navigate to the "OK" button to save your changes:
 
-<Frame>
-  ![The image shows a network configuration window on a CentOS system, displaying settings for an Ethernet connection, including IPv4 address, gateway, and DNS server details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883584/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-networking-and-hostname-resolution-statically-or-dynamically/centos-network-configuration-ethernet-2.jpg)
-</Frame>
+![The image shows a network configuration window on a CentOS system, displaying settings for an Ethernet connection, including IPv4 address, gateway, and DNS server details.](https://kodekloud.com/kk-media/image/upload/v1752883584/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-networking-and-hostname-resolution-statically-or-dynamically/centos-network-configuration-ethernet-2.jpg)
 
-<Callout icon="triangle-alert">
-  If you are connected remotely (e.g., via SSH), saving these changes may temporarily disrupt your network connection. It is advisable to test the new configuration locally before applying it to remote systems.
-</Callout>
+> **triangle-alert** If you are connected remotely (e.g., via SSH), saving these changes may temporarily disrupt your network connection. It is advisable to test the new configuration locally before applying it to remote systems.
 
 It is also possible to combine both DHCP and manual assignments. In such a hybrid configuration, the system obtains a primary IP via DHCP, while additional manual IP addresses are applied upon connection restart or system boot.
 
@@ -235,9 +225,7 @@ By carefully following these steps, you can seamlessly manage network settings a
 
 Happy networking!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5f16da06-6c71-4058-bfc5-6f4dd8754e9f/lesson/b4ec4b4f-e6b3-47cb-bc38-60b9223c570d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5f16da06-6c71-4058-bfc5-6f4dd8754e9f/lesson/b4ec4b4f-e6b3-47cb-bc38-60b9223c570d)
 
 
 # Configure time service clients
@@ -277,9 +265,7 @@ NTP service: inactive
 RTC in local TZ: no
 ```
 
-<Callout icon="lightbulb">
-  An unsynchronized clock can lead to issues in log management and automated tasks. Always verify that the system time is accurate.
-</Callout>
+> **lightbulb** An unsynchronized clock can lead to issues in log management and automated tasks. Always verify that the system time is accurate.
 
 ## Configuring Time Zone
 
@@ -347,9 +333,7 @@ If you find that the system clock is still not synchronized, force synchronizati
 $ sudo systemctl set-ntp true
 ```
 
-<Callout icon="lightbulb">
-  For additional details on troubleshooting time synchronization issues, please refer to the [Chrony Troubleshooting Guide](https://chrony.tuxfamily.org/documentation.html).
-</Callout>
+> **lightbulb** For additional details on troubleshooting time synchronization issues, please refer to the [Chrony Troubleshooting Guide](https://chrony.tuxfamily.org/documentation.html).
 
 ## Conclusion
 
@@ -357,8 +341,6 @@ By following the aforementioned steps, your server will maintain the correct tim
 
 Now, let's get started with some hands-on labs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5f16da06-6c71-4058-bfc5-6f4dd8754e9f/lesson/75246eb4-0b66-4d9e-abb8-6dceb2f8b4c0" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5f16da06-6c71-4058-bfc5-6f4dd8754e9f/lesson/75246eb4-0b66-4d9e-abb8-6dceb2f8b4c0)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5f16da06-6c71-4058-bfc5-6f4dd8754e9f/lesson/56e15344-ad6d-47f3-aaa4-2e905001fd44" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5f16da06-6c71-4058-bfc5-6f4dd8754e9f/lesson/56e15344-ad6d-47f3-aaa4-2e905001fd44)

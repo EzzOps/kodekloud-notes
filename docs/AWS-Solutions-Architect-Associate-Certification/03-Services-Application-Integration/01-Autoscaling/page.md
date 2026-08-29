@@ -16,7 +16,7 @@ The core element of an auto-scaling group is its scaling policy. A scaling polic
 * **Dynamic Scaling:** Automatically adjusts instances based on real-time metrics.
 * **Scheduled Scaling:** Predetermines scaling actions at specific times.
 
-![The image is a slide titled "Autoscaling – Features" that lists different scaling policies: Manual, Dynamic, and Scheduled. It includes an icon with gears and arrows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864704/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/autoscaling-features-scaling-policies.jpg)
+![The image is a slide titled "Autoscaling – Features" that lists different scaling policies: Manual, Dynamic, and Scheduled. It includes an icon with gears and arrows.](https://kodekloud.com/kk-media/image/upload/v1752864704/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/autoscaling-features-scaling-policies.jpg)
 
 Another critical feature is auto-healing. If an EC2 instance is flagged as unhealthy based on your health check configurations, the auto-scaling group terminates it and launches a replacement to maintain the ideal group configuration.
 
@@ -28,13 +28,13 @@ When configuring an auto-scaling group, you need to specify three key properties
 
 For example, if you set the group with a minimum of 2, desired of 2, and maximum of 10, the group will begin with 2 instances. Later, if you change the desired count to 5, the group adjusts to 5 instances. Similarly, decreasing the desired count will scale the group down accordingly.
 
-![The image illustrates a concept of autoscaling with a manual fixed limit, showing three scenarios with different minimum, desired, and maximum values for scaling. Each scenario includes icons representing scaling units and a central control icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864705/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/autoscaling-manual-limit-scenarios.jpg)
+![The image illustrates a concept of autoscaling with a manual fixed limit, showing three scenarios with different minimum, desired, and maximum values for scaling. Each scenario includes icons representing scaling units and a central control icon.](https://kodekloud.com/kk-media/image/upload/v1752864705/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/autoscaling-manual-limit-scenarios.jpg)
 
-![The image illustrates the concept of autoscaling with manual desired capacity, showing two scenarios with different minimum, desired, and maximum capacities. It includes visual representations of instances and scaling controls.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864707/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/autoscaling-manual-capacity-diagram.jpg)
+![The image illustrates the concept of autoscaling with manual desired capacity, showing two scenarios with different minimum, desired, and maximum capacities. It includes visual representations of instances and scaling controls.](https://kodekloud.com/kk-media/image/upload/v1752864707/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/autoscaling-manual-capacity-diagram.jpg)
 
 For example, consider an auto recovery scenario: if your group is maintained at 5 instances and one or more become unhealthy, the auto-scaling group will terminate the affected instances and launch new ones, ensuring that the total remains at the desired count.
 
-![The image illustrates an autoscaling group with auto-recovery, showing a desired configuration of instances and a separate auto-recovery section. It includes icons representing scaling and recovery processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864708/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/autoscaling-group-auto-recovery-diagram.jpg)
+![The image illustrates an autoscaling group with auto-recovery, showing a desired configuration of instances and a separate auto-recovery section. It includes icons representing scaling and recovery processes.](https://kodekloud.com/kk-media/image/upload/v1752864708/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/autoscaling-group-auto-recovery-diagram.jpg)
 
 > **lightbulb** While manual adjustments to the desired capacity can handle planned scaling needs, it is best to automate scaling based on real-time metrics in production environments.
 
@@ -44,13 +44,13 @@ Dynamic scaling policies enable AWS to monitor various metrics and adjust the nu
 
 One popular dynamic approach is **target tracking scaling**. For instance, you might configure a group with a minimum of 1 instance, desired capacity of 2, and a maximum of 5 instances, while targeting an average CPU utilization of 50%. If the CPU usage stays above 50% for a defined period (such as 5 minutes), a new EC2 instance is added. The group continues to add or remove instances as needed to maintain the target.
 
-![The image illustrates an autoscaling dynamic scaling policy, showing three types of scaling: Target Tracking Scaling, Step Scaling, and Simple Scaling, with metrics like CPU utilization and network bytes, integrated with Amazon CloudWatch.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864709/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/autoscaling-dynamic-scaling-policy.jpg)
+![The image illustrates an autoscaling dynamic scaling policy, showing three types of scaling: Target Tracking Scaling, Step Scaling, and Simple Scaling, with metrics like CPU utilization and network bytes, integrated with Amazon CloudWatch.](https://kodekloud.com/kk-media/image/upload/v1752864709/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/autoscaling-dynamic-scaling-policy.jpg)
 
-![The image illustrates a concept of "Target Tracking Scaling" with a series of chip icons showing varying levels of usage, alongside a scaling icon and parameters for minimum, desired, and maximum values.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864710/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/target-tracking-scaling-chips.jpg)
+![The image illustrates a concept of "Target Tracking Scaling" with a series of chip icons showing varying levels of usage, alongside a scaling icon and parameters for minimum, desired, and maximum values.](https://kodekloud.com/kk-media/image/upload/v1752864710/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/target-tracking-scaling-chips.jpg)
 
 Another strategy is **simple scaling**. With simple scaling, CloudWatch alarms initiate scaling actions based on set conditions. For example, if a scale-up alarm triggers, the policy might add a fixed number of instances (e.g., 2) each time the alarm condition is met. A corresponding alarm can reduce the instance count when conditions improve.
 
-![The image illustrates a simple scaling process involving multiple processors, a cloud monitoring icon, and an EC2 CPU utilization gauge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864711/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/scaling-process-multiple-processors-cloud-monitoring.jpg)
+![The image illustrates a simple scaling process involving multiple processors, a cloud monitoring icon, and an EC2 CPU utilization gauge.](https://kodekloud.com/kk-media/image/upload/v1752864711/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/scaling-process-multiple-processors-cloud-monitoring.jpg)
 
 A more granular option is **step scaling**. This method uses CloudWatch alarms with tiered rules. For instance, you can define:
 
@@ -60,13 +60,13 @@ A more granular option is **step scaling**. This method uses CloudWatch alarms w
 
 A similar approach applies when scaling down.
 
-![The image illustrates a step scaling process for EC2 CPU utilization, showing a series of CPU icons and a utilization gauge with green, yellow, and red zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864712/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/ec2-cpu-scaling-process-diagram.jpg)
+![The image illustrates a step scaling process for EC2 CPU utilization, showing a series of CPU icons and a utilization gauge with green, yellow, and red zones.](https://kodekloud.com/kk-media/image/upload/v1752864712/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/ec2-cpu-scaling-process-diagram.jpg)
 
 ## Scheduled Scaling
 
 Scheduled scaling is ideal for predictable workloads. For example, a website might experience peak traffic between 8 AM and 10 AM. In such cases, you can schedule the auto-scaling group to increase the desired count during those hours and lower it during off-peak times. Scheduled scaling policies can trigger actions once or on a recurring basis using cron-like schedules.
 
-![The image illustrates how autoscaling works with scheduled scaling, showing different scaling configurations for a website at various times of the day. It includes minimum, desired, and maximum values for each time period.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864714/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/autoscaling-scheduled-scaling-website.jpg)
+![The image illustrates how autoscaling works with scheduled scaling, showing different scaling configurations for a website at various times of the day. It includes minimum, desired, and maximum values for each time period.](https://kodekloud.com/kk-media/image/upload/v1752864714/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/autoscaling-scheduled-scaling-website.jpg)
 
 ## Launch Templates
 
@@ -90,7 +90,7 @@ Launch templates provide several advantages:
 
 A launch template ensures you deploy instances consistently without manual setup each time.
 
-![The image outlines features of a launch template, including instance configuration, versioning and updates, and customization. It lists specific components like AMI, EBS volume, and security group under instance configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864716/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/launch-template-features-instance-config.jpg)
+![The image outlines features of a launch template, including instance configuration, versioning and updates, and customization. It lists specific components like AMI, EBS volume, and security group under instance configuration.](https://kodekloud.com/kk-media/image/upload/v1752864716/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/launch-template-features-instance-config.jpg)
 
 ## Integration with Other AWS Services
 
@@ -100,7 +100,7 @@ AWS auto-scaling groups integrate seamlessly with a variety of AWS services:
 * **CloudWatch:** Offers monitoring metrics and alarms that drive scaling decisions.
 * **Simple Notification Service (SNS):** Sends notifications detailing auto-scaling events, such as scaling actions.
 
-![The image illustrates "Autoscaling Integration" with components including Elastic Load Balancer, Amazon CloudWatch, and SNS, centered around ASG (Auto Scaling Group).](../../../../images/kodekloud.com/kk-media/image/upload/v1752864717/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/autoscaling-integration-elastic-load-balancer.jpg)
+![The image illustrates "Autoscaling Integration" with components including Elastic Load Balancer, Amazon CloudWatch, and SNS, centered around ASG (Auto Scaling Group).](https://kodekloud.com/kk-media/image/upload/v1752864717/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Autoscaling/autoscaling-integration-elastic-load-balancer.jpg)
 
 By leveraging these integrations, AWS Auto Scaling ensures your application can gracefully handle fluctuations in traffic while optimizing resource usage and cost.
 

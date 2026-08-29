@@ -33,7 +33,7 @@ For example, a typical usage plan may allow:
 
 If these limits are exceeded, the API Gateway throttles the user until the next period or until they upgrade their plan.
 
-![The image shows a screenshot of an API Gateway usage plan titled "MyUsagePlan," detailing usage limits such as rate, burst, and quota. It includes options for actions and exporting usage data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857844/notes-assets/images/AWS-Certified-Developer-Associate-API-Keys-Usage-Plans/api-gateway-myusageplan-details.jpg)
+![The image shows a screenshot of an API Gateway usage plan titled "MyUsagePlan," detailing usage limits such as rate, burst, and quota. It includes options for actions and exporting usage data.](https://kodekloud.com/kk-media/image/upload/v1752857844/notes-assets/images/AWS-Certified-Developer-Associate-API-Keys-Usage-Plans/api-gateway-myusageplan-details.jpg)
 
 This setup not only ensures fair usage but also prevents backend services from being overwhelmed by excessive traffic.
 
@@ -43,7 +43,7 @@ When you create an API key, you associate it with a specific usage plan. This li
 
 For instance, if a usage plan allows 100 requests per minute, any client remaining within that limit will experience normal operation. However, if requests exceed 100 per minute, the API Gateway issues an HTTP 429 error—indicating too many requests—and throttles the client.
 
-![The image is a diagram illustrating an API Gateway with components like Usage Plan, API Key, and Your API, showing access control and throttling for APIs exposed for usage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857845/notes-assets/images/AWS-Certified-Developer-Associate-API-Keys-Usage-Plans/api-gateway-usage-plan-diagram.jpg)
+![The image is a diagram illustrating an API Gateway with components like Usage Plan, API Key, and Your API, showing access control and throttling for APIs exposed for usage.](https://kodekloud.com/kk-media/image/upload/v1752857845/notes-assets/images/AWS-Certified-Developer-Associate-API-Keys-Usage-Plans/api-gateway-usage-plan-diagram.jpg)
 
 > **lightbulb** Remember that coupling API keys with usage plans not only secures your API but also allows you to monitor and manage traffic effectively.
 
@@ -62,7 +62,7 @@ Content-Type: application/json
 
 This mechanism ensures that excessive requests are curbed, preventing overloading of your API endpoints.
 
-![The image illustrates an API Gateway rate limiting process, showing a flow from a client to an app, then through an API Gateway, Lambda, and DynamoDB, with a rate limit condition and a 429 error for too many requests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857846/notes-assets/images/AWS-Certified-Developer-Associate-API-Keys-Usage-Plans/api-gateway-rate-limiting-flow.jpg)
+![The image illustrates an API Gateway rate limiting process, showing a flow from a client to an app, then through an API Gateway, Lambda, and DynamoDB, with a rate limit condition and a 429 error for too many requests.](https://kodekloud.com/kk-media/image/upload/v1752857846/notes-assets/images/AWS-Certified-Developer-Associate-API-Keys-Usage-Plans/api-gateway-rate-limiting-flow.jpg)
 
 ## Example of Multiple Usage Plans
 
@@ -75,7 +75,7 @@ Organizations often implement different usage plans for varied levels of user ac
 
 For a free-tier user, an API key is generated and associated with the free-tier usage plan. If this user sends 200 requests per second, they will eventually be throttled. In contrast, a gold-tier user is allowed up to 500 requests per second. Should they exceed this limit, the same throttling mechanism applies.
 
-![The image illustrates an API Gateway usage plan with two tiers (Free and Gold) and a flowchart showing a user accessing an API Gateway, which connects to Lambda and DynamoDB services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857847/notes-assets/images/AWS-Certified-Developer-Associate-API-Keys-Usage-Plans/api-gateway-usage-plan-flowchart.jpg)
+![The image illustrates an API Gateway usage plan with two tiers (Free and Gold) and a flowchart showing a user accessing an API Gateway, which connects to Lambda and DynamoDB services.](https://kodekloud.com/kk-media/image/upload/v1752857847/notes-assets/images/AWS-Certified-Developer-Associate-API-Keys-Usage-Plans/api-gateway-usage-plan-flowchart.jpg)
 
 > **lightbulb** Different plans offer tailored access levels. Ensure that your users understand their plan limits to avoid unexpected throttling.
 

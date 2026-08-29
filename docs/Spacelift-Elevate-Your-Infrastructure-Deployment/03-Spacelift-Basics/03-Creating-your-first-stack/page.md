@@ -11,9 +11,7 @@ resource "aws_vpc" "my_vpc" {
 }
 ```
 
-<Callout icon="lightbulb">
-  At this point, the plan is in an unconfirmed state. Instead of confirming or discarding the plan immediately, another engineer might make a change to the VPC configuration.
-</Callout>
+> **lightbulb** At this point, the plan is in an unconfirmed state. Instead of confirming or discarding the plan immediately, another engineer might make a change to the VPC configuration.
 
 ## Handling Concurrent Changes
 
@@ -66,9 +64,7 @@ Plan: 1 to add, 0 to change, 0 to destroy.
   [16G2A21ZKRPPCFHCXHCKDX] workspace upload is GO
 ```
 
-<Callout icon="triangle-alert">
-  If the run remains in a queued state due to an unconfirmed prior commit, you may need to discard the queued run to allow the previously pending changes to proceed.
-</Callout>
+> **triangle-alert** If the run remains in a queued state due to an unconfirmed prior commit, you may need to discard the queued run to allow the previously pending changes to proceed.
 
 ## Finalizing the Run
 
@@ -145,9 +141,7 @@ The run then transitions to a finished state, and you can verify the successful 
 
 The image below shows an example of the Spacelift dashboard displaying the "spacelift-demo" stack details, including resources and configuration information:
 
-<Frame>
-  ![The image shows a Spacelift dashboard with details of a stack named "spacelift-demo," including resources and configuration data on the right panel.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884067/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Concurrent-Runs-amp-Queued-State/spacelift-dashboard-spacelift-demo.jpg)
-</Frame>
+![The image shows a Spacelift dashboard with details of a stack named "spacelift-demo," including resources and configuration data on the right panel.](https://kodekloud.com/kk-media/image/upload/v1752884067/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Concurrent-Runs-amp-Queued-State/spacelift-dashboard-spacelift-demo.jpg)
 
 ## Summary
 
@@ -155,9 +149,7 @@ This article demonstrated how Spacelift handles concurrent runs and queued state
 
 For more detailed information on managing Terraform configurations and Spacelift operations, check out the [Terraform Documentation](https://www.terraform.io/docs) and [Spacelift Guides](https://spacelift.io/docs).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/74dbb4df-716f-4fa2-92e9-a223a3a697ca/lesson/5a323522-4400-4236-b24f-af9bf58b0d14" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/74dbb4df-716f-4fa2-92e9-a223a3a697ca/lesson/5a323522-4400-4236-b24f-af9bf58b0d14)
 
 
 # Creating your first stack
@@ -215,9 +207,7 @@ output "instance_public_ip" {
 
 To begin, create a GitHub repository for your project. In this example, we use "spacelift-demo" as the repository name, keeping it public with default settings.
 
-<Frame>
-  ![The image shows a GitHub page for creating a new repository, with options to set the repository name, visibility, and initialize with a README file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884069/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Creating-your-first-stack/github-new-repository-creation.jpg)
-</Frame>
+![The image shows a GitHub page for creating a new repository, with options to set the repository name, visibility, and initialize with a README file.](https://kodekloud.com/kk-media/image/upload/v1752884069/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Creating-your-first-stack/github-new-repository-creation.jpg)
 
 After you name the repository, click **Create repository**. Then, run the following commands to initialize your repository locally, add your files, commit your changes, and push your repository to GitHub:
 
@@ -233,9 +223,7 @@ git push -u origin main
 
 Once the push is complete, you will see your repository populated with the corresponding files.
 
-<Frame>
-  ![The image shows a GitHub repository page with files listed, including .gitignore, main.tf, and outputs.tf. The repository is public and has no description, stars, or forks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884070/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Creating-your-first-stack/github-repository-files-listing.jpg)
-</Frame>
+![The image shows a GitHub repository page with files listed, including .gitignore, main.tf, and outputs.tf. The repository is public and has no description, stars, or forks.](https://kodekloud.com/kk-media/image/upload/v1752884070/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Creating-your-first-stack/github-repository-files-listing.jpg)
 
 A default `.gitignore` is automatically included to prevent committing unnecessary files.
 
@@ -243,9 +231,7 @@ A default `.gitignore` is automatically included to prevent committing unnecessa
 
 With your repository ready, head over to the [Spacelift website](https://spacelift.io/) and click the **Get Started** button on the homepage.
 
-<Frame>
-  ![The image is a screenshot of Spacelift's website, showcasing it as a flexible Infrastructure as Code (IaC) management platform with various integrations and features. It highlights its compatibility with tools like Terraform, CloudFormation, and Kubernetes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884072/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Creating-your-first-stack/spacelift-iac-management-screenshot.jpg)
-</Frame>
+![The image is a screenshot of Spacelift's website, showcasing it as a flexible Infrastructure as Code (IaC) management platform with various integrations and features. It highlights its compatibility with tools like Terraform, CloudFormation, and Kubernetes.](https://kodekloud.com/kk-media/image/upload/v1752884072/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Creating-your-first-stack/spacelift-iac-management-screenshot.jpg)
 
 You can sign up using GitHub, GitLab, or Google. Using GitHub simplifies the process, as Spacelift automatically detects your repositories.
 
@@ -254,27 +240,19 @@ After logging in, you'll see a dashboard featuring a **Stacks** section. In Spac
 1. Click on **Create new stack**.
 2. Name the stack "Spacelift-demo" and optionally add labels and a description for better management.
 
-<Frame>
-  ![The image shows a web interface for creating a new stack in Spacelift, with fields for name, space, labels, and description. The interface includes a sidebar with various options like stacks, blueprints, and modules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884073/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Creating-your-first-stack/spacelift-new-stack-interface.jpg)
-</Frame>
+![The image shows a web interface for creating a new stack in Spacelift, with fields for name, space, labels, and description. The interface includes a sidebar with various options like stacks, blueprints, and modules.](https://kodekloud.com/kk-media/image/upload/v1752884073/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Creating-your-first-stack/spacelift-new-stack-interface.jpg)
 
 3. Click **Continue** and search for your GitHub repository by typing "spacelift-demo." Select the main branch.
 4. If your Terraform code is inside a subdirectory, specify the project root; otherwise, leave the field with its default value.
 5. Choose **Terraform** as the backend and keep the advanced configurations unchanged.
 
-<Frame>
-  ![The image shows a web interface for creating a new stack in Spacelift, with options to select a GitHub repository and branch. Various repositories are listed in a dropdown menu.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884074/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Creating-your-first-stack/spacelift-new-stack-interface-2.jpg)
-</Frame>
+![The image shows a web interface for creating a new stack in Spacelift, with options to select a GitHub repository and branch. Various repositories are listed in a dropdown menu.](https://kodekloud.com/kk-media/image/upload/v1752884074/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Creating-your-first-stack/spacelift-new-stack-interface-2.jpg)
 
-<Frame>
-  ![The image shows a web interface for creating a new stack in Spacelift, with options to configure the backend using tools like Terraform, Pulumi, CloudFormation, or Kubernetes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884076/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Creating-your-first-stack/spacelift-new-stack-configuration.jpg)
-</Frame>
+![The image shows a web interface for creating a new stack in Spacelift, with options to configure the backend using tools like Terraform, Pulumi, CloudFormation, or Kubernetes.](https://kodekloud.com/kk-media/image/upload/v1752884076/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Creating-your-first-stack/spacelift-new-stack-configuration.jpg)
 
 6. Leave additional settings (such as auto deploy or auto retry) at their defaults and click **Save Stack**.
 
-<Frame>
-  ![The image shows a web interface for creating a new stack in Spacelift, with options to configure stack behavior and advanced settings. The interface includes toggles for features like autodeploy and run promotion, and a section for customizing workflow commands.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884078/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Creating-your-first-stack/spacelift-new-stack-interface-3.jpg)
-</Frame>
+![The image shows a web interface for creating a new stack in Spacelift, with options to configure stack behavior and advanced settings. The interface includes toggles for features like autodeploy and run promotion, and a section for customizing workflow commands.](https://kodekloud.com/kk-media/image/upload/v1752884078/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Creating-your-first-stack/spacelift-new-stack-interface-3.jpg)
 
 Your "Spacelift-demo" stack is now created and visible on your dashboard. Any changes pushed to your GitHub repository will automatically trigger a run in Spacelift.
 
@@ -290,9 +268,7 @@ git push
 
 Once pushed, Spacelift detects the update and initiates a new run. The run status on the dashboard will change from "queued" to "preparing" as Spacelift initializes a containerized runner.
 
-<Frame>
-  ![The image shows a Spacelift dashboard with a tracked run for a project named "spacelift-demo," indicating a recent Git commit labeled "second commit."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884079/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Creating-your-first-stack/spacelift-dashboard-spacelift-demo-run.jpg)
-</Frame>
+![The image shows a Spacelift dashboard with a tracked run for a project named "spacelift-demo," indicating a recent Git commit labeled "second commit."](https://kodekloud.com/kk-media/image/upload/v1752884079/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Creating-your-first-stack/spacelift-dashboard-spacelift-demo-run.jpg)
 
 During the run, you may see output logs indicating that Spacelift is initializing the Terraform backend and provider plugins. For example, the planning phase might display an error like this:
 
@@ -309,14 +285,10 @@ on main.tf line 11, in provider "aws":
 [...]
 ```
 
-<Callout icon="lightbulb">
-  This error occurs because AWS credentials have not been provided. Ensure your AWS credentials are configured correctly before re-running the plan. Despite this error, the primary objective of the demonstration is to showcase the Spacelift workflow.
-</Callout>
+> **lightbulb** This error occurs because AWS credentials have not been provided. Ensure your AWS credentials are configured correctly before re-running the plan. Despite this error, the primary objective of the demonstration is to showcase the Spacelift workflow.
 
 ## Conclusion
 
 This walkthrough has demonstrated how to create your first stack with Spacelift using a simple Terraform configuration. You now understand how to set up your repository, connect it with Spacelift, and trigger runs through Git operations. Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/74dbb4df-716f-4fa2-92e9-a223a3a697ca/lesson/ffa70455-8277-4a65-8706-3f39c7cc71e4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/74dbb4df-716f-4fa2-92e9-a223a3a697ca/lesson/ffa70455-8277-4a65-8706-3f39c7cc71e4)

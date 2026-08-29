@@ -14,7 +14,7 @@ With a user data script, you can easily automate:
 * Service configurations.
 * Execution of additional custom scripts.
 
-![The image is a flowchart titled "User Data" with four steps: installing software, updating the OS, downloading files from the internet, and configuring services. Each step is represented by a colored circle with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858896/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Userdata/user-data-flowchart-steps.jpg)
+![The image is a flowchart titled "User Data" with four steps: installing software, updating the OS, downloading files from the internet, and configuring services. Each step is represented by a colored circle with an icon.](https://kodekloud.com/kk-media/image/upload/v1752858896/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Userdata/user-data-flowchart-steps.jpg)
 
 ## Key Considerations for EC2 User Data Scripts
 
@@ -27,7 +27,7 @@ Keep the following points in mind when working with EC2 user data scripts:
 * **Automatic Decoding:** AWS decodes the script during the instance's startup process.
 * **Opaque Handling:** The user data is treated as opaque data, meaning the instance interprets it exactly as provided.
 
-![The image is a slide titled "User Data" with four points: Base64 encoding required, size limitation, automatic decoding, and opaque data treatment. It has a blue gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858897/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Userdata/user-data-base64-encoding-slide.jpg)
+![The image is a slide titled "User Data" with four points: Base64 encoding required, size limitation, automatic decoding, and opaque data treatment. It has a blue gradient background.](https://kodekloud.com/kk-media/image/upload/v1752858897/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Userdata/user-data-base64-encoding-slide.jpg)
 
 > **triangle-alert** A lengthy user data script can extend your system's boot time. Ensure your script is optimized to avoid unnecessary delays during startup.
 

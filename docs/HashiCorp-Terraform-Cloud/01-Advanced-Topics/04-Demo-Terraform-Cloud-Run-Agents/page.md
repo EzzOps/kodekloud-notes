@@ -25,9 +25,7 @@ In this guide, we’ll walk through setting up Terraform Cloud’s self-hosted a
 * Permissions to manage **Settings → Agents**
 * Outbound TCP/443 connectivity to `app.terraform.io`
 
-<Callout icon="lightbulb">
-  Agents use a pull-based model and require **only outbound TCP/443** access to Terraform Cloud.
-</Callout>
+> **lightbulb** Agents use a pull-based model and require **only outbound TCP/443** access to Terraform Cloud.
 
 ## Creating an Agent Pool and Token
 
@@ -43,9 +41,7 @@ An **Agent Pool** is a logical group of self-hosted agents. You scope pools to e
 2. Click **New Agent Pool**, name it (e.g., **development**), and save.
 3. In the pool’s page, click **Create token**, scope it to your data center or environment (e.g., `EastDC`), and copy the value.
 
-<Callout icon="triangle-alert">
-  Keep your agent tokens confidential. Rotate or revoke tokens regularly to maintain security.
-</Callout>
+> **triangle-alert** Keep your agent tokens confidential. Rotate or revoke tokens regularly to maintain security.
 
 ## Installing and Running an Agent on Linux
 

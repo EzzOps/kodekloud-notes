@@ -173,9 +173,7 @@ After executing the script, verify the deployment by visiting [http://localhost]
 
 Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/0e75480e-85f7-470c-9aa4-fac3fef0ede7/lesson/d099f0fa-e998-45c4-9ba4-431cf012e932" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/0e75480e-85f7-470c-9aa4-fac3fef0ede7/lesson/d099f0fa-e998-45c4-9ba4-431cf012e932)
 
 
 # Exit Codes
@@ -218,9 +216,7 @@ $ echo $?
 127
 ```
 
-<Callout icon="lightbulb">
-  It is considered best practice to use exit codes in your scripts to communicate the overall status to the caller or user.
-</Callout>
+> **lightbulb** It is considered best practice to use exit codes in your scripts to communicate the overall status to the caller or user.
 
 Consider a scenario where you are launching a rocket mission. For a successful launch, the script should return an exit status of 0, and for any failure, it should explicitly return a non-zero value (commonly 1).
 
@@ -295,12 +291,8 @@ $ echo $?
 1
 ```
 
-<Callout icon="lightbulb">
-  Always ensure that your scripts return an appropriate exit code. Explicitly returning a non-zero code for failure conditions facilitates better integration with other systems and scripts.
-</Callout>
+> **lightbulb** Always ensure that your scripts return an appropriate exit code. Explicitly returning a non-zero code for failure conditions facilitates better integration with other systems and scripts.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2e5d4133-6bc2-421e-bc8f-0389e7f96490/lesson/6270f719-a1bc-4ab8-91d8-71786a2c60e8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2e5d4133-6bc2-421e-bc8f-0389e7f96490/lesson/6270f719-a1bc-4ab8-91d8-71786a2c60e8)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2e5d4133-6bc2-421e-bc8f-0389e7f96490/lesson/9cf43b24-3924-4d85-84db-519fa5eca391" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2e5d4133-6bc2-421e-bc8f-0389e7f96490/lesson/9cf43b24-3924-4d85-84db-519fa5eca391)

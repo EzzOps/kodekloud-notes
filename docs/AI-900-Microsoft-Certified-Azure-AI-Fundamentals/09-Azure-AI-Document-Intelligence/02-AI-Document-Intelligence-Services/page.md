@@ -12,7 +12,7 @@ The document analysis service transforms raw data into structured information, s
 
 The service intelligently detects key elements within documents—such as tables, headers, and footers—and understands the relationships between these regions. This is especially beneficial for complex documents like contracts or detailed reports, where preserving layout and structure is crucial.
 
-![The image showcases a presentation slide about AI Document Intelligence Services, highlighting document analysis features such as structured data representations and identifying regions of interest. It includes a screenshot of a document analysis interface and a section with bullet points explaining the features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856843/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Document-Intelligence-Services/ai-document-intelligence-services-slide.jpg)
+![The image showcases a presentation slide about AI Document Intelligence Services, highlighting document analysis features such as structured data representations and identifying regions of interest. It includes a screenshot of a document analysis interface and a section with bullet points explaining the features.](https://kodekloud.com/kk-media/image/upload/v1752856843/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Document-Intelligence-Services/ai-document-intelligence-services-slide.jpg)
 
 Azure Document Intelligence offers configurable analysis options with both free and premium features, allowing you to select the appropriate level of processing based on the complexity of your documents.
 
@@ -28,7 +28,7 @@ The pre-built invoice model automatically extracts essential details such as inv
 
 The receipt model specializes in extracting key details like merchant name, total amount spent, and items purchased. This functionality greatly aids expense management by digitizing and organizing large numbers of receipts swiftly.
 
-![The image showcases AI Document Intelligence Services, highlighting pre-built models for extracting information from invoices and receipts. It includes an example of a receipt analysis with extracted details like merchant name, total amount, and address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856844/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Document-Intelligence-Services/ai-document-intelligence-receipt-analysis.jpg)
+![The image showcases AI Document Intelligence Services, highlighting pre-built models for extracting information from invoices and receipts. It includes an example of a receipt analysis with extracted details like merchant name, total amount, and address.](https://kodekloud.com/kk-media/image/upload/v1752856844/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Document-Intelligence-Services/ai-document-intelligence-receipt-analysis.jpg)
 
 ### ID Documents
 
@@ -42,7 +42,7 @@ Custom models provide the flexibility to tailor document analysis to your organi
 
 This capability is especially useful for specialized document types not addressed by standard models. For example, you might customize the model to extract specific fields—such as total income or taxable amounts from tax forms—to enhance data accuracy and relevance.
 
-![The image is a presentation slide about AI Document Intelligence Services, focusing on custom models for extracting information from forms, with an example of a W-9 form. It includes a section for creating projects and a graphic of a person analyzing data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856846/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Document-Intelligence-Services/ai-document-intelligence-custom-models.jpg)
+![The image is a presentation slide about AI Document Intelligence Services, focusing on custom models for extracting information from forms, with an example of a W-9 form. It includes a section for creating projects and a graphic of a person analyzing data.](https://kodekloud.com/kk-media/image/upload/v1752856846/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Document-Intelligence-Services/ai-document-intelligence-custom-models.jpg)
 
 ## Conclusion
 

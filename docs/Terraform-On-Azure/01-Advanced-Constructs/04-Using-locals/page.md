@@ -31,9 +31,7 @@ When should you use locals? Common scenarios include:
 
 Any value that is calculated and reused more than once should be a local.
 
-<Callout icon="lightbulb">
-  Use locals to centralize computed logic. If you find yourself duplicating the same interpolation, concatenation, or function call across resources, move that expression into a local.
-</Callout>
+> **lightbulb** Use locals to centralize computed logic. If you find yourself duplicating the same interpolation, concatenation, or function call across resources, move that expression into a local.
 
 Example
 
@@ -83,6 +81,4 @@ Takeaway: locals clarify intent and reduce duplication. As a rule of thumb, if a
 
 This pattern is particularly useful when working with dynamic blocks and computed collections—compute the list or map in a local, then iterate over it with `dynamic` or `for_each`.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4fafc188-5a1a-4dbf-8fa0-50e3f00a270d/lesson/2436fd5e-d11f-4e48-8b19-823900f51ec2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4fafc188-5a1a-4dbf-8fa0-50e3f00a270d/lesson/2436fd5e-d11f-4e48-8b19-823900f51ec2)

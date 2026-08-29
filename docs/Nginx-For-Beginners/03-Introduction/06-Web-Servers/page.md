@@ -22,9 +22,7 @@ A web server is a machine running software that accepts requests from clients (u
   <img alt="A simple flowchart titled &#x22;Query Process&#x22; showing the steps a browser takes to load a website: typing the site name, DNS lookup for the IP, connecting to the server, fetching homepage/resources, sending content back, and displaying the website. The steps are shown as blue rounded boxes connected by arrows." />
 </Frame>
 
-<Callout icon="lightbulb">
-  When you try `https://kodekloud.com`, the browser first resolves `kodekloud.com` via DNS, then establishes a TCP connection, performs a TLS handshake (for HTTPS), and finally issues the HTTP request to fetch the site content.
-</Callout>
+> **lightbulb** When you try `https://kodekloud.com`, the browser first resolves `kodekloud.com` via DNS, then establishes a TCP connection, performs a TLS handshake (for HTTPS), and finally issues the HTTP request to fetch the site content.
 
 ## Important networking details
 
@@ -49,9 +47,7 @@ A web server is a machine running software that accepts requests from clients (u
 * Traditional model (process/thread per connection): Historically used by servers like Apache HTTP Server (with prefork MPM). Each connection may consume a process or thread, which can be heavy under high concurrency.
 * Event-driven/asynchronous model: Modern web servers like NGINX use an event loop and asynchronous I/O to handle many concurrent connections with much lower memory and CPU overhead.
 
-<Callout icon="warning">
-  Process-per-connection servers can exhaust CPU and memory under high load. For high-concurrency scenarios, prefer event-driven servers (e.g., NGINX) or scalable architectures with load balancers and CDNs.
-</Callout>
+> **warning** Process-per-connection servers can exhaust CPU and memory under high load. For high-concurrency scenarios, prefer event-driven servers (e.g., NGINX) or scalable architectures with load balancers and CDNs.
 
 ## Popular web servers and related projects
 
@@ -85,6 +81,4 @@ We will next explore NGINX in detail — its architecture, configuration, and pr
 * [Reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy)
 * [Load balancing](https://en.wikipedia.org/wiki/Load_balancing_\(computing\))
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/9e6f72d7-933d-42dd-a948-ae48d66aecb6/lesson/fbfa0275-af6c-46f3-8b06-3a0ab86a1f02" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/9e6f72d7-933d-42dd-a948-ae48d66aecb6/lesson/fbfa0275-af6c-46f3-8b06-3a0ab86a1f02)

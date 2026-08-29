@@ -66,9 +66,7 @@ resource "azurerm_storage_account" "storage" {
 }
 ```
 
-<Callout icon="lightbulb">
-  Keep in mind provider and version constraints are usually declared in the `terraform` block (commonly placed in `terraform.tf` or `versions.tf`) so teams can pin required provider plugins and Terraform CLI versions for consistency.
-</Callout>
+> **lightbulb** Keep in mind provider and version constraints are usually declared in the `terraform` block (commonly placed in `terraform.tf` or `versions.tf`) so teams can pin required provider plugins and Terraform CLI versions for consistency.
 
 Example `terraform` block (place in `terraform.tf` or `versions.tf`):
 
@@ -84,9 +82,7 @@ terraform {
 }
 ```
 
-<Callout icon="warning">
-  Do not hardcode secrets, credentials, or sensitive data directly in `.tf` files. Use environment variables, the provider's auth mechanisms, or a secrets manager and mark sensitive outputs with `sensitive = true`.
-</Callout>
+> **warning** Do not hardcode secrets, credentials, or sensitive data directly in `.tf` files. Use environment variables, the provider's auth mechanisms, or a secrets manager and mark sensitive outputs with `sensitive = true`.
 
 Next steps and best practices
 
@@ -103,8 +99,6 @@ Links and references
 
 Now that you understand the recommended file layout — `providers.tf`, `main.tf`, `variables.tf`, `outputs.tf`, `data.tf`, and `terraform.tf` — you can begin organizing your code for better collaboration and long-term maintainability.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/2dc00bf7-fa00-41df-a4e0-bce9fb23c19d/lesson/e226f136-47f9-4307-8bf9-0971fbc6f236" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/2dc00bf7-fa00-41df-a4e0-bce9fb23c19d/lesson/e226f136-47f9-4307-8bf9-0971fbc6f236)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/2dc00bf7-fa00-41df-a4e0-bce9fb23c19d/lesson/bf7e8242-be6f-4b24-9430-ebf52a7cf142" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/2dc00bf7-fa00-41df-a4e0-bce9fb23c19d/lesson/bf7e8242-be6f-4b24-9430-ebf52a7cf142)

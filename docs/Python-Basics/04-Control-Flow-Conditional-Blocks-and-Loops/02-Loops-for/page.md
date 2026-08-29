@@ -71,9 +71,7 @@ i is: 1
 
 When `i` becomes 2, the condition is met and the break statement terminates the loop immediately.
 
-<Callout icon="lightbulb">
-  Remember that using break will exit the loop entirely, so any code below the break statement will not be executed for the current iteration.
-</Callout>
+> **lightbulb** Remember that using break will exit the loop entirely, so any code below the break statement will not be executed for the current iteration.
 
 ## Skipping Iterations with continue
 
@@ -99,9 +97,7 @@ i is: 4
 
 When the loop encounters `i` equal to 2, the continue statement causes Python to skip the print statement for that iteration.
 
-<Callout icon="lightbulb">
-  Use continue when you simply want to omit certain iterations without breaking the entire loop. This helps to keep the loop structure intact while filtering out unwanted cases.
-</Callout>
+> **lightbulb** Use continue when you simply want to omit certain iterations without breaking the entire loop. This helps to keep the loop structure intact while filtering out unwanted cases.
 
 ## Recap
 
@@ -118,6 +114,4 @@ For loops are essential for iterating over sequences and automating repetitive t
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/87023015-df32-4bcb-a972-659f3e76b1d1/lesson/090ca7ec-b094-4840-8dce-424e236fc372" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/87023015-df32-4bcb-a972-659f3e76b1d1/lesson/090ca7ec-b094-4840-8dce-424e236fc372)

@@ -8,9 +8,7 @@ In this lesson we cover how to design an enterprise-grade observability architec
 
 Observability platforms have different priorities and trade-offs compared to other platform types (e.g., data processing or CI/CD). Keep those differences in mind when defining controls, ownership, and operational processes.
 
-<Callout icon="lightbulb">
-  This article focuses on architecture for observability solutions. If you are designing a different type of platform (e.g., pure data processing or CI/CD), some priorities and controls may differ.
-</Callout>
+> **lightbulb** This article focuses on architecture for observability solutions. If you are designing a different type of platform (e.g., pure data processing or CI/CD), some priorities and controls may differ.
 
 Core areas to prioritize for enterprise observability
 
@@ -87,6 +85,4 @@ References and further reading
 
 That's it for this lesson. I hope you found it useful and that it helps you plan a secure, compliant, and supportable observability architecture for your organization.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/1999fbe6-9b79-4b34-98f0-0d0961cc4a0d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/1999fbe6-9b79-4b34-98f0-0d0961cc4a0d)

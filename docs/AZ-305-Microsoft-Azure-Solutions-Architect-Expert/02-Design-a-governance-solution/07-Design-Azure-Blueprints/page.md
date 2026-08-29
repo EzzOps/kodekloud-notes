@@ -16,7 +16,7 @@ The manager, lacking the technical skills to deploy these resources, hires a clo
 
 The cloud Solutions Architect then composes an Azure Blueprint—a document that clearly defines all of the manager's requirements, much like the building blueprint prepared by the architect. Once the blueprint is approved by the manager, it is assigned to one or more subscriptions. Azure uses this blueprint to deploy all the required resources.
 
-![The image is a diagram illustrating the design for Azure Blueprints, showing requirements and the flow from a user to Azure Blueprint, leading to the deployment of resources with keys indicating access or roles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866926/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-Azure-Blueprints/azure-blueprints-design-diagram.jpg)
+![The image is a diagram illustrating the design for Azure Blueprints, showing requirements and the flow from a user to Azure Blueprint, leading to the deployment of resources with keys indicating access or roles.](https://kodekloud.com/kk-media/image/upload/v1752866926/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-Azure-Blueprints/azure-blueprints-design-diagram.jpg)
 
 After the resources are deployed, the blueprint serves as a source of truth, enabling managers and architects to verify that every resource has been correctly deployed. This traceability offers an advantage over ARM templates, which are static documents stored locally or in source control without inherent tracking capabilities.
 
@@ -27,7 +27,7 @@ After the resources are deployed, the blueprint serves as a source of truth, ena
   3. Assign the published blueprint to the desired subscription.
   4. Scale the blueprint across multiple subscriptions or redeploy the entire environment from scratch using the stored blueprint in the Azure portal.
 
-![The image is a diagram illustrating the design process for Azure Blueprints, showing components like resource groups, ARM templates, RBAC assignments, and policy assignments, which are composed, published, and assigned to scale resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866927/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-Azure-Blueprints/azure-blueprints-design-process-diagram.jpg)
+![The image is a diagram illustrating the design process for Azure Blueprints, showing components like resource groups, ARM templates, RBAC assignments, and policy assignments, which are composed, published, and assigned to scale resources.](https://kodekloud.com/kk-media/image/upload/v1752866927/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-Azure-Blueprints/azure-blueprints-design-process-diagram.jpg)
 
 This methodology ensures a consistent environment is created repeatedly while effectively managing the governance of resources deployed in Azure.
 
@@ -52,7 +52,7 @@ As your deployment grows, you can scale this to an enterprise-level landing zone
 | Hub Connectivity Subscription | Hosts shared network security services               | Azure Firewall, ExpressRoute, VPN                 |
 | Landing Zone Subscription     | Hosts the virtual network and its associated peering | Virtual Networks, Subnets, Peering configurations |
 
-![The image is a detailed diagram illustrating an enterprise cloud architecture, including components like identity and access management, management groups, subscriptions, and DevOps integration. It shows various Azure services and their interactions within a structured organizational framework.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866929/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-Azure-Blueprints/enterprise-cloud-architecture-diagram.jpg)
+![The image is a detailed diagram illustrating an enterprise cloud architecture, including components like identity and access management, management groups, subscriptions, and DevOps integration. It shows various Azure services and their interactions within a structured organizational framework.](https://kodekloud.com/kk-media/image/upload/v1752866929/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-Azure-Blueprints/enterprise-cloud-architecture-diagram.jpg)
 
 Within the sandbox subscription, additional applications can be deployed that are not yet production-ready. Best practices are applied to build the enterprise-scale landing zone, ensuring governance with comprehensive policies and assignments across the environment.
 

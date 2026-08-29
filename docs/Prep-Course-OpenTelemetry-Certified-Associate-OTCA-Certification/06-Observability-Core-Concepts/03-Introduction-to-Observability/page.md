@@ -118,9 +118,7 @@ These three are often called the "three pillars" of observability. That mental m
 * Profiling: runtime samples of CPU, memory, and heap allocations to find inefficient code paths.
 * Events and custom context: business events or debug snapshots that add diagnostic clarity.
 
-<Callout icon="lightbulb">
-  The "three pillars" is a useful starting point, but real-world observability improves when metrics, logs, and traces are correlated with additional telemetry (baggage, profiling, events). Treat metrics, logs, and traces as core signals that are amplified by richer context.
-</Callout>
+> **lightbulb** The "three pillars" is a useful starting point, but real-world observability improves when metrics, logs, and traces are correlated with additional telemetry (baggage, profiling, events). Treat metrics, logs, and traces as core signals that are amplified by richer context.
 
 ## Correlation in practice
 
@@ -161,6 +159,4 @@ Correlating that output with metrics (CPU, restarts) and traces (request latency
 
 Thank you.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/79b34fea-6f94-4854-a31e-9ac0fbc10eca/lesson/2bb73158-673e-4388-9218-3f93855685a9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/79b34fea-6f94-4854-a31e-9ac0fbc10eca/lesson/2bb73158-673e-4388-9218-3f93855685a9)

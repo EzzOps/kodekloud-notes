@@ -20,9 +20,7 @@ Welcome to the **Kustomize** course! I’m **Sanjeev Thiyagarajan**, and I’ll 
 | Final Project                 | Apply all features in a capstone deployment                                                  |
 | Community Support             | Join our [Slack channel](https://example.com/slack) for Q\&A and peer assistance             |
 
-<Callout icon="lightbulb">
-  Kustomize is now built into `kubectl` (v1.14+). You can run `kubectl kustomize` instead of installing a separate binary.
-</Callout>
+> **lightbulb** Kustomize is now built into `kubectl` (v1.14+). You can run `kubectl kustomize` instead of installing a separate binary.
 
 ***
 
@@ -45,6 +43,4 @@ Ready to customize your first Kubernetes manifest? Let’s jump in!
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Kubectl Plugin: kustomize](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/a9725b74-2c5d-4eac-9063-caddf9d52e5a/lesson/7d0459bc-850c-4a98-ba40-2b89102ef54e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/a9725b74-2c5d-4eac-9063-caddf9d52e5a/lesson/7d0459bc-850c-4a98-ba40-2b89102ef54e)

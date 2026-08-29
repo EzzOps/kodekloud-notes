@@ -16,9 +16,7 @@ Below are the five broad roles you’ll commonly encounter in an OSS project:
 | Contributor             | Submit code, docs, tests, advocacy                       | Open pull requests, write blog posts           |
 | User / Community Member | Provide feedback, report bugs, suggest features          | File issues, participate in forums or chats    |
 
-<Callout icon="lightbulb">
-  Roles often overlap. For example, an Author may also serve as the first Maintainer, and active Users frequently become Contributors.
-</Callout>
+> **lightbulb** Roles often overlap. For example, an Author may also serve as the first Maintainer, and active Users frequently become Contributors.
 
 ***
 
@@ -30,9 +28,7 @@ The **Author** is the individual or organization that kickstarts the OSS project
 * Selecting and applying an open source license (e.g., MIT, Apache 2.0)
 * Publicizing the project to attract early adopters and contributors
 
-<Callout icon="triangle-alert">
-  Choosing an OSI-approved license early prevents future legal complications.
-</Callout>
+> **triangle-alert** Choosing an OSI-approved license early prevents future legal complications.
 
 ***
 
@@ -95,6 +91,4 @@ Every open source project relies on these five roles to flourish. Whether you’
 * [GitHub Documentation](https://docs.github.com/)
 * [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/8bfeda41-eb5e-41f5-842f-db331ebf37f7/lesson/fc496d43-3f66-4ee7-9e7b-7aae6d3f9537" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/8bfeda41-eb5e-41f5-842f-db331ebf37f7/lesson/fc496d43-3f66-4ee7-9e7b-7aae6d3f9537)

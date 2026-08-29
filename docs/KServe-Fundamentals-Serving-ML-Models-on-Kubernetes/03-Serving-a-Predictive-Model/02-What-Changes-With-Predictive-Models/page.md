@@ -22,9 +22,7 @@ kubectl port-forward svc/sentiment-classifier-predictor -n kserve-inference 8080
 # Forwarding from 127.0.0.1:8080 -> 8080
 ```
 
-<Callout icon="lightbulb">
-  Classifiers use an Open Inference Protocol (OIP) style endpoint rather than the OpenAI-compatible chat/completion endpoints used by conversational models (e.g., Qwen). Conversational models accept a `messages` array on endpoints like `/openai/v1/chat/completions`. Classifiers receive text inputs as OIP tensors via `/v2/models/<model-name>/infer`.
-</Callout>
+> **lightbulb** Classifiers use an Open Inference Protocol (OIP) style endpoint rather than the OpenAI-compatible chat/completion endpoints used by conversational models (e.g., Qwen). Conversational models accept a `messages` array on endpoints like `/openai/v1/chat/completions`. Classifiers receive text inputs as OIP tensors via `/v2/models/<model-name>/infer`.
 
 Endpoint (local port-forward):
 
@@ -100,9 +98,7 @@ Quick lab steps (try this yourself)
 | 4. Send inference request | Use the curl example above to POST to `/v2/models/sentiment-classifier/infer`           |
 | 5. Inspect result         | Check `outputs[0].data[0]` — `0` = negative, `1` = positive                             |
 
-<Callout icon="warning">
-  If you run port-forward in the background, remember to kill the job when finished (e.g., `kill %1` or use `pkill -f "kubectl port-forward ..."`). Leaving processes running can keep ports occupied or leak credentials in some environments.
-</Callout>
+> **warning** If you run port-forward in the background, remember to kill the job when finished (e.g., `kill %1` or use `pkill -f "kubectl port-forward ..."`). Leaving processes running can keep ports occupied or leak credentials in some environments.
 
 Observability tips
 
@@ -118,11 +114,9 @@ References
 
 Good luck experimenting — vary the inputs and observe how the probability distribution reflects confidence and ambiguity.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/d3f12b82-312d-4aee-a0bc-f5b313a63fd2/lesson/fc3b7835-781f-4ae9-b113-b0087ecbc7c8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/d3f12b82-312d-4aee-a0bc-f5b313a63fd2/lesson/fc3b7835-781f-4ae9-b113-b0087ecbc7c8)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/d3f12b82-312d-4aee-a0bc-f5b313a63fd2/lesson/365cd8a1-bd9f-48e4-9670-44e26cbb5af5" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/d3f12b82-312d-4aee-a0bc-f5b313a63fd2/lesson/365cd8a1-bd9f-48e4-9670-44e26cbb5af5)
 
 
 # What Changes With Predictive Models
@@ -267,9 +261,7 @@ Common payload examples (these are typical shapes — exact format depends on yo
 
 Note: the exact JSON keys (`instances` vs `inputs` vs a Hugging Face-specific shape) can differ by predictor and the chosen protocol (V1/V2). KServe docs and your runtime configuration specify the exact expected format.
 
-<Callout icon="lightbulb">
-  Key takeaway: predictive models select from a predefined set of labels (e.g., positive/negative). KServe uses the same InferenceService manifest and runtime for both generative and predictive models; only the inference payload shape changes.
-</Callout>
+> **lightbulb** Key takeaway: predictive models select from a predefined set of labels (e.g., positive/negative). KServe uses the same InferenceService manifest and runtime for both generative and predictive models; only the inference payload shape changes.
 
 ## Quick comparison: generative vs predictive
 
@@ -296,6 +288,4 @@ References:
 * Hugging Face models: [https://huggingface.co](https://huggingface.co)
 * Stanford Sentiment Treebank (SST-2): [https://nlp.stanford.edu/sentiment/](https://nlp.stanford.edu/sentiment/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/d3f12b82-312d-4aee-a0bc-f5b313a63fd2/lesson/fa8f5ef0-41de-4835-854a-0971e79c2dae" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/d3f12b82-312d-4aee-a0bc-f5b313a63fd2/lesson/fa8f5ef0-41de-4835-854a-0971e79c2dae)

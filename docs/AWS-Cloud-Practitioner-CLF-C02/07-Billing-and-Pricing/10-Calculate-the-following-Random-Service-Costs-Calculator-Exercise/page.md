@@ -25,7 +25,7 @@ In this lesson, you will complete a comprehensive exercise designed to evaluate 
    * Set up GuardDuty, AWS Config, and CloudTrail.
    * Evaluate the pricing of these core security and notification services to understand their cost implications.
 
-![The image outlines tasks to calculate costs for AWS services, including S3, EKS, ECS, GuardDuty, Config, and CloudTrail, across different regions and configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861445/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Random-Service-Costs-Calculator-Exercise/frame_60.jpg)
+![The image outlines tasks to calculate costs for AWS services, including S3, EKS, ECS, GuardDuty, Config, and CloudTrail, across different regions and configurations.](https://kodekloud.com/kk-media/image/upload/v1752861445/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Calculate-the-following-Random-Service-Costs-Calculator-Exercise/frame_60.jpg)
 
 ## Next Steps
 

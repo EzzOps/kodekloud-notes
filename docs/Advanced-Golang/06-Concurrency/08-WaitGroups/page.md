@@ -6,7 +6,7 @@ This article explores WaitGroups in Go for managing concurrency and synchronizin
 
 In this lesson, we explore WaitGroups in Go, a key tool for managing concurrency. In Go programs, the main goroutine can sometimes terminate before spawned goroutines have begun or finished execution. WaitGroups provide an elegant solution to synchronize multiple goroutines without resorting to arbitrary timeouts.
 
-![The image is a slide discussing "Wait groups" in programming, explaining their use in managing the execution of multiple go-routines and preventing the main go-routine from terminating prematurely.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868718/notes-assets/images/Advanced-Golang-WaitGroups/wait-groups-go-routines-slide.jpg)
+![The image is a slide discussing "Wait groups" in programming, explaining their use in managing the execution of multiple go-routines and preventing the main go-routine from terminating prematurely.](https://kodekloud.com/kk-media/image/upload/v1752868718/notes-assets/images/Advanced-Golang-WaitGroups/wait-groups-go-routines-slide.jpg)
 
 ## Declaring and Using a WaitGroup
 

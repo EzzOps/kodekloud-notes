@@ -87,9 +87,7 @@ $ terraform apply -refresh=false
 Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
 ```
 
-<Callout icon="triangle-alert">
-  Disabling the state refresh is generally not recommended as it may introduce inconsistencies if resources have been manually modified. Use this option with caution, especially in large environments.
-</Callout>
+> **triangle-alert** Disabling the state refresh is generally not recommended as it may introduce inconsistencies if resources have been manually modified. Use this option with caution, especially in large environments.
 
 ## Tracking Configuration Changes with the State File
 
@@ -198,9 +196,7 @@ During provisioning, Terraform creates the DB instance first, followed by the we
 
 ## Security and Remote State Management
 
-<Callout icon="lightbulb">
-  The state file contains sensitive information, including configuration variables and resource attributes like SSH keys or initial passwords. Store your state file securely in remote backends (e.g., Amazon S3 or Terraform Cloud) and never commit it to version control systems.
-</Callout>
+> **lightbulb** The state file contains sensitive information, including configuration variables and resource attributes like SSH keys or initial passwords. Store your state file securely in remote backends (e.g., Amazon S3 or Terraform Cloud) and never commit it to version control systems.
 
 For illustration, here is a snippet showing sensitive data in a state file:
 
@@ -302,9 +298,7 @@ Remember, proper management of your Terraform state is key to maintaining the in
 
 By following these best practices, you can ensure that your Terraform operations are secure, reliable, and accurately reflect your intended infrastructure changes.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/4b6ab52b-4fbb-4a33-9dbc-0fb1c6900c7e/lesson/6a7d2a40-816d-4326-88fe-1431bd17082a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/4b6ab52b-4fbb-4a33-9dbc-0fb1c6900c7e/lesson/6a7d2a40-816d-4326-88fe-1431bd17082a)
 
 
 # Create Update and Destroy Infrastructure
@@ -333,9 +327,7 @@ After making your changes, run the Terraform plan to preview the execution chang
 $ terraform plan
 ```
 
-<Callout icon="lightbulb">
-  Running `terraform plan` is optional because executing `terraform apply` displays the same execution plan.
-</Callout>
+> **lightbulb** Running `terraform plan` is optional because executing `terraform apply` displays the same execution plan.
 
 In the execution plan, Terraform uses the “-/+” symbol preceding the resource name to indicate that the resource will be destroyed and then recreated. A corresponding line in the output specifies that the change in file permissions is forcing this replacement. Since Terraform adheres to immutable infrastructure principles, any update that alters critical properties results in the resource being destroyed and re-created with the new settings.
 
@@ -437,6 +429,4 @@ A common best practice is to consolidate resource blocks into a single configura
 
 That concludes our guide on updating and destroying Terraform-managed infrastructure resources. To reinforce your understanding, consider taking the multiple-choice quiz and testing your knowledge of these Terraform operations.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/e27c7cfe-a9f1-4e56-b55b-f908bd92d21c/lesson/98cc4b71-d037-4127-8cef-9e1d463a0017" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/e27c7cfe-a9f1-4e56-b55b-f908bd92d21c/lesson/98cc4b71-d037-4127-8cef-9e1d463a0017)

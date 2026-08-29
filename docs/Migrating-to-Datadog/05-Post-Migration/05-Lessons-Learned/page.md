@@ -35,9 +35,7 @@ Actionable next steps
 3. Establish a maintenance schedule for container images, SDKs, and monitoring libraries.
 4. Run periodic retrospectives to surface platform friction and convert findings into small, testable improvements.
 
-<Callout icon="lightbulb">
-  Keep the feedback loop short: collect usage data and team feedback, prioritize improvements, and roll out incremental changes so the platform stays relevant and reliable.
-</Callout>
+> **lightbulb** Keep the feedback loop short: collect usage data and team feedback, prioritize improvements, and roll out incremental changes so the platform stays relevant and reliable.
 
 Further reading and references
 
@@ -47,6 +45,4 @@ Further reading and references
 
 That’s it. I hope you found it useful.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9add8e22-a057-4808-880b-be8b91e0d5f2/lesson/e37b97ee-bb4f-4076-9ddf-e02ff47252fc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9add8e22-a057-4808-880b-be8b91e0d5f2/lesson/e37b97ee-bb4f-4076-9ddf-e02ff47252fc)

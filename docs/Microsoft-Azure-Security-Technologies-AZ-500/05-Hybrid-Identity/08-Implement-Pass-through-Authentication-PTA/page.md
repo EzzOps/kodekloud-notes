@@ -8,9 +8,7 @@ In this lesson, we explore the pass-through authentication (PTA) method used in 
 
 When a user accesses an application such as Outlook Web, the sign-in process begins at Azure Active Directory (Azure AD), which functions as the identity provider. Azure AD displays a webpage prompting the user to enter their username and password. Since the actual password is not stored in Azure AD because of PTA, it cannot independently verify the password. Instead, Azure AD forwards the authentication request to the on-premises AD for validation.
 
-<Callout icon="lightbulb">
-  The following outlines the PTA authentication process on the on-premises side:
-</Callout>
+> **lightbulb** The following outlines the PTA authentication process on the on-premises side:
 
 ## PTA Authentication Process
 
@@ -21,17 +19,13 @@ When a user accesses an application such as Outlook Web, the sign-in process beg
    * If valid, it notifies Azure AD of successful authentication, granting the user access to the application.
    * If invalid, it informs Azure AD, which then denies access.
 
-<Frame>
-  ![The image illustrates the process of implementing Pass-Through Authentication (PTA) with Azure Active Directory, showing how user credentials are validated against on-premises Active Directory in real-time during sign-in. It includes components like Outlook Web, Azure AD, and an on-premises authentication agent.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881929/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Pass-through-Authentication-PTA/pass-through-authentication-azure-ad.jpg)
-</Frame>
+![The image illustrates the process of implementing Pass-Through Authentication (PTA) with Azure Active Directory, showing how user credentials are validated against on-premises Active Directory in real-time during sign-in. It includes components like Outlook Web, Azure AD, and an on-premises authentication agent.](https://kodekloud.com/kk-media/image/upload/v1752881929/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Pass-through-Authentication-PTA/pass-through-authentication-azure-ad.jpg)
 
 ## Summary
 
 In summary, pass-through authentication ensures that user authentication is performed directly against an on-premises Active Directory with the help of a continuously active PTA agent. This method offers a secure and efficient way to validate user credentials in real time, contrasting with the cloud-based approach of Password Hash Synchronization.
 
-<Callout icon="triangle-alert">
-  Another authentication method, Active Directory Federation Services (AD FS), exists but introduces a higher level of complexity compared to PTA. Be sure to evaluate your infrastructure requirements before choosing an authentication method.
-</Callout>
+> **triangle-alert** Another authentication method, Active Directory Federation Services (AD FS), exists but introduces a higher level of complexity compared to PTA. Be sure to evaluate your infrastructure requirements before choosing an authentication method.
 
 ## Further Reading
 
@@ -39,6 +33,4 @@ In summary, pass-through authentication ensures that user authentication is perf
 * [Active Directory Federation Services (AD FS) Overview](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/ad-fs-overview)
 * [Understanding Authentication Methods in Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/ec3dd1c7-a3f1-4d9a-ae3c-59b398091a52/lesson/ad0ee446-3898-49d9-b138-c1d54bb0b1a0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/ec3dd1c7-a3f1-4d9a-ae3c-59b398091a52/lesson/ad0ee446-3898-49d9-b138-c1d54bb0b1a0)

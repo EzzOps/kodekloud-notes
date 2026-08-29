@@ -14,9 +14,7 @@ Managing tokens effectively is crucial for secure, reliable access to Vault. By 
 
 For legacy or long-running applications that cannot handle token rotation, a **periodic service token** is ideal. It has a finite Time-To-Live (TTL) but no maximum TTL, so you can renew it indefinitely without changing the token string.
 
-<Callout icon="lightbulb">
-  Periodic service tokens allow your application to continue using the same token for as long as needed, avoiding code changes for token refresh.
-</Callout>
+> **lightbulb** Periodic service tokens allow your application to continue using the same token for as long as needed, avoiding code changes for token refresh.
 
 ```bash theme={null}
 vault token create \
@@ -24,9 +22,7 @@ vault token create \
   -period="24h"
 ```
 
-<Frame>
-  ![The image shows an app developer expressing a concern about a long-running app that cannot handle token regeneration, with a suggestion to use a periodic service token.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877974/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Controlling-the-Token-Lifecycle/app-developer-token-regeneration-concern.jpg)
-</Frame>
+![The image shows an app developer expressing a concern about a long-running app that cannot handle token regeneration, with a suggestion to use a periodic service token.](https://kodekloud.com/kk-media/image/upload/v1752877974/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Controlling-the-Token-Lifecycle/app-developer-token-regeneration-concern.jpg)
 
 ## Service Tokens with Usage Limits
 
@@ -38,17 +34,13 @@ vault token create \
   -num_uses=3
 ```
 
-<Frame>
-  ![The image shows a cartoon of a principal engineer requesting a token that revokes automatically after one use, with a suggestion to use a service token with a use limit.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877975/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Controlling-the-Token-Lifecycle/principal-engineer-token-request-cartoon.jpg)
-</Frame>
+![The image shows a cartoon of a principal engineer requesting a token that revokes automatically after one use, with a suggestion to use a service token with a use limit.](https://kodekloud.com/kk-media/image/upload/v1752877975/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Controlling-the-Token-Lifecycle/principal-engineer-token-request-cartoon.jpg)
 
 ## Orphan Tokens
 
 To prevent your token’s lifecycle from being tied to a parent token—ensuring its expiration or revocation only follows its own rules—create an **orphan token**. This token has no parent relationship, giving you full control over its lifecycle.
 
-<Callout icon="triangle-alert">
-  Orphan tokens are not revoked automatically with their parent. Always plan for manual revocation to avoid orphaned credentials.
-</Callout>
+> **triangle-alert** Orphan tokens are not revoked automatically with their parent. Always plan for manual revocation to avoid orphaned credentials.
 
 ```bash theme={null}
 vault token create \
@@ -56,9 +48,7 @@ vault token create \
   -orphan
 ```
 
-<Frame>
-  ![The image shows a cartoon character labeled "DevOps Engineer" expressing a concern about token expiration being influenced by its parent, under the title "Controlling Token Lifecycle."](../../../../images/kodekloud.com/kk-media/image/upload/v1752877977/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Controlling-the-Token-Lifecycle/devops-engineer-token-lifecycle-concern.jpg)
-</Frame>
+![The image shows a cartoon character labeled "DevOps Engineer" expressing a concern about token expiration being influenced by its parent, under the title "Controlling Token Lifecycle."](https://kodekloud.com/kk-media/image/upload/v1752877977/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Controlling-the-Token-Lifecycle/devops-engineer-token-lifecycle-concern.jpg)
 
 ## Summary Table
 
@@ -70,15 +60,11 @@ Below is a quick reference comparing each token type, its primary use case, and 
 | Service Token with Usage Limit | One-time or limited-use operations           | `vault token create -policy="sensitive-action" -num_uses=3` |
 | Orphan Token                   | Independent lifecycle, unaffected by parents | `vault token create -policy="independent-policy" -orphan`   |
 
-<Frame>
-  ![The image is a slide titled "Controlling Token Lifecycle" with a table summarizing challenges and solutions related to token management. It includes solutions like "Periodic Service Token" and "Orphan Service Token" for specific challenges.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877978/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Controlling-the-Token-Lifecycle/controlling-token-lifecycle-challenges-solutions.jpg)
-</Frame>
+![The image is a slide titled "Controlling Token Lifecycle" with a table summarizing challenges and solutions related to token management. It includes solutions like "Periodic Service Token" and "Orphan Service Token" for specific challenges.](https://kodekloud.com/kk-media/image/upload/v1752877978/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Controlling-the-Token-Lifecycle/controlling-token-lifecycle-challenges-solutions.jpg)
 
 ## Links and References
 
 * [HashiCorp Vault Token Documentation](https://www.vaultproject.io/docs/concepts/tokens)
 * [Vault CLI Commands](https://www.vaultproject.io/docs/commands)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/cfadffc4-211b-436d-97d9-066c6abff97f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/cfadffc4-211b-436d-97d9-066c6abff97f)

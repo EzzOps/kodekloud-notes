@@ -18,13 +18,9 @@ Storage Service Encryption (SSE), also known as Server Side Encryption, automati
 * **Compliance:** Organizations can meet strict security and regulatory requirements without developing custom encryption solutions.
 * **Robust Security:** SSE employs 256-bit AES encryption along with automatic key and data management by the Storage Service.
 
-<Frame>
-  ![The image is about Storage Service Encryption (SSE) and includes icons for protection, compliance, and strong cipher, alongside a description of encryption options and settings for Azure Storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884398/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Storage-Service-Encryption-SSE-and-Azure-Disk-Encryption-ADE/storage-service-encryption-azure.jpg)
-</Frame>
+![The image is about Storage Service Encryption (SSE) and includes icons for protection, compliance, and strong cipher, alongside a description of encryption options and settings for Azure Storage.](https://kodekloud.com/kk-media/image/upload/v1752884398/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Storage-Service-Encryption-SSE-and-Azure-Disk-Encryption-ADE/storage-service-encryption-azure.jpg)
 
-<Callout icon="lightbulb">
-  By default, SSE is enabled on all storage accounts, and this setting cannot be disabled, ensuring consistent data protection.
-</Callout>
+> **lightbulb** By default, SSE is enabled on all storage accounts, and this setting cannot be disabled, ensuring consistent data protection.
 
 ### Bring Your Own Keys (BYOK)
 
@@ -43,13 +39,9 @@ Azure Disk Encryption (ADE) secures the disks of your virtual machines (VMs) by 
 * **Backup Security:** When using Azure Backup, encryption keys are backed up in the Recovery Services Vault, ensuring that all backups are also encrypted.
 * **Encryption Standard:** Implements robust 256-bit encryption.
 
-<Frame>
-  ![The image is about Azure Disk Encryption (ADE) and includes icons for encrypting disks, restricting access, encrypted backup, and considerations, alongside a screenshot of disk settings options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884400/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Storage-Service-Encryption-SSE-and-Azure-Disk-Encryption-ADE/azure-disk-encryption-icons-settings.jpg)
-</Frame>
+![The image is about Azure Disk Encryption (ADE) and includes icons for encrypting disks, restricting access, encrypted backup, and considerations, alongside a screenshot of disk settings options.](https://kodekloud.com/kk-media/image/upload/v1752884400/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Storage-Service-Encryption-SSE-and-Azure-Disk-Encryption-ADE/azure-disk-encryption-icons-settings.jpg)
 
-<Callout icon="triangle-alert">
-  Encrypting both OS and data disks may cause a slight performance impact due to the encryption and decryption overhead. In CPU-intensive scenarios, consider encrypting only the data disk to optimize performance. Also, note that if "Encryption at Host" is enabled, ADE cannot be used because host-level encryption relies solely on platform-managed keys.
-</Callout>
+> **triangle-alert** Encrypting both OS and data disks may cause a slight performance impact due to the encryption and decryption overhead. In CPU-intensive scenarios, consider encrypting only the data disk to optimize performance. Also, note that if "Encryption at Host" is enabled, ADE cannot be used because host-level encryption relies solely on platform-managed keys.
 
 Additionally, Azure offers an "Encryption at Host" option. For further information on this feature, refer to [Microsoft Azure Security Technologies (AZ-500)](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500).
 
@@ -71,13 +63,9 @@ Azure provides a straightforward interface for configuring both SSE and ADE. Fol
 4. Note that updating the Azure Active Directory (AAD) configuration for your VM requires a reboot.
 5. If you wish to enable "Encryption at Host," ensure the VM is properly shut down during configuration.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page focused on encryption settings for a storage account. It includes options for encryption selection, key selection, and identity type configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884401/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Storage-Service-Encryption-SSE-and-Azure-Disk-Encryption-ADE/azure-portal-encryption-settings.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page focused on encryption settings for a storage account. It includes options for encryption selection, key selection, and identity type configuration.](https://kodekloud.com/kk-media/image/upload/v1752884401/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Storage-Service-Encryption-SSE-and-Azure-Disk-Encryption-ADE/azure-portal-encryption-settings.jpg)
 
-<Frame>
-  ![The image shows the "Disk settings" page in the Microsoft Azure portal, where options for ultra disk compatibility and encryption settings are displayed. The page includes toggles for enabling ultra disk and host encryption, as well as a dropdown for selecting disks to encrypt.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884402/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Storage-Service-Encryption-SSE-and-Azure-Disk-Encryption-ADE/azure-disk-settings-ultra-encryption.jpg)
-</Frame>
+![The image shows the "Disk settings" page in the Microsoft Azure portal, where options for ultra disk compatibility and encryption settings are displayed. The page includes toggles for enabling ultra disk and host encryption, as well as a dropdown for selecting disks to encrypt.](https://kodekloud.com/kk-media/image/upload/v1752884402/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Storage-Service-Encryption-SSE-and-Azure-Disk-Encryption-ADE/azure-disk-settings-ultra-encryption.jpg)
 
 ## Next Topic: Storage Security and Authorization
 
@@ -85,6 +73,4 @@ This concludes our detailed overview of Storage Service Encryption (SSE) and Azu
 
 Enhance your data protection strategy by implementing these encryption services to meet your organization's compliance and security goals.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/48d08f66-feb9-4bae-83b0-2e6aa34e24ae/lesson/cedc440c-b261-4ca3-8688-a966bab7acde" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/48d08f66-feb9-4bae-83b0-2e6aa34e24ae/lesson/cedc440c-b261-4ca3-8688-a966bab7acde)

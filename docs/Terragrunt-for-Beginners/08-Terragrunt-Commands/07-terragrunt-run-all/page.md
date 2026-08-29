@@ -41,9 +41,7 @@ Always inspect the plan output to confirm that resource additions and deletions 
 * [Terraform CLI: plan](https://www.terraform.io/cli/plan)
 * [Terraform AWS VPC Module](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/e42961fc-4288-4cc2-8db8-3882b884c0b1/lesson/570bbde7-cba7-4868-ad01-2c24e82e6e7f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/e42961fc-4288-4cc2-8db8-3882b884c0b1/lesson/570bbde7-cba7-4868-ad01-2c24e82e6e7f)
 
 
 # terragrunt run all
@@ -54,9 +52,7 @@ The command enables bulk Terraform operations across all project modules, automa
 
 The `terragrunt run-all` command lets you perform bulk Terraform operations—such as `init`, `plan`, `apply`, and `destroy`—across every module in your project. By automating multi-module workflows, it reduces manual effort and ensures consistency in large-scale Terraform deployments.
 
-<Frame>
-  ![The image is an infographic about "Terragrunt run-all," highlighting its support for Terragrunt commands like init, plan, apply, and destroy, and its capability for bulk execution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884336/notes-assets/images/Terragrunt-for-Beginners-terragrunt-run-all/terragrunt-run-all-infographic-commands.jpg)
-</Frame>
+![The image is an infographic about "Terragrunt run-all," highlighting its support for Terragrunt commands like init, plan, apply, and destroy, and its capability for bulk execution.](https://kodekloud.com/kk-media/image/upload/v1752884336/notes-assets/images/Terragrunt-for-Beginners-terragrunt-run-all/terragrunt-run-all-infographic-commands.jpg)
 
 ## Key Features
 
@@ -66,13 +62,9 @@ The `terragrunt run-all` command lets you perform bulk Terraform operations—su
 | Workflow Streamlining | Standardize operations and eliminate repetitive steps    |
 | Parallel Execution    | Execute commands concurrently to speed up large projects |
 
-<Frame>
-  ![The image illustrates the concept of "Terragrunt run-all" with colorful puzzle piece icons and emphasizes workflow streamlining by reducing manual command execution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884337/notes-assets/images/Terragrunt-for-Beginners-terragrunt-run-all/terragrunt-run-all-puzzle-workflow.jpg)
-</Frame>
+![The image illustrates the concept of "Terragrunt run-all" with colorful puzzle piece icons and emphasizes workflow streamlining by reducing manual command execution.](https://kodekloud.com/kk-media/image/upload/v1752884337/notes-assets/images/Terragrunt-for-Beginners-terragrunt-run-all/terragrunt-run-all-puzzle-workflow.jpg)
 
-<Frame>
-  ![The image illustrates the concept of "Terragrunt run-all" with icons representing parallel execution of tasks. It features colorful puzzle piece icons and a label indicating "Parallel Execution."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884338/notes-assets/images/Terragrunt-for-Beginners-terragrunt-run-all/terragrunt-run-all-parallel-execution.jpg)
-</Frame>
+![The image illustrates the concept of "Terragrunt run-all" with icons representing parallel execution of tasks. It features colorful puzzle piece icons and a label indicating "Parallel Execution."](https://kodekloud.com/kk-media/image/upload/v1752884338/notes-assets/images/Terragrunt-for-Beginners-terragrunt-run-all/terragrunt-run-all-parallel-execution.jpg)
 
 ## Common Use Cases
 
@@ -80,9 +72,7 @@ The `terragrunt run-all` command lets you perform bulk Terraform operations—su
 * Destroy resources uniformly in every module
 * Automate routine Terraform tasks in CI/CD pipelines
 
-<Frame>
-  ![The image is a presentation slide about "Terragrunt run-all," highlighting benefits such as performing the same operations across modules and saving time and effort. It includes icons and a "Use Cases" button.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884340/notes-assets/images/Terragrunt-for-Beginners-terragrunt-run-all/terragrunt-run-all-benefits-presentation.jpg)
-</Frame>
+![The image is a presentation slide about "Terragrunt run-all," highlighting benefits such as performing the same operations across modules and saving time and effort. It includes icons and a "Use Cases" button.](https://kodekloud.com/kk-media/image/upload/v1752884340/notes-assets/images/Terragrunt-for-Beginners-terragrunt-run-all/terragrunt-run-all-benefits-presentation.jpg)
 
 ## Best Practices
 
@@ -90,13 +80,9 @@ The `terragrunt run-all` command lets you perform bulk Terraform operations—su
 * Use targeted execution (`--terragrunt-include-dir` / `--terragrunt-exclude-dir`) to scope large projects.
 * Remember that `run-all apply` and `run-all destroy` add `--auto-approve` by default.
 
-<Callout icon="triangle-alert">
-  When running `terragrunt run-all apply` or `terragrunt run-all destroy`, Terragrunt automatically appends `--auto-approve`. Ensure you understand the full impact before executing these commands.
-</Callout>
+> **triangle-alert** When running `terragrunt run-all apply` or `terragrunt run-all destroy`, Terragrunt automatically appends `--auto-approve`. Ensure you understand the full impact before executing these commands.
 
-<Frame>
-  ![The image is an infographic about "Terragrunt run-all," highlighting its use for consistent and automated operations and its ability to reduce human error, with a "Best Practices" label.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884341/notes-assets/images/Terragrunt-for-Beginners-terragrunt-run-all/terragrunt-run-all-infographic-best-practices.jpg)
-</Frame>
+![The image is an infographic about "Terragrunt run-all," highlighting its use for consistent and automated operations and its ability to reduce human error, with a "Best Practices" label.](https://kodekloud.com/kk-media/image/upload/v1752884341/notes-assets/images/Terragrunt-for-Beginners-terragrunt-run-all/terragrunt-run-all-infographic-best-practices.jpg)
 
 ***
 

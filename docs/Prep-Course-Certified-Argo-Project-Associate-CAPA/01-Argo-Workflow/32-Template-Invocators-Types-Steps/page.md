@@ -56,9 +56,7 @@ Understanding the `steps` structure
   * Each top-level list item (each top-level `-`) is a step-group that executes in sequence.
   * Within a step-group, each inner `-` is an individual step that runs in parallel with the other inner steps in that group.
 
-<Callout icon="lightbulb">
-  Think of `steps` as a sequence of step-groups: each top-level dash creates a group that runs one after another; steps inside the same group (inner dashes) run concurrently.
-</Callout>
+> **lightbulb** Think of `steps` as a sequence of step-groups: each top-level dash creates a group that runs one after another; steps inside the same group (inner dashes) run concurrently.
 
 Execution semantics (summary):
 
@@ -106,6 +104,4 @@ Links and references
 * [Argo Workflows: Steps Templates](https://argoproj.github.io/argo-workflows/workflow-concepts/#steps)
 * [rancher/cowsay on Docker Hub](https://hub.docker.com/r/rancher/cowsay)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/06207e06-90ea-4393-afdb-a33701d29999" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/06207e06-90ea-4393-afdb-a33701d29999)

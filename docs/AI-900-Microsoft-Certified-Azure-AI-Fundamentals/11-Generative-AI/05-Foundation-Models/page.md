@@ -6,7 +6,7 @@ This lesson explores foundational models, focusing on language models that drive
 
 In this lesson, we explore foundational models with a special focus on language models—a key concept driving advances in Generative AI. Foundational models are large, pre-trained systems that serve as a versatile base for numerous AI tasks. Think of them as powerful, multi-purpose tools that can be quickly customized with minimal additional training to suit specific applications.
 
-![The image depicts a brain labeled "Language Model" surrounded by icons representing various concepts like books, music, text, and the internet, symbolizing diverse knowledge areas.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857008/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Foundation-Models/language-model-knowledge-icons.jpg)
+![The image depicts a brain labeled "Language Model" surrounded by icons representing various concepts like books, music, text, and the internet, symbolizing diverse knowledge areas.](https://kodekloud.com/kk-media/image/upload/v1752857008/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Foundation-Models/language-model-knowledge-icons.jpg)
 
 There are two primary approaches when working with language models:
 
@@ -29,7 +29,7 @@ Popular model types include:
 * **Image Generation Models:** For example, DALL-E can create images from textual descriptions, opening up innovative creative possibilities.
 * **Speech Recognition Models:** Models such as Whisper convert speech to text, making them ideal for automated audio transcription.
 
-![The image is a diagram of a model catalog featuring Azure AI Studio and Azure Machine Learning Studio, with sections for Azure OpenAI models and open-source models from various providers like Microsoft, OpenAI, and others.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857009/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Foundation-Models/azure-ai-model-catalog-diagram.jpg)
+![The image is a diagram of a model catalog featuring Azure AI Studio and Azure Machine Learning Studio, with sections for Azure OpenAI models and open-source models from various providers like Microsoft, OpenAI, and others.](https://kodekloud.com/kk-media/image/upload/v1752857009/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Foundation-Models/azure-ai-model-catalog-diagram.jpg)
 
 ## Conclusion
 

@@ -18,7 +18,7 @@ John [06/Feb/2019:00:00:38 +0000] GET /File1.txt
 
 It is important to note that the logs generated from your S3 bucket are stored in a separate, designated S3 logging bucket. For instance, if you have configured logging for an "app1" bucket, all the access logs will be saved in a different S3 bucket specified for logging.
 
-![The image lists the details contained in access logs, including bucket owner, bucket name, timestamp, remote IP, requester, request ID, operation type, key, version ID, and status/error code.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859715/notes-assets/images/AWS-Certified-Developer-Associate-S3-Access-Logs/access-logs-details-bucket-info.jpg)
+![The image lists the details contained in access logs, including bucket owner, bucket name, timestamp, remote IP, requester, request ID, operation type, key, version ID, and status/error code.](https://kodekloud.com/kk-media/image/upload/v1752859715/notes-assets/images/AWS-Certified-Developer-Associate-S3-Access-Logs/access-logs-details-bucket-info.jpg)
 
 For a comprehensive list of the fields included in the access logs, please refer to the AWS documentation's [Log Format](https://docs.aws.amazon.com/AmazonS3/latest/dev/LogFormat.html).
 

@@ -24,18 +24,14 @@ chunks = chunk_sentences(sentences, chunk_size=2, overlap=1)
 * Sample retrieval results and run relevance/recall evaluations to confirm that chosen chunk size and overlap improve retrieval quality.
 * Iterate: different corpora (legal text, scientific papers, code) will require different heuristics.
 
-<Callout icon="lightbulb">
-  When implementing chunking, always validate the chunks by checking token counts with the embedding model’s tokenizer and by sampling search results to ensure retrieval quality improves with your chosen chunk size and overlap.
-</Callout>
+> **lightbulb** When implementing chunking, always validate the chunks by checking token counts with the embedding model’s tokenizer and by sampling search results to ensure retrieval quality improves with your chosen chunk size and overlap.
 
 ## References and further reading
 
 * tiktoken tokenizer: [https://github.com/openai/tiktoken](https://github.com/openai/tiktoken)
 * Retrieval-Augmented Generation concepts: search for RAG architectures and embedding-based retrieval papers and blog posts for deeper guidance.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/6f4e345e-5e53-46cb-b940-10335c0a3355" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/6f4e345e-5e53-46cb-b940-10335c0a3355)
 
 
 # Ensuring Reliable Performance in Production LLM Deployments
@@ -55,9 +51,7 @@ Which component is most important for ensuring reliable performance when deployi
 
 Answer: a monitoring system with automated alerts.
 
-<Callout icon="lightbulb">
-  A monitoring system with automated alerts is the single most important component for maintaining reliable performance and high availability in production LLM deployments. Observability gives real-time visibility into system health and enables proactive responses before end users are affected.
-</Callout>
+> **lightbulb** A monitoring system with automated alerts is the single most important component for maintaining reliable performance and high availability in production LLM deployments. Observability gives real-time visibility into system health and enables proactive responses before end users are affected.
 
 ## Explanation
 
@@ -104,10 +98,6 @@ Key observability capabilities to implement:
 * [OpenTelemetry](https://opentelemetry.io/) — tracing and telemetry instrumentation
 * [SRE and SLO concepts](https://sre.google/sre-book/chapters/service-level-objectives/) — defining SLOs and alerting policies
 
-<Callout icon="warning">
-  Monitoring is necessary but not sufficient: it must be paired with clear on-call procedures, redundancy, automated recovery actions, and regular testing (canaries, chaos engineering) to truly achieve high availability.
-</Callout>
+> **warning** Monitoring is necessary but not sufficient: it must be paired with clear on-call procedures, redundancy, automated recovery actions, and regular testing (canaries, chaos engineering) to truly achieve high availability.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/547b04cf-1e4b-45de-897e-3d5bd8c29e37" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/547b04cf-1e4b-45de-897e-3d5bd8c29e37)

@@ -6,7 +6,7 @@ This article explains the Defense in Depth security strategy, detailing its laye
 
 Defense in Depth is a strategic security approach that mirrors the layered defenses of medieval castles. Much like how a castle relies on walls, moats, and guard towers to deter invaders, this strategy employs multiple protective layers to detect, delay, and mitigate potential threats. In this guide, we will dive into each layer of defense and explain how they work together to safeguard critical data and infrastructure.
 
-![The image illustrates the concept of "Defense in Depth" with a layered shield graphic, listing various security measures: Physical Security, Identity and Access Management, Perimeter Security, Network Security, Compute Security, Application Security, and Data Security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868412/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Defense-in-Depth/defense-in-depth-security-layers.jpg)
+![The image illustrates the concept of "Defense in Depth" with a layered shield graphic, listing various security measures: Physical Security, Identity and Access Management, Perimeter Security, Network Security, Compute Security, Application Security, and Data Security.](https://kodekloud.com/kk-media/image/upload/v1752868412/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Defense-in-Depth/defense-in-depth-security-layers.jpg)
 
 The core idea behind Defense in Depth is to slow down an attacker by forcing them to breach several security hurdles before reaching sensitive information. Each layer provides a unique type of protection, collectively forming a robust security posture across the organization's IT environment.
 
@@ -18,7 +18,7 @@ The first line of defense is Physical Security. This is akin to the sturdy castl
 
 Identity and Access Management (IAM) acts as the castle’s gatekeeper, controlling entry and ensuring that only authorized users gain access. This layer is vital for managing user credentials and permissions, often implemented with tools like Azure Active Directory and Role-Based Access Control (RBAC).
 
-![The image features a shield icon with horizontal lines and a gradient top, labeled "Identity and Access Management" with a note on "Authorized user access control."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868413/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Defense-in-Depth/identity-access-management-shield.jpg)
+![The image features a shield icon with horizontal lines and a gradient top, labeled "Identity and Access Management" with a note on "Authorized user access control."](https://kodekloud.com/kk-media/image/upload/v1752868413/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Defense-in-Depth/identity-access-management-shield.jpg)
 
 > **lightbulb** Implementing strong IAM practices is essential for meeting compliance requirements and reducing the risk of insider threats.
 
@@ -26,13 +26,13 @@ Identity and Access Management (IAM) acts as the castle’s gatekeeper, controll
 
 Perimeter Security serves as the lookout towers of a castle. This layer is designed to monitor and manage incoming traffic using firewalls and Distributed Denial of Service (DDoS) protection. It acts as the first barrier to filter out external threats.
 
-![The image features a shield icon with horizontal stripes and a highlighted blue stripe, labeled "Perimeter Security." It includes a note about tools like firewalls and DDoS protection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868414/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Defense-in-Depth/perimeter-security-shield-icon.jpg)
+![The image features a shield icon with horizontal stripes and a highlighted blue stripe, labeled "Perimeter Security." It includes a note about tools like firewalls and DDoS protection.](https://kodekloud.com/kk-media/image/upload/v1752868414/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Defense-in-Depth/perimeter-security-shield-icon.jpg)
 
 ## Network Security
 
 After breaching the perimeter, attackers encounter Network Security, which functions like inner guards maintaining order. This layer focuses on controlling and segmenting internal network traffic, preventing unauthorized lateral movements within the infrastructure. Network segmentation is a key tactic to limit the spread of breaches.
 
-![The image features a shield icon with horizontal stripes and a gradient bar, alongside text that reads "Network Security" and "01 | Network safeguarding: Segmentation."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868415/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Defense-in-Depth/network-security-shield-segmentation.jpg)
+![The image features a shield icon with horizontal stripes and a gradient bar, alongside text that reads "Network Security" and "01 | Network safeguarding: Segmentation."](https://kodekloud.com/kk-media/image/upload/v1752868415/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Defense-in-Depth/network-security-shield-segmentation.jpg)
 
 > **lightbulb** Network segmentation not only improves security but also enhances network performance by containing traffic within defined segments.
 
@@ -40,7 +40,7 @@ After breaching the perimeter, attackers encounter Network Security, which funct
 
 Compute Security protects virtualized environments including Virtual Machines, containers, and serverless platforms. This layer ensures that every computing resource is safeguarded, much like securing individual rooms within a castle. Robust compute security helps prevent attackers from exploiting vulnerabilities in virtual environments.
 
-![The image features a shield icon with horizontal stripes and a label that reads "01 | Protection for VMs, containers, serverless," under the heading "Compute Security."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868416/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Defense-in-Depth/compute-security-protection-shield.jpg)
+![The image features a shield icon with horizontal stripes and a label that reads "01 | Protection for VMs, containers, serverless," under the heading "Compute Security."](https://kodekloud.com/kk-media/image/upload/v1752868416/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Defense-in-Depth/compute-security-protection-shield.jpg)
 
 ## Application Security
 
@@ -50,7 +50,7 @@ Application Security focuses on defending the digital armory. This layer involve
 
 Data Security is dedicated to protecting the crown jewels—your most valuable information. This layer ensures that data remains protected whether at rest or in transit. Techniques like encryption play a pivotal role in preventing unauthorized access to sensitive data.
 
-![The image features a shield icon with the text "Data Security" and a note about data protection, specifically "Encryption in transit and at rest."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868417/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Defense-in-Depth/data-security-encryption-shield.jpg)
+![The image features a shield icon with the text "Data Security" and a note about data protection, specifically "Encryption in transit and at rest."](https://kodekloud.com/kk-media/image/upload/v1752868417/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Defense-in-Depth/data-security-encryption-shield.jpg)
 
 > **triangle-alert** Data breaches can have severe implications, including financial loss and reputational damage. Always enforce strong encryption and access controls.
 
@@ -64,7 +64,7 @@ Employing a Defense in Depth strategy offers numerous advantages:
 * **Risk Mitigation:** By forcing attackers to bypass several defenses, the likelihood of a successful breach is significantly lowered.
 * **Holistic Security Approach:** Integrating diverse security controls across all layers of your IT infrastructure minimizes vulnerabilities and strengthens overall protection.
 
-![The image outlines the benefits of "Defense in Depth" with three points: Robust Protection, Risk Mitigation, and Holistic Security Approach, each represented with icons on colored backgrounds.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868418/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Defense-in-Depth/defense-in-depth-benefits-icons.jpg)
+![The image outlines the benefits of "Defense in Depth" with three points: Robust Protection, Risk Mitigation, and Holistic Security Approach, each represented with icons on colored backgrounds.](https://kodekloud.com/kk-media/image/upload/v1752868418/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Defense-in-Depth/defense-in-depth-benefits-icons.jpg)
 
 In summary, Defense in Depth is a comprehensive strategy that does not rely on a single security measure. Instead, it employs multiple layers to create a resilient defense system, with each layer addressing specific threats to ensure robust protection.
 

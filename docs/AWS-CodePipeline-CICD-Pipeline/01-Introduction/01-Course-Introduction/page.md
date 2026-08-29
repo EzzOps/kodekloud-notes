@@ -41,7 +41,7 @@ In this lesson, you’ll learn how to:
 3. **Best Practices & Limitations**
    * Common pitfalls, quota considerations, and troubleshooting tips
 
-![The image is a promotional banner for the KodeKloud Slack Community, featuring a person wearing a KodeKloud t-shirt and a button to join the Slack workspace.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862746/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Course-Introduction/kodekloud-slack-community-banner-promo.jpg)
+![The image is a promotional banner for the KodeKloud Slack Community, featuring a person wearing a KodeKloud t-shirt and a button to join the Slack workspace.](https://kodekloud.com/kk-media/image/upload/v1752862746/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Course-Introduction/kodekloud-slack-community-banner-promo.jpg)
 
 > **lightbulb** Join the [KodeKloud Slack Community](https://kodekloud.com/slack) to ask questions, share insights, and get real-time support from instructors and peers.
 

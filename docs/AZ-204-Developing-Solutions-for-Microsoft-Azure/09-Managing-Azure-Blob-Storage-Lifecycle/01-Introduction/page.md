@@ -8,7 +8,7 @@ In this article, we dive into two essential components of Azure Blob Storage tha
 
 Access tiers enable you to store data in Azure Blob Storage at different price points according to access frequency. Frequently accessed data is maintained in a higher performance tier, ensuring low latency, whereas data that is rarely accessed can be moved to a more cost-effective storage tier.
 
-![The image is an introduction slide with two points: understanding access tiers in Azure Storage and learning lifecycle management policies in Azure Blob Storage to optimize costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866690/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Introduction/azure-storage-access-tiers-lifecycle.jpg)
+![The image is an introduction slide with two points: understanding access tiers in Azure Storage and learning lifecycle management policies in Azure Blob Storage to optimize costs.](https://kodekloud.com/kk-media/image/upload/v1752866690/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Introduction/azure-storage-access-tiers-lifecycle.jpg)
 
 Lifecycle management takes optimization a step further by automatically transitioning blobs between access tiers or deleting them after a specified period. This automation not only streamlines data management but also significantly reduces unnecessary storage expenses.
 

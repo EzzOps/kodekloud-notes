@@ -22,11 +22,9 @@ Links and references
 
 That's it for this section.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/360718cb-5ab8-44a1-bcd2-beae95ede7c9/lesson/e4413c2a-0367-48c6-9c22-cefe2add1c72" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/360718cb-5ab8-44a1-bcd2-beae95ede7c9/lesson/e4413c2a-0367-48c6-9c22-cefe2add1c72)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/360718cb-5ab8-44a1-bcd2-beae95ede7c9/lesson/d946034a-f14b-4e2f-a904-343871ed4094" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/360718cb-5ab8-44a1-bcd2-beae95ede7c9/lesson/d946034a-f14b-4e2f-a904-343871ed4094)
 
 
 # Section Introduction
@@ -57,9 +55,7 @@ What we’ll cover
 * Real-time reporting: how Audit-mode policies generate structured report entries.
 * Background scans: how to evaluate existing resources and close the visibility gap so you can produce formal compliance reports.
 
-<Callout icon="lightbulb">
-  PolicyReport and ClusterPolicyReport are standard Kubernetes custom resources. That means they can be queried with `kubectl`, watched by controllers, and exported to external systems via existing Kubernetes integrations.
-</Callout>
+> **lightbulb** PolicyReport and ClusterPolicyReport are standard Kubernetes custom resources. That means they can be queried with `kubectl`, watched by controllers, and exported to external systems via existing Kubernetes integrations.
 
 Why PolicyReport and ClusterPolicyReport matter
 

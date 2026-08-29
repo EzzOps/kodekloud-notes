@@ -36,9 +36,7 @@ Argo Workflows orchestrates execution of containerized tasks according to your w
 
 Because every step is a container, you are not locked into any single runtime: Python, Spark, Bash, and other tools can be combined seamlessly in one workflow.
 
-<Callout icon="lightbulb">
-  Note: Argo Workflows is the Argo project focused on running containerized workflows. Argo CD is a separate Argo project that provides GitOps for Kubernetes deployments (see [GitOps with ArgoCD](https://learn.kodekloud.com/user/courses/gitops-with-argocd)). This article focuses on Argo Workflows for pipeline orchestration.
-</Callout>
+> **lightbulb** Note: Argo Workflows is the Argo project focused on running containerized workflows. Argo CD is a separate Argo project that provides GitOps for Kubernetes deployments (see [GitOps with ArgoCD](https://learn.kodekloud.com/user/courses/gitops-with-argocd)). This article focuses on Argo Workflows for pipeline orchestration.
 
 ## Key features at a glance
 
@@ -154,9 +152,7 @@ spec:
 
 This throttling ensures only two loop iterations are active at any time while the rest queue. Adjust parallelism to match your cluster capacity and downstream rate limits.
 
-<Callout icon="warning">
-  Warning: Setting parallelism too high can exhaust node CPU/memory or overwhelm downstream services. Use resource requests/limits on containers and test with smaller parallelism before scaling up.
-</Callout>
+> **warning** Warning: Setting parallelism too high can exhaust node CPU/memory or overwhelm downstream services. Use resource requests/limits on containers and test with smaller parallelism before scaling up.
 
 ## Best practices for data processing pipelines
 
@@ -175,6 +171,4 @@ This throttling ensures only two loop iterations are active at any time while th
 
 For GitOps workflows and Kubernetes app delivery, see [GitOps with ArgoCD](https://learn.kodekloud.com/user/courses/gitops-with-argocd).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/ef9a1cbf-351b-4172-83c3-380f216fef59" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/ef9a1cbf-351b-4172-83c3-380f216fef59)

@@ -31,9 +31,7 @@ SHAs are immutable, making them the most dependable choice for reproducible work
 
 Additional security considerations for actions and workflows will be covered later in this course.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/7d6172e9-5a43-4701-9feb-e4cfdb65b256/lesson/0a458dc3-9238-429c-bf5b-ff7cff304726" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/7d6172e9-5a43-4701-9feb-e4cfdb65b256/lesson/0a458dc3-9238-429c-bf5b-ff7cff304726)
 
 
 # Course Introduction
@@ -74,13 +72,11 @@ We’ll cover the pros and cons of each platform, key differences you need to be
 5. Tools and automation to accelerate migration
 6. Labs: migrate a simple pipeline, then a complex pipeline with plugins and conditional logic
 
-<Callout icon="lightbulb">
-  Before you begin, ensure you have:
+> **lightbulb** Before you begin, ensure you have:
 
   * Access to the source Jenkins pipelines (Jenkinsfile or job configuration).
   * A GitHub repository where you can store workflows (`.github/workflows/`).
   * Permissions to create Actions and add secrets in the target repository.
-</Callout>
 
 ## Deep dive: Jenkins — what to look for
 
@@ -120,9 +116,7 @@ Results - <1s
 > Job completed at Tue May 20 12:59:51 UTC 2025 — Print Message
 ```
 
-<Callout icon="warning">
-  Important: Jenkins plugins may implement complex behavior (credential masking, custom credential types, or specialized SCM integrations). When a plugin lacks an Actions equivalent, plan for manual translation or replacement with a community GitHub Action or a small custom action.
-</Callout>
+> **warning** Important: Jenkins plugins may implement complex behavior (credential masking, custom credential types, or specialized SCM integrations). When a plugin lacks an Actions equivalent, plan for manual translation or replacement with a community GitHub Action or a small custom action.
 
 ## GitHub Actions fundamentals
 

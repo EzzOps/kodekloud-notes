@@ -157,15 +157,11 @@ Once the sync completes, only the single pod defined in Git remains and the Argo
 * [Argo CD documentation](https://argo-cd.readthedocs.io/en/stable/)
 * [Kubernetes kubectl reference](https://kubernetes.io/docs/reference/kubectl/)
 
-<Callout icon="lightbulb">
-  Argo CD treats Git as the source of truth. Manual edits to live cluster resources cause drift (OutOfSync). To make a permanent change, update the manifests in the Git repository and then let Argo CD apply those changes (or use Argo CD’s UI to sync Git into the cluster). Avoid modifying cluster-managed resources directly unless you intentionally want to bypass Git.
-</Callout>
+> **lightbulb** Argo CD treats Git as the source of truth. Manual edits to live cluster resources cause drift (OutOfSync). To make a permanent change, update the manifests in the Git repository and then let Argo CD apply those changes (or use Argo CD’s UI to sync Git into the cluster). Avoid modifying cluster-managed resources directly unless you intentionally want to bypass Git.
 
 That's all for this demo.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/53ee1ade-ac10-4b85-b8a0-a15f874bc19c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/53ee1ade-ac10-4b85-b8a0-a15f874bc19c)
 
 
 # Demo Multi Cluster Application Deployment
@@ -176,12 +172,10 @@ How to register remote Kubernetes clusters with Argo CD and deploy applications 
 
 This guide shows how to register a remote Kubernetes cluster with Argo CD and deploy an application to that cluster. By default, Argo CD manages resources in the cluster where it is installed (the control plane). To deploy to other clusters you must add them as destinations so Argo CD can authenticate and talk to them.
 
-<Callout icon="lightbulb">
-  Before you begin:
+> **lightbulb** Before you begin:
 
   * Ensure your local kubeconfig contains contexts for both the Argo CD control cluster and any target clusters (e.g., KinD).
   * Ensure the `argocd` CLI is installed and authenticated against your Argo CD server (`argocd login`).
-</Callout>
 
 ## 1) Identify the kubeconfig context to add
 
@@ -211,9 +205,7 @@ Use the `argocd cluster` subcommands to manage cluster destinations. Common comm
 | Remove cluster            | Unregister a cluster                    | `argocd cluster rm <cluster-name>`                                            |
 | Update cluster properties | Rename or set properties                | `argocd cluster set <CLUSTER_NAME> --name <new-cluster-name> --namespace '*'` |
 
-<Callout icon="warning">
-  Running `argocd cluster add` creates a ServiceAccount (commonly `argocd-manager`) on the target cluster with cluster-wide privileges and generates a long-lived token. Only register clusters you trust and for which this level of access is acceptable.
-</Callout>
+> **warning** Running `argocd cluster add` creates a ServiceAccount (commonly `argocd-manager`) on the target cluster with cluster-wide privileges and generates a long-lived token. Only register clusters you trust and for which this level of access is acceptable.
 
 ## 3) Add the KinD cluster to Argo CD
 

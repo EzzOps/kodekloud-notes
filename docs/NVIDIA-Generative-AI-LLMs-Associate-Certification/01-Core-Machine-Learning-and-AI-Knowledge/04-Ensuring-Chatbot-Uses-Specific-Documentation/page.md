@@ -53,9 +53,7 @@ Comparison table
 | Adversarial training                              | Increase robustness to malicious or tricky inputs | Helps resilience to attacks or perturbations but does not add document grounding                       |
 | Self-supervised learning                          | Learn representations from unlabeled data         | Improves general knowledge and embeddings but does not constrain answers to company docs               |
 
-<Callout icon="lightbulb">
-  Use a RAG pipeline with a reliable embedding model and a vector database for retrieval. Return retrieved sources with each response so users and auditors can verify the information against the company documentation.
-</Callout>
+> **lightbulb** Use a RAG pipeline with a reliable embedding model and a vector database for retrieval. Return retrieved sources with each response so users and auditors can verify the information against the company documentation.
 
 References and further reading
 
@@ -67,6 +65,4 @@ References and further reading
   <img alt="The image describes a question about effective techniques for a chatbot to provide answers based on company-specific documentation, suggesting &#x22;Retrieval-augmented generation&#x22; as the solution." />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/b4e3b1e4-b721-47f7-8664-7211196f7fe5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/b4e3b1e4-b721-47f7-8664-7211196f7fe5)

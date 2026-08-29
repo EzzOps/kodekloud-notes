@@ -143,9 +143,7 @@ Example polling output showing downtime:
 16:35:35 - Application Version: v1
 ```
 
-<Callout icon="warning">
-  Using the Recreate strategy will cause downtime because all old pods are terminated before new pods are created. Use Recreate only when you must avoid running multiple versions concurrently and can tolerate interruptions.
-</Callout>
+> **warning** Using the Recreate strategy will cause downtime because all old pods are terminated before new pods are created. Use Recreate only when you must avoid running multiple versions concurrently and can tolerate interruptions.
 
 ## Comparison: RollingUpdate vs Recreate
 
@@ -167,11 +165,9 @@ Summary
 
 This concludes the demo showing the practical differences between RollingUpdate and Recreate strategies for Kubernetes Deployments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/7d82a500-7aec-46b8-9e96-dfae70468001" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/7d82a500-7aec-46b8-9e96-dfae70468001)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/eccc6e22-3cbe-442b-be33-2c6839a2d8f6" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/eccc6e22-3cbe-442b-be33-2c6839a2d8f6)
 
 
 # Deployment and Release pattern
@@ -238,9 +234,7 @@ spec:
             - containerPort: 80
 ```
 
-<Callout icon="lightbulb">
-  RollingUpdate is the default Deployment strategy. Use `maxSurge` and `maxUnavailable` to control how many pods are added/removed at each step. Combine readiness probes and `minReadySeconds` to ensure pods serve traffic only after they are healthy.
-</Callout>
+> **lightbulb** RollingUpdate is the default Deployment strategy. Use `maxSurge` and `maxUnavailable` to control how many pods are added/removed at each step. Combine readiness probes and `minReadySeconds` to ensure pods serve traffic only after they are healthy.
 
 You can pause a rollout with `kubectl rollout pause deployment/<name>` to investigate failures, and resume or roll back with `kubectl rollout resume` or `kubectl rollout undo` respectively.
 
@@ -288,9 +282,7 @@ spec:
             - containerPort: 80
 ```
 
-<Callout icon="warning">
-  Recreate causes downtime while old pods are terminated and new pods are created. Use it only when coexisting versions are unsafe or when brief downtime is acceptable.
-</Callout>
+> **warning** Recreate causes downtime while old pods are terminated and new pods are created. Use it only when coexisting versions are unsafe or when brief downtime is acceptable.
 
 ***
 
@@ -334,6 +326,4 @@ Both patterns are often implemented with service routing, Ingress rules, or serv
 
 This lesson introduced rollout patterns and their trade-offs. Choose the strategy that balances availability, risk, and operational complexity for your application, and integrate it with GitOps pipelines and observability for safe, repeatable deployments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/49e161a0-4014-454e-a5cd-eec72171e086" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/49e161a0-4014-454e-a5cd-eec72171e086)

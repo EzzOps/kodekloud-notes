@@ -13,13 +13,9 @@ poem = response.choices[0].message.content
 print(poem)
 ```
 
-<Callout icon="triangle-alert">
-  Ensure your environment variables (`OPENAI_API_KEY`, `LLM_ENDPOINT`, `MODEL`) are correctly set before running the script.
-</Callout>
+> **triangle-alert** Ensure your environment variables (`OPENAI_API_KEY`, `LLM_ENDPOINT`, `MODEL`) are correctly set before running the script.
 
-<Callout icon="lightbulb">
-  You can switch between your local Ollama server and the hosted OpenAI API simply by updating the `LLM_ENDPOINT` URL.
-</Callout>
+> **lightbulb** You can switch between your local Ollama server and the hosted OpenAI API simply by updating the `LLM_ENDPOINT` URL.
 
 ## Next Steps
 
@@ -31,9 +27,7 @@ Now that you’ve seen how to:
 
 You’re ready to build the full poem-generator application step by step.
 
-<Frame>
-  ![The image outlines two next steps: leveraging the OpenAI Python library and using the code to build an AI application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883662/notes-assets/images/Running-Local-LLMs-With-Ollama-Leveraging-Ollama-Models-in-Application-Development/openai-python-library-ai-application.jpg)
-</Frame>
+![The image outlines two next steps: leveraging the OpenAI Python library and using the code to build an AI application.](https://kodekloud.com/kk-media/image/upload/v1752883662/notes-assets/images/Running-Local-LLMs-With-Ollama-Leveraging-Ollama-Models-in-Application-Development/openai-python-library-ai-application.jpg)
 
 ## References and Further Reading
 
@@ -41,9 +35,7 @@ You’re ready to build the full poem-generator application step by step.
 * [Ollama Official Guide](https://ollama.com/docs)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/8df2f2d5-d3c5-433d-b5f5-f553b040b2e7/lesson/df5bade3-d12b-4584-aae7-c4bdbaae39ff" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/8df2f2d5-d3c5-433d-b5f5-f553b040b2e7/lesson/df5bade3-d12b-4584-aae7-c4bdbaae39ff)
 
 
 # Ollama REST API Endpoints
@@ -70,9 +62,7 @@ curl http://localhost:11434/api/generate -d '{
 
 By default, `"stream": false` delivers the full response at once. Set `"stream": true` to receive incrementally streamed data (word or phrase by phrase), emulating the gradual output of web chat interfaces.
 
-<Callout icon="lightbulb">
-  Streaming responses can improve perceived latency for long completions. Be sure your client can handle partial chunks.
-</Callout>
+> **lightbulb** Streaming responses can improve perceived latency for long completions. Be sure your client can handle partial chunks.
 
 ### Formatting the JSON Output
 
@@ -178,9 +168,7 @@ Here, repeated initial sounds like **s** in “silicon sanctums, sparks” and *
 
 Ollama’s REST API also lets you list, inspect, copy, delete, and pull models without switching to the CLI.
 
-<Frame>
-  ![The image shows a list of API endpoints with three options: listing running models, seeing details of a model, and deleting or pulling a new model.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883662/notes-assets/images/Running-Local-LLMs-With-Ollama-Ollama-REST-API-Endpoints/api-endpoints-models-listing-details.jpg)
-</Frame>
+![The image shows a list of API endpoints with three options: listing running models, seeing details of a model, and deleting or pulling a new model.](https://kodekloud.com/kk-media/image/upload/v1752883662/notes-assets/images/Running-Local-LLMs-With-Ollama-Ollama-REST-API-Endpoints/api-endpoints-models-listing-details.jpg)
 
 ### Endpoint Summary
 

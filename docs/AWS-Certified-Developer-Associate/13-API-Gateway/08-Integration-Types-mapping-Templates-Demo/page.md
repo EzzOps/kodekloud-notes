@@ -15,7 +15,7 @@ To begin, create a REST API that will simulate a task management application:
 1. Click **Create API** and select REST API.
 2. Name your API (e.g., "Task Manager").
 
-![The image shows the AWS API Gateway interface for creating a REST API, with options to create a new API, clone an existing one, import an API, or use an example API. The user can enter an API name and description, and select the API endpoint type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857876/notes-assets/images/AWS-Certified-Developer-Associate-Integration-Types-mapping-Templates-Demo/aws-api-gateway-rest-api-interface.jpg)
+![The image shows the AWS API Gateway interface for creating a REST API, with options to create a new API, clone an existing one, import an API, or use an example API. The user can enter an API name and description, and select the API endpoint type.](https://kodekloud.com/kk-media/image/upload/v1752857876/notes-assets/images/AWS-Certified-Developer-Associate-Integration-Types-mapping-Templates-Demo/aws-api-gateway-rest-api-interface.jpg)
 
 This API will host endpoints to create, retrieve, update, and delete tasks.
 
@@ -27,7 +27,7 @@ Next, create a resource named `/tasks`:
 
 1. In the API Gateway console, create the new resource `tasks`.
 
-![The image shows the AWS API Gateway console, specifically the "Resources" section for a REST API named "taskmanager," with options to create resources and methods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857878/notes-assets/images/AWS-Certified-Developer-Associate-Integration-Types-mapping-Templates-Demo/aws-api-gateway-taskmanager-resources.jpg)
+![The image shows the AWS API Gateway console, specifically the "Resources" section for a REST API named "taskmanager," with options to create resources and methods.](https://kodekloud.com/kk-media/image/upload/v1752857878/notes-assets/images/AWS-Certified-Developer-Associate-Integration-Types-mapping-Templates-Demo/aws-api-gateway-taskmanager-resources.jpg)
 
 Then, add a GET method on the `/tasks` resource to retrieve a list of tasks:
 
@@ -45,7 +45,7 @@ Then, add a GET method on the `/tasks` resource to retrieve a list of tasks:
 
 3. Deploy the API (e.g., to a stage named `dev`).
 
-![The image shows the AWS API Gateway interface for creating a method, with options for selecting method types and integration types like Lambda function and HTTP.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857879/notes-assets/images/AWS-Certified-Developer-Associate-Integration-Types-mapping-Templates-Demo/aws-api-gateway-method-creation.jpg)
+![The image shows the AWS API Gateway interface for creating a method, with options for selecting method types and integration types like Lambda function and HTTP.](https://kodekloud.com/kk-media/image/upload/v1752857879/notes-assets/images/AWS-Certified-Developer-Associate-Integration-Types-mapping-Templates-Demo/aws-api-gateway-method-creation.jpg)
 
 After deployment, copy the invoke URL and test your API client to verify that the GET method returns the expected task list.
 
@@ -79,7 +79,7 @@ Deploy these changes and test the GET method using a sample endpoint (e.g., `/ta
 
 The API Gateway console will show the method execution details, confirming that the path parameter has been received.
 
-![The image shows the AWS API Gateway console, specifically the method execution details for a GET request on a resource path /tasks/\{id}. It includes sections for method request, integration request, and Lambda integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857880/notes-assets/images/AWS-Certified-Developer-Associate-Integration-Types-mapping-Templates-Demo/aws-api-gateway-get-request-details.jpg)
+![The image shows the AWS API Gateway console, specifically the method execution details for a GET request on a resource path /tasks/\{id}. It includes sections for method request, integration request, and Lambda integration.](https://kodekloud.com/kk-media/image/upload/v1752857880/notes-assets/images/AWS-Certified-Developer-Associate-Integration-Types-mapping-Templates-Demo/aws-api-gateway-get-request-details.jpg)
 
 ***
 
@@ -112,7 +112,7 @@ export const handler = async (event, context) => {
 
 Deploy and test again to verify that the event object includes all necessary information, such as the original URL, path parameters, and headers.
 
-![The image shows an AWS Lambda console with a function named "getTaskDetail" displayed. It includes options for adding triggers, destinations, and viewing code, along with details like the function ARN.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857881/notes-assets/images/AWS-Certified-Developer-Associate-Integration-Types-mapping-Templates-Demo/aws-lambda-gettaskdetail-console.jpg)
+![The image shows an AWS Lambda console with a function named "getTaskDetail" displayed. It includes options for adding triggers, destinations, and viewing code, along with details like the function ARN.](https://kodekloud.com/kk-media/image/upload/v1752857881/notes-assets/images/AWS-Certified-Developer-Associate-Integration-Types-mapping-Templates-Demo/aws-lambda-gettaskdetail-console.jpg)
 
 ***
 
@@ -231,7 +231,7 @@ By default, if no mapping template matches the request content type (usually `ap
 
 Deploy your API changes and test to ensure the Lambda function receives the correct request payload.
 
-![The image shows the AWS API Gateway configuration screen where a Lambda function is being set up with options for request body passthrough and execution role details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857882/notes-assets/images/AWS-Certified-Developer-Associate-Integration-Types-mapping-Templates-Demo/aws-api-gateway-lambda-setup.jpg)
+![The image shows the AWS API Gateway configuration screen where a Lambda function is being set up with options for request body passthrough and execution role details.](https://kodekloud.com/kk-media/image/upload/v1752857882/notes-assets/images/AWS-Certified-Developer-Associate-Integration-Types-mapping-Templates-Demo/aws-api-gateway-lambda-setup.jpg)
 
 ***
 
@@ -275,7 +275,7 @@ Deploy these changes and test the endpoint using a request URL with query parame
 }
 ```
 
-![The image shows a webpage from the AWS documentation, specifically the Amazon API Gateway Developer Guide. It details the use of \$input variables in mapping templates, with a table explaining different functions and their descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857884/notes-assets/images/AWS-Certified-Developer-Associate-Integration-Types-mapping-Templates-Demo/aws-api-gateway-input-variables-2.jpg)
+![The image shows a webpage from the AWS documentation, specifically the Amazon API Gateway Developer Guide. It details the use of \$input variables in mapping templates, with a table explaining different functions and their descriptions.](https://kodekloud.com/kk-media/image/upload/v1752857884/notes-assets/images/AWS-Certified-Developer-Associate-Integration-Types-mapping-Templates-Demo/aws-api-gateway-input-variables-2.jpg)
 
 ***
 

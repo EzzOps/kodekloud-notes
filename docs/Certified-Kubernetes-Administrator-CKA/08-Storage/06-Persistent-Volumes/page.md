@@ -22,7 +22,7 @@ To solve this issue, administrators can create a centralized pool of storage. Us
 
 A persistent volume is a cluster-wide storage resource defined and managed by an administrator. Applications running on the cluster utilize these PVs by binding to them via persistent volume claims.
 
-![The image illustrates the relationship between Persistent Volume Claims (PVCs) and Persistent Volumes (PVs) in a Kubernetes environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869988/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Persistent-Volumes/frame_90.jpg)
+![The image illustrates the relationship between Persistent Volume Claims (PVCs) and Persistent Volumes (PVs) in a Kubernetes environment.](https://kodekloud.com/kk-media/image/upload/v1752869988/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Persistent-Volumes/frame_90.jpg)
 
 ## Creating a Persistent Volume
 

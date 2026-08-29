@@ -6,9 +6,7 @@ Discover how generics in Rust help you write flexible, reusable, and efficient c
 
 Discover how generics in Rust help you write flexible, reusable, and efficient code. Generics allow your functions, structs, enums, and methods to work with any data type. This reduces code duplication and makes your projects easier to maintain. In this guide, we will explore various aspects of generics and discuss performance considerations.
 
-<Frame>
-  ![The image is a diagram titled "Generics," highlighting four benefits: efficient (improves code efficiency), flexible (works with any data type), cleaner (makes code cleaner), and reusable (reduces redundancy).](../../../../images/kodekloud.com/kk-media/image/upload/v1752883762/notes-assets/images/Rust-Programming-Generic-Types/generics-diagram-benefits-efficiency-flexibility.jpg)
-</Frame>
+![The image is a diagram titled "Generics," highlighting four benefits: efficient (improves code efficiency), flexible (works with any data type), cleaner (makes code cleaner), and reusable (reduces redundancy).](https://kodekloud.com/kk-media/image/upload/v1752883762/notes-assets/images/Rust-Programming-Generic-Types/generics-diagram-benefits-efficiency-flexibility.jpg)
 
 ## Generic Functions
 

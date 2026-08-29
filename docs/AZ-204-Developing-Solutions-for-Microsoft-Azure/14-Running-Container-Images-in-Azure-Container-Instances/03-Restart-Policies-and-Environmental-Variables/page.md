@@ -21,7 +21,7 @@ Restart policies control the behavior of a container once its task completes. Th
 3. **On-Failure**\
    The container restarts only if its process fails. This policy ensures fault tolerance while preventing unnecessary restarts after successful executions.
 
-![The image explains the restart policy settings for containerized tasks in Azure Container Instances, showing three options: "Always," "Never," and "On-Failure." Each option is represented with a distinct icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866741/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Restart-Policies-and-Environmental-Variables/azure-container-instances-restart-policy.jpg)
+![The image explains the restart policy settings for containerized tasks in Azure Container Instances, showing three options: "Always," "Never," and "On-Failure." Each option is represented with a distinct icon.](https://kodekloud.com/kk-media/image/upload/v1752866741/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Restart-Policies-and-Environmental-Variables/azure-container-instances-restart-policy.jpg)
 
 Understanding these settings helps you manage container operations effectively and optimize resource usage.
 
@@ -93,7 +93,7 @@ az container create \
 
 After executing this command, verify the container's status in the Azure portal. Once the container is running, access the public IP on port 8080 in your browser to view your deployed application.
 
-![The image shows the Microsoft Azure portal displaying details of a container instance named "aci-02," including its status, events, and timestamps related to its operation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866743/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Restart-Policies-and-Environmental-Variables/azure-portal-container-instance-aci-02.jpg)
+![The image shows the Microsoft Azure portal displaying details of a container instance named "aci-02," including its status, events, and timestamps related to its operation.](https://kodekloud.com/kk-media/image/upload/v1752866743/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Restart-Policies-and-Environmental-Variables/azure-portal-container-instance-aci-02.jpg)
 
 ***
 

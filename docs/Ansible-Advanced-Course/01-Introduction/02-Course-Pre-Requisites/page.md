@@ -21,6 +21,6 @@ A solid understanding of basic Linux security concepts is also recommended. This
 
 While some of these topics will be reviewed during the module discussions, independently brushing up on them will provide a significant advantage.
 
-![The image shows a presentation slide titled "Linux Pre-Requisites" with a list of topics like SSH Keys, Users, Package Managers, and more, alongside a person standing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869403/notes-assets/images/Ansible-Advanced-Course-Course-Pre-Requisites/frame_80.jpg)
+![The image shows a presentation slide titled "Linux Pre-Requisites" with a list of topics like SSH Keys, Users, Package Managers, and more, alongside a person standing.](https://kodekloud.com/kk-media/image/upload/v1752869403/notes-assets/images/Ansible-Advanced-Course-Course-Pre-Requisites/frame_80.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/ansible-advanced-course/module/971c5667-e695-49f2-8ec2-35969db6d20a/lesson/bb92fe3c-b2ff-478e-a1e9-34f574d63855)

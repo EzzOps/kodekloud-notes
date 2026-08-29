@@ -71,12 +71,8 @@ user:
   password: "secret"
 ```
 
-<Callout icon="lightbulb">
-  Understanding these variable types is fundamental to building efficient and dynamic automation tasks with Ansible. Use the appropriate type based on your data requirements to enhance the clarity and maintainability of your playbooks.
-</Callout>
+> **lightbulb** Understanding these variable types is fundamental to building efficient and dynamic automation tasks with Ansible. Use the appropriate type based on your data requirements to enhance the clarity and maintainability of your playbooks.
 
 This article covered the basic variable types in Ansible, including examples for String, Number, Boolean, List, and Dictionary variables. For more detailed information, be sure to check out additional resources in the [Ansible Documentation](https://docs.ansible.com/ansible/latest/index.html).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/c85e487f-ca75-448b-b7dd-f72e9519d9b9/lesson/b4430755-0371-402e-82b8-651e826dc199" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/c85e487f-ca75-448b-b7dd-f72e9519d9b9/lesson/b4430755-0371-402e-82b8-651e826dc199)

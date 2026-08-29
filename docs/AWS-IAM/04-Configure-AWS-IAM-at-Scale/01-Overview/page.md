@@ -28,7 +28,7 @@ Scaling your AWS Identity and Access Management (IAM) strategy across multiple a
 | On-premises access                        | IAM Anywhere        | Grant secure data center access             |
 | Single sign-on                            | IAM Identity Center | Centralize user authentication              |
 
-![The image is a slide titled "Module 3: Sara must plan for expansion," listing tasks related to AWS account management and security, such as creating AWS accounts, enabling centralized IAM management, and setting alarms using Cloudwatch.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862976/notes-assets/images/AWS-IAM-Overview/module-3-sara-expansion-aws-tasks.jpg)
+![The image is a slide titled "Module 3: Sara must plan for expansion," listing tasks related to AWS account management and security, such as creating AWS accounts, enabling centralized IAM management, and setting alarms using Cloudwatch.](https://kodekloud.com/kk-media/image/upload/v1752862976/notes-assets/images/AWS-IAM-Overview/module-3-sara-expansion-aws-tasks.jpg)
 
 > **triangle-alert** Be cautious when configuring cross-account roles: overly permissive trust policies can expose your resources to unintended access.
 

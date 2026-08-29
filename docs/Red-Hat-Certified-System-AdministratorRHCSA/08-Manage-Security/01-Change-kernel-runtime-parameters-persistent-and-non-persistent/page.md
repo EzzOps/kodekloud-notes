@@ -38,9 +38,7 @@ $ sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
 net.ipv6.conf.default.disable_ipv6 = 1
 ```
 
-<Callout icon="lightbulb">
-  Non-persistent changes are effective immediately but will revert to their default settings after a reboot.
-</Callout>
+> **lightbulb** Non-persistent changes are effective immediately but will revert to their default settings after a reboot.
 
 To verify a parameter's current value, execute sysctl followed by the exact parameter name. If you receive a "permission denied" message, prepend the command with sudo to run it as root.
 
@@ -92,9 +90,7 @@ The output should confirm the updated value:
 vm.swappiness=29
 ```
 
-<Callout icon="lightbulb">
-  Remember, non-persistent changes made with sysctl -w will be lost after reboot, while persistent changes require adding a configuration file in `/etc/sysctl.d/` and can be activated immediately using sysctl -p.
-</Callout>
+> **lightbulb** Remember, non-persistent changes made with sysctl -w will be lost after reboot, while persistent changes require adding a configuration file in `/etc/sysctl.d/` and can be activated immediately using sysctl -p.
 
 ## Further Reading
 
@@ -105,8 +101,6 @@ For more information on kernel parameters and system tuning, consider exploring 
 
 That’s all for this article. Happy tuning, and see you in the next one!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5935b82f-37ac-4f4e-b619-0a6f8824088b/lesson/12152944-f390-4ee3-be6b-bb691ab3f202" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5935b82f-37ac-4f4e-b619-0a6f8824088b/lesson/12152944-f390-4ee3-be6b-bb691ab3f202)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5935b82f-37ac-4f4e-b619-0a6f8824088b/lesson/c49856cf-5733-431a-a638-2a9943aba16d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5935b82f-37ac-4f4e-b619-0a6f8824088b/lesson/c49856cf-5733-431a-a638-2a9943aba16d)

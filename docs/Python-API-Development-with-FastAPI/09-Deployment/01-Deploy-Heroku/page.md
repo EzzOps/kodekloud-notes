@@ -72,17 +72,13 @@ For custom app names, execute:
 heroku create fastapi-sanjeev
 ```
 
-<Callout icon="lightbulb">
-  App names must be globally unique. If the name is already in use, try a different name (e.g., append numbers).
-</Callout>
+> **lightbulb** App names must be globally unique. If the name is already in use, try a different name (e.g., append numbers).
 
 After creating your app, visit your Heroku dashboard to see your newly created app, even if no resources are configured yet.
 
 Below is an example image of a Heroku dashboard:
 
-<Frame>
-  ![The image shows a Heroku dashboard for an app named "fastapi-sanjeev," displaying sections for resources, deployment, metrics, and activity, with no add-ons or recent activity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883396/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Heroku/heroku-dashboard-fastapi-sanjeev.jpg)
-</Frame>
+![The image shows a Heroku dashboard for an app named "fastapi-sanjeev," displaying sections for resources, deployment, metrics, and activity, with no add-ons or recent activity.](https://kodekloud.com/kk-media/image/upload/v1752883396/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Heroku/heroku-dashboard-fastapi-sanjeev.jpg)
 
 ***
 
@@ -110,9 +106,7 @@ If your browser opens the app URL and you encounter an error, it may indicate Fa
 heroku logs --tail
 ```
 
-<Callout icon="triangle-alert">
-  A "Boot timeout" error may mean that Heroku is unsure how to start your FastAPI application. Ensure your configuration is correct.
-</Callout>
+> **triangle-alert** A "Boot timeout" error may mean that Heroku is unsure how to start your FastAPI application. Ensure your configuration is correct.
 
 ***
 
@@ -256,9 +250,7 @@ Monitor the output to ensure each migration—such as creating tables or adding 
 
 Below is an image showcasing the pgAdmin interface:
 
-<Frame>
-  ![The image shows a pgAdmin interface displaying database statistics, including server sessions, transactions per second, and tuples in/out, with a list of databases on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883398/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Heroku/pgadmin-database-statistics-interface.jpg)
-</Frame>
+![The image shows a pgAdmin interface displaying database statistics, including server sessions, transactions per second, and tuples in/out, with a list of databases on the left.](https://kodekloud.com/kk-media/image/upload/v1752883398/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Heroku/pgadmin-database-statistics-interface.jpg)
 
 After completing the migrations, restart the dynos:
 
@@ -289,15 +281,11 @@ Verify the new record in your database via your preferred PostgreSQL management 
 
 Below is an updated Heroku dashboard image showing the app details and configuration variables:
 
-<Frame>
-  ![The image shows a Heroku dashboard for an app named "fastapi-sanjeev," displaying app information and configuration variables such as database URL, hostname, and secret key.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883399/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Heroku/heroku-dashboard-fastapi-sanjeev-2.jpg)
-</Frame>
+![The image shows a Heroku dashboard for an app named "fastapi-sanjeev," displaying app information and configuration variables such as database URL, hostname, and secret key.](https://kodekloud.com/kk-media/image/upload/v1752883399/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Heroku/heroku-dashboard-fastapi-sanjeev-2.jpg)
 
 Additionally, your Swagger UI (accessible at `/docs`) should list all your API endpoints:
 
-<Frame>
-  ![The image shows a Swagger UI interface displaying API endpoints for managing posts and users, including actions like GET, POST, PUT, and DELETE. It also includes an authentication section with a login endpoint.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883400/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Heroku/swagger-ui-api-endpoints-posts-users.jpg)
-</Frame>
+![The image shows a Swagger UI interface displaying API endpoints for managing posts and users, including actions like GET, POST, PUT, and DELETE. It also includes an authentication section with a login endpoint.](https://kodekloud.com/kk-media/image/upload/v1752883400/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Heroku/swagger-ui-api-endpoints-posts-users.jpg)
 
 ***
 
@@ -341,6 +329,4 @@ Congratulations! You have successfully deployed your FastAPI application to Hero
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1af49f64-16e1-4559-841f-4b684c6a8f15/lesson/b1c24bfe-aabd-4cef-a766-493c618aa22b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1af49f64-16e1-4559-841f-4b684c6a8f15/lesson/b1c24bfe-aabd-4cef-a766-493c618aa22b)

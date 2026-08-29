@@ -52,9 +52,7 @@ The correct fix for read-after-write anomalies is to ensure reads for a client�
 * Using write-through cache invalidation so the cache immediately reflects recent writes.
 * Using sticky routing or session affinity for a brief period after a write.
 
-<Callout icon="lightbulb">
-  For user-visible operations (like uploading photos), implement read-after-write routing: direct the user’s subsequent reads to the primary briefly or invalidate the cache entry to ensure they immediately see their changes.
-</Callout>
+> **lightbulb** For user-visible operations (like uploading photos), implement read-after-write routing: direct the user’s subsequent reads to the primary briefly or invalidate the cache entry to ensure they immediately see their changes.
 
 When every read must reflect the absolute latest data, the system requires strong consistency. The simplest way to achieve strong consistency is to read from the primary, since it contains the most recent writes. However, directing many reads to the primary increases its load—the very problem replication is meant to reduce. Most social or media applications accept eventual consistency for many use cases; deciding which parts of the application need strong consistency versus eventual consistency is a key system-design decision.
 
@@ -90,9 +88,7 @@ Within milliseconds, that destructive change will reach all replicas and all cop
   <img alt="The image is a diagram showing an app's architecture, featuring a user interface, app server, load balancer, primary database, replica databases, and a backup system." />
 </Frame>
 
-<Callout icon="warning">
-  Replication improves availability and read scalability, but it does not replace backups. Always maintain versioned, off-cluster backups and regularly test restores.
-</Callout>
+> **warning** Replication improves availability and read scalability, but it does not replace backups. Always maintain versioned, off-cluster backups and regularly test restores.
 
 Further reading and references:
 
@@ -100,6 +96,4 @@ Further reading and references:
 * [Designing for Consistency and Availability](https://martinfowler.com/articles/patterns-of-distributed-systems.html)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/8d7c5dae-aa01-4b58-9808-a742a13393a1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/8d7c5dae-aa01-4b58-9808-a742a13393a1)

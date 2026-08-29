@@ -59,9 +59,7 @@ You can verify that the `/mnt` directory is empty again:
 $ ls /mnt/
 ```
 
-<Callout icon="lightbulb">
-  When Linux boots, certain file systems (like `/dev/vda1` mounted on `/boot`) are automatically mounted according to the instructions provided in configuration files.
-</Callout>
+> **lightbulb** When Linux boots, certain file systems (like `/dev/vda1` mounted on `/boot`) are automatically mounted according to the instructions provided in configuration files.
 
 For example, the following output from `lsblk` shows various mount points:
 

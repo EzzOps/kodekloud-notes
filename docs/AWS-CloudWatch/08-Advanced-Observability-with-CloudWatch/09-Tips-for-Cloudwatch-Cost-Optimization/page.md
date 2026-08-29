@@ -87,7 +87,7 @@ Track and cap your CloudWatch expenses:
 
 Implementing even a few of these strategies can significantly lower your CloudWatch costs without sacrificing visibility or uptime.
 
-![The image lists tips for CloudWatch cost optimization, including utilizing the free tier, optimizing metrics, controlling data retention, and setting budget alerts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862365/notes-assets/images/AWS-CloudWatch-Tips-for-Cloudwatch-Cost-Optimization/cloudwatch-cost-optimization-tips.jpg)
+![The image lists tips for CloudWatch cost optimization, including utilizing the free tier, optimizing metrics, controlling data retention, and setting budget alerts.](https://kodekloud.com/kk-media/image/upload/v1752862365/notes-assets/images/AWS-CloudWatch-Tips-for-Cloudwatch-Cost-Optimization/cloudwatch-cost-optimization-tips.jpg)
 
 ## Links and References
 

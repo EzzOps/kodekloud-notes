@@ -11,7 +11,7 @@ print(url)
 
 By default, clients upload files through your backend (EC2), which consumes bandwidth and CPU:
 
-![The image illustrates a process involving pre-signed URLs in AWS Cloud, showing a user interacting with cloud services and storage. A note mentions that all files must traverse through back-end servers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869221/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Presigned-URLs/aws-cloud-presigned-urls-process-diagram.jpg)
+![The image illustrates a process involving pre-signed URLs in AWS Cloud, showing a user interacting with cloud services and storage. A note mentions that all files must traverse through back-end servers.](https://kodekloud.com/kk-media/image/upload/v1752869221/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Presigned-URLs/aws-cloud-presigned-urls-process-diagram.jpg)
 
 With a pre-signed PUT URL, clients upload directly to S3:
 
@@ -46,7 +46,7 @@ print(url)
 
 Every pre-signed URL requires an expiration time. For IAM user credentials, the maximum is 7 days (604,800 seconds). Always choose the shortest practical duration.
 
-![The image provides information about pre-signed URLs, noting that an expiration date is required, with a maximum duration of 7 days using an IAM user, and that a pre-signed URL can be generated even if an IAM user lacks access to an S3 bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869222/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Presigned-URLs/presigned-urls-expiration-iam-s3.jpg)
+![The image provides information about pre-signed URLs, noting that an expiration date is required, with a maximum duration of 7 days using an IAM user, and that a pre-signed URL can be generated even if an IAM user lacks access to an S3 bucket.](https://kodekloud.com/kk-media/image/upload/v1752869222/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Presigned-URLs/presigned-urls-expiration-iam-s3.jpg)
 
 | Operation   | Required Permission | Max Expiration |
 | ----------- | ------------------- | -------------- |
@@ -55,7 +55,7 @@ Every pre-signed URL requires an expiration time. For IAM user credentials, the 
 
 Even if an IAM user lacks direct access to the bucket, they can still generate a pre-signed URL. S3 will enforce the embedded permissions:
 
-![The image illustrates the concept of pre-signed URLs, showing how an IAM user without direct access to an S3 bucket can use a pre-signed URL to gain temporary access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869223/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Presigned-URLs/pre-signed-urls-iam-user-access.jpg)
+![The image illustrates the concept of pre-signed URLs, showing how an IAM user without direct access to an S3 bucket can use a pre-signed URL to gain temporary access.](https://kodekloud.com/kk-media/image/upload/v1752869223/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Presigned-URLs/pre-signed-urls-iam-user-access.jpg)
 
 > **triangle-alert** A pre-signed URL grants the specified action to anyone holding it. Never expose URLs in public repos or client-side code that can be easily inspected.
 
@@ -91,7 +91,7 @@ Encryption transforms readable data (plaintext) into unreadable ciphertext using
 * **In transit**: Secured by SSL/TLS between your client and S3.
 * **At rest**: Data stored on AWS servers is encrypted on disk.
 
-![The image illustrates two types of encryption: "In Transit" using SSL/TLS and "Encryption at Rest" related to S3, with icons representing a user, a storage bucket, and a server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869224/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/encryption-in-transit-at-rest-diagram.jpg)
+![The image illustrates two types of encryption: "In Transit" using SSL/TLS and "Encryption at Rest" related to S3, with icons representing a user, a storage bucket, and a server.](https://kodekloud.com/kk-media/image/upload/v1752869224/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/encryption-in-transit-at-rest-diagram.jpg)
 
 * **In transit**: Automatic over HTTPS (SSL/TLS).
 * **At rest**: Must be enabled so S3 stores your objects encrypted on disk.
@@ -103,11 +103,11 @@ Encryption transforms readable data (plaintext) into unreadable ciphertext using
 * **Client-Side Encryption**: You generate, manage, and store keys. You encrypt data locally, then upload only ciphertext to S3.
 * **Server-Side Encryption**: You send plaintext over HTTPS; AWS encrypts it at rest using the method you choose.
 
-![The image illustrates the differences between client-side and server-side encryption, showing data flow from a user to a server with encryption occurring either before or after data reaches the server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869226/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/client-server-encryption-data-flow-diagram.jpg)
+![The image illustrates the differences between client-side and server-side encryption, showing data flow from a user to a server with encryption occurring either before or after data reaches the server.](https://kodekloud.com/kk-media/image/upload/v1752869226/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/client-server-encryption-data-flow-diagram.jpg)
 
 S3 supports three server-side methods:
 
-![The image lists three server-side encryption methods: Amazon S3-Managed Keys (SSE-S3), Customer-Provided Keys (SSE-C), and Key Management Service Keys (SSE-KMS).](../../../../images/kodekloud.com/kk-media/image/upload/v1752869227/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/server-side-encryption-methods-sse-s3-sse-c-sse-kms.jpg)
+![The image lists three server-side encryption methods: Amazon S3-Managed Keys (SSE-S3), Customer-Provided Keys (SSE-C), and Key Management Service Keys (SSE-KMS).](https://kodekloud.com/kk-media/image/upload/v1752869227/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/server-side-encryption-methods-sse-s3-sse-c-sse-kms.jpg)
 
 ***
 
@@ -117,7 +117,7 @@ S3 supports three server-side methods:
 * You can set a **default encryption** on the bucket so that any upload without explicit encryption uses the bucket’s setting.
 * You can still override the default on a per-object basis.
 
-![The image is a note about encryption, explaining that it occurs on a per-object basis and a default encryption method can be configured on a bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869228/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/encryption-per-object-bucket-configure.jpg)
+![The image is a note about encryption, explaining that it occurs on a per-object basis and a default encryption method can be configured on a bucket.](https://kodekloud.com/kk-media/image/upload/v1752869228/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/encryption-per-object-bucket-configure.jpg)
 
 > **lightbulb** When you enable default encryption on a bucket, uploads without specified encryption inherit the bucket’s default settings.
 
@@ -139,7 +139,7 @@ With SSE-S3, AWS handles all key management using AES-256:
 4. The data key is encrypted with the root key.
 5. Both encrypted object and encrypted data key are stored.
 
-![The image illustrates SSE-S3 encryption in AWS, showing the use of a root key and AES-256 algorithm for encrypting objects uniquely per item in a storage bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869229/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/sse-s3-encryption-aws-aes256.jpg)
+![The image illustrates SSE-S3 encryption in AWS, showing the use of a root key and AES-256 algorithm for encrypting objects uniquely per item in a storage bucket.](https://kodekloud.com/kk-media/image/upload/v1752869229/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/sse-s3-encryption-aws-aes256.jpg)
 
 **Decryption Flow**
 
@@ -147,7 +147,7 @@ With SSE-S3, AWS handles all key management using AES-256:
 2. S3 decrypts your object with the data key.
 3. Plaintext is returned to you.
 
-![The image illustrates the process of SSE-S3 decryption in AWS, showing a flow from a user to an S3 bucket and then to a server, with a focus on the use of a root key for decryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869230/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/sse-s3-decryption-aws-flow-diagram.jpg)
+![The image illustrates the process of SSE-S3 decryption in AWS, showing a flow from a user to an S3 bucket and then to a server, with a focus on the use of a root key for decryption.](https://kodekloud.com/kk-media/image/upload/v1752869230/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/sse-s3-decryption-aws-flow-diagram.jpg)
 
 **AWS CLI Example**
 
@@ -167,7 +167,7 @@ SSE-KMS integrates AWS Key Management Service for advanced control:
 
 The flow is similar to SSE-S3 but uses a KMS Customer Master Key (CMK):
 
-![The image illustrates the SSE-KMS process in AWS, showing a user interacting with an S3 bucket and a server, with a KMS key used for encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869231/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/sse-kms-aws-s3-encryption-diagram.jpg)
+![The image illustrates the SSE-KMS process in AWS, showing a user interacting with an S3 bucket and a server, with a KMS key used for encryption.](https://kodekloud.com/kk-media/image/upload/v1752869231/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-S3-Encryption/sse-kms-aws-s3-encryption-diagram.jpg)
 
 **AWS CLI Examples**
 

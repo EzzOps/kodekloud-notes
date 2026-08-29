@@ -8,9 +8,7 @@ To include debug messages, use:
 RUST_LOG=debug cargo run --quiet
 ```
 
-<Callout icon="lightbulb">
-  Remember that the default settings in `env_logger` filter out debug messages when the log level is set to info.
-</Callout>
+> **lightbulb** Remember that the default settings in `env_logger` filter out debug messages when the log level is set to info.
 
 ***
 
@@ -218,21 +216,15 @@ Implement these best practices to ensure your logging system is both effective a
 | Use Logging for Long-term Debugging | Rely on a robust logging system for ongoing maintenance instead of temporary print statements. |
 | Environment-specific Configuration  | Apply verbose logging in development and restrict output in production environments.           |
 
-<Frame>
-  ![The image lists five best practices for logging, including using println! for quick debugging, categorizing log messages with appropriate log levels, avoiding logging sensitive information, using logging for long-term debugging, and configuring logging according to the environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883872/notes-assets/images/Rust-Programming-Using-println-and-logging/best-practices-for-logging.jpg)
-</Frame>
+![The image lists five best practices for logging, including using println! for quick debugging, categorizing log messages with appropriate log levels, avoiding logging sensitive information, using logging for long-term debugging, and configuring logging according to the environment.](https://kodekloud.com/kk-media/image/upload/v1752883872/notes-assets/images/Rust-Programming-Using-println-and-logging/best-practices-for-logging.jpg)
 
-<Callout icon="triangle-alert">
-  Always ensure that sensitive data, including credentials and personal information, is never logged to avoid security risks.
-</Callout>
+> **triangle-alert** Always ensure that sensitive data, including credentials and personal information, is never logged to avoid security risks.
 
 By tailoring your logging system to match your application's needs, you can significantly improve real-time debugging and production monitoring.
 
 Happy debugging and coding in Rust!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/fdebf97c-bade-4db7-bfcf-9881f9ec96fc/lesson/29f62fc1-d0ee-4cfe-8516-7326b0247a7f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/fdebf97c-bade-4db7-bfcf-9881f9ec96fc/lesson/29f62fc1-d0ee-4cfe-8516-7326b0247a7f)
 
 
 # Message passing
@@ -249,9 +241,7 @@ When working with message passing in Rust, channels serve as the primary mechani
 
 A channel in Rust is a communication primitive that enables threads to pass messages between one another. Think of it as a pipeline: one end (the sender) pushes data into the channel, while the other end (the receiver) pulls data out.
 
-<Frame>
-  ![The image is a diagram about "Message Passing" in programming, highlighting concepts of "Ownership" and "Borrowing," with a focus on doing so "Safely" and "Efficiently."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883873/notes-assets/images/Rust-Programming-Message-passing/message-passing-ownership-borrowing-diagram.jpg)
-</Frame>
+![The image is a diagram about "Message Passing" in programming, highlighting concepts of "Ownership" and "Borrowing," with a focus on doing so "Safely" and "Efficiently."](https://kodekloud.com/kk-media/image/upload/v1752883873/notes-assets/images/Rust-Programming-Message-passing/message-passing-ownership-borrowing-diagram.jpg)
 
 Rust provides the `std::sync::mpsc` module—where MPSC stands for "multiple producers, single consumer"—as the standard way to create channels. This allows multiple threads to send messages into the channel while a single thread is designated to receive them.
 
@@ -268,9 +258,7 @@ fn main() {
 
 In this code, `tx` represents the sender and `rx` represents the receiver. While this MPSC channel is suitable for many message-passing scenarios, Rust also supports more complex configurations like multi-consumer channels when needed.
 
-<Frame>
-  ![The image illustrates Rust's channel mechanism, highlighting "Multiple-Producer, Single-Consumer" with sections for "Multi-Producer" and "Multi-Consumer Channels."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883874/notes-assets/images/Rust-Programming-Message-passing/rust-channel-mechanism-mpsc.jpg)
-</Frame>
+![The image illustrates Rust's channel mechanism, highlighting "Multiple-Producer, Single-Consumer" with sections for "Multi-Producer" and "Multi-Consumer Channels."](https://kodekloud.com/kk-media/image/upload/v1752883874/notes-assets/images/Rust-Programming-Message-passing/rust-channel-mechanism-mpsc.jpg)
 
 ## Creating and Using Channels
 
@@ -301,9 +289,7 @@ fn main() {
 
 The `send` method transfers ownership of the value into the channel. If the receiver is not present, this method will return an error.
 
-<Callout icon="lightbulb">
-  When running the program above, you might see a warning about the unused variable `rx`. To suppress this warning, either use the receiver in your code or prefix it with an underscore (i.e., `_rx`).
-</Callout>
+> **lightbulb** When running the program above, you might see a warning about the unused variable `rx`. To suppress this warning, either use the receiver in your code or prefix it with an underscore (i.e., `_rx`).
 
 ### Receiving Messages
 
@@ -465,6 +451,4 @@ Message passing in Rust offers a safe and efficient mechanism to manage concurre
 
 For more detailed information, consider checking out [Rust's official documentation](https://doc.rust-lang.org/std/sync/mpsc/) on channels.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/0418d83c-2090-4aac-8b6e-8c3eab45d649/lesson/5b733589-f0b5-479b-97ce-12f03026d5fc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/0418d83c-2090-4aac-8b6e-8c3eab45d649/lesson/5b733589-f0b5-479b-97ce-12f03026d5fc)

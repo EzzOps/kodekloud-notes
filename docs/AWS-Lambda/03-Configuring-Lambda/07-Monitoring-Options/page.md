@@ -24,7 +24,7 @@ AWS Lambda automatically sends key performance metrics to [Amazon CloudWatch](ht
 
 If you need an aggregated view across all functions, CloudWatch dashboards can display combined metrics and alert on threshold breaches:
 
-![The image is an informational slide about Amazon CloudWatch, detailing its automatic monitoring capabilities and additional metrics available, such as request numbers, duration, and concurrency limits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863156/notes-assets/images/AWS-Lambda-Monitoring-Options/amazon-cloudwatch-monitoring-metrics-slide.jpg)
+![The image is an informational slide about Amazon CloudWatch, detailing its automatic monitoring capabilities and additional metrics available, such as request numbers, duration, and concurrency limits.](https://kodekloud.com/kk-media/image/upload/v1752863156/notes-assets/images/AWS-Lambda-Monitoring-Options/amazon-cloudwatch-monitoring-metrics-slide.jpg)
 
 ## Lambda Insights
 
@@ -36,7 +36,7 @@ Key benefits:
 * Detailed per-function views of CPU, memory, disk, and network usage
 * Customizable alerts on unusual trends or resource spikes
 
-![The image shows a dashboard from AWS Lambda Insights, displaying performance monitoring metrics such as invocations, errors, duration, throttles, memory usage, CPU usage, and network usage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863158/notes-assets/images/AWS-Lambda-Monitoring-Options/aws-lambda-insights-performance-dashboard.jpg)
+![The image shows a dashboard from AWS Lambda Insights, displaying performance monitoring metrics such as invocations, errors, duration, throttles, memory usage, CPU usage, and network usage.](https://kodekloud.com/kk-media/image/upload/v1752863158/notes-assets/images/AWS-Lambda-Monitoring-Options/aws-lambda-insights-performance-dashboard.jpg)
 
 Use Lambda Insights to:
 
@@ -54,7 +54,7 @@ Use Lambda Insights to:
 
 > **triangle-alert** Enabling AWS X-Ray may incur additional costs and slight latency overhead. Evaluate tracing requirements before enabling in production.
 
-![The image is a slide about AWS X-ray, a monitoring and troubleshooting tool, highlighting features like visual mapping and identifying performance bottlenecks and errors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863160/notes-assets/images/AWS-Lambda-Monitoring-Options/aws-xray-monitoring-troubleshooting-slide.jpg)
+![The image is a slide about AWS X-ray, a monitoring and troubleshooting tool, highlighting features like visual mapping and identifying performance bottlenecks and errors.](https://kodekloud.com/kk-media/image/upload/v1752863160/notes-assets/images/AWS-Lambda-Monitoring-Options/aws-xray-monitoring-troubleshooting-slide.jpg)
 
 ## VPC Flow Logs for Network Monitoring
 

@@ -12,7 +12,7 @@ Begin by searching for SQS in the AWS Console. Once located, create a new queue 
 
 Name your queue "newUser". This queue simulates an application process where each new user registration triggers the sending of a message. The message, containing user details, can then be processed by other parts of your application.
 
-![The image shows the Amazon SQS (Simple Queue Service) interface for creating a new queue, with options for selecting the queue type, naming it, and configuring settings like visibility timeout and message retention period.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858405/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Basics-Demo/amazon-sqs-create-queue-interface.jpg)
+![The image shows the Amazon SQS (Simple Queue Service) interface for creating a new queue, with options for selecting the queue type, naming it, and configuring settings like visibility timeout and message retention period.](https://kodekloud.com/kk-media/image/upload/v1752858405/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Basics-Demo/amazon-sqs-create-queue-interface.jpg)
 
 ## Queue Configuration Options
 
@@ -68,7 +68,7 @@ The default access policy permits only the queue owner to send and receive messa
 
 After successfully creating your queue, there are multiple methods to interact with it. While most applications use the AWS SDK to publish and retrieve messages programmatically, the AWS Console also provides options for manual testing. The console allows you to simulate both message production and consumption.
 
-![The image shows an AWS management console screen for an Amazon SQS queue named "newUser," with details such as type, ARN, and URL displayed. A green notification bar indicates the queue was created successfully.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858408/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Basics-Demo/aws-sqs-newuser-console-screen.jpg)
+![The image shows an AWS management console screen for an Amazon SQS queue named "newUser," with details such as type, ARN, and URL displayed. A green notification bar indicates the queue was created successfully.](https://kodekloud.com/kk-media/image/upload/v1752858408/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Basics-Demo/aws-sqs-newuser-console-screen.jpg)
 
 ### Sending a Message
 
@@ -82,7 +82,7 @@ To test the queue functionality, start by sending a message. For example, if the
 
 After sending, the console confirms that the message has been successfully sent.
 
-![The image shows an AWS console interface for sending and receiving messages in a queue. A message has been sent with details like email and username, and options for delivery delay and message attributes are visible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858410/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Basics-Demo/aws-console-message-queue-interface.jpg)
+![The image shows an AWS console interface for sending and receiving messages in a queue. A message has been sent with details like email and username, and options for delivery delay and message attributes are visible.](https://kodekloud.com/kk-media/image/upload/v1752858410/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Basics-Demo/aws-console-message-queue-interface.jpg)
 
 ### Retrieving and Processing Messages
 
@@ -96,11 +96,11 @@ To retrieve messages, click the "Pull for messages" button in the consumer view 
 
 After your application processes a message, it is important to delete it to ensure it is not reprocessed.
 
-![The image shows a message details window from an AWS interface, displaying information such as message ID, size, sender account ID, and timestamps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858411/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Basics-Demo/aws-message-details-window.jpg)
+![The image shows a message details window from an AWS interface, displaying information such as message ID, size, sender account ID, and timestamps.](https://kodekloud.com/kk-media/image/upload/v1752858411/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Basics-Demo/aws-message-details-window.jpg)
 
 Once the message is deleted, the console will display a notification confirming its removal.
 
-![The image shows an AWS management console interface for sending and receiving messages, with a notification indicating that one message was deleted successfully. It includes options for message polling and details about message availability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858412/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Basics-Demo/aws-management-console-messages-notification.jpg)
+![The image shows an AWS management console interface for sending and receiving messages, with a notification indicating that one message was deleted successfully. It includes options for message polling and details about message availability.](https://kodekloud.com/kk-media/image/upload/v1752858412/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Basics-Demo/aws-management-console-messages-notification.jpg)
 
 > **lightbulb** Remember to delete processed messages to avoid duplicate processing and to maintain the efficiency of your queue.
 

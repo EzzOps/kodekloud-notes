@@ -76,9 +76,7 @@ spec:
           image: haproxy
 ```
 
-<Callout icon="lightbulb">
-  The `name` field under `images` matches the image name from your resources, **not** the container name in the Pod spec.
-</Callout>
+> **lightbulb** The `name` field under `images` matches the image name from your resources, **not** the container name in the Pod spec.
 
 ***
 
@@ -159,9 +157,7 @@ spec:
 | newName | Replacement image repository or name  | `haproxy` |
 | newTag  | New version tag for the image         | `2.4`     |
 
-<Callout icon="triangle-alert">
-  Omitting both `newName` and `newTag` in an `images` entry has no effect. Ensure at least one property is set.
-</Callout>
+> **triangle-alert** Omitting both `newName` and `newTag` in an `images` entry has no effect. Ensure at least one property is set.
 
 ***
 
@@ -171,6 +167,4 @@ spec:
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [kubectl Customization](https://kubectl.docs.kubernetes.io/guides/introduction/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/d01d540c-4e1c-45ad-aa72-2b0c46e8f68c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/d01d540c-4e1c-45ad-aa72-2b0c46e8f68c)

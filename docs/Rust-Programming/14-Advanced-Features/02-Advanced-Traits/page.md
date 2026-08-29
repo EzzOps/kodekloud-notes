@@ -86,9 +86,7 @@ Storing value: 50
 Retrieved: 42
 ```
 
-<Callout icon="lightbulb">
-  Remember that specifying an associated type enables a more flexible and type-safe way of defining generic behaviors in Rust.
-</Callout>
+> **lightbulb** Remember that specifying an associated type enables a more flexible and type-safe way of defining generic behaviors in Rust.
 
 ### Implementing the Container Trait for a String Collection
 
@@ -133,10 +131,6 @@ Retrieved: Hello
 
 This example demonstrates how associated types enable type-safe, flexible container implementations without ambiguity.
 
-<Callout icon="lightbulb">
-  For more details on Rust traits and associated types, consider checking out the [Rust Documentation](https://doc.rust-lang.org/book/ch10-02-traits.html).
-</Callout>
+> **lightbulb** For more details on Rust traits and associated types, consider checking out the [Rust Documentation](https://doc.rust-lang.org/book/ch10-02-traits.html).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/bff86fa1-7afc-44e5-b0ac-00b8be577bf8/lesson/2836aa6a-dffa-4d80-b68c-febc9f09e532" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/bff86fa1-7afc-44e5-b0ac-00b8be577bf8/lesson/2836aa6a-dffa-4d80-b68c-febc9f09e532)

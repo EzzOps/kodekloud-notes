@@ -50,9 +50,7 @@ role_id 22549d0d-147a-d6e2-fa2e-9cedd3b20977
 
 ### 5. Generate a Secret ID
 
-<Callout icon="triangle-alert">
-  `secret_id` is sensitive. Store or wrap it securely and avoid long-lived exposure.
-</Callout>
+> **triangle-alert** `secret_id` is sensitive. Store or wrap it securely and avoid long-lived exposure.
 
 ```bash theme={null}
 vault write -f auth/approle/role/hcvop/secret-id
@@ -129,9 +127,7 @@ That concludes the AppRole auth method guide. For human-centric authentication, 
 * [HashiCorp Vault Concepts](https://www.vaultproject.io/docs/concepts)
 * [jq Manual](https://stedolan.github.io/jq/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/8dc0af78-c47f-4f35-83c0-f5eafa95f7f6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/8dc0af78-c47f-4f35-83c0-f5eafa95f7f6)
 
 
 # Auto Unsealing Vault
@@ -146,23 +142,17 @@ Vault’s auto-unseal feature streamlines the unsealing process by replacing man
 
 By default, Vault uses Shamir’s Secret Sharing to protect its master key. Administrators must supply a threshold of unseal key shares (e.g., 3 out of 5) each time Vault starts. Auto-unseal simplifies this by delegating master key encryption and decryption to a trusted cloud KMS. When Vault launches, it contacts the configured KMS to decrypt the master key, avoiding manual key entry.
 
-<Frame>
-  ![The image explains "Auto Unseal," highlighting the use of a trusted cloud-based key instead of shared keys to protect the master key, with a diagram showing an encryption key and encrypted data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878384/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/auto-unseal-cloud-key-diagram.jpg)
-</Frame>
+![The image explains "Auto Unseal," highlighting the use of a trusted cloud-based key instead of shared keys to protect the master key, with a diagram showing an encryption key and encrypted data.](https://kodekloud.com/kk-media/image/upload/v1752878384/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/auto-unseal-cloud-key-diagram.jpg)
 
 Vault’s data encryption key encrypts all backend data (Raft, Consul, S3, etc.). Under auto-unseal, the master key protecting the data key is encrypted by the cloud KMS instead of Shamir shards.
 
-<Frame>
-  ![The image explains "Auto Unseal," showing a process where a cloud-based key protects a master key, which then secures an encryption key for encrypted data in a storage backend.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878385/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/auto-unseal-cloud-key-encryption-process.jpg)
-</Frame>
+![The image explains "Auto Unseal," showing a process where a cloud-based key protects a master key, which then secures an encryption key for encrypted data in a storage backend.](https://kodekloud.com/kk-media/image/upload/v1752878385/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/auto-unseal-cloud-key-encryption-process.jpg)
 
 ## Supported Auto-Unseal Mechanisms
 
 Vault natively integrates with multiple cloud KMS providers and on-prem HSMs:
 
-<Frame>
-  ![The image lists supported auto unseal mechanisms for Vault, including AWS KMS, Azure Key Vault, GCP Cloud KMS, AliCloud KMS, OCI KMS, and HSM (Enterprise Only), with a note about using the Transit Secrets Engine from another Vault cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878386/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/vault-auto-unseal-mechanisms-list.jpg)
-</Frame>
+![The image lists supported auto unseal mechanisms for Vault, including AWS KMS, Azure Key Vault, GCP Cloud KMS, AliCloud KMS, OCI KMS, and HSM (Enterprise Only), with a note about using the Transit Secrets Engine from another Vault cluster.](https://kodekloud.com/kk-media/image/upload/v1752878386/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/vault-auto-unseal-mechanisms-list.jpg)
 
 | Mechanism Type  | Provider        | Notes                                 |
 | --------------- | --------------- | ------------------------------------- |
@@ -183,27 +173,19 @@ Vault natively integrates with multiple cloud KMS providers and on-prem HSMs:
 3. On initialization, Vault encrypts its master key with the KMS key and stores the ciphertext under `core/master`.
 4. At each startup, Vault automatically requests a decrypt operation from the KMS to recover the master key.
 
-<Frame>
-  ![The image explains how auto unseal works in Vault, highlighting that the master key is encrypted with a cloud-based key and stored on the backend, and it contrasts this with the Shamir method. It includes a Vault certification badge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878387/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/auto-unseal-vault-explanation-diagram.jpg)
-</Frame>
+![The image explains how auto unseal works in Vault, highlighting that the master key is encrypted with a cloud-based key and stored on the backend, and it contrasts this with the Shamir method. It includes a Vault certification badge.](https://kodekloud.com/kk-media/image/upload/v1752878387/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/auto-unseal-vault-explanation-diagram.jpg)
 
 ## Design Considerations
 
-<Frame>
-  ![The image outlines design considerations for Vault, including key rotation support, regional limitations of cloud-based KMS services, and health check features for auto-unseal operations. It also mentions periodic health checks and logging warnings if issues are detected.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878389/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/vault-design-considerations-key-rotation.jpg)
-</Frame>
+![The image outlines design considerations for Vault, including key rotation support, regional limitations of cloud-based KMS services, and health check features for auto-unseal operations. It also mentions periodic health checks and logging warnings if issues are detected.](https://kodekloud.com/kk-media/image/upload/v1752878389/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/vault-design-considerations-key-rotation.jpg)
 
 * **Key Rotation**
 
-<Callout icon="lightbulb">
-  Vault supports automatic rotation of cloud-managed keys (e.g., AWS KMS annual rotation). Ensure Vault’s service account has decrypt permissions on new key versions.
-</Callout>
+> **lightbulb** Vault supports automatic rotation of cloud-managed keys (e.g., AWS KMS annual rotation). Ensure Vault’s service account has decrypt permissions on new key versions.
 
 * **Regional Outages**
 
-<Callout icon="triangle-alert">
-  Some KMS providers are regional. A full-region outage can prevent Vault from unsealing. Consider multi-region keys or Transit auto-unseal for high availability.
-</Callout>
+> **triangle-alert** Some KMS providers are regional. A full-region outage can prevent Vault from unsealing. Consider multi-region keys or Transit auto-unseal for high availability.
 
 * **Health Checks**\
   Vault pings the KMS every 10 minutes; on failure, it logs warnings and retries every minute. A loss of access only impacts restarts, not normal operations.
@@ -268,9 +250,7 @@ seal "gcpckms" {
 
 Use a highly available Vault cluster running the Transit Secrets Engine:
 
-<Frame>
-  ![The image illustrates the process of auto unsealing with a transit secrets engine in a Vault cluster, showing how an encryption key is used to unseal multiple clusters.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878390/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/auto-unsealing-transit-secrets-vault.jpg)
-</Frame>
+![The image illustrates the process of auto unsealing with a transit secrets engine in a Vault cluster, showing how an encryption key is used to unseal multiple clusters.](https://kodekloud.com/kk-media/image/upload/v1752878390/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/auto-unsealing-transit-secrets-vault.jpg)
 
 ```hcl theme={null}
 seal "transit" {
@@ -292,17 +272,13 @@ Vault Enterprise also provides:
 * AliCloud KMS
 * Oracle Cloud Infrastructure KMS
 
-<Frame>
-  ![The image is a slide discussing options not covered, specifically HSM, AliCloud, and Oracle Cloud, with details on HSM integration and compliance. It includes a Vault certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878391/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/hsm-alicloud-oracle-cloud-options-slide.jpg)
-</Frame>
+![The image is a slide discussing options not covered, specifically HSM, AliCloud, and Oracle Cloud, with details on HSM integration and compliance. It includes a Vault certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878391/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/hsm-alicloud-oracle-cloud-options-slide.jpg)
 
 ## Seal Migration
 
 You can migrate between seal methods (e.g., Shamir ↔ AWS KMS) with minimal downtime. Vault must be restarted on each node.
 
-<Frame>
-  ![The image illustrates a migration process from a Vault Cluster using Shamir Keys to one with Auto Unseal, highlighting differences in unsealing methods and security features. It includes icons for AWS, Google Cloud, Azure, and HSM, indicating integration with these services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878392/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/vault-migration-shamir-auto-unseal-diagram.jpg)
-</Frame>
+![The image illustrates a migration process from a Vault Cluster using Shamir Keys to one with Auto Unseal, highlighting differences in unsealing methods and security features. It includes icons for AWS, Google Cloud, Azure, and HSM, indicating integration with these services.](https://kodekloud.com/kk-media/image/upload/v1752878392/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/vault-migration-shamir-auto-unseal-diagram.jpg)
 
 ### Example: Shamir → AWS KMS
 
@@ -327,9 +303,7 @@ You can migrate between seal methods (e.g., Shamir ↔ AWS KMS) with minimal dow
    ```
 6. Repeat on each node (Standby nodes → Leader).
 
-<Frame>
-  ![The image outlines the steps for "Shamir to Auto Unseal Migration" with a sequence of operations involving standby and leader nodes. It includes a diagram of nodes and a certification badge in the top right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878394/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/shamir-auto-unseal-migration-diagram.jpg)
-</Frame>
+![The image outlines the steps for "Shamir to Auto Unseal Migration" with a sequence of operations involving standby and leader nodes. It includes a diagram of nodes and a certification badge in the top right corner.](https://kodekloud.com/kk-media/image/upload/v1752878394/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/shamir-auto-unseal-migration-diagram.jpg)
 
 ### Example: Auto-Unseal → Shamir Keys
 
@@ -340,9 +314,7 @@ You can migrate between seal methods (e.g., Shamir ↔ AWS KMS) with minimal dow
    ```
 3. Apply across all nodes.
 
-<Frame>
-  ![The image illustrates the migration process from an auto unseal Vault cluster to a Shamir keys Vault cluster, highlighting features and differences between the two methods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878395/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/vault-migration-auto-unseal-shamir-keys.jpg)
-</Frame>
+![The image illustrates the migration process from an auto unseal Vault cluster to a Shamir keys Vault cluster, highlighting features and differences between the two methods.](https://kodekloud.com/kk-media/image/upload/v1752878395/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/vault-migration-auto-unseal-shamir-keys.jpg)
 
 ### Example: Rotating Auto-Unseal Keys
 
@@ -364,9 +336,7 @@ seal "awskms" {
 1. Restart Vault and run `vault operator unseal -migrate` with recovery keys.
 2. Repeat on each node.
 
-<Frame>
-  ![The image is a slide about "Seal Migration," explaining that migrating from one seal type to another requires downtime for Vault and is not frequently performed. It includes examples of migrations like Shamir to AWS KMS and GCP Cloud KMS to Azure Key Vault.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878396/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/seal-migration-downtime-examples.jpg)
-</Frame>
+![The image is a slide about "Seal Migration," explaining that migrating from one seal type to another requires downtime for Vault and is not frequently performed. It includes examples of migrations like Shamir to AWS KMS and GCP Cloud KMS to Azure Key Vault.](https://kodekloud.com/kk-media/image/upload/v1752878396/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Auto-Unsealing-Vault/seal-migration-downtime-examples.jpg)
 
 ***
 
@@ -377,6 +347,4 @@ seal "awskms" {
 * [Azure Key Vault Documentation](https://docs.microsoft.com/azure/key-vault/)
 * [GCP Cloud KMS Documentation](https://cloud.google.com/kms/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/7d277204-752e-4e8d-819a-d716205ef97c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/7d277204-752e-4e8d-819a-d716205ef97c)

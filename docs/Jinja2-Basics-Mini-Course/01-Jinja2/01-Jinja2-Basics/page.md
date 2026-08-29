@@ -14,9 +14,7 @@ What is templating? Think of an invitation letter: the body (event details, venu
 
 Templates are widely used in web pages (HTML templates -> rendered HTML) and in automation tools like Ansible (templates -> configuration or files on remote hosts). Jinja2 is the templating engine commonly used in Python projects and many automation frameworks.
 
-<Callout icon="lightbulb">
-  Templating helps you reuse structure and separate content/data from presentation. You can render the same template with different data to produce many customized outputs.
-</Callout>
+> **lightbulb** Templating helps you reuse structure and separate content/data from presentation. You can render the same template with different data to produce many customized outputs.
 
 ## Basic HTML example (Jinja2 template)
 
@@ -121,9 +119,7 @@ The name is &#123;&#123; my_name | replace("Bond", "Bourne") &#125;&#125; => The
 The name is &#123;&#123; first_name | default("James") &#125;&#125; &#123;&#123; my_name &#125;&#125; => The name is James Bond
 ```
 
-<Callout icon="warning">
-  Undefined variables can cause unexpected output. Use `default(...)` or enable strict undefined checks during rendering to catch missing values early.
-</Callout>
+> **warning** Undefined variables can cause unexpected output. Use `default(...)` or enable strict undefined checks during rendering to catch missing values early.
 
 ## Common filters (overview)
 
@@ -209,6 +205,4 @@ Further reading and references:
 * [Ansible Documentation](https://docs.ansible.com/)
 * [Learn Ansible Basics (KodeKloud)](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jinja2-basics-mini-course/module/401d97bc-edbb-4181-bfcf-fb5ed517c34e/lesson/2a3e5aec-cdd6-4325-8b40-f5518b9814d2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jinja2-basics-mini-course/module/401d97bc-edbb-4181-bfcf-fb5ed517c34e/lesson/2a3e5aec-cdd6-4325-8b40-f5518b9814d2)

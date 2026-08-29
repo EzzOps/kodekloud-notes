@@ -28,9 +28,7 @@ kubeProxyReplacement: "strict"   # or "true" depending on your Cilium version
 l7proxy: true
 ```
 
-<Callout icon="lightbulb">
-  If your environment is kind (or another local cluster without a cloud LB), provide a LoadBalancer implementation such as MetalLB so the Cilium ingress LoadBalancer can obtain an external IP.
-</Callout>
+> **lightbulb** If your environment is kind (or another local cluster without a cloud LB), provide a LoadBalancer implementation such as MetalLB so the Cilium ingress LoadBalancer can obtain an external IP.
 
 Cilium documentation reference:
 
@@ -78,9 +76,7 @@ cilium   cilium.io/ingress-controller   <none>       2m53s
 
 ## If using a local cluster (kind, minikube, etc.)
 
-<Callout icon="warning">
-  Local clusters often lack a cloud load balancer. Install MetalLB or another LoadBalancer provider and configure an address pool so the `cilium-ingress` LoadBalancer acquires an external IP address for testing.
-</Callout>
+> **warning** Local clusters often lack a cloud load balancer. Install MetalLB or another LoadBalancer provider and configure an address pool so the `cilium-ingress` LoadBalancer acquires an external IP address for testing.
 
 ## Example application topology
 
@@ -392,9 +388,7 @@ You have enabled the Cilium ingress controller, configured load balancer behavio
 * [kind — Kubernetes IN Docker](https://kind.sigs.k8s.io/)
 * [MetalLB — LoadBalancer for bare metal](https://metallb.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/1f8ebc96-14b4-4c22-84bd-267f13d08959" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/1f8ebc96-14b4-4c22-84bd-267f13d08959)
 
 
 # Demo mTLS

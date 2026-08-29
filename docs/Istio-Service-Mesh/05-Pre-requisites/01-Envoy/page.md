@@ -12,9 +12,7 @@ A proxy acts as an intermediary between a user and an application. Instead of em
 
 In this setup, a user sends a request to the proxy, which then forwards it to the application for processing.
 
-<Frame>
-  ![The image is a diagram showing a user connecting to an application through a proxy, which handles TLS, authentication, and retry mechanisms. The application contains business logic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879370/notes-assets/images/Istio-Service-Mesh-Envoy/user-application-proxy-tls-diagram.jpg)
-</Frame>
+![The image is a diagram showing a user connecting to an application through a proxy, which handles TLS, authentication, and retry mechanisms. The application contains business logic.](https://kodekloud.com/kk-media/image/upload/v1752879370/notes-assets/images/Istio-Service-Mesh-Envoy/user-application-proxy-tls-diagram.jpg)
 
 ## Introduction to Envoy
 
@@ -22,18 +20,12 @@ Envoy is an open-source proxy designed specifically for modern, service-oriented
 
 Envoy operates both as a proxy and as a communication bus with advanced routing capabilities. Typically, Envoy is deployed as a sidecar container alongside your primary application containers. This design ensures that all inbound and outbound pod traffic is managed by Envoy, which enhances communication handling and offloads additional features from your application.
 
-<Callout icon="lightbulb">
-  Deploying Envoy as a sidecar container is a best practice in service mesh environments, as it ensures consistent traffic management across all microservices.
-</Callout>
+> **lightbulb** Deploying Envoy as a sidecar container is a best practice in service mesh environments, as it ensures consistent traffic management across all microservices.
 
-<Frame>
-  ![The image shows the Envoy logo and a diagram of a pod containing a main container and an Envoy sidecar, illustrating the flow of data through the Envoy proxy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879371/notes-assets/images/Istio-Service-Mesh-Envoy/envoy-logo-pod-diagram.jpg)
-</Frame>
+![The image shows the Envoy logo and a diagram of a pod containing a main container and an Envoy sidecar, illustrating the flow of data through the Envoy proxy.](https://kodekloud.com/kk-media/image/upload/v1752879371/notes-assets/images/Istio-Service-Mesh-Envoy/envoy-logo-pod-diagram.jpg)
 
 Envoy is a fundamental component in many service mesh solutions. For example, its integration is central to the architecture of the [Istio Service Mesh](https://learn.kodekloud.com/user/courses/istio-service-mesh), which leverages Envoy's capabilities to manage and secure communications within distributed applications.
 
 For additional resources on Envoy and service mesh architectures, explore more in-depth articles and the official documentation available online.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/1095f3e0-a80d-4c31-941b-6423a5b6d74c/lesson/e471e61c-5c93-49e6-ab08-23201d33f9f0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/1095f3e0-a80d-4c31-941b-6423a5b6d74c/lesson/e471e61c-5c93-49e6-ab08-23201d33f9f0)

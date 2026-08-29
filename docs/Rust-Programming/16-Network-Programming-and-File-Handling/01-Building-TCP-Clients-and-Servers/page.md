@@ -6,15 +6,11 @@ This article teaches how to build a TCP client and server using Rusts standard l
 
 Welcome back to this lesson. In this session, we will build a TCP client and server using Rust's standard libraries. TCP (Transmission Control Protocol) is a reliable, connection-oriented protocol that guarantees data is transmitted accurately and in order. This reliability is crucial for applications where data integrity is essential, such as web servers, database communications, or real-time data exchanges.
 
-<Frame>
-  ![The image describes the Transmission Control Protocol (TCP) as a reliable, connection-oriented protocol that ensures accurate and ordered data transmission. It includes icons representing network connections and IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883917/notes-assets/images/Rust-Programming-Building-TCP-Clients-and-Servers/tcp-reliable-connection-protocol-diagram.jpg)
-</Frame>
+![The image describes the Transmission Control Protocol (TCP) as a reliable, connection-oriented protocol that ensures accurate and ordered data transmission. It includes icons representing network connections and IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752883917/notes-assets/images/Rust-Programming-Building-TCP-Clients-and-Servers/tcp-reliable-connection-protocol-diagram.jpg)
 
 Our tutorial begins with creating a basic TCP server that listens for incoming connections. Afterward, we will develop a TCP client that connects to the server.
 
-<Frame>
-  ![The image illustrates the Transmission Control Protocol, showing a server that binds and listens for incoming connections, and a client that connects to the server for communication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883918/notes-assets/images/Rust-Programming-Building-TCP-Clients-and-Servers/tcp-server-client-communication.jpg)
-</Frame>
+![The image illustrates the Transmission Control Protocol, showing a server that binds and listens for incoming connections, and a client that connects to the server for communication.](https://kodekloud.com/kk-media/image/upload/v1752883918/notes-assets/images/Rust-Programming-Building-TCP-Clients-and-Servers/tcp-server-client-communication.jpg)
 
 ***
 
@@ -74,19 +70,15 @@ A TCP server waits on a specified address and port for incoming connections. Onc
 
 This server is configured to listen on `127.0.0.1:7878`. Every time a client connects, the server reads the incoming data, echoes it back, and logs the details to the console. Any errors or disconnections are recorded appropriately.
 
-<Callout icon="lightbulb">
-  Compile your TCP server using the following command:
+> **lightbulb** Compile your TCP server using the following command:
 
   ```bash theme={null}
   cargo build --quiet
   ```
 
   After building, run the server and prepare to test it.
-</Callout>
 
-<Frame>
-  ![The image illustrates a basic TCP server-client model, showing a TCP client and a TCP server connected by bidirectional arrows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883919/notes-assets/images/Rust-Programming-Building-TCP-Clients-and-Servers/tcp-server-client-model-diagram.jpg)
-</Frame>
+![The image illustrates a basic TCP server-client model, showing a TCP client and a TCP server connected by bidirectional arrows.](https://kodekloud.com/kk-media/image/upload/v1752883919/notes-assets/images/Rust-Programming-Building-TCP-Clients-and-Servers/tcp-server-client-model-diagram.jpg)
 
 ***
 
@@ -134,15 +126,13 @@ Now, let’s develop the TCP client. Follow these steps:
 
 This code connects the client to the server, sends the greeting message, and then reads the echoed message from the server, printing it to the console.
 
-<Callout icon="lightbulb">
-  Build the TCP client using:
+> **lightbulb** Build the TCP client using:
 
   ```bash theme={null}
   cargo build --quiet
   ```
 
   Make sure to run the TCP client after starting the TCP server.
-</Callout>
 
 When the client runs, you should see the following logs:
 
@@ -179,14 +169,10 @@ In this lesson, you learned how to:
    * Sends a greeting message ("Hello, server!") to the server.
    * Receives and logs the echoed message from the server.
 
-<Frame>
-  ![The image is a recap of network programming fundamentals, highlighting the creation of a TCP server, a TCP client, and the basics of handling connections and data transmission.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883920/notes-assets/images/Rust-Programming-Building-TCP-Clients-and-Servers/network-programming-tcp-server-client.jpg)
-</Frame>
+![The image is a recap of network programming fundamentals, highlighting the creation of a TCP server, a TCP client, and the basics of handling connections and data transmission.](https://kodekloud.com/kk-media/image/upload/v1752883920/notes-assets/images/Rust-Programming-Building-TCP-Clients-and-Servers/network-programming-tcp-server-client.jpg)
 
 With these foundational concepts in TCP networking using Rust, you are ready to explore more complex network applications. In the next lesson, we will discuss UDP and its differences from TCP.
 
 See you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/5b50abd7-c86a-4458-a1a3-90a7ebb3d776/lesson/361de88c-c401-4205-b401-4f016acc32f1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/5b50abd7-c86a-4458-a1a3-90a7ebb3d776/lesson/361de88c-c401-4205-b401-4f016acc32f1)

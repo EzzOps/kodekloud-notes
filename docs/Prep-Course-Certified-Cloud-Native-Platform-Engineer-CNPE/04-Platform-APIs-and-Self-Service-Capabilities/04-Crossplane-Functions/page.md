@@ -110,9 +110,7 @@ fromFieldPaths:
 toFieldPath: metadata.name
 ```
 
-<Callout icon="lightbulb">
-  Focus on `FromCompositeFieldPath` and `CombineFromComposite` first — these cover the majority of practical composition needs.
-</Callout>
+> **lightbulb** Focus on `FromCompositeFieldPath` and `CombineFromComposite` first — these cover the majority of practical composition needs.
 
 Transforms
 Patches copy values; transforms convert or format those values between reading and writing. Common transform types:
@@ -209,6 +207,4 @@ Links and references
 * [Crossplane Composition Overview](https://crossplane.io/docs/latest/concepts/composition.html)
 * Kubernetes documentation: [Kubernetes Concepts](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/b6399ec0-ca3d-4cdd-bf8d-2b868860c066" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/b6399ec0-ca3d-4cdd-bf8d-2b868860c066)

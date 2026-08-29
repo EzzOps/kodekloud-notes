@@ -14,15 +14,11 @@ Scalar types represent a single value. Rust offers four primary scalar types: in
 
 Integers are numbers without fractional components. Rust provides several integer types, which can be either signed or unsigned. Signed integers can represent both positive and negative numbers, while unsigned integers represent only positive values.
 
-<Frame>
-  ![The image is a diagram showing the classification of integers into "Signed" and "Unsigned" categories, with signed integers including both positive and negative values, and unsigned integers including only positive values.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883991/notes-assets/images/Rust-Programming-Scalar-and-Compound-Data-Types/integer-classification-signed-unsigned-diagram.jpg)
-</Frame>
+![The image is a diagram showing the classification of integers into "Signed" and "Unsigned" categories, with signed integers including both positive and negative values, and unsigned integers including only positive values.](https://kodekloud.com/kk-media/image/upload/v1752883991/notes-assets/images/Rust-Programming-Scalar-and-Compound-Data-Types/integer-classification-signed-unsigned-diagram.jpg)
 
 Below is a visual representation of Rust's integer types. By default, Rust uses the `i32` type (a 32-bit signed integer), but you can specify other types as needed.
 
-<Frame>
-  ![The image shows a table of Rust integer types categorized by bit length, including signed (i8, i16, i32, i64, i128, isize) and unsigned (u8, u16, u32, u64, u128, usize) integers, with 32-bit marked as the default.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883992/notes-assets/images/Rust-Programming-Scalar-and-Compound-Data-Types/rust-integer-types-table.jpg)
-</Frame>
+![The image shows a table of Rust integer types categorized by bit length, including signed (i8, i16, i32, i64, i128, isize) and unsigned (u8, u16, u32, u64, u128, usize) integers, with 32-bit marked as the default.](https://kodekloud.com/kk-media/image/upload/v1752883992/notes-assets/images/Rust-Programming-Scalar-and-Compound-Data-Types/rust-integer-types-table.jpg)
 
 Here's an example demonstrating various integer literals in different numerical bases:
 
@@ -132,9 +128,7 @@ fn main() {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Accessing an invalid array index will cause your program to panic at runtime. Rust performs runtime checks to ensure memory safety. Always ensure your indices are within range.
-</Callout>
+> **triangle-alert** Accessing an invalid array index will cause your program to panic at runtime. Rust performs runtime checks to ensure memory safety. Always ensure your indices are within range.
 
 #### Handling Invalid Access Gracefully
 
@@ -170,6 +164,4 @@ Understanding these types is essential for mastering Rust and serves as the buil
 
 For more detailed insights on Rust's data handling and advanced topics, explore additional [Rust documentation](https://doc.rust-lang.org/book/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/f025239d-bafa-4f21-b96c-859757f73ba5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/f025239d-bafa-4f21-b96c-859757f73ba5)

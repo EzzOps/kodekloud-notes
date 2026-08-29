@@ -44,9 +44,7 @@ This course recommends familiarity with Kubernetes fundamentals. Knowledge at th
 
 We include an article and a knowledge check to help you identify gaps and point to targeted prep resources.
 
-<Callout icon="lightbulb">
-  If you’re unsure about prerequisites, complete the included knowledge check before moving forward — it will point you to the specific areas to review.
-</Callout>
+> **lightbulb** If you’re unsure about prerequisites, complete the included knowledge check before moving forward — it will point you to the specific areas to review.
 
 Course mapping to CNPE exam domains
 
@@ -73,6 +71,4 @@ Further reading and references
 
 By the end of this course you should be able to design platform architectures, implement GitOps pipelines, expose self-service APIs, operate observability stacks, and apply security controls — all with the hands-on experience needed for the CNPE performance exam.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/cde3e2ef-28b1-4c9a-988b-49cbeb851f45/lesson/ea2f4986-f747-4ea3-859e-796415a89fb7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/cde3e2ef-28b1-4c9a-988b-49cbeb851f45/lesson/ea2f4986-f747-4ea3-859e-796415a89fb7)

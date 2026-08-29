@@ -19,9 +19,7 @@ Supply chain security extends beyond internal threat modeling—it ensures every
 
 Artifacts—your container images, binaries, and libraries—must be signed to prove integrity and origin.
 
-<Callout icon="lightbulb">
-  Sigstore’s [Cosign](https://docs.sigstore.dev/cosign/) offers a simple, keyless workflow for signing container images.
-</Callout>
+> **lightbulb** Sigstore’s [Cosign](https://docs.sigstore.dev/cosign/) offers a simple, keyless workflow for signing container images.
 
 To sign an image:
 
@@ -55,9 +53,7 @@ cosign verify-blob "$BINARY" \
 
 A Software Bill of Materials (SBOM) is an “ingredients list” for your application, detailing file checksums, licenses, and origins.
 
-<Callout icon="lightbulb">
-  An SBOM (Software Bill of Materials) is often authored in [SPDX](https://spdx.org/) format. It tracks every component and its license.
-</Callout>
+> **lightbulb** An SBOM (Software Bill of Materials) is often authored in [SPDX](https://spdx.org/) format. It tracks every component and its license.
 
 Example SPDX excerpt:
 

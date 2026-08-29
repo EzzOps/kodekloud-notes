@@ -26,13 +26,13 @@ There are two primary options available to manage your application versions:
 
 Below is an image displaying the "Application version lifecycle settings" window in AWS Elastic Beanstalk. This window allows you to configure the retention policy based on the age of the application versions.
 
-![The image shows the "Application version lifecycle settings" window in AWS Elastic Beanstalk, where a lifecycle policy is being configured to retain application versions based on age, with a retention period of 180 days.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858879/notes-assets/images/AWS-Certified-Developer-Associate-Lifecycle-Policies-Demo/aws-elastic-beanstalk-app-version-lifecycle.jpg)
+![The image shows the "Application version lifecycle settings" window in AWS Elastic Beanstalk, where a lifecycle policy is being configured to retain application versions based on age, with a retention period of 180 days.](https://kodekloud.com/kk-media/image/upload/v1752858879/notes-assets/images/AWS-Certified-Developer-Associate-Lifecycle-Policies-Demo/aws-elastic-beanstalk-app-version-lifecycle.jpg)
 
 ## Understanding Amazon S3 Integration
 
 When a version of your code is uploaded to Elastic Beanstalk, it is stored in an Amazon S3 bucket. To verify this storage, log in to the S3 console and locate the bucket associated with your environment (for example, "Elastic Beanstalk US East One"). Within this bucket, you will see your application versions stored as zip files. The image below illustrates the Amazon S3 bucket interface, which shows the zip files along with details such as last modified dates, sizes, and storage classes.
 
-![The image shows an Amazon S3 bucket interface with a list of zip files, their last modified dates, sizes, and storage classes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858880/notes-assets/images/AWS-Certified-Developer-Associate-Lifecycle-Policies-Demo/amazon-s3-bucket-zip-files.jpg)
+![The image shows an Amazon S3 bucket interface with a list of zip files, their last modified dates, sizes, and storage classes.](https://kodekloud.com/kk-media/image/upload/v1752858880/notes-assets/images/AWS-Certified-Developer-Associate-Lifecycle-Policies-Demo/amazon-s3-bucket-zip-files.jpg)
 
 ### S3 File Management Options
 

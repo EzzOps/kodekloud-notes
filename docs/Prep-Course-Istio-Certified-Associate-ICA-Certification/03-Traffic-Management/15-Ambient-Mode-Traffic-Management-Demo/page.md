@@ -8,9 +8,7 @@ This guide demonstrates how common Istio traffic-management features behave in A
 
 Note: Ambient Mode is typically a small part of the [ICA exam objectives](https://learn.kodekloud.com/user/courses/istio-certified-associate). Practically, you should know how to install Ambient Mode and label namespaces. This article is a hands-on demo to illustrate Ambient Mode behavior and how to implement L7 features using a waypoint proxy.
 
-<Callout icon="lightbulb">
-  Ambient Mode uses the `ztunnel` DaemonSet for L4 routing and an optional waypoint (Envoy) proxy for L7 behaviors. Some Istio features (for example, split traffic using VirtualService subsets or mirroring) require different Kubernetes-native APIs in Ambient Mode.
-</Callout>
+> **lightbulb** Ambient Mode uses the `ztunnel` DaemonSet for L4 routing and an optional waypoint (Envoy) proxy for L7 behaviors. Some Istio features (for example, split traffic using VirtualService subsets or mirroring) require different Kubernetes-native APIs in Ambient Mode.
 
 ***
 

@@ -27,9 +27,7 @@ print(response[0])  # Answer for the first question
 print(response[1])  # Answer for the second question
 ```
 
-<Callout icon="lightbulb">
-  Ensure each element in the batch is a dictionary whose keys exactly match the prompt template variable names (for example, use `{"question": "..."}` if the template refers to `{question}`).
-</Callout>
+> **lightbulb** Ensure each element in the batch is a dictionary whose keys exactly match the prompt template variable names (for example, use `{"question": "..."}` if the template refers to `{question}`).
 
 ## Key points (quick reference)
 
@@ -69,9 +67,7 @@ print(f"Batch-run total time:  {batch_elapsed:.2f}s")
 
 Note: Depending on the chain API in your environment, you may pass single-run inputs as dictionaries (e.g., `chain.run({"question": "..."})`) or directly as a string when the chain accepts a single positional argument. Use the form that matches your LangChain runtime version.
 
-<Callout icon="warning">
-  Batching and concurrency increase throughput but also increase parallel API usage. Be mindful of rate limits, concurrency caps, costs, and downstream system limits when issuing large batches.
-</Callout>
+> **warning** Batching and concurrency increase throughput but also increase parallel API usage. Be mindful of rate limits, concurrency caps, costs, and downstream system limits when issuing large batches.
 
 ## Practical considerations and tips
 
@@ -91,9 +87,7 @@ Further topics you may explore: runnable pass-through, more advanced LCEL concep
 * [LangChain Documentation](https://langchain.com/docs/)
 * [OpenAI API](https://platform.openai.com/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/8dffe6ae-3a79-440a-a04c-7397040ebc9a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/8dffe6ae-3a79-440a-a04c-7397040ebc9a)
 
 
 # LCEL Demo 4

@@ -40,9 +40,7 @@ Find the line that configures unqualified search registries:
 unqualified-search-registries = ["registry.fedoraproject.org", "registry.access.redhat.com", "registry.centos.org", "docker.io"]
 ```
 
-<Callout icon="lightbulb">
-  Comment out the above line and add the following to set `docker.io` as the default registry:
-</Callout>
+> **lightbulb** Comment out the above line and add the following to set `docker.io` as the default registry:
 
 ```plaintext theme={null}
 # unqualified-search-registries = ["registry.fedoraproject.org", "registry.access.redhat.com", "registry.centos.org", "docker.io"]
@@ -269,9 +267,7 @@ This guide demonstrated the key steps in managing and configuring containers on 
 
 Happy containerizing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/141c7a78-21ef-4dd8-86a3-fb0ef5037a8d/lesson/a54da927-4c31-4c14-94ab-a7dcdf0304b2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/141c7a78-21ef-4dd8-86a3-fb0ef5037a8d/lesson/a54da927-4c31-4c14-94ab-a7dcdf0304b2)
 
 
 # Perform container management using commands such as podman and skopeo
@@ -290,9 +286,7 @@ Before you begin, ensure that Skopeo is installed on your system. If it's not al
 $ sudo yum install skopeo
 ```
 
-<Callout icon="lightbulb">
-  For other package managers and installation options, refer to the [official Skopeo documentation](https://github.com/containers/skopeo/blob/main/install.md).
-</Callout>
+> **lightbulb** For other package managers and installation options, refer to the [official Skopeo documentation](https://github.com/containers/skopeo/blob/main/install.md).
 
 ## Inspecting Container Repositories
 
@@ -409,9 +403,7 @@ Removing an image from a repository is straightforward with Skopeo’s `delete` 
 $ skopeo delete docker://localhost:5000/imagename:latest
 ```
 
-<Callout icon="triangle-alert">
-  Deleting images is irreversible. Ensure you have backups or are certain before executing the delete command.
-</Callout>
+> **triangle-alert** Deleting images is irreversible. Ensure you have backups or are certain before executing the delete command.
 
 ## Synchronizing Registries
 
@@ -463,8 +455,6 @@ For further reading and advanced usage, consider exploring more resources:
 
 By following the steps outlined in this guide, you can improve your container management strategies and streamline operations in your containerized environments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/141c7a78-21ef-4dd8-86a3-fb0ef5037a8d/lesson/dc468105-88e9-4dba-8cf3-e98fc676e572" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/141c7a78-21ef-4dd8-86a3-fb0ef5037a8d/lesson/dc468105-88e9-4dba-8cf3-e98fc676e572)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/141c7a78-21ef-4dd8-86a3-fb0ef5037a8d/lesson/1b588fdb-14cc-461a-93fb-81551aefbe35" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/141c7a78-21ef-4dd8-86a3-fb0ef5037a8d/lesson/1b588fdb-14cc-461a-93fb-81551aefbe35)

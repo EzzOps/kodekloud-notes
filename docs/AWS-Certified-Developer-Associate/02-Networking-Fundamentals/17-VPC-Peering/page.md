@@ -6,7 +6,7 @@ This article explores AWS VPC Peering, enabling communication between isolated V
 
 In this article, we explore AWS VPC Peering, an essential mechanism for enabling communication between Virtual Private Clouds (VPCs). By default, resources in one VPC cannot interact with those in another since each VPC acts as its own isolated network boundary.
 
-![The image illustrates the behavior of Virtual Private Clouds (VPCs) acting as network boundaries, showing two VPCs with a connection between them that is blocked.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859269/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering/vpc-network-boundaries-illustration.jpg)
+![The image illustrates the behavior of Virtual Private Clouds (VPCs) acting as network boundaries, showing two VPCs with a connection between them that is blocked.](https://kodekloud.com/kk-media/image/upload/v1752859269/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering/vpc-network-boundaries-illustration.jpg)
 
 If your architecture requires resources in separate VPCs to interact, VPC peering provides an effective solution. By establishing a network connection between two VPCs, you can configure routing so that traffic flows seamlessly between them. With proper routing, VPC peering makes instances across different VPCs appear as if they reside in the same network.
 
@@ -18,7 +18,7 @@ VPC peering offers several flexible connection options:
 * **Different Regions:** Establish peering connections across regions.
 * **Different AWS Accounts:** Enable secure communication between VPCs owned by different accounts.
 
-![The image illustrates VPC Peering between two AWS accounts, each containing a Virtual Private Cloud (VPC).](../../../../images/kodekloud.com/kk-media/image/upload/v1752859270/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering/vpc-peering-aws-accounts-diagram.jpg)
+![The image illustrates VPC Peering between two AWS accounts, each containing a Virtual Private Cloud (VPC).](https://kodekloud.com/kk-media/image/upload/v1752859270/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering/vpc-peering-aws-accounts-diagram.jpg)
 
 ## Pricing Considerations
 
@@ -28,7 +28,7 @@ When planning VPC peering, keep the following pricing details in mind:
 * Data transferred within an Availability Zone via a VPC peering connection is free.
 * Data transfer charges apply when data crosses VPC peering connections between different Availability Zones.
 
-![The image explains VPC Peering Pricing, highlighting that there is no cost for VPC Peering connection creation and that data transfer within an Availability Zone via VPC Peering is free.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859272/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering/vpc-peering-pricing-explanation.jpg)
+![The image explains VPC Peering Pricing, highlighting that there is no cost for VPC Peering connection creation and that data transfer within an Availability Zone via VPC Peering is free.](https://kodekloud.com/kk-media/image/upload/v1752859272/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering/vpc-peering-pricing-explanation.jpg)
 
 > **lightbulb** Ensure you review the latest AWS pricing documentation as charges may vary based on region and usage.
 
@@ -41,7 +41,7 @@ Consider an example with two VPCs:
 
 One VPC sends a peering request to the other. If the VPCs belong to different AWS accounts, the owner of the receiving VPC must accept the request. For VPCs within the same account, the process is simpler, with the request effectively coming from yourself. Once accepted, the peering connection is active.
 
-![The image illustrates a VPC peering process between two virtual private clouds (VPC 1 and VPC 2), showing the sending and accepting of a peering request.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859273/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering/vpc-peering-process-diagram.jpg)
+![The image illustrates a VPC peering process between two virtual private clouds (VPC 1 and VPC 2), showing the sending and accepting of a peering request.](https://kodekloud.com/kk-media/image/upload/v1752859273/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering/vpc-peering-process-diagram.jpg)
 
 After establishing the peering connection, the next crucial step is configuring the routing tables for both VPCs:
 
@@ -60,6 +60,6 @@ A common misconception is that VPC peering is transitive. For instance, if VPC1 
 
 AWS VPC Peering is a robust feature enabling seamless network connectivity across VPCs in various configurations—whether in the same region, across different regions, or between multiple AWS accounts. The process involves sending and accepting peering requests, configuring routing for proper data flow, and understanding the pricing nuances, especially for inter-Availability Zone traffic. Always remember that VPC peering connections require direct links between communicating VPCs; the feature does not support transitive routing.
 
-![The image is a summary slide about VPC Peering, highlighting its function, connectivity across regions and accounts, and cost details. It includes three main points with colorful numbered icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859274/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering/vpc-peering-summary-connectivity-costs.jpg)
+![The image is a summary slide about VPC Peering, highlighting its function, connectivity across regions and accounts, and cost details. It includes three main points with colorful numbered icons.](https://kodekloud.com/kk-media/image/upload/v1752859274/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering/vpc-peering-summary-connectivity-costs.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/c8f3ca76-9178-474e-a33b-bf1de4fd948c/lesson/f791769b-2d8e-481a-b002-f36ad385c8f6)

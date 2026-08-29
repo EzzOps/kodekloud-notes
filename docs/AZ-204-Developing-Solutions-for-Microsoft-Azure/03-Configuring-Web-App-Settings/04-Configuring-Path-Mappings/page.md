@@ -12,7 +12,7 @@ Path mappings on Linux-based applications are vital—especially in containerize
 
 When you access the path mappings section in the Azure portal for a Linux-based app, you will notice an option called mounted storage. This feature facilitates linking external storage solutions, such as Azure File Storage, directly to your containerized application. For example, you might mount an Azure File Share to store images or documents associated with your application.
 
-![The image shows a Linux penguin logo alongside text about configuring path mappings for Linux-based applications and containers, including examples and explanations of mounting storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866191/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Path-Mappings/linux-penguin-path-mappings-config.jpg)
+![The image shows a Linux penguin logo alongside text about configuring path mappings for Linux-based applications and containers, including examples and explanations of mounting storage.](https://kodekloud.com/kk-media/image/upload/v1752866191/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Path-Mappings/linux-penguin-path-mappings-config.jpg)
 
 ## Windows Path Mappings
 
@@ -30,7 +30,7 @@ A handler mapping in IIS specifies how the server should process different file 
 
 These configurations are especially beneficial for complex applications where individual components require unique management or configurations.
 
-![The image is a diagram explaining "Configuring Path Mappings" with sections on handler mappings, virtual applications, and virtual directories, alongside a Windows logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866192/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Path-Mappings/configuring-path-mappings-diagram.jpg)
+![The image is a diagram explaining "Configuring Path Mappings" with sections on handler mappings, virtual applications, and virtual directories, alongside a Windows logo.](https://kodekloud.com/kk-media/image/upload/v1752866192/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Path-Mappings/configuring-path-mappings-diagram.jpg)
 
 ## Using the Azure Portal to Configure Path Mappings
 
@@ -62,7 +62,7 @@ By default, the root is set to `site\wwwroot`, which serves as your application'
 
 Furthermore, the Azure portal enables the configuration of mounted storage settings for containerized applications. By clicking on "New Azure Storage Mount," you can provide a name (e.g., "file share Azure"), select a storage account, and choose the file share to mount. You will also assign a mount path (for example, `/mnt/disk1`) where the storage will be accessible. For more advanced configurations, you can specify the share name and access key in the advanced settings.
 
-![The image shows a Microsoft Azure portal configuration page for a web app, displaying settings for handler mappings, virtual applications, directories, and mount storage. The interface includes options for adding new mappings and storage mounts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866193/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Path-Mappings/azure-portal-web-app-config.jpg)
+![The image shows a Microsoft Azure portal configuration page for a web app, displaying settings for handler mappings, virtual applications, directories, and mount storage. The interface includes options for adding new mappings and storage mounts.](https://kodekloud.com/kk-media/image/upload/v1752866193/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Path-Mappings/azure-portal-web-app-config.jpg)
 
 > **lightbulb** Ensure that the physical paths you specify match the actual paths on your server or container, as discrepancies can result in incorrect routing or application errors.
 

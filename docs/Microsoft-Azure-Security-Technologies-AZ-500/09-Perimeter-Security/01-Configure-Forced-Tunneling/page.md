@@ -17,9 +17,7 @@ In this configuration, traffic from the back-end and mid-tier subnets is forward
 
 For the front-end subnet, direct internet connectivity can remain intact. You have the flexibility to channel some traffic for further inspection without compromising the ability to bypass forced tunneling when necessary.
 
-<Callout icon="lightbulb">
-  If your Azure Firewall was previously deployed without forced tunneling enabled, it will need to be redeployed in forced tunnel mode to support this enhanced traffic redirection configuration.
-</Callout>
+> **lightbulb** If your Azure Firewall was previously deployed without forced tunneling enabled, it will need to be redeployed in forced tunnel mode to support this enhanced traffic redirection configuration.
 
 ## Configuring Forced Tunneling in the Azure Portal
 
@@ -30,15 +28,11 @@ Follow these steps to enable forced tunneling within the Azure Portal:
 3. When you enable forced tunneling, a dedicated public IP address is automatically assigned as the management public IP for the Azure Firewall’s operations. This IP is exclusively used for management purposes and is not shared with any other service.
 4. A dedicated subnet, named "Azure Firewall Management Subnet," is created to enforce policies that route traffic over the site-to-site connection to your on-premises firewall.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a firewall, with options to configure firewall management, policy, virtual network, address space, and public IP address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882150/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Forced-Tunneling/azure-portal-firewall-configuration.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a firewall, with options to configure firewall management, policy, virtual network, address space, and public IP address.](https://kodekloud.com/kk-media/image/upload/v1752882150/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Forced-Tunneling/azure-portal-firewall-configuration.jpg)
 
 Within the Azure Portal, when forced tunneling is enabled, the public IP address field for the firewall becomes optional because the management public IP is used exclusively for platform operations.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a firewall, with fields for virtual network name, address space, subnet, and public IP address configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882151/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Forced-Tunneling/azure-portal-firewall-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a firewall, with fields for virtual network name, address space, subnet, and public IP address configuration.](https://kodekloud.com/kk-media/image/upload/v1752882151/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Forced-Tunneling/azure-portal-firewall-creation.jpg)
 
 If forced tunneling is not enabled, providing a public IP address is mandatory, and that IP will be directly exposed to the internet. With forced tunneling activated, the reserved management public IP is solely dedicated to Azure operations for optimal security.
 
@@ -48,9 +42,7 @@ Another concept related to outbound traffic inspection is VPN forced tunneling. 
 
 Below is an architecture diagram illustrating VPN forced tunneling:
 
-<Frame>
-  ![The image illustrates a network diagram for configuring VPN forced tunneling, showing connections between on-premises infrastructure, a virtual network, and the internet. It includes components like a VPN gateway and different network tiers (backend, mid-tier, frontend).](../../../../images/kodekloud.com/kk-media/image/upload/v1752882152/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Forced-Tunneling/vpn-forced-tunneling-network-diagram.jpg)
-</Frame>
+![The image illustrates a network diagram for configuring VPN forced tunneling, showing connections between on-premises infrastructure, a virtual network, and the internet. It includes components like a VPN gateway and different network tiers (backend, mid-tier, frontend).](https://kodekloud.com/kk-media/image/upload/v1752882152/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Forced-Tunneling/vpn-forced-tunneling-network-diagram.jpg)
 
 Key points from the diagram:
 
@@ -67,6 +59,4 @@ We will soon explore additional methods involving user-defined routes and networ
 
 For more detailed information on configuring Azure Firewall and network routing, refer to the [Azure Documentation](https://docs.microsoft.com/azure/firewall).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/cb10a3ae-53f4-4588-ad61-042af34f31ab/lesson/46c901d7-43ba-4c4d-a7f4-fdfd58bf7e09" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/cb10a3ae-53f4-4588-ad61-042af34f31ab/lesson/46c901d7-43ba-4c4d-a7f4-fdfd58bf7e09)

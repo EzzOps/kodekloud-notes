@@ -19,17 +19,13 @@ Most Git hosting platforms expose a [REST API](https://docs.gitea.io/en-us/api-u
 2. Open the embedded API (Swagger) documentation.
 3. Locate **Pulls** (GitHub) or **Pull Requests** (Gitea) under **Repository**.
 
-<Frame>
-  ![The image shows a list of API endpoints related to repository management, including actions like adding, deleting, and checking collaborators, as well as handling commits and contents. The interface appears to be part of a Swagger API documentation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752870913/notes-assets/images/Certified-Jenkins-Engineer-Demo-Kubernetes-Deploy-Raise-PR/api-endpoints-repository-management.jpg)
-</Frame>
+![The image shows a list of API endpoints related to repository management, including actions like adding, deleting, and checking collaborators, as well as handling commits and contents. The interface appears to be part of a Swagger API documentation.](https://kodekloud.com/kk-media/image/upload/v1752870913/notes-assets/images/Certified-Jenkins-Engineer-Demo-Kubernetes-Deploy-Raise-PR/api-endpoints-repository-management.jpg)
 
 ## Creating a Pull Request via Swagger UI
 
 Search for `pull` and expand the `POST /repos/{owner}/{repo}/pulls` endpoint to view required parameters: `owner`, `repo`, `head`, `base`, `title`, etc.
 
-<Frame>
-  ![The image shows a Gitea API interface for creating a pull request, with fields for the repository owner, name, and options for the pull request.](../../../../images/kodekloud.com/kk-media/image/upload/v1752870914/notes-assets/images/Certified-Jenkins-Engineer-Demo-Kubernetes-Deploy-Raise-PR/gitea-api-pull-request-interface.jpg)
-</Frame>
+![The image shows a Gitea API interface for creating a pull request, with fields for the repository owner, name, and options for the pull request.](https://kodekloud.com/kk-media/image/upload/v1752870914/notes-assets/images/Certified-Jenkins-Engineer-Demo-Kubernetes-Deploy-Raise-PR/gitea-api-pull-request-interface.jpg)
 
 Click **Try it out** and fill in:
 
@@ -39,9 +35,7 @@ Click **Try it out** and fill in:
 * base: `main`
 * title, body, assignees, labels
 
-<Frame>
-  ![The image shows a web interface for creating a pull request using an API, with fields for specifying the repository owner, repository name, and pull request options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752870915/notes-assets/images/Certified-Jenkins-Engineer-Demo-Kubernetes-Deploy-Raise-PR/pull-request-api-interface.jpg)
-</Frame>
+![The image shows a web interface for creating a pull request using an API, with fields for specifying the repository owner, repository name, and pull request options.](https://kodekloud.com/kk-media/image/upload/v1752870915/notes-assets/images/Certified-Jenkins-Engineer-Demo-Kubernetes-Deploy-Raise-PR/pull-request-api-interface.jpg)
 
 ### Request Body Schema
 
@@ -78,10 +72,8 @@ curl -X POST "http://64.227.187.25:5555/api/v1/repos/dasher-org/solar-system-git
   }'
 ```
 
-<Callout icon="lightbulb">
-  * **404 Not Found**: Verify the URL, `owner`, and `repo` names.
+> **lightbulb** * **404 Not Found**: Verify the URL, `owner`, and `repo` names.
   * **401 Unauthorized**: Provide a valid API token prefixed with `token `.
-</Callout>
 
 Authorize via Swagger’s **Authorize** lock icon or add:
 
@@ -164,9 +156,7 @@ pipeline {
 
 The `when { branch 'PR*' }` condition runs this stage only on branches matching `PR*`. After you push, Jenkins will auto-create a PR:
 
-<Frame>
-  ![The image shows a pull request interface with a list of commits and their statuses, including checks and dependencies. Some checks are pending, and there is an option to create a merge commit.](../../../../images/kodekloud.com/kk-media/image/upload/v1752870917/notes-assets/images/Certified-Jenkins-Engineer-Demo-Kubernetes-Deploy-Raise-PR/pull-request-commits-statuses-checks.jpg)
-</Frame>
+![The image shows a pull request interface with a list of commits and their statuses, including checks and dependencies. Some checks are pending, and there is an option to create a merge commit.](https://kodekloud.com/kk-media/image/upload/v1752870917/notes-assets/images/Certified-Jenkins-Engineer-Demo-Kubernetes-Deploy-Raise-PR/pull-request-commits-statuses-checks.jpg)
 
 ## Enforcing Branch Protection
 
@@ -178,21 +168,15 @@ To require successful Jenkins builds before merging:
 | 2    | Click **Add rule** for branch pattern `main`.                                          |
 | 3    | Enable **Require status checks to pass before merging** and select your Jenkins check. |
 
-<Callout icon="triangle-alert">
-  Activating branch protection prevents direct pushes and enforces CI gates before merges.
-</Callout>
+> **triangle-alert** Activating branch protection prevents direct pushes and enforces CI gates before merges.
 
-<Frame>
-  ![The image shows a web interface for setting branch protection rules in a repository, with options for protected branch name patterns and file patterns.](../../../../images/kodekloud.com/kk-media/image/upload/v1752870918/notes-assets/images/Certified-Jenkins-Engineer-Demo-Kubernetes-Deploy-Raise-PR/branch-protection-rules-interface.jpg)
-</Frame>
+![The image shows a web interface for setting branch protection rules in a repository, with options for protected branch name patterns and file patterns.](https://kodekloud.com/kk-media/image/upload/v1752870918/notes-assets/images/Certified-Jenkins-Engineer-Demo-Kubernetes-Deploy-Raise-PR/branch-protection-rules-interface.jpg)
 
 ## Verifying the Pull Request and Merge
 
 Review and merge your PR into `main`:
 
-<Frame>
-  ![The image shows a pull request titled "Updated Docker Image #1" on a code repository platform, with details about commits and options to merge the request.](../../../../images/kodekloud.com/kk-media/image/upload/v1752870919/notes-assets/images/Certified-Jenkins-Engineer-Demo-Kubernetes-Deploy-Raise-PR/updated-docker-image-pull-request.jpg)
-</Frame>
+![The image shows a pull request titled "Updated Docker Image #1" on a code repository platform, with details about commits and options to merge the request.](https://kodekloud.com/kk-media/image/upload/v1752870919/notes-assets/images/Certified-Jenkins-Engineer-Demo-Kubernetes-Deploy-Raise-PR/updated-docker-image-pull-request.jpg)
 
 Argo CD will detect the updated image tag (within \~3 minutes) and sync:
 
@@ -201,9 +185,7 @@ Argo CD will detect the updated image tag (within \~3 minutes) and sync:
 + image: siddharth67/solar-system:946c630393e77939c920a6fab782e4c53d27
 ```
 
-<Frame>
-  ![The image shows an Argo CD application dashboard displaying the status and structure of a "solar-system-argo-app" with components like services, deployments, and pods, all marked as healthy and synced.](../../../../images/kodekloud.com/kk-media/image/upload/v1752870921/notes-assets/images/Certified-Jenkins-Engineer-Demo-Kubernetes-Deploy-Raise-PR/argo-cd-solar-system-dashboard.jpg)
-</Frame>
+![The image shows an Argo CD application dashboard displaying the status and structure of a "solar-system-argo-app" with components like services, deployments, and pods, all marked as healthy and synced.](https://kodekloud.com/kk-media/image/upload/v1752870921/notes-assets/images/Certified-Jenkins-Engineer-Demo-Kubernetes-Deploy-Raise-PR/argo-cd-solar-system-dashboard.jpg)
 
 ## Accessing the Application
 
@@ -248,6 +230,4 @@ kubectl get secret mongo-db-creds -n solar-system -o yaml
 
 This workflow automates PR creation, image updates, and GitOps-driven deployment using Jenkins and Argo CD.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-jenkins-engineer/module/01d04ab3-0694-4c67-bd1a-c3eaaa8d64d3/lesson/8823deeb-9cbd-476f-a8e9-49780e77d0ff" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-jenkins-engineer/module/01d04ab3-0694-4c67-bd1a-c3eaaa8d64d3/lesson/8823deeb-9cbd-476f-a8e9-49780e77d0ff)

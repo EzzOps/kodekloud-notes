@@ -41,13 +41,9 @@ The induction event is both informative and energizing. Bob joins fifteen other 
 
 After the presentation, Bob heads down to the IT floor to collect his key card and laptop. He then takes the elevator to the eighth floor and proceeds to desk 8A.001, where his new manager, Mumshad Mannambeth, awaits him.
 
-<Callout icon="lightbulb">
-  Settling down at his desk, Bob thinks, "It's unboxing time!" The laptop turns out to be an eighth-generation i5 with a 128GB SSD and 8GB of RAM—adequate for now despite the limited disk space. As Bob powers on the laptop, he anticipates the familiar Windows boot screen.
-</Callout>
+> **lightbulb** Settling down at his desk, Bob thinks, "It's unboxing time!" The laptop turns out to be an eighth-generation i5 with a 128GB SSD and 8GB of RAM—adequate for now despite the limited disk space. As Bob powers on the laptop, he anticipates the familiar Windows boot screen.
 
-<Frame>
-  ![A man named Bob attends a meeting, retrieves a laptop from a case labeled "8A-001," and begins working on it, displaying code on the screen.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881109/notes-assets/images/Learning-Linux-Basics-Course-Labs-Bobs-first-day-at-work/frame_310.jpg)
-</Frame>
+![A man named Bob attends a meeting, retrieves a laptop from a case labeled "8A-001," and begins working on it, displaying code on the screen.](https://kodekloud.com/kk-media/image/upload/v1752881109/notes-assets/images/Learning-Linux-Basics-Course-Labs-Bobs-first-day-at-work/frame_310.jpg)
 
 After a few moments of confusing boot messages, Bob exclaims, "This is not Windows... Ah, it's Ubuntu Linux! Sweet!" Although his past experience was mostly with Windows 10 and occasionally macOS, Bob had dabbled in Ubuntu on a spare personal computer and enjoyed exploring open-source software.
 
@@ -85,21 +81,15 @@ After the conversation with Andrew, Bob opens Thunderbird and notices his mailbo
 
 Reviewing the guide, Bob sees that the terminal application isn’t pinned to the taskbar. Following one tip, he clicks on the "Show Applications" launcher and types "terminal" into the search bar. "There you go. I’m in. This is the part I really want to dig into," he muses.
 
-<Frame>
-  ![The image shows a Linux quick start guide, email notifications, a quiz about home directories, a file search task, and a comic-style illustration of a person thinking.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881110/notes-assets/images/Learning-Linux-Basics-Course-Labs-Bobs-first-day-at-work/frame_720.jpg)
-</Frame>
+![The image shows a Linux quick start guide, email notifications, a quiz about home directories, a file search task, and a comic-style illustration of a person thinking.](https://kodekloud.com/kk-media/image/upload/v1752881110/notes-assets/images/Learning-Linux-Basics-Course-Labs-Bobs-first-day-at-work/frame_720.jpg)
 
 With determination, Bob launches the first chapter of the quick start guide and embarks on his journey into the world of Linux.
 
-<Callout icon="lightbulb">
-  When working with Linux, keep your terminal commands handy. Save essential scripts and commands in text files for quick reference.
-</Callout>
+> **lightbulb** When working with Linux, keep your terminal commands handy. Save essential scripts and commands in text files for quick reference.
 
 ```bash theme={null}
 bash
 /home/bob/answer-2.txt
 ```
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/571673f9-96f0-4212-bd13-a61a069c9e1f/lesson/60959660-d122-48cc-8b2d-2081473ceda9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/571673f9-96f0-4212-bd13-a61a069c9e1f/lesson/60959660-d122-48cc-8b2d-2081473ceda9)

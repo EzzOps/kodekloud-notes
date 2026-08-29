@@ -24,9 +24,7 @@ policies           ["root"]
 
 In critical scenarios where Vault’s normal auth is down, you can regenerate a root token using a quorum of recovery keys.
 
-<Frame>
-  ![The image explains how to create a root token using unseal/recovery keys, detailing a three-step process involving initialization, key holder actions, and decoding.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878003/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Root-Tokens/root-token-creation-unseal-keys.jpg)
-</Frame>
+![The image explains how to create a root token using unseal/recovery keys, detailing a three-step process involving initialization, key holder actions, and decoding.](https://kodekloud.com/kk-media/image/upload/v1752878003/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Root-Tokens/root-token-creation-unseal-keys.jpg)
 
 #### Step 1: Initialize Root Generation
 
@@ -85,9 +83,7 @@ Success! Revoked token (if it existed)
 * [Vault Operator Commands](https://www.vaultproject.io/docs/commands/operator)
 * [HashiCorp Vault Best Practices](https://learn.hashicorp.com/collections/vault/best-practices)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/59fe1273-e723-427c-9475-728705cf6c03" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/59fe1273-e723-427c-9475-728705cf6c03)
 
 
 # Service Tokens with Use Limits
@@ -105,9 +101,7 @@ A Use-Limit Token behaves like a standard token—honoring both its `ttl` and `m
 * The token’s time-to-live (TTL) elapses
 * The token’s allowed use count reaches zero
 
-<Callout icon="lightbulb">
-  Revoking on use limits protects against token replay and limits the blast radius if a token is exposed.
-</Callout>
+> **lightbulb** Revoking on use limits protects against token replay and limits the blast radius if a token is exposed.
 
 ### Example Timeline
 

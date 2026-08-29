@@ -118,7 +118,7 @@ Kustomize projects are typically organized into two main sections:
 
 Below is a diagram illustrating a common directory structure for managing these configurations:
 
-![The image illustrates a directory structure for Kubernetes configurations, showing a base directory for shared configs and overlay directories for environment-specific configurations (dev, stg, prod). It highlights the use of Kustomize for managing these configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869807/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Overlays/kubernetes-config-directory-structure.jpg)
+![The image illustrates a directory structure for Kubernetes configurations, showing a base directory for shared configs and overlay directories for environment-specific configurations (dev, stg, prod). It highlights the use of Kustomize for managing these configurations.](https://kodekloud.com/kk-media/image/upload/v1752869807/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Overlays/kubernetes-config-directory-structure.jpg)
 
 > **lightbulb** In this setup, the base folder holds the shared resource files, while each overlay folder contains a `kustomization.yaml` that references the shared resources in the base along with overlays (patches or additional resources) specific to that environment.
 

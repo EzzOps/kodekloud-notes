@@ -50,9 +50,7 @@ mobilenetv3lg-flask     v1.0      1734db15a849   About a minute ago    5.39GB
 hello-world             latest    d2c94e258dc9   20 months ago         13.3kB
 ```
 
-<Callout icon="lightbulb">
-  After optimizing the image by including only CPU dependencies, you may notice a reduction in image size (e.g., from 5.39GB to 1.34GB).
-</Callout>
+> **lightbulb** After optimizing the image by including only CPU dependencies, you may notice a reduction in image size (e.g., from 5.39GB to 1.34GB).
 
 ***
 
@@ -175,11 +173,9 @@ With your Docker image now hosted on Docker Hub, you can seamlessly deploy and s
 
 Happy containerizing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/cd9074ad-839d-4206-b652-89620b04a816" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/cd9074ad-839d-4206-b652-89620b04a816)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/a2426a0c-b7e8-4de8-9d0e-841003658a16" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/a2426a0c-b7e8-4de8-9d0e-841003658a16)
 
 
 # Demo Introduction to Flask

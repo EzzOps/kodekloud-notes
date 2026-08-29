@@ -49,9 +49,7 @@ Key takeaways
 * They are ideal for light-weight separation: experiments, feature branches, and temporary environments.
 * For long-term divergent environments (different resources or lifecycle requirements), prefer separate configurations or dedicated backends.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/0eb3275a-a37d-45a5-86b5-4920e2e44e7c/lesson/cdb9db53-f3d1-4f45-ad6e-635c10a65634" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/0eb3275a-a37d-45a5-86b5-4920e2e44e7c/lesson/cdb9db53-f3d1-4f45-ad6e-635c10a65634)
 
 
 # Workspace Commands
@@ -94,9 +92,7 @@ Subcommands:
 * The active workspace determines which state Terraform reads from and writes to during `plan` and `apply`.
 * Use the built-in expression `terraform.workspace` inside your configuration to adapt resource names or logic by workspace.
 
-<Callout icon="lightbulb">
-  Do not expect Terraform to substitute variables into a backend block during `terraform init`. Backend configuration is evaluated before variable values are applied. If you need workspace-specific backends you must configure them explicitly or use automation outside of Terraform init.
-</Callout>
+> **lightbulb** Do not expect Terraform to substitute variables into a backend block during `terraform init`. Backend configuration is evaluated before variable values are applied. If you need workspace-specific backends you must configure them explicitly or use automation outside of Terraform init.
 
 ***
 

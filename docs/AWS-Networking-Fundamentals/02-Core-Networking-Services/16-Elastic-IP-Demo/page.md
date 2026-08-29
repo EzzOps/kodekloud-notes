@@ -15,9 +15,9 @@ By default, EC2 instances in a public subnet receive a **dynamic** public IP tha
 3. Stop and then restart **myserver** via **Instance state > Stop instance** and **Start instance**.
 4. Observe that its public IP has changed:
 
-![The image shows an AWS EC2 management console with details of a running instance named "myserver." It displays information such as the instance ID, public and private IP addresses, instance type, and status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863211/notes-assets/images/AWS-Networking-Fundamentals-Elastic-IP-Demo/aws-ec2-management-console-myserver.jpg)
+![The image shows an AWS EC2 management console with details of a running instance named "myserver." It displays information such as the instance ID, public and private IP addresses, instance type, and status.](https://kodekloud.com/kk-media/image/upload/v1752863211/notes-assets/images/AWS-Networking-Fundamentals-Elastic-IP-Demo/aws-ec2-management-console-myserver.jpg)
 
-![The image shows an AWS EC2 Management Console with a list of instances, highlighting one named "myserver" that is currently running. The details of the selected instance, including its public and private IP addresses, are displayed below.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863212/notes-assets/images/AWS-Networking-Fundamentals-Elastic-IP-Demo/aws-ec2-management-console-myserver-instance.jpg)
+![The image shows an AWS EC2 Management Console with a list of instances, highlighting one named "myserver" that is currently running. The details of the selected instance, including its public and private IP addresses, are displayed below.](https://kodekloud.com/kk-media/image/upload/v1752863212/notes-assets/images/AWS-Networking-Fundamentals-Elastic-IP-Demo/aws-ec2-management-console-myserver-instance.jpg)
 
 | Public IP Type    | Persistence            | Cost                    | Use Case                       |
 | ----------------- | ---------------------- | ----------------------- | ------------------------------ |
@@ -32,11 +32,11 @@ By default, EC2 instances in a public subnet receive a **dynamic** public IP tha
 2. Click **Allocate Elastic IP address**.
 3. Accept the default settings (Amazon’s IPv4 pool) and click **Allocate**.
 
-![The image shows an AWS console page for allocating an Elastic IP address, with options for selecting a network border group and public IPv4 address pool. There are also sections for global static IP addresses and optional tags.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863214/notes-assets/images/AWS-Networking-Fundamentals-Elastic-IP-Demo/aws-console-elastic-ip-allocation.jpg)
+![The image shows an AWS console page for allocating an Elastic IP address, with options for selecting a network border group and public IPv4 address pool. There are also sections for global static IP addresses and optional tags.](https://kodekloud.com/kk-media/image/upload/v1752863214/notes-assets/images/AWS-Networking-Fundamentals-Elastic-IP-Demo/aws-console-elastic-ip-allocation.jpg)
 
 After allocation, you’ll see your new Elastic IP (e.g., `35.173.92.86`):
 
-![The image shows an AWS Management Console screen where an Elastic IP address has been successfully allocated. The allocated public IPv4 address is 35.173.92.86.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863216/notes-assets/images/AWS-Networking-Fundamentals-Elastic-IP-Demo/aws-management-console-elastic-ip-allocated.jpg)
+![The image shows an AWS Management Console screen where an Elastic IP address has been successfully allocated. The allocated public IPv4 address is 35.173.92.86.](https://kodekloud.com/kk-media/image/upload/v1752863216/notes-assets/images/AWS-Networking-Fundamentals-Elastic-IP-Demo/aws-management-console-elastic-ip-allocated.jpg)
 
 ## 2. Associating the Elastic IP
 
@@ -45,11 +45,11 @@ After allocation, you’ll see your new Elastic IP (e.g., `35.173.92.86`):
 3. For **Resource type**, pick **Instance** and select **myserver**.
 4. If applicable, choose the correct private IP, then click **Associate**.
 
-![The image shows an AWS console interface for associating an Elastic IP address with an EC2 instance. It includes options to select the resource type and instance, with a warning about reassociation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863218/notes-assets/images/AWS-Networking-Fundamentals-Elastic-IP-Demo/aws-console-elastic-ip-ec2-instance.jpg)
+![The image shows an AWS console interface for associating an Elastic IP address with an EC2 instance. It includes options to select the resource type and instance, with a warning about reassociation.](https://kodekloud.com/kk-media/image/upload/v1752863218/notes-assets/images/AWS-Networking-Fundamentals-Elastic-IP-Demo/aws-console-elastic-ip-ec2-instance.jpg)
 
 Once associated, **myserver** will display the Elastic IP as its public address:
 
-![The image shows an AWS Management Console screen where an Elastic IP address has been successfully associated with an EC2 instance. The interface displays details like the public IPv4 address and associated instance ID.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863219/notes-assets/images/AWS-Networking-Fundamentals-Elastic-IP-Demo/aws-management-console-elastic-ip-ec2.jpg)
+![The image shows an AWS Management Console screen where an Elastic IP address has been successfully associated with an EC2 instance. The interface displays details like the public IPv4 address and associated instance ID.](https://kodekloud.com/kk-media/image/upload/v1752863219/notes-assets/images/AWS-Networking-Fundamentals-Elastic-IP-Demo/aws-management-console-elastic-ip-ec2.jpg)
 
 ## 3. Verifying Reachability
 

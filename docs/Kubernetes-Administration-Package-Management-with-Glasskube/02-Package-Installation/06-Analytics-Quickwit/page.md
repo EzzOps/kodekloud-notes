@@ -53,13 +53,9 @@ Optional values commonly used:
 
 Glasskube’s Configure button for namespaced packages lets you supply these values before installation and edit them later.
 
-<Callout icon="lightbulb">
-  You must create the target namespace in your cluster before installing a namespaced package like Quickwit. Glasskube does not auto-create the namespace for you.
-</Callout>
+> **lightbulb** You must create the target namespace in your cluster before installing a namespaced package like Quickwit. Glasskube does not auto-create the namespace for you.
 
-<Callout icon="warning">
-  Treat S3 credentials as secrets. Do not commit access keys to version control. In production, prefer IAM roles, temporary credentials, or Kubernetes secrets referenced by the package configuration.
-</Callout>
+> **warning** Treat S3 credentials as secrets. Do not commit access keys to version control. In production, prefer IAM roles, temporary credentials, or Kubernetes secrets referenced by the package configuration.
 
 ## Quickwit quickstart (local / binary / Docker)
 

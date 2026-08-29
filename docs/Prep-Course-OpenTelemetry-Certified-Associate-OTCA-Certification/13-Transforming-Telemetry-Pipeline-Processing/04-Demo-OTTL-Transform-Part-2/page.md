@@ -134,9 +134,7 @@ This lesson covered basic `set` operations and scoping with contexts and conditi
 * [OTTL specification and examples](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/transformprocessor)
 * [OpenTelemetry Python instrumentation](https://opentelemetry-python.readthedocs.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/3b7cc72b-5faa-439d-8c69-13bff1cbe2ba" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/3b7cc72b-5faa-439d-8c69-13bff1cbe2ba)
 
 
 # Demo OTTL Transform Part 2
@@ -149,9 +147,7 @@ In this lesson we apply the transform processor to logs and metrics. The core id
 
 Key takeaway: the transform processor only affects telemetry for the pipeline it is attached to (traces, metrics, or logs). Make sure you wire it into the correct pipeline.
 
-<Callout icon="lightbulb">
-  When you change the transform configuration, restart the collector and the apps sending telemetry so you can observe the effects.
-</Callout>
+> **lightbulb** When you change the transform configuration, restart the collector and the apps sending telemetry so you can observe the effects.
 
 ***
 
@@ -482,9 +478,7 @@ If you applied `keep_keys(attributes, ["username", "account_number"])`, other ke
 * When iterating on rules, use the collector debug exporter and restart both the collector and telemetry-generating processes so changes take effect.
 * Test incrementally: apply simple transformations first (e.g., set a single attribute), verify output, then expand to more complex rules.
 
-<Callout icon="lightbulb">
-  Use the debug exporter in the collector to inspect the transformed telemetry while you iterate on OTTL rules.
-</Callout>
+> **lightbulb** Use the debug exporter in the collector to inspect the transformed telemetry while you iterate on OTTL rules.
 
 ***
 
@@ -494,8 +488,6 @@ If you applied `keep_keys(attributes, ["username", "account_number"])`, other ke
 * [OTTL (OpenTelemetry Transformation Language) Reference](https://opentelemetry.io/docs/reference/specification/otel-otl/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/4dcf8d5a-bee7-4c5a-999a-b6d6a1bbfdc9" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/4dcf8d5a-bee7-4c5a-999a-b6d6a1bbfdc9)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/06dc04f4-69ee-4fa3-9970-5d371786e296" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/06dc04f4-69ee-4fa3-9970-5d371786e296)

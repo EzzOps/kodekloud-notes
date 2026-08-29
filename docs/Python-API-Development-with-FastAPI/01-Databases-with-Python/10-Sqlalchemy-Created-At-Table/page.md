@@ -27,9 +27,7 @@ class Post(Base):
 
 When the application starts, SQLAlchemy checks if a table named "posts" exists. If it doesn't, SQLAlchemy creates the table with the specified schema. However, if the table already exists, SQLAlchemy will not automatically update its schema—even if the underlying model has been modified.
 
-<Callout icon="lightbulb">
-  Since SQLAlchemy does not automatically alter existing table schemas, you must drop the existing table before restarting the application to allow SQLAlchemy to recreate the table with the new configuration.
-</Callout>
+> **lightbulb** Since SQLAlchemy does not automatically alter existing table schemas, you must drop the existing table before restarting the application to allow SQLAlchemy to recreate the table with the new configuration.
 
 ## FastAPI Endpoints for Users and Items
 
@@ -106,9 +104,7 @@ class Post(Base):
 
 This approach mirrors the method used in pgAdmin, where you manually set a default constraint to `now()`. Verifying the schema in pgAdmin should show the "posts" table containing the columns "id," "title," "content," "published," and "created\_at" with their respective constraints and data types.
 
-<Frame>
-  ![The image shows a pgAdmin interface with a database schema for a table named "posts," displaying columns such as "id," "title," "content," and "published" with their data types and constraints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883389/notes-assets/images/Python-API-Development-with-FastAPI-Sqlalchemy-Created-At-Table/pgadmin-database-schema-posts.jpg)
-</Frame>
+![The image shows a pgAdmin interface with a database schema for a table named "posts," displaying columns such as "id," "title," "content," and "published" with their data types and constraints.](https://kodekloud.com/kk-media/image/upload/v1752883389/notes-assets/images/Python-API-Development-with-FastAPI-Sqlalchemy-Created-At-Table/pgadmin-database-schema-posts.jpg)
 
 After updating the model, drop the existing "posts" table and restart the application. This ensures that SQLAlchemy recreates the table with the new "created\_at" column, configured with a default timestamp.
 
@@ -125,6 +121,4 @@ The query output should display rows where each post has a valid timestamp in th
 
 By following these steps, you ensure that your SQLAlchemy models align with your database schema, providing consistent behavior for default values and timestamps.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/b05b7e69-75e9-4020-9af9-e4a267060ec6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/b05b7e69-75e9-4020-9af9-e4a267060ec6)

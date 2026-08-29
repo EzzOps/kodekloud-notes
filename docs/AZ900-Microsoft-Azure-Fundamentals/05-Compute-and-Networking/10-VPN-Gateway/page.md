@@ -8,7 +8,7 @@ VPN Gateway is a specialized Virtual Network Gateway that enables secure, encryp
 
 Imagine a scenario where your cloud resources reside in an Azure Virtual Network and your on-premises data center requires a secure connection to these resources. The VPN Gateway establishes this secure connection via a VPN tunnel.
 
-![The image is a diagram illustrating a VPN Gateway setup, showing an encrypted traffic gateway connecting an Azure Virtual Network to an on-premises network via a VPN tunnel.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868301/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-VPN-Gateway/vpn-gateway-setup-diagram.jpg)
+![The image is a diagram illustrating a VPN Gateway setup, showing an encrypted traffic gateway connecting an Azure Virtual Network to an on-premises network via a VPN tunnel.](https://kodekloud.com/kk-media/image/upload/v1752868301/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-VPN-Gateway/vpn-gateway-setup-diagram.jpg)
 
 In this architecture, you deploy a VPN Gateway in Azure and connect it to a corresponding gateway device in your on-premises network. The two devices establish a VPN tunnel—a secure pathway that enables data packets to travel between Azure and your on-premises environment. Although the tunnel runs over the public internet, all traffic is fully encrypted, ensuring that the information remains confidential and protected from unauthorized access.
 
@@ -28,7 +28,7 @@ A site-to-site VPN configuration functions like a secure bridge between entire n
 
 For individual device connections—such as those used by remote workers—a point-to-site VPN ensures secure connectivity between personal devices and the Azure Virtual Network. This configuration is particularly beneficial when enabling remote work scenarios, as it grants access to corporate resources without exposing them to the public internet.
 
-![The image outlines key features of a VPN Gateway, highlighting secure connectivity, site-to-site VPN, and point-to-site VPN.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868302/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-VPN-Gateway/vpn-gateway-key-features-diagram.jpg)
+![The image outlines key features of a VPN Gateway, highlighting secure connectivity, site-to-site VPN, and point-to-site VPN.](https://kodekloud.com/kk-media/image/upload/v1752868302/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-VPN-Gateway/vpn-gateway-key-features-diagram.jpg)
 
 ## Benefits
 
@@ -44,7 +44,7 @@ VPN Gateway is designed to accommodate growing organizational requirements. With
 
 As an integral part of the Azure ecosystem, VPN Gateway natively integrates with other Azure services. This integration facilitates smooth communication between cloud and on-premises resources. For instance, a virtual machine in Azure can securely communicate with an on-premises machine over the VPN tunnel without needing a public IP address.
 
-![The image outlines the benefits of a VPN Gateway, highlighting enhanced security, scalability, and integration. Each benefit is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868304/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-VPN-Gateway/vpn-gateway-benefits-icons.jpg)
+![The image outlines the benefits of a VPN Gateway, highlighting enhanced security, scalability, and integration. Each benefit is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752868304/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-VPN-Gateway/vpn-gateway-benefits-icons.jpg)
 
 ## Use Cases
 
@@ -53,7 +53,7 @@ VPN Gateway is ideal for scenarios such as:
 * **Secure On-Premises Extension:** Extending your on-premises network into the cloud through a secure, encrypted site-to-site VPN connection.
 * **Remote Worker Access:** Providing secure access to corporate resources for remote employees using point-to-site VPN connections.
 
-![The image illustrates common use cases for a VPN gateway, showing a cloud connected to two computer monitors, with labels for "Secure on-premises extension" and "Remote worker access."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868304/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-VPN-Gateway/vpn-gateway-use-cases-diagram.jpg)
+![The image illustrates common use cases for a VPN gateway, showing a cloud connected to two computer monitors, with labels for "Secure on-premises extension" and "Remote worker access."](https://kodekloud.com/kk-media/image/upload/v1752868304/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-VPN-Gateway/vpn-gateway-use-cases-diagram.jpg)
 
 > **triangle-alert** Always verify your VPN configurations and encryption protocols to avoid vulnerabilities that could expose your networks to security risks.
 

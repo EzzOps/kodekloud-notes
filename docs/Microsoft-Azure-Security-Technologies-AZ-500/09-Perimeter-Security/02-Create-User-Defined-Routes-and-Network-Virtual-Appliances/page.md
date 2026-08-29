@@ -6,11 +6,9 @@ This guide explains creating user-defined routes and configuring network virtual
 
 In this guide, you will learn how to create user-defined routes (UDRs) and configure network virtual appliances (NVAs) on Azure. We begin by exploring system routes in a virtual network and then demonstrate how to override them with UDRs to enforce traffic inspection by a firewall.
 
-<Callout icon="lightbulb">
-  * Understand how system routes enable default intra-VNet communication.
+> **lightbulb** * Understand how system routes enable default intra-VNet communication.
   * Learn how to override system routes with UDRs to force traffic through NVAs.
   * Configure DNAT and application rules on your firewall to control inbound and outbound traffic.
-</Callout>
 
 ## Understanding System Routes
 
@@ -20,9 +18,7 @@ In a typical virtual network, subnets such as a front-end subnet and a database 
 * Traffic exchange between machines across different subnets within the same virtual network.
 * Virtual machines (VMs) to initiate outbound communication to the Internet (e.g., for updates or NTP), even when inbound Internet traffic is blocked by default (unless explicitly allowed via network security rules).
 
-<Frame>
-  ![The image illustrates a network diagram showing user-defined routes within a virtual network. It includes a frontend subnet and a database subnet, each with specific IP address ranges, connected to a cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882153/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-User-Defined-Routes-and-Network-Virtual-Appliances/network-diagram-virtual-routes.jpg)
-</Frame>
+![The image illustrates a network diagram showing user-defined routes within a virtual network. It includes a frontend subnet and a database subnet, each with specific IP address ranges, connected to a cloud.](https://kodekloud.com/kk-media/image/upload/v1752882153/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-User-Defined-Routes-and-Network-Virtual-Appliances/network-diagram-virtual-routes.jpg)
 
 ## Overriding System Routes with User-Defined Routes
 
@@ -33,9 +29,7 @@ The route table configuration typically includes:
 * Redirecting traffic destined for a specific subnet (e.g., database subnet 192.168.2.0/26) to the NVA.
 * Allowing only permitted traffic, as specified by firewall rules, to reach the database subnet.
 
-<Frame>
-  ![The image illustrates a network diagram of user-defined routes within a virtual network, showing a DMZ subnet, frontend subnet, and database subnet, each with specific IP ranges. It includes a route table and a network virtual appliance (NVA) for managing traffic flow.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882154/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-User-Defined-Routes-and-Network-Virtual-Appliances/network-diagram-user-routes-nva.jpg)
-</Frame>
+![The image illustrates a network diagram of user-defined routes within a virtual network, showing a DMZ subnet, frontend subnet, and database subnet, each with specific IP ranges. It includes a route table and a network virtual appliance (NVA) for managing traffic flow.](https://kodekloud.com/kk-media/image/upload/v1752882154/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-User-Defined-Routes-and-Network-Virtual-Appliances/network-diagram-user-routes-nva.jpg)
 
 When connecting multiple virtual networks—for instance, within a hub-and-spoke architecture—it is essential to enforce route tables in the spoke networks to ensure that all traffic flows through the designated firewall for proper security enforcement.
 
@@ -43,9 +37,7 @@ When connecting multiple virtual networks—for instance, within a hub-and-spoke
 
 Let's explore the process using the Azure portal. In this example, two spoke virtual networks are paired with a hub network where the firewall resides. Initially, traffic within a spoke network (e.g., Spoke A) leverages system routes.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying a list of virtual networks under the "Virtual networks" section. It includes details like network names, resource groups, locations, and subscriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882156/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-User-Defined-Routes-and-Network-Virtual-Appliances/azure-portal-virtual-networks-list.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying a list of virtual networks under the "Virtual networks" section. It includes details like network names, resource groups, locations, and subscriptions.](https://kodekloud.com/kk-media/image/upload/v1752882156/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-User-Defined-Routes-and-Network-Virtual-Appliances/azure-portal-virtual-networks-list.jpg)
 
 ### Testing VM Connectivity
 
@@ -92,15 +84,11 @@ To force specific VM traffic through the firewall, you must apply a UDR by perfo
 2. Add routes that redirect traffic to the firewall’s IP when specific destination criteria are met.
 3. Associate the route table with the target subnet.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a route table, with fields for project and instance details such as subscription, resource group, region, and name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882156/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-User-Defined-Routes-and-Network-Virtual-Appliances/azure-portal-route-table-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a route table, with fields for project and instance details such as subscription, resource group, region, and name.](https://kodekloud.com/kk-media/image/upload/v1752882156/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-User-Defined-Routes-and-Network-Virtual-Appliances/azure-portal-route-table-creation.jpg)
 
 After configuring and associating the route table, use the Network Watcher tool (Next Hop) to verify that traffic meant for a specific destination (e.g., 1.1.1.1) is routed through the firewall instead of following the system route.
 
-<Frame>
-  ![The image shows a Microsoft Azure Network Watcher interface, specifically the "Next hop" tool, where a user is specifying a target virtual machine and destination IP address to view the next hop details. The result indicates the next hop type as "VirtualAppliance" with an IP address of 192.168.0.4.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882158/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-User-Defined-Routes-and-Network-Virtual-Appliances/azure-network-watcher-next-hop.jpg)
-</Frame>
+![The image shows a Microsoft Azure Network Watcher interface, specifically the "Next hop" tool, where a user is specifying a target virtual machine and destination IP address to view the next hop details. The result indicates the next hop type as "VirtualAppliance" with an IP address of 192.168.0.4.](https://kodekloud.com/kk-media/image/upload/v1752882158/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-User-Defined-Routes-and-Network-Virtual-Appliances/azure-network-watcher-next-hop.jpg)
 
 ## Configuring the Route Table for Firewall Traffic
 
@@ -112,9 +100,7 @@ In the route table for Spoke A, you can configure multiple routes such as:
 
 After configuring these routes, use Network Watcher’s Next Hop tool to confirm the effective path for various destinations.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface where a user is adding a route to a route table, configuring settings such as route name, destination type, and next hop type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882159/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-User-Defined-Routes-and-Network-Virtual-Appliances/azure-portal-route-table-config.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface where a user is adding a route to a route table, configuring settings such as route name, destination type, and next hop type.](https://kodekloud.com/kk-media/image/upload/v1752882159/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-User-Defined-Routes-and-Network-Virtual-Appliances/azure-portal-route-table-config.jpg)
 
 Once the new routing is applied, any attempt to access the Internet from the VM will initially be blocked by the firewall (as inbound traffic is blocked by default):
 

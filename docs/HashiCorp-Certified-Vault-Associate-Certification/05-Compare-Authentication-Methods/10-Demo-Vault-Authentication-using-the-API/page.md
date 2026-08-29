@@ -14,9 +14,7 @@ In this guide, we’ll walk through how to authenticate to HashiCorp Vault via O
 | curl          | Issue HTTP requests                        |
 | jq (optional) | Pretty-print JSON                          |
 
-<Callout icon="lightbulb">
-  Installing `jq` is optional but recommended for readable JSON outputs.
-</Callout>
+> **lightbulb** Installing `jq` is optional but recommended for readable JSON outputs.
 
 ***
 
@@ -114,9 +112,7 @@ Which yields:
 }
 ```
 
-<Callout icon="triangle-alert">
-  Never expose your `client_token` in shared scripts or logs. Treat it like a password.
-</Callout>
+> **triangle-alert** Never expose your `client_token` in shared scripts or logs. Treat it like a password.
 
 ***
 
@@ -147,6 +143,4 @@ Reuse this pattern to create, update, or delete secrets and to interact with oth
 * [Okta Auth Method (Vault)](https://www.vaultproject.io/docs/auth/okta)
 * [Installing jq](https://stedolan.github.io/jq/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/975fea9a-ea13-45d2-b158-5d56e3b6ec4f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/975fea9a-ea13-45d2-b158-5d56e3b6ec4f)

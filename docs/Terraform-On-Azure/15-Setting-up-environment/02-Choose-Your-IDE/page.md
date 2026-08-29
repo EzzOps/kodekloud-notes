@@ -6,9 +6,7 @@ Guide to choosing and configuring IDE features and extensions for Terraform HCL 
 
 Choosing the right IDE matters when authoring and maintaining Terraform configurations. A well-selected editor improves developer productivity, catches syntax issues early, and scales with larger infrastructure projects and teams. This guide explains what to look for in an IDE, why those features matter for Terraform/HCL workflows, and suggested editor configuration and extensions—using Visual Studio Code as the running example.
 
-<Callout icon="lightbulb">
-  This article uses Visual Studio Code as an example IDE. The guidance applies to any editor that supports Terraform/HCL, IntelliSense or language-server integration, and the developer workflows you need (linting, formatting, integrated terminal, and source control).
-</Callout>
+> **lightbulb** This article uses Visual Studio Code as an example IDE. The guidance applies to any editor that supports Terraform/HCL, IntelliSense or language-server integration, and the developer workflows you need (linting, formatting, integrated terminal, and source control).
 
 ## What to look for in an IDE
 
@@ -96,9 +94,7 @@ Notes about the example:
 * Use short deterministic suffixes (like `random_string`) for readable, collision-resistant resource names.
 * Prefer the provider data source (e.g., `azurerm_client_config`) to read runtime client info rather than hardcoding credentials or endpoints.
 
-<Callout icon="warning">
-  Avoid storing secrets or long-lived credentials in your workspace files or committing them to Git. Use secret stores (e.g., Azure Key Vault, AWS Secrets Manager) and editor integrations that keep secrets out of plaintext files.
-</Callout>
+> **warning** Avoid storing secrets or long-lived credentials in your workspace files or committing them to Git. Use secret stores (e.g., Azure Key Vault, AWS Secrets Manager) and editor integrations that keep secrets out of plaintext files.
 
 ## Why these IDE features help
 
@@ -129,6 +125,4 @@ Notes about the example:
 
 Now that you know which IDE features to prioritize, the next step is configuring your editor: enable formatting, install the Terraform language server and linters, and set up workspace or remote container development to ensure consistent environments across your team.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/db2adc19-fa48-4b03-9d9a-8ef71c4c28db/lesson/9409821b-1d79-462d-b10c-354e5f1e4dc0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/db2adc19-fa48-4b03-9d9a-8ef71c4c28db/lesson/9409821b-1d79-462d-b10c-354e5f1e4dc0)

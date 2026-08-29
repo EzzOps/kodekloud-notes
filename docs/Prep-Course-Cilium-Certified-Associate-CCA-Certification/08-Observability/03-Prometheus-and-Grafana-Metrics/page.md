@@ -8,9 +8,7 @@ kubectl get svc -n kube-system
 # hubble-ui      ClusterIP   10.96.132.144   <none>        80/TCP    21h
 ```
 
-<Callout icon="lightbulb">
-  Hubble server runs inside the Cilium agent on each node (no separate pod per node). Hubble relay and Hubble UI run as separate deployments/pods and aggregate/visualize node-level flow data.
-</Callout>
+> **lightbulb** Hubble server runs inside the Cilium agent on each node (no separate pod per node). Hubble relay and Hubble UI run as separate deployments/pods and aggregate/visualize node-level flow data.
 
 Installing the Hubble CLI
 
@@ -47,9 +45,7 @@ Or use the Cilium CLI helper:
 cilium hubble port-forward
 ```
 
-<Callout icon="warning">
-  Avoid exposing Hubble relay/UI to the public internet. Use port-forwarding, a secure tunnel, or an authenticated proxy when accessing Hubble from your workstation.
-</Callout>
+> **warning** Avoid exposing Hubble relay/UI to the public internet. Use port-forwarding, a secure tunnel, or an authenticated proxy when accessing Hubble from your workstation.
 
 Using the Hubble CLI
 
@@ -116,9 +112,7 @@ Links and references
 * Cilium documentation: [https://docs.cilium.io/](https://docs.cilium.io/)
 * Kubernetes Concepts: [https://kubernetes.io/docs/concepts/](https://kubernetes.io/docs/concepts/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b4c15752-3e42-43af-bedf-4a4c204ef5d8/lesson/73815b34-0105-4986-a487-e70deb12dcdd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b4c15752-3e42-43af-bedf-4a4c204ef5d8/lesson/73815b34-0105-4986-a487-e70deb12dcdd)
 
 
 # Prometheus and Grafana Metrics

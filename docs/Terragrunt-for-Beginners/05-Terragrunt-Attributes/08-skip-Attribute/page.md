@@ -12,26 +12,18 @@ In this lesson, we explore the `skip` attribute in Terragrunt: a powerful boolea
 * Temporarily disable modules under development or testing
 * Avoid unintentional changes in non-critical environments
 
-<Frame>
-  ![The image shows a diagram with connected nodes and a flag, symbolizing a customized workflow. It includes the text "Customizes workflow" and a button labeled "Benefits."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884280/notes-assets/images/Terragrunt-for-Beginners-skip-Attribute/customized-workflow-diagram-nodes-flag.jpg)
-</Frame>
+![The image shows a diagram with connected nodes and a flag, symbolizing a customized workflow. It includes the text "Customizes workflow" and a button labeled "Benefits."](https://kodekloud.com/kk-media/image/upload/v1752884280/notes-assets/images/Terragrunt-for-Beginners-skip-Attribute/customized-workflow-diagram-nodes-flag.jpg)
 
-<Callout icon="lightbulb">
-  Use the `skip` flag to control module execution dynamically, ensuring only ready and tested modules are deployed.
-</Callout>
+> **lightbulb** Use the `skip` flag to control module execution dynamically, ensuring only ready and tested modules are deployed.
 
 ## Key Considerations
 
 * Skipping critical modules can lead to incomplete infrastructure
 * Ensure dependencies are met before disabling a module
 
-<Frame>
-  ![The image features a diagram with three stacked rectangles connected by arrows, accompanied by the text "Use it judiciously" and a button labeled "Considerations."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884282/notes-assets/images/Terragrunt-for-Beginners-skip-Attribute/stacked-rectangles-diagram-use-it-judiciously.jpg)
-</Frame>
+![The image features a diagram with three stacked rectangles connected by arrows, accompanied by the text "Use it judiciously" and a button labeled "Considerations."](https://kodekloud.com/kk-media/image/upload/v1752884282/notes-assets/images/Terragrunt-for-Beginners-skip-Attribute/stacked-rectangles-diagram-use-it-judiciously.jpg)
 
-<Callout icon="triangle-alert">
-  Never set `skip = true` on production-critical modules. Always verify dependencies to prevent configuration drift.
-</Callout>
+> **triangle-alert** Never set `skip = true` on production-critical modules. Always verify dependencies to prevent configuration drift.
 
 ## skip Attribute Options
 
@@ -114,6 +106,4 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 With `skip` disabled, Terragrunt proceeds to create the VPC as expected.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/f97eff28-1b1d-4f57-be1f-c13661616822" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/f97eff28-1b1d-4f57-be1f-c13661616822)

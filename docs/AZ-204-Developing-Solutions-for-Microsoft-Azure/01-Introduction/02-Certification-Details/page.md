@@ -44,7 +44,7 @@ Security is a critical component of any cloud solution, accounting for another 1
 * Authentication and authorization strategies to safeguard applications.
 * Designing secure cloud solutions that adhere to compliance standards.
 
-![The image outlines topics for the AZ-204 certification, including implementing Azure security, developing compute solutions, developing for Azure storage, monitoring and optimizing, and connecting to services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866676/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Certification-Details/az-204-certification-topics-outline.jpg)
+![The image outlines topics for the AZ-204 certification, including implementing Azure security, developing compute solutions, developing for Azure storage, monitoring and optimizing, and connecting to services.](https://kodekloud.com/kk-media/image/upload/v1752866676/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Certification-Details/az-204-certification-topics-outline.jpg)
 
 > **lightbulb** Azure security isn't just an add-on; it's a crucial aspect that supports every cloud solution you build. Ensure you understand how to implement robust security measures.
 
@@ -67,7 +67,7 @@ Contributing around 20-25% of the exam, this section is dedicated to integrating
 * Implementing message-based and caching solutions for improved performance.
 * Utilizing API Management for seamless integration of your services.
 
-![The image outlines topics for the AZ-204 certification, including areas like developing compute solutions, Azure storage, security, and monitoring. It highlights "Connect to and consume services" with a focus on event-based solutions, message-based solutions, caching, and API management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866677/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Certification-Details/az-204-certification-topics-outline-2.jpg)
+![The image outlines topics for the AZ-204 certification, including areas like developing compute solutions, Azure storage, security, and monitoring. It highlights "Connect to and consume services" with a focus on event-based solutions, message-based solutions, caching, and API management.](https://kodekloud.com/kk-media/image/upload/v1752866677/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Certification-Details/az-204-certification-topics-outline-2.jpg)
 
 ***
 
@@ -77,7 +77,7 @@ Preparing effectively for the AZ-204 exam is essential for success. Here are som
 
 1. Always refer to the [Microsoft Learn documentation](https://learn.microsoft.com) when dealing with complex SDKs.
 
-![The image provides exam tips for the AZ-204 certification, suggesting the use of Microsoft Learn documentation, marking questions for review, and utilizing practice exams.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866679/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Certification-Details/az-204-exam-tips-practice.jpg)
+![The image provides exam tips for the AZ-204 certification, suggesting the use of Microsoft Learn documentation, marking questions for review, and utilizing practice exams.](https://kodekloud.com/kk-media/image/upload/v1752866679/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Certification-Details/az-204-exam-tips-practice.jpg)
 
 2. Mark challenging questions for review and revisit them at the end of the exam.
 3. Take advantage of practice exams available on Microsoft Learn to assess your readiness and solidify your knowledge.
@@ -93,7 +93,7 @@ Practical experience is key when preparing for the AZ-204 exam. This section gui
 * Python or C# SDKs to develop cloud applications.
 * The Azure CLI or PowerShell to deploy and manage your resources via the Azure portal.
 
-![The image is a slide about AZ-204 Certification topics, focusing on code. It suggests using Python or C# SDKs, AzCLI or PowerShell for deployment, and provides a GitHub link for course code.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866680/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Certification-Details/az-204-certification-code-topics.jpg)
+![The image is a slide about AZ-204 Certification topics, focusing on code. It suggests using Python or C# SDKs, AzCLI or PowerShell for deployment, and provides a GitHub link for course code.](https://kodekloud.com/kk-media/image/upload/v1752866680/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Certification-Details/az-204-certification-code-topics.jpg)
 
 For this course, download the sample code from GitHub to follow along with the demos and enhance your development skills.
 

@@ -278,7 +278,7 @@ Helm also provides other useful functions like `quote` (which surrounds a string
 
 These string manipulation functions are just a subset of what Helm offers. Additional functions cover areas such as cryptography, date handling, dictionary operations, Kubernetes object management, networking, type conversion, regular expressions, and URL handling. For a complete list of supported functions, refer to the [official Helm documentation](https://helm.sh/docs/).
 
-![The image shows a grid of colored boxes labeled with different programming and technology-related categories, such as "Cryptographic and Security," "Kubernetes," and "Type Conversion." It appears to be a function list from a coding or software development context.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878955/notes-assets/images/Helm-for-Beginners-Functions/programming-categories-function-list.jpg)
+![The image shows a grid of colored boxes labeled with different programming and technology-related categories, such as "Cryptographic and Security," "Kubernetes," and "Type Conversion." It appears to be a function list from a coding or software development context.](https://kodekloud.com/kk-media/image/upload/v1752878955/notes-assets/images/Helm-for-Beginners-Functions/programming-categories-function-list.jpg)
 
 ## Using the Default Function
 

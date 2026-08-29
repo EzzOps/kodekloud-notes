@@ -94,9 +94,7 @@ certification   hcvop
 
 ### 4.3 Proving Token Isolation
 
-<Callout icon="lightbulb">
-  Cubbyhole paths are isolated per token. No token can access another token’s cubbyhole.
-</Callout>
+> **lightbulb** Cubbyhole paths are isolated per token. No token can access another token’s cubbyhole.
 
 1. **Switch back to root**
    ```bash theme={null}

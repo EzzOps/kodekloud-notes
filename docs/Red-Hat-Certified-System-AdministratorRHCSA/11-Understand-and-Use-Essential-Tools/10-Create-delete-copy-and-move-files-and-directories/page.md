@@ -18,9 +18,7 @@ $ readlink family_dog_shortcut.jpg
 /home/aaron/Pictures/family_dog.jpg
 ```
 
-<Callout icon="lightbulb">
-  The permission bits shown for soft links are generally set to read, write, and execute (RWX) for everyone. However, these permissions do not affect the target file. Writing to the link will adhere to the permissions of the actual destination file.
-</Callout>
+> **lightbulb** The permission bits shown for soft links are generally set to read, write, and execute (RWX) for everyone. However, these permissions do not affect the target file. Writing to the link will adhere to the permissions of the actual destination file.
 
 ## Absolute vs. Relative Paths
 
@@ -44,27 +42,21 @@ bash: fstab_shortcut: Permission denied
 $ ln -s Pictures/family_dog.jpg relative_picture_shortcut
 ```
 
-<Callout icon="triangle-alert">
-  When creating soft links with absolute paths, be aware that any changes in the directory structure can lead to broken links. Using relative paths can provide better resilience against such changes.
-</Callout>
+> **triangle-alert** When creating soft links with absolute paths, be aware that any changes in the directory structure can lead to broken links. Using relative paths can provide better resilience against such changes.
 
 ## Additional Considerations
 
 Soft links are versatile. They can be used not only to reference files but also directories. Furthermore, unlike hard links, soft links can span across different file systems, making them particularly useful for various system management tasks.
 
-<Frame>
-  ![The image illustrates the concept of soft links, showing how they can link to files and folders, including across different filesystems.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883618/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Create-and-manage-soft-links/soft-links-files-folders-illustration.jpg)
-</Frame>
+![The image illustrates the concept of soft links, showing how they can link to files and folders, including across different filesystems.](https://kodekloud.com/kk-media/image/upload/v1752883618/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Create-and-manage-soft-links/soft-links-files-folders-illustration.jpg)
 
 That concludes our discussion on creating and managing soft links in Linux.
 
 Let's move on to some hands-on labs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/74885f57-b142-430f-aa9f-1278868442e8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/74885f57-b142-430f-aa9f-1278868442e8)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/7f9f8e43-8482-49be-955e-e34451ca7f38" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/7f9f8e43-8482-49be-955e-e34451ca7f38)
 
 
 # Create delete copy and move files and directories
@@ -196,16 +188,12 @@ If you're logged in as user Aaron with the starting directory `/home/aaron`, the
 
 Consider this structure: the root directory (/) branches into several subdirectories and further levels until it eventually leads to files like "Invoice.pdf".
 
-<Frame>
-  ![The image shows a filesystem tree diagram with directories and a file path, illustrating the hierarchy from the root directory to a specific file named "Invoice.pdf".](../../../../images/kodekloud.com/kk-media/image/upload/v1752883619/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Create-delete-copy-and-move-files-and-directories/filesystem-tree-diagram-invoice-pdf.jpg)
-</Frame>
+![The image shows a filesystem tree diagram with directories and a file path, illustrating the hierarchy from the root directory to a specific file named "Invoice.pdf".](https://kodekloud.com/kk-media/image/upload/v1752883619/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Create-delete-copy-and-move-files-and-directories/filesystem-tree-diagram-invoice-pdf.jpg)
 
-<Callout icon="lightbulb">
-  * Use `cd /var/log` to change to the `/var/log` directory using an absolute path.
+> **lightbulb** * Use `cd /var/log` to change to the `/var/log` directory using an absolute path.
   * Enter `cd ..` to move up one directory level (to the parent directory).
   * Simply type `cd` without arguments to return to your home directory.
   * Use `cd -` (or `cd --` in some shells) to switch back to your previous directory.
-</Callout>
 
 ## Creating Files and Directories
 
@@ -260,9 +248,7 @@ To duplicate an entire directory and its contents, use the `-r` (recursive) flag
 $ cp -r Receipts/ BackupOfReceipts/
 ```
 
-<Callout icon="triangle-alert">
-  Ensure the destination directory (e.g., `BackupOfReceipts/`) does not exist if you intend to create a new copy of the source directory.
-</Callout>
+> **triangle-alert** Ensure the destination directory (e.g., `BackupOfReceipts/`) does not exist if you intend to create a new copy of the source directory.
 
 ## Moving and Renaming Files and Directories
 
@@ -306,15 +292,11 @@ To delete a directory and all its contents, use the `-r` option:
 $ rm -r Invoices/
 ```
 
-<Callout icon="triangle-alert">
-  Be cautious when using the `rm -r` command. Once executed, recovering a deleted directory and its contents can be difficult.
-</Callout>
+> **triangle-alert** Be cautious when using the `rm -r` command. Once executed, recovering a deleted directory and its contents can be difficult.
 
 Visual aids, like command-line interfaces and directory structure diagrams, can help illustrate how paths reference files such as "Invoice.pdf". However, the commands function independently of any visual representations.
 
-<Frame>
-  ![The image shows a command-line interface on the left and a directory structure on the right, illustrating the path to a file named "Invoice.pdf" under the directories "/", "home", "aaron", and "Invoices".](../../../../images/kodekloud.com/kk-media/image/upload/v1752883620/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Create-delete-copy-and-move-files-and-directories/command-line-directory-structure-invoice.jpg)
-</Frame>
+![The image shows a command-line interface on the left and a directory structure on the right, illustrating the path to a file named "Invoice.pdf" under the directories "/", "home", "aaron", and "Invoices".](https://kodekloud.com/kk-media/image/upload/v1752883620/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Create-delete-copy-and-move-files-and-directories/command-line-directory-structure-invoice.jpg)
 
 ## Summary
 
@@ -329,6 +311,4 @@ In this lesson, you learned how to:
 
 Happy learning and efficient file management in Linux!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/bd3e8383-e6e9-4548-adf3-4ffa6393808b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/bd3e8383-e6e9-4548-adf3-4ffa6393808b)

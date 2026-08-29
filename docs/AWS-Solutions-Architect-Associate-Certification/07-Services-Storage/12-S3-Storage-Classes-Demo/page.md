@@ -12,7 +12,7 @@ This guide demonstrates how to set and modify the storage class for files in Ama
 2. Once the bucket is created, click the **Upload** button and select a file from your computer.
 3. During the upload process, in the file properties section, notice that the default storage class is set to *Standard*.
 
-![The image shows an Amazon S3 console screen displaying different storage class options, including Standard, Intelligent-Tiering, and Glacier, with details on their designed use, availability zones, and minimum storage duration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866087/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes-Demo/amazon-s3-storage-classes-console.jpg)
+![The image shows an Amazon S3 console screen displaying different storage class options, including Standard, Intelligent-Tiering, and Glacier, with details on their designed use, availability zones, and minimum storage duration.](https://kodekloud.com/kk-media/image/upload/v1752866087/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes-Demo/amazon-s3-storage-classes-console.jpg)
 
 > **lightbulb** For optimal cost management, consider selecting the **One Zone Infrequent Access** storage class if your data is accessed less frequently but requires rapid retrieval.
 
@@ -26,7 +26,7 @@ If you need to change the storage class after the upload:
 1. Navigate to the object's properties in the S3 console.
 2. Edit the storage class setting and choose the desired option. For example, you can switch it back to *Standard*.
 
-![The image shows an Amazon S3 console interface displaying details of an object named "beach1.jpg," including its properties, permissions, and versions. It provides information such as the S3 URI, ARN, last modified date, size, and object URL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866088/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes-Demo/amazon-s3-console-beach1-details.jpg)
+![The image shows an Amazon S3 console interface displaying details of an object named "beach1.jpg," including its properties, permissions, and versions. It provides information such as the S3 URI, ARN, last modified date, size, and object URL.](https://kodekloud.com/kk-media/image/upload/v1752866088/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Storage-Classes-Demo/amazon-s3-console-beach1-details.jpg)
 
 > **lightbulb** Changing storage classes can help optimize costs and performance. Review your storage needs and access patterns to select the most appropriate option.
 

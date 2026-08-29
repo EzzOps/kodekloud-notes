@@ -40,7 +40,7 @@ Azure OpenAI services offer accessible tools for integrating AI into real-world 
 
 Utilizing these services can drive innovation and provide a competitive edge across diverse industries.
 
-![The image is a module introduction slide with a gradient background, listing four topics related to Azure OpenAI: exploring, supported models, capabilities, and services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856984/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Module-Introduction/azure-openai-module-introduction.jpg)
+![The image is a module introduction slide with a gradient background, listing four topics related to Azure OpenAI: exploring, supported models, capabilities, and services.](https://kodekloud.com/kk-media/image/upload/v1752856984/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Module-Introduction/azure-openai-module-introduction.jpg)
 
 We invite you to embark on this journey into the future of AI with Azure OpenAI. By the end of this article, you will have a solid understanding of how Azure OpenAI works, the versatility of its models, and the innovative applications possible with these advanced tools.
 

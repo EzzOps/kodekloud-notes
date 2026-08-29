@@ -63,9 +63,7 @@ kill -9 1234
 kill 1234       # defaults to SIGTERM
 ```
 
-<Callout icon="triangle-alert">
-  Using `SIGKILL` (`kill -9`) does not allow cleanup and may leave resources in an inconsistent state. Use `SIGTERM` first.
-</Callout>
+> **triangle-alert** Using `SIGKILL` (`kill -9`) does not allow cleanup and may leave resources in an inconsistent state. Use `SIGTERM` first.
 
 ### Example: Restarting `sshd`
 
@@ -102,9 +100,7 @@ systemctl status sshd.service
   sudo lsof /var/log/messages
   ```
 
-<Callout icon="lightbulb">
-  Use `sudo` when required to avoid permission denied errors.
-</Callout>
+> **lightbulb** Use `sudo` when required to avoid permission denied errors.
 
 ***
 
@@ -117,9 +113,7 @@ That concludes our guide on creating, monitoring, and killing processes in Linux
 * [kill(1) — Linux Manual Page](https://man7.org/linux/man-pages/man1/kill.1.html)
 * [lsof(8) — Linux Manual Page](https://linux.die.net/man/8/lsof)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/46bf5d65-19e7-4d43-b114-6ab5e0322e57" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/46bf5d65-19e7-4d43-b114-6ab5e0322e57)
 
 
 # GNU Screen
@@ -137,9 +131,7 @@ GNU Screen is a **terminal multiplexer** that lets you manage multiple shell ses
 * Detachable sessions that continue running in the background
 * Socket connections, copy/scrollback mode, and extensive customization
 
-<Frame>
-  ![The image is a text description of terminal multiplexers, highlighting features like multiple inputs, session management, window splitting, ease of control, detachment, socket connections, and customization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881390/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-GNU-Screen/terminal-multiplexers-features-description.jpg)
-</Frame>
+![The image is a text description of terminal multiplexers, highlighting features like multiple inputs, session management, window splitting, ease of control, detachment, socket connections, and customization.](https://kodekloud.com/kk-media/image/upload/v1752881390/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-GNU-Screen/terminal-multiplexers-features-description.jpg)
 
 ## Table of Contents
 
@@ -242,9 +234,7 @@ Num  Name               Flags
   Window 0 (bash) killed.
   ```
 
-<Callout icon="lightbulb">
-  When the **last window** closes, the Screen session terminates automatically.
-</Callout>
+> **lightbulb** When the **last window** closes, the Screen session terminates automatically.
 
 ***
 
@@ -316,10 +306,8 @@ You can use the **session name** instead of the PID.
 | Start a session in detached mode (for scripts) | `screen -d -m`           |
 | Detach remote session & reattach here          | `screen -D -r`           |
 
-<Callout icon="lightbulb">
-  Use `man screen` for the complete list of attach/detach options:
+> **lightbulb** Use `man screen` for the complete list of attach/detach options:
   [https://man7.org/linux/man-pages/man1/screen.1.html](https://man7.org/linux/man-pages/man1/screen.1.html)
-</Callout>
 
 ***
 
@@ -334,9 +322,7 @@ Screen’s scrollback mode allows you to browse history and copy text across win
 5. Press **Space** to complete selection
 6. Paste with: `C-a ]`
 
-<Frame>
-  ![The image shows instructions for using GNU Screen's scrollback mode, detailing key combinations for entering scrollback mode, moving to text, and marking the beginning and end of a selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881390/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-GNU-Screen/gnu-screen-scrollback-instructions-key-combinations.jpg)
-</Frame>
+![The image shows instructions for using GNU Screen's scrollback mode, detailing key combinations for entering scrollback mode, moving to text, and marking the beginning and end of a selection.](https://kodekloud.com/kk-media/image/upload/v1752881390/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-GNU-Screen/gnu-screen-scrollback-instructions-key-combinations.jpg)
 
 ***
 
@@ -378,6 +364,4 @@ Edit these files to tailor Screen’s behavior. Consult the [GNU Screen man page
 * [Linux Journal: GNU Screen Tutorial](https://www.linuxjournal.com/article/3460)
 * [man screen (official)](https://man7.org/linux/man-pages/man1/screen.1.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/dad4ccd5-01d7-46c7-90fc-8bad08156a31" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/dad4ccd5-01d7-46c7-90fc-8bad08156a31)

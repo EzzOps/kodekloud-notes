@@ -26,9 +26,7 @@ There are four key reasons to implement Access Reviews:
 4. **Ownership Responsibility:**\
    Resource owners can routinely verify that access rights remain appropriate, ensuring only authorized individuals manage critical data.
 
-<Frame>
-  ![The image explains the importance of access reviews, highlighting the need for appropriate access for new employees, controlling access rights during changes, preventing excessive access, and encouraging regular reviews by resource owners.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881947/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-access-reviews/access-reviews-importance-diagram.jpg)
-</Frame>
+![The image explains the importance of access reviews, highlighting the need for appropriate access for new employees, controlling access rights during changes, preventing excessive access, and encouraging regular reviews by resource owners.](https://kodekloud.com/kk-media/image/upload/v1752881947/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-access-reviews/access-reviews-importance-diagram.jpg)
 
 Access Reviews optimize productivity, facilitate safe transitions, prevent audit complications, and promote responsible management of resources.
 
@@ -56,9 +54,7 @@ Access Reviews should be considered in scenarios such as:
 * **Ongoing Security Management:**\
   Continuous, scheduled reviews maintain proactive security and minimize potential vulnerabilities.
 
-<Frame>
-  ![The image lists six scenarios for using access reviews, including mitigating risks, handling impractical automation, adjusting group access, managing critical data, validating guest access, and ensuring periodic security management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881948/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-access-reviews/access-reviews-scenarios-list.jpg)
-</Frame>
+![The image lists six scenarios for using access reviews, including mitigating risks, handling impractical automation, adjusting group access, managing critical data, validating guest access, and ensuring periodic security management.](https://kodekloud.com/kk-media/image/upload/v1752881948/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-access-reviews/access-reviews-scenarios-list.jpg)
 
 ***
 
@@ -78,9 +74,7 @@ Follow these steps to configure an Access Review in the Azure Portal and set up 
    * For specific groups (e.g., HR Debts), you can further specify whether the review should apply to all users or only guest users.
    * There is an option called "Inactive Users Only". This setting lets you include only users who haven't signed in for a selected period. In this demo, it is unchecked to include everyone.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for setting up a new access review, with options to select review type, scope, and group settings. A warning about license requirements for preview capabilities is also displayed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881949/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-access-reviews/azure-access-review-setup-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for setting up a new access review, with options to select review type, scope, and group settings. A warning about license requirements for preview capabilities is also displayed.](https://kodekloud.com/kk-media/image/upload/v1752881949/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-access-reviews/azure-access-review-setup-interface.jpg)
 
 4. **Configure the Review Process:**
    * Choose between a single-stage or multi-stage review. For simplicity, this guide uses a single-stage review.
@@ -96,25 +90,17 @@ Follow these steps to configure an Access Review in the Azure Portal and set up 
    * Configure email notifications for review completion and enable reviewer decision helpers. These helpers provide recommendations—such as identifying inactive users or assessing user-to-group affiliations—to support informed decision-making.
    * Advanced settings also allow you to require justifications when approving or denying access and set up reminder notifications.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for setting up a new access review, where users can specify reviewers, review duration, and recurrence. A warning about license requirements for preview capabilities is also displayed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881950/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-access-reviews/azure-access-review-setup-interface-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for setting up a new access review, where users can specify reviewers, review duration, and recurrence. A warning about license requirements for preview capabilities is also displayed.](https://kodekloud.com/kk-media/image/upload/v1752881950/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-access-reviews/azure-access-review-setup-interface-2.jpg)
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for setting up a new access review, with options for configuring completion settings and reviewer decision helpers. A warning about license requirements for preview capabilities is also displayed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881954/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-access-reviews/azure-portal-access-review-setup.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for setting up a new access review, with options for configuring completion settings and reviewer decision helpers. A warning about license requirements for preview capabilities is also displayed.](https://kodekloud.com/kk-media/image/upload/v1752881954/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-access-reviews/azure-portal-access-review-setup.jpg)
 
 7. **Finalize the Review:**
    * Provide a descriptive name for the review (e.g., "Demo Review" for demonstration).
    * Click "Review and Create" to launch the Access Review. The review will be scheduled based on the recurrence policy, and notifications will be sent to relevant group administrators.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a new access review, with fields for naming the review and confirming details. A warning about license requirements for preview capabilities is also displayed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881956/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-access-reviews/azure-portal-access-review-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a new access review, with fields for naming the review and confirming details. A warning about license requirements for preview capabilities is also displayed.](https://kodekloud.com/kk-media/image/upload/v1752881956/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-access-reviews/azure-portal-access-review-creation.jpg)
 
-<Callout icon="lightbulb">
-  Ensure that your Azure AD environment meets all licensing requirements for preview capabilities when accessing advanced Access Review settings.
-</Callout>
+> **lightbulb** Ensure that your Azure AD environment meets all licensing requirements for preview capabilities when accessing advanced Access Review settings.
 
 ***
 
@@ -126,6 +112,4 @@ This guide is part of a broader series on Azure Resource Manager. Upcoming secti
 
 Thank you for reading this article.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d856cd5d-a782-4723-82b7-5a6e69cba71d/lesson/db52cbdf-8b51-4780-bd6b-6735f8af7285" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d856cd5d-a782-4723-82b7-5a6e69cba71d/lesson/db52cbdf-8b51-4780-bd6b-6735f8af7285)

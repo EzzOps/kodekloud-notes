@@ -42,10 +42,8 @@ telepresence intercept products-depl \
   --mount=/tmp/products-data
 ```
 
-<Callout icon="lightbulb">
-  When you specify a mount point, ensure the directory exists and you have write permissions.\
+> **lightbulb** When you specify a mount point, ensure the directory exists and you have write permissions.\
   Telepresence won’t create nested directories for you.
-</Callout>
 
 ## 3. Command Reference
 
@@ -95,6 +93,4 @@ products-depl  : intercepted
 * [Kubernetes Volumes](https://kubernetes.io/docs/concepts/storage/volumes/)
 * [Using Telepresence with Stateful Applications](https://www.telepresence.io/docs/latest/topics/stateful/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/790b6ba6-2d7d-4a16-a349-815da1f03b88" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/790b6ba6-2d7d-4a16-a349-815da1f03b88)

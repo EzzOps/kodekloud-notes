@@ -110,13 +110,13 @@ Include an array of resources:
 
 After updating the resource specifications, save your changes and confirm that the policy now supports both actions.
 
-![The image shows an Amazon S3 console with a JSON policy editor open, displaying a resource policy for a bucket. There is an "Unknown Error" message at the bottom indicating an unexpected error occurred.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859679/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-json-policy-error.jpg)
+![The image shows an Amazon S3 console with a JSON policy editor open, displaying a resource policy for a bucket. There is an "Unknown Error" message at the bottom indicating an unexpected error occurred.](https://kodekloud.com/kk-media/image/upload/v1752859679/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-json-policy-error.jpg)
 
-![The image shows an Amazon S3 bucket policy configuration screen with JSON code detailing access permissions. Public access is blocked, and specific user permissions are outlined.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859680/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-policy-json.jpg)
+![The image shows an Amazon S3 bucket policy configuration screen with JSON code detailing access permissions. Public access is blocked, and specific user permissions are outlined.](https://kodekloud.com/kk-media/image/upload/v1752859680/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-policy-json.jpg)
 
-![The image shows an Amazon S3 console screen with settings for blocking public access to a bucket, including a JSON bucket policy configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859682/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-console-block-public-access.jpg)
+![The image shows an Amazon S3 console screen with settings for blocking public access to a bucket, including a JSON bucket policy configuration.](https://kodekloud.com/kk-media/image/upload/v1752859682/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-console-block-public-access.jpg)
 
-![The image shows an Amazon S3 console displaying details of a file named "file1.txt," including its size, type, and last modified date. It also provides information about the file's S3 URI, ARN, and object URL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859683/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-file-details-file1.jpg)
+![The image shows an Amazon S3 console displaying details of a file named "file1.txt," including its size, type, and last modified date. It also provides information about the file's S3 URI, ARN, and object URL.](https://kodekloud.com/kk-media/image/upload/v1752859683/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-file-details-file1.jpg)
 
 ***
 
@@ -141,22 +141,22 @@ If an error occurs when saving the policy, it likely stems from the bucket’s b
 
 After saving, verify public access by obtaining the public URL of an object (e.g., an image) in the `media` folder. Accessing the URL should display or download the file, confirming that the policy works.
 
-![The image shows an Amazon S3 console with a bucket policy editor open, displaying JSON code for setting permissions. The interface includes options to add actions and resources, with a sidebar for navigating AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859685/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-policy-editor.jpg)
+![The image shows an Amazon S3 console with a bucket policy editor open, displaying JSON code for setting permissions. The interface includes options to add actions and resources, with a sidebar for navigating AWS services.](https://kodekloud.com/kk-media/image/upload/v1752859685/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-policy-editor.jpg)
 
-![The image shows an Amazon S3 console with a JSON policy editor open, displaying a bucket policy. There's an error message indicating that the bucket policy changes can't be saved due to permission issues or public access settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859686/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-policy-error.jpg)
+![The image shows an Amazon S3 console with a JSON policy editor open, displaying a bucket policy. There's an error message indicating that the bucket policy changes can't be saved due to permission issues or public access settings.](https://kodekloud.com/kk-media/image/upload/v1752859686/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-policy-error.jpg)
 
-![The image shows an Amazon S3 console screen with settings for blocking public access to a bucket, including a JSON bucket policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859687/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-console-block-public-access-2.jpg)
+![The image shows an Amazon S3 console screen with settings for blocking public access to a bucket, including a JSON bucket policy.](https://kodekloud.com/kk-media/image/upload/v1752859687/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-console-block-public-access-2.jpg)
 
-![The image shows the "Edit Block public access (bucket settings)" page in Amazon S3, where users can configure settings to block public access to buckets and objects. Options include blocking access through ACLs and public bucket policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859689/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/edit-block-public-access-s3.jpg)
+![The image shows the "Edit Block public access (bucket settings)" page in Amazon S3, where users can configure settings to block public access to buckets and objects. Options include blocking access through ACLs and public bucket policies.](https://kodekloud.com/kk-media/image/upload/v1752859689/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/edit-block-public-access-s3.jpg)
 
 After updating the settings and saving the policy:
 
 * Verify that an object in the `media` folder (e.g., an icon or image) can be accessed via its public URL.
 * Confirm that the file displays or downloads correctly.
 
-![The image shows an Amazon S3 bucket permissions page with public access settings and a JSON bucket policy. The bucket is publicly accessible, and the block public access setting is off.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859690/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-permissions-json.jpg)
+![The image shows an Amazon S3 bucket permissions page with public access settings and a JSON bucket policy. The bucket is publicly accessible, and the block public access setting is off.](https://kodekloud.com/kk-media/image/upload/v1752859690/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-permissions-json.jpg)
 
-![The image shows an Amazon S3 console interface displaying details of an object named "image1" within a bucket, including properties like owner, region, and object URL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859692/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-console-image1-details.jpg)
+![The image shows an Amazon S3 console interface displaying details of an object named "image1" within a bucket, including properties like owner, region, and object URL.](https://kodekloud.com/kk-media/image/upload/v1752859692/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-console-image1-details.jpg)
 
 ***
 
@@ -193,15 +193,15 @@ Return to **Account Two** and test again:
   * Deletions in unauthorized folders (like the root) should be blocked.
   * Deleting an object in the `logs` folder (e.g., `log1`) should succeed.
 
-![The image shows an Amazon S3 bucket policy configuration screen with JSON code for setting permissions. The interface includes options for editing statements and selecting services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859693/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-policy-json-3.jpg)
+![The image shows an Amazon S3 bucket policy configuration screen with JSON code for setting permissions. The interface includes options for editing statements and selecting services.](https://kodekloud.com/kk-media/image/upload/v1752859693/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-policy-json-3.jpg)
 
-![The image shows an Amazon S3 console with a bucket policy editor open, displaying JSON code for setting access permissions. The interface includes options for adding actions, resources, and conditions to the policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859694/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-policy-editor-2.jpg)
+![The image shows an Amazon S3 console with a bucket policy editor open, displaying JSON code for setting access permissions. The interface includes options for adding actions, resources, and conditions to the policy.](https://kodekloud.com/kk-media/image/upload/v1752859694/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-policy-editor-2.jpg)
 
-![The image shows an Amazon S3 bucket policy configuration screen, displaying JSON code for setting access permissions. The interface includes options to add actions, resources, and conditions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859696/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-policy-json-4.jpg)
+![The image shows an Amazon S3 bucket policy configuration screen, displaying JSON code for setting access permissions. The interface includes options to add actions, resources, and conditions.](https://kodekloud.com/kk-media/image/upload/v1752859696/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-policy-json-4.jpg)
 
-![The image shows an Amazon S3 bucket policy configuration screen, displaying JSON code for setting access permissions. The interface includes options for editing statements and adding actions, resources, and conditions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859697/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-policy-json-5.jpg)
+![The image shows an Amazon S3 bucket policy configuration screen, displaying JSON code for setting access permissions. The interface includes options for editing statements and adding actions, resources, and conditions.](https://kodekloud.com/kk-media/image/upload/v1752859697/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-policy-json-5.jpg)
 
-![The image shows an Amazon S3 console screen displaying a bucket policy in JSON format, with options to edit statements and save changes. The policy includes permissions for actions like "s3:DeleteObject" and "s3:ListBucket" for specific resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859698/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-policy-json-6.jpg)
+![The image shows an Amazon S3 console screen displaying a bucket policy in JSON format, with options to edit statements and save changes. The policy includes permissions for actions like "s3:DeleteObject" and "s3:ListBucket" for specific resources.](https://kodekloud.com/kk-media/image/upload/v1752859698/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-policy-json-6.jpg)
 
 Back in AWS CloudShell on **Account Two**, verify the following:
 
@@ -209,11 +209,11 @@ Back in AWS CloudShell on **Account Two**, verify the following:
 * Attempting to delete an object in a folder without permission (e.g., `file1.txt`) returns an "Access Denied" error.
 * Deleting an object within the `logs` folder (e.g., `log1`) completes successfully.
 
-![The image shows an AWS CloudShell interface with a command line session where an attempt to list S3 bucket contents results in an "Access Denied" error, followed by a successful listing of files in a different directory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859699/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/aws-cloudshell-access-denied-s3.jpg)
+![The image shows an AWS CloudShell interface with a command line session where an attempt to list S3 bucket contents results in an "Access Denied" error, followed by a successful listing of files in a different directory.](https://kodekloud.com/kk-media/image/upload/v1752859699/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/aws-cloudshell-access-denied-s3.jpg)
 
-![The image shows an AWS CloudShell interface with commands being executed to list and manage files in an S3 bucket, including an "Access Denied" error message.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859700/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/aws-cloudshell-s3-access-denied.jpg)
+![The image shows an AWS CloudShell interface with commands being executed to list and manage files in an S3 bucket, including an "Access Denied" error message.](https://kodekloud.com/kk-media/image/upload/v1752859700/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/aws-cloudshell-s3-access-denied.jpg)
 
-![The image shows an AWS CloudShell interface where a user is attempting to list and delete files in an S3 bucket, encountering "Access Denied" errors for some operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859702/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/aws-cloudshell-s3-access-denied-2.jpg)
+![The image shows an AWS CloudShell interface where a user is attempting to list and delete files in an S3 bucket, encountering "Access Denied" errors for some operations.](https://kodekloud.com/kk-media/image/upload/v1752859702/notes-assets/images/AWS-Certified-Developer-Associate-S3-ACL-and-Resource-Policies-Demo/aws-cloudshell-s3-access-denied-2.jpg)
 
 ***
 

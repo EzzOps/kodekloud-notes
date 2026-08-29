@@ -25,9 +25,7 @@ Cloud security protects the environment that hosts your cluster—public cloud, 
 * Require VPN or bastion host access for all administrative connections.
 * Audit IAM roles and permissions monthly; follow the principle of least privilege.
 
-<Callout icon="lightbulb">
-  Regularly review firewall rules and security group configurations to prevent unintended exposure.
-</Callout>
+> **lightbulb** Regularly review firewall rules and security group configurations to prevent unintended exposure.
 
 ***
 
@@ -40,9 +38,7 @@ The control plane is the heart of Kubernetes. In our breach scenario, the Docker
 * Use OIDC, service accounts, or TLS client certificates for authentication.
 * Keep control plane components and etcd up to date with patches.
 
-<Callout icon="triangle-alert">
-  Disabling the Docker remote API can impact automation scripts. Validate your CI/CD pipelines before rolling this out in production.
-</Callout>
+> **triangle-alert** Disabling the Docker remote API can impact automation scripts. Validate your CI/CD pipelines before rolling this out in production.
 
 ***
 
@@ -55,9 +51,7 @@ Containers should run with the least privilege and only use trusted images. In o
 * Leverage runtimes that support user namespaces, seccomp, and AppArmor profiles.
 * Set CPU, memory limits and use read-only root filesystems.
 
-<Callout icon="lightbulb">
-  Pod Security Admission (PSA) is the replacement for PSP in newer Kubernetes versions. Ensure you migrate policies accordingly.
-</Callout>
+> **lightbulb** Pod Security Admission (PSA) is the replacement for PSP in newer Kubernetes versions. Ensure you migrate policies accordingly.
 
 ***
 
@@ -75,10 +69,6 @@ Application-level flaws—like hard-coded secrets, plaintext environment variabl
 
 ***
 
-<Frame>
-  ![The image illustrates the "4 C's of Cloud Native Security," which include Code, Container, Cluster, and Cloud, each with specific security practices and components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880867/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-The-4Cs-of-Cloud-Native-Security/4-cs-cloud-native-security.jpg)
-</Frame>
+![The image illustrates the "4 C's of Cloud Native Security," which include Code, Container, Cluster, and Cloud, each with specific security practices and components.](https://kodekloud.com/kk-media/image/upload/v1752880867/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-The-4Cs-of-Cloud-Native-Security/4-cs-cloud-native-security.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/a0ddd095-0114-4aa4-b3a5-2b31e773f241/lesson/d7cf008d-bd13-46e2-9571-f380e33e31f0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/a0ddd095-0114-4aa4-b3a5-2b31e773f241/lesson/d7cf008d-bd13-46e2-9571-f380e33e31f0)

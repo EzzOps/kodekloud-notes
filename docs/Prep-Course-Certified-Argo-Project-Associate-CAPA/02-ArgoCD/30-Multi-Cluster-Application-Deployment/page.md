@@ -45,9 +45,7 @@ Quick decision guide
 * Labs / POCs: use non-HA manifests (install.yaml or namespace-install.yaml).
 * Production: use HA manifests or configure HA via Helm; make sure to provision multiple replicas, persistent storage, and appropriate RBAC/permissions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/a98a2a50-e1ce-474f-860a-86ef35a41e2d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/a98a2a50-e1ce-474f-860a-86ef35a41e2d)
 
 
 # Multi Cluster Application Deployment
@@ -71,9 +69,7 @@ Argo CD supports multi-cluster deployments by storing external cluster credentia
 3. Confirm Argo CD created the required ServiceAccount, ClusterRole, and ClusterRoleBinding on the target cluster.
 4. Verify the cluster appears in Argo CD’s cluster list and inspect the stored secret if needed.
 
-<Callout icon="lightbulb">
-  Before running the commands below, ensure you have access to the target cluster API endpoint and appropriate client certificates or tokens. You can also use cloud provider IAM auth (e.g., EKS, GKE) depending on your environment.
-</Callout>
+> **lightbulb** Before running the commands below, ensure you have access to the target cluster API endpoint and appropriate client certificates or tokens. You can also use cloud provider IAM auth (e.g., EKS, GKE) depending on your environment.
 
 ## Example commands
 
@@ -125,9 +121,7 @@ name: 54 bytes        # context name
 server: 21 bytes      # server url
 ```
 
-<Callout icon="warning">
-  When you run `argocd cluster add`, Argo CD will create an `argocd-manager` ServiceAccount with cluster-admin level permissions by default. Limit access and scope where possible — for production, prefer restricting RBAC to the minimum required privileges.
-</Callout>
+> **warning** When you run `argocd cluster add`, Argo CD will create an `argocd-manager` ServiceAccount with cluster-admin level permissions by default. Limit access and scope where possible — for production, prefer restricting RBAC to the minimum required privileges.
 
 ## Quick reference — commands and purpose
 
@@ -156,6 +150,4 @@ server: 21 bytes      # server url
 
 This workflow lets Argo CD act as a single control plane for application deployment across multiple Kubernetes clusters, enabling consistent GitOps-driven rollouts to dev, staging, and production clusters.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/e7ab6911-8176-42a9-ac35-3a90cea16f0e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/e7ab6911-8176-42a9-ac35-3a90cea16f0e)

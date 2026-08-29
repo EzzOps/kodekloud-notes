@@ -14,9 +14,7 @@ Welcome to this walkthrough on exploring normalized tables in an [Azure SQL Data
 2. In Object Explorer, expand **Databases** → *YourDatabase* → **Tables**.
 3. Locate **SalesLT.Customer** and expand it to view columns and keys.
 
-<Frame>
-  ![The image shows a SQL Server Management Studio interface with a database explorer open, displaying the structure of a database named "PhvAz" and highlighting the "CustomerID" column in the "SalesLT.Customer" table.](../../../../images/kodekloud.com/kk-media/image/upload/v1752873071/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Demo-Normalized-Tables/sql-server-management-studio-phvaz-customerid.jpg)
-</Frame>
+![The image shows a SQL Server Management Studio interface with a database explorer open, displaying the structure of a database named "PhvAz" and highlighting the "CustomerID" column in the "SalesLT.Customer" table.](https://kodekloud.com/kk-media/image/upload/v1752873071/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Demo-Normalized-Tables/sql-server-management-studio-phvaz-customerid.jpg)
 
 | Entity           | Description          | Key Columns                                 |
 | ---------------- | -------------------- | ------------------------------------------- |
@@ -26,9 +24,7 @@ Welcome to this walkthrough on exploring normalized tables in an [Azure SQL Data
 | Product          | Product catalog      | `ProductID` (PK)                            |
 | Address          | Address directory    | `AddressID` (PK)                            |
 
-<Callout icon="lightbulb">
-  You can use Azure Data Studio for most tasks, but SSMS provides automated database diagrams for clearer relationship mapping.
-</Callout>
+> **lightbulb** You can use Azure Data Studio for most tasks, but SSMS provides automated database diagrams for clearer relationship mapping.
 
 ***
 
@@ -60,9 +56,7 @@ FROM [SalesLT].[SalesOrderHeader];
 
 You’ll see 32 records and corresponding `CustomerID` values:
 
-<Frame>
-  ![The image shows a SQL Server Management Studio interface with a query result displaying customer data, including fields like CustomerID, Name, CompanyName, and EmailAddress. The left pane shows the database structure with tables and columns.](../../../../images/kodekloud.com/kk-media/image/upload/v1752873074/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Demo-Normalized-Tables/sql-server-management-studio-query-results.jpg)
-</Frame>
+![The image shows a SQL Server Management Studio interface with a query result displaying customer data, including fields like CustomerID, Name, CompanyName, and EmailAddress. The left pane shows the database structure with tables and columns.](https://kodekloud.com/kk-media/image/upload/v1752873074/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Demo-Normalized-Tables/sql-server-management-studio-query-results.jpg)
 
 Next, verify `CustomerID` matches by querying the customer table:
 
@@ -74,13 +68,9 @@ SELECT TOP (1000)
 FROM [SalesLT].[Customer];
 ```
 
-<Frame>
-  ![The image shows a SQL Server Management Studio interface with a query result displaying a table of data, including columns like Ship Date, Status, Sales Order Number, and Customer ID. The left pane shows a database schema with tables and columns.](../../../../images/kodekloud.com/kk-media/image/upload/v1752873075/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Demo-Normalized-Tables/sql-server-management-studio-query-result.jpg)
-</Frame>
+![The image shows a SQL Server Management Studio interface with a query result displaying a table of data, including columns like Ship Date, Status, Sales Order Number, and Customer ID. The left pane shows a database schema with tables and columns.](https://kodekloud.com/kk-media/image/upload/v1752873075/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Demo-Normalized-Tables/sql-server-management-studio-query-result.jpg)
 
-<Callout icon="triangle-alert">
-  Avoid retrieving extremely large datasets without filters in production. Use `WHERE` clauses or `TOP` to limit results and protect performance.
-</Callout>
+> **triangle-alert** Avoid retrieving extremely large datasets without filters in production. Use `WHERE` clauses or `TOP` to limit results and protect performance.
 
 ***
 
@@ -107,9 +97,7 @@ This query returns each order alongside its customer details in one view.
 
 In SSMS Object Explorer, right-click **Database Diagrams** → *New Database Diagram*. Add the relevant tables to auto-generate this schema view:
 
-<Frame>
-  ![The image shows a database diagram in SQL Server Management Studio, displaying tables and their relationships, including "SalesOrderHeader," "SalesOrderDetail," and "Product."](../../../../images/kodekloud.com/kk-media/image/upload/v1752873076/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Demo-Normalized-Tables/sql-server-database-diagram-tables.jpg)
-</Frame>
+![The image shows a database diagram in SQL Server Management Studio, displaying tables and their relationships, including "SalesOrderHeader," "SalesOrderDetail," and "Product."](https://kodekloud.com/kk-media/image/upload/v1752873076/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Demo-Normalized-Tables/sql-server-database-diagram-tables.jpg)
 
 Key relationships illustrated:
 
@@ -138,6 +126,4 @@ Normalization with clear FK–PK constraints:
 * [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/sql/ssms)
 * [Relational Database Normalization](https://en.wikipedia.org/wiki/Database_normalization)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/dp-900-microsoft-azure-data-fundamentals/module/ab06c95a-37f6-40d4-9dd8-b5a6961866b5/lesson/d46ea3f8-00b5-4624-a947-ccfe69131f9c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/dp-900-microsoft-azure-data-fundamentals/module/ab06c95a-37f6-40d4-9dd8-b5a6961866b5/lesson/d46ea3f8-00b5-4624-a947-ccfe69131f9c)

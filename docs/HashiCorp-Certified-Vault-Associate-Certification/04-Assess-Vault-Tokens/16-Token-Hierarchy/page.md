@@ -6,9 +6,7 @@ This article explains how HashiCorp Vault manages token TTL, renewal, revocation
 
 In this lesson, we’ll dive into how HashiCorp Vault manages token time-to-live (TTL), renewal, revocation, and the parent-child relationships that form a token hierarchy. Understanding these concepts is essential for secure, scalable Vault deployments.
 
-<Frame>
-  ![The image is a slide titled "Token Hierarchy," explaining the concept of token time-to-live (TTL) and revocation, with a note that root tokens have no TTL and a sad face emoji.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878005/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Token-Hierarchy/token-hierarchy-ttl-revocation-slide.jpg)
-</Frame>
+![The image is a slide titled "Token Hierarchy," explaining the concept of token time-to-live (TTL) and revocation, with a note that root tokens have no TTL and a sad face emoji.](https://kodekloud.com/kk-media/image/upload/v1752878005/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Token-Hierarchy/token-hierarchy-ttl-revocation-slide.jpg)
 
 ## Token TTL and Renewal
 
@@ -20,9 +18,7 @@ Every Vault token is issued with a TTL—the duration after which Vault automati
 | Renewal before TTL expiry                | Resets the TTL back to its original value, up to the maximum renewable period.           |
 | Exceeding Max Renewable Period           | Vault permanently revokes the token, regardless of further renewal attempts.             |
 
-<Callout icon="lightbulb">
-  Root tokens have no TTL by default. Use `vault token create -policy="root" -ttl="48h"` to issue a root token with a custom TTL.
-</Callout>
+> **lightbulb** Root tokens have no TTL by default. Use `vault token create -policy="root" -ttl="48h"` to issue a root token with a custom TTL.
 
 ## Manual Revocation
 

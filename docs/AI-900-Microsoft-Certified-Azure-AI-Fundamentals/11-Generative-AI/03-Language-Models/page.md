@@ -10,7 +10,7 @@ The training process begins with exposing the model to vast amounts of textual d
 
 After the training phase, the model is ready to make predictions. When given an input prompt—such as "when my bird was"—the decoder utilizes the learned embeddings and language patterns to generate a coherent continuation of the sentence. For instance, the decoder might suggest "chirping" to complete the thought naturally.
 
-![The image is a diagram illustrating a transformer model, showing the process of training and inferencing with an encoder and decoder, and how embeddings represent semantic attributes in multiple dimensions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857013/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Language-Models/transformer-model-training-inferencing-diagram.jpg)
+![The image is a diagram illustrating a transformer model, showing the process of training and inferencing with an encoder and decoder, and how embeddings represent semantic attributes in multiple dimensions.](https://kodekloud.com/kk-media/image/upload/v1752857013/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Language-Models/transformer-model-training-inferencing-diagram.jpg)
 
 > **lightbulb** The encoder-decoder architecture not only allows the language model to understand the context and relationships between words but also to generate coherent and contextually relevant responses.
 

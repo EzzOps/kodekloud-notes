@@ -13,13 +13,9 @@ Every Vault token has an associated accessor that supports exactly four operatio
 * Renew a token’s TTL
 * Revoke a token
 
-<Callout icon="lightbulb">
-  A token accessor cannot be used to authenticate to Vault or perform standard data operations.
-</Callout>
+> **lightbulb** A token accessor cannot be used to authenticate to Vault or perform standard data operations.
 
-<Frame>
-  ![The image is a slide about "Token Accessors," explaining their use as references to tokens and listing actions they can perform, such as looking up properties and renewing tokens. It also notes that token accessors cannot be used for authentication or additional requests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878004/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Token-Accessors/token-accessors-references-actions-slide.jpg)
-</Frame>
+![The image is a slide about "Token Accessors," explaining their use as references to tokens and listing actions they can perform, such as looking up properties and renewing tokens. It also notes that token accessors cannot be used for authentication or additional requests.](https://kodekloud.com/kk-media/image/upload/v1752878004/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Token-Accessors/token-accessors-references-actions-slide.jpg)
 
 ## Token Accessor Operations
 
@@ -116,9 +112,7 @@ vault token revoke -accessor 2ogWa36gDH5ws08VbuxroByx
 Success! Revoked token (if it existed)
 ```
 
-<Callout icon="triangle-alert">
-  Setting `VAULT_TOKEN` to an accessor will **not** permit secret-read or write operations. Always use the actual token for data access.
-</Callout>
+> **triangle-alert** Setting `VAULT_TOKEN` to an accessor will **not** permit secret-read or write operations. Always use the actual token for data access.
 
 Attempting a KV get with an accessor:
 
@@ -145,6 +139,4 @@ Code: 403. Errors:
 * [Vault CLI Reference](https://www.vaultproject.io/docs/commands)
 * [HashiCorp Vault Best Practices](https://learn.hashicorp.com/tutorials/vault/best-practices)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/ed5e572d-c91e-4cb6-829d-9a964f8fbb35" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/ed5e572d-c91e-4cb6-829d-9a964f8fbb35)

@@ -34,27 +34,19 @@ Even though the response body indicates the post is not found, the 200 OK status
 
 A similar approach is taken by GitHub. When you enter a URL for a non-existent repository, GitHub responds with a 404 Not Found error. This is illustrated in the following diagram:
 
-<Frame>
-  ![The image shows a webpage from the Mozilla Developer Network (MDN) detailing HTTP response status codes, including sections on information and successful responses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883434/notes-assets/images/Python-API-Development-with-FastAPI-Change-Status-Codes/mdn-http-response-status-codes.jpg)
-</Frame>
+![The image shows a webpage from the Mozilla Developer Network (MDN) detailing HTTP response status codes, including sections on information and successful responses.](https://kodekloud.com/kk-media/image/upload/v1752883434/notes-assets/images/Python-API-Development-with-FastAPI-Change-Status-Codes/mdn-http-response-status-codes.jpg)
 
 HTTP status codes play a crucial role in communicating the outcome of an operation. For example, when creating an entity via a POST request, the conventional response should be 201 Created rather than the default 200 OK. The diagram below shows a listing of commonly used HTTP status codes:
 
-<Frame>
-  ![The image shows a webpage listing HTTP status codes and their descriptions, including categories like redirection messages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883435/notes-assets/images/Python-API-Development-with-FastAPI-Change-Status-Codes/http-status-codes-listing.jpg)
-</Frame>
+![The image shows a webpage listing HTTP status codes and their descriptions, including categories like redirection messages.](https://kodekloud.com/kk-media/image/upload/v1752883435/notes-assets/images/Python-API-Development-with-FastAPI-Change-Status-Codes/http-status-codes-listing.jpg)
 
 For error responses, the 400 series indicate client-side issues such as a bad request (400) or a missing resource (404), while the 500 series represents server-side errors. The diagram below focuses on the 404 Not Found response:
 
-<Frame>
-  ![The image shows a webpage from the Mozilla Developer Network (MDN) detailing HTTP status codes, specifically focusing on client error responses like "404 Not Found."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883436/notes-assets/images/Python-API-Development-with-FastAPI-Change-Status-Codes/mdn-http-status-codes-404.jpg)
-</Frame>
+![The image shows a webpage from the Mozilla Developer Network (MDN) detailing HTTP status codes, specifically focusing on client error responses like "404 Not Found."](https://kodekloud.com/kk-media/image/upload/v1752883436/notes-assets/images/Python-API-Development-with-FastAPI-Change-Status-Codes/mdn-http-status-codes-404.jpg)
 
 And here is a diagram illustrating various 500-series server error responses:
 
-<Frame>
-  ![The image shows a webpage from Mozilla Developer Network (MDN) detailing various HTTP server error responses, including descriptions of error codes like 500, 501, 502, and others.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883437/notes-assets/images/Python-API-Development-with-FastAPI-Change-Status-Codes/mdn-http-server-error-responses.jpg)
-</Frame>
+![The image shows a webpage from Mozilla Developer Network (MDN) detailing various HTTP server error responses, including descriptions of error codes like 500, 501, 502, and others.](https://kodekloud.com/kk-media/image/upload/v1752883437/notes-assets/images/Python-API-Development-with-FastAPI-Change-Status-Codes/mdn-http-server-error-responses.jpg)
 
 ## Customizing the Response for Non-Existent Posts
 
@@ -87,9 +79,7 @@ def get_post(id: int, response: Response):
     return {"post_detail": post}
 ```
 
-<Callout icon="lightbulb">
-  Using clear and descriptive error messages improves the quality of API responses and the overall developer experience.
-</Callout>
+> **lightbulb** Using clear and descriptive error messages improves the quality of API responses and the overall developer experience.
 
 ## Using HTTPException for Cleaner Error Handling
 
@@ -163,9 +153,7 @@ In this article, we learned how to adjust HTTP status codes in FastAPI by:
 * Utilizing `HTTPException` for cleaner, more consistent error handling.
 * Specifying the default status code for a path operation (e.g., returning 201 Created on POST requests).
 
-<Callout icon="lightbulb">
-  Implementing these techniques enhances the clarity and robustness of your API responses, ensuring that front-end applications receive accurate and contextual feedback for each request.
-</Callout>
+> **lightbulb** Implementing these techniques enhances the clarity and robustness of your API responses, ensuring that front-end applications receive accurate and contextual feedback for each request.
 
 For further reading, consider exploring these resources:
 
@@ -173,6 +161,4 @@ For further reading, consider exploring these resources:
 * [HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 * [REST API Best Practices](https://restfulapi.net/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/6e56daeb-8acf-44bf-bb47-980057551f50" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/6e56daeb-8acf-44bf-bb47-980057551f50)

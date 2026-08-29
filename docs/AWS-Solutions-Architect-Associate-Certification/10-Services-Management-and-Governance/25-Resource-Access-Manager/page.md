@@ -36,7 +36,7 @@ The process to share resources with AWS RAM is straightforward:
 4. **Accept the Share:**\
    On the recipient account, accept the resource share to gain access.
 
-![The image is a step-by-step guide on how to use AWS RAM, detailing the process of creating a resource share, selecting resources, choosing principals, and accepting the resource share request.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865372/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Resource-Access-Manager/aws-ram-resource-share-guide.jpg)
+![The image is a step-by-step guide on how to use AWS RAM, detailing the process of creating a resource share, selecting resources, choosing principals, and accepting the resource share request.](https://kodekloud.com/kk-media/image/upload/v1752865372/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Resource-Access-Manager/aws-ram-resource-share-guide.jpg)
 
 Once the resource share is established, you can continuously monitor, manage, or revoke access as needed.
 

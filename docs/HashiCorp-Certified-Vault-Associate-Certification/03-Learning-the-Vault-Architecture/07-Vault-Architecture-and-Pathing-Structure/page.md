@@ -19,9 +19,7 @@ Vault exposes its functionality exclusively through an HTTPS API. Clients—whet
 * **Cryptographic Barrier**\
   This barrier ensures that all data crossing the boundary between the untrusted storage/network and Vault’s trusted core is automatically encrypted or decrypted. Only authenticated requests carrying valid tokens or credentials may traverse this barrier.
 
-<Frame>
-  ![The image illustrates the architecture of a Vault system, showing components like the core, token store, audit devices, and storage backend, along with API interaction and encrypted storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878228/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Architecture-and-Pathing-Structure/vault-system-architecture-components-diagram.jpg)
-</Frame>
+![The image illustrates the architecture of a Vault system, showing components like the core, token store, audit devices, and storage backend, along with API interaction and encrypted storage.](https://kodekloud.com/kk-media/image/upload/v1752878228/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Architecture-and-Pathing-Structure/vault-system-architecture-components-diagram.jpg)
 
 Vault does not trust external storage or transport. Before any data is written to the backend, it passes through the cryptographic barrier and is encrypted. Likewise, data fetched from storage or received over the network is decrypted only if the caller is properly authenticated.
 
@@ -34,9 +32,7 @@ Every Vault request is routed based on its path prefix. The path determines whic
 * **Audit Devices** (e.g., file, syslog)
 * **System Backend** (mounted at `/sys`)
 
-<Frame>
-  ![The image is a slide titled "Vault Paths," explaining that everything in Vault is path-based, with components like secret engines and auth methods mounted at specified paths. It also mentions that available paths depend on enabled features and that the system backend is mounted at the /sys endpoint.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878230/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Architecture-and-Pathing-Structure/vault-paths-secret-engines-auth-methods.jpg)
-</Frame>
+![The image is a slide titled "Vault Paths," explaining that everything in Vault is path-based, with components like secret engines and auth methods mounted at specified paths. It also mentions that available paths depend on enabled features and that the system backend is mounted at the /sys endpoint.](https://kodekloud.com/kk-media/image/upload/v1752878230/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Architecture-and-Pathing-Structure/vault-paths-secret-engines-auth-methods.jpg)
 
 ### Mounting Engines and Auth Methods
 

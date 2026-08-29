@@ -37,9 +37,7 @@ Two common loop styles
 * Timer loop: runs on a schedule (every few minutes, hourly, nightly). Acts like a cron job and is best for continuous monitoring (e.g., watching for new issues and acting on them).
 * Run-until-done loop: repeats immediately as needed until a finish signal appears, then stops. Requires a precise definition of “done” (for example, “all checks pass”).
 
-<Callout icon="lightbulb">
-  Choose a timer loop for ongoing monitoring and maintenance. Choose a run-until-done loop when you have a concrete goal and a reliable finish signal (for example, all checks pass).
-</Callout>
+> **lightbulb** Choose a timer loop for ongoing monitoring and maintenance. Choose a run-until-done loop when you have a concrete goal and a reliable finish signal (for example, all checks pass).
 
 <Frame>
   <img alt="The image compares two common loop styles: a Timer Loop, which reruns on a schedule, and a Run-until-done Loop, which continues until a goal is met." />
@@ -63,9 +61,7 @@ A repeating engine can be extremely effective — and potentially destructive �
   <img alt="The image illustrates a concept called &#x22;Loop Guardrails&#x22; showing a graph where the score continually increases and never decreases, emphasizing the idea with labels &#x22;It holds&#x22; and &#x22;Undo it.&#x22;" />
 </Frame>
 
-<Callout icon="warning">
-  If an automated step decreases the score, ensure the loop can roll back that change automatically. Never accept regressions as forward progress.
-</Callout>
+> **warning** If an automated step decreases the score, ensure the loop can roll back that change automatically. Never accept regressions as forward progress.
 
 <Frame>
   <img alt="The image is a guide from KodeKloud titled &#x22;Loop Guardrails,&#x22; which emphasizes fixing breaks before adding more, illustrated with a &#x22;Repair first&#x22; flowchart and a &#x22;Pile it on&#x22; section." />
@@ -91,6 +87,4 @@ Links and references
 * Cron (scheduling): [https://en.wikipedia.org/wiki/Cron](https://en.wikipedia.org/wiki/Cron)
 * Continuous integration concepts: [https://en.wikipedia.org/wiki/Continuous\_integration](https://en.wikipedia.org/wiki/Continuous_integration)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/loop-engineering/module/6371e2a8-2e13-4841-ba89-95dd842b1bdd/lesson/0bc57d3f-b47f-4727-966a-4044049ae599" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/loop-engineering/module/6371e2a8-2e13-4841-ba89-95dd842b1bdd/lesson/0bc57d3f-b47f-4727-966a-4044049ae599)

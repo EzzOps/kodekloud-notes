@@ -30,13 +30,9 @@ print(result)
 
 The returned `result` contains the text retrieved from Wikipedia (bounded by `doc_content_chars_max`).
 
-<Callout icon="lightbulb">
-  The Wikipedia tool returns external content suitable for RAG workflows. Tune `top_k_results` and `doc_content_chars_max` to control coverage and token consumption. Use the retrieved text as context to an LLM or to populate a retrieval index.
-</Callout>
+> **lightbulb** The Wikipedia tool returns external content suitable for RAG workflows. Tune `top_k_results` and `doc_content_chars_max` to control coverage and token consumption. Use the retrieved text as context to an LLM or to populate a retrieval index.
 
-<Callout icon="warning">
-  The tool only retrieves content from Wikipedia; it does not call an LLM. Always validate returned facts and be mindful of freshness, attribution, and rate limits when using third-party content.
-</Callout>
+> **warning** The tool only retrieves content from Wikipedia; it does not call an LLM. Always validate returned facts and be mindful of freshness, attribution, and rate limits when using third-party content.
 
 ## Practical notes and recommended patterns
 
@@ -55,9 +51,7 @@ The returned `result` contains the text retrieved from Wikipedia (bounded by `do
 
 This demonstrates the basic usage of the Wikipedia tool. The next section will cover combining multiple tools into an agent for more advanced workflows.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/06905b96-585d-4c9e-835a-d8fcaca76e2a/lesson/dd8b1038-f63d-4623-9cac-2378b7808082" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/06905b96-585d-4c9e-835a-d8fcaca76e2a/lesson/dd8b1038-f63d-4623-9cac-2378b7808082)
 
 
 # Using Yahoo Finance News Tool
@@ -125,13 +119,9 @@ This tool scrapes the Yahoo Finance news pages for the provided ticker (for exam
 
 ## Notes and considerations
 
-<Callout icon="lightbulb">
-  The tool scrapes publicly available pages on Yahoo Finance. Be mindful of rate limits and Yahoo's terms of service. Because scraped content can change rapidly, consider caching results and adding robust network error handling in production systems.
-</Callout>
+> **lightbulb** The tool scrapes publicly available pages on Yahoo Finance. Be mindful of rate limits and Yahoo's terms of service. Because scraped content can change rapidly, consider caching results and adding robust network error handling in production systems.
 
-<Callout icon="warning">
-  This tool is a scraper of third‑party web pages. Always review Yahoo Finance's terms of service before using scraped data in production, and avoid excessive request rates. For high-volume or commercial use, seek official APIs or licensing options.
-</Callout>
+> **warning** This tool is a scraper of third‑party web pages. Always review Yahoo Finance's terms of service before using scraped data in production, and avoid excessive request rates. For high-volume or commercial use, seek official APIs or licensing options.
 
 ## Links and references
 
@@ -140,6 +130,4 @@ This tool scrapes the Yahoo Finance news pages for the provided ticker (for exam
 
 Use this tool as part of a balanced data strategy: combine headlines with authoritative APIs, price data, and internal models to make informed decisions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/06905b96-585d-4c9e-835a-d8fcaca76e2a/lesson/4bc275cc-00ed-474e-b48c-dc83b001b510" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/06905b96-585d-4c9e-835a-d8fcaca76e2a/lesson/4bc275cc-00ed-474e-b48c-dc83b001b510)

@@ -20,7 +20,7 @@ Azure DevOps organizes work around discrete items that move through predefined s
 | Issues         | User stories, bugs, and feature requests            | To Do → Doing → Done |
 | Tasks          | Granular steps to complete an Issue                 | To Do → Doing → Done |
 
-![The image is a flowchart illustrating the introduction of work items, showing a progression from "Epics" to "Issues" to "Tasks."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867403/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Basic/work-items-flowchart-epics-issues-tasks.jpg)
+![The image is a flowchart illustrating the introduction of work items, showing a progression from "Epics" to "Issues" to "Tasks."](https://kodekloud.com/kk-media/image/upload/v1752867403/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Basic/work-items-flowchart-epics-issues-tasks.jpg)
 
 ***
 
@@ -28,7 +28,7 @@ Azure DevOps organizes work around discrete items that move through predefined s
 
 An **Epic** captures a major feature or strategic initiative, often spanning multiple sprints or releases. Use Epics to group related Issues and maintain a high-level overview of your project goals.
 
-![The image illustrates the role of "Epics" in project management, showing a central "Epics" box connected to three "Issue" circles, indicating a hierarchical relationship.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867404/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Basic/epics-project-management-hierarchy-diagram.jpg)
+![The image illustrates the role of "Epics" in project management, showing a central "Epics" box connected to three "Issue" circles, indicating a hierarchical relationship.](https://kodekloud.com/kk-media/image/upload/v1752867404/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Basic/epics-project-management-hierarchy-diagram.jpg)
 
 Within an Epic, you can:
 
@@ -48,7 +48,7 @@ Within an Epic, you can:
 
 Logging work as Issues creates a predictable backlog, replacing ad hoc methods like email or chat.
 
-![The image is an infographic titled "Understanding the Issues," highlighting three steps: tracking user stories, logging bugs and features, and establishing a foundation of planning. Each step is represented by an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867405/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Basic/understanding-issues-infographic-user-stories.jpg)
+![The image is an infographic titled "Understanding the Issues," highlighting three steps: tracking user stories, logging bugs and features, and establishing a foundation of planning. Each step is represented by an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752867405/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Basic/understanding-issues-infographic-user-stories.jpg)
 
 ***
 
@@ -56,7 +56,7 @@ Logging work as Issues creates a predictable backlog, replacing ad hoc methods l
 
 Break each Issue into **Tasks**—the actionable items your team executes. Tasks make it easy to assign work, estimate effort, and monitor daily progress.
 
-![The image is a flowchart illustrating "Detailed Tracking With Tasks," showing the progression from "Epics" to "Issues" and then to "Simpler Tasks."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867406/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Basic/detailed-tracking-flowchart-epics-issues-tasks.jpg)
+![The image is a flowchart illustrating "Detailed Tracking With Tasks," showing the progression from "Epics" to "Issues" and then to "Simpler Tasks."](https://kodekloud.com/kk-media/image/upload/v1752867406/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Basic/detailed-tracking-flowchart-epics-issues-tasks.jpg)
 
 Key benefits of using Tasks:
 
@@ -74,7 +74,7 @@ Follow these steps to get started:
 2. **Group Issues into Epics** for strategic alignment.
 3. **Decompose Issues into Tasks** to define specific action items.
 
-![The image illustrates a flowchart titled "Implementing the Basic Process," showing a hierarchy starting with "Epics" at the top, branching into three categories with icons and documents below each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867407/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Basic/implementing-basic-process-flowchart.jpg)
+![The image illustrates a flowchart titled "Implementing the Basic Process," showing a hierarchy starting with "Epics" at the top, branching into three categories with icons and documents below each.](https://kodekloud.com/kk-media/image/upload/v1752867407/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Basic/implementing-basic-process-flowchart.jpg)
 
 ***
 
@@ -90,7 +90,7 @@ Follow these steps to get started:
 | Enhanced visibility  | Clear state transitions for every work item   |
 | Predictable delivery | Break down complex work into manageable steps |
 
-![The image outlines a basic process implementation with three steps: streamlined work items, effective planning, and enhanced tracking, each represented by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867408/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Basic/process-implementation-three-steps-icons.jpg)
+![The image outlines a basic process implementation with three steps: streamlined work items, effective planning, and enhanced tracking, each represented by an icon.](https://kodekloud.com/kk-media/image/upload/v1752867408/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-Basic/process-implementation-three-steps-icons.jpg)
 
 ***
 

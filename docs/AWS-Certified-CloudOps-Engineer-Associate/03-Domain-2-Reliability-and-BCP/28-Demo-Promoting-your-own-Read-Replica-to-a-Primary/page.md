@@ -12,13 +12,13 @@ In this lesson, we'll guide you through promoting a read replica into a standalo
 
 Begin by accessing the Amazon RDS console and selecting the specific read replica—not the entire cluster or a singular instance. Ensure the replica is available before proceeding. Within the Actions menu, you'll find several options including the ability to temporarily stop the instance. For this demonstration, we will focus on the promotion action.
 
-![The image shows an Amazon RDS dashboard with a list of databases and a dropdown menu displaying various actions like creating a Blue/Green Deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860065/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Promoting-your-own-Read-Replica-to-a-Primary/amazon-rds-dashboard-databases-actions.jpg)
+![The image shows an Amazon RDS dashboard with a list of databases and a dropdown menu displaying various actions like creating a Blue/Green Deployment.](https://kodekloud.com/kk-media/image/upload/v1752860065/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Promoting-your-own-Read-Replica-to-a-Primary/amazon-rds-dashboard-databases-actions.jpg)
 
 ## Step 2: Initiating the Promotion Process
 
 Promoting the read replica temporarily disables automated backups and snapshots as part of the conversion process. Although you can re-enable automated backups after the promotion, they remain turned off during this demonstration to facilitate the transformation of the read replica into a primary instance.
 
-![The image shows an AWS interface for promoting a read replica database, with an option to enable automated backups and a warning about backups being turned off.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860066/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Promoting-your-own-Read-Replica-to-a-Primary/aws-read-replica-promote-backups.jpg)
+![The image shows an AWS interface for promoting a read replica database, with an option to enable automated backups and a warning about backups being turned off.](https://kodekloud.com/kk-media/image/upload/v1752860066/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Promoting-your-own-Read-Replica-to-a-Primary/aws-read-replica-promote-backups.jpg)
 
 > **lightbulb** Remember that promoting a read replica disables automated backups momentarily. Be sure to re-enable backups post-promotion to maintain your data protection strategy.
 
@@ -32,13 +32,13 @@ After the promotion process completes, the instance status will clearly show tha
 
 At this stage, you may choose to rename the instance to better reflect its new primary role, even though other configuration details, such as instance size, remain unchanged.
 
-![The image shows an Amazon RDS dashboard displaying details of a PostgreSQL database instance named "rds-pg-taz-reader1," including its status, CPU usage, and connectivity information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860067/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Promoting-your-own-Read-Replica-to-a-Primary/amazon-rds-postgresql-dashboard.jpg)
+![The image shows an Amazon RDS dashboard displaying details of a PostgreSQL database instance named "rds-pg-taz-reader1," including its status, CPU usage, and connectivity information.](https://kodekloud.com/kk-media/image/upload/v1752860067/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Promoting-your-own-Read-Replica-to-a-Primary/amazon-rds-postgresql-dashboard.jpg)
 
 ## Step 5: Reviewing Logs and Events
 
 Finally, validate the process by reviewing the logs and events. This confirmation ensures that the instance has been successfully promoted and rebooted as a standalone primary. This demonstration illustrates how promoting read replicas can effectively create live copies of your running databases.
 
-![The image shows an Amazon RDS dashboard displaying recent events and logs related to database activities, such as replication status and instance shutdowns and restarts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860068/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Promoting-your-own-Read-Replica-to-a-Primary/amazon-rds-dashboard-events-logs.jpg)
+![The image shows an Amazon RDS dashboard displaying recent events and logs related to database activities, such as replication status and instance shutdowns and restarts.](https://kodekloud.com/kk-media/image/upload/v1752860068/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Promoting-your-own-Read-Replica-to-a-Primary/amazon-rds-dashboard-events-logs.jpg)
 
 > **lightbulb** Keep a close eye on system logs during the promotion process for any unexpected behavior. Monitoring is key to assuring a smooth transition.
 

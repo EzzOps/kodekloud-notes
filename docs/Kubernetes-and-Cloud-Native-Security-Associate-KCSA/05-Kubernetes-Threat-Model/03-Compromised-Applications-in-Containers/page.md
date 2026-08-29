@@ -19,9 +19,7 @@ An attacker exploits a vulnerability in your application or backend service to g
 | Data Exfiltration    | Extract sensitive data—API tokens, database credentials, environment variables—or deploy ransomware against connected data stores.               |
 | Privilege Escalation | Abuse service account tokens or other credentials to interact with the Kubernetes API: list secrets, modify ConfigMaps, or create new resources. |
 
-<Frame>
-  ![The image is a flowchart titled "Compromised Container Attack Tree," illustrating various attack vectors and methods for compromising container environments, such as pushing poisoned images, exfiltrating data, and performing ransomware attacks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880806/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Compromised-Applications-in-Containers/compromised-container-attack-tree-flowchart.jpg)
-</Frame>
+![The image is a flowchart titled "Compromised Container Attack Tree," illustrating various attack vectors and methods for compromising container environments, such as pushing poisoned images, exfiltrating data, and performing ransomware attacks.](https://kodekloud.com/kk-media/image/upload/v1752880806/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Compromised-Applications-in-Containers/compromised-container-attack-tree-flowchart.jpg)
 
 ## Credential and Secret Misuse
 
@@ -30,9 +28,7 @@ Attackers often exploit misconfigured Kubernetes secrets and image-pull credenti
 * Pull-only secrets misconfigured for push\
   An image-pull secret accidentally granted push permissions lets attackers upload malicious images to your registry.
 
-<Callout icon="triangle-alert">
-  Misconfigured secrets can grant attackers both pull and push access to your container registry. Always follow the principle of least privilege.
-</Callout>
+> **triangle-alert** Misconfigured secrets can grant attackers both pull and push access to your container registry. Always follow the principle of least privilege.
 
 * Extracting secrets from Kubernetes\
   By deploying a malicious pod that mounts existing secrets, attackers gain immediate access to environment variables and service tokens.
@@ -68,9 +64,7 @@ By chaining these steps—container compromise, secret extraction, and API abuse
 | Apply Least-Privilege RBAC | Grant each service account only the permissions it needs.                                    |
 | Implement Network Policies | Segment pod communication and limit egress to the Kubernetes API server.                     |
 
-<Callout icon="lightbulb">
-  Regularly audit your cluster and registries to detect unauthorized changes. Consider tools like [Kube-bench](https://github.com/aquasecurity/kube-bench) and [Clair](https://github.com/quay/clair) for ongoing security assessments.
-</Callout>
+> **lightbulb** Regularly audit your cluster and registries to detect unauthorized changes. Consider tools like [Kube-bench](https://github.com/aquasecurity/kube-bench) and [Clair](https://github.com/quay/clair) for ongoing security assessments.
 
 ## Links and References
 
@@ -78,6 +72,4 @@ By chaining these steps—container compromise, secret extraction, and API abuse
 * [Docker Image Security](https://docs.docker.com/engine/security/)
 * [HashiCorp Vault](https://www.vaultproject.io/) for centralized secret management
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/6da25ade-b162-485c-b9b9-f351990e99c2/lesson/bd3e3b3f-5777-4ee8-9fc5-6b068d199ca1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/6da25ade-b162-485c-b9b9-f351990e99c2/lesson/bd3e3b3f-5777-4ee8-9fc5-6b068d199ca1)

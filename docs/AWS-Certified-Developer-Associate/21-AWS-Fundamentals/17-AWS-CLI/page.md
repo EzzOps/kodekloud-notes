@@ -31,7 +31,7 @@ The AWS CLI offers several key advantages:
 
 > **lightbulb** For many scenarios, using the CLI will streamline your workflow and maintain consistency across your team.
 
-![The image displays four colorful icons representing benefits: Efficiency, Configuration Options, Collaboration, and Troubleshooting. Each icon is numbered and has a corresponding graphic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858111/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CLI/benefits-icons-efficiency-config-collab-troubleshoot.jpg)
+![The image displays four colorful icons representing benefits: Efficiency, Configuration Options, Collaboration, and Troubleshooting. Each icon is numbered and has a corresponding graphic.](https://kodekloud.com/kk-media/image/upload/v1752858111/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CLI/benefits-icons-efficiency-config-collab-troubleshoot.jpg)
 
 ## Configuring AWS CLI Credentials
 
@@ -39,7 +39,7 @@ To communicate with AWS, the CLI requires valid credentials, which you can obtai
 
 The diagram below outlines the process of transmitting these credentials from the user to IAM via the CLI:
 
-![The image illustrates the flow of AWS credentials from a user to the AWS Identity and Access Management (IAM) via a Command Line Interface (CLI).](../../../../images/kodekloud.com/kk-media/image/upload/v1752858112/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CLI/aws-credentials-flow-iam-cli.jpg)
+![The image illustrates the flow of AWS credentials from a user to the AWS Identity and Access Management (IAM) via a Command Line Interface (CLI).](https://kodekloud.com/kk-media/image/upload/v1752858112/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CLI/aws-credentials-flow-iam-cli.jpg)
 
 After securing your credentials, configure the CLI by setting your access key and secret key as follows:
 

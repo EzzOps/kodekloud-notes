@@ -12,9 +12,7 @@ OpenTofu lets you provision infrastructure and reference attributes between reso
 * Integrate with resources created by CloudFormation, Ansible, Terraform, or manually.
 * Avoid duplicating state in multiple configurations.
 
-<Callout icon="lightbulb">
-  Data sources are *read-only*. They cannot create, update, or destroy resources. For full lifecycle management, use `resource` blocks instead.
-</Callout>
+> **lightbulb** Data sources are *read-only*. They cannot create, update, or destroy resources. For full lifecycle management, use `resource` blocks instead.
 
 ## Referencing an Existing AWS Key Pair
 
@@ -36,13 +34,9 @@ resource "aws_instance" "cerberus" {
 * The argument `key_name = "alpha"` locates the existing key pair.
 * In the EC2 resource, `data.aws_key_pair.cerberus_key.key_name` provides the fetched value.
 
-<Frame>
-  ![The image shows a section of AWS documentation related to EC2 key pairs, including a search result for "aws\_key\_pair" and an argument reference detailing optional and required parameters for querying key pairs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882900/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Data-Sources/aws-ec2-key-pairs-documentation.jpg)
-</Frame>
+![The image shows a section of AWS documentation related to EC2 key pairs, including a search result for "aws\_key\_pair" and an argument reference detailing optional and required parameters for querying key pairs.](https://kodekloud.com/kk-media/image/upload/v1752882900/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Data-Sources/aws-ec2-key-pairs-documentation.jpg)
 
-<Callout icon="lightbulb">
-  Check the AWS Provider Data Sources documentation for all available arguments and attributes: [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/key\_pair](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/key_pair)
-</Callout>
+> **lightbulb** Check the AWS Provider Data Sources documentation for all available arguments and attributes: [https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/key\_pair](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/key_pair)
 
 ## Filtering Data Sources by Tags
 
@@ -75,9 +69,7 @@ resource "aws_instance" "cerberus" {
 | Terraform State | Managed                      | Not managed                   |
 | Use Case        | Provision infrastructure     | Query existing infrastructure |
 
-<Frame>
-  ![The image compares Terraform "Resource" and "Data Source," highlighting their differences in keywords, functionality, and terminology. It shows that resources create, update, and destroy infrastructure, while data sources only read infrastructure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882901/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Data-Sources/terraform-resource-data-source-comparison.jpg)
-</Frame>
+![The image compares Terraform "Resource" and "Data Source," highlighting their differences in keywords, functionality, and terminology. It shows that resources create, update, and destroy infrastructure, while data sources only read infrastructure.](https://kodekloud.com/kk-media/image/upload/v1752882901/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Data-Sources/terraform-resource-data-source-comparison.jpg)
 
 ## Links and References
 
@@ -86,6 +78,4 @@ resource "aws_instance" "cerberus" {
 * [AWS CloudFormation](https://docs.aws.amazon.com/cloudformation/)
 * [Ansible](https://www.ansible.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/5036c5cd-aa89-4255-8417-70d9b4c7b505" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/5036c5cd-aa89-4255-8417-70d9b4c7b505)

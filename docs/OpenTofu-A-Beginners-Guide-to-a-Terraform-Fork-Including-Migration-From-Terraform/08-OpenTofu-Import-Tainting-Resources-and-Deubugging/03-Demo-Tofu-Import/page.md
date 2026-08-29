@@ -109,9 +109,7 @@ aws ec2 create-key-pair \
 
 This command writes the private key to `jade.pem`.
 
-<Callout icon="triangle-alert">
-  Keep your private keys out of version control. Add `jade.pem` to `.gitignore`.
-</Callout>
+> **triangle-alert** Keep your private keys out of version control. Add `jade.pem` to `.gitignore`.
 
 ## 5. Locate the External EC2 Instance ID
 
@@ -121,9 +119,7 @@ Another EC2 instance named **Jade-MW** was created manually. Retrieve its Instan
 aws ec2 describe-instances --endpoint http://aws:4566
 ```
 
-<Frame>
-  ![The image shows a split screen with a task description on the left about creating and inspecting an AWS EC2 instance using the AWS CLI, and a code editor on the right displaying Terraform configuration files for setting up an AWS instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882873/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Tofu-Import/aws-ec2-instance-terraform-configuration.jpg)
-</Frame>
+![The image shows a split screen with a task description on the left about creating and inspecting an AWS EC2 instance using the AWS CLI, and a code editor on the right displaying Terraform configuration files for setting up an AWS instance.](https://kodekloud.com/kk-media/image/upload/v1752882873/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Tofu-Import/aws-ec2-instance-terraform-configuration.jpg)
 
 Sample JSON excerpt:
 
@@ -184,9 +180,7 @@ resource "aws_instance" "jade-mw" {
 }
 ```
 
-<Callout icon="lightbulb">
-  You can always re-run `tofu show` to confirm attribute names and values for any imported resource.
-</Callout>
+> **lightbulb** You can always re-run `tofu show` to confirm attribute names and values for any imported resource.
 
 ## 8. Validate the Configuration
 
@@ -198,9 +192,7 @@ tofu plan
 
 You should see **0 to add, 0 to change, 0 to destroy**.
 
-<Frame>
-  ![The image shows a coding environment with a task to update a resource configuration using Terraform. The code editor displays a resource block for an AWS instance, and the terminal shows the execution plan output.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882874/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Tofu-Import/terraform-update-resource-aws-instance.jpg)
-</Frame>
+![The image shows a coding environment with a task to update a resource configuration using Terraform. The code editor displays a resource block for an AWS instance, and the terminal shows the execution plan output.](https://kodekloud.com/kk-media/image/upload/v1752882874/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Tofu-Import/terraform-update-resource-aws-instance.jpg)
 
 ***
 
@@ -212,8 +204,6 @@ Congratulations! You’ve successfully imported and now manage an existing AWS E
 * [AWS CLI EC2 Commands](https://docs.aws.amazon.com/cli/latest/reference/ec2/)
 * [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/0fda982f-8bb2-4b57-8009-996870d27e43/lesson/871f5dc8-6a3d-4e31-8afe-f440d7c0014a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/0fda982f-8bb2-4b57-8009-996870d27e43/lesson/871f5dc8-6a3d-4e31-8afe-f440d7c0014a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/0fda982f-8bb2-4b57-8009-996870d27e43/lesson/f7f08470-934f-4686-a955-df201f9ba5dd" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/0fda982f-8bb2-4b57-8009-996870d27e43/lesson/f7f08470-934f-4686-a955-df201f9ba5dd)

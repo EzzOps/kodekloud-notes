@@ -34,9 +34,7 @@ Leveraging continuously updated intelligence feeds from Microsoft, Azure Firewal
 
 Azure Firewall supports both public and private IP addresses. This flexibility enables you to secure public-facing applications as well as manage internal network communications effectively.
 
-<Callout icon="lightbulb">
-  Azure Firewall offers high availability, scalability, redundancy, versatile rule types, proactive threat intelligence, and flexible IP address support, making it a robust security solution for your Azure environment.
-</Callout>
+> **lightbulb** Azure Firewall offers high availability, scalability, redundancy, versatile rule types, proactive threat intelligence, and flexible IP address support, making it a robust security solution for your Azure environment.
 
 ## Azure Firewall Variants
 
@@ -56,9 +54,7 @@ Key features of the Standard Firewall include:
 
 Below is a diagram that illustrates the Azure Firewall Standard setup, demonstrating its integration with various components like spoke VNets, on-premises connections, and policy-driven traffic filtering:
 
-<Frame>
-  ![The image is a diagram illustrating the Azure Firewall Standard setup, showing its integration with VNET/VWAN, user configuration policies, and threat intelligence for traffic filtering. It includes components like Spoke VNets, on-premises connections, and indicates that traffic is denied by default unless explicitly allowed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882171/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Explore-Azure-Firewall-features/azure-firewall-standard-setup-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating the Azure Firewall Standard setup, showing its integration with VNET/VWAN, user configuration policies, and threat intelligence for traffic filtering. It includes components like Spoke VNets, on-premises connections, and indicates that traffic is denied by default unless explicitly allowed.](https://kodekloud.com/kk-media/image/upload/v1752882171/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Explore-Azure-Firewall-features/azure-firewall-standard-setup-diagram.jpg)
 
 ### Azure Firewall Premium
 
@@ -73,9 +69,7 @@ Premium features include:
 
 The diagram below details the features and structure of Azure Firewall Premium, including TLS inspection, IDPS, URL filtering, and web categories:
 
-<Frame>
-  ![The image is a diagram illustrating the features and structure of Azure Firewall Premium, including TLS inspection, IDPS, URL filtering, and web categories, with connections to spoke VNets and on-premises traffic filtering. Traffic is denied by default, and the diagram shows the flow of data through the firewall.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882171/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Explore-Azure-Firewall-features/azure-firewall-premium-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating the features and structure of Azure Firewall Premium, including TLS inspection, IDPS, URL filtering, and web categories, with connections to spoke VNets and on-premises traffic filtering. Traffic is denied by default, and the diagram shows the flow of data through the firewall.](https://kodekloud.com/kk-media/image/upload/v1752882171/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Explore-Azure-Firewall-features/azure-firewall-premium-diagram.jpg)
 
 ## Azure Firewall Manager
 
@@ -92,9 +86,7 @@ Azure Firewall Manager is a centralized management solution that simplifies the 
 
 The following diagram shows the centralized management architecture, where multiple Azure Firewall instances across various regions are managed by a global administrator using Azure Firewall Manager:
 
-<Frame>
-  ![The image is a diagram of the Azure Firewall Manager, illustrating the integration of Azure Firewall with Zscaler, secured vHub, and Hub VNet, managed by global and local admins. It shows connections to HQ/Branch, end-user devices, and data centers via Virtual WAN, ER, and VPN.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882172/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Explore-Azure-Firewall-features/azure-firewall-manager-diagram.jpg)
-</Frame>
+![The image is a diagram of the Azure Firewall Manager, illustrating the integration of Azure Firewall with Zscaler, secured vHub, and Hub VNet, managed by global and local admins. It shows connections to HQ/Branch, end-user devices, and data centers via Virtual WAN, ER, and VPN.](https://kodekloud.com/kk-media/image/upload/v1752882172/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Explore-Azure-Firewall-features/azure-firewall-manager-diagram.jpg)
 
 Azure Firewall Manager is particularly valuable for organizations operating multiple firewalls—such as having a primary firewall in West Europe and a disaster recovery firewall in North Europe—by ensuring consistent policy enforcement across regions.
 
@@ -104,10 +96,6 @@ With a clear understanding of Azure Firewall’s capabilities—including the di
 
 For more details on getting started and best practices, visit the [Azure Firewall documentation](https://docs.microsoft.com/en-us/azure/firewall/).
 
-<Callout icon="lightbulb">
-  Explore additional resources such as [Azure Networking Overview](https://docs.microsoft.com/en-us/azure/networking/) and [Microsoft Threat Protection](https://www.microsoft.com/security/) to further enhance your cybersecurity strategy.
-</Callout>
+> **lightbulb** Explore additional resources such as [Azure Networking Overview](https://docs.microsoft.com/en-us/azure/networking/) and [Microsoft Threat Protection](https://www.microsoft.com/security/) to further enhance your cybersecurity strategy.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/cb10a3ae-53f4-4588-ad61-042af34f31ab/lesson/4671886e-0e8f-4ff7-808e-d6772c5b9de9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/cb10a3ae-53f4-4588-ad61-042af34f31ab/lesson/4671886e-0e8f-4ff7-808e-d6772c5b9de9)

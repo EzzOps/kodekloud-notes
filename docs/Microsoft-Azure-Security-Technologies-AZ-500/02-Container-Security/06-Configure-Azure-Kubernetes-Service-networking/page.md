@@ -20,9 +20,7 @@ AKS networking handles three primary traffic types:
 
 Internal communication within the Kubernetes cluster utilizes the ClusterIP service. This default service assigns a single IP address to a group of ports, facilitating seamless internal communication. The diagram below demonstrates how traffic is directed to a ClusterIP on port 80 before being forwarded into the cluster.
 
-<Frame>
-  ![The image is a diagram illustrating Azure Kubernetes Service (AKS) networking, showing how internal and external traffic is routed through ClusterIP, NodePort, and LoadBalancer to AKS nodes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881743/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-Kubernetes-Service-networking/aks-networking-diagram-traffic-routing.jpg)
-</Frame>
+![The image is a diagram illustrating Azure Kubernetes Service (AKS) networking, showing how internal and external traffic is routed through ClusterIP, NodePort, and LoadBalancer to AKS nodes.](https://kodekloud.com/kk-media/image/upload/v1752881743/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-Kubernetes-Service-networking/aks-networking-diagram-traffic-routing.jpg)
 
 ### Incoming Direct Traffic
 
@@ -32,17 +30,13 @@ For exposing services externally on a specific port, Kubernetes uses the NodePor
 
 The LoadBalancer service is utilized when external traffic is not addressed directly. This service is commonly used in production scenarios, where an Azure Load Balancer distributes inbound traffic from port 80 to the corresponding backend pods. The process is depicted in the diagram below:
 
-<Frame>
-  ![The image is a configuration screen for Azure Kubernetes Service Networking, showing options for creating a Kubernetes cluster with networking settings using either "Kubenet" or "Azure CNI."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881745/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-Kubernetes-Service-networking/azure-kubernetes-service-networking.jpg)
-</Frame>
+![The image is a configuration screen for Azure Kubernetes Service Networking, showing options for creating a Kubernetes cluster with networking settings using either "Kubenet" or "Azure CNI."](https://kodekloud.com/kk-media/image/upload/v1752881745/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-Kubernetes-Service-networking/azure-kubernetes-service-networking.jpg)
 
 ## Creating Services with Manifests
 
 Kubernetes services in AKS are defined using YAML manifests. These manifests specify selectors, ports, and the service type (such as ClusterIP, NodePort, or LoadBalancer) required for your application. Tools like `kubectl` are used to deploy these manifests into your cluster.
 
-<Callout icon="lightbulb">
-  Review your YAML manifests carefully to ensure that service selectors and port mappings correctly mirror your application's requirements.
-</Callout>
+> **lightbulb** Review your YAML manifests carefully to ensure that service selectors and port mappings correctly mirror your application's requirements.
 
 ## Container Network Interface (CNI)
 
@@ -57,9 +51,7 @@ When managing container networks in Azure, you have two primary options:
 | Azure CNI         | Direct integration with Azure virtual networks where each pod receives an IP address from the subnet | Leverages native network security features such as Network Security Groups (NSGs), route tables, and firewalls | Can result in higher IP consumption                                     |
 | Kubenet           | A lightweight networking plugin that performs NAT for pods using Azure infrastructure                | Lower IP consumption with a simplified networking setup                                                        | Offers less granular control over network traffic compared to Azure CNI |
 
-<Callout icon="triangle-alert">
-  Using Azure CNI is generally recommended for production workloads due to its superior security features and comprehensive network control.
-</Callout>
+> **triangle-alert** Using Azure CNI is generally recommended for production workloads due to its superior security features and comprehensive network control.
 
 ## Conclusion
 
@@ -69,6 +61,4 @@ In the upcoming sections, we will further elaborate on these networking concepts
 
 For more in-depth information on Kubernetes networking, consider visiting [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) and the [Kubernetes Documentation](https://kubernetes.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/146650b0-63f9-4c4b-b452-716a780e5fc7/lesson/ee0f13c8-31fd-4d65-923e-d00804947785" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/146650b0-63f9-4c4b-b452-716a780e5fc7/lesson/ee0f13c8-31fd-4d65-923e-d00804947785)

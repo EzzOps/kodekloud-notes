@@ -41,9 +41,7 @@ Azure offers several levers to reduce cost depending on workload profile, variab
 * Azure Hybrid Benefit lets you reuse eligible on-premises licenses to reduce Azure compute and SQL costs.
 * Spot VMs use surplus capacity at deep discounts but can be evicted; design for interruptions.
 
-<Callout icon="lightbulb">
-  Spot VMs deliver large savings for interruptible workloads. Build fault-tolerance with checkpoints, retries, or stateless designs to handle evictions gracefully.
-</Callout>
+> **lightbulb** Spot VMs deliver large savings for interruptible workloads. Build fault-tolerance with checkpoints, retries, or stateless designs to handle evictions gracefully.
 
 <Frame>
   <img alt="The image is an infographic about choosing the right cost optimization strategy on Azure, detailing four options: Azure Advisor, Reserved Instances, Azure Hybrid Benefit, and Spot Instances, each with a brief description." />
@@ -81,9 +79,7 @@ Automation reduces manual effort and improves consistency in reporting and enfor
   * [https://learn.microsoft.com/azure/azure-resource-manager/bicep/](https://learn.microsoft.com/azure/azure-resource-manager/bicep/)
 * Auto-Shutdown Policies: Schedule idle non-production VMs to shut down to avoid paying for unused compute—use DevTest Labs or native scheduling for large savings.
 
-<Callout icon="lightbulb">
-  Before rolling out auto-shutdown broadly, validate service dependencies and scheduled jobs (e.g., CI/CD runners) to prevent unexpected disruptions.
-</Callout>
+> **lightbulb** Before rolling out auto-shutdown broadly, validate service dependencies and scheduled jobs (e.g., CI/CD runners) to prevent unexpected disruptions.
 
 <Frame>
   <img alt="The image is a diagram about cost management automation, featuring four components: Cost Management APIs, Power BI Integration, ARM Templates, and Auto-Shutdown Policies, each with a brief description." />
@@ -95,9 +91,7 @@ Automation reduces manual effort and improves consistency in reporting and enfor
 * Key levers: tagging and allocation, policies and RBAC, reserved capacity and hybrid licensing, Advisor recommendations, and automation via APIs and IaC.
 * Treat cost management as a continuous process: keep documentation, tag standards, and policies current; review Advisor and reservation utilization regularly.
 
-<Callout icon="lightbulb">
-  Maintain living documentation for tagging and cost policies. Regularly review Advisor recommendations, RI utilization, and policy effectiveness to keep costs aligned with business needs.
-</Callout>
+> **lightbulb** Maintain living documentation for tagging and cost policies. Regularly review Advisor recommendations, RI utilization, and policy effectiveness to keep costs aligned with business needs.
 
 That concludes this lesson. See you in the next one.
 
@@ -112,8 +106,6 @@ That concludes this lesson. See you in the next one.
 * ARM Templates and Bicep: [https://learn.microsoft.com/azure/azure-resource-manager/templates/](https://learn.microsoft.com/azure/azure-resource-manager/templates/) and [https://learn.microsoft.com/azure/azure-resource-manager/bicep/](https://learn.microsoft.com/azure/azure-resource-manager/bicep/)
 * Power BI integration: [https://learn.microsoft.com/azure/cost-management-billing/costs/connect-to-power-bi](https://learn.microsoft.com/azure/cost-management-billing/costs/connect-to-power-bi)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/b623bd4d-2f47-4afb-a61b-f224315cfbe1/lesson/ee5fb289-f089-43cf-a1bf-99dd38dd0424" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/b623bd4d-2f47-4afb-a61b-f224315cfbe1/lesson/ee5fb289-f089-43cf-a1bf-99dd38dd0424)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/b623bd4d-2f47-4afb-a61b-f224315cfbe1/lesson/0556d213-a483-44ff-a46a-773215e9e448" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/b623bd4d-2f47-4afb-a61b-f224315cfbe1/lesson/0556d213-a483-44ff-a46a-773215e9e448)

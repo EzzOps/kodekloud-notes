@@ -38,9 +38,7 @@ Next, choose the appropriate provisioner. For this demonstration, select **no pr
 
 Click **Create** to finalize your Storage Class.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift console interface where a user is configuring a storage class, including setting a reclaim policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882799/notes-assets/images/OpenShift-4-Persistent-Storage-Static-vs-Dynamic-Provisioning-StorageClasses/openshift-console-storage-class-configuration.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift console interface where a user is configuring a storage class, including setting a reclaim policy.](https://kodekloud.com/kk-media/image/upload/v1752882799/notes-assets/images/OpenShift-4-Persistent-Storage-Static-vs-Dynamic-Provisioning-StorageClasses/openshift-console-storage-class-configuration.jpg)
 
 Once the Storage Class is created, you can view its YAML definition. To verify it via the terminal, run:
 
@@ -50,9 +48,7 @@ oc get storageclass
 
 This command displays the current Storage Classes, including the one you just set up.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift console displaying details of a storage class named "localstorageclass," including its reclaim policy, default class status, and volume binding mode.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882800/notes-assets/images/OpenShift-4-Persistent-Storage-Static-vs-Dynamic-Provisioning-StorageClasses/openshift-console-localstorageclass-details.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift console displaying details of a storage class named "localstorageclass," including its reclaim policy, default class status, and volume binding mode.](https://kodekloud.com/kk-media/image/upload/v1752882800/notes-assets/images/OpenShift-4-Persistent-Storage-Static-vs-Dynamic-Provisioning-StorageClasses/openshift-console-localstorageclass-details.jpg)
 
 ## Creating a Persistent Volume Claim
 
@@ -67,22 +63,14 @@ To utilize your newly created Storage Class, create a Persistent Volume Claim (P
 7. Keep the volume mode as **File System** unless block storage is required.
 8. Click **Create** to complete the process.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift interface for creating a PersistentVolumeClaim, with options for setting the name, access mode, size, and volume mode.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882802/notes-assets/images/OpenShift-4-Persistent-Storage-Static-vs-Dynamic-Provisioning-StorageClasses/openshift-persistentvolumeclaim-interface.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift interface for creating a PersistentVolumeClaim, with options for setting the name, access mode, size, and volume mode.](https://kodekloud.com/kk-media/image/upload/v1752882802/notes-assets/images/OpenShift-4-Persistent-Storage-Static-vs-Dynamic-Provisioning-StorageClasses/openshift-persistentvolumeclaim-interface.jpg)
 
 After completing the steps, your Storage Class and PVC will be ready. The behavior of the PVC may vary depending on your OpenShift installation. For example, if you are running OpenShift on Azure, configure the PVC to point to Azure storage. The same applies to AWS or other cloud providers.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift console displaying details of a PersistentVolumeClaim named "localstorageclass-claim," which is currently in a pending status. The requested capacity is 10 GiB, and the volume mode is set to filesystem.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882803/notes-assets/images/OpenShift-4-Persistent-Storage-Static-vs-Dynamic-Provisioning-StorageClasses/openshift-persistentvolumeclaim-pending.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift console displaying details of a PersistentVolumeClaim named "localstorageclass-claim," which is currently in a pending status. The requested capacity is 10 GiB, and the volume mode is set to filesystem.](https://kodekloud.com/kk-media/image/upload/v1752882803/notes-assets/images/OpenShift-4-Persistent-Storage-Static-vs-Dynamic-Provisioning-StorageClasses/openshift-persistentvolumeclaim-pending.jpg)
 
-<Callout icon="lightbulb">
-  Remember to adjust configurations based on your specific environment and storage requirements.
-</Callout>
+> **lightbulb** Remember to adjust configurations based on your specific environment and storage requirements.
 
 This article detailed the process for creating a Storage Class and a Persistent Volume Claim in OpenShift, providing a step-by-step guide to ensure proper configuration for both static and dynamic storage provisioning. For more detailed information on storage configuration in OpenShift, consult the [OpenShift Documentation](https://docs.openshift.com/container-platform/4.8/storage/index.html).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/781f2132-bbce-4251-a3f4-15199e74b515" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/781f2132-bbce-4251-a3f4-15199e74b515)

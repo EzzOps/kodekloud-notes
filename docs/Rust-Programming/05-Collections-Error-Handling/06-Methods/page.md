@@ -103,9 +103,7 @@ fn main() {
 }
 ```
 
-<Callout icon="lightbulb">
-  This example demonstrates how methods encapsulate behavior within a struct, enhancing code readability and reusability.
-</Callout>
+> **lightbulb** This example demonstrates how methods encapsulate behavior within a struct, enhancing code readability and reusability.
 
 ## Calling Methods with Dot Notation
 
@@ -183,9 +181,7 @@ fn main() {
 
 In this example, the `fmt` method defines custom formatting for `Point`. The `println!` macro then uses this implementation to display the point in the desired format.
 
-<Callout icon="lightbulb">
-  Implementing traits like `Display` not only improves output readability but also enhances the overall flexibility of your custom types.
-</Callout>
+> **lightbulb** Implementing traits like `Display` not only improves output readability but also enhances the overall flexibility of your custom types.
 
 ## Summary
 
@@ -202,6 +198,4 @@ These practices help in writing organized, reusable, and idiomatic Rust code. Ha
 * [Rust Documentation](https://doc.rust-lang.org/)
 * [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/29fbe393-bae3-4a16-8fc5-a854a2400daa/lesson/7a387db0-6123-4eb5-adc4-e4445d308fd3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/29fbe393-bae3-4a16-8fc5-a854a2400daa/lesson/7a387db0-6123-4eb5-adc4-e4445d308fd3)

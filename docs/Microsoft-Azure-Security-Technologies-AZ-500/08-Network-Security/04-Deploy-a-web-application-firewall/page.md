@@ -30,9 +30,7 @@ Comprehensive logging and monitoring capabilities ensure that all web applicatio
 
 Azure WAF shields your applications against a range of web-based attacks using OWASP core rule sets.
 
-<Frame>
-  ![The image outlines key features of deploying a Web Application Firewall, including layered defense, built-in security policies, custom rule sets, threat intelligence integration, and logging and monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882100/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-web-application-firewall/web-application-firewall-features.jpg)
-</Frame>
+![The image outlines key features of deploying a Web Application Firewall, including layered defense, built-in security policies, custom rule sets, threat intelligence integration, and logging and monitoring.](https://kodekloud.com/kk-media/image/upload/v1752882100/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-web-application-firewall/web-application-firewall-features.jpg)
 
 ## How Azure WAF Works
 
@@ -56,39 +54,27 @@ Azure WAF implements OWASP Top 10 rulesets to protect your applications against 
 
 Azure WAF is versatile enough to secure on-premises, Azure-hosted, and other cloud-based applications. While on-premises and third-party cloud applications usually connect via the public network, Azure services benefit from the secure Azure global network.
 
-<Frame>
-  ![The image is a diagram illustrating the deployment of a Web Application Firewall (WAF) within a network, showing connections between Azure regions, public networks, and on-premises systems, with features like global WAF policy and OWASP protection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882102/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-web-application-firewall/waf-deployment-diagram-azure-network.jpg)
-</Frame>
+![The image is a diagram illustrating the deployment of a Web Application Firewall (WAF) within a network, showing connections between Azure regions, public networks, and on-premises systems, with features like global WAF policy and OWASP protection.](https://kodekloud.com/kk-media/image/upload/v1752882102/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-web-application-firewall/waf-deployment-diagram-azure-network.jpg)
 
-<Callout icon="lightbulb">
-  Traffic from bots, hackers, and mass downloaders can be blocked based on the rules configured within the WAF.
-</Callout>
+> **lightbulb** Traffic from bots, hackers, and mass downloaders can be blocked based on the rules configured within the WAF.
 
 ## Configuring Azure WAF via the Azure Portal
 
 Navigate to the Azure portal to view and manage the Web Application Firewall in action. This example demonstrates using the Web Application Firewall V2 SKU attached to an Application Gateway. If you are already using a Standard V2 Application Gateway, note that upgrading from V1 to V2 requires a redeployment using a Microsoft-provided script.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface focused on the "Application Gateway" under "Load Balancing Services," with details of a specific gateway named "color-appgw" displayed on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882103/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-web-application-firewall/azure-portal-application-gateway.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface focused on the "Application Gateway" under "Load Balancing Services," with details of a specific gateway named "color-appgw" displayed on the right.](https://kodekloud.com/kk-media/image/upload/v1752882103/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-web-application-firewall/azure-portal-application-gateway.jpg)
 
 Within the WAF settings, you can view the applied policy. Initially set to detection mode, the policy logs suspicious requests without blocking them, allowing you to fine-tune rules before switching to prevention mode for active blocking.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for managing a Web Application Firewall (WAF) policy, with options for policy settings, managed rules, and associated application gateways.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882104/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-web-application-firewall/azure-portal-waf-policy-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for managing a Web Application Firewall (WAF) policy, with options for policy settings, managed rules, and associated application gateways.](https://kodekloud.com/kk-media/image/upload/v1752882104/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-web-application-firewall/azure-portal-waf-policy-interface.jpg)
 
 Under the policy settings, you can inspect request bodies for additional vulnerability analysis.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for configuring a Web Application Firewall (WAF) policy, with options to set request body size and file upload size limits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882105/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-web-application-firewall/azure-portal-waf-policy-configuration.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for configuring a Web Application Firewall (WAF) policy, with options to set request body size and file upload size limits.](https://kodekloud.com/kk-media/image/upload/v1752882105/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-web-application-firewall/azure-portal-waf-policy-configuration.jpg)
 
 Microsoft-supplied managed rules, based on OWASP 3.2, include 185 predefined rules that automatically detect and mitigate diverse attack patterns.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying managed rules for a Web Application Firewall (WAF) policy. It lists various OWASP rules with their IDs, descriptions, actions, and statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882106/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-web-application-firewall/azure-portal-waf-managed-rules.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying managed rules for a Web Application Firewall (WAF) policy. It lists various OWASP rules with their IDs, descriptions, actions, and statuses.](https://kodekloud.com/kk-media/image/upload/v1752882106/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-web-application-firewall/azure-portal-waf-managed-rules.jpg)
 
 ### Creating Custom Rules
 
@@ -101,19 +87,13 @@ To further secure your application, you can create custom rules. For instance, t
 5. Configure the match variable as "Remote Address" with the condition "in" for "United States".
 6. Set the action to "Deny" and save the rule.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for configuring a Web Application Firewall (WAF) policy with custom rules. A panel on the right is open for adding a custom rule, displaying a list of countries to select conditions for the rule.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882107/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-web-application-firewall/azure-portal-waf-policy-custom-rules.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for configuring a Web Application Firewall (WAF) policy with custom rules. A panel on the right is open for adding a custom rule, displaying a list of countries to select conditions for the rule.](https://kodekloud.com/kk-media/image/upload/v1752882107/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-web-application-firewall/azure-portal-waf-policy-custom-rules.jpg)
 
 The new custom rule will then appear in your policy listing.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for configuring custom rules in an Application Gateway WAF policy. It displays a rule named "BlockUS" with a priority of 1, which is enabled and set to block.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882108/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-web-application-firewall/azure-portal-application-gateway-waf.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for configuring custom rules in an Application Gateway WAF policy. It displays a rule named "BlockUS" with a priority of 1, which is enabled and set to block.](https://kodekloud.com/kk-media/image/upload/v1752882108/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-web-application-firewall/azure-portal-application-gateway-waf.jpg)
 
-<Callout icon="triangle-alert">
-  Remember: If the WAF remains in detection mode, custom rules will only log and alert without actively blocking traffic. To enforce blocking, switch the WAF to prevention mode.
-</Callout>
+> **triangle-alert** Remember: If the WAF remains in detection mode, custom rules will only log and alert without actively blocking traffic. To enforce blocking, switch the WAF to prevention mode.
 
 ## Testing the WAF Configuration
 
@@ -168,9 +148,7 @@ Conversely, accessing the website from another region returns the expected web p
 
 Enable diagnostic settings to send firewall logs to a Log Analytics workspace. These logs provide insights into blocked requests, potential vulnerabilities, and overall application security events.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal with the "Diagnostic settings" page for an Application Gateway named "color-appgw." It displays options for configuring diagnostic settings, including logs and metrics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882109/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-web-application-firewall/azure-portal-diagnostic-settings-color-appgw.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal with the "Diagnostic settings" page for an Application Gateway named "color-appgw." It displays options for configuring diagnostic settings, including logs and metrics.](https://kodekloud.com/kk-media/image/upload/v1752882109/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-web-application-firewall/azure-portal-diagnostic-settings-color-appgw.jpg)
 
 ## Azure Front Door Load Balancer
 
@@ -182,6 +160,4 @@ By leveraging layered defense, built-in policies, custom rules, and advanced mon
 
 For more detailed guidance on Azure security solutions, please refer to the [Azure Documentation](https://docs.microsoft.com/azure/security/) and [OWASP guidelines](https://owasp.org).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/0489a935-a4dd-41c6-b5d3-6054c570299b/lesson/34ab8c54-9a0b-4b7e-bd38-7c7dc20d762d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/0489a935-a4dd-41c6-b5d3-6054c570299b/lesson/34ab8c54-9a0b-4b7e-bd38-7c7dc20d762d)

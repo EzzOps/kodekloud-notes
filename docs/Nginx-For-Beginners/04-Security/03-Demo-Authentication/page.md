@@ -33,9 +33,7 @@ sudo fail2ban-client set nginx-http-auth unbanip 192.0.2.45
 
 Because Fail2Ban operates on host logs and firewall rules, it typically requires no change to application configurations to be effective.
 
-<Callout icon="warning">
-  Fail2Ban depends on host log files and the host firewall. It may not work as expected in ephemeral container environments or Kubernetes clusters where logs are aggregated or networking is managed by the platform. For containers, consider ingress rate limiting, a Web Application Firewall (WAF), or platform-native network policies.
-</Callout>
+> **warning** Fail2Ban depends on host log files and the host firewall. It may not work as expected in ephemeral container environments or Kubernetes clusters where logs are aggregated or networking is managed by the platform. For containers, consider ingress rate limiting, a Web Application Firewall (WAF), or platform-native network policies.
 
 ## Quick reference
 
@@ -65,9 +63,7 @@ Useful references:
 * NGINX access module: [https://nginx.org/en/docs/http/ngx\_http\_access\_module.html](https://nginx.org/en/docs/http/ngx_http_access_module.html)
 * Fail2Ban project: [https://www.fail2ban.org](https://www.fail2ban.org)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/328c0054-1639-4d6d-aeda-f1255e8ebaa0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/328c0054-1639-4d6d-aeda-f1255e8ebaa0)
 
 
 # Demo Authentication

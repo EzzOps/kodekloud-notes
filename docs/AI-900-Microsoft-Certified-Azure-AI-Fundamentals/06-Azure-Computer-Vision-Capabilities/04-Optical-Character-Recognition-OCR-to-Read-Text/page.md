@@ -21,7 +21,7 @@ OCR excels at extracting printed text from images such as scanned documents, pho
 
 OCR also supports the recognition of handwritten text. Whether it’s a personal note, a handwritten shopping list, or meeting notes, OCR can convert these into searchable and editable digital text. This capability streamlines the process of managing handwritten data.
 
-![The image explains Optical Character Recognition (OCR) for reading text, highlighting its ability to detect printed and handwritten text. It includes an example of a handwritten list being digitized.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856895/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Optical-Character-Recognition-OCR-to-Read-Text/ocr-handwritten-text-detection.jpg)
+![The image explains Optical Character Recognition (OCR) for reading text, highlighting its ability to detect printed and handwritten text. It includes an example of a handwritten list being digitized.](https://kodekloud.com/kk-media/image/upload/v1752856895/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Optical-Character-Recognition-OCR-to-Read-Text/ocr-handwritten-text-detection.jpg)
 
 ### Quick Text Extraction from Images
 
@@ -46,7 +46,7 @@ Go to the beach
 Drink enough water
 ```
 
-![The image explains Optical Character Recognition (OCR) for text extraction, featuring a handwritten list and highlighting options for quick text extraction from images and asynchronous analysis of scanned documents.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856896/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Optical-Character-Recognition-OCR-to-Read-Text/ocr-text-extraction-handwritten-list.jpg)
+![The image explains Optical Character Recognition (OCR) for text extraction, featuring a handwritten list and highlighting options for quick text extraction from images and asynchronous analysis of scanned documents.](https://kodekloud.com/kk-media/image/upload/v1752856896/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Optical-Character-Recognition-OCR-to-Read-Text/ocr-text-extraction-handwritten-list.jpg)
 
 ## OCR in Action with Azure
 
@@ -60,7 +60,7 @@ Azure's OCR capabilities provide a versatile and powerful solution for digitizin
 4. Ensure you have a connected AI service deployed; this service converts the handwritten text into a digital format.
 5. The extracted result is presented in JSON format, similar to previous examples where a handwritten note was uploaded to Azure Storage.
 
-![The image shows a purple paper with handwritten text, featuring motivational quotes. The text is highlighted and extracted on the right side of the screen.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856898/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Optical-Character-Recognition-OCR-to-Read-Text/purple-paper-motivational-quotes.jpg)
+![The image shows a purple paper with handwritten text, featuring motivational quotes. The text is highlighted and extracted on the right side of the screen.](https://kodekloud.com/kk-media/image/upload/v1752856898/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Optical-Character-Recognition-OCR-to-Read-Text/purple-paper-motivational-quotes.jpg)
 
 You can also access OCR functionalities from Vision Studio, provided an Azure resource has been created for that service.
 

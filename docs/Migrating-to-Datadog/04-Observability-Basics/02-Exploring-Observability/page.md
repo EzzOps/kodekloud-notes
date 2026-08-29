@@ -41,9 +41,7 @@ Distributed architectures and multi-cloud deployments make root-cause analysis a
   <img alt="The image illustrates the value of monitoring for business teams, highlighting benefits like translating business information from data and making data-driven decisions." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Observability is the practice of deriving meaningful insight about system state and behavior from telemetry data—metrics, traces, and logs—so teams can diagnose issues, predict problems, and optimize performance.
-</Callout>
+> **lightbulb** Observability is the practice of deriving meaningful insight about system state and behavior from telemetry data—metrics, traces, and logs—so teams can diagnose issues, predict problems, and optimize performance.
 
 ## Core telemetry types and what they reveal
 
@@ -80,6 +78,4 @@ Observability should be integrated end-to-end: from the user device through API 
 
 That concludes this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9d4795bc-91eb-4262-ae9c-f7153c17438e/lesson/68048065-c079-4b5a-9d69-00a8a53fb918" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9d4795bc-91eb-4262-ae9c-f7153c17438e/lesson/68048065-c079-4b5a-9d69-00a8a53fb918)

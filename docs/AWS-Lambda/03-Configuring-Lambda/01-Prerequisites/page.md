@@ -47,7 +47,7 @@ The AWS CLI lets you automate Lambda operations directly from your terminal.
 aws configure
 ```
 
-![The image provides information about the AWS Command Line Interface (CLI), including a download link and supported operating systems: Windows, MacOS, and Linux.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863161/notes-assets/images/AWS-Lambda-Prerequisites/aws-cli-download-supported-os-info.jpg)
+![The image provides information about the AWS Command Line Interface (CLI), including a download link and supported operating systems: Windows, MacOS, and Linux.](https://kodekloud.com/kk-media/image/upload/v1752863161/notes-assets/images/AWS-Lambda-Prerequisites/aws-cli-download-supported-os-info.jpg)
 
 ***
 
@@ -71,7 +71,7 @@ Define your serverless infrastructure in JSON or YAML templates with [AWS CloudF
 * Repeatable, automated deployments
 * Integration with CI/CD pipelines
 
-![The image shows two ways to configure AWS Lambda: AWS CloudFormation and AWS Serverless Application Model.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863162/notes-assets/images/AWS-Lambda-Prerequisites/aws-lambda-configuration-cloudformation-serverless.jpg)
+![The image shows two ways to configure AWS Lambda: AWS CloudFormation and AWS Serverless Application Model.](https://kodekloud.com/kk-media/image/upload/v1752863162/notes-assets/images/AWS-Lambda-Prerequisites/aws-lambda-configuration-cloudformation-serverless.jpg)
 
 ***
 
@@ -104,7 +104,7 @@ To manage Lambda functions, you need an AWS identity with the correct permission
 
 If you must manage IAM users or policies, visit the [AWS IAM console](https://aws.amazon.com/iam/).
 
-![The image shows two icons representing user accounts, labeled "Root User Account" and "Administrative User Account," under the heading "Prerequisites."](../../../../images/kodekloud.com/kk-media/image/upload/v1752863163/notes-assets/images/AWS-Lambda-Prerequisites/user-accounts-root-admin-prerequisites.jpg)
+![The image shows two icons representing user accounts, labeled "Root User Account" and "Administrative User Account," under the heading "Prerequisites."](https://kodekloud.com/kk-media/image/upload/v1752863163/notes-assets/images/AWS-Lambda-Prerequisites/user-accounts-root-admin-prerequisites.jpg)
 
 ***
 

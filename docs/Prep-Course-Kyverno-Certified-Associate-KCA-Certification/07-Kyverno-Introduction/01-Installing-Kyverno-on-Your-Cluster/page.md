@@ -82,9 +82,7 @@ results:
     generatedResource: expected-generated-configmap.yaml
 ```
 
-<Callout icon="warning">
-  When asserting mutated/generated resources, ensure your expected YAML files account for defaulted fields and ordering differences. Use exact, deterministic fixtures to avoid false negatives.
-</Callout>
+> **warning** When asserting mutated/generated resources, ensure your expected YAML files account for defaulted fields and ordering differences. Use exact, deterministic fixtures to avoid false negatives.
 
 Running the test suite
 
@@ -141,11 +139,9 @@ Links and references
 * Kyverno documentation: [https://kyverno.io/docs/](https://kyverno.io/docs/)
 * Kyverno CLI reference: [https://kyverno.io/docs/kyverno-cli/](https://kyverno.io/docs/kyverno-cli/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f4ceb35e-5c8e-4601-856b-997a26924a4a/lesson/bc8afdcd-5b51-4efb-8c55-55461a1d242e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f4ceb35e-5c8e-4601-856b-997a26924a4a/lesson/bc8afdcd-5b51-4efb-8c55-55461a1d242e)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f4ceb35e-5c8e-4601-856b-997a26924a4a/lesson/e1ffade5-13b7-4ce8-a881-187e47441680" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f4ceb35e-5c8e-4601-856b-997a26924a4a/lesson/e1ffade5-13b7-4ce8-a881-187e47441680)
 
 
 # Installing Kyverno on Your Cluster
@@ -171,9 +167,7 @@ Installation modes
   <img alt="The image illustrates two installation options: Standalone Installation, ideal for learning and development with a single controller copy, and High Availability Installation, suitable for production with multiple controller copies for reliability." />
 </Frame>
 
-<Callout icon="warning">
-  For production use, deploy Kyverno in high availability mode so multiple controller replicas can handle failures and maintain continuous policy enforcement.
-</Callout>
+> **warning** For production use, deploy Kyverno in high availability mode so multiple controller replicas can handle failures and maintain continuous policy enforcement.
 
 Quick install (standalone)
 We'll perform a simple standalone install using Helm. These three commands add the Kyverno chart repo, refresh your local index, and install Kyverno into the `kyverno` namespace:

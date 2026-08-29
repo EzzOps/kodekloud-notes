@@ -24,7 +24,7 @@ This table uses a composite primary key comprising the partition key (product ID
 
 To fetch every review for a product with an ID of 9999, query based solely on the partition key:
 
-![The image shows a table structure for querying product reviews, with columns for product ID, user, rating, content, and creation date. It highlights a query for all reviews of product 99999.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858757/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Indexes-GSI-LSI/product-reviews-query-table-99999.jpg)
+![The image shows a table structure for querying product reviews, with columns for product ID, user, rating, content, and creation date. It highlights a query for all reviews of product 99999.](https://kodekloud.com/kk-media/image/upload/v1752858757/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Indexes-GSI-LSI/product-reviews-query-table-99999.jpg)
 
 Since the query relies on the product ID, it is fast and efficient.
 
@@ -35,7 +35,7 @@ To obtain a review submitted by a specific user (for example, Sam) for product 9
 1. Query the partition key (product ID equals 9999).
 2. Narrow the results by filtering on the sort key (user equals [sam@gmail.com](mailto:sam@gmail.com)).
 
-![The image shows a table structure for querying product reviews, highlighting partition and sort keys, with an example query for a specific user's review of a product.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858758/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Indexes-GSI-LSI/product-reviews-query-table-structure.jpg)
+![The image shows a table structure for querying product reviews, highlighting partition and sort keys, with an example query for a specific user's review of a product.](https://kodekloud.com/kk-media/image/upload/v1752858758/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Indexes-GSI-LSI/product-reviews-query-table-structure.jpg)
 
 This method efficiently targets the desired review by using both keys.
 
@@ -43,7 +43,7 @@ This method efficiently targets the desired review by using both keys.
 
 Suppose you need all five-star reviews for product 9999. First, query by the partition key (product\_id equals 9999) to retrieve all reviews. Then, filter the results client-side to extract the five-star reviews:
 
-![The image shows a table structure for querying reviews, focusing on retrieving all 5-star reviews for product ID 99999. It includes columns for product ID, user, rating, content, and creation date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858759/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Indexes-GSI-LSI/5-star-reviews-query-table-99999.jpg)
+![The image shows a table structure for querying reviews, focusing on retrieving all 5-star reviews for product ID 99999. It includes columns for product ID, user, rating, content, and creation date.](https://kodekloud.com/kk-media/image/upload/v1752858759/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Indexes-GSI-LSI/5-star-reviews-query-table-99999.jpg)
 
 > **lightbulb** Since the filtering by rating occurs on the client side and the rating attribute is not part of the table's primary key, this method can be inefficient when dealing with a large number of reviews.
 
@@ -75,9 +75,9 @@ This design provides an efficient means to query by rating without resorting to 
 * A table supports up to five LSIs.
 * LSIs share the table’s provisioned read and write capacity units (RCUs and WCUs).
 
-![The image illustrates a DynamoDB Local Secondary Index (LSI) setup, showing a query to retrieve all 5-star ratings for a specific product, with a table displaying product IDs, users, ratings, content, and creation dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858760/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Indexes-GSI-LSI/dynamodb-local-secondary-index-query.jpg)
+![The image illustrates a DynamoDB Local Secondary Index (LSI) setup, showing a query to retrieve all 5-star ratings for a specific product, with a table displaying product IDs, users, ratings, content, and creation dates.](https://kodekloud.com/kk-media/image/upload/v1752858760/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Indexes-GSI-LSI/dynamodb-local-secondary-index-query.jpg)
 
-![The image is a diagram explaining DynamoDB Local Secondary Index (LSI) with a table showing partition key, sort key, and various LSI attributes like rating, content, created\_at, verified\_purchase, and location. It includes notes on defining LSIs and their usage of the main table's capacity units.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858761/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Indexes-GSI-LSI/dynamodb-local-secondary-index-diagram.jpg)
+![The image is a diagram explaining DynamoDB Local Secondary Index (LSI) with a table showing partition key, sort key, and various LSI attributes like rating, content, created\_at, verified\_purchase, and location. It includes notes on defining LSIs and their usage of the main table's capacity units.](https://kodekloud.com/kk-media/image/upload/v1752858761/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Indexes-GSI-LSI/dynamodb-local-secondary-index-diagram.jpg)
 
 ## Global Secondary Index (GSI)
 
@@ -99,11 +99,11 @@ For example, to query all reviews written by Sam (regardless of product), you ca
 * They require separate provisioning of RCUs and WCUs.
 * If the GSI write throughput is throttled, it may also throttle writes on the main table.
 
-![The image explains DynamoDB's Global Secondary Index (GSI) with a table example, showing how a new primary key is defined using partition and sort keys. It compares the original reviews table with the GSI index table.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858762/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Indexes-GSI-LSI/dynamodb-global-secondary-index-example.jpg)
+![The image explains DynamoDB's Global Secondary Index (GSI) with a table example, showing how a new primary key is defined using partition and sort keys. It compares the original reviews table with the GSI index table.](https://kodekloud.com/kk-media/image/upload/v1752858762/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Indexes-GSI-LSI/dynamodb-global-secondary-index-example.jpg)
 
-![The image illustrates the use of a Global Secondary Index (GSI) in DynamoDB to query all 5-star reviews by a user named Sam, showing the original reviews table and the indexed GSI table with partition and sort keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858764/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Indexes-GSI-LSI/dynamodb-gsi-5-star-reviews-sam.jpg)
+![The image illustrates the use of a Global Secondary Index (GSI) in DynamoDB to query all 5-star reviews by a user named Sam, showing the original reviews table and the indexed GSI table with partition and sort keys.](https://kodekloud.com/kk-media/image/upload/v1752858764/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Indexes-GSI-LSI/dynamodb-gsi-5-star-reviews-sam.jpg)
 
-![The image is a slide about DynamoDB Global Secondary Index (GSI), highlighting that GSIs can be added after table creation, require provisioning of RCU and WCU, and that throttling of GSI writes affects the main table.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858764/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Indexes-GSI-LSI/dynamodb-global-secondary-index-slide.jpg)
+![The image is a slide about DynamoDB Global Secondary Index (GSI), highlighting that GSIs can be added after table creation, require provisioning of RCU and WCU, and that throttling of GSI writes affects the main table.](https://kodekloud.com/kk-media/image/upload/v1752858764/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Indexes-GSI-LSI/dynamodb-global-secondary-index-slide.jpg)
 
 ## Summary
 

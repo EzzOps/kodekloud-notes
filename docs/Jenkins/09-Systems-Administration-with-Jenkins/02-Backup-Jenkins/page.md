@@ -10,15 +10,11 @@ In this article, we explore various strategies for backing up your Jenkins insta
 
 One method is to use file system snapshots. Although snapshots can provide daily or incremental protection, they are not true backups and should not be relied upon as a long-term solution.
 
-<Frame>
-  ![The image shows a Jenkins documentation page about creating backups, highlighting filesystem snapshots, backup plugins, and shell scripts for Jenkins instance backup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880139/notes-assets/images/Jenkins-Backup-Jenkins/frame_20.jpg)
-</Frame>
+![The image shows a Jenkins documentation page about creating backups, highlighting filesystem snapshots, backup plugins, and shell scripts for Jenkins instance backup.](https://kodekloud.com/kk-media/image/upload/v1752880139/notes-assets/images/Jenkins-Backup-Jenkins/frame_20.jpg)
 
 Another option is to leverage backup plugins. Git-backed for flexibility, Jenkins supports a wide variety of plugins to extend its functionality. Alternatively, you might consider crafting a shell script to automate your backup process.
 
-<Callout icon="lightbulb">
-  Both plugin-based and script-based backups offer unique benefits. Choose the approach that best suits your environment and backup objectives.
-</Callout>
+> **lightbulb** Both plugin-based and script-based backups offer unique benefits. Choose the approach that best suits your environment and backup objectives.
 
 Below is an excerpt from a custom Jenkins backup shell script available on GitHub:
 

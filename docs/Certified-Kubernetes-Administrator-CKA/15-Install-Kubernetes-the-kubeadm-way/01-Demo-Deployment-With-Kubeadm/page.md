@@ -94,7 +94,7 @@ vagrant@kubenode02:~$
 
 The output confirms that each node has the correct network interfaces and associated IP addresses, ensuring both dynamic and static configurations are in place.
 
-> ![The image shows a webpage from Kubernetes documentation detailing the installation of kubeadm, kubelet, and kubectl, including container runtime requirements and Unix domain socket paths.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869786/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Demo-Deployment-with-Kubeadm/frame_150.jpg)
+> ![The image shows a webpage from Kubernetes documentation detailing the installation of kubeadm, kubelet, and kubectl, including container runtime requirements and Unix domain socket paths.](https://kodekloud.com/kk-media/image/upload/v1752869786/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Demo-Deployment-with-Kubeadm/frame_150.jpg)
 
 ***
 

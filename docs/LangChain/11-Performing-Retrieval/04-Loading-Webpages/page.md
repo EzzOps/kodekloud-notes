@@ -42,9 +42,7 @@ References:
 * LangChain docs: [https://langchain.readthedocs.io/en/latest/](https://langchain.readthedocs.io/en/latest/)
 * Vector stores: FAISS, Pinecone, Weaviate
 
-<Callout icon="warning">
-  Scanned or image-based PDFs will not yield good text using PyPDFLoader alone — they need OCR (e.g., Tesseract, Amazon Textract, or other OCR services) before or during loading. Also, encrypted PDFs may require a decryption key or preprocessing.
-</Callout>
+> **warning** Scanned or image-based PDFs will not yield good text using PyPDFLoader alone — they need OCR (e.g., Tesseract, Amazon Textract, or other OCR services) before or during loading. Also, encrypted PDFs may require a decryption key or preprocessing.
 
 ## Tips and common issues
 
@@ -54,9 +52,7 @@ References:
 
 Now that the handbook is loaded and split into page-level Documents, you can proceed to embedding, indexing, and building your RAG-powered Q\&A or chat application. Similar loader patterns apply to web pages and other document formats (use appropriate loaders and OCR tools where necessary).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/18155e0f-cc83-4438-ac30-051e60337344" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/18155e0f-cc83-4438-ac30-051e60337344)
 
 
 # Loading Webpages

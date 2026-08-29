@@ -6,9 +6,7 @@ This guide explores visualizing metrics using Prometheus and Grafana, enhancing 
 
 In this guide, we explore how to visualize metrics using Prometheus and Grafana, two powerful open-source tools that enhance your monitoring capabilities. Istio, a widely used service mesh, automatically exports its standard metrics to Prometheus, allowing you to effortlessly collect and analyze critical data from your distributed architectures.
 
-<Callout icon="lightbulb">
-  Prometheus is a modern monitoring tool designed to gather, store, and query metrics across a diverse range of applications and systems. Its integration with Istio provides a streamlined approach to monitoring your infrastructure.
-</Callout>
+> **lightbulb** Prometheus is a modern monitoring tool designed to gather, store, and query metrics across a diverse range of applications and systems. Its integration with Istio provides a streamlined approach to monitoring your infrastructure.
 
 ## Unified Monitoring with Istio, Prometheus, and Grafana
 
@@ -32,6 +30,4 @@ Let's review a demonstration that shows this integration in action. You will see
 
 This hands-on example illustrates how to leverage the combined power of Prometheus and Grafana to enhance observability and maintain robust monitoring across your systems.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/7696566a-6631-4367-9fbc-ce86b23cd608/lesson/b75e48bd-81f1-4aca-b792-337caadd0750" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/7696566a-6631-4367-9fbc-ce86b23cd608/lesson/b75e48bd-81f1-4aca-b792-337caadd0750)

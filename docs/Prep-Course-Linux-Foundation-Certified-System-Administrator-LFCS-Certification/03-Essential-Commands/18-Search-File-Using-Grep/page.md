@@ -21,9 +21,7 @@ SGID works similarly to SUID but applies to the group ownership of an executable
 
 For instance, if a reports application is associated with the reports group, both Emily and John can access executable files, and newly created files inside the directory will automatically inherit the reports group.
 
-<Frame>
-  ![The image illustrates the concept of SGID (Set Group ID) permissions, showing how it applies to both executables and directories, with two users accessing a file within a directory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881269/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-SUID-SGID-and-Sticky-Bit/sgid-permissions-executables-directories.jpg)
-</Frame>
+![The image illustrates the concept of SGID (Set Group ID) permissions, showing how it applies to both executables and directories, with two users accessing a file within a directory.](https://kodekloud.com/kk-media/image/upload/v1752881269/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-SUID-SGID-and-Sticky-Bit/sgid-permissions-executables-directories.jpg)
 
 ### Demonstration of SGID
 
@@ -97,9 +95,7 @@ chmod 1666 stickydir/
 ls -ld stickydir/
 ```
 
-<Callout icon="lightbulb">
-  A lowercase "t" denotes that the Sticky Bit is set and execute permission is enabled, while an uppercase "T" indicates that only the Sticky Bit is set.
-</Callout>
+> **lightbulb** A lowercase "t" denotes that the Sticky Bit is set and execute permission is enabled, while an uppercase "T" indicates that only the Sticky Bit is set.
 
 ## Conclusion
 
@@ -109,9 +105,7 @@ By leveraging these permissions, system administrators can implement controlled 
 
 Happy experimenting, and enjoy the power of controlled permission management!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/372c66a1-2a08-464f-b936-d3c0a13c3755" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/372c66a1-2a08-464f-b936-d3c0a13c3755)
 
 
 # Search File Using Grep

@@ -12,11 +12,11 @@ Welcome to this lesson on using AWS Config to trigger automated actions. Contrar
 
 AWS Config continuously monitors your resource configurations and sends notifications whenever changes occur. When configured with remediation rules, it can automatically enforce compliance by either reverting or mitigating unauthorized changes.
 
-![The image illustrates AWS Config, showing a cloud icon connected to various AWS service icons, including a bucket, a chip, a container, and a database.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859963/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Triggering-Automated-Actions-With-AWS-Config/aws-config-cloud-services-illustration.jpg)
+![The image illustrates AWS Config, showing a cloud icon connected to various AWS service icons, including a bucket, a chip, a container, and a database.](https://kodekloud.com/kk-media/image/upload/v1752859963/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Triggering-Automated-Actions-With-AWS-Config/aws-config-cloud-services-illustration.jpg)
 
 Imagine AWS Config operating as a librarian within a vast library: every book (resource) is cataloged, and any deviations from the established rules trigger a response. These responses can be either manual alerts or automated remediation actions that immediately address the issue.
 
-![The image illustrates AWS Config with icons representing a user, a library of books, configuration settings, and a cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859965/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Triggering-Automated-Actions-With-AWS-Config/aws-config-user-books-cloud-icons.jpg)
+![The image illustrates AWS Config with icons representing a user, a library of books, configuration settings, and a cloud.](https://kodekloud.com/kk-media/image/upload/v1752859965/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Triggering-Automated-Actions-With-AWS-Config/aws-config-user-books-cloud-icons.jpg)
 
 ## Challenges Without AWS Config
 
@@ -45,7 +45,7 @@ AWS Config simplifies and enhances configuration management by automating the tr
 
 Additionally, AWS Config allows you to set up automated remediation actions. For example, upon detecting an unauthorized change, a Lambda function can be triggered to either automatically revert the change or take necessary steps to mitigate the issue. This self-healing capability not only enhances security but also ensures your infrastructure remains compliant.
 
-![The image lists five challenges faced before using AWS Config: lack of visibility, manual configuration auditing, configuration drift, security and compliance risks, and resource relationship mapping.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859966/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Triggering-Automated-Actions-With-AWS-Config/aws-config-challenges-list.jpg)
+![The image lists five challenges faced before using AWS Config: lack of visibility, manual configuration auditing, configuration drift, security and compliance risks, and resource relationship mapping.](https://kodekloud.com/kk-media/image/upload/v1752859966/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Triggering-Automated-Actions-With-AWS-Config/aws-config-challenges-list.jpg)
 
 ## Conclusion
 

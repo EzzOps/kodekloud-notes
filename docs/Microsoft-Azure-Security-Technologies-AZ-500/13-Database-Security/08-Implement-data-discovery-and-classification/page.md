@@ -20,9 +20,7 @@ In this section, we walk through how to implement data discovery and classificat
 2. Initially, no classifications are displayed. Click the blue bar at the bottom indicating "15 columns with classification recommendations." Azure SQL will automatically detect and suggest classification labels based on the stored data.
 3. The screenshot below illustrates data discovery recommendations in the Azure portal. For instance, in the "Sales LT" table, the "first name" column is recommended as a confidential contact detail:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen displaying data discovery and classification recommendations for a SQL database, listing columns with their information types and sensitivity labels.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881779/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-data-discovery-and-classification/azure-portal-data-classification-sql.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen displaying data discovery and classification recommendations for a SQL database, listing columns with their information types and sensitivity labels.](https://kodekloud.com/kk-media/image/upload/v1752881779/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-data-discovery-and-classification/azure-portal-data-classification-sql.jpg)
 
 4. To accept the recommendations, select them and click "Accept Selected Recommendations." The classifications will then be saved and can be modified later if necessary.
 5. If a particular column is not automatically classified, you can manually add a classification. For instance, you might choose the "modified date" column, assign a schema, designate its information type (such as networking data), and mark its sensitivity as "highly confidential."
@@ -52,9 +50,7 @@ AzureDiagnostics
 
 Expanding any log entry provides detailed information on the accessed sensitive data—including label IDs and sensitivity attributes—assisting administrators in understanding which sensitive information was queried.
 
-<Callout icon="lightbulb">
-  Integrating data discovery with auditing and log analytics not only boosts your security posture but also simplifies compliance and reporting.
-</Callout>
+> **lightbulb** Integrating data discovery with auditing and log analytics not only boosts your security posture but also simplifies compliance and reporting.
 
 ## Conclusion
 
@@ -62,6 +58,4 @@ Azure SQL's data discovery and classification streamline the identification of s
 
 Next, we will move on to discussing vulnerability assessment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d199f126-f1df-43a8-bd3d-68cd689d509d/lesson/affcf143-dbdc-40df-8816-1e741dea3583" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d199f126-f1df-43a8-bd3d-68cd689d509d/lesson/affcf143-dbdc-40df-8816-1e741dea3583)

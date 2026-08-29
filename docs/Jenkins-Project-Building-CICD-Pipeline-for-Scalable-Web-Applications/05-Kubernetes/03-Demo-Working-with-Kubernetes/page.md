@@ -12,15 +12,11 @@ In this lesson, you'll learn how to interact with Kubernetes clusters on AWS EKS
 
 Open the AWS EKS console to view your clusters. In our setup, the console shows two active clusters named "prod" and "staging," both running Kubernetes version 1.27 with extended support until July 24, 2025.
 
-<Frame>
-  ![The image shows the Amazon Elastic Kubernetes Service (EKS) console with two active clusters named "prod" and "staging," both running Kubernetes version 1.27 with extended support until July 24, 2025.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879931/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Working-with-Kubernetes/amazon-eks-console-clusters-1-27.jpg)
-</Frame>
+![The image shows the Amazon Elastic Kubernetes Service (EKS) console with two active clusters named "prod" and "staging," both running Kubernetes version 1.27 with extended support until July 24, 2025.](https://kodekloud.com/kk-media/image/upload/v1752879931/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Working-with-Kubernetes/amazon-eks-console-clusters-1-27.jpg)
 
 To interact with these clusters, you need the [kubectl CLI utility](https://kubernetes.io/docs/tasks/tools/). Follow the installation instructions provided in the [Kubernetes documentation](https://kubernetes.io/docs/) tailored for your operating system.
 
-<Frame>
-  ![The image shows a webpage from the Kubernetes documentation, specifically the "Install Tools" section, detailing how to set up Kubernetes tools like kubectl, kind, and minikube on different operating systems.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879932/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Working-with-Kubernetes/kubernetes-install-tools-guide.jpg)
-</Frame>
+![The image shows a webpage from the Kubernetes documentation, specifically the "Install Tools" section, detailing how to set up Kubernetes tools like kubectl, kind, and minikube on different operating systems.](https://kodekloud.com/kk-media/image/upload/v1752879932/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-Working-with-Kubernetes/kubernetes-install-tools-guide.jpg)
 
 ***
 
@@ -34,9 +30,7 @@ cat ~/.kube/config > config.yaml
 
 Open `config.yaml` in your preferred IDE.
 
-<Callout icon="triangle-alert">
-  Do not commit this file to Git or any public repository as it contains sensitive cluster credentials.
-</Callout>
+> **triangle-alert** Do not commit this file to Git or any public repository as it contains sensitive cluster credentials.
 
 A section from the file for the staging cluster might look like this:
 
@@ -334,10 +328,6 @@ To update the application to a new version (for example, v5), follow these steps
 
 Finally, verify the rollout status of your deployment and refresh your application to ensure it is now using version 5.
 
-<Callout icon="lightbulb">
-  This lesson covered managing multiple Kubernetes clusters, deploying a Flask application, conducting load tests with k6, and updating the application version seamlessly—all crucial skills for maintaining an efficient CI/CD pipeline.
-</Callout>
+> **lightbulb** This lesson covered managing multiple Kubernetes clusters, deploying a Flask application, conducting load tests with k6, and updating the application version seamlessly—all crucial skills for maintaining an efficient CI/CD pipeline.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/1d8036bf-2606-4587-beef-925546e0c655/lesson/27457e5b-03c6-4916-8127-6b82613dc7af" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/1d8036bf-2606-4587-beef-925546e0c655/lesson/27457e5b-03c6-4916-8127-6b82613dc7af)

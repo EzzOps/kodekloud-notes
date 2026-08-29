@@ -22,9 +22,7 @@ The architecture consists of four primary components:
 
 The diagram below illustrates the overall architecture and data flow of the voting application:
 
-<Frame>
-  ![The image shows a diagram of a sample voting application architecture with components: voting-app, result-app, in-memory DB, db, and worker.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884958/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Microservices-Architecture/frame_60.jpg)
-</Frame>
+![The image shows a diagram of a sample voting application architecture with components: voting-app, result-app, in-memory DB, db, and worker.](https://kodekloud.com/kk-media/image/upload/v1752884958/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Microservices-Architecture/frame_60.jpg)
 
 When a user casts a vote (for example, choosing "cat"), the flow is as follows:
 
@@ -34,9 +32,7 @@ When a user casts a vote (for example, choosing "cat"), the flow is as follows:
 
 For further clarity on component interactions, refer to the second diagram:
 
-<Frame>
-  ![The image shows a diagram of a sample voting application architecture, featuring components like a voting app, result app, in-memory database, and worker, using Python, Redis, and .NET.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884959/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Microservices-Architecture/frame_90.jpg)
-</Frame>
+![The image shows a diagram of a sample voting application architecture, featuring components like a voting app, result app, in-memory database, and worker, using Python, Redis, and .NET.](https://kodekloud.com/kk-media/image/upload/v1752884959/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Microservices-Architecture/frame_90.jpg)
 
 ## Deploying the Application Stack Using Docker
 
@@ -78,9 +74,7 @@ docker run -d --name=worker worker
 
 At this stage, all containers are actively running. However, these containers do not have intrinsic knowledge of each other’s existence. For example, the voting application isn’t aware of which Redis instance it should communicate with, and the worker along with the results application are not automatically connected to the PostgreSQL database.
 
-<Callout icon="lightbulb">
-  For smooth inter-container communication, explicit linking is necessary. Docker's linking mechanism helps containers discover and communicate with each other.
-</Callout>
+> **lightbulb** For smooth inter-container communication, explicit linking is necessary. Docker's linking mechanism helps containers discover and communicate with each other.
 
 ### Step 3: Linking Containers for Intercommunication
 
@@ -138,9 +132,7 @@ try {
 
 The name-based linking provided by Docker creates entries in the container’s `/etc/hosts` file, ensuring that services can resolve hostnames (like "redis" or "db") to the corresponding container IP addresses.
 
-<Callout icon="triangle-alert">
-  While linking demonstrates the basic concepts of service intercommunication, the `--link` option is deprecated. It is recommended to use modern Docker networking solutions such as Docker Swarm or user-defined networks for more robust and scalable container management.
-</Callout>
+> **triangle-alert** While linking demonstrates the basic concepts of service intercommunication, the `--link` option is deprecated. It is recommended to use modern Docker networking solutions such as Docker Swarm or user-defined networks for more robust and scalable container management.
 
 This Docker deployment approach illustrates the fundamental principles of microservices intercommunication and the orchestration of diverse containers within a Docker environment.
 
@@ -150,6 +142,4 @@ For more detailed information on Docker networking and microservices architectur
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Microservices Architecture](https://microservices.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/a603e70d-8473-4de4-aec9-7cc76c396ad3/lesson/4252e876-ff83-4915-95b1-a42c4f67f5ad" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/a603e70d-8473-4de4-aec9-7cc76c396ad3/lesson/4252e876-ff83-4915-95b1-a42c4f67f5ad)

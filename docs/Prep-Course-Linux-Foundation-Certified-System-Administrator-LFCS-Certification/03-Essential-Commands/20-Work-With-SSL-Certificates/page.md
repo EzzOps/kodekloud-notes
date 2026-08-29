@@ -8,9 +8,7 @@ This lesson explains what SSL/TLS certificates do, how they’re used, and how t
 
 First, a clarification: what people historically called "SSL" is today actually TLS. The old name stuck in many tools and documentation, but TLS is the modern, secure protocol that replaced SSL.
 
-<Callout icon="lightbulb">
-  SSL (Secure Sockets Layer) is the historical name. TLS (Transport Layer Security) is the modern protocol that fixes many of SSL's security problems. Many tools still use "SSL" in their names (for example, OpenSSL), but they work with TLS certificates and TLS connections.
-</Callout>
+> **lightbulb** SSL (Secure Sockets Layer) is the historical name. TLS (Transport Layer Security) is the modern protocol that fixes many of SSL's security problems. Many tools still use "SSL" in their names (for example, OpenSSL), but they work with TLS certificates and TLS connections.
 
 <Frame>
   <img alt="A slide titled &#x22;Clarification: What we Call SSL Nowadays is Actually TLS&#x22; that defines SSL as &#x22;secure sockets layer&#x22; and TLS as &#x22;transport layer security.&#x22; It also shows a diagram of a yellow SSL stack being &#x22;upgraded&#x22; (dashed arrow) to a larger teal TLS stack." />
@@ -188,9 +186,7 @@ man openssl-req
 man openssl-x509
 ```
 
-<Callout icon="lightbulb">
-  If you need certificates trusted by public browsers, generate a CSR (`openssl req -new ...`) and submit it to a Certificate Authority. For internal/testing scenarios you can self-sign (`openssl req -x509 ...`) and add that certificate to your clients' trust stores.
-</Callout>
+> **lightbulb** If you need certificates trusted by public browsers, generate a CSR (`openssl req -new ...`) and submit it to a Certificate Authority. For internal/testing scenarios you can self-sign (`openssl req -x509 ...`) and add that certificate to your clients' trust stores.
 
 ## Links and references
 
@@ -202,6 +198,4 @@ man openssl-x509
 
 We hope this guide helps you generate and inspect TLS (formerly "SSL") certificates using OpenSSL. Use the man pages (`man openssl-req`, `man openssl-x509`) and the `-help` flag for each subcommand to explore additional options and examples.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/477efbcd-aabc-463b-b529-4121d9bc32a0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/477efbcd-aabc-463b-b529-4121d9bc32a0)

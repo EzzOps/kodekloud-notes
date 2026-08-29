@@ -9,9 +9,7 @@ Local development / testing: mkcert
 * mkcert makes short-lived, locally trusted certificates for development and testing by installing a local CA in your machine’s trust store.
 * These certificates are only appropriate for local testing and should never be used for public production sites.
 
-<Callout icon="lightbulb">
-  mkcert installs a local CA in your OS/browser trust store so the generated certs are trusted on your development machine. It is very convenient for local HTTPS but is not a replacement for CA‑signed certificates like those from Let’s Encrypt in production.
-</Callout>
+> **lightbulb** mkcert installs a local CA in your OS/browser trust store so the generated certs are trusted on your development machine. It is very convenient for local HTTPS but is not a replacement for CA‑signed certificates like those from Let’s Encrypt in production.
 
 Example mkcert workflow (local testing)
 
@@ -38,9 +36,7 @@ The certificate is at "./_wildcard.example.com.pem" and the key at "./_wildcard.
 
 Place the generated certificate and key into secure locations (for example, certificate into `/etc/ssl/certs/` and private key into `/etc/ssl/private/`) and reference those paths from your web server configuration.
 
-<Callout icon="warning">
-  Do not use mkcert-generated certificates in production. For public-facing services, always use CA-signed certificates (e.g., from Let’s Encrypt or a commercial CA).
-</Callout>
+> **warning** Do not use mkcert-generated certificates in production. For public-facing services, always use CA-signed certificates (e.g., from Let’s Encrypt or a commercial CA).
 
 Using the certificate in an Nginx server block
 
@@ -99,9 +95,7 @@ Links and references
 
 Now that you understand the concepts and commands, practice obtaining a certificate (e.g., with Certbot) and configuring Nginx to serve HTTPS for your site.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/a4af90be-9d47-4d0b-a285-bec7a50ef02a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/a4af90be-9d47-4d0b-a285-bec7a50ef02a)
 
 
 # Security Introduction
@@ -128,9 +122,7 @@ Why HTTPS matters
 
 For demos and local hands-on exercises in this material we use `mkcert` to generate locally trusted TLS certificates: [mkcert](https://github.com/FiloSottile/mkcert). In production you would normally use a public CA such as [Let's Encrypt](https://letsencrypt.org/) with an automation tool like [Certbot](https://certbot.eff.org/). That approach requires control of a public domain and DNS — something most learners don't have for local exercises.
 
-<Callout icon="lightbulb">
-  For local development and hands-on exercises, `mkcert` provides a convenient way to create certificates trusted by your machine. For production deployments, use a public CA like [Let's Encrypt](https://letsencrypt.org/) with [Certbot](https://certbot.eff.org/).
-</Callout>
+> **lightbulb** For local development and hands-on exercises, `mkcert` provides a convenient way to create certificates trusted by your machine. For production deployments, use a public CA like [Let's Encrypt](https://letsencrypt.org/) with [Certbot](https://certbot.eff.org/).
 
 Quick mkcert usage (local)
 

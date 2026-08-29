@@ -48,9 +48,7 @@ $ echo $KodeKloud
 https://www.kodekloud.com
 ```
 
-<Callout icon="lightbulb">
-  The file `/etc/environment` only supports simple `KEY="value"` assignments. You cannot use shell expansions or commands here.
-</Callout>
+> **lightbulb** The file `/etc/environment` only supports simple `KEY="value"` assignments. You cannot use shell expansions or commands here.
 
 ## Running Commands at Login
 
@@ -76,9 +74,7 @@ $ cat $HOME/lastlogin
 Your last login was at: Thursday DEC 16 11:19:27 CDT 2021
 ```
 
-<Callout icon="triangle-alert">
-  Avoid syntax errors in `/etc/profile.d/` scripts. A malformed script can prevent users from logging in properly.
-</Callout>
+> **triangle-alert** Avoid syntax errors in `/etc/profile.d/` scripts. A malformed script can prevent users from logging in properly.
 
 ## Further Reading & References
 
@@ -90,9 +86,7 @@ Your last login was at: Thursday DEC 16 11:19:27 CDT 2021
 
 In the next article, we’ll explore advanced shell initialization techniques, including per-shell configuration and custom prompts.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/7e2b6f48-e58c-4d05-82e2-feb0f5f876f5/lesson/05b7aa04-573d-4d14-8b9a-734e5c15ecef" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/7e2b6f48-e58c-4d05-82e2-feb0f5f876f5/lesson/05b7aa04-573d-4d14-8b9a-734e5c15ecef)
 
 
 # Manage template user environment
@@ -119,9 +113,7 @@ Please don’t run CPU-intensive processes between 8 AM and 10 PM.
 
 Save and exit.
 
-<Callout icon="lightbulb">
-  Files placed in `/etc/skel` are automatically replicated to every new user's home directory. Use this to distribute common configurations or reminders.
-</Callout>
+> **lightbulb** Files placed in `/etc/skel` are automatically replicated to every new user's home directory. Use this to distribute common configurations or reminders.
 
 ## Verify Replication with a New User
 
@@ -198,9 +190,7 @@ PATH="$HOME/.local/bin:$HOME/bin:/opt/bin:$PATH"
 
 Every user created after this change inherits the updated `PATH` automatically.
 
-<Callout icon="triangle-alert">
-  Be cautious when editing system-wide skeleton files. Incorrect settings in `/etc/skel` may affect all new user environments.
-</Callout>
+> **triangle-alert** Be cautious when editing system-wide skeleton files. Incorrect settings in `/etc/skel` may affect all new user environments.
 
 ## Common Files in /etc/skel
 
@@ -219,8 +209,6 @@ Every user created after this change inherits the updated `PATH` automatically.
 * [adduser command](https://linux.die.net/man/8/adduser)
 * [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/7e2b6f48-e58c-4d05-82e2-feb0f5f876f5/lesson/29581ccd-25ee-4d70-b802-cc1ece802392" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/7e2b6f48-e58c-4d05-82e2-feb0f5f876f5/lesson/29581ccd-25ee-4d70-b802-cc1ece802392)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/7e2b6f48-e58c-4d05-82e2-feb0f5f876f5/lesson/fa4bc4e7-76bb-4161-9a55-7803ed67fd89" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/7e2b6f48-e58c-4d05-82e2-feb0f5f876f5/lesson/fa4bc4e7-76bb-4161-9a55-7803ed67fd89)

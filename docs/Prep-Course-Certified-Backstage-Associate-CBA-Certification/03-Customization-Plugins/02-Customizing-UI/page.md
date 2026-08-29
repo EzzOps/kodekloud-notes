@@ -201,13 +201,9 @@ Notes on Backstage theming specifics
 * Theme propagation relies on React context and a ThemeProvider (see MUI docs).
 * Backstage Storybook is a useful companion to preview changes and discover components: [https://backstage.io/storybook](https://backstage.io/storybook)
 
-<Callout icon="warning">
-  When overriding fonts or colors, double-check accessibility (contrast ratios) and cross-browser rendering. Large global font overrides can affect layout and third-party components.
-</Callout>
+> **warning** When overriding fonts or colors, double-check accessibility (contrast ratios) and cross-browser rendering. Large global font overrides can affect layout and third-party components.
 
-<Callout icon="lightbulb">
-  Use ThemeProvider (React context) to share your theme across all components. When working with theming, look for keywords like `Material UI`, `ThemeProvider`, and `React context`.
-</Callout>
+> **lightbulb** Use ThemeProvider (React context) to share your theme across all components. When working with theming, look for keywords like `Material UI`, `ThemeProvider`, and `React context`.
 
 Links and references
 
@@ -215,6 +211,4 @@ Links and references
 * Material UI theming docs: [https://mui.com/material-ui/customization/theming/](https://mui.com/material-ui/customization/theming/)
 * Backstage theming utilities: check `@backstage/theme` in your project or Backstage docs for the version-specific helpers
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/aad867ea-baf2-4ca7-b722-ad38ea794a7e/lesson/46e863ef-ceb6-44b9-83a0-1eaff4b9006b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/aad867ea-baf2-4ca7-b722-ad38ea794a7e/lesson/46e863ef-ceb6-44b9-83a0-1eaff4b9006b)

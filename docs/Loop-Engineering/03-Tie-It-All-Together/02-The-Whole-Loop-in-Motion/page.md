@@ -116,10 +116,6 @@ Start-to-finish sequence:
 | Skill                 |           Encoded steps for the task | `lint-and-fix-style`, `refactor-function`      |
 | Sub-agent / Connector | Reviews and fetches external context | `code review sub-agent`, GitHub issue fetcher  |
 
-<Callout icon="lightbulb">
-  The most important two elements are the goal and the scorekeeper — they direct and validate every step in the loop. Build those first, then add the other parts to improve safety, focus, and reach.
-</Callout>
+> **lightbulb** The most important two elements are the goal and the scorekeeper — they direct and validate every step in the loop. Build those first, then add the other parts to improve safety, focus, and reach.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/loop-engineering/module/e7187c25-1255-491d-84dd-87fedf03d4c1/lesson/efe6a81c-1939-4dcf-83e2-218bec535207" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/loop-engineering/module/e7187c25-1255-491d-84dd-87fedf03d4c1/lesson/efe6a81c-1939-4dcf-83e2-218bec535207)

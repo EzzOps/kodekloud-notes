@@ -6,9 +6,7 @@ This article introduces a course project simulating a rocket launch managed thro
 
 In this article, we introduce a course project that simulates a rocket launch entirely managed through Shell scripts. As a key member of the launch team, you will develop scripts to automate the rocket launch sequence. Before you start coding, it is essential to understand the processes you are automating to ensure the simulation proceeds without critical errors.
 
-<Callout icon="lightbulb">
-  This simulation breaks down the rocket launch into a series of manageable Linux-like commands. No advanced rocket science background is required—just careful attention to the sequence of operations.
-</Callout>
+> **lightbulb** This simulation breaks down the rocket launch into a series of manageable Linux-like commands. No advanced rocket science background is required—just careful attention to the sequence of operations.
 
 ## Rocket Launch Sequence
 
@@ -86,13 +84,9 @@ Since you will be launching multiple rockets, a set of additional commands is av
   rocket debug
   ```
 
-<Callout icon="lightbulb">
-  Don't worry about memorizing these commands right away—they will be thoroughly explained through practical exercises in this course. You will also gain hands-on experience with basic Linux commands and real-world scenarios.
-</Callout>
+> **lightbulb** Don't worry about memorizing these commands right away—they will be thoroughly explained through practical exercises in this course. You will also gain hands-on experience with basic Linux commands and real-world scenarios.
 
-<Frame>
-  ![The image shows a "Launch Sequence" with five steps and corresponding commands, alongside a list of unrelated commands, presented in a grid format.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884064/notes-assets/images/Shell-Scripts-for-Beginners-Project-Introduction/frame_140.jpg)
-</Frame>
+![The image shows a "Launch Sequence" with five steps and corresponding commands, alongside a list of unrelated commands, presented in a grid format.](https://kodekloud.com/kk-media/image/upload/v1752884064/notes-assets/images/Shell-Scripts-for-Beginners-Project-Introduction/frame_140.jpg)
 
 ## Next Steps
 
@@ -100,8 +94,6 @@ In the upcoming sections, you will work directly with these shell commands. Our 
 
 Happy scripting, and see you in the next segment!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/9e1a9923-8df0-4176-977a-ca56ad0a5913" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/9e1a9923-8df0-4176-977a-ca56ad0a5913)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/dca234ed-0b96-424c-946f-55a068a9e8a9" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/dca234ed-0b96-424c-946f-55a068a9e8a9)

@@ -15,9 +15,7 @@ Kiali is a powerful add-on for Istio that brings a user-friendly web-based graph
 
 After installing Kiali, you can generate test traffic to confirm that the Kiali dashboard accurately reflects your service mesh's performance and behavior.
 
-<Callout icon="lightbulb">
-  Ensure that your Istio environment is properly configured before integrating Kiali into your system.
-</Callout>
+> **lightbulb** Ensure that your Istio environment is properly configured before integrating Kiali into your system.
 
 Later in this guide, we will examine Kiali’s configuration details and advanced features, offering step-by-step instructions to help you optimize your service mesh monitoring.
 
@@ -30,6 +28,4 @@ For additional resources on Istio and related technologies, check out the follow
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/f482e923-bc64-4d6a-bb06-ad0fd8308ce4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/f482e923-bc64-4d6a-bb06-ad0fd8308ce4)

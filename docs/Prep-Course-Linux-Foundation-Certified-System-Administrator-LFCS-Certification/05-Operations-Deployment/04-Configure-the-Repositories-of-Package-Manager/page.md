@@ -99,10 +99,8 @@ Components: main restricted universe multiverse
 1. **Types**:\
    The first line identifies the type of repository
 
-<Callout icon="lightbulb">
-  **Types**:\
+> **lightbulb** **Types**:\
   The first line identifies the type of repository. Here, `deb` indicates a Debian-style repository, signifying that the package manager (e.g., apt) will work with Debian package files (with the `.deb` extension) containing executable programs, configuration files, documentation, and scripts.
-</Callout>
 
 2. **URIs**:\
    The next line specifies the Uniform Resource Identifier (URI) of the repository. In this instance, it points to the Ubuntu archive mirror in the United States (`us.archive.ubuntu.com`), with `/ubuntu` indicating the repository's content. This URI directs the package manager to the correct source for downloading packages.
@@ -219,9 +217,7 @@ Building dependency tree... Done
 Reading state information... Done
 ```
 
-<Callout icon="triangle-alert">
-  If you encounter errors related to package signatures, ensure that the dearmored public key is correctly located in `/etc/apt/keyrings/docker.key.gpg`.
-</Callout>
+> **triangle-alert** If you encounter errors related to package signatures, ensure that the dearmored public key is correctly located in `/etc/apt/keyrings/docker.key.gpg`.
 
 ## Using Personal Package Archives (PPAs)
 
@@ -266,6 +262,4 @@ This ensures that your system is aware of all available packages and updates. Wi
 
 Now, let’s move on to the next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/e85156f3-13ad-4a6a-8a61-f3b219ce02ac" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/e85156f3-13ad-4a6a-8a61-f3b219ce02ac)

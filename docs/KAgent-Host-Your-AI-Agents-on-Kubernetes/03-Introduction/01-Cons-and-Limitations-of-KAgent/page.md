@@ -193,9 +193,7 @@ Namespace | Pod Name | Ready | Stat
 
 Note: token usage tags (`genai.usage.prompt_tokens`, `genai.usage.completion_tokens`, etc.) are useful for cost analysis and assessing how much context is being sent to the model.
 
-<Callout icon="warning">
-  This lab uses in-memory Jaeger storage. For production systems, do not use in-memory storage — switch to a persistent backend (e.g., Cassandra, Elasticsearch) or a managed OTEL backend to retain traces and ensure availability.
-</Callout>
+> **warning** This lab uses in-memory Jaeger storage. For production systems, do not use in-memory storage — switch to a persistent backend (e.g., Cassandra, Elasticsearch) or a managed OTEL backend to retain traces and ensure availability.
 
 ## 5. Inspect Jaeger services and endpoints
 
@@ -233,9 +231,7 @@ Next steps: run additional agents, increase load, or integrate with a persistent
 
 That's it for this lesson — proceed to hands-on exercises to generate traces and explore span details in Jaeger.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/1f59e7e3-e5ab-4b77-b210-8c954216f293/lesson/177d2731-283c-46d8-92bd-d849e3498f8b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/1f59e7e3-e5ab-4b77-b210-8c954216f293/lesson/177d2731-283c-46d8-92bd-d849e3498f8b)
 
 
 # Cons and Limitations of KAgent
@@ -269,9 +265,7 @@ KAgent is Kubernetes-native and relies on Kubernetes primitives such as CRDs, co
   <img alt="A dark-themed slide titled &#x22;Current Limitations&#x22; with six numbered boxes listing issues: Early-stage project, Learning curve, Resource requirements, Limited documentation, and MCP protocol familiarity." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Kubernetes expertise (CRDs, controllers, RBAC, networking) and familiarity with MCP will reduce operational friction. If you lack Kubernetes experience, expect a steeper ramp-up.
-</Callout>
+> **lightbulb** Kubernetes expertise (CRDs, controllers, RBAC, networking) and familiarity with MCP will reduce operational friction. If you lack Kubernetes experience, expect a steeper ramp-up.
 
 ## Resource requirements and documentation
 
@@ -291,9 +285,7 @@ KAgent requires credentials for supported large language model (LLM) providers t
   <img alt="A dark-themed slide titled &#x22;Current Limitations&#x22; showing six numbered boxes (early-stage project; learning curve; resource requirements; limited documentation; provider dependencies; complex for simple use cases). Below it is a &#x22;Provider Dependencies&#x22; section noting items like requiring LLM provider API keys, API costs, and rate limiting considerations." />
 </Frame>
 
-<Callout icon="warning">
-  Ensure strict secrets and cost controls. Misconfigured or leaked API keys and unmonitored usage can lead to high costs or security incidents.
-</Callout>
+> **warning** Ensure strict secrets and cost controls. Misconfigured or leaked API keys and unmonitored usage can lead to high costs or security incidents.
 
 ## Complexity for simple use cases
 
@@ -383,6 +375,4 @@ Links and references
 * OpenTelemetry: [https://opentelemetry.io/](https://opentelemetry.io/)
 * For community support and the latest project updates, check the KAgent project repository and its contributing guides (see the repository referenced from the project homepage).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/a2bef22f-2221-4587-9f26-3c0bce28059e/lesson/2c62f558-8b9b-4478-bd03-0a01a892af60" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/a2bef22f-2221-4587-9f26-3c0bce28059e/lesson/2c62f558-8b9b-4478-bd03-0a01a892af60)

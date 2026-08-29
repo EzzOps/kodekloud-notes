@@ -23,7 +23,7 @@ Azure OpenAI Service comes with several powerful features that make it a robust 
 4. **Enterprise-Level Security**\
    Enhance data protection with features like role-based access control and private network options. This enterprise-grade security framework safeguards sensitive information and manages access effectively.
 
-![The image features the logos of Azure and OpenAI, with four highlighted services: pre-trained AI models, model customization, responsible AI tools, and enterprise security features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856985/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-What-Is-Azure-OpenAI/azure-openai-ai-services-logos.jpg)
+![The image features the logos of Azure and OpenAI, with four highlighted services: pre-trained AI models, model customization, responsible AI tools, and enterprise security features.](https://kodekloud.com/kk-media/image/upload/v1752856985/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-What-Is-Azure-OpenAI/azure-openai-ai-services-logos.jpg)
 
 ## Development Methods
 
@@ -41,7 +41,7 @@ Azure OpenAI supports a flexible and accessible development environment through 
 * **Azure CLI:**\
   Leverage command-line tools for scripting and automating workflows, catering to developers who prefer terminal-based interfaces.
 
-![The image shows logos for Azure and OpenAI with the title "Development Methods" and lists four options: Azure AI Studio, REST API, Supported SDKs, and Azure CLI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856987/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-What-Is-Azure-OpenAI/azure-openai-development-methods.jpg)
+![The image shows logos for Azure and OpenAI with the title "Development Methods" and lists four options: Azure AI Studio, REST API, Supported SDKs, and Azure CLI.](https://kodekloud.com/kk-media/image/upload/v1752856987/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-What-Is-Azure-OpenAI/azure-openai-development-methods.jpg)
 
 ## Summary
 

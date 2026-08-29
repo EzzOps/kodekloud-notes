@@ -6,9 +6,7 @@ This article provides an overview of Traefik, a dynamic HTTP reverse proxy and l
 
 After thorough evaluation and cost analysis, Company X selected Traefik for its robust feature set and seamless **Kubernetes traffic management**. Traefik is a dynamic, highly configurable HTTP reverse proxy and load balancer. Its automatic configuration, ease of use, and extensibility make it an ideal Ingress solution for modern microservice architectures.
 
-<Frame>
-  ![The image is an infographic about Traefik, highlighting features such as efficient ingress management, dynamic HTTP reverse proxy, robust features, load balancing for Kubernetes, automatic configurations, and ease of use. It includes a cartoon character in the center.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880326/notes-assets/images/Kubernetes-Networking-Deep-Dive-Traefik-Overview/traefik-ingress-management-infographic.jpg)
-</Frame>
+![The image is an infographic about Traefik, highlighting features such as efficient ingress management, dynamic HTTP reverse proxy, robust features, load balancing for Kubernetes, automatic configurations, and ease of use. It includes a cartoon character in the center.](https://kodekloud.com/kk-media/image/upload/v1752880326/notes-assets/images/Kubernetes-Networking-Deep-Dive-Traefik-Overview/traefik-ingress-management-infographic.jpg)
 
 ***
 
@@ -33,13 +31,9 @@ Key principles:
 * **Security-First Design**\
   SSL/TLS termination, automatic HTTPS via Let’s Encrypt, and rich middleware for authentication, rate limiting, and more.
 
-<Callout icon="lightbulb">
-  You can enable automatic HTTPS with Let’s Encrypt by configuring the `certificatesResolvers` section in your static configuration.
-</Callout>
+> **lightbulb** You can enable automatic HTTPS with Let’s Encrypt by configuring the `certificatesResolvers` section in your static configuration.
 
-<Frame>
-  ![The image is an infographic titled "Architecture and Design," highlighting features such as simple modular design, seamless integration, reverse proxy operation, automatic service discovery, hot reloading, protocol support, high availability, and security-first design.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880327/notes-assets/images/Kubernetes-Networking-Deep-Dive-Traefik-Overview/architecture-and-design-infographic-features.jpg)
-</Frame>
+![The image is an infographic titled "Architecture and Design," highlighting features such as simple modular design, seamless integration, reverse proxy operation, automatic service discovery, hot reloading, protocol support, high availability, and security-first design.](https://kodekloud.com/kk-media/image/upload/v1752880327/notes-assets/images/Kubernetes-Networking-Deep-Dive-Traefik-Overview/architecture-and-design-infographic-features.jpg)
 
 ***
 
@@ -54,9 +48,7 @@ Traefik’s routing pipeline comprises four main building blocks:
 | Middleware  | Transforms requests/responses (rate limiting, redirects, header modifications, authentication) |
 | Services    | Represents your backend workloads (Pods, containers, external services)                        |
 
-<Frame>
-  ![The image shows four key components: Entry Points, Routers, Middleware, and Services, each represented by a colored icon and label.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880329/notes-assets/images/Kubernetes-Networking-Deep-Dive-Traefik-Overview/entry-points-routers-middleware-services.jpg)
-</Frame>
+![The image shows four key components: Entry Points, Routers, Middleware, and Services, each represented by a colored icon and label.](https://kodekloud.com/kk-media/image/upload/v1752880329/notes-assets/images/Kubernetes-Networking-Deep-Dive-Traefik-Overview/entry-points-routers-middleware-services.jpg)
 
 Under the hood, **providers** continuously monitor your environment and update Traefik’s configuration, ensuring dynamic, zero-downtime updates.
 
@@ -84,9 +76,7 @@ Traefik stands out with a comprehensive feature set tailored for container-nativ
 * **Interactive Dashboard**\
   Monitor routers, services, middlewares, and metrics via a web UI.
 
-<Frame>
-  ![The image lists key features of a software, including automatic HTTPS with Let's Encrypt, load balancing strategies, support for multiple protocols, middleware customization, dynamic configuration and service discovery, and an interactive dashboard UI for monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880331/notes-assets/images/Kubernetes-Networking-Deep-Dive-Traefik-Overview/software-features-https-load-balancing-dashboard.jpg)
-</Frame>
+![The image lists key features of a software, including automatic HTTPS with Let's Encrypt, load balancing strategies, support for multiple protocols, middleware customization, dynamic configuration and service discovery, and an interactive dashboard UI for monitoring.](https://kodekloud.com/kk-media/image/upload/v1752880331/notes-assets/images/Kubernetes-Networking-Deep-Dive-Traefik-Overview/software-features-https-load-balancing-dashboard.jpg)
 
 ***
 
@@ -100,13 +90,9 @@ Choose the deployment pattern that aligns with your operational model:
 | Helm Chart                        | Install and configure using the official [Helm chart](https://helm.sh/)     |
 | Manual YAML                       | Define RBAC, Services, and Deployment YAML manifests for full customization |
 
-<Frame>
-  ![The image is about deploying Traefik using basic YAML files and ensuring the deployment of necessary resources like RBAC, Service, and Deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880332/notes-assets/images/Kubernetes-Networking-Deep-Dive-Traefik-Overview/traefik-deployment-yaml-rbac-service.jpg)
-</Frame>
+![The image is about deploying Traefik using basic YAML files and ensuring the deployment of necessary resources like RBAC, Service, and Deployment.](https://kodekloud.com/kk-media/image/upload/v1752880332/notes-assets/images/Kubernetes-Networking-Deep-Dive-Traefik-Overview/traefik-deployment-yaml-rbac-service.jpg)
 
-<Callout icon="triangle-alert">
-  When crafting manual manifests, ensure you include RBAC rules to grant Traefik the required permissions in your cluster.
-</Callout>
+> **triangle-alert** When crafting manual manifests, ensure you include RBAC rules to grant Traefik the required permissions in your cluster.
 
 ***
 
@@ -118,9 +104,7 @@ Access Traefik’s built-in dashboard for real-time visibility into your routing
 * Status of services and middlewares
 * Health checks and error rates
 
-<Frame>
-  ![The image shows a Traefik dashboard UI displaying metrics for HTTP and TCP routers, services, and middlewares, with success, warnings, and error indicators.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880333/notes-assets/images/Kubernetes-Networking-Deep-Dive-Traefik-Overview/traefik-dashboard-ui-metrics-routers.jpg)
-</Frame>
+![The image shows a Traefik dashboard UI displaying metrics for HTTP and TCP routers, services, and middlewares, with success, warnings, and error indicators.](https://kodekloud.com/kk-media/image/upload/v1752880333/notes-assets/images/Kubernetes-Networking-Deep-Dive-Traefik-Overview/traefik-dashboard-ui-metrics-routers.jpg)
 
 ***
 
@@ -133,6 +117,4 @@ Now that we’ve reviewed Traefik’s architecture, components, and key capabili
 * [Let’s Encrypt](https://letsencrypt.org)
 * [Helm Charts](https://artifacthub.io/packages/helm/traefik/traefik)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/19677663-2b7d-4c3d-92ee-06df9f5530eb/lesson/08cbbc6c-9c0a-49c0-9c74-9bbaa1af7235" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/19677663-2b7d-4c3d-92ee-06df9f5530eb/lesson/08cbbc6c-9c0a-49c0-9c74-9bbaa1af7235)

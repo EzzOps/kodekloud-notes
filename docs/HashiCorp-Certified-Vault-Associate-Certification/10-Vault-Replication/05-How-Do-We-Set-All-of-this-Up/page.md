@@ -21,16 +21,10 @@ On your primary Vault cluster, enable DR replication. Vault will automatically:
 * Issue a root certificate and a client certificate for mutual TLS
 * Prepare to generate secondary tokens
 
-<Callout icon="lightbulb">
-  These internal certificates are separate from the TLS certificates you configure for your Vault listener.
-</Callout>
+> **lightbulb** These internal certificates are separate from the TLS certificates you configure for your Vault listener.
 
-<Frame>
-  ![The image is a slide about activating DR replication in Vault, detailing the need to enable replication on each cluster, the creation of a root certificate, and the use of mutual TLS connections. It also mentions potential issues with load balancers terminating TLS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878274/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-How-Do-We-Set-All-of-this-Up/dr-replication-vault-activation-slide.jpg)
-</Frame>
+![The image is a slide about activating DR replication in Vault, detailing the need to enable replication on each cluster, the creation of a root certificate, and the use of mutual TLS connections. It also mentions potential issues with load balancers terminating TLS.](https://kodekloud.com/kk-media/image/upload/v1752878274/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-How-Do-We-Set-All-of-this-Up/dr-replication-vault-activation-slide.jpg)
 
-<Callout icon="triangle-alert">
-  If your Vault nodes sit behind a load balancer that terminates TLS, ensure mTLS traffic on port 8201 is passed through end-to-end. Either disable TLS termination or configure a TCP passthrough.
-</Callout>
+> **triangle-alert** If your Vault nodes sit behind a load balancer that terminates TLS, ensure mTLS traffic on port 8201 is passed through end-to-end. Either disable TLS termination or configure a TCP passthrough.
 
 ```bash theme={null}

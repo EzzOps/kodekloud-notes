@@ -12,9 +12,7 @@ Kubernetes has become the de facto platform for running cloud-native application
 
 This course focuses on building practical autoscaling skills for Kubernetes so you can demonstrate credibility and value in production environments. I'm Michael Forrest, and I will guide you through core autoscaling concepts, architectures, and hands-on labs designed to help you experiment, iterate, and learn by doing.
 
-<Callout icon="lightbulb">
-  Ensure your `kubectl` is configured to point at a working Kubernetes cluster before attempting the lab commands used in this lesson.
-</Callout>
+> **lightbulb** Ensure your `kubectl` is configured to point at a working Kubernetes cluster before attempting the lab commands used in this lesson.
 
 To inspect API server flags (for example, admission-related flags) on a control-plane pod, you can run:
 

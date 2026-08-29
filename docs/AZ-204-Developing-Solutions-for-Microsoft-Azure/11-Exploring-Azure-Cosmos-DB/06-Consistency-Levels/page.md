@@ -34,7 +34,7 @@ Eventual consistency is the most lenient model, where reads may not reflect the 
 
 As you move from strong to eventual consistency, the guarantee of data accuracy decreases while improvements in availability, latency, and throughput increase.
 
-![The image illustrates a spectrum of consistency levels in databases, ranging from "Strong" to "Eventual," with stronger consistency on the left and weaker consistency on the right. It also notes that higher availability, lower latency, and higher throughput are associated with weaker consistency.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866438/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Consistency-Levels/database-consistency-spectrum-diagram.jpg)
+![The image illustrates a spectrum of consistency levels in databases, ranging from "Strong" to "Eventual," with stronger consistency on the left and weaker consistency on the right. It also notes that higher availability, lower latency, and higher throughput are associated with weaker consistency.](https://kodekloud.com/kk-media/image/upload/v1752866438/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Consistency-Levels/database-consistency-spectrum-diagram.jpg)
 
 ## Comparing Consistency Levels
 
@@ -47,7 +47,7 @@ Understanding how consistency levels impact data consistency, application availa
 | Latency          | High               | Moderate          | Low                 | Low               | Lowest               |
 | Throughput       | Lower              | Moderate          | Higher              | Higher            | Highest              |
 
-![The image is a table comparing different consistency levels (Strong, Bounded Staleness, Session, Consistent Prefix, Eventual) across four criteria: Data Consistency, App Availability, Latency, and Throughput. Each criterion is represented by filled or partially filled circles indicating varying levels of performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866444/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Consistency-Levels/consistency-levels-comparison-table.jpg)
+![The image is a table comparing different consistency levels (Strong, Bounded Staleness, Session, Consistent Prefix, Eventual) across four criteria: Data Consistency, App Availability, Latency, and Throughput. Each criterion is represented by filled or partially filled circles indicating varying levels of performance.](https://kodekloud.com/kk-media/image/upload/v1752866444/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Consistency-Levels/consistency-levels-comparison-table.jpg)
 
 Selecting the right consistency level is critical for exam scenarios and practical applications. Your choice should align with your application’s needs for correctness, availability, and performance.
 
@@ -63,7 +63,7 @@ For wire protocol–compatible APIs like MongoDB, Cassandra, and Gremlin, Cosmos
 
 > **lightbulb** Note that the probability-bounded staleness metric in Cosmos DB can help predict how often a stronger consistency level might effectively be achieved compared to the configured setting, highlighting the trade-offs involved.
 
-![The image illustrates the concept of choosing the right consistency level for Azure Cosmos DB, showing options for Tables and NoSQL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866446/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Consistency-Levels/azure-cosmos-db-consistency-levels.jpg)
+![The image illustrates the concept of choosing the right consistency level for Azure Cosmos DB, showing options for Tables and NoSQL.](https://kodekloud.com/kk-media/image/upload/v1752866446/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Consistency-Levels/azure-cosmos-db-consistency-levels.jpg)
 
 ## Deploying an Azure Cosmos DB Account
 
@@ -78,11 +78,11 @@ After understanding consistency guarantees, the next step is to deploy an Azure 
    * **Throughput:** Choose between provisioned throughput (with a free tier option of the first 1000 Request Units and 25 GB of storage) or a serverless configuration.
    * **Networking, Backup Policy, and Encryption:** Decide whether to use service-managed or customer-managed encryption keys.
 
-![The image shows a web interface for creating an Azure Cosmos DB account, with fields for project and instance details, including subscription, resource group, and account name. A pop-up window is open for creating a new resource group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866449/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Consistency-Levels/azure-cosmos-db-account-creation.jpg)
+![The image shows a web interface for creating an Azure Cosmos DB account, with fields for project and instance details, including subscription, resource group, and account name. A pop-up window is open for creating a new resource group.](https://kodekloud.com/kk-media/image/upload/v1752866449/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Consistency-Levels/azure-cosmos-db-account-creation.jpg)
 
 After configuring these options, validate the settings and click "Create" to deploy your Azure Cosmos DB account. Once the account is provisioned, you can proceed to create a database and multiple containers to store your JSON documents (items).
 
-![The image shows a Microsoft Azure portal page for creating an Azure Cosmos DB account for NoSQL, displaying configuration details like subscription, resource group, location, and backup policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866450/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Consistency-Levels/azure-cosmos-db-account-creation-2.jpg)
+![The image shows a Microsoft Azure portal page for creating an Azure Cosmos DB account for NoSQL, displaying configuration details like subscription, resource group, location, and backup policy.](https://kodekloud.com/kk-media/image/upload/v1752866450/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Consistency-Levels/azure-cosmos-db-account-creation-2.jpg)
 
 The next section will guide you on managing and querying your data using the Azure Cosmos DB .NET libraries.
 

@@ -6,9 +6,7 @@ This guide covers software management on CentOS Stream 8 using DNF, including in
 
 In this guide, you’ll master software management on **CentOS Stream 8** using DNF—the modern package manager. Whether you’re installing web servers, managing repositories, or cleaning up unused dependencies, DNF provides a consistent CLI. If you’re on an older CentOS release without DNF, substitute `yum` for `dnf` in the examples below (for instance, use `sudo yum install nginx`).
 
-<Callout icon="lightbulb">
-  CentOS Stream 8 uses DNF by default. For legacy CentOS 7 or earlier, replace `dnf` with `yum` in all commands.
-</Callout>
+> **lightbulb** CentOS Stream 8 uses DNF by default. For legacy CentOS 7 or earlier, replace `dnf` with `yum` in all commands.
 
 ***
 
@@ -65,9 +63,7 @@ sudo dnf config-manager --disable powertools
 
 To install packages not found in official repos, add a third-party repository:
 
-<Callout icon="triangle-alert">
-  Third-party repositories can introduce unverified software. Only add trusted sources.
-</Callout>
+> **triangle-alert** Third-party repositories can introduce unverified software. Only add trusted sources.
 
 ```bash theme={null}
 sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
@@ -230,6 +226,4 @@ Type `dnf` and press Tab twice. Confirm with `y` to list all commands and subcom
 * [DNF Documentation](https://dnf.readthedocs.io/en/latest/)
 * [CentOS Stream 8 Official Docs](https://docs.centos.org/en-US/centos/stream/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/a07b5fbf-38bc-47f3-8226-24b8fd666110" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/a07b5fbf-38bc-47f3-8226-24b8fd666110)

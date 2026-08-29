@@ -57,9 +57,7 @@ Each click updates the text box to reflect the total number of clicks, demonstra
 
 Build on this pattern to create dashboards, data explorers, and more within your Jupyter environment!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/36c56a19-11f6-4db1-8bd7-bd6a96c82268/lesson/e92757cb-5675-4502-a171-1319ab63937b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/36c56a19-11f6-4db1-8bd7-bd6a96c82268/lesson/e92757cb-5675-4502-a171-1319ab63937b)
 
 
 # Word Completion vs Chat Completion
@@ -80,9 +78,7 @@ Key characteristics:
 * No conversation history
 * Simpler, lower token usage
 
-<Frame>
-  ![The image compares "Word Completion" and "Chat Completion," highlighting that word completion doesn't need memory, while chat completion expects context from previous conversations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881500/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Word-Completion-vs-Chat-Completion/word-completion-vs-chat-completion.jpg)
-</Frame>
+![The image compares "Word Completion" and "Chat Completion," highlighting that word completion doesn't need memory, while chat completion expects context from previous conversations.](https://kodekloud.com/kk-media/image/upload/v1752881500/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Word-Completion-vs-Chat-Completion/word-completion-vs-chat-completion.jpg)
 
 ## What Is Chat Completion?
 
@@ -103,14 +99,10 @@ Chat completion is **stateful**. You maintain a record of all messages in a `mes
 | user      | Represents the human’s input at each turn                        | “Explain quantum mechanics in simple terms.”                     |
 | assistant | Model-generated responses that continue the conversation context | “Quantum mechanics is the study of matter at very small scales…” |
 
-<Frame>
-  ![The image illustrates the difference between word completion and chat completion, showing a user interacting with a system and an LLM (Large Language Model) using chat history as a message parameter.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881501/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Word-Completion-vs-Chat-Completion/word-completion-vs-chat-completion-llm.jpg)
-</Frame>
+![The image illustrates the difference between word completion and chat completion, showing a user interacting with a system and an LLM (Large Language Model) using chat history as a message parameter.](https://kodekloud.com/kk-media/image/upload/v1752881501/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Word-Completion-vs-Chat-Completion/word-completion-vs-chat-completion-llm.jpg)
 
-<Callout icon="lightbulb">
-  * Use **word completion** for simple text continuations, code generation, or single-turn tasks.
+> **lightbulb** * Use **word completion** for simple text continuations, code generation, or single-turn tasks.
   * Use **chat completion** for multi-turn conversations, contextual assistants, and applications that require stateful interaction.
-</Callout>
 
 ## Sample Chat Completion Request
 
@@ -144,6 +136,4 @@ Authorization: Bearer YOUR_API_KEY
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/36c56a19-11f6-4db1-8bd7-bd6a96c82268/lesson/e97354a8-5b4c-44a6-b50b-4c5d38d8b729" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/36c56a19-11f6-4db1-8bd7-bd6a96c82268/lesson/e97354a8-5b4c-44a6-b50b-4c5d38d8b729)

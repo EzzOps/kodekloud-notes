@@ -32,13 +32,9 @@ You can review the exact checks and rationale for each profile in the [Kubernete
   <img alt="The image shows a webpage from the Kubernetes documentation discussing baseline security policies for containerized workloads, with a focus on managing Windows Pods and HostProcess configurations." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Pod Security Standards are label-driven: a namespace's enforcement behavior is determined solely by labels on that namespace (for example `pod-security.kubernetes.io/enforce=baseline`). Labels make policy auditable and easily reversible.
-</Callout>
+> **lightbulb** Pod Security Standards are label-driven: a namespace's enforcement behavior is determined solely by labels on that namespace (for example `pod-security.kubernetes.io/enforce=baseline`). Labels make policy auditable and easily reversible.
 
-<Callout icon="warning">
-  Applying or changing PSS labels requires permission to modify namespaces (typically cluster-admin). Test changes in a non-production cluster or dedicated namespaces before rolling higher-level enforcement.
-</Callout>
+> **warning** Applying or changing PSS labels requires permission to modify namespaces (typically cluster-admin). Test changes in a non-production cluster or dedicated namespaces before rolling higher-level enforcement.
 
 ## Typical workflow
 

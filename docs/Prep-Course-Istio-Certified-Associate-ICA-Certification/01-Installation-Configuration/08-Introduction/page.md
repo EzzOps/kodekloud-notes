@@ -81,9 +81,7 @@ istiod-dd4b7db5-nxrjv                         1/1     Running   0          111s
 
 Installing Istio does not automatically update application workloads. Sidecar injection (automatic or manual) is required to add the Envoy sidecar to application pods.
 
-<Callout icon="warning">
-  Avoid mixing widely different `istioctl` and control plane versions. Use compatible versions to prevent unexpected behavior. When in doubt, match `istioctl` to your desired control plane version.
-</Callout>
+> **warning** Avoid mixing widely different `istioctl` and control plane versions. Use compatible versions to prevent unexpected behavior. When in doubt, match `istioctl` to your desired control plane version.
 
 ## Install Istio with Helm (modular approach)
 
@@ -268,9 +266,7 @@ Links and references
 
 Now that installation concepts are covered, proceed to hands-on practice in your lab environment using the example commands above.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/fa19694a-32dd-4e5d-bf0f-cd0cb6a11dc6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/fa19694a-32dd-4e5d-bf0f-cd0cb6a11dc6)
 
 
 # Introduction
@@ -291,13 +287,11 @@ What we'll cover (in order)
 * Install Ambient Mode and get started with the ztunnel.
 * Perform upgrades and uninstall Istio using canary upgrade patterns.
 
-<Callout icon="lightbulb">
-  Before you begin, make sure you have a running Kubernetes cluster and `kubectl` configured with cluster-admin privileges. Typical minimums:
+> **lightbulb** Before you begin, make sure you have a running Kubernetes cluster and `kubectl` configured with cluster-admin privileges. Typical minimums:
 
   * Kubernetes 1.21+ recommended.
   * `kubectl` and `helm` CLI installed locally.
   * `istioctl` for the quick-install path (we'll show how to install it).
-</Callout>
 
 <Frame>
   <img alt="The image lists three objectives related to Istio: installing it using Helm, customizing it with the Istio Operator, and installing and configuring Ambient Mode." />
@@ -321,12 +315,8 @@ Additional links and references
 * [Installing Istio with istioctl](https://istio.io/latest/docs/setup/install/istioctl/)
 * [Istio Helm Charts](https://istio.io/latest/docs/setup/install/helm/)
 
-<Callout icon="warning">
-  This is definitely going to be on the exam.
-</Callout>
+> **warning** This is definitely going to be on the exam.
 
 This is definitely going to be on the exam.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/65f60295-4ffb-477b-b3da-7f086e533016" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/65f60295-4ffb-477b-b3da-7f086e533016)

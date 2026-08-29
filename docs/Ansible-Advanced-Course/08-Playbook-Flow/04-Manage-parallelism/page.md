@@ -145,7 +145,7 @@ forks = 5
 
 Increase this value if your hardware and network resources allow for more simultaneous connections.
 
-![The image outlines a strategy for deploying a web application across three servers, detailing tasks like installing dependencies, MySQL, and running a web server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869405/notes-assets/images/Ansible-Advanced-Course-Manage-parallelism/frame_120.jpg)
+![The image outlines a strategy for deploying a web application across three servers, detailing tasks like installing dependencies, MySQL, and running a web server.](https://kodekloud.com/kk-media/image/upload/v1752869405/notes-assets/images/Ansible-Advanced-Course-Manage-parallelism/frame_120.jpg)
 
 ## Summary
 

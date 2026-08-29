@@ -34,9 +34,7 @@ Core capabilities at a glance
 | Policy enforcement (HashiCorp Sentinel) |           Implement policy-as-code to enforce security and compliance | Block unsafe changes before they are applied                |
 | Git-based workflow integrations         |                         Connect VCS to trigger runs on commits or PRs | Aligns infrastructure changes with proven CI/CD practices   |
 
-<Callout icon="lightbulb">
-  State is critical for Terraform. Treat remote state as the single source of truth for your infrastructure. This article includes a detailed discussion of Terraform state.
-</Callout>
+> **lightbulb** State is critical for Terraform. Treat remote state as the single source of truth for your infrastructure. This article includes a detailed discussion of Terraform state.
 
 Benefits summarized
 
@@ -54,6 +52,4 @@ Links and references
 * Terraform: [https://www.terraform.io/](https://www.terraform.io/)
 * HashiCorp Sentinel (policy-as-code): [https://www.hashicorp.com/sentinel](https://www.hashicorp.com/sentinel)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/ca386519-4725-417d-a46f-642d0a683a01/lesson/d20e492e-200a-4177-a85a-fd8113ec04d5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/ca386519-4725-417d-a46f-642d0a683a01/lesson/d20e492e-200a-4177-a85a-fd8113ec04d5)

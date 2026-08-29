@@ -45,9 +45,7 @@ So how do you diagnose and find the root cause?
   <img alt="The image features a question about diagnosing and fixing the root cause of a &#x22;500 Internal Server Error,&#x22; accompanied by a large question mark." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Observability provides the telemetry—logs, metrics, and distributed traces—that you need to locate failures, understand why they happened, and resolve the root cause. By collecting and correlating telemetry across services and infrastructure, you can trace a user request end-to-end and identify the problematic component or dependency.
-</Callout>
+> **lightbulb** Observability provides the telemetry—logs, metrics, and distributed traces—that you need to locate failures, understand why they happened, and resolve the root cause. By collecting and correlating telemetry across services and infrastructure, you can trace a user request end-to-end and identify the problematic component or dependency.
 
 Key telemetry types and their purposes:
 
@@ -73,6 +71,4 @@ Further reading and references:
 
 By instrumenting each component and using tools like OpenTelemetry, you gain visibility across the entire distributed system—making it possible to detect issues quickly, reduce mean time to resolution (MTTR), and improve user experience.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/79b34fea-6f94-4854-a31e-9ac0fbc10eca/lesson/925e5a28-0f42-4e0f-95bd-7df9aeaba8c5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/79b34fea-6f94-4854-a31e-9ac0fbc10eca/lesson/925e5a28-0f42-4e0f-95bd-7df9aeaba8c5)

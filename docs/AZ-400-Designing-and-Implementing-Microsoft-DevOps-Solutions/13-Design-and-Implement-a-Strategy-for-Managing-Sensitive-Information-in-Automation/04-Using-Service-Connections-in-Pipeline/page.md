@@ -113,7 +113,7 @@ az devops service-endpoint create \
 * Authorize Azure DevOps via OAuth or provide a Personal Access Token (PAT).
 * Limit repository permissions to only those needed for your pipelines.
 
-![The image is a slide titled "Using Service Connections in Pipeline," listing topics related to Azure Pipelines and service connections, each marked with a colored dot.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867979/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/using-service-connections-pipeline-slide.jpg)
+![The image is a slide titled "Using Service Connections in Pipeline," listing topics related to Azure Pipelines and service connections, each marked with a colored dot.](https://kodekloud.com/kk-media/image/upload/v1752867979/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/using-service-connections-pipeline-slide.jpg)
 
 ### Usage in Pipelines
 
@@ -155,7 +155,7 @@ Service connections in Azure DevOps enable secure authentication and interaction
 
 Service connections in Azure DevOps enable your CI/CD pipelines to securely authenticate and interact with external systems—such as Azure subscriptions, GitHub repos, and container registries—without exposing secrets in your code. Mastering service connections is essential for both the AZ-400 exam and practical DevOps workflows.
 
-![The image illustrates the flow of service connections in Azure Pipelines, showing the sequence from Azure Pipeline to Azure Resource Manager Service Connection, Service Principal, and Resource Group, with a role associated with the Service Principal.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867980/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Service-Connections-in-Pipeline/azure-pipelines-service-connections-flow.jpg)
+![The image illustrates the flow of service connections in Azure Pipelines, showing the sequence from Azure Pipeline to Azure Resource Manager Service Connection, Service Principal, and Resource Group, with a role associated with the Service Principal.](https://kodekloud.com/kk-media/image/upload/v1752867980/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Service-Connections-in-Pipeline/azure-pipelines-service-connections-flow.jpg)
 
 > **lightbulb** Service connections act like secure bridges, letting your pipelines authenticate against external services without hard-coding credentials.
 
@@ -163,7 +163,7 @@ Service connections in Azure DevOps enable your CI/CD pipelines to securely auth
 
 Service connections are configuration entries in Azure DevOps that store authentication details for external resources. Instead of embedding passwords, tokens, or keys in your scripts, you reference a service connection in your pipeline YAML or Classic definitions, and Azure DevOps handles the secure login.
 
-![The image is an introduction to service connections in Azure Pipelines, showing a diagram with "Credentials," "Authentication Details," and "Service Connections" linked to "External services," along with the Azure DevOps logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867981/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Service-Connections-in-Pipeline/azure-pipelines-service-connections-diagram.jpg)
+![The image is an introduction to service connections in Azure Pipelines, showing a diagram with "Credentials," "Authentication Details," and "Service Connections" linked to "External services," along with the Azure DevOps logo.](https://kodekloud.com/kk-media/image/upload/v1752867981/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Service-Connections-in-Pipeline/azure-pipelines-service-connections-diagram.jpg)
 
 ## Benefits of Service Connections
 
@@ -186,13 +186,13 @@ Service connections are configuration entries in Azure DevOps that store authent
 
 Enables pipelines to authenticate with Docker Hub or private registries for pulling base images and pushing built artifacts.
 
-![The image describes a type of service connection, specifically Docker, which connects to Docker Hub or private Docker registries to pull and push container images.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867982/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Service-Connections-in-Pipeline/docker-service-connection-hub-registries.jpg)
+![The image describes a type of service connection, specifically Docker, which connects to Docker Hub or private Docker registries to pull and push container images.](https://kodekloud.com/kk-media/image/upload/v1752867982/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Service-Connections-in-Pipeline/docker-service-connection-hub-registries.jpg)
 
 ### Kubernetes Connection
 
 Lets you deploy applications to Kubernetes clusters by providing a kubeconfig file or a service account token.
 
-![The image describes a type of service connection involving Kubernetes, highlighting its ability to enable deployments to Kubernetes clusters using kubeconfig files or service accounts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867983/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Service-Connections-in-Pipeline/kubernetes-service-connection-deployments.jpg)
+![The image describes a type of service connection involving Kubernetes, highlighting its ability to enable deployments to Kubernetes clusters using kubeconfig files or service accounts.](https://kodekloud.com/kk-media/image/upload/v1752867983/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Service-Connections-in-Pipeline/kubernetes-service-connection-deployments.jpg)
 
 Azure DevOps supports many more connection types—always pick the one best aligned with your service.
 
@@ -202,11 +202,11 @@ Azure DevOps supports many more connection types—always pick the one best alig
 2. Under **Pipelines**, click **Service Connections**.
 3. Hit **New Service Connection** and choose the desired type.
 
-![The image is a step in a guide titled "Creating a Service Connection," instructing users to go to the project settings in their Azure DevOps project.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867984/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Service-Connections-in-Pipeline/creating-service-connection-azure-devops.jpg)
+![The image is a step in a guide titled "Creating a Service Connection," instructing users to go to the project settings in their Azure DevOps project.](https://kodekloud.com/kk-media/image/upload/v1752867984/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Service-Connections-in-Pipeline/creating-service-connection-azure-devops.jpg)
 
 4. Complete the authentication form with credentials or OAuth details.
 
-![The image shows a step in creating a service connection, specifically providing details like authentication method and credentials, with a form for a new NuGet service connection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867986/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Service-Connections-in-Pipeline/nuget-service-connection-authentication-form.jpg)
+![The image shows a step in creating a service connection, specifically providing details like authentication method and credentials, with a form for a new NuGet service connection.](https://kodekloud.com/kk-media/image/upload/v1752867986/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Service-Connections-in-Pipeline/nuget-service-connection-authentication-form.jpg)
 
 5. Test the connection and save it under a clear, descriptive name for use in your pipeline definitions.
 
@@ -216,11 +216,11 @@ Azure DevOps supports many more connection types—always pick the one best alig
 2. Choose **Service Principal** authentication to enforce least-privilege access.
 3. Enter your Service Principal ID, Key, and Tenant ID from Azure AD.
 
-![The image shows a configuration screen for setting up an Azure Resource Manager (ARM) connection, with options for selecting an authentication method such as service principal or workload identity federation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867987/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Service-Connections-in-Pipeline/azure-arm-connection-configuration-screen.jpg)
+![The image shows a configuration screen for setting up an Azure Resource Manager (ARM) connection, with options for selecting an authentication method such as service principal or workload identity federation.](https://kodekloud.com/kk-media/image/upload/v1752867987/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Service-Connections-in-Pipeline/azure-arm-connection-configuration-screen.jpg)
 
 4. Pick the target Azure subscription and optionally scope down to a specific resource group.
 
-![The image shows a step in configuring an Azure Resource Manager (ARM) connection, specifically selecting the Azure subscription and optionally the resource group. It includes a screenshot of the "New Azure service connection" dialog box with options for scope level and fields for service connection name and description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867988/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Service-Connections-in-Pipeline/azure-arm-connection-configuration-screenshot.jpg)
+![The image shows a step in configuring an Azure Resource Manager (ARM) connection, specifically selecting the Azure subscription and optionally the resource group. It includes a screenshot of the "New Azure service connection" dialog box with options for scope level and fields for service connection name and description.](https://kodekloud.com/kk-media/image/upload/v1752867988/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Service-Connections-in-Pipeline/azure-arm-connection-configuration-screenshot.jpg)
 
 5. Confirm that the Service Principal has only the permissions required for your deployment tasks.
 
@@ -283,7 +283,7 @@ This task uses your ARM service connection to deploy resources defined in your t
 3. Rotate credentials on a regular schedule.
 4. Document each connection’s purpose and scope for team transparency.
 
-![The image outlines best practices for managing service connections, including regular audits, least privilege principle, documentation, and rotation of credentials. It features a central icon with a thumbs-up and ribbon, surrounded by these four practices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867989/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Service-Connections-in-Pipeline/service-connections-best-practices-diagram.jpg)
+![The image outlines best practices for managing service connections, including regular audits, least privilege principle, documentation, and rotation of credentials. It features a central icon with a thumbs-up and ribbon, surrounded by these four practices.](https://kodekloud.com/kk-media/image/upload/v1752867989/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Service-Connections-in-Pipeline/service-connections-best-practices-diagram.jpg)
 
 > **triangle-alert** Failing to rotate or audit credentials may lead to unauthorized access and compliance risks. Schedule regular reviews.
 

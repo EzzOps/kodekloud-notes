@@ -38,9 +38,7 @@ Use these verbal signals during the interview: “I’ll call a day one hundred 
   <img alt="The image features a calculation of application reads, using a hypothetical scenario of 100 million users with 20% active daily, leading to approximately 15,000 reads per second during peak times. Two stick figures are labeled as &#x22;Interviewer&#x22; and &#x22;You.&#x22;" />
 </Frame>
 
-<Callout icon="lightbulb">
-  Say your assumptions and rounding aloud. Those are the signals interviewers use to grade your reasoning.
-</Callout>
+> **lightbulb** Say your assumptions and rounding aloud. Those are the signals interviewers use to grade your reasoning.
 
 Quick reference constants to memorize
 
@@ -62,8 +60,6 @@ Further reading and references
 
 Memorize these two handy mental constants and always narrate your rounding choices — that clarity is often worth more than perfect arithmetic during interviews.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/7d9bce38-0967-4516-9f37-86b633ac4e22/lesson/0985f5d0-7f52-49aa-97ff-1ec17aa1c3d4" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/7d9bce38-0967-4516-9f37-86b633ac4e22/lesson/0985f5d0-7f52-49aa-97ff-1ec17aa1c3d4)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/7d9bce38-0967-4516-9f37-86b633ac4e22/lesson/4b0a49a5-254c-45e3-813b-23e25168bf26" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/7d9bce38-0967-4516-9f37-86b633ac4e22/lesson/4b0a49a5-254c-45e3-813b-23e25168bf26)

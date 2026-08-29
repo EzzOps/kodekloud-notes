@@ -63,9 +63,7 @@ Example host configuration (conceptual):
 
 After restarting your host, the new MCP tools (for example, Hacker News — Fetch Top Stories and Get Story) should appear in the host’s tool list. You can then call tools via MCP — for instance, request Top Stories to get story IDs, then call Get Story with a chosen `itemId`.
 
-<Callout icon="lightbulb">
-  You can run the generated MCP server locally (or in Docker). The Postman MCP generator currently produces local servers — it does not publish a remotely reachable server for you. If you need a remote endpoint, deploy the generated project to your preferred hosting environment or container platform.
-</Callout>
+> **lightbulb** You can run the generated MCP server locally (or in Docker). The Postman MCP generator currently produces local servers — it does not publish a remotely reachable server for you. If you need a remote endpoint, deploy the generated project to your preferred hosting environment or container platform.
 
 ## 6 — End-to-end checklist
 
@@ -84,9 +82,7 @@ After restarting your host, the new MCP tools (for example, Hacker News — Fetc
 
 This workflow makes it simple to expose curated Postman endpoints as MCP tools so local LLMs and tool hosts can call them directly.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/910a0b7a-ac6e-43f1-956e-203a70c3d455/lesson/6e2f5927-e7a6-43b8-829c-9b2483fc6394" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/910a0b7a-ac6e-43f1-956e-203a70c3d455/lesson/6e2f5927-e7a6-43b8-829c-9b2483fc6394)
 
 
 # Demo Claude Integration with MCP

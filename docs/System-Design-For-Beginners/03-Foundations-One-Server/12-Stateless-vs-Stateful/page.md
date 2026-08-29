@@ -22,9 +22,7 @@ Because each server keeps per-user session data in its own memory, we call those
 
 Stateless servers, by contrast, do not retain important per-user state between requests. They handle a request, send a response, and forget anything that isn’t needed for future requests. The user session must live in a shared, durable store that every server can access (for example, a cache like Redis, a database, or tokens stored in signed cookies).
 
-<Callout icon="lightbulb">
-  Make sessions shared: write login sessions to a common store (e.g., `Redis`, a database, or signed cookies). When any server receives a request, it reads the session from that shared place and continues the user’s flow.
-</Callout>
+> **lightbulb** Make sessions shared: write login sessions to a common store (e.g., `Redis`, a database, or signed cookies). When any server receives a request, it reads the session from that shared place and continues the user’s flow.
 
 With a shared session store, when Alan logs in via Server One, the login session is written centrally. If his next request hits Server Five, Server Five reads the same shared store, finds the session, and Alan stays logged in. This fixes the logout problem.
 
@@ -34,9 +32,7 @@ Another approach people sometimes use is session affinity (sticky sessions). Wit
   <img alt="The image illustrates a flowchart of sticky sessions, showing a login interface connecting to a load balancer, which consistently directs traffic to a specific server." />
 </Frame>
 
-<Callout icon="warning">
-  Sticky sessions can mask the underlying problem but reintroduce single-server failure and uneven load. If the pinned server fails, affected users lose their sessions. Sticky sessions also prevent the load balancer from distributing traffic evenly.
-</Callout>
+> **warning** Sticky sessions can mask the underlying problem but reintroduce single-server failure and uneven load. If the pinned server fails, affected users lose their sessions. Sticky sessions also prevent the load balancer from distributing traffic evenly.
 
 Login sessions aren’t the only thing that can make a server stateful. Ask yourself: if this server disappeared right now, would any user lose something? If the answer is yes — that data makes the server stateful. Any user-continuity data stored only on one server (in RAM or on the server’s local disk) should be moved to a shared store so the server can be disposable.
 
@@ -85,6 +81,4 @@ Links and references
 * Best practices for session management: [https://owasp.org/www-community/controls/Session\_Management](https://owasp.org/www-community/controls/Session_Management)
 * Cloud object storage (S3): [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/39800f71-299e-46c1-a72d-dd5c14a29f93" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/39800f71-299e-46c1-a72d-dd5c14a29f93)

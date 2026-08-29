@@ -54,9 +54,7 @@ def test_create_user(client):
 
 After saving your changes, running your tests should confirm that both tests pass successfully. This organized setup not only cleans up your test files but also ensures that the database is properly configured and available during testing.
 
-<Callout icon="triangle-alert">
-  If you encounter warnings such as "is deprecated since Python 3.8, use 'async def' instead," review any legacy non-fixture code. Since table creation and session management are now fully handled within the fixtures, these warnings should no longer apply.
-</Callout>
+> **triangle-alert** If you encounter warnings such as "is deprecated since Python 3.8, use 'async def' instead," review any legacy non-fixture code. Since table creation and session management are now fully handled within the fixtures, these warnings should no longer apply.
 
 ***
 
@@ -64,9 +62,7 @@ This concludes our lesson on setting up a test database with fixtures. By levera
 
 For additional information and advanced testing strategies, please refer to the [FastAPI Testing Documentation](https://fastapi.tiangolo.com/tutorial/testing/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/71e83dec-abb2-4491-86e9-baffe478b327" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/71e83dec-abb2-4491-86e9-baffe478b327)
 
 
 # Setup Test Database
@@ -194,9 +190,7 @@ app.dependency_overrides[get_db] = override_get_db
 client = TestClient(app)
 ```
 
-<Callout icon="lightbulb">
-  This configuration ensures that whenever a route depends on `get_db`, FastAPI uses the testing session rather than the default development session.
-</Callout>
+> **lightbulb** This configuration ensures that whenever a route depends on `get_db`, FastAPI uses the testing session rather than the default development session.
 
 Here’s an example demonstrating the testing of a user creation route using the dependency override:
 

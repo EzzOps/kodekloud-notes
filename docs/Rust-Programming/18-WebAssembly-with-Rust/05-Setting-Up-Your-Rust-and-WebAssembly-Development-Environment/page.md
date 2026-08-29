@@ -6,9 +6,7 @@ This guide helps set up a development environment for Rust and WebAssembly, cove
 
 In this guide, we will set up a robust development environment for Rust and WebAssembly. Our primary objectives are to install and configure the essential tools—wasm-pack (for compiling Rust code into WebAssembly and bundling it for JavaScript) and, optionally, Cargo Generate (for rapidly creating new Rust projects from templates).
 
-<Frame>
-  ![The image is an introduction slide for a development environment setup, highlighting the goals of setting up the "wasm-pack" tool and using the "cargo-generate" tool to simplify new project setups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884039/notes-assets/images/Rust-Programming-Setting-Up-Your-Rust-and-WebAssembly-Development-Environment/wasm-pack-cargo-generate-setup.jpg)
-</Frame>
+![The image is an introduction slide for a development environment setup, highlighting the goals of setting up the "wasm-pack" tool and using the "cargo-generate" tool to simplify new project setups.](https://kodekloud.com/kk-media/image/upload/v1752884039/notes-assets/images/Rust-Programming-Setting-Up-Your-Rust-and-WebAssembly-Development-Environment/wasm-pack-cargo-generate-setup.jpg)
 
 By the end of this tutorial, you will be able to write a Rust function, compile it into WebAssembly, and load it into a web page.
 
@@ -169,9 +167,7 @@ Compiling wasm-bindgen-shared v2.0.95
 ...
 ```
 
-<Callout icon="triangle-alert">
-  If you mistakenly place a semicolon after `"Hello, wasm-pack!".to_string();` in the `greet` function, the result will become a statement instead of returning the string. Always ensure the function ends with the expression intended for output.
-</Callout>
+> **triangle-alert** If you mistakenly place a semicolon after `"Hello, wasm-pack!".to_string();` in the `greet` function, the result will become a statement instead of returning the string. Always ensure the function ends with the expression intended for output.
 
 After a successful build, wasm-pack generates the necessary WebAssembly files and packages them for direct integration with JavaScript.
 
@@ -260,6 +256,4 @@ For further reading and advanced configurations, consider exploring the followin
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/c16605ac-c7ae-46bc-8864-75c711c07762/lesson/0dc1048f-16b9-4206-b240-1e659cf27546" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/c16605ac-c7ae-46bc-8864-75c711c07762/lesson/0dc1048f-16b9-4206-b240-1e659cf27546)

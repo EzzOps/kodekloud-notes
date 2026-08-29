@@ -76,9 +76,7 @@ What to know about this policy
 * `level` must be one of `privileged`, `baseline`, or `restricted`.
 * `version` pins the PSS definitions (for example, `latest` or `1.24`) to keep behavior stable as standards evolve.
 
-<Callout icon="lightbulb">
-  Use `version: latest` to automatically use the most recent PSS definitions supported by your Kyverno version, or pin to a specific PSS version (for example `1.24`) to maintain predictable validation behavior.
-</Callout>
+> **lightbulb** Use `version: latest` to automatically use the most recent PSS definitions supported by your Kyverno version, or pin to a specific PSS version (for example `1.24`) to maintain predictable validation behavior.
 
 How Kyverno surfaces actionable errors
 The `podSecurity` sub-rule is compact but comprehensive. For example, if a developer submits a Pod that sets `hostIPC: true`, the Baseline profile will block it:
@@ -140,8 +138,6 @@ References and further reading
 * Kubernetes Pod Security Standards: [https://kubernetes.io/docs/concepts/security/pod-security-standards/](https://kubernetes.io/docs/concepts/security/pod-security-standards/)
 * Pod Security Admission: [https://kubernetes.io/docs/concepts/security/pod-security-admission/](https://kubernetes.io/docs/concepts/security/pod-security-admission/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/4a603e0d-0271-4517-8fa4-3a2f5e458cb7" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/4a603e0d-0271-4517-8fa4-3a2f5e458cb7)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/626c9b5b-898f-45ef-8e5f-d0c0c67da7a6" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/626c9b5b-898f-45ef-8e5f-d0c0c67da7a6)

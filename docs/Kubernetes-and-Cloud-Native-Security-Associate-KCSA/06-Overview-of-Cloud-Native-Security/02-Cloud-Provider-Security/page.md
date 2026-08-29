@@ -5,9 +5,7 @@ trivy image --severity HIGH,CRITICAL team-a/crm:stable
 clair-scanner --ip $(hostname -I | awk '{print $1}') team-a/crm:stable
 ```
 
-<Frame>
-  ![The image shows logos for two vulnerability scanning tools, Trivy and Clair, with their names displayed below each logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880840/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/trivy-clair-vulnerability-scanners.jpg)
-</Frame>
+![The image shows logos for two vulnerability scanning tools, Trivy and Clair, with their names displayed below each logo.](https://kodekloud.com/kk-media/image/upload/v1752880840/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/trivy-clair-vulnerability-scanners.jpg)
 
 | Scanner | Description                                  | Command Example                        |
 | ------- | -------------------------------------------- | -------------------------------------- |
@@ -18,17 +16,13 @@ clair-scanner --ip $(hostname -I | awk '{print $1}') team-a/crm:stable
 
 After remediating all discovered flaws, Team A switched to an officially maintained minimal image (Ubuntu or Alpine). This approach reduces the attack surface and ensures timely security updates.
 
-<Frame>
-  ![The image shows logos of Ubuntu and Alpine Linux with the label "Official, minimal base image" above them, under the title "Minimal Base Image."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880841/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/ubuntu-alpine-minimal-base-image.jpg)
-</Frame>
+![The image shows logos of Ubuntu and Alpine Linux with the label "Official, minimal base image" above them, under the title "Minimal Base Image."](https://kodekloud.com/kk-media/image/upload/v1752880841/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/ubuntu-alpine-minimal-base-image.jpg)
 
 ## Understanding Build Artifacts
 
 Any output from your build process—compiled binaries, JAR/WAR files, logs, reports, and especially container images—counts as a build artifact.
 
-<Frame>
-  ![The image is a diagram titled "Build Artifact" showing six components: code, package, WAR file, logs, report, and container image, each represented by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880842/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/build-artifact-diagram-components.jpg)
-</Frame>
+![The image is a diagram titled "Build Artifact" showing six components: code, package, WAR file, logs, report, and container image, each represented by an icon.](https://kodekloud.com/kk-media/image/upload/v1752880842/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/build-artifact-diagram-components.jpg)
 
 Securely managing container images requires a centralized artifact repository, which supports your CI/CD workflow and ensures consistent distribution.
 
@@ -36,9 +30,7 @@ Securely managing container images requires a centralized artifact repository, w
 
 While Docker Hub is popular for hosting images, it has limited access controls and no built-in vulnerability scanning.
 
-<Frame>
-  ![The image shows logos for Docker Hub and JFrog under the title "Storing Container Images."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880843/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/docker-hub-jfrog-container-images.jpg)
-</Frame>
+![The image shows logos for Docker Hub and JFrog under the title "Storing Container Images."](https://kodekloud.com/kk-media/image/upload/v1752880843/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/docker-hub-jfrog-container-images.jpg)
 
 | Repository        | Access Control | Scanning   | Image Signing |
 | ----------------- | -------------- | ---------- | ------------- |
@@ -55,25 +47,17 @@ For stricter compliance, consider:
 * GitHub Packages ([https://github.com/features/packages](https://github.com/features/packages))
 * JFrog Artifactory ([https://jfrog.com/artifactory/](https://jfrog.com/artifactory/))
 
-<Frame>
-  ![The image shows logos of popular artifact repositories: Nexus Repository, GitHub Packages, and JFrog Artifactory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880844/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/artifact-repositories-logos.jpg)
-</Frame>
+![The image shows logos of popular artifact repositories: Nexus Repository, GitHub Packages, and JFrog Artifactory.](https://kodekloud.com/kk-media/image/upload/v1752880844/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/artifact-repositories-logos.jpg)
 
 ### JFrog Artifactory Security
 
 JFrog Artifactory continuously scans stored images, integrates with vulnerability tools, and can enforce digital signatures to guarantee image authenticity.
 
-<Frame>
-  ![The image features the JFrog Artifactory logo with a description stating it continuously checks stored images for security weaknesses by integrating with security scanning tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880845/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/jfrog-artifactory-security-scanning.jpg)
-</Frame>
+![The image features the JFrog Artifactory logo with a description stating it continuously checks stored images for security weaknesses by integrating with security scanning tools.](https://kodekloud.com/kk-media/image/upload/v1752880845/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/jfrog-artifactory-security-scanning.jpg)
 
-<Callout icon="lightbulb">
-  Digital signatures on images detect unauthorized modifications and improve supply chain security.
-</Callout>
+> **lightbulb** Digital signatures on images detect unauthorized modifications and improve supply chain security.
 
-<Frame>
-  ![The image illustrates the concept of enhancing image security with digital signatures, focusing on ensuring image authenticity. It features icons of digital signatures and user symbols.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880846/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/image-security-digital-signatures.jpg)
-</Frame>
+![The image illustrates the concept of enhancing image security with digital signatures, focusing on ensuring image authenticity. It features icons of digital signatures and user symbols.](https://kodekloud.com/kk-media/image/upload/v1752880846/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/image-security-digital-signatures.jpg)
 
 ## Next Steps
 
@@ -91,9 +75,7 @@ JFrog Artifactory continuously scans stored images, integrates with vulnerabilit
 * [GitHub Packages](https://github.com/features/packages)
 * [JFrog Artifactory](https://jfrog.com/artifactory/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/a0ddd095-0114-4aa4-b3a5-2b31e773f241/lesson/6c0a9809-bf14-4680-b340-5d84343ad6c8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/a0ddd095-0114-4aa4-b3a5-2b31e773f241/lesson/6c0a9809-bf14-4680-b340-5d84343ad6c8)
 
 
 # Cloud Provider Security
@@ -114,21 +96,15 @@ zsh port-scan.sh 104.21.63.124
 ~ took 4s
 ```
 
-<Callout icon="triangle-alert">
-  Exposed Docker ports (2375) allow unauthenticated remote container management. Always restrict access or enable TLS authentication.
-</Callout>
+> **triangle-alert** Exposed Docker ports (2375) allow unauthenticated remote container management. Always restrict access or enable TLS authentication.
 
 A simple preventative measure is a network firewall. By filtering traffic based on IP, port, and protocol, you can hide or block open ports on your servers.
 
-<Frame>
-  ![The image illustrates a "Cats and Dogs" election simulation within a cloud infrastructure, protected by a firewall, with sources and an attacker depicted outside the firewall.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880847/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Cloud-Provider-Security/cats-dogs-election-simulation-cloud.jpg)
-</Frame>
+![The image illustrates a "Cats and Dogs" election simulation within a cloud infrastructure, protected by a firewall, with sources and an attacker depicted outside the firewall.](https://kodekloud.com/kk-media/image/upload/v1752880847/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Cloud-Provider-Security/cats-dogs-election-simulation-cloud.jpg)
 
 Cloud providers (AWS, Azure, GCP) supply multiple layers of infrastructure security—ranging from firewalls to advanced threat detection, WAFs, and container defenses. Below is an overview of these capabilities.
 
-<Frame>
-  ![The image illustrates cloud provider security capabilities, highlighting threat detection and application firewall features, along with logos for AWS, GCP, and Azure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880848/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Cloud-Provider-Security/cloud-provider-security-threat-detection.jpg)
-</Frame>
+![The image illustrates cloud provider security capabilities, highlighting threat detection and application firewall features, along with logos for AWS, GCP, and Azure.](https://kodekloud.com/kk-media/image/upload/v1752880848/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Cloud-Provider-Security/cloud-provider-security-threat-detection.jpg)
 
 ***
 
@@ -142,9 +118,7 @@ All three major cloud platforms offer managed SIEM/SOAR-style tools for continuo
 | AWS      | Amazon GuardDuty              | ML-driven threat detection for AWS accounts and workloads, no rule authoring required.  | [https://aws.amazon.com/guardduty](https://aws.amazon.com/guardduty)                                 |
 | GCP      | Security Command Center (SCC) | Centralized dashboard for asset inventory, vulnerability scanning, and threat insights. | [https://cloud.google.com/security-command-center](https://cloud.google.com/security-command-center) |
 
-<Frame>
-  ![The image lists threat management and response techniques for cloud platforms, featuring AWS GuardDuty, GCP Security Command Center, and Microsoft Azure Sentinel.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880850/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Cloud-Provider-Security/cloud-threat-management-techniques.jpg)
-</Frame>
+![The image lists threat management and response techniques for cloud platforms, featuring AWS GuardDuty, GCP Security Command Center, and Microsoft Azure Sentinel.](https://kodekloud.com/kk-media/image/upload/v1752880850/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Cloud-Provider-Security/cloud-threat-management-techniques.jpg)
 
 ***
 
@@ -158,9 +132,7 @@ To defend against OWASP Top 10 attacks and DDoS, each provider offers a native W
 | AWS      | AWS WAF     | Custom rule creation, integration with CloudFront & ALB, real-time metrics. | [https://docs.aws.amazon.com/waf](https://docs.aws.amazon.com/waf)                                                     |
 | GCP      | Cloud Armor | DDoS protection, geo-based access controls, custom security policies.       | [https://cloud.google.com/armor](https://cloud.google.com/armor)                                                       |
 
-<Frame>
-  ![The image shows logos of different Web Application Firewalls (WAF) including Azure WAF, AWS WAF, and Google Cloud Armor, along with icons representing SQL Injections, XSS Attack, Load Balancer, and AWS CloudFront.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880851/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Cloud-Provider-Security/waf-logos-sql-injection-xss.jpg)
-</Frame>
+![The image shows logos of different Web Application Firewalls (WAF) including Azure WAF, AWS WAF, and Google Cloud Armor, along with icons representing SQL Injections, XSS Attack, Load Balancer, and AWS CloudFront.](https://kodekloud.com/kk-media/image/upload/v1752880851/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Cloud-Provider-Security/waf-logos-sql-injection-xss.jpg)
 
 ***
 
@@ -174,9 +146,7 @@ Container orchestration platforms combine built-in controls with ecosystem tools
 | AWS      | Amazon EKS + Bottlerocket      | Bottlerocket OS, `kube-bench` CIS checks, IAM roles for service accounts.   | [https://aws.amazon.com/eks](https://aws.amazon.com/eks)<br />[https://aws.amazon.com/bottlerocket](https://aws.amazon.com/bottlerocket)                           |
 | GCP      | Google Kubernetes Engine (GKE) | Private clusters, Anthos policy enforcement with OPA, binary authorization. | [https://cloud.google.com/kubernetes-engine](https://cloud.google.com/kubernetes-engine)<br />[https://www.openpolicyagent.org/](https://www.openpolicyagent.org/) |
 
-<Frame>
-  ![The image shows logos related to container security, including AWS, GCP, Azure, EKS, GKE, AKS, Bottlerocket, Kube-bench, and CIS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880852/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Cloud-Provider-Security/container-security-logos-aws-gcp-azure.jpg)
-</Frame>
+![The image shows logos related to container security, including AWS, GCP, Azure, EKS, GKE, AKS, Bottlerocket, Kube-bench, and CIS.](https://kodekloud.com/kk-media/image/upload/v1752880852/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Cloud-Provider-Security/container-security-logos-aws-gcp-azure.jpg)
 
 ***
 
@@ -184,19 +154,13 @@ Container orchestration platforms combine built-in controls with ecosystem tools
 
 Cloud security is a partnership: the provider secures the cloud *infrastructure*, and you secure your workloads *in* the cloud.
 
-<Frame>
-  ![The image illustrates a shared responsibility model for cloud services, showing how responsibilities are divided between Microsoft and the customer across different service types (SaaS, PaaS, IaaS, On-prem). It uses color coding to indicate which responsibilities are retained by the customer, shared, or transferred to the cloud provider.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880853/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Cloud-Provider-Security/shared-responsibility-model-cloud-services.jpg)
-</Frame>
+![The image illustrates a shared responsibility model for cloud services, showing how responsibilities are divided between Microsoft and the customer across different service types (SaaS, PaaS, IaaS, On-prem). It uses color coding to indicate which responsibilities are retained by the customer, shared, or transferred to the cloud provider.](https://kodekloud.com/kk-media/image/upload/v1752880853/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Cloud-Provider-Security/shared-responsibility-model-cloud-services.jpg)
 
 Every service tier (IaaS, PaaS, SaaS) shifts certain responsibilities. In AWS, for example, customers manage security *in* the cloud, while AWS handles security *of* the cloud.
 
-<Frame>
-  ![The image illustrates the AWS Shared Responsibility Model, highlighting the division of security responsibilities between the customer and AWS. It shows that customers are responsible for security "in" the cloud, while AWS is responsible for security "of" the cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880854/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Cloud-Provider-Security/aws-shared-responsibility-model.jpg)
-</Frame>
+![The image illustrates the AWS Shared Responsibility Model, highlighting the division of security responsibilities between the customer and AWS. It shows that customers are responsible for security "in" the cloud, while AWS is responsible for security "of" the cloud.](https://kodekloud.com/kk-media/image/upload/v1752880854/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Cloud-Provider-Security/aws-shared-responsibility-model.jpg)
 
-<Callout icon="lightbulb">
-  Review the shared responsibility matrix for each cloud provider to ensure you cover all security controls—from networking rules to application hardening.
-</Callout>
+> **lightbulb** Review the shared responsibility matrix for each cloud provider to ensure you cover all security controls—from networking rules to application hardening.
 
 ***
 
@@ -209,10 +173,6 @@ In this article, we examined how Azure, AWS, and Google Cloud approach:
 
 Next, we’ll move into deeper infrastructure security practices.
 
-<Frame>
-  ![The image is a summary slide highlighting four key points about cloud security: attackers scanning for vulnerabilities, activating firewalls, cloud providers offering security tools, and the shared responsibility model.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880855/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Cloud-Provider-Security/cloud-security-summary-four-points.jpg)
-</Frame>
+![The image is a summary slide highlighting four key points about cloud security: attackers scanning for vulnerabilities, activating firewalls, cloud providers offering security tools, and the shared responsibility model.](https://kodekloud.com/kk-media/image/upload/v1752880855/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Cloud-Provider-Security/cloud-security-summary-four-points.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/a0ddd095-0114-4aa4-b3a5-2b31e773f241/lesson/12d92419-6307-474d-b78d-54eaea05ae23" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/a0ddd095-0114-4aa4-b3a5-2b31e773f241/lesson/12d92419-6307-474d-b78d-54eaea05ae23)

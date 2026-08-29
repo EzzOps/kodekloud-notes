@@ -26,7 +26,7 @@ In any engineering discipline—from aircraft cockpit layouts to network topolog
 
 > **lightbulb** Conventions focus on style, not interpreter rules. Violating them won’t usually break your code, but following them makes future maintenance far easier.
 
-![The image is a circular diagram labeled "Easy to Understand," divided into three sections: "Readable," "Maintainable," and "Easier," each in different colors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868554/notes-assets/images/Advanced-Bash-Scripting-Overview/easy-to-understand-diagram.jpg)
+![The image is a circular diagram labeled "Easy to Understand," divided into three sections: "Readable," "Maintainable," and "Easier," each in different colors.](https://kodekloud.com/kk-media/image/upload/v1752868554/notes-assets/images/Advanced-Bash-Scripting-Overview/easy-to-understand-diagram.jpg)
 
 ## Shell Script Conventions: Naming & Style
 
@@ -42,7 +42,7 @@ Below are high-level recommendations for shell scripts. We’ll dive into each i
 
 Languages like Java and Python have de facto style guides that virtually every developer follows—think PEP 8 or Google’s Java Style Guide. In those ecosystems, naming functions, classes, and methods requires little debate.
 
-![The image shows an overview checklist with items like "Naming Functions," "Variables," "Methods," and "Classes," each marked with a checkmark. It has a dark background with a small star icon on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868556/notes-assets/images/Advanced-Bash-Scripting-Overview/overview-checklist-functions-variables.jpg)
+![The image shows an overview checklist with items like "Naming Functions," "Variables," "Methods," and "Classes," each marked with a checkmark. It has a dark background with a small star icon on the left.](https://kodekloud.com/kk-media/image/upload/v1752868556/notes-assets/images/Advanced-Bash-Scripting-Overview/overview-checklist-functions-variables.jpg)
 
 Shell scripting hasn’t settled on one universal standard, so teams often craft their own. Whether you’re a novice or a seasoned scripter, adopting these guidelines will sharpen your skills and improve collaboration.
 

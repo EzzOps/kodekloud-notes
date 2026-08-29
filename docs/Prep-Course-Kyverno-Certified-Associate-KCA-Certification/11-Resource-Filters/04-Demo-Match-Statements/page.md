@@ -38,13 +38,9 @@ The key parts:
 * `match` selects which resources Kyverno evaluates (here: kinds Pod and Deployment).
 * `validate.pattern` enforces the presence and a non-empty value for `metadata.labels.env`.
 
-<Callout icon="lightbulb">
-  The `?*` pattern in Kyverno matches any non-empty string, ensuring the `env` label exists and is not empty.
-</Callout>
+> **lightbulb** The `?*` pattern in Kyverno matches any non-empty string, ensuring the `env` label exists and is not empty.
 
-<Callout icon="warning">
-  This policy uses `validationFailureAction: enforce`, which will block resource creation or updates that don't meet the rule. Use `audit` if you prefer non-blocking checks.
-</Callout>
+> **warning** This policy uses `validationFailureAction: enforce`, which will block resource creation or updates that don't meet the rule. Use `audit` if you prefer non-blocking checks.
 
 ## Apply the policy
 

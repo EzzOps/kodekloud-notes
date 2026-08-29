@@ -12,7 +12,7 @@ To begin, navigate to the AWS Translate console. Within Amazon Translate, you wi
 
 When you select real-time translation, you will notice options for specifying the source and target languages. Simply copy the text you want to translate, paste it into the text input box, and let AWS Translate handle the rest. If the auto-detect option is enabled, the service automatically identifies the input language.
 
-![The image shows the Amazon Translate interface with a real-time translation feature. It displays a text input box with the sentence "Hello, how are you today. Where is the library?" and the same text in the translated text box.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865022/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-AWS-Translate/amazon-translate-real-time-interface.jpg)
+![The image shows the Amazon Translate interface with a real-time translation feature. It displays a text input box with the sentence "Hello, how are you today. Where is the library?" and the same text in the translated text box.](https://kodekloud.com/kk-media/image/upload/v1752865022/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-AWS-Translate/amazon-translate-real-time-interface.jpg)
 
 Currently, the service is set to auto-detect the language, correctly identifying English for the provided sentence. You also have the option to manually specify the source language if necessary. For example, to translate the text into Spanish, simply choose "Spanish" as the target language. The same process applies if you select another target language such as French or any other supported language.
 
@@ -22,7 +22,7 @@ In addition to text input, AWS Translate also supports document translation. For
 2. Upload your file.
 3. Indicate the document type (e.g., a text file, HTML, or a .docx file) to ensure proper handling by the service.
 
-![The image shows the Amazon Translate interface, where English text is being translated into French. The input text is "Hello, how are you today. Where is the library?" and the translated text is "Bonjour, comment allez-vous aujourd'hui. Où se trouve la bibliothèque ?"](../../../../images/kodekloud.com/kk-media/image/upload/v1752865023/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-AWS-Translate/amazon-translate-english-french.jpg)
+![The image shows the Amazon Translate interface, where English text is being translated into French. The input text is "Hello, how are you today. Where is the library?" and the translated text is "Bonjour, comment allez-vous aujourd'hui. Où se trouve la bibliothèque ?"](https://kodekloud.com/kk-media/image/upload/v1752865023/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-AWS-Translate/amazon-translate-english-french.jpg)
 
 > **lightbulb** For best results, always verify that the correct source and target languages are selected before initiating the translation.
 
@@ -36,13 +36,13 @@ Batch translation is ideal for processing multiple files or large documents. To 
 4. Define the file format.
 5. Choose the location where the translated files will be saved (either in a different S3 bucket or in a specific folder within the same bucket).
 
-![The image shows a screenshot of the AWS console, specifically the page for creating a translation job. It includes fields for input and output S3 locations, file format selection, and optional customization settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865024/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-AWS-Translate/aws-console-translation-job-screenshot.jpg)
+![The image shows a screenshot of the AWS console, specifically the page for creating a translation job. It includes fields for input and output S3 locations, file format selection, and optional customization settings.](https://kodekloud.com/kk-media/image/upload/v1752865024/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-AWS-Translate/aws-console-translation-job-screenshot.jpg)
 
 The batch translation process mirrors that of real-time translation—determine the source and destination languages, and select the appropriate files for translation.
 
 For illustration, here is another example related to real-time translation:
 
-![The image shows the Amazon Translate interface for creating a translation job, with options to set the job name, source and target languages, and input data location.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865026/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-AWS-Translate/amazon-translate-job-interface.jpg)
+![The image shows the Amazon Translate interface for creating a translation job, with options to set the job name, source and target languages, and input data location.](https://kodekloud.com/kk-media/image/upload/v1752865026/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-AWS-Translate/amazon-translate-job-interface.jpg)
 
 Suppose you aim to translate the following sentence into Spanish:
 
@@ -64,7 +64,7 @@ To set up custom terminology:
 4. Provide the terminology file in one of the supported formats: CSV, TMX, or TSV.
 5. Specify the translation directionality.
 
-![The image shows the "Terminology settings" page in the AWS Translate console, where users can configure terminology file data formats and directionality options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865027/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-AWS-Translate/aws-translate-terminology-settings.jpg)
+![The image shows the "Terminology settings" page in the AWS Translate console, where users can configure terminology file data formats and directionality options.](https://kodekloud.com/kk-media/image/upload/v1752865027/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-AWS-Translate/aws-translate-terminology-settings.jpg)
 
 Below is an example CSV file format ensuring that "virtual private clouds" remains unchanged across multiple languages:
 
@@ -75,7 +75,7 @@ virtual private clouds,virtual private clouds,virtual private clouds
 
 This CSV file instructs AWS Translate to keep the term "virtual private clouds" intact in English, French, and Spanish. Once your file (e.g., "custom-terminology.csv") is ready, upload it to create your custom terminology entry. Afterward, return to the real-time translation interface, paste your sentence again, and select your desired target language. By enabling custom terminology in the additional settings and choosing your custom terminology (e.g., "AWS term"), "virtual private clouds" remains unchanged in the translated output.
 
-![The image shows the Amazon Translate interface, where text is being translated from English to Spanish in real-time. The source text discusses experience with Amazon Web Services, and the translated text is displayed on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865028/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-AWS-Translate/amazon-translate-english-spanish-interface.jpg)
+![The image shows the Amazon Translate interface, where text is being translated from English to Spanish in real-time. The source text discusses experience with Amazon Web Services, and the translated text is displayed on the right.](https://kodekloud.com/kk-media/image/upload/v1752865028/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-AWS-Translate/amazon-translate-english-spanish-interface.jpg)
 
 Leveraging custom terminology ensures your translations are technically accurate and contextually appropriate, especially when handling specialized content.
 

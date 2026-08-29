@@ -17,16 +17,10 @@ Microsoft Sentinel encompasses numerous features from both SIEM and SOAR perspec
 * Configuring playbooks for automated responses.
 * Hunting for and investigating potential breaches.
 
-<Frame>
-  ![The image lists a curriculum for Azure Sentinel, including tasks like enabling Sentinel, configuring data connections, creating workbooks, enabling rules, configuring playbooks, and investigating breaches.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882072/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Introduction/azure-sentinel-curriculum-tasks.jpg)
-</Frame>
+![The image lists a curriculum for Azure Sentinel, including tasks like enabling Sentinel, configuring data connections, creating workbooks, enabling rules, configuring playbooks, and investigating breaches.](https://kodekloud.com/kk-media/image/upload/v1752882072/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Introduction/azure-sentinel-curriculum-tasks.jpg)
 
-<Callout icon="lightbulb">
-  This introductory article provides a level 100 overview of Microsoft Sentinel. For professionals working in Security Operations Centers (SOC) or those seeking a deeper technical understanding, advanced training covering rule creation, playbook design, incident management, and threat hunting is highly recommended.
-</Callout>
+> **lightbulb** This introductory article provides a level 100 overview of Microsoft Sentinel. For professionals working in Security Operations Centers (SOC) or those seeking a deeper technical understanding, advanced training covering rule creation, playbook design, incident management, and threat hunting is highly recommended.
 
 Let’s begin by discussing how to enable Azure Sentinel in your environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/fdf529c7-54c7-4550-a622-aec81172dcad/lesson/b8c51d29-0b82-4efb-beaa-90a1cc5f7ffb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/fdf529c7-54c7-4550-a622-aec81172dcad/lesson/b8c51d29-0b82-4efb-beaa-90a1cc5f7ffb)

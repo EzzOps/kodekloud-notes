@@ -12,7 +12,7 @@ Elastic Disaster Recovery manages disaster recovery for physical, virtual, and c
 
 The service continuously replicates your operating system, applications, and databases with 24/7 monitoring. This constant replication ensures that during a disaster, a simple click deploys an up-to-date recovery infrastructure on AWS.
 
-![The image is an infographic about Elastic Disaster Recovery (DRS), highlighting features such as being a fully managed service, using AWS as a recovery site, maintaining continual replication, and easy access to disaster recovery infrastructure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865987/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Disaster-Recovery/elastic-disaster-recovery-infographic.jpg)
+![The image is an infographic about Elastic Disaster Recovery (DRS), highlighting features such as being a fully managed service, using AWS as a recovery site, maintaining continual replication, and easy access to disaster recovery infrastructure.](https://kodekloud.com/kk-media/image/upload/v1752865987/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Disaster-Recovery/elastic-disaster-recovery-infographic.jpg)
 
 When a disaster strikes, notify AWS and witness your recovery resources come online within minutes. Elastic Disaster Recovery supports various failover scenarios including:
 
@@ -45,6 +45,6 @@ The essential components of Elastic Disaster Recovery include:
 * **Staging Area:** AWS subnet designated for receiving and archiving replicated data.
 * **Launch Template:** Predefined configurations (instance type, subnet, security groups) for recovery server deployment.
 
-![The image is a summary of a disaster recovery service using AWS, highlighting key points such as managed recovery for various server types, using AWS as a recovery site, and configuring recovery server specifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865989/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Disaster-Recovery/aws-disaster-recovery-summary.jpg)
+![The image is a summary of a disaster recovery service using AWS, highlighting key points such as managed recovery for various server types, using AWS as a recovery site, and configuring recovery server specifications.](https://kodekloud.com/kk-media/image/upload/v1752865989/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Disaster-Recovery/aws-disaster-recovery-summary.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/23e00d1f-6422-4fef-a9bf-e8f007be5514/lesson/3f5eed14-ec51-4be0-82b7-8172e21c1c3f)

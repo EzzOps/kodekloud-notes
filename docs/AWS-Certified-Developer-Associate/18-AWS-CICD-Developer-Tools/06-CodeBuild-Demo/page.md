@@ -198,15 +198,15 @@ Once the project is configured, start the build. The CodeBuild logs will display
 
 Several images below illustrate the configuration steps:
 
-![The image shows an AWS CodeCommit interface with a notification indicating "webapp successfully deleted" and no repositories listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857931/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codecommit-webapp-deleted-notification.jpg)
+![The image shows an AWS CodeCommit interface with a notification indicating "webapp successfully deleted" and no repositories listed.](https://kodekloud.com/kk-media/image/upload/v1752857931/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codecommit-webapp-deleted-notification.jpg)
 
-![The image shows an AWS CodeBuild interface for creating a build project, where users can configure the project name and type. Options include selecting a default or runner project.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857933/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codebuild-create-project-interface.jpg)
+![The image shows an AWS CodeBuild interface for creating a build project, where users can configure the project name and type. Options include selecting a default or runner project.](https://kodekloud.com/kk-media/image/upload/v1752857933/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codebuild-create-project-interface.jpg)
 
-![The image shows an AWS console screen for managing default source credentials, with a pop-up window prompting to authorize the AWS Connector for GitHub.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857935/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-console-source-credentials-github.jpg)
+![The image shows an AWS console screen for managing default source credentials, with a pop-up window prompting to authorize the AWS Connector for GitHub.](https://kodekloud.com/kk-media/image/upload/v1752857935/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-console-source-credentials-github.jpg)
 
-![The image shows an AWS CodeBuild setup screen where a GitHub repository is being connected for a build project. It includes options for repository selection and webhook configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857936/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codebuild-github-setup.jpg)
+![The image shows an AWS CodeBuild setup screen where a GitHub repository is being connected for a build project. It includes options for repository selection and webhook configuration.](https://kodekloud.com/kk-media/image/upload/v1752857936/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codebuild-github-setup.jpg)
 
-![The image shows an AWS CodeBuild configuration screen where options for provisioning model, environment image, compute, and running mode are being selected. The "On-demand" provisioning model and "Managed image" environment image are chosen.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857936/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codebuild-configuration-screen.jpg)
+![The image shows an AWS CodeBuild configuration screen where options for provisioning model, environment image, compute, and running mode are being selected. The "On-demand" provisioning model and "Managed image" environment image are chosen.](https://kodekloud.com/kk-media/image/upload/v1752857936/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codebuild-configuration-screen.jpg)
 
 After adding the `buildspec.yaml` file to your repository (using `git add`, `git commit`, and `git push`), CodeBuild detects the file and automatically starts a new build. For example, the logs might display:
 
@@ -238,11 +238,11 @@ This configuration ensures that all repository files are packaged and passed alo
 
 Additional diagrams illustrate the process:
 
-![The image shows an AWS CodeBuild configuration screen where options for compute, running mode, operating system, runtime, and service role are being set. The selected options include EC2 for compute, container for running mode, and Amazon Linux for the operating system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857937/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codebuild-configuration-screen-2.jpg)
+![The image shows an AWS CodeBuild configuration screen where options for compute, running mode, operating system, runtime, and service role are being set. The selected options include EC2 for compute, container for running mode, and Amazon Linux for the operating system.](https://kodekloud.com/kk-media/image/upload/v1752857937/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codebuild-configuration-screen-2.jpg)
 
-![The image shows a GitHub repository named "webapp" with a list of files such as .gitignore, add.js, and buildspec.yml, all marked as "first commit." The repository has no stars, forks, or description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857938/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/github-repo-webapp-first-commit.jpg)
+![The image shows a GitHub repository named "webapp" with a list of files such as .gitignore, add.js, and buildspec.yml, all marked as "first commit." The repository has no stars, forks, or description.](https://kodekloud.com/kk-media/image/upload/v1752857938/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/github-repo-webapp-first-commit.jpg)
 
-![The image shows an AWS CodeBuild interface with a build in progress for a project named "webapp-codebuild." The build status, start time, and other details are displayed on the screen.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857939/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codebuild-webapp-progress.jpg)
+![The image shows an AWS CodeBuild interface with a build in progress for a project named "webapp-codebuild." The build status, start time, and other details are displayed on the screen.](https://kodekloud.com/kk-media/image/upload/v1752857939/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codebuild-webapp-progress.jpg)
 
 Once the build completes successfully—with all linting and testing passing—you will see detailed logs showing the duration of each phase.
 
@@ -262,7 +262,7 @@ Follow these steps to configure the pipeline:
 
 The following diagram shows a typical CodePipeline setup:
 
-![The image shows an AWS CodePipeline setup screen where a user is configuring pipeline settings, including the pipeline name, type, execution mode, and service role.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857940/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codepipeline-setup-screen.jpg)
+![The image shows an AWS CodePipeline setup screen where a user is configuring pipeline settings, including the pipeline name, type, execution mode, and service role.](https://kodekloud.com/kk-media/image/upload/v1752857940/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codepipeline-setup-screen.jpg)
 
 Initially, if the deploy stage is configured to use a build artifact that isn’t generated, deployment may fail with an error like:
 
@@ -282,15 +282,15 @@ After pushing the updated file to CodeCommit, CodeBuild produces an artifact con
 
 Additional images detail the pipeline configuration and troubleshooting steps:
 
-![The image shows an AWS CodePipeline interface with sections for Source, Build, and Deploy stages. The Source stage is in progress, while the Build and Deploy stages have not run yet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857941/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codepipeline-source-build-deploy.jpg)
+![The image shows an AWS CodePipeline interface with sections for Source, Build, and Deploy stages. The Source stage is in progress, while the Build and Deploy stages have not run yet.](https://kodekloud.com/kk-media/image/upload/v1752857941/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codepipeline-source-build-deploy.jpg)
 
-![The image shows an AWS CodePipeline interface where the build stage has succeeded, but the deploy stage has failed. The error message indicates an issue with finding the artifact or Amazon S3 bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857942/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codepipeline-build-succeeded-deploy-failed.jpg)
+![The image shows an AWS CodePipeline interface where the build stage has succeeded, but the deploy stage has failed. The error message indicates an issue with finding the artifact or Amazon S3 bucket.](https://kodekloud.com/kk-media/image/upload/v1752857942/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codepipeline-build-succeeded-deploy-failed.jpg)
 
-![The image shows an AWS CodePipeline interface with a "Deploy" action that has failed. The error message indicates an issue with finding the artifact or Amazon S3 bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857943/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codepipeline-deploy-failed-error.jpg)
+![The image shows an AWS CodePipeline interface with a "Deploy" action that has failed. The error message indicates an issue with finding the artifact or Amazon S3 bucket.](https://kodekloud.com/kk-media/image/upload/v1752857943/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codepipeline-deploy-failed-error.jpg)
 
-![The image shows an Amazon S3 interface with a message indicating that an object was not found in a specified bucket path. The interface includes navigation options and a sidebar with various AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857944/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/amazon-s3-object-not-found-interface.jpg)
+![The image shows an Amazon S3 interface with a message indicating that an object was not found in a specified bucket path. The interface includes navigation options and a sidebar with various AWS services.](https://kodekloud.com/kk-media/image/upload/v1752857944/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/amazon-s3-object-not-found-interface.jpg)
 
-![The image shows a configuration screen for editing an action in AWS CodePipeline, specifically for deploying an application using AWS Elastic Beanstalk. It includes fields for action name, provider, region, input artifacts, application name, and environment name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857945/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codepipeline-elastic-beanstalk-config.jpg)
+![The image shows a configuration screen for editing an action in AWS CodePipeline, specifically for deploying an application using AWS Elastic Beanstalk. It includes fields for action name, provider, region, input artifacts, application name, and environment name.](https://kodekloud.com/kk-media/image/upload/v1752857945/notes-assets/images/AWS-Certified-Developer-Associate-CodeBuild-Demo/aws-codepipeline-elastic-beanstalk-config.jpg)
 
 After updating the input artifact settings in CodePipeline to match the build artifact and committing the changes, trigger another run by pushing a new commit. For example, updating an HTML file to display version information can confirm that the new artifact is deployed correctly.
 

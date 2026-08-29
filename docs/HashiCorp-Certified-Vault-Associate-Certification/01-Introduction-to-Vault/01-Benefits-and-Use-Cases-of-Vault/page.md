@@ -15,9 +15,7 @@ HashiCorp Vault is a unified secrets management solution designed to secure, sto
 | Encryption as a service        | Perform encrypt/decrypt operations via the Transit and Transform Engines.                          |
 | Automated PKI                  | Programmatically generate, renew, and revoke X.509 certificates with the PKI Secrets Engine.       |
 
-<Callout icon="lightbulb">
-  Vault’s unified approach replaces fragmented tools (1Password, KeePass, cloud vaults) with a single, auditable control plane.
-</Callout>
+> **lightbulb** Vault’s unified approach replaces fragmented tools (1Password, KeePass, cloud vaults) with a single, auditable control plane.
 
 Below we dive deeper into key Vault use cases, each backed by strong API support and enterprise-grade security policies.
 
@@ -25,9 +23,7 @@ Below we dive deeper into key Vault use cases, each backed by strong API support
 
 ## Secure Data Management Use Cases
 
-<Frame>
-  ![The image illustrates use cases for secure data management, including migrating to dynamically generated secrets, automating X.509 certificate generation, centralizing secret storage, and migrating to identity-based access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878176/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Benefits-and-Use-Cases-of-Vault/secure-data-management-use-cases.jpg)
-</Frame>
+![The image illustrates use cases for secure data management, including migrating to dynamically generated secrets, automating X.509 certificate generation, centralizing secret storage, and migrating to identity-based access.](https://kodekloud.com/kk-media/image/upload/v1752878176/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Benefits-and-Use-Cases-of-Vault/secure-data-management-use-cases.jpg)
 
 1. Centralized secret storage
 2. Dynamic secret generation & renewal
@@ -35,31 +31,23 @@ Below we dive deeper into key Vault use cases, each backed by strong API support
 4. Automated X.509 certificate issuance
 5. Identity-based access control
 
-<Callout icon="lightbulb">
-  Align these use cases with compliance standards (PCI-DSS, HIPAA, GDPR) by leveraging Vault’s audit logging and policy enforcement.
-</Callout>
+> **lightbulb** Align these use cases with compliance standards (PCI-DSS, HIPAA, GDPR) by leveraging Vault’s audit logging and policy enforcement.
 
 ***
 
 ## Centralizing Secret Storage
 
-<Frame>
-  ![The image illustrates a use case for centralizing the storage of secrets across an organization, featuring tools like Chef, Jenkins, AWS Secrets Manager, and Azure Key Vault. It suggests consolidating these into a key/value platform.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878178/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Benefits-and-Use-Cases-of-Vault/centralizing-secrets-storage-use-case.jpg)
-</Frame>
+![The image illustrates a use case for centralizing the storage of secrets across an organization, featuring tools like Chef, Jenkins, AWS Secrets Manager, and Azure Key Vault. It suggests consolidating these into a key/value platform.](https://kodekloud.com/kk-media/image/upload/v1752878178/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Benefits-and-Use-Cases-of-Vault/centralizing-secrets-storage-use-case.jpg)
 
 Many teams scatter secrets across Chef, Jenkins, AWS Secrets Manager, Azure Key Vault, and more. Vault’s Key/Value Secrets Engine consolidates all static credentials in a single namespace, simplifying policy management and audits.
 
-<Callout icon="triangle-alert">
-  Never commit Vault tokens or raw credentials to source control. Always retrieve secrets at runtime via the Vault API.
-</Callout>
+> **triangle-alert** Never commit Vault tokens or raw credentials to source control. Always retrieve secrets at runtime via the Vault API.
 
 ***
 
 ## Migrating to Dynamic Secrets
 
-<Frame>
-  ![The image compares static and dynamic credentials, highlighting the benefits of migrating to dynamic credentials, such as being short-lived, automatically revoked, and programmatically retrieved.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878179/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Benefits-and-Use-Cases-of-Vault/static-vs-dynamic-credentials-comparison.jpg)
-</Frame>
+![The image compares static and dynamic credentials, highlighting the benefits of migrating to dynamic credentials, such as being short-lived, automatically revoked, and programmatically retrieved.](https://kodekloud.com/kk-media/image/upload/v1752878179/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Benefits-and-Use-Cases-of-Vault/static-vs-dynamic-credentials-comparison.jpg)
 
 Dynamic secrets are generated on demand and have a defined lease time:
 
@@ -71,17 +59,13 @@ Dynamic secrets are generated on demand and have a defined lease time:
 
 Moving from permanent credentials to dynamic secrets reduces blast radius and eliminates manual rotation tasks.
 
-<Callout icon="triangle-alert">
-  Ensure robust lease management: monitor and renew active leases to avoid service disruptions.
-</Callout>
+> **triangle-alert** Ensure robust lease management: monitor and renew active leases to avoid service disruptions.
 
 ***
 
 ## Encrypting Data with a Centralized Workflow
 
-<Frame>
-  ![The image illustrates a use case for encrypting data, showing components like databases, key management, file systems, and cloud services, with a centralized workflow for encryption options. It mentions "Secrets Engines" such as Transit, Key Management, KMIP, and Transform.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878181/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Benefits-and-Use-Cases-of-Vault/data-encryption-use-case-diagram.jpg)
-</Frame>
+![The image illustrates a use case for encrypting data, showing components like databases, key management, file systems, and cloud services, with a centralized workflow for encryption options. It mentions "Secrets Engines" such as Transit, Key Management, KMIP, and Transform.](https://kodekloud.com/kk-media/image/upload/v1752878181/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Benefits-and-Use-Cases-of-Vault/data-encryption-use-case-diagram.jpg)
 
 Vault’s Secrets Engines for encryption include:
 
@@ -94,17 +78,13 @@ Vault’s Secrets Engines for encryption include:
 
 Route all encryption calls through Vault to decouple cryptographic logic from applications, ensure compliance, and centralize key management.
 
-<Callout icon="lightbulb">
-  The Transit Engine integrates with hardware security modules (HSMs) for FIPS-compliant encryption.
-</Callout>
+> **lightbulb** The Transit Engine integrates with hardware security modules (HSMs) for FIPS-compliant encryption.
 
 ***
 
 ## Automated X.509 Certificate Management
 
-<Frame>
-  ![The image compares the process of automating X.509 certificates before and after using Vault. It illustrates a detailed step-by-step process before Vault and a simplified interaction using Vault.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878182/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Benefits-and-Use-Cases-of-Vault/x509-certificates-automation-vault-comparison.jpg)
-</Frame>
+![The image compares the process of automating X.509 certificates before and after using Vault. It illustrates a detailed step-by-step process before Vault and a simplified interaction using Vault.](https://kodekloud.com/kk-media/image/upload/v1752878182/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Benefits-and-Use-Cases-of-Vault/x509-certificates-automation-vault-comparison.jpg)
 
 Vault’s PKI Secrets Engine offers:
 
@@ -115,17 +95,13 @@ Vault’s PKI Secrets Engine offers:
 
 This fully automates TLS workflows and scales certificate management across microservices and edge devices.
 
-<Callout icon="lightbulb">
-  See the [PKI Secrets Engine documentation](https://www.vaultproject.io/docs/secrets/pki) for CA setup and role configuration.
-</Callout>
+> **lightbulb** See the [PKI Secrets Engine documentation](https://www.vaultproject.io/docs/secrets/pki) for CA setup and role configuration.
 
 ***
 
 ## Migrating to Identity-Based Access
 
-<Frame>
-  ![The image illustrates a use case for migrating to identity-based access, highlighting benefits like quick scaling, reduced ticket-based access, and increased time to value, with AWS instances using a "web role" for access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878183/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Benefits-and-Use-Cases-of-Vault/identity-based-access-migration-use-case.jpg)
-</Frame>
+![The image illustrates a use case for migrating to identity-based access, highlighting benefits like quick scaling, reduced ticket-based access, and increased time to value, with AWS instances using a "web role" for access.](https://kodekloud.com/kk-media/image/upload/v1752878183/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Benefits-and-Use-Cases-of-Vault/identity-based-access-migration-use-case.jpg)
 
 Instead of IP allow-lists or shared credentials, Vault leverages auth methods:
 
@@ -136,9 +112,7 @@ Instead of IP allow-lists or shared credentials, Vault leverages auth methods:
 
 This model eliminates firewall churn, automates onboarding, and secures ephemeral workloads.
 
-<Callout icon="lightbulb">
-  Review the [Identity & Access methods](https://www.vaultproject.io/docs/auth) to choose the right integration for your environment.
-</Callout>
+> **lightbulb** Review the [Identity & Access methods](https://www.vaultproject.io/docs/auth) to choose the right integration for your environment.
 
 ***
 
@@ -151,6 +125,4 @@ This model eliminates firewall churn, automates onboarding, and secures ephemera
 * [Auth Methods](https://www.vaultproject.io/docs/auth)
 * [Vault GitHub Repository](https://github.com/hashicorp/vault)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/b8d194ad-b4a2-463b-826a-5ad71a059e36/lesson/06437f5c-9289-4fdb-aba5-229aaeef3ef1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/b8d194ad-b4a2-463b-826a-5ad71a059e36/lesson/06437f5c-9289-4fdb-aba5-229aaeef3ef1)

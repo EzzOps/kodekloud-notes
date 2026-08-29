@@ -27,9 +27,7 @@ Workflow:
 2. Deploy changes to an existing server.
 3. SSH into the server to install packages or tweak configurations.
 
-<Callout icon="triangle-alert">
-  Over time, manual patching and ad-hoc changes can lead to **configuration drift**, causing inconsistencies between environments.
-</Callout>
+> **triangle-alert** Over time, manual patching and ad-hoc changes can lead to **configuration drift**, causing inconsistencies between environments.
 
 ## What Is Immutable Infrastructure?
 
@@ -43,9 +41,7 @@ Workflow:
 
 This approach guarantees that every server instance is identical, reproducible, and replaceable.
 
-<Callout icon="lightbulb">
-  Immutable infrastructure simplifies rollbacks: redeploy a previous image version and your environment reverts instantly.
-</Callout>
+> **lightbulb** Immutable infrastructure simplifies rollbacks: redeploy a previous image version and your environment reverts instantly.
 
 ## Mutable vs Immutable: A Comparison
 
@@ -114,6 +110,4 @@ For more details, see the [Packer documentation](https://www.packer.io/docs).
 * [AWS AMI Concepts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)
 * [Kubernetes Official Docs](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-packer/module/88bc689f-1e45-49d8-887c-cb44923b3390/lesson/9e75ef6d-f9da-4f7b-a1ea-1faee36984d2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-packer/module/88bc689f-1e45-49d8-887c-cb44923b3390/lesson/9e75ef6d-f9da-4f7b-a1ea-1faee36984d2)

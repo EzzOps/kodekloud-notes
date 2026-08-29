@@ -51,7 +51,7 @@ git push -u origin ChangeFrontPage
 
 > **lightbulb** If you don’t see the new branch right away, have your collaborator refresh the **Branches** view.
 
-![The image shows a screenshot of the Azure DevOps interface displaying the branches of a repository. It lists two branches, "ChangeFrontPage" and "master," along with details like commit IDs, authors, and status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867323/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Repos-collaborating-with-pull-requests/azure-devops-branches-screenshot.jpg)
+![The image shows a screenshot of the Azure DevOps interface displaying the branches of a repository. It lists two branches, "ChangeFrontPage" and "master," along with details like commit IDs, authors, and status.](https://kodekloud.com/kk-media/image/upload/v1752867323/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Repos-collaborating-with-pull-requests/azure-devops-branches-screenshot.jpg)
 
 ***
 
@@ -65,7 +65,7 @@ Now that your feature branch is pushed, initiate a pull request (PR) to merge in
 4. Assign **Jeremy Morgan** (or the appropriate reviewer).
 5. Click **Create** to open the PR.
 
-![The image shows a pull request creation page in Azure DevOps, with fields for title, description, reviewers, and work items. The sidebar includes options like Repos, Pipelines, and Test Plans.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867324/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Repos-collaborating-with-pull-requests/azure-devops-pull-request-creation.jpg)
+![The image shows a pull request creation page in Azure DevOps, with fields for title, description, reviewers, and work items. The sidebar includes options like Repos, Pipelines, and Test Plans.](https://kodekloud.com/kk-media/image/upload/v1752867324/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Repos-collaborating-with-pull-requests/azure-devops-pull-request-creation.jpg)
 
 ***
 
@@ -88,7 +88,7 @@ Leave comments or questions inline:
 
 Inspect the diff for `Home.razor`:
 
-![The image shows a pull request in Azure DevOps for a project named "KodeKloudGifts," with a proposed change to the "Home.razor" file. The change involves updating text on the front page.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867325/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Repos-collaborating-with-pull-requests/azure-devops-kodekloudgifts-pull-request.jpg)
+![The image shows a pull request in Azure DevOps for a project named "KodeKloudGifts," with a proposed change to the "Home.razor" file. The change involves updating text on the front page.](https://kodekloud.com/kk-media/image/upload/v1752867325/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Repos-collaborating-with-pull-requests/azure-devops-kodekloudgifts-pull-request.jpg)
 
 ### 3.2 Choose a Review Outcome
 
@@ -99,7 +99,7 @@ Azure DevOps supports multiple review decisions:
 * Reject
 * Abandon
 
-![The image shows a pull request interface in Azure DevOps, with options to approve, reject, or comment on the changes. It includes a conversation about the review status and a description of the changes made.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867326/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Repos-collaborating-with-pull-requests/azure-devops-pull-request-interface.jpg)
+![The image shows a pull request interface in Azure DevOps, with options to approve, reject, or comment on the changes. It includes a conversation about the review status and a description of the changes made.](https://kodekloud.com/kk-media/image/upload/v1752867326/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Repos-collaborating-with-pull-requests/azure-devops-pull-request-interface.jpg)
 
 ### 3.3 Merge Settings and Strategies
 
@@ -120,7 +120,7 @@ You can also:
 
 > **triangle-alert** Deleting the feature branch is irreversible. Ensure you won’t need any additional changes before confirming.
 
-![The image shows a pull request interface in Azure DevOps, with options to complete the pull request and post-completion settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867327/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Repos-collaborating-with-pull-requests/azure-devops-pull-request-interface-2.jpg)
+![The image shows a pull request interface in Azure DevOps, with options to complete the pull request and post-completion settings.](https://kodekloud.com/kk-media/image/upload/v1752867327/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Azure-Repos-collaborating-with-pull-requests/azure-devops-pull-request-interface-2.jpg)
 
 ***
 

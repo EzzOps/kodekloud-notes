@@ -14,13 +14,9 @@ In addition, you’ll learn how to:
 * Dockerize your application to ensure seamless operation within a Docker container
 * Build a CI/CD pipeline for automated testing and deployment
 
-<Frame>
-  ![The image shows a person in front of a microphone with a list of topics related to FastAPI and application development, such as "Common Conventions" and "Database Migration."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883451/notes-assets/images/Python-API-Development-with-FastAPI-Introduction/fastapi-application-development-topics.jpg)
-</Frame>
+![The image shows a person in front of a microphone with a list of topics related to FastAPI and application development, such as "Common Conventions" and "Database Migration."](https://kodekloud.com/kk-media/image/upload/v1752883451/notes-assets/images/Python-API-Development-with-FastAPI-Introduction/fastapi-application-development-topics.jpg)
 
-<Callout icon="lightbulb">
-  If you’re new to API development or the FastAPI framework, this lesson is designed to guide you step-by-step through each component, ensuring you have all the necessary skills to build, test, and deploy a robust API.
-</Callout>
+> **lightbulb** If you’re new to API development or the FastAPI framework, this lesson is designed to guide you step-by-step through each component, ensuring you have all the necessary skills to build, test, and deploy a robust API.
 
 By the end of this lesson, you will have a comprehensive understanding of:
 
@@ -31,6 +27,4 @@ By the end of this lesson, you will have a comprehensive understanding of:
 
 Let’s dive in and explore the exciting world of FastAPI development!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/39b3bc40-eea2-4573-9929-47bae4f9f008/lesson/46e4a868-4cfb-47c9-b4f4-4dd84d3be23b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/39b3bc40-eea2-4573-9929-47bae4f9f008/lesson/46e4a868-4cfb-47c9-b4f4-4dd84d3be23b)

@@ -25,7 +25,7 @@ Launch your first Amazon EC2 virtual server in just a few minutes. This step-by-
 2. Search for **EC2** in the Services menu and select **EC2** to open the EC2 Dashboard.
 3. Click **Launch instance** to begin.
 
-![The image shows the AWS EC2 dashboard, displaying options for managing instances, resources, and account settings in the US East (N. Virginia) region. It includes sections for launching instances, service health, and exploring AWS features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868967/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-EC2-instance-using-UI-Part-1/aws-ec2-dashboard-managing-instances.jpg)
+![The image shows the AWS EC2 dashboard, displaying options for managing instances, resources, and account settings in the US East (N. Virginia) region. It includes sections for launching instances, service health, and exploring AWS features.](https://kodekloud.com/kk-media/image/upload/v1752868967/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-EC2-instance-using-UI-Part-1/aws-ec2-dashboard-managing-instances.jpg)
 
 ***
 
@@ -35,7 +35,7 @@ Launch your first Amazon EC2 virtual server in just a few minutes. This step-by-
 2. **Select an Amazon Machine Image (AMI)** – choose the OS you prefer. Ensure the CPU architecture (e.g., x86\_64) is correct.
 3. **Choose Instance Type** – for free tier, pick **t2.micro**.
 
-![The image shows an AWS console interface for launching an EC2 instance, with options for selecting an Amazon Machine Image (AMI) and instance type. The selected AMI is Amazon Linux 2023, and the instance type is t2.micro.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868968/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-EC2-instance-using-UI-Part-1/aws-console-ec2-instance-launch-ami.jpg)
+![The image shows an AWS console interface for launching an EC2 instance, with options for selecting an Amazon Machine Image (AMI) and instance type. The selected AMI is Amazon Linux 2023, and the instance type is t2.micro.](https://kodekloud.com/kk-media/image/upload/v1752868968/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-EC2-instance-using-UI-Part-1/aws-console-ec2-instance-launch-ami.jpg)
 
 ***
 
@@ -46,7 +46,7 @@ You must create or select an SSH key pair to connect to your instance.
 > **lightbulb** Choose **Create a new key pair**, enter a name (e.g., `demo`), and **download** the private key (`.pem`) file immediately. You cannot retrieve it later.\
   Save it securely—losing this file means you cannot SSH into your instance without recovery steps.
 
-![The image shows a dialog box in AWS for creating a key pair, where you can enter a key pair name, select the key pair type (RSA or ED25519), and choose the private key file format (.pem or .ppk).](../../../../images/kodekloud.com/kk-media/image/upload/v1752868969/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-EC2-instance-using-UI-Part-1/aws-key-pair-creation-dialog-box.jpg)
+![The image shows a dialog box in AWS for creating a key pair, where you can enter a key pair name, select the key pair type (RSA or ED25519), and choose the private key file format (.pem or .ppk).](https://kodekloud.com/kk-media/image/upload/v1752868969/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-EC2-instance-using-UI-Part-1/aws-key-pair-creation-dialog-box.jpg)
 
 ***
 
@@ -60,7 +60,7 @@ You must create or select an SSH key pair to connect to your instance.
 2. **Storage**
    * Root volume: 8 GB EBS (gp2 / gp3)
 
-![The image shows an AWS EC2 instance configuration screen, where a user is setting up security groups and storage options before launching an instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868971/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-EC2-instance-using-UI-Part-1/aws-ec2-instance-configuration-screen.jpg)
+![The image shows an AWS EC2 instance configuration screen, where a user is setting up security groups and storage options before launching an instance.](https://kodekloud.com/kk-media/image/upload/v1752868971/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-EC2-instance-using-UI-Part-1/aws-ec2-instance-configuration-screen.jpg)
 
 ***
 
@@ -75,7 +75,7 @@ Review and adjust advanced settings as needed:
 
 These defaults follow AWS best practices. Features like placement groups, capacity reservations, tenancy, and CloudWatch alarms are covered elsewhere.
 
-![The image shows an AWS EC2 instance configuration page, with options for instance settings and a summary section on the right. The "Launch instance" button is visible at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868972/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-EC2-instance-using-UI-Part-1/aws-ec2-instance-configuration-page.jpg)
+![The image shows an AWS EC2 instance configuration page, with options for instance settings and a summary section on the right. The "Launch instance" button is visible at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752868972/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-EC2-instance-using-UI-Part-1/aws-ec2-instance-configuration-page.jpg)
 
 ***
 
@@ -83,7 +83,7 @@ These defaults follow AWS best practices. Features like placement groups, capaci
 
 Click **Launch instance**. AWS will provision your VM in seconds.
 
-![The image shows an AWS EC2 console with a success message indicating the successful launch of an instance. Below, there are options for next steps, such as creating billing alerts and connecting to the instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868973/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-EC2-instance-using-UI-Part-1/aws-ec2-console-instance-launch-success.jpg)
+![The image shows an AWS EC2 console with a success message indicating the successful launch of an instance. Below, there are options for next steps, such as creating billing alerts and connecting to the instance.](https://kodekloud.com/kk-media/image/upload/v1752868973/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-EC2-instance-using-UI-Part-1/aws-ec2-console-instance-launch-success.jpg)
 
 ***
 
@@ -101,7 +101,7 @@ After launch, go to **View instances** or return to the EC2 Dashboard. You’ll 
 | Security groups | Firewall rules allowing SSH (port 22)           |
 | Root volume     | 8 GB EBS (gp2 / gp3)                            |
 
-![The image shows an AWS EC2 management console displaying details of an instance with ID i-003bab8877f796526, which is in a pending state and of type t2.micro.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868975/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-EC2-instance-using-UI-Part-1/aws-ec2-console-instance-i-003bab8877-pending.jpg)
+![The image shows an AWS EC2 management console displaying details of an instance with ID i-003bab8877f796526, which is in a pending state and of type t2.micro.](https://kodekloud.com/kk-media/image/upload/v1752868975/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-EC2-instance-using-UI-Part-1/aws-ec2-console-instance-i-003bab8877-pending.jpg)
 
 ***
 

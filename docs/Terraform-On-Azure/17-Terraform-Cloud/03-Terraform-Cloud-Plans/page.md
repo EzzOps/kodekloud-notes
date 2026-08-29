@@ -74,9 +74,7 @@ Terraform Enterprise is the self-hosted distribution of Terraform Cloud for orga
 
 Terraform Enterprise is optimal for organizations with strict regulatory, residency, or customization requirements.
 
-<Callout icon="lightbulb">
-  This series uses the self-hosted option (Terraform Enterprise). Subsequent articles focus on Terraform Enterprise deployment patterns, operational setup, and ongoing maintenance.
-</Callout>
+> **lightbulb** This series uses the self-hosted option (Terraform Enterprise). Subsequent articles focus on Terraform Enterprise deployment patterns, operational setup, and ongoing maintenance.
 
 ## Plan comparison at a glance
 
@@ -97,6 +95,4 @@ Terraform Enterprise is optimal for organizations with strict regulatory, reside
 
 Use this guide to match the right Terraform offering to your team’s collaboration, governance, and compliance needs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/ca386519-4725-417d-a46f-642d0a683a01/lesson/97b9e661-a557-4d7a-8d6c-1a4fdbe547e1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/ca386519-4725-417d-a46f-642d0a683a01/lesson/97b9e661-a557-4d7a-8d6c-1a4fdbe547e1)

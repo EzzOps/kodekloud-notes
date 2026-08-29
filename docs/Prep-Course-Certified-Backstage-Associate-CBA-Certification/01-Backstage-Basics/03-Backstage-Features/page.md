@@ -22,9 +22,7 @@ Further reading and references:
 * [Backstage Configuration documentation](https://backstage.io/docs/features/configuration)
 * [YAML specification](https://yaml.org/spec/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/fcbbf923-69c3-4147-bd51-18db2bd18957/lesson/548b4bbc-0a5c-4d63-94ee-250dfd40cd25" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/fcbbf923-69c3-4147-bd51-18db2bd18957/lesson/548b4bbc-0a5c-4d63-94ee-250dfd40cd25)
 
 
 # Backstage Features
@@ -109,9 +107,7 @@ Backstage surfaces documentation close to the code using the TechDocs plugin. Th
   <img alt="A screenshot of a web UI titled &#x22;Out-of-the-Box Features – Docs&#x22; showing a component/service page for &#x22;shopping-cart.&#x22; The page displays Overview tabs, an About panel with &#x22;View Techdocs&#x22; and metadata (description, owner, lifecycle, tags) and a Relations panel." />
 </Frame>
 
-<Callout icon="lightbulb">
-  TechDocs typically uses MkDocs (for example with the mkdocs-material theme). Projects must include standard MkDocs configuration (like `mkdocs.yml`) and Markdown files in the repo for Backstage to render the documentation.
-</Callout>
+> **lightbulb** TechDocs typically uses MkDocs (for example with the mkdocs-material theme). Projects must include standard MkDocs configuration (like `mkdocs.yml`) and Markdown files in the repo for Backstage to render the documentation.
 
 Recommended examples to include in your repo:
 
@@ -188,6 +184,4 @@ Summary
 
 Backstage is an open-source framework for building internal developer portals (IDPs). It uses a familiar stack (React + Node.js), provides essential features out of the box (software catalog, templates, TechDocs, search), and uses a plugin-based architecture so you can extend or replace functionality consistently and modularly.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/fcbbf923-69c3-4147-bd51-18db2bd18957/lesson/e41823d1-f7ba-4b00-babc-aa7df827f09e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/fcbbf923-69c3-4147-bd51-18db2bd18957/lesson/e41823d1-f7ba-4b00-babc-aa7df827f09e)

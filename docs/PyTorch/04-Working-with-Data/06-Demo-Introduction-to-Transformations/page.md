@@ -85,9 +85,7 @@ plt.show()
 
 The grid maps numerical labels to human-friendly class names, making it easier to interpret the visualized data.
 
-<Frame>
-  ![The image shows a grid of heatmap-style visualizations of clothing items, including a dress, bag, T-shirt, and trousers, labeled accordingly. It appears to be part of a Jupyter Notebook interface, likely related to PyTorch DataLoaders.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883302/notes-assets/images/PyTorch-Demo-Datasets-and-Dataloaders/clothing-heatmap-visualizations-jupyter.jpg)
-</Frame>
+![The image shows a grid of heatmap-style visualizations of clothing items, including a dress, bag, T-shirt, and trousers, labeled accordingly. It appears to be part of a Jupyter Notebook interface, likely related to PyTorch DataLoaders.](https://kodekloud.com/kk-media/image/upload/v1752883302/notes-assets/images/PyTorch-Demo-Datasets-and-Dataloaders/clothing-heatmap-visualizations-jupyter.jpg)
 
 ***
 
@@ -152,9 +150,7 @@ Executing this code snippet repeatedly will display various images and their cor
 
 If you have your own image collection and corresponding labels, you can define a custom dataset using PyTorch’s Dataset class. In this example, we assume that image file paths and labels are stored in a CSV file named `labels.csv`.
 
-<Callout icon="lightbulb">
-  Ensure your CSV file is formatted correctly, as shown in the example below.
-</Callout>
+> **lightbulb** Ensure your CSV file is formatted correctly, as shown in the example below.
 
 ### Defining the Custom Dataset
 
@@ -325,9 +321,7 @@ plt.show()
 
 This approach leverages the directory structure to automatically generate class labels, simplifying dataset creation when working with well-organized image folders.
 
-<Frame>
-  ![The image shows a grid of animal photos, including cats and dogs, with labels "0" and "1" above each image. It appears to be part of a dataset used in a coding environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883303/notes-assets/images/PyTorch-Demo-Datasets-and-Dataloaders/animal-photos-dataset-grid.jpg)
-</Frame>
+![The image shows a grid of animal photos, including cats and dogs, with labels "0" and "1" above each image. It appears to be part of a dataset used in a coding environment.](https://kodekloud.com/kk-media/image/upload/v1752883303/notes-assets/images/PyTorch-Demo-Datasets-and-Dataloaders/animal-photos-dataset-grid.jpg)
 
 ***
 
@@ -335,15 +329,11 @@ This approach leverages the directory structure to automatically generate class 
 
 In this guide, we demonstrated techniques for working with preloaded datasets and DataLoaders in PyTorch, as well as methods for creating and visualizing custom datasets. These approaches help streamline data loading and preprocessing for model training, whether you’re using built-in libraries or your own data collections. Happy coding and exploring with PyTorch!
 
-<Callout icon="lightbulb">
-  For more details on PyTorch data handling, visit the [PyTorch Documentation](https://pytorch.org/docs/stable/index.html).
-</Callout>
+> **lightbulb** For more details on PyTorch data handling, visit the [PyTorch Documentation](https://pytorch.org/docs/stable/index.html).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/d5f6d294-6a83-4f19-8182-fa85c98fa487" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/d5f6d294-6a83-4f19-8182-fa85c98fa487)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/84df5a52-c34c-4810-8c04-4f5a504f88b7" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/84df5a52-c34c-4810-8c04-4f5a504f88b7)
 
 
 # Demo Introduction to Transformations

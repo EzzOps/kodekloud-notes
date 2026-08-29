@@ -24,9 +24,7 @@ Use bootstrap or other resampling to obtain confidence intervals for these metri
 
 For reference implementations and libraries: consider Fairlearn ([https://fairlearn.org/](https://fairlearn.org/)) and IBM AI Fairness 360 ([https://aif360.mybluemix.net/](https://aif360.mybluemix.net/)).
 
-<Callout icon="warning">
-  Handle sensitive demographic data with care. Obtain consent where required, follow privacy regulations, and minimize re-identification risk when collecting or reporting demographic attributes.
-</Callout>
+> **warning** Handle sensitive demographic data with care. Obtain consent where required, follow privacy regulations, and minimize re-identification risk when collecting or reporting demographic attributes.
 
 ## Practical considerations and tips
 
@@ -50,9 +48,7 @@ Disaggregated evaluation using stratified test sets and group-level metrics is t
 * IBM AI Fairness 360: [https://aif360.mybluemix.net/](https://aif360.mybluemix.net/)
 * "Fairness" concepts and metrics: [https://en.wikipedia.org/wiki/Fairness\_(machine\_learning)](https://en.wikipedia.org/wiki/Fairness_\(machine_learning\))
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/ed193d80-f5ad-49c4-b529-cc994f037a7c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/ed193d80-f5ad-49c4-b529-cc994f037a7c)
 
 
 # Evaluating LLM Quality Without Single Correct Answer
@@ -79,9 +75,7 @@ Why RLHF is the best fit
 * Human evaluators provide comparative judgments or ratings of model outputs. Those judgments are used to train a reward model that represents human preference.
 * A reinforcement learning algorithm (commonly Proximal Policy Optimization — PPO) is then used to fine-tune the policy (the LLM) to maximize the learned reward signal, aligning outputs with human preferences rather than a single deterministic label.
 
-<Callout icon="lightbulb">
-  Typical RLHF workflow: collect human preference data → train a reward model on that data → fine-tune the LLM using reinforcement learning to maximize the reward model's score → evaluate outputs with human raters and automated checks.
-</Callout>
+> **lightbulb** Typical RLHF workflow: collect human preference data → train a reward model on that data → fine-tune the LLM using reinforcement learning to maximize the reward model's score → evaluate outputs with human raters and automated checks.
 
 Quick comparison of the candidate techniques
 
@@ -113,6 +107,4 @@ Further reading and references
 
 Note: RLHF is the recommended approach when objective labels don't exist and the evaluation target is human judgment of quality, relevance, or preference.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/a0fa5edf-527f-4555-889b-4b316b8a38d4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/a0fa5edf-527f-4555-889b-4b316b8a38d4)

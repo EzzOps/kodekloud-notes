@@ -23,7 +23,7 @@ This certification demonstrates that you have:
 * The ability to develop, deploy, and debug cloud-based applications using AWS.
 * Enhanced credibility and confidence, helping organizations secure a competitive advantage while ensuring stakeholder satisfaction.
 
-![The image is an informational graphic about the AWS Developer Associate certification, highlighting its benefits such as showcasing AWS knowledge, demonstrating proficiency in cloud applications, boosting confidence, and providing competitive advantages for organizations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858970/notes-assets/images/AWS-Certified-Developer-Associate-Certification-Details/aws-developer-associate-certification-benefits.jpg)
+![The image is an informational graphic about the AWS Developer Associate certification, highlighting its benefits such as showcasing AWS knowledge, demonstrating proficiency in cloud applications, boosting confidence, and providing competitive advantages for organizations.](https://kodekloud.com/kk-media/image/upload/v1752858970/notes-assets/images/AWS-Certified-Developer-Associate-Certification-Details/aws-developer-associate-certification-benefits.jpg)
 
 ## Who Should Consider Taking This Exam?
 
@@ -36,7 +36,7 @@ This exam is tailored for professionals who:
 
 > **lightbulb** While these prerequisites are recommended, not meeting them does not disqualify you. AWS designed the exam to help you expand your knowledge, regardless of your initial experience.
 
-![The image is an informational graphic about the AWS Developer Associate exam, outlining who should take it based on experience in programming, AWS technology, IT, and cloud services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858971/notes-assets/images/AWS-Certified-Developer-Associate-Certification-Details/aws-developer-associate-exam-guide.jpg)
+![The image is an informational graphic about the AWS Developer Associate exam, outlining who should take it based on experience in programming, AWS technology, IT, and cloud services.](https://kodekloud.com/kk-media/image/upload/v1752858971/notes-assets/images/AWS-Certified-Developer-Associate-Certification-Details/aws-developer-associate-exam-guide.jpg)
 
 ## Exam Content and Structure
 
@@ -59,7 +59,7 @@ Key details include:
 * Grading Scale: 100 to 1000 with a minimum passing score of 720.
 * Duration: 130 minutes to complete the exam.
 
-![The image is an informational graphic about the AWS Developer Associate certification, outlining the skills validated by the exam, such as developing, deploying, and securing applications on AWS. It highlights key tasks like optimizing applications, using CI/CD workflows, securing code, and resolving issues.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858973/notes-assets/images/AWS-Certified-Developer-Associate-Certification-Details/aws-developer-associate-certification-guide.jpg)
+![The image is an informational graphic about the AWS Developer Associate certification, outlining the skills validated by the exam, such as developing, deploying, and securing applications on AWS. It highlights key tasks like optimizing applications, using CI/CD workflows, securing code, and resolving issues.](https://kodekloud.com/kk-media/image/upload/v1752858973/notes-assets/images/AWS-Certified-Developer-Associate-Certification-Details/aws-developer-associate-certification-guide.jpg)
 
 ## Breakdown by Domain
 
@@ -74,7 +74,7 @@ The exam is segmented into four key domains:
 
 This breakdown ensures a comprehensive evaluation of the skills needed for AWS development.
 
-![The image outlines exam content, detailing two types of questions: multiple choice and multiple response, along with the number of scored and unscored questions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858975/notes-assets/images/AWS-Certified-Developer-Associate-Certification-Details/exam-content-multiple-choice-response.jpg)
+![The image outlines exam content, detailing two types of questions: multiple choice and multiple response, along with the number of scored and unscored questions.](https://kodekloud.com/kk-media/image/upload/v1752858975/notes-assets/images/AWS-Certified-Developer-Associate-Certification-Details/exam-content-multiple-choice-response.jpg)
 
 ## Sample Exam Questions
 
@@ -91,13 +91,13 @@ D. Store the database credentials in AWS Secrets Manager and configure it to aut
 
 The correct answer is D.
 
-![The image presents a question about securely storing and rotating database credentials during a migration to Amazon EC2 instances, with four potential solutions involving AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858976/notes-assets/images/AWS-Certified-Developer-Associate-Certification-Details/secure-database-credentials-aws.jpg)
+![The image presents a question about securely storing and rotating database credentials during a migration to Amazon EC2 instances, with four potential solutions involving AWS services.](https://kodekloud.com/kk-media/image/upload/v1752858976/notes-assets/images/AWS-Certified-Developer-Associate-Certification-Details/secure-database-credentials-aws.jpg)
 
 ### Multiple-Response Question
 
 Developers are creating a web application that enables users to post comments and receive feedback in real time or near real time. In this multi-response question, you must select the two options that best fulfill these requirements from the five provided.
 
-![The image presents a multiple-choice question about selecting solutions for a web application that allows real-time comments and feedback, with five options provided.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858977/notes-assets/images/AWS-Certified-Developer-Associate-Certification-Details/web-app-real-time-feedback-question.jpg)
+![The image presents a multiple-choice question about selecting solutions for a web application that allows real-time comments and feedback, with five options provided.](https://kodekloud.com/kk-media/image/upload/v1752858977/notes-assets/images/AWS-Certified-Developer-Associate-Certification-Details/web-app-real-time-feedback-question.jpg)
 
 These sample questions are indicative of the exam's format and topics. Additionally, the course includes two mock exams to help you practice and ensure you are fully prepared on exam day.
 

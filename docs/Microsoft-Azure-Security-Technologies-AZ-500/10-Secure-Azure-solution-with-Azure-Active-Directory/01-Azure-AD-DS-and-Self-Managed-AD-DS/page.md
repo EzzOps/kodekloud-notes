@@ -24,9 +24,7 @@ Azure AD Domain Services provides a managed domain experience where Microsoft ha
 * **Enhanced Cloud Application Support:**\
   Azure AD Domain Services bridges the gap between legacy authentication protocols and modern cloud environments, making it easier to support cloud-based applications that rely on traditional authentication mechanisms.
 
-<Callout icon="lightbulb">
-  If the managed service limitations do not meet your business requirements, consider implementing a Self-Managed Active Directory Domain Services deployment.
-</Callout>
+> **lightbulb** If the managed service limitations do not meet your business requirements, consider implementing a Self-Managed Active Directory Domain Services deployment.
 
 ***
 
@@ -68,9 +66,7 @@ The hybrid model also leverages Azure VMs as domain controllers, with integratio
 
 The following diagram outlines the key differences between the Standalone Cloud-Only AD DS and Hybrid Deployment models:
 
-<Frame>
-  ![The image is a diagram comparing "Standalone Cloud-Only AD DS" and "Hybrid Deployments" for Azure AD DS and Self-Managed AD DS, highlighting their configurations and features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882190/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-DS-and-Self-Managed-AD-DS/cloud-only-vs-hybrid-ad-ds-diagram.jpg)
-</Frame>
+![The image is a diagram comparing "Standalone Cloud-Only AD DS" and "Hybrid Deployments" for Azure AD DS and Self-Managed AD DS, highlighting their configurations and features.](https://kodekloud.com/kk-media/image/upload/v1752882190/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-DS-and-Self-Managed-AD-DS/cloud-only-vs-hybrid-ad-ds-diagram.jpg)
 
 ***
 
@@ -87,12 +83,8 @@ In summary, your choice between Azure AD Domain Services and Self-Managed AD DS 
 * **Self-Managed AD DS (Hybrid Deployment):**\
   Perfect for extending your existing on-premises Active Directory into the cloud while maintaining seamless integration and unified security policies.
 
-<Callout icon="lightbulb">
-  Proceed to the Azure portal to create your Azure AD Domain Services instance and learn how to join a virtual machine to the domain.
-</Callout>
+> **lightbulb** Proceed to the Azure portal to create your Azure AD Domain Services instance and learn how to join a virtual machine to the domain.
 
 Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c0f70ae1-790f-4a5d-8e09-29450b5ee610/lesson/de462daa-f564-49bc-b1fb-65fb9cc0e298" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c0f70ae1-790f-4a5d-8e09-29450b5ee610/lesson/de462daa-f564-49bc-b1fb-65fb9cc0e298)

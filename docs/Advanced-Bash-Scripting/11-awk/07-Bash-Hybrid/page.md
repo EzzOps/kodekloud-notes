@@ -64,7 +64,7 @@ Our `employees.txt` file uses `|` as the field separator and contains:
 | 6         | Email       | Contact email       |
 | 7         | Salary      | Annual salary (USD) |
 
-![The image shows a text file named "employees.txt" containing a list of employees with details such as name, department, job title, email, and salary.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868661/notes-assets/images/Advanced-Bash-Scripting-Bash-Hybrid/employees-list-details-text-file.jpg)
+![The image shows a text file named "employees.txt" containing a list of employees with details such as name, department, job title, email, and salary.](https://kodekloud.com/kk-media/image/upload/v1752868661/notes-assets/images/Advanced-Bash-Scripting-Bash-Hybrid/employees-list-details-text-file.jpg)
 
 > **lightbulb** Set the field separator with `-F` or `FS` to split on `|`.
 

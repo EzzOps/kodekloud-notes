@@ -12,17 +12,13 @@ This certification is widely regarded as a challenging, hands‑on exam — in m
 
 You don't need to memorize every API field (for example, a complete VirtualService spec). What you must master is how to quickly find the relevant docs and examples. The ICA interface often includes direct links to the relevant [Istio docs](https://istio.io/latest/docs/) for the resource referenced in a task (for example, VirtualService). Use those links as your starting point — they provide resource definitions and examples, but rarely contain the exact YAML you need for the task.
 
-<Callout icon="lightbulb">
-  Familiarize yourself with the structure of the [Istio documentation](https://istio.io/latest/docs/) (resources, examples, and diagnostics). Knowing where to look saves significant time under exam pressure.
-</Callout>
+> **lightbulb** Familiarize yourself with the structure of the [Istio documentation](https://istio.io/latest/docs/) (resources, examples, and diagnostics). Knowing where to look saves significant time under exam pressure.
 
 ## 2) Use a sufficiently large screen when possible
 
 If allowed, use a larger display (27" or similar). The exam UI typically splits the problem panel, countdown/proctor windows, and the remote session (terminal + browser). On a small laptop screen you'll waste time switching panes and making edits. Check proctor requirements carefully before the exam.
 
-<Callout icon="warning">
-  Proctors often disallow additional monitors. You may be required to disconnect extra displays and demonstrate your setup. Verify the exam rules before you start.
-</Callout>
+> **warning** Proctors often disallow additional monitors. You may be required to disconnect extra displays and demonstrate your setup. Verify the exam rules before you start.
 
 ## 3) Practical editing — know Vim (or be very efficient with your editor)
 
@@ -81,9 +77,7 @@ No validation issues found when analyzing namespace: <namespace>
 
 Replace the backticked placeholder with the actual namespace in the command above: `istioctl analyze -n \`\<namespace>\`\`.
 
-<Callout icon="lightbulb">
-  Run `istioctl analyze` right after applying resources to detect issues such as a VirtualService pointing to a non-existent service/port or invalid spec fields.
-</Callout>
+> **lightbulb** Run `istioctl analyze` right after applying resources to detect issues such as a VirtualService pointing to a non-existent service/port or invalid spec fields.
 
 ## 5) SSH workflow per question — exit when finished
 

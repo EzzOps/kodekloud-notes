@@ -6,9 +6,7 @@ This article explores output variables in Terraform for capturing and displaying
 
 In this article, we will explore output variables in Terraform—a powerful feature for capturing and displaying the results of your configurations. Output variables in Terraform work in tandem with input variables, allowing you to easily reference and use the values of expressions from your infrastructure. For instance, if you want to capture the public IP address of an AWS EC2 instance, you can define an output variable to display this information.
 
-<Callout icon="lightbulb">
-  Using output variables is especially useful when you need to pass dynamic information from Terraform into other automation tools such as ad-hoc scripts or Ansible playbooks.
-</Callout>
+> **lightbulb** Using output variables is especially useful when you need to pass dynamic information from Terraform into other automation tools such as ad-hoc scripts or Ansible playbooks.
 
 ## AWS Instance Example with Output Variables
 
@@ -69,9 +67,7 @@ $ terraform output pub_ip
 54.214.145.69
 ```
 
-<Callout icon="lightbulb">
-  Output variables not only help display important resource details after deployment but also facilitate integration with other infrastructure-as-code tools.
-</Callout>
+> **lightbulb** Output variables not only help display important resource details after deployment but also facilitate integration with other infrastructure-as-code tools.
 
 ## Conclusion
 
@@ -81,6 +77,4 @@ That concludes this article. Please proceed to the multiple-choice quiz for this
 
 For further details on Terraform and infrastructure management, be sure to explore the [Terraform Documentation](https://www.terraform.io/docs).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/cca81ade-f05a-42b2-af56-1926cade6582/lesson/63d8b6ca-172a-4304-83d5-cf63d8c4ca41" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/cca81ade-f05a-42b2-af56-1926cade6582/lesson/63d8b6ca-172a-4304-83d5-cf63d8c4ca41)

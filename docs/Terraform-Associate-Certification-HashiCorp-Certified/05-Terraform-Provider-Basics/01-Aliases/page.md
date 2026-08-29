@@ -8,9 +8,7 @@ In this lesson, we delve into using provider aliases in Terraform to manage reso
 
 Consider the following scenario: you have a simple Terraform configuration with two resource blocks. The first block creates an AWS EC2 key pair in the US East 1 region, while the second block is intended to create a key pair in the CA Central 1 region. By default, if you only define one provider block (e.g., for the US East 1 region), both resource blocks would be provisioned in that same region.
 
-<Callout icon="lightbulb">
-  Without any modifications, Terraform uses the default provider configuration for all resources. This means that if you don't specify otherwise, all resources will be created in the defined default region.
-</Callout>
+> **lightbulb** Without any modifications, Terraform uses the default provider configuration for all resources. This means that if you don't specify otherwise, all resources will be created in the defined default region.
 
 To create a resource in the CA Central 1 region using an aliased provider configuration, you need to define a second provider block with the appropriate region and an alias. Below is an example of how to set up the providers and resources:
 
@@ -45,9 +43,7 @@ resource "aws_key_pair" "beta" {
 }
 ```
 
-<Callout icon="lightbulb">
-  By specifying the `provider = aws.central` argument in the "beta" resource block, Terraform knows to use the aliased provider configured for the CA Central 1 region, while resources without a provider argument use the default provider (US East 1).
-</Callout>
+> **lightbulb** By specifying the `provider = aws.central` argument in the "beta" resource block, Terraform knows to use the aliased provider configured for the CA Central 1 region, while resources without a provider argument use the default provider (US East 1).
 
 After running `terraform apply`, Terraform provisions the resources as specified:
 

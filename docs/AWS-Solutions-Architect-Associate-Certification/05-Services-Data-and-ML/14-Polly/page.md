@@ -10,7 +10,7 @@ Welcome back. In this article, we explore AWS Polly—a powerful machine learnin
 
 At its core, Polly takes text input, synthesizes it, and returns voice output. For example, if you ask, "Hey, tell me about the weather," Polly will generate a spoken response like "Today's forecast is mostly sunny with a high of 25°C."
 
-![The image shows a conversation between a person and a robot about the weather, with the robot providing a sunny forecast and temperature details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865081/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Polly/conversation-robot-weather-forecast.jpg)
+![The image shows a conversation between a person and a robot about the weather, with the robot providing a sunny forecast and temperature details.](https://kodekloud.com/kk-media/image/upload/v1752865081/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Polly/conversation-robot-weather-forecast.jpg)
 
 Polly supports both real-time speech synthesis streaming and audio file generation. This flexibility allows you to either stream the audio directly during interactions or store audio files for later playback. Moreover, Polly supports the Speech Synthesis Markup Language (SSML), which provides granular control over pronunciation, volume, pitch, and speed—making the interactions sound more natural and expressive.
 
@@ -20,7 +20,7 @@ Polly supports both real-time speech synthesis streaming and audio file generati
 
 Polly's feature set makes it an essential tool for voice-enabled applications:
 
-![The image lists five features: Lifelike Speech, Real-Time Streaming or File Generation, SSML Support, Lexicon Support, and Integration with Other AWS Services. Each feature is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865082/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Polly/aws-features-speech-streaming-ssml.jpg)
+![The image lists five features: Lifelike Speech, Real-Time Streaming or File Generation, SSML Support, Lexicon Support, and Integration with Other AWS Services. Each feature is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752865082/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Polly/aws-features-speech-streaming-ssml.jpg)
 
 * **Lifelike Speech:** Generate natural-sounding audio from text.
 * **Real-Time Streaming and File Generation:** Choose between streaming audio directly or saving it for later use.
@@ -36,7 +36,7 @@ A typical implementation of AWS Polly involves the following steps:
 2. This event triggers an AWS Lambda function that calls Polly to perform text-to-speech conversion.
 3. The resulting audio file is then saved to an output S3 bucket, making it immediately available for playback or further dissemination.
 
-![The image is a flowchart illustrating a process involving AWS services, where a text file is uploaded to an S3 bucket, triggering AWS Lambda to convert text to speech using Amazon Polly, and saving the audio to an output S3 bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865084/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Polly/aws-flowchart-text-to-speech.jpg)
+![The image is a flowchart illustrating a process involving AWS services, where a text file is uploaded to an S3 bucket, triggering AWS Lambda to convert text to speech using Amazon Polly, and saving the audio to an output S3 bucket.](https://kodekloud.com/kk-media/image/upload/v1752865084/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Polly/aws-flowchart-text-to-speech.jpg)
 
 ## Practical Use Case: Smart Thermostat Integration
 
@@ -47,7 +47,7 @@ Consider a practical example where a smart thermostat, equipped with sensors and
 3. An AWS Lambda function processes the text and interacts with AWS IoT Core.
 4. AWS Polly converts the resulting text (e.g., "Temperature set to 22°C") back into spoken audio for the user.
 
-![The image is a flowchart illustrating a process where a voice command to set a temperature is converted to text using Amazon Transcribe, processed through AWS IoT Core and AWS Lambda, and then converted back to speech using Amazon Polly.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865085/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Polly/voice-command-temperature-flowchart.jpg)
+![The image is a flowchart illustrating a process where a voice command to set a temperature is converted to text using Amazon Transcribe, processed through AWS IoT Core and AWS Lambda, and then converted back to speech using Amazon Polly.](https://kodekloud.com/kk-media/image/upload/v1752865085/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Polly/voice-command-temperature-flowchart.jpg)
 
 > **lightbulb** Note that AWS Transcribe handles the conversion of speech to text, while AWS Polly solely focuses on transforming text back into speech. This clear separation ensures optimal performance and smoother interactions across your applications.
 

@@ -125,13 +125,9 @@ spec:
         version: canary
 ```
 
-<Callout icon="lightbulb">
-  Weights in the VirtualService are interpreted as percentages (typically summing to 100); the routing decision is made by the sidecar proxies (Envoy) based on these weights, not by the Kubernetes Service.
-</Callout>
+> **lightbulb** Weights in the VirtualService are interpreted as percentages (typically summing to 100); the routing decision is made by the sidecar proxies (Envoy) based on these weights, not by the Kubernetes Service.
 
-<Callout icon="warning">
-  Ensure sidecar injection is enabled for the workloads and that subset labels in the DestinationRule match Pod labels exactly. Otherwise, istiod/Envoy cannot route to the intended subset and traffic will fall back to the default route.
-</Callout>
+> **warning** Ensure sidecar injection is enabled for the workloads and that subset labels in the DestinationRule match Pod labels exactly. Otherwise, istiod/Envoy cannot route to the intended subset and traffic will fall back to the default route.
 
 ## Automating canaries with Argo Rollouts
 
@@ -155,6 +151,4 @@ This combination — Istio's L7 routing (Envoy) and Argo Rollouts' automation an
 * Argo Rollouts: [https://argoproj.github.io/argo-rollouts/](https://argoproj.github.io/argo-rollouts/)
 * Prometheus: [https://prometheus.io/](https://prometheus.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/5595a5c2-6b2e-4aeb-9fdb-4234e8da8beb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/5595a5c2-6b2e-4aeb-9fdb-4234e8da8beb)

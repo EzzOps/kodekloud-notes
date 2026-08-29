@@ -34,15 +34,11 @@ High performance compute VMs offer robust CPU performance along with optional hi
 
 Confidential compute VMs are built with enhanced security in mind. They ensure that sensitive data remains protected during processing, making them especially suitable for workloads involving confidential or regulated information.
 
-<Callout icon="lightbulb">
-  Azure continually expands its VM portfolio with new sizes and configurations to leverage the latest technological advancements. Stay current by regularly reviewing the [Azure Documentation](https://docs.microsoft.com/azure/).
-</Callout>
+> **lightbulb** Azure continually expands its VM portfolio with new sizes and configurations to leverage the latest technological advancements. Stay current by regularly reviewing the [Azure Documentation](https://docs.microsoft.com/azure/).
 
 Selecting the right VM size goes beyond merely matching hardware specifications:
 
-<Frame>
-  ![The image is a table detailing virtual machine sizing, including types, sizes, and targeted workloads for storage optimization, GPU, HPC, and confidential computing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884458/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Managing-VM-sizes/virtual-machine-sizing-table.jpg)
-</Frame>
+![The image is a table detailing virtual machine sizing, including types, sizes, and targeted workloads for storage optimization, GPU, HPC, and confidential computing.](https://kodekloud.com/kk-media/image/upload/v1752884458/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Managing-VM-sizes/virtual-machine-sizing-table.jpg)
 
 It also involves ensuring that the chosen VM aligns with your application's unique demands and scaling requirements.
 
@@ -50,6 +46,4 @@ It also involves ensuring that the chosen VM aligns with your application's uniq
 
 Managing virtual machine storage in Azure is equally crucial. The following sections will address key considerations and strategies to optimize storage performance and maintain data reliability in your VM deployments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/34d9af06-fc33-4556-a3f2-2e7a5c5db484/lesson/233f2920-86f1-41e7-bd3d-ca718be28f11" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/34d9af06-fc33-4556-a3f2-2e7a5c5db484/lesson/233f2920-86f1-41e7-bd3d-ca718be28f11)

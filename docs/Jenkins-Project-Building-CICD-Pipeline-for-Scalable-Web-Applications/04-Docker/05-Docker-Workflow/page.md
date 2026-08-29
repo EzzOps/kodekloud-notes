@@ -12,9 +12,7 @@ Once your application is ready, the next step is to package it using Docker. The
 
 A Docker image is like a cookie recipe—it includes all the necessary ingredients (source code, runtime libraries, dependencies, etc.) and instructions to create containers (the cookies). This image ensures that your application runs consistently in development, staging, and production environments.
 
-<Frame>
-  ![The image illustrates a Docker workflow, showing the process from a developer creating a Docker file, which is then used to build a Docker image, and finally run as a container.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879874/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Docker-Workflow/docker-workflow-developer-image-container.jpg)
-</Frame>
+![The image illustrates a Docker workflow, showing the process from a developer creating a Docker file, which is then used to build a Docker image, and finally run as a container.](https://kodekloud.com/kk-media/image/upload/v1752879874/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Docker-Workflow/docker-workflow-developer-image-container.jpg)
 
 ## Understanding the Dockerfile
 
@@ -30,14 +28,12 @@ EXPOSE 5000
 CMD ["python", "app.py"]
 ```
 
-<Callout icon="lightbulb">
-  * `FROM`: Specifies the base image to use (Python 3.12 on Alpine Linux in this case).
+> **lightbulb** * `FROM`: Specifies the base image to use (Python 3.12 on Alpine Linux in this case).
   * `COPY`: Transfers your application’s source code to the `/application` directory inside the container.
   * `WORKDIR`: Sets the working directory to `/application` where subsequent commands will be executed.
   * `RUN`: Installs dependencies listed in `requirements.txt` using `pip`.
   * `EXPOSE`: Makes port 5000 available for communication between the container and the host.
   * `CMD`: Defines the default command to run, which starts the application by executing `app.py`.
-</Callout>
 
 ## Integrating Docker with Jenkins
 
@@ -48,9 +44,7 @@ After building a Docker image, the next step is to integrate it into your CI/CD 
 3. **Image Deployment:** Push the Docker image to a container registry such as Docker Hub.
 4. **Container Deployment:** Your servers—whether running Docker, Kubernetes, or another orchestrator—pull the updated image from the registry and deploy it.
 
-<Callout icon="lightbulb">
-  Integrating Docker with Jenkins automates the build, test, and deployment process, ensuring that your applications are deployed reliably and consistently across all environments.
-</Callout>
+> **lightbulb** Integrating Docker with Jenkins automates the build, test, and deployment process, ensuring that your applications are deployed reliably and consistently across all environments.
 
 This approach promotes a robust and automated workflow that minimizes manual intervention, reduces errors, and accelerates the overall development lifecycle.
 
@@ -60,6 +54,4 @@ The Docker workflow provides a scalable and efficient way of managing applicatio
 
 For further reading on Docker and CI/CD practices, explore additional resources such as [Docker Documentation](https://docs.docker.com/) and [Jenkins Documentation](https://www.jenkins.io/doc/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/9eb65ce1-0aef-4f00-b661-5f8308aef2bd/lesson/0ae7d71e-734b-4005-97d4-332a7f9fe2f0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/9eb65ce1-0aef-4f00-b661-5f8308aef2bd/lesson/0ae7d71e-734b-4005-97d4-332a7f9fe2f0)

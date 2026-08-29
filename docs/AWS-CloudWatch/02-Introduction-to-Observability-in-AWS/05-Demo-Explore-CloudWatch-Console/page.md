@@ -11,7 +11,7 @@ In this lesson, you’ll learn how to navigate the AWS CloudWatch console and cr
 
 First, sign in to the AWS Management Console.
 
-![The image shows the AWS Management Console home page, displaying sections for recently visited services, AWS health, cost and usage, and options to build solutions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862527/notes-assets/images/AWS-CloudWatch-Demo-Explore-CloudWatch-Console/aws-management-console-home-page.jpg)
+![The image shows the AWS Management Console home page, displaying sections for recently visited services, AWS health, cost and usage, and options to build solutions.](https://kodekloud.com/kk-media/image/upload/v1752862527/notes-assets/images/AWS-CloudWatch-Demo-Explore-CloudWatch-Console/aws-management-console-home-page.jpg)
 
 ***
 
@@ -34,7 +34,7 @@ On the Overview page, you’ll find these main sections:
 
 Use the **Favorites** tab to bookmark dashboards or alarms you check frequently.
 
-![The image shows the AWS CloudWatch dashboard interface, displaying options for setting alarms, creating dashboards, viewing logs, and configuring application insights.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862528/notes-assets/images/AWS-CloudWatch-Demo-Explore-CloudWatch-Console/aws-cloudwatch-dashboard-interface-options.jpg)
+![The image shows the AWS CloudWatch dashboard interface, displaying options for setting alarms, creating dashboards, viewing logs, and configuring application insights.](https://kodekloud.com/kk-media/image/upload/v1752862528/notes-assets/images/AWS-CloudWatch-Demo-Explore-CloudWatch-Console/aws-cloudwatch-dashboard-interface-options.jpg)
 
 ***
 
@@ -49,7 +49,7 @@ Amazon SNS (Simple Notification Service) lets you push notifications via email, 
    *(You can optionally set a Display name for SMS protocols.)*
 5. Leave other settings at their defaults and click **Create topic**.
 
-![The image shows a web interface for creating a topic in Amazon SNS, with options for naming the topic and configuring settings like encryption and access policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862529/notes-assets/images/AWS-CloudWatch-Demo-Explore-CloudWatch-Console/amazon-sns-topic-creation-interface.jpg)
+![The image shows a web interface for creating a topic in Amazon SNS, with options for naming the topic and configuring settings like encryption and access policy.](https://kodekloud.com/kk-media/image/upload/v1752862529/notes-assets/images/AWS-CloudWatch-Demo-Explore-CloudWatch-Console/amazon-sns-topic-creation-interface.jpg)
 
 ***
 
@@ -65,7 +65,7 @@ Next, attach your email address to the SNS topic so you can receive notification
 
 This action sends a confirmation email to the address you specified.
 
-![The image shows a web interface for creating a subscription in Amazon SNS, with fields for Topic ARN, Protocol, and Endpoint. The user is setting up an email subscription.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862530/notes-assets/images/AWS-CloudWatch-Demo-Explore-CloudWatch-Console/amazon-sns-subscription-setup-interface.jpg)
+![The image shows a web interface for creating a subscription in Amazon SNS, with fields for Topic ARN, Protocol, and Endpoint. The user is setting up an email subscription.](https://kodekloud.com/kk-media/image/upload/v1752862530/notes-assets/images/AWS-CloudWatch-Demo-Explore-CloudWatch-Console/amazon-sns-subscription-setup-interface.jpg)
 
 | Protocol | Use Case                        | Example                          |
 | -------- | ------------------------------- | -------------------------------- |
@@ -81,7 +81,7 @@ Check your inbox for an email from **AWS Notifications**. It contains a **Confir
 
 > **triangle-alert** If you do not confirm the subscription, SNS will not deliver any alerts to your email address.
 
-![The image shows a Gmail inbox with an email from AWS Notifications about a subscription confirmation. The email includes a link to confirm the subscription to a specific AWS topic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862531/notes-assets/images/AWS-CloudWatch-Demo-Explore-CloudWatch-Console/gmail-inbox-aws-notifications-subscription.jpg)
+![The image shows a Gmail inbox with an email from AWS Notifications about a subscription confirmation. The email includes a link to confirm the subscription to a specific AWS topic.](https://kodekloud.com/kk-media/image/upload/v1752862531/notes-assets/images/AWS-CloudWatch-Demo-Explore-CloudWatch-Console/gmail-inbox-aws-notifications-subscription.jpg)
 
 ***
 
@@ -89,7 +89,7 @@ Check your inbox for an email from **AWS Notifications**. It contains a **Confir
 
 Back in the SNS console, open your `CloudWatchCourse` topic. Under **Subscriptions**, you should see your email address listed with **Confirmed** status next to the Topic ARN. You’ll reference this ARN when creating CloudWatch alarms.
 
-![The image shows an Amazon SNS (Simple Notification Service) console page for a topic named "cloudwatchcourse," displaying details such as the ARN, type, and a confirmed email subscription.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862532/notes-assets/images/AWS-CloudWatch-Demo-Explore-CloudWatch-Console/amazon-sns-console-cloudwatchcourse-topic.jpg)
+![The image shows an Amazon SNS (Simple Notification Service) console page for a topic named "cloudwatchcourse," displaying details such as the ARN, type, and a confirmed email subscription.](https://kodekloud.com/kk-media/image/upload/v1752862532/notes-assets/images/AWS-CloudWatch-Demo-Explore-CloudWatch-Console/amazon-sns-console-cloudwatchcourse-topic.jpg)
 
 ***
 

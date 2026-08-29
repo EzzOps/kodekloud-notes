@@ -26,9 +26,7 @@ Detected that your cluster does not support third party JWT authentication. Fall
 Installation complete
 ```
 
-<Callout icon="lightbulb">
-  This command deploys a control plane component named Istiod in a new namespace (typically the Istio system namespace). In addition to Istiod — which includes key components such as Citadel, Pilot, and Galley — Istioctl deploys the Istio Ingress Gateway and the Istio Egress Gateway. Several Kubernetes service objects are also created to expose these services within your cluster.
-</Callout>
+> **lightbulb** This command deploys a control plane component named Istiod in a new namespace (typically the Istio system namespace). In addition to Istiod — which includes key components such as Citadel, Pilot, and Galley — Istioctl deploys the Istio Ingress Gateway and the Istio Egress Gateway. Several Kubernetes service objects are also created to expose these services within your cluster.
 
 Different profiles are available to suit various environments such as production or performance testing. For this demo, the demo profile is used.
 
@@ -60,9 +58,7 @@ Checked 3 Istio Deployments
 
 This verification step confirms that Istio extends Kubernetes by adding custom resource definitions (CRDs) and deploying essential components into your cluster.
 
-<Callout icon="lightbulb">
-  Stay tuned for the upcoming demo where we will show Istio in action and demonstrate its capabilities within your cluster.
-</Callout>
+> **lightbulb** Stay tuned for the upcoming demo where we will show Istio in action and demonstrate its capabilities within your cluster.
 
 For further reading on Istio and Kubernetes, check out the following resources:
 
@@ -72,6 +68,4 @@ For further reading on Istio and Kubernetes, check out the following resources:
 
 Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/0dac29fe-b45b-4612-acda-b404f048b1ad" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/0dac29fe-b45b-4612-acda-b404f048b1ad)

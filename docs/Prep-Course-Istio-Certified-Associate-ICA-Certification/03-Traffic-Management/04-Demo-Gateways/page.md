@@ -310,11 +310,9 @@ References
 * [Istio VirtualService API](https://istio.io/latest/docs/reference/config/networking/virtual-service/)
 * [Istio Traffic Management Concepts](https://istio.io/latest/docs/concepts/traffic-management/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/d1f9fcf9-1a4b-4eca-a8d7-a0560640d58b" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/d1f9fcf9-1a4b-4eca-a8d7-a0560640d58b)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/cdadeded-56db-477a-b50d-d4598b89a083" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/cdadeded-56db-477a-b50d-d4598b89a083)
 
 
 # Demo Gateways

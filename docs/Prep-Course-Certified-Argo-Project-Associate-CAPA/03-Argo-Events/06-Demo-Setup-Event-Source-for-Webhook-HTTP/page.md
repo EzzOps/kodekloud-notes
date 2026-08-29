@@ -51,9 +51,7 @@ namespace=argo-events, sensorName=webhook-sensor, level=info, msg="Error: Failed
 
 The Sensor attempted to create an Argo Workflow in the `argo` namespace, but the service account used by the Sensor (`system:serviceaccount:argo-events:default` in this example) does not have RBAC permissions to create `workflows.argoproj.io` in the `argo` namespace. This caused the PermissionDenied error in the Sensor logs.
 
-<Callout icon="warning">
-  Ensure the service account configured for the Sensor (via spec.template.serviceAccountName or in the Sensor controller pod) has appropriate RBAC permissions to create the target resources (Argo Workflows or Kubernetes objects) in the target namespace.
-</Callout>
+> **warning** Ensure the service account configured for the Sensor (via spec.template.serviceAccountName or in the Sensor controller pod) has appropriate RBAC permissions to create the target resources (Argo Workflows or Kubernetes objects) in the target namespace.
 
 ## Solution outline (RBAC and service account)
 
@@ -137,9 +135,7 @@ Useful links:
 * [Argo Workflows Documentation](https://argoproj.github.io/argo-workflows/)
 * [Kubernetes kubectl reference](https://kubernetes.io/docs/reference/kubectl/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/0793f959-c18e-4213-bc00-9f9077c539b8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/0793f959-c18e-4213-bc00-9f9077c539b8)
 
 
 # Demo Setup Event Source for Webhook HTTP
@@ -196,9 +192,7 @@ When the webhook receives an HTTP request, the event payload typically includes 
 
 Note: the exact structure may vary depending on how the EventSource is configured (e.g., static payloads, custom converters, or secret mappings).
 
-<Callout icon="lightbulb">
-  The webhook EventSource listens on the configured port and endpoint. By default, Argo Events will create a Kubernetes Service that exposes the same port. If you want traffic from outside the cluster to reach the webhook, expose the Service using a suitable type for your environment (LoadBalancer, NodePort, Ingress, etc.).
-</Callout>
+> **lightbulb** The webhook EventSource listens on the configured port and endpoint. By default, Argo Events will create a Kubernetes Service that exposes the same port. If you want traffic from outside the cluster to reach the webhook, expose the Service using a suitable type for your environment (LoadBalancer, NodePort, Ingress, etc.).
 
 ## Prerequisites
 
@@ -349,9 +343,7 @@ In the Argo UI (Event Flow or Event Sources view) you should see the new "my-web
 | Events not triggering Sensors         | Check EventBus health and Sensor configurations in the same namespace        |
 | External webhooks can't reach cluster | Verify Ingress/LoadBalancer, firewall rules, and DNS routing                 |
 
-<Callout icon="warning">
-  If you expose a webhook endpoint to the public internet, secure it: use TLS, require authentication or tokens, validate payloads, and restrict source IPs where possible. An unprotected webhook can be abused or flood your cluster with requests.
-</Callout>
+> **warning** If you expose a webhook endpoint to the public internet, secure it: use TLS, require authentication or tokens, validate payloads, and restrict source IPs where possible. An unprotected webhook can be abused or flood your cluster with requests.
 
 ## Links and references
 
@@ -363,6 +355,4 @@ In the Argo UI (Event Flow or Event Sources view) you should see the new "my-web
 
 Use this pattern as a base to extend the webhook EventSource with authentication, custom converters, static payloads, or multiple endpoints per EventSource.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/976edf39-9b73-4480-9dcd-4c97e4ea3890" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/976edf39-9b73-4480-9dcd-4c97e4ea3890)

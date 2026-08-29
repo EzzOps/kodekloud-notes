@@ -6,27 +6,19 @@ This article explains open source licenses, their importance, and how they defin
 
 Releasing your work as open source can accelerate collaboration and innovation—but it also carries legal responsibilities. In most countries, creative work is automatically protected by copyright. Unless you grant explicit permission, others cannot use, modify, or redistribute your code.
 
-<Callout icon="triangle-alert">
-  Always include a license file in your repository. Without one, contributors and users risk infringing on your copyright.
-</Callout>
+> **triangle-alert** Always include a license file in your repository. Without one, contributors and users risk infringing on your copyright.
 
 A license clearly defines the permissions, conditions, and limitations for anyone who interacts with your project.
 
-<Frame>
-  ![The image is a diagram illustrating open source licenses, highlighting the abilities to access, edit, and redistribute source code.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882537/notes-assets/images/Open-Source-for-Beginners-Open-source-licenses/open-source-licenses-diagram-access-edit-redistribute.jpg)
-</Frame>
+![The image is a diagram illustrating open source licenses, highlighting the abilities to access, edit, and redistribute source code.](https://kodekloud.com/kk-media/image/upload/v1752882537/notes-assets/images/Open-Source-for-Beginners-Open-source-licenses/open-source-licenses-diagram-access-edit-redistribute.jpg)
 
 ## What Makes a Project “Open Source”?
 
 Simply making code publicly accessible doesn’t make it open source. True open source projects must adopt a license that complies with the [Open Source Definition](https://opensource.org/osd). That definition ensures your project remains free to use, modify, and distribute under clear terms.
 
-<Frame>
-  ![The image shows a Google search bar with the text "any free work is open source" typed in. The background is dark, and the Google logo is prominently displayed above the search bar.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882538/notes-assets/images/Open-Source-for-Beginners-Open-source-licenses/google-search-bar-open-source-text.jpg)
-</Frame>
+![The image shows a Google search bar with the text "any free work is open source" typed in. The background is dark, and the Google logo is prominently displayed above the search bar.](https://kodekloud.com/kk-media/image/upload/v1752882538/notes-assets/images/Open-Source-for-Beginners-Open-source-licenses/google-search-bar-open-source-text.jpg)
 
-<Callout icon="lightbulb">
-  A license grants legal permission. Popular open source licenses are maintained by standard organizations to ensure consistency and clarity.
-</Callout>
+> **lightbulb** A license grants legal permission. Popular open source licenses are maintained by standard organizations to ensure consistency and clarity.
 
 ## Popular Open Source Licenses
 
@@ -46,9 +38,7 @@ Let’s explore how React’s team handles licensing. Visit the [React GitHub re
 2. You’ll see that React uses the MIT License.
 3. The sidebar also provides a quick summary of permissions and conditions.
 
-<Frame>
-  ![The image shows a GitHub repository page displaying the MIT License for a project named "react-page." It includes details about permissions, limitations, and conditions of the license.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882540/notes-assets/images/Open-Source-for-Beginners-Open-source-licenses/github-repo-mit-license-react-page.jpg)
-</Frame>
+![The image shows a GitHub repository page displaying the MIT License for a project named "react-page." It includes details about permissions, limitations, and conditions of the license.](https://kodekloud.com/kk-media/image/upload/v1752882540/notes-assets/images/Open-Source-for-Beginners-Open-source-licenses/github-repo-mit-license-react-page.jpg)
 
 Each license carries unique obligations—such as attribution requirements or copyleft clauses—so review them carefully before choosing one for your project.
 
@@ -58,6 +48,4 @@ Each license carries unique obligations—such as attribution requirements or co
 * [Open Source Initiative: License List](https://opensource.org/licenses)
 * [Choose an Open Source License](https://choosealicense.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/649f4ff1-452a-46e6-9822-6cb8808ccc6f/lesson/d670537f-6439-4c03-9a5d-cb82eeb8105a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/649f4ff1-452a-46e6-9822-6cb8808ccc6f/lesson/d670537f-6439-4c03-9a5d-cb82eeb8105a)

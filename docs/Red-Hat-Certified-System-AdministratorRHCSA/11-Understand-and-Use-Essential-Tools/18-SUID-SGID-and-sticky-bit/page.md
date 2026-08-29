@@ -12,9 +12,7 @@ Welcome to this comprehensive guide on SUID, SGID, and Sticky Bit permissions. I
 
 The Set User ID (SUID) bit enables an executable file to run with the privileges of its owner rather than those of the executing user. This feature is critical for commands like `su` or `passwd` that require elevated privileges.
 
-<Callout icon="lightbulb">
-  When the SUID bit is set on an executable without the owner’s execute permission, it is displayed as a capital `S`. If the owner’s execute bit is also present, it appears as a lowercase `s`.
-</Callout>
+> **lightbulb** When the SUID bit is set on an executable without the owner’s execute permission, it is displayed as a capital `S`. If the owner’s execute bit is also present, it appears as a lowercase `s`.
 
 ### Example: Setting SUID
 
@@ -144,6 +142,4 @@ This guide has provided detailed instructions on setting and verifying SUID, SGI
 
 Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/8f91e3d1-253c-4674-a710-d85487eee932" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/8f91e3d1-253c-4674-a710-d85487eee932)

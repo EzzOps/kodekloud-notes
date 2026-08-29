@@ -6,9 +6,7 @@ This article explains how to build a simple networked file transfer tool using R
 
 In this article, we explain how to build a simple networked file transfer toolâ€”a basic client-server application using Rust. The client reads a file in chunks and sends it to the server over a TCP connection. The server reassembles these chunks, writes them to disk, and acknowledges the successful file transfer.
 
-<Frame>
-  ![The image is a flowchart illustrating the interaction between a user, client, and server, detailing steps like providing a file path, connecting to the server, and sending file chunks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883937/notes-assets/images/Rust-Programming-Project-Networked-File-Transfer-Application/user-client-server-flowchart.jpg)
-</Frame>
+![The image is a flowchart illustrating the interaction between a user, client, and server, detailing steps like providing a file path, connecting to the server, and sending file chunks.](https://kodekloud.com/kk-media/image/upload/v1752883937/notes-assets/images/Rust-Programming-Project-Networked-File-Transfer-Application/user-client-server-flowchart.jpg)
 
 ## Application Features
 
@@ -17,9 +15,7 @@ In this article, we explain how to build a simple networked file transfer toolâ€
 * **File Path Input**: The client prompts the user to input the absolute file path of the file to send.
 * **Error Handling**: Implements basic error handling during connection setup and file transfer.
 
-<Frame>
-  ![The image outlines four features: TCP Communication, File Transfer, File Path Input, and Error Handling, each with a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883938/notes-assets/images/Rust-Programming-Project-Networked-File-Transfer-Application/tcp-communication-file-transfer-features.jpg)
-</Frame>
+![The image outlines four features: TCP Communication, File Transfer, File Path Input, and Error Handling, each with a brief description.](https://kodekloud.com/kk-media/image/upload/v1752883938/notes-assets/images/Rust-Programming-Project-Networked-File-Transfer-Application/tcp-communication-file-transfer-features.jpg)
 
 ## Core Components
 
@@ -27,17 +23,13 @@ In this article, we explain how to build a simple networked file transfer toolâ€
 
 The server component consists of a TCP listener that binds to a specified port, accepts client connections, reads file chunks, and writes them to disk. Once the entire file is received, the server sends an acknowledgment back to the client.
 
-<Frame>
-  ![The image outlines the core components of a server, including a TCP listener, accepting connections, and file saving. Each component is briefly described in terms of its function.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883939/notes-assets/images/Rust-Programming-Project-Networked-File-Transfer-Application/server-core-components-tcp-listener.jpg)
-</Frame>
+![The image outlines the core components of a server, including a TCP listener, accepting connections, and file saving. Each component is briefly described in terms of its function.](https://kodekloud.com/kk-media/image/upload/v1752883939/notes-assets/images/Rust-Programming-Project-Networked-File-Transfer-Application/server-core-components-tcp-listener.jpg)
 
 ### Client
 
 The client takes user input for the file path, connects to the server via TCP, reads the file in manageable chunks, and sends these chunks to the server. It includes error handling and waits for the server's acknowledgment before closing the connection.
 
-<Frame>
-  ![The image outlines the core components of a client system, detailing user input, TCP connection, and file reading processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883940/notes-assets/images/Rust-Programming-Project-Networked-File-Transfer-Application/client-system-core-components-diagram.jpg)
-</Frame>
+![The image outlines the core components of a client system, detailing user input, TCP connection, and file reading processes.](https://kodekloud.com/kk-media/image/upload/v1752883940/notes-assets/images/Rust-Programming-Project-Networked-File-Transfer-Application/client-system-core-components-diagram.jpg)
 
 ## Client Execution Flow
 
@@ -48,9 +40,7 @@ The client takes user input for the file path, connects to the server via TCP, r
 5. Wait for the server's acknowledgment after transmitting all chunks.
 6. Close the TCP connection.
 
-<Frame>
-  ![The image is a flowchart titled "Client Execution Flow," detailing steps for a client application to transfer a file, including prompting for a file path, connecting to a server, reading and sending file chunks, and acknowledging completion.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883941/notes-assets/images/Rust-Programming-Project-Networked-File-Transfer-Application/client-execution-flowchart-file-transfer.jpg)
-</Frame>
+![The image is a flowchart titled "Client Execution Flow," detailing steps for a client application to transfer a file, including prompting for a file path, connecting to a server, reading and sending file chunks, and acknowledging completion.](https://kodekloud.com/kk-media/image/upload/v1752883941/notes-assets/images/Rust-Programming-Project-Networked-File-Transfer-Application/client-execution-flowchart-file-transfer.jpg)
 
 ## Server Execution Flow
 
@@ -60,17 +50,13 @@ The client takes user input for the file path, connects to the server via TCP, r
 4. After receiving the complete file, the server sends an acknowledgment back to the client.
 5. The connection is then closed.
 
-<Frame>
-  ![The image illustrates a server execution flow, detailing steps such as listening for connections, accepting client connections, receiving files in chunks, and sending acknowledgments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883943/notes-assets/images/Rust-Programming-Project-Networked-File-Transfer-Application/server-execution-flow-diagram.jpg)
-</Frame>
+![The image illustrates a server execution flow, detailing steps such as listening for connections, accepting client connections, receiving files in chunks, and sending acknowledgments.](https://kodekloud.com/kk-media/image/upload/v1752883943/notes-assets/images/Rust-Programming-Project-Networked-File-Transfer-Application/server-execution-flow-diagram.jpg)
 
 ## File Transfer Details
 
 The file transfer is optimized for large files by reading and sending data in chunks. If a file with the same name already exists on the server, it will be overwritten.
 
-<Frame>
-  ![The image explains file transfer details, highlighting chunk size for efficient file handling and file overwrite behavior when a file with the same name exists.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883944/notes-assets/images/Rust-Programming-Project-Networked-File-Transfer-Application/file-transfer-chunk-size-overwrite.jpg)
-</Frame>
+![The image explains file transfer details, highlighting chunk size for efficient file handling and file overwrite behavior when a file with the same name exists.](https://kodekloud.com/kk-media/image/upload/v1752883944/notes-assets/images/Rust-Programming-Project-Networked-File-Transfer-Application/file-transfer-chunk-size-overwrite.jpg)
 
 ## Libraries and Tools
 
@@ -81,9 +67,7 @@ This project leverages several Rust standard libraries and tools:
 * **std::io::**: For handling data input/output.
 * **std::io::stdin**: For managing standard input.
 
-<Frame>
-  ![The image lists libraries and tools related to networking and file operations, alongside an illustration of connected devices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883945/notes-assets/images/Rust-Programming-Project-Networked-File-Transfer-Application/networking-file-operations-tools.jpg)
-</Frame>
+![The image lists libraries and tools related to networking and file operations, alongside an illustration of connected devices.](https://kodekloud.com/kk-media/image/upload/v1752883945/notes-assets/images/Rust-Programming-Project-Networked-File-Transfer-Application/networking-file-operations-tools.jpg)
 
 ## Code Walkthrough
 
@@ -294,16 +278,10 @@ Sent acknowledgment to the client.
 
 In this article, we built a networked file transfer application using Rust and TCP sockets. The client reads a file in chunks and sends it to the server, which writes the chunks to disk and sends back an acknowledgment upon successful completion.
 
-<Callout icon="lightbulb">
-  This basic application can be extended with features such as file compression, encryption, or support for transferring multiple files concurrently.
-</Callout>
+> **lightbulb** This basic application can be extended with features such as file compression, encryption, or support for transferring multiple files concurrently.
 
-<Frame>
-  ![The image is a summary slide outlining the creation of a network file transfer app using TCP sockets, detailing the process of file transfer in chunks, and learning file handling and networking with Rust.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883946/notes-assets/images/Rust-Programming-Project-Networked-File-Transfer-Application/network-file-transfer-app-rust.jpg)
-</Frame>
+![The image is a summary slide outlining the creation of a network file transfer app using TCP sockets, detailing the process of file transfer in chunks, and learning file handling and networking with Rust.](https://kodekloud.com/kk-media/image/upload/v1752883946/notes-assets/images/Rust-Programming-Project-Networked-File-Transfer-Application/network-file-transfer-app-rust.jpg)
 
 We hope you enjoyed building this project and learning about networked file transfers with Rust!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/5b50abd7-c86a-4458-a1a3-90a7ebb3d776/lesson/a515805e-584d-4275-9fbb-709273aae979" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/5b50abd7-c86a-4458-a1a3-90a7ebb3d776/lesson/a515805e-584d-4275-9fbb-709273aae979)

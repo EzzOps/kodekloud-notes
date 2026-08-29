@@ -46,9 +46,7 @@ To test **v2** in-cluster, you must:
    kubectl apply -f deployment.yaml
    ```
 
-<Callout icon="triangle-alert">
-  Each code change triggers this manual sequence—packaging, pushing, manifest editing, and redeployment—turning a quick test into a multi-minute ordeal.
-</Callout>
+> **triangle-alert** Each code change triggers this manual sequence—packaging, pushing, manifest editing, and redeployment—turning a quick test into a multi-minute ordeal.
 
 ### Manual vs. Telepresence development workflow
 
@@ -75,9 +73,7 @@ curl http://service-a:3000  # fails
 curl http://172.16.0.1      # unreachable
 ```
 
-<Callout icon="lightbulb">
-  Without a tunnel, your laptop can’t resolve or reach in-cluster Pod/Service IPs or DNS names.
-</Callout>
+> **lightbulb** Without a tunnel, your laptop can’t resolve or reach in-cluster Pod/Service IPs or DNS names.
 
 You need a way for your local machine to *appear* inside the cluster network.
 
@@ -85,9 +81,7 @@ You need a way for your local machine to *appear* inside the cluster network.
 
 Telepresence solves this by establishing a transparent two-way proxy between your laptop and the Kubernetes cluster:
 
-<Frame>
-  ![The image illustrates a network setup involving Telepresence, showing a laptop connected to a Kubernetes cluster with pods and services, along with their respective CIDR notations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884097/notes-assets/images/Telepresence-For-Kubernetes-Why-Telepresence/telepresence-kubernetes-network-setup.jpg)
-</Frame>
+![The image illustrates a network setup involving Telepresence, showing a laptop connected to a Kubernetes cluster with pods and services, along with their respective CIDR notations.](https://kodekloud.com/kk-media/image/upload/v1752884097/notes-assets/images/Telepresence-For-Kubernetes-Why-Telepresence/telepresence-kubernetes-network-setup.jpg)
 
 With the Telepresence tunnel, you can:
 
@@ -108,9 +102,7 @@ Telepresence’s **intercept** feature lets you run an exact copy of a service l
 1. Telepresence captures the pod’s network namespace, environment variables, and volumes.
 2. Cluster traffic destined for that service is redirected to your local process.
 
-<Frame>
-  ![The image illustrates a "Telepresence Intercept" setup, showing a user interacting with a frontend, which is connected to a Kubernetes cluster and a local development environment with network namespace and environment variables.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884099/notes-assets/images/Telepresence-For-Kubernetes-Why-Telepresence/telepresence-intercept-setup-kubernetes.jpg)
-</Frame>
+![The image illustrates a "Telepresence Intercept" setup, showing a user interacting with a frontend, which is connected to a Kubernetes cluster and a local development environment with network namespace and environment variables.](https://kodekloud.com/kk-media/image/upload/v1752884099/notes-assets/images/Telepresence-For-Kubernetes-Why-Telepresence/telepresence-intercept-setup-kubernetes.jpg)
 
 Now you can:
 
@@ -128,9 +120,7 @@ Since Telepresence makes your laptop look like a cluster pod, you automatically 
 
 ## Summary of benefits
 
-<Frame>
-  ![The image is a summary list highlighting six benefits of a process related to development and debugging, proxy tunneling, Kubernetes operation, traffic interception, access to namespaces, and cloud communication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884100/notes-assets/images/Telepresence-For-Kubernetes-Why-Telepresence/development-debugging-benefits-summary.jpg)
-</Frame>
+![The image is a summary list highlighting six benefits of a process related to development and debugging, proxy tunneling, Kubernetes operation, traffic interception, access to namespaces, and cloud communication.](https://kodekloud.com/kk-media/image/upload/v1752884100/notes-assets/images/Telepresence-For-Kubernetes-Why-Telepresence/development-debugging-benefits-summary.jpg)
 
 Telepresence accelerates Kubernetes development by:
 
@@ -148,6 +138,4 @@ Telepresence accelerates Kubernetes development by:
 * [Kubernetes Networking Concepts](https://kubernetes.io/docs/concepts/cluster-administration/networking/)
 * [AWS RDS Overview](https://aws.amazon.com/rds/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/affbe941-3358-4140-a895-22d79a34b047" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/affbe941-3358-4140-a895-22d79a34b047)

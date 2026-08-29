@@ -64,11 +64,11 @@ For the appropriate AMI, navigate to the EC2 console, launch an instance, and ch
 
 Below is an image from the AWS documentation that illustrates the properties of an EC2 instance:
 
-![The image shows a webpage from the AWS documentation, specifically the EC2 instance properties section, with a list of parameters and their data types. The left sidebar contains a navigation menu for different AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865278/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudFormation-Demo/aws-ec2-instance-properties-documentation.jpg)
+![The image shows a webpage from the AWS documentation, specifically the EC2 instance properties section, with a list of parameters and their data types. The left sidebar contains a navigation menu for different AWS services.](https://kodekloud.com/kk-media/image/upload/v1752865278/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudFormation-Demo/aws-ec2-instance-properties-documentation.jpg)
 
 The next image shows the EC2 console for instance selection:
 
-![The image shows the AWS EC2 console for launching an instance, with options for selecting the instance name, Amazon Machine Image (AMI), and instance type. A summary section on the right provides details about the selected configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865280/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudFormation-Demo/aws-ec2-launch-instance-console.jpg)
+![The image shows the AWS EC2 console for launching an instance, with options for selecting the instance name, Amazon Machine Image (AMI), and instance type. A summary section on the right provides details about the selected configuration.](https://kodekloud.com/kk-media/image/upload/v1752865280/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudFormation-Demo/aws-ec2-launch-instance-console.jpg)
 
 ***
 
@@ -244,13 +244,13 @@ To deploy your CloudFormation stack:
 
 The image below illustrates the AWS CloudFormation console during stack creation:
 
-![The image shows the AWS CloudFormation console where a user is in the process of creating a stack. It includes options to prepare and specify a template using an Amazon S3 URL or by uploading a template file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865282/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudFormation-Demo/aws-cloudformation-create-stack-template.jpg)
+![The image shows the AWS CloudFormation console where a user is in the process of creating a stack. It includes options to prepare and specify a template using an Amazon S3 URL or by uploading a template file.](https://kodekloud.com/kk-media/image/upload/v1752865282/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudFormation-Demo/aws-cloudformation-create-stack-template.jpg)
 
 After deployment, the stack status will change to "CREATE\_COMPLETE". You can review the events and check resource details, including obtaining the EC2 instance's public IP address from the Outputs tab.
 
 The following image shows the stack deployment events in the CloudFormation console:
 
-![The image shows an AWS CloudFormation console with a list of stack deployments and their statuses. The "my-deployment" stack is highlighted, showing event details such as timestamps, logical IDs, and status updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865283/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudFormation-Demo/aws-cloudformation-stack-deployment.jpg)
+![The image shows an AWS CloudFormation console with a list of stack deployments and their statuses. The "my-deployment" stack is highlighted, showing event details such as timestamps, logical IDs, and status updates.](https://kodekloud.com/kk-media/image/upload/v1752865283/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudFormation-Demo/aws-cloudformation-stack-deployment.jpg)
 
 ***
 
@@ -260,7 +260,7 @@ If you need to make changes, update the stack using the template designer within
 
 The image below shows the update interface in the AWS CloudFormation console:
 
-![The image shows an AWS CloudFormation interface for updating a stack, with options to prepare and specify a template using an Amazon S3 URL or by uploading a file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865284/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudFormation-Demo/aws-cloudformation-update-stack-interface.jpg)
+![The image shows an AWS CloudFormation interface for updating a stack, with options to prepare and specify a template using an Amazon S3 URL or by uploading a file.](https://kodekloud.com/kk-media/image/upload/v1752865284/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudFormation-Demo/aws-cloudformation-update-stack-interface.jpg)
 
 ***
 

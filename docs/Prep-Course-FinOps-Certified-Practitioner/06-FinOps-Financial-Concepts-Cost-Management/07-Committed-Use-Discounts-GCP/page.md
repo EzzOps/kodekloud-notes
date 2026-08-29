@@ -65,9 +65,7 @@ How CUDs fit with other GCP cost-saving options
 * Preemptible Instances: Very low-cost, short-lived VMs for batch and fault-tolerant workloads; pair well with autoscaling and CUDs for mixed workloads.
 * Pricing and planning tools: Use GCP calculators and recommendations to model spend-based vs resource-based choices based on historical usage.
 
-<Callout icon="lightbulb">
-  Choose spend-based commitments for maximum flexibility (variable workloads) and resource-based commitments for maximum discount (predictable workloads). Use GCP planning tools and historical usage to decide which is best.
-</Callout>
+> **lightbulb** Choose spend-based commitments for maximum flexibility (variable workloads) and resource-based commitments for maximum discount (predictable workloads). Use GCP planning tools and historical usage to decide which is best.
 
 <Frame>
   <img alt="The image lists three unique features: Sustained Use Discounts, Preemptible Instances, and a Planning Tool, each represented by different colored icons." />
@@ -83,9 +81,7 @@ Practical considerations and best practices
   * [https://aws.amazon.com/savingsplans/](https://aws.amazon.com/savingsplans/)
   * [https://learn.microsoft.com/en-us/azure/virtual-machines/reserved-vm-instances/](https://learn.microsoft.com/en-us/azure/virtual-machines/reserved-vm-instances/)
 
-<Callout icon="warning">
-  CUDs are contractual commitments. If your usage drops below the committed level, you will still be billed for the commitment. Always analyze historical usage and run “what-if” scenarios before committing.
-</Callout>
+> **warning** CUDs are contractual commitments. If your usage drops below the committed level, you will still be billed for the commitment. Always analyze historical usage and run “what-if” scenarios before committing.
 
 Summary
 
@@ -93,6 +89,4 @@ Committed Use Discounts are a powerful FinOps tool on GCP when you can predict c
 
 Thanks — that’s it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/d59ac29e-f2a2-46c7-a491-d53ae2023b21" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/d59ac29e-f2a2-46c7-a491-d53ae2023b21)

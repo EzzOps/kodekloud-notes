@@ -131,9 +131,7 @@ def get_post(id: int, db: Session = Depends(get_db)):
     return {"post_detail": post}
 ```
 
-<Callout icon="lightbulb">
-  After confirming that the query works correctly, remember to remove debugging print statements from your production code.
-</Callout>
+> **lightbulb** After confirming that the query works correctly, remember to remove debugging print statements from your production code.
 
 ## Sample Successful Response
 
@@ -169,12 +167,8 @@ When trying to fetch a non-existent post (for example, with ID 666), the API ret
 }
 ```
 
-<Callout icon="triangle-alert">
-  Ensure that your error handling covers all edge cases to avoid exposing sensitive details about your database.
-</Callout>
+> **triangle-alert** Ensure that your error handling covers all edge cases to avoid exposing sensitive details about your database.
 
 With these updates, the endpoint for fetching an individual post is now optimized, fully utilizing SQLAlchemy for database interactions, and is more maintainable for future improvements.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/d50398e8-46ac-46fb-a747-0e6c4a73e271" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/d50398e8-46ac-46fb-a747-0e6c4a73e271)

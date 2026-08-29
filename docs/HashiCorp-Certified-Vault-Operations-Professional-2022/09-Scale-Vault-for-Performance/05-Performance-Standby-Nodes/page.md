@@ -8,9 +8,7 @@ vault write sys/replication/performance/primary/secondary-token id="region-west"
 vault write sys/replication/performance/secondary/enable token="s.XYZ1234"
 ```
 
-<Callout icon="lightbulb">
-  Enabling replication on a secondary wipes its existing data and replaces it with the primary’s data, including unseal and recovery keys.
-</Callout>
+> **lightbulb** Enabling replication on a secondary wipes its existing data and replaces it with the primary’s data, including unseal and recovery keys.
 
 ## Monitoring Replication
 
@@ -35,9 +33,7 @@ vault read -format=json sys/replication/dr/status
 * [High Availability with Vault Performance Replication](https://www.hashicorp.com/blog/vault-performance-replication)
 * [Vault CLI Documentation](https://www.vaultproject.io/docs/commands)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b6a41fdb-447c-43b2-9489-6c8459821fab/lesson/2efdccb7-4865-412b-8473-d628f3a139b4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b6a41fdb-447c-43b2-9489-6c8459821fab/lesson/2efdccb7-4865-412b-8473-d628f3a139b4)
 
 
 # Performance Standby Nodes
@@ -55,9 +51,7 @@ Understanding Performance Standby Nodes is critical for scaling read throughput 
 * Health checks and routing
 * Enabling/disabling performance standby
 
-<Callout icon="lightbulb">
-  You need to *describe* what performance standby nodes are and why they’re used. Configuration commands aren’t required for the HashiCorp exam.
-</Callout>
+> **lightbulb** You need to *describe* what performance standby nodes are and why they’re used. Configuration commands aren’t required for the HashiCorp exam.
 
 ***
 
@@ -70,15 +64,11 @@ In **Vault Open Source**, an HA cluster contains:
 
 A load balancer must direct client traffic to the active node. If a client request lands on a standby, Vault uses RPC forwarding (or returns a redirect) so that only the active processes reads and writes.
 
-<Frame>
-  ![The image illustrates a Vault clustering setup with five nodes, where Node C is active, and the others are on standby. It also shows a developer making credential requests with read and write permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878610/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Performance-Standby-Nodes/vault-clustering-setup-five-nodes.jpg)
-</Frame>
+![The image illustrates a Vault clustering setup with five nodes, where Node C is active, and the others are on standby. It also shows a developer making credential requests with read and write permissions.](https://kodekloud.com/kk-media/image/upload/v1752878610/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Performance-Standby-Nodes/vault-clustering-setup-five-nodes.jpg)
 
 Because standby nodes don’t respond to reads or writes locally, scaling in Vault OSS means scaling **up**—increasing CPU, memory, or disk size rather than adding more nodes.
 
-<Frame>
-  ![The image illustrates a Vault Clustering setup with five nodes, where Node C is active, and the others are on standby. It shows a developer making a credential request, with a note that Vault OSS is a scale-up application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878611/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Performance-Standby-Nodes/vault-clustering-setup-five-nodes-2.jpg)
-</Frame>
+![The image illustrates a Vault Clustering setup with five nodes, where Node C is active, and the others are on standby. It shows a developer making a credential request, with a note that Vault OSS is a scale-up application.](https://kodekloud.com/kk-media/image/upload/v1752878611/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Performance-Standby-Nodes/vault-clustering-setup-five-nodes-2.jpg)
 
 | Feature               | Vault Open Source | Vault Enterprise          |
 | --------------------- | ----------------- | ------------------------- |
@@ -97,13 +87,9 @@ Vault Enterprise introduces **Performance Standby** nodes that:
 * Forward **write** requests to the active node
 * Scale out read capacity by adding more performance standby nodes
 
-<Frame>
-  ![The image illustrates a Vault Clustering setup for enterprise, showing multiple Vault nodes (A to E) with their read and write capabilities, and a developer making credential requests. Node C is active, while others are in performance standby.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878613/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Performance-Standby-Nodes/vault-clustering-setup-nodes-diagram.jpg)
-</Frame>
+![The image illustrates a Vault Clustering setup for enterprise, showing multiple Vault nodes (A to E) with their read and write capabilities, and a developer making credential requests. Node C is active, while others are in performance standby.](https://kodekloud.com/kk-media/image/upload/v1752878613/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Performance-Standby-Nodes/vault-clustering-setup-nodes-diagram.jpg)
 
-<Frame>
-  ![The image is a slide about "Vault Enterprise with Performance Standby," explaining how performance standby nodes can handle read requests to scale a cluster and maintain high availability. It includes a reminder that this functionality is specific to Vault Enterprise.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878614/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Performance-Standby-Nodes/vault-enterprise-performance-standby-slide.jpg)
-</Frame>
+![The image is a slide about "Vault Enterprise with Performance Standby," explaining how performance standby nodes can handle read requests to scale a cluster and maintain high availability. It includes a reminder that this functionality is specific to Vault Enterprise.](https://kodekloud.com/kk-media/image/upload/v1752878614/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Performance-Standby-Nodes/vault-enterprise-performance-standby-slide.jpg)
 
 ***
 
@@ -115,9 +101,7 @@ To scale read performance in Vault Enterprise:
 2. **Configure your load balancer** or DNS to route read-only traffic to performance standby nodes.
 3. **Use health checks** to differentiate between active (writes+reads) and performance standby (reads only).
 
-<Frame>
-  ![The image illustrates a system architecture for "Scaling Out with Performance Secondaries," showing an active node and multiple performance standby nodes connected in a sequence. It includes a label indicating scaling out for read performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878615/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Performance-Standby-Nodes/scaling-out-performance-secondaries-architecture.jpg)
-</Frame>
+![The image illustrates a system architecture for "Scaling Out with Performance Secondaries," showing an active node and multiple performance standby nodes connected in a sequence. It includes a label indicating scaling out for read performance.](https://kodekloud.com/kk-media/image/upload/v1752878615/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Performance-Standby-Nodes/scaling-out-performance-secondaries-architecture.jpg)
 
 ### Defining a Read
 
@@ -145,13 +129,9 @@ When using [Integrated Storage](https://www.vaultproject.io/docs/operations/stor
 2. Changes replicate asynchronously to standby nodes.
 3. Standbys serve fresh data only after replication completes.
 
-<Callout icon="triangle-alert">
-  A client reading immediately from a performance standby might see stale data or receive an error until replication finishes.
-</Callout>
+> **triangle-alert** A client reading immediately from a performance standby might see stale data or receive an error until replication finishes.
 
-<Frame>
-  ![The image illustrates a diagram of a system with five Vault Nodes labeled A to E, showing their roles in eventual consistency. Node C is marked as "Active" and "Write," while the others are in "Performance Standby."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878615/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Performance-Standby-Nodes/vault-nodes-consistency-diagram.jpg)
-</Frame>
+![The image illustrates a diagram of a system with five Vault Nodes labeled A to E, showing their roles in eventual consistency. Node C is marked as "Active" and "Write," while the others are in "Performance Standby."](https://kodekloud.com/kk-media/image/upload/v1752878615/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Performance-Standby-Nodes/vault-nodes-consistency-diagram.jpg)
 
 ***
 
@@ -175,9 +155,7 @@ HTTP status codes:
 
 Configure your load balancer to send read-only clients to nodes returning **473** and all other traffic to **200**.
 
-<Frame>
-  ![The image is a slide explaining how to target a performance standby in Vault, detailing health information endpoints and default status codes. It includes a note that these details are not needed for an exam.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878617/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Performance-Standby-Nodes/vault-performance-standby-health-info.jpg)
-</Frame>
+![The image is a slide explaining how to target a performance standby in Vault, detailing health information endpoints and default status codes. It includes a note that these details are not needed for an exam.](https://kodekloud.com/kk-media/image/upload/v1752878617/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Performance-Standby-Nodes/vault-performance-standby-health-info.jpg)
 
 ***
 

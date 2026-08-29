@@ -3,9 +3,7 @@ export OTEL_TRACES_SAMPLER=parentbased_traceidratio
 export OTEL_TRACES_SAMPLER_ARG=0.10  # sample 10% of traces at the SDK (when parent decision allows)
 ```
 
-<Callout icon="lightbulb">
-  Sampling at the SDK reduces network and backend load, but it discards data early. If you need sampling decisions based on full-trace results (errors, latency spikes, or aggregated attributes), consider sampling later in the pipeline (the Collector).
-</Callout>
+> **lightbulb** Sampling at the SDK reduces network and backend load, but it discards data early. If you need sampling decisions based on full-trace results (errors, latency spikes, or aggregated attributes), consider sampling later in the pipeline (the Collector).
 
 If the SDK does not sample, or if you need enrichment/normalization before deciding, the OpenTelemetry Collector is a powerful place to apply sampling. The Collector can receive telemetry from many SDKs, augment traces with transforms, and make more informed sampling decisions.
 
@@ -41,9 +39,7 @@ Table: Collector sampling comparison
 | Head sampling | Decide as spans arrive at the Collector (per-span or per-trace probabilistic policies based on partial info)              | Low memory & CPU, fast, scalable                                                                      | Cannot use full-trace outcomes (may miss important traces)                 |
 | Tail sampling | Buffer and assemble a trace (or wait for a decision signal) and then evaluate the entire trace before keeping or dropping | Outcome-aware (keep traces with errors/latency/patterns), more accurate retention of important traces | Requires buffering, more memory and CPU, complexity in distributed systems |
 
-<Callout icon="warning">
-  Tail sampling improves retention of high-value traces but increases memory and processing needs in the Collector. Plan capacity, timeouts, and resource limits carefully to avoid buffering overload.
-</Callout>
+> **warning** Tail sampling improves retention of high-value traces but increases memory and processing needs in the Collector. Plan capacity, timeouts, and resource limits carefully to avoid buffering overload.
 
 When to choose which:
 
@@ -57,9 +53,7 @@ References and further reading
 * OpenTelemetry Collector: [https://opentelemetry.io/docs/collector/](https://opentelemetry.io/docs/collector/)
 * OTTL (OpenTelemetry Transformation Language) docs: [https://opentelemetry.io/docs/collector/processing/transform/](https://opentelemetry.io/docs/collector/processing/transform/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/5222f050-3143-492f-afd6-56c62ef81fba" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/5222f050-3143-492f-afd6-56c62ef81fba)
 
 
 # Schema Fundamentals
@@ -138,9 +132,7 @@ Semantic versioning determines compatibility and consumer behavior. Follow [SemV
   <img alt="The image outlines &#x22;SemVer Rules for Schemas,&#x22; describing three versioning types: MAJOR for incompatible changes, MINOR for backward-compatible additions, and PATCH for ignorable additions. It also specifies consumer behavior for version changes." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Consumers can safely read schema files with the same major version and a minor version less than or equal to the minor they support. Patch differences are always safe.
-</Callout>
+> **lightbulb** Consumers can safely read schema files with the same major version and a minor version less than or equal to the minor they support. Patch differences are always safe.
 
 Compatibility examples (quick reference):
 
@@ -203,6 +195,4 @@ Links and references
 * [Semantic Versioning (SemVer)](https://semver.org)
 * [OpenTelemetry Schemas (reference)](https://opentelemetry.io/schemas/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/fdd9d476-02e7-4e94-83d3-513278463bb7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/fdd9d476-02e7-4e94-83d3-513278463bb7)

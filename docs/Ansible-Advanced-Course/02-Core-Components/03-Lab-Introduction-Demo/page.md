@@ -78,7 +78,7 @@ This article demonstrates the operation of Ansible hands-on labs on KodeKloud, i
 
 Welcome to the [Ansible Advanced Course](https://learn.kodekloud.com/user/courses/ansible-advanced-course). In this lesson, we demonstrate how the Ansible hands-on labs operate on KodeKloud. These labs run directly in your browser and can be accessed repeatedly until you achieve confidence. After each lecture, you are directed to a lab interface that includes both practical tasks and quiz questions.
 
-![The image shows a KodeKloud interface with a terminal setting up a test environment and a Katacoda panel connected to port 8080.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869395/notes-assets/images/Ansible-Advanced-Course-Lab-Introduction-Demo/frame_20.jpg)
+![The image shows a KodeKloud interface with a terminal setting up a test environment and a Katacoda panel connected to port 8080.](https://kodekloud.com/kk-media/image/upload/v1752869395/notes-assets/images/Ansible-Advanced-Course-Lab-Introduction-Demo/frame_20.jpg)
 
 ## Lab Interface Overview
 
@@ -228,7 +228,7 @@ root@ansible-controller ~/playbooks#
 
 > **triangle-alert** Avoid refreshing your browser tab during the lab session. Refreshing will cause the lab environment to expire after one hour. If the quiz portal appears stuck, refresh only that window. Remember, this action will restart the particular lab you are working on.
 
-![The image shows a quiz question asking in which format Ansible playbooks are expressed, with options: python, jinja2, yaml, and xml.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869396/notes-assets/images/Ansible-Advanced-Course-Lab-Introduction-Demo/frame_400.jpg)
+![The image shows a quiz question asking in which format Ansible playbooks are expressed, with options: python, jinja2, yaml, and xml.](https://kodekloud.com/kk-media/image/upload/v1752869396/notes-assets/images/Ansible-Advanced-Course-Lab-Introduction-Demo/frame_400.jpg)
 
 ## Final Steps and Feedback
 

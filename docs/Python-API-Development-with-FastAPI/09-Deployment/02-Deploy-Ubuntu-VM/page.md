@@ -23,13 +23,9 @@ Start by selecting **Get Started with a Droplet** on the DigitalOcean dashboard.
 
 DigitalOcean will create your Ubuntu VM and assign it a public IP address. This IP will be used to connect to your server.
 
-<Frame>
-  ![The image shows a DigitalOcean interface for creating a new droplet, where users can choose an operating system image and a pricing plan. Various options for distributions and plans are displayed, including Ubuntu and different CPU configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883402/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/digitalocean-droplet-creation-interface.jpg)
-</Frame>
+![The image shows a DigitalOcean interface for creating a new droplet, where users can choose an operating system image and a pricing plan. Various options for distributions and plans are displayed, including Ubuntu and different CPU configurations.](https://kodekloud.com/kk-media/image/upload/v1752883402/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/digitalocean-droplet-creation-interface.jpg)
 
-<Frame>
-  ![The image shows a DigitalOcean interface for creating a new Droplet, with options to set a root password, hostname, and project assignment. The user is in the process of finalizing the creation of a Droplet named "ubuntu-fastapi."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883403/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/digitalocean-create-droplet-ubuntu-fastapi.jpg)
-</Frame>
+![The image shows a DigitalOcean interface for creating a new Droplet, with options to set a root password, hostname, and project assignment. The user is in the process of finalizing the creation of a Droplet named "ubuntu-fastapi."](https://kodekloud.com/kk-media/image/upload/v1752883403/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/digitalocean-create-droplet-ubuntu-fastapi.jpg)
 
 ***
 
@@ -59,9 +55,7 @@ After a successful login, you'll notice your home directory (which might include
 sudo apt update && sudo apt upgrade -y
 ```
 
-<Callout icon="lightbulb">
-  Using the `-y` flag automatically confirms prompts during the upgrade process. You may be asked to confirm configuration changes for applications like `openssh-server`.
-</Callout>
+> **lightbulb** Using the `-y` flag automatically confirms prompts during the upgrade process. You may be asked to confirm configuration changes for applications like `openssh-server`.
 
 ***
 
@@ -302,9 +296,7 @@ ExecStart=/home/sanjeev/app/venv/bin/gunicorn -w 4 -k uvicorn.workers.UvicornWor
 WantedBy=multi-user.target
 ```
 
-<Callout icon="lightbulb">
-  The `EnvironmentFile` directive loads additional environment variables from your `.env` file. Ensure this file contains all required credentials and settings.
-</Callout>
+> **lightbulb** The `EnvironmentFile` directive loads additional environment variables from your `.env` file. Ensure this file contains all required credentials and settings.
 
 Reload systemd to apply the new service configuration:
 
@@ -421,21 +413,13 @@ If you have a custom domain (e.g., purchased from Namecheap), point its DNS to y
 
 Once DNS changes propagate (this may take a few minutes to an hour), visiting your domain should serve your application.
 
-<Frame>
-  ![The image shows a DigitalOcean project dashboard with options to manage resources like droplets, databases, and spaces. It includes navigation menus and various options for creating and managing cloud infrastructure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883404/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/digitalocean-project-dashboard-management.jpg)
-</Frame>
+![The image shows a DigitalOcean project dashboard with options to manage resources like droplets, databases, and spaces. It includes navigation menus and various options for creating and managing cloud infrastructure.](https://kodekloud.com/kk-media/image/upload/v1752883404/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/digitalocean-project-dashboard-management.jpg)
 
-<Frame>
-  ![The image shows a Namecheap domain management dashboard for the domain "sanjeev.xyz," displaying options for domain status, privacy, DNS settings, and other domain-related features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883405/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/namecheap-domain-management-sanjeev-xyz.jpg)
-</Frame>
+![The image shows a Namecheap domain management dashboard for the domain "sanjeev.xyz," displaying options for domain status, privacy, DNS settings, and other domain-related features.](https://kodekloud.com/kk-media/image/upload/v1752883405/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/namecheap-domain-management-sanjeev-xyz.jpg)
 
-<Frame>
-  ![The image shows a DigitalOcean control panel for managing DNS settings of the domain "sanjeev.xyz," including options to create new records and view existing DNS records.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883406/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/digitalocean-dns-settings-sanjeev.jpg)
-</Frame>
+![The image shows a DigitalOcean control panel for managing DNS settings of the domain "sanjeev.xyz," including options to create new records and view existing DNS records.](https://kodekloud.com/kk-media/image/upload/v1752883406/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/digitalocean-dns-settings-sanjeev.jpg)
 
-<Frame>
-  ![The image shows a DigitalOcean control panel displaying DNS records for the domain "sanjeev.xyz," including CNAME and A records. It also provides options to create new DNS records.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883406/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/digitalocean-dns-records-sanjeev.jpg)
-</Frame>
+![The image shows a DigitalOcean control panel displaying DNS records for the domain "sanjeev.xyz," including CNAME and A records. It also provides options to create new DNS records.](https://kodekloud.com/kk-media/image/upload/v1752883406/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/digitalocean-dns-records-sanjeev.jpg)
 
 ***
 
@@ -467,9 +451,7 @@ Certbot will update your Nginx configuration to enable HTTPS and set up proper r
 
 Once complete, you should see a secure padlock in your browser, indicating that HTTPS is active.
 
-<Frame>
-  ![The image shows a webpage from Certbot, providing instructions for setting up HTTPS on an Nginx server running on Ubuntu 20.04. It includes requirements and support information for using Certbot.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883407/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/certbot-https-nginx-ubuntu-20-04.jpg)
-</Frame>
+![The image shows a webpage from Certbot, providing instructions for setting up HTTPS on an Nginx server running on Ubuntu 20.04. It includes requirements and support information for using Certbot.](https://kodekloud.com/kk-media/image/upload/v1752883407/notes-assets/images/Python-API-Development-with-FastAPI-Deploy-Ubuntu-VM/certbot-https-nginx-ubuntu-20-04.jpg)
 
 ***
 

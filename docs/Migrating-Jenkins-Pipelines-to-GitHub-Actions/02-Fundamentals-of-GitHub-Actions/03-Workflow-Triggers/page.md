@@ -71,9 +71,7 @@ jobs:
 
 Use the `schedule` trigger to run workflows at fixed times. Cron schedules must be quoted in YAML because the asterisk (`*`) is a special character in YAML.
 
-<Callout icon="lightbulb">
-  When you use cron schedules in YAML, wrap the cron string in quotes so the YAML parser treats the asterisks (`*`) as part of the string.
-</Callout>
+> **lightbulb** When you use cron schedules in YAML, wrap the cron string in quotes so the YAML parser treats the asterisks (`*`) as part of the string.
 
 Example — run a job daily at 05:30 UTC and at 04:15/05:15 UTC on particular days:
 
@@ -128,9 +126,7 @@ curl -X POST \
   -d '{"event_type":"test_result","client_payload":{"status":"success"}}'
 ```
 
-<Callout icon="warning">
-  Make sure the token you use has the `repo` scope (or repository permissions appropriate for the target repository). Also verify repository settings and branch protection rules if your workflow needs write access to the repository.
-</Callout>
+> **warning** Make sure the token you use has the `repo` scope (or repository permissions appropriate for the target repository). Also verify repository settings and branch protection rules if your workflow needs write access to the repository.
 
 ## Best practices and tips
 
@@ -145,6 +141,4 @@ For a complete list of possible events and advanced filtering options, see the G
 
 This article covered core triggers — pushes, pull requests, schedules, issues/discussions, and repository dispatches — and gave short examples to help you pick and configure triggers for common CI/CD and automation scenarios.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/7d6172e9-5a43-4701-9feb-e4cfdb65b256/lesson/4d4d76c0-65e3-4a78-ac8d-913f07b206ce" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/7d6172e9-5a43-4701-9feb-e4cfdb65b256/lesson/4d4d76c0-65e3-4a78-ac8d-913f07b206ce)

@@ -117,9 +117,7 @@ ping -c 3 10.0.2.137
 # No responses — expected until the router knows how to reach the pod CIDRs
 ```
 
-<Callout icon="warning">
-  When using native routing, your physical network must route the pod CIDR(s). Provide routes via static entries, a dynamic routing protocol (for example, BGP), or another mechanism so other network segments can reach pod subnets.
-</Callout>
+> **warning** When using native routing, your physical network must route the pod CIDR(s). Provide routes via static entries, a dynamic routing protocol (for example, BGP), or another mechanism so other network segments can reach pod subnets.
 
 ***
 
@@ -259,9 +257,7 @@ Links and references:
   <img alt="A network diagram showing a control-plane and two worker nodes connected through a router, with each worker hosting a pod subnet (worker1: 10.0.1.0/24, worker2: 10.0.2.0/24) and interface IPs. The router’s routing table directs 10.0.1.0/24 → 192.168.211.128 and 10.0.2.0/24 → 192.168.44.128." />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/0807e400-fd1b-4f25-bba5-d0fdb0f4e3f2/lesson/c6850bd2-30e4-42f7-a8fe-b22843712299" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/0807e400-fd1b-4f25-bba5-d0fdb0f4e3f2/lesson/c6850bd2-30e4-42f7-a8fe-b22843712299)
 
 
 # IP Address Management IPAM
@@ -286,9 +282,7 @@ For example, with cluster CIDR 10.244.0.0/16 and per-node /24 allocations:
 
 A node can only assign pod IPs from the CIDR range it has been delegated.
 
-<Callout icon="lightbulb">
-  If you need to verify which CIDR a node owns, check the Node resource (for Kubernetes host-scope) or the CiliumNode resource (for cluster-scope). The agent waits for these resources to be populated before assigning pod IPs.
-</Callout>
+> **lightbulb** If you need to verify which CIDR a node owns, check the Node resource (for Kubernetes host-scope) or the CiliumNode resource (for cluster-scope). The agent waits for these resources to be populated before assigning pod IPs.
 
 ***
 

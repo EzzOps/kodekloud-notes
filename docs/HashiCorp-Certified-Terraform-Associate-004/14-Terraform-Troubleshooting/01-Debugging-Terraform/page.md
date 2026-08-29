@@ -17,13 +17,9 @@ resource "aws_vpc" "vpc" {
 
 ## Notes and best practices
 
-<Callout icon="lightbulb">
-  Use module outputs to pass information between modules (for example: `module.vpc.vpc_id` -> `module.subnet_module.vpc_id`). Keep modules small, well-documented, and parameterized so they can be reused across environments.
-</Callout>
+> **lightbulb** Use module outputs to pass information between modules (for example: `module.vpc.vpc_id` -> `module.subnet_module.vpc_id`). Keep modules small, well-documented, and parameterized so they can be reused across environments.
 
-<Callout icon="warning">
-  Running `terraform apply` will create resources in your cloud account and may incur charges. Always review the plan before applying and destroy resources when they are no longer needed.
-</Callout>
+> **warning** Running `terraform apply` will create resources in your cloud account and may incur charges. Always review the plan before applying and destroy resources when they are no longer needed.
 
 * Use descriptive variable names and include `description` in each `variables.tf`.
 * Prefer explicit module inputs over relying on implicit defaults in a parent configuration.
@@ -43,9 +39,7 @@ Recommended links:
 * You created a local module structure (`vpc`, `subnet`, `ec2`), implemented resources along with variables and outputs, and wired module outputs into parent module inputs.
 * This modular approach reduces duplication and makes it easy to create multiple similar environments by calling the same module with different inputs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/7a9b9328-bd7d-4cb0-99f2-2ac166f272a7/lesson/d75b966e-68c8-44e4-9ba3-b79efa99bbb2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/7a9b9328-bd7d-4cb0-99f2-2ac166f272a7/lesson/d75b966e-68c8-44e4-9ba3-b79efa99bbb2)
 
 
 # Debugging Terraform

@@ -55,18 +55,12 @@ kubectl create -f pod-definition.yml
 
 This command creates the pod named `myapp-pod`, which will be scheduled on `node-1` thanks to the matching label.
 
-<Callout icon="lightbulb">
-  Ensure that your node labels are kept up-to-date as your cluster evolves. This helps maintain consistent and predictable pod scheduling.
-</Callout>
+> **lightbulb** Ensure that your node labels are kept up-to-date as your cluster evolves. This helps maintain consistent and predictable pod scheduling.
 
 ## Limitations of Node Selectors
 
 While node selectors are a simple and effective method for basic pod scheduling, they come with limitations. If your scheduling requirements extend beyond a single label match—for instance, if you need to schedule pods on either a large or medium node or exclude nodes labeled as small—node selectors alone won't suffice. For more complex scheduling scenarios, consider using node affinity or anti-affinity. However, for straightforward cases, node selectors provide an easy-to-use solution.
 
-<Frame>
-  ![The image illustrates node selector limitations, showing nodes of different sizes, emphasizing selection of "Large" or "Medium" nodes, excluding "Small" ones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880695/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Node-Selectors/frame_190.jpg)
-</Frame>
+![The image illustrates node selector limitations, showing nodes of different sizes, emphasizing selection of "Large" or "Medium" nodes, excluding "Small" ones.](https://kodekloud.com/kk-media/image/upload/v1752880695/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Node-Selectors/frame_190.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/4fab542c-3091-4f8e-ad7c-91d96d54b049/lesson/5f461a14-4f2a-4ba2-80b3-63a9070c9cce" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/4fab542c-3091-4f8e-ad7c-91d96d54b049/lesson/5f461a14-4f2a-4ba2-80b3-63a9070c9cce)

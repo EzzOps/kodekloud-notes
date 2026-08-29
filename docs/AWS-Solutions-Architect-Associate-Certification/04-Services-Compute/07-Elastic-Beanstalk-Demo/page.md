@@ -22,7 +22,7 @@ Click to create a new environment. Since you are deploying a web application rat
 * Provide a description if needed.
 * Select **Node.js** as your platform and choose the appropriate version.
 
-![The image shows an AWS Elastic Beanstalk configuration page where a user is selecting a managed platform for a Node.js application, specifying the platform branch and version.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864924/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-nodejs-config.jpg)
+![The image shows an AWS Elastic Beanstalk configuration page where a user is selecting a managed platform for a Node.js application, specifying the platform branch and version.](https://kodekloud.com/kk-media/image/upload/v1752864924/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-nodejs-config.jpg)
 
 ## 3. Uploading Application Code
 
@@ -35,7 +35,7 @@ To prepare your deployment package:
 
 Once the ZIP file is ready, select it for upload.
 
-![The image shows a Windows File Explorer window with a folder named "eb-demo" open, displaying various files and folders. A dialog box titled "Archive name and parameters" is open, indicating options for creating an archive file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864925/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/windows-file-explorer-eb-demo-archive.jpg)
+![The image shows a Windows File Explorer window with a folder named "eb-demo" open, displaying various files and folders. A dialog box titled "Archive name and parameters" is open, indicating options for creating an archive file.](https://kodekloud.com/kk-media/image/upload/v1752864925/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/windows-file-explorer-eb-demo-archive.jpg)
 
 ## 4. Configuration and Presets
 
@@ -52,7 +52,7 @@ Elastic Beanstalk requires an IAM service role to perform AWS operations. If you
 
 Similarly, assign an EC2 key pair or create a new one if needed.
 
-![The image shows an AWS Elastic Beanstalk configuration screen for setting up service access, including options for selecting IAM roles, EC2 key pairs, and instance profiles. The interface provides options to create or use existing service roles and profiles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864927/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-configuration-screen.jpg)
+![The image shows an AWS Elastic Beanstalk configuration screen for setting up service access, including options for selecting IAM roles, EC2 key pairs, and instance profiles. The interface provides options to create or use existing service roles and profiles.](https://kodekloud.com/kk-media/image/upload/v1752864927/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-configuration-screen.jpg)
 
 ## 6. Configuring VPC, Subnets, and Database
 
@@ -63,9 +63,9 @@ Choose the Virtual Private Cloud (VPC) and subnets for your deployment:
 
 Optionally, you can enable an associated database, though this demo leaves that option disabled. Additional tags can be added if required, and default settings for attached storage volumes are retained.
 
-![The image shows an AWS Elastic Beanstalk console screen where instance settings and subnets are being configured, including options for public IP addresses and availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864928/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-instance-settings.jpg)
+![The image shows an AWS Elastic Beanstalk console screen where instance settings and subnets are being configured, including options for public IP addresses and availability zones.](https://kodekloud.com/kk-media/image/upload/v1752864928/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-instance-settings.jpg)
 
-![The image shows an AWS configuration page for setting up instance traffic and scaling options, including root volume settings and CloudWatch monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864929/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-instance-traffic-scaling-setup.jpg)
+![The image shows an AWS configuration page for setting up instance traffic and scaling options, including root volume settings and CloudWatch monitoring.](https://kodekloud.com/kk-media/image/upload/v1752864929/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-instance-traffic-scaling-setup.jpg)
 
 ## 7. Configuring Security Groups and Auto Scaling
 
@@ -78,7 +78,7 @@ Next, configure the security measures and scaling preferences:
 
 The demo uses on-demand EC2 instances with default architectural settings, instance types, and the Amazon Linux AMI.
 
-![The image shows an AWS Elastic Beanstalk configuration screen, focusing on EC2 security groups and auto-scaling group settings, including environment type and instance limits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864930/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-ec2-settings.jpg)
+![The image shows an AWS Elastic Beanstalk configuration screen, focusing on EC2 security groups and auto-scaling group settings, including environment type and instance limits.](https://kodekloud.com/kk-media/image/upload/v1752864930/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-ec2-settings.jpg)
 
 ## 8. Configuring the Load Balancer
 
@@ -90,9 +90,9 @@ Configure your load balancer to ensure proper distribution of incoming traffic:
   * The load balancer listens on port 80 by default.
   * Since the Node.js application listens on port 3000, modify the listener configuration to forward HTTP traffic accordingly.
 
-![The image shows an AWS console interface for configuring a load balancer, with options for selecting subnets and load balancer types. It includes settings for application, classic, and network load balancers, as well as dedicated or shared configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864931/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-load-balancer-configuration-console.jpg)
+![The image shows an AWS console interface for configuring a load balancer, with options for selecting subnets and load balancer types. It includes settings for application, classic, and network load balancers, as well as dedicated or shared configurations.](https://kodekloud.com/kk-media/image/upload/v1752864931/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-load-balancer-configuration-console.jpg)
 
-![The image shows an AWS Elastic Beanstalk configuration page for setting up a load balancer, with options for selecting the load balancer type and configuring listeners.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864932/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-load-balancer-config.jpg)
+![The image shows an AWS Elastic Beanstalk configuration page for setting up a load balancer, with options for selecting the load balancer type and configuring listeners.](https://kodekloud.com/kk-media/image/upload/v1752864932/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-load-balancer-config.jpg)
 
 ## 9. Monitoring and Deployment Settings
 
@@ -102,30 +102,30 @@ Head to the monitoring section and adjust settings based on your requirements:
 * For this demo, the default configuration is retained, and managed updates are disabled.
 * Configure email notifications and set deployment policies, such as choosing a rolling update to minimize user impact during code deployment.
 
-![The image shows a configuration page from the AWS Elastic Beanstalk console, specifically for setting up updates, monitoring, and logging options. It includes settings for health reporting, CloudWatch custom metrics, and health monitoring rule customization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864933/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-configuration-settings.jpg)
+![The image shows a configuration page from the AWS Elastic Beanstalk console, specifically for setting up updates, monitoring, and logging options. It includes settings for health reporting, CloudWatch custom metrics, and health monitoring rule customization.](https://kodekloud.com/kk-media/image/upload/v1752864933/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-configuration-settings.jpg)
 
-![The image shows a section of the AWS Elastic Beanstalk console, specifically the settings for email notifications and rolling updates and deployments. It includes options for deployment policy and configuration updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864934/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-email-settings.jpg)
+![The image shows a section of the AWS Elastic Beanstalk console, specifically the settings for email notifications and rolling updates and deployments. It includes options for deployment policy and configuration updates.](https://kodekloud.com/kk-media/image/upload/v1752864934/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-email-settings.jpg)
 
 Review your configurations, and once you’re satisfied, submit the settings. Elastic Beanstalk will provision the environment and deploy your application, a process that may take a few minutes.
 
-![The image shows an AWS Elastic Beanstalk review page for configuring a Node.js application environment. It includes details about the environment, service access, and other setup steps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864936/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-nodejs-setup.jpg)
+![The image shows an AWS Elastic Beanstalk review page for configuring a Node.js application environment. It includes details about the environment, service access, and other setup steps.](https://kodekloud.com/kk-media/image/upload/v1752864936/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-nodejs-setup.jpg)
 
 ## 10. Verifying the Deployment
 
 After the environment shows a successful deployment, click the provided domain name to access your application. You should see that version 1.0.0 of your application is running.
 
-![The image shows an AWS Elastic Beanstalk dashboard for a Node.js application environment, indicating a successful launch with a green health status and platform details. It also displays recent event logs related to the environment's deployment and status updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864937/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-nodejs-dashboard.jpg)
+![The image shows an AWS Elastic Beanstalk dashboard for a Node.js application environment, indicating a successful launch with a green health status and platform details. It also displays recent event logs related to the environment's deployment and status updates.](https://kodekloud.com/kk-media/image/upload/v1752864937/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-nodejs-dashboard.jpg)
 
 For further verification, navigate to the EC2 console:
 
 * Under Instances, locate the running Node.js app environment instance (e.g., "Nodejs-app-env-prod").
 * The load balancer and its forwarding rules, along with target groups, are also visible in the console.
 
-![The image shows an AWS EC2 console with a list of instances, where one instance named "Nodejs-app-env-prod" is running, and others are terminated. The details of the running instance are displayed below.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864938/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-ec2-console-nodejs-instance.jpg)
+![The image shows an AWS EC2 console with a list of instances, where one instance named "Nodejs-app-env-prod" is running, and others are terminated. The details of the running instance are displayed below.](https://kodekloud.com/kk-media/image/upload/v1752864938/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-ec2-console-nodejs-instance.jpg)
 
-![The image shows an AWS EC2 console interface displaying details of a load balancer, including its name, state, VPC ID, availability zones, and basic configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864940/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-ec2-load-balancer-details.jpg)
+![The image shows an AWS EC2 console interface displaying details of a load balancer, including its name, state, VPC ID, availability zones, and basic configuration.](https://kodekloud.com/kk-media/image/upload/v1752864940/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-ec2-load-balancer-details.jpg)
 
-![The image shows an AWS EC2 console interface displaying details of a target group configuration, including protocol, port, and VPC information. The sidebar lists various AWS services and features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864941/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-ec2-target-group-configuration.jpg)
+![The image shows an AWS EC2 console interface displaying details of a target group configuration, including protocol, port, and VPC information. The sidebar lists various AWS services and features.](https://kodekloud.com/kk-media/image/upload/v1752864941/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-ec2-target-group-configuration.jpg)
 
 ## 11. Updating the Application
 
@@ -168,11 +168,11 @@ Server is running on port 3000
 
 After confirming the changes locally, create a new ZIP archive (e.g., "EB demo-v2.zip") that includes all updated source files. Upload this new package, assign it the version label "1.0.1," and choose your deployment policy. The default rolling update method minimizes downtime by gradually updating instances.
 
-![The image shows an AWS Elastic Beanstalk interface for uploading and deploying an application. It includes options for selecting a file, setting a version label, and choosing deployment preferences.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864942/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-deployment-interface.jpg)
+![The image shows an AWS Elastic Beanstalk interface for uploading and deploying an application. It includes options for selecting a file, setting a version label, and choosing deployment preferences.](https://kodekloud.com/kk-media/image/upload/v1752864942/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-deployment-interface.jpg)
 
 Click **Deploy** and wait a few minutes for the update to complete. Once finished, verify the running version on the dashboard to ensure that version "1.0.1" of your application is active.
 
-![The image shows an AWS Elastic Beanstalk dashboard for a Node.js application environment. It indicates a successful deployment with a green health status and details about the platform and running version.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864944/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-nodejs-dashboard-2.jpg)
+![The image shows an AWS Elastic Beanstalk dashboard for a Node.js application environment. It indicates a successful deployment with a green health status and details about the platform and running version.](https://kodekloud.com/kk-media/image/upload/v1752864944/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk-Demo/aws-elastic-beanstalk-nodejs-dashboard-2.jpg)
 
 ## Conclusion
 

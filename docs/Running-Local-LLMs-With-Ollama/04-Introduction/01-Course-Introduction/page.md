@@ -12,9 +12,7 @@ Welcome to **Running Local LLMs with Ollama**. I’m Arsh Sharma, and in this co
 
 Let’s take a look at what’s ahead:
 
-<Frame>
-  ![The image shows a person wearing a "KodeKloud" t-shirt next to a presentation slide titled "Running Local LLMs with Ollama," which includes topics like getting started, building AI applications, and customizing models.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883737/notes-assets/images/Running-Local-LLMs-With-Ollama-Course-Introduction/kodekloud-running-local-llms-ollama.jpg)
-</Frame>
+![The image shows a person wearing a "KodeKloud" t-shirt next to a presentation slide titled "Running Local LLMs with Ollama," which includes topics like getting started, building AI applications, and customizing models.](https://kodekloud.com/kk-media/image/upload/v1752883737/notes-assets/images/Running-Local-LLMs-With-Ollama-Course-Introduction/kodekloud-running-local-llms-ollama.jpg)
 
 | Section                               | Topics Covered                                                                                     |
 | ------------------------------------- | -------------------------------------------------------------------------------------------------- |
@@ -34,9 +32,7 @@ In this module, you will:
 * Explore essential commands to list, pull, and inspect models
 * Leverage community-driven templates to spin up a ChatGPT-style front end
 
-<Callout icon="lightbulb">
-  Ensure you have at least 8 GB of RAM, 20 GB of free disk space, and a modern x86\_64 or ARM64 processor. Familiarity with the command line is recommended.
-</Callout>
+> **lightbulb** Ensure you have at least 8 GB of RAM, 20 GB of free disk space, and a modern x86\_64 or ARM64 processor. Familiarity with the command line is recommended.
 
 ***
 
@@ -71,6 +67,4 @@ Tailor your language models to specific tasks by adjusting parameters and traini
 
 Let’s dive in and unlock the full potential of AI with Ollama!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/2673f18a-712c-4651-a67a-e22a394d5302/lesson/6bdc7107-02a3-428f-a0d7-8c866493aa1d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/2673f18a-712c-4651-a67a-e22a394d5302/lesson/6bdc7107-02a3-428f-a0d7-8c866493aa1d)

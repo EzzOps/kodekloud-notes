@@ -12,9 +12,7 @@ In this hands-on lab, you'll learn how to enable and configure the Vault Transit
 * Rewrapping ciphertext after key rotation
 * Enforcing a minimum decryption version
 
-<Callout icon="lightbulb">
-  This demo uses a Vault development server for simplicity. Do **not** use a dev server in production workloads.
-</Callout>
+> **lightbulb** This demo uses a Vault development server for simplicity. Do **not** use a dev server in production workloads.
 
 ***
 
@@ -190,13 +188,11 @@ vault read transit/keys/training
 |          latest\_version | 3                 |
 |                     keys | map\[1:… 2:… 3:…] |
 
-<Callout icon="triangle-alert">
-  After setting `min_decryption_version=3`, any attempt to decrypt version 2 will fail with:
+> **triangle-alert** After setting `min_decryption_version=3`, any attempt to decrypt version 2 will fail with:
 
   ```text theme={null}
   Error writing data to transit/decrypt/training: ... ciphertext version is disallowed by policy
   ```
-</Callout>
 
 ***
 
@@ -206,8 +202,6 @@ vault read transit/keys/training
 * [Vault CLI Reference](https://www.vaultproject.io/docs/commands)
 * [Base64 Encoding Guide](https://en.wikipedia.org/wiki/Base64)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/70c7da67-c9a5-429b-abe5-c00ad7526ccc" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/70c7da67-c9a5-429b-abe5-c00ad7526ccc)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/30ce1064-55d2-4aa3-af73-10e6a8882078" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/30ce1064-55d2-4aa3-af73-10e6a8882078)

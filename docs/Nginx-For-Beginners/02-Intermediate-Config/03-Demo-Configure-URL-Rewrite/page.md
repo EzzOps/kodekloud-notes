@@ -35,9 +35,7 @@ With port 443 allowed and NGINX serving your TLS server block, visiting `https:/
 
 If a user visits `http://diner.com/some/path`, the `return 301 https://$host$request_uri;` will redirect them to `https://diner.com/some/path`, preserving the full path and query string.
 
-<Callout icon="warning">
-  Make sure the TLS certificate and key are valid for the `server_name` you use. An invalid certificate will produce browser warnings even if the redirect is correct.
-</Callout>
+> **warning** Make sure the TLS certificate and key are valid for the `server_name` you use. An invalid certificate will produce browser warnings even if the redirect is correct.
 
 ## Quick checklist
 
@@ -63,9 +61,7 @@ Further reading:
 * Let's Encrypt: [https://letsencrypt.org/](https://letsencrypt.org/)
 * curl: [https://curl.se/](https://curl.se/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/4335a4b8-d404-4150-9001-09851f436e4a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/4335a4b8-d404-4150-9001-09851f436e4a)
 
 
 # Demo Configure URL Rewrite

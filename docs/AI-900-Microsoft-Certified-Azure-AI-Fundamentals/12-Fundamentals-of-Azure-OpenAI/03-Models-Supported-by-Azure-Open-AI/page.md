@@ -19,7 +19,7 @@ In this example, the model not only produces a functional code snippet but also 
 
 Azure OpenAI also excels in image generation through models like DALL·E. These models generate and edit images based on textual prompts. For example, if you request an image of a "singing ant," DALL·E generates a creative interpretation of the prompt. Additionally, it supports image editing, allowing adjustments like color changes, additions, or stylistic modifications, and can produce multiple variations of a given image.
 
-![The image shows two variations of an animated ant singing into a microphone on stage, with a colorful audience of ants in the background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856978/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-OpenAI-Capabilities/animated-ant-singing-microphone.jpg)
+![The image shows two variations of an animated ant singing into a microphone on stage, with a colorful audience of ants in the background.](https://kodekloud.com/kk-media/image/upload/v1752856978/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-OpenAI-Capabilities/animated-ant-singing-microphone.jpg)
 
 These robust image generation features are particularly useful in advertising, content creation, and design by delivering quick, flexible, and unique visual outputs based on your specifications.
 
@@ -33,13 +33,13 @@ Once you have explored the features and capabilities, the next step is deploying
 
 Begin by creating an AI hub and project within Azure AI Studio. This centralized area will help you manage all your AI resources conveniently.
 
-![The image shows the Azure AI Studio interface, displaying an overview of AI hub resources connected to an Azure AI services resource, with options to create a new hub and view resource configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856980/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-OpenAI-Capabilities/azure-ai-studio-overview-hub-resources.jpg)
+![The image shows the Azure AI Studio interface, displaying an overview of AI hub resources connected to an Azure AI services resource, with options to create a new hub and view resource configurations.](https://kodekloud.com/kk-media/image/upload/v1752856980/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-OpenAI-Capabilities/azure-ai-studio-overview-hub-resources.jpg)
 
 ### Browsing the Model Catalog
 
 Within the model catalog, you can explore various models including GPT, OpenAI, and Whisper models among others. This catalog simplifies selecting the ideal model to match your needs.
 
-![The image shows a model catalog interface from Azure AI Studio, displaying various AI models for tasks like chat completion, speech recognition, and text-to-image generation. It includes announcements about new models and features, with options to filter and view different models.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856981/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-OpenAI-Capabilities/azure-ai-studio-model-catalog.jpg)
+![The image shows a model catalog interface from Azure AI Studio, displaying various AI models for tasks like chat completion, speech recognition, and text-to-image generation. It includes announcements about new models and features, with options to filter and view different models.](https://kodekloud.com/kk-media/image/upload/v1752856981/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-OpenAI-Capabilities/azure-ai-studio-model-catalog.jpg)
 
 ### Deploying a GPT Model
 
@@ -47,11 +47,11 @@ To deploy a model, navigate to the deployments section and select your desired b
 
 After deployment, click "Open in Playground" to interact with the model in a chat-based interface. This setup lets you send prompts, draft emails, and handle queries with ease.
 
-![The image shows a screenshot of the Azure AI Studio interface, displaying deployment details for a GPT-4 model, including provisioning state, endpoint information, and rate limits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856982/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-OpenAI-Capabilities/azure-ai-studio-gpt4-deployment.jpg)
+![The image shows a screenshot of the Azure AI Studio interface, displaying deployment details for a GPT-4 model, including provisioning state, endpoint information, and rate limits.](https://kodekloud.com/kk-media/image/upload/v1752856982/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-OpenAI-Capabilities/azure-ai-studio-gpt4-deployment.jpg)
 
 Within the playground, you can seamlessly interact with the model. Whether drafting a resignation email or responding to queries, the playground facilitates real-time, intuitive interactions.
 
-![The image shows a screenshot of the Azure AI Studio chat playground interface, where a user is interacting with a chat model to draft a resignation email.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856983/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-OpenAI-Capabilities/azure-ai-studio-chat-playground.jpg)
+![The image shows a screenshot of the Azure AI Studio chat playground interface, where a user is interacting with a chat model to draft a resignation email.](https://kodekloud.com/kk-media/image/upload/v1752856983/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-OpenAI-Capabilities/azure-ai-studio-chat-playground.jpg)
 
 You can deploy and test multiple models directly from the Playground, removing the need for immediate integration into your applications.
 

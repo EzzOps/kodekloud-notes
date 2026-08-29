@@ -2,9 +2,7 @@
 kubectl apply -k k8s/
 ```
 
-<Callout icon="lightbulb">
-  `kubectl apply -k` invokes Kustomize natively—you don’t need the standalone binary.
-</Callout>
+> **lightbulb** `kubectl apply -k` invokes Kustomize natively—you don’t need the standalone binary.
 
 ## When the Resource List Grows
 
@@ -89,9 +87,7 @@ This hierarchical layout keeps the root file concise and scales seamlessly.
 * [kubectl apply](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#apply)
 * [Kubernetes Manifests Guide](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/4b621de0-dbb3-4f3c-a60b-6abfe7ba9e83" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/4b621de0-dbb3-4f3c-a60b-6abfe7ba9e83)
 
 
 # Overlays
@@ -102,9 +98,7 @@ This guide explains how to use Overlays in Kustomize for managing environment-sp
 
 In this guide, you’ll learn how to maintain a shared **base** configuration and apply environment-specific changes using **Overlays** in Kustomize. Overlays let you centralize common resources in a `base/` directory and then customize or extend them for `dev`, `stg`, `prod`, or any other environment.
 
-<Frame>
-  ![The image is a diagram labeled "Overlays" showing a hierarchy with "Env" at the top, branching into "dev," "stg," and "prod" environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880924/notes-assets/images/Kustomize-Overlays/overlays-hierarchy-env-dev-stg-prod.jpg)
-</Frame>
+![The image is a diagram labeled "Overlays" showing a hierarchy with "Env" at the top, branching into "dev," "stg," and "prod" environments.](https://kodekloud.com/kk-media/image/upload/v1752880924/notes-assets/images/Kustomize-Overlays/overlays-hierarchy-env-dev-stg-prod.jpg)
 
 Below is a typical Kustomize directory layout:
 

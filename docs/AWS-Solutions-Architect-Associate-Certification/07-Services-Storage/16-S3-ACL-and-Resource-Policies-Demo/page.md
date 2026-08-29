@@ -16,7 +16,7 @@ The demonstration involves three different user contexts, represented by distinc
 
 Below is the AWS Management Console home page overview:
 
-![The image shows the AWS Management Console home page, featuring sections for recently visited services, AWS Health, cost and usage, and a welcome section with links to getting started, training, and new features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866000/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies-Demo/aws-management-console-home-page.jpg)
+![The image shows the AWS Management Console home page, featuring sections for recently visited services, AWS Health, cost and usage, and a welcome section with links to getting started, training, and new features.](https://kodekloud.com/kk-media/image/upload/v1752866000/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies-Demo/aws-management-console-home-page.jpg)
 
 ***
 
@@ -29,17 +29,17 @@ Using Account One, User One (blue tab), we create a demo S3 bucket with default 
 1. **Creating the Bucket**:\
    A zoomed view of the bucket creation screen illustrates options for bucket name, region, object ownership, and public access settings.
 
-![The image shows the AWS Management Console interface for creating an S3 bucket, with options for setting the bucket name, region, object ownership, and public access settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866001/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies-Demo/aws-management-console-s3-bucket-creation.jpg)
+![The image shows the AWS Management Console interface for creating an S3 bucket, with options for setting the bucket name, region, object ownership, and public access settings.](https://kodekloud.com/kk-media/image/upload/v1752866001/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies-Demo/aws-management-console-s3-bucket-creation.jpg)
 
 2. **Post-creation and Upload**:\
    After the bucket is created, you open it to upload files. The following image confirms the successful creation of a bucket named "kk-resource-policies" in the US East (N. Virginia) region, with the uploaded objects remaining non-public.
 
-![The image shows an Amazon S3 console with a notification of a successfully created bucket named "kk-resource-policies" in the US East (N. Virginia) region. The bucket and objects are not public.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866002/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-kk-resource-policies.jpg)
+![The image shows an Amazon S3 console with a notification of a successfully created bucket named "kk-resource-policies" in the US East (N. Virginia) region. The bucket and objects are not public.](https://kodekloud.com/kk-media/image/upload/v1752866002/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-kk-resource-policies.jpg)
 
 3. **Verifying Access**:\
    When accessing an object while authenticated as User One, permission is granted. However, accessing the object URL publicly results in an "Access Denied" error.
 
-![The image shows an Amazon S3 bucket interface with a list of files and folders, including text files and folders named "logs," "media," and "traces." The interface displays details like file type, last modified date, and storage class.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866004/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-interface-files.jpg)
+![The image shows an Amazon S3 bucket interface with a list of files and folders, including text files and folders named "logs," "media," and "traces." The interface displays details like file type, last modified date, and storage class.](https://kodekloud.com/kk-media/image/upload/v1752866004/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-interface-files.jpg)
 
 ***
 
@@ -66,7 +66,7 @@ Before switching to User Two (green tab), we review the IAM policy assigned to U
 
 With this policy, User Two can view the bucket in the S3 console but cannot open objects directly. Trying to open a file (e.g., file1.txt) will trigger an "Access Denied" error.
 
-![The image shows an Amazon S3 console with a list of buckets. One bucket named "kk-resource-policies" is displayed with "Insufficient permissions" noted under the access column.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866004/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies-Demo/amazon-s3-console-bucket-permissions.jpg)
+![The image shows an Amazon S3 console with a list of buckets. One bucket named "kk-resource-policies" is displayed with "Insufficient permissions" noted under the access column.](https://kodekloud.com/kk-media/image/upload/v1752866004/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies-Demo/amazon-s3-console-bucket-permissions.jpg)
 
 ***
 
@@ -123,7 +123,7 @@ Returning to User One (blue tab), we now create a resource policy that permits U
 
 For additional reference on S3 actions and resource policy construction, refer to the AWS S3 bucket policy documentation:
 
-![The image shows a webpage from the AWS documentation about Amazon S3 bucket policies, detailing how to secure access to objects in buckets and providing examples of typical use cases. It includes a section on requiring encryption for objects written to a bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866006/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies-Demo/aws-s3-bucket-policies-documentation.jpg)
+![The image shows a webpage from the AWS documentation about Amazon S3 bucket policies, detailing how to secure access to objects in buckets and providing examples of typical use cases. It includes a section on requiring encryption for objects written to a bucket.](https://kodekloud.com/kk-media/image/upload/v1752866006/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies-Demo/aws-s3-bucket-policies-documentation.jpg)
 
 ***
 
@@ -230,7 +230,7 @@ To demonstrate controlled public access, a policy statement is added that allows
 
 After the policy update, objects stored in the "media" folder become publicly accessible via their URL, while objects outside this folder continue to be restricted.
 
-![The image shows an Amazon S3 console screen displaying the permissions settings for a bucket named "kk-resource-policies," which is publicly accessible. The "Block all public access" setting is turned off, and a bucket policy is visible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866007/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-permissions-kk-resource-policies.jpg)
+![The image shows an Amazon S3 console screen displaying the permissions settings for a bucket named "kk-resource-policies," which is publicly accessible. The "Block all public access" setting is turned off, and a bucket policy is visible.](https://kodekloud.com/kk-media/image/upload/v1752866007/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-ACL-and-Resource-Policies-Demo/amazon-s3-bucket-permissions-kk-resource-policies.jpg)
 
 ***
 

@@ -34,9 +34,7 @@ Links and references
 
 By following this minimal pattern you can build robust, maintainable agent workflows: make state explicit, keep node logic isolated, and compose nodes into clear, testable graphs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/9ad1c023-6ddf-41fa-9043-b5ed2c4e66d6/lesson/5a345f91-5499-43ab-b22a-46740aaa0260" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/9ad1c023-6ddf-41fa-9043-b5ed2c4e66d6/lesson/5a345f91-5499-43ab-b22a-46740aaa0260)
 
 
 # Defining the Graph State Schema

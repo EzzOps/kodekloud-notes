@@ -20,9 +20,7 @@ NSG rules are built around several key attributes:
 • **Action**\
  Specifies whether the rule will allow or deny traffic.
 
-<Frame>
-  ![The image is a graphic titled "Explore Network Security Groups (NSG)" featuring four colorful icons labeled Service, Priority, Port Range, and Action.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882089/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-Network-Security-Groups/explore-network-security-groups-icons.jpg)
-</Frame>
+![The image is a graphic titled "Explore Network Security Groups (NSG)" featuring four colorful icons labeled Service, Priority, Port Range, and Action.](https://kodekloud.com/kk-media/image/upload/v1752882089/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-Network-Security-Groups/explore-network-security-groups-icons.jpg)
 
 By leveraging these attributes, network administrators can craft a robust set of rules that ensure only permitted traffic reaches Azure resources while blocking undesired traffic.
 
@@ -32,9 +30,7 @@ By leveraging these attributes, network administrators can craft a robust set of
 
 Consider a virtual network containing one or more subnets. You can associate an NSG either with a subnet or directly with a virtual machine’s network interface (NIC). For instance, if you have a web server running on a VM within a subnet and you need to allow HTTP traffic (port 80), you would create an NSG rule permitting that port. When traffic flows into the network, the NSG first evaluates the subnet-level rules; if the traffic is allowed, it then checks the NIC-level rules. Only if both NSGs grant access will the web server receive the request. Conversely, if either NSG denies traffic, the request is blocked before reaching the VM.
 
-<Frame>
-  ![The image illustrates the deployment of Network Security Groups (NSG) within a subnet, showing HTTP traffic flow through two NSGs to a computer system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882090/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-Network-Security-Groups/nsg-deployment-http-traffic-diagram.jpg)
-</Frame>
+![The image illustrates the deployment of Network Security Groups (NSG) within a subnet, showing HTTP traffic flow through two NSGs to a computer system.](https://kodekloud.com/kk-media/image/upload/v1752882090/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-Network-Security-Groups/nsg-deployment-http-traffic-diagram.jpg)
 
 For outbound traffic, the process mirrors inbound evaluation. Outbound traffic from a VM first encounters the NIC-level NSG before being assessed by the subnet-level NSG. Enforcing NSGs at both levels is optional; you might apply a common policy at the subnet level and optionally override with more specific policies at the NIC level.
 
@@ -68,21 +64,15 @@ Creating workload-a-vm-1
 
 After deployment, you can view the virtual machines in the Azure portal. In this example, four VMs are deployed: A1, A2, B1, and B2.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying a list of virtual machines, including details like name, type, subscription, location, status, operating system, size, and public IP address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882091/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-Network-Security-Groups/azure-portal-virtual-machines-list.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying a list of virtual machines, including details like name, type, subscription, location, status, operating system, size, and public IP address.](https://kodekloud.com/kk-media/image/upload/v1752882091/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-Network-Security-Groups/azure-portal-virtual-machines-list.jpg)
 
 Additionally, you can review the connected devices within the virtual network:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying a list of connected devices within a virtual network, including details like device names, types, IP addresses, and subnets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882092/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-Network-Security-Groups/azure-portal-connected-devices-list.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying a list of connected devices within a virtual network, including details like device names, types, IP addresses, and subnets.](https://kodekloud.com/kk-media/image/upload/v1752882092/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-Network-Security-Groups/azure-portal-connected-devices-list.jpg)
 
 For deeper insights, inspect the networking settings for a VM (e.g., workload-a-vm-1), which show inbound port rules and associated NSG details:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying the networking settings for a virtual machine named "workload-a-vm-1," including inbound port rules and network security group details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882094/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-Network-Security-Groups/azure-portal-network-settings-workload-a-vm-1.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying the networking settings for a virtual machine named "workload-a-vm-1," including inbound port rules and network security group details.](https://kodekloud.com/kk-media/image/upload/v1752882094/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-Network-Security-Groups/azure-portal-network-settings-workload-a-vm-1.jpg)
 
 ***
 
@@ -124,9 +114,7 @@ root@workload-a-vm-1:/home/kodekloud# echo "From VM-A-1" > /var/www/html/index.h
 
 After configuring the VM, verify the network settings again:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface, specifically the networking settings for a virtual machine named "workload-a-vm-1." It includes options for configuring inbound port rules and setting source IP addresses for network security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882095/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-Network-Security-Groups/azure-portal-network-settings-workload-a-vm-1-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface, specifically the networking settings for a virtual machine named "workload-a-vm-1." It includes options for configuring inbound port rules and setting source IP addresses for network security.](https://kodekloud.com/kk-media/image/upload/v1752882095/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-Network-Security-Groups/azure-portal-network-settings-workload-a-vm-1-2.jpg)
 
 ***
 
@@ -153,9 +141,7 @@ Consider the following scenario to override the default virtual network communic
 
 This scenario demonstrates how an NSG rule with a higher priority (i.e., a lower numerical value) effectively overrides the default rule that permits virtual network communication.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface, specifically the networking settings for a virtual machine named "workload-a-vm-1," with a focus on configuring inbound port rules and service tags.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882096/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-Network-Security-Groups/azure-portal-networking-settings-workload-a-vm-1.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface, specifically the networking settings for a virtual machine named "workload-a-vm-1," with a focus on configuring inbound port rules and service tags.](https://kodekloud.com/kk-media/image/upload/v1752882096/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-Network-Security-Groups/azure-portal-networking-settings-workload-a-vm-1.jpg)
 
 Because inbound traffic first encounters the subnet-level NSG, a custom deny rule at that level (set at priority 100) can block traffic—even if a default allow rule exists at priority 65,000.
 
@@ -165,17 +151,13 @@ Because inbound traffic first encounters the subnet-level NSG, a custom deny rul
 
 To verify the impact of NSG modifications, try updating an inbound rule. For example, change an existing rule to deny SSH (port 22) traffic and apply the updated NSG to the subnet. The image below displays the inbound security rules before and after incorporating a deny rule:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen displaying inbound security rules for a network security group. It lists rules with details such as priority, name, port, protocol, source, destination, and action (allow or deny).](../../../../images/kodekloud.com/kk-media/image/upload/v1752882097/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-Network-Security-Groups/azure-portal-inbound-security-rules.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen displaying inbound security rules for a network security group. It lists rules with details such as priority, name, port, protocol, source, destination, and action (allow or deny).](https://kodekloud.com/kk-media/image/upload/v1752882097/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-Network-Security-Groups/azure-portal-inbound-security-rules.jpg)
 
 After the NSG rule is modified to deny traffic, attempts to initiate an SSH connection or execute `curl` on port 22 (or HTTP traffic) will fail. For example, trying to `curl` workload A’s IP will return no output, and SSH attempts will be reset due to the NSG block.
 
 For added flexibility, you can also configure augmented network security rules. These allow you to combine multiple ports or IP ranges into a single rule using comma-separated values or hyphenated ranges, thereby reducing management complexity.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface with inbound security rules for a network security group. A panel on the right is open for adding a new inbound security rule, specifying source IP addresses, port ranges, and protocol options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882099/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-Network-Security-Groups/azure-portal-inbound-security-rules-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface with inbound security rules for a network security group. A panel on the right is open for adding a new inbound security rule, specifying source IP addresses, port ranges, and protocol options.](https://kodekloud.com/kk-media/image/upload/v1752882099/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-a-Network-Security-Groups/azure-portal-inbound-security-rules-2.jpg)
 
 ***
 
@@ -212,12 +194,8 @@ With NSGs fully configured and thoroughly tested, you have successfully secured 
 
 In the next section, we will explore Application Security Groups (ASGs). ASGs allow you to group similar servers and apply security rules based on these groups rather than using individual IP addresses. This further streamlines network security management in Azure.
 
-<Callout icon="lightbulb">
-  For more information on NSG best practices and advanced configurations, refer to the [Azure Network Security documentation](https://docs.microsoft.com/azure/virtual-network/network-security-groups-overview).
-</Callout>
+> **lightbulb** For more information on NSG best practices and advanced configurations, refer to the [Azure Network Security documentation](https://docs.microsoft.com/azure/virtual-network/network-security-groups-overview).
 
 Happy securing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/0489a935-a4dd-41c6-b5d3-6054c570299b/lesson/33f15c8d-f8a1-47a4-908c-d9208800b689" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/0489a935-a4dd-41c6-b5d3-6054c570299b/lesson/33f15c8d-f8a1-47a4-908c-d9208800b689)

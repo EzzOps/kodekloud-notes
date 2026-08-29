@@ -15,9 +15,7 @@ This practical example demonstrates:
 
 Prerequisites: a working Backstage repository and basic familiarity with React.
 
-<Callout icon="lightbulb">
-  Make sure your development environment can run the Backstage frontend (Node.js, Yarn) and that you understand basic React hooks (`useState`, `useEffect`). This example focuses on frontend plugin development and using Backstage APIs like `useApi` and `fetchApiRef`.
-</Callout>
+> **lightbulb** Make sure your development environment can run the Backstage frontend (Node.js, Yarn) and that you understand basic React hooks (`useState`, `useEffect`). This example focuses on frontend plugin development and using Backstage APIs like `useApi` and `fetchApiRef`.
 
 ***
 
@@ -228,9 +226,7 @@ import { AdviceCardExtension } from '@internal/backstage-plugin-advice';
 </Grid>
 ```
 
-<Callout icon="lightbulb">
-  Important: when referencing JSX tags in MDX text, wrap them in backticks to avoid MDX parsing (for example `AdviceCardExtension`).
-</Callout>
+> **lightbulb** Important: when referencing JSX tags in MDX text, wrap them in backticks to avoid MDX parsing (for example `AdviceCardExtension`).
 
 ***
 
@@ -353,6 +349,4 @@ Links and references
 * [Backstage documentation](https://backstage.io/docs)
 * [Backstage Storybook](https://backstage.io/storybook)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/aad867ea-baf2-4ca7-b722-ad38ea794a7e/lesson/419439c7-526b-47e0-9f68-859ad98331a2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/aad867ea-baf2-4ca7-b722-ad38ea794a7e/lesson/419439c7-526b-47e0-9f68-859ad98331a2)

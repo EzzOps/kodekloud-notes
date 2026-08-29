@@ -85,9 +85,7 @@ Attempting to decrypt version 2 now fails:
 vault write transit/decrypt/training ciphertext="vault:v2:…"
 ```
 
-<Callout icon="triangle-alert">
-  Any ciphertext with a version lower than the `min_decryption_version` will be rejected.
-</Callout>
+> **triangle-alert** Any ciphertext with a version lower than the `min_decryption_version` will be rejected.
 
 Decryption of version 3 still succeeds:
 
@@ -106,11 +104,9 @@ In this lesson, you have:
 
 For more information, visit the [Vault Transit Secrets Engine documentation](https://www.vaultproject.io/docs/secrets/transit).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/73cc37b9-4677-4263-ab67-988cec966042" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/73cc37b9-4677-4263-ab67-988cec966042)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/dc0cb54c-c853-4bdf-819c-83a0a0094bab" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/dc0cb54c-c853-4bdf-819c-83a0a0094bab)
 
 
 # Demo Userpass Auth Method
@@ -380,8 +376,6 @@ You’ve successfully:
 
 For more on Vault auth methods and best practices, visit the [HashiCorp Vault Documentation](https://www.vaultproject.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/0962b0e6-b90b-4f19-91d6-b876d7a9f8cb" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/0962b0e6-b90b-4f19-91d6-b876d7a9f8cb)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/2019f26f-c69d-43e5-bce8-5a4d70ef4040" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/2019f26f-c69d-43e5-bce8-5a4d70ef4040)

@@ -25,7 +25,7 @@ AWS Direct Connect provides a private, high-bandwidth network link between your 
 
 > **lightbulb** Ensure your on-premises edge device supports the desired port speed and BGP configuration.
 
-![The image illustrates a Direct Connect Architecture, showing the connection flow from an on-premise network through a Direct Connect location to an AWS Cloud Virtual Private Cloud (VPC) with private and public services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863419/notes-assets/images/AWS-Networking-Fundamentals-Direct-Connect/direct-connect-architecture-aws-vpc.jpg)
+![The image illustrates a Direct Connect Architecture, showing the connection flow from an on-premise network through a Direct Connect location to an AWS Cloud Virtual Private Cloud (VPC) with private and public services.](https://kodekloud.com/kk-media/image/upload/v1752863419/notes-assets/images/AWS-Networking-Fundamentals-Direct-Connect/direct-connect-architecture-aws-vpc.jpg)
 
 ## Virtual Interfaces (VIFs)
 
@@ -49,7 +49,7 @@ With AWS Direct Connect, you incur two main charges:
 
 > **triangle-alert** Data transfer rates vary by AWS Region. Always review the [AWS Direct Connect pricing](https://aws.amazon.com/directconnect/pricing/) page for the latest details.
 
-![The image is a summary slide highlighting three points about a service that directly links on-premises with AWS, offers greater throughput and security than VPN, and charges based on port hour and outbound data transfer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863420/notes-assets/images/AWS-Networking-Fundamentals-Direct-Connect/aws-on-premises-service-summary-slide.jpg)
+![The image is a summary slide highlighting three points about a service that directly links on-premises with AWS, offers greater throughput and security than VPN, and charges based on port hour and outbound data transfer.](https://kodekloud.com/kk-media/image/upload/v1752863420/notes-assets/images/AWS-Networking-Fundamentals-Direct-Connect/aws-on-premises-service-summary-slide.jpg)
 
 ## Links and References
 

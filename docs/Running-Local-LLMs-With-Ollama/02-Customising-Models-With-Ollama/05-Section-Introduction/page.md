@@ -2,9 +2,7 @@
 PARAMETER temperature 0.2
 ```
 
-<Callout icon="triangle-alert">
-  Setting `temperature` too high (e.g., ≥0.9) can produce overly creative or inconsistent responses.
-</Callout>
+> **triangle-alert** Setting `temperature` too high (e.g., ≥0.9) can produce overly creative or inconsistent responses.
 
 ### 3. SYSTEM
 
@@ -18,9 +16,7 @@ SYSTEM "You are a financial assistant fluent in INR notation."
 
 Provide dialogue history to establish context:
 
-<Frame>
-  ![The image shows a text exchange between a user and an assistant discussing fictional locations, confirming Gotham City is in New Jersey and Wayne Manor is in Gotham City, but Metropolis is not in New Jersey.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883684/notes-assets/images/Running-Local-LLMs-With-Ollama-Modelfile-Introduction/gotham-city-metropolis-discussion.jpg)
-</Frame>
+![The image shows a text exchange between a user and an assistant discussing fictional locations, confirming Gotham City is in New Jersey and Wayne Manor is in Gotham City, but Metropolis is not in New Jersey.](https://kodekloud.com/kk-media/image/upload/v1752883684/notes-assets/images/Running-Local-LLMs-With-Ollama-Modelfile-Introduction/gotham-city-metropolis-discussion.jpg)
 
 ```modelfile theme={null}
 MESSAGE user "Where is Wayne Manor?"
@@ -34,9 +30,7 @@ MESSAGE assistant "Wayne Manor is in Gotham City, New Jersey."
 You now know how to build a Modelfile with `FROM`, `PARAMETER`, `SYSTEM`, and `MESSAGE` instructions.\
 For a comprehensive list of Modelfile directives, see the [Ollama Modelfile documentation](https://github.com/ollama/ollama#modelfile).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/5785c7c7-5088-4ac3-b82f-8835e72b66d0/lesson/551844ed-0abb-4927-b877-12471ff771fc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/5785c7c7-5088-4ac3-b82f-8835e72b66d0/lesson/551844ed-0abb-4927-b877-12471ff771fc)
 
 
 # Section Introduction
@@ -55,9 +49,7 @@ A Modelfile is a configuration file, conceptually similar to a [Dockerfile](http
 * Custom layers or modifications
 * Dependencies and environment setup
 
-<Callout icon="lightbulb">
-  If you’re familiar with Docker, you’ll recognize the same concepts—base images, commands, and dependency management—when working with a Modelfile.
-</Callout>
+> **lightbulb** If you’re familiar with Docker, you’ll recognize the same concepts—base images, commands, and dependency management—when working with a Modelfile.
 
 ## Why Customize Models?
 
@@ -90,9 +82,7 @@ ollama push your-custom-model
 ollama pull your-custom-model
 ```
 
-<Callout icon="triangle-alert">
-  Before publishing, make sure you’re authenticated with the Ollama CLI. Run `ollama login` to set up credentials.
-</Callout>
+> **triangle-alert** Before publishing, make sure you’re authenticated with the Ollama CLI. Run `ollama login` to set up credentials.
 
 ## Learning Outcomes
 
@@ -110,6 +100,4 @@ Let’s get started!
 * [Docker Official Site](https://www.docker.com/)
 * [Model Customization Best Practices](https://ollama.com/docs/customization)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/5785c7c7-5088-4ac3-b82f-8835e72b66d0/lesson/6443f852-536d-4209-af13-555954dc8f1a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/5785c7c7-5088-4ac3-b82f-8835e72b66d0/lesson/6443f852-536d-4209-af13-555954dc8f1a)

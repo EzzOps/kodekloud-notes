@@ -23,7 +23,7 @@ While the foundational level no longer demands prior cloud experience, it is rec
 
 The AWS Solutions Architect Associate certification emphasizes a solid understanding of AWS services without requiring coding or operational tasks. Its primary focus is on evaluating how solutions can enhance security, optimize performance, and improve cost-efficiency within AWS environments.
 
-![The image is an informational slide about AWS SAA Certification, highlighting its benefits and requirements. It includes a logo for the AWS Certified Solutions Architect - Associate certification.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864640/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Why-AWS-Solutions-Architecture-Certification-and-what-is-a-solutions-architect/aws-saa-certification-benefits-requirements.jpg)
+![The image is an informational slide about AWS SAA Certification, highlighting its benefits and requirements. It includes a logo for the AWS Certified Solutions Architect - Associate certification.](https://kodekloud.com/kk-media/image/upload/v1752864640/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Why-AWS-Solutions-Architecture-Certification-and-what-is-a-solutions-architect/aws-saa-certification-benefits-requirements.jpg)
 
 This certification is uniquely designed to ensure that you can design solutions which integrate AWS services effectively. It is important to note that the Solutions Architect Associate role is distinct from positions such as Enterprise Architect or other specialized architect roles.
 
@@ -31,9 +31,9 @@ This certification is uniquely designed to ensure that you can design solutions 
 
 If you are seeking comprehensive exposure to core AWS services—whether you work in development, operations, machine learning, or security—this certification is an excellent starting point. It covers a broad spectrum of topics including compute, networking, storage, databases, deployment management, and migration services. Mastery of the AWS Well-Architected Framework and a solid understanding of the AWS global infrastructure are key to your success.
 
-![The image is a slide titled "Part One – Why AWS SAA Certification?" It explains who should take the AWS Certified Solutions Architect - Associate exam, highlighting experience in AWS technology, on-premises IT, and other cloud services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864641/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Why-AWS-Solutions-Architecture-Certification-and-what-is-a-solutions-architect/aws-saa-certification-part-one.jpg)
+![The image is a slide titled "Part One – Why AWS SAA Certification?" It explains who should take the AWS Certified Solutions Architect - Associate exam, highlighting experience in AWS technology, on-premises IT, and other cloud services.](https://kodekloud.com/kk-media/image/upload/v1752864641/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Why-AWS-Solutions-Architecture-Certification-and-what-is-a-solutions-architect/aws-saa-certification-part-one.jpg)
 
-![The image is a slide titled "Part One – Why AWS SAA Certification?" It outlines the skills and knowledge gained from the certification, including AWS services, security, and technical requirements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864642/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Why-AWS-Solutions-Architecture-Certification-and-what-is-a-solutions-architect/aws-saa-certification-overview-slide.jpg)
+![The image is a slide titled "Part One – Why AWS SAA Certification?" It outlines the skills and knowledge gained from the certification, including AWS services, security, and technical requirements.](https://kodekloud.com/kk-media/image/upload/v1752864642/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Why-AWS-Solutions-Architecture-Certification-and-what-is-a-solutions-architect/aws-saa-certification-overview-slide.jpg)
 
 ## What Is a Solutions Architect?
 
@@ -46,7 +46,7 @@ In contrast:
 
 Solutions Architects work closely with both roles to ensure that technical designs align with broader business objectives.
 
-![The image is a diagram explaining the roles of different types of architects: Solutions Architect, Enterprise Architect, and Application Architect, highlighting their responsibilities and focus areas.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864646/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Why-AWS-Solutions-Architecture-Certification-and-what-is-a-solutions-architect/architects-roles-responsibilities-diagram.jpg)
+![The image is a diagram explaining the roles of different types of architects: Solutions Architect, Enterprise Architect, and Application Architect, highlighting their responsibilities and focus areas.](https://kodekloud.com/kk-media/image/upload/v1752864646/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Why-AWS-Solutions-Architecture-Certification-and-what-is-a-solutions-architect/architects-roles-responsibilities-diagram.jpg)
 
 ## Exam Format and Example Questions
 
@@ -65,7 +65,7 @@ To meet these requirements:
 
 Using an Elastic IP or placing a NAT instance in a private subnet would not fulfill the requirements. The correct answers are options A and B.
 
-![The image contains a sample exam question for the AWS Certified Solutions Architect - Associate (SAA-C03) exam, focusing on configuring EC2 instances in a VPC. It includes multiple-choice options related to network configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864647/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Why-AWS-Solutions-Architecture-Certification-and-what-is-a-solutions-architect/aws-saa-c03-ec2-vpc-question.jpg)
+![The image contains a sample exam question for the AWS Certified Solutions Architect - Associate (SAA-C03) exam, focusing on configuring EC2 instances in a VPC. It includes multiple-choice options related to network configuration.](https://kodekloud.com/kk-media/image/upload/v1752864647/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Why-AWS-Solutions-Architecture-Certification-and-what-is-a-solutions-architect/aws-saa-c03-ec2-vpc-question.jpg)
 
 ### Example Question 2
 
@@ -73,7 +73,7 @@ A Solutions Architect is tasked with devising a cost-saving strategy for Amazon 
 
 Hibernation is the feature that preserves instance memory during shutdowns. The recommended solution is to use instance hibernation, making option C the correct answer.
 
-![The image shows a sample exam question about designing a cost-saving solution for Amazon EC2 instances during a company shutdown, with multiple-choice options for the recommended approach.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864648/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Why-AWS-Solutions-Architecture-Certification-and-what-is-a-solutions-architect/amazon-ec2-cost-saving-solution.jpg)
+![The image shows a sample exam question about designing a cost-saving solution for Amazon EC2 instances during a company shutdown, with multiple-choice options for the recommended approach.](https://kodekloud.com/kk-media/image/upload/v1752864648/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Why-AWS-Solutions-Architecture-Certification-and-what-is-a-solutions-architect/amazon-ec2-cost-saving-solution.jpg)
 
 ### Example Question 3
 
@@ -91,7 +91,7 @@ An analytics company is setting up a web analytics service that requires each us
 
 The recommended approach is to provide users with a pre-signed URL. This URL includes authentication tokens with an expiration timer, allowing secure, authenticated GET requests without additional configuration.
 
-![The image shows a slide titled "Part Three" with an example exam question about configuring an Amazon S3 bucket for a web analytics service. It includes multiple-choice options related to enabling CORS, versioning, signed URLs, and bucket policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864649/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Why-AWS-Solutions-Architecture-Certification-and-what-is-a-solutions-architect/part-three-amazon-s3-exam-question.jpg)
+![The image shows a slide titled "Part Three" with an example exam question about configuring an Amazon S3 bucket for a web analytics service. It includes multiple-choice options related to enabling CORS, versioning, signed URLs, and bucket policies.](https://kodekloud.com/kk-media/image/upload/v1752864649/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Why-AWS-Solutions-Architecture-Certification-and-what-is-a-solutions-architect/part-three-amazon-s3-exam-question.jpg)
 
 ## Summary
 
@@ -103,7 +103,7 @@ Key exam topics include:
 * Exploring connectivity options like VPC peering and transit gateways
 * Implementing best practices across various AWS services
 
-![The image is a summary slide outlining key points about an AWS certification course, including its popularity, preparation for the AWS Solutions Architect Associates Exam, the role of Solutions Architects, and the nature of the exam.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864650/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Why-AWS-Solutions-Architecture-Certification-and-what-is-a-solutions-architect/aws-certification-course-summary.jpg)
+![The image is a summary slide outlining key points about an AWS certification course, including its popularity, preparation for the AWS Solutions Architect Associates Exam, the role of Solutions Architects, and the nature of the exam.](https://kodekloud.com/kk-media/image/upload/v1752864650/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Why-AWS-Solutions-Architecture-Certification-and-what-is-a-solutions-architect/aws-certification-course-summary.jpg)
 
 By mastering these concepts, you will be better prepared to succeed on the AWS Solutions Architect Associate exam and excel as a Solutions Architect—the technical professional who bridges enterprise strategy with detailed system implementation.
 

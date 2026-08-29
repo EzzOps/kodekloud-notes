@@ -25,6 +25,6 @@ The EC2 launch type gives you full control over your compute infrastructure. Wit
 
 > **lightbulb** When using the EC2 launch type, ECS simplifies container lifecycle management while you maintain full control over the infrastructure, allowing customized configuration and security management.
 
-![The image is a diagram explaining the management of EC2 instances within an ECS cluster, highlighting the need to manage infrastructure while ECS handles containers. It emphasizes full control over the infrastructure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869152/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-ECS-Infrastructure-and-launch/ec2-instances-ecs-cluster-diagram.jpg)
+![The image is a diagram explaining the management of EC2 instances within an ECS cluster, highlighting the need to manage infrastructure while ECS handles containers. It emphasizes full control over the infrastructure.](https://kodekloud.com/kk-media/image/upload/v1752869152/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-ECS-Infrastructure-and-launch/ec2-instances-ecs-cluster-diagram.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/amazon-elastic-container-service-aws-ecs/module/cec2a3ca-2cb6-4e9c-a1f2-693b3303765d/lesson/6ee158fd-eb66-4b8e-80d5-848df6bc9c09)

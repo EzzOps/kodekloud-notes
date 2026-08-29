@@ -149,9 +149,7 @@ backend.add(import('@backstage/plugin-auth-backend-module-github-provider'));
 backend.start();
 ```
 
-<Callout icon="lightbulb">
-  After installing a backend package, you must both add it to `packages/backend/package.json` and register it in the backend `index.ts` with `backend.add(...)`, then restart your backend.
-</Callout>
+> **lightbulb** After installing a backend package, you must both add it to `packages/backend/package.json` and register it in the backend `index.ts` with `backend.add(...)`, then restart your backend.
 
 ## Configuring GitHub OAuth and Backstage auth
 
@@ -175,9 +173,7 @@ auth:
 
 After creating the OAuth app GitHub presents a client ID and lets you generate a client secret. Store these securely.
 
-<Callout icon="warning">
-  Do not commit OAuth client secrets to your repository. Use environment variables or a secrets manager (`AUTH_GITHUB_CLIENT_ID`, `AUTH_GITHUB_CLIENT_SECRET`) for production deployments.
-</Callout>
+> **warning** Do not commit OAuth client secrets to your repository. Use environment variables or a secrets manager (`AUTH_GITHUB_CLIENT_ID`, `AUTH_GITHUB_CLIENT_SECRET`) for production deployments.
 
 <Frame>
   <img alt="A screenshot of the GitHub Developer settings for an OAuth application named &#x22;backstage.&#x22; It shows the client ID and a generated client secret along with buttons for transfer ownership, listing in the Marketplace, revoking tokens, and uploading an application logo." />
@@ -250,9 +246,7 @@ Explore the community plugins repository and each plugin’s README for provider
 
 For further customization, consult the specific community plugin README and Backstage developer documentation.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/aad867ea-baf2-4ca7-b722-ad38ea794a7e/lesson/1e3ae2bd-4bb1-4a35-b0af-8f7c5f2129f8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/aad867ea-baf2-4ca7-b722-ad38ea794a7e/lesson/1e3ae2bd-4bb1-4a35-b0af-8f7c5f2129f8)
 
 
 # Demo Customizing UI Part 2
@@ -431,18 +425,14 @@ After saving and restarting (or rebuilding) your Backstage app, the new "Registe
   <img alt="A split-screen screenshot showing a code editor (Visual Studio Code) with a project file tree and TypeScript code on the left, and a web UI for &#x22;My Company Catalog&#x22; (Backstage) displaying a table of components on the right. The left panel shows folders like src/components/Root, while the right shows component names, owners, types, and lifecycle statuses." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Tip: Use a distinct icon and clear label to make the new link discoverable. Keep `SidebarItem` placement near related items so users learn the menu layout quickly.
-</Callout>
+> **lightbulb** Tip: Use a distinct icon and clear label to make the new link discoverable. Keep `SidebarItem` placement near related items so users learn the menu layout quickly.
 
 Permission considerations
 
 * The Catalog Import page (`/catalog-import`) typically requires a permission check such as `catalogEntityCreatePermission`. If you add the sidebar link but users lack permission, they’ll be prevented from accessing the page.
 * Wrap the target page in `RequirePermission` (as shown in the routes example) to enforce access control.
 
-<Callout icon="warning">
-  Important: If you add a `SidebarItem` that points to a protected route, ensure the route itself enforces permissions. The sidebar link does not implicitly grant access.
-</Callout>
+> **warning** Important: If you add a `SidebarItem` that points to a protected route, ensure the route itself enforces permissions. The sidebar link does not implicitly grant access.
 
 Visual confirmation of the change
 The screenshots below demonstrate the code edits in VS Code and the resulting direct navigation to the "Register an existing component" page.
@@ -467,6 +457,4 @@ References
 
 This change is standard React work inside a Backstage app — once you understand routes and `Root.tsx` you can customize the UI to match your team's workflows.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/aad867ea-baf2-4ca7-b722-ad38ea794a7e/lesson/be06c121-f4fc-4356-be75-81d42ca1778c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/aad867ea-baf2-4ca7-b722-ad38ea794a7e/lesson/be06c121-f4fc-4356-be75-81d42ca1778c)

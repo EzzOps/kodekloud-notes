@@ -150,9 +150,7 @@ type=AVC msg=audit(1716410944.847:111): avc: denied { execute } for pid=922 comm
         You can use audit2allow to generate a loadable module to allow this access.
 ```
 
-<Callout icon="lightbulb">
-  Although similar audit entries might be repeated, a single occurrence generally provides enough insight into the issue.
-</Callout>
+> **lightbulb** Although similar audit entries might be repeated, a single occurrence generally provides enough insight into the issue.
 
 ***
 
@@ -210,9 +208,7 @@ To load the custom policy module, execute:
 sudo semodule -i mymodule.pp
 ```
 
-<Callout icon="lightbulb">
-  If you see a warning such as "libsemanage.add\_user: user sddm not in password file", it is a known issue. You can safely ignore it if you are not using sddm.
-</Callout>
+> **lightbulb** If you see a warning such as "libsemanage.add\_user: user sddm not in password file", it is a known issue. You can safely ignore it if you are not using sddm.
 
 ***
 
@@ -346,9 +342,7 @@ sudo chcon -r object_r /var/log/auth.log
 sudo chcon -t user_home_t /var/log/auth.log
 ```
 
-<Callout icon="triangle-alert">
-  Manual changes made with `chcon` may be overridden during a complete filesystem relabel.
-</Callout>
+> **triangle-alert** Manual changes made with `chcon` may be overridden during a complete filesystem relabel.
 
 To restore the default context, use the `restorecon` command. For example, to fix the context of `/var/log/auth.log` based on `/var/log/dmesg` as a reference:
 

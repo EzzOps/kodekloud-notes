@@ -14,7 +14,7 @@ Without effective license management, you risk breaching software license terms,
 
 To tackle these challenges, AWS License Manager provides a centralized solution that manages licenses from various vendors—such as Microsoft, SAP, Oracle, and IBM—across both AWS and on-premises environments. This service not only enforces licensing rules but also tracks and reports usage to ensure compliance.
 
-![The image illustrates a "License Manager" process with four steps: defining license configurations, applying them to resources, enforcing rules, and tracking and reporting. Each step is represented by a colorful icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865358/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-License-Manager/license-manager-process-steps.jpg)
+![The image illustrates a "License Manager" process with four steps: defining license configurations, applying them to resources, enforcing rules, and tracking and reporting. Each step is represented by a colorful icon.](https://kodekloud.com/kk-media/image/upload/v1752865358/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-License-Manager/license-manager-process-steps.jpg)
 
 ## How AWS License Manager Works
 
@@ -40,7 +40,7 @@ License Manager serves as a centralized hub for all your licensing needs. Its ro
 * **Cross-Account Management:** Consolidate license management for organizations with multiple AWS accounts.
 * **Discovery and Reporting:** Automatically detect installed software and generate detailed usage reports.
 
-![The image lists five features: Centralized License Management, License Tracking, Enforce Licensing Rules, Cross-Account Management, and Discovery and Reporting. Each feature is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865359/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-License-Manager/license-management-features-list.jpg)
+![The image lists five features: Centralized License Management, License Tracking, Enforce Licensing Rules, Cross-Account Management, and Discovery and Reporting. Each feature is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752865359/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-License-Manager/license-management-features-list.jpg)
 
 ## Conclusion
 

@@ -8,9 +8,7 @@ You can also pin behavior to a specific API behavior version using `pod-security
   <img alt="The image is a guide for applying PSS namespace labels in Kubernetes, detailing label format with specific prefixes, modes, and levels." />
 </Frame>
 
-<Callout icon="warning">
-  Do not casually label core system namespaces (for example `kube-system`) as `restricted` or `baseline` unless you’ve validated operator and add-on compatibility. Mislabeling control-plane or infrastructure namespaces can break cluster components.
-</Callout>
+> **warning** Do not casually label core system namespaces (for example `kube-system`) as `restricted` or `baseline` unless you’ve validated operator and add-on compatibility. Mislabeling control-plane or infrastructure namespaces can break cluster components.
 
 ## PSS vs Gatekeeper / Kyverno
 
@@ -44,9 +42,7 @@ Use PSS as the mandatory floor across all namespaces, then add Gatekeeper or Kyv
 * [Gatekeeper (Open Policy Agent)](https://open-policy-agent.github.io/gatekeeper/)
 * [Kyverno](https://kyverno.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/f777f6c0-ca36-4564-9abf-6ef8f548f02f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/f777f6c0-ca36-4564-9abf-6ef8f548f02f)
 
 
 # RBAC You Can Live With Least Privilege Without Pain
@@ -172,9 +168,7 @@ When to choose namespace vs. cluster scope
 | Platform team manages cluster-scoped resources (CRDs, nodes) | `ClusterRole` + `ClusterRoleBinding`                                      |
 | Emergency/root access                                        | `cluster-admin` (avoid for day-to-day)                                    |
 
-<Callout icon="warning">
-  Use `cluster-admin` only for emergency / break-glass scenarios. Day-to-day operations should use least-privilege, namespace-scoped roles wherever possible.
-</Callout>
+> **warning** Use `cluster-admin` only for emergency / break-glass scenarios. Day-to-day operations should use least-privilege, namespace-scoped roles wherever possible.
 
 <Frame>
   <img alt="The image is a table comparing namespace vs. cluster scope decisions with scenarios, role types, and binding types. It describes different levels of access and binding types for developers, CI/CD, monitoring, and admin roles." />

@@ -6,9 +6,7 @@ This article explores various Ansible modules categorized by functionality for t
 
 In this article, we explore a variety of Ansible modules categorized by their functionality. Each module group is tailored for specific tasks such as system management, command execution, file handling, database operations, cloud interactions, and Windows management.
 
-<Frame>
-  ![The image lists various modules, including System, Commands, Files, Database, Cloud, and Windows, with specific items like User, Group, Hostname, and Service highlighted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881051/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Modules/frame_20.jpg)
-</Frame>
+![The image lists various modules, including System, Commands, Files, Database, Cloud, and Windows, with specific items like User, Group, Hostname, and Service highlighted.](https://kodekloud.com/kk-media/image/upload/v1752881051/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Modules/frame_20.jpg)
 
 Modules are grouped as follows:
 
@@ -19,21 +17,13 @@ Modules are grouped as follows:
 * **Cloud Modules:** Offer robust functionalities for various cloud providers including Amazon, Azure, Docker, Google, OpenStack, and VMware. They help manage tasks like instance creation/destruction, networking, security configurations, container management, and data center operations.
 * **Windows Modules:** Optimize management of Windows environments. Modules like `win_copy`, `win_command`, `win_service`, and others help with tasks ranging from file transfer to installing software and managing Windows services.
 
-<Frame>
-  ![The image lists various modules like System, Commands, Files, and more, with specific file-related functions such as Copy, Find, and Template highlighted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881052/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Modules/frame_70.jpg)
-</Frame>
+![The image lists various modules like System, Commands, Files, and more, with specific file-related functions such as Copy, Find, and Template highlighted.](https://kodekloud.com/kk-media/image/upload/v1752881052/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Modules/frame_70.jpg)
 
-<Frame>
-  ![The image lists modules like System, Commands, Files, Database, Cloud, Windows, and more, with a focus on databases such as MongoDB, MySQL, and PostgreSQL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881053/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Modules/frame_80.jpg)
-</Frame>
+![The image lists modules like System, Commands, Files, Database, Cloud, Windows, and more, with a focus on databases such as MongoDB, MySQL, and PostgreSQL.](https://kodekloud.com/kk-media/image/upload/v1752881053/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Modules/frame_80.jpg)
 
-<Frame>
-  ![The image lists various modules like System, Commands, and Cloud, with cloud providers such as Amazon, Azure, and Google mentioned.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881054/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Modules/frame_100.jpg)
-</Frame>
+![The image lists various modules like System, Commands, and Cloud, with cloud providers such as Amazon, Azure, and Google mentioned.](https://kodekloud.com/kk-media/image/upload/v1752881054/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Modules/frame_100.jpg)
 
-<Frame>
-  ![The image lists various modules related to system, commands, files, database, cloud, and Windows, including specific Windows commands like Win\_copy and Win\_service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881056/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Modules/frame_130.jpg)
-</Frame>
+![The image lists various modules related to system, commands, files, database, cloud, and Windows, including specific Windows commands like Win\_copy and Win\_service.](https://kodekloud.com/kk-media/image/upload/v1752881056/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Modules/frame_130.jpg)
 
 For a complete reference and detailed documentation, please visit the [Ansible Documentation](https://docs.ansible.com).
 
@@ -76,9 +66,7 @@ One important concept is "free form" input. In the command module, the command i
         dest: /destination
 ```
 
-<Callout icon="lightbulb">
-  The command module accepts free form commands, making it ideal for straightforward executions, while modules such as copy require a structured key=value syntax.
-</Callout>
+> **lightbulb** The command module accepts free form commands, making it ideal for straightforward executions, while modules such as copy require a structured key=value syntax.
 
 ***
 
@@ -88,9 +76,7 @@ The script module facilitates executing a local script on remote nodes. When inv
 
 Simply specify the local path of the script and include any necessary arguments.
 
-<Frame>
-  ![The image illustrates running a local script on remote nodes by transferring it, showing a network of computers and steps for copying and executing scripts remotely.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881057/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Modules/frame_350.jpg)
-</Frame>
+![The image illustrates running a local script on remote nodes by transferring it, showing a network of computers and steps for copying and executing scripts remotely.](https://kodekloud.com/kk-media/image/upload/v1752881057/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Modules/frame_350.jpg)
 
 ***
 
@@ -120,13 +106,9 @@ You can also express the same logic using a dictionary format for enhanced reada
 
 In these examples, the `name` parameter identifies the service (in this case, PostgreSQL), and the `state` parameter declares the desired state. The use of "started" instead of "start" ensures that if the service is already running, Ansible performs no extra action, promoting idempotency.
 
-<Callout icon="lightbulb">
-  Idempotency ensures that running the same playbook multiple times results in a consistent state without unintended side effects.
-</Callout>
+> **lightbulb** Idempotency ensures that running the same playbook multiple times results in a consistent state without unintended side effects.
 
-<Frame>
-  ![The image explains the difference between "start" and "started" for the httpd service, emphasizing ensuring it's running and actions based on its current state.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881057/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Modules/frame_480.jpg)
-</Frame>
+![The image explains the difference between "start" and "started" for the httpd service, emphasizing ensuring it's running and actions based on its current state.](https://kodekloud.com/kk-media/image/upload/v1752881057/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Modules/frame_480.jpg)
 
 ***
 

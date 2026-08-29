@@ -48,9 +48,7 @@ path "*" {
 * [Vault Authentication Methods](https://www.vaultproject.io/docs/auth)
 * [Vault CLI Guide](https://www.vaultproject.io/docs/commands)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/0691a24b-ed2f-46b4-b147-372fac3ce38c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/0691a24b-ed2f-46b4-b147-372fac3ce38c)
 
 
 # Managing Policies using the API
@@ -80,9 +78,7 @@ curl \
 | `--data @payload.json`        | Path to the JSON file with the policy definition                  | `@payload.json`                             |
 | API endpoint                  | Target URL for policy management; replace `webapp` with your name | `/v1/sys/policy/webapp`                     |
 
-<Callout icon="triangle-alert">
-  Using `PUT` on an existing policy will overwrite it. Always review the policy rules before applying.
-</Callout>
+> **triangle-alert** Using `PUT` on an existing policy will overwrite it. Always review the policy rules before applying.
 
 ### payload.json Example
 
@@ -102,10 +98,8 @@ Below is a sample `payload.json` defining a policy with read, write, list, and d
 * **`path "kv/apps/webapp"`**: Specifies the secrets path this policy governs.
 * **`capabilities`**: Lists allowed operations on that path.
 
-<Callout icon="lightbulb">
-  Ensure `payload.json` is located in your current directory or provide an absolute path.\
+> **lightbulb** Ensure `payload.json` is located in your current directory or provide an absolute path.\
   For advanced policy syntax, see the [Vault Policy Documentation](https://www.vaultproject.io/docs/concepts/policies).
-</Callout>
 
 ## Next Steps & References
 
@@ -115,6 +109,4 @@ Below is a sample `payload.json` defining a policy with read, write, list, and d
   [Vault HTTP API Reference](https://www.vaultproject.io/api-docs)
 * Secure Vault tokens and follow [best practices](/docs/security/best-practices).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/725b59ca-113b-4b81-8696-428b32d41eab" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/725b59ca-113b-4b81-8696-428b32d41eab)

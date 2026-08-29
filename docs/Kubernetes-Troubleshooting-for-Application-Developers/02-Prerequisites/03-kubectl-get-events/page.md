@@ -52,9 +52,7 @@ LAST SEEN   TYPE     REASON              OBJECT
            6537a206d848 spec: failed to generate spec: path "/" is mounted on "/" but it is not a shared or slave mount
 ```
 
-<Callout icon="lightbulb">
-  Viewing events in chronological order helps you track the progression of operations and quickly pinpoint where issues begin.
-</Callout>
+> **lightbulb** Viewing events in chronological order helps you track the progression of operations and quickly pinpoint where issues begin.
 
 ## Understanding Event Types
 
@@ -81,9 +79,7 @@ LAST SEEN   TYPE      REASON              OBJECT
 ...
 ```
 
-<Callout icon="triangle-alert">
-  Warnings indicate issues that require your attention. Always review the detailed messages following these warnings to understand the root cause.
-</Callout>
+> **triangle-alert** Warnings indicate issues that require your attention. Always review the detailed messages following these warnings to understand the root cause.
 
 ## Troubleshooting with Events
 
@@ -131,6 +127,4 @@ The `kubectl get events` command is a vital tool for managing Kubernetes cluster
 
 Happy troubleshooting!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/7bb3d0e4-1864-4e2d-8631-2f78dee5d760" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/7bb3d0e4-1864-4e2d-8631-2f78dee5d760)

@@ -71,11 +71,9 @@ How the rollout steps work
 * `setWeight: 50` — Increase traffic to 50% if checks pass.
 * `pause: { duration: 5m }` — Let the canary run under heavier load to detect slow-developing issues such as memory leaks or downstream timeouts.
 
-<Callout icon="warning">
-  Manual pauses require a human decision. Ensure monitoring dashboards and
+> **warning** Manual pauses require a human decision. Ensure monitoring dashboards and
   alerting are available during these pauses so reviewers can approve or abort
   the rollout quickly.
-</Callout>
 
 Traffic routing and services
 Argo Rollouts manages traffic by switching the backing endpoints for two services you specify:
@@ -136,11 +134,9 @@ strategies."
   />
 </Frame>
 
-<Callout icon="lightbulb">
-  Progressive delivery techniques include canaries (gradual traffic shifts),
+> **lightbulb** Progressive delivery techniques include canaries (gradual traffic shifts),
   feature flags (runtime toggles), A/B testing (compare variants), and traffic
   mirroring (shadow production traffic for safe performance testing).
-</Callout>
 
 Progressive delivery options and use cases:
 
@@ -168,6 +164,4 @@ Recommended next steps
 * Configure alerting and dashboards for manual pause decisions.
 * Integrate a service mesh or ingress traffic manager if you need advanced traffic splitting features.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/3f8098c7-49b5-4299-a369-c478f74f02de" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/3f8098c7-49b5-4299-a369-c478f74f02de)

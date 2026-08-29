@@ -17,9 +17,7 @@ Welcome to the first major section of this course! Here, you’ll discover how O
 7. **Community Integrations:** Discover how extensions like prompt templating and logging enhance Ollama.
 8. **ChatGPT-Style Interface:** Build a simple chat UI with a community integration.
 
-<Frame>
-  ![The image outlines a four-step agenda covering learning about Ollama, installing it, running a first model, and exploring models and parameters.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883734/notes-assets/images/Running-Local-LLMs-With-Ollama-Section-Introduction/ollama-four-step-agenda.jpg)
-</Frame>
+![The image outlines a four-step agenda covering learning about Ollama, installing it, running a first model, and exploring models and parameters.](https://kodekloud.com/kk-media/image/upload/v1752883734/notes-assets/images/Running-Local-LLMs-With-Ollama-Section-Introduction/ollama-four-step-agenda.jpg)
 
 ***
 
@@ -50,9 +48,7 @@ Understanding these terms will help you pick—and tune—the right model:
 
 ## Getting Started: Install & Setup
 
-<Callout icon="lightbulb">
-  Ollama supports macOS, Linux, and Windows. Ensure you have at least 8 GB of RAM for basic models, and more for large-scale LLMs.
-</Callout>
+> **lightbulb** Ollama supports macOS, Linux, and Windows. Ensure you have at least 8 GB of RAM for basic models, and more for large-scale LLMs.
 
 Follow the official [Ollama installation guide](/docs/installation) for step-by-step instructions. Once installed, verify with:
 
@@ -107,9 +103,7 @@ The CLI is your control center. Key commands include:
 | `ollama run <model>`    | Run a model interactively | `ollama run llama2`    |
 | `ollama remove <model>` | Uninstall a local model   | `ollama remove llama2` |
 
-<Frame>
-  ![The image is a slide titled "What We'll Cover," outlining topics such as mastering Ollama CLI commands, demos and labs, community integrations, and building a ChatGPT-like interface.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883736/notes-assets/images/Running-Local-LLMs-With-Ollama-Section-Introduction/what-we-will-cover-ollama-cli.jpg)
-</Frame>
+![The image is a slide titled "What We'll Cover," outlining topics such as mastering Ollama CLI commands, demos and labs, community integrations, and building a ChatGPT-like interface.](https://kodekloud.com/kk-media/image/upload/v1752883736/notes-assets/images/Running-Local-LLMs-With-Ollama-Section-Introduction/what-we-will-cover-ollama-cli.jpg)
 
 We’ll reinforce these commands through live demos and a hands-on lab so you can practice in real time.
 
@@ -121,6 +115,4 @@ Ollama is fully open-source, with a vibrant ecosystem of plugins and integration
 
 By the end of this section, you’ll have a solid foundation in Ollama—from installation to building production-ready chat applications. Let’s dive in!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/836a96fe-9951-42b6-83ba-a602299c87c9/lesson/ae7c6c44-8a9e-415f-835b-f6ffdd4fb353" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/836a96fe-9951-42b6-83ba-a602299c87c9/lesson/ae7c6c44-8a9e-415f-835b-f6ffdd4fb353)

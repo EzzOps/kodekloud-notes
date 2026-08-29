@@ -52,9 +52,7 @@ def test_update_post(authorized_client, test_user, test_posts):
     assert updated_post.content == data["content"]
 ```
 
-<Callout icon="lightbulb">
-  Ensuring correct ownership before updating a post is crucial, as it prevents unauthorized modifications.
-</Callout>
+> **lightbulb** Ensuring correct ownership before updating a post is crucial, as it prevents unauthorized modifications.
 
 ### Attempt to Update Another User's Post
 
@@ -82,9 +80,7 @@ def test_unauthorized_user_update_post(client, test_user, test_posts):
     assert res.status_code == 401
 ```
 
-<Callout icon="triangle-alert">
-  Do not expose sensitive update endpoints to unauthenticated users, as this can lead to security breaches.
-</Callout>
+> **triangle-alert** Do not expose sensitive update endpoints to unauthenticated users, as this can lead to security breaches.
 
 ### Updating a Non-Existent Post
 
@@ -155,6 +151,4 @@ This article on testing post update operations helps ensure that your applicatio
 
 ***
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/ee388e20-5d42-4766-a78b-4d9ceed2b20c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/ee388e20-5d42-4766-a78b-4d9ceed2b20c)

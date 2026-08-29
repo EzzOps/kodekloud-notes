@@ -8,9 +8,7 @@ Until now we have used [Git](https://learn.kodekloud.com/user/courses/git-for-be
 
 Below is a compact, corrected walkthrough that packages a Helm chart named `highway-chart`, pushes it to Docker Hub's OCI registry, and then pulls and installs it from the registry. The examples use the Docker Hub username `siddharth67`; replace it with your own when running commands.
 
-<Callout icon="lightbulb">
-  Ensure you are using Helm 3.x with OCI support. Helm 3.8+ includes built-in OCI support; some older 3.x releases required experimental flags or community plugins. Also confirm your Docker Hub credentials (password or Personal Access Token) before running `helm registry login`.
-</Callout>
+> **lightbulb** Ensure you are using Helm 3.x with OCI support. Helm 3.8+ includes built-in OCI support; some older 3.x releases required experimental flags or community plugins. Also confirm your Docker Hub credentials (password or Personal Access Token) before running `helm registry login`.
 
 ## Prerequisites
 

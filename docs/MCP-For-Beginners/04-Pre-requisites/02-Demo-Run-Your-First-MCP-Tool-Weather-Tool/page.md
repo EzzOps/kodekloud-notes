@@ -265,9 +265,7 @@ Best practices and next steps
 * Prefer to keep MCP servers local or behind strict access controls. Don’t expose your local testing server directly to the public Internet without proper authentication.
 * Use the `get_weather_summary` tool as a compact text response for chat UIs, while `get_current_weather` / `get_weather_forecast` provide structured data for downstream logic.
 
-<Callout icon="warning">
-  Do not expose local MCP servers publicly without authentication or firewall rules. MCP tools can access external APIs — treat them like any other backend service when it comes to security.
-</Callout>
+> **warning** Do not expose local MCP servers publicly without authentication or firewall rules. MCP tools can access external APIs — treat them like any other backend service when it comes to security.
 
 Why this matters
 
@@ -282,12 +280,8 @@ Links and references
 * Claude: [https://claude.ai](https://claude.ai)
 * Retrieval-Augmented Generation: [https://en.wikipedia.org/wiki/Retrieval-augmented\_generation](https://en.wikipedia.org/wiki/Retrieval-augmented_generation)
 
-<Callout icon="lightbulb">
-  Start small: run the server locally, test with Postman, and then connect your assistant. Once you have the basic flow working, extend the server to support geocoding (resolve names → lat/long), caching, or rate-limiting for production use.
-</Callout>
+> **lightbulb** Start small: run the server locally, test with Postman, and then connect your assistant. Once you have the basic flow working, extend the server to support geocoding (resolve names → lat/long), caching, or rate-limiting for production use.
 
 Thank you — enjoy experimenting with MCP and real-time APIs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/ef6da233-05e8-4813-b17a-52f829e130f1/lesson/78ea582a-7545-4c5e-b119-e75dafc64057" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/ef6da233-05e8-4813-b17a-52f829e130f1/lesson/78ea582a-7545-4c5e-b119-e75dafc64057)

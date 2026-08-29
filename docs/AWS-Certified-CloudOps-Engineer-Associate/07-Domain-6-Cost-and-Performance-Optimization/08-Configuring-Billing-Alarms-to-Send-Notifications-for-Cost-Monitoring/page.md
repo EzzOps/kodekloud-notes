@@ -13,13 +13,13 @@ Welcome to this lesson on setting up billing alarms in AWS CloudWatch for effect
 1. **Log in to the AWS Console** and navigate to the **Billing and Cost Management** dashboard.
 2. Scroll down to **Billing Preferences** and click on it.
 
-![The image shows an AWS Billing and Cost Management dashboard, displaying cost summaries, cost breakdowns, and budget status alerts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860957/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-billing-cost-management-dashboard.jpg)
+![The image shows an AWS Billing and Cost Management dashboard, displaying cost summaries, cost breakdowns, and budget status alerts.](https://kodekloud.com/kk-media/image/upload/v1752860957/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-billing-cost-management-dashboard.jpg)
 
 3. In the **Invoice Delivery and Alert Preferences** pop-up, locate the **Alert Preferences** section and click **Edit**.
 4. Enable the option to receive CloudWatch billing alerts. Note that this setting cannot be disabled once enabled.
 5. Click **Update**. Note that it may take around 15 minutes for this preference to take effect.
 
-![The image shows the AWS Billing Preferences page, displaying options for invoice delivery, alert preferences, and credit sharing preferences, along with a list of accounts and their sharing status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860959/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-billing-preferences-invoice-options.jpg)
+![The image shows the AWS Billing Preferences page, displaying options for invoice delivery, alert preferences, and credit sharing preferences, along with a list of accounts and their sharing status.](https://kodekloud.com/kk-media/image/upload/v1752860959/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-billing-preferences-invoice-options.jpg)
 
 ## Setting Up the CloudWatch Alarm
 
@@ -30,7 +30,7 @@ Once the billing alert configuration has been enabled, follow these steps to cre
 3. Click the **Create Alarm** button.
 4. In the metric selection, click **Billing** and then select **Total Estimated Charge** from the list.
 
-![The image shows an AWS CloudWatch interface for creating an alarm, specifically in the "Specify metric and conditions" step. It includes settings for monitoring estimated charges in USD with a graph and conditions for triggering the alarm.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860960/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-alarm-creation-metric.jpg)
+![The image shows an AWS CloudWatch interface for creating an alarm, specifically in the "Specify metric and conditions" step. It includes settings for monitoring estimated charges in USD with a graph and conditions for triggering the alarm.](https://kodekloud.com/kk-media/image/upload/v1752860960/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-alarm-creation-metric.jpg)
 
 5. Check the checkbox next to **Total Estimated Charges** and click **Select Metric**.
 
@@ -48,35 +48,35 @@ Once the billing alert configuration has been enabled, follow these steps to cre
 3. Enter an email address (for example, [michael@codefile.com](mailto:michael@codefile.com)) for direct email notifications.
 4. Click **Next** to proceed.
 
-![The image shows a configuration screen for setting up an alarm in AWS CloudWatch, where a new SNS topic is being created for notifications. The interface includes options for defining alarm state triggers and specifying email endpoints for notifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860961/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-alarm-configuration-sns.jpg)
+![The image shows a configuration screen for setting up an alarm in AWS CloudWatch, where a new SNS topic is being created for notifications. The interface includes options for defining alarm state triggers and specifying email endpoints for notifications.](https://kodekloud.com/kk-media/image/upload/v1752860961/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-alarm-configuration-sns.jpg)
 
 5. Skip any additional actions such as invoking Lambda functions or auto scaling by clicking **Next**.
 
-![The image shows an AWS CloudWatch interface for creating an alarm with options to add various actions like Lambda, Auto Scaling, EC2, Systems Manager, and Investigation actions. There are "Previous" and "Next" buttons at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860962/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-alarm-interface.jpg)
+![The image shows an AWS CloudWatch interface for creating an alarm with options to add various actions like Lambda, Auto Scaling, EC2, Systems Manager, and Investigation actions. There are "Previous" and "Next" buttons at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752860962/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-alarm-interface.jpg)
 
 6. Name the alarm (for example, "MonthlyBillingAlert") and add a description such as "This is a \$50 estimated charges alert for our educational demo account."
 
-![The image shows an AWS CloudWatch interface where a user is creating an alarm named "MonthlyBillingAlert" with a description for estimated charges. The interface is on the "Add name and description" step of the alarm creation process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860964/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-monthly-billing-alert.jpg)
+![The image shows an AWS CloudWatch interface where a user is creating an alarm named "MonthlyBillingAlert" with a description for estimated charges. The interface is on the "Add name and description" step of the alarm creation process.](https://kodekloud.com/kk-media/image/upload/v1752860964/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-monthly-billing-alert.jpg)
 
 7. Preview the alarm configuration. Even if no data is plotted yet, the settings indicate that a notification will be sent when estimated charges exceed \$50.
 
-![The image shows an AWS CloudWatch interface for creating an alarm based on estimated charges. It includes a graph and conditions for triggering the alarm when charges exceed a specified threshold.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860965/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-alarm-estimated-charges.jpg)
+![The image shows an AWS CloudWatch interface for creating an alarm based on estimated charges. It includes a graph and conditions for triggering the alarm when charges exceed a specified threshold.](https://kodekloud.com/kk-media/image/upload/v1752860965/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-alarm-estimated-charges.jpg)
 
 8. Click **Create Alarm**. Initially, the alarm state might show as "Insufficient data" because the billing metrics have not fully populated.
 
 Once the alarm is created, verify your SNS subscription. Check your email for a subscription confirmation and confirm it to fully activate your billing alarm.
 
-![The image shows an AWS CloudWatch Alarms dashboard with two alarms listed, both in a state of "Insufficient data." Notifications indicate a successfully created alarm and pending SNS subscription confirmations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860966/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-alarms-dashboard.jpg)
+![The image shows an AWS CloudWatch Alarms dashboard with two alarms listed, both in a state of "Insufficient data." Notifications indicate a successfully created alarm and pending SNS subscription confirmations.](https://kodekloud.com/kk-media/image/upload/v1752860966/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-alarms-dashboard.jpg)
 
-![The image shows a confirmation page from AWS Simple Notification Service indicating a successful subscription, with an option to unsubscribe.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860968/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-sns-confirmation-page.jpg)
+![The image shows a confirmation page from AWS Simple Notification Service indicating a successful subscription, with an option to unsubscribe.](https://kodekloud.com/kk-media/image/upload/v1752860968/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-sns-confirmation-page.jpg)
 
 ## Verifying and Adjusting the Alarm
 
 After waiting a few minutes (up to 15 minutes), billing data should begin to populate. If your usage exceeds $50, the alarm will automatically transition to an "ALARM" state. For instance, if the estimated charges are significantly higher (e.g., $700 or \$1,100), the alarm will trigger immediately. You can click on the alarm to view a detailed graph of the estimated charges.
 
-![The image shows an AWS CloudWatch dashboard with alarms for billing and EC2 services. It highlights a "MonthlyBillingAlert" and a "node\_server\_EBSwrites" alert.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860969/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-dashboard-alarms.jpg)
+![The image shows an AWS CloudWatch dashboard with alarms for billing and EC2 services. It highlights a "MonthlyBillingAlert" and a "node\_server\_EBSwrites" alert.](https://kodekloud.com/kk-media/image/upload/v1752860969/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-dashboard-alarms.jpg)
 
-![The image shows an AWS CloudWatch dashboard with a "MonthlyBillingAlert" in alarm state, indicating estimated charges have exceeded a set threshold. A graph displays the estimated charges over time, highlighting the point where the alarm was triggered.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860970/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-monthly-billing-alert-2.jpg)
+![The image shows an AWS CloudWatch dashboard with a "MonthlyBillingAlert" in alarm state, indicating estimated charges have exceeded a set threshold. A graph displays the estimated charges over time, highlighting the point where the alarm was triggered.](https://kodekloud.com/kk-media/image/upload/v1752860970/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-monthly-billing-alert-2.jpg)
 
 If you find that the threshold is too low—for example, if actual usage is much higher than \$50—you can adjust the alarm:
 
@@ -84,9 +84,9 @@ If you find that the threshold is too low—for example, if actual usage is much
 2. Change the static threshold from $50 to a higher value (e.g., $1,500).
 3. Verify that all other settings remain unchanged (data point configuration, SNS topic, etc.) and then save the updated configuration.
 
-![The image shows an AWS CloudWatch configuration screen for setting a billing alarm. It includes options for setting a static threshold for estimated charges, with conditions for triggering the alarm when charges are greater than or equal to a specified amount.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860972/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-billing-alarm-configuration.jpg)
+![The image shows an AWS CloudWatch configuration screen for setting a billing alarm. It includes options for setting a static threshold for estimated charges, with conditions for triggering the alarm when charges are greater than or equal to a specified amount.](https://kodekloud.com/kk-media/image/upload/v1752860972/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-billing-alarm-configuration.jpg)
 
-![The image shows an AWS CloudWatch configuration screen for setting up a billing alarm notification. It includes options for selecting an SNS topic and defining the alarm state trigger.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860973/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-billing-alarm-setup.jpg)
+![The image shows an AWS CloudWatch configuration screen for setting up a billing alarm notification. It includes options for selecting an SNS topic and defining the alarm state trigger.](https://kodekloud.com/kk-media/image/upload/v1752860973/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-billing-alarm-setup.jpg)
 
 Give the system a few moments after updating the alarm. With the next data collection, the alarm state should reflect the new threshold if it has not been exceeded.
 
@@ -94,7 +94,7 @@ Give the system a few moments after updating the alarm. With the next data colle
 
 While this lesson focuses on the **Total Estimated Charges** metric, you can configure alarms for other billing parameters. For example, if you manage linked accounts or need to monitor specific services (such as Gateway, ECR, or EKS), select those metrics individually to set more granular alarms.
 
-![The image shows an AWS CloudWatch interface for selecting metrics, with a list of services like Amazon Athena and Amazon CloudFront, displaying estimated charges in USD and indicating no alarms. The graph area is currently empty, awaiting metric selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860974/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-metrics-interface.jpg)
+![The image shows an AWS CloudWatch interface for selecting metrics, with a list of services like Amazon Athena and Amazon CloudFront, displaying estimated charges in USD and indicating no alarms. The graph area is currently empty, awaiting metric selection.](https://kodekloud.com/kk-media/image/upload/v1752860974/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Billing-Alarms-to-Send-Notifications-for-Cost-Monitoring/aws-cloudwatch-metrics-interface.jpg)
 
 ## Conclusion
 

@@ -24,7 +24,7 @@ One common pattern is using an in-memory database such as Redis for session stor
 2. Configure each EC2 instance to read/write session data from Redis instead of local memory.
 3. Handle failover: if one Redis node goes down, the cluster automatically promotes a replica.
 
-![The image illustrates a diagram of stateless applications using EC2, featuring interconnected components and icons representing a network and storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869086/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Mandatory-best-practice-Part-2/stateless-applications-ec2-diagram.jpg)
+![The image illustrates a diagram of stateless applications using EC2, featuring interconnected components and icons representing a network and storage.](https://kodekloud.com/kk-media/image/upload/v1752869086/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Mandatory-best-practice-Part-2/stateless-applications-ec2-diagram.jpg)
 
 With this architecture in place, instances remain interchangeable, and session continuity is preserved even during auto scaling or instance replacements.
 

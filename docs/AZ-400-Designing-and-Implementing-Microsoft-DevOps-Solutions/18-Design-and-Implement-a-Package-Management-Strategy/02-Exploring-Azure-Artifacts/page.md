@@ -64,7 +64,7 @@ npm is the largest registry for JavaScript and Node.js packages, featuring:
 * Simple commands: `npm install`, `npm update`
 * Scripts, semantic versioning, and built-in security audits
 
-![The image is an informational graphic about npm, highlighting it as the largest software registry and part of the JavaScript ecosystem. It features two sections: "What is npm?" and "Key Features."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867905/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Package-Management-Tools/npm-software-registry-infographic.jpg)
+![The image is an informational graphic about npm, highlighting it as the largest software registry and part of the JavaScript ecosystem. It features two sections: "What is npm?" and "Key Features."](https://kodekloud.com/kk-media/image/upload/v1752867905/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Package-Management-Tools/npm-software-registry-infographic.jpg)
 
 ```bash theme={null}
 # Install dependencies
@@ -99,7 +99,7 @@ This article explores Azure Artifacts, focusing on package management within Azu
 
 In this lesson, we dive into **Azure Artifacts**, a core component of Azure DevOps that enables enterprise-scale package management. Mastering Azure Artifacts is essential for the [AZ-400 exam](https://learn.microsoft.com/en-us/certifications/exams/az-400) and for streamlining your CI/CD pipelines with reliable, repeatable package deployments.
 
-![The image is a slide titled "Introduction" with three bullet points: "Exploring Azure Artifacts," "Importance of package management in software development," and "Overview of Azure Artifacts as an extension of Azure DevOps."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867907/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Artifacts/introduction-azure-artifacts-package-management.jpg)
+![The image is a slide titled "Introduction" with three bullet points: "Exploring Azure Artifacts," "Importance of package management in software development," and "Overview of Azure Artifacts as an extension of Azure DevOps."](https://kodekloud.com/kk-media/image/upload/v1752867907/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Artifacts/introduction-azure-artifacts-package-management.jpg)
 
 ## Why Choose Azure Artifacts?
 
@@ -121,7 +121,7 @@ Follow these three core steps to onboard packages:
 2. **Push your packages**
 3. **Consume packages**
 
-![The image outlines a three-step process for creating and sharing packages: setting up a feed, pushing packages to the feed, and consuming packages from the feed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867908/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Artifacts/three-step-package-creation-sharing-process.jpg)
+![The image outlines a three-step process for creating and sharing packages: setting up a feed, pushing packages to the feed, and consuming packages from the feed.](https://kodekloud.com/kk-media/image/upload/v1752867908/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Artifacts/three-step-package-creation-sharing-process.jpg)
 
 ***
 
@@ -132,7 +132,7 @@ In Azure DevOps:
 1. Navigate to **Artifacts**.
 2. Click **Create Feed**.
 
-![The image shows a screenshot of the Azure DevOps interface, specifically the "Create new feed" configuration window, where users can set permissions and visibility for package feeds.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867909/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Artifacts/azure-devops-create-new-feed-screenshot.jpg)
+![The image shows a screenshot of the Azure DevOps interface, specifically the "Create new feed" configuration window, where users can set permissions and visibility for package feeds.](https://kodekloud.com/kk-media/image/upload/v1752867909/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Artifacts/azure-devops-create-new-feed-screenshot.jpg)
 
 Configure these settings:
 
@@ -150,7 +150,7 @@ Configure these settings:
 
 After feed creation, select **Connect to Feed** for authentication snippets, or **Search Stream Sources** to browse upstream packages:
 
-![The image shows a screenshot of an Azure DevOps interface with options to connect to a feed or search upstream sources, under the title "Consuming the Feed."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867910/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Artifacts/azure-devops-consuming-feed-screenshot.jpg)
+![The image shows a screenshot of an Azure DevOps interface with options to connect to a feed or search upstream sources, under the title "Consuming the Feed."](https://kodekloud.com/kk-media/image/upload/v1752867910/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Artifacts/azure-devops-consuming-feed-screenshot.jpg)
 
 * **Connect to Feed**: Copy configuration for `NuGet.config`, `.npmrc`, `settings.xml`, or `pip.conf`.
 * **Search Stream Sources**: Filter by package name, version, license, or dependencies.
@@ -161,7 +161,7 @@ After feed creation, select **Connect to Feed** for authentication snippets, or 
 
 Use Azure Pipelines to restore, version, and publish packages automatically:
 
-![The image illustrates integrating with CI/CD pipelines, highlighting automated package versioning, restoring packages during builds, and continuous integration with Azure Pipelines, alongside a screenshot of Azure DevOps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867911/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Artifacts/ci-cd-pipelines-azure-devops-integration.jpg)
+![The image illustrates integrating with CI/CD pipelines, highlighting automated package versioning, restoring packages during builds, and continuous integration with Azure Pipelines, alongside a screenshot of Azure DevOps.](https://kodekloud.com/kk-media/image/upload/v1752867911/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Artifacts/ci-cd-pipelines-azure-devops-integration.jpg)
 
 ### Pipeline Steps
 
@@ -210,7 +210,7 @@ Automate version bumps using tools like [Dependabot](https://dependabot.com/) or
 
 ## Best Practices
 
-![The image outlines three best practices for using Azure Artifacts: using semantic versioning, organizing packages with scopes and views, and implementing retention policies for artifact management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867912/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Artifacts/azure-artifacts-best-practices-diagram.jpg)
+![The image outlines three best practices for using Azure Artifacts: using semantic versioning, organizing packages with scopes and views, and implementing retention policies for artifact management.](https://kodekloud.com/kk-media/image/upload/v1752867912/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Artifacts/azure-artifacts-best-practices-diagram.jpg)
 
 * Adopt [semantic versioning](https://semver.org/) to signal breaking changes, features, and fixes.
 * Leverage **scopes and views** to partition packages by team, environment, or lifecycle.

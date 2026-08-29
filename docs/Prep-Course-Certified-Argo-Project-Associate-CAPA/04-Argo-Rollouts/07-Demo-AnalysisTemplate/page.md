@@ -55,9 +55,7 @@ spec:
 
 To reference an argument inside the template use the `args` namespace, for example `{{ args.service-name }}`.
 
-<Callout icon="lightbulb">
-  Arguments are substituted at runtime using the template expression `{{ args.<name> }}`. Ensure the argument names in your Rollout match exactly those declared in the AnalysisTemplate.
-</Callout>
+> **lightbulb** Arguments are substituted at runtime using the template expression `{{ args.<name> }}`. Ensure the argument names in your Rollout match exactly those declared in the AnalysisTemplate.
 
 ## Metrics, providers, and conditions
 
@@ -174,9 +172,7 @@ Key details:
 * `interval: 5s` — delay between successive probes.
 * `successCondition` — for the web provider, `result.code` contains the HTTP response status code.
 
-<Callout icon="lightbulb">
-  Use `count` and `interval` to control sample size and cadence. Collecting multiple samples helps smooth out transient failures and reduces flakiness in progressive rollouts.
-</Callout>
+> **lightbulb** Use `count` and `interval` to control sample size and cadence. Collecting multiple samples helps smooth out transient failures and reduces flakiness in progressive rollouts.
 
 ## Create the AnalysisTemplate
 
@@ -242,6 +238,4 @@ Now the AnalysisTemplate exists and is ready to be referenced by a Rollout in th
 
 For additional examples and provider details, consult the Argo Rollouts AnalysisTemplates guide in the official documentation.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/621a0306-7c3c-42d3-aad2-5431d3a97848" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/621a0306-7c3c-42d3-aad2-5431d3a97848)

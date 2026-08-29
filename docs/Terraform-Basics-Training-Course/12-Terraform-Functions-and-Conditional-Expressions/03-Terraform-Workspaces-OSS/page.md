@@ -42,9 +42,7 @@ resource "aws_instance" "projectB" {
 }
 ```
 
-<Callout icon="lightbulb">
-  Terraform workspaces allow you to use one configuration directory to manage multiple projects (or environments) without duplicating files. This improves maintainability and prevents configuration drift.
-</Callout>
+> **lightbulb** Terraform workspaces allow you to use one configuration directory to manage multiple projects (or environments) without duplicating files. This improves maintainability and prevents configuration drift.
 
 ## Using Workspaces to Manage Environments
 

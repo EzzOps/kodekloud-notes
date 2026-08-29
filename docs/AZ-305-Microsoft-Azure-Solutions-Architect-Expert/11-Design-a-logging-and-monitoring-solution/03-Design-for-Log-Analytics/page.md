@@ -7,7 +7,7 @@ After clicking "Done Editing," the heading will be displayed on the canvas.
 
 Next, add a parameter to create a drop-down menu for VM selection. This parameter can be set up using options such as drop-down, time range, resource picker, resource type picker, or location picker.
 
-![The image shows a Microsoft Azure Monitor interface with a "New Parameter" window open, allowing users to configure settings for a VM Performance Workbook.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866995/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-workbooks-and-Insights/azure-monitor-new-parameter-vm-settings.jpg)
+![The image shows a Microsoft Azure Monitor interface with a "New Parameter" window open, allowing users to configure settings for a VM Performance Workbook.](https://kodekloud.com/kk-media/image/upload/v1752866995/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-workbooks-and-Insights/azure-monitor-new-parameter-vm-settings.jpg)
 
 You can choose between a subscription picker or a resource picker. For our example, we’ll use the resource picker with a Resource Graph query to list all available Virtual Machines.
 
@@ -30,17 +30,17 @@ Now, add performance metrics to visualize the data for the selected VMs. Follow 
 2. Choose the metric you want to display (e.g., CPU percentage) and set the aggregation method (such as Average).
 3. Click "Run Metrics" to generate the visualization. You can adjust the visualization type (bar chart, area chart, etc.) and the graph size as needed.
 
-![The image shows a Microsoft Azure Monitor Workbook interface, where a user is editing a metric item and selecting a resource type related to virtual machines. The interface includes options for settings, visualization, and time range.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866996/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-workbooks-and-Insights/azure-monitor-workbook-virtual-machines.jpg)
+![The image shows a Microsoft Azure Monitor Workbook interface, where a user is editing a metric item and selecting a resource type related to virtual machines. The interface includes options for settings, visualization, and time range.](https://kodekloud.com/kk-media/image/upload/v1752866996/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-workbooks-and-Insights/azure-monitor-workbook-virtual-machines.jpg)
 
 For additional insights, try adding another metric related to the disk performance. If a selected metric does not show data, switch to another metric with available values.
 
-![The image shows a Microsoft Azure Monitor workbook interface displaying a line chart for "Data Disk Bandwidth Consumed Percentage, Average" over time. The left panel includes navigation options like Overview, Activity log, Alerts, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866999/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-workbooks-and-Insights/azure-monitor-workbook-line-chart.jpg)
+![The image shows a Microsoft Azure Monitor workbook interface displaying a line chart for "Data Disk Bandwidth Consumed Percentage, Average" over time. The left panel includes navigation options like Overview, Activity log, Alerts, and more.](https://kodekloud.com/kk-media/image/upload/v1752866999/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-workbooks-and-Insights/azure-monitor-workbook-line-chart.jpg)
 
 Once satisfied with your metrics, click "Done Editing" to finalize your workbook. You can also modify parameter settings to enable multi-selection if required.
 
-![The image shows a Microsoft Azure portal interface displaying a "VM Performance Workbook" with options to edit parameters and settings. The left sidebar includes navigation options like Overview, Activity log, Alerts, and Workbooks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867004/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-workbooks-and-Insights/azure-portal-vm-performance-workbook.jpg)
+![The image shows a Microsoft Azure portal interface displaying a "VM Performance Workbook" with options to edit parameters and settings. The left sidebar includes navigation options like Overview, Activity log, Alerts, and Workbooks.](https://kodekloud.com/kk-media/image/upload/v1752867004/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-workbooks-and-Insights/azure-portal-vm-performance-workbook.jpg)
 
-![The image shows a Microsoft Azure Monitor dashboard displaying a VM Performance Workbook with a graph of CPU usage over time for selected virtual machines. The sidebar includes options like Overview, Activity log, Alerts, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867006/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-workbooks-and-Insights/azure-monitor-vm-performance-dashboard.jpg)
+![The image shows a Microsoft Azure Monitor dashboard displaying a VM Performance Workbook with a graph of CPU usage over time for selected virtual machines. The sidebar includes options like Overview, Activity log, Alerts, and more.](https://kodekloud.com/kk-media/image/upload/v1752867006/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-workbooks-and-Insights/azure-monitor-vm-performance-dashboard.jpg)
 
 > **lightbulb** Remember to save and share your workbook when you’re done to enable team-wide collaboration.
 
@@ -77,11 +77,11 @@ Tailored for Kubernetes workloads, Container Insights monitors containerized env
 * Detailed performance and memory usage metrics for controllers, nodes, and pods.
 * Centralized log collection to facilitate troubleshooting and analysis.
 
-![The image is a presentation slide from KodeKloud about "Design for Azure Insights," detailing how to monitor resources using telemetry data, with sections on Application, VM, and Container Insights. It also includes a screenshot of the Azure Monitor Insights Hub, listing various services and features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867007/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-workbooks-and-Insights/design-for-azure-insights-slide.jpg)
+![The image is a presentation slide from KodeKloud about "Design for Azure Insights," detailing how to monitor resources using telemetry data, with sections on Application, VM, and Container Insights. It also includes a screenshot of the Azure Monitor Insights Hub, listing various services and features.](https://kodekloud.com/kk-media/image/upload/v1752867007/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-workbooks-and-Insights/design-for-azure-insights-slide.jpg)
 
 To access these insights, navigate to the Monitor section in the Azure portal. For Virtual Machines, ensure they are onboarded to send telemetry data to the configured workspace. For storage accounts, you can monitor metrics such as transactions, latency, errors, and capacity.
 
-![The image shows a Microsoft Azure portal interface displaying a monitoring dashboard for storage accounts, with metrics such as transactions, latency, and errors. The dashboard includes a list of subscriptions and their corresponding performance data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867009/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-workbooks-and-Insights/azure-portal-storage-monitoring-dashboard.jpg)
+![The image shows a Microsoft Azure portal interface displaying a monitoring dashboard for storage accounts, with metrics such as transactions, latency, and errors. The dashboard includes a list of subscriptions and their corresponding performance data.](https://kodekloud.com/kk-media/image/upload/v1752867009/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-workbooks-and-Insights/azure-portal-storage-monitoring-dashboard.jpg)
 
 Azure Insights provides a rich, holistic view of your resource performance through detailed telemetry.
 
@@ -167,7 +167,7 @@ Access control for a Log Analytics workspace can be managed using one of the fol
 
 The following diagram illustrates these different access control designs:
 
-![The image illustrates three designs for workspace access control: centralized, decentralized, and hybrid, each with a brief description and diagram.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867010/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Log-Analytics/workspace-access-control-designs.jpg)
+![The image illustrates three designs for workspace access control: centralized, decentralized, and hybrid, each with a brief description and diagram.](https://kodekloud.com/kk-media/image/upload/v1752867010/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Log-Analytics/workspace-access-control-designs.jpg)
 
 ### Detailed Access Control Models
 
@@ -185,7 +185,7 @@ Onboarding resources to a Log Analytics workspace is well-documented in our [AZ-
 
 The diagram below, courtesy of KodeKloud, compares the centralized and decentralized models, detailing access, permissions, and scope:
 
-![The image is a diagram from KodeKloud illustrating workspace access control, comparing centralized and decentralized models, including aspects like access, permissions, and scope.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867011/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Log-Analytics/workspace-access-control-diagram.jpg)
+![The image is a diagram from KodeKloud illustrating workspace access control, comparing centralized and decentralized models, including aspects like access, permissions, and scope.](https://kodekloud.com/kk-media/image/upload/v1752867011/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Log-Analytics/workspace-access-control-diagram.jpg)
 
 This demo workspace is managed by Microsoft and ingests a significant volume of data from various demo workloads—providing numerous tables for you to explore and query even if you do not operate a production environment.
 
@@ -195,7 +195,7 @@ Log Analytics workspaces can be easily managed and configured directly from the 
 
 The screenshot below shows the Azure portal interface for a Log Analytics workspace, displaying key details such as the workspace name, ID, status, location, and subscription information. The left-hand sidebar provides access to various settings and options:
 
-![The image shows a Microsoft Azure portal interface displaying details of a Log Analytics workspace, including its name, ID, status, location, and subscription information. The sidebar on the left lists various settings and options related to the workspace.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867012/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Log-Analytics/azure-portal-log-analytics-workspace.jpg)
+![The image shows a Microsoft Azure portal interface displaying details of a Log Analytics workspace, including its name, ID, status, location, and subscription information. The sidebar on the left lists various settings and options related to the workspace.](https://kodekloud.com/kk-media/image/upload/v1752867012/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Log-Analytics/azure-portal-log-analytics-workspace.jpg)
 
 Both resource-level and workspace-level permissions are available:
 

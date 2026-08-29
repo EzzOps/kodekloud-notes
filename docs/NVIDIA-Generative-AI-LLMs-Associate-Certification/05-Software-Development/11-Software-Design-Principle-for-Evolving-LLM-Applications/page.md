@@ -32,9 +32,7 @@ Practical guidance
 * Keep wiring and configuration separate from business logic so feature teams can swap implementations via config changes or environment variables.
 * Combine DI with feature flags or strategy patterns for safe rollouts and A/B testing of new models or techniques.
 
-<Callout icon="lightbulb">
-  When designing an LLM system, define interfaces for inference, tokenization, and data pipelines. Use factories or a DI container to wire concrete implementations (local models, cloud APIs, or experimental prototypes) so switching or testing them requires minimal changes.
-</Callout>
+> **lightbulb** When designing an LLM system, define interfaces for inference, tokenization, and data pipelines. Use factories or a DI container to wire concrete implementations (local models, cloud APIs, or experimental prototypes) so switching or testing them requires minimal changes.
 
 Comparison with other principles
 
@@ -57,6 +55,4 @@ Further reading and references
 * [Design Patterns: Strategy and Factory](https://refactoring.guru/design-patterns)
 * [Best practices for ML system design](https://ml-ops.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/5e718d80-83f5-4ab6-82b9-c9cdc709cb69" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/5e718d80-83f5-4ab6-82b9-c9cdc709cb69)

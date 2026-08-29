@@ -16,7 +16,7 @@ VPC peering supports connections under various scenarios:
 * Across different regions.
 * Between VPCs in different AWS accounts.
 
-![The image illustrates VPC Peering between two AWS accounts, each containing a Virtual Private Cloud (VPC).](../../../../images/kodekloud.com/kk-media/image/upload/v1752865724/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering/vpc-peering-aws-accounts-diagram.jpg)
+![The image illustrates VPC Peering between two AWS accounts, each containing a Virtual Private Cloud (VPC).](https://kodekloud.com/kk-media/image/upload/v1752865724/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering/vpc-peering-aws-accounts-diagram.jpg)
 
 ## How VPC Peering Works
 
@@ -29,7 +29,7 @@ One VPC initiates a peering request to the other. If the VPCs belong to differen
 
 After establishing the connection, you need to manually update the route tables in both VPCs. For instance, in VPC One, add a route that directs traffic destined for the 10.2.0.0/16 CIDR block to the peering connection. Similarly, in VPC Two, create a route for the 10.1.0.0/16 CIDR block pointing to the same connection.
 
-![The image illustrates a VPC peering process between two virtual private clouds (VPC1 and VPC2) with their respective IP ranges, showing the sending and accepting of a peering request.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865725/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering/vpc-peering-process-ip-ranges.jpg)
+![The image illustrates a VPC peering process between two virtual private clouds (VPC1 and VPC2) with their respective IP ranges, showing the sending and accepting of a peering request.](https://kodekloud.com/kk-media/image/upload/v1752865725/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering/vpc-peering-process-ip-ranges.jpg)
 
 > **lightbulb** Remember to update the route tables in both VPCs after establishing the peering connection. Without these changes, instances will not be able to communicate.
 
@@ -37,7 +37,7 @@ After establishing the connection, you need to manually update the route tables 
 
 One critical aspect of VPC peering is its non-transitive nature. For example, if you have three VPCs (VPC One, VPC Two, and VPC Three) and establish peering between VPC One & VPC Two and between VPC Two & VPC Three, VPC One will not automatically communicate with VPC Three. Each communication pair requires a dedicated peering connection.
 
-![The image is a diagram illustrating VPC peering between three virtual private clouds (VPC 1, VPC 2, and VPC 3), with a central point indicating a connection issue.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865727/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering/vpc-peering-diagram-connection-issue.jpg)
+![The image is a diagram illustrating VPC peering between three virtual private clouds (VPC 1, VPC 2, and VPC 3), with a central point indicating a connection issue.](https://kodekloud.com/kk-media/image/upload/v1752865727/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering/vpc-peering-diagram-connection-issue.jpg)
 
 > **triangle-alert** VPC peering does not support transitive routing. Ensure that each pair of VPCs needing communication has its own peering connection.
 
@@ -58,7 +58,7 @@ VPC peering offers a secure and efficient mechanism to connect two VPCs, allowin
 | Cross-Region Support | Works across regions and between AWS accounts                                              |
 | Cost Efficiency      | No additional charge for peering connections; only data transfer is billed (if applicable) |
 
-![The image is a summary slide about VPC Peering, highlighting its function, connectivity across regions and accounts, and cost details related to data transfer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865730/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering/vpc-peering-summary-function-connectivity.jpg)
+![The image is a summary slide about VPC Peering, highlighting its function, connectivity across regions and accounts, and cost details related to data transfer.](https://kodekloud.com/kk-media/image/upload/v1752865730/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VPC-Peering/vpc-peering-summary-function-connectivity.jpg)
 
 By understanding and implementing VPC peering, you can effectively design and manage your cloud network, ensuring secure and efficient resource communication across different VPCs. For more configuration details and best practices, refer to the AWS documentation and guidelines on VPC peering.
 

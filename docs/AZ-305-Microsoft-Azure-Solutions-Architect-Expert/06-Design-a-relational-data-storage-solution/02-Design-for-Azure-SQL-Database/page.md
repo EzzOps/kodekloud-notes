@@ -23,7 +23,7 @@ Azure provides three main SQL offerings:
    * **Single Database:** Choose between provisioned compute or serverless execution. With provisioned compute, you pre-allocate resources (e.g., 4 vCores and associated memory), while the serverless mode dynamically adjusts based on query demand.
    * **Elastic Pool:** Multiple databases share compute and storage resources within predefined limits, optimizing costs and ensuring performance based on the current workload.
 
-![The image is a guide on when to use different Azure SQL Database offerings, including SQL Virtual Machine, Managed Instances, and Databases, with brief descriptions of each option.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867152/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-database-guide-options.jpg)
+![The image is a guide on when to use different Azure SQL Database offerings, including SQL Virtual Machine, Managed Instances, and Databases, with brief descriptions of each option.](https://kodekloud.com/kk-media/image/upload/v1752867152/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-database-guide-options.jpg)
 
 If you require a private IP address for your SQL database, consider using Private Link. Additionally, SQL Database supports storage up to 100 terabytes on the hyperscale tier. The native elastic pool in SQL Database functions similarly to instance pools by sharing resources among databases to optimize both cost and performance. However, plan your resource limits carefully to avoid performance throttling.
 
@@ -53,7 +53,7 @@ SQL Managed Instances provide a fully managed solution while still offering inst
 
 Additional benefits include native virtual network integration and near-zero downtime migrations—ideal for lift-and-shift scenarios from on-premises environments. Managed Instances also support failover groups for business continuity and integrate with on-premises identities using Azure AD Connect.
 
-![The image is an infographic about Azure SQL Managed Instance, highlighting its features: Optimization, Instance Scoped Features, PaaS, and Differentiators. It explains benefits like resource sharing, instance features, platform management, and migration capabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867153/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-managed-instance-infographic.jpg)
+![The image is an infographic about Azure SQL Managed Instance, highlighting its features: Optimization, Instance Scoped Features, PaaS, and Differentiators. It explains benefits like resource sharing, instance features, platform management, and migration capabilities.](https://kodekloud.com/kk-media/image/upload/v1752867153/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-managed-instance-infographic.jpg)
 
 ### SQL Virtual Machine
 
@@ -65,7 +65,7 @@ SQL on VMs is an IaaS approach that gives you complete control over the OS and S
 
 Additional differentiators include extended support for SQL Server 2008 R2, automated backup and patching via the update management tool, point-in-time restore using Azure Backup, and accelerated storage performance with Azure Blob Caching.
 
-![The image is an infographic about Azure SQL Virtual Machine, highlighting its components: IaaS, Analysis, Reporting, and Integration, Features, and Differentiators. It provides details on control, support, and unique features like automated backups and Azure Blob Caching.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867154/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-vm-infographic.jpg)
+![The image is an infographic about Azure SQL Virtual Machine, highlighting its components: IaaS, Analysis, Reporting, and Integration, Features, and Differentiators. It provides details on control, support, and unique features like automated backups and Azure Blob Caching.](https://kodekloud.com/kk-media/image/upload/v1752867154/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-vm-infographic.jpg)
 
 ## Choosing the Right Solution
 
@@ -78,7 +78,7 @@ Additional differentiators include extended support for SQL Server 2008 R2, auto
 * **SQL Managed Instance:**\
   Select if you need instance-scoped features (such as SQL Server Agent and CLR support) coupled with native virtual network integration.
 
-![The image is a decision flowchart for choosing SQL offerings, showing three options with corresponding needs: migrating to a cloud database with full control, using a managed database for modern applications, and lifting-and-shifting to the cloud with instance-scoped features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867155/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/sql-offerings-decision-flowchart.jpg)
+![The image is a decision flowchart for choosing SQL offerings, showing three options with corresponding needs: migrating to a cloud database with full control, using a managed database for modern applications, and lifting-and-shifting to the cloud with instance-scoped features.](https://kodekloud.com/kk-media/image/upload/v1752867155/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/sql-offerings-decision-flowchart.jpg)
 
 ## Deploying an Azure SQL Database
 
@@ -87,19 +87,19 @@ Follow these steps to deploy an Azure SQL Database via the Azure portal:
 1. **Access the Azure Portal:**\
    Search for "SQL" to view options such as SQL Databases, SQL Virtual Machines, and SQL Managed Instances.
 
-![The image shows the Microsoft Azure portal with a search for "SQL," displaying various SQL-related services, marketplace options, and documentation. The user interface includes options like SQL databases, SQL servers, and SQL managed instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867156/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-portal-sql-services-overview.jpg)
+![The image shows the Microsoft Azure portal with a search for "SQL," displaying various SQL-related services, marketplace options, and documentation. The user interface includes options like SQL databases, SQL servers, and SQL managed instances.](https://kodekloud.com/kk-media/image/upload/v1752867156/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-portal-sql-services-overview.jpg)
 
 2. **Create a SQL Database:**
    * Select **SQL Databases** and click on **Create a SQL database**.
    * Choose your subscription and create a new resource group if required.
    * Provide a database name (e.g., "SQL Sample 305") and select a server. If no server exists, create a new one. Remember, the server name must be unique, and you must select a location (e.g., East US).
 
-![The image shows a Microsoft Azure portal page for creating a SQL database, with fields for project and database details such as subscription, resource group, database name, and server selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867157/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-database-creation-page.jpg)
+![The image shows a Microsoft Azure portal page for creating a SQL database, with fields for project and database details such as subscription, resource group, database name, and server selection.](https://kodekloud.com/kk-media/image/upload/v1752867157/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-database-creation-page.jpg)
 
 3. **Configure Authentication:**\
    Choose your preferred authentication method. In this example, select SQL authentication.
 
-![The image shows a Microsoft Azure portal page for creating an SQL Database Server, with fields for server details and authentication settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867158/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-portal-sql-database-server.jpg)
+![The image shows a Microsoft Azure portal page for creating an SQL Database Server, with fields for server details and authentication settings.](https://kodekloud.com/kk-media/image/upload/v1752867158/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-portal-sql-database-server.jpg)
 
 4. **Select Database Tier and Compute Options:**\
    For development, you might select the **Basic** tier, which offers 2 GB of storage at a low monthly cost. For production environments, consider tiers like General Purpose or Hyperscale.
@@ -110,29 +110,29 @@ Follow these steps to deploy an Azure SQL Database via the Azure portal:
   <img alt="The image shows a Microsoft Azure portal interface for creating a SQL database, with fields for project and database details. The user is in the &#x22;Basics&#x22; tab, entering information like subscription, resource group, and database name." />
 </Frame>
 
-![The image shows a Microsoft Azure portal page for creating a SQL database, with options to configure database details such as name, server, and workload environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867159/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-portal-sql-database-creation-2.jpg)
+![The image shows a Microsoft Azure portal page for creating a SQL database, with options to configure database details such as name, server, and workload environment.](https://kodekloud.com/kk-media/image/upload/v1752867159/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-portal-sql-database-creation-2.jpg)
 
 5. **Storage and Backup Options:**\
    For development, choose **Locally Redundant Storage (LRS)**. In production, consider options like ZRS or GRS for geo-redundant storage.
 
-![The image shows a configuration page for creating an SQL database on Microsoft Azure, where users can select service and compute tiers, and view cost estimates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867160/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-database-configuration.jpg)
+![The image shows a configuration page for creating an SQL database on Microsoft Azure, where users can select service and compute tiers, and view cost estimates.](https://kodekloud.com/kk-media/image/upload/v1752867160/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-database-configuration.jpg)
 
 6. **Networking and Connectivity:**\
    For initial deployment, leave the connectivity settings at the default (e.g., "No access"). Later, if external access is needed, update the firewall settings to allow your IP address.
 
-![The image shows a Microsoft Azure portal page for creating an SQL database, with options for configuring database details such as name, server, and workload environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867161/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-database-configuration-2.jpg)
+![The image shows a Microsoft Azure portal page for creating an SQL database, with options for configuring database details such as name, server, and workload environment.](https://kodekloud.com/kk-media/image/upload/v1752867161/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-database-configuration-2.jpg)
 
-![The image shows a Microsoft Azure portal page for creating an SQL database, focusing on the "Networking" settings. It includes options for network connectivity, connection policy, and a cost summary on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867162/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-database-networking-settings.jpg)
+![The image shows a Microsoft Azure portal page for creating an SQL database, focusing on the "Networking" settings. It includes options for network connectivity, connection policy, and a cost summary on the right.](https://kodekloud.com/kk-media/image/upload/v1752867162/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-database-networking-settings.jpg)
 
 7. **Security and Data Source Selection:**\
    For this sample deployment, disable additional security options such as Defender, Ledger, Identity, or Transparent Data Encryption (TDE). Optionally, select a sample database (such as Adventure Works LT) as your data source.
 
-![The image shows a Microsoft Azure interface for creating an SQL database, with options for data source and collation settings, and a cost summary on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867163/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-database-interface.jpg)
+![The image shows a Microsoft Azure interface for creating an SQL database, with options for data source and collation settings, and a cost summary on the right.](https://kodekloud.com/kk-media/image/upload/v1752867163/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-database-interface.jpg)
 
 8. **Create the Database:**\
    Click **Create** and wait for the validation and deployment processes to complete.
 
-![The image shows a Microsoft Azure portal page indicating that a SQL database deployment is complete, with options to view deployment details and next steps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867164/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-portal-sql-deployment-complete.jpg)
+![The image shows a Microsoft Azure portal page indicating that a SQL database deployment is complete, with options to view deployment details and next steps.](https://kodekloud.com/kk-media/image/upload/v1752867164/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-portal-sql-deployment-complete.jpg)
 
 After deployment, you can review the database details—including the server name and connection strings—to easily integrate with your preferred SQL tools or SDK.
 
@@ -152,7 +152,7 @@ SELECT * FROM [SalesLT].[Customer];
 
 The Query Editor functions similarly to standard SQL clients, allowing you to customize and execute queries as needed.
 
-![The image shows the Microsoft Azure SQL Database Query Editor interface, displaying a list of tables and views on the left and a query input area on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867165/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-database-query-editor.jpg)
+![The image shows the Microsoft Azure SQL Database Query Editor interface, displaying a list of tables and views on the left and a query input area on the right.](https://kodekloud.com/kk-media/image/upload/v1752867165/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-database-query-editor.jpg)
 
 ## Overview of SQL Managed Instance Deployment
 
@@ -162,13 +162,13 @@ Deploying SQL Managed Instance (MI) resembles creating an SQL Database, but with
 * When setting up an MI, you will define unique names, select from various service tiers (e.g., General Purpose, Business Critical), and configure authentication similar to SQL Database.
 * Note that MI typically incurs higher costs due to its advanced features and native VNet integration.
 
-![The image shows a Microsoft Azure portal interface for creating an Azure SQL Managed Instance, with fields for instance name, region, and authentication settings. There are error messages indicating password requirements are not met.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867166/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-managed-instance-portal.jpg)
+![The image shows a Microsoft Azure portal interface for creating an Azure SQL Managed Instance, with fields for instance name, region, and authentication settings. There are error messages indicating password requirements are not met.](https://kodekloud.com/kk-media/image/upload/v1752867166/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-managed-instance-portal.jpg)
 
 Configure networking, security, and geo-replication settings based on your needs. Although the MI deployment process is similar to that of SQL Database, the pricing reflects its advanced feature set.
 
-![The image shows a Microsoft Azure portal page for creating an Azure SQL Managed Instance, focusing on the "Security" settings, including options for enabling Microsoft Defender for SQL and identity management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867167/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-managed-instance-security-settings.jpg)
+![The image shows a Microsoft Azure portal page for creating an Azure SQL Managed Instance, focusing on the "Security" settings, including options for enabling Microsoft Defender for SQL and identity management.](https://kodekloud.com/kk-media/image/upload/v1752867167/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-managed-instance-security-settings.jpg)
 
-![The image shows a Microsoft Azure portal page for creating an Azure SQL Managed Instance, with options for setting collation, time zone, geo-replication, and maintenance window.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867168/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-managed-instance-portal-2.jpg)
+![The image shows a Microsoft Azure portal page for creating an Azure SQL Managed Instance, with options for setting collation, time zone, geo-replication, and maintenance window.](https://kodekloud.com/kk-media/image/upload/v1752867168/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-SQL-Database/azure-sql-managed-instance-portal-2.jpg)
 
 > **lightbulb** For development purposes, consider using SQL Database unless the instance-scoped features or native VNet integration of Managed Instance are required.
 

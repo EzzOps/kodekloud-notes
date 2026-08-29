@@ -4,9 +4,7 @@ stat -c %a /var/lib/kube-proxy/kubeconfig.conf
 stat -c %U:%G /var/lib/kube-proxy/kubeconfig.conf
 ```
 
-<Callout icon="lightbulb">
-  Always grant the minimum file permissions needed. Restrict write access to root (600) wherever possible.
-</Callout>
+> **lightbulb** Always grant the minimum file permissions needed. Restrict write access to root (600) wherever possible.
 
 ***
 
@@ -71,17 +69,13 @@ Audit logs help you monitor all kube-proxy actions and detect suspicious activit
    tail -f /var/log/audit/audit.log | jq .objectRef.resource
    ```
 
-<Callout icon="triangle-alert">
-  Ensure sufficient disk space and retention policies for your audit logs to prevent data loss.
-</Callout>
+> **triangle-alert** Ensure sufficient disk space and retention policies for your audit logs to prevent data loss.
 
 ***
 
 ## Summary of Best Practices
 
-<Frame>
-  ![The image is a summary slide listing five security measures for kube-proxy, including securing config files, encrypting communication, running with least privileges, implementing network policies, and using logging and monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880765/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Kube-Proxy/kube-proxy-security-measures-summary.jpg)
-</Frame>
+![The image is a summary slide listing five security measures for kube-proxy, including securing config files, encrypting communication, running with least privileges, implementing network policies, and using logging and monitoring.](https://kodekloud.com/kk-media/image/upload/v1752880765/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Kube-Proxy/kube-proxy-security-measures-summary.jpg)
 
 * Secure and limit access to `/var/lib/kube-proxy/config.conf` and `kubeconfig.conf`.
 * Enforce TLS and service-account authentication for API traffic.
@@ -89,9 +83,7 @@ Audit logs help you monitor all kube-proxy actions and detect suspicious activit
 * Apply NetworkPolicies to control pod-to-pod traffic.
 * Enable logging and monitoring to detect anomalies.
 
-<Frame>
-  ![The image is a summary slide with two points: regularly updating and patching kube-proxy for security, and enabling audit logs to track kube-proxy actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880766/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Kube-Proxy/kube-proxy-security-audit-logs.jpg)
-</Frame>
+![The image is a summary slide with two points: regularly updating and patching kube-proxy for security, and enabling audit logs to track kube-proxy actions.](https://kodekloud.com/kk-media/image/upload/v1752880766/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Kube-Proxy/kube-proxy-security-audit-logs.jpg)
 
 * Keep kube-proxy updated with the latest security patches.
 * Enable and review audit logs to track every kube-proxy action.
@@ -102,9 +94,7 @@ Audit logs help you monitor all kube-proxy actions and detect suspicious activit
 * [API Auditing in Kubernetes](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/)
 * [Managing Kubernetes ServiceAccounts](https://kubernetes.io/docs/reference/access-authn-authz/service-accounts-admin/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/89baae49-473e-4b56-b53d-1a2c1cf5af1f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/89baae49-473e-4b56-b53d-1a2c1cf5af1f)
 
 
 # Securing the Kubelet

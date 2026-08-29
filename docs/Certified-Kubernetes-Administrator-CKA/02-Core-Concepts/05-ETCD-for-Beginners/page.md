@@ -6,7 +6,7 @@ This article introduces etcd, a distributed key-value store, covering its operat
 
 This article provides a concise introduction to etcd—a distributed, reliable key-value store that is both simple and fast. Whether you’re new to key-value storage concepts or already familiar with etcd’s role in Kubernetes environments, this guide offers valuable insights into its operation and quick start instructions using the etcdctl client tool.
 
-![The image lists objectives for learning about ETCD, including its definition, operation, and related concepts like distributed systems and the RAFT protocol.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869713/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-for-Beginners/frame_20.jpg)
+![The image lists objectives for learning about ETCD, including its definition, operation, and related concepts like distributed systems and the RAFT protocol.](https://kodekloud.com/kk-media/image/upload/v1752869713/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-for-Beginners/frame_20.jpg)
 
 Later in the article, we will dive deeper into high availability topics. You’ll learn about distributed systems, how etcd operates in cluster mode, the Raft consensus protocol, and best practices for configuring a resilient etcd cluster.
 
@@ -24,7 +24,7 @@ In contrast, a key-value store organizes data as independent documents or files.
 * Working individuals can have documents with salary details.
 * Students can have documents with grade details.
 
-![The image shows a key-value store with tables listing names, ages, locations, and either salaries or grades for different individuals.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869714/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-for-Beginners/frame_120.jpg)
+![The image shows a key-value store with tables listing names, ages, locations, and either salaries or grades for different individuals.](https://kodekloud.com/kk-media/image/upload/v1752869714/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-for-Beginners/frame_120.jpg)
 
 For complex data transactions, structured formats like JSON or YAML are used. Here are some examples of key-value pairs stored as JSON documents:
 
@@ -118,7 +118,7 @@ COMMANDS:
 
 > **lightbulb** Different articles may reference varying versions of etcd. Understanding its version history—starting with version 0.1 in August 2013, introducing the Raft consensus algorithm in version 2.0 (February 2015), and further optimizations in version 3 (January 2017)—can clarify command differences. The etcd project was incubated in the CNCF in November 2018.
 
-![The image lists ETCD versions with their release dates from August 2013 to November 2018, noting CNCF incubation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869715/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-for-Beginners/frame_270.jpg)
+![The image lists ETCD versions with their release dates from August 2013 to November 2018, noting CNCF incubation.](https://kodekloud.com/kk-media/image/upload/v1752869715/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-for-Beginners/frame_270.jpg)
 
 ## Transitioning from API v2 to v3
 

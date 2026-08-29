@@ -19,9 +19,7 @@ except Exception as e:
     raise RuntimeError("Failed to load the model.") from e
 ```
 
-<Callout icon="lightbulb">
-  Make sure that all required modules are imported and logging is correctly configured. The model must be loaded before any request is processed to avoid runtime errors.
-</Callout>
+> **lightbulb** Make sure that all required modules are imported and logging is correctly configured. The model must be loaded before any request is processed to avoid runtime errors.
 
 ***
 
@@ -116,9 +114,7 @@ root@pytorch demos/040-040-introduction-to-flask/flask_app on  [] main [!?] via 
 2025-01-15 01:36:46,919 - INFO - Press CTRL+C to quit
 ```
 
-<Callout icon="triangle-alert">
-  Do not use the Flask development server in a production environment. For production deployments, consider using a WSGI server such as Gunicorn.
-</Callout>
+> **triangle-alert** Do not use the Flask development server in a production environment. For production deployments, consider using a WSGI server such as Gunicorn.
 
 ### Sending Test Requests
 
@@ -261,11 +257,9 @@ This concludes our introduction to Flask and model deployment. With Flask, you c
 * [Gunicorn Documentation](https://docs.gunicorn.org/)
 * [Docker Hub](https://hub.docker.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/02473255-a571-4ed3-8795-84db13733d23" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/02473255-a571-4ed3-8795-84db13733d23)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/c6f37a93-7ced-4b01-b1d3-de98ad5bef74" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/c6f37a93-7ced-4b01-b1d3-de98ad5bef74)
 
 
 # Deploying to Kubernetes
@@ -276,25 +270,19 @@ This guide explores the advantages and best practices of deploying machine learn
 
 Kubernetes has rapidly become the de facto standard for deploying scalable, resilient applications, including machine learning (ML) models. Its robust architecture, which has scaled the internet among other applications, now plays a critical role in modern AI/ML initiatives.
 
-<Frame>
-  ![The image illustrates Kubernetes as a central component, highlighting its features such as seamless deployment, AI/ML support, and scalable architecture.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883212/notes-assets/images/PyTorch-Deploying-to-Kubernetes/kubernetes-features-deployment-ai-ml.jpg)
-</Frame>
+![The image illustrates Kubernetes as a central component, highlighting its features such as seamless deployment, AI/ML support, and scalable architecture.](https://kodekloud.com/kk-media/image/upload/v1752883212/notes-assets/images/PyTorch-Deploying-to-Kubernetes/kubernetes-features-deployment-ai-ml.jpg)
 
 In this guide, we explore why Kubernetes is ideal for model deployment. We assume you already have a basic understanding of Kubernetes, so our focus will be on its advantages and best practices for deploying ML models rather than a comprehensive platform overview.
 
 We'll start by discussing the key benefits of using Kubernetes for model deployment. Then, we demonstrate how to leverage Kubernetes to handle specialized workloads, outline the complete deployment workflow for ML models, share best practices, and review popular ML serving frameworks.
 
-<Frame>
-  ![The image shows an agenda for a presentation on Kubernetes, covering topics like its role in model deployment, key benefits, specialized workloads, deployment workflow, best practices, and ML serving frameworks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883213/notes-assets/images/PyTorch-Deploying-to-Kubernetes/kubernetes-presentation-agenda-topics.jpg)
-</Frame>
+![The image shows an agenda for a presentation on Kubernetes, covering topics like its role in model deployment, key benefits, specialized workloads, deployment workflow, best practices, and ML serving frameworks.](https://kodekloud.com/kk-media/image/upload/v1752883213/notes-assets/images/PyTorch-Deploying-to-Kubernetes/kubernetes-presentation-agenda-topics.jpg)
 
 ## What is Kubernetes?
 
 Kubernetes is an open-source platform for automating the deployment, scaling, and management of containerized applications.
 
-<Frame>
-  ![The image is a slide titled "Kubernetes for Model Deployment" featuring the Kubernetes logo and a description of it as an open-source platform for automating deployment, scaling, and management of containerized applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883214/notes-assets/images/PyTorch-Deploying-to-Kubernetes/kubernetes-model-deployment-slide.jpg)
-</Frame>
+![The image is a slide titled "Kubernetes for Model Deployment" featuring the Kubernetes logo and a description of it as an open-source platform for automating deployment, scaling, and management of containerized applications.](https://kodekloud.com/kk-media/image/upload/v1752883214/notes-assets/images/PyTorch-Deploying-to-Kubernetes/kubernetes-model-deployment-slide.jpg)
 
 Rather than rehash its general capabilities, let’s dive into why Kubernetes is particularly well-suited for ML model deployment.
 
@@ -318,9 +306,7 @@ ML and AI tasks often require specific hardware configurations. Kubernetes enabl
 
 Node affinity allows you to define which nodes should execute particular workloads. For instance, if a node is labeled with `gpu=true`, you can ensure that your ML tasks run specifically on these GPU-enabled nodes.
 
-<Frame>
-  ![The image is a slide titled "Specialized Workloads" focusing on "Node Affinity," explaining how to define node preferences for pods using labels and affinity rules, with an example of assigning GPU nodes for model inference tasks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883215/notes-assets/images/PyTorch-Deploying-to-Kubernetes/specialized-workloads-node-affinity.jpg)
-</Frame>
+![The image is a slide titled "Specialized Workloads" focusing on "Node Affinity," explaining how to define node preferences for pods using labels and affinity rules, with an example of assigning GPU nodes for model inference tasks.](https://kodekloud.com/kk-media/image/upload/v1752883215/notes-assets/images/PyTorch-Deploying-to-Kubernetes/specialized-workloads-node-affinity.jpg)
 
 Below is an example deployment manifest that uses node affinity to target nodes labeled with `gpu="true"`:
 
@@ -383,9 +369,7 @@ spec:
 
 Taints prevent pods from being scheduled on certain nodes unless they expressly tolerate them. This is useful for dedicating nodes exclusively to ML workloads.
 
-<Frame>
-  ![The image is a slide titled "Specialized Workloads" discussing "Taints and Tolerations" in Kubernetes, explaining how to prevent general-purpose pods from running on specialized nodes, with an example of allowing only ML-specific pods on GPU-enabled nodes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883216/notes-assets/images/PyTorch-Deploying-to-Kubernetes/specialized-workloads-taints-tolerations.jpg)
-</Frame>
+![The image is a slide titled "Specialized Workloads" discussing "Taints and Tolerations" in Kubernetes, explaining how to prevent general-purpose pods from running on specialized nodes, with an example of allowing only ML-specific pods on GPU-enabled nodes.](https://kodekloud.com/kk-media/image/upload/v1752883216/notes-assets/images/PyTorch-Deploying-to-Kubernetes/specialized-workloads-taints-tolerations.jpg)
 
 First, taint the node using the following command:
 

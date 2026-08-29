@@ -13,17 +13,13 @@ Vault supports two replication modes for batch tokens:
 
 Batch tokens created with a parent token remain bound to the original cluster. Performance secondaries cannot validate the parent, so these tokens do **not** replicate.
 
-<Frame>
-  ![The image illustrates the process of replicating batch tokens in a non-orphan token scenario, showing that batch tokens are only valid on the primary cluster where they were created and are not replicated to the secondary performance cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878625/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Using-Batch-Tokens/replicating-batch-tokens-primary-cluster.jpg)
-</Frame>
+![The image illustrates the process of replicating batch tokens in a non-orphan token scenario, showing that batch tokens are only valid on the primary cluster where they were created and are not replicated to the secondary performance cluster.](https://kodekloud.com/kk-media/image/upload/v1752878625/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Using-Batch-Tokens/replicating-batch-tokens-primary-cluster.jpg)
 
 ### Orphan Tokens
 
 Orphan batch tokens have no parent and are automatically replicated to all performance and DR clusters. Use these when you need a single token valid across multiple clusters.
 
-<Frame>
-  ![The image illustrates the replication of orphaned batch tokens between a primary cluster and a secondary performance cluster, highlighting that these tokens have no parent and are valid on any cluster in the replica set.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878626/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Using-Batch-Tokens/orphaned-batch-tokens-replication-diagram.jpg)
-</Frame>
+![The image illustrates the replication of orphaned batch tokens between a primary cluster and a secondary performance cluster, highlighting that these tokens have no parent and are valid on any cluster in the replica set.](https://kodekloud.com/kk-media/image/upload/v1752878626/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Using-Batch-Tokens/orphaned-batch-tokens-replication-diagram.jpg)
 
 ## Creating Batch Tokens
 
@@ -47,9 +43,7 @@ token_renewable      false
 token_policies       ["default" "hcvop"]
 ```
 
-<Callout icon="lightbulb">
-  The `-orphan=true` flag ensures this token replicates across performance and DR clusters.
-</Callout>
+> **lightbulb** The `-orphan=true` flag ensures this token replicates across performance and DR clusters.
 
 ### Via AppRole
 
@@ -66,9 +60,7 @@ vault write auth/approle/role/hcvop \
 
 A DR operations batch token lets you promote a DR secondary without needing unseal or recovery keys. Grant it the following permissions:
 
-<Frame>
-  ![The image is a slide about "DR Operation Batch Token," explaining its use in promoting a DR secondary cluster without needing unseal/recovery keys, and emphasizing the importance of proper permissions. It includes a Vault certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878627/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Using-Batch-Tokens/dr-operation-batch-token-slide.jpg)
-</Frame>
+![The image is a slide about "DR Operation Batch Token," explaining its use in promoting a DR secondary cluster without needing unseal/recovery keys, and emphasizing the importance of proper permissions. It includes a Vault certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878627/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Using-Batch-Tokens/dr-operation-batch-token-slide.jpg)
 
 ```hcl theme={null}
 path "sys/replication/dr/secondary/promote" {
@@ -107,9 +99,7 @@ path "sys/storage/raft/autopilot/state" {
 * [Transit Secrets Engine](https://www.vaultproject.io/docs/secrets/transit)
 * [Replication Overview](https://www.vaultproject.io/docs/enterprise/replication)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b6a41fdb-447c-43b2-9489-6c8459821fab/lesson/b61adae2-2ce4-42e7-ac3b-85dcb723150b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b6a41fdb-447c-43b2-9489-6c8459821fab/lesson/b61adae2-2ce4-42e7-ac3b-85dcb723150b)
 
 
 # Benefits and Use Cases of Seal Wrapping
@@ -120,13 +110,9 @@ This article discusses seal wrapping in HashiCorp Vault, highlighting its benefi
 
 HashiCorp Vault encrypts data at rest with AES-256, but seal wrapping adds a second layer of encryption using an HSM for FIPS 140-2 compliance. This “double encryption” ensures data is encrypted first by Vault’s master key, then again by the HSM’s key.
 
-<Callout icon="lightbulb">
-  As of Vault 1.10.3, HashiCorp publishes FIPS-certified binaries suffixed with `-fips` that do not require an HSM.
-</Callout>
+> **lightbulb** As of Vault 1.10.3, HashiCorp publishes FIPS-certified binaries suffixed with `-fips` that do not require an HSM.
 
-<Frame>
-  ![The image explains "Seal Wrapping," a method for providing double encryption and FIPS 140-2 compliance by integrating with an HSM, allowing Vault to be used in high-security environments. It also notes that HashiCorp offers Vault binaries for FIPS compliance without HSM integration starting from version 1.10.3.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878630/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Benefits-and-Use-Cases-of-Seal-Wrapping/seal-wrapping-double-encryption-fips.jpg)
-</Frame>
+![The image explains "Seal Wrapping," a method for providing double encryption and FIPS 140-2 compliance by integrating with an HSM, allowing Vault to be used in high-security environments. It also notes that HashiCorp offers Vault binaries for FIPS compliance without HSM integration starting from version 1.10.3.](https://kodekloud.com/kk-media/image/upload/v1752878630/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Benefits-and-Use-Cases-of-Seal-Wrapping/seal-wrapping-double-encryption-fips.jpg)
 
 ## What Is Seal Wrapping?
 
@@ -143,9 +129,7 @@ Vault achieves FIPS 140-2 Level 3 compliance when paired with a Level 3 HSM.
 
 Vault seal-wraps the most sensitive assets by default:
 
-<Frame>
-  ![The image is a slide titled "What is Seal Wrapped by Default?" listing items such as Recovery Key, Any stored key shares, The root key, and The keyring. It includes a Vault certification badge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878630/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Benefits-and-Use-Cases-of-Seal-Wrapping/what-is-seal-wrapped-default-slide.jpg)
-</Frame>
+![The image is a slide titled "What is Seal Wrapped by Default?" listing items such as Recovery Key, Any stored key shares, The root key, and The keyring. It includes a Vault certification badge.](https://kodekloud.com/kk-media/image/upload/v1752878630/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Benefits-and-Use-Cases-of-Seal-Wrapping/what-is-seal-wrapped-default-slide.jpg)
 
 | Resource      | Description                    |
 | ------------- | ------------------------------ |

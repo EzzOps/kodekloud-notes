@@ -95,9 +95,7 @@ Edit the instance security group inbound rules and add a custom TCP rule for por
   <img alt="The image shows an AWS console screen for editing inbound rules in a security group, with settings for allowing traffic from any IP address (0.0.0.0/0). There is also a warning about allowing access from all IP addresses." />
 </Frame>
 
-<Callout icon="warning">
-  Do not leave port 9092 open to the entire internet in production. Restrict access to trusted IP ranges, your VPC, or known CIDR blocks.
-</Callout>
+> **warning** Do not leave port 9092 open to the entire internet in production. Restrict access to trusted IP ranges, your VPC, or known CIDR blocks.
 
 Start the Kafka broker (KRaft)
 Start Kafka in the foreground to watch logs while it initializes:
@@ -154,9 +152,7 @@ Recap
 
 You're now ready to configure your front-end service to produce events to the `cartevent` topic. See you in the next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/event-streaming-with-kafka/module/95f49caf-8e0b-4ed9-b7dd-9f43ff31ed9a/lesson/f9f1dee1-dd0e-4476-8ee0-a0a343a59d6c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/event-streaming-with-kafka/module/95f49caf-8e0b-4ed9-b7dd-9f43ff31ed9a/lesson/f9f1dee1-dd0e-4476-8ee0-a0a343a59d6c)
 
 
 # Demo Starting Our Frontend Interface

@@ -26,7 +26,7 @@ The hierarchical design simplifies the implementation of policies, access contro
 
 Consider the following diagram that illustrates this structure:
 
-![The image illustrates a hierarchy of management groups, subscriptions, resource groups, and resources, explaining their roles and relationships. It includes a diagram showing a root management group branching into IT and Finance, with further subdivisions leading to specific subscriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866935/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-governance/management-hierarchy-diagram-subscriptions.jpg)
+![The image illustrates a hierarchy of management groups, subscriptions, resource groups, and resources, explaining their roles and relationships. It includes a diagram showing a root management group branching into IT and Finance, with further subdivisions leading to specific subscriptions.](https://kodekloud.com/kk-media/image/upload/v1752866935/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-governance/management-hierarchy-diagram-subscriptions.jpg)
 
 ## Governance Strategies and Inheritance
 

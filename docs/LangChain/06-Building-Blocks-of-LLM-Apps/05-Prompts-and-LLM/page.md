@@ -42,9 +42,7 @@ Key practices for reliably consuming LLM output
 | Error handling | Provide safe fallbacks and clear error messages                          | Retry, ask the model to reformat, or reject input         |
 | Security       | Never trust unvalidated LLM output in security- or safety-critical flows | Sanitize before executing or storing                      |
 
-<Callout icon="warning">
-  Do not execute or evaluate code, commands, or markup produced by an LLM without strict validation. Treat LLM output as untrusted data: validate structure, types, ranges, and content before use.
-</Callout>
+> **warning** Do not execute or evaluate code, commands, or markup produced by an LLM without strict validation. Treat LLM output as untrusted data: validate structure, types, ranges, and content before use.
 
 Example prompt patterns you can use to force structured output
 
@@ -66,9 +64,7 @@ References and further reading
 
 By specifying explicit output formats, validating responses, and normalizing values, you make LLM-driven applications more robust, predictable, and secure.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/bb8afda8-9de9-4865-aabf-bc71786440b2/lesson/cf17e488-e86d-494b-b410-6e89b4f47212" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/bb8afda8-9de9-4865-aabf-bc71786440b2/lesson/cf17e488-e86d-494b-b410-6e89b4f47212)
 
 
 # Prompts and LLM
@@ -109,9 +105,7 @@ Table — Prompt elements and examples
 | Example (few-shot) | Shows desired mapping     | `Input: "Bug report" → Output: "5-line summary"`    |
 | Role               | Provides tone/persona     | `You are an expert UX writer.`                      |
 
-<Callout icon="lightbulb">
-  Clear, concise prompts with explicit output constraints (format, examples, length) consistently produce more reliable model responses. Use few-shot examples when you need a strict or unusual output structure.
-</Callout>
+> **lightbulb** Clear, concise prompts with explicit output constraints (format, examples, length) consistently produce more reliable model responses. Use few-shot examples when you need a strict or unusual output structure.
 
 Crafting the right prompt matters: small changes in wording, ordering, or context can significantly affect the model’s output quality. After defining a prompt, the next core component is the LLM itself.
 
@@ -153,9 +147,7 @@ Common pitfalls and limitations
 * Sensitive or private information should not be passed to third-party models without review.
 * Overly long or noisy context can dilute the model’s ability to prioritize relevant facts.
 
-<Callout icon="warning">
-  LLMs may produce incorrect or fabricated information. Always validate model outputs against trusted sources for critical or factual tasks, and implement guardrails for sensitive use cases.
-</Callout>
+> **warning** LLMs may produce incorrect or fabricated information. Always validate model outputs against trusted sources for critical or factual tasks, and implement guardrails for sensitive use cases.
 
 Evaluation and iteration
 
@@ -172,6 +164,4 @@ Links and references
 Summary
 Prompts are the primary interface to LLMs; good prompt engineering combines clear instructions, well-structured context, explicit constraints, and iterative testing. Pair these techniques with rigorous validation to build reliable, useful language applications.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/bb8afda8-9de9-4865-aabf-bc71786440b2/lesson/38ac00b4-6dbd-46dc-981c-4f8e22e3801f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/bb8afda8-9de9-4865-aabf-bc71786440b2/lesson/38ac00b4-6dbd-46dc-981c-4f8e22e3801f)

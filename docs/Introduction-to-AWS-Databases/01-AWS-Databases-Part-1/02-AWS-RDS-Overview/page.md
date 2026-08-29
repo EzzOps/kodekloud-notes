@@ -75,9 +75,7 @@ Multi-AZ deployments are designed for production-grade availability:
 * The standby is not used for application read/write traffic; it is maintained solely for failover.
 * If the primary fails, RDS automatically fails over to the standby and updates the DNS endpoint so your application continues using the same connection string with minimal downtime.
 
-<Callout icon="lightbulb">
-  Standby instances used for Multi-AZ failover are not exposed for read traffic. For read scaling, provision read replicas. Amazon Aurora uses a different model where multiple replicas can serve reads and participate in faster failover.
-</Callout>
+> **lightbulb** Standby instances used for Multi-AZ failover are not exposed for read traffic. For read scaling, provision read replicas. Amazon Aurora uses a different model where multiple replicas can serve reads and participate in faster failover.
 
 How application connectivity and failover work
 
@@ -114,6 +112,4 @@ Links and references
 * [Amazon S3](https://aws.amazon.com/s3/)
 * [Kubernetes and RDS integrations — general guidance](https://kubernetes.io/docs/concepts/storage/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/d8a734ed-504d-4a0a-952e-3ea3b699c3da" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/d8a734ed-504d-4a0a-952e-3ea3b699c3da)

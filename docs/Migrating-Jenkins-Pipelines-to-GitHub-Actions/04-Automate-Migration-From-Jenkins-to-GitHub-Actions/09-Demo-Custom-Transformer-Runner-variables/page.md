@@ -79,9 +79,7 @@ Because `continue-on-error: true` is set, the Upload Artifacts step still runs a
   <img alt="Screenshot of a GitHub Actions workflow run for the jenkins-demo-org/solar-system repo. The run &#x22;Update ci-pipeline-poll-scm.yml&#x22; shows Failure because the &#x22;Dependency Scanning - OWASP Dependency Check&#x22; job failed while steps like Installing Dependencies and NPM scanning succeeded." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Using `continue-on-error: true` for the dependency-check step lets subsequent steps (for example, uploading artifacts) run even if dependency-check exits non-zero. If you prefer the job to fail on vulnerabilities, omit `continue-on-error` (or set it to `false`) and make the upload conditional (for example, `if: failure()` or use `if: always()` for unconditional uploads depending on your policy).
-</Callout>
+> **lightbulb** Using `continue-on-error: true` for the dependency-check step lets subsequent steps (for example, uploading artifacts) run even if dependency-check exits non-zero. If you prefer the job to fail on vulnerabilities, omit `continue-on-error` (or set it to `false`) and make the upload conditional (for example, `if: failure()` or use `if: always()` for unconditional uploads depending on your policy).
 
 Final notes and verification
 
@@ -96,9 +94,7 @@ Final notes and verification
 
 That's the complete flow: parse Jenkins `additionalArguments`, implement a custom transformer that emits a GitHub Actions step using `dependency-check/Dependency-Check_Action@main`, ensure reports are written to a defined `out` directory, and upload those reports as artifacts even if the scanner step flags vulnerabilities.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/cbdf13a1-838d-4b48-9287-736900d42e56" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/cbdf13a1-838d-4b48-9287-736900d42e56)
 
 
 # Demo Custom Transformer Runner variables

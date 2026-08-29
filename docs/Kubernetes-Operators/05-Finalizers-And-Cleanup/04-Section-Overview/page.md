@@ -51,9 +51,7 @@ Idempotence is critical for cleanup routines. Reconciles can run multiple times 
   <img alt="The image illustrates a rule of idempotence in computing, showing scenarios like retry after an error, controller restart, and external temporary downtime, leading to a state where operations are &#x22;safe to repeat.&#x22;" />
 </Frame>
 
-<Callout icon="lightbulb">
-  Design cleanup operations so they are idempotent and fast. For example, check for the existence of an external resource and treat "not found" as success rather than an error. This prevents controllers from getting stuck on permanent failures.
-</Callout>
+> **lightbulb** Design cleanup operations so they are idempotent and fast. For example, check for the existence of an external resource and treat "not found" as success rather than an error. This prevents controllers from getting stuck on permanent failures.
 
 If a finalizer is never removed (for example, due to a bug or permanent external failure), the object will remain in the `Terminating` state indefinitely. That situation is confusing in development environments and dangerous in production because users may assume deletion completed when it has not.
 
@@ -61,9 +59,7 @@ If a finalizer is never removed (for example, due to a bug or permanent external
   <img alt="The image illustrates a &#x22;stuck deleting&#x22; process for a web application, where the presence of a finalizer prevents the object from completing deletion." />
 </Frame>
 
-<Callout icon="warning">
-  Always ensure your cleanup path can complete (or safely determine that there is nothing left to clean) and that the finalizer is removed. Otherwise resources will remain stuck in a Terminating state.
-</Callout>
+> **warning** Always ensure your cleanup path can complete (or safely determine that there is nothing left to clean) and that the finalizer is removed. Otherwise resources will remain stuck in a Terminating state.
 
 By the end of this lesson, the WebApp operator lifecycle will include create, update, observed status, events, and deletion cleanup. The operator will not only create and maintain in-cluster resources while the WebApp exists, but will also reliably clean up any external artifacts when the WebApp is deleted.
 
@@ -96,6 +92,4 @@ Links and references
 * [Kubernetes ownerReferences documentation](https://kubernetes.io/docs/concepts/overview/working-with-objects/owners-dependents/)
 * Patterns for operators and controllers: consider controller-runtime and Operator SDK documentation for implementing reconciles and finalizers
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/6a375c4e-4bda-4d13-a58f-4d85961676cc/lesson/0138bd8a-2b5d-4a2c-90f1-b8fec067a835" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/6a375c4e-4bda-4d13-a58f-4d85961676cc/lesson/0138bd8a-2b5d-4a2c-90f1-b8fec067a835)

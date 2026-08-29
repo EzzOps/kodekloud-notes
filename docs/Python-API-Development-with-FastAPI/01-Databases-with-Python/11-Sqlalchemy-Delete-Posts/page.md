@@ -58,9 +58,7 @@ def delete_post(id: int, db: Session = Depends(get_db)):
     return Response(status_code=status.HTTP_204_NO_CONTENT)
 ```
 
-<Callout icon="lightbulb">
-  Remember to commit the database session after deletion to persist the changes.
-</Callout>
+> **lightbulb** Remember to commit the database session after deletion to persist the changes.
 
 ## Verifying the Server Log
 
@@ -119,9 +117,7 @@ INFO:     Application startup.
 INFO:     Application shutdown complete.
 ```
 
-<Callout icon="lightbulb">
-  Using dependency injection with SQLAlchemy ORM not only cleans up your code but also improves maintainability and testing.
-</Callout>
+> **lightbulb** Using dependency injection with SQLAlchemy ORM not only cleans up your code but also improves maintainability and testing.
 
 ## Alternative Approach: Using SQLAlchemy Core
 
@@ -157,6 +153,4 @@ When deleting an existing post (for instance, the post with ID 6), the deletion 
 
 This article illustrated the transition from a raw SQL approach to an ORM-based deletion strategy using FastAPI and SQLAlchemy. By leveraging dependency injection and the ORM's robust query capabilities, you achieve a cleaner, more maintainable codebase. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/10b146da-fe34-45c2-98ef-e2e441dbdaad" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/10b146da-fe34-45c2-98ef-e2e441dbdaad)

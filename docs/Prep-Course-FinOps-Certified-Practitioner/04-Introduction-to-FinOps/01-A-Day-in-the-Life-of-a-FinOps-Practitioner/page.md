@@ -41,9 +41,7 @@ Close the day by automating repetitive tasks, reporting outcomes to stakeholders
 * Generate stakeholder reports: monthly savings, dashboards, and post‑mortems of incidents that affected spend.
 * Review the day’s incidents and update playbooks and automation rules based on new learnings.
 
-<Callout icon="lightbulb">
-  Stay proactive: subscribe to provider pricing announcements and product release notes. Small changes in pricing or new features can create large savings opportunities if acted on quickly.
-</Callout>
+> **lightbulb** Stay proactive: subscribe to provider pricing announcements and product release notes. Small changes in pricing or new features can create large savings opportunities if acted on quickly.
 
 ## Quick Reference — Tasks by Time of Day
 
@@ -92,6 +90,4 @@ To deepen your skills, consider FinOps certifications and related cloud cost opt
 
 That’s it for this lesson. See you next time.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/24982811-6142-4554-afd8-2b5f3b8a7f28/lesson/c2798458-a69f-4106-9999-6e4bd0448178" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/24982811-6142-4554-afd8-2b5f3b8a7f28/lesson/c2798458-a69f-4106-9999-6e4bd0448178)

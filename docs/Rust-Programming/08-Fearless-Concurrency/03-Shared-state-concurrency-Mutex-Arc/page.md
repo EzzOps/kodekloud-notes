@@ -6,21 +6,15 @@ This article explores shared-state concurrency in Rust, focusing on safe data ac
 
 In this article, we explore shared-state concurrency in Rust—a powerful approach that allows multiple threads to access and modify the same data concurrently. Unlike message passing, which involves threads communicating by sending messages to one another, shared-state concurrency permits direct data manipulation across threads. Rust’s unique ownership and borrowing system ensures safe concurrency by catching data races at compile time, while tools like Mutex and Arc provide the additional safety required for mutable shared access.
 
-<Frame>
-  ![The image illustrates "Shared-State Concurrency" with three gears labeled Thread 1, Thread 2, and Thread 3, all pointing to a shared data bar.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883879/notes-assets/images/Rust-Programming-Shared-state-concurrency-Mutex-Arc/shared-state-concurrency-gears.jpg)
-</Frame>
+![The image illustrates "Shared-State Concurrency" with three gears labeled Thread 1, Thread 2, and Thread 3, all pointing to a shared data bar.](https://kodekloud.com/kk-media/image/upload/v1752883879/notes-assets/images/Rust-Programming-Shared-state-concurrency-Mutex-Arc/shared-state-concurrency-gears.jpg)
 
 When threads share data directly, the risk of race conditions and inconsistent state increases if the data is not properly synchronized. Rust alleviates these risks with its ownership model and by providing synchronization primitives such as Mutex and ref-counting types like Arc.
 
-<Frame>
-  ![The image illustrates Rust's concurrency safety features, highlighting concepts like Ownership, Borrowing, Mutex\<T>, and Arc\<T>, with the Rust logo at the center.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883880/notes-assets/images/Rust-Programming-Shared-state-concurrency-Mutex-Arc/rust-concurrency-safety-ownership-borrowing.jpg)
-</Frame>
+![The image illustrates Rust's concurrency safety features, highlighting concepts like Ownership, Borrowing, Mutex\<T>, and Arc\<T>, with the Rust logo at the center.](https://kodekloud.com/kk-media/image/upload/v1752883880/notes-assets/images/Rust-Programming-Shared-state-concurrency-Mutex-Arc/rust-concurrency-safety-ownership-borrowing.jpg)
 
 Shared-state concurrency is especially advantageous in scenarios such as managing a shared database or cache, where threads must operate on the same data simultaneously for high performance. While message passing can sidestep many of these concurrency issues, direct shared access offers a more immediate approach for collaboration on common data.
 
-<Frame>
-  ![The image is a flowchart explaining the concept of shared-state concurrency, highlighting its use in maintaining a shared database and cache.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883881/notes-assets/images/Rust-Programming-Shared-state-concurrency-Mutex-Arc/shared-state-concurrency-flowchart.jpg)
-</Frame>
+![The image is a flowchart explaining the concept of shared-state concurrency, highlighting its use in maintaining a shared database and cache.](https://kodekloud.com/kk-media/image/upload/v1752883881/notes-assets/images/Rust-Programming-Shared-state-concurrency-Mutex-Arc/shared-state-concurrency-flowchart.jpg)
 
 ***
 
@@ -28,9 +22,7 @@ Shared-state concurrency is especially advantageous in scenarios such as managin
 
 A Mutex (short for mutual exclusion) is a synchronization primitive designed to ensure that only one thread accesses the protected data at any moment. Think of a Mutex as a lock on a resource—only the thread that holds the lock can access or modify the resource. This mechanism prevents multiple threads from interfering with each other.
 
-<Frame>
-  ![The image illustrates a concept of mutual exclusion with three threads, where "Thread 1" is active and locked, accessing shared data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883882/notes-assets/images/Rust-Programming-Shared-state-concurrency-Mutex-Arc/mutual-exclusion-three-threads.jpg)
-</Frame>
+![The image illustrates a concept of mutual exclusion with three threads, where "Thread 1" is active and locked, accessing shared data.](https://kodekloud.com/kk-media/image/upload/v1752883882/notes-assets/images/Rust-Programming-Shared-state-concurrency-Mutex-Arc/mutual-exclusion-three-threads.jpg)
 
 Without a Mutex, if several threads try to change the same data concurrently, race conditions may occur. For example, if multiple threads attempt to increment the same counter simultaneously, two threads may read the same initial value and both increment it, resulting in an incorrect count.
 
@@ -44,9 +36,7 @@ This is where Arc\<T> (Atomic Reference Counting) becomes indispensable. Arc\<T>
 
 Atomic operations guarantee that updates to the reference count occur without interruption, protecting it from corruption.
 
-<Frame>
-  ![The image illustrates atomic reference counting with Arc\<T>, showing three threads accessing shared data through atomic operations. It includes gears representing threads and a bar labeled "Data" connected to "Arc\<T>".](../../../../images/kodekloud.com/kk-media/image/upload/v1752883883/notes-assets/images/Rust-Programming-Shared-state-concurrency-Mutex-Arc/atomic-reference-counting-arc-threads.jpg)
-</Frame>
+![The image illustrates atomic reference counting with Arc\<T>, showing three threads accessing shared data through atomic operations. It includes gears representing threads and a bar labeled "Data" connected to "Arc\<T>".](https://kodekloud.com/kk-media/image/upload/v1752883883/notes-assets/images/Rust-Programming-Shared-state-concurrency-Mutex-Arc/atomic-reference-counting-arc-threads.jpg)
 
 ***
 
@@ -134,9 +124,7 @@ error[E0597]: `data` does not live long enough
 14 |     } // argument requires that `data` is borrowed for `'static`
 ```
 
-<Callout icon="lightbulb">
-  To resolve this, use the `move` keyword to transfer ownership or copy the data into each thread.
-</Callout>
+> **lightbulb** To resolve this, use the `move` keyword to transfer ownership or copy the data into each thread.
 
 ***
 
@@ -289,9 +277,7 @@ fn main() {
 
 In this example, each thread locks the Mutex before accessing and modifying the vector. If the Mutex is already locked by another thread, the calling thread will block until the lock becomes available. The MutexGuard automatically releases the lock when it goes out of scope.
 
-<Callout icon="lightbulb">
-  Using Mutex with Arc is a common pattern in Rust for safely sharing mutable state between threads.
-</Callout>
+> **lightbulb** Using Mutex with Arc is a common pattern in Rust for safely sharing mutable state between threads.
 
 ***
 
@@ -338,13 +324,9 @@ fn main() {
 
 In the example above, one thread deliberately panics, which poisons the Mutex. When the main thread later tries to acquire the lock, it handles the error by recovering the data.
 
-<Frame>
-  ![The image shows a code editor with Rust programming code, focusing on thread handling and mutex locking. The terminal section is open at the bottom of the editor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883884/notes-assets/images/Rust-Programming-Shared-state-concurrency-Mutex-Arc/rust-code-editor-thread-mutex.jpg)
-</Frame>
+![The image shows a code editor with Rust programming code, focusing on thread handling and mutex locking. The terminal section is open at the bottom of the editor.](https://kodekloud.com/kk-media/image/upload/v1752883884/notes-assets/images/Rust-Programming-Shared-state-concurrency-Mutex-Arc/rust-code-editor-thread-mutex.jpg)
 
-<Callout icon="triangle-alert">
-  When a Mutex is poisoned, ensure your error handling logic properly recovers the data to maintain application stability.
-</Callout>
+> **triangle-alert** When a Mutex is poisoned, ensure your error handling logic properly recovers the data to maintain application stability.
 
 ***
 
@@ -356,6 +338,4 @@ For further reading on Rust concurrency and advanced synchronization techniques,
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/0418d83c-2090-4aac-8b6e-8c3eab45d649/lesson/fe82cd9d-7201-4304-a7b6-2841ae1b7d86" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/0418d83c-2090-4aac-8b6e-8c3eab45d649/lesson/fe82cd9d-7201-4304-a7b6-2841ae1b7d86)

@@ -8,9 +8,7 @@ In this article, we explore efficient methods for archiving files in Linux, comp
 
 When you archive files, you combine all files and directories into one file (e.g., backup.tar). This process is called archiving. Once created, the archive can be compressed (for example, to backup.tar.gz) to reduce the storage space needed. Finally, copying the compressed file to a remote location adds an extra layer of protection to your data.
 
-<Frame>
-  ![The image illustrates a process for archiving, compressing, and backing up files, showing steps from creating a "backup.tar" archive to compressing it into "backup.tar.gz" and then backing it up.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881232/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Archive-Back-Up-Compress-Unpack-and-Uncompress-Files-Optional/file-archiving-compressing-backup.jpg)
-</Frame>
+![The image illustrates a process for archiving, compressing, and backing up files, showing steps from creating a "backup.tar" archive to compressing it into "backup.tar.gz" and then backing it up.](https://kodekloud.com/kk-media/image/upload/v1752881232/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Archive-Back-Up-Compress-Unpack-and-Uncompress-Files-Optional/file-archiving-compressing-backup.jpg)
 
 In the sections that follow, we first discuss archiving, then move on to compressing the archive, and finally, we review methods to back up your compressed files to a remote location.
 
@@ -45,9 +43,7 @@ file3
 
 While the shorthand version (tar tf archive.tar) is quick to type, using the longer options like --list can be more intuitive for beginners.
 
-<Callout icon="lightbulb">
-  Always include the -f option immediately before specifying the tar file name. This practice ensures that tar correctly identifies the subsequent argument as the archive file, preventing potential misinterpretations of your options.
-</Callout>
+> **lightbulb** Always include the -f option immediately before specifying the tar file name. This practice ensures that tar correctly identifies the subsequent argument as the archive file, preventing potential misinterpretations of your options.
 
 ### Common Tar Commands
 
@@ -122,9 +118,7 @@ Or using the shorthand version:
 $ tar xf archive.tar -C /tmp/
 ```
 
-<Callout icon="lightbulb">
-  Tar archives store file permissions and ownership information. If you extract files archived with a different user, you might not preserve the original ownership unless you run the command with elevated privileges (using `sudo`).
-</Callout>
+> **lightbulb** Tar archives store file permissions and ownership information. If you extract files archived with a different user, you might not preserve the original ownership unless you run the command with elevated privileges (using `sudo`).
 
 ## Next Steps: Compressing and Remote Backups
 
@@ -138,6 +132,4 @@ For more detailed information on related topics, refer to the following resource
 
 With these skills in your toolkit, you can efficiently manage and secure your Linux file systems.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/3ef229de-04fd-45aa-a2d5-1901c7a2a820" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/3ef229de-04fd-45aa-a2d5-1901c7a2a820)

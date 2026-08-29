@@ -22,13 +22,9 @@ By the end, Vault will trust Okta as an identity provider, enforcing your Vault 
 2. Go to **Security** → **API** → **Tokens**.
 3. Click **Create Token**, give it a descriptive name (for example, `Vault-Integration`), and copy the generated token.
 
-<Frame>
-  ![The image shows a web interface for creating an API token on Okta, with a pop-up message confirming the token creation and displaying the token value.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878019/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Okta-Auth-Method/okta-api-token-creation-interface.jpg)
-</Frame>
+![The image shows a web interface for creating an API token on Okta, with a pop-up message confirming the token creation and displaying the token value.](https://kodekloud.com/kk-media/image/upload/v1752878019/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Okta-Auth-Method/okta-api-token-creation-interface.jpg)
 
-<Callout icon="triangle-alert">
-  Treat your Okta API token like a password. Store it securely (for example, in Vault’s [Cubbyhole](https://www.vaultproject.io/docs/secrets/cubbyhole) or an environment variable).
-</Callout>
+> **triangle-alert** Treat your Okta API token like a password. Store it securely (for example, in Vault’s [Cubbyhole](https://www.vaultproject.io/docs/secrets/cubbyhole) or an environment variable).
 
 ***
 
@@ -87,9 +83,7 @@ token_policies          []
 ...
 ```
 
-<Callout icon="lightbulb">
-  If your organization requires multi-factor authentication, set `bypass_okta_mfa` to `false` (default) to enforce it.
-</Callout>
+> **lightbulb** If your organization requires multi-factor authentication, set `bypass_okta_mfa` to `false` (default) to enforce it.
 
 ***
 
@@ -129,21 +123,15 @@ You will be prompted for your Okta password and any additional MFA factors.
 1. Open the Vault UI and select **Okta** as the login method.
 2. Enter your Okta **username** and **password**, then click **Sign in**.
 
-<Frame>
-  ![The image shows a login page for "Vault" with fields for method, username, and password, and a "Sign in" button. The method selected is "Okta."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878020/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Okta-Auth-Method/vault-login-page-okta-sign-in.jpg)
-</Frame>
+![The image shows a login page for "Vault" with fields for method, username, and password, and a "Sign in" button. The method selected is "Okta."](https://kodekloud.com/kk-media/image/upload/v1752878020/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Okta-Auth-Method/vault-login-page-okta-sign-in.jpg)
 
 After signing in, view mapped users under **Access** → **Okta** → **Users**. You can also add or edit users:
 
-<Frame>
-  ![The image shows a user interface for creating a new user in a system, with fields for name, groups, and policies, and options to save or cancel.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878021/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Okta-Auth-Method/user-interface-create-new-user-fields.jpg)
-</Frame>
+![The image shows a user interface for creating a new user in a system, with fields for name, groups, and policies, and options to save or cancel.](https://kodekloud.com/kk-media/image/upload/v1752878021/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Okta-Auth-Method/user-interface-create-new-user-fields.jpg)
 
 To map Okta groups in Vault, navigate to **Access** → **Okta** → **Groups**, specify the group name and Vault policies, then save:
 
-<Frame>
-  ![The image shows a web interface for creating a group in a Vault application, with fields for entering a name and policies, and options to save or cancel. A pop-up warning about unsaved changes is also visible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878023/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Okta-Auth-Method/vault-application-group-creation-interface.jpg)
-</Frame>
+![The image shows a web interface for creating a group in a Vault application, with fields for entering a name and policies, and options to save or cancel. A pop-up warning about unsaved changes is also visible.](https://kodekloud.com/kk-media/image/upload/v1752878023/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Okta-Auth-Method/vault-application-group-creation-interface.jpg)
 
 ***
 
@@ -156,6 +144,4 @@ With these steps complete, Vault is now integrated with Okta for user and group 
 * [Vault Authentication Methods](https://www.vaultproject.io/docs/auth)
 * [Best Practices for Secrets Management](https://www.vaultproject.io/docs/best-practices/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/12f9f7b7-8e8a-4e6c-b561-0bf16edbed13" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/12f9f7b7-8e8a-4e6c-b561-0bf16edbed13)

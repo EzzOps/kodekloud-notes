@@ -14,7 +14,7 @@ We start with a Lambda function named "getProducts" that has three versions:
 * Version v2: Aliased as "staging"
 * Version v3: Aliased as "dev"
 
-![The image shows an AWS Lambda console with a function named "getProducts." It displays the function overview, including aliases for different environments like dev, prod, and staging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857865/notes-assets/images/AWS-Certified-Developer-Associate-Canary-Demo/aws-lambda-getproducts-function-overview.jpg)
+![The image shows an AWS Lambda console with a function named "getProducts." It displays the function overview, including aliases for different environments like dev, prod, and staging.](https://kodekloud.com/kk-media/image/upload/v1752857865/notes-assets/images/AWS-Certified-Developer-Associate-Canary-Demo/aws-lambda-getproducts-function-overview.jpg)
 
 In API Gateway, the `/products` resource is configured with a GET method. There are three stages (dev, prod, and staging), and each stage uses a stage variable to determine which Lambda alias to invoke. For example:
 
@@ -22,7 +22,7 @@ In API Gateway, the `/products` resource is configured with a GET method. There 
 * The **prod** stage uses the alias "prod" (version v1).
 * The **staging** stage uses the alias "staging" (version v2).
 
-![The image shows the AWS API Gateway console, specifically the "Stages" section for an API named "ecommerce," with details about the "dev" stage, including logs and tracing settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857866/notes-assets/images/AWS-Certified-Developer-Associate-Canary-Demo/aws-api-gateway-ecommerce-stages.jpg)
+![The image shows the AWS API Gateway console, specifically the "Stages" section for an API named "ecommerce," with details about the "dev" stage, including logs and tracing settings.](https://kodekloud.com/kk-media/image/upload/v1752857866/notes-assets/images/AWS-Certified-Developer-Associate-Canary-Demo/aws-api-gateway-ecommerce-stages.jpg)
 
 ## Testing the Production Environment
 
@@ -47,13 +47,13 @@ Suppose you want to upgrade the prod environment to version v2 (currently associ
 3. **Deploy the API:**\
    Return to the API configuration and deploy the changes. Although no direct modifications to the API integration are made, deploying the API triggers the canary configuration.
 
-![The image shows the AWS API Gateway console with a focus on the "Stages" section for an "ecommerce" API, displaying the "prod" stage and its GET method for the "/products" endpoint. A green notification indicates that stage variables have been successfully updated.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857867/notes-assets/images/AWS-Certified-Developer-Associate-Canary-Demo/aws-api-gateway-ecommerce-prod.jpg)
+![The image shows the AWS API Gateway console with a focus on the "Stages" section for an "ecommerce" API, displaying the "prod" stage and its GET method for the "/products" endpoint. A green notification indicates that stage variables have been successfully updated.](https://kodekloud.com/kk-media/image/upload/v1752857867/notes-assets/images/AWS-Certified-Developer-Associate-Canary-Demo/aws-api-gateway-ecommerce-prod.jpg)
 
 > **lightbulb** Deploying the API, even without integration changes, ensures the canary settings are active and traffic distribution is updated.
 
 Additionally, you have the option to configure a hard-coded Lambda ARN override in the integration request. However, utilizing stage variables provides flexibility for version switching through canary deployments.
 
-![The image shows the AWS console interface for creating a canary in API Gateway, with settings for request distribution and stage variables. The canary is set to receive 50% of the API traffic, and there are options for configuring stage cache and variables.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857868/notes-assets/images/AWS-Certified-Developer-Associate-Canary-Demo/aws-api-gateway-canary-settings.jpg)
+![The image shows the AWS console interface for creating a canary in API Gateway, with settings for request distribution and stage variables. The canary is set to receive 50% of the API traffic, and there are options for configuring stage cache and variables.](https://kodekloud.com/kk-media/image/upload/v1752857868/notes-assets/images/AWS-Certified-Developer-Associate-Canary-Demo/aws-api-gateway-canary-settings.jpg)
 
 ### Testing the Canary Deployment
 
@@ -95,7 +95,7 @@ The expected response from testing the prod stage post-promotion is:
 }
 ```
 
-![The image shows the AWS API Gateway console, specifically the "Stages" section for an "ecommerce" API. It displays details about the "prod" stage, including logs, tracing settings, and canary deployment settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857869/notes-assets/images/AWS-Certified-Developer-Associate-Canary-Demo/aws-api-gateway-ecommerce-stages-2.jpg)
+![The image shows the AWS API Gateway console, specifically the "Stages" section for an "ecommerce" API. It displays details about the "prod" stage, including logs, tracing settings, and canary deployment settings.](https://kodekloud.com/kk-media/image/upload/v1752857869/notes-assets/images/AWS-Certified-Developer-Associate-Canary-Demo/aws-api-gateway-ecommerce-stages-2.jpg)
 
 ## Conclusion
 

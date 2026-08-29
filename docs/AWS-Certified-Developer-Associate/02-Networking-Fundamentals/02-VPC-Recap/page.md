@@ -8,27 +8,27 @@ In this lesson, we will review a fundamental networking concept within AWS: the 
 
 A Virtual Private Cloud is a secure, isolated network segment hosted within AWS. It enables you to isolate resources both from those of other customers and within your own AWS account. For example, if you have multiple applications running in the same account and need to prevent them from communicating with each other, you can deploy them in separate VPCs to enforce strict isolation.
 
-![The image is a diagram explaining a Virtual Private Cloud (VPC) within the AWS Cloud, showing various icons representing different cloud services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859276/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Recap/vpc-aws-cloud-services-diagram.jpg)
+![The image is a diagram explaining a Virtual Private Cloud (VPC) within the AWS Cloud, showing various icons representing different cloud services.](https://kodekloud.com/kk-media/image/upload/v1752859276/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Recap/vpc-aws-cloud-services-diagram.jpg)
 
 Using VPCs provides you with full control over your cloud networking environment. You decide the subnetting, specify your IP address range, configure routing tables, and manage security through components like security groups and network access control lists (NACLs). Furthermore, you can control incoming and outgoing traffic by configuring various gateways. This setup closely resembles managing a physical data center, with AWS streamlining and automating many of the manual tasks.
 
-![The image explains the concept of a Virtual Private Cloud (VPC) with a diagram and lists components like subnetting, routing, firewalls, and gateways.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859277/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Recap/vpc-diagram-subnetting-routing-firewalls.jpg)
+![The image explains the concept of a Virtual Private Cloud (VPC) with a diagram and lists components like subnetting, routing, firewalls, and gateways.](https://kodekloud.com/kk-media/image/upload/v1752859277/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Recap/vpc-diagram-subnetting-routing-firewalls.jpg)
 
 > **lightbulb** An important aspect for the AWS Solutions Architect exam is that VPCs are specific to a single region. When you create a VPC, you must assign it to a region. For instance, if you create VPC One in the US East 1 region and VPC Two in the US East 2 region, these VPCs are bound to their respective regions and cannot extend across multiple regions.
 
-![The image illustrates AWS Cloud with two regions, "us-east-1" and "us-east-2," each containing a separate VPC (Virtual Private Cloud). It highlights that a VPC is specific to a single region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859279/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Recap/aws-cloud-regions-vpc-diagram.jpg)
+![The image illustrates AWS Cloud with two regions, "us-east-1" and "us-east-2," each containing a separate VPC (Virtual Private Cloud). It highlights that a VPC is specific to a single region.](https://kodekloud.com/kk-media/image/upload/v1752859279/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Recap/aws-cloud-regions-vpc-diagram.jpg)
 
 VPCs serve as a network boundary. By default, resources inside a VPC are isolated from those in other VPCs. To allow communication with external systems—such as the internet or other VPCs—you must explicitly configure network access.
 
 Each VPC is assigned a range of IP addresses defined by a Classless Inter-Domain Routing (CIDR) block. For example, if you create VPC One with a CIDR block of 192.168.0.0/16, the available IP range will be from 192.168.0.0 to 192.168.255.255. Additionally, you have the option to enable a secondary IPv4 block or configure IPv6 CIDR blocks (providing a /56 block). You can associate up to five IPv6 CIDR blocks with a VPC, though this limit can be adjusted.
 
-![The image explains the concept of a VPC (Virtual Private Cloud) and its CIDR block, detailing how IP addresses are assigned and the range of CIDR block sizes. It includes a labeled diagram of "VPC 1."](../../../../images/kodekloud.com/kk-media/image/upload/v1752859281/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Recap/vpc-cidr-block-diagram.jpg)
+![The image explains the concept of a VPC (Virtual Private Cloud) and its CIDR block, detailing how IP addresses are assigned and the range of CIDR block sizes. It includes a labeled diagram of "VPC 1."](https://kodekloud.com/kk-media/image/upload/v1752859281/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Recap/vpc-cidr-block-diagram.jpg)
 
 In AWS, there are two types of VPCs: default VPCs and custom VPCs.
 
 * A **default VPC** is automatically created by AWS for every region when you set up a new account. This configuration provides immediate internet connectivity for your resources, making it simple to launch servers without additional configuration.
 
-![The image is a diagram explaining a Virtual Private Cloud (VPC) with a CIDR block of 192.168.0.0/16, including options for secondary IPv4 and IPv6 CIDR blocks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859282/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Recap/vpc-cidr-block-diagram-ipv4-ipv6.jpg)
+![The image is a diagram explaining a Virtual Private Cloud (VPC) with a CIDR block of 192.168.0.0/16, including options for secondary IPv4 and IPv6 CIDR blocks.](https://kodekloud.com/kk-media/image/upload/v1752859282/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Recap/vpc-cidr-block-diagram-ipv4-ipv6.jpg)
 
 * A **custom VPC** is one that you create and configure. With a custom VPC, you define all the settings—including the CIDR block, subnets, routing, and security controls—allowing for a tailored network environment that meets your specific requirements.
 
@@ -39,7 +39,7 @@ Let’s explore the default VPC configuration provided by AWS:
 * An internet gateway is attached to the default VPC, and a default route (0.0.0.0/0) directs all outbound traffic to this gateway, ensuring seamless internet connectivity.
 * Default security groups and NACLs are set up: the default security group typically allows outbound traffic, while the default NACL permits both inbound and outbound traffic.
 
-![The image illustrates a default VPC setup with an internet gateway, showing public subnets in two availability zones, and highlighting that devices in these subnets are accessible from the internet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859284/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Recap/default-vpc-internet-gateway-diagram.jpg)
+![The image illustrates a default VPC setup with an internet gateway, showing public subnets in two availability zones, and highlighting that devices in these subnets are accessible from the internet.](https://kodekloud.com/kk-media/image/upload/v1752859284/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Recap/default-vpc-internet-gateway-diagram.jpg)
 
 ## Summary
 

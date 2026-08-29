@@ -125,9 +125,7 @@ By default the MCP bridge may block automated apply operations for safety. If au
 }
 ```
 
-<Callout icon="lightbulb">
-  Setting `TFMCP_ALLOW_AUTO_APPROVE=true` allows automated apply operations. Only enable this when you trust the Terraform configuration and understand the security implications.
-</Callout>
+> **lightbulb** Setting `TFMCP_ALLOW_AUTO_APPROVE=true` allows automated apply operations. Only enable this when you trust the Terraform configuration and understand the security implications.
 
 If you decide to allow auto-approve, export the environment variable and re-run the JSON-RPC sequence:
 
@@ -188,9 +186,7 @@ cat example.txt
 
 If you need an example for integrating this into a CI pipeline or automating the JSON-RPC calls programmatically (Python, Node, etc.), I can provide sample clients that interact with `tfmcp` via stdio.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/910a0b7a-ac6e-43f1-956e-203a70c3d455/lesson/ebcb2c5e-7537-4c08-a561-8f09c05276c8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/910a0b7a-ac6e-43f1-956e-203a70c3d455/lesson/ebcb2c5e-7537-4c08-a561-8f09c05276c8)
 
 
 # Demo Google Calendar Integration
@@ -262,9 +258,7 @@ npm run start
 
 When the server starts, it will open a browser window asking you to choose an account and authorize the app. If you see a "Google hasn't verified this app" warning, that is expected for a local/test app. You can proceed after clicking the advanced option and continuing — only do this for apps you trust.
 
-<Callout icon="warning">
-  If you see the "Google hasn't verified this app" page, proceed only if you trust the app and the credentials. Do not authorize unknown or public apps with your primary Google account.
-</Callout>
+> **warning** If you see the "Google hasn't verified this app" page, proceed only if you trust the app and the credentials. Do not authorize unknown or public apps with your primary Google account.
 
 <Frame>
   <img alt="A browser window showing Google's &#x22;Google hasn't verified this app&#x22; warning (red triangle icon and &#x22;Back to safety&#x22; button) overlaid on a code editor/IDE in the background." />
@@ -363,9 +357,7 @@ MCP servers provide a consistent, tool-like interface that LLMs can call to perf
 
 This reduces the need to write custom API glue code every time you want the assistant to interact with an external service.
 
-<Callout icon="lightbulb">
-  Keep your downloaded credential files and token files private. Do not commit `credentials.json` or `tokens.json` to a public repository.
-</Callout>
+> **lightbulb** Keep your downloaded credential files and token files private. Do not commit `credentials.json` or `tokens.json` to a public repository.
 
 ## Closing
 
@@ -379,6 +371,4 @@ This walkthrough demonstrates how to run a Google Calendar MCP server locally, a
 * Google unverified apps doc: [https://support.google.com/cloud/answer/7519473](https://support.google.com/cloud/answer/7519473)
 * google-calendar-mcp README: [https://github.com/nspady/google-calendar-mcp#readme](https://github.com/nspady/google-calendar-mcp#readme)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/910a0b7a-ac6e-43f1-956e-203a70c3d455/lesson/c016ef00-0fea-40ad-8187-b983c50665be" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/910a0b7a-ac6e-43f1-956e-203a70c3d455/lesson/c016ef00-0fea-40ad-8187-b983c50665be)

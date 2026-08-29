@@ -7,9 +7,7 @@
 * [Terragrunt Documentation](https://terragrunt.gruntwork.io/)
 * [AWS CLI S3 ls](https://docs.aws.amazon.com/cli/latest/reference/s3/ls.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/ad531c23-558f-4b72-8c19-b70d23c78da9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/ad531c23-558f-4b72-8c19-b70d23c78da9)
 
 
 # Hybrid Module Approach
@@ -30,9 +28,7 @@ Community modules deliver battle-tested patterns for common infrastructure compo
 * Ability to extend or fine-tune modules to meet project-specific needs
 * Consistent versioning of your own modules alongside community offerings
 
-<Callout icon="lightbulb">
-  Always pin module versions (`version = "x.y.z"` or Git commit hashes) to avoid unexpected updates in production.
-</Callout>
+> **lightbulb** Always pin module versions (`version = "x.y.z"` or Git commit hashes) to avoid unexpected updates in production.
 
 ## Comparing Module Sources
 
@@ -56,9 +52,7 @@ Community modules deliver battle-tested patterns for common infrastructure compo
    * Scan community modules for vulnerabilities before adoption.
    * Enforce organizational standards via pre-commit hooks or CI pipelines.
 
-<Callout icon="triangle-alert">
-  Reusing community modules without reviewing their code can introduce security risks. Always perform a security audit before deploying to production.
-</Callout>
+> **triangle-alert** Reusing community modules without reviewing their code can introduce security risks. Always perform a security audit before deploying to production.
 
 ## Example: Hybrid Module Configuration
 
@@ -96,6 +90,4 @@ module "app_infrastructure" {
 * [Git Best Practices](https://git-scm.com/book/en/v2)
 * [Terraform AWS Modules](https://github.com/terraform-aws-modules)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/8b2334be-2a67-4763-88ce-57c0bf4ec615" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/8b2334be-2a67-4763-88ce-57c0bf4ec615)

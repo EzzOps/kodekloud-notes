@@ -15,21 +15,15 @@ One common method to access a virtual machine is by using its public IP address.
 
 Another secure option is to connect via a jumpbox. A jumpbox is a machine with a public IP address placed within a dedicated subnet, while your workloads run in a different, private subnet within the same virtual network. By connecting to the jumpbox, you can then access other machines securely on the private network.
 
-<Frame>
-  ![The image illustrates a network setup for connecting to virtual machines using a jumpbox within a virtual network, showing connections via private and public IPs. It includes elements like a virtual machine, public IP, and user access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884427/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Connecting-to-VMs/network-setup-jumpbox-virtual-machines.jpg)
-</Frame>
+![The image illustrates a network setup for connecting to virtual machines using a jumpbox within a virtual network, showing connections via private and public IPs. It includes elements like a virtual machine, public IP, and user access.](https://kodekloud.com/kk-media/image/upload/v1752884427/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Connecting-to-VMs/network-setup-jumpbox-virtual-machines.jpg)
 
 ## Connecting with Azure Bastion
 
 Azure Bastion is a managed service that simplifies VM connectivity by allowing secure, direct browser-based access to your VMs. This method eliminates the need to deploy and manage jumpbox VMs, download special clients, or expose any ports directly to the internet.
 
-<Callout icon="lightbulb">
-  Azure Bastion enhances security by ensuring that no public ports are exposed, which helps protect your infrastructure from potential attackers.
-</Callout>
+> **lightbulb** Azure Bastion enhances security by ensuring that no public ports are exposed, which helps protect your infrastructure from potential attackers.
 
-<Frame>
-  ![The image is a diagram illustrating how to connect to virtual machines using Azure Bastion, showing the flow from a bastion host through a virtual network to users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884428/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Connecting-to-VMs/azure-bastion-virtual-machines-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating how to connect to virtual machines using Azure Bastion, showing the flow from a bastion host through a virtual network to users.](https://kodekloud.com/kk-media/image/upload/v1752884428/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Connecting-to-VMs/azure-bastion-virtual-machines-diagram.jpg)
 
 ## Overview of Connection Methods
 
@@ -42,9 +36,7 @@ Below is an overview of available connection methods based on the operating syst
 * **Linux:**
   * **SSH:** Utilizes TCP port 22. Supports authentication via passwords or SSH key pairs.
 
-<Frame>
-  ![The image is a diagram showing methods for connecting to virtual machines, detailing operating systems, protocols/ports, and authentication methods. It includes Windows and Linux systems with protocols like RDP, WinRM, and SSH, and authentication via passwords, certificates, or keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884429/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Connecting-to-VMs/vm-connection-methods-diagram.jpg)
-</Frame>
+![The image is a diagram showing methods for connecting to virtual machines, detailing operating systems, protocols/ports, and authentication methods. It includes Windows and Linux systems with protocols like RDP, WinRM, and SSH, and authentication via passwords, certificates, or keys.](https://kodekloud.com/kk-media/image/upload/v1752884429/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Connecting-to-VMs/vm-connection-methods-diagram.jpg)
 
 ## Connecting via SSH
 
@@ -123,9 +115,7 @@ New-AzVm `
 
 After the script completes, verify that the VMs appear in the virtual machines list. Since these VMs do not have public IP addresses, they are perfectly suited for private access using Azure Bastion.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal displaying a list of virtual machines, including details like name, type, subscription, location, status, operating system, size, and public IP address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884431/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Connecting-to-VMs/azure-portal-virtual-machines-list.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal displaying a list of virtual machines, including details like name, type, subscription, location, status, operating system, size, and public IP address.](https://kodekloud.com/kk-media/image/upload/v1752884431/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Connecting-to-VMs/azure-portal-virtual-machines-list.jpg)
 
 ## Configuring Azure Bastion
 
@@ -141,9 +131,7 @@ Follow these steps to set up a Bastion host:
 4. Create a new public IP address.
 5. Click "Review and Create" to deploy Bastion.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a Bastion host, with fields for project and instance details such as subscription, resource group, name, region, and tier.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884432/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Connecting-to-VMs/azure-portal-bastion-host-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a Bastion host, with fields for project and instance details such as subscription, resource group, name, region, and tier.](https://kodekloud.com/kk-media/image/upload/v1752884432/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Connecting-to-VMs/azure-portal-bastion-host-creation.jpg)
 
 Once the Bastion host is deployed, you can connect to your VMs privately through your browser.
 
@@ -172,9 +160,7 @@ Get:3 http://azure.archive.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
 
 This will open an RDP session in your browser with the Windows login screen. Once you sign in, you can securely manage the Windows VM.
 
-<Callout icon="lightbulb">
-  Using Azure Bastion provides secure, private access to your VMs without exposing them to the public internet.
-</Callout>
+> **lightbulb** Using Azure Bastion provides secure, private access to your VMs without exposing them to the public internet.
 
 ## Next Steps
 
@@ -187,6 +173,4 @@ For more information, refer to the following resources:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/34d9af06-fc33-4556-a3f2-2e7a5c5db484/lesson/e818446d-8a52-4ec6-8922-2b7981ff8000" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/34d9af06-fc33-4556-a3f2-2e7a5c5db484/lesson/e818446d-8a52-4ec6-8922-2b7981ff8000)

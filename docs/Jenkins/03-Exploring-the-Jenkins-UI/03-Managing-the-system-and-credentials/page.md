@@ -10,9 +10,7 @@ In this guide, we explore the essential configurations within Jenkins that contr
 
 The "Configure System" page in Jenkins is pivotal for setting up the server’s operational parameters. Here, you define critical settings such as the home directory (e.g., /var/live/Jenkins), system messages, number of executors, labels, and usage options. These configurations determine where Jenkins is installed, its performance behavior, and how it interacts with external networks—for example, assigning a DNS name to the public IP (e.g., "Jenkins 01" or "Organization Jenkins 01").
 
-<Frame>
-  ![The image shows a Jenkins configuration page with settings for home directory, system message, executors, labels, and usage options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880020/notes-assets/images/Jenkins-Managing-the-system-and-credentials/frame_40.jpg)
-</Frame>
+![The image shows a Jenkins configuration page with settings for home directory, system message, executors, labels, and usage options.](https://kodekloud.com/kk-media/image/upload/v1752880020/notes-assets/images/Jenkins-Managing-the-system-and-credentials/frame_40.jpg)
 
 Scrolling further down reveals additional global properties, including pipeline speed and durability settings. All overarching configurations of Jenkins are managed through these "Configure System" settings.
 
@@ -20,29 +18,21 @@ Scrolling further down reveals additional global properties, including pipeline 
 
 Jenkins offers robust integration with GitHub and other source control systems. In the configuration, you can set up GitHub servers and tailor usage rate limiting strategies for both pull and push requests. This section also supports the integration of GitHub Enterprise servers and the management of pipeline libraries, ensuring that Jenkins communicates effectively with external repositories.
 
-<Frame>
-  ![The image shows a configuration interface for managing lockable resources and GitHub settings, including options to add resources, servers, and set API usage strategies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880021/notes-assets/images/Jenkins-Managing-the-system-and-credentials/frame_110.jpg)
-</Frame>
+![The image shows a configuration interface for managing lockable resources and GitHub settings, including options to add resources, servers, and set API usage strategies.](https://kodekloud.com/kk-media/image/upload/v1752880021/notes-assets/images/Jenkins-Managing-the-system-and-credentials/frame_110.jpg)
 
 Furthermore, Jenkins allows you to configure the Git global settings, including the user email used for build notifications and other communications.
 
-<Frame>
-  ![The image shows a configuration interface for setting up global pipeline libraries, build-timeout plugin, and Git plugin options, including user name and email configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880023/notes-assets/images/Jenkins-Managing-the-system-and-credentials/frame_140.jpg)
-</Frame>
+![The image shows a configuration interface for setting up global pipeline libraries, build-timeout plugin, and Git plugin options, including user name and email configurations.](https://kodekloud.com/kk-media/image/upload/v1752880023/notes-assets/images/Jenkins-Managing-the-system-and-credentials/frame_140.jpg)
 
 ## Email Notification Settings
 
 Effective communication during build failures or pipeline errors is crucial. Jenkins can automatically dispatch email notifications when issues occur. Within these settings, you can configure SMTP servers (such as Google, Office 365, or a personal SMTP server) and specify the intended recipients. Typically, this configuration is customized per department to ensure that the right teams receive updates.
 
-<Frame>
-  ![The image shows an email configuration interface with fields for SMTP server, port, email suffix, content type, and list ID, along with save and apply buttons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880024/notes-assets/images/Jenkins-Managing-the-system-and-credentials/frame_170.jpg)
-</Frame>
+![The image shows an email configuration interface with fields for SMTP server, port, email suffix, content type, and list ID, along with save and apply buttons.](https://kodekloud.com/kk-media/image/upload/v1752880024/notes-assets/images/Jenkins-Managing-the-system-and-credentials/frame_170.jpg)
 
 Additional options allow you to define default recipients, reply-to addresses, emergency reroutes, allowed domains, and content details. This ensures important information—like project name, build number, and build status—is always communicated effectively.
 
-<Frame>
-  ![The image shows a configuration settings page with fields for email recipients, domains, subject, and attachment size, along with "Save" and "Apply" buttons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880025/notes-assets/images/Jenkins-Managing-the-system-and-credentials/frame_180.jpg)
-</Frame>
+![The image shows a configuration settings page with fields for email recipients, domains, subject, and attachment size, along with "Save" and "Apply" buttons.](https://kodekloud.com/kk-media/image/upload/v1752880025/notes-assets/images/Jenkins-Managing-the-system-and-credentials/frame_180.jpg)
 
 When a CI/CD pipeline runs, Jenkins uses predefined variables for notifications. For example, a typical message might appear as follows:
 
@@ -64,17 +54,13 @@ The Security Realm determines how user authentication is managed within Jenkins.
 * Integration with LDAP or Unix user and group databases
 * Disabling authentication (not recommended)
 
-<Frame>
-  ![The image shows a "Configure Global Security" settings page for Jenkins, detailing authentication, security realm, and authorization options with save and apply buttons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880026/notes-assets/images/Jenkins-Managing-the-system-and-credentials/frame_270.jpg)
-</Frame>
+![The image shows a "Configure Global Security" settings page for Jenkins, detailing authentication, security realm, and authorization options with save and apply buttons.](https://kodekloud.com/kk-media/image/upload/v1752880026/notes-assets/images/Jenkins-Managing-the-system-and-credentials/frame_270.jpg)
 
 ### Authentication and Authorization
 
 For enhanced security, you can disable the "remember me" functionality to avoid automatic logins. Jenkins supports various authorization strategies, including a role-based strategy provided via a plugin, which offers more granular permissions compared to legacy models.
 
-<Frame>
-  ![The image shows a configuration screen for global security settings, including user sign-up options, authorization strategies, and markup formatter settings, with "Role-Based Strategy" selected.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880027/notes-assets/images/Jenkins-Managing-the-system-and-credentials/frame_310.jpg)
-</Frame>
+![The image shows a configuration screen for global security settings, including user sign-up options, authorization strategies, and markup formatter settings, with "Role-Based Strategy" selected.](https://kodekloud.com/kk-media/image/upload/v1752880027/notes-assets/images/Jenkins-Managing-the-system-and-credentials/frame_310.jpg)
 
 ### Agent and Controller Security
 
@@ -82,17 +68,13 @@ Managing how build agents interact with the Jenkins controller is another critic
 
 Additional settings suppress security warnings from update sites, manage API token creation (with best practices advising against legacy API tokens), and secure the communication between agents and the controller.
 
-<Frame>
-  ![The image shows a Jenkins "Configure Global Security" settings page, including options for API Token, Agent to Controller Security, and SSH Server configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880029/notes-assets/images/Jenkins-Managing-the-system-and-credentials/frame_360.jpg)
-</Frame>
+![The image shows a Jenkins "Configure Global Security" settings page, including options for API Token, Agent to Controller Security, and SSH Server configurations.](https://kodekloud.com/kk-media/image/upload/v1752880029/notes-assets/images/Jenkins-Managing-the-system-and-credentials/frame_360.jpg)
 
 ### SSH Server for CLI Commands
 
 Jenkins can also operate as an SSH server to process a subset of CLI commands, allowing centralized management of CLI operations directly through the Jenkins server.
 
-<Callout icon="lightbulb">
-  Ensure that SSH configurations are secured and that access is limited to trusted users to prevent unauthorized actions.
-</Callout>
+> **lightbulb** Ensure that SSH configurations are secured and that access is limited to trusted users to prevent unauthorized actions.
 
 ## Conclusion
 
@@ -105,8 +87,6 @@ For further details, consider reviewing additional resources:
 
 Happy configuring!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/a04dd614-ac4a-452f-b42a-c7f7086c5897/lesson/0f5ed8ca-f26e-417d-9351-daac48521b60" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/a04dd614-ac4a-452f-b42a-c7f7086c5897/lesson/0f5ed8ca-f26e-417d-9351-daac48521b60)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/a04dd614-ac4a-452f-b42a-c7f7086c5897/lesson/166fa542-0082-446f-8411-16bdb58d7e18" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/jenkins/module/a04dd614-ac4a-452f-b42a-c7f7086c5897/lesson/166fa542-0082-446f-8411-16bdb58d7e18)

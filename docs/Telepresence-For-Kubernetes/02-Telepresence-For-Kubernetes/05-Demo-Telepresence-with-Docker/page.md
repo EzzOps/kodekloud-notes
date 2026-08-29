@@ -180,9 +180,7 @@ app.get("/", async (req, res) => {
 });
 ```
 
-<Callout icon="triangle-alert">
-  `apiURL` is undefined locally because the environment variable from the Pod isn’t set in your shell.
-</Callout>
+> **triangle-alert** `apiURL` is undefined locally because the environment variable from the Pod isn’t set in your shell.
 
 ## 9. Import Environment Variables
 
@@ -205,9 +203,7 @@ Now restart your local service so it picks up `API_URL` and any other Pod-specif
 * [Express.js Guide](https://expressjs.com/)
 * [Docker Hub: sanjeevkt720/telepresence-auth](https://hub.docker.com/r/sanjeevkt720/telepresence-auth)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/93238627-79c8-49f3-b86d-cdff5e1a91b9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/93238627-79c8-49f3-b86d-cdff5e1a91b9)
 
 
 # Demo Telepresence with Docker

@@ -22,11 +22,11 @@ In Azure DevOps under **Organization Settings » Agent pools**, you’ll typical
 
 [WSL](https://docs.microsoft.com/windows/wsl/) provides a full Linux environment on Windows without a virtual machine. Install packages, run scripts, and host a Linux build agent just like on a native Linux server.
 
-![The image shows an Azure DevOps interface with a terminal window open, displaying a command prompt for a user on a system named "DIGITALSTORM."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867794/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Building-a-Linux-Self-Hosted-Build-Agent-with-WSL/azure-devops-terminal-command-digitalstorm.jpg)
+![The image shows an Azure DevOps interface with a terminal window open, displaying a command prompt for a user on a system named "DIGITALSTORM."](https://kodekloud.com/kk-media/image/upload/v1752867794/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Building-a-Linux-Self-Hosted-Build-Agent-with-WSL/azure-devops-terminal-command-digitalstorm.jpg)
 
 WSL has simplified my cross-platform builds for years by eliminating extra virtualization layers.
 
-![The image shows an Azure DevOps interface indicating that no jobs have run on a specific agent pool. It includes navigation options on the left and a message prompting to run a pipeline.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867795/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Building-a-Linux-Self-Hosted-Build-Agent-with-WSL/azure-devops-no-jobs-agent-pool.jpg)
+![The image shows an Azure DevOps interface indicating that no jobs have run on a specific agent pool. It includes navigation options on the left and a message prompting to run a pipeline.](https://kodekloud.com/kk-media/image/upload/v1752867795/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Building-a-Linux-Self-Hosted-Build-Agent-with-WSL/azure-devops-no-jobs-agent-pool.jpg)
 
 ## Prerequisites
 
@@ -92,7 +92,7 @@ WSL has simplified my cross-platform builds for years by eliminating extra virtu
 
 Your Linux agent will now appear in the pool:
 
-![The image shows an Azure DevOps interface displaying the settings for an agent pool named "Linux," with one agent listed as "WSL Linux Builder" that is currently idle and enabled. The left sidebar includes various settings and options related to the organization and pipelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867796/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Building-a-Linux-Self-Hosted-Build-Agent-with-WSL/azure-devops-agent-pool-settings.jpg)
+![The image shows an Azure DevOps interface displaying the settings for an agent pool named "Linux," with one agent listed as "WSL Linux Builder" that is currently idle and enabled. The left sidebar includes various settings and options related to the organization and pipelines.](https://kodekloud.com/kk-media/image/upload/v1752867796/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Building-a-Linux-Self-Hosted-Build-Agent-with-WSL/azure-devops-agent-pool-settings.jpg)
 
 ## Final Result
 
@@ -103,7 +103,7 @@ On the same Windows machine, you now have:
 
 Choose the appropriate agent in your pipeline YAML or classic editor:
 
-![The image shows the Azure DevOps interface displaying the "Agent pools" settings, with two agents listed: "DIGITALSTORM" (online) and "Docker Agent - Windows" (offline). The interface includes tabs for Jobs, Agents, Details, Security, Settings, Maintenance History, and Analytics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867798/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Building-a-Linux-Self-Hosted-Build-Agent-with-WSL/azure-devops-agent-pools-settings.jpg)
+![The image shows the Azure DevOps interface displaying the "Agent pools" settings, with two agents listed: "DIGITALSTORM" (online) and "Docker Agent - Windows" (offline). The interface includes tabs for Jobs, Agents, Details, Security, Settings, Maintenance History, and Analytics.](https://kodekloud.com/kk-media/image/upload/v1752867798/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Building-a-Linux-Self-Hosted-Build-Agent-with-WSL/azure-devops-agent-pools-settings.jpg)
 
 ## Links and References
 

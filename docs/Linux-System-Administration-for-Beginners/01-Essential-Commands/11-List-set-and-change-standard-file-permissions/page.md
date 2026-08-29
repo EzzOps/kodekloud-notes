@@ -57,9 +57,7 @@ To restrict matches to letters plus an optional digit:
 $ egrep -r '/dev/[a-z]+[0-9]?' /etc/
 ```
 
-<Callout icon="triangle-alert">
-  If device names include uppercase letters or multiple segments (e.g., `/dev/tty0p0`), use grouping and repetition to cover all cases.
-</Callout>
+> **triangle-alert** If device names include uppercase letters or multiple segments (e.g., `/dev/tty0p0`), use grouping and repetition to cover all cases.
 
 ```bash theme={null}
 $ egrep -r '/dev/([a-zA-Z]+[0-9]?)+'
@@ -71,9 +69,7 @@ $ egrep -r '/dev/([a-zA-Z]+[0-9]?)+'
 
 Parentheses `()` treat a group of tokens as a single unit. In arithmetic:
 
-<Frame>
-  ![The image shows a dark interface with a command line prompt on the left and a calculation on the right, demonstrating the expression "1+2\*3" which equals "7".](../../../../images/kodekloud.com/kk-media/image/upload/v1752881479/notes-assets/images/Linux-System-Administration-for-Beginners-Extended-Regular-Expressions/dark-interface-command-line-calculation.jpg)
-</Frame>
+![The image shows a dark interface with a command line prompt on the left and a calculation on the right, demonstrating the expression "1+2\*3" which equals "7".](https://kodekloud.com/kk-media/image/upload/v1752881479/notes-assets/images/Linux-System-Administration-for-Beginners-Extended-Regular-Expressions/dark-interface-command-line-calculation.jpg)
 
 * `1 + 2 * 3 = 1 + (2×3) = 7`
 * `(1 + 2) * 3 = 3×3 = 9`
@@ -135,11 +131,9 @@ For interactive testing, try [Regexr](https://regexr.com).
 
 Happy pattern crafting!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/5805b6da-9cbc-49b5-b24b-4f2bcf80ac8d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/5805b6da-9cbc-49b5-b24b-4f2bcf80ac8d)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/80dfb239-96f2-4fce-8a4b-3da0156e91c9" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/80dfb239-96f2-4fce-8a4b-3da0156e91c9)
 
 
 # List set and change standard file permissions
@@ -213,14 +207,12 @@ $ ls -l
 -rw-r----- 1 aaron wheel 49 Oct 27 14:41 family_dog.jpg
 ```
 
-<Callout icon="lightbulb">
-  You can only switch to groups you belong to. Use `groups` to list them:
+> **lightbulb** You can only switch to groups you belong to. Use `groups` to list them:
 
   ```bash theme={null}
   $ groups
   aaron wheel family
   ```
-</Callout>
 
 ### Change Owner: `chown`
 
@@ -278,9 +270,7 @@ Permission bits follow in three sets (owner, group, others):
 > * `w`: create/delete files
 > * `x`: change into the directory
 
-<Frame>
-  ![The image illustrates file and directory permissions in a Unix-like system, showing "rwx" for owner, group, and others, with a key explaining the meaning of each permission bit.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881480/notes-assets/images/Linux-System-Administration-for-Beginners-List-set-and-change-standard-file-permissions/unix-file-directory-permissions-diagram.jpg)
-</Frame>
+![The image illustrates file and directory permissions in a Unix-like system, showing "rwx" for owner, group, and others, with a key explaining the meaning of each permission bit.](https://kodekloud.com/kk-media/image/upload/v1752881480/notes-assets/images/Linux-System-Administration-for-Beginners-List-set-and-change-standard-file-permissions/unix-file-directory-permissions-diagram.jpg)
 
 ***
 
@@ -346,15 +336,11 @@ $ ls -l
 
 Use `-` to revoke bits. Common patterns:
 
-<Callout icon="lightbulb">
-  * `u-w`: remove owner write
+> **lightbulb** * `u-w`: remove owner write
   * `g-rw`: remove group read/write
   * `o-rwx`: remove all for others
-</Callout>
 
-<Frame>
-  ![The image shows a terminal interface with instructions on removing permissions for users, groups, and others, using options like "u-", "g-", and "o-". Examples include "u-w", "g-rw", and "o-rwx".](../../../../images/kodekloud.com/kk-media/image/upload/v1752881481/notes-assets/images/Linux-System-Administration-for-Beginners-List-set-and-change-standard-file-permissions/terminal-permissions-removal-instructions.jpg)
-</Frame>
+![The image shows a terminal interface with instructions on removing permissions for users, groups, and others, using options like "u-", "g-", and "o-". Examples include "u-w", "g-rw", and "o-rwx".](https://kodekloud.com/kk-media/image/upload/v1752881481/notes-assets/images/Linux-System-Administration-for-Beginners-List-set-and-change-standard-file-permissions/terminal-permissions-removal-instructions.jpg)
 
 Remove read for others:
 

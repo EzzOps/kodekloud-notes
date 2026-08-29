@@ -28,9 +28,7 @@ Links and further reading:
 * [HashiCorp Configuration Language (HCL)](https://www.packer.io/docs/templates/hcl)
 * [AWS AMI Basics](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-packer/module/88bc689f-1e45-49d8-887c-cb44923b3390/lesson/d22515f2-3cb5-4ffb-8903-7075f87f67b0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-packer/module/88bc689f-1e45-49d8-887c-cb44923b3390/lesson/d22515f2-3cb5-4ffb-8903-7075f87f67b0)
 
 
 # Workflow in Immutable Infrastructure using Packer
@@ -60,9 +58,7 @@ When you introduce a new feature or dependency, update your application to **ver
 2. Adjust any configuration or dependencies.
 3. Execute Packer to produce the **v2** image.
 
-<Frame>
-  ![The image illustrates a process where Packer is used to create versioned images (v1 and v2) from application changes, with servers running the v1 image.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878648/notes-assets/images/HashiCorp-Packer-Workflow-in-Immutable-Infrastructure-using-Packer/packer-versioned-images-process.jpg)
-</Frame>
+![The image illustrates a process where Packer is used to create versioned images (v1 and v2) from application changes, with servers running the v1 image.](https://kodekloud.com/kk-media/image/upload/v1752878648/notes-assets/images/HashiCorp-Packer-Workflow-in-Immutable-Infrastructure-using-Packer/packer-versioned-images-process.jpg)
 
 ## Rolling Out Updates
 
@@ -81,13 +77,9 @@ This immutable rollout process offers:
 | Repeatable deployments   | Every build produces a versioned artifact that can be deployed anywhere, anytime. |
 | Predictable upgrades     | Rollbacks and rollouts are simple: launch a previous image version to revert.     |
 
-<Frame>
-  ![The image illustrates a process of updating application images from version 1 (v1) to version 2 (v2) using Packer, with servers running different versions of the images.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878648/notes-assets/images/HashiCorp-Packer-Workflow-in-Immutable-Infrastructure-using-Packer/updating-application-images-v1-v2-packer.jpg)
-</Frame>
+![The image illustrates a process of updating application images from version 1 (v1) to version 2 (v2) using Packer, with servers running different versions of the images.](https://kodekloud.com/kk-media/image/upload/v1752878648/notes-assets/images/HashiCorp-Packer-Workflow-in-Immutable-Infrastructure-using-Packer/updating-application-images-v1-v2-packer.jpg)
 
-<Callout icon="lightbulb">
-  If you’re using infrastructure-as-code tools like Terraform or CloudFormation, integrate Packer image builds into your pipeline. This ensures your deployment templates always reference the correct, versioned AMI or image ID.
-</Callout>
+> **lightbulb** If you’re using infrastructure-as-code tools like Terraform or CloudFormation, integrate Packer image builds into your pipeline. This ensures your deployment templates always reference the correct, versioned AMI or image ID.
 
 ## References
 
@@ -95,6 +87,4 @@ This immutable rollout process offers:
 * [Immutable Infrastructure Patterns](https://martinfowler.com/bliki/ImmutableServer.html)
 * [HashiCorp DevOps Blog](https://www.hashicorp.com/resources)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-packer/module/88bc689f-1e45-49d8-887c-cb44923b3390/lesson/4fdebc41-e33e-4d35-ba5a-4adf020324ce" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-packer/module/88bc689f-1e45-49d8-887c-cb44923b3390/lesson/4fdebc41-e33e-4d35-ba5a-4adf020324ce)

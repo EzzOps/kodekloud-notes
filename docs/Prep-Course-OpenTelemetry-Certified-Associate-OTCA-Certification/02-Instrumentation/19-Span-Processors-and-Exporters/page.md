@@ -38,9 +38,7 @@ Key steps in manual instrumentation:
 * Use auto-instrumentation to bootstrap visibility in environments where changing source code is infeasible; follow up with library/manual enhancements for gaps.
 * Always validate instrumentation: use console/log exporters, local tracing UIs, or sandboxed environments to confirm spans and attributes appear as expected.
 
-<Callout icon="warning">
-  Auto-instrumentation agents may not capture all framework-specific behaviors or custom logic, and they can require permissions or configuration in production environments. Always validate agent compatibility and test in staging before rolling out to production.
-</Callout>
+> **warning** Auto-instrumentation agents may not capture all framework-specific behaviors or custom logic, and they can require permissions or configuration in production environments. Always validate agent compatibility and test in staging before rolling out to production.
 
 ## Next steps and further reading
 
@@ -59,9 +57,7 @@ Links and references:
 
 Use these resources to explore language- and framework-specific guidance and to follow best practices for sampling, context propagation, and exporter configuration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/f1875db1-a286-4afe-ac33-5725b585ff08" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/f1875db1-a286-4afe-ac33-5725b585ff08)
 
 
 # Span Processors and Exporters

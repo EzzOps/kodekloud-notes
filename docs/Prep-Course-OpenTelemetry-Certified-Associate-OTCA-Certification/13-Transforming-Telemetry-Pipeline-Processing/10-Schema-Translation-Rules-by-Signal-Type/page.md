@@ -19,9 +19,7 @@ Key sections (signal-focused):
   <img alt="The image outlines &#x22;Schema Translation Rules&#x22; with six signal sections: All, Resources, Spans, Span Events, Metrics, and Logs, each with a brief description." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Schema translation rules live under version blocks. Each version contains signal-specific sections. Start with `all` for global normalizations, then add targeted rules per signal. Test changes in staging since transforms are applied in a fixed order and are often non-commutative.
-</Callout>
+> **lightbulb** Schema translation rules live under version blocks. Each version contains signal-specific sections. Start with `all` for global normalizations, then add targeted rules per signal. Test changes in staging since transforms are applied in a fixed order and are often non-commutative.
 
 ## Quick reference table
 
@@ -229,9 +227,7 @@ versions:
 
 Transforms are not generally commutative. Renaming or removing an attribute that a later transform depends on (for example, a `split` by that attribute) will break the later transform. Always reason about dependencies and ordering when composing changes.
 
-<Callout icon="warning">
-  Order matters: if you rename or remove an attribute that a later transform depends on (for example `split`), the later transform will fail because the attribute is missing. Apply `split` (or other operations that depend on original attributes) before renames that remove or change those attributes.
-</Callout>
+> **warning** Order matters: if you rename or remove an attribute that a later transform depends on (for example `split`), the later transform will fail because the attribute is missing. Apply `split` (or other operations that depend on original attributes) before renames that remove or change those attributes.
 
 Problem example (incorrect order — `direction` renamed before `split`)
 
@@ -279,6 +275,4 @@ Further reading:
 * [OpenTelemetry Specification](https://opentelemetry.io/docs/)
 * Refer to your vendor/collector docs for implementation details and supported operations.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/b06b0465-70d8-416d-a32f-4256a671894d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/b06b0465-70d8-416d-a32f-4256a671894d)

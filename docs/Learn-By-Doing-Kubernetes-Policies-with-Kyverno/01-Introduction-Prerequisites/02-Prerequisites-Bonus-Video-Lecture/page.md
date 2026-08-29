@@ -118,9 +118,7 @@ Kyverno introduces CRDs such as `ClusterPolicy` and `Policy`. Policies can:
 
 Use `validationFailureAction` to control enforcement:
 
-<Callout icon="lightbulb">
-  Set `validationFailureAction` to `Enforce` to deny non-compliant requests, or `Audit` to allow requests but record violations for reporting.
-</Callout>
+> **lightbulb** Set `validationFailureAction` to `Enforce` to deny non-compliant requests, or `Audit` to allow requests but record violations for reporting.
 
 ### Example 1 — Require a `team` label on Deployments
 

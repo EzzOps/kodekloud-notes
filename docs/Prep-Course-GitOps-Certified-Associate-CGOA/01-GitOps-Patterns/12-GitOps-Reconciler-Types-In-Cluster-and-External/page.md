@@ -5,9 +5,7 @@ kubectl rollout status deployment/my-app
 kubectl rollout undo deployment/my-app
 ```
 
-<Callout icon="lightbulb">
-  RollingUpdate is the Kubernetes default strategy. It provides continuous availability during upgrades and is well-suited to stateless services or stateful apps that rely on external persistence.
-</Callout>
+> **lightbulb** RollingUpdate is the Kubernetes default strategy. It provides continuous availability during upgrades and is well-suited to stateless services or stateful apps that rely on external persistence.
 
 ## Recreate
 
@@ -67,9 +65,7 @@ Links and references
 * [Istio Service Mesh](https://learn.kodekloud.com/user/courses/istio-service-mesh)
 * Kubernetes docs — Deployments: [https://kubernetes.io/docs/concepts/workloads/controllers/deployment/](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/6835080d-68dc-4c5e-aaab-cd8ec0323f72" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/6835080d-68dc-4c5e-aaab-cd8ec0323f72)
 
 
 # GitOps Reconciler Types In Cluster and External
@@ -99,9 +95,7 @@ In-cluster reconcilers run inside the Kubernetes cluster they manage.
   2. It compares manifests to the cluster’s live state using the local API server.
   3. It applies changes by creating/updating Kubernetes resources locally.
 
-<Callout icon="lightbulb">
-  In-cluster reconcilers follow a pull model: they fetch desired state from Git and apply it via the cluster’s local API, minimizing external credential handling and network exposure.
-</Callout>
+> **lightbulb** In-cluster reconcilers follow a pull model: they fetch desired state from Git and apply it via the cluster’s local API, minimizing external credential handling and network exposure.
 
 ## External reconcilers
 
@@ -117,9 +111,7 @@ External reconcilers run outside the target Kubernetes cluster. Common examples 
   2. It uses externally stored credentials to call the target cluster’s API server.
   3. It applies changes remotely.
 
-<Callout icon="warning">
-  External reconcilers require externally stored Kubernetes credentials and network access to the API server. Protect and rotate credentials (e.g., `kubeconfig`, tokens) and restrict API access to minimize risk.
-</Callout>
+> **warning** External reconcilers require externally stored Kubernetes credentials and network access to the API server. Protect and rotate credentials (e.g., `kubeconfig`, tokens) and restrict API access to minimize risk.
 
 ## How Argo CD fits in
 
@@ -163,6 +155,4 @@ Both patterns are valid and commonly used in GitOps workflows. In-cluster reconc
 
 * Best practice: store and rotate external credentials (`kubeconfig`, tokens) and restrict API server access using network policies and firewall rules.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/24542572-7734-447c-b135-86921b45a18b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/24542572-7734-447c-b135-86921b45a18b)

@@ -111,9 +111,7 @@ Common sources of drift
 
 Principle to follow: Git is authoritative. Either the controller syncs the cluster to Git, or you update Git to reflect an intentional change in the cluster. The cluster is not the source of truth.
 
-<Callout icon="lightbulb">
-  Using a pull-based model (agents inside the cluster pulling from Git) reduces secret sprawl. CI/CD systems do not need persistent cluster credentials to apply changes, improving security and auditability.
-</Callout>
+> **lightbulb** Using a pull-based model (agents inside the cluster pulling from Git) reduces secret sprawl. CI/CD systems do not need persistent cluster credentials to apply changes, improving security and auditability.
 
 Recap — core takeaways
 
@@ -130,9 +128,7 @@ Further reading and references
 
 This concludes the lesson on GitOps, desired state, drift, and reconciliation.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/c28403c7-4078-4ed2-a273-ec35b204e887" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/c28403c7-4078-4ed2-a273-ec35b204e887)
 
 
 # GitOps Tool Landscape ArgoCD vs Flux
@@ -269,13 +265,9 @@ Key takeaways
   <img alt="The image presents key takeaways comparing ArgoCD and Flux, highlighting differences in their production readiness, operational models, multi-cluster approaches, and support for tools like Helm and Kustomize." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Both Argo CD and Flux are mature, production-ready GitOps engines. Choose based on operational model (centralized vs decentralized), team preferences (UI vs Git/CLI), and ecosystem fit (image automation, progressive delivery, CI and secret management).
-</Callout>
+> **lightbulb** Both Argo CD and Flux are mature, production-ready GitOps engines. Choose based on operational model (centralized vs decentralized), team preferences (UI vs Git/CLI), and ecosystem fit (image automation, progressive delivery, CI and secret management).
 
-<Callout icon="warning">
-  Plan migrations carefully. Switching GitOps engines often requires converting resource models, updating webhooks, and revising runbooks — expect non-trivial effort and potential downtime windows.
-</Callout>
+> **warning** Plan migrations carefully. Switching GitOps engines often requires converting resource models, updating webhooks, and revising runbooks — expect non-trivial effort and potential downtime windows.
 
 Links and references
 
@@ -288,6 +280,4 @@ Links and references
 * [Argo Image Updater](https://argoproj.github.io/argo-image-updater/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/0d2408b0-4899-4fe5-b864-be3567f9708d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/0d2408b0-4899-4fe5-b864-be3567f9708d)

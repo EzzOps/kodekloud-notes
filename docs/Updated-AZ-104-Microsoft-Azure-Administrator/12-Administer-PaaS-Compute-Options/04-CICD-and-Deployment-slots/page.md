@@ -18,13 +18,9 @@ CI/CD enhances code quality and accelerates delivery by automating integration a
 2. **Manual Deployment**\
    Developers store code in remote cloud storage services (e.g., OneDrive or Dropbox) or external Git repositories, then manually trigger updates to the App Service.
 
-<Callout icon="lightbulb">
-  As of September 30, 2023, integrations for Microsoft OneDrive and Dropbox have been retired for Azure App Service and Azure Functions. Ensure any cascading deployments are disabled since these options no longer appear in the Azure portal.
-</Callout>
+> **lightbulb** As of September 30, 2023, integrations for Microsoft OneDrive and Dropbox have been retired for Azure App Service and Azure Functions. Ensure any cascading deployments are disabled since these options no longer appear in the Azure portal.
 
-<Frame>
-  ![The image illustrates a CI/CD process with two deployment methods: automated and manual, connected to various repositories and storage services like Azure Repos, Bitbucket, Git, OneDrive, and Dropbox.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884753/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/ci-cd-process-automated-manual.jpg)
-</Frame>
+![The image illustrates a CI/CD process with two deployment methods: automated and manual, connected to various repositories and storage services like Azure Repos, Bitbucket, Git, OneDrive, and Dropbox.](https://kodekloud.com/kk-media/image/upload/v1752884753/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/ci-cd-process-automated-manual.jpg)
 
 ***
 
@@ -67,15 +63,11 @@ To configure CI/CD for your web app in Azure App Service, follow these steps:
 
 Since the repository is linked to Azure Repos, you can directly view it in the portal. When you commit changes, they automatically reflect on your App Service. For example, after configuring CI/CD through the Deployment Center, you may observe a log entry like the one below:
 
-<Frame>
-  ![The image shows a screenshot of an Azure DevOps repository interface, displaying a list of HTML files and folders with details about their last changes and commit information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884754/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-devops-repo-html-files-screenshot.jpg)
-</Frame>
+![The image shows a screenshot of an Azure DevOps repository interface, displaying a list of HTML files and folders with details about their last changes and commit information.](https://kodekloud.com/kk-media/image/upload/v1752884754/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-devops-repo-html-files-screenshot.jpg)
 
 Within Deployment Center, select Azure Repos (or alternatives like GitHub or Bitbucket), then choose the organization, project, repository, and branch as needed. After saving your configuration, inspect the deployment logs:
 
-<Frame>
-  ![The image shows the Deployment Center page of a web app in Microsoft Azure, displaying a successful deployment log entry with details such as time, commit ID, and author.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884756/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-deployment-center-log-entry.jpg)
-</Frame>
+![The image shows the Deployment Center page of a web app in Microsoft Azure, displaying a successful deployment log entry with details such as time, commit ID, and author.](https://kodekloud.com/kk-media/image/upload/v1752884756/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-deployment-center-log-entry.jpg)
 
 Changes made in Visual Studio Code—such as modifications to the index.html file—are automatically tracked, committed, and synchronized with your repository. Refreshing the Azure repository confirms the push, and your web app reflects these updates. Consider the following Git log outputs during development:
 
@@ -120,9 +112,7 @@ And the corresponding Git operations could look like this:
 
 After syncing with the Azure portal, these changes are deployed successfully. Note that if you use separate branches (e.g., development vs. production), the production App Service remains on the older version until a merge or slot swap occurs.
 
-<Frame>
-  ![The image shows a dashboard interface from a web application, displaying sales, revenue, and customer metrics, along with graphs and recent activity logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884757/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/web-application-dashboard-sales-metrics.jpg)
-</Frame>
+![The image shows a dashboard interface from a web application, displaying sales, revenue, and customer metrics, along with graphs and recent activity logs.](https://kodekloud.com/kk-media/image/upload/v1752884757/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/web-application-dashboard-sales-metrics.jpg)
 
 ***
 
@@ -148,9 +138,7 @@ Key features of deployment slots include:
 
 When creating a deployment slot, decide whether to clone the app configuration (from production or another slot) or start fresh. Understand which settings swap and which do not. Generally, swappable settings include general settings, WebJob contents, app settings, path mappings, hybrid connections, connection strings, service endpoints, handler mappings, and Azure CDN configurations. Non-swappable settings include publishing endpoints, scale settings, CORS, custom domains, IP restrictions, VNet integration, non-public certificates, always-on configuration, managed identities, TLS/SSL settings, diagnostic settings, and any setting ending with an extension version suffix.
 
-<Frame>
-  ![The image illustrates the process of deployment slots in Azure, showing the flow from Azure Repos to Staging and Production, along with considerations for settings that can and cannot be swapped.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884758/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-deployment-slots-flow-diagram.jpg)
-</Frame>
+![The image illustrates the process of deployment slots in Azure, showing the flow from Azure Repos to Staging and Production, along with considerations for settings that can and cannot be swapped.](https://kodekloud.com/kk-media/image/upload/v1752884758/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-deployment-slots-flow-diagram.jpg)
 
 A common workflow involves committing code to a development branch, validating the changes via CI/CD, and then creating a pull request to merge into the main (production) branch. This triggers a production deployment automatically.
 
@@ -164,19 +152,13 @@ You can configure separate deployment slots for different branches to facilitate
 2. Under Deployment Center, add a new slot (e.g., "dev").\
    When prompted, choose whether to clone the settings from the production app.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal with a focus on the "Deployment Slots" section for a web app named "kodekloudemoapp." A panel is open to add a new slot named "dev," with an option to clone settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884759/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-portal-deployment-slots-kodekloudemoapp.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal with a focus on the "Deployment Slots" section for a web app named "kodekloudemoapp." A panel is open to add a new slot named "dev," with an option to clone settings.](https://kodekloud.com/kk-media/image/upload/v1752884759/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-portal-deployment-slots-kodekloudemoapp.jpg)
 
 3. Configure CI/CD for the new slot to pull code from the "dev" branch. After saving, you will see a pending deployment log entry:
 
-<Frame>
-  ![The image shows the Deployment Center settings in Microsoft Azure, where Azure Repos is selected as the source for deploying and building code. It includes options for organization, project, repository, and branch selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884761/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-deployment-center-repos-settings.jpg)
-</Frame>
+![The image shows the Deployment Center settings in Microsoft Azure, where Azure Repos is selected as the source for deploying and building code. It includes options for organization, project, repository, and branch selection.](https://kodekloud.com/kk-media/image/upload/v1752884761/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-deployment-center-repos-settings.jpg)
 
-<Frame>
-  ![The image shows the Deployment Center in Microsoft Azure, displaying a pending deployment log entry for a commit from VSTS on December 12, 2023.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884762/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-deployment-center-pending-log.jpg)
-</Frame>
+![The image shows the Deployment Center in Microsoft Azure, displaying a pending deployment log entry for a commit from VSTS on December 12, 2023.](https://kodekloud.com/kk-media/image/upload/v1752884762/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-deployment-center-pending-log.jpg)
 
 Once the CI/CD process completes for the "dev" slot, preview the changes by refreshing the slot’s URL. Changes committed to the development branch will only affect the "dev" slot until merged with the main branch or manually swapped.
 
@@ -192,29 +174,21 @@ In Visual Studio Code, switching to the "dev" branch and committing changes migh
 
 Once you push these changes to the "dev" branch, you can later merge them into the main branch through a pull request:
 
-<Frame>
-  ![The image shows an Azure DevOps interface displaying a repository named "App Service Demo Site" with a list of files and folders, including HTML files and directories like "assets" and "forms." The interface includes options for setting up a build and creating a pull request.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884763/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-devops-app-service-repo.jpg)
-</Frame>
+![The image shows an Azure DevOps interface displaying a repository named "App Service Demo Site" with a list of files and folders, including HTML files and directories like "assets" and "forms." The interface includes options for setting up a build and creating a pull request.](https://kodekloud.com/kk-media/image/upload/v1752884763/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-devops-app-service-repo.jpg)
 
 If you choose not to create a pull request, you can swap the deployment slots directly. Swapping exchanges the contents of the "dev" and production slots, enabling a quick rollback if needed.
 
-<Frame>
-  ![The image shows a Microsoft Azure DevOps interface with a pull request titled "prod-change" proposing to merge a branch. A sidebar is open for completing the pull request with options like "Delete dev after merging" selected.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884764/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-devops-pull-request-prod-change.jpg)
-</Frame>
+![The image shows a Microsoft Azure DevOps interface with a pull request titled "prod-change" proposing to merge a branch. A sidebar is open for completing the pull request with options like "Delete dev after merging" selected.](https://kodekloud.com/kk-media/image/upload/v1752884764/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-devops-pull-request-prod-change.jpg)
 
 After additional commits—such as adding a version marker "build 1.0" in the "dev" slot—and verifying deployment logs, perform the swap:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying deployment slots for a web app named "kodekloudemoapp." It includes a swap configuration panel with source and target settings for deployment changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884766/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-portal-deployment-slots-kodekloudemoapp-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying deployment slots for a web app named "kodekloudemoapp." It includes a swap configuration panel with source and target settings for deployment changes.](https://kodekloud.com/kk-media/image/upload/v1752884766/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-portal-deployment-slots-kodekloudemoapp-2.jpg)
 
 Swapping pushes the new code from the "dev" slot into production while moving the old production code into the "dev" slot. This method enables quick rollbacks in case of deployment issues.
 
 After a successful swap, both production and development slots display the updated builds. For example, refreshing the production site will show the updated “build 1.0” dashboard, while the development slot reverts to its previous state.
 
-<Frame>
-  ![The image shows a Microsoft Azure Deployment Center interface displaying deployment logs for a web app, including commit IDs, authors, statuses, and messages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884767/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-deployment-center-logs-web-app.jpg)
-</Frame>
+![The image shows a Microsoft Azure Deployment Center interface displaying deployment logs for a web app, including commit IDs, authors, statuses, and messages.](https://kodekloud.com/kk-media/image/upload/v1752884767/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/azure-deployment-center-logs-web-app.jpg)
 
 ***
 
@@ -224,10 +198,6 @@ This guide demonstrated setting up CI/CD with Azure App Service and using deploy
 
 Next, explore Azure Container Instances in our upcoming lesson for containerized deployment solutions.
 
-<Frame>
-  ![The image shows a dashboard interface from "NiceAdmin" with various widgets displaying sales, revenue, customer data, recent activity, and budget reports. It includes graphs and tables for visualizing data trends and performance metrics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884769/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/niceadmin-dashboard-sales-revenue-widgets.jpg)
-</Frame>
+![The image shows a dashboard interface from "NiceAdmin" with various widgets displaying sales, revenue, customer data, recent activity, and budget reports. It includes graphs and tables for visualizing data trends and performance metrics.](https://kodekloud.com/kk-media/image/upload/v1752884769/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-CICD-and-Deployment-slots/niceadmin-dashboard-sales-revenue-widgets.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/c1871647-c1ec-478a-beab-b21781cec58f/lesson/1e055acf-9eab-4086-82b6-f5875b6660e4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/c1871647-c1ec-478a-beab-b21781cec58f/lesson/1e055acf-9eab-4086-82b6-f5875b6660e4)

@@ -32,9 +32,7 @@ error[E0384]: cannot assign twice to immutable variable `y`
 
 This compile-time error prevents bugs by ensuring that variable values do not change unexpectedly during the execution of your program.
 
-<Callout icon="lightbulb">
-  In Rust, immutability by default helps to ensure that your code remains more predictable and safe. This is especially important in concurrent programming scenarios.
-</Callout>
+> **lightbulb** In Rust, immutability by default helps to ensure that your code remains more predictable and safe. This is especially important in concurrent programming scenarios.
 
 However, there are situations where you need a variable that can change. Rust provides this flexibility by allowing you to declare mutable variables using the `mut` keyword. The example below shows how to modify the previous code to enable mutation:
 
@@ -53,6 +51,4 @@ For more insights on Rust and variable management, you can refer to the official
 
 By understanding and properly managing variables and their mutability, you can write more secure and maintainable Rust code.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/452e7ec4-c30f-40dc-8d29-333d86102c32" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/452e7ec4-c30f-40dc-8d29-333d86102c32)

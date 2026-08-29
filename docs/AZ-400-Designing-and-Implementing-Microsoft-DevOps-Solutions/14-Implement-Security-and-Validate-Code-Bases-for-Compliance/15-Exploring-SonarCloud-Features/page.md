@@ -109,7 +109,7 @@ SonarCloud empowers development teams to continuously monitor and improve code q
 4. SonarCloud’s dashboard visualizes issues, coverage, duplication, and technical debt.
 5. Feedback loops back into Azure DevOps work items and Pull Requests for quick triage.
 
-![The image is a flowchart illustrating the SonarCloud features, showing a process from a developer's core repository through an Azure DevOps CI pipeline to a SonarQube code scanner, which uploads analysis results to a SonarQube database.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868009/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-SonarCloud-Features/sonarcloud-features-flowchart-azure-devops.jpg)
+![The image is a flowchart illustrating the SonarCloud features, showing a process from a developer's core repository through an Azure DevOps CI pipeline to a SonarQube code scanner, which uploads analysis results to a SonarQube database.](https://kodekloud.com/kk-media/image/upload/v1752868009/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-SonarCloud-Features/sonarcloud-features-flowchart-azure-devops.jpg)
 
 This end-to-end integration ensures every merge respects your quality standards and keeps your codebase healthy.
 
@@ -126,7 +126,7 @@ SonarCloud offers a comprehensive suite of tools designed to maintain high code 
 | Broad Language Support               | Analyze 30+ languages in a single service              | Includes Java, C#, JavaScript, Python, Go, and more with consistent rules.    |
 | Fully-Managed Cloud Service          | Zero infrastructure overhead                           | Automatic scaling, upgrades, and high availability handled by SonarCloud.     |
 
-![The image describes four features of SonarCloud: a collaborative platform for code excellence, Microsoft collaboration, language diversity support, and cloud service offering. Each feature is briefly explained with icons and colorful backgrounds.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868010/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-SonarCloud-Features/sonarcloud-features-collaboration-icons.jpg)
+![The image describes four features of SonarCloud: a collaborative platform for code excellence, Microsoft collaboration, language diversity support, and cloud service offering. Each feature is briefly explained with icons and colorful backgrounds.](https://kodekloud.com/kk-media/image/upload/v1752868010/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-SonarCloud-Features/sonarcloud-features-collaboration-icons.jpg)
 
 These capabilities make SonarCloud a powerful choice for teams seeking continuous code quality, security, and transparency.
 

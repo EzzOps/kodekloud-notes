@@ -27,7 +27,7 @@ When setting up Azure Cache for Redis, consider the following configurations to 
 * **Clustering Support:**\
   For high-workload environments, clustering enables data distribution across multiple nodes, which improves scalability and availability.
 
-![The image is a guide for configuring Azure Cache for Redis, highlighting key elements like Name, Location, Pricing Tier, Virtual Network Support, and Clustering Support.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866208/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Azure-Cache-for-Redis/azure-cache-redis-configuration-guide.jpg)
+![The image is a guide for configuring Azure Cache for Redis, highlighting key elements like Name, Location, Pricing Tier, Virtual Network Support, and Clustering Support.](https://kodekloud.com/kk-media/image/upload/v1752866208/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Azure-Cache-for-Redis/azure-cache-redis-configuration-guide.jpg)
 
 ***
 

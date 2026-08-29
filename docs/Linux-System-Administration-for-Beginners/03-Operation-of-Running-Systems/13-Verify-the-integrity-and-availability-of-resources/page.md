@@ -148,9 +148,7 @@ Mar 24 01:23:14 LFCS-CentOS at_scheduled_backup[10028]: My at job produced this 
 * If your distribution doesn’t use /var/log/cron, check /var/log/messages or /var/log/syslog, or query the journal directly.
 * Configure MAILTO in /etc/crontab or per-user crontab if you have local mail delivery enabled and prefer email notifications for output.
 
-<Callout icon="lightbulb">
-  On some distributions, scheduled-job messages are recorded in /var/log/messages or /var/log/syslog instead of /var/log/cron. If you don't find entries in /var/log/cron, search those files or use journalctl to query the systemd journal.
-</Callout>
+> **lightbulb** On some distributions, scheduled-job messages are recorded in /var/log/messages or /var/log/syslog instead of /var/log/cron. If you don't find entries in /var/log/cron, search those files or use journalctl to query the systemd journal.
 
 ## Summary
 
@@ -165,11 +163,9 @@ Links and references
 * [anacron documentation](https://man7.org/linux/man-pages/man8/anacron.8.html)
 * [systemd-cat and journalctl](https://www.freedesktop.org/software/systemd/man/systemd-cat.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/ba0f4b36-8642-44b2-9c0d-36272ae0319f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/ba0f4b36-8642-44b2-9c0d-36272ae0319f)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/ded19bd0-d9b1-4d02-9b28-401f88d30ad2" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/ded19bd0-d9b1-4d02-9b28-401f88d30ad2)
 
 
 # Verify the integrity and availability of resources

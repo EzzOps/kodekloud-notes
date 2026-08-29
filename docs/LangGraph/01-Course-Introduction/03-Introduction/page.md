@@ -79,9 +79,7 @@ Before you begin the labs, confirm the LangGraph package is installed:
 pip show langgraph
 ```
 
-<Callout icon="lightbulb">
-  Recommended basics: a recent Python version and pip. We'll cover any additional setup and prerequisites at the start of the lesson so you can follow along without friction.
-</Callout>
+> **lightbulb** Recommended basics: a recent Python version and pip. We'll cover any additional setup and prerequisites at the start of the lesson so you can follow along without friction.
 
 ## Prerequisites & environment checklist
 
@@ -103,6 +101,4 @@ Tip: Store API keys securely (e.g., environment variables or a secrets manager).
 
 Before you begin the labs, we’ll walk through any additional prerequisites and step-by-step environment setup so you can reproduce the demos and exercises confidently.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/11d0578c-2a76-40f7-be25-905be94f24f8/lesson/e23cb1b7-5d81-455a-9e32-16cbb9ddb022" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/11d0578c-2a76-40f7-be25-905be94f24f8/lesson/e23cb1b7-5d81-455a-9e32-16cbb9ddb022)

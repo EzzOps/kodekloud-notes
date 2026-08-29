@@ -74,7 +74,7 @@ fileD fileE
 
 > **lightbulb** In Bash both `!` and `^` work for negation. POSIX shells require `!` at the start of the class.
 
-![The image explains that square brackets are special characters in Shell used for creating glob expressions by matching characters inside the brackets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868573/notes-assets/images/Advanced-Bash-Scripting-Square/square-brackets-shell-glob-expressions.jpg)
+![The image explains that square brackets are special characters in Shell used for creating glob expressions by matching characters inside the brackets.](https://kodekloud.com/kk-media/image/upload/v1752868573/notes-assets/images/Advanced-Bash-Scripting-Square/square-brackets-shell-glob-expressions.jpg)
 
 ## Listing Specific Characters
 

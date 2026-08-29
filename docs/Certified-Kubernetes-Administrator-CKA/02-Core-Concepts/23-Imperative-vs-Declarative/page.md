@@ -131,11 +131,11 @@ So far, we have covered creating and managing Kubernetes objects either by direc
 
 Imagine visiting a friend’s house. In the past, you might have taken a taxi and given the driver precise, step-by-step directions—for example, "Take a right onto Street B, then left onto Street C, another left onto Street D, and finally stop at the house." This sequence of detailed instructions illustrates the imperative approach.
 
-![The image shows two navigation maps: one with imperative directions and another with declarative directions, illustrating different ways to guide someone to a destination.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869717/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Imperative-vs-Declarative/frame_60.jpg)
+![The image shows two navigation maps: one with imperative directions and another with declarative directions, illustrating different ways to guide someone to a destination.](https://kodekloud.com/kk-media/image/upload/v1752869717/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Imperative-vs-Declarative/frame_60.jpg)
 
 Today, using an app like Uber, you simply enter your final destination. This is akin to the declarative approach where you specify the desired outcome—"Drive to Tom's house"—and the system figures out the best route.
 
-![The image compares imperative and declarative directions using maps, showing step-by-step navigation versus a direct destination approach.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869718/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Imperative-vs-Declarative/frame_90.jpg)
+![The image compares imperative and declarative directions using maps, showing step-by-step navigation versus a direct destination approach.](https://kodekloud.com/kk-media/image/upload/v1752869718/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Imperative-vs-Declarative/frame_90.jpg)
 
 ## Imperative vs Declarative: Kubernetes Perspective
 
@@ -163,7 +163,7 @@ While the imperative approach is effective for quick tasks, it comes with some l
 
 In Kubernetes, imperative commands like `kubectl run`, `kubectl create deployment`, `kubectl expose`, and even editing commands such as `kubectl edit` or scaling commands are excellent for immediate changes but require careful tracking of the current state.
 
-![The image compares imperative and declarative approaches in Infrastructure as Code, detailing steps for setting up an NGINX server on a virtual machine.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869719/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Imperative-vs-Declarative/frame_240.jpg)
+![The image compares imperative and declarative approaches in Infrastructure as Code, detailing steps for setting up an NGINX server on a virtual machine.](https://kodekloud.com/kk-media/image/upload/v1752869719/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Imperative-vs-Declarative/frame_240.jpg)
 
 ### Declarative Approach
 

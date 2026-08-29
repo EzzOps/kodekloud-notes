@@ -19,9 +19,7 @@ The following steps outline the key actions involved:
 1. **Setup AWS Environment**\
    Ensure you have an active AWS account to deploy your Lambda function.
 
-<Frame>
-  ![The image shows a webpage with instructions for deploying a Node.js app to AWS Lambda using a Jenkins pipeline, including steps for setting up an AWS environment and creating a Node.js application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879595/notes-assets/images/Jenkins-Pipelines-Using-GenAI-to-Generate-Steps-for-Lambda-Deployment/nodejs-aws-lambda-jenkins-deployment.jpg)
-</Frame>
+![The image shows a webpage with instructions for deploying a Node.js app to AWS Lambda using a Jenkins pipeline, including steps for setting up an AWS environment and creating a Node.js application.](https://kodekloud.com/kk-media/image/upload/v1752879595/notes-assets/images/Jenkins-Pipelines-Using-GenAI-to-Generate-Steps-for-Lambda-Deployment/nodejs-aws-lambda-jenkins-deployment.jpg)
 
 2. **Prepare the Node.js Application**\
    Even if your application is ready, make sure to install all necessary dependencies.
@@ -89,9 +87,7 @@ provider:
 
 The `serverless-http` library wraps your Express application and adapts it for AWS Lambda’s event-driven architecture.
 
-<Frame>
-  ![The image shows a webpage with instructions on using Node.js and AWS Lambda, specifically detailing how to export a handler function using the serverless-http library. It includes explanations of module.exports, handler, and serverless(app).](../../../../images/kodekloud.com/kk-media/image/upload/v1752879596/notes-assets/images/Jenkins-Pipelines-Using-GenAI-to-Generate-Steps-for-Lambda-Deployment/nodejs-aws-lambda-handler-export.jpg)
-</Frame>
+![The image shows a webpage with instructions on using Node.js and AWS Lambda, specifically detailing how to export a handler function using the serverless-http library. It includes explanations of module.exports, handler, and serverless(app).](https://kodekloud.com/kk-media/image/upload/v1752879596/notes-assets/images/Jenkins-Pipelines-Using-GenAI-to-Generate-Steps-for-Lambda-Deployment/nodejs-aws-lambda-handler-export.jpg)
 
 ***
 
@@ -144,9 +140,7 @@ aws lambda get-function-url-config --function-name my-function
 
 This command returns the URL used to invoke your Lambda function.
 
-<Frame>
-  ![The image shows a webpage with instructions on setting up a Jenkins pipeline and testing and monitoring AWS Lambda functions. It includes steps for installing Jenkins, configuring build steps, and using AWS tools for testing and monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879597/notes-assets/images/Jenkins-Pipelines-Using-GenAI-to-Generate-Steps-for-Lambda-Deployment/jenkins-pipeline-aws-lambda-setup.jpg)
-</Frame>
+![The image shows a webpage with instructions on setting up a Jenkins pipeline and testing and monitoring AWS Lambda functions. It includes steps for installing Jenkins, configuring build steps, and using AWS tools for testing and monitoring.](https://kodekloud.com/kk-media/image/upload/v1752879597/notes-assets/images/Jenkins-Pipelines-Using-GenAI-to-Generate-Steps-for-Lambda-Deployment/jenkins-pipeline-aws-lambda-setup.jpg)
 
 ***
 

@@ -17,9 +17,7 @@ Below are the primary learning objectives for this module:
 
 In this section, we compare various administrator tools available for Azure management. This comparison empowers you to choose the ideal tool for each task when managing your Azure resources.
 
-<Callout icon="lightbulb">
-  Selecting the right administrator tool can significantly improve the efficiency and ease of managing your Azure environment.
-</Callout>
+> **lightbulb** Selecting the right administrator tool can significantly improve the efficiency and ease of managing your Azure environment.
 
 ## Configuring Resources with ARM Templates
 
@@ -33,9 +31,7 @@ Azure Resource Manager (ARM) is the deployment and management layer of Azure. It
 * **ARM Templates:**\
   These templates allow you to define your infrastructure and configurations declaratively and repeatably, ensuring consistency across deployments.
 
-<Callout icon="lightbulb">
-  Utilizing ARM templates can reduce manual configuration errors and streamline your deployment processes.
-</Callout>
+> **lightbulb** Utilizing ARM templates can reduce manual configuration errors and streamline your deployment processes.
 
 ## ARM Template Structure
 
@@ -45,12 +41,8 @@ Understanding the structure of ARM templates is crucial. These templates serve a
 
 Bicep is a domain-specific language designed to simplify the creation and management of ARM templates. It offers a cleaner, more readable syntax that enhances your infrastructure-as-code practices.
 
-<Callout icon="lightbulb">
-  Bicep simplifies resource configuration, making it easier to maintain and update your infrastructure code.
-</Callout>
+> **lightbulb** Bicep simplifies resource configuration, making it easier to maintain and update your infrastructure code.
 
 Let's begin by exploring the available administrator tools and understand how they fit into the broader scheme of effective Azure resource management.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/7f421132-242f-4d10-85e5-6673b7307d12/lesson/46dfa767-0f31-4eab-a54f-3ea6edb939ab" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/7f421132-242f-4d10-85e5-6673b7307d12/lesson/46dfa767-0f31-4eab-a54f-3ea6edb939ab)

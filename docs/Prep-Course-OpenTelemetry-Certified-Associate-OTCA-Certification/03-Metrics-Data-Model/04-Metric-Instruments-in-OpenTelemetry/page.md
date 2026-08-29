@@ -39,9 +39,7 @@ Synchronous instruments record measurements inline within application logic. The
   <img alt="The image compares synchronous and asynchronous instruments, highlighting that synchronous measurements are recorded &#x22;inline&#x22; with application logic and are context-aware." />
 </Frame>
 
-<Callout icon="warning">
-  Asynchronous callbacks typically run without an active trace/span context. Do not rely on trace context inside asynchronous callbacks—design async metrics to be context-independent.
-</Callout>
+> **warning** Asynchronous callbacks typically run without an active trace/span context. Do not rely on trace context inside asynchronous callbacks—design async metrics to be context-independent.
 
 Asynchronous instruments are callback-driven and report values at collection time. They are ideal when periodic or on-request snapshots are sufficient and when frequent synchronous updates are unnecessary.
 
@@ -134,14 +132,12 @@ Comparison summary (behavior and aggregation)
 | Gauge (ObservableGauge)                    | Non-additive, non-monotonic; last-value snapshot                     | Last-value           | CPU, memory, queue length, live counts                |
 | UpDownCounter (sync) / Async UpDownCounter | Additive but non-monotonic; sync supports context                    | Sum                  | Queue size, active connections, running processes     |
 
-<Callout icon="lightbulb">
-  Choose the instrument that matches how you want the metric to behave and how your backend will aggregate it:
+> **lightbulb** Choose the instrument that matches how you want the metric to behave and how your backend will aggregate it:
 
   * Counter: count occurrences over time (monotonic sum).
   * UpDownCounter: counts that can increase or decrease (e.g., active sessions).
   * Gauge / ObservableGauge: current-state snapshots (last-value).
   * Histogram: distributions and percentiles (latencies, sizes).
-</Callout>
 
 That covers the key metric instruments in OpenTelemetry: counters, up-down counters, gauges (last-value/observable), histograms, and their asynchronous counterparts. Select instruments based on metric semantics, collection cadence, and whether you need trace/context association.
 
@@ -151,6 +147,4 @@ Links and references
 * OpenTelemetry Python metrics API: [https://opentelemetry.io/docs/instrumentation/python/](https://opentelemetry.io/docs/instrumentation/python/)
 * For aggregation and backend behavior, consult your metrics backend documentation (e.g., Prometheus, OTLP-compatible backends).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/396517cd-fd19-4a34-9dfa-033278b18024" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/396517cd-fd19-4a34-9dfa-033278b18024)

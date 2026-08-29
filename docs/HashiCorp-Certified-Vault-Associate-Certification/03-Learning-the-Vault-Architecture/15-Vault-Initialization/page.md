@@ -35,9 +35,7 @@ seal "awskms" {
 * **listener**: Binds Vault to all interfaces on ports 8200 (API) and 8201 (cluster).
 * **seal**: Configures AWS KMS for automatic unseal.
 
-<Callout icon="triangle-alert">
-  Disabling TLS (`tls_disable = true`) is insecure. Always enable TLS (`tls_disable = false`) in production and provide valid certificates.
-</Callout>
+> **triangle-alert** Disabling TLS (`tls_disable = true`) is insecure. Always enable TLS (`tls_disable = false`) in production and provide valid certificates.
 
 ## Production-Ready Configuration Example
 
@@ -107,11 +105,9 @@ These resources are created **inside** Vault after initialization and unseal, us
 * [Consul Storage Backend](https://www.vaultproject.io/docs/configuration/storage/consul)
 * [AWS KMS Auto-Unseal](https://www.vaultproject.io/docs/secrets/aws)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/0ba0097f-db0a-4b08-9ddf-434cabaa2dc2" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/0ba0097f-db0a-4b08-9ddf-434cabaa2dc2)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/b4b46309-766d-4d7e-99f7-604811d3d563" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/b4b46309-766d-4d7e-99f7-604811d3d563)
 
 
 # Vault Initialization
@@ -137,9 +133,7 @@ Vault will:
 3. Split the master key into key shares (using Shamir’s Secret Sharing) or generate recovery keys if an auto-unseal mechanism is enabled.
 4. Issue the **initial root token** for first-time authentication.
 
-<Callout icon="lightbulb">
-  Initialization writes to your storage backend only once. If your cluster is lost or restored from backup, you skip initialization and go straight to unsealing.
-</Callout>
+> **lightbulb** Initialization writes to your storage backend only once. If your cluster is lost or restored from backup, you skip initialization and go straight to unsealing.
 
 ## Key Shares, Thresholds, and Recovery Keys
 
@@ -225,6 +219,4 @@ Once unsealed and authenticated, you can configure policies, enable secrets engi
 * [Shamir’s Secret Sharing](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing)
 * [Auto-Unseal with AWS KMS](https://www.vaultproject.io/docs/secrets/aws#auto-unseal)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/3c10741c-af07-473d-8249-ea46d0c22664" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/3c10741c-af07-473d-8249-ea46d0c22664)

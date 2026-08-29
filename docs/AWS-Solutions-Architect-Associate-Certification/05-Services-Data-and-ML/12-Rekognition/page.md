@@ -12,15 +12,15 @@ Amazon Rekognition employs deep learning techniques to detect objects, people, t
 
 > **lightbulb** Integrating Rekognition can help maintain community standards on platforms like Reddit, Pinterest, or Instagram by quickly filtering unsafe content.
 
-![The image illustrates a process where a robot analyzes images to categorize them into "Harmful Content" and "Safe Content." It shows images being sorted by the robot into two separate groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865090/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Rekognition/robot-image-categorization-process.jpg)
+![The image illustrates a process where a robot analyzes images to categorize them into "Harmful Content" and "Safe Content." It shows images being sorted by the robot into two separate groups.](https://kodekloud.com/kk-media/image/upload/v1752865090/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Rekognition/robot-image-categorization-process.jpg)
 
 Rekognition is a fully managed service that seamlessly integrates with other AWS services. For example, you can set up an S3 bucket to trigger Rekognition—either directly or via AWS Lambda—each time a new image is uploaded. After processing, Rekognition generates detailed metadata and tags that can be stored in DynamoDB for further analysis. Additionally, for images with lower confidence scores, Amazon Augmented AI (A2I) can be incorporated to allow human reviewers to verify the tags before finalizing them.
 
-![The image is a flowchart illustrating an AWS Rekognition process, showing the sequence from uploading to an S3 bucket, triggering AWS Lambda, processing with Amazon Rekognition, and storing results in Amazon DynamoDB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865090/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Rekognition/aws-rekognition-flowchart-process.jpg)
+![The image is a flowchart illustrating an AWS Rekognition process, showing the sequence from uploading to an S3 bucket, triggering AWS Lambda, processing with Amazon Rekognition, and storing results in Amazon DynamoDB.](https://kodekloud.com/kk-media/image/upload/v1752865090/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Rekognition/aws-rekognition-flowchart-process.jpg)
 
 For example, if Rekognition returns a confidence score of around 70% for some images, you might opt for human review. In contrast, images with confidence scores above 85–90% can be automatically approved. This hybrid approach ensures a reliable, scalable content moderation workflow through tight AWS integration.
 
-![The image is a flowchart illustrating an AWS Rekognition process, involving an S3 bucket, AWS Lambda, Amazon Rekognition, and Amazon DynamoDB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865091/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Rekognition/aws-rekognition-flowchart-s3-lambda-dynamodb.jpg)
+![The image is a flowchart illustrating an AWS Rekognition process, involving an S3 bucket, AWS Lambda, Amazon Rekognition, and Amazon DynamoDB.](https://kodekloud.com/kk-media/image/upload/v1752865091/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Rekognition/aws-rekognition-flowchart-s3-lambda-dynamodb.jpg)
 
 ## Key Features of Amazon Rekognition
 
@@ -37,7 +37,7 @@ Rekognition provides a variety of powerful features designed to enhance image an
 * **Custom Labels:** Train models to detect custom, domain-specific content.
 * **Advanced Facial Analysis:** Determine details such as age range, gender, and nuanced emotions.
 
-![The image lists ten features related to image analysis, including object detection, facial recognition, text in image, activity detection, and more. Each feature is represented with an icon and a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865093/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Rekognition/image-analysis-features-list.jpg)
+![The image lists ten features related to image analysis, including object detection, facial recognition, text in image, activity detection, and more. Each feature is represented with an icon and a brief description.](https://kodekloud.com/kk-media/image/upload/v1752865093/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Rekognition/image-analysis-features-list.jpg)
 
 ## Integrating Rekognition with AWS Services
 

@@ -21,7 +21,7 @@ When a user enters a URL, their browser sends an HTTP GET request to a web serve
 
 By uploading these files as objects in an S3 bucket and enabling static website hosting, you can serve them directly over HTTP.
 
-![The image is an infographic about static hosting, explaining that it allows access to website files through HTTP and provides a URL via S3. It notes that it's used only for static websites and requires a specific format for domain customization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869289/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Static-Website/static-hosting-infographic-s3-url.jpg)
+![The image is an infographic about static hosting, explaining that it allows access to website files through HTTP and provides a URL via S3. It notes that it's used only for static websites and requires a specific format for domain customization.](https://kodekloud.com/kk-media/image/upload/v1752869289/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Static-Website/static-hosting-infographic-s3-url.jpg)
 
 ## How Static Hosting Works
 
@@ -40,7 +40,7 @@ Static hosting on S3 involves standard storage and data transfer fees, plus a sm
 | Data Transfer (Out) | Pay per GB transferred out  |
 | HTTP GET Requests   | \$0.0004 per 1,000 requests |
 
-![The image shows a pricing table for different types of data requests and retrievals, including S3 Standard and S3 Intelligent-Tiering, with associated costs per 1,000 requests and per GB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869291/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Static-Website/pricing-table-data-requests-s3-costs.jpg)
+![The image shows a pricing table for different types of data requests and retrievals, including S3 Standard and S3 Intelligent-Tiering, with associated costs per 1,000 requests and per GB.](https://kodekloud.com/kk-media/image/upload/v1752869291/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Static-Website/pricing-table-data-requests-s3-costs.jpg)
 
 Factor in both storage and request fees when estimating your total hosting cost.
 
@@ -65,7 +65,7 @@ In Route 53, create an Alias record (or CNAME) that maps `bestcars.com` to your 
 
 > **triangle-alert** Your S3 bucket name **must** match your custom domain (`example.com`). If they differ, DNS routing will fail and your site will be inaccessible.
 
-![The image illustrates a process involving a custom domain name, showing a user, a Route 53 icon, a URL (http://bestcars.com), and a server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869292/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Static-Website/custom-domain-route53-user-server-process.jpg)
+![The image illustrates a process involving a custom domain name, showing a user, a Route 53 icon, a URL (http://bestcars.com), and a server.](https://kodekloud.com/kk-media/image/upload/v1752869292/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Static-Website/custom-domain-route53-user-server-process.jpg)
 
 ## Further Reading
 

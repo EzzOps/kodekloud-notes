@@ -53,9 +53,7 @@ data:
   secretkey: bWluaW8xMjM=   # base64 for "minio123"
 ```
 
-<Callout icon="warning">
-  Do not commit plain-text credentials to repositories. Use sealed secrets, HashiCorp Vault, or another secret management solution for production. Ensure RBAC limits who can read the `minio-creds` secret.
-</Callout>
+> **warning** Do not commit plain-text credentials to repositories. Use sealed secrets, HashiCorp Vault, or another secret management solution for production. Ensure RBAC limits who can read the `minio-creds` secret.
 
 ## EventSource manifest: MinIO listener
 
@@ -117,9 +115,7 @@ Here is the MinIO console showing the newly created (empty) bucket:
 * Validate end-to-end by uploading/deleting objects and observing Sensor-triggered actions.
 * Consider configuring retry/backoff and dead-lettering for production workflows.
 
-<Callout icon="lightbulb">
-  Ensure the endpoint (service name, namespace, and port) is correct for your cluster (for example: minio.argo.svc.cluster.local:9000). Also make sure the credentials in the `minio-creds` secret match the MinIO server credentials.
-</Callout>
+> **lightbulb** Ensure the endpoint (service name, namespace, and port) is correct for your cluster (for example: minio.argo.svc.cluster.local:9000). Also make sure the credentials in the `minio-creds` secret match the MinIO server credentials.
 
 ## Links and references
 
@@ -128,9 +124,7 @@ Here is the MinIO console showing the newly created (empty) bucket:
 * Kubernetes documentation: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 * MinIO client (mc): [https://min.io/docs/minio/linux/reference/minio-mc.html](https://min.io/docs/minio/linux/reference/minio-mc.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/449de653-685b-462c-a0b7-0212d23309ad" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/449de653-685b-462c-a0b7-0212d23309ad)
 
 
 # Demo Trigger Conditions

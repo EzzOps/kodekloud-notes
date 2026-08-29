@@ -33,9 +33,7 @@ Application cleanup successful
 istiotraining@local istio-1.10.3 $
 ```
 
-<Callout icon="lightbulb">
-  Cleaning up the default namespace ensures a clean environment before you apply new configurations.
-</Callout>
+> **lightbulb** Cleaning up the default namespace ensures a clean environment before you apply new configurations.
 
 ## Step 2: Setting Up the Bar Namespace and Deploying HTTP Bin
 
@@ -87,9 +85,7 @@ The output should confirm that the policy was successfully created:
 peerauthentication.security.istio.io/default created
 ```
 
-<Callout icon="lightbulb">
-  Enforcing STRICT mTLS means that any workload without the proper mTLS configuration will be unable to communicate with services in the default namespace.
-</Callout>
+> **lightbulb** Enforcing STRICT mTLS means that any workload without the proper mTLS configuration will be unable to communicate with services in the default namespace.
 
 ## Step 5: Verifying Connectivity After Enforcing Mutual TLS
 
@@ -101,12 +97,8 @@ kubectl exec -it --proxy -n bar -- curl "http://productpage.default:9080" -s -o 
 
 This command should now fail with exit code 56, indicating that the communication attempt was blocked because the workload in the Bar namespace is not secured with mTLS.
 
-<Callout icon="triangle-alert">
-  Before enforcing STRICT mTLS, ensure that all relevant workloads are properly configured with mTLS to prevent unintended service disruptions.
-</Callout>
+> **triangle-alert** Before enforcing STRICT mTLS, ensure that all relevant workloads are properly configured with mTLS to prevent unintended service disruptions.
 
 This demonstration highlights how enabling STRICT Mutual TLS via Istio’s Peer Authentication Policy can help secure your environment by ensuring that only authorized, mTLS-enabled traffic is allowed between namespaces.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/e4a2171d-d190-4dc9-873e-a0dad6d3cb62/lesson/7fb2ee58-28dd-404f-92f8-6de5be062731" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/e4a2171d-d190-4dc9-873e-a0dad6d3cb62/lesson/7fb2ee58-28dd-404f-92f8-6de5be062731)

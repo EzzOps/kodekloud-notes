@@ -49,9 +49,7 @@ Example JSON-style representation (for clarity):
 }
 ```
 
-<Callout icon="warning">
-  Do not modify reserved `ot=` entries in `trace_state`. Use vendor- or system-specific keys for your additional metadata to avoid clobbering other systems' data.
-</Callout>
+> **warning** Do not modify reserved `ot=` entries in `trace_state`. Use vendor- or system-specific keys for your additional metadata to avoid clobbering other systems' data.
 
 ## Parent ID, root, and children
 
@@ -91,9 +89,7 @@ These parent-child links let tools build trace trees, waterfall charts, and depe
 
 That's it for this section.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/a81ae1f1-61ba-427b-aebc-d873d216c1c6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/a81ae1f1-61ba-427b-aebc-d873d216c1c6)
 
 
 # Span Resource
@@ -157,9 +153,7 @@ OpenTelemetry SDKs provide default resource attributes you should know:
 | `telemetry.sdk.language` | `python`          | Runtime/language of the SDK                 |
 |  `telemetry.sdk.version` | `1.0.0`           | SDK version for debugging and compatibility |
 
-<Callout icon="warning">
-  If you don't set `service.name`, it will default to `unknown_service`. With many services emitting telemetry, this makes it hard to identify which trace belongs to which service—so it is a best practice to set `service.name` for every instrumented app.
-</Callout>
+> **warning** If you don't set `service.name`, it will default to `unknown_service`. With many services emitting telemetry, this makes it hard to identify which trace belongs to which service—so it is a best practice to set `service.name` for every instrumented app.
 
 ## Automatic Resource Detection
 

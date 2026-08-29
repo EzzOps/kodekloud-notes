@@ -218,15 +218,11 @@ Run docker/build-push-action@v6
   * `DOCKERHUB_PASSWORD` (secret).
 * `docker/build-push-action` can both build and push—adjust emitted steps if a build is already present.
 
-<Callout icon="lightbulb">
-  Remember to create repository variables (`DOCKERHUB_USERNAME`, `IMAGE_NAME`) and repository secrets (`DOCKERHUB_PASSWORD`) before merging; otherwise the workflow will fail at runtime when trying to access those values.
-</Callout>
+> **lightbulb** Remember to create repository variables (`DOCKERHUB_USERNAME`, `IMAGE_NAME`) and repository secrets (`DOCKERHUB_PASSWORD`) before merging; otherwise the workflow will fail at runtime when trying to access those values.
 
 We will cover how to migrate and map the Trivy vulnerability scanner stage into GitHub Actions in a follow-up article. Depending on your preference and requirements, the Trivy step can be implemented as a shell step or via a dedicated action.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/0346a9e2-c11b-486a-88df-df8206654bdf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/0346a9e2-c11b-486a-88df-df8206654bdf)
 
 
 # Demo Custom Transformer OWASP Dependency Check 1
@@ -350,9 +346,7 @@ CVSS score ranges are commonly used to gate failures. For reference, scores ≥ 
   <img alt="A screenshot of a Google Images results page for &#x22;cvss scores,&#x22; showing many thumbnails and charts that display CVSS rating categories (Low, Medium, High, Critical) and score ranges. The browser is in a dark theme with search tabs visible across the top." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Jenkins' `nvdCredentialsId` and `odcInstallation` point to server-side configuration. When migrating to Actions, prefer a maintained Action or Docker image that packages Dependency-Check. If you need authenticated or mirrored NVD access, you'll need to provide credentials or a custom DB image to the Action.
-</Callout>
+> **lightbulb** Jenkins' `nvdCredentialsId` and `odcInstallation` point to server-side configuration. When migrating to Actions, prefer a maintained Action or Docker image that packages Dependency-Check. If you need authenticated or mirrored NVD access, you'll need to provide credentials or a custom DB image to the Action.
 
 Because GitHub Actions runners are ephemeral, the typical approach is to use an existing Action that runs Dependency-Check inside a Docker image. The GitHub Marketplace project dependency-check/dependency-check-action runs OWASP Dependency-Check in a container and exposes inputs for common CLI options.
 
@@ -401,9 +395,7 @@ Key mapping decisions (Jenkins → GitHub Actions):
 | `--failOnCVSS <score>`                | Fail build if highest CVSS ≥ score     | Pass as `args: --failOnCVSS 9` or implement follow-up checks                                                            |
 | `nvdCredentialsId`, `odcInstallation` | Jenkins-specific credentials/installer | Usually omitted; the Action provides the runtime. Use custom runner or additional Action inputs for special NVD access. |
 
-<Callout icon="warning">
-  If your Jenkins pipeline relied on a pre-downloaded NVD DB (via `odcInstallation`) or private NVD credentials, you must plan how to supply that to Actions: either use a self-hosted runner with the database pre-populated or configure the Action to use an authenticated/mirrored NVD feed. Otherwise scans may be slower or behave differently.
-</Callout>
+> **warning** If your Jenkins pipeline relied on a pre-downloaded NVD DB (via `odcInstallation`) or private NVD credentials, you must plan how to supply that to Actions: either use a self-hosted runner with the database pre-populated or configure the Action to use an authenticated/mirrored NVD feed. Otherwise scans may be slower or behave differently.
 
 Best practices when migrating Dependency-Check:
 
@@ -425,6 +417,4 @@ Links and references:
 
 That's all for now.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/a4ed79cd-6c94-4da8-bd54-62ce3b609bb7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/a4ed79cd-6c94-4da8-bd54-62ce3b609bb7)

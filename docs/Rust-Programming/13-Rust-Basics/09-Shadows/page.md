@@ -8,9 +8,7 @@ In this lesson, we will dive into a fascinating Rust feature known as shadowing.
 
 When you shadow a variable, you declare a new variable with the same name as a previous one. The new variable "shadows" the original, making only the latest version accessible within the current scope. This capability is particularly useful when you need to transform a value or change its type during processing.
 
-<Callout icon="lightbulb">
-  Shadowing is distinct from mutability. In mutable variables, the type must remain consistent, whereas shadowing allows the type to change.
-</Callout>
+> **lightbulb** Shadowing is distinct from mutability. In mutable variables, the type must remain consistent, whereas shadowing allows the type to change.
 
 ## Basic Shadowing Example
 
@@ -47,9 +45,7 @@ fn main() {
 
 This example illustrates how shadowing can facilitate type transformation without introducing new variable names.
 
-<Callout icon="triangle-alert">
-  Do not confuse shadowing with mutability. While a mutable variable allows its value to change, its type remains constant. Shadowing, however, completely replaces the previous binding and can even change the variable’s type.
-</Callout>
+> **triangle-alert** Do not confuse shadowing with mutability. While a mutable variable allows its value to change, its type remains constant. Shadowing, however, completely replaces the previous binding and can even change the variable’s type.
 
 ## Shadowing vs. Mutability
 
@@ -117,6 +113,4 @@ For further reading on Rust and its features, check out the [Rust Programming La
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/4b85bf43-5d11-4d84-8ac6-e9d67769a067" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/4b85bf43-5d11-4d84-8ac6-e9d67769a067)

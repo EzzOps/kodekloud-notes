@@ -30,9 +30,7 @@ Attribute rules and best practices
   <img alt="The image shows a set of attribute rules for key-value pairs, emphasizing non-null keys, specific data types for values, and guidance on adding attributes. There's also an illustration of a person standing next to a checklist." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Use [semantic conventions](https://opentelemetry.io/docs/reference/specification/semantic_conventions/) (standardized attribute keys such as `http.method`, `db.system`, `messaging.operation`) where possible. These conventions promote consistency across services and make cross-system analysis easier.
-</Callout>
+> **lightbulb** Use [semantic conventions](https://opentelemetry.io/docs/reference/specification/semantic_conventions/) (standardized attribute keys such as `http.method`, `db.system`, `messaging.operation`) where possible. These conventions promote consistency across services and make cross-system analysis easier.
 
 Semantic attributes are predefined keys from the OpenTelemetry semantic conventions. Many auto-instrumentation libraries populate these automatically (for example, HTTP libraries add `http.method`, `http.url`, etc.), so you often do not need to add them manually. Use manual attributes for business-specific metadata (e.g., `order_id`, `payment_method`) to make traces searchable and filterable by business context.
 
@@ -50,9 +48,7 @@ Summary — key takeaways
 
 Attributes are attached to individual spans and do not automatically propagate to child spans (unlike the trace ID). If you need to propagate key-value pairs across process boundaries or between spans, use baggage.
 
-<Callout icon="warning">
-  Span attributes are not propagated across spans. To propagate key-value pairs across process boundaries, use baggage instead.
-</Callout>
+> **warning** Span attributes are not propagated across spans. To propagate key-value pairs across process boundaries, use baggage instead.
 
 Links and references
 
@@ -60,9 +56,7 @@ Links and references
 * [OpenTelemetry Semantic Conventions](https://opentelemetry.io/docs/reference/specification/semantic_conventions/)
 * [OpenTelemetry Specification](https://opentelemetry.io/docs/reference/specification/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/91d8fdff-0330-4591-b923-9cd10c509c3b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/91d8fdff-0330-4591-b923-9cd10c509c3b)
 
 
 # Span Events vs Span Attributes

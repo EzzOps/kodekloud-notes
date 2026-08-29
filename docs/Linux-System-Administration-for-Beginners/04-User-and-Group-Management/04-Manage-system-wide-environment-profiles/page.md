@@ -30,10 +30,8 @@ Remove user accounts carefully:
 | Delete account (keep home directory) | `sudo userdel john`                                      |
 | Delete account + home + mail spool   | `sudo userdel --remove john`<br />`sudo userdel -r john` |
 
-<Callout icon="triangle-alert">
-  Using `--remove` (or `-r`) will delete the user’s home directory and mail spool permanently.\
+> **triangle-alert** Using `--remove` (or `-r`) will delete the user’s home directory and mail spool permanently.\
   Always back up important data before proceeding.
-</Callout>
 
 ***
 
@@ -138,9 +136,7 @@ Control password policies using `chage`:
 * [chage Manual](https://linux.die.net/man/1/chage)
 * [passwd Manual](https://linux.die.net/man/1/passwd)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/7e2b6f48-e58c-4d05-82e2-feb0f5f876f5/lesson/d5b36d54-e503-4378-9cb5-e18291372973" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/7e2b6f48-e58c-4d05-82e2-feb0f5f876f5/lesson/d5b36d54-e503-4378-9cb5-e18291372973)
 
 
 # Manage system wide environment profiles

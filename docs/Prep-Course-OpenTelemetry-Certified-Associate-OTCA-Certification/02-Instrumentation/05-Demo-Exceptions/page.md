@@ -165,9 +165,7 @@ Note: In the table above any curly-brace examples are shown as code to avoid par
 * Inject trace context into outgoing HTTP requests so downstream services can join traces.
 * Avoid recording sensitive or excessive data in attributes/events. Use truncated values, hashes, or identifiers where needed.
 
-<Callout icon="lightbulb">
-  When instrumenting production systems, prefer structured keys for attributes and events (for example `error.type`, `http.method`, `http.status_code`) to make querying and visualization easier in your tracing backend.
-</Callout>
+> **lightbulb** When instrumenting production systems, prefer structured keys for attributes and events (for example `error.type`, `http.method`, `http.status_code`) to make querying and visualization easier in your tracing backend.
 
 ## Links and references
 
@@ -183,9 +181,7 @@ Note: In the table above any curly-brace examples are shown as code to avoid par
 * Inject context for outgoing HTTP calls so downstream services can correlate traces.
 * Avoid storing sensitive or excessive data in span attributes and events.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/fe1000df-3f75-44d0-a7df-f3308e550a4b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/fe1000df-3f75-44d0-a7df-f3308e550a4b)
 
 
 # Demo Exceptions

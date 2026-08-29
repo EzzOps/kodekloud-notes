@@ -8,7 +8,7 @@ Hello, and welcome to this in-depth guide on Kubernetes Services for Beginners. 
 
 Kubernetes services allow different sets of Pods to interact with each other. Whether connecting the front end to back-end processes or integrating external data sources, services help to decouple microservices while maintaining reliable communication. For instance, you can expose your front-end to end users and enable back-end components to interact efficiently.
 
-![The image is a flowchart titled "Services," depicting interconnected services and databases with icons representing users and data storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869745/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Services/frame_70.jpg)
+![The image is a flowchart titled "Services," depicting interconnected services and databases with icons representing users and data storage.](https://kodekloud.com/kk-media/image/upload/v1752869745/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Services/frame_70.jpg)
 
 ## Use Case: From Internal Networking to External Access
 
@@ -45,7 +45,7 @@ Kubernetes supports several service types, each serving a unique purpose:
 * **ClusterIP:** Creates a virtual IP for internal communication between services (e.g., connecting front-end to back-end servers).
 * **LoadBalancer:** Provisions an external load balancer (supported in cloud environments) to distribute traffic across multiple Pods.
 
-![The image illustrates three types of services: NodePort, ClusterIP, and LoadBalancer, each represented with a simple diagram.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869746/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Services/frame_280.jpg)
+![The image illustrates three types of services: NodePort, ClusterIP, and LoadBalancer, each represented with a simple diagram.](https://kodekloud.com/kk-media/image/upload/v1752869746/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Services/frame_280.jpg)
 
 > **lightbulb** Remember: The NodePort service type maps a specific node port (e.g., 30008) to the target port on your Pod (e.g., 80). This provides external access while keeping internal port targeting intact.
 
@@ -174,7 +174,7 @@ In a production environment, your application is likely spread across multiple P
 
 Furthermore, even if your Pods are spread across multiple nodes, Kubernetes ensures that the target port is mapped on all nodes. This means you can access your web application using the IP of any node along with the designated NodePort, providing reliable external connectivity.
 
-![The image illustrates a Kubernetes NodePort service setup, showing nodes with IPs, ports, and pods, enabling external access to services within a cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869747/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Services/frame_750.jpg)
+![The image illustrates a Kubernetes NodePort service setup, showing nodes with IPs, ports, and pods, enabling external access to services within a cluster.](https://kodekloud.com/kk-media/image/upload/v1752869747/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Services/frame_750.jpg)
 
 > **lightbulb** Regardless of whether your application runs on a single Pod on one node, multiple Pods on a single node, or Pods spread across several nodes, the service creation process remains consistent. Kubernetes automatically updates the service endpoints when Pods are added or removed, ensuring a flexible and scalable infrastructure.
 

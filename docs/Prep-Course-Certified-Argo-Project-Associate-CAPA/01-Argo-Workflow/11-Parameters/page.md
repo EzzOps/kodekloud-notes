@@ -38,9 +38,7 @@ What this workflow defines:
 * A template called `cowsay` that declares an input parameter `message`.
 * The container runs the `cowsay` command and passes the parameter into `args` using Argo parameter substitution: `{{inputs.parameters.message}}`.
 
-<Callout icon="lightbulb">
-  When referencing parameters inside YAML template fields, use the substitution syntax exactly as shown: . Put the substitution inside quotes (for example, args: ) so the YAML parser treats it as a string and the braces are handled correctly.
-</Callout>
+> **lightbulb** When referencing parameters inside YAML template fields, use the substitution syntax exactly as shown: . Put the substitution inside quotes (for example, args: ) so the YAML parser treats it as a string and the braces are handled correctly.
 
 How parameter wiring works (quick reference):
 

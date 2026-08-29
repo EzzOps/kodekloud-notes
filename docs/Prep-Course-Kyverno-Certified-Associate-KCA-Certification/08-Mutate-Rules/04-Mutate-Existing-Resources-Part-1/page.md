@@ -46,9 +46,7 @@ Granting background-controller permissions safely
 
 Do not edit Kyverno's built-in ClusterRoles directly. Instead, create a dedicated ClusterRole that grants the minimal verbs needed (for example, `get` and `update` on Secrets), and label it with `rbac.kyverno.io/aggregate-to-background-controller: "true"`. Kyverno will aggregate this role into the background controller's effective permissions.
 
-<Callout icon="lightbulb">
-  Create a ClusterRole with the precise permissions you need and add the aggregation label. Do not edit Kyverno's default ClusterRoles directly.
-</Callout>
+> **lightbulb** Create a ClusterRole with the precise permissions you need and add the aggregation label. Do not edit Kyverno's default ClusterRoles directly.
 
 Example ClusterRole granting `get` and `update` on Secrets:
 
@@ -152,6 +150,4 @@ Links and references
 
 With this understanding, you're ready to implement mutate-existing policies that automate cross-resource changes safely and reliably.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/d26e9974-2c98-4446-83b4-6ef56d7916ba" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/d26e9974-2c98-4446-83b4-6ef56d7916ba)

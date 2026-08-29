@@ -8,9 +8,7 @@ Welcome to the Service Mesh with Istio course!
 
 I'm Sevi Karaköse, your instructor for this journey. With extensive experience as a software developer, team leader, and technical trainer, I have partnered with both development and infrastructure teams during DevOps transformations. My focus has involved transforming legacy applications into microservices and modernizing cloud environments. In this course, we’ll explore Istio through detailed lectures and hands-on labs.
 
-<Callout icon="lightbulb">
-  This course is designed to give you a comprehensive understanding of Istio, starting with the basics and moving towards advanced topics, including security, observability, and key Kubernetes fundamentals.
-</Callout>
+> **lightbulb** This course is designed to give you a comprehensive understanding of Istio, starting with the basics and moving towards advanced topics, including security, observability, and key Kubernetes fundamentals.
 
 ## Getting Started
 
@@ -39,12 +37,8 @@ As we progress through the course, we will cover the following topics:
 5. **Kubernetes Fundamentals**\
    A brief review of essential Kubernetes concepts ensures you have the background needed as we integrate Kubernetes with Istio.
 
-<Callout icon="lightbulb">
-  Istio simplifies the management of microservices by providing capabilities for traffic management, security, and observability, making it a powerful tool in your cloud-native toolkit.
-</Callout>
+> **lightbulb** Istio simplifies the management of microservices by providing capabilities for traffic management, security, and observability, making it a powerful tool in your cloud-native toolkit.
 
 I am excited to guide you through the world of Service Mesh with Istio. Let’s begin this engaging learning experience and dive into the practical aspects of managing microservices effectively!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/c1f76df7-7ae8-40af-94a0-d5e271c0d3f2/lesson/c851af96-7c37-4ab3-b1bf-46b354db6508" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/c1f76df7-7ae8-40af-94a0-d5e271c0d3f2/lesson/c851af96-7c37-4ab3-b1bf-46b354db6508)

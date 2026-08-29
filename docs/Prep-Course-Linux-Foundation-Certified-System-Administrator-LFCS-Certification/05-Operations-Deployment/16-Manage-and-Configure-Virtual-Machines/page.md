@@ -106,9 +106,7 @@ Feb 28 21:42:48 kodekloud sshd[2413]: Received SIGHUP; restarting.
 Feb 28 21:42:48 kodekloud systemd[1]: Reloaded OpenBSD Secure Shell server.
 ```
 
-<Callout icon="lightbulb">
-  Not all applications support configuration reloads. When in doubt, systemd will first attempt a graceful reload and then perform a full restart if necessary.
-</Callout>
+> **lightbulb** Not all applications support configuration reloads. When in doubt, systemd will first attempt a graceful reload and then perform a full restart if necessary.
 
 ## Enabling and Disabling Services
 
@@ -144,9 +142,7 @@ Likewise, to stop a service immediately and disable it for future boots, run:
 $ sudo systemctl disable --now ssh.service
 ```
 
-<Callout icon="triangle-alert">
-  Be cautious when disabling critical services such as SSH, particularly on remote systems.
-</Callout>
+> **triangle-alert** Be cautious when disabling critical services such as SSH, particularly on remote systems.
 
 ## Masking Services
 
@@ -202,9 +198,7 @@ In summary, this article demonstrated how systemd manages Linux services through
 
 Happy managing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/483983fa-145d-4d27-8a3a-26fe482ab15a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/483983fa-145d-4d27-8a3a-26fe482ab15a)
 
 
 # Manage and Configure Virtual Machines
@@ -217,17 +211,13 @@ In modern software, virtualization allows you to create a virtual computer—or 
 
 For instance, imagine a powerful server equipped with 64 CPU cores and 1024 GB of RAM. By creating 32 virtual machines, each VM can be allocated 2 virtual CPUs (vCPUs) and 32 GB of RAM. Rather than renting out one enormous server to a single client, you can offer 32 smaller virtual servers. This is the foundation of cloud compute services provided by [DigitalOcean](https://www.digitalocean.com/), [Amazon Web Services](https://aws.amazon.com/), and [Google Cloud](https://cloud.google.com/).
 
-<Frame>
-  ![The image illustrates a comparison of server resources, showing 32 virtual machines with 2 virtual CPUs and 32 GB RAM each, totaling 64 CPU cores and 1024 GB RAM, alongside logos of cloud service providers Digital Ocean, AWS, and Google Cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881349/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Manage-and-Configure-Virtual-Machines/server-resources-comparison-vms.jpg)
-</Frame>
+![The image illustrates a comparison of server resources, showing 32 virtual machines with 2 virtual CPUs and 32 GB RAM each, totaling 64 CPU cores and 1024 GB RAM, alongside logos of cloud service providers Digital Ocean, AWS, and Google Cloud.](https://kodekloud.com/kk-media/image/upload/v1752881349/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Manage-and-Configure-Virtual-Machines/server-resources-comparison-vms.jpg)
 
 Among many available tools for virtualization on Linux, QEMU-KVM has become the most popular. QEMU (Quick Emulator) emulates virtual computers, while KVM (Kernel-based Virtual Machine) integrates into the Linux kernel to leverage hardware acceleration for enhanced performance.
 
 In this guide, we focus on using a command-line tool called virsh (or VIRSH) to manage virtual machines. If you’ve used VirtualBox before, you might recall its graphical interface for VM creation, configuration, and management. Virsh, however, uses terminal commands to achieve similar tasks, making it a powerful choice for administrators.
 
-<Frame>
-  ![The image shows a diagram with the Linux logo, labeled "Linux (QEMU-KVM)," and arrows pointing to "Quick Emulator" and "Kernel-based Virtual Machine."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881350/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Manage-and-Configure-Virtual-Machines/linux-qemu-kvm-diagram.jpg)
-</Frame>
+![The image shows a diagram with the Linux logo, labeled "Linux (QEMU-KVM)," and arrows pointing to "Quick Emulator" and "Kernel-based Virtual Machine."](https://kodekloud.com/kk-media/image/upload/v1752881350/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Manage-and-Configure-Virtual-Machines/linux-qemu-kvm-diagram.jpg)
 
 ## Getting Started
 
@@ -423,9 +413,7 @@ Domain 'TestMachine' destroyed
 jeremy@kodekloud:~/machines$
 ```
 
-<Callout icon="lightbulb">
-  The `destroy` command only powers off the VM abruptly—it does not remove the VM's definition. To completely remove the VM, you must undefine it.
-</Callout>
+> **lightbulb** The `destroy` command only powers off the VM abruptly—it does not remove the VM's definition. To completely remove the VM, you must undefine it.
 
 To remove the VM's configuration, execute:
 
@@ -489,9 +477,7 @@ Use the `setvcpus` command to change the configuration. You can see command opti
 virsh help setvcpus
 ```
 
-<Frame>
-  ![The image shows a list of command-line options or functions, likely related to virtualization or system management, displayed in a terminal interface. The command "setvcpus" is highlighted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881352/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Manage-and-Configure-Virtual-Machines/command-line-options-setvcpus-terminal.jpg)
-</Frame>
+![The image shows a list of command-line options or functions, likely related to virtualization or system management, displayed in a terminal interface. The command "setvcpus" is highlighted.](https://kodekloud.com/kk-media/image/upload/v1752881352/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Manage-and-Configure-Virtual-Machines/command-line-options-setvcpus-terminal.jpg)
 
 The help output shows the syntax and options:
 
@@ -598,6 +584,4 @@ This guide walked you through creating and managing virtual machines using virsh
 
 For further details, consider exploring additional [Kubernetes Documentation](https://kubernetes.io/docs/) or the [Terraform Registry](https://registry.terraform.io/) for advanced deployment scenarios.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/3d7e96d4-d592-4a3a-ac94-9953888e8193" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/3d7e96d4-d592-4a3a-ac94-9953888e8193)

@@ -28,9 +28,7 @@ TARGET              SOURCE                           FSTYPE  OPTIONS
 /mybackups         /mybackups                       ext4    rw,relatime,seclabel
 ```
 
-<Callout icon="lightbulb">
-  Keep in mind that on larger systems, `findmnt` may produce additional output lines for virtual filesystems (like `proc`) that are mounted in memory.
-</Callout>
+> **lightbulb** Keep in mind that on larger systems, `findmnt` may produce additional output lines for virtual filesystems (like `proc`) that are mounted in memory.
 
 To filter out virtual filesystems and display only real ones (such as XFS and ext4), use the `-t` option:
 
@@ -157,9 +155,7 @@ $ sudo vim /etc/fstab
 
 After saving your changes and rebooting, the system will automatically apply your specified mount options.
 
-<Callout icon="lightbulb">
-  Always consult the relevant manual pages (e.g., `man mount`, `man xfs`, or `man ext4`) for a comprehensive list of options and their effects.
-</Callout>
+> **lightbulb** Always consult the relevant manual pages (e.g., `man mount`, `man xfs`, or `man ext4`) for a comprehensive list of options and their effects.
 
 ## Summary
 
@@ -167,8 +163,6 @@ Mount options are crucial for defining how a filesystem behaves once mounted. Th
 
 This guide provides a foundation for understanding and applying various mount options. For ongoing system administration, refer to additional resources such as [Mount Options Documentation](https://www.kernel.org/doc/html/latest/filesystems/mountoptions.html) and other related links.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/4b024cac-940f-45a5-b56f-54fd7b5d5c2c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/4b024cac-940f-45a5-b56f-54fd7b5d5c2c)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/1189d9f0-8e17-4911-bb12-8c585ee116ff" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/1189d9f0-8e17-4911-bb12-8c585ee116ff)

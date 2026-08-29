@@ -40,9 +40,7 @@ kubectl exec ubuntu-sleeper -- whoami
    # → 1010
    ```
 
-<Callout icon="lightbulb">
-  Using `--force` deletes the Pod immediately. In production clusters, prefer a graceful rollout (e.g., updating a Deployment).
-</Callout>
+> **lightbulb** Using `--force` deletes the Pod immediately. In production clusters, prefer a graceful rollout (e.g., updating a Deployment).
 
 **Result:** The `sleep` process now runs as UID **1010**.
 
@@ -110,9 +108,7 @@ Since the `sidecar` container has no `runAsUser` block, it inherits from the Pod
    kubectl apply -f ubuntu-sleeper.yaml
    ```
 
-<Callout icon="triangle-alert">
-  Granting `SYS_TIME` allows processes to modify the system clock. Only use this capability if absolutely necessary.
-</Callout>
+> **triangle-alert** Granting `SYS_TIME` allows processes to modify the system clock. Only use this capability if absolutely necessary.
 
 **Result:** The pod runs as **root** with the **SYS\_TIME** capability.
 
@@ -152,9 +148,7 @@ kubectl apply -f ubuntu-sleeper.yaml
 * [Container Security Context](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-the-security-context-of-a-container)
 * [Capability Lists](https://man7.org/linux/man-pages/man7/capabilities.7.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/f35655a9-b8e7-4bac-b6a1-85c2ca4900be" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/f35655a9-b8e7-4bac-b6a1-85c2ca4900be)
 
 
 # Access to Sensitive Data
@@ -229,9 +223,7 @@ subjects:
   namespace: backend
 ```
 
-<Callout icon="triangle-alert">
-  Granting `get`/`list` on Secrets lets any pod with that ServiceAccount access database credentials, API keys, or other secrets.
-</Callout>
+> **triangle-alert** Granting `get`/`list` on Secrets lets any pod with that ServiceAccount access database credentials, API keys, or other secrets.
 
 ### Hardened RBAC
 
@@ -266,9 +258,7 @@ subjects:
   namespace: backend
 ```
 
-<Callout icon="lightbulb">
-  Always follow the [principle of least privilege](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#principle-of-least-privilege) when defining RBAC rules.
-</Callout>
+> **lightbulb** Always follow the [principle of least privilege](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#principle-of-least-privilege) when defining RBAC rules.
 
 ## Securing Application Logs
 
@@ -349,6 +339,4 @@ Implementing these controls will help safeguard your Kubernetes cluster against 
 * [Logging Best Practices](https://12factor.net/logs)
 * [mTLS in Kubernetes](https://istio.io/latest/docs/concepts/security/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/6da25ade-b162-485c-b9b9-f351990e99c2/lesson/30d5aa37-14c8-43db-9832-3f0b55ca52b8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/6da25ade-b162-485c-b9b9-f351990e99c2/lesson/30d5aa37-14c8-43db-9832-3f0b55ca52b8)

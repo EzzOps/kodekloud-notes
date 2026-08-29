@@ -59,9 +59,7 @@ istiotrain@localhost istio-1.10.3 $ istioctl verify-install
 ✓ Deployment: istiod-istio-system checked successfully
 ```
 
-<Callout icon="lightbulb">
-  Istio deploys three components along with 13 custom resource definitions during installation, confirming that your cluster is now fully equipped with the necessary Istio resources.
-</Callout>
+> **lightbulb** Istio deploys three components along with 13 custom resource definitions during installation, confirming that your cluster is now fully equipped with the necessary Istio resources.
 
 ## Next Steps
 
@@ -69,8 +67,6 @@ With Istio installed and verified on your cluster, you're ready to explore furth
 
 For more insights into Istio and service mesh technologies, refer to the [official Istio documentation](https://istio.io/latest/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/2be2e4a9-31f2-4efa-b93d-1b090dc41613" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/2be2e4a9-31f2-4efa-b93d-1b090dc41613)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/ff2c46fd-0d7b-4cb2-85e2-dddf379adb08" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/ff2c46fd-0d7b-4cb2-85e2-dddf379adb08)

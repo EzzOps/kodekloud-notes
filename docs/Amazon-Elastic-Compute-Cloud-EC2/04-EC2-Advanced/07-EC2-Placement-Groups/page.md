@@ -8,7 +8,7 @@ AWS EC2 Placement Groups let you control instance placement on the underlying ha
 
 Suppose you deploy a Spark cluster in the Singapore region across multiple Availability Zones. Inter–AZ latency can reach up to 10 ms—too high for tightly coupled HPC workloads. Placement groups solve this by selecting optimal racks for your EC2 instances.
 
-![The image shows a diagram illustrating the need for placement groups, with three locations labeled ap-southeast-1A, ap-southeast-1B, and ap-southeast-1C, each connected by lines indicating a 10 ms latency.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869015/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Placement-Groups/placement-groups-latency-diagram.jpg)
+![The image shows a diagram illustrating the need for placement groups, with three locations labeled ap-southeast-1A, ap-southeast-1B, and ap-southeast-1C, each connected by lines indicating a 10 ms latency.](https://kodekloud.com/kk-media/image/upload/v1752869015/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Placement-Groups/placement-groups-latency-diagram.jpg)
 
 ## What Is an AWS Placement Group?
 
@@ -26,7 +26,7 @@ Choose from three placement group strategies:
 | Partition | Divides instances into partitions with separate racks               | Large distributed systems requiring fault isolation |
 | Spread    | Distributes a small number of instances across racks or AZs         | Critical components that need failure containment   |
 
-![The image illustrates different types of placement groups: Cluster, Partition, and Spread, each within an availability zone, showing how instances are organized.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869016/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Placement-Groups/placement-groups-cluster-partition-spread.jpg)
+![The image illustrates different types of placement groups: Cluster, Partition, and Spread, each within an availability zone, showing how instances are organized.](https://kodekloud.com/kk-media/image/upload/v1752869016/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Placement-Groups/placement-groups-cluster-partition-spread.jpg)
 
 Below is an in-depth look at each placement group type.
 
@@ -43,7 +43,7 @@ Key requirements and benefits:
 
 > **lightbulb** To leverage the highest network performance, ensure your AMI and instance types support the Elastic Network Adapter (ENA) or Elastic Fabric Adapter (EFA).
 
-![The image illustrates a "Placement Group - Cluster" concept, showing enhanced networking within an availability zone, with a focus on network speeds and connectivity between different nodes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869017/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Placement-Groups/placement-group-cluster-networking-diagram.jpg)
+![The image illustrates a "Placement Group - Cluster" concept, showing enhanced networking within an availability zone, with a focus on network speeds and connectivity between different nodes.](https://kodekloud.com/kk-media/image/upload/v1752869017/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Placement-Groups/placement-group-cluster-networking-diagram.jpg)
 
 ## Partition Placement Groups
 
@@ -67,7 +67,7 @@ Key limits:
 * Maximum **7 running instances per AZ** per spread group
 * In a region with 3 AZs, you can have up to **21 instances** in one spread group
 
-![The image illustrates a "Spread Placement Group" in a cloud computing context, showing two availability zones with distributed instances. It highlights the concept of spreading instances across different racks with their own network and power sources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869019/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Placement-Groups/spread-placement-group-cloud-computing.jpg)
+![The image illustrates a "Spread Placement Group" in a cloud computing context, showing two availability zones with distributed instances. It highlights the concept of spreading instances across different racks with their own network and power sources.](https://kodekloud.com/kk-media/image/upload/v1752869019/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Placement-Groups/spread-placement-group-cloud-computing.jpg)
 
 ## Links and References
 

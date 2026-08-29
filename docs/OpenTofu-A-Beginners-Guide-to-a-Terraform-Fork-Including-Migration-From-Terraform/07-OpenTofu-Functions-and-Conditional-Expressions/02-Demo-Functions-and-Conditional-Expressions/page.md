@@ -25,9 +25,7 @@ Welcome to this hands-on tutorial where you’ll explore key OpenTofu functions 
 
 Use the `floor` function to round a number down to the nearest integer. What does `floor(10.9)` return?
 
-<Frame>
-  ![The image shows a coding lab interface with a question about the floor(10.9) function, offering multiple-choice answers. On the right, there's a Visual Studio Code editor with a welcome message and a terminal open.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882862/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Functions-and-Conditional-Expressions/coding-lab-floor-function-multiple-choice.jpg)
-</Frame>
+![The image shows a coding lab interface with a question about the floor(10.9) function, offering multiple-choice answers. On the right, there's a Visual Studio Code editor with a welcome message and a terminal open.](https://kodekloud.com/kk-media/image/upload/v1752882862/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Functions-and-Conditional-Expressions/coding-lab-floor-function-multiple-choice.jpg)
 
 Run in the console:
 
@@ -37,9 +35,7 @@ Run in the console:
 10
 ```
 
-<Callout icon="lightbulb">
-  The `floor` function always returns an integer by discarding any fractional part.
-</Callout>
+> **lightbulb** The `floor` function always returns an integer by discarding any fractional part.
 
 ***
 
@@ -148,9 +144,7 @@ variable "sf" {
 
 Locate the index of `"rashid"`:
 
-<Frame>
-  ![The image shows a split screen with a coding task on the left and a code editor on the right. The code editor displays a Terraform configuration file and a terminal output related to AWS IAM user creation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882863/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Functions-and-Conditional-Expressions/coding-task-terraform-aws-iam.jpg)
-</Frame>
+![The image shows a split screen with a coding task on the left and a code editor on the right. The code editor displays a Terraform configuration file and a terminal output related to AWS IAM user creation.](https://kodekloud.com/kk-media/image/upload/v1752882863/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Functions-and-Conditional-Expressions/coding-task-terraform-aws-iam.jpg)
 
 ```bash theme={null}
 > tofu console
@@ -193,13 +187,9 @@ tofu apply
 
 All files will be uploaded to your S3 bucket.
 
-<Frame>
-  ![The image shows a coding environment with instructions on creating an S3 bucket using Terraform. The code editor displays a Terraform configuration file, and the terminal shows the output of a successful resource creation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882864/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Functions-and-Conditional-Expressions/s3-bucket-terraform-configuration-diagram.jpg)
-</Frame>
+![The image shows a coding environment with instructions on creating an S3 bucket using Terraform. The code editor displays a Terraform configuration file, and the terminal shows the output of a successful resource creation.](https://kodekloud.com/kk-media/image/upload/v1752882864/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Functions-and-Conditional-Expressions/s3-bucket-terraform-configuration-diagram.jpg)
 
-<Callout icon="lightbulb">
-  You can verify uploads by checking the S3 console or using `aws s3 ls s3://<bucket-name>/`.
-</Callout>
+> **lightbulb** You can verify uploads by checking the S3 console or using `aws s3 ls s3://<bucket-name>/`.
 
 ***
 

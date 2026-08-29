@@ -63,9 +63,7 @@ func deploymentFor(w *webappv1.WebApp) *appsv1.Deployment {
 }
 ```
 
-<Callout icon="warning">
-  Ensure the Deployment selector and the Pod template labels are identical. If they differ, the Deployment will not manage the Pods you expect.
-</Callout>
+> **warning** Ensure the Deployment selector and the Pod template labels are identical. If they differ, the Deployment will not manage the Pods you expect.
 
 ## Replicas as a pointer
 
@@ -79,9 +77,7 @@ func deploymentFor(w *webappv1.WebApp) *appsv1.Deployment {
 }
 ```
 
-<Callout icon="lightbulb">
-  `replicas` must be passed as a pointer (e.g., `Replicas: &replicas`) because the API type defines it as `*int32`. Using a plain numeric literal will cause compile-time errors.
-</Callout>
+> **lightbulb** `replicas` must be passed as a pointer (e.g., `Replicas: &replicas`) because the API type defines it as `*int32`. Using a plain numeric literal will cause compile-time errors.
 
 ## Build the Deployment struct
 
@@ -138,6 +134,4 @@ Run `go build ./...` in your module root. A clean build (no compiler errors) ver
 
 At this stage the helper constructs the desired Deployment but does not yet contact the API server. The helper answers: "If this WebApp exists, what Deployment object should represent it?" In a subsequent step you will call `deploymentFor` from `Reconcile` and create or update the Deployment via the controller-runtime client.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/3543a4ee-9bd9-4ac6-9b3b-f53eb8ad77e1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/3543a4ee-9bd9-4ac6-9b3b-f53eb8ad77e1)

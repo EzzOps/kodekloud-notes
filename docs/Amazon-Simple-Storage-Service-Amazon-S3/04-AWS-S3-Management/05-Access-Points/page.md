@@ -4,7 +4,7 @@ aws s3api create-bucket \
   --region us-east-1
 ```
 
-![The image shows a green bucket icon with shapes on it, equated to a yellow folder icon, suggesting a comparison or analogy between a bucket and a folder.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869359/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/green-bucket-yellow-folder-comparison.jpg)
+![The image shows a green bucket icon with shapes on it, equated to a yellow folder icon, suggesting a comparison or analogy between a bucket and a folder.](https://kodekloud.com/kk-media/image/upload/v1752869359/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/green-bucket-yellow-folder-comparison.jpg)
 
 ### Objects
 
@@ -20,7 +20,7 @@ An **object** is any file stored in S3. Each object includes:
 aws s3 cp ./vacation.jpg s3://my-unique-bucket-name/photos/vacation.jpg
 ```
 
-![The image explains that objects are files uploaded to S3, consisting of a key (file name), value (file data), and additional metadata. It uses PDF and MP3 file icons to illustrate these concepts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869360/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/s3-objects-files-key-value-metadata.jpg)
+![The image explains that objects are files uploaded to S3, consisting of a key (file name), value (file data), and additional metadata. It uses PDF and MP3 file icons to illustrate these concepts.](https://kodekloud.com/kk-media/image/upload/v1752869360/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/s3-objects-files-key-value-metadata.jpg)
 
 ### Flat Namespace and “Folders”
 
@@ -34,13 +34,13 @@ music/song3.mp3
 
 * These keys appear under a `music/` folder in the console but are stored flat in S3.
 
-![The image illustrates the flat file structure of S3 buckets, showing files and folders with examples like "File1.txt" and a "music/" directory containing songs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869360/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/s3-bucket-flat-file-structure.jpg)
+![The image illustrates the flat file structure of S3 buckets, showing files and folders with examples like "File1.txt" and a "music/" directory containing songs.](https://kodekloud.com/kk-media/image/upload/v1752869360/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/s3-bucket-flat-file-structure.jpg)
 
 ## Durability and Availability
 
 When you upload to S3, AWS replicates your data across multiple servers and Availability Zones (AZs) within a region, ensuring high durability and availability—even if an AZ fails.
 
-![The image illustrates an AWS architecture with three availability zones in the us-east-1 region, each containing compute resources and PNG files, and a central S3 bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869362/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/aws-architecture-three-availability-zones.jpg)
+![The image illustrates an AWS architecture with three availability zones in the us-east-1 region, each containing compute resources and PNG files, and a central S3 bucket.](https://kodekloud.com/kk-media/image/upload/v1752869362/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/aws-architecture-three-availability-zones.jpg)
 
 ## Bucket Naming and Global Uniqueness
 
@@ -52,7 +52,7 @@ https://my-unique-bucket-name.s3.amazonaws.com/
 
 > **triangle-alert** Choose bucket names carefully. Renaming or deleting buckets can disrupt applications that rely on them.
 
-![The image is about S3 bucket names, highlighting that they must be unique globally across all AWS accounts. It includes a URL example and a graphic of a person.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869363/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/s3-bucket-names-global-uniqueness.jpg)
+![The image is about S3 bucket names, highlighting that they must be unique globally across all AWS accounts. It includes a URL example and a graphic of a person.](https://kodekloud.com/kk-media/image/upload/v1752869363/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/s3-bucket-names-global-uniqueness.jpg)
 
 ## Limits and Restrictions
 
@@ -62,7 +62,7 @@ https://my-unique-bucket-name.s3.amazonaws.com/
 | Maximum object size | 5 TB                                |
 | Objects per bucket  | Unlimited                           |
 
-![The image outlines AWS S3 restrictions, stating it can handle unlimited objects, a single file can be up to 5TB, and an account supports 100 buckets by default, expandable to 1,000.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869364/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/aws-s3-restrictions-objects-buckets.jpg)
+![The image outlines AWS S3 restrictions, stating it can handle unlimited objects, a single file can be up to 5TB, and an account supports 100 buckets by default, expandable to 1,000.](https://kodekloud.com/kk-media/image/upload/v1752869364/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/aws-s3-restrictions-objects-buckets.jpg)
 
 > **lightbulb** You can request a service quota increase for more buckets or higher throughput in the AWS Console under [Service Quotas](https://console.aws.amazon.com/servicequotas/).
 
@@ -109,7 +109,7 @@ With S3 Access Points, you assign each team or application its own “window” 
 * Behaves like an independent bucket
 * Carries a tailored resource policy
 
-![The image illustrates access points for different roles (Developers, Admin, Infra, Legal) connecting to a central bucket, likely representing a data storage or resource access system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869365/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Access-Points/access-points-roles-data-storage.jpg)
+![The image illustrates access points for different roles (Developers, Admin, Infra, Legal) connecting to a central bucket, likely representing a data storage or resource access system.](https://kodekloud.com/kk-media/image/upload/v1752869365/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Access-Points/access-points-roles-data-storage.jpg)
 
 Clients reference the Access Point ARN instead of the bucket ARN, and permissions live closer to the consumer. For example, developers use the `developer-ap` Access Point ARN with write/delete privileges, while the legal team uses `legal-ap` with read-only permissions.
 
@@ -117,7 +117,7 @@ Clients reference the Access Point ARN instead of the bucket ARN, and permission
 
 You can tie an Access Point to a specific VPC Endpoint to enforce network-level boundaries. Bind the Access Point so only resources in your VPC can connect:
 
-![The image illustrates a concept of access point restriction for Virtual Private Clouds (VPCs), showing one VPC with access to a resource (indicated by a check mark) and another without access (indicated by a cross mark).](../../../../images/kodekloud.com/kk-media/image/upload/v1752869366/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Access-Points/vpc-access-point-restriction-diagram.jpg)
+![The image illustrates a concept of access point restriction for Virtual Private Clouds (VPCs), showing one VPC with access to a resource (indicated by a check mark) and another without access (indicated by a cross mark).](https://kodekloud.com/kk-media/image/upload/v1752869366/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Access-Points/vpc-access-point-restriction-diagram.jpg)
 
 For instance:
 
@@ -130,7 +130,7 @@ For instance:
 
 Instead of embedding every role’s permissions in the bucket policy, you delegate authority to Access Points with a single bucket policy statement:
 
-![The image illustrates an "Access Point Policy" with diagrams showing the process of copying policies to a bucket policy and delegating policies to an access point.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869367/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Access-Points/access-point-policy-diagram-bucket-delegation.jpg)
+![The image illustrates an "Access Point Policy" with diagrams showing the process of copying policies to a bucket policy and delegating policies to an access point.](https://kodekloud.com/kk-media/image/upload/v1752869367/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Access-Points/access-point-policy-diagram-bucket-delegation.jpg)
 
 1. **Delegate in the bucket policy** to allow S3 actions for any Access Point.
 2. **Define fine-grained permissions** within each Access Point resource policy.

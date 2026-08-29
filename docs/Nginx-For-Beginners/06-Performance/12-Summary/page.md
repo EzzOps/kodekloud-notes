@@ -48,8 +48,7 @@ Suggested load-testing tools:
 * `wrk`, `k6`, `ab`, `siege` for HTTP load generation.
 * Use real-world traffic patterns (burstiness, slow clients) in tests.
 
-<Callout icon="lightbulb">
-  Production checklist (high-level):
+> **lightbulb** Production checklist (high-level):
 
   * Enable compression (gzip/Brotli) for compressible content.
   * Configure caching (cache-control, reverse proxy) for static assets.
@@ -57,7 +56,6 @@ Suggested load-testing tools:
   * Enable keepalive connections and tune worker processes.
   * Turn on structured logging and choose a log format that meets your needs.
   * Integrate monitoring and alerting ([Datadog](https://www.datadoghq.com)/[New Relic](https://newrelic.com) or [Prometheus + Grafana](https://learn.kodekloud.com/user/courses/aiops-foundations-intelligent-monitoring-with-prometheus-grafana)).
-</Callout>
 
 ## Monitoring options — quick comparison
 
@@ -76,6 +74,4 @@ Suggested load-testing tools:
 
 Apply these recommendations iteratively and validate under realistic load to ensure they deliver the intended performance and reliability improvements.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/2cc0148b-d8f0-4e43-b17e-1abd027393d2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/2cc0148b-d8f0-4e43-b17e-1abd027393d2)

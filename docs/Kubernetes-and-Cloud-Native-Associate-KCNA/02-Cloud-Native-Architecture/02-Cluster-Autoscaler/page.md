@@ -8,13 +8,9 @@ In this article, we explore the Cluster Autoscaler and its crucial role in optim
 
 The Cluster Autoscaler integrates seamlessly with the underlying infrastructure provided by your cloud provider. Each supported provider has its own specific requirements and capabilities. For an up-to-date list of compatible cloud providers, please refer to the [Kubernetes Cluster Autoscaler documentation](https://kubernetes.io/docs/tasks/cluster-management/cluster-autoscaler/). For example, the diagram below displays the supported cloud providers:
 
-<Frame>
-  ![The image shows a list of cloud providers linked under "FAQ/Documentation" for Kubernetes' cluster autoscaler on GitHub.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880471/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cluster-Autoscaler/frame_60.jpg)
-</Frame>
+![The image shows a list of cloud providers linked under "FAQ/Documentation" for Kubernetes' cluster autoscaler on GitHub.](https://kodekloud.com/kk-media/image/upload/v1752880471/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cluster-Autoscaler/frame_60.jpg)
 
-<Callout icon="lightbulb">
-  On [Google Cloud](https://cloud.google.com/), you can easily configure the Cluster Autoscaler by setting autoscaling options during the creation of your Kubernetes cluster.
-</Callout>
+> **lightbulb** On [Google Cloud](https://cloud.google.com/), you can easily configure the Cluster Autoscaler by setting autoscaling options during the creation of your Kubernetes cluster.
 
 To illustrate, when creating a cluster on Google Cloud, you can specify a minimum of 3 nodes and a maximum of 10 nodes. This configuration ensures that when pods remain in a pending state due to insufficient resources, the Cluster Autoscaler will automatically increase the number of nodes to meet the demand. Conversely, it will scale down the cluster when fewer resources are needed.
 
@@ -24,9 +20,7 @@ The following command demonstrates how to create a cluster with the Cluster Auto
 gcloud container clusters create my-cluster --cluster-autoscaler=min-nodes=3,max-nodes=10
 ```
 
-<Callout icon="triangle-alert">
-  Configuration settings can vary significantly between cloud providers. Always consult your specific cloud provider's documentation for precise instructions.
-</Callout>
+> **triangle-alert** Configuration settings can vary significantly between cloud providers. Always consult your specific cloud provider's documentation for precise instructions.
 
 Below is a quick summary of key aspects of the Cluster Autoscaler:
 
@@ -42,6 +36,4 @@ For further reading, check out:
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [Cloud Provider Documentation](https://cloud.google.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/c5b96591-7106-4a51-abe1-d77b53e1a92c/lesson/e9e8e4f7-54ee-4ac8-8e3f-75fee4669cee" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/c5b96591-7106-4a51-abe1-d77b53e1a92c/lesson/e9e8e4f7-54ee-4ac8-8e3f-75fee4669cee)

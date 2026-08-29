@@ -26,9 +26,9 @@ jobs:
 * Restrict secrets to the least-privileged repos and workflows.
 * Avoid hard-coding secrets—always reference the secure store.
 
-![The image provides best practices for GitHub Actions, emphasizing using meaningful names for secrets and regularly rotating them to minimize exposure risk. It includes visual elements like a title graphic and a chart icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867942/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-in-GitHub-Actions-and-Azure-Pipelines/github-actions-best-practices-secrets.jpg)
+![The image provides best practices for GitHub Actions, emphasizing using meaningful names for secrets and regularly rotating them to minimize exposure risk. It includes visual elements like a title graphic and a chart icon.](https://kodekloud.com/kk-media/image/upload/v1752867942/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-in-GitHub-Actions-and-Azure-Pipelines/github-actions-best-practices-secrets.jpg)
 
-![The image provides best practices for GitHub Actions, advising to limit the scope of secrets and avoid hard-coding them, using GitHub's secure storage instead. It includes illustrative icons and is copyrighted by KodeKloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867944/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-in-GitHub-Actions-and-Azure-Pipelines/github-actions-best-practices-secrets-2.jpg)
+![The image provides best practices for GitHub Actions, advising to limit the scope of secrets and avoid hard-coding them, using GitHub's secure storage instead. It includes illustrative icons and is copyrighted by KodeKloud.](https://kodekloud.com/kk-media/image/upload/v1752867944/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-in-GitHub-Actions-and-Azure-Pipelines/github-actions-best-practices-secrets-2.jpg)
 
 ## Managing Secrets in Azure Pipelines
 
@@ -39,7 +39,7 @@ In Azure Pipelines, mark variables as secret:
 3. Click **Add**, name your variable, enable **Keep this value secret**, and set its value.
 4. Save the pipeline.
 
-![The image provides instructions for setting up secrets in Azure Pipelines, showing navigation to pipeline variables and the option to add a new variable.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867944/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-in-GitHub-Actions-and-Azure-Pipelines/azure-pipelines-secrets-setup-instructions.jpg)
+![The image provides instructions for setting up secrets in Azure Pipelines, showing navigation to pipeline variables and the option to add a new variable.](https://kodekloud.com/kk-media/image/upload/v1752867944/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-in-GitHub-Actions-and-Azure-Pipelines/azure-pipelines-secrets-setup-instructions.jpg)
 
 Use secrets in scripts:
 
@@ -69,7 +69,7 @@ Azure Key Vault centralizes storage for secrets, keys, and certificates, offerin
 
 Platforms like GitHub Actions and Azure Pipelines can fetch secrets at runtime without exposing them in code.
 
-![The image illustrates the integration of GitHub Actions and Azure Pipelines, highlighting the retrieval of secrets during workflow or pipeline execution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867945/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-in-GitHub-Actions-and-Azure-Pipelines/github-actions-azure-pipelines-secrets-integration.jpg)
+![The image illustrates the integration of GitHub Actions and Azure Pipelines, highlighting the retrieval of secrets during workflow or pipeline execution.](https://kodekloud.com/kk-media/image/upload/v1752867945/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-in-GitHub-Actions-and-Azure-Pipelines/github-actions-azure-pipelines-secrets-integration.jpg)
 
 ### Prerequisites for Azure Key Vault Integration
 
@@ -78,7 +78,7 @@ Platforms like GitHub Actions and Azure Pipelines can fetch secrets at runtime w
 3. Service Principal (SP) with `Key Vault Secrets User` role.
 4. SP credentials saved as GitHub secrets or Azure DevOps service connection.
 
-![The image outlines four prerequisites for retrieving secrets from Azure Key Vault in Azure Pipelines: creating a Key Vault, adding secrets, configuring a service principal, and adding credentials to service connections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867946/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-in-GitHub-Actions-and-Azure-Pipelines/azure-key-vault-secrets-prerequisites.jpg)
+![The image outlines four prerequisites for retrieving secrets from Azure Key Vault in Azure Pipelines: creating a Key Vault, adding secrets, configuring a service principal, and adding credentials to service connections.](https://kodekloud.com/kk-media/image/upload/v1752867946/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-in-GitHub-Actions-and-Azure-Pipelines/azure-key-vault-secrets-prerequisites.jpg)
 
 ## CI/CD Secrets Management Best Practices
 
@@ -121,7 +121,7 @@ steps:
 * Set up alerts for unauthorized access or policy breaches.
 * Review audit logs regularly to ensure compliance.
 
-![The image outlines best practices for managing secrets, including the principle of least privilege, regular secret rotation, and monitoring and auditing. Each section provides brief guidelines on how to implement these practices effectively.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867947/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-in-GitHub-Actions-and-Azure-Pipelines/best-practices-managing-secrets-guidelines.jpg)
+![The image outlines best practices for managing secrets, including the principle of least privilege, regular secret rotation, and monitoring and auditing. Each section provides brief guidelines on how to implement these practices effectively.](https://kodekloud.com/kk-media/image/upload/v1752867947/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-in-GitHub-Actions-and-Azure-Pipelines/best-practices-managing-secrets-guidelines.jpg)
 
 ## Common Pitfalls in Secrets Management
 
@@ -131,7 +131,7 @@ steps:
 
 Avoid these issues by centralizing secrets in GitHub Secrets, Azure Key Vault, or similar vault services, and maintain clear, versioned documentation.
 
-![The image outlines common pitfalls in secrets management, including hard-coding secrets in code, sharing secrets through insecure channels, and lack of documentation, with suggestions to avoid each issue.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867948/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-in-GitHub-Actions-and-Azure-Pipelines/secrets-management-pitfalls-and-solutions.jpg)
+![The image outlines common pitfalls in secrets management, including hard-coding secrets in code, sharing secrets through insecure channels, and lack of documentation, with suggestions to avoid each issue.](https://kodekloud.com/kk-media/image/upload/v1752867948/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-in-GitHub-Actions-and-Azure-Pipelines/secrets-management-pitfalls-and-solutions.jpg)
 
 ## References
 
@@ -179,11 +179,11 @@ Azure Key Vault streamlines security operations by centralizing storage for secr
 * Comprehensive logging via Azure Monitor and Azure Security Center
 * Automated key rotation and certificate renewal
 
-![The image is a diagram explaining Azure Key Vault, highlighting its role in securely storing secrets, keys, and certificates, with a focus on security for API keys, passwords, connection strings, data protection, and cryptographic operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867949/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/azure-key-vault-diagram-security.jpg)
+![The image is a diagram explaining Azure Key Vault, highlighting its role in securely storing secrets, keys, and certificates, with a focus on security for API keys, passwords, connection strings, data protection, and cryptographic operations.](https://kodekloud.com/kk-media/image/upload/v1752867949/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/azure-key-vault-diagram-security.jpg)
 
-![The image is an illustration about Azure Key Vault, highlighting its role in simplifying key management processes and reducing the risk of data breaches.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867950/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/azure-key-vault-key-management-illustration.jpg)
+![The image is an illustration about Azure Key Vault, highlighting its role in simplifying key management processes and reducing the risk of data breaches.](https://kodekloud.com/kk-media/image/upload/v1752867950/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/azure-key-vault-key-management-illustration.jpg)
 
-![The image is an illustration about Azure Key Vault, highlighting its role in simplifying key management processes and integrating with Azure and DevOps tools to enhance security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867951/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/azure-key-vault-key-management-illustration-2.jpg)
+![The image is an illustration about Azure Key Vault, highlighting its role in simplifying key management processes and integrating with Azure and DevOps tools to enhance security.](https://kodekloud.com/kk-media/image/upload/v1752867951/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/azure-key-vault-key-management-illustration-2.jpg)
 
 ***
 
@@ -195,7 +195,7 @@ Azure Key Vault uses certified Hardware Security Modules (HSMs) to protect your 
 
 > **lightbulb** Choose the **Standard** or **Premium** tier to leverage HSM-backed key protection.
 
-![The image illustrates a key feature of Azure Key Vault, highlighting its use of Hardware Security Modules (HSMs) for secure storage and management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867952/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/azure-key-vault-hsm-secure-storage.jpg)
+![The image illustrates a key feature of Azure Key Vault, highlighting its use of Hardware Security Modules (HSMs) for secure storage and management.](https://kodekloud.com/kk-media/image/upload/v1752867952/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/azure-key-vault-hsm-secure-storage.jpg)
 
 ### Access Control
 
@@ -205,7 +205,7 @@ Integrate with Azure Active Directory to apply RBAC, granting least-privilege ac
 
 Stream diagnostic logs to Azure Monitor and Security Center to audit every operation and maintain compliance.
 
-![The image outlines key features of Azure Key Vault, focusing on logging and monitoring through Azure Monitor and Azure Security Center to maintain visibility and compliance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867953/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/azure-key-vault-logging-monitoring.jpg)
+![The image outlines key features of Azure Key Vault, focusing on logging and monitoring through Azure Monitor and Azure Security Center to maintain visibility and compliance.](https://kodekloud.com/kk-media/image/upload/v1752867953/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/azure-key-vault-logging-monitoring.jpg)
 
 ***
 
@@ -213,7 +213,7 @@ Stream diagnostic logs to Azure Monitor and Security Center to audit every opera
 
 Secrets include API keys, passwords, and connection strings needed at runtime.
 
-![The image is an infographic titled "Understanding Secrets," illustrating types of sensitive information: passwords, API keys, and connection strings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867954/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/understanding-secrets-infographic-passwords-api-keys.jpg)
+![The image is an infographic titled "Understanding Secrets," illustrating types of sensitive information: passwords, API keys, and connection strings.](https://kodekloud.com/kk-media/image/upload/v1752867954/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/understanding-secrets-infographic-passwords-api-keys.jpg)
 
 ### Common Use Cases
 
@@ -227,7 +227,7 @@ Secrets include API keys, passwords, and connection strings needed at runtime.
 
 You can use the Azure Portal, CLI, or SDKs.
 
-![The image shows a form for creating a secret with fields for name, secret value, and optional settings, alongside options for using Azure Portal, Azure CLI, and Azure SDKs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867956/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/create-secret-form-azure-options.jpg)
+![The image shows a form for creating a secret with fields for name, secret value, and optional settings, alongside options for using Azure Portal, Azure CLI, and Azure SDKs.](https://kodekloud.com/kk-media/image/upload/v1752867956/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/create-secret-form-azure-options.jpg)
 
 Azure CLI example:
 
@@ -250,7 +250,7 @@ az keyvault secret show \
 
 Azure Key Vault retains previous versions, supporting rotation and rollback.
 
-![The image is a screenshot of a secret management interface showing versioning for a "login-password," with options for creating new versions, refreshing, deleting, and downloading backups. It highlights the ability to manage secret rotations and rollbacks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867957/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/secret-management-interface-versioning-screenshot.jpg)
+![The image is a screenshot of a secret management interface showing versioning for a "login-password," with options for creating new versions, refreshing, deleting, and downloading backups. It highlights the ability to manage secret rotations and rollbacks.](https://kodekloud.com/kk-media/image/upload/v1752867957/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/secret-management-interface-versioning-screenshot.jpg)
 
 ***
 
@@ -258,7 +258,7 @@ Azure Key Vault retains previous versions, supporting rotation and rollback.
 
 Support for RSA and Elliptic Curve keys enables encryption, decryption, signing, and verification.
 
-![The image is a guide on generating and importing keys in Azure Key Vault, showing a form for creating a key with various options and a note about imported keys meeting security standards.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867958/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/azure-key-vault-key-generation-guide.jpg)
+![The image is a guide on generating and importing keys in Azure Key Vault, showing a form for creating a key with various options and a note about imported keys meeting security standards.](https://kodekloud.com/kk-media/image/upload/v1752867958/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/azure-key-vault-key-generation-guide.jpg)
 
 ### Generate a Key (Azure CLI)
 
@@ -274,7 +274,7 @@ az keyvault key create \
 
 Automate rotation to minimize risk by defining policies.
 
-![The image illustrates the concept of key rotation and expiration, featuring a circular diagram with sections labeled "Rotation schedules" and "Expiration dates," and a header about automatic key rotation policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867960/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/key-rotation-expiration-diagram.jpg)
+![The image illustrates the concept of key rotation and expiration, featuring a circular diagram with sections labeled "Rotation schedules" and "Expiration dates," and a header about automatic key rotation policies.](https://kodekloud.com/kk-media/image/upload/v1752867960/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/key-rotation-expiration-diagram.jpg)
 
 ```bash theme={null}
 az keyvault key rotation-policy update \
@@ -290,11 +290,11 @@ az keyvault key rotation-policy update \
 
 Azure Key Vault handles SSL/TLS, client authentication, and code-signing certificates.
 
-![The image illustrates three types of certificates: SSL for securing web traffic, a certificate for authenticating users and devices, and a certificate for verifying the integrity of software.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867961/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/certificate-types-ssl-authentication-integrity.jpg)
+![The image illustrates three types of certificates: SSL for securing web traffic, a certificate for authenticating users and devices, and a certificate for verifying the integrity of software.](https://kodekloud.com/kk-media/image/upload/v1752867961/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/certificate-types-ssl-authentication-integrity.jpg)
 
 Certificate lifecycle: issuance, renewal, and revocation.
 
-![The image illustrates the stages of Certificate Lifecycle Management: Issuance, Renewal, and Revocation. It mentions that Azure Key Vault simplifies these processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867962/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/certificate-lifecycle-management-azure-key-vault.jpg)
+![The image illustrates the stages of Certificate Lifecycle Management: Issuance, Renewal, and Revocation. It mentions that Azure Key Vault simplifies these processes.](https://kodekloud.com/kk-media/image/upload/v1752867962/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/certificate-lifecycle-management-azure-key-vault.jpg)
 
 Automatic renewal prevents disruptions by integrating with certificate authorities.
 
@@ -304,7 +304,7 @@ Automatic renewal prevents disruptions by integrating with certificate authoriti
 
 Azure Active Directory manages authentication, while RBAC defines authorization for vault objects.
 
-![The image illustrates the relationship between Azure Active Directory (AAD) for authentication and Role-Based Access Control (RBAC) for authorization, explaining how RBAC assigns roles to users, groups, and applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867963/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/azure-ad-rbac-relationship-diagram.jpg)
+![The image illustrates the relationship between Azure Active Directory (AAD) for authentication and Role-Based Access Control (RBAC) for authorization, explaining how RBAC assigns roles to users, groups, and applications.](https://kodekloud.com/kk-media/image/upload/v1752867963/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/azure-ad-rbac-relationship-diagram.jpg)
 
 Common roles: Owner, Contributor, Reader.
 
@@ -314,7 +314,7 @@ Common roles: Owner, Contributor, Reader.
 
 Fine-grained permissions can be assigned for secrets, keys, and certificates via portal, CLI, or PowerShell.
 
-![The image shows a user interface for creating an access policy, with options to configure key, secret, and certificate permissions. It includes checkboxes for various management operations like get, list, update, and delete.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867964/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/access-policy-configuration-ui-checkboxes.jpg)
+![The image shows a user interface for creating an access policy, with options to configure key, secret, and certificate permissions. It includes checkboxes for various management operations like get, list, update, and delete.](https://kodekloud.com/kk-media/image/upload/v1752867964/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/access-policy-configuration-ui-checkboxes.jpg)
 
 ***
 
@@ -322,7 +322,7 @@ Fine-grained permissions can be assigned for secrets, keys, and certificates via
 
 Enable diagnostic logging to capture vault operations and feed them into Azure Monitor for alerts and dashboards.
 
-![The image shows a screenshot of Azure Key Vault's diagnostic settings interface, highlighting options for configuring diagnostic logs for detailed operation tracking.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867966/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/azure-key-vault-diagnostic-settings-screenshot.jpg)
+![The image shows a screenshot of Azure Key Vault's diagnostic settings interface, highlighting options for configuring diagnostic logs for detailed operation tracking.](https://kodekloud.com/kk-media/image/upload/v1752867966/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/azure-key-vault-diagnostic-settings-screenshot.jpg)
 
 ***
 
@@ -330,13 +330,13 @@ Enable diagnostic logging to capture vault operations and feed them into Azure M
 
 Retrieve secrets dynamically in build and release pipelines. Azure DevOps, GitHub Actions, and Jenkins all support Key Vault integration.
 
-![The image is about integrating secrets management in CI/CD pipelines, focusing on API keys and connection strings, and emphasizes secure management throughout the development lifecycle.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867967/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/secrets-management-cicd-pipelines-api-keys.jpg)
+![The image is about integrating secrets management in CI/CD pipelines, focusing on API keys and connection strings, and emphasizes secure management throughout the development lifecycle.](https://kodekloud.com/kk-media/image/upload/v1752867967/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/secrets-management-cicd-pipelines-api-keys.jpg)
 
-![The image is about integrating DevOps workflows, focusing on secrets management in CI/CD pipelines, featuring Azure DevOps, GitHub Actions, and Jenkins.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867967/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/devops-workflows-secrets-management-cicd.jpg)
+![The image is about integrating DevOps workflows, focusing on secrets management in CI/CD pipelines, featuring Azure DevOps, GitHub Actions, and Jenkins.](https://kodekloud.com/kk-media/image/upload/v1752867967/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/devops-workflows-secrets-management-cicd.jpg)
 
 Applications authenticate to Key Vault using managed identities or service principals.
 
-![The image illustrates the integration of DevOps workflows, showing how applications securely access stored secrets using Azure Key Vault.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867969/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/devops-workflows-azure-key-vault.jpg)
+![The image illustrates the integration of DevOps workflows, showing how applications securely access stored secrets using Azure Key Vault.](https://kodekloud.com/kk-media/image/upload/v1752867969/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/devops-workflows-azure-key-vault.jpg)
 
 ***
 
@@ -344,13 +344,13 @@ Applications authenticate to Key Vault using managed identities or service princ
 
 Automate routine tasks—rotation, renewal, and policy updates—using Azure Automation, Logic Apps, or PowerShell.
 
-![The image is a slide titled "Integrating With DevOps Workflows," focusing on automating key and certificate management using Azure Automation, Logic Apps, and PowerShell Scripts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867969/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/integrating-devops-workflows-automation.jpg)
+![The image is a slide titled "Integrating With DevOps Workflows," focusing on automating key and certificate management using Azure Automation, Logic Apps, and PowerShell Scripts.](https://kodekloud.com/kk-media/image/upload/v1752867969/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/integrating-devops-workflows-automation.jpg)
 
 ***
 
 ## Best Practices
 
-![The image outlines best practices for security, including the least privilege principle, regularly reviewing and rotating secrets, and using managed identities for Azure resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867971/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/security-best-practices-azure-identities.jpg)
+![The image outlines best practices for security, including the least privilege principle, regularly reviewing and rotating secrets, and using managed identities for Azure resources.](https://kodekloud.com/kk-media/image/upload/v1752867971/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/security-best-practices-azure-identities.jpg)
 
 * Apply the principle of least privilege.
 * Regularly review and update access policies.
@@ -367,7 +367,7 @@ Automate routine tasks—rotation, renewal, and policy updates—using Azure Aut
 2. Click **Generate/Import**, provide a name and value, then click **Create**.
 3. To view or rotate, select the secret and choose **New Version**.
 
-![The image shows a demo interface for creating and managing secrets in a key vault, with options like generating/importing secrets and managing deleted ones. It lists two secrets, "api-token" and "login-password," both enabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867972/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/key-vault-secrets-management-demo.jpg)
+![The image shows a demo interface for creating and managing secrets in a key vault, with options like generating/importing secrets and managing deleted ones. It lists two secrets, "api-token" and "login-password," both enabled.](https://kodekloud.com/kk-media/image/upload/v1752867972/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-secrets-keys-and-certificates-by-using-Azure-Key-Vault/key-vault-secrets-management-demo.jpg)
 
 ***
 

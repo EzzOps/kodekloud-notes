@@ -21,7 +21,7 @@ The visibility timeout, on the other hand, defines the duration a consumer has t
 
 Before diving into the demonstration, we reset the visibility timeout to 30 seconds.
 
-![The image shows the Amazon SQS (Simple Queue Service) interface where a user is editing the configuration settings for a queue named "newUser," including visibility timeout, message retention period, and encryption options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858426/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings-demo/amazon-sqs-queue-configuration.jpg)
+![The image shows the Amazon SQS (Simple Queue Service) interface where a user is editing the configuration settings for a queue named "newUser," including visibility timeout, message retention period, and encryption options.](https://kodekloud.com/kk-media/image/upload/v1752858426/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings-demo/amazon-sqs-queue-configuration.jpg)
 
 ***
 
@@ -41,7 +41,7 @@ Before diving into the demonstration, we reset the visibility timeout to 30 seco
 
 After verifying the behavior, ensure you delete the message to confirm that the queue is empty.
 
-![The image shows the Amazon SQS (Simple Queue Service) interface where a message has been sent and is ready to be received. It includes options for sending and receiving messages, with details about message attributes and polling settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858429/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings-demo/amazon-sqs-message-interface.jpg)
+![The image shows the Amazon SQS (Simple Queue Service) interface where a message has been sent and is ready to be received. It includes options for sending and receiving messages, with details about message attributes and polling settings.](https://kodekloud.com/kk-media/image/upload/v1752858429/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings-demo/amazon-sqs-message-interface.jpg)
 
 > **lightbulb** When testing visibility timeout, ensure that your processing logic efficiently deletes messages to prevent duplicate processing.
 
@@ -57,11 +57,11 @@ To demonstrate the delivery delay:
 2. Send a message with a custom delivery delay. For instance, set a 20-second delay with the message body "hey this is a delayed message."
 3. Immediately poll for messages. The message will not appear until 20 seconds have elapsed.
 
-![The image shows an AWS SQS console interface for sending and receiving messages, with a message body and delivery delay settings. The message "hey this is a delayed message" is set with a 20-second delay.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858430/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings-demo/aws-sqs-console-message-delay.jpg)
+![The image shows an AWS SQS console interface for sending and receiving messages, with a message body and delivery delay settings. The message "hey this is a delayed message" is set with a 20-second delay.](https://kodekloud.com/kk-media/image/upload/v1752858430/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings-demo/aws-sqs-console-message-delay.jpg)
 
 After waiting 20 seconds, the delayed message becomes visible, confirming the functionality of the delivery delay.
 
-![The image shows an AWS SQS console where a delayed message is being sent with a 20-second delivery delay. It also displays the message receiving section with polling settings and message details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858431/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings-demo/aws-sqs-delayed-message-console.jpg)
+![The image shows an AWS SQS console where a delayed message is being sent with a 20-second delivery delay. It also displays the message receiving section with polling settings and message details.](https://kodekloud.com/kk-media/image/upload/v1752858431/notes-assets/images/AWS-Certified-Developer-Associate-SQS-Settings-demo/aws-sqs-delayed-message-console.jpg)
 
 > **lightbulb** Delivery delays can be useful for time-sensitive workflows that need postponed processing or for handling burst traffic patterns.
 

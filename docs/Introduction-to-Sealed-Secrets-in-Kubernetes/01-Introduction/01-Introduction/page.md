@@ -14,9 +14,7 @@ In this lesson, we will:
 * Explore core components and workflow
 * Demonstrate a hands-on example to seal and unseal secrets
 
-<Callout icon="lightbulb">
-  You will need access to a running Kubernetes cluster and the `kubeseal` CLI installed locally.
-</Callout>
+> **lightbulb** You will need access to a running Kubernetes cluster and the `kubeseal` CLI installed locally.
 
 ***
 
@@ -55,6 +53,4 @@ Sealed Secrets relies on three main components:
 
 [k8s-secrets]: https://kubernetes.io/docs/concepts/configuration/secret/
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/fbf97fdc-fe0f-4d01-b19a-d1be56322bac/lesson/febac6c6-137c-4a40-b684-cf1d940c625a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/fbf97fdc-fe0f-4d01-b19a-d1be56322bac/lesson/febac6c6-137c-4a40-b684-cf1d940c625a)

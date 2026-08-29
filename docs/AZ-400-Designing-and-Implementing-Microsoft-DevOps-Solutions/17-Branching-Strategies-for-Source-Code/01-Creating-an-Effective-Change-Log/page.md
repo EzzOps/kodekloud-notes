@@ -71,7 +71,7 @@ Selecting **Squash and Merge** creates a single commit per PR for a cleaner hist
 
 ***
 
-![The image illustrates the process of enhancing teamwork via pull requests, highlighting three stages: "Branch Out," "Collaborate," and "Merge." It emphasizes pull requests as communication tools, shared development, and code management best practices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867328/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Collaborate-with-pull-requests/teamwork-pull-requests-process-diagram.jpg)
+![The image illustrates the process of enhancing teamwork via pull requests, highlighting three stages: "Branch Out," "Collaborate," and "Merge." It emphasizes pull requests as communication tools, shared development, and code management best practices.](https://kodekloud.com/kk-media/image/upload/v1752867328/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Collaborate-with-pull-requests/teamwork-pull-requests-process-diagram.jpg)
 
 ***
 
@@ -95,7 +95,7 @@ An up-to-date changelog is essential for tracking a project’s evolution and co
 
 An up-to-date changelog is essential for tracking a project’s evolution, communicating new features, fixes, and deprecations. By following best practices, you ensure that contributors, stakeholders, and end users can quickly understand what’s changed between releases.
 
-![The image outlines the purpose of a change log, highlighting three key aspects: addition of new features, modifications to existing features, and deletion of outdated features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867339/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Creating-an-Effective-Change-Log/change-log-purpose-new-features-modifications.jpg)
+![The image outlines the purpose of a change log, highlighting three key aspects: addition of new features, modifications to existing features, and deletion of outdated features.](https://kodekloud.com/kk-media/image/upload/v1752867339/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Creating-an-Effective-Change-Log/change-log-purpose-new-features-modifications.jpg)
 
 ## 1. Key Principles for a Maintainable Changelog
 
@@ -115,7 +115,7 @@ Choose an approach that fits your team’s workflow and project size. Below is a
 | Automated population | Fast, consistent format            | May lack semantic grouping        | [GitHub Actions](https://github.com/features/actions) |
 | Hybrid method        | Best of both worlds                | Requires setup and review process | Custom scripts + manual review                        |
 
-![The image outlines three strategies for change log generation: manual entries for clarity, automated population for efficiency, and hybrid methods combining automation with oversight.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867340/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Creating-an-Effective-Change-Log/change-log-generation-strategies-outline.jpg)
+![The image outlines three strategies for change log generation: manual entries for clarity, automated population for efficiency, and hybrid methods combining automation with oversight.](https://kodekloud.com/kk-media/image/upload/v1752867340/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Creating-an-Effective-Change-Log/change-log-generation-strategies-outline.jpg)
 
 ## 3. Essential Tools to Assist
 
@@ -127,7 +127,7 @@ There are several popular utilities designed to simplify changelog maintenance:
 | `gitchangelog`               | Generates Markdown from git history            | [https://github.com/vaab/gitchangelog](https://github.com/vaab/gitchangelog)                                       |
 | `github_changelog_generator` | Produces GitHub-style changelogs automatically | [https://github.com/skywinder/github-changelog-generator](https://github.com/skywinder/github-changelog-generator) |
 
-![The image is a slide titled "Tools to Assist," featuring two numbered sections: one about using the standard git log for command-line entries, and another about using gitchangelog and github\_changelog\_generator for automated solutions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867341/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Creating-an-Effective-Change-Log/tools-to-assist-git-log-automation.jpg)
+![The image is a slide titled "Tools to Assist," featuring two numbered sections: one about using the standard git log for command-line entries, and another about using gitchangelog and github\_changelog\_generator for automated solutions.](https://kodekloud.com/kk-media/image/upload/v1752867341/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Creating-an-Effective-Change-Log/tools-to-assist-git-log-automation.jpg)
 
 ### 3.1 Practical Example: Customizing `git log` Output
 

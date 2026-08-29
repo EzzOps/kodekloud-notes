@@ -96,7 +96,7 @@ git config --global user.email "jeremy@kodekloud.com"
    git commit -m "Update greeting for Azure Repos"
    ```
 
-![The image shows a Visual Studio Code interface with a file named "hello.txt" open, containing the text "Hello".](../../../../images/kodekloud.com/kk-media/image/upload/v1752868181/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Working-with-Git-locally/visual-studio-code-hello-txt.jpg)
+![The image shows a Visual Studio Code interface with a file named "hello.txt" open, containing the text "Hello".](https://kodekloud.com/kk-media/image/upload/v1752868181/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Working-with-Git-locally/visual-studio-code-hello-txt.jpg)
 
 4. Visualize the branch history:
    ```bash theme={null}

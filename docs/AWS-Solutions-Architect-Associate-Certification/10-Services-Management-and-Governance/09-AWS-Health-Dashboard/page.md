@@ -26,7 +26,7 @@ AWS Health Dashboard is designed to work seamlessly with services like Amazon Cl
 
 Below is an infographic summarizing five key features of AWS Health Dashboard:
 
-![The image is an infographic about AWS Health, detailing five features: visibility into resource performance, understanding service changes, timely information, preparation for activities, and alerts for troubleshooting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865267/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Health-Dashboard/aws-health-infographic-features.jpg)
+![The image is an infographic about AWS Health, detailing five features: visibility into resource performance, understanding service changes, timely information, preparation for activities, and alerts for troubleshooting.](https://kodekloud.com/kk-media/image/upload/v1752865267/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Health-Dashboard/aws-health-infographic-features.jpg)
 
 ## Key Benefits
 
@@ -44,7 +44,7 @@ Additionally, the AWS Personal Health Dashboard provides a customized experience
 
 The following diagram illustrates five core features of the AWS Health Dashboard ecosystem, emphasizing its role in reducing downtime and bolstering reliability:
 
-![The image lists five features: reducing downtime and improving reliability, event visibility, AWS Health Dashboard, AWS Personal Health Dashboard, and integration and automation. Each feature is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865268/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Health-Dashboard/features-reducing-downtime-aws-dashboard.jpg)
+![The image lists five features: reducing downtime and improving reliability, event visibility, AWS Health Dashboard, AWS Personal Health Dashboard, and integration and automation. Each feature is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752865268/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Health-Dashboard/features-reducing-downtime-aws-dashboard.jpg)
 
 ## Summary
 

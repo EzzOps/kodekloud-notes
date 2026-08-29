@@ -13,9 +13,7 @@ In this lesson we deploy a faulty version of the application and observe how Arg
 * The Rollout runs a pre-promotion AnalysisRun against the preview Service; the analysis records repeated non-2xx responses and fails.
 * Argo Rollouts aborts the update, scales down the preview ReplicaSet, and leaves the stable/active revision serving production traffic.
 
-<Callout icon="lightbulb">
-  Run these steps in the argo-analysis-lab namespace (or adapt the namespace used by your Rollout). Make sure you have the Argo Rollouts kubectl plugin installed: [https://argoproj.github.io/argo-rollouts/commands/kubectl-argo-rollouts/](https://argoproj.github.io/argo-rollouts/commands/kubectl-argo-rollouts/)
-</Callout>
+> **lightbulb** Run these steps in the argo-analysis-lab namespace (or adapt the namespace used by your Rollout). Make sure you have the Argo Rollouts kubectl plugin installed: [https://argoproj.github.io/argo-rollouts/commands/kubectl-argo-rollouts/](https://argoproj.github.io/argo-rollouts/commands/kubectl-argo-rollouts/)
 
 ***
 
@@ -324,9 +322,7 @@ spec:
 * When the AnalysisRun fails, the Rollout aborts the update, scales down the preview ReplicaSet, and prevents production traffic from being promoted to the faulty revision.
 * Use AnalysisTemplates (namespace-scoped or cluster-scoped) to standardize health and success checks across Rollouts.
 
-<Callout icon="warning">
-  Always verify analysis metrics and thresholds carefully. Incorrect thresholds or misconfigured queries can cause false positives (abort a healthy rollout) or false negatives (allow unhealthy releases).
-</Callout>
+> **warning** Always verify analysis metrics and thresholds carefully. Incorrect thresholds or misconfigured queries can cause false positives (abort a healthy rollout) or false negatives (allow unhealthy releases).
 
 ## Links and references
 
@@ -335,8 +331,6 @@ spec:
 * [Prometheus documentation](https://prometheus.io/docs/introduction/overview/)
 * [Docker Hub: siddharth67/highway-animation](https://hub.docker.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/ed53b1b7-594b-462b-b2e3-ab0ef3b8cee3" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/ed53b1b7-594b-462b-b2e3-ab0ef3b8cee3)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/d2f03637-120c-472b-a6ca-696d09cdfa27" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/d2f03637-120c-472b-a6ca-696d09cdfa27)

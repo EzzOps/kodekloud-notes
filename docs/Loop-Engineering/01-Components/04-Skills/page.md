@@ -14,9 +14,7 @@ Those cards are called skills.
 
 A skill is packaged know-how the agent loads only when it needs it. In practice a skill is a short file named `skill.md` that tells the loop exactly when and how to perform a particular task.
 
-<Callout icon="lightbulb">
-  A skill is not a long manual — it’s a compact recipe. Keep skills focused so the loop can load and execute them quickly.
-</Callout>
+> **lightbulb** A skill is not a long manual — it’s a compact recipe. Keep skills focused so the loop can load and execute them quickly.
 
 ## What goes in a skill.md
 
@@ -65,9 +63,7 @@ Two practical reasons favor small, focused skills over a single monolithic promp
 
 A good skill is a short list of concrete steps with a clear finish. Avoid long essays inside skills — an agent might read and move on, but it will follow and verify a step-by-step sequence.
 
-<Callout icon="warning">
-  Write steps, not essays. Concrete, testable instructions let the loop execute and check outcomes reliably.
-</Callout>
+> **warning** Write steps, not essays. Concrete, testable instructions let the loop execute and check outcomes reliably.
 
 <Frame>
   <img alt="The image illustrates a comparison between a cluttered and a tidy prompt for writing commit messages, emphasizing that a cleaner prompt leads to clearer thinking and fewer mistakes." />
@@ -113,6 +109,4 @@ This article also discusses connectors and plug-ins, explaining how the loop int
 * [Best practices for writing documentation](https://developers.google.com/tech-writing)
 * For connectors and plug-ins, see your loop platform’s integration docs or the section on connectors and plug-ins in this documentation set.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/loop-engineering/module/6371e2a8-2e13-4841-ba89-95dd842b1bdd/lesson/ccd5ed15-b437-429d-8b9e-1fba0b129cfe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/loop-engineering/module/6371e2a8-2e13-4841-ba89-95dd842b1bdd/lesson/ccd5ed15-b437-429d-8b9e-1fba0b129cfe)

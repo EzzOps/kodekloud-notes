@@ -6,15 +6,15 @@ Azure Policies help organizations enforce standards and ensure compliance with i
 
 Azure Policies empower organizations, such as Bella Innovations, to enforce organizational standards and ensure compliance with industry benchmarks like ISO 27001 and PCI DSS. This comprehensive guide explains how to use Azure Policies to assess compliance and enforce regulatory standards.
 
-![The image shows a diagram titled "Enforcing Organizational Standards – Challenge," featuring two standards: ISO:27001 and PCI-DSS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868366/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/enforcing-organizational-standards-diagram.jpg)
+![The image shows a diagram titled "Enforcing Organizational Standards – Challenge," featuring two standards: ISO:27001 and PCI-DSS.](https://kodekloud.com/kk-media/image/upload/v1752868366/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/enforcing-organizational-standards-diagram.jpg)
 
 Azure Policy is a service designed to help you create, assign, and manage policies that govern your resources effectively. By ensuring all resources adhere to your organizational standards and service level agreements (SLAs), Azure Policy plays a crucial role in maintaining compliance. Below, we showcase a practical example of its usage.
 
-![The image illustrates the process of Azure Policies, highlighting steps to create, assign, and manage policies, with a focus on standards and agreements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868367/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/azure-policies-creation-management.jpg)
+![The image illustrates the process of Azure Policies, highlighting steps to create, assign, and manage policies, with a focus on standards and agreements.](https://kodekloud.com/kk-media/image/upload/v1752868367/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/azure-policies-creation-management.jpg)
 
 Imagine your organization restricts resource deployments to only the East US and West US regions. Even if users have permission to deploy resources in any region, a policy can enforce this constraint. During deployment, a validation process checks the selected region against the policy. If the region is not among the allowed locations, the deployment is blocked.
 
-![The image illustrates Azure Policies with two resource locations, "East US" and "West US," represented by colored squares. A green icon with a document symbol is also present.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868368/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/azure-policies-east-west-diagram.jpg)
+![The image illustrates Azure Policies with two resource locations, "East US" and "West US," represented by colored squares. A green icon with a document symbol is also present.](https://kodekloud.com/kk-media/image/upload/v1752868368/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/azure-policies-east-west-diagram.jpg)
 
 ## Key Features of Azure Policy
 
@@ -22,7 +22,7 @@ Imagine your organization restricts resource deployments to only the East US and
 2. **Policy Assignments**: Assign policies at various scopes, including resource groups, subscriptions, or management groups.
 3. **Compliance Reporting**: Track and report on the compliance status of resources, ensuring alignment with standards like PCI DSS.
 
-![The image outlines the key features of Azure Policies, including Policy Definitions, Policy Assignment, and Compliance Reporting, each represented with icons and numbered sections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868368/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/azure-policies-key-features-diagram.jpg)
+![The image outlines the key features of Azure Policies, including Policy Definitions, Policy Assignment, and Compliance Reporting, each represented with icons and numbered sections.](https://kodekloud.com/kk-media/image/upload/v1752868368/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/azure-policies-key-features-diagram.jpg)
 
 ## Benefits and Use Cases
 
@@ -32,21 +32,21 @@ Azure Policy provides numerous benefits:
 * **Preventing Configuration Drift**: Automatically maintains consistency by blocking unauthorized changes.
 * **Customizable Control**: Allows you to tailor policies specific to your organizational needs.
 
-![The image outlines the benefits of Azure Policies, highlighting three key points: enforcing compliance, preventing configuration drift, and offering customizable control.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868369/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/azure-policies-benefits-outline.jpg)
+![The image outlines the benefits of Azure Policies, highlighting three key points: enforcing compliance, preventing configuration drift, and offering customizable control.](https://kodekloud.com/kk-media/image/upload/v1752868369/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/azure-policies-benefits-outline.jpg)
 
 Azure Policy is an ideal solution for maintaining security standards and managing costs in your Azure environment. For example, by restricting the deployment of expensive virtual machine sizes, you can prevent unintended cost overruns.
 
-![The image outlines three use cases for Azure Policies: maintaining security standards, controlling costs effectively, and enforcing company policies in Azure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868370/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/azure-policies-use-cases-diagram.jpg)
+![The image outlines three use cases for Azure Policies: maintaining security standards, controlling costs effectively, and enforcing company policies in Azure.](https://kodekloud.com/kk-media/image/upload/v1752868370/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/azure-policies-use-cases-diagram.jpg)
 
 ## Azure Policy Demonstration in the Azure Portal
 
 Within the Azure Portal, navigate to the Policy section to view compliance data. The dashboard provides an overview of your resource compliance status, highlights non-compliant initiatives, and offers detailed policy insights.
 
-![The image shows a Microsoft Azure Policy dashboard displaying compliance data, including overall resource compliance, non-compliant initiatives, and policies. It features a pie chart and a table with details on compliance states and resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868372/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/azure-policy-dashboard-compliance-data.jpg)
+![The image shows a Microsoft Azure Policy dashboard displaying compliance data, including overall resource compliance, non-compliant initiatives, and policies. It features a pie chart and a table with details on compliance states and resources.](https://kodekloud.com/kk-media/image/upload/v1752868372/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/azure-policy-dashboard-compliance-data.jpg)
 
 Under the **Definitions** section, you can explore built-in policies and create customized ones. Initiatives, which are groups of related policies, can also be assigned together for simplified management.
 
-![The image shows a Microsoft Azure portal page displaying a list of policy definitions, including details like name, definition location, policies, type, and category.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868373/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/azure-portal-policy-definitions.jpg)
+![The image shows a Microsoft Azure portal page displaying a list of policy definitions, including details like name, definition location, policies, type, and category.](https://kodekloud.com/kk-media/image/upload/v1752868373/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/azure-portal-policy-definitions.jpg)
 
 > **lightbulb** Review the built-in policies as a starting point, then customize or combine them as needed to suit your organizational requirements.
 
@@ -97,11 +97,11 @@ To enforce this policy, follow these steps:
 3. Enter a meaningful assignment name and description.
 4. In the assignment parameters, select the allowed regions such as East US and West US.
 
-![The image shows a Microsoft Azure portal interface for setting up a policy assignment with options for defining allowed locations, exclusions, and scope settings. The user can specify details like subscription, resource group, and assignment name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868374/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/azure-portal-policy-assignment-settings.jpg)
+![The image shows a Microsoft Azure portal interface for setting up a policy assignment with options for defining allowed locations, exclusions, and scope settings. The user can specify details like subscription, resource group, and assignment name.](https://kodekloud.com/kk-media/image/upload/v1752868374/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/azure-portal-policy-assignment-settings.jpg)
 
 Under the parameters, select the desired regions. For example:
 
-![The image shows a Microsoft Azure portal screen where a user is selecting allowed locations, with "East US" checked in a dropdown menu.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868375/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/azure-portal-allowed-locations-dropdown.jpg)
+![The image shows a Microsoft Azure portal screen where a user is selecting allowed locations, with "East US" checked in a dropdown menu.](https://kodekloud.com/kk-media/image/upload/v1752868375/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Policies/azure-portal-allowed-locations-dropdown.jpg)
 
 Optionally, you can add a custom non-compliance message that will be shown when a resource deployment is denied. After configuring the assignment, click **Create**. Note that while policy enforcement begins immediately, it might take 5 to 15 minutes for the changes to propagate.
 

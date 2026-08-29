@@ -12,9 +12,7 @@ In the previous lesson we met Alex and introduced conditional and equality ancho
 
 This article explains the three anchors tailored for those needs, with practical examples and a comparison to common wildcard patterns.
 
-<Callout icon="lightbulb">
-  This guide focuses on Kyverno anchors: existence (`^`), negation (`X`), and global (`<()`), showing how each solves a specific policy requirement. Use the examples as starting points and adapt patterns to your organization’s naming and image conventions.
-</Callout>
+> **lightbulb** This guide focuses on Kyverno anchors: existence (`^`), negation (`X`), and global (`<()`), showing how each solves a specific policy requirement. Use the examples as starting points and adapt patterns to your organization’s naming and image conventions.
 
 ## Quick anchor summary
 
@@ -87,9 +85,7 @@ Notes:
 * The anchor does not evaluate the value of `hostPath` (e.g., `/data`); it only checks the presence of the key.
 * This produces a deterministic deny: `hostPath` cannot be used at all.
 
-<Callout icon="warning">
-  Forbidding `hostPath` is a common hardening practice. Make sure you coordinate with app owners because legitimate workloads that require node-local access might need alternate approaches (e.g., CSI drivers).
-</Callout>
+> **warning** Forbidding `hostPath` is a common hardening practice. Make sure you coordinate with app owners because legitimate workloads that require node-local access might need alternate approaches (e.g., CSI drivers).
 
 ***
 
@@ -167,6 +163,4 @@ Example policy skeletons and the pattern snippets above are designed to be embed
 * Kyverno documentation — policies and patterns: [https://kyverno.io/docs/](https://kyverno.io/docs/)
 * Kubernetes Pod spec: [https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/](https://kubernetes.io/docs/concepts/workloads/pods/pod-overview/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/4d9072ac-f12b-4914-954b-16af513c3026" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/4d9072ac-f12b-4914-954b-16af513c3026)

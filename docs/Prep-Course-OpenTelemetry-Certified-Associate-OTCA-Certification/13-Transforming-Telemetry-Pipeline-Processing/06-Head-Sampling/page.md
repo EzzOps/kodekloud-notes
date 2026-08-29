@@ -25,9 +25,7 @@ Key control parameters for probabilistic head sampling:
 | Hash seed             | Alters which trace IDs are selected; enables consistent selection across collectors | Use same seed across collectors for deterministic selection |
 | Hash algorithm        | Maps trace ID to numeric range (implementation detail)                              | Typically fixed by the sampler implementation               |
 
-<Callout icon="lightbulb">
-  Using a deterministic hash of the trace ID plus a stable seed enables consistent sampling decisions across collectors and services. If multiple collectors share the same seed and algorithm, the same trace ID will be sampled consistently.
-</Callout>
+> **lightbulb** Using a deterministic hash of the trace ID plus a stable seed enables consistent sampling decisions across collectors and services. If multiple collectors share the same seed and algorithm, the same trace ID will be sampled consistently.
 
 Benefits and trade-offs
 

@@ -44,7 +44,7 @@ There are two types of managed identities in Azure:
 
 Below is a diagram comparing the two types of managed identities:
 
-![The image is a comparison table of system-assigned and user-assigned managed identities in Azure, detailing their alignment, lifecycle, sharing capabilities, and use cases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867242/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-managed-identities/azure-managed-identities-comparison-table.jpg)
+![The image is a comparison table of system-assigned and user-assigned managed identities in Azure, detailing their alignment, lifecycle, sharing capabilities, and use cases.](https://kodekloud.com/kk-media/image/upload/v1752867242/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-managed-identities/azure-managed-identities-comparison-table.jpg)
 
 ### Key Differences Between Managed Identity Types
 
@@ -97,7 +97,7 @@ Given that the [AZ-305: Microsoft Azure Solutions Architect Expert](https://lear
   * Manage several HTTPS applications requiring secure storage of SSL certificates.
   * Securely store credentials for multiple application users who rely on an SQL backend, thus eliminating the need to hardcode encrypted credentials.
 
-![The image is a scenario description from KodeKloud for Vendetta Corp, detailing requirements for using Azure AD as their identity and access management solution, including collaboration, app access, network restrictions, and security measures.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867243/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Section-Introduction/azure-ad-vendetta-corp-scenario.jpg)
+![The image is a scenario description from KodeKloud for Vendetta Corp, detailing requirements for using Azure AD as their identity and access management solution, including collaboration, app access, network restrictions, and security measures.](https://kodekloud.com/kk-media/image/upload/v1752867243/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Section-Introduction/azure-ad-vendetta-corp-scenario.jpg)
 
 With these requirements clearly defined, we now proceed to the first section of this module, which focuses on identity and access management. Explore how to architect a secure and scalable solution that meets modern enterprise needs while maintaining compliance with industry standards.
 

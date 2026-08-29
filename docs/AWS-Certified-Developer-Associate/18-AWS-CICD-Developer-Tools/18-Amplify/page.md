@@ -8,7 +8,7 @@ Amplify is a robust tool designed to empower front-end developers by simplifying
 
 When you work with Amplify, you’re freed from the complexities of manual AWS setup. Instead, Amplify establishes the necessary back-end services—including Cognito for authentication, S3 or DynamoDB for storage, and CloudFront for content delivery—with just a few clicks.
 
-![The image is a diagram showing a flow from a user interface with mobile and web browser icons to AWS services, including authentication, storage, and PubSub icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857912/notes-assets/images/AWS-Certified-Developer-Associate-Amplify/user-interface-to-aws-services-diagram.jpg)
+![The image is a diagram showing a flow from a user interface with mobile and web browser icons to AWS services, including authentication, storage, and PubSub icons.](https://kodekloud.com/kk-media/image/upload/v1752857912/notes-assets/images/AWS-Certified-Developer-Associate-Amplify/user-interface-to-aws-services-diagram.jpg)
 
 Amplify supports a variety of application types, including:
 
@@ -29,23 +29,23 @@ Setting up an Amplify project is a streamlined process:
 3. **Connect the Front End:** Integrate your configured back-end with your front-end application.
 4. **Deploy Your Application:** Launch your application, while Amplify manages all necessary AWS configurations behind the scenes.
 
-![The image shows a four-step process for setting up and configuring a project: Initialize Project, Add Backend Services, Connect Frontend, and Deploy Application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857912/notes-assets/images/AWS-Certified-Developer-Associate-Amplify/project-setup-configuration-process.jpg)
+![The image shows a four-step process for setting up and configuring a project: Initialize Project, Add Backend Services, Connect Frontend, and Deploy Application.](https://kodekloud.com/kk-media/image/upload/v1752857912/notes-assets/images/AWS-Certified-Developer-Associate-Amplify/project-setup-configuration-process.jpg)
 
 Beyond the initial setup, Amplify excels in full-stack development by seamlessly integrating GraphQL and REST APIs, enabling automatic authentication, and configuring secure data storage via underlying AWS services.
 
-![The image lists three features: Easy Setup and Configuration, Full-Stack Development, and GraphQL and REST APIs, each with an icon and number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857914/notes-assets/images/AWS-Certified-Developer-Associate-Amplify/easy-setup-fullstack-graphql-rest.jpg)
+![The image lists three features: Easy Setup and Configuration, Full-Stack Development, and GraphQL and REST APIs, each with an icon and number.](https://kodekloud.com/kk-media/image/upload/v1752857914/notes-assets/images/AWS-Certified-Developer-Associate-Amplify/easy-setup-fullstack-graphql-rest.jpg)
 
 ## Simplified Authentication and Data Storage
 
 Adding authentication to your application is effortless with Amplify. By leveraging AWS Cognito internally, Amplify eliminates the need for manual Cognito configuration. It also supports social authentication, so users can sign in using providers like Google or Facebook.
 
-![The image illustrates an authentication process, showing a flow from a web application to authentication services, including Google and Facebook.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857915/notes-assets/images/AWS-Certified-Developer-Associate-Amplify/authentication-process-web-app-flow.jpg)
+![The image illustrates an authentication process, showing a flow from a web application to authentication services, including Google and Facebook.](https://kodekloud.com/kk-media/image/upload/v1752857915/notes-assets/images/AWS-Certified-Developer-Associate-Amplify/authentication-process-web-app-flow.jpg)
 
 Similarly, selecting the storage option in Amplify activates services such as S3 or DynamoDB to manage your data. Amplify also integrates with CloudFront to deliver content via a global CDN, ensuring fast and reliable file distribution.
 
-![The image is a diagram showing the relationship between AWS Amplify, S3, and DynamoDB, indicating data flow or integration among these services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857916/notes-assets/images/AWS-Certified-Developer-Associate-Amplify/aws-amplify-s3-dynamodb-diagram.jpg)
+![The image is a diagram showing the relationship between AWS Amplify, S3, and DynamoDB, indicating data flow or integration among these services.](https://kodekloud.com/kk-media/image/upload/v1752857916/notes-assets/images/AWS-Certified-Developer-Associate-Amplify/aws-amplify-s3-dynamodb-diagram.jpg)
 
-![The image is a diagram showing a content delivery network (CDN) flow, involving Amplify, CloudFront, and an S3 origin.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857917/notes-assets/images/AWS-Certified-Developer-Associate-Amplify/cdn-flow-amplify-cloudfront-s3.jpg)
+![The image is a diagram showing a content delivery network (CDN) flow, involving Amplify, CloudFront, and an S3 origin.](https://kodekloud.com/kk-media/image/upload/v1752857917/notes-assets/images/AWS-Certified-Developer-Associate-Amplify/cdn-flow-amplify-cloudfront-s3.jpg)
 
 > **lightbulb** Amplify streamlines full-stack application development by automating back-end configurations and integrating essential AWS services. This enables developers to focus on innovation and rapid deployment.
 

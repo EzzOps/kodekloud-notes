@@ -31,13 +31,9 @@ This section closes with a brief look at Operator Lifecycle Manager (OLM). OLM i
 
 By the end of this section you will have a repeatable packaging and deployment path for the web app Operator: a container image, published install manifests, a verified manager running in-cluster, and an upgrade story you can use going forward.
 
-<Callout icon="lightbulb">
-  When using the Makefile targets, always set `IMG` to the exact image reference you intend to deploy (including registry and tag). The deployed manifests will reference that value, so an incorrect `IMG` will cause the cluster to pull a different image or fail to start the controller.
-</Callout>
+> **lightbulb** When using the Makefile targets, always set `IMG` to the exact image reference you intend to deploy (including registry and tag). The deployed manifests will reference that value, so an incorrect `IMG` will cause the cluster to pull a different image or fail to start the controller.
 
-<Callout icon="warning">
-  Ensure you have credentials and write access to the target registry before running `make docker-push`. Also confirm the cluster can pull from that registry (private registries may require imagePullSecrets).
-</Callout>
+> **warning** Ensure you have credentials and write access to the target registry before running `make docker-push`. Also confirm the cluster can pull from that registry (private registries may require imagePullSecrets).
 
 ## References
 
@@ -45,9 +41,7 @@ By the end of this section you will have a repeatable packaging and deployment p
 * Kustomize: [https://kustomize.io/](https://kustomize.io/)
 * Operator Lifecycle Manager (OLM): [https://olm.operatorframework.io/](https://olm.operatorframework.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/5a9bfe56-bc26-4325-b659-06027d4e815f/lesson/f81893d3-e35e-4a4a-a360-ab8e27c866e4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/5a9bfe56-bc26-4325-b659-06027d4e815f/lesson/f81893d3-e35e-4a4a-a360-ab8e27c866e4)
 
 
 # What You Built The WebApp Operator Victory Lap
@@ -89,9 +83,7 @@ OwnerReferences connected those children back to the parent CR. With ownerRefere
 
 Status and events make the operator readable from the outside. `status` fields report what the controller observed so users don’t need to inspect every child resource. Events are short, human-friendly signals recorded as separate Kubernetes Event objects when meaningful things happen (Events are not a subfield of `status`). Together, they turn an otherwise silent controller into something a user can understand quickly.
 
-<Callout icon="lightbulb">
-  Use `status` for persistent operator-observed state (conditions, replica counts, URLs). Use Events for transient, human-readable signals like "Deployment created" or "ScalingReplicaSet". Events are stored separately as Event objects in Kubernetes.
-</Callout>
+> **lightbulb** Use `status` for persistent operator-observed state (conditions, replica counts, URLs). Use Events for transient, human-readable signals like "Deployment created" or "ScalingReplicaSet". Events are stored separately as Event objects in Kubernetes.
 
 Example `status` snippet:
 

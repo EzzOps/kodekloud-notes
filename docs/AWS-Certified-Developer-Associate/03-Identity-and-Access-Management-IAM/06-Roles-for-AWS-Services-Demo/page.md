@@ -12,7 +12,7 @@ In this section, we demonstrate how to assign a role when using AWS CloudFormati
 
 Click **Next**. On the next screen, you will find sections for specifying a stack name and other parameters. For example:
 
-![The image shows an AWS CloudFormation interface where users can specify stack details, including stack name and parameters for a MySQL database.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858965/notes-assets/images/AWS-Certified-Developer-Associate-Roles-for-AWS-Services-Demo/aws-cloudformation-mysql-stack-details.jpg)
+![The image shows an AWS CloudFormation interface where users can specify stack details, including stack name and parameters for a MySQL database.](https://kodekloud.com/kk-media/image/upload/v1752858965/notes-assets/images/AWS-Certified-Developer-Associate-Roles-for-AWS-Services-Demo/aws-cloudformation-mysql-stack-details.jpg)
 
 Provide a stack name (for instance, "demo stack") and fill in the required parameters with sample data. Once you have entered all necessary information, click **Next**.
 
@@ -20,7 +20,7 @@ At the permissions stage, CloudFormation requires you to select an IAM role. Thi
 
 The image below illustrates the "Configure stack options" page where you can add tags, set permissions, and configure stack failure options:
 
-![The image shows the AWS CloudFormation console, specifically the "Configure stack options" page, where users can add tags, set permissions, and configure stack failure options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858966/notes-assets/images/AWS-Certified-Developer-Associate-Roles-for-AWS-Services-Demo/aws-cloudformation-configure-stack-options.jpg)
+![The image shows the AWS CloudFormation console, specifically the "Configure stack options" page, where users can add tags, set permissions, and configure stack failure options.](https://kodekloud.com/kk-media/image/upload/v1752858966/notes-assets/images/AWS-Certified-Developer-Associate-Roles-for-AWS-Services-Demo/aws-cloudformation-configure-stack-options.jpg)
 
 > **lightbulb** Ensure that the IAM role you assign to CloudFormation includes all the permissions required for the resources specified in your stack.
 
@@ -30,7 +30,7 @@ Next, consider an example using AWS Lambda—a compute service that lets you run
 
 For example, if your Lambda function is designed to upload files to an S3 bucket or create an API, it must have the appropriate permissions for these tasks. When you click **Create function** and provide a function name (e.g., "demo"), you will notice a permissions section in the Lambda console.
 
-![The image shows the AWS Lambda console interface for creating a new function, with options to author from scratch, use a blueprint, or a container image. It includes fields for entering the function name, selecting the runtime, and choosing the architecture.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858967/notes-assets/images/AWS-Certified-Developer-Associate-Roles-for-AWS-Services-Demo/aws-lambda-console-create-function.jpg)
+![The image shows the AWS Lambda console interface for creating a new function, with options to author from scratch, use a blueprint, or a container image. It includes fields for entering the function name, selecting the runtime, and choosing the architecture.](https://kodekloud.com/kk-media/image/upload/v1752858967/notes-assets/images/AWS-Certified-Developer-Associate-Roles-for-AWS-Services-Demo/aws-lambda-console-create-function.jpg)
 
 Within the permissions section of the Lambda console, you have the following options:
 

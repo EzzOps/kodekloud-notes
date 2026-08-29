@@ -54,9 +54,7 @@ Without modules, the same configuration parameters (replication type, TLS settin
 
 With modules, that logic is centralized. Callers only pass inputs. If you update module logic, all callers inherit the change. This is abstraction, and it lets infrastructure teams scale safely. However, be mindful: over-abstracting can push important implementation details out of reach for callers, making debugging harder.
 
-<Callout icon="lightbulb">
-  Use modules to standardize and reuse infrastructure logic. Avoid over-abstraction that hides too much implementation detail from callers.
-</Callout>
+> **lightbulb** Use modules to standardize and reuse infrastructure logic. Avoid over-abstraction that hides too much implementation detail from callers.
 
 ## Example: a storage module and how to call it
 
@@ -149,6 +147,4 @@ Links and references:
 
 Let's take a closer look next at module composition patterns and how to manage inputs/outputs for large projects.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/e38de693-04a0-45e9-b67a-9f8d26ac03ee/lesson/70d6a889-2249-42f2-b3c3-6d2f13b65736" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/e38de693-04a0-45e9-b67a-9f8d26ac03ee/lesson/70d6a889-2249-42f2-b3c3-6d2f13b65736)

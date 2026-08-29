@@ -8,9 +8,7 @@ In this lesson, we explain how to configure a SonarQube quality gate to control 
 
 The integration process is illustrated in the following diagram:
 
-<Frame>
-  ![The image is a flowchart illustrating the integration process between Jenkins and SonarQube for CI/CD, showing steps from starting a pipeline to computing quality gates and handling webhook events.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879617/notes-assets/images/Jenkins-Pipelines-SonarQube-Quality-Gate-Step-and-Refactoring/jenkins-sonarqube-cicd-integration-flowchart.jpg)
-</Frame>
+![The image is a flowchart illustrating the integration process between Jenkins and SonarQube for CI/CD, showing steps from starting a pipeline to computing quality gates and handling webhook events.](https://kodekloud.com/kk-media/image/upload/v1752879617/notes-assets/images/Jenkins-Pipelines-SonarQube-Quality-Gate-Step-and-Refactoring/jenkins-sonarqube-cicd-integration-flowchart.jpg)
 
 The complete process follows these steps:
 
@@ -21,9 +19,7 @@ The complete process follows these steps:
 5. The server sends the quality gate status back to Jenkins via the configured webhook.
 6. Depending on the quality gate status, the pipeline either continues (if passed) or aborts (if failed).
 
-<Callout icon="lightbulb">
-  Ensure that your Jenkins and SonarQube instances are properly integrated before proceeding with these configurations.
-</Callout>
+> **lightbulb** Ensure that your Jenkins and SonarQube instances are properly integrated before proceeding with these configurations.
 
 ***
 
@@ -37,15 +33,11 @@ Next, configure the webhook in SonarQube with these steps:
 2. Note that no webhook is defined by default.
 3. Create a new webhook named "Jenkins webhook" and paste the Jenkins webhook URL copied in the previous step.
 
-<Frame>
-  ![The image shows a "Create Webhook" form in a SonarQube administration interface, where a user is entering details for a Jenkins Webhook.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879619/notes-assets/images/Jenkins-Pipelines-SonarQube-Quality-Gate-Step-and-Refactoring/create-webhook-sonarqube-jenkins.jpg)
-</Frame>
+![The image shows a "Create Webhook" form in a SonarQube administration interface, where a user is entering details for a Jenkins Webhook.](https://kodekloud.com/kk-media/image/upload/v1752879619/notes-assets/images/Jenkins-Pipelines-SonarQube-Quality-Gate-Step-and-Refactoring/create-webhook-sonarqube-jenkins.jpg)
 
 Once the webhook is created, SonarQube will send the quality gate status back to Jenkins. To confirm the settings, check the webhook management page in SonarQube:
 
-<Frame>
-  ![The image shows a SonarQube administration page for managing webhooks, with a specific webhook named "Jenkins Webhook" listed, including its URL and settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879620/notes-assets/images/Jenkins-Pipelines-SonarQube-Quality-Gate-Step-and-Refactoring/sonarqube-webhook-jenkins-settings.jpg)
-</Frame>
+![The image shows a SonarQube administration page for managing webhooks, with a specific webhook named "Jenkins Webhook" listed, including its URL and settings.](https://kodekloud.com/kk-media/image/upload/v1752879620/notes-assets/images/Jenkins-Pipelines-SonarQube-Quality-Gate-Step-and-Refactoring/sonarqube-webhook-jenkins-settings.jpg)
 
 ***
 
@@ -62,9 +54,7 @@ Initially, the Jenkinsfile exposed the authentication token directly in the scri
    * The authentication token
 3. Create a new credential of type "Secret Text" using the token. For example, assign a credential ID like "SonarQube server token."
 
-<Frame>
-  ![The image shows a Jenkins configuration screen for setting up a SonarQube server, including fields for the server name, URL, and authentication token.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879622/notes-assets/images/Jenkins-Pipelines-SonarQube-Quality-Gate-Step-and-Refactoring/jenkins-sonarqube-configuration-screen.jpg)
-</Frame>
+![The image shows a Jenkins configuration screen for setting up a SonarQube server, including fields for the server name, URL, and authentication token.](https://kodekloud.com/kk-media/image/upload/v1752879622/notes-assets/images/Jenkins-Pipelines-SonarQube-Quality-Gate-Step-and-Refactoring/jenkins-sonarqube-configuration-screen.jpg)
 
 ### Updating the Jenkinsfile
 
@@ -219,15 +209,11 @@ Pipeline aborted due to quality gate failure: ERROR
 
 You can also verify the failed status on the SonarQube dashboard:
 
-<Frame>
-  ![The image shows a Jenkins pipeline interface for a project named "solar-system" with various stages like installing dependencies, unit testing, and SAST using SonarQube. The SAST stage has failed, indicated by a red cross.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879623/notes-assets/images/Jenkins-Pipelines-SonarQube-Quality-Gate-Step-and-Refactoring/jenkins-pipeline-solar-system-sast-failed.jpg)
-</Frame>
+![The image shows a Jenkins pipeline interface for a project named "solar-system" with various stages like installing dependencies, unit testing, and SAST using SonarQube. The SAST stage has failed, indicated by a red cross.](https://kodekloud.com/kk-media/image/upload/v1752879623/notes-assets/images/Jenkins-Pipelines-SonarQube-Quality-Gate-Step-and-Refactoring/jenkins-pipeline-solar-system-sast-failed.jpg)
 
 Review the SonarQube project details:
 
-<Frame>
-  ![The image shows a SonarQube dashboard for a project named "Solar-System-Project," indicating a failed quality gate due to insufficient code coverage. It displays metrics like new bugs, vulnerabilities, and code smells, all of which are currently at zero.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879624/notes-assets/images/Jenkins-Pipelines-SonarQube-Quality-Gate-Step-and-Refactoring/sonarqube-dashboard-solar-system-failed.jpg)
-</Frame>
+![The image shows a SonarQube dashboard for a project named "Solar-System-Project," indicating a failed quality gate due to insufficient code coverage. It displays metrics like new bugs, vulnerabilities, and code smells, all of which are currently at zero.](https://kodekloud.com/kk-media/image/upload/v1752879624/notes-assets/images/Jenkins-Pipelines-SonarQube-Quality-Gate-Step-and-Refactoring/sonarqube-dashboard-solar-system-failed.jpg)
 
 The webhook delivers a JSON payload similar to the following:
 
@@ -299,15 +285,11 @@ When reviewing the detailed quality gate conditions in SonarQube, you might see 
 
 Check the SonarQube dashboard for final confirmation:
 
-<Frame>
-  ![The image shows a SonarQube dashboard displaying the analysis results for a project named "Solar-System-Project," which has failed the quality gate due to issues like code smells and hotspots. The project has 73.5% coverage, 0% duplications, and is written in JavaScript.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879625/notes-assets/images/Jenkins-Pipelines-SonarQube-Quality-Gate-Step-and-Refactoring/sonarqube-dashboard-solar-system-project.jpg)
-</Frame>
+![The image shows a SonarQube dashboard displaying the analysis results for a project named "Solar-System-Project," which has failed the quality gate due to issues like code smells and hotspots. The project has 73.5% coverage, 0% duplications, and is written in JavaScript.](https://kodekloud.com/kk-media/image/upload/v1752879625/notes-assets/images/Jenkins-Pipelines-SonarQube-Quality-Gate-Step-and-Refactoring/sonarqube-dashboard-solar-system-project.jpg)
 
 Further inspection of build details:
 
-<Frame>
-  ![The image shows a SonarQube dashboard for a project named "Solar-System-Project," indicating a failed quality gate due to insufficient code coverage. It displays metrics such as bugs, vulnerabilities, security hotspots, and code smells.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879626/notes-assets/images/Jenkins-Pipelines-SonarQube-Quality-Gate-Step-and-Refactoring/sonarqube-dashboard-solar-system-failed-2.jpg)
-</Frame>
+![The image shows a SonarQube dashboard for a project named "Solar-System-Project," indicating a failed quality gate due to insufficient code coverage. It displays metrics such as bugs, vulnerabilities, security hotspots, and code smells.](https://kodekloud.com/kk-media/image/upload/v1752879626/notes-assets/images/Jenkins-Pipelines-SonarQube-Quality-Gate-Step-and-Refactoring/sonarqube-dashboard-solar-system-failed-2.jpg)
 
 Through this integration, SonarQube helps identify quality issues and enforces quality gates to control the build process. Addressing the quality issues—such as increasing code coverage—ensures that the pipeline will eventually succeed.
 
@@ -315,8 +297,6 @@ Through this integration, SonarQube helps identify quality issues and enforces q
 
 Thank you for following this lesson on integrating SonarQube with Jenkins and refactoring your pipeline configuration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/bcd4711c-8a69-4218-a65c-113fd7a7a88d/lesson/45c2b28f-fdf1-4d8a-be5d-e219b0e83aa4" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/bcd4711c-8a69-4218-a65c-113fd7a7a88d/lesson/45c2b28f-fdf1-4d8a-be5d-e219b0e83aa4)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/bcd4711c-8a69-4218-a65c-113fd7a7a88d/lesson/f606e664-e0ad-47e9-abe9-005b61b6695d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/bcd4711c-8a69-4218-a65c-113fd7a7a88d/lesson/f606e664-e0ad-47e9-abe9-005b61b6695d)

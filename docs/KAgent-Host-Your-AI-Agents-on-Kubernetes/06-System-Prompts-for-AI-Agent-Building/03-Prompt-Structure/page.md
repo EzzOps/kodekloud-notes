@@ -65,11 +65,9 @@ Use this checklist when authoring or reviewing prompts. It ensures completeness 
 
 Thank you.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/9516a0aa-00b1-4461-a622-cc60e510c96a/lesson/b7cb3799-4e18-44f3-ab53-364ba7121a4b" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/9516a0aa-00b1-4461-a622-cc60e510c96a/lesson/b7cb3799-4e18-44f3-ab53-364ba7121a4b)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/1f59e7e3-e5ab-4b77-b210-8c954216f293/lesson/5832efff-cc5b-4b77-bfe5-a2cc76c54c78" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/1f59e7e3-e5ab-4b77-b210-8c954216f293/lesson/5832efff-cc5b-4b77-bfe5-a2cc76c54c78)
 
 
 # Prompt Structure
@@ -187,13 +185,9 @@ Safety and guardrails — include explicit constraints in the system prompt:
 * Back up critical configuration before editing.
 * When unsure, ask clarifying questions instead of taking action.
 
-<Callout icon="lightbulb">
-  Be explicit in the system prompt about required confirmations, parameter validation, and the agent’s default safety-first behavior. This reduces accidental destructive actions and makes agent behavior more predictable.
-</Callout>
+> **lightbulb** Be explicit in the system prompt about required confirmations, parameter validation, and the agent’s default safety-first behavior. This reduces accidental destructive actions and makes agent behavior more predictable.
 
-<Callout icon="warning">
-  Do not perform mutating operations (for example, `apply_resource`) without explicit, unambiguous confirmation that includes target cluster and namespace, and a description of the intended change.
-</Callout>
+> **warning** Do not perform mutating operations (for example, `apply_resource`) without explicit, unambiguous confirmation that includes target cluster and namespace, and a description of the intended change.
 
 System prompt checklist — what a complete prompt should include:
 
@@ -221,6 +215,4 @@ Further reading and references
 * [Kubernetes API Reference](https://kubernetes.io/docs/reference/)
 * [Prompt engineering best practices (overview)](https://en.wikipedia.org/wiki/Prompt_engineering)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/9516a0aa-00b1-4461-a622-cc60e510c96a/lesson/824501ea-e984-408a-8da8-35c07a69a570" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/9516a0aa-00b1-4461-a622-cc60e510c96a/lesson/824501ea-e984-408a-8da8-35c07a69a570)

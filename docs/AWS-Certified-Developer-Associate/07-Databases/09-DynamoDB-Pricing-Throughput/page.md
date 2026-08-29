@@ -21,7 +21,7 @@ When using provisioned mode, it is necessary to configure your table with the re
 * **Read Capacity Units (RCUs):** Measure the throughput for read operations.
 * **Write Capacity Units (WCUs):** Measure the throughput for write operations.
 
-![The image is a slide titled "Capacity Modes – Provisioned," explaining that tables must be provisioned in advance with read and write capacity, highlighting "Read Capacity Units (RCUs)" and "Throughput for reads per second."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858785/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput/capacity-modes-provisioned-slide.jpg)
+![The image is a slide titled "Capacity Modes – Provisioned," explaining that tables must be provisioned in advance with read and write capacity, highlighting "Read Capacity Units (RCUs)" and "Throughput for reads per second."](https://kodekloud.com/kk-media/image/upload/v1752858785/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput/capacity-modes-provisioned-slide.jpg)
 
 Provisioned mode also allows for a temporary burst in capacity. However, if your workload exceeds the provisioned limits, DynamoDB will raise a "ProvisionedThroughputExceededException."
 
@@ -42,6 +42,6 @@ For instance:
 
 Consider this example calculation:
 
-![The image explains how to calculate Write Capacity Units (WCUs) with a formula and provides two examples of item sizes and their corresponding WCUs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858786/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput/calculate-write-capacity-units-examples.jpg)
+![The image explains how to calculate Write Capacity Units (WCUs) with a formula and provides two examples of item sizes and their corresponding WCUs.](https://kodekloud.com/kk-media/image/upload/v1752858786/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput/calculate-write-capacity-units-examples.jpg)
 
 ```python theme={null}

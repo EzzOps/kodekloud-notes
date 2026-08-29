@@ -12,39 +12,27 @@ This guide demonstrates how to install Jenkins on an Ubuntu virtual machine depl
 
    *Tip: Consider available resources (RAM, CPU) during selection to match your Jenkins workload.*
 
-<Frame>
-  ![The image shows the Microsoft Azure portal interface for creating a virtual machine, displaying options for subscription, resource group, and region selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880046/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_40.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal interface for creating a virtual machine, displaying options for subscription, resource group, and region selection.](https://kodekloud.com/kk-media/image/upload/v1752880046/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_40.jpg)
 
 2. Choose your resource group (e.g., "KodeKloud") and enter a name for the VM. Select the **Ubuntu 20.04** OS image. For a cost-effective option, opt for a VM size with 1 vCPU and 2 GB RAM.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal interface for creating a virtual machine, displaying options for subscription, resource group, and instance details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880048/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_50.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal interface for creating a virtual machine, displaying options for subscription, resource group, and instance details.](https://kodekloud.com/kk-media/image/upload/v1752880048/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_50.jpg)
 
 3. Continue by configuring the instance details:
 
-<Frame>
-  ![The image shows the Microsoft Azure interface for creating a virtual machine, with options for instance details, image selection, and authentication type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880049/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_60.jpg)
-</Frame>
+![The image shows the Microsoft Azure interface for creating a virtual machine, with options for instance details, image selection, and authentication type.](https://kodekloud.com/kk-media/image/upload/v1752880049/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_60.jpg)
 
 4. Set a username and password for SSH access. For demonstration purposes, open port 22.
 
-<Callout icon="triangle-alert">
-  Opening port 22 for SSH access is not recommended in production environments. Ensure network security groups or firewalls are correctly configured.
-</Callout>
+> **triangle-alert** Opening port 22 for SSH access is not recommended in production environments. Ensure network security groups or firewalls are correctly configured.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating a virtual machine, highlighting password requirements and inbound port rules for SSH access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880050/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_90.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating a virtual machine, highlighting password requirements and inbound port rules for SSH access.](https://kodekloud.com/kk-media/image/upload/v1752880050/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_90.jpg)
 
 5. For storage, choose a premium SSD, add the VM to your "KodeKloud VNet", then click **Next** to review and confirm your settings. Enter your password again when prompted, then create the VM.
 
 6. Once the VM is created, open a terminal to connect via SSH.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating a virtual machine, displaying product details, terms, and user information fields.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880052/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_110.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating a virtual machine, displaying product details, terms, and user information fields.](https://kodekloud.com/kk-media/image/upload/v1752880052/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_110.jpg)
 
 ## Connecting to Your VM
 
@@ -174,9 +162,7 @@ With Java installed, proceed to install Jenkins by following these steps:
    sudo ufw status
    ```
 
-<Callout icon="lightbulb">
-  If the firewall is inactive, that is acceptable for a demo environment. In a production environment, ensure the firewall settings limit access to only trusted IP addresses.
-</Callout>
+> **lightbulb** If the firewall is inactive, that is acceptable for a demo environment. In a production environment, ensure the firewall settings limit access to only trusted IP addresses.
 
 5. **Exit SSH Session:**
 
@@ -191,21 +177,15 @@ With Java installed, proceed to install Jenkins by following these steps:
    Open your web browser and navigate to: `http://<Your_VM_Public_IP>:8080`\
    If Jenkins is not accessible, verify your network settings in the Azure portal under **Networking**. Confirm that port 8080 is open. If not, add an inbound security rule.
 
-<Frame>
-  ![The image shows a Microsoft Azure dashboard for a virtual machine named "jenkins," displaying its status, location, operating system, and network details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880053/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_290.jpg)
-</Frame>
+![The image shows a Microsoft Azure dashboard for a virtual machine named "jenkins," displaying its status, location, operating system, and network details.](https://kodekloud.com/kk-media/image/upload/v1752880053/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_290.jpg)
 
 Configure the rule with a source port range of "Any," destination of "Any," and destination port range as 8080:
 
-<Frame>
-  ![The image shows a network security group interface in Azure, where an inbound security rule is being added with specific port and protocol settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880054/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_300.jpg)
-</Frame>
+![The image shows a network security group interface in Azure, where an inbound security rule is being added with specific port and protocol settings.](https://kodekloud.com/kk-media/image/upload/v1752880054/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_300.jpg)
 
 Name the rule (e.g., "port\_8080") and finalize the creation:
 
-<Frame>
-  ![The image shows a network interface configuration in Azure, displaying inbound port rules for a security group, including SSH and various network allowances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880056/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_310.jpg)
-</Frame>
+![The image shows a network interface configuration in Azure, displaying inbound port rules for a security group, including SSH and various network allowances.](https://kodekloud.com/kk-media/image/upload/v1752880056/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_310.jpg)
 
 ## Unlocking and Setting Up Jenkins
 
@@ -229,29 +209,21 @@ Name the rule (e.g., "port\_8080") and finalize the creation:
    * Choose to install the suggested plugins.
    * When installation is complete, create your first admin user (e.g., Michael). Provide a username, password, full name, and optionally an email address.
 
-<Frame>
-  ![The image shows a form for creating the first admin user in Jenkins, requiring username, password, full name, and email address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880057/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_380.jpg)
-</Frame>
+![The image shows a form for creating the first admin user in Jenkins, requiring username, password, full name, and email address.](https://kodekloud.com/kk-media/image/upload/v1752880057/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_380.jpg)
 
 3. **Configure the Jenkins Instance:**
 
    If you do not have a DNS record, simply use your VM's IP address in the instance configuration screen.
 
-<Frame>
-  ![The image shows a Jenkins "Instance Configuration" setup screen with a URL and options to save or skip the configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880058/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_390.jpg)
-</Frame>
+![The image shows a Jenkins "Instance Configuration" setup screen with a URL and options to save or skip the configuration.](https://kodekloud.com/kk-media/image/upload/v1752880058/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_390.jpg)
 
 4. **Finalize the Setup:**
 
    After saving your configuration, you will see the Jenkins dashboard.
 
-<Frame>
-  ![The image shows a Jenkins setup screen offering options to install suggested plugins or select specific plugins for installation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880059/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_350.jpg)
-</Frame>
+![The image shows a Jenkins setup screen offering options to install suggested plugins or select specific plugins for installation.](https://kodekloud.com/kk-media/image/upload/v1752880059/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_350.jpg)
 
-<Frame>
-  ![The image shows a "Getting Started" screen from Jenkins, listing plugins and dependencies, with some items checked or in progress.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880060/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_360.jpg)
-</Frame>
+![The image shows a "Getting Started" screen from Jenkins, listing plugins and dependencies, with some items checked or in progress.](https://kodekloud.com/kk-media/image/upload/v1752880060/notes-assets/images/Jenkins-Install-Jenkins-on-a-VM/frame_360.jpg)
 
 ## Conclusion
 
@@ -259,8 +231,6 @@ You have successfully installed and configured Jenkins on an Ubuntu VM using Mic
 
 Happy Coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/d9ec3aa2-1c6e-4512-bee1-f1d811ec7b6e/lesson/52f4fcf7-abda-4e8e-89fb-8b6d0af6b42f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/d9ec3aa2-1c6e-4512-bee1-f1d811ec7b6e/lesson/52f4fcf7-abda-4e8e-89fb-8b6d0af6b42f)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/d9ec3aa2-1c6e-4512-bee1-f1d811ec7b6e/lesson/0bfaec92-cd02-43dc-84e4-1dd117c963cc" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/jenkins/module/d9ec3aa2-1c6e-4512-bee1-f1d811ec7b6e/lesson/0bfaec92-cd02-43dc-84e4-1dd117c963cc)

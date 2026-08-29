@@ -101,9 +101,7 @@ Next: create credentials for the application. For production use, a certificate 
   <img alt="A screenshot of the Microsoft Azure portal showing the &#x22;app-sec-reg | Certificates & secrets&#x22; page for an app registration, with one client secret listed. A toast notification in the corner indicates the application credentials were successfully updated." />
 </Frame>
 
-<Callout icon="lightbulb">
-  After adding a client secret, copy its value immediately. You cannot retrieve the secret value later from the portal — if you lose it you must create a new secret.
-</Callout>
+> **lightbulb** After adding a client secret, copy its value immediately. You cannot retrieve the secret value later from the portal — if you lose it you must create a new secret.
 
 Requesting a token (client credentials grant)
 
@@ -203,6 +201,4 @@ Further reading and references
 
 This completes the app registration and token issuance overview. Next, you can use the access token to call Microsoft Graph or other protected APIs and learn how to validate tokens in your application code.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c93091f0-246d-47cc-a399-0e33ad87ee7f/lesson/3746d8ca-434f-4383-86d9-954ef1dbb6a3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c93091f0-246d-47cc-a399-0e33ad87ee7f/lesson/3746d8ca-434f-4383-86d9-954ef1dbb6a3)

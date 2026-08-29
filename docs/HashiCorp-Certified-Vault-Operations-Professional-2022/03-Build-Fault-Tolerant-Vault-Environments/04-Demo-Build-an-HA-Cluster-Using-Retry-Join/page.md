@@ -19,9 +19,7 @@ In this guide, you’ll learn how to deploy a three-node Vault High Availability
 | vault-2  | 10.1.101.108 |
 | vault-3  | 10.1.101.25  |
 
-<Callout icon="lightbulb">
-  Ensure all nodes can communicate over ports **8200** (API) and **8201** (Raft). Configure your security groups accordingly.
-</Callout>
+> **lightbulb** Ensure all nodes can communicate over ports **8200** (API) and **8201** (Raft). Configure your security groups accordingly.
 
 ***
 

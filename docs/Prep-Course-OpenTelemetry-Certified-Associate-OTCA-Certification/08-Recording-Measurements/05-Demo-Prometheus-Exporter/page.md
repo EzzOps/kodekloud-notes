@@ -83,9 +83,7 @@ if __name__ == "__main__":
 
 Tips and best practices
 
-<Callout icon="lightbulb">
-  Use attributes (labels) on metric recordings to slice metrics by endpoint, HTTP method, status code, or other dimensions. For production, add meaningful `Resource` attributes such as `service.name`, `service.version`, and environment tags.
-</Callout>
+> **lightbulb** Use attributes (labels) on metric recordings to slice metrics by endpoint, HTTP method, status code, or other dimensions. For production, add meaningful `Resource` attributes such as `service.name`, `service.version`, and environment tags.
 
 Running the app
 Start the application:
@@ -108,9 +106,7 @@ While the app runs, the `PeriodicExportingMetricReader` will invoke the `Console
 
 Warnings
 
-<Callout icon="warning">
-  ConsoleMetricExporter and Flask's built-in development server are intended for local development and testing only. For production, use a proper exporter (e.g., OTLP or Prometheus exporter) and a production WSGI server such as Gunicorn or uWSGI.
-</Callout>
+> **warning** ConsoleMetricExporter and Flask's built-in development server are intended for local development and testing only. For production, use a proper exporter (e.g., OTLP or Prometheus exporter) and a production WSGI server such as Gunicorn or uWSGI.
 
 Next steps
 
@@ -129,9 +125,7 @@ Links and references
 
 This guide gives you a minimal, reproducible path from a simple Flask app to basic OpenTelemetry metrics collection and local export. From here you can extend the instrumentation and switch exporters to match your observability stack.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/97b726bd-9938-4032-b79d-d3e25123d237" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/97b726bd-9938-4032-b79d-d3e25123d237)
 
 
 # Demo Prometheus Exporter
@@ -144,9 +138,7 @@ So far in this lesson we've used the console metric exporter for quick debugging
 
 Prometheus uses a pull model: your application runs a small HTTP endpoint (commonly `/metrics`) and Prometheus (or a collector) scrapes that endpoint via HTTP GET on a schedule.
 
-<Callout icon="lightbulb">
-  [Prometheus](https://prometheus.io/) scrapes metrics by pulling them from your application. To integrate with Prometheus you run a small HTTP server in your app that serves the `/metrics` endpoint (the [Prometheus client library](https://github.com/prometheus/client_python) provides this for you).
-</Callout>
+> **lightbulb** [Prometheus](https://prometheus.io/) scrapes metrics by pulling them from your application. To integrate with Prometheus you run a small HTTP server in your app that serves the `/metrics` endpoint (the [Prometheus client library](https://github.com/prometheus/client_python) provides this for you).
 
 This guide shows how to configure OpenTelemetry to expose metrics via the Prometheus exporter, create a few instruments, and hook everything into a Flask app.
 

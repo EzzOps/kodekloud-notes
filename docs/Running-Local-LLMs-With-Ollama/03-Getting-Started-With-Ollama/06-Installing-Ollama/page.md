@@ -16,15 +16,11 @@ Visit the [Ollama website][1] and choose your operating system. Below is a quick
 | Linux            | .tar.gz     | Download and extract                      |
 | Windows          | .exe        | Download and run installer                |
 
-<Frame>
-  ![The image shows a webpage from ollama.com, offering a download for running large language models like Llama 3.3 and Phi 4, with options for macOS, Linux, and Windows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883702/notes-assets/images/Running-Local-LLMs-With-Ollama-Installing-Ollama/ollama-download-large-language-models.jpg)
-</Frame>
+![The image shows a webpage from ollama.com, offering a download for running large language models like Llama 3.3 and Phi 4, with options for macOS, Linux, and Windows.](https://kodekloud.com/kk-media/image/upload/v1752883702/notes-assets/images/Running-Local-LLMs-With-Ollama-Installing-Ollama/ollama-download-large-language-models.jpg)
 
 Select the download button for your OS, then you’ll land on a page like this:
 
-<Frame>
-  ![The image shows a webpage for downloading "Ollama" with options for macOS, Linux, and Windows. It features a download button for macOS and a section to sign up for updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883703/notes-assets/images/Running-Local-LLMs-With-Ollama-Installing-Ollama/ollama-download-page-macos-linux-windows.jpg)
-</Frame>
+![The image shows a webpage for downloading "Ollama" with options for macOS, Linux, and Windows. It features a download button for macOS and a section to sign up for updates.](https://kodekloud.com/kk-media/image/upload/v1752883703/notes-assets/images/Running-Local-LLMs-With-Ollama-Installing-Ollama/ollama-download-page-macos-linux-windows.jpg)
 
 ## 2. Installing on macOS
 
@@ -35,13 +31,9 @@ Once the `.zip` file has finished downloading:
 3. When prompted, click **Open**.
 4. macOS will ask to move the app to **Applications**—confirm to complete the install.
 
-<Callout icon="lightbulb">
-  If you see a security prompt about an unidentified developer, go to **System Preferences > Security & Privacy** and allow the app to run.
-</Callout>
+> **lightbulb** If you see a security prompt about an unidentified developer, go to **System Preferences > Security & Privacy** and allow the app to run.
 
-<Frame>
-  ![The image shows a Mac Finder window with a "Downloads" folder open, containing a folder, a ZIP file, and an app named "Ollama." A security prompt is asking if the user wants to open the downloaded app.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883704/notes-assets/images/Running-Local-LLMs-With-Ollama-Installing-Ollama/mac-finder-downloads-folder-ollama.jpg)
-</Frame>
+![The image shows a Mac Finder window with a "Downloads" folder open, containing a folder, a ZIP file, and an app named "Ollama." A security prompt is asking if the user wants to open the downloaded app.](https://kodekloud.com/kk-media/image/upload/v1752883704/notes-assets/images/Running-Local-LLMs-With-Ollama-Installing-Ollama/mac-finder-downloads-folder-ollama.jpg)
 
 ## 3. Verifying the CLI
 
@@ -79,9 +71,7 @@ Flags:
 Use "ollama [command] --help" for more information about a command.
 ```
 
-<Callout icon="lightbulb">
-  If you don’t see the above output, ensure your PATH includes the Ollama binary or restart your terminal session.
-</Callout>
+> **lightbulb** If you don’t see the above output, ensure your PATH includes the Ollama binary or restart your terminal session.
 
 Congratulations! You now have Ollama installed and can run LLMs locally.
 
@@ -104,6 +94,4 @@ Explore the full set of commands with `ollama help` or check out the official do
 
 [2]: https://ollama.com/docs/installation
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/836a96fe-9951-42b6-83ba-a602299c87c9/lesson/473ec2e9-d32b-4d7c-8692-c68596c12730" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/836a96fe-9951-42b6-83ba-a602299c87c9/lesson/473ec2e9-d32b-4d7c-8692-c68596c12730)

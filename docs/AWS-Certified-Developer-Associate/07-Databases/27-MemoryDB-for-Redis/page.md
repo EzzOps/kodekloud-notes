@@ -17,7 +17,7 @@ Consider a ride-sharing or delivery application—comparable to Uber or DoorDash
 
 The system must handle thousands of requests per second with minimal latency, maintain 24/7 operations even during component failures, scale seamlessly as user demand grows, and ensure data consistency across the entire network.
 
-![The image is a slide titled "Amazon MemoryDB for Redis: Challenges," featuring a ride-sharing app icon and listing challenges such as speed, reliability, data durability, scalability, and consistency.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858826/notes-assets/images/AWS-Certified-Developer-Associate-MemoryDB-for-Redis/amazon-memorydb-redis-challenges.jpg)
+![The image is a slide titled "Amazon MemoryDB for Redis: Challenges," featuring a ride-sharing app icon and listing challenges such as speed, reliability, data durability, scalability, and consistency.](https://kodekloud.com/kk-media/image/upload/v1752858826/notes-assets/images/AWS-Certified-Developer-Associate-MemoryDB-for-Redis/amazon-memorydb-redis-challenges.jpg)
 
 ## How MemoryDB Addresses These Challenges
 
@@ -28,11 +28,11 @@ MemoryDB is an in-memory database that provides extremely low latency for read a
 * **Scalability:** MemoryDB dynamically scales in response to changing demand, making it perfect for peak traffic periods during holidays or special events.
 * **Strong Consistency:** It guarantees that all users access the most recent data, an essential capability for time-sensitive decision-making.
 
-![The image is a diagram titled "How MemoryDB Solves These Challenges," highlighting five features: Low Latency, High Availability, Data Durability, Scalability, and Strong Consistency.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858827/notes-assets/images/AWS-Certified-Developer-Associate-MemoryDB-for-Redis/memorydb-features-diagram.jpg)
+![The image is a diagram titled "How MemoryDB Solves These Challenges," highlighting five features: Low Latency, High Availability, Data Durability, Scalability, and Strong Consistency.](https://kodekloud.com/kk-media/image/upload/v1752858827/notes-assets/images/AWS-Certified-Developer-Associate-MemoryDB-for-Redis/memorydb-features-diagram.jpg)
 
 MemoryDB is fully compatible with Redis, allowing developers to use existing Redis applications and tools with minimal modifications. It provides enhanced durability and high availability features during failovers while delivering exceptional read and write performance.
 
-![The image is a diagram illustrating Amazon MemoryDB for Redis, showing a web app connecting to an in-memory database with multi-AZ transactional logging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858828/notes-assets/images/AWS-Certified-Developer-Associate-MemoryDB-for-Redis/amazon-memorydb-redis-diagram.jpg)
+![The image is a diagram illustrating Amazon MemoryDB for Redis, showing a web app connecting to an in-memory database with multi-AZ transactional logging.](https://kodekloud.com/kk-media/image/upload/v1752858828/notes-assets/images/AWS-Certified-Developer-Associate-MemoryDB-for-Redis/amazon-memorydb-redis-diagram.jpg)
 
 ## Fully Managed Service
 
@@ -44,7 +44,7 @@ MemoryDB is offered as a fully managed service by AWS. AWS handles all the heavy
 * **Dynamic Scaling:** Adjust your database, compute, and memory resources without experiencing downtime.
 * **Cost-Effectiveness:** Reduces the need for separate caching layers, lowering management and operational expenses.
 
-![The image lists five features: Fully Managed Service, Redis Compatibility, Built-in Replication and Auto-Failover, Scalability, and Cost-Effectiveness. Each feature is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858829/notes-assets/images/AWS-Certified-Developer-Associate-MemoryDB-for-Redis/managed-service-redis-features.jpg)
+![The image lists five features: Fully Managed Service, Redis Compatibility, Built-in Replication and Auto-Failover, Scalability, and Cost-Effectiveness. Each feature is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752858829/notes-assets/images/AWS-Certified-Developer-Associate-MemoryDB-for-Redis/managed-service-redis-features.jpg)
 
 ## Architecture Overview
 
@@ -54,15 +54,15 @@ MemoryDB's architecture is designed around a primary instance with secondary rep
 2. **On-Disk Storage and Replication:** After writing to the primary, an on-disk storage mechanism saves the data, while a distributed transaction log ensures durability and manages replication.
 3. **Transaction Log:** Each write operation is recorded in a transaction log stored across multiple AZs before being made available to clients. This log enables replicas to asynchronously update, offering an eventually consistent system.
 
-![The image illustrates the architecture of Amazon MemoryDB for Redis, showing a primary node and two secondary replicas across different availability zones, with sync and async writes and a transaction log.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858831/notes-assets/images/AWS-Certified-Developer-Associate-MemoryDB-for-Redis/amazon-memorydb-architecture-diagram.jpg)
+![The image illustrates the architecture of Amazon MemoryDB for Redis, showing a primary node and two secondary replicas across different availability zones, with sync and async writes and a transaction log.](https://kodekloud.com/kk-media/image/upload/v1752858831/notes-assets/images/AWS-Certified-Developer-Associate-MemoryDB-for-Redis/amazon-memorydb-architecture-diagram.jpg)
 
 When data is written to the primary instance, the update is asynchronously propagated to the replica nodes.
 
-![The image illustrates the workflow of Amazon MemoryDB for Redis, showing how a client writes to a primary database, which then asynchronously writes to replica databases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858832/notes-assets/images/AWS-Certified-Developer-Associate-MemoryDB-for-Redis/amazon-memorydb-redis-workflow.jpg)
+![The image illustrates the workflow of Amazon MemoryDB for Redis, showing how a client writes to a primary database, which then asynchronously writes to replica databases.](https://kodekloud.com/kk-media/image/upload/v1752858832/notes-assets/images/AWS-Certified-Developer-Associate-MemoryDB-for-Redis/amazon-memorydb-redis-workflow.jpg)
 
 Furthermore, MemoryDB partitions the dataset into shards. Each shard comprises a primary node (handling read and write operations) and one or more replicas (serving read requests). If a primary node fails, a replica is promoted to primary. The distributed transaction log also supports point-in-time snapshots, which can be scheduled or triggered on demand. These snapshots help restore the cluster to a previous state or create a new one.
 
-![The image illustrates data partitioning in Amazon MemoryDB for Redis, showing two shards, each with a primary node and multiple replica nodes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858833/notes-assets/images/AWS-Certified-Developer-Associate-MemoryDB-for-Redis/amazon-memorydb-data-partitioning.jpg)
+![The image illustrates data partitioning in Amazon MemoryDB for Redis, showing two shards, each with a primary node and multiple replica nodes.](https://kodekloud.com/kk-media/image/upload/v1752858833/notes-assets/images/AWS-Certified-Developer-Associate-MemoryDB-for-Redis/amazon-memorydb-data-partitioning.jpg)
 
 ## Comparing MemoryDB with ElastiCache
 
@@ -76,7 +76,7 @@ Both MemoryDB and ElastiCache are in-memory caching services, but they serve dif
 | Use Cases       | Scenarios where data persistence is critical | Scenarios focused on enhancing performance  |
 | Pricing         | Generally higher due to robust features      | More cost-effective with a focus on caching |
 
-![The image is a comparison chart between Amazon MemoryDB for Redis and ElastiCache, highlighting features such as purpose, data durability, data replication, use case, and pricing. MemoryDB is designed for high availability and durability, while ElastiCache is primarily for in-memory caching and performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858834/notes-assets/images/AWS-Certified-Developer-Associate-MemoryDB-for-Redis/memorydb-vs-elasticache-chart.jpg)
+![The image is a comparison chart between Amazon MemoryDB for Redis and ElastiCache, highlighting features such as purpose, data durability, data replication, use case, and pricing. MemoryDB is designed for high availability and durability, while ElastiCache is primarily for in-memory caching and performance.](https://kodekloud.com/kk-media/image/upload/v1752858834/notes-assets/images/AWS-Certified-Developer-Associate-MemoryDB-for-Redis/memorydb-vs-elasticache-chart.jpg)
 
 > **lightbulb** MemoryDB not only enhances data durability and availability but also integrates seamlessly with your existing Redis applications, making it an attractive option for mission-critical applications.
 

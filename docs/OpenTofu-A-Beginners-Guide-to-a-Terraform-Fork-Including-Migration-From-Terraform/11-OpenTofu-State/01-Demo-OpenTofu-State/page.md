@@ -10,33 +10,23 @@ Welcome to this lesson on OpenTofu state management. In this guide, we’ll cove
 
 After you provision resources with OpenTofu, the state file is created in your current working directory by default.
 
-<Frame>
-  ![The image shows a KodeKloud OpenTofu Lab interface with a task question on the left and a Visual Studio Code editor on the right, displaying a welcome message and terminal.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882885/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-OpenTofu-State/kodekloud-opentofu-lab-vscode-editor.jpg)
-</Frame>
+![The image shows a KodeKloud OpenTofu Lab interface with a task question on the left and a Visual Studio Code editor on the right, displaying a welcome message and terminal.](https://kodekloud.com/kk-media/image/upload/v1752882885/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-OpenTofu-State/kodekloud-opentofu-lab-vscode-editor.jpg)
 
 ## Disabling State
 
 OpenTofu always relies on a state file to track existing resources. There is no option to disable this behavior.
 
-<Callout icon="triangle-alert">
-  OpenTofu **always** maintains a local state file (`terraform.tfstate`). You cannot disable state management.
-</Callout>
+> **triangle-alert** OpenTofu **always** maintains a local state file (`terraform.tfstate`). You cannot disable state management.
 
-<Frame>
-  ![The image shows a Visual Studio Code editor with a welcome message for KodeKloud OpenTofu Lab on the right, and a task question about disabling state on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882886/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-OpenTofu-State/vscode-kodekloud-opentofu-lab-task.jpg)
-</Frame>
+![The image shows a Visual Studio Code editor with a welcome message for KodeKloud OpenTofu Lab on the right, and a task question about disabling state on the left.](https://kodekloud.com/kk-media/image/upload/v1752882886/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-OpenTofu-State/vscode-kodekloud-opentofu-lab-task.jpg)
 
 ## State File Format
 
 Open the `terraform.tfstate` file and you’ll see it’s formatted in JSON.
 
-<Callout icon="lightbulb">
-  The JSON format makes it easy to parse the state file with tools like `jq` or programmatic scripts.
-</Callout>
+> **lightbulb** The JSON format makes it easy to parse the state file with tools like `jq` or programmatic scripts.
 
-<Frame>
-  ![The image shows a Visual Studio Code editor with a welcome message for the KodeKloud OpenTofu Lab on the right, and a multiple-choice question about file formats on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882888/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-OpenTofu-State/vscode-kodekloud-opentofu-lab-question.jpg)
-</Frame>
+![The image shows a Visual Studio Code editor with a welcome message for the KodeKloud OpenTofu Lab on the right, and a multiple-choice question about file formats on the left.](https://kodekloud.com/kk-media/image/upload/v1752882888/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-OpenTofu-State/vscode-kodekloud-opentofu-lab-question.jpg)
 
 ## Commands and State Refresh
 
@@ -48,9 +38,7 @@ Some OpenTofu commands automatically refresh the state to match real-world resou
 | `opentofu apply` | Yes              | Applies changes and refreshes state   |
 | `opentofu init`  | No               | Initializes the working directory     |
 
-<Frame>
-  ![The image shows a Visual Studio Code editor with a welcome message for KodeKloud OpenTofu Lab on the right, and a multiple-choice question about command usage on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882889/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-OpenTofu-State/vscode-kodekloud-opentofu-lab-question-2.jpg)
-</Frame>
+![The image shows a Visual Studio Code editor with a welcome message for KodeKloud OpenTofu Lab on the right, and a multiple-choice question about command usage on the left.](https://kodekloud.com/kk-media/image/upload/v1752882889/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-OpenTofu-State/vscode-kodekloud-opentofu-lab-question-2.jpg)
 
 ## Default State File Name
 
@@ -60,9 +48,7 @@ By default, the state file created is:
 terraform.tfstate
 ```
 
-<Frame>
-  ![The image shows a Visual Studio Code interface with a welcome message for KodeKloud OpenTofu Lab on the right and a multiple-choice question about a Terraform state file on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882890/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-OpenTofu-State/vscode-kodekloud-opentofu-lab-question-3.jpg)
-</Frame>
+![The image shows a Visual Studio Code interface with a welcome message for KodeKloud OpenTofu Lab on the right and a multiple-choice question about a Terraform state file on the left.](https://kodekloud.com/kk-media/image/upload/v1752882890/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-OpenTofu-State/vscode-kodekloud-opentofu-lab-question-3.jpg)
 
 ***
 

@@ -41,15 +41,13 @@ boot.log           gdm               spooler
 
 Most files in `/var/log` are only readable by root:
 
-<Callout icon="lightbulb">
-  Use `sudo` or `su` to become root before inspecting logs:
+> **lightbulb** Use `sudo` or `su` to become root before inspecting logs:
 
   ```bash theme={null}
   sudo --login
   # or
   su -
   ```
-</Callout>
 
 ## Finding SSH Logs
 
@@ -107,15 +105,13 @@ journalctl -u sshd.service
 | `journalctl -e` | Jump to end of logs            |
 | `journalctl -f` | Follow new entries (like tail) |
 
-<Callout icon="triangle-alert">
-  By default, systemd Journal logs are stored in memory and cleared on reboot.\
+> **triangle-alert** By default, systemd Journal logs are stored in memory and cleared on reboot.\
   To enable persistent storage:
 
   ```bash theme={null}
   sudo mkdir -p /var/log/journal
   sudo systemctl restart systemd-journald
   ```
-</Callout>
 
 ## Filtering Journal Entries
 
@@ -168,8 +164,6 @@ lastlog
 * [rsyslog official site](https://www.rsyslog.com/)
 * [Linux Logging Basics](https://linux.die.net/man/5/rsyslog.conf)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/1d65c3eb-1f7a-40a8-b1a1-21c9e38042fa" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/1d65c3eb-1f7a-40a8-b1a1-21c9e38042fa)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/086d6c27-8499-44b4-bd8d-d37164128586" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/086d6c27-8499-44b4-bd8d-d37164128586)

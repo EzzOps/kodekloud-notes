@@ -157,9 +157,7 @@ An intuitive metaphor: imagine a bag with 10 marbles, 7 green (success) and 3 re
 
 These simple distributions are fundamental building blocks for probabilistic modeling and many AI techniques. They help convert single-event probabilities into actionable expectations over time.
 
-<Callout icon="lightbulb">
-  Expected value describes the long-term average, not the guaranteed outcome of a single trial. Use the binomial distribution to quantify the probability of specific counts around that mean.
-</Callout>
+> **lightbulb** Expected value describes the long-term average, not the guaranteed outcome of a single trial. Use the binomial distribution to quantify the probability of specific counts around that mean.
 
 ## References and further reading
 
@@ -167,6 +165,4 @@ These simple distributions are fundamental building blocks for probabilistic mod
 * [Binomial distribution — Wikipedia](https://en.wikipedia.org/wiki/Binomial_distribution)
 * For practical implementations and probability tools, see the Python `math.comb` documentation and scientific libraries like NumPy and SciPy.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/7badce97-9acb-48b8-9fb6-bd5ce7e09045/lesson/70c89dde-588d-49b9-9813-34ed74e2b3c2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/7badce97-9acb-48b8-9fb6-bd5ce7e09045/lesson/70c89dde-588d-49b9-9813-34ed74e2b3c2)

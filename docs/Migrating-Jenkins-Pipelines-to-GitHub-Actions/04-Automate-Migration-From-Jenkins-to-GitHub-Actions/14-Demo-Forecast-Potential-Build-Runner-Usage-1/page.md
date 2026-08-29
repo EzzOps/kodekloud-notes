@@ -48,9 +48,7 @@ gh actions-importer dry-run jenkins \
   --custom-transformers helper-transformer.rb
 ```
 
-<Callout icon="lightbulb">
-  Use `dry-run` to validate your transformer output before running a full migration. This prevents creating PRs with incorrect workflows.
-</Callout>
+> **lightbulb** Use `dry-run` to validate your transformer output before running a full migration. This prevents creating PRs with incorrect workflows.
 
 ## Step 1 — Helper transformer to inspect `sleep` items
 
@@ -179,9 +177,7 @@ If the migration succeeds, the importer creates a pull request in the target rep
 | Test with `dry-run`         | Validate output before making changes to a repo          | `gh actions-importer dry-run jenkins --custom-transformers sleep-transformer.rb` |
 | Migrate to create PR        | Apply transformer during migration to produce a PR       | `gh actions-importer migrate jenkins --custom-transformers sleep-transformer.rb` |
 
-<Callout icon="warning">
-  Ensure you access literal values correctly (e.g., `item["arguments"][0]["value"]["value"]`). Returning an incorrect structure can cause the importer to leave the item untransformed.
-</Callout>
+> **warning** Ensure you access literal values correctly (e.g., `item["arguments"][0]["value"]["value"]`). Returning an incorrect structure can cause the importer to leave the item untransformed.
 
 ## Final example transformer (recap)
 
@@ -204,9 +200,7 @@ With this pattern you can implement custom transformers for other Jenkins identi
 * [Jenkins Pipeline Syntax](https://www.jenkins.io/doc/book/pipeline/syntax/)
 * gh CLI: `gh actions-importer` commands (use `--help` for details)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/3978d097-99be-41b1-b148-e980d15ce31d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/3978d097-99be-41b1-b148-e980d15ce31d)
 
 
 # Demo Forecast Potential Build Runner Usage 1
@@ -225,9 +219,7 @@ Example command:
 gh actions-importer forecast jenkins --output-dir tmp/forecast
 ```
 
-<Callout icon="lightbulb">
-  Install the Jenkins "Paginated Builds" plugin on the target Jenkins server before running `gh actions-importer forecast jenkins`. For Jenkins instances with a lot of historical builds, paginated access prevents request timeouts and ensures the importer can retrieve the full run history.
-</Callout>
+> **lightbulb** Install the Jenkins "Paginated Builds" plugin on the target Jenkins server before running `gh actions-importer forecast jenkins`. For Jenkins instances with a lot of historical builds, paginated access prevents request timeouts and ensures the importer can retrieve the full run history.
 
 ## What the forecast command does
 

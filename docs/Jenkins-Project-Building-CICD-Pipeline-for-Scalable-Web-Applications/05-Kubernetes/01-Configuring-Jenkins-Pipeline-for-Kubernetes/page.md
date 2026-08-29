@@ -16,9 +16,7 @@ In this tutorial, we demonstrate how to set up a robust CI/CD pipeline using Jen
 
 For performance testing in the staging environment, we use the K6 tool to simulate traffic and record metrics. If the performance metrics meet the predefined criteria, the image is promoted to production.
 
-<Callout icon="lightbulb">
-  Jenkins requires access to a valid kubectl configuration file (kubeconfig) to authenticate and communicate with Kubernetes clusters. Ensure you have set up the necessary credentials in Jenkins.
-</Callout>
+> **lightbulb** Jenkins requires access to a valid kubectl configuration file (kubeconfig) to authenticate and communicate with Kubernetes clusters. Ensure you have set up the necessary credentials in Jenkins.
 
 ## Jenkins Credentials
 
@@ -31,9 +29,7 @@ Within Jenkins, you need to create two sets of credentials for smooth operation:
 
 The diagram below illustrates the complete pipeline flow, from code checkout through testing and image deployment, highlighting the essential role of the kubeconfig file for accessing Kubernetes clusters.
 
-<Frame>
-  ![The image depicts a pipeline configuration flowchart with steps including code checkout, testing, image building, pushing, deploying to staging, acceptance testing, and deploying to production. It also notes the need for a kubeconfig file to access a Kubernetes cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879923/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Jenkins-Pipeline-for-Kubernetes/pipeline-configuration-flowchart-kubernetes.jpg)
-</Frame>
+![The image depicts a pipeline configuration flowchart with steps including code checkout, testing, image building, pushing, deploying to staging, acceptance testing, and deploying to production. It also notes the need for a kubeconfig file to access a Kubernetes cluster.](https://kodekloud.com/kk-media/image/upload/v1752879923/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Jenkins-Pipeline-for-Kubernetes/pipeline-configuration-flowchart-kubernetes.jpg)
 
 ## Environment Variables in the Pipeline
 
@@ -126,12 +122,8 @@ stage('Deploy to Prod') {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Make sure that all credentials for Docker Hub and Kubernetes are correctly configured in Jenkins to prevent deployment failures.
-</Callout>
+> **triangle-alert** Make sure that all credentials for Docker Hub and Kubernetes are correctly configured in Jenkins to prevent deployment failures.
 
 This concludes the configuration of the Jenkins pipeline for deploying to Kubernetes clusters. Follow these steps carefully to ensure your deployments are automated efficiently and securely. For more detailed documentation, consider exploring [Kubernetes Documentation](https://kubernetes.io/docs/) and [Docker Hub](https://hub.docker.com/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/1d8036bf-2606-4587-beef-925546e0c655/lesson/6bb74881-bd17-4112-abd1-c81451bbdcba" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/1d8036bf-2606-4587-beef-925546e0c655/lesson/6bb74881-bd17-4112-abd1-c81451bbdcba)

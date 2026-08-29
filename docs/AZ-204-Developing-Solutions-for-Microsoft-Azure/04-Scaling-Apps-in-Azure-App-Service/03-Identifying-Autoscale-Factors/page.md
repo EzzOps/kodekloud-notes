@@ -10,7 +10,7 @@ In this lesson, we explore the essential factors that drive auto-scaling decisio
 
 The primary consideration in auto-scaling is performance metrics. Azure App Service monitors crucial metrics such as CPU usage, memory consumption, and disk queue length. For instance, you may set up a rule to automatically add more instances when CPU usage consistently exceeds 75%.
 
-![The image illustrates factors for identifying autoscale metrics, focusing on CPU usage, memory consumption, and length. It features an icon representing CPU scaling.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866756/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Identifying-Autoscale-Factors/autoscale-metrics-cpu-memory-diagram.jpg)
+![The image illustrates factors for identifying autoscale metrics, focusing on CPU usage, memory consumption, and length. It features an icon representing CPU scaling.](https://kodekloud.com/kk-media/image/upload/v1752866756/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Identifying-Autoscale-Factors/autoscale-metrics-cpu-memory-diagram.jpg)
 
 By dynamically adjusting resources based on real-time metrics, your application can swiftly accommodate increased demand without sacrificing performance.
 
@@ -20,7 +20,7 @@ Similarly, when the demand decreases—say, when CPU usage falls below 25%—ano
 
 In addition to metrics-based rules, schedule-based scaling is a strategic method when you know in advance when peak traffic is likely. For example, if your e-commerce website experiences higher traffic on weekends, you can configure auto-scaling to preemptively add resources before the surge.
 
-![The image illustrates autoscale factors, focusing on scaling based on a schedule, with a graph highlighting peak hours across the week.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866757/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Identifying-Autoscale-Factors/autoscale-schedule-graph-illustration.jpg)
+![The image illustrates autoscale factors, focusing on scaling based on a schedule, with a graph highlighting peak hours across the week.](https://kodekloud.com/kk-media/image/upload/v1752866757/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Identifying-Autoscale-Factors/autoscale-schedule-graph-illustration.jpg)
 
 A typical configuration might scale out instances on Friday evening and scale them back in on Sunday night. This proactive approach reduces the reliance on reactive, metrics-only triggers and ensures that your application remains responsive during peak periods.
 
@@ -30,7 +30,7 @@ A typical configuration might scale out instances on Friday evening and scale th
 
 A robust auto-scaling strategy often involves layering multiple rules. By integrating both performance metrics and scheduling, you can handle complex scaling needs. For example, you might apply CPU usage rules during off-peak hours and switch to schedule-based triggers during known high-traffic periods.
 
-![The image illustrates the concept of identifying autoscale factors, showing a graph with peak and off-peak hours, and a note about creating multiple conditions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866758/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Identifying-Autoscale-Factors/autoscale-factors-graph-conditions.jpg)
+![The image illustrates the concept of identifying autoscale factors, showing a graph with peak and off-peak hours, and a note about creating multiple conditions.](https://kodekloud.com/kk-media/image/upload/v1752866758/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Identifying-Autoscale-Factors/autoscale-factors-graph-conditions.jpg)
 
 This layered strategy ensures that your application consistently remains responsive while optimizing resource usage.
 
@@ -48,7 +48,7 @@ Azure App Service provides an extensive range of metrics that support effective 
 
 These metrics enable you to fine-tune your auto-scaling configuration, ensuring that your service adjusts dynamically to real-world usage patterns.
 
-![The image displays a list of autoscale metrics, including CPU percentage, memory percentage, disk queue length, HTTP queue length, and data transfer metrics. Each metric is represented with an icon and a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866759/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Identifying-Autoscale-Factors/autoscale-metrics-list-icons.jpg)
+![The image displays a list of autoscale metrics, including CPU percentage, memory percentage, disk queue length, HTTP queue length, and data transfer metrics. Each metric is represented with an icon and a brief description.](https://kodekloud.com/kk-media/image/upload/v1752866759/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Identifying-Autoscale-Factors/autoscale-metrics-list-icons.jpg)
 
 ## Next Steps: Configuring Auto-Scaling in Azure App Service
 

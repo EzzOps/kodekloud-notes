@@ -61,14 +61,10 @@ spec:
 
 To test how the system handles delayed responses, you can simulate a fault. For instance, introduce a fixed delay of five seconds for 50% of the traffic directed to the details service. This fault injection approach helps in validating the resilience of the system by forcing the product page service's three-second timeout to trigger.
 
-<Callout icon="lightbulb">
-  Fault injection is a valuable technique for examining the robustness of microservices architectures. It enables you to proactively identify weak points in your system’s failure handling mechanisms.
-</Callout>
+> **lightbulb** Fault injection is a valuable technique for examining the robustness of microservices architectures. It enables you to proactively identify weak points in your system’s failure handling mechanisms.
 
 By configuring timeouts and simulating delays through fault injection, you can ensure that your microservices architecture remains agile and responsive even when individual components face issues.
 
 This concludes our discussion on timeouts and their application in resilient microservices architectures. Observe the configuration in action to verify that the product page service correctly rejects requests exceeding the three-second threshold.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/df62dbb8-cec5-45ef-8461-1f4db8c2f9b7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/df62dbb8-cec5-45ef-8461-1f4db8c2f9b7)

@@ -6,9 +6,7 @@ Explains Backstage templates and how they automate project scaffolding, enforcin
 
 In this lesson we’ll explain what templates are in Backstage, why they exist, and how they streamline project creation. Backstage templates automate the repetitive steps teams complete when starting a new project—reducing errors, enforcing standards, and accelerating delivery.
 
-<Callout icon="lightbulb">
-  Templates provide an automated, repeatable scaffold for new projects. They combine repository creation, recommended code and configuration, CI/CD setup, and infrastructure provisioning into a single workflow.
-</Callout>
+> **lightbulb** Templates provide an automated, repeatable scaffold for new projects. They combine repository creation, recommended code and configuration, CI/CD setup, and infrastructure provisioning into a single workflow.
 
 Why templates matter: teams routinely repeat the same manual tasks for every new repo:
 
@@ -105,9 +103,7 @@ Best practices and considerations
 * Version and test templates: treat templates as code, run CI on template changes, and version them to support existing projects.
 * Review permissions and secrets: templates that auto-configure access or create secrets should be audited and follow least-privilege principles.
 
-<Callout icon="warning">
-  Ensure templates do not grant excessive permissions or expose secrets unintentionally. Always review and audit templates that automate access control or infrastructure provisioning.
-</Callout>
+> **warning** Ensure templates do not grant excessive permissions or expose secrets unintentionally. Always review and audit templates that automate access control or infrastructure provisioning.
 
 Further reading and references
 
@@ -118,6 +114,4 @@ Further reading and references
 
 Use templates to standardize onboarding, reduce manual toil, and get teams coding faster—Backstage templates turn multi-step setup into a single reproducible workflow.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/1c7142e3-0cb6-40ae-b5b6-77252f8c85b2/lesson/2f09ae29-542c-45ce-aded-2fe1388b1cf2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/1c7142e3-0cb6-40ae-b5b6-77252f8c85b2/lesson/2f09ae29-542c-45ce-aded-2fe1388b1cf2)

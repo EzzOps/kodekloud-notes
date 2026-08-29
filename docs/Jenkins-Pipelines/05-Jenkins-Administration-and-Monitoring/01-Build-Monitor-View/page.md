@@ -16,15 +16,11 @@ Follow these steps to set up a new view:
 2. Enter a unique view name (for example, "Build Monitor View" or "Dashboard CI Build Monitor View").
 3. Select the appropriate view type and click "Create."
 
-<Frame>
-  ![The image shows a Jenkins interface where a new view is being created, named "Dasher CI Build Monitor View," with options for different view types like Build Monitor View, Dashboard, and List View.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879653/notes-assets/images/Jenkins-Pipelines-Build-Monitor-View/jenkins-dasher-ci-build-monitor-view.jpg)
-</Frame>
+![The image shows a Jenkins interface where a new view is being created, named "Dasher CI Build Monitor View," with options for different view types like Build Monitor View, Dashboard, and List View.](https://kodekloud.com/kk-media/image/upload/v1752879653/notes-assets/images/Jenkins-Pipelines-Build-Monitor-View/jenkins-dasher-ci-build-monitor-view.jpg)
 
 Next, provide a description and define filters. You can choose to display all jobs or use a regex pattern to dynamically monitor a specific subset of jobs.
 
-<Frame>
-  ![The image shows a Jenkins configuration page for editing a view named "Dasher CI Build Monitor View," with options for filtering build queues and executors. The interface includes navigation options on the left and buttons for applying changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879655/notes-assets/images/Jenkins-Pipelines-Build-Monitor-View/jenkins-dasher-ci-build-monitor.jpg)
-</Frame>
+![The image shows a Jenkins configuration page for editing a view named "Dasher CI Build Monitor View," with options for filtering build queues and executors. The interface includes navigation options on the left and buttons for applying changes.](https://kodekloud.com/kk-media/image/upload/v1752879655/notes-assets/images/Jenkins-Pipelines-Build-Monitor-View/jenkins-dasher-ci-build-monitor.jpg)
 
 After configuring the filter options, click "Apply" to save your settings. The view will now showcase your selected jobs. You can adjust the display settings directly through the user interface—for example:
 
@@ -37,9 +33,7 @@ After configuring the filter options, click "Apply" to save your settings. The v
 
 Additionally, when a job is running, the view integrates with the Pipeline plugin to display the current stage name and the elapsed time (for example, during a sleep stage).
 
-<Frame>
-  ![The image shows a dashboard from a CI build monitor with various job statuses, including successful (green), failed (red), and pending (gray) builds. Each tile displays the job name, status, and time since the last update.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879656/notes-assets/images/Jenkins-Pipelines-Build-Monitor-View/ci-build-monitor-dashboard-statuses.jpg)
-</Frame>
+![The image shows a dashboard from a CI build monitor with various job statuses, including successful (green), failed (red), and pending (gray) builds. Each tile displays the job name, status, and time since the last update.](https://kodekloud.com/kk-media/image/upload/v1752879656/notes-assets/images/Jenkins-Pipelines-Build-Monitor-View/ci-build-monitor-dashboard-statuses.jpg)
 
 Green tiles indicate successful builds, while red signifies failures.
 
@@ -114,16 +108,10 @@ Hello World
 
 After approximately 60 seconds, when the pipeline completes, the monitor view updates the job status to green. The view also provides additional details such as the build cause (e.g., "Started by user siddharth") and branch information.
 
-<Frame>
-  ![The image shows a dashboard from a CI build monitor with various job statuses, including successful, failed, and pending builds, indicated by different colors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879657/notes-assets/images/Jenkins-Pipelines-Build-Monitor-View/ci-build-monitor-dashboard-statuses-2.jpg)
-</Frame>
+![The image shows a dashboard from a CI build monitor with various job statuses, including successful, failed, and pending builds, indicated by different colors.](https://kodekloud.com/kk-media/image/upload/v1752879657/notes-assets/images/Jenkins-Pipelines-Build-Monitor-View/ci-build-monitor-dashboard-statuses-2.jpg)
 
-<Callout icon="lightbulb">
-  This plugin streamlines monitoring by aggregating the status and details of multiple Jenkins jobs on a single screen.
-</Callout>
+> **lightbulb** This plugin streamlines monitoring by aggregating the status and details of multiple Jenkins jobs on a single screen.
 
 Thank you for reading this article. For further information, refer to the [Jenkins Documentation](https://www.jenkins.io/doc/) for more details on advanced configurations and usage scenarios.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/f046d5d1-6fa6-4156-b38d-202ed885b64d/lesson/140bcf7a-a393-4920-aa16-f23217e4ac36" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/f046d5d1-6fa6-4156-b38d-202ed885b64d/lesson/140bcf7a-a393-4920-aa16-f23217e4ac36)

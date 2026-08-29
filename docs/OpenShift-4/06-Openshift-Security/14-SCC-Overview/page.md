@@ -8,21 +8,15 @@ Security in the Kubernetes ecosystem is often overlooked, even though it plays a
 
 A recent Red Hat State of Kubernetes and Container Security report revealed that nearly 70% of security issues are caused by misconfigurations, while 27% stem from runtime security incidents. These alarming statistics highlight the critical need to address security challenges effectively.
 
-<Frame>
-  ![The image is a webpage excerpt titled "How to handle Kubernetes security," discussing the importance of addressing security vulnerabilities, misconfigurations, and runtime threats in Kubernetes. It cites a report indicating that 24% of serious container security issues are vulnerabilities, 70% are misconfigurations, and 27% are runtime incidents.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882744/notes-assets/images/OpenShift-4-SCC-Overview/kubernetes-security-handling-guide.jpg)
-</Frame>
+![The image is a webpage excerpt titled "How to handle Kubernetes security," discussing the importance of addressing security vulnerabilities, misconfigurations, and runtime threats in Kubernetes. It cites a report indicating that 24% of serious container security issues are vulnerabilities, 70% are misconfigurations, and 27% are runtime incidents.](https://kodekloud.com/kk-media/image/upload/v1752882744/notes-assets/images/OpenShift-4-SCC-Overview/kubernetes-security-handling-guide.jpg)
 
 ## What are Security Context Constraints (SCC)?
 
 Security Context Constraints (SCC) provide a robust mechanism for controlling pod permissions. Think of SCC as the access control system for pods—it defines what a pod is allowed to do, which resources it can access, and its overall security credentials. While Role-Based Access Control (RBAC) manages user permissions, SCC focuses on system-level security, including integrations with third-party applications. Moreover, SCC leverages native Linux capabilities, such as SELinux, enabling you to apply familiar policies directly to your pods.
 
-<Frame>
-  ![The image features the text "Security Context Constraints" with a penguin wearing sunglasses and a safe dial on its belly, alongside the text "Use Linux Natives ... SELinux" and two red downward arrows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882746/notes-assets/images/OpenShift-4-SCC-Overview/security-context-constraints-penguin.jpg)
-</Frame>
+![The image features the text "Security Context Constraints" with a penguin wearing sunglasses and a safe dial on its belly, alongside the text "Use Linux Natives ... SELinux" and two red downward arrows.](https://kodekloud.com/kk-media/image/upload/v1752882746/notes-assets/images/OpenShift-4-SCC-Overview/security-context-constraints-penguin.jpg)
 
-<Callout icon="lightbulb">
-  SCC not only enhances security by limiting pod actions but also complements other controls like RBAC and network policies, creating a layered defense strategy.
-</Callout>
+> **lightbulb** SCC not only enhances security by limiting pod actions but also complements other controls like RBAC and network policies, creating a layered defense strategy.
 
 ## SCC vs. Network Policy
 
@@ -32,9 +26,7 @@ Both SCC and network policies are vital for Kubernetes security, yet they focus 
 
 * **Security Context Constraints (SCC)**: These govern privileges and access control from an application and system perspective. SCC ensures that a pod operates within defined restrictions regarding system-level permissions and resources.
 
-<Frame>
-  ![The image compares "Network Policy" and "SCC" (Security Context Constraints) in terms of allowing or restricting access, focusing on networking and application perspectives respectively.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882747/notes-assets/images/OpenShift-4-SCC-Overview/network-policy-scc-comparison.jpg)
-</Frame>
+![The image compares "Network Policy" and "SCC" (Security Context Constraints) in terms of allowing or restricting access, focusing on networking and application perspectives respectively.](https://kodekloud.com/kk-media/image/upload/v1752882747/notes-assets/images/OpenShift-4-SCC-Overview/network-policy-scc-comparison.jpg)
 
 Both tools work in tandem to enforce robust security policies, ensuring that pods adhere to their minimum required permissions.
 
@@ -42,17 +34,13 @@ Both tools work in tandem to enforce robust security policies, ensuring that pod
 
 Although SCC is integrated into the Kubernetes system, there are similar tools such as Open Policy Agent (OPA) that extend security capabilities. OPA allows for advanced policy enforcement, but SCC serves as a strong first layer of defense, establishing fundamental access controls and aiding in early identification of security vulnerabilities.
 
-<Frame>
-  ![The image shows a search bar with the query "what about Open Policy Agent?" and buttons labeled "OPA" and "SCC" below it, along with an icon of a box.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882748/notes-assets/images/OpenShift-4-SCC-Overview/search-bar-open-policy-agent.jpg)
-</Frame>
+![The image shows a search bar with the query "what about Open Policy Agent?" and buttons labeled "OPA" and "SCC" below it, along with an icon of a box.](https://kodekloud.com/kk-media/image/upload/v1752882748/notes-assets/images/OpenShift-4-SCC-Overview/search-bar-open-policy-agent.jpg)
 
 ## Leveraging Linux Native Security Features
 
 One practical approach to enhancing security is by using Linux native features such as AppArmor—a security module within the Linux kernel. AppArmor helps in restricting container access to resources by controlling file permissions and network access for specific applications. Note that AppArmor is specific to Linux environments, and its implementation may vary on Windows worker nodes.
 
-<Frame>
-  ![The image is a webpage from the Kubernetes documentation discussing how to restrict a container's access to resources using AppArmor. It includes an overview of AppArmor's functionality and its role in enhancing security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882749/notes-assets/images/OpenShift-4-SCC-Overview/kubernetes-apparmor-resource-restriction.jpg)
-</Frame>
+![The image is a webpage from the Kubernetes documentation discussing how to restrict a container's access to resources using AppArmor. It includes an overview of AppArmor's functionality and its role in enhancing security.](https://kodekloud.com/kk-media/image/upload/v1752882749/notes-assets/images/OpenShift-4-SCC-Overview/kubernetes-apparmor-resource-restriction.jpg)
 
 ## Practical Examples of Security Context in Kubernetes
 
@@ -150,6 +138,4 @@ By combining SCC with network policies and native Linux security features, you c
 
 For further reading, visit [Kubernetes Documentation](https://kubernetes.io/docs/) or explore more about [Linux Security Modules](https://wiki.ubuntu.com/AppArmor).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/b9527348-27a8-4159-a5f5-64942dec28aa" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/b9527348-27a8-4159-a5f5-64942dec28aa)

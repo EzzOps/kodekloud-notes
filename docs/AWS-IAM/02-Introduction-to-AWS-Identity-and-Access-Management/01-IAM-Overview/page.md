@@ -137,7 +137,7 @@ AWS Identity and Access Management (IAM) is the cornerstone of security and acce
 * **Session Policies**: Scope down permissions for a single session to enforce tighter control.
 * **Permission Boundaries**: Limit the maximum permissions an IAM entity can acquire, enforcing least-privilege.
 
-![The image is a slide titled "IAM Overview" with a list of topics related to Identity and Access Management, including IAM Users, AWS CLI and SDK, IAM Groups, IAM Roles, Identity Policy, Resource Based Policy, Session Policy, and Permission Boundary.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863050/notes-assets/images/AWS-IAM-IAM-Overview/iam-overview-identity-access-management.jpg)
+![The image is a slide titled "IAM Overview" with a list of topics related to Identity and Access Management, including IAM Users, AWS CLI and SDK, IAM Groups, IAM Roles, Identity Policy, Resource Based Policy, Session Policy, and Permission Boundary.](https://kodekloud.com/kk-media/image/upload/v1752863050/notes-assets/images/AWS-IAM-IAM-Overview/iam-overview-identity-access-management.jpg)
 
 ## Key IAM Components
 
@@ -164,7 +164,7 @@ To illustrate how IAM works in practice, follow Sara, an AWS Solutions Architect
 * Applies the principle of least privilege in every step
 * Audits and monitors user access and policy changes
 
-![The image outlines Sara's responsibilities, including managing AWS accounts, creating users and groups, access control management, authentication and authorization, and following the principle of least privilege.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863051/notes-assets/images/AWS-IAM-IAM-Overview/sara-responsibilities-aws-access-control.jpg)
+![The image outlines Sara's responsibilities, including managing AWS accounts, creating users and groups, access control management, authentication and authorization, and following the principle of least privilege.](https://kodekloud.com/kk-media/image/upload/v1752863051/notes-assets/images/AWS-IAM-IAM-Overview/sara-responsibilities-aws-access-control.jpg)
 
 ## Next Steps: AWS Account Setup
 

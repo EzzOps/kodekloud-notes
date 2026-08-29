@@ -10,7 +10,7 @@ In this article, we explore how AWS Simple Queue Service (SQS) helps build resil
 
 Imagine an e-commerce application consisting of multiple services such as cart management, payment processing, invoicing, inventory management, labeling, dispatch, and tracking. In a tightly coupled, sequential processing model, the placement of an order requires each service to wait for the previous one to finish, leading to slow performance, backlogs, and increased operational costs.
 
-![The image is a flowchart illustrating an e-commerce application's process from cart to labeling, highlighting issues like sequential processing, degraded performance, and high cost.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864778/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SQS/ecommerce-flowchart-cart-labeling-issues.jpg)
+![The image is a flowchart illustrating an e-commerce application's process from cart to labeling, highlighting issues like sequential processing, degraded performance, and high cost.](https://kodekloud.com/kk-media/image/upload/v1752864778/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SQS/ecommerce-flowchart-cart-labeling-issues.jpg)
 
 To address these challenges, services can be decoupled using queues. Instead of directly invoking the payment service, the cart service sends a message to an SQS queue. The payment service later retrieves and processes the message at its own pace. This decoupling enhances responsiveness and prevents delays in one service from impacting the entire system.
 
@@ -23,7 +23,7 @@ SQS offers several key benefits:
 * **Asynchronous Processing:** Consumers process messages as they become available, ensuring overall system responsiveness.
 * **Scalable Serverless Architecture:** SQS integrates seamlessly with serverless platforms, enabling efficient event-driven workflows.
 
-![The image illustrates four SQS solutions: Message Decoupling, Load Leveling, Asynchronous Processing, and Scalable Architecture, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864779/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SQS/sqs-solutions-message-decoupling-icons.jpg)
+![The image illustrates four SQS solutions: Message Decoupling, Load Leveling, Asynchronous Processing, and Scalable Architecture, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752864779/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SQS/sqs-solutions-message-decoupling-icons.jpg)
 
 ## SQS Components
 
@@ -38,7 +38,7 @@ Understanding the core components of SQS is essential for leveraging its full po
 7. **Visibility Timeout:** The period during which a retrieved message remains hidden from other consumers to ensure it is processed by only one consumer at a time.
 8. **Message Locking:** Prevents multiple consumers from processing the same message simultaneously; should processing fail, the lock expires and the message becomes available again.
 
-![The image illustrates the components of Amazon Simple Queue Service (SQS), showing the flow from producers to consumers, with message attributes and a dead letter queue (DLQ) highlighted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864780/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SQS/amazon-sqs-components-flow-diagram.jpg)
+![The image illustrates the components of Amazon Simple Queue Service (SQS), showing the flow from producers to consumers, with message attributes and a dead letter queue (DLQ) highlighted.](https://kodekloud.com/kk-media/image/upload/v1752864780/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SQS/amazon-sqs-components-flow-diagram.jpg)
 
 ## Types of Queues
 
@@ -50,7 +50,7 @@ SQS supports two types of queues: Standard and FIFO (First-In-First-Out). Each t
 * **At-Least-Once Delivery:** Guarantees that every message is delivered at least once, with occasional duplicates.
 * **High Throughput:** Supports nearly unlimited transactions per second, ideal for applications with high throughput needs.
 
-![The image illustrates the concept of SQS Standard Queues, showing unordered message delivery and highlighting advantages like best-effort ordering, at-least-once delivery, and maximum throughput. It also depicts various application/subscriber icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864781/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SQS/sqs-standard-queues-concept-diagram.jpg)
+![The image illustrates the concept of SQS Standard Queues, showing unordered message delivery and highlighting advantages like best-effort ordering, at-least-once delivery, and maximum throughput. It also depicts various application/subscriber icons.](https://kodekloud.com/kk-media/image/upload/v1752864781/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SQS/sqs-standard-queues-concept-diagram.jpg)
 
 ### FIFO Queues
 
@@ -58,7 +58,7 @@ SQS supports two types of queues: Standard and FIFO (First-In-First-Out). Each t
 * **Preserved Order:** Delivers messages in the exact order they were sent.
 * **Throughput Limits:** Supports up to 3,000 messages per second with batching (300 messages per second without batching) by default; high throughput mode can raise these limits.
 
-![The image compares two types of SQS queues: Standard Queues and FIFO Queues, each represented by a colored card with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864782/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SQS/sqs-queues-standard-fifo-comparison.jpg)
+![The image compares two types of SQS queues: Standard Queues and FIFO Queues, each represented by a colored card with an icon.](https://kodekloud.com/kk-media/image/upload/v1752864782/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SQS/sqs-queues-standard-fifo-comparison.jpg)
 
 ## SQS Features and Benefits
 
@@ -68,7 +68,7 @@ SQS comes packed with advanced features:
 * **Message Prioritization:** Use message attributes or multiple queues to prioritize critical messages.
 * **Dead Letter Queue:** Automatically routes messages that fail processing to a separate queue for additional evaluation.
 
-![The image illustrates three features of SQS: Message Retention, Message Prioritization, and Dead Letter Queue (DLQ), each represented with an icon and a colored background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864783/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SQS/sqs-features-message-retention-prioritization-dlq.jpg)
+![The image illustrates three features of SQS: Message Retention, Message Prioritization, and Dead Letter Queue (DLQ), each represented with an icon and a colored background.](https://kodekloud.com/kk-media/image/upload/v1752864783/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SQS/sqs-features-message-retention-prioritization-dlq.jpg)
 
 > **lightbulb** AWS SQS seamlessly integrates with several AWS services including Lambda, EC2, S3, and AWS Step Functions, enabling powerful event-driven architectures.
 
@@ -83,7 +83,7 @@ By incorporating SQS, organizations can:
 * Scale processing capacity dynamically with Auto Scaling groups, adjusting the number of consumers based on real-time workload.
 * Ensure message order and deduplication in systems where transaction order is critical.
 
-![The image illustrates four use cases for SQS: increasing reliability and scale, decoupling microservices and processing event-driven applications, being cost-effective and on-time, and maintaining message ordering with deduplication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864784/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SQS/sqs-use-cases-reliability-scale.jpg)
+![The image illustrates four use cases for SQS: increasing reliability and scale, decoupling microservices and processing event-driven applications, being cost-effective and on-time, and maintaining message ordering with deduplication.](https://kodekloud.com/kk-media/image/upload/v1752864784/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SQS/sqs-use-cases-reliability-scale.jpg)
 
 > **lightbulb** AWS Simple Queue Service (SQS) is a vital tool for enhancing the resilience, scalability, and decoupling of modern applications. Its robust integration with AWS services makes it indispensable for designing distributed and microservices-based architectures.
 

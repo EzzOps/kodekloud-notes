@@ -52,9 +52,7 @@ from dotenv import load_dotenv
 load_dotenv()
 ```
 
-<Callout icon="lightbulb">
-  Store secrets in environment variables or a secure secrets manager. Use `python-dotenv` only for local development; never commit `.env` to version control.
-</Callout>
+> **lightbulb** Store secrets in environment variables or a secure secrets manager. Use `python-dotenv` only for local development; never commit `.env` to version control.
 
 Recommended project layout
 
@@ -145,9 +143,7 @@ openai: imported x.y.z
 OpenAI call successful. Model reply: Hello! I'm here to help.
 ```
 
-<Callout icon="warning">
-  Using the OpenAI API may incur charges. Monitor usage and billing in your OpenAI dashboard, and prefer small test calls when validating integration.
-</Callout>
+> **warning** Using the OpenAI API may incur charges. Monitor usage and billing in your OpenAI dashboard, and prefer small test calls when validating integration.
 
 If the script runs and the OpenAI call succeeds, your development environment is ready for the rest of the LangGraph material. If you see import errors, confirm your virtual environment is activated and the packages installed without errors.
 
@@ -158,9 +154,7 @@ Additional references
 * Conda docs: [https://docs.conda.io/](https://docs.conda.io/)
 * LangChain docs: [https://docs.langchain.com/](https://docs.langchain.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/11d0578c-2a76-40f7-be25-905be94f24f8/lesson/f9665406-3363-428f-9b22-b558cb0ddf71" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/11d0578c-2a76-40f7-be25-905be94f24f8/lesson/f9665406-3363-428f-9b22-b558cb0ddf71)
 
 
 # Demo Simple Orchestration
@@ -177,9 +171,7 @@ This lesson demonstrates a minimal, production-accurate example of using LangGra
 
 This example is intentionally minimal so you can extend it later with routing, tools, memory, retries, or observability.
 
-<Callout icon="lightbulb">
-  Ensure you have an OpenAI API key and the required packages installed. The examples below use the modern OpenAI Responses API via the OpenAI Python client and LangGraph.
-</Callout>
+> **lightbulb** Ensure you have an OpenAI API key and the required packages installed. The examples below use the modern OpenAI Responses API via the OpenAI Python client and LangGraph.
 
 ## Quick setup
 

@@ -61,9 +61,7 @@ WCUs:
 
 Use the calculator to get estimated monthly costs for those units to avoid surprises on your bill.
 
-<Callout icon="lightbulb">
-  Use the capacity calculator to estimate RCUs and WCUs based on item sizes and read/write patterns. Note: eventual consistency reduces RCU consumption by half compared to strongly consistent reads.
-</Callout>
+> **lightbulb** Use the capacity calculator to estimate RCUs and WCUs based on item sizes and read/write patterns. Note: eventual consistency reduces RCU consumption by half compared to strongly consistent reads.
 
 Under the Table capacity section in the console, enter the provisioned values from the example: Read capacity = `40`, Write capacity = `240`.
 
@@ -94,9 +92,7 @@ Autoscaling adjusts capacity when observed usage consistently deviates from the 
 
 Use the console’s historical usage graphs alongside the capacity calculator to choose sensible minimums, maximums, and target utilization. If your table has no historical traffic, graphs will be empty until requests are observed.
 
-<Callout icon="warning">
-  Changing capacity mode or scaling limits can affect costs and throttling behavior. Review historical metrics and cost estimates before switching modes or setting large max capacity values.
-</Callout>
+> **warning** Changing capacity mode or scaling limits can affect costs and throttling behavior. Review historical metrics and cost estimates before switching modes or setting large max capacity values.
 
 ## Practical recommendations
 
@@ -110,8 +106,6 @@ Further reading:
 * [DynamoDB Best Practices](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html)
 * [DynamoDB Autoscaling](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/070e7e70-c262-4d28-83c4-030734f3f27e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/070e7e70-c262-4d28-83c4-030734f3f27e)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/0424181a-e703-4930-824d-8ba879eecdc5" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/0424181a-e703-4930-824d-8ba879eecdc5)

@@ -6,7 +6,7 @@ This guide explains how to use permission boundaries in IAM to enforce least pri
 
 In this guide, you’ll learn how to enforce the principle of least privilege for new IAM users—such as interns—by using **permission boundaries**. This lets you assign them to existing groups (e.g., Accounting and Dev) without granting any permissions beyond what you intend.
 
-![The image shows a diagram with two groups, "Accounting Group" and "Dev Group," each containing a red bucket icon linked to a checklist icon. The text at the top reads, "Manager Request: We are hiring interns."](../../../../images/kodekloud.com/kk-media/image/upload/v1752863053/notes-assets/images/AWS-IAM-IAM-Permission-Boundaries/manager-request-hiring-interns-diagram.jpg)
+![The image shows a diagram with two groups, "Accounting Group" and "Dev Group," each containing a red bucket icon linked to a checklist icon. The text at the top reads, "Manager Request: We are hiring interns."](https://kodekloud.com/kk-media/image/upload/v1752863053/notes-assets/images/AWS-IAM-IAM-Permission-Boundaries/manager-request-hiring-interns-diagram.jpg)
 
 Currently, both the Accounting Group and the Dev Group have rights to specific S3 buckets. If you simply add interns to these groups:
 
@@ -19,7 +19,7 @@ To prevent over-permissioning, apply a **permission boundary** that caps the max
 
 A permission boundary is an advanced IAM feature that specifies the upper limit of permissions an identity (user or role) can have. No matter how many permissions you attach via identity-based or group policies, the boundary ensures the principal cannot exceed its scope.
 
-![The image explains the concept of a "Permission Boundary" in IAM, highlighting its role in setting maximum permissions, preventing unintended access, restricting IAM policies, and controlling permission scope for users and roles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863054/notes-assets/images/AWS-IAM-IAM-Permission-Boundaries/permission-boundary-iam-concept-explanation.jpg)
+![The image explains the concept of a "Permission Boundary" in IAM, highlighting its role in setting maximum permissions, preventing unintended access, restricting IAM policies, and controlling permission scope for users and roles.](https://kodekloud.com/kk-media/image/upload/v1752863054/notes-assets/images/AWS-IAM-IAM-Permission-Boundaries/permission-boundary-iam-concept-explanation.jpg)
 
 > **lightbulb** Permission boundaries do **not** grant permissions by themselves. They only restrict the maximum permissions that an IAM principal can utilize.
 
@@ -51,7 +51,7 @@ Follow these steps in the AWS Management Console:
 }
 ```
 
-![The image is a tutorial slide titled "Create Permission Boundary," showing a stick figure labeled "Demo" and instructions for creating a permission boundary on AWS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863056/notes-assets/images/AWS-IAM-IAM-Permission-Boundaries/create-permission-boundary-tutorial-slide.jpg)
+![The image is a tutorial slide titled "Create Permission Boundary," showing a stick figure labeled "Demo" and instructions for creating a permission boundary on AWS.](https://kodekloud.com/kk-media/image/upload/v1752863056/notes-assets/images/AWS-IAM-IAM-Permission-Boundaries/create-permission-boundary-tutorial-slide.jpg)
 
 > **triangle-alert** Even if an intern’s group policy grants broader access, they cannot exceed the actions allowed by their permission boundary.
 

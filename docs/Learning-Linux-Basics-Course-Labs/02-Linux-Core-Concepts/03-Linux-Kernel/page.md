@@ -19,9 +19,7 @@ If you have prior experience with operating systems, you are likely familiar wit
 
 A kernel is the primary component of an operating system, serving as the core interface between computer hardware and application processes.
 
-<Frame>
-  ![The image illustrates the Linux Kernel architecture, showing its interaction between applications/processes and hardware components like memory, CPU, and devices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881116/notes-assets/images/Learning-Linux-Basics-Course-Labs-Linux-Kernel/frame_60.jpg)
-</Frame>
+![The image illustrates the Linux Kernel architecture, showing its interaction between applications/processes and hardware components like memory, CPU, and devices.](https://kodekloud.com/kk-media/image/upload/v1752881116/notes-assets/images/Learning-Linux-Basics-Course-Labs-Linux-Kernel/frame_60.jpg)
 
 The kernel efficiently manages communication between hardware and software. To illustrate, consider the analogy of a college library:
 
@@ -41,13 +39,9 @@ The Linux Kernel is responsible for several key tasks:
 * **Device Drivers:** Acts as an intermediary between hardware devices and software processes.
 * **System Calls and Security:** Handles requests from processes and enforces security policies.
 
-<Callout icon="lightbulb">
-  Although the Linux Kernel is monolithic—handling CPU scheduling, memory management, and other operations on its own—it is designed to be modular. This modularity allows dynamic extension via kernel modules.
-</Callout>
+> **lightbulb** Although the Linux Kernel is monolithic—handling CPU scheduling, memory management, and other operations on its own—it is designed to be modular. This modularity allows dynamic extension via kernel modules.
 
-<Frame>
-  ![The image outlines key components of the Linux Kernel: Memory Management, Process Management, Device Drivers, System Calls and Security, and notes it as Monolithic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881117/notes-assets/images/Learning-Linux-Basics-Course-Labs-Linux-Kernel/frame_240.jpg)
-</Frame>
+![The image outlines key components of the Linux Kernel: Memory Management, Process Management, Device Drivers, System Calls and Security, and notes it as Monolithic.](https://kodekloud.com/kk-media/image/upload/v1752881117/notes-assets/images/Learning-Linux-Basics-Course-Labs-Linux-Kernel/frame_240.jpg)
 
 ## Checking the Linux Kernel Version
 
@@ -90,16 +84,10 @@ cat /etc/os-release
 
 Other common system calls include operations like `close`, `getpid`, `readdir`, `strlen`, and `closedir`.
 
-<Frame>
-  ![The image illustrates the relationship between hardware, kernel space, and user space, highlighting system calls and functions like file operations and process listing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881118/notes-assets/images/Learning-Linux-Basics-Course-Labs-Linux-Kernel/frame_490.jpg)
-</Frame>
+![The image illustrates the relationship between hardware, kernel space, and user space, highlighting system calls and functions like file operations and process listing.](https://kodekloud.com/kk-media/image/upload/v1752881118/notes-assets/images/Learning-Linux-Basics-Course-Labs-Linux-Kernel/frame_490.jpg)
 
-<Callout icon="lightbulb">
-  System calls provide a secure interface for user programs to request services from the kernel, ensuring the stability and security of the system.
-</Callout>
+> **lightbulb** System calls provide a secure interface for user programs to request services from the kernel, ensuring the stability and security of the system.
 
 By understanding these core concepts, users and system administrators can gain a deeper insight into how Linux manages system resources, ensuring optimized performance and secure operations.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/19296611-5fb9-4e5d-a926-d157d3f3c3db/lesson/f7e7227d-8f13-443e-95cd-e00914245b20" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/19296611-5fb9-4e5d-a926-d157d3f3c3db/lesson/f7e7227d-8f13-443e-95cd-e00914245b20)

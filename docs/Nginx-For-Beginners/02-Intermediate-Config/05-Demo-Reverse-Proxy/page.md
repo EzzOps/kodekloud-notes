@@ -187,9 +187,7 @@ root@nginx /etc/nginx/sites-available ➜ nginx -s reload
 
 * After enabling `ip_hash`, the same client IP should consistently be mapped to the same backend. Refreshing from the same client should repeatedly show the same backend serving the request.
 
-<Callout icon="lightbulb">
-  ip\_hash provides simple sticky sessions by client IP. It is not suitable if clients are behind NAT/proxies that cause many clients to share an IP, and it does not account for backend health checks or capacity — consider more advanced session persistence strategies or a shared session store for production-grade stickiness.
-</Callout>
+> **lightbulb** ip\_hash provides simple sticky sessions by client IP. It is not suitable if clients are behind NAT/proxies that cause many clients to share an IP, and it does not account for backend health checks or capacity — consider more advanced session persistence strategies or a shared session store for production-grade stickiness.
 
 ## Quick reference — common files & commands
 
@@ -217,11 +215,9 @@ Further reading:
 
 That completes this demo.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/a2b8d77e-6682-4fa2-bedf-a8dde19a29ef" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/a2b8d77e-6682-4fa2-bedf-a8dde19a29ef)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/da8e5437-fc04-466c-9446-8f856d5bb9ec" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/da8e5437-fc04-466c-9446-8f856d5bb9ec)
 
 
 # Demo Reverse Proxy
@@ -232,9 +228,7 @@ Configuring Nginx as a reverse proxy to load balance and forward HTTP requests o
 
 Welcome back. In this lesson you'll learn how to configure Nginx as a reverse proxy that forwards incoming HTTP requests (port 80) to two backend Flask applications listening on port 5000. This setup is useful when you want to expose a single public endpoint while running multiple backend apps, and you can host both Nginx and the Flask apps on the same machine to save resources.
 
-<Callout icon="lightbulb">
-  A reverse proxy accepts client requests on port 80 (or 443) and forwards them to one or more backend servers (here, Flask apps on port 5000). A load balancer is conceptually similar, but the reverse proxy often runs on the same host as the entry Nginx instance.
-</Callout>
+> **lightbulb** A reverse proxy accepts client requests on port 80 (or 443) and forwards them to one or more backend servers (here, Flask apps on port 5000). A load balancer is conceptually similar, but the reverse proxy often runs on the same host as the entry Nginx instance.
 
 <Frame>
   <img alt="A diagram showing a reverse proxy setup: users connect through a network cloud to an NGINX reverse proxy, which forwards requests to backend Flask web servers running on port 5000." />
@@ -321,9 +315,7 @@ To                         Action      From
 22/tcp (v6)                ALLOW       Anywhere (v6)
 ```
 
-<Callout icon="warning">
-  When changing firewall rules, be careful not to lock yourself out. Confirm SSH access remains allowed before applying strict rules. Always test connectivity from the reverse proxy after adding rules.
-</Callout>
+> **warning** When changing firewall rules, be careful not to lock yourself out. Confirm SSH access remains allowed before applying strict rules. Always test connectivity from the reverse proxy after adding rules.
 
 4. On the Nginx reverse proxy host
 

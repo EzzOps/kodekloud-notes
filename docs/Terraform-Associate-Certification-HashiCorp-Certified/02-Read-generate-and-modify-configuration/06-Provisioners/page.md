@@ -29,9 +29,7 @@ resource "aws_instance" "webserver" {
 }
 ```
 
-<Callout icon="lightbulb">
-  Ensure that network connectivity exists between the machine running Terraform and the remote instance. For Linux, this typically involves SSH, whereas Windows instances require WinRM connectivity.
-</Callout>
+> **lightbulb** Ensure that network connectivity exists between the machine running Terraform and the remote instance. For Linux, this typically involves SSH, whereas Windows instances require WinRM connectivity.
 
 In the example below, a security group and an SSH key pair resource are also created to manage connectivity and authentication:
 
@@ -235,6 +233,4 @@ Now, please head over to the multiple-choice quiz for this section.
 * [Terraform Provisioners Documentation](https://www.terraform.io/docs/language/resources/provisioners/syntax.html)
 * [AWS EC2 User Data](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/c59e52ed-8a8c-4a6c-8ad0-8dcc38c1598e/lesson/193385e5-f8be-4211-bf7b-18c71b1489bb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/c59e52ed-8a8c-4a6c-8ad0-8dcc38c1598e/lesson/193385e5-f8be-4211-bf7b-18c71b1489bb)

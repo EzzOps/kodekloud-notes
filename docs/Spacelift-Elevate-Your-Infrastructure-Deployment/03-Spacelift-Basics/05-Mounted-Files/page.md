@@ -73,21 +73,15 @@ When configuring your environment variables in Spacelift, you have two options f
 | Plain Text     | Visible and editable             | Suitable for non-sensitive variables (e.g., AWS region)                       |
 | Secret         | Hidden and not directly viewable | Essential for sensitive data like AWS Access Key ID and AWS Secret Access Key |
 
-<Callout icon="triangle-alert">
-  Always store sensitive credentials as secrets in Spacelift. This ensures that your AWS credentials remain hidden and secure, protecting them from unauthorized access.
-</Callout>
+> **triangle-alert** Always store sensitive credentials as secrets in Spacelift. This ensures that your AWS credentials remain hidden and secure, protecting them from unauthorized access.
 
 When stored as plain text, the values are visible and can be edited by anyone with access to Spacelift. Therefore, for security reasons, always mark your AWS credentials as secrets.
 
-<Frame>
-  ![The image shows a web interface for managing environment variables in a Spacelift stack, with options to edit or delete variables. The stack is labeled as "failed," and various environment variables are listed with options to override.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884080/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Environment-Variables/spacelift-stack-environment-variables.jpg)
-</Frame>
+![The image shows a web interface for managing environment variables in a Spacelift stack, with options to edit or delete variables. The stack is labeled as "failed," and various environment variables are listed with options to override.](https://kodekloud.com/kk-media/image/upload/v1752884080/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Environment-Variables/spacelift-stack-environment-variables.jpg)
 
 By following these guidelines, you can efficiently manage your AWS credentials in Spacelift while ensuring your Terraform projects are configured securely and correctly.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/74dbb4df-716f-4fa2-92e9-a223a3a697ca/lesson/b01f8c43-13ef-47ca-bc4a-e783aeebcdbd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/74dbb4df-716f-4fa2-92e9-a223a3a697ca/lesson/b01f8c43-13ef-47ca-bc4a-e783aeebcdbd)
 
 
 # Mounted Files
@@ -226,9 +220,7 @@ Error: No value for required variable
 7: variable "vpc_name" {
 ```
 
-<Callout icon="lightbulb">
-  These errors indicate that the values for `instance_name` and `vpc_name` have not been provided. To resolve this, supply the values using a `terraform.tfvars` file.
-</Callout>
+> **lightbulb** These errors indicate that the values for `instance_name` and `vpc_name` have not been provided. To resolve this, supply the values using a `terraform.tfvars` file.
 
 Create a `terraform.tfvars` file with:
 
@@ -256,9 +248,7 @@ In Spacelift, workloads execute in a dedicated directory structure:
 * All operations occur in `/mnt/workspace`.
 * Your Git repository is cloned into `/mnt/workspace/source`.
 
-<Callout icon="lightbulb">
-  Ensure your `terraform.tfvars` file is mounted inside `/mnt/workspace/source`.
-</Callout>
+> **lightbulb** Ensure your `terraform.tfvars` file is mounted inside `/mnt/workspace/source`.
 
 ### Setting Up the Mounted File
 
@@ -345,6 +335,4 @@ That concludes this comprehensive guide on managing Terraform variables and util
 
 Happy Infrastructure Deployments!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/74dbb4df-716f-4fa2-92e9-a223a3a697ca/lesson/d2aafa10-a554-4288-bd27-52a321f9b30b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/74dbb4df-716f-4fa2-92e9-a223a3a697ca/lesson/d2aafa10-a554-4288-bd27-52a321f9b30b)

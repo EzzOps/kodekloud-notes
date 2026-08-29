@@ -34,9 +34,7 @@ With an automatic sign-in using your Azure credentials, Cloud Shell maintains yo
 
 When you access Cloud Shell through the Azure Portal by clicking the terminal icon, you will be prompted to create a Storage Account if one does not already exist. For instance, if there is no existing storage account, you might see a pop-up like the following:
 
-<Frame>
-  ![The image shows the Microsoft Azure portal with a list of resources and a pop-up window for creating storage, including options for subscription, resource group, and storage account settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884369/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Compare-Administrator-Tools/azure-portal-storage-creation.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal with a list of resources and a pop-up window for creating storage, including options for subscription, resource group, and storage account settings.](https://kodekloud.com/kk-media/image/upload/v1752884369/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Compare-Administrator-Tools/azure-portal-storage-creation.jpg)
 
 Once you create the storage account (e.g., in East US with a unique name and an associated file share), Cloud Shell launches and displays your cloud drive. An example session may resemble:
 
@@ -56,9 +54,7 @@ clouddrive
 rithin [ ~ ]$
 ```
 
-<Callout icon="lightbulb">
-  Azure Cloud Shell allows you to easily switch between Bash and PowerShell, create files, and clear the screen, providing a flexible environment for your command-line activities.
-</Callout>
+> **lightbulb** Azure Cloud Shell allows you to easily switch between Bash and PowerShell, create files, and clear the screen, providing a flexible environment for your command-line activities.
 
 ***
 
@@ -98,9 +94,7 @@ Login-AzAccount -UseDeviceAuthentication
 
 This command displays a code (e.g., DJ9CKZBF2) along with instructions to navigate to [https://aka.ms/devicelogin](https://aka.ms/devicelogin). After entering the code in your browser and completing the login process, your terminal will update with your subscription details. An example output is shown below:
 
-<Frame>
-  ![The image shows a Microsoft Azure login prompt asking if the user is trying to sign in to Microsoft Azure PowerShell, with options to cancel or continue.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884369/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Compare-Administrator-Tools/azure-login-prompt-powershell.jpg)
-</Frame>
+![The image shows a Microsoft Azure login prompt asking if the user is trying to sign in to Microsoft Azure PowerShell, with options to cancel or continue.](https://kodekloud.com/kk-media/image/upload/v1752884369/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Compare-Administrator-Tools/azure-login-prompt-powershell.jpg)
 
 Once authenticated, list your subscriptions with:
 
@@ -163,9 +157,7 @@ Here are the base commands:
 
 Both Azure PowerShell and Azure CLI offer similar functionalities, allowing you to list subscriptions, execute automation scripts, and integrate with other services. Their robust command-line interfaces provide a powerful way to manage your Azure resources programmatically.
 
-<Callout icon="lightbulb">
-  For users with a .NET background, Azure PowerShell provides rich object-oriented outputs, while Azure CLI may be preferable for those looking for simplicity and quick command responses, such as for container image deployment and management.
-</Callout>
+> **lightbulb** For users with a .NET background, Azure PowerShell provides rich object-oriented outputs, while Azure CLI may be preferable for those looking for simplicity and quick command responses, such as for container image deployment and management.
 
 ***
 
@@ -187,6 +179,4 @@ For additional information on managing Azure resources, check out the following 
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/7f421132-242f-4d10-85e5-6673b7307d12/lesson/21aa5219-d10f-4f47-807c-0d2759952aa8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/7f421132-242f-4d10-85e5-6673b7307d12/lesson/21aa5219-d10f-4f47-807c-0d2759952aa8)

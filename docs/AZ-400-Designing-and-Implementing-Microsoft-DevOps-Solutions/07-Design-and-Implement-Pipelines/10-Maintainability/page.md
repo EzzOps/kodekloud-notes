@@ -6,7 +6,7 @@ This article discusses best practices for maintainability in Azure Pipelines to 
 
 Maintainability is often overlooked but it’s a critical factor in the long-term success of your CI/CD lifecycle. By emphasizing maintainability, you future-proof your DevOps processes, reduce technical debt, and enable teams to iterate faster. Azure Pipelines offers built-in features and best practices to help you design, manage, and evolve pipelines that stand the test of time.
 
-![The image shows a person interacting with gears containing the Azure Pipelines logo, alongside text introducing Azure Pipelines as a tool for CI/CD with a focus on maintainability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867877/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Maintainability/azure-pipelines-ci-cd-interaction-gears.jpg)
+![The image shows a person interacting with gears containing the Azure Pipelines logo, alongside text introducing Azure Pipelines as a tool for CI/CD with a focus on maintainability.](https://kodekloud.com/kk-media/image/upload/v1752867877/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Maintainability/azure-pipelines-ci-cd-interaction-gears.jpg)
 
 ## Why Maintainability Matters
 
@@ -21,7 +21,7 @@ Maintainability is often overlooked but it’s a critical factor in the long-ter
 
 ## Core Pillars of Maintainable Pipelines
 
-![The image outlines the key components of maintainable Azure Pipelines: Code Reusability, Modular Design, and Documentation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867878/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Maintainability/azure-pipelines-maintainable-components-diagram.jpg)
+![The image outlines the key components of maintainable Azure Pipelines: Code Reusability, Modular Design, and Documentation.](https://kodekloud.com/kk-media/image/upload/v1752867878/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Maintainability/azure-pipelines-maintainable-components-diagram.jpg)
 
 | Pillar                      | Description                                                                               |
 | --------------------------- | ----------------------------------------------------------------------------------------- |
@@ -35,7 +35,7 @@ Defining your pipeline in YAML unlocks version control, peer reviews, and automa
 
 ## Best Practices for Pipeline Maintainability
 
-![The image outlines three best practices for enhancing maintainability: using naming conventions, implementing version control, and regularly refactoring the pipeline.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867879/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Maintainability/best-practices-maintainability-naming-version-control.jpg)
+![The image outlines three best practices for enhancing maintainability: using naming conventions, implementing version control, and regularly refactoring the pipeline.](https://kodekloud.com/kk-media/image/upload/v1752867879/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Maintainability/best-practices-maintainability-naming-version-control.jpg)
 
 1. **Consistent Naming Conventions**\
    Use clear, descriptive names for pipelines, stages, jobs, tasks, and variables.
@@ -73,7 +73,7 @@ steps:
 
 A monolithic YAML file can quickly become unwieldy. Let’s transform a single-file pipeline into a modular, stage-driven configuration.
 
-![The image is a diagram outlining a practical example of refactoring a pipeline for better maintainability, with three steps: before and after refactoring, step-by-step refactoring process, and key takeaways.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867880/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Maintainability/refactoring-pipeline-diagram-maintainability.jpg)
+![The image is a diagram outlining a practical example of refactoring a pipeline for better maintainability, with three steps: before and after refactoring, step-by-step refactoring process, and key takeaways.](https://kodekloud.com/kk-media/image/upload/v1752867880/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Maintainability/refactoring-pipeline-diagram-maintainability.jpg)
 
 ### Original Monolithic Pipeline
 
@@ -174,7 +174,7 @@ jobs:
     displayName: 'Deploy to ${{ parameters.environment }}'
 ```
 
-![The image lists the benefits of refactoring, highlighting modularity, clarity, flexibility, and maintenance with corresponding icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867882/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Maintainability/refactoring-benefits-modularity-clarity-icons.jpg)
+![The image lists the benefits of refactoring, highlighting modularity, clarity, flexibility, and maintenance with corresponding icons.](https://kodekloud.com/kk-media/image/upload/v1752867882/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Maintainability/refactoring-benefits-modularity-clarity-icons.jpg)
 
 ### Refactoring Benefits
 

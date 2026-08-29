@@ -50,7 +50,7 @@ aws ec2 attach-volume \
   --device /dev/xvdf
 ```
 
-![The image is a diagram comparing Amazon EC2 storage options, including Amazon EFS, EC2 Instance Storage, and Amazon EBS, highlighting their features and connections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868980/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Storage/amazon-ec2-storage-options-comparison-diagram.jpg)
+![The image is a diagram comparing Amazon EC2 storage options, including Amazon EFS, EC2 Instance Storage, and Amazon EBS, highlighting their features and connections.](https://kodekloud.com/kk-media/image/upload/v1752868980/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Storage/amazon-ec2-storage-options-comparison-diagram.jpg)
 
 ***
 

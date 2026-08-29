@@ -16,7 +16,7 @@ In most cases, setting up AWS Direct Connect involves connecting to an AWS Direc
 * The partner’s data center links to the AWS data center.
 * On the AWS side, your connection terminates at a virtual private gateway attached to a specific VPC via a private virtual interface.
 
-![The image is a diagram illustrating an AWS Direct Connect setup, showing the connection between a customer's network and an AWS region with VPCs, routers, and gateways. It includes components like AWS EC2 instances, private subnets, and customer network elements such as clients and servers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860723/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Direct-Connect/aws-direct-connect-setup-diagram.jpg)
+![The image is a diagram illustrating an AWS Direct Connect setup, showing the connection between a customer's network and an AWS region with VPCs, routers, and gateways. It includes components like AWS EC2 instances, private subnets, and customer network elements such as clients and servers.](https://kodekloud.com/kk-media/image/upload/v1752860723/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Direct-Connect/aws-direct-connect-setup-diagram.jpg)
 
 Ensure that your on-premises router supports BGP and is capable of handling Direct Connect’s tagging and virtual interface requirements.
 
@@ -30,7 +30,7 @@ AWS Direct Connect employs virtual interfaces (VIFs) to manage different types o
 
 The type of virtual interface you choose determines the routing of your traffic. In some scenarios, a Direct Connect gateway is required to terminate the connection, although it may be optional in setups involving transit gateways. Often, AWS documentation refers to Direct Connect simply as “DX.”
 
-![The image is a diagram illustrating AWS Virtual Interfaces (VIFs) and Direct Connect, showing connections between AWS services, VPCs, and a customer router through various VLANs. It includes components like public and private VIFs, Direct Connect Gateway, and Transit Gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860726/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Direct-Connect/aws-virtual-interfaces-diagram.jpg)
+![The image is a diagram illustrating AWS Virtual Interfaces (VIFs) and Direct Connect, showing connections between AWS services, VPCs, and a customer router through various VLANs. It includes components like public and private VIFs, Direct Connect Gateway, and Transit Gateway.](https://kodekloud.com/kk-media/image/upload/v1752860726/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Direct-Connect/aws-virtual-interfaces-diagram.jpg)
 
 ## Types of Connections
 
@@ -39,9 +39,9 @@ AWS Direct Connect provides two primary connection types, each designed to meet 
 * **Dedicated Connection:** Offers a physical line with speeds of 1, 10, or 100 gigabits per second.
 * **Hosted Connection:** Provides a physical Ethernet connection, typically ranging from 50 megabits to 10 gigabits per second (note that 100 gigabit speeds are not available with hosted connections).
 
-![The image lists three types of Virtual Interfaces (VIFs): Private Virtual Interface, Public Virtual Interface, and Transit Virtual Interface.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860728/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Direct-Connect/virtual-interfaces-private-public-transit.jpg)
+![The image lists three types of Virtual Interfaces (VIFs): Private Virtual Interface, Public Virtual Interface, and Transit Virtual Interface.](https://kodekloud.com/kk-media/image/upload/v1752860728/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Direct-Connect/virtual-interfaces-private-public-transit.jpg)
 
-![The image is a diagram titled "Types of Connection," showing two categories: "Dedicated connections" and "Hosted connections."](../../../../images/kodekloud.com/kk-media/image/upload/v1752860729/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Direct-Connect/types-of-connection-diagram.jpg)
+![The image is a diagram titled "Types of Connection," showing two categories: "Dedicated connections" and "Hosted connections."](https://kodekloud.com/kk-media/image/upload/v1752860729/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Direct-Connect/types-of-connection-diagram.jpg)
 
 Choosing the right connection type depends on your bandwidth requirements and overall network design considerations.
 
@@ -49,9 +49,9 @@ Choosing the right connection type depends on your bandwidth requirements and ov
 
 To ensure high resiliency, many organizations deploy two Direct Connect connections. Some opt for a primary Direct Connect with a VPN backup for added security. Additionally, you can aggregate multiple connections using Link Aggregation Control Protocol (LACP) and Link Aggregation Groups (LAG) to achieve even higher effective throughput.
 
-![The image illustrates a high-resiliency connectivity setup using AWS Direct Connect, showing the connection between an AWS region with multiple availability zones and a customer network. It includes components like VPC, private subnets, virtual private gateways, and customer-managed routing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860730/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Direct-Connect/aws-direct-connect-resiliency-setup.jpg)
+![The image illustrates a high-resiliency connectivity setup using AWS Direct Connect, showing the connection between an AWS region with multiple availability zones and a customer network. It includes components like VPC, private subnets, virtual private gateways, and customer-managed routing.](https://kodekloud.com/kk-media/image/upload/v1752860730/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Direct-Connect/aws-direct-connect-resiliency-setup.jpg)
 
-![The image illustrates a network diagram showing Link Aggregation Groups (LAGs) connecting a VPC to customer data centers via AWS Direct Connect locations. It includes two LAGs, each with multiple connections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860731/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Direct-Connect/network-diagram-lags-aws-direct-connect.jpg)
+![The image illustrates a network diagram showing Link Aggregation Groups (LAGs) connecting a VPC to customer data centers via AWS Direct Connect locations. It includes two LAGs, each with multiple connections.](https://kodekloud.com/kk-media/image/upload/v1752860731/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Direct-Connect/network-diagram-lags-aws-direct-connect.jpg)
 
 > **lightbulb** Deploying multiple Direct Connect connections not only increases resiliency but also enhances your network’s overall performance through link aggregation.
 

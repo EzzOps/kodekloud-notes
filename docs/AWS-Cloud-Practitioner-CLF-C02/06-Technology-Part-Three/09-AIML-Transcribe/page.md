@@ -14,19 +14,19 @@ Amazon Transcribe is an audio-to-text conversion service powered by automatic sp
   * Advanced speaker diarization that distinguishes between multiple speakers.
   * Support for various dialects and a diverse range of languages, such as transcribing Spanish audio into text.
 
-![The image lists Amazon Transcribe's key features: Custom Vocabulary, Speaker Diarization, and Language Support, with corresponding icons and numbers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862019/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Transcribe/frame_60.jpg)
+![The image lists Amazon Transcribe's key features: Custom Vocabulary, Speaker Diarization, and Language Support, with corresponding icons and numbers.](https://kodekloud.com/kk-media/image/upload/v1752862019/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Transcribe/frame_60.jpg)
 
 At its core, Amazon Transcribe converts both audio and video content into text, making it ideal for numerous applications. For example, you can generate content from spoken presentations—turning a recorded talk into an engaging blog post. Additionally, it supports subtitling and captioning to enhance accessibility for individuals with hearing impairments or non-native language speakers. Beyond content creation and accessibility, the transcribed text opens the door for advanced voice analytics, including sentiment analysis and other data-driven insights.
 
-![The image lists Amazon Transcribe's general use cases: content creation, subtitling and captioning, accessibility, and voice analytics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862020/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Transcribe/frame_100.jpg)
+![The image lists Amazon Transcribe's general use cases: content creation, subtitling and captioning, accessibility, and voice analytics.](https://kodekloud.com/kk-media/image/upload/v1752862020/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Transcribe/frame_100.jpg)
 
 From a business perspective, Amazon Transcribe not only enhances accessibility and facilitates content creation but also drives innovation by enabling deeper analytics on transcribed data. This advanced analysis can extract valuable insights—including sentiment and trend insights—from spoken content.
 
-![The image outlines modern computing's relevance, highlighting enhancing accessibility, facilitating content creation, and enabling innovation in analytics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862021/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Transcribe/frame_130.jpg)
+![The image outlines modern computing's relevance, highlighting enhancing accessibility, facilitating content creation, and enabling innovation in analytics.](https://kodekloud.com/kk-media/image/upload/v1752862021/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Transcribe/frame_130.jpg)
 
 Another significant advantage is Amazon Transcribe's seamless integration with other AWS services. It delivers fast and accurate transcriptions while supporting an extensive list of languages, making it the ideal choice if you're embedded in the AWS ecosystem.
 
-![The image highlights Amazon Transcribe's advantages: it stands out from other transcription services and offers accuracy and customization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862022/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Transcribe/frame_160.jpg)
+![The image highlights Amazon Transcribe's advantages: it stands out from other transcription services and offers accuracy and customization.](https://kodekloud.com/kk-media/image/upload/v1752862022/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Transcribe/frame_160.jpg)
 
 > **lightbulb** In conclusion, Amazon Transcribe efficiently converts audio and video content to text. Its wide-ranging applications—spanning content generation, subtitle creation for accessibility, and advanced analytics—make it a valuable asset within the AWS ecosystem. With its accuracy, speed, and integration capabilities, Amazon Transcribe is an excellent tool for your transcription needs.
 

@@ -16,7 +16,7 @@ The Basic Support plan is available to all AWS customers at no additional cost. 
 * Limited access to AWS Trusted Advisor checks
 * Full access to your Personal Health Dashboard
 
-![The image describes AWS Basic Support, highlighting free web support, limited AWS Trusted Advisor access, Personal Health Dashboard, and no phone support or SLA, as the cheapest option.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861415/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Support-Options/frame_50.jpg)
+![The image describes AWS Basic Support, highlighting free web support, limited AWS Trusted Advisor access, Personal Health Dashboard, and no phone support or SLA, as the cheapest option.](https://kodekloud.com/kk-media/image/upload/v1752861415/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Support-Options/frame_50.jpg)
 
 > **lightbulb** Basic Support is ideal for users who are exploring AWS and require fundamental support for experimentation. However, it does not include phone support, a Service Level Agreement (SLA) for response times, or a dedicated Technical Account Manager (TAM).
 
@@ -30,7 +30,7 @@ Developer Support is designed for those who need a bit more than the Basic plan.
 * Prioritized web support with a 12-hour response time for production issues
 * Pricing at \$29 per month or 3% of your total AWS spend, whichever is applicable
 
-![The image outlines AWS Developer Support features, including web-only support, prioritized responses, and pricing details, recommended for testing on AWS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861416/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Support-Options/frame_110.jpg)
+![The image outlines AWS Developer Support features, including web-only support, prioritized responses, and pricing details, recommended for testing on AWS.](https://kodekloud.com/kk-media/image/upload/v1752861416/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Support-Options/frame_110.jpg)
 
 This plan is well-suited for early-stage production environments and development work where a faster response is appreciated.
 
@@ -46,7 +46,7 @@ For production workloads, the Business Support plan is the minimum requirement. 
 * Phone and chat support in addition to web support
 * A 1-hour SLA for production issues
 
-![The image outlines features of AWS Business Support, including 24/7 support, Trusted Advisor checks, and access to AWS Support App in Slack.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861417/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Support-Options/frame_180.jpg)
+![The image outlines features of AWS Business Support, including 24/7 support, Trusted Advisor checks, and access to AWS Support App in Slack.](https://kodekloud.com/kk-media/image/upload/v1752861417/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Support-Options/frame_180.jpg)
 
 Business Support is priced on a tiered basis, with a minimum charge of \$100 per month or a percentage of your monthly AWS spend.
 
@@ -60,7 +60,7 @@ Enterprise On-Ramp is designed for organizations with mission-critical workloads
 * A reduced SLA with a 30-minute response time for production issues
 * Access to a pool of Technical Account Managers instead of a dedicated TAM
 
-![The image describes AWS Support's Enterprise On-Ramp, highlighting features like Trusted Advisor checks, incident management, and technical account managers, with specific pricing details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861419/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Support-Options/frame_290.jpg)
+![The image describes AWS Support's Enterprise On-Ramp, highlighting features like Trusted Advisor checks, incident management, and technical account managers, with specific pricing details.](https://kodekloud.com/kk-media/image/upload/v1752861419/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Support-Options/frame_290.jpg)
 
 Pricing for Enterprise On-Ramp starts at a minimum of \$5,500 per month and follows a tiered percentage structure based on your overall AWS spend.
 
@@ -74,11 +74,11 @@ Enterprise Support delivers the most comprehensive range of assistance, ideal fo
 * A further reduced SLA of 15 minutes for mission-critical issues
 * Proactive services such as architecture reviews, in-depth training, and detailed infrastructure management
 
-![The image outlines the role of a Technical Account Manager (TAM) in AWS support, highlighting responsibilities like client education, architectural guidance, and issue facilitation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861420/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Support-Options/frame_410.jpg)
+![The image outlines the role of a Technical Account Manager (TAM) in AWS support, highlighting responsibilities like client education, architectural guidance, and issue facilitation.](https://kodekloud.com/kk-media/image/upload/v1752861420/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Support-Options/frame_410.jpg)
 
 Enterprise Support is tailored for businesses where rapid response and personalized guidance are paramount. It ensures optimal operation of your AWS environment through proactive reviews, training sessions, and additional management services.
 
-![The image outlines AWS Enterprise Support features, including proactive reviews, dedicated account manager, and critical system support, recommended for business-critical workloads, with pricing details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861421/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Support-Options/frame_440.jpg)
+![The image outlines AWS Enterprise Support features, including proactive reviews, dedicated account manager, and critical system support, recommended for business-critical workloads, with pricing details.](https://kodekloud.com/kk-media/image/upload/v1752861421/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Support-Options/frame_440.jpg)
 
 > **lightbulb** Only the Enterprise Support plan provides a dedicated Technical Account Manager. In contrast, Enterprise On-Ramp offers access to a pool of TAMs.
 
@@ -88,11 +88,11 @@ Enterprise Support is tailored for businesses where rapid response and personali
 
 AWS also extends support through third-party software solutions available in the AWS Marketplace. This platform hosts a variety of pre-configured setups from leading vendors such as Oracle, Red Hat, Cisco, TIBCO, Check Point, and Fortinet. The AWS Marketplace offers products including firewalls, CVE detection rules, web application firewall rule sets, and Helm charts for deployment.
 
-![The image discusses AWS support for pre-configured third-party software, featuring logos of Oracle, Red Hat, and Cisco.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861422/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Support-Options/frame_600.jpg)
+![The image discusses AWS support for pre-configured third-party software, featuring logos of Oracle, Red Hat, and Cisco.](https://kodekloud.com/kk-media/image/upload/v1752861422/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Support-Options/frame_600.jpg)
 
 For example, you can find offerings like FortiGate VM—a firewall solution—alongside other security-focused software solutions.
 
-![The image shows the AWS Marketplace interface, displaying product categories, delivery methods, and a list of security software products with descriptions and reviews.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861423/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Support-Options/frame_620.jpg)
+![The image shows the AWS Marketplace interface, displaying product categories, delivery methods, and a list of security software products with descriptions and reviews.](https://kodekloud.com/kk-media/image/upload/v1752861423/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Support-Options/frame_620.jpg)
 
 ***
 
@@ -108,7 +108,7 @@ The table below summarizes the various AWS support plans and their key features:
 | **Enterprise On-Ramp** | - All Business features<br />- 30-minute SLA<br />- Access to a pool of TAMs                            | 30 minutes                        |
 | **Enterprise**         | - All Enterprise On-Ramp features<br />- Dedicated TAM<br />- Proactive services and reviews            | 15 minutes                        |
 
-![The image summarizes five AWS support plans: Basic, Developer, Business, Enterprise On-Ramp, and Enterprise, detailing their features and service level agreements (SLAs).](../../../../images/kodekloud.com/kk-media/image/upload/v1752861424/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Support-Options/frame_720.jpg)
+![The image summarizes five AWS support plans: Basic, Developer, Business, Enterprise On-Ramp, and Enterprise, detailing their features and service level agreements (SLAs).](https://kodekloud.com/kk-media/image/upload/v1752861424/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Support-Options/frame_720.jpg)
 
 Each support plan beyond the Basic option is available either for a fixed monthly fee or based on a percentage of your AWS spending. Additionally, leveraging the AWS Marketplace allows you to access a broad spectrum of pre-configured and licensed third-party software designed to enhance your AWS environment.
 

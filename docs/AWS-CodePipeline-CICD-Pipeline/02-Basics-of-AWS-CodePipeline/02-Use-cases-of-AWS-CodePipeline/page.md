@@ -6,13 +6,13 @@ This article discusses AWS CodePipeline, a CI/CD service that automates release 
 
 AWS CodePipeline is a fully managed continuous integration and continuous delivery (CI/CD) service that automates your release pipelines for fast and reliable application and infrastructure updates. Its deep integration with AWS services—and flexibility to include third-party tools—makes it ideal for a variety of deployment strategies.
 
-![The image shows a DevOps lifecycle diagram with stages like Source, Build, Test, Deploy, CI, and CD, flanked by "aws" and "non aws" logos.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862579/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Use-cases-of-AWS-CodePipeline/devops-lifecycle-diagram-aws-nonaws.jpg)
+![The image shows a DevOps lifecycle diagram with stages like Source, Build, Test, Deploy, CI, and CD, flanked by "aws" and "non aws" logos.](https://kodekloud.com/kk-media/image/upload/v1752862579/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Use-cases-of-AWS-CodePipeline/devops-lifecycle-diagram-aws-nonaws.jpg)
 
 ## 1. All-AWS Pipeline
 
 When you want an end-to-end AWS-only solution, CodePipeline orchestrates native AWS services at each stage:
 
-![The image illustrates a DevOps workflow using AWS services, featuring AWS CodeCommit and Amazon S3 for source control, AWS CodeBuild for building, and AWS CodeDeploy for deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862580/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Use-cases-of-AWS-CodePipeline/devops-workflow-aws-services-diagram.jpg)
+![The image illustrates a DevOps workflow using AWS services, featuring AWS CodeCommit and Amazon S3 for source control, AWS CodeBuild for building, and AWS CodeDeploy for deployment.](https://kodekloud.com/kk-media/image/upload/v1752862580/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Use-cases-of-AWS-CodePipeline/devops-workflow-aws-services-diagram.jpg)
 
 | Stage  | AWS Service                   | Description                                                            |
 | ------ | ----------------------------- | ---------------------------------------------------------------------- |
@@ -39,7 +39,7 @@ Already invested in tools like GitHub or Jenkins? No problem—CodePipeline inte
 
 Choose the runtime that matches your workload. CodePipeline deploys across containers, servers, PaaS, and serverless:
 
-![The image displays four AWS deployment services: Amazon ECS, AWS Elastic Beanstalk, Amazon EC2, and AWS Lambda, each with its respective icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862580/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Use-cases-of-AWS-CodePipeline/aws-deployment-services-ecs-beanstalk-ec2-lambda.jpg)
+![The image displays four AWS deployment services: Amazon ECS, AWS Elastic Beanstalk, Amazon EC2, and AWS Lambda, each with its respective icon.](https://kodekloud.com/kk-media/image/upload/v1752862580/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Use-cases-of-AWS-CodePipeline/aws-deployment-services-ecs-beanstalk-ec2-lambda.jpg)
 
 | Deployment Type | AWS Service           | Use Case                            |
 | --------------- | --------------------- | ----------------------------------- |

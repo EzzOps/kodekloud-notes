@@ -4,9 +4,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 # openai.api_key = "<YOUR_API_KEY>"
 ```
 
-<Callout icon="triangle-alert">
-  Never commit your API key to source control. Use environment variables or a secrets manager to keep credentials safe.
-</Callout>
+> **triangle-alert** Never commit your API key to source control. Use environment variables or a secrets manager to keep credentials safe.
 
 ***
 
@@ -44,9 +42,7 @@ def get_word_completion(prompt: str) -> str:
 | temperature | Controls randomness (0 = deterministic) | `1.2`           |
 | n           | Number of completions to generate       | `1`             |
 
-<Callout icon="lightbulb">
-  Adjust `temperature` to control creativity; lower values yield more focused outputs, higher values produce varied text.
-</Callout>
+> **lightbulb** Adjust `temperature` to control creativity; lower values yield more focused outputs, higher values produce varied text.
 
 ***
 
@@ -174,19 +170,15 @@ from IPython.display import display, HTML
 display(HTML(response))
 ````
 
-<Frame>
-  ![The image shows a Jupyter Notebook interface displaying a text block that defines the context for a prompt about the "TerrainMaster Pro 2023 Mountain Bike," detailing its features, specifications, and price.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881538/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Demo-Implementing-Word-Completion/jupyter-notebook-terrainmaster-pro-bike.jpg)
-</Frame>
+![The image shows a Jupyter Notebook interface displaying a text block that defines the context for a prompt about the "TerrainMaster Pro 2023 Mountain Bike," detailing its features, specifications, and price.](https://kodekloud.com/kk-media/image/upload/v1752881538/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Demo-Implementing-Word-Completion/jupyter-notebook-terrainmaster-pro-bike.jpg)
 
 ***
 
 You’ve now implemented a flexible word completion demo! Next up, we’ll explore GPT-3.5 Turbo’s code-completion capabilities.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/81cc1b8d-42c4-4867-8161-f3cd89f745bf/lesson/79bf0b01-0fda-47f3-9e6f-4e2a84184647" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/81cc1b8d-42c4-4867-8161-f3cd89f745bf/lesson/79bf0b01-0fda-47f3-9e6f-4e2a84184647)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/81cc1b8d-42c4-4867-8161-f3cd89f745bf/lesson/93913a1f-9199-4739-9520-1ad029ec2ce9" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/81cc1b8d-42c4-4867-8161-f3cd89f745bf/lesson/93913a1f-9199-4739-9520-1ad029ec2ce9)
 
 
 # Implementing Word Completion
@@ -203,12 +195,8 @@ Unlock the power of OpenAI’s GPT-3.5 to build intelligent word-completion feat
 | Prompt Optimization | Tweak and refine prompts to control the style, length, and accuracy.       |
 | HTML Embedding      | Generate a ready-to-use, responsive HTML snippet to integrate on any page. |
 
-<Frame>
-  ![The image lists objectives related to leveraging GPT 3.5 for content generation, tweaking prompts, and generating HTML snippets. It features a blue gradient background with icons next to each objective.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881539/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Implementing-Word-Completion/gpt-3-5-content-generation-objectives.jpg)
-</Frame>
+![The image lists objectives related to leveraging GPT 3.5 for content generation, tweaking prompts, and generating HTML snippets. It features a blue gradient background with icons next to each objective.](https://kodekloud.com/kk-media/image/upload/v1752881539/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Implementing-Word-Completion/gpt-3-5-content-generation-objectives.jpg)
 
 Let’s dive into the step-by-step demonstration and see how to implement word completion with GPT-3.5.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/81cc1b8d-42c4-4867-8161-f3cd89f745bf/lesson/8d667851-b5ad-478b-8751-267637dca19c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/81cc1b8d-42c4-4867-8161-f3cd89f745bf/lesson/8d667851-b5ad-478b-8751-267637dca19c)

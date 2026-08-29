@@ -12,9 +12,7 @@ service:
       exporters: [...]
 ```
 
-<Callout icon="lightbulb">
-  Minimal required components for a running pipeline are a receiver and an exporter. If `service.pipelines` is present, each pipeline must reference the relevant receivers and exporters.
-</Callout>
+> **lightbulb** Minimal required components for a running pipeline are a receiver and an exporter. If `service.pipelines` is present, each pipeline must reference the relevant receivers and exporters.
 
 ## Minimal valid configuration
 
@@ -181,9 +179,7 @@ otlp:
 
 At startup, the Collector expands `${file:exporters.yaml}`, substitutes any environment variables, and merges everything into a single runtime configuration.
 
-<Callout icon="warning">
-  When splitting files, ensure included paths are correct and the merged configuration produces valid references (names in `service.pipelines` must match declared component names). Test locally before deploying to production.
-</Callout>
+> **warning** When splitting files, ensure included paths are correct and the merged configuration produces valid references (names in `service.pipelines` must match declared component names). Test locally before deploying to production.
 
 ## Quick reference
 
@@ -198,9 +194,7 @@ Further reading:
 * [OpenTelemetry Collector GitHub repository](https://github.com/open-telemetry/opentelemetry-collector)
 * [Collector configuration docs](https://opentelemetry.io/docs/collector/configuration/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/94d2710a-c270-4c49-9e4b-df67653f1b47/lesson/06f2b9f7-4571-42a6-9e8a-58dddb6ec162" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/94d2710a-c270-4c49-9e4b-df67653f1b47/lesson/06f2b9f7-4571-42a6-9e8a-58dddb6ec162)
 
 
 # Before OpenTelemetry Why Standardization Was the Missing Piece
@@ -299,9 +293,7 @@ To summarize the key challenges before standardization:
 
 OpenTelemetry addresses these issues by standardizing APIs and formats for metrics, logs, and traces, and by providing a flexible Collector to process and export telemetry to any backend. This reduces vendor lock-in, supports gradual adoption, and enables exporting the same telemetry to multiple destinations for future-proofing.
 
-<Callout icon="lightbulb">
-  OpenTelemetry provides a vendor-neutral instrumentation layer plus a configurable Collector. Instrument once; export anywhere. This enables flexibility, easier migrations, and hybrid coexistence with existing vendor ecosystems.
-</Callout>
+> **lightbulb** OpenTelemetry provides a vendor-neutral instrumentation layer plus a configurable Collector. Instrument once; export anywhere. This enables flexibility, easier migrations, and hybrid coexistence with existing vendor ecosystems.
 
 That concludes this lesson.
 
@@ -313,6 +305,4 @@ References and further reading:
 * Jaeger: [https://www.jaegertracing.io](https://www.jaegertracing.io)
 * ELK Stack: [https://www.elastic.co/what-is/elk-stack](https://www.elastic.co/what-is/elk-stack)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/79b34fea-6f94-4854-a31e-9ac0fbc10eca/lesson/79d6185c-e761-46ee-b4a1-fc552c0272b3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/79b34fea-6f94-4854-a31e-9ac0fbc10eca/lesson/79d6185c-e761-46ee-b4a1-fc552c0272b3)

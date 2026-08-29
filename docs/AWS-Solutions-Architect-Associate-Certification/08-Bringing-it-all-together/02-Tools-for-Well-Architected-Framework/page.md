@@ -27,7 +27,7 @@ The Well-Architected Framework comprises six pillars:
 
 While Security, Reliability, Performance Efficiency, and Cost Optimization are core components, Operational Excellence is specifically beneficial for DevOps engineers, and the Sustainability pillar, although critical, is less frequently emphasized.
 
-![The image outlines the AWS Well-Architected Framework, highlighting its six pillars: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability. It also mentions three tools: the AWS Well-Architected Framework, the Well-Architected Tool, and AWS Lenses and Guidance Whitepapers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863458/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Tools-for-Well-Architected-Framework/aws-well-architected-framework-pillars.jpg)
+![The image outlines the AWS Well-Architected Framework, highlighting its six pillars: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability. It also mentions three tools: the AWS Well-Architected Framework, the Well-Architected Tool, and AWS Lenses and Guidance Whitepapers.](https://kodekloud.com/kk-media/image/upload/v1752863458/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Tools-for-Well-Architected-Framework/aws-well-architected-framework-pillars.jpg)
 
 > **lightbulb** Although memorizing every detail of the whitepapers is not necessary for certification, a solid understanding of these pillars and tools is highly recommended for real-world AWS architectural optimization.
 
@@ -39,11 +39,11 @@ Access the Well-Architected Tool through your AWS Console to evaluate your workl
 
 The tool provides a clear overview with status indicators for answered and unanswered questions, risk assessments (categorized as high or medium risk), and recommendations for improvements. Additionally, you can generate comprehensive reports for your workloads.
 
-![The image outlines three AWS tools: the Well-Architected Framework, the Well-Architected Tool, and AWS Lenses and Guidance Whitepapers, with a flowchart detailing the process of using the Well-Architected Tool.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863459/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Tools-for-Well-Architected-Framework/aws-well-architected-tools-flowchart.jpg)
+![The image outlines three AWS tools: the Well-Architected Framework, the Well-Architected Tool, and AWS Lenses and Guidance Whitepapers, with a flowchart detailing the process of using the Well-Architected Tool.](https://kodekloud.com/kk-media/image/upload/v1752863459/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Tools-for-Well-Architected-Framework/aws-well-architected-tools-flowchart.jpg)
 
-![The image presents three AWS tools: the Well Architected Framework, the Well Architected Tool (WA Tool), and AWS Lenses and Guidance Whitepapers, with a screenshot of the WA Tool interface for defining a workload.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863460/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Tools-for-Well-Architected-Framework/aws-well-architected-tools-screenshot.jpg)
+![The image presents three AWS tools: the Well Architected Framework, the Well Architected Tool (WA Tool), and AWS Lenses and Guidance Whitepapers, with a screenshot of the WA Tool interface for defining a workload.](https://kodekloud.com/kk-media/image/upload/v1752863460/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Tools-for-Well-Architected-Framework/aws-well-architected-tools-screenshot.jpg)
 
-![The image shows a slide highlighting three AWS tools: the Well Architected Framework, the Well Architected Tool, and AWS Lenses and Guidance Whitepapers, along with a screenshot of the Well-Architected Tool interface displaying workload details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863461/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Tools-for-Well-Architected-Framework/aws-well-architected-tools-slide.jpg)
+![The image shows a slide highlighting three AWS tools: the Well Architected Framework, the Well Architected Tool, and AWS Lenses and Guidance Whitepapers, along with a screenshot of the Well-Architected Tool interface displaying workload details.](https://kodekloud.com/kk-media/image/upload/v1752863461/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Tools-for-Well-Architected-Framework/aws-well-architected-tools-slide.jpg)
 
 This powerful tool is invaluable for ensuring that your workloads adhere to AWS best practices and remain architecturally sound as your expertise as a solutions architect grows.
 
@@ -57,9 +57,9 @@ In addition to the framework and tool, AWS offers targeted whitepapers categoriz
 
 * **AWS Guidance:** These whitepapers cover broader architectural concepts and best practices. They address topics such as serverless architecture, operational readiness reviews, and disaster recovery strategies tailored for complex cloud environments.
 
-![The image lists three AWS tools and guidance whitepapers, including the AWS Well-Architected Framework, the Well-Architected Tool, and AWS Lenses and Guidance Whitepapers, with specific lenses for different industries and technologies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863462/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Tools-for-Well-Architected-Framework/aws-tools-guidance-whitepapers.jpg)
+![The image lists three AWS tools and guidance whitepapers, including the AWS Well-Architected Framework, the Well-Architected Tool, and AWS Lenses and Guidance Whitepapers, with specific lenses for different industries and technologies.](https://kodekloud.com/kk-media/image/upload/v1752863462/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Tools-for-Well-Architected-Framework/aws-tools-guidance-whitepapers.jpg)
 
-![The image lists three AWS tools: the Well Architected Framework, the Well Architected Tool, and the AWS Lenses and Guidance Whitepapers, with examples of whitepapers related to DevOps, architecture, and operational readiness.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863464/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Tools-for-Well-Architected-Framework/aws-tools-well-architected-whitepapers.jpg)
+![The image lists three AWS tools: the Well Architected Framework, the Well Architected Tool, and the AWS Lenses and Guidance Whitepapers, with examples of whitepapers related to DevOps, architecture, and operational readiness.](https://kodekloud.com/kk-media/image/upload/v1752863464/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Tools-for-Well-Architected-Framework/aws-tools-well-architected-whitepapers.jpg)
 
 These whitepapers have been popular resources since 2021. They offer valuable insights for both industry-specific challenges and high-level strategic planning, making them essential reading as you continually refine your AWS architectural practices.
 

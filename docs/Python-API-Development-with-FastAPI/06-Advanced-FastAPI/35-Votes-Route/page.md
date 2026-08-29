@@ -158,9 +158,7 @@ def vote(vote: schemas.Vote, db: database.Session = Depends(database.get_db),
         return {"message": "successfully deleted vote"}
 ```
 
-<Callout icon="lightbulb">
-  Always validate that the target post exists before processing any vote changes. This prevents unnecessary database operations and improves the robustness of your endpoint.
-</Callout>
+> **lightbulb** Always validate that the target post exists before processing any vote changes. This prevents unnecessary database operations and improves the robustness of your endpoint.
 
 A simplified version of the vote logic is as follows:
 
@@ -234,8 +232,7 @@ If successful, the confirmation will be:
 
 If the vote does not exist, a 404 error with the detail "Vote does not exist" is returned.
 
-<Callout icon="lightbulb">
-  Before testing, you may want to clean your votes table using SQL:
+> **lightbulb** Before testing, you may want to clean your votes table using SQL:
 
   * Delete all votes:
 
@@ -248,7 +245,6 @@ If the vote does not exist, a 404 error with the detail "Vote does not exist" is
     ```sql theme={null}
     SELECT * FROM votes;
     ```
-</Callout>
 
 ## Including the Vote Router in the Main Application
 
@@ -331,18 +327,12 @@ def vote(vote: schemas.Vote, db: database.Session = Depends(database.get_db),
 
 Below are images showing a code editor session and a Postman interface during testing. These images confirm that the changes have been applied correctly and help provide context.
 
-<Frame>
-  ![The image shows a Visual Studio Code interface with Python code, including class definitions and a terminal displaying server startup information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883345/notes-assets/images/Python-API-Development-with-FastAPI-Votes-Route/vscode-python-code-class-definitions.jpg)
-</Frame>
+![The image shows a Visual Studio Code interface with Python code, including class definitions and a terminal displaying server startup information.](https://kodekloud.com/kk-media/image/upload/v1752883345/notes-assets/images/Python-API-Development-with-FastAPI-Votes-Route/vscode-python-code-class-definitions.jpg)
 
-<Frame>
-  ![The image shows the Postman application interface with a workspace open, displaying various API request options like GET, POST, and DELETE on the left sidebar. The main area is set up for creating a new GET request, with sections for parameters, headers, and other settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883346/notes-assets/images/Python-API-Development-with-FastAPI-Votes-Route/postman-api-request-interface.jpg)
-</Frame>
+![The image shows the Postman application interface with a workspace open, displaying various API request options like GET, POST, and DELETE on the left sidebar. The main area is set up for creating a new GET request, with sections for parameters, headers, and other settings.](https://kodekloud.com/kk-media/image/upload/v1752883346/notes-assets/images/Python-API-Development-with-FastAPI-Votes-Route/postman-api-request-interface.jpg)
 
 By following these steps, you have implemented a robust voting feature in your FastAPI application. For more details on FastAPI and deployment, consider checking out the [FastAPI Documentation](https://fastapi.tiangolo.com) and exploring additional resources such as [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/).
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/7b503633-91d0-4745-9504-2e8e43648e65" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/7b503633-91d0-4745-9504-2e8e43648e65)

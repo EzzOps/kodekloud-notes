@@ -52,23 +52,23 @@ remote: Validating objects: 0
 
 Once pushed, refreshing the CodeCommit repository confirms that all files are intact.
 
-![The image shows an AWS CodeCommit repository named "codeDeployDemo" with a list of files including scripts, appspec.yml, codedeploy.sh, demo.pem, and index.html. The interface displays options for managing the repository, such as creating a pull request and cloning the URL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858000/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy-with-codepipeline-Demo/aws-codecommit-repo-codedepoydemo.jpg)
+![The image shows an AWS CodeCommit repository named "codeDeployDemo" with a list of files including scripts, appspec.yml, codedeploy.sh, demo.pem, and index.html. The interface displays options for managing the repository, such as creating a pull request and cloning the URL.](https://kodekloud.com/kk-media/image/upload/v1752858000/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy-with-codepipeline-Demo/aws-codecommit-repo-codedepoydemo.jpg)
 
 ## Configuring CodePipeline
 
 Next, create a new pipeline in CodePipeline. For our demo, we name the pipeline "CodeDeploy Pipeline Demo" and retain the default settings.
 
-![The image shows the AWS CodePipeline settings page, where a user is configuring a pipeline named "codedeploypipelineDemo" with options for pipeline type, execution mode, and service role.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858001/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy-with-codepipeline-Demo/aws-codepipeline-settings-codedeploypipeline.jpg)
+![The image shows the AWS CodePipeline settings page, where a user is configuring a pipeline named "codedeploypipelineDemo" with options for pipeline type, execution mode, and service role.](https://kodekloud.com/kk-media/image/upload/v1752858001/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy-with-codepipeline-Demo/aws-codepipeline-settings-codedeploypipeline.jpg)
 
 On the following page, select AWS CodeCommit as the source provider. Choose the "CodeDeploy Demo" repository and select the main branch.
 
-![The image shows an AWS CodePipeline interface where a user is adding a source stage, selecting AWS CodeCommit as the source provider, and choosing a repository.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858002/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy-with-codepipeline-Demo/aws-codepipeline-source-stage-codecommit.jpg)
+![The image shows an AWS CodePipeline interface where a user is adding a source stage, selecting AWS CodeCommit as the source provider, and choosing a repository.](https://kodekloud.com/kk-media/image/upload/v1752858002/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy-with-codepipeline-Demo/aws-codepipeline-source-stage-codecommit.jpg)
 
 Skip the optional build stage (which can be used for linting, testing, or packaging) and proceed directly to the deployment stage. For deployment, select AWS CodeDeploy, specify your application name as "web app" and choose the appropriate deployment group. Continue to the next step.
 
 After reviewing your pipeline settings, create the pipeline. It will run immediately, with both the source and deployment stages completing successfully.
 
-![The image shows an AWS CodePipeline review page, displaying pipeline settings such as the pipeline name, type, execution mode, and artifact location. There are no variables defined at the pipeline level.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858003/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy-with-codepipeline-Demo/aws-codepipeline-review-settings.jpg)
+![The image shows an AWS CodePipeline review page, displaying pipeline settings such as the pipeline name, type, execution mode, and artifact location. There are no variables defined at the pipeline level.](https://kodekloud.com/kk-media/image/upload/v1752858003/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy-with-codepipeline-Demo/aws-codepipeline-review-settings.jpg)
 
 At this stage, the pipeline processes the first version of your deployment. Since the current code is version two and no new changes are present, the deployment reflects version two.
 
@@ -101,7 +101,7 @@ git push
 
 Within seconds, the updated pipeline executes and successfully deploys version three of your application.
 
-![The image shows an AWS CodePipeline interface with successful stages for "Source" and "Deploy" using AWS CodeCommit and AWS CodeDeploy. The pipeline execution is marked as succeeded.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858004/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy-with-codepipeline-Demo/aws-codepipeline-success-source-deploy.jpg)
+![The image shows an AWS CodePipeline interface with successful stages for "Source" and "Deploy" using AWS CodeCommit and AWS CodeDeploy. The pipeline execution is marked as succeeded.](https://kodekloud.com/kk-media/image/upload/v1752858004/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy-with-codepipeline-Demo/aws-codepipeline-success-source-deploy.jpg)
 
 After the deployment, verify the updated application version on your EC2 instance.
 

@@ -75,17 +75,13 @@ Using reusable modules in Terraform provides several advantages:
 
 By adopting a module-based approach, you ensure that key configuration aspects such as the EC2 instance type and DynamoDB settings remain constant, while still being able to adjust region-specific variables like the AMI ID and bucket naming.
 
-<Callout icon="lightbulb">
-  For further learning on Terraform modules, refer to the [Terraform Documentation](https://www.terraform.io/docs/modules/index.html).
-</Callout>
+> **lightbulb** For further learning on Terraform modules, refer to the [Terraform Documentation](https://www.terraform.io/docs/modules/index.html).
 
 ***
 
 That’s it for this guide on creating and deploying a Terraform module for multiple environments. Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/7b1fdaed-c4dd-45b8-be74-8068def45ce7/lesson/29347ea5-f039-4996-a0c6-9ab7d94659d9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/7b1fdaed-c4dd-45b8-be74-8068def45ce7/lesson/29347ea5-f039-4996-a0c6-9ab7d94659d9)
 
 
 # Terraform Modules
@@ -153,9 +149,7 @@ module "dev-webserver" {
 }
 ```
 
-<Callout icon="lightbulb">
-  Using absolute paths can be effective in some scenarios, but it is generally recommended to use relative paths for portability.
-</Callout>
+> **lightbulb** Using absolute paths can be effective in some scenarios, but it is generally recommended to use relative paths for portability.
 
 ## Leveraging the Terraform Registry
 
@@ -163,9 +157,7 @@ One of the key benefits of using modules is code reusability. In addition to loc
 
 Below is an example search result:
 
-<Frame>
-  ![The image shows a search result for "security-group" in the Terraform Registry, listing various modules for AWS and Azure security groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884150/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Modules/frame_190.jpg)
-</Frame>
+![The image shows a search result for "security-group" in the Terraform Registry, listing various modules for AWS and Azure security groups.](https://kodekloud.com/kk-media/image/upload/v1752884150/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Modules/frame_190.jpg)
 
 Modules found in the Registry typically include publisher details, version information, and usage instructions with examples. They might also offer sub-modules for common configurations like SSH, HTTP, or HTTPS security rules.
 
@@ -207,9 +199,7 @@ After defining your configuration, follow the standard Terraform workflow:
 2. **Plan and Apply:**\
    Validate the configuration with `terraform plan` and create the resources using `terraform apply`.
 
-<Callout icon="lightbulb">
-  Remember that running `terraform init`, `terraform plan`, and `terraform apply` in the directory where your root module is located is crucial for successful deployment.
-</Callout>
+> **lightbulb** Remember that running `terraform init`, `terraform plan`, and `terraform apply` in the directory where your root module is located is crucial for successful deployment.
 
 ## Benefits of Using Modules
 
@@ -231,6 +221,4 @@ In the next lesson, we will dive deeper into advanced module usage, exploring te
 
 Happy coding with Terraform!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/7b1fdaed-c4dd-45b8-be74-8068def45ce7/lesson/b83ef4fa-afa8-4ada-b72e-425153d4b38e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/7b1fdaed-c4dd-45b8-be74-8068def45ce7/lesson/b83ef4fa-afa8-4ada-b72e-425153d4b38e)

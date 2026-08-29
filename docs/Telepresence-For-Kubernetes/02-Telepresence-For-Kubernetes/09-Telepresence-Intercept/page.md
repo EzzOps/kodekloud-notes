@@ -32,14 +32,12 @@ Run the intercept:
 telepresence intercept products-depl --port 8000:3000
 ```
 
-<Callout icon="lightbulb">
-  If the target Service exposes only one port, you can omit `:REMOTE`.\
+> **lightbulb** If the target Service exposes only one port, you can omit `:REMOTE`.\
   For example:
 
   ```bash theme={null}
   telepresence intercept products-depl -p 8000
   ```
-</Callout>
 
 Once the intercept is established, Telepresence injects a traffic-agent sidecar into the `products-depl` Pod. All calls from other Pods (for example, an `inventory` Service) to port 3000 are proxied through the cluster to your local process on port 8000.
 
@@ -74,9 +72,7 @@ telepresence intercept products-depl   --port 8000:3000
 telepresence intercept inventory-depl  --port 9000:3000
 ```
 
-<Callout icon="triangle-alert">
-  Each intercept binds a unique local port. Reusing a port will cause the command to fail.
-</Callout>
+> **triangle-alert** Each intercept binds a unique local port. Reusing a port will cause the command to fail.
 
 ## Traffic Flow with Multiple Intercepts
 
@@ -95,10 +91,6 @@ Active intercepts route all cluster traffic for a Service to your machine. If mu
 * Deploy each developer’s version into a dedicated namespace.
 * Instruct teammates to intercept only their namespace’s resources.
 
-<Frame>
-  ![The image illustrates a Kubernetes setup with two namespaces, "test1" and "test2," showing a "products" deployment with a traffic agent and inventory components, connected via a tunnel to a laptop.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884094/notes-assets/images/Telepresence-For-Kubernetes-Telepresence-Intercept/kubernetes-setup-test1-test2-deployment.jpg)
-</Frame>
+![The image illustrates a Kubernetes setup with two namespaces, "test1" and "test2," showing a "products" deployment with a traffic agent and inventory components, connected via a tunnel to a laptop.](https://kodekloud.com/kk-media/image/upload/v1752884094/notes-assets/images/Telepresence-For-Kubernetes-Telepresence-Intercept/kubernetes-setup-test1-test2-deployment.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/41d1b77b-856c-41dc-b9e4-664220981aaf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/41d1b77b-856c-41dc-b9e4-664220981aaf)

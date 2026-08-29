@@ -20,9 +20,7 @@ git clone <GitHub-URL-of-htop-repository>
 
 After cloning, switch to the project's directory and review its contents. You'll notice a README file that includes built-in instructions for building the project, along with other key files.
 
-<Frame>
-  ![The image shows a terminal window displaying a list of files and directories, likely from a source code repository. The files have various extensions such as .c, .h, and .md, and some directory names are highlighted in different colors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881341/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Install-Software-by-Compiling-Source-Code/terminal-file-list-repository.jpg)
-</Frame>
+![The image shows a terminal window displaying a list of files and directories, likely from a source code repository. The files have various extensions such as .c, .h, and .md, and some directory names are highlighted in different colors.](https://kodekloud.com/kk-media/image/upload/v1752881341/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Install-Software-by-Compiling-Source-Code/terminal-file-list-repository.jpg)
 
 ## Install Dependencies
 
@@ -34,9 +32,7 @@ Install the required packages by running:
 sudo apt install libncursesw5-dev autotools-dev autoconf automake build-essential
 ```
 
-<Callout icon="lightbulb">
-  If you encounter dependency errors, verify that your software repositories are updated and consider running `sudo apt update` before installing.
-</Callout>
+> **lightbulb** If you encounter dependency errors, verify that your software repositories are updated and consider running `sudo apt update` before installing.
 
 ## Run the Autogen Script
 
@@ -82,9 +78,7 @@ bash
 
 Running `./configure` without arguments will configure the project using default settings.
 
-<Frame>
-  ![The image shows a terminal screen displaying configuration options and environment variables for compiling software, specifically related to the htop program. It includes options for enabling warnings, debugging, and specifying package locations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881342/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Install-Software-by-Compiling-Source-Code/htop-configuration-options-terminal.jpg)
-</Frame>
+![The image shows a terminal screen displaying configuration options and environment variables for compiling software, specifically related to the htop program. It includes options for enabling warnings, debugging, and specifying package locations.](https://kodekloud.com/kk-media/image/upload/v1752881342/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Install-Software-by-Compiling-Source-Code/htop-configuration-options-terminal.jpg)
 
 ## Verify Configuration Requirements
 
@@ -188,9 +182,7 @@ htop
 
 Because `/usr/local/bin` is in the default PATH for Ubuntu, you no longer need to specify the full path to launch the application.
 
-<Callout icon="lightbulb">
-  Compiling software from source can provide enhanced performance and access to the latest features. Always refer to the project's README for specific build instructions and troubleshooting tips.
-</Callout>
+> **lightbulb** Compiling software from source can provide enhanced performance and access to the latest features. Always refer to the project's README for specific build instructions and troubleshooting tips.
 
 ## Conclusion
 
@@ -209,8 +201,6 @@ By compiling from source, you ensure that you are running the most recent versio
 htop
 ```
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/15d1d3cd-fb6e-4182-a077-3ad845fe52a5" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/15d1d3cd-fb6e-4182-a077-3ad845fe52a5)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/3cf44209-0fd2-49f1-8bb4-671d31110cc3" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/3cf44209-0fd2-49f1-8bb4-671d31110cc3)

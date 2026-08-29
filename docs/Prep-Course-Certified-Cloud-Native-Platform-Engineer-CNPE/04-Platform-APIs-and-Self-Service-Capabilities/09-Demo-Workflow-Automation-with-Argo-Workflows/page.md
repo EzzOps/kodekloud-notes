@@ -170,9 +170,7 @@ test-cert-tls   kubernetes.io/tls   3     14s
 
 Operators continuously watch their owned resources and reconcile until the observed state matches the desired state. Deleting side-effect resources (for example, Secrets or ConfigMaps created by an operator) does not permanently break the system — the operator will typically restore them.
 
-<Callout icon="lightbulb">
-  Always start troubleshooting custom resources by inspecting their `status.conditions`. Use `kubectl describe <kind> <name> -n <namespace>` (or `kubectl get <kind> <name> -n <namespace> -o yaml`) to see the operator-reported `Status`, `Reason`, human-readable `Message`, and related events.
-</Callout>
+> **lightbulb** Always start troubleshooting custom resources by inspecting their `status.conditions`. Use `kubectl describe <kind> <name> -n <namespace>` (or `kubectl get <kind> <name> -n <namespace> -o yaml`) to see the operator-reported `Status`, `Reason`, human-readable `Message`, and related events.
 
 ## Key takeaways (exam & production)
 
@@ -185,11 +183,9 @@ Operators continuously watch their owned resources and reconcile until the obser
 * cert-manager documentation: [https://cert-manager.io/docs/](https://cert-manager.io/docs/)
 * Kubernetes documentation: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/33c8c726-73a9-4e4f-9b19-f426aa8cc191" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/33c8c726-73a9-4e4f-9b19-f426aa8cc191)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/208267db-ac21-46da-a59d-a686feee49f7" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/208267db-ac21-46da-a59d-a686feee49f7)
 
 
 # Demo Workflow Automation with Argo Workflows
@@ -206,9 +202,7 @@ Argo Workflows is a Kubernetes-native workflow orchestration engine for running 
 | Tekton         | CI/CD pipelines                        | Build, test, and push artifacts                             |
 | Argo Workflows | General-purpose workflow orchestration | Orchestrate multi-step tasks and dependencies in Kubernetes |
 
-<Callout icon="lightbulb">
-  This guide assumes Argo Workflows is already installed in your Kubernetes cluster. If you need installation instructions, refer to the official docs: [Argo Workflows installation](https://argoproj.github.io/argo-workflows/installation/).
-</Callout>
+> **lightbulb** This guide assumes Argo Workflows is already installed in your Kubernetes cluster. If you need installation instructions, refer to the official docs: [Argo Workflows installation](https://argoproj.github.io/argo-workflows/installation/).
 
 In this article we build progressively more advanced workflows to demonstrate common Argo constructs:
 

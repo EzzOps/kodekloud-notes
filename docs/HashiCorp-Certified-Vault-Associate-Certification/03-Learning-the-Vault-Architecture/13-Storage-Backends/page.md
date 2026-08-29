@@ -21,17 +21,13 @@ Vault 1.7 provides a broad selection of backends for any environment:
 | etcd, MySQL, PostgreSQL   | Community          | Custom database deployments           |
 | In-Memory (dev mode)      | Open Source        | Testing and non-production            |
 
-<Frame>
-  ![The image lists various storage backend options, divided into two columns, with a note indicating they are updated based on Vault 1.7.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878219/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Storage-Backends/storage-backend-options-vault-1-7.jpg)
-</Frame>
+![The image lists various storage backend options, divided into two columns, with a note indicating they are updated based on Vault 1.7.](https://kodekloud.com/kk-media/image/upload/v1752878219/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Storage-Backends/storage-backend-options-vault-1-7.jpg)
 
 ## Storage Backend Architecture
 
 A Vault cluster consists of one active node and one or more standbys, all sharing a single storage backend. Every node reads from and writes to the same data store. If you deploy multiple clusters for geographic redundancy, each cluster uses its own backend. Enterprise-level replication is handled between Vault nodes via the Vault API—not directly between storage backends.
 
-<Frame>
-  ![The image illustrates a diagram of two Vault clusters, each with multiple Vault nodes connected to a single storage backend, with replication between the clusters. It emphasizes that there is only one storage backend per Vault cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878220/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Storage-Backends/vault-clusters-replication-diagram.jpg)
-</Frame>
+![The image illustrates a diagram of two Vault clusters, each with multiple Vault nodes connected to a single storage backend, with replication between the clusters. It emphasizes that there is only one storage backend per Vault cluster.](https://kodekloud.com/kk-media/image/upload/v1752878220/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Storage-Backends/vault-clusters-replication-diagram.jpg)
 
 ## Choosing a Storage Backend
 
@@ -41,13 +37,9 @@ When evaluating storage backends, consider:
 * HA requirements (single-node vs. multi-node)
 * Whether Enterprise support and features are needed
 
-<Callout icon="lightbulb">
-  Use this decision flow to match your requirements with the right backend. For simple testing or CI, in-memory dev mode may suffice. For critical production data, choose a robust HA backend like Consul or Raft.
-</Callout>
+> **lightbulb** Use this decision flow to match your requirements with the right backend. For simple testing or CI, in-memory dev mode may suffice. For critical production data, choose a robust HA backend like Consul or Raft.
 
-<Frame>
-  ![The image is a flowchart for choosing a storage backend, with decision points for production use, high availability support, and HashiCorp support, leading to various storage options like In-Memory, Filesystem, and others.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878221/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Storage-Backends/storage-backend-decision-flowchart.jpg)
-</Frame>
+![The image is a flowchart for choosing a storage backend, with decision points for production use, high availability support, and HashiCorp support, leading to various storage options like In-Memory, Filesystem, and others.](https://kodekloud.com/kk-media/image/upload/v1752878221/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Storage-Backends/storage-backend-decision-flowchart.jpg)
 
 ## Configuring Your Storage Backend
 
@@ -84,9 +76,7 @@ storage "raft" {
 * **node\_id**: Identifier used by Raft to address each node
 * **retry\_join.auto\_join**: Uses AWS EC2 tags to discover and join peers automatically
 
-<Callout icon="triangle-alert">
-  Do not commit configuration files containing plain-text tokens or credentials to version control. Use environment variables or a secure secrets manager to inject sensitive data.
-</Callout>
+> **triangle-alert** Do not commit configuration files containing plain-text tokens or credentials to version control. Use environment variables or a secure secrets manager to inject sensitive data.
 
 For detailed configurations and advanced options, see the [Vault Storage Backends documentation](https://www.vaultproject.io/docs/configuration/storage).
 
@@ -97,6 +87,4 @@ For detailed configurations and advanced options, see the [Vault Storage Backend
 * [Integrated Storage (Raft)](https://www.vaultproject.io/docs/configuration/storage/raft)
 * [Vault Enterprise Features](https://www.vaultproject.io/docs/enterprise)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/8a165eba-4f99-4252-beb4-b627013dc401" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/8a165eba-4f99-4252-beb4-b627013dc401)

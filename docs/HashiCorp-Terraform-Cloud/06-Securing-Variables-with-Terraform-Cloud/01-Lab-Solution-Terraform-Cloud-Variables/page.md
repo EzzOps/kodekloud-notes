@@ -72,13 +72,9 @@ Enforcement levels determine how Sentinel handles violations:
 | soft-mandatory    | Blocks runs unless an admin override is added   |
 | hard-mandatory    | Strictly enforces the policy; no bypass allowed |
 
-<Callout icon="triangle-alert">
-  The **hard-mandatory** level cannot be bypassed. Any violation will block the run.
-</Callout>
+> **triangle-alert** The **hard-mandatory** level cannot be bypassed. Any violation will block the run.
 
-<Frame>
-  ![The image shows a KodeKloud lab interface for Terraform Cloud Sentinel Policy, with instructions on setting up a policy set and a Visual Studio Code editor displaying a welcome message for the HashiCorp Terraform Cloud Lab.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878774/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/kodekloud-terraform-cloud-sentinel-policy-2.jpg)
-</Frame>
+![The image shows a KodeKloud lab interface for Terraform Cloud Sentinel Policy, with instructions on setting up a policy set and a Visual Studio Code editor displaying a welcome message for the HashiCorp Terraform Cloud Lab.](https://kodekloud.com/kk-media/image/upload/v1752878774/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/kodekloud-terraform-cloud-sentinel-policy-2.jpg)
 
 ## Connect the Policy Set to Terraform Cloud
 
@@ -91,29 +87,19 @@ Enforcement levels determine how Sentinel handles violations:
 4. Apply to **All workspaces**.
 5. Click **Connect policy set**.
 
-<Frame>
-  ![The image shows a web interface for connecting a policy set to a version control provider, with options for GitHub and GitHub (Custom). The sidebar includes navigation options like Teams, Users, and Policy sets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878775/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/web-interface-policy-set-github-options.jpg)
-</Frame>
+![The image shows a web interface for connecting a policy set to a version control provider, with options for GitHub and GitHub (Custom). The sidebar includes navigation options like Teams, Users, and Policy sets.](https://kodekloud.com/kk-media/image/upload/v1752878775/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/web-interface-policy-set-github-options.jpg)
 
-<Frame>
-  ![The image shows a user interface for connecting a policy set in Terraform Cloud, where a repository is being selected from a list. The sidebar includes options like teams, users, and policy sets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878776/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/terraform-cloud-policy-set-ui.jpg)
-</Frame>
+![The image shows a user interface for connecting a policy set in Terraform Cloud, where a repository is being selected from a list. The sidebar includes options like teams, users, and policy sets.](https://kodekloud.com/kk-media/image/upload/v1752878776/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/terraform-cloud-policy-set-ui.jpg)
 
-<Frame>
-  ![The image shows a "Policy Sets" page from a Terraform Cloud interface, featuring options to connect a new policy set and information about existing AWS-Global-Policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878778/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/terraform-cloud-policy-sets-page.jpg)
-</Frame>
+![The image shows a "Policy Sets" page from a Terraform Cloud interface, featuring options to connect a new policy set and information about existing AWS-Global-Policies.](https://kodekloud.com/kk-media/image/upload/v1752878778/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/terraform-cloud-policy-sets-page.jpg)
 
 ## Test Policy Enforcement in the UI
 
 Trigger a new run in your workspace. After the plan stage, you’ll see **Policy check**:
 
-<Frame>
-  ![The image shows a Terraform Cloud workspace dashboard for "devops-aws-myapp-dev," displaying details of the latest run, including instance type changes, policy checks, and cost estimates. The "Actions" menu is open, offering options to start a new run or lock the workspace.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878779/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/terraform-cloud-workspace-devops-dashboard.jpg)
-</Frame>
+![The image shows a Terraform Cloud workspace dashboard for "devops-aws-myapp-dev," displaying details of the latest run, including instance type changes, policy checks, and cost estimates. The "Actions" menu is open, offering options to start a new run or lock the workspace.](https://kodekloud.com/kk-media/image/upload/v1752878779/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/terraform-cloud-workspace-devops-dashboard.jpg)
 
-<Frame>
-  ![The image shows a Terraform Cloud interface with a "Test Sentinel" run in progress, indicating no changes to the infrastructure. Various stages like cost estimation, policy check, and apply are pending.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878781/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/terraform-cloud-test-sentinel-run.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface with a "Test Sentinel" run in progress, indicating no changes to the infrastructure. Various stages like cost estimation, policy check, and apply are pending.](https://kodekloud.com/kk-media/image/upload/v1752878781/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/terraform-cloud-test-sentinel-run.jpg)
 
 Policy results appear in the run output:
 
@@ -141,9 +127,7 @@ This policy uses the Sentinel tfplan/v2 import to require that all EC2 instances
 
 This triggers a remote run with policy checks. Violations will block the plan.
 
-<Frame>
-  ![The image shows a Terraform Cloud interface with a CLI-triggered run. The plan and cost estimation are completed, but the policy check has failed due to a restriction on EC2 instance types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878782/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/terraform-cloud-cli-run-policy-failed.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface with a CLI-triggered run. The plan and cost estimation are completed, but the policy check has failed due to a restriction on EC2 instance types.](https://kodekloud.com/kk-media/image/upload/v1752878782/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/terraform-cloud-cli-run-policy-failed.jpg)
 
 ```plaintext theme={null}
 ## Policy: AWS-Global-Policies/restrict-ec2-instance-type (hard-mandatory)
@@ -187,39 +171,27 @@ This policy uses the Sentinel tfplan/v2 import to require that all EC2 instances
 
 **Terraform Public Registry – Policy Library (Beta):** [Terraform Public Registry Policy Library (Beta)](https://registry.terraform.io/policy-library)
 
-<Frame>
-  ![The image shows a webpage for "Policy Libraries" in beta, featuring Sentinel policies for Terraform. It includes filters for providers and categories, and lists policies for GCP and Azure with details like version and download count.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878783/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/policy-libraries-beta-sentinel-terraform.jpg)
-</Frame>
+![The image shows a webpage for "Policy Libraries" in beta, featuring Sentinel policies for Terraform. It includes filters for providers and categories, and lists policies for GCP and Azure with details like version and download count.](https://kodekloud.com/kk-media/image/upload/v1752878783/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/policy-libraries-beta-sentinel-terraform.jpg)
 
 **AWS Networking Policies in Terraform Guides:** [AWS Networking Sentinel Policies for Terraform Guides](https://github.com/hashicorp/terraform-guides/tree/master/governance/third-generation/aws)
 
-<Frame>
-  ![The image shows a webpage for AWS Networking Sentinel Policies for Terraform by HashiCorp, detailing policy downloads and version information. It includes download statistics and links to the source and maintainer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878784/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/aws-networking-sentinel-policies-terraform.jpg)
-</Frame>
+![The image shows a webpage for AWS Networking Sentinel Policies for Terraform by HashiCorp, detailing policy downloads and version information. It includes download statistics and links to the source and maintainer.](https://kodekloud.com/kk-media/image/upload/v1752878784/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/aws-networking-sentinel-policies-terraform.jpg)
 
 **HashiCorp Terraform Guides Repository:** [HashiCorp Terraform Guides Repository](https://github.com/hashicorp/terraform-guides)
 
-<Frame>
-  ![The image shows a GitHub repository page for "terraform-guides" by HashiCorp, displaying folders related to cloud governance policies like AWS, Azure, and GCP.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878785/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/github-repo-terraform-guides-cloud-policies.jpg)
-</Frame>
+![The image shows a GitHub repository page for "terraform-guides" by HashiCorp, displaying folders related to cloud governance policies like AWS, Azure, and GCP.](https://kodekloud.com/kk-media/image/upload/v1752878785/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/github-repo-terraform-guides-cloud-policies.jpg)
 
 **Sentinel Policy Updates History:** [Commit History](https://github.com/hashicorp/terraform-guides/commits/master/governance/third-generation/common-functions)
 
-<Frame>
-  ![The image shows a list of files and their descriptions from a GitHub repository, detailing updates and changes made to various Sentinel policy files over the past few years.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878786/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/github-repo-sentinel-policy-updates.jpg)
-</Frame>
+![The image shows a list of files and their descriptions from a GitHub repository, detailing updates and changes made to various Sentinel policy files over the past few years.](https://kodekloud.com/kk-media/image/upload/v1752878786/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/github-repo-sentinel-policy-updates.jpg)
 
-<Frame>
-  ![The image shows a list of Sentinel policy files from a GitHub repository, each with a description of changes and the time since the last update.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878788/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/sentinel-policy-files-github-updates.jpg)
-</Frame>
+![The image shows a list of Sentinel policy files from a GitHub repository, each with a description of changes and the time since the last update.](https://kodekloud.com/kk-media/image/upload/v1752878788/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Sentinel-Policy/sentinel-policy-files-github-updates.jpg)
 
 In this guide, we covered how to store Sentinel policies as code, connect them to Terraform Cloud, and enforce them via both the UI and CLI. With Sentinel policies running automatically between plan and apply, you can enforce organizational standards for every infrastructure change.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/617ad513-215b-4e40-9b66-1cdb4eacc424/lesson/976308e4-a31e-49e4-a7c3-45255423d3aa" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/617ad513-215b-4e40-9b66-1cdb4eacc424/lesson/976308e4-a31e-49e4-a7c3-45255423d3aa)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/f7d08e72-e35f-436f-8d42-d0d7364d2532/lesson/cca2f6e1-39f3-4e0e-aa42-a37758627c7e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/f7d08e72-e35f-436f-8d42-d0d7364d2532/lesson/cca2f6e1-39f3-4e0e-aa42-a37758627c7e)
 
 
 # Lab Solution Terraform Cloud Variables
@@ -251,13 +223,9 @@ Workspace-level variables apply only to the workspace where they’re defined. T
    * `AWS_ACCESS_KEY_ID` (mark as sensitive)
    * `AWS_SECRET_ACCESS_KEY` (mark as sensitive)
 
-<Frame>
-  ![The image shows a Terraform Cloud interface displaying workspace variables, including sensitive AWS access keys, with options to add more variables.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878789/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Variables/terraform-cloud-workspace-variables-aws.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface displaying workspace variables, including sensitive AWS access keys, with options to add more variables.](https://kodekloud.com/kk-media/image/upload/v1752878789/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Variables/terraform-cloud-workspace-variables-aws.jpg)
 
-<Callout icon="triangle-alert">
-  Always mark AWS credentials as **sensitive** to prevent them from appearing in logs or the UI.
-</Callout>
+> **triangle-alert** Always mark AWS credentials as **sensitive** to prevent them from appearing in logs or the UI.
 
 ***
 

@@ -12,9 +12,7 @@
 Plan: 1 to add, 0 to change, 0 to destroy.
 ```
 
-<Callout icon="lightbulb">
-  The argument `storage_account_name` on `azurerm_storage_container` is deprecated in favor of `storage_account_id`. Use `storage_account_id = data.azurerm_storage_account.storage.id` to be future-proof.
-</Callout>
+> **lightbulb** The argument `storage_account_name` on `azurerm_storage_container` is deprecated in favor of `storage_account_id`. Use `storage_account_id = data.azurerm_storage_account.storage.id` to be future-proof.
 
 Verify in the Azure portal
 
@@ -39,9 +37,7 @@ Links and references
 * AzureRM provider docs: [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 * Azure portal: [https://portal.azure.com](https://portal.azure.com)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/5e64ee11-c3c3-4d9c-be0c-53989a38ae8f/lesson/2332899d-d3c8-44a7-9801-7529ea94ac08" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/5e64ee11-c3c3-4d9c-be0c-53989a38ae8f/lesson/2332899d-d3c8-44a7-9801-7529ea94ac08)
 
 
 # Introduction
@@ -68,9 +64,7 @@ Below are the objectives we'll cover, presented in sequence:
 
 This is a short, practical lesson. Enabling Terraform logging is simple — the real value comes from knowing which log level to use, how to capture output safely, and how to read key sections of the logs to find the root cause.
 
-<Callout icon="lightbulb">
-  Quick tip: start with `TF_LOG=ERROR` or `TF_LOG=WARN` for targeted problems. Increase to `DEBUG` or `TRACE` only when you need detailed provider or RPC-level traces, because higher levels produce a lot of noise.
-</Callout>
+> **lightbulb** Quick tip: start with `TF_LOG=ERROR` or `TF_LOG=WARN` for targeted problems. Increase to `DEBUG` or `TRACE` only when you need detailed provider or RPC-level traces, because higher levels produce a lot of noise.
 
 ## How to enable debug logs
 
@@ -150,10 +144,6 @@ Use this checklist during troubleshooting:
 * Provider troubleshooting: [https://www.terraform.io/docs/extend/providers.html](https://www.terraform.io/docs/extend/providers.html)
 * State and backends: [https://www.terraform.io/docs/state/index.html](https://www.terraform.io/docs/state/index.html)
 
-<Callout icon="warning">
-  Warning: Terraform debug logs can contain sensitive data (API tokens, secrets, or resource attributes). Avoid publishing raw logs publicly. Redact secrets before sharing with colleagues or support.
-</Callout>
+> **warning** Warning: Terraform debug logs can contain sensitive data (API tokens, secrets, or resource attributes). Avoid publishing raw logs publicly. Redact secrets before sharing with colleagues or support.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/8eb2a0b5-4324-4bba-9e4e-c01dd765911d/lesson/3dee26e6-bc5c-4697-9093-9baaa5406dcc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/8eb2a0b5-4324-4bba-9e4e-c01dd765911d/lesson/3dee26e6-bc5c-4697-9093-9baaa5406dcc)

@@ -33,7 +33,7 @@ Define your EKS infrastructure as code using CloudFormation YAML/JSON or the AWS
 | Drift detection       | ✅              | ✅ via synthesized templates    |
 | High-level constructs | Limited        | Rich L2/L3 abstractions        |
 
-![The image illustrates a diagram showing AWS CloudFormation connected to a central user icon, surrounded by multiple Kubernetes icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862782/notes-assets/images/AWS-EKS-Deployment-Options/aws-cloudformation-kubernetes-diagram.jpg)
+![The image illustrates a diagram showing AWS CloudFormation connected to a central user icon, surrounded by multiple Kubernetes icons.](https://kodekloud.com/kk-media/image/upload/v1752862782/notes-assets/images/AWS-EKS-Deployment-Options/aws-cloudformation-kubernetes-diagram.jpg)
 
 Parameterize your templates to spin up multiple clusters with consistent settings. Use Change Sets and drift detection to manage updates and rollbacks safely.
 
@@ -50,9 +50,9 @@ Terraform uses declarative HCL to provision EKS clusters. Leverage community or 
 | State Backend    | S3 + DynamoDB for locking                                                       |
 | Responsibilities | AWS API access, credentials, state security, backend config                     |
 
-![The image features the Terraform logo in the center with four colored circles around it, each containing a cube design. To the right, there's a logo and text for "Open Tofu."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862783/notes-assets/images/AWS-EKS-Deployment-Options/terraform-logo-open-tofu-circles.jpg)
+![The image features the Terraform logo in the center with four colored circles around it, each containing a cube design. To the right, there's a logo and text for "Open Tofu."](https://kodekloud.com/kk-media/image/upload/v1752862783/notes-assets/images/AWS-EKS-Deployment-Options/terraform-logo-open-tofu-circles.jpg)
 
-![The image illustrates the concept of "Infrastructure as Code" using Terraform and AWS EKS Blueprints, with associated logos.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862784/notes-assets/images/AWS-EKS-Deployment-Options/infrastructure-as-code-terraform-aws-eks.jpg)
+![The image illustrates the concept of "Infrastructure as Code" using Terraform and AWS EKS Blueprints, with associated logos.](https://kodekloud.com/kk-media/image/upload/v1752862784/notes-assets/images/AWS-EKS-Deployment-Options/infrastructure-as-code-terraform-aws-eks.jpg)
 
 ## 4. Other Tools and Services
 
@@ -65,7 +65,7 @@ Several third-party and community-driven tools can simplify EKS cluster provisio
 | AWS CLI        | Shell                        | Script `aws eks create-cluster …` with full AWS service access   |
 | SaaS Providers | N/A                          | Hosted control planes or operators that wrap Terraform/API calls |
 
-![The image shows logos for "Pulumi" and "Cluster API" under the heading "Other Services."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862785/notes-assets/images/AWS-EKS-Deployment-Options/pulumi-cluster-api-other-services-logos.jpg)
+![The image shows logos for "Pulumi" and "Cluster API" under the heading "Other Services."](https://kodekloud.com/kk-media/image/upload/v1752862785/notes-assets/images/AWS-EKS-Deployment-Options/pulumi-cluster-api-other-services-logos.jpg)
 
 No matter which path you choose, standardize on templates or scripts to ensure consistency and speed. In the next section, we’ll introduce lightweight tools for spinning up disposable test clusters in minutes.
 

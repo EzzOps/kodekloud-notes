@@ -12,7 +12,7 @@ Kubernetes simplifies the deployment, scaling, and management of containerized a
 
 The master node contains several control plane components that manage the entire Kubernetes cluster. It keeps track of all nodes, decides where applications should run, and continuously monitors the cluster. Think of the master node as the central command center coordinating the fleet.
 
-![The image illustrates a Kubernetes concept with a person explaining, featuring a ship labeled "Master" and smaller ships labeled "Worker Nodes" amidst clouds.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869701/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Cluster-Architecture/frame_140.jpg)
+![The image illustrates a Kubernetes concept with a person explaining, featuring a ship labeled "Master" and smaller ships labeled "Worker Nodes" amidst clouds.](https://kodekloud.com/kk-media/image/upload/v1752869701/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Cluster-Architecture/frame_140.jpg)
 
 In a busy harbor, many containers are loaded and unloaded daily. Kubernetes maintains detailed information about each container and its corresponding node in a highly available key-value store called etcd. Etcd uses a simple key-value format along with a quorum mechanism, ensuring reliable and consistent data storage across the cluster.
 
@@ -27,7 +27,7 @@ Other key master node components include:
 * **Controllers:** Manage node lifecycle, container replication, and system stability.
 * **Kube API Server:** Acts as the central hub for cluster communication and management.
 
-![The image illustrates Kubernetes architecture, showing master and worker nodes, with components like ETCD cluster, controllers, and kube-scheduler, alongside a person explaining.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869703/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Cluster-Architecture/frame_270.jpg)
+![The image illustrates Kubernetes architecture, showing master and worker nodes, with components like ETCD cluster, controllers, and kube-scheduler, alongside a person explaining.](https://kodekloud.com/kk-media/image/upload/v1752869703/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Cluster-Architecture/frame_270.jpg)
 
 ## Worker Node Components
 
@@ -40,7 +40,7 @@ Worker nodes, which can be compared to cargo ships, are responsible for running 
 
 The high-level worker node architecture ensures that applications remain available and responsive, even as they communicate across a distributed network.
 
-![The image illustrates Kubernetes architecture, showing components like Master and Worker Nodes, with a person explaining the diagram.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869704/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Cluster-Architecture/frame_510.jpg)
+![The image illustrates Kubernetes architecture, showing components like Master and Worker Nodes, with a person explaining the diagram.](https://kodekloud.com/kk-media/image/upload/v1752869704/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Cluster-Architecture/frame_510.jpg)
 
 ## Summary of Kubernetes Architecture
 

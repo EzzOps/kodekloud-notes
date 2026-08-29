@@ -8,11 +8,11 @@ Hello, students! I'm Michael Forrester, and in this article, we'll walk through 
 
 Amazon EFS is a cloud-native, NFS-based network file system that has long served Unix and Linux environments as a reliable file-sharing solution.
 
-![The image shows the Amazon Elastic File System (EFS) webpage, highlighting its features as a scalable, elastic, cloud-native NFS file system. It includes options to create a file system and provides information about pricing and documentation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860042/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/amazon-efs-webpage-features.jpg)
+![The image shows the Amazon Elastic File System (EFS) webpage, highlighting its features as a scalable, elastic, cloud-native NFS file system. It includes options to create a file system and provides information about pricing and documentation.](https://kodekloud.com/kk-media/image/upload/v1752860042/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/amazon-efs-webpage-features.jpg)
 
 In this demo, we will create an NFS file system within your default VPC, configure it with customized settings, and then mount it for use.
 
-![The image shows a dialog box for creating an Amazon Elastic File System (EFS) on AWS, where a user is entering a name and selecting a Virtual Private Cloud (VPC).](../../../../images/kodekloud.com/kk-media/image/upload/v1752860043/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/amazon-efs-dialog-box-vpc.jpg)
+![The image shows a dialog box for creating an Amazon Elastic File System (EFS) on AWS, where a user is entering a name and selecting a Virtual Private Cloud (VPC).](https://kodekloud.com/kk-media/image/upload/v1752860043/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/amazon-efs-dialog-box-vpc.jpg)
 
 ## EFS Configuration Overview
 
@@ -23,15 +23,15 @@ There are two primary performance modes to consider:
 * **Bursting:** Begins with a lower baseline performance but is capable of bursting to higher throughput levels as file system capacity increases.
 * **Enhanced/Elastic/Provisioned:** Delivers a broader array of performance configurations tailored for workloads that demand steady throughput or low latency. For production environments that require predictability, enhanced modes are typically preferred over bursting.
 
-![The image shows a section of the Amazon EFS console, specifically the "Performance settings" for configuring throughput mode options such as Enhanced, Bursting, Elastic, and Provisioned.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860044/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/amazon-efs-performance-settings-throughput.jpg)
+![The image shows a section of the Amazon EFS console, specifically the "Performance settings" for configuring throughput mode options such as Enhanced, Bursting, Elastic, and Provisioned.](https://kodekloud.com/kk-media/image/upload/v1752860044/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/amazon-efs-performance-settings-throughput.jpg)
 
 Clicking "Learn More" in the console provides detailed diagrams that illustrate the differences between these throughput modes. For example, bursting throughput scales with storage size; when limits are reached, switching to Elastic or Provisioned modes may be necessary for enhanced performance.
 
-![The image shows a webpage from the AWS documentation about Amazon Elastic File System (EFS) throughput modes, detailing options like Elastic, Provisioned, and Bursting throughput. The highlighted section discusses using Bursting throughput for scaling with storage amount.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860046/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/aws-efs-throughput-modes-diagram.jpg)
+![The image shows a webpage from the AWS documentation about Amazon Elastic File System (EFS) throughput modes, detailing options like Elastic, Provisioned, and Bursting throughput. The highlighted section discusses using Bursting throughput for scaling with storage amount.](https://kodekloud.com/kk-media/image/upload/v1752860046/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/aws-efs-throughput-modes-diagram.jpg)
 
 In production systems with a need for predictable performance, configuring an enhanced throughput mode is common. You can set parameters such as a maximum burst limit (e.g., 1000 or 2000) that controls temporary throughput spikes.
 
-![The image shows a screenshot of the AWS console, specifically the performance settings for Amazon EFS (Elastic File System). It displays options for selecting throughput modes, including Enhanced, Elastic, and Provisioned, with specific configurations for Provisioned Throughput.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860047/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/aws-console-efs-performance-settings.jpg)
+![The image shows a screenshot of the AWS console, specifically the performance settings for Amazon EFS (Elastic File System). It displays options for selecting throughput modes, including Enhanced, Elastic, and Provisioned, with specific configurations for Provisioned Throughput.](https://kodekloud.com/kk-media/image/upload/v1752860047/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/aws-console-efs-performance-settings.jpg)
 
 > **lightbulb** For highly parallel workloads requiring strict latency control, consider using the "max I/O" option instead of the general-purpose mode. However, for most cases, the general-purpose mode suffices.
 
@@ -167,11 +167,11 @@ Another variation might include additional permissions or specify principals dif
 
 After finalizing your file system policies, review all configurations—including mount targets, security groups, and policies—before clicking the Create button.
 
-![The image shows an AWS console screen displaying the configuration details of a file system, including fields like name, performance mode, throughput mode, encryption, and lifecycle management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860048/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/aws-console-file-system-configuration.jpg)
+![The image shows an AWS console screen displaying the configuration details of a file system, including fields like name, performance mode, throughput mode, encryption, and lifecycle management.](https://kodekloud.com/kk-media/image/upload/v1752860048/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/aws-console-file-system-configuration.jpg)
 
 Once created, the file system ID along with additional details will be visible. By clicking into the file system, you can view these settings and access the specific commands to mount the EFS on your Linux systems.
 
-![The image shows an AWS Elastic File System (EFS) management console with details about a file system, including performance mode, throughput mode, encryption status, and replication settings. The file system is available, with automatic backups disabled and replication overwrite protection enabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860049/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/aws-efs-management-console-details.jpg)
+![The image shows an AWS Elastic File System (EFS) management console with details about a file system, including performance mode, throughput mode, encryption status, and replication settings. The file system is available, with automatic backups disabled and replication overwrite protection enabled.](https://kodekloud.com/kk-media/image/upload/v1752860049/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/aws-efs-management-console-details.jpg)
 
 ## Mounting the File System
 
@@ -193,17 +193,17 @@ The fully qualified domain name (FQDN) provided is internal to AWS, ensuring tha
 
 Once mounted, there may be a brief delay as the mount targets (represented as network interfaces or ENIs) across each Availability Zone (e.g., US East 1A, B, C) stabilize.
 
-![The image shows an Amazon Web Services (AWS) Elastic File System (EFS) dashboard, displaying general settings and network information for a file system. It includes details like performance mode, throughput mode, encryption, and availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860051/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/aws-efs-dashboard-settings-info.jpg)
+![The image shows an Amazon Web Services (AWS) Elastic File System (EFS) dashboard, displaying general settings and network information for a file system. It includes details like performance mode, throughput mode, encryption, and availability zone.](https://kodekloud.com/kk-media/image/upload/v1752860051/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/aws-efs-dashboard-settings-info.jpg)
 
 Even if automatic backups are disabled during setup, the dashboard monitoring graphs will eventually display key metrics such as file system utilization, throughput, storage class breakdown, and more.
 
-![The image shows an AWS Elastic File System dashboard displaying metered size information, with a total size of 6.00 KiB in the standard storage class. Replication overwrite protection is enabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860052/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/aws-elastic-file-system-dashboard.jpg)
+![The image shows an AWS Elastic File System dashboard displaying metered size information, with a total size of 6.00 KiB in the standard storage class. Replication overwrite protection is enabled.](https://kodekloud.com/kk-media/image/upload/v1752860052/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/aws-elastic-file-system-dashboard.jpg)
 
 Checking your network settings should reveal that the mount targets are active in the selected Availability Zones. This confirms that your EFS is ready to be mounted and used by your Linux servers for hosting web content, storing database logs, backups, etc.
 
 To get detailed network settings—including availability zones, mount target IDs, subnet IDs, IP addresses, and associated security groups—review the following console dashboard:
 
-![The image shows an AWS Elastic File System (EFS) management console, displaying network details such as availability zones, mount target IDs, subnet IDs, IP addresses, and security groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860053/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/aws-efs-management-console-network-details.jpg)
+![The image shows an AWS Elastic File System (EFS) management console, displaying network details such as availability zones, mount target IDs, subnet IDs, IP addresses, and security groups.](https://kodekloud.com/kk-media/image/upload/v1752860053/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Implementing-Fault-Tolerant-Storage-using-EFS/aws-efs-management-console-network-details.jpg)
 
 This concludes our guide on setting up a fault-tolerant Amazon EFS. You now have a comprehensive understanding of how to configure EFS, implement file system policies, and mount the storage on your Linux instances for various production workloads.
 

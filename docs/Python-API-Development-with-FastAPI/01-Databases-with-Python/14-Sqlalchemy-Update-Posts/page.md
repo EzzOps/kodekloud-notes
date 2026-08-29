@@ -107,9 +107,7 @@ If you prefer using a raw SQL query (assuming your driver supports the necessary
 
 Each time the application starts, SQLAlchemy checks for the existence of the `posts` table in the database. If the table is missing, it will be automatically created based on the definition in `models.py`. You can inspect the table structure using tools like PgAdmin.
 
-<Frame>
-  ![The image shows a pgAdmin interface displaying the structure of a PostgreSQL database table named "posts," with columns such as "id," "title," "content," "published," and "created\_at." The data types and constraints for each column are also visible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883395/notes-assets/images/Python-API-Development-with-FastAPI-Sqlalchemy-Setup/pgadmin-postgresql-posts-table-structure.jpg)
-</Frame>
+![The image shows a pgAdmin interface displaying the structure of a PostgreSQL database table named "posts," with columns such as "id," "title," "content," "published," and "created\_at." The data types and constraints for each column are also visible.](https://kodekloud.com/kk-media/image/upload/v1752883395/notes-assets/images/Python-API-Development-with-FastAPI-Sqlalchemy-Setup/pgadmin-postgresql-posts-table-structure.jpg)
 
 This automated table management ensures consistency between your Python models and the actual database schema.
 
@@ -131,13 +129,9 @@ This organization maintains a clean separation of concerns by keeping your datab
 
 Your FastAPI application is now configured with SQLAlchemy for managing database connections via a session dependency. The posts table is automatically created based on the model in `models.py`, and you can further develop endpoints to execute more complex queries and operations.
 
-<Callout icon="lightbulb">
-  With this setup, you now have a robust foundation for database operations in your FastAPI project. In future articles, we will explore adding additional columns (like timestamps) and handling more advanced database interactions.
-</Callout>
+> **lightbulb** With this setup, you now have a robust foundation for database operations in your FastAPI project. In future articles, we will explore adding additional columns (like timestamps) and handling more advanced database interactions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/3b6e099c-5e15-43f3-944b-0df6aa5f215c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/3b6e099c-5e15-43f3-944b-0df6aa5f215c)
 
 
 # Sqlalchemy Update Posts
@@ -211,9 +205,7 @@ The update process with SQLAlchemy follows these steps:
 * Update the post using the values provided in the request.
 * Commit the changes and return the updated post.
 
-<Callout icon="lightbulb">
-  Be sure to handle naming collisions between the input schema and the SQLAlchemy model instance. In our example, we use the name `existing_post` for the fetched instance.
-</Callout>
+> **lightbulb** Be sure to handle naming collisions between the input schema and the SQLAlchemy model instance. In our example, we use the name `existing_post` for the fetched instance.
 
 ### Step 3.1: Preparing the Query and Validating the Post
 
@@ -311,6 +303,4 @@ select * from posts;
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/d40e0421-b3aa-455d-bf51-834692d08d10" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/d40e0421-b3aa-455d-bf51-834692d08d10)

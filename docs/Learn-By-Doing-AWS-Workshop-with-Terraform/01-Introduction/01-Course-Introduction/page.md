@@ -28,9 +28,7 @@ Because reducers are normal functions, you can import them across graphs to keep
 
 This separation promotes modular design: the graph describes structure and control flow, while reducers encapsulate state semantics. Nodes stay focused on producing outputs; reducers define how those outputs become part of the canonical state.
 
-<Callout icon="lightbulb">
-  Use field-level reducers to centralize accumulation and cleanup logic (e.g., chat history, tool logs, diagnostic traces). This avoids ad-hoc state manipulation inside nodes and prevents accidental overwrites.
-</Callout>
+> **lightbulb** Use field-level reducers to centralize accumulation and cleanup logic (e.g., chat history, tool logs, diagnostic traces). This avoids ad-hoc state manipulation inside nodes and prevents accidental overwrites.
 
 ## Best practices
 
@@ -49,9 +47,7 @@ State reducers are foundational for predictable state evolution in LangGraph. Th
 * Python: `typing_extensions` documentation
 * Pattern references: accumulation, idempotence, and cleanup techniques in stateful systems
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/d4a0ce6a-78a6-41e5-8802-89f7b76e974c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/d4a0ce6a-78a6-41e5-8802-89f7b76e974c)
 
 
 # Course Introduction
@@ -121,9 +117,7 @@ Course topics at a glance
 Final project
 The course culminates with a practical project where you'll apply everything learned to deploy secure EC2 instances that connect to a shared RDS database. This final lab emphasizes real-world architecture, secure configuration, and automation patterns.
 
-<Callout icon="lightbulb">
-  Tip: If you ever lose access to the temporary credentials for a lab, use the `show creds` command in the lab environment to retrieve them again.
-</Callout>
+> **lightbulb** Tip: If you ever lose access to the temporary credentials for a lab, use the `show creds` command in the lab environment to retrieve them again.
 
 Ready to begin?
 Now that you understand the course layout and lab workflow, proceed to the first lab to start writing Terraform configurations and provisioning AWS resources.
@@ -135,6 +129,4 @@ Links and references
 * AWS documentation: [https://docs.aws.amazon.com/](https://docs.aws.amazon.com/)
 * Related courses: [EC2](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2), [RDS](https://learn.kodekloud.com/user/courses/aws-rds)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-by-doing-aws-workshop-with-terraform/module/78a13681-22b1-4517-b446-c01767507311/lesson/637e1844-709b-4784-a33e-158dd68857e6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-by-doing-aws-workshop-with-terraform/module/78a13681-22b1-4517-b446-c01767507311/lesson/637e1844-709b-4784-a33e-158dd68857e6)

@@ -6,7 +6,7 @@ This article explores how DynamoDB Conditional Writes maintain data integrity by
 
 In this article, we explore how DynamoDB Conditional Writes help maintain data integrity by allowing write operations to be executed only when specified conditions are met. Conditional writes are particularly useful in scenarios where multiple users attempt to update the same item simultaneously. For instance, if User 1 tries to update item A to 1 and User 2 tries to update item A to 2 at the same time, the second operation might overwrite the first. With conditional writes, you can enforce a check—such as updating only if the current value is 0—thereby preventing unintended overwrites and ensuring consistency.
 
-![The image illustrates the difference between concurrent and conditional writes in DynamoDB, showing how concurrent writes can overwrite each other, while conditional writes ensure only one update is accepted based on a condition.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858726/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Conditional-writes/dynamodb-concurrent-conditional-writes.jpg)
+![The image illustrates the difference between concurrent and conditional writes in DynamoDB, showing how concurrent writes can overwrite each other, while conditional writes ensure only one update is accepted based on a condition.](https://kodekloud.com/kk-media/image/upload/v1752858726/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Conditional-writes/dynamodb-concurrent-conditional-writes.jpg)
 
 DynamoDB Conditional Writes can be applied across several API calls, including PutItem, DeleteItem, UpdateItem, BatchWriteItem, and more. The database supports various conditional expressions, such as:
 

@@ -15,9 +15,7 @@ OpenTofu is published under the permissive [MIT License](https://opensource.org/
 | OpenTofu  | MIT License | Community-driven with an impartial maintainer team |
 | Terraform | MPL 2.0     | Core development steered by HashiCorp              |
 
-<Callout icon="triangle-alert">
-  Terraform’s copyleft license may impose obligations on derivative works, potentially impacting closed-source or enterprise workflows.
-</Callout>
+> **triangle-alert** Terraform’s copyleft license may impose obligations on derivative works, potentially impacting closed-source or enterprise workflows.
 
 Pull requests in OpenTofu are reviewed solely on technical merit, free from corporate influence. A neutral maintainer committee vets every contribution, so enhancements and fixes benefit the broader community.
 
@@ -29,9 +27,7 @@ OpenTofu’s feature roadmap is shaped by its contributors. Instead of vendor-dr
 * Contributors cast votes via issue reactions, ensuring top-requested items rise to the top.
 * Community meetings and regular working groups keep development aligned with real-world use cases.
 
-<Callout icon="lightbulb">
-  Explore the full OpenTofu [roadmap and issue tracker](https://github.com/opentofu/opentofu#roadmap) to see how you can influence upcoming releases.
-</Callout>
+> **lightbulb** Explore the full OpenTofu [roadmap and issue tracker](https://github.com/opentofu/opentofu#roadmap) to see how you can influence upcoming releases.
 
 This transparent process means major enhancements—such as advanced state management or native support for cloud services—are fast-tracked based on demand.
 
@@ -62,9 +58,7 @@ provider "example" {
 
 This modularity fosters innovation: independent teams can focus on specialized modules without risking cross-cutting changes.
 
-<Frame>
-  ![The image is a presentation slide titled "OpenTofu – An Edge Over Terraform," featuring a cube icon and two points highlighting its influence on user choices and its layered, modular design.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882846/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-OpenTofu-An-Edge-Over-Terraform/opentofu-edge-over-terraform-presentation.jpg)
-</Frame>
+![The image is a presentation slide titled "OpenTofu – An Edge Over Terraform," featuring a cube icon and two points highlighting its influence on user choices and its layered, modular design.](https://kodekloud.com/kk-media/image/upload/v1752882846/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-OpenTofu-An-Edge-Over-Terraform/opentofu-edge-over-terraform-presentation.jpg)
 
 ## Links and References
 
@@ -74,6 +68,4 @@ This modularity fosters innovation: independent teams can focus on specialized m
 * Terraform License: [https://github.com/hashicorp/terraform/blob/main/LICENSE](https://github.com/hashicorp/terraform/blob/main/LICENSE)
 * Kubernetes Basics: [https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/340b25b1-152d-4356-9857-807246c256ae" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/5a06d90f-8a8a-49a9-99d6-30b70e37bc83/lesson/340b25b1-152d-4356-9857-807246c256ae)

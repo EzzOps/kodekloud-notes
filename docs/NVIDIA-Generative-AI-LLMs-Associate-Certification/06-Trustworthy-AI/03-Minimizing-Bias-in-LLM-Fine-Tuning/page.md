@@ -22,9 +22,7 @@ Why this is the best practice
 * Training on a single demographic group reduces generalization and can amplify harm for underrepresented groups.
 * Software design patterns like iterator or builder are unrelated to bias mitigation in model fine-tuning.
 
-<Callout icon="lightbulb">
-  Assessing model performance across diverse demographic groups is the starting point for detecting and fixing bias—measure first, then apply targeted mitigation.
-</Callout>
+> **lightbulb** Assessing model performance across diverse demographic groups is the starting point for detecting and fixing bias—measure first, then apply targeted mitigation.
 
 Best-practice steps (high level)
 
@@ -42,9 +40,7 @@ Additional implementation notes
 * Balance fairness objectives with overall utility and safety; trade-offs should be explicit and tracked.
 * Engage stakeholders (domain experts, impacted communities, legal/compliance) when defining fairness goals and validating mitigations.
 
-<Callout icon="warning">
-  Avoid trusting a single mitigation (like removing demographic fields) as a silver bullet. Models can infer protected attributes from correlated features; mitigation should be measured empirically and iterated.
-</Callout>
+> **warning** Avoid trusting a single mitigation (like removing demographic fields) as a silver bullet. Models can infer protected attributes from correlated features; mitigation should be measured empirically and iterated.
 
 Further reading and references
 
@@ -56,6 +52,4 @@ Further reading and references
   <img alt="The image is a question prompt about minimizing bias when fine-tuning a large language model (LLM), suggesting evaluating model performance across different demographic groups as a best practice." />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/f5fcaa31-ee4e-4d79-9474-be230c1c96b7/lesson/cc2f6e7f-e22f-4600-91d5-fd2e65315755" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/f5fcaa31-ee4e-4d79-9474-be230c1c96b7/lesson/cc2f6e7f-e22f-4600-91d5-fd2e65315755)

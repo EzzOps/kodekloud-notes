@@ -24,9 +24,7 @@ Use provisioned mode when you can predict traffic and want lower per-request cos
 | WCU (Write Capacity Unit) | One write per second for items up to 1 KB                                                                                         | `1 KB` increments (always round up) |
 | RCU (Read Capacity Unit)  | One strongly consistent read per second for items up to 4 KB — or two eventually consistent reads per second for items up to 4 KB | `4 KB` increments (always round up) |
 
-<Callout icon="lightbulb">
-  Always round up fractional units. WCUs are measured in 1 KB increments; RCUs are measured in 4 KB increments. For eventually consistent reads, each RCU supports two reads per second for items up to 4 KB.
-</Callout>
+> **lightbulb** Always round up fractional units. WCUs are measured in 1 KB increments; RCUs are measured in 4 KB increments. For eventually consistent reads, each RCU supports two reads per second for items up to 4 KB.
 
 ## Write Capacity Unit (WCU) — calculation and examples
 
@@ -115,9 +113,7 @@ Mitigations:
 * Implement exponential backoff and retries on throttled requests.
 * For read-heavy workloads, consider DynamoDB Accelerator (DAX) to reduce RCU consumption — DAX provides cached, eventually consistent reads only and does not reduce WCUs.
 
-<Callout icon="warning">
-  If you’re being throttled, don’t retry aggressively. Use exponential backoff with jitter and monitor throttled request metrics to identify hot keys or insufficient capacity.
-</Callout>
+> **warning** If you’re being throttled, don’t retry aggressively. Use exponential backoff with jitter and monitor throttled request metrics to identify hot keys or insufficient capacity.
 
 <Frame>
   <img alt="A presentation slide titled &#x22;Throttling&#x22; showing the error &#x22;ProvisionedThroughputExceededException.&#x22; It lists causes (e.g., exceeding provisioned RCU/WCU, hot/insufficient partition keys, large items) on the left and solutions (distribute partition keys, exponential backoff, use DAX) on the right." />
@@ -138,6 +134,4 @@ Mitigations:
 * [DynamoDB Developer Guide — Read/Write Capacity Modes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadWriteCapacityMode.html)
 * [DynamoDB Best Practices for Designing and Architecting](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/0c798276-cbd7-4429-a66e-24fcc89d1257" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/0c798276-cbd7-4429-a66e-24fcc89d1257)

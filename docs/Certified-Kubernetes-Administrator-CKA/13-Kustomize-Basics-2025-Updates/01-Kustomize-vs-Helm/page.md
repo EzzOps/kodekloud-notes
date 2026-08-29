@@ -44,7 +44,7 @@ When deploying your application, Helm merges the specified values into the templ
 
 A conventional Helm project organizes deployment templates in one directory and environment-specific configuration files in another. For instance, you might have a directory structure where the `environments` folder contains files such as `values.dev.yaml`, `values.stg.yaml`, and `values.prod.yaml`, while the `templates` folder stores the Kubernetes manifest files.
 
-![The image shows a directory structure for Kubernetes configuration files, with separate YAML files for different environments and templates. It is titled "Kustomize vs Helm" and includes files like nginx-deployment.yaml and \`values.dev.yaml.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869804/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kustomize-vs-Helm/kustomize-vs-helm-kubernetes-files.jpg)
+![The image shows a directory structure for Kubernetes configuration files, with separate YAML files for different environments and templates. It is titled "Kustomize vs Helm" and includes files like nginx-deployment.yaml and \`values.dev.yaml.](https://kodekloud.com/kk-media/image/upload/v1752869804/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kustomize-vs-Helm/kustomize-vs-helm-kubernetes-files.jpg)
 
 Below is an example of how the directory structure may be organized:
 
@@ -74,7 +74,7 @@ Helm is more than just a templating tool for environment-specific configurations
 
 A comparison between the two tools highlights that while Helm offers advanced capabilities like package management and flexible templating constructs, these benefits come with increased complexity. In contrast, Kustomize relies on plain YAML for base configurations and overlays for environment modifications, which makes it simpler to read and maintain.
 
-![The image is a comparison between Kustomize and Helm, highlighting Helm's features such as package management, conditionals, loops, functions, hooks, and its use of Go templating syntax, which can make complex templates hard to read.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869805/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kustomize-vs-Helm/kustomize-vs-helm-comparison.jpg)
+![The image is a comparison between Kustomize and Helm, highlighting Helm's features such as package management, conditionals, loops, functions, hooks, and its use of Go templating syntax, which can make complex templates hard to read.](https://kodekloud.com/kk-media/image/upload/v1752869805/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kustomize-vs-Helm/kustomize-vs-helm-comparison.jpg)
 
 ## Choosing the Right Tool
 

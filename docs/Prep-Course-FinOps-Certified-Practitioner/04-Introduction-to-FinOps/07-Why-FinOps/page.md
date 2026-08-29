@@ -39,9 +39,7 @@ When a FinOps practice is absent, cloud spend quickly becomes unpredictable and 
 
 These problems compound into significant waste. According to Flexera’s 2022 State of the Cloud Report, organizations can waste over 30% of cloud spend due to poor visibility and governance: [https://www.flexera.com/blog/cloud/2022/03/state-of-the-cloud-report-2022/](https://www.flexera.com/blog/cloud/2022/03/state-of-the-cloud-report-2022/)
 
-<Callout icon="lightbulb">
-  A core FinOps objective is to reduce this waste by creating shared ownership, improving visibility, and implementing governance that lets teams move fast while staying accountable.
-</Callout>
+> **lightbulb** A core FinOps objective is to reduce this waste by creating shared ownership, improving visibility, and implementing governance that lets teams move fast while staying accountable.
 
 <Frame>
   <img alt="The image lists reasons for adopting FinOps, including unpredictable cloud costs, lack of visibility, and inefficient cost tracking." />
@@ -99,9 +97,7 @@ Practical outcomes organizations achieve with FinOps:
 
 A real-world note: some companies call their FinOps practitioners creative names like “cost crafters” to reflect the hybrid skillset of finance acumen and engineering mindset.
 
-<Callout icon="warning">
-  FinOps is not just a cost-cutting program. If implemented poorly, it can either become a policing mechanism that slows teams down or a set of isolated tactics that fail to produce sustainable governance. Focus on culture, measurement, and automation.
-</Callout>
+> **warning** FinOps is not just a cost-cutting program. If implemented poorly, it can either become a policing mechanism that slows teams down or a set of isolated tactics that fail to produce sustainable governance. Focus on culture, measurement, and automation.
 
 ## Conclusion
 
@@ -117,6 +113,4 @@ That concludes this lesson. Speak with you in the next one.
 * Flexera: State of the Cloud Report 2022 — [https://www.flexera.com/blog/cloud/2022/03/state-of-the-cloud-report-2022/](https://www.flexera.com/blog/cloud/2022/03/state-of-the-cloud-report-2022/)
 * AWS Cost Management Docs — [https://aws.amazon.com/aws-cost-management/](https://aws.amazon.com/aws-cost-management/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/24982811-6142-4554-afd8-2b5f3b8a7f28/lesson/a5bebaf6-9009-4a54-9b92-5eb644cfd4ae" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/24982811-6142-4554-afd8-2b5f3b8a7f28/lesson/a5bebaf6-9009-4a54-9b92-5eb644cfd4ae)

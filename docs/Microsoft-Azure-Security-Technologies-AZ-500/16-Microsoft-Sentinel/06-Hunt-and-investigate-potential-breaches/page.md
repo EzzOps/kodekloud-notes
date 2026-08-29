@@ -51,9 +51,7 @@ Even if you are new to KQL (Kusto Query Language), these examples are a great st
 
 When you sign in to the [Azure portal](https://portal.azure.com/), navigate to the Microsoft Sentinel workspace and select the "Hunting" section. Here, you will find a variety of built-in query templates derived from the configured connectors. For instance, if your focus is on investigating failed logins, choose the "Summary of failed login users" query. Running these queries allows you to quickly identify any anomalies. In our demonstration, most queries returned zero results except one, and selecting it redirects you to Log Analytics for a deeper investigation.
 
-<Frame>
-  ![The image shows a Microsoft Sentinel dashboard with a focus on the "Hunting" section, displaying a list of security queries related to failed logins and Azure VM commands.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882067/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Hunt-and-investigate-potential-breaches/microsoft-sentinel-hunting-dashboard.jpg)
-</Frame>
+![The image shows a Microsoft Sentinel dashboard with a focus on the "Hunting" section, displaying a list of security queries related to failed logins and Azure VM commands.](https://kodekloud.com/kk-media/image/upload/v1752882067/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Hunt-and-investigate-potential-breaches/microsoft-sentinel-hunting-dashboard.jpg)
 
 ## Live Stream Query for Continuous Monitoring
 
@@ -72,19 +70,13 @@ SecurityEvent
 
 Once added, this live query continuously refreshes and displays real-time trends in your data.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for Microsoft Sentinel, specifically the Livestream feature, which allows users to create and manage Livestream sessions using Log Analytics queries.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882069/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Hunt-and-investigate-potential-breaches/azure-sentinel-livestream-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for Microsoft Sentinel, specifically the Livestream feature, which allows users to create and manage Livestream sessions using Log Analytics queries.](https://kodekloud.com/kk-media/image/upload/v1752882069/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Hunt-and-investigate-potential-breaches/azure-sentinel-livestream-interface.jpg)
 
 The live feed provides ongoing insights into your environment. If you determine that the data is no longer necessary, simply delete the live stream.
 
-<Frame>
-  ![The image shows the Microsoft Sentinel interface on Azure, specifically the "Hunting" section, displaying active queries and a livestream of query results.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882070/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Hunt-and-investigate-potential-breaches/microsoft-sentinel-hunting-interface.jpg)
-</Frame>
+![The image shows the Microsoft Sentinel interface on Azure, specifically the "Hunting" section, displaying active queries and a livestream of query results.](https://kodekloud.com/kk-media/image/upload/v1752882070/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Hunt-and-investigate-potential-breaches/microsoft-sentinel-hunting-interface.jpg)
 
-<Callout icon="lightbulb">
-  Grouping queries together can streamline your threat hunting process by allowing simultaneous execution and comparative analysis.
-</Callout>
+> **lightbulb** Grouping queries together can streamline your threat hunting process by allowing simultaneous execution and comparative analysis.
 
 ## Grouping Queries to Create a Hunt
 
@@ -96,6 +88,4 @@ This concludes our lesson on leveraging Microsoft Sentinel for advanced breach h
 
 Thank you for reading!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/fdf529c7-54c7-4550-a622-aec81172dcad/lesson/d1a752ba-6279-404b-8e83-63942ba6bb6f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/fdf529c7-54c7-4550-a622-aec81172dcad/lesson/d1a752ba-6279-404b-8e83-63942ba6bb6f)

@@ -44,7 +44,7 @@ Based on these conditional access signals, there are three primary actions:
 1. **Allow Access**\
    For example, signing in from a trusted location (e.g., Singapore) can permit access without additional security prompts.
 
-![The image is a flowchart illustrating "Conditional Access" with steps involving user/group, application, device state, location, IP range, client application, and sign-in risk, leading to actions like allowing access, enforcing MFA, or blocking access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867206/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-MFA-and-Conditional-Access/conditional-access-flowchart-steps.jpg)
+![The image is a flowchart illustrating "Conditional Access" with steps involving user/group, application, device state, location, IP range, client application, and sign-in risk, leading to actions like allowing access, enforcing MFA, or blocking access.](https://kodekloud.com/kk-media/image/upload/v1752867206/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-MFA-and-Conditional-Access/conditional-access-flowchart-steps.jpg)
 
 2. **Enforce MFA**\
    Consider an internal IP range (e.g., 52.11.11.0/27). If a sign-in originates from within this trusted range, access is granted. However, requests from outside this range trigger MFA via an authenticator app or text message to verify the user's identity.
@@ -67,7 +67,7 @@ Implementing conditional access policies successfully involves adhering to sever
 * **Access Approved Client Applications Only**\
   Restrict access to corporate resources to approved client applications. For instance, allow personal devices to access Outlook and OneDrive, but limit access to Microsoft Teams.
 
-![The image outlines best practices for conditional access, including enabling MFA, requiring managed devices, using approved client apps, excluding certain countries, responding to compromised accounts, and completely blocking access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867206/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-MFA-and-Conditional-Access/conditional-access-best-practices.jpg)
+![The image outlines best practices for conditional access, including enabling MFA, requiring managed devices, using approved client apps, excluding certain countries, responding to compromised accounts, and completely blocking access.](https://kodekloud.com/kk-media/image/upload/v1752867206/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-MFA-and-Conditional-Access/conditional-access-best-practices.jpg)
 
 * **Exclude Specific Countries**\
   Exclude sign-ins from irrelevant geographical regions. For organizations based in Singapore, blocking sign-ins from other countries enhances security.
@@ -84,7 +84,7 @@ Implementing conditional access policies successfully involves adhering to sever
 * **Test Using Report-Only Mode**\
   Utilize report-only mode to evaluate the impact of conditional access policies before enforcing them widely. This mode generates audit logs for genuine sign-in attempts, helping to identify potential issues without locking users out.
 
-![The image provides best practices for conditional access, including blocking legacy authentication protocols, using the What-if tool, and testing with "Report-only" mode.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867208/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-MFA-and-Conditional-Access/conditional-access-best-practices-2.jpg)
+![The image provides best practices for conditional access, including blocking legacy authentication protocols, using the What-if tool, and testing with "Report-only" mode.](https://kodekloud.com/kk-media/image/upload/v1752867208/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-MFA-and-Conditional-Access/conditional-access-best-practices-2.jpg)
 
 ***
 
@@ -110,34 +110,34 @@ In this section, we present a step-by-step process to configure conditional acce
 * Click on "+ New policy" to initiate a new policy.
 * Configure assignments by selecting relevant users or groups, choosing cloud apps, and defining conditions.
 
-![The image shows a Microsoft Azure interface for creating a new Conditional Access policy. It includes options for naming the policy, selecting users or groups, and configuring assignments and access controls.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867209/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-MFA-and-Conditional-Access/azure-conditional-access-policy-interface.jpg)
+![The image shows a Microsoft Azure interface for creating a new Conditional Access policy. It includes options for naming the policy, selecting users or groups, and configuring assignments and access controls.](https://kodekloud.com/kk-media/image/upload/v1752867209/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-MFA-and-Conditional-Access/azure-conditional-access-policy-interface.jpg)
 
 * You can create a policy, for instance, named "block-adam" to apply specific restrictions for certain users or groups.
 
-![The image shows a Microsoft Azure interface for creating a new Conditional Access policy, with options to configure assignments, cloud apps, conditions, and access controls. The policy is named "block-adam" and is set to apply to specific users and groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867210/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-MFA-and-Conditional-Access/azure-conditional-access-policy-block-adam.jpg)
+![The image shows a Microsoft Azure interface for creating a new Conditional Access policy, with options to configure assignments, cloud apps, conditions, and access controls. The policy is named "block-adam" and is set to apply to specific users and groups.](https://kodekloud.com/kk-media/image/upload/v1752867210/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-MFA-and-Conditional-Access/azure-conditional-access-policy-block-adam.jpg)
 
 ### 4. Reviewing Policy Settings and Testing
 
 * Finalize your policy by reviewing settings related to cloud apps, conditions, and access controls (e.g., enforcing MFA).
 
-![The image shows a Microsoft Azure portal screen for creating a new Conditional Access policy. It includes options for naming the policy, assigning users, selecting cloud apps, and configuring access controls like multifactor authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867212/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-MFA-and-Conditional-Access/azure-portal-conditional-access-policy.jpg)
+![The image shows a Microsoft Azure portal screen for creating a new Conditional Access policy. It includes options for naming the policy, assigning users, selecting cloud apps, and configuring access controls like multifactor authentication.](https://kodekloud.com/kk-media/image/upload/v1752867212/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-MFA-and-Conditional-Access/azure-portal-conditional-access-policy.jpg)
 
 * Return to the Conditional Access Policies page to view and manage your active policies.
 
-![The image shows the Microsoft Azure portal, specifically the Conditional Access Policies page, with options for managing policies and VPN connectivity. A notification indicates the creation of a policy named "block-adam."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867213/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-MFA-and-Conditional-Access/azure-portal-conditional-access-policies.jpg)
+![The image shows the Microsoft Azure portal, specifically the Conditional Access Policies page, with options for managing policies and VPN connectivity. A notification indicates the creation of a policy named "block-adam."](https://kodekloud.com/kk-media/image/upload/v1752867213/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-MFA-and-Conditional-Access/azure-portal-conditional-access-policies.jpg)
 
 ### 5. Testing the Policy
 
 * Utilize the built-in "What-If" tool to simulate various sign-in scenarios.
 * Select a user and configure conditions (such as IP address, device platform, and location) to validate the efficacy of your policies.
 
-![The image shows a Microsoft Azure interface for testing conditional access policies, with options to select user identities and configure various conditions like IP address and device platform. A user selection panel is open, displaying a list of users to choose from.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867215/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-MFA-and-Conditional-Access/azure-conditional-access-testing-interface.jpg)
+![The image shows a Microsoft Azure interface for testing conditional access policies, with options to select user identities and configure various conditions like IP address and device platform. A user selection panel is open, displaying a list of users to choose from.](https://kodekloud.com/kk-media/image/upload/v1752867215/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-MFA-and-Conditional-Access/azure-conditional-access-testing-interface.jpg)
 
 ### 6. Reviewing Sign-In Logs
 
 * Finally, inspect the sign-in logs to confirm that the conditional access policy functions as expected. For example, review logs for a user such as Adam Lloyd to analyze any blocked sign-in attempts.
 
-![The image shows a Microsoft Azure portal displaying sign-in logs for a user named Adam Lloyd, with details about sign-in attempts and conditional access policies. The logs indicate several failed sign-in attempts due to a block policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867216/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-MFA-and-Conditional-Access/azure-signin-logs-adam-lloyd.jpg)
+![The image shows a Microsoft Azure portal displaying sign-in logs for a user named Adam Lloyd, with details about sign-in attempts and conditional access policies. The logs indicate several failed sign-in attempts due to a block policy.](https://kodekloud.com/kk-media/image/upload/v1752867216/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-MFA-and-Conditional-Access/azure-signin-logs-adam-lloyd.jpg)
 
 ***
 

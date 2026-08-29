@@ -63,9 +63,7 @@ pipeline {
 }
 ```
 
-<Callout icon="lightbulb">
-  Grouping related steps into nested stages does not alter the execution order but improves the overall readability of the pipeline.
-</Callout>
+> **lightbulb** Grouping related steps into nested stages does not alter the execution order but improves the overall readability of the pipeline.
 
 ## Parallel Stages
 
@@ -100,9 +98,7 @@ pipeline {
 }
 ```
 
-<Callout icon="lightbulb">
-  When using parallel stages, both "Lint" and "Unit Tests" begin at the same time. The pipeline waits for both to complete before proceeding to the "Deploy" stage.
-</Callout>
+> **lightbulb** When using parallel stages, both "Lint" and "Unit Tests" begin at the same time. The pipeline waits for both to complete before proceeding to the "Deploy" stage.
 
 ## Nested Stages with Additional Examples
 
@@ -253,6 +249,4 @@ This output confirms that both stages start simultaneously, enhancing the overal
 
 Both nested and parallel staging techniques offer valuable ways to organize and optimize Jenkins pipelines. Nested stages improve the clarity and maintenance of your pipeline, while parallel stages can dramatically reduce execution times by running independent tasks concurrently.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/78265832-d979-432a-954d-1bfc3099ca0f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/78265832-d979-432a-954d-1bfc3099ca0f)

@@ -79,9 +79,7 @@ spec:
   <img alt="The image is a table explaining the effects of the &#x22;orphanDownstreamOnPolicyDelete&#x22; setting. When set to false, downstream is deleted; when true, downstream is retained." />
 </Frame>
 
-<Callout icon="lightbulb">
-  When `synchronize: true` is enabled, Kyverno actively enforces the generated resource’s state. Use `orphaned: true` only when you intentionally want to retain generated resources after removing the policy.
-</Callout>
+> **lightbulb** When `synchronize: true` is enabled, Kyverno actively enforces the generated resource’s state. Use `orphaned: true` only when you intentionally want to retain generated resources after removing the policy.
 
 ## Summary
 
@@ -91,8 +89,6 @@ spec:
 
 Next: clone sources — how to use an existing resource as a template when generating downstream objects.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/9024a647-736d-4de4-8b1a-d0efe638df18/lesson/f12c7d12-9904-45c1-a688-fabad7a1045f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/9024a647-736d-4de4-8b1a-d0efe638df18/lesson/f12c7d12-9904-45c1-a688-fabad7a1045f)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/9024a647-736d-4de4-8b1a-d0efe638df18/lesson/05201fdd-3965-4cbb-bd79-ea2a165a7b11" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/9024a647-736d-4de4-8b1a-d0efe638df18/lesson/05201fdd-3965-4cbb-bd79-ea2a165a7b11)

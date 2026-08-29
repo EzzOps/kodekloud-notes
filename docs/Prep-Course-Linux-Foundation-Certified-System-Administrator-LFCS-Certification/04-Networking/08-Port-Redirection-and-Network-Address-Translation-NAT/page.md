@@ -26,9 +26,7 @@ sudo systemctl reload nginx.service
 
 At this point, Nginx is successfully configured as a reverse proxy, directing requests to the web server at 1.1.1.1.
 
-<Frame>
-  ![The image illustrates the concept of creating a reverse proxy using NGINX, showing the flow from a user to a web server and then to an external web server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881315/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Implement-Reverse-Proxies-and-Load-Balancers/nginx-reverse-proxy-diagram.jpg)
-</Frame>
+![The image illustrates the concept of creating a reverse proxy using NGINX, showing the flow from a user to a web server and then to an external web server.](https://kodekloud.com/kk-media/image/upload/v1752881315/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Implement-Reverse-Proxies-and-Load-Balancers/nginx-reverse-proxy-diagram.jpg)
 
 ## Configuring Nginx as a Load Balancer
 
@@ -95,9 +93,7 @@ server {
 }
 ```
 
-<Callout icon="triangle-alert">
-  To temporarily remove a server from the load balancing pool (for maintenance, for example), include the `down` parameter in its configuration.
-</Callout>
+> **triangle-alert** To temporarily remove a server from the load balancing pool (for maintenance, for example), include the `down` parameter in its configuration.
 
 Mark a server as unavailable with the `down` keyword:
 
@@ -166,9 +162,7 @@ With these changes in place, Nginx now efficiently functions as a load balancer 
 
 That’s all for this lesson. Happy configuring, and see you in the next one!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/f9bc6e80-9f45-4d5e-8ce9-3207595ab7a7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/f9bc6e80-9f45-4d5e-8ce9-3207595ab7a7)
 
 
 # Port Redirection and Network Address Translation NAT
@@ -197,29 +191,21 @@ For example, when a device on the Internet connects to the public server on port
 
 Data transmitted over networks is broken into small packets. Each packet carries header information such as the source and destination IP addresses, which are essential for guiding the packet through different network devices.
 
-<Frame>
-  ![The image illustrates port redirection, showing how different ports (80, 993, 3306) from the internet are redirected to specific servers (Server 1, Server 2, Server 3) within an internal network.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881316/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Port-Redirection-and-Network-Address-Translation-NAT/port-redirection-internal-network.jpg)
-</Frame>
+![The image illustrates port redirection, showing how different ports (80, 993, 3306) from the internet are redirected to specific servers (Server 1, Server 2, Server 3) within an internal network.](https://kodekloud.com/kk-media/image/upload/v1752881316/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Port-Redirection-and-Network-Address-Translation-NAT/port-redirection-internal-network.jpg)
 
 For example, an IPv4 packet includes various header fields that help routers and switches forward it correctly from the sender to the intended recipient. The source and destination addresses ensure that both data and any necessary responses are routed properly.
 
-<Frame>
-  ![The image illustrates the components of a network packet, showing the flow from a sender with a source IP address to a receiver with a destination IP address, with data in between.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881317/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Port-Redirection-and-Network-Address-Translation-NAT/network-packet-components-flow.jpg)
-</Frame>
+![The image illustrates the components of a network packet, showing the flow from a sender with a source IP address to a receiver with a destination IP address, with data in between.](https://kodekloud.com/kk-media/image/upload/v1752881317/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Port-Redirection-and-Network-Address-Translation-NAT/network-packet-components-flow.jpg)
 
 When data travels from server to server via network devices, both the source and destination information in the packet header allow responses to find the way back. Consider this scenario:
 
-<Frame>
-  ![The image illustrates the structure of a network packet, showing various fields like version, IHL, and ports, and how data is routed to different servers within an internal network.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881318/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Port-Redirection-and-Network-Address-Translation-NAT/network-packet-structure-diagram.jpg)
-</Frame>
+![The image illustrates the structure of a network packet, showing various fields like version, IHL, and ports, and how data is routed to different servers within an internal network.](https://kodekloud.com/kk-media/image/upload/v1752881318/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Port-Redirection-and-Network-Address-Translation-NAT/network-packet-structure-diagram.jpg)
 
 Imagine an external device with IP address 203.0.0.113 sending data to a public server with IP 123.4. When the public server receives a connection on port 80, it changes the destination IP from 123.4 to 10.0.0.5 (Server 1's private IP) and forwards the packet. However, because the packet retains the original source IP (203.0.0.113), Server 1’s reply would try to reach that external IP directly, bypassing the public server.
 
 To resolve this, the public server performs NAT on the source IP by replacing it with its own public address. This ensures that responses correctly route back to the public server and then to the external device.
 
-<Frame>
-  ![The image illustrates Network Address Translation (NAT) with a focus on "Masquerading," showing the translation of a private IP address (10.0.0.5) to a public IP address (203.0.113.1).](../../../../images/kodekloud.com/kk-media/image/upload/v1752881319/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Port-Redirection-and-Network-Address-Translation-NAT/nat-masquerading-ip-translation.jpg)
-</Frame>
+![The image illustrates Network Address Translation (NAT) with a focus on "Masquerading," showing the translation of a private IP address (10.0.0.5) to a public IP address (203.0.113.1).](https://kodekloud.com/kk-media/image/upload/v1752881319/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Port-Redirection-and-Network-Address-Translation-NAT/nat-masquerading-ip-translation.jpg)
 
 This process, known as masquerading, is similar to how home routers allow multiple devices to share a single public IP address.
 

@@ -109,9 +109,7 @@ Correct answer: C. During a switch the OS checkpoints and restores the CPU and e
   <img alt="A dark presentation slide titled &#x22;Summary&#x22; shows two purple info boxes about the OS saving/restoring process state and that switching takes time. A man in a black KodeKloud t-shirt stands on the right, gesturing as he speaks." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Note: Scheduling and context switching are kernel-level activities. Modern kernels implement variations (preemptive vs. cooperative scheduling, multi-level queues, real-time classes) to meet different workload and latency requirements.
-</Callout>
+> **lightbulb** Note: Scheduling and context switching are kernel-level activities. Modern kernels implement variations (preemptive vs. cooperative scheduling, multi-level queues, real-time classes) to meet different workload and latency requirements.
 
 ## Links and references
 
@@ -119,6 +117,4 @@ Correct answer: C. During a switch the OS checkpoints and restores the CPU and e
 * [Operating system concepts — scheduling (Wikipedia)](https://en.wikipedia.org/wiki/Scheduling_\(computing\))
 * Tanenbaum, A. S., & Bos, H. (Modern Operating Systems) — for deeper study of scheduling algorithms and context switching principles.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/f1c2dfb7-7917-4c97-be15-ba6300068f41/lesson/1d5fb24a-5e68-428c-8679-3419097d38c7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/f1c2dfb7-7917-4c97-be15-ba6300068f41/lesson/1d5fb24a-5e68-428c-8679-3419097d38c7)

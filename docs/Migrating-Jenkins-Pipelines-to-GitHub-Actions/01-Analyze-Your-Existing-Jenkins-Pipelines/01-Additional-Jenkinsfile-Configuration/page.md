@@ -23,9 +23,7 @@ At a high level, a Jenkinsfile organizes work into distinct stages such as:
 
 The common Declarative pipeline blocks and directives are described below, with examples.
 
-<Callout icon="lightbulb">
-  This guide focuses on Declarative Pipelines. Declarative syntax provides clearer structure for CI/CD flows; use `script { ... }` blocks when you need Groovy logic for advanced conditions or iteration.
-</Callout>
+> **lightbulb** This guide focuses on Declarative Pipelines. Declarative syntax provides clearer structure for CI/CD flows; use `script { ... }` blocks when you need Groovy logic for advanced conditions or iteration.
 
 ## Common Declarative blocks and directives
 
@@ -236,9 +234,7 @@ pipeline {
 }
 ```
 
-<Callout icon="warning">
-  Never print secrets to logs. Use credentials only in the steps that require them and prefer credential-binding plugins over hard-coding.
-</Callout>
+> **warning** Never print secrets to logs. Use credentials only in the steps that require them and prefer credential-binding plugins over hard-coding.
 
 ## Interactive input (manual approvals)
 
@@ -333,6 +329,4 @@ This guide gives you a solid foundation to author and maintain Declarative Jenki
 * Credentials Binding Plugin: [https://plugins.jenkins.io/credentials-binding/](https://plugins.jenkins.io/credentials-binding/)
 * Jenkins Plugins: [https://plugins.jenkins.io/](https://plugins.jenkins.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/cf81c203-622b-412d-856b-696fc468083b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/cf81c203-622b-412d-856b-696fc468083b)

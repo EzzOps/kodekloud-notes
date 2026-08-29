@@ -96,9 +96,7 @@ Service name changes and official resources
 * Microsoft Entra ID is the new name for Azure AD. This is a rebranding; functionality remains consistent, though some product pages and learning content may reference the new name.
 * Always verify current exam objectives and platform terminology on official Microsoft pages.
 
-<Callout icon="lightbulb">
-  For up-to-date exam objectives and guided learning paths, rely on official sources such as Microsoft Learn and the Azure documentation. Combine hands-on practice (deploying VMs, setting up RBAC, configuring networks, and using Azure Monitor) with study modules to reinforce practical skills.
-</Callout>
+> **lightbulb** For up-to-date exam objectives and guided learning paths, rely on official sources such as Microsoft Learn and the Azure documentation. Combine hands-on practice (deploying VMs, setting up RBAC, configuring networks, and using Azure Monitor) with study modules to reinforce practical skills.
 
 Links and references
 
@@ -106,6 +104,4 @@ Links and references
 * [Azure documentation](https://learn.microsoft.com/azure/) — product docs, how-tos, and architecture guidance.
 * [Azure Kubernetes Service (AKS) course example](https://learn.kodekloud.com/user/courses/azure-kubernetes-service) — additional AKS-focused content if you want to dive deeper into container orchestration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/edb6b82d-2942-45b9-89e9-33fbe75528c2/lesson/71f11178-1751-4192-9bd1-e82c83f18146" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/edb6b82d-2942-45b9-89e9-33fbe75528c2/lesson/71f11178-1751-4192-9bd1-e82c83f18146)

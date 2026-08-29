@@ -5,9 +5,7 @@ Liquid: Water
 Meat: Chicken
 ```
 
-<Callout icon="lightbulb">
-  Remember to include a space after the colon to separate the key from its value.
-</Callout>
+> **lightbulb** Remember to include a space after the colon to separate the key from its value.
 
 To represent lists or arrays, first define the key and then use a dash to indicate each element. For example, to list some fruits and vegetables:
 
@@ -48,13 +46,9 @@ Grapes:
 
 In YAML, the number of spaces before each property is essential. All properties within a dictionary must be aligned with consistent indentation. For example, the nutritional information for a banana is correctly represented with uniform indentation:
 
-<Frame>
-  ![The image shows a diagram of a banana's nutritional information, including calories (105), fat (0.4g), and carbs (27g), labeled as a "Dictionary/Map."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884976/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Introduction-to-YAML/frame_180.jpg)
-</Frame>
+![The image shows a diagram of a banana's nutritional information, including calories (105), fat (0.4g), and carbs (27g), labeled as a "Dictionary/Map."](https://kodekloud.com/kk-media/image/upload/v1752884976/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Introduction-to-YAML/frame_180.jpg)
 
-<Callout icon="triangle-alert">
-  Avoid adding extra spaces before properties (e.g., around "fat" and "carbs") as this could incorrectly nest them under the previous key (such as "Calories"), potentially causing a syntax error.
-</Callout>
+> **triangle-alert** Avoid adding extra spaces before properties (e.g., around "fat" and "carbs") as this could incorrectly nest them under the previous key (such as "Calories"), potentially causing a syntax error.
 
 ## Nested Structures
 
@@ -129,9 +123,7 @@ If you need to represent multiple cars, each with detailed information, you woul
 
 This example clearly differentiates between using dictionaries, simple lists, and lists of dictionaries.
 
-<Frame>
-  ![The image compares data structures: dictionary, list, and list of dictionaries, using car attributes like color, model, transmission, and price.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884977/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Introduction-to-YAML/frame_410.jpg)
-</Frame>
+![The image compares data structures: dictionary, list, and list of dictionaries, using car attributes like color, model, transmission, and price.](https://kodekloud.com/kk-media/image/upload/v1752884977/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Introduction-to-YAML/frame_410.jpg)
 
 ## Key Points on Data Structures in YAML
 
@@ -163,11 +155,9 @@ Fruits:
 
 We are now ready to proceed to the coding exercises. Have fun exploring and working with YAML files!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/9bcecdb4-c89c-439f-8590-cb55efa4f596/lesson/4af4cd4b-d22c-4cf8-b4b7-7a9d2a585e6a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/9bcecdb4-c89c-439f-8590-cb55efa4f596/lesson/4af4cd4b-d22c-4cf8-b4b7-7a9d2a585e6a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/9bcecdb4-c89c-439f-8590-cb55efa4f596/lesson/6204e403-2683-4bd4-b946-402cc61ff22a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/9bcecdb4-c89c-439f-8590-cb55efa4f596/lesson/6204e403-2683-4bd4-b946-402cc61ff22a)
 
 
 # Accessing storage endpoints
@@ -198,13 +188,9 @@ For example, if your storage account is named `KodeKloud`, the corresponding end
 * **File Service:** kodekloud.file.core.windows.net
 * **Table Service:** kodekloud.table.core.windows.net
 
-<Callout icon="lightbulb">
-  If your preferred storage account name is already taken, consider modifying it by appending additional characters or using a custom domain. This approach can also reinforce your branding; for example, you might configure `blobs.codecloud.com` to point to `codecloud.blob.core.windows.net`.
-</Callout>
+> **lightbulb** If your preferred storage account name is already taken, consider modifying it by appending additional characters or using a custom domain. This approach can also reinforce your branding; for example, you might configure `blobs.codecloud.com` to point to `codecloud.blob.core.windows.net`.
 
-<Frame>
-  ![The image provides information on accessing storage endpoints for a storage account, showing the format for endpoint URLs and examples for different services like container, queue, file, and table. It also mentions using a custom domain with CNAME mapping.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884371/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Accessing-storage-endpoints/storage-endpoints-url-format-examples.jpg)
-</Frame>
+![The image provides information on accessing storage endpoints for a storage account, showing the format for endpoint URLs and examples for different services like container, queue, file, and table. It also mentions using a custom domain with CNAME mapping.](https://kodekloud.com/kk-media/image/upload/v1752884371/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Accessing-storage-endpoints/storage-endpoints-url-format-examples.jpg)
 
 In addition to direct URL access, several tools help manage your Azure storage resources effectively:
 
@@ -216,9 +202,7 @@ In addition to direct URL access, several tools help manage your Azure storage r
 | Import Export Service  | Service for transferring large quantities of on-premises data (terabytes or more) into Azure. It enables secure data transfer via pre-configured drives. | Prepare drives, copy, encrypt, and ship them to an Azure Data Center for upload                                        |
 | AZCopy                 | Command-line tool designed for fast and efficient data transfers within your storage account, and supports other cloud providers like GCP and AWS.       | `azcopy copy [source] [destination] [flags]` This command can be automated to handle disaster recovery data transfers. |
 
-<Frame>
-  ![The image shows a configuration guide for storage tools, featuring Azure Storage Explorer and an Import and Export Service interface.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884372/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Accessing-storage-endpoints/azure-storage-tools-configuration-guide.jpg)
-</Frame>
+![The image shows a configuration guide for storage tools, featuring Azure Storage Explorer and an Import and Export Service interface.](https://kodekloud.com/kk-media/image/upload/v1752884372/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Accessing-storage-endpoints/azure-storage-tools-configuration-guide.jpg)
 
 For example, the following command uses AZCopy to transfer data:
 
@@ -232,10 +216,6 @@ When managing your storage account via the Azure Portal, you can easily capture 
 
 Up next, we will explore how to configure Azure Blob Storage, building on the concepts discussed in this lesson.
 
-<Callout icon="lightbulb">
-  For further reading on Azure storage, visit the [Azure Storage Documentation](https://docs.microsoft.com/en-us/azure/storage/) and explore [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) for related containerized solutions.
-</Callout>
+> **lightbulb** For further reading on Azure storage, visit the [Azure Storage Documentation](https://docs.microsoft.com/en-us/azure/storage/) and explore [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) for related containerized solutions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/48d08f66-feb9-4bae-83b0-2e6aa34e24ae/lesson/1ccae4d6-20ed-4ebc-9042-ea47f2d66dbc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/48d08f66-feb9-4bae-83b0-2e6aa34e24ae/lesson/1ccae4d6-20ed-4ebc-9042-ea47f2d66dbc)

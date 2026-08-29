@@ -145,9 +145,7 @@ Quick reference table: dependency discovery
 | Subnet NSG Association           | `subnet_id = azurerm_subnet.subnet.id`                     | Often yes (implicit), but may still need `depends_on` | Use `depends_on` when Azure returns IDs before the resource is actually ready. |
 | Role or Policy Assignments       | `principal_id = ...` (no direct attribute linking)         |                            No (requires `depends_on`) | Provider-specific eventual consistency can require explicit ordering.          |
 
-<Callout icon="warning">
-  Do not overuse `depends_on`. Using it everywhere defeats Terraform’s automatic dependency tracking, reduces parallelism, and makes configurations harder to maintain. Use `depends_on` only when you observe failures caused by provider eventual consistency or when there is no attribute reference to express the relationship.
-</Callout>
+> **warning** Do not overuse `depends_on`. Using it everywhere defeats Terraform’s automatic dependency tracking, reduces parallelism, and makes configurations harder to maintain. Use `depends_on` only when you observe failures caused by provider eventual consistency or when there is no attribute reference to express the relationship.
 
 Summary
 
@@ -165,9 +163,7 @@ Links and references
 * [Azure Provider (azurerm) on Terraform Registry](https://registry.terraform.io/providers/hashicorp/azurerm/latest)
 * [Azure Resource Manager documentation](https://learn.microsoft.com/azure/azure-resource-manager/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/866718d2-695e-4ee4-b25d-1aab3b014e85/lesson/70d3a770-63fb-430a-8bbc-278664ed87b1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/866718d2-695e-4ee4-b25d-1aab3b014e85/lesson/70d3a770-63fb-430a-8bbc-278664ed87b1)
 
 
 # Resource Targeting
@@ -247,9 +243,7 @@ Why resource targeting is dangerous
 
 Resource targeting may skip planned changes to related resources such as account configuration, policy assignments, network rules, or security settings. Even if the targeted resource is created or updated successfully, the overall infrastructure might become inconsistent.
 
-<Callout icon="warning">
-  Resource targeting is intended for recovery, debugging, or drift-fix scenarios only. Do not use it for initial deployments, CI/CD pipelines, or regular day-to-day applies. If you care about correctness and safety, run a normal `terraform apply` (or `terraform apply` on a saved plan).
-</Callout>
+> **warning** Resource targeting is intended for recovery, debugging, or drift-fix scenarios only. Do not use it for initial deployments, CI/CD pipelines, or regular day-to-day applies. If you care about correctness and safety, run a normal `terraform apply` (or `terraform apply` on a saved plan).
 
 Practical scenario: retrying or fixing a single resource after a runtime error
 
@@ -351,6 +345,4 @@ Additional references
 
 If you fully understand the impact and need to recover or debug, targeting can be a useful, narrowly scoped tool. Otherwise, rely on Terraform to manage the full dependency graph so your infrastructure remains consistent.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/866718d2-695e-4ee4-b25d-1aab3b014e85/lesson/3e959249-df4f-49eb-b294-78bc63c77a63" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/866718d2-695e-4ee4-b25d-1aab3b014e85/lesson/3e959249-df4f-49eb-b294-78bc63c77a63)

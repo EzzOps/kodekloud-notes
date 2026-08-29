@@ -15,9 +15,7 @@ Storage Type            raft
 HA Enabled              true
 ```
 
-<Callout icon="lightbulb">
-  Vault is uninitialized and sealed. The `Recovery Seal Type` shows AWS KMS for auto-unseal.
-</Callout>
+> **lightbulb** Vault is uninitialized and sealed. The `Recovery Seal Type` shows AWS KMS for auto-unseal.
 
 ## 2. Initialize Vault
 
@@ -39,9 +37,7 @@ Initial Root Token: hvs.jtEqNjivmy2aw9d30RRpt71
 Success! Vault is initialized.
 ```
 
-<Callout icon="triangle-alert">
-  Securely distribute and store your recovery keys and initial root token. Anyone holding 3 of 5 keys can generate a new root token.
-</Callout>
+> **triangle-alert** Securely distribute and store your recovery keys and initial root token. Anyone holding 3 of 5 keys can generate a new root token.
 
 ## 3. Authenticate with the Initial Root Token
 
@@ -93,9 +89,7 @@ OTP           LlfdKVI8pV5pQZQExfi10s5LIRvws
 OTP Length    28
 ```
 
-<Callout icon="lightbulb">
-  Save the **Nonce** and **One-Time Password (OTP)**. You will need them to decode the final token.
-</Callout>
+> **lightbulb** Save the **Nonce** and **One-Time Password (OTP)**. You will need them to decode the final token.
 
 ## 6. Submit Recovery Keys
 
@@ -178,11 +172,9 @@ path "identity/oidc/provider/+authorize" {
 
 Regenerating the root token with recovery keys ensures you can restore full access even if the original token is lost or revoked. For more details, see the [Vault CLI Generate-Root Documentation](https://www.vaultproject.io/docs/commands/operator/generate-root).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/f15c55a1-02f2-423f-83b3-c490a745aabb" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/f15c55a1-02f2-423f-83b3-c490a745aabb)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/1ad448b4-a6f6-4003-9e2f-487e6c3bb3e4" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/1ad448b4-a6f6-4003-9e2f-487e6c3bb3e4)
 
 
 # Demo Rekey Vault and Rotate Encryption Keys
@@ -275,9 +267,7 @@ HA Enabled                 true
 
 Rekeying replaces existing recovery keys with a new set. This is crucial if a key is compromised or when rotating personnel access.
 
-<Callout icon="triangle-alert">
-  Losing all recovery keys renders your data unrecoverable. Always store keys securely and offsite.
-</Callout>
+> **triangle-alert** Losing all recovery keys renders your data unrecoverable. Always store keys securely and offsite.
 
 ### 3.1 Initiate Rekey
 

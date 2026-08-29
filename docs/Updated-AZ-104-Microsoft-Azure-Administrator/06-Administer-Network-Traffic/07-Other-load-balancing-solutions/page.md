@@ -20,9 +20,7 @@ Azure Traffic Manager is a DNS-based load balancer designed to optimize client r
 
 Below is a visual comparison of different load balancing solutions, detailing features such as usage, protocols, internal support, cross-region capabilities, environments, and security.
 
-<Frame>
-  ![The image is a comparison table of different load balancing solutions, detailing features such as usage, protocols, internal support, cross-region capabilities, environment, and security for Application Gateway, Front Door, Load Balancer, and Traffic Manager.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884717/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Other-load-balancing-solutions/load-balancing-solutions-comparison.jpg)
-</Frame>
+![The image is a comparison table of different load balancing solutions, detailing features such as usage, protocols, internal support, cross-region capabilities, environment, and security for Application Gateway, Front Door, Load Balancer, and Traffic Manager.](https://kodekloud.com/kk-media/image/upload/v1752884717/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Other-load-balancing-solutions/load-balancing-solutions-comparison.jpg)
 
 ### Key Features Overview
 
@@ -52,12 +50,8 @@ Below is a visual comparison of different load balancing solutions, detailing fe
   * The *Azure Load Balancer* relies solely on NSGs for its security configuration.
   * *Traffic Manager* does not provide intrinsic security features, as it only resolves DNS responses without directly managing traffic flows.
 
-<Callout icon="lightbulb">
-  For more detailed comparisons and further technical insights, refer to the official Microsoft documentation and Azure load balancing resources.
-</Callout>
+> **lightbulb** For more detailed comparisons and further technical insights, refer to the official Microsoft documentation and Azure load balancing resources.
 
 Having reviewed these load balancing solutions, we now move on to an overview of Network Watcher, which provides comprehensive network monitoring and diagnostic tools in Azure.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/50248c52-4b17-4c2d-87f8-52a42eff2d2f/lesson/c1488bff-fcdc-44e3-8ef9-6ff13280a7fc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/50248c52-4b17-4c2d-87f8-52a42eff2d2f/lesson/c1488bff-fcdc-44e3-8ef9-6ff13280a7fc)

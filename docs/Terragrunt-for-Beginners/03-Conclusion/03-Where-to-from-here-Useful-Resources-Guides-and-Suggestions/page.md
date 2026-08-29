@@ -27,9 +27,7 @@ Read the full documentation here:\
 
 Expand your Terraform expertise with Yevgeniy Brikman’s **Terraform Up & Running**. This ebook covers real-world examples, best practices, and patterns that complement your Terragrunt workflows.
 
-<Frame>
-  ![The image shows a book titled "Terraform: Up & Running" by Yevgeniy Brikman, along with a brief description and an "Order Now" button. The slide is titled "Where to from here?"](../../../../images/kodekloud.com/kk-media/image/upload/v1752884260/notes-assets/images/Terragrunt-for-Beginners-Where-to-from-here-Useful-Resources-Guides-and-Suggestions/terraform-up-running-book-slide.jpg)
-</Frame>
+![The image shows a book titled "Terraform: Up & Running" by Yevgeniy Brikman, along with a brief description and an "Order Now" button. The slide is titled "Where to from here?"](https://kodekloud.com/kk-media/image/upload/v1752884260/notes-assets/images/Terragrunt-for-Beginners-Where-to-from-here-Useful-Resources-Guides-and-Suggestions/terraform-up-running-book-slide.jpg)
 
 Order your copy at:\
 [https://terraformupandrunning.com](https://terraformupandrunning.com)
@@ -40,9 +38,7 @@ Order your copy at:\
 
 Explore Gruntwork’s platform for battle-tested IaC modules, reference architectures, and expert tutorials. Leverage their code libraries to accelerate provisioning on AWS, GCP, Azure, and more.
 
-<Frame>
-  ![The image is a screenshot of the Gruntwork.io website, showcasing a service for defining infrastructure as code with AWS and Packer, featuring a cartoon character and a call-to-action button for a demo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884261/notes-assets/images/Terragrunt-for-Beginners-Where-to-from-here-Useful-Resources-Guides-and-Suggestions/gruntwork-infrastructure-as-code-screenshot.jpg)
-</Frame>
+![The image is a screenshot of the Gruntwork.io website, showcasing a service for defining infrastructure as code with AWS and Packer, featuring a cartoon character and a call-to-action button for a demo.](https://kodekloud.com/kk-media/image/upload/v1752884261/notes-assets/images/Terragrunt-for-Beginners-Where-to-from-here-Useful-Resources-Guides-and-Suggestions/gruntwork-infrastructure-as-code-screenshot.jpg)
 
 Discover Gruntwork’s offerings:\
 [https://gruntwork.io](https://gruntwork.io)
@@ -57,9 +53,7 @@ Adopt industry-proven patterns to keep your Terragrunt codebase maintainable, DR
 * Structuring live vs. non-live configurations
 * Automating environment promotions (e.g., dev → staging → prod)
 
-<Callout icon="triangle-alert">
-  Avoid duplicating `terragrunt.hcl` blocks across environments. Centralize shared logic in a single parent config to reduce errors.
-</Callout>
+> **triangle-alert** Avoid duplicating `terragrunt.hcl` blocks across environments. Centralize shared logic in a single parent config to reduce errors.
 
 ***
 
@@ -70,9 +64,7 @@ Join the Terragrunt community to share experiences, ask questions, and stay curr
 * GitHub Discussions: [https://github.com/gruntwork-io/terragrunt/discussions](https://github.com/gruntwork-io/terragrunt/discussions)
 * Slack Workspace: [https://slack.gruntwork.io](https://slack.gruntwork.io)
 
-<Callout icon="lightbulb">
-  Active participation in forums and Slack channels helps you discover real-world use cases and get fast troubleshooting support.
-</Callout>
+> **lightbulb** Active participation in forums and Slack channels helps you discover real-world use cases and get fast troubleshooting support.
 
 ***
 
@@ -109,10 +101,6 @@ Staying informed ensures your infrastructure remains secure, efficient, and alig
 
 ***
 
-<Frame>
-  ![The image is a slide titled "Where to from here?" featuring five options: Best Practices, Community Forums, Advanced Use Cases, Gruntwork Support & Consulting, and Continuous Learning. Each option is represented by an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884262/notes-assets/images/Terragrunt-for-Beginners-Where-to-from-here-Useful-Resources-Guides-and-Suggestions/where-to-from-here-options-slide.jpg)
-</Frame>
+![The image is a slide titled "Where to from here?" featuring five options: Best Practices, Community Forums, Advanced Use Cases, Gruntwork Support & Consulting, and Continuous Learning. Each option is represented by an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752884262/notes-assets/images/Terragrunt-for-Beginners-Where-to-from-here-Useful-Resources-Guides-and-Suggestions/where-to-from-here-options-slide.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/de1489a1-f671-441f-b106-09b11e9ca96c/lesson/a8d7a2f8-7487-4a8d-b9a4-4f62113c4c45" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/de1489a1-f671-441f-b106-09b11e9ca96c/lesson/a8d7a2f8-7487-4a8d-b9a4-4f62113c4c45)

@@ -20,9 +20,7 @@ Example responses:
 
 Note: By default Istio is permissive — services can communicate across namespaces unless you enable stricter mTLS policies or other restrictions.
 
-<Callout icon="lightbulb">
-  If a pod's namespace is not labeled for istio-injection, its traffic does not traverse the Envoy sidecar. VirtualService rules apply only when traffic routes through the sidecar.
-</Callout>
+> **lightbulb** If a pod's namespace is not labeled for istio-injection, its traffic does not traverse the Envoy sidecar. VirtualService rules apply only when traffic routes through the sidecar.
 
 ***
 
@@ -149,9 +147,7 @@ kubectl apply -f vs.yaml
 
 Requests should succeed again.
 
-<Callout icon="warning">
-  When you enable `istio-injection=enabled` on a namespace, existing pods must be re-created (deleted) to get the Envoy sidecar injected. Labeling alone is not sufficient — restart the pods.
-</Callout>
+> **warning** When you enable `istio-injection=enabled` on a namespace, existing pods must be re-created (deleted) to get the Envoy sidecar injected. Labeling alone is not sufficient — restart the pods.
 
 ***
 
@@ -323,11 +319,9 @@ Useful links:
 
 This concludes the VirtualService demo. Next up: DestinationRules and advanced traffic management.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/4deeb1cf-af2a-40f0-98f1-0f03b8dd2b87" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/4deeb1cf-af2a-40f0-98f1-0f03b8dd2b87)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/f9527147-d6e9-4b09-bf7b-86cf274b6cd5" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/f9527147-d6e9-4b09-bf7b-86cf274b6cd5)
 
 
 # Destination Rules
@@ -483,9 +477,7 @@ spec:
 * Create DestinationRules in the same namespace as the targeted workloads. The `host` in the DestinationRule can be the short service name (e.g., `app-svc`) or the full FQDN (e.g., `app-svc.frontend.svc.cluster.local`).
 * Ensure subset names used in VirtualServices exactly match the subset names defined in DestinationRules.
 
-<Callout icon="lightbulb">
-  Ensure the subset names used in the VirtualService match the subset names defined in the DestinationRule, and place the DestinationRule in the same namespace as the service/workloads it targets.
-</Callout>
+> **lightbulb** Ensure the subset names used in the VirtualService match the subset names defined in the DestinationRule, and place the DestinationRule in the same namespace as the service/workloads it targets.
 
 DestinationRules enable resilience and fine-grained control of service-to-service traffic — for example, configuring connection pool sizes, timeouts, retries, circuit breaking, and TLS. See the Istio docs for the full set of options.
 
@@ -501,6 +493,4 @@ References:
 
 Now, let's proceed to a demo and go over these concepts in practice.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/402decd2-9f64-439c-8fbf-354a76b493ef" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/402decd2-9f64-439c-8fbf-354a76b493ef)

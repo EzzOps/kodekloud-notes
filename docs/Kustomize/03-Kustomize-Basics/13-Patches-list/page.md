@@ -39,9 +39,7 @@ spec:
           image: nginx
 ```
 
-<Callout icon="lightbulb">
-  Every entry in `spec.template.spec.containers` is a YAML list item, so it begins with `-`.
-</Callout>
+> **lightbulb** Every entry in `spec.template.spec.containers` is a YAML list item, so it begins with `-`.
 
 ***
 
@@ -137,9 +135,7 @@ spec:
 
 You can also insert at a specific index by replacing `-` with `1`, `2`, etc.
 
-<Callout icon="triangle-alert">
-  Using `path: /containers/-` always appends. For precise position, specify the index.
-</Callout>
+> **triangle-alert** Using `path: /containers/-` always appends. For precise position, specify the index.
 
 ### 2.2 Strategic Merge Patch
 
@@ -240,8 +236,6 @@ Kustomize deletes the container with `name: database`.
 * [Strategic Merge Patch](https://kubectl.docs.kubernetes.io/guides/strategic-merge-patch/)
 * [Kubernetes Pods and Containers](https://kubernetes.io/docs/concepts/workloads/pods/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/231125ad-02ba-4a6d-8047-969291b61c1d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/231125ad-02ba-4a6d-8047-969291b61c1d)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/c6a1e116-9972-4680-9e14-4397fcd4b10d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/c6a1e116-9972-4680-9e14-4397fcd4b10d)

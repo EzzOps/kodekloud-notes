@@ -67,9 +67,7 @@ kubectl apply -f default-model-config.yaml
 kubectl -n kagent get modelconfigs
 ```
 
-<Callout icon="lightbulb">
-  If you are using OpenAI's public API, you can omit `openAI.baseUrl`. Use `baseUrl` only when routing through a proxy or private endpoint.
-</Callout>
+> **lightbulb** If you are using OpenAI's public API, you can omit `openAI.baseUrl`. Use `baseUrl` only when routing through a proxy or private endpoint.
 
 ***
 
@@ -415,17 +413,13 @@ Documentation and further examples:
 * [https://kagent.dev](https://kagent.dev)
 * [Kubernetes Concepts](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<Callout icon="lightbulb">
-  If the UI or agent responses are not immediately available, allow a few seconds for pods to become ready and refresh the UI. Agents and tools often take a short time to initialize after a Helm upgrade.
-</Callout>
+> **lightbulb** If the UI or agent responses are not immediately available, allow a few seconds for pods to become ready and refresh the UI. Agents and tools often take a short time to initialize after a Helm upgrade.
 
 ***
 
 This completes the lab for progressively installing KAgent, adding a ModelConfig, enabling built-in tools and the `k8s-agent`, and interacting via the UI and CLI. Additional topics you can explore next include MCP servers and deploying custom MCP configurations using KAgent.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/1d7a92ba-541d-4627-a743-23a0af49c744" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/1d7a92ba-541d-4627-a743-23a0af49c744)
 
 
 # Demo KAgent Installation
@@ -453,13 +447,11 @@ Objective: be able to install and uninstall kagent with either method and choose
 * Helm installed if you plan to use the Helm method.
 * An LLM provider API key (the examples below use OpenAI). Export your OpenAI key into the environment so the installer can pick it up automatically.
 
-<Callout icon="lightbulb">
-  Make sure your `OPENAI_API_KEY` is set in the environment before installing kagent. You can export it like:
+> **lightbulb** Make sure your `OPENAI_API_KEY` is set in the environment before installing kagent. You can export it like:
 
   ```bash theme={null}
   export OPENAI_API_KEY="sk-..."
   ```
-</Callout>
 
 Verify the environment variable is set:
 

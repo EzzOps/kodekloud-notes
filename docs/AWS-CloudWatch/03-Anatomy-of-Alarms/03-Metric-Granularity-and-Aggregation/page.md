@@ -17,7 +17,7 @@ In this guide, we’ll dive into how AWS CloudWatch captures and processes metri
 
 Metric granularity determines how often CloudWatch collects and stores data points—similar to adjusting a camera’s resolution. Fine-grained data offers deeper insights into system behavior.
 
-![The image illustrates the concept of metric granularity in Amazon CloudWatch, showing how data is collected and stored from AWS RDS within a Virtual Private Cloud (VPC) in an availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862417/notes-assets/images/AWS-CloudWatch-Metric-Granularity-and-Aggregation/metric-granularity-cloudwatch-rds-vpc.jpg)
+![The image illustrates the concept of metric granularity in Amazon CloudWatch, showing how data is collected and stored from AWS RDS within a Virtual Private Cloud (VPC) in an availability zone.](https://kodekloud.com/kk-media/image/upload/v1752862417/notes-assets/images/AWS-CloudWatch-Metric-Granularity-and-Aggregation/metric-granularity-cloudwatch-rds-vpc.jpg)
 
 By default, most AWS services emit metrics at **1-minute** intervals. However, Amazon RDS basic monitoring only reports every **5 minutes** unless you enable detailed monitoring for 1-minute resolution.
 
@@ -39,7 +39,7 @@ By default, most AWS services emit metrics at **1-minute** intervals. However, A
 
 Aggregation in CloudWatch summarizes multiple data points into a single metric value by applying statistical functions. This process helps identify trends and anomalies over time.
 
-![The image illustrates a process of metric aggregation within an AWS cloud environment, showing data flow from a Virtual Private Cloud (VPC) and AWS RDS to a metric aggregation component.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862418/notes-assets/images/AWS-CloudWatch-Metric-Granularity-and-Aggregation/aws-metric-aggregation-vpc-rds-diagram.jpg)
+![The image illustrates a process of metric aggregation within an AWS cloud environment, showing data flow from a Virtual Private Cloud (VPC) and AWS RDS to a metric aggregation component.](https://kodekloud.com/kk-media/image/upload/v1752862418/notes-assets/images/AWS-CloudWatch-Metric-Granularity-and-Aggregation/aws-metric-aggregation-vpc-rds-diagram.jpg)
 
 Common aggregation functions:
 

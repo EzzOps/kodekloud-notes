@@ -73,9 +73,7 @@ This command displays the manual page, typically structured with the following s
 
 Below is an image showcasing a terminal window displaying the manual page for the `journalctl` command, including sections such as NAME, SYNOPSIS, and DESCRIPTION.
 
-<Frame>
-  ![The image shows a terminal window displaying the manual page for the journalctl command, which is used to query the systemd journal. It includes sections like NAME, SYNOPSIS, and DESCRIPTION.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883637/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Read-and-use-system-documentation/journalctl-manual-page-terminal.jpg)
-</Frame>
+![The image shows a terminal window displaying the manual page for the journalctl command, which is used to query the systemd journal. It includes sections like NAME, SYNOPSIS, and DESCRIPTION.](https://kodekloud.com/kk-media/image/upload/v1752883637/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Read-and-use-system-documentation/journalctl-manual-page-terminal.jpg)
 
 Some commands have multiple manual pages due to overlapping names. For example, `printf` exists both as a command and a programming function. Manual pages are divided into sections, and you can specify which one to view. To see the manual page for the `printf` command, use:
 
@@ -167,9 +165,7 @@ For longer filenames, such as `wordpress_archive.tgz`, typing a few unique chara
 
 ## Final Recommendations
 
-<Callout icon="lightbulb">
-  While `man` pages and `--help` options offer extensive information about commands, they might not always provide complete clarity at first glance. Select an unfamiliar command and explore its usage solely through its manual and help output. This practice is especially valuable for exam settings such as the [LFCS exam](https://learn.kodekloud.com/user/courses/labs-linux-foundation-certified-system-administrator-lfcs), where quickly locating documentation can be a game changer.
-</Callout>
+> **lightbulb** While `man` pages and `--help` options offer extensive information about commands, they might not always provide complete clarity at first glance. Select an unfamiliar command and explore its usage solely through its manual and help output. This practice is especially valuable for exam settings such as the [LFCS exam](https://learn.kodekloud.com/user/courses/labs-linux-foundation-certified-system-administrator-lfcs), where quickly locating documentation can be a game changer.
 
 Here is one final example for listing the contents of the `/usr/` directory:
 
@@ -180,6 +176,4 @@ bin/    lib/    libexec/    local/    sbin/    share/
 
 Now, it's time to apply what you've learned. Happy exploring!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/e2e547ad-a438-4245-b5c0-63f13fa8e10c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/e2e547ad-a438-4245-b5c0-63f13fa8e10c)

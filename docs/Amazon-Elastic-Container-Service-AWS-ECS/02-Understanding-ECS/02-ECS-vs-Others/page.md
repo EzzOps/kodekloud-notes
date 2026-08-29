@@ -10,7 +10,7 @@ In this article, we explore how to deploy an application in a plain Docker envir
 
 A typical Docker Compose file encapsulates all container configuration details. Imagine a scenario with multiple servers: using Docker run or Docker Compose manages containers on a single host by default. While you can replicate the Compose file on each server, this method only launches independent instances of your application. There is no inherent coordination among the different server deployments.
 
-![The image illustrates a Docker Compose deployment process, showing a user with a laptop, a docker-compose.yml file, and its deployment to multiple containers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869154/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-ECS-vs-Others/docker-compose-deployment-process.jpg)
+![The image illustrates a Docker Compose deployment process, showing a user with a laptop, a docker-compose.yml file, and its deployment to multiple containers.](https://kodekloud.com/kk-media/image/upload/v1752869154/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-ECS-vs-Others/docker-compose-deployment-process.jpg)
 
 > **lightbulb** Docker Compose is excellent for local development and single-host deployments but lacks cross-host orchestration capabilities.
 
@@ -26,7 +26,7 @@ Traditional container orchestrators such as Kubernetes, Hashicorp Nomad, and Apa
 
 AWS introduced Elastic Container Service (ECS) as a simpler alternative. ECS offers an intuitive graphical interface for specifying application configurations, while AWS manages deployment, scaling, and overall container management behind the scenes.
 
-![The image compares ECS with other orchestrators, highlighting that ECS is a simpler alternative. It shows logos of various orchestrators and AWS ECS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869155/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-ECS-vs-Others/ecs-vs-orchestrators-comparison.jpg)
+![The image compares ECS with other orchestrators, highlighting that ECS is a simpler alternative. It shows logos of various orchestrators and AWS ECS.](https://kodekloud.com/kk-media/image/upload/v1752869155/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-ECS-vs-Others/ecs-vs-orchestrators-comparison.jpg)
 
 > **lightbulb** ECS simplifies container orchestration by abstracting the heavy lifting of deployment, scaling, and management. This makes it an ideal choice for users looking to avoid the complexities of traditional orchestrators.
 

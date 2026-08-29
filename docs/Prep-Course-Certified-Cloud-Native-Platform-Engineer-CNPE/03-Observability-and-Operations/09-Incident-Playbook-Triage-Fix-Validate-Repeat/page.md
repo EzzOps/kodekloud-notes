@@ -13,9 +13,7 @@ OTEL_TRACES_EXPORTER=otlp
 
 Note: gRPC OTLP often uses port `4317`; HTTP/protobuf OTLP often uses port `4318`. Ensure the protocol and endpoint match your collector.
 
-<Callout icon="lightbulb">
-  OpenTelemetry SDKs and auto-instrumentation inject and extract trace context automatically. In most cases you only need to set environment variables and enable auto-instrumentation or initialize the SDK in your app.
-</Callout>
+> **lightbulb** OpenTelemetry SDKs and auto-instrumentation inject and extract trace context automatically. In most cases you only need to set environment variables and enable auto-instrumentation or initialize the SDK in your app.
 
 Jaeger — collect and visualize traces
 
@@ -94,9 +92,7 @@ Useful references
 * Jaeger: [https://www.jaegertracing.io/](https://www.jaegertracing.io/)
 * W3C Trace Context: [https://www.w3.org/TR/trace-context/](https://www.w3.org/TR/trace-context/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/b2773c70-7a8a-419b-9174-eb64ea3190c9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/b2773c70-7a8a-419b-9174-eb64ea3190c9)
 
 
 # Incident Playbook Triage Fix Validate Repeat
@@ -125,9 +121,7 @@ Use this playbook for every incident, every time.
   <img alt="The image depicts a five-phase incident playbook with steps: Alert, Assess, Investigate, Fix, and Validate, highlighting &#x22;Assess&#x22; with a note on evaluating scope, impact, and urgency." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Spend a minute to assess before you act. Skipping assess is the most common cause of wasted time and harmful changes.
-</Callout>
+> **lightbulb** Spend a minute to assess before you act. Skipping assess is the most common cause of wasted time and harmful changes.
 
 * Investigate: Dig into the root cause in a focused, methodical order: metrics first, then traces, then logs. Follow a triage workflow to narrow scope gradually.
 
@@ -220,9 +214,7 @@ kubectl rollout restart deployment app
   * How: free resources, tune requests/limits, or adjust quotas for targeted workloads.
   * Note: avoid broad, cluster-wide changes during an active incident; prefer targeted, minimal changes.
 
-<Callout icon="warning">
-  During an incident prefer reversible, minimal changes. Large, unreviewed edits or cluster-wide operations increase risk and can create cascading failures.
-</Callout>
+> **warning** During an incident prefer reversible, minimal changes. Large, unreviewed edits or cluster-wide operations increase risk and can create cascading failures.
 
 Quick phase-to-tool reference
 
@@ -252,8 +244,6 @@ Links and references
 
 Use this playbook as your default incident response flow. With consistent practice and post-incident learning, the same tools will yield much faster, safer outcomes.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/a32b40e5-e639-40ca-bd3a-00bb8cf752cf" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/a32b40e5-e639-40ca-bd3a-00bb8cf752cf)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/e88d8670-511b-4f7a-b1ba-5fa0421e2bbe" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/e88d8670-511b-4f7a-b1ba-5fa0421e2bbe)

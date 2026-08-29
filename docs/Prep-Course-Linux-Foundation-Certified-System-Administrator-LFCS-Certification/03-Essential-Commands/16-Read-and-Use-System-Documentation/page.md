@@ -154,17 +154,13 @@ Using the separator "+", you can combine expressions with a logical OR. For exam
 journalctl _SYSTEMD_UNIT=avahi-daemon.service _PID=28097 + _SYSTEMD_UNIT=dbus.service
 ```
 
-<Callout icon="lightbulb">
-  Use manual pages to deepen your understanding of each command’s options and usage. This practice is especially beneficial during exams or when you need a quick refresher.
-</Callout>
+> **lightbulb** Use manual pages to deepen your understanding of each command’s options and usage. This practice is especially beneficial during exams or when you need a quick refresher.
 
 ## Distinguishing Similar Man Pages
 
 Sometimes, two man pages may share the same command name. For example, there is both a command and a programming function for `printf`. The manual categorizes these pages into sections. You can observe this by checking the man page for `man` itself:
 
-<Frame>
-  ![The image shows a dark-themed terminal interface with the text "Manual Pages With man Command" at the top and two words, "printf" and "printf()" displayed in the center.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881266/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Read-and-Use-System-Documentation/manual-pages-man-command-printf.jpg)
-</Frame>
+![The image shows a dark-themed terminal interface with the text "Manual Pages With man Command" at the top and two words, "printf" and "printf()" displayed in the center.](https://kodekloud.com/kk-media/image/upload/v1752881266/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Read-and-Use-System-Documentation/manual-pages-man-command-printf.jpg)
 
 To view the manual page for the printf command itself, specify section 1:
 
@@ -192,9 +188,7 @@ Delving into a manual page might take some time, but it is invaluable in underst
 
 What if you can’t remember the name of the command you need? The `apropos` command searches the man page database for keywords in their short descriptions.
 
-<Frame>
-  ![The image shows a dark-themed terminal interface with the word "apropos" displayed, indicating a search for commands. The top right corner has a "KodeKloud" logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881266/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Read-and-Use-System-Documentation/dark-terminal-apropos-kodekloud.jpg)
-</Frame>
+![The image shows a dark-themed terminal interface with the word "apropos" displayed, indicating a search for commands. The top right corner has a "KodeKloud" logo.](https://kodekloud.com/kk-media/image/upload/v1752881266/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Read-and-Use-System-Documentation/dark-terminal-apropos-kodekloud.jpg)
 
 For instance, to search for man pages related to directories, you might enter:
 
@@ -325,12 +319,8 @@ aaron@kodekould:~$
 
 By practicing with these manual pages, you’ll develop the skills to quickly look up details and gain a deep understanding of options—an essential ability for effective Linux system administration and for successfully passing exams.
 
-<Callout icon="lightbulb">
-  Regularly using the man and help commands can significantly improve your proficiency, ensuring you’re well-prepared for any Linux system task or exam challenge.
-</Callout>
+> **lightbulb** Regularly using the man and help commands can significantly improve your proficiency, ensuring you’re well-prepared for any Linux system task or exam challenge.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/f7373301-5014-40ca-aec4-63310fab6e2a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/f7373301-5014-40ca-aec4-63310fab6e2a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/0b7db046-74fb-44df-a6a2-3915f2ea6aa6" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/0b7db046-74fb-44df-a6a2-3915f2ea6aa6)

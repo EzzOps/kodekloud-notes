@@ -26,7 +26,7 @@ A repository (repo) is a version control system that records changes to files ov
 
 Instead of duplicating files before edits, a repo automates tracking, branching, and merging.
 
-![The image shows a diagram with a central document surrounded by four developers, illustrating collaboration features like tracking changes, independent resolution, and simultaneous work.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862652/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Repositories/collaboration-diagram-developers-document.jpg)
+![The image shows a diagram with a central document surrounded by four developers, illustrating collaboration features like tracking changes, independent resolution, and simultaneous work.](https://kodekloud.com/kk-media/image/upload/v1752862652/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Repositories/collaboration-diagram-developers-document.jpg)
 
 ## Comparison of Repository Services
 
@@ -58,7 +58,7 @@ These capabilities make GitHub ideal for open-source and enterprise projects ali
 
 > **lightbulb** AWS CodeCommit integrates natively with AWS IAM, enabling granular access control and audit trails.
 
-![The image is a split graphic with information about AWS CodeCommit on the right, highlighting its features such as being an AWS service, cloud-based, supporting Git commands, and GitHub compatibility. The left side lists these features with corresponding color-coded icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862654/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Repositories/aws-codecommit-features-graphic.jpg)
+![The image is a split graphic with information about AWS CodeCommit on the right, highlighting its features such as being an AWS service, cloud-based, supporting Git commands, and GitHub compatibility. The left side lists these features with corresponding color-coded icons.](https://kodekloud.com/kk-media/image/upload/v1752862654/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Repositories/aws-codecommit-features-graphic.jpg)
 
 Key benefits:
 
@@ -68,7 +68,7 @@ Key benefits:
 * High availability with built-in redundancy
 * Native integration with CodeBuild, CodeDeploy, and CodePipeline
 
-![The image is a promotional graphic for AWS CodeCommit, highlighting features such as being fully managed, scalable, secure, highly available, and cloud-based.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862654/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Repositories/aws-codecommit-promotional-graphic.jpg)
+![The image is a promotional graphic for AWS CodeCommit, highlighting features such as being fully managed, scalable, secure, highly available, and cloud-based.](https://kodekloud.com/kk-media/image/upload/v1752862654/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Repositories/aws-codecommit-promotional-graphic.jpg)
 
 ## Amazon S3
 
@@ -88,7 +88,7 @@ In this lesson, we explored:
 3. AWS CodeCommit’s managed Git features
 4. Amazon S3 as a non-Git source with versioning
 
-![The image is a summary slide listing four topics: "Repository and the benefits," "GitHub," "AWS CodeCommit," and "Amazon Simple Storage Service (AWS S3)."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862655/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Repositories/repository-benefits-github-aws-s3.jpg)
+![The image is a summary slide listing four topics: "Repository and the benefits," "GitHub," "AWS CodeCommit," and "Amazon Simple Storage Service (AWS S3)."](https://kodekloud.com/kk-media/image/upload/v1752862655/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Repositories/repository-benefits-github-aws-s3.jpg)
 
 Next, we’ll dive into AWS CodeBuild to automate build processes.
 

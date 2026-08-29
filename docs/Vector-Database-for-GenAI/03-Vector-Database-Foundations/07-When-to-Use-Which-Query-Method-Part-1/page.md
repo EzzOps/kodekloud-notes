@@ -31,9 +31,7 @@ When to use semantic search
 * You are building conversational interfaces (chatbots, AI assistants) that must interpret intent.
 * You are building Retrieval-Augmented Generation (RAG) systems where a retriever finds relevant documents to feed an LLM.
 
-<Callout icon="lightbulb">
-  RAG stands for Retrieval-Augmented Generation. In RAG, a retriever (often a vector search) finds relevant documents which are then provided to a generative model to produce more accurate, context-aware responses.
-</Callout>
+> **lightbulb** RAG stands for Retrieval-Augmented Generation. In RAG, a retriever (often a vector search) finds relevant documents which are then provided to a generative model to produce more accurate, context-aware responses.
 
 Examples
 
@@ -110,6 +108,4 @@ We're done with Part 1. The remaining four query methods are covered in Part 2.
 * [Vector search and semantic retrieval concepts](https://en.wikipedia.org/wiki/Semantic_search)
 * [Introduction to Retrieval-Augmented Generation (RAG)](https://arxiv.org/abs/2005.11401)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/vector-database-for-genai/module/82014ec3-9709-44d1-bd41-577af87083ed/lesson/fe2804d3-4d5c-4b8a-b8f1-2b97995924b7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/vector-database-for-genai/module/82014ec3-9709-44d1-bd41-577af87083ed/lesson/fe2804d3-4d5c-4b8a-b8f1-2b97995924b7)

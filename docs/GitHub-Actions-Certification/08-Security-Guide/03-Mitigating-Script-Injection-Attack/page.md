@@ -87,9 +87,7 @@ jobs:
           fi
 ```
 
-<Callout icon="lightbulb">
-  Quoting the expression (`'${{ ... }}'`) ensures the shell sees it as a literal. Any embedded quotes or commands will not be evaluated.
-</Callout>
+> **lightbulb** Quoting the expression (`'${{ ... }}'`) ensures the shell sees it as a literal. Any embedded quotes or commands will not be evaluated.
 
 | Approach                                   | Risk                                   | Mitigation                                             |
 | ------------------------------------------ | -------------------------------------- | ------------------------------------------------------ |

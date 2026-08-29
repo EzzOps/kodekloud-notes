@@ -29,9 +29,7 @@ This is the most common method for installing Argo Rollouts.
 * Use cases: Ideal for centralized management of application deployments, especially when a single operator manages rollouts for all teams.
 * Integration note: When used together with GitOps tools such as ArgoCD, the controller typically runs in the same namespace used for rollout management. For example, see the [GitOps with ArgoCD](https://learn.kodekloud.com/user/courses/gitops-with-argocd) workflow for related patterns.
 
-<Callout icon="warning">
-  Cluster-wide installation requires cluster-admin privileges. Ensure your security policy allows a controller with cluster-scoped permissions before proceeding.
-</Callout>
+> **warning** Cluster-wide installation requires cluster-admin privileges. Ensure your security policy allows a controller with cluster-scoped permissions before proceeding.
 
 ## 2) Namespace-scoped (restricted) installation
 
@@ -43,9 +41,7 @@ This option limits the controller's visibility and control to a single namespace
   * A cluster administrator must install Rollouts CRDs once for the entire cluster (a one-time step).
 * Use cases: Best for multi-tenant or strongly isolated clusters where teams run independent controllers and you want to limit cross-namespace impact.
 
-<Callout icon="lightbulb">
-  Namespace-scoped controllers help enforce isolation between teams. If you need multi-tenant separation without repeated cluster-admin operations, install the CRDs once and allow team admins to run namespace-scoped controllers.
-</Callout>
+> **lightbulb** Namespace-scoped controllers help enforce isolation between teams. If you need multi-tenant separation without repeated cluster-admin operations, install the CRDs once and allow team admins to run namespace-scoped controllers.
 
 ## One-time CRD installation (required for namespace-scoped)
 

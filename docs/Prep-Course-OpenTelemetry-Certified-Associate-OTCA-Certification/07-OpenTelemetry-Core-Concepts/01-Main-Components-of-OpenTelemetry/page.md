@@ -39,9 +39,7 @@ Telemetry often needs to be transformed, filtered, or routed before reaching a b
 
 * [OpenTelemetry Collector](https://opentelemetry.io/docs/collector/) — A vendor-agnostic, configurable service that receives, processes, and exports telemetry. The Collector supports batching, retries, transformations, filtering, and multi-destination routing, and can act as a gateway between instrumented applications and backends.
 
-<Callout icon="lightbulb">
-  The Collector centralizes processing logic (filtering, batching, and exporting), reducing the need for exporter implementations inside each application and enabling consistent telemetry handling across environments.
-</Callout>
+> **lightbulb** The Collector centralizes processing logic (filtering, batching, and exporting), reducing the need for exporter implementations inside each application and enabling consistent telemetry handling across environments.
 
 ## Deployment, distributions, and ecosystem tooling
 
@@ -74,6 +72,4 @@ Together, these components form a consistent, extensible pipeline for generating
 * Instrumentation: [https://opentelemetry.io/docs/instrumentation/](https://opentelemetry.io/docs/instrumentation/)
 * OpenTelemetry Operator (Kubernetes): [https://github.com/open-telemetry/opentelemetry-operator](https://github.com/open-telemetry/opentelemetry-operator)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/47de1dd5-e85f-4612-9c7a-02c8d128de52" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/47de1dd5-e85f-4612-9c7a-02c8d128de52)

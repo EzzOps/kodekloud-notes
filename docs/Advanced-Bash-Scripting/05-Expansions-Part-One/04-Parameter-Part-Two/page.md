@@ -29,7 +29,7 @@ Bash supports removing the *shortest* matching prefix or suffix from a string wi
 
 Consider these job titles in an IT company:
 
-![The image lists different engineering job titles: Mid DevOps Engineer, Jr. Software Engineer, Sr. DevOps Engineer, and Associate DevOps Engineer, alongside an icon of a briefcase with a magnifying glass.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868556/notes-assets/images/Advanced-Bash-Scripting-Parameter-Part-One/engineering-job-titles-briefcase-icon.jpg)
+![The image lists different engineering job titles: Mid DevOps Engineer, Jr. Software Engineer, Sr. DevOps Engineer, and Associate DevOps Engineer, alongside an icon of a briefcase with a magnifying glass.](https://kodekloud.com/kk-media/image/upload/v1752868556/notes-assets/images/Advanced-Bash-Scripting-Parameter-Part-One/engineering-job-titles-briefcase-icon.jpg)
 
 * Prefixes (associate, senior, junior, mid) indicate tenure or level.
 * The suffix (`Engineer`) indicates the job field.
@@ -38,7 +38,7 @@ Consider these job titles in an IT company:
 
 The `#` operator deletes the shortest matching pattern from the *start* of the string:
 
-![The image illustrates the concept of "Parameter Expansions" with a focus on removing a prefix, represented by a hashtag symbol and scissors icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868557/notes-assets/images/Advanced-Bash-Scripting-Parameter-Part-One/parameter-expansions-remove-prefix.jpg)
+![The image illustrates the concept of "Parameter Expansions" with a focus on removing a prefix, represented by a hashtag symbol and scissors icon.](https://kodekloud.com/kk-media/image/upload/v1752868557/notes-assets/images/Advanced-Bash-Scripting-Parameter-Part-One/parameter-expansions-remove-prefix.jpg)
 
 Example 1: Remove the leading `H`:
 
@@ -103,7 +103,7 @@ echo "${greetings%world}"
 | `${var#pattern}` | Remove shortest prefix match | `${greetings#Hello }` → `World` |
 | `${var%pattern}` | Remove shortest suffix match | `${greetings%rld}` → `Hello Wo` |
 
-![The image illustrates parameter expansions, showing a blue circle with a hash symbol for "Prefix" and a red circle with a percent symbol for "Suffix."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868558/notes-assets/images/Advanced-Bash-Scripting-Parameter-Part-One/parameter-expansions-prefix-suffix.jpg)
+![The image illustrates parameter expansions, showing a blue circle with a hash symbol for "Prefix" and a red circle with a percent symbol for "Suffix."](https://kodekloud.com/kk-media/image/upload/v1752868558/notes-assets/images/Advanced-Bash-Scripting-Parameter-Part-One/parameter-expansions-prefix-suffix.jpg)
 
 ## Next Steps
 

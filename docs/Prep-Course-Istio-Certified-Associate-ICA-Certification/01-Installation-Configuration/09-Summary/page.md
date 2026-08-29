@@ -28,9 +28,7 @@ If you use Helm in GitOps (for example with Argo CD), you typically deploy three
 * `istiod`
 * `ingress` / `gateway` (optional if you do not accept external traffic)
 
-<Callout icon="lightbulb">
-  If you are using Helm as part of a GitOps workflow, you will commonly deploy the `base`, `istiod`, and the ingress/gateway chart. Use `istioctl` for ad-hoc installs or interactive setups.
-</Callout>
+> **lightbulb** If you are using Helm as part of a GitOps workflow, you will commonly deploy the `base`, `istiod`, and the ingress/gateway chart. Use `istioctl` for ad-hoc installs or interactive setups.
 
 ## Sidecar injection and namespace management
 

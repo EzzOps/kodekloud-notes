@@ -31,9 +31,7 @@ Progress: [ 17%]
 
 In contrast, APT-GET produces functional output that is less visually appealing and does not include the same level of user-friendly feedback.
 
-<Callout icon="lightbulb">
-  APT provides an enhanced visual experience and integrates useful information (such as progress indicators), making it more accessible for users performing daily package management tasks.
-</Callout>
+> **lightbulb** APT provides an enhanced visual experience and integrates useful information (such as progress indicators), making it more accessible for users performing daily package management tasks.
 
 ## Package Search Comparison
 
@@ -80,9 +78,7 @@ telnetd-ssl - telnet server with SSL encryption support
 
 Notice that the output of the APT search command is more focused, making it easier for users to locate the desired package. In contrast, the output from `apt-cache search` provides additional and sometimes unrelated information.
 
-<Callout icon="lightbulb">
-  For a more streamlined package search experience, prefer using APT, as it reduces clutter and presents only the most relevant results.
-</Callout>
+> **lightbulb** For a more streamlined package search experience, prefer using APT, as it reduces clutter and presents only the most relevant results.
 
 ## Conclusion
 
@@ -90,8 +86,6 @@ This comparison clearly demonstrates that APT not only offers a better user expe
 
 For more information on package management in Debian-based systems, explore additional articles and the official [Debian Documentation](https://www.debian.org/doc/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/7ced7d44-760f-47a8-a9bc-69971bb0ca17/lesson/fdd93b26-4ff1-4fa0-ac14-230260f0145c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/7ced7d44-760f-47a8-a9bc-69971bb0ca17/lesson/fdd93b26-4ff1-4fa0-ac14-230260f0145c)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/7ced7d44-760f-47a8-a9bc-69971bb0ca17/lesson/a8092210-9729-4d7b-b001-d33afd69ed45" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/7ced7d44-760f-47a8-a9bc-69971bb0ca17/lesson/a8092210-9729-4d7b-b001-d33afd69ed45)

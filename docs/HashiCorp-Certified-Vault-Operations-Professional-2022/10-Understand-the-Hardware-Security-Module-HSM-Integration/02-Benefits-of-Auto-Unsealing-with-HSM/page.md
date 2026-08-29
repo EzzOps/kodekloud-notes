@@ -2,13 +2,9 @@
 disable_sealwrap = true
 ```
 
-<Callout icon="triangle-alert">
-  Disabling seal wrapping reduces your security posture. Only disable if HSM double-encryption is not required.
-</Callout>
+> **triangle-alert** Disabling seal wrapping reduces your security posture. Only disable if HSM double-encryption is not required.
 
-<Frame>
-  ![The image is a slide discussing enabling seal wrapping in Vault, with bullet points explaining its default status, configuration options, and benefits for backend mounts. It includes a Vault certification badge and a cartoon character illustration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878631/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Benefits-and-Use-Cases-of-Seal-Wrapping/enabling-seal-wrapping-vault-slide.jpg)
-</Frame>
+![The image is a slide discussing enabling seal wrapping in Vault, with bullet points explaining its default status, configuration options, and benefits for backend mounts. It includes a Vault certification badge and a cartoon character illustration.](https://kodekloud.com/kk-media/image/upload/v1752878631/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Benefits-and-Use-Cases-of-Seal-Wrapping/enabling-seal-wrapping-vault-slide.jpg)
 
 ## Enabling Seal Wrapping on a Secrets Engine
 
@@ -39,9 +35,7 @@ Seal wrapping is key for high-security Vault deployments requiring FIPS 140-2 Le
 * [Vault Documentation](https://www.vaultproject.io/docs)
 * [FIPS 140-2 Overview](https://csrc.nist.gov/projects/cryptographic-module-validation-program/fips-140)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/72879dfa-5358-4743-b2f1-62bdd686d0ea/lesson/009b9b68-a1ef-47e1-96b8-08ac43f0868e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/72879dfa-5358-4743-b2f1-62bdd686d0ea/lesson/009b9b68-a1ef-47e1-96b8-08ac43f0868e)
 
 
 # Benefits of Auto Unsealing with HSM
@@ -52,9 +46,7 @@ This article discusses the integration of Hardware Security Modules for auto uns
 
 In this lesson, we explore how integrating a Hardware Security Module (HSM) for auto unsealing Vault boosts security, simplifies operations, and helps meet compliance requirements.
 
-<Frame>
-  ![The image is an informational slide explaining what an HSM (Hardware Security Module) is, highlighting its functions, tamper resistance, and deployment options in data centers and cloud services. It also mentions examples like AWS CloudHSM and AWS KMS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878632/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Benefits-of-Auto-Unsealing-with-HSM/hsm-hardware-security-module-explained.jpg)
-</Frame>
+![The image is an informational slide explaining what an HSM (Hardware Security Module) is, highlighting its functions, tamper resistance, and deployment options in data centers and cloud services. It also mentions examples like AWS CloudHSM and AWS KMS.](https://kodekloud.com/kk-media/image/upload/v1752878632/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Benefits-of-Auto-Unsealing-with-HSM/hsm-hardware-security-module-explained.jpg)
 
 An HSM is a network-attached, tamper-resistant device that generates, manages, and protects cryptographic keys. Common use cases include:
 
@@ -85,9 +77,7 @@ Vault Enterprise integrates with any HSM that supports the [PKCS#11](https://en.
 
 To use these features, download the Vault Enterprise HSM–enabled binary (suffix `+ent+hsm`) from [releases.hashicorp.com](https://releases.hashicorp.com/vault/).
 
-<Frame>
-  ![The image outlines the general HSM support features of Vault Enterprise, including root key protection, auto unsealing, seal wrapping for FIPS compliance, and entropy augmentation, requiring an HSM that supports the PKCS11 standard.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878634/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Benefits-of-Auto-Unsealing-with-HSM/vault-enterprise-hsm-support-features.jpg)
-</Frame>
+![The image outlines the general HSM support features of Vault Enterprise, including root key protection, auto unsealing, seal wrapping for FIPS compliance, and entropy augmentation, requiring an HSM that supports the PKCS11 standard.](https://kodekloud.com/kk-media/image/upload/v1752878634/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Benefits-of-Auto-Unsealing-with-HSM/vault-enterprise-hsm-support-features.jpg)
 
 ***
 
@@ -100,9 +90,7 @@ When initializing Vault with HSM auto unseal:
 3. The HSM encrypts it with its internal key and returns ciphertext.
 4. Vault stores the encrypted root key on its backend.
 
-<Frame>
-  ![The image illustrates the process of initializing a Vault using a Hardware Security Module (HSM), showing the steps of passing a root key through the HSM, returning an encrypted root key, and storing it on a storage backend.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878635/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Benefits-of-Auto-Unsealing-with-HSM/vault-initialization-hsm-process-diagram.jpg)
-</Frame>
+![The image illustrates the process of initializing a Vault using a Hardware Security Module (HSM), showing the steps of passing a root key through the HSM, returning an encrypted root key, and storing it on a storage backend.](https://kodekloud.com/kk-media/image/upload/v1752878635/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Benefits-of-Auto-Unsealing-with-HSM/vault-initialization-hsm-process-diagram.jpg)
 
 ***
 
@@ -116,9 +104,7 @@ On each Vault restart, auto unseal follows these steps:
 4. Use the root key to decrypt Vault’s data-encryption key.
 5. Keep the data-encryption key in memory to handle storage encryption/decryption.
 
-<Frame>
-  ![The image illustrates the process of auto unsealing with a Hardware Security Module (HSM), showing the steps of retrieving, passing, and decrypting an encryption key. It includes labeled components like Vault Memory, Storage Backend, and HSM.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878636/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Benefits-of-Auto-Unsealing-with-HSM/auto-unsealing-hsm-encryption-process.jpg)
-</Frame>
+![The image illustrates the process of auto unsealing with a Hardware Security Module (HSM), showing the steps of retrieving, passing, and decrypting an encryption key. It includes labeled components like Vault Memory, Storage Backend, and HSM.](https://kodekloud.com/kk-media/image/upload/v1752878636/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Benefits-of-Auto-Unsealing-with-HSM/auto-unsealing-hsm-encryption-process.jpg)
 
 This workflow mirrors cloud HSM services ([AWS KMS](https://aws.amazon.com/kms/), [Azure Key Vault](https://azure.microsoft.com/services/key-vault/)) but keeps traffic on-premises when using a local HSM.
 
@@ -138,14 +124,10 @@ seal "pkcs11" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Avoid embedding sensitive values (like the HSM PIN) directly in a world-readable file.\
+> **triangle-alert** Avoid embedding sensitive values (like the HSM PIN) directly in a world-readable file.\
   Vault supports environment variables for all PKCS#11 parameters so you can inject secrets at runtime without exposing them on disk.
-</Callout>
 
-<Frame>
-  ![The image lists PKCS11 environment variables related to Vault HSM, with a note stating that memorization is not required for the exam. There's also a Vault certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878637/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Benefits-of-Auto-Unsealing-with-HSM/pkcs11-vault-hsm-variables-badge.jpg)
-</Frame>
+![The image lists PKCS11 environment variables related to Vault HSM, with a note stating that memorization is not required for the exam. There's also a Vault certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878637/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Benefits-of-Auto-Unsealing-with-HSM/pkcs11-vault-hsm-variables-badge.jpg)
 
 ***
 
@@ -157,6 +139,4 @@ seal "pkcs11" {
 * [Azure Key Vault](https://azure.microsoft.com/services/key-vault/)
 * [PKCS#11 Standard](https://en.wikipedia.org/wiki/PKCS_11)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/72879dfa-5358-4743-b2f1-62bdd686d0ea/lesson/690d4bd7-1e18-4ded-80dc-1e5afb85c999" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/72879dfa-5358-4743-b2f1-62bdd686d0ea/lesson/690d4bd7-1e18-4ded-80dc-1e5afb85c999)

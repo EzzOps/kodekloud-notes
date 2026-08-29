@@ -448,11 +448,11 @@ There are two primary scheduling behaviors for node affinity:
 2. **Preferred During Scheduling, Ignored During Execution**
    * The scheduler prefers nodes that meet the affinity rules but will place the pod on another node if no matching nodes are available.
 
-![The image explains node affinity types, showing "requiredDuringSchedulingIgnoredDuringExecution" and "preferredDuringSchedulingIgnoredDuringExecution" with a table detailing scheduling and execution requirements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869895/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Node-Affinity/frame_340.jpg)
+![The image explains node affinity types, showing "requiredDuringSchedulingIgnoredDuringExecution" and "preferredDuringSchedulingIgnoredDuringExecution" with a table detailing scheduling and execution requirements.](https://kodekloud.com/kk-media/image/upload/v1752869895/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Node-Affinity/frame_340.jpg)
 
 Future enhancements may introduce additional affinity types, such as **Required During Execution**. In this model, if a node's labels change after a pod is running and no longer meet the affinity criteria, the pod would be evicted.
 
-![The image shows a table explaining node affinity types, detailing scheduling and execution requirements for four types, with planned features listed above.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869896/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Node-Affinity/frame_410.jpg)
+![The image shows a table explaining node affinity types, detailing scheduling and execution requirements for four types, with planned features listed above.](https://kodekloud.com/kk-media/image/upload/v1752869896/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Node-Affinity/frame_410.jpg)
 
 ## Summary
 

@@ -54,9 +54,7 @@ A common role for a reverse proxy is TLS termination: the reverse proxy accepts 
 
 If you need full end-to-end encryption, you can terminate TLS at the proxy and still connect to backends via HTTPS (or you can terminate at the proxy only for public endpoints and use a secure internal network). The important configuration changes are to use `443` on the upstream servers and `proxy_pass https://...` when forwarding.
 
-<Callout icon="warning">
-  If you terminate TLS at the proxy, ensure you manage certificates securely and verify backend trust if internal encryption is required for compliance. You can also configure the proxy to validate backend certificates when using `proxy_ssl_verify` and related directives.
-</Callout>
+> **warning** If you terminate TLS at the proxy, ensure you manage certificates securely and verify backend trust if internal encryption is required for compliance. You can also configure the proxy to validate backend certificates when using `proxy_ssl_verify` and related directives.
 
 ### Example: basic upstream and HTTP proxying
 
@@ -153,9 +151,7 @@ We will cover caching strategies, cache-control semantics, and performance tunin
 * Authentication / authorization gating
 * Rate limiting and basic WAF rules
 
-<Callout icon="lightbulb">
-  Using an NGINX reverse proxy centralizes TLS, caching, header manipulation, and load distribution — simplifying backend deployments while improving performance, observability, and security.
-</Callout>
+> **lightbulb** Using an NGINX reverse proxy centralizes TLS, caching, header manipulation, and load distribution — simplifying backend deployments while improving performance, observability, and security.
 
 ## Links and further reading
 
@@ -166,6 +162,4 @@ We will cover caching strategies, cache-control semantics, and performance tunin
 
 That brings us to the end of this lesson. Next, we'll move to a demo where you can see these reverse-proxy features implemented hands-on.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/beb4a7aa-77e5-4e9b-9d41-4a3f7029a73a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/beb4a7aa-77e5-4e9b-9d41-4a3f7029a73a)

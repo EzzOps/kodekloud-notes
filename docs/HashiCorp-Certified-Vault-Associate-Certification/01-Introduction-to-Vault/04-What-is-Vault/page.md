@@ -45,9 +45,7 @@ Vault is a secure system for storing, managing, and controlling access to secret
 * API keys and tokens
 * TLS certificates and encryption keys
 
-<Callout icon="lightbulb">
-  Vault centralizes secrets for both humans (CLI/UI) and machines (API), ensuring consistent and secure access across your organization.
-</Callout>
+> **lightbulb** Vault centralizes secrets for both humans (CLI/UI) and machines (API), ensuring consistent and secure access across your organization.
 
 ### Key Features
 
@@ -68,9 +66,7 @@ Vault is a secure system for storing, managing, and controlling access to secret
 5. **Fine-Grained Access Control**\
    Policies define which users or machines can access specific secrets, enabling strict isolation between teams and applications.
 
-<Frame>
-  ![The image is an informational slide about HashiCorp Vault, highlighting its features for managing secrets and protecting sensitive data, including lifecycle management and governance. It also defines what constitutes a secret, such as usernames, passwords, API keys, certificates, and encryption keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878195/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-What-is-Vault/hashicorp-vault-secrets-management-slide.jpg)
-</Frame>
+![The image is an informational slide about HashiCorp Vault, highlighting its features for managing secrets and protecting sensitive data, including lifecycle management and governance. It also defines what constitutes a secret, such as usernames, passwords, API keys, certificates, and encryption keys.](https://kodekloud.com/kk-media/image/upload/v1752878195/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-What-is-Vault/hashicorp-vault-secrets-management-slide.jpg)
 
 ***
 
@@ -96,6 +92,4 @@ Let’s continue to explore the power and flexibility of HashiCorp Vault.
 
 [terraform-docs]: https://www.terraform.io/docs
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/b8d194ad-b4a2-463b-826a-5ad71a059e36/lesson/c1cfc678-f0bb-495b-9f5d-c7024fc4f709" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/b8d194ad-b4a2-463b-826a-5ad71a059e36/lesson/c1cfc678-f0bb-495b-9f5d-c7024fc4f709)

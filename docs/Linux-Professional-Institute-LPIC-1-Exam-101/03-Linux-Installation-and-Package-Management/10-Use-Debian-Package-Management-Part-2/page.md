@@ -6,9 +6,7 @@ This guide explores advanced Debian package management using APT, covering insta
 
 In this guide, we’ll dive deeper into Debian package management using APT (Advanced Package Tool). APT is a powerful front-end to `dpkg` that automates dependency resolution, offers advanced search capabilities, and simplifies package installation, upgrades, and removals. It works with software repositories—which can be remote servers, local mirrors, or even CD-ROMs. Official repositories are maintained by distributions like [Debian](https://www.debian.org/) and [Ubuntu](https://ubuntu.com/), and you can add third-party or custom repos as needed.
 
-<Frame>
-  ![The image is a slide describing the Advanced Package Tool (APT), highlighting its features such as advanced search, dependency resolution, and its role in working with software repositories.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881445/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Use-Debian-Package-Management-Part-2/apt-advanced-features-search-dependency.jpg)
-</Frame>
+![The image is a slide describing the Advanced Package Tool (APT), highlighting its features such as advanced search, dependency resolution, and its role in working with software repositories.](https://kodekloud.com/kk-media/image/upload/v1752881445/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Use-Debian-Package-Management-Part-2/apt-advanced-features-search-dependency.jpg)
 
 ## APT Command-Line Utilities
 
@@ -19,9 +17,7 @@ In this guide, we’ll dive deeper into Debian package management using APT (Adv
 | `sudo apt-file [options]`  | Search for files within packages (inst./uninst.) |
 | `sudo apt [options]`       | Unified interface combining apt-get & apt-cache  |
 
-<Callout icon="triangle-alert">
-  The `apt` command is more user-friendly, but it may not be installed on older systems. Always know how to use both `apt-get` and `apt-cache`.
-</Callout>
+> **triangle-alert** The `apt` command is more user-friendly, but it may not be installed on older systems. Always know how to use both `apt-get` and `apt-cache`.
 
 ***
 
@@ -58,10 +54,8 @@ Need to get 285 kB of archives.
 After this operation, 1041 kB of additional disk space will be used.
 ```
 
-<Callout icon="lightbulb">
-  You can install multiple packages at once, for example:\
+> **lightbulb** You can install multiple packages at once, for example:\
   `sudo apt-get install git curl vim`
-</Callout>
 
 ***
 

@@ -29,9 +29,7 @@ NAME            TYPE          READY   ACCEPTED
 aws-price-check Declarative    True    True
 ```
 
-<Callout icon="lightbulb">
-  Agents without declared tools rely entirely on the LLM and cannot fetch live pricing. To obtain live pricing you must attach MCP server tools to the agent.
-</Callout>
+> **lightbulb** Agents without declared tools rely entirely on the LLM and cannot fetch live pricing. To obtain live pricing you must attach MCP server tools to the agent.
 
 Try a pricing query (LLM-only)
 
@@ -189,9 +187,7 @@ Additional patterns
 * Debugging: Review logs for the MCP server and agent pods (`kubectl logs`) to troubleshoot tool invocation failures.
 * Performance: Tool calls depend on MCP server latency, AWS Pricing API response time, and the number of distinct queries; batch or cache where appropriate.
 
-<Callout icon="warning">
-  Ensure the MCP server has the necessary AWS credentials and IAM permissions to call the AWS Pricing API. Without proper credentials, tool calls will fail even if the MCP server pod is Running.
-</Callout>
+> **warning** Ensure the MCP server has the necessary AWS credentials and IAM permissions to call the AWS Pricing API. Without proper credentials, tool calls will fail even if the MCP server pod is Running.
 
 ## References and further reading
 
@@ -201,11 +197,9 @@ Additional patterns
 
 That’s it for this lab-style lesson. Experiment with different tool combinations, regions, instance families, and purchase options to explore the full capabilities of agents + MCP servers.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/ac1a2bc1-d370-4437-a106-08f51f7064bb" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/ac1a2bc1-d370-4437-a106-08f51f7064bb)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/eb1b0566-4e83-43ad-a38e-fb8124e42e0e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/eb1b0566-4e83-43ad-a38e-fb8124e42e0e)
 
 
 # Demo Deploying MCP Server KMCP Way Part 2

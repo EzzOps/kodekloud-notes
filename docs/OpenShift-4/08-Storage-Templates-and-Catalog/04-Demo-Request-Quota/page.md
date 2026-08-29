@@ -107,9 +107,7 @@ Apply the deployment with:
 oc apply -f deployment.yaml
 ```
 
-<Callout icon="lightbulb">
-  You might receive a warning regarding pod security, but the deployment will be created successfully.
-</Callout>
+> **lightbulb** You might receive a warning regarding pod security, but the deployment will be created successfully.
 
 Verify that the deployment is running by executing:
 
@@ -139,6 +137,4 @@ With these steps, you have successfully created a project, defined a resource qu
 
 For further details and advanced configurations, consider exploring additional OpenShift and Kubernetes documentation.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/aec29b90-2df1-46cc-9db2-b30490ca2c33" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/aec29b90-2df1-46cc-9db2-b30490ca2c33)

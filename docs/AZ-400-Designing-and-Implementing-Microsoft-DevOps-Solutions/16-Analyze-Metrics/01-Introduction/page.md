@@ -16,7 +16,7 @@ By proactively tracking CPU trends, you can right-size VMs or refactor code befo
 
 Memory utilization shows how much RAM your applications consume. Excessive memory usage can trigger slowdowns or out-of-memory errors.
 
-![The image illustrates memory utilization issues, showing slow performance with a warning symbol and an application crash with an error message.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867299/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/memory-utilization-issues-performance-warning.jpg)
+![The image illustrates memory utilization issues, showing slow performance with a warning symbol and an application crash with an error message.](https://kodekloud.com/kk-media/image/upload/v1752867299/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/memory-utilization-issues-performance-warning.jpg)
 
 ### How to Monitor Memory
 
@@ -25,11 +25,11 @@ Memory utilization shows how much RAM your applications consume. Excessive memor
 3. Add the **Memory Usage** metric to a chart.
 4. Configure an alert on critical thresholds.
 
-![The image is a flowchart illustrating a practical example of memory monitoring in three steps: navigating Azure metrics, selecting a relevant resource, and choosing a memory usage metric.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867299/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/memory-monitoring-flowchart-azure-metrics.jpg)
+![The image is a flowchart illustrating a practical example of memory monitoring in three steps: navigating Azure metrics, selecting a relevant resource, and choosing a memory usage metric.](https://kodekloud.com/kk-media/image/upload/v1752867299/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/memory-monitoring-flowchart-azure-metrics.jpg)
 
 Review memory usage graphs over time to uncover leaks or inefficient allocation:
 
-![The image shows a memory monitoring graph with available memory data over time, highlighting average, 5th, and 10th percentile values. It emphasizes identifying trends and spikes in memory consumption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867300/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/memory-monitoring-graph-trends-spikes.jpg)
+![The image shows a memory monitoring graph with available memory data over time, highlighting average, 5th, and 10th percentile values. It emphasizes identifying trends and spikes in memory consumption.](https://kodekloud.com/kk-media/image/upload/v1752867300/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/memory-monitoring-graph-trends-spikes.jpg)
 
 **Remediation Tips:**
 
@@ -42,7 +42,7 @@ Review memory usage graphs over time to uncover leaks or inefficient allocation:
 
 Disk performance metrics gauge how efficiently your storage layer handles read/write operations—vital for data-intensive workloads.
 
-![The image illustrates disk performance, showing a diagram of data being read from and written to a storage disk, with accompanying text explaining the concept.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867301/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/disk-performance-data-read-write-diagram.jpg)
+![The image illustrates disk performance, showing a diagram of data being read from and written to a storage disk, with accompanying text explaining the concept.](https://kodekloud.com/kk-media/image/upload/v1752867301/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/disk-performance-data-read-write-diagram.jpg)
 
 ### Key Disk Metrics
 
@@ -52,15 +52,15 @@ Disk performance metrics gauge how efficiently your storage layer handles read/w
 | Latency    | Time taken for each read/write request |
 | Throughput | Volume of data transferred per second  |
 
-![The image is a diagram titled "Disk Performance" featuring three colored boxes labeled "Input/Output Operations per Second (IOPS)," "Latency," and "Throughput."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867302/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/disk-performance-iops-latency-throughput.jpg)
+![The image is a diagram titled "Disk Performance" featuring three colored boxes labeled "Input/Output Operations per Second (IOPS)," "Latency," and "Throughput."](https://kodekloud.com/kk-media/image/upload/v1752867302/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/disk-performance-iops-latency-throughput.jpg)
 
-![The image is a diagram titled "Disk Performance," showing three components: Input/Output Operations per Second (IOPS), Latency, and Throughput, with a note that throughput measures the amount of data transferred per second.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867303/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/disk-performance-iops-latency-throughput-2.jpg)
+![The image is a diagram titled "Disk Performance," showing three components: Input/Output Operations per Second (IOPS), Latency, and Throughput, with a note that throughput measures the amount of data transferred per second.](https://kodekloud.com/kk-media/image/upload/v1752867303/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/disk-performance-iops-latency-throughput-2.jpg)
 
 Poor disk performance manifests as slow file operations and timeouts:
 
-![The image illustrates a decline in disk performance, represented by a downward graph and arrows, with a label indicating "Poor disk performance."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867304/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/poor-disk-performance-decline-graph.jpg)
+![The image illustrates a decline in disk performance, represented by a downward graph and arrows, with a label indicating "Poor disk performance."](https://kodekloud.com/kk-media/image/upload/v1752867304/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/poor-disk-performance-decline-graph.jpg)
 
-![The image is a diagram about disk performance, highlighting issues like slow response times and increased latency, which impact user experience.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867305/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/disk-performance-latency-response-times-diagram.jpg)
+![The image is a diagram about disk performance, highlighting issues like slow response times and increased latency, which impact user experience.](https://kodekloud.com/kk-media/image/upload/v1752867305/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/disk-performance-latency-response-times-diagram.jpg)
 
 ### Monitoring Disk Performance
 
@@ -68,7 +68,7 @@ Poor disk performance manifests as slow file operations and timeouts:
 * Use Azure Monitor and Azure Storage Metrics to chart and alert.
 * Set thresholds (e.g., latency > 20 ms) to trigger notifications.
 
-![The image is a diagram illustrating disk performance monitoring using Azure Monitor and Azure Storage Metrics to track IOPS, latency, and throughput.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867306/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/disk-performance-monitoring-azure-diagram.jpg)
+![The image is a diagram illustrating disk performance monitoring using Azure Monitor and Azure Storage Metrics to track IOPS, latency, and throughput.](https://kodekloud.com/kk-media/image/upload/v1752867306/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/disk-performance-monitoring-azure-diagram.jpg)
 
 **Remediation Strategies:**
 
@@ -96,11 +96,11 @@ Poor network health can cause application delays, timeouts, and degraded user sa
 2. Use **Connection Monitor** to assess latency and packet loss.
 3. Review bandwidth usage on each virtual NIC.
 
-![The image illustrates a practical example of network performance monitoring using Azure Network Watcher, focusing on bandwidth, latency, and packet loss.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867307/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/azure-network-watcher-performance-monitoring.jpg)
+![The image illustrates a practical example of network performance monitoring using Azure Network Watcher, focusing on bandwidth, latency, and packet loss.](https://kodekloud.com/kk-media/image/upload/v1752867307/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/azure-network-watcher-performance-monitoring.jpg)
 
 Azure Network Watcher’s **Network Performance Monitor** provides end-to-end visibility:
 
-![The image is a slide titled "Practical Example of Network Performance Monitoring," showing a diagram of network issues and listing corrective actions: optimizing network configurations, increasing bandwidth, and implementing QoS policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867308/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/network-performance-monitoring-diagram.jpg)
+![The image is a slide titled "Practical Example of Network Performance Monitoring," showing a diagram of network issues and listing corrective actions: optimizing network configurations, increasing bandwidth, and implementing QoS policies.](https://kodekloud.com/kk-media/image/upload/v1752867308/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/network-performance-monitoring-diagram.jpg)
 
 **Remediation Tips:**
 
@@ -124,7 +124,7 @@ However, you may encounter:
 * Difficulty selecting the most relevant metrics
 * Balancing performance improvements with budget constraints
 
-![The image is a diagram titled "Common Challenges," highlighting three issues: managing alert fatigue, identifying relevant metrics, and balancing performance and cost.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867309/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/common-challenges-alert-fatigue-metrics.jpg)
+![The image is a diagram titled "Common Challenges," highlighting three issues: managing alert fatigue, identifying relevant metrics, and balancing performance and cost.](https://kodekloud.com/kk-media/image/upload/v1752867309/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-infrastructure-performance-indicators-including-CPU-memory-disk-and-network/common-challenges-alert-fatigue-metrics.jpg)
 
 ***
 
@@ -166,7 +166,7 @@ Understanding core infrastructure metrics lets you proactively manage Azure reso
 | Disk I/O           | Read/write operations per second        | Disk Read/Write Ops/Sec   | Varies by workload |
 | Network Throughput | Inbound/outbound bytes per second       | Network In/Out Bytes      | Varies by workload |
 
-![The image is a slide titled "Inspecting Infrastructure Performance Indicators, Including CPU, Memory, Disk, and Network," listing four key metrics: Understanding Key Metrics for Azure Performance Management, CPU Performance, Memory Utilization, and Disk Performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867318/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/infrastructure-performance-indicators-metrics.jpg)
+![The image is a slide titled "Inspecting Infrastructure Performance Indicators, Including CPU, Memory, Disk, and Network," listing four key metrics: Understanding Key Metrics for Azure Performance Management, CPU Performance, Memory Utilization, and Disk Performance.](https://kodekloud.com/kk-media/image/upload/v1752867318/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/infrastructure-performance-indicators-metrics.jpg)
 
 > **lightbulb** Import these metrics into Azure Monitor to visualize trends, set alerts, and automate scaling actions.
 
@@ -176,7 +176,7 @@ Understanding core infrastructure metrics lets you proactively manage Azure reso
 * **Scenario 2:** Trigger an alert on sustained disk latency spikes in a database VM
 * **Scenario 3:** Throttle network-intensive workloads to prevent bandwidth saturation
 
-![The image is a slide titled "Inspecting Infrastructure Performance Indicators, Including CPU, Memory, Disk, and Network," listing three points: practical examples of performance monitoring, benefits of proactive performance, and common challenges.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867319/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/infrastructure-performance-indicators-monitoring.jpg)
+![The image is a slide titled "Inspecting Infrastructure Performance Indicators, Including CPU, Memory, Disk, and Network," listing three points: practical examples of performance monitoring, benefits of proactive performance, and common challenges.](https://kodekloud.com/kk-media/image/upload/v1752867319/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/infrastructure-performance-indicators-monitoring.jpg)
 
 ### Benefits & Challenges
 
@@ -190,7 +190,7 @@ Understanding core infrastructure metrics lets you proactively manage Azure reso
 
 Telemetry data provides deeper insights into application usage and performance.
 
-![The image is a slide titled "Analyzing Metrics by Using Collected Telemetry, Including Usage and Application Performance," listing four topics related to Azure: introduction to telemetry, key services, monitoring services, and configuring alerts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867320/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/analyzing-metrics-telemetry-azure-slide.jpg)
+![The image is a slide titled "Analyzing Metrics by Using Collected Telemetry, Including Usage and Application Performance," listing four topics related to Azure: introduction to telemetry, key services, monitoring services, and configuring alerts.](https://kodekloud.com/kk-media/image/upload/v1752867320/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/analyzing-metrics-telemetry-azure-slide.jpg)
 
 ## Configuring Alerts
 
@@ -210,7 +210,7 @@ Telemetry data provides deeper insights into application usage and performance.
 
 Monitor end-to-end application health by analyzing real usage metrics, dependencies, and response times.
 
-![The image is a slide titled "Analyzing Metrics by Using Collected Telemetry, Including Usage and Application Performance," listing topics like monitoring application performance, analyzing usage metrics, custom dashboards in Azure Monitor, and best practices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867322/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/analyzing-metrics-telemetry-application-performance.jpg)
+![The image is a slide titled "Analyzing Metrics by Using Collected Telemetry, Including Usage and Application Performance," listing topics like monitoring application performance, analyzing usage metrics, custom dashboards in Azure Monitor, and best practices.](https://kodekloud.com/kk-media/image/upload/v1752867322/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/analyzing-metrics-telemetry-application-performance.jpg)
 
 ## Best Practices
 

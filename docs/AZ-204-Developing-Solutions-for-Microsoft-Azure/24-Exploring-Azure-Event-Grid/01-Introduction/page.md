@@ -11,7 +11,7 @@ Azure Event Grid is a fully managed event routing service that simplifies buildi
 3. Implementation of authentication and authorization.
 4. Routing custom events to web endpoints using Azure CLI.
 
-![The image is an introduction slide outlining four topics related to Event Grid, including its operation, event delivery, authentication, and routing custom events using Azure CLI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866485/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Introduction/event-grid-introduction-topics.jpg)
+![The image is an introduction slide outlining four topics related to Event Grid, including its operation, event delivery, authentication, and routing custom events using Azure CLI.](https://kodekloud.com/kk-media/image/upload/v1752866485/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Introduction/event-grid-introduction-topics.jpg)
 
 Let's begin with a detailed overview of Azure Event Grid's fundamental components and functionality.
 

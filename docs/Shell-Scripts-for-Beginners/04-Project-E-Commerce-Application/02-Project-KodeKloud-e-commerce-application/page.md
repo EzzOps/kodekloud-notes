@@ -6,9 +6,7 @@ log-error=/var/log/mariadb/mariadb.log
 pid-file=/var/run/mariadb/mariadb.pid
 ```
 
-<Callout icon="lightbulb">
-  Leave these settings as default unless you require any custom changes, such as modifying the port.
-</Callout>
+> **lightbulb** Leave these settings as default unless you require any custom changes, such as modifying the port.
 
 ***
 
@@ -216,15 +214,11 @@ For further reading on web server deployment and database configuration concepts
 * [MariaDB Knowledge Base](https://mariadb.com/kb/en/)
 * [PHP Manual](https://www.php.net/manual/en/)
 
-<Callout icon="lightbulb">
-  Regularly back up your configuration files and database to prevent data loss and ease recovery in case of system failures.
-</Callout>
+> **lightbulb** Regularly back up your configuration files and database to prevent data loss and ease recovery in case of system failures.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/0e75480e-85f7-470c-9aa4-fac3fef0ede7/lesson/1da45f7e-0de3-4563-9e0f-a0221f54a376" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/0e75480e-85f7-470c-9aa4-fac3fef0ede7/lesson/1da45f7e-0de3-4563-9e0f-a0221f54a376)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/0e75480e-85f7-470c-9aa4-fac3fef0ede7/lesson/2f9d4198-72ca-4408-b1b8-5fac4ec299f5" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/0e75480e-85f7-470c-9aa4-fac3fef0ede7/lesson/2f9d4198-72ca-4408-b1b8-5fac4ec299f5)
 
 
 # Project KodeKloud e commerce application
@@ -246,9 +240,7 @@ The deployment process is divided into several key steps:
 5. Set up additional system requirements, such as firewall rules.
 6. Download and configure the application code from Git.
 
-<Frame>
-  ![The image outlines steps for setting up a LAMP stack: installing and configuring Linux, Apache, MariaDB, and PHP, including firewall and database setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884053/notes-assets/images/Shell-Scripts-for-Beginners-Project-KodeKloud-e-commerce-application/frame_90.jpg)
-</Frame>
+![The image outlines steps for setting up a LAMP stack: installing and configuring Linux, Apache, MariaDB, and PHP, including firewall and database setup.](https://kodekloud.com/kk-media/image/upload/v1752884053/notes-assets/images/Shell-Scripts-for-Beginners-Project-KodeKloud-e-commerce-application/frame_90.jpg)
 
 ## Step 1: Firewall and Database Setup
 

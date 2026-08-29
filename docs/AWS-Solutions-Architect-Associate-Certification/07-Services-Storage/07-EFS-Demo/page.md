@@ -10,7 +10,7 @@ In this lesson, we explore Amazon's Elastic File System (EFS) and demonstrate ho
 
 Our current setup consists of a simple VPC with two subnets across two availability zones (US East 1A and US East 1B). Each zone runs one t2.micro instance, ensuring redundancy and high availability.
 
-![The image shows an AWS EC2 dashboard with two running instances, both of type t2.micro, displaying their status checks and other details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865977/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EFS-Demo/aws-ec2-dashboard-t2micro-instances.jpg)
+![The image shows an AWS EC2 dashboard with two running instances, both of type t2.micro, displaying their status checks and other details.](https://kodekloud.com/kk-media/image/upload/v1752865977/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EFS-Demo/aws-ec2-dashboard-t2micro-instances.jpg)
 
 The goal is to mount a single EFS file system on both servers so that they can share data seamlessly.
 
@@ -18,7 +18,7 @@ The goal is to mount a single EFS file system on both servers so that they can s
 
 Begin by navigating to the EFS page in the AWS console and selecting **Create File System**.
 
-![The image shows a webpage for Amazon Elastic File System (EFS), highlighting its scalable and elastic cloud-native NFS file system features, with options to create a file system and view pricing details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865979/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EFS-Demo/amazon-efs-cloud-native-nfs-file-system.jpg)
+![The image shows a webpage for Amazon Elastic File System (EFS), highlighting its scalable and elastic cloud-native NFS file system features, with options to create a file system and view pricing details.](https://kodekloud.com/kk-media/image/upload/v1752865979/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EFS-Demo/amazon-efs-cloud-native-nfs-file-system.jpg)
 
 ### Customizing Your EFS Settings
 
@@ -27,7 +27,7 @@ Click **Customize** to adjust your EFS configuration:
 * Enter a descriptive name (e.g., "EFS demo").
 * Select a storage class. Choose a multi-zone configuration for enhanced durability, or a single zone option if your workload allows data redundancy limited to one availability zone.
 
-![The image shows the "File system settings" page for creating an Amazon EFS file system, with options for naming, storage class, automatic backups, lifecycle management, and encryption settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865980/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EFS-Demo/amazon-efs-file-system-settings.jpg)
+![The image shows the "File system settings" page for creating an Amazon EFS file system, with options for naming, storage class, automatic backups, lifecycle management, and encryption settings.](https://kodekloud.com/kk-media/image/upload/v1752865980/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EFS-Demo/amazon-efs-file-system-settings.jpg)
 
 For instance, a single availability zone configuration keeps data redundant within that zone, which protects against individual instance failures but may risk data loss if the entire zone fails. Options for automatic backups and lifecycle management (such as moving files older than 30 days to cheaper storage tiers like S3 Standard-IA) are also available.
 
@@ -38,11 +38,11 @@ Next, set up the network access:
 1. Choose the VPC used by your EC2 instances (in our demo, “demo VPC”).
 2. AWS automatically creates mount targets in each availability zone within the selected VPC. Ensure every zone has a mount target to maintain availability.
 
-![The image shows a configuration screen for setting up network access in Amazon EFS, where users can select a Virtual Private Cloud (VPC) and configure mount targets with specific availability zones, subnets, and security groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865981/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EFS-Demo/amazon-efs-network-configuration-screen.jpg)
+![The image shows a configuration screen for setting up network access in Amazon EFS, where users can select a Virtual Private Cloud (VPC) and configure mount targets with specific availability zones, subnets, and security groups.](https://kodekloud.com/kk-media/image/upload/v1752865981/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EFS-Demo/amazon-efs-network-configuration-screen.jpg)
 
 When specifying security groups, you can either create a custom group tailored for EFS traffic or use the security group attached to your EC2 instances if it already permits all necessary communication.
 
-![The image shows an AWS Management Console screen displaying a list of security groups, with details of inbound rules for a selected security group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865982/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EFS-Demo/aws-management-console-security-groups.jpg)
+![The image shows an AWS Management Console screen displaying a list of security groups, with details of inbound rules for a selected security group.](https://kodekloud.com/kk-media/image/upload/v1752865982/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EFS-Demo/aws-management-console-security-groups.jpg)
 
 After reviewing the configurations, click **Next**, review your selections, and then **Create**. Wait a few minutes for AWS to provision the file system.
 
@@ -50,7 +50,7 @@ After reviewing the configurations, click **Next**, review your selections, and 
 
 Once the file system is active, log into your EC2 instances to complete the setup. The following steps must be performed on each server.
 
-![The image shows an AWS Elastic File System (EFS) dashboard with a file system named "efs-demo" that is available and unencrypted, with a total size of 6.00 KiB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865983/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EFS-Demo/aws-efs-dashboard-efs-demo.jpg)
+![The image shows an AWS Elastic File System (EFS) dashboard with a file system named "efs-demo" that is available and unencrypted, with a total size of 6.00 KiB.](https://kodekloud.com/kk-media/image/upload/v1752865983/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EFS-Demo/aws-efs-dashboard-efs-demo.jpg)
 
 ### Step 1: Create a Mount Directory
 

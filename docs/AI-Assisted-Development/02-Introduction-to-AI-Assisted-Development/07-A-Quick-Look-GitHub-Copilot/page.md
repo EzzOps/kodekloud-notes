@@ -85,7 +85,7 @@ testpaths = ["tests"]
 python_files = ["test_*.py"]
 ```
 
-![The image shows a Visual Studio Code interface with a project directory open, displaying a requirements.txt file listing Python dependencies. The terminal at the bottom is ready for input.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857083/notes-assets/images/AI-Assisted-Development-A-Quick-Look-Cursor/visual-studio-code-requirements-terminal.jpg)
+![The image shows a Visual Studio Code interface with a project directory open, displaying a requirements.txt file listing Python dependencies. The terminal at the bottom is ready for input.](https://kodekloud.com/kk-media/image/upload/v1752857083/notes-assets/images/AI-Assisted-Development-A-Quick-Look-Cursor/visual-studio-code-requirements-terminal.jpg)
 
 ## Setting Up and Running the Application
 
@@ -191,7 +191,7 @@ if __name__ == "__main__":
 
 After running the application, confirm that `demo.txt` has been processed and that `demo_no_spaces.txt` is created as expected.
 
-![The image shows a code editor with a file directory on the left and a text file open in the main area, displaying placeholder text. The terminal at the bottom shows log messages related to an application starting and finishing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857084/notes-assets/images/AI-Assisted-Development-A-Quick-Look-Cursor/code-editor-file-directory-terminal.jpg)
+![The image shows a code editor with a file directory on the left and a text file open in the main area, displaying placeholder text. The terminal at the bottom shows log messages related to an application starting and finishing.](https://kodekloud.com/kk-media/image/upload/v1752857084/notes-assets/images/AI-Assisted-Development-A-Quick-Look-Cursor/code-editor-file-directory-terminal.jpg)
 
 ## Refactoring into Functions and Writing Tests
 

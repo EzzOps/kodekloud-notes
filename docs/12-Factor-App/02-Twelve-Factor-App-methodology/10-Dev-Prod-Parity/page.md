@@ -34,7 +34,7 @@ Historically, transitioning code from development to production could span weeks
 
 > **lightbulb** The 10th principle of the [12 Factor App](https://learn.kodekloud.com/user/courses/12-factor-app) framework emphasizes minimizing differences between development, staging, and production. This approach streamlines continuous integration and delivery pipelines, reducing the inherent gaps in traditional setups.
 
-![The image describes the "Dev/prod parity" principle of the twelve-factor app, emphasizing minimal differences between development and production environments for continuous deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856833/notes-assets/images/12-Factor-App-Dev-Prod-Parity/frame_100.jpg)
+![The image describes the "Dev/prod parity" principle of the twelve-factor app, emphasizing minimal differences between development and production environments for continuous deployment.](https://kodekloud.com/kk-media/image/upload/v1752856833/notes-assets/images/12-Factor-App-Dev-Prod-Parity/frame_100.jpg)
 
 ## Modern Practices for Dev-Prod Parity
 
@@ -42,7 +42,7 @@ Advances in continuous integration (CI) and continuous delivery/deployment (CD) 
 
 Moreover, the adoption of modern containerization platforms like Docker has enhanced the ability to maintain similar environments across all stages. By using the same set of tools from development to production, teams can effectively minimize surprises during deployment.
 
-![The image illustrates a software deployment pipeline with stages: dev, staging, and prod, highlighting time, personnel, and tools gaps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856834/notes-assets/images/12-Factor-App-Dev-Prod-Parity/frame_130.jpg)
+![The image illustrates a software deployment pipeline with stages: dev, staging, and prod, highlighting time, personnel, and tools gaps.](https://kodekloud.com/kk-media/image/upload/v1752856834/notes-assets/images/12-Factor-App-Dev-Prod-Parity/frame_130.jpg)
 
 Maintaining parity across development, staging, and production is crucial for achieving reliable, continuous deployments. By bridging the gaps in time, personnel, and tooling, teams can ensure that new features and updates are deployed smoothly and perform consistently in production.
 

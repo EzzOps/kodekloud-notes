@@ -20,13 +20,11 @@ kubectl get pods,svc
 
 You should see all five pods running, with the voting and result services listed as NodePort services and the Redis and PostgreSQL (DB) services exposed as ClusterIP.
 
-<Callout icon="lightbulb">
-  To access the voting application, run:
+> **lightbulb** To access the voting application, run:
 
   minikube service voting-service --url
 
   This opens the front-end interface where you can cast your vote.
-</Callout>
 
 Once you cast a vote, check the results by accessing the result service:
 
@@ -36,17 +34,11 @@ minikube service result-service --url
 
 This will display the updated voting results.
 
-<Callout icon="lightbulb">
-  The results page visually represents vote totals along with percentage breakdowns, enhancing the overall user experience.
-</Callout>
+> **lightbulb** The results page visually represents vote totals along with percentage breakdowns, enhancing the overall user experience.
 
-<Frame>
-  ![The image shows a split screen with equal blue and teal sections, displaying a 50% vote for both "CATS" and "DOGS."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884953/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Demo-Deploying-voting-app-on-Kubernetes/frame_1170.jpg)
-</Frame>
+![The image shows a split screen with equal blue and teal sections, displaying a 50% vote for both "CATS" and "DOGS."](https://kodekloud.com/kk-media/image/upload/v1752884953/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Demo-Deploying-voting-app-on-Kubernetes/frame_1170.jpg)
 
-<Frame>
-  ![The image shows a voting result with "Cats" at 0% and "Dogs" at 100% on a turquoise background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884955/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Demo-Deploying-voting-app-on-Kubernetes/frame_1210.jpg)
-</Frame>
+![The image shows a voting result with "Cats" at 0% and "Dogs" at 100% on a turquoise background.](https://kodekloud.com/kk-media/image/upload/v1752884955/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Demo-Deploying-voting-app-on-Kubernetes/frame_1210.jpg)
 
 ***
 
@@ -56,9 +48,7 @@ In this lesson, you successfully deployed a multi-tier voting application on a K
 
 Happy deploying, and see you in the next tutorial!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/a603e70d-8473-4de4-aec9-7cc76c396ad3/lesson/9901796e-7f0f-4d06-8e41-7b7f7a44bb0a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/a603e70d-8473-4de4-aec9-7cc76c396ad3/lesson/9901796e-7f0f-4d06-8e41-7b7f7a44bb0a)
 
 
 # Deploying voting app on Kubernetes
@@ -88,9 +78,7 @@ Our objective is to deploy multiple containers as pods (and later as ReplicaSets
 * **PostgreSQL Database:**\
   Maintains aggregated vote counts with a service listening on port 5432. It is accessed by the worker app (to update votes) and the result app (to display results).
 
-<Callout icon="lightbulb">
-  Even though inter-component communication is critical, the worker app functions solely as a background processor and is not directly accessed by external users.
-</Callout>
+> **lightbulb** Even though inter-component communication is critical, the worker app functions solely as a background processor and is not directly accessed by external users.
 
 ## Pods and Kubernetes Objects
 
@@ -120,9 +108,7 @@ The overall deployment consists of five pods and four services configured as fol
 * Two external-facing services (NodePort) for the voting and result apps.
 * The worker pod does not have an associated service, as it does not expose an interface for external access.
 
-<Frame>
-  ![Diagram of a Kubernetes-based voting app architecture with pods for voting, result, Redis, Postgres, and worker, detailing service connections and deployment steps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884956/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Deploying-voting-app-on-Kubernetes/frame_420.jpg)
-</Frame>
+![Diagram of a Kubernetes-based voting app architecture with pods for voting, result, Redis, Postgres, and worker, detailing service connections and deployment steps.](https://kodekloud.com/kk-media/image/upload/v1752884956/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Deploying-voting-app-on-Kubernetes/frame_420.jpg)
 
 A common question arises: Why does the worker app not require a service? Since it does not run a web server or any other externally accessible process, it only functions as a background processor, making an exposed endpoint unnecessary.
 
@@ -136,14 +122,8 @@ Before deployment, ensure you have the correct Docker images available. The imag
 
 For the databases, the official images for Redis and PostgreSQL will be used.
 
-<Frame>
-  ![The image illustrates a Kubernetes deployment diagram for a voting app, showing pods for voting, results, Redis, Postgres, and worker, with service connections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884957/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Deploying-voting-app-on-Kubernetes/frame_480.jpg)
-</Frame>
+![The image illustrates a Kubernetes deployment diagram for a voting app, showing pods for voting, results, Redis, Postgres, and worker, with service connections.](https://kodekloud.com/kk-media/image/upload/v1752884957/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Deploying-voting-app-on-Kubernetes/frame_480.jpg)
 
-<Callout icon="lightbulb">
-  This article lays the groundwork for the deployment. In the next demonstration, you will see these concepts implemented in a live environment.
-</Callout>
+> **lightbulb** This article lays the groundwork for the deployment. In the next demonstration, you will see these concepts implemented in a live environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/a603e70d-8473-4de4-aec9-7cc76c396ad3/lesson/0e896dbf-e057-4324-9a6a-5a7114232513" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/a603e70d-8473-4de4-aec9-7cc76c396ad3/lesson/0e896dbf-e057-4324-9a6a-5a7114232513)

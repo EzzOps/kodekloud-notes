@@ -89,9 +89,7 @@ variable "hard_drive" {
 var.hard_drive["slow"]
 ```
 
-<Callout icon="lightbulb">
-  You can also use the dot notation if your key is a valid identifier, e.g., `var.hard_drive.slow`.
-</Callout>
+> **lightbulb** You can also use the dot notation if your key is a valid identifier, e.g., `var.hard_drive.slow`.
 
 ***
 
@@ -126,9 +124,7 @@ variable "users" {
 * **Type:** `set(string)`
 * **Mistake:** Sets must not contain duplicates; `"jerry"` appears twice.
 
-<Callout icon="triangle-alert">
-  Defining duplicate elements in a `set` will cause validation errors. Ensure each member is unique.
-</Callout>
+> **triangle-alert** Defining duplicate elements in a `set` will cause validation errors. Ensure each member is unique.
 
 ***
 

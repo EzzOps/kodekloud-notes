@@ -14,11 +14,11 @@ When an API endpoint is secured with IAM, the client includes a Signature Versio
 
 Another effective approach to secure API Gateway is by implementing a Lambda authorizer. In this scenario, a user logs in via a third-party identity provider (IDP) (e.g., Google) and obtains a bearer token. This token is then passed in the HTTP headers to API Gateway. The gateway forwards the token to the Lambda authorizer, which validates it with the third-party authentication system. After successful validation, the Lambda function generates an IAM policy that governs the user's access permissions.
 
-![The image is a diagram illustrating an API Gateway with a Lambda Authorizer, showing the interaction between a user, OAuth provider, and the API Gateway for token verification.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857856/notes-assets/images/AWS-Certified-Developer-Associate-Authentication-Authorization/api-gateway-lambda-authorizer-diagram.jpg)
+![The image is a diagram illustrating an API Gateway with a Lambda Authorizer, showing the interaction between a user, OAuth provider, and the API Gateway for token verification.](https://kodekloud.com/kk-media/image/upload/v1752857856/notes-assets/images/AWS-Certified-Developer-Associate-Authentication-Authorization/api-gateway-lambda-authorizer-diagram.jpg)
 
 If the generated IAM policy permits access, the request is routed to the backend service, and the response is relayed back to the user. A key benefit of using a Lambda authorizer is that API Gateway caches the IAM policy, reducing the need for repeated token validations on consecutive requests.
 
-![The image is a flowchart illustrating an API Gateway with a Lambda Authorizer, showing interactions between a user, OAuth provider, API Gateway, Lambda function, and DynamoDB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857857/notes-assets/images/AWS-Certified-Developer-Associate-Authentication-Authorization/api-gateway-lambda-authorizer-flowchart.jpg)
+![The image is a flowchart illustrating an API Gateway with a Lambda Authorizer, showing interactions between a user, OAuth provider, API Gateway, Lambda function, and DynamoDB.](https://kodekloud.com/kk-media/image/upload/v1752857857/notes-assets/images/AWS-Certified-Developer-Associate-Authentication-Authorization/api-gateway-lambda-authorizer-flowchart.jpg)
 
 ## Using Resource Policies
 
@@ -57,7 +57,7 @@ Below is an example of a JSON resource policy that grants public access while de
 
 Another robust approach for managing authentication and authorization involves Amazon Cognito. In this workflow, a user logs into an application integrated with Cognito. When authentication is successful, Cognito returns an ID token to the client application. The client then uses this token in HTTP headers when making a request to API Gateway. API Gateway validates the token before passing the request to the backend service.
 
-![The image is a flowchart illustrating the interaction between a user, an app, an API Gateway, and Cognito for verification. It shows the process of user authentication using API Gateway with Cognito.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857858/notes-assets/images/AWS-Certified-Developer-Associate-Authentication-Authorization/user-app-api-gateway-cognito-flowchart.jpg)
+![The image is a flowchart illustrating the interaction between a user, an app, an API Gateway, and Cognito for verification. It shows the process of user authentication using API Gateway with Cognito.](https://kodekloud.com/kk-media/image/upload/v1752857858/notes-assets/images/AWS-Certified-Developer-Associate-Authentication-Authorization/user-app-api-gateway-cognito-flowchart.jpg)
 
 ## Comparison of Authentication and Authorization Methods
 

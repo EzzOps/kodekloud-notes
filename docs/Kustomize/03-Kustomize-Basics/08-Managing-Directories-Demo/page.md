@@ -114,9 +114,7 @@ Or chain them:
 kubectl apply -f k8s/api -f k8s/cache -f k8s/db
 ```
 
-<Callout icon="triangle-alert">
-  Make sure your `kubectl` context is pointed to the correct cluster and you have permission to create resources.
-</Callout>
+> **triangle-alert** Make sure your `kubectl` context is pointed to the correct cluster and you have permission to create resources.
 
 ### Cleaning Up
 
@@ -158,15 +156,13 @@ kustomize build k8s/ | kubectl apply -f -
 
 Or use `kubectl`’s built-in Kustomize support:
 
-<Callout icon="lightbulb">
-  You can apply overlays without installing the standalone Kustomize binary by running:
+> **lightbulb** You can apply overlays without installing the standalone Kustomize binary by running:
 
   ```bash theme={null}
   kubectl apply -k k8s/
   ```
 
   See \[Kubectl apply documentation].
-</Callout>
 
 Verify your pods:
 
@@ -251,8 +247,6 @@ This scalable structure keeps your manifests organized and ready for production-
 
 [kustomize-docs]: https://kubectl.docs.kubernetes.io/references/kustomize/kustomization/
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/11c7ef2f-8db7-42f0-bce1-b5afb0798b7a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/11c7ef2f-8db7-42f0-bce1-b5afb0798b7a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/2b93a77f-e445-4130-82a4-b12a20bc481f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/2b93a77f-e445-4130-82a4-b12a20bc481f)

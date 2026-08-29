@@ -23,9 +23,7 @@ Now that your application is running, let’s expose it using a Kubernetes Servi
 1. Open your editor and navigate to the directory where you store your configuration files. For better organization, you can create a directory called `service`.
 2. Inside the `service` directory, create a file named `service-definition.yaml`.
 
-<Callout icon="lightbulb">
-  You are not required to use the suggested directory structure. If preferred, all configuration files may be kept in a single directory.
-</Callout>
+> **lightbulb** You are not required to use the suggested directory structure. If preferred, all configuration files may be kept in a single directory.
 
 ### Define the Service API and Specifications
 
@@ -115,12 +113,8 @@ http://192.168.99.101:30004
 
 Copy the URL and paste it into your web browser. You should see the default Nginx web page, confirming that the Nginx application is accessible and running as expected.
 
-<Callout icon="lightbulb">
-  This concludes the demo on creating and exposing a Kubernetes Service. Your application is now accessible externally, and you can use this approach to manage exposure in various Kubernetes environments.
-</Callout>
+> **lightbulb** This concludes the demo on creating and exposing a Kubernetes Service. Your application is now accessible externally, and you can use this approach to manage exposure in various Kubernetes environments.
 
 Happy deploying, and see you in the next tutorial!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/7e491918-c5e6-47e3-b4b2-54e6e311292c/lesson/9d5fc51f-cd86-4dc0-af27-08282b5a18d9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/7e491918-c5e6-47e3-b4b2-54e6e311292c/lesson/9d5fc51f-cd86-4dc0-af27-08282b5a18d9)

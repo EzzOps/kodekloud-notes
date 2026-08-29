@@ -12,7 +12,7 @@ With versioning disabled, any object you delete is **permanently** removed and c
 
 1. Create a new S3 bucket named **Versioning Demo**, leaving **Bucket Versioning** turned off and all other settings at their defaults.
 
-![The image shows an AWS S3 console screen with settings for blocking public access and bucket versioning options. It includes a notification about upcoming permission changes related to public access settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869266/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/aws-s3-console-block-public-access.jpg)
+![The image shows an AWS S3 console screen with settings for blocking public access and bucket versioning options. It includes a notification about upcoming permission changes related to public access settings.](https://kodekloud.com/kk-media/image/upload/v1752869266/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/aws-s3-console-block-public-access.jpg)
 
 2. Locally create a file `file1.txt` with:
 
@@ -20,11 +20,11 @@ With versioning disabled, any object you delete is **permanently** removed and c
    this is version 1
    ```
 
-![The image shows an Amazon S3 bucket interface with a Visual Studio Code window open, displaying a text file containing the text "this is version 1".](../../../../images/kodekloud.com/kk-media/image/upload/v1752869267/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-bucket-vscode-text-file.jpg)
+![The image shows an Amazon S3 bucket interface with a Visual Studio Code window open, displaying a text file containing the text "this is version 1".](https://kodekloud.com/kk-media/image/upload/v1752869267/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-bucket-vscode-text-file.jpg)
 
 3. Upload `file1.txt` to your bucket (all defaults).
 
-![The image shows the AWS S3 Management Console with an upload interface for adding files to a bucket named "kk-versioning-demo." A file named "file1.txt" is ready to be uploaded.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869269/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/aws-s3-management-console-upload-file.jpg)
+![The image shows the AWS S3 Management Console with an upload interface for adding files to a bucket named "kk-versioning-demo." A file named "file1.txt" is ready to be uploaded.](https://kodekloud.com/kk-media/image/upload/v1752869269/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/aws-s3-management-console-upload-file.jpg)
 
 4. Open **file1.txt** in the console to confirm it shows:
 
@@ -37,11 +37,11 @@ With versioning disabled, any object you delete is **permanently** removed and c
 
 > **triangle-alert** Deleting objects in a bucket with versioning disabled removes them forever—there is no undelete or version history.
 
-![The image shows an AWS S3 interface for deleting objects, specifically a file named "file1.txt" with details like type, last modified date, and size. There's a prompt to confirm permanent deletion by typing "permanently delete."](../../../../images/kodekloud.com/kk-media/image/upload/v1752869270/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/aws-s3-delete-file-interface.jpg)
+![The image shows an AWS S3 interface for deleting objects, specifically a file named "file1.txt" with details like type, last modified date, and size. There's a prompt to confirm permanent deletion by typing "permanently delete."](https://kodekloud.com/kk-media/image/upload/v1752869270/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/aws-s3-delete-file-interface.jpg)
 
 6. Re-upload the same `file1.txt` (version 1) to restore it.
 
-![The image shows an Amazon S3 console interface displaying details of a file named "file1.txt" within a bucket. It includes information such as the file's size, type, last modified date, and S3 URI, with a note indicating that bucket versioning is disabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869271/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-console-file1-details.jpg)
+![The image shows an Amazon S3 console interface displaying details of a file named "file1.txt" within a bucket. It includes information such as the file's size, type, last modified date, and S3 URI, with a note indicating that bucket versioning is disabled.](https://kodekloud.com/kk-media/image/upload/v1752869271/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-console-file1-details.jpg)
 
 7. **Overwrite when Disabled**\
    Edit `file1.txt` to:
@@ -58,7 +58,7 @@ Enable versioning to retain every object change with a unique Version ID. You ca
 
 1. In the bucket **Properties**, click **Edit** under **Bucket Versioning**, select **Enable**, and **Save**.
 
-![The image shows an Amazon S3 bucket properties page for "kk-versioning-demo," displaying details about bucket versioning, tags, and default encryption settings. The bucket versioning is currently disabled, and there are no tags associated with the resource.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869272/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-bucket-versioning-demo.jpg)
+![The image shows an Amazon S3 bucket properties page for "kk-versioning-demo," displaying details about bucket versioning, tags, and default encryption settings. The bucket versioning is currently disabled, and there are no tags associated with the resource.](https://kodekloud.com/kk-media/image/upload/v1752869272/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-bucket-versioning-demo.jpg)
 
 2. Upload `file1.txt` with the original content:
 
@@ -68,7 +68,7 @@ Enable versioning to retain every object change with a unique Version ID. You ca
 
 3. In the **Objects** view, check **Show versions** to reveal version history. Each version entry displays a unique **Version ID**.
 
-![The image shows an Amazon S3 bucket interface with a file named "file1.txt" listed, displaying details like version ID, last modified date, size, and storage class.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869273/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-bucket-file-details.jpg)
+![The image shows an Amazon S3 bucket interface with a file named "file1.txt" listed, displaying details like version ID, last modified date, size, and storage class.](https://kodekloud.com/kk-media/image/upload/v1752869273/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-bucket-file-details.jpg)
 
 4. Confirm version 1 content:
 
@@ -83,9 +83,9 @@ Enable versioning to retain every object change with a unique Version ID. You ca
 
 Each upload creates a new version entry. You can open each one to verify content and timestamps.
 
-![The image shows an Amazon S3 console displaying details of a file named "file1.txt" including its properties, such as size, type, and last modified date. It also includes information about bucket properties and management configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869275/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-console-file1-properties.jpg)
+![The image shows an Amazon S3 console displaying details of a file named "file1.txt" including its properties, such as size, type, and last modified date. It also includes information about bucket properties and management configurations.](https://kodekloud.com/kk-media/image/upload/v1752869275/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-console-file1-properties.jpg)
 
-![The image shows an Amazon S3 Management Console upload interface, where a file named "file1.txt" is ready to be uploaded to a bucket named "kk-versioning-demo."](../../../../images/kodekloud.com/kk-media/image/upload/v1752869276/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-upload-file1-kk-demo.jpg)
+![The image shows an Amazon S3 Management Console upload interface, where a file named "file1.txt" is ready to be uploaded to a bucket named "kk-versioning-demo."](https://kodekloud.com/kk-media/image/upload/v1752869276/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-upload-file1-kk-demo.jpg)
 
 ***
 
@@ -95,17 +95,17 @@ Deleting an object now places a **delete marker** rather than removing prior ver
 
 1. Select **file1.txt** → **Delete** → type **delete** (no “permanently delete” prompt).
 
-![The image shows an Amazon S3 interface for deleting objects, specifically a file named "file1.txt." It includes options to confirm deletion by typing "delete" in a text input field.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869276/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-delete-file-interface.jpg)
+![The image shows an Amazon S3 interface for deleting objects, specifically a file named "file1.txt." It includes options to confirm deletion by typing "delete" in a text input field.](https://kodekloud.com/kk-media/image/upload/v1752869276/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-delete-file-interface.jpg)
 
 2. The object disappears, but **Show versions** reveals:
    * A new **Delete marker**
    * All three prior versions
 
-![The image shows an AWS S3 interface indicating that an object has been successfully deleted, with no objects failing to delete.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869277/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/aws-s3-object-deleted-successfully.jpg)
+![The image shows an AWS S3 interface indicating that an object has been successfully deleted, with no objects failing to delete.](https://kodekloud.com/kk-media/image/upload/v1752869277/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/aws-s3-object-deleted-successfully.jpg)
 
 3. **Restoring**: Remove the delete marker by selecting it and choosing **Delete** → type **permanently delete**.
 
-![The image shows an Amazon S3 interface for deleting objects, specifically a file named "file1.txt," with a prompt to confirm permanent deletion by typing "permanently delete."](../../../../images/kodekloud.com/kk-media/image/upload/v1752869278/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-delete-file-prompt.jpg)
+![The image shows an Amazon S3 interface for deleting objects, specifically a file named "file1.txt," with a prompt to confirm permanent deletion by typing "permanently delete."](https://kodekloud.com/kk-media/image/upload/v1752869278/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-delete-file-prompt.jpg)
 
 #### Permanently Deleting Specific Versions
 
@@ -119,24 +119,24 @@ Once turned on, you can only **suspend** versioning, not disable it. Suspended s
 
 1. In **Properties** → **Bucket Versioning**, click **Suspend** and **Save**.
 
-![The image shows an Amazon S3 interface for editing bucket versioning settings, with options to suspend or enable versioning and a warning about the impact of changes. There is also a section for multi-factor authentication (MFA) delete, which is currently disabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869280/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-bucket-versioning-settings.jpg)
+![The image shows an Amazon S3 interface for editing bucket versioning settings, with options to suspend or enable versioning and a warning about the impact of changes. There is also a section for multi-factor authentication (MFA) delete, which is currently disabled.](https://kodekloud.com/kk-media/image/upload/v1752869280/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-bucket-versioning-settings.jpg)
 
 2. Existing versions remain accessible. New uploads use a `null` Version ID.
 
-![The image shows an Amazon S3 bucket interface with a list of text files, their version IDs, modification dates, sizes, and storage classes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869281/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-bucket-interface-files-list.jpg)
+![The image shows an Amazon S3 bucket interface with a list of text files, their version IDs, modification dates, sizes, and storage classes.](https://kodekloud.com/kk-media/image/upload/v1752869281/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-bucket-interface-files-list.jpg)
 
 3. Upload **version 4** (`this is version 4`) and **version 5** (`this is version 5`). Both appear with `null` Version IDs.
 
-![The image shows an Amazon S3 bucket interface with a list of objects and a Visual Studio Code window displaying a text file with the content "this is version 5."](../../../../images/kodekloud.com/kk-media/image/upload/v1752869282/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-bucket-vscode-text-file-2.jpg)
+![The image shows an Amazon S3 bucket interface with a list of objects and a Visual Studio Code window displaying a text file with the content "this is version 5."](https://kodekloud.com/kk-media/image/upload/v1752869282/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-bucket-vscode-text-file-2.jpg)
 
-![The image shows an Amazon S3 bucket interface with a list of text files, their version IDs, last modified dates, sizes, and storage classes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869283/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-bucket-interface-files-list-2.jpg)
+![The image shows an Amazon S3 bucket interface with a list of text files, their version IDs, last modified dates, sizes, and storage classes.](https://kodekloud.com/kk-media/image/upload/v1752869283/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-bucket-interface-files-list-2.jpg)
 
 ### New Objects under Suspension
 
 1. Create `file2.txt` with `this is version 1` and upload—it gets `null` ID.
 2. Update to `this is version 2`—the previous `null` version is replaced.
 
-![The image shows an Amazon S3 Management Console screen where a file named "file2.txt" is being prepared for upload to a bucket named "kk-versioning-demo." The file is 17.0 bytes in size and is of type "text/plain."](../../../../images/kodekloud.com/kk-media/image/upload/v1752869284/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-console-file-upload-kk-versioning.jpg)
+![The image shows an Amazon S3 Management Console screen where a file named "file2.txt" is being prepared for upload to a bucket named "kk-versioning-demo." The file is 17.0 bytes in size and is of type "text/plain."](https://kodekloud.com/kk-media/image/upload/v1752869284/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-console-file-upload-kk-versioning.jpg)
 
 ***
 
@@ -144,7 +144,7 @@ Once turned on, you can only **suspend** versioning, not disable it. Suspended s
 
 In the **Bucket Versioning** settings, you’ll see **MFA Delete**. Enabling this feature (via CLI or SDK) requires multi-factor authentication to change or delete versions. It cannot be turned on in the console.
 
-![The image shows an AWS S3 interface for editing bucket versioning settings, with options to suspend or enable versioning and a section for multi-factor authentication (MFA) delete. There are buttons to cancel or save changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869285/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/aws-s3-bucket-versioning-settings-interface.jpg)
+![The image shows an AWS S3 interface for editing bucket versioning settings, with options to suspend or enable versioning and a section for multi-factor authentication (MFA) delete. There are buttons to cancel or save changes.](https://kodekloud.com/kk-media/image/upload/v1752869285/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/aws-s3-bucket-versioning-settings-interface.jpg)
 
 ***
 
@@ -166,7 +166,7 @@ To tear down:
 2. Select all versions and markers → **Delete** → type **permanently delete**.
 3. Delete the bucket.
 
-![The image shows an Amazon S3 interface for deleting objects, listing files with details like version ID, type, last modified date, and size. There's a prompt to confirm deletion by typing "permanently delete."](../../../../images/kodekloud.com/kk-media/image/upload/v1752869286/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-delete-objects-interface.jpg)
+![The image shows an Amazon S3 interface for deleting objects, listing files with details like version ID, type, last modified date, and size. There's a prompt to confirm deletion by typing "permanently delete."](https://kodekloud.com/kk-media/image/upload/v1752869286/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Versioning/amazon-s3-delete-objects-interface.jpg)
 
 ***
 

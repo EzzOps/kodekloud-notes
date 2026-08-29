@@ -52,7 +52,7 @@ Explanation:
 sed [OPTION]... {script-only-if-no-other-script} [input-file]...
 ```
 
-![The image shows a command-line syntax for the sed command, specifically highlighting the use of the print (p) script.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868674/notes-assets/images/Advanced-Bash-Scripting-sed-print/sed-command-line-print-syntax.jpg)
+![The image shows a command-line syntax for the sed command, specifically highlighting the use of the print (p) script.](https://kodekloud.com/kk-media/image/upload/v1752868674/notes-assets/images/Advanced-Bash-Scripting-sed-print/sed-command-line-print-syntax.jpg)
 
 ## Using sed with Pipes and Files
 

@@ -7,9 +7,7 @@ terraform init
 
 After initialization, your local CLI sessions will execute Terraform runs in the Cloud backend.
 
-<Frame>
-  ![The image shows a split screen with a terminal window on the left displaying Terraform commands and a web interface on the right showing Terraform Cloud workspace variables, including sensitive AWS keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878791/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Variables/terraform-commands-cloud-workspace-variables.jpg)
-</Frame>
+![The image shows a split screen with a terminal window on the left displaying Terraform commands and a web interface on the right showing Terraform Cloud workspace variables, including sensitive AWS keys.](https://kodekloud.com/kk-media/image/upload/v1752878791/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Terraform-Cloud-Variables/terraform-commands-cloud-workspace-variables.jpg)
 
 ***
 
@@ -17,14 +15,12 @@ After initialization, your local CLI sessions will execute Terraform runs in the
 
 By default, workspace-level variables override those from organizational sets.
 
-<Callout icon="lightbulb">
-  Order of precedence (highest → lowest):
+> **lightbulb** Order of precedence (highest → lowest):
 
   1. CLI `-var` flags
   2. Workspace-level variables
   3. Organizational variable sets
   4. Terraform defaults
-</Callout>
 
 ### Overriding at the Workspace UI
 
@@ -71,9 +67,7 @@ This setup balances security (by marking secrets sensitive) and flexibility (via
 * [Terraform CLI Documentation](https://www.terraform.io/cli)
 * [AWS Provider Configuration](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/253ba638-af3c-4403-a517-a7f6f7c7594c/lesson/a6c1aa87-edd4-4a5a-ac63-63b95b48b2e5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/253ba638-af3c-4403-a517-a7f6f7c7594c/lesson/a6c1aa87-edd4-4a5a-ac63-63b95b48b2e5)
 
 
 # Terraform Cloud Variables
@@ -88,9 +82,7 @@ Terraform variables in HashiCorp Configuration Language (HCL) let you parameteri
 * Reuse the same configurations across environments
 * Simplify CI/CD with remote execution
 
-<Callout icon="triangle-alert">
-  Never commit sensitive data (API keys, credentials, or tokens) directly in your `.tf` files. Always mark secrets as *Sensitive* in Terraform Cloud.
-</Callout>
+> **triangle-alert** Never commit sensitive data (API keys, credentials, or tokens) directly in your `.tf` files. Always mark secrets as *Sensitive* in Terraform Cloud.
 
 ## Workspace Variables vs. Organization Variable Sets
 
@@ -101,9 +93,7 @@ Terraform Cloud offers two scopes for storing variable values:
 | Workspace Variables        | Single workspace   | Yes                 | One workspace only  | AWS credentials, DB passwords |
 | Organization Variable Sets | Organization level | Yes                 | Multiple workspaces | Shared cloud provider tokens  |
 
-<Frame>
-  ![The image is a slide titled "Setting Workspace Variables" with bullet points explaining how variables can be set per workspace, reused, and applied across workspaces. It includes the HashiCorp Terraform Cloud logo and cartoon characters at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878792/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Variables/setting-workspace-variables-bullet-points.jpg)
-</Frame>
+![The image is a slide titled "Setting Workspace Variables" with bullet points explaining how variables can be set per workspace, reused, and applied across workspaces. It includes the HashiCorp Terraform Cloud logo and cartoon characters at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878792/notes-assets/images/HashiCorp-Terraform-Cloud-Terraform-Cloud-Variables/setting-workspace-variables-bullet-points.jpg)
 
 ### Workspace Variables
 

@@ -19,7 +19,7 @@ There are several effective methods to construct your knowledge base:
 3. **Using Built-In Chitchat**\
    Leverage Azure's pre-built conversational responses designed to handle casual interactions and small talk. This built-in chitchat feature enhances the natural feel of your chatbot.
 
-![The image illustrates three methods for building a question-answering knowledge base: manually entering Q\&A pairs, using built-in chit-chat for small talk, and importing FAQs from existing documents.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856924/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Question-Answering/question-answering-knowledge-base-methods.jpg)
+![The image illustrates three methods for building a question-answering knowledge base: manually entering Q\&A pairs, using built-in chit-chat for small talk, and importing FAQs from existing documents.](https://kodekloud.com/kk-media/image/upload/v1752856924/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Question-Answering/question-answering-knowledge-base-methods.jpg)
 
 With built-in chitchat, if a user greets the chatbot with phrases like "hello" or "how are you?", the chatbot can respond appropriately without requiring custom responses for each scenario.
 
@@ -35,7 +35,7 @@ Follow these steps to upload your knowledge base to the Azure Question Answering
 
 Start by navigating to Language Studio in the Azure portal. Click on "Create new custom question answering" and choose a language for your project.
 
-![The image shows a Microsoft Azure Language Studio interface where a user is in the process of creating a project, specifically choosing the language setting for the resource. A dialog box is open with options to set the language for all projects.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856925/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Question-Answering/azure-language-studio-project-setup.jpg)
+![The image shows a Microsoft Azure Language Studio interface where a user is in the process of creating a project, specifically choosing the language setting for the resource. A dialog box is open with options to set the language for all projects.](https://kodekloud.com/kk-media/image/upload/v1752856925/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Question-Answering/azure-language-studio-project-setup.jpg)
 
 In this example, we select English.
 
@@ -63,11 +63,11 @@ Navigate to the "Edit knowledge base" section to review and manage the imported 
 * Who is the AI-900 exam intended for?
 * What skills are tested in the AI-900 exam?
 
-![The image shows a screenshot of the Azure AI Language Studio interface, specifically the "Edit knowledge base" section, with details about the AI-900 exam.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856926/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Question-Answering/azure-ai-language-studio-ai-900.jpg)
+![The image shows a screenshot of the Azure AI Language Studio interface, specifically the "Edit knowledge base" section, with details about the AI-900 exam.](https://kodekloud.com/kk-media/image/upload/v1752856926/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Question-Answering/azure-ai-language-studio-ai-900.jpg)
 
 Test the responses by selecting an entry from the list. For instance, if you test a question such as "No prior experience in AI, machine learning, or programming is required for this exam," the system returns your default answer.
 
-![The image shows a screenshot of the Azure AI Language Studio interface, specifically the "Edit knowledge base" section for the AI-900 exam, with details about the exam and a test panel on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856927/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Question-Answering/azure-ai-language-studio-edit-knowledge-base.jpg)
+![The image shows a screenshot of the Azure AI Language Studio interface, specifically the "Edit knowledge base" section for the AI-900 exam, with details about the exam and a test panel on the right.](https://kodekloud.com/kk-media/image/upload/v1752856927/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Question-Answering/azure-ai-language-studio-edit-knowledge-base.jpg)
 
 ### 5. Enabling Chitchat for Small Talk
 
@@ -85,7 +85,7 @@ Returning to the "Edit knowledge base" section, additional custom question-and-a
 * Have you met Alexa?
 * Do you eat cake?
 
-![The image shows a screenshot of the Azure AI Language Studio interface, specifically the "Edit knowledge base" section for the AI-900 exam, with a list of question-answer pairs on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856928/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Question-Answering/azure-ai-language-studio-edit-knowledge-base-2.jpg)
+![The image shows a screenshot of the Azure AI Language Studio interface, specifically the "Edit knowledge base" section for the AI-900 exam, with a list of question-answer pairs on the left.](https://kodekloud.com/kk-media/image/upload/v1752856928/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Question-Answering/azure-ai-language-studio-edit-knowledge-base-2.jpg)
 
 You can add new custom entries such as "hello, what's your name?" with a corresponding answer "My name is John Doe." Save your changes, and testing confirms that the correct response is returned.
 
@@ -93,7 +93,7 @@ You can add new custom entries such as "hello, what's your name?" with a corresp
 
 After finalizing edits, click on "Deploy" to publish your knowledge base. This published version can then be consumed by a chatbot. Although integration with Azure Bot Service is not covered in detail here, you can create an Azure Bot Service directly from Language Studio after deployment.
 
-![The image shows a Microsoft Azure Language Studio interface where a knowledge base has been successfully deployed, with options to create a bot.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856929/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Question-Answering/azure-language-studio-knowledge-base-bot.jpg)
+![The image shows a Microsoft Azure Language Studio interface where a knowledge base has been successfully deployed, with options to create a bot.](https://kodekloud.com/kk-media/image/upload/v1752856929/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Question-Answering/azure-language-studio-knowledge-base-bot.jpg)
 
 > **lightbulb** Once deployed, your knowledge base is ready for integration with other Azure services, enriching your application with sophisticated question answering capabilities.
 

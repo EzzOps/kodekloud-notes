@@ -20,7 +20,7 @@ Imagine you are developing an e-commerce application responsible for processing 
 
 Managing such a complex and distributed workflow manually is error-prone. Often, each component is implemented as a Lambda function that performs a distinct task without maintaining state. This introduces challenges, particularly because Lambda functions have a maximum runtime of 15 minutes and require explicit data passing.
 
-![The image illustrates a process flow for order management, including steps like order placement, payment processing, inventory check, and shipping, highlighting the complexity and the use of Lambda functions to manage state.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864796/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Step-Functions/order-management-process-flow-diagram.jpg)
+![The image illustrates a process flow for order management, including steps like order placement, payment processing, inventory check, and shipping, highlighting the complexity and the use of Lambda functions to manage state.](https://kodekloud.com/kk-media/image/upload/v1752864796/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Step-Functions/order-management-process-flow-diagram.jpg)
 
 ## How AWS Step Functions Help
 
@@ -30,7 +30,7 @@ AWS Step Functions address these challenges by offering a visual and programmati
 * **Visualize and Modify:** Use a drag-and-drop GUI to easily visualize and adjust the workflow.
 * **Execute in Parallel:** Run independent tasks simultaneously, such as payment processing and fraud detection.
 
-![The image is a flowchart illustrating the steps in an order fulfillment process, highlighting the use of a step function for seamless and reliable operations. It includes stages like order placement, payment processing, inventory check, shipping label, notification, shipping, and completion.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864797/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Step-Functions/order-fulfillment-flowchart-steps.jpg)
+![The image is a flowchart illustrating the steps in an order fulfillment process, highlighting the use of a step function for seamless and reliable operations. It includes stages like order placement, payment processing, inventory check, shipping label, notification, shipping, and completion.](https://kodekloud.com/kk-media/image/upload/v1752864797/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Step-Functions/order-fulfillment-flowchart-steps.jpg)
 
 > **lightbulb** * **Workflow Orchestration:** Visually define, manage, and monitor workflows without embedding orchestration logic in your applications.
   * **Parallel Execution:** Speed up processing with concurrent task execution.
@@ -55,7 +55,7 @@ Let’s revisit the e-commerce order processing workflow and see how Step Functi
 
 Consider the complexity if you had to manually coordinate these tasks without Step Functions. Tracking the state transitions and managing parallel executions across multiple Lambda functions, EC2 instances, and notification channels would require significant custom logic.
 
-![The image is a flowchart illustrating a step function process for order management, including stages like order placement, payment processing, inventory check, shipping label generation, and notifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864799/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Step-Functions/order-management-step-function-flowchart.jpg)
+![The image is a flowchart illustrating a step function process for order management, including stages like order placement, payment processing, inventory check, shipping label generation, and notifications.](https://kodekloud.com/kk-media/image/upload/v1752864799/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Step-Functions/order-management-step-function-flowchart.jpg)
 
 ## Integrations and Use Cases
 
@@ -70,7 +70,7 @@ Step Functions integrate seamlessly with over 220 AWS services and more than 10,
 | **Machine Learning** | SageMaker                                       |
 | **API Management**   | API Gateway                                     |
 
-![The image illustrates "Step Function Integration" with AWS services, highlighting categories like Compute, Database, Messaging Service, Analytics Services, Machine Learning, and API by API Gateway. It mentions integration with 220 AWS services and 10,000 APIs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864800/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Step-Functions/step-function-integration-aws-services.jpg)
+![The image illustrates "Step Function Integration" with AWS services, highlighting categories like Compute, Database, Messaging Service, Analytics Services, Machine Learning, and API by API Gateway. It mentions integration with 220 AWS services and 10,000 APIs.](https://kodekloud.com/kk-media/image/upload/v1752864800/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Step-Functions/step-function-integration-aws-services.jpg)
 
 Step Functions support a wide range of use cases, including:
 
@@ -78,7 +78,7 @@ Step Functions support a wide range of use cases, including:
 * Automating security and IT service workflows with manual approval steps.
 * Coordinating microservices to build responsive serverless applications.
 
-![The image illustrates three use cases for step functions: ETL (Extract, Transform, Load), Automation, and Orchestrate Microservices, each represented with a diagram or icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864803/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Step-Functions/step-functions-use-cases-diagram.jpg)
+![The image illustrates three use cases for step functions: ETL (Extract, Transform, Load), Automation, and Orchestrate Microservices, each represented with a diagram or icon.](https://kodekloud.com/kk-media/image/upload/v1752864803/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Step-Functions/step-functions-use-cases-diagram.jpg)
 
 ## Conclusion
 

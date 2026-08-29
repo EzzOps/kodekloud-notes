@@ -13,9 +13,7 @@ Why choose an observable gauge?
 * Memory usage fluctuates and is independent of prior values, so a gauge is the correct metric type.
 * An observable (async) gauge lets the SDK poll the current memory values periodically, so you do not need to manually update the metric inside your application code.
 
-<Callout icon="lightbulb">
-  Observable gauges are polled by the metrics SDK (via the metric reader). You must provide a callback function that returns the current observations; the SDK will call that callback periodically according to the metric reader's export interval.
-</Callout>
+> **lightbulb** Observable gauges are polled by the metrics SDK (via the metric reader). You must provide a callback function that returns the current observations; the SDK will call that callback periodically according to the metric reader's export interval.
 
 ## Example: Flask app with an observable gauge (polled memory)
 

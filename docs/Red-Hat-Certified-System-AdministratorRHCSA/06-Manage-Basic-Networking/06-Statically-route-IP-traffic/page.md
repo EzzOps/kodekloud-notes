@@ -37,9 +37,7 @@ sudo ip route add default via 10.0.0.100
 sudo ip route del default via 10.0.0.100
 ```
 
-<Callout icon="lightbulb">
-  Routes added using the ip command are temporary and will be lost after a reboot. This method is ideal for immediate testing and verification of new routing configurations.
-</Callout>
+> **lightbulb** Routes added using the ip command are temporary and will be lost after a reboot. This method is ideal for immediate testing and verification of new routing configurations.
 
 ## Making Routes Permanent
 
@@ -72,9 +70,7 @@ sudo nmtui
 
 Using nmtui, select the desired connection, navigate to the routing configuration section, add the required route, and then reapply the connection settings to activate your changes.
 
-<Callout icon="lightbulb">
-  Persistent routing configurations vary depending on your Linux distribution. Consult your distribution’s documentation for specific instructions if adjustments are needed.
-</Callout>
+> **lightbulb** Persistent routing configurations vary depending on your Linux distribution. Consult your distribution’s documentation for specific instructions if adjustments are needed.
 
 ## Conclusion
 
@@ -88,6 +84,4 @@ For further reading, please explore these resources:
 * [NetworkManager Documentation](https://developer.gnome.org/NetworkManager/)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5f16da06-6c71-4058-bfc5-6f4dd8754e9f/lesson/cda0a65f-94fe-4889-8da3-69cbb84d95f9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5f16da06-6c71-4058-bfc5-6f4dd8754e9f/lesson/cda0a65f-94fe-4889-8da3-69cbb84d95f9)

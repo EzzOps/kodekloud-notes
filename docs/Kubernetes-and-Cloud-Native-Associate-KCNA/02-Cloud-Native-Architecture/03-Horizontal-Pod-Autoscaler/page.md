@@ -6,9 +6,7 @@ Learn about the Horizontal Pod Autoscaler in Kubernetes and how it adjusts the n
 
 In this lesson, you'll learn about the Horizontal Pod Autoscaler (HPA) in Kubernetes and discover how it automatically adjusts the number of running pods based on the current resource usage. As its name implies, the HPA scales the pods horizontally—deploying more instances when demand increases and removing excess pods when demand decreases.
 
-<Callout icon="lightbulb">
-  The HPA is one of Kubernetes' many controllers that works by adjusting the replica count of a Deployment. It scales up the replicas as demand grows and scales them down when the pressure eases.
-</Callout>
+> **lightbulb** The HPA is one of Kubernetes' many controllers that works by adjusting the replica count of a Deployment. It scales up the replicas as demand grows and scales them down when the pressure eases.
 
 ## How the HPA Works
 

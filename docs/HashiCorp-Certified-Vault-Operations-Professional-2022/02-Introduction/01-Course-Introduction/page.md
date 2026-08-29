@@ -10,9 +10,7 @@ Welcome to the HashiCorp Certified Vault Operations Professional certification c
 
 I’m **Bryan Krausen**, Principal Consultant, author, and instructor specializing in HashiCorp tools and cloud architecture. With over 20 years in enterprise IT and five years working deeply with Vault at scale, I bring real-world insights to every topic.
 
-<Frame>
-  ![Bryan Krausen – Principal Consultant and Vault expert](../../../../images/kodekloud.com/kk-media/image/upload/v1752878570/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Course-Introduction/bryan-krausen-principal-consultant-profile.jpg)
-</Frame>
+![Bryan Krausen – Principal Consultant and Vault expert](https://kodekloud.com/kk-media/image/upload/v1752878570/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Course-Introduction/bryan-krausen-principal-consultant-profile.jpg)
 
 I was the first to earn the HashiCorp Vault Expert Partner Certification and hold multiple Vault badges. Since 2020, I’ve served as a HashiCorp Ambassador and contributed to exam question and scenario development.
 
@@ -28,12 +26,10 @@ If you have questions about the course content, please use the Q\&A feature or m
 
 ## Course Goals and Audience
 
-<Callout icon="lightbulb">
-  This is a **professional-level** course. You should already know Vault fundamentals:
+> **lightbulb** This is a **professional-level** course. You should already know Vault fundamentals:
 
   * Storage backends, auth methods, secrets engines, audit devices
   * Basic Vault operations in lab or production
-</Callout>
 
 By the end of this course, you will be able to:
 
@@ -96,6 +92,4 @@ That wraps up the course introduction. I’m excited to guide you toward becomin
 
 [vault-api-docs]: https://vaultproject.io/api-docs
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/f7e154f7-6935-4db7-a406-099f338b1655/lesson/5d6e2ff2-2f2a-4cae-9886-690de5016a81" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/f7e154f7-6935-4db7-a406-099f338b1655/lesson/5d6e2ff2-2f2a-4cae-9886-690de5016a81)

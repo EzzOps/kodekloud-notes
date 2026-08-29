@@ -10,13 +10,13 @@ Imagine a scenario where a website user interacts with an application. To handle
 
 Consider the following diagram illustrating a primary site replicating data to several secondary sites for purposes such as reporting, data warehousing, backup, and auditing:
 
-![The image is a diagram illustrating database replication from a primary site to a secondary site, which includes reporting, data warehouse, backup, and audit sites, with interactions from various users and jobs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860119/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-General-Replication-Options-for-Data-Services-on-AWS/database-replication-diagram.jpg)
+![The image is a diagram illustrating database replication from a primary site to a secondary site, which includes reporting, data warehouse, backup, and audit sites, with interactions from various users and jobs.](https://kodekloud.com/kk-media/image/upload/v1752860119/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-General-Replication-Options-for-Data-Services-on-AWS/database-replication-diagram.jpg)
 
 Data replication goes beyond simple backups. It involves adapting data for different use cases with strategies that ensure either strong or eventual consistency, depending on whether synchronous or asynchronous replication is employed.
 
 For instance, asynchronous replication is favored when performing backups. In applications like reporting or backup operations, a slight delay in the secondary data set is acceptable. The following diagram delineates the differences between asynchronous replication, which includes a noticeable lag, and synchronous replication that provides immediate updates:
 
-![The image illustrates two database replication strategies: asynchronous replication, which has a time lag, and synchronous replication, which has no time difference.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860120/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-General-Replication-Options-for-Data-Services-on-AWS/database-replication-strategies-illustration.jpg)
+![The image illustrates two database replication strategies: asynchronous replication, which has a time lag, and synchronous replication, which has no time difference.](https://kodekloud.com/kk-media/image/upload/v1752860120/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-General-Replication-Options-for-Data-Services-on-AWS/database-replication-strategies-illustration.jpg)
 
 > **lightbulb** Asynchronous replication is suitable for non-critical applications where a minor delay is permissible, whereas synchronous replication is key for mission-critical scenarios demanding zero data loss.
 
@@ -39,7 +39,7 @@ AWS offers a variety of features to handle replication, each tailored to differe
 
 The diagram below summarizes these AWS services and their functions to bolster business continuity:
 
-![The image lists AWS services for business continuity, including Amazon RDS Multi-AZ, Amazon DynamoDB Global Tables, AWS S3 Cross-Region Replication, and AWS DataSync, each with a brief description of their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860121/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-General-Replication-Options-for-Data-Services-on-AWS/aws-business-continuity-services.jpg)
+![The image lists AWS services for business continuity, including Amazon RDS Multi-AZ, Amazon DynamoDB Global Tables, AWS S3 Cross-Region Replication, and AWS DataSync, each with a brief description of their functions.](https://kodekloud.com/kk-media/image/upload/v1752860121/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-General-Replication-Options-for-Data-Services-on-AWS/aws-business-continuity-services.jpg)
 
 ## Choosing the Right Replication Strategy
 
@@ -49,7 +49,7 @@ For instance, if there's a need to run reports without impacting the production 
 
 The following diagram encapsulates various replication use cases in AWS, including disaster recovery, global data accessibility, and analytics/reporting:
 
-![The image outlines three use cases for replication in AWS: disaster recovery, global data accessibility, and analytics and reporting. Each use case is represented by an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860122/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-General-Replication-Options-for-Data-Services-on-AWS/aws-replication-use-cases-diagram.jpg)
+![The image outlines three use cases for replication in AWS: disaster recovery, global data accessibility, and analytics and reporting. Each use case is represented by an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752860122/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-General-Replication-Options-for-Data-Services-on-AWS/aws-replication-use-cases-diagram.jpg)
 
 > **lightbulb** * **Synchronous Replication:** Best for applications requiring zero data loss and immediate failover, such as banking.
   * **Asynchronous Replication:** Ideal for reporting, backups, and disaster recovery where a slight lag is acceptable.

@@ -17,11 +17,11 @@ Sarah must implement access controls across multiple departments. Her workflow i
 5. Attaching **inline policies** to users, groups, or roles for unique scenarios.
 6. Applying **resource-based policies** (e.g., for S3 buckets) where needed.
 
-![The image shows "Sara's Task List," which includes six tasks related to employee management and policy creation, such as documenting responsibilities, creating access lists, and configuring resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862989/notes-assets/images/AWS-IAM-Inline-vs-Managed-Policy/saras-task-list-employee-management.jpg)
+![The image shows "Sara's Task List," which includes six tasks related to employee management and policy creation, such as documenting responsibilities, creating access lists, and configuring resources.](https://kodekloud.com/kk-media/image/upload/v1752862989/notes-assets/images/AWS-IAM-Inline-vs-Managed-Policy/saras-task-list-employee-management.jpg)
 
 Her manager has also requested a consolidated access control plan spanning Finance, Marketing, and IT:
 
-![The image illustrates a manager's request for Sara to configure access control for all employees across three departments: Finance, Marketing, and IT. It shows icons representing employees in each department.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862991/notes-assets/images/AWS-IAM-Inline-vs-Managed-Policy/manager-request-access-control-departments.jpg)
+![The image illustrates a manager's request for Sara to configure access control for all employees across three departments: Finance, Marketing, and IT. It shows icons representing employees in each department.](https://kodekloud.com/kk-media/image/upload/v1752862991/notes-assets/images/AWS-IAM-Inline-vs-Managed-Policy/manager-request-access-control-departments.jpg)
 
 ## Types of Identity-Based Policies
 
@@ -31,7 +31,7 @@ AWS IAM supports three identity-based policy types:
 * **Customer Managed Policies**: Custom, reusable policies you create and maintain.
 * **Inline Policies**: Embedded within a single user, group, or role; not reusable.
 
-![The image describes three types of identity policies: AWS Managed policies, Customer Managed policies, and Inline policies, highlighting their pros and cons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862993/notes-assets/images/AWS-IAM-Inline-vs-Managed-Policy/identity-policies-aws-managed-customer-inline.jpg)
+![The image describes three types of identity policies: AWS Managed policies, Customer Managed policies, and Inline policies, highlighting their pros and cons.](https://kodekloud.com/kk-media/image/upload/v1752862993/notes-assets/images/AWS-IAM-Inline-vs-Managed-Policy/identity-policies-aws-managed-customer-inline.jpg)
 
 ### Policy Comparison Table
 
@@ -48,7 +48,7 @@ AWS IAM supports three identity-based policy types:
 * **Inline Policies** attach directly to a single IAM entity (user, group, or role).
 * **AWS Managed Policies** exist as separate objects and can be attached to multiple entities, even across AWS accounts, reducing duplication.
 
-![The image illustrates AWS Managed Policies, showing how a single policy can be applied to users, groups, and roles across multiple AWS accounts. It highlights the ease of managing and updating policies at scale.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862994/notes-assets/images/AWS-IAM-Inline-vs-Managed-Policy/aws-managed-policies-users-groups-roles.jpg)
+![The image illustrates AWS Managed Policies, showing how a single policy can be applied to users, groups, and roles across multiple AWS accounts. It highlights the ease of managing and updating policies at scale.](https://kodekloud.com/kk-media/image/upload/v1752862994/notes-assets/images/AWS-IAM-Inline-vs-Managed-Policy/aws-managed-policies-users-groups-roles.jpg)
 
 ## Demo: Granting Temporary S3 Access
 

@@ -10,17 +10,13 @@ Welcome to this lesson on Kubernetes Architecture. Before setting up a Kubernete
 
 In Kubernetes terminology, a **node** refers to a machine—either physical or virtual—that runs the Kubernetes software. Nodes, formerly known as minions, are the worker machines that run containerized applications. Ensuring high availability and optimal performance requires deploying multiple nodes in a clustered configuration. A cluster is a group of nodes that work together: if one node fails, the remaining nodes continue to run your applications.
 
-<Callout icon="lightbulb">
-  The master node is responsible for overseeing and managing the cluster by monitoring node statuses and coordinating container deployments.
-</Callout>
+> **lightbulb** The master node is responsible for overseeing and managing the cluster by monitoring node statuses and coordinating container deployments.
 
 ## Role of the Master Node
 
 The master node plays a crucial role in managing the Kubernetes cluster. It keeps track of all worker nodes and their statuses, orchestrates deployments, and ensures that the desired state of the cluster is maintained. The following diagram illustrates a typical Kubernetes cluster architecture with one master node and multiple worker nodes:
 
-<Frame>
-  ![The image illustrates a Kubernetes cluster architecture with one master node and three worker nodes, each running a Redis instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880652/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Kubernetes-Architecture/frame_90.jpg)
-</Frame>
+![The image illustrates a Kubernetes cluster architecture with one master node and three worker nodes, each running a Redis instance.](https://kodekloud.com/kk-media/image/upload/v1752880652/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Kubernetes-Architecture/frame_90.jpg)
 
 ## Key Kubernetes Components
 
@@ -35,15 +31,11 @@ When installing Kubernetes, several essential components are set up to form the 
 
 The diagram below provides a visual representation of these Kubernetes components:
 
-<Frame>
-  ![The image shows a diagram of Kubernetes components: API Server, etcd, kubelet, Container Runtime, Controller, and Scheduler, with a key-value store representation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880653/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Kubernetes-Architecture/frame_150.jpg)
-</Frame>
+![The image shows a diagram of Kubernetes components: API Server, etcd, kubelet, Container Runtime, Controller, and Scheduler, with a key-value store representation.](https://kodekloud.com/kk-media/image/upload/v1752880653/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Kubernetes-Architecture/frame_150.jpg)
 
 Understanding how these components interact clarifies the distinction between master and worker nodes. Worker nodes host the containers and include elements like the container runtime (e.g., Docker) and the kubelet agent, while the master node comprises components such as the kube-apiserver, controller manager, scheduler, and an etcd-based key-value store.
 
-<Frame>
-  ![The image compares Kubernetes Master and Worker Nodes, showing components like kube-apiserver, etcd, controller, scheduler, kubelet, and container runtime.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880655/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Kubernetes-Architecture/frame_310.jpg)
-</Frame>
+![The image compares Kubernetes Master and Worker Nodes, showing components like kube-apiserver, etcd, controller, scheduler, kubelet, and container runtime.](https://kodekloud.com/kk-media/image/upload/v1752880655/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Kubernetes-Architecture/frame_310.jpg)
 
 ## Managing your Cluster with kubectl
 
@@ -65,6 +57,4 @@ These commands serve as the foundation for efficient cluster management. As you 
 
 That concludes this lesson on Kubernetes Architecture. Happy clustering!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/8403f56b-91f8-42f9-89e9-5c27a7438ef2/lesson/fba484f6-be7a-45c6-8215-42dd0c037cc0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/8403f56b-91f8-42f9-89e9-5c27a7438ef2/lesson/fba484f6-be7a-45c6-8215-42dd0c037cc0)

@@ -16,9 +16,7 @@ Alex, our platform engineer, already understands resource selection. Now he need
 
 He can't just find these resources — he needs to stop them at the door. Validate rules enable exactly that behavior.
 
-<Callout icon="lightbulb">
-  The validate rule is Kyverno's primary mechanism for rejecting resources that don't meet policy. It supports declarative patterns, conditional denial, and expressive checks via CEL.
-</Callout>
+> **lightbulb** The validate rule is Kyverno's primary mechanism for rejecting resources that don't meet policy. It supports declarative patterns, conditional denial, and expressive checks via CEL.
 
 <Frame>
   <img alt="The image depicts a challenge where Alex needs to move from selecting resources to actively enforcing policies. It includes icons for Alex, enforcement, and policies." />
@@ -47,9 +45,7 @@ Advanced validation capabilities you'll also explore
   <img alt="The image outlines a learning section with three topics: the Common Expression Language subrule, 'foreach' loops, and autogen for Pod controllers, focusing on advanced validation logic and automation in Kubernetes." />
 </Frame>
 
-<Callout icon="warning">
-  Validate rules actively reject resources. Test policies first in non-production namespaces or with `policyreport`/`dry-run` modes to avoid accidental disruption.
-</Callout>
+> **warning** Validate rules actively reject resources. Test policies first in non-production namespaces or with `policyreport`/`dry-run` modes to avoid accidental disruption.
 
 By the end of this lesson you'll have a practical toolkit for writing robust Kyverno validation policies that enforce security and operational requirements across your cluster.
 
@@ -58,6 +54,4 @@ Links and references
 * [Kyverno Documentation](https://kyverno.io/docs/)
 * [Kubernetes Pod Security Standards](https://kubernetes.io/docs/concepts/security/pod-security-standards/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/1bf911d6-b4b3-4ebf-b492-73da503e45ce" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/1bf911d6-b4b3-4ebf-b492-73da503e45ce)

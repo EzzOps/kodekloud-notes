@@ -26,13 +26,11 @@ For this demo:
   <img alt="A screenshot of the AWS DynamoDB &#x22;Create table&#x22; console. The form shows a table named &#x22;orders&#x22; with partition key &#x22;customerId&#x22; and optional sort key &#x22;orderId,&#x22; both set as strings." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Primary key tips:
+> **lightbulb** Primary key tips:
 
   * Use a single partition key when every item is unique (e.g., profile records).
   * Use a composite key (partition + sort) when multiple related items share the same partition (e.g., orders for a customer).
   * Design keys based on access patterns — table design is driven by how you will query the data.
-</Callout>
 
 ## Capacity mode, table class, and advanced options
 
@@ -171,9 +169,7 @@ When you finish the demo, delete the table to avoid ongoing charges:
   <img alt="A screenshot of the AWS DynamoDB console showing the &#x22;orders&#x22; table in the table list with status &#x22;Deleting&#x22; and a green banner confirming the delete request was submitted successfully." />
 </Frame>
 
-<Callout icon="warning">
-  Deleting a table is irreversible and removes all data. Consider enabling deletion protection or creating a backup if you need to retain data before deletion.
-</Callout>
+> **warning** Deleting a table is irreversible and removes all data. Consider enabling deletion protection or creating a backup if you need to retain data before deletion.
 
 ## Quick reference table
 
@@ -196,17 +192,13 @@ When you finish the demo, delete the table to avoid ongoing charges:
 * S3 (export target): [https://aws.amazon.com/s3/](https://aws.amazon.com/s3/)
 * Kinesis: [https://aws.amazon.com/kinesis/](https://aws.amazon.com/kinesis/)
 
-<Callout icon="lightbulb">
-  Key takeaways:
+> **lightbulb** Key takeaways:
 
   * Choose a primary key that matches your read/write access patterns (partition key for customer queries; add a sort key for multiple items per customer).
   * Prefer Query over Scan to reduce costs and improve performance.
   * Choose capacity mode based on traffic predictability; use Provisioned mode with auto scaling for predictable workloads.
   * PartiQL offers SQL-like convenience but maps to the same DynamoDB operations and limits.
-</Callout>
 
 That concludes this step-by-step DynamoDB Console demo.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/577d791f-026e-4eed-8a1e-26fb1d66a35b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/577d791f-026e-4eed-8a1e-26fb1d66a35b)

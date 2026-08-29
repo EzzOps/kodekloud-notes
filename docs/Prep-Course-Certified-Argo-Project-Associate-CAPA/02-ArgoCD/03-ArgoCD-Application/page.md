@@ -87,9 +87,7 @@ spec:
 * Prune: if enabled, resources that no longer exist in the Git source will be deleted from the cluster on sync.
 * CreateNamespace: a syncOption that tells Argo CD to create the target namespace if missing (requires proper RBAC).
 
-<Callout icon="lightbulb">
-  When using automated sync and CreateNamespace, ensure Argo CD's ServiceAccount has sufficient RBAC permissions to create namespaces and manage the required resource types in the destination cluster. For multi-cluster setups, confirm projects restrict allowed destinations to avoid accidental deployments.
-</Callout>
+> **lightbulb** When using automated sync and CreateNamespace, ensure Argo CD's ServiceAccount has sufficient RBAC permissions to create namespaces and manage the required resource types in the destination cluster. For multi-cluster setups, confirm projects restrict allowed destinations to avoid accidental deployments.
 
 ## Best practices and cautions
 
@@ -98,9 +96,7 @@ spec:
 * Use branch/tag commit pins (targetRevision) for predictable deployments.
 * Ensure secrets and credentials (to clusters, registries) are stored securely and referenced via Argo CD mechanisms (Secrets, SSO integrations, or external secret stores).
 
-<Callout icon="warning">
-  Be cautious with automated sync and pruning in production clusters. Misconfigured paths, overly permissive projects, or insufficient RBAC checks can lead to unintended deletions or rollbacks.
-</Callout>
+> **warning** Be cautious with automated sync and pruning in production clusters. Misconfigured paths, overly permissive projects, or insufficient RBAC checks can lead to unintended deletions or rollbacks.
 
 ## Links and references
 
@@ -110,6 +106,4 @@ spec:
 
 This overview should help you create and manage Argo CD Application resources safely, with clear expectations for sync behavior and RBAC requirements.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/1c65a0f9-525f-4713-a804-5123eddb5d03" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/1c65a0f9-525f-4713-a804-5123eddb5d03)

@@ -10,9 +10,7 @@ In this lesson, we explore how to perform backups on Linux systems using native 
 
 rsync (short for "remote synchronization") is a powerful tool for backing up data. It efficiently synchronizes directories between a local and remote system by transferring only changed files.
 
-<Frame>
-  ![The image illustrates the concept of syncing two directories using "rsync" for remote synchronization between a remote server and a local server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883614/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Backup-files-to-a-Remote-System/rsync-sync-directories-illustration.jpg)
-</Frame>
+![The image illustrates the concept of syncing two directories using "rsync" for remote synchronization between a remote server and a local server.](https://kodekloud.com/kk-media/image/upload/v1752883614/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Backup-files-to-a-Remote-System/rsync-sync-directories-illustration.jpg)
 
 Before getting started, ensure that the remote server has an SSH daemon running, as rsync uses SSH to perform secure data transfers.
 
@@ -50,9 +48,7 @@ rsync -a Pictures/ /Backups/Pictures/
 
 When you need to back up an entire disk or partition, instead of just individual files, the `dd` utility becomes essential. It creates an exact, bit-by-bit copy of a disk or partition, a process commonly referred to as disk imaging.
 
-<Callout icon="lightbulb">
-  Before creating a disk image, ensure the disk or partition is unmounted to prevent data modifications during the imaging process.
-</Callout>
+> **lightbulb** Before creating a disk image, ensure the disk or partition is unmounted to prevent data modifications during the imaging process.
 
 ### Creating a Disk Image with dd
 
@@ -84,9 +80,7 @@ Restoring the disk image is just as straightforward. Reverse the input and outpu
 sudo dd if=diskimage.raw of=/dev/vda bs=1M status=progress
 ```
 
-<Callout icon="triangle-alert">
-  Restoring a disk image will overwrite the destination disk entirely. Ensure you are restoring to the correct disk to avoid unintended data loss.
-</Callout>
+> **triangle-alert** Restoring a disk image will overwrite the destination disk entirely. Ensure you are restoring to the correct disk to avoid unintended data loss.
 
 ## Summary
 
@@ -101,6 +95,4 @@ Using rsync, you can maintain reliable and efficient file-level backups, while d
 
 Proceed to the next article for more in-depth discussions on Linux administration and advanced backup strategies.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/00e24fe6-b93a-4c51-89c1-00bf66c96dfd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/00e24fe6-b93a-4c51-89c1-00bf66c96dfd)

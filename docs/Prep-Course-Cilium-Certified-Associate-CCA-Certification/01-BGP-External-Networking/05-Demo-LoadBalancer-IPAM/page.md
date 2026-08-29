@@ -290,9 +290,7 @@ Further reading and docs:
 
 This completes the demonstration of Cilium's L2 announcement feature for local clusters.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/301b05fd-6c57-44ff-9a6d-9d8f794d2dde" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/301b05fd-6c57-44ff-9a6d-9d8f794d2dde)
 
 
 # Demo LoadBalancer IPAM
@@ -388,13 +386,9 @@ myapp2-service ClusterIP      10.97.231.39    <none>          80/TCP           2
 
 The `myapp-service` now has `EXTERNAL-IP` assigned (`172.19.255.1`), taken from the configured pool. Subsequent `LoadBalancer` Services will receive `.2`, `.3`, etc., up to the `stop` address.
 
-<Callout icon="lightbulb">
-  Cilium will allocate the EXTERNAL-IP from the pool, but you must ensure the cluster network and upstream routers/switches can route or reach those addresses. Typical methods include L2 advertisement (ARP/NDP) or BGP announcements so external clients can reach the assigned IPs.
-</Callout>
+> **lightbulb** Cilium will allocate the EXTERNAL-IP from the pool, but you must ensure the cluster network and upstream routers/switches can route or reach those addresses. Typical methods include L2 advertisement (ARP/NDP) or BGP announcements so external clients can reach the assigned IPs.
 
-<Callout icon="warning">
-  If the assigned IPs are not reachable from your network, traffic to the external IP will fail—even though Kubernetes and Cilium show the IP as assigned. Configure ARP/NDP or BGP on your network infrastructure or use an appropriate routing/advertisement mechanism.
-</Callout>
+> **warning** If the assigned IPs are not reachable from your network, traffic to the external IP will fail—even though Kubernetes and Cilium show the IP as assigned. Configure ARP/NDP or BGP on your network infrastructure or use an appropriate routing/advertisement mechanism.
 
 ## Quick reference
 
@@ -411,6 +405,4 @@ The `myapp-service` now has `EXTERNAL-IP` assigned (`172.19.255.1`), taken from 
 
 That’s the LoadBalancer IPAM workflow with Cilium: create a pool, apply it, and Cilium allocates external IPs for `LoadBalancer` Services (optionally scoped by label selectors).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/2951060d-4947-4ed5-87a9-f47f068fbe98" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/2951060d-4947-4ed5-87a9-f47f068fbe98)

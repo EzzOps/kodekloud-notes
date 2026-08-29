@@ -23,7 +23,7 @@ Host agents are turnkey and zero-maintenance, while self-hosted agents give you 
 
 Navigate in Azure DevOps to **Organization settings** → **Agent pools** to see all your pools and agents:
 
-![The image shows the "Agent pools" settings page in Azure DevOps, listing different agent pools such as Azure Pipelines, Default, Linux, and Mac. The interface includes options for adding a new pool and managing security settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867837/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Designing-an-Agent-Infrastructure/azure-devops-agent-pools-settings.jpg)
+![The image shows the "Agent pools" settings page in Azure DevOps, listing different agent pools such as Azure Pipelines, Default, Linux, and Mac. The interface includes options for adding a new pool and managing security settings.](https://kodekloud.com/kk-media/image/upload/v1752867837/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Designing-an-Agent-Infrastructure/azure-devops-agent-pools-settings.jpg)
 
 Here you’ll find pools like **Azure Pipelines** (hosted), **Default**, **Linux**, and **Mac**.
 
@@ -31,7 +31,7 @@ Here you’ll find pools like **Azure Pipelines** (hosted), **Default**, **Linux
 
 The **Azure Pipelines** pool contains Microsoft-hosted agents:
 
-![The image shows the Azure DevOps interface, specifically the "Agent pools" section under "Organization Settings," displaying details of a hosted agent that is currently running a build.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867838/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Designing-an-Agent-Infrastructure/azure-devops-agent-pools-interface.jpg)
+![The image shows the Azure DevOps interface, specifically the "Agent pools" section under "Organization Settings," displaying details of a hosted agent that is currently running a build.](https://kodekloud.com/kk-media/image/upload/v1752867838/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Designing-an-Agent-Infrastructure/azure-devops-agent-pools-interface.jpg)
 
 * Always online and listening
 * Supports Windows, Linux, and macOS jobs
@@ -45,7 +45,7 @@ Self-hosted agents run on machines you control—physical servers, cloud VMs, or
 
 In the **Default** pool, you might see two offline Windows agents:
 
-![The image shows an Azure DevOps interface displaying the "Agent pools" settings, with two agents listed as offline. The sidebar includes various options like Overview, Projects, and Security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867839/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Designing-an-Agent-Infrastructure/azure-devops-agent-pools-settings-offline.jpg)
+![The image shows an Azure DevOps interface displaying the "Agent pools" settings, with two agents listed as offline. The sidebar includes various options like Overview, Projects, and Security.](https://kodekloud.com/kk-media/image/upload/v1752867839/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Designing-an-Agent-Infrastructure/azure-devops-agent-pools-settings-offline.jpg)
 
 To bring one online:
 

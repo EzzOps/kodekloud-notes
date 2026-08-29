@@ -20,9 +20,7 @@ This document reviews Argo CD's core components, how they run inside a Kubernete
 * Argo CD can delegate authentication to external identity providers (Okta, GitHub, Google, etc.) using OpenID Connect (OIDC). Many deployments use Dex as an OIDC broker, although Argo CD also supports direct OIDC integration.
 * RBAC within Argo CD is enforced based on configured policies and the identities asserted by the identity provider.
 
-<Callout icon="lightbulb">
-  Dex ([https://dexidp.io](https://dexidp.io)) commonly acts as an OIDC broker between Argo CD and external identity providers. Configure your IdP in Argo CD (or via Dex) so Argo CD can consume issued tokens for authentication and RBAC decisions.
-</Callout>
+> **lightbulb** Dex ([https://dexidp.io](https://dexidp.io)) commonly acts as an OIDC broker between Argo CD and external identity providers. Configure your IdP in Argo CD (or via Dex) so Argo CD can consume issued tokens for authentication and RBAC decisions.
 
 3. Caching and persistence (Redis + Kubernetes API / etcd)
 
@@ -83,14 +81,10 @@ Links and references
 * Grafana: [https://grafana.com](https://grafana.com)
 * Kubernetes Concepts: [https://kubernetes.io/docs/concepts/](https://kubernetes.io/docs/concepts/)
 
-<Callout icon="lightbulb">
-  Best practices:
+> **lightbulb** Best practices:
 
   * Keep Argo CD configuration (Applications, Repo credentials) as Kubernetes objects committed and backed up.
   * Treat Redis as ephemeral: ensure persistent state is in Kubernetes resources and Git.
   * Scrape Argo CD metrics with Prometheus ServiceMonitors and add Grafana dashboards for visibility.
-</Callout>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/001dfb64-f1a3-4c0a-bcef-eff54821cebb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/001dfb64-f1a3-4c0a-bcef-eff54821cebb)

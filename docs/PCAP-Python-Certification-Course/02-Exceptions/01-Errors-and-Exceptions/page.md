@@ -37,9 +37,7 @@ Many issues can occur in your program. Python lets you handle specific exception
 
 The following code example demonstrates how to handle these specific exceptions:
 
-<Frame>
-  ![The image displays a list of common Python error types, such as ZeroDivisionError, ValueError, and TypeError, arranged in a grid format.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882908/notes-assets/images/PCAP-Python-Certification-Course-Errors-and-Exceptions/python-error-types-grid.jpg)
-</Frame>
+![The image displays a list of common Python error types, such as ZeroDivisionError, ValueError, and TypeError, arranged in a grid format.](https://kodekloud.com/kk-media/image/upload/v1752882908/notes-assets/images/PCAP-Python-Certification-Course-Errors-and-Exceptions/python-error-types-grid.jpg)
 
 ```python theme={null}
 try:
@@ -62,9 +60,7 @@ In this code:
 * If the input cannot be converted to an integer, the `ValueError` block handles the error.
 * The final, unnamed `except` block catches any other unforeseen exceptions.
 
-<Callout icon="lightbulb">
-  Always place the catch-all `except` block at the end, after all specific exception handlers. Only one `except` block will catch an exception, and once an exception is handled, the remaining blocks will be ignored.
-</Callout>
+> **lightbulb** Always place the catch-all `except` block at the end, after all specific exception handlers. Only one `except` block will catch an exception, and once an exception is handled, the remaining blocks will be ignored.
 
 ## Conclusion
 
@@ -72,8 +68,6 @@ Exception handling is a fundamental aspect of writing robust Python programs. By
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/8db6ee04-f51f-41fc-9539-029474f44a1b/lesson/b8608fdd-d3a2-459f-b9b3-0992e0148e73" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/8db6ee04-f51f-41fc-9539-029474f44a1b/lesson/b8608fdd-d3a2-459f-b9b3-0992e0148e73)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/8db6ee04-f51f-41fc-9539-029474f44a1b/lesson/95bd08ae-ae9c-46e2-8a55-f8026d4d0653" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/8db6ee04-f51f-41fc-9539-029474f44a1b/lesson/95bd08ae-ae9c-46e2-8a55-f8026d4d0653)

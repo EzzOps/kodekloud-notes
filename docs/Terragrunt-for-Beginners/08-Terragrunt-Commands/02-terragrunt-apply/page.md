@@ -6,33 +6,21 @@ This article explains the `terragrunt apply` command for automating infrastructu
 
 In this lesson, we’ll dive into the `terragrunt apply` command—your gateway to automating infrastructure changes with Terragrunt and Terraform. After reviewing changes with `terragrunt plan`, `terragrunt apply` executes the approved plan, provisioning or updating resources across one or multiple modules.
 
-<Frame>
-  ![The image is a diagram explaining the purpose of "Terragrunt apply," showing it initiates the application of configuration and enables users to implement changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884314/notes-assets/images/Terragrunt-for-Beginners-terragrunt-apply/terragrunt-apply-configuration-diagram.jpg)
-</Frame>
+![The image is a diagram explaining the purpose of "Terragrunt apply," showing it initiates the application of configuration and enables users to implement changes.](https://kodekloud.com/kk-media/image/upload/v1752884314/notes-assets/images/Terragrunt-for-Beginners-terragrunt-apply/terragrunt-apply-configuration-diagram.jpg)
 
 ## Why Run terragrunt apply?
 
 Always execute `terragrunt apply` after confirming the plan from `terragrunt plan`. This two-step approach ensures you understand potential changes before they impact your infrastructure.
 
-<Frame>
-  ![The image is a diagram titled "Terragrunt apply," showing a workflow with icons and text describing steps for executing and deploying changes safely.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884315/notes-assets/images/Terragrunt-for-Beginners-terragrunt-apply/terragrunt-apply-workflow-diagram.jpg)
-</Frame>
+![The image is a diagram titled "Terragrunt apply," showing a workflow with icons and text describing steps for executing and deploying changes safely.](https://kodekloud.com/kk-media/image/upload/v1752884315/notes-assets/images/Terragrunt-for-Beginners-terragrunt-apply/terragrunt-apply-workflow-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Under the hood, Terragrunt invokes Terraform’s [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply) command and manages shared configuration across modules for you.
-</Callout>
+> **lightbulb** Under the hood, Terragrunt invokes Terraform’s [terraform apply](https://developer.hashicorp.com/terraform/cli/commands/apply) command and manages shared configuration across modules for you.
 
-<Frame>
-  ![The image is an infographic about "Terragrunt apply," highlighting its ability to perform across multiple modules and enhance deployment speed, with a focus on parallel execution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884316/notes-assets/images/Terragrunt-for-Beginners-terragrunt-apply/terragrunt-apply-multiple-modules-infographic.jpg)
-</Frame>
+![The image is an infographic about "Terragrunt apply," highlighting its ability to perform across multiple modules and enhance deployment speed, with a focus on parallel execution.](https://kodekloud.com/kk-media/image/upload/v1752884316/notes-assets/images/Terragrunt-for-Beginners-terragrunt-apply/terragrunt-apply-multiple-modules-infographic.jpg)
 
-<Callout icon="lightbulb">
-  By default, Terragrunt will execute modules in parallel, vastly reducing deployment time in large, modular repositories.
-</Callout>
+> **lightbulb** By default, Terragrunt will execute modules in parallel, vastly reducing deployment time in large, modular repositories.
 
-<Frame>
-  ![The image provides best practices for using Terragrunt, emphasizing reviewing planned changes and seeking approval before applying them. It includes icons and a "Best Practices" label at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884316/notes-assets/images/Terragrunt-for-Beginners-terragrunt-apply/terragrunt-best-practices-review-approval.jpg)
-</Frame>
+![The image provides best practices for using Terragrunt, emphasizing reviewing planned changes and seeking approval before applying them. It includes icons and a "Best Practices" label at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752884316/notes-assets/images/Terragrunt-for-Beginners-terragrunt-apply/terragrunt-best-practices-review-approval.jpg)
 
 ## Best Practices
 
@@ -107,6 +95,4 @@ vpc_owner_id                            = "654654587809"
 * [Terraform apply Command](https://developer.hashicorp.com/terraform/cli/commands/apply)
 * [Terraform AWS VPC Module](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/e42961fc-4288-4cc2-8db8-3882b884c0b1/lesson/f9e2d2b0-c791-4ca5-ae3b-a417bc9684b6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/e42961fc-4288-4cc2-8db8-3882b884c0b1/lesson/f9e2d2b0-c791-4ca5-ae3b-a417bc9684b6)

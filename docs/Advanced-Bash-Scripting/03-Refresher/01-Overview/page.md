@@ -8,7 +8,7 @@ This guide revisits essential shell scripting fundamentals—commands, functions
 
 > **lightbulb** You should know basic shell constructs such as loops and conditionals. If you need a refresher, check out the [Bash Reference Manual](https://www.gnu.org/software/bash/manual/).
 
-![The image shows a checklist titled "Refresher" with three items: "Loops," "Perform Tasks," and "Branching," all marked with checkmarks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868598/notes-assets/images/Advanced-Bash-Scripting-Overview/refresher-checklist-loops-tasks-branching.jpg)
+![The image shows a checklist titled "Refresher" with three items: "Loops," "Perform Tasks," and "Branching," all marked with checkmarks.](https://kodekloud.com/kk-media/image/upload/v1752868598/notes-assets/images/Advanced-Bash-Scripting-Overview/refresher-checklist-loops-tasks-branching.jpg)
 
 ## Shell Script Execution Lifecycle
 

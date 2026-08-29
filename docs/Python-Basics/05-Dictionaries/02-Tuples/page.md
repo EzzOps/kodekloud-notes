@@ -6,9 +6,7 @@ This article explains Python tuples, their immutability, creation, usage, and co
 
 Python offers two primary sequence data types: lists and tuples. While lists are mutable—allowing you to modify their data by deleting items or appending new ones—tuples are immutable, meaning their data remains constant once created.
 
-<Callout icon="lightbulb">
-  Remember: Unlike lists, tuples cannot be modified after creation. This property makes them useful in scenarios where a constant set of values is required.
-</Callout>
+> **lightbulb** Remember: Unlike lists, tuples cannot be modified after creation. This property makes them useful in scenarios where a constant set of values is required.
 
 ## Creating and Using Tuples
 
@@ -71,6 +69,4 @@ While lists offer flexibility through mutability, tuples provide a reliable stru
 
 That’s it for now! Dive into some hands-on practice with tuples in this lesson to reinforce your understanding and explore their practical applications.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/999967d9-7cca-48f8-893c-5e61014671f8/lesson/b8cb75b0-f340-45ec-ae6c-a188272e9f3f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/999967d9-7cca-48f8-893c-5e61014671f8/lesson/b8cb75b0-f340-45ec-ae6c-a188272e9f3f)

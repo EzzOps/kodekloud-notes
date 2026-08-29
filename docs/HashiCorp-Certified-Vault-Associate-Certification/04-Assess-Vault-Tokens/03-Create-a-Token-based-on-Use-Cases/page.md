@@ -20,17 +20,13 @@ When working with HashiCorp Vault, selecting the right token type ensures secure
 
 Use a **periodic token** when you have a service that cannot handle token replacement mid-flight but still requires ongoing authentication. These tokens come with a finite TTL but **no maximum TTL**, allowing endless renewals.
 
-<Callout icon="lightbulb">
-  To renew a periodic token:
+> **lightbulb** To renew a periodic token:
 
   ```bash theme={null}
   vault token renew <your-periodic-token>
   ```
-</Callout>
 
-<Frame>
-  ![The image is a slide titled "Create a Token Based on Needs," listing requirements for a periodic token, including handling long-running apps and indefinite renewal.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877979/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Create-a-Token-based-on-Use-Cases/create-token-based-on-needs-requirements.jpg)
-</Frame>
+![The image is a slide titled "Create a Token Based on Needs," listing requirements for a periodic token, including handling long-running apps and indefinite renewal.](https://kodekloud.com/kk-media/image/upload/v1752877979/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Create-a-Token-based-on-Use-Cases/create-token-based-on-needs-requirements.jpg)
 
 ***
 
@@ -43,9 +39,7 @@ When you need to enforce a fixed invocation count—regardless of how much TTL r
 | Max uses      | 3       |
 | TTL           | 1h      |
 
-<Frame>
-  ![The image is a slide titled "Create a Token Based on Needs," detailing a requirement to limit a token's use to three times regardless of its remaining TTL, with a highlighted section labeled "Service Token with Use Limits."](../../../../images/kodekloud.com/kk-media/image/upload/v1752877980/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Create-a-Token-based-on-Use-Cases/create-token-use-limits-slide.jpg)
-</Frame>
+![The image is a slide titled "Create a Token Based on Needs," detailing a requirement to limit a token's use to three times regardless of its remaining TTL, with a highlighted section labeled "Service Token with Use Limits."](https://kodekloud.com/kk-media/image/upload/v1752877980/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Create-a-Token-based-on-Use-Cases/create-token-use-limits-slide.jpg)
 
 ***
 
@@ -53,13 +47,9 @@ When you need to enforce a fixed invocation count—regardless of how much TTL r
 
 An **orphan token** has no parent association—making it immune to parent token revocation. Use it when you need a child token to survive beyond its creator’s lifecycle.
 
-<Callout icon="lightbulb">
-  Orphan tokens are ideal for background jobs or off-line processes that must persist independently.
-</Callout>
+> **lightbulb** Orphan tokens are ideal for background jobs or off-line processes that must persist independently.
 
-<Frame>
-  ![The image is a slide titled "Create a Token Based on Needs," listing requirements for an "Orphan Token," which is not impacted by its parent's lifecycle and has an extended expiration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877981/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Create-a-Token-based-on-Use-Cases/create-token-orphan-requirements-slide.jpg)
-</Frame>
+![The image is a slide titled "Create a Token Based on Needs," listing requirements for an "Orphan Token," which is not impacted by its parent's lifecycle and has an extended expiration.](https://kodekloud.com/kk-media/image/upload/v1752877981/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Create-a-Token-based-on-Use-Cases/create-token-orphan-requirements-slide.jpg)
 
 ***
 
@@ -76,9 +66,7 @@ vault token create \
 
 Even if the token is exfiltrated, it won’t work outside the defined network.
 
-<Frame>
-  ![The image is a slide titled "Create a Token Based on Needs," explaining the concept of a CIDR-Bound Token, which is a token used by a specific host or within a certain network block. It includes a note that it's a regular service token with additional CIDR-bound configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877983/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Create-a-Token-based-on-Use-Cases/create-token-cidr-bound-concept.jpg)
-</Frame>
+![The image is a slide titled "Create a Token Based on Needs," explaining the concept of a CIDR-Bound Token, which is a token used by a specific host or within a certain network block. It includes a note that it's a regular service token with additional CIDR-bound configuration.](https://kodekloud.com/kk-media/image/upload/v1752877983/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Create-a-Token-based-on-Use-Cases/create-token-cidr-bound-concept.jpg)
 
 ***
 
@@ -86,13 +74,9 @@ Even if the token is exfiltrated, it won’t work outside the defined network.
 
 For global, multi-cluster environments, **batch tokens** automatically propagate across replication sets without ever hitting the storage backend. This reduces write amplification and storage load when you need to issue large volumes of tokens.
 
-<Callout icon="triangle-alert">
-  Batch tokens are not persisted. If a Vault node goes down before replication completes, the token may not be recoverable.
-</Callout>
+> **triangle-alert** Batch tokens are not persisted. If a Vault node goes down before replication completes, the token may not be recoverable.
 
-<Frame>
-  ![The image is a slide titled "Create a Token Based on Needs," listing requirements for token replication and storage efficiency, with a highlighted "Batch Token" button.](../../../../images/kodekloud.com/kk-media/image/upload/v1752877984/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Create-a-Token-based-on-Use-Cases/create-token-replication-storage-efficiency.jpg)
-</Frame>
+![The image is a slide titled "Create a Token Based on Needs," listing requirements for token replication and storage efficiency, with a highlighted "Batch Token" button.](https://kodekloud.com/kk-media/image/upload/v1752877984/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Create-a-Token-based-on-Use-Cases/create-token-replication-storage-efficiency.jpg)
 
 ***
 
@@ -102,8 +86,6 @@ For global, multi-cluster environments, **batch tokens** automatically propagate
 * [Vault Replication Overview](https://www.vaultproject.io/docs/enterprise/replication)
 * [HashiCorp Vault Documentation](https://www.vaultproject.io/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/dc8bee7f-bf83-46d9-995f-2b155ab78fda" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/dc8bee7f-bf83-46d9-995f-2b155ab78fda)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/578517b1-7bed-4d16-bced-7ce86572aa4f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/578517b1-7bed-4d16-bced-7ce86572aa4f)

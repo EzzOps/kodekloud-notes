@@ -265,9 +265,7 @@ If you author an instrumentation library, follow these design goals:
   <img alt="The image outlines the design goals of an Instrumentation Library, which include being SDK-agnostic, allowing app developers to configure SDK and exporters, being composable and pluggable, and following semantic conventions." />
 </Frame>
 
-<Callout icon="lightbulb">
-  When writing an instrumentation, rely only on the OpenTelemetry API (not the SDK). Let applications decide which SDK, processors, and exporters to use.
-</Callout>
+> **lightbulb** When writing an instrumentation, rely only on the OpenTelemetry API (not the SDK). Let applications decide which SDK, processors, and exporters to use.
 
 ## Summary — responsibilities: instrumentation libraries vs applications
 
@@ -285,9 +283,7 @@ Further reading and references:
 
 This article covered instrumentation libraries.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/1c859e64-d3c2-4519-92a9-a797e05ae804" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/1c859e64-d3c2-4519-92a9-a797e05ae804)
 
 
 # OpenTelemetry Instrumentation Approaches
@@ -364,9 +360,7 @@ Instrumentation is the foundation for observability: it standardizes how telemet
 * Auto-instrumentation
   * Use when you cannot modify source code (e.g., legacy apps) or when you need rapid coverage across many services with minimal developer time.
 
-<Callout icon="lightbulb">
-  Auto-instrumentation still requires deployment or runtime changes (for example adding a JVM agent or language-specific runtime hook). It does not require source code edits, but it does require configuring the runtime or deploying an agent/sidecar.
-</Callout>
+> **lightbulb** Auto-instrumentation still requires deployment or runtime changes (for example adding a JVM agent or language-specific runtime hook). It does not require source code edits, but it does require configuring the runtime or deploying an agent/sidecar.
 
 ## Example: creating custom spans (manual instrumentation)
 

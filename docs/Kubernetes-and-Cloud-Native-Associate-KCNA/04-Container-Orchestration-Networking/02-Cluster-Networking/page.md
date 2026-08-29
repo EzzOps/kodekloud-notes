@@ -8,9 +8,7 @@ ls /opt/cni/bin
 ls /etc/cni/net.d
 ```
 
-<Callout icon="lightbulb">
-  If multiple configuration files exist in the directory, kubelet selects the first file in alphabetical order. A common configuration file is `10-bridge.conf`.
-</Callout>
+> **lightbulb** If multiple configuration files exist in the directory, kubelet selects the first file in alphabetical order. A common configuration file is `10-bridge.conf`.
 
 ## Example Bridge Configuration
 
@@ -47,17 +45,13 @@ This configuration file includes several key components:
 * The `"ipMasq"` option configures IP masquerading (NAT rules) for outgoing traffic.
 * The `"ipam"` section sets up IP Address Management. Here, `"host-local"` management is used where the `"subnet"` field defines the IP range for the pods (e.g., `10.22.0.0/16`), and the `"routes"` array sets the default routing.
 
-<Callout icon="triangle-alert">
-  Be cautious when modifying the IPAM settings, as incorrect configuration can lead to network conflicts or unreachable pods.
-</Callout>
+> **triangle-alert** Be cautious when modifying the IPAM settings, as incorrect configuration can lead to network conflicts or unreachable pods.
 
 Alternatively, you can switch the IPAM type to `"dhcp"` if you prefer to use an external DHCP server for IP address allocation.
 
 That concludes our lesson on how Kubernetes integrates with CNI to manage container networking. For more detailed information, consider exploring [Kubernetes Documentation](https://kubernetes.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/35623c9b-b30e-4a5d-a868-cc9f30de96d2/lesson/45ea49fa-d481-43f1-bf04-868de47af9e8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/35623c9b-b30e-4a5d-a868-cc9f30de96d2/lesson/45ea49fa-d481-43f1-bf04-868de47af9e8)
 
 
 # Cluster Networking
@@ -105,9 +99,7 @@ Proper communication between Kubernetes components relies on opening specific ne
   The etcd server, which handles key-value storage for the cluster, listens on this port.\
   If you are running multiple master nodes, ensure that **port 2380** is also open to facilitate communication between etcd clients.
 
-<Callout icon="lightbulb">
-  For a full list of required ports, please refer to the [official Kubernetes documentation](https://kubernetes.io/docs/).
-</Callout>
+> **lightbulb** For a full list of required ports, please refer to the [official Kubernetes documentation](https://kubernetes.io/docs/).
 
 ## Network Security Considerations
 
@@ -121,6 +113,4 @@ If any component exhibits communication issues, a primary troubleshooting step s
 
 By adhering to these guidelines, you can establish a secure and well-functioning networking environment within your Kubernetes cluster.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/35623c9b-b30e-4a5d-a868-cc9f30de96d2/lesson/e3e489b3-9441-4d74-8398-ea7454d42894" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/35623c9b-b30e-4a5d-a868-cc9f30de96d2/lesson/e3e489b3-9441-4d74-8398-ea7454d42894)

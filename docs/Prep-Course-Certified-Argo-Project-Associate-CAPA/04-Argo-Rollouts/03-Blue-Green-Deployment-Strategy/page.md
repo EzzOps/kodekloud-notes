@@ -69,9 +69,7 @@ When `autoPromotionEnabled` is set to `false`, you must manually promote the rol
 kubectl argo rollouts promote web-api-rollout
 ```
 
-<Callout icon="lightbulb">
-  Note: If `autoPromotionEnabled` is omitted, Argo Rollouts defaults it to `true` (automatic promotion). For controlled releases or manual QA gates, explicitly set it to `false`.
-</Callout>
+> **lightbulb** Note: If `autoPromotionEnabled` is omitted, Argo Rollouts defaults it to `true` (automatic promotion). For controlled releases or manual QA gates, explicitly set it to `false`.
 
 Post-promotion analysis
 
@@ -86,9 +84,7 @@ Best practices and operational tips
 * Configure `abortScaleDownDelaySeconds` to give developers time to fetch logs and metrics if you abort a rollout.
 * Automate post-promotion checks to catch regressions quickly and reduce manual intervention.
 
-<Callout icon="warning">
-  Warning: If you set `scaleDownDelaySeconds` or `abortScaleDownDelaySeconds` too low, you may not have sufficient time to collect logs or metrics for debugging. Choose values that balance fast cleanup with operational troubleshooting needs.
-</Callout>
+> **warning** Warning: If you set `scaleDownDelaySeconds` or `abortScaleDownDelaySeconds` too low, you may not have sufficient time to collect logs or metrics for debugging. Choose values that balance fast cleanup with operational troubleshooting needs.
 
 Links and references
 
@@ -96,6 +92,4 @@ Links and references
 * [Kubernetes kubectl reference](https://kubernetes.io/docs/reference/kubectl/overview/)
 * [Prometheus](https://prometheus.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/c2c22236-78e5-4a40-98d9-1c8cf82639f3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/c2c22236-78e5-4a40-98d9-1c8cf82639f3)

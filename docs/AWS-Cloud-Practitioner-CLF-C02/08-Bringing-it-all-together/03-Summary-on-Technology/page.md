@@ -14,7 +14,7 @@ When working with AWS, you have three primary approaches for deploying and manag
 2. **Command Line Interface (CLI):** Manage resources faster and more efficiently with a powerful command line, allowing command reuse and configuration of settings not available in the Console.
 3. **Software Development Kit (SDK):** Programmatically interact with AWS using your favorite programming language to integrate AWS services into your applications.
 
-![The image lists deployment methods: Console, CLI, and SDK, each with a checkmark, under the title "Deployment Methods - Summary."](../../../../images/kodekloud.com/kk-media/image/upload/v1752861543/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_50.jpg)
+![The image lists deployment methods: Console, CLI, and SDK, each with a checkmark, under the title "Deployment Methods - Summary."](https://kodekloud.com/kk-media/image/upload/v1752861543/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_50.jpg)
 
 ## Global Infrastructure
 
@@ -25,7 +25,7 @@ AWS’s global infrastructure is designed to maximize performance, scalability, 
 * **Edge Locations:** Points of presence located closer to end users to reduce latency.
 * **Local Zones:** Extensions of AWS regions in select metropolitan areas, bringing services closer to customers.
 
-![The image summarizes global infrastructure concepts: regions, service availability, availability zones, and edge locations for deploying and running services closer to customers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861544/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_110.jpg)
+![The image summarizes global infrastructure concepts: regions, service availability, availability zones, and edge locations for deploying and running services closer to customers.](https://kodekloud.com/kk-media/image/upload/v1752861544/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_110.jpg)
 
 ## Networking Concepts
 
@@ -41,7 +41,7 @@ AWS networking is engineered to isolate and protect your computing resources whi
 
 Every region includes a default VPC pre-configured with a CIDR block (172.31.0.0/16), default subnets (one per AZ), security groups with default outbound traffic permissions, and open network ACLs.
 
-![The image summarizes networking concepts, highlighting VPC isolation, regional constraints, CIDR block definitions, and subnets within a VPC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861545/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_160.jpg)
+![The image summarizes networking concepts, highlighting VPC isolation, regional constraints, CIDR block definitions, and subnets within a VPC.](https://kodekloud.com/kk-media/image/upload/v1752861545/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_160.jpg)
 
 ### Firewall Types
 
@@ -50,11 +50,11 @@ AWS implements two main firewall controls to secure network traffic:
 * **Stateless Firewalls (Network ACLs):** Filter traffic at the subnet level and require explicit permission for both inbound and outbound traffic.
 * **Stateful Firewalls (Security Groups):** Apply to individual resources (such as EC2 instances), allowing return traffic automatically once a connection is established.
 
-![The image summarizes firewall types: stateless, stateful, network ACLs, and security groups, highlighting their functions in network traffic management and resource protection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861546/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_290.jpg)
+![The image summarizes firewall types: stateless, stateful, network ACLs, and security groups, highlighting their functions in network traffic management and resource protection.](https://kodekloud.com/kk-media/image/upload/v1752861546/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_290.jpg)
 
 A high-level view of AWS’s network architecture shows a VPC covering all Availability Zones within a region. Each zone contains its own subnets, with security groups providing resource-level protection and NACLs securing traffic between subnets. Internet and NAT gateways facilitate connectivity with external networks.
 
-![The image illustrates a Virtual Private Cloud (VPC) architecture with public and private subnets, internet and NAT gateways, route tables, and access control lists (ACLs).](../../../../images/kodekloud.com/kk-media/image/upload/v1752861547/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_310.jpg)
+![The image illustrates a Virtual Private Cloud (VPC) architecture with public and private subnets, internet and NAT gateways, route tables, and access control lists (ACLs).](https://kodekloud.com/kk-media/image/upload/v1752861547/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_310.jpg)
 
 ## Storage Options
 
@@ -65,19 +65,19 @@ AWS offers three primary types of storage services tailored to different use cas
 * **Amazon Elastic Block Store (EBS):** Provides block-level storage volumes that can be mounted as drives to an EC2 instance. Note that EBS volumes reside in a single Availability Zone, so ensure the instance and volume are in the same zone.
 * **Instance Store:** Offers ephemeral block storage directly attached to EC2 instances. Data stored here is temporary and is lost when the instance is stopped or terminated.
 
-![The image summarizes block storage concepts, highlighting EBS volumes' mountability, availability zone constraints, and instance store removal upon EC2 instance restart.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861548/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_370.jpg)
+![The image summarizes block storage concepts, highlighting EBS volumes' mountability, availability zone constraints, and instance store removal upon EC2 instance restart.](https://kodekloud.com/kk-media/image/upload/v1752861548/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_370.jpg)
 
 ### File Storage
 
 * **Amazon Elastic File System (EFS):** A scalable file storage service for use with AWS Cloud services and on-premises resources. It provides a hierarchical structure accessible over the network but cannot be used as a boot volume.
 
-![The image summarizes file storage, highlighting EFS's hierarchical structure, network accessibility, OS mounting capability, and its limitation as a non-bootable volume.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861550/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_400.jpg)
+![The image summarizes file storage, highlighting EFS's hierarchical structure, network accessibility, OS mounting capability, and its limitation as a non-bootable volume.](https://kodekloud.com/kk-media/image/upload/v1752861550/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_400.jpg)
 
 ### Object Storage
 
 * **Amazon Simple Storage Service (S3):** A highly scalable object storage service with a flat file structure. S3 is ideal for storing media files, logs, and audit reports. It offers various storage classes that affect data accessibility, resiliency, and cost, but S3 storage cannot be mounted or used as a boot volume.
 
-![The image summarizes object storage, highlighting its flat file structure, suitability for various files, API-based access, and the impact of storage classes on accessibility and cost.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861551/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_430.jpg)
+![The image summarizes object storage, highlighting its flat file structure, suitability for various files, API-based access, and the impact of storage classes on accessibility and cost.](https://kodekloud.com/kk-media/image/upload/v1752861551/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_430.jpg)
 
 A recap diagram illustrates the three storage types:
 
@@ -85,7 +85,7 @@ A recap diagram illustrates the three storage types:
 * File Storage: Amazon EFS
 * Object Storage: Amazon S3
 
-![The image illustrates three types of storage: Block Storage (Amazon EBS), File Storage (Amazon EFS), and Object Storage (Amazon S3).](../../../../images/kodekloud.com/kk-media/image/upload/v1752861553/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_450.jpg)
+![The image illustrates three types of storage: Block Storage (Amazon EBS), File Storage (Amazon EFS), and Object Storage (Amazon S3).](https://kodekloud.com/kk-media/image/upload/v1752861553/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_450.jpg)
 
 ## Compute Resources
 
@@ -106,7 +106,7 @@ Amazon EC2 enables you to quickly provision servers using pre-configured AMIs (A
 
 AWS Lambda is a serverless compute service that automatically scales your applications. Simply upload your code, and Lambda handles the rest—scaling the resources based on demand and billing you only for the compute time you consume. It is a perfect solution for file processing, mobile and web backends, and API-driven applications.
 
-![The image summarizes AWS Lambda features: serverless computing, automatic scaling, file processing, mobile/web backend use cases, and pay-per-invocation pricing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861554/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_630.jpg)
+![The image summarizes AWS Lambda features: serverless computing, automatic scaling, file processing, mobile/web backend use cases, and pay-per-invocation pricing.](https://kodekloud.com/kk-media/image/upload/v1752861554/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_630.jpg)
 
 ### Container Services
 
@@ -115,7 +115,7 @@ Containers encapsulate your application and its dependencies into a single image
 * **Amazon ECS:** A fully managed container orchestrator that simplifies running containerized applications but is closely integrated with the AWS ecosystem.
 * **Amazon EKS:** A managed Kubernetes service providing the flexibility of open-source Kubernetes while AWS manages the control plane.
 
-![The image summarizes container concepts, including packaging applications, container orchestrators, ECS, Kubernetes, and EKS, highlighting their roles in managing and scaling applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861555/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_680.jpg)
+![The image summarizes container concepts, including packaging applications, container orchestrators, ECS, Kubernetes, and EKS, highlighting their roles in managing and scaling applications.](https://kodekloud.com/kk-media/image/upload/v1752861555/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_680.jpg)
 
 ## Database Services
 
@@ -127,7 +127,7 @@ AWS database services cater to a broad range of use cases, from self-managed ins
 * **Amazon Aurora:** A high-performance relational database within RDS that offers both MySQL and PostgreSQL compatibility along with a serverless option (Aurora Serverless v2) to reduce management overhead.
 * **Amazon Redshift:** Designed for online analytical processing (OLAP) with options for scaling to petabyte-size data warehouses, including a serverless option.
 
-![The image lists AWS SQL database services, including RDS, Aurora, Aurora Serverless, and Redshift, highlighting features like encryption, autoscaling, and data handling capabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861556/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_810.jpg)
+![The image lists AWS SQL database services, including RDS, Aurora, Aurora Serverless, and Redshift, highlighting features like encryption, autoscaling, and data handling capabilities.](https://kodekloud.com/kk-media/image/upload/v1752861556/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_810.jpg)
 
 ### NoSQL and Other Database Services
 
@@ -143,7 +143,7 @@ AWS also offers fully managed NoSQL database services and other specialized data
   * **Graph Data:** Amazon Neptune is built to manage and query highly connected data efficiently.
   * **Ledger Databases:** Amazon Quantum Ledger Database (QLDB) ensures a secure, immutable ledger of transactions.
 
-![The image lists AWS NoSQL database services, highlighting DynamoDB, DocumentDB, and open-source products, emphasizing features and use cases like search and security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861557/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_850.jpg)
+![The image lists AWS NoSQL database services, highlighting DynamoDB, DocumentDB, and open-source products, emphasizing features and use cases like search and security.](https://kodekloud.com/kk-media/image/upload/v1752861557/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_850.jpg)
 
 A recap slide in the original material illustrates which database service is best suited to each use case—a valuable reference when preparing for AWS certification exams.
 
@@ -156,7 +156,7 @@ AWS application integration services enable seamless communication between distr
 * **Elastic Load Balancing (ELB):** Distribute incoming traffic across multiple resources, such as EC2 instances or containers, ensuring reliable performance.
 * **Auto Scaling:** Automatically adjust your capacity to maintain consistent performance during fluctuations in traffic.
 
-![The image lists application integration services: Simple Notification Service, Simple Queue System, Elastic Load Balancing, Autoscaling, and mentions additional services in practice exams.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861559/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_1010.jpg)
+![The image lists application integration services: Simple Notification Service, Simple Queue System, Elastic Load Balancing, Autoscaling, and mentions additional services in practice exams.](https://kodekloud.com/kk-media/image/upload/v1752861559/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_1010.jpg)
 
 ## Management Services
 
@@ -169,7 +169,7 @@ AWS provides a suite of management tools that simplify the administration of you
 * **AWS Config:** Monitor and record resource configurations for visibility and compliance.
 * **AWS CloudTrail:** Log nearly every API request made within your account for auditing and compliance.
 
-![The image summarizes AWS management services, highlighting CloudFormation, OpsWorks, Systems Manager, Organizations, Control Tower, AWS Config, and AWS CloudTrail functionalities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861561/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_1060.jpg)
+![The image summarizes AWS management services, highlighting CloudFormation, OpsWorks, Systems Manager, Organizations, Control Tower, AWS Config, and AWS CloudTrail functionalities.](https://kodekloud.com/kk-media/image/upload/v1752861561/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_1060.jpg)
 
 ## Migration Services
 
@@ -181,7 +181,7 @@ Migrating to AWS begins with a well-crafted strategy often guided by the AWS Clo
 * **Database Migration Service:** Migrate databases from on-premises data centers to AWS with minimal downtime.
 * **Mainframe Modernization:** Transition legacy mainframe workloads to AWS efficiently.
 
-![The image summarizes AWS migration services, highlighting planning, centralized tools, data transfer options, supported protocols, application discovery, and mainframe modernization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861562/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_1160.jpg)
+![The image summarizes AWS migration services, highlighting planning, centralized tools, data transfer options, supported protocols, application discovery, and mainframe modernization.](https://kodekloud.com/kk-media/image/upload/v1752861562/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Technology/frame_1160.jpg)
 
 AWS provides a full suite of services and tools to facilitate every stage of migration, ensuring a smooth transition to the cloud.
 

@@ -44,9 +44,7 @@ Enter the following values (leave empty to omit):
 Environment variables successfully updated.
 ```
 
-<Callout icon="lightbulb">
-  Store generated tokens securely (for example, in a credential manager or an encrypted secrets store). Avoid copying tokens into unencrypted text files or source control.
-</Callout>
+> **lightbulb** Store generated tokens securely (for example, in a credential manager or an encrypted secrets store). Avoid copying tokens into unencrypted text files or source control.
 
 ## Next steps
 
@@ -64,9 +62,7 @@ gh actions-importer audit --provider jenkins --base-url http://139.84.149.83:808
 
 By following these steps you’ll ensure the GitHub Actions Importer has the required, securely-stored credentials to interact with both GitHub and your Jenkins instance.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/5414377c-c286-47e4-a377-602efa278f5c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/5414377c-c286-47e4-a377-602efa278f5c)
 
 
 # Demo Custom Transformer Code Coverage catchError

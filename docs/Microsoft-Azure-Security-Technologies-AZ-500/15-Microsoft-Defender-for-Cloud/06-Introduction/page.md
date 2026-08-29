@@ -6,9 +6,7 @@ This guide covers advanced features of Microsoft Defender for Cloud to enhance s
 
 Microsoft Defender for Cloud is a comprehensive security solution designed to safeguard your cloud workloads. In earlier lessons, we introduced its core capabilities. In this article, we will dive deeper into the service, exploring additional features and functionalities that enhance your overall security posture.
 
-<Callout icon="lightbulb">
-  This guide covers key topics that will help you understand and implement the advanced features of Microsoft Defender for Cloud, ensuring robust protection for your cloud environments.
-</Callout>
+> **lightbulb** This guide covers key topics that will help you understand and implement the advanced features of Microsoft Defender for Cloud, ensuring robust protection for your cloud environments.
 
 ## Topics Covered
 
@@ -22,6 +20,4 @@ Microsoft Defender for Cloud is a comprehensive security solution designed to sa
 
 Let's begin our exploration with a review of the Cyber Kill Chain to understand the stages of a cyber attack and how Defender for Cloud can help mitigate these threats.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/aea85892-224f-4bd2-8013-e36764e15f37/lesson/9b2ffdd9-a382-4f3d-8b65-3201f93780bc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/aea85892-224f-4bd2-8013-e36764e15f37/lesson/9b2ffdd9-a382-4f3d-8b65-3201f93780bc)

@@ -25,9 +25,7 @@ research          Active   32s
 
 There are **10** namespaces in total.
 
-<Callout icon="lightbulb">
-  You can add `-o wide` or use `-o jsonpath` to customize the output format.
-</Callout>
+> **lightbulb** You can add `-o wide` or use `-o jsonpath` to customize the output format.
 
 ## 2. Count Pods in the `research` Namespace
 
@@ -108,9 +106,7 @@ The `blue` app connects to `db-service` on:
 * **Host**: `db-service`
 * **Port**: `6379`
 
-<Frame>
-  ![The image shows a "Connectivity Test" interface with fields for "Host Name" and "Host Port," and a "TEST" button. The result indicates "Success!" for the connection test.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880798/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Solution-Namespace/connectivity-test-interface-success.jpg)
-</Frame>
+![The image shows a "Connectivity Test" interface with fields for "Host Name" and "Host Port," and a "TEST" button. The result indicates "Success!" for the connection test.](https://kodekloud.com/kk-media/image/upload/v1752880798/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Solution-Namespace/connectivity-test-interface-success.jpg)
 
 ## 6. Service DNS Across Namespaces
 
@@ -133,9 +129,7 @@ NAME        TYPE        CLUSTER-IP      PORT(S)
 db-service  ClusterIP   10.43.252.9     6379/TCP
 ```
 
-<Callout icon="triangle-alert">
-  Always use the full DNS (`<svc>.<namespace>.svc.cluster.local`) when connecting across namespaces to avoid resolution errors.
-</Callout>
+> **triangle-alert** Always use the full DNS (`<svc>.<namespace>.svc.cluster.local`) when connecting across namespaces to avoid resolution errors.
 
 ***
 
@@ -145,9 +139,7 @@ db-service  ClusterIP   10.43.252.9     6379/TCP
 * [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 * [Service DNS in Kubernetes](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/a88eb99e-c5f6-4fb4-9e3a-3f48df198f15" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/a88eb99e-c5f6-4fb4-9e3a-3f48df198f15)
 
 
 # Solution RBAC
@@ -193,13 +185,9 @@ ps aux | grep kube-apiserver
 ... --authorization-mode=Node,RBAC ...
 ```
 
-<Frame>
-  ![The image shows a terminal interface with a task to inspect the environment and identify authorization modes configured on a Kubernetes cluster, specifically checking the kube-apiserver settings. There are options for selecting different authorization modes like Node, RBAC, ABAC, and Node,RBAC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880799/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Solution-RBAC/kubernetes-authorization-modes-inspect.jpg)
-</Frame>
+![The image shows a terminal interface with a task to inspect the environment and identify authorization modes configured on a Kubernetes cluster, specifically checking the kube-apiserver settings. There are options for selecting different authorization modes like Node, RBAC, ABAC, and Node,RBAC.](https://kodekloud.com/kk-media/image/upload/v1752880799/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Solution-RBAC/kubernetes-authorization-modes-inspect.jpg)
 
-<Callout icon="lightbulb">
-  RBAC must be enabled on your API server for Roles and RoleBindings to function correctly.
-</Callout>
+> **lightbulb** RBAC must be enabled on your API server for Roles and RoleBindings to function correctly.
 
 ***
 
@@ -295,9 +283,7 @@ kubectl get pods --as dev-user
 Error from server (Forbidden): pods is forbidden: User "dev-user" cannot list resource "pods" in API group "" in the namespace "default"
 ```
 
-<Callout icon="triangle-alert">
-  `dev-user` currently has no permissions in `default`. You must create Roles and RoleBindings to grant access.
-</Callout>
+> **triangle-alert** `dev-user` currently has no permissions in `default`. You must create Roles and RoleBindings to grant access.
 
 ***
 
@@ -440,6 +426,4 @@ kubectl get pods --as dev-user -n default
 * [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 * [Configuring Service Accounts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/b2056479-98ff-4f8f-a942-186d2a1f1dee" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/b2056479-98ff-4f8f-a942-186d2a1f1dee)

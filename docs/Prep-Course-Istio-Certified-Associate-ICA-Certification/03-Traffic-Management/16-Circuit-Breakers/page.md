@@ -243,9 +243,7 @@ You should observe routing according to the configured weights (95% → v1, 5% �
 * Some features like certain timeouts and retries may not behave identically under Ambient Mode L7 processing. Always check release notes and the Istio roadmap for current support.
 * `HTTPRoute` + waypoint is the recommended Kubernetes-native pattern for L7 behavior (weights) in Ambient Mode.
 
-<Callout icon="warning">
-  Ambient Mode behavior is evolving. If a feature behaves differently than sidecar mode, consult the [Istio Ambient Mode documentation](https://istio.io/latest/docs/ops/deployment/ambient/) and [Istio release notes](https://istio.io/latest/news/releases/) for current status and supported APIs.
-</Callout>
+> **warning** Ambient Mode behavior is evolving. If a feature behaves differently than sidecar mode, consult the [Istio Ambient Mode documentation](https://istio.io/latest/docs/ops/deployment/ambient/) and [Istio release notes](https://istio.io/latest/news/releases/) for current status and supported APIs.
 
 ***
 
@@ -378,11 +376,9 @@ Further reading and references:
 * [Istio Gateway API / HTTPRoute](https://kubernetes-sigs.github.io/gateway-api/)
 * [Istio release notes](https://istio.io/latest/news/releases/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/d31069ab-dc8e-47ed-8e31-0fe4f66948da" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/d31069ab-dc8e-47ed-8e31-0fe4f66948da)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/bc7f3e4f-292c-45db-a5d3-fc8cc9b825e6" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/bc7f3e4f-292c-45db-a5d3-fc8cc9b825e6)
 
 
 # Circuit Breakers
@@ -492,9 +488,7 @@ spec:
       baseEjectionTime: 15m
 ```
 
-<Callout icon="lightbulb">
-  Circuit breaking (connection pool settings and outlier detection) is configured in `DestinationRule`. The exam often asks about these settings—review the DestinationRule documentation and examples: [https://istio.io/latest/docs/reference/config/networking/destination-rule/](https://istio.io/latest/docs/reference/config/networking/destination-rule/).
-</Callout>
+> **lightbulb** Circuit breaking (connection pool settings and outlier detection) is configured in `DestinationRule`. The exam often asks about these settings—review the DestinationRule documentation and examples: [https://istio.io/latest/docs/reference/config/networking/destination-rule/](https://istio.io/latest/docs/reference/config/networking/destination-rule/).
 
 ## Quick troubleshooting checklist
 
@@ -510,6 +504,4 @@ That covers the theory of circuit breaking in Istio. A demo will show these conf
 * Istio DestinationRule docs: [https://istio.io/latest/docs/reference/config/networking/destination-rule/](https://istio.io/latest/docs/reference/config/networking/destination-rule/)
 * Istio Traffic Management overview: [https://istio.io/latest/docs/concepts/traffic-management/](https://istio.io/latest/docs/concepts/traffic-management/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/52f3e6e1-9552-4fdc-9023-f74f859af972" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/52f3e6e1-9552-4fdc-9023-f74f859af972)

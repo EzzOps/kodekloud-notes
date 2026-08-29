@@ -16,6 +16,6 @@ To facilitate communication between a client on example.com and a backend on api
 
 By configuring CORS on the API Gateway, you ensure that your application can securely handle requests across different domains without compromising on security or performance.
 
-![The image illustrates Cross-Origin Resource Sharing (CORS) with a client from "example.com" making a request to a server at "api.example.com," which allows the origin.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857859/notes-assets/images/AWS-Certified-Developer-Associate-CORS/cors-client-server-illustration.jpg)
+![The image illustrates Cross-Origin Resource Sharing (CORS) with a client from "example.com" making a request to a server at "api.example.com," which allows the origin.](https://kodekloud.com/kk-media/image/upload/v1752857859/notes-assets/images/AWS-Certified-Developer-Associate-CORS/cors-client-server-illustration.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/628f3688-9475-4368-90bb-89dc572f86d0/lesson/58bc5ad7-0c1a-428f-a735-ec8cfd6cfaad)

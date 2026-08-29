@@ -265,9 +265,7 @@ Run the app and make some requests (curl, REST client, browser). Every 5 seconds
 
 Additional examples and exporter integrations are available in the OpenTelemetry Python repository and documentation.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/88f4a488-ce0b-4115-82b5-719479110363" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/88f4a488-ce0b-4115-82b5-719479110363)
 
 
 # Demo Histogram
@@ -280,9 +278,7 @@ In this lesson we instrument a Flask application with a histogram metric to meas
 
 Keywords: OpenTelemetry, histogram, Flask, request latency, metrics, buckets, instrumentation
 
-<Callout icon="lightbulb">
-  All timings and bucket boundaries in this article are expressed in milliseconds (ms). Python's `time.time()` returns seconds — multiply by 1000 to get milliseconds before recording to a histogram that uses `"ms"` as its unit.
-</Callout>
+> **lightbulb** All timings and bucket boundaries in this article are expressed in milliseconds (ms). Python's `time.time()` returns seconds — multiply by 1000 to get milliseconds before recording to a histogram that uses `"ms"` as its unit.
 
 ## What we'll add
 

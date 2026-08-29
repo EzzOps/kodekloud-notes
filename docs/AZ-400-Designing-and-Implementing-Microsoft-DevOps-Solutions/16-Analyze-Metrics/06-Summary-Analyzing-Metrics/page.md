@@ -26,7 +26,7 @@ In this lesson, we explore essential performance metrics and monitoring tools in
 
 ## Collecting and Analyzing Telemetry
 
-![The image is a slide titled "Analyzing Metrics by Using Collected Telemetry, Including Usage and Application Performance," listing topics related to Azure telemetry and monitoring services. It includes a color-coded list of five topics, such as "Introduction to Telemetry in Azure" and "Monitoring Application Performance."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867322/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary-Analyzing-Metrics/analyzing-metrics-azure-telemetry-slide.jpg)
+![The image is a slide titled "Analyzing Metrics by Using Collected Telemetry, Including Usage and Application Performance," listing topics related to Azure telemetry and monitoring services. It includes a color-coded list of five topics, such as "Introduction to Telemetry in Azure" and "Monitoring Application Performance."](https://kodekloud.com/kk-media/image/upload/v1752867322/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary-Analyzing-Metrics/analyzing-metrics-azure-telemetry-slide.jpg)
 
 Below are the key steps for leveraging telemetry in Azure:
 

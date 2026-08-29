@@ -6,9 +6,7 @@ This article demonstrates building a Docker image within a Jenkins pipeline usin
 
 In this lesson, we demonstrate how to build a Docker image within a Jenkins pipeline. After the [SonarQube](https://www.sonarqube.org/) stage, the pipeline includes a stage to build the Docker image using the Docker CLI. The image is tagged with your [Docker Hub](https://hub.docker.com) username (siddharth67), the image name (solar-system), and the Git commit hash obtained from the environment variable GIT\_COMMIT.
 
-<Callout icon="lightbulb">
-  Ensure that your pipeline has executed a checkout stage before this build step so that the necessary environment variables, including the Git commit hash, are available.
-</Callout>
+> **lightbulb** Ensure that your pipeline has executed a checkout stage before this build step so that the necessary environment variables, including the Git commit hash, are available.
 
 ## Jenkinsfile Stage for Building the Docker Image
 
@@ -83,9 +81,7 @@ EXPOSE 3000
 CMD [ "npm", "start" ]
 ```
 
-<Callout icon="lightbulb">
-  Use a `.dockerignore` file to exclude unnecessary files and directories from the Docker build context, improving build performance.
-</Callout>
+> **lightbulb** Use a `.dockerignore` file to exclude unnecessary files and directories from the Docker build context, improving build performance.
 
 ## The .dockerignore File
 

@@ -39,7 +39,7 @@ STS validates the SAML assertion, then returns these temporary credentials:
 
 These credentials inherit the permissions defined in the assumed role’s policy and expire automatically (up to 12 hours).
 
-![The image is a flowchart illustrating an STS (Security Token Service) example, showing the interaction between a client app, a portal identity provider (IDP), and AWS as the service provider. It details the authentication process and the exchange of SAML assertions and temporary security credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862997/notes-assets/images/AWS-IAM-Security-Token-ServiceSTS/sts-security-token-service-flowchart.jpg)
+![The image is a flowchart illustrating an STS (Security Token Service) example, showing the interaction between a client app, a portal identity provider (IDP), and AWS as the service provider. It details the authentication process and the exchange of SAML assertions and temporary security credentials.](https://kodekloud.com/kk-media/image/upload/v1752862997/notes-assets/images/AWS-IAM-Security-Token-ServiceSTS/sts-security-token-service-flowchart.jpg)
 
 ### Step 3: Use the Temporary Credentials to Access S3
 

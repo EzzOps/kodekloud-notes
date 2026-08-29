@@ -6,25 +6,17 @@ This article explains the Rc smart pointer in Rust, which enables shared ownersh
 
 In this lesson, we dive into the Rust smart pointer Rc (Reference Counted), which facilitates shared ownership of heap-allocated data through reference counting. Unlike Box\<T>, which offers exclusive ownership, Rc\<T> enables multiple parts of your program to access the same data while automatically deallocating it once there are no remaining references.
 
-<Frame>
-  ![The image is an agenda slide with a gradient background, listing four topics related to "Rc\<T>": Diving into, Exploring, Importance of, and How to use.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883774/notes-assets/images/Rust-Programming-Rc-Reference-Counting-and-Shared-Ownership/rc-topics-agenda-slide.jpg)
-</Frame>
+![The image is an agenda slide with a gradient background, listing four topics related to "Rc\<T>": Diving into, Exploring, Importance of, and How to use.](https://kodekloud.com/kk-media/image/upload/v1752883774/notes-assets/images/Rust-Programming-Rc-Reference-Counting-and-Shared-Ownership/rc-topics-agenda-slide.jpg)
 
 ## What is Rc\<T>?
 
 Rc\<T> is a smart pointer that allows several parts of a program to share ownership of the same heap-allocated data. It keeps track of the number of owners and automatically cleans up the data when the reference count drops to zero. This makes Rc\<T> especially useful when building complex data structures such as graphs or trees that require multiple ownership.
 
-<Frame>
-  ![The image is a diagram illustrating the concept of reference counting in Rust using Rc\\\<T>, showing data creation and ownership by three different owners, with a reference count of three.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883774/notes-assets/images/Rust-Programming-Rc-Reference-Counting-and-Shared-Ownership/reference-counting-rust-rc-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating the concept of reference counting in Rust using Rc\\\<T>, showing data creation and ownership by three different owners, with a reference count of three.](https://kodekloud.com/kk-media/image/upload/v1752883774/notes-assets/images/Rust-Programming-Rc-Reference-Counting-and-Shared-Ownership/reference-counting-rust-rc-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Note that Rc\<T> is designed for single-threaded scenarios. For multi-threaded contexts, use Arc\<T> (atomic reference counting) to ensure thread safety.
-</Callout>
+> **lightbulb** Note that Rc\<T> is designed for single-threaded scenarios. For multi-threaded contexts, use Arc\<T> (atomic reference counting) to ensure thread safety.
 
-<Frame>
-  ![The image explains the concept of Rc\\\<T> in Rust, highlighting its use for reference counting and its suitability for single-threaded scenarios. It also mentions using Arc\\\<T> for shared ownership in multi-threaded contexts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883775/notes-assets/images/Rust-Programming-Rc-Reference-Counting-and-Shared-Ownership/rust-rc-arc-reference-counting.jpg)
-</Frame>
+![The image explains the concept of Rc\\\<T> in Rust, highlighting its use for reference counting and its suitability for single-threaded scenarios. It also mentions using Arc\\\<T> for shared ownership in multi-threaded contexts.](https://kodekloud.com/kk-media/image/upload/v1752883775/notes-assets/images/Rust-Programming-Rc-Reference-Counting-and-Shared-Ownership/rust-rc-arc-reference-counting.jpg)
 
 ## Basic Usage of Rc\<T>
 
@@ -53,9 +45,7 @@ In this example, we:
 
 Rc\<T> is ideal for scenarios where you need to share data across various parts of your program without transferring ownership. It is particularly useful in data structures like trees and graphs. While Box\<T> ensures single ownership, Rc\<T> offers a flexible solution for shared ownership with automatic memory management.
 
-<Frame>
-  ![The image explains the benefits of using Rc\\\<T> in Rust, highlighting shared ownership and memory safety for building complex structures like graphs or trees.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883777/notes-assets/images/Rust-Programming-Rc-Reference-Counting-and-Shared-Ownership/rust-rc-benefits-memory-safety.jpg)
-</Frame>
+![The image explains the benefits of using Rc\\\<T> in Rust, highlighting shared ownership and memory safety for building complex structures like graphs or trees.](https://kodekloud.com/kk-media/image/upload/v1752883777/notes-assets/images/Rust-Programming-Rc-Reference-Counting-and-Shared-Ownership/rust-rc-benefits-memory-safety.jpg)
 
 ## Example: Sharing Ownership in a Tree Structure
 
@@ -115,24 +105,16 @@ While Rc\<T> offers significant benefits for shared ownership, it has certain li
 * **Mutability:** Rc\<T> does not permit modifying the shared data. If your application requires mutable shared data, consider combining Rc\<T> with RefCell\<T> for interior mutability.
 * **Thread Safety:** Rc\<T> is not safe for use across multiple threads. For multi-threaded shared ownership, switch to Arc\<T>, which supports atomic reference counting.
 
-<Callout icon="triangle-alert">
-  Avoid using Rc\<T> in multi-threaded environments or when you need mutability without interior mutability support. In such cases, consider using Arc\<T> or combining Rc\<T> with RefCell\<T>.
-</Callout>
+> **triangle-alert** Avoid using Rc\<T> in multi-threaded environments or when you need mutability without interior mutability support. In such cases, consider using Arc\<T> or combining Rc\<T> with RefCell\<T>.
 
-<Frame>
-  ![The image provides guidance on when to avoid using Rc\\\<T> in programming, highlighting issues with mutability and multi-threaded contexts. It suggests using RefCell\\\<T> for mutability and Arc\\\<T> for thread safety.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883778/notes-assets/images/Rust-Programming-Rc-Reference-Counting-and-Shared-Ownership/avoid-using-rct-mutability-thread-safety.jpg)
-</Frame>
+![The image provides guidance on when to avoid using Rc\\\<T> in programming, highlighting issues with mutability and multi-threaded contexts. It suggests using RefCell\\\<T> for mutability and Arc\\\<T> for thread safety.](https://kodekloud.com/kk-media/image/upload/v1752883778/notes-assets/images/Rust-Programming-Rc-Reference-Counting-and-Shared-Ownership/avoid-using-rct-mutability-thread-safety.jpg)
 
 ## Summary
 
 Rc\<T> is a powerful tool in Rust for managing shared ownership of heap-allocated data through reference counting. It simplifies memory management by automatically deallocating data once there are no remaining references, thus eliminating manual memory management burdens. In upcoming lessons, we will explore how RefCell\<T> works with Rc\<T> to provide interior mutability, expanding on the capabilities of shared ownership in Rust.
 
-<Frame>
-  ![The image is a summary slide about Rc\\\<T> in Rust, highlighting its use for sharing data ownership, providing automatic reference counting, and eliminating manual memory management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883779/notes-assets/images/Rust-Programming-Rc-Reference-Counting-and-Shared-Ownership/rust-rc-summary-data-ownership.jpg)
-</Frame>
+![The image is a summary slide about Rc\\\<T> in Rust, highlighting its use for sharing data ownership, providing automatic reference counting, and eliminating manual memory management.](https://kodekloud.com/kk-media/image/upload/v1752883779/notes-assets/images/Rust-Programming-Rc-Reference-Counting-and-Shared-Ownership/rust-rc-summary-data-ownership.jpg)
 
 For more detailed information about Rust's ownership model and smart pointers, refer to the [Rust Documentation](https://doc.rust-lang.org/book/ch15-00-smart-pointers.html).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/37d4032f-c90d-43ee-a0cd-981b95ab22b0/lesson/291fc5f8-da53-4b4d-8286-9b4f8a6791e1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/37d4032f-c90d-43ee-a0cd-981b95ab22b0/lesson/291fc5f8-da53-4b4d-8286-9b4f8a6791e1)

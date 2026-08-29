@@ -45,7 +45,7 @@ Hello and welcome to the Docker for Beginners tutorial. I'm Mumshad Mannambeth, 
 
 In this guide, you'll explore Docker through engaging lectures enriched with animations, illustrations, and analogies that simplify complex concepts. We also include practical demos to help you install and get started with Docker.
 
-![The image showcases a course features slide with sections for lectures, demos, and hands-on activities, featuring a presenter on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752874174/notes-assets/images/Docker-Training-Course-for-the-Absolute-Beginner-Introduction/frame_40.jpg)
+![The image showcases a course features slide with sections for lectures, demos, and hands-on activities, featuring a presenter on the right.](https://kodekloud.com/kk-media/image/upload/v1752874174/notes-assets/images/Docker-Training-Course-for-the-Absolute-Beginner-Introduction/frame_40.jpg)
 
 We also provide interactive hands-on labs that you can access directly from your browser. These labs offer you a terminal connected to a Docker host along with a quiz portal. Through these interactive quizzes, you can test your ability to navigate the environment, gather information, and execute Docker commands.
 
@@ -58,7 +58,7 @@ Before diving into the labs, let’s review the key objectives of this tutorial.
 
 Additionally, we will delve into Docker’s internals and explore Docker for Windows and Mac. We'll also introduce container orchestration tools such as Docker Swarm and Kubernetes.
 
-![The image outlines objectives for a Docker presentation, covering topics like containers, Docker usage, Docker Compose, and comparisons with Kubernetes. A person is shown presenting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752874176/notes-assets/images/Docker-Training-Course-for-the-Absolute-Beginner-Introduction/frame_70.jpg)
+![The image outlines objectives for a Docker presentation, covering topics like containers, Docker usage, Docker Compose, and comparisons with Kubernetes. A person is shown presenting.](https://kodekloud.com/kk-media/image/upload/v1752874176/notes-assets/images/Docker-Training-Course-for-the-Absolute-Beginner-Introduction/frame_70.jpg)
 
 > **lightbulb** While you can set up your own labs, this course offers real labs that are accessible from your browser—anytime and anywhere. Each lab includes a terminal connected to a Docker host and an integrated quiz portal that validates your efforts in real time.
 

@@ -18,9 +18,7 @@ GitHub Actions consists of three primary building blocks:
 
 A workflow is an automated process defined in a YAML file stored in your repository under `.github/workflows`. A repository may contain multiple workflows. Each workflow runs in response to one or more events (triggers) and can include an optional `name` that appears in the Actions tab.
 
-<Callout icon="lightbulb">
-  Workflow definition files live in the `.github/workflows` directory of your repository.
-</Callout>
+> **lightbulb** Workflow definition files live in the `.github/workflows` directory of your repository.
 
 ### Jobs
 
@@ -109,6 +107,4 @@ Triggers/events, runners, and advanced action patterns (composite actions, JavaS
 * [hashicorp/vault-action](https://github.com/hashicorp/vault-action)
 * [Azure Kubernetes Service (AKS) course](https://learn.kodekloud.com/user/courses/azure-kubernetes-service)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/7d6172e9-5a43-4701-9feb-e4cfdb65b256/lesson/033a5dc3-36d5-431f-a660-d563c983761e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/7d6172e9-5a43-4701-9feb-e4cfdb65b256/lesson/033a5dc3-36d5-431f-a660-d563c983761e)

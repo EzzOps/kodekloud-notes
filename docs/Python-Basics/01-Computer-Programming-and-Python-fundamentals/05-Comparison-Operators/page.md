@@ -3,9 +3,7 @@
 >>> cost_of_apple = 5
 ```
 
-<Callout icon="lightbulb">
-  While detailed comments improve understanding, it's best to maintain self-documenting code. Use meaningful variable names and clear code structure to reduce the need for excessive comments.
-</Callout>
+> **lightbulb** While detailed comments improve understanding, it's best to maintain self-documenting code. Use meaningful variable names and clear code structure to reduce the need for excessive comments.
 
 Comments are also useful for temporarily disabling parts of your code. For example, if you comment out the assignment to the `cost_of_apple` variable, Python will skip creating it. Any subsequent operation that references `cost_of_apple` will trigger an error. Consider the snippet below:
 
@@ -20,9 +18,7 @@ In summary, comments are a vital tool for enhancing code clarity and providing a
 
 That's it for now. It's time to gain some hands-on practice.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/4178f96e-8dcd-46a2-a9c9-f65a8c9c73b0/lesson/b257316f-9014-4f65-b602-38ff01d4ef1c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/4178f96e-8dcd-46a2-a9c9-f65a8c9c73b0/lesson/b257316f-9014-4f65-b602-38ff01d4ef1c)
 
 
 # Comparison Operators
@@ -118,13 +114,9 @@ print(2 <= 4)  # True
 print(2 <= 2)  # True
 ```
 
-<Callout icon="lightbulb">
-  Comparison operators are most often used in conditional statements (for example, `if` and `while`) to control program flow. They return `True` or `False`, which you can use directly in conditions. When comparing values, be mindful of types — comparing incompatible types may return `False` or raise a `TypeError` depending on the operation.
-</Callout>
+> **lightbulb** Comparison operators are most often used in conditional statements (for example, `if` and `while`) to control program flow. They return `True` or `False`, which you can use directly in conditions. When comparing values, be mindful of types — comparing incompatible types may return `False` or raise a `TypeError` depending on the operation.
 
-<Callout icon="warning">
-  Be careful when comparing different types (e.g., strings vs integers). For example, `"10" == 10` is `False`. Use explicit conversion (like `int()` or `str()`) when necessary to avoid unexpected results or runtime errors.
-</Callout>
+> **warning** Be careful when comparing different types (e.g., strings vs integers). For example, `"10" == 10` is `False`. Use explicit conversion (like `int()` or `str()`) when necessary to avoid unexpected results or runtime errors.
 
 ## Quick reference and common patterns
 
@@ -147,6 +139,4 @@ print(0 < x < 10)  # True
 
 This concludes the article on comparison operators.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/4178f96e-8dcd-46a2-a9c9-f65a8c9c73b0/lesson/67201484-5cee-4377-a872-0e85fd7cd6ee" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/4178f96e-8dcd-46a2-a9c9-f65a8c9c73b0/lesson/67201484-5cee-4377-a872-0e85fd7cd6ee)

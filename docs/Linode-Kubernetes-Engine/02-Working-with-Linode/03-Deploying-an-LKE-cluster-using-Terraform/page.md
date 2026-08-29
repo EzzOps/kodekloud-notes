@@ -12,9 +12,7 @@ Learn how to automate the provisioning of a Linode Kubernetes Engine (LKE) clust
 * A valid Linode API token
 * `kubectl` installed and configured
 
-<Callout icon="lightbulb">
-  Store your Linode API token securely. We recommend using environment variables (`TF_VAR_token`) or a protected `.tfvars` file instead of hard-coding credentials.
-</Callout>
+> **lightbulb** Store your Linode API token securely. We recommend using environment variables (`TF_VAR_token`) or a protected `.tfvars` file instead of hard-coding credentials.
 
 ***
 
@@ -76,9 +74,7 @@ resource "linode_lke_cluster" "my_cluster" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  If you enable the `autoscaler`, ensure your account has sufficient quota for scaling nodes.
-</Callout>
+> **triangle-alert** If you enable the `autoscaler`, ensure your account has sufficient quota for scaling nodes.
 
 ### 1.4 Output Kubernetes Configuration
 
@@ -125,9 +121,7 @@ Changes to Outputs:
 
 You can track cluster creation progress in the Linode Cloud Manager. Provisioning typically takes 5–15 minutes.
 
-<Frame>
-  ![The image shows a Kubernetes cluster management interface with details about a cluster named "my-cluster," including its version, location, resources, and node pool status. It also displays options for managing nodes and accessing the Kubernetes API endpoint.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881208/notes-assets/images/Linode-Kubernetes-Engine-Deploying-an-LKE-cluster-using-Terraform/kubernetes-cluster-management-interface.jpg)
-</Frame>
+![The image shows a Kubernetes cluster management interface with details about a cluster named "my-cluster," including its version, location, resources, and node pool status. It also displays options for managing nodes and accessing the Kubernetes API endpoint.](https://kodekloud.com/kk-media/image/upload/v1752881208/notes-assets/images/Linode-Kubernetes-Engine-Deploying-an-LKE-cluster-using-Terraform/kubernetes-cluster-management-interface.jpg)
 
 Once the status reads **Running**, your LKE cluster is ready for workloads.
 
@@ -137,9 +131,7 @@ Once the status reads **Running**, your LKE cluster is ready for workloads.
 
 View the full Terraform configuration in the [`Linode`](https://github.com/linode/kubernetes-quickstart-environments/tree/main/Linode) folder of the Kubernetes-Quickstart-Environments repo.
 
-<Frame>
-  ![The image shows a GitHub repository page titled "Kubernetes-Quickstart-Environments," featuring folders and files related to Kubernetes setup, with a README section and language usage statistics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881209/notes-assets/images/Linode-Kubernetes-Engine-Deploying-an-LKE-cluster-using-Terraform/kubernetes-quickstart-repo-overview.jpg)
-</Frame>
+![The image shows a GitHub repository page titled "Kubernetes-Quickstart-Environments," featuring folders and files related to Kubernetes setup, with a README section and language usage statistics.](https://kodekloud.com/kk-media/image/upload/v1752881209/notes-assets/images/Linode-Kubernetes-Engine-Deploying-an-LKE-cluster-using-Terraform/kubernetes-quickstart-repo-overview.jpg)
 
 Clone the repo to discover additional examples and automate your Kubernetes infrastructure on Linode:
 
@@ -157,6 +149,4 @@ cd kubernetes-quickstart-environments/Linode
 * [kubectl Overview](https://kubernetes.io/docs/reference/kubectl/overview/)
 * [Linode Cloud Manager](https://cloud.linode.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/9702fbe2-4321-41c5-87e8-8ea364da097d/lesson/4c048e60-bf77-44a5-b614-9f0545b9a712" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/9702fbe2-4321-41c5-87e8-8ea364da097d/lesson/4c048e60-bf77-44a5-b614-9f0545b9a712)

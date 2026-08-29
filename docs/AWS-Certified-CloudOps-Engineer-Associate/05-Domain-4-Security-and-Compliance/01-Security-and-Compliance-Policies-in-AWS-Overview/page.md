@@ -8,7 +8,7 @@ Welcome to our comprehensive lesson on security compliance policies in AWS. In t
 
 Before diving into AWS specifics, it is important to understand the fundamental role of security. Without proper protection measures, assets become vulnerable to theft, tampering, and misuse. Consider these examples:
 
-![The image shows a building and a thief icon, with a list of potential threats: theft of physical property, theft of confidential information, misuse of office facilities, and planting malicious devices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860605/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-and-Compliance-Policies-in-AWS-Overview/building-thief-threats-list.jpg)
+![The image shows a building and a thief icon, with a list of potential threats: theft of physical property, theft of confidential information, misuse of office facilities, and planting malicious devices.](https://kodekloud.com/kk-media/image/upload/v1752860605/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-and-Compliance-Policies-in-AWS-Overview/building-thief-threats-list.jpg)
 
 This diagram is analogous to a secured building where locks and security personnel ensure that only authorized individuals can gain access. Similarly, AWS integrates robust security features to protect your resources in the cloud.
 
@@ -16,11 +16,11 @@ This diagram is analogous to a secured building where locks and security personn
 
 AWS is committed to cloud security, prioritizing the protection of consumer data and infrastructure. If security ever failed, it would risk the entire cloud industry; hence, AWS builds advanced security measures directly into its services. As your business scales and innovates, AWS ensures your data remains secure through a variety of native security features.
 
-![The image is an introduction slide for "Cloud Security at AWS," highlighting three key aspects: "Highest Priority" with star icons, "Scalability and Flexibility" with a graph icon, and "Integrated Security" with a lock icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860607/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-and-Compliance-Policies-in-AWS-Overview/cloud-security-aws-introduction-slide.jpg)
+![The image is an introduction slide for "Cloud Security at AWS," highlighting three key aspects: "Highest Priority" with star icons, "Scalability and Flexibility" with a graph icon, and "Integrated Security" with a lock icon.](https://kodekloud.com/kk-media/image/upload/v1752860607/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-and-Compliance-Policies-in-AWS-Overview/cloud-security-aws-introduction-slide.jpg)
 
 AWS offers integrated security services such as distributed denial of service (DDoS) protection and web application filtering through AWS WAF. Many of these features are included in the pricing model, making robust security a seamless part of your cloud experience.
 
-![The image illustrates the concept of cost-effective security in the cloud, highlighting paying only for used services and reducing costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860608/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-and-Compliance-Policies-in-AWS-Overview/cost-effective-cloud-security-illustration.jpg)
+![The image illustrates the concept of cost-effective security in the cloud, highlighting paying only for used services and reducing costs.](https://kodekloud.com/kk-media/image/upload/v1752860608/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-and-Compliance-Policies-in-AWS-Overview/cost-effective-cloud-security-illustration.jpg)
 
 ## Shared Responsibility Model
 
@@ -28,13 +28,13 @@ AWS operates under a shared responsibility model. In this model, AWS is responsi
 
 > **lightbulb** Remember, your responsibility extends to managing user permissions and data configurations, ensuring that only authorized users have access to sensitive information.
 
-![The image illustrates the AWS Shared Responsibility Model, dividing security responsibilities between the customer and AWS. It shows customer responsibilities for security "in" the cloud and AWS responsibilities for security "of" the cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860609/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-and-Compliance-Policies-in-AWS-Overview/aws-shared-responsibility-model.jpg)
+![The image illustrates the AWS Shared Responsibility Model, dividing security responsibilities between the customer and AWS. It shows customer responsibilities for security "in" the cloud and AWS responsibilities for security "of" the cloud.](https://kodekloud.com/kk-media/image/upload/v1752860609/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-and-Compliance-Policies-in-AWS-Overview/aws-shared-responsibility-model.jpg)
 
 ## Certifications, Attestations, and Compliance
 
 By choosing AWS, you benefit from a platform that holds multiple global security certifications and attestations, such as ISO/IEC 27001, 27017, 27018, SOC 1-3, PCI DSS, HIPAA, and GDPR. Detailed compliance documentation is available through AWS Artifact, allowing you to access security and compliance reports tailored to various regions.
 
-![The image lists various global and regional compliance standards, including ISO/IEC, SOC, PCI DSS, HIPAA, and GDPR, under the title "Compliance in a Regulated World."](../../../../images/kodekloud.com/kk-media/image/upload/v1752860610/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-and-Compliance-Policies-in-AWS-Overview/compliance-global-regional-standards.jpg)
+![The image lists various global and regional compliance standards, including ISO/IEC, SOC, PCI DSS, HIPAA, and GDPR, under the title "Compliance in a Regulated World."](https://kodekloud.com/kk-media/image/upload/v1752860610/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-and-Compliance-Policies-in-AWS-Overview/compliance-global-regional-standards.jpg)
 
 ## AWS Security Tools
 
@@ -43,22 +43,22 @@ AWS provides a wide range of security tools designed to manage identity and acce
 1. **Identity and Access Management (IAM):**\
    IAM allows you to manage users, groups, and roles with precise permissions. Multi-factor authentication (MFA) adds an extra layer of security to user access.
 
-![The image is an illustration of AWS Identity and Access Management (IAM), showing components like users, roles, groups, permissions, and MFA tokens.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860611/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-and-Compliance-Policies-in-AWS-Overview/aws-iam-illustration-users-roles.jpg)
+![The image is an illustration of AWS Identity and Access Management (IAM), showing components like users, roles, groups, permissions, and MFA tokens.](https://kodekloud.com/kk-media/image/upload/v1752860611/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-and-Compliance-Policies-in-AWS-Overview/aws-iam-illustration-users-roles.jpg)
 
 2. **Data Protection and Encryption:**\
    AWS Key Management Service (KMS) offers secure key management for encrypting data at rest. AWS Certificate Manager (ACM) simplifies the management of encryption for data in transit.
 
-![The image illustrates three concepts related to data protection and encryption: "Encryption at Rest," "Encryption in Transit," and "AWS Key Management Service (KMS)," each represented by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860613/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-and-Compliance-Policies-in-AWS-Overview/data-protection-encryption-icons.jpg)
+![The image illustrates three concepts related to data protection and encryption: "Encryption at Rest," "Encryption in Transit," and "AWS Key Management Service (KMS)," each represented by an icon.](https://kodekloud.com/kk-media/image/upload/v1752860613/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-and-Compliance-Policies-in-AWS-Overview/data-protection-encryption-icons.jpg)
 
 3. **Network Security:**\
    Amazon VPC provides stateful and stateless firewall capabilities to control network access. Additional services like AWS Shield, AWS WAF, and advanced network firewalls further enhance your network security.
 
-![The image shows icons and names of four AWS network security services: Amazon VPC, Security Group and Network Access Control List, AWS WAF, and AWS Shield.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860614/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-and-Compliance-Policies-in-AWS-Overview/aws-network-security-services-icons.jpg)
+![The image shows icons and names of four AWS network security services: Amazon VPC, Security Group and Network Access Control List, AWS WAF, and AWS Shield.](https://kodekloud.com/kk-media/image/upload/v1752860614/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-and-Compliance-Policies-in-AWS-Overview/aws-network-security-services-icons.jpg)
 
 4. **Automation and Governance:**\
    Automation services are critical for enforcing security policies and maintaining compliance on a large scale. AWS Security Hub centralizes security findings, while CloudWatch Logs, AWS CloudTrail, and EventBridge facilitate auditing and automated monitoring. In addition, AWS Inspector enables penetration testing, and GuardDuty uses machine learning to detect potential security threats.
 
-![The image lists four AWS services related to compliance automation and governance: AWS Organizations, AWS Control Tower, AWS Security Hub, and AWS Artifact.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860615/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-and-Compliance-Policies-in-AWS-Overview/aws-compliance-automation-services.jpg)
+![The image lists four AWS services related to compliance automation and governance: AWS Organizations, AWS Control Tower, AWS Security Hub, and AWS Artifact.](https://kodekloud.com/kk-media/image/upload/v1752860615/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Security-and-Compliance-Policies-in-AWS-Overview/aws-compliance-automation-services.jpg)
 
 Below is a summary table highlighting key AWS security services:
 

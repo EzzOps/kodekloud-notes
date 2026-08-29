@@ -18,10 +18,6 @@ The continuous delivery pipeline typically consists of the following stages:
 2. Deployment to a testing or staging environment
 3. Final verification and production release
 
-<Callout icon="lightbulb">
-  For an in-depth understanding of the practices that support continuous delivery, explore the comprehensive guides available in the [Continuous Integration Documentation](/docs/continuous-integration).
-</Callout>
+> **lightbulb** For an in-depth understanding of the practices that support continuous delivery, explore the comprehensive guides available in the [Continuous Integration Documentation](/docs/continuous-integration).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/4979410a-af57-460b-8f71-5a177fa10d2d/lesson/39d24b31-17fd-4f28-a769-a67d8462da2a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/4979410a-af57-460b-8f71-5a177fa10d2d/lesson/39d24b31-17fd-4f28-a769-a67d8462da2a)

@@ -15,7 +15,7 @@ While point-in-time backups provide another layer of protection, our focus here 
 
 Bucket versioning in S3 lets you preserve, retrieve, and restore every version of an object by simply enabling the feature. Note that once versioning is enabled, it cannot be disabled.
 
-![The image is an informational graphic about Amazon S3 Versioning, highlighting its purpose to protect data against accidental deletes and overwrites, with options to enable or disable versioning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860144/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Implementing-Versioning-on-S3/amazon-s3-versioning-graphic.jpg)
+![The image is an informational graphic about Amazon S3 Versioning, highlighting its purpose to protect data against accidental deletes and overwrites, with options to enable or disable versioning.](https://kodekloud.com/kk-media/image/upload/v1752860144/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Implementing-Versioning-on-S3/amazon-s3-versioning-graphic.jpg)
 
 > **lightbulb** Once versioning is activated, it remains enabled forever. Every file change, even for large files, creates a new version, which could result in increased storage usage over time.
 
@@ -25,7 +25,7 @@ Consider this example of versioning in action:
 * A subsequent update uploads version two.
 * Each additional change generates a new version, causing storage usage to increase cumulatively (e.g., first change results in two terabytes total, third change leads to three terabytes).
 
-![The image explains Amazon S3 versioning, highlighting features like creating new versions with every upload, delete protection, and data retention using S3 Lifecycle. It includes a visual representation of versioned files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860145/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Implementing-Versioning-on-S3/amazon-s3-versioning-diagram.jpg)
+![The image explains Amazon S3 versioning, highlighting features like creating new versions with every upload, delete protection, and data retention using S3 Lifecycle. It includes a visual representation of versioned files.](https://kodekloud.com/kk-media/image/upload/v1752860145/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Implementing-Versioning-on-S3/amazon-s3-versioning-diagram.jpg)
 
 When you delete a file in an S3 bucket with versioning enabled, the delete request does not remove the data permanently. Instead, S3 adds a delete marker to the file, leaving all previous versions intact. For example:
 

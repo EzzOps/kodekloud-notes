@@ -81,9 +81,7 @@ Compare the two approaches:
 | CLI flags             |                                                                                      `opentelemetry-instrument --traces_exporter console,otlp --metrics_exporter console --service_name products-service --exporter_otlp_endpoint http://localhost:4318 python products.py` | Flags can be convenient for one-off runs.                                                                 |
 | Environment variables | `export OTEL_SERVICE_NAME=products-service`<br />`export OTEL_TRACES_EXPORTER=console,otlp`<br />`export OTEL_METRICS_EXPORTER=console`<br />`export OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=http://localhost:4318/v1/traces`<br />`opentelemetry-instrument python products.py` | Use env vars for reproducible deployments or containerized apps. See note about OTLP HTTP endpoint below. |
 
-<Callout icon="lightbulb">
-  When configuring OTLP over HTTP via environment variables, include the full path `.../v1/traces` (for traces). The CLI flag `--exporter_otlp_endpoint` may accept a host-only value and append the proper path automatically, but the environment variable `OTEL_EXPORTER_OTLP_TRACES_ENDPOINT` typically must include the full `http://<host>:<port>/v1/traces` URL.
-</Callout>
+> **lightbulb** When configuring OTLP over HTTP via environment variables, include the full path `.../v1/traces` (for traces). The CLI flag `--exporter_otlp_endpoint` may accept a host-only value and append the proper path automatically, but the environment variable `OTEL_EXPORTER_OTLP_TRACES_ENDPOINT` typically must include the full `http://<host>:<port>/v1/traces` URL.
 
 ### Example: instrumenting and generating a trace (products)
 
@@ -330,11 +328,9 @@ All telemetry was produced automatically by the instrumentation libraries that w
 * requests: [https://docs.python-requests.org/](https://docs.python-requests.org/)
 * psycopg2: [https://www.psycopg.org/](https://www.psycopg.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/f9c2f769-e5b8-468b-a6e8-0accf1f17265" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/f9c2f769-e5b8-468b-a6e8-0accf1f17265)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/efe49926-b962-4700-83c1-db8093d6bd93" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/efe49926-b962-4700-83c1-db8093d6bd93)
 
 
 # Instrumentation Libraries

@@ -6,9 +6,7 @@ This tutorial demonstrates launching HashiCorp Vault in development mode on a lo
 
 In this tutorial, we’ll demonstrate how to launch HashiCorp Vault in **development mode** on your local machine. Dev mode is perfect for demos, testing integrations, or learning Vault—it runs entirely in-memory, starts unsealed, and provides a single unseal key and root token.
 
-<Callout icon="triangle-alert">
-  **Dev mode is not secure.** Do **not** use it in production environments.
-</Callout>
+> **triangle-alert** **Dev mode is not secure.** Do **not** use it in production environments.
 
 ***
 
@@ -56,9 +54,7 @@ Root Token: s.d6931rVSdkpBINnnRvMHBRXR
 Development mode should NOT be used in production installations!
 ```
 
-<Callout icon="lightbulb">
-  This command runs Vault in the foreground. Open a **second** terminal window to interact with Vault without stopping the server.
-</Callout>
+> **lightbulb** This command runs Vault in the foreground. Open a **second** terminal window to interact with Vault without stopping the server.
 
 ***
 
@@ -175,9 +171,7 @@ The KV (Key/Value) engine is mounted at `secret/`.
 
 When you stop the dev server (e.g., `Ctrl+C`), all in-memory data is lost—ideal for ephemeral testing.
 
-<Callout icon="lightbulb">
-  Every restart returns Vault to a clean slate.
-</Callout>
+> **lightbulb** Every restart returns Vault to a clean slate.
 
 ***
 
@@ -195,8 +189,6 @@ When you stop the dev server (e.g., `Ctrl+C`), all in-memory data is lost—idea
 * [Vault Secrets Engines](https://www.vaultproject.io/docs/secrets)
 * [Getting Started with Vault](https://learn.hashicorp.com/vault)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/ff6a4647-f0d0-4128-adc1-234a4cf0e060" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/ff6a4647-f0d0-4128-adc1-234a4cf0e060)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/1570bd34-be02-4233-a742-17dc75862e3d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/1570bd34-be02-4233-a742-17dc75862e3d)

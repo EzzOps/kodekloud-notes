@@ -17,7 +17,7 @@ In this tutorial, you’ll learn how to set up a brand-new AWS account for your 
 1. Open your browser and go to [https://aws.amazon.com](https://aws.amazon.com).
 2. In the top-right corner, click **Create an AWS Account**.
 
-![The image shows an AWS signup page where users can enter their root email address and account name to create a new AWS account. There is also an option to sign in to an existing account.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863017/notes-assets/images/AWS-IAM-Demo-Creating-AWS-Account/aws-signup-page-root-email-account.jpg)
+![The image shows an AWS signup page where users can enter their root email address and account name to create a new AWS account. There is also an option to sign in to an existing account.](https://kodekloud.com/kk-media/image/upload/v1752863017/notes-assets/images/AWS-IAM-Demo-Creating-AWS-Account/aws-signup-page-root-email-account.jpg)
 
 > **lightbulb** Ensure you’re using a secure and private network when creating your AWS root account.
 
@@ -46,7 +46,7 @@ On the signup form:
 2. Select **Root user** (since no IAM users exist yet).
 3. Enter the same email you used during signup, then click **Next**.
 
-![The image shows an AWS sign-in page with options for root and IAM user login, alongside a promotional section for AWS Skill Builder offering access to over 500 free digital courses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863018/notes-assets/images/AWS-IAM-Demo-Creating-AWS-Account/aws-sign-in-page-skill-builder.jpg)
+![The image shows an AWS sign-in page with options for root and IAM user login, alongside a promotional section for AWS Skill Builder offering access to over 500 free digital courses.](https://kodekloud.com/kk-media/image/upload/v1752863018/notes-assets/images/AWS-IAM-Demo-Creating-AWS-Account/aws-sign-in-page-skill-builder.jpg)
 
 ***
 

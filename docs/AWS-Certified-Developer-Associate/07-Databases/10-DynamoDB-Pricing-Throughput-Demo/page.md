@@ -28,9 +28,9 @@ If you are unsure about the appropriate capacity units for your workload, use th
 
 The calculator might recommend a configuration of 40 read capacity units and 240 write capacity units, leading to an estimated cost of \$119.94 per month.
 
-![The image shows an AWS DynamoDB console screen for editing read/write capacity settings, including options for capacity mode and a capacity calculator.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858779/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput-Demo/aws-dynamodb-capacity-settings-console.jpg)
+![The image shows an AWS DynamoDB console screen for editing read/write capacity settings, including options for capacity mode and a capacity calculator.](https://kodekloud.com/kk-media/image/upload/v1752858779/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput-Demo/aws-dynamodb-capacity-settings-console.jpg)
 
-![The image shows an AWS DynamoDB console screen with a capacity calculator for provisioning read and write capacity. It includes fields for average item size, read/write per second, consistency settings, and an estimated monthly cost.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858781/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput-Demo/aws-dynamodb-capacity-calculator.jpg)
+![The image shows an AWS DynamoDB console screen with a capacity calculator for provisioning read and write capacity. It includes fields for average item size, read/write per second, consistency settings, and an estimated monthly cost.](https://kodekloud.com/kk-media/image/upload/v1752858781/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput-Demo/aws-dynamodb-capacity-calculator.jpg)
 
 ## Configuring Table Capacity
 
@@ -46,11 +46,11 @@ DynamoDB provides an auto scaling feature that dynamically adjusts your provisio
 
 Enabling auto scaling ensures that your table automatically adjusts to changing workloads, which not only helps prevent unexpected costs but also maintains high performance.
 
-![The image shows an AWS DynamoDB console screen with settings for table capacity, including read and write capacity units, auto-scaling options, and estimated costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858782/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput-Demo/aws-dynamodb-console-table-settings.jpg)
+![The image shows an AWS DynamoDB console screen with settings for table capacity, including read and write capacity units, auto-scaling options, and estimated costs.](https://kodekloud.com/kk-media/image/upload/v1752858782/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput-Demo/aws-dynamodb-console-table-settings.jpg)
 
 Similarly, you can configure the write capacity settings with auto scaling. Historical capacity usage data displayed alongside your current configuration enables you to determine if the provisioned capacities align with your table's actual usage. This historical insight can guide any necessary adjustments for optimal performance and cost-effectiveness.
 
-![The image shows an AWS console interface for configuring write capacity settings, including options for auto-scaling, minimum and maximum capacity units, and target utilization percentage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858784/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput-Demo/aws-console-write-capacity-settings.jpg)
+![The image shows an AWS console interface for configuring write capacity settings, including options for auto-scaling, minimum and maximum capacity units, and target utilization percentage.](https://kodekloud.com/kk-media/image/upload/v1752858784/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput-Demo/aws-console-write-capacity-settings.jpg)
 
 > **lightbulb** Regularly monitor your table's performance metrics and adjust capacity settings accordingly to optimize both cost and throughput.
 

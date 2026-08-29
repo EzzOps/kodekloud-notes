@@ -54,9 +54,7 @@ result = chain.invoke({
 print(result["answer"])
 ```
 
-<Callout icon="lightbulb">
-  `FAISS` (Facebook AI Similarity Search) is an in-memory vector index that provides fast nearest-neighbor search. It is non-persistent by default—use a disk-backed store (for example, [Chroma](https://www.trychroma.com/)) or persist FAISS manually for production workflows that need durability.
-</Callout>
+> **lightbulb** `FAISS` (Facebook AI Similarity Search) is an in-memory vector index that provides fast nearest-neighbor search. It is non-persistent by default—use a disk-backed store (for example, [Chroma](https://www.trychroma.com/)) or persist FAISS manually for production workflows that need durability.
 
 What the retrieval chain does
 
@@ -112,11 +110,9 @@ Notes
 * The example focuses on a minimal, reproducible retrieval chain using LangChain-style primitives. Adapt components (loader, splitter, embeddings, vector store, combiner) to your infrastructure and scale requirements.
 * Always test with your target documents and queries to find the best chunk size, overlap, and retriever configuration for accuracy and latency.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/a4d85af7-bfc2-40d7-89fc-f537792272ff/lesson/0843457b-6b9d-427b-ab23-b10fd85e5d3a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/a4d85af7-bfc2-40d7-89fc-f537792272ff/lesson/0843457b-6b9d-427b-ab23-b10fd85e5d3a)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/a4d85af7-bfc2-40d7-89fc-f537792272ff/lesson/55070b59-13f6-499d-95e1-9dc34f3f681d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langchain/module/a4d85af7-bfc2-40d7-89fc-f537792272ff/lesson/55070b59-13f6-499d-95e1-9dc34f3f681d)
 
 
 # Few shot Prompt Templates

@@ -174,7 +174,7 @@ worker-2     NotReady   <none>   8d    v1.13.0
 
 Another essential controller is the Replication Controller, which ensures that the specified number of pods is maintained by creating new pods when needed. This mechanism reinforces the resilience and reliability of your Kubernetes cluster.
 
-![The image illustrates a Kubernetes architecture with master and worker nodes, showing components like ETCD cluster, controller-manager, and kube-scheduler, alongside container ships.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869721/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kube-Controller-Manager/frame_20.jpg)
+![The image illustrates a Kubernetes architecture with master and worker nodes, showing components like ETCD cluster, controller-manager, and kube-scheduler, alongside container ships.](https://kodekloud.com/kk-media/image/upload/v1752869721/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kube-Controller-Manager/frame_20.jpg)
 
 All core Kubernetes constructs—such as Deployments, Services, Namespaces, and Persistent Volumes—rely on these controllers. Essentially, controllers serve as the "brains" behind many operations in a Kubernetes cluster.
 
@@ -273,7 +273,7 @@ An example output might be:
 root       1994  2.7  5.1 154360 105024 ?        Ssl  06:45   1:25 kube-controller-manager --address=127.0.0.1 --cluster-signing-cert-file=/etc/kubernetes/pki/ca.crt --cluster-signing-key-file=/etc/kubernetes/pki/ca.key --controllers=*,bootstrapsigner,tokencleaner --kubeconfig=/etc/kubernetes/controller-manager.conf --leader-elect=true --root-ca-file=/etc/kubernetes/pki/ca.crt --service-account-private-key-file=/etc/kubernetes/pki/sa.key --use-service-account-credentials=true
 ```
 
-![The image illustrates a Kubernetes controller architecture, showing various controllers like Deployment, Namespace, and Node, with monitoring and timeout settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869722/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kube-Controller-Manager/frame_150.jpg)
+![The image illustrates a Kubernetes controller architecture, showing various controllers like Deployment, Namespace, and Node, with monitoring and timeout settings.](https://kodekloud.com/kk-media/image/upload/v1752869722/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Kube-Controller-Manager/frame_150.jpg)
 
 ## Conclusion
 

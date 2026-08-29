@@ -19,9 +19,7 @@ Kubelet is the primary agent that runs on every node in a Kubernetes cluster. It
 * Continuously monitoring pod status to maintain the integrity of the cluster.
 * Communicating with the container runtime—such as Docker, Containerd, or others—via the Container Runtime Interface (CRI) to manage container lifecycles.
 
-<Callout icon="lightbulb">
-  Kubelet’s real-time monitoring and reporting ensure that any discrepancies between the desired and actual states of pods are promptly addressed.
-</Callout>
+> **lightbulb** Kubelet’s real-time monitoring and reporting ensure that any discrepancies between the desired and actual states of pods are promptly addressed.
 
 ### Kube Proxy
 
@@ -58,10 +56,6 @@ In summary, the master node maintains the overall desired state of the cluster, 
 
 With an understanding of the core node components and their interaction with the master node, we now turn to AKS networking. The next section details how network communication, routing, and service discovery are managed across the cluster, providing a comprehensive picture of the AKS architecture.
 
-<Callout icon="triangle-alert">
-  Ensure that network policies and security configurations are correctly set up to prevent unauthorized access and maintain the integrity of your AKS cluster.
-</Callout>
+> **triangle-alert** Ensure that network policies and security configurations are correctly set up to prevent unauthorized access and maintain the integrity of your AKS cluster.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/146650b0-63f9-4c4b-b452-716a780e5fc7/lesson/5f2dbc0e-4859-4098-80ea-d406b56998c6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/146650b0-63f9-4c4b-b452-716a780e5fc7/lesson/5f2dbc0e-4859-4098-80ea-d406b56998c6)

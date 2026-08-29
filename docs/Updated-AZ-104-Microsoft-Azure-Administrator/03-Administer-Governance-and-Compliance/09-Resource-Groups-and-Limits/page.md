@@ -22,9 +22,7 @@ A common concern is whether placing resources in different resource groups affec
 * Resource groups can include services deployed across multiple geographic locations, offering greater scalability and flexibility. For example, a resource group created in East US might contain a resource physically running in West Europe, while the metadata remains stored in East US.
 * Once established, the name of a resource group cannot be changed, nor can resource groups be nested within one another.
 
-<Frame>
-  ![The image explains the concept of creating resource groups, highlighting that they can contain various services and cannot be renamed or nested. It illustrates grouping resources like web, database, virtual machines, and storage either together or separately.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884562/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Resource-Groups-and-Limits/resource-groups-services-illustration.jpg)
-</Frame>
+![The image explains the concept of creating resource groups, highlighting that they can contain various services and cannot be renamed or nested. It illustrates grouping resources like web, database, virtual machines, and storage either together or separately.](https://kodekloud.com/kk-media/image/upload/v1752884562/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Resource-Groups-and-Limits/resource-groups-services-illustration.jpg)
 
 * Although resource group names are permanent, you can still move resources between groups using Azure Resource Mover—much like moving files between folders on your computer.
 
@@ -34,15 +32,11 @@ To create a resource group using the Azure Portal, follow these steps:
 
 1. Open the Azure Portal and either click on the Resource Groups button or search for "Resource Groups".
 
-<Frame>
-  ![The image shows the Microsoft Azure portal interface, displaying various Azure services and a list of resources with details such as type and last viewed time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884563/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Resource-Groups-and-Limits/azure-portal-interface-services-list.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal interface, displaying various Azure services and a list of resources with details such as type and last viewed time.](https://kodekloud.com/kk-media/image/upload/v1752884563/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Resource-Groups-and-Limits/azure-portal-interface-services-list.jpg)
 
 2. On the Resource Groups page, view existing groups or create a new one.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying a list of resource groups. There are options to create, manage, and filter resource groups, with three listed: "about-nithin," "dns-domains," and "NetworkWatcherRG."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884564/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Resource-Groups-and-Limits/azure-portal-resource-groups-list.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying a list of resource groups. There are options to create, manage, and filter resource groups, with three listed: "about-nithin," "dns-domains," and "NetworkWatcherRG."](https://kodekloud.com/kk-media/image/upload/v1752884564/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Resource-Groups-and-Limits/azure-portal-resource-groups-list.jpg)
 
 3. To create a new resource group:
    * Select the desired subscription.
@@ -51,15 +45,11 @@ To create a resource group using the Azure Portal, follow these steps:
    * Optionally, add tags for easier resource management.
    * Proceed by clicking "Review and Create".
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a resource group, with fields for subscription, resource group name, and region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884564/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Resource-Groups-and-Limits/azure-portal-resource-group-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a resource group, with fields for subscription, resource group name, and region.](https://kodekloud.com/kk-media/image/upload/v1752884564/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Resource-Groups-and-Limits/azure-portal-resource-group-creation.jpg)
 
 After the resource group is created, you can reference it when deploying resources. For example, when creating a Storage Account, you have the option to select an existing resource group (e.g., RG Admin 01) or to create a new one seamlessly.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a storage account, with fields for project and instance details such as subscription, resource group, and performance options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884565/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Resource-Groups-and-Limits/azure-portal-storage-account-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a storage account, with fields for project and instance details such as subscription, resource group, and performance options.](https://kodekloud.com/kk-media/image/upload/v1752884565/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Resource-Groups-and-Limits/azure-portal-storage-account-creation.jpg)
 
 Resource groups can also be created using the Azure CLI, Azure PowerShell, or REST APIs. Detailed guidance on these methods will be provided in upcoming sessions. For now, note that creating a resource group through the portal is a straightforward and essential step in managing your Azure environment.
 
@@ -73,9 +63,7 @@ Azure enforces default limits (quotas) at the subscription level to prevent acci
 
 You can think of these usage statistics much like a fuel gauge in a car, providing visibility into remaining capacity.
 
-<Frame>
-  ![The image shows a dashboard for determining service limits and quotas, displaying usage statistics for various resources in different regions. It includes information on current usage, subscription details, and whether the limits are adjustable.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884566/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Resource-Groups-and-Limits/service-limits-usage-dashboard.jpg)
-</Frame>
+![The image shows a dashboard for determining service limits and quotas, displaying usage statistics for various resources in different regions. It includes information on current usage, subscription details, and whether the limits are adjustable.](https://kodekloud.com/kk-media/image/upload/v1752884566/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Resource-Groups-and-Limits/service-limits-usage-dashboard.jpg)
 
 Limits may be adjustable or fixed:
 
@@ -91,13 +79,9 @@ To view and manage your quotas:
 2. Select "Usage + Quotas" to view your current consumption. You can filter the data by provider (e.g., Storage or Compute) or sort by region.
 3. For example, when reviewing compute resources (virtual machines) in a specific region, you will see the total regional vCPU count along with current usage status. If the quota is adjustable, you may submit a request for an increase.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen displaying a quota management interface for a subscription, with a sidebar for submitting a new quota request for virtual CPUs in the Central India region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884566/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Resource-Groups-and-Limits/azure-portal-quota-management-cpu.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen displaying a quota management interface for a subscription, with a sidebar for submitting a new quota request for virtual CPUs in the Central India region.](https://kodekloud.com/kk-media/image/upload/v1752884566/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Resource-Groups-and-Limits/azure-portal-quota-management-cpu.jpg)
 
-<Callout icon="lightbulb">
-  Free trial or sponsored subscriptions generally have stricter quota limits compared to paid subscriptions, which usually have better chances for quota adjustments.
-</Callout>
+> **lightbulb** Free trial or sponsored subscriptions generally have stricter quota limits compared to paid subscriptions, which usually have better chances for quota adjustments.
 
 ## Conclusion
 
@@ -105,6 +89,4 @@ Understanding how resource groups and service limitations work is crucial for ef
 
 Now that you are familiar with managing subscriptions, resource groups, and limits, you are better equipped to understand the overall hierarchy and integration of these elements within your Azure environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/ff530a0b-2359-42b7-aa66-7470961f1167" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/ff530a0b-2359-42b7-aa66-7470961f1167)

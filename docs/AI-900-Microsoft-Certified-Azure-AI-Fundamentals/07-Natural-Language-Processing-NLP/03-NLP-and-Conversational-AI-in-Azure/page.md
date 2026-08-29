@@ -20,7 +20,7 @@ Azure's Language Services enable applications to understand and process text eff
 * **Summarization:** Condenses lengthy content into its key points for quick understanding.
 * **Question Answering and Conversational Language Understanding:** Empowers AI to comprehend user queries, making it ideal for chatbots and virtual assistants.
 
-![The image is a slide titled "NLP and Conversational AI in Azure," listing features like language detection, key phrase extraction, and sentiment analysis. It includes an icon of speech bubbles and is copyrighted by KodeKloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857040/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/nlp-conversational-ai-azure-slide.jpg)
+![The image is a slide titled "NLP and Conversational AI in Azure," listing features like language detection, key phrase extraction, and sentiment analysis. It includes an icon of speech bubbles and is copyrighted by KodeKloud.](https://kodekloud.com/kk-media/image/upload/v1752857040/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/nlp-conversational-ai-azure-slide.jpg)
 
 ***
 
@@ -34,7 +34,7 @@ Azure’s Speech Services provide extensive capabilities to work with spoken lan
 * **Speaker Identification:** Differentiates between speakers to support personalization and enhance security.
 * **Language Identification in Audio:** Detects the language spoken in audio, even when multiple languages are present.
 
-![The image is a slide titled "NLP and Conversational AI in Azure," featuring a section on "Speech" with a list of capabilities: text to speech, speech to text, speech translation, speaker identification, and language identification.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857041/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/nlp-conversational-ai-azure-speech.jpg)
+![The image is a slide titled "NLP and Conversational AI in Azure," featuring a section on "Speech" with a list of capabilities: text to speech, speech to text, speech translation, speaker identification, and language identification.](https://kodekloud.com/kk-media/image/upload/v1752857041/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/nlp-conversational-ai-azure-speech.jpg)
 
 ***
 
@@ -46,7 +46,7 @@ Translator services in Azure enable seamless text translation across different l
 * **Document Translation:** Translates entire documents while preserving the original formatting.
 * **Custom Translation:** Adapts translation models to specific industry terminologies and phrases for more accurate results.
 
-![The image is a slide titled "Convolutional Neural Networks" featuring an icon labeled "Translator" and a list of translation types: text, document, and custom translation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857043/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/convolutional-neural-networks-translator.jpg)
+![The image is a slide titled "Convolutional Neural Networks" featuring an icon labeled "Translator" and a list of translation types: text, document, and custom translation.](https://kodekloud.com/kk-media/image/upload/v1752857043/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/convolutional-neural-networks-translator.jpg)
 
 ***
 
@@ -74,7 +74,7 @@ Azure AI Studio provides a unified interface to access various AI services. Belo
 
 3. **Pronunciation Assessment:** Evaluate your speech by comparing it against a provided script. This tool provides scores and error analysis to help improve pronunciation.
 
-![The image shows a Microsoft Azure AI Studio interface for pronunciation assessment, displaying a script, audio recording options, and assessment results with scores and error analysis.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857044/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/azure-ai-studio-pronunciation-assessment.jpg)
+![The image shows a Microsoft Azure AI Studio interface for pronunciation assessment, displaying a script, audio recording options, and assessment results with scores and error analysis.](https://kodekloud.com/kk-media/image/upload/v1752857044/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/azure-ai-studio-pronunciation-assessment.jpg)
 
 After recording a sample passage:
 
@@ -88,15 +88,15 @@ public static async Task PronunciationAssessmentContinuousWithFile()
 
 4. **Additional Speech Transcription:** Quickly test audio and perform real-time transcription for various use cases, including live chat avatars and post-call transcription analytics.
 
-![The image shows a Microsoft Azure AI Studio interface focused on speech services, offering features like speech analytics, real-time speech-to-text, and fast transcription. Various options for trying out speech capabilities and building custom models are displayed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857045/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/azure-ai-studio-speech-services.jpg)
+![The image shows a Microsoft Azure AI Studio interface focused on speech services, offering features like speech analytics, real-time speech-to-text, and fast transcription. Various options for trying out speech capabilities and building custom models are displayed.](https://kodekloud.com/kk-media/image/upload/v1752857045/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/azure-ai-studio-speech-services.jpg)
 
 Further enhancements in Speech Studio include:
 
-![The image shows a webpage for Azure Cognitive Services Speech, highlighting various speech capabilities like captioning, transcription, live chat avatars, and language learning. It includes descriptions and images for each feature.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857046/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/azure-cognitive-services-speech-features.jpg)
+![The image shows a webpage for Azure Cognitive Services Speech, highlighting various speech capabilities like captioning, transcription, live chat avatars, and language learning. It includes descriptions and images for each feature.](https://kodekloud.com/kk-media/image/upload/v1752857046/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/azure-cognitive-services-speech-features.jpg)
 
 And additional options:
 
-![The image shows a webpage from Azure AI's Speech Studio, featuring various speech-to-text and translation services, including real-time transcription, Whisper Model, and speech translation options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857047/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/azure-ai-speech-studio-services.jpg)
+![The image shows a webpage from Azure AI's Speech Studio, featuring various speech-to-text and translation services, including real-time transcription, Whisper Model, and speech translation options.](https://kodekloud.com/kk-media/image/upload/v1752857047/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/azure-ai-speech-studio-services.jpg)
 
 5. **Text-to-Speech and Voice Assistant:** Utilize these features to create engaging videos or develop voice-controlled applications.
 
@@ -110,28 +110,28 @@ Within Azure AI Studio, the Language and Translator section offers:
 
 Development tools for custom translator configurations are also available:
 
-![The image shows a webpage from Microsoft Azure AI Studio, specifically the "Language + Translator" section, detailing various language capabilities and integration options with generative AI. It includes options for summarization, language detection, document translation, and more, along with links to demos and resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857049/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/azure-ai-studio-language-translator.jpg)
+![The image shows a webpage from Microsoft Azure AI Studio, specifically the "Language + Translator" section, detailing various language capabilities and integration options with generative AI. It includes options for summarization, language detection, document translation, and more, along with links to demos and resources.](https://kodekloud.com/kk-media/image/upload/v1752857049/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/azure-ai-studio-language-translator.jpg)
 
 Additionally, the Language Studio supports various NLP services such as sentiment analysis, text classification, and conversational language understanding:
 
-![The image shows a webpage from Azure's Language Studio, highlighting services for natural language processing, including question answering, custom question answering, conversational language understanding, and orchestration workflow. It also features learning resources like documentation and code samples.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857050/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/azure-language-studio-nlp-services.jpg)
+![The image shows a webpage from Azure's Language Studio, highlighting services for natural language processing, including question answering, custom question answering, conversational language understanding, and orchestration workflow. It also features learning resources like documentation and code samples.](https://kodekloud.com/kk-media/image/upload/v1752857050/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/azure-language-studio-nlp-services.jpg)
 
 For example, social media posts can be analyzed to gauge customer sentiment:
 
 * A post with a 96% positive sentiment may trigger a thank-you message.
 * A negative review like "the cafeteria food is getting worse by the day" might register as 94% negative, prompting a customer support follow-up.
 
-![The image shows a webpage from Microsoft Azure's Language Studio, featuring various natural language processing tools like sentiment analysis, language detection, and text classification. It also includes learning resources such as documentation and code samples.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857050/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/azure-language-studio-nlp-tools.jpg)
+![The image shows a webpage from Microsoft Azure's Language Studio, featuring various natural language processing tools like sentiment analysis, language detection, and text classification. It also includes learning resources such as documentation and code samples.](https://kodekloud.com/kk-media/image/upload/v1752857050/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/azure-language-studio-nlp-tools.jpg)
 
 :::note Important
 Users with an Azure subscription benefit from additional features and fewer usage limitations compared to the free trial. For instance, during the free trial, speech recordings for pronunciation assessment are limited to five seconds.
 :::
 
-![The image shows a webpage from Azure Language Studio, highlighting features for getting started with Azure Cognitive Services for Language, including options for text classification and sentiment analysis. It also includes learning resources and links to try out various language processing tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857052/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/azure-language-studio-cognitive-services.jpg)
+![The image shows a webpage from Azure Language Studio, highlighting features for getting started with Azure Cognitive Services for Language, including options for text classification and sentiment analysis. It also includes learning resources and links to try out various language processing tools.](https://kodekloud.com/kk-media/image/upload/v1752857052/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/azure-language-studio-cognitive-services.jpg)
 
 You are encouraged to experiment with the lab exercises to gain hands-on experience with these powerful resources.
 
-![The image shows a Microsoft Azure AI Studio interface for pronunciation assessment with speech-to-text capabilities. It includes options for reading and speaking assessments, language selection, and audio recording or uploading.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857053/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/azure-ai-studio-pronunciation-assessment-2.jpg)
+![The image shows a Microsoft Azure AI Studio interface for pronunciation assessment with speech-to-text capabilities. It includes options for reading and speaking assessments, language selection, and audio recording or uploading.](https://kodekloud.com/kk-media/image/upload/v1752857053/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-NLP-and-Conversational-AI-in-Azure/azure-ai-studio-pronunciation-assessment-2.jpg)
 
 ***
 

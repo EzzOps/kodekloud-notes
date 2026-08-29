@@ -9,13 +9,9 @@ In this lesson, we’ll cover the key concepts of integrating a Hardware Securit
 * **Auto Unsealing with HSM**: Enables Vault to decrypt its master key automatically using an HSM, eliminating manual unseal operations.
 * **Seal Wrap**: Leverages the HSM to wrap and protect Vault’s storage encryption keys, ensuring data-at-rest remains secure.
 
-<Callout icon="lightbulb">
-  HashiCorp does not provide an HSM for certification candidates. If you have access to an on-premises or cloud-based HSM, follow the [official Vault PKCS#11 seal documentation][pkcs11-docs] to configure auto unsealing and seal wrap.
-</Callout>
+> **lightbulb** HashiCorp does not provide an HSM for certification candidates. If you have access to an on-premises or cloud-based HSM, follow the [official Vault PKCS#11 seal documentation][pkcs11-docs] to configure auto unsealing and seal wrap.
 
-<Frame>
-  ![The image is a section overview slide about Hardware Security Module (HSM) integration, focusing on auto unsealing and seal wrap benefits. It includes a certification badge and a cartoon character illustration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878638/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Section-Overview-Understand-the-Hardware-Security-Module-HSM-Integration/hsm-integration-auto-unsealing-benefits.jpg)
-</Frame>
+![The image is a section overview slide about Hardware Security Module (HSM) integration, focusing on auto unsealing and seal wrap benefits. It includes a certification badge and a cartoon character illustration.](https://kodekloud.com/kk-media/image/upload/v1752878638/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Section-Overview-Understand-the-Hardware-Security-Module-HSM-Integration/hsm-integration-auto-unsealing-benefits.jpg)
 
 This section is concise—just enough to grasp the exam topics and real-world deployment considerations. Next, we’ll dive into how Auto Unsealing works under the hood.
 
@@ -38,6 +34,4 @@ This section is concise—just enough to grasp the exam topics and real-world de
 
 [pkcs11-docs]: https://developer.hashicorp.com/vault/docs/configuration/seal/pkcs11
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/72879dfa-5358-4743-b2f1-62bdd686d0ea/lesson/0fe86415-4758-45e7-af00-801f19c964ec" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/72879dfa-5358-4743-b2f1-62bdd686d0ea/lesson/0fe86415-4758-45e7-af00-801f19c964ec)

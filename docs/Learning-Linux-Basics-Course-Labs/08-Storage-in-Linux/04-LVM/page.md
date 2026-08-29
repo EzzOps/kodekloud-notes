@@ -6,8 +6,7 @@
 /dev/sda1  /  ext4  defaults,relatime,errors=panic  0  1
 ```
 
-<Callout icon="lightbulb">
-  In the fstab entry:
+> **lightbulb** In the fstab entry:
 
   * The first field indicates the device or filesystem.
   * The second field specifies the directory where the file system is mounted.
@@ -15,7 +14,6 @@
   * The fourth field lists mount options. A commonly used option is `rw`, which mounts the file system in read-write mode.
   * The fifth field (often set to zero) indicates whether a dump backup is scheduled.
   * The sixth field determines the order in which file systems are checked during boot-up; a `0` means the check is skipped, while `1` is typically reserved for the root filesystem.
-</Callout>
 
 ## Hands-On Lab
 
@@ -23,11 +21,9 @@ Now it's your turn to experiment further with Linux file systems. Try creating, 
 
 Explore more Linux fundamentals with other guides and practical labs to deepen your understanding of modern file system management.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/e0021af2-9983-4bde-97a2-29255d3ea1da/lesson/6888ecca-2804-4606-8127-a5f1b0f1d651" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/e0021af2-9983-4bde-97a2-29255d3ea1da/lesson/6888ecca-2804-4606-8127-a5f1b0f1d651)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/e0021af2-9983-4bde-97a2-29255d3ea1da/lesson/9b574ed0-5a82-4c32-abf6-b4fe00c9459f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/e0021af2-9983-4bde-97a2-29255d3ea1da/lesson/9b574ed0-5a82-4c32-abf6-b4fe00c9459f)
 
 
 # LVM
@@ -38,9 +34,7 @@ This article provides an overview of Logical Volume Manager (LVM) and guides use
 
 In this lesson, we explore the Logical Volume Manager (LVM), a powerful tool that enables you to group multiple physical volumes (disks or partitions) into a single volume group (VG). From the volume group, you can then allocate one or more logical volumes (LVs). While our example uses three partitions, LVM is flexible enough to work with a single disk, multiple disks, or even an unlimited number of partitions grouped under a single VG.
 
-<Callout icon="lightbulb">
-  One of LVM’s most significant advantages is its ability to resize logical volumes dynamically, provided there is sufficient free space in the volume group. This feature is especially useful for systems with changing storage requirements.
-</Callout>
+> **lightbulb** One of LVM’s most significant advantages is its ability to resize logical volumes dynamically, provided there is sufficient free space in the volume group. This feature is especially useful for systems with changing storage requirements.
 
 ## Prerequisites
 
@@ -200,9 +194,7 @@ Expected output:
 Logical volume vol1 successfully resized.
 ```
 
-<Callout icon="triangle-alert">
-  At this stage, even after resizing the logical volume, the filesystem will still report its original size (1GB) when using the `df` command because only the LV has been extended. It is essential to also resize the filesystem with the `resize2fs` command.
-</Callout>
+> **triangle-alert** At this stage, even after resizing the logical volume, the filesystem will still report its original size (1GB) when using the `df` command because only the LV has been extended. It is essential to also resize the filesystem with the `resize2fs` command.
 
 Resize the filesystem using:
 
@@ -242,8 +234,6 @@ For further reading and advanced concepts, consider exploring additional resourc
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/e0021af2-9983-4bde-97a2-29255d3ea1da/lesson/f6fac38a-495f-42a6-b4a1-3fcc2f8375ac" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/e0021af2-9983-4bde-97a2-29255d3ea1da/lesson/f6fac38a-495f-42a6-b4a1-3fcc2f8375ac)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/e0021af2-9983-4bde-97a2-29255d3ea1da/lesson/edd2515f-a32d-41b2-9299-eedfa62eb676" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/e0021af2-9983-4bde-97a2-29255d3ea1da/lesson/edd2515f-a32d-41b2-9299-eedfa62eb676)

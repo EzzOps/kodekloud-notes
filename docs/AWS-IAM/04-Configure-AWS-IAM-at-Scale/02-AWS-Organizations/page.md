@@ -20,7 +20,7 @@ The management account (formerly the “master” account) acts as the root of y
 
 > **triangle-alert** Avoid using the root user for everyday tasks. Instead, assign permissions through IAM roles in member accounts to reduce security risk.
 
-![The image is a diagram of an AWS Organizations structure, showing a hierarchy with a root management account, organizational units, and member accounts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862934/notes-assets/images/AWS-IAM-AWS-Organizations/aws-organizations-structure-diagram.jpg)
+![The image is a diagram of an AWS Organizations structure, showing a hierarchy with a root management account, organizational units, and member accounts.](https://kodekloud.com/kk-media/image/upload/v1752862934/notes-assets/images/AWS-IAM-AWS-Organizations/aws-organizations-structure-diagram.jpg)
 
 Any SCP attached to an OU automatically cascades to all nested OUs and member accounts. You can also target SCPs directly to individual accounts when a specialized policy is required.
 
@@ -30,7 +30,7 @@ Any SCP attached to an OU automatically cascades to all nested OUs and member ac
 
 AWS Organizations unlocks powerful features for enterprises:
 
-![The image lists the benefits of AWS Organizations, including centralized billing, resource sharing, access management, compliance, and simplified account management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862935/notes-assets/images/AWS-IAM-AWS-Organizations/aws-organizations-benefits-list.jpg)
+![The image lists the benefits of AWS Organizations, including centralized billing, resource sharing, access management, compliance, and simplified account management.](https://kodekloud.com/kk-media/image/upload/v1752862935/notes-assets/images/AWS-IAM-AWS-Organizations/aws-organizations-benefits-list.jpg)
 
 | Benefit                       | Description                                                                          |
 | ----------------------------- | ------------------------------------------------------------------------------------ |

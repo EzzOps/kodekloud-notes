@@ -12,17 +12,13 @@ Ensuring your Terragrunt version aligns with your Terraform or OpenTofu release 
 * Ensures access to the latest features without sacrificing stability
 * Simplifies troubleshooting by minimizing version-related issues
 
-<Callout icon="lightbulb">
-  Always review the Terragrunt [release notes](https://terragrunt.gruntwork.io/docs/) before upgrading. Breaking changes can impact your existing configuration.
-</Callout>
+> **lightbulb** Always review the Terragrunt [release notes](https://terragrunt.gruntwork.io/docs/) before upgrading. Breaking changes can impact your existing configuration.
 
 ## Compatibility Chart
 
 Refer to the matrix below to confirm which Terragrunt versions support your Terraform or OpenTofu release:
 
-<Frame>
-  ![The image is a compatibility chart showing the versions of Terraform/OpenTofu and their corresponding compatible Terragrunt versions. It includes a link to more information on supported versions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884358/notes-assets/images/Terragrunt-for-Beginners-TerraformOpenTofu-and-Terragrunt-Compatibility-Chart/terraform-opentofu-terragrunt-compatibility-chart.jpg)
-</Frame>
+![The image is a compatibility chart showing the versions of Terraform/OpenTofu and their corresponding compatible Terragrunt versions. It includes a link to more information on supported versions.](https://kodekloud.com/kk-media/image/upload/v1752884358/notes-assets/images/Terragrunt-for-Beginners-TerraformOpenTofu-and-Terragrunt-Compatibility-Chart/terraform-opentofu-terragrunt-compatibility-chart.jpg)
 
 ## Best Practices for Managing Versions
 
@@ -38,6 +34,4 @@ Refer to the matrix below to confirm which Terragrunt versions support your Terr
 * [Terraform Versioning Guide](https://www.terraform.io/docs/language/versions/index.html)
 * [OpenTofu Release Notes](https://github.com/opentofu/opentofu/releases)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/c2ee1192-4547-4149-82dc-d7e2940cb844/lesson/753cc09c-e388-466b-bb0f-9857a1c01709" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/c2ee1192-4547-4149-82dc-d7e2940cb844/lesson/753cc09c-e388-466b-bb0f-9857a1c01709)

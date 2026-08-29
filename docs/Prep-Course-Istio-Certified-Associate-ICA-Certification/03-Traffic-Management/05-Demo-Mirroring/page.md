@@ -19,9 +19,7 @@ Labels:
   sidecar.istio.io/inject=true
 ```
 
-<Callout icon="lightbulb">
-  Make sure your Gateway's selector uses the exact label key/value present on your ingress pods (for example `istio=ingress` or `app=istio-ingress`). If the selector doesn't match, the Gateway will not bind to the ingress proxy.
-</Callout>
+> **lightbulb** Make sure your Gateway's selector uses the exact label key/value present on your ingress pods (for example `istio=ingress` or `app=istio-ingress`). If the selector doesn't match, the Gateway will not bind to the ingress proxy.
 
 Create the Gateway in the `default` namespace (so it pairs with the VirtualService). Save this as `gw.yaml`:
 
@@ -128,9 +126,7 @@ x-envoy-upstream-service-time: 21
 
 Once configured correctly, requests whose Host header matches `book.info.com` will be accepted by the Gateway on port 80 and routed via the VirtualService to the `productpage` service.
 
-<Callout icon="lightbulb">
-  If you are testing from a machine outside the cluster without DNS for book.info.com, pass the Host header with curl (as above) or add a local /etc/hosts entry pointing book.info.com to the load balancer or node IP for convenient testing.
-</Callout>
+> **lightbulb** If you are testing from a machine outside the cluster without DNS for book.info.com, pass the Host header with curl (as above) or add a local /etc/hosts entry pointing book.info.com to the load balancer or node IP for convenient testing.
 
 Cloud example: LoadBalancer behavior
 
@@ -160,11 +156,9 @@ Summary
 
 Thank you.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/0489a47d-305a-4e60-8a03-5742192bc357" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/0489a47d-305a-4e60-8a03-5742192bc357)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/8a471175-53e2-4d14-95ce-aa3721c7ef20" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/8a471175-53e2-4d14-95ce-aa3721c7ef20)
 
 
 # Demo Mirroring
@@ -175,9 +169,7 @@ Configures Istio traffic mirroring to send copies of live requests from primary 
 
 In this lesson we configure traffic mirroring with Istio. Traffic mirroring lets you send a copy of live requests to a secondary subset (for testing, canary analysis, logging, or debugging) while the primary subset continues to serve real user traffic.
 
-<Callout icon="lightbulb">
-  Make sure the namespace where you deploy your workloads has Istio sidecar injection enabled. Istio features (including mirroring) require injection to be active for the namespace.
-</Callout>
+> **lightbulb** Make sure the namespace where you deploy your workloads has Istio sidecar injection enabled. Istio features (including mirroring) require injection to be active for the namespace.
 
 Overview:
 
@@ -480,9 +472,7 @@ Example mirrored request log in v2:
 * Ensure labels in `DestinationRule.subsets` exactly match pod labels (`version: v1` / `version: v2`).
 * Mirroring is useful for testing new versions without impacting users: logs, tracing, or metrics from the mirror can validate behavior.
 
-<Callout icon="lightbulb">
-  If you need the Gateway API or other CRDs present, ensure any required CRDs are installed before testing; for example, follow upstream installation instructions for the Gateway API when required by your environment.
-</Callout>
+> **lightbulb** If you need the Gateway API or other CRDs present, ensure any required CRDs are installed before testing; for example, follow upstream installation instructions for the Gateway API when required by your environment.
 
 Links and references:
 
@@ -492,8 +482,6 @@ Links and references:
 
 That completes this lesson on Istio traffic mirroring. Try adjusting `mirrorPercentage` and subsets to experiment with partial mirroring and canary analysis in your cluster.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/a0ca9fa0-e282-411f-9894-5fab1d4cdfbb" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/a0ca9fa0-e282-411f-9894-5fab1d4cdfbb)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/4ca5ae83-9cbc-4f15-a7ef-d977caa61cdd" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/4ca5ae83-9cbc-4f15-a7ef-d977caa61cdd)

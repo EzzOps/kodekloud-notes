@@ -2,9 +2,7 @@
 pip install Flask
 ```
 
-<Callout icon="lightbulb">
-  Remember to manage your Python environments effectively using tools like virtualenv or conda to keep dependencies organized.
-</Callout>
+> **lightbulb** Remember to manage your Python environments effectively using tools like virtualenv or conda to keep dependencies organized.
 
 After installation, verify the proper setup of Flask by checking its version:
 
@@ -121,9 +119,7 @@ WARNING: This is a development server. Do not use it in a production deployment.
 Press CTRL+C to quit
 ```
 
-<Callout icon="triangle-alert">
-  The built-in server is intended for development only. For production environments, consider using a production-ready WSGI server.
-</Callout>
+> **triangle-alert** The built-in server is intended for development only. For production environments, consider using a production-ready WSGI server.
 
 ## Deploying with Gunicorn
 
@@ -154,17 +150,13 @@ Adhering to best practices ensures your application is efficient, secure, and sc
    * Load the model once at startup to avoid repetitive loading.
    * Set the model to evaluation mode for accurate predictions.
 
-<Frame>
-  ![The image provides best practices for preparing a model, suggesting to load the model once during start-up to avoid redundancy and to set the model to evaluation mode for inference.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883265/notes-assets/images/PyTorch-Introduction-to-Flask/model-preparation-best-practices.jpg)
-</Frame>
+![The image provides best practices for preparing a model, suggesting to load the model once during start-up to avoid redundancy and to set the model to evaluation mode for inference.](https://kodekloud.com/kk-media/image/upload/v1752883265/notes-assets/images/PyTorch-Introduction-to-Flask/model-preparation-best-practices.jpg)
 
 2. **Efficient Endpoint Design:**
    * Design clear and descriptive API endpoints.
    * Validate incoming data to meet model requirements.
 
-<Frame>
-  ![The image is a slide titled "Efficient Endpoint Design" with best practices for API design, including using descriptive endpoints and validating incoming data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883265/notes-assets/images/PyTorch-Introduction-to-Flask/efficient-endpoint-design-api-best-practices.jpg)
-</Frame>
+![The image is a slide titled "Efficient Endpoint Design" with best practices for API design, including using descriptive endpoints and validating incoming data.](https://kodekloud.com/kk-media/image/upload/v1752883265/notes-assets/images/PyTorch-Introduction-to-Flask/efficient-endpoint-design-api-best-practices.jpg)
 
 3. **Error Handling:**
    * Implement robust error handling to return clear messages and proper HTTP status codes for invalid requests.
@@ -173,9 +165,7 @@ Adhering to best practices ensures your application is efficient, secure, and sc
    * Utilize HTTPS to secure data transmission.
    * Store sensitive details like API keys or credentials in environment variables instead of hard-coding them.
 
-<Frame>
-  ![The image is a slide titled "Best Practices" focusing on security, advising to use HTTPS for secure data transmission and to store sensitive information in environment variables.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883267/notes-assets/images/PyTorch-Introduction-to-Flask/best-practices-security-https-env-vars.jpg)
-</Frame>
+![The image is a slide titled "Best Practices" focusing on security, advising to use HTTPS for secure data transmission and to store sensitive information in environment variables.](https://kodekloud.com/kk-media/image/upload/v1752883267/notes-assets/images/PyTorch-Introduction-to-Flask/best-practices-security-https-env-vars.jpg)
 
 5. **Monitoring and Logging:**
    * Log API usage, errors, and inference times to facilitate troubleshooting.
@@ -195,13 +185,9 @@ In summary, this article covered:
 
 Let’s now move on to demoing a Flask application designed to serve a PyTorch model.
 
-<Frame>
-  ![The image is a summary slide about Flask, a Python microframework, covering its overview, benefits, setup instructions, and best practices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883268/notes-assets/images/PyTorch-Introduction-to-Flask/flask-python-microframework-summary.jpg)
-</Frame>
+![The image is a summary slide about Flask, a Python microframework, covering its overview, benefits, setup instructions, and best practices.](https://kodekloud.com/kk-media/image/upload/v1752883268/notes-assets/images/PyTorch-Introduction-to-Flask/flask-python-microframework-summary.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/94f6282a-76a1-47f1-a91f-37d38c086dff" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/94f6282a-76a1-47f1-a91f-37d38c086dff)
 
 
 # Building Data
@@ -216,9 +202,7 @@ In this lesson, we explain how to build custom data for training a model using P
 
 Data splitting divides your dataset into training, validation, and testing subsets. This is essential for ensuring that your model generalizes well and that performance metrics are reliable. For instance, you might use a 70/15/15 ratio for training, validation, and testing respectively, although you can adjust these percentages to meet your project requirements.
 
-<Frame>
-  ![The image illustrates data splitting for machine learning, showing percentages for training (70%), validation (15%), and testing (15%) datasets. Each section is described with its purpose: teaching the model, fine-tuning, and measuring final performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883269/notes-assets/images/PyTorch-Building-Data/data-splitting-machine-learning-diagram.jpg)
-</Frame>
+![The image illustrates data splitting for machine learning, showing percentages for training (70%), validation (15%), and testing (15%) datasets. Each section is described with its purpose: teaching the model, fine-tuning, and measuring final performance.](https://kodekloud.com/kk-media/image/upload/v1752883269/notes-assets/images/PyTorch-Building-Data/data-splitting-machine-learning-diagram.jpg)
 
 PyTorch's `RandomSplit` utility from the `torch.utils.data` module can help automate this process by randomly dividing the dataset into the desired sizes. Here’s an example:
 

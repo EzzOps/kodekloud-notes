@@ -21,7 +21,7 @@ In a typical cloud-native setup:
 * Developers may also have administrative access for troubleshooting.
 * Azure’s built-in features like [Auditing](https://learn.microsoft.com/azure/azure-sql/database/auditing-overview) and [Advanced Data Security](https://learn.microsoft.com/azure/azure-sql/database/advanced-data-security) provide monitoring and alerts.
 
-![The image illustrates a cloud-based system involving an app user, apps, a developer, and an Azure SQL Database, related to understanding SQL injection attacks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868037/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understand-SQL-Injection-Attacks/cloud-system-sql-injection-illustration.jpg)
+![The image illustrates a cloud-based system involving an app user, apps, a developer, and an Azure SQL Database, related to understanding SQL injection attacks.](https://kodekloud.com/kk-media/image/upload/v1752868037/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understand-SQL-Injection-Attacks/cloud-system-sql-injection-illustration.jpg)
 
 Although Azure can detect suspicious activities, the **primary defense** against SQLi must be built into your application code.
 
@@ -39,7 +39,7 @@ Although Azure can detect suspicious activities, the **primary defense** against
 
 When you concatenate user input directly into SQL statements, you risk letting malicious actors inject additional SQL commands. Our “custom wish list” scenario is a prime example—every new feature that executes raw queries increases your attack surface.
 
-![The image illustrates SQL injection attacks, showing an attacker interacting with an Azure SQL Database to insert malicious queries, highlighting the underlying risk.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868038/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understand-SQL-Injection-Attacks/sql-injection-azure-database-attack.jpg)
+![The image illustrates SQL injection attacks, showing an attacker interacting with an Azure SQL Database to insert malicious queries, highlighting the underlying risk.](https://kodekloud.com/kk-media/image/upload/v1752868038/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understand-SQL-Injection-Attacks/sql-injection-azure-database-attack.jpg)
 
 If inputs aren’t **validated** or **sanitized**, an attacker could:
 
@@ -62,7 +62,7 @@ Let’s walk through a typical SQLi exploit:
 4. **Database Runs the Injected SQL**\
    The server interprets the injected commands as part of the original query.
 
-![The image illustrates the anatomy of an SQL injection attack, showing how an attacker manipulates a standard SQL query to access an Azure SQL Database, potentially leading to data theft, corruption, or disclosure of sensitive information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868039/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understand-SQL-Injection-Attacks/sql-injection-attack-anatomy-azure.jpg)
+![The image illustrates the anatomy of an SQL injection attack, showing how an attacker manipulates a standard SQL query to access an Azure SQL Database, potentially leading to data theft, corruption, or disclosure of sensitive information.](https://kodekloud.com/kk-media/image/upload/v1752868039/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understand-SQL-Injection-Attacks/sql-injection-attack-anatomy-azure.jpg)
 
 **Impact**: Data theft, corruption, or even full admin takeover of the database—resulting in regulatory fines, reputational damage, and financial loss.
 
@@ -72,7 +72,7 @@ Let’s walk through a typical SQLi exploit:
 
 A multi-layered approach is essential. The following strategies are proven to reduce SQLi risk:
 
-![The image illustrates proactive defenses against SQL injection attacks, highlighting the importance of protecting platforms through rigorous input validation to prevent data theft, corruption, or disclosure of sensitive information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868041/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understand-SQL-Injection-Attacks/sql-injection-proactive-defenses-illustration.jpg)
+![The image illustrates proactive defenses against SQL injection attacks, highlighting the importance of protecting platforms through rigorous input validation to prevent data theft, corruption, or disclosure of sensitive information.](https://kodekloud.com/kk-media/image/upload/v1752868041/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understand-SQL-Injection-Attacks/sql-injection-proactive-defenses-illustration.jpg)
 
 | Defense Strategy                            | Description                                                                               |
 | ------------------------------------------- | ----------------------------------------------------------------------------------------- |

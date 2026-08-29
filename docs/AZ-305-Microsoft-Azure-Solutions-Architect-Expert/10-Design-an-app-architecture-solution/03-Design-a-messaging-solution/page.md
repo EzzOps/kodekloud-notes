@@ -21,7 +21,7 @@ When a user uploads a picture via Component A, the picture details are sent as a
   * Guaranteed message delivery
   * Transactional support
 
-![The image illustrates the design for Azure Queue storage, showing components A and B connected through a message queue, with details about access, message size, and capacity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867180/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-a-messaging-solution/azure-queue-storage-design-diagram.jpg)
+![The image illustrates the design for Azure Queue storage, showing components A and B connected through a message queue, with details about access, message size, and capacity.](https://kodekloud.com/kk-media/image/upload/v1752867180/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-a-messaging-solution/azure-queue-storage-design-diagram.jpg)
 
 Each message in Azure Queue Storage can be up to 64 KB in size. The queue can store millions of messages, only limited by the total capacity of the storage account.
 
@@ -36,7 +36,7 @@ Azure Service Bus is a fully managed enterprise message broker engineered for mo
 
 Service Bus Queues provide an enterprise-grade messaging solution. In these queues, messages are temporarily stored until the receiving component is ready to process them. The workflow mirrors that of Azure Queue Storage: Component A sends a message that Component B later processes.
 
-![The image is an infographic about designing for Azure Service Bus, featuring a message queue diagram and key points about its infrastructure and delivery guarantees. It includes illustrations of planes and text highlighting its use for enterprise applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867180/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-a-messaging-solution/azure-service-bus-infographic.jpg)
+![The image is an infographic about designing for Azure Service Bus, featuring a message queue diagram and key points about its infrastructure and delivery guarantees. It includes illustrations of planes and text highlighting its use for enterprise applications.](https://kodekloud.com/kk-media/image/upload/v1752867180/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-a-messaging-solution/azure-service-bus-infographic.jpg)
 
 ### Service Bus Topics (Publish/Subscribe Model)
 
@@ -60,7 +60,7 @@ When selecting the appropriate messaging service in Azure, consider the followin
 
 > **triangle-alert** When deciding on a messaging service, ensure that the selected option aligns with your application's complexity and the required level of delivery guarantees.
 
-![The image is a table comparing messaging services, specifically Azure Queue Storage, Service Bus Queues, and Service Bus Topics, highlighting their use cases and SLA details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867182/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-a-messaging-solution/messaging-services-comparison-table.jpg)
+![The image is a table comparing messaging services, specifically Azure Queue Storage, Service Bus Queues, and Service Bus Topics, highlighting their use cases and SLA details.](https://kodekloud.com/kk-media/image/upload/v1752867182/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-a-messaging-solution/messaging-services-comparison-table.jpg)
 
 That concludes our overview of Azure messaging solutions. In the next section, we will transition to discussing event-driven solutions. For more in-depth insights on Azure services, refer to the [Azure Documentation](https://docs.microsoft.com/azure).
 

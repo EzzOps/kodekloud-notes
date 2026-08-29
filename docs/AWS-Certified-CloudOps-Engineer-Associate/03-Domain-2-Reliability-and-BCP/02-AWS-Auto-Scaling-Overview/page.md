@@ -8,7 +8,7 @@ Welcome to this comprehensive guide on AWS Auto Scaling—a critical feature des
 
 Imagine a bakery that produces cupcakes based on customer demand. As demand increases, the bakery adds more ovens when the current ones reach 80% capacity. Conversely, when demand drops, an oven is turned off, reducing costs such as electricity and space usage. This analogy reflects the essence of auto scaling: dynamically adding or removing resources according to current needs.
 
-![The image illustrates the concept of auto scaling with a bakery metaphor, showing a bakery, two ovens, and four users with cupcakes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859984/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Auto-Scaling-Overview/auto-scaling-bakery-illustration.jpg)
+![The image illustrates the concept of auto scaling with a bakery metaphor, showing a bakery, two ovens, and four users with cupcakes.](https://kodekloud.com/kk-media/image/upload/v1752859984/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Auto-Scaling-Overview/auto-scaling-bakery-illustration.jpg)
 
 Traditionally associated with EC2 virtual machines, auto scaling now extends to nearly every AWS service, including DynamoDB, serverless options, and distributed databases like Aurora. The primary objectives of AWS Auto Scaling are to:
 
@@ -30,7 +30,7 @@ AWS Auto Scaling offers three main scaling strategies to ensure your application
 3. **Scheduled Scaling**\
    Scheduled scaling automates capacity changes based on predefined time intervals. For instance, if your video service faces a 400-500% load increase on weekdays from 8 a.m. to 8 p.m., you can schedule scaling actions to add capacity just before the surge and reduce it after the peak period.
 
-![The image explains how AWS Auto Scaling works, detailing three main types: Dynamic Scaling, Predictive Scaling, and Scheduled Scaling, each with a brief description of their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859986/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Auto-Scaling-Overview/aws-auto-scaling-explained.jpg)
+![The image explains how AWS Auto Scaling works, detailing three main types: Dynamic Scaling, Predictive Scaling, and Scheduled Scaling, each with a brief description of their functions.](https://kodekloud.com/kk-media/image/upload/v1752859986/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Auto-Scaling-Overview/aws-auto-scaling-explained.jpg)
 
 With support for dynamic, predictive, and scheduled modes, AWS Auto Scaling provides the flexibility needed to adapt to various application demands.
 
@@ -44,19 +44,19 @@ When configuring auto scaling for an EC2 instance, follow these steps to ensure 
 
 A crucial part of this configuration is specifying the minimum, desired, and maximum number of instances. For example, you can set the auto scaling group with a minimum of 2 instances, a desired capacity of 4 (adjusting dynamically as needed), and a maximum of 8 instances. This setup ensures that resources remain within defined boundaries, preventing resource abuse and avoiding unexpected costs.
 
-![The image illustrates an auto-scaling process with three scenarios showing different configurations of minimum, desired, and maximum capacities. Each scenario depicts a varying number of instances within a dotted boundary, controlled by an auto-scaling mechanism.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859987/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Auto-Scaling-Overview/auto-scaling-process-configurations-diagram.jpg)
+![The image illustrates an auto-scaling process with three scenarios showing different configurations of minimum, desired, and maximum capacities. Each scenario depicts a varying number of instances within a dotted boundary, controlled by an auto-scaling mechanism.](https://kodekloud.com/kk-media/image/upload/v1752859987/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Auto-Scaling-Overview/auto-scaling-process-configurations-diagram.jpg)
 
 > **lightbulb** If an instance within the auto scaling group fails, the auto recovery mechanism automatically replaces it to maintain the desired capacity. This self-healing feature supports various environments, whether running Windows, Linux, spot instances, or on-demand instances.
 
 Beyond EC2, AWS Auto Scaling is also implemented in services like DynamoDB, ECS, EKS, Apache Cassandra, EMR, Lambda, Kafka, Neptune, SageMaker, serverless OpenSearch, and serverless Aurora, making it a foundational element in comprehensive resource management across AWS.
 
-![The image explains how AWS Auto Scaling works, highlighting three types of scaling: dynamic, predictive, and scheduled, with graphs illustrating utilization, capacity, and load forecasting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859989/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Auto-Scaling-Overview/aws-auto-scaling-explained-2.jpg)
+![The image explains how AWS Auto Scaling works, highlighting three types of scaling: dynamic, predictive, and scheduled, with graphs illustrating utilization, capacity, and load forecasting.](https://kodekloud.com/kk-media/image/upload/v1752859989/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Auto-Scaling-Overview/aws-auto-scaling-explained-2.jpg)
 
 ## Integration with Other AWS Services
 
 AWS Auto Scaling seamlessly integrates with an Elastic Load Balancer (ELB). This integration allows instances to be added or removed without modifying DNS settings, ensuring smooth transitions during scaling events and eliminating the drawbacks of traditional DNS-based failover mechanisms.
 
-![The image describes features of auto scaling, highlighting scaling policies (dynamic, scheduled, predictive) and auto healing for EC2 instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859989/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Auto-Scaling-Overview/auto-scaling-ec2-features-diagram.jpg)
+![The image describes features of auto scaling, highlighting scaling policies (dynamic, scheduled, predictive) and auto healing for EC2 instances.](https://kodekloud.com/kk-media/image/upload/v1752859989/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Auto-Scaling-Overview/auto-scaling-ec2-features-diagram.jpg)
 
 ## Conclusion
 

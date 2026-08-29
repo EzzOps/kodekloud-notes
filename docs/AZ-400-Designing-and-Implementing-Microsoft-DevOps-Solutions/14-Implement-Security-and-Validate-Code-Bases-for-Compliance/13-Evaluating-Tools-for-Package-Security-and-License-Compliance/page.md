@@ -20,13 +20,13 @@ Ensuring that every software package in your CI/CD pipeline is free from vulnera
 | Centralized Artifact Repository Scan | Artifacts are scanned post-build in a central registry. | Consistent policy enforcement, audit trails |
 | Build-Phase Tooling Integration      | Scans occur during the build process (CI job).          | Immediate feedback, prevents bad artifacts  |
 
-![The image outlines two strategies for evaluating tools for package security and license compliance: implementing scanning within a centralized artifact repository and integrating tooling within the build phase of the pipeline.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868007/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Evaluating-Tools-for-Package-Security-and-License-Compliance/package-security-license-compliance-strategies.jpg)
+![The image outlines two strategies for evaluating tools for package security and license compliance: implementing scanning within a centralized artifact repository and integrating tooling within the build phase of the pipeline.](https://kodekloud.com/kk-media/image/upload/v1752868007/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Evaluating-Tools-for-Package-Security-and-License-Compliance/package-security-license-compliance-strategies.jpg)
 
 ## Key Tooling Solutions
 
 Below is an overview of popular tools aligned to these strategies, each playing a distinct role in a comprehensive DevOps security workflow:
 
-![The image is a table listing tools for package security and license compliance, with "Artifactory," "SonarQube," and "Mend Bolt" categorized as "Artifact Repository," "Code Quality Assessment," and "Build Process Scanning," respectively.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868008/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Evaluating-Tools-for-Package-Security-and-License-Compliance/package-security-tools-table.jpg)
+![The image is a table listing tools for package security and license compliance, with "Artifactory," "SonarQube," and "Mend Bolt" categorized as "Artifact Repository," "Code Quality Assessment," and "Build Process Scanning," respectively.](https://kodekloud.com/kk-media/image/upload/v1752868008/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Evaluating-Tools-for-Package-Security-and-License-Compliance/package-security-tools-table.jpg)
 
 | Tool        | Category               | Primary Function                                             |
 | ----------- | ---------------------- | ------------------------------------------------------------ |

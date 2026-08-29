@@ -113,11 +113,9 @@ kubectl auth can-i create pods --as=bob -n team-beta
 
 Service accounts are identities used by automation, controllers, and CI/CD systems. Bind Roles to service accounts using the `--serviceaccount` flag; the format is `namespace:serviceaccount-name`.
 
-<Callout icon="lightbulb">
-  When impersonating a service account with `kubectl auth can-i`, use the username format:
+> **lightbulb** When impersonating a service account with `kubectl auth can-i`, use the username format:
   `system:serviceaccount:<namespace>:<serviceaccount-name>` — for example:
   `system:serviceaccount:team-alpha:deploy-bot`.
-</Callout>
 
 Bind the `developer` Role to the `deploy-bot` service account in `team-alpha`:
 
@@ -154,9 +152,7 @@ To debug RBAC:
 * Use `--as` to impersonate users or service accounts.
 * For deeper debugging, increase verbosity on API calls (e.g., `kubectl --v=8`) or inspect Role/ClusterRole and RoleBinding/ClusterRoleBinding objects.
 
-<Callout icon="warning">
-  Always review Role and ClusterRole changes carefully. Test with `kubectl auth can-i --as=...` before applying changes to production to avoid accidentally granting too much access.
-</Callout>
+> **warning** Always review Role and ClusterRole changes carefully. Test with `kubectl auth can-i --as=...` before applying changes to production to avoid accidentally granting too much access.
 
 ## Quick comparison
 
@@ -183,11 +179,9 @@ To debug RBAC:
 
 Practice these principles in a safe lab environment by creating Roles, ClusterRoles, RoleBindings, and ClusterRoleBindings and validating access with `kubectl auth can-i`.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/cfeb58dd-916f-46fd-805a-ff58b8242fcc" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/cfeb58dd-916f-46fd-805a-ff58b8242fcc)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/cfac0a94-3720-4891-9aac-3f80c4454333" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/cfac0a94-3720-4891-9aac-3f80c4454333)
 
 
 # Demo Supply Chain Guardrails with Kyverno

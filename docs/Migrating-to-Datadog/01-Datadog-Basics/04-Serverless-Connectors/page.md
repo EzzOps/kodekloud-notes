@@ -63,13 +63,9 @@ Common configuration settings you will need to set (usually via environment vari
 
 Never hardcode API keys in source control or commit them to repositories. Use secrets management solutions to inject credentials at runtime.
 
-<Callout icon="lightbulb">
-  Do not hardcode API keys in production. Use environment variables populated from a secrets manager or the platform's secure configuration mechanisms to keep credentials safe.
-</Callout>
+> **lightbulb** Do not hardcode API keys in production. Use environment variables populated from a secrets manager or the platform's secure configuration mechanisms to keep credentials safe.
 
-<Callout icon="warning">
-  When forwarding logs via CloudWatch or other provider pipelines, ensure the function has the required IAM permissions and that you understand potential cost and retention impacts from log ingestion. Consider sampling and filtering to limit high-cardinality data.
-</Callout>
+> **warning** When forwarding logs via CloudWatch or other provider pipelines, ensure the function has the required IAM permissions and that you understand potential cost and retention impacts from log ingestion. Consider sampling and filtering to limit high-cardinality data.
 
 ## Example: Read Datadog Configuration from Environment Variables (Python)
 

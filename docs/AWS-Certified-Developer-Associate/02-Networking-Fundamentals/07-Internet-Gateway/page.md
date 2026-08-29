@@ -52,7 +52,7 @@ The process to convert your private subnet into a public one involves the follow
 
 The diagram below provides a visual representation of these steps:
 
-![The image illustrates the setup of an Internet Gateway within a VPC, showing steps like creating an IGW, attaching it to a VPC, creating a custom route table, and configuring a default route. It includes a diagram of a region with a VPC, availability zone, public subnet, and route table.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859167/notes-assets/images/AWS-Certified-Developer-Associate-Internet-Gateway/internet-gateway-vpc-setup-diagram.jpg)
+![The image illustrates the setup of an Internet Gateway within a VPC, showing steps like creating an IGW, attaching it to a VPC, creating a custom route table, and configuring a default route. It includes a diagram of a region with a VPC, availability zone, public subnet, and route table.](https://kodekloud.com/kk-media/image/upload/v1752859167/notes-assets/images/AWS-Certified-Developer-Associate-Internet-Gateway/internet-gateway-vpc-setup-diagram.jpg)
 
 ## How the Default Route Works
 
@@ -62,7 +62,7 @@ After the public subnet is associated with the custom route table, resources lau
 
 The following diagram illustrates this network setup:
 
-![The image is a diagram illustrating a network setup within a cloud environment, showing a public IP configuration in a VPC with a public subnet and resource.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859168/notes-assets/images/AWS-Certified-Developer-Associate-Internet-Gateway/cloud-network-setup-vpc-diagram.jpg)
+![The image is a diagram illustrating a network setup within a cloud environment, showing a public IP configuration in a VPC with a public subnet and resource.](https://kodekloud.com/kk-media/image/upload/v1752859168/notes-assets/images/AWS-Certified-Developer-Associate-Internet-Gateway/cloud-network-setup-vpc-diagram.jpg)
 
 ## How AWS Handles IP Address Translation
 
@@ -83,7 +83,7 @@ Internet Gateways are essential for enabling internet connectivity for resources
 * They are attached to VPCs (with a maximum of one per VPC) and operate seamlessly across all Availability Zones in a region.
 * Converting a private subnet into a public subnet requires creating and attaching an Internet Gateway, configuring a custom route table with a default route pointing to it, and associating the subnet with that route table.
 
-![The image is a summary slide outlining three key points about internet gateways and VPCs, including connectivity, attachment, and limitations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859169/notes-assets/images/AWS-Certified-Developer-Associate-Internet-Gateway/internet-gateways-vpcs-summary-slide.jpg)
+![The image is a summary slide outlining three key points about internet gateways and VPCs, including connectivity, attachment, and limitations.](https://kodekloud.com/kk-media/image/upload/v1752859169/notes-assets/images/AWS-Certified-Developer-Associate-Internet-Gateway/internet-gateways-vpcs-summary-slide.jpg)
 
 By following these steps, you can successfully configure your public subnets and ensure that your resources maintain robust and secure communication with the internet.
 

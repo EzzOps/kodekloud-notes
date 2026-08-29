@@ -37,7 +37,7 @@ app.listen(PORT, () => console.log(`app is listening on port ${PORT}`));
 
 These five endpoints will eventually handle listing, creating, retrieving, deleting, and updating products in your DynamoDB table. Note that the table uses "id" as the partition key, so retrieving items using a scan is required since a query necessitates a specific partition key.
 
-![The image shows the AWS DynamoDB console with a list of items in a table, displaying details like ID, category, inventory, name, onSale status, and price.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858793/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-SDK-Part2-Demo/aws-dynamodb-console-table-items.jpg)
+![The image shows the AWS DynamoDB console with a list of items in a table, displaying details like ID, category, inventory, name, onSale status, and price.](https://kodekloud.com/kk-media/image/upload/v1752858793/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-SDK-Part2-Demo/aws-dynamodb-console-table-items.jpg)
 
 > **lightbulb** A scan operation retrieves all items from the table. However, it is less efficient than a query and consumes more read capacity.
 
@@ -188,7 +188,7 @@ You can test this endpoint using Postman or another API testing tool by sending 
 
 A successful request returns a 201 status code and adds the new product to your DynamoDB table.
 
-![The image shows a Postman interface with a POST request to "localhost:3000/products" and a JSON body being edited. There's a small illustration of a character with a rocket in the response section.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858795/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-SDK-Part2-Demo/postman-post-request-json-rocket.jpg)
+![The image shows a Postman interface with a POST request to "localhost:3000/products" and a JSON body being edited. There's a small illustration of a character with a rocket in the response section.](https://kodekloud.com/kk-media/image/upload/v1752858795/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-SDK-Part2-Demo/postman-post-request-json-rocket.jpg)
 
 ***
 
@@ -322,7 +322,7 @@ app.get("/products", async (req, res) => {
 
 When called without a query parameter, the endpoint returns all products. With a query parameter (e.g., `?category=electronics`), it efficiently returns only the products within that category using the GSI.
 
-![The image shows the AWS DynamoDB console with a query interface for a table named "products," filtering items where the category is "electronics."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858796/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-SDK-Part2-Demo/aws-dynamodb-query-products-electronics.jpg)
+![The image shows the AWS DynamoDB console with a query interface for a table named "products," filtering items where the category is "electronics."](https://kodekloud.com/kk-media/image/upload/v1752858796/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-SDK-Part2-Demo/aws-dynamodb-query-products-electronics.jpg)
 
 ***
 

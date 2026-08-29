@@ -6,7 +6,7 @@ This guide explains how AWS Resource Access Manager enables secure sharing of AW
 
 In this guide, you’ll learn how AWS Resource Access Manager (AWS RAM) enables secure, scalable sharing of AWS resources across accounts and within AWS Organizations. By centralizing resource-sharing configurations, AWS RAM reduces operational overhead and enforces consistent access controls in multi-account environments.
 
-![The image is a flowchart illustrating the process of sharing resources with AWS Resource Access Manager (RAM), including steps to select resources, specify principals, and share resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862978/notes-assets/images/AWS-IAM-AWS-Resource-Access-Manager/aws-ram-resource-sharing-flowchart.jpg)
+![The image is a flowchart illustrating the process of sharing resources with AWS Resource Access Manager (RAM), including steps to select resources, specify principals, and share resources.](https://kodekloud.com/kk-media/image/upload/v1752862978/notes-assets/images/AWS-IAM-AWS-Resource-Access-Manager/aws-ram-resource-sharing-flowchart.jpg)
 
 ## Key Steps for Sharing Resources with AWS RAM
 

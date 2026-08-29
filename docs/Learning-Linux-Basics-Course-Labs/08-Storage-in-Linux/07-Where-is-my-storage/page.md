@@ -8,9 +8,7 @@ July 9th, 9 a.m. – Five Days Before the Demo
 
 Bob is hard at work preparing for an upcoming client demonstration. His final task is to migrate a Django project from his laptop to the development servers. However, while attempting to download a large file into his home directory via the shell, he encounters the error "no space on device." Running the df command reveals that his home directory is 95% full, despite the total mounted filesystems amounting to only about 50 gigabytes. This is particularly puzzling given that his laptop is advertised to have a 128-gigabyte SSD.
 
-<Callout icon="lightbulb">
-  When disk space discrepancies occur, consider checking for reserved system space and hidden files that might be consuming storage.
-</Callout>
+> **lightbulb** When disk space discrepancies occur, consider checking for reserved system space and hidden files that might be consuming storage.
 
 "Where is the rest of the storage?" Bob wonders. To get to the bottom of the issue, he decides to consult with Dave. After grabbing a much-needed coffee, Bob heads to the cafeteria.
 
@@ -32,9 +30,7 @@ Bob then says, "I think either of you can help me understand a storage problem I
 
 Just then, Dave glances at his mobile and says, "Sorry, Bob, I have to join an escalation call in five minutes. In fact, I need to leave right now." He adds, "Mohan, do you mind taking a look at Bob’s question? He’s a learning machine!" With a laugh, Dave continues, "And if you have some time, perhaps you could arrange a storage session with him."
 
-<Callout icon="lightbulb">
-  Mohan reassures Dave, "No problem. I’m free pretty much every day this week. Just find a suitable slot and send me a meeting invite."
-</Callout>
+> **lightbulb** Mohan reassures Dave, "No problem. I’m free pretty much every day this week. Just find a suitable slot and send me a meeting invite."
 
 Bob beams, "That would be great. Thank you both!"
 
@@ -66,6 +62,4 @@ With determination, Bob proceeds to meet Mohan in the adjacent room, ready to di
 
 For more insights into troubleshooting storage issues and optimizing development workflows, explore related guides and our [technical documentation](https://example.com/docs).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/e0021af2-9983-4bde-97a2-29255d3ea1da/lesson/afb817a0-c2a7-4c4c-847a-8d6915737d04" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/e0021af2-9983-4bde-97a2-29255d3ea1da/lesson/afb817a0-c2a7-4c4c-847a-8d6915737d04)

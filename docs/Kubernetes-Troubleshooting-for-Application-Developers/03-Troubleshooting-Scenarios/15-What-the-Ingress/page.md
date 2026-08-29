@@ -26,9 +26,7 @@ techy    ●    1/1    Running  0         10.244.192.1  node01  4m27s
 useless  ●    1/1    Running  0         10.244.192.3  node01  4m27s
 ```
 
-<Frame>
-  ![The image shows a terminal interface displaying Kubernetes services with details like name, type, cluster IP, ports, and age. The interface includes commands and shortcuts for managing the services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880446/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-What-the-Ingress/kubernetes-services-terminal-interface.jpg)
-</Frame>
+![The image shows a terminal interface displaying Kubernetes services with details like name, type, cluster IP, ports, and age. The interface includes commands and shortcuts for managing the services.](https://kodekloud.com/kk-media/image/upload/v1752880446/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-What-the-Ingress/kubernetes-services-terminal-interface.jpg)
 
 All services are hosted behind an Ingress controller. The Ingress resource routes incoming requests based on the URL path. For instance, requests to `/techy` are directed to the Techie service—similarly for the Kanye and Useless services. This configuration utilizes the Nginx Ingress Controller.
 
@@ -176,9 +174,7 @@ controlplane ~ ➜ curl -v 10.109.243.168/kanye
 * Connection #0 to host 10.109.243.168 left intact
 ```
 
-<Callout icon="lightbulb">
-  The Ingress Controller logs indicate that the requests are reaching the controller, but the backend services return a 404 because they are not configured to handle the prefixed path.
-</Callout>
+> **lightbulb** The Ingress Controller logs indicate that the requests are reaching the controller, but the backend services return a 404 because they are not configured to handle the prefixed path.
 
 ## Diagnosing the Issue with Port-Forwarding
 

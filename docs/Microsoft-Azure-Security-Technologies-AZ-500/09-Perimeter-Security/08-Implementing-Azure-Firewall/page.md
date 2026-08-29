@@ -10,9 +10,7 @@ Azure Firewall requires a dedicated subnet, known as the Azure Firewall Subnet. 
 
 Below is a diagram illustrating this architecture:
 
-<Frame>
-  ![The image illustrates an Azure Firewall implementation, showing a central virtual network (VNet) with an Azure Firewall Subnet connected to spoke networks A and B, managing internet traffic with rules and threat intelligence. Traffic is allowed or denied based on these rules, and there is connectivity to on-premises systems.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882180/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implementing-Azure-Firewall/azure-firewall-implementation-diagram.jpg)
-</Frame>
+![The image illustrates an Azure Firewall implementation, showing a central virtual network (VNet) with an Azure Firewall Subnet connected to spoke networks A and B, managing internet traffic with rules and threat intelligence. Traffic is allowed or denied based on these rules, and there is connectivity to on-premises systems.](https://kodekloud.com/kk-media/image/upload/v1752882180/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implementing-Azure-Firewall/azure-firewall-implementation-diagram.jpg)
 
 ## Overview of Deployment Steps
 
@@ -27,9 +25,7 @@ In this article, we will:
 
 Let's start by deploying Azure Firewall through the Azure Portal.
 
-<Callout icon="lightbulb">
-  Ensure that you have the necessary privileges and a valid subscription before beginning the deployment process.
-</Callout>
+> **lightbulb** Ensure that you have the necessary privileges and a valid subscription before beginning the deployment process.
 
 ## Deploying Azure Firewall in the Azure Portal
 
@@ -47,15 +43,11 @@ Next, assign a public IP address (for example, **pipfw**) to the firewall. For t
 
 The following image shows the Azure Portal screen for creating a firewall with options such as subscription, resource group, name, region, and availability zones:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a firewall, with options to configure project and instance details such as subscription, resource group, name, region, and availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882181/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implementing-Azure-Firewall/azure-portal-firewall-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a firewall, with options to configure project and instance details such as subscription, resource group, name, region, and availability zone.](https://kodekloud.com/kk-media/image/upload/v1752882181/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implementing-Azure-Firewall/azure-portal-firewall-creation.jpg)
 
 After configuring the firewall, you will be prompted to create a firewall policy containing your DNAT, network, and application rules. Review the image below for an example of the firewall policy setup:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a new firewall, with a pop-up window for setting a new firewall policy, including options for policy name, region, and policy tier.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882182/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implementing-Azure-Firewall/azure-portal-firewall-policy-setup.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a new firewall, with a pop-up window for setting a new firewall policy, including options for policy name, region, and policy tier.](https://kodekloud.com/kk-media/image/upload/v1752882182/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implementing-Azure-Firewall/azure-portal-firewall-policy-setup.jpg)
 
 When configuring the virtual network details for the firewall, use the following settings:
 
@@ -64,9 +56,7 @@ When configuring the virtual network details for the firewall, use the following
 
 After assigning the public IP address (pipfw) and completing the settings, the portal displays a configuration summary similar to the one below:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a firewall, with options to configure firewall policy, virtual network, address space, and subnet settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882183/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implementing-Azure-Firewall/azure-portal-firewall-configuration.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a firewall, with options to configure firewall policy, virtual network, address space, and subnet settings.](https://kodekloud.com/kk-media/image/upload/v1752882183/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implementing-Azure-Firewall/azure-portal-firewall-configuration.jpg)
 
 ## Deploying Spoke Virtual Networks
 
@@ -102,15 +92,11 @@ PS C:\Users\RithinSkaria\Documents\kodekloud-az560\070~Perimeter Security>
 
 After the script completes, both the firewall and the Linux virtual machines will be deployed. The following image displays the deployment progress in the Azure Portal:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying the deployment progress of an Azure Firewall, with details about resources like firewall, policy, public IP address, and virtual network. The deployment status indicates that the firewall is created, and other resources are marked as OK.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882184/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implementing-Azure-Firewall/azure-firewall-deployment-progress.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying the deployment progress of an Azure Firewall, with details about resources like firewall, policy, public IP address, and virtual network. The deployment status indicates that the firewall is created, and other resources are marked as OK.](https://kodekloud.com/kk-media/image/upload/v1752882184/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implementing-Azure-Firewall/azure-firewall-deployment-progress.jpg)
 
 Next, inspect the firewall resource within the Azure Portal. You'll notice that the firewall is managed through a firewall policy. Clicking on this policy reveals defined rules, including DNAT, network, and application rules. Review the central firewall overview in the image below:
 
-<Frame>
-  ![The image shows the Microsoft Azure portal displaying the overview of a firewall named "central-fw," including its settings, policies, and rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882185/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implementing-Azure-Firewall/azure-portal-central-fw-overview.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal displaying the overview of a firewall named "central-fw," including its settings, policies, and rules.](https://kodekloud.com/kk-media/image/upload/v1752882185/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implementing-Azure-Firewall/azure-portal-central-fw-overview.jpg)
 
 ## Establishing VNet Peering
 
@@ -125,27 +111,19 @@ Assuming that Spoke A and Spoke B have been deployed using the script, follow th
 
 The next image demonstrates how to configure VNet peering:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for adding virtual network peering, with options to configure the peering link name, deployment model, subscription, and virtual network. Notifications about adding virtual network peering are visible on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882186/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implementing-Azure-Firewall/azure-portal-virtual-network-peering.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for adding virtual network peering, with options to configure the peering link name, deployment model, subscription, and virtual network. Notifications about adding virtual network peering are visible on the right.](https://kodekloud.com/kk-media/image/upload/v1752882186/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implementing-Azure-Firewall/azure-portal-virtual-network-peering.jpg)
 
-<Callout icon="triangle-alert">
-  Gateway transit is typically not required unless routing traffic through a VPN gateway to on-premises networks. In this configuration, it is enabled for demonstration purposes only.
-</Callout>
+> **triangle-alert** Gateway transit is typically not required unless routing traffic through a VPN gateway to on-premises networks. In this configuration, it is enabled for demonstration purposes only.
 
 After configuring peering, verify the connection by checking the peering sections in each spoke network. The image below shows the successful addition of VNet peerings for Spoke B:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying the "Peerings" section for a virtual network named "spoke-b." Notifications indicate successful addition of virtual network peerings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882187/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implementing-Azure-Firewall/azure-portal-peerings-spoke-b.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying the "Peerings" section for a virtual network named "spoke-b." Notifications indicate successful addition of virtual network peerings.](https://kodekloud.com/kk-media/image/upload/v1752882187/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implementing-Azure-Firewall/azure-portal-peerings-spoke-b.jpg)
 
 ## Finalizing the Deployment
 
 At this stage, all components of the architecture have been deployed. Note that traffic is not yet routed through the firewall. In upcoming lessons, we will configure User Defined Routes (UDRs) and refine the hub-spoke topology to direct traffic appropriately through the Azure Firewall. The following diagram illustrates the complete setup, including connectivity to on-premises systems—which will be addressed in detail later:
 
-<Frame>
-  ![The image illustrates an Azure Firewall implementation, showing a central virtual network (VNet) with an Azure Firewall Subnet connected to spoke networks and the internet, highlighting traffic rules and connectivity to on-premises systems.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882189/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implementing-Azure-Firewall/azure-firewall-implementation-diagram-2.jpg)
-</Frame>
+![The image illustrates an Azure Firewall implementation, showing a central virtual network (VNet) with an Azure Firewall Subnet connected to spoke networks and the internet, highlighting traffic rules and connectivity to on-premises systems.](https://kodekloud.com/kk-media/image/upload/v1752882189/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implementing-Azure-Firewall/azure-firewall-implementation-diagram-2.jpg)
 
 ## Summary
 
@@ -161,6 +139,4 @@ While the deployment is now complete, further configuration (such as setting up 
 
 This concludes the discussion on implementing Azure Firewall.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/cb10a3ae-53f4-4588-ad61-042af34f31ab/lesson/dc90f641-1111-4b86-bbfc-d55bc4235a8f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/cb10a3ae-53f4-4588-ad61-042af34f31ab/lesson/dc90f641-1111-4b86-bbfc-d55bc4235a8f)

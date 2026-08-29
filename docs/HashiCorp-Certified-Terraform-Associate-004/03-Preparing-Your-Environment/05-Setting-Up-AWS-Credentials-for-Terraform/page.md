@@ -36,9 +36,7 @@ Examples and notes
 * Azure: Run `az login` for interactive work. For CI/CD, create a service principal and export `ARM_CLIENT_ID`, `ARM_CLIENT_SECRET`, `ARM_SUBSCRIPTION_ID`, and `ARM_TENANT_ID`.
 * GitHub: Create a PAT with the minimum scopes required (for example, `repo` and `workflow`) and export it as `GITHUB_TOKEN` for use by the GitHub Terraform provider.
 
-<Callout icon="lightbulb">
-  When possible, prefer using CLI tools (for example `aws`, `az`) to authenticate locally and use environment variables or credential files for automation. This avoids hard-coding secrets in your Terraform configuration.
-</Callout>
+> **lightbulb** When possible, prefer using CLI tools (for example `aws`, `az`) to authenticate locally and use environment variables or credential files for automation. This avoids hard-coding secrets in your Terraform configuration.
 
 ## Basic Terraform workflow checks
 
@@ -79,9 +77,7 @@ Quick verification checklist
 | `terraform validate` | Static validation of configs              | No errors reported                                   |
 | `terraform plan`     | Shows proposed changes                    | Plan output lists resources to create/update/destroy |
 
-<Callout icon="warning">
-  Never commit provider credentials, personal access tokens, or other secrets to version control. Use environment variables, CLI-authenticated sessions, or a secrets manager for automation.
-</Callout>
+> **warning** Never commit provider credentials, personal access tokens, or other secrets to version control. Use environment variables, CLI-authenticated sessions, or a secrets manager for automation.
 
 ## Wrapping up
 
@@ -103,9 +99,7 @@ You're now ready to start the lab exercises. Begin by installing Terraform on yo
 * Azure CLI authentication: [https://learn.microsoft.com/cli/azure/authenticate-azure-cli](https://learn.microsoft.com/cli/azure/authenticate-azure-cli)
 * GitHub PATs: [https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/df5b5815-c1ea-45f5-ba18-7a5c53ded28a/lesson/c15b7a1b-a0b7-40ab-982a-d1a3c660b57f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/df5b5815-c1ea-45f5-ba18-7a5c53ded28a/lesson/c15b7a1b-a0b7-40ab-982a-d1a3c660b57f)
 
 
 # Setting Up AWS Credentials for Terraform
@@ -213,9 +207,7 @@ resource "aws_subnet" "workloads" {
 }
 ```
 
-<Callout icon="lightbulb">
-  By default the empty `provider "aws" {}` block lets Terraform pick up credentials and the region from environment variables or the AWS shared credentials file. To set a region explicitly, add `region = "us-east-1"` inside the provider block (or configure `required_providers` if your Terraform workflow requires it).
-</Callout>
+> **lightbulb** By default the empty `provider "aws" {}` block lets Terraform pick up credentials and the region from environment variables or the AWS shared credentials file. To set a region explicitly, add `region = "us-east-1"` inside the provider block (or configure `required_providers` if your Terraform workflow requires it).
 
 7. Configure AWS credentials for Terraform
 
@@ -253,9 +245,7 @@ Security best practices
 * Prefer short-lived credentials or managed profiles when possible.
 * Rotate or delete access keys when they are no longer required.
 
-<Callout icon="warning">
-  After you finish using these credentials, delete the access key in the IAM console (or rotate it). Treat access keys like passwords and follow the principle of least privilege.
-</Callout>
+> **warning** After you finish using these credentials, delete the access key in the IAM console (or rotate it). Treat access keys like passwords and follow the principle of least privilege.
 
 Links and references
 
@@ -265,6 +255,4 @@ Links and references
 
 This completes the setup for creating an IAM user and configuring AWS credentials for Terraform. Use `export` on macOS/Linux, `$Env:` for Windows PowerShell, or the AWS CLI `aws configure` command for persistent credentials.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/df5b5815-c1ea-45f5-ba18-7a5c53ded28a/lesson/885c3bca-859c-4ac9-8836-ecb3e10c9a70" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/df5b5815-c1ea-45f5-ba18-7a5c53ded28a/lesson/885c3bca-859c-4ac9-8836-ecb3e10c9a70)

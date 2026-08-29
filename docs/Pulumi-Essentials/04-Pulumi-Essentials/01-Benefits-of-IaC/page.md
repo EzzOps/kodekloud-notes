@@ -6,9 +6,7 @@ Infrastructure as Code automates and streamlines cloud management, enhancing dep
 
 Infrastructure as Code (IaC) brings transformative advantages to modern cloud deployments by automating and streamlining the management of infrastructure components. By defining infrastructure in code, you not only enhance deployment speed and repeatability but also improve overall system manageability. Below are the key benefits of using an IaC tool.
 
-<Callout icon="lightbulb">
-  Using an IaC tool, such as [Pulumi Essentials](https://learn.kodekloud.com/user/courses/pulumi-essentials) or similar solutions, you simplify the process of provisioning and maintaining your cloud resources.
-</Callout>
+> **lightbulb** Using an IaC tool, such as [Pulumi Essentials](https://learn.kodekloud.com/user/courses/pulumi-essentials) or similar solutions, you simplify the process of provisioning and maintaining your cloud resources.
 
 ## Defining Your Infrastructure with Code
 
@@ -48,6 +46,4 @@ By centralizing provisioning, configuration, and version control, Infrastructure
 
 For more insights into cloud deployments and best practices in infrastructure management, explore related resources in our documentation and recommended blogs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pulumi-essentials/module/883d8d6f-c8be-44af-ac4d-ba0835d32f5d/lesson/b255659c-0fbb-4e55-800c-52c042e5935a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pulumi-essentials/module/883d8d6f-c8be-44af-ac4d-ba0835d32f5d/lesson/b255659c-0fbb-4e55-800c-52c042e5935a)

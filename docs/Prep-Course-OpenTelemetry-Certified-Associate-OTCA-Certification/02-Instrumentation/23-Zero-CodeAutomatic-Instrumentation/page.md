@@ -95,9 +95,7 @@ OpenTelemetry Python zero-code instrumentation (auto-instrumentation) provides i
 
 These steps let you quickly capture telemetry (traces and metrics) across web, HTTP client, DB, and messaging layers with minimal operational overhead.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/712825de-6ca0-4b88-8032-9a1f628f5560" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/712825de-6ca0-4b88-8032-9a1f628f5560)
 
 
 # Zero CodeAutomatic Instrumentation

@@ -15,13 +15,9 @@ To secure your system, you can introduce a firewall that filters incoming and ou
 
 Imagine a server with two network interfaces—one wireless and one wired. You might assign the wireless interface to a restrictive zone called "Drop" (which blocks all incoming connections) and the wired interface to a zone called "Trusted" (where all connections are accepted due to the trusted nature of office network traffic).
 
-<Frame>
-  ![The image is a diagram illustrating a firewall setup with two zones: "trusted" and "Drop," connected to a computer labeled "FirewallD Computer B."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883585/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Implement-packet-filtering/firewall-setup-trusted-drop-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating a firewall setup with two zones: "trusted" and "Drop," connected to a computer labeled "FirewallD Computer B."](https://kodekloud.com/kk-media/image/upload/v1752883585/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Implement-packet-filtering/firewall-setup-trusted-drop-diagram.jpg)
 
-<Callout icon="lightbulb">
-  By default, the active zone in many systems is "public." In the public zone, every incoming connection is blocked unless explicitly allowed. This setup helps protect the system against unsolicited access.
-</Callout>
+> **lightbulb** By default, the active zone in many systems is "public." In the public zone, every incoming connection is blocked unless explicitly allowed. This setup helps protect the system against unsolicited access.
 
 To check which zone is currently set as default, use these commands:
 
@@ -70,9 +66,7 @@ $ sudo firewall-cmd --add-port=80/tcp
 success
 ```
 
-<Callout icon="triangle-alert">
-  Choose one method for configuring your rules—either by service name or direct port specification—to avoid conflicts. After adding a new rule, verify your FirewallD configuration to ensure the rule was applied successfully.
-</Callout>
+> **triangle-alert** Choose one method for configuring your rules—either by service name or direct port specification—to avoid conflicts. After adding a new rule, verify your FirewallD configuration to ensure the rule was applied successfully.
 
 To remove an allowed service, you can either remove it by name or by specifying the port number. In the public zone, the default policy is to deny all incoming connections unless explicitly permitted through a service or port rule.
 
@@ -80,9 +74,7 @@ To remove an allowed service, you can either remove it by name or by specifying 
 
 You can also filter traffic based on its source. Instead of solely considering incoming ports, you can restrict traffic based on its origin. For example, you might allow traffic from a specific network range if it adheres to a trusted policy.
 
-<Frame>
-  ![The image shows a dark-themed interface for implementing packet filtering, with a command input area on the left and a "Trusted zone" IP range (10.11.12.0 to 10.11.12.255) on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883586/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Implement-packet-filtering/packet-filtering-interface-dark-theme.jpg)
-</Frame>
+![The image shows a dark-themed interface for implementing packet filtering, with a command input area on the left and a "Trusted zone" IP range (10.11.12.0 to 10.11.12.255) on the right.](https://kodekloud.com/kk-media/image/upload/v1752883586/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Implement-packet-filtering/packet-filtering-interface-dark-theme.jpg)
 
 To configure a trusted zone for IP addresses in the 10.11.12.0/24 range, use the following command:
 
@@ -128,6 +120,4 @@ For further reading, check out the following resources:
 
 Happy filtering!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5f16da06-6c71-4058-bfc5-6f4dd8754e9f/lesson/11d431e1-813c-43c0-a118-0b2f5a7ddc2d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5f16da06-6c71-4058-bfc5-6f4dd8754e9f/lesson/11d431e1-813c-43c0-a118-0b2f5a7ddc2d)

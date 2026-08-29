@@ -6,17 +6,13 @@ This guide demonstrates isolating Terraform state across workspaces and configur
 
 In this guide, we’ll demonstrate how to isolate Terraform state across multiple Terraform Cloud workspaces and configure run triggers to automate downstream applies. Workspace boundaries reduce risk and help teams maintain clear separation between services.
 
-<Frame>
-  ![The image shows a KodeKloud lab interface for Terraform Cloud, featuring a task description on the left and a Visual Studio Code editor on the right with instructions for using the terminal.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878694/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-State-Isolation-and-Run-Triggers/kodekloud-terraform-cloud-lab-interface.jpg)
-</Frame>
+![The image shows a KodeKloud lab interface for Terraform Cloud, featuring a task description on the left and a Visual Studio Code editor on the right with instructions for using the terminal.](https://kodekloud.com/kk-media/image/upload/v1752878694/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-State-Isolation-and-Run-Triggers/kodekloud-terraform-cloud-lab-interface.jpg)
 
 ## 1. Workspace Isolation
 
 Terraform Cloud workspaces each manage their own state, ensuring changes in one environment don’t affect another. In our example, **HashiCat** and **Clumsy Bird** are deployed in separate workspaces.
 
-<Frame>
-  ![The image shows a Terraform Cloud interface displaying a list of workspaces with their names, run statuses, repositories, and latest change timestamps. All workspaces have a status of "Applied."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878695/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-State-Isolation-and-Run-Triggers/terraform-cloud-workspaces-applied-status.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface displaying a list of workspaces with their names, run statuses, repositories, and latest change timestamps. All workspaces have a status of "Applied."](https://kodekloud.com/kk-media/image/upload/v1752878695/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-State-Isolation-and-Run-Triggers/terraform-cloud-workspaces-applied-status.jpg)
 
 ### 1.1 Sharing Outputs with `tfe_outputs`
 
@@ -73,9 +69,7 @@ Token for app.terraform.io:
 > [YOUR_TOKEN]
 ```
 
-<Frame>
-  ![The image shows a dialog box for creating an API token, with a field for entering a description labeled "State Isolat."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878695/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-State-Isolation-and-Run-Triggers/api-token-creation-dialog-state-isolat.jpg)
-</Frame>
+![The image shows a dialog box for creating an API token, with a field for entering a description labeled "State Isolat."](https://kodekloud.com/kk-media/image/upload/v1752878695/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-State-Isolation-and-Run-Triggers/api-token-creation-dialog-state-isolat.jpg)
 
 Clone the sample repository and run the setup script:
 
@@ -94,17 +88,11 @@ Allow downstream workspaces to read the state of an upstream workspace by enabli
 3. Toggle **Remote State Sharing** on.
 4. Specify which workspaces (e.g., HashiCat) can access the state.
 
-<Frame>
-  ![The image shows the general settings page of a Terraform Cloud workspace named "devops-aws-myapp-dev," with details like ID, name, and description. The sidebar includes options like Locking, Notifications, and Version Control.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878696/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-State-Isolation-and-Run-Triggers/terraform-cloud-workspace-settings-devops.jpg)
-</Frame>
+![The image shows the general settings page of a Terraform Cloud workspace named "devops-aws-myapp-dev," with details like ID, name, and description. The sidebar includes options like Locking, Notifications, and Version Control.](https://kodekloud.com/kk-media/image/upload/v1752878696/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-State-Isolation-and-Run-Triggers/terraform-cloud-workspace-settings-devops.jpg)
 
-<Frame>
-  ![The image shows a Terraform Cloud workspace settings page with options for remote state sharing and user interface preferences. The sidebar includes various settings categories like General, Locking, and Notifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878698/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-State-Isolation-and-Run-Triggers/terraform-cloud-workspace-settings-sidebar.jpg)
-</Frame>
+![The image shows a Terraform Cloud workspace settings page with options for remote state sharing and user interface preferences. The sidebar includes various settings categories like General, Locking, and Notifications.](https://kodekloud.com/kk-media/image/upload/v1752878698/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-State-Isolation-and-Run-Triggers/terraform-cloud-workspace-settings-sidebar.jpg)
 
-<Callout icon="lightbulb">
-  Only workspaces with **Remote State Sharing** enabled can be referenced by `tfe_outputs`. Ensure you have the right permissions before sharing state.
-</Callout>
+> **lightbulb** Only workspaces with **Remote State Sharing** enabled can be referenced by `tfe_outputs`. Ensure you have the right permissions before sharing state.
 
 ## 4. Configuring Run Triggers
 
@@ -126,9 +114,7 @@ Follow these steps to see run triggers in action:
 1. **Update a Variable in Clumsy Bird**\
    Modify any environment variable (e.g., `environment = "development-hashiCat2"`).
 
-<Frame>
-  ![The image shows a Terraform Cloud interface where a user is adding a variable with the key "environment" and the value "development" in the Variables section of a workspace.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878700/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-State-Isolation-and-Run-Triggers/terraform-cloud-adding-variable-development.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface where a user is adding a variable with the key "environment" and the value "development" in the Variables section of a workspace.](https://kodekloud.com/kk-media/image/upload/v1752878700/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-State-Isolation-and-Run-Triggers/terraform-cloud-adding-variable-development.jpg)
 
 2. **Start a New Run Manually**\
    Trigger the change in Clumsy Bird.
@@ -139,23 +125,17 @@ Follow these steps to see run triggers in action:
    terraform apply
    ```
 
-<Frame>
-  ![The image shows a dialog box titled "Start a new run" in a software interface, with options to enter a reason for starting the run and to choose the run type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878700/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-State-Isolation-and-Run-Triggers/start-new-run-dialog-box-options.jpg)
-</Frame>
+![The image shows a dialog box titled "Start a new run" in a software interface, with options to enter a reason for starting the run and to choose the run type.](https://kodekloud.com/kk-media/image/upload/v1752878700/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-State-Isolation-and-Run-Triggers/start-new-run-dialog-box-options.jpg)
 
 3. **Observe the Triggered Plan in HashiCat**\
    After Clumsy Bird applies, HashiCat will queue a run automatically. Check the **Runs** tab for a trigger entry.
 
-<Frame>
-  ![The image shows a Terraform Cloud interface with a run triggered for the workspace "devops-aws-myapp-dev." It displays the run details, including configuration, trigger, execution mode, and status updates like "Plan finished" and "Cost estimation finished."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878702/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-State-Isolation-and-Run-Triggers/terraform-cloud-devops-aws-run-details.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface with a run triggered for the workspace "devops-aws-myapp-dev." It displays the run details, including configuration, trigger, execution mode, and status updates like "Plan finished" and "Cost estimation finished."](https://kodekloud.com/kk-media/image/upload/v1752878702/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-State-Isolation-and-Run-Triggers/terraform-cloud-devops-aws-run-details.jpg)
 
 4. **Approve and Review Outputs**\
    Approve the plan in HashiCat. You’ll now see the Clumsy Bird URL retrieved from the other workspace.
 
-<Frame>
-  ![The image shows a Terraform Cloud interface displaying the outputs of a recent run, including IP addresses and URLs for different resources. It also includes workspace details and metrics on the right side.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878703/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-State-Isolation-and-Run-Triggers/terraform-cloud-outputs-workspace-metrics.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface displaying the outputs of a recent run, including IP addresses and URLs for different resources. It also includes workspace details and metrics on the right side.](https://kodekloud.com/kk-media/image/upload/v1752878703/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-State-Isolation-and-Run-Triggers/terraform-cloud-outputs-workspace-metrics.jpg)
 
 ***
 
@@ -168,6 +148,4 @@ By isolating state and chaining workspaces with run triggers, you can build modu
 * [Remote State Sharing](https://www.terraform.io/docs/cloud/workspaces/remote-state-sharing.html)
 * [Terraform Login Command](https://developer.hashicorp.com/terraform/cli/commands/login)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/f7d08e72-e35f-436f-8d42-d0d7364d2532/lesson/cbf61dd2-905d-4550-a2df-e53625e47e12" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/f7d08e72-e35f-436f-8d42-d0d7364d2532/lesson/cbf61dd2-905d-4550-a2df-e53625e47e12)

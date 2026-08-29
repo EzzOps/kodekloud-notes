@@ -34,10 +34,8 @@ spec:
           cartsdbaccess: "true"
 ```
 
-<Callout icon="lightbulb">
-  • The `podSelector` under the `spec` targets the Cards DB pod (with the label `name: carts-db`).\
+> **lightbulb** • The `podSelector` under the `spec` targets the Cards DB pod (with the label `name: carts-db`).\
   • The `ingress` rule allows inbound traffic only from pods labeled with `cartsdbaccess: "true"`.
-</Callout>
 
 ***
 
@@ -87,9 +85,7 @@ deployment.apps/carts created
 
 After applying the deployment, verify that the Cards pod is running and includes the necessary label for DB access:
 
-<Frame>
-  ![The image shows a Red Hat OpenShift console displaying details of a running pod named "carts-6945f489b-l2k78" in the default namespace. The pod's status is running, with a restart policy set to always restart.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882719/notes-assets/images/OpenShift-4-Demo-Network-Policies/openshift-console-pod-details-running.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift console displaying details of a running pod named "carts-6945f489b-l2k78" in the default namespace. The pod's status is running, with a restart policy set to always restart.](https://kodekloud.com/kk-media/image/upload/v1752882719/notes-assets/images/OpenShift-4-Demo-Network-Policies/openshift-console-pod-details-running.jpg)
 
 ### 2. Apply the Network Policy
 
@@ -102,13 +98,9 @@ networkpolicy.networking.k8s.io/access-cartsdb created
 
 After this, navigate to the networking section in the OpenShift portal. You will see the network policy active with the defined pod selectors and ingress rules:
 
-<Frame>
-  ![The image shows a Red Hat OpenShift console displaying network policy details, including ingress rules for a project named "default." It specifies target pods and their selectors, with a warning that the local cluster is for development and testing purposes only.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882720/notes-assets/images/OpenShift-4-Demo-Network-Policies/openshift-network-policy-default-console.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift console displaying network policy details, including ingress rules for a project named "default." It specifies target pods and their selectors, with a warning that the local cluster is for development and testing purposes only.](https://kodekloud.com/kk-media/image/upload/v1752882720/notes-assets/images/OpenShift-4-Demo-Network-Policies/openshift-network-policy-default-console.jpg)
 
-<Callout icon="lightbulb">
-  With this configuration, only pods with the label `cartsdbaccess: "true"` are permitted to send traffic to the Cards DB pods, ensuring controlled and secure communication within your Kubernetes cluster.
-</Callout>
+> **lightbulb** With this configuration, only pods with the label `cartsdbaccess: "true"` are permitted to send traffic to the Cards DB pods, ensuring controlled and secure communication within your Kubernetes cluster.
 
 ***
 
@@ -128,6 +120,4 @@ This lesson demonstrates how network policies combined with proper pod labeling 
 * [Kubernetes Networking](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 * [OpenShift Documentation](https://docs.openshift.com/container-platform/latest/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/c2549792-918f-45f1-909a-398695a2c83a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/c2549792-918f-45f1-909a-398695a2c83a)

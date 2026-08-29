@@ -26,7 +26,7 @@ A Service SAS grants delegated access to specific resources within a storage acc
 
 Account SAS tokens provide access to the entire storage account—including blob containers, queues, tables, and file shares—and are useful when multiple teams need concurrent access to different storage components.
 
-![The image illustrates three types of Shared Access Signatures (SAS): User Delegation SAS, Service SAS, and Account SAS, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866665/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Shared-Access-Signatures-SAS/shared-access-signatures-types-icons.jpg)
+![The image illustrates three types of Shared Access Signatures (SAS): User Delegation SAS, Service SAS, and Account SAS, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752866665/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Shared-Access-Signatures-SAS/shared-access-signatures-types-icons.jpg)
 
 ***
 
@@ -40,7 +40,7 @@ Account SAS tokens provide access to the entire storage account—including blob
 
 > **lightbulb** Ensure that your SAS token usage aligns with your overall security policies to maintain secure data access.
 
-![The image lists best practices for using Shared Access Signatures, including using HTTPS, setting minimal expiration times, and applying minimum-required privileges. It also notes that SAS isn't always the correct solution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866666/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Shared-Access-Signatures-SAS/shared-access-signatures-best-practices.jpg)
+![The image lists best practices for using Shared Access Signatures, including using HTTPS, setting minimal expiration times, and applying minimum-required privileges. It also notes that SAS isn't always the correct solution.](https://kodekloud.com/kk-media/image/upload/v1752866666/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Shared-Access-Signatures-SAS/shared-access-signatures-best-practices.jpg)
 
 ***
 
@@ -53,7 +53,7 @@ A typical SAS URL is composed of the following components:
 * **Blob or Object Name:** e.g., a JPEG file
 * **SAS Token Parameters:** Includes permissions, start and expiry times, API version, storage type, and a cryptographic signature
 
-![The image explains the components of a Shared Access Signature (SAS) URL for accessing data, detailing parameters like access rights, start and end times, API version, storage type, and cryptographic signature.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866668/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Shared-Access-Signatures-SAS/shared-access-signature-url-components.jpg)
+![The image explains the components of a Shared Access Signature (SAS) URL for accessing data, detailing parameters like access rights, start and end times, API version, storage type, and cryptographic signature.](https://kodekloud.com/kk-media/image/upload/v1752866668/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Shared-Access-Signatures-SAS/shared-access-signature-url-components.jpg)
 
 For example:
 
@@ -76,7 +76,7 @@ You can generate SAS tokens using the Azure portal before implementing them with
 
 > **triangle-alert** If you rotate the signing key, any previously generated SAS tokens will be revoked.
 
-![The image shows a Microsoft Azure portal interface for configuring a Shared Access Signature (SAS) for a storage account, with options for setting permissions, allowed services, and expiration dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866669/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Shared-Access-Signatures-SAS/azure-portal-sas-configuration.jpg)
+![The image shows a Microsoft Azure portal interface for configuring a Shared Access Signature (SAS) for a storage account, with options for setting permissions, allowed services, and expiration dates.](https://kodekloud.com/kk-media/image/upload/v1752866669/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Shared-Access-Signatures-SAS/azure-portal-sas-configuration.jpg)
 
 After generating the SAS token, append it to your resource URL. Without a valid SAS token, trying to access a private container might return an error similar to:
 
@@ -89,7 +89,7 @@ After generating the SAS token, append it to your resource URL. Without a valid 
 
 Once the SAS token is appended, your access to the resource is granted.
 
-![The image shows a Microsoft Azure portal interface displaying details of a JSON file named "airports.json" within a storage container. It includes properties like URL, size, content type, and encryption status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866670/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Shared-Access-Signatures-SAS/azure-portal-airports-json-details.jpg)
+![The image shows a Microsoft Azure portal interface displaying details of a JSON file named "airports.json" within a storage container. It includes properties like URL, size, content type, and encryption status.](https://kodekloud.com/kk-media/image/upload/v1752866670/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Shared-Access-Signatures-SAS/azure-portal-airports-json-details.jpg)
 
 ***
 

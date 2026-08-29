@@ -132,9 +132,7 @@ You can also inspect pods and other resources in `health-check-app-2` to confirm
 * Kubernetes kubectl: [https://kubernetes.io/docs/reference/kubectl/](https://kubernetes.io/docs/reference/kubectl/)
 * Argo CD CLI reference: [https://argo-cd.readthedocs.io/en/stable/cli\_commands/](https://argo-cd.readthedocs.io/en/stable/cli_commands/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/66cc159d-1eb9-4813-bcdf-14e816d61efe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/66cc159d-1eb9-4813-bcdf-14e816d61efe)
 
 
 # Demo Reconciliation Timeout

@@ -8,7 +8,7 @@ In AWS architectures, NAT gateways play a crucial role in providing secure outbo
 
 Consider a scenario where a server in a private subnet requires access to the internet for security patches. An initial thought might be to attach an internet gateway to the VPC, update the route table, and convert the subnet into a public one. However, this change would expose the server to unwanted inbound traffic. Instead, a NAT gateway ensures that the server can initiate outbound connections while keeping it shielded from direct internet access.
 
-![The image is a diagram illustrating a NAT Gateway setup within a VPC, showing the connection between public and private subnets and the internet. It includes route tables and indicates data flow through the gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859191/notes-assets/images/AWS-Certified-Developer-Associate-NAT-Gateway/nat-gateway-vpc-diagram.jpg)
+![The image is a diagram illustrating a NAT Gateway setup within a VPC, showing the connection between public and private subnets and the internet. It includes route tables and indicates data flow through the gateway.](https://kodekloud.com/kk-media/image/upload/v1752859191/notes-assets/images/AWS-Certified-Developer-Associate-NAT-Gateway/nat-gateway-vpc-diagram.jpg)
 
 ## How NAT Gateway Works
 
@@ -20,7 +20,7 @@ To deploy a NAT gateway, follow these steps:
 
 The routing configuration is straightforward. The private subnet's route table includes a default route that directs traffic to the NAT gateway. When a server in the private subnet initiates a connection, the packet is forwarded to the NAT gateway in the public subnet, which then routes it through the Internet Gateway to reach its destination. This method ensures that the server, lacking a public IP, remains inaccessible to inbound internet connections.
 
-![The image is an AWS diagram illustrating a NAT Gateway, with a note that charges are applied per hour and per GB of data processed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859192/notes-assets/images/AWS-Certified-Developer-Associate-NAT-Gateway/aws-nat-gateway-diagram-charges.jpg)
+![The image is an AWS diagram illustrating a NAT Gateway, with a note that charges are applied per hour and per GB of data processed.](https://kodekloud.com/kk-media/image/upload/v1752859192/notes-assets/images/AWS-Certified-Developer-Associate-NAT-Gateway/aws-nat-gateway-diagram-charges.jpg)
 
 > **lightbulb** NAT gateways are not stand-alone solutions. They require the presence of an Internet Gateway to facilitate internet access.
 
@@ -30,7 +30,7 @@ NAT gateways are a managed AWS service. Once deployed along with the necessary r
 
 Another important consideration is availability. Unlike Internet Gateways, NAT gateways are tied to a specific availability zone through their subnet. If an availability zone fails, the associated NAT gateway will become unavailable. To enhance redundancy, it is recommended to deploy NAT gateways across multiple availability zones with the appropriate routing configuration.
 
-![The image is a diagram illustrating a NAT Gateway setup within a default VPC, showing four availability zones, each with a NAT Gateway and a route to 0.0.0.0/0.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859193/notes-assets/images/AWS-Certified-Developer-Associate-NAT-Gateway/nat-gateway-default-vpc-diagram.jpg)
+![The image is a diagram illustrating a NAT Gateway setup within a default VPC, showing four availability zones, each with a NAT Gateway and a route to 0.0.0.0/0.](https://kodekloud.com/kk-media/image/upload/v1752859193/notes-assets/images/AWS-Certified-Developer-Associate-NAT-Gateway/nat-gateway-default-vpc-diagram.jpg)
 
 ## Summary of NAT Gateway Features
 
@@ -38,10 +38,10 @@ NAT gateways enable secure outbound internet access for private subnets by allow
 
 The private subnet's route table should include a default route that directs traffic to the NAT gateway in the public subnet. Once set up, AWS ensures that the NAT gateway scales based on traffic demands while handling all underlying maintenance.
 
-![The image is a summary slide about NAT Gateways, highlighting their role in allowing subnets to access the internet, deployment on public subnets, use of Elastic IPs, and the need for one gateway per availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859194/notes-assets/images/AWS-Certified-Developer-Associate-NAT-Gateway/nat-gateways-summary-slide.jpg)
+![The image is a summary slide about NAT Gateways, highlighting their role in allowing subnets to access the internet, deployment on public subnets, use of Elastic IPs, and the need for one gateway per availability zone.](https://kodekloud.com/kk-media/image/upload/v1752859194/notes-assets/images/AWS-Certified-Developer-Associate-NAT-Gateway/nat-gateways-summary-slide.jpg)
 
 Finally, remember that while NAT gateways efficiently manage outbound connectivity and are charged per hour and per gigabyte of data processed, they also require careful deployment planning to maintain high availability and redundancy.
 
-![The image is a summary slide with points about NAT Gateway, including routing for private subnets, AWS management, and charging details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859195/notes-assets/images/AWS-Certified-Developer-Associate-NAT-Gateway/nat-gateway-summary-routing-aws.jpg)
+![The image is a summary slide with points about NAT Gateway, including routing for private subnets, AWS management, and charging details.](https://kodekloud.com/kk-media/image/upload/v1752859195/notes-assets/images/AWS-Certified-Developer-Associate-NAT-Gateway/nat-gateway-summary-routing-aws.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/c8f3ca76-9178-474e-a33b-bf1de4fd948c/lesson/52366421-3019-4714-9838-98f81719b051)

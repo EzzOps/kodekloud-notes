@@ -99,9 +99,7 @@ controlplane 130m         933Mi           0%
 node01       82m          1553Mi          1%
 ```
 
-<Callout icon="lightbulb">
-  Ensure you have the metrics server installed in your cluster for the kubectl top command to return accurate data.
-</Callout>
+> **lightbulb** Ensure you have the metrics server installed in your cluster for the kubectl top command to return accurate data.
 
 ## How kubectl top Works
 
@@ -122,6 +120,4 @@ For more Kubernetes insights, check out [Kubernetes Documentation](https://kuber
 
 Happy monitoring!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/4e8dc3ab-6162-409c-941a-35683d19abba" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/4e8dc3ab-6162-409c-941a-35683d19abba)

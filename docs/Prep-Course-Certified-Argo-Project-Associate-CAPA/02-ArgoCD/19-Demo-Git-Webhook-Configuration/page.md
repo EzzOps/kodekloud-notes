@@ -247,9 +247,7 @@ spec:
     app.kubernetes.io/name: random-shapes-chart
 ```
 
-<Callout icon="warning">
-  Updating a ConfigMap consumed by a Deployment (via envFrom) does not automatically restart running pods. To make pods pick up the new environment variables, perform a rollout restart on the Deployment, or use Argo CD reconciliation policies to trigger pod replacement.
-</Callout>
+> **warning** Updating a ConfigMap consumed by a Deployment (via envFrom) does not automatically restart running pods. To make pods pick up the new environment variables, perform a rollout restart on the Deployment, or use Argo CD reconciliation policies to trigger pod replacement.
 
 Example command to restart the deployment so new pods pick up updated ConfigMap values:
 
@@ -281,9 +279,7 @@ If the same key is present in both `values` (or `valuesObject`) and `parameters`
 
 ***
 
-<Callout icon="lightbulb">
-  Precedence summary: when multiple Helm override mechanisms are used, Argo CD applies them in a defined order — last overrides win. Use the precedence table below to decide where to place your overrides.
-</Callout>
+> **lightbulb** Precedence summary: when multiple Helm override mechanisms are used, Argo CD applies them in a defined order — last overrides win. Use the precedence table below to decide where to place your overrides.
 
 ## Helm values precedence (Argo CD ordering)
 
@@ -376,9 +372,7 @@ When using a Git repo as `repoURL`, `targetRevision` is a Git revision (branch/t
 
 This walkthrough covered deploying a Helm chart with Argo CD, how to update Helm values via UI or manifests, and how Argo CD determines which override mechanism wins during templating.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/be3c419c-89f4-4201-bde8-f015fe1ced7b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/be3c419c-89f4-4201-bde8-f015fe1ced7b)
 
 
 # Demo Git Webhook Configuration
@@ -398,9 +392,7 @@ Key topics covered:
 * Running Argo CD in insecure mode for testing
 * Validating the webhook workflow in the Argo CD UI
 
-<Callout icon="lightbulb">
-  This guide assumes you have Argo CD installed and an application configured to track your Git repository. For Argo CD installation and basic app creation, see the official Argo CD docs: [Argo CD Documentation](https://argo-cd.readthedocs.io/).
-</Callout>
+> **lightbulb** This guide assumes you have Argo CD installed and an application configured to track your Git repository. For Argo CD installation and basic app creation, see the official Argo CD docs: [Argo CD Documentation](https://argo-cd.readthedocs.io/).
 
 Webhook endpoint format
 
@@ -518,9 +510,7 @@ argocd-repo-server-6577b8fd64-bxvbq             1/1     Running   0          22m
 argocd-server-648fc5d9df-x29st                  1/1     Running   2          23s
 ```
 
-<Callout icon="warning">
-  Enabling server.insecure: "true" disables TLS on the Argo CD server and allows webhook delivery over plain HTTP. This is strictly for demo or test environments. For production, always provision TLS certificates from a trusted CA or configure your Git provider to trust your certificate authority.
-</Callout>
+> **warning** Enabling server.insecure: "true" disables TLS on the Argo CD server and allows webhook delivery over plain HTTP. This is strictly for demo or test environments. For production, always provision TLS certificates from a trusted CA or configure your Git provider to trust your certificate authority.
 
 Switch webhook URL to HTTP (if using insecure server)
 
@@ -585,8 +575,6 @@ Further reading and references
 
 That completes the Git webhook configuration workflow for Argo CD.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/352bff5b-5b25-457a-9692-1aef5d98f0e8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/352bff5b-5b25-457a-9692-1aef5d98f0e8)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/31bc5140-91a3-45a9-a4be-931ed7988e53" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/31bc5140-91a3-45a9-a4be-931ed7988e53)

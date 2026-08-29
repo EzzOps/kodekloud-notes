@@ -6,9 +6,7 @@ This guide explores the structure and roles within machine learning teams, focus
 
 Welcome to this comprehensive guide on building machine learning (ML) teams. In this lesson, we explore how ML engineering teams are structured and the specific contributions made by various roles. We cover everything from the formation of the team to the deployment challenges that arise when transitioning from development to production.
 
-<Frame>
-  ![The image shows an agenda with three points: formation of an ML engineering team, key contributors to an ML team, and understanding the structure of an ML unit.](../../../../images/kodekloud.com/kk-media/image/upload/v1752875111/notes-assets/images/Fundamentals-of-MLOps-Getting-Started-with-Machine-Learning-Team/ml-engineering-agenda-points.jpg)
-</Frame>
+![The image shows an agenda with three points: formation of an ML engineering team, key contributors to an ML team, and understanding the structure of an ML unit.](https://kodekloud.com/kk-media/image/upload/v1752875111/notes-assets/images/Fundamentals-of-MLOps-Getting-Started-with-Machine-Learning-Team/ml-engineering-agenda-points.jpg)
 
 ## The Role of the Product Management Team
 
@@ -18,17 +16,11 @@ The product management team plays a vital role in identifying business use cases
 2. **Setting Business Goals:** For example, the team might aim for a revenue increase of 5 million dollars from improved product rankings.
 3. **Establishing Milestones and Metrics:** Clear milestones help determine if the ML model is progressing as intended. These benchmarks are essential; if the project strays from its goals, the strategy can be revisited.
 
-<Callout icon="lightbulb">
-  Milestones and measurement criteria are critical. They offer guidance on whether to adjust the project strategy if expected outcomes are not meeting business goals.
-</Callout>
+> **lightbulb** Milestones and measurement criteria are critical. They offer guidance on whether to adjust the project strategy if expected outcomes are not meeting business goals.
 
-<Frame>
-  ![The image outlines the role of a product team in ML engineering, highlighting steps like identifying use cases, setting business goals, and establishing milestones and metrics, alongside an illustration of a computer screen displaying clothing items.](../../../../images/kodekloud.com/kk-media/image/upload/v1752875112/notes-assets/images/Fundamentals-of-MLOps-Getting-Started-with-Machine-Learning-Team/product-team-ml-engineering-roles.jpg)
-</Frame>
+![The image outlines the role of a product team in ML engineering, highlighting steps like identifying use cases, setting business goals, and establishing milestones and metrics, alongside an illustration of a computer screen displaying clothing items.](https://kodekloud.com/kk-media/image/upload/v1752875112/notes-assets/images/Fundamentals-of-MLOps-Getting-Started-with-Machine-Learning-Team/product-team-ml-engineering-roles.jpg)
 
-<Frame>
-  ![The image is a flowchart titled "ML Engineering – Role of the Product Team," outlining steps for setting milestones, measuring criteria, and determining if machine learning is suitable, leading to either reassessing the approach or continuing with the ML model.](../../../../images/kodekloud.com/kk-media/image/upload/v1752875113/notes-assets/images/Fundamentals-of-MLOps-Getting-Started-with-Machine-Learning-Team/ml-engineering-product-team-flowchart.jpg)
-</Frame>
+![The image is a flowchart titled "ML Engineering – Role of the Product Team," outlining steps for setting milestones, measuring criteria, and determining if machine learning is suitable, leading to either reassessing the approach or continuing with the ML model.](https://kodekloud.com/kk-media/image/upload/v1752875113/notes-assets/images/Fundamentals-of-MLOps-Getting-Started-with-Machine-Learning-Team/ml-engineering-product-team-flowchart.jpg)
 
 ## The Role of the Data Science Team
 
@@ -37,9 +29,7 @@ After the product team defines the business use case, the data science team take
 * **Assessing Data Availability:** They first verify if the necessary data is available for model building.
 * **Model Selection and Design:** If data exists, they proceed to choose and design the appropriate ML model. If not, they initiate strategies to acquire or generate the required data.
 
-<Frame>
-  ![The image illustrates the role of a data science team in ML engineering, focusing on understanding business use cases and determining product display priorities. It features a computer screen with various clothing items and a prompt about product display order.](../../../../images/kodekloud.com/kk-media/image/upload/v1752875114/notes-assets/images/Fundamentals-of-MLOps-Getting-Started-with-Machine-Learning-Team/data-science-team-ml-engineering.jpg)
-</Frame>
+![The image illustrates the role of a data science team in ML engineering, focusing on understanding business use cases and determining product display priorities. It features a computer screen with various clothing items and a prompt about product display order.](https://kodekloud.com/kk-media/image/upload/v1752875114/notes-assets/images/Fundamentals-of-MLOps-Getting-Started-with-Machine-Learning-Team/data-science-team-ml-engineering.jpg)
 
 ## The Role of the Data Engineering/Analyst Team
 
@@ -48,13 +38,9 @@ Once the model requirements have been laid out by the data science team, the dat
 * **Data Collection and Preparation:** Developing reliable ETL (Extract, Transform, Load) pipelines ensures a continuous flow of data into a data lakehouse.
 * **Real-Time Infrastructure Setup:** In production environments, they support real-time data processing to enable continuous monitoring of the ML model's performance.
 
-<Frame>
-  ![The image outlines the roles in ML Engineering, highlighting the Product Team, Data Science Team, and Data Analyst Team. Each role is represented with an icon and numbered from 1 to 3.](../../../../images/kodekloud.com/kk-media/image/upload/v1752875114/notes-assets/images/Fundamentals-of-MLOps-Getting-Started-with-Machine-Learning-Team/ml-engineering-roles-diagram.jpg)
-</Frame>
+![The image outlines the roles in ML Engineering, highlighting the Product Team, Data Science Team, and Data Analyst Team. Each role is represented with an icon and numbered from 1 to 3.](https://kodekloud.com/kk-media/image/upload/v1752875114/notes-assets/images/Fundamentals-of-MLOps-Getting-Started-with-Machine-Learning-Team/ml-engineering-roles-diagram.jpg)
 
-<Frame>
-  ![The image outlines the role of the data analyst team in ML engineering, highlighting steps like data collection, ETL pipelines, real-time training setup, and performance tracking of ML models.](../../../../images/kodekloud.com/kk-media/image/upload/v1752875115/notes-assets/images/Fundamentals-of-MLOps-Getting-Started-with-Machine-Learning-Team/data-analyst-role-ml-engineering.jpg)
-</Frame>
+![The image outlines the role of the data analyst team in ML engineering, highlighting steps like data collection, ETL pipelines, real-time training setup, and performance tracking of ML models.](https://kodekloud.com/kk-media/image/upload/v1752875115/notes-assets/images/Fundamentals-of-MLOps-Getting-Started-with-Machine-Learning-Team/data-analyst-role-ml-engineering.jpg)
 
 ## The Role of the DevOps (MLOps) Engineering Team
 
@@ -65,17 +51,11 @@ After the development of the ML model, several technical challenges must be addr
 * **Continuous Integration/Continuous Deployment (CI/CD):** Managing new versions through a robust CI/CD pipeline.
 * **Infrastructure Management:** Establishing model serving, maintaining registries, and monitoring system performance.
 
-<Callout icon="lightbulb">
-  Transitioning from a DevOps engineer to an MLOps engineer involves gaining specialized knowledge about ML infrastructure and lifecycle management, ensuring seamless integration of ML models into existing systems.
-</Callout>
+> **lightbulb** Transitioning from a DevOps engineer to an MLOps engineer involves gaining specialized knowledge about ML infrastructure and lifecycle management, ensuring seamless integration of ML models into existing systems.
 
-<Frame>
-  ![The image outlines various challenges related to the deployment and integration of machine learning models, such as deployment locations, API service calls, model maintenance, and infrastructure management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752875116/notes-assets/images/Fundamentals-of-MLOps-Getting-Started-with-Machine-Learning-Team/ml-model-deployment-challenges.jpg)
-</Frame>
+![The image outlines various challenges related to the deployment and integration of machine learning models, such as deployment locations, API service calls, model maintenance, and infrastructure management.](https://kodekloud.com/kk-media/image/upload/v1752875116/notes-assets/images/Fundamentals-of-MLOps-Getting-Started-with-Machine-Learning-Team/ml-model-deployment-challenges.jpg)
 
-<Frame>
-  ![The image illustrates the transition from a DevOps Engineer to an MLOps Engineer, highlighting tasks such as deploying ML models, setting up infrastructure, and building and maintaining ML models.](../../../../images/kodekloud.com/kk-media/image/upload/v1752875117/notes-assets/images/Fundamentals-of-MLOps-Getting-Started-with-Machine-Learning-Team/devops-to-mlops-transition-diagram.jpg)
-</Frame>
+![The image illustrates the transition from a DevOps Engineer to an MLOps Engineer, highlighting tasks such as deploying ML models, setting up infrastructure, and building and maintaining ML models.](https://kodekloud.com/kk-media/image/upload/v1752875117/notes-assets/images/Fundamentals-of-MLOps-Getting-Started-with-Machine-Learning-Team/devops-to-mlops-transition-diagram.jpg)
 
 ## Conclusion
 
@@ -91,6 +71,4 @@ For more detailed information on related topics, consider exploring the followin
 
 Thank you for reading!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/fundamentals-of-mlops/module/0e2e3177-bf87-467e-9063-e8e0f7e095df/lesson/f7b61f8f-41dd-4668-9b71-403f71c37fdc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/fundamentals-of-mlops/module/0e2e3177-bf87-467e-9063-e8e0f7e095df/lesson/f7b61f8f-41dd-4668-9b71-403f71c37fdc)

@@ -29,9 +29,7 @@ output "pub_ip" {
 }
 ```
 
-<Callout icon="lightbulb">
-  Output names must be unique within a module. Use descriptive names to make them easy to reference in other modules or scripts.
-</Callout>
+> **lightbulb** Output names must be unique within a module. Use descriptive names to make them easy to reference in other modules or scripts.
 
 ***
 
@@ -62,9 +60,7 @@ output "<NAME>" {
 | description | A short human-readable explanation.                      | No       |
 | sensitive   | Hides the value in CLI output when set to `true`.        | No       |
 
-<Callout icon="triangle-alert">
-  Mark any output containing secrets or credentials as `sensitive = true` to prevent leaking them in logs or console output.
-</Callout>
+> **triangle-alert** Mark any output containing secrets or credentials as `sensitive = true` to prevent leaking them in logs or console output.
 
 ***
 

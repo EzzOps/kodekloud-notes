@@ -6,9 +6,7 @@ This guide explores the comprehensive DevOps pipeline designed for the XYZ Team,
 
 In this guide, we explore the comprehensive DevOps pipeline designed for the XYZ Team. This pipeline integrates continuous integration (CI), continuous deployment (CD), continuous delivery, and post-build processes to ensure robust software development practices.
 
-<Frame>
-  ![The image is a flowchart illustrating a DevOps pipeline, detailing stages of continuous integration, deployment, and delivery, along with post-build processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879809/notes-assets/images/Jenkins-Pipelines-Understanding-XYZ-Team-DevOps-Pipeline-Requirement/devops-pipeline-flowchart-ci-cd.jpg)
-</Frame>
+![The image is a flowchart illustrating a DevOps pipeline, detailing stages of continuous integration, deployment, and delivery, along with post-build processes.](https://kodekloud.com/kk-media/image/upload/v1752879809/notes-assets/images/Jenkins-Pipelines-Understanding-XYZ-Team-DevOps-Pipeline-Requirement/devops-pipeline-flowchart-ci-cd.jpg)
 
 The pipeline is divided into clearly defined stages that work together to enforce code quality, security, and efficient delivery across different deployment environments. Below is a detailed overview of each stage.
 
@@ -44,9 +42,7 @@ Continuous Delivery employs GitOps principles to propagate changes smoothly:
 5. **Approval and AWS Lambda Deployment:** The merge triggers an additional pipeline that requires administrative approval. Once approved, the application is deployed to AWS Lambda with updated configurations such as environment variables and function URL settings.
 6. **Lambda Testing:** Finally, the deployed Lambda functions are tested through invocations to confirm responsive endpoints.
 
-<Callout icon="lightbulb">
-  This pipeline demonstrates integration with several deployment targets—AWS EC2, Kubernetes clusters, and AWS Lambda functions—even though not all are used simultaneously in production.
-</Callout>
+> **lightbulb** This pipeline demonstrates integration with several deployment targets—AWS EC2, Kubernetes clusters, and AWS Lambda functions—even though not all are used simultaneously in production.
 
 ## Post-Build Processes
 
@@ -56,9 +52,7 @@ The final phase of the pipeline involves post-build activities aimed at report g
 2. **Archiving Reports:** Store the reports in Jenkins and also archive them in an Amazon S3 bucket for historical analysis.
 3. **Slack Notifications:** Use Slack integration to send build status notifications to relevant channels.
 
-<Frame>
-  ![The image is a diagram illustrating a DevOps pipeline, detailing stages of continuous integration, deployment, delivery, and post-build processes. It includes steps like dependency checks, testing, deployment to AWS, and notifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879811/notes-assets/images/Jenkins-Pipelines-Understanding-XYZ-Team-DevOps-Pipeline-Requirement/devops-pipeline-diagram-continuous-integration.jpg)
-</Frame>
+![The image is a diagram illustrating a DevOps pipeline, detailing stages of continuous integration, deployment, delivery, and post-build processes. It includes steps like dependency checks, testing, deployment to AWS, and notifications.](https://kodekloud.com/kk-media/image/upload/v1752879811/notes-assets/images/Jenkins-Pipelines-Understanding-XYZ-Team-DevOps-Pipeline-Requirement/devops-pipeline-diagram-continuous-integration.jpg)
 
 ## Summary
 
@@ -68,6 +62,4 @@ Let's proceed to build and implement this pipeline to streamline our development
 
 Thank you.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/7e239b62-2dfd-4594-85cf-e51c0707121c/lesson/b7820d3f-1759-415a-8afd-e111ba6f7d03" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/7e239b62-2dfd-4594-85cf-e51c0707121c/lesson/b7820d3f-1759-415a-8afd-e111ba6f7d03)

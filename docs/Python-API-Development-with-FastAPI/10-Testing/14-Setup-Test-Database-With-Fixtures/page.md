@@ -6,9 +6,7 @@ This article explains how to set up a test database using fixtures and manage de
 
 In this lesson, we will learn how to set up a test database using fixtures and configure one fixture to depend on another. This approach enables you to create a fixture that returns a database session (or database object) and then pass that session fixture to another fixture that provides a configured TestClient. Dependency chaining like this simplifies database manipulation and client usage in your tests.
 
-<Callout icon="lightbulb">
-  Using fixture dependency helps separate concerns by allowing one fixture to manage the database session while another focuses on providing an HTTP client. This setup ensures that tests run against a freshly configured database, improving test reliability.
-</Callout>
+> **lightbulb** Using fixture dependency helps separate concerns by allowing one fixture to manage the database session while another focuses on providing an HTTP client. This setup ensures that tests run against a freshly configured database, improving test reliability.
 
 ***
 

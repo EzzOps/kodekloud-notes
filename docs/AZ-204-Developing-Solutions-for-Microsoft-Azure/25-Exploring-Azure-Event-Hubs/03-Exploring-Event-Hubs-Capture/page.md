@@ -14,7 +14,7 @@ By automating data ingestion, Event Hubs Capture simplifies the process of deali
 
 Event Hubs Capture enables you to configure specific time or size windows for data capture. Each partition in the Event Hub writes its data independently; at the end of each capture window, the accumulated data is written to storage as a blob. The blob naming convention reflects the exact time of capture, making it simple to track data processing intervals.
 
-![The image illustrates the features of Azure Event Hubs Capture, showing automatic streaming data capture into Azure Blob or Data Lake Storage, and enabling real-time and batch-based pipelines. It includes a flow from Event Hub partitions to Azure storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866502/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Event-Hubs-Capture/azure-event-hubs-capture-diagram.jpg)
+![The image illustrates the features of Azure Event Hubs Capture, showing automatic streaming data capture into Azure Blob or Data Lake Storage, and enabling real-time and batch-based pipelines. It includes a flow from Event Hub partitions to Azure storage.](https://kodekloud.com/kk-media/image/upload/v1752866502/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Event-Hubs-Capture/azure-event-hubs-capture-diagram.jpg)
 
 The diagram below outlines the capture window setup, highlighting three crucial points:
 
@@ -22,7 +22,7 @@ The diagram below outlines the capture window setup, highlighting three crucial 
 * Each partition captures data independently.
 * Blobs are created after each capture interval, with names indicating the precise capture time.
 
-![The image is a diagram titled "Capture Windowing" that outlines the "Event Hubs Capture Window Setup" with three points: controlling capturing using configurable windows, independent capture for each partition, and writing completed block blobs named after the capture interval's encounter time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866503/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Event-Hubs-Capture/capture-windowing-event-hubs-diagram.jpg)
+![The image is a diagram titled "Capture Windowing" that outlines the "Event Hubs Capture Window Setup" with three points: controlling capturing using configurable windows, independent capture for each partition, and writing completed block blobs named after the capture interval's encounter time.](https://kodekloud.com/kk-media/image/upload/v1752866503/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Event-Hubs-Capture/capture-windowing-event-hubs-diagram.jpg)
 
 ***
 
@@ -51,12 +51,12 @@ Now let's explore how to configure an Event Hub in the Azure Portal with Capture
    * Configure the cleanup policy as "Delete" with a retention period of one hour.
    * Enable Capture and specify your desired capture window settings (for example, a five-minute window, or a smaller size window such as 10 MB and one minute for demonstration).
 
-![The image shows a Microsoft Azure portal interface for creating an Event Hub, with fields for entering the hub name, partition count, and retention settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866505/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Event-Hubs-Capture/azure-portal-event-hub-creation.jpg)
+![The image shows a Microsoft Azure portal interface for creating an Event Hub, with fields for entering the hub name, partition count, and retention settings.](https://kodekloud.com/kk-media/image/upload/v1752866505/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Event-Hubs-Capture/azure-portal-event-hub-creation.jpg)
 
 3. **Configure Capture Settings**\
    In the Capture settings, click on "Select Container" to configure the storage account or ADLS container. You can modify the container name if necessary. The default blob naming format includes details such as namespace, Event Hub, partition ID, and a timestamp (year, month, day, hour, minute, and second). Choose your preferred authentication method; for this example, Shared Access Signatures (SAS) are used, though Managed Identities are also an option.
 
-![The image shows the "Capture" settings page for creating an Event Hub in Microsoft Azure. It includes options for enabling capture, setting time and size windows, and selecting a storage container.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866507/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Event-Hubs-Capture/azure-event-hub-capture-settings.jpg)
+![The image shows the "Capture" settings page for creating an Event Hub in Microsoft Azure. It includes options for enabling capture, setting time and size windows, and selecting a storage container.](https://kodekloud.com/kk-media/image/upload/v1752866507/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Event-Hubs-Capture/azure-event-hub-capture-settings.jpg)
 
 4. **Generate Events for Testing**\
    After creating the Event Hub, generate some events to test your configuration.
@@ -73,7 +73,7 @@ There are several methods to generate events. One option is to use the .NET SDK 
    * Provide a name for the log stream (e.g., "app logs EVH").
    * Select "Hub01" as the destination using the root managed shared access key.
 
-![The image shows a Microsoft Azure portal page for configuring diagnostic settings, where various log categories and destination details are selected for streaming to an event hub.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866508/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Event-Hubs-Capture/azure-portal-diagnostic-settings.jpg)
+![The image shows a Microsoft Azure portal page for configuring diagnostic settings, where various log categories and destination details are selected for streaming to an event hub.](https://kodekloud.com/kk-media/image/upload/v1752866508/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Event-Hubs-Capture/azure-portal-diagnostic-settings.jpg)
 
 2. **Save and Stream Logs**\
    Once saved, all App Service requests and audit logs are streamed to your Event Hub.
@@ -83,7 +83,7 @@ There are several methods to generate events. One option is to use the .NET SDK 
    * Navigate to the "View Events" section in the Event Hub's Data Explorer.
    * You will observe incoming events, including API requests and logs from your App Service.
 
-![The image shows the Microsoft Azure portal interface for an Event Hubs namespace, displaying details such as resource group, status, location, and subscription, along with graphs for requests, messages, and throughput over time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866512/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Event-Hubs-Capture/azure-portal-event-hubs-namespace.jpg)
+![The image shows the Microsoft Azure portal interface for an Event Hubs namespace, displaying details such as resource group, status, location, and subscription, along with graphs for requests, messages, and throughput over time.](https://kodekloud.com/kk-media/image/upload/v1752866512/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Event-Hubs-Capture/azure-portal-event-hubs-namespace.jpg)
 
 Below are sample events captured from the Flight Logs:
 
@@ -187,9 +187,9 @@ To verify that events are captured correctly, follow these steps:
 2. **Review the Capture Folders**\
    You will see folders generated based on the capture window configuration, typically named with timestamps. For example, you might see a folder labeled with a timestamp like "0-20-24, September 25th, four." Opening this folder will reveal an AVRO file containing your event records.
 
-![The image shows the Microsoft Azure Data Explorer interface, displaying event data from an Event Hub. It includes details like sequence numbers, partition IDs, and event bodies in JSON format.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866514/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Event-Hubs-Capture/azure-data-explorer-event-hub.jpg)
+![The image shows the Microsoft Azure Data Explorer interface, displaying event data from an Event Hub. It includes details like sequence numbers, partition IDs, and event bodies in JSON format.](https://kodekloud.com/kk-media/image/upload/v1752866514/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Event-Hubs-Capture/azure-data-explorer-event-hub.jpg)
 
-![The image shows the Microsoft Azure portal displaying a list of folders within a storage container named "eventhub." The interface includes options for managing the blobs, such as uploading, deleting, and changing access levels.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866516/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Event-Hubs-Capture/azure-portal-eventhub-storage-container.jpg)
+![The image shows the Microsoft Azure portal displaying a list of folders within a storage container named "eventhub." The interface includes options for managing the blobs, such as uploading, deleting, and changing access levels.](https://kodekloud.com/kk-media/image/upload/v1752866516/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Event-Hubs-Capture/azure-portal-eventhub-storage-container.jpg)
 
 > **triangle-alert** Remember, adjusting the capture window size will influence the number of files generated. A smaller window will result in more files, making it useful for demonstration purposes.
 

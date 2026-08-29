@@ -60,9 +60,7 @@ To test the Node.js installation, create a new Freestyle project in Jenkins. For
 1. In Jenkins, click on **New Item** and select **Freestyle project**.
 2. Name the project "npm-version-test" and click **OK**.
 
-<Frame>
-  ![The image shows a Jenkins interface for creating a new item, with options like Freestyle project, Pipeline, and Multi-configuration project. The item name "npm-version-test" is being entered.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879789/notes-assets/images/Jenkins-Pipelines-InstallSetup-NodeJS-Build-Tool/jenkins-new-item-npm-version-test.jpg)
-</Frame>
+![The image shows a Jenkins interface for creating a new item, with options like Freestyle project, Pipeline, and Multi-configuration project. The item name "npm-version-test" is being entered.](https://kodekloud.com/kk-media/image/upload/v1752879789/notes-assets/images/Jenkins-Pipelines-InstallSetup-NodeJS-Build-Tool/jenkins-new-item-npm-version-test.jpg)
 
 3. In the project configuration, add a build step of type **Execute shell** and enter the following commands:
 
@@ -73,9 +71,7 @@ To test the Node.js installation, create a new Freestyle project in Jenkins. For
 
 4. Save the configuration and trigger the build. A successful build will output the Node.js and npm versions as obtained from the host installation.
 
-<Frame>
-  ![The image shows a configuration screen for a Jenkins job, with options for source code management, build triggers, and build environment. The "Execute shell" section is open, displaying a command input field with "node" typed in.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879791/notes-assets/images/Jenkins-Pipelines-InstallSetup-NodeJS-Build-Tool/jenkins-job-configuration-screen.jpg)
-</Frame>
+![The image shows a configuration screen for a Jenkins job, with options for source code management, build triggers, and build environment. The "Execute shell" section is open, displaying a command input field with "node" typed in.](https://kodekloud.com/kk-media/image/upload/v1752879791/notes-assets/images/Jenkins-Pipelines-InstallSetup-NodeJS-Build-Tool/jenkins-job-configuration-screen.jpg)
 
 The build output should display:
 
@@ -100,9 +96,7 @@ To accommodate scenarios where the agent lacks Node.js, you can configure a dedi
 1. Navigate to **Manage Jenkins** → **Manage Plugins**.
 2. Under the **Available** tab, search for "NodeJS". Locate the NodeJS plugin (version 1.6.2 at the time of recording) and install it.
 
-<Frame>
-  ![The image shows the Jenkins plugin management interface, specifically the "Available plugins" section, with a search for "NodeJS" displaying the NodeJS plugin version 1.6.2.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879792/notes-assets/images/Jenkins-Pipelines-InstallSetup-NodeJS-Build-Tool/jenkins-plugin-management-nodejs-1-6-2.jpg)
-</Frame>
+![The image shows the Jenkins plugin management interface, specifically the "Available plugins" section, with a search for "NodeJS" displaying the NodeJS plugin version 1.6.2.](https://kodekloud.com/kk-media/image/upload/v1752879792/notes-assets/images/Jenkins-Pipelines-InstallSetup-NodeJS-Build-Tool/jenkins-plugin-management-nodejs-1-6-2.jpg)
 
 Be patient as Jenkins installs the plugin and reloads the plugin extension.
 
@@ -115,9 +109,7 @@ After installing the plugin, a new option for Node.js installations appears unde
 3. Select the installation method (typically "Install automatically" from Node.js.org) and leave the default settings intact.
 4. Save the configuration.
 
-<Frame>
-  ![The image shows a Jenkins configuration screen where different versions of NodeJS are being selected from a dropdown menu. The interface includes options to force 32-bit architecture and install global npm packages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879794/notes-assets/images/Jenkins-Pipelines-InstallSetup-NodeJS-Build-Tool/jenkins-nodejs-configuration-dropdown.jpg)
-</Frame>
+![The image shows a Jenkins configuration screen where different versions of NodeJS are being selected from a dropdown menu. The interface includes options to force 32-bit architecture and install global npm packages.](https://kodekloud.com/kk-media/image/upload/v1752879794/notes-assets/images/Jenkins-Pipelines-InstallSetup-NodeJS-Build-Tool/jenkins-nodejs-configuration-dropdown.jpg)
 
 ***
 
@@ -152,24 +144,16 @@ v22.6.0
 Finished: SUCCESS
 ```
 
-<Callout icon="lightbulb">
-  The first build used the host-installed Node.js (version 20.16.0), while the second build used the Jenkins-provided installation (version 22.6.0). This flexibility allows you to choose between using the system environment or a dedicated Node.js tool installation.
-</Callout>
+> **lightbulb** The first build used the host-installed Node.js (version 20.16.0), while the second build used the Jenkins-provided installation (version 22.6.0). This flexibility allows you to choose between using the system environment or a dedicated Node.js tool installation.
 
-<Frame>
-  ![The image shows a configuration screen for a build environment, likely in a CI/CD tool, with options for Node.js installation and build steps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879796/notes-assets/images/Jenkins-Pipelines-InstallSetup-NodeJS-Build-Tool/ci-cd-build-environment-nodejs.jpg)
-</Frame>
+![The image shows a configuration screen for a build environment, likely in a CI/CD tool, with options for Node.js installation and build steps.](https://kodekloud.com/kk-media/image/upload/v1752879796/notes-assets/images/Jenkins-Pipelines-InstallSetup-NodeJS-Build-Tool/ci-cd-build-environment-nodejs.jpg)
 
 Finally, monitor the Jenkins dashboard for build history and project status:
 
-<Frame>
-  ![The image shows a Jenkins dashboard for a project named "npm-version-test," displaying build status and history with options to build, configure, and manage the project.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879798/notes-assets/images/Jenkins-Pipelines-InstallSetup-NodeJS-Build-Tool/jenkins-dashboard-npm-version-test.jpg)
-</Frame>
+![The image shows a Jenkins dashboard for a project named "npm-version-test," displaying build status and history with options to build, configure, and manage the project.](https://kodekloud.com/kk-media/image/upload/v1752879798/notes-assets/images/Jenkins-Pipelines-InstallSetup-NodeJS-Build-Tool/jenkins-dashboard-npm-version-test.jpg)
 
 ***
 
 This lesson demonstrated how to verify that Node.js is installed on the Jenkins host and how to configure a dedicated Node.js installation using the Node.js plugin. This approach provides the flexibility needed in environments where the agent might not have Node.js pre-installed. Happy building!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/7e239b62-2dfd-4594-85cf-e51c0707121c/lesson/22ca3475-c387-4612-9d7b-3ab21e413be9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/7e239b62-2dfd-4594-85cf-e51c0707121c/lesson/22ca3475-c387-4612-9d7b-3ab21e413be9)

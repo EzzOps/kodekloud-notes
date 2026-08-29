@@ -20,7 +20,7 @@ CloudWatch collects and organizes data into different metric categories. Leverag
 | Custom      | User-defined via API or SDK             | Transaction counts, cache hit rates, API response times |
 | Usage       | AWS service quotas and usage statistics | Track service limits, forecast capacity, avoid overruns |
 
-![The image is a flowchart illustrating the types of metrics: "Published by AWS," "Custom Metrics," and "Usage Metrics," under the main category "Metrics."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862371/notes-assets/images/AWS-CloudWatch-Built-in-and-Custom-Metrics/aws-custom-usage-metrics-flowchart.jpg)
+![The image is a flowchart illustrating the types of metrics: "Published by AWS," "Custom Metrics," and "Usage Metrics," under the main category "Metrics."](https://kodekloud.com/kk-media/image/upload/v1752862371/notes-assets/images/AWS-CloudWatch-Built-in-and-Custom-Metrics/aws-custom-usage-metrics-flowchart.jpg)
 
 ### 1.1 Built-in Metrics
 
@@ -54,7 +54,7 @@ Usage metrics track how close you are to AWS service quotas (limits). These are 
 
 Let’s apply these metric types to an Amazon RDS instance running in a Virtual Private Cloud.
 
-![The image illustrates a diagram of AWS cloud infrastructure, focusing on a Virtual Private Cloud (VPC) with AWS RDS, and highlights built-in and custom metrics for monitoring, such as CPU utilization and average query execution time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862373/notes-assets/images/AWS-CloudWatch-Built-in-and-Custom-Metrics/aws-cloud-infrastructure-vpc-diagram.jpg)
+![The image illustrates a diagram of AWS cloud infrastructure, focusing on a Virtual Private Cloud (VPC) with AWS RDS, and highlights built-in and custom metrics for monitoring, such as CPU utilization and average query execution time.](https://kodekloud.com/kk-media/image/upload/v1752862373/notes-assets/images/AWS-CloudWatch-Built-in-and-Custom-Metrics/aws-cloud-infrastructure-vpc-diagram.jpg)
 
 ### 2.1 Built-in RDS Metrics
 

@@ -45,9 +45,7 @@ This lesson upgrades the WebApp API so it moves from silent creation to visible 
 
 Spec is an input: it declares what the user asked for. Status is observational: it reports what the controller has seen. Conditions attach structured names, statuses, and reasons to that observation so humans and other controllers can quickly assess health and progress.
 
-<Callout icon="lightbulb">
-  Treat `spec` as the desired state (user intent) and `status` as the controller's observed facts. Conditions are a concise, machine-readable summary of that observed state.
-</Callout>
+> **lightbulb** Treat `spec` as the desired state (user intent) and `status` as the controller's observed facts. Conditions are a concise, machine-readable summary of that observed state.
 
 Conditions let the controller communicate higher-level health states directly instead of forcing users to infer them from raw numbers. For a WebApp you might expose types such as Ready, Progressing, and Degraded with `True`/`False` statuses and machine-friendly `reason` and `message` fields. That creates a compact health report other tools can read without scraping logs.
 
@@ -89,6 +87,4 @@ Links and references
 * Kubernetes API conventions for `status` and `conditions`: [https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#typical-status-properties](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#typical-status-properties)
 * Best practices for kubectl and resource visibility: [https://kubernetes.io/docs/reference/kubectl/overview/](https://kubernetes.io/docs/reference/kubectl/overview/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/13e9b4c4-3ab5-46b8-90d8-13912cd3bdc4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/13e9b4c4-3ab5-46b8-90d8-13912cd3bdc4)

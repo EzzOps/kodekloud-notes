@@ -141,9 +141,7 @@ Containers:
 
 The `agentx` container is currently waiting due to an image pull error—`ErrImagePull` indicates that Kubernetes was unable to locate the `agentx` Docker image on Docker Hub. The `READY` column in the `kubectl get pods` output will reflect this status (e.g., `1/2` indicating that only one out of two containers is ready).
 
-<Callout icon="lightbulb">
-  When troubleshooting image pull errors, verifying the image name and tag is essential. Ensure the image exists on the container registry you are using.
-</Callout>
+> **lightbulb** When troubleshooting image pull errors, verifying the image name and tag is essential. Ensure the image exists on the container registry you are using.
 
 ──────────────────────────────
 
@@ -200,9 +198,7 @@ kubectl create -f Redis.yaml
 
 The pod will be created but will enter an error state due to the incorrect image name.
 
-<Callout icon="triangle-alert">
-  The pod will not run correctly until you update the image to a valid one. This step is crucial for ensuring the application runs as expected.
-</Callout>
+> **triangle-alert** The pod will not run correctly until you update the image to a valid one. This step is crucial for ensuring the application runs as expected.
 
 ──────────────────────────────
 
@@ -212,9 +208,7 @@ To resolve the error, update your YAML definition to use the correct image, `red
 
 The image below illustrates the process of updating the Redis pod’s image:
 
-<Frame>
-  ![A terminal interface with instructions to change a pod's image to "redis" and ensure it is in a running state.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884862/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Lab-Solution/frame_620.jpg)
-</Frame>
+![A terminal interface with instructions to change a pod's image to "redis" and ensure it is in a running state.](https://kodekloud.com/kk-media/image/upload/v1752884862/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Lab-Solution/frame_620.jpg)
 
 After editing, the YAML should be updated as follows:
 
@@ -281,6 +275,4 @@ In this lab solution, you learned how to:
 
 Thank you for following along, and happy Kubernetes learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/064c1be4-073a-45c4-8192-2d5b86cbda6e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/064c1be4-073a-45c4-8192-2d5b86cbda6e)

@@ -59,9 +59,7 @@ The updated console output now resembles:
 [INFO]  Application startup complete.
 ```
 
-<Callout icon="lightbulb">
-  If you need to filter out sensitive attributes (e.g., a user's password) before sending data to the client, consider modifying your endpoint responses to return only the required fields.
-</Callout>
+> **lightbulb** If you need to filter out sensitive attributes (e.g., a user's password) before sending data to the client, consider modifying your endpoint responses to return only the required fields.
 
 ## Defining the Response Schema with Pydantic
 
@@ -161,9 +159,7 @@ The API response will now include all defined fields:
 }
 ```
 
-<Callout icon="lightbulb">
-  If certain fields (such as `created_at`) should not be exposed, remove them from the response schema.
-</Callout>
+> **lightbulb** If certain fields (such as `created_at`) should not be exposed, remove them from the response schema.
 
 ### Leveraging Inheritance to Reduce Redundancy
 
@@ -291,6 +287,4 @@ By explicitly defining your response schema using Pydantic models and enabling O
 
 Implementing these practices in your FastAPI projects ensures cleaner, more maintainable code and enhances the overall developer and client experience.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/8f4f74a8-3020-4e94-b1d2-8f0376a10618" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/8f4f74a8-3020-4e94-b1d2-8f0376a10618)

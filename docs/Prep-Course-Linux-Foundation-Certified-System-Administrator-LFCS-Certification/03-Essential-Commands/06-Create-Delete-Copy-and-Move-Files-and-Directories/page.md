@@ -25,9 +25,7 @@ This article provided an overview of various techniques for compressing and unco
 
 For more detailed information on Linux file management and compression techniques, explore additional resources like [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) or visit [Linux Documentation](https://www.kernel.org/doc/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/848cb503-6cad-4059-8cbc-d81707a25c57" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/848cb503-6cad-4059-8cbc-d81707a25c57)
 
 
 # Create Delete Copy and Move Files and Directories
@@ -77,9 +75,7 @@ drwxr-xr-x  2 aaron aaron    2 Oct 19 00:11 Pictures
 -rw-rw-r--  1 aaron aaron   36 Oct 28 20:06 testfile
 ```
 
-<Callout icon="lightbulb">
-  Using combined options like `ls -ahl` makes it quicker to view comprehensive file information.
-</Callout>
+> **lightbulb** Using combined options like `ls -ahl` makes it quicker to view comprehensive file information.
 
 ## Understanding the File System Tree
 
@@ -93,9 +89,7 @@ Absolute paths start from the root directory (`/`) and specify the complete loca
 
 /home/aaron/Documents/Invoice.pdf
 
-<Frame>
-  ![The image shows a directory structure diagram illustrating an absolute path from the root directory to a file named "Invoice.pdf" located in "/home/aaron/Documents".](../../../../images/kodekloud.com/kk-media/image/upload/v1752881234/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-Delete-Copy-and-Move-Files-and-Directories/directory-structure-absolute-path-invoice.jpg)
-</Frame>
+![The image shows a directory structure diagram illustrating an absolute path from the root directory to a file named "Invoice.pdf" located in "/home/aaron/Documents".](https://kodekloud.com/kk-media/image/upload/v1752881234/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-Delete-Copy-and-Move-Files-and-Directories/directory-structure-absolute-path-invoice.jpg)
 
 ### Relative Paths
 
@@ -199,9 +193,7 @@ To copy an entire directory with its contents, use the `-r` (recursive) flag:
 $ cp -r Receipts/ BackupOfReceipts/
 ```
 
-<Callout icon="triangle-alert">
-  Ensure the destination directory (e.g., `BackupOfReceipts/`) does not already exist when using recursive copying, as behavior may vary across systems.
-</Callout>
+> **triangle-alert** Ensure the destination directory (e.g., `BackupOfReceipts/`) does not already exist when using recursive copying, as behavior may vary across systems.
 
 ## Moving and Renaming Files and Directories
 
@@ -241,12 +233,8 @@ To remove a directory and all its contents, apply the `-r` flag:
 $ rm -r invoices
 ```
 
-<Callout icon="triangle-alert">
-  Always double-check the command before running `rm -r` to avoid accidental deletion of important files or directories.
-</Callout>
+> **triangle-alert** Always double-check the command before running `rm -r` to avoid accidental deletion of important files or directories.
 
 With these commands and explanations, you are now equipped with a solid foundation for managing files and directories in Linux. For additional Linux command cheatsheets and best practices, consider exploring more guides and tutorials online.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/78b4843d-8f63-44e8-a2d7-9a02e20351af" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/78b4843d-8f63-44e8-a2d7-9a02e20351af)

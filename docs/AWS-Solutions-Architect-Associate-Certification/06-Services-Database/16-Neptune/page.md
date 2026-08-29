@@ -14,17 +14,17 @@ Amazon Neptune is a fully managed graph database service designed specifically f
 
 Neptune is engineered for global distribution. A single Neptune database can operate across multiple AWS regions, replicating data with minimal performance impact. The Neptune global database feature allows you to deploy a primary database in one AWS region while replicating data to up to five secondary read-only clusters in different regions.
 
-![The image illustrates the AWS Neptune Global Database architecture, showing a primary region and multiple secondary regions on a world map, along with a detailed diagram of primary and secondary database clusters in different US regions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865180/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Neptune/aws-neptune-global-database-architecture.jpg)
+![The image illustrates the AWS Neptune Global Database architecture, showing a primary region and multiple secondary regions on a world map, along with a detailed diagram of primary and secondary database clusters in different US regions.](https://kodekloud.com/kk-media/image/upload/v1752865180/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Neptune/aws-neptune-global-database-architecture.jpg)
 
 In addition, Neptune Serverless enables you to run graph workloads that automatically scale to meet demand without manual capacity management.
 
-![The image is a diagram explaining Amazon Neptune Serverless, highlighting its features like instant scaling, no capacity planning, and cost optimization, with applications in Amazon Sagemaker, AWS OpenSearch, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865181/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Neptune/amazon-neptune-serverless-diagram.jpg)
+![The image is a diagram explaining Amazon Neptune Serverless, highlighting its features like instant scaling, no capacity planning, and cost optimization, with applications in Amazon Sagemaker, AWS OpenSearch, and more.](https://kodekloud.com/kk-media/image/upload/v1752865181/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Neptune/amazon-neptune-serverless-diagram.jpg)
 
 With a serverless model, you pay only for the resources you use, ensuring cost efficiency for both high-demand and unpredictable applications.
 
 A standout feature of Neptune is Amazon Neptune ML. By leveraging graph neural networks (GNNs), Neptune ML offers faster and more accurate predictions—improving forecast accuracy by over 50% compared to traditional methods. This integration of machine learning directly into graph databases enables enhanced analytical capabilities.
 
-![The image is a graphic about Amazon Neptune's machine learning features, highlighting Graph Neural Networks (GNNs) and fast, accurate predictions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865182/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Neptune/amazon-neptune-ml-gnns-graphic.jpg)
+![The image is a graphic about Amazon Neptune's machine learning features, highlighting Graph Neural Networks (GNNs) and fast, accurate predictions.](https://kodekloud.com/kk-media/image/upload/v1752865182/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Neptune/amazon-neptune-ml-gnns-graphic.jpg)
 
 ## Key Features of AWS Neptune
 
@@ -34,14 +34,14 @@ A standout feature of Neptune is Amazon Neptune ML. By leveraging graph neural n
 2. **Integration with AWS Services:**\
    AWS Neptune easily integrates with various AWS services such as AWS Glue, SageMaker, Lambda, Amazon Athena, AWS Database Migration Service (DMS), and AWS Backup. This broad integration ecosystem enhances its utility for diverse application scenarios.
 
-![The image lists features of AWS Neptune, including serverless, high throughput, easy scaling, autoscaling storage, low-latency replicas, and open graph APIs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865183/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Neptune/aws-neptune-features-serverless-scaling.jpg)
+![The image lists features of AWS Neptune, including serverless, high throughput, easy scaling, autoscaling storage, low-latency replicas, and open graph APIs.](https://kodekloud.com/kk-media/image/upload/v1752865183/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Neptune/aws-neptune-features-serverless-scaling.jpg)
 
 3. **Diverse Use Cases:**\
    Neptune is commonly used for constructing identity graphs that provide a 360-degree view of customers, enabling targeted advertising, personalization, and comprehensive analytics. It is also effective in detecting fraud patterns. Furthermore, Neptune ML harnesses graph neural networks to enhance prediction accuracy and can detect and investigate IT infrastructure issues using layered security approaches.
 
-![The image shows AWS Neptune integrations with icons for AWS Glue, Amazon SageMaker, AWS Lambda, Amazon Athena, and AWS Database Migration Service (AWS DMS).](../../../../images/kodekloud.com/kk-media/image/upload/v1752865184/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Neptune/aws-neptune-integrations-icons.jpg)
+![The image shows AWS Neptune integrations with icons for AWS Glue, Amazon SageMaker, AWS Lambda, Amazon Athena, and AWS Database Migration Service (AWS DMS).](https://kodekloud.com/kk-media/image/upload/v1752865184/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Neptune/aws-neptune-integrations-icons.jpg)
 
-![The image shows three use cases for Neptune: "Personalization With Customer 360," "Detect Fraud Patterns," and "ML Predictions," each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865185/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Neptune/neptune-use-cases-personalization-fraud-ml.jpg)
+![The image shows three use cases for Neptune: "Personalization With Customer 360," "Detect Fraud Patterns," and "ML Predictions," each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752865185/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Neptune/neptune-use-cases-personalization-fraud-ml.jpg)
 
 > **lightbulb** Remember, designing graph databases enables your applications to naturally model real-world connections, offering a significant advantage over traditional databases when dealing with complex relationships.
 
@@ -53,9 +53,9 @@ Neptune supports multiple graph models, such as the Property Graph and W3C RDF, 
 
 Moreover, Neptune ML extends your analytical capabilities by integrating machine learning for advanced tasks such as node classification, link prediction, and entity resolution. This makes it an ideal solution for extracting deeper insights from interconnected data.
 
-![The image is a summary of Neptune, a graph database service, highlighting its features such as fast performance, full management, and support for graph models and query languages. It includes three main points about its capabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865188/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Neptune/neptune-graph-database-summary.jpg)
+![The image is a summary of Neptune, a graph database service, highlighting its features such as fast performance, full management, and support for graph models and query languages. It includes three main points about its capabilities.](https://kodekloud.com/kk-media/image/upload/v1752865188/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Neptune/neptune-graph-database-summary.jpg)
 
-![The image is a summary of Amazon Neptune, highlighting its ability to create global databases across AWS regions and its integration with machine learning for tasks like node classification and link prediction.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865189/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Neptune/amazon-neptune-global-databases-summary.jpg)
+![The image is a summary of Amazon Neptune, highlighting its ability to create global databases across AWS regions and its integration with machine learning for tasks like node classification and link prediction.](https://kodekloud.com/kk-media/image/upload/v1752865189/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Neptune/amazon-neptune-global-databases-summary.jpg)
 
 > **lightbulb** For more information on AWS Neptune, explore the [AWS Neptune Documentation](https://aws.amazon.com/neptune/). You may also find the [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) guide useful when considering how graph databases interact with containerized environments.
 

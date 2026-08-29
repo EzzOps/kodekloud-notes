@@ -181,10 +181,6 @@ When a GET request is made, the JSON response from the database could be:
 
 Integrating SQL within your Python code using FastAPI is straightforward once you understand the basic operations such as executing queries and fetching results. This lesson has illustrated how to establish a PostgreSQL database connection, retrieve posts with SQL queries, and expose common operations via FastAPI endpoints.
 
-<Callout icon="lightbulb">
-  Remember, in production environments, it is best to write changes directly to the database rather than relying on in-memory arrays.
-</Callout>
+> **lightbulb** Remember, in production environments, it is best to write changes directly to the database rather than relying on in-memory arrays.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/b3cf1457-19af-423a-8ab1-a4f70c3585b9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/b3cf1457-19af-423a-8ab1-a4f70c3585b9)

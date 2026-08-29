@@ -10,7 +10,7 @@ In this lesson, you will learn when and how to select an Azure Batch solution. A
 
 Azure Batch is ideal for High Performance Computing (HPC) workloads. In HPC scenarios, you typically have compute-intensive tasks that do not require deep management of the underlying infrastructure. Azure Batch simplifies job management by automatically scaling compute nodes and scheduling tasks.
 
-![The image is a guide on when to select an Azure Batch solution, featuring a decision flowchart and explanations for HPC scenarios, managing jobs, and installing applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866847/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Batch-solutions/azure-batch-decision-guide-flowchart.jpg)
+![The image is a guide on when to select an Azure Batch solution, featuring a decision flowchart and explanations for HPC scenarios, managing jobs, and installing applications.](https://kodekloud.com/kk-media/image/upload/v1752866847/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Batch-solutions/azure-batch-decision-guide-flowchart.jpg)
 
 Azure Batch is best suited for scenarios where you:
 
@@ -22,7 +22,7 @@ Azure Batch is best suited for scenarios where you:
 
 The diagram below illustrates the complete data processing workflow using Azure Batch. Imagine that you have an Azure Data Lake Storage account that holds your data (distinct from regular Azure Storage). A client uploads files—such as images or other data—to Azure Data Lake Storage. In parallel, code provisions the necessary compute resources and jobs. The process pulls data from storage, executes compute-intensive operations (like image processing or simulations), and then pushes the processed data back to storage for your client application to retrieve.
 
-![The image is a flowchart illustrating the working process of Azure Batch, showing data movement between Azure Data Lake Storage, Azure Batch, and client applications. It includes steps like uploading files, creating compute pools, processing tasks, and downloading output files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866848/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Batch-solutions/azure-batch-flowchart-data-movement.jpg)
+![The image is a flowchart illustrating the working process of Azure Batch, showing data movement between Azure Data Lake Storage, Azure Batch, and client applications. It includes steps like uploading files, creating compute pools, processing tasks, and downloading output files.](https://kodekloud.com/kk-media/image/upload/v1752866848/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Batch-solutions/azure-batch-flowchart-data-movement.jpg)
 
 Multiple SDKs, including Python and .NET, are available for Azure Batch, allowing you to choose the one that best fits your development needs.
 
@@ -122,7 +122,7 @@ az batch pool show --pool-id kpool --query "allocationState"
 
 Initially, the allocation state might show "resizing." Once all nodes are provisioned, the state will change to "steady." You can also verify the pool status via the Azure Portal.
 
-![The image shows a Microsoft Azure portal interface displaying details of a batch account named "kodekloudbatch." It includes information about resource groups, account status, and monitoring metrics like vCPU minutes and failed tasks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866849/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Batch-solutions/azure-portal-kodekloudbatch-details.jpg)
+![The image shows a Microsoft Azure portal interface displaying details of a batch account named "kodekloudbatch." It includes information about resource groups, account status, and monitoring metrics like vCPU minutes and failed tasks.](https://kodekloud.com/kk-media/image/upload/v1752866849/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Batch-solutions/azure-portal-kodekloudbatch-details.jpg)
 
 ***
 
@@ -173,7 +173,7 @@ This file should display the environment variables starting with AZ\_BATCH, veri
 
 Alternatively, you can check task details directly in the Azure Portal. Navigate to your job "kjob" under the "kodekloudbatch" account, then click on a completed task (such as task four) to view its output.
 
-![The image shows a Microsoft Azure portal interface displaying a list of completed tasks under a job named "kjob" in the "kodekloudbatchbatch" account. Each task is marked as completed with an exit code of 0.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866850/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Batch-solutions/azure-portal-kjob-tasks-completed.jpg)
+![The image shows a Microsoft Azure portal interface displaying a list of completed tasks under a job named "kjob" in the "kodekloudbatchbatch" account. Each task is marked as completed with an exit code of 0.](https://kodekloud.com/kk-media/image/upload/v1752866850/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Batch-solutions/azure-portal-kjob-tasks-completed.jpg)
 
 ***
 

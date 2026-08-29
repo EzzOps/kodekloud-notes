@@ -23,9 +23,7 @@ Verify CRDs are present:
 kubectl get crd | grep gateway
 ```
 
-<Callout icon="lightbulb">
-  Cilium requires either nodePort.enabled=true (Cilium NodePort implementation) or kubeProxyReplacement=true. This prerequisite is also required when enabling ingress support in Cilium. Pick one of these two options in your Helm values.
-</Callout>
+> **lightbulb** Cilium requires either nodePort.enabled=true (Cilium NodePort implementation) or kubeProxyReplacement=true. This prerequisite is also required when enabling ingress support in Cilium. Pick one of these two options in your Helm values.
 
 ## Enable Gateway API support in Cilium (Helm)
 
@@ -428,9 +426,7 @@ Seeing the correct JSON responses and the nginx default page confirms that the G
 * [Gateway API releases (experimental-install.yaml)](https://github.com/kubernetes-sigs/gateway-api/releases)
 * [Kubernetes Gateway API specification](https://gateway-api.sigs.k8s.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/39eb0c15-b8ab-45da-a9d9-47fa7bf81d9d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/39eb0c15-b8ab-45da-a9d9-47fa7bf81d9d)
 
 
 # Demo Cilium Ingress

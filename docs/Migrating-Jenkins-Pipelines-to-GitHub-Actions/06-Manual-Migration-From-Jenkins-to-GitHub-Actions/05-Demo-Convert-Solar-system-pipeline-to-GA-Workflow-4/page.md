@@ -187,9 +187,7 @@ jobs:
           path: test-results.xml
 ```
 
-<Callout icon="lightbulb">
-  The total number of parallel jobs equals the product of the lengths of each matrix axis. In the example above you will get 3 Node.js versions × 2 OS = 6 parallel jobs. Monitor concurrency and runner usage as matrices expand.
-</Callout>
+> **lightbulb** The total number of parallel jobs equals the product of the lengths of each matrix axis. In the example above you will get 3 Node.js versions × 2 OS = 6 parallel jobs. Monitor concurrency and runner usage as matrices expand.
 
 When this workflow runs, GitHub Actions creates a separate job for every combination (for example: Node.js 20 on `ubuntu-latest`, Node.js 20 on `macos-latest`, Node.js 21 on each OS, etc.). Each job runs independently and uploads its artifact using the unique name built from matrix variables.
 
@@ -235,9 +233,7 @@ Complete job name: unit-testing (22, macos-latest)
 * Ensure artifacts and other per-job outputs include matrix variables in their names to prevent collisions.
 * Be mindful of GitHub-hosted runner limits and costs—macOS runners are limited and costlier. Consider self-hosted runners for heavy parallelization.
 
-<Callout icon="warning">
-  Expanding matrix axes multiplies job count. Large matrices can quickly exhaust concurrency limits or increase billing. Test with a small matrix first and incrementally add axes.
-</Callout>
+> **warning** Expanding matrix axes multiplies job count. Large matrices can quickly exhaust concurrency limits or increase billing. Test with a small matrix first and incrementally add axes.
 
 ## Quick reference
 
@@ -253,8 +249,6 @@ Complete job name: unit-testing (22, macos-latest)
 * GitHub runner images: [https://github.com/actions/runner-images](https://github.com/actions/runner-images)
 * Jenkins documentation: [https://www.jenkins.io/doc/](https://www.jenkins.io/doc/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/f63e67f3-f04a-474f-87b9-ae17930e9e67/lesson/17b965f4-e923-4a08-8cc5-6c6af06e48ab" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/f63e67f3-f04a-474f-87b9-ae17930e9e67/lesson/17b965f4-e923-4a08-8cc5-6c6af06e48ab)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/f63e67f3-f04a-474f-87b9-ae17930e9e67/lesson/7fde6c04-e65a-4d49-bede-0d386f12a8f4" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/f63e67f3-f04a-474f-87b9-ae17930e9e67/lesson/7fde6c04-e65a-4d49-bede-0d386f12a8f4)

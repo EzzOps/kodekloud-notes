@@ -125,17 +125,13 @@ env:
 
 With that override and a sync, the cluster will run nine pods using the updated image tag and environment variable.
 
-<Callout icon="lightbulb">
-  Tip: Keep configuration as code in Git (edit `values.yaml` in your repo) so changes remain auditable and follow GitOps best practices. Use Argo CD parameters or UI overrides for temporary or environment-specific adjustments.
-</Callout>
+> **lightbulb** Tip: Keep configuration as code in Git (edit `values.yaml` in your repo) so changes remain auditable and follow GitOps best practices. Use Argo CD parameters or UI overrides for temporary or environment-specific adjustments.
 
 ## Summary
 
 Helm templates + `values.yaml` let you templatize Kubernetes manifests for reuse and consistency. Pairing Helm with Argo CD creates a GitOps workflow: store charts and values in Git, let Argo CD render and deploy them, and update configuration through Git or controlled UI overrides to reconcile clusters to the desired state.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/521f8b23-4b5d-47d4-961f-c184187a8b71" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/521f8b23-4b5d-47d4-961f-c184187a8b71)
 
 
 # Demo Kustomize
@@ -255,9 +251,7 @@ spec:
               value: "2"
 ```
 
-<Callout icon="lightbulb">
-  Kustomize performs a strategic merge when applying patches. Always include the container `name` in your patch when modifying container-level fields (`env`, `image`, `ports`, etc.) so Kustomize can match and update the correct container.
-</Callout>
+> **lightbulb** Kustomize performs a strategic merge when applying patches. Always include the container `name` in your patch when modifying container-level fields (`env`, `image`, `ports`, etc.) so Kustomize can match and update the correct container.
 
 Prod overlay
 
@@ -410,12 +404,8 @@ Summary and best practices
 * Use Argo CD to point to overlay paths so each environment is an independent Argo CD Application that continuously reconciles Git → cluster (GitOps).
 * Organize overlays clearly (e.g., `dev`, `staging`, `prod`) and keep patches small and focused (replicas, env, image).
 
-<Callout icon="lightbulb">
-  When writing [Kustomize](https://learn.kodekloud.com/user/courses/kustomize) patches that modify container fields (env, image, etc.), include the container `name` in the patch so Kustomize can match and merge the correct container entry.
-</Callout>
+> **lightbulb** When writing [Kustomize](https://learn.kodekloud.com/user/courses/kustomize) patches that modify container fields (env, image, etc.), include the container `name` in the patch so Kustomize can match and merge the correct container entry.
 
 That's all for now.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/3a500485-031d-44b4-b718-2c13f00d916b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/3a500485-031d-44b4-b718-2c13f00d916b)

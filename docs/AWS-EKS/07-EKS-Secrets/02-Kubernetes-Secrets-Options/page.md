@@ -16,7 +16,7 @@ For full control over sensitive data, choose a dedicated secret store. Below is 
 | AWS Secrets Manager                 | EKS and AWS-hosted workloads         | Automatic rotation, versioning, audit trails     |
 | AWS Systems Manager Parameter Store | Configuration & secrets              | Hierarchical params, secure strings              |
 
-![The image shows three options for storing secrets: Hashicorp Vault, Secret Storage, and AWS Secret Store, each represented by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862815/notes-assets/images/AWS-EKS-Kubernetes-Secrets-Options/secrets-storage-options-hashicorp-aws.jpg)
+![The image shows three options for storing secrets: Hashicorp Vault, Secret Storage, and AWS Secret Store, each represented by an icon.](https://kodekloud.com/kk-media/image/upload/v1752862815/notes-assets/images/AWS-EKS-Kubernetes-Secrets-Options/secrets-storage-options-hashicorp-aws.jpg)
 
 Each of these solutions encrypts data at rest, enforces policies, rotates secrets automatically, and generates audit logs for compliance.
 
@@ -43,7 +43,7 @@ spec:
         objectType: "secretsmanager"
 ```
 
-![The image illustrates the integration of a Kubernetes cluster with an AWS Secret Store using a Container Storage Interface (CSI) driver. It shows the components of the Kubernetes cluster, including the control plane and data plane.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862816/notes-assets/images/AWS-EKS-Kubernetes-Secrets-Options/kubernetes-aws-secret-store-csi-integration.jpg)
+![The image illustrates the integration of a Kubernetes cluster with an AWS Secret Store using a Container Storage Interface (CSI) driver. It shows the components of the Kubernetes cluster, including the control plane and data plane.](https://kodekloud.com/kk-media/image/upload/v1752862816/notes-assets/images/AWS-EKS-Kubernetes-Secrets-Options/kubernetes-aws-secret-store-csi-integration.jpg)
 
 ## Multi-Backend Support
 
@@ -55,7 +55,7 @@ The Secrets Store CSI driver is provider-agnostic. Supported backends include:
 * Microsoft Azure Key Vault
 * Google Cloud Secret Manager
 
-![The image illustrates the integration of a Kubernetes cluster with external components like AWS Secret Store and HashiCorp Vault using a Container Storage Interface (CSI) driver. It shows the control and data planes of the Kubernetes cluster and their interaction with these external services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862817/notes-assets/images/AWS-EKS-Kubernetes-Secrets-Options/kubernetes-cluster-integration-aws-vault.jpg)
+![The image illustrates the integration of a Kubernetes cluster with external components like AWS Secret Store and HashiCorp Vault using a Container Storage Interface (CSI) driver. It shows the control and data planes of the Kubernetes cluster and their interaction with these external services.](https://kodekloud.com/kk-media/image/upload/v1752862817/notes-assets/images/AWS-EKS-Kubernetes-Secrets-Options/kubernetes-cluster-integration-aws-vault.jpg)
 
 ## AWS CSI Driver for Secrets & Config
 
@@ -64,7 +64,7 @@ AWS offers a dedicated CSI provider that mounts both Secrets Manager and Paramet
 * **Secrets Manager**: Encrypted, versioned secrets with rotation
 * **Parameter Store**: Hierarchical configuration values and secure strings
 
-![The image illustrates the integration of a Kubernetes cluster with a Container Storage Interface (CSI) driver, showing connections to Kubernetes Secret, AWS Secret Store, and Parameter Store.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862817/notes-assets/images/AWS-EKS-Kubernetes-Secrets-Options/kubernetes-cluster-csi-integration-diagram.jpg)
+![The image illustrates the integration of a Kubernetes cluster with a Container Storage Interface (CSI) driver, showing connections to Kubernetes Secret, AWS Secret Store, and Parameter Store.](https://kodekloud.com/kk-media/image/upload/v1752862817/notes-assets/images/AWS-EKS-Kubernetes-Secrets-Options/kubernetes-cluster-csi-integration-diagram.jpg)
 
 ## Syncing to Native Kubernetes Secrets
 
@@ -101,7 +101,7 @@ spec:
 
 > **triangle-alert** Synced Secrets are stored as standard Kubernetes Secrets. Ensure RBAC policies restrict access to these temporary Secrets.
 
-![The image illustrates a "Secret Syncing" process involving a Kubernetes Pod on a Node, using a Container Storage Interface (CSI) Driver to sync secrets from a Kubernetes Secret and an AWS Secret Store.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862818/notes-assets/images/AWS-EKS-Kubernetes-Secrets-Options/secret-syncing-kubernetes-pod-csi-driver.jpg)
+![The image illustrates a "Secret Syncing" process involving a Kubernetes Pod on a Node, using a Container Storage Interface (CSI) Driver to sync secrets from a Kubernetes Secret and an AWS Secret Store.](https://kodekloud.com/kk-media/image/upload/v1752862818/notes-assets/images/AWS-EKS-Kubernetes-Secrets-Options/secret-syncing-kubernetes-pod-csi-driver.jpg)
 
 ## Automatic Rotation
 
@@ -110,7 +110,7 @@ Most external secret stores support credential rotation. Configure the CSI drive
 * Versioned secrets ensure rollbacks if issues arise.
 * Rotation schedules can trigger updates without downtime.
 
-![The image is a diagram illustrating the rotation of Kubernetes secrets using a Container Storage Interface (CSI) driver, integrating with an AWS Secret Store.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862819/notes-assets/images/AWS-EKS-Kubernetes-Secrets-Options/kubernetes-secrets-rotation-csi-aws.jpg)
+![The image is a diagram illustrating the rotation of Kubernetes secrets using a Container Storage Interface (CSI) driver, integrating with an AWS Secret Store.](https://kodekloud.com/kk-media/image/upload/v1752862819/notes-assets/images/AWS-EKS-Kubernetes-Secrets-Options/kubernetes-secrets-rotation-csi-aws.jpg)
 
 ## Pod Identity and IRSA
 
@@ -121,7 +121,7 @@ Use Pod Identity or AWS IAM Roles for Service Accounts (IRSA) so that workloads 
 
 ## Key Takeaways
 
-![The image provides three notes about managing secrets in Kubernetes: they are base64-encoded but not encrypted, stronger RBAC and namespace separation can enhance security, and using external tools is a more secure method.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862820/notes-assets/images/AWS-EKS-Kubernetes-Secrets-Options/kubernetes-managing-secrets-notes.jpg)
+![The image provides three notes about managing secrets in Kubernetes: they are base64-encoded but not encrypted, stronger RBAC and namespace separation can enhance security, and using external tools is a more secure method.](https://kodekloud.com/kk-media/image/upload/v1752862820/notes-assets/images/AWS-EKS-Kubernetes-Secrets-Options/kubernetes-managing-secrets-notes.jpg)
 
 1. Kubernetes Secrets are Base64-encoded by default, not encrypted.
 2. Strengthen cluster security with RBAC and namespace isolation.

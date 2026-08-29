@@ -212,9 +212,7 @@ spec:
   owner: shopping-team
 ```
 
-<Callout icon="lightbulb">
-  Store `mkdocs.yml` at the repository root and set `backstage.io/techdocs-ref` in `catalog-info.yaml` to point to your docs folder. This ensures TechDocs can find and build your documentation.
-</Callout>
+> **lightbulb** Store `mkdocs.yml` at the repository root and set `backstage.io/techdocs-ref` in `catalog-info.yaml` to point to your docs folder. This ensures TechDocs can find and build your documentation.
 
 Quick recommendations and links
 
@@ -238,6 +236,4 @@ Summary
 * Publish generated HTML to a storage backend (local, S3, GCS) and configure Backstage to serve it.
 * Add `backstage.io/techdocs-ref` in `catalog-info.yaml` to tell TechDocs where your docs live.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/ea371bfc-3770-4d25-80ef-e464e4b24fda/lesson/1401121b-7c6d-480b-8c78-0df1a6d9e346" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/ea371bfc-3770-4d25-80ef-e464e4b24fda/lesson/1401121b-7c6d-480b-8c78-0df1a6d9e346)

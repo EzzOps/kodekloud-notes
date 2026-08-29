@@ -38,9 +38,7 @@ def test_get_one_post_not_exist(authorized_client, test_posts):
     assert res.status_code == 404
 ```
 
-<Callout icon="lightbulb">
-  When running these tests, you might encounter warnings similar to the following. These warnings do not affect the test outcomes.
-</Callout>
+> **lightbulb** When running these tests, you might encounter warnings similar to the following. These warnings do not affect the test outcomes.
 
 ```plaintext theme={null}
 venv\lib\site-packages\aiofiles\os.py:10: DeprecationWarning: "@coroutine" decorator is deprecated since Python 3.8, use "async def" instead
@@ -97,6 +95,4 @@ This output confirms that the tests for unauthorized access, handling non-existe
 –––––––
 In the next article, we will explore testing the creation of a post.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/33d882ec-f7de-4850-97ed-17ec77dc301b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/33d882ec-f7de-4850-97ed-17ec77dc301b)

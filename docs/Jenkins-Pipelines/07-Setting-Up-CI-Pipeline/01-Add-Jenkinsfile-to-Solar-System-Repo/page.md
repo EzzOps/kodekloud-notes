@@ -6,19 +6,13 @@ This guide explains how to add a Jenkinsfile to the Solar System repository for 
 
 This guide demonstrates how to configure a Jenkinsfile in the Solar System repository to enable CI/CD. Previously, a GITHUB organization folder was set up in Jenkins, which successfully discovered repositories containing a Jenkinsfile. Since the Solar System repository did not include a Jenkinsfile, it was not picked up by Jenkins, and the corresponding webhook was missing.
 
-<Frame>
-  ![The image shows a Jenkins dashboard for a Gitea organization, displaying a repository named "parameterized-pipeline-job-init" with various configuration options on the left sidebar.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879753/notes-assets/images/Jenkins-Pipelines-Add-Jenkinsfile-to-Solar-System-Repo/jenkins-dashboard-gitea-repo.jpg)
-</Frame>
+![The image shows a Jenkins dashboard for a Gitea organization, displaying a repository named "parameterized-pipeline-job-init" with various configuration options on the left sidebar.](https://kodekloud.com/kk-media/image/upload/v1752879753/notes-assets/images/Jenkins-Pipelines-Add-Jenkinsfile-to-Solar-System-Repo/jenkins-dashboard-gitea-repo.jpg)
 
 When you check the repository settings under webhooks, no webhook is present:
 
-<Frame>
-  ![The image shows a Gitea repository settings page focused on webhooks, with options to add a webhook and a sidebar menu for various settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879753/notes-assets/images/Jenkins-Pipelines-Add-Jenkinsfile-to-Solar-System-Repo/gitea-repository-webhooks-settings.jpg)
-</Frame>
+![The image shows a Gitea repository settings page focused on webhooks, with options to add a webhook and a sidebar menu for various settings.](https://kodekloud.com/kk-media/image/upload/v1752879753/notes-assets/images/Jenkins-Pipelines-Add-Jenkinsfile-to-Solar-System-Repo/gitea-repository-webhooks-settings.jpg)
 
-<Callout icon="lightbulb">
-  Adding a Jenkinsfile to the repository allows Jenkins to automatically detect and trigger builds using webhooks. This setup ensures that every branch with a Jenkinsfile receives its own pipeline job.
-</Callout>
+> **lightbulb** Adding a Jenkinsfile to the repository allows Jenkins to automatically detect and trigger builds using webhooks. This setup ensures that every branch with a Jenkinsfile receives its own pipeline job.
 
 ## Enabling CI/CD with a Jenkinsfile
 
@@ -76,15 +70,11 @@ Commit your changes and push the branch. Once the Jenkinsfile is committed, the 
 
 Open the Jenkins UI and navigate to the Solar System repository. Verify that the `feature/enabling-cicd` branch is recognized and the Jenkinsfile is detected. You will be able to see the branch details and pipeline execution history.
 
-<Frame>
-  ![The image shows a web interface of a code repository with a list of files and commit messages. It includes a section about a "Solar System NodeJS Application" project.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879755/notes-assets/images/Jenkins-Pipelines-Add-Jenkinsfile-to-Solar-System-Repo/solar-system-nodejs-app-repo.jpg)
-</Frame>
+![The image shows a web interface of a code repository with a list of files and commit messages. It includes a section about a "Solar System NodeJS Application" project.](https://kodekloud.com/kk-media/image/upload/v1752879755/notes-assets/images/Jenkins-Pipelines-Add-Jenkinsfile-to-Solar-System-Repo/solar-system-nodejs-app-repo.jpg)
 
 Inspect the webhook settings to confirm the creation of webhooks:
 
-<Frame>
-  ![The image shows a Gitea repository settings page focused on webhooks, displaying two webhook URLs with options to edit or delete them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879756/notes-assets/images/Jenkins-Pipelines-Add-Jenkinsfile-to-Solar-System-Repo/gitea-repository-webhooks-settings-2.jpg)
-</Frame>
+![The image shows a Gitea repository settings page focused on webhooks, displaying two webhook URLs with options to edit or delete them.](https://kodekloud.com/kk-media/image/upload/v1752879756/notes-assets/images/Jenkins-Pipelines-Add-Jenkinsfile-to-Solar-System-Repo/gitea-repository-webhooks-settings-2.jpg)
 
 ### 5. Review the Organization Scan Log
 
@@ -152,9 +142,7 @@ Finished: SUCCESS
 
 After the Jenkinsfile is detected, Jenkins creates a job for the Solar System repository on the `feature/enabling-cicd` branch. The pipeline checks out the source code from SCM and executes the defined stage:
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying the status of a CI/CD pipeline for a project named "feature/enabling-cicd" with successful build steps. It includes details like build history and permalinks for recent builds.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879757/notes-assets/images/Jenkins-Pipelines-Add-Jenkinsfile-to-Solar-System-Repo/jenkins-dashboard-cicd-pipeline-status.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying the status of a CI/CD pipeline for a project named "feature/enabling-cicd" with successful build steps. It includes details like build history and permalinks for recent builds.](https://kodekloud.com/kk-media/image/upload/v1752879757/notes-assets/images/Jenkins-Pipelines-Add-Jenkinsfile-to-Solar-System-Repo/jenkins-dashboard-cicd-pipeline-status.jpg)
 
 The stage runs a shell script to print the Node.js version and npm version. The output is similar to:
 
@@ -201,19 +189,13 @@ v22.6.0
 
 With this configuration, the Solar System repository demonstrates how the Jenkins organization folder scans and creates jobs automatically for any branch containing a Jenkinsfile.
 
-<Frame>
-  ![The image shows a Jenkins dashboard for a Gitea organization, displaying repositories and various configuration options. The interface includes options like scanning the organization log and managing organization folders.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879758/notes-assets/images/Jenkins-Pipelines-Add-Jenkinsfile-to-Solar-System-Repo/jenkins-dashboard-gitea-organization.jpg)
-</Frame>
+![The image shows a Jenkins dashboard for a Gitea organization, displaying repositories and various configuration options. The interface includes options like scanning the organization log and managing organization folders.](https://kodekloud.com/kk-media/image/upload/v1752879758/notes-assets/images/Jenkins-Pipelines-Add-Jenkinsfile-to-Solar-System-Repo/jenkins-dashboard-gitea-organization.jpg)
 
-<Frame>
-  ![The image shows a Jenkins pipeline console displaying the successful completion of a build process, specifically highlighting the "Tool Install" stage with details about the execution time and status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879759/notes-assets/images/Jenkins-Pipelines-Add-Jenkinsfile-to-Solar-System-Repo/jenkins-pipeline-build-success-tool-install.jpg)
-</Frame>
+![The image shows a Jenkins pipeline console displaying the successful completion of a build process, specifically highlighting the "Tool Install" stage with details about the execution time and status.](https://kodekloud.com/kk-media/image/upload/v1752879759/notes-assets/images/Jenkins-Pipelines-Add-Jenkinsfile-to-Solar-System-Repo/jenkins-pipeline-build-success-tool-install.jpg)
 
 Additionally, you can review the Jenkins workspace to see the list of checked-out files:
 
-<Frame>
-  ![The image shows a Jenkins workspace interface displaying a list of files and directories with their sizes and modification dates. The interface includes options like "Console Output" and "Open Blue Ocean."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879760/notes-assets/images/Jenkins-Pipelines-Add-Jenkinsfile-to-Solar-System-Repo/jenkins-workspace-file-list-interface.jpg)
-</Frame>
+![The image shows a Jenkins workspace interface displaying a list of files and directories with their sizes and modification dates. The interface includes options like "Console Output" and "Open Blue Ocean."](https://kodekloud.com/kk-media/image/upload/v1752879760/notes-assets/images/Jenkins-Pipelines-Add-Jenkinsfile-to-Solar-System-Repo/jenkins-workspace-file-list-interface.jpg)
 
 ## Next Steps
 
@@ -221,11 +203,7 @@ In the next session, we will enhance the pipeline further by installing the nece
 
 Thank you for following along.
 
-<Callout icon="lightbulb">
-  * For more details on Jenkins pipelines, visit the [Jenkins Documentation](https://www.jenkins.io/doc/).
+> **lightbulb** * For more details on Jenkins pipelines, visit the [Jenkins Documentation](https://www.jenkins.io/doc/).
   * Learn more about how webhooks and organization folder projects work in Jenkins by exploring related guides.
-</Callout>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/7e239b62-2dfd-4594-85cf-e51c0707121c/lesson/43796d86-44df-404b-b579-2335e077d886" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/7e239b62-2dfd-4594-85cf-e51c0707121c/lesson/43796d86-44df-404b-b579-2335e077d886)

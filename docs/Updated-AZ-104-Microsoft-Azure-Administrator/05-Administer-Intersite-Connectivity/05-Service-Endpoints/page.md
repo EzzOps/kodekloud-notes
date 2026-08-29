@@ -22,9 +22,7 @@ To summarize the initial setup:
 
 This configuration extends your VNet's private IP address space to the storage account. In the storage account settings, you configure network rules to accept connections only from the designated subnet by selecting the option to allow access from selected networks. Consequently, the VM securely connects to the storage account via a service endpoint, ensuring that the traffic remains on the Microsoft Azure backbone—enhancing both security and performance.
 
-<Frame>
-  ![The image illustrates a network diagram showing a virtual machine within a virtual network using a service endpoint to connect to an Azure storage account, with internet access blocked.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884631/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Service-Endpoints/network-diagram-virtual-machine-azure.jpg)
-</Frame>
+![The image illustrates a network diagram showing a virtual machine within a virtual network using a service endpoint to connect to an Azure storage account, with internet access blocked.](https://kodekloud.com/kk-media/image/upload/v1752884631/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Service-Endpoints/network-diagram-virtual-machine-azure.jpg)
 
 Below are some key benefits of using Azure service endpoints:
 
@@ -40,13 +38,9 @@ Below are some key benefits of using Azure service endpoints:
 4. Wide Range of Supported Services\
    Service endpoints support many Azure services, including Azure Storage, Azure SQL Database, Synapse Analytics, PostgreSQL, Cognitive Services, Container Registry, App Services, and more.
 
-<Frame>
-  ![The image is an infographic titled "Service Endpoints" highlighting benefits such as better security for Azure services, leveraging Microsoft's backbone network, ease of setup and management, and supported services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884633/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Service-Endpoints/service-endpoints-infographic-azure.jpg)
-</Frame>
+![The image is an infographic titled "Service Endpoints" highlighting benefits such as better security for Azure services, leveraging Microsoft's backbone network, ease of setup and management, and supported services.](https://kodekloud.com/kk-media/image/upload/v1752884633/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Service-Endpoints/service-endpoints-infographic-azure.jpg)
 
-<Callout icon="lightbulb">
-  Even though the storage account retains a public endpoint, the service endpoint ensures that the traffic between your VM and the storage account stays private within the Azure backbone network.
-</Callout>
+> **lightbulb** Even though the storage account retains a public endpoint, the service endpoint ensures that the traffic between your VM and the storage account stays private within the Azure backbone network.
 
 In conclusion, Azure Service Endpoints provide a robust mechanism for securing access to Azure services. By restricting public internet access and allowing traffic only from specific virtual networks, you ensure secure and efficient connectivity.
 
@@ -81,15 +75,11 @@ st118683879520232108 rg-se-workload-20230929        eastus        Standard_LRS  
 
 After running the script, navigate to the storage account in the Azure portal. Create a new container (for example, name it “demo”) in the containers section to store your files.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying a storage account's container section, with one existing container named "logs" and a new container creation panel on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884635/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Service-Endpoints/azure-portal-storage-containers.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying a storage account's container section, with one existing container named "logs" and a new container creation panel on the right.](https://kodekloud.com/kk-media/image/upload/v1752884635/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Service-Endpoints/azure-portal-storage-containers.jpg)
 
 Once the container is created, upload your desired files. After selecting and browsing for files, confirm that the blobs are uploaded successfully.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for uploading blobs to a container named "demo," with several image files listed under current uploads.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884636/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Service-Endpoints/azure-portal-upload-blobs-demo.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for uploading blobs to a container named "demo," with several image files listed under current uploads.](https://kodekloud.com/kk-media/image/upload/v1752884636/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Service-Endpoints/azure-portal-upload-blobs-demo.jpg)
 
 At this time, you can copy the URL of any uploaded file and paste it into a browser to verify that it is accessible over the public internet.
 
@@ -121,15 +111,11 @@ City3.jpg           100%[=======================================================
 
 Later, to enhance security by restricting public access, modify the networking settings in the storage account. In the Networking section of the storage account, change the access option from “All networks” to “Selected virtual networks and IP addresses.” Then, add your existing virtual network (e.g., VNet01 and its default subnet where your VM is located). Once saved, a service endpoint is created. This configuration means that while accessing the file via a browser will now result in an authorization failure, the VM can still download the file over the service endpoint.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface focused on the networking settings of a storage account, with options for configuring firewalls, virtual networks, and network routing preferences.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884637/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Service-Endpoints/azure-portal-networking-settings.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface focused on the networking settings of a storage account, with options for configuring firewalls, virtual networks, and network routing preferences.](https://kodekloud.com/kk-media/image/upload/v1752884637/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Service-Endpoints/azure-portal-networking-settings.jpg)
 
 After saving the network configuration, verify that the settings have been applied by checking the notifications.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface focused on the networking settings of a storage account, with options for configuring firewalls and virtual networks. A notification indicates that firewall and virtual network settings have been successfully saved.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884638/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Service-Endpoints/azure-portal-networking-settings-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface focused on the networking settings of a storage account, with options for configuring firewalls and virtual networks. A notification indicates that firewall and virtual network settings have been successfully saved.](https://kodekloud.com/kk-media/image/upload/v1752884638/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Service-Endpoints/azure-portal-networking-settings-2.jpg)
 
 Open an incognito window and try accessing the blob URL from your browser; you should see an authorization failure message similar to:
 
@@ -198,9 +184,7 @@ City2.jpg           100%[===================================>] 102.64K  --.-KB/s
 
 While both Private Link and Service Endpoints provide secure connectivity from your virtual network to Azure service resources, they differ in configuration and management. Understanding these differences helps determine the best option based on your security and connectivity requirements.
 
-<Callout icon="triangle-alert">
-  Avoid exposing sensitive data to the public internet. Always validate your network configurations to ensure that only trusted sources have access to your critical resources.
-</Callout>
+> **triangle-alert** Avoid exposing sensitive data to the public internet. Always validate your network configurations to ensure that only trusted sources have access to your critical resources.
 
 ***
 
@@ -208,6 +192,4 @@ This article demonstrated how to secure storage account access using Azure Servi
 
 For further reading, consider exploring [Azure Networking Documentation](https://docs.microsoft.com/azure/networking/) for additional best practices and advanced configurations.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/f7470a91-91f6-4c6c-8a03-565abfeb7aee/lesson/5ced50ce-6893-4def-b4cb-bb978e039102" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/f7470a91-91f6-4c6c-8a03-565abfeb7aee/lesson/5ced50ce-6893-4def-b4cb-bb978e039102)

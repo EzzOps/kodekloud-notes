@@ -134,9 +134,7 @@ Resource         Used  Hard
 pods             5     5
 ```
 
-<Callout icon="lightbulb">
-  To support additional deployments, consider increasing the pod quota in the namespace.
-</Callout>
+> **lightbulb** To support additional deployments, consider increasing the pod quota in the namespace.
 
 Edit the resource quota to raise the hard limit—for example, to 10 pods:
 
@@ -329,16 +327,12 @@ In this guide, we addressed two common issues that can lead to missing pods in a
 1. A resource quota that restricts the creation of new pods in a namespace.
 2. A missing dependency—in this case, a required service account.
 
-<Callout icon="lightbulb">
-  * Check resource quotas imposed on the namespace if pods are not being created as expected.
+> **lightbulb** * Check resource quotas imposed on the namespace if pods are not being created as expected.
   * Verify that all required service accounts and other dependencies are present.
   * Use "kubectl describe" to access detailed event logs and error messages.
-</Callout>
 
 By increasing the pod quota and creating the missing service account, the deployments functioned as intended, ensuring proper pod creation in the staging namespace.
 
 For more in-depth Kubernetes troubleshooting, consider reviewing the [Kubernetes Documentation](https://kubernetes.io/docs/) for additional best practices.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/00b453ca-0b3e-43a5-93bf-7aadf635b190" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/00b453ca-0b3e-43a5-93bf-7aadf635b190)

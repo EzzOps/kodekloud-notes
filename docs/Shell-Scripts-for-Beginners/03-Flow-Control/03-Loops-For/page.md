@@ -24,9 +24,7 @@ In this snippet, the status is checked against predefined conditions. If `rocket
 
 In shell scripts, string comparison uses the equals operator (`=`) for equality and the not-equals operator (`!=`) for inequality. Make sure the condition is placed inside square brackets with proper spacing.
 
-<Frame>
-  ![The image shows a table explaining conditional operators with examples and descriptions, including string and number comparisons for equality and inequality.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884046/notes-assets/images/Shell-Scripts-for-Beginners-Conditional-Logic/frame_260.jpg)
-</Frame>
+![The image shows a table explaining conditional operators with examples and descriptions, including string and number comparisons for equality and inequality.](https://kodekloud.com/kk-media/image/upload/v1752884046/notes-assets/images/Shell-Scripts-for-Beginners-Conditional-Logic/frame_260.jpg)
 
 ## Numeric Comparisons
 
@@ -47,9 +45,7 @@ To check if the string "ABC" contains the substring "BC", you can use pattern ma
 [[ "ABC" == *BC* ]]
 ```
 
-<Frame>
-  ![The image explains conditional operators in Bash, showing examples and descriptions of string comparisons and pattern matching.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884047/notes-assets/images/Shell-Scripts-for-Beginners-Conditional-Logic/frame_340.jpg)
-</Frame>
+![The image explains conditional operators in Bash, showing examples and descriptions of string comparisons and pattern matching.](https://kodekloud.com/kk-media/image/upload/v1752884047/notes-assets/images/Shell-Scripts-for-Beginners-Conditional-Logic/frame_340.jpg)
 
 ## Sorting and Logical Operators
 
@@ -88,13 +84,9 @@ Shell scripts also allow file-level checks. Some common file operators are:
 | -x       | Check if a file is executable  | `[ -x filename ]`           |
 | -w       | Check if a file is writable    | `[ -w filename ]`           |
 
-<Frame>
-  ![The image shows a table of conditional operators for files, detailing checks for existence, directory status, size, executability, and writability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884047/notes-assets/images/Shell-Scripts-for-Beginners-Conditional-Logic/frame_520.jpg)
-</Frame>
+![The image shows a table of conditional operators for files, detailing checks for existence, directory status, size, executability, and writability.](https://kodekloud.com/kk-media/image/upload/v1752884047/notes-assets/images/Shell-Scripts-for-Beginners-Conditional-Logic/frame_520.jpg)
 
-<Callout icon="triangle-alert">
-  Be cautious with file operators and always verify that the file or directory you are checking has the correct permissions to avoid unexpected behavior.
-</Callout>
+> **triangle-alert** Be cautious with file operators and always verify that the file or directory you are checking has the correct permissions to avoid unexpected behavior.
 
 ## Conclusion
 
@@ -102,11 +94,9 @@ By mastering conditional logic in shell scripts, you can effectively control the
 
 For additional learning, consider exploring resources like [Shell Scripting Fundamentals](https://www.shellscript.sh) and [Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/054d2eb5-f3b9-47d4-af5a-37b9f0d15f2c/lesson/312e6867-e630-4c8c-b9c7-93e54345ea52" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/054d2eb5-f3b9-47d4-af5a-37b9f0d15f2c/lesson/312e6867-e630-4c8c-b9c7-93e54345ea52)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/054d2eb5-f3b9-47d4-af5a-37b9f0d15f2c/lesson/262bb4c2-4f87-4601-b117-20e40198eae5" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/054d2eb5-f3b9-47d4-af5a-37b9f0d15f2c/lesson/262bb4c2-4f87-4601-b117-20e40198eae5)
 
 
 # Loops For
@@ -179,9 +169,7 @@ done
 
 Here, the command within the backticks (`cat mission-names.txt`) is executed first to retrieve the mission names, which are then iterated over by the loop. A best practice is to design your script so that inputs are either passed as command-line arguments or read from an external file, ensuring that the script requires no modifications for routine use.
 
-<Callout icon="lightbulb">
-  Avoid using backticks for command substitution; instead, use the more readable `$()` syntax, especially when embedding multiple commands.
-</Callout>
+> **lightbulb** Avoid using backticks for command substitution; instead, use the more readable `$()` syntax, especially when embedding multiple commands.
 
 There are two primary ways to supply values to a for loop:
 
@@ -225,9 +213,7 @@ For users familiar with programming languages like C, which combine initializati
 
 Typically, you would use a for loop to repeat tasks such as executing commands multiple times, iterating through files, parsing lines within a file, or processing command outputs. Consider the scenarios illustrated in the diagram below:
 
-<Frame>
-  ![The image lists scenarios for using a "For Loop": executing commands repeatedly, iterating through files, lines within a file, and command outputs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884049/notes-assets/images/Shell-Scripts-for-Beginners-Loops-For/frame_370.jpg)
-</Frame>
+![The image lists scenarios for using a "For Loop": executing commands repeatedly, iterating through files, lines within a file, and command outputs.](https://kodekloud.com/kk-media/image/upload/v1752884049/notes-assets/images/Shell-Scripts-for-Beginners-Loops-For/frame_370.jpg)
 
 Here are some practical examples of using for loops:
 
@@ -262,8 +248,6 @@ By incorporating these practices, you can create scripts that are both robust an
 
 Happy scripting!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/054d2eb5-f3b9-47d4-af5a-37b9f0d15f2c/lesson/aafb5bad-118d-4486-9b24-c0dbb05b8cc9" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/054d2eb5-f3b9-47d4-af5a-37b9f0d15f2c/lesson/aafb5bad-118d-4486-9b24-c0dbb05b8cc9)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/054d2eb5-f3b9-47d4-af5a-37b9f0d15f2c/lesson/2a701243-2952-4ba0-b1b4-218164117d87" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/054d2eb5-f3b9-47d4-af5a-37b9f0d15f2c/lesson/2a701243-2952-4ba0-b1b4-218164117d87)

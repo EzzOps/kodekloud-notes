@@ -17,9 +17,7 @@ print(amount_of_apples * cost_of_apple)
 
 In this example, each variable has a clear role. The variable names `amount_of_apples` and `cost_of_apple` store the values 2 and 5, respectively.
 
-<Frame>
-  ![The image shows two labeled boxes: "amount\_of\_apples" with value 2, and "cost\_of\_apple" with value 5.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883524/notes-assets/images/Python-Basics-Variables/frame_60.jpg)
-</Frame>
+![The image shows two labeled boxes: "amount\_of\_apples" with value 2, and "cost\_of\_apple" with value 5.](https://kodekloud.com/kk-media/image/upload/v1752883524/notes-assets/images/Python-Basics-Variables/frame_60.jpg)
 
 ## Python Variable Naming Conventions
 
@@ -31,8 +29,7 @@ When naming variables in Python, there are specific rules to follow:
 
 Below are examples of valid and invalid variable names.
 
-<Callout icon="lightbulb">
-  **Valid Variable Names:**
+> **lightbulb** **Valid Variable Names:**
 
   * amount\_of\_apples
   * cost\_of\_apple
@@ -44,17 +41,12 @@ Below are examples of valid and invalid variable names.
   * am\*unt\_0%\_ap|les
   * c\*st\_0%\_app|e
   * 5apples\_cost
-</Callout>
 
 Also, remember that variable names cannot be reserved keywords in Python. If you need a similar name, consider modifying its case.
 
-<Frame>
-  ![The image lists Python reserved keywords, including "False," "None," "True," "and," "elif," "else," "lambda," "return," and "yield," among others.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883525/notes-assets/images/Python-Basics-Variables/frame_110.jpg)
-</Frame>
+![The image lists Python reserved keywords, including "False," "None," "True," "and," "elif," "else," "lambda," "return," and "yield," among others.](https://kodekloud.com/kk-media/image/upload/v1752883525/notes-assets/images/Python-Basics-Variables/frame_110.jpg)
 
-<Frame>
-  ![The image shows valid and invalid variable names in programming, highlighting case sensitivity with keywords like "Import" and "import."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883527/notes-assets/images/Python-Basics-Variables/frame_120.jpg)
-</Frame>
+![The image shows valid and invalid variable names in programming, highlighting case sensitivity with keywords like "Import" and "import."](https://kodekloud.com/kk-media/image/upload/v1752883527/notes-assets/images/Python-Basics-Variables/frame_120.jpg)
 
 ## Updating Variable Values
 
@@ -97,13 +89,9 @@ Shortcut operators are available for most arithmetic operations. They help keep 
 * Variable names should not overlap with Python's reserved keywords.
 * Variables can be reassigned, and shortcut operators simplify the code.
 
-<Callout icon="lightbulb">
-  That's it for this lesson on variables. Now, try the exercises to reinforce your understanding and elevate your Python programming skills.
-</Callout>
+> **lightbulb** That's it for this lesson on variables. Now, try the exercises to reinforce your understanding and elevate your Python programming skills.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/4178f96e-8dcd-46a2-a9c9-f65a8c9c73b0/lesson/821807bf-9095-47f4-8ea1-5711778e7939" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/4178f96e-8dcd-46a2-a9c9-f65a8c9c73b0/lesson/821807bf-9095-47f4-8ea1-5711778e7939)
 
 
 # Conclusion
@@ -118,14 +106,10 @@ In this article, we explored the fundamentals of Python, starting with variables
 
 This journey was not just about learning syntax; it was about cultivating a problem-solving mindset and harnessing creativity to address real-world challenges. Your progress through these topics is just the beginning of the expansive possibilities Python offers.
 
-<Callout icon="lightbulb">
-  Remember, continuous practice and experimentation are the keys to mastery in Python. Engage with exciting projects and challenges to further enhance your skills.
-</Callout>
+> **lightbulb** Remember, continuous practice and experimentation are the keys to mastery in Python. Engage with exciting projects and challenges to further enhance your skills.
 
 If you're ready to elevate your Python expertise and earn formal recognition, consider enrolling in our [PCAP - Python Certification Course](https://learn.kodekloud.com/user/courses/pcap-python-certification-course). This course is designed to sharpen your skills and prepare you for advanced Python programming opportunities.
 
 Thank you for joining this educational journey. Keep coding, keep exploring, and enjoy all that Python has to offer!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/076fa682-e40b-494c-beed-89db7a8102f1/lesson/1a3f288e-1fad-4e66-b05b-75f752648b20" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/076fa682-e40b-494c-beed-89db7a8102f1/lesson/1a3f288e-1fad-4e66-b05b-75f752648b20)

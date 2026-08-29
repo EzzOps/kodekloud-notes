@@ -6,13 +6,11 @@ This article provides a walkthrough for using Terragrunt to provision a multi-ac
 
 In this walkthrough, you’ll use Terragrunt to provision a multi-account, multi-region AWS infrastructure. You’ll configure remote state, set up environments (dev, stage, prod), and deploy core modules (VPC, Key Pair, Security Group, EC2).
 
-<Callout icon="lightbulb">
-  Keep your AWS credentials handy. Run the following at any time to fetch them:
+> **lightbulb** Keep your AWS credentials handy. Run the following at any time to fetch them:
 
   ```bash theme={null}
   show creds
   ```
-</Callout>
 
 ***
 
@@ -357,8 +355,6 @@ Congratulations! You’ve successfully built a modular, scalable AWS infrastruct
 * [Terragrunt Docs](https://terragrunt.gruntwork.io/docs/)
 * [AWS Provider for Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/07066843-7439-443b-b2d4-d31be3c50c97/lesson/fd96900e-0c16-4a58-8161-c90c6c8b4121" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/07066843-7439-443b-b2d4-d31be3c50c97/lesson/fd96900e-0c16-4a58-8161-c90c6c8b4121)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/07066843-7439-443b-b2d4-d31be3c50c97/lesson/0186b4a9-38fe-41de-a77c-ea5374bdf5e5" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/07066843-7439-443b-b2d4-d31be3c50c97/lesson/0186b4a9-38fe-41de-a77c-ea5374bdf5e5)

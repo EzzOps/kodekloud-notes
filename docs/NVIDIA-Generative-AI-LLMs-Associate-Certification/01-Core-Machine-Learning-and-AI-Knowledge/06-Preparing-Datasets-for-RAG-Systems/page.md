@@ -33,13 +33,11 @@ Why chunking matters (SEO keywords: RAG, chunking, embeddings, vector search, co
 
 Best practices for chunking
 
-<Callout icon="lightbulb">
-  * Target chunk sizes that match your embedding model and the downstream LLM’s context window — commonly `~200–1000` tokens depending on model choice.
+> **lightbulb** * Target chunk sizes that match your embedding model and the downstream LLM’s context window — commonly `~200–1000` tokens depending on model choice.
   * Use semantic boundaries (sentences, paragraphs, section headings) instead of arbitrary byte/character splits to preserve coherence.
   * Include modest overlap between adjacent chunks (e.g., `10–30%`) to preserve continuity across boundaries.
   * Attach rich metadata to each chunk: `source`, `document_id`, `position`, `section_title`, and any domain tags for reranking and provenance.
   * Deduplicate near-duplicate chunks, normalize whitespace/formatting, and preserve numeric data unless you have a domain-specific reason to remove it.
-</Callout>
 
 Table — quick comparison of the listed techniques
 
@@ -55,9 +53,7 @@ Notes on the other options
 * Translating all content may be useful for a multilingual deployment, but it is not the primary factor for retrieval quality. Consider translation when user languages require it.
 * Filtering out numeric data is usually detrimental: numbers are frequently essential for accurate answers in technical, financial, scientific, and date-sensitive domains.
 
-<Callout icon="warning">
-  Do not remove numeric data indiscriminately. Numbers often carry crucial semantic meaning and can be necessary for correct retrieval and factual responses.
-</Callout>
+> **warning** Do not remove numeric data indiscriminately. Numbers often carry crucial semantic meaning and can be necessary for correct retrieval and factual responses.
 
 * Converting all text to lowercase is a minor normalization step; many modern tokenizers and embedding models handle case in a way that preserves useful signals, so lowercasing is not a substitute for proper chunking.
 
@@ -74,6 +70,4 @@ Further reading
 
 In summary: prioritize careful, semantically-aware chunking with appropriate size and overlap, enrich chunks with metadata, and reserve other transformations (translation, lowercasing, numeric filtering) for specific use cases rather than as default steps.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/efb9f959-b845-43dc-9a89-4f602519c2b9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/efb9f959-b845-43dc-9a89-4f602519c2b9)

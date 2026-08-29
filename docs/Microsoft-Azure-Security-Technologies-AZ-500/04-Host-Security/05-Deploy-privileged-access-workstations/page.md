@@ -10,9 +10,7 @@ At the heart of this strategy is the use of PADs—specially designed, secure en
 
 Attackers are unable to breach admin PADs due to their advanced security configuration. This setup, known as a Tier 0 Privileged Operating System (POS), represents the highest level of trust and is reserved for a select group—typically fewer than 10 individuals—who perform highly sensitive administrative duties. A prominent feature of these workstations is the dedicated hardware that enforces a stringent clean keyboard policy, effectively reducing keylogging risks.
 
-<Callout icon="lightbulb">
-  In practice, a POS serves as a remote client to a hardened Tier 0 terminal or jump box, where sensitive administrative tasks are executed. The terminal server or jump box is accessible exclusively via PADs, ensuring that both security and scalability are maintained while defending against physical and cyber threats.
-</Callout>
+> **lightbulb** In practice, a POS serves as a remote client to a hardened Tier 0 terminal or jump box, where sensitive administrative tasks are executed. The terminal server or jump box is accessible exclusively via PADs, ensuring that both security and scalability are maintained while defending against physical and cyber threats.
 
 Critical resources such as databases, virtual machines, and other essential assets are protected by granting access exclusively through the jump box. This ensures that only Privileged Admin Workstations can authorize and mediate access.
 
@@ -38,12 +36,8 @@ Below are the key features of Privileged Access Workstations (POS):
 
 In summary, Privileged Access Workstations are a vital element of a comprehensive security strategy. They provide a secure, controlled environment for handling sensitive tasks while incorporating best practices in access control, monitoring, and system maintenance.
 
-<Frame>
-  ![The image illustrates a security workflow for deploying privileged access workstations, highlighting steps to block attackers and ensure secure access to assets, along with key security features like isolated environments and strong access controls.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881866/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-privileged-access-workstations/security-workflow-privileged-access.jpg)
-</Frame>
+![The image illustrates a security workflow for deploying privileged access workstations, highlighting steps to block attackers and ensure secure access to assets, along with key security features like isolated environments and strong access controls.](https://kodekloud.com/kk-media/image/upload/v1752881866/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-privileged-access-workstations/security-workflow-privileged-access.jpg)
 
 Next, we explore virtual machine templates.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d8d70777-3d80-4e41-803e-0929352de5e7/lesson/5c1c2fa8-c6a0-4f87-bb3a-dd1eb0bf1ea2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d8d70777-3d80-4e41-803e-0929352de5e7/lesson/5c1c2fa8-c6a0-4f87-bb3a-dd1eb0bf1ea2)

@@ -47,7 +47,7 @@ Consider a scenario where a user requests information about a product, such as P
 
 For subsequent requests regarding Product X—regardless of which user makes the request—API Gateway first checks its cache. If the data is still current, the cached response is returned without the need to invoke the Lambda function or query the DynamoDB table again.
 
-![The image illustrates how an API Gateway works with caching, showing the flow from a user to an app, then through an API Gateway to Lambda and DynamoDB, with a cache storing details of "Product X."](../../../../images/kodekloud.com/kk-media/image/upload/v1752857863/notes-assets/images/AWS-Certified-Developer-Associate-Caching/api-gateway-caching-diagram.jpg)
+![The image illustrates how an API Gateway works with caching, showing the flow from a user to an app, then through an API Gateway to Lambda and DynamoDB, with a cache storing details of "Product X."](https://kodekloud.com/kk-media/image/upload/v1752857863/notes-assets/images/AWS-Certified-Developer-Associate-Caching/api-gateway-caching-diagram.jpg)
 
 This caching mechanism not only enhances performance by serving data quickly but also minimizes backend resource consumption, making your API more efficient and cost-effective.
 

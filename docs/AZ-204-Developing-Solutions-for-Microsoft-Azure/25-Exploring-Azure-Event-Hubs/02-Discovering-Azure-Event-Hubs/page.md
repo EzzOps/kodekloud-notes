@@ -20,7 +20,7 @@ Azure Event Hubs is a unified streaming platform designed to collect, retain, an
   - Flexibility for both real-time and batch processing.
   - Dynamic scaling with features like auto-inflate to meet rising data demands.
 
-![The image is a table listing features of Event Hubs, including being a fully managed PaaS, supporting real-time and batch processing, scalability, and a rich ecosystem. Each feature is briefly described in the adjacent column.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866496/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Azure-Event-Hubs/event-hubs-features-table.jpg)
+![The image is a table listing features of Event Hubs, including being a fully managed PaaS, supporting real-time and batch processing, scalability, and a rich ecosystem. Each feature is briefly described in the adjacent column.](https://kodekloud.com/kk-media/image/upload/v1752866496/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Azure-Event-Hubs/event-hubs-features-table.jpg)
 
 Azure Event Hubs also integrates seamlessly with [Apache Kafka](https://kafka.apache.org), allowing you to leverage existing Kafka ecosystems for smooth application integration.
 
@@ -45,7 +45,7 @@ Armed with these concepts, you are ready to deploy an Event Hub using the Azure 
    * Ensure that the namespace has a unique name registered under servicebus.windows.net.
    * Choose your region and select an appropriate pricing tier based on your required throughput units.
 
-![The image shows the "Create Namespace" page in Microsoft Azure's Event Hubs, where users can configure project and instance details such as subscription, resource group, namespace name, location, pricing tier, and throughput units.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866497/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Azure-Event-Hubs/create-namespace-azure-event-hubs.jpg)
+![The image shows the "Create Namespace" page in Microsoft Azure's Event Hubs, where users can configure project and instance details such as subscription, resource group, namespace name, location, pricing tier, and throughput units.](https://kodekloud.com/kk-media/image/upload/v1752866497/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Azure-Event-Hubs/create-namespace-azure-event-hubs.jpg)
 
 > **lightbulb** For demonstration purposes, select the basic pricing tier. It offers a cost-effective option (approximately \$11) with the potential to scale throughput. The standard tier includes additional features such as auto-inflate for autoscaling.
 
@@ -56,13 +56,13 @@ Armed with these concepts, you are ready to deploy an Event Hub using the Azure 
 3. **Finalize Namespace Creation:**
    * After running the validation, create your Event Hub namespace.
 
-![The image shows a Microsoft Azure portal screen for creating an Event Hubs namespace, displaying configuration details like namespace name, subscription, location, and security settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866498/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Azure-Event-Hubs/azure-event-hubs-namespace-creation.jpg)
+![The image shows a Microsoft Azure portal screen for creating an Event Hubs namespace, displaying configuration details like namespace name, subscription, location, and security settings.](https://kodekloud.com/kk-media/image/upload/v1752866498/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Azure-Event-Hubs/azure-event-hubs-namespace-creation.jpg)
 
 4. **Create a New Event Hub:**
    * Once the namespace is deployed, click on "Go to resource" to proceed with creating an individual Event Hub within the namespace.
    * Familiarize yourself with additional concepts such as Event Hubs Capture, which is designed for automatic data capture and long-term retention or batch processing.
 
-![The image shows the Microsoft Azure portal displaying details of an Event Hubs Namespace, including its status, location, subscription, and performance metrics like requests and throughput over time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866500/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Azure-Event-Hubs/azure-portal-event-hubs-namespace.jpg)
+![The image shows the Microsoft Azure portal displaying details of an Event Hubs Namespace, including its status, location, subscription, and performance metrics like requests and throughput over time.](https://kodekloud.com/kk-media/image/upload/v1752866500/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Azure-Event-Hubs/azure-portal-event-hubs-namespace.jpg)
 
 A namespace serves as a container for multiple Event Hubs. With this in mind, you can now explore the benefits of Event Hubs Capture to automate data retention and facilitate batch processing.
 

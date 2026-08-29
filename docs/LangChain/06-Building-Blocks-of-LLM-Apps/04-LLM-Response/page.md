@@ -20,9 +20,7 @@ After receiving the LLM response, apply these steps in order:
 * Apply domain-specific checks (ranges, cross-field consistency).
 * Fail fast or fallback to safe defaults when validation fails.
 
-<Callout icon="lightbulb">
-  Always ask the LLM for a clear output format (for example, `JSON` with explicit keys). Validate and sanitize the returned data before using it in production. Consider schema validation libraries (e.g., `pydantic`, `jsonschema`) for reliable enforcement.
-</Callout>
+> **lightbulb** Always ask the LLM for a clear output format (for example, `JSON` with explicit keys). Validate and sanitize the returned data before using it in production. Consider schema validation libraries (e.g., `pydantic`, `jsonschema`) for reliable enforcement.
 
 Example: parsing an ISO-8601 date string returned by the LLM and computing the difference in days (Python)
 

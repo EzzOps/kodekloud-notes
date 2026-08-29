@@ -27,7 +27,7 @@ Mend (formerly WhiteSource) is a robust extension in the Azure DevOps Marketplac
 | Security Notifications | Sends alerts for new vulnerabilities in real time                  | Rapid triage and remediation              |
 | Automated Enforcement  | Applies organizational policies and compliance rules automatically | Enforces standards without manual reviews |
 
-![The image is a diagram explaining how Mend can be incorporated into Azure Pipelines, highlighting its features in security, quality, and compliance for open-source software. It emphasizes continuous detection, security notifications, and automated enforcement of standards.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868014/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Integrating-Mend-and-GitHub-Dependabot/mend-azure-pipelines-security-diagram.jpg)
+![The image is a diagram explaining how Mend can be incorporated into Azure Pipelines, highlighting its features in security, quality, and compliance for open-source software. It emphasizes continuous detection, security notifications, and automated enforcement of standards.](https://kodekloud.com/kk-media/image/upload/v1752868014/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Integrating-Mend-and-GitHub-Dependabot/mend-azure-pipelines-security-diagram.jpg)
 
 By integrating Mend, your pipelines will block builds that violate security or license policies, ensuring that only compliant artifacts are deployed.
 
@@ -63,7 +63,7 @@ GitHub Dependabot automates dependency version updates and vulnerability remedia
 | Pull Request Automation     | Automatically generates PRs to update dependencies            | Reduces manual maintenance overhead         |
 | Assessment & Prioritization | Reviews and ranks updates by severity and impact              | Focuses efforts on high-risk upgrades first |
 
-![The image is an infographic titled "Activating GitHub Dependabot for Enhanced Security," outlining four steps: Updates Monitoring, Security Notifications, Pull Request Automation, and Assessment and Prioritization. Each step includes a brief description and an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868015/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Integrating-Mend-and-GitHub-Dependabot/activating-github-dependabot-security-infographic.jpg)
+![The image is an infographic titled "Activating GitHub Dependabot for Enhanced Security," outlining four steps: Updates Monitoring, Security Notifications, Pull Request Automation, and Assessment and Prioritization. Each step includes a brief description and an icon.](https://kodekloud.com/kk-media/image/upload/v1752868015/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Integrating-Mend-and-GitHub-Dependabot/activating-github-dependabot-security-infographic.jpg)
 
 ## Conclusion
 

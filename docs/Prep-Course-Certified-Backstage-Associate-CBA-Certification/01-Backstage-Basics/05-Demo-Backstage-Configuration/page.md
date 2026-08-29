@@ -257,9 +257,7 @@ curl localhost:3000
 
 This should return the frontend HTML (index page) when the dev server is running.
 
-<Callout icon="warning">
-  When running Backstage on a remote server, the webpack dev server commonly binds to `localhost` (loopback) by default. To access the frontend from your workstation you must either bind the dev server to `0.0.0.0`, configure an SSH tunnel, or put a reverse proxy (e.g., Nginx) in front of the app. Also ensure firewall and security group rules allow required ports.
-</Callout>
+> **warning** When running Backstage on a remote server, the webpack dev server commonly binds to `localhost` (loopback) by default. To access the frontend from your workstation you must either bind the dev server to `0.0.0.0`, configure an SSH tunnel, or put a reverse proxy (e.g., Nginx) in front of the app. Also ensure firewall and security group rules allow required ports.
 
 ## Accessing Backstage from your workstation (remote tips)
 
@@ -278,9 +276,7 @@ The exact configuration changes (binding hosts, setting `baseUrl`, and reverse p
 * nvm README: [https://github.com/nvm-sh/nvm#install--update-script](https://github.com/nvm-sh/nvm#install--update-script)
 * Backstage docs: [https://backstage.io/docs/](https://backstage.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/fcbbf923-69c3-4147-bd51-18db2bd18957/lesson/82ca2c42-4741-4886-bac9-1816d7c96071" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/fcbbf923-69c3-4147-bd51-18db2bd18957/lesson/82ca2c42-4741-4886-bac9-1816d7c96071)
 
 
 # Demo Backstage Configuration

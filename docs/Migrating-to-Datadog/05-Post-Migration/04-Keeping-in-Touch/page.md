@@ -24,9 +24,7 @@ Below are a few official Datadog resources worth bookmarking and recommending to
 
 Another complementary hub provides on-demand courses, labs, live streams, and webinars to deepen practical skills across the Datadog platform.
 
-<Callout icon="lightbulb">
-  Practical ways to stay up to date: subscribe to Datadog’s [release notes](https://docs.datadoghq.com/release_notes/) and [blog](https://www.datadoghq.com/blog/) RSS feeds, follow Datadog on LinkedIn and Twitter, join community forums or Slack groups, and bookmark the [status](https://status.datadoghq.com/) and [documentation](https://docs.datadoghq.com/) pages for quick reference.
-</Callout>
+> **lightbulb** Practical ways to stay up to date: subscribe to Datadog’s [release notes](https://docs.datadoghq.com/release_notes/) and [blog](https://www.datadoghq.com/blog/) RSS feeds, follow Datadog on LinkedIn and Twitter, join community forums or Slack groups, and bookmark the [status](https://status.datadoghq.com/) and [documentation](https://docs.datadoghq.com/) pages for quick reference.
 
 ## How to share these resources with your team
 
@@ -56,6 +54,4 @@ This is the final lesson. I hope you enjoyed the content as much as I enjoyed te
 
 See you around!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9add8e22-a057-4808-880b-be8b91e0d5f2/lesson/304b9664-7991-4030-b49c-65d871b65474" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9add8e22-a057-4808-880b-be8b91e0d5f2/lesson/304b9664-7991-4030-b49c-65d871b65474)

@@ -63,9 +63,7 @@ kubectl get pod
 
 To enable Python auto-instrumentation for a Deployment, add the annotation `instrumentation.opentelemetry.io/inject-python: "true"` to the pod template. You can also reference a specific Instrumentation CR by name (e.g., `"python-instrumentation"`) or use cross-namespace format (`"other-namespace/my-instrumentation"`).
 
-<Callout icon="lightbulb">
-  Add `instrumentation.opentelemetry.io/inject-python: "true"` to your Deployment pod template to enable Python auto-instrumentation. You may also set the annotation value to the Instrumentation CR name to bind to a specific configuration.
-</Callout>
+> **lightbulb** Add `instrumentation.opentelemetry.io/inject-python: "true"` to your Deployment pod template to enable Python auto-instrumentation. You may also set the annotation value to the Instrumentation CR name to bind to a specific configuration.
 
 The operator documentation lists language-specific annotation options for other runtimes as well.
 
@@ -188,11 +186,9 @@ Steps recap:
 
 If you need help adapting this to another runtime (Java, Node.js, .NET), the operator supports language-specific annotations — see the Operator docs for details.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/7c9cc52b-a375-4522-b13d-db6a7dbf6a07" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/7c9cc52b-a375-4522-b13d-db6a7dbf6a07)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/e46b9969-6a0d-4605-beaf-6f821a5319f4" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/e46b9969-6a0d-4605-beaf-6f821a5319f4)
 
 
 # Demo OpenTelemetry Operator

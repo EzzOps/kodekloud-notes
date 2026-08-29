@@ -54,13 +54,9 @@ Resources and references
 * [Gateway API](https://gateway-api.sigs.k8s.io/)
 * [Kubernetes Concepts](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<Callout icon="lightbulb">
-  This course emphasizes hands-on labs. Make sure you have a suitable Kubernetes environment available (local kind/minikube, cloud cluster, or sandbox) to complete the exercises.
-</Callout>
+> **lightbulb** This course emphasizes hands-on labs. Make sure you have a suitable Kubernetes environment available (local kind/minikube, cloud cluster, or sandbox) to complete the exercises.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/7d8b3ee7-bf76-4895-804e-ed083146ca1a/lesson/ce20cabd-b05a-44f5-9c7e-cd5521e5dca6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/7d8b3ee7-bf76-4895-804e-ed083146ca1a/lesson/ce20cabd-b05a-44f5-9c7e-cd5521e5dca6)
 
 
 # Exam Overview
@@ -77,9 +73,7 @@ Cilium Certified Associate (CCA) is an entry-level certification that validates 
   <img alt="A presentation slide titled &#x22;Cilium Certified Associate (CCA) – Overview&#x22; with three cards: &#x22;Who is it for,&#x22; &#x22;About the certification,&#x22; and &#x22;What it demonstrates.&#x22; It summarizes an entry-level certification that validates foundational knowledge in connecting, securing, and observing Kubernetes clusters using Cilium and the features/benefits/use cases it covers." />
 </Frame>
 
-<Callout icon="lightbulb">
-  This overview focuses on the knowledge you’ll be expected to demonstrate: Cilium architecture, network policy, observability (Hubble), eBPF fundamentals, installation/operations, Cluster Mesh, and external networking (BGP). Use the domain weights below to prioritize study time.
-</Callout>
+> **lightbulb** This overview focuses on the knowledge you’ll be expected to demonstrate: Cilium architecture, network policy, observability (Hubble), eBPF fundamentals, installation/operations, Cluster Mesh, and external networking (BGP). Use the domain weights below to prioritize study time.
 
 Exam logistics
 
@@ -91,9 +85,7 @@ Exam logistics
 | Passing score          | 75%                                     |
 | Certification validity | 2 years                                 |
 
-<Callout icon="warning">
-  The exam is proctored — the proctor has access to your webcam and microphone. Prepare your environment (lighting, background, and ID) and follow the proctor’s instructions to avoid interruptions or disqualification.
-</Callout>
+> **warning** The exam is proctored — the proctor has access to your webcam and microphone. Prepare your environment (lighting, background, and ID) and follow the proctor’s instructions to avoid interruptions or disqualification.
 
 <Frame>
   <img alt="The image is a &#x22;Certification Details&#x22; slide showing five colored cards that list exam info: Exam Format: Online, Question Type: Multiple choice, Duration: 90 minutes, Passing Score: 75% to pass, and Validity: 2 years. Each card has a small icon and a gradient-colored header." />

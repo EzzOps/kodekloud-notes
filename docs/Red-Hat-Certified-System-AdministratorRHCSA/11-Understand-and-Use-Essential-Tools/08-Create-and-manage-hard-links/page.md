@@ -55,9 +55,7 @@ For more detailed information, consider exploring the [Linux Documentation](http
 
 We'll see you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/35ac6ee8-8739-4c54-b428-ec3d0af7a53c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/35ac6ee8-8739-4c54-b428-ec3d0af7a53c)
 
 
 # Create and manage hard links
@@ -161,9 +159,7 @@ the inode link count drops to zero and the underlying data is removed from the d
 
 ## Limitations and Considerations
 
-<Callout icon="lightbulb">
-  Hard links are subject to certain restrictions and best practices:
-</Callout>
+> **lightbulb** Hard links are subject to certain restrictions and best practices:
 
 | Consideration     | Details                                                                                                                                                   |
 | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -188,6 +184,4 @@ Hard links are a robust feature of Linux file systems, enabling efficient file s
 
 In this lesson, we examined the concept, usage, and limitations of hard links. For more insights into Linux file system management, continue exploring the additional lessons in this series.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/93452462-137c-4113-8a9e-b5a494fb8c4f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/93452462-137c-4113-8a9e-b5a494fb8c4f)

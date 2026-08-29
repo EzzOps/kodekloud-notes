@@ -259,21 +259,15 @@ For further details on configuration options, consult the manual pages. Here are
 
 1. When reviewing the manual for the SSH daemon configuration, you can search for “AddressFamily” by typing `/Family` in the less pager. This highlights the corresponding section in the manual.
 
-<Frame>
-  ![The image shows a terminal window displaying the manual page for the sshd\_config file, which is the configuration file for the OpenSSH SSH daemon. It includes a description of how the file is used and details about specific configuration options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883589/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-key-based-authentication-for-SSH/sshd-config-manual-page-terminal.jpg)
-</Frame>
+![The image shows a terminal window displaying the manual page for the sshd\_config file, which is the configuration file for the OpenSSH SSH daemon. It includes a description of how the file is used and details about specific configuration options.](https://kodekloud.com/kk-media/image/upload/v1752883589/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-key-based-authentication-for-SSH/sshd-config-manual-page-terminal.jpg)
 
 2. To better understand various SSH authentication methods, search for “password” in the SSHD manual page. This returns information on public key, password, and other authentication techniques.
 
-<Frame>
-  ![The image shows a terminal window displaying a manual page for SSHD configuration, focusing on authentication methods like public key and password.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883590/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-key-based-authentication-for-SSH/sshd-configuration-authentication-manual.jpg)
-</Frame>
+![The image shows a terminal window displaying a manual page for SSHD configuration, focusing on authentication methods like public key and password.](https://kodekloud.com/kk-media/image/upload/v1752883590/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-key-based-authentication-for-SSH/sshd-configuration-authentication-manual.jpg)
 
 3. Additional details on settings such as `PasswordAuthentication` and `MaxAuthTries` are visible further down the manual page.
 
-<Frame>
-  ![The image shows a terminal window displaying a manual page for SSHD configuration settings, including options like PasswordAuthentication and MaxAuthTries.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883591/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-key-based-authentication-for-SSH/sshd-configuration-manual-terminal.jpg)
-</Frame>
+![The image shows a terminal window displaying a manual page for SSHD configuration settings, including options like PasswordAuthentication and MaxAuthTries.](https://kodekloud.com/kk-media/image/upload/v1752883591/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-key-based-authentication-for-SSH/sshd-configuration-manual-terminal.jpg)
 
 ──────────────────────────────────────────────
 
@@ -291,11 +285,9 @@ sudo systemctl reload sshd.service
 
 Proceed to your next lab or lecture for more advanced configurations. Happy configuring!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5935b82f-37ac-4f4e-b619-0a6f8824088b/lesson/5c3d18b6-028f-44d8-a316-eaa8ea4b7f82" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5935b82f-37ac-4f4e-b619-0a6f8824088b/lesson/5c3d18b6-028f-44d8-a316-eaa8ea4b7f82)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5935b82f-37ac-4f4e-b619-0a6f8824088b/lesson/77a2ee68-ab4a-4648-90db-ec1c58dbc6c4" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5935b82f-37ac-4f4e-b619-0a6f8824088b/lesson/77a2ee68-ab4a-4648-90db-ec1c58dbc6c4)
 
 
 # List and Identify SELinux file and process contexts
@@ -341,9 +333,7 @@ unconfined_u:object_r:user_home_t:s0
 
 When an action is initiated, SELinux evaluates it by sequentially checking the SELinux user, role, and type/domain. This layered methodology ensures that only authorized processes access specific domains, thereby denying unauthorized actions.
 
-<Callout icon="lightbulb">
-  Remember: In SELinux, only files with the correct type (e.g., `sshd_exec_t` for SSH daemon) can initiate a process that transitions into the corresponding security domain.
-</Callout>
+> **lightbulb** Remember: In SELinux, only files with the correct type (e.g., `sshd_exec_t` for SSH daemon) can initiate a process that transitions into the corresponding security domain.
 
 ## Exploring Process Contexts
 
@@ -378,9 +368,7 @@ __default__   unconfined_u      s0-s0:c0.c1023   *
 root          unconfined_u      s0-s0:c0.c1023   *
 ```
 
-<Callout icon="lightbulb">
-  The default mapping assigns non-root users to the `unconfined_u` SELinux user, ensuring that even root processes are subject to the same security policies.
-</Callout>
+> **lightbulb** The default mapping assigns non-root users to the `unconfined_u` SELinux user, ensuring that even root processes are subject to the same security policies.
 
 ## Checking SELinux Enforcement Status
 
@@ -409,6 +397,4 @@ For further details and practical exercises to strengthen your understanding of 
 * [SELinux Project Wiki](https://selinuxproject.org/page/Main_Page)
 * [Linux Security Modules Documentation](https://www.kernel.org/doc/html/latest/security/LSM.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5935b82f-37ac-4f4e-b619-0a6f8824088b/lesson/6d5cd666-0642-4f1b-9c7a-7c97afaba6b6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5935b82f-37ac-4f4e-b619-0a6f8824088b/lesson/6d5cd666-0642-4f1b-9c7a-7c97afaba6b6)

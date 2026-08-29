@@ -33,9 +33,7 @@ Typical request flow (high level):
 4. The LLM returns a response.
 5. The application persists relevant parts of the exchange to history (for retrieval, analytics, or future turns).
 
-<Callout icon="lightbulb">
-  Design tip: Always plan how context and history will be retrieved and injected into prompts. Proper retrieval and prompt management are key to reducing hallucinations and maintaining conversational continuity.
-</Callout>
+> **lightbulb** Design tip: Always plan how context and history will be retrieved and injected into prompts. Proper retrieval and prompt management are key to reducing hallucinations and maintaining conversational continuity.
 
 Now let's map these building blocks to a familiar example: ChatGPT.
 
@@ -74,6 +72,4 @@ Links and references
 * [Introduction to OpenAI (KodeKloud)](https://learn.kodekloud.com/user/courses/introduction-to-openai)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/bb8afda8-9de9-4865-aabf-bc71786440b2/lesson/cdbda88c-a83b-4ffa-a209-1ab62aaa00f7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/bb8afda8-9de9-4865-aabf-bc71786440b2/lesson/cdbda88c-a83b-4ffa-a209-1ab62aaa00f7)

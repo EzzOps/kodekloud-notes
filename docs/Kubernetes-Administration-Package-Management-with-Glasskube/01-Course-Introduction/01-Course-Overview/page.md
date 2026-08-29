@@ -102,9 +102,7 @@ When you see `Deployment does not have minimum availability`, either increase th
 | Init container logs    | `kubectl logs <pod-name> -c storage-initializer -n kserve-inference` | See storage initialization errors (auth, repo not found)  |
 | Predictor logs         | `kubectl logs <pod-name> -c predictor -n kserve-inference`           | Runtime errors from the serving process                   |
 
-<Callout icon="lightbulb">
-  Read the `conditions` -> `message` field first. It's the single most useful piece of information KServe provides about why an InferenceService isn't becoming ready.
-</Callout>
+> **lightbulb** Read the `conditions` -> `message` field first. It's the single most useful piece of information KServe provides about why an InferenceService isn't becoming ready.
 
 Practical troubleshooting based on messages:
 
@@ -140,11 +138,9 @@ Useful links and references:
 
 By following this checklist and reading the `reason` and `message` fields in KServe conditions, you can distinguish a slow initial load from an actual failure and take the correct corrective action.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/a36eb0a9-2bc9-49ad-81eb-911c642e9b74/lesson/a48f15fe-664e-4047-b40f-54bfe40e0e05" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/a36eb0a9-2bc9-49ad-81eb-911c642e9b74/lesson/a48f15fe-664e-4047-b40f-54bfe40e0e05)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/a36eb0a9-2bc9-49ad-81eb-911c642e9b74/lesson/73db3bbb-9a03-45e6-b30b-d2289401fd9f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/a36eb0a9-2bc9-49ad-81eb-911c642e9b74/lesson/73db3bbb-9a03-45e6-b30b-d2289401fd9f)
 
 
 # Course Overview
@@ -211,12 +207,8 @@ Course format and labs
 * Step-by-step exercises guide you through installing five common packages with Glasskube, validating deployments, and troubleshooting common issues.
 * Each lab includes expected outputs, troubleshooting tips, and links to the upstream chart or project.
 
-<Callout icon="lightbulb">
-  Join the community to ask questions, share insights, and collaborate with fellow learners as you progress through the labs and exercises.
-</Callout>
+> **lightbulb** Join the community to ask questions, share insights, and collaborate with fellow learners as you progress through the labs and exercises.
 
 Ready to get started? Enroll now and take the first step toward mastering Kubernetes package management with Glasskube.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/6a6d19ed-9f2a-45fc-8c60-f748be0831b2/lesson/eecd6706-9e26-4f67-ab88-476af9ddf006" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/6a6d19ed-9f2a-45fc-8c60-f748be0831b2/lesson/eecd6706-9e26-4f67-ab88-476af9ddf006)

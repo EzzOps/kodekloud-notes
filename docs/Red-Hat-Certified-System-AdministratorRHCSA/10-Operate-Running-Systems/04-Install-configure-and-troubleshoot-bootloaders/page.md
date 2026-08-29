@@ -56,9 +56,7 @@ After these messages, you will be presented with several options as the rescue e
 
 For this demonstration, choose option 1 to allow the rescue environment to locate and mount your installed system.
 
-<Callout icon="lightbulb">
-  After mounting your system under `/mnt/sysroot`, change your root directory to this environment. Using the `chroot` command lets you operate as if you are working directly on your installed Linux system.
-</Callout>
+> **lightbulb** After mounting your system under `/mnt/sysroot`, change your root directory to this environment. Using the `chroot` command lets you operate as if you are working directly on your installed Linux system.
 
 Once mounted, execute the following commands:
 
@@ -151,16 +149,12 @@ For EFI systems, generate the configuration file in the EFI partition with:
 
 Once the configuration file is regenerated, reboot your machine to observe the updated GRUB menu. With a timeout set to one second, the menu will only appear briefly during boot.
 
-<Callout icon="lightbulb">
-  After confirming that your system boots correctly, you can fine-tune your GRUB settings further by editing `/etc/default/grub` and regenerating the configuration file as needed.
-</Callout>
+> **lightbulb** After confirming that your system boots correctly, you can fine-tune your GRUB settings further by editing `/etc/default/grub` and regenerating the configuration file as needed.
 
 This concludes our demonstration on bootloader installation, configuration, and troubleshooting. Thank you for following along, and see you in the next article!
 
 For further reading, check out [Kubernetes Documentation](https://kubernetes.io/docs/) and [Docker Hub](https://hub.docker.com/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/837a2e77-ffbf-4a90-abe9-88e70c06b3f0" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/837a2e77-ffbf-4a90-abe9-88e70c06b3f0)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/00ac5f6e-e06d-4983-962b-d17dd5b4be44" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/00ac5f6e-e06d-4983-962b-d17dd5b4be44)

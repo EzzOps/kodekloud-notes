@@ -78,9 +78,7 @@ spec:
 
 When applied, Kyverno immediately scans for all existing Namespaces and creates the `default-deny` NetworkPolicy in each, closing the compliance gap and enforcing a consistent security baseline.
 
-<Callout icon="lightbulb">
-  Historically, `generateExisting` was configured at the policy top-level (deprecated). The correct placement is inside each rule's `generate` block (`spec.rules[*].generate.generateExisting`), which allows per-rule retroactive behavior while keeping other rules forward-looking.
-</Callout>
+> **lightbulb** Historically, `generateExisting` was configured at the policy top-level (deprecated). The correct placement is inside each rule's `generate` block (`spec.rules[*].generate.generateExisting`), which allows per-rule retroactive behavior while keeping other rules forward-looking.
 
 Deprecated (old) placement — you may encounter this in older docs or examples:
 

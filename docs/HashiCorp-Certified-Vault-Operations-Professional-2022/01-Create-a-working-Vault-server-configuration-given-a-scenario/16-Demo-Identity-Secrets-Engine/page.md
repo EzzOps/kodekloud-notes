@@ -23,9 +23,7 @@ In the Vault UI, a privileged user can:
 
 An unprivileged user then goes to **Tools → Unwrap Secret**, pastes the token, and retrieves the secret.
 
-<Frame>
-  ![The image shows a web interface for HashiCorp Vault, displaying a secret with a key-value pair under the "training" section. A notification at the bottom indicates a secret was successfully wrapped.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878420/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Cubbyhole-Secrets-Engine/hashicorp-vault-web-interface-secret-training.jpg)
-</Frame>
+![The image shows a web interface for HashiCorp Vault, displaying a secret with a key-value pair under the "training" section. A notification at the bottom indicates a secret was successfully wrapped.](https://kodekloud.com/kk-media/image/upload/v1752878420/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Cubbyhole-Secrets-Engine/hashicorp-vault-web-interface-secret-training.jpg)
 
 ***
 
@@ -53,11 +51,9 @@ By following this guide, you can securely share secrets without exposing them di
 
 [wrapping-docs]: https://www.vaultproject.io/docs/concepts/response-wrapping
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/4b3224f2-2952-45d2-95f8-dc95b46714a0" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/4b3224f2-2952-45d2-95f8-dc95b46714a0)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/9e8d0533-11b3-4299-81b1-0eece13c20e6" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/9e8d0533-11b3-4299-81b1-0eece13c20e6)
 
 
 # Demo Identity Secrets Engine
@@ -75,11 +71,9 @@ In this guide, you’ll learn how to leverage the HashiCorp Vault Identity Secre
 
 Before you begin, make sure a Vault server is running and you have a root token.
 
-<Callout icon="lightbulb">
-  * Vault ≥ 1.0 installed and unsealed
+> **lightbulb** * Vault ≥ 1.0 installed and unsealed
   * Root token for policy/entity management
   * `vault` CLI available in your `$PATH`
-</Callout>
 
 ***
 
@@ -198,9 +192,7 @@ vault kv get kv/operations/admin
 Error reading kv/data/operations/admin: 403 Permission denied
 ```
 
-<Callout icon="triangle-alert">
-  You should see a **403 Permission denied** error because `kv-policy` does not cover `operations/**`.
-</Callout>
+> **triangle-alert** You should see a **403 Permission denied** error because `kv-policy` does not cover `operations/**`.
 
 ***
 
@@ -307,27 +299,19 @@ You can repeat this process to add additional aliases (e.g., [GitHub](https://ww
 1. In the Vault UI, navigate to **Access → Entities**.
 2. Create or delete entities, view details, and manage aliases.
 
-<Frame>
-  ![The image shows a user interface for managing entities in a system, displaying details such as name, ID, and timestamps for creation and last update. It appears to be part of a software application related to access management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878422/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Identity-Secrets-Engine/access-management-entity-ui-details.jpg)
-</Frame>
+![The image shows a user interface for managing entities in a system, displaying details such as name, ID, and timestamps for creation and last update. It appears to be part of a software application related to access management.](https://kodekloud.com/kk-media/image/upload/v1752878422/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Identity-Secrets-Engine/access-management-entity-ui-details.jpg)
 
 3. To add an alias, choose **Create Entity Alias**:
 
-<Frame>
-  ![The image shows a web interface for creating an entity alias in HashiCorp Vault, with fields for "Name" and "Auth Backend" and options to create or cancel.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878423/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Identity-Secrets-Engine/hashicorp-vault-entity-alias-interface.jpg)
-</Frame>
+![The image shows a web interface for creating an entity alias in HashiCorp Vault, with fields for "Name" and "Auth Backend" and options to create or cancel.](https://kodekloud.com/kk-media/image/upload/v1752878423/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Identity-Secrets-Engine/hashicorp-vault-entity-alias-interface.jpg)
 
 4. Inspect token settings and policies:
 
-<Frame>
-  ![The image shows a user interface for managing access in HashiCorp Vault, displaying token settings and policies for a user named "bryan." The sidebar includes options like Auth Methods, Entities, and Groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878424/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Identity-Secrets-Engine/hashicorp-vault-user-interface-bryan.jpg)
-</Frame>
+![The image shows a user interface for managing access in HashiCorp Vault, displaying token settings and policies for a user named "bryan." The sidebar includes options like Auth Methods, Entities, and Groups.](https://kodekloud.com/kk-media/image/upload/v1752878424/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Identity-Secrets-Engine/hashicorp-vault-user-interface-bryan.jpg)
 
 5. View or merge entities as needed:
 
-<Frame>
-  ![The image shows a web interface for managing entities in HashiCorp Vault, displaying a list of entities with their aliases and options to merge or create new entities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878425/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Identity-Secrets-Engine/hashicorp-vault-entity-management-interface.jpg)
-</Frame>
+![The image shows a web interface for managing entities in HashiCorp Vault, displaying a list of entities with their aliases and options to merge or create new entities.](https://kodekloud.com/kk-media/image/upload/v1752878425/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Identity-Secrets-Engine/hashicorp-vault-entity-management-interface.jpg)
 
 ***
 
@@ -337,6 +321,4 @@ You can repeat this process to add additional aliases (e.g., [GitHub](https://ww
 * [Userpass Auth Method](https://www.vaultproject.io/docs/auth/userpass)
 * [Vault CLI Commands](https://www.vaultproject.io/docs/commands)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/f695566f-8dbe-454e-8c59-ccb5a035daf5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/f695566f-8dbe-454e-8c59-ccb5a035daf5)

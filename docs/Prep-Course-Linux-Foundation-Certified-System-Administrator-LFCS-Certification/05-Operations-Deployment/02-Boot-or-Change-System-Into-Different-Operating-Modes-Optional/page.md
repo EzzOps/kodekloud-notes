@@ -29,9 +29,7 @@ $ sudo systemctl power off --force
 
 If a single force does not succeed, you may specify the force flag twice. This method functions similar to pressing the physical reset button, immediately rebooting the system without allowing programs to close properly or save their data.
 
-<Callout icon="triangle-alert">
-  Forcing a reboot or shutdown can result in data loss. Use the force option only as a last resort.
-</Callout>
+> **triangle-alert** Forcing a reboot or shutdown can result in data loss. Use the force option only as a last resort.
 
 ## Scheduling Reboots and Shutdowns
 
@@ -86,9 +84,7 @@ By following these system commands and scheduling techniques, you can manage the
 
 For additional Linux administration tips, please refer to [the official Linux documentation](https://www.kernel.org/doc/html/latest/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/d65ba901-1f95-4591-a0ce-5d4442a085b9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/d65ba901-1f95-4591-a0ce-5d4442a085b9)
 
 
 # Boot or Change System Into Different Operating Modes Optional
@@ -113,9 +109,7 @@ Booting into the graphical target requires additional system resources due to th
 sudo systemctl set-default multi-user.target
 ```
 
-<Callout icon="lightbulb">
-  Changing the default boot target means that on the next reboot, the system will operate in text mode rather than launching a graphical interface.
-</Callout>
+> **lightbulb** Changing the default boot target means that on the next reboot, the system will operate in text mode rather than launching a graphical interface.
 
 Below is an example session showing how to check and change the default boot target:
 

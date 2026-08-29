@@ -38,7 +38,7 @@ AWS Mainframe Modernization offers a robust set of features to support your enti
 * **Managed Runtime**: Enjoy a managed execution environment that continuously monitors clusters, providing self-healing compute and automated scaling to support enterprise workloads.
 * **CI/CD**: Benefit from built-in continuous integration and delivery capabilities that help deployment teams update code reliably and reduce time-to-market.
 
-![The image lists AWS Mainframe Modernization Features, including Assess, Refactor, AWS Blu Insights, Replatform, Developer IDE, Manage Runtime, and CI/CD. Each feature is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865399/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Mainframe-Modernization/aws-mainframe-modernization-features.jpg)
+![The image lists AWS Mainframe Modernization Features, including Assess, Refactor, AWS Blu Insights, Replatform, Developer IDE, Manage Runtime, and CI/CD. Each feature is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752865399/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-AWS-Mainframe-Modernization/aws-mainframe-modernization-features.jpg)
 
 > **triangle-alert** Ensure that you assess your organization's readiness and choose the approach—refactoring or replatforming—that best aligns with your modernization goals to avoid potential pitfalls during the migration process.
 

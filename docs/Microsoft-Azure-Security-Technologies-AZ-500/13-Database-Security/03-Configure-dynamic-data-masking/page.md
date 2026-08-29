@@ -30,19 +30,13 @@ You can easily add a masking rule to a specific column in your SQL database via 
 2. Select the Customer table and choose the column to mask (for example, Email Address).
 3. Choose the "Email" option from the available masking formats.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for adding a masking rule to a SQL database, specifically for masking email addresses in the "Customer" table of the "SalesLT" schema. Various masking field format options are available, such as default value and email format.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881768/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-dynamic-data-masking/azure-sql-masking-rule-email.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for adding a masking rule to a SQL database, specifically for masking email addresses in the "Customer" table of the "SalesLT" schema. Various masking field format options are available, such as default value and email format.](https://kodekloud.com/kk-media/image/upload/v1752881768/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-dynamic-data-masking/azure-sql-masking-rule-email.jpg)
 
 Once the mask is applied, running a query will display masked data (such as the email address) for users lacking elevated privileges.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for configuring Dynamic Data Masking on a SQL database, with a masking rule applied to the "EmailAddress" column in the "Customer" table.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881769/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-dynamic-data-masking/azure-dynamic-data-masking-sql.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for configuring Dynamic Data Masking on a SQL database, with a masking rule applied to the "EmailAddress" column in the "Customer" table.](https://kodekloud.com/kk-media/image/upload/v1752881769/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-dynamic-data-masking/azure-dynamic-data-masking-sql.jpg)
 
-<Callout icon="lightbulb">
-  After adding the mask rule, when you query the database, masked data is returned for non-administrative users. However, administrators who have higher privileges will see unmasked information.
-</Callout>
+> **lightbulb** After adding the mask rule, when you query the database, masked data is returned for non-administrative users. However, administrators who have higher privileges will see unmasked information.
 
 ## Verifying the Masked Data
 
@@ -99,6 +93,4 @@ This concludes our discussion on dynamic data masking. For further security, con
 * [Azure SQL Database Documentation](https://learn.microsoft.com/en-us/azure/azure-sql/)
 * [Understanding Dynamic Data Masking](https://learn.microsoft.com/en-us/azure/azure-sql/database/dynamic-data-masking-overview)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d199f126-f1df-43a8-bd3d-68cd689d509d/lesson/52ea71ec-7533-4e9c-b83c-78966f2237cd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d199f126-f1df-43a8-bd3d-68cd689d509d/lesson/52ea71ec-7533-4e9c-b83c-78966f2237cd)

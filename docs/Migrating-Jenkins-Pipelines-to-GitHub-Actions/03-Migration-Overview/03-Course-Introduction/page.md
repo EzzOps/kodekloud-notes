@@ -123,10 +123,6 @@ References and further reading
 * Kubernetes: [https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial)
 * AWS Lambda: [https://learn.kodekloud.com/user/courses/aws-lambda](https://learn.kodekloud.com/user/courses/aws-lambda)
 
-<Callout icon="lightbulb">
-  This lesson covers the migration plan and technical considerations for replacing Jenkins with GitHub Actions, including how to map existing Jenkins stages (build, test, security scans, image publishing, and deployments) into GitHub workflows while keeping Docker, Kubernetes, and serverless targets in mind.
-</Callout>
+> **lightbulb** This lesson covers the migration plan and technical considerations for replacing Jenkins with GitHub Actions, including how to map existing Jenkins stages (build, test, security scans, image publishing, and deployments) into GitHub workflows while keeping Docker, Kubernetes, and serverless targets in mind.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/c8922198-0dcd-4910-9545-21e08f8a847c/lesson/d83f96f2-d699-495a-b4c1-46994fbc2534" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/c8922198-0dcd-4910-9545-21e08f8a847c/lesson/d83f96f2-d699-495a-b4c1-46994fbc2534)

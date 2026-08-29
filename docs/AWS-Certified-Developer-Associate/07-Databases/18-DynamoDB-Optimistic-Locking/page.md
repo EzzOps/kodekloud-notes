@@ -19,7 +19,7 @@ However, consider a scenario where two users simultaneously read the item at ver
 
 Since the first update has already incremented the version, the conditional update from the second user fails, as the expected version does not match the current version. This is the point where optimistic locking prevents unintentional overwrites and avoids race conditions.
 
-![The image illustrates the concept of optimistic locking in DynamoDB, showing the progression of item versions and quantities as users read and write data. It depicts an initial table state and subsequent updates by two users, highlighting changes in quantity and version.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858765/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Optimistic-Locking/optimistic-locking-dynamodb-diagram.jpg)
+![The image illustrates the concept of optimistic locking in DynamoDB, showing the progression of item versions and quantities as users read and write data. It depicts an initial table state and subsequent updates by two users, highlighting changes in quantity and version.](https://kodekloud.com/kk-media/image/upload/v1752858765/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Optimistic-Locking/optimistic-locking-dynamodb-diagram.jpg)
 
 > **lightbulb** When performing an update, DynamoDB uses a conditional write operation. This operation checks that the version number of the item being updated matches the version number that was originally read. If the condition fails, the update is aborted, indicating that another operation has modified the item.
 
@@ -33,7 +33,7 @@ The typical process for applying optimistic locking in DynamoDB is as follows:
 4. **Increment the version:** If the write operation succeeds, increment the version number of the item.
 5. **Handle conflicts:** If the operation fails due to a version mismatch, retrieve the latest version of the item and retry the update operation using an exponential backoff strategy.
 
-![The image illustrates the concept of optimistic locking in DynamoDB, showing a sequence of table states with item, quantity, and version changes, highlighting a conflict in version updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858766/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Optimistic-Locking/optimistic-locking-dynamodb-diagram-2.jpg)
+![The image illustrates the concept of optimistic locking in DynamoDB, showing a sequence of table states with item, quantity, and version changes, highlighting a conflict in version updates.](https://kodekloud.com/kk-media/image/upload/v1752858766/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Optimistic-Locking/optimistic-locking-dynamodb-diagram-2.jpg)
 
 > **triangle-alert** If multiple processes frequently update the same item, be careful to implement an adequate retry mechanism. Failure to do so may result in increased latency or frequent update failures.
 
@@ -47,7 +47,7 @@ Under the hood, DynamoDB uses conditional writes to enforce version checks. The 
 4. If the conditional write is successful, the version number is incremented.
 5. In case of a version mismatch, the operation fails and can be retried after fetching the latest data with exponential backoff.
 
-![The image is a flowchart illustrating the process of optimistic locking in DynamoDB. It shows steps for reading, modifying, and writing item data with version checks, including handling success and retrying on failure with exponential backoff.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858767/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Optimistic-Locking/optimistic-locking-dynamodb-flowchart.jpg)
+![The image is a flowchart illustrating the process of optimistic locking in DynamoDB. It shows steps for reading, modifying, and writing item data with version checks, including handling success and retrying on failure with exponential backoff.](https://kodekloud.com/kk-media/image/upload/v1752858767/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Optimistic-Locking/optimistic-locking-dynamodb-flowchart.jpg)
 
 ## Conclusion
 

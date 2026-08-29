@@ -32,9 +32,7 @@ if __name__ == "__main__":
 
 When you access `/read_file` without configuring persistent storage, you will encounter an error due to a missing file or directory on the pod.
 
-<Callout icon="lightbulb">
-  To troubleshoot this error, use the OpenShift Web Console to access the pod's terminal. This allows you to execute commands to inspect file paths and mounts within the container.
-</Callout>
+> **lightbulb** To troubleshoot this error, use the OpenShift Web Console to access the pod's terminal. This allows you to execute commands to inspect file paths and mounts within the container.
 
 ## Setting Up Persistent Storage
 
@@ -76,9 +74,7 @@ drwxr-xr-x  42 root root   4096 May  2  18:38 var
 
 Navigate to the Storage section in the OpenShift Web Console and click on **Create Storage**. Provide a name for your storage claim and specify the desired size.
 
-<Frame>
-  ![The image shows the OpenShift Web Console interface, specifically the "Create Storage" page, where a user can define storage settings such as name, access mode, and size.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882794/notes-assets/images/OpenShift-4-Demo-Storage/openshift-web-console-create-storage.jpg)
-</Frame>
+![The image shows the OpenShift Web Console interface, specifically the "Create Storage" page, where a user can define storage settings such as name, access mode, and size.](https://kodekloud.com/kk-media/image/upload/v1752882794/notes-assets/images/OpenShift-4-Demo-Storage/openshift-web-console-create-storage.jpg)
 
 ### 3. Attach the Storage to Your Deployment
 
@@ -120,17 +116,13 @@ sh-4.2$ echo "This is a test file for persistent storage." > /data/testfile.txt
 
 After saving the file, accessing the `/read_file` endpoint in your browser will display the file's contents. Any subsequent updates to the file can be viewed by refreshing the browser.
 
-<Frame>
-  ![The image shows a web page with a blue background displaying the message "Hello from webapp-color-5-bcjg4!" and a text box containing test content.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882795/notes-assets/images/OpenShift-4-Demo-Storage/hello-from-webapp-color-5.jpg)
-</Frame>
+![The image shows a web page with a blue background displaying the message "Hello from webapp-color-5-bcjg4!" and a text box containing test content.](https://kodekloud.com/kk-media/image/upload/v1752882795/notes-assets/images/OpenShift-4-Demo-Storage/hello-from-webapp-color-5.jpg)
 
 ## Scaling the Application
 
 When scaling your application, all replicas will share the same persistent storage. As new instances are deployed, each replica will display the identical file contents. This verifies that the persistent storage is functioning correctly across the entire deployment.
 
-<Callout icon="lightbulb">
-  Using persistent storage in OpenShift not only ensures data durability but also simplifies troubleshooting and scaling. Make sure to follow best practices when configuring your deployments.
-</Callout>
+> **lightbulb** Using persistent storage in OpenShift not only ensures data durability but also simplifies troubleshooting and scaling. Make sure to follow best practices when configuring your deployments.
 
 That's it for this guide. Happy coding, and see you next time!
 
@@ -139,6 +131,4 @@ That's it for this guide. Happy coding, and see you next time!
 * [OpenShift Documentation](https://docs.openshift.com/)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/4292a2a9-628a-4826-9d2d-1fe2ee63f468" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/4292a2a9-628a-4826-9d2d-1fe2ee63f468)

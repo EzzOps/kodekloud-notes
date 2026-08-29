@@ -8,7 +8,7 @@ In this article, we explore a critical cybersecurity component in Azure—Multi-
 
 Imagine your online accounts as a highly secure vault. Relying on a single key (your password) is often not enough if that key becomes exposed. MFA acts as an extra lock, requiring not just something you know (e.g., your password), but also something you have (such as a mobile device) or something you are (like a fingerprint).
 
-![The image illustrates the concept of Multi-Factor Authentication (MFA) with icons representing a smartphone, keys, ID cards, and a certificate.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868436/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Multi-Factor-Authentication/multi-factor-authentication-icons.jpg)
+![The image illustrates the concept of Multi-Factor Authentication (MFA) with icons representing a smartphone, keys, ID cards, and a certificate.](https://kodekloud.com/kk-media/image/upload/v1752868436/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Multi-Factor-Authentication/multi-factor-authentication-icons.jpg)
 
 MFA leverages multiple independent factors for authentication. When integrated within Microsoft Entra ID, it substantially improves the protection for user sign-ins and transactions by ensuring that a single compromised credential does not grant full account access.
 
@@ -23,7 +23,7 @@ MFA leverages multiple independent factors for authentication. When integrated w
 3. **Regulatory Compliance**\
    Implementing MFA helps organizations meet stringent regulatory requirements, ensuring that sensitive data is protected in accordance with industry standards.
 
-![The image outlines the benefits of multi-factor authentication, highlighting increased security, flexibility, and compliance. Each benefit is represented with a distinct color and icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868437/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Multi-Factor-Authentication/multi-factor-authentication-benefits-diagram.jpg)
+![The image outlines the benefits of multi-factor authentication, highlighting increased security, flexibility, and compliance. Each benefit is represented with a distinct color and icon.](https://kodekloud.com/kk-media/image/upload/v1752868437/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Multi-Factor-Authentication/multi-factor-authentication-benefits-diagram.jpg)
 
 ## Common MFA Methods and Their Use Cases
 
@@ -38,9 +38,9 @@ These methods are essential for keeping corporate data secure, especially in rem
 
 > **lightbulb** Selecting the right combination of MFA methods is key to balancing security and user convenience in your organization.
 
-![The image lists common methods of multi-factor authentication: phone calls, text messages, mobile app notifications, and biometrics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868438/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Multi-Factor-Authentication/multi-factor-authentication-methods.jpg)
+![The image lists common methods of multi-factor authentication: phone calls, text messages, mobile app notifications, and biometrics.](https://kodekloud.com/kk-media/image/upload/v1752868438/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Multi-Factor-Authentication/multi-factor-authentication-methods.jpg)
 
-![The image illustrates two use cases for multi-factor authentication: securing cloud access and remote work security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868438/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Multi-Factor-Authentication/multi-factor-authentication-use-cases.jpg)
+![The image illustrates two use cases for multi-factor authentication: securing cloud access and remote work security.](https://kodekloud.com/kk-media/image/upload/v1752868438/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Multi-Factor-Authentication/multi-factor-authentication-use-cases.jpg)
 
 ## Integrating MFA with Conditional Access
 

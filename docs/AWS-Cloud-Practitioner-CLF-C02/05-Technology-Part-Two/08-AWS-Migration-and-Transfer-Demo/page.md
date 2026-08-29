@@ -6,25 +6,25 @@ Learn to configure an AWS Transfer Family SFTP server using an Amazon S3 bucket 
 
 Welcome to this AWS Cloud Practitioners lesson. In this demonstration, you'll learn how to configure the AWS Transfer Family to set up an SFTP server using an Amazon S3 bucket as its backend. This tutorial focuses on SFTP (Secure File Transfer Protocol) rather than FTPS, FTP, or AS2, ensuring a secure file transfer process over SSH.
 
-![The image is a webpage for AWS Transfer Family, highlighting secure, scalable file transfers and features like authentication, storage, user support, and security compliance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862268/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Migration-and-Transfer-Demo/frame_10.jpg)
+![The image is a webpage for AWS Transfer Family, highlighting secure, scalable file transfers and features like authentication, storage, user support, and security compliance.](https://kodekloud.com/kk-media/image/upload/v1752862268/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Migration-and-Transfer-Demo/frame_10.jpg)
 
 ## Step 1: Creating an SFTP Server
 
 Begin by navigating to the AWS Transfer Family console. Even if there is an existing server, create a new server specifically for your SFTP configuration. When prompted, select **SFTP** and opt for the service-managed identity provider.
 
-![The image shows an AWS interface for selecting an identity provider for SFTP, FTPS, or FTP, with options for service-managed, AWS Directory Service, or custom identity provider.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862269/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Migration-and-Transfer-Demo/frame_50.jpg)
+![The image shows an AWS interface for selecting an identity provider for SFTP, FTPS, or FTP, with options for service-managed, AWS Directory Service, or custom identity provider.](https://kodekloud.com/kk-media/image/upload/v1752862269/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Migration-and-Transfer-Demo/frame_50.jpg)
 
 Ensure that the server is publicly accessible using default hostnames and choose Amazon S3 for backend storage instead of EFS. Create a new IAM role without any additional managed workflows, triggers, cryptographic modifications, or host key changes. A welcome message such as “Welcome to our SFTP server, KodeKloud” will be displayed on your server.
 
 After reviewing your configuration, click **Next** followed by **Create**. The server status will initiate as "starting."
 
-![The image shows an AWS Transfer Family dashboard with two servers listed, one starting and one online, with a notification about adding users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862270/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Migration-and-Transfer-Demo/frame_90.jpg)
+![The image shows an AWS Transfer Family dashboard with two servers listed, one starting and one online, with a notification about adding users.](https://kodekloud.com/kk-media/image/upload/v1752862270/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Migration-and-Transfer-Demo/frame_90.jpg)
 
 ## Step 2: Adding a User
 
 While the server is starting, click into its details and then select **Add User**. Provide a username (for example, KodeKloud) and assign the appropriate IAM role (this can be an existing role such as an admin role). For the home directory, input a placeholder name like "KodeKloud", and then paste your public SSH key.
 
-![The image shows an AWS interface for adding a user, with fields for username, role, policy, and home directory configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862271/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Migration-and-Transfer-Demo/frame_110.jpg)
+![The image shows an AWS interface for adding a user, with fields for username, role, policy, and home directory configuration.](https://kodekloud.com/kk-media/image/upload/v1752862271/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Migration-and-Transfer-Demo/frame_110.jpg)
 
 ### Retrieving Your Public SSH Key
 
@@ -69,7 +69,7 @@ Connected to s-48d1d12f1ce004455b.server.transfer.us-east-2.amazonaws.com.
 sftp>
 ```
 
-![The image shows an AWS Transfer Family server dashboard, displaying server details like protocols, endpoint status, identity provider, and user management options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862272/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Migration-and-Transfer-Demo/frame_240.jpg)
+![The image shows an AWS Transfer Family server dashboard, displaying server details like protocols, endpoint status, identity provider, and user management options.](https://kodekloud.com/kk-media/image/upload/v1752862272/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Migration-and-Transfer-Demo/frame_240.jpg)
 
 ## Conclusion
 

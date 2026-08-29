@@ -12,16 +12,16 @@ This lesson presents detailed solutions for each question in Mock Exam Three. Ea
 
 To deploy a Kubernetes cluster using kubeadm, you must enable IPv4 packet forwarding and ensure the settings persist across reboots. Refer to the kubeadm documentation for guidance when provisioning a new cluster.
 
-![The image shows the Kubernetes documentation webpage, featuring navigation links and sections for understanding, trying, and setting up Kubernetes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869817/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Mock-Exam-3-Step-by-Step-Solutions/kubernetes-documentation-webpage.jpg)
+![The image shows the Kubernetes documentation webpage, featuring navigation links and sections for understanding, trying, and setting up Kubernetes.](https://kodekloud.com/kk-media/image/upload/v1752869817/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Mock-Exam-3-Step-by-Step-Solutions/kubernetes-documentation-webpage.jpg)
 
 Searching for “kubeadm” in the docs will help you locate the bootstrapping guide.
 
-![The image shows a search results page on the Kubernetes website for the term "kubeadm," displaying several related links and descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869818/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Mock-Exam-3-Step-by-Step-Solutions/kubeadm-search-results-kubernetes.jpg)
+![The image shows a search results page on the Kubernetes website for the term "kubeadm," displaying several related links and descriptions.](https://kodekloud.com/kk-media/image/upload/v1752869818/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Mock-Exam-3-Step-by-Step-Solutions/kubeadm-search-results-kubernetes.jpg)
 
 Navigate through the following path:
 Production Environment → Installing Kubernetes Deployment Tools → Bootstrapping a Cluster → Creating a Cluster with kubeadm.
 
-![The image shows a webpage from the Kubernetes documentation, specifically a guide on creating a cluster with kubeadm. It includes navigation links and a brief introduction to using kubeadm for setting up Kubernetes clusters.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869818/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Mock-Exam-3-Step-by-Step-Solutions/kubernetes-kubeadm-cluster-guide.jpg)
+![The image shows a webpage from the Kubernetes documentation, specifically a guide on creating a cluster with kubeadm. It includes navigation links and a brief introduction to using kubeadm for setting up Kubernetes clusters.](https://kodekloud.com/kk-media/image/upload/v1752869818/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Mock-Exam-3-Step-by-Step-Solutions/kubernetes-kubeadm-cluster-guide.jpg)
 
 The first step is to set up a container runtime and enable IPv4 packet forwarding using these commands:
 

@@ -10,9 +10,7 @@ Migrating to Datadog is a hands-on, demonstration-driven guide that walks you th
 
 As systems scale and architectures become more distributed, observability moves from optional to mission-critical. Datadog is a proven SaaS observability platform used by organizations such as Airbnb, Samsung, 21st Century Fox, and Whole Foods to monitor applications and infrastructure in real time.
 
-<Callout icon="lightbulb">
-  This course emphasizes demonstrations and real-world examples so you learn both the practical steps and the rationale behind migrating to Datadog.
-</Callout>
+> **lightbulb** This course emphasizes demonstrations and real-world examples so you learn both the practical steps and the rationale behind migrating to Datadog.
 
 We start with observability fundamentals: what observability truly means, its four core pillars (metrics, logs, traces, and profiles), and how modern toolchains collect and correlate telemetry to give you actionable insights.
 
@@ -77,6 +75,4 @@ Migrate with clarity, build with confidence, and get the most from Datadog.
 
 If you’re ready to begin, proceed to the Observability Basics module to build a solid foundation before starting your Datadog migration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9d4795bc-91eb-4262-ae9c-f7153c17438e/lesson/04fbedc8-cdb0-445a-9e58-fa9dd510ba88" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9d4795bc-91eb-4262-ae9c-f7153c17438e/lesson/04fbedc8-cdb0-445a-9e58-fa9dd510ba88)

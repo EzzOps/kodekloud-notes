@@ -46,7 +46,7 @@ DynamoDB also supports table-level API actions that go beyond basic CRUD operati
 * **BatchWriteItem:** Add or delete up to 25 items in a single API call.
 * **BatchGetItem:** Retrieve up to 100 items from one or more tables concurrently.
 
-![The image outlines four basic operations related to table management: CreateTable, DeleteTable, BatchWriteItem, and BatchGetItem, each with a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858698/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-API/table-management-operations-diagram.jpg)
+![The image outlines four basic operations related to table management: CreateTable, DeleteTable, BatchWriteItem, and BatchGetItem, each with a brief description.](https://kodekloud.com/kk-media/image/upload/v1752858698/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-API/table-management-operations-diagram.jpg)
 
 ## Projection Expression
 
@@ -54,7 +54,7 @@ By default, read operations like GetItem, Query, or Scan return all attributes o
 
 For example, if you have a user table and only need the user ID and email address, a projection expression allows you to retrieve just these attributes. This method minimizes data transfer and improves performance.
 
-![The image explains "Projection Expression" in data retrieval, showing how "GetItem," "Query," and "Scan" return all attributes, while "Projection Expressions" retrieve a subset. It includes a table with attributes like id, email, name, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858699/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-API/projection-expression-data-retrieval.jpg)
+![The image explains "Projection Expression" in data retrieval, showing how "GetItem," "Query," and "Scan" return all attributes, while "Projection Expressions" retrieve a subset. It includes a table with attributes like id, email, name, and more.](https://kodekloud.com/kk-media/image/upload/v1752858699/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-API/projection-expression-data-retrieval.jpg)
 
 > **lightbulb** Using projection expressions not only enhances performance but also reduces costs by ensuring that only necessary data is transmitted.
 

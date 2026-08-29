@@ -75,9 +75,7 @@ Common resources created by the Helm chart
 
 At this point, Kyverno is installed, running, and has the permissions required to enforce and manage policies.
 
-<Callout icon="lightbulb">
-  To switch to high availability later, update the Helm values to increase replica counts (or use the HA values provided by the chart) and perform a Helm upgrade.
-</Callout>
+> **lightbulb** To switch to high availability later, update the Helm values to increase replica counts (or use the HA values provided by the chart) and perform a Helm upgrade.
 
 Next steps
 We'll cover how to author and apply Kyverno policies to enforce guardrails across your cluster, including examples for validation, mutation, and generation policies.
@@ -88,9 +86,7 @@ Links and references
 * [Kyverno documentation](https://kyverno.io/docs/)
 * [Kubernetes RBAC documentation](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/8cf118e1-7ca8-49b6-be5a-af80c331f394/lesson/a181d17f-8c8e-4c38-983e-e407a8f79fb1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/8cf118e1-7ca8-49b6-be5a-af80c331f394/lesson/a181d17f-8c8e-4c38-983e-e407a8f79fb1)
 
 
 # Kyverno Architecture Part 1
@@ -101,9 +97,7 @@ Overview of Kyverno's integration with the Kubernetes API server via mutating an
 
 In this lesson we'll explore Kyverno's architecture and how it integrates with the Kubernetes API server during admission control. This installment focuses on request flow (authentication → authorization → admission) and where Kyverno plugs into that lifecycle. We will not write policies here — instead, we'll understand how API requests are intercepted, mutated, or validated by Kyverno.
 
-<Callout icon="lightbulb">
-  Lesson goal: Understand how the Kubernetes API server routes admission requests to Kyverno webhooks, what webhook configuration controls, and how mutation and validation are ordered during admission.
-</Callout>
+> **lightbulb** Lesson goal: Understand how the Kubernetes API server routes admission requests to Kyverno webhooks, what webhook configuration controls, and how mutation and validation are ordered during admission.
 
 When a client submits an API request (for example, creating a Pod or Deployment), the Kubernetes API server performs:
 
@@ -152,9 +146,7 @@ Choosing a failure policy
 * `failurePolicy: Fail` — if Kyverno is unavailable, the API server rejects the request (more secure).
 * `failurePolicy: Ignore` — if Kyverno doesn't respond, the API server continues without enforcement (more available).
 
-<Callout icon="warning">
-  Set `failurePolicy: Fail` only when Kyverno is deployed with sufficient high availability. Using `Fail` in single-replica or unstable Kyverno setups can block legitimate requests during outages.
-</Callout>
+> **warning** Set `failurePolicy: Fail` only when Kyverno is deployed with sufficient high availability. Using `Fail` in single-replica or unstable Kyverno setups can block legitimate requests during outages.
 
 Ordering: mutation before validation
 
@@ -219,6 +211,4 @@ Summary
 
 This concludes Part 1 of the Kyverno architecture series.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/8cf118e1-7ca8-49b6-be5a-af80c331f394/lesson/d2114aa0-c62d-4442-b470-31844d46cce9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/8cf118e1-7ca8-49b6-be5a-af80c331f394/lesson/d2114aa0-c62d-4442-b470-31844d46cce9)

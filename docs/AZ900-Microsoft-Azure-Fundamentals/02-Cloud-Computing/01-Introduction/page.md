@@ -19,7 +19,7 @@ Throughout this module, we will use real-world examples from a fictional company
 
 Below is the course introduction slide that outlines the key sections of this module:
 
-![The image is a slide titled "Course Introduction" with sections on "Cloud Benefits" and "Cloud Service Types," including IaaS, PaaS, and SaaS. It has a gradient background and is copyrighted by KodeKloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868237/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Introduction/course-introduction-cloud-benefits.jpg)
+![The image is a slide titled "Course Introduction" with sections on "Cloud Benefits" and "Cloud Service Types," including IaaS, PaaS, and SaaS. It has a gradient background and is copyrighted by KodeKloud.](https://kodekloud.com/kk-media/image/upload/v1752868237/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Introduction/course-introduction-cloud-benefits.jpg)
 
 > **lightbulb** Cloud computing is continuously evolving. Understanding these foundational concepts will help you stay ahead and make informed decisions in the rapidly changing digital landscape.
 

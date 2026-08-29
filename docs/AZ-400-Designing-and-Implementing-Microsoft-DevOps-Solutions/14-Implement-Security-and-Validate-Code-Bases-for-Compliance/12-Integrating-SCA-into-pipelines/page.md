@@ -26,7 +26,7 @@ When a developer opens a pull request:
 
 This early-warning mechanism prevents insecure code from entering the main branch and becoming more expensive to correct.
 
-![The image is an infographic titled "Embedding SCA Into Pipelines," highlighting three aspects: Continuous Integration and Pull Requests, Tools for SCA, and Workflow Integration, with brief descriptions for each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868016/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Integrating-SCA-into-pipelines/embedding-sca-into-pipelines-infographic.jpg)
+![The image is an infographic titled "Embedding SCA Into Pipelines," highlighting three aspects: Continuous Integration and Pull Requests, Tools for SCA, and Workflow Integration, with brief descriptions for each.](https://kodekloud.com/kk-media/image/upload/v1752868016/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Integrating-SCA-into-pipelines/embedding-sca-into-pipelines-infographic.jpg)
 
 ## 1. Continuous Integration and Pull Requests
 

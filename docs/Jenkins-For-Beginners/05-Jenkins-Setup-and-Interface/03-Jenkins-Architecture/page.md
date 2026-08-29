@@ -14,15 +14,11 @@ The Jenkins Controller, often referred to as the Jenkins server (formerly known 
 * **Job and Pipeline Management:** Defines, schedules, and monitors jobs and pipelines.
 * **Centralized Web Interface:** Provides a comprehensive interface for configuration, plugin management, user onboarding, and build monitoring.
 
-<Frame>
-  ![The image illustrates the Jenkins architecture, highlighting the Jenkins Controller Node with components like plugins, jobs, nodes, credentials, and configurations, and its role in managing tasks, job management, and providing a web interface for CI/CD processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879542/notes-assets/images/Jenkins-For-Beginners-Jenkins-Architecture/jenkins-architecture-controller-node-diagram.jpg)
-</Frame>
+![The image illustrates the Jenkins architecture, highlighting the Jenkins Controller Node with components like plugins, jobs, nodes, credentials, and configurations, and its role in managing tasks, job management, and providing a web interface for CI/CD processes.](https://kodekloud.com/kk-media/image/upload/v1752879542/notes-assets/images/Jenkins-For-Beginners-Jenkins-Architecture/jenkins-architecture-controller-node-diagram.jpg)
 
 In simpler or smaller deployments, the Jenkins server might handle both control and build tasks as the only node. However, for enhanced security and performance, it is recommended to use a dedicated controller along with separate worker nodes. This separation ensures that controller configurations remain safe from potential job-related modifications while improving performance by distributing build tasks across multiple machines.
 
-<Frame>
-  ![The image illustrates Jenkins architecture, highlighting the components of the Jenkins Controller Node and comparing basic and advanced deployment strategies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879542/notes-assets/images/Jenkins-For-Beginners-Jenkins-Architecture/jenkins-architecture-controller-node-diagram-2.jpg)
-</Frame>
+![The image illustrates Jenkins architecture, highlighting the components of the Jenkins Controller Node and comparing basic and advanced deployment strategies.](https://kodekloud.com/kk-media/image/upload/v1752879542/notes-assets/images/Jenkins-For-Beginners-Jenkins-Architecture/jenkins-architecture-controller-node-diagram-2.jpg)
 
 Using multiple nodes not only secures the controller but also allows you to scale Jenkins easily by adding more nodes with additional resources as your projects grow.
 
@@ -43,9 +39,7 @@ All necessary build and test tools are installed on the node where the agent ope
 
 Similarly, Kubernetes clusters can be used to dynamically provision and manage build agents as pods. This approach supports on-demand scaling and optimal resource utilization.
 
-<Frame>
-  ![The image illustrates the Jenkins architecture, showing the relationship between the Jenkins Controller Node and Jenkins Worker Nodes, which include Linux and Windows nodes with agents and executors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879543/notes-assets/images/Jenkins-For-Beginners-Jenkins-Architecture/jenkins-architecture-controller-worker-nodes.jpg)
-</Frame>
+![The image illustrates the Jenkins architecture, showing the relationship between the Jenkins Controller Node and Jenkins Worker Nodes, which include Linux and Windows nodes with agents and executors.](https://kodekloud.com/kk-media/image/upload/v1752879543/notes-assets/images/Jenkins-For-Beginners-Jenkins-Architecture/jenkins-architecture-controller-worker-nodes.jpg)
 
 ## Bringing It All Together
 
@@ -53,18 +47,12 @@ Consider a scenario where a Jenkins Controller is connected to two worker nodes.
 
 Once the nodes execute their respective jobs, the controller collects results, including build statuses, logs, and artifacts. This provides a comprehensive overview of the build processes.
 
-<Frame>
-  ![The image is a diagram showing a Jenkins setup with a controller node and two worker nodes (Linux and MacOS), illustrating job success and failure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879544/notes-assets/images/Jenkins-For-Beginners-Jenkins-Architecture/jenkins-setup-controller-worker-nodes.jpg)
-</Frame>
+![The image is a diagram showing a Jenkins setup with a controller node and two worker nodes (Linux and MacOS), illustrating job success and failure.](https://kodekloud.com/kk-media/image/upload/v1752879544/notes-assets/images/Jenkins-For-Beginners-Jenkins-Architecture/jenkins-setup-controller-worker-nodes.jpg)
 
-<Callout icon="lightbulb">
-  For optimal performance, continuously monitor resource usage and consider dynamically provisioning nodes using containerized environments or Kubernetes to handle peak loads.
-</Callout>
+> **lightbulb** For optimal performance, continuously monitor resource usage and consider dynamically provisioning nodes using containerized environments or Kubernetes to handle peak loads.
 
 This distributed architecture enables you to easily scale your Jenkins system by adding more nodes with additional executors. The result is an efficient handling of complex workflows and larger projects while maintaining robust CI/CD pipelines.
 
 Thank you.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/3c1739a1-ee72-4285-a832-4ce3c95b784d/lesson/ef254aa0-d7ac-49b4-b1da-cad4ea2b4bf7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/3c1739a1-ee72-4285-a832-4ce3c95b784d/lesson/ef254aa0-d7ac-49b4-b1da-cad4ea2b4bf7)

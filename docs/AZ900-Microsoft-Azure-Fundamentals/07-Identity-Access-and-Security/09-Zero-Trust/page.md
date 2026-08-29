@@ -6,7 +6,7 @@ This article explores the Zero Trust security model, emphasizing continuous veri
 
 In today's rapidly evolving cyber threat landscape, traditional security measures are often insufficient. This article delves into the Zero Trust model—a strategic security framework that operates on the principle of "never trust, always verify." Unlike conventional network security that assumes internal users are safe, Zero Trust mandates continuous authentication for every access request, regardless of the user's location.
 
-![The image compares the "Classic Approach" of network security, which restricts everything to a secure network, with the "Zero Approach," which protects assets anywhere using a central policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868443/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Zero-Trust/network-security-classic-vs-zero.jpg)
+![The image compares the "Classic Approach" of network security, which restricts everything to a secure network, with the "Zero Approach," which protects assets anywhere using a central policy.](https://kodekloud.com/kk-media/image/upload/v1752868443/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Zero-Trust/network-security-classic-vs-zero.jpg)
 
 With Zero Trust, every access request is treated as a potential threat until it is verified. Picture a VIP event: regardless of whether you are a staff member or a guest, you must show your invitation to gain entry. Similarly, Zero Trust requires digital interactions to undergo stringent checks before access is granted.
 
@@ -26,7 +26,7 @@ Every access request must be verified, similar to checking each guest's credenti
 
 Consider a secure event where staff members are only allowed in areas required for their duties. Zero Trust follows the same logic by confining user access to the minimum necessary level. Advanced strategies like just-in-time (JIT) and just-enough-access (JEA) policies dynamically adjust permissions according to the context of each request.
 
-![The image outlines three principles of Zero Trust for least privilege access: 1) Limit access with just-in-time policies, 2) Apply just-enough-access policies, and 3) Utilize risk-based adaptive policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868444/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Zero-Trust/zero-trust-least-privilege-principles.jpg)
+![The image outlines three principles of Zero Trust for least privilege access: 1) Limit access with just-in-time policies, 2) Apply just-enough-access policies, and 3) Utilize risk-based adaptive policies.](https://kodekloud.com/kk-media/image/upload/v1752868444/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Zero-Trust/zero-trust-least-privilege-principles.jpg)
 
 > **lightbulb** By enforcing adaptive policies, organizations ensure users receive only the necessary permissions—and just for as long as needed—minimizing the potential impact of any security compromise.
 
@@ -36,7 +36,7 @@ Rather than solely focusing on prevention, the "assume breach" mindset emphasize
 
 To further reduce risks, access is tightly segmented across networks, users, devices, and applications. Should a breach occur, these granular boundaries help contain the fallout. Additionally, continuous session encryption and advanced analytics significantly enhance an organization's capability to identify and respond to threats in real time.
 
-![The image outlines three principles of Zero Trust: segment access by network, user, and devices; ensure encrypted sessions; and utilize analytics for threat detection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868445/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Zero-Trust/zero-trust-principles-outline.jpg)
+![The image outlines three principles of Zero Trust: segment access by network, user, and devices; ensure encrypted sessions; and utilize analytics for threat detection.](https://kodekloud.com/kk-media/image/upload/v1752868445/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Zero-Trust/zero-trust-principles-outline.jpg)
 
 > **triangle-alert** Adopting a Zero Trust strategy means that organizations must be prepared to not only prevent attacks but also detect and respond to them as they happen. This proactive stance is crucial in today’s dynamic security environment.
 

@@ -23,9 +23,7 @@ Key benefits of Windows Hello for Business include:
 * Support for Public Key Infrastructure (PKI) integration.
 * Built-in single sign-on for seamless access to both corporate resources and on-premises or cloud services.
 
-<Frame>
-  ![The image is an infographic about passwordless authentication methods, highlighting Windows Hello for Business, Microsoft Authenticator, and FIDO2 Security Keys, with features like biometric and PIN credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882243/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Passwordless-Authentication/passwordless-authentication-infographic.jpg)
-</Frame>
+![The image is an infographic about passwordless authentication methods, highlighting Windows Hello for Business, Microsoft Authenticator, and FIDO2 Security Keys, with features like biometric and PIN credentials.](https://kodekloud.com/kk-media/image/upload/v1752882243/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Passwordless-Authentication/passwordless-authentication-infographic.jpg)
 
 ## Microsoft Authenticator
 
@@ -36,13 +34,9 @@ The Microsoft Authenticator app transforms your smartphone into a secure authent
 
 Using the phone for authentication provides convenience and security, as long as the device is protected by a robust lock mechanism.
 
-<Frame>
-  ![The image is an infographic about passwordless authentication methods, highlighting Windows Hello for Business, Microsoft Authenticator, and FIDO2 Security Keys. It describes using a phone as a passwordless authentication method and the benefits of secure authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882245/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Passwordless-Authentication/passwordless-authentication-infographic-2.jpg)
-</Frame>
+![The image is an infographic about passwordless authentication methods, highlighting Windows Hello for Business, Microsoft Authenticator, and FIDO2 Security Keys. It describes using a phone as a passwordless authentication method and the benefits of secure authentication.](https://kodekloud.com/kk-media/image/upload/v1752882245/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Passwordless-Authentication/passwordless-authentication-infographic-2.jpg)
 
-<Callout icon="lightbulb">
-  It is important to secure your phone with proper protection to prevent unauthorized access when using it for authentication.
-</Callout>
+> **lightbulb** It is important to secure your phone with proper protection to prevent unauthorized access when using it for authentication.
 
 ## FIDO2 Security Keys
 
@@ -54,9 +48,7 @@ FIDO2 is an open standard that enables hardware-based, passwordless authenticati
 
 These keys significantly boost security by requiring you to have the physical key in hand during the authentication process. FIDO2 keys are compatible with Azure AD, Hybrid Azure AD, Windows 10 devices, and supported browsers, making them an excellent choice for environments where phone-based authentication may not be suitable.
 
-<Frame>
-  ![The image is an infographic about passwordless authentication methods, highlighting Windows Hello for Business, Microsoft Authenticator, and FIDO2 Security Keys, with details on their features and benefits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882246/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Passwordless-Authentication/passwordless-authentication-infographic-3.jpg)
-</Frame>
+![The image is an infographic about passwordless authentication methods, highlighting Windows Hello for Business, Microsoft Authenticator, and FIDO2 Security Keys, with details on their features and benefits.](https://kodekloud.com/kk-media/image/upload/v1752882246/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Passwordless-Authentication/passwordless-authentication-infographic-3.jpg)
 
 ## Configuring Passwordless Options on Windows
 
@@ -74,13 +66,9 @@ In the Sign-in options menu, you will see the available methods to sign in:
 
 For example, to set up a security key, click on **Manage** under the security key option. This action will prompt you to insert your USB security key into the computer. If your device offers facial recognition, additional options for Windows Hello will be visible.
 
-<Frame>
-  ![The image shows a Windows settings screen for "Sign-in options" with a pop-up window prompting the user to insert a security key into the USB port.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882247/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Passwordless-Authentication/windows-sign-in-options-security-key.jpg)
-</Frame>
+![The image shows a Windows settings screen for "Sign-in options" with a pop-up window prompting the user to insert a security key into the USB port.](https://kodekloud.com/kk-media/image/upload/v1752882247/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Passwordless-Authentication/windows-sign-in-options-security-key.jpg)
 
-<Callout icon="triangle-alert">
-  If you do not have a USB security key available during testing, you will be unable to complete the process. However, the interface clearly displays all available sign-in options.
-</Callout>
+> **triangle-alert** If you do not have a USB security key available during testing, you will be unable to complete the process. However, the interface clearly displays all available sign-in options.
 
 ## Conclusion
 
@@ -94,6 +82,4 @@ Each method has unique advantages that collectively offer a secure and user-frie
 
 For further details and best practices, refer to the [Azure Active Directory documentation](https://docs.microsoft.com/en-us/azure/active-directory/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c0f70ae1-790f-4a5d-8e09-29450b5ee610/lesson/9ac0933a-2dc9-40c8-a4a5-b87133fa335b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c0f70ae1-790f-4a5d-8e09-29450b5ee610/lesson/9ac0933a-2dc9-40c8-a4a5-b87133fa335b)

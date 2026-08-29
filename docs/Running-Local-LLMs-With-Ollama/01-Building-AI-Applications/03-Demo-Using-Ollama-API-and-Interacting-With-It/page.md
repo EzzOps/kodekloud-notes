@@ -46,13 +46,11 @@ curl http://localhost:11434/api/generate \
   }'
 ```
 
-<Callout icon="lightbulb">
-  Pipe the response through [jq](https://stedolan.github.io/jq/) for pretty-printed JSON:
+> **lightbulb** Pipe the response through [jq](https://stedolan.github.io/jq/) for pretty-printed JSON:
 
   ```bash theme={null}
   … | jq
   ```
-</Callout>
 
 Example response:
 

@@ -61,7 +61,7 @@ Virtualization set the stage for cloud computing by decoupling hardware from sof
 
 Amazon EC2 (launched in 2006) provides secure, resizable compute capacity in the AWS Cloud. Instead of procuring physical servers, you launch virtual instances with the CPU, memory, storage, and networking capacity you need.
 
-![The image illustrates the evolution of compute resources, focusing on AWS EC2 introduced in 2006, showing a user creating resources in the AWS Cloud with EC2 instances running on a hypervisor and physical server in the US-east-1 region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869090/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Background-what-and-why-of-EC2/aws-ec2-evolution-compute-resources.jpg)
+![The image illustrates the evolution of compute resources, focusing on AWS EC2 introduced in 2006, showing a user creating resources in the AWS Cloud with EC2 instances running on a hypervisor and physical server in the US-east-1 region.](https://kodekloud.com/kk-media/image/upload/v1752869090/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Background-what-and-why-of-EC2/aws-ec2-evolution-compute-resources.jpg)
 
 > **lightbulb** With EC2, provisioning a new server takes minutes instead of months—accelerating development cycles and innovation.
 

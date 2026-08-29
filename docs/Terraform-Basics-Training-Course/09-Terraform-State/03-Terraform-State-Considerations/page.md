@@ -47,9 +47,7 @@ Below is an example JSON snippet representing the state file of an AWS EC2 insta
 }
 ```
 
-<Callout icon="lightbulb">
-  Always ensure your state files are stored in a secure location, especially when using local storage.
-</Callout>
+> **lightbulb** Always ensure your state files are stored in a secure location, especially when using local storage.
 
 ## Terraform Configuration Files vs. State File
 
@@ -85,9 +83,7 @@ resource "local_file" "cat" {
 | Terraform Configuration Files | Infrastructure code in HCL                                 | Use distributed version control systems (e.g., GitHub, GitLab) |
 | Terraform State File          | JSON file storing the current state of your infrastructure | Use secure remote backends (e.g., AWS S3, Terraform Cloud)     |
 
-<Callout icon="triangle-alert">
-  Never store your Terraform state file in an unsecured or public repository. Always use secure, remote backends for state storage.
-</Callout>
+> **triangle-alert** Never store your Terraform state file in an unsecured or public repository. Always use secure, remote backends for state storage.
 
 ## Editing the State File
 
@@ -99,6 +95,4 @@ For instance, if you need to modify the state of managed resources, use commands
 
 Maintaining the integrity and security of your Terraform state file is critical. By following these best practices and leveraging remote state backends, you can enhance the security and reliability of your infrastructure management process. For additional details, refer to the [Terraform Documentation](https://www.terraform.io/docs).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/153d021a-b7cd-48bb-8249-2de4b55cb6df/lesson/b1ffe7f6-03b3-4672-9030-041e9978d828" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/153d021a-b7cd-48bb-8249-2de4b55cb6df/lesson/b1ffe7f6-03b3-4672-9030-041e9978d828)

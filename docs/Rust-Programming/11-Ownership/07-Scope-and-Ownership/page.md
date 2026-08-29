@@ -32,9 +32,7 @@ fn main() {
 } // s goes out of scope and is dropped automatically
 ```
 
-<Callout icon="lightbulb">
-  Rust's ownership model avoids the overhead of garbage collection by ensuring that resources are automatically cleaned up when they are no longer needed, reducing the risk of memory leaks and errors.
-</Callout>
+> **lightbulb** Rust's ownership model avoids the overhead of garbage collection by ensuring that resources are automatically cleaned up when they are no longer needed, reducing the risk of memory leaks and errors.
 
 ## Comparison with Garbage-Collected Languages
 
@@ -44,6 +42,4 @@ Rust provides the best of both worlds by automatically deallocating memory when 
 
 For a deeper dive into Rust's ownership and borrowing rules, visit the [Rust Book](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/ec8082bd-4044-489b-bbf8-85bd229949be" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/ec8082bd-4044-489b-bbf8-85bd229949be)

@@ -90,9 +90,7 @@ You can omit `start` or `end`:
 * `[:2]` → first two elements
 * `[2:]` → from the third element onward
 
-<Callout icon="lightbulb">
-  JSONPath uses zero-based indices. Negative indices or step values (e.g., `[::2]`) are not supported in all implementations.
-</Callout>
+> **lightbulb** JSONPath uses zero-based indices. Negative indices or step values (e.g., `[::2]`) are not supported in all implementations.
 
 ## 3. Filtering Array Elements
 
@@ -175,8 +173,6 @@ By mastering these operators, you can query, transform, and navigate JSON arrays
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/c94d843c-16dd-45e5-bda6-c318f29d16d5" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/c94d843c-16dd-45e5-bda6-c318f29d16d5)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/0b357686-dc66-41ba-9c59-845dadec6773" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/0b357686-dc66-41ba-9c59-845dadec6773)

@@ -38,13 +38,11 @@ The `-r` flag forces the server to refresh its list of shared directories. To co
 sudo exportfs -v
 ```
 
-<Callout icon="lightbulb">
-  When using wildcards in client specifications, ensure there are no additional spaces between the hostname (or wildcard) and the opening parenthesis. For example:
+> **lightbulb** When using wildcards in client specifications, ensure there are no additional spaces between the hostname (or wildcard) and the opening parenthesis. For example:
 
   ```bash theme={null}
   /etc *.example.com(ro,sync,no_subtree_check)
   ```
-</Callout>
 
 ## Configuring the NFS Client
 
@@ -113,9 +111,7 @@ An example snippet from your `/etc/fstab` might look like:
 127.0.0.1:/etc                     /mnt            nfs       defaults          0       0
 ```
 
-<Callout icon="triangle-alert">
-  Ensure that your NFS server and client firewall settings allow NFS traffic. Any network restrictions might prevent proper communication between the systems.
-</Callout>
+> **triangle-alert** Ensure that your NFS server and client firewall settings allow NFS traffic. Any network restrictions might prevent proper communication between the systems.
 
 ## Summary
 
@@ -130,11 +126,9 @@ With this knowledge, you can efficiently share file systems between Linux system
 
 Let's move on to the next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/5b495aba-191e-4ec2-b602-1f876e44e8c4" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/5b495aba-191e-4ec2-b602-1f876e44e8c4)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/424ed662-87a9-455b-b936-56daef503d87" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/424ed662-87a9-455b-b936-56daef503d87)
 
 
 # Configure User Resource Limits

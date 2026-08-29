@@ -107,9 +107,7 @@ Summary table — common failure modes and standard mitigations:
 | Stale data / consistency | Caching or replication introduces outdated reads    | Use TTLs, eviction/invalidation strategies, and design for eventual consistency |
 | Operational complexity   | More components to manage                           | Automate deployments, monitoring, and alerting; weigh cost vs. benefit          |
 
-<Callout icon="lightbulb">
-  System design is iterative: fix a bottleneck, observe new failure modes, and choose the next mitigation by balancing correctness, latency, cost, and operational complexity. Start simple, measure, and evolve the architecture as real load and failure patterns emerge.
-</Callout>
+> **lightbulb** System design is iterative: fix a bottleneck, observe new failure modes, and choose the next mitigation by balancing correctness, latency, cost, and operational complexity. Start simple, measure, and evolve the architecture as real load and failure patterns emerge.
 
 You don’t learn system design by memorizing diagrams; you learn by observing components fail, reasoning about trade-offs, and making pragmatic choices. When someone asks how you’d scale an app, aim to describe a logical approach: identify bottlenecks, choose mitigations, and balance correctness, cost, and complexity rather than reciting a single static diagram.
 
@@ -120,6 +118,4 @@ Links and references:
 * [Redis](https://redis.io/) — common in-memory cache for reducing DB load
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) — for container orchestration and scaling guidance
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/545248b6-7716-4243-b96a-6ee23c1c4348" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/545248b6-7716-4243-b96a-6ee23c1c4348)

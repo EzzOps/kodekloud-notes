@@ -162,9 +162,7 @@ Example array output (truncated):
 ]
 ```
 
-<Callout icon="lightbulb">
-  Azure CLI commands run in the context of a single subscription. Confirm `az account show` reports the subscription you intend to use before running Terraform commands that create or modify resources.
-</Callout>
+> **lightbulb** Azure CLI commands run in the context of a single subscription. Confirm `az account show` reports the subscription you intend to use before running Terraform commands that create or modify resources.
 
 ## Next steps
 
@@ -176,6 +174,4 @@ Once Azure CLI and Git are installed and you've confirmed your Azure account con
 
 Now you’re ready to configure Terraform’s Azure provider and begin defining infrastructure as code.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/db2adc19-fa48-4b03-9d9a-8ef71c4c28db/lesson/3ec952e6-7713-40f7-9409-7df7d71b85ec" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/db2adc19-fa48-4b03-9d9a-8ef71c4c28db/lesson/3ec952e6-7713-40f7-9409-7df7d71b85ec)

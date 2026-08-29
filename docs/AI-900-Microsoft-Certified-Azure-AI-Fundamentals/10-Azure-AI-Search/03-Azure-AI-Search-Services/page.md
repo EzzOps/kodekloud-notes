@@ -27,7 +27,7 @@ The initial phase in using Azure AI Search Services involves data ingestion. Azu
 
 Each of these storage solutions enables efficient data handling from multiple sources, ensuring that diverse datasets are seamlessly ingested for further processing.
 
-![The image is an infographic about Azure AI Search Services, detailing various storage options like Azure Blob Storage, SQL Database, Data Lake Storage Gen2, and Table Storage, along with their features and benefits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856866/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Search-Services/azure-ai-search-services-infographic.jpg)
+![The image is an infographic about Azure AI Search Services, detailing various storage options like Azure Blob Storage, SQL Database, Data Lake Storage Gen2, and Table Storage, along with their features and benefits.](https://kodekloud.com/kk-media/image/upload/v1752856866/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Search-Services/azure-ai-search-services-infographic.jpg)
 
 ## AI Enrichment and Indexing
 
@@ -39,7 +39,7 @@ Once data is ingested, Azure AI Search Services moves on to AI enrichment and in
 * **Indexing:**\
   The enriched data is then organized into indexes, facilitating quick and precise searchability. This systematic organization ensures that even large volumes of data can be rapidly accessed and queried by users.
 
-![The image is an infographic about Azure AI Search Services, detailing processes like AI enrichment, data extraction, and indexing to enhance search capabilities. It highlights components such as understanding, extracting, and integrating AI services for improved data accessibility.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856867/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Search-Services/azure-ai-search-infographic.jpg)
+![The image is an infographic about Azure AI Search Services, detailing processes like AI enrichment, data extraction, and indexing to enhance search capabilities. It highlights components such as understanding, extracting, and integrating AI services for improved data accessibility.](https://kodekloud.com/kk-media/image/upload/v1752856867/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Search-Services/azure-ai-search-infographic.jpg)
 
 > **lightbulb** Azure AI Search Services leverages state-of-the-art AI models to enrich data. Ensure that your data sources are properly formatted to maximize the benefits of AI processing.
 
@@ -56,7 +56,7 @@ The final stage of Azure AI Search Services focuses on how users interact with a
 * **Data Visualization:**\
   This service also supports creating visual representations of data. Visualizing enriched information makes it easier for stakeholders to interpret the results and make informed business decisions.
 
-![The image is an infographic titled "Azure AI Search Services," detailing three main functions: performing searches on indexes, using results within applications, and creating data visualizations. Each function includes brief descriptions and icons illustrating efficient and accurate search, user integration, and data interpretation and communication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856868/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Search-Services/azure-ai-search-services-infographic-2.jpg)
+![The image is an infographic titled "Azure AI Search Services," detailing three main functions: performing searches on indexes, using results within applications, and creating data visualizations. Each function includes brief descriptions and icons illustrating efficient and accurate search, user integration, and data interpretation and communication.](https://kodekloud.com/kk-media/image/upload/v1752856868/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Search-Services/azure-ai-search-services-infographic-2.jpg)
 
 ## Workflow Summary
 
@@ -78,7 +78,7 @@ Follow these steps to create an Azure AI Search Service using the Azure Portal:
 
 Once deployed, the search service is ready to ingest data and perform AI enrichment, setting the groundwork for advanced search capabilities.
 
-![The image shows a Microsoft Azure portal page for creating a search service, displaying details like subscription, resource group, location, and pricing tier. Notifications about deployment submission and resource group deletion are visible on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856869/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Search-Services/azure-portal-search-service-creation.jpg)
+![The image shows a Microsoft Azure portal page for creating a search service, displaying details like subscription, resource group, location, and pricing tier. Notifications about deployment submission and resource group deletion are visible on the right.](https://kodekloud.com/kk-media/image/upload/v1752856869/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-AI-Search-Services/azure-portal-search-service-creation.jpg)
 
 ## Next Steps
 

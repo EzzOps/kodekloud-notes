@@ -33,9 +33,7 @@ Keep stakeholders posted on progress and on items blocking you. Frequent, concis
 | Escalate crucial issues early      | Cross-team dependencies can block progress and delay go-lives              | Escalate blockers to managers immediately and track resolution SLAs           |
 | Provide and maintain visibility    | Lack of shared context breeds confusion and last-minute issues             | Use dashboards, regular status updates, and an agreed-upon escalation path    |
 
-<Callout icon="lightbulb">
-  A consistent communication strategy—regular updates, clear owners, and a documented scope—resolves most common migration problems before they escalate.
-</Callout>
+> **lightbulb** A consistent communication strategy—regular updates, clear owners, and a documented scope—resolves most common migration problems before they escalate.
 
 Action checklist (quick reference)
 
@@ -53,6 +51,4 @@ Further reading and references
 
 That's it — these are the core lessons learned from migration work. With good planning, disciplined communication, and clear ownership, most of these issues are avoidable. I hope you found this useful.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/a67ddb0f-7fec-484f-92ea-a9a13eb4df7e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/a67ddb0f-7fec-484f-92ea-a9a13eb4df7e)

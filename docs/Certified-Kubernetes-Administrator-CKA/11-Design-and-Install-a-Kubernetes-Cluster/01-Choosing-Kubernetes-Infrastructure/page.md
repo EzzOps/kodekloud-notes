@@ -23,7 +23,7 @@ Two popular local deployment methods include:
 
 Local Kubernetes deployments on laptops are ideal for learning, development, and testing scenarios.
 
-![The image compares Minikube and Kubeadm, highlighting Minikube's ability to deploy VMs for a single-node cluster, while Kubeadm requires pre-ready VMs for single/multi-node clusters.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869755/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Choosing-Kubernetes-Infrastructure/frame_140.jpg)
+![The image compares Minikube and Kubeadm, highlighting Minikube's ability to deploy VMs for a single-node cluster, while Kubeadm requires pre-ready VMs for single/multi-node clusters.](https://kodekloud.com/kk-media/image/upload/v1752869755/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Choosing-Kubernetes-Infrastructure/frame_140.jpg)
 
 ## Production Deployment Options
 
@@ -39,7 +39,7 @@ Turnkey solutions enable you to provision and configure Kubernetes clusters with
 
 Hosted solutions provide Kubernetes as a service, where the provider manages the entire cluster infrastructure, including VM provisioning, maintenance, and configuration. This approach greatly simplifies the deployment process. For instance, Google Container Engine (GKE) lets you deploy a Kubernetes cluster in minutes with minimal manual intervention.
 
-![The image compares Turnkey and Hosted Solutions for Kubernetes, detailing user responsibilities in provisioning and maintaining VMs versus provider-managed services like Google Container Engine.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869757/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Choosing-Kubernetes-Infrastructure/frame_190.jpg)
+![The image compares Turnkey and Hosted Solutions for Kubernetes, detailing user responsibilities in provisioning and maintaining VMs versus provider-managed services like Google Container Engine.](https://kodekloud.com/kk-media/image/upload/v1752869757/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Choosing-Kubernetes-Infrastructure/frame_190.jpg)
 
 ## Turnkey Solutions: On-Premises Options
 
@@ -50,7 +50,7 @@ For on-premises deployments, several turnkey solutions are available:
 * **VMware Cloud PKS:** An excellent option for leveraging an existing VMware environment to deploy Kubernetes.
 * **Vagrant:** Provides scripts to deploy Kubernetes clusters across various cloud service providers.
 
-![The image displays logos of turnkey solutions: OpenShift, Cloud Foundry Container Runtime, VMware Cloud PKS, and Vagrant, with server icons below.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869758/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Choosing-Kubernetes-Infrastructure/frame_260.jpg)
+![The image displays logos of turnkey solutions: OpenShift, Cloud Foundry Container Runtime, VMware Cloud PKS, and Vagrant, with server icons below.](https://kodekloud.com/kk-media/image/upload/v1752869758/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Choosing-Kubernetes-Infrastructure/frame_260.jpg)
 
 These turnkey options simplify the setup and management of Kubernetes clusters within your organization, assuming that your virtual machines meet the required specifications. For additional certified solutions and best practices, refer to the [Kubernetes Documentation](https://kubernetes.io/docs/).
 
@@ -65,7 +65,7 @@ Several cloud providers offer managed Kubernetes services, making it easier to r
 
 These services are designed to reduce operational complexity and support rapid scaling of applications.
 
-![The image displays logos of four hosted container solutions: Google Container Engine (GKE), OpenShift Online, Azure Kubernetes Service, and Amazon EKS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869760/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Choosing-Kubernetes-Infrastructure/frame_310.jpg)
+![The image displays logos of four hosted container solutions: Google Container Engine (GKE), OpenShift Online, Azure Kubernetes Service, and Amazon EKS.](https://kodekloud.com/kk-media/image/upload/v1752869760/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Choosing-Kubernetes-Infrastructure/frame_310.jpg)
 
 ## Our Deployment Choice
 
@@ -73,7 +73,7 @@ For learning and lab environments—especially for those without access to a pub
 
 We deployed a local Kubernetes cluster from scratch by creating several VMs on VirtualBox. The design includes three nodes: one master and two worker nodes, all running on a single laptop.
 
-![The image shows a survey of preferred virtualization technologies for labs, with VirtualBox leading at 68.3%, followed by AWS Cloud at 46.9%.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869761/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Choosing-Kubernetes-Infrastructure/frame_330.jpg)
+![The image shows a survey of preferred virtualization technologies for labs, with VirtualBox leading at 68.3%, followed by AWS Cloud at 46.9%.](https://kodekloud.com/kk-media/image/upload/v1752869761/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Choosing-Kubernetes-Infrastructure/frame_330.jpg)
 
 > **lightbulb** When setting up your own lab using VirtualBox, ensure that your laptop meets the resource requirements for running multiple VMs efficiently.
 

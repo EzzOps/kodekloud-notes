@@ -27,12 +27,10 @@ How script-template outputs work
 * For script templates, Argo automatically captures the last line written to stdout as the default output parameter available at steps.\<step-name>.outputs.result.
 * You can pass that value into later steps using the expression `{{steps.\<step-name>.outputs.result}}`.
 
-<Callout icon="lightbulb">
-  For script templates, Argo captures the last line printed to stdout as the
+> **lightbulb** For script templates, Argo captures the last line printed to stdout as the
   default output parameter available at steps.\<step-name>.outputs.result.
   Use that expression to pass values directly from a producing step into a
   consuming step.
-</Callout>
 
 Example workflow
 
@@ -97,6 +95,4 @@ References and further reading
 
 Outputs are a fundamental mechanism for chaining templates and building dynamic, data-driven pipelines. By capturing the producer's stdout and referencing it with steps.\<name>.outputs.result, you can easily pass information between steps and build more complex workflows.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/5d8dd753-c4fb-4c90-88ed-9d7c3c254777" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/5d8dd753-c4fb-4c90-88ed-9d7c3c254777)

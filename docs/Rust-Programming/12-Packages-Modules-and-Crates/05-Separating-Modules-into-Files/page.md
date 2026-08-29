@@ -8,9 +8,7 @@ In this lesson, you'll learn how to organize your Rust project by moving modules
 
 Modules in Rust encapsulate specific functionality, allowing you to manage and maintain your code efficiently.
 
-<Frame>
-  ![The image explains the benefits of separating modules into different files, highlighting improved code organization, readability, and encapsulation of functionality.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883977/notes-assets/images/Rust-Programming-Separating-Modules-into-Files/module-separation-benefits-diagram.jpg)
-</Frame>
+![The image explains the benefits of separating modules into different files, highlighting improved code organization, readability, and encapsulation of functionality.](https://kodekloud.com/kk-media/image/upload/v1752883977/notes-assets/images/Rust-Programming-Separating-Modules-into-Files/module-separation-benefits-diagram.jpg)
 
 Below is an example that demonstrates how to refactor a module from a single file structure to a multi-file layout.
 
@@ -131,9 +129,7 @@ This setup neatly organizes the code by grouping related functionality.
 
 For projects that involve deeper module nesting, the same directory organization principles apply. Each module or sub-module should be represented either as a directory (with a `mod.rs` file) or as an individual `.rs` file.
 
-<Frame>
-  ![The image shows a directory structure for handling deeply nested modules in a programming context, with folders and files like main.rs, mod.rs, and advanced.rs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883978/notes-assets/images/Rust-Programming-Separating-Modules-into-Files/nested-modules-directory-structure.jpg)
-</Frame>
+![The image shows a directory structure for handling deeply nested modules in a programming context, with folders and files like main.rs, mod.rs, and advanced.rs.](https://kodekloud.com/kk-media/image/upload/v1752883978/notes-assets/images/Rust-Programming-Separating-Modules-into-Files/nested-modules-directory-structure.jpg)
 
 Consider a scenario where your `math` module with an `operations` sub-module needs an additional `advanced` sub-module.
 
@@ -205,9 +201,7 @@ Consider a scenario where your `math` module with an `operations` sub-module nee
 
 This structure allows for flexible management of deeply nested modules, ensuring your project remains organized and maintainable.
 
-<Callout icon="lightbulb">
-  Remember to include descriptive titles and headings in your code documentation to make it more search engine friendly.
-</Callout>
+> **lightbulb** Remember to include descriptive titles and headings in your code documentation to make it more search engine friendly.
 
 ## Best Practices for Module Organization
 
@@ -220,18 +214,12 @@ As your Rust project expands, consider these best practices for maintaining a cl
 | Consistent naming       | Name files and directories clearly and descriptively.                                |
 | Re-export strategically | Re-export frequently used items in higher-level modules for easier access.           |
 
-<Callout icon="lightbulb">
-  Following these guidelines will enhance your project's structure and make it easier to navigate and maintain.
-</Callout>
+> **lightbulb** Following these guidelines will enhance your project's structure and make it easier to navigate and maintain.
 
-<Frame>
-  ![The image outlines best practices for module organization, including grouping related code, limiting nesting, using consistent naming, and re-exporting wisely.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883979/notes-assets/images/Rust-Programming-Separating-Modules-into-Files/module-organization-best-practices.jpg)
-</Frame>
+![The image outlines best practices for module organization, including grouping related code, limiting nesting, using consistent naming, and re-exporting wisely.](https://kodekloud.com/kk-media/image/upload/v1752883979/notes-assets/images/Rust-Programming-Separating-Modules-into-Files/module-organization-best-practices.jpg)
 
 By applying these techniques, you will improve your project's maintainability and scalability, making it easier to collaborate and expand over time.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/4cdab411-800e-4072-90d8-005dd70de03c/lesson/c9e8e843-151e-466d-81c1-5c828dc128b0" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/4cdab411-800e-4072-90d8-005dd70de03c/lesson/c9e8e843-151e-466d-81c1-5c828dc128b0)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/rust/module/4cdab411-800e-4072-90d8-005dd70de03c/lesson/48b6ac44-523b-4e3d-8123-f48dd08e8a88" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/rust/module/4cdab411-800e-4072-90d8-005dd70de03c/lesson/48b6ac44-523b-4e3d-8123-f48dd08e8a88)

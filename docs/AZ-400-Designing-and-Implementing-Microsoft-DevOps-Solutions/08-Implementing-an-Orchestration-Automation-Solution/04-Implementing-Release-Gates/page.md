@@ -6,7 +6,7 @@ This article explains how to implement release gates in Azure Pipelines to enhan
 
 Release gates act as quality checkpoints in your CI/CD workflow—much like verifying weather conditions before a flight. By integrating automated and manual validations into your pipeline, you ensure that only releases meeting predefined criteria advance through each stage.
 
-![The image outlines "Release Gates" with two sections: "Integration Into Deployment Pipelines" and "Progression Criteria," each with a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868053/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Release-Gates/release-gates-deployment-pipelines-criteria.jpg)
+![The image outlines "Release Gates" with two sections: "Integration Into Deployment Pipelines" and "Progression Criteria," each with a brief description.](https://kodekloud.com/kk-media/image/upload/v1752868053/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Release-Gates/release-gates-deployment-pipelines-criteria.jpg)
 
 ## Why Use Release Gates?
 
@@ -19,7 +19,7 @@ Release gates act as quality checkpoints in your CI/CD workflow—much like veri
 3. **Automate Routine Verifications**\
    Replace manual inspections with scripted or service-based checks, reducing human error and accelerating delivery.
 
-![The image outlines three reasons to implement release gates: enhancing deployment safety, ensuring compliance, and automating routine checks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868054/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Release-Gates/release-gates-deployment-safety-compliance.jpg)
+![The image outlines three reasons to implement release gates: enhancing deployment safety, ensuring compliance, and automating routine checks.](https://kodekloud.com/kk-media/image/upload/v1752868054/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Release-Gates/release-gates-deployment-safety-compliance.jpg)
 
 ## Types of Release Gates
 
@@ -29,7 +29,7 @@ Release gates act as quality checkpoints in your CI/CD workflow—much like veri
 | Post-deployment   | Confirms system health or metrics after deployment        | Smoke tests, service availability |
 | Approval (Manual) | Requires a stakeholder to sign off before proceeding      | Legal or security team sign-off   |
 
-![The image is a diagram titled "Release Gates in Azure Pipelines – Components," showing two components: "Pre-deployment gates" and "Post-deployment gates."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868056/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Release-Gates/release-gates-azure-pipelines-diagram.jpg)
+![The image is a diagram titled "Release Gates in Azure Pipelines – Components," showing two components: "Pre-deployment gates" and "Post-deployment gates."](https://kodekloud.com/kk-media/image/upload/v1752868056/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Release-Gates/release-gates-azure-pipelines-diagram.jpg)
 
 ## Azure Pipelines Stages and Deployment Jobs
 
@@ -65,7 +65,7 @@ stages:
 * **Approvals & Checks**: You can configure pre- and post-deployment approvals or automated health checks.
 * **Audit Trail**: Records who approved each deployment and when, crucial for compliance.
 
-![The image outlines three reasons why deployment jobs are crucial for release approvals: controlled deployments, environment health and safety, and release approvals.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868057/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Release-Gates/deployment-jobs-release-approvals-reasons.jpg)
+![The image outlines three reasons why deployment jobs are crucial for release approvals: controlled deployments, environment health and safety, and release approvals.](https://kodekloud.com/kk-media/image/upload/v1752868057/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Release-Gates/deployment-jobs-release-approvals-reasons.jpg)
 
 ## Configuring Release Gates in YAML
 
@@ -142,7 +142,7 @@ Reference this environment in a deployment job:
 
 ## Tips for Effective Release Gates
 
-![The image provides tips for effective release gates, including defining gate criteria, automating gates, and regularly reviewing and adjusting them. It features a lightbulb graphic with these tips listed alongside.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868058/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Release-Gates/release-gates-tips-lightbulb-graphic.jpg)
+![The image provides tips for effective release gates, including defining gate criteria, automating gates, and regularly reviewing and adjusting them. It features a lightbulb graphic with these tips listed alongside.](https://kodekloud.com/kk-media/image/upload/v1752868058/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-Release-Gates/release-gates-tips-lightbulb-graphic.jpg)
 
 * Define clear, measurable criteria for each gate.
 * Automate gates wherever possible to minimize manual effort and errors.

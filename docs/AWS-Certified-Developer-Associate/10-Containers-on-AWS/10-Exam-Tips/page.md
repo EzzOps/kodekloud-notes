@@ -27,7 +27,7 @@ AWS ECS is a fully managed container orchestration service designed to simplify 
 
 Tasks in ECS are defined using a task definition, a configuration file that specifies container settings, launch parameters, and task behaviors.
 
-![The image provides exam tips for Amazon ECS, highlighting it as a fully managed container orchestration service with two launch types: EC2 and Fargate. It notes that there is no extra fee for ECS, only charges for the underlying compute.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858583/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/amazon-ecs-exam-tips.jpg)
+![The image provides exam tips for Amazon ECS, highlighting it as a fully managed container orchestration service with two launch types: EC2 and Fargate. It notes that there is no extra fee for ECS, only charges for the underlying compute.](https://kodekloud.com/kk-media/image/upload/v1752858583/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/amazon-ecs-exam-tips.jpg)
 
 ### ECS Roles
 
@@ -38,7 +38,7 @@ ECS relies on two primary roles:
 
 Additionally, integrating ECS with Elastic Load Balancers allows direct traffic routing to tasks.
 
-![The image provides exam tips for ECS, highlighting two roles: Container Instance Role and ECS Task Role, and mentions that load balancers route traffic to tasks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858584/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/ecs-exam-tips-roles-load-balancers.jpg)
+![The image provides exam tips for ECS, highlighting two roles: Container Instance Role and ECS Task Role, and mentions that load balancers route traffic to tasks.](https://kodekloud.com/kk-media/image/upload/v1752858584/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/ecs-exam-tips-roles-load-balancers.jpg)
 
 ### Placement Strategies and Autoscaling
 
@@ -50,7 +50,7 @@ For the EC2 launch type, ECS placement strategies determine how tasks are assign
 | **Random**  | Distributes tasks randomly across available container instances.                                              |
 | **Spread**  | Evenly distributes tasks across instances based on specified attributes.                                      |
 
-![The image provides exam tips for ECS, detailing placement strategies for EC2 instances, including Binpack, Random, and Spread, and notes that these do not apply to Fargate.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858585/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/ecs-exam-tips-placement-strategies.jpg)
+![The image provides exam tips for ECS, detailing placement strategies for EC2 instances, including Binpack, Random, and Spread, and notes that these do not apply to Fargate.](https://kodekloud.com/kk-media/image/upload/v1752858585/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/ecs-exam-tips-placement-strategies.jpg)
 
 ECS also supports autoscaling:
 
@@ -58,7 +58,7 @@ ECS also supports autoscaling:
 * ECS instances can be scaled using Auto Scaling Groups and Capacity Providers.
 * When deploying new versions, configure both the minimum healthy percent and the maximum healthy percent to maintain service continuity.
 
-![The image provides exam tips for ECS, covering topics like autoscaling with CloudWatch metrics, ASGs, Capacity Providers, and configuration values for deploying new versions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858586/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/ecs-exam-tips-autoscaling-cloudwatch.jpg)
+![The image provides exam tips for ECS, covering topics like autoscaling with CloudWatch metrics, ASGs, Capacity Providers, and configuration values for deploying new versions.](https://kodekloud.com/kk-media/image/upload/v1752858586/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/ecs-exam-tips-autoscaling-cloudwatch.jpg)
 
 ## AWS EKS (Elastic Kubernetes Service)
 
@@ -67,7 +67,7 @@ EKS is AWS’s managed Kubernetes service, providing an easy way to deploy and m
 * AWS handles the Kubernetes control plane.
 * You can choose between Fargate (where AWS manages compute infrastructure) or EC2 (where you manage your own instances) for worker nodes.
 
-![The image provides exam tips for EKS, highlighting that Kubernetes is an open-source container orchestrator, EKS is a managed service, AWS manages the control plane, and users have options for worker nodes with Fargate and EC2.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858587/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/eks-exam-tips-kubernetes-aws.jpg)
+![The image provides exam tips for EKS, highlighting that Kubernetes is an open-source container orchestrator, EKS is a managed service, AWS manages the control plane, and users have options for worker nodes with Fargate and EC2.](https://kodekloud.com/kk-media/image/upload/v1752858587/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/eks-exam-tips-kubernetes-aws.jpg)
 
 > **lightbulb** Familiarize yourself with both Fargate and EC2 options in EKS to choose the best fit for your application workloads.
 
@@ -78,7 +78,7 @@ AWS ECR is a fully managed container registry that supports both private and pub
 * Image scanning for security vulnerabilities
 * Lifecycle policies for automating image cleanup
 
-![The image provides exam tips for AWS ECR, highlighting it as a fully-managed Docker container registry service that supports private and public repositories, as well as image scanning and lifecycle policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858588/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-ecr-exam-tips-docker-registry.jpg)
+![The image provides exam tips for AWS ECR, highlighting it as a fully-managed Docker container registry service that supports private and public repositories, as well as image scanning and lifecycle policies.](https://kodekloud.com/kk-media/image/upload/v1752858588/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-ecr-exam-tips-docker-registry.jpg)
 
 ## Summary
 

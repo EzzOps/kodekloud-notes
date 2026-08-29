@@ -120,9 +120,7 @@ kubectl -n argocd get configmaps
 kubectl -n argocd get configmap argocd-cm -o yaml | grep -i timeout
 ```
 
-<Callout icon="lightbulb">
-  If `timeout.reconciliation` is not present in `argocd-cm`, Argo CD uses the default value (120s) plus jitter (up to 60s), so reconciliation may take up to \~3 minutes by default.
-</Callout>
+> **lightbulb** If `timeout.reconciliation` is not present in `argocd-cm`, Argo CD uses the default value (120s) plus jitter (up to 60s), so reconciliation may take up to \~3 minutes by default.
 
 Summary
 
@@ -130,8 +128,6 @@ Summary
 * Changes committed to Git are applied automatically by Argo CD, subject to the reconciliation polling interval.
 * Use the Refresh action to force a Git poll and apply changes immediately.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/088b9ef0-20f7-4303-bbbb-4def8bc6ce3d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/088b9ef0-20f7-4303-bbbb-4def8bc6ce3d)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/b43b9ecf-3b1a-4610-a0d1-09b384bf20d7" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/b43b9ecf-3b1a-4610-a0d1-09b384bf20d7)

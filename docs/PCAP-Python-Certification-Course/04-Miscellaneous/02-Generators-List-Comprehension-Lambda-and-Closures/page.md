@@ -25,17 +25,13 @@ Output:
 
 A generator is a specialized piece of code that can yield a series of values while preserving its state between iterations. Since the range function returns an iterator, it can be used directly within a for-in loop to traverse its values.
 
-<Frame>
-  ![The image defines a "Generator" as specialized code that can return a series of values and control the iteration process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882915/notes-assets/images/PCAP-Python-Certification-Course-Generators-List-Comprehension-Lambda-and-Closures/generator-specialized-code-iteration.jpg)
-</Frame>
+![The image defines a "Generator" as specialized code that can return a series of values and control the iteration process.](https://kodekloud.com/kk-media/image/upload/v1752882915/notes-assets/images/PCAP-Python-Certification-Course-Generators-List-Comprehension-Lambda-and-Closures/generator-specialized-code-iteration.jpg)
 
 ## Iterators and the Iterator Protocol
 
 An iterator is an object that adheres to the iterator protocol by implementing two core methods: `__iter__()` and `__next__()`. The `__iter__()` method returns the iterator object itself (typically called once), while the `__next__()` method yields the next value in the sequence. When the sequence is exhausted, `__next__()` raises a StopIteration exception.
 
-<Frame>
-  ![The image defines an "Iterator" as a data type that implements the iterator protocol, with methods \_\_iter\_\_() to return the object and \_\_next\_\_() to return the next value in a series.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882916/notes-assets/images/PCAP-Python-Certification-Course-Generators-List-Comprehension-Lambda-and-Closures/iterator-data-type-iterator-protocol.jpg)
-</Frame>
+![The image defines an "Iterator" as a data type that implements the iterator protocol, with methods \_\_iter\_\_() to return the object and \_\_next\_\_() to return the next value in a series.](https://kodekloud.com/kk-media/image/upload/v1752882916/notes-assets/images/PCAP-Python-Certification-Course-Generators-List-Comprehension-Lambda-and-Closures/iterator-data-type-iterator-protocol.jpg)
 
 ## Creating a Custom Generator via an Iterator
 
@@ -64,9 +60,7 @@ for i in custom_range:
 
 In this implementation, the `__iter__()` method returns the object itself, while the `__next__()` method returns the current value before incrementing it. Once the current value reaches the maximum, a StopIteration is raised to signal the end of the iteration.
 
-<Callout icon="lightbulb">
-  Managing state manually in iterators (like keeping track of the current value) can be avoided by using the yield keyword, which simplifies generator creation.
-</Callout>
+> **lightbulb** Managing state manually in iterators (like keeping track of the current value) can be avoided by using the yield keyword, which simplifies generator creation.
 
 ## Using Generators with the yield Keyword
 

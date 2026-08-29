@@ -20,7 +20,7 @@ Key advantages of Instance Store include:
 * Storage media may vary (SSD or HDD) based on the instance type selected.
 * Many instance types offer Instance Store volumes at no additional cost beyond the EC2 instance fee.
 
-![The image is a graphic titled "Instance Store" with five sections: Performance, Ephemerality, Storage Media Types, Capacity and Types, and No Additional Cost. Each section is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858888/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Storage/instance-store-performance-graphic.jpg)
+![The image is a graphic titled "Instance Store" with five sections: Performance, Ephemerality, Storage Media Types, Capacity and Types, and No Additional Cost. Each section is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752858888/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Storage/instance-store-performance-graphic.jpg)
 
 > **lightbulb** Instance Store is best used for scratch data or caching where data persistence is not required.
 
@@ -39,7 +39,7 @@ Notable features of EBS include:
 * Volumes can be resized dynamically, allowing adjustments as your application demands evolve.
 * Automatic replication within the Availability Zone ensures high durability and protection against hardware failures.
 
-![The image illustrates an AWS architecture diagram showing EC2 instances with EBS volumes within a VPC, across two availability zones, and EBS snapshots.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858890/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Storage/aws-architecture-ec2-ebs-vpc.jpg)
+![The image illustrates an AWS architecture diagram showing EC2 instances with EBS volumes within a VPC, across two availability zones, and EBS snapshots.](https://kodekloud.com/kk-media/image/upload/v1752858890/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Storage/aws-architecture-ec2-ebs-vpc.jpg)
 
 ***
 
@@ -56,11 +56,11 @@ Key characteristics of EFS include:
 * Designed to deliver high durability and availability through multi-AZ replication.
 * Supports NFS version 4, allowing multiple instances to access and operate on the same file system concurrently.
 
-![The image is a diagram illustrating an Amazon EFS (Elastic File System) setup within a VPC (Virtual Private Cloud), showing instances in two availability zones connected to mount targets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858891/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Storage/amazon-efs-vpc-setup-diagram.jpg)
+![The image is a diagram illustrating an Amazon EFS (Elastic File System) setup within a VPC (Virtual Private Cloud), showing instances in two availability zones connected to mount targets.](https://kodekloud.com/kk-media/image/upload/v1752858891/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Storage/amazon-efs-vpc-setup-diagram.jpg)
 
 Additionally, the following diagram highlights the key features of EFS:
 
-![The image lists five features of EFS: Simplicity, Cost-Effectiveness, Scalability, Availability and Durability, and Accessibility, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858892/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Storage/efs-features-simplicity-cost-effectiveness-scalability.jpg)
+![The image lists five features of EFS: Simplicity, Cost-Effectiveness, Scalability, Availability and Durability, and Accessibility, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752858892/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Storage/efs-features-simplicity-cost-effectiveness-scalability.jpg)
 
 ***
 
@@ -77,7 +77,7 @@ Below is a summary comparing the three primary EC2 storage options:
 | Flexibility & Scaling | Fixed capacity tied to instance type          | Can be dynamically resized and supports snapshot backups                   | Automatically scales up and down based on the storage demand |
 | Cost Considerations   | Included with your EC2 instance cost (varies) | Charged based on provisioned capacity and IOPS                             | Pay-as-you-go pricing model                                  |
 
-![The image is a comparison table of three storage options: Instance Store, EBS, and EFS, detailing features like storage type, data persistence, performance, durability, scalability, cost, and backup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858894/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Storage/storage-options-comparison-table.jpg)
+![The image is a comparison table of three storage options: Instance Store, EBS, and EFS, detailing features like storage type, data persistence, performance, durability, scalability, cost, and backup.](https://kodekloud.com/kk-media/image/upload/v1752858894/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Storage/storage-options-comparison-table.jpg)
 
 ***
 

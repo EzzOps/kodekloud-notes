@@ -48,9 +48,7 @@ Why this matters
 * The state section reveals providers still referenced by state, which helps detect orphaned provider references after refactoring or manual edits.
 * Use this command to troubleshoot provider version/source issues (registry vs private mirror), confirm provider sources, and verify policy compliance in enterprise setups.
 
-<Callout icon="lightbulb">
-  Run `terraform init` before `terraform providers` if you need Terraform to install or upgrade provider plugins. This command is also helpful when you want to confirm the provider set after a module refactor or a provider source change.
-</Callout>
+> **lightbulb** Run `terraform init` before `terraform providers` if you need Terraform to install or upgrade provider plugins. This command is also helpful when you want to confirm the provider set after a module refactor or a provider source change.
 
 Quick reference: commands and purpose
 
@@ -71,9 +69,7 @@ $ terraform graph | dot -Tpng > sa.png
 
 Note: Graphviz must be installed for `dot` to be available.
 
-<Callout icon="lightbulb">
-  Install Graphviz to render DOT output to PNG or other formats (for example: `brew install graphviz` on macOS or `apt-get install graphviz` on Debian/Ubuntu). See the Graphviz downloads page: [https://graphviz.org/download/](https://graphviz.org/download/)
-</Callout>
+> **lightbulb** Install Graphviz to render DOT output to PNG or other formats (for example: `brew install graphviz` on macOS or `apt-get install graphviz` on Debian/Ubuntu). See the Graphviz downloads page: [https://graphviz.org/download/](https://graphviz.org/download/)
 
 What the generated graph shows
 
@@ -99,6 +95,4 @@ When to use `terraform graph`
 
 These tools aren’t required for everyday changes, but they are indispensable when troubleshooting complex infrastructure, unexpected dependency behaviors, or provider-related issues.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/a87fc0ec-6ef6-409e-91cb-709bdcebb9eb/lesson/38e840a4-7cc5-456f-84f3-e2b200457e52" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/a87fc0ec-6ef6-409e-91cb-709bdcebb9eb/lesson/38e840a4-7cc5-456f-84f3-e2b200457e52)

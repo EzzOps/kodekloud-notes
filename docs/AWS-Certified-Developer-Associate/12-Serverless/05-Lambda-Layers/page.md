@@ -16,11 +16,11 @@ Lambda Layers can include libraries, custom runtimes, and other dependencies req
 * **Simplified Deployment:** Manage and update common dependency libraries from a single location.
 * **Optimized Package Size:** Keep deployment packages small by storing large third-party libraries separately.
 
-![The image illustrates the concept of Lambda Layers, showing three Lambda symbols connected to a box labeled "Lambda Layers" containing "Libraries," "Custom Runtime," and "Other Dependencies."](../../../../images/kodekloud.com/kk-media/image/upload/v1752859534/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Layers/lambda-layers-concept-diagram.jpg)
+![The image illustrates the concept of Lambda Layers, showing three Lambda symbols connected to a box labeled "Lambda Layers" containing "Libraries," "Custom Runtime," and "Other Dependencies."](https://kodekloud.com/kk-media/image/upload/v1752859534/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Layers/lambda-layers-concept-diagram.jpg)
 
 > **lightbulb** By offloading external libraries to layers, your Lambda functions remain lightweight. This not only optimizes deployments but also improves resource usage by eliminating repetitive dependency packaging.
 
-![The image is a slide titled "Lambda Layers – Benefits," explaining that storing external libraries in layers allows Lambda functions to remain small.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859535/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Layers/lambda-layers-benefits-slide.jpg)
+![The image is a slide titled "Lambda Layers – Benefits," explaining that storing external libraries in layers allows Lambda functions to remain small.](https://kodekloud.com/kk-media/image/upload/v1752859535/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Layers/lambda-layers-benefits-slide.jpg)
 
 In summary, Lambda Layers provide a streamlined method to share common dependencies across multiple Lambda functions. They help maintain small, manageable deployment packages and simplify the overall deployment process. Keep in mind that you can incorporate up to five layers per function, offering flexibility in how you structure and reuse your code dependencies.
 

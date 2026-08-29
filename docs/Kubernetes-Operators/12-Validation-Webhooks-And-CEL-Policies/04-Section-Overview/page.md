@@ -62,9 +62,7 @@ This demonstrates the policy blocks unsafe cases while allowing valid objects.
 * [ValidatingAdmissionPolicy API reference (admissionregistration.k8s.io)](https://kubernetes.io/docs/reference/generated/kubernetes-api/latest/)
 * [Common Expression Language (CEL) for Kubernetes](https://kubernetes.io/docs/reference/strategy/expressions/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/06ac03ac-518a-4bc6-b2f8-6ed63fcb26d5/lesson/c541f201-dbde-4b6d-8b13-df799e55b753" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/06ac03ac-518a-4bc6-b2f8-6ed63fcb26d5/lesson/c541f201-dbde-4b6d-8b13-df799e55b753)
 
 
 # Section Overview

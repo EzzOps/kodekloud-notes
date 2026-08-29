@@ -38,9 +38,7 @@ After saving these changes, restart the application without errors. You can veri
 * These columns together act as a composite primary key, ensuring that neither column is null.
 * Both columns have correctly defined foreign keys with "CASCADE" on delete enabled.
 
-<Callout icon="lightbulb">
-  Double-check the votes table in PgAdmin by inspecting its properties. The composite primary key and foreign key settings are essential for maintaining integrity between your posts and users tables.
-</Callout>
+> **lightbulb** Double-check the votes table in PgAdmin by inspecting its properties. The composite primary key and foreign key settings are essential for maintaining integrity between your posts and users tables.
 
 To further test the setup, run the following SQL query. This query retrieves data from the votes table, sorted by user\_id and post\_id:
 
@@ -53,6 +51,4 @@ This query will display vote records. For instance, if there is a vote with user
 
 By following these steps, you ensure that your votes table is correctly modeled and seamlessly integrated with the posts and users tables using SQLAlchemy.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/289a0126-164b-4954-916b-d8d3f4a33524" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/289a0126-164b-4954-916b-d8d3f4a33524)

@@ -76,9 +76,7 @@ the resource being imported.
 5. Reconcile your HCL: update default values, add missing attributes, or change values to reflect the desired configuration.
 6. Run `terraform plan` again until the plan shows only intended changes, then `terraform apply` to persist any HCL-driven changes (if required).
 
-<Callout icon="lightbulb">
-  Note: `terraform import` is especially useful when adopting Terraform in a brownfield environment, recovering a lost state file, or migrating manually created resources into infrastructure-as-code without causing downtime or recreation.
-</Callout>
+> **lightbulb** Note: `terraform import` is especially useful when adopting Terraform in a brownfield environment, recovering a lost state file, or migrating manually created resources into infrastructure-as-code without causing downtime or recreation.
 
 ## Best practices and important clarifications
 
@@ -94,14 +92,10 @@ the resource being imported.
 * Terraform docs: [https://www.terraform.io/docs/cli/commands/import.html](https://www.terraform.io/docs/cli/commands/import.html)
 * Azure Resource Manager ID docs: [https://learn.microsoft.com/azure/azure-resource-manager/management/resource-name-rules](https://learn.microsoft.com/azure/azure-resource-manager/management/resource-name-rules)
 
-<Callout icon="lightbulb">
-  Note: After importing, reconcile your configuration with the imported state and run `terraform plan` and `terraform apply` only when you have verified the intended changes.
-</Callout>
+> **lightbulb** Note: After importing, reconcile your configuration with the imported state and run `terraform plan` and `terraform apply` only when you have verified the intended changes.
 
 This completes the coverage of `terraform import`. It is the primary CLI command for bringing existing resources into Terraform state when adopting infrastructure-as-code in environments that already have resources provisioned.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/a87fc0ec-6ef6-409e-91cb-709bdcebb9eb/lesson/ac123bd0-ef89-44d6-a213-ab8d3f0b9d90" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/a87fc0ec-6ef6-409e-91cb-709bdcebb9eb/lesson/ac123bd0-ef89-44d6-a213-ab8d3f0b9d90)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/a87fc0ec-6ef6-409e-91cb-709bdcebb9eb/lesson/0582c65c-d487-4819-b7c5-9aafe16ba6d7" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/a87fc0ec-6ef6-409e-91cb-709bdcebb9eb/lesson/0582c65c-d487-4819-b7c5-9aafe16ba6d7)

@@ -12,7 +12,7 @@ With the integration of tools like Athena and Elasticsearch, you can query these
 
 For instance, AWS CloudTrail meticulously logs user activities by capturing essential details, making it clear how actions such as instance creation are recorded and tracked:
 
-![The image illustrates how AWS CloudTrail tracks user activity within an AWS account, showing a user named John performing actions that are logged by CloudTrail. It includes a brief explanation of CloudTrail's functions, such as logging user actions and tracking security policy modifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858298/notes-assets/images/AWS-Certified-Developer-Associate-CloudTrail/aws-cloudtrail-user-activity-logging.jpg)
+![The image illustrates how AWS CloudTrail tracks user activity within an AWS account, showing a user named John performing actions that are logged by CloudTrail. It includes a brief explanation of CloudTrail's functions, such as logging user actions and tracking security policy modifications.](https://kodekloud.com/kk-media/image/upload/v1752858298/notes-assets/images/AWS-Certified-Developer-Associate-CloudTrail/aws-cloudtrail-user-activity-logging.jpg)
 
 > **lightbulb** Centralized logging with CloudTrail offers a consolidated view of all actions within your AWS account, which simplifies forensic investigations, troubleshooting, and compliance auditing.
 
@@ -26,7 +26,7 @@ Furthermore, AWS CloudTrail seamlessly integrates with other AWS services to enh
 * It employs EventBridge to process significant events.
 * It uses SNS to notify stakeholders or trigger automated remediation processes.
 
-![The image is a flowchart illustrating a process involving AWS services: CloudTrail triggers CloudWatch, which takes action through EventBridge and SNS for triggers and alerts, and then notifies users or Lambda.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858299/notes-assets/images/AWS-Certified-Developer-Associate-CloudTrail/aws-flowchart-cloudtrail-cloudwatch-sns.jpg)
+![The image is a flowchart illustrating a process involving AWS services: CloudTrail triggers CloudWatch, which takes action through EventBridge and SNS for triggers and alerts, and then notifies users or Lambda.](https://kodekloud.com/kk-media/image/upload/v1752858299/notes-assets/images/AWS-Certified-Developer-Associate-CloudTrail/aws-flowchart-cloudtrail-cloudwatch-sns.jpg)
 
 In addition, CloudTrail Insights provides automated analysis by establishing a baseline for your API activity and monitoring for deviations. When unusual behavior is detected, CloudTrail Insights can trigger actions to address potential security threats, simplifying the identification of anomalies.
 

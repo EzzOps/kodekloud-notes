@@ -67,14 +67,10 @@ VPA controller components and their responsibilities
 | Updater              | Optionally updates live workloads (e.g., evicts pods) to apply new requests safely, based on recommender suggestions and update policies.        |
 | Admission Controller | Intercepts pod creations and mutates incoming pods to inject VPA-provided recommendations at admission time when configured to do so.            |
 
-<Callout icon="lightbulb">
-  Before installing VPA controllers, apply the VPA CRDs to your cluster. Controllers rely on those CRD types to read/write VPA objects and checkpoints; installing CRDs first prevents reconciliation errors and missing-resource failures.
-</Callout>
+> **lightbulb** Before installing VPA controllers, apply the VPA CRDs to your cluster. Controllers rely on those CRD types to read/write VPA objects and checkpoints; installing CRDs first prevents reconciliation errors and missing-resource failures.
 
 Now that the CRD concepts and verification steps are clear, the next step in the demo is to install the VPA controllers (recommender, updater, and admission-controller) and deploy a sample workload so you can observe how recommendations and checkpoints are created and updated.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/d1e3c4de-6570-49ea-8de1-2f9e18de0506" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/d1e3c4de-6570-49ea-8de1-2f9e18de0506)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/3732ce77-60fd-4722-a8ff-5135df53b02a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/0a6c48bd-c431-4b14-b33b-250d02997055/lesson/3732ce77-60fd-4722-a8ff-5135df53b02a)

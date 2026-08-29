@@ -282,9 +282,9 @@ This self-contained configuration is consistent and works seamlessly across diff
 
 A range of major controllers now support, or are actively implementing, the Gateway API. This industry support includes platforms such as Amazon EKS, Azure Application Gateway for Containers, Contour, Envoy, Google Kubernetes Engine, HAProxy, Istio, Kong, Kuma, NGINX, and many others. Such broad adoption underlines the growing momentum and reliability of the Gateway API.
 
-![The image is a table describing different Gateway API objects, their OSI layers, routing discriminators, TLS support, and purposes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869853/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Introduction-to-Gateway-API-2025-Updates/gateway-api-objects-table.jpg)
+![The image is a table describing different Gateway API objects, their OSI layers, routing discriminators, TLS support, and purposes.](https://kodekloud.com/kk-media/image/upload/v1752869853/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Introduction-to-Gateway-API-2025-Updates/gateway-api-objects-table.jpg)
 
-![The image lists various gateway controller implementations along with their status, such as GA (General Availability), beta, alpha, tech preview, and work in progress.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869854/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Introduction-to-Gateway-API-2025-Updates/gateway-controllers-status-list.jpg)
+![The image lists various gateway controller implementations along with their status, such as GA (General Availability), beta, alpha, tech preview, and work in progress.](https://kodekloud.com/kk-media/image/upload/v1752869854/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Introduction-to-Gateway-API-2025-Updates/gateway-controllers-status-list.jpg)
 
 ## Conclusion
 

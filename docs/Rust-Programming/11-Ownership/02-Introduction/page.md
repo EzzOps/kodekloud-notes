@@ -13,13 +13,9 @@ In this lesson, we explore Rust’s ownership model, discuss its core rules, and
 * **Concurrency:** The language prevents data races, enabling safe and efficient concurrent programming.
 * **No Garbage Collection:** Rust’s ownership system ensures predictable performance by managing memory without garbage collection.
 
-<Callout icon="lightbulb">
-  Rust’s ownership system enforces strict compile-time rules that guarantee memory safety and reliability, making it a compelling alternative to manual memory management or garbage collection.
-</Callout>
+> **lightbulb** Rust’s ownership system enforces strict compile-time rules that guarantee memory safety and reliability, making it a compelling alternative to manual memory management or garbage collection.
 
-<Frame>
-  ![The image illustrates the concept of ownership balancing safety and performance, featuring the Rust programming language logo and the phrase "Ownership System."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883948/notes-assets/images/Rust-Programming-Introduction/ownership-balancing-safety-performance.jpg)
-</Frame>
+![The image illustrates the concept of ownership balancing safety and performance, featuring the Rust programming language logo and the phrase "Ownership System."](https://kodekloud.com/kk-media/image/upload/v1752883948/notes-assets/images/Rust-Programming-Introduction/ownership-balancing-safety-performance.jpg)
 
 ## What Is Ownership?
 
@@ -31,15 +27,11 @@ Ownership in Rust defines the rules for how memory is managed. Although the rule
 
 These rules promote automatic and error-free memory management, helping to prevent issues like dangling pointers and double frees.
 
-<Frame>
-  ![The image illustrates the concept of "Understanding Ownership" in Rust programming, highlighting it as a set of rules for memory management, with graphics of a computer and documents.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883950/notes-assets/images/Rust-Programming-Introduction/understanding-ownership-rust-programming.jpg)
-</Frame>
+![The image illustrates the concept of "Understanding Ownership" in Rust programming, highlighting it as a set of rules for memory management, with graphics of a computer and documents.](https://kodekloud.com/kk-media/image/upload/v1752883950/notes-assets/images/Rust-Programming-Introduction/understanding-ownership-rust-programming.jpg)
 
 The diagram below visually summarizes these three ownership rules:
 
-<Frame>
-  ![The image outlines the three ownership rules in Rust programming: each value has an owner variable, there can only be one owner at a time, and when the owner goes out of scope, the value is dropped. It includes a visual of a computer and server with text documents.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883951/notes-assets/images/Rust-Programming-Introduction/rust-ownership-rules-diagram.jpg)
-</Frame>
+![The image outlines the three ownership rules in Rust programming: each value has an owner variable, there can only be one owner at a time, and when the owner goes out of scope, the value is dropped. It includes a visual of a computer and server with text documents.](https://kodekloud.com/kk-media/image/upload/v1752883951/notes-assets/images/Rust-Programming-Introduction/rust-ownership-rules-diagram.jpg)
 
 ## An Example of Ownership
 
@@ -54,12 +46,8 @@ fn main() {
 
 In this scenario, the string is allocated on the heap and is owned by `s`. Once `s` goes out of scope at the end of the `main` function, Rust automatically deallocates the memory used by the string. This process—where the value is dropped when its owner goes out of scope—is integral to Rust’s memory management.
 
-<Callout icon="lightbulb">
-  In Rust, understanding when and how memory is allocated and deallocated is crucial for writing efficient and safe code. The ownership rules ensure that memory is managed predictably and safely.
-</Callout>
+> **lightbulb** In Rust, understanding when and how memory is allocated and deallocated is crucial for writing efficient and safe code. The ownership rules ensure that memory is managed predictably and safely.
 
 As we progress, we will delve deeper into heap allocation and explore the intricacies of the ownership system, further enhancing your understanding of Rust's unique approach to memory management.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/21f03974-9148-4efb-90cc-8d403b7f865f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/21f03974-9148-4efb-90cc-8d403b7f865f)

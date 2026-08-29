@@ -21,9 +21,7 @@ Use the following quick-reference to map steps to their intent:
 
 When running locally, you will typically check the manager output in your terminal (where `make run` runs) and use `kubectl get` to inspect resource state. For cluster-side evidence, use `kubectl` (for example `kubectl get webapp -A`) and for in-cluster components inspect Pod logs once you deploy the packaged controller.
 
-<Callout icon="lightbulb">
-  Use local mode for fast feedback on reconcile logic and resource reads/writes. Treat it as a development workbench: quick, iterative testing to validate behavior before you move on to packaging and in-cluster validation.
-</Callout>
+> **lightbulb** Use local mode for fast feedback on reconcile logic and resource reads/writes. Treat it as a development workbench: quick, iterative testing to validate behavior before you move on to packaging and in-cluster validation.
 
 Local mode is powerful, but it has limits. It can validate reconcile behavior, confirm reads and writes against real objects, and produce log evidence. It cannot prove final production concerns such as the exact deployment shape, service account permission boundaries (your kubeconfig user can be more privileged than the controller's in-cluster identity), leader election behavior, webhook admission controllers, or production networking and RBAC interactions.
 
@@ -33,9 +31,7 @@ Local mode is powerful, but it has limits. It can validate reconcile behavior, c
 
 Those checks belong in subsequent stages of testing and CI. For now, use local mode for what it does best: rapid iteration and evidence-driven debugging. Later, the workbench output becomes the raw material for deeper debugging, packaging, and production verification.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/245c1684-705c-4a53-9f56-897dfaf25c71/lesson/c597f5fe-d6ad-4c91-8b27-2cb6c9bbdb28" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/245c1684-705c-4a53-9f56-897dfaf25c71/lesson/c597f5fe-d6ad-4c91-8b27-2cb6c9bbdb28)
 
 
 # Section Overview
@@ -72,9 +68,7 @@ Start in local run mode: the manager runs as a regular process on your workstati
   <img alt="The image is a slide about the limitations of local mode, highlighting its suitability for reconciling logic and logs, but not for packaging, service account permissions, webhooks, or production deployments." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Local run mode is ideal for iterating on reconcile logic, observing logs, and validating controller behavior quickly. It does not validate packaging, Pod ServiceAccount permissions, webhook configurations, or production deployment nuances.
-</Callout>
+> **lightbulb** Local run mode is ideal for iterating on reconcile logic, observing logs, and validating controller behavior quickly. It does not validate packaging, Pod ServiceAccount permissions, webhook configurations, or production deployment nuances.
 
 How to observe what matters
 
@@ -118,9 +112,7 @@ Scope and boundary testing
 * Example: the reconciler may recreate a missing child resource (restoring a missing part from the blueprint), but it might not repair every drifted field on an existing child resource.
 * Use status updates and events to document what the controller actually guarantees.
 
-<Callout icon="warning">
-  Local mode helps you validate controller logic quickly but does not replicate production packaging, RBAC, admission webhook behavior, or Pod-level runtime permissions. Always validate those aspects in a realistic cluster deployment before production rollout.
-</Callout>
+> **warning** Local mode helps you validate controller logic quickly but does not replicate production packaging, RBAC, admission webhook behavior, or Pod-level runtime permissions. Always validate those aspects in a realistic cluster deployment before production rollout.
 
 References and next steps
 
@@ -129,6 +121,4 @@ References and next steps
   * [Kubernetes Controllers and Operators](https://kubernetes.io/docs/concepts/architecture/controller/)
   * [Writing Kubernetes Controllers](https://book.kubebuilder.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/245c1684-705c-4a53-9f56-897dfaf25c71/lesson/62a94d81-f1dd-4719-b63c-6d8c1f12db2f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/245c1684-705c-4a53-9f56-897dfaf25c71/lesson/62a94d81-f1dd-4719-b63c-6d8c1f12db2f)

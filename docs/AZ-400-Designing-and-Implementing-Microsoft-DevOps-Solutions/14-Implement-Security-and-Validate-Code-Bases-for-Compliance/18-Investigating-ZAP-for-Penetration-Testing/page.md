@@ -26,7 +26,7 @@ OWASP Zed Attack Proxy (ZAP) is a free, open-source web application security sca
 | Baseline Assessment | Quick, non-intrusive checks       | Minutes  | CI/CD pre-merge checks   |
 | In-Depth Analysis   | Comprehensive, rule-based testing | Hours    | Nightly or weekly audits |
 
-![The image is an infographic about using Zed Attack Proxy (ZAP) for penetration testing, detailing modes of testing, baseline assessments, and in-depth scanning schedules. It includes elements like active engagement, passive monitoring, swift scans, and detailed analysis.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868025/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Investigating-ZAP-for-Penetration-Testing/zap-penetration-testing-infographic.jpg)
+![The image is an infographic about using Zed Attack Proxy (ZAP) for penetration testing, detailing modes of testing, baseline assessments, and in-depth scanning schedules. It includes elements like active engagement, passive monitoring, swift scans, and detailed analysis.](https://kodekloud.com/kk-media/image/upload/v1752868025/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Investigating-ZAP-for-Penetration-Testing/zap-penetration-testing-infographic.jpg)
 
 > **triangle-alert** Only perform active scans on applications you own or have explicit permission to test. Unauthorized scanning may violate legal or organizational policies.
 

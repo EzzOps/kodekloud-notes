@@ -10,7 +10,7 @@ Discover how DNS resolution operates within AWS Virtual Private Clouds (VPCs) an
 
 When you launch an EC2 instance into a public or private subnet, AWS automatically assigns it a private IPv4 address (for example, 10.0.100.10). AWS also generates a DNS hostname that embeds this IP address. Clients can connect using either the private IP or the assigned DNS name.
 
-![The image is a diagram showing DNS in VPCs within an AWS Cloud, featuring four VPCs with different IP address ranges. Each VPC is labeled with its CIDR block and a specific IP address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863199/notes-assets/images/AWS-Networking-Fundamentals-DNS-VPC/dns-vpcs-aws-diagram-ip-addresses.jpg)
+![The image is a diagram showing DNS in VPCs within an AWS Cloud, featuring four VPCs with different IP address ranges. Each VPC is labeled with its CIDR block and a specific IP address.](https://kodekloud.com/kk-media/image/upload/v1752863199/notes-assets/images/AWS-Networking-Fundamentals-DNS-VPC/dns-vpcs-aws-diagram-ip-addresses.jpg)
 
 ## AWS-Provided DNS Servers
 
@@ -34,7 +34,7 @@ AWS provides two VPC attributes that control DNS behavior:
 
 You can modify these settings through the AWS Management Console, AWS CLI, or AWS SDKs.
 
-![The image shows two DNS options: "enableDnsHostnames" and "enableDnsSupport," each in a colored square.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863200/notes-assets/images/AWS-Networking-Fundamentals-DNS-VPC/dns-options-enable-dns-hostnames-support.jpg)
+![The image shows two DNS options: "enableDnsHostnames" and "enableDnsSupport," each in a colored square.](https://kodekloud.com/kk-media/image/upload/v1752863200/notes-assets/images/AWS-Networking-Fundamentals-DNS-VPC/dns-options-enable-dns-hostnames-support.jpg)
 
 > **triangle-alert** Disabling `enableDnsSupport` prevents any DNS resolution within the VPC, which can break applications that rely on domain names.
 
@@ -45,7 +45,7 @@ You can modify these settings through the AWS Management Console, AWS CLI, or AW
 * Use `enableDnsHostnames` to toggle DNS hostname assignment for instances with public IPs.
 * Use `enableDnsSupport` to enable or disable DNS resolution within the VPC.
 
-![The image is a summary slide with four points about DNS settings in AWS VPCs, including private IP assignments, DNS server access, and DNS support options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863202/notes-assets/images/AWS-Networking-Fundamentals-DNS-VPC/dns-settings-aws-vpcs-summary-slide.jpg)
+![The image is a summary slide with four points about DNS settings in AWS VPCs, including private IP assignments, DNS server access, and DNS support options.](https://kodekloud.com/kk-media/image/upload/v1752863202/notes-assets/images/AWS-Networking-Fundamentals-DNS-VPC/dns-settings-aws-vpcs-summary-slide.jpg)
 
 ## Links and References
 

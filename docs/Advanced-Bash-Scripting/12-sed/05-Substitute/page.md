@@ -55,7 +55,7 @@ sed 's/old_string/new_string/' input-file
 
 Given an `employees.txt` file:
 
-![The image shows a text file named "employees.txt" containing a list of employees with details such as name, department, job title, email, and salary.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868673/notes-assets/images/Advanced-Bash-Scripting-Substitute/employees-list-details-text-file.jpg)
+![The image shows a text file named "employees.txt" containing a list of employees with details such as name, department, job title, email, and salary.](https://kodekloud.com/kk-media/image/upload/v1752868673/notes-assets/images/Advanced-Bash-Scripting-Substitute/employees-list-details-text-file.jpg)
 
 To update Enrique Rivera’s salary from `65000` to `85000`, run:
 

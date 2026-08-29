@@ -72,9 +72,7 @@ aws_secret_access_key = 5JG8kqNhMMSZMDbLjNJMYKqKS5rFxRPREqysVRPF
 
 Region used in this lesson: `us-east-1`.
 
-<Callout icon="lightbulb">
-  MCP servers support multiple credential delivery methods (plain keys, IAM roles, etc.). Follow security best practices for credential handling and avoid checking credentials into source control.
-</Callout>
+> **lightbulb** MCP servers support multiple credential delivery methods (plain keys, IAM roles, etc.). Follow security best practices for credential handling and avoid checking credentials into source control.
 
 ## Install AWS Pricing MCP Server via the KAgent UI
 
@@ -226,11 +224,9 @@ kubectl -n kagent logs -l app.kubernetes.io/component=controller -f
 
 That's it — you installed one MCP Server via the UI and one via a manifest, verified both, and viewed the tools each server exposes. See you in the next lab.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/eeb4f7f4-b8e5-4765-9495-b928e2be1db2" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/eeb4f7f4-b8e5-4765-9495-b928e2be1db2)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/1e3a41d4-84a4-4395-b384-dbd444ef8720" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/1e3a41d4-84a4-4395-b384-dbd444ef8720)
 
 
 # Demo KMCP Installation

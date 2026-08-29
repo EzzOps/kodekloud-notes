@@ -16,9 +16,7 @@ Open source software thrives on collaboration. Contributors adopt various rolesâ
 | Contributor             | Submits code, documentation, bug reports, or support.                              | Open pull requests; report issues; write tutorials or translations.                                     |
 | Community Member / User | Provides feedback; reports bugs; helps others via forums and Q\&A platforms.       | Comment on issues; vote for features; assist newcomers on [Stack Overflow](https://stackoverflow.com/). |
 
-<Callout icon="lightbulb">
-  Roles often overlap. An author can also be a maintainer, and active users frequently evolve into contributors.
-</Callout>
+> **lightbulb** Roles often overlap. An author can also be a maintainer, and active users frequently evolve into contributors.
 
 ### 1. Author
 
@@ -36,9 +34,7 @@ Owners hold legal authority and manage the projectâ€™s infrastructure. Key tasks
 * Granting or revoking admin permissions.
 * Defining governance models (e.g., [Benevolent Dictator For Life](https://en.wikipedia.org/wiki/Benevolent_dictator_for_life)).
 
-<Callout icon="triangle-alert">
-  Ensure ownership agreements and licensing terms are clearly documented to avoid legal disputes.
-</Callout>
+> **triangle-alert** Ensure ownership agreements and licensing terms are clearly documented to avoid legal disputes.
 
 ### 3. Maintainer
 

@@ -19,9 +19,7 @@ options {
 
 You can click on the online documentation from the generator to obtain detailed descriptions on how to integrate and customize these options within your pipeline. Options can be applied globally or within individual stages as required.
 
-<Frame>
-  ![The image shows a webpage from the Jenkins documentation, specifically detailing the "Pipeline Syntax" options, with a sidebar menu for navigation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879820/notes-assets/images/Jenkins-Pipelines-Using-Options-Directive/jenkins-pipeline-syntax-documentation.jpg)
-</Frame>
+![The image shows a webpage from the Jenkins documentation, specifically detailing the "Pipeline Syntax" options, with a sidebar menu for navigation.](https://kodekloud.com/kk-media/image/upload/v1752879820/notes-assets/images/Jenkins-Pipelines-Using-Options-Directive/jenkins-pipeline-syntax-documentation.jpg)
 
 ***
 
@@ -102,9 +100,7 @@ pipeline {
 }
 ```
 
-<Callout icon="lightbulb">
-  If the "Unit Testing" stage depends on external parameters (such as a Mongo URI), ensure that they are provided; otherwise, the stage may fail. The retry option is especially useful in these cases.
-</Callout>
+> **lightbulb** If the "Unit Testing" stage depends on external parameters (such as a Mongo URI), ensure that they are provided; otherwise, the stage may fail. The retry option is especially useful in these cases.
 
 Another example demonstrating the use of a retry option at the stage level is shown below:
 
@@ -247,9 +243,7 @@ Superseded by #16
 16:07:29  script returned exit code 143
 ```
 
-<Callout icon="triangle-alert">
-  Ensure that critical processes are not unexpectedly terminated when using concurrent build management options.
-</Callout>
+> **triangle-alert** Ensure that critical processes are not unexpectedly terminated when using concurrent build management options.
 
 ***
 
@@ -340,6 +334,4 @@ The options directive in Jenkins pipelines provides a powerful way to manage pip
 
 Thank you for reading this article. Happy building!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/7e239b62-2dfd-4594-85cf-e51c0707121c/lesson/bed18be5-6c46-4e93-bd6d-895bff40a884" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/7e239b62-2dfd-4594-85cf-e51c0707121c/lesson/bed18be5-6c46-4e93-bd6d-895bff40a884)

@@ -10,7 +10,7 @@ In this lesson, you'll learn how to configure a dead letter queue (DLQ) for an A
 
 Begin by creating a new Lambda function named "Lambda DLQ" using the AWS Lambda console.
 
-![The image shows the AWS Lambda console where a user is creating a new function. Options for authoring from scratch, using a blueprint, or a container image are available, along with fields for function name, runtime, and architecture.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859449/notes-assets/images/AWS-Certified-Developer-Associate-Dead-Letter-Queue-Demo/aws-lambda-console-new-function.jpg)
+![The image shows the AWS Lambda console where a user is creating a new function. Options for authoring from scratch, using a blueprint, or a container image are available, along with fields for function name, runtime, and architecture.](https://kodekloud.com/kk-media/image/upload/v1752859449/notes-assets/images/AWS-Certified-Developer-Associate-Dead-Letter-Queue-Demo/aws-lambda-console-new-function.jpg)
 
 After creating the function, update the code to log the event and return a simple response. Deploy your changes with the following code:
 
@@ -38,7 +38,7 @@ Additionally, review CloudWatch logs to verify that the event data has been logg
 
 To simulate a failure, modify the Lambda function code so that it throws an error. Update your function code as shown:
 
-![The image shows an AWS Lambda console screen with a function named "lambdaDLQ" successfully updated. It displays monitoring metrics such as invocations, duration, and error count in the CloudWatch section.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859450/notes-assets/images/AWS-Certified-Developer-Associate-Dead-Letter-Queue-Demo/aws-lambda-console-lambdadlq-updated.jpg)
+![The image shows an AWS Lambda console screen with a function named "lambdaDLQ" successfully updated. It displays monitoring metrics such as invocations, duration, and error count in the CloudWatch section.](https://kodekloud.com/kk-media/image/upload/v1752859450/notes-assets/images/AWS-Certified-Developer-Associate-Dead-Letter-Queue-Demo/aws-lambda-console-lambdadlq-updated.jpg)
 
 ```javascript theme={null}
 export const handler = async (event) => {
@@ -62,11 +62,11 @@ To forward failed invocations to a DLQ, follow these steps:
 2. Configure the "Maximum age of event" and set the "Retry attempts" (by default, AWS retries twice).
 3. Specify an SQS queue to serve as your dead letter queue.
 
-![The image shows the AWS Lambda console, specifically the "Edit asynchronous configuration" page. It includes settings for maximum age of event, retry attempts, and dead-letter queue service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859451/notes-assets/images/AWS-Certified-Developer-Associate-Dead-Letter-Queue-Demo/aws-lambda-edit-asynchronous-config.jpg)
+![The image shows the AWS Lambda console, specifically the "Edit asynchronous configuration" page. It includes settings for maximum age of event, retry attempts, and dead-letter queue service.](https://kodekloud.com/kk-media/image/upload/v1752859451/notes-assets/images/AWS-Certified-Developer-Associate-Dead-Letter-Queue-Demo/aws-lambda-edit-asynchronous-config.jpg)
 
 If you haven't created a DLQ yet, go to the SQS service in the AWS Management Console and create a new standard queue named "lambda DL queue" with default settings.
 
-![The image shows an AWS CloudWatch interface with a search for "sqs" displaying services like Simple Queue Service and Amazon Pinpoint SMS. The right side shows log details with an error message.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859452/notes-assets/images/AWS-Certified-Developer-Associate-Dead-Letter-Queue-Demo/aws-cloudwatch-sqs-search-log-details.jpg)
+![The image shows an AWS CloudWatch interface with a search for "sqs" displaying services like Simple Queue Service and Amazon Pinpoint SMS. The right side shows log details with an error message.](https://kodekloud.com/kk-media/image/upload/v1752859452/notes-assets/images/AWS-Certified-Developer-Associate-Dead-Letter-Queue-Demo/aws-cloudwatch-sqs-search-log-details.jpg)
 
 Return to your Lambda configuration, refresh the DLQ settings, select the new "lambda DL queue", and save the configuration. If you encounter a permission error for SendMessage on the SQS queue, proceed to update the Lambda function's IAM role.
 
@@ -77,11 +77,11 @@ To address permission issues, update the Lambda function’s execution role:
 1. Open the IAM console and locate the execution role via the Permissions tab in the Lambda configuration.
 2. Attach a policy granting permissions to interact with SQS.
 
-![The image shows an AWS Lambda console interface displaying the function "lambdaDLQ" with a diagram view and options for testing, monitoring, and configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859454/notes-assets/images/AWS-Certified-Developer-Associate-Dead-Letter-Queue-Demo/aws-lambda-console-lambdadlq-diagram.jpg)
+![The image shows an AWS Lambda console interface displaying the function "lambdaDLQ" with a diagram view and options for testing, monitoring, and configuration.](https://kodekloud.com/kk-media/image/upload/v1752859454/notes-assets/images/AWS-Certified-Developer-Associate-Dead-Letter-Queue-Demo/aws-lambda-console-lambdadlq-diagram.jpg)
 
 After updating the role, return to the Lambda configuration and save the asynchronous settings once again.
 
-![The image shows an AWS IAM console screen where a user is attaching a policy to a role named "lambdaDLQ-role-e90uty3b." It lists various permission policies available for selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859455/notes-assets/images/AWS-Certified-Developer-Associate-Dead-Letter-Queue-Demo/aws-iam-console-attach-policy-lambda-role.jpg)
+![The image shows an AWS IAM console screen where a user is attaching a policy to a role named "lambdaDLQ-role-e90uty3b." It lists various permission policies available for selection.](https://kodekloud.com/kk-media/image/upload/v1752859455/notes-assets/images/AWS-Certified-Developer-Associate-Dead-Letter-Queue-Demo/aws-iam-console-attach-policy-lambda-role.jpg)
 
 ## Step 6: Testing the DLQ Configuration
 
@@ -109,7 +109,7 @@ A status code of 202 confirms that the invocation was accepted. CloudWatch logs 
 
 Finally, visit the SQS console to poll for messages. The message sent by the Lambda function, including error details, should appear in the DLQ.
 
-![The image shows an AWS console interface for sending and receiving messages, with options to enter a message, set delivery delay, and poll for messages. It displays message polling settings and indicates that there are two messages available.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859456/notes-assets/images/AWS-Certified-Developer-Associate-Dead-Letter-Queue-Demo/aws-console-message-polling-interface.jpg)
+![The image shows an AWS console interface for sending and receiving messages, with options to enter a message, set delivery delay, and poll for messages. It displays message polling settings and indicates that there are two messages available.](https://kodekloud.com/kk-media/image/upload/v1752859456/notes-assets/images/AWS-Certified-Developer-Associate-Dead-Letter-Queue-Demo/aws-console-message-polling-interface.jpg)
 
 ## Conclusion
 

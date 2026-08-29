@@ -35,9 +35,7 @@ Use your custom configuration file to launch Vault:
 vault server -config=/path/to/config.hcl
 ```
 
-<Callout icon="triangle-alert">
-  Do not run `vault server` interactively in production. Instead, manage it with a service supervisor to automatically start on boot and restart on failure.
-</Callout>
+> **triangle-alert** Do not run `vault server` interactively in production. Instead, manage it with a service supervisor to automatically start on boot and restart on failure.
 
 ***
 
@@ -45,9 +43,7 @@ vault server -config=/path/to/config.hcl
 
 On Linux, `systemd` is the recommended service manager. Below is a placeholder image linking to production-ready unit files for Vault, Consul server, and Consul client.
 
-<Frame>
-  ![The image provides links to systemd files for running a Vault server, a Consul server, and a Consul client in production. It includes URLs for each service configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878171/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Running-Vault-Server-in-Production/systemd-vault-consul-configuration-links.jpg)
-</Frame>
+![The image provides links to systemd files for running a Vault server, a Consul server, and a Consul client in production. It includes URLs for each service configuration.](https://kodekloud.com/kk-media/image/upload/v1752878171/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Running-Vault-Server-in-Production/systemd-vault-consul-configuration-links.jpg)
 
 | Service               | Description                       | Sample Unit File         |
 | --------------------- | --------------------------------- | ------------------------ |
@@ -75,25 +71,19 @@ A basic single-server Vault is quick to provision but has no redundancy. If the 
 * One Vault node with TLS enabled
 * Storage backend configured in `config.hcl`
 
-<Callout icon="triangle-alert">
-  Single-node Vault provides no failover. Use only for evaluation or development.
-</Callout>
+> **triangle-alert** Single-node Vault provides no failover. Use only for evaluation or development.
 
 ### 4.2 Multi-Node Cluster with Integrated Storage
 
 Vault’s Integrated Storage (Raft) allows native data replication across nodes A, B, and C. Each node has its own TLS certificate and configuration.
 
-<Frame>
-  ![The image illustrates a multi-node Vault server cluster with integrated storage, showing three nodes (A, B, and C) connected through network replication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878173/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Running-Vault-Server-in-Production/multi-node-vault-server-cluster-diagram.jpg)
-</Frame>
+![The image illustrates a multi-node Vault server cluster with integrated storage, showing three nodes (A, B, and C) connected through network replication.](https://kodekloud.com/kk-media/image/upload/v1752878173/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Running-Vault-Server-in-Production/multi-node-vault-server-cluster-diagram.jpg)
 
 ### 4.3 Multi-Node Cluster with External Storage
 
 For enterprise scenarios, use Consul or another external HA backend. All Vault nodes point to the same storage cluster, ensuring data consistency and availability.
 
-<Frame>
-  ![The image illustrates a multi-node Vault server cluster setup with three nodes (A, B, and C) connected to an external storage backend for high availability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878174/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Running-Vault-Server-in-Production/multi-node-vault-cluster-setup.jpg)
-</Frame>
+![The image illustrates a multi-node Vault server cluster setup with three nodes (A, B, and C) connected to an external storage backend for high availability.](https://kodekloud.com/kk-media/image/upload/v1752878174/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Running-Vault-Server-in-Production/multi-node-vault-cluster-setup.jpg)
 
 ***
 
@@ -110,13 +100,9 @@ Understanding manual installation helps you automate effectively. Follow these s
 7. Install and configure [Consul](https://www.consul.io/) and join the cluster.
 8. Start services and validate cluster health.
 
-<Frame>
-  ![The image is a step-by-step guide for manually installing a Vault server in production, detailing eight steps from downloading Vault from HashiCorp to launching the Vault service. Each step is accompanied by an icon and a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878175/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Running-Vault-Server-in-Production/vault-server-installation-guide-steps.jpg)
-</Frame>
+![The image is a step-by-step guide for manually installing a Vault server in production, detailing eight steps from downloading Vault from HashiCorp to launching the Vault service. Each step is accompanied by an icon and a brief description.](https://kodekloud.com/kk-media/image/upload/v1752878175/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Running-Vault-Server-in-Production/vault-server-installation-guide-steps.jpg)
 
-<Callout icon="lightbulb">
-  After manual validation, codify these steps using your preferred automation tool for consistency and repeatability.
-</Callout>
+> **lightbulb** After manual validation, codify these steps using your preferred automation tool for consistency and repeatability.
 
 ***
 
@@ -134,6 +120,4 @@ In the next section, we’ll automate the deployment of a three-node Vault clust
 
 ***
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/e70296a3-ac32-48fb-894f-0fb9cc5e355a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/e70296a3-ac32-48fb-894f-0fb9cc5e355a)

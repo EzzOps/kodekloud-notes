@@ -18,7 +18,7 @@ This process preserves your data while ensuring that your volume is secured with
 
 Begin by creating a simple, general-purpose 100 GB EBS volume without encryption. At this stage, no tags are applied, and the volume remains unencrypted. The AWS console below shows the configuration options for this volume:
 
-![The image shows an AWS console screen for configuring an EBS volume, with options for volume type, size, IOPS, throughput, availability zone, snapshot ID, and encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860451/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Migrating-an-EBS-Volumes-from-Unencrypted-to-Encrypted/aws-console-ebs-volume-configuration.jpg)
+![The image shows an AWS console screen for configuring an EBS volume, with options for volume type, size, IOPS, throughput, availability zone, snapshot ID, and encryption.](https://kodekloud.com/kk-media/image/upload/v1752860451/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Migrating-an-EBS-Volumes-from-Unencrypted-to-Encrypted/aws-console-ebs-volume-configuration.jpg)
 
 Once the volume is successfully created, verify that its status is set to "okay" (using GP3 with 100 GB and configured IOPS). The key detail to note is that the volume label indicates it is unencrypted.
 
@@ -26,7 +26,7 @@ Once the volume is successfully created, verify that its status is set to "okay"
 
 Since AWS does not provide a direct mechanism for converting an unencrypted volume to an encrypted one, the solution is to create a snapshot from the unencrypted volume. Remember that the snapshot will inherit the encryption state of the original volume, meaning it will also be unencrypted.
 
-![The image shows an AWS interface for creating a snapshot of an unencrypted EBS volume, with fields for volume ID, availability zone, and description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860452/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Migrating-an-EBS-Volumes-from-Unencrypted-to-Encrypted/aws-ebs-snapshot-interface.jpg)
+![The image shows an AWS interface for creating a snapshot of an unencrypted EBS volume, with fields for volume ID, availability zone, and description.](https://kodekloud.com/kk-media/image/upload/v1752860452/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Migrating-an-EBS-Volumes-from-Unencrypted-to-Encrypted/aws-ebs-snapshot-interface.jpg)
 
 For clarity and easier management, consider renaming or tagging the snapshot as “unencrypted volume snapshot” after its creation.
 
@@ -40,7 +40,7 @@ Navigate back to the volumes section and choose the option to create a new volum
 
 Be sure to correctly specify the snapshot ID before proceeding. Check out the following diagram that illustrates the encryption settings screen during this process:
 
-![The image shows an AWS console screen for configuring encryption settings for EBS volumes, including options for selecting a KMS key and related details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860454/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Migrating-an-EBS-Volumes-from-Unencrypted-to-Encrypted/aws-ebs-encryption-settings-console.jpg)
+![The image shows an AWS console screen for configuring encryption settings for EBS volumes, including options for selecting a KMS key and related details.](https://kodekloud.com/kk-media/image/upload/v1752860454/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Migrating-an-EBS-Volumes-from-Unencrypted-to-Encrypted/aws-ebs-encryption-settings-console.jpg)
 
 After the new volume is created, refresh the console to ensure that the volume now appears as encrypted, while maintaining the characteristics of the original GP3 configuration.
 
@@ -48,13 +48,13 @@ After the new volume is created, refresh the console to ensure that the volume n
 
 To confirm the successful migration, check the volume details on the EC2 dashboard. The dashboard should display the encrypted volume along with its unique attributes (volume ID, type, size, IOPS, and more).
 
-![The image shows an AWS EC2 dashboard displaying a list of Elastic Block Store (EBS) volumes, including details like volume ID, type, size, IOPS, and throughput. The selected volume is an encrypted one with specific attributes highlighted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860455/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Migrating-an-EBS-Volumes-from-Unencrypted-to-Encrypted/aws-ec2-ebs-volumes-dashboard.jpg)
+![The image shows an AWS EC2 dashboard displaying a list of Elastic Block Store (EBS) volumes, including details like volume ID, type, size, IOPS, and throughput. The selected volume is an encrypted one with specific attributes highlighted.](https://kodekloud.com/kk-media/image/upload/v1752860455/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Migrating-an-EBS-Volumes-from-Unencrypted-to-Encrypted/aws-ec2-ebs-volumes-dashboard.jpg)
 
 ## Step 5: Creating an Encrypted Snapshot for Future Use
 
 With the encrypted volume in place, the next step is to create an encrypted snapshot. This snapshot, by virtue of inheriting the volume's encryption state, will be encrypted. Verify its presence in the snapshots console and, if necessary, update its details for consistency.
 
-![The image shows an AWS EC2 console displaying a list of snapshots, including an encrypted snapshot with details such as snapshot ID, volume size, and status. The interface includes options for managing instances and storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860456/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Migrating-an-EBS-Volumes-from-Unencrypted-to-Encrypted/aws-ec2-snapshots-console-diagram.jpg)
+![The image shows an AWS EC2 console displaying a list of snapshots, including an encrypted snapshot with details such as snapshot ID, volume size, and status. The interface includes options for managing instances and storage.](https://kodekloud.com/kk-media/image/upload/v1752860456/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Migrating-an-EBS-Volumes-from-Unencrypted-to-Encrypted/aws-ec2-snapshots-console-diagram.jpg)
 
 > **lightbulb** If you ever need to create a volume from an encrypted snapshot, the resulting volume will automatically be encrypted.
 

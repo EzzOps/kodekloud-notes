@@ -6,9 +6,7 @@
 #     # apply_to_events: ["span.event.name"]
 ```
 
-<Callout icon="lightbulb">
-  Best practice: Always set `schema_url` to the highest schema version you list in the configuration. The schema URL travels with telemetry and the collector uses it to decide which transforms to apply when upgrading or downgrading. For further details, see the OpenTelemetry schema docs: [https://opentelemetry.io/docs/](https://opentelemetry.io/docs/).
-</Callout>
+> **lightbulb** Best practice: Always set `schema_url` to the highest schema version you list in the configuration. The schema URL travels with telemetry and the collector uses it to decide which transforms to apply when upgrading or downgrading. For further details, see the OpenTelemetry schema docs: [https://opentelemetry.io/docs/](https://opentelemetry.io/docs/).
 
 Final recap — rules to remember
 
@@ -17,13 +15,9 @@ Final recap — rules to remember
 * The collector’s schema processor applies transforms sequentially, version-by-version (X → X+1 → ... → target).
 * Favor rename-only transforms and minimal change sets to avoid accidental semantic shifts.
 
-<Callout icon="warning">
-  Validate your YAML and ensure keys and `schema_url` values are spelled correctly (for example, `opentelemetry.io`). YAML syntax errors or incorrect keys can prevent the collector from loading schema transforms.
-</Callout>
+> **warning** Validate your YAML and ensure keys and `schema_url` values are spelled correctly (for example, `opentelemetry.io`). YAML syntax errors or incorrect keys can prevent the collector from loading schema transforms.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/aec14517-49d2-4509-bc8c-2f1f8c0ffdbc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/aec14517-49d2-4509-bc8c-2f1f8c0ffdbc)
 
 
 # Demo OTTL Filter
@@ -78,13 +72,11 @@ Run your sample apps (for example `./app.sh`) to generate spans from each servic
 
 To filter spans with OTTL, add the `filter/ottl` processor and configure rules under the `traces` context. The processor has an `error_mode` setting that determines how OTTL evaluation errors are handled:
 
-<Callout icon="lightbulb">
-  Three `error_mode` options:
+> **lightbulb** Three `error_mode` options:
 
   * `ignore`: Log errors and continue evaluating other rules (no telemetry dropped due to OTTL evaluation errors).
   * `silent`: Do not log errors and continue evaluating other rules.
   * `propagate`: Stop processing and drop the telemetry when an OTTL error occurs.
-</Callout>
 
 Example of wiring the processor into a traces pipeline:
 
@@ -235,9 +227,7 @@ The above will drop any span that does *not* match both username `john` and emai
 
 Note: In YAML, put each OTTL expression as a quoted string (single quotes recommended) to avoid parsing issues.
 
-<Callout icon="warning">
-  Be careful with `error_mode: propagate`. If an OTTL rule errors under `propagate`, telemetry may be dropped. Use `ignore` during testing to avoid inadvertently losing data.
-</Callout>
+> **warning** Be careful with `error_mode: propagate`. If an OTTL rule errors under `propagate`, telemetry may be dropped. Use `ignore` during testing to avoid inadvertently losing data.
 
 ## Putting it into the Collector pipeline (complete example)
 
@@ -296,6 +286,4 @@ Transforming telemetry (e.g., setting/removing attributes or renaming metrics) i
 * [OTTL (OpenTelemetry Transformation Language) reference](https://opentelemetry.io/docs/reference/specification/otel-collector/processor/filter-ottl/)
 * [OpenTelemetry Python - OTLP exporter](https://opentelemetry-python.readthedocs.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/b94924e7-ed0b-4378-9f33-a2a27ca2c463" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/b94924e7-ed0b-4378-9f33-a2a27ca2c463)

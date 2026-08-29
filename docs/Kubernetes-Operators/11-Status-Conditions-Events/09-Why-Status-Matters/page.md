@@ -89,9 +89,7 @@ Status should also be rebuildable. If the `status` block disappeared and the con
   <img alt="The image is a flowchart titled &#x22;Status Should Be Rebuildable,&#x22; outlining a process for status rebuilding: status disappears, re-reading specifications and child resources, writing the same answer back, and highlighting that it's not controller memory." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Status must be derivable from cluster state alone. Avoid storing ephemeral controller memory in `status`. If a controller restarts, it should be able to recompute status from the child resources and `spec`.
-</Callout>
+> **lightbulb** Status must be derivable from cluster state alone. Avoid storing ephemeral controller memory in `status`. If a controller restarts, it should be able to recompute status from the child resources and `spec`.
 
 Once you expose a basic observed number, give that number clearer meaning with conditions. Conditions are the standard way to communicate whether a resource is Ready, Progressing, or Blocked. A condition contains structured fields that explain why the resource is in a given state and when it transitioned.
 
@@ -159,6 +157,4 @@ Links and references
 * [Conditions and status conventions](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md#typical-status-properties)
 * [sigs.k8s.io/controller-runtime](https://pkg.go.dev/sigs.k8s.io/controller-runtime)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/2da54413-a2fc-4423-960c-078f22559fb6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/2da54413-a2fc-4423-960c-078f22559fb6)

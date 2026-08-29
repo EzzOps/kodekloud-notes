@@ -16,9 +16,7 @@ However, Donald offers a critical perspective:
 
 > "While the core aspects have been addressed, I think we are still missing some of the new features the client requested. Bob, I had sent the details over to you earlier this week. Please ensure these are included in the final version."
 
-<Callout icon="lightbulb">
-  Bob internally wonders, *"Doesn't this guy ever say something nice? How am I going to work with him and the rest of the team for the remainder of the project?"*
-</Callout>
+> **lightbulb** Bob internally wonders, *"Doesn't this guy ever say something nice? How am I going to work with him and the rest of the team for the remainder of the project?"*
 
 Following up on the discussion, Bob instructs Amira to update the project plan:
 
@@ -28,6 +26,4 @@ He then reminds himself:
 
 > "I need to address these issues before the end of the day."
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/e0021af2-9983-4bde-97a2-29255d3ea1da/lesson/65b3d256-de5d-4f4a-9a60-c2a9e9789fd1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/e0021af2-9983-4bde-97a2-29255d3ea1da/lesson/65b3d256-de5d-4f4a-9a60-c2a9e9789fd1)

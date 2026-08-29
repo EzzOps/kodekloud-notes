@@ -21,9 +21,7 @@ Overview of the flow
 4. The Prometheus CR selects matching ServiceMonitors and the operator generates Prometheus `scrape_configs`.
 5. The operator triggers a config-reloader sidecar that updates Prometheus and begins scraping the ArgoCD endpoints.
 
-<Callout icon="lightbulb">
-  Ensure the Prometheus Operator and its CRDs are installed in the cluster before applying any ServiceMonitor or PodMonitor resources; otherwise these custom resources will not be recognized.
-</Callout>
+> **lightbulb** Ensure the Prometheus Operator and its CRDs are installed in the cluster before applying any ServiceMonitor or PodMonitor resources; otherwise these custom resources will not be recognized.
 
 ## Step-by-step details
 

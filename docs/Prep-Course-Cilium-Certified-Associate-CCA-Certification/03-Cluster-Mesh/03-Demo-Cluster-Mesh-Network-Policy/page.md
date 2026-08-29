@@ -4,9 +4,7 @@ for ctx in cluster1 cluster2 cluster3; do
 done
 ```
 
-<Callout icon="lightbulb">
-  Network policies in a Cluster Mesh are enforced per cluster. You can match endpoint traffic by origin using the `io.cilium.k8s.policy.cluster` label, but to enforce a policy across the mesh you must apply the same policy manifest in every cluster where enforcement is required.
-</Callout>
+> **lightbulb** Network policies in a Cluster Mesh are enforced per cluster. You can match endpoint traffic by origin using the `io.cilium.k8s.policy.cluster` label, but to enforce a policy across the mesh you must apply the same policy manifest in every cluster where enforcement is required.
 
 Further reading and references
 
@@ -18,9 +16,7 @@ Further reading and references
   <img alt="A diagram titled &#x22;Cluster Mesh Network Policy&#x22; showing three Kubernetes clusters, each with frontend and backend pods. Network policy outlines around backend pods and arrows indicate allowed (green) and blocked (grey) cross-cluster traffic." />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b8be180f-1719-47ca-b26e-7bf942694abf/lesson/190501c6-3a45-46f4-b57a-47b72e7ad5b0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b8be180f-1719-47ca-b26e-7bf942694abf/lesson/190501c6-3a45-46f4-b57a-47b72e7ad5b0)
 
 
 # Demo Cluster Mesh Network Policy

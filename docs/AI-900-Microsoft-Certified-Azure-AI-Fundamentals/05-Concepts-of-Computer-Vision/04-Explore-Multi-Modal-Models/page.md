@@ -17,11 +17,11 @@ Multimodal models can execute several tasks concurrently:
 * **Image Captioning:** Generates descriptive captions that reflect the content of an image.
 * **Tagging:** Associates relevant keywords with images to improve searchability and further training (e.g., tagging an image of an orange with “orange, fruit, healthy, citrus”).
 
-![The image illustrates different types of multi-modal models, including image classification, object detection, captioning, and tagging, using fruit as examples. Each model is depicted with a corresponding fruit image and description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856955/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Explore-Multi-Modal-Models/multi-modal-models-fruit-examples.jpg)
+![The image illustrates different types of multi-modal models, including image classification, object detection, captioning, and tagging, using fruit as examples. Each model is depicted with a corresponding fruit image and description.](https://kodekloud.com/kk-media/image/upload/v1752856955/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Explore-Multi-Modal-Models/multi-modal-models-fruit-examples.jpg)
 
 The strength of these models lies in capturing semantic relationships between visual elements and descriptive language. For instance, linking the shape and color of an apple with its textual label helps the model generate precise predictions and enhanced image descriptions.
 
-![The image illustrates the concept of multi-modal models, showing the integration of speech and vision data to process image and text data, enhancing the ability to understand and generate insights.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856956/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Explore-Multi-Modal-Models/multi-modal-models-speech-vision.jpg)
+![The image illustrates the concept of multi-modal models, showing the integration of speech and vision data to process image and text data, enhancing the ability to understand and generate insights.](https://kodekloud.com/kk-media/image/upload/v1752856956/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Explore-Multi-Modal-Models/multi-modal-models-speech-vision.jpg)
 
 ## Model Architecture
 
@@ -30,7 +30,7 @@ Multimodal models typically consist of two main components:
 * **Foundation Model:** A pre-trained model on extensive datasets, providing general knowledge of image and text representations.
 * **Adaptive Model:** A fine-tuned version of the foundation model, optimized for specific tasks such as image classification, object detection, captioning, or tagging.
 
-![The image is a diagram titled "Multi-Modal Models," showing four components: Classification, Object Detection, Captioning, and Tagging, under the category "Foundation and adaptive models."](../../../../images/kodekloud.com/kk-media/image/upload/v1752856958/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Explore-Multi-Modal-Models/multi-modal-models-classification-diagram.jpg)
+![The image is a diagram titled "Multi-Modal Models," showing four components: Classification, Object Detection, Captioning, and Tagging, under the category "Foundation and adaptive models."](https://kodekloud.com/kk-media/image/upload/v1752856958/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Explore-Multi-Modal-Models/multi-modal-models-classification-diagram.jpg)
 
 > **lightbulb** Microsoft's Florence model serves as a prominent example of a foundation model. Trained on millions of images coupled with text captions from the internet, Florence comprises two main parts:
 

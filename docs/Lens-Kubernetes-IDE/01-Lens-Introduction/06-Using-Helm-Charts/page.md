@@ -8,11 +8,9 @@ Deploying applications to Kubernetes is seamless with Helm charts and Lens. In t
 
 ## Prerequisites
 
-<Callout icon="lightbulb">
-  * Lens installed and connected to your Kubernetes cluster
+> **lightbulb** * Lens installed and connected to your Kubernetes cluster
   * [Helm][helm-docs] CLI installed and configured
   * Access to the internet (for public Helm repositories)
-</Callout>
 
 ***
 
@@ -22,9 +20,7 @@ Deploying applications to Kubernetes is seamless with Helm charts and Lens. In t
 2. Go to **Lens → Preferences → Kubernetes → Helm**.
 3. Click **Add** to include community and custom repositories (e.g., Aerokube, Armory, Bitnami).
 
-<Frame>
-  ![The image shows a software interface for managing Helm charts, with a dropdown menu listing various repositories and an option to add a custom Helm repository.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881202/notes-assets/images/Lens-Kubernetes-IDE-Using-Helm-Charts/helm-charts-management-interface.jpg)
-</Frame>
+![The image shows a software interface for managing Helm charts, with a dropdown menu listing various repositories and an option to add a custom Helm repository.](https://kodekloud.com/kk-media/image/upload/v1752881202/notes-assets/images/Lens-Kubernetes-IDE-Using-Helm-Charts/helm-charts-management-interface.jpg)
 
 ***
 
@@ -34,9 +30,7 @@ Deploying applications to Kubernetes is seamless with Helm charts and Lens. In t
 2. Navigate to **Apps → Charts** in the sidebar.
 3. Filter by repository or search for **cassandra**.
 
-<Frame>
-  ![The image shows a software interface listing various Helm charts, including their names, descriptions, versions, app versions, and repositories. The interface appears to be part of a Kubernetes management tool.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881203/notes-assets/images/Lens-Kubernetes-IDE-Using-Helm-Charts/helm-charts-kubernetes-interface.jpg)
-</Frame>
+![The image shows a software interface listing various Helm charts, including their names, descriptions, versions, app versions, and repositories. The interface appears to be part of a Kubernetes management tool.](https://kodekloud.com/kk-media/image/upload/v1752881203/notes-assets/images/Lens-Kubernetes-IDE-Using-Helm-Charts/helm-charts-kubernetes-interface.jpg)
 
 Click **Details** on the Cassandra chart to view installation steps and default values.
 

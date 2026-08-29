@@ -6,9 +6,7 @@ Guide to building a compact Grafana platform dashboard using Prometheus metrics 
 
 So much telemetry goes unused without effective visualization. Grafana turns Prometheus metrics into dashboards that make platform health visible at a glance. In this lesson we'll build a compact "Platform Dashboard" with four panel types—each chosen for a specific class of metric.
 
-<Callout icon="lightbulb">
-  Before you begin, make sure a Prometheus data source is configured in Grafana. If you need setup guidance, see the [Grafana data source docs](https://grafana.com/docs/grafana/latest/datasources/prometheus/).
-</Callout>
+> **lightbulb** Before you begin, make sure a Prometheus data source is configured in Grafana. If you need setup guidance, see the [Grafana data source docs](https://grafana.com/docs/grafana/latest/datasources/prometheus/).
 
 Start by opening Grafana, then go to the left-hand menu and click Dashboards.
 
@@ -57,9 +55,7 @@ sum(increase(app_errors_total{namespace="workloads"}[1h]))
 * Add thresholds to color the stat (for example, green/yellow/red) and show a sparkline if you want a mini trend.
 * Save the panel to include it on the dashboard.
 
-<Callout icon="warning">
-  Use `increase()` when you want total counts over a window (e.g., errors during the last hour). Use `rate()` for per-second throughput or when plotting time-series rates.
-</Callout>
+> **warning** Use `increase()` when you want total counts over a window (e.g., errors during the last hour). Use `rate()` for per-second throughput or when plotting time-series rates.
 
 3. Gauge — Memory Used (%)
 
@@ -122,8 +118,6 @@ Further reading and references
 
 Save your dashboard once more to commit all panels. You now have a concise Platform Dashboard that supports troubleshooting, capacity planning, and traffic analysis.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/320cfa4f-ec80-4db7-a31a-7a76710b44ab" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/320cfa4f-ec80-4db7-a31a-7a76710b44ab)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/50e87e23-90a6-47de-a06d-721eb5d79c61" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/50e87e23-90a6-47de-a06d-721eb5d79c61)

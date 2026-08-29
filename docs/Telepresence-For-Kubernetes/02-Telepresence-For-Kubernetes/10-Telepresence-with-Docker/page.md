@@ -6,15 +6,11 @@ This guide explains running the Telepresence daemon in Docker for local Kubernet
 
 In this guide, you’ll discover how to run the Telepresence daemon inside a Docker container, enabling local development against your Kubernetes cluster without requiring admin privileges on your machine. By isolating the daemon’s networking stack and filesystem, Docker eliminates the need to modify host network routes or DNS, making Telepresence accessible on corporate laptops and environments with restricted permissions.
 
-<Frame>
-  ![The image illustrates a "Telepresence daemon in Docker" setup, highlighting that it provides an independent networking stack and its own filesystem without requiring admin privileges on the machine.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884095/notes-assets/images/Telepresence-For-Kubernetes-Telepresence-with-Docker/telepresence-daemon-docker-setup.jpg)
-</Frame>
+![The image illustrates a "Telepresence daemon in Docker" setup, highlighting that it provides an independent networking stack and its own filesystem without requiring admin privileges on the machine.](https://kodekloud.com/kk-media/image/upload/v1752884095/notes-assets/images/Telepresence-For-Kubernetes-Telepresence-with-Docker/telepresence-daemon-docker-setup.jpg)
 
-<Callout icon="lightbulb">
-  * Docker Engine installed and running
+> **lightbulb** * Docker Engine installed and running
   * Kubernetes cluster context configured (`kubectl config current-context`)
   * Telepresence CLI installed (see [Telepresence Docs][telepresence-docs])
-</Callout>
 
 ## 1. Starting the Telepresence Daemon in Docker
 
@@ -24,9 +20,7 @@ Launch Telepresence with the `--docker` flag to spin up its daemon inside a cont
 telepresence connect --docker
 ```
 
-<Callout icon="lightbulb">
-  Using `--docker` gives the Telepresence daemon its own network namespace, avoiding any host‐level network or DNS changes.
-</Callout>
+> **lightbulb** Using `--docker` gives the Telepresence daemon its own network namespace, avoiding any host‐level network or DNS changes.
 
 ## 2. Key Docker Flags
 
@@ -45,9 +39,7 @@ With the daemon running, you can intercept a Kubernetes service and route its tr
 telepresence intercept products-depl --port 8000
 ```
 
-<Frame>
-  ![The image illustrates a setup for intercepting with a Docker container, showing a laptop connected via a tunnel to a Kubernetes environment with a traffic manager and a product deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884097/notes-assets/images/Telepresence-For-Kubernetes-Telepresence-with-Docker/docker-container-kubernetes-setup.jpg)
-</Frame>
+![The image illustrates a setup for intercepting with a Docker container, showing a laptop connected via a tunnel to a Kubernetes environment with a traffic manager and a product deployment.](https://kodekloud.com/kk-media/image/upload/v1752884097/notes-assets/images/Telepresence-For-Kubernetes-Telepresence-with-Docker/docker-container-kubernetes-setup.jpg)
 
 ## 4. Running the Intercepted Service in Docker
 
@@ -87,6 +79,4 @@ This command compiles your code into a Docker image, starts the container locall
 
 [telepresence-docs]: https://www.telepresence.io/docs/installation/telepresence-cli/
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/2d3612c3-fef3-40ed-8533-af05ab280e53" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/2d3612c3-fef3-40ed-8533-af05ab280e53)

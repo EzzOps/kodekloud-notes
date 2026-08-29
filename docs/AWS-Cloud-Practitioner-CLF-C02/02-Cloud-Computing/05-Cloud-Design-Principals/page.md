@@ -13,11 +13,11 @@ In this article presented by Michael Forrester, we will explore four essential c
 3. Implementing Elasticity
 4. Thinking in Parallel
 
-![The image outlines four principles of cloud-native design for AWS: design for failure, decouple components, implement elasticity, and think parallel.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861582/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Design-Principals/frame_40.jpg)
+![The image outlines four principles of cloud-native design for AWS: design for failure, decouple components, implement elasticity, and think parallel.](https://kodekloud.com/kk-media/image/upload/v1752861582/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Design-Principals/frame_40.jpg)
 
 Before diving into the details, please note that while we focus on these four key principles, AWS also offers a deeper architectural framework known as the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/). Although it is not required at the Cloud Practitioner level, exploring this framework can provide valuable insight for designing complex AWS architectures.
 
-![The image discusses AWS Cloud Native Design principles, mentioning the AWS Well Architected Framework, which is not required at the Cloud Practitioner level.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861583/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Design-Principals/frame_60.jpg)
+![The image discusses AWS Cloud Native Design principles, mentioning the AWS Well Architected Framework, which is not required at the Cloud Practitioner level.](https://kodekloud.com/kk-media/image/upload/v1752861583/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Design-Principals/frame_60.jpg)
 
 Let's explore each principle in depth.
 
@@ -27,7 +27,7 @@ When building any system, planning for failure is crucial. Consider a car: if on
 
 To mitigate such risks, we design systems with redundancy and ensure they can automatically recover from failures. Embracing the philosophy that "everything fails all the time" (as noted by Werner Vogels) encourages us to build resilient systems that assume failure and plan robust recovery strategies.
 
-![The image illustrates designing for failure, emphasizing increased resiliency by addressing single points of failure and promoting resiliency and auto-recovery through intentional redundancy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861584/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Design-Principals/frame_140.jpg)
+![The image illustrates designing for failure, emphasizing increased resiliency by addressing single points of failure and promoting resiliency and auto-recovery through intentional redundancy.](https://kodekloud.com/kk-media/image/upload/v1752861584/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Design-Principals/frame_140.jpg)
 
 ## Decoupling Components
 
@@ -35,7 +35,7 @@ The second principle is to decouple system components so that a failure in one p
 
 For instance, if a front-end web server receives a flood of customer requests, decoupling the back end using a queue allows the server to manage the load at its own pace. This approach helps prevent data loss and maintains system integrity, especially under variable loads.
 
-![The image illustrates the concept of decoupling components, comparing tight coupling with loosely coupled systems using a queue to handle surges in customer requests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861585/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Design-Principals/frame_220.jpg)
+![The image illustrates the concept of decoupling components, comparing tight coupling with loosely coupled systems using a queue to handle surges in customer requests.](https://kodekloud.com/kk-media/image/upload/v1752861585/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Design-Principals/frame_220.jpg)
 
 ## Implementing Elasticity
 
@@ -43,7 +43,7 @@ Elasticity is one of the standout advantages of AWS. Traditional data centers re
 
 This elasticity improves performance during traffic surges while also optimizing costs since you only pay for what you use. According to AWS documentation, elasticity involves the automated acquisition and release of resources, ensuring efficiency and cost-effectiveness.
 
-![The image illustrates cloud elasticity, comparing limited and large expansion and contraction, highlighting better costs and performance with larger hardware boundaries.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861586/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Design-Principals/frame_290.jpg)
+![The image illustrates cloud elasticity, comparing limited and large expansion and contraction, highlighting better costs and performance with larger hardware boundaries.](https://kodekloud.com/kk-media/image/upload/v1752861586/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Design-Principals/frame_290.jpg)
 
 ## Thinking in Parallel
 
@@ -51,7 +51,7 @@ The final principle is to embrace parallel processing rather than a strictly seq
 
 For example, a task that would take 36 hours on a single server can be divided among three servers to finish in 12 hours—or even among 36 servers to complete it in about 1 hour. AWS's ability to rapidly scale instances makes parallel processing a highly effective method for managing large tasks efficiently.
 
-![The image contrasts doing tasks in series versus parallel, highlighting increased concurrency with three servers completing tasks faster than one.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861588/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Design-Principals/frame_340.jpg)
+![The image contrasts doing tasks in series versus parallel, highlighting increased concurrency with three servers completing tasks faster than one.](https://kodekloud.com/kk-media/image/upload/v1752861588/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Cloud-Design-Principals/frame_340.jpg)
 
 > **lightbulb** Remember: Leveraging AWS’s elasticity and parallel processing capabilities not only enhances performance but also optimizes operational costs.
 

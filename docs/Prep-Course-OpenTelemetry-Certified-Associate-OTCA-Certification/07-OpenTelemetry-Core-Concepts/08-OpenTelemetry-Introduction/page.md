@@ -53,9 +53,7 @@ A few clarifications about terminology and scope
 * OTel can export telemetry to open-source backends ([Prometheus](https://prometheus.io), [Jaeger](https://www.jaegertracing.io), [Zipkin](https://zipkin.io)) or to commercial observability platforms—there is no vendor lock-in.
 * OpenTelemetry itself does not store or visualize data; it supplies instrumentation, SDKs, collectors, and exporters so you can pick the storage and visualization solution that fits your needs.
 
-<Callout icon="lightbulb">
-  OpenTelemetry is a vendor-neutral framework for collecting telemetry—it is not a storage or visualization backend. Use OTel to instrument applications and route data to the backend of your choice.
-</Callout>
+> **lightbulb** OpenTelemetry is a vendor-neutral framework for collecting telemetry—it is not a storage or visualization backend. Use OTel to instrument applications and route data to the backend of your choice.
 
 Key characteristics
 
@@ -95,6 +93,4 @@ Links and references
 * Zipkin: [https://zipkin.io](https://zipkin.io)
 * CNCF: [https://www.cncf.io](https://www.cncf.io)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/73f40b03-85d2-4492-b99a-10cd80d62cb7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/73f40b03-85d2-4492-b99a-10cd80d62cb7)

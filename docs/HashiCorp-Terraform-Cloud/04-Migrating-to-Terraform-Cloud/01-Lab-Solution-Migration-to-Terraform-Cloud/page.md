@@ -25,9 +25,7 @@ Many teams begin with Terraform Open Source (OSS) on their local machines before
 * A Terraform Cloud account and organization.
 * Git installed.
 
-<Callout icon="triangle-alert">
-  Never commit your AWS credentials or Terraform Cloud API tokens to version control. Use environment variables or a secrets manager.
-</Callout>
+> **triangle-alert** Never commit your AWS credentials or Terraform Cloud API tokens to version control. Use environment variables or a secrets manager.
 
 ***
 
@@ -35,9 +33,7 @@ Many teams begin with Terraform Open Source (OSS) on their local machines before
 
 First, clone the HashiCat AWS repository and navigate into it:
 
-<Frame>
-  ![The image shows a KodeKloud lab interface for migrating to Terraform Cloud, with instructions to clone a GitHub repository and a terminal window open on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878764/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Migration-to-Terraform-Cloud/kodekloud-lab-terraform-cloud-migration.jpg)
-</Frame>
+![The image shows a KodeKloud lab interface for migrating to Terraform Cloud, with instructions to clone a GitHub repository and a terminal window open on the right.](https://kodekloud.com/kk-media/image/upload/v1752878764/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Migration-to-Terraform-Cloud/kodekloud-lab-terraform-cloud-migration.jpg)
 
 ```bash theme={null}
 git clone https://github.com/hashicorp/hashicat-aws.git
@@ -145,9 +141,7 @@ terraform apply -auto-approve
 
 Once complete, your state is stored remotely in Terraform Cloud. You can manage runs, view logs, and set policies from the Terraform Cloud UI:
 
-<Frame>
-  ![The image shows a Terraform Cloud interface displaying a list of workspaces with their run statuses, repository links, and latest change timestamps. The sidebar includes options for managing workspaces, registry, and settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878765/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Migration-to-Terraform-Cloud/terraform-cloud-workspaces-status-interface.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface displaying a list of workspaces with their run statuses, repository links, and latest change timestamps. The sidebar includes options for managing workspaces, registry, and settings.](https://kodekloud.com/kk-media/image/upload/v1752878765/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Migration-to-Terraform-Cloud/terraform-cloud-workspaces-status-interface.jpg)
 
 ***
 
@@ -183,9 +177,7 @@ To view this run in a browser, visit:
 https://app.terraform.io/app/YOUR_ORGANIZATION_NAME/devops-aws-hashicat-dev/runs/<RUN_ID>
 ```
 
-<Frame>
-  ![The image shows a Terraform Cloud interface with a workspace named "devops-aws-hashicat-dev" where a plan is running, triggered via CLI. It includes navigation options on the left and a notification about improved navigation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878766/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Migration-to-Terraform-Cloud/terraform-cloud-devops-aws-workspace.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface with a workspace named "devops-aws-hashicat-dev" where a plan is running, triggered via CLI. It includes navigation options on the left and a notification about improved navigation.](https://kodekloud.com/kk-media/image/upload/v1752878766/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Migration-to-Terraform-Cloud/terraform-cloud-devops-aws-workspace.jpg)
 
 Upon completion, your Terraform Cloud workspace will reflect the latest state, and your AWS infrastructure remains intact throughout the migration.
 
@@ -211,8 +203,6 @@ Upon completion, your Terraform Cloud workspace will reflect the latest state, a
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [AWS Provider for Terraform](https://registry.terraform.io/providers/hashicorp/aws)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/3b42de3b-671c-45be-9757-aff04c4af092/lesson/743bc98e-64ef-4246-ab87-a3c3018c5ab4" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/3b42de3b-671c-45be-9757-aff04c4af092/lesson/743bc98e-64ef-4246-ab87-a3c3018c5ab4)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/617ad513-215b-4e40-9b66-1cdb4eacc424/lesson/d77b49a8-dff9-4b6f-b1d8-488bcc1d8523" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/617ad513-215b-4e40-9b66-1cdb4eacc424/lesson/d77b49a8-dff9-4b6f-b1d8-488bcc1d8523)

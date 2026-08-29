@@ -42,9 +42,7 @@ When SUID is set on an executable, the process runs with the file owner’s priv
    # -rwSrw-r--. 1 aaron aaron 0 Apr 26 05:08 suidfile
    ```
 
-<Callout icon="lightbulb">
-  The uppercase `S` indicates SUID is set but the owner’s execute bit is **not** enabled.
-</Callout>
+> **lightbulb** The uppercase `S` indicates SUID is set but the owner’s execute bit is **not** enabled.
 
 3. Grant both execute and SUID for the owner (octal `4764`):
    ```bash theme={null}
@@ -54,9 +52,7 @@ When SUID is set on an executable, the process runs with the file owner’s priv
    ```
    The lowercase `s` shows both SUID and execute bits are active.
 
-<Callout icon="triangle-alert">
-  Carefully review which binaries receive the SUID bit. Misconfigured SUID files can introduce security vulnerabilities.
-</Callout>
+> **triangle-alert** Carefully review which binaries receive the SUID bit. Misconfigured SUID files can introduce security vulnerabilities.
 
 ***
 

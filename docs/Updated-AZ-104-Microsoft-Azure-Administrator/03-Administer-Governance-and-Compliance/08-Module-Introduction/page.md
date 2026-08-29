@@ -22,15 +22,11 @@ In this section, you will learn to organize and manage your Azure subscriptions 
 * **Azure Resource Tags:** Methods to simplify the organization and retrieval of Azure resources using tags.
 * **Azure Resource Locks:** Approaches to safeguard your resources from accidental deletion or modification.
 
-<Frame>
-  ![The image lists learning objectives for configuring subscriptions and Azure Resource Manager resources, including managing subscriptions, resource groups, understanding hierarchy, Azure resource tags, and locks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884559/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Module-Introduction/azure-resource-manager-learning-objectives.jpg)
-</Frame>
+![The image lists learning objectives for configuring subscriptions and Azure Resource Manager resources, including managing subscriptions, resource groups, understanding hierarchy, Azure resource tags, and locks.](https://kodekloud.com/kk-media/image/upload/v1752884559/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Module-Introduction/azure-resource-manager-learning-objectives.jpg)
 
 * **Managing Cost:** Explore proven techniques to monitor and control your Azure spending effectively.
 
-<Frame>
-  ![The image lists learning objectives related to configuring subscriptions and Azure Resource Manager resources, including managing subscriptions, resource groups, understanding hierarchy, resource tags, resource locks, and managing costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884560/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Module-Introduction/azure-resource-manager-learning-objectives-2.jpg)
-</Frame>
+![The image lists learning objectives related to configuring subscriptions and Azure Resource Manager resources, including managing subscriptions, resource groups, understanding hierarchy, resource tags, resource locks, and managing costs.](https://kodekloud.com/kk-media/image/upload/v1752884560/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Module-Introduction/azure-resource-manager-learning-objectives-2.jpg)
 
 ## Configuring Azure Policies
 
@@ -39,9 +35,7 @@ This section focuses on utilizing Azure Policy to enforce organizational standar
 * **Azure Policy Implementation:** How to apply policies that ensure continual compliance across your environment.
 * **Initiatives:** Ways to group related policies to achieve specific compliance goals.
 
-<Callout icon="lightbulb">
-  Understanding Azure Policies is key to maintaining security and governance standards in your environment.
-</Callout>
+> **lightbulb** Understanding Azure Policies is key to maintaining security and governance standards in your environment.
 
 ## Configuring Azure Role-Based Access Control (RBAC)
 
@@ -50,12 +44,8 @@ In this section, we dive into Azure RBAC, which is essential for assigning the p
 * **Defining Azure RBAC:** Learn how to manage and implement permissions effectively.
 * **Comparing with Microsoft Entra ID Roles:** Although Microsoft Entra ID roles are covered in a separate module, you will also explore the differences between Azure RBAC and Entra ID roles, and understand when to apply each for optimal security.
 
-<Frame>
-  ![The image outlines learning objectives related to configuring Azure policies and role-based access control, including Azure Policy, Initiatives, and comparisons between Azure RBAC and Microsoft Entra ID Roles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884560/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Module-Introduction/azure-policies-rbac-learning-objectives.jpg)
-</Frame>
+![The image outlines learning objectives related to configuring Azure policies and role-based access control, including Azure Policy, Initiatives, and comparisons between Azure RBAC and Microsoft Entra ID Roles.](https://kodekloud.com/kk-media/image/upload/v1752884560/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Module-Introduction/azure-policies-rbac-learning-objectives.jpg)
 
 With these objectives in mind, we now transition to our first topic: managing subscriptions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/a683396b-3325-4f68-bb04-2c956bf5659a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/a683396b-3325-4f68-bb04-2c956bf5659a)

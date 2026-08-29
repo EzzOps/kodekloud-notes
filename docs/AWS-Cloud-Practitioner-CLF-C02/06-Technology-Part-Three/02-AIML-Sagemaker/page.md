@@ -14,7 +14,7 @@ AWS SageMaker is a fully managed service designed to streamline your machine lea
 2. **Model Training:** Efficiently train models using either labeled or unlabeled data.
 3. **Model Deployment:** Seamlessly deploy trained models into production for real-time predictions and advanced analytics.
 
-![The image illustrates AWS SageMaker's workflow: Build, Train, and Deploy, with icons representing each stage, under the title "Welcome to the World of AWS SageMaker."](../../../../images/kodekloud.com/kk-media/image/upload/v1752861998/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Sagemaker/frame_80.jpg)
+![The image illustrates AWS SageMaker's workflow: Build, Train, and Deploy, with icons representing each stage, under the title "Welcome to the World of AWS SageMaker."](https://kodekloud.com/kk-media/image/upload/v1752861998/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Sagemaker/frame_80.jpg)
 
 ## Integrated Tools and Jupyter Notebooks
 
@@ -22,7 +22,7 @@ One of the standout features of SageMaker is its integrated Jupyter Notebooks. T
 
 > **lightbulb** Using integrated Jupyter notebooks accelerates your development cycle, making it easier to experiment with different machine learning models and datasets.
 
-![The image highlights AWS SageMaker features: a fully managed service and integrated Jupyter notebooks, emphasizing its role in machine learning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862000/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Sagemaker/frame_120.jpg)
+![The image highlights AWS SageMaker features: a fully managed service and integrated Jupyter notebooks, emphasizing its role in machine learning.](https://kodekloud.com/kk-media/image/upload/v1752862000/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Sagemaker/frame_120.jpg)
 
 ## Use Cases for SageMaker
 
@@ -32,7 +32,7 @@ SageMaker is adaptable to numerous machine learning applications. Here are some 
 * **Recommendation Systems:** Develop systems that predict user preferences and offer tailored product recommendations.
 * **Fraud Detection:** Identify unusual transactions and behaviors that deviate from typical patterns.
 
-![The image illustrates general use cases of AWS SageMaker, including predictive analytics, recommendation systems, and fraud detection, with corresponding icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862001/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Sagemaker/frame_180.jpg)
+![The image illustrates general use cases of AWS SageMaker, including predictive analytics, recommendation systems, and fraud detection, with corresponding icons.](https://kodekloud.com/kk-media/image/upload/v1752862001/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Sagemaker/frame_180.jpg)
 
 ## Why Choose AWS SageMaker?
 
@@ -44,13 +44,13 @@ AWS SageMaker offers distinct advantages for your machine learning projects:
 
 > **lightbulb** Choose SageMaker to enjoy a robust and scalable solution that grows with your business needs, ensuring reliable performance even during peak demand.
 
-![The image highlights reasons to choose AWS SageMaker: ease of use, scalability, and a comprehensive toolset, represented by icons of a tablet, gear, and toolbox.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862002/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Sagemaker/frame_240.jpg)
+![The image highlights reasons to choose AWS SageMaker: ease of use, scalability, and a comprehensive toolset, represented by icons of a tablet, gear, and toolbox.](https://kodekloud.com/kk-media/image/upload/v1752862002/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Sagemaker/frame_240.jpg)
 
 ## Conclusion
 
 AWS SageMaker empowers developers and data scientists to build, train, and deploy machine learning models with efficiency and confidence. Its broad range of features enables implementations in predictive analytics, recommendation systems, and fraud detection, driving data-informed decisions and fostering innovation.
 
-![The image is a slide titled "Conclusion," listing five points: predictive analytics, recommendation systems, data-driven decisions, innovation, and enhancing customer experiences.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862003/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Sagemaker/frame_260.jpg)
+![The image is a slide titled "Conclusion," listing five points: predictive analytics, recommendation systems, data-driven decisions, innovation, and enhancing customer experiences.](https://kodekloud.com/kk-media/image/upload/v1752862003/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Sagemaker/frame_260.jpg)
 
 Thank you for following this lesson. We look forward to exploring another innovative machine learning service in our next article.
 

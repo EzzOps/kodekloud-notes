@@ -100,11 +100,9 @@ PromptInput -> ChatPromptTemplate -> ChatOpenAI -> StrOutputParser -> RunnableLa
 * [ChatOpenAI integration (example)](https://github.com/langchain-ai/langchain)
 * [grandalf (graph visualization)](https://pypi.org/project/grandalf/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/bd770c51-e411-479e-89f1-5c6fd2762abd" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/bd770c51-e411-479e-89f1-5c6fd2762abd)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/d51c42c5-aefd-4edd-a892-ad0294da5d82" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/d51c42c5-aefd-4edd-a892-ad0294da5d82)
 
 
 # Overview of LCEL
@@ -199,9 +197,7 @@ Common LCEL components and use cases:
 | LLM            | Generate text or structured output            | `OpenAI`, `Anthropic`           |
 | Output Parser  | Parse model output into structured data       | `RegexParser`, `PydanticParser` |
 
-<Callout icon="lightbulb">
-  LCEL is increasingly the canonical way to express LangChain workflows. For a detailed comparison between imperative chain construction (e.g., `LLMChain`) and LCEL, see the [official LangChain documentation](https://langchain.readthedocs.io/en/latest/) for API examples, best practices, and custom Runnable implementations.
-</Callout>
+> **lightbulb** LCEL is increasingly the canonical way to express LangChain workflows. For a detailed comparison between imperative chain construction (e.g., `LLMChain`) and LCEL, see the [official LangChain documentation](https://langchain.readthedocs.io/en/latest/) for API examples, best practices, and custom Runnable implementations.
 
 Where to use LCEL
 
@@ -216,6 +212,4 @@ What’s next in this lesson
 
 If you’re ready to build modular, composable LLM applications, LCEL is a foundational concept to master.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/59a17ad6-cdd8-42a5-868b-d7b47163d130" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/59a17ad6-cdd8-42a5-868b-d7b47163d130)

@@ -57,7 +57,7 @@ You should see a list of your current IAM user groups (if any).
 
 6. Click **Create group** to finalize.
 
-![The image shows the AWS Identity and Access Management (IAM) console, specifically the "User groups" section, where an "HR" user group has been created with one user and defined permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863026/notes-assets/images/AWS-IAM-Demo-IAM-Groups/aws-iam-console-user-groups-hr.jpg)
+![The image shows the AWS Identity and Access Management (IAM) console, specifically the "User groups" section, where an "HR" user group has been created with one user and defined permissions.](https://kodekloud.com/kk-media/image/upload/v1752863026/notes-assets/images/AWS-IAM-Demo-IAM-Groups/aws-iam-console-user-groups-hr.jpg)
 
 ***
 
@@ -71,7 +71,7 @@ You should see a list of your current IAM user groups (if any).
 
 The **IT** group will now have full AWS administrative access.
 
-![The image shows the AWS Identity and Access Management (IAM) console, displaying user groups with two groups named "HR" and "IT," each having one user and defined permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863027/notes-assets/images/AWS-IAM-Demo-IAM-Groups/aws-iam-console-user-groups-permissions.jpg)
+![The image shows the AWS Identity and Access Management (IAM) console, displaying user groups with two groups named "HR" and "IT," each having one user and defined permissions.](https://kodekloud.com/kk-media/image/upload/v1752863027/notes-assets/images/AWS-IAM-Demo-IAM-Groups/aws-iam-console-user-groups-permissions.jpg)
 
 ***
 

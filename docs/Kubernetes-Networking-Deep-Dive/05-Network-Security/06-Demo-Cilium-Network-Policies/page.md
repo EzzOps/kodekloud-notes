@@ -41,9 +41,7 @@ Cilium Hubble delivers powerful network observability through both a rich UI and
 * [Prometheus Official Site](https://prometheus.io)
 * [Grafana Labs](https://grafana.com)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/6736c481-fea1-4607-acb6-c8ab2618ce98" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/6736c481-fea1-4607-acb6-c8ab2618ce98)
 
 
 # Demo Cilium Network Policies
@@ -133,9 +131,7 @@ spec:
    # → curl: (28) Failed to connect...
    ```
 
-<Callout icon="lightbulb">
-  Before applying Cilium policies, delete the existing Kubernetes NetworkPolicy so that Cilium’s default behavior (allow all) is restored.
-</Callout>
+> **lightbulb** Before applying Cilium policies, delete the existing Kubernetes NetworkPolicy so that Cilium’s default behavior (allow all) is restored.
 
 ```bash theme={null}
 kubectl delete networkpolicy demo-netpol

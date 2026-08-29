@@ -107,9 +107,7 @@ print("After resume:", state)
 * When the external decision returns, the workflow runtime or controller reconciles state and resumes processing from the same logical point, preserving idempotency and traceability.
 * This pattern enables manual checks, approvals, gated deployments, or other human approvals within otherwise automated processes.
 
-<Callout icon="lightbulb">
-  In production systems, interrupts are typically implemented as runtime primitives that persist state, emit events/notifications, and secure the review channel. Use this pattern to model human review gates while keeping your core workflow logic deterministic and resumable.
-</Callout>
+> **lightbulb** In production systems, interrupts are typically implemented as runtime primitives that persist state, emit events/notifications, and secure the review channel. Use this pattern to model human review gates while keeping your core workflow logic deterministic and resumable.
 
 ## Links and references
 
@@ -119,11 +117,9 @@ print("After resume:", state)
 
 This pattern is a practical approach to integrating manual approvals into automated workflows while maintaining clarity, auditability, and the ability to resume execution from a known state.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/0512078c-4290-4d71-9531-0b12f54f10c6/lesson/aca8613b-e199-4adc-8d6e-668daecdd6be" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/0512078c-4290-4d71-9531-0b12f54f10c6/lesson/aca8613b-e199-4adc-8d6e-668daecdd6be)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langgraph/module/0512078c-4290-4d71-9531-0b12f54f10c6/lesson/5c16785f-b42f-4856-bd6c-ef1845fa1881" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langgraph/module/0512078c-4290-4d71-9531-0b12f54f10c6/lesson/5c16785f-b42f-4856-bd6c-ef1845fa1881)
 
 
 # Designing Human Approval Nodes

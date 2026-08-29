@@ -11,7 +11,7 @@ In this configuration, the rule allows SSH (TCP port 22) access from any IP addr
 
 The diagram below shows a user interface section for configuring these inbound rules specifically for SSH:
 
-![The image shows a section of a user interface for configuring inbound rules, specifically for SSH access, with details like protocol, port range, and source. It includes an icon and is labeled "Inbound and Outbound Rules."](../../../../images/kodekloud.com/kk-media/image/upload/v1752865906/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-and-SecGroups/inbound-outbound-rules-ssh-config.jpg)
+![The image shows a section of a user interface for configuring inbound rules, specifically for SSH access, with details like protocol, port range, and source. It includes an icon and is labeled "Inbound and Outbound Rules."](https://kodekloud.com/kk-media/image/upload/v1752865906/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-and-SecGroups/inbound-outbound-rules-ssh-config.jpg)
 
 ### Automatic Traffic Exceptions in Security Groups
 
@@ -27,7 +27,7 @@ Certain traffic types are automatically permitted by security groups, ensuring e
 
 The image below lists these exceptions:
 
-![The image lists services for which security groups do not filter traffic, including Amazon DNS, DHCP, EC2 instance metadata, ECS task metadata endpoints, Windows license activation, Amazon Time Sync Service, and reserved IP addresses for the default VPC router.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865908/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-and-SecGroups/security-groups-traffic-exceptions.jpg)
+![The image lists services for which security groups do not filter traffic, including Amazon DNS, DHCP, EC2 instance metadata, ECS task metadata endpoints, Windows license activation, Amazon Time Sync Service, and reserved IP addresses for the default VPC router.](https://kodekloud.com/kk-media/image/upload/v1752865908/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-and-SecGroups/security-groups-traffic-exceptions.jpg)
 
 > **lightbulb** You do not need to create explicit rules for the above protocols; they are automatically allowed by AWS to ensure critical services run smoothly.
 
@@ -54,7 +54,7 @@ In this lesson, we explore AWS Network Firewall, a fully managed service that se
 
 To safeguard your VPC and its subnets, it is crucial to create dedicated Firewall Endpoints. These endpoints act as the primary points for traffic inspection. You must allocate a specific subnet for your firewall deployment because placing a Firewall Endpoint in a subnet with other resources could compromise their protection.
 
-![The image is a diagram illustrating a network firewall setup within a Virtual Private Cloud (VPC), showing private and firewall subnets across two availability zones, connected to a central firewall endpoint.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865909/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Network-Firewall/vpc-network-firewall-setup-diagram.jpg)
+![The image is a diagram illustrating a network firewall setup within a Virtual Private Cloud (VPC), showing private and firewall subnets across two availability zones, connected to a central firewall endpoint.](https://kodekloud.com/kk-media/image/upload/v1752865909/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Network-Firewall/vpc-network-firewall-setup-diagram.jpg)
 
 In the diagram above, you can observe that separate subnets have been deployed across various availability zones to serve as Firewall Endpoints. Reserving an exclusive subnet for these endpoints ensures that your other VPC resources remain effectively protected.
 
@@ -68,7 +68,7 @@ AWS Network Firewall offers a range of robust features designed to enhance your 
 * **Comprehensive Logging:** Maintain detailed logs of network and firewall activity for security analysis, compliance, and troubleshooting.
 * **Rule Synchronization:** Seamlessly synchronize rules across multiple firewall instances, ideal for complex network architectures and multi-VPC environments.
 
-![The image lists five features of a network firewall: Simplified Rule Management, Granular Control, Advanced Threat Protection, Logging and Monitoring, and Rule Synchronization. Each feature is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865910/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Network-Firewall/network-firewall-features-list.jpg)
+![The image lists five features of a network firewall: Simplified Rule Management, Granular Control, Advanced Threat Protection, Logging and Monitoring, and Rule Synchronization. Each feature is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752865910/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Network-Firewall/network-firewall-features-list.jpg)
 
 ## Traffic Flow Process
 
@@ -95,7 +95,7 @@ AWS Network Firewall employs two distinct rules engines that allow you to tailor
 * **Stateless Rules Engine:** Analyzes each packet independently without considering the traffic context. This engine processes rules in a user-defined order—similar to network ACLs—to determine if packets should be allowed or dropped.
 * **Stateful Rules Engine:** Inspects packets within the context of their ongoing traffic flow. It recognizes the request-response pattern, supports complex rules, and logs traffic details. The engine processes pass rules first, followed by drop rules, and finally alert rules. It functions similarly to VPC security groups and is compatible with Suricata IPS.
 
-![The image illustrates the flow of network traffic through firewall stateless and stateful engines, showing how packets are inspected and either dropped or passed based on rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865911/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Network-Firewall/network-traffic-firewall-flow-diagram.jpg)
+![The image illustrates the flow of network traffic through firewall stateless and stateful engines, showing how packets are inspected and either dropped or passed based on rules.](https://kodekloud.com/kk-media/image/upload/v1752865911/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Network-Firewall/network-traffic-firewall-flow-diagram.jpg)
 
 By leveraging either stateless or stateful inspection—or even a combination of both—you can customize AWS Network Firewall to meet your specific security requirements, ensuring efficient and comprehensive VPC protection.
 

@@ -86,9 +86,7 @@ The `#[derive(Parser)]` macro automatically generates the code needed for parsin
 cargo run -- --name Priyanka
 ```
 
-<Callout icon="lightbulb">
-  Include the double hyphens (`--`) to separate cargo arguments from your CLI tool's arguments.
-</Callout>
+> **lightbulb** Include the double hyphens (`--`) to separate cargo arguments from your CLI tool's arguments.
 
 ***
 
@@ -226,6 +224,4 @@ This lesson demonstrated how to integrate Clap into a Rust project for efficient
 
 With Clap, you can build powerful and flexible CLI tools tailored to your needs. For further reading and detailed documentation, check out the [Clap GitHub repository](https://github.com/clap-rs/clap) and the [Rust CLI book](https://rust-cli.github.io/book/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/bb7ae445-2739-4b78-a1f2-e30c0b7944e3/lesson/ff51c989-4123-4930-92ff-900e50b86bd8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/bb7ae445-2739-4b78-a1f2-e30c0b7944e3/lesson/ff51c989-4123-4930-92ff-900e50b86bd8)

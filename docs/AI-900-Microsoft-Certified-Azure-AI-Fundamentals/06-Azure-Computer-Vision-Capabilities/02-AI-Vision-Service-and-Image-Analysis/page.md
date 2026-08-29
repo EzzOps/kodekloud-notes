@@ -126,13 +126,13 @@ Apply descriptive tags to various elements within an image. Tags such as trees, 
 
 Automatically crop images to emphasize the most significant areas. This feature is especially useful for generating attractive thumbnails and ensuring that key subjects in an image are prominently displayed.
 
-![The image shows an AI vision service analyzing a photo of people walking on a sidewalk, highlighting individuals and tagging elements like jeans and footwear. It illustrates the capability of smart cropping to improve visual appeal.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856875/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Vision-Service-and-Image-Analysis/ai-vision-service-sidewalk-analysis.jpg)
+![The image shows an AI vision service analyzing a photo of people walking on a sidewalk, highlighting individuals and tagging elements like jeans and footwear. It illustrates the capability of smart cropping to improve visual appeal.](https://kodekloud.com/kk-media/image/upload/v1752856875/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Vision-Service-and-Image-Analysis/ai-vision-service-sidewalk-analysis.jpg)
 
 ## Working with Azure AI Vision in the Azure Portal
 
 Start by accessing the Azure Portal and navigating to Azure AI Services. Although it's possible to deploy the Computer Vision Service independently, this demonstration uses an AI Services deployment that includes all necessary components.
 
-![The image shows a Microsoft Azure portal interface displaying Azure AI services, with a list of available services on the left and details of a specific AI service on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856876/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Vision-Service-and-Image-Analysis/azure-portal-ai-services-interface.jpg)
+![The image shows a Microsoft Azure portal interface displaying Azure AI services, with a list of available services on the left and details of a specific AI service on the right.](https://kodekloud.com/kk-media/image/upload/v1752856876/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Vision-Service-and-Image-Analysis/azure-portal-ai-services-interface.jpg)
 
 Once your AI Services are deployed, open the AI Studio—a centralized hub offering access to all AI services including image generation and OpenAI models.
 
@@ -146,7 +146,7 @@ Within the AI Studio, the Vision section is organized into several key areas:
 
 The following diagram illustrates the "Vision + Document" section, showcasing features such as object detection, image captioning, and OCR.
 
-![The image shows a webpage from Azure AI Studio, specifically the "Vision + Document" section, highlighting various vision capabilities like object detection, image captioning, and OCR. It also includes links to demos and learning resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856877/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Vision-Service-and-Image-Analysis/azure-ai-studio-vision-document.jpg)
+![The image shows a webpage from Azure AI Studio, specifically the "Vision + Document" section, highlighting various vision capabilities like object detection, image captioning, and OCR. It also includes links to demos and learning resources.](https://kodekloud.com/kk-media/image/upload/v1752856877/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Vision-Service-and-Image-Analysis/azure-ai-studio-vision-document.jpg)
 
 #### Object Detection
 
@@ -158,11 +158,11 @@ Within AI Studio, the object detection feature recognizes and locates items with
 
 For example, you might see attributes like Taxi when processing a photo. Adjusting the threshold value allows you to refine detection confidence levels.
 
-![The image shows a webpage from Azure AI Studio for detecting common objects in images, with options to upload or select sample images for object detection. The interface includes a sidebar with various document and image processing options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856879/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Vision-Service-and-Image-Analysis/azure-ai-studio-object-detection.jpg)
+![The image shows a webpage from Azure AI Studio for detecting common objects in images, with options to upload or select sample images for object detection. The interface includes a sidebar with various document and image processing options.](https://kodekloud.com/kk-media/image/upload/v1752856879/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Vision-Service-and-Image-Analysis/azure-ai-studio-object-detection.jpg)
 
 Another sample demonstrates an image with three people sitting on a couch with a laptop on a table.
 
-![The image shows three people sitting on a couch with a laptop on a table in front of them, engaged in conversation. The scene is part of an object detection interface, highlighting detected objects like people, a laptop, and a table.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856880/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Vision-Service-and-Image-Analysis/people-couch-laptop-conversation.jpg)
+![The image shows three people sitting on a couch with a laptop on a table in front of them, engaged in conversation. The scene is part of an object detection interface, highlighting detected objects like people, a laptop, and a table.](https://kodekloud.com/kk-media/image/upload/v1752856880/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Vision-Service-and-Image-Analysis/people-couch-laptop-conversation.jpg)
 
 #### Image Captioning
 
@@ -198,25 +198,25 @@ Dense Captioning generates detailed, human-readable captions for all significant
 * A city street with many buildings and cars.
 * Yellow taxi cabs on a street.
 
-![The image shows a busy city street with many buildings, bright advertisements, and yellow taxis.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856882/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Vision-Service-and-Image-Analysis/busy-city-street-yellow-taxis.jpg)
+![The image shows a busy city street with many buildings, bright advertisements, and yellow taxis.](https://kodekloud.com/kk-media/image/upload/v1752856882/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Vision-Service-and-Image-Analysis/busy-city-street-yellow-taxis.jpg)
 
 #### Image Search
 
 The Image Search feature allows you to query a collection of images similar to popular photo management systems. For example, searching for "rocky beaches" among a collection of 260 images retrieves all relevant photos. You can also adjust relevance settings to optimize search results.
 
-![The image shows a webpage from Azure AI Studio with a search interface for image retrieval, displaying various nature-related images, including beaches and landscapes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856883/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Vision-Service-and-Image-Analysis/azure-ai-studio-image-search-nature.jpg)
+![The image shows a webpage from Azure AI Studio with a search interface for image retrieval, displaying various nature-related images, including beaches and landscapes.](https://kodekloud.com/kk-media/image/upload/v1752856883/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Vision-Service-and-Image-Analysis/azure-ai-studio-image-search-nature.jpg)
 
 #### Common Tag Extraction
 
 This feature extracts descriptive tags from images to enhance categorization. For example, after uploading an image, you might receive tags like "sports person," "skateboarder," "individual sports," or "street stunts." For a seamless experience, create a hub and link it to your Azure AI service.
 
-![The image shows a web interface for creating a new hub in Azure AI Studio, with fields for hub name, subscription, resource group, location, and AI services connections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856884/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Vision-Service-and-Image-Analysis/azure-ai-studio-new-hub-interface.jpg)
+![The image shows a web interface for creating a new hub in Azure AI Studio, with fields for hub name, subscription, resource group, location, and AI services connections.](https://kodekloud.com/kk-media/image/upload/v1752856884/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Vision-Service-and-Image-Analysis/azure-ai-studio-new-hub-interface.jpg)
 
 #### Optical Character Recognition (OCR)
 
 OCR is used for extracting both printed and handwritten text from images and documents. This is especially useful for verifying identification documents or digitizing various texts (e.g., nutrition labels showing "sodium 20 mg daily" or "vitamin A 50%").
 
-![The image shows a screenshot of a web page from Azure AI Services, specifically demonstrating optical character recognition (OCR) on a nutrition facts label. The detected text and attributes from the label are displayed on the right side.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856885/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Vision-Service-and-Image-Analysis/azure-ai-ocr-nutrition-label-screenshot.jpg)
+![The image shows a screenshot of a web page from Azure AI Services, specifically demonstrating optical character recognition (OCR) on a nutrition facts label. The detected text and attributes from the label are displayed on the right side.](https://kodekloud.com/kk-media/image/upload/v1752856885/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-AI-Vision-Service-and-Image-Analysis/azure-ai-ocr-nutrition-label-screenshot.jpg)
 
 ## Additional Vision Studio Features
 

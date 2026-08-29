@@ -31,9 +31,7 @@ Links and references
 * AWS App Mesh: [https://aws.amazon.com/app-mesh](https://aws.amazon.com/app-mesh)
 * CNCF: [https://www.cncf.io](https://www.cncf.io)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/da4579eb-7769-4ab9-a0e8-b81f70a12978/lesson/dc89929f-2873-4397-8cc5-9fab62003c1f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/da4579eb-7769-4ab9-a0e8-b81f70a12978/lesson/dc89929f-2873-4397-8cc5-9fab62003c1f)
 
 
 # Summary
@@ -66,6 +64,4 @@ Conceptually, Istio functions as an orchestrator for proxies—similar to how Ku
 
 That concludes the summary of this section.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/da4579eb-7769-4ab9-a0e8-b81f70a12978/lesson/4b733cb1-68f8-421d-8584-bbbce581c88c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/da4579eb-7769-4ab9-a0e8-b81f70a12978/lesson/4b733cb1-68f8-421d-8584-bbbce581c88c)

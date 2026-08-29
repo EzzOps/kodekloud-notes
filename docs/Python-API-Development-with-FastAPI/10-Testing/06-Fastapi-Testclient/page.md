@@ -30,9 +30,7 @@ FAILED tests/test_calculations.py::test_insufficient_funds - ZeroDivisionError
 
 This output indicates that a test failed due to a `ZeroDivisionError` instead of the expected behavior.
 
-<Callout icon="lightbulb">
-  When writing tests for functions that can raise exceptions, ensure your test framework is set up to capture and assert on these exceptions appropriately.
-</Callout>
+> **lightbulb** When writing tests for functions that can raise exceptions, ensure your test framework is set up to capture and assert on these exceptions appropriately.
 
 ***
 
@@ -138,9 +136,7 @@ The test will capture the mismatch with an error such as:
 FAILED tests/test_users.py::test_root - assert 201 == 200
 ```
 
-<Callout icon="triangle-alert">
-  Maintaining consistent response payloads and correct HTTP status codes is crucial for API reliability. Always update your test cases if you make deliberate changes to your API responses.
-</Callout>
+> **triangle-alert** Maintaining consistent response payloads and correct HTTP status codes is crucial for API reliability. Always update your test cases if you make deliberate changes to your API responses.
 
 ***
 
@@ -156,6 +152,4 @@ By integrating these testing techniques into your development workflow, you can 
 
 Happy Testing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/2af119f2-02e7-4ba3-b200-afcbb8a124e2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/2af119f2-02e7-4ba3-b200-afcbb8a124e2)

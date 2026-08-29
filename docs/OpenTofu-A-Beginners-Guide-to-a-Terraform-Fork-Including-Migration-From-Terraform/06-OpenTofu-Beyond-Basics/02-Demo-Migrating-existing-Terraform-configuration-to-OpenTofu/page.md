@@ -50,13 +50,9 @@ In this guide, you’ll learn how to migrate an existing Terraform project to Op
 
 Refer to the [OpenTofu installation guide](https://docs.opentofu.org/intro/getting-started/#installation) and select the installer for your OS.
 
-<Callout icon="lightbulb">
-  Make sure to check your distribution using `cat /etc/os-release` before running the installer.
-</Callout>
+> **lightbulb** Make sure to check your distribution using `cat /etc/os-release` before running the installer.
 
-<Frame>
-  ![The image shows a webpage for installing OpenTofu, detailing various installation methods for different operating systems like Alpine Linux, Debian, Fedora, and more. The page includes a navigation menu on the left and installation options in the main section.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882836/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Migrating-existing-Terraform-configuration-to-OpenTofu/opentofu-installation-methods-webpage.jpg)
-</Frame>
+![The image shows a webpage for installing OpenTofu, detailing various installation methods for different operating systems like Alpine Linux, Debian, Fedora, and more. The page includes a navigation menu on the left and installation options in the main section.](https://kodekloud.com/kk-media/image/upload/v1752882836/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Migrating-existing-Terraform-configuration-to-OpenTofu/opentofu-installation-methods-webpage.jpg)
 
 ### Automated Debian/Ubuntu Installer
 
@@ -94,9 +90,7 @@ tofu version
 
 ## 3. Backup the Terraform State
 
-<Callout icon="triangle-alert">
-  Always archive your existing Terraform state before migrating. Losing state can lead to resource drift or duplicates.
-</Callout>
+> **triangle-alert** Always archive your existing Terraform state before migrating. Losing state can lead to resource drift or duplicates.
 
 ```bash theme={null}
 tar czf terraform.tfstate.tar.gz terraform.tfstate

@@ -98,13 +98,9 @@ Key points:
 * endpoint: minio:9000 — hostname and port of the S3-compatible MinIO service as seen from within the cluster.
 * Credentials are referenced via the `my-minio-cred` secret.
 
-<Callout icon="lightbulb">
-  The quick-start bundles MinIO for convenience and local testing. For production use, point Argo to a managed S3-compatible provider (e.g., AWS S3, Google Cloud Storage) and manage credentials using a secure secrets workflow.
-</Callout>
+> **lightbulb** The quick-start bundles MinIO for convenience and local testing. For production use, point Argo to a managed S3-compatible provider (e.g., AWS S3, Google Cloud Storage) and manage credentials using a secure secrets workflow.
 
-<Callout icon="warning">
-  Do not expose MinIO (or any artifact store) publicly without proper authentication and network restrictions. For ad-hoc demos, prefer `kubectl port-forward` or restrict NodePort access to trusted networks.
-</Callout>
+> **warning** Do not expose MinIO (or any artifact store) publicly without proper authentication and network restrictions. For ad-hoc demos, prefer `kubectl port-forward` or restrict NodePort access to trusted networks.
 
 ## 6. Verify artifact uploads
 
@@ -130,9 +126,7 @@ Replace endpoint and credentials to match your environment.
 
 This process helps you access, inspect, and verify artifacts and archived logs stored by the Argo Workflows' bundled MinIO server.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/37cae24d-46ec-4607-a662-3b3b990d95d8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/37cae24d-46ec-4607-a662-3b3b990d95d8)
 
 
 # Demo Artifacts Garbage Collection
@@ -143,9 +137,7 @@ Explains Argo Workflows Artifact Garbage Collection, demonstrating workflow-leve
 
 When workflows generate artifacts and logs over time, stored files consume space in your artifact repository. Artifact Garbage Collection (Artifact GC) in [Argo Workflows](https://argoproj.github.io/argo-workflows/) lets you automatically remove artifacts you no longer need. You can configure deletion either when a workflow completes or when a workflow is deleted. Artifact GC can be set globally at the workflow level (as a default for all artifacts) and selectively overridden per artifact.
 
-<Callout icon="lightbulb">
-  Artifact-level settings override the workflow-level default. The available strategies are: OnWorkflowDeletion, OnWorkflowCompletion, and Never.
-</Callout>
+> **lightbulb** Artifact-level settings override the workflow-level default. The available strategies are: OnWorkflowDeletion, OnWorkflowCompletion, and Never.
 
 This document provides two practical examples and explains common behaviors and lifecycle considerations:
 
@@ -285,8 +277,6 @@ Links and references
 
 This concludes the demo article showing how to use Artifact Garbage Collection in Argo Workflows to manage artifact lifecycles and control storage usage.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/c7b5450c-0cbf-4b83-9163-c3c0dc46b4ba" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/c7b5450c-0cbf-4b83-9163-c3c0dc46b4ba)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/84b27352-b3f7-47ba-81bd-ee76ba6c49ef" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/84b27352-b3f7-47ba-81bd-ee76ba6c49ef)

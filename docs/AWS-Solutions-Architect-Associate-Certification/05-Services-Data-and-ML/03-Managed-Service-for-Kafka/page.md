@@ -14,19 +14,19 @@ Managed Service for Apache Kafka (MSK) simplifies running Kafka on AWS. Built on
 
 Below is the official AWS marketing diagram for Managed Service for Kafka, which outlines AWS’s presentation of the service:
 
-![The image is a flowchart illustrating the process of using Amazon MSK to run Apache Kafka on AWS, including creating a Kafka cluster, connecting producers and consumers, and running streaming applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865078/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Managed-Service-for-Kafka/amazon-msk-apache-kafka-flowchart.jpg)
+![The image is a flowchart illustrating the process of using Amazon MSK to run Apache Kafka on AWS, including creating a Kafka cluster, connecting producers and consumers, and running streaming applications.](https://kodekloud.com/kk-media/image/upload/v1752865078/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Managed-Service-for-Kafka/amazon-msk-apache-kafka-flowchart.jpg)
 
 ## How It Works
 
 Imagine MSK as your personal data radio station—broadcasting real-time data by creating topics, sending data streams to these topics, and allowing consumers to process the data downstream. MSK essentially serves as a "programming guide" for orchestrating data streams, enabling applications to handle massive volumes of real-time data with ease.
 
-![The image illustrates a data broadcasting process using Amazon MSK, highlighting stages like data ingestion, processing, and delivery.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865078/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Managed-Service-for-Kafka/amazon-msk-data-broadcasting-process.jpg)
+![The image illustrates a data broadcasting process using Amazon MSK, highlighting stages like data ingestion, processing, and delivery.](https://kodekloud.com/kk-media/image/upload/v1752865078/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Managed-Service-for-Kafka/amazon-msk-data-broadcasting-process.jpg)
 
 ### Architecture Insight
 
 The managed service architecture for Kafka leverages AWS-managed brokers, ensuring that the underlying infrastructure remains largely invisible to end users. This architecture comprises Kafka brokers, ZooKeeper nodes that route requests, and multiple subnets across different availability zones. For users opting for a serverless configuration, simply setting your capacity is enough—producers and consumers directly interact with the managed brokers.
 
-![The image is a diagram illustrating a managed service architecture for Kafka, showing the interaction between ZooKeeper nodes, Kafka brokers, and various subnets across different availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865079/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Managed-Service-for-Kafka/managed-service-architecture-kafka-diagram.jpg)
+![The image is a diagram illustrating a managed service architecture for Kafka, showing the interaction between ZooKeeper nodes, Kafka brokers, and various subnets across different availability zones.](https://kodekloud.com/kk-media/image/upload/v1752865079/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Managed-Service-for-Kafka/managed-service-architecture-kafka-diagram.jpg)
 
 > **triangle-alert** When configuring MSK in non-serverless mode, ensure you specify the appropriate broker sizes and configurations to meet your workload requirements.
 
@@ -40,7 +40,7 @@ MSK is designed to handle data ingestion at scale, delivering high performance a
 * **Reliability and High Availability:** Offers automated backups, multi-zone replication, and automatic recovery.
 * **Monitoring and Alerts:** Seamlessly integrates with AWS monitoring and alerting services like CloudTrail and CloudWatch.
 
-![The image lists five features: Automated Cluster Management, Scalability and Performance, Security and Compliance, Reliability and High Availability, and Monitoring and Alerts. Each feature is represented with an icon and a gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865080/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Managed-Service-for-Kafka/features-automated-cluster-management.jpg)
+![The image lists five features: Automated Cluster Management, Scalability and Performance, Security and Compliance, Reliability and High Availability, and Monitoring and Alerts. Each feature is represented with an icon and a gradient background.](https://kodekloud.com/kk-media/image/upload/v1752865080/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Managed-Service-for-Kafka/features-automated-cluster-management.jpg)
 
 ## Conclusion
 

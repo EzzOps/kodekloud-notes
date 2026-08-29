@@ -17,21 +17,15 @@ RBAC can be defined at two levels:
 * **Namespace Level:** Controls access within a single namespace.
 * **Cluster Level:** Grants permissions across all namespaces.
 
-<Frame>
-  ![The image explains RBAC (Role-Based Access Control) as authorization to resources, featuring icons related to Kubernetes and options to create pods and deployments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882738/notes-assets/images/OpenShift-4-RBAC-roles-rolebinding-cluster-role-clusterrole-binding/rbac-kubernetes-access-control-diagram.jpg)
-</Frame>
+![The image explains RBAC (Role-Based Access Control) as authorization to resources, featuring icons related to Kubernetes and options to create pods and deployments.](https://kodekloud.com/kk-media/image/upload/v1752882738/notes-assets/images/OpenShift-4-RBAC-roles-rolebinding-cluster-role-clusterrole-binding/rbac-kubernetes-access-control-diagram.jpg)
 
 ## Namespace vs. Cluster Scope
 
 You can define RBAC roles to limit access either to specific namespaces or the entire cluster. A role created within a namespace confines its permissions to that namespace, whereas a cluster role provides access control across all namespaces.
 
-<Frame>
-  ![The image explains RBAC (Role-Based Access Control) with a focus on authorization, highlighting "Namespace Scope" and "Cluster Scope" as resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882739/notes-assets/images/OpenShift-4-RBAC-roles-rolebinding-cluster-role-clusterrole-binding/rbac-authorization-namespace-cluster.jpg)
-</Frame>
+![The image explains RBAC (Role-Based Access Control) with a focus on authorization, highlighting "Namespace Scope" and "Cluster Scope" as resources.](https://kodekloud.com/kk-media/image/upload/v1752882739/notes-assets/images/OpenShift-4-RBAC-roles-rolebinding-cluster-role-clusterrole-binding/rbac-authorization-namespace-cluster.jpg)
 
-<Callout icon="triangle-alert">
-  If RBAC is not configured correctly, your Kubernetes cluster and all its resources might be exposed to potential security breaches. Always implement RBAC with careful planning.
-</Callout>
+> **triangle-alert** If RBAC is not configured correctly, your Kubernetes cluster and all its resources might be exposed to potential security breaches. Always implement RBAC with careful planning.
 
 ## Components of RBAC
 
@@ -41,23 +35,17 @@ RBAC in Kubernetes is built around four key components:
 
 Roles define the permitted actions for users, ServiceAccounts, or groups within a specific namespace. For example, one role may allow a user to create Pods in the Sock Shop namespace, while another role might restrict access to read-only permissions.
 
-<Frame>
-  ![The image explains roles, showing a user icon labeled "Role" with access options for "Create Pods" and "View Only."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882740/notes-assets/images/OpenShift-4-RBAC-roles-rolebinding-cluster-role-clusterrole-binding/user-role-access-options-diagram.jpg)
-</Frame>
+![The image explains roles, showing a user icon labeled "Role" with access options for "Create Pods" and "View Only."](https://kodekloud.com/kk-media/image/upload/v1752882740/notes-assets/images/OpenShift-4-RBAC-roles-rolebinding-cluster-role-clusterrole-binding/user-role-access-options-diagram.jpg)
 
 It is important to distinguish between roles and cluster roles. A role limits permissions to a specific namespace, whereas a cluster role does not.
 
-<Frame>
-  ![The image explains the concept of "Roles" with a focus on access permissions, showing a user icon and options for viewing "All Pods" or "Pods in a Namespace."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882742/notes-assets/images/OpenShift-4-RBAC-roles-rolebinding-cluster-role-clusterrole-binding/roles-access-permissions-diagram.jpg)
-</Frame>
+![The image explains the concept of "Roles" with a focus on access permissions, showing a user icon and options for viewing "All Pods" or "Pods in a Namespace."](https://kodekloud.com/kk-media/image/upload/v1752882742/notes-assets/images/OpenShift-4-RBAC-roles-rolebinding-cluster-role-clusterrole-binding/roles-access-permissions-diagram.jpg)
 
 ### 2. Cluster Roles
 
 A cluster role provides permissions that span the entire cluster. When you see the prefix "cluster" (as in "cluster role" or "cluster role binding"), it indicates that the permissions apply globally across all namespaces.
 
-<Frame>
-  ![The image explains "Cluster Role" within a "Cluster Scope," featuring icons of people and hexagons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882743/notes-assets/images/OpenShift-4-RBAC-roles-rolebinding-cluster-role-clusterrole-binding/cluster-role-cluster-scope-icons.jpg)
-</Frame>
+![The image explains "Cluster Role" within a "Cluster Scope," featuring icons of people and hexagons.](https://kodekloud.com/kk-media/image/upload/v1752882743/notes-assets/images/OpenShift-4-RBAC-roles-rolebinding-cluster-role-clusterrole-binding/cluster-role-cluster-scope-icons.jpg)
 
 ### 3. Role Bindings
 
@@ -75,6 +63,4 @@ By correctly configuring these RBAC components, you ensure that users and servic
 
 For more details on configuring Kubernetes security, refer to the [Kubernetes Documentation](https://kubernetes.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/28b0e6e3-c64d-4971-902a-8844d5b0e96b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/28b0e6e3-c64d-4971-902a-8844d5b0e96b)

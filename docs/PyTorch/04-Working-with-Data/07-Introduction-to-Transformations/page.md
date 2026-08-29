@@ -6,9 +6,7 @@ print(original_image)
 display_images(original_image=original_image)
 ```
 
-<Frame>
-  ![The image shows a Jupyter Notebook interface with text discussing improving model accuracy and pipelines using PyTorch transformations. It includes a conclusion and a note about using transformations for image classification models.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883304/notes-assets/images/PyTorch-Demo-Introduction-to-Transformations/jupyter-notebook-pytorch-transformations.jpg)
-</Frame>
+![The image shows a Jupyter Notebook interface with text discussing improving model accuracy and pipelines using PyTorch transformations. It includes a conclusion and a note about using transformations for image classification models.](https://kodekloud.com/kk-media/image/upload/v1752883304/notes-assets/images/PyTorch-Demo-Introduction-to-Transformations/jupyter-notebook-pytorch-transformations.jpg)
 
 ***
 
@@ -47,9 +45,7 @@ rhf_image = rh_transform(original_image)
 display_images(original_image=original_image, new_image=rhf_image, new_image_name="Random Horizontal Flip")
 ```
 
-<Callout icon="lightbulb">
-  For real-world applications, consider using a probability less than 1 (e.g., p=0.5) to introduce randomness in augmentation.
-</Callout>
+> **lightbulb** For real-world applications, consider using a probability less than 1 (e.g., p=0.5) to introduce randomness in augmentation.
 
 ***
 
@@ -84,9 +80,7 @@ print(normalized_image)
 print(tensor_image)
 ```
 
-<Callout icon="lightbulb">
-  Normalization typically shifts the pixel values to a range between -1 and 1, promoting efficient model training.
-</Callout>
+> **lightbulb** Normalization typically shifts the pixel values to a range between -1 and 1, promoting efficient model training.
 
 ***
 
@@ -103,9 +97,7 @@ display_images(original_image=original_image, new_image=rc_image, new_image_name
 
 Running the transformation multiple times yields crops from different parts of the image.
 
-<Frame>
-  ![The image shows two side-by-side pictures of a cat on a black background. The left is labeled "Original Image," and the right is labeled "Random Crop," showing a slightly different framing of the cat.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883305/notes-assets/images/PyTorch-Demo-Introduction-to-Transformations/cat-original-random-crop.jpg)
-</Frame>
+![The image shows two side-by-side pictures of a cat on a black background. The left is labeled "Original Image," and the right is labeled "Random Crop," showing a slightly different framing of the cat.](https://kodekloud.com/kk-media/image/upload/v1752883305/notes-assets/images/PyTorch-Demo-Introduction-to-Transformations/cat-original-random-crop.jpg)
 
 ***
 
@@ -128,9 +120,7 @@ rpd_image = rpd_transform(original_image)
 display_images(original_image=original_image, new_image=rpd_image, new_image_name="Random Photometric Distort")
 ```
 
-<Callout icon="lightbulb">
-  Try changing the parameter ranges to see how variations in brightness and saturation impact the overall image appearance.
-</Callout>
+> **lightbulb** Try changing the parameter ranges to see how variations in brightness and saturation impact the overall image appearance.
 
 ***
 
@@ -145,9 +135,7 @@ rr_image = rr_transform(original_image)
 display_images(original_image=original_image, new_image=rr_image, new_image_name="Random Resize")
 ```
 
-<Frame>
-  ![The image shows two side-by-side pictures of a cat against a black background. The left is labeled "Original Image," and the right is labeled "Random Resize."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883306/notes-assets/images/PyTorch-Demo-Introduction-to-Transformations/cat-original-random-resize.jpg)
-</Frame>
+![The image shows two side-by-side pictures of a cat against a black background. The left is labeled "Original Image," and the right is labeled "Random Resize."](https://kodekloud.com/kk-media/image/upload/v1752883306/notes-assets/images/PyTorch-Demo-Introduction-to-Transformations/cat-original-random-resize.jpg)
 
 ***
 
@@ -180,9 +168,7 @@ After applying the pipeline, you can view the transformed image as shown below:
 display_images(original_image=original_image, new_image=pipeline_image, new_image_name="Pipeline Image")
 ```
 
-<Callout icon="lightbulb">
-  Using a transformation pipeline streamlines preprocessing and ensures consistency across your training data.
-</Callout>
+> **lightbulb** Using a transformation pipeline streamlines preprocessing and ensures consistency across your training data.
 
 ***
 
@@ -238,17 +224,13 @@ display_images(original_image=original_image, new_image=transformed_image, new_i
 
 In this lesson, we explored a variety of image transformation techniques using PyTorch’s TorchVision library. We covered resizing, flipping, cropping, photometric adjustments, normalization, and composing pipelines—all critical steps for effective image preprocessing and data augmentation. These techniques not only standardize your dataset but also improve model robustness and performance. Experiment with these transformations to optimize the augmentation strategies for your projects.
 
-<Frame>
-  ![The image shows two side-by-side visualizations labeled "Original Image" and "Pipeline Image," depicting a transformation process with color-coded pixel data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883307/notes-assets/images/PyTorch-Demo-Introduction-to-Transformations/original-pipeline-image-transformation.jpg)
-</Frame>
+![The image shows two side-by-side visualizations labeled "Original Image" and "Pipeline Image," depicting a transformation process with color-coded pixel data.](https://kodekloud.com/kk-media/image/upload/v1752883307/notes-assets/images/PyTorch-Demo-Introduction-to-Transformations/original-pipeline-image-transformation.jpg)
 
 Thank you for following along, and happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/be1aae10-5f0d-4206-8781-c7e3b18c9316" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/be1aae10-5f0d-4206-8781-c7e3b18c9316)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/94c8b52a-7e06-4689-a5c4-135c09a0e5c7" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/94c8b52a-7e06-4689-a5c4-135c09a0e5c7)
 
 
 # Introduction to Transformations
@@ -264,13 +246,9 @@ Transformations serve two primary purposes:
 1. **Preprocessing:** Resize images to a uniform dimension and normalize pixel values to ensure consistency across the dataset.
 2. **Data Augmentation:** Apply operations such as rotating, flipping, and cropping to generate multiple modified versions of each image. This variation helps the model perform well on unseen data by reducing the risk of overfitting.
 
-<Callout icon="lightbulb">
-  Benefits of data transformations include improved preprocessing, effective data augmentation, and enhanced generalization, which collectively reduce overfitting.
-</Callout>
+> **lightbulb** Benefits of data transformations include improved preprocessing, effective data augmentation, and enhanced generalization, which collectively reduce overfitting.
 
-<Frame>
-  ![The image explains the benefits of transforming data, highlighting preprocessing, data augmentation, improved learning, and preventing overfitting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883308/notes-assets/images/PyTorch-Introduction-to-Transformations/data-transformation-benefits-diagram.jpg)
-</Frame>
+![The image explains the benefits of transforming data, highlighting preprocessing, data augmentation, improved learning, and preventing overfitting.](https://kodekloud.com/kk-media/image/upload/v1752883308/notes-assets/images/PyTorch-Introduction-to-Transformations/data-transformation-benefits-diagram.jpg)
 
 Overfitting, which is discussed later in more detail, can be mitigated effectively using these augmentation techniques. The TorchVision Transforms module in PyTorch simplifies the application of these transformations, offering easy-to-use operations for resizing, converting images to tensors, normalizing pixel values, and applying various augmentation methods.
 

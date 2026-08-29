@@ -5,9 +5,7 @@
 # local_file.file: Creation complete [id=...]
 ```
 
-<Callout icon="lightbulb">
-  Because `local_file.file` references `random_string.string.id`, OpenTofu automatically creates the string resource first.
-</Callout>
+> **lightbulb** Because `local_file.file` references `random_string.string.id`, OpenTofu automatically creates the string resource first.
 
 ## 2. Forcing Replacement by Changing `keepers`
 
@@ -64,9 +62,7 @@ resource "local_file" "file" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  On disk, you cannot have two files with the same name simultaneously. The old file is destroyed immediately after the new one appears.
-</Callout>
+> **triangle-alert** On disk, you cannot have two files with the same name simultaneously. The old file is destroyed immediately after the new one appears.
 
 ## 4. Inspecting Resource State with `tofu show`
 
@@ -78,9 +74,7 @@ tofu show
 tofu state show local_file.file
 ```
 
-<Frame>
-  ![The image shows a code editor with a Terraform configuration file open, displaying resource definitions and lifecycle rules. Below, a terminal window shows the output of a Terraform apply command, indicating resource creation and destruction.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882902/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Lifecycle-Rules/terraform-configuration-code-editor-terminal-output.jpg)
-</Frame>
+![The image shows a code editor with a Terraform configuration file open, displaying resource definitions and lifecycle rules. Below, a terminal window shows the output of a Terraform apply command, indicating resource creation and destruction.](https://kodekloud.com/kk-media/image/upload/v1752882902/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Lifecycle-Rules/terraform-configuration-code-editor-terminal-output.jpg)
 
 Look for the `id` attribute under the `local_file.file` block.
 
@@ -162,11 +156,9 @@ You’ve now mastered:
 * [Terraform Fork Overview](https://opentofu.io/)
 * [Resource Lifecycle Meta-Arguments](https://www.terraform.io/language/meta-arguments/lifecycle)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/2cab39b9-fcfa-4df5-af2c-0b23c8c8549b" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/2cab39b9-fcfa-4df5-af2c-0b23c8c8549b)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/a9d4f393-bb13-4fe3-97be-6ce61e655506" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/a9d4f393-bb13-4fe3-97be-6ce61e655506)
 
 
 # Demo OpenTofu Commands
@@ -210,9 +202,7 @@ Before creating any resources, validate your HCL syntax and catch typos:
    tofu validate
    ```
 
-<Frame>
-  ![The image shows a Visual Studio Code interface with a task description on the left about fixing configuration errors using the tofu validate command. On the right, there's a terminal and file explorer open, displaying a project directory structure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882904/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-OpenTofu-Commands/visual-studio-code-task-terminal-explorer.jpg)
-</Frame>
+![The image shows a Visual Studio Code interface with a task description on the left about fixing configuration errors using the tofu validate command. On the right, there's a terminal and file explorer open, displaying a project directory structure.](https://kodekloud.com/kk-media/image/upload/v1752882904/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-OpenTofu-Commands/visual-studio-code-task-terminal-explorer.jpg)
 
 If you see:
 
@@ -224,9 +214,7 @@ Error: An argument named "dsa_bits" is not expected here.
 Did you mean "rsa_bits"?
 ```
 
-<Callout icon="triangle-alert">
-  Always match algorithm-specific arguments. In this case, replace `dsa_bits` with `rsa_bits` for an RSA key.
-</Callout>
+> **triangle-alert** Always match algorithm-specific arguments. In this case, replace `dsa_bits` with `rsa_bits` for an RSA key.
 
 Correct the block in **main.tf**:
 
@@ -350,9 +338,7 @@ Without browsing the directory directly, list installed plugins:
 tofu providers
 ```
 
-<Frame>
-  ![The image shows a coding environment with a file explorer and a code editor displaying a JSON file related to Terraform configuration. There is also a terminal at the bottom with commands related to navigating directories and managing provider plugins.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882905/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-OpenTofu-Commands/coding-environment-json-terraform-terminal.jpg)
-</Frame>
+![The image shows a coding environment with a file explorer and a code editor displaying a JSON file related to Terraform configuration. There is also a terminal at the bottom with commands related to navigating directories and managing provider plugins.](https://kodekloud.com/kk-media/image/upload/v1752882905/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-OpenTofu-Commands/coding-environment-json-terraform-terminal.jpg)
 
 You should see entries like:
 
@@ -368,8 +354,6 @@ You should see entries like:
 * [Graphviz Overview](https://graphviz.org/documentation/)
 * [TLS Provider Documentation](https://registry.terraform.io/providers/hashicorp/tls/latest/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/d1e2cf32-919d-448c-b8e0-2abdaaa25a01" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/d1e2cf32-919d-448c-b8e0-2abdaaa25a01)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/fa965784-46aa-4503-a227-6a5096c4890a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/fa965784-46aa-4503-a227-6a5096c4890a)

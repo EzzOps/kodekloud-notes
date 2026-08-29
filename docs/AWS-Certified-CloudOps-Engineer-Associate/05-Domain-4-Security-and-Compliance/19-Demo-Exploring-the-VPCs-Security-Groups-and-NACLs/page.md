@@ -12,7 +12,7 @@ Our lab uses a specifically provisioned VPC—not the default one—with the CID
 
 Below is an image of the AWS VPC dashboard displaying essential details like VPC ID, state, and IP address ranges:
 
-![The image shows an AWS VPC dashboard displaying a list of Virtual Private Clouds (VPCs) with details such as VPC ID, state, and IP address ranges. The selected VPC is "LabVpc" with additional details shown below.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860442/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Exploring-the-VPCs-Security-Groups-and-NACLs/aws-vpc-dashboard-labvpc-details.jpg)
+![The image shows an AWS VPC dashboard displaying a list of Virtual Private Clouds (VPCs) with details such as VPC ID, state, and IP address ranges. The selected VPC is "LabVpc" with additional details shown below.](https://kodekloud.com/kk-media/image/upload/v1752860442/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Exploring-the-VPCs-Security-Groups-and-NACLs/aws-vpc-dashboard-labvpc-details.jpg)
 
 Key configuration points include:
 
@@ -29,21 +29,21 @@ In this lesson, our focus is on security, specifically the Network ACLs (NACLs) 
 
 Within the lab VPC, a Network ACL is linked with eight subnets. Acting as a rule-based firewall at the subnet level, these ACLs process rules sequentially from highest to lowest priority. By default, the inbound rules permit all IPv4 and IPv6 traffic using explicit allow rules that conclude with a deny rule.
 
-![The image shows an AWS VPC dashboard displaying details of a Network ACL, including its ID, associated subnets, and inbound rules. The inbound rules list specifies traffic permissions, with some rules allowing and others denying all traffic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860444/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Exploring-the-VPCs-Security-Groups-and-NACLs/aws-vpc-dashboard-network-acl.jpg)
+![The image shows an AWS VPC dashboard displaying details of a Network ACL, including its ID, associated subnets, and inbound rules. The inbound rules list specifies traffic permissions, with some rules allowing and others denying all traffic.](https://kodekloud.com/kk-media/image/upload/v1752860444/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Exploring-the-VPCs-Security-Groups-and-NACLs/aws-vpc-dashboard-network-acl.jpg)
 
 You can modify these ACLs to tailor traffic control. For example, to restrict access to a web server, you might add deny rules for specific source IP addresses. Typically, each inbound rule is paired with a corresponding outbound rule to manage the return traffic.
 
 The following image displays the outbound rules for the ACL, which similarly outline permissions with both allow and deny entries:
 
-![The image shows an AWS VPC dashboard displaying the details and outbound rules of a specific Network ACL. The rules specify traffic permissions, with some allowing and others denying all traffic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860445/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Exploring-the-VPCs-Security-Groups-and-NACLs/aws-vpc-dashboard-network-acl-rules.jpg)
+![The image shows an AWS VPC dashboard displaying the details and outbound rules of a specific Network ACL. The rules specify traffic permissions, with some allowing and others denying all traffic.](https://kodekloud.com/kk-media/image/upload/v1752860445/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Exploring-the-VPCs-Security-Groups-and-NACLs/aws-vpc-dashboard-network-acl-rules.jpg)
 
 Additionally, you can review the network ACL’s subnet associations. In our lab setup, these include public, private, and endpoint subnets. While subnets typically inherit the VPC's default ACL, you have the option to assign a different ACL to an individual subnet.
 
-![The image shows an AWS VPC dashboard displaying subnet associations, including details like subnet names, IDs, associated network ACLs, availability zones, and IPv4 CIDR blocks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860446/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Exploring-the-VPCs-Security-Groups-and-NACLs/aws-vpc-dashboard-subnet-associations.jpg)
+![The image shows an AWS VPC dashboard displaying subnet associations, including details like subnet names, IDs, associated network ACLs, availability zones, and IPv4 CIDR blocks.](https://kodekloud.com/kk-media/image/upload/v1752860446/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Exploring-the-VPCs-Security-Groups-and-NACLs/aws-vpc-dashboard-subnet-associations.jpg)
 
 The image below highlights the details of a specific subnet and its associated ACL:
 
-![The image shows an AWS VPC dashboard displaying details of a specific subnet, including its ID, availability zone, IPv4 and IPv6 CIDR, and associated network ACL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860448/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Exploring-the-VPCs-Security-Groups-and-NACLs/aws-vpc-dashboard-subnet-details.jpg)
+![The image shows an AWS VPC dashboard displaying details of a specific subnet, including its ID, availability zone, IPv4 and IPv6 CIDR, and associated network ACL.](https://kodekloud.com/kk-media/image/upload/v1752860448/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Exploring-the-VPCs-Security-Groups-and-NACLs/aws-vpc-dashboard-subnet-details.jpg)
 
 > **lightbulb** Remember, Network ACLs are stateless, so rules must be defined separately for inbound and outbound traffic.
 
@@ -61,7 +61,7 @@ Consider these aspects of security groups:
 
 The image below shows a Security Group in the AWS Management Console with its outbound rules configured for HTTP and HTTPS protocols:
 
-![The image shows an AWS Management Console screen displaying details of a security group, including outbound rules for HTTP and HTTPS protocols.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860450/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Exploring-the-VPCs-Security-Groups-and-NACLs/aws-management-console-security-group-details.jpg)
+![The image shows an AWS Management Console screen displaying details of a security group, including outbound rules for HTTP and HTTPS protocols.](https://kodekloud.com/kk-media/image/upload/v1752860450/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Exploring-the-VPCs-Security-Groups-and-NACLs/aws-management-console-security-group-details.jpg)
 
 Security Groups are attached directly to network interfaces across various AWS services such as EC2, RDS, EMR, Lambda, and even VPC endpoints. Unlike ACLs, which are applied at the subnet level, Security Groups are assigned on a per-resource basis. Notably, an EC2 instance can be associated with multiple security groups.
 

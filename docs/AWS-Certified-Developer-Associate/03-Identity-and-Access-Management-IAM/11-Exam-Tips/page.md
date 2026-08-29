@@ -18,7 +18,7 @@ This article provides essential recommendations to help you prepare for your AWS
    * Assign permissions directly to users, groups, or roles based on necessity.
    * Use roles to provide temporary security credentials, especially when delegation is required.
 
-![The image provides tips for acing an exam, focusing on AWS security practices like avoiding root account use, implementing MFA, granting least privilege permissions, creating IAM users, and assigning permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858914/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-security-exam-tips.jpg)
+![The image provides tips for acing an exam, focusing on AWS security practices like avoiding root account use, implementing MFA, granting least privilege permissions, creating IAM users, and assigning permissions.](https://kodekloud.com/kk-media/image/upload/v1752858914/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-security-exam-tips.jpg)
 
 3. **Utilize Roles and Trust Policies**\
    Roles are ideal for allowing temporary access to AWS resources. They involve:
@@ -31,7 +31,7 @@ This article provides essential recommendations to help you prepare for your AWS
    * Use the `AssumeRole` method via the API when temporary credentials are required.
    * If MFA is enabled, leverage the `GetSessionToken` method to obtain secure temporary credentials.
 
-![The image provides tips for acing an exam related to AWS, including information on roles, trust policies, PassRole permission, and using AssumeRole and GetSessionToken.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858915/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-exam-tips-roles-policies.jpg)
+![The image provides tips for acing an exam related to AWS, including information on roles, trust policies, PassRole permission, and using AssumeRole and GetSessionToken.](https://kodekloud.com/kk-media/image/upload/v1752858915/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-exam-tips-roles-policies.jpg)
 
 5. **Facilitate Cross-Account Access**\
    In scenarios where a user from one AWS account (Account A) needs to access services in another account (Account B):

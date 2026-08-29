@@ -26,9 +26,7 @@ CPIO stands for **Copy In, Copy Out**. Unlike `tar`, which handles device archiv
    * `-o` for output (create archive)
    * `-i` for input (extract archive)
 
-<Callout icon="lightbulb">
-  `cpio` does not infer the archive format from file extensions. You control its behavior exclusively with command-line options.
-</Callout>
+> **lightbulb** `cpio` does not infer the archive format from file extensions. You control its behavior exclusively with command-line options.
 
 ***
 
@@ -67,9 +65,7 @@ Breakdown:
 * `-d` ensures that all required directories are created.
 * `< archive.cpio` feeds the archive into `cpio`.
 
-<Callout icon="triangle-alert">
-  By default, `cpio` preserves file ownership and permissions. Run as root only if you trust the archive contents to avoid overwriting critical system files.
-</Callout>
+> **triangle-alert** By default, `cpio` preserves file ownership and permissions. Run as root only if you trust the archive contents to avoid overwriting critical system files.
 
 ***
 
@@ -91,6 +87,4 @@ Breakdown:
 * [GNU `cpio` Documentation](https://www.gnu.org/software/findutils/manual/html_node/cpio-invocation.html)
 * [Linux Archive Management Overview](https://linux.die.net/man/1/cpio)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/49bcfa51-d99c-4e3a-9d0a-a240305ecbe0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/49bcfa51-d99c-4e3a-9d0a-a240305ecbe0)

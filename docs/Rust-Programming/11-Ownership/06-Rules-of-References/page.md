@@ -12,9 +12,7 @@ In this lesson, we explore Rust’s borrowing rules using references, illustrati
 
 In the first example, two immutable references are created within an inner block and used for reading data. After the inner block ends, these references go out of scope, allowing the creation of a mutable reference that modifies the data.
 
-<Frame>
-  ![The image outlines key borrowing rules in Rust programming, focusing on multiple immutable references, mutability exclusivity, and the non-overlap between mutable and immutable references to ensure memory safety and data consistency.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883954/notes-assets/images/Rust-Programming-Rules-of-References/rust-borrowing-rules-memory-safety.jpg)
-</Frame>
+![The image outlines key borrowing rules in Rust programming, focusing on multiple immutable references, mutability exclusivity, and the non-overlap between mutable and immutable references to ensure memory safety and data consistency.](https://kodekloud.com/kk-media/image/upload/v1752883954/notes-assets/images/Rust-Programming-Rules-of-References/rust-borrowing-rules-memory-safety.jpg)
 
 ```rust theme={null}
 fn main() {
@@ -41,9 +39,7 @@ r1: hello, r2: hello
 r3: hello, world
 ```
 
-<Callout icon="lightbulb">
-  Rust allows multiple immutable references because they only read data without modifying it. After they go out of scope, a mutable reference can safely modify the original data.
-</Callout>
+> **lightbulb** Rust allows multiple immutable references because they only read data without modifying it. After they go out of scope, a mutable reference can safely modify the original data.
 
 ***
 
@@ -114,9 +110,7 @@ error: cannot borrow `s` as mutable because it is also borrowed as immutable
   |                 ^^^^^ mutable borrow occurs here
 ```
 
-<Callout icon="triangle-alert">
-  This error occurs because r1 and r2 remain in scope when the mutable reference r3 is created. Ensure that immutable references are not used after a mutable borrow to maintain memory safety.
-</Callout>
+> **triangle-alert** This error occurs because r1 and r2 remain in scope when the mutable reference r3 is created. Ensure that immutable references are not used after a mutable borrow to maintain memory safety.
 
 For further details on this error, run: `rustc --explain E0502`.
 
@@ -130,9 +124,7 @@ Rust’s strict borrowing rules are designed to ensure data consistency and memo
 * **Single Mutable Reference:** Only one mutable reference is allowed at a time to avoid concurrent data modifications.
 * **No Overlap:** Immutable and mutable references cannot coexist. Once immutable references exist, you cannot create a mutable reference until they fall out of scope, and vice versa.
 
-<Frame>
-  ![The image explains the benefits of multiple immutable references and the limitations of a single mutable reference in programming, highlighting data consistency and potential interference issues.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883955/notes-assets/images/Rust-Programming-Rules-of-References/immutable-references-programming-benefits.jpg)
-</Frame>
+![The image explains the benefits of multiple immutable references and the limitations of a single mutable reference in programming, highlighting data consistency and potential interference issues.](https://kodekloud.com/kk-media/image/upload/v1752883955/notes-assets/images/Rust-Programming-Rules-of-References/immutable-references-programming-benefits.jpg)
 
 ### Example: Immutable References
 
@@ -170,6 +162,4 @@ Attempting to create another mutable reference when one is already in use will r
 
 In summary, Rust’s reference rules ensure safe and consistent data management by allowing multiple immutable references for reading and a single mutable reference for writing. By following these guidelines, you can write efficient and memory-safe Rust code. For more on Rust's borrowing system, check out the [Rust Documentation](https://www.rust-lang.org/learn).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/332fc2b7-d1bb-40e3-a2c1-01789587dff6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/332fc2b7-d1bb-40e3-a2c1-01789587dff6)

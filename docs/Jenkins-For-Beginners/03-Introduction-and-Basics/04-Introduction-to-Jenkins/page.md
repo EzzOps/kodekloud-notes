@@ -8,13 +8,9 @@ Jenkins is a powerful open-source automation server that transforms the software
 
 Imagine this scenario: every time a developer pushes code to a Git repository, Jenkins detects the change, pulls the latest code, and compiles the project. If the build fails, Jenkins immediately notifies the developer, prompting timely corrections. Once the updated code successfully passes all defined tests in the Jenkins pipeline, Jenkins automatically deploys the application to the target environment—whether it's a Kubernetes production cluster or an [Amazon EC2 instance](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2). A notification confirms the deployment, completing an efficient, automated loop with minimal manual intervention.
 
-<Frame>
-  ![The image illustrates how Jenkins works in a CI/CD pipeline, showing the process from a developer's commit through Git, Jenkins' build and compile stages, and potential outcomes of error or success with deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879471/notes-assets/images/Jenkins-For-Beginners-Introduction-to-Jenkins/jenkins-ci-cd-pipeline-diagram.jpg)
-</Frame>
+![The image illustrates how Jenkins works in a CI/CD pipeline, showing the process from a developer's commit through Git, Jenkins' build and compile stages, and potential outcomes of error or success with deployment.](https://kodekloud.com/kk-media/image/upload/v1752879471/notes-assets/images/Jenkins-For-Beginners-Introduction-to-Jenkins/jenkins-ci-cd-pipeline-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Remember that automating your build and deployment processes with Jenkins saves time and reduces human errors.
-</Callout>
+> **lightbulb** Remember that automating your build and deployment processes with Jenkins saves time and reduces human errors.
 
 ## Key Jenkins Concepts
 
@@ -29,9 +25,7 @@ Before diving into pipeline configuration, it is essential to understand some fo
 3. **Pipelines:**\
    Pipelines provide a robust framework for automating your workflow from build to deployment. Defined in a Jenkinsfile, pipelines make version control and collaboration easier. They logically group jobs into stages such as build, test, and deploy, creating a clear and structured workflow.
 
-<Frame>
-  ![The image explains Jenkins core concepts, including Jobs, Builds, Freestyle Project, and Pipelines, with a cartoon character illustration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879472/notes-assets/images/Jenkins-For-Beginners-Introduction-to-Jenkins/jenkins-core-concepts-illustration.jpg)
-</Frame>
+![The image explains Jenkins core concepts, including Jobs, Builds, Freestyle Project, and Pipelines, with a cartoon character illustration.](https://kodekloud.com/kk-media/image/upload/v1752879472/notes-assets/images/Jenkins-For-Beginners-Introduction-to-Jenkins/jenkins-core-concepts-illustration.jpg)
 
 4. **Nodes:**\
    Nodes refer to the machines that execute Jenkins jobs. In a simple configuration, the Jenkins controller (or master) manages job execution. For better performance and scalability, tasks can also be distributed across multiple worker nodes.
@@ -39,9 +33,7 @@ Before diving into pipeline configuration, it is essential to understand some fo
 5. **Plugins:**\
    Jenkins’ functionality is significantly enhanced through its extensive library of plugins, which enable integration with various tools and technologies across the development lifecycle. Whether connecting to a specific testing framework or a cloud platform, there is likely a plugin available to meet your needs.
 
-<Frame>
-  ![The image explains Jenkins core concepts, including stages, nodes, and plugins, with a cartoon character illustration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879474/notes-assets/images/Jenkins-For-Beginners-Introduction-to-Jenkins/jenkins-core-concepts-illustration-2.jpg)
-</Frame>
+![The image explains Jenkins core concepts, including stages, nodes, and plugins, with a cartoon character illustration.](https://kodekloud.com/kk-media/image/upload/v1752879474/notes-assets/images/Jenkins-For-Beginners-Introduction-to-Jenkins/jenkins-core-concepts-illustration-2.jpg)
 
 Throughout this series, we will explore these components in depth, giving you a comprehensive understanding of how Jenkins enhances your CI/CD workflow.
 
@@ -57,9 +49,7 @@ Jenkins provides several key benefits:
 | Scalability                  | Horizontal and vertical scaling through worker nodes                 | Efficient job distribution for larger projects              |
 | Robust Feature Set           | Offers parallel testing, detailed build reports, artifact management | Supports complex build and deployment processes             |
 
-<Callout icon="lightbulb">
-  Incorporate terms like "Jenkins CI/CD," "Jenkins automation," and "Jenkins pipeline" in your metadata and headings to improve search rankings.
-</Callout>
+> **lightbulb** Incorporate terms like "Jenkins CI/CD," "Jenkins automation," and "Jenkins pipeline" in your metadata and headings to improve search rankings.
 
 ## Challenges of Jenkins
 
@@ -80,9 +70,7 @@ Despite its many strengths, Jenkins presents some challenges:
 * **Self-hosting Requirements:**\
   Unlike cloud-based CI/CD solutions like [GitHub Actions](https://learn.kodekloud.com/user/courses/github-actions) or [GitLab CI/CD](https://learn.kodekloud.com/user/courses/gitlab-ci-cd-architecting-deploying-and-optimizing-pipelines), Jenkins requires users to install, configure, and maintain the server environment.
 
-<Frame>
-  ![The image presents a comparison of pros and cons, with the pros including features like being open source and customizable, and the cons highlighting issues like a steeper learning curve and security concerns.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879474/notes-assets/images/Jenkins-For-Beginners-Introduction-to-Jenkins/pros-cons-comparison-open-source.jpg)
-</Frame>
+![The image presents a comparison of pros and cons, with the pros including features like being open source and customizable, and the cons highlighting issues like a steeper learning curve and security concerns.](https://kodekloud.com/kk-media/image/upload/v1752879474/notes-assets/images/Jenkins-For-Beginners-Introduction-to-Jenkins/pros-cons-comparison-open-source.jpg)
 
 ## Conclusion
 
@@ -97,6 +85,4 @@ For further resources, check out the following references:
 
 Enhance your CI/CD pipeline with Jenkins to achieve more efficient, automated software deliveries. Happy automating!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/d923e9ad-da6b-4f99-85ce-a148e17c27d2/lesson/f279bd95-d2d0-4e42-bed0-adbbf25e056d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/d923e9ad-da6b-4f99-85ce-a148e17c27d2/lesson/f279bd95-d2d0-4e42-bed0-adbbf25e056d)

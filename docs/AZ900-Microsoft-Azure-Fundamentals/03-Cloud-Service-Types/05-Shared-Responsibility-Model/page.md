@@ -30,7 +30,7 @@ In the SaaS model, the cloud provider assumes nearly all responsibilities such a
 
 The chart below summarizes how responsibilities are distributed across these different service models:
 
-![The image is a chart illustrating a shared responsibility model, showing how responsibilities are divided between Bella Innovation and a cloud provider across different service types (SaaS, PaaS, IaaS, On-Premises). It categorizes responsibilities into those always owned by Bella Innovation, those that vary by type, and those transferred to the cloud provider.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868246/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Shared-Responsibility-Model/shared-responsibility-model-chart.jpg)
+![The image is a chart illustrating a shared responsibility model, showing how responsibilities are divided between Bella Innovation and a cloud provider across different service types (SaaS, PaaS, IaaS, On-Premises). It categorizes responsibilities into those always owned by Bella Innovation, those that vary by type, and those transferred to the cloud provider.](https://kodekloud.com/kk-media/image/upload/v1752868246/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Shared-Responsibility-Model/shared-responsibility-model-chart.jpg)
 
 In on-premises deployments, Bella Innovation controls the physical data center, networking, and servers. In contrast, these elements become managed by the cloud provider when adopting cloud services.
 
@@ -56,7 +56,7 @@ A clear comparison between these models highlights the trade-offs involved:
 
 The comparison chart below illustrates the core features and examples for IaaS, PaaS, and SaaS:
 
-![The image is a comparison chart of IaaS, PaaS, and SaaS, highlighting their core features and examples. It describes the flexibility, management, and payment models associated with each service type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868248/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Shared-Responsibility-Model/iaas-paas-saas-comparison-chart.jpg)
+![The image is a comparison chart of IaaS, PaaS, and SaaS, highlighting their core features and examples. It describes the flexibility, management, and payment models associated with each service type.](https://kodekloud.com/kk-media/image/upload/v1752868248/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Shared-Responsibility-Model/iaas-paas-saas-comparison-chart.jpg)
 
 ## Conclusion
 

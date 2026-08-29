@@ -14,9 +14,7 @@ We will cover three related topics, step by step:
 
 Each section contains configuration examples, verification commands, and recommended checks to confirm correct behavior.
 
-<Callout icon="lightbulb">
-  Ensure you have cluster admin access and a working Cilium installation. If you haven't installed Cilium yet, see the Cilium docs: [https://docs.cilium.io/](https://docs.cilium.io/).
-</Callout>
+> **lightbulb** Ensure you have cluster admin access and a working Cilium installation. If you haven't installed Cilium yet, see the Cilium docs: [https://docs.cilium.io/](https://docs.cilium.io/).
 
 ## At-a-glance: What you'll accomplish
 

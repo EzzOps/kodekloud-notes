@@ -36,9 +36,7 @@ Links and references
 * [Homebrew Documentation](https://brew.sh/)
 * [Chocolatey Documentation](https://chocolatey.org/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/0de43784-b08d-4ce0-8470-a7541b78fe58/lesson/1b1f4be9-32f7-441a-ae68-f5dd0e0a9c6f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/0de43784-b08d-4ce0-8470-a7541b78fe58/lesson/1b1f4be9-32f7-441a-ae68-f5dd0e0a9c6f)
 
 
 # Nginx Overview
@@ -49,9 +47,7 @@ Concise guide to NGINX configuration structure, key directives, server blocks, c
 
 This guide gives a concise, practical overview of NGINX configuration and the structure of the primary configuration file, `nginx.conf`. It explains the typical file layout, key configuration blocks, example snippets, and common commands you’ll use when managing NGINX. This is ideal for beginners and engineers who need a quick reference while editing configs.
 
-<Callout icon="lightbulb">
-  On most Linux distributions `nginx.conf` lives at `/etc/nginx/nginx.conf`. You can confirm this with `nginx -V` which prints the configured paths.
-</Callout>
+> **lightbulb** On most Linux distributions `nginx.conf` lives at `/etc/nginx/nginx.conf`. You can confirm this with `nginx -V` which prints the configured paths.
 
 You’ll typically see this high-level structure in `nginx.conf`:
 
@@ -199,9 +195,7 @@ Use the following commands when managing or troubleshooting NGINX:
 
 Always validate configuration before reloading:
 
-<Callout icon="lightbulb">
-  Run `nginx -t` (or `sudo nginx -t`) after edits to verify syntax and detect errors before reloading or restarting NGINX.
-</Callout>
+> **lightbulb** Run `nginx -t` (or `sudo nginx -t`) after edits to verify syntax and detect errors before reloading or restarting NGINX.
 
 Example syntax check output:
 
@@ -224,6 +218,4 @@ Reload vs restart:
 
 That wraps up this concise overview of NGINX configuration structure and common operations.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/0de43784-b08d-4ce0-8470-a7541b78fe58/lesson/7b0d11fb-1a0d-4765-a49d-8b9ec4d97b11" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/0de43784-b08d-4ce0-8470-a7541b78fe58/lesson/7b0d11fb-1a0d-4765-a49d-8b9ec4d97b11)

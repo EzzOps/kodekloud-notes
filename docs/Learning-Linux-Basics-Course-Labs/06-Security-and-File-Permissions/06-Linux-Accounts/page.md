@@ -13,9 +13,7 @@ Security in Linux employs user and password-based authentication mechanisms to c
 * **SSH (Secure Shell):** Provides secure remote access over unsecured networks, with SSH hardening ensuring only authorized users can connect.
 * **SELinux:** Enforces security policies to isolate applications running on the same system.
 
-<Callout icon="lightbulb">
-  While numerous tools exist to secure a Linux system, this article focuses on basic access control, file ownership, and permissions.
-</Callout>
+> **lightbulb** While numerous tools exist to secure a Linux system, this article focuses on basic access control, file ownership, and permissions.
 
 ***
 
@@ -92,9 +90,7 @@ User accounts fall into different types:
 * **System Accounts:** Created during OS installation for software and services; typically have UIDs under 100 (or between 500 and 1000) and usually lack dedicated home directories.
 * **Service Accounts:** Similar to system accounts, these are created for specific services such as NGINX.
 
-<Frame>
-  ![The image illustrates Linux account structure, showing a user with username "michael," UID 1000, GID 1000, and associated groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881140/notes-assets/images/Learning-Linux-Basics-Course-Labs-Linux-Accounts/frame_220.jpg)
-</Frame>
+![The image illustrates Linux account structure, showing a user with username "michael," UID 1000, GID 1000, and associated groups.](https://kodekloud.com/kk-media/image/upload/v1752881140/notes-assets/images/Learning-Linux-Basics-Course-Labs-Linux-Accounts/frame_220.jpg)
 
 ***
 
@@ -133,9 +129,7 @@ The `sudo` command allows trusted users to execute administrative commands using
 
 The default `sudo` configuration is defined in the `/etc/sudoers` file, where administrators can configure specific privileges. For example, Bob may have full administrative rights while Sarah might be restricted to rebooting the system only.
 
-<Callout icon="triangle-alert">
-  When using `sudo`, ensure that only trusted users are granted access to prevent unauthorized system changes.
-</Callout>
+> **triangle-alert** When using `sudo`, ensure that only trusted users are granted access to prevent unauthorized system changes.
 
 A common security practice is to set the root account to a no-login shell:
 

@@ -62,13 +62,11 @@ Append:
 /dev/vdb1    /mybackups    xfs    defaults    0    2
 ```
 
-<Callout icon="lightbulb">
-  If you don’t plan to reboot immediately, apply the new mounts with:
+> **lightbulb** If you don’t plan to reboot immediately, apply the new mounts with:
 
   ```bash theme={null}
   sudo mount -a
   ```
-</Callout>
 
 ### 2.4 Verify and Reboot
 
@@ -149,9 +147,7 @@ UUID=9ab8cfa5-2813-4b70-ada0-7abd0ad9d289    /mybackups    xfs    defaults    0 
 * [Linux Swap – ArchWiki](https://wiki.archlinux.org/title/Swap)
 * [blkid(8) Manual](https://man7.org/linux/man-pages/man8/blkid.8.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/5c4b052f-b036-43ee-af83-f7cfc6fe73f9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/5c4b052f-b036-43ee-af83-f7cfc6fe73f9)
 
 
 # Control Mounting and Unmounting of Filesystems Part 1 Mount on demand
@@ -171,9 +167,7 @@ In this lesson, you’ll learn how to optimize Linux system performance by mount
 
 Consider a rarely used directory such as `/backups`. With on-demand mounting, nothing is mounted at boot or during idle periods. As soon as an application or user reads or writes `/backups`, the OS mounts the remote share automatically:
 
-<Frame>
-  ![The image illustrates a diagram of "On Demand Mounting," showing multiple "/backups/" folders connected to a central fileserver.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881374/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Control-Mounting-and-Unmounting-of-Filesystems-Part-1-Mount-on-demand/on-demand-mounting-backups-diagram.jpg)
-</Frame>
+![The image illustrates a diagram of "On Demand Mounting," showing multiple "/backups/" folders connected to a central fileserver.](https://kodekloud.com/kk-media/image/upload/v1752881374/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Control-Mounting-and-Unmounting-of-Filesystems-Part-1-Mount-on-demand/on-demand-mounting-backups-diagram.jpg)
 
 ## Prerequisites
 
@@ -192,9 +186,7 @@ sudo dnf install autofs
 sudo systemctl enable --now autofs.service
 ```
 
-<Callout icon="lightbulb">
-  If you’re using a different package manager such as `yum` or `apt`, adjust the install command accordingly.
-</Callout>
+> **lightbulb** If you’re using a different package manager such as `yum` or `apt`, adjust the install command accordingly.
 
 ***
 

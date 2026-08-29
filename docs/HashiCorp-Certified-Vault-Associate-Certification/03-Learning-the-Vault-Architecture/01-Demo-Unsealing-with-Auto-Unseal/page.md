@@ -40,9 +40,7 @@ HA Enabled          true
 
 Vault is not yet initialized and uses the default Shamir seal.
 
-<Callout icon="lightbulb">
-  By default, Vault uses [Shamir’s Secret Sharing](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing) for unsealing. We’ll replace this with AWS KMS.
-</Callout>
+> **lightbulb** By default, Vault uses [Shamir’s Secret Sharing](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing) for unsealing. We’ll replace this with AWS KMS.
 
 ***
 
@@ -84,9 +82,7 @@ There’s no `seal` stanza yet—this is where we’ll plug in our AWS KMS confi
 
 1. In the AWS Console, go to **KMS → Customer managed keys** and copy your CMK ARN (for example: `arn:aws:kms:us-east-1:123456789012:key/abcd1234-5678-90ab-cdef-EXAMPLEKEY`).
 
-<Callout icon="triangle-alert">
-  Treat your KMS key ARN and Vault configuration file as sensitive information. Do *not* expose them in public repositories.
-</Callout>
+> **triangle-alert** Treat your KMS key ARN and Vault configuration file as sensitive information. Do *not* expose them in public repositories.
 
 2. Edit the Vault HCL:
 
@@ -260,6 +256,4 @@ Congratulations! You’ve successfully set up **Cloud Auto Unseal** with AWS KMS
 * [AWS KMS Customer Managed Keys](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html)
 * [Shamir’s Secret Sharing on Wikipedia](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/5ffd0124-fe78-4323-8e44-42841ed4fd23" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/5ffd0124-fe78-4323-8e44-42841ed4fd23)

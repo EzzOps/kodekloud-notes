@@ -132,7 +132,7 @@ steps:
 
 This configuration builds on commits to `master` or any `feature/*` branch **only** when files under `Properties/` change (ignoring Markdown updates).
 
-![The image shows an Azure DevOps Pipelines interface with a recently run pipeline for a project named "WeatherApp." The pipeline was set up for continuous integration and ran 20 minutes ago.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867902/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Build-Trigger-Rules/azure-devops-pipelines-weatherapp-integration.jpg)
+![The image shows an Azure DevOps Pipelines interface with a recently run pipeline for a project named "WeatherApp." The pipeline was set up for continuous integration and ran 20 minutes ago.](https://kodekloud.com/kk-media/image/upload/v1752867902/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Using-Build-Trigger-Rules/azure-devops-pipelines-weatherapp-integration.jpg)
 
 ## Example: Updating `launchsettings.json`
 

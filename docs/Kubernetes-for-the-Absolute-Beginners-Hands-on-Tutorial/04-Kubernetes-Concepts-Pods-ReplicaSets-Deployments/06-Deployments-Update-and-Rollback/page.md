@@ -10,9 +10,7 @@ When you create a deployment for the first time, Kubernetes automatically trigge
 
 For example, the diagram below illustrates a rollout with two revisions using different nginx versions (1.7.0 and 1.7.1):
 
-<Frame>
-  ![The image illustrates rollout and versioning with two revisions of nginx versions 1.7.0 and 1.7.1, each represented by icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884854/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Deployments-Update-and-Rollback/frame_40.jpg)
-</Frame>
+![The image illustrates rollout and versioning with two revisions of nginx versions 1.7.0 and 1.7.1, each represented by icons.](https://kodekloud.com/kk-media/image/upload/v1752884854/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Deployments-Update-and-Rollback/frame_40.jpg)
 
 To check the status of a rollout, execute the following command:
 
@@ -46,22 +44,16 @@ There are two primary deployment strategies in Kubernetes:
 
    The following diagram demonstrates the recreate strategy:
 
-<Frame>
-  ![The image illustrates a deployment strategy, showing the transition from nginx version 1.7.0 to 1.7.1, with red arrows indicating removal and green arrows indicating deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884855/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Deployments-Update-and-Rollback/frame_100.jpg)
-</Frame>
+![The image illustrates a deployment strategy, showing the transition from nginx version 1.7.0 to 1.7.1, with red arrows indicating removal and green arrows indicating deployment.](https://kodekloud.com/kk-media/image/upload/v1752884855/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Deployments-Update-and-Rollback/frame_100.jpg)
 
 2. **Rolling Update Strategy:**\
    Here, the new version gradually replaces the old version without impacting application availability. Kubernetes incrementally scales up the new pods while scaling down the old ones. The diagram below depicts this seamless transition:
 
-<Frame>
-  ![The image illustrates a deployment strategy showing a transition from nginx version 1.7.0 to 1.7.1, with an application downtime indicated during the process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884856/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Deployments-Update-and-Rollback/frame_130.jpg)
-</Frame>
+![The image illustrates a deployment strategy showing a transition from nginx version 1.7.0 to 1.7.1, with an application downtime indicated during the process.](https://kodekloud.com/kk-media/image/upload/v1752884856/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Deployments-Update-and-Rollback/frame_130.jpg)
 
 If no strategy is specified, Kubernetes defaults to the rolling update strategy. The diagram below summarizes both "Recreate" and "Rolling Update" strategies:
 
-<Frame>
-  ![The image illustrates two deployment strategies, "Recreate" and "Rolling Update," showing the transition from nginx:1.7.0 to nginx:1.7.1, with application downtime in "Recreate."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884857/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Deployments-Update-and-Rollback/frame_150.jpg)
-</Frame>
+![The image illustrates two deployment strategies, "Recreate" and "Rolling Update," showing the transition from nginx:1.7.0 to nginx:1.7.1, with application downtime in "Recreate."](https://kodekloud.com/kk-media/image/upload/v1752884857/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Deployments-Update-and-Rollback/frame_150.jpg)
 
 ## Updating a Deployment
 
@@ -112,9 +104,7 @@ If you want to quickly update the container image without changing the rest of t
 kubectl set image deployment/myapp-deployment nginx-container=nginx:1.9.1
 ```
 
-<Callout icon="lightbulb">
-  Keep in mind that updating the image directly can lead to a mismatch with your deployment definition file. It is advisable to update and track changes consistently within your deployment YAML file.
-</Callout>
+> **lightbulb** Keep in mind that updating the image directly can lead to a mismatch with your deployment definition file. It is advisable to update and track changes consistently within your deployment YAML file.
 
 ## Inspecting Deployment Details
 
@@ -275,9 +265,7 @@ Events:
 
 When a deployment is created with multiple replicas (for example, five), Kubernetes automatically generates a ReplicaSet that manages pod creation. During an upgrade, a new ReplicaSet is created with the updated configuration while the old ReplicaSet gradually scales down. You can monitor these changes by listing the ReplicaSets:
 
-<Frame>
-  ![The image illustrates a Kubernetes deployment upgrade with two replica sets, each containing multiple pods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884859/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Deployments-Update-and-Rollback/frame_300.jpg)
-</Frame>
+![The image illustrates a Kubernetes deployment upgrade with two replica sets, each containing multiple pods.](https://kodekloud.com/kk-media/image/upload/v1752884859/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Deployments-Update-and-Rollback/frame_300.jpg)
 
 ## Rolling Back a Deployment
 
@@ -313,9 +301,7 @@ The confirmation message will confirm the rollback:
 deployment "myapp-deployment" rolled back
 ```
 
-<Callout icon="triangle-alert">
-  Always verify your ReplicaSet status after a rollback to ensure that the correct version is deployed and that the scale-up process is complete.
-</Callout>
+> **triangle-alert** Always verify your ReplicaSet status after a rollback to ensure that the correct version is deployed and that the scale-up process is complete.
 
 ## Summary of Essential Commands
 
@@ -334,6 +320,4 @@ These commands enable you to create, update, monitor, and roll back deployments 
 
 This concludes our article on updating and rolling back Kubernetes deployments. For more detailed documentation, refer to the official [Kubernetes Documentation](https://kubernetes.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/6d1acf21-63fc-4d68-97d5-e6392803c5e7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/6d1acf21-63fc-4d68-97d5-e6392803c5e7)

@@ -18,13 +18,13 @@ There are three primary deployment models in cloud computing:
 
 Cloud computing typically follows a client-server model. For example, when an HTTP request is sent for a managed database, the cloud infrastructure provisions the resource and returns the connection details. This pay-as-you-go approach ensures you only pay for the duration that you use the resource—once it is shut down, billing stops.
 
-![The image summarizes cloud computing, highlighting on-demand IT resources, deployment models (Cloud, On-Premises, Hybrid), client-server model, and pay-as-you-go access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861530/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Cloud-Computing/frame_90.jpg)
+![The image summarizes cloud computing, highlighting on-demand IT resources, deployment models (Cloud, On-Premises, Hybrid), client-server model, and pay-as-you-go access.](https://kodekloud.com/kk-media/image/upload/v1752861530/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Cloud-Computing/frame_90.jpg)
 
 ## What is AWS?
 
 Amazon Web Services (AWS), launched in 2006 with Amazon S3 as its first offering, is the pioneering large-scale cloud provider. AWS now offers over 300 services, with a free sign-up process and a pay-as-you-go pricing model for most services. Its popularity emerges from an extensive community, strong market presence, and continuous service expansion.
 
-![The image summarizes AWS, highlighting its launch in 2006, growth to 300+ services, free sign-up, and its large community and market presence.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861531/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Cloud-Computing/frame_120.jpg)
+![The image summarizes AWS, highlighting its launch in 2006, growth to 300+ services, free sign-up, and its large community and market presence.](https://kodekloud.com/kk-media/image/upload/v1752861531/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Cloud-Computing/frame_120.jpg)
 
 ## Benefits of Cloud Computing
 
@@ -38,7 +38,7 @@ Key benefits include:
 * **Increased Speed and Agility:** Accelerate deployment and operational agility by bypassing physical hardware constraints.
 * **Global Reach:** AWS's extensive network of data centers across various regions enables rapid global application deployment.
 
-![The image lists cloud computing benefits: variable expenses, reduced data center focus, capacity management, economies of scale, increased agility, and global reach.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861532/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Cloud-Computing/frame_240.jpg)
+![The image lists cloud computing benefits: variable expenses, reduced data center focus, capacity management, economies of scale, increased agility, and global reach.](https://kodekloud.com/kk-media/image/upload/v1752861532/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Cloud-Computing/frame_240.jpg)
 
 > **lightbulb** Cloud computing benefits not only reduce upfront financial investments but also allow organizations to adapt quickly to market changes.
 
@@ -50,7 +50,7 @@ AWS provides an attractive pricing structure starting with a comprehensive free 
 * **Reservations:** Reserve instances for one to three years at a discounted rate if long-term usage is predictable.
 * **Volume Discounts:** Enjoy cost reductions as your resource usage increases, with periodic price reductions across several services.
 
-![The image summarizes cloud economics, detailing Free Tier, On-Demand, and Reservations options for Amazon services, highlighting flexibility and contract durations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861533/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Cloud-Computing/frame_310.jpg)
+![The image summarizes cloud economics, detailing Free Tier, On-Demand, and Reservations options for Amazon services, highlighting flexibility and contract durations.](https://kodekloud.com/kk-media/image/upload/v1752861533/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Cloud-Computing/frame_310.jpg)
 
 ### AWS Pricing Models at a Glance
 

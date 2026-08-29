@@ -15,14 +15,14 @@ Imagine a past scenario where applications were deployed on physical servers wit
 
 Vertical scaling means enhancing a single server’s resources, whereas horizontal scaling means incorporating additional servers to manage increased load.
 
-![The image illustrates the concepts of horizontal and vertical scaling, showing two server units with CPU and memory resources, and arrows indicating scaling directions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869664/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Introduction-to-Autoscaling-2025-Updates/scaling-concepts-horizontal-vertical.jpg)
+![The image illustrates the concepts of horizontal and vertical scaling, showing two server units with CPU and memory resources, and arrows indicating scaling directions.](https://kodekloud.com/kk-media/image/upload/v1752869664/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Introduction-to-Autoscaling-2025-Updates/scaling-concepts-horizontal-vertical.jpg)
 
 Now, let’s see how these concepts apply to Kubernetes and containerized environments. Kubernetes is designed to dynamically scale containerized applications. Two primary scaling strategies in Kubernetes are:
 
 1. Scaling workloads – adding or removing containers (Pods) in the cluster.
 2. Scaling the underlying cluster infrastructure – adding or removing nodes (servers) in the cluster.
 
-![The image illustrates a concept of scaling workloads with orchestration, showing multiple user icons and container icons organized in two sections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869665/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Introduction-to-Autoscaling-2025-Updates/scaling-workloads-orchestration-diagram.jpg)
+![The image illustrates a concept of scaling workloads with orchestration, showing multiple user icons and container icons organized in two sections.](https://kodekloud.com/kk-media/image/upload/v1752869665/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Introduction-to-Autoscaling-2025-Updates/scaling-workloads-orchestration-diagram.jpg)
 
 To clarify:
 

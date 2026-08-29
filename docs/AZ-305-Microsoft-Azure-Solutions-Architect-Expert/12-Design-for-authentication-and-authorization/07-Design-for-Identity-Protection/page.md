@@ -36,7 +36,7 @@ There are two primary policy types in Azure Identity Protection:
 
 Below is an example diagram that summarizes these concepts:
 
-![The image is a flowchart illustrating the process of Azure Identity Protection, detailing steps for detecting and remediating identity-based risks. It includes user sign-in attempts, risk calculations, and policy criteria for login permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867201/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Identity-Protection/azure-identity-protection-flowchart.jpg)
+![The image is a flowchart illustrating the process of Azure Identity Protection, detailing steps for detecting and remediating identity-based risks. It includes user sign-in attempts, risk calculations, and policy criteria for login permissions.](https://kodekloud.com/kk-media/image/upload/v1752867201/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Identity-Protection/azure-identity-protection-flowchart.jpg)
 
 ### Examples of Risky Sign-In Behaviors
 
@@ -61,7 +61,7 @@ Before implementing Identity Protection, follow these best practices:
    * Configure user risk and sign-in risk policies.
    * Regularly review policy outcomes to investigate potential false positives.
 
-![The image outlines best practices for identity protection, including acquiring licenses, setting up policies, enabling self-remediation, implementing user risk policies, excluding certain users, and integrating with other systems.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867202/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Identity-Protection/identity-protection-best-practices.jpg)
+![The image outlines best practices for identity protection, including acquiring licenses, setting up policies, enabling self-remediation, implementing user risk policies, excluding certain users, and integrating with other systems.](https://kodekloud.com/kk-media/image/upload/v1752867202/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Identity-Protection/identity-protection-best-practices.jpg)
 
 3. **Self-Remediation Options:**\
    Configure sign-in risk policies to trigger self-remediation actions (e.g., enforcing MFA or prompting for a password change) for medium-risk events. For user risk policies where blocking is necessary, apply a higher threshold; allow self-remediation for medium-risk events.
@@ -83,7 +83,7 @@ When you access the Azure portal and navigate to Identity Protection, the dashbo
 * Trends detailing successful sign-ins with varying risk levels.
 * Options to configure user risk and sign-in risk policies directly.
 
-![The image shows the Microsoft Azure Identity Protection Overview dashboard, displaying information about user risk levels, risky sign-ins, and identity secure scores. It includes sections for tutorials, risk policies, and reports on risky users and sign-ins.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867204/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Identity-Protection/azure-identity-protection-dashboard.jpg)
+![The image shows the Microsoft Azure Identity Protection Overview dashboard, displaying information about user risk levels, risky sign-ins, and identity secure scores. It includes sections for tutorials, risk policies, and reports on risky users and sign-ins.](https://kodekloud.com/kk-media/image/upload/v1752867204/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Identity-Protection/azure-identity-protection-dashboard.jpg)
 
 For example, you can set a policy such as "if risk is medium or above, require a password change." Similarly, within Conditional Access, you can configure conditions to enforce MFA for high user risk levels or manage sign-in risks effectively. Here, the user risk policy assesses the likelihood of account compromise, while the sign-in risk policy evaluates the details of the individual sign-in attempts.
 

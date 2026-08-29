@@ -21,9 +21,7 @@ Core components in the OpenTelemetry metrics pipeline:
   <img alt="The image is a table describing the OpenTelemetry (OTel) metrics pipeline components and their roles. It includes components like MeterProvider, Meter, Instrument, Measurement, View, MetricReader, and MetricExporter, each with a specific function in the pipeline." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Exemplars are sampled measurement points that include trace/span identifiers or other context. They let you jump from an interesting metric value to the trace(s) that generated it—great for root-cause analysis and drill-down.
-</Callout>
+> **lightbulb** Exemplars are sampled measurement points that include trace/span identifiers or other context. They let you jump from an interesting metric value to the trace(s) that generated it—great for root-cause analysis and drill-down.
 
 ## MeterProvider and how it ties the pipeline together
 
@@ -37,9 +35,7 @@ Meters create Instruments (counters, histograms, up-down counters) which produce
 
 Best practice: use descriptive meter names (for example, library name + version) so metrics are properly attributed and easier to query in backends.
 
-<Callout icon="warning">
-  Avoid empty or vague meter names. The SDK may return a functional meter for an empty name (sometimes with a warning), but you'll lose important attribution metadata.
-</Callout>
+> **warning** Avoid empty or vague meter names. The SDK may return a functional meter for an empty name (sometimes with a warning), but you'll lose important attribution metadata.
 
 Example: creating meters with clear names
 

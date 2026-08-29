@@ -22,7 +22,7 @@ In this article, we explore the core components of Helm and examine how they wor
 
 The diagram below illustrates the overall Helm architecture, showcasing how the Helm CLI interacts with chart repositories to create and manage releases within your Kubernetes environment:
 
-![The image illustrates Helm components, showing the flow from an online chart repository to Helm CLI, and the management of releases and revisions within Kubernetes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878961/notes-assets/images/Helm-for-Beginners-Helm-Components/helm-components-chart-repository-diagram.jpg)
+![The image illustrates Helm components, showing the flow from an online chart repository to Helm CLI, and the management of releases and revisions within Kubernetes.](https://kodekloud.com/kk-media/image/upload/v1752878961/notes-assets/images/Helm-for-Beginners-Helm-Components/helm-components-chart-repository-diagram.jpg)
 
 ## Helm Charts and Templating
 

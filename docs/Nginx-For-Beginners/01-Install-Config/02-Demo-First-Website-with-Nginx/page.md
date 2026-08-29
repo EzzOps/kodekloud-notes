@@ -64,9 +64,7 @@ Resources:
 
 Summary: enable UFW, allow only the ports you need (and always allow SSH before enabling), and use NGINX as a reverse proxy to present backend applications on standard web ports (`80`/`443`) instead of opening many arbitrary ports.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/0de43784-b08d-4ce0-8470-a7541b78fe58/lesson/794628cb-4836-49d0-828f-6248c05f4b83" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/0de43784-b08d-4ce0-8470-a7541b78fe58/lesson/794628cb-4836-49d0-828f-6248c05f4b83)
 
 
 # Demo First Website with Nginx
@@ -165,9 +163,7 @@ Notes:
 * Do not use `listen 80 default_server;` in more than one server block — this causes a duplicate default server error.
 * Set `server_name` to the hostname you intend to serve (we'll test this with a Host header).
 
-<Callout icon="lightbulb">
-  Set `server_name` to the hostname you intend to serve (for example, `helloworld.com`). NGINX uses the `Host` header to select the matching server block; if no match is found, NGINX serves the first matching server block (often the default).
-</Callout>
+> **lightbulb** Set `server_name` to the hostname you intend to serve (for example, `helloworld.com`). NGINX uses the `Host` header to select the matching server block; if no match is found, NGINX serves the first matching server block (often the default).
 
 ## 4. Create the document root and index page
 

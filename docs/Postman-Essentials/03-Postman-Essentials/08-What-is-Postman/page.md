@@ -14,9 +14,7 @@ $ curl kodekloud.com/products
 
 While curl is effective for simple use cases, it quickly becomes cumbersome when you have to remember a specific command for each endpoint. This approach is not scalable when dealing with a large number of API endpoints.
 
-<Callout icon="lightbulb">
-  Postman offers a more efficient solution by automating and streamlining the process of sending HTTP requests and testing APIs. Its user-friendly graphical interface and powerful features make it a significant upgrade over curl for API management.
-</Callout>
+> **lightbulb** Postman offers a more efficient solution by automating and streamlining the process of sending HTTP requests and testing APIs. Its user-friendly graphical interface and powerful features make it a significant upgrade over curl for API management.
 
 ## Advantages of Using Postman
 
@@ -31,6 +29,4 @@ These features make Postman an indispensable tool for managing and testing APIs.
 
 Let's begin exploring how to use Postman effectively for API testing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/postman-essentials/module/0a8a02c7-cab8-4bd9-886e-c7570885146f/lesson/00ab1a77-2086-44f8-93a9-b34965c279c1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/postman-essentials/module/0a8a02c7-cab8-4bd9-886e-c7570885146f/lesson/00ab1a77-2086-44f8-93a9-b34965c279c1)

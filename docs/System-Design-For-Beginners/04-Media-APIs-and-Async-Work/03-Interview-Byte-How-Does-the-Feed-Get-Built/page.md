@@ -95,17 +95,13 @@ Why hybrid works
 * Operational complexity: batching, queue management, backpressure controls, and incremental rebuilds help but add system complexity.
 * Consistency & freshness: push gives faster visibility to followers; pull can show the absolute latest state without heavy replay.
 
-<Callout icon="lightbulb">
-  Interview tip: Describe both strategies and their trade‑offs (latency, cost, complexity). Recommend a hybrid solution and mention implementation details such as batching, message queues, rate limiting, and thresholds for offloading celebrity accounts to a pull model.
-</Callout>
+> **lightbulb** Interview tip: Describe both strategies and their trade‑offs (latency, cost, complexity). Recommend a hybrid solution and mention implementation details such as batching, message queues, rate limiting, and thresholds for offloading celebrity accounts to a pull model.
 
 References and further reading
 
 * \[System Design: Fan‑out patterns and tradeoffs] — discuss push vs pull strategies and mitigation options.
 * \[Designing data pipelines at scale] — guides on queues, batching, and idempotency for high‑fanout systems.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/02240fc4-695f-4112-9594-bb05cfc5ca73/lesson/fbca447b-063f-4920-af96-99ee020edc8d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/02240fc4-695f-4112-9594-bb05cfc5ca73/lesson/fbca447b-063f-4920-af96-99ee020edc8d)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/02240fc4-695f-4112-9594-bb05cfc5ca73/lesson/250f24b6-8363-4e27-8b26-33e6736e9a5e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/02240fc4-695f-4112-9594-bb05cfc5ca73/lesson/250f24b6-8363-4e27-8b26-33e6736e9a5e)

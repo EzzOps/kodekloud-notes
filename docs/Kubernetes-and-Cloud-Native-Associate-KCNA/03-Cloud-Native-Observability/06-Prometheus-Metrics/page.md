@@ -171,9 +171,7 @@ user1 in ~/prometheus-2.37.2.linux-amd64 took 1m52s
 ➜  sudo systemctl restart prometheus
 ```
 
-<Callout icon="lightbulb">
-  Remember to save your changes to prometheus.yaml and restart Prometheus to apply the new configuration.
-</Callout>
+> **lightbulb** Remember to save your changes to prometheus.yaml and restart Prometheus to apply the new configuration.
 
 ***
 
@@ -181,9 +179,7 @@ user1 in ~/prometheus-2.37.2.linux-amd64 took 1m52s
 
 After restarting Prometheus, open the Prometheus web UI and navigate to the “Status” -> “Targets” page. Here you can inspect all configured targets and their scrape status. Both the Prometheus target and the new node target should display an "UP" status for successful metric collection.
 
-<Frame>
-  ![The image shows a Prometheus monitoring dashboard displaying two active targets, "node" and "prometheus," both in an "UP" state with their respective endpoints and scrape details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880533/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Configuration/frame_480.jpg)
-</Frame>
+![The image shows a Prometheus monitoring dashboard displaying two active targets, "node" and "prometheus," both in an "UP" state with their respective endpoints and scrape details.](https://kodekloud.com/kk-media/image/upload/v1752880533/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Configuration/frame_480.jpg)
 
 You can further verify the configuration by executing queries such as:
 
@@ -198,9 +194,7 @@ A returned value of 1 confirms that the instances are active and functional.
 
 This article demonstrated how to modify your Prometheus configuration file to add new scrape targets and adjust parameters such as scrape interval, timeout, and metrics path. By following these steps, Prometheus can successfully collect metrics from both itself and external nodes running Node Exporters.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/70e17eea-7e9b-4f65-87a4-1cdb5631e0dc/lesson/932a11ff-da56-4759-99fe-8fe6e7c8e8d9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/70e17eea-7e9b-4f65-87a4-1cdb5631e0dc/lesson/932a11ff-da56-4759-99fe-8fe6e7c8e8d9)
 
 
 # Prometheus Metrics
@@ -249,13 +243,9 @@ Each line records the CPU time for a specific CPU and state, allowing deeper ins
 
 Every time Prometheus scrapes a target, it collects not only the metric value but also the timestamp—a Unix timestamp that records the number of seconds since January 1, 1970, UTC. This ensures that all measurements are accurately recorded in time.
 
-<Frame>
-  ![The image explains that Prometheus uses a Unix timestamp to store metric retrieval times, representing seconds since January 1, 1970, UTC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880534/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Metrics/frame_130.jpg)
-</Frame>
+![The image explains that Prometheus uses a Unix timestamp to store metric retrieval times, representing seconds since January 1, 1970, UTC.](https://kodekloud.com/kk-media/image/upload/v1752880534/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Metrics/frame_130.jpg)
 
-<Callout icon="lightbulb">
-  You can convert Unix timestamps to human-readable formats using various online tools, although most modern dashboarding tools perform this conversion automatically based on your local timezone.
-</Callout>
+> **lightbulb** You can convert Unix timestamps to human-readable formats using various online tools, although most modern dashboarding tools perform this conversion automatically based on your local timezone.
 
 ***
 

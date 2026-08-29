@@ -63,9 +63,7 @@ kubectl run --rm -i test-client --image=centos --namespace=kube-system --restart
 
 You should see a timeout.
 
-<Callout icon="triangle-alert">
-  Applying default-deny policies without specific allow rules can disrupt critical workloads. Always plan your policies carefully.
-</Callout>
+> **triangle-alert** Applying default-deny policies without specific allow rules can disrupt critical workloads. Always plan your policies carefully.
 
 ***
 
@@ -158,11 +156,9 @@ kubectl apply -f deny-ingress.yaml
 * [Understanding Kubernetes Networking](https://kubernetes.io/blog/2018/07/24/announcing-granular-networking-policy-support/)
 * [NetworkPolicy Examples](https://github.com/kubernetes/examples/tree/master/staging/networkpolicy)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/93daad7d-fdc9-49cb-b162-86b2efe14f72" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/93daad7d-fdc9-49cb-b162-86b2efe14f72)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/b1f38672-72af-445d-8fc9-6ede055cdd10" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/b1f38672-72af-445d-8fc9-6ede055cdd10)
 
 
 # Installing Cilium Overview
@@ -183,8 +179,6 @@ The [Cilium CLI][cilium-cli] is the go-to command-line utility for installing, m
 * Enable Hubble for deep observability
 * Install Cilium and addons
 
-<Frame>
-  ![The image shows a diagram titled "Installation Options and Components" with icons representing a management tool and various Cilium commands: status, connectivity test, hubble enable, and install.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880259/notes-assets/images/Kubernetes-Networking-Deep-Dive-Installing-Cilium-Overview/installation-options-components-diagram.jpg)
-</Frame>
+![The image shows a diagram titled "Installation Options and Components" with icons representing a management tool and various Cilium commands: status, connectivity test, hubble enable, and install.](https://kodekloud.com/kk-media/image/upload/v1752880259/notes-assets/images/Kubernetes-Networking-Deep-Dive-Installing-Cilium-Overview/installation-options-components-diagram.jpg)
 
 ```bash theme={null}

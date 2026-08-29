@@ -16,7 +16,7 @@ CloudFormation uses rollback triggers powered by CloudWatch alarms to monitor st
 
 Additionally, when using change sets, you can disable this automatic rollback to freeze the state for troubleshooting, or if you plan to rebuild the entire stack later.
 
-![The image shows a CloudFormation interface with a stack named "SaaS-Test" in a "ROLLBACK\_COMPLETE" status, and a dropdown menu with stack actions. A caption below explains that triggered alarms prompt CloudFormation to roll back changes to maintain stability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860237/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/cloudformation-saas-test-rollback.jpg)
+![The image shows a CloudFormation interface with a stack named "SaaS-Test" in a "ROLLBACK\_COMPLETE" status, and a dropdown menu with stack actions. A caption below explains that triggered alarms prompt CloudFormation to roll back changes to maintain stability.](https://kodekloud.com/kk-media/image/upload/v1752860237/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/cloudformation-saas-test-rollback.jpg)
 
 You can also define custom policies to determine how CloudFormation responds to triggers, providing further operational flexibility.
 
@@ -111,13 +111,13 @@ The drift detection process then compares the expected and actual configurations
 
 After initiating drift detection via the AWS console or CLI, CloudFormation alerts you to any discrepancies. This information enables you to decide whether to accept the drifted state or take corrective measures, such as stopping and relaunching the affected instance.
 
-![The image illustrates the concept of drift detection in network security, showing a person at a desk with a laptop and a large smartphone displaying a gear icon, alongside text explaining the prevention of security risks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860238/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/drift-detection-network-security-illustration.jpg)
+![The image illustrates the concept of drift detection in network security, showing a person at a desk with a laptop and a large smartphone displaying a gear icon, alongside text explaining the prevention of security risks.](https://kodekloud.com/kk-media/image/upload/v1752860238/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/drift-detection-network-security-illustration.jpg)
 
 If drift is detected—for example, if an EC2 instance changes from a T2 micro to a T2 nano—CloudFormation prompts you to decide whether to accept the changes or initiate corrective actions.
 
-![The image is a flowchart illustrating the drift detection process in CloudFormation. It shows steps from initiating drift detection to determining if resources match, leading to outcomes of either no drift detected or drift detected and flagged.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860239/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/drift-detection-cloudformation-flowchart.jpg)
+![The image is a flowchart illustrating the drift detection process in CloudFormation. It shows steps from initiating drift detection to determining if resources match, leading to outcomes of either no drift detected or drift detected and flagged.](https://kodekloud.com/kk-media/image/upload/v1752860239/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/drift-detection-cloudformation-flowchart.jpg)
 
-![The image illustrates a drift detection process involving an EC2 instance and a t2.nano instance, with a note about flagging deviations for corrective action.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860240/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/drift-detection-ec2-t2nano.jpg)
+![The image illustrates a drift detection process involving an EC2 instance and a t2.nano instance, with a note about flagging deviations for corrective action.](https://kodekloud.com/kk-media/image/upload/v1752860240/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/drift-detection-ec2-t2nano.jpg)
 
 ***
 
@@ -127,7 +127,7 @@ CloudFormation enables you to control the sequence in which resources are create
 
 Explicitly declaring dependencies avoids potential conflicts or errors that might arise when CloudFormation guesses the creation order. This is critical, especially in enterprise environments where resource creation order must follow strict policies.
 
-![The image explains CloudFormation dependency handling, highlighting two tools: "Ref" for referencing resources to indicate dependencies, and "DependsOn" for explicitly defining resource creation order.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860241/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/cloudformation-dependency-handling-tools.jpg)
+![The image explains CloudFormation dependency handling, highlighting two tools: "Ref" for referencing resources to indicate dependencies, and "DependsOn" for explicitly defining resource creation order.](https://kodekloud.com/kk-media/image/upload/v1752860241/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/cloudformation-dependency-handling-tools.jpg)
 
 ***
 
@@ -137,9 +137,9 @@ CloudFormation makes it possible to import existing resources into a new or exis
 
 For example, if you have manually created RDS instances, you can import them into CloudFormation. This process reads their configurations and integrates them into a template for easier management.
 
-![The image illustrates the process of importing resources into CloudFormation for Infrastructure as Code (IaC), showing a transition from individual resources to a stack for easier tracking and replication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860243/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/cloudformation-iac-resource-import-diagram.jpg)
+![The image illustrates the process of importing resources into CloudFormation for Infrastructure as Code (IaC), showing a transition from individual resources to a stack for easier tracking and replication.](https://kodekloud.com/kk-media/image/upload/v1752860243/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/cloudformation-iac-resource-import-diagram.jpg)
 
-![The image is a slide titled "Importing Resources – Transition to Infrastructure as Code," explaining that manually created RDS instances can be imported into CloudFormation to manage updates via IaC and minimize errors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860244/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/importing-resources-infrastructure-as-code.jpg)
+![The image is a slide titled "Importing Resources – Transition to Infrastructure as Code," explaining that manually created RDS instances can be imported into CloudFormation to manage updates via IaC and minimize errors.](https://kodekloud.com/kk-media/image/upload/v1752860244/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/importing-resources-infrastructure-as-code.jpg)
 
 ***
 
@@ -149,9 +149,9 @@ Nested stacks allow for the modularization of CloudFormation templates by splitt
 
 However, note that nested stacks must be stored in S3 and require broad permissions during creation. Also, an error in a parent stack could affect all nested stacks.
 
-![The image shows a diagram of a nested stack with three layers: Application Layer, Database Layer, and Network Layer. Below the diagram, there's a note stating that using a single large CloudFormation template is cumbersome and hard to maintain.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860244/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/nested-stack-diagram-cloudformation.jpg)
+![The image shows a diagram of a nested stack with three layers: Application Layer, Database Layer, and Network Layer. Below the diagram, there's a note stating that using a single large CloudFormation template is cumbersome and hard to maintain.](https://kodekloud.com/kk-media/image/upload/v1752860244/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/nested-stack-diagram-cloudformation.jpg)
 
-![The image shows a diagram of a cloud connected to multiple cubes, representing nested stacks, with a caption explaining that nested stacks reuse components like programming functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860245/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/cloud-nested-stacks-diagram.jpg)
+![The image shows a diagram of a cloud connected to multiple cubes, representing nested stacks, with a caption explaining that nested stacks reuse components like programming functions.](https://kodekloud.com/kk-media/image/upload/v1752860245/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/cloud-nested-stacks-diagram.jpg)
 
 Outputs from nested stacks can be shared via cross-stack references, allowing one stack to export a value (such as a subnet ID) that another stack can import.
 
@@ -189,7 +189,7 @@ Resources:
 
 In this example, the export in one stack is referenced by the import in another, with the network stack name provided as a parameter.
 
-![The image illustrates a diagram of cross-stack references, showing how resources are shared efficiently between VPC, IAM, and EC2 stacks using export and import functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860246/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/cross-stack-references-diagram.jpg)
+![The image illustrates a diagram of cross-stack references, showing how resources are shared efficiently between VPC, IAM, and EC2 stacks using export and import functions.](https://kodekloud.com/kk-media/image/upload/v1752860246/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/cross-stack-references-diagram.jpg)
 
 ***
 
@@ -203,7 +203,7 @@ There are several tools available to test your CloudFormation templates and ensu
 
 > **lightbulb** TaskCat is not part of exam materials; however, CFN Lint and CloudFormation Guard are widely recognized for their effectiveness.
 
-![The image is about CloudFormation Testing, featuring two tools: Cfn-lint and CloudFormation Guard. Cfn-lint is described with features like testing YAML/JSON templates and creating rules for best practices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860248/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/cloudformation-testing-cfn-lint-guard.jpg)
+![The image is about CloudFormation Testing, featuring two tools: Cfn-lint and CloudFormation Guard. Cfn-lint is described with features like testing YAML/JSON templates and creating rules for best practices.](https://kodekloud.com/kk-media/image/upload/v1752860248/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/cloudformation-testing-cfn-lint-guard.jpg)
 
 ***
 
@@ -213,9 +213,9 @@ Integrating CloudFormation with CI/CD pipelines can enhance your deployment proc
 
 This practice ensures version control, automated deployments, and consistency across environments while facilitating rapid iteration during development.
 
-![The image illustrates a CI/CD pipeline using AWS services, including CodeCommit, CodePipeline, CodeBuild, and CloudFormation. It shows the flow from code commit to deployment using these AWS tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860249/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/ci-cd-pipeline-aws-services.jpg)
+![The image illustrates a CI/CD pipeline using AWS services, including CodeCommit, CodePipeline, CodeBuild, and CloudFormation. It shows the flow from code commit to deployment using these AWS tools.](https://kodekloud.com/kk-media/image/upload/v1752860249/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/ci-cd-pipeline-aws-services.jpg)
 
-![The image outlines the benefits of using a CI/CD with CloudFormation template, highlighting version control, automated deployments, consistency, and rapid iteration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860250/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/ci-cd-cloudformation-benefits.jpg)
+![The image outlines the benefits of using a CI/CD with CloudFormation template, highlighting version control, automated deployments, consistency, and rapid iteration.](https://kodekloud.com/kk-media/image/upload/v1752860250/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Advanced-Automation-Features-of-CloudFormation/ci-cd-cloudformation-benefits.jpg)
 
 ***
 

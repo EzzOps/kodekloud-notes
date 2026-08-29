@@ -18,7 +18,7 @@ A Build Agent executes each stage of your CI/CD pipeline:
 
 > **lightbulb** Automating these steps ensures consistent, repeatable deployments and reduces manual overhead.
 
-![The image is a flowchart illustrating a build pipeline process, showing the sequence from starting the pipeline to creating a container image using pipeline jobs and artifacts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867897/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Build-Agents-and-Parallelism/build-pipeline-flowchart-container-image.jpg)
+![The image is a flowchart illustrating a build pipeline process, showing the sequence from starting the pipeline to creating a container image using pipeline jobs and artifacts.](https://kodekloud.com/kk-media/image/upload/v1752867897/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Build-Agents-and-Parallelism/build-pipeline-flowchart-container-image.jpg)
 
 ## Core Functions of a Build Agent
 
@@ -41,7 +41,7 @@ Choose the right agent type based on your control, cost, and compliance needs:
 | Hosted Agent      | Microsoft-managed with preinstalled tools and OS images | Quick start, no infrastructure overhead                         |
 | Self-Hosted Agent | Customer-managed on VMs or on-prem servers              | Custom dependencies, specific network access, cost optimization |
 
-![The image is a diagram showing the types of build agents, illustrating the deployment of self-hosted agents using an Azure Pipeline and AKS Cluster, with three agents running pipelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867898/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Build-Agents-and-Parallelism/build-agents-azure-pipeline-aks-diagram.jpg)
+![The image is a diagram showing the types of build agents, illustrating the deployment of self-hosted agents using an Azure Pipeline and AKS Cluster, with three agents running pipelines.](https://kodekloud.com/kk-media/image/upload/v1752867898/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Build-Agents-and-Parallelism/build-agents-azure-pipeline-aks-diagram.jpg)
 
 ## Configuring Build Agents
 
@@ -52,7 +52,7 @@ Choose the right agent type based on your control, cost, and compliance needs:
 3. Assign Permissions\
    Configure pool security to restrict who can queue pipelines or manage agents.
 
-![The image is a presentation slide about configuring build agents, showing a menu from Azure DevOps with a focus on "Agent pools" and a list of agent pool names. It also includes a color-coded list of topics: basic setup steps, agent pools, and managing agent versions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867899/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Build-Agents-and-Parallelism/azure-devops-build-agents-presentation.jpg)
+![The image is a presentation slide about configuring build agents, showing a menu from Azure DevOps with a focus on "Agent pools" and a list of agent pool names. It also includes a color-coded list of topics: basic setup steps, agent pools, and managing agent versions.](https://kodekloud.com/kk-media/image/upload/v1752867899/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Build-Agents-and-Parallelism/azure-devops-build-agents-presentation.jpg)
 
 ## Enabling Parallelism
 
@@ -61,7 +61,7 @@ Parallel jobs run multiple pipeline stages or tasks at the same time, cutting do
 * **Sequential**: A → B → C
 * **Parallel**: A, B, and C run concurrently
 
-![The image is a flowchart illustrating the benefits of parallelism in Azure Pipelines, showing stages like "Starting point," "Stage Component A/B/C," "Produce artifacts," and "Deploy application," with a skipped "Rolling back" stage. It highlights reduced execution time for CI/CD processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867900/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Build-Agents-and-Parallelism/azure-pipelines-parallelism-flowchart.jpg)
+![The image is a flowchart illustrating the benefits of parallelism in Azure Pipelines, showing stages like "Starting point," "Stage Component A/B/C," "Produce artifacts," and "Deploy application," with a skipped "Rolling back" stage. It highlights reduced execution time for CI/CD processes.](https://kodekloud.com/kk-media/image/upload/v1752867900/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Build-Agents-and-Parallelism/azure-pipelines-parallelism-flowchart.jpg)
 
 > **triangle-alert** Check your Azure DevOps plan for the number of parallel jobs included. Exceeding this limit will queue additional jobs and delay execution.
 
@@ -95,7 +95,7 @@ Continuous improvement is key:
 * **Review and Refine**\
   Regularly audit pipeline definitions, update agent versions, and tweak parallel strategies based on data.
 
-![The image is a slide titled "Optimizing Build Agents and Parallelism," featuring three colored boxes labeled "Monitoring and scaling," "Efficient resource allocation," and "Continuous improvement."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867901/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Build-Agents-and-Parallelism/optimizing-build-agents-parallelism-slide.jpg)
+![The image is a slide titled "Optimizing Build Agents and Parallelism," featuring three colored boxes labeled "Monitoring and scaling," "Efficient resource allocation," and "Continuous improvement."](https://kodekloud.com/kk-media/image/upload/v1752867901/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Build-Agents-and-Parallelism/optimizing-build-agents-parallelism-slide.jpg)
 
 ## Links and References
 

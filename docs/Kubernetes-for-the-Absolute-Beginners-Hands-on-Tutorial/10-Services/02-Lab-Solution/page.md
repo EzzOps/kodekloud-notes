@@ -131,15 +131,11 @@ Endpoints are essential for troubleshooting. If the service's selector does not 
 
 Here are two diagrams provided for visualization:
 
-<Frame>
-  ![The image shows a simple hierarchical diagram with a triangle connected to three circles, labeled "app: FE" and "app: fr" on the side.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884965/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Lab-Solution/frame_220.jpg)
-</Frame>
+![The image shows a simple hierarchical diagram with a triangle connected to three circles, labeled "app: FE" and "app: fr" on the side.](https://kodekloud.com/kk-media/image/upload/v1752884965/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Lab-Solution/frame_220.jpg)
 
 If additional pods inadvertently match the service selector, the endpoints list will expand, potentially impacting traffic routing:
 
-<Frame>
-  ![The image depicts a diagram with a triangle connected to four circles, labeled "app: FE" and "app: fr," possibly representing a network or system architecture.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884966/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Lab-Solution/frame_290.jpg)
-</Frame>
+![The image depicts a diagram with a triangle connected to four circles, labeled "app: FE" and "app: fr," possibly representing a network or system architecture.](https://kodekloud.com/kk-media/image/upload/v1752884966/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Lab-Solution/frame_290.jpg)
 
 In our lab scenario, the Kubernetes service has just one endpoint:
 
@@ -270,9 +266,7 @@ Events:
   Normal  ScalingReplicaSet   63s   deployment-controller      Scaled up replica set simple-webapp-deployment-7b59598d59 to 4
 ```
 
-<Callout icon="triangle-alert">
-  Since no service is exposing the deployment, the web application is not accessible.
-</Callout>
+> **triangle-alert** Since no service is exposing the deployment, the web application is not accessible.
 
 To resolve this, create a new service using a YAML configuration file.
 
@@ -280,9 +274,7 @@ To resolve this, create a new service using a YAML configuration file.
 
 Below is an example YAML configuration file that defines a Kubernetes service to expose the web application:
 
-<Frame>
-  ![The image shows a terminal interface and instructions for creating a Kubernetes service using a YAML file, specifying details like name, type, ports, and selector.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884967/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Lab-Solution/frame_440.jpg)
-</Frame>
+![The image shows a terminal interface and instructions for creating a Kubernetes service using a YAML file, specifying details like name, type, ports, and selector.](https://kodekloud.com/kk-media/image/upload/v1752884967/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Lab-Solution/frame_440.jpg)
 
 The service YAML template is as follows:
 
@@ -375,6 +367,4 @@ kubectl expose pod nginx --type=NodePort --port=80 --name=nginx-service --dry-ru
 
 This concludes the lab walkthrough. By following these steps, you have learned how to manage services and deployments in Kubernetes effectively.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/7e491918-c5e6-47e3-b4b2-54e6e311292c/lesson/be5b2d6a-1ab3-426b-824c-fc16756121be" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/7e491918-c5e6-47e3-b4b2-54e6e311292c/lesson/be5b2d6a-1ab3-426b-824c-fc16756121be)

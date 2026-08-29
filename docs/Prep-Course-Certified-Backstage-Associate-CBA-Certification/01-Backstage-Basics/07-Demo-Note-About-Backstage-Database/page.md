@@ -44,9 +44,7 @@ Recommended steps to enable persistent storage
 3. Run the backend database migrations (follow the Backstage docs).
 4. Restart the Backstage backend. Entities added in the UI will now persist across restarts.
 
-<Callout icon="lightbulb">
-  If your components or services disappear after restarting the backend, you are almost certainly running with the default local/development database (in-memory or SQLite). For the rest of this course we keep the transient setup to simplify demos. When you need persistence, follow the Postgres configuration and migration steps in the [Backstage documentation](https://backstage.io/docs/).
-</Callout>
+> **lightbulb** If your components or services disappear after restarting the backend, you are almost certainly running with the default local/development database (in-memory or SQLite). For the rest of this course we keep the transient setup to simplify demos. When you need persistence, follow the Postgres configuration and migration steps in the [Backstage documentation](https://backstage.io/docs/).
 
 From a teaching perspective, the transient dev database is useful because it gives a clean slate each session and avoids stale test data. If you'd like persistent state during development without provisioning a remote database, run a local PostgreSQL (for example via Docker) and point Backstage at it using the configuration above.
 
@@ -55,6 +53,4 @@ Further resources
 * Backstage docs: [https://backstage.io/docs/](https://backstage.io/docs/)
 * PostgreSQL: [https://www.postgresql.org/](https://www.postgresql.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/fcbbf923-69c3-4147-bd51-18db2bd18957/lesson/635dfd83-bc8b-439e-a272-31dfd777686d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/fcbbf923-69c3-4147-bd51-18db2bd18957/lesson/635dfd83-bc8b-439e-a272-31dfd777686d)

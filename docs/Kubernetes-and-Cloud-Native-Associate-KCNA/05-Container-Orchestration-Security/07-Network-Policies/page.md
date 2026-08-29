@@ -25,13 +25,9 @@ This example distinguishes between two traffic types:
 * **Ingress traffic:** Incoming flows to a component (e.g., user requests reaching the web server).
 * **Egress traffic:** Outgoing flows from a component (e.g., the web server requesting data from the API server).
 
-<Callout icon="lightbulb">
-  When defining ingress and egress rules, only the originating direction of traffic is considered. Response traffic, often illustrated by dotted arrows, is typically not included in the initial rule definition.
-</Callout>
+> **lightbulb** When defining ingress and egress rules, only the originating direction of traffic is considered. Response traffic, often illustrated by dotted arrows, is typically not included in the initial rule definition.
 
-<Frame>
-  ![The image illustrates network traffic flow, showing ingress and egress points with ports 80, 5000, and 3306, connecting a user, API, and database.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880595/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Network-Policies/frame_80.jpg)
-</Frame>
+![The image illustrates network traffic flow, showing ingress and egress points with ports 80, 5000, and 3306, connecting a user, API, and database.](https://kodekloud.com/kk-media/image/upload/v1752880595/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Network-Policies/frame_80.jpg)
 
 ### Traffic Requirements for Each Component
 
@@ -52,9 +48,7 @@ In Kubernetes, clusters are built from nodes that host pods and services, each w
 
 By default, Kubernetes employs an "all-allow" rule which enables unrestricted communication among pods and services.
 
-<Frame>
-  ![The image illustrates a network security concept labeled "All Allow," showing interconnected nodes and shapes within a cloud, representing unrestricted communication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880595/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Network-Policies/frame_210.jpg)
-</Frame>
+![The image illustrates a network security concept labeled "All Allow," showing interconnected nodes and shapes within a cloud, representing unrestricted communication.](https://kodekloud.com/kk-media/image/upload/v1752880595/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Network-Policies/frame_210.jpg)
 
 ## Applying Network Policies in Kubernetes
 
@@ -70,15 +64,11 @@ Even though all three pods can communicate freely by default, you might want to 
 
 A network policy is a Kubernetes object similar to pods, ReplicaSets, and services. It uses labels and selectors to determine which pods the policy applies to. For instance, to secure the database server (DB pod), you can create a policy that allows ingress traffic only from the API pod on port 3306.
 
-<Frame>
-  ![The image illustrates a network policy diagram showing connections between a user, Web Pod, API Pod, and DB Pod with specific ports and policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880596/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Network-Policies/frame_290.jpg)
-</Frame>
+![The image illustrates a network policy diagram showing connections between a user, Web Pod, API Pod, and DB Pod with specific ports and policies.](https://kodekloud.com/kk-media/image/upload/v1752880596/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Network-Policies/frame_290.jpg)
 
 Once a network policy is enforced, it blocks all traffic that does not match the defined rules. Importantly, the policy affects only the pods to which it is applied.
 
-<Frame>
-  ![The image illustrates a network policy allowing ingress traffic from an API pod to a database pod on port 3306.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880598/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Network-Policies/frame_310.jpg)
-</Frame>
+![The image illustrates a network policy allowing ingress traffic from an API pod to a database pod on port 3306.](https://kodekloud.com/kk-media/image/upload/v1752880598/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Network-Policies/frame_310.jpg)
 
 ## Creating a Network Policy
 
@@ -134,16 +124,10 @@ In this example, only ingress traffic is managed by the policy. All egress traff
 
 Deploy the network policy using the `kubectl create` command. Keep in mind that enforcement of network policies depends on the networking solution deployed in your Kubernetes cluster. Not all solutions offer support. Supported solutions include kube-router, Calico, Romana, and Weave Net, whereas solutions like Flannel do not support network policies.
 
-<Frame>
-  ![The image lists network solutions: Kube-router, Calico, Romana, and Weave-net support network policies, while Flannel does not.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880598/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Network-Policies/frame_460.jpg)
-</Frame>
+![The image lists network solutions: Kube-router, Calico, Romana, and Weave-net support network policies, while Flannel does not.](https://kodekloud.com/kk-media/image/upload/v1752880598/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Network-Policies/frame_460.jpg)
 
-<Callout icon="triangle-alert">
-  Even if a cluster is configured with a networking solution that doesn't support network policies, you can still create them. However, they won't be enforced, and no error message will indicate this limitation.
-</Callout>
+> **triangle-alert** Even if a cluster is configured with a networking solution that doesn't support network policies, you can still create them. However, they won't be enforced, and no error message will indicate this limitation.
 
 That concludes our comprehensive overview of network policies in Kubernetes. With this knowledge, you can now secure your cluster by carefully defining and applying policies that control pod-to-pod communication.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/56ee2e65-fe17-4ba7-a794-40ef2c9b1d62" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/56ee2e65-fe17-4ba7-a794-40ef2c9b1d62)

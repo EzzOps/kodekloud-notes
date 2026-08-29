@@ -87,9 +87,7 @@ Quick reference: common fault types
 | Delay      | Adds latency to selected requests (e.g. `fixedDelay: 5s`) | Simulate slow downstream services or network latency |
 | Abort      | Returns an HTTP error (e.g. `httpStatus: 500`)            | Simulate service failures or server errors           |
 
-<Callout icon="warning">
-  Do not apply fault injections in production clusters or against production services unless you have explicit permission and proper safeguards. Fault injection will deliberately break or delay traffic.
-</Callout>
+> **warning** Do not apply fault injections in production clusters or against production services unless you have explicit permission and proper safeguards. Fault injection will deliberately break or delay traffic.
 
 7. Inject a fixed 5s delay for 100% of traffic
 
@@ -258,9 +256,7 @@ http:
 
 This injects a 7s delay only for requests where `end-user: jason` is present.
 
-<Callout icon="lightbulb">
-  Fault injection in Istio is configured on VirtualService resources. Circuit-breaking and connection-level controls belong in DestinationRule resources — make sure to use the correct resource for each purpose.
-</Callout>
+> **lightbulb** Fault injection in Istio is configured on VirtualService resources. Circuit-breaking and connection-level controls belong in DestinationRule resources — make sure to use the correct resource for each purpose.
 
 11. References and next steps
 
@@ -268,11 +264,9 @@ This injects a 7s delay only for requests where `end-user: jason` is present.
 * Fault injection task guide: [https://istio.io/latest/docs/tasks/traffic-management/fault-injection/](https://istio.io/latest/docs/tasks/traffic-management/fault-injection/)
 * Next steps: configure client-side retries and timeouts in Istio to make your clients resilient to transient faults.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/3216232f-aca0-45ff-812a-35b9253cb0b4" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/3216232f-aca0-45ff-812a-35b9253cb0b4)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/4b560f64-c293-4ed4-8c86-497a50ef68df" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/4b560f64-c293-4ed4-8c86-497a50ef68df)
 
 
 # Demo Request Timeouts Retries

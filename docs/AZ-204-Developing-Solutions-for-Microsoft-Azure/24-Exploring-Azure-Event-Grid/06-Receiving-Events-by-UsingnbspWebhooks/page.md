@@ -26,7 +26,7 @@ Azure Automation Accounts can be configured to use webhooks for automatically ex
 
 Azure Functions adopt a serverless paradigm that allows them to be directly triggered by events from Event Grid. This lightweight, event-driven compute model is perfect for tasks that require immediate processing of events without managing underlying infrastructure. Azure Functions automatically scale based on the event load, optimizing resource usage and reducing operational overhead.
 
-![The image lists three Azure services: Azure Logic Apps with Event Grid Connector, Azure Automation via Webhook, and Azure Functions with Event Grid Trigger.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866488/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Receiving-Events-by-UsingnbspWebhooks/azure-logic-apps-automation-functions.jpg)
+![The image lists three Azure services: Azure Logic Apps with Event Grid Connector, Azure Automation via Webhook, and Azure Functions with Event Grid Trigger.](https://kodekloud.com/kk-media/image/upload/v1752866488/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Receiving-Events-by-UsingnbspWebhooks/azure-logic-apps-automation-functions.jpg)
 
 ***
 
@@ -42,7 +42,7 @@ In a synchronous handshake, when you create an event subscription, Event Grid im
 
 In scenarios where an instant response isn’t feasible, asynchronous handshake enables the validation to occur at a later time. This approach provides greater flexibility for endpoints that may require additional processing time before returning the necessary validation code.
 
-![The image explains two ways to verify a subscription: Synchronous Handshake and Asynchronous Handshake, with brief descriptions of each method.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866490/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Receiving-Events-by-UsingnbspWebhooks/subscription-verification-handshake-methods.jpg)
+![The image explains two ways to verify a subscription: Synchronous Handshake and Asynchronous Handshake, with brief descriptions of each method.](https://kodekloud.com/kk-media/image/upload/v1752866490/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Receiving-Events-by-UsingnbspWebhooks/subscription-verification-handshake-methods.jpg)
 
 > **lightbulb** Both synchronous and asynchronous handshakes are essential to ensure that only valid, reachable endpoints are registered for event delivery. Always choose the handshake method that best fits your operational needs.
 
@@ -58,7 +58,7 @@ Let’s walk through a practical example in the Azure portal. Follow these steps
 
 If the provided URL is improperly formatted or unreachable, the portal displays an error—such as "The supplied URL is invalid" or another message indicating that the POST request failed. This safeguard ensures that only correctly configured and accessible endpoints are used for event delivery.
 
-![The image shows a Microsoft Azure portal screen for creating an event subscription, with a notification panel on the right displaying deployment status messages, including a failed event subscription deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866492/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Receiving-Events-by-UsingnbspWebhooks/azure-portal-event-subscription-failed.jpg)
+![The image shows a Microsoft Azure portal screen for creating an event subscription, with a notification panel on the right displaying deployment status messages, including a failed event subscription deployment.](https://kodekloud.com/kk-media/image/upload/v1752866492/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Receiving-Events-by-UsingnbspWebhooks/azure-portal-event-subscription-failed.jpg)
 
 > **triangle-alert** Always verify that your webhook endpoint URL is correctly formatted and reachable to avoid validation failures during event subscription creation.
 

@@ -16,16 +16,10 @@ Key features of this project include:
 1. Triggering pipelines exclusively on pull requests.
 2. Creating a release directly within Git.
 
-<Frame>
-  ![The image is a slide titled "Build a Complex Jenkins Pipeline" with two points: "How to trigger pipelines only on pull requests" and "Creating a release in Git," alongside a gear icon with a checkmark.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879855/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Section-Introduction/build-complex-jenkins-pipeline.jpg)
-</Frame>
+![The image is a slide titled "Build a Complex Jenkins Pipeline" with two points: "How to trigger pipelines only on pull requests" and "Creating a release in Git," alongside a gear icon with a checkmark.](https://kodekloud.com/kk-media/image/upload/v1752879855/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Section-Introduction/build-complex-jenkins-pipeline.jpg)
 
 In addition, we will explore essential versioning strategies by discussing [semantic versioning](https://semver.org) and demonstrating how to use [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) to automatically update your project version.
 
-<Callout icon="lightbulb">
-  Integrating dedicated pipelines for code quality and deployment not only streamlines your development workflow but also ensures that only thoroughly tested code is released to production.
-</Callout>
+> **lightbulb** Integrating dedicated pipelines for code quality and deployment not only streamlines your development workflow but also ensures that only thoroughly tested code is released to production.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/79ea1422-fc3a-48da-851d-232fc09690de/lesson/a957c2a6-2084-4076-ad3d-708056d1d2c2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/79ea1422-fc3a-48da-851d-232fc09690de/lesson/a957c2a6-2084-4076-ad3d-708056d1d2c2)

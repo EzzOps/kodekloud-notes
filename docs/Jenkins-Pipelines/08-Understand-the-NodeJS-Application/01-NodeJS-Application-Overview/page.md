@@ -8,13 +8,9 @@ In this article, we provide an overview of Node.js and demonstrate a sample Node
 
 Node.js is an open-source runtime environment that allows you to execute JavaScript code outside of web browsers. Leveraging the Chrome V8 JavaScript engine, Node.js enables both front-end and back-end development using familiar JavaScript, while ensuring high performance and scalability. It is also compatible with all major platforms including Windows, macOS, and various Linux distributions.
 
-<Frame>
-  ![The image is an infographic about Node.js, showing its compatibility with front-end and back-end development, Chrome V8, and operating systems like Windows, Linux, and MacOS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879821/notes-assets/images/Jenkins-Pipelines-NodeJS-Application-Overview/nodejs-infographic-compatibility.jpg)
-</Frame>
+![The image is an infographic about Node.js, showing its compatibility with front-end and back-end development, Chrome V8, and operating systems like Windows, Linux, and MacOS.](https://kodekloud.com/kk-media/image/upload/v1752879821/notes-assets/images/Jenkins-Pipelines-NodeJS-Application-Overview/nodejs-infographic-compatibility.jpg)
 
-<Callout icon="lightbulb">
-  Installing Node.js automatically bundles NPM (Node Package Manager). NPM facilitates the discovery, sharing, distribution, and management of libraries, packages, and dependencies in JavaScript and Node.js applications.
-</Callout>
+> **lightbulb** Installing Node.js automatically bundles NPM (Node Package Manager). NPM facilitates the discovery, sharing, distribution, and management of libraries, packages, and dependencies in JavaScript and Node.js applications.
 
 ## Sample Node.js Project Walkthrough
 
@@ -26,9 +22,7 @@ In our sample project, we illustrate a minimal "Hello World" Node.js application
 
 Once dependencies are installed and tests pass, you can launch your application with the `npm start` command. When the application is running, navigate to the appropriate port (typically 3000) in your web browser to access it.
 
-<Callout icon="lightbulb">
-  For enhanced security and stability, always ensure that your Node.js and NPM versions are up to date.
-</Callout>
+> **lightbulb** For enhanced security and stability, always ensure that your Node.js and NPM versions are up to date.
 
 ## Example Commands
 
@@ -61,6 +55,4 @@ For further reading, consider exploring additional resources:
 
 Enhance your development workflow by getting acquainted with these best practices and key project components. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/a3bf42b8-d7de-4cf9-aeae-bc71ae305be6/lesson/6609d621-3a6f-41b6-9baa-cdaff475ca02" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/a3bf42b8-d7de-4cf9-aeae-bc71ae305be6/lesson/6609d621-3a6f-41b6-9baa-cdaff475ca02)

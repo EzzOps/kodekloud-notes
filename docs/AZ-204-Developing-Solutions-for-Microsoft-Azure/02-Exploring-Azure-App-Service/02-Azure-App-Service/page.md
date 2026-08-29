@@ -14,7 +14,7 @@ Another major feature is its robust continuous integration and deployment suppor
 
 Deployment slots further enhance the deployment process by allowing you to target different environments (e.g., testing or production) without impacting the live site. With customizable settings swaps between these slots, you gain greater control, reducing the risks associated with new deployments.
 
-![The image is an infographic about Azure App Service, highlighting built-in scale support, continuous integration/deployment support, and deployment slots. It lists features like cost-saving scaling, integration with tools like GitHub and Azure DevOps, and deployment customization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866384/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-App-Service/azure-app-service-infographic.jpg)
+![The image is an infographic about Azure App Service, highlighting built-in scale support, continuous integration/deployment support, and deployment slots. It lists features like cost-saving scaling, integration with tools like GitHub and Azure DevOps, and deployment customization.](https://kodekloud.com/kk-media/image/upload/v1752866384/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-App-Service/azure-app-service-infographic.jpg)
 
 > **lightbulb** Leveraging deployment slots can significantly reduce downtime during application updates.
 
@@ -39,7 +39,7 @@ App Service Plans are available in multiple usage tiers:
 
 In the shared tier, your applications run on a single shared VM, meaning resources like CPU minutes are divided among multiple customers. In higher tiers—basic, standard, premium, and isolated—your applications run on dedicated VMs, with the ability to scale out to multiple instances when needed.
 
-![The image is an infographic about Azure App Service, detailing App Service Plans, Usage Tiers, and how apps run and scale. It explains different compute resources, usage tiers, and scaling options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866385/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-App-Service/azure-app-service-infographic-2.jpg)
+![The image is an infographic about Azure App Service, detailing App Service Plans, Usage Tiers, and how apps run and scale. It explains different compute resources, usage tiers, and scaling options.](https://kodekloud.com/kk-media/image/upload/v1752866385/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-App-Service/azure-app-service-infographic-2.jpg)
 
 ## Deploying an App Service
 
@@ -49,7 +49,7 @@ In this section, we will walk through deploying an Azure App Service using the A
 
 1. In the Azure portal, search for "App Service" and click on **Create a web app**.
 
-![The image shows a Microsoft Azure portal interface with a search bar displaying results for "App Se," including services, resources, and documentation related to Azure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866387/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-App-Service/azure-portal-search-results-app-se.jpg)
+![The image shows a Microsoft Azure portal interface with a search bar displaying results for "App Se," including services, resources, and documentation related to Azure.](https://kodekloud.com/kk-media/image/upload/v1752866387/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-App-Service/azure-portal-search-results-app-se.jpg)
 
 ### Step 2: Configure Web App Settings
 
@@ -63,7 +63,7 @@ You also determine the type of application to run. For instance, if you select A
 
 Click to create a new plan (e.g., "ASPAC20401") and choose your pricing tier. While the standard plan is selected by default, you can review other available pricing options by clicking on **Explore pricing plans**.
 
-![The image shows the "Create Web App" page on the Microsoft Azure portal, where users can configure project and instance details for deploying a web app. Options include subscription, resource group, instance name, publish method, runtime stack, operating system, and region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866389/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-App-Service/create-web-app-azure-portal.jpg)
+![The image shows the "Create Web App" page on the Microsoft Azure portal, where users can configure project and instance details for deploying a web app. Options include subscription, resource group, instance name, publish method, runtime stack, operating system, and region.](https://kodekloud.com/kk-media/image/upload/v1752866389/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-App-Service/create-web-app-azure-portal.jpg)
 
 ### Step 4: Review Pricing Options
 
@@ -76,7 +76,7 @@ Azure offers various hardware-based pricing tiers:
 | **Standard (S1, S2, S3)**                   | Custom domains, auto scaling, staging slots, backups, VNET integration | Production workloads                        |
 | **Premium (P1, PV2, PV3)** and **Isolated** | Enhanced performance, high scalability, and isolation                  | High-traffic, mission-critical applications |
 
-![The image shows a Microsoft Azure portal page displaying various App Service pricing plans, with details such as custom domain, auto scale, and costs in INR. A plan named "Basic B1" is selected.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866390/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-App-Service/azure-portal-app-service-pricing.jpg)
+![The image shows a Microsoft Azure portal page displaying various App Service pricing plans, with details such as custom domain, auto scale, and costs in INR. A plan named "Basic B1" is selected.](https://kodekloud.com/kk-media/image/upload/v1752866390/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-App-Service/azure-portal-app-service-pricing.jpg)
 
 > **triangle-alert** Be aware that the shared tier has limitations, such as no auto scaling, staging slots, or zone redundancy.
 
@@ -85,19 +85,19 @@ Azure offers various hardware-based pricing tiers:
 * **Integration Features:** In the shared tier, options like zone redundancy, database integration, and continuous deployment (via GitHub, Azure DevOps, etc.) may be limited.
 * **Networking & Monitoring:** Higher tiers allow configuring advanced features such as networking settings and monitoring tools like Application Insights.
 
-![The image shows a web interface for creating a web app, specifically focusing on deployment settings with options for continuous deployment via GitHub Actions. It includes fields for selecting an organization, repository, and branch, along with authentication settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866392/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-App-Service/web-app-deployment-settings-github-actions.jpg)
+![The image shows a web interface for creating a web app, specifically focusing on deployment settings with options for continuous deployment via GitHub Actions. It includes fields for selecting an organization, repository, and branch, along with authentication settings.](https://kodekloud.com/kk-media/image/upload/v1752866392/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-App-Service/web-app-deployment-settings-github-actions.jpg)
 
 ### Step 6: Confirm and Deploy
 
 After reviewing your configuration, click **Review and Create** and then **Create** to deploy the web application along with the selected App Service Plan. If you already have an existing plan, you can reuse it, as a single App Service Plan can support multiple applications—even those with different runtime stacks—provided there are enough resources.
 
-![The image shows a "Create Web App" page from a cloud service platform, detailing the configuration and settings for deploying a web application, including subscription, resource group, and runtime stack information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866393/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-App-Service/create-web-app-cloud-service-settings.jpg)
+![The image shows a "Create Web App" page from a cloud service platform, detailing the configuration and settings for deploying a web application, including subscription, resource group, and runtime stack information.](https://kodekloud.com/kk-media/image/upload/v1752866393/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-App-Service/create-web-app-cloud-service-settings.jpg)
 
 ### Step 7: Access Your Application
 
 Once the deployment is complete, click **Go to resource** to access your web app's overview page. There, you will find the URL which, when opened in a browser, confirms that your Azure App Service is running and ready to host your content.
 
-![The image shows a Microsoft Azure portal interface displaying the overview of a web app named "az204demoapp01," with details like resource group, status, location, and subscription information. Various options and settings are visible on the left sidebar, such as activity log, access control, and deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866395/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-App-Service/azure-portal-web-app-overview.jpg)
+![The image shows a Microsoft Azure portal interface displaying the overview of a web app named "az204demoapp01," with details like resource group, status, location, and subscription information. Various options and settings are visible on the left sidebar, such as activity log, access control, and deployment.](https://kodekloud.com/kk-media/image/upload/v1752866395/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-App-Service/azure-portal-web-app-overview.jpg)
 
 ## Next Steps
 

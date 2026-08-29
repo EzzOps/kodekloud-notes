@@ -29,7 +29,7 @@ Below is an overview of the architecture along with detailed configuration steps
 
 Below is the architecture diagram illustrating the entire flow:
 
-![The image shows an AWS console interface for creating a topic, with options for selecting FIFO or Standard topic types, and fields for entering the topic name and display name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864751/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-console-create-topic-fifo-standard.jpg)
+![The image shows an AWS console interface for creating a topic, with options for selecting FIFO or Standard topic types, and fields for entering the topic name and display name.](https://kodekloud.com/kk-media/image/upload/v1752864751/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-console-create-topic-fifo-standard.jpg)
 
 ***
 
@@ -38,7 +38,7 @@ Below is the architecture diagram illustrating the entire flow:
 1. Open the SNS service console and navigate to "Topics." Click on "Create topic".
 2. Enter the topic name (for example, *video-uploaded*) and select the Standard type (message ordering is not required for this application).
 
-![The image shows an Amazon SNS (Simple Notification Service) console screen with a topic named "video-uploaded" successfully created. It includes details like the ARN and options to edit, delete, or publish messages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864752/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/amazon-sns-video-uploaded-topic.jpg)
+![The image shows an Amazon SNS (Simple Notification Service) console screen with a topic named "video-uploaded" successfully created. It includes details like the ARN and options to edit, delete, or publish messages.](https://kodekloud.com/kk-media/image/upload/v1752864752/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/amazon-sns-video-uploaded-topic.jpg)
 
 3. Optionally, set a display name and retain default settings for encryption and access policies. Click "Create topic" to finalize the configuration.
 
@@ -53,20 +53,20 @@ Below is the architecture diagram illustrating the entire flow:
 3. Accept the default settings for visibility timeout, delivery delay, and message retention.
 4. Under the access policy, leave it at its default setting (only the queue owner can send/receive messages).
 
-![The image shows the Amazon SQS (Simple Queue Service) interface for creating a new queue. It includes options for selecting the queue type (Standard or FIFO) and configuring settings like visibility timeout and message retention period.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864753/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/amazon-sqs-create-queue-interface.jpg)
+![The image shows the Amazon SQS (Simple Queue Service) interface for creating a new queue. It includes options for selecting the queue type (Standard or FIFO) and configuring settings like visibility timeout and message retention period.](https://kodekloud.com/kk-media/image/upload/v1752864753/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/amazon-sqs-create-queue-interface.jpg)
 
-![The image shows an Amazon Web Services (AWS) console screen for creating a Simple Queue Service (SQS) queue named "video-processing," with configuration options for visibility timeout, message retention period, delivery delay, and maximum message size.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864754/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-sqs-queue-creation-video-processing.jpg)
+![The image shows an Amazon Web Services (AWS) console screen for creating a Simple Queue Service (SQS) queue named "video-processing," with configuration options for visibility timeout, message retention period, delivery delay, and maximum message size.](https://kodekloud.com/kk-media/image/upload/v1752864754/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-sqs-queue-creation-video-processing.jpg)
 
 5. After queue creation, subscribe the queue to the SNS topic. Click "Subscribe to Amazon SNS topic," select the *video-uploaded* topic, and hit "Save."
 
-![The image shows an Amazon Web Services (AWS) console page for an SQS queue named "video-processing," displaying details such as the queue type, ARN, and encryption settings. It also includes options for SNS subscriptions and other configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864755/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-sqs-video-processing-console.jpg)
+![The image shows an Amazon Web Services (AWS) console page for an SQS queue named "video-processing," displaying details such as the queue type, ARN, and encryption settings. It also includes options for SNS subscriptions and other configurations.](https://kodekloud.com/kk-media/image/upload/v1752864755/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-sqs-video-processing-console.jpg)
 
 ### Thumbnail Processing Queue
 
 1. Create another Standard queue and name it *thumbnail-processing*.
 2. Use the default settings and subscribe this queue to the *video-uploaded* SNS topic.
 
-![The image shows an Amazon Web Services (AWS) console screen where a user is subscribing to an Amazon SNS topic, with an ARN specified and options to save or cancel.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864756/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-console-sns-topic-subscription.jpg)
+![The image shows an Amazon Web Services (AWS) console screen where a user is subscribing to an Amazon SNS topic, with an ARN specified and options to save or cancel.](https://kodekloud.com/kk-media/image/upload/v1752864756/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-console-sns-topic-subscription.jpg)
 
 At this point, any message published to the SNS topic is delivered to both queues. Each queue holds the incoming messages until the respective Lambda functions process them.
 
@@ -84,12 +84,12 @@ At this point, any message published to the SNS topic is delivered to both queue
 }
 ```
 
-![The image shows an AWS console interface where a user is configuring a message body for a delivery protocol, with options for identical or custom payloads. The message body section is open, displaying a JSON structure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864757/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-console-message-body-json.jpg)
+![The image shows an AWS console interface where a user is configuring a message body for a delivery protocol, with options for identical or custom payloads. The message body section is open, displaying a JSON structure.](https://kodekloud.com/kk-media/image/upload/v1752864757/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-console-message-body-json.jpg)
 
 3. After publishing the message, refresh the SQS console to verify that the message appears in both queues. If no consumer (Lambda or EC2) is configured, the messages remain in the queues.
 4. Publish another message with different details to see the message count increment.
 
-![The image shows an Amazon SNS (Simple Notification Service) console screen with a message successfully published to the "video-uploaded" topic. It includes details like the topic's ARN and subscription information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864758/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/amazon-sns-console-video-uploaded.jpg)
+![The image shows an Amazon SNS (Simple Notification Service) console screen with a message successfully published to the "video-uploaded" topic. It includes details like the topic's ARN and subscription information.](https://kodekloud.com/kk-media/image/upload/v1752864758/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/amazon-sns-console-video-uploaded.jpg)
 
 ***
 
@@ -100,11 +100,11 @@ At this point, any message published to the SNS topic is delivered to both queue
 1. Sign in to the Lambda console and click "Create function." Select "Author from scratch."
 2. Set the function name as *video-processing*, choose the appropriate runtime (e.g., Node.js 18.x), and assign a role with SQS and S3 permissions. You may create a new role (e.g., *Lambda\_SQS\_S3*) and attach additional policies (such as S3 Full Access) via the IAM console.
 
-![The image shows the AWS Lambda console where a user is creating a new function. It includes options for authoring from scratch, using a blueprint, or a container image, and fields for entering the function name, runtime, architecture, and permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864759/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-lambda-console-new-function.jpg)
+![The image shows the AWS Lambda console where a user is creating a new function. It includes options for authoring from scratch, using a blueprint, or a container image, and fields for entering the function name, runtime, architecture, and permissions.](https://kodekloud.com/kk-media/image/upload/v1752864759/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-lambda-console-new-function.jpg)
 
 3. Once the Lambda function is created, add an SQS trigger by selecting the *video-processing* queue. Configure the batch size (for example, 1 for individual processing or a higher number for batching) and set the appropriate batch window.
 
-![The image shows an AWS Lambda configuration screen for setting up an SQS queue trigger. It includes options for batch size, batch window, maximum concurrency, and filter criteria.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864761/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-lambda-sqs-trigger-configuration.jpg)
+![The image shows an AWS Lambda configuration screen for setting up an SQS queue trigger. It includes options for batch size, batch window, maximum concurrency, and filter criteria.](https://kodekloud.com/kk-media/image/upload/v1752864761/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-lambda-sqs-trigger-configuration.jpg)
 
 4. Update the function code to process the event. The sample code below logs the event and extracts the message from the first record:
 
@@ -125,7 +125,7 @@ export const handler = async (event) => {
 };
 ```
 
-![The image shows the AWS Lambda console with a function named "video-processing." It includes options to add triggers and destinations and a code editor with a basic JavaScript function.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864762/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-lambda-video-processing-console.jpg)
+![The image shows the AWS Lambda console with a function named "video-processing." It includes options to add triggers and destinations and a code editor with a basic JavaScript function.](https://kodekloud.com/kk-media/image/upload/v1752864762/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-lambda-video-processing-console.jpg)
 
 After deploying the function, check the SQS queue’s message count. A reduction indicates that the Lambda function is processing messages. You can also review CloudWatch logs for detailed execution information.
 
@@ -135,11 +135,11 @@ After deploying the function, check the SQS queue’s message count. A reduction
 2. Add an SQS trigger for the *thumbnail-processing* queue and configure the batch settings.
 3. Implement the code to handle thumbnail generation, then deploy the function.
 
-![The image shows the AWS Lambda console where a function named "thumbnail-processing" is being created. The runtime is set to Node.js 18.x, and the architecture is selected as x86\_64.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864762/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-lambda-thumbnail-processing-nodejs.jpg)
+![The image shows the AWS Lambda console where a function named "thumbnail-processing" is being created. The runtime is set to Node.js 18.x, and the architecture is selected as x86\_64.](https://kodekloud.com/kk-media/image/upload/v1752864762/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-lambda-thumbnail-processing-nodejs.jpg)
 
-![The image shows an AWS Lambda interface where a user is adding a trigger, specifically selecting "SQS" as the source for batch/bulk data processing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864763/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-lambda-sqs-trigger-interface.jpg)
+![The image shows an AWS Lambda interface where a user is adding a trigger, specifically selecting "SQS" as the source for batch/bulk data processing.](https://kodekloud.com/kk-media/image/upload/v1752864763/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-lambda-sqs-trigger-interface.jpg)
 
-![The image shows an AWS Lambda configuration screen with options for setting batch size, batch window, maximum concurrency, and filter criteria for processing events.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864764/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-lambda-configuration-screen.jpg)
+![The image shows an AWS Lambda configuration screen with options for setting batch size, batch window, maximum concurrency, and filter criteria for processing events.](https://kodekloud.com/kk-media/image/upload/v1752864764/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-lambda-configuration-screen.jpg)
 
 ***
 
@@ -153,9 +153,9 @@ Automate the workflow by configuring your S3 bucket (storing raw videos) to trig
 4. Under "Event types," select the object creation events (PUT, POST, COPY, etc.).
 5. For the destination, select SNS and choose the *video-uploaded* topic.
 
-![The image shows an Amazon S3 Management Console with a list of buckets, their regions, access settings, and creation dates. A green notification bar indicates a bucket was successfully created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864766/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-s3-management-console-buckets.jpg)
+![The image shows an Amazon S3 Management Console with a list of buckets, their regions, access settings, and creation dates. A green notification bar indicates a bucket was successfully created.](https://kodekloud.com/kk-media/image/upload/v1752864766/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-s3-management-console-buckets.jpg)
 
-![The image shows an Amazon S3 interface for creating an event notification, with fields for event name, prefix, and suffix, and options for selecting event types related to object creation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864767/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/amazon-s3-event-notification-interface.jpg)
+![The image shows an Amazon S3 interface for creating an event notification, with fields for event name, prefix, and suffix, and options for selecting event types related to object creation.](https://kodekloud.com/kk-media/image/upload/v1752864767/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/amazon-s3-event-notification-interface.jpg)
 
 > **Important:**\
 > Before S3 can publish notifications to SNS, update the SNS topic's access policy to allow the Amazon S3 service to publish messages. For example, add the following policy statement to your SNS topic (replace placeholders with actual values):
@@ -186,11 +186,11 @@ Automate the workflow by configuring your S3 bucket (storing raw videos) to trig
 > 2. Click "Edit" next to Access Policy.
 > 3. Add the above JSON statement to the existing policy and save your changes.
 
-![The image shows an AWS SNS (Simple Notification Service) console page where a topic named "video-uploaded" is being configured. It includes options for encryption, access policy, data protection policy, and delivery policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864768/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-sns-video-uploaded-config.jpg)
+![The image shows an AWS SNS (Simple Notification Service) console page where a topic named "video-uploaded" is being configured. It includes options for encryption, access policy, data protection policy, and delivery policy.](https://kodekloud.com/kk-media/image/upload/v1752864768/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-sns-video-uploaded-config.jpg)
 
 Finally, save the event notification within the S3 console.
 
-![The image shows an Amazon S3 console screen for creating an event notification, with fields for event name, prefix, suffix, and event types related to object creation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864769/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/amazon-s3-event-notification-console.jpg)
+![The image shows an Amazon S3 console screen for creating an event notification, with fields for event name, prefix, suffix, and event types related to object creation.](https://kodekloud.com/kk-media/image/upload/v1752864769/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/amazon-s3-event-notification-console.jpg)
 
 ***
 
@@ -206,11 +206,11 @@ Finally, save the event notification within the S3 console.
    * Check the processed videos bucket for the converted video files (e.g., an .m3u8 file along with corresponding .ts chunk files).
    * Review the thumbnails bucket to ensure the thumbnail images have been generated appropriately.
 
-![The image shows an Amazon S3 bucket interface with three files listed: "output.m3u8," "output0.ts," and "output1.ts," along with their details like type, last modified date, size, and storage class.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864770/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/amazon-s3-bucket-files-interface.jpg)
+![The image shows an Amazon S3 bucket interface with three files listed: "output.m3u8," "output0.ts," and "output1.ts," along with their details like type, last modified date, size, and storage class.](https://kodekloud.com/kk-media/image/upload/v1752864770/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/amazon-s3-bucket-files-interface.jpg)
 
-![The image shows an Amazon S3 bucket interface with three files listed: "output.m3u8," "output0.ts," and "output1.ts," along with their details such as type, last modified date, size, and storage class.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864772/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/amazon-s3-bucket-interface-files.jpg)
+![The image shows an Amazon S3 bucket interface with three files listed: "output.m3u8," "output0.ts," and "output1.ts," along with their details such as type, last modified date, size, and storage class.](https://kodekloud.com/kk-media/image/upload/v1752864772/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/amazon-s3-bucket-interface-files.jpg)
 
-![The image shows an AWS CloudWatch console displaying log entries related to a Lambda function execution, including details about a notification message and event source.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864773/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-cloudwatch-lambda-logs-console.jpg)
+![The image shows an AWS CloudWatch console displaying log entries related to a Lambda function execution, including details about a notification message and event source.](https://kodekloud.com/kk-media/image/upload/v1752864773/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-cloudwatch-lambda-logs-console.jpg)
 
 ***
 
@@ -221,12 +221,12 @@ After verifying the configuration, it is important to clean up resources to avoi
 1. **Delete SQS Queues:**\
    In the SQS console, delete both the *video-processing* and *thumbnail-processing* queues.
 
-![The image shows an AWS SQS console with two queues named "thumbnail-processing" and "video-processing," both of which are of the standard type and have no messages available or in flight.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864774/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-sqs-console-thumbnail-video-queues-2.jpg)
+![The image shows an AWS SQS console with two queues named "thumbnail-processing" and "video-processing," both of which are of the standard type and have no messages available or in flight.](https://kodekloud.com/kk-media/image/upload/v1752864774/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-sqs-console-thumbnail-video-queues-2.jpg)
 
 2. **Delete the SNS Topic:**\
    Open the SNS console and delete the *video-uploaded* topic.
 
-![The image shows an Amazon SNS (Simple Notification Service) dashboard with details of a topic named "video-uploaded," including its ARN and type. There are options to edit, delete, or publish a message related to this topic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864775/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/amazon-sns-video-uploaded-dashboard.jpg)
+![The image shows an Amazon SNS (Simple Notification Service) dashboard with details of a topic named "video-uploaded," including its ARN and type. There are options to edit, delete, or publish a message related to this topic.](https://kodekloud.com/kk-media/image/upload/v1752864775/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/amazon-sns-video-uploaded-dashboard.jpg)
 
 3. **Remove Lambda Functions:**\
    Delete both Lambda functions (*video-processing* and *thumbnail-processing*).
@@ -234,7 +234,7 @@ After verifying the configuration, it is important to clean up resources to avoi
 4. **Delete S3 Buckets:**\
    Empty the raw videos, processed videos, and thumbnails buckets and then delete them.
 
-![The image shows an AWS S3 Management Console with a list of five buckets, displaying their names, regions, access permissions, and creation dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864777/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-s3-management-console-buckets-2.jpg)
+![The image shows an AWS S3 Management Console with a list of five buckets, displaying their names, regions, access permissions, and creation dates.](https://kodekloud.com/kk-media/image/upload/v1752864777/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-SNSSQS-Demo/aws-s3-management-console-buckets-2.jpg)
 
 ***
 

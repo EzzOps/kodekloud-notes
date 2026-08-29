@@ -20,13 +20,13 @@ OCR technology extracts text from images or scanned documents, streamlining the 
 
 Consider an insurance company that processes thousands of claim forms daily. Instead of manually entering data, the company can scan these forms and use OCR to directly extract text into a digital system. This automation not only reduces the manual workload but also minimizes data entry errors—a significant advantage for organizations managing large volumes of paper-based data.
 
-![The image is an infographic about Azure Computer Vision Services, highlighting Optical Character Recognition (OCR) for digitization and data extraction.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856948/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-Computer-Vision-Services/azure-computer-vision-ocr-infographic.jpg)
+![The image is an infographic about Azure Computer Vision Services, highlighting Optical Character Recognition (OCR) for digitization and data extraction.](https://kodekloud.com/kk-media/image/upload/v1752856948/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-Computer-Vision-Services/azure-computer-vision-ocr-infographic.jpg)
 
 ### Spatial Analysis
 
 Spatial analysis extends the capabilities of image analysis by examining the spatial relationships within images. This feature helps determine the positioning of objects relative to each other and detects movement patterns.
 
-![The image is a diagram illustrating Azure Computer Vision Services, focusing on spatial analysis to detect object placement and movement. It includes icons representing vision and analysis processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856950/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-Computer-Vision-Services/azure-computer-vision-spatial-analysis-diagram.jpg)
+![The image is a diagram illustrating Azure Computer Vision Services, focusing on spatial analysis to detect object placement and movement. It includes icons representing vision and analysis processes.](https://kodekloud.com/kk-media/image/upload/v1752856950/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-Computer-Vision-Services/azure-computer-vision-spatial-analysis-diagram.jpg)
 
 In retail, spatial analysis can monitor customer flow by analyzing store layouts and movement patterns. This data allows retailers to optimize product placement for enhanced engagement and increased sales. In smart buildings, facility managers use spatial analysis to monitor occupancy levels, manage space more effectively, and adjust lighting or temperature in real time based on presence. Essentially, spatial analysis introduces an intelligent layer to environments, enabling dynamic responses to how people or objects are positioned and move.
 
@@ -34,7 +34,7 @@ In retail, spatial analysis can monitor customer flow by analyzing store layouts
 
 Face detection is the process of identifying the presence and location of human faces within images, usually by drawing bounding boxes around each detected face. This functionality is essential for various applications that require awareness of individuals in a scene.
 
-![The image illustrates Azure Computer Vision Services focusing on face detection, showing a room with people whose faces are highlighted with red boxes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856952/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-Computer-Vision-Services/azure-computer-vision-face-detection.jpg)
+![The image illustrates Azure Computer Vision Services focusing on face detection, showing a room with people whose faces are highlighted with red boxes.](https://kodekloud.com/kk-media/image/upload/v1752856952/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-Computer-Vision-Services/azure-computer-vision-face-detection.jpg)
 
 For example, in security systems, face detection can identify every face entering a camera’s view, enabling real-time tracking of individuals. This feature is also crucial in analyzing crowd density or foot traffic, thereby providing valuable insights into customer behavior and helping optimize staffing in public venues.
 
@@ -42,7 +42,7 @@ For example, in security systems, face detection can identify every face enterin
 
 Expanding upon face detection, face recognition not only identifies faces but also matches them with those stored in a database. This capability is vital for identity verification and secure authentication systems.
 
-![The image is a diagram illustrating Azure Computer Vision Services, specifically focusing on face recognition. It shows the process of matching detected faces in a database to enable authentication and identity verification.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856953/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-Computer-Vision-Services/azure-computer-vision-face-recognition-diagram.jpg)
+![The image is a diagram illustrating Azure Computer Vision Services, specifically focusing on face recognition. It shows the process of matching detected faces in a database to enable authentication and identity verification.](https://kodekloud.com/kk-media/image/upload/v1752856953/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-Computer-Vision-Services/azure-computer-vision-face-recognition-diagram.jpg)
 
 Think about how modern smartphones unlock using face recognition: the device detects a face, compares it with the stored image, and unlocks when a match is found. In business environments, face recognition can secure restricted areas by allowing access only to authorized personnel. It also enhances customer service by recognizing returning visitors, allowing for personalized interactions and tailored experiences.
 

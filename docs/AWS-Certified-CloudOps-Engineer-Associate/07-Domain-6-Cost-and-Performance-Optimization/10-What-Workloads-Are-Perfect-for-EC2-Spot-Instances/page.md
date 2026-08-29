@@ -16,7 +16,7 @@ EC2 Spot Instances are a cost-effective choice for fault-tolerant and flexible a
 
 For example, consider processes like rendering, computational analysis, or data-intensive tasks (e.g., genomic data processing or oil and gas analysis). In such use cases, using Spot Instances to perform the bulk of work and on-demand instances for any interruptions can optimize costs without compromising performance. Additionally, these instances are effective in CI/CD pipelines for running non-critical tests, where interruptions can be handled by rerunning the tests.
 
-![The image is an infographic titled "When to Use Spot Instances," highlighting three use cases: Big Data and Analytics Workloads, Rendering and High-Performance Computing (HPC), and CI/CD Pipelines, each with a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861180/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-What-Workloads-Are-Perfect-for-EC2-Spot-Instances/when-to-use-spot-instances-infographic.jpg)
+![The image is an infographic titled "When to Use Spot Instances," highlighting three use cases: Big Data and Analytics Workloads, Rendering and High-Performance Computing (HPC), and CI/CD Pipelines, each with a brief description.](https://kodekloud.com/kk-media/image/upload/v1752861180/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-What-Workloads-Are-Perfect-for-EC2-Spot-Instances/when-to-use-spot-instances-infographic.jpg)
 
 > **lightbulb** Spot Instances work best when used for short-lived, interruptible tasks that can resume from checkpoints or be re-run without significant impact.
 
@@ -29,9 +29,9 @@ EC2 Spot Instances are not suitable for workloads that cannot tolerate interrupt
 
 For mission-critical production workloads or real-time applications like video streaming and gaming services, it is advisable to use on-demand or reserved instances. In these cases, Spot Instances should only be part of a supplementary resource strategy rather than the primary resource.
 
-![The image lists scenarios when not to use spot instances, including fault-intolerant applications, inflexible or stateful applications, tightly coupled applications, and those with low tolerance for capacity unavailability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861182/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-What-Workloads-Are-Perfect-for-EC2-Spot-Instances/spot-instances-usage-scenarios.jpg)
+![The image lists scenarios when not to use spot instances, including fault-intolerant applications, inflexible or stateful applications, tightly coupled applications, and those with low tolerance for capacity unavailability.](https://kodekloud.com/kk-media/image/upload/v1752861182/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-What-Workloads-Are-Perfect-for-EC2-Spot-Instances/spot-instances-usage-scenarios.jpg)
 
-![The image outlines scenarios where spot instances should not be used, including critical production workloads, real-time applications, and failover to on-demand instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861183/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-What-Workloads-Are-Perfect-for-EC2-Spot-Instances/spot-instances-usage-scenarios-2.jpg)
+![The image outlines scenarios where spot instances should not be used, including critical production workloads, real-time applications, and failover to on-demand instances.](https://kodekloud.com/kk-media/image/upload/v1752861183/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-What-Workloads-Are-Perfect-for-EC2-Spot-Instances/spot-instances-usage-scenarios-2.jpg)
 
 > **triangle-alert** Avoid basing your core infrastructure for critical systems on Spot Instances, as their interruptible nature can lead to unexpected downtimes.
 
@@ -41,16 +41,16 @@ Spot Instances shine in scenarios requiring resilience and scalability, especial
 
 * **Large-Scale Data Processing:** Workloads such as Hadoop, MapReduce jobs, data lakes, or data mining can benefit from checkpointing mechanisms. If a node is interrupted, another node can resume from the last saved checkpoint, ensuring minimal data loss or downtime.
 
-![The image illustrates a concept of big data processing and analytics, showing large-scale data processing tasks distributed across multiple nodes, with examples like Hadoop jobs, data lakes, and data mining. It notes that these workloads can tolerate interruptions without major impact.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861184/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-What-Workloads-Are-Perfect-for-EC2-Spot-Instances/big-data-processing-analytics-diagram.jpg)
+![The image illustrates a concept of big data processing and analytics, showing large-scale data processing tasks distributed across multiple nodes, with examples like Hadoop jobs, data lakes, and data mining. It notes that these workloads can tolerate interruptions without major impact.](https://kodekloud.com/kk-media/image/upload/v1752861184/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-What-Workloads-Are-Perfect-for-EC2-Spot-Instances/big-data-processing-analytics-diagram.jpg)
 
 * **Batch Processing:** Batch jobs often include iterative steps with checkpoints that allow them to restart and resume easily.
 * **Short-Lived CI/CD Tasks:** While not recommended as the backbone of a CI/CD pipeline, Spot Instances are ideal for quickly running tests, compiling code, and deploying applications within a 15–30 minute window.
 
-![The image illustrates a Continuous Integration and Continuous Delivery (CI/CD) process, showing code being pushed to a repository and then processed through a CI/CD pipeline for testing, compiling, and deploying jobs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861184/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-What-Workloads-Are-Perfect-for-EC2-Spot-Instances/ci-cd-process-pipeline-diagram.jpg)
+![The image illustrates a Continuous Integration and Continuous Delivery (CI/CD) process, showing code being pushed to a repository and then processed through a CI/CD pipeline for testing, compiling, and deploying jobs.](https://kodekloud.com/kk-media/image/upload/v1752861184/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-What-Workloads-Are-Perfect-for-EC2-Spot-Instances/ci-cd-process-pipeline-diagram.jpg)
 
 * **Containerized Applications:** A combination of on-demand and Spot Instances creates a flexible environment for stateless web servers, which can automatically scale based on traffic load.
 
-![The image illustrates a concept of stateless web applications, showing user requests directed to EC2 Spot Instances and Replaceable Instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861185/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-What-Workloads-Are-Perfect-for-EC2-Spot-Instances/stateless-web-apps-ec2-spot-instances.jpg)
+![The image illustrates a concept of stateless web applications, showing user requests directed to EC2 Spot Instances and Replaceable Instances.](https://kodekloud.com/kk-media/image/upload/v1752861185/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-What-Workloads-Are-Perfect-for-EC2-Spot-Instances/stateless-web-apps-ec2-spot-instances.jpg)
 
 If you are new to handling mixed instance fleets, consider exploring the EC2 Fleet feature for streamlined management of on-demand and Spot Instance mixtures.
 
@@ -66,7 +66,7 @@ Adopt the following practices to maximize the benefits of using Spot Instances:
 | Mixed Instances Strategy        | Combine Spot Instances with on-demand and reserved instances as part of your overall strategy to balance cost and performance. |
 | Interruptible Workloads         | Reserve Spot Instances for workloads that can tolerate interruptions, such as batch processing and non-critical CI/CD tasks.   |
 
-![The image lists six best practices for spot instances, including flexibility with instance types, using optimized allocation strategies, enabling capacity rebalancing, choosing the right tools, mixing with on-demand instances, and planning for workload interruption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861189/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-What-Workloads-Are-Perfect-for-EC2-Spot-Instances/spot-instances-best-practices-guide.jpg)
+![The image lists six best practices for spot instances, including flexibility with instance types, using optimized allocation strategies, enabling capacity rebalancing, choosing the right tools, mixing with on-demand instances, and planning for workload interruption.](https://kodekloud.com/kk-media/image/upload/v1752861189/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-What-Workloads-Are-Perfect-for-EC2-Spot-Instances/spot-instances-best-practices-guide.jpg)
 
 ## Conclusion
 

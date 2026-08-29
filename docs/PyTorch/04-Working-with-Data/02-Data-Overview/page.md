@@ -7,17 +7,13 @@ test_size = len(dataset) - train_size - val_size
 train_dataset, val_dataset, test_dataset = random_split(dataset, [train_size, val_size, test_size])
 ```
 
-<Callout icon="lightbulb">
-  Keep in mind that `RandomSplit` produces different splits every time it is executed. For reproducible results, manage data tracking and versioning separately.
-</Callout>
+> **lightbulb** Keep in mind that `RandomSplit` produces different splits every time it is executed. For reproducible results, manage data tracking and versioning separately.
 
 ## Dataset Versioning
 
 Versioning is vital for ensuring reproducibility in model training. By recording the exact data used (for example, via a CSV annotations file), you can easily reproduce and verify your experiments—even if the underlying dataset changes. Tools like [DVC](https://dvc.org/) or [Git](https://git-scm.com/) are commonly used for this purpose.
 
-<Frame>
-  ![The image outlines the benefits of tracking and versioning data, highlighting consistency, change tracking, collaboration, model performance impact, and experiment flexibility.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883270/notes-assets/images/PyTorch-Building-Data/data-tracking-versioning-benefits.jpg)
-</Frame>
+![The image outlines the benefits of tracking and versioning data, highlighting consistency, change tracking, collaboration, model performance impact, and experiment flexibility.](https://kodekloud.com/kk-media/image/upload/v1752883270/notes-assets/images/PyTorch-Building-Data/data-tracking-versioning-benefits.jpg)
 
 ## Data Cleaning and Preprocessing
 
@@ -30,9 +26,7 @@ Important transformations for image classification include:
 
 Additional augmentations such as random cropping, horizontal flipping, and rotations can help increase data diversity. However, choose augmentations that suit the real-world images your model is expected to process.
 
-<Frame>
-  ![The image illustrates various image transformation functions, such as ToTensor() and RandomCrop(), used to process an original image into a processed image.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883272/notes-assets/images/PyTorch-Building-Data/image-transformation-functions-diagram.jpg)
-</Frame>
+![The image illustrates various image transformation functions, such as ToTensor() and RandomCrop(), used to process an original image into a processed image.](https://kodekloud.com/kk-media/image/upload/v1752883272/notes-assets/images/PyTorch-Building-Data/image-transformation-functions-diagram.jpg)
 
 ## Creating a PyTorch Dataset
 
@@ -100,9 +94,7 @@ Documenting your data is crucial. You have a couple of approaches:
            └── ...
    ```
 
-<Callout icon="lightbulb">
-  Using an annotations file offers flexibility, as it allows managing datasets without loading all images into memory at once.
-</Callout>
+> **lightbulb** Using an annotations file offers flexibility, as it allows managing datasets without loading all images into memory at once.
 
 ## Data Transformations
 
@@ -177,27 +169,19 @@ This lesson covered essential topics for effective data preparation in PyTorch:
 * **Data Transformations**: Customizing training and validation pipelines to include the necessary augmentations.
 * **Creating DataLoaders**: Efficiently batching and feeding data during model training.
 
-<Frame>
-  ![The image outlines a seven-step process for preparing data in PyTorch, including cleaning, creating datasets, splitting data, tracking, defining transformations, and creating DataLoaders.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883273/notes-assets/images/PyTorch-Building-Data/pytorch-data-preparation-process.jpg)
-</Frame>
+![The image outlines a seven-step process for preparing data in PyTorch, including cleaning, creating datasets, splitting data, tracking, defining transformations, and creating DataLoaders.](https://kodekloud.com/kk-media/image/upload/v1752883273/notes-assets/images/PyTorch-Building-Data/pytorch-data-preparation-process.jpg)
 
 Additionally, documenting your data—using either annotations files or a structured folder layout—ensures transparent and reproducible experiments.
 
-<Frame>
-  ![The image outlines steps for creating an initial PyTorch dataset, including creating a dataset with all data, using preloaded or custom datasets, and checking documentation for flags defining subsets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883275/notes-assets/images/PyTorch-Building-Data/pytorch-dataset-creation-steps.jpg)
-</Frame>
+![The image outlines steps for creating an initial PyTorch dataset, including creating a dataset with all data, using preloaded or custom datasets, and checking documentation for flags defining subsets.](https://kodekloud.com/kk-media/image/upload/v1752883275/notes-assets/images/PyTorch-Building-Data/pytorch-dataset-creation-steps.jpg)
 
 Finally, tracking and versioning are emphasized so that you can reliably reproduce your experiments:
 
-<Frame>
-  ![The image outlines three methods for tracking and versioning data: using DVC or Git for datasets, an annotations file for documenting images, and the ImageFolder method for organizing images into subsets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883276/notes-assets/images/PyTorch-Building-Data/data-versioning-tracking-methods.jpg)
-</Frame>
+![The image outlines three methods for tracking and versioning data: using DVC or Git for datasets, an annotations file for documenting images, and the ImageFolder method for organizing images into subsets.](https://kodekloud.com/kk-media/image/upload/v1752883276/notes-assets/images/PyTorch-Building-Data/data-versioning-tracking-methods.jpg)
 
 In the next demonstration, we will integrate these data preparation techniques into a complete workflow for PyTorch model training.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/38c436af-6837-416e-8195-f4a5342ef66f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/38c436af-6837-416e-8195-f4a5342ef66f)
 
 
 # Data Overview
@@ -208,21 +192,15 @@ This article explores data preparation for AI and ML models, covering preprocess
 
 Data is the foundation of any successful AI and ML model. The quality, quantity, and ethical management of your data greatly impact the performance and fairness of your models.
 
-<Frame>
-  ![The image illustrates a flowchart showing data as the foundation for AI/ML models, with binary code feeding into a process that leads to an AI/ML model.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883277/notes-assets/images/PyTorch-Data-Overview/data-foundation-ai-ml-flowchart.jpg)
-</Frame>
+![The image illustrates a flowchart showing data as the foundation for AI/ML models, with binary code feeding into a process that leads to an AI/ML model.](https://kodekloud.com/kk-media/image/upload/v1752883277/notes-assets/images/PyTorch-Data-Overview/data-foundation-ai-ml-flowchart.jpg)
 
 In this article, we explore essential topics related to data preparation. We cover preprocessing, labeling, augmentation, and privacy management—key steps that ensure your model learns effectively while adhering to legal and ethical standards.
 
-<Frame>
-  ![The image shows an agenda with three points: exploring critical data topics, covering data preparation aspects, and ensuring effective learning with fairness and legal compliance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883279/notes-assets/images/PyTorch-Data-Overview/data-agenda-critical-topics-preparation.jpg)
-</Frame>
+![The image shows an agenda with three points: exploring critical data topics, covering data preparation aspects, and ensuring effective learning with fairness and legal compliance.](https://kodekloud.com/kk-media/image/upload/v1752883279/notes-assets/images/PyTorch-Data-Overview/data-agenda-critical-topics-preparation.jpg)
 
 Data is the cornerstone for model learning. Think of it as the collection of experiences from which an AI system draws knowledge. High-quality data enables models to capture accurate patterns, while poor-quality data can lead to unreliable outcomes. In addition, having a substantial amount of diverse data empowers your model to understand complex patterns and generalize well.
 
-<Frame>
-  ![The image highlights the importance of data, emphasizing high-quality data for accurate pattern learning and large-quantity data for understanding complex patterns.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883280/notes-assets/images/PyTorch-Data-Overview/data-quality-pattern-learning-importance.jpg)
-</Frame>
+![The image highlights the importance of data, emphasizing high-quality data for accurate pattern learning and large-quantity data for understanding complex patterns.](https://kodekloud.com/kk-media/image/upload/v1752883280/notes-assets/images/PyTorch-Data-Overview/data-quality-pattern-learning-importance.jpg)
 
 A robust dataset should undergo thorough preprocessing:
 
@@ -231,15 +209,11 @@ A robust dataset should undergo thorough preprocessing:
 * Label the data to provide clear guidance during training.
 * Augment the data to enhance its diversity and robustness.
 
-<Frame>
-  ![The image illustrates the data preprocessing steps: Data Cleaning, Data Formatting, Data Labeling, and Data Augmentation, highlighting the importance of data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883282/notes-assets/images/PyTorch-Data-Overview/data-preprocessing-steps-illustration.jpg)
-</Frame>
+![The image illustrates the data preprocessing steps: Data Cleaning, Data Formatting, Data Labeling, and Data Augmentation, highlighting the importance of data.](https://kodekloud.com/kk-media/image/upload/v1752883282/notes-assets/images/PyTorch-Data-Overview/data-preprocessing-steps-illustration.jpg)
 
 By prioritizing data quality, quantity, and thorough preparation, you set a strong foundation for successful model building. Ensuring accurate, consistent, and complete data helps the model learn and perform better.
 
-<Frame>
-  ![The image outlines key aspects of data quantity for machine learning, including gathering sufficient data, ensuring diversity, balancing representation, and using PyTorch DataLoader, with a diagram illustrating that more data helps models learn better patterns.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883283/notes-assets/images/PyTorch-Data-Overview/data-quantity-machine-learning-pytorch.jpg)
-</Frame>
+![The image outlines key aspects of data quantity for machine learning, including gathering sufficient data, ensuring diversity, balancing representation, and using PyTorch DataLoader, with a diagram illustrating that more data helps models learn better patterns.](https://kodekloud.com/kk-media/image/upload/v1752883283/notes-assets/images/PyTorch-Data-Overview/data-quantity-machine-learning-pytorch.jpg)
 
 For instance, if the dataset overwhelmingly contains images of cats with few dog images, the model may perform well on cats but struggle with dogs. To avoid this imbalance, ensure even representation across classes. Managing large and diverse datasets is streamlined by using PyTorch's DataLoader:
 

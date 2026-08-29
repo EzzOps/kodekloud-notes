@@ -93,9 +93,7 @@ One additional important difference sets up our next lesson: conditional logic. 
 
 Finally, strategic merge patches are generally simpler and easier to read, which makes them a great default choice for many mutation scenarios.
 
-<Callout icon="lightbulb">
-  Choose `patchStrategicMerge` for declarative overlays and autogen-friendly mutations. Reserve JSON Patch for targeted, path-based edits that overlays can't express.
-</Callout>
+> **lightbulb** Choose `patchStrategicMerge` for declarative overlays and autogen-friendly mutations. Reserve JSON Patch for targeted, path-based edits that overlays can't express.
 
 <Frame>
   <img alt="The image is a slide about enforcing a default seccomp profile. It states Alex's goal to automatically apply the RuntimeDefault seccomp profile to all Pods for improved security." />
@@ -109,6 +107,4 @@ Links and references
 * [kubectl patch reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#patch)
 * Kyverno autogen and mutate rule behavior — see the Kyverno docs for details on how autogen maps Pod-level patches to controllers.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/f82da39a-44ea-41a4-85d2-89ced827f6f0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/f82da39a-44ea-41a4-85d2-89ced827f6f0)

@@ -6,9 +6,7 @@ Microsoft Entra ID Authentication provides secure access to Azure Storage resour
 
 Microsoft Entra ID Authentication (formerly Azure AD Authentication) offers a secure and modern method to access Azure Storage resources—such as blobs, queues, and tables—while avoiding the risks associated with SAS tokens. Unlike SAS tokens, which may inadvertently expose your storage account through logs or application history, Entra ID brings built-in multi-factor authentication and conditional access policies. These advanced features allow you to restrict access based on corporate network conditions or geographic regions. Even if you hold owner or contributor permissions at the subscription level, you still require storage-specific RBAC (Role-Based Access Control) assignments to access storage resources.
 
-<Callout icon="lightbulb">
-  For enhanced security, always prefer Entra ID Authentication over SAS tokens to protect your storage account. Integrated features such as multi-factor authentication and conditional access provide an additional layer of security.
-</Callout>
+> **lightbulb** For enhanced security, always prefer Entra ID Authentication over SAS tokens to protect your storage account. Integrated features such as multi-factor authentication and conditional access provide an additional layer of security.
 
 In the following sections, we detail the authentication and authorization workflow using Microsoft Entra ID and demonstrate the process in the Azure Portal via a service principal setup.
 
@@ -27,9 +25,7 @@ Consider a scenario where you have the "Storage Blob Data Contributor" role and 
 3. **Data Access:**\
    On successful authorization, the storage service processes your request and returns the requested data.
 
-<Frame>
-  ![The image illustrates Microsoft Entra ID Authentication, highlighting a secure authentication process that requires dedicated RBAC roles. It includes a flow diagram showing interactions between a user, authentication service, and storage blob container using bearer tokens.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884383/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Microsoft-Entra-ID-Authentication/microsoft-entra-id-authentication-diagram.jpg)
-</Frame>
+![The image illustrates Microsoft Entra ID Authentication, highlighting a secure authentication process that requires dedicated RBAC roles. It includes a flow diagram showing interactions between a user, authentication service, and storage blob container using bearer tokens.](https://kodekloud.com/kk-media/image/upload/v1752884383/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Microsoft-Entra-ID-Authentication/microsoft-entra-id-authentication-diagram.jpg)
 
 ***
 
@@ -45,9 +41,7 @@ This section explains how to set up a service principal (an app registration in 
    * Move to the **Certificates & secrets** section, generate a new client secret, and save its value for later use.
    * Also, note the **Tenant ID** found on the Azure AD overview page.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for managing "Certificates & secrets" under an app registration named "storage-spn." It displays details of a client secret, including its description, expiration date, and value.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884384/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Microsoft-Entra-ID-Authentication/azure-portal-certificates-secrets-storage-spn.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for managing "Certificates & secrets" under an app registration named "storage-spn." It displays details of a client secret, including its description, expiration date, and value.](https://kodekloud.com/kk-media/image/upload/v1752884384/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Microsoft-Entra-ID-Authentication/azure-portal-certificates-secrets-storage-spn.jpg)
 
 * Additionally, copy the endpoint for V1 if required.
 
@@ -55,21 +49,15 @@ This section explains how to set up a service principal (an app registration in 
 
    * Navigate to the desired Storage Account.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying details of an app registration named "storage-spn," including its application ID, object ID, and various OAuth and API endpoints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884385/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Microsoft-Entra-ID-Authentication/azure-portal-storage-spn-details.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying details of an app registration named "storage-spn," including its application ID, object ID, and various OAuth and API endpoints.](https://kodekloud.com/kk-media/image/upload/v1752884385/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Microsoft-Entra-ID-Authentication/azure-portal-storage-spn-details.jpg)
 
 * Under the **Access Control (IAM)** section, add a role assignment.
 * For example, assign the built-in **Storage Blob Data Reader** role to grant read-only access to blob data.
 * Click **Next**, select **Members**, and search for the registered service principal named "storage-spn" to complete the role assignment.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for adding a role assignment, specifically for managing access to Azure Storage Blob Data with various built-in roles listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884386/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Microsoft-Entra-ID-Authentication/azure-portal-role-assignment-storage.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for adding a role assignment, specifically for managing access to Azure Storage Blob Data with various built-in roles listed.](https://kodekloud.com/kk-media/image/upload/v1752884386/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Microsoft-Entra-ID-Authentication/azure-portal-role-assignment-storage.jpg)
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for adding a role assignment, specifically for the "Storage Blob Data Reader" role. A sidebar is open for selecting members, displaying a list of potential users to assign the role to.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884387/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Microsoft-Entra-ID-Authentication/azure-portal-role-assignment-storage-blob-reader.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for adding a role assignment, specifically for the "Storage Blob Data Reader" role. A sidebar is open for selecting members, displaying a list of potential users to assign the role to.](https://kodekloud.com/kk-media/image/upload/v1752884387/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Microsoft-Entra-ID-Authentication/azure-portal-role-assignment-storage-blob-reader.jpg)
 
 ***
 
@@ -123,9 +111,7 @@ Below is an example of an XML error response encountered when authentication is 
 
 Once the authentication headers are correctly set, Azure AD validates the token and the storage resource is successfully retrieved. Keep in mind that when the token expires, you must repeat the process to obtain a new token.
 
-<Frame>
-  ![The image shows a Postman interface with a POST request to an Azure AD token endpoint, displaying form data parameters and a JSON response containing an access token.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884389/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Microsoft-Entra-ID-Authentication/postman-azure-ad-token-request.jpg)
-</Frame>
+![The image shows a Postman interface with a POST request to an Azure AD token endpoint, displaying form data parameters and a JSON response containing an access token.](https://kodekloud.com/kk-media/image/upload/v1752884389/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Microsoft-Entra-ID-Authentication/postman-azure-ad-token-request.jpg)
 
 ***
 
@@ -135,6 +121,4 @@ By integrating Microsoft Entra ID Authentication with Azure RBAC, you achieve ro
 
 For further details on Azure administration and identity management, explore additional resources on [Azure Documentation](https://docs.microsoft.com/azure) and [Microsoft Entra](https://docs.microsoft.com/azure/active-directory/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/48d08f66-feb9-4bae-83b0-2e6aa34e24ae/lesson/d8b58f6f-2018-4125-94c3-9ceaa343755a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/48d08f66-feb9-4bae-83b0-2e6aa34e24ae/lesson/d8b58f6f-2018-4125-94c3-9ceaa343755a)

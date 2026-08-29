@@ -8,7 +8,7 @@ Amazon S3 (Simple Storage Service) is a fully managed object storage solution of
 
 ## Key Features
 
-![The image explains the features of Amazon S3 (Simple Storage Service), highlighting scalability, data availability, security, and performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869352/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/amazon-s3-features-scalability-security-performance.jpg)
+![The image explains the features of Amazon S3 (Simple Storage Service), highlighting scalability, data availability, security, and performance.](https://kodekloud.com/kk-media/image/upload/v1752869352/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/amazon-s3-features-scalability-security-performance.jpg)
 
 * Virtually unlimited storage capacity
 * 99.999999999% (11 9’s) of data durability
@@ -24,9 +24,9 @@ Because S3 is an AWS-native service, it integrates seamlessly with services like
 * AWS SDKs (e.g., Boto3 for Python)
 * RESTful API calls
 
-![The image compares cloud storage services, showing logos for Dropbox, Google Drive, and an S3 bucket, with the question "What is S3?"](../../../../images/kodekloud.com/kk-media/image/upload/v1752869353/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/cloud-storage-comparison-dropbox-google-s3.jpg)
+![The image compares cloud storage services, showing logos for Dropbox, Google Drive, and an S3 bucket, with the question "What is S3?"](https://kodekloud.com/kk-media/image/upload/v1752869353/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/cloud-storage-comparison-dropbox-google-s3.jpg)
 
-![The image is a diagram titled "What Is S3?" showing AWS services, including S3 (represented by a bucket icon), EC2, Lambda, and IAM.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869355/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/what-is-s3-aws-services-diagram.jpg)
+![The image is a diagram titled "What Is S3?" showing AWS services, including S3 (represented by a bucket icon), EC2, Lambda, and IAM.](https://kodekloud.com/kk-media/image/upload/v1752869355/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/what-is-s3-aws-services-diagram.jpg)
 
 ## Object Storage vs. File and Block Storage
 
@@ -38,7 +38,7 @@ S3 is **object-based** storage: you upload whole objects (files) rather than ind
 | File         | Shares directories over a network | NFS, Amazon EFS           |
 | Block        | Presents raw block devices to OS  | EBS, direct-attached SSDs |
 
-![The image explains S3 as object-based storage, contrasting it with file-based storage (NFS and EFS) and block-based storage (Server and EBS), indicating EFS and EBS as correct options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869356/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/s3-object-storage-vs-file-block.jpg)
+![The image explains S3 as object-based storage, contrasting it with file-based storage (NFS and EFS) and block-based storage (Server and EBS), indicating EFS and EBS as correct options.](https://kodekloud.com/kk-media/image/upload/v1752869356/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/s3-object-storage-vs-file-block.jpg)
 
 ## Common Use Cases
 
@@ -46,7 +46,7 @@ S3 is **object-based** storage: you upload whole objects (files) rather than ind
 * Hosting media assets (images, videos, audio)
 * Saving CI/CD pipeline artifacts
 
-![The image illustrates three S3 use cases: storing log files, media (audio/video/images), and CI/CD artifacts, with corresponding icons for each category.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869356/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/s3-use-cases-log-media-artifacts.jpg)
+![The image illustrates three S3 use cases: storing log files, media (audio/video/images), and CI/CD artifacts, with corresponding icons for each category.](https://kodekloud.com/kk-media/image/upload/v1752869356/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/s3-use-cases-log-media-artifacts.jpg)
 
 ## Real-World Example: Offloading Media for a Website
 
@@ -58,7 +58,7 @@ With S3:
 2. Offload large media files to an S3 bucket
 3. Reference S3 URLs in your HTML so browsers fetch content directly from S3
 
-![The image illustrates an S3 use case, showing a user interacting with a server to access video content, with a comparison to storing content in an S3 bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869358/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/s3-use-case-user-server-video-content.jpg)
+![The image illustrates an S3 use case, showing a user interacting with a server to access video content, with a comparison to storing content in an S3 bucket.](https://kodekloud.com/kk-media/image/upload/v1752869358/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-What-is-AWS-S3/s3-use-case-user-server-video-content.jpg)
 
 ## Key Terminology
 

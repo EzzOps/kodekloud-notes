@@ -18,16 +18,10 @@ The next step involves configuring Azure Alerts. Here, you will learn how to cre
 
 The third objective focuses on Azure Log Analytics. By setting up and managing Log Analytics workspaces, you can query and analyze the log data gathered by Azure Monitor. This powerful tool allows you to create complex queries, visualize data, and extract actionable insights for effective decision-making and troubleshooting.
 
-<Frame>
-  ![The image lists learning objectives related to configuring Azure Monitor, Azure Alerts, and Log Analytics, with a gradient blue background on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884687/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Module-Introduction/azure-monitor-alerts-log-analytics.jpg)
-</Frame>
+![The image lists learning objectives related to configuring Azure Monitor, Azure Alerts, and Log Analytics, with a gradient blue background on the left.](https://kodekloud.com/kk-media/image/upload/v1752884687/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Module-Introduction/azure-monitor-alerts-log-analytics.jpg)
 
-<Callout icon="lightbulb">
-  For comprehensive guidance on Azure Monitor and Alerts, refer to the [Azure Documentation](https://docs.microsoft.com/en-us/azure/monitoring/) and ensure you follow best practices for accurate data collection and effective alert configurations.
-</Callout>
+> **lightbulb** For comprehensive guidance on Azure Monitor and Alerts, refer to the [Azure Documentation](https://docs.microsoft.com/en-us/azure/monitoring/) and ensure you follow best practices for accurate data collection and effective alert configurations.
 
 Let’s begin by exploring Azure Monitor in greater detail.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/e208e27a-6519-4eb4-aaf1-342bb14def21/lesson/367ced34-2c5e-475c-8ac5-ef2d4ea424cf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/e208e27a-6519-4eb4-aaf1-342bb14def21/lesson/367ced34-2c5e-475c-8ac5-ef2d4ea424cf)

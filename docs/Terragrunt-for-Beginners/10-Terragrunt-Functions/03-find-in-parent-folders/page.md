@@ -13,9 +13,7 @@ This pattern helps you dynamically name resources or output modules based on dir
 * Terragrunt GitHub Repository: [https://github.com/gruntwork-io/terragrunt](https://github.com/gruntwork-io/terragrunt)
 * Best Practices for Infrastructure as Code: [https://www.hashicorp.com/resources/series/infrastructure-as-code-guide](https://www.hashicorp.com/resources/series/infrastructure-as-code-guide)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/5775621f-5504-4da8-835d-661cda37a852/lesson/de16959f-d86c-4a43-8b10-8dd6f3934411" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/5775621f-5504-4da8-835d-661cda37a852/lesson/de16959f-d86c-4a43-8b10-8dd6f3934411)
 
 
 # find in parent folders
@@ -26,9 +24,7 @@ This article explains how to use Terragrunt’s `find_in_parent_folders` functio
 
 Terragrunt’s built-in function `find_in_parent_folders` enables recursive searches up your directory tree to locate a specific file or folder. This approach is invaluable when you need to reference shared configurations or modules in a multi-layered project, removing the brittleness of hardcoded relative paths.
 
-<Frame>
-  ![The image shows a hierarchical arrangement of folder icons with the label "find\_in\_parent\_folders" at the top and "Functionality" at the bottom. It appears to represent a file system structure or search functionality within parent folders.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884349/notes-assets/images/Terragrunt-for-Beginners-find-in-parent-folders/find-in-parent-folders-hierarchy.jpg)
-</Frame>
+![The image shows a hierarchical arrangement of folder icons with the label "find\_in\_parent\_folders" at the top and "Functionality" at the bottom. It appears to represent a file system structure or search functionality within parent folders.](https://kodekloud.com/kk-media/image/upload/v1752884349/notes-assets/images/Terragrunt-for-Beginners-find-in-parent-folders/find-in-parent-folders-hierarchy.jpg)
 
 ## Why Use `find_in_parent_folders`?
 
@@ -38,9 +34,7 @@ By leveraging this function, you can:
 * Inherit and override settings across environments without manual path tweaks
 * Maintain cleaner, DRY (Don’t Repeat Yourself) configurations
 
-<Frame>
-  ![The image is a presentation slide titled "find\_in\_parent\_folders," highlighting two benefits: adapting based on configurations from parent folders and flexible configuration inheritance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884350/notes-assets/images/Terragrunt-for-Beginners-find-in-parent-folders/find-in-parent-folders-benefits-slide.jpg)
-</Frame>
+![The image is a presentation slide titled "find\_in\_parent\_folders," highlighting two benefits: adapting based on configurations from parent folders and flexible configuration inheritance.](https://kodekloud.com/kk-media/image/upload/v1752884350/notes-assets/images/Terragrunt-for-Beginners-find-in-parent-folders/find-in-parent-folders-benefits-slide.jpg)
 
 ## Best Practices
 
@@ -48,13 +42,9 @@ By leveraging this function, you can:
 * Use `find_in_parent_folders` inside `include` blocks to locate root-level `terragrunt.hcl`
 * Avoid embedding static paths; let Terragrunt resolve them dynamically
 
-<Frame>
-  ![The image is a diagram titled "find\_in\_parent\_folders" with icons and text explaining its use in modular environments and include blocks, along with a "Best Practices" button.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884351/notes-assets/images/Terragrunt-for-Beginners-find-in-parent-folders/find-in-parent-folders-diagram-best-practices.jpg)
-</Frame>
+![The image is a diagram titled "find\_in\_parent\_folders" with icons and text explaining its use in modular environments and include blocks, along with a "Best Practices" button.](https://kodekloud.com/kk-media/image/upload/v1752884351/notes-assets/images/Terragrunt-for-Beginners-find-in-parent-folders/find-in-parent-folders-diagram-best-practices.jpg)
 
-<Callout icon="lightbulb">
-  `find_in_parent_folders` stops when it hits the filesystem root or finds the target file. If the file isn’t present, Terragrunt throws an error.
-</Callout>
+> **lightbulb** `find_in_parent_folders` stops when it hits the filesystem root or finds the target file. If the file isn’t present, Terragrunt throws an error.
 
 ## Real-World Example
 
@@ -123,6 +113,4 @@ inputs = {
 * [Terragrunt Documentation: find\_in\_parent\_folders](https://terragrunt.gruntwork.io/docs/reference/functions/#find_in_parent_folders)
 * [Terragrunt Official Site](https://terragrunt.gruntwork.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/5775621f-5504-4da8-835d-661cda37a852/lesson/0fa40a93-2c92-4fb1-9ef6-5477ac7d9604" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/5775621f-5504-4da8-835d-661cda37a852/lesson/0fa40a93-2c92-4fb1-9ef6-5477ac7d9604)

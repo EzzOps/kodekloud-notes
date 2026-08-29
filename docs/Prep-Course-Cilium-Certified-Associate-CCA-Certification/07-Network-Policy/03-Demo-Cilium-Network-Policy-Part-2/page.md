@@ -290,13 +290,9 @@ Quick reference table — common policy patterns
 
 Key reminders and best practices
 
-<Callout icon="warning">
-  When a CiliumNetworkPolicy selects endpoints, it restricts traffic for those endpoints according to the policy rules. If you intend to keep open communication, do not create overly broad selectors without the desired allow rules (use empty from/to endpoints carefully).
-</Callout>
+> **warning** When a CiliumNetworkPolicy selects endpoints, it restricts traffic for those endpoints according to the policy rules. If you intend to keep open communication, do not create overly broad selectors without the desired allow rules (use empty from/to endpoints carefully).
 
-<Callout icon="lightbulb">
-  Quick YAML tip: Keys containing special characters (such as colons) must be quoted in YAML. Example: "k8s:io.kubernetes.pod.namespace": "prod"
-</Callout>
+> **lightbulb** Quick YAML tip: Keys containing special characters (such as colons) must be quoted in YAML. Example: "k8s:io.kubernetes.pod.namespace": "prod"
 
 * Default behavior: without any network policy selecting an endpoint, pods can communicate freely.
 * Once a CiliumNetworkPolicy selects an endpoint, traffic is restricted according to the policy rules you define.
@@ -306,9 +302,7 @@ Key reminders and best practices
 * To explicitly deny all ingress/egress to selected endpoints, provide an empty ingress/egress list.
 * Extend these L3/L3-only examples for L4/L7 controls and service-aware policies as needed. For advanced use cases, consult the official Cilium policy documentation: [https://docs.cilium.io/en/stable/policy/](https://docs.cilium.io/en/stable/policy/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/bf652c52-bb30-4bcc-9d18-c703f7b3e88a/lesson/506a1635-ece0-4c7f-91a5-b9f2baf408fd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/bf652c52-bb30-4bcc-9d18-c703f7b3e88a/lesson/506a1635-ece0-4c7f-91a5-b9f2baf408fd)
 
 
 # Demo Cilium Network Policy Part 2

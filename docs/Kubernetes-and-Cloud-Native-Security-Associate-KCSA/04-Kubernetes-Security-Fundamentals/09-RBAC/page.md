@@ -51,9 +51,7 @@ Save as `role-developer.yaml` and apply:
 kubectl apply -f role-developer.yaml
 ```
 
-<Callout icon="lightbulb">
-  Roles are namespace-scoped by default. To apply this Role in another namespace, add `namespace: your-namespace` under `metadata:`.
-</Callout>
+> **lightbulb** Roles are namespace-scoped by default. To apply this Role in another namespace, add `namespace: your-namespace` under `metadata:`.
 
 ***
 
@@ -82,9 +80,7 @@ Save as `rolebinding-devuser.yaml` and run:
 kubectl apply -f rolebinding-devuser.yaml
 ```
 
-<Callout icon="triangle-alert">
-  Ensure your Role and RoleBinding share the same namespace unless you intend to bind across namespaces.
-</Callout>
+> **triangle-alert** Ensure your Role and RoleBinding share the same namespace unless you intend to bind across namespaces.
 
 ***
 

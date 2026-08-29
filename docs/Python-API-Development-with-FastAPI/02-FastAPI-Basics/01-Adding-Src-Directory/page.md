@@ -41,9 +41,7 @@ INFO:     127.0.0.1:60785 - "GET /posts HTTP/1.1" 200 OK
 
 We are now creating a new folder named **app** to store our main application file. In Python, a folder can be used as a package if it contains an `__init__.py` file.
 
-<Callout icon="lightbulb">
-  Even though the `__init__.py` file can be empty, its presence is essential as it signals to Python that the folder should be treated as a package.
-</Callout>
+> **lightbulb** Even though the `__init__.py` file can be empty, its presence is essential as it signals to Python that the folder should be treated as a package.
 
 After creating the **app** folder and adding an `__init__.py` file inside it, move the main file into the **app** directory. At this point, you'll encounter an error because the startup command is still referencing the main file from the base directory.
 
@@ -107,6 +105,4 @@ Finally, test the endpoint for retrieving an individual post. For example, a GET
 
 Everything should now function as expected. This new structure will help keep your application code well-organized as you continue development.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/596cd5ff-911e-42b0-b1bf-4382941d04c1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/596cd5ff-911e-42b0-b1bf-4382941d04c1)

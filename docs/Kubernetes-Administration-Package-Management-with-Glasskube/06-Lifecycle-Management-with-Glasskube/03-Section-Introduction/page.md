@@ -34,20 +34,16 @@ Glasskube's multi-repository support gives you the flexibility to:
 
 Try adding a public and a private repository to see package discovery, authorization behavior, and the UI repository selector in action.
 
-<Callout icon="warning">
-  Always protect access tokens and follow least-privilege principles. Prefer fine-grained tokens or repository-scoped access when possible, and avoid embedding tokens in shared scripts or version control.
-</Callout>
+> **warning** Always protect access tokens and follow least-privilege principles. Prefer fine-grained tokens or repository-scoped access when possible, and avoid embedding tokens in shared scripts or version control.
 
 Links and references
 
 * Glasskube documentation: [https://docs.glasskube.dev/](https://docs.glasskube.dev/) (if available)
 * GitHub: Creating a personal access token — [https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/e651aa8d-8cb5-4d5c-ab54-c5e732ff9c21/lesson/8e389855-3f6b-49aa-80e9-f9490b659855" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/e651aa8d-8cb5-4d5c-ab54-c5e732ff9c21/lesson/8e389855-3f6b-49aa-80e9-f9490b659855)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/e651aa8d-8cb5-4d5c-ab54-c5e732ff9c21/lesson/93b42842-ad9c-424e-957d-8ae252726d58" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/e651aa8d-8cb5-4d5c-ab54-c5e732ff9c21/lesson/93b42842-ad9c-424e-957d-8ae252726d58)
 
 
 # Section Introduction
@@ -67,9 +63,7 @@ Glasskube uses continuous reconciliation and status reporting to create a two-wa
 * Safe promotion workflows with built-in testing hooks to reduce risk.
 * Multi-repo workflows to organize packages across environments and teams.
 
-<Callout icon="lightbulb">
-  Glasskube provides continuous reconciliation and status reporting to ensure packages remain in their intended state. This enables automated healing, clear status visibility, and safer promotion paths from testing to production.
-</Callout>
+> **lightbulb** Glasskube provides continuous reconciliation and status reporting to ensure packages remain in their intended state. This enables automated healing, clear status visibility, and safer promotion paths from testing to production.
 
 <Frame>
   <img alt="The image is a section overview with points about &#x22;Lifecycle Management&#x22; and &#x22;Multi-Repo Feature,&#x22; including tasks like updating, configuration changes, deleting, and testing." />
@@ -91,6 +85,4 @@ Links and references
 * [GitOps principles and practices](https://www.gitops.tech/)
 * [Kubernetes Operators (concepts)](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/e651aa8d-8cb5-4d5c-ab54-c5e732ff9c21/lesson/128115d4-ceed-424a-819e-620f9a63cbca" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/e651aa8d-8cb5-4d5c-ab54-c5e732ff9c21/lesson/128115d4-ceed-424a-819e-620f9a63cbca)

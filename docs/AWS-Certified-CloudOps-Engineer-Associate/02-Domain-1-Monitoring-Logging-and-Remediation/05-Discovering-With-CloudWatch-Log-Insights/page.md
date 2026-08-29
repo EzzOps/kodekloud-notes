@@ -8,7 +8,7 @@ Welcome students. In this article, we explore CloudWatch Log Insights, a powerfu
 
 CloudWatch Log Insights is an analytics tool that allows you to query and visualize log data effortlessly. For instance, if your AWS Lambda functions emit logs to CloudWatch, you can quickly extract trends, identify application errors, detect security breaches, or diagnose performance bottlenecks using Log Insights. Its SQL-like query language supports filtering, aggregation, and immediate visualization, making it a vital tool for operational insights.
 
-![The image is a flowchart illustrating the process of emitting logs from AWS Lambda to Amazon CloudWatch, then to CloudWatch Logs, and finally to CloudWatch Log Insights.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859936/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Discovering-With-CloudWatch-Log-Insights/aws-lambda-logs-flowchart.jpg)
+![The image is a flowchart illustrating the process of emitting logs from AWS Lambda to Amazon CloudWatch, then to CloudWatch Logs, and finally to CloudWatch Log Insights.](https://kodekloud.com/kk-media/image/upload/v1752859936/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Discovering-With-CloudWatch-Log-Insights/aws-lambda-logs-flowchart.jpg)
 
 Key features of CloudWatch Log Insights include:
 
@@ -17,7 +17,7 @@ Key features of CloudWatch Log Insights include:
 * Instant visualization and dashboard integrations
 * Natural language query generation that converts simple textual requests into complex queries
 
-![The image lists key features of CloudWatch Logs Insights, including real-time log analysis, a powerful query language, visualization and dashboard creation, and natural language query generation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859938/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Discovering-With-CloudWatch-Log-Insights/cloudwatch-logs-insights-features.jpg)
+![The image lists key features of CloudWatch Logs Insights, including real-time log analysis, a powerful query language, visualization and dashboard creation, and natural language query generation.](https://kodekloud.com/kk-media/image/upload/v1752859938/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Discovering-With-CloudWatch-Log-Insights/cloudwatch-logs-insights-features.jpg)
 
 ## Example Query: Filtering S3 Events
 
@@ -34,7 +34,7 @@ In CloudWatch logs, each event includes a timestamp and a message field. The mes
 
 Once the logs are filtered, visualizing the query results is straightforward. CloudWatch Log Insights supports multiple graph types, including line, stacked area, bar, and pie charts. These visualization widgets can be incorporated into CloudWatch Dashboards to build comprehensive monitoring views.
 
-![The image shows four types of data visualization options: Line, Stacked Area, Bar, and Pie charts, each represented by a colorful icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859938/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Discovering-With-CloudWatch-Log-Insights/data-visualization-line-area-bar-pie.jpg)
+![The image shows four types of data visualization options: Line, Stacked Area, Bar, and Pie charts, each represented by a colorful icon.](https://kodekloud.com/kk-media/image/upload/v1752859938/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Discovering-With-CloudWatch-Log-Insights/data-visualization-line-area-bar-pie.jpg)
 
 ## Advanced Query: Natural Language Query Generation
 

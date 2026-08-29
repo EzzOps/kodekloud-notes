@@ -48,11 +48,9 @@ By comparing these runs, you’ll see the poem’s structure and word choice cha
 
 Next up: using these parameters to automate full blog-post generation—stay tuned!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/e983525e-3a5a-4043-9319-4f259e41bc79/lesson/be0b7d28-12de-433c-a012-f206fdc01a71" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/e983525e-3a5a-4043-9319-4f259e41bc79/lesson/be0b7d28-12de-433c-a012-f206fdc01a71)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/e983525e-3a5a-4043-9319-4f259e41bc79/lesson/b3fccdf8-d6a6-4999-8765-c4ea22fcdd00" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/e983525e-3a5a-4043-9319-4f259e41bc79/lesson/b3fccdf8-d6a6-4999-8765-c4ea22fcdd00)
 
 
 # What are Tokens
@@ -109,9 +107,7 @@ Two practical ways to explore how text maps to tokens:
   <img alt="A slide titled &#x22;Tools to Explore Tokens&#x22; showing two screenshots: OpenAI's online Tokenizer tool on the left (https://platform.openai.com/tokenizer) and the tiktoken GitHub repository on the right (https://github.com/openai/tiktoken). The images highlight tokenized text, token counts, and repository files." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Always use the tokenizer/encoding associated with the model you are calling (for example, use the encoding for "gpt-3.5-turbo" when calling that model). Token counts and token IDs differ across encodings.
-</Callout>
+> **lightbulb** Always use the tokenizer/encoding associated with the model you are calling (for example, use the encoding for "gpt-3.5-turbo" when calling that model). Token counts and token IDs differ across encodings.
 
 ## Encoding and decoding with tiktoken (example)
 

@@ -6,9 +6,7 @@ This article explores how retries in Virtual Services enhance service resiliency
 
 In this article, we explore how retries work with Virtual Services to improve service resiliency. By offloading retry logic to your Virtual Services configuration, you avoid embedding complex error-handling code within your application, resulting in cleaner and more maintainable code.
 
-<Callout icon="lightbulb">
-  Retries enable your service to automatically attempt to reconnect when a connection failure occurs between services. This helps mitigate transient network issues without modifying your application code.
-</Callout>
+> **lightbulb** Retries enable your service to automatically attempt to reconnect when a connection failure occurs between services. This helps mitigate transient network issues without modifying your application code.
 
 ## How Retries Work
 
@@ -54,12 +52,8 @@ This configuration instructs Istio to attempt routing the request **three times*
 
 Retries are defined at the Virtual Service level, which centralizes error handling and simplifies the overall service architecture. By adjusting the retry settings, you can control how long to wait between attempts and when to stop retrying, thereby enhancing the overall resilience of your application.
 
-<Callout icon="lightbulb">
-  Configuring retries at the Virtual Service level helps manage transient failures gracefully, reducing the need for custom retry logic within your application code. For more details, check out [Istio’s retry documentation](https://istio.io/latest/docs/concepts/traffic-management/#retries).
-</Callout>
+> **lightbulb** Configuring retries at the Virtual Service level helps manage transient failures gracefully, reducing the need for custom retry logic within your application code. For more details, check out [Istio’s retry documentation](https://istio.io/latest/docs/concepts/traffic-management/#retries).
 
 By leveraging these retry settings, you ensure that transient issues are managed effectively, providing a robust and resilient service infrastructure without additional overhead in your core application code.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/b123f4a3-6b8a-4e6d-ae52-2c5b2727f122" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/b123f4a3-6b8a-4e6d-ae52-2c5b2727f122)

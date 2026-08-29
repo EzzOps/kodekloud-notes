@@ -43,9 +43,7 @@ data "azurerm_virtual_network" "existing_vnet" {
 
 Summary: resources manage lifecycle and are tracked in state; data sources read and expose attributes from existing infrastructure without taking ownership.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/5e64ee11-c3c3-4d9c-be0c-53989a38ae8f/lesson/b8bbdea5-fe8a-4bd7-9dc9-404608a1ee45" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/5e64ee11-c3c3-4d9c-be0c-53989a38ae8f/lesson/b8bbdea5-fe8a-4bd7-9dc9-404608a1ee45)
 
 
 # What are data sources

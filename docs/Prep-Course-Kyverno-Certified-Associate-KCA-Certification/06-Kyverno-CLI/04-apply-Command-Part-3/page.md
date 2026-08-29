@@ -43,9 +43,7 @@ kyverno apply policy.yaml --cluster
 kyverno apply policy.yaml --cluster -p
 ```
 
-<Callout icon="lightbulb">
-  When using `--cluster`, the CLI queries the cluster for matching resources. Note that local `--resource` files and `--cluster` mode are mutually exclusive — choose one workflow per run.
-</Callout>
+> **lightbulb** When using `--cluster`, the CLI queries the cluster for matching resources. Note that local `--resource` files and `--cluster` mode are mutually exclusive — choose one workflow per run.
 
 Testing PolicyExceptions locally
 
@@ -118,9 +116,7 @@ kyverno apply policy.yaml --resource pod.yaml -f values.yaml
 
 This tells the CLI that the `test1` namespace has the `foo.com/managed-state: managed` label, enabling correct evaluation of `namespaceSelector` conditions during local tests.
 
-<Callout icon="warning">
-  Ensure your Values file uses the correct API version and structure (`apiVersion: cli.kyverno.io/v1alpha1`, `kind: Values`) and accurately models the namespace labels or other objects referenced by your policy; otherwise selectors may evaluate incorrectly.
-</Callout>
+> **warning** Ensure your Values file uses the correct API version and structure (`apiVersion: cli.kyverno.io/v1alpha1`, `kind: Values`) and accurately models the namespace labels or other objects referenced by your policy; otherwise selectors may evaluate incorrectly.
 
 Quick reference: common `kyverno apply` flags
 
@@ -152,9 +148,7 @@ Links and references
 * Kyverno PolicyReport: [https://kyverno.io/docs/writing-policies/policy-report/](https://kyverno.io/docs/writing-policies/policy-report/)
 * Kubernetes API concepts: [https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f4ceb35e-5c8e-4601-856b-997a26924a4a/lesson/39a0c661-56f3-4f8c-be9d-8ef0bb6246ff" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f4ceb35e-5c8e-4601-856b-997a26924a4a/lesson/39a0c661-56f3-4f8c-be9d-8ef0bb6246ff)
 
 
 # apply Command Part 3
@@ -291,9 +285,7 @@ Example CLI invocation:
 kyverno apply mutate-secret-policy.yaml --resource trigger-configmap.yaml --target-resource secret-1.yaml
 ```
 
-<Callout icon="lightbulb">
-  Use `--target-resource` when the object to be mutated is not the same as the trigger resource. This lets the CLI load the target’s current state and show the exact mutation that would be performed.
-</Callout>
+> **lightbulb** Use `--target-resource` when the object to be mutated is not the same as the trigger resource. This lets the CLI load the target’s current state and show the exact mutation that would be performed.
 
 ## Previewing generate rules
 
@@ -320,8 +312,6 @@ Generate rules create new resources (for example, a `NetworkPolicy` when a `Name
 
 This is it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f4ceb35e-5c8e-4601-856b-997a26924a4a/lesson/8a72365e-c791-4f2d-a0b8-5a8e56d90e4c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f4ceb35e-5c8e-4601-856b-997a26924a4a/lesson/8a72365e-c791-4f2d-a0b8-5a8e56d90e4c)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f4ceb35e-5c8e-4601-856b-997a26924a4a/lesson/f80c24c6-7690-4ca3-bee8-c0e3238afbb1" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f4ceb35e-5c8e-4601-856b-997a26924a4a/lesson/f80c24c6-7690-4ca3-bee8-c0e3238afbb1)

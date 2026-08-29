@@ -44,9 +44,7 @@ print(result)
 # 'The largest Llama 3 model will have over 400 billion parameters.'
 ```
 
-<Callout icon="lightbulb">
-  The key idea: switch the loader (for example, `PyPDFLoader` -> `WebBaseLoader`) to change your source from PDFs to webpages. The rest of the RAG pipeline—splitting, embeddings, vector store, retriever, prompt, and LLM—remains the same.
-</Callout>
+> **lightbulb** The key idea: switch the loader (for example, `PyPDFLoader` -> `WebBaseLoader`) to change your source from PDFs to webpages. The rest of the RAG pipeline—splitting, embeddings, vector store, retriever, prompt, and LLM—remains the same.
 
 Workflow summary
 
@@ -76,11 +74,9 @@ Links and references
 
 Try replacing the `URL` with your own webpages or switching to `PyPDFLoader` to use PDFs. You can also plug this retrieval step into higher-level prebuilt chains for summarization, QA, or citation-aware responses.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/9b858443-cf1c-4573-b52f-7a1740cd473c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/9b858443-cf1c-4573-b52f-7a1740cd473c)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/124c59d6-584f-4ab5-8190-8f83f35a14ab" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langchain/module/e47b44c9-65c3-46f8-8bed-b075a18ab12b/lesson/124c59d6-584f-4ab5-8190-8f83f35a14ab)
 
 
 # Callbacks

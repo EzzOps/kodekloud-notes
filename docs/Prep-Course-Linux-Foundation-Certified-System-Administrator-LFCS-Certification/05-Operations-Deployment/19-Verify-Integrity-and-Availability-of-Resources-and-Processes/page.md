@@ -72,9 +72,7 @@ This script uses tar to create an archive at /tmp/archive.tar.gz that contains t
 tar -tf /tmp/archive.tar.gz
 ```
 
-<Callout icon="lightbulb">
-  Re-running this script will overwrite the existing archive. Adding backup logic can preserve previous archives.
-</Callout>
+> **lightbulb** Re-running this script will overwrite the existing archive. Adding backup logic can preserve previous archives.
 
 ──────────────────────────────
 
@@ -176,15 +174,11 @@ This script exemplifies standard practices in shell scripting, including proper 
 
 To further enhance your bash scripting skills, consider exploring advanced courses. The [Shell Scripts for Beginners](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners) course on KodeKloud is an excellent resource that provides hands-on labs and practical exercises along with clear theoretical explanations.
 
-<Frame>
-  ![The image is an advertisement for a "Shell Scripts for Beginners" course by KodeKloud, featuring a 3D illustration of a rocket and penguins on a circuit board, alongside a list of course contents.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881354/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Use-Scripting-to-Automate-System-Maintenance-Tasks/shell-scripts-beginners-advertisement.jpg)
-</Frame>
+![The image is an advertisement for a "Shell Scripts for Beginners" course by KodeKloud, featuring a 3D illustration of a rocket and penguins on a circuit board, alongside a list of course contents.](https://kodekloud.com/kk-media/image/upload/v1752881354/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Use-Scripting-to-Automate-System-Maintenance-Tasks/shell-scripts-beginners-advertisement.jpg)
 
 This concludes our guide on using scripting to automate system maintenance tasks. By mastering these techniques, you can ensure efficient system performance and streamline routine administrative operations.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/c72b7e37-8a66-4afc-b9c3-36119965215b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/c72b7e37-8a66-4afc-b9c3-36119965215b)
 
 
 # Verify Integrity and Availability of Resources and Processes
@@ -253,9 +247,7 @@ Swap:         2.0Gi          0B       2.0Gi
 
 In this example, the "used" value might appear high, but the "available" column indicates that 2.4 GiB of memory can still be reclaimed if necessary. Temporary memory used for caching large files does not prevent the memory from being available to applications.
 
-<Callout icon="lightbulb">
-  Use the "free -h" command as a quick reference to ensure your system has adequate memory, especially when running high-load applications.
-</Callout>
+> **lightbulb** Use the "free -h" command as a quick reference to ensure your system has adequate memory, especially when running high-load applications.
 
 ─────────────────────────────────────────────
 
@@ -276,13 +268,9 @@ A load average of 1.0 over the last minute indicates that one CPU core has been 
 
 Before checking a file system for errors, ensure it is unmounted. File system checks differ depending on whether your system uses XFS or ext4. For more detailed information on file systems, partitions, mounting, and unmounting, refer to our upcoming storage sections.
 
-<Frame>
-  ![The image provides information on file system integrity, noting that file systems must be unmounted to check for errors. It mentions that Redhat OS uses xfs as the default file system, while Ubuntu OS uses ext4.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881355/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Verify-Integrity-and-Availability-of-Resources-and-Processes/file-system-integrity-checks-redhat-ubuntu.jpg)
-</Frame>
+![The image provides information on file system integrity, noting that file systems must be unmounted to check for errors. It mentions that Redhat OS uses xfs as the default file system, while Ubuntu OS uses ext4.](https://kodekloud.com/kk-media/image/upload/v1752881355/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Verify-Integrity-and-Availability-of-Resources-and-Processes/file-system-integrity-checks-redhat-ubuntu.jpg)
 
-<Callout icon="lightbulb">
-  Operating systems in the Red Hat family typically use the XFS file system by default, while Ubuntu systems use ext4.
-</Callout>
+> **lightbulb** Operating systems in the Red Hat family typically use the XFS file system by default, while Ubuntu systems use ext4.
 
 To verify an XFS file system, run:
 

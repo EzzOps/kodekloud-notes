@@ -29,7 +29,7 @@ Imagine an e-commerce site where, after a successful payment, warehouse staff au
 4. The Lambda function formats order details and sends an email to the warehouse team.
 5. Warehouse staff receive the notification, pack the items, and dispatch the shipment.
 
-![The image illustrates a real-world use case of AWS EventBridge, showing a flow from user interaction through an auto-scaling group, successful payment, event triggering, and rule processing with a Lambda function, leading to email notifications and warehouse updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862422/notes-assets/images/AWS-CloudWatch-CloudWatch-Events-EventBridge-Event-Buses/aws-eventbridge-use-case-flow-diagram.jpg)
+![The image illustrates a real-world use case of AWS EventBridge, showing a flow from user interaction through an auto-scaling group, successful payment, event triggering, and rule processing with a Lambda function, leading to email notifications and warehouse updates.](https://kodekloud.com/kk-media/image/upload/v1752862422/notes-assets/images/AWS-CloudWatch-CloudWatch-Events-EventBridge-Event-Buses/aws-eventbridge-use-case-flow-diagram.jpg)
 
 ### Sample EventBridge Rule (AWS CLI)
 

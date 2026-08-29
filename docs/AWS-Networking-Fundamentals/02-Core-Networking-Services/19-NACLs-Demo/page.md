@@ -42,9 +42,9 @@ Before testing NACL behavior, make sure your EC2 security group is wide open so 
 3. Attach the `webserver-sg` security group to both instances.
 4. Edit **Inbound** and **Outbound** rules to allow all traffic (All protocols, All ports, Source/Destination `0.0.0.0/0`).
 
-![The image shows an AWS EC2 Management Console with two running instances, "server-2" and "server1," both of type t2.micro. The details of "server1" are displayed, including security group information and inbound rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863275/notes-assets/images/AWS-Networking-Fundamentals-NACLs-Demo/aws-ec2-management-console-instances.jpg)
+![The image shows an AWS EC2 Management Console with two running instances, "server-2" and "server1," both of type t2.micro. The details of "server1" are displayed, including security group information and inbound rules.](https://kodekloud.com/kk-media/image/upload/v1752863275/notes-assets/images/AWS-Networking-Fundamentals-NACLs-Demo/aws-ec2-management-console-instances.jpg)
 
-![The image shows an AWS EC2 Management Console screen displaying details of a security group named "webserver-sg," including its inbound and outbound rules. The outbound rules section is highlighted, showing a rule allowing all traffic to destination 0.0.0.0/0.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863276/notes-assets/images/AWS-Networking-Fundamentals-NACLs-Demo/aws-ec2-security-group-outbound-rules.jpg)
+![The image shows an AWS EC2 Management Console screen displaying details of a security group named "webserver-sg," including its inbound and outbound rules. The outbound rules section is highlighted, showing a rule allowing all traffic to destination 0.0.0.0/0.](https://kodekloud.com/kk-media/image/upload/v1752863276/notes-assets/images/AWS-Networking-Fundamentals-NACLs-Demo/aws-ec2-security-group-outbound-rules.jpg)
 
 ***
 
@@ -68,7 +68,7 @@ Navigate to **VPC** → **Security** → **Network ACLs**. Select the default AC
 
 Because rule 100 catches all traffic first, the deny rule never applies.
 
-![The image shows the AWS Management Console displaying the Network ACLs section, listing various ACLs with details such as associated subnets and inbound rules. The selected ACL has inbound rules allowing and denying all traffic from any source.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863277/notes-assets/images/AWS-Networking-Fundamentals-NACLs-Demo/aws-management-console-network-acls.jpg)
+![The image shows the AWS Management Console displaying the Network ACLs section, listing various ACLs with details such as associated subnets and inbound rules. The selected ACL has inbound rules allowing and denying all traffic from any source.](https://kodekloud.com/kk-media/image/upload/v1752863277/notes-assets/images/AWS-Networking-Fundamentals-NACLs-Demo/aws-management-console-network-acls.jpg)
 
 ***
 

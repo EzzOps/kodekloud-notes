@@ -6,9 +6,7 @@ This article introduces Jinja2, a Python templating engine, and explores its fea
 
 In this lesson, we delve into Jinja2—a robust templating engine for Python known for its flexibility and power. Templating enables you to design a foundational content structure (the template) and dynamically substitute specific values using variables. Imagine a CEO wishing to send out party invitations where each email includes unique details such as the recipient's name and family members. In this case, the invitation layout serves as the template while the names become the dynamic variables. This approach is widely used in IT for creating customized web pages and generating configuration files with automation tools.
 
-<Frame>
-  ![The image shows a "Templating Engine" with four personalized invitation letters for a company event, each addressed to different individuals and their families.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881075/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Introduction-to-Templating/frame_80.jpg)
-</Frame>
+![The image shows a "Templating Engine" with four personalized invitation letters for a company event, each addressed to different individuals and their families.](https://kodekloud.com/kk-media/image/upload/v1752881075/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Introduction-to-Templating/frame_80.jpg)
 
 !!! note "Tip"
 For further reading on templating fundamentals, consider exploring other related concepts in your automation projects.
@@ -70,9 +68,7 @@ When the appropriate variables are applied, these templates yield valid and read
 
 Jinja2 offers an extensive set of features making it a top choice for templating in Python-based projects. Its elegant syntax and comprehensive documentation make it accessible for both beginners and advanced users. For more detailed information and advanced examples, refer to the official [Jinja2 documentation](https://jinja.palletsprojects.com/).
 
-<Frame>
-  ![The image shows the Jinja2 documentation homepage, featuring project links, a quick search bar, and a table of contents for the templating engine's features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881075/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Introduction-to-Templating/frame_140.jpg)
-</Frame>
+![The image shows the Jinja2 documentation homepage, featuring project links, a quick search bar, and a table of contents for the templating engine's features.](https://kodekloud.com/kk-media/image/upload/v1752881075/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Introduction-to-Templating/frame_140.jpg)
 
 ## Basic Substitution and Filters
 
@@ -143,6 +139,4 @@ Jinja2 supports classic programming control structures including loops and condi
 
 This concludes our lesson on Jinja2 templating basics. For additional resources on templating practices and advanced Jinja2 techniques, explore more guides and documentation available online.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/920849be-3dc5-4a4a-b398-67d89b67c710/lesson/f8a3603b-f701-4d52-b401-721d10cb6c40" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/920849be-3dc5-4a4a-b398-67d89b67c710/lesson/f8a3603b-f701-4d52-b401-721d10cb6c40)

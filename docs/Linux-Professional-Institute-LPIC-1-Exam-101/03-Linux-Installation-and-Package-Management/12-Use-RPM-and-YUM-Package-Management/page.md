@@ -74,9 +74,7 @@ sudo zypper modifyrepo -F repo-non-oss
 * [openSUSE Documentation](https://en.opensuse.org/Portal:Zypper)
 * [SUSE Linux Enterprise Server](https://www.suse.com/products/server/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/ae5d58db-cf95-4eec-9da4-e879559d4af8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/ae5d58db-cf95-4eec-9da4-e879559d4af8)
 
 
 # Use RPM and YUM Package Management
@@ -87,13 +85,11 @@ This guide covers using YUM and DNF for package management on RHEL, including sy
 
 Managing software on Red Hat Enterprise Linux (RHEL) relies on YUM (Yellowdog Updater, Modified) or its successor, `dnf`. In this guide, you’ll learn how to register your system, configure repositories, and install, update, or remove packages. Most `yum` commands work identically with `dnf`; just replace `yum` with `dnf` where desired.
 
-<Callout icon="lightbulb">
-  If you prefer `dnf` over `yum`, you can use it interchangeably, for example:
+> **lightbulb** If you prefer `dnf` over `yum`, you can use it interchangeably, for example:
 
   ```bash theme={null}
   sudo dnf install httpd
   ```
-</Callout>
 
 ***
 
@@ -113,9 +109,7 @@ Once registered, attach the system automatically:
 sudo subscription-manager attach --auto
 ```
 
-<Callout icon="triangle-alert">
-  Ensure your subscription is active; expired subscriptions will prevent you from installing or updating packages.
-</Callout>
+> **triangle-alert** Ensure your subscription is active; expired subscriptions will prevent you from installing or updating packages.
 
 ***
 

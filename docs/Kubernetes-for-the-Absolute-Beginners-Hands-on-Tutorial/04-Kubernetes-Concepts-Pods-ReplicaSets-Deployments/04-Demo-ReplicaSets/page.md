@@ -52,9 +52,7 @@ spec:
       image: nginx
 ```
 
-<Callout icon="lightbulb">
-  The label defined in the ReplicaSet's metadata (e.g., `app: myapp`) is not used for matching. Ensure that the label in the Pod template and the selector (here, `env: production`) match exactly to allow the ReplicaSet to manage the pods properly.
-</Callout>
+> **lightbulb** The label defined in the ReplicaSet's metadata (e.g., `app: myapp`) is not used for matching. Ensure that the label in the Pod template and the selector (here, `env: production`) match exactly to allow the ReplicaSet to manage the pods properly.
 
 ## Deploying the ReplicaSet
 
@@ -232,14 +230,10 @@ myapp-replicaset-jlgr2   1/1     Running   0          6m50s
 myapp-replicaset-pm4rl   1/1     Running   0          6m50s
 ```
 
-<Callout icon="lightbulb">
-  This lesson demonstrated how to create, manage, update, and scale a ReplicaSet in Kubernetes. Using ReplicaSets ensures that the desired number of pod replicas are consistently maintained, promoting high availability in your deployments.
-</Callout>
+> **lightbulb** This lesson demonstrated how to create, manage, update, and scale a ReplicaSet in Kubernetes. Using ReplicaSets ensures that the desired number of pod replicas are consistently maintained, promoting high availability in your deployments.
 
 Happy clustering! For further reading, check out the [Kubernetes Documentation](https://kubernetes.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/40e62ea3-3cef-494c-aa04-c5480ea2a901" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/40e62ea3-3cef-494c-aa04-c5480ea2a901)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/21cad4d7-4f5c-4896-b8dd-dea4a55b6c05" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/21cad4d7-4f5c-4896-b8dd-dea4a55b6c05)

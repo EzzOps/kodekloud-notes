@@ -8,15 +8,11 @@ Hi everyone,
 
 In this lesson, we’re diving into k9s—one of the most efficient tools for managing your Kubernetes clusters. k9s is a terminal-based UI that provides almost all the capabilities of kubectl, but with a polished, interactive interface and a variety of shortcuts to boost your productivity. If you prefer working in the terminal over a web-based console, k9s is an excellent choice.
 
-<Frame>
-  ![The image shows a stylized dog face with Kubernetes logos as glasses, promoting "k9s," a Kubernetes CLI tool. The text includes a playful tagline, "Who Let The Pods Out?"](../../../../images/kodekloud.com/kk-media/image/upload/v1752880419/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-k9s-Walkthrough/k9s-dog-face-kubernetes-glasses.jpg)
-</Frame>
+![The image shows a stylized dog face with Kubernetes logos as glasses, promoting "k9s," a Kubernetes CLI tool. The text includes a playful tagline, "Who Let The Pods Out?"](https://kodekloud.com/kk-media/image/upload/v1752880419/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-k9s-Walkthrough/k9s-dog-face-kubernetes-glasses.jpg)
 
 Think of k9s as an enhanced, visually engaging version of kubectl. Scroll down for OS-specific installation instructions and a collection of useful examples within the official documentation.
 
-<Frame>
-  ![The image shows a webpage from k9scli.io featuring a section on documentation with links to installation, commands, customizations, benchmarking, RBAC, and tutorials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880421/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-k9s-Walkthrough/k9scli-documentation-webpage.jpg)
-</Frame>
+![The image shows a webpage from k9scli.io featuring a section on documentation with links to installation, commands, customizations, benchmarking, RBAC, and tutorials.](https://kodekloud.com/kk-media/image/upload/v1752880421/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-k9s-Walkthrough/k9scli-documentation-webpage.jpg)
 
 ## Connecting to Your Cluster
 
@@ -32,13 +28,9 @@ Once started, you’ll see several key sections on the screen:
 * **Middle**: Shows a list of namespaces, dynamically updating based on your usage.
 * **Right**: Lists available keyboard shortcuts corresponding to the selected resource (e.g., D for describe, Ctrl-D for delete, E for edit).
 
-<Frame>
-  ![The image shows a terminal interface for managing Kubernetes pods, displaying details about a running "nginx" pod, including its status, CPU, memory usage, and node information. It also includes a list of keyboard shortcuts for various actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880422/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-k9s-Walkthrough/kubernetes-pod-management-terminal.jpg)
-</Frame>
+![The image shows a terminal interface for managing Kubernetes pods, displaying details about a running "nginx" pod, including its status, CPU, memory usage, and node information. It also includes a list of keyboard shortcuts for various actions.](https://kodekloud.com/kk-media/image/upload/v1752880422/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-k9s-Walkthrough/kubernetes-pod-management-terminal.jpg)
 
-<Callout icon="lightbulb">
-  The navigation shortcuts in k9s resemble Vim/VI commands. If you’re not familiar with Vim, consider spending a few minutes learning its basic commands to enhance your k9s experience.
-</Callout>
+> **lightbulb** The navigation shortcuts in k9s resemble Vim/VI commands. If you’re not familiar with Vim, consider spending a few minutes learning its basic commands to enhance your k9s experience.
 
 ## Navigating Resources
 
@@ -117,9 +109,7 @@ When you select a pod, the available key bindings change to actions specific to 
 
 Press **D** to display detailed information about a resource (the equivalent of running `kubectl describe`). Additionally, pressing **S** can launch a shell within a container, simplifying command execution.
 
-<Frame>
-  ![The image shows a terminal interface displaying Kubernetes pod details, including environment, conditions, volumes, and events related to the deployment of an Nginx container.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880423/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-k9s-Walkthrough/kubernetes-pod-details-nginx-deployment.jpg)
-</Frame>
+![The image shows a terminal interface displaying Kubernetes pod details, including environment, conditions, volumes, and events related to the deployment of an Nginx container.](https://kodekloud.com/kk-media/image/upload/v1752880423/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-k9s-Walkthrough/kubernetes-pod-details-nginx-deployment.jpg)
 
 ## Editing and Scaling Deployments
 
@@ -145,15 +135,11 @@ spec:
   replicas: 1
 ```
 
-<Callout icon="lightbulb">
-  By default, k9s uses Vim as its editor, but you can configure it to use Nano or another editor of your choice.
-</Callout>
+> **lightbulb** By default, k9s uses Vim as its editor, but you can configure it to use Nano or another editor of your choice.
 
 Deployments also provide shortcuts for actions like restarting (**R**) and scaling, allowing you to adjust the number of replicas and see changes in real time.
 
-<Frame>
-  ![The image shows a Kubernetes dashboard interface displaying various deployments and their statuses, with a pop-up window for scaling a specific deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880424/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-k9s-Walkthrough/kubernetes-dashboard-deployments-statuses.jpg)
-</Frame>
+![The image shows a Kubernetes dashboard interface displaying various deployments and their statuses, with a pop-up window for scaling a specific deployment.](https://kodekloud.com/kk-media/image/upload/v1752880424/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-k9s-Walkthrough/kubernetes-dashboard-deployments-statuses.jpg)
 
 Additionally, port-forwarding is available when needed for troubleshooting.
 
@@ -161,9 +147,7 @@ Additionally, port-forwarding is available when needed for troubleshooting.
 
 When viewing services, k9s offers sorting options to help you quickly locate the desired resource. For example, press **Shift+A** to sort services by age, and press the same key again to reverse the order. Similarly, press **Shift+N** to sort services by name.
 
-<Frame>
-  ![The image shows a terminal interface displaying Kubernetes services, including details like namespace, name, type, cluster IP, ports, and age. It includes a list of services with their respective configurations and status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880426/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-k9s-Walkthrough/kubernetes-services-terminal-interface.jpg)
-</Frame>
+![The image shows a terminal interface displaying Kubernetes services, including details like namespace, name, type, cluster IP, ports, and age. It includes a list of services with their respective configurations and status.](https://kodekloud.com/kk-media/image/upload/v1752880426/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-k9s-Walkthrough/kubernetes-services-terminal-interface.jpg)
 
 Another handy shortcut is **Control+A**, which displays all resource kinds available. You can then type a resource name—such as "deployments"—to quickly filter and review them. An example output for deployments might look like:
 
@@ -196,9 +180,7 @@ staging                 notes-app-deployment                     2/2    2       
 
 k9s also provides a unique perspective on role-based access control (RBAC). By inspecting resources like role bindings, you can view detailed permission visualizations. These visualizations illustrate which actions (e.g., get, list, watch, create, update) are permitted on resources like ConfigMaps and highlight any restrictions (e.g., patch, delete).
 
-<Frame>
-  ![The image shows a terminal interface displaying Kubernetes role-based access control (RBAC) permissions for various resources, with checkmarks and crosses indicating allowed and disallowed actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880426/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-k9s-Walkthrough/kubernetes-rbac-permissions-terminal.jpg)
-</Frame>
+![The image shows a terminal interface displaying Kubernetes role-based access control (RBAC) permissions for various resources, with checkmarks and crosses indicating allowed and disallowed actions.](https://kodekloud.com/kk-media/image/upload/v1752880426/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-k9s-Walkthrough/kubernetes-rbac-permissions-terminal.jpg)
 
 ## Custom Dashboards and Resource Overviews
 
@@ -209,9 +191,7 @@ k9s includes several dashboards to provide a comprehensive overview of your Kube
 * **Metrics Dashboard**: Access real-time CPU and memory metrics if a metrics server is installed.
 * **X-Ray Dashboard**: Dive deep into resource relationships, such as the connections between deployments, pods, containers, namespaces, and service accounts.
 
-<Frame>
-  ![The image shows a Kubernetes dashboard displaying various metrics such as deployments, replicasets, statefulsets, and resource usage (CPU and memory) with visual bar graphs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880428/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-k9s-Walkthrough/kubernetes-dashboard-metrics-visuals.jpg)
-</Frame>
+![The image shows a Kubernetes dashboard displaying various metrics such as deployments, replicasets, statefulsets, and resource usage (CPU and memory) with visual bar graphs.](https://kodekloud.com/kk-media/image/upload/v1752880428/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-k9s-Walkthrough/kubernetes-dashboard-metrics-visuals.jpg)
 
 ## Final Thoughts
 
@@ -232,6 +212,4 @@ controlplane ~ ➜ k9s
 
 See you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/e7b1aee6-f426-4b5c-bdfb-7ff340fc4054" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/e7b1aee6-f426-4b5c-bdfb-7ff340fc4054)

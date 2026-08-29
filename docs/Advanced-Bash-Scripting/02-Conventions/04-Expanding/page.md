@@ -84,7 +84,7 @@ Unsorted array: 4 2 0 6 8 1
 Sorted array: 0 1 2 4 6 8
 ```
 
-![The image shows a comparison between an unsorted array (4, 2, 0, 6, 8, 1) and its sorted version (0, 1, 2, 4, 6, 8) with a lightbulb icon above.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868551/notes-assets/images/Advanced-Bash-Scripting-Sort/array-sorting-comparison-lightbulb.jpg)
+![The image shows a comparison between an unsorted array (4, 2, 0, 6, 8, 1) and its sorted version (0, 1, 2, 4, 6, 8) with a lightbulb icon above.](https://kodekloud.com/kk-media/image/upload/v1752868551/notes-assets/images/Advanced-Bash-Scripting-Sort/array-sorting-comparison-lightbulb.jpg)
 
 ## Summary
 

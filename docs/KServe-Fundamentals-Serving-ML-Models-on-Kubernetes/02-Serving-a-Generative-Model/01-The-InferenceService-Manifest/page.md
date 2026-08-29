@@ -62,9 +62,7 @@ Two fields under `spec.predictor.model` are nearly always required:
 * `modelFormat.name` — picks the serving runtime to use. For Hugging Face models set `huggingface`. KServe maps this to the appropriate serving runtime automatically (no image specification needed).
 * `storageUri` — where your model files come from. For Hugging Face Hub models use an `hf://` URI, e.g. `hf://Qwen/Qwen2.5-0.5B-Instruct`. KServe's storage initializer downloads these files into the pod before the server starts.
 
-<Callout icon="lightbulb">
-  If your model is private on Hugging Face, you must provide credentials (e.g., a token) via a Kubernetes Secret and reference it in the InferenceService (or configure cluster-level storage credentials). Check the KServe documentation for the correct secret keys and mounting patterns.
-</Callout>
+> **lightbulb** If your model is private on Hugging Face, you must provide credentials (e.g., a token) via a Kubernetes Secret and reference it in the InferenceService (or configure cluster-level storage credentials). Check the KServe documentation for the correct secret keys and mounting patterns.
 
 ## Resource requests and limits — why they matter
 
@@ -107,9 +105,7 @@ Quick guidance table:
 | `resources.requests` | Minimum resources to schedule the pod                   | `cpu: "1"`, `memory: "2Gi"`       |
 | `resources.limits`   | Upper bound for container resource consumption          | `cpu: "2"`, `memory: "6Gi"`       |
 
-<Callout icon="warning">
-  Sizing resources incorrectly can cause pods to evict, fail to schedule, or starve other workloads. Start with conservative requests, test throughput and latency, then adjust limits. Monitor CPU, memory, and pod restarts after deployment.
-</Callout>
+> **warning** Sizing resources incorrectly can cause pods to evict, fail to schedule, or starve other workloads. Start with conservative requests, test throughput and latency, then adjust limits. Monitor CPU, memory, and pod restarts after deployment.
 
 ## What happens when you apply the manifest
 
@@ -136,6 +132,4 @@ The InferenceService manifest is the single source of truth for model serving in
 
 We will now walk through the full deployment used for this module and explain why each choice was made.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/a270a816-b8e6-47f2-8ef9-7cf5b97f8890/lesson/f2c42add-90db-4b30-af7e-d3472936ec5a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/a270a816-b8e6-47f2-8ef9-7cf5b97f8890/lesson/f2c42add-90db-4b30-af7e-d3472936ec5a)

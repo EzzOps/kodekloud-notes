@@ -17,7 +17,7 @@ Container lifecycle operations generally follow these steps:
 3. **Push:** After successful testing, push the validated image to ACR, making it accessible in a centralized registry across development, staging, and production environments.
 4. **Deploy:** Deploy the containerized application to a live environment. ACR integrates seamlessly with Azure services such as Azure Kubernetes Service (AKS), Azure Container Instances (ACI), Azure Container Apps, and Azure App Service.
 
-![The image illustrates the process of building and managing containers with ACR tasks, featuring four steps: Build, Test, Push, and Deploy, each represented by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866700/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Building-and-Managing-Containers-With-ACR-Tasks/acr-tasks-container-management-diagram.jpg)
+![The image illustrates the process of building and managing containers with ACR tasks, featuring four steps: Build, Test, Push, and Deploy, each represented by an icon.](https://kodekloud.com/kk-media/image/upload/v1752866700/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Building-and-Managing-Containers-With-ACR-Tasks/acr-tasks-container-management-diagram.jpg)
 
 ACR Tasks essentially function as a continuous integration and continuous deployment (CI/CD) pipeline for container images, significantly reducing manual intervention.
 
@@ -39,7 +39,7 @@ Automatically triggered tasks execute based on specific events. For example, you
 
 Multi-step tasks enable you to design a comprehensive pipeline that includes additional steps such as testing or security scanning. By specifying a sequence of actions for your container image before it is pushed or deployed, you gain greater flexibility and control over your container management strategy.
 
-![The image illustrates three types of task scenarios for building and managing containers: Quick Task, Automatically Triggered Task, and Multi-Step Task, each represented by a distinct icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866701/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Building-and-Managing-Containers-With-ACR-Tasks/container-task-scenarios-icons.jpg)
+![The image illustrates three types of task scenarios for building and managing containers: Quick Task, Automatically Triggered Task, and Multi-Step Task, each represented by a distinct icon.](https://kodekloud.com/kk-media/image/upload/v1752866701/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Building-and-Managing-Containers-With-ACR-Tasks/container-task-scenarios-icons.jpg)
 
 ***
 
@@ -51,23 +51,23 @@ This section demonstrates how to build a container image using a Dockerfile and 
 
 1. Log into the [Azure Portal](https://portal.azure.com) and search for "Container Registry" in the search box.
 
-![The image shows the Microsoft Azure portal with a search bar displaying results for "container," listing services like Container Apps and Container Instances. Below, there is a list of resources with their types and last viewed dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866703/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Building-and-Managing-Containers-With-ACR-Tasks/azure-portal-container-search-results.jpg)
+![The image shows the Microsoft Azure portal with a search bar displaying results for "container," listing services like Container Apps and Container Instances. Below, there is a list of resources with their types and last viewed dates.](https://kodekloud.com/kk-media/image/upload/v1752866703/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Building-and-Managing-Containers-With-ACR-Tasks/azure-portal-container-search-results.jpg)
 
 2. Click **Create**.
 3. Create a new resource group (e.g., `azr-az204-containers`).
 
-![The image shows the Azure portal interface for creating a container registry, with a pop-up window prompting for a new resource group name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866705/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Building-and-Managing-Containers-With-ACR-Tasks/azure-portal-container-registry-popup.jpg)
+![The image shows the Azure portal interface for creating a container registry, with a pop-up window prompting for a new resource group name.](https://kodekloud.com/kk-media/image/upload/v1752866705/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Building-and-Managing-Containers-With-ACR-Tasks/azure-portal-container-registry-popup.jpg)
 
 4. Provide a unique name for your registry (e.g., `azr-az204`). If the name is already taken, consider modifying it (for example, appending "KodeKloud" to ensure uniqueness).
 
-![The image shows the "Create container registry" page on Microsoft Azure, where a user is attempting to set up a new container registry. An error message indicates that the chosen registry name is already in use.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866708/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Building-and-Managing-Containers-With-ACR-Tasks/create-container-registry-error-azure.jpg)
+![The image shows the "Create container registry" page on Microsoft Azure, where a user is attempting to set up a new container registry. An error message indicates that the chosen registry name is already in use.](https://kodekloud.com/kk-media/image/upload/v1752866708/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Building-and-Managing-Containers-With-ACR-Tasks/create-container-registry-error-azure.jpg)
 
 5. Select your preferred location (e.g., East US) and choose the Standard tier. Note that networking options such as private access are limited to the Premium plan.
 6. Click **Review and Create** to deploy the registry.
 
 Once deployment is complete, the Azure portal will confirm the registry creation.
 
-![The image shows a Microsoft Azure portal page indicating that a deployment of "Microsoft.ContainerRegistry" is complete. It includes options to view deployment details, next steps, and a button to go to the resource.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866709/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Building-and-Managing-Containers-With-ACR-Tasks/azure-portal-container-registry-deployment.jpg)
+![The image shows a Microsoft Azure portal page indicating that a deployment of "Microsoft.ContainerRegistry" is complete. It includes options to view deployment details, next steps, and a button to go to the resource.](https://kodekloud.com/kk-media/image/upload/v1752866709/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Building-and-Managing-Containers-With-ACR-Tasks/azure-portal-container-registry-deployment.jpg)
 
 ***
 

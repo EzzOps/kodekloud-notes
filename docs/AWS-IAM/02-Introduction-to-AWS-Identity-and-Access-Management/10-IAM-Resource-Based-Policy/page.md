@@ -55,7 +55,7 @@ When multiple statements or policies apply to a request, AWS evaluates them in t
 | 2     | Explicit Allow (no Deny) | Request is granted.            |
 | 3     | Neither Deny nor Allow   | Request is implicitly denied.  |
 
-![The image is a flowchart explaining how IAM policies are evaluated, showing decision paths based on explicit deny, allow, and implicit deny outcomes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863061/notes-assets/images/AWS-IAM-IAM-Resource-Based-Policy/iam-policies-evaluation-flowchart.jpg)
+![The image is a flowchart explaining how IAM policies are evaluated, showing decision paths based on explicit deny, allow, and implicit deny outcomes.](https://kodekloud.com/kk-media/image/upload/v1752863061/notes-assets/images/AWS-IAM-IAM-Resource-Based-Policy/iam-policies-evaluation-flowchart.jpg)
 
 > **lightbulb** Implicit denies occur when no policy explicitly allows an action. You must explicitly allow all required operations.
 

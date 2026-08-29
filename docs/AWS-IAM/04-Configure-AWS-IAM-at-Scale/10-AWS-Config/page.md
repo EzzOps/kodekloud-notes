@@ -10,7 +10,7 @@ In this guide, we’ll explore how to leverage **AWS Config** and a **PCI Confor
 
 The diagram below illustrates how AWS Config, paired with a PCI conformance pack, enforces critical controls—such as S3 bucket encryption, access policies, and logging—across your AWS account.
 
-![The image illustrates a process for ensuring PCI compliance using AWS Config and a Conformance Pack to enforce S3 bucket encryption, logging, and access policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862930/notes-assets/images/AWS-IAM-AWS-Config/pci-compliance-aws-config-s3-practices.jpg)
+![The image illustrates a process for ensuring PCI compliance using AWS Config and a Conformance Pack to enforce S3 bucket encryption, logging, and access policies.](https://kodekloud.com/kk-media/image/upload/v1752862930/notes-assets/images/AWS-IAM-AWS-Config/pci-compliance-aws-config-s3-practices.jpg)
 
 ## Key AWS Config Functions
 
@@ -20,7 +20,7 @@ AWS Config provides the following core capabilities to help you maintain and aud
 * **Compliance Assessment:** Evaluates resources against rules defined in conformance packs.
 * **Change Management:** Maintains a timeline of changes for troubleshooting and auditing.
 
-![The image explains AWS Config, highlighting its functions: tracking configuration changes, enforcing compliance, and managing changes for troubleshooting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862931/notes-assets/images/AWS-IAM-AWS-Config/aws-config-functions-tracking-compliance.jpg)
+![The image explains AWS Config, highlighting its functions: tracking configuration changes, enforcing compliance, and managing changes for troubleshooting.](https://kodekloud.com/kk-media/image/upload/v1752862931/notes-assets/images/AWS-IAM-AWS-Config/aws-config-functions-tracking-compliance.jpg)
 
 For deeper details, see the [AWS Config Developer Guide](https://docs.aws.amazon.com/config/latest/developerguide/).
 
@@ -46,7 +46,7 @@ Follow these steps to deploy and evaluate the PCI conformance pack in your AWS a
 4. Click **Deploy conformance pack**, then choose **PCI Compliance** from the AWS-managed list.
 5. Review parameters (if any), then click **Deploy**.
 
-![The image is a slide titled "Demo: Make sure we are PCI compliant," showing steps to configure AWS for PCI compliance, including opening AWS Config, opening Conformance Packs, and applying a PCI Compliance Conformance pack.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862932/notes-assets/images/AWS-IAM-AWS-Config/pci-compliance-aws-configuration-demo.jpg)
+![The image is a slide titled "Demo: Make sure we are PCI compliant," showing steps to configure AWS for PCI compliance, including opening AWS Config, opening Conformance Packs, and applying a PCI Compliance Conformance pack.](https://kodekloud.com/kk-media/image/upload/v1752862932/notes-assets/images/AWS-IAM-AWS-Config/pci-compliance-aws-configuration-demo.jpg)
 
 Once deployed, AWS Config immediately evaluates your resources against the PCI rules and highlights any compliance violations on the **Conformance packs** dashboard.
 

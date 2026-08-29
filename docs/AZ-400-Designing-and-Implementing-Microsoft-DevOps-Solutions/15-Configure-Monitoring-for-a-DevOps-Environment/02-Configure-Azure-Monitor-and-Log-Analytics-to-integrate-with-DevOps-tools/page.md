@@ -12,7 +12,7 @@ Integrating Azure Monitor and Log Analytics into your DevOps workflows provides 
 
 Continuous monitoring collects, analyzes, and acts on telemetry data—metrics, logs, and traces—in real time. It helps DevOps teams detect anomalies, prevent outages, and maintain optimal user experience.
 
-![The image illustrates the concept of continuous monitoring, featuring people interacting with digital devices and a large infinity symbol, highlighting key benefits such as issue detection, downtime prevention, and maintaining user experience.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867462/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/continuous-monitoring-infinity-symbol-interaction.jpg)
+![The image illustrates the concept of continuous monitoring, featuring people interacting with digital devices and a large infinity symbol, highlighting key benefits such as issue detection, downtime prevention, and maintaining user experience.](https://kodekloud.com/kk-media/image/upload/v1752867462/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/continuous-monitoring-infinity-symbol-interaction.jpg)
 
 Key benefits:
 
@@ -30,7 +30,7 @@ Key benefits:
 | Performance Optimization               | Use telemetry to fine-tune resources and code paths      |
 | Reliability & Availability Enhancement | Maintain SLAs and reduce unplanned downtime              |
 
-![The image lists three key benefits: early detection of issues, improved performance, and increased reliability, each represented with an icon and a colored background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867463/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/key-benefits-early-detection-performance-reliability.jpg)
+![The image lists three key benefits: early detection of issues, improved performance, and increased reliability, each represented with an icon and a colored background.](https://kodekloud.com/kk-media/image/upload/v1752867463/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/key-benefits-early-detection-performance-reliability.jpg)
 
 Continuous monitoring supports every stage of CI/CD by providing actionable alerts, dashboards, and automated responses.
 
@@ -46,7 +46,7 @@ Azure Monitor is the centralized service for collecting, analyzing, and acting o
 * **Analysis tools**: Metrics Explorer, Log Analytics workspace, workbooks.
 * **Alerts & automation**: Configurable rules, action groups, and automated runbooks.
 
-![The image illustrates three key features: Data Collection, Analysis Tools, and Alerts and Automation, each represented with icons and numbered sequentially.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867464/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/data-collection-analysis-alerts-automation.jpg)
+![The image illustrates three key features: Data Collection, Analysis Tools, and Alerts and Automation, each represented with icons and numbered sequentially.](https://kodekloud.com/kk-media/image/upload/v1752867464/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/data-collection-analysis-alerts-automation.jpg)
 
 ***
 
@@ -68,7 +68,7 @@ Azure Monitor can route telemetry into services for processing, retention, or au
 
 Azure Log Analytics is the centralized log-management component of Azure Monitor. It uses Kusto Query Language (KQL) to analyze massive volumes of data and generate dashboards or alerts.
 
-![The image is an introduction to Azure Log Analytics, highlighting its capabilities to collect and analyze log data, use a robust query language for insights, and handle large data volumes efficiently.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867465/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/azure-log-analytics-introduction-insights.jpg)
+![The image is an introduction to Azure Log Analytics, highlighting its capabilities to collect and analyze log data, use a robust query language for insights, and handle large data volumes efficiently.](https://kodekloud.com/kk-media/image/upload/v1752867465/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/azure-log-analytics-introduction-insights.jpg)
 
 **Core capabilities**
 
@@ -89,7 +89,7 @@ Embed monitoring data directly into your CI/CD pipelines:
   * Link alerts to pull requests or issues
   * Fail or mark checks based on telemetry thresholds
 
-![The image illustrates the integration of Azure Monitor with DevOps tools, featuring logos for Azure DevOps and GitHub.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867466/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/azure-monitor-devops-github-integration.jpg)
+![The image illustrates the integration of Azure Monitor with DevOps tools, featuring logos for Azure DevOps and GitHub.](https://kodekloud.com/kk-media/image/upload/v1752867466/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/azure-monitor-devops-github-integration.jpg)
 
 ***
 
@@ -97,7 +97,7 @@ Embed monitoring data directly into your CI/CD pipelines:
 
 Azure Monitor supports three alert types to keep you informed:
 
-![The image lists three types of alerts: Metric Alerts, Log Alerts, and Activity Log Alerts. Each type is numbered and color-coded.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867467/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/alert-types-metric-log-activity.jpg)
+![The image lists three types of alerts: Metric Alerts, Log Alerts, and Activity Log Alerts. Each type is numbered and color-coded.](https://kodekloud.com/kk-media/image/upload/v1752867467/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/alert-types-metric-log-activity.jpg)
 
 1. **Metric alerts**: Trigger when numeric metrics cross thresholds (e.g., CPU > 80%).
 2. **Log alerts**: Fire based on KQL query results matching conditions.
@@ -108,13 +108,13 @@ Azure Monitor supports three alert types to keep you informed:
 1. In the Azure portal, go to **Azure Monitor** > **Alerts** > **New Alert Rule**.
 2. Select the **Target Resource** (VM, database, etc.).
 
-![The image shows a user interface for selecting a resource to create alert rules, with options for different resource types and locations. It lists several resources, including a Visual Studio Enterprise Subscription and various resource groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867468/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/alert-rules-resource-selection-ui.jpg)
+![The image shows a user interface for selecting a resource to create alert rules, with options for different resource types and locations. It lists several resources, including a Visual Studio Enterprise Subscription and various resource groups.](https://kodekloud.com/kk-media/image/upload/v1752867468/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/alert-rules-resource-selection-ui.jpg)
 
 3. Define the **Condition** (metric threshold or custom log query).
 4. Choose an **Action Group** (email, webhook, Logic App, Function).
 5. Set **Severity** and **Alert Details**, then **Create**.
 
-![The image shows a screenshot of the Microsoft Azure Monitor interface, highlighting the process of creating alert rules with options for alerts, metrics, and logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867469/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/azure-monitor-alert-rules-screenshot.jpg)
+![The image shows a screenshot of the Microsoft Azure Monitor interface, highlighting the process of creating alert rules with options for alerts, metrics, and logs.](https://kodekloud.com/kk-media/image/upload/v1752867469/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/azure-monitor-alert-rules-screenshot.jpg)
 
 ### Managing and Responding to Alerts
 
@@ -131,11 +131,11 @@ Azure Monitor supports three alert types to keep you informed:
 1. In the Azure portal, search for **Log Analytics Workspaces** and click **Create**.
 2. Enter workspace **Name**, **Subscription**, **Resource Group**, and **Region**.
 
-![The image shows a screenshot of a marketplace interface for setting up a Log Analytics Workspace, highlighting the search bar and "Create" button.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867469/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/log-analytics-workspace-marketplace-screenshot.jpg)
+![The image shows a screenshot of a marketplace interface for setting up a Log Analytics Workspace, highlighting the search bar and "Create" button.](https://kodekloud.com/kk-media/image/upload/v1752867469/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/log-analytics-workspace-marketplace-screenshot.jpg)
 
 3. For data collection, opt for **Agent-Based Collection** and install the Log Analytics agent on your VMs and servers.
 
-![The image shows a configuration screen for Azure Log Analytics, focusing on agent-based collection with options to download Windows agents. It includes navigation options and workspace details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867471/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/azure-log-analytics-agent-configuration.jpg)
+![The image shows a configuration screen for Azure Log Analytics, focusing on agent-based collection with options to download Windows agents. It includes navigation options and workspace details.](https://kodekloud.com/kk-media/image/upload/v1752867471/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-Azure-Monitor-and-Log-Analytics-to-integrate-with-DevOps-tools/azure-log-analytics-agent-configuration.jpg)
 
 4. Optionally enable the **Azure Diagnostics Extension** to collect platform logs and metrics directly from Azure services.
 

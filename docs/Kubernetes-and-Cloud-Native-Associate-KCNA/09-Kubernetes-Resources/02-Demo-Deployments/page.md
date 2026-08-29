@@ -10,9 +10,7 @@ In this lesson, you will learn how to create a Kubernetes Deployment using a con
 
 Create a new folder called `Deployments` within your project directory. Then, inside the `Deployments` folder, create a file named `deployment.yaml`.
 
-<Callout icon="lightbulb">
-  Using a split editor can help you compare the new deployment file with your existing ReplicaSet definition side by side.
-</Callout>
+> **lightbulb** Using a split editor can help you compare the new deployment file with your existing ReplicaSet definition side by side.
 
 ## Step 2: Base Your Deployment on the ReplicaSet Definition
 
@@ -141,10 +139,6 @@ kubectl get all
 
 This will display the deployment, its corresponding ReplicaSet (named `myapp-replicaset`), and the three Pods managed by the ReplicaSet.
 
-<Callout icon="lightbulb">
-  This lesson has guided you through creating a Kubernetes Deployment from a ReplicaSet template, deploying it using `kubectl`, and verifying the deployment along with its associated Pods.
-</Callout>
+> **lightbulb** This lesson has guided you through creating a Kubernetes Deployment from a ReplicaSet template, deploying it using `kubectl`, and verifying the deployment along with its associated Pods.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/5dcb9f63-d684-43e9-b647-c2e8f75582dc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/5dcb9f63-d684-43e9-b647-c2e8f75582dc)

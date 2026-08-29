@@ -19,9 +19,7 @@ Restrict ingress to only Vault’s and Consul’s necessary ports. By default:
 | Consul RPC            | 8300 | TCP      | Raft & internal RPC  |
 | Consul Serf           | 8301 | TCP/UDP  | Gossip               |
 
-<Frame>
-  ![The image is a slide discussing firewall port requirements for Vault and Consul, emphasizing the use of dedicated ports to reduce attack surfaces, with specific default ports listed for each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878519/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/firewall-port-requirements-vault-consul.jpg)
-</Frame>
+![The image is a slide discussing firewall port requirements for Vault and Consul, emphasizing the use of dedicated ports to reduce attack surfaces, with specific default ports listed for each.](https://kodekloud.com/kk-media/image/upload/v1752878519/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/firewall-port-requirements-vault-consul.jpg)
 
 ### 1.5 Allow Outbound Connections to Backends
 
@@ -34,31 +32,23 @@ Vault requires outbound connectivity to its secret backends (e.g., cloud APIs, d
 | LDAP               | 389, 636 | TCP      |
 | S3 / Azure Blob    | 443      | TCP      |
 
-<Frame>
-  ![The image is a diagram showing a Vault Cluster with connections to various services like Cloud Platform API, Database Servers, Active Directory, and Cloud-Based File Storage, each using specific TCP ports. It also includes a certification badge and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878520/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/vault-cluster-diagram-services-connections.jpg)
-</Frame>
+![The image is a diagram showing a Vault Cluster with connections to various services like Cloud Platform API, Database Servers, Active Directory, and Cloud-Based File Storage, each using specific TCP ports. It also includes a certification badge and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878520/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/vault-cluster-diagram-services-connections.jpg)
 
 ### 1.6 Simplify with Integrated Storage
 
 Using Vault’s Raft-based Integrated Storage reduces the number of open ports—only 8200 (client) and 8201 (Raft). No Consul ports are needed.
 
-<Frame>
-  ![The image is a network diagram illustrating the required ports on a firewall for a Consul and Vault cluster setup, showing connections between Vault nodes and Consul nodes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878521/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/consul-vault-cluster-firewall-ports-diagram.jpg)
-</Frame>
+![The image is a network diagram illustrating the required ports on a firewall for a Consul and Vault cluster setup, showing connections between Vault nodes and Consul nodes.](https://kodekloud.com/kk-media/image/upload/v1752878521/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/consul-vault-cluster-firewall-ports-diagram.jpg)
 
 Or view the Raft replication topology:
 
-<Frame>
-  ![The image is a diagram illustrating a network setup for a Vault system with nodes A, B, and C, showing data replication and required ports on a firewall. It includes a Vault client connecting to Node B and indicates roles like Raft Leader and Follower.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878522/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/vault-network-setup-diagram-nodes.jpg)
-</Frame>
+![The image is a diagram illustrating a network setup for a Vault system with nodes A, B, and C, showing data replication and required ports on a firewall. It includes a Vault client connecting to Node B and indicates roles like Raft Leader and Follower.](https://kodekloud.com/kk-media/image/upload/v1752878522/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/vault-network-setup-diagram-nodes.jpg)
 
 ### 1.7 Immutable Upgrades
 
 Adopt immutable infrastructure: destroy unhealthy nodes and spin up new ones via automation. Leverage Consul Autopilot or Raft Autopilot to maintain quorum. Always add and replicate to new nodes before decommissioning old ones to avoid data loss.
 
-<Frame>
-  ![The image is a slide discussing immutable upgrades, highlighting the benefits of known states, ease of node replacement, and the use of AutoPilot with Consul and Raft. It also emphasizes the importance of ensuring replication when using Raft.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878524/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/immutable-upgrades-autopilot-consul-raft.jpg)
-</Frame>
+![The image is a slide discussing immutable upgrades, highlighting the benefits of known states, ease of node replacement, and the use of AutoPilot with Consul and Raft. It also emphasizes the importance of ensuring replication when using Raft.](https://kodekloud.com/kk-media/image/upload/v1752878524/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/immutable-upgrades-autopilot-consul-raft.jpg)
 
 ***
 
@@ -85,9 +75,7 @@ chmod -R 740 /etc/vault.d
 
 When using Consul storage, enable ACLs, enforce TLS, limit node access, and verify hostnames in `consul.hcl`.
 
-<Frame>
-  ![The image is a slide about protecting the storage backend in Vault, emphasizing the importance of using a storage backend and providing tips for using Consul as a storage backend. It includes a certification badge and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878525/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/vault-storage-backend-consul-tips-slide.jpg)
-</Frame>
+![The image is a slide about protecting the storage backend in Vault, emphasizing the importance of using a storage backend and providing tips for using Consul as a storage backend. It includes a certification badge and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878525/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/vault-storage-backend-consul-tips-slide.jpg)
 
 ### 2.4 Disable Shell History
 
@@ -97,17 +85,13 @@ Prevent sensitive data from ending up in shell history:
 echo 'set +o history' >> /etc/profile
 ```
 
-<Frame>
-  ![The image is a slide about turning off core dumps, highlighting that they could reveal encryption keys and should be disabled in production environments, though not required for an exam.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878526/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/turning-off-core-dumps-encryption-keys.jpg)
-</Frame>
+![The image is a slide about turning off core dumps, highlighting that they could reveal encryption keys and should be disabled in production environments, though not required for an exam.](https://kodekloud.com/kk-media/image/upload/v1752878526/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/turning-off-core-dumps-encryption-keys.jpg)
 
 ### 2.5 Configure SELinux or AppArmor
 
 Enable SELinux/AppArmor to align with CIS/DISA benchmarks and enhance OS-level protection.
 
-<Frame>
-  ![The image is a slide about configuring SELinux/AppArmor, emphasizing not disabling them for easier management, providing additional OS protection, and adhering to CIS or DISA standards. It also references a blog about hardening HashiCorp Vault with SELinux.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878527/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/selinux-apparmor-configuration-slide.jpg)
-</Frame>
+![The image is a slide about configuring SELinux/AppArmor, emphasizing not disabling them for easier management, providing additional OS protection, and adhering to CIS or DISA standards. It also references a blog about hardening HashiCorp Vault with SELinux.](https://kodekloud.com/kk-media/image/upload/v1752878527/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/selinux-apparmor-configuration-slide.jpg)
 
 ### 2.6 Turn Off Core Dumps
 
@@ -121,17 +105,13 @@ Monitor the systemd or service definition file for unauthorized changes, which c
 
 Regularly update Vault hosts. With immutable architectures, rebuild nodes using tools like [Packer](https://www.packer.io), Satellite, or Spacewalk.
 
-<Frame>
-  ![The image is a slide about frequently patching the operating system, suggesting options like Satellite and SpaceWalk, and using Packer for immutable architecture. It includes a Vault certification badge and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878528/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/frequent-os-patching-satellite-packer.jpg)
-</Frame>
+![The image is a slide about frequently patching the operating system, suggesting options like Satellite and SpaceWalk, and using Packer for immutable architecture. It includes a Vault certification badge and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878528/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/frequent-os-patching-satellite-packer.jpg)
 
 ### 2.9 Disable Swap
 
 Prevent sensitive data from being written to disk by disabling swap or using `mlock` on Linux.
 
-<Frame>
-  ![The image is a slide about disabling swap to protect sensitive data stored in-memory by Vault, suggesting that data should not be written to disk and mentioning the use of mlock to prevent memory swap.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878529/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/disable-swap-protect-sensitive-data.jpg)
-</Frame>
+![The image is a slide about disabling swap to protect sensitive data stored in-memory by Vault, suggesting that data should not be written to disk and mentioning the use of mlock to prevent memory swap.](https://kodekloud.com/kk-media/image/upload/v1752878529/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/disable-swap-protect-sensitive-data.jpg)
 
 ***
 
@@ -141,25 +121,19 @@ Prevent sensitive data from being written to disk by disabling swap or using `ml
 
 Configure trusted TLS certificates in `vault.hcl` (except for local development).
 
-<Frame>
-  ![The image provides guidelines for securing a Vault with TLS, emphasizing the importance of TLS for communication and configuration settings. It includes a certification badge in the top right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878530/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/vault-tls-security-guidelines-badge.jpg)
-</Frame>
+![The image provides guidelines for securing a Vault with TLS, emphasizing the importance of TLS for communication and configuration settings. It includes a certification badge in the top right corner.](https://kodekloud.com/kk-media/image/upload/v1752878530/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/vault-tls-security-guidelines-badge.jpg)
 
 ### 3.2 Secure Consul Backend
 
 For Consul storage, enforce TLS, trusted certs, ACLs, and gossip encryption (generate with `consul keygen`).
 
-<Frame>
-  ![The image provides guidelines for securing Consul, emphasizing the use of TLS, trusted certificates, ACLs, and gossip encryption. It also features a Vault certification badge and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878531/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/consul-security-guidelines-tls-acls.jpg)
-</Frame>
+![The image provides guidelines for securing Consul, emphasizing the use of TLS, trusted certificates, ACLs, and gossip encryption. It also features a Vault certification badge and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878531/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/consul-security-guidelines-tls-acls.jpg)
 
 ### 3.3 Enable Auditing
 
 Activate one or more audit devices, send logs to a centralized server, archive them, and configure alerts for critical events.
 
-<Frame>
-  ![The image is a slide about enabling auditing, listing steps such as using multiple audit devices, sending data to a server, archiving logs, and creating alerts. It also features a certification badge and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878532/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/enabling-auditing-steps-certification-badge.jpg)
-</Frame>
+![The image is a slide about enabling auditing, listing steps such as using multiple audit devices, sending data to a server, archiving logs, and creating alerts. It also features a certification badge and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878532/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752878532/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/enabling-auditing-steps-certification-badge.jpg)
 
 ### 3.4 Avoid Clear-Text Credentials
 
@@ -175,21 +149,15 @@ seal "awskms" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Avoid clear-text secrets in configuration files. Leverage IAM roles or environment variables for dynamic credentials.
-</Callout>
+> **triangle-alert** Avoid clear-text secrets in configuration files. Leverage IAM roles or environment variables for dynamic credentials.
 
-<Frame>
-  ![The image is a slide about enabling auditing, listing steps such as using multiple audit devices, sending data to a server, archiving logs, and creating alerts. It also features a certification badge and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878532/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/enabling-auditing-steps-certification-badge.jpg)
-</Frame>
+![The image is a slide about enabling auditing, listing steps such as using multiple audit devices, sending data to a server, archiving logs, and creating alerts. It also features a certification badge and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878532/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752878532/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/enabling-auditing-steps-certification-badge.jpg)
 
 ### 3.5 Upgrade Vault Frequently
 
 Track new releases at [releases.hashicorp.com/vault](https://releases.hashicorp.com/vault). Regular updates deliver security fixes and new cipher suites.
 
-<Frame>
-  ![The image is a slide about upgrading Vault frequently, highlighting benefits like security fixes, new cipher suites, and new functionality. It includes a screenshot of a webpage listing Vault versions and a certification badge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878534/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/vault-upgrading-benefits-screenshot-badge.jpg)
-</Frame>
+![The image is a slide about upgrading Vault frequently, highlighting benefits like security fixes, new cipher suites, and new functionality. It includes a screenshot of a webpage listing Vault versions and a certification badge.](https://kodekloud.com/kk-media/image/upload/v1752878534/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/vault-upgrading-benefits-screenshot-badge.jpg)
 
 ### 3.6 Discontinue Root Tokens
 
@@ -205,13 +173,9 @@ Generate a new one later via unseal/recovery keys if necessary.
 
 Download Vault binaries from HashiCorp and validate checksums before use.
 
-<Callout icon="lightbulb">
-  Always verify the SHA256 checksum against the value provided on the official HashiCorp site to prevent tampering.
-</Callout>
+> **lightbulb** Always verify the SHA256 checksum against the value provided on the official HashiCorp site to prevent tampering.
 
-<Frame>
-  ![The image is a slide about verifying the integrity of the Vault binary, advising to get binaries directly from HashiCorp, use the HashiCorp checksum for validation, and warning that modified binaries could leak data. It includes a certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878535/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/vault-binary-integrity-verification-slide.jpg)
-</Frame>
+![The image is a slide about verifying the integrity of the Vault binary, advising to get binaries directly from HashiCorp, use the HashiCorp checksum for validation, and warning that modified binaries could leak data. It includes a certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878535/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/vault-binary-integrity-verification-slide.jpg)
 
 ### 3.8 Disable Unused UI
 
@@ -229,33 +193,25 @@ Consul gossip traffic isn’t protected by TLS—use a 32-byte key generated wit
 encrypt = "generated-32-byte-key"
 ```
 
-<Frame>
-  ![The image is a slide about encrypting the Gossip Protocol in Consul, highlighting that TLS secures interfaces but not gossip traffic, and suggesting the use of a 32-byte key generated with consul keygen.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878536/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/encrypting-gossip-protocol-consul-tls.jpg)
-</Frame>
+![The image is a slide about encrypting the Gossip Protocol in Consul, highlighting that TLS secures interfaces but not gossip traffic, and suggesting the use of a 32-byte key generated with consul keygen.](https://kodekloud.com/kk-media/image/upload/v1752878536/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/encrypting-gossip-protocol-consul-tls.jpg)
 
 ### 3.10 Secure Unseal/Recovery Keys
 
 During initialization, use PGP keys (e.g., via [Keybase](https://keybase.io)) so each operator receives an encrypted unseal key. Store keys offline and distribute among team members—losing them results in irreversible data loss.
 
-<Frame>
-  ![The image provides guidelines for securing unseal/recovery keys, including using PGP keys, distributing them among team members, and not storing them in the Vault. It features a Vault certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878538/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/securing-unseal-recovery-keys-guidelines.jpg)
-</Frame>
+![The image provides guidelines for securing unseal/recovery keys, including using PGP keys, distributing them among team members, and not storing them in the Vault. It features a Vault certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878538/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/securing-unseal-recovery-keys-guidelines.jpg)
 
 ### 3.11 Minimize Token and Lease TTLs
 
 Define the smallest TTLs needed and set maximum TTLs to prevent runaway renewals. This also reduces load on the storage backend via garbage collection.
 
-<Frame>
-  ![The image is a slide discussing minimizing TTLs (Time To Live) for leases and tokens, suggesting using the smallest possible TTL, defining max TTLs, and noting that minimizing TTL reduces the burden on the storage backend. It includes a Vault certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878539/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/minimizing-ttls-leases-tokens-slide.jpg)
-</Frame>
+![The image is a slide discussing minimizing TTLs (Time To Live) for leases and tokens, suggesting using the smallest possible TTL, defining max TTLs, and noting that minimizing TTL reduces the burden on the storage backend. It includes a Vault certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878539/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/minimizing-ttls-leases-tokens-slide.jpg)
 
 ### 3.12 Follow the Principle of Least Privilege
 
 Grant tokens only the permissions required. Separate policies for applications and users, limit wildcards (`*`, `+`), and consider templated policies for consistency.
 
-<Frame>
-  ![The image provides guidelines on following the Principle of Least Privilege, including giving tokens limited access, separating policies, limiting certain symbols in policies, and using templated policies. It features a small illustration of a person and a certification badge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878540/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/least-privilege-guidelines-illustration.jpg)
-</Frame>
+![The image provides guidelines on following the Principle of Least Privilege, including giving tokens limited access, separating policies, limiting certain symbols in policies, and using templated policies. It features a small illustration of a person and a certification badge.](https://kodekloud.com/kk-media/image/upload/v1752878540/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/least-privilege-guidelines-illustration.jpg)
 
 ### 3.13 Perform Regular Backups
 
@@ -273,9 +229,7 @@ vault write sys/storage/raft/snapshot-auto/config/daily
 
 Leverage your existing IdP (AD, Okta, etc.) to manage user authentication. When a user is disabled upstream, Vault access is revoked automatically.
 
-<Frame>
-  ![The image is a slide discussing the integration with existing identity providers, highlighting benefits such as immediate access revocation and reduced administrative burden. It includes a Vault certification badge and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878541/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/identity-provider-integration-benefits-slide.jpg)
-</Frame>
+![The image is a slide discussing the integration with existing identity providers, highlighting benefits such as immediate access revocation and reduced administrative burden. It includes a Vault certification badge and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878541/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Security-Hardening/identity-provider-integration-benefits-slide.jpg)
 
 ***
 
@@ -301,9 +255,7 @@ Centralize your Vault audit logs in a SIEM or log collector (Splunk, Sumo Logic,
 * [HashiCorp Vault Documentation](https://www.vaultproject.io/docs)
 * [Kubernetes Security](https://kubernetes.io/docs/concepts/security/overview/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/1435ac1b-fcd3-4bfb-b3e1-ee5274ddd6af" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/1435ac1b-fcd3-4bfb-b3e1-ee5274ddd6af)
 
 
 # Vault Tokens Auth Method
@@ -314,9 +266,7 @@ Vaults token authentication is essential for accessing Vault, requiring valid to
 
 Vault’s token authentication is the default and core method for accessing Vault. Almost every Vault operation (aside from health checks and auth endpoints) requires a valid token. Since all auth methods eventually issue tokens, mastering tokens is essential for secure and efficient Vault usage.
 
-<Callout icon="lightbulb">
-  Tokens are written to Vault’s storage backend and cannot be disabled. Each token carries one or more policies, determining its permissions. By default, every token inherits the `default` policy.
-</Callout>
+> **lightbulb** Tokens are written to Vault’s storage backend and cannot be disabled. Each token carries one or more policies, determining its permissions. By default, every token inherits the `default` policy.
 
 ## Token Types Comparison
 
@@ -327,9 +277,7 @@ Vault supports multiple token types. Below is a comparison of the two primary ty
 | Service Token | hvs    | Stored on disk | Yes       | Long-lived sessions, child token creation    |
 | Batch Token   | hvb    | Ephemeral      | No        | High-volume operations, DR replication sales |
 
-<Frame>
-  ![The image is a slide titled "Introduction to Tokens," explaining the differences between service tokens and batch tokens in Vault, highlighting their features and use cases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878542/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Tokens-Auth-Method/introduction-to-tokens-vault-differences.jpg)
-</Frame>
+![The image is a slide titled "Introduction to Tokens," explaining the differences between service tokens and batch tokens in Vault, highlighting their features and use cases.](https://kodekloud.com/kk-media/image/upload/v1752878542/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Vault-Tokens-Auth-Method/introduction-to-tokens-vault-differences.jpg)
 
 For more details, see the [Vault Token Auth Method](https://www.vaultproject.io/docs/auth/token) documentation.
 
@@ -362,9 +310,7 @@ token_policies     ["default" "hcvop"]
 policies           ["default" "hcvop"]
 ```
 
-<Callout icon="lightbulb">
-  Ideal for long-running applications that can renew instead of rotating tokens frequently.
-</Callout>
+> **lightbulb** Ideal for long-running applications that can renew instead of rotating tokens frequently.
 
 ### Use-Limited Tokens
 

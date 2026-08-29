@@ -72,9 +72,7 @@ Rollback
 
 * If the green version has issues, you can rollback to a previous revision using the Argo Rollouts UI or CLI. The controller keeps revision history (controlled by revisionHistoryLimit), which enables safe rollbacks.
 
-<Callout icon="warning">
-  If autoPromotionEnabled is false, the new ReplicaSet will not receive production traffic until you manually promote it. Make sure to validate the previewService before promotion, and coordinate promotion with your release process.
-</Callout>
+> **warning** If autoPromotionEnabled is false, the new ReplicaSet will not receive production traffic until you manually promote it. Make sure to validate the previewService before promotion, and coordinate promotion with your release process.
 
 Observability
 
@@ -104,9 +102,7 @@ Links and References
 * Kubernetes Services: [https://kubernetes.io/docs/concepts/services-networking/service/](https://kubernetes.io/docs/concepts/services-networking/service/)
 * kubectl-argo-rollouts plugin: [https://argoproj.github.io/argo-rollouts/installation/](https://argoproj.github.io/argo-rollouts/installation/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/95bb8080-9700-470c-b838-f6a7d444a528" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/95bb8080-9700-470c-b838-f6a7d444a528)
 
 
 # Demo Canary Deployment

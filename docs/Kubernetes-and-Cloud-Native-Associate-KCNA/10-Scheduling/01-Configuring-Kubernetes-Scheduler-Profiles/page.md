@@ -36,9 +36,7 @@ Scaling ReplicaSets allows your application to adapt to changing demand. Suppose
    kubectl scale --replicas=6 replicaset/myapp-replicaset
    ```
 
-<Callout icon="lightbulb">
-  Remember, if you use the scale command, the changes are updated only in the cluster state. The original definition file will continue to show the previous replica count until it is modified.
-</Callout>
+> **lightbulb** Remember, if you use the scale command, the changes are updated only in the cluster state. The original definition file will continue to show the previous replica count until it is modified.
 
 There are also advanced options for automatically scaling ReplicaSets based on load; however, that topic is outside the scope of this lesson.
 
@@ -64,21 +62,15 @@ kubectl replace -f replicaset-definition.yml          # Update a ReplicaSet usin
 kubectl scale --replicas=6 -f replicaset-definition.yml # Scale a ReplicaSet to 6 replicas using a file
 ```
 
-<Frame>
-  ![The image illustrates load balancing and scaling using Kubernetes, showing users accessing multiple pods managed by a replication controller across two nodes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880683/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-ReplicaSets/frame_110.jpg)
-</Frame>
+![The image illustrates load balancing and scaling using Kubernetes, showing users accessing multiple pods managed by a replication controller across two nodes.](https://kodekloud.com/kk-media/image/upload/v1752880683/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-ReplicaSets/frame_110.jpg)
 
 Understanding how labels, selectors, and ReplicaSets interact is crucial to maintain high availability and scalable deployments in your Kubernetes environment. This lesson has covered the fundamentals of replication controllers and ReplicaSets, along with their creation, updating, and scaling procedures.
 
-<Frame>
-  ![The image shows multiple "POD" icons arranged around a central icon, labeled "Labels and Selectors," likely illustrating a Kubernetes concept.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880684/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-ReplicaSets/frame_690.jpg)
-</Frame>
+![The image shows multiple "POD" icons arranged around a central icon, labeled "Labels and Selectors," likely illustrating a Kubernetes concept.](https://kodekloud.com/kk-media/image/upload/v1752880684/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-ReplicaSets/frame_690.jpg)
 
 This concludes our discussion on ReplicaSets. Apply these concepts to ensure robust and scalable deployments in your Kubernetes cluster.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/6243236b-6a32-4e1e-94fb-e1c49de06fdd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/6243236b-6a32-4e1e-94fb-e1c49de06fdd)
 
 
 # Configuring Kubernetes Scheduler Profiles
@@ -121,9 +113,7 @@ globalDefault: false
 description: "This priority class should be used for XYZ service pods only."
 ```
 
-<Callout icon="lightbulb">
-  High-priority settings ensure that Pods with this classification are placed at the front of the scheduling queue.
-</Callout>
+> **lightbulb** High-priority settings ensure that Pods with this classification are placed at the front of the scheduling queue.
 
 ## Scheduling Phases
 
@@ -171,9 +161,7 @@ Plugins are integral to the Kubernetes scheduling process. Here are some example
 
 Kubernetes' extensible design lets you customize active plugins at each extension point, including pre-filter, filter, post-filter, pre-score, score, reserve, pre-bind, and post-bind. You can also integrate custom plugins to meet specific requirements.
 
-<Frame>
-  ![The image outlines Kubernetes scheduling extension points, including Scheduling Queue, Filtering, Scoring, and Binding, with specific functions like queueSort, preFilter, and bind.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880685/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Configuring-Kubernetes-Scheduler-Profiles/frame_380.jpg)
-</Frame>
+![The image outlines Kubernetes scheduling extension points, including Scheduling Queue, Filtering, Scoring, and Binding, with specific functions like queueSort, preFilter, and bind.](https://kodekloud.com/kk-media/image/upload/v1752880685/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Configuring-Kubernetes-Scheduler-Profiles/frame_380.jpg)
 
 ## Using Multiple Scheduling Profiles
 

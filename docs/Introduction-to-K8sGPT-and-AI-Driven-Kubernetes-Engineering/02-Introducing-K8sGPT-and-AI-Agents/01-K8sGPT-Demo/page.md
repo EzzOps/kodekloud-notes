@@ -30,9 +30,7 @@ Warning: model input is empty, will use the default value: gpt-3.5-turbo
 Enter openai Key:
 ```
 
-<Callout icon="lightbulb">
-  K8sGPT supports multiple backends (e.g., [OpenAI](https://openai.com) and [Hugging Face](https://huggingface.co)). If you don’t specify, it defaults to OpenAI’s `gpt-3.5-turbo`.
-</Callout>
+> **lightbulb** K8sGPT supports multiple backends (e.g., [OpenAI](https://openai.com) and [Hugging Face](https://huggingface.co)). If you don’t specify, it defaults to OpenAI’s `gpt-3.5-turbo`.
 
 ***
 
@@ -82,9 +80,7 @@ Sample output:
 
 When focusing on the `k8sgpt` namespace’s NGINX deployment, K8sGPT may report:
 
-<Frame>
-  ![The image shows a terminal window with Kubernetes error messages and solutions related to pod deployment and Docker image pulling issues.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878974/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-K8sGPT-Demo/kubernetes-error-messages-pod-deployment.jpg)
-</Frame>
+![The image shows a terminal window with Kubernetes error messages and solutions related to pod deployment and Docker image pulling issues.](https://kodekloud.com/kk-media/image/upload/v1752878974/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-K8sGPT-Demo/kubernetes-error-messages-pod-deployment.jpg)
 
 ### 4.1 Error: Service has no ready endpoints
 
@@ -178,9 +174,7 @@ Sample output:
   k8sgpt analyze --explain --namespace k8sgpt --output=json --anonymize
   ```
 
-<Callout icon="triangle-alert">
-  When sharing logs or JSON output publicly, use `--anonymize` to mask identifiers.
-</Callout>
+> **triangle-alert** When sharing logs or JSON output publicly, use `--anonymize` to mask identifiers.
 
 ***
 
@@ -197,8 +191,6 @@ K8sGPT delivers natural-language diagnostics for [Kubernetes](https://kubernetes
 * [OpenAI](https://openai.com)
 * [Hugging Face](https://huggingface.co)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-k8sgpt-and-ai-driven-kubernetes-engineering/module/6791a255-403d-4a0e-9cef-81c6a8abdfe8/lesson/739871e2-8aec-4601-bf1a-54d2a14a1926" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-k8sgpt-and-ai-driven-kubernetes-engineering/module/6791a255-403d-4a0e-9cef-81c6a8abdfe8/lesson/739871e2-8aec-4601-bf1a-54d2a14a1926)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/introduction-to-k8sgpt-and-ai-driven-kubernetes-engineering/module/6791a255-403d-4a0e-9cef-81c6a8abdfe8/lesson/2516f7f7-7532-4d1c-a71e-95cb773d3cbb" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/introduction-to-k8sgpt-and-ai-driven-kubernetes-engineering/module/6791a255-403d-4a0e-9cef-81c6a8abdfe8/lesson/2516f7f7-7532-4d1c-a71e-95cb773d3cbb)

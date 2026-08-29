@@ -202,18 +202,14 @@ The right-hand Inputs/Outputs panel lists parameters &#x22;message&#x22; and
 
 Best practices and important warnings
 
-<Callout icon="warning">
-  Be careful when looping over large lists: launching hundreds or thousands of
+> **warning** Be careful when looping over large lists: launching hundreds or thousands of
   parallel pods can exhaust cluster resources. Use workflow-level `parallelism`,
   namespace-level quota controls, or controller-level limits (ConfigMap) to
   avoid runaway concurrency.
-</Callout>
 
-<Callout icon="lightbulb">
-  Tip: To pass item values reliably into a called template, always declare
+> **lightbulb** Tip: To pass item values reliably into a called template, always declare
   `inputs.parameters` on the called template and pass the current item via
   `arguments.parameters: value: "{{ item }}"`.
-</Callout>
 
 Links and references
 
@@ -223,6 +219,4 @@ Links and references
 
 That’s the core of using withItems and controlling parallelism in Argo Workflows.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/1dfe51f5-92d0-4aea-87e4-8d52c9d6f389" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/1dfe51f5-92d0-4aea-87e4-8d52c9d6f389)

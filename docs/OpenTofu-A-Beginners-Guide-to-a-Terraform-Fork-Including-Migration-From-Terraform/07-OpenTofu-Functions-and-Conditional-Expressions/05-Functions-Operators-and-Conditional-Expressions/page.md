@@ -6,9 +6,7 @@ OpenTofu offers built-in functions, operators, and conditional expressions to en
 
 OpenTofu provides a rich set of built-in functions, operators, and conditional expressions that enhance your infrastructure-as-code (IaC) workflows. This guide will show you how to leverage the interactive console and explore numeric, string, list, and map functions with practical examples.
 
-<Frame>
-  ![The image contains the text "Functions, Operators, and Conditional Expressions" with a logo on the left. It also includes a copyright notice for KodeKloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882868/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Functions-Operators-and-Conditional-Expressions/functions-operators-conditional-expressions-logo.jpg)
-</Frame>
+![The image contains the text "Functions, Operators, and Conditional Expressions" with a logo on the left. It also includes a copyright notice for KodeKloud.](https://kodekloud.com/kk-media/image/upload/v1752882868/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Functions-Operators-and-Conditional-Expressions/functions-operators-conditional-expressions-logo.jpg)
 
 ## Launching the OpenTofu Console
 
@@ -18,9 +16,7 @@ To experiment with functions and interpolations in a live environment, start the
 tofu console
 ```
 
-<Callout icon="lightbulb">
-  The OpenTofu console evaluates HCL expressions in real time. You can inspect variables, resources, and file contents without applying changes.
-</Callout>
+> **lightbulb** The OpenTofu console evaluates HCL expressions in real time. You can inspect variables, resources, and file contents without applying changes.
 
 ***
 
@@ -114,9 +110,7 @@ variable "num" {
 | ceil(n)  | Rounds up to the nearest integer   | `ceil(10.1)` → `11`  |
 | floor(n) | Rounds down to the nearest integer | `floor(10.9)` → `10` |
 
-<Callout icon="lightbulb">
-  Use the expansion operator `...` to unpack a collection into individual arguments.
-</Callout>
+> **lightbulb** Use the expansion operator `...` to unpack a collection into individual arguments.
 
 ***
 
@@ -230,9 +224,7 @@ ami-pqr
 | values(map)               | Returns a list of all values                           |
 | lookup(map, key, default) | Retrieves `map[key]` or `default` if the key is absent |
 
-<Callout icon="triangle-alert">
-  Calling `lookup` without a default value will error if the key does not exist.
-</Callout>
+> **triangle-alert** Calling `lookup` without a default value will error if the key does not exist.
 
 ***
 
@@ -246,6 +238,4 @@ By mastering these built-in functions, operators, and expressions, you can write
 * [Terraform Functions](https://www.terraform.io/language/functions)
 * [HCL Syntax Guide](https://github.com/hashicorp/hcl)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/042e7b27-75d9-46fc-8f8c-7357d81923c1/lesson/04a842c5-6034-40e1-b2a8-a35a03aed0c9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/042e7b27-75d9-46fc-8f8c-7357d81923c1/lesson/04a842c5-6034-40e1-b2a8-a35a03aed0c9)

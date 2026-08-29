@@ -37,9 +37,7 @@ def retrieve_and_rerank(query, vector_db, embedder, reranker, initial_k=50, fina
 * Use re-ranking when final answer quality and precision are important (e.g., legal or medical retrieval, high-stakes Q\&A).
 * Skip re-ranking when you need minimal latency and can tolerate lower precision (e.g., broad search UIs where approximate ordering is acceptable).
 
-<Callout icon="lightbulb">
-  Re-rankers improve final result quality by using models that directly compare query and document text (rather than relying solely on vector similarity). Because they are costlier, they are typically run on a smaller candidate set returned by the vector database.
-</Callout>
+> **lightbulb** Re-rankers improve final result quality by using models that directly compare query and document text (rather than relying solely on vector similarity). Because they are costlier, they are typically run on a smaller candidate set returned by the vector database.
 
 ## Links and references
 
@@ -48,9 +46,7 @@ def retrieve_and_rerank(query, vector_db, embedder, reranker, initial_k=50, fina
 * [Vector databases and ANN search — FAISS, Annoy, Milvus](https://en.wikipedia.org/wiki/Approximate_nearest_neighbor_search)
 * [Tokenization basics and why it matters](https://huggingface.co/docs/tokenizers/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/0cc1ce90-bfcc-42e9-bb0b-dd5c33672504" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/0cc1ce90-bfcc-42e9-bb0b-dd5c33672504)
 
 
 # Reducing LLM Memory Footprint During Deployment
@@ -111,13 +107,9 @@ Practical tips for deployment
 * Measure latency and throughput under realistic load (concurrency and batch size) to determine the best student size and precision level.
 * Use progressive distillation or multi-stage compression when migrating from a very large teacher to a highly compact student.
 
-<Callout icon="lightbulb">
-  Knowledge distillation is usually the most effective single technique for substantially reducing memory usage while keeping reasonable model performance—especially when combined with quantization or pruning.
-</Callout>
+> **lightbulb** Knowledge distillation is usually the most effective single technique for substantially reducing memory usage while keeping reasonable model performance—especially when combined with quantization or pruning.
 
-<Callout icon="warning">
-  Be aware of the trade-offs: aggressive compression can harm accuracy. Evaluate distilled models on your target tasks to ensure acceptable performance.
-</Callout>
+> **warning** Be aware of the trade-offs: aggressive compression can harm accuracy. Evaluate distilled models on your target tasks to ensure acceptable performance.
 
 Links and references
 
@@ -126,6 +118,4 @@ Links and references
 * [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
 * [Pruning neural networks: a survey of methods and results](https://arxiv.org/abs/1710.01878)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/c38a11ff-1eea-4adc-afec-7ab9743ac1e2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/c38a11ff-1eea-4adc-afec-7ab9743ac1e2)

@@ -18,9 +18,7 @@ Shell scripting utilizes the `if` statement similarly to natural language. The c
 
 Before entering the conditional block, the script captures the output of the rocket status command in the variable `rocket_status`. Based on its value, the script decides whether to trigger additional commands, such as running a debug command.
 
-<Callout icon="lightbulb">
-  Ensure there is at least one space between the square brackets `[ ]` and the condition when using conditional statements.
-</Callout>
+> **lightbulb** Ensure there is at least one space between the square brackets `[ ]` and the condition when using conditional statements.
 
 ## Example: Using if, elif, and else Blocks
 

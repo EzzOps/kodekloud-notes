@@ -13,16 +13,12 @@ Welcome to **Mastering Terraform Cloud**, a comprehensive course that guides you
 **Gabe Maentz**\
 Director of Solution Architecture specializing in HashiCorp products and DevOps solutions. Gabe has led in-depth courses on Terraform, Vault, Consul, and Git integrations. A HashiCorp Ambassador (2022) and Terraform Authorized Instructor, he’s helped thousands streamline their Infrastructure as Code practices.
 
-<Frame>
-  ![The image is an introduction to an instructor named Gabe Maentz, who is a Director of Solution Architecture specializing in HashiCorp and DevOps solutions. It includes badges for HashiCorp Ambassador 2022 and Terraform Authorized Instructor, along with a photo of the instructor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878755/notes-assets/images/HashiCorp-Terraform-Cloud-Course-Introduction/gabe-maentz-introduction-hashi-corp-devops.jpg)
-</Frame>
+![The image is an introduction to an instructor named Gabe Maentz, who is a Director of Solution Architecture specializing in HashiCorp and DevOps solutions. It includes badges for HashiCorp Ambassador 2022 and Terraform Authorized Instructor, along with a photo of the instructor.](https://kodekloud.com/kk-media/image/upload/v1752878755/notes-assets/images/HashiCorp-Terraform-Cloud-Course-Introduction/gabe-maentz-introduction-hashi-corp-devops.jpg)
 
 **Bryan Krausen**\
 Principal Solutions Architect focusing on the HashiCorp suite and DevOps transformations. Also a HashiCorp Ambassador and Terraform Authorized Instructor, Bryan will handle backend demos and make guest appearances throughout this course.
 
-<Frame>
-  ![The image features a person standing next to text explaining that Bryan is handling backend work for a course, with badges indicating roles as a HashiCorp Ambassador and Terraform Authorized Instructor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878756/notes-assets/images/HashiCorp-Terraform-Cloud-Course-Introduction/bryan-backend-work-hashi-corp-badges.jpg)
-</Frame>
+![The image features a person standing next to text explaining that Bryan is handling backend work for a course, with badges indicating roles as a HashiCorp Ambassador and Terraform Authorized Instructor.](https://kodekloud.com/kk-media/image/upload/v1752878756/notes-assets/images/HashiCorp-Terraform-Cloud-Course-Introduction/bryan-backend-work-hashi-corp-badges.jpg)
 
 ***
 
@@ -41,9 +37,7 @@ By the end of this course, you will be able to:
 | Interact with the Terraform Cloud API              | Script organization and workspace setup                  |
 | Automate org setup                                 | Use Terraform to manage Terraform Cloud itself           |
 
-<Frame>
-  ![The image outlines the course objectives for a Terraform Cloud course, including lectures, hands-on labs, demos, and solution videos. It features a Terraform Cloud logo and cartoon characters at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878758/notes-assets/images/HashiCorp-Terraform-Cloud-Course-Introduction/terraform-cloud-course-objectives-outline.jpg)
-</Frame>
+![The image outlines the course objectives for a Terraform Cloud course, including lectures, hands-on labs, demos, and solution videos. It features a Terraform Cloud logo and cartoon characters at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878758/notes-assets/images/HashiCorp-Terraform-Cloud-Course-Introduction/terraform-cloud-course-objectives-outline.jpg)
 
 ***
 
@@ -58,9 +52,7 @@ This course includes a mix of:
 | Demos           | Live demonstrations of Terraform Cloud workflows              |
 | Solution Videos | Expert-led walkthroughs of best practices and troubleshooting |
 
-<Callout icon="lightbulb">
-  After each Hands-On Lab, watch the corresponding Solution Video to reinforce your Terraform Cloud skills.
-</Callout>
+> **lightbulb** After each Hands-On Lab, watch the corresponding Solution Video to reinforce your Terraform Cloud skills.
 
 ***
 
@@ -68,9 +60,7 @@ This course includes a mix of:
 
 Explore these key Terraform Cloud features:
 
-<Frame>
-  ![The image lists topics included in a Terraform Cloud course, such as sign-up, workspaces, version control, and automation. It also features the Terraform Cloud logo and two cartoon characters at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878759/notes-assets/images/HashiCorp-Terraform-Cloud-Course-Introduction/terraform-cloud-course-topics-list.jpg)
-</Frame>
+![The image lists topics included in a Terraform Cloud course, such as sign-up, workspaces, version control, and automation. It also features the Terraform Cloud logo and two cartoon characters at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878759/notes-assets/images/HashiCorp-Terraform-Cloud-Course-Introduction/terraform-cloud-course-topics-list.jpg)
 
 * Organization & Workspace setup
 * Version control integrations (GitHub, GitLab, Bitbucket)
@@ -85,9 +75,7 @@ Explore these key Terraform Cloud features:
 
 ## Assumptions & Prerequisites
 
-<Frame>
-  ![The image outlines course assumptions, covering Terraform OSS, Amazon Web Services, and DevOps, with specific topics listed under each category.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878760/notes-assets/images/HashiCorp-Terraform-Cloud-Course-Introduction/course-assumptions-terraform-aws-devops.jpg)
-</Frame>
+![The image outlines course assumptions, covering Terraform OSS, Amazon Web Services, and DevOps, with specific topics listed under each category.](https://kodekloud.com/kk-media/image/upload/v1752878760/notes-assets/images/HashiCorp-Terraform-Cloud-Course-Introduction/course-assumptions-terraform-aws-devops.jpg)
 
 To maximize your learning, you should have:
 
@@ -101,17 +89,13 @@ To maximize your learning, you should have:
 
 We’ve partnered with KodeKloud to offer free, sandboxed labs preloaded with all required code and tools.
 
-<Frame>
-  ![The image is an advertisement for free hands-on labs hosted by KodeKloud, offering a sandbox environment with pre-loaded code and tools. It includes instructions on accessing the labs using a free coupon code.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878761/notes-assets/images/HashiCorp-Terraform-Cloud-Course-Introduction/kodekloud-free-hands-on-labs-advertisement.jpg)
-</Frame>
+![The image is an advertisement for free hands-on labs hosted by KodeKloud, offering a sandbox environment with pre-loaded code and tools. It includes instructions on accessing the labs using a free coupon code.](https://kodekloud.com/kk-media/image/upload/v1752878761/notes-assets/images/HashiCorp-Terraform-Cloud-Course-Introduction/kodekloud-free-hands-on-labs-advertisement.jpg)
 
 ***
 
 ## Required Accounts
 
-<Frame>
-  ![The image lists accounts needed for a course, featuring logos for HashiCorp Terraform Cloud, AWS, and GitHub.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878762/notes-assets/images/HashiCorp-Terraform-Cloud-Course-Introduction/course-accounts-hashi-corp-aws-github.jpg)
-</Frame>
+![The image lists accounts needed for a course, featuring logos for HashiCorp Terraform Cloud, AWS, and GitHub.](https://kodekloud.com/kk-media/image/upload/v1752878762/notes-assets/images/HashiCorp-Terraform-Cloud-Course-Introduction/course-accounts-hashi-corp-aws-github.jpg)
 
 | Account            | Purpose                                       | Reference                                                          |
 | ------------------ | --------------------------------------------- | ------------------------------------------------------------------ |
@@ -119,9 +103,7 @@ We’ve partnered with KodeKloud to offer free, sandboxed labs preloaded with al
 | GitHub (or GitLab) | Store and version control infrastructure code | [https://github.com/join](https://github.com/join)                 |
 | AWS                | Deploy infrastructure using AWS Free Tier     | [https://aws.amazon.com/free/](https://aws.amazon.com/free/)       |
 
-<Callout icon="triangle-alert">
-  Use admin-level AWS credentials for labs, and remember to clean up resources after each session to avoid unexpected charges.
-</Callout>
+> **triangle-alert** Use admin-level AWS credentials for labs, and remember to clean up resources after each session to avoid unexpected charges.
 
 ***
 
@@ -129,13 +111,9 @@ We’ve partnered with KodeKloud to offer free, sandboxed labs preloaded with al
 
 Most lessons use the free tier of Terraform Cloud, which includes remote state storage, Private Module Registry, and VCS integration. To access Team & Governance features, activate your 30-day free trial—no credit card required.
 
-<Frame>
-  ![The image is an announcement for a 30-day free trial of Terraform Cloud's Team & Governance plan, emphasizing that no credit card is required. It also recommends completing a course within this period to fully utilize the features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878763/notes-assets/images/HashiCorp-Terraform-Cloud-Course-Introduction/terraform-cloud-free-trial-announcement.jpg)
-</Frame>
+![The image is an announcement for a 30-day free trial of Terraform Cloud's Team & Governance plan, emphasizing that no credit card is required. It also recommends completing a course within this period to fully utilize the features.](https://kodekloud.com/kk-media/image/upload/v1752878763/notes-assets/images/HashiCorp-Terraform-Cloud-Course-Introduction/terraform-cloud-free-trial-announcement.jpg)
 
-<Callout icon="lightbulb">
-  We recommend completing this course within your trial period to explore all Terraform Cloud tiers and features.
-</Callout>
+> **lightbulb** We recommend completing this course within your trial period to explore all Terraform Cloud tiers and features.
 
 ***
 
@@ -159,6 +137,4 @@ Let’s dive in and harness the full power of Terraform Cloud!
 * [AWS Free Tier](https://aws.amazon.com/free)
 * [GitHub Documentation](https://docs.github.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/7452c961-d399-4698-ab83-4f0c231bacab/lesson/d96f9ba6-3a3e-4745-8f50-303a205e2584" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/7452c961-d399-4698-ab83-4f0c231bacab/lesson/d96f9ba6-3a3e-4745-8f50-303a205e2584)

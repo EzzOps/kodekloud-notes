@@ -23,7 +23,7 @@ Azure provides a range of storage services that can accommodate your data storag
 
 > **lightbulb** Azure Storage Accounts host multiple services under one umbrella, giving you the flexibility to choose the right storage solution based on your data requirements.
 
-![The image outlines key features of storage accounts, highlighting diverse storage options, high durability and availability, and security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868532/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Storage-Accounts/storage-accounts-features-overview.jpg)
+![The image outlines key features of storage accounts, highlighting diverse storage options, high durability and availability, and security.](https://kodekloud.com/kk-media/image/upload/v1752868532/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Storage-Accounts/storage-accounts-features-overview.jpg)
 
 ### High Durability and Availability
 
@@ -49,7 +49,7 @@ Data in Azure is accessible from anywhere in the world using HTTP or HTTPS proto
 
 Storage Accounts integrate effortlessly with other Azure services and a wide range of third-party applications. This integration helps streamline workflows and improves overall operational efficiency.
 
-![The image highlights the benefits of storage accounts, featuring three colored sections labeled "Scalability," "Accessibility," and "Integration," each with corresponding icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868533/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Storage-Accounts/storage-accounts-benefits-diagram.jpg)
+![The image highlights the benefits of storage accounts, featuring three colored sections labeled "Scalability," "Accessibility," and "Integration," each with corresponding icons.](https://kodekloud.com/kk-media/image/upload/v1752868533/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Storage-Accounts/storage-accounts-benefits-diagram.jpg)
 
 ## Use Cases
 
@@ -63,7 +63,7 @@ Azure Storage Accounts are versatile and suitable for a variety of scenarios. Co
 * **Mobile Applications:** Serve as a backend for mobile app data, ensuring real-time ingestion and retrieval.
 * **IoT Solutions:** Efficiently manage large-scale data ingestion and processing for IoT devices.
 
-![The image illustrates use cases for storage accounts, highlighting versatile application support, unstructured data storage, and reliable messaging with NoSQL. It features icons of a computer, tablet, and smartphone against a cloud background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868534/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Storage-Accounts/storage-accounts-use-cases-icons.jpg)
+![The image illustrates use cases for storage accounts, highlighting versatile application support, unstructured data storage, and reliable messaging with NoSQL. It features icons of a computer, tablet, and smartphone against a cloud background.](https://kodekloud.com/kk-media/image/upload/v1752868534/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Storage-Accounts/storage-accounts-use-cases-icons.jpg)
 
 The applications for Azure Storage Accounts are extensive. Wherever you require secure, scalable, and reliable storage, Azure Storage Accounts offer an ideal solution.
 

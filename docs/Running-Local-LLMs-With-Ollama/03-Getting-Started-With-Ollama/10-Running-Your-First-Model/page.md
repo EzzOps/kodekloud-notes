@@ -22,9 +22,7 @@ $ curl http://localhost:11434/api/generate -d '{
 
 If you haven’t pulled LLaVA yet, Ollama will download it when you first run:
 
-<Frame>
-![The image shows a webpage for "LLaVA," a multimodal model combining a vision encoder and Vicuna for visual and language understanding, updated to version 1.6. It includes details about the model's parameters, quantization, and license information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883728/notes-assets/images/Running-Local-LLMs-With-Ollama-Running-Different-Models/llava-multimodal-model-v1-6.jpg)
-</Frame>
+![The image shows a webpage for "LLaVA," a multimodal model combining a vision encoder and Vicuna for visual and language understanding, updated to version 1.6. It includes details about the model's parameters, quantization, and license information.](https://kodekloud.com/kk-media/image/upload/v1752883728/notes-assets/images/Running-Local-LLMs-With-Ollama-Running-Different-Models/llava-multimodal-model-v1-6.jpg)
 
 ```bash
 $ ollama run llava
@@ -57,9 +55,7 @@ The image features:
 
 Ollama’s registry includes smaller or specialized vision models—like a compact LLaVA fine-tuned from Phi 3 Mini:
 
-<Frame>
-  ![The image shows a webpage for the "llava-phi3" model, a small LLaVA model fine-tuned from Phi 3 Mini, with details about its parameters and performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883729/notes-assets/images/Running-Local-LLMs-With-Ollama-Running-Different-Models/llava-phi3-model-webpage.jpg)
-</Frame>
+![The image shows a webpage for the "llava-phi3" model, a small LLaVA model fine-tuned from Phi 3 Mini, with details about its parameters and performance.](https://kodekloud.com/kk-media/image/upload/v1752883729/notes-assets/images/Running-Local-LLMs-With-Ollama-Running-Different-Models/llava-phi3-model-webpage.jpg)
 
 Compare models by size, speed, and accuracy to find the best fit for your project.
 
@@ -73,9 +69,7 @@ Compare models by size, speed, and accuracy to find the best fit for your projec
 
 Happy local inference!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/836a96fe-9951-42b6-83ba-a602299c87c9/lesson/c03ca7a5-857f-446f-bac0-5b628164bc55" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/836a96fe-9951-42b6-83ba-a602299c87c9/lesson/c03ca7a5-857f-446f-bac0-5b628164bc55)
 
 
 # Running Your First Model
@@ -93,13 +87,9 @@ Before you begin, make sure you have:
 * The Ollama app installed on your computer
 * Access to the Ollama CLI (`ollama` command)
 
-<Frame>
-  ![The image lists prerequisites for a task, including having the Ollama app installed and a CLI on the local machine.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883730/notes-assets/images/Running-Local-LLMs-With-Ollama-Running-Your-First-Model/ollama-app-cli-prerequisites.jpg)
-</Frame>
+![The image lists prerequisites for a task, including having the Ollama app installed and a CLI on the local machine.](https://kodekloud.com/kk-media/image/upload/v1752883730/notes-assets/images/Running-Local-LLMs-With-Ollama-Running-Your-First-Model/ollama-app-cli-prerequisites.jpg)
 
-<Callout icon="lightbulb">
-  Ensure your machine meets the [Ollama system requirements](https://ollama.com/docs/installation) for smooth performance.
-</Callout>
+> **lightbulb** Ensure your machine meets the [Ollama system requirements](https://ollama.com/docs/installation) for smooth performance.
 
 ## Local vs. Cloud Deployment
 
@@ -110,9 +100,7 @@ You have two options for running LLMs:
 | Local           | No usage fees, full data control | Requires disk space, RAM            |
 | Cloud Service   | Instant scale, managed infra     | Ongoing costs, data sent externally |
 
-<Frame>
-  ![The image compares two methods of running a large language model: executing it on your own machine and relying on a paid cloud service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883731/notes-assets/images/Running-Local-LLMs-With-Ollama-Running-Your-First-Model/language-models-comparison-local-cloud.jpg)
-</Frame>
+![The image compares two methods of running a large language model: executing it on your own machine and relying on a paid cloud service.](https://kodekloud.com/kk-media/image/upload/v1752883731/notes-assets/images/Running-Local-LLMs-With-Ollama-Running-Your-First-Model/language-models-comparison-local-cloud.jpg)
 
 ## Ollama Setup Process
 
@@ -121,9 +109,7 @@ Ollama automates:
 1. Downloading the model files
 2. Installing dependencies and preparing the environment
 
-<Frame>
-  ![The image outlines a streamlined setup process by Ollama, featuring two steps: downloading necessary model files and setting up an environment with dependencies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883732/notes-assets/images/Running-Local-LLMs-With-Ollama-Running-Your-First-Model/ollama-setup-process-steps.jpg)
-</Frame>
+![The image outlines a streamlined setup process by Ollama, featuring two steps: downloading necessary model files and setting up an environment with dependencies.](https://kodekloud.com/kk-media/image/upload/v1752883732/notes-assets/images/Running-Local-LLMs-With-Ollama-Running-Your-First-Model/ollama-setup-process-steps.jpg)
 
 ## Running a Model with Ollama
 
@@ -153,9 +139,7 @@ writing manifest
 ✔ model llama3.2 ready
 ```
 
-<Callout icon="triangle-alert">
-  The first download can take several minutes depending on your internet speed and disk performance.
-</Callout>
+> **triangle-alert** The first download can take several minutes depending on your internet speed and disk performance.
 
 ## Chatting with Your Model
 
@@ -178,9 +162,7 @@ In the next lesson, we’ll:
 * Read model descriptions and metadata
 * Run additional LLMs locally
 
-<Frame>
-  ![The image is a slide titled "Next Steps" with a list of three items: "Different models offered," "Reading descriptions and details," and "Running different models."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883733/notes-assets/images/Running-Local-LLMs-With-Ollama-Running-Your-First-Model/next-steps-models-reading-running.jpg)
-</Frame>
+![The image is a slide titled "Next Steps" with a list of three items: "Different models offered," "Reading descriptions and details," and "Running different models."](https://kodekloud.com/kk-media/image/upload/v1752883733/notes-assets/images/Running-Local-LLMs-With-Ollama-Running-Your-First-Model/next-steps-models-reading-running.jpg)
 
 ***
 
@@ -190,6 +172,4 @@ In the next lesson, we’ll:
 * [Meta LLaMA 3 Release Notes](https://ai.meta.com/)
 * [Local LLM Best Practices](https://ollama.com/blog/local-llm-guide)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/836a96fe-9951-42b6-83ba-a602299c87c9/lesson/be4d479f-8938-4024-84c3-bf3335697501" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/836a96fe-9951-42b6-83ba-a602299c87c9/lesson/be4d479f-8938-4024-84c3-bf3335697501)

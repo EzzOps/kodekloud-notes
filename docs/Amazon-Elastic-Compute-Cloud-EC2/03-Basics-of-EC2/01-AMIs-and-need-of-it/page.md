@@ -171,7 +171,7 @@ Amazon Machine Images (AMIs) are pre-configured templates for launching virtual 
 
 Amazon Machine Images (AMIs) are the foundation for launching virtual servers in AWS. An AMI is a pre-configured template that packages an operating system, application server, software, and even data—enabling you to replicate environments in seconds.
 
-![The image is a diagram illustrating Amazon Machine Images (AMIs), showing interconnected components labeled as operating system, software, and personal settings. It includes icons representing computers and a home symbol.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868953/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-AMIs-and-need-of-it/amazon-machine-images-diagram-components.jpg)
+![The image is a diagram illustrating Amazon Machine Images (AMIs), showing interconnected components labeled as operating system, software, and personal settings. It includes icons representing computers and a home symbol.](https://kodekloud.com/kk-media/image/upload/v1752868953/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-AMIs-and-need-of-it/amazon-machine-images-diagram-components.jpg)
 
 ## How AMIs Work
 
@@ -190,7 +190,7 @@ Use your AMI to launch new Amazon EC2 instances with the exact same setup—no m
 
 > **lightbulb** Before sharing or publishing an AMI, remove any sensitive credentials or proprietary code. Any data included in the AMI becomes accessible to users you share it with.
 
-![The image is a diagram explaining the components of Amazon Machine Images (AMIs), including application, application server, block device mapping, Amazon EBS snapshots, operating system, and content of AMI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868954/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-AMIs-and-need-of-it/amazon-machine-images-components-diagram.jpg)
+![The image is a diagram explaining the components of Amazon Machine Images (AMIs), including application, application server, block device mapping, Amazon EBS snapshots, operating system, and content of AMI.](https://kodekloud.com/kk-media/image/upload/v1752868954/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-AMIs-and-need-of-it/amazon-machine-images-components-diagram.jpg)
 
 ## Key AMI Components
 
@@ -219,7 +219,7 @@ Leveraging AMIs streamlines your AWS deployments and ensures consistency across 
 
 > **triangle-alert** Publishing an AMI publicly can expose internal configurations and data. Always review IAM permissions and share AMIs judiciously.
 
-![The image lists the advantages of Amazon Machine Images (AMIs), including easy replication, faster deployment, consistency and standardization, scalability, and versioning and rollback.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868955/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-AMIs-and-need-of-it/amazon-machine-images-advantages-list.jpg)
+![The image lists the advantages of Amazon Machine Images (AMIs), including easy replication, faster deployment, consistency and standardization, scalability, and versioning and rollback.](https://kodekloud.com/kk-media/image/upload/v1752868955/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-AMIs-and-need-of-it/amazon-machine-images-advantages-list.jpg)
 
 ## Best Practices
 

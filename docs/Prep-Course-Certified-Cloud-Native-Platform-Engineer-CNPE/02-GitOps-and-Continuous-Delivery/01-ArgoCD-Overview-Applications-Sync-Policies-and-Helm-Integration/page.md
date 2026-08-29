@@ -102,9 +102,7 @@ spec:
       selfHeal: true
 ```
 
-<Callout icon="lightbulb">
-  Enable `automated` with `selfHeal: true` and `prune: true` in production to ensure Git changes are applied automatically, manual edits are reverted, and removed resources are pruned.
-</Callout>
+> **lightbulb** Enable `automated` with `selfHeal: true` and `prune: true` in production to ensure Git changes are applied automatically, manual edits are reverted, and removed resources are pruned.
 
 Helm integration — server-side rendering and overrides
 Argo CD renders Helm charts server-side — you do not need a Helm client inside the cluster. For Helm-based Applications, the `source` includes `chart` and `repoURL` (or an OCI reference). Argo CD caches the rendered manifests for diffs and drift detection, but it does not commit rendered manifests back to Git.
@@ -221,6 +219,4 @@ Further reading and references
 
 Mastering the Application CRD (source, destination, syncPolicy, and Helm values) and ApplicationSets gives you the foundation to operate Argo CD effectively in production and exam scenarios.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/1598b9d8-b455-4f9c-8656-583a06cf8a39" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/1598b9d8-b455-4f9c-8656-583a06cf8a39)

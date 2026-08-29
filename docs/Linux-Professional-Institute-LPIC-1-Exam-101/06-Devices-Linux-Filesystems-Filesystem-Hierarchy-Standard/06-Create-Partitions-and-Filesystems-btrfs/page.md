@@ -15,9 +15,7 @@ sudo xfs_admin -L "FirstFS" /dev/sdb1
 
 ext4 is widely supported and offers robust data integrity features.
 
-<Callout icon="lightbulb">
-  `mkfs.ext4` is a convenient alias for `mke2fs -t ext4`. You can use either command interchangeably.
-</Callout>
+> **lightbulb** `mkfs.ext4` is a convenient alias for `mke2fs -t ext4`. You can use either command interchangeably.
 
 ### 1. Create an ext4 Filesystem
 
@@ -88,9 +86,7 @@ sudo tune2fs -l /dev/sdb2 | grep 'Filesystem volume name'
 * [ext4 on Kernel.org](https://www.kernel.org/doc/html/latest/filesystems/ext4/index.html)
 * [tune2fs Manual Page](https://linux.die.net/man/8/tune2fs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/848cb6cb-8ee4-4e9e-adb6-ad26632d9cab" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/848cb6cb-8ee4-4e9e-adb6-ad26632d9cab)
 
 
 # Create Partitions and Filesystems btrfs
@@ -115,13 +111,9 @@ Btrfs is a modern copy-on-write (COW) filesystem designed for Linux environments
 | Subvolumes with quotas         | Isolate datasets, enforce per-subvolume space limits                             |
 | Deduplication                  | Post-process or realtime block dedupe                                            |
 
-<Callout icon="lightbulb">
-  When modifying data, COW filesystems write new data to free space, update metadata, then discard the old blocks. This preserves data integrity across crashes.
-</Callout>
+> **lightbulb** When modifying data, COW filesystems write new data to free space, update metadata, then discard the old blocks. This preserves data integrity across crashes.
 
-<Frame>
-  ![The image explains the difference between traditional filesystems and copy-on-write filesystems, highlighting how new data is written and managed. Traditional filesystems overwrite old data directly, while copy-on-write filesystems write new data to free space and update metadata before removing old data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881380/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Create-Partitions-and-Filesystems-btrfs/filesystems-traditional-vs-copy-on-write.jpg)
-</Frame>
+![The image explains the difference between traditional filesystems and copy-on-write filesystems, highlighting how new data is written and managed. Traditional filesystems overwrite old data directly, while copy-on-write filesystems write new data to free space and update metadata before removing old data.](https://kodekloud.com/kk-media/image/upload/v1752881380/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Create-Partitions-and-Filesystems-btrfs/filesystems-traditional-vs-copy-on-write.jpg)
 
 ## 1. Creating a Btrfs Filesystem
 
@@ -139,9 +131,7 @@ Add a human-readable label:
 sudo mkfs.btrfs -L "New Disk" /dev/sdb1
 ```
 
-<Callout icon="triangle-alert">
-  Changing labels on a mounted filesystem can cause mount failures. Always unmount before relabeling.
-</Callout>
+> **triangle-alert** Changing labels on a mounted filesystem can cause mount failures. Always unmount before relabeling.
 
 ### 1.2 Multi-Device & RAID Profiles
 

@@ -20,9 +20,7 @@ helm registry login registry-1.docker.io -u siddharth67
 # Login Succeeded
 ```
 
-<Callout icon="warning">
-  Docker Hub may require a Personal Access Token instead of your account password depending on your account settings. If authentication fails, create a token in Docker Hub and use it as the password.
-</Callout>
+> **warning** Docker Hub may require a Personal Access Token instead of your account password depending on your account settings. If authentication fails, create a token in Docker Hub and use it as the password.
 
 ## 3) Push the packaged chart to Docker Hub (OCI)
 
@@ -157,11 +155,9 @@ Resources and references:
 
 That's all — with these steps you can package Helm charts as OCI artifacts, publish them to registries like Docker Hub, and consume them manually or through GitOps workflows.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/dbab5117-22bd-436f-9e0c-ff1e564f06fd" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/dbab5117-22bd-436f-9e0c-ff1e564f06fd)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/b7657880-6ab2-4732-9b0e-d6055e5e6f00" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/b7657880-6ab2-4732-9b0e-d6055e5e6f00)
 
 
 # Demo Raise Alert using AlertManager

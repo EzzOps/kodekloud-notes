@@ -54,9 +54,7 @@ def delete_post(id: int, db: Session = Depends(get_db),
     return Response(status_code=status.HTTP_204_NO_CONTENT)
 ```
 
-<Callout icon="lightbulb">
-  The code first fetches the post for deletion. If the post is not found, the endpoint returns a 404 error. Then, it verifies that the post belongs to the current user before allowing deletion.
-</Callout>
+> **lightbulb** The code first fetches the post for deletion. If the post is not found, the endpoint returns a 404 error. Then, it verifies that the post belongs to the current user before allowing deletion.
 
 ***
 
@@ -86,9 +84,7 @@ def update_post(id: int, updated_post: schemas.PostCreate, db: Session = Depends
     return post_query.first()
 ```
 
-<Callout icon="lightbulb">
-  In the update endpoint, after ensuring the existence of the post, we check if the `current_user.id` matches the `post.owner_id`. Only when this condition is met does the update proceed.
-</Callout>
+> **lightbulb** In the update endpoint, after ensuring the existence of the post, we check if the `current_user.id` matches the `post.owner_id`. Only when this condition is met does the update proceed.
 
 ***
 
@@ -164,6 +160,4 @@ This approach ensures that users can only update or delete their own posts, ther
 
 For more information on securing your API endpoints, visit the [FastAPI Documentation](https://fastapi.tiangolo.com/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/c6daba96-de0e-4a3b-ab3f-cdbbfde7521e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/c6daba96-de0e-4a3b-ab3f-cdbbfde7521e)

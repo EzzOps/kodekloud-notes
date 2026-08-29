@@ -15,13 +15,9 @@ Deep learning approaches generally fall into two categories:
 | Discriminative | Supervised (labeled data)                       | Classification and prediction | Images, tabular     |
 | Generative     | Unsupervised / Semi-supervised (unlabeled data) | Content generation            | Text, images, video |
 
-<Frame>
-  ![The image illustrates the differences between Discriminative AI and Generative AI within deep learning models, highlighting their functions and data requirements. Discriminative AI focuses on classification and prediction using labeled datasets, while Generative AI deals with understanding data distribution and generating new data from large unlabeled datasets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881598/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Introduction-to-Generative-AI/discriminative-generative-ai-deep-learning.jpg)
-</Frame>
+![The image illustrates the differences between Discriminative AI and Generative AI within deep learning models, highlighting their functions and data requirements. Discriminative AI focuses on classification and prediction using labeled datasets, while Generative AI deals with understanding data distribution and generating new data from large unlabeled datasets.](https://kodekloud.com/kk-media/image/upload/v1752881598/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Introduction-to-Generative-AI/discriminative-generative-ai-deep-learning.jpg)
 
-<Callout icon="lightbulb">
-  Discriminative models estimate the probability of labels given inputs (`P(y|x)`), whereas generative models learn the joint probability of inputs and outputs (`P(x, y)`) to create fresh data.
-</Callout>
+> **lightbulb** Discriminative models estimate the probability of labels given inputs (`P(y|x)`), whereas generative models learn the joint probability of inputs and outputs (`P(x, y)`) to create fresh data.
 
 ### Practical Example
 
@@ -33,9 +29,7 @@ Deep learning approaches generally fall into two categories:
   Input: Photo of a dog + prompt “dog wearing goggles”\
   Output: New image of a dog with goggles
 
-<Frame>
-  ![The image compares Discriminative AI and Generative AI, showing how a Predictive ML Model learns relationships between data and labels to produce labels, while a GenAI Model learns patterns in unstructured content to generate new content.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881600/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Introduction-to-Generative-AI/discriminative-generative-ai-comparison.jpg)
-</Frame>
+![The image compares Discriminative AI and Generative AI, showing how a Predictive ML Model learns relationships between data and labels to produce labels, while a GenAI Model learns patterns in unstructured content to generate new content.](https://kodekloud.com/kk-media/image/upload/v1752881600/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Introduction-to-Generative-AI/discriminative-generative-ai-comparison.jpg)
 
 ## Core Capabilities of Generative AI
 
@@ -63,9 +57,7 @@ Foundation models are large-scale architectures pretrained on vast, diverse data
   * Transfer learning for specialized applications
   * Robust performance on unseen inputs
 
-<Callout icon="triangle-alert">
-  Always verify generated content for factual accuracy and potential biases. Generative AI can inadvertently replicate harmful patterns from its training data.
-</Callout>
+> **triangle-alert** Always verify generated content for factual accuracy and potential biases. Generative AI can inadvertently replicate harmful patterns from its training data.
 
 ## Further Reading and References
 
@@ -74,6 +66,4 @@ Foundation models are large-scale architectures pretrained on vast, diverse data
 * [Deep Learning Overview](https://www.deeplearning.ai/tutorials/)
 * [Ethics in AI](https://www.partnershiponai.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/5f4c8f03-fd62-495c-a094-5749ee57001d/lesson/511ec2f1-f2b0-40d9-b7f6-c211a9dd2a1a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/5f4c8f03-fd62-495c-a094-5749ee57001d/lesson/511ec2f1-f2b0-40d9-b7f6-c211a9dd2a1a)

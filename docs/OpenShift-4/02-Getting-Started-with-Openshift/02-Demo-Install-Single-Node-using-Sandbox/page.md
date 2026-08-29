@@ -26,12 +26,8 @@ This output indicates that your Sandbox environment provides 7GB of RAM, 15GB of
 
 After verifying your resources, click on **Start Using Your Sandbox** to log into an OpenShift instance running in the cloud. In this managed environment, all cluster components are maintained by OpenShift.
 
-<Callout icon="triangle-alert">
-  Keep in mind that the OpenShift Sandbox is intended solely for demonstration purposes and is not suitable for production workloads. The environment is temporary and will be automatically deleted after 30 days. While you can create a new Sandbox, it is designed for short-term use only.
-</Callout>
+> **triangle-alert** Keep in mind that the OpenShift Sandbox is intended solely for demonstration purposes and is not suitable for production workloads. The environment is temporary and will be automatically deleted after 30 days. While you can create a new Sandbox, it is designed for short-term use only.
 
 If you need a free demo environment for OpenShift without deploying CodeReady Containers locally, the OpenShift Sandbox is a perfect solution.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/7ba3dd10-68d9-414d-b26b-8e9109a4a3d3/lesson/80ff92ba-05c1-44bb-a840-43430deebb77" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/7ba3dd10-68d9-414d-b26b-8e9109a4a3d3/lesson/80ff92ba-05c1-44bb-a840-43430deebb77)

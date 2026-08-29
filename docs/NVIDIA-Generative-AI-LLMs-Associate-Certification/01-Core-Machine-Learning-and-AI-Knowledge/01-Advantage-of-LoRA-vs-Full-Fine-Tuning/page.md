@@ -41,15 +41,11 @@ Important caveats:
 * LoRA does not automatically improve instruction-following capability beyond what the fine-tuning objective provides. It merely enables efficient training of the adapter parameters that learn task-specific behavior.
 * Merging adapters into the base model can yield a single fast inference model, but doing so creates a new full-weight checkpoint.
 
-<Callout icon="lightbulb">
-  LoRA excels when you need to fine-tune large models on limited GPU resources: train and store only the small adapter matrices instead of the entire model.
-</Callout>
+> **lightbulb** LoRA excels when you need to fine-tune large models on limited GPU resources: train and store only the small adapter matrices instead of the entire model.
 
 References and further reading:
 
 * Hu et al., “LoRA: Low-Rank Adaptation of Large Language Models” — [https://arxiv.org/abs/2106.09685](https://arxiv.org/abs/2106.09685)
 * Practical guides and implementations: Hugging Face LoRA examples and adapters documentation.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/e8b7c02e-201b-4eea-9443-4c28af32c5af" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/e8b7c02e-201b-4eea-9443-4c28af32c5af)

@@ -22,7 +22,7 @@ In this lesson, you’ll learn how to build a robust orchestration automation so
 | **8. Implementing Release Gates (YAML Example)**   | Hands-on sample in Azure YAML pipelines.                         |
 | **9. Release Process Best Practices**              | Tips for reliability, repeatability, and scalability.            |
 
-![The image illustrates a DevOps infinity loop with stages like code, build, test, release, deploy, monitor, and operate, alongside a list of steps for a release strategy, including exploring IT development cycles and getting familiar with CI/CD and YAML pipeline structure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868059/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction-Implementing-an-Orchestration-Automation-Solution/devops-infinity-loop-release-strategy.jpg)
+![The image illustrates a DevOps infinity loop with stages like code, build, test, release, deploy, monitor, and operate, alongside a list of steps for a release strategy, including exploring IT development cycles and getting familiar with CI/CD and YAML pipeline structure.](https://kodekloud.com/kk-media/image/upload/v1752868059/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction-Implementing-an-Orchestration-Automation-Solution/devops-infinity-loop-release-strategy.jpg)
 
 Let’s dive in!
 

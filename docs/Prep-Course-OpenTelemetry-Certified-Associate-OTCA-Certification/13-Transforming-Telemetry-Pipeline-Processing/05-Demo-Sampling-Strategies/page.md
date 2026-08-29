@@ -206,9 +206,7 @@ service:
 
 Callout: tuning and memory considerations
 
-<Callout icon="lightbulb">
-  Tail sampling lets you make accurate, content-aware decisions (for example, always keep errors). Tune `decision_wait`, `num_traces`, and cache sizes based on your traffic profile to balance accuracy and memory usage.
-</Callout>
+> **lightbulb** Tail sampling lets you make accurate, content-aware decisions (for example, always keep errors). Tune `decision_wait`, `num_traces`, and cache sizes based on your traffic profile to balance accuracy and memory usage.
 
 Behavior examples and tests
 
@@ -285,9 +283,7 @@ Testing the composite policy
 
 Callout: resource and correctness warning
 
-<Callout icon="warning">
-  Tail sampling holds traces in memory until a decision is made. Misconfigured `decision_wait`, `num_traces`, or cache sizes can cause high memory usage or eviction of traces. Monitor memory and tune policies for production workloads.
-</Callout>
+> **warning** Tail sampling holds traces in memory until a decision is made. Misconfigured `decision_wait`, `num_traces`, or cache sizes can cause high memory usage or eviction of traces. Monitor memory and tune policies for production workloads.
 
 Comparison: Probabilistic vs Tail Sampling
 
@@ -314,6 +310,4 @@ Wrap-up
 
 This concludes the lesson on implementing sampling strategies in the OpenTelemetry Collector.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/5ebc9440-1f23-448b-a708-fd20fa2d7be5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/5ebc9440-1f23-448b-a708-fd20fa2d7be5)

@@ -99,9 +99,7 @@ jobs:
 
 Here, all jobs within this workflow will have access to the global environment variables. However, keep in mind that any variable set at the job level will override the global setting for that job only.
 
-<Callout icon="lightbulb">
-  It is crucial to avoid hardcoding sensitive information such as database credentials or secret keys in your repository. For improved security, store such data as encrypted secrets in your CI/CD system so that they remain concealed yet accessible during runtime.
-</Callout>
+> **lightbulb** It is crucial to avoid hardcoding sensitive information such as database credentials or secret keys in your repository. For improved security, store such data as encrypted secrets in your CI/CD system so that they remain concealed yet accessible during runtime.
 
 ## Handling Workflow Errors
 
@@ -142,6 +140,4 @@ Environment variables in your CI/CD workflows can be defined at both the job and
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/4979410a-af57-460b-8f71-5a177fa10d2d/lesson/ec656f7d-b5c2-4654-91d8-570cfd938d63" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/4979410a-af57-460b-8f71-5a177fa10d2d/lesson/ec656f7d-b5c2-4654-91d8-570cfd938d63)

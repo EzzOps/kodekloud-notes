@@ -6,9 +6,7 @@ This tutorial teaches how to customize an Ollama model for use as an AI assistan
 
 In this tutorial, you’ll learn how to tailor an Ollama model using a `Modelfile` to serve as an AI assistant for a financial institution. We’ll walk through each step—from creating the file to running queries—so you can adapt these concepts for your own use case.
 
-<Callout icon="lightbulb">
-  Make sure you have [Ollama][ollama-docs] installed and configured on your machine before you begin.
-</Callout>
+> **lightbulb** Make sure you have [Ollama][ollama-docs] installed and configured on your machine before you begin.
 
 ## Table of Contents
 
@@ -53,9 +51,7 @@ Provide context so the model acts as a specialized AI assistant. In this example
 SYSTEM You are Harris, an AI assistant for the employees of an investment and portfolio management firm called Growmore. Your job is to assist employees in managing client investments and portfolios. The currency you deal with is Indian Rupees (INR).
 ```
 
-<Callout icon="lightbulb">
-  A clear, specific system prompt helps guide the model’s tone, scope, and domain knowledge. Always mention role, audience, and any domain-specific details.
-</Callout>
+> **lightbulb** A clear, specific system prompt helps guide the model’s tone, scope, and domain knowledge. Always mention role, audience, and any domain-specific details.
 
 Your final `Modelfile` should now look like:
 
@@ -170,6 +166,4 @@ You’ve now customized an Ollama model using a `Modelfile` and tailored it for 
 
 [modelfile-guide]: https://ollama.com/docs/modelfile/
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/5785c7c7-5088-4ac3-b82f-8835e72b66d0/lesson/acda7691-df67-4e8b-88b6-6dad9263c9f0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/5785c7c7-5088-4ac3-b82f-8835e72b66d0/lesson/acda7691-df67-4e8b-88b6-6dad9263c9f0)

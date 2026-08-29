@@ -307,9 +307,7 @@ undeploy: kustomize ## Undeploy controller from the K8s cluster specified in ~/.
 	"$(KUSTOMIZE)" build config/default | "$(KUBECTL)" delete --ignore-not-found -f -
 ```
 
-<Callout icon="lightbulb">
-  Keep generated and scaffolded files in mind: update `+kubebuilder:rbac` markers and your `api` types as you add real resources. Use `make generate` and `make manifests` to refresh generated code and YAML so the on-disk artifacts match your source.
-</Callout>
+> **lightbulb** Keep generated and scaffolded files in mind: update `+kubebuilder:rbac` markers and your `api` types as you add real resources. Use `make generate` and `make manifests` to refresh generated code and YAML so the on-disk artifacts match your source.
 
 ## Quick lookup — where to change what
 
@@ -332,9 +330,7 @@ Once you have this map, the generated project becomes a set of predictable drawe
 * [controller-gen (controller-tools)](https://github.com/kubernetes-sigs/controller-tools)
 * [Go module docs](https://golang.org/ref/mod)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/20a4ec01-fde8-466d-83c7-2f74f6def1f0/lesson/a665532d-8f0d-41b7-8b7e-ab39671b08cb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/20a4ec01-fde8-466d-83c7-2f74f6def1f0/lesson/a665532d-8f0d-41b7-8b7e-ab39671b08cb)
 
 
 # Kubebuilder Vs Operator SDK
@@ -443,9 +439,7 @@ Skills and code transfer cleanly between the two: a reconciler written for Kubeb
   <img alt="The image illustrates the compatibility between Kubebuilder and Operator SDK, highlighting that 90% of the Operator SDK is already covered through unchanged skills transfer using controller-runtime." />
 </Frame>
 
-<Callout icon="lightbulb">
-  If your goal is to understand the internals and controller patterns, start with Kubebuilder. If you need quick Helm/Ansible integration or automatic OLM bundle generation for distribution, choose Operator SDK.
-</Callout>
+> **lightbulb** If your goal is to understand the internals and controller patterns, start with Kubebuilder. If you need quick Helm/Ansible integration or automatic OLM bundle generation for distribution, choose Operator SDK.
 
 ## Links and references
 
@@ -456,6 +450,4 @@ Skills and code transfer cleanly between the two: a reconciler written for Kubeb
 * OperatorHub: [https://operatorhub.io/](https://operatorhub.io/)
 * OpenShift: [https://www.openshift.com/](https://www.openshift.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/20a4ec01-fde8-466d-83c7-2f74f6def1f0/lesson/590b8eea-d5e2-4fac-b812-d0c61bad8ffa" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/20a4ec01-fde8-466d-83c7-2f74f6def1f0/lesson/590b8eea-d5e2-4fac-b812-d0c61bad8ffa)

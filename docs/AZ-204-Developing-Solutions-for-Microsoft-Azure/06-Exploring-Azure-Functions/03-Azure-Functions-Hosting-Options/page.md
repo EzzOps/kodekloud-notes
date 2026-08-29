@@ -32,7 +32,7 @@ Running your Function App on an App Service Environment (ASE) provides a fully i
 
 ### Kubernetes
 
-![The image illustrates Azure Functions hosting options, including Azure Functions Plans (Consumption, Premium, Dedicated) and other options like App Service Environment (ASE) and Kubernetes for maximum control and isolation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866527/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions-Hosting-Options/azure-functions-hosting-options-diagram.jpg)
+![The image illustrates Azure Functions hosting options, including Azure Functions Plans (Consumption, Premium, Dedicated) and other options like App Service Environment (ASE) and Kubernetes for maximum control and isolation.](https://kodekloud.com/kk-media/image/upload/v1752866527/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions-Hosting-Options/azure-functions-hosting-options-diagram.jpg)
 
 For maximum control over your deployment, consider deploying Azure Functions on Kubernetes. This option is ideal for enterprise scenarios and hybrid or multi-cloud environments, ensuring consistent execution across various platforms while enabling seamless scalability and management.
 
@@ -44,7 +44,7 @@ The hosting plan you select for your Azure Functions significantly influences se
 * **Resources:** The plan determines the allocation of memory, CPU, and other compute resources. For memory-intensive applications, the Premium Plan or a dedicated App Service Plan is often more suitable than the Consumption Plan.
 * **Advanced Functionality:** Capabilities such as Virtual Network integration and advanced authentication can depend on the hosting plan selected.
 
-![The image is a slide titled "Hosting Plans Dictate..." with three sections: "How to scale function app," "How to identify available resources," and "How to support advanced functionalities," each accompanied by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866529/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions-Hosting-Options/hosting-plans-function-app-resources.jpg)
+![The image is a slide titled "Hosting Plans Dictate..." with three sections: "How to scale function app," "How to identify available resources," and "How to support advanced functionalities," each accompanied by an icon.](https://kodekloud.com/kk-media/image/upload/v1752866529/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions-Hosting-Options/hosting-plans-function-app-resources.jpg)
 
 By aligning your hosting plan with your specific application requirements, you ensure optimal performance and operational efficiency.
 

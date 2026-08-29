@@ -16,7 +16,7 @@ When an event occurs within your AWS infrastructure, EventBridge captures it and
    * The event bus, acting as the central router, forwards the event to one or more designated targets based on your defined rules.
    * AWS provides a default event bus for general events, and you can also create custom event buses to isolate and manage events with specific processing requirements.
 
-![The image is a diagram illustrating AWS EventBridge, showing various AWS resources like Lambda and S3, along with options for SAAS and custom applications as event sources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858390/notes-assets/images/AWS-Certified-Developer-Associate-Amazon-EventBridge/aws-eventbridge-diagram-resources.jpg)
+![The image is a diagram illustrating AWS EventBridge, showing various AWS resources like Lambda and S3, along with options for SAAS and custom applications as event sources.](https://kodekloud.com/kk-media/image/upload/v1752858390/notes-assets/images/AWS-Certified-Developer-Associate-Amazon-EventBridge/aws-eventbridge-diagram-resources.jpg)
 
 > **lightbulb** AWS EventBridge supports multiple event sources, meaning you can trigger events from a variety of AWS services such as S3, EC2, and Lambda, as well as from external applications.
 
@@ -30,7 +30,7 @@ After capturing an event, the EventBridge event bus directs it to various target
 
 In addition to reactive event processing, EventBridge supports scheduled tasks. Similar to cron jobs, you can schedule events that trigger actions such as running a Lambda function every hour or weekly.
 
-![The image is a diagram illustrating the flow of events in an EventBridge Event Bus, showing event sources feeding into default and custom event buses, which then direct events to targets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858392/notes-assets/images/AWS-Certified-Developer-Associate-Amazon-EventBridge/eventbridge-event-bus-flow-diagram.jpg)
+![The image is a diagram illustrating the flow of events in an EventBridge Event Bus, showing event sources feeding into default and custom event buses, which then direct events to targets.](https://kodekloud.com/kk-media/image/upload/v1752858392/notes-assets/images/AWS-Certified-Developer-Associate-Amazon-EventBridge/eventbridge-event-bus-flow-diagram.jpg)
 
 ## Key Benefits
 
@@ -49,6 +49,6 @@ AWS EventBridge simplifies architecture design by decoupling application compone
 
 AWS EventBridge is a powerful service for connecting and orchestrating your application’s components through events. By capturing events from multiple sources, storing their schemas, and routing them based on predefined rules, EventBridge helps you create scalable and resilient serverless architectures. It not only simplifies event management but also enables scheduled operations, making it an indispensable tool in modern cloud integrations.
 
-![The image is a summary of EventBridge, describing it as a service that connects application components using events, routes events based on rules, acts as an event bus, and performs tasks at scheduled intervals.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858393/notes-assets/images/AWS-Certified-Developer-Associate-Amazon-EventBridge/eventbridge-summary-event-bus.jpg)
+![The image is a summary of EventBridge, describing it as a service that connects application components using events, routes events based on rules, acts as an event bus, and performs tasks at scheduled intervals.](https://kodekloud.com/kk-media/image/upload/v1752858393/notes-assets/images/AWS-Certified-Developer-Associate-Amazon-EventBridge/eventbridge-summary-event-bus.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/60c267ab-da8b-4408-97f4-b53aad3f4479/lesson/fc6d0310-94b7-4852-af2c-287b00901868)

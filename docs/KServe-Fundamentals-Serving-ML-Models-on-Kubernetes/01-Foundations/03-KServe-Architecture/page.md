@@ -43,9 +43,7 @@ The control plane handles lifecycle and orchestration; the data plane handles li
 
 KServe supports an optional transformer component for pre-processing and post-processing. Placeholders for protocol translation, input normalization, or response formatting are implemented in the transformer so you can keep the serving runtime focused on inference.
 
-<Callout icon="lightbulb">
-  Use transformers to separate preprocessing/postprocessing from the predictor. This keeps model containers simple and lets you update request/response logic independently of the model server.
-</Callout>
+> **lightbulb** Use transformers to separate preprocessing/postprocessing from the predictor. This keeps model containers simple and lets you update request/response logic independently of the model server.
 
 <Frame>
   <img alt="The image illustrates a data flow chart titled &#x22;The Data Plane – Request Flow,&#x22; showing steps like &#x22;Ingress Point,&#x22; &#x22;Route to Predictor,&#x22; &#x22;Run Inference,&#x22; and &#x22;Return Result.&#x22;" />
@@ -68,9 +66,7 @@ KServe supports two main deployment modes. Choose based on resource cost, operat
 | Serverless (`KServe + Knative + Istio`)                  | Scale-to-zero for idle models; scales up on traffic. Adds Knative and networking complexity. | Environments where reducing steady-state cost is important and occasional cold starts are acceptable.    |
 | RawDeployment (standard Kubernetes Deployment + ingress) | Uses regular Deployments; no scale-to-zero and no Knative. Simpler and avoids cold starts.   | Local development, simpler clusters, or low-latency production workloads needing consistent performance. |
 
-<Callout icon="warning">
-  Serverless mode saves resources by scaling idle models to zero, but expect cold-start latency on the first request and additional components to operate.
-</Callout>
+> **warning** Serverless mode saves resources by scaling idle models to zero, but expect cold-start latency on the first request and additional components to operate.
 
 <Frame>
   <img alt="The image illustrates deployment modes, focusing on a &#x22;Serverless&#x22; option with features like scaling to zero pods, freeing GPU/CPU resources, scale backup, and operational complexity challenges. A &#x22;RawDeployment&#x22; option is also mentioned." />
@@ -113,6 +109,4 @@ References and further reading
 
 In the following lessons we’ll walk through installing KServe on a local cluster and deploying a sample InferenceService so you can experience the entire control/data plane lifecycle end-to-end.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/5231587b-53d5-4ea2-a084-44550d4ce9bb/lesson/b185ca30-5e3b-4e44-8f75-1bed7e006f3a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/5231587b-53d5-4ea2-a084-44550d4ce9bb/lesson/b185ca30-5e3b-4e44-8f75-1bed7e006f3a)

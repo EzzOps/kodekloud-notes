@@ -136,9 +136,7 @@ Cilium's kube-proxy replacement (kubeProxyReplacement: "true") hands over Kubern
 4. Upgrade the Cilium Helm release with new values.
 5. Verify replacement is active and confirm service connectivity.
 
-<Callout icon="warning">
-  Deleting kube-proxy and flushing iptables can disrupt cluster networking. Ensure you have console access to nodes and a recovery plan before making these changes on production clusters.
-</Callout>
+> **warning** Deleting kube-proxy and flushing iptables can disrupt cluster networking. Ensure you have console access to nodes and a recovery plan before making these changes on production clusters.
 
 Important notes:
 
@@ -177,9 +175,7 @@ sudo iptables -t nat -S | grep KUBE-
 # sudo iptables -t nat -F KUBE-EXTERNAL-SERVICES
 ```
 
-<Callout icon="lightbulb">
-  On kind clusters running inside Docker containers, modifying host iptables from the container may not have the intended effect. Skip iptables cleanup on kind unless you know the correct host context.
-</Callout>
+> **lightbulb** On kind clusters running inside Docker containers, modifying host iptables from the container may not have the intended effect. Skip iptables cleanup on kind unless you know the correct host context.
 
 ### Enable kube-proxy replacement in values.yaml
 
@@ -379,11 +375,9 @@ Links and references
 * [Helm](https://helm.sh/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/0807e400-fd1b-4f25-bba5-d0fdb0f4e3f2/lesson/c0703837-90ea-450f-ae27-5d5042322d32" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/0807e400-fd1b-4f25-bba5-d0fdb0f4e3f2/lesson/c0703837-90ea-450f-ae27-5d5042322d32)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/0807e400-fd1b-4f25-bba5-d0fdb0f4e3f2/lesson/44205deb-7dd9-407d-a4f0-15b79934684d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/0807e400-fd1b-4f25-bba5-d0fdb0f4e3f2/lesson/44205deb-7dd9-407d-a4f0-15b79934684d)
 
 
 # Demo Routing Modes
@@ -398,9 +392,7 @@ We use a small 3-node cluster (1 control-plane, 2 workers) where each node sits 
 
 We will observe traffic from a pod on worker1 to a pod on worker2 using four terminals: control-plane, worker1, worker2, and router.
 
-<Callout icon="lightbulb">
-  By default Cilium uses tunnel mode (VXLAN) to encapsulate pod traffic between nodes, so no changes are required on the physical network for basic pod-to-pod connectivity.
-</Callout>
+> **lightbulb** By default Cilium uses tunnel mode (VXLAN) to encapsulate pod traffic between nodes, so no changes are required on the physical network for basic pod-to-pod connectivity.
 
 ***
 

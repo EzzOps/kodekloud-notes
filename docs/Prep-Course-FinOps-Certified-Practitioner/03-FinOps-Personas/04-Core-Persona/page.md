@@ -4,9 +4,7 @@ Source: https://notes.kodekloud.com/docs/Prep-Course-FinOps-Certified-Practition
 
 Overview of core FinOps personas, their objectives and responsibilities in coordinating finance, engineering, product, procurement, and leadership to optimize cloud cost, efficiency, and value.
 
-<Callout icon="lightbulb">
-  In this lesson we will zoom in on the core FinOps personas — the people who routinely make decisions that affect cloud cost, efficiency, and value.
-</Callout>
+> **lightbulb** In this lesson we will zoom in on the core FinOps personas — the people who routinely make decisions that affect cloud cost, efficiency, and value.
 
 Welcome back.
 
@@ -141,6 +139,4 @@ Each persona has a distinct objective and areas of focus, but they must collabor
 
 A subsequent article will examine the allied personas — the extended team that supports these core roles.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/17116beb-dcd6-4099-9424-bcb9554af3f3/lesson/c910ea2c-afbc-4fbd-86f7-99dab1aa6f0a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/17116beb-dcd6-4099-9424-bcb9554af3f3/lesson/c910ea2c-afbc-4fbd-86f7-99dab1aa6f0a)

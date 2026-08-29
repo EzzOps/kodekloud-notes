@@ -23,7 +23,7 @@ The Service Trust Portal encompasses several critical features that bolster your
 3. **Compliance Guides and White Papers**\
    Leverage comprehensive guides and white papers to deepen your understanding of your regulatory responsibilities and to enhance your internal compliance strategies.
 
-![The image outlines the key features of a Service Trust Portal, highlighting compliance reports, trust documents, and compliance guides and whitepapers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868389/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Service-Trust-Portal/service-trust-portal-features.jpg)
+![The image outlines the key features of a Service Trust Portal, highlighting compliance reports, trust documents, and compliance guides and whitepapers.](https://kodekloud.com/kk-media/image/upload/v1752868389/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Service-Trust-Portal/service-trust-portal-features.jpg)
 
 ## Benefits
 
@@ -38,7 +38,7 @@ Utilizing the Service Trust Portal offers several significant advantages:
 * **Centralized Resource Hub**\
   Benefit from having one centralized location for all security, privacy, and compliance information pertaining to Microsoft Azure and other Microsoft services.
 
-![The image is a graphic titled "Service Trust Portal – Benefits," featuring three sections: Transparency, Compliance Support, and Resource Hub, each with an icon and a gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868390/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Service-Trust-Portal/service-trust-portal-benefits.jpg)
+![The image is a graphic titled "Service Trust Portal – Benefits," featuring three sections: Transparency, Compliance Support, and Resource Hub, each with an icon and a gradient background.](https://kodekloud.com/kk-media/image/upload/v1752868390/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Service-Trust-Portal/service-trust-portal-benefits.jpg)
 
 > **lightbulb** For organizations that are particularly concerned about regulatory compliance, the Service Trust Portal serves as an invaluable resource to continuously monitor and validate the efficacy of their compliance strategies.
 
@@ -50,11 +50,11 @@ The Service Trust Portal is especially useful for IT professionals, compliance o
 
 Once logged into the Service Trust Portal, you will encounter a range of certifications, standards, and regulatory documents. For example, selecting PCI will display all associated documents regarding PCI compliance.
 
-![The image shows a webpage from Microsoft's Service Trust Portal, listing various certifications, regulations, and standards such as ISO/IEC, SOC, GDPR, and FedRAMP, along with sections for reports, whitepapers, and artifacts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868392/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Service-Trust-Portal/microsoft-service-trust-portal-certifications.jpg)
+![The image shows a webpage from Microsoft's Service Trust Portal, listing various certifications, regulations, and standards such as ISO/IEC, SOC, GDPR, and FedRAMP, along with sections for reports, whitepapers, and artifacts.](https://kodekloud.com/kk-media/image/upload/v1752868392/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Service-Trust-Portal/microsoft-service-trust-portal-certifications.jpg)
 
 One illustrative example is a PCI test document for Azure, released on March 9th, 2024. Additionally, you can access documents related to Microsoft General and Office 365 compliance in a similar manner.
 
-![The image shows a webpage listing applicable documents related to PCI compliance for Microsoft services, including Azure and Office 365, with details like titles, descriptions, and last updated dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868394/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Service-Trust-Portal/pci-compliance-documents-microsoft.jpg)
+![The image shows a webpage listing applicable documents related to PCI compliance for Microsoft services, including Azure and Office 365, with details like titles, descriptions, and last updated dates.](https://kodekloud.com/kk-media/image/upload/v1752868394/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Service-Trust-Portal/pci-compliance-documents-microsoft.jpg)
 
 The portal not only facilitates access to reports, white papers, and artifacts, but it also customizes the documentation based on your industry. For instance, healthcare providers can easily retrieve all health-related compliance documents made available by Microsoft.
 
@@ -66,7 +66,7 @@ Let’s take a closer look at the Service Trust Portal in action. This demonstra
 
 In addition to the Service Trust Portal, Microsoft Purview plays a vital role in data governance. Purview enhances the compliance and security information provided by the portal, further securing the integrity of Microsoft Cloud services.
 
-![The image shows a webpage listing applicable documents related to Microsoft Cloud for Healthcare, including titles, descriptions, and last updated dates. It includes certifications and whitepapers for services like Microsoft Azure and Office 365.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868395/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Service-Trust-Portal/microsoft-cloud-healthcare-documents-list.jpg)
+![The image shows a webpage listing applicable documents related to Microsoft Cloud for Healthcare, including titles, descriptions, and last updated dates. It includes certifications and whitepapers for services like Microsoft Azure and Office 365.](https://kodekloud.com/kk-media/image/upload/v1752868395/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Service-Trust-Portal/microsoft-cloud-healthcare-documents-list.jpg)
 
 ## Summary
 

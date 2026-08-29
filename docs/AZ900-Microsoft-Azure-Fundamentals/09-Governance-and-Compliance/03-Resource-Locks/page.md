@@ -6,7 +6,7 @@ Azure resource locks protect critical assets from accidental deletion or modific
 
 Azure resource locks are a powerful feature designed to protect your critical assets from accidental deletion or modification. In this article, we explore how Beta Innovation can use Azure resource locks to safeguard important resources and ensure operational continuity.
 
-![The image illustrates a challenge in preventing resource accidents, showing icons for "Delete" and "Modify" alongside gears labeled as "Critical Resources" with exclamation marks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868379/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Locks/resource-accidents-challenge-icons.jpg)
+![The image illustrates a challenge in preventing resource accidents, showing icons for "Delete" and "Modify" alongside gears labeled as "Critical Resources" with exclamation marks.](https://kodekloud.com/kk-media/image/upload/v1752868379/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Locks/resource-accidents-challenge-icons.jpg)
 
 Azure resource locks serve as protective measures by blocking unintended changes. They can be applied at multiple points in the resource hierarchy, including subscriptions, resource groups, and individual resources.
 
@@ -20,7 +20,7 @@ Azure provides two types of resource locks:
 2. **Delete Lock**\
    This lock allows modifications while preventing the deletion of a resource. For instance, if you apply a Delete lock to a virtual machine, you can still perform actions like starting, stopping, or resizing the VM, but deleting it is blocked.
 
-![The image shows two types of resource locks: "Read-Only Lock" and "Delete Lock," each represented with an icon and numbered 01 and 02.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868380/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Locks/resource-locks-read-only-delete-icons.jpg)
+![The image shows two types of resource locks: "Read-Only Lock" and "Delete Lock," each represented with an icon and numbered 01 and 02.](https://kodekloud.com/kk-media/image/upload/v1752868380/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Locks/resource-locks-read-only-delete-icons.jpg)
 
 ## Key Features of Resource Locks
 
@@ -30,7 +30,7 @@ Azure provides two types of resource locks:
 * **Flexible Control:**\
   Choose between a Read-Only lock and a Delete lock based on your specific security requirements.
 
-![The image shows two key features of resource locks: "Scope of Application" and "Flexible Control," each represented by a colored card with icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868381/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Locks/resource-locks-scope-control-icons.jpg)
+![The image shows two key features of resource locks: "Scope of Application" and "Flexible Control," each represented by a colored card with icons.](https://kodekloud.com/kk-media/image/upload/v1752868381/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Locks/resource-locks-scope-control-icons.jpg)
 
 ## Benefits of Using Resource Locks
 
@@ -45,7 +45,7 @@ Resource locks provide several advantages:
 * **Enhanced Governance:**\
   Resource locks contribute to improved compliance and governance by establishing an extra layer of control over resource modifications.
 
-![The image outlines the benefits of resource locks, highlighting protection against accidental actions, customizable security, and enhanced governance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868382/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Locks/resource-locks-benefits-diagram.jpg)
+![The image outlines the benefits of resource locks, highlighting protection against accidental actions, customizable security, and enhanced governance.](https://kodekloud.com/kk-media/image/upload/v1752868382/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Locks/resource-locks-benefits-diagram.jpg)
 
 ## Use Cases for Resource Locks
 
@@ -57,7 +57,7 @@ Resource locks are particularly useful for protecting high-value assets, such as
 
 They ensure that your most critical components remain secure and fully operational.
 
-![The image illustrates three use cases for resource locks: protecting critical resources, securing production databases, and safeguarding key network components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868384/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Locks/resource-locks-use-cases-illustration.jpg)
+![The image illustrates three use cases for resource locks: protecting critical resources, securing production databases, and safeguarding key network components.](https://kodekloud.com/kk-media/image/upload/v1752868384/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Locks/resource-locks-use-cases-illustration.jpg)
 
 ## Managing Resource Locks in the Azure Portal
 
@@ -69,17 +69,17 @@ Managing resource locks via the Azure Portal is straightforward. Follow these st
 2. **Applying a Lock to a Resource Group:**\
    Within a specific resource group, search for "lock" and add a new lock. For instance, you might name the lock "dnd" (do not delete) and then confirm by clicking OK.
 
-![The image shows a Microsoft Azure portal interface where a user is adding a lock to a resource group named "az900-fn-rg." The "Add lock" dialog box is open, requiring a lock name and type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868386/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Locks/azure-portal-add-lock-resource-group.jpg)
+![The image shows a Microsoft Azure portal interface where a user is adding a lock to a resource group named "az900-fn-rg." The "Add lock" dialog box is open, requiring a lock name and type.](https://kodekloud.com/kk-media/image/upload/v1752868386/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Locks/azure-portal-add-lock-resource-group.jpg)
 
 3. **Effect of Locks on Resources:**\
    When a lock is applied to a resource group, attempts to delete any resource within that group (such as a storage account) will be blocked. An error message will inform you that the deletion is prevented by the active Delete lock.
 
-![The image shows a Microsoft Azure portal interface displaying details of a storage account named "az900fnrgbee0" with a pop-up for deleting the storage account, listing dependent resources like containers, file shares, and tables.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868387/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Locks/azure-portal-storage-account-details.jpg)
+![The image shows a Microsoft Azure portal interface displaying details of a storage account named "az900fnrgbee0" with a pop-up for deleting the storage account, listing dependent resources like containers, file shares, and tables.](https://kodekloud.com/kk-media/image/upload/v1752868387/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Locks/azure-portal-storage-account-details.jpg)
 
 4. **Understanding Inheritance and Overrides:**\
    Locks applied at the resource group level are automatically inherited by all resources within that group. However, additional locks can be set on individual resources. For example, adding a Read-Only lock at the resource level will override other operations, such as restarting the resource.
 
-![The image shows a Microsoft Azure portal interface displaying the "Locks" section for a resource named "az900fndemo984." It lists two locks: one with a "Delete" type and another with a "Read-only" type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868388/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Locks/azure-portal-locks-az900fndemo984.jpg)
+![The image shows a Microsoft Azure portal interface displaying the "Locks" section for a resource named "az900fndemo984." It lists two locks: one with a "Delete" type and another with a "Read-only" type.](https://kodekloud.com/kk-media/image/upload/v1752868388/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Locks/azure-portal-locks-az900fndemo984.jpg)
 
 5. **Removing Locks:**\
    To remove a lock, return to the "locks" section. If a lock is inherited from a parent scope (like a resource group), you will need to remove it from that parent level rather than individually on the resource.

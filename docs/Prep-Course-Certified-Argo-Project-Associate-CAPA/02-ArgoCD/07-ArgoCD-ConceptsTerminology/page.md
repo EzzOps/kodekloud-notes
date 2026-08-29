@@ -6,9 +6,7 @@ Overview of ArgoCD concepts, explaining Applications, Projects, sync and health 
 
 In this lesson we cover the essential ArgoCD concepts and terminology you need to operate ArgoCD effectively in a GitOps workflow. Familiarity with Git, Docker, Kubernetes manifests, and the basics of declarative infrastructure is assumed.
 
-<Callout icon="lightbulb">
-  Prerequisites: familiarity with [Git for Beginners](https://learn.kodekloud.com/user/courses/git-for-beginners), [Kubernetes for the Absolute Beginners - Hands-on Tutorial](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial) (manifests, namespaces), and the idea of declarative infrastructure will help you follow this lesson.
-</Callout>
+> **lightbulb** Prerequisites: familiarity with [Git for Beginners](https://learn.kodekloud.com/user/courses/git-for-beginners), [Kubernetes for the Absolute Beginners - Hands-on Tutorial](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial) (manifests, namespaces), and the idea of declarative infrastructure will help you follow this lesson.
 
 ## What is an ArgoCD Application (Kubernetes Custom Resource)
 
@@ -105,9 +103,7 @@ ArgoCD reports multiple status dimensions for each Application — understanding
 * Operation status reflects the most recent operation (for example, the result of a sync).
 * Health status is derived from built-in or custom health checks per resource type and then aggregated for the Application.
 
-<Callout icon="lightbulb">
-  You can extend or customize health checks for special resource types using custom health checks or resource health overrides.
-</Callout>
+> **lightbulb** You can extend or customize health checks for special resource types using custom health checks or resource health overrides.
 
 ## Refresh and Manual Sync (CLI examples)
 

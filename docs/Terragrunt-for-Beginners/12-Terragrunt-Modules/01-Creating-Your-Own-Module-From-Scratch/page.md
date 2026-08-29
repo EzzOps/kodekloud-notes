@@ -74,9 +74,7 @@ variable "aws_region" {
 }
 ```
 
-<Callout icon="lightbulb">
-  Use [validation blocks](https://www.terraform.io/language/values/variables#custom-validation) to enforce constraints early and prevent invalid configurations.
-</Callout>
+> **lightbulb** Use [validation blocks](https://www.terraform.io/language/values/variables#custom-validation) to enforce constraints early and prevent invalid configurations.
 
 ***
 
@@ -113,9 +111,7 @@ resource "aws_instance" "example" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Avoid hard-coding AMI IDs across regions. Consider using `data "aws_ami"` to dynamically look up the latest image.
-</Callout>
+> **triangle-alert** Avoid hard-coding AMI IDs across regions. Consider using `data "aws_ami"` to dynamically look up the latest image.
 
 ***
 
@@ -135,9 +131,7 @@ output "public_ips" {
 }
 ```
 
-<Callout icon="lightbulb">
-  If outputs contain sensitive data (e.g., private keys), set `sensitive = true` to prevent accidental exposure.
-</Callout>
+> **lightbulb** If outputs contain sensitive data (e.g., private keys), set `sensitive = true` to prevent accidental exposure.
 
 ***
 
@@ -203,6 +197,4 @@ Consistently document your module to help users onboard quickly:
 * [Terraform Output Values](https://www.terraform.io/language/values/outputs)
 * [AWS Provider Documentation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/e573b785-9499-4490-b1f8-01223352845a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/e573b785-9499-4490-b1f8-01223352845a)

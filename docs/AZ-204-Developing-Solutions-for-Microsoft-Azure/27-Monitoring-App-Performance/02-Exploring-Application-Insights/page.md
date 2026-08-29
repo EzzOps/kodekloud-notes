@@ -36,7 +36,7 @@ Visualize your application's architecture along with its dependencies. The Appli
 
 Trace the flow of requests across various components of your application. Distributed Tracing provides an end-to-end view of execution paths, enabling you to identify latency issues and optimize performance.
 
-![The image lists features of Application Insights, including Live Metrics, Availability, GitHub/DevOps Integration, Usage, Smart Detection, Application Map, and Distributed Tracing, with brief descriptions for each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866720/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Application-Insights/application-insights-features-list.jpg)
+![The image lists features of Application Insights, including Live Metrics, Availability, GitHub/DevOps Integration, Usage, Smart Detection, Application Map, and Distributed Tracing, with brief descriptions for each.](https://kodekloud.com/kk-media/image/upload/v1752866720/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Application-Insights/application-insights-features-list.jpg)
 
 ## Metrics and Data Captured by Application Insights
 
@@ -53,7 +53,7 @@ Application Insights collects a wide array of performance indicators and diagnos
 * **Diagnostic Trace Logs:** Follow detailed trace logs to pinpoint specific events or errors.
 * **Custom Events and Metrics:** Capture unique business events to gain tailored insights into your application's performance.
 
-![The image is an infographic titled "Application Insights," listing ten metrics such as request rates, exceptions, page views, and diagnostic trace logs, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866721/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Application-Insights/application-insights-metrics-infographic.jpg)
+![The image is an infographic titled "Application Insights," listing ten metrics such as request rates, exceptions, page views, and diagnostic trace logs, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752866721/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Application-Insights/application-insights-metrics-infographic.jpg)
 
 ## Integration Stages for Application Insights
 

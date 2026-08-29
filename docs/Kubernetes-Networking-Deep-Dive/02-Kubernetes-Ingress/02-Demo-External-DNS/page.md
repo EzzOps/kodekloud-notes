@@ -80,9 +80,7 @@ traefik-7df9fd988f-j49ln         1/1     Running   0          18m
 | `txtOwnerId`    | Identifier for TXT record ownership                        | `owner-id`              |
 | `extraArgs`     | Additional CLI flags, including API credentials & OTE flag | `--godaddy-api-key=...` |
 
-<Callout icon="triangle-alert">
-  Never commit your GoDaddy API key/secret to version control. Use a secure secret management system or Kubernetes `Secret`.
-</Callout>
+> **triangle-alert** Never commit your GoDaddy API key/secret to version control. Use a secure secret management system or Kubernetes `Secret`.
 
 3. Install ExternalDNS in the `default` namespace:
 

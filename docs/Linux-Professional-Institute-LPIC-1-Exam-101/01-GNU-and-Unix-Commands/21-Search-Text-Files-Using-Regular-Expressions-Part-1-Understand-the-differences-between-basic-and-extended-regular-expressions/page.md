@@ -68,9 +68,7 @@ $ grep -r '0\+' /etc/
 ...
 ```
 
-<Callout icon="lightbulb">
-  Basic `grep` requires escaping `?`, `+`, `|`, `(`, and `)`. To leverage these metacharacters without backslashes, switch to **extended** regex mode using `grep -E` or the `egrep` command.
-</Callout>
+> **lightbulb** Basic `grep` requires escaping `?`, `+`, `|`, `(`, and `)`. To leverage these metacharacters without backslashes, switch to **extended** regex mode using `grep -E` or the `egrep` command.
 
 ***
 
@@ -82,9 +80,7 @@ By combining these core operators, you can design precise search patterns to sif
 * [Regular Expressions Tutorial](https://www.regular-expressions.info/)
 * [Linux `grep` Command Tutorial](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/a8082e94-5503-49f2-b9af-0c045e168085" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/a8082e94-5503-49f2-b9af-0c045e168085)
 
 
 # Search Text Files Using Regular Expressions Part 1 Understand the differences between basic and extended regular expressions

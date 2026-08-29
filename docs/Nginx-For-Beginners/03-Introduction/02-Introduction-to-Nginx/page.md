@@ -17,9 +17,7 @@ We’ll cover HTTPS and best practices for TLS termination — including using a
 
 Security callouts:
 
-<Callout icon="warning">
-  Always run updates and follow the principle of least privilege. Use valid TLS certificates and enable strong cipher suites. When exposing services to the public internet, make sure your firewall is configured and only necessary ports (e.g. 80, 443) are open.
-</Callout>
+> **warning** Always run updates and follow the principle of least privilege. Use valid TLS certificates and enable strong cipher suites. When exposing services to the public internet, make sure your firewall is configured and only necessary ports (e.g. 80, 443) are open.
 
 Optimization and observability are key parts of production operations. You will implement rate limiting, HTTP caching, gzip/brotli compression, and basic monitoring to reduce latency and improve throughput. We’ll also cover how to read and make sense of NGINX access and error logs to diagnose issues.
 
@@ -38,9 +36,7 @@ Course structure
 | Performance & Caching          | Improve latency        | gzip/brotli, proxy\_cache, caching headers            |
 | Monitoring & Troubleshooting   | Maintain reliability   | Logs, status module, metrics, debugging tips          |
 
-<Callout icon="lightbulb">
-  Tip: Follow along with the labs. Practicing each module on a local VM or cloud instance will help you retain the configuration patterns and troubleshooting steps covered in the videos.
-</Callout>
+> **lightbulb** Tip: Follow along with the labs. Practicing each module on a local VM or cloud instance will help you retain the configuration patterns and troubleshooting steps covered in the videos.
 
 Additional resources and references
 
@@ -52,9 +48,7 @@ Additional resources and references
 Community
 At KodeKloud, community learning matters. Join the discussion forums to ask questions, share configurations, and compare troubleshooting approaches with peers worldwide.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/9e6f72d7-933d-42dd-a948-ae48d66aecb6/lesson/b982ee43-0a38-4e27-b570-2e22b1d6ae55" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/9e6f72d7-933d-42dd-a948-ae48d66aecb6/lesson/b982ee43-0a38-4e27-b570-2e22b1d6ae55)
 
 
 # Introduction to Nginx
@@ -103,9 +97,7 @@ Nginx is available in both the free open source community edition and a commerci
 |     Open-source (nginx) | Developers, hobby projects, many production sites   | Core web server, reverse proxy, load balancing, caching, modular architecture            |
 | Commercial (Nginx Plus) | Enterprises needing support and additional features | Active support, advanced monitoring, session persistence, commercial modules and tooling |
 
-<Callout icon="lightbulb">
-  If you want the open source distribution, use [nginx.org](https://nginx.org). For the commercial Nginx Plus and related products, use [nginx.com](https://nginx.com). The sites are related but serve different editions and documentation.
-</Callout>
+> **lightbulb** If you want the open source distribution, use [nginx.org](https://nginx.org). For the commercial Nginx Plus and related products, use [nginx.com](https://nginx.com). The sites are related but serve different editions and documentation.
 
 ## Adoption and market presence
 
@@ -129,6 +121,4 @@ In the lessons that follow, we’ll explore Nginx’s architecture, configuratio
 * Nginx commercial (Nginx Plus): [https://nginx.com](https://nginx.com)
 * Nginx documentation and configuration examples: [https://nginx.org/en/docs/](https://nginx.org/en/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/9e6f72d7-933d-42dd-a948-ae48d66aecb6/lesson/7c5a412f-6586-46e5-acb2-b1ea364b4de8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/9e6f72d7-933d-42dd-a948-ae48d66aecb6/lesson/7c5a412f-6586-46e5-acb2-b1ea364b4de8)

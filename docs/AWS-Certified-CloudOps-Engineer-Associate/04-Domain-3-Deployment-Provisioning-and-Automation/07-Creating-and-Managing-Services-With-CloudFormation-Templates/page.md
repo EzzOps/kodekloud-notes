@@ -12,7 +12,7 @@ CloudFormation templates, when executed, create stacks—a collection of AWS res
 
 Below is an illustrative diagram summarizing the components and structure of a CloudFormation template. It highlights key features such as the collection of resources, more than 500 resource types, configuration via properties, dependency management, and the ability to author templates in YAML or JSON.
 
-![The image describes CloudFormation Template Components, highlighting features such as a collection of resources, over 500 resource types, configuration by properties, dependency management, and support for YAML or JSON.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860285/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Creating-and-Managing-Services-With-CloudFormation-Templates/cloudformation-template-components-overview.jpg)
+![The image describes CloudFormation Template Components, highlighting features such as a collection of resources, over 500 resource types, configuration by properties, dependency management, and support for YAML or JSON.](https://kodekloud.com/kk-media/image/upload/v1752860285/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Creating-and-Managing-Services-With-CloudFormation-Templates/cloudformation-template-components-overview.jpg)
 
 ## Structure of a CloudFormation Template
 
@@ -56,7 +56,7 @@ When a CloudFormation template is deployed, the service performs the following s
 
 The diagram below visually describes these steps:
 
-![The image illustrates three steps for creating services with CloudFormation templates: defining resources, deploying the template, and monitoring stack events.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860286/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Creating-and-Managing-Services-With-CloudFormation-Templates/cloudformation-services-steps-diagram.jpg)
+![The image illustrates three steps for creating services with CloudFormation templates: defining resources, deploying the template, and monitoring stack events.](https://kodekloud.com/kk-media/image/upload/v1752860286/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Creating-and-Managing-Services-With-CloudFormation-Templates/cloudformation-services-steps-diagram.jpg)
 
 ## Updating and Deleting Stacks
 
@@ -67,12 +67,12 @@ After deployment, you can update or delete resources as needed:
 
   The following diagram outlines the process of updating a stack using change sets:
 
-![The image is a flowchart illustrating the process of updating a stack using change sets in AWS CloudFormation, showing steps from creating a change set to executing it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860287/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Creating-and-Managing-Services-With-CloudFormation-Templates/aws-cloudformation-update-stack-flowchart.jpg)
+![The image is a flowchart illustrating the process of updating a stack using change sets in AWS CloudFormation, showing steps from creating a change set to executing it.](https://kodekloud.com/kk-media/image/upload/v1752860287/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Creating-and-Managing-Services-With-CloudFormation-Templates/aws-cloudformation-update-stack-flowchart.jpg)
 
 * **Deleting a Stack**:\
   Deleting a stack removes all associated resources. However, be cautious as certain configurations (like S3 bucket retention or delete protection) might block the deletion of some resources. It is advisable to review dependencies and protections before initiating a delete operation.
 
-![The image shows a CloudFormation interface with a "Delete" action highlighted, indicating a stack deletion process with the status "DELETE\_IN\_PROGRESS."](../../../../images/kodekloud.com/kk-media/image/upload/v1752860288/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Creating-and-Managing-Services-With-CloudFormation-Templates/cloudformation-delete-stack-status.jpg)
+![The image shows a CloudFormation interface with a "Delete" action highlighted, indicating a stack deletion process with the status "DELETE\_IN\_PROGRESS."](https://kodekloud.com/kk-media/image/upload/v1752860288/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Creating-and-Managing-Services-With-CloudFormation-Templates/cloudformation-delete-stack-status.jpg)
 
 > **triangle-alert** Before deleting a stack, ensure that you have accounted for any data retention requirements or dependencies that might prevent resource deletion.
 
@@ -80,7 +80,7 @@ After deployment, you can update or delete resources as needed:
 
 In addition to using the AWS CLI or console for managing stacks, AWS CloudFormation Designer offers a graphical interface for visualizing your stack's architecture. Although it can sometimes be clunky, this integrated tool supports both JSON and YAML formats, aiding in the creation and modification of CloudFormation templates.
 
-![The image shows a screenshot of the CloudFormation Designer interface, featuring a graphical tool for creating and modifying CloudFormation templates with a drag-and-drop interface and integrated JSON and YAML editor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860289/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Creating-and-Managing-Services-With-CloudFormation-Templates/cloudformation-designer-screenshot.jpg)
+![The image shows a screenshot of the CloudFormation Designer interface, featuring a graphical tool for creating and modifying CloudFormation templates with a drag-and-drop interface and integrated JSON and YAML editor.](https://kodekloud.com/kk-media/image/upload/v1752860289/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Creating-and-Managing-Services-With-CloudFormation-Templates/cloudformation-designer-screenshot.jpg)
 
 ## Conclusion
 

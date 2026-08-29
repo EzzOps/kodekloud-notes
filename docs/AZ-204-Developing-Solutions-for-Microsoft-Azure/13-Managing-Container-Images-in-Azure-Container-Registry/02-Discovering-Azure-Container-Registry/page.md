@@ -100,7 +100,7 @@ ACR seamlessly integrates with scalable orchestration platforms like Azure Kuber
 
 Deeply integrated with various Azure services, ACR is perfect for automating DevOps workflows and deploying containerized applications across multiple regions. Its tight integration within the Azure ecosystem streamlines operations, making it an excellent choice for enterprises leveraging cloud-native solutions.
 
-![The image is an infographic about the Azure Container Registry, highlighting its use cases in scalable orchestration systems and Azure services. It describes managing containerized applications across clusters and supporting application building and running at scale.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866710/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Azure-Container-Registry/azure-container-registry-infographic.jpg)
+![The image is an infographic about the Azure Container Registry, highlighting its use cases in scalable orchestration systems and Azure services. It describes managing containerized applications across clusters and supporting application building and running at scale.](https://kodekloud.com/kk-media/image/upload/v1752866710/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Azure-Container-Registry/azure-container-registry-infographic.jpg)
 
 These use cases illustrate the flexibility and strength of Azure Container Registry for a wide range of deployment scenarios—from managing container orchestration systems to integrating with broader Azure services.
 
@@ -120,7 +120,7 @@ Designed for production workloads, the Standard tier provides enhanced performan
 
 For high-demand environments, the Premium tier offers advanced features such as geo-replication. This ensures rapid, reliable access to container images across different regions, making it suitable for global deployments where performance and redundancy are critical.
 
-![The image illustrates the service tiers of Azure Container Registry: Basic, Standard, and Premium, each represented by different icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866711/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Azure-Container-Registry/azure-container-registry-tiers.jpg)
+![The image illustrates the service tiers of Azure Container Registry: Basic, Standard, and Premium, each represented by different icons.](https://kodekloud.com/kk-media/image/upload/v1752866711/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Azure-Container-Registry/azure-container-registry-tiers.jpg)
 
 Selecting the right service tier allows you to align ACR's capabilities with your project requirements, whether you're in development, running production workloads, or managing large-scale deployments.
 
@@ -133,7 +133,7 @@ Azure Container Registry supports a variety of image types and artifacts, ensuri
 * **Helm Charts:** Manage Kubernetes applications efficiently with Helm charts stored directly in ACR.
 * **OCI Compliance:** ACR adheres to Open Container Initiative (OCI) standards, ensuring interoperability with other tools and platforms.
 
-![The image describes features of the Azure Container Registry, highlighting its support for Docker-compatible images, both Windows and Linux images, and storage of Helm charts and OCI-compliant images.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866713/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Azure-Container-Registry/azure-container-registry-features.jpg)
+![The image describes features of the Azure Container Registry, highlighting its support for Docker-compatible images, both Windows and Linux images, and storage of Helm charts and OCI-compliant images.](https://kodekloud.com/kk-media/image/upload/v1752866713/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Azure-Container-Registry/azure-container-registry-features.jpg)
 
 These features ensure that you have a versatile and fully compliant platform for managing a wide variety of container workloads.
 
@@ -145,7 +145,7 @@ ACR not only stores container images but also guarantees that they are secure an
 * **Geo-Redundant Storage:** Container images are replicated across multiple regions using Azure's geo-redundant storage, enhancing availability and ensuring reliability during regional outages.
 * **Geo-Replication in Premium Tier:** With the Premium tier, ACR supports geo-replication, reducing latency for global teams and ensuring high availability for rapid deployments.
 
-![The image outlines three storage capabilities: Encryption at Rest, Geo-Redundant Storage, and Geo-Replication, with brief descriptions for each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866715/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Azure-Container-Registry/storage-capabilities-encryption-geo-redundant.jpg)
+![The image outlines three storage capabilities: Encryption at Rest, Geo-Redundant Storage, and Geo-Replication, with brief descriptions for each.](https://kodekloud.com/kk-media/image/upload/v1752866715/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Azure-Container-Registry/storage-capabilities-encryption-geo-redundant.jpg)
 
 These robust storage capabilities make sure that your container images are secure and readily available whenever and wherever they are needed.
 

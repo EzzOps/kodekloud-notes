@@ -10,7 +10,7 @@ After the cost optimization module, your first design challenge will focus on se
 
 Below is the agenda diagram for the security design section:
 
-![The image is an agenda for a presentation titled "Designing For Security," outlining topics such as design principles, cybersecurity foundations, shared responsibility, and specific security services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863946/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Designing-for-Security/designing-for-security-agenda.jpg)
+![The image is an agenda for a presentation titled "Designing For Security," outlining topics such as design principles, cybersecurity foundations, shared responsibility, and specific security services.](https://kodekloud.com/kk-media/image/upload/v1752863946/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Designing-for-Security/designing-for-security-agenda.jpg)
 
 ## Section 1: Design Principles
 
@@ -22,7 +22,7 @@ In this section, we introduce the key design principles that form the backbone o
 
 These foundational concepts set the stage for the more detailed discussions that follow.
 
-![The image illustrates design principles for security, featuring a central laptop icon with a shield, surrounded by three principles: "Maintain Traceability," "Apply Security at All Layers," and "Automate Best Practices."](../../../../images/kodekloud.com/kk-media/image/upload/v1752863947/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Designing-for-Security/security-design-principles-laptop-shield.jpg)
+![The image illustrates design principles for security, featuring a central laptop icon with a shield, surrounded by three principles: "Maintain Traceability," "Apply Security at All Layers," and "Automate Best Practices."](https://kodekloud.com/kk-media/image/upload/v1752863947/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Designing-for-Security/security-design-principles-laptop-shield.jpg)
 
 ## Section 2: Categories for Security in Design
 
@@ -35,7 +35,7 @@ This section defines the four fundamental categories that govern all security ac
 
 Understanding these categories helps pinpoint the focus areas for enhancing security within AWS.
 
-![The image outlines four major categories for security in design: Identity and Access Management, Detection, Protection, and Response.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863947/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Designing-for-Security/security-design-categories-outline.jpg)
+![The image outlines four major categories for security in design: Identity and Access Management, Detection, Protection, and Response.](https://kodekloud.com/kk-media/image/upload/v1752863947/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Designing-for-Security/security-design-categories-outline.jpg)
 
 ## Section 3: The Shared Responsibility Model
 
@@ -46,7 +46,7 @@ Next, we explore the AWS Shared Responsibility Model, which clearly delineates s
 
 We will also review new services and their specific responsibilities within this model.
 
-![The image illustrates the Shared Responsibility Model for Security, dividing responsibilities between the customer and AWS. It outlines customer responsibilities for security "in" the cloud and AWS responsibilities for security "of" the cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863949/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Designing-for-Security/shared-responsibility-model-security.jpg)
+![The image illustrates the Shared Responsibility Model for Security, dividing responsibilities between the customer and AWS. It outlines customer responsibilities for security "in" the cloud and AWS responsibilities for security "of" the cloud.](https://kodekloud.com/kk-media/image/upload/v1752863949/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Designing-for-Security/shared-responsibility-model-security.jpg)
 
 ## Sections 4 to 12: Enhancing Security Across Services
 
@@ -58,13 +58,13 @@ In these sections, we delve into security specifics for various AWS service cate
 
 A detailed diagram below illustrates these layers and highlights opportunities for fine-tuning security settings.
 
-![The image is a diagram illustrating layers of services related to security, including transfer, security, database, and storage, connected to functions like data/machine learning, management, application integration, compute, and network.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863950/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Designing-for-Security/security-services-layers-diagram.jpg)
+![The image is a diagram illustrating layers of services related to security, including transfer, security, database, and storage, connected to functions like data/machine learning, management, application integration, compute, and network.](https://kodekloud.com/kk-media/image/upload/v1752863950/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Designing-for-Security/security-services-layers-diagram.jpg)
 
 ## Section 13: Designing for Security Challenge
 
 The final section features an interactive design challenge. You will be presented with a diagram similar to the one below, where one or more elements are intentionally missing. Your task is to select the correct AWS services and features (such as Route 53, WAF, DynamoDB, Amazon EC2, or Lambda) and drag them to their appropriate positions in the diagram.
 
-![The image is a flowchart titled "Designing for Security – Design Challenge," illustrating a security design process using AWS services like Route 53, CloudFront, and others, with various decision points and components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863951/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Designing-for-Security/designing-for-security-flowchart.jpg)
+![The image is a flowchart titled "Designing for Security – Design Challenge," illustrating a security design process using AWS services like Route 53, CloudFront, and others, with various decision points and components.](https://kodekloud.com/kk-media/image/upload/v1752863951/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Designing-for-Security/designing-for-security-flowchart.jpg)
 
 ## Lesson Summary
 
@@ -76,7 +76,7 @@ To recap, this lesson on designing for security includes:
 * Insights into security configurations across various AWS service categories.
 * An engaging design challenge that reinforces the concepts discussed.
 
-![The image is a summary slide outlining four sections related to AWS security, including design aspects, security fundamentals, exam questions, and a security challenge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863952/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Designing-for-Security/aws-security-summary-slide.jpg)
+![The image is a summary slide outlining four sections related to AWS security, including design aspects, security fundamentals, exam questions, and a security challenge.](https://kodekloud.com/kk-media/image/upload/v1752863952/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Designing-for-Security/aws-security-summary-slide.jpg)
 
 > **lightbulb** This comprehensive approach is tailored to strengthen your architectural analysis skills and prepare you for the AWS Solutions Architect Associate Certification while honing practical security design abilities.
 

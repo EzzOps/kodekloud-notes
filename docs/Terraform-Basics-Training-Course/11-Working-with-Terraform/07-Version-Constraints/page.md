@@ -38,9 +38,7 @@ $ terraform providers mirror /root/terraform/new_local_file
 - Package authenticated: signed by HashiCorp
 ```
 
-<Callout icon="lightbulb">
-  Mirroring providers can accelerate deployments in environments with restricted internet access, ensuring that all necessary plugins are available locally.
-</Callout>
+> **lightbulb** Mirroring providers can accelerate deployments in environments with restricted internet access, ensuring that all necessary plugins are available locally.
 
 ***
 
@@ -169,9 +167,7 @@ digraph {
 }
 ```
 
-<Callout icon="lightbulb">
-  The DOT format may be challenging to interpret directly. Use a visualization tool like Graphviz to render a graphical version of the dependency graph.
-</Callout>
+> **lightbulb** The DOT format may be challenging to interpret directly. Use a visualization tool like Graphviz to render a graphical version of the dependency graph.
 
 ***
 
@@ -196,11 +192,9 @@ Open the resulting `graph.svg` file in your browser to see a visual representati
 
 That concludes our comprehensive look at essential Terraform commands. Use these tools to validate, format, and manage your infrastructure configurations effectively. Now, proceed to the hands-on labs to further explore and practice Terraform’s capabilities.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/a1fb64aa-097f-46c1-92e8-0902161b2b0f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/a1fb64aa-097f-46c1-92e8-0902161b2b0f)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/870d2152-4979-422c-9dff-766e0ec630f5" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/870d2152-4979-422c-9dff-766e0ec630f5)
 
 
 # Version Constraints
@@ -245,9 +239,7 @@ To prevent automatic upgrades to new major versions that may contain breaking ch
 Terraform has been successfully initialized!
 ```
 
-<Callout icon="lightbulb">
-  Always specify provider versions to ensure your Terraform configurations remain stable, especially if newer provider releases might introduce breaking changes.
-</Callout>
+> **lightbulb** Always specify provider versions to ensure your Terraform configurations remain stable, especially if newer provider releases might introduce breaking changes.
 
 Because provider functionalities can change drastically between versions, it is critical to use a specific version that you have thoroughly tested. Detailed instructions for each provider's versioning are available on the provider’s Terraform Registry page. For instance, if the default and latest version of the local provider is 2.0.0 but your configuration requires an older version such as 1.4.0, update your configuration accordingly.
 
@@ -376,14 +368,10 @@ Terraform has been successfully initialized!
 
 This output confirms that Terraform installed the specified version of the local provider.
 
-<Callout icon="lightbulb">
-  For more best practices on managing Terraform configurations and version constraints, explore additional resources and updated documentation on the [Terraform Registry](https://registry.terraform.io/) and [Terraform Documentation](https://www.terraform.io/docs).
-</Callout>
+> **lightbulb** For more best practices on managing Terraform configurations and version constraints, explore additional resources and updated documentation on the [Terraform Registry](https://registry.terraform.io/) and [Terraform Documentation](https://www.terraform.io/docs).
 
 That concludes our article on Terraform version constraints. To further reinforce your understanding, experiment with these versioning techniques in your Terraform practice environment to ensure your configurations remain stable over time.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/5f532378-f63e-4302-863e-f021f3f6b35b" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/5f532378-f63e-4302-863e-f021f3f6b35b)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/0b6ae539-3d1d-437f-9dac-ee6c0907fd7d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/0b6ae539-3d1d-437f-9dac-ee6c0907fd7d)

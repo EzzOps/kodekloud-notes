@@ -8,9 +8,7 @@ Automation is no longer just a buzzword — it's reshaping how teams work, colla
 
 This course — n8n: Zero to Hero by KodeKloud — walks you from the basics to advanced, production-ready automations. I'm Marconi Darmawan, and in this course we'll move step-by-step from beginner concepts to advanced multi-agent systems and orchestration patterns. Whether you are a DevOps engineer, AI practitioner, or a non-technical professional wanting to automate real-world tasks, this course is designed to get you hands-on with n8n quickly.
 
-<Callout icon="lightbulb">
-  This course teaches n8n fundamentals (nodes, inputs/outputs, data types), how workflows execute, and how to securely configure API keys for services such as [OpenAI](https://openai.com), [Anthropic](https://www.anthropic.com), and KodeKloud Keyspaces. Expect a mix of conceptual material, demos, and hands-on labs that reinforce learning by doing.
-</Callout>
+> **lightbulb** This course teaches n8n fundamentals (nodes, inputs/outputs, data types), how workflows execute, and how to securely configure API keys for services such as [OpenAI](https://openai.com), [Anthropic](https://www.anthropic.com), and KodeKloud Keyspaces. Expect a mix of conceptual material, demos, and hands-on labs that reinforce learning by doing.
 
 What you'll learn (high level)
 
@@ -73,9 +71,7 @@ Practical labs and checkpoints are embedded throughout the course so you apply c
   <img alt="The image shows a split-screen with a workflow setup tutorial on the left and configuration settings for an &#x22;MCP Server Trigger&#x22; on the right. There's a person speaking in the bottom-right corner." />
 </Frame>
 
-<Callout icon="warning">
-  Security reminder: treat API keys and secrets like credentials. Use n8n’s built-in credentials store or environment variables when deploying (Docker, EC2, or managed hosting). Avoid hardcoding keys in workflows or public repositories.
-</Callout>
+> **warning** Security reminder: treat API keys and secrets like credentials. Use n8n’s built-in credentials store or environment variables when deploying (Docker, EC2, or managed hosting). Avoid hardcoding keys in workflows or public repositories.
 
 Getting started (recommended first steps)
 
@@ -95,6 +91,4 @@ Links and references
 
 At KodeKloud we believe in learning by building. Join the community, ask questions, and share your workflows. Ready to move from zero to hero with n8n?
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/n8n-zero-to-hero/module/60c79089-433e-4893-9019-6e8517dc39cd/lesson/c55495fd-2d08-409d-aa36-b6bc3116aba7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/n8n-zero-to-hero/module/60c79089-433e-4893-9019-6e8517dc39cd/lesson/c55495fd-2d08-409d-aa36-b6bc3116aba7)

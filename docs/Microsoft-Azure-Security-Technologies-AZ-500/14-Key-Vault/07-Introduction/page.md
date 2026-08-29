@@ -13,20 +13,14 @@ The core topics covered in this module include:
 * Exploring Azure Key Vault
 * Configuring Key Vault access
 
-<Frame>
-  ![The image is a slide with a blue gradient background on the right, displaying the text "Key Vault." On the left, it lists two tasks: "Explore Azure Key Vault" and "Configure Key Vault access," with corresponding icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882010/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Introduction/key-vault-explore-configure-slide.jpg)
-</Frame>
+![The image is a slide with a blue gradient background on the right, displaying the text "Key Vault." On the left, it lists two tasks: "Explore Azure Key Vault" and "Configure Key Vault access," with corresponding icons.](https://kodekloud.com/kk-media/image/upload/v1752882010/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Introduction/key-vault-explore-configure-slide.jpg)
 
 * Deploying and managing certificates
 * Managing keys and customer-managed keys
 * Handling secrets, key rotation, and understanding the safety and recovery features of Azure Key Vault
 
-<Callout icon="lightbulb">
-  Make sure to review Azure Key Vault's documentation to fully understand its capabilities and integration strategies with your existing application security framework.
-</Callout>
+> **lightbulb** Make sure to review Azure Key Vault's documentation to fully understand its capabilities and integration strategies with your existing application security framework.
 
 Let's dive in and start by exploring Azure Key Vault.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/e6ef26f3-b79d-482a-8f38-130223404051/lesson/0039cb2d-4f2d-4ee2-a737-6a56d682c626" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/e6ef26f3-b79d-482a-8f38-130223404051/lesson/0039cb2d-4f2d-4ee2-a737-6a56d682c626)

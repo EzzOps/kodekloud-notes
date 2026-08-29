@@ -8,7 +8,7 @@ Azure Blob Storage offers robust lifecycle management tools to automate the move
 
 You can apply lifecycle rules at the container level or refine them using filters (such as prefixes) so that only a specific subset of blobs is managed by a given rule. This targeted approach is ideal for large-scale, long-term data retention strategies, ensuring your storage resources remain optimized and automatically managed without manual intervention.
 
-![The image illustrates the Azure Blob Storage Lifecycle, highlighting four actions: transitioning blobs, deleting blobs, defining rules, and applying rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866683/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Blob-Lifecycle-Management-Policies/azure-blob-storage-lifecycle-diagram.jpg)
+![The image illustrates the Azure Blob Storage Lifecycle, highlighting four actions: transitioning blobs, deleting blobs, defining rules, and applying rules.](https://kodekloud.com/kk-media/image/upload/v1752866683/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Blob-Lifecycle-Management-Policies/azure-blob-storage-lifecycle-diagram.jpg)
 
 Below is an in-depth look at how these policies are structured and implemented.
 
@@ -26,7 +26,7 @@ Typically, the policy definition is visually split into two key sections:
 * **Filter Sets:** Restrict the rule’s scope (e.g., by container, prefix, or specific object names).
 * **Action Sets:** Define the lifecycle operations, such as transitioning data to cooler tiers or deleting it.
 
-![The image explains Blob Storage Lifecycle Policies, detailing that a policy is a collection of rules with parameters, and each rule includes a filter set and an action set.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866685/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Blob-Lifecycle-Management-Policies/blob-storage-lifecycle-policies.jpg)
+![The image explains Blob Storage Lifecycle Policies, detailing that a policy is a collection of rules with parameters, and each rule includes a filter set and an action set.](https://kodekloud.com/kk-media/image/upload/v1752866685/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Blob-Lifecycle-Management-Policies/blob-storage-lifecycle-policies.jpg)
 
 Consider the following JSON snippet that illustrates two basic lifecycle rules:
 
@@ -70,7 +70,7 @@ You can manage lifecycle policies through the Azure Portal using either the code
   * Move blobs to cool storage if they were "last modified more than 30 days ago."
   * Delete blobs if they were "last modified more than 120 days ago."
 
-![The image shows a lifecycle management interface for managing blob storage, with rules set to move blobs to cool storage after 30 days and delete them after 120 days.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866686/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Blob-Lifecycle-Management-Policies/blob-storage-lifecycle-management.jpg)
+![The image shows a lifecycle management interface for managing blob storage, with rules set to move blobs to cool storage after 30 days and delete them after 120 days.](https://kodekloud.com/kk-media/image/upload/v1752866686/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Blob-Lifecycle-Management-Policies/blob-storage-lifecycle-management.jpg)
 
 When switching to the code view, you will see the JSON representation of your policy. For example, the code view might display:
 
@@ -179,7 +179,7 @@ az account show
 
 You can also programmatically manage lifecycle policies using Azure REST APIs or the corresponding SDKs that wrap these APIs.
 
-![The image outlines methods for implementing Blob Storage Lifecycle Policies, including Azure Portal, Command Line (PowerShell and Azure CLI), and REST APIs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866687/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Blob-Lifecycle-Management-Policies/blob-storage-lifecycle-policies-2.jpg)
+![The image outlines methods for implementing Blob Storage Lifecycle Policies, including Azure Portal, Command Line (PowerShell and Azure CLI), and REST APIs.](https://kodekloud.com/kk-media/image/upload/v1752866687/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Blob-Lifecycle-Management-Policies/blob-storage-lifecycle-policies-2.jpg)
 
 ## Example Policy Workflow in Azure Portal
 
@@ -287,7 +287,7 @@ An example of a consolidated JSON policy is shown below:
 
 Save this as `policy.json` and apply it with the Azure CLI. Remember to verify that the actions specified are supported by the targeted blob types.
 
-![The image shows a Microsoft Azure interface for updating a rule in lifecycle management, detailing conditions for moving base blobs to different storage types based on modification dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866688/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Blob-Lifecycle-Management-Policies/azure-lifecycle-management-update-rule.jpg)
+![The image shows a Microsoft Azure interface for updating a rule in lifecycle management, detailing conditions for moving base blobs to different storage types based on modification dates.](https://kodekloud.com/kk-media/image/upload/v1752866688/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Blob-Lifecycle-Management-Policies/azure-lifecycle-management-update-rule.jpg)
 
 ## Rehydrating Data from the Archive Tier
 

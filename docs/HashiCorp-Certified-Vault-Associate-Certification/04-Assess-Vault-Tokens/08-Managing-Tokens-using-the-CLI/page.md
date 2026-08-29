@@ -52,9 +52,7 @@ That’s it! Authenticate, extract `auth.client_token`, store it securely, and i
 * [jq Tool Documentation](https://stedolan.github.io/jq/)
 * [Vault Authentication Methods](https://www.vaultproject.io/docs/auth)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/f641b172-da5d-457d-853a-2080dc00b4f8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/f641b172-da5d-457d-853a-2080dc00b4f8)
 
 
 # Managing Tokens using the CLI
@@ -106,9 +104,7 @@ policies             ["default" "training"]
 | token\_renewable | Indicates if the token can be renewed                     |
 | policies         | List of Vault policies attached to the token              |
 
-<Callout icon="lightbulb">
-  You can further customize a token with `-display_name`, multiple policies, and an explicit maximum TTL.
-</Callout>
+> **lightbulb** You can further customize a token with `-display_name`, multiple policies, and an explicit maximum TTL.
 
 ```bash theme={null}
 vault token create \

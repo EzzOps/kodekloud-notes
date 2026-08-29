@@ -20,7 +20,7 @@ The **Cool** tier is best suited for data that is accessed infrequently but stil
 
 The **Archive** tier provides the lowest storage cost, but data retrieval times are significantly longer, taking several hours. This tier is ideal for scenarios with rare access requirements, such as long-term data retention for compliance or regulatory purposes. It offers a cost-effective solution for storing data that does not require immediate access but must be retained for legal or historical reasons.
 
-![The image illustrates storage access tiers, categorizing data into "Hot" (frequently accessed), "Cool" (infrequently accessed), "Cold" (rarely accessed with fast retrieval), and "Archive" (rarely accessed with flexible latency).](../../../../images/kodekloud.com/kk-media/image/upload/v1752866694/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Storage-Access-Tiers/storage-access-tiers-diagram.jpg)
+![The image illustrates storage access tiers, categorizing data into "Hot" (frequently accessed), "Cool" (infrequently accessed), "Cold" (rarely accessed with fast retrieval), and "Archive" (rarely accessed with flexible latency).](https://kodekloud.com/kk-media/image/upload/v1752866694/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Storage-Access-Tiers/storage-access-tiers-diagram.jpg)
 
 ***
 
@@ -41,7 +41,7 @@ Fill out the necessary details:
 * **Workload and Performance:** Select "other" for the primary workload if you do not require specialized configurations. Choose between **Standard** (using HDD) and **Premium** (using SSD) performance tiers.
 * **Redundancy Options:** Select the preferred redundancy option (LRS, GRS, ZRS, or GCRS). For many scenarios, **LRS** is sufficient, though selecting GRS might automatically set it to RAGRS.
 
-![The image shows a configuration screen for setting up an Azure Storage account, including options for subscription, resource group, storage account name, region, and redundancy settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866696/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Storage-Access-Tiers/azure-storage-account-configuration.jpg)
+![The image shows a configuration screen for setting up an Azure Storage account, including options for subscription, resource group, storage account name, region, and redundancy settings.](https://kodekloud.com/kk-media/image/upload/v1752866696/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Storage-Access-Tiers/azure-storage-account-configuration.jpg)
 
 > **lightbulb** Ensure that you double-check your chosen region and redundancy options, as these can affect both performance and data durability.
 
@@ -69,7 +69,7 @@ Follow these steps to create a container and manage blob access tiers:
 * Open the container and click **Upload** to add files from your device.
 * Once a file is uploaded, select **Change Tier** to view the dropdown menu offering **Hot**, **Cool**, and **Archive** options.
 
-![The image shows a Microsoft Azure portal interface displaying details of a blob file, including properties like URL, size, and access tier options. A dropdown menu is open for changing the access tier of the file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866697/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Storage-Access-Tiers/azure-portal-blob-file-details.jpg)
+![The image shows a Microsoft Azure portal interface displaying details of a blob file, including properties like URL, size, and access tier options. A dropdown menu is open for changing the access tier of the file.](https://kodekloud.com/kk-media/image/upload/v1752866697/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Storage-Access-Tiers/azure-portal-blob-file-details.jpg)
 
 This process demonstrates that while only Hot and Cool tiers are available at the account level, the blob level offers access to all three tiers.
 
@@ -98,7 +98,7 @@ Return to the storage account overview to inspect details such as:
 * Redundancy (e.g., Locally Redundant Storage)
 * Default access tier (Hot)
 
-![The image shows a Microsoft Azure portal interface displaying the overview of a storage account, including details like resource group, location, subscription ID, and various properties related to blob, file, and queue services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866698/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Storage-Access-Tiers/azure-portal-storage-account-overview.jpg)
+![The image shows a Microsoft Azure portal interface displaying the overview of a storage account, including details like resource group, location, subscription ID, and various properties related to blob, file, and queue services.](https://kodekloud.com/kk-media/image/upload/v1752866698/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Storage-Access-Tiers/azure-portal-storage-account-overview.jpg)
 
 ***
 

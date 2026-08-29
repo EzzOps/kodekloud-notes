@@ -155,9 +155,7 @@ find \! -perm -o=r   # not readable by others
 find -perm /u=r,g=r,o=r  # readable by user OR group OR others
 ```
 
-<Callout icon="triangle-alert">
-  Be careful to quote wildcard patterns (e.g., `"*.txt"`), especially when running in scripts or complex shells.
-</Callout>
+> **triangle-alert** Be careful to quote wildcard patterns (e.g., `"*.txt"`), especially when running in scripts or complex shells.
 
 ***
 
@@ -167,11 +165,9 @@ find -perm /u=r,g=r,o=r  # readable by user OR group OR others
 * [Linux `find` Command on tldr.sh](https://tldr.sh/)
 * [Advanced `find` Examples](https://www.baeldung.com/linux/find-command)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/ed5aa87a-c660-4fd4-87f8-e5e4bc23327d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/ed5aa87a-c660-4fd4-87f8-e5e4bc23327d)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/6da024e0-2e3c-4504-beac-38ebf4e76563" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/6da024e0-2e3c-4504-beac-38ebf4e76563)
 
 
 # Use input output redirection

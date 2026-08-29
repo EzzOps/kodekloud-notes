@@ -10,7 +10,7 @@ In this guide, you'll learn how to quickly work with AWS CloudShell, a cloud-bas
 
 Begin by searching for and launching the CloudShell service. Once open, you’ll see a terminal session similar to the welcome screen below:
 
-![The image shows a welcome screen for AWS CloudShell, highlighting features like pre-installed tools, included storage, and saved files and settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858128/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudShell-Demo/aws-cloudshell-welcome-screen.jpg)
+![The image shows a welcome screen for AWS CloudShell, highlighting features like pre-installed tools, included storage, and saved files and settings.](https://kodekloud.com/kk-media/image/upload/v1752858128/notes-assets/images/AWS-Certified-Developer-Associate-AWS-CloudShell-Demo/aws-cloudshell-welcome-screen.jpg)
 
 > **lightbulb** AWS CloudShell automatically configures your credentials, allowing you to use the AWS CLI without any additional setup.
 

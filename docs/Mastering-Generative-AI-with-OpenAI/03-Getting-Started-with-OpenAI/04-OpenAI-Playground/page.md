@@ -6,13 +6,11 @@ An interactive platform for testing and experimenting with the OpenAI API, featu
 
 Before you begin, make sure you have an OpenAI account and have configured your API key.
 
-<Callout icon="lightbulb">
-  Set your API key in the environment to authenticate requests:
+> **lightbulb** Set your API key in the environment to authenticate requests:
 
   ```bash theme={null}
   export OPENAI_API_KEY="your_api_key_here"
   ```
-</Callout>
 
 Once in your account, click **Playground** in the top navigation to access the interface.
 
@@ -28,9 +26,7 @@ The Playground is organized into three main sections:
 
 Select the **Classification** preset to label items by category. By default, you’ll see examples like Apple, Facebook, and FedEx. Let’s classify “Apple”:
 
-<Frame>
-  ![The image shows the OpenAI API Playground interface with a classification task, categorizing companies like Apple under "Technology."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881521/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Playground/openai-api-playground-classification-task.jpg)
-</Frame>
+![The image shows the OpenAI API Playground interface with a classification task, categorizing companies like Apple under "Technology."](https://kodekloud.com/kk-media/image/upload/v1752881521/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Playground/openai-api-playground-classification-task.jpg)
 
 It correctly labels Apple as a technology company.
 
@@ -59,9 +55,7 @@ print(response.choices[0].text.strip())
 
 Beyond presets, the Playground lets you switch between models—such as `text-davinci-003` and `gpt-3.5-turbo`—and fine-tune parameters. Hover over any label to view its description and experiment to see how changes affect output.
 
-<Callout icon="triangle-alert">
-  Adjusting parameters like `max_tokens` and `temperature` directly impacts response quality, token usage, and billing. Monitor your usage in the [OpenAI Dashboard](https://platform.openai.com/account/usage).
-</Callout>
+> **triangle-alert** Adjusting parameters like `max_tokens` and `temperature` directly impacts response quality, token usage, and billing. Monitor your usage in the [OpenAI Dashboard](https://platform.openai.com/account/usage).
 
 ## Modes Overview
 
@@ -86,9 +80,7 @@ Click **Submit**, and you might see:
 
 > The Right Bike for Any Ride!
 
-<Frame>
-  ![The image shows the OpenAI API Playground interface with a prompt to write a tagline for an online bicycle shop, resulting in the suggestion: "The Right Bike For Any Ride!"](../../../../images/kodekloud.com/kk-media/image/upload/v1752881521/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Playground/openai-api-playground-bicycle-tagline.jpg)
-</Frame>
+![The image shows the OpenAI API Playground interface with a prompt to write a tagline for an online bicycle shop, resulting in the suggestion: "The Right Bike For Any Ride!"](https://kodekloud.com/kk-media/image/upload/v1752881521/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Playground/openai-api-playground-bicycle-tagline.jpg)
 
 ### 2. Chat Mode
 
@@ -99,9 +91,7 @@ Switch to **Chat** to leverage conversational models like GPT-3.5 Turbo. For exa
 
 Submit to receive a detailed response:
 
-<Frame>
-  ![The image shows the OpenAI API Playground interface with a chat interaction about when America became independent. The assistant provides a detailed response about the Declaration of Independence and the Treaty of Paris.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881523/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Playground/openai-api-playground-chat-independence.jpg)
-</Frame>
+![The image shows the OpenAI API Playground interface with a chat interaction about when America became independent. The assistant provides a detailed response about the Declaration of Independence and the Treaty of Paris.](https://kodekloud.com/kk-media/image/upload/v1752881523/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Playground/openai-api-playground-chat-independence.jpg)
 
 ### 3. Insert Mode
 
@@ -113,9 +103,7 @@ Use **Insert** mode to tell the model where to fill in text. Example:
 
 Submit to generate a complete email section:
 
-<Frame>
-  ![The image shows the OpenAI API Playground interface with a text completion task. The left side contains instructions, while the right side displays a text prompt and its AI-generated completion.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881524/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Playground/openai-api-playground-text-completion.jpg)
-</Frame>
+![The image shows the OpenAI API Playground interface with a text completion task. The left side contains instructions, while the right side displays a text prompt and its AI-generated completion.](https://kodekloud.com/kk-media/image/upload/v1752881524/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Playground/openai-api-playground-text-completion.jpg)
 
 ### 4. Edit Mode
 
@@ -128,9 +116,7 @@ Fix the grammar mistakes in the following paragraph:
 
 After submission, you’ll receive a polished version:
 
-<Frame>
-  ![The image shows the OpenAI API Playground interface with a text input about a movie theater visit, and a corrected version of the text on the right. The instruction given is to fix grammar mistakes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881525/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Playground/openai-api-playground-grammar-fix.jpg)
-</Frame>
+![The image shows the OpenAI API Playground interface with a text input about a movie theater visit, and a corrected version of the text on the right. The instruction given is to fix grammar mistakes.](https://kodekloud.com/kk-media/image/upload/v1752881525/notes-assets/images/Mastering-Generative-AI-with-OpenAI-OpenAI-Playground/openai-api-playground-grammar-fix.jpg)
 
 ***
 
@@ -142,6 +128,4 @@ You now have an overview of the OpenAI Playground’s presets, models, modes, an
 * [Playground Guide](https://platform.openai.com/playground)
 * [Model Reference](https://platform.openai.com/docs/models)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/7cf291c5-4705-4a69-965a-b0ba7d2169c6/lesson/2a7a72f6-0d62-4d1d-8eeb-0701757bc4ae" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/7cf291c5-4705-4a69-965a-b0ba7d2169c6/lesson/2a7a72f6-0d62-4d1d-8eeb-0701757bc4ae)

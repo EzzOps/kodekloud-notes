@@ -72,11 +72,9 @@ That wraps up this demo on using resource attributes in OpenTofu. Happy provisio
 
 [time_static_docs]: https://docs.opentofu.org/providers/time/latest/resources/time_static
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/61653bc6-12ac-4e0e-aa02-418c66a4c897" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/61653bc6-12ac-4e0e-aa02-418c66a4c897)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/e7474bbe-4cb3-4d66-ab87-1b33a6510ca4" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/e7474bbe-4cb3-4d66-ab87-1b33a6510ca4)
 
 
 # Demo Resource Dependencies
@@ -107,15 +105,11 @@ OpenTofu resources can depend on each other in two ways:
 
 First, we set an **explicit dependency** using the `depends_on` argument when Resource A does not reference Resource B’s attributes:
 
-<Frame>
-  ![The image shows a Visual Studio Code editor with a welcome message for KodeKloud OpenTofu Lab on the right, and a multiple-choice question about dependencies on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882826/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Resource-Dependencies/vscode-kodekloud-opentofu-lab-question.jpg)
-</Frame>
+![The image shows a Visual Studio Code editor with a welcome message for KodeKloud OpenTofu Lab on the right, and a multiple-choice question about dependencies on the left.](https://kodekloud.com/kk-media/image/upload/v1752882826/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Resource-Dependencies/vscode-kodekloud-opentofu-lab-question.jpg)
 
 Next, an **implicit dependency** is created by referencing one resource’s attributes inside another:
 
-<Frame>
-  ![The image shows a KodeKloud OpenTofu Lab interface with a Visual Studio Code editor on the right, displaying a welcome message and terminal, and a quiz question on the left about implicit dependency.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882827/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Resource-Dependencies/kodekloud-opentofu-lab-vscode-quiz.jpg)
-</Frame>
+![The image shows a KodeKloud OpenTofu Lab interface with a Visual Studio Code editor on the right, displaying a welcome message and terminal, and a quiz question on the left about implicit dependency.](https://kodekloud.com/kk-media/image/upload/v1752882827/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Resource-Dependencies/kodekloud-opentofu-lab-vscode-quiz.jpg)
 
 ## Generating a TLS Private Key
 

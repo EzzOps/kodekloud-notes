@@ -69,15 +69,13 @@ terraform {
 }
 ```
 
-<Callout icon="lightbulb">
-  When using MinIO, add these settings under the `s3` backend:
+> **lightbulb** When using MinIO, add these settings under the `s3` backend:
 
   ```text theme={null}
   endpoint   = "http://<MINIO_HOST>:<PORT>"
   access_key = "foo"
   secret_key = "barbarbar"
   ```
-</Callout>
 
 **Do not** run `tofu init` yet.
 
@@ -112,9 +110,7 @@ After migration, remove the local state:
 rm terraform.tfstate
 ```
 
-<Callout icon="triangle-alert">
-  Deleting the local `terraform.tfstate` is irreversible. Ensure the remote copy is present before removal.
-</Callout>
+> **triangle-alert** Deleting the local `terraform.tfstate` is irreversible. Ensure the remote copy is present before removal.
 
 ***
 
@@ -122,9 +118,7 @@ rm terraform.tfstate
 
 Go back to the MinIO console and open the `remote-state` bucket. You should see `terraform.tfstate` uploaded—confirming your remote backend is working.
 
-<Frame>
-  ![The image shows a user interface of an object storage system with a bucket named "remote-state," displaying its creation date, usage, and access permissions. The sidebar includes options like Object Browser, Access Keys, and various administrative tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882893/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Remote-State/object-storage-user-interface-remote-state.jpg)
-</Frame>
+![The image shows a user interface of an object storage system with a bucket named "remote-state," displaying its creation date, usage, and access permissions. The sidebar includes options like Object Browser, Access Keys, and various administrative tools.](https://kodekloud.com/kk-media/image/upload/v1752882893/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Remote-State/object-storage-user-interface-remote-state.jpg)
 
 ***
 
@@ -135,11 +129,9 @@ Go back to the MinIO console and open the `remote-state` bucket. You should see 
 * [MinIO Quickstart Guide](https://docs.min.io/docs/minio-quickstart-guide.html)
 * [AWS S3 Documentation](https://aws.amazon.com/s3/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/dd54768d-8454-44bd-bab2-99f8f7b5f145/lesson/ff1df9b3-f33a-4bd0-a830-9b3fba34a27d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/dd54768d-8454-44bd-bab2-99f8f7b5f145/lesson/ff1df9b3-f33a-4bd0-a830-9b3fba34a27d)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/dd54768d-8454-44bd-bab2-99f8f7b5f145/lesson/43c8ff37-5548-4482-9fd7-35f6d4d78e85" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/dd54768d-8454-44bd-bab2-99f8f7b5f145/lesson/43c8ff37-5548-4482-9fd7-35f6d4d78e85)
 
 
 # OpenTofu State Commands

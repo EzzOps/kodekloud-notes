@@ -38,9 +38,7 @@ variable "user_tags" {
 }
 ```
 
-<Callout icon="lightbulb">
-  By exposing only selected inputs, you maintain a clear contract for your internal teams while still benefitting from community-driven improvements.
-</Callout>
+> **lightbulb** By exposing only selected inputs, you maintain a clear contract for your internal teams while still benefitting from community-driven improvements.
 
 4. In your root Terraform or Terragrunt configuration, invoke `modules/my-wrapper` instead of the community module directly.
 
@@ -71,9 +69,7 @@ module "production_eks" {
 * **Custom Modules**: Best for specialized architectures requiring bespoke resource definitions.
 * **Wrapper Modules**: Ideal for enforcing organizational governance on top of community best practices.
 
-<Callout icon="triangle-alert">
-  Avoid forking community modules unless you require deep structural changes. Wrapping keeps you in sync with upstream fixes and feature releases.
-</Callout>
+> **triangle-alert** Avoid forking community modules unless you require deep structural changes. Wrapping keeps you in sync with upstream fixes and feature releases.
 
 ## References
 
@@ -81,9 +77,7 @@ module "production_eks" {
 * [Terraform AWS EKS Module](https://registry.terraform.io/modules/terraform-aws-modules/eks/aws)
 * [Terraform Best Practices](https://www.terraform.io/docs/language/modules/index.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/5504cd7a-0183-43a0-9b3c-f0a2e65e8f61" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/5504cd7a-0183-43a0-9b3c-f0a2e65e8f61)
 
 
 # Course Introduction
@@ -96,9 +90,7 @@ Hello everyone — I’m Vijay Palani from KodeKloud. Welcome to the Ultimate CK
 
 This series is designed to give you realistic, hands‑on practice that mirrors the real Certified Kubernetes Administrator (CKA) exam experience. If your exam is coming up, these mock exams will help refine your skills across the core CKA domains and get you comfortable with multi‑cluster scenarios, SSH into nodes, and time‑boxed problem solving.
 
-<Callout icon="lightbulb">
-  If you have not yet completed the [Certified Kubernetes Administrator (CKA) preparation course](https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator), please complete it first. It contains the foundation, official mock exams, and Lightning Labs that will prepare you for this advanced mock exam series.
-</Callout>
+> **lightbulb** If you have not yet completed the [Certified Kubernetes Administrator (CKA) preparation course](https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator), please complete it first. It contains the foundation, official mock exams, and Lightning Labs that will prepare you for this advanced mock exam series.
 
 ## What this mock exam series covers
 
@@ -218,9 +210,7 @@ You can scroll between questions in the lab interface just like any online mock 
 * The exam is time-boxed. If you exceed the allotted time, the exam will end automatically and be validated.
 * You may click the "End Exam" button at any time to trigger immediate validation and view your score.
 
-<Callout icon="warning">
-  Always monitor your remaining time. Unfinished tasks will be marked as incorrect when the exam ends (manually or due to timeout).
-</Callout>
+> **warning** Always monitor your remaining time. Unfinished tasks will be marked as incorrect when the exam ends (manually or due to timeout).
 
 <Frame>
   <img alt="The image shows a split screen with a task-based interface on the left, indicating a 0% score and incomplete tasks, and a terminal window on the right displaying Kubernetes commands and outputs." />

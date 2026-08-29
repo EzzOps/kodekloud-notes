@@ -14,7 +14,7 @@ A single AWS account can host multiple pipelines. Each pipeline consists of stag
 * Stage
 * Action
 
-![The image shows a pipeline diagram labeled "MyPipeline" with four stages: Source, Build, Test, and Deploy, each represented by a circle with additional sub-circles below them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862564/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Monitoring/mypipeline-pipeline-diagram-four-stages.jpg)
+![The image shows a pipeline diagram labeled "MyPipeline" with four stages: Source, Build, Test, and Deploy, each represented by a circle with additional sub-circles below them.](https://kodekloud.com/kk-media/image/upload/v1752862564/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Monitoring/mypipeline-pipeline-diagram-four-stages.jpg)
 
 ## Amazon EventBridge
 
@@ -30,9 +30,9 @@ Amazon EventBridge is the primary service for reacting to CodePipeline events. I
 | Stage    | Started, Succeeded, Failed            |
 | Action   | Started, Succeeded, Failed, Abandoned |
 
-![The image shows a diagram titled "Pipeline Events" with four stages: Started, Stopped, Succeeded, and Failed, each represented by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862566/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Monitoring/pipeline-events-diagram-four-stages.jpg)
+![The image shows a diagram titled "Pipeline Events" with four stages: Started, Stopped, Succeeded, and Failed, each represented by an icon.](https://kodekloud.com/kk-media/image/upload/v1752862566/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Monitoring/pipeline-events-diagram-four-stages.jpg)
 
-![The image is an informational graphic about Amazon EventBridge, highlighting features such as AWS account integration, publisher/subscriber model, free default event publishing, cross-account access, and third-party access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862567/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Monitoring/amazon-eventbridge-features-graphic.jpg)
+![The image is an informational graphic about Amazon EventBridge, highlighting features such as AWS account integration, publisher/subscriber model, free default event publishing, cross-account access, and third-party access.](https://kodekloud.com/kk-media/image/upload/v1752862567/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Monitoring/amazon-eventbridge-features-graphic.jpg)
 
 For more details, see [Amazon EventBridge Documentation](https://docs.aws.amazon.com/eventbridge/latest/userguide/).
 
@@ -43,7 +43,7 @@ While EventBridge handles high-level pipeline events, AWS CloudTrail records **e
 * **Amazon S3**: Store CloudTrail logs for durable, scalable retention.
 * **Amazon SNS**: Configure notifications for critical events, such as API call failures.
 
-![The image is a diagram showing AWS CloudTrail sending notifications to Amazon SNS and log files to Amazon S3.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862568/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Monitoring/aws-cloudtrail-sns-s3-diagram.jpg)
+![The image is a diagram showing AWS CloudTrail sending notifications to Amazon SNS and log files to Amazon S3.](https://kodekloud.com/kk-media/image/upload/v1752862568/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Monitoring/aws-cloudtrail-sns-s3-diagram.jpg)
 
 > **triangle-alert** Consider the volume of CloudTrail logs when designing S3 lifecycle policies and SNS subscription limits to avoid unexpected costs.
 
@@ -56,7 +56,7 @@ While EventBridge handles high-level pipeline events, AWS CloudTrail records **e
 | Amazon S3          | Durable storage for large volumes of CloudTrail log files |
 | Amazon SNS         | Alerting and notifications based on log events            |
 
-![The image is a summary slide showing AWS EventBridge and AWS CloudTrail, along with configuration options at pipeline, stage, and action levels.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862569/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Monitoring/aws-eventbridge-cloudtrail-summary-slide.jpg)
+![The image is a summary slide showing AWS EventBridge and AWS CloudTrail, along with configuration options at pipeline, stage, and action levels.](https://kodekloud.com/kk-media/image/upload/v1752862569/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Monitoring/aws-eventbridge-cloudtrail-summary-slide.jpg)
 
 ## References
 

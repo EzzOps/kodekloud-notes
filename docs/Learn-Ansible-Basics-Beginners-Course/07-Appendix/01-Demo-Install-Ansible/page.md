@@ -12,21 +12,15 @@ In this lesson, you will learn how to clone virtual machines, set up an Ansible 
 
 First, power off your virtual machine. Right-click on the VM (in this example, a "centos-template") and select *Clone*.
 
-<Frame>
-  ![The image shows the Oracle VM VirtualBox Manager interface with a context menu open for a virtual machine named "centos-template," displaying options like Start, Settings, and Clone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881081/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Install-Ansible/frame_10.jpg)
-</Frame>
+![The image shows the Oracle VM VirtualBox Manager interface with a context menu open for a virtual machine named "centos-template," displaying options like Start, Settings, and Clone.](https://kodekloud.com/kk-media/image/upload/v1752881081/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Install-Ansible/frame_10.jpg)
 
 In the clone creation wizard, you will be prompted to provide a name for the new VM. Name the first clone **Ansible controller**. Ensure you check the *reset MAC address* option so that each virtual machine receives a unique MAC address.
 
-<Frame>
-  ![The image shows a virtual machine cloning interface, where a new machine named "ansible-controller" is being created from a "centos-template."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881082/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Install-Ansible/frame_30.jpg)
-</Frame>
+![The image shows a virtual machine cloning interface, where a new machine named "ansible-controller" is being created from a "centos-template."](https://kodekloud.com/kk-media/image/upload/v1752881082/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Install-Ansible/frame_30.jpg)
 
 In the next step, select the *linked clone* option. A linked clone conserves disk space by referencing the original disk image instead of duplicating it entirely.
 
-<Frame>
-  ![The image shows a virtual machine cloning dialog, offering options for "Full clone" or "Linked clone," with a penguin holding a hammer illustration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881083/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Install-Ansible/frame_40.jpg)
-</Frame>
+![The image shows a virtual machine cloning dialog, offering options for "Full clone" or "Linked clone," with a penguin holding a hammer illustration.](https://kodekloud.com/kk-media/image/upload/v1752881083/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Install-Ansible/frame_40.jpg)
 
 Click *Clone* to create the Ansible controller. Repeat the same steps to clone another machine for the Ansible target, naming it **Ansible-target1**, checking the reset MAC address option, and opting for a *linked clone*.
 
@@ -38,9 +32,7 @@ After cloning, you will have three VMs:
 
 Power on both the Ansible controller and the Ansible target.
 
-<Frame>
-  ![The image shows the Oracle VM VirtualBox Manager interface with virtual machines listed, including "centos-template," "ansible-controller," and "ansible-target1," with details and snapshot options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881085/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Install-Ansible/frame_90.jpg)
-</Frame>
+![The image shows the Oracle VM VirtualBox Manager interface with virtual machines listed, including "centos-template," "ansible-controller," and "ansible-target1," with details and snapshot options.](https://kodekloud.com/kk-media/image/upload/v1752881085/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Install-Ansible/frame_90.jpg)
 
 ***
 
@@ -79,9 +71,7 @@ virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
 
 For easier management, establish an SSH session to the Ansible controller using its IP address (for example, 192.168.1.113) with the username **osboxes**. Name this session *Ansible-controller*.
 
-<Frame>
-  ![The image shows the MobaXterm application interface with session settings for SSH connection, including remote host IP, username, and session options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881086/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Install-Ansible/frame_140.jpg)
-</Frame>
+![The image shows the MobaXterm application interface with session settings for SSH connection, including remote host IP, username, and session options.](https://kodekloud.com/kk-media/image/upload/v1752881086/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Install-Ansible/frame_140.jpg)
 
 Similarly, set up an SSH session for the Ansible target (e.g., at IP 192.168.1.114) and name it *Ansible-target1*. Upon logging in, you might see:
 
@@ -111,15 +101,11 @@ Next, update the `/etc/hosts` file to reflect the new hostname. Replace the defa
 
 with your desired hostname information while keeping the localhost entries intact.
 
-<Frame>
-  ![The image shows a MobaXterm terminal window connected to "ansiblecontroller" at IP 127.0.0.1, with a command prompt ready for input.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881086/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Install-Ansible/frame_220.jpg)
-</Frame>
+![The image shows a MobaXterm terminal window connected to "ansiblecontroller" at IP 127.0.0.1, with a command prompt ready for input.](https://kodekloud.com/kk-media/image/upload/v1752881086/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Install-Ansible/frame_220.jpg)
 
 After saving the changes, restart the system to apply the new hostname. Repeat these steps on the target machine (for example, renaming it to **target**) and verify the changes in your SSH sessions.
 
-<Frame>
-  ![A terminal window in MobaXterm prompts for a password to access a remote server at IP 192.168.1.113.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881087/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Install-Ansible/frame_250.jpg)
-</Frame>
+![A terminal window in MobaXterm prompts for a password to access a remote server at IP 192.168.1.113.](https://kodekloud.com/kk-media/image/upload/v1752881087/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Install-Ansible/frame_250.jpg)
 
 ***
 
@@ -238,9 +224,7 @@ A successful ping (with output "pong") confirms that the controller can communic
 
 To further validate the setup, create another clone from the template for a second target machine.
 
-<Frame>
-  ![The image shows Oracle VM VirtualBox Manager with a dialog box for cloning a virtual machine named "centos-template" to "ansible-target2".](../../../../images/kodekloud.com/kk-media/image/upload/v1752881088/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Install-Ansible/frame_460.jpg)
-</Frame>
+![The image shows Oracle VM VirtualBox Manager with a dialog box for cloning a virtual machine named "centos-template" to "ansible-target2".](https://kodekloud.com/kk-media/image/upload/v1752881088/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Install-Ansible/frame_460.jpg)
 
 After cloning, power on the new target and check its IP address. For example, if the new IP is 192.168.1.115, your output from `ifconfig` might look like:
 
@@ -302,9 +286,7 @@ target2 | FAILED! => {
 }
 ```
 
-<Callout icon="lightbulb">
-  To resolve the error for target two, you can either manually SSH into target two to accept its fingerprint or disable host key checking in the Ansible configuration by setting `host_key_checking = False` in `/etc/ansible/ansible.cfg`. (Note: Disabling host key checking is not recommended for production environments.)
-</Callout>
+> **lightbulb** To resolve the error for target two, you can either manually SSH into target two to accept its fingerprint or disable host key checking in the Ansible configuration by setting `host_key_checking = False` in `/etc/ansible/ansible.cfg`. (Note: Disabling host key checking is not recommended for production environments.)
 
 After resolving the host key issue, run the ping test again:
 
@@ -328,6 +310,4 @@ In production environments, it is highly recommended to use SSH key-based authen
 
 Thank you, and that concludes this demo.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/a1ba12c0-66c7-4d81-bede-62917ee0b1cf/lesson/fe295ef1-1b97-434e-95f2-22eb1fd802c9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/a1ba12c0-66c7-4d81-bede-62917ee0b1cf/lesson/fe295ef1-1b97-434e-95f2-22eb1fd802c9)

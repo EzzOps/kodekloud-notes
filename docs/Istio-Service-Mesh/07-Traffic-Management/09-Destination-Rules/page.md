@@ -30,9 +30,7 @@ spec:
 
 In this example, 99% of the traffic is directed to the subset "v1" and 1% to the subset "v2".
 
-<Callout icon="lightbulb">
-  Subsets used in Virtual Services are defined in Destination Rules. These rules allow you to apply specific configurations to traffic after it has been routed to a service.
-</Callout>
+> **lightbulb** Subsets used in Virtual Services are defined in Destination Rules. These rules allow you to apply specific configurations to traffic after it has been routed to a service.
 
 ## Defining Subsets in Destination Rules
 
@@ -114,9 +112,7 @@ spec:
       caCertificates: /rootcacerts.pem
 ```
 
-<Callout icon="lightbulb">
-  Remember, the host field plays a crucial role in the Destination Rule. When using a short name (e.g., "reviews"), Istio interprets it relative to the rule’s namespace. To ensure that the rule correctly references the intended service, especially if it resides in a different namespace, always use the fully qualified domain name (FQDN).
-</Callout>
+> **lightbulb** Remember, the host field plays a crucial role in the Destination Rule. When using a short name (e.g., "reviews"), Istio interprets it relative to the rule’s namespace. To ensure that the rule correctly references the intended service, especially if it resides in a different namespace, always use the fully qualified domain name (FQDN).
 
 The following configuration shows how to use FQDN to avoid potential misconfigurations:
 
@@ -147,6 +143,4 @@ For further reading, consider these resources:
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Docker Hub](https://hub.docker.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/f67a55ef-7f54-4c20-b899-3fa08bfcdd4f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/f67a55ef-7f54-4c20-b899-3fa08bfcdd4f)

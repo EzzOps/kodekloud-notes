@@ -65,9 +65,7 @@ A short checklist for starting a loop
 * Ensure secure and auditable file access for the agent
 * Run the loop iteratively and commit each passing change
 
-<Callout icon="lightbulb">
-  Follow "Green first": get one small win saved before building anything fancy. A working loop with a tiny result beats a grand plan that never runs.
-</Callout>
+> **lightbulb** Follow "Green first": get one small win saved before building anything fancy. A working loop with a tiny result beats a grand plan that never runs.
 
 How loop engineering relates to established practices
 
@@ -99,6 +97,4 @@ Further reading and references
 * [Continuous Integration (CI) best practices](https://en.wikipedia.org/wiki/Continuous_integration)
 * Articles on agentic AI and autonomous agents for development workflows (search for “agentic AI coding agents” to find current discussions)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/loop-engineering/module/63fbab29-f6e1-497c-ba71-cff4793c2731/lesson/fab67684-6453-4f39-ba62-1d6cf290ccaa" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/loop-engineering/module/63fbab29-f6e1-497c-ba71-cff4793c2731/lesson/fab67684-6453-4f39-ba62-1d6cf290ccaa)

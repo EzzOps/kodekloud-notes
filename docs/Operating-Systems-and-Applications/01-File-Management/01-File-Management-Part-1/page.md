@@ -5,9 +5,7 @@ dig +short www.calicatnip.com
 ping -c 4 203.0.113.42
 ```
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/networks-and-communications/module/f96c3ffe-8569-4a9d-99c2-2fe528af47cb/lesson/f076f33d-2d0d-4544-9004-a956913553cf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/networks-and-communications/module/f96c3ffe-8569-4a9d-99c2-2fe528af47cb/lesson/f076f33d-2d0d-4544-9004-a956913553cf)
 
 
 # File Management Part 1

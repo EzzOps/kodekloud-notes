@@ -27,23 +27,17 @@ After logging into Microsoft Entra ID, go to the **Users** section. At the top o
 
 Start by selecting the Bulk Create option from the dropdown menu and download the CSV template provided.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying a list of users with details such as display names, user principal names, and user types. A dropdown menu for bulk operations is open, highlighting options like "Bulk create."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884572/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Bulk-Operations/azure-portal-user-list-dropdown.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying a list of users with details such as display names, user principal names, and user types. A dropdown menu for bulk operations is open, highlighting options like "Bulk create."](https://kodekloud.com/kk-media/image/upload/v1752884572/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Bulk-Operations/azure-portal-user-list-dropdown.jpg)
 
 Open the downloaded CSV file in Microsoft Excel. The template includes one required field and several optional fields for additional user details. The screenshot below displays an example entry with columns for name, username, password, and job title.
 
-<Frame>
-  ![The image shows an Excel spreadsheet with columns for user information such as name, username, password, and job title. There is an example entry in the first row.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884573/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Bulk-Operations/excel-user-information-spreadsheet.jpg)
-</Frame>
+![The image shows an Excel spreadsheet with columns for user information such as name, username, password, and job title. There is an example entry in the first row.](https://kodekloud.com/kk-media/image/upload/v1752884573/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Bulk-Operations/excel-user-information-spreadsheet.jpg)
 
 For instance, fill in the required field with your domain name and enter a generated password (or any secure, random string) for the new user accounts. In this example, entries for "Captain America" and "Loki" were included using the same password for both users. After populating the CSV with the necessary details for all users, save the file to your computer.
 
 Next, return to the Azure Portal and upload your CSV file by selecting the appropriate option. Once the file is uploaded successfully, click on **Submit**. Monitor the progress in the Bulk Operation Results section, which shows detailed status information for each account creation.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying the results of a bulk user creation operation, with three users successfully created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884574/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Bulk-Operations/azure-portal-bulk-user-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying the results of a bulk user creation operation, with three users successfully created.](https://kodekloud.com/kk-media/image/upload/v1752884574/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Bulk-Operations/azure-portal-bulk-user-creation.jpg)
 
 Finally, navigate to the **All Users** blade to verify that your new accounts have been added. While this guide uses an example with three users, this process can easily scale to hundreds of users.
 
@@ -55,9 +49,7 @@ Bulk Invite follows a similar process to Bulk Create but simplifies user inclusi
 
 After uploading your invitation CSV file, the system sends an invitation email to each address. Users with an existing Microsoft account can use their current password; new users can register during the invitation process. Administrators also have the option to customize the invitation message or manually copy the invitation link if required—for example, when users do not have an Exchange license.
 
-<Callout icon="lightbulb">
-  Take advantage of the Bulk Invite feature to reduce onboarding times for external partners and ensure secure access to your tenant.
-</Callout>
+> **lightbulb** Take advantage of the Bulk Invite feature to reduce onboarding times for external partners and ensure secure access to your tenant.
 
 ***
 
@@ -69,9 +61,7 @@ For example, if you need to delete the users created earlier, copy their UPNs fr
 
 Review the results of the bulk deletion in the Bulk Operation Results section. The screenshot below confirms that the deletion operation was completed successfully with three successful requests.
 
-<Frame>
-  ![The image shows the "Bulk operation results" page in Microsoft Azure, displaying the status of user creation and deletion operations, both completed successfully without errors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884575/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Bulk-Operations/bulk-operation-results-azure.jpg)
-</Frame>
+![The image shows the "Bulk operation results" page in Microsoft Azure, displaying the status of user creation and deletion operations, both completed successfully without errors.](https://kodekloud.com/kk-media/image/upload/v1752884575/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Bulk-Operations/bulk-operation-results-azure.jpg)
 
 Then, inspect the **Users** section or the **Deleted Users** blade to verify that the specified accounts have been removed.
 
@@ -87,6 +77,4 @@ With these streamlined steps, you are now equipped to manage bulk operations in 
 
 Happy managing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/07e3a37e-65a9-430c-9919-011cc605b25d/lesson/9638b0c2-d4bd-4acd-9516-209a9c4a30fe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/07e3a37e-65a9-430c-9919-011cc605b25d/lesson/9638b0c2-d4bd-4acd-9516-209a9c4a30fe)

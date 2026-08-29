@@ -10,11 +10,11 @@ In this lesson, we explore Azure Service Bus and its fundamental components: que
 
 Queues are ideal when messages must be processed in order and handled only once. Think of a queue as a waiting line where the first person in line is the first served. They also support the competing consumers pattern, where multiple receivers can process messages concurrently but each message is exclusively handled by one receiver.
 
-![The image illustrates the concept of a queue with the acronym "FIFO" (First In, First Out) using colored boxes, showing the flow from "IN" to "OUT."](../../../../images/kodekloud.com/kk-media/image/upload/v1752866293/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Service-Bus-Queues-Topics-and-Subscriptions/fifo-queue-concept-illustration.jpg)
+![The image illustrates the concept of a queue with the acronym "FIFO" (First In, First Out) using colored boxes, showing the flow from "IN" to "OUT."](https://kodekloud.com/kk-media/image/upload/v1752866293/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Service-Bus-Queues-Topics-and-Subscriptions/fifo-queue-concept-illustration.jpg)
 
 In scenarios with multiple consumers accessing a queue, Azure Service Bus guarantees that each message is processed only once, regardless of the number of receivers attempting to handle them.
 
-![The image illustrates a concept of queues, showing a group of people lined up and branching out into four separate paths, each represented by a colored circle with a walking figure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866294/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Service-Bus-Queues-Topics-and-Subscriptions/queues-people-branching-paths.jpg)
+![The image illustrates a concept of queues, showing a group of people lined up and branching out into four separate paths, each represented by a colored circle with a walking figure.](https://kodekloud.com/kk-media/image/upload/v1752866294/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Service-Bus-Queues-Topics-and-Subscriptions/queues-people-branching-paths.jpg)
 
 ### Message Receive Modes
 
@@ -23,14 +23,14 @@ Azure Service Bus queues offer two distinct message receive modes:
 1. **Receive and Delete:**\
    In this mode, when a receiver picks up a message, it is immediately marked as consumed and deleted from the queue. This approach is straightforward and efficient but does not allow for recovery in case of an error during processing. It is best suited for non-critical applications such as logging or telemetry data.
 
-![The image illustrates a concept of "Receive and Delete" with two envelope icons on the left and a receiver icon with a crossed-out envelope on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866296/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Service-Bus-Queues-Topics-and-Subscriptions/receive-and-delete-envelope-icons.jpg)
+![The image illustrates a concept of "Receive and Delete" with two envelope icons on the left and a receiver icon with a crossed-out envelope on the right.](https://kodekloud.com/kk-media/image/upload/v1752866296/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Service-Bus-Queues-Topics-and-Subscriptions/receive-and-delete-envelope-icons.jpg)
 
-![The image shows two labeled sections: "Logging" with an icon of a document and "Telemetry data" with an icon of a satellite.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866297/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Service-Bus-Queues-Topics-and-Subscriptions/logging-telemetry-data-icons.jpg)
+![The image shows two labeled sections: "Logging" with an icon of a document and "Telemetry data" with an icon of a satellite.](https://kodekloud.com/kk-media/image/upload/v1752866297/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Service-Bus-Queues-Topics-and-Subscriptions/logging-telemetry-data-icons.jpg)
 
 2. **Peek Lock:**\
    In this more reliable mode, a receiver locks the message without immediately deleting it. The message can be processed, and only after successful handling, it is explicitly completed and removed from the queue. If processing fails, the message remains available for reprocessing. This mode is ideal for critical applications like order processing or financial transactions, where ensuring delivery is paramount.
 
-![The image illustrates a concept called "Peek Lock" with icons of envelopes and a receiver, suggesting a process of message handling or delivery.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866298/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Service-Bus-Queues-Topics-and-Subscriptions/peek-lock-message-handling-icons.jpg)
+![The image illustrates a concept called "Peek Lock" with icons of envelopes and a receiver, suggesting a process of message handling or delivery.](https://kodekloud.com/kk-media/image/upload/v1752866298/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Service-Bus-Queues-Topics-and-Subscriptions/peek-lock-message-handling-icons.jpg)
 
 > **lightbulb** Choosing between "Receive and Delete" and "Peek Lock" depends on the robustness of your application. Use "Receive and Delete" for high-throughput, low-risk scenarios, and "Peek Lock" when message reliability is critical.
 
@@ -40,7 +40,7 @@ Topics in Azure Service Bus operate like broadcast stations. When a message is s
 
 Imagine a news broadcast where a single update is sent out to multiple subscribers, each receiving news that is relevant to their interests.
 
-![The image illustrates a publish-and-subscribe model, showing a publisher connected to multiple subscribers, indicating a one-to-many communication pattern.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866300/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Service-Bus-Queues-Topics-and-Subscriptions/publish-subscribe-model-illustration.jpg)
+![The image illustrates a publish-and-subscribe model, showing a publisher connected to multiple subscribers, indicating a one-to-many communication pattern.](https://kodekloud.com/kk-media/image/upload/v1752866300/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Service-Bus-Queues-Topics-and-Subscriptions/publish-subscribe-model-illustration.jpg)
 
 Subscriptions act as individual listeners or endpoints that receive messages from a topic. Each subscription may include filters to ensure that only messages matching defined criteria are delivered. For instance, a news service might use subscriptions to send only sports, technology, or political updates to subscribers based on their preferences.
 
@@ -48,7 +48,7 @@ Subscriptions act as individual listeners or endpoints that receive messages fro
 
 Subscriptions can be fine-tuned with rules and actions to customize message delivery. These rules allow you to identify messages based on specific properties and apply modifications so that each subscription only receives notifications that are of interest. For example, you can set up a rule to filter and process only error notifications or high-priority orders for expedited processing in an e-commerce system.
 
-![The image is a flowchart titled "Rules and Actions," showing a process from configuring subscriptions to identifying messages with desired properties and applying modifications, followed by filtering actions to copy a subset of messages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866300/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Service-Bus-Queues-Topics-and-Subscriptions/rules-and-actions-flowchart.jpg)
+![The image is a flowchart titled "Rules and Actions," showing a process from configuring subscriptions to identifying messages with desired properties and applying modifications, followed by filtering actions to copy a subset of messages.](https://kodekloud.com/kk-media/image/upload/v1752866300/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Service-Bus-Queues-Topics-and-Subscriptions/rules-and-actions-flowchart.jpg)
 
 ## Conclusion
 

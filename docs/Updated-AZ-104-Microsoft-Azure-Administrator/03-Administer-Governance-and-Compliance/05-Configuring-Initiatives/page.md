@@ -16,9 +16,7 @@ The available individual policy definitions include:
 
 All these policies can be combined under a single initiative.
 
-<Frame>
-  ![The image illustrates Azure Policy use cases, highlighting features like allowed resource types, resource group locations, virtual machine SKUs, required and inherited tags, and allowed locations. It includes a central graphic with colorful segments representing each use case.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884537/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-policy-use-cases-illustration.jpg)
-</Frame>
+![The image illustrates Azure Policy use cases, highlighting features like allowed resource types, resource group locations, virtual machine SKUs, required and inherited tags, and allowed locations. It includes a central graphic with colorful segments representing each use case.](https://kodekloud.com/kk-media/image/upload/v1752884537/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-policy-use-cases-illustration.jpg)
 
 Below is an in-depth guide on how to create an initiative directly from the Azure portal.
 
@@ -28,9 +26,7 @@ Below is an in-depth guide on how to create an initiative directly from the Azur
 2. Choose to create a new initiative definition.
 3. For the location, select IT (or your preferred location). Set the name as "KodeKloud Standard Policies" to align with your organizational requirements.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a new initiative definition. It includes fields for initiative location, name, description, and category selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884538/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-initiative-definition.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a new initiative definition. It includes fields for initiative location, name, description, and category selection.](https://kodekloud.com/kk-media/image/upload/v1752884538/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-initiative-definition.jpg)
 
 4. Under **Category**, you can create a new category (e.g., "KodeKloud") or use an existing one to group your policies.
 5. Add the necessary policy definitions to the initiative:
@@ -38,9 +34,7 @@ Below is an in-depth guide on how to create an initiative directly from the Azur
    * **Allowed Virtual Machine SKUs**
    * **Allowed Resource Types**
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for adding policy definitions to an initiative. It includes options for selecting policies like "Allowed virtual machine size SKUs" under the "Policies" tab.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884540/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-policy-definitions-initiative.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for adding policy definitions to an initiative. It includes options for selecting policies like "Allowed virtual machine size SKUs" under the "Policies" tab.](https://kodekloud.com/kk-media/image/upload/v1752884540/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-policy-definitions-initiative.jpg)
 
 6. Optionally, include the **Inherit tags from Resource Groups** policy. For better organization, you can create groups (e.g., "tags group" for tag-related policies and "resource types" for policies related to allowed resource types).
 
@@ -56,9 +50,7 @@ Below is an in-depth guide on how to create an initiative directly from the Azur
    * Set the **environment** parameter value to "POC".
    * Limit the allowed virtual machine sizes to approved values such as **B1S** and **B1MS**.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen for defining an initiative, specifically focusing on setting policy parameters such as tags and allowed virtual machine size SKUs. A dropdown menu is open for selecting virtual machine sizes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884541/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-initiative-policy-settings.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen for defining an initiative, specifically focusing on setting policy parameters such as tags and allowed virtual machine size SKUs. A dropdown menu is open for selecting virtual machine sizes.](https://kodekloud.com/kk-media/image/upload/v1752884541/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-initiative-policy-settings.jpg)
 
 8. For allowed resource types, specify:
    * Virtual Machines (under Microsoft.Compute)
@@ -66,37 +58,27 @@ Below is an in-depth guide on how to create an initiative directly from the Azur
 
 9. For the inherited tag policy, ensure that the resource inherits the "environment" tag from the resource group.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen for defining policy parameters in an initiative. It lists various parameters with their types and values, such as tag names and allowed resource types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884543/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-policy-parameters-initiative.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen for defining policy parameters in an initiative. It lists various parameters with their types and values, such as tag names and allowed resource types.](https://kodekloud.com/kk-media/image/upload/v1752884543/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-policy-parameters-initiative.jpg)
 
 10. Click **Review and Create** to save the initiative definition. This step only creates the definition; it does not assign it.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen displaying the "KodeKloud Standard Policies" initiative definition, which includes a list of policies with details such as reference ID, type, evaluation type, and default effect.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884544/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-kodekloud-policies-definition.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen displaying the "KodeKloud Standard Policies" initiative definition, which includes a list of policies with details such as reference ID, type, evaluation type, and default effect.](https://kodekloud.com/kk-media/image/upload/v1752884544/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-kodekloud-policies-definition.jpg)
 
 ## Assigning the Initiative
 
 1. Navigate to the initiative definitions and select the "KodeKloud Standard Policies" initiative.
 2. Click **Assign Initiative**. The defined scope (in this case, IT) will be applied. If the target subscription (e.g., POC2) is not within IT, it will not be visible. To assign the initiative at a broader scope, consider creating it at the tenant root level.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for assigning "KodeKloud Standard Policies," with fields for scope, exclusions, and basic settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884545/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-kodekloud-policies-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for assigning "KodeKloud Standard Policies," with fields for scope, exclusions, and basic settings.](https://kodekloud.com/kk-media/image/upload/v1752884545/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-kodekloud-policies-2.jpg)
 
 3. If needed, move subscriptions between management groups (for example, moving the POC2 subscription to IT) to ensure the correct scope.
 4. Return to the policy definitions page to verify that the location is correctly set (e.g., 001 for IT). Then, assign the initiative to the desired subscription (e.g., POC2). You may also select a specific Resource Group; however, for demonstration purposes, leaving the Resource Group selection empty showcases how the policy (like the tag requirement) works at a broader level.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for assigning a policy initiative named "KodeKloud Standard Policies." It includes options for setting the scope, exclusions, and policy enforcement.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884546/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-kodekloud-policies-3.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for assigning a policy initiative named "KodeKloud Standard Policies." It includes options for setting the scope, exclusions, and policy enforcement.](https://kodekloud.com/kk-media/image/upload/v1752884546/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-kodekloud-policies-3.jpg)
 
 5. Review the assignment and click **Create**. The assignment process will take a few moments, and a confirmation will appear once role assignments have succeeded. Note that the policy for inheriting tags requires a role (such as Tags Contributor) for the policy identity, which is why a role assignment is necessary.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen where a user is creating an initiative assignment for "KodeKloud Standard Policies." The screen displays details like scope, policy definition, and enforcement status, with options to create, cancel, or navigate through the process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884547/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-kodekloud-initiative.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen where a user is creating an initiative assignment for "KodeKloud Standard Policies." The screen displays details like scope, policy definition, and enforcement status, with options to create, cancel, or navigate through the process.](https://kodekloud.com/kk-media/image/upload/v1752884547/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-kodekloud-initiative.jpg)
 
 ## Testing and Validating Policies
 
@@ -113,8 +95,7 @@ After assigning the initiative, the following policies are enforced:
 2. Attempt to create a new resource group without a tag. For example, create a Resource Group named "azpolicy-check-rg" in the approved region (e.g., East US), leaving the tags section empty.
 3. The creation process will fail with an error similar to:
 
-<Callout icon="triangle-alert">
-  ```json theme={null}
+> **triangle-alert** ```json theme={null}
      {
        "error": {
          "code": "RequestDisallowedByPolicy",
@@ -142,14 +123,12 @@ After assigning the initiative, the following policies are enforced:
        }
      }
   ```
-</Callout>
 
 The error indicates that the policy requires a tag named "environment" with the value "POC."
 
 4. To fix the error, enter the tag "environment" with the value "POC." Using a different value, such as "prod," will result in a similar denial message:
 
-<Callout icon="triangle-alert">
-  ```json theme={null}
+> **triangle-alert** ```json theme={null}
      {
        "policySetDefinitions": [
          "b54394e9e80747e89838764e"
@@ -182,7 +161,6 @@ The error indicates that the policy requires a tag named "environment" with the 
        }
      }
   ```
-</Callout>
 
 5. After setting the correct tag value ("POC"), the resource group creation will succeed.
 
@@ -196,24 +174,18 @@ The error indicates that the policy requires a tag named "environment" with the 
 1. Create a new Virtual Machine in the Resource Group "Azure Policy Check RG" in the approved region (East US).
 2. When selecting a VM size, the dropdown will restrict options to the approved sizes. Only **B1S** and **B1MS** will appear. Selecting any other size will not be allowed.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for selecting a virtual machine (VM) size, displaying various VM options with details like type, vCPUs, RAM, and cost per month.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884549/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-vm-size-selection.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for selecting a virtual machine (VM) size, displaying various VM options with details like type, vCPUs, RAM, and cost per month.](https://kodekloud.com/kk-media/image/upload/v1752884549/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-vm-size-selection.jpg)
 
 ### Testing the Storage Account Deployment and Inherited Tag Policy
 
 1. Create a Storage Account in the Resource Group "Azure Policy Check." Use a valid name, select East US, and choose a cost-effective option like LRS.
 2. After deployment, verify that the storage account has automatically inherited the "environment: POC" tag from the Resource Group.
 
-<Frame>
-  ![The image shows the Microsoft Azure Policy Definitions page, listing various policy definitions with details such as name, definition location, policies, type, definition type, and category.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884550/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-policy-definitions-page.jpg)
-</Frame>
+![The image shows the Microsoft Azure Policy Definitions page, listing various policy definitions with details such as name, definition location, policies, type, definition type, and category.](https://kodekloud.com/kk-media/image/upload/v1752884550/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-policy-definitions-page.jpg)
 
 Once the policies are deployed, you can check the compliance state in your Azure Policy dashboard:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying compliance states for "KodeKloud Standard Policies," listing policy names, effect types, compliance states, and resource counts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884551/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-kodekloud-compliance.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying compliance states for "KodeKloud Standard Policies," listing policy names, effect types, compliance states, and resource counts.](https://kodekloud.com/kk-media/image/upload/v1752884551/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configuring-Initiatives/azure-portal-kodekloud-compliance.jpg)
 
 ## Summary
 
@@ -230,6 +202,4 @@ For further clarity on how Azure Policy differs from Role-Based Access Control (
 
 Happy configuring!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/90e071df-9caa-4138-a4da-a51fee1e9132" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/90e071df-9caa-4138-a4da-a51fee1e9132)

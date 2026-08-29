@@ -12,7 +12,7 @@ When you provide an OpenAPI specification to an API Gateway, the gateway parses 
 
 Furthermore, if you create an API using an API Gateway, you have the option to export its OpenAPI specification. This exported document can be shared with your clients, empowering them to generate and integrate API calls seamlessly into their applications.
 
-![The image is a diagram illustrating an API Gateway using OpenAPI, showing various HTTP methods (GET, POST, PATCH, DELETE) for product and user endpoints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857890/notes-assets/images/AWS-Certified-Developer-Associate-OpenAPI/api-gateway-openapi-diagram.jpg)
+![The image is a diagram illustrating an API Gateway using OpenAPI, showing various HTTP methods (GET, POST, PATCH, DELETE) for product and user endpoints.](https://kodekloud.com/kk-media/image/upload/v1752857890/notes-assets/images/AWS-Certified-Developer-Associate-OpenAPI/api-gateway-openapi-diagram.jpg)
 
 > **lightbulb** OpenAPI specifications not only help in the initial setup of your API routes but also serve as a reliable source of truth for future updates and integrations.
 

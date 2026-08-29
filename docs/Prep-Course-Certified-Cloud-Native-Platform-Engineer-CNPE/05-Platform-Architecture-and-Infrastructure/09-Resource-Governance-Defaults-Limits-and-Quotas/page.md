@@ -33,9 +33,7 @@ Links and references
 * NetworkPolicy: [https://kubernetes.io/docs/concepts/services-networking/network-policies/](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 * CoreDNS: [https://coredns.io/](https://coredns.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/427743b0-2f67-473d-bcfe-6aa9ac24ddd9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/427743b0-2f67-473d-bcfe-6aa9ac24ddd9)
 
 
 # Resource Governance Defaults Limits and Quotas
@@ -246,15 +244,11 @@ spec:
 
 Combine a LimitRange that injects sensible defaults with a ResourceQuota that caps totals to provide comprehensive governance: LimitRange ensures per-container constraints and ResourceQuota enforces namespace-wide budgets.
 
-<Callout icon="lightbulb">
-  LimitRange runs before ResourceQuota in the admission pipeline. This lets LimitRange inject defaults so the ResourceQuota sees complete resource requests and can correctly enforce namespace totals.
-</Callout>
+> **lightbulb** LimitRange runs before ResourceQuota in the admission pipeline. This lets LimitRange inject defaults so the ResourceQuota sees complete resource requests and can correctly enforce namespace totals.
 
 Common pitfalls and tips
 
-<Callout icon="warning">
-  If you set ResourceQuota but do not apply LimitRange defaults, pods without requests may end up in `BestEffort` QoS and ResourceQuota cannot reliably account for them. Always apply LimitRange defaults in namespaces where you use ResourceQuota.
-</Callout>
+> **warning** If you set ResourceQuota but do not apply LimitRange defaults, pods without requests may end up in `BestEffort` QoS and ResourceQuota cannot reliably account for them. Always apply LimitRange defaults in namespaces where you use ResourceQuota.
 
 Quick comparison
 
@@ -277,6 +271,4 @@ Further reading
 * Kubernetes ResourceQuota docs: [https://kubernetes.io/docs/concepts/policy/resource-quotas/](https://kubernetes.io/docs/concepts/policy/resource-quotas/)
 * Kubernetes LimitRange docs: [https://kubernetes.io/docs/concepts/policy/limit-range/](https://kubernetes.io/docs/concepts/policy/limit-range/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/5414db24-0e14-4c28-8e4a-f2f984793617" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/5414db24-0e14-4c28-8e4a-f2f984793617)

@@ -10,17 +10,13 @@ This guide explains how to configure Defender for Cloud policies in Azure to mon
 
 The Azure Security Benchmark provides a comprehensive roadmap for implementing robust security controls. It aligns with multiple compliance frameworks and regulatory requirements including PCI DSS, HIPAA, and GDPR. Integrated directly with Microsoft Defender for Cloud, the benchmark evaluates your resource configurations and offers remediation recommendations based on periodic assessments.
 
-<Callout icon="lightbulb">
-  By assigning the Azure Security Benchmark, you not only secure your environment but also receive targeted recommendations to improve your overall security posture.
-</Callout>
+> **lightbulb** By assigning the Azure Security Benchmark, you not only secure your environment but also receive targeted recommendations to improve your overall security posture.
 
 ## How Defender for Cloud Works
 
 Once the required policies are assigned, Defender for Cloud evaluates your Azure resources, checking them against the defined requirements. It then reports on compliance levels and provides clear remediation recommendations. Additional policy initiatives, including PCI or HIPAA, can be incorporated as needed to further tailor your security strategy.
 
-<Frame>
-  ![The image shows a configuration interface for Azure Security Center policies, highlighting security controls, compliance frameworks, recommendations, and regular assessments. It includes a list of industry and regulatory standards with options to enable or disable them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882018/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Defender-for-Cloud-policies/azure-security-center-policies-interface.jpg)
-</Frame>
+![The image shows a configuration interface for Azure Security Center policies, highlighting security controls, compliance frameworks, recommendations, and regular assessments. It includes a list of industry and regulatory standards with options to enable or disable them.](https://kodekloud.com/kk-media/image/upload/v1752882018/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Defender-for-Cloud-policies/azure-security-center-policies-interface.jpg)
 
 ## Navigating the Azure Portal
 
@@ -32,9 +28,7 @@ To see these policies in action, follow these steps in the Azure portal:
 
 At this point, you might notice that the default initiative is not assigned yet. To deploy it, click on **Assign policy** to add the Microsoft Cloud Security Benchmark initiative.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen for assigning a security policy initiative called "Microsoft cloud security benchmark." It includes options for setting the scope, exclusions, and policy enforcement.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882020/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Defender-for-Cloud-policies/azure-portal-security-policy-initiative.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen for assigning a security policy initiative called "Microsoft cloud security benchmark." It includes options for setting the scope, exclusions, and policy enforcement.](https://kodekloud.com/kk-media/image/upload/v1752882020/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Defender-for-Cloud-policies/azure-portal-security-policy-initiative.jpg)
 
 This initiative comprises 210 audit policies, out of which 12 are disabled by default. The comprehensive security recommendations you see for your environment are based on this evaluation.
 
@@ -45,15 +39,11 @@ If you want to include additional standards such as PCI DSS, you can easily do s
 1. Locate the PCI DSS standard in the list.
 2. Click the **Add** button next to it.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page listing various regulatory compliance standards, each with an "Add" button next to it. The page is part of the Microsoft Defender for Cloud settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882021/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Defender-for-Cloud-policies/azure-portal-regulatory-compliance.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page listing various regulatory compliance standards, each with an "Add" button next to it. The page is part of the Microsoft Defender for Cloud settings.](https://kodekloud.com/kk-media/image/upload/v1752882021/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Defender-for-Cloud-policies/azure-portal-regulatory-compliance.jpg)
 
 This action opens the policy assignment blade for the selected standard. Once added, the initiative will evaluate your Azure resources against its specific compliance criteria, highlighting any gaps and providing actionable remediation steps.
 
-<Callout icon="lightbulb">
-  The following sections will delve deeper into the remediation recommendations generated by these policies and provide guidance on how to address compliance issues effectively.
-</Callout>
+> **lightbulb** The following sections will delve deeper into the remediation recommendations generated by these policies and provide guidance on how to address compliance issues effectively.
 
 ## Summary
 
@@ -61,6 +51,4 @@ By configuring Defender for Cloud policies, you create a proactive security envi
 
 For more information on Azure Security and compliance, visit [Microsoft Defender for Cloud Documentation](https://docs.microsoft.com/en-us/azure/defender-for-cloud/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/aea85892-224f-4bd2-8013-e36764e15f37/lesson/17dcaec3-2f65-4c0a-aa0b-0598170ea115" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/aea85892-224f-4bd2-8013-e36764e15f37/lesson/17dcaec3-2f65-4c0a-aa0b-0598170ea115)

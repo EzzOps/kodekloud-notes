@@ -8,9 +8,7 @@ In this lesson we explain how Kyverno handles policy violations using the Failur
 
 We previously wrote a simple `validate` rule that blocked non-compliant resources. However, in real clusters you often want to discover existing violations before enforcing a rule. The Failure Action settings determine whether Kyverno acts as a reporter (Audit) or a gatekeeper (Enforce), and whether preexisting violations are tolerated.
 
-<Callout icon="lightbulb">
-  Older examples (and some exam questions) may show a top-level `validationFailureAction` field. That field is deprecated. Use per-rule `validate.failureAction` instead to control behavior rule-by-rule.
-</Callout>
+> **lightbulb** Older examples (and some exam questions) may show a top-level `validationFailureAction` field. That field is deprecated. Use per-rule `validate.failureAction` instead to control behavior rule-by-rule.
 
 Note: Defining `failureAction` per `validate` rule lets different rules in the same policy behave differently — for example, one rule can `Enforce` while another is `Audit`.
 
@@ -149,9 +147,7 @@ spec:
               owner: "?*"
 ```
 
-<Callout icon="warning">
-  Setting `allowExistingViolations: false` can be disruptive: preexisting non-compliant resources will be frozen (no updates) until they are fixed. Plan and communicate carefully before applying this setting in production.
-</Callout>
+> **warning** Setting `allowExistingViolations: false` can be disruptive: preexisting non-compliant resources will be frozen (no updates) until they are fixed. Plan and communicate carefully before applying this setting in production.
 
 ## Quick reference: Failure action fields
 
@@ -184,6 +180,4 @@ Further reading and references
 
 This concludes the lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/3eac0693-1688-446f-8bbe-61eef0884c5d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/3eac0693-1688-446f-8bbe-61eef0884c5d)

@@ -114,9 +114,7 @@ The minimum required scopes are: 'repo', 'read:org', 'workflow'.
 
 Generate a PAT in GitHub: Settings → Developer settings → Personal access tokens (classic). When creating the token, grant the importer the minimum required scopes.
 
-<Callout icon="lightbulb">
-  Minimum required scopes for the importer are: `repo`, `read:org`, and `workflow`. Keep the token secure and consider setting an expiration.
-</Callout>
+> **lightbulb** Minimum required scopes for the importer are: `repo`, `read:org`, and `workflow`. Keep the token secure and consider setting an expiration.
 
 To make scope/permissions clear, here's a quick reference:
 
@@ -260,6 +258,4 @@ References:
 * GitHub Docs — Migrating from Jenkins with GitHub Actions Importer: [https://docs.github.com/en/actions/migrating-to-github-actions/about-migrating-from-jenkins-with-github-actions-importer](https://docs.github.com/en/actions/migrating-to-github-actions/about-migrating-from-jenkins-with-github-actions-importer)
 * GitHub CLI installation: [https://github.com/cli/cli#installation](https://github.com/cli/cli#installation)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/b0c7b47f-9455-455a-993e-51139ede8490" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/b0c7b47f-9455-455a-993e-51139ede8490)

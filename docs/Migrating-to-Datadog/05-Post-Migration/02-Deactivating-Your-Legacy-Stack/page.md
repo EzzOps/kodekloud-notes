@@ -71,9 +71,7 @@ Cross-team communication is essential to surface changes that telemetry might no
   <img alt="The image illustrates a workflow for incident detection, with a person reviewing data on a laptop, and steps like coordinating with teams and checking for updates." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Document the incident timeline, root cause, and remediation steps. Share post-incident findings and update runbooks so teams can prevent recurrence.
-</Callout>
+> **lightbulb** Document the incident timeline, root cause, and remediation steps. Share post-incident findings and update runbooks so teams can prevent recurrence.
 
 ## Incident debrief: key practices and checklist
 
@@ -120,6 +118,4 @@ Further reading and references:
 
 That concludes this lesson. I hope you found it useful.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9add8e22-a057-4808-880b-be8b91e0d5f2/lesson/d5c2cceb-7c83-4ebe-a10e-3c104fd0a0ab" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9add8e22-a057-4808-880b-be8b91e0d5f2/lesson/d5c2cceb-7c83-4ebe-a10e-3c104fd0a0ab)

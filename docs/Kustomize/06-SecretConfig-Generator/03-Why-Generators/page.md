@@ -96,9 +96,7 @@ data:
     }
 ```
 
-<Callout icon="lightbulb">
-  Using files allows you to keep complex configurations version-controlled and modular.
-</Callout>
+> **lightbulb** Using files allows you to keep complex configurations version-controlled and modular.
 
 ## Defining a Secret Generator
 
@@ -132,9 +130,7 @@ secretGenerator:
     - nginx-conf
 ```
 
-<Callout icon="triangle-alert">
-  Avoid committing sensitive information in plaintext to source control. Use sealed secrets or external secret management services for production workloads.
-</Callout>
+> **triangle-alert** Avoid committing sensitive information in plaintext to source control. Use sealed secrets or external secret management services for production workloads.
 
 ## Generator Types Overview
 
@@ -149,11 +145,9 @@ secretGenerator:
 * [Kubernetes Secret Documentation](https://kubernetes.io/docs/concepts/configuration/secret/)
 * [Kustomize Generators](https://kubectl.docs.kubernetes.io/references/kustomize/generators/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/51823d3e-7be4-4792-836a-2c4690c0c547/lesson/4d922c66-e6da-4764-ba66-f5461ef566a3" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/51823d3e-7be4-4792-836a-2c4690c0c547/lesson/4d922c66-e6da-4764-ba66-f5461ef566a3)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kustomize/module/51823d3e-7be4-4792-836a-2c4690c0c547/lesson/49973abe-d000-44cc-90ad-5802d6dedf73" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kustomize/module/51823d3e-7be4-4792-836a-2c4690c0c547/lesson/49973abe-d000-44cc-90ad-5802d6dedf73)
 
 
 # Why Generators
@@ -179,9 +173,7 @@ data:
   password: "password1"
 ```
 
-<Callout icon="lightbulb">
-  Use a [Secret](https://kubernetes.io/docs/concepts/configuration/secret/) in real deployments to protect sensitive data.
-</Callout>
+> **lightbulb** Use a [Secret](https://kubernetes.io/docs/concepts/configuration/secret/) in real deployments to protect sensitive data.
 
 Save this as `configmap.yaml` and apply:
 

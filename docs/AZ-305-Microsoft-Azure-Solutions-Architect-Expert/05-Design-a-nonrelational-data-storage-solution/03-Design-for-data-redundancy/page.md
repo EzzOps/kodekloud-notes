@@ -46,7 +46,7 @@ The following table summarizes the key characteristics of these replication stra
 | Read-Access GRS (RAGRS)           | 6 copies | Primary (LRS) + Secondary region       | Continuous read access          |
 | Geo-Zone-Redundant Storage (GZRS) | 6 copies | Primary (ZRS) + Secondary region (LRS) | Available after failover        |
 
-![The image is a comparison chart of different storage replication strategies, including LRS, ZRS, GRS, and GZRS, highlighting their features, durability, and recommended use cases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867146/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-data-redundancy/storage-replication-strategies-chart.jpg)
+![The image is a comparison chart of different storage replication strategies, including LRS, ZRS, GRS, and GZRS, highlighting their features, durability, and recommended use cases.](https://kodekloud.com/kk-media/image/upload/v1752867146/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-data-redundancy/storage-replication-strategies-chart.jpg)
 
 These replication options enable you to protect your valuable data by replicating it across availability zones, across secondary regions, or within the same data center. They are designed to safeguard your data from catastrophic failures and major incidents in Microsoft data centers.
 

@@ -118,9 +118,7 @@ if __name__ == "__main__":
     app.run(debug=True)
 ```
 
-<Callout icon="warning">
-  Flask passes an exception argument to `teardown_request`. The teardown function must accept that parameter (for example `def teardown_request_func(exc):`) even if you don't use it, otherwise Flask will raise an error.
-</Callout>
+> **warning** Flask passes an exception argument to `teardown_request`. The teardown function must accept that parameter (for example `def teardown_request_func(exc):`) even if you don't use it, otherwise Flask will raise an error.
 
 ## Run and verify
 
@@ -192,9 +190,7 @@ Links and references
 * [Flask documentation](https://flask.palletsprojects.com/)
 * [Jaeger project](https://www.jaegertracing.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/e3b8486b-732b-461f-ac44-c1596dc10ee0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/e3b8486b-732b-461f-ac44-c1596dc10ee0)
 
 
 # Demo Resource Attributes
@@ -306,9 +302,7 @@ charging bank
 
 Now the Jaeger UI shows the correct service name (`payment-service`) in the service list, making it much easier to find and analyze relevant traces.
 
-<Callout icon="lightbulb">
-  Resource attributes are intended to describe the entity producing telemetry and are treated as immutable metadata for that entity. Use standard keys (for example, `service.name`, `service.version`) to maximize interoperability with observability backends.
-</Callout>
+> **lightbulb** Resource attributes are intended to describe the entity producing telemetry and are treated as immutable metadata for that entity. Use standard keys (for example, `service.name`, `service.version`) to maximize interoperability with observability backends.
 
 <Frame>
   <img alt="The image shows a Jaeger UI trace analysis for a &#x22;Payment Service,&#x22; detailing spans related to a payment process with specific tags and process information." />
@@ -322,6 +316,4 @@ Links and references
 * [Jaeger Tracing](https://www.jaegertracing.io/)
 * [OpenTelemetry Python SDK](https://opentelemetry.io/docs/instrumentation/python/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/bb2393a3-03e3-4528-90cb-f3073471ba57" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/bb2393a3-03e3-4528-90cb-f3073471ba57)

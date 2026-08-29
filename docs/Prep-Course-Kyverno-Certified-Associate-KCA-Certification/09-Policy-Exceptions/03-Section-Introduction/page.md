@@ -38,9 +38,7 @@ What this section covers
 
 This article defines the Exception CRD, shows how to author an exception resource, and walks through managing exceptions safely (scoping, approval, and audit trails).
 
-<Callout icon="lightbulb">
-  Policy exceptions are implemented via a custom resource (the Exception CR). Use exceptions sparingly: prefer narrowly scoped rules that target specific namespaces, labels, or service accounts before resorting to exceptions.
-</Callout>
+> **lightbulb** Policy exceptions are implemented via a custom resource (the Exception CR). Use exceptions sparingly: prefer narrowly scoped rules that target specific namespaces, labels, or service accounts before resorting to exceptions.
 
 Key benefits of using Kyverno policy exceptions
 
@@ -63,10 +61,6 @@ Table — What you’ll learn in this section
 | Hands‑on example        | Step‑by‑step: allow Alloy’s monitoring agent to run as root without disabling the non‑root policy. |
 | Pod Security exemptions | How exceptions relate to Pod Security and best practices for exemptions.                           |
 
-<Callout icon="warning">
-  Avoid blanket exceptions. Always scope exceptions as narrowly as possible (namespace, label selector, or specific workload) and follow an approval process to minimize risk.
-</Callout>
+> **warning** Avoid blanket exceptions. Always scope exceptions as narrowly as possible (namespace, label selector, or specific workload) and follow an approval process to minimize risk.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/26478d8e-69b0-4b48-bc9a-173ba8b28d7b/lesson/a834303b-643e-4579-856d-3cb4f9617b26" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/26478d8e-69b0-4b48-bc9a-173ba8b28d7b/lesson/a834303b-643e-4579-856d-3cb4f9617b26)

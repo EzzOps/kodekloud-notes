@@ -37,9 +37,7 @@ spec:
       args: ["Losers visualize the penalties of failure, Winners visualize the rewards of success. -Dr.Rob Gilbert"]
 ```
 
-<Callout icon="lightbulb">
-  `generateName` is helpful when running the same workflow repeatedly: it appends a unique suffix so each workflow run gets a distinct name and avoids resource-name collisions.
-</Callout>
+> **lightbulb** `generateName` is helpful when running the same workflow repeatedly: it appends a unique suffix so each workflow run gets a distinct name and avoids resource-name collisions.
 
 ## Submit from the UI
 
@@ -191,8 +189,6 @@ At this point you should see two workflows in the UI (one created from the UI an
 * Argo CLI reference: [https://argoproj.github.io/argo-workflows/argo/commands/argo/](https://argoproj.github.io/argo-workflows/argo/commands/argo/)
 * Example workflow used above (gist): [https://gist.githubusercontent.com/sidd-harth/54c1c6e16682ae281650a7d67bf0bf01/raw/7cae878eaad64b84a486841bb9ee484cea83ca45/workflow-1.yml](https://gist.githubusercontent.com/sidd-harth/54c1c6e16682ae281650a7d67bf0bf01/raw/7cae878eaad64b84a486841bb9ee484cea83ca45/workflow-1.yml)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/77dc197c-4d03-45dc-9c93-0688683151e8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/77dc197c-4d03-45dc-9c93-0688683151e8)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/b62e936e-aa2a-4863-8b4d-651dfd723f2e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/b62e936e-aa2a-4863-8b4d-651dfd723f2e)

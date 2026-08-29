@@ -50,9 +50,7 @@ On-premises solutions often segregate development, testing, and production envir
 
 Azure simplifies environment separation with the use of separate subscriptions or resource groups. By logically partitioning resources, you can effectively isolate development from production environments without additional physical hardware investments.
 
-<Callout icon="lightbulb">
-  Azure environments enable you to rapidly scale and adjust configurations, offering operational agility that is often challenging to achieve with traditional on-premises infrastructure.
-</Callout>
+> **lightbulb** Azure environments enable you to rapidly scale and adjust configurations, offering operational agility that is often challenging to achieve with traditional on-premises infrastructure.
 
 ***
 
@@ -107,6 +105,4 @@ Our next article will explore how to enable Distributed Denial-of-Service (DDoS)
 
 Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/cb10a3ae-53f4-4588-ad61-042af34f31ab/lesson/533e0707-afe1-4540-baca-691801cf128a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/cb10a3ae-53f4-4588-ad61-042af34f31ab/lesson/533e0707-afe1-4540-baca-691801cf128a)

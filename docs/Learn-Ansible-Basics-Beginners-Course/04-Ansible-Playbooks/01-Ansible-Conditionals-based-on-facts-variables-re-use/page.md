@@ -25,9 +25,7 @@ Helpful links:
 * Ansible user guide — conditionals: [https://docs.ansible.com/ansible/latest/user\_guide/playbooks\_conditionals.html](https://docs.ansible.com/ansible/latest/user_guide/playbooks_conditionals.html)
 * Facts & the setup module: [https://docs.ansible.com/ansible/latest/collections/ansible/builtin/setup\_module.html](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/setup_module.html)
 
-<Callout icon="lightbulb">
-  By default Ansible gathers facts at the start of a play using the setup module. If you set gather\_facts: false, you must call the setup module explicitly (or enable gathering) before relying on `ansible_facts`.
-</Callout>
+> **lightbulb** By default Ansible gathers facts at the start of a play using the setup module. If you set gather\_facts: false, you must call the setup module explicitly (or enable gathering) before relying on `ansible_facts`.
 
 Quick reference table: common facts and their uses
 
@@ -182,8 +180,6 @@ Further reading:
 * Ansible documentation: [https://docs.ansible.com/ansible/latest/index.html](https://docs.ansible.com/ansible/latest/index.html)
 * Playbooks and conditionals: [https://docs.ansible.com/ansible/latest/user\_guide/playbooks\_conditionals.html](https://docs.ansible.com/ansible/latest/user_guide/playbooks_conditionals.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/f7bcdbad-4792-4e82-beaa-b799773214fd/lesson/81e76255-6255-4a57-be96-8bae5aa3bb2e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/f7bcdbad-4792-4e82-beaa-b799773214fd/lesson/81e76255-6255-4a57-be96-8bae5aa3bb2e)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/f7bcdbad-4792-4e82-beaa-b799773214fd/lesson/6a482ef8-c154-42de-8000-34cdfde5050d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/f7bcdbad-4792-4e82-beaa-b799773214fd/lesson/6a482ef8-c154-42de-8000-34cdfde5050d)

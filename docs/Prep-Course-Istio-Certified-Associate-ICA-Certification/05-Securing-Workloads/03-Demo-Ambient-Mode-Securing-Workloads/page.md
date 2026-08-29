@@ -4,9 +4,7 @@ namespaces: ["prod", "test"]
 notIpBlocks: ["203.0.113.4"]
 ```
 
-<Callout icon="warning">
-  Exam tip: Understand how `from`, `to`, and `when` combine (OR vs AND), know the difference between L3/L4 NetworkPolicy and L7 AuthorizationPolicy, and be familiar with matching by `selector`, `principals`, and JWT claim keys such as `request.auth.claims[iss]`.
-</Callout>
+> **warning** Exam tip: Understand how `from`, `to`, and `when` combine (OR vs AND), know the difference between L3/L4 NetworkPolicy and L7 AuthorizationPolicy, and be familiar with matching by `selector`, `principals`, and JWT claim keys such as `request.auth.claims[iss]`.
 
 Authorization policies are more expressive than peer authentication (mTLS) alone—invest time in hands-on practice and review the [Istio AuthorizationPolicy reference](https://istio.io/latest/docs/reference/config/security/authorization-policy/) for all available fields.
 
@@ -18,9 +16,7 @@ Authorization policies are more expressive than peer authentication (mTLS) alone
 
 That's the theory — next up: a hands-on demo configuring policies and testing enforcement.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/bb5f68af-8211-48ed-b2fe-a89b5e9cf123" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/bb5f68af-8211-48ed-b2fe-a89b5e9cf123)
 
 
 # Demo Ambient Mode Securing Workloads

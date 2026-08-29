@@ -20,9 +20,7 @@ In contrast, **Azure Front Door** is a global load balancer that operates at the
 
 As illustrated in the diagram below, when path-based routing is required within a region, Application Gateway offers effective layer 7 load balancing. However, Azure Front Door is best suited for distributing traffic globally.
 
-<Frame>
-  ![The image illustrates the configuration and management of Azure Front Door, showing a network diagram with multiple regions and edge locations connected through the Microsoft Global Network. It includes paths for different types of requests, such as "/search/" and "/statics/", routed to specific regions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882073/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-manage-Azure-front-door/azure-front-door-network-diagram.jpg)
-</Frame>
+![The image illustrates the configuration and management of Azure Front Door, showing a network diagram with multiple regions and edge locations connected through the Microsoft Global Network. It includes paths for different types of requests, such as "/search/" and "/statics/", routed to specific regions.](https://kodekloud.com/kk-media/image/upload/v1752882073/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-manage-Azure-front-door/azure-front-door-network-diagram.jpg)
 
 ## Key Benefits of Azure Front Door
 
@@ -75,18 +73,14 @@ DEBUG: 11:16:59 AM - PublishAzureWebAppCmdlet end processing.
 Build and publish finished
 ```
 
-<Callout icon="lightbulb">
-  Ensure that .NET is installed on your computer before running the script. The script deploys three app services along with your custom application code.
-</Callout>
+> **lightbulb** Ensure that .NET is installed on your computer before running the script. The script deploys three app services along with your custom application code.
 
 ### Exploring the Azure Portal
 
 1. **Resource Group Overview:**\
    Open the Azure Portal and navigate to the resource group created by the script (e.g., `rg-afd-apps-01102023`). This group contains various app service plans and deployed app services.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying a resource group named "rg-afd-apps-01102023." It lists several resources, including App Services and App Service plans, with their respective locations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882074/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-manage-Azure-front-door/azure-portal-resource-group-rg-afd-apps.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying a resource group named "rg-afd-apps-01102023." It lists several resources, including App Services and App Service plans, with their respective locations.](https://kodekloud.com/kk-media/image/upload/v1752882074/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-manage-Azure-front-door/azure-portal-resource-group-rg-afd-apps.jpg)
 
 2. **App Service Inspection:**\
    When you open an app service (for example, "KodeKloud E-U-S"), you will see similar services deployed for West Europe (W-E-U) and Southeast Asia ("KodeKloud Southeast Asia").
@@ -94,43 +88,31 @@ Build and publish finished
 3. **Deploying Azure Front Door:**\
    In the Azure Portal, search for "Firewall and CDN profiles" and select "Create Front Door and CDN Profile." Although classic options are available, the modern Azure Front Door solution offers enhanced features and performance.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page comparing offerings for Azure Front Door and other services, with options for "Quick create" and "Custom create" configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882075/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-manage-Azure-front-door/azure-portal-front-door-comparison.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page comparing offerings for Azure Front Door and other services, with options for "Quick create" and "Custom create" configurations.](https://kodekloud.com/kk-media/image/upload/v1752882075/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-manage-Azure-front-door/azure-portal-front-door-comparison.jpg)
 
 * **Custom Create:** Choose "Custom Create." When prompted, select your resource group and assign a name (e.g., "AD Apps 500"). Note that, although Azure Front Door is a global service, it requires a region to store its metadata—the same region as the resource group.
 * **Endpoint Configuration:** Add an endpoint by providing a name (e.g., "AppSR1") and clicking on Add.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating a Front Door profile, with options to add an endpoint by specifying a name and enabling it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882077/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-manage-Azure-front-door/azure-front-door-profile-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating a Front Door profile, with options to add an endpoint by specifying a name and enabling it.](https://kodekloud.com/kk-media/image/upload/v1752882077/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-manage-Azure-front-door/azure-front-door-profile-interface.jpg)
 
 * **Adding a Route and Origin Group:**\
   Add a route that points to an origin group—a collection of your app service endpoints. Create a new origin group (for example, "AFD origin host") and add your regional app services. You do not need to enable validation at this point; simply include each app service as an origin.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for adding a route and an origin group. It includes options for configuring protocols, redirect settings, and health probes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882078/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-manage-Azure-front-door/azure-portal-route-origin-group.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for adding a route and an origin group. It includes options for configuring protocols, redirect settings, and health probes.](https://kodekloud.com/kk-media/image/upload/v1752882078/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-manage-Azure-front-door/azure-portal-route-origin-group.jpg)
 
 * **Configuring Health Probes:**\
   Set up health probes (e.g., a GET request every 100 seconds) to monitor the status of each endpoint. Name the route (e.g., "AFD route app svc") and create it. This route directs traffic to the correct origin group.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for adding a route and configuring an origin group, including settings for protocols, health probes, and load balancing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882079/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-manage-Azure-front-door/azure-route-configuration-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for adding a route and configuring an origin group, including settings for protocols, health probes, and load balancing.](https://kodekloud.com/kk-media/image/upload/v1752882079/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-manage-Azure-front-door/azure-route-configuration-interface.jpg)
 
 4. **Deployment and Verification:**\
    Once the configuration is complete, your Front Door instance will deploy. Traffic will now be distributed among app services based on user proximity. For instance, users in the United States may be served by the East US app service, while users in Asia Pacific may reach the Southeast Asia app service.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a Front Door profile, displaying details like subscription, resource group, location, and endpoint information. Validation has passed, and various settings such as origin group and security policy are listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882080/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-manage-Azure-front-door/azure-portal-front-door-profile.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a Front Door profile, displaying details like subscription, resource group, location, and endpoint information. Validation has passed, and various settings such as origin group and security policy are listed.](https://kodekloud.com/kk-media/image/upload/v1752882080/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-manage-Azure-front-door/azure-portal-front-door-profile.jpg)
 
 Wait for the deployment to complete. Then, check the Front Door endpoint details in the Azure Portal and copy the endpoint URL into your browser. Traffic will be directed to the nearest regional endpoint based on your location and network latency.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying the overview of a deployment in progress, with details about resources, types, statuses, and operation details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882081/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-manage-Azure-front-door/azure-portal-deployment-overview.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying the overview of a deployment in progress, with details about resources, types, statuses, and operation details.](https://kodekloud.com/kk-media/image/upload/v1752882081/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-manage-Azure-front-door/azure-portal-deployment-overview.jpg)
 
 ## Sample HTML Response from App Service
 
@@ -187,6 +169,4 @@ For further learning, explore more about Azure connectivity services such as [Ex
 
 Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/0489a935-a4dd-41c6-b5d3-6054c570299b/lesson/4d418368-2007-4c0b-ada2-49a0a4047eb6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/0489a935-a4dd-41c6-b5d3-6054c570299b/lesson/4d418368-2007-4c0b-ada2-49a0a4047eb6)

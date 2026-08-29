@@ -7,13 +7,9 @@ kubectl -n kube-system logs <cilium-pod-name>
 
 When debug is enabled, logs will contain more detailed information about policy decisions, BPF loading, and datapath events. Use pod logs combined with `cilium status` and `cilium endpoint list` for deeper troubleshooting.
 
-<Callout icon="lightbulb">
-  Enabling debug logging produces verbose output and can increase log volume significantly. Use it for troubleshooting and disable it (set debug false) when finished.
-</Callout>
+> **lightbulb** Enabling debug logging produces verbose output and can increase log volume significantly. Use it for troubleshooting and disable it (set debug false) when finished.
 
-<Callout icon="warning">
-  Do not leave debug logging enabled in production for long periods. Increased log volume can impact storage and performance and may expose sensitive internal details.
-</Callout>
+> **warning** Do not leave debug logging enabled in production for long periods. Increased log volume can impact storage and performance and may expose sensitive internal details.
 
 ## Links and references
 
@@ -21,9 +17,7 @@ When debug is enabled, logs will contain more detailed information about policy 
 * [Kubernetes documentation - ConfigMaps](https://kubernetes.io/docs/concepts/configuration/configmap/)
 * [kubectl reference](https://kubernetes.io/docs/reference/kubectl/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/0807e400-fd1b-4f25-bba5-d0fdb0f4e3f2/lesson/85a788b7-157b-4a8e-afda-d67aa52cf9d3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/0807e400-fd1b-4f25-bba5-d0fdb0f4e3f2/lesson/85a788b7-157b-4a8e-afda-d67aa52cf9d3)
 
 
 # Demo Kube Proxy

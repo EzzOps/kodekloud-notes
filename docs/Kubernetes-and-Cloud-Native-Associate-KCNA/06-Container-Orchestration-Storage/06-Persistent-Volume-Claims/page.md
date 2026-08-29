@@ -8,19 +8,13 @@ Welcome to this comprehensive guide on Persistent Volume Claims (PVCs) in Kubern
 
 Kubernetes administrators are responsible for creating PVs, while users create PVCs to request and utilize that storage. Once a PVC is defined, Kubernetes automatically binds it to an available PV that meets specific criteria such as capacity, access modes, volume modes, storage class, and additional parameters. Each PVC is exclusively bound to a single PV. If no matching volume exists at the time of creation, the PVC remains in a pending state until a compatible PV becomes available.
 
-<Callout icon="lightbulb">
-  When multiple PVs meet the claim criteria, you can leverage labels and selectors to ensure that the correct volume is bound. Even if the claim is smaller than the available PV, any surplus capacity will not be allocated to other claims.
-</Callout>
+> **lightbulb** When multiple PVs meet the claim criteria, you can leverage labels and selectors to ensure that the correct volume is bound. Even if the claim is smaller than the available PV, any surplus capacity will not be allocated to other claims.
 
-<Frame>
-  ![The image illustrates the concept of "Binding" in Kubernetes, showing PV (Persistent Volume) and PVC (Persistent Volume Claim) with conditions like capacity, access, volume modes, and storage class.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880630/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Persistent-Volume-Claims/frame_60.jpg)
-</Frame>
+![The image illustrates the concept of "Binding" in Kubernetes, showing PV (Persistent Volume) and PVC (Persistent Volume Claim) with conditions like capacity, access, volume modes, and storage class.](https://kodekloud.com/kk-media/image/upload/v1752880630/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Persistent-Volume-Claims/frame_60.jpg)
 
 When a new volume that satisfies the requirements of a pending PVC becomes available, Kubernetes seamlessly binds the PVC to this volume. This binding process is depicted in the following diagram:
 
-<Frame>
-  ![The image illustrates the binding process between Persistent Volumes (PV) and Persistent Volume Claims (PVC) with conditions like capacity, access modes, and storage class.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880631/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Persistent-Volume-Claims/frame_110.jpg)
-</Frame>
+![The image illustrates the binding process between Persistent Volumes (PV) and Persistent Volume Claims (PVC) with conditions like capacity, access modes, and storage class.](https://kodekloud.com/kk-media/image/upload/v1752880631/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Persistent-Volume-Claims/frame_110.jpg)
 
 ## Creating a Persistent Volume Claim
 
@@ -60,9 +54,7 @@ NAME      STATUS    VOLUME   CAPACITY   ACCESS MODES
 myclaim   Pending
 ```
 
-<Callout icon="lightbulb">
-  Even if a PVC requests only a portion of the storage available in a PV (e.g., 500Mi out of 1Gi), Kubernetes will bind it to that PV if the access mode and other conditions match.
-</Callout>
+> **lightbulb** Even if a PVC requests only a portion of the storage available in a PV (e.g., 500Mi out of 1Gi), Kubernetes will bind it to that PV if the access mode and other conditions match.
 
 Here is an example of a PV configuration that could satisfy the above PVC:
 
@@ -115,6 +107,4 @@ Choosing the correct reclaim policy is essential for managing your Kubernetes st
 
 That concludes our guide on Persistent Volume Claims in Kubernetes. For further insights and detailed documentation on Kubernetes storage practices, please refer to the [Kubernetes Documentation](https://kubernetes.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/fbd7b99a-b2c1-4eda-9ef9-f5e0d7a20fce/lesson/7dc5797d-570c-4046-babd-69b309f1882c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/fbd7b99a-b2c1-4eda-9ef9-f5e0d7a20fce/lesson/7dc5797d-570c-4046-babd-69b309f1882c)

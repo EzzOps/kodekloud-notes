@@ -56,7 +56,7 @@ In this guide, you’ll learn how to use **AWS EventBridge** to schedule **AWS L
 5. Select **Node.js 18.x** (or **Python 3.x** if you prefer).
 6. Keep all other settings as default and click **Create function**.
 
-![The image shows the AWS Lambda console where a user is creating a new function using a blueprint. The function is named "my\_lambda" with Node.js 18.x as the runtime.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862423/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-AWS-Eventbridge-schedulers/aws-lambda-console-create-function-blueprint.jpg)
+![The image shows the AWS Lambda console where a user is creating a new function using a blueprint. The function is named "my\_lambda" with Node.js 18.x as the runtime.](https://kodekloud.com/kk-media/image/upload/v1752862423/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-AWS-Eventbridge-schedulers/aws-lambda-console-create-function-blueprint.jpg)
 
 ***
 
@@ -87,7 +87,7 @@ By default, there is no trigger attached. Next, we’ll configure EventBridge.
    * You can also use a cron expression under **Cron-based** if needed.
 5. Click **Next**, disable **Enabled**, and click **Next** again.
 
-![The image shows a screenshot of the Amazon EventBridge Scheduler interface, where a recurring rate-based schedule is being set to run every 2 minutes. The interface includes options for time zone and daylight saving adjustments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862424/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-AWS-Eventbridge-schedulers/amazon-eventbridge-scheduler-recurrence-screenshot.jpg)
+![The image shows a screenshot of the Amazon EventBridge Scheduler interface, where a recurring rate-based schedule is being set to run every 2 minutes. The interface includes options for time zone and daylight saving adjustments.](https://kodekloud.com/kk-media/image/upload/v1752862424/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-AWS-Eventbridge-schedulers/amazon-eventbridge-scheduler-recurrence-screenshot.jpg)
 
 ***
 
@@ -99,9 +99,9 @@ By default, there is no trigger attached. Next, we’ll configure EventBridge.
 4. Click **Next**, then **Create schedule**.
 5. Finally, enable the schedule to start invoking your function every 2 minutes.
 
-![The image shows an Amazon Web Services (AWS) EventBridge Scheduler interface where a user is selecting a target API for a schedule. Various AWS services like CodeBuild, Lambda, and SNS are listed as options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862426/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-AWS-Eventbridge-schedulers/aws-eventbridge-scheduler-target-api.jpg)
+![The image shows an Amazon Web Services (AWS) EventBridge Scheduler interface where a user is selecting a target API for a schedule. Various AWS services like CodeBuild, Lambda, and SNS are listed as options.](https://kodekloud.com/kk-media/image/upload/v1752862426/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-AWS-Eventbridge-schedulers/aws-eventbridge-scheduler-target-api.jpg)
 
-![The image shows an AWS EventBridge Scheduler interface where a Lambda function named "my\_lambda" is being configured with options to create a new Lambda function and input a JSON payload.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862427/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-AWS-Eventbridge-schedulers/aws-eventbridge-scheduler-lambda-config.jpg)
+![The image shows an AWS EventBridge Scheduler interface where a Lambda function named "my\_lambda" is being configured with options to create a new Lambda function and input a JSON payload.](https://kodekloud.com/kk-media/image/upload/v1752862427/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-AWS-Eventbridge-schedulers/aws-eventbridge-scheduler-lambda-config.jpg)
 
 ***
 
@@ -112,7 +112,7 @@ By default, there is no trigger attached. Next, we’ll configure EventBridge.
 3. Adjust the time range to **Last 30 minutes** (or **15 minutes**).
 4. You should see invocations every 2 minutes along with logs and metrics.
 
-![The image shows an AWS Lambda monitoring dashboard with CloudWatch metrics, including graphs for invocations, duration, error count, success rate, throttles, total concurrent executions, and recursive invocations dropped.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862429/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-AWS-Eventbridge-schedulers/aws-lambda-monitoring-dashboard-cloudwatch-metrics.jpg)
+![The image shows an AWS Lambda monitoring dashboard with CloudWatch metrics, including graphs for invocations, duration, error count, success rate, throttles, total concurrent executions, and recursive invocations dropped.](https://kodekloud.com/kk-media/image/upload/v1752862429/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-AWS-Eventbridge-schedulers/aws-lambda-monitoring-dashboard-cloudwatch-metrics.jpg)
 
 Scroll down to view individual invocation timestamps and durations.
 
@@ -128,7 +128,7 @@ Scroll down to view individual invocation timestamps and durations.
 
 For instance, you could have EventBridge trigger a Lambda that loads a PDF of DevOps headlines from S3 and pushes it to an SNS topic for subscriber email delivery.
 
-![The image shows the AWS Lambda console with details of a function named "my\_lambda," including options for monitoring, configuration, and CloudWatch metrics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862430/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-AWS-Eventbridge-schedulers/aws-lambda-console-my-lambda-function.jpg)
+![The image shows the AWS Lambda console with details of a function named "my\_lambda," including options for monitoring, configuration, and CloudWatch metrics.](https://kodekloud.com/kk-media/image/upload/v1752862430/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-AWS-Eventbridge-schedulers/aws-lambda-console-my-lambda-function.jpg)
 
 ***
 
@@ -141,7 +141,7 @@ To avoid ongoing charges:
 
 > **triangle-alert** Be sure to clean up both Lambda functions and EventBridge schedules to prevent unexpected costs.
 
-![The image shows the Amazon EventBridge Scheduler interface, highlighting features like templated targets, universal targets, flexible time windows, and retries. It includes options to create and manage schedules within the AWS console.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862431/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-AWS-Eventbridge-schedulers/amazon-eventbridge-scheduler-interface.jpg)
+![The image shows the Amazon EventBridge Scheduler interface, highlighting features like templated targets, universal targets, flexible time windows, and retries. It includes options to create and manage schedules within the AWS console.](https://kodekloud.com/kk-media/image/upload/v1752862431/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-AWS-Eventbridge-schedulers/amazon-eventbridge-scheduler-interface.jpg)
 
 ***
 

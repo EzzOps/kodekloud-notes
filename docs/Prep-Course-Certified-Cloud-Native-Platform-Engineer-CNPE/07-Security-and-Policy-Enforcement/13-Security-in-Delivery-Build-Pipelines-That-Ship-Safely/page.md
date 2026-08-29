@@ -47,9 +47,7 @@ Further reading
 * Kubernetes RBAC documentation: [https://kubernetes.io/docs/reference/access-authn-authz/rbac/](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
 * Best practices: favor least-privilege, prefer namespace-scoped roles, and regularly audit bindings.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/997cda2d-bff5-4d6c-af4d-47784cdd3498" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/997cda2d-bff5-4d6c-af4d-47784cdd3498)
 
 
 # Security in Delivery Build Pipelines That Ship Safely

@@ -19,9 +19,7 @@ This trigger runs whenever a resource is created or updated. Kyverno evaluates a
   <img alt="The image describes the &#x22;Reports Controller&#x22; focusing on &#x22;Trigger 1: Admission Reviews,&#x22; detailing the evaluation process of a resource during a CREATE or UPDATE request, and the capture of results from policies with specific admission settings." />
 </Frame>
 
-<Callout icon="lightbulb">
-  By default, Kyverno policies evaluate both at admission (`spec.admission: true`) and in background scans (`spec.background: true`) unless you explicitly change those fields. Use admission evaluation for immediate enforcement and background scans for periodic compliance checks.
-</Callout>
+> **lightbulb** By default, Kyverno policies evaluate both at admission (`spec.admission: true`) and in background scans (`spec.background: true`) unless you explicitly change those fields. Use admission evaluation for immediate enforcement and background scans for periodic compliance checks.
 
 Background scans (periodic)
 The second trigger is the background scan, which evaluates policies against resources that already exist in the cluster. Kyverno periodically re-evaluates resources for any policy with `spec.background` set to `true` and forwards those results to the reports controller.
@@ -148,6 +146,4 @@ References
 * Kyverno Reporting (official docs): [https://kyverno.io/docs](https://kyverno.io/docs)
 * Kubernetes API conventions: [https://kubernetes.io/docs/reference/using-api/api-concepts/](https://kubernetes.io/docs/reference/using-api/api-concepts/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/360718cb-5ab8-44a1-bcd2-beae95ede7c9/lesson/061f97c9-92c2-404c-b49a-8988d2a07c10" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/360718cb-5ab8-44a1-bcd2-beae95ede7c9/lesson/061f97c9-92c2-404c-b49a-8988d2a07c10)

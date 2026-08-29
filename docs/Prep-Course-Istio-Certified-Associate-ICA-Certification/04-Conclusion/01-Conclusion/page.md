@@ -97,9 +97,7 @@ spec:
             subset: v1
 ```
 
-<Callout icon="lightbulb">
-  Keep practicing on real clusters. Revisit the official Istio documentation, run mock exams, and perform hands‑on labs to strengthen configuration, troubleshooting, and exam readiness: [https://istio.io/latest/docs/](https://istio.io/latest/docs/)
-</Callout>
+> **lightbulb** Keep practicing on real clusters. Revisit the official Istio documentation, run mock exams, and perform hands‑on labs to strengthen configuration, troubleshooting, and exam readiness: [https://istio.io/latest/docs/](https://istio.io/latest/docs/)
 
 ## Next steps and resources
 
@@ -111,6 +109,4 @@ spec:
 
 Thank you for choosing KodeKloud. Stay connected with the community, share your progress, and continue building with Istio. Best of luck on your ICA exam and in your cloud‑native journey — you’re ready to apply what you’ve learned and keep evolving.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/ee07406f-e79c-474c-91a4-5a9e20035230/lesson/88c998d8-ec96-4ecb-991b-251eb0462ee3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/ee07406f-e79c-474c-91a4-5a9e20035230/lesson/88c998d8-ec96-4ecb-991b-251eb0462ee3)

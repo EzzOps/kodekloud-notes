@@ -66,9 +66,7 @@ Commands:
   bitbucket     Forecasts GitHub Actions usage from historical Bitbucket pipeline utilization.
 ```
 
-<Callout icon="warning">
-  If you still see the plugin-related error after installing Paginated Builds, add `--no-http-cache` to the forecast command to ensure the importer queries Jenkins live instead of using cached plugin lists.
-</Callout>
+> **warning** If you still see the plugin-related error after installing Paginated Builds, add `--no-http-cache` to the forecast command to ensure the importer queries Jenkins live instead of using cached plugin lists.
 
 Example successful run using `--no-http-cache`:
 
@@ -176,9 +174,7 @@ These metrics are useful for estimating:
 
 If you need to review the installer or plugin details, refer to the Jenkins plugin page ([https://plugins.jenkins.io/paginated-builds](https://plugins.jenkins.io/paginated-builds)) and the importer docs ([https://github.com/actions-importer/preview/tree/main/jenkins#paginated-builds-plugin](https://github.com/actions-importer/preview/tree/main/jenkins#paginated-builds-plugin)).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/40334466-4224-4ef0-b0e2-3bea5b363a71" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/40334466-4224-4ef0-b0e2-3bea5b363a71)
 
 
 # Demo Forecast Potential Build Runner Usage 2
@@ -251,9 +247,7 @@ Restrict the audit/forecast to a folder
 
 * Use the `-f` (or `--folder`) argument to limit the scope to a single folder inside Jenkins. The folder name should match the name shown in the Jenkins UI.
 
-<Callout icon="lightbulb">
-  Use `-f <folder-name>` to restrict the audit/forecast to a single folder (e.g., `folder-1`). The folder name should match the name visible in Jenkins.
-</Callout>
+> **lightbulb** Use `-f <folder-name>` to restrict the audit/forecast to a single folder (e.g., `folder-1`). The folder name should match the name visible in Jenkins.
 
 Example command that targets only `folder-1`:
 
@@ -293,6 +287,4 @@ References and further reading
 
 If you want, I can provide a step-by-step checklist to run the folder-scoped forecast in your environment or show how to parse the generated `jobs_*.json` for custom metrics.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/de5c4025-9e6f-4cef-a456-40de2a9ae52a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/de5c4025-9e6f-4cef-a456-40de2a9ae52a)

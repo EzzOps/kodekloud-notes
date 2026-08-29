@@ -24,7 +24,7 @@ AWS DataSync comprises four essential components that work together to ensure ef
 
 Below is a diagram that illustrates the four key steps of DataSync:
 
-![The image is a diagram titled "DataSync" showing four steps: Agent, Location, Task, and Task Execution, with icons and descriptions for each step.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865428/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Datasync/datasync-four-steps-diagram.jpg)
+![The image is a diagram titled "DataSync" showing four steps: Agent, Location, Task, and Task Execution, with icons and descriptions for each step.](https://kodekloud.com/kk-media/image/upload/v1752865428/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Datasync/datasync-four-steps-diagram.jpg)
 
 ## Task and Task Execution States
 
@@ -63,11 +63,11 @@ Both tasks and their executions progress through specific states during the life
 
 The chart below illustrates the status icons and states for tasks and their executions:
 
-![The image shows a "Task and Execution Status" chart with four status icons: Available, Running, Unavailable, and Queued. Each status is represented by a different colored circle with an icon inside.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865429/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Datasync/task-execution-status-chart-icons.jpg)
+![The image shows a "Task and Execution Status" chart with four status icons: Available, Running, Unavailable, and Queued. Each status is represented by a different colored circle with an icon inside.](https://kodekloud.com/kk-media/image/upload/v1752865429/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Datasync/task-execution-status-chart-icons.jpg)
 
 The following flow diagram visually represents the stages of task execution:
 
-![The image shows a task and execution status flow with five stages: Queued, Launching, Preparing, Transferring, and Verifying, each represented by a colored icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865430/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Datasync/task-execution-status-flow-diagram.jpg)
+![The image shows a task and execution status flow with five stages: Queued, Launching, Preparing, Transferring, and Verifying, each represented by a colored icon.](https://kodekloud.com/kk-media/image/upload/v1752865430/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Datasync/task-execution-status-flow-diagram.jpg)
 
 ## AWS DataSync Discovery
 
@@ -79,7 +79,7 @@ Similar to many AWS migration services, AWS DataSync offers a discovery process 
 
 The flowchart below outlines the DataSync Discovery process:
 
-![The image is a flowchart illustrating the DataSync Discovery process, showing the connection between On-Premises Storage, DataSync Agent, DataSync Discovery, and Recommendations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865431/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Datasync/datasync-discovery-flowchart.jpg)
+![The image is a flowchart illustrating the DataSync Discovery process, showing the connection between On-Premises Storage, DataSync Agent, DataSync Discovery, and Recommendations.](https://kodekloud.com/kk-media/image/upload/v1752865431/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Datasync/datasync-discovery-flowchart.jpg)
 
 ## Key Features of AWS DataSync
 
@@ -111,7 +111,7 @@ DataSync is equipped with a range of features designed to ensure efficient and s
 
 The diagram below highlights these robust features:
 
-![The image lists features of DataSync, including high-speed data transfer, simple management, data integrity and verification, automation and scheduling, support for multiple protocols, incremental transfers, and security and encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865432/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Datasync/datasync-features-high-speed-transfer.jpg)
+![The image lists features of DataSync, including high-speed data transfer, simple management, data integrity and verification, automation and scheduling, support for multiple protocols, incremental transfers, and security and encryption.](https://kodekloud.com/kk-media/image/upload/v1752865432/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Datasync/datasync-features-high-speed-transfer.jpg)
 
 ## Common Use Cases for AWS DataSync
 
@@ -120,17 +120,17 @@ AWS DataSync supports a wide variety of use cases, including:
 1. **On-Premises to AWS Storage Transfers:**\
    Migrate data from your on-premises storage systems to AWS services such as Amazon EFS, S3, or FSx.
 
-![The image illustrates the process of transferring on-premises storage to AWS using DataSync, showing connections to various AWS storage services like Amazon EFS, S3, and FSx.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865434/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Datasync/aws-datasync-storage-transfer-diagram.jpg)
+![The image illustrates the process of transferring on-premises storage to AWS using DataSync, showing connections to various AWS storage services like Amazon EFS, S3, and FSx.](https://kodekloud.com/kk-media/image/upload/v1752865434/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Datasync/aws-datasync-storage-transfer-diagram.jpg)
 
 2. **AWS Region-to-Region Synchronization:**\
    Synchronize data between AWS regions to support data redundancy, disaster recovery, or regional migrations. This ensures optimal performance and availability while relocating data between regions.
 
-![The image illustrates data synchronization between AWS regions using DataSync Discovery, showing various AWS storage services like Amazon EFS, S3, and FSx file systems. It highlights the use of TLS for secure data transfer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865435/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Datasync/aws-datasync-data-synchronization-diagram.jpg)
+![The image illustrates data synchronization between AWS regions using DataSync Discovery, showing various AWS storage services like Amazon EFS, S3, and FSx file systems. It highlights the use of TLS for secure data transfer.](https://kodekloud.com/kk-media/image/upload/v1752865435/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Datasync/aws-datasync-data-synchronization-diagram.jpg)
 
 3. **Third-Party Cloud Migrations:**\
    Seamlessly migrate data from other cloud providers such as Microsoft Azure or Google Cloud Platform (GCP) to AWS.
 
-![The image illustrates a data transfer process from other cloud storage to AWS using DataSync, showing connections between on-premises storage and various AWS storage services like Amazon EFS, S3, and FSx.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865437/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Datasync/data-transfer-aws-datasync-diagram.jpg)
+![The image illustrates a data transfer process from other cloud storage to AWS using DataSync, showing connections between on-premises storage and various AWS storage services like Amazon EFS, S3, and FSx.](https://kodekloud.com/kk-media/image/upload/v1752865437/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Datasync/data-transfer-aws-datasync-diagram.jpg)
 
 > **lightbulb** AWS DataSync not only transfers files and objects securely but also supports data replication to AWS storage services. This ensures enhanced data protection, backup capabilities, and the opportunity to archive less frequently accessed data to cost-effective storage like Amazon S3 Glacier.
 

@@ -18,7 +18,7 @@ AWS CodeGuru comprises two main components:
 
 > **lightbulb** The CodeGuru Profiler dives deep into your application's performance, identifying bottlenecks and inefficient resource usage. This insight helps optimize AWS resource allocation, reduce operational costs, and maintain high performance.
 
-![The image is a flowchart illustrating a development pipeline using AWS services, including CodeCommit, CodeBuild, CodeDeploy, and EC2, with CodeGuru Reviewer and Profiler integrated.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858020/notes-assets/images/AWS-Certified-Developer-Associate-CodeGuru/aws-development-pipeline-flowchart.jpg)
+![The image is a flowchart illustrating a development pipeline using AWS services, including CodeCommit, CodeBuild, CodeDeploy, and EC2, with CodeGuru Reviewer and Profiler integrated.](https://kodekloud.com/kk-media/image/upload/v1752858020/notes-assets/images/AWS-Certified-Developer-Associate-CodeGuru/aws-development-pipeline-flowchart.jpg)
 
 ## Key Features
 
@@ -30,7 +30,7 @@ AWS CodeGuru offers a comprehensive set of features designed to streamline your 
 * **In-Depth Security Analysis:** Detects insecure coding patterns and potential vulnerabilities to help maintain a robust and secure codebase.
 * **Resource Optimization:** The Profiler offers vital insights into AWS resource utilization, empowering you to optimize performance and reduce costs.
 
-![The image lists five features: automated code reviews, integration with development tools, machine learning recommendations, security analysis, and resource optimization. Each feature is represented with an icon and a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858022/notes-assets/images/AWS-Certified-Developer-Associate-CodeGuru/features-code-reviews-tools-ml-security.jpg)
+![The image lists five features: automated code reviews, integration with development tools, machine learning recommendations, security analysis, and resource optimization. Each feature is represented with an icon and a brief description.](https://kodekloud.com/kk-media/image/upload/v1752858022/notes-assets/images/AWS-Certified-Developer-Associate-CodeGuru/features-code-reviews-tools-ml-security.jpg)
 
 ## Integration and Workflow Enhancements
 

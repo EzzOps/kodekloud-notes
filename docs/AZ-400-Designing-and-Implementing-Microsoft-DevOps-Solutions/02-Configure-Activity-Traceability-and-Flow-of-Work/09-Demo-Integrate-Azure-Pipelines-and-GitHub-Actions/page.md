@@ -42,7 +42,7 @@ steps:
 
 Save and run the pipeline. After it succeeds, you’ll see a successful build run:
 
-![The image shows an Azure DevOps pipeline interface with a successful job run for a project named "TestWeb." The pipeline was triggered by a user and completed in 16 seconds.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867373/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Generating-Release-Notes/azure-devops-pipeline-success-testweb.jpg)
+![The image shows an Azure DevOps pipeline interface with a successful job run for a project named "TestWeb." The pipeline was triggered by a user and completed in 16 seconds.](https://kodekloud.com/kk-media/image/upload/v1752867373/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Generating-Release-Notes/azure-devops-pipeline-success-testweb.jpg)
 
 ***
 
@@ -111,7 +111,7 @@ steps:
 
 Run the updated pipeline and inspect the release-notes generation logs:
 
-![The image shows an Azure DevOps pipeline interface with a list of jobs and their statuses on the left, and detailed log output of a task called "XplatGenerateReleaseNotes" on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867374/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Generating-Release-Notes/azure-devops-pipeline-jobs-logs.jpg)
+![The image shows an Azure DevOps pipeline interface with a list of jobs and their statuses on the left, and detailed log output of a task called "XplatGenerateReleaseNotes" on the right.](https://kodekloud.com/kk-media/image/upload/v1752867374/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Generating-Release-Notes/azure-devops-pipeline-jobs-logs.jpg)
 
 ***
 
@@ -119,7 +119,7 @@ Run the updated pipeline and inspect the release-notes generation logs:
 
 For easier editing, clone the repo locally and open **azure-pipelines.yml** in VS Code. You’ll find all tasks, including the release-notes steps, in one file.
 
-![The image shows a Visual Studio Code interface with a file explorer on the left, highlighting the "azure-pipelines.yml" file, and the file's content displayed on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867375/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Generating-Release-Notes/visual-studio-code-file-explorer-azure-pipelines.jpg)
+![The image shows a Visual Studio Code interface with a file explorer on the left, highlighting the "azure-pipelines.yml" file, and the file's content displayed on the right.](https://kodekloud.com/kk-media/image/upload/v1752867375/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Generating-Release-Notes/visual-studio-code-file-explorer-azure-pipelines.jpg)
 
 ***
 
@@ -127,14 +127,14 @@ For easier editing, clone the repo locally and open **azure-pipelines.yml** in V
 
 After another run, confirm the copy step output:
 
-![The image shows an Azure DevOps pipeline interface with a list of jobs and their statuses on the left, and detailed log output for a specific job, "XplatGenerateReleaseNotes," on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867376/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Generating-Release-Notes/azure-devops-pipeline-jobs-logs-2.jpg)
+![The image shows an Azure DevOps pipeline interface with a list of jobs and their statuses on the left, and detailed log output for a specific job, "XplatGenerateReleaseNotes," on the right.](https://kodekloud.com/kk-media/image/upload/v1752867376/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Generating-Release-Notes/azure-devops-pipeline-jobs-logs-2.jpg)
 
 Cleaning target folder: C:\agent\_work\7\s\wiki
 Copying C:\agent\_work\7\releasenotes\_1216.md to C:\agent\_work\7\s\wiki\releasenotes\_1216.md
 
 Finally, navigate to your Azure DevOps Wiki—each build now publishes a new `releasenotes_<BuildId>.md` page:
 
-![The image shows a README file in an Azure DevOps Wiki, detailing a .NET Web API application called TestWeb, with sections on description, installation, usage, contributing, and licensing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867369/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Generating-Release-Notes/azure-devops-wiki-readme-testweb.jpg)
+![The image shows a README file in an Azure DevOps Wiki, detailing a .NET Web API application called TestWeb, with sections on description, installation, usage, contributing, and licensing.](https://kodekloud.com/kk-media/image/upload/v1752867369/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752867369/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Generating-Release-Notes/azure-devops-wiki-readme-testweb.jpg)
 
 > **lightbulb** This template shows build number, branch, author, and commit. Extend the Handlebars template to include work items, pull requests, changelogs, or custom fields from Azure Boards.
 
@@ -167,11 +167,11 @@ In this guide, you’ll learn how to trigger an Azure Pipeline automatically fro
 2. Click **Connect Your GitHub Account** and authorize Azure DevOps to access your repos.
 3. Select the **SimpleWebAPI** repository and hit **Save**, then approve the installation in GitHub.
 
-![The image shows an Azure DevOps project dashboard for "SimpleWebAPI," displaying project details, statistics, and navigation options on the left sidebar.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867377/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-simplewebapi-dashboard.jpg)
+![The image shows an Azure DevOps project dashboard for "SimpleWebAPI," displaying project details, statistics, and navigation options on the left sidebar.](https://kodekloud.com/kk-media/image/upload/v1752867377/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-simplewebapi-dashboard.jpg)
 
-![The image shows a webpage for connecting GitHub with Azure Boards, featuring a sidebar with project settings and an illustration of a person watering a plant.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867379/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/github-azure-boards-connection-webpage.jpg)
+![The image shows a webpage for connecting GitHub with Azure Boards, featuring a sidebar with project settings and an illustration of a person watering a plant.](https://kodekloud.com/kk-media/image/upload/v1752867379/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/github-azure-boards-connection-webpage.jpg)
 
-![The image shows a GitHub permissions page for installing Azure Boards, with options to select repositories and permissions for accessing metadata, code, and external domains. There are buttons for approving or rejecting the installation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867380/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/github-permissions-azure-boards-installation.jpg)
+![The image shows a GitHub permissions page for installing Azure Boards, with options to select repositories and permissions for accessing metadata, code, and external domains. There are buttons for approving or rejecting the installation.](https://kodekloud.com/kk-media/image/upload/v1752867380/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/github-permissions-azure-boards-installation.jpg)
 
 ***
 
@@ -187,7 +187,7 @@ You’ll need a PAT with permissions to queue builds. In Azure DevOps:
 
 > **triangle-alert** You will **only** see the PAT value once. Store it securely in your password manager.
 
-![The image shows a screenshot of the Azure DevOps user settings page, specifically the "Personal Access Tokens" section, listing various tokens with their status and expiration dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867381/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-personal-access-tokens-screenshot.jpg)
+![The image shows a screenshot of the Azure DevOps user settings page, specifically the "Personal Access Tokens" section, listing various tokens with their status and expiration dates.](https://kodekloud.com/kk-media/image/upload/v1752867381/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-personal-access-tokens-screenshot.jpg)
 
 ***
 
@@ -197,12 +197,12 @@ You’ll need a PAT with permissions to queue builds. In Azure DevOps:
 2. Choose **GitHub** and pick **SimpleWebAPI**. Approve the Azure Pipelines app if prompted.
 3. Opt for **Starter Pipeline** to get a minimal YAML template.
 
-![The image shows an Azure DevOps dashboard with a list of projects, including "SimpleWebAPI," "Customer Portal," "Test Project," and "jeremy." The interface includes options for creating a new project and filtering existing ones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867382/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-dashboard-projects-list.jpg)
+![The image shows an Azure DevOps dashboard with a list of projects, including "SimpleWebAPI," "Customer Portal," "Test Project," and "jeremy." The interface includes options for creating a new project and filtering existing ones.](https://kodekloud.com/kk-media/image/upload/v1752867382/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-dashboard-projects-list.jpg)
 
-![The image shows an Azure DevOps interface for creating a new pipeline, asking "Where is your code?" with options for Azure Repos Git, Bitbucket Cloud, GitHub, and GitHub Enterprise Server. The left sidebar includes navigation options like Overview, Boards, Repos, and Pipelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867383/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-new-pipeline-interface.jpg)
+![The image shows an Azure DevOps interface for creating a new pipeline, asking "Where is your code?" with options for Azure Repos Git, Bitbucket Cloud, GitHub, and GitHub Enterprise Server. The left sidebar includes navigation options like Overview, Boards, Repos, and Pipelines.](https://kodekloud.com/kk-media/image/upload/v1752867383/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-new-pipeline-interface.jpg)
 
-![The image shows an Azure DevOps interface for creating a new pipeline, with a section to select a repository. The left sidebar includes options like Overview, Boards, Repos, and Pipelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867384/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-new-pipeline-interface-2.jpg)
+![The image shows an Azure DevOps interface for creating a new pipeline, with a section to select a repository. The left sidebar includes options like Overview, Boards, Repos, and Pipelines.](https://kodekloud.com/kk-media/image/upload/v1752867384/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-new-pipeline-interface-2.jpg)
 
-![The image shows an Azure DevOps interface for configuring a new pipeline, with options for different project types like ASP.NET, .NET Core, and Xamarin.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867385/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-new-pipeline-configuration.jpg)
+![The image shows an Azure DevOps interface for configuring a new pipeline, with options for different project types like ASP.NET, .NET Core, and Xamarin.](https://kodekloud.com/kk-media/image/upload/v1752867385/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Integrate-Azure-Pipelines-and-GitHub-Actions/azure-devops-new-pipeline-configuration.jpg)
 
 ```yaml theme={null}

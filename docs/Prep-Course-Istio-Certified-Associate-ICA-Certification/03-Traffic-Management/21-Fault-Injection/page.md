@@ -7,9 +7,7 @@ Verify Istio system pods are running:
 kubectl get pods -n istio-system
 ```
 
-<Callout icon="warning">
-  Setting `outboundTrafficPolicy.mode` to `REGISTRY_ONLY` blocks traffic to any destination not registered in the mesh registry. Apply this carefully in production; it can break external integrations unless those endpoints are explicitly added via ServiceEntry/WorkloadEntry.
-</Callout>
+> **warning** Setting `outboundTrafficPolicy.mode` to `REGISTRY_ONLY` blocks traffic to any destination not registered in the mesh registry. Apply this carefully in production; it can break external integrations unless those endpoints are explicitly added via ServiceEntry/WorkloadEntry.
 
 ## Simulate an external application (nginx on the host)
 
@@ -79,9 +77,7 @@ server: envoy
 transfer-encoding: chunked
 ```
 
-<Callout icon="lightbulb">
-  Setting `meshConfig.outboundTrafficPolicy.mode` to `REGISTRY_ONLY` requires that any external service you want pods to access must be registered with Istio (via `ServiceEntry` and/or `WorkloadEntry`). Otherwise the sidecar will reject the outbound traffic.
-</Callout>
+> **lightbulb** Setting `meshConfig.outboundTrafficPolicy.mode` to `REGISTRY_ONLY` requires that any external service you want pods to access must be registered with Istio (via `ServiceEntry` and/or `WorkloadEntry`). Otherwise the sidecar will reject the outbound traffic.
 
 ## Register the external workload with WorkloadEntry
 
@@ -249,11 +245,9 @@ spec:
 
 That concludes the workload-entry demo and how to register external workloads when Istio outbound traffic policy is set to `REGISTRY_ONLY`.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/dc4214b4-5f6b-4481-86f4-4961223f2bf1" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/dc4214b4-5f6b-4481-86f4-4961223f2bf1)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/d93422f1-5d4f-4854-8032-44a3e6d01d56" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/f3f5ca4b-b8d6-4788-9553-9ed765709933/lesson/d93422f1-5d4f-4854-8032-44a3e6d01d56)
 
 
 # Fault Injection
@@ -392,9 +386,7 @@ spec:
 
 You can combine `match` conditions (source labels, headers, URIs, etc.) to scope faults to specific callers, namespaces, or environments.
 
-<Callout icon="lightbulb">
-  Use fault injection carefully in production. Start with low percentages and short delays, validate application behavior, and monitor closely. Run aggressive scenarios in staging or dedicated chaos environments before widening scope in production.
-</Callout>
+> **lightbulb** Use fault injection carefully in production. Start with low percentages and short delays, validate application behavior, and monitor closely. Run aggressive scenarios in staging or dedicated chaos environments before widening scope in production.
 
 Compact reference showing both Abort and Delay configurations:
 

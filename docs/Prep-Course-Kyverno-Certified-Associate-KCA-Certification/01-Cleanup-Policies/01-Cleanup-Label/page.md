@@ -70,9 +70,7 @@ The modern ICA typically contains \~16 hands‑on questions, each with its own h
 
 Good luck on the ICA — stay calm, follow the checklist, and iterate from minimal working resources to finalized configurations.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/3b1a1d7c-b04a-4a3d-bf30-65da7d5460c3/lesson/e8f37b20-639b-44b8-93a8-0b637f88846d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/3b1a1d7c-b04a-4a3d-bf30-65da7d5460c3/lesson/e8f37b20-639b-44b8-93a8-0b637f88846d)
 
 
 # Cleanup Label
@@ -109,9 +107,7 @@ Kyverno supports two TTL value formats:
   <img alt="The image explains two supported TTL value formats in Kyverno: &#x22;Relative Duration,&#x22; which specifies a time duration from when the label is seen, and &#x22;Absolute Timestamp (ISO 8601),&#x22; which specifies a specific UTC date and time for resource deletion." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Choose a relative duration when you want the countdown to start at creation time. Use an ISO 8601 timestamp when you require deletion at a precise UTC moment.
-</Callout>
+> **lightbulb** Choose a relative duration when you want the countdown to start at creation time. Use an ISO 8601 timestamp when you require deletion at a precise UTC moment.
 
 Practical example
 
@@ -147,9 +143,7 @@ The TTL label is a trigger; the Cleanup Controller performs the actual deletion.
   <img alt="The image is a reminder about permissions for labeling in a system. It explains that when using a TTL label, the controller requires permission to delete Pods or Deployments." />
 </Frame>
 
-<Callout icon="warning">
-  Ensure the Kyverno Cleanup Controller's ClusterRole (or aggregated role) includes the `delete` verb for every resource type you want TTL-based cleanup to manage. Missing delete permission prevents Kyverno from removing labeled resources.
-</Callout>
+> **warning** Ensure the Kyverno Cleanup Controller's ClusterRole (or aggregated role) includes the `delete` verb for every resource type you want TTL-based cleanup to manage. Missing delete permission prevents Kyverno from removing labeled resources.
 
 The permission model is unified: the same aggregated ClusterRole that grants delete permissions for cleanup policies also covers TTL-based deletions. Grant the appropriate permissions once and both mechanisms will work.
 
@@ -205,6 +199,4 @@ Further reading and references
 * ISO 8601 / RFC 3339 timestamps: [https://www.ietf.org/rfc/rfc3339.txt](https://www.ietf.org/rfc/rfc3339.txt)
 * Kubernetes RBAC documentation: [https://kubernetes.io/docs/reference/access-authn-authz/rbac/](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/38c696a0-131e-44d4-9265-2e8b3c6abe20/lesson/06aa49c9-fc2f-4f26-9e16-d0c557f8fb9a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/38c696a0-131e-44d4-9265-2e8b3c6abe20/lesson/06aa49c9-fc2f-4f26-9e16-d0c557f8fb9a)

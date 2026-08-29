@@ -40,30 +40,22 @@ Vault’s UI offers point-and-click management for KV v2 secrets:
 **Browse secrets and create a new entry**\
 Click **Secrets > kvv2** and select **Create secret**.
 
-<Frame>
-  ![The image shows a web interface for managing secrets in HashiCorp Vault, with options for "azuredevops" and "jenkins" under the "training" section. The interface includes a search bar and a "Create secret" button."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878427/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-KeyValue-Secrets-Engine-Version-2/hashicorp-vault-secrets-management-interface.jpg)
-</Frame>
+![The image shows a web interface for managing secrets in HashiCorp Vault, with options for "azuredevops" and "jenkins" under the "training" section. The interface includes a search bar and a "Create secret" button."](https://kodekloud.com/kk-media/image/upload/v1752878427/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-KeyValue-Secrets-Engine-Version-2/hashicorp-vault-secrets-management-interface.jpg)
 
 **Enter secret data**\
 Provide `artifact = "jenkins"` or other key-value pairs, then save.
 
-<Frame>
-  ![The image shows a web interface for creating a secret in HashiCorp Vault, with fields for specifying the secret path and data. There are options to save or cancel the entry."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878427/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-KeyValue-Secrets-Engine-Version-2/hashicorp-vault-secret-creation-interface.jpg)
-</Frame>
+![The image shows a web interface for creating a secret in HashiCorp Vault, with fields for specifying the secret path and data. There are options to save or cancel the entry."](https://kodekloud.com/kk-media/image/upload/v1752878427/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-KeyValue-Secrets-Engine-Version-2/hashicorp-vault-secret-creation-interface.jpg)
 
 **View stored JSON**\
 Select the secret to see its JSON key-value data.
 
-<Frame>
-  ![The image shows a web interface for HashiCorp Vault, displaying a secret stored under the path "apps/artifactory" with a JSON key-value pair. The secret's value is obscured for security."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878428/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-KeyValue-Secrets-Engine-Version-2/hashicorp-vault-web-interface-secret-json.jpg)
-</Frame>
+![The image shows a web interface for HashiCorp Vault, displaying a secret stored under the path "apps/artifactory" with a JSON key-value pair. The secret's value is obscured for security."](https://kodekloud.com/kk-media/image/upload/v1752878428/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-KeyValue-Secrets-Engine-Version-2/hashicorp-vault-web-interface-secret-json.jpg)
 
 **Create an ACL policy**\
 Under **Policies**, click **Create policy**, enter a name and HCL, then save.
 
-<Frame>
-  ![The image shows a user interface for creating an ACL policy, with fields for entering a name and policy details, and options to create or cancel the policy."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878429/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-KeyValue-Secrets-Engine-Version-2/acl-policy-creation-user-interface.jpg)
-</Frame>
+![The image shows a user interface for creating an ACL policy, with fields for entering a name and policy details, and options to create or cancel the policy."](https://kodekloud.com/kk-media/image/upload/v1752878429/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-KeyValue-Secrets-Engine-Version-2/acl-policy-creation-user-interface.jpg)
 
 ***
 
@@ -106,9 +98,7 @@ For KV v1 mounts, omit the `/data/` prefix.
 
 That wraps up our deep dive into the KV v2 engine. Enjoy secure, versioned secret management with HashiCorp Vault!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/778922e5-1ae1-4bbf-accb-b2bb7d08bee5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/778922e5-1ae1-4bbf-accb-b2bb7d08bee5)
 
 
 # Enable and Configure Secrets Engines
@@ -129,17 +119,13 @@ Secrets Engines are the heart of HashiCorp Vault, providing dynamic secrets, enc
 
 Vault Secrets Engines enable integration with external platforms and back-end systems by generating dynamic secrets, certificates, encryption, and identity data. While Vault supports a wide range of cloud providers and services, this tutorial focuses on the core generic engines tested in the HashiCorp Certified Vault Operations Professional exam.
 
-<Frame>
-  ![The image lists various "Available Secrets Engines" related to Vault, including services like AWS, Google Cloud, and MongoDB Atlas. It also features a Vault certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878445/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Secrets-Engines/available-secrets-engines-vault-services.jpg)
-</Frame>
+![The image lists various "Available Secrets Engines" related to Vault, including services like AWS, Google Cloud, and MongoDB Atlas. It also features a Vault certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878445/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Secrets-Engines/available-secrets-engines-vault-services.jpg)
 
 ## Generic Secrets Engines
 
 Vault’s generic Secrets Engines do not require deep expertise in external platforms. These are commonly used across environments and covered in Vault certification:
 
-<Frame>
-  ![The image is a slide about "Generic Secrets Engines," detailing features like database support, Key/Value versions, PKI certificates, and data encryption with Transit. It includes a Vault certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878446/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Secrets-Engines/generic-secrets-engines-features-slide.jpg)
-</Frame>
+![The image is a slide about "Generic Secrets Engines," detailing features like database support, Key/Value versions, PKI certificates, and data encryption with Transit. It includes a Vault certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878446/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Secrets-Engines/generic-secrets-engines-features-slide.jpg)
 
 | Engine     | Function                          | Key Features                                    |
 | ---------- | --------------------------------- | ----------------------------------------------- |
@@ -154,13 +140,9 @@ Vault’s generic Secrets Engines do not require deep expertise in external plat
 
 Engines can be enabled at a custom mount path using the Vault CLI, API, or UI. The UI offers a simple way to enable common engines, but some advanced configurations require CLI or API.
 
-<Frame>
-  ![The image is a slide about enabling secrets engines, detailing default settings, enabling methods, and path configurations. It includes a Vault certification badge and a cartoon character illustration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878447/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Secrets-Engines/enabling-secrets-engines-vault-slide.jpg)
-</Frame>
+![The image is a slide about enabling secrets engines, detailing default settings, enabling methods, and path configurations. It includes a Vault certification badge and a cartoon character illustration.](https://kodekloud.com/kk-media/image/upload/v1752878447/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Secrets-Engines/enabling-secrets-engines-vault-slide.jpg)
 
-<Callout icon="lightbulb">
-  Use meaningful mount paths (e.g., `prod-db/` or `teams/cloud-kv/`) to simplify management and auditing.
-</Callout>
+> **lightbulb** Use meaningful mount paths (e.g., `prod-db/` or `teams/cloud-kv/`) to simplify management and auditing.
 
 ### Enable with Vault CLI
 

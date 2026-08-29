@@ -22,9 +22,9 @@ Before starting, follow these essential steps to install and configure the Cloud
 4. Attach the appropriate permissions to the compute resource (e.g., EC2 instance, ECS task, or EKS service account). In EKS, you might also use a pod identity service so that individual pods have the necessary permissions.
 5. Start the agent on your operating system.
 
-![The image is a diagram illustrating the integration of CloudWatch Agent with AWS services like EC2 and EKS, as well as on-premise servers, to send metrics and logs to Amazon CloudWatch, which then triggers alarms and provides insights through SNS and a management console.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859972/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-CloudWatch-Agent-to-Collect-Metrics-and-Logs/cloudwatch-agent-aws-integration-diagram.jpg)
+![The image is a diagram illustrating the integration of CloudWatch Agent with AWS services like EC2 and EKS, as well as on-premise servers, to send metrics and logs to Amazon CloudWatch, which then triggers alarms and provides insights through SNS and a management console.](https://kodekloud.com/kk-media/image/upload/v1752859972/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-CloudWatch-Agent-to-Collect-Metrics-and-Logs/cloudwatch-agent-aws-integration-diagram.jpg)
 
-![The image outlines five steps for installing and configuring a CloudWatch Agent, including setting up IAM roles, installing the agent, modifying the config file, configuring IAM on servers, and starting the service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859974/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-CloudWatch-Agent-to-Collect-Metrics-and-Logs/cloudwatch-agent-installation-steps.jpg)
+![The image outlines five steps for installing and configuring a CloudWatch Agent, including setting up IAM roles, installing the agent, modifying the config file, configuring IAM on servers, and starting the service.](https://kodekloud.com/kk-media/image/upload/v1752859974/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-CloudWatch-Agent-to-Collect-Metrics-and-Logs/cloudwatch-agent-installation-steps.jpg)
 
 During installation, note that a similar workflow applies when using the Systems Manager agent. Although a unified agent exists that performs multiple roles, this discussion specifically focuses on the CloudWatch Agent.
 
@@ -38,7 +38,7 @@ Running the CloudWatch Agent on your operating system allows you to capture in-d
 
 Once the metrics are collected, they are transmitted to CloudWatch, where you can configure alarms and notifications.
 
-![The image illustrates the process of collecting system metrics using the CloudWatch Agent from AWS and on-premise servers, which are then sent to Amazon CloudWatch for insights, alarms, and notifications via SNS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859975/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-CloudWatch-Agent-to-Collect-Metrics-and-Logs/cloudwatch-agent-system-metrics-collection.jpg)
+![The image illustrates the process of collecting system metrics using the CloudWatch Agent from AWS and on-premise servers, which are then sent to Amazon CloudWatch for insights, alarms, and notifications via SNS.](https://kodekloud.com/kk-media/image/upload/v1752859975/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-CloudWatch-Agent-to-Collect-Metrics-and-Logs/cloudwatch-agent-system-metrics-collection.jpg)
 
 ## Logs Collection
 
@@ -49,7 +49,7 @@ In addition to metrics, the CloudWatch Agent gathers logs based on the configura
 
 These logs are streamed directly to CloudWatch Logs, where you can apply metric filters and conduct further analysis. The process is consistent whether your server is hosted on AWS or in an on-premises environment.
 
-![The image illustrates the process of collecting logs using the CloudWatch Agent from an AWS EC2 instance and an on-premise server, streaming them to Amazon CloudWatch, and generating metrics insights.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859976/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-CloudWatch-Agent-to-Collect-Metrics-and-Logs/cloudwatch-logs-collection-diagram.jpg)
+![The image illustrates the process of collecting logs using the CloudWatch Agent from an AWS EC2 instance and an on-premise server, streaming them to Amazon CloudWatch, and generating metrics insights.](https://kodekloud.com/kk-media/image/upload/v1752859976/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-CloudWatch-Agent-to-Collect-Metrics-and-Logs/cloudwatch-logs-collection-diagram.jpg)
 
 ## Best Practices
 
@@ -61,7 +61,7 @@ When using the CloudWatch Agent, consider the following best practices:
 * **Configure log rotation and retention policies:** Manage data volume and control costs by setting retention policies. Remember, CloudWatch Logs store data indefinitely unless you specify otherwise; consider archiving logs to S3 for long-term cost-effective storage.
 * **Maintain the agent with regular updates:** Use patch management or configuration management tools to ensure the CloudWatch Agent remains up-to-date and fully operational.
 
-![The image outlines best practices for using CloudWatch Agent, including collecting necessary metrics, using proper IAM roles, enabling high-resolution metrics, setting log policies, and monitoring agent health.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859977/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-CloudWatch-Agent-to-Collect-Metrics-and-Logs/cloudwatch-agent-best-practices.jpg)
+![The image outlines best practices for using CloudWatch Agent, including collecting necessary metrics, using proper IAM roles, enabling high-resolution metrics, setting log policies, and monitoring agent health.](https://kodekloud.com/kk-media/image/upload/v1752859977/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Using-CloudWatch-Agent-to-Collect-Metrics-and-Logs/cloudwatch-agent-best-practices.jpg)
 
 > **triangle-alert** Always ensure that your IAM roles and policies follow the principle of least privilege to minimize security risks.
 

@@ -9,13 +9,9 @@ Some common image transformations include:
 * **ToTensor:** Change images into tensors, the primary data structures used in PyTorch for numerical computations.
 * **RandomHorizontalFlip:** Horizontally flip the image with a given probability to simulate different viewing angles.
 
-<Callout icon="lightbulb">
-  The diagram below summarizes these common image transformations. The details provided above are typically sufficient for implementation.
-</Callout>
+> **lightbulb** The diagram below summarizes these common image transformations. The details provided above are typically sufficient for implementation.
 
-<Frame>
-  ![The image lists four common image transforms: Resize, Normalize, ToTensor, and RandomHorizontalFlip, each with a brief description of their function.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883309/notes-assets/images/PyTorch-Introduction-to-Transformations/image-transforms-resize-normalize-totensor-randomhorizontalflip.jpg)
-</Frame>
+![The image lists four common image transforms: Resize, Normalize, ToTensor, and RandomHorizontalFlip, each with a brief description of their function.](https://kodekloud.com/kk-media/image/upload/v1752883309/notes-assets/images/PyTorch-Introduction-to-Transformations/image-transforms-resize-normalize-totensor-randomhorizontalflip.jpg)
 
 Let's examine these transformations in action.
 
@@ -53,9 +49,7 @@ Random horizontal flipping enriches the dataset by simulating different angles, 
 
 PyTorch allows you to combine multiple transformations into a single pipeline using the `transforms.Compose` class. This approach streamlines preprocessing by chaining operations such as resizing, flipping, converting to a tensor, and normalizing pixel values. The diagram below visually outlines this process:
 
-<Frame>
-  ![The image illustrates a pipeline for image processing using transforms.Compose(), showing steps from an original image through resizing, flipping, and converting to a tensor, resulting in a final image.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883310/notes-assets/images/PyTorch-Introduction-to-Transformations/image-processing-pipeline-transforms.jpg)
-</Frame>
+![The image illustrates a pipeline for image processing using transforms.Compose(), showing steps from an original image through resizing, flipping, and converting to a tensor, resulting in a final image.](https://kodekloud.com/kk-media/image/upload/v1752883310/notes-assets/images/PyTorch-Introduction-to-Transformations/image-processing-pipeline-transforms.jpg)
 
 Below is an example of how to create such a transformation pipeline:
 
@@ -71,13 +65,9 @@ transform_pipeline = transforms.Compose([
 
 This pipeline resizes the image to 128x128 pixels, applies a random horizontal flip, converts the image into a tensor, and then normalizes the pixel values.
 
-<Callout icon="lightbulb">
-  An additional diagram (if available) further clarifies the sequential data processing within this pipeline. The code and explanation above provide a comprehensive overview.
-</Callout>
+> **lightbulb** An additional diagram (if available) further clarifies the sequential data processing within this pipeline. The code and explanation above provide a comprehensive overview.
 
-<Frame>
-  ![The image illustrates a data processing pipeline example for an image, showing steps like resizing, random horizontal flipping, converting to a tensor, and normalizing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883311/notes-assets/images/PyTorch-Introduction-to-Transformations/data-processing-pipeline-image-example.jpg)
-</Frame>
+![The image illustrates a data processing pipeline example for an image, showing steps like resizing, random horizontal flipping, converting to a tensor, and normalizing.](https://kodekloud.com/kk-media/image/upload/v1752883311/notes-assets/images/PyTorch-Introduction-to-Transformations/data-processing-pipeline-image-example.jpg)
 
 To apply the pipeline to an image, load the image using Python Pillow and then pass it through the transformation pipeline:
 
@@ -106,9 +96,7 @@ Each image accessed from this dataset undergoes consistent preprocessing, stream
 
 Everything discussed so far is based on version 1 of the transformations API. PyTorch now recommends using the V2 API due to its enhanced features and improved performance. The V2 API is backward compatible with V1 and offers additional functionality and efficiency. Although a diagram may compare the two versions visually, the key takeaway is that V2 provides faster performance and more features while maintaining compatibility.
 
-<Frame>
-  ![The image compares v1 and v2 of torchvision.transforms, recommending v2 for its faster performance and additional features. It highlights v2's ability to handle more tasks and its backward compatibility with v1.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883313/notes-assets/images/PyTorch-Introduction-to-Transformations/torchvision-transforms-v1-v2-comparison.jpg)
-</Frame>
+![The image compares v1 and v2 of torchvision.transforms, recommending v2 for its faster performance and additional features. It highlights v2's ability to handle more tasks and its backward compatibility with v1.](https://kodekloud.com/kk-media/image/upload/v1752883313/notes-assets/images/PyTorch-Introduction-to-Transformations/torchvision-transforms-v1-v2-comparison.jpg)
 
 To use the V2 API, simply import the new module as shown below:
 
@@ -123,19 +111,13 @@ We will explore the V2 API in greater detail in the demonstration section.
 
 Transformations are essential for preparing image data and augmenting it to improve model robustness. Techniques such as flipping and rotating images help prevent overfitting by offering diverse perspectives on the input data. Additionally, combining multiple transformations using `transforms.Compose` creates an efficient and organized preprocessing pipeline.
 
-<Callout icon="lightbulb">
-  While a summary diagram could provide a visual recap, the detailed discussion above comprehensively covers the importance and application of data transformations in deep learning workflows.
-</Callout>
+> **lightbulb** While a summary diagram could provide a visual recap, the detailed discussion above comprehensively covers the importance and application of data transformations in deep learning workflows.
 
-<Frame>
-  ![The image is a summary slide highlighting the importance of transforms in preparing data for deep learning, using augmentations to prevent overfitting, and employing "transforms.Compose()" for creating transform pipelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883313/notes-assets/images/PyTorch-Introduction-to-Transformations/data-transforms-importance-summary.jpg)
-</Frame>
+![The image is a summary slide highlighting the importance of transforms in preparing data for deep learning, using augmentations to prevent overfitting, and employing "transforms.Compose()" for creating transform pipelines.](https://kodekloud.com/kk-media/image/upload/v1752883313/notes-assets/images/PyTorch-Introduction-to-Transformations/data-transforms-importance-summary.jpg)
 
 Integrating these transformations into the data loading process ensures that preprocessing is both seamless and efficient. With this understanding of image transformations in PyTorch, you are now ready to see these techniques in action in the upcoming demonstration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/5fd8231b-b241-4785-a397-ca229e3695c5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/5fd8231b-b241-4785-a397-ca229e3695c5)
 
 
 # Connect To Database Python

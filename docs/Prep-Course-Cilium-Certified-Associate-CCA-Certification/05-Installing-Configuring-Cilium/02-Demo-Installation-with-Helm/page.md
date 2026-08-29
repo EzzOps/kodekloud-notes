@@ -56,9 +56,7 @@ Image versions:
 
 This output confirms the Cilium DaemonSet and operator are running and ready across the nodes.
 
-<Callout icon="lightbulb">
-  If you want Cilium to replace kube-proxy functionality with the eBPF-based proxy, enable the appropriate Helm values (or use the CLI options) to enable kube-proxy replacement. That is a configuration choice — by default the installer runs alongside kube-proxy when it detects kube-proxy is installed.
-</Callout>
+> **lightbulb** If you want Cilium to replace kube-proxy functionality with the eBPF-based proxy, enable the appropriate Helm values (or use the CLI options) to enable kube-proxy replacement. That is a configuration choice — by default the installer runs alongside kube-proxy when it detects kube-proxy is installed.
 
 ## 5 — Preview the manifests (dry run)
 
@@ -118,9 +116,7 @@ Table — Common cilium CLI commands
 
 You now have Cilium installed using the CLI. Adjust Helm values and CLI options based on your environment and production requirements.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/36065cfe-d592-40bf-8ece-f54bc4ca88fc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/36065cfe-d592-40bf-8ece-f54bc4ca88fc)
 
 
 # Demo Installation with Helm

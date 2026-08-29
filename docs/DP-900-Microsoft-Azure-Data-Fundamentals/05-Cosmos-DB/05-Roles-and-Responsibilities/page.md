@@ -20,9 +20,7 @@ Application users never interact with Cosmos DB directly. Instead, they connect 
 * Prevents unauthorized operations
 * Centralizes validation and auditing
 
-<Callout icon="lightbulb">
-  Follow the principle of least privilege: grant only the minimum permissions required for each user role.
-</Callout>
+> **lightbulb** Follow the principle of least privilege: grant only the minimum permissions required for each user role.
 
 ### Database Administrators (DBAs)
 
@@ -52,9 +50,7 @@ Data engineers estimate and monitor throughput requirements to balance performan
 * Generate RU allocation plans at the database or container level
 * Provide dashboards and alerts for RU consumption
 
-<Callout icon="triangle-alert">
-  Under-provisioning RUs can lead to rate-limiting errors (429 responses). Always include a buffer for traffic spikes.
-</Callout>
+> **triangle-alert** Under-provisioning RUs can lead to rate-limiting errors (429 responses). Always include a buffer for traffic spikes.
 
 ## Choosing the Right API
 
@@ -76,9 +72,7 @@ Cosmos DB supports multiple APIs. Use the table below to select the best one for
 * Wire-protocol compatibility simplifies migration from MongoDB or Cassandra
 * Throughput is managed through Request Units (RUs) at the database or container level
 
-<Frame>
-  ![The image is a summary slide listing three points: Apache Gremlin for graph databases, Azure Cassandra and MongoDB support easy migration, and control throughput by purchasing Request Units (RUs).](../../../../images/kodekloud.com/kk-media/image/upload/v1752872943/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Roles-and-Responsibilities/apache-gremlin-azure-cassandra-mongodb-summary.jpg)
-</Frame>
+![The image is a summary slide listing three points: Apache Gremlin for graph databases, Azure Cassandra and MongoDB support easy migration, and control throughput by purchasing Request Units (RUs).](https://kodekloud.com/kk-media/image/upload/v1752872943/notes-assets/images/DP-900-Microsoft-Azure-Data-Fundamentals-Roles-and-Responsibilities/apache-gremlin-azure-cassandra-mongodb-summary.jpg)
 
 ## Links and References
 
@@ -86,6 +80,4 @@ Cosmos DB supports multiple APIs. Use the table below to select the best one for
 * [Choose the right API in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/multiple-apis)
 * [Azure Cosmos DB Request Units and throughput](https://docs.microsoft.com/azure/cosmos-db/request-units)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/dp-900-microsoft-azure-data-fundamentals/module/06b26525-f54a-46ed-84c1-da4191607325/lesson/9d2a282b-d889-4e1d-b0da-7dae41cf66d7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/dp-900-microsoft-azure-data-fundamentals/module/06b26525-f54a-46ed-84c1-da4191607325/lesson/9d2a282b-d889-4e1d-b0da-7dae41cf66d7)

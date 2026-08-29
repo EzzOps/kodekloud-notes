@@ -92,9 +92,7 @@ otel-collector | 2025-09-29T23:04:46.098Z info otlpreceiver@v0.135.0/otlp.go:179
 otel-collector | 2025-09-29T23:04:46.098Z info service@v0.135.0/service.go:234 Everything is ready. Begin processing data. {"resource":{"service.instance.id":"...","service.name":"otelcol-contrib","service.version":"0.135.0"}}
 ```
 
-<Callout icon="warning">
-  Be mindful of which image you use: `otel/opentelemetry-collector` (core) includes fewer components than `otel/opentelemetry-collector-contrib`. Choose the image that contains the receivers/exporters you need. Binding ports to `127.0.0.1` restricts access to localhost; remove `127.0.0.1:` to expose to all interfaces.
-</Callout>
+> **warning** Be mindful of which image you use: `otel/opentelemetry-collector` (core) includes fewer components than `otel/opentelemetry-collector-contrib`. Choose the image that contains the receivers/exporters you need. Binding ports to `127.0.0.1` restricts access to localhost; remove `127.0.0.1:` to expose to all interfaces.
 
 ## Generating test telemetry with telemetrygen
 
@@ -215,11 +213,9 @@ service:
 
 This concludes the basic OpenTelemetry Collector configuration guide: receivers, processors, exporters, wiring, validation, and local testing using the debug exporter and telemetrygen.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/94d2710a-c270-4c49-9e4b-df67653f1b47/lesson/d8eb9774-43b0-441c-9361-96903e7e2135" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/94d2710a-c270-4c49-9e4b-df67653f1b47/lesson/d8eb9774-43b0-441c-9361-96903e7e2135)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/94d2710a-c270-4c49-9e4b-df67653f1b47/lesson/5787e363-fb66-4f68-a9b1-77367dc3d3a7" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/94d2710a-c270-4c49-9e4b-df67653f1b47/lesson/5787e363-fb66-4f68-a9b1-77367dc3d3a7)
 
 
 # OTel Collector Anatomy
@@ -259,9 +255,7 @@ Typical processor tasks:
 * Transformation / enrichment: add or rewrite attributes, map resource information.
 * Sampling: keep a representative subset of spans to control costs.
 
-<Callout icon="warning">
-  Processor order matters. Place `sampling` before `batch` when you need to avoid batching sampled-out items, and apply `resource`/`attributes` processors early if later processors rely on those attributes.
-</Callout>
+> **warning** Processor order matters. Place `sampling` before `batch` when you need to avoid batching sampled-out items, and apply `resource`/`attributes` processors early if later processors rely on those attributes.
 
 ## Exporters
 
@@ -296,9 +290,7 @@ service:
       exporters: [prometheus_remote_write, logging]
 ```
 
-<Callout icon="lightbulb">
-  Each pipeline is signal-specific (traces, metrics, logs). Receivers translate protocols, processors modify or enrich data, and exporters deliver processed telemetry to your chosen backends.
-</Callout>
+> **lightbulb** Each pipeline is signal-specific (traces, metrics, logs). Receivers translate protocols, processors modify or enrich data, and exporters deliver processed telemetry to your chosen backends.
 
 ## Connectors
 
@@ -351,10 +343,6 @@ This architecture allows you to compose multiple independent pipelines and compo
 * Collector GitHub repo: [https://github.com/open-telemetry/opentelemetry-collector](https://github.com/open-telemetry/opentelemetry-collector)
 * OpenTelemetry Specification: [https://github.com/open-telemetry/opentelemetry-specification](https://github.com/open-telemetry/opentelemetry-specification)
 
-<Callout icon="lightbulb">
-  Start small: configure a single pipeline, validate end-to-end telemetry flow, then iterate with processors and exporters as your needs grow.
-</Callout>
+> **lightbulb** Start small: configure a single pipeline, validate end-to-end telemetry flow, then iterate with processors and exporters as your needs grow.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/94d2710a-c270-4c49-9e4b-df67653f1b47/lesson/bb91b22f-c7d4-4279-9c6b-ef4a21d5f815" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/94d2710a-c270-4c49-9e4b-df67653f1b47/lesson/bb91b22f-c7d4-4279-9c6b-ef4a21d5f815)

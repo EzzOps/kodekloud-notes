@@ -6,9 +6,7 @@ Streamline your local AI model workflow with the Ollama CLI, mirroring Docker sy
 
 Streamline your local AI model workflow with the Ollama CLI. If you have experience with [Docker](https://www.docker.com), many of these commands will feel instantly familiar.
 
-<Callout icon="lightbulb">
-  Most Ollama commands mirror Docker syntax for running, listing, and managing images—making it easy to get started if you’ve used Docker before.
-</Callout>
+> **lightbulb** Most Ollama commands mirror Docker syntax for running, listing, and managing images—making it easy to get started if you’ve used Docker before.
 
 ## Quick Reference
 
@@ -136,14 +134,10 @@ phi3:latest      4f2229297938    6.6 GB  100% GPU     4 minutes from now
 llama3.2:latest  a80c4f17acd5    4.0 GB  100% GPU     4 minutes from now
 ```
 
-<Callout icon="triangle-alert">
-  Keep an eye on running models. Stopping unused ones prevents unnecessary GPU/CPU usage and conserves system memory.
-</Callout>
+> **triangle-alert** Keep an eye on running models. Stopping unused ones prevents unnecessary GPU/CPU usage and conserves system memory.
 
 ***
 
 These core commands will help you manage Ollama models effectively. Happy modeling!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/836a96fe-9951-42b6-83ba-a602299c87c9/lesson/704e8a4e-a4cd-4bd2-aa95-178a7c305671" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/836a96fe-9951-42b6-83ba-a602299c87c9/lesson/704e8a4e-a4cd-4bd2-aa95-178a7c305671)

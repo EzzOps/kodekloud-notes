@@ -65,9 +65,7 @@ Parameters map directly to the Backstage form:
 * `name` is a required string used as the project name.
 * `repoUrl` uses the `RepoUrlPicker` UI component and restricts allowed hosts to `github.com`.
 
-<Callout icon="lightbulb">
-  When authoring or editing template YAML and template files in MDX content, always place expressions such as `${{ parameters.name }}` or `{{ values.name }}` inside fenced code blocks or inline code backticks so MDX does not attempt to evaluate them.
-</Callout>
+> **lightbulb** When authoring or editing template YAML and template files in MDX content, always place expressions such as `${{ parameters.name }}` or `{{ values.name }}` inside fenced code blocks or inline code backticks so MDX does not attempt to evaluate them.
 
 ## How the template executes — steps
 
@@ -204,9 +202,7 @@ You can author your own templates: create content in a `content` folder, write y
 * Scaffolder actions reference: [https://backstage.io/docs/features/software-templates/available-actions](https://backstage.io/docs/features/software-templates/available-actions)
 * GitHub repository: [https://github.com/](https://github.com/) (for `publish:github`)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/1c7142e3-0cb6-40ae-b5b6-77252f8c85b2/lesson/a5782c98-c489-465b-9386-c4b71ed6543a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/1c7142e3-0cb6-40ae-b5b6-77252f8c85b2/lesson/a5782c98-c489-465b-9386-c4b71ed6543a)
 
 
 # Demo Templates with Infrastructure
@@ -542,9 +538,7 @@ spec:
 
 ## Note about Terraform execution
 
-<Callout icon="lightbulb">
-  This example uses Terraform Cloud to detect new infra repositories and run `terraform apply`. If you do not use Terraform Cloud (or a similar runner), you must add an extra step that runs Terraform (for example, a CI workflow or a scaffolder action that executes `terraform init` and `terraform apply`) after publishing the infra repository.
-</Callout>
+> **lightbulb** This example uses Terraform Cloud to detect new infra repositories and run `terraform apply`. If you do not use Terraform Cloud (or a similar runner), you must add an extra step that runs Terraform (for example, a CI workflow or a scaffolder action that executes `terraform init` and `terraform apply`) after publishing the infra repository.
 
 ## Running the template
 
@@ -598,8 +592,6 @@ Useful links and references:
 * [Node.js](https://nodejs.org/)
 * [Express](https://expressjs.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/1c7142e3-0cb6-40ae-b5b6-77252f8c85b2/lesson/5cb603dc-208b-45f1-911b-2a7c443208f1" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/1c7142e3-0cb6-40ae-b5b6-77252f8c85b2/lesson/5cb603dc-208b-45f1-911b-2a7c443208f1)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/1c7142e3-0cb6-40ae-b5b6-77252f8c85b2/lesson/ef1d61cc-154f-43f3-ada0-3f6c1df79970" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/1c7142e3-0cb6-40ae-b5b6-77252f8c85b2/lesson/ef1d61cc-154f-43f3-ada0-3f6c1df79970)

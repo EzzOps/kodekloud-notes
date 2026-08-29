@@ -8,9 +8,7 @@ In this lesson, we explore regular expressions—commonly known as regex—and d
 
 Just like in mathematics where you can define conditions for an integer (for example, when x is greater than 3 and less than 8 so that x is 4, 5, 6, or 7), regex lets you specify and combine conditions to form patterns that match only the text meeting those criteria.
 
-<Frame>
-  ![The image contains text related to regular expressions, including an IP address, a decimal number, and conditions for an integer ( x ) that is greater than 3 and less than 8.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881231/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Analyze-Text-Using-Basic-Regular-Expressions/regular-expressions-ip-decimal-conditions.jpg)
-</Frame>
+![The image contains text related to regular expressions, including an IP address, a decimal number, and conditions for an integer ( x ) that is greater than 3 and less than 8.](https://kodekloud.com/kk-media/image/upload/v1752881231/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Analyze-Text-Using-Basic-Regular-Expressions/regular-expressions-ip-decimal-conditions.jpg)
 
 We'll begin with simple examples and gradually progress to more complex expressions. Regular expressions are built using various operators such as the caret (^), dollar sign (\$), period (.), asterisk (\*), plus sign (+), braces (), question mark (?), vertical pipe (|), brackets (\[]), and parentheses (()). Each operator has a distinct function that helps tailor your search.
 
@@ -20,9 +18,7 @@ We'll begin with simple examples and gradually progress to more complex expressi
 
 In Linux configuration files, lines starting with a pound sign (#) are interpreted as comments. Although these lines are ignored by the system, they provide valuable context and documentation for humans. To search for these commented lines, you can build a regex that matches lines beginning with a pound sign by placing the caret operator (^) at the start of the pattern.
 
-<Callout icon="lightbulb">
-  Use the caret operator (^) to ensure that your search starts at the beginning of the line.
-</Callout>
+> **lightbulb** Use the caret operator (^) to ensure that your search starts at the beginning of the line.
 
 For example, to list all lines that start with a pound sign:
 
@@ -126,9 +122,7 @@ $ grep -r '0\+' /etc/
 
 Using Extended Regular Expressions with grep's `-E` option eliminates the need for escaping the plus sign.
 
-<Callout icon="lightbulb">
-  When working with grep, consider using the `-E` option for Extended Regular Expressions to simplify your patterns and avoid confusion with escaped characters.
-</Callout>
+> **lightbulb** When working with grep, consider using the `-E` option for Extended Regular Expressions to simplify your patterns and avoid confusion with escaped characters.
 
 ***
 
@@ -138,6 +132,4 @@ Understanding how to strategically place operators like ^ and \$ for anchoring s
 
 For more detailed documentation and examples, check out the [Kubernetes Documentation](https://kubernetes.io/docs/) and other related [technical resources](https://registry.terraform.io/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/406cec86-8bf0-4a25-ae53-6d1a3e7ca8bd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/406cec86-8bf0-4a25-ae53-6d1a3e7ca8bd)

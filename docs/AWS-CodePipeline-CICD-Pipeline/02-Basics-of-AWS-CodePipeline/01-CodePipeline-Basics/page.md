@@ -6,7 +6,7 @@ This article provides an overview of AWS CodePipeline, covering its features, be
 
 Welcome to our comprehensive guide on AWS CodePipeline. In this article, we’ll cover the key features and benefits of CodePipeline, explain continuous integration and continuous delivery concepts, and review the core components that power a CI/CD workflow.
 
-![The image is a diagram illustrating three concepts: features and benefits of CodePipeline, continuous integration and delivery, and basic components for a CI/CD pipeline, each represented with icons and labeled sections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862545/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodePipeline-Basics/codepipeline-ci-cd-features-diagram.jpg)
+![The image is a diagram illustrating three concepts: features and benefits of CodePipeline, continuous integration and delivery, and basic components for a CI/CD pipeline, each represented with icons and labeled sections.](https://kodekloud.com/kk-media/image/upload/v1752862545/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodePipeline-Basics/codepipeline-ci-cd-features-diagram.jpg)
 
 ## A Real-World Analogy: Cody’s Pipeline
 
@@ -20,7 +20,7 @@ The back-and-forth logistics created a backlog. One night, Cody dreamed of a mag
 
 > **lightbulb** Cody’s Pipeline is an analogy for how AWS CodePipeline automates your software delivery process.
 
-![The image shows a world map with icons representing pipelines in various locations, labeled as "Cody's Pipeline."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862546/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodePipeline-Basics/world-map-codys-pipeline-icons.jpg)
+![The image shows a world map with icons representing pipelines in various locations, labeled as "Cody's Pipeline."](https://kodekloud.com/kk-media/image/upload/v1752862546/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodePipeline-Basics/world-map-codys-pipeline-icons.jpg)
 
 ***
 
@@ -31,7 +31,7 @@ AWS CodePipeline is a fully managed CI/CD service that orchestrates your release
 * Continuous Integration (CI): Merge and build code changes automatically.
 * Continuous Delivery (CD): Test and deploy updates without manual steps.
 
-![The image shows an infinity loop symbol representing CI/CD (Continuous Integration/Continuous Deployment) with a gradient color scheme. Below, it equates CI/CD to Non-Stop Integration/Non-Stop Deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862547/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodePipeline-Basics/ci-cd-infinity-loop-gradient.jpg)
+![The image shows an infinity loop symbol representing CI/CD (Continuous Integration/Continuous Deployment) with a gradient color scheme. Below, it equates CI/CD to Non-Stop Integration/Non-Stop Deployment.](https://kodekloud.com/kk-media/image/upload/v1752862547/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodePipeline-Basics/ci-cd-infinity-loop-gradient.jpg)
 
 A typical CodePipeline workflow includes four primary stages:
 
@@ -51,7 +51,7 @@ When one stage succeeds, the pipeline advances automatically. You can add manual
 * **Visibility**: Monitor execution history, logs, and notifications per stage.
 * **Customization**: Integrate third-party tools, add manual approvals, or run custom scripts.
 
-![The image shows a DevOps lifecycle diagram with stages like Source, Build, Test, and Deploy, alongside an AWS logo with an upward arrow and a ribbon, suggesting AWS certification or achievement.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862548/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodePipeline-Basics/devops-lifecycle-diagram-aws-certification.jpg)
+![The image shows a DevOps lifecycle diagram with stages like Source, Build, Test, and Deploy, alongside an AWS logo with an upward arrow and a ribbon, suggesting AWS certification or achievement.](https://kodekloud.com/kk-media/image/upload/v1752862548/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-CodePipeline-Basics/devops-lifecycle-diagram-aws-certification.jpg)
 
 > **triangle-alert** Be mindful of resource usage and execution costs. Review [AWS Pricing](https://aws.amazon.com/codepipeline/pricing/) before enabling long-running pipelines.
 

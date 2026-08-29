@@ -84,9 +84,7 @@ When implemented correctly these transformations are semantics-preserving but ca
   <img alt="The image outlines three methods for optimizing a metrics pipeline: Temporal Reaggregation, Spatial Reaggregation, and Delta to Cumulative Conversion, all under semantics-preserving transformations." />
 </Frame>
 
-<Callout icon="warning">
-  Be careful with attribute cardinality. High-cardinality dimensions (e.g., user IDs, request IDs) can produce a massive number of series and dramatically increase storage and query costs. Use spatial re-aggregation, hashing, or attribute filtering to control cardinality.
-</Callout>
+> **warning** Be careful with attribute cardinality. High-cardinality dimensions (e.g., user IDs, request IDs) can produce a massive number of series and dramatically increase storage and query costs. Use spatial re-aggregation, hashing, or attribute filtering to control cardinality.
 
 Collector: where much of the pipeline intelligence lives
 
@@ -105,9 +103,7 @@ Recap and practical implications
 * Transformations (temporal/spatial re-aggregation, delta/cumulative conversion) can be applied in SDKs, the Collector, or backends; the Collector is usually the best centralized place for consistent processing.
 * Manage cardinality and preserve semantics to ensure metrics remain trustworthy, efficient, and actionable across simple and complex deployments.
 
-<Callout icon="lightbulb">
-  Design your pipeline so transformations preserve semantics and keep cardinality under control. That ensures reliable, cost-effective telemetry suitable for alerting, dashboards, and long-term analysis.
-</Callout>
+> **lightbulb** Design your pipeline so transformations preserve semantics and keep cardinality under control. That ensures reliable, cost-effective telemetry suitable for alerting, dashboards, and long-term analysis.
 
 <Frame>
   <img alt="The image is a slide titled &#x22;Conclusion,&#x22; highlighting four points: metrics flow model, effective telemetry systems, resource management efficiency, and adaptable data models." />
@@ -120,6 +116,4 @@ Further reading and references
 * OpenTelemetry concepts and SDKs: [https://opentelemetry.io/docs/concepts/](https://opentelemetry.io/docs/concepts/)
 * Prometheus (for integration considerations): [https://prometheus.io/](https://prometheus.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/177d145a-e376-4bf2-9a99-4006088a5c93" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/177d145a-e376-4bf2-9a99-4006088a5c93)

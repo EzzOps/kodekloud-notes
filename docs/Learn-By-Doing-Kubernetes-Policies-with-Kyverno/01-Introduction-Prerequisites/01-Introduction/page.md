@@ -29,13 +29,9 @@ To work in each lab:
 * If you get stuck, use the Hint and Solution tabs.
 * Use the Check button to validate task results and advance through exercises.
 
-<Callout icon="lightbulb">
-  When using the default `nginx` image in examples, use `/bin/sh` for an interactive shell because `bash` may not be available.
-</Callout>
+> **lightbulb** When using the default `nginx` image in examples, use `/bin/sh` for an interactive shell because `bash` may not be available.
 
-<Callout icon="warning">
-  The examples in this course sometimes run containers as `root` for demonstration. Never run root containers in production—use least privilege and a proper `securityContext`.
-</Callout>
+> **warning** The examples in this course sometimes run containers as `root` for demonstration. Never run root containers in production—use least privilege and a proper `securityContext`.
 
 Representative lab example — a pod running as root (for demonstration only). Save this as `root-pod.yaml` and apply it to inspect the container filesystem:
 
@@ -86,6 +82,4 @@ Links and references
 * Kubernetes documentation: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 * Getting started with Kyverno: [https://kyverno.io/docs/quickstart/](https://kyverno.io/docs/quickstart/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-by-doing-kubernetes-policies-with-kyverno/module/a3370f08-e378-4285-9305-52025206031a/lesson/d3a737d3-eaee-4528-a90e-b04aebbdc633" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-by-doing-kubernetes-policies-with-kyverno/module/a3370f08-e378-4285-9305-52025206031a/lesson/d3a737d3-eaee-4528-a90e-b04aebbdc633)

@@ -22,9 +22,7 @@ To set a password for Bob's account, use the `passwd` command:
 [~]$ passwd bob
 ```
 
-<Callout icon="triangle-alert">
-  Both `useradd` and `passwd` commands must be executed with root privileges.
-</Callout>
+> **triangle-alert** Both `useradd` and `passwd` commands must be executed with root privileges.
 
 After logging in, a user can confirm their current username by running the `whoami` command. Additionally, users can change their password at any time by simply running `passwd` without any additional arguments.
 
@@ -86,9 +84,7 @@ Managing groups is equally essential. Below are commands for adding and deleting
 
 ## Hands-On Practice
 
-<Callout icon="lightbulb">
-  We recommend practicing these Linux user account management commands on your local system to reinforce your skills in system administration.
-</Callout>
+> **lightbulb** We recommend practicing these Linux user account management commands on your local system to reinforce your skills in system administration.
 
 Happy learning!
 
@@ -97,8 +93,6 @@ Happy learning!
 * [Linux Documentation](https://www.kernel.org/doc/html/latest/)
 * [User Management Best Practices](https://www.linux.com/training-tutorials/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/9822d51e-160e-4b91-a5d7-76be53e20635" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/9822d51e-160e-4b91-a5d7-76be53e20635)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/d441ffb6-31e6-4194-abbc-3875324cecea" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/6c7e1a9b-9ecc-43c5-9dce-8031ab5d3fe2/lesson/d441ffb6-31e6-4194-abbc-3875324cecea)

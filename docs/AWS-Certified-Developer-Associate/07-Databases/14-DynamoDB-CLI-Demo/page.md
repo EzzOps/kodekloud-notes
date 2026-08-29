@@ -48,7 +48,7 @@ aws dynamodb delete-item \
 
 After executing the create table command, refresh the DynamoDB console. Confirm that the new `review` table is listed with a partition key defined as `product` (String) and a sort key as `user` (String).
 
-![The image shows an AWS DynamoDB console with two tables listed: "products" and "review," both with active status. The console displays details like partition keys, sort keys, and capacity modes for each table.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858718/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-CLI-Demo/aws-dynamodb-console-tables-details.jpg)
+![The image shows an AWS DynamoDB console with two tables listed: "products" and "review," both with active status. The console displays details like partition keys, sort keys, and capacity modes for each table.](https://kodekloud.com/kk-media/image/upload/v1752858718/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-CLI-Demo/aws-dynamodb-console-tables-details.jpg)
 
 ***
 
@@ -65,11 +65,11 @@ For this demo, we will work with an existing table called `products`. This table
 
 The following image shows a representation of the table in the DynamoDB console:
 
-![The image shows an AWS DynamoDB console with a table named "review" selected. It displays general information about the table, including partition and sort keys, capacity mode, and table status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858720/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-CLI-Demo/aws-dynamodb-console-review-table.jpg)
+![The image shows an AWS DynamoDB console with a table named "review" selected. It displays general information about the table, including partition and sort keys, capacity mode, and table status.](https://kodekloud.com/kk-media/image/upload/v1752858720/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-CLI-Demo/aws-dynamodb-console-review-table.jpg)
 
 And the items in the table appear similar to this:
 
-![The image shows an AWS DynamoDB console with a table displaying items, including details like ID, category, inventory, name, on-sale status, and price. The left sidebar contains navigation options such as Dashboard, Tables, and Explore items.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858721/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-CLI-Demo/aws-dynamodb-console-table-items.jpg)
+![The image shows an AWS DynamoDB console with a table displaying items, including details like ID, category, inventory, name, on-sale status, and price. The left sidebar contains navigation options such as Dashboard, Tables, and Explore items.](https://kodekloud.com/kk-media/image/upload/v1752858721/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-CLI-Demo/aws-dynamodb-console-table-items.jpg)
 
 ***
 
@@ -160,7 +160,7 @@ aws dynamodb scan --table-name products \
 
 After executing the command, only items where the `category` equals `electronics` will be displayed.
 
-![The image shows a code editor with a JSON output from a DynamoDB query, displaying items with attributes like category, inventory, id, price, and name. The terminal indicates the query was executed in the AWS CLI environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858722/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-CLI-Demo/dynamodb-query-json-output-editor.jpg)
+![The image shows a code editor with a JSON output from a DynamoDB query, displaying items with attributes like category, inventory, id, price, and name. The terminal indicates the query was executed in the AWS CLI environment.](https://kodekloud.com/kk-media/image/upload/v1752858722/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-CLI-Demo/dynamodb-query-json-output-editor.jpg)
 
 ***
 
@@ -199,7 +199,7 @@ Example output:
 }
 ```
 
-![The image shows the AWS DynamoDB console with a focus on querying items in the "products" table. It displays options for scanning or querying items, selecting a table or index, and entering a partition key value.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858723/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-CLI-Demo/aws-dynamodb-query-products-console.jpg)
+![The image shows the AWS DynamoDB console with a focus on querying items in the "products" table. It displays options for scanning or querying items, selecting a table or index, and entering a partition key value.](https://kodekloud.com/kk-media/image/upload/v1752858723/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-CLI-Demo/aws-dynamodb-query-products-console.jpg)
 
 ***
 
@@ -243,7 +243,7 @@ aws dynamodb delete-item \
 
 After executing this command, refresh the table to confirm that the item with an `id` of "9999" has been removed.
 
-![The image shows an AWS DynamoDB console with a table displaying items, including details like ID, category, inventory, name, on-sale status, and price. The table lists various products such as a sink, nail gun, bottled water, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858725/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-CLI-Demo/aws-dynamodb-console-table-items-2.jpg)
+![The image shows an AWS DynamoDB console with a table displaying items, including details like ID, category, inventory, name, on-sale status, and price. The table lists various products such as a sink, nail gun, bottled water, and more.](https://kodekloud.com/kk-media/image/upload/v1752858725/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-CLI-Demo/aws-dynamodb-console-table-items-2.jpg)
 
 ***
 

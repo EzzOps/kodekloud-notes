@@ -12,13 +12,11 @@ Welcome to your guide on leveraging word embeddings to provide **dynamic, releva
 
 By the end of this tutorial, you’ll be able to integrate custom datasets into your chatbot workflows, enhancing accuracy and relevance.
 
-<Callout icon="lightbulb">
-  Ensure you have:
+> **lightbulb** Ensure you have:
 
   * A basic familiarity with Python
   * An [OpenAI API key][OpenAI Embeddings]
   * The `openai` Python package installed
-</Callout>
 
 ***
 
@@ -59,6 +57,4 @@ Ready to dive in? Let’s explore how to generate and query embeddings in Python
 
 [GPT-3.5 Turbo]: https://platform.openai.com/docs/models/gpt-3-5-turbo
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/cf879fc5-dcc3-4470-830d-4393645105c9/lesson/f59293ae-0f63-4a6a-802b-9d102276eef6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/cf879fc5-dcc3-4470-830d-4393645105c9/lesson/f59293ae-0f63-4a6a-802b-9d102276eef6)

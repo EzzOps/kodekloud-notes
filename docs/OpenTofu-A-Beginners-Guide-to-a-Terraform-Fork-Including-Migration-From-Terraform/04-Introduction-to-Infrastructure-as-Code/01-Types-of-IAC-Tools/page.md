@@ -18,13 +18,9 @@ Before diving into OpenTofu, it’s helpful to understand the three main categor
 
 Configuration management tools automate the installation and configuration of software on servers, databases, and network devices. They ensure a consistent state across multiple hosts by defining **idempotent** code that only applies necessary changes.
 
-<Frame>
-  ![The image lists types of Infrastructure as Code (IAC) tools, highlighting features like software management, standard structure, version control, and idempotency, alongside logos for Ansible, Puppet, and SaltStack.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882820/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Types-of-IAC-Tools/iac-tools-features-ansible-puppet-saltstack.jpg)
-</Frame>
+![The image lists types of Infrastructure as Code (IAC) tools, highlighting features like software management, standard structure, version control, and idempotency, alongside logos for Ansible, Puppet, and SaltStack.](https://kodekloud.com/kk-media/image/upload/v1752882820/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Types-of-IAC-Tools/iac-tools-features-ansible-puppet-saltstack.jpg)
 
-<Callout icon="lightbulb">
-  Idempotency guarantees that running the same playbook multiple times will not alter resources that are already in the desired state.
-</Callout>
+> **lightbulb** Idempotency guarantees that running the same playbook multiple times will not alter resources that are already in the desired state.
 
 Example: An Ansible playbook checks for a package before installing:
 
@@ -44,9 +40,7 @@ Example: An Ansible playbook checks for a package before installing:
 
 Server templating tools create fully configured, **immutable images**—such as VM snapshots, AWS AMIs, or Docker containers—that bundle all necessary software and dependencies. By baking the environment beforehand, you eliminate runtime configuration drift.
 
-<Frame>
-  ![The image describes types of Infrastructure as Code (IAC) tools, focusing on server templating with examples like Packer, Vagrant, and Docker. It highlights pre-installed software, dependencies, and virtual machine or Docker images.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882822/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Types-of-IAC-Tools/iac-tools-server-templating-examples.jpg)
-</Frame>
+![The image describes types of Infrastructure as Code (IAC) tools, focusing on server templating with examples like Packer, Vagrant, and Docker. It highlights pre-installed software, dependencies, and virtual machine or Docker images.](https://kodekloud.com/kk-media/image/upload/v1752882822/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Types-of-IAC-Tools/iac-tools-server-templating-examples.jpg)
 
 Key benefits:
 
@@ -60,9 +54,7 @@ Key benefits:
 
 Provisioning tools—also called orchestration tools—allow you to **declare** the desired state of your entire infrastructure: servers, databases, networking, and more. The tool then computes and applies only the changes needed to reach that state.
 
-<Frame>
-  ![The image describes types of Infrastructure as Code (IAC) tools, focusing on provisioning tools like OpenTofu, CloudFormation, and Terraform, used for deploying immutable infrastructure resources such as servers, databases, and network components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882823/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Types-of-IAC-Tools/iac-tools-provisioning-open-tofu-terraform.jpg)
-</Frame>
+![The image describes types of Infrastructure as Code (IAC) tools, focusing on provisioning tools like OpenTofu, CloudFormation, and Terraform, used for deploying immutable infrastructure resources such as servers, databases, and network components.](https://kodekloud.com/kk-media/image/upload/v1752882823/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Types-of-IAC-Tools/iac-tools-provisioning-open-tofu-terraform.jpg)
 
 For example, CloudFormation offers a native AWS experience, whereas OpenTofu (a Terraform fork) supports a broad ecosystem of provider plugins for multi-cloud and hybrid deployments.
 
@@ -92,9 +84,7 @@ To remove instances, you need an explicit task:
         instance_ids: '{{ ec2.instance_ids }}'
 ```
 
-<Callout icon="triangle-alert">
-  Procedural scripts may inadvertently create duplicate resources if you omit repeat protection (`exact_count`) or forget teardown tasks.
-</Callout>
+> **triangle-alert** Procedural scripts may inadvertently create duplicate resources if you omit repeat protection (`exact_count`) or forget teardown tasks.
 
 Orchestration tools use a declarative model. In OpenTofu, you simply define:
 
@@ -135,6 +125,4 @@ There’s no single best IaC tool. Consider:
 * [Ansible Documentation](https://docs.ansible.com/)
 * [Packer by HashiCorp](https://www.packer.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/08619b50-aae4-4bf4-a1b5-f35b400a7a72/lesson/2d085244-211b-44eb-b114-f9eb77ad50e9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/08619b50-aae4-4bf4-a1b5-f35b400a7a72/lesson/2d085244-211b-44eb-b114-f9eb77ad50e9)

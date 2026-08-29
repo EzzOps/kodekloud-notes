@@ -8,9 +8,7 @@ Deploying critical software updates across hundreds of servers can be a daunting
 
 Verifying playbooks acts as a rehearsal, allowing you to catch and correct errors or unexpected behaviors in a controlled environment. Skipping this step could lead to system downtime, data loss, or other critical issues that are far more difficult to resolve.
 
-<Frame>
-  ![The image discusses the importance of verifying playbooks to avoid challenges and time-consuming issues in the production environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881070/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Verifying-Playbooks/frame_60.jpg)
-</Frame>
+![The image discusses the importance of verifying playbooks to avoid challenges and time-consuming issues in the production environment.](https://kodekloud.com/kk-media/image/upload/v1752881070/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Verifying-Playbooks/frame_60.jpg)
 
 By verifying your playbooks, you ensure they behave exactly as expected when applied to production systems. This process not only maintains stability and reliability but also saves valuable time and prevents potential headaches.
 
@@ -20,15 +18,11 @@ Let's explore the different modes available in Ansible for verifying your playbo
 
 Ansible’s check mode is a dry-run feature that simulates the execution of your playbook without making any changes to the hosts. It clearly shows what changes would be made if the playbook were executed in a live environment. To run a playbook in check mode, simply add the `--check` option.
 
-<Callout icon="lightbulb">
-  Not all modules support check mode. Tasks using unsupported modules will be skipped, so always verify module compatibility.
-</Callout>
+> **lightbulb** Not all modules support check mode. Tasks using unsupported modules will be skipped, so always verify module compatibility.
 
 For example, consider a simple playbook saved as `install_nginx.yml` that installs the Nginx web server. Running it in check mode would look like this:
 
-<Frame>
-  ![The image explains how to verify Ansible playbooks using "Check Mode," which previews changes without applying them, using the --check option for a "dry run."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881071/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Verifying-Playbooks/frame_130.jpg)
-</Frame>
+![The image explains how to verify Ansible playbooks using "Check Mode," which previews changes without applying them, using the --check option for a "dry run."](https://kodekloud.com/kk-media/image/upload/v1752881071/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Verifying-Playbooks/frame_130.jpg)
 
 ```bash theme={null}
 $ ansible-playbook install_nginx.yml --check
@@ -51,9 +45,7 @@ Diff mode provides a before-and-after comparison by showing the differences betw
 
 To enable diff mode, include the `--diff` option when running your playbook.
 
-<Frame>
-  ![The image explains how to verify Ansible playbooks using "Diff Mode" for before-and-after comparisons, understanding changes, and utilizing the --diff option.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881072/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Verifying-Playbooks/frame_200.jpg)
-</Frame>
+![The image explains how to verify Ansible playbooks using "Diff Mode" for before-and-after comparisons, understanding changes, and utilizing the --diff option.](https://kodekloud.com/kk-media/image/upload/v1752881072/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Verifying-Playbooks/frame_200.jpg)
 
 Consider a playbook saved as `configure_nginx.yml` that enforces a specific configuration line within a file. Running the playbook with both check and diff modes will provide detailed insights into any changes:
 
@@ -83,9 +75,7 @@ In the diff output, the line prefixed with a plus sign shows what would be added
 
 Before executing any playbook, it's essential to ensure that your YAML syntax is correct. Ansible offers a syntax check mode which quickly validates your playbook, catching potential syntax errors early. Use the `--syntax-check` option to perform this verification.
 
-<Frame>
-  ![The image provides tips for syntax checking, ensuring playbook syntax is error-free using the --syntax-check option.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881073/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Verifying-Playbooks/frame_260.jpg)
-</Frame>
+![The image provides tips for syntax checking, ensuring playbook syntax is error-free using the --syntax-check option.](https://kodekloud.com/kk-media/image/upload/v1752881073/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Verifying-Playbooks/frame_260.jpg)
 
 Consider the following playbook saved as `configure_nginx.yml`:
 
@@ -129,6 +119,4 @@ This error message clearly indicates where the syntax issue is, making it straig
 
 By leveraging check mode, diff mode, and syntax checks, you can confidently ensure that your Ansible playbooks will execute as intended, maintaining the stability and reliability of your production environment. Happy automating, and we'll see you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/f7bcdbad-4792-4e82-beaa-b799773214fd/lesson/a4d6974b-535e-4e19-b88e-a21a99433f3e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/f7bcdbad-4792-4e82-beaa-b799773214fd/lesson/a4d6974b-535e-4e19-b88e-a21a99433f3e)

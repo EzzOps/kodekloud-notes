@@ -68,9 +68,7 @@ Key points:
 * A single `ClusterPolicy` holds all rules (no templates, no Rego).
 * `spec.validationFailureAction: Enforce` causes non-compliant objects to be rejected. Use `Audit` while testing.
 
-<Callout icon="lightbulb">
-  Use `validationFailureAction: Audit` during rollout to collect violations without blocking resources. Review `PolicyReport` and `ClusterPolicyReport` entries before switching to `Enforce`.
-</Callout>
+> **lightbulb** Use `validationFailureAction: Audit` during rollout to collect violations without blocking resources. Review `PolicyReport` and `ClusterPolicyReport` entries before switching to `Enforce`.
 
 ### 2) Mutate example — add a default label
 
@@ -137,9 +135,7 @@ Behavior:
 * Resources without the label will have it added automatically by the mutate rule.
 * If the label is removed later, the validate rule will reject updates that do not match (subject to webhook ordering and timing).
 
-<Callout icon="warning">
-  Mutations run before validations. Be aware of webhook ordering and timing: a validate rule may rely on a prior mutate rule to add required fields. Test to ensure the intended behavior.
-</Callout>
+> **warning** Mutations run before validations. Be aware of webhook ordering and timing: a validate rule may rely on a prior mutate rule to add required fields. Test to ensure the intended behavior.
 
 ### 4) Generate example — create a default-deny NetworkPolicy per Namespace
 

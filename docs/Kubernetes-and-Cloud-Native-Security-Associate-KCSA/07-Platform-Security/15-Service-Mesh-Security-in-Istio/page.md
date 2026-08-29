@@ -12,9 +12,7 @@ Securing microservices involves three core requirements:
 
 When one microservice calls another over the network, unencrypted traffic can be intercepted or modified. Istio’s service mesh tackles these challenges by providing mutual TLS (mTLS), policy-driven access control, and comprehensive telemetry for auditing.
 
-<Frame>
-  ![The image is a diagram illustrating a microservices architecture with components like "Product Page," "Reviews," and "Ratings," connected through an Istio ingress gateway. It highlights security features such as encryption, mutual TLS, and audit logs, with some connections blocked.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880909/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Service-Mesh-Security-in-Istio/microservices-architecture-istio-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating a microservices architecture with components like "Product Page," "Reviews," and "Ratings," connected through an Istio ingress gateway. It highlights security features such as encryption, mutual TLS, and audit logs, with some connections blocked.](https://kodekloud.com/kk-media/image/upload/v1752880909/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Service-Mesh-Security-in-Istio/microservices-architecture-istio-diagram.jpg)
 
 In the sections below, we’ll explore:
 
@@ -55,9 +53,7 @@ Istio’s mTLS ensures that both client and server authenticate each other and e
          mode: ISTIO_MUTUAL
    ```
 
-<Callout icon="lightbulb">
-  Strict mTLS mode requires that all workloads have the Istio sidecar injected. Use `kubectl label namespace default istio-injection=enabled` if sidecars are missing.
-</Callout>
+> **lightbulb** Strict mTLS mode requires that all workloads have the Istio sidecar injected. Use `kubectl label namespace default istio-injection=enabled` if sidecars are missing.
 
 ***
 
@@ -93,9 +89,7 @@ This policy allows only the `productpage` service account to call `reviews`, blo
 | Block traffic from unknown sources | `AuthorizationPolicy` | no `from` entry     |
 | Port-based access control          | `AuthorizationPolicy` | `to.ports`          |
 
-<Callout icon="triangle-alert">
-  Misconfigured policies can inadvertently block legitimate traffic. Always test changes in a staging environment before promoting to production.
-</Callout>
+> **triangle-alert** Misconfigured policies can inadvertently block legitimate traffic. Always test changes in a staging environment before promoting to production.
 
 ***
 
@@ -154,6 +148,4 @@ With logs centralized, you gain visibility into who accessed which service and w
 * [Envoy Logging Configuration](https://istio.io/latest/docs/reference/config/istio.mesh.v1beta1/#MeshConfig)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/b68e2883-5181-412f-b818-fa775fa380a2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/b68e2883-5181-412f-b818-fa775fa380a2)

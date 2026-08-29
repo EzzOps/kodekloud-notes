@@ -11,7 +11,7 @@ In this tutorial, we’ll walk through attaching a resource-based policy to an e
 1. Open the AWS Management Console and go to **S3**.
 2. Click **Buckets** and use the filter to find **company1-sales**.
 
-![The image shows an AWS S3 Management Console with an account snapshot displaying total storage, object count, and average object size. It also lists a bucket named "company1-sales" in the US West (Oregon) region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863048/notes-assets/images/AWS-IAM-Demo-Resource-Based-Policy/aws-s3-management-console-snapshot.jpg)
+![The image shows an AWS S3 Management Console with an account snapshot displaying total storage, object count, and average object size. It also lists a bucket named "company1-sales" in the US West (Oregon) region.](https://kodekloud.com/kk-media/image/upload/v1752863048/notes-assets/images/AWS-IAM-Demo-Resource-Based-Policy/aws-s3-management-console-snapshot.jpg)
 
 3. Select **company1-sales** and switch to the **Permissions** tab.
 4. Scroll to **Bucket policy** and click **Edit**.
@@ -31,7 +31,7 @@ In the **Policy Generator** form:
 
 Click **Add Statement**, then **Generate Policy**.
 
-![The image shows a screenshot of the AWS Policy Generator interface, where a user is configuring an S3 Bucket Policy by selecting actions and specifying permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863049/notes-assets/images/AWS-IAM-Demo-Resource-Based-Policy/aws-policy-generator-s3-bucket-policy.jpg)
+![The image shows a screenshot of the AWS Policy Generator interface, where a user is configuring an S3 Bucket Policy by selecting actions and specifying permissions.](https://kodekloud.com/kk-media/image/upload/v1752863049/notes-assets/images/AWS-IAM-Demo-Resource-Based-Policy/aws-policy-generator-s3-bucket-policy.jpg)
 
 ## 3. Review and Customize the JSON
 

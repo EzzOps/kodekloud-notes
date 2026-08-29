@@ -22,7 +22,7 @@ Our objective is to let the `Log Analysts` group assume a role in the Production
 3. Update the **S3 Bucket Policy** to trust the role
 4. Assume the role from the **Development Account** and verify access
 
-![The image is a diagram showing a request to provide log access to a Log Analysts group, involving a production account with an S3 bucket and a dev account with a log access role.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862970/notes-assets/images/AWS-IAM-IAM-Cross-Account-Access/log-access-request-diagram-s3-dev.jpg)
+![The image is a diagram showing a request to provide log access to a Log Analysts group, involving a production account with an S3 bucket and a dev account with a log access role.](https://kodekloud.com/kk-media/image/upload/v1752862970/notes-assets/images/AWS-IAM-IAM-Cross-Account-Access/log-access-request-diagram-s3-dev.jpg)
 
 ## Cross-Account Access Components
 
@@ -33,7 +33,7 @@ Our objective is to let the `Log Analysts` group assume a role in the Production
 | Permissions Boundary | Inline policy (or managed) on the role controls S3 access                         |
 | Resource Policy      | S3 Bucket policy grants the role `s3:ListBucket` and `s3:GetObject`               |
 
-![The image explains IAM Cross Account Access Capability, highlighting the implementation of cross-account access, the need for a trust relationship, role assumption by users, and the security benefits of resource isolation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862971/notes-assets/images/AWS-IAM-IAM-Cross-Account-Access/iam-cross-account-access-diagram.jpg)
+![The image explains IAM Cross Account Access Capability, highlighting the implementation of cross-account access, the need for a trust relationship, role assumption by users, and the security benefits of resource isolation.](https://kodekloud.com/kk-media/image/upload/v1752862971/notes-assets/images/AWS-IAM-IAM-Cross-Account-Access/iam-cross-account-access-diagram.jpg)
 
 > **lightbulb** Be explicit in your trust policy to avoid granting unintended access. Restrict `Principal` to specific IAM roles or account IDs.
 

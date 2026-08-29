@@ -25,9 +25,7 @@ Getting your API key
   <img alt="The image shows a web page interface for &#x22;Tavily AI&#x22; with an &#x22;Overview&#x22; section displaying a &#x22;Researcher&#x22; plan, API usage details, and an API key authentication area. There are menu options on the left and a contact button at the bottom." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Tavily often provides a free developer tier (for example, 1,000 calls/month at the time of writing). Store your API key in an environment variable such as `TAVILY_API_KEY` and avoid hard-coding secrets in source files.
-</Callout>
+> **lightbulb** Tavily often provides a free developer tier (for example, 1,000 calls/month at the time of writing). Store your API key in an environment variable such as `TAVILY_API_KEY` and avoid hard-coding secrets in source files.
 
 Quick example using the LangChain community tool wrapper
 

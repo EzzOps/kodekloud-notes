@@ -24,9 +24,7 @@ The sum is: 30
 
 Sometimes, you might want to exit a function before it completes all its statements based on a certain condition. For example, if the computed sum equals 0, we may wish to exit the function immediately without printing anything.
 
-<Callout icon="lightbulb">
-  If the condition for early exit is met, the function stops executing, and any code after the return statement will not run.
-</Callout>
+> **lightbulb** If the condition for early exit is met, the function stops executing, and any code after the return statement will not run.
 
 Consider the following example:
 
@@ -71,6 +69,4 @@ The return keyword is a versatile tool in Python that:
 
 That concludes this lesson on the return statement. Now, try practicing what you've just learned to solidify your understanding of this essential Python feature.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/e169dc83-5d71-40ac-8437-4f500246efe6/lesson/ec323045-5336-47c4-ad6f-d75f3d29495a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/e169dc83-5d71-40ac-8437-4f500246efe6/lesson/ec323045-5336-47c4-ad6f-d75f3d29495a)

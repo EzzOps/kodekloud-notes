@@ -22,9 +22,7 @@ Best practices
 * When possible, add sanity checks after parsing (length checks, required fields, enumerations).
 * Log both raw LLM outputs and parsed/validated results to help debug parsing issues.
 
-<Callout icon="warning">
-  Never trust raw LLM output as authoritative. Always parse and validate outputs before using them in critical systems. Include fallback behavior for malformed or missing fields.
-</Callout>
+> **warning** Never trust raw LLM output as authoritative. Always parse and validate outputs before using them in critical systems. Include fallback behavior for malformed or missing fields.
 
 Further reading and references
 
@@ -36,9 +34,7 @@ Further reading and references
 
 A dedicated section follows with concrete prompt template examples, formatting strategies, and common output-parsing patterns for this library.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/b1501cbe-c6d4-4305-ace8-1bdea97918d0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/b1501cbe-c6d4-4305-ace8-1bdea97918d0)
 
 
 # Retrieval
@@ -94,9 +90,7 @@ Practical tips for better retrieval and LLM responses
 * Include provenance and source links in the final LLM response so users can verify facts.
 * Monitor retrieval quality via relevance metrics and user feedback loops, then iterate on splitting and embedding choices.
 
-<Callout icon="lightbulb">
-  Design the ingestion and update processes (batch updates, incremental indexes, and re-embedding strategies) carefully. Good document splitting, metadata, and embedding selection significantly improve retrieval relevance and downstream LLM responses.
-</Callout>
+> **lightbulb** Design the ingestion and update processes (batch updates, incremental indexes, and re-embedding strategies) carefully. Good document splitting, metadata, and embedding selection significantly improve retrieval relevance and downstream LLM responses.
 
 Links and references
 
@@ -106,6 +100,4 @@ Links and references
 * [Weaviate vector search engine](https://weaviate.io/)
 * [Kubernetes Documentation — for deploying retrieval infra](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/82db88eb-654f-49a7-a8cb-ac4e95238331" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/82db88eb-654f-49a7-a8cb-ac4e95238331)

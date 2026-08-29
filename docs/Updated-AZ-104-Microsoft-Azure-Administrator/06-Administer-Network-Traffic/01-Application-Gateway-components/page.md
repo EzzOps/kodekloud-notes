@@ -14,9 +14,7 @@ The front-end IP acts as the entry point for all incoming traffic. It is configu
 
 The listener is responsible for monitoring incoming traffic requests. It binds to a specific IP address and port, and when operating in HTTPS mode, it is paired with an SSL certificate for secure communication. By handling SSL offloading at the listener level, the Application Gateway reduces the processing load on back-end servers.
 
-<Callout icon="lightbulb">
-  The upward connection depicted in conceptual diagrams from the front-end IP to the listener illustrates how the listener continuously monitors the entry point for new traffic.
-</Callout>
+> **lightbulb** The upward connection depicted in conceptual diagrams from the front-end IP to the listener illustrates how the listener continuously monitors the entry point for new traffic.
 
 ## Certificate
 
@@ -36,9 +34,7 @@ HTTP settings define the parameters for server communication. These settings inc
 
 Additionally, you can set up custom probes to periodically check the health of your back-end servers, ensuring the system consistently routes traffic to healthy instances.
 
-<Frame>
-  ![The image is a flowchart illustrating the components of an Application Gateway, including elements like Frontend IP, Listener, Port, Certificate, Rule, HTTP Setting, Custom Probe, and Backend Pool, with annotations explaining their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884701/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Application-Gateway-components/application-gateway-flowchart-components.jpg)
-</Frame>
+![The image is a flowchart illustrating the components of an Application Gateway, including elements like Frontend IP, Listener, Port, Certificate, Rule, HTTP Setting, Custom Probe, and Backend Pool, with annotations explaining their functions.](https://kodekloud.com/kk-media/image/upload/v1752884701/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Application-Gateway-components/application-gateway-flowchart-components.jpg)
 
 ## Back-End Pool
 
@@ -48,10 +44,6 @@ The back-end pool consists of the actual service instances such as virtual machi
 
 Routing rules play a critical role in defining how traffic flows from the front end to the back-end pool. These rules ensure that incoming requests are correctly distributed based on predefined logic, such as URL path-based routing or host header matching. With these rules in place, you can ensure that your web traffic is managed effectively and securely.
 
-<Callout icon="lightbulb">
-  This overview of Azure Application Gateway components highlights how each part collaborates to deliver secure, efficient, and reliable web traffic management.
-</Callout>
+> **lightbulb** This overview of Azure Application Gateway components highlights how each part collaborates to deliver secure, efficient, and reliable web traffic management.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/50248c52-4b17-4c2d-87f8-52a42eff2d2f/lesson/e6d6e937-05b9-42d5-a068-db32dc9689ad" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/50248c52-4b17-4c2d-87f8-52a42eff2d2f/lesson/e6d6e937-05b9-42d5-a068-db32dc9689ad)

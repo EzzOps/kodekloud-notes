@@ -21,9 +21,7 @@ Terraform state is more than simple metadata. It is Terraform’s authoritative 
 * Compute diffs between the desired configuration and current reality.
 * Generate a precise execution plan that performs only the necessary changes.
 
-<Callout icon="lightbulb">
-  State is the authoritative record Terraform relies on to know which resources exist and how they relate. Losing or corrupting state can prevent Terraform from managing infrastructure correctly.
-</Callout>
+> **lightbulb** State is the authoritative record Terraform relies on to know which resources exist and how they relate. Losing or corrupting state can prevent Terraform from managing infrastructure correctly.
 
 ## Quick summary table
 
@@ -57,9 +55,7 @@ State files often contain sensitive information such as resource identifiers, ne
 * Enable server-side encryption and backend-level access controls.
 * Use state locking where supported to prevent concurrent modifications.
 
-<Callout icon="warning">
-  Terraform state can contain secrets and credentials. Never commit state files to source control. Use remote backends with encryption and access controls for team or production use.
-</Callout>
+> **warning** Terraform state can contain secrets and credentials. Never commit state files to source control. Use remote backends with encryption and access controls for team or production use.
 
 ## Backends and collaboration (local vs remote)
 
@@ -106,6 +102,4 @@ Common workflow implications:
 
 This module gives you the conceptual foundation to manage Terraform state safely and predictably. Use the guidance above to design backends, secure state, and manage drift across environments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/d0fef6dd-c271-403d-b4ac-ee1f20c1839b/lesson/62847658-1969-4115-94a8-0797313137b0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/d0fef6dd-c271-403d-b4ac-ee1f20c1839b/lesson/62847658-1969-4115-94a8-0797313137b0)

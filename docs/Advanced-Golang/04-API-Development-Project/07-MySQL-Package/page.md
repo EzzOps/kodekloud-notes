@@ -262,7 +262,7 @@ mysql> select * from data;
 
 With these instructions, you now have a solid understanding of how to integrate MySQL with Go using the SQL package. You have learned to create a database and table, insert data, and perform both SELECT and INSERT operations programmatically. Use these techniques to build robust database operations in your Go projects.
 
-![The image shows a code editor with a Go programming language file open, displaying a function and an autocomplete suggestion list for error handling. The terminal at the bottom shows a Go documentation command for SQL queries.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868684/notes-assets/images/Advanced-Golang-MySQL-Package/go-code-editor-autocomplete-sql.jpg)
+![The image shows a code editor with a Go programming language file open, displaying a function and an autocomplete suggestion list for error handling. The terminal at the bottom shows a Go documentation command for SQL queries.](https://kodekloud.com/kk-media/image/upload/v1752868684/notes-assets/images/Advanced-Golang-MySQL-Package/go-code-editor-autocomplete-sql.jpg)
 
 > **lightbulb** Always ensure that your database credentials are stored securely and consider using environment variables or secret management tools for production applications.
 

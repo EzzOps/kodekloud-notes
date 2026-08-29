@@ -67,9 +67,7 @@ Patch the `kagent-ui` Service to NodePort for local access (adjust `nodePort` as
 kubectl -n kagent patch svc kagent-ui -p '{"spec":{"type":"NodePort","ports":[{"name":"ui","port":8080,"targetPort":8080,"nodePort":30080}]}}'
 ```
 
-<Callout icon="warning">
-  Exposing services via NodePort opens them on each cluster node. For production clusters prefer LoadBalancer or Ingress solutions with proper authentication.
-</Callout>
+> **warning** Exposing services via NodePort opens them on each cluster node. For production clusters prefer LoadBalancer or Ingress solutions with proper authentication.
 
 ## 3) Verify pods and controller components
 
@@ -90,14 +88,12 @@ kagent-tools-56c49d7d4d-bszs7                      1/1     Running   0          
 kagent-ui-59d5bbd564-7p82q                         1/1     Running   0          6m7s
 ```
 
-<Callout icon="lightbulb">
-  Troubleshooting quick pointers:
+> **lightbulb** Troubleshooting quick pointers:
 
   * Check pod status: `kubectl -n kagent get pods`
   * View recent events: `kubectl -n kagent get events --sort-by='.lastTimestamp'`
   * Tail controller logs: `kubectl -n kagent logs -l app.kubernetes.io/component=controller -f`
   * Primary docs: [https://kagent.dev](https://kagent.dev)
-</Callout>
 
 ## 4) Confirm CRDs and API resources
 
@@ -270,11 +266,9 @@ This lesson completed the KMCP installation and basic exploration. The next less
 * KAgent Helm releases (GitHub/OCI): [https://github.com/kagent-dev/kagent](https://github.com/kagent-dev/kagent)
 * Kubernetes docs: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/12b692c6-b1f0-4e05-84d2-ed2fc9f1985e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/12b692c6-b1f0-4e05-84d2-ed2fc9f1985e)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/63bc21ff-69b3-4bdf-9313-50b99a1d2f2d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/e50e4420-d5bb-46a9-b9fd-b1e827a675dc/lesson/63bc21ff-69b3-4bdf-9313-50b99a1d2f2d)
 
 
 # Kubernetes Model Context KMCP
@@ -287,9 +281,7 @@ Hello and welcome — this lesson explains the Kubernetes Model Context Protocol
 
 Before we dive into KMCP, it's helpful to understand the underlying protocol: MCP. MCP is an open protocol from Anthropic that standardizes how large language model (LLM) applications connect to external data sources and tools. Without a standard like MCP, each LLM integration becomes a bespoke adapter, adding development and maintenance burden.
 
-<Callout icon="lightbulb">
-  MCP acts as a universal adapter for LLMs. An MCP server exposes tools and data sources in a standard way so any LLM application that speaks MCP can discover and use them without bespoke integrations. See the MCP project for protocol details: [https://github.com/anthropic/mcp](https://github.com/anthropic/mcp)
-</Callout>
+> **lightbulb** MCP acts as a universal adapter for LLMs. An MCP server exposes tools and data sources in a standard way so any LLM application that speaks MCP can discover and use them without bespoke integrations. See the MCP project for protocol details: [https://github.com/anthropic/mcp](https://github.com/anthropic/mcp)
 
 <Frame>
   <img alt="A presentation slide titled &#x22;What Is MCP?&#x22; showing three numbered cards with icons that list MCP benefits. The cards say: &#x22;Significantly speeds up integrations,&#x22; &#x22;Simplifies integrations,&#x22; and &#x22;Standardizes integrations.&#x22;" />

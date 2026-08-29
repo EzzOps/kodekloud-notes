@@ -24,9 +24,7 @@ Use cases
 | Staging or preview sites   | Restrict access to pre-production environments | Simple gating for testers or QA         |
 | Premium content (internal) | Limit access to specific resources             | Consider UX for public-facing content   |
 
-<Callout icon="lightbulb">
-  NGINX basic auth uses the browser's built-in username/password prompt. It's appropriate for internal or staging protection, but for public-facing authentication consider framework-based auth, OAuth, or SSO for a better user experience.
-</Callout>
+> **lightbulb** NGINX basic auth uses the browser's built-in username/password prompt. It's appropriate for internal or staging protection, but for public-facing authentication consider framework-based auth, OAuth, or SSO for a better user experience.
 
 Example: password-protecting a subpath
 You may want `https://www.kodekloud.com` publicly available while protecting `https://www.kodekloud.com/admin` with a username and password. When configured, visiting `/admin` will trigger the browser's basic auth prompt.

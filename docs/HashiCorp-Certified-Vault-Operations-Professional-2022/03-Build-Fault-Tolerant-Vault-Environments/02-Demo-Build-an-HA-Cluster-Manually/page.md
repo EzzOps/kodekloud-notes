@@ -12,9 +12,7 @@ A hands-on lab will walk you through both manual and automated cluster formation
 * [Consul Storage Backend](https://www.consul.io/docs)
 * [Vault Operations Professional Certification](https://www.hashicorp.com/certification/vault-operations-professional)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/8cfe546c-02ba-4273-a3e2-19f0d82fa146" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/8cfe546c-02ba-4273-a3e2-19f0d82fa146)
 
 
 # Demo Build an HA Cluster Manually
@@ -77,13 +75,9 @@ vault status
 
 Now you should see `Initialized true` but `Sealed true`. AWS KMS will auto-unseal followers when they join.
 
-<Callout icon="triangle-alert">
-  Store your recovery keys and root token in a secure vault or vaultless backup. Losing them can lock you out of your cluster.
-</Callout>
+> **triangle-alert** Store your recovery keys and root token in a secure vault or vaultless backup. Losing them can lock you out of your cluster.
 
-<Callout icon="lightbulb">
-  Ensure the IAM role attached to each EC2 instance has permissions to decrypt with your AWS KMS key, or auto-unseal will fail.
-</Callout>
+> **lightbulb** Ensure the IAM role attached to each EC2 instance has permissions to decrypt with your AWS KMS key, or auto-unseal will fail.
 
 ## 3. List Raft Peers on vault-3
 
@@ -184,6 +178,4 @@ Next, we’ll automate cluster formation with the \[Raft retry-join configuratio
 * [Raft Retry-Join Configuration](https://www.vaultproject.io/docs/configuration/retry-join#raft)
 * [Using EC2 Tags](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/81a2a13d-24d9-4754-89d7-13e97ce7e060" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/81a2a13d-24d9-4754-89d7-13e97ce7e060)

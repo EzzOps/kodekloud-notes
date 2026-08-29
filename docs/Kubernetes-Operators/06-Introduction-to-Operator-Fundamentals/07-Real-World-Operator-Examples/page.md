@@ -12,9 +12,7 @@ Operators are not just a theoretical pattern — many teams rely on operators to
   <img alt="The image explains how operators are specialists in running platform services with Kubernetes, focusing on tasks like installing, checking, repairing, and upgrading specific machines. It highlights the operator's knowledge of particular machines in relation to platform services." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Operators encapsulate operational expertise (backups, upgrades, failover, certificate lifecycle, etc.) as controllers that reconcile Kubernetes custom resources with a running system. Use `CustomResourceDefinitions` and controllers to declare intent and let the operator maintain the implementation.
-</Callout>
+> **lightbulb** Operators encapsulate operational expertise (backups, upgrades, failover, certificate lifecycle, etc.) as controllers that reconcile Kubernetes custom resources with a running system. Use `CustomResourceDefinitions` and controllers to declare intent and let the operator maintain the implementation.
 
 Cert-manager (TLS lifecycle)
 
@@ -91,10 +89,6 @@ Links and references
 * [Strimzi for Kafka](https://strimzi.io/)
 * [Kubernetes concepts: StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
 
-<Callout icon="warning">
-  When designing operators, be careful with permissions and automated actions: reconciliations that modify persistent state (databases, storage, certificates) require thorough testing, RBAC scoping, and clear upgrade/backup strategies.
-</Callout>
+> **warning** When designing operators, be careful with permissions and automated actions: reconciliations that modify persistent state (databases, storage, certificates) require thorough testing, RBAC scoping, and clear upgrade/backup strategies.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/a90ed95f-08b2-4d55-bed5-3926da81cd6d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/a90ed95f-08b2-4d55-bed5-3926da81cd6d)

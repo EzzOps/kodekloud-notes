@@ -42,33 +42,21 @@ IAC tools can be grouped into three main categories:
 
 1. Examples include Ansible, Puppet, and SaltStack
 
-<Callout icon="lightbulb">
-  Examples include Ansible, Puppet, and SaltStack. These tools are used for installing and managing software on existing infrastructure components—such as servers, databases, and network devices. They offer a consistent structure for changes, facilitate version control, and are idempotent. An Ansible playbook or role can be stored in a version control system for reuse and distribution.
-</Callout>
+> **lightbulb** Examples include Ansible, Puppet, and SaltStack. These tools are used for installing and managing software on existing infrastructure components—such as servers, databases, and network devices. They offer a consistent structure for changes, facilitate version control, and are idempotent. An Ansible playbook or role can be stored in a version control system for reuse and distribution.
 
-<Frame>
-  ![The image lists configuration management tools Ansible, Puppet, and SaltStack, highlighting features like software management, standard structure, version control, and idempotency.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884182/notes-assets/images/Terraform-Basics-Training-Course-Types-of-IAC-Tools/frame_180.jpg)
-</Frame>
+![The image lists configuration management tools Ansible, Puppet, and SaltStack, highlighting features like software management, standard structure, version control, and idempotency.](https://kodekloud.com/kk-media/image/upload/v1752884182/notes-assets/images/Terraform-Basics-Training-Course-Types-of-IAC-Tools/frame_180.jpg)
 
 2. Tools such as Docker, Vagrant, and Packer (from HashiCorp) allow you to creat...
 
-<Callout icon="lightbulb">
-  Tools such as Docker, Vagrant, and Packer (from HashiCorp) allow you to create custom images pre-installed with the software and dependencies you need. This method reduces the need for post-deployment software installation and promotes immutable infrastructure. Common examples include VM images from osboxes.org, custom AMIs in Amazon AWS, and Docker images available on Docker Hub.
-</Callout>
+> **lightbulb** Tools such as Docker, Vagrant, and Packer (from HashiCorp) allow you to create custom images pre-installed with the software and dependencies you need. This method reduces the need for post-deployment software installation and promotes immutable infrastructure. Common examples include VM images from osboxes.org, custom AMIs in Amazon AWS, and Docker images available on Docker Hub.
 
-<Frame>
-  ![The image lists server templating tools: Docker, Packer, and Vagrant, highlighting features like pre-installed software, virtual machine or Docker images, and immutable infrastructure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884183/notes-assets/images/Terraform-Basics-Training-Course-Types-of-IAC-Tools/frame_260.jpg)
-</Frame>
+![The image lists server templating tools: Docker, Packer, and Vagrant, highlighting features like pre-installed software, virtual machine or Docker images, and immutable infrastructure.](https://kodekloud.com/kk-media/image/upload/v1752884183/notes-assets/images/Terraform-Basics-Training-Course-Types-of-IAC-Tools/frame_260.jpg)
 
 3. These tools use a declarative, high-level language to provision infrastructur...
 
-<Callout icon="lightbulb">
-  These tools use a declarative, high-level language to provision infrastructure components, such as virtual machines, VPCs, databases, subnets, security groups, and storage. While AWS CloudFormation is tailored for AWS, Terraform is vendor-agnostic and supports a wide range of cloud providers through its plugin architecture.
-</Callout>
+> **lightbulb** These tools use a declarative, high-level language to provision infrastructure components, such as virtual machines, VPCs, databases, subnets, security groups, and storage. While AWS CloudFormation is tailored for AWS, Terraform is vendor-agnostic and supports a wide range of cloud providers through its plugin architecture.
 
-<Frame>
-  ![The image describes provisioning tools like Terraform and CloudFormation for deploying immutable infrastructure resources, including servers, databases, and network components across multiple providers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884184/notes-assets/images/Terraform-Basics-Training-Course-Types-of-IAC-Tools/frame_330.jpg)
-</Frame>
+![The image describes provisioning tools like Terraform and CloudFormation for deploying immutable infrastructure resources, including servers, databases, and network components across multiple providers.](https://kodekloud.com/kk-media/image/upload/v1752884184/notes-assets/images/Terraform-Basics-Training-Course-Types-of-IAC-Tools/frame_330.jpg)
 
 In the upcoming lesson, we will explore how Terraform simplifies the process of provisioning infrastructure across multiple cloud providers.
 
@@ -80,9 +68,7 @@ For additional insights on IAC, consider these resources:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e860c2fb-d55e-48f2-87cc-9149460b600a/lesson/8780a3ee-19b8-4802-9861-88fced7d092d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e860c2fb-d55e-48f2-87cc-9149460b600a/lesson/8780a3ee-19b8-4802-9861-88fced7d092d)
 
 
 # Why Terraform
@@ -95,9 +81,7 @@ In this article, we will explore Terraform and highlight some of its key feature
 
 Terraform’s simplicity and robust design make it ideal for managing a wide variety of infrastructures. Whether you are maintaining an on-premises vSphere cluster or deploying resources on cloud platforms like AWS, GCP, or Azure, Terraform streamlines infrastructure management using providers.
 
-<Callout icon="lightbulb">
-  Terraform can deploy infrastructure across diverse platforms using providers, ensuring that your infrastructure remains consistent across different environments.
-</Callout>
+> **lightbulb** Terraform can deploy infrastructure across diverse platforms using providers, ensuring that your infrastructure remains consistent across different environments.
 
 ## Providers: Expanding Terraform's Reach
 
@@ -153,9 +137,7 @@ Terraform operations are divided into three distinct phases:
 3. **Apply Phase:**\
    Terraform implements the planned changes, ensuring that your environment matches the configuration. If there is any drift from the defined state, running `terraform apply` again will correct the discrepancies.
 
-<Callout icon="lightbulb">
-  Since Terraform configurations are declarative, they simply describe the desired state. Terraform takes care of figuring out the steps necessary to reach that state.
-</Callout>
+> **lightbulb** Since Terraform configurations are declarative, they simply describe the desired state. Terraform takes care of figuring out the steps necessary to reach that state.
 
 ## Managing Infrastructure with Terraform
 
@@ -171,6 +153,4 @@ Terraform Cloud and Terraform Enterprise extend Terraform’s capabilities by of
 
 This article provided a high-level introduction to Terraform. In the upcoming sections, we will explore these concepts in greater detail with guided examples and hands-on labs. For more detailed information on Terraform, be sure to check out the [Terraform Documentation](https://www.terraform.io/docs).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e860c2fb-d55e-48f2-87cc-9149460b600a/lesson/7cdb4abf-6042-4f83-8236-fe1330144b9c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e860c2fb-d55e-48f2-87cc-9149460b600a/lesson/7cdb4abf-6042-4f83-8236-fe1330144b9c)

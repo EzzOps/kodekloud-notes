@@ -10,9 +10,7 @@ Think of a WorkflowTemplate as a reusable recipe for Argo Workflows. Instead of 
   <img alt="A presentation slide titled &#x22;WorkflowTemplate&#x22; that defines it as &#x22;A reusable recipe for workflows, defined once and used across multiple workflows.&#x22; Below that is a boxed &#x22;Benefits&#x22; list of four points: a central version-controlled library, promotes consistency, cleaner/easier to manage, and reduces duplication and maintenance effort." />
 </Frame>
 
-<Callout icon="lightbulb">
-  A WorkflowTemplate stores common templates in a namespace so teams can share and reuse steps like functions from a library. Use templates to standardize CI/CD tasks such as builds, tests, and deployments.
-</Callout>
+> **lightbulb** A WorkflowTemplate stores common templates in a namespace so teams can share and reuse steps like functions from a library. Use templates to standardize CI/CD tasks such as builds, tests, and deployments.
 
 ## How to define a WorkflowTemplate
 

@@ -28,7 +28,7 @@ CMMI enforces a four-stage lifecycle for every work item:
 4. **Closed**\
    Final approval, sign-off, and archival.
 
-![The image illustrates a "Flow of Work" diagram for CMMI, showing stages labeled as Proposal, Active, Resolved, and Closed, connected to a central "States" icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867410/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-CMMI/cmmi-flow-of-work-diagram.jpg)
+![The image illustrates a "Flow of Work" diagram for CMMI, showing stages labeled as Proposal, Active, Resolved, and Closed, connected to a central "States" icon.](https://kodekloud.com/kk-media/image/upload/v1752867410/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-CMMI/cmmi-flow-of-work-diagram.jpg)
 
 ## CMMI Work Item Types
 
@@ -61,7 +61,7 @@ A modular testing hierarchy promotes reusability and comprehensive coverage:
 * **Shared Parameters**\
   Data sets enabling data-driven testing scenarios.
 
-![The image is a flowchart illustrating a testing process, starting with "Test Plan" and progressing through "Test Suite," "Test Case," and ending with "Shared Steps" and "Shared Parameters."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867412/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-CMMI/testing-process-flowchart-test-plan.jpg)
+![The image is a flowchart illustrating a testing process, starting with "Test Plan" and progressing through "Test Suite," "Test Case," and ending with "Shared Steps" and "Shared Parameters."](https://kodekloud.com/kk-media/image/upload/v1752867412/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-CMMI/testing-process-flowchart-test-plan.jpg)
 
 ## Feedback Management Workflow
 
@@ -72,7 +72,7 @@ CMMI embeds structured feedback loops to engage stakeholders early and often:
 2. **Feedback Response**\
    Gather comments, suggestions, or approval decisions.
 
-![The image shows a flowchart with two connected boxes labeled "Feedback Request" and "Feedback Response," illustrating a feedback process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867414/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-CMMI/feedback-request-response-flowchart.jpg)
+![The image shows a flowchart with two connected boxes labeled "Feedback Request" and "Feedback Response," illustrating a feedback process.](https://kodekloud.com/kk-media/image/upload/v1752867414/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-CMMI/feedback-request-response-flowchart.jpg)
 
 ## Code Review Workflow
 
@@ -83,7 +83,7 @@ Ensuring code quality and compliance through peer reviews:
 2. **Code Review Response**\
    Reviewers provide feedback, approval, or additional change requests.
 
-![The image shows a flowchart with two connected boxes labeled "Code Review" and "Code Review Response," indicating a process or sequence.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867414/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-CMMI/code-review-flowchart-process-sequence.jpg)
+![The image shows a flowchart with two connected boxes labeled "Code Review" and "Code Review Response," indicating a process or sequence.](https://kodekloud.com/kk-media/image/upload/v1752867414/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Flow-of-Work-CMMI/code-review-flowchart-process-sequence.jpg)
 
 ## Next Steps
 

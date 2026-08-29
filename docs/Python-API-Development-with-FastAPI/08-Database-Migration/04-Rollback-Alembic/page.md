@@ -11,9 +11,7 @@ def downgrade():
     pass
 ```
 
-<Callout icon="lightbulb">
-  The `upgrade()` function is used to apply changes, while the `downgrade()` function allows you to roll back those changes. Always add the necessary logic to these functions based on your migration requirements.
-</Callout>
+> **lightbulb** The `upgrade()` function is used to apply changes, while the `downgrade()` function allows you to roll back those changes. Always add the necessary logic to these functions based on your migration requirements.
 
 To explore more options for the `alembic revision` command, run:
 
@@ -80,15 +78,11 @@ ORDER BY id ASC
 
 You should now see that the posts table includes two columns: `id` (the primary key, non-nullable) and `title` (non-nullable).
 
-<Frame>
-  ![The image shows a Visual Studio Code interface with Python code for a database migration script using Alembic. The code editor displays a function definition, and a tooltip provides information about the Operations class.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883379/notes-assets/images/Python-API-Development-with-FastAPI-First-Revision/vscode-python-database-migration-alembic.jpg)
-</Frame>
+![The image shows a Visual Studio Code interface with Python code for a database migration script using Alembic. The code editor displays a function definition, and a tooltip provides information about the Operations class.](https://kodekloud.com/kk-media/image/upload/v1752883379/notes-assets/images/Python-API-Development-with-FastAPI-First-Revision/vscode-python-database-migration-alembic.jpg)
 
 Additionally, when you inspect the table in pgAdmin, the defined columns and associated constraints are clearly visible:
 
-<Frame>
-  ![The image shows a pgAdmin interface with a table named "posts" being edited. It displays columns for "id" and "title" with their data types and constraints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883380/notes-assets/images/Python-API-Development-with-FastAPI-First-Revision/pgadmin-posts-table-edit-interface.jpg)
-</Frame>
+![The image shows a pgAdmin interface with a table named "posts" being edited. It displays columns for "id" and "title" with their data types and constraints.](https://kodekloud.com/kk-media/image/upload/v1752883380/notes-assets/images/Python-API-Development-with-FastAPI-First-Revision/pgadmin-posts-table-edit-interface.jpg)
 
 ## Tracking Migrations with Alembic
 
@@ -99,9 +93,7 @@ SELECT * FROM public.alembic_version
 ORDER BY version_num ASC
 ```
 
-<Callout icon="triangle-alert">
-  Do not delete the Alembic versioning table. It is crucial for tracking schema changes and ensuring the consistency of your database migrations.
-</Callout>
+> **triangle-alert** Do not delete the Alembic versioning table. It is crucial for tracking schema changes and ensuring the consistency of your database migrations.
 
 ## Conclusion
 
@@ -109,9 +101,7 @@ This guide demonstrated how to create a simple "posts" table using Alembic, incl
 
 By managing database migrations with Alembic, you ensure a controlled and consistent way to apply schema changes, making your database evolution both predictable and reversible.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/a6a7b30d-5ca7-4d69-a323-c508340e9931/lesson/6eb4e2de-24b7-4f45-a269-1cd0eecac8fb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/a6a7b30d-5ca7-4d69-a323-c508340e9931/lesson/6eb4e2de-24b7-4f45-a269-1cd0eecac8fb)
 
 
 # Rollback Alembic
@@ -148,9 +138,7 @@ INFO  [alembic.runtime.migration] Will assume transactional DDL.
 INFO  [alembic.runtime.migration] Running upgrade -> ccfc4f0d2d18, create posts table
 ```
 
-<Callout icon="lightbulb">
-  Ensure your Alembic configuration is set correctly to avoid unrecognized argument errors.
-</Callout>
+> **lightbulb** Ensure your Alembic configuration is set correctly to avoid unrecognized argument errors.
 
 ## Modifying the Table: Adding a New Column
 

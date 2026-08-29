@@ -17,9 +17,7 @@ As a cloud-based service, Microsoft Entra ID offers universal accessibility and 
 
 Moreover, Microsoft Entra ID supports secure access to Azure services as well as numerous SaaS solutions including Microsoft 365, Dropbox, Concur, and Salesforce.
 
-<Callout icon="lightbulb">
-  Microsoft Entra ID empowers users with self-service capabilities. They can securely reset or change their passwords without requiring direct IT intervention, significantly reducing helpdesk overhead and ensuring a smoother user experience.
-</Callout>
+> **lightbulb** Microsoft Entra ID empowers users with self-service capabilities. They can securely reset or change their passwords without requiring direct IT intervention, significantly reducing helpdesk overhead and ensuring a smoother user experience.
 
 ## Seamless Integration and Security
 
@@ -33,12 +31,8 @@ Entra ID serves as the central connectivity hub within an IT environment by:
 * Connecting with multiple SaaS applications to enforce unified security policies.
 * Synchronizing with on-premises Active Directory environments for consistent identity management.
 
-<Callout icon="lightbulb">
-  The strength of Microsoft Entra ID lies not only in its robust security but also in its ability to enhance productivity, foster collaboration, and provide a seamless user experience.
-</Callout>
+> **lightbulb** The strength of Microsoft Entra ID lies not only in its robust security but also in its ability to enhance productivity, foster collaboration, and provide a seamless user experience.
 
 Now that you understand the fundamentals of Microsoft Entra ID and its core functions, let's explore the key concepts and how they empower modern identity management within the enterprise.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/07e3a37e-65a9-430c-9919-011cc605b25d/lesson/130c57fd-47e9-40d0-9354-5d349a66f2ed" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/07e3a37e-65a9-430c-9919-011cc605b25d/lesson/130c57fd-47e9-40d0-9354-5d349a66f2ed)

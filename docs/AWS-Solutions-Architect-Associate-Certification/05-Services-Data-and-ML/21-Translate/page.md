@@ -19,11 +19,11 @@ The translation process is straightforward:
 3. Lambda invokes Amazon Translate to process the text.
 4. Amazon Translate returns the translated text, which is then stored back in Amazon S3.
 
-![The image illustrates a workflow involving Amazon S3, AWS Lambda, and Amazon Translate, showing the process of translating source text stored in S3 using Lambda and Translate services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865105/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Translate/amazon-s3-lambda-translate-workflow.jpg)
+![The image illustrates a workflow involving Amazon S3, AWS Lambda, and Amazon Translate, showing the process of translating source text stored in S3 using Lambda and Translate services.](https://kodekloud.com/kk-media/image/upload/v1752865105/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Translate/amazon-s3-lambda-translate-workflow.jpg)
 
 After translation, the text can be used by other services like Amazon Polly for converting text-to-speech or directly displayed in a chatbot interface.
 
-![The image is a flowchart illustrating a translation process using AWS services, including Amazon S3, AWS Lambda, and Amazon Translate. It shows the flow of source text from Amazon S3 through AWS Lambda to Amazon Translate, and back to Amazon S3.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865106/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Translate/aws-translation-flowchart-s3-lambda.jpg)
+![The image is a flowchart illustrating a translation process using AWS services, including Amazon S3, AWS Lambda, and Amazon Translate. It shows the flow of source text from Amazon S3 through AWS Lambda to Amazon Translate, and back to Amazon S3.](https://kodekloud.com/kk-media/image/upload/v1752865106/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Translate/aws-translation-flowchart-s3-lambda.jpg)
 
 ## How Translation Works
 
@@ -34,7 +34,7 @@ At the core of Amazon Translate is a neural machine translation (NMT) algorithm,
 
 This NMT approach ensures translations are accurate and natural-sounding, significantly improving upon traditional rule-based or statistical methods. With near real-time processing, translations are completed within milliseconds.
 
-![The image lists four features: Neural Machine Translation, Wide Range of Supported Languages, Real-Time Translation, and Seamless Integration. Each feature is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865107/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Translate/neural-machine-translation-features.jpg)
+![The image lists four features: Neural Machine Translation, Wide Range of Supported Languages, Real-Time Translation, and Seamless Integration. Each feature is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752865107/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Translate/neural-machine-translation-features.jpg)
 
 > **lightbulb** Amazon Translate leverages state-of-the-art NMT algorithms to deliver translations that sound natural and contextually accurate.
 

@@ -16,7 +16,7 @@ When building a web application, you first upload your source code (HTML, CSS, J
 
 Elastic Beanstalk supports a wide range of programming languages and platforms, including Docker, .NET Core, Python, PHP, Go, Java, Node.js, and Ruby. The process is straightforward: upload your code, select the appropriate runtime, and let Elastic Beanstalk handle the rest.
 
-![The image displays logos of various supported platforms and programming languages, including Docker, .NET Core, Python, PHP, Go, Java, Node.js, and Ruby.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864945/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk/platforms-logos-docker-dotnet-python-php.jpg)
+![The image displays logos of various supported platforms and programming languages, including Docker, .NET Core, Python, PHP, Go, Java, Node.js, and Ruby.](https://kodekloud.com/kk-media/image/upload/v1752864945/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk/platforms-logos-docker-dotnet-python-php.jpg)
 
 ## Deployment Workflow
 
@@ -28,7 +28,7 @@ The deployment process with Elastic Beanstalk involves three core steps:
 
 Once set up, you can monitor application health, conduct tests, and deploy new versions seamlessly. For instance, deploy updates in your staging environment to evaluate performance before releasing them in production.
 
-![The image illustrates the process of using Elastic Beanstalk, showing steps from creating a web application to uploading it, launching the environment, and managing it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864946/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk/elastic-beanstalk-web-app-process.jpg)
+![The image illustrates the process of using Elastic Beanstalk, showing steps from creating a web application to uploading it, launching the environment, and managing it.](https://kodekloud.com/kk-media/image/upload/v1752864946/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk/elastic-beanstalk-web-app-process.jpg)
 
 ## Key Benefits and Features
 
@@ -42,7 +42,7 @@ Elastic Beanstalk offers several advantages that can accelerate your development
 | **Monitoring and Health Checks**   | Provides built-in monitoring through AWS CloudWatch for continuous application health checks.               |
 | **Pre-configured Stacks**          | Offers ready-to-use stacks for popular programming languages such as Node.js, Python, Ruby, Go, and Docker. |
 
-![The image lists five features: Easy Deployment, Managed Platform Updates, Autoscaling and Load Balancing, Monitoring and Health, and Pre-configured Components. Each feature is represented with an icon and a gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864947/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk/features-easy-deployment-autoscaling.jpg)
+![The image lists five features: Easy Deployment, Managed Platform Updates, Autoscaling and Load Balancing, Monitoring and Health, and Pre-configured Components. Each feature is represented with an icon and a gradient background.](https://kodekloud.com/kk-media/image/upload/v1752864947/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-Beanstalk/features-easy-deployment-autoscaling.jpg)
 
 > **lightbulb** With Elastic Beanstalk, you can focus on developing your application without worrying about the underlying infrastructure. AWS manages the heavy lifting, ensuring that your environment is secure, scalable, and optimized for performance.
 

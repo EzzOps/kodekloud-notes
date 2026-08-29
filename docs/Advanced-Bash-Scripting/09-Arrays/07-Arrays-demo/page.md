@@ -18,11 +18,11 @@ Imagine a team of 20 colleagues who vote on their favorite restaurants each Frid
 
 1. Manipulating data in memory means changes disappear once the script ends.
 
-![The image is a slide titled "Arrays demo" that explains "manipulating data in-memory," referring to initializing or modifying values directly in variables within a script or program.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868537/notes-assets/images/Advanced-Bash-Scripting-Arrays-demo/arrays-demo-manipulating-data.jpg)
+![The image is a slide titled "Arrays demo" that explains "manipulating data in-memory," referring to initializing or modifying values directly in variables within a script or program.](https://kodekloud.com/kk-media/image/upload/v1752868537/notes-assets/images/Advanced-Bash-Scripting-Arrays-demo/arrays-demo-manipulating-data.jpg)
 
 2. Persistent storage (files, databases) retains data between runs.
 
-![The image is a diagram titled "Arrays demo" that explains the concept of a persistent storage method, which retains data after restarting an application or rebooting a machine, with icons representing databases and files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868538/notes-assets/images/Advanced-Bash-Scripting-Arrays-demo/arrays-demo-persistent-storage-diagram.jpg)
+![The image is a diagram titled "Arrays demo" that explains the concept of a persistent storage method, which retains data after restarting an application or rebooting a machine, with icons representing databases and files.](https://kodekloud.com/kk-media/image/upload/v1752868538/notes-assets/images/Advanced-Bash-Scripting-Arrays-demo/arrays-demo-persistent-storage-diagram.jpg)
 
 > **lightbulb** This script uses Bash 4.0+ for the `mapfile` builtin.
 
@@ -30,11 +30,11 @@ Imagine a team of 20 colleagues who vote on their favorite restaurants each Frid
 
 * **mapfile -t**: Loads lines from a file (or stdin) into an array.
 
-![The image is a slide titled "Arrays demo" that describes the shell built-in command "mapfile," which reads input data and stores it in an array format, available from bash 4.0 onwards.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868539/notes-assets/images/Advanced-Bash-Scripting-Arrays-demo/arrays-demo-mapfile-bash-command.jpg)
+![The image is a slide titled "Arrays demo" that describes the shell built-in command "mapfile," which reads input data and stores it in an array format, available from bash 4.0 onwards.](https://kodekloud.com/kk-media/image/upload/v1752868539/notes-assets/images/Advanced-Bash-Scripting-Arrays-demo/arrays-demo-mapfile-bash-command.jpg)
 
 * **\$RANDOM**: Yields a pseudo-random integer between 0 and 32767.
 
-![The image is a slide from an "Arrays demo" presentation, describing a special shell variable "RANDOM" that generates a random integer between 0 and 32767.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868540/notes-assets/images/Advanced-Bash-Scripting-Arrays-demo/arrays-demo-random-variable.jpg)
+![The image is a slide from an "Arrays demo" presentation, describing a special shell variable "RANDOM" that generates a random integer between 0 and 32767.](https://kodekloud.com/kk-media/image/upload/v1752868540/notes-assets/images/Advanced-Bash-Scripting-Arrays-demo/arrays-demo-random-variable.jpg)
 
 ### Exit Code Reference
 

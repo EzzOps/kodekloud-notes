@@ -20,7 +20,7 @@ With detailed inbound and outbound access controls, Virtual Networks enable you 
 
 Azure Virtual Networks support secure, cross-premises connectivity, seamlessly bridging your on-premises data center with the cloud. Components such as VPN Gateway and ExpressRoute lay the foundation for reliable communication between these environments.
 
-![The image lists key features of virtual networks: Isolation and Segmentation, Internet Communication, and Communication with On-Premises, each represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868322/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Networking/virtual-networks-key-features.jpg)
+![The image lists key features of virtual networks: Isolation and Segmentation, Internet Communication, and Communication with On-Premises, each represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752868322/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Networking/virtual-networks-key-features.jpg)
 
 > **lightbulb** Consider designing your network with proper segmentation from the start. This practice not only enhances security but also simplifies management and troubleshooting.
 
@@ -38,7 +38,7 @@ Security is at the core of Virtual Networking. With tools such as Network Securi
 
 Virtual Machines deployed in a Virtual Network benefit from seamless integration with other Azure services like storage and SQL databases. This native connectivity over private IP addresses fosters improved internal communication and enhances overall network performance.
 
-![The image lists the benefits of virtual networks, highlighting customizable network topology, enhanced security, and integration with Azure services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868323/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Networking/virtual-networks-benefits-azure.jpg)
+![The image lists the benefits of virtual networks, highlighting customizable network topology, enhanced security, and integration with Azure services.](https://kodekloud.com/kk-media/image/upload/v1752868323/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Networking/virtual-networks-benefits-azure.jpg)
 
 ## Use Cases for Azure Virtual Networks
 
@@ -52,7 +52,7 @@ Azure Virtual Networks are ideal for a variety of scenarios, including:
 
 Whether you're constructing multi-tier applications or building a hybrid cloud architecture, Azure Virtual Networks provide the necessary tools and flexibility to ensure secure connectivity and efficient data movement.
 
-![The image illustrates common use cases for virtual networks, highlighting secure Azure service connections and links to on-premises data centers. It features a cloud and computer monitor graphic with a security shield icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868324/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Networking/virtual-networks-use-cases-azure.jpg)
+![The image illustrates common use cases for virtual networks, highlighting secure Azure service connections and links to on-premises data centers. It features a cloud and computer monitor graphic with a security shield icon.](https://kodekloud.com/kk-media/image/upload/v1752868324/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Virtual-Networking/virtual-networks-use-cases-azure.jpg)
 
 > **triangle-alert** For secure and reliable connectivity, always ensure that your network configurations are regularly reviewed and updated, especially when integrating on-premises environments with the cloud.
 

@@ -26,9 +26,7 @@ You will start with the fundamentals: what a Custom Resource is at the API serve
   <img alt="The image depicts a concept where a Custom Resource Definition (CRD) is a first-class API object in Kubernetes, alongside Pods and Deployments, and shows &#x22;Sloppy CRD&#x22; being inherited by a &#x22;Sloppy controller.&#x22;" />
 </Frame>
 
-<Callout icon="lightbulb">
-  Treat a CRD as a stable API contract, not a temporary convenience. Design the schema intentionally: names, required fields, allowed values, and update strategy matter.
-</Callout>
+> **lightbulb** Treat a CRD as a stable API contract, not a temporary convenience. Design the schema intentionally: names, required fields, allowed values, and update strategy matter.
 
 ## Reproducing the problem
 
@@ -36,9 +34,7 @@ You will start with the fundamentals: what a Custom Resource is at the API serve
 * Staging cluster: CRD is stricter (or the same stricter server-side checks), so the same object is rejected.
 * Result: you must perform a CRD version bump, migrate objects, and explain a breaking change to stakeholders.
 
-<Callout icon="warning">
-  Versioning a CRD and migrating existing resources can be a breaking change. Plan migration strategies (conversion webhooks, storage versioning) before changing schemas in production.
-</Callout>
+> **warning** Versioning a CRD and migrating existing resources can be a breaking change. Plan migration strategies (conversion webhooks, storage versioning) before changing schemas in production.
 
 ## Why permissive schemas fail
 
@@ -112,9 +108,7 @@ By the end of this article you will be able to read any CRD and judge whether it
 * [Kubernetes CEL validation docs](https://kubernetes.io/docs/reference/using-api/validation/)
 * [Kubernetes CustomResourceDefinition API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.27/#customresourcedefinition-v1-apiextensions-k8s-io)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ba392f08-9d70-442b-9751-fdc2052b777e/lesson/9e1bfa29-8568-4c48-a821-9b0c05d3fc24" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ba392f08-9d70-442b-9751-fdc2052b777e/lesson/9e1bfa29-8568-4c48-a821-9b0c05d3fc24)
 
 
 # Demo Add A Finalizer To WebApp
@@ -140,9 +134,7 @@ webapp.webapp.kodekloud.com "site" deleted from webapp-demo namespace
 
 That fast disappearance prevents the controller from performing any needed cleanup. The solution is to add a finalizer string owned by the operator and implement the standard finalizer pattern in the controller's Reconcile logic.
 
-<Callout icon="lightbulb">
-  [controller-runtime helpers](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/controller/controllerutil) simplify adding, checking, and removing finalizers: each controller should only add and remove its own finalizer string. Using these helpers avoids manual metadata slice manipulation.
-</Callout>
+> **lightbulb** [controller-runtime helpers](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/controller/controllerutil) simplify adding, checking, and removing finalizers: each controller should only add and remove its own finalizer string. Using these helpers avoids manual metadata slice manipulation.
 
 ## Finalizer name and placement
 
@@ -272,9 +264,7 @@ func (r *WebAppReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctr
 }
 ```
 
-<Callout icon="warning">
-  Do not remove finalizers that you do not own. Always check `ContainsFinalizer` before calling `RemoveFinalizer` to avoid interfering with other controllers’ cleanup. Also return errors from `Update` so controller-runtime will retry on transient failures.
-</Callout>
+> **warning** Do not remove finalizers that you do not own. Always check `ContainsFinalizer` before calling `RemoveFinalizer` to avoid interfering with other controllers’ cleanup. Also return errors from `Update` so controller-runtime will retry on transient failures.
 
 ## Verify deletion completed
 
@@ -304,8 +294,6 @@ A `NotFound` response indicates the delete request completed successfully and th
 * [Kubernetes garbage collection](https://kubernetes.io/docs/concepts/architecture/garbage-collection/)
 * [controller-runtime controllerutil helpers](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/controller/controllerutil)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/6a375c4e-4bda-4d13-a58f-4d85961676cc/lesson/a26444ee-e070-4ef7-b784-86238646c77e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/6a375c4e-4bda-4d13-a58f-4d85961676cc/lesson/a26444ee-e070-4ef7-b784-86238646c77e)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/6a375c4e-4bda-4d13-a58f-4d85961676cc/lesson/ba550e4e-3605-4f5a-9e99-715ab68812d8" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/6a375c4e-4bda-4d13-a58f-4d85961676cc/lesson/ba550e4e-3605-4f5a-9e99-715ab68812d8)

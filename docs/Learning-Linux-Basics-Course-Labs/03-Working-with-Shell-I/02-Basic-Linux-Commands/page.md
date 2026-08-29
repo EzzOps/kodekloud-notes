@@ -115,8 +115,7 @@ When moving around the file system, you have two options: absolute paths and rel
 
 An absolute path begins from the root directory (`/`) and provides the full location, whereas a relative path is based on your current working directory.
 
-<Callout icon="lightbulb">
-  For enhanced navigation, the `pushd` command changes directories while saving your previous location in a stack. Later, you can return using `popd`:
+> **lightbulb** For enhanced navigation, the `pushd` command changes directories while saving your previous location in a stack. Later, you can return using `popd`:
 
   Example:
 
@@ -124,15 +123,12 @@ An absolute path begins from the root directory (`/`) and provides the full loca
   pushd /etc
   popd
   ```
-</Callout>
 
 ## Modifying the Directory Structure
 
 The exercise also involves modifying the directory layout to meet specific requirements. An earlier error involved creating the "Morocco" directory under Europe instead of Africa. The correct organization places Morocco under Africa. The image below illustrates the comparison between the original and the desired directory structures:
 
-<Frame>
-  ![The image shows a directory structure comparison before and after using basic Linux commands, illustrating changes in file organization under "/home/michael".](../../../../images/kodekloud.com/kk-media/image/upload/v1752881154/notes-assets/images/Learning-Linux-Basics-Course-Labs-Basic-Linux-Commands/frame_470.jpg)
-</Frame>
+![The image shows a directory structure comparison before and after using basic Linux commands, illustrating changes in file organization under "/home/michael".](https://kodekloud.com/kk-media/image/upload/v1752881154/notes-assets/images/Learning-Linux-Basics-Course-Labs-Basic-Linux-Commands/frame_470.jpg)
 
 Other required modifications include:
 
@@ -142,9 +138,7 @@ Other required modifications include:
 
 An additional image confirms these changes:
 
-<Frame>
-  ![The image shows a directory structure comparison before and after using basic Linux commands, highlighting changes in the "Morocco" directory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881155/notes-assets/images/Learning-Linux-Basics-Course-Labs-Basic-Linux-Commands/frame_490.jpg)
-</Frame>
+![The image shows a directory structure comparison before and after using basic Linux commands, highlighting changes in the "Morocco" directory.](https://kodekloud.com/kk-media/image/upload/v1752881155/notes-assets/images/Learning-Linux-Basics-Course-Labs-Basic-Linux-Commands/frame_490.jpg)
 
 ### Moving Directories
 
@@ -186,9 +180,7 @@ To remove the file `Tottenham.txt` from the London directory (in Europe), use:
 rm Europe/UnitedKingdom/London/Tottenham.txt
 ```
 
-<Callout icon="triangle-alert">
-  Ensure you have the correct file paths when copying or deleting files. To copy or delete directories recursively, remember to include the `-r` option with `cp` or `rm`.
-</Callout>
+> **triangle-alert** Ensure you have the correct file paths when copying or deleting files. To copy or delete directories recursively, remember to include the `-r` option with `cp` or `rm`.
 
 ## Working with Files
 
@@ -315,6 +307,4 @@ This guide covered fundamental Linux commands for effectively navigating and man
 
 Happy learning and exploring Linux!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/267dec49-c3e9-4627-b7f8-9bf9aa834e53/lesson/f1117e86-d916-4306-b873-5571d37f5cc8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/267dec49-c3e9-4627-b7f8-9bf9aa834e53/lesson/f1117e86-d916-4306-b873-5571d37f5cc8)

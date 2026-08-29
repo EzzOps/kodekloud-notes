@@ -12,11 +12,11 @@ Imagine an alert at 2 AM telling you, “Your application is responding slowly.�
 
 Observability tools let you ask precise questions of your system—and get precise answers.
 
-![The image shows a person looking at questions related to observability, such as system status, root cause of incidents, alarm configuration, and application performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862541/notes-assets/images/AWS-CloudWatch-What-is-observability/observability-questions-system-status-performance.jpg)
+![The image shows a person looking at questions related to observability, such as system status, root cause of incidents, alarm configuration, and application performance.](https://kodekloud.com/kk-media/image/upload/v1752862541/notes-assets/images/AWS-CloudWatch-What-is-observability/observability-questions-system-status-performance.jpg)
 
 Think of observability as a telescope for your infrastructure. A naked-eye view shows you a few stars; with a telescope, you discover galaxies. Observability reveals not only *when* a service degrades, but **why**.
 
-![The image shows a person looking through a telescope with planets and stars around, alongside a definition of "observability" as understanding what is happening in a system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862542/notes-assets/images/AWS-CloudWatch-What-is-observability/telescope-observability-planets-stars.jpg)
+![The image shows a person looking through a telescope with planets and stars around, alongside a definition of "observability" as understanding what is happening in a system.](https://kodekloud.com/kk-media/image/upload/v1752862542/notes-assets/images/AWS-CloudWatch-What-is-observability/telescope-observability-planets-stars.jpg)
 
 ## The Three Pillars of Observability
 
@@ -30,7 +30,7 @@ Observability stands on three foundational pillars. Together, they provide a com
 
 Metrics offer the “vital signs” of your infrastructure, logs provide the detailed event history, and traces map the journey of individual requests.
 
-![The image illustrates the "Foundations of Observability" with a structure resembling a building, highlighting three pillars: Metrics, Logs, and Traces. Each pillar is represented with an icon and distinct color.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862543/notes-assets/images/AWS-CloudWatch-What-is-observability/foundations-of-observability-three-pillars.jpg)
+![The image illustrates the "Foundations of Observability" with a structure resembling a building, highlighting three pillars: Metrics, Logs, and Traces. Each pillar is represented with an icon and distinct color.](https://kodekloud.com/kk-media/image/upload/v1752862543/notes-assets/images/AWS-CloudWatch-What-is-observability/foundations-of-observability-three-pillars.jpg)
 
 > **lightbulb** When ingesting high-cardinality logs, ensure you set appropriate log retention and indexing filters in [CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/). This avoids unnecessary costs and search delays.
 
@@ -53,7 +53,7 @@ To operationalize observability, follow this three-stage cycle:
 3. **Remediate**\
    Roll out hotfixes via AWS Systems Manager or CI/CD pipelines. Then refine your alerts, add dashboards, and update runbooks to prevent recurrence.
 
-![The image shows an "Observability action plan" with three stages: Detect, Investigate, and Remediate, each represented by a colored block with icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862543/notes-assets/images/AWS-CloudWatch-What-is-observability/observability-action-plan-three-stages.jpg)
+![The image shows an "Observability action plan" with three stages: Detect, Investigate, and Remediate, each represented by a colored block with icons.](https://kodekloud.com/kk-media/image/upload/v1752862543/notes-assets/images/AWS-CloudWatch-What-is-observability/observability-action-plan-three-stages.jpg)
 
 > **triangle-alert** Over-alerting leads to alert fatigue. Review and tune thresholds regularly—only notify when action is truly required.
 

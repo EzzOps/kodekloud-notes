@@ -18,7 +18,7 @@ Each approach has unique advantages, scope, and security considerations. Read on
 
 GitHub Apps act on behalf of your application—independent from user credentials. They can be installed on organizations or user accounts to interact with repositories, respond to events, and automate tasks like code reviews, CI/CD, and issue management.
 
-![The image is a diagram illustrating the capabilities of GitHub Apps, showing they can interact with organizations, access repositories, perform actions, and respond to events.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867586/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/github-apps-capabilities-diagram.jpg)
+![The image is a diagram illustrating the capabilities of GitHub Apps, showing they can interact with organizations, access repositories, perform actions, and respond to events.](https://kodekloud.com/kk-media/image/upload/v1752867586/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/github-apps-capabilities-diagram.jpg)
 
 ### Benefits
 
@@ -34,7 +34,7 @@ GitHub Apps act on behalf of your application—independent from user credential
 4. Configure the required permissions and subscribe to relevant events.
 5. Save and download the private key for authentication.
 
-![The image shows a section of a GitHub interface for creating a GitHub App, with options for GitHub Apps, OAuth Apps, and personal access tokens. It includes a button to create a new GitHub App and links to developer documentation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867588/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/github-app-creation-interface-options.jpg)
+![The image shows a section of a GitHub interface for creating a GitHub App, with options for GitHub Apps, OAuth Apps, and personal access tokens. It includes a button to create a new GitHub App and links to developer documentation.](https://kodekloud.com/kk-media/image/upload/v1752867588/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/github-app-creation-interface-options.jpg)
 
 ### Authenticating with a GitHub App
 
@@ -43,7 +43,7 @@ Authentication is a two-step process:
 1. Generate a JSON Web Token (JWT) using your App’s private key.
 2. Exchange the JWT for an installation access token via GitHub’s API.
 
-![The image illustrates the process of authenticating with a GitHub app, highlighting the use of a private key and generating a JSON Web Token (JWT).](../../../../images/kodekloud.com/kk-media/image/upload/v1752867588/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/github-app-authentication-jwt-private-key.jpg)
+![The image illustrates the process of authenticating with a GitHub app, highlighting the use of a private key and generating a JSON Web Token (JWT).](https://kodekloud.com/kk-media/image/upload/v1752867588/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/github-app-authentication-jwt-private-key.jpg)
 
 Example: Generate a JWT in Python (replace `APP_ID` and `PRIVATE_KEY`).
 
@@ -73,7 +73,7 @@ curl -X POST https://api.github.com/app/installations/INSTALLATION_ID/access_tok
 
 Regularly audit your App’s permissions in **Settings**. Use the App’s dashboard or API to adjust scopes and monitor usage.
 
-![The image is a flowchart illustrating the management of GitHub app permissions, including steps like managing permissions, maintaining security, and app settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867590/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/github-app-permissions-flowchart.jpg)
+![The image is a flowchart illustrating the management of GitHub app permissions, including steps like managing permissions, maintaining security, and app settings.](https://kodekloud.com/kk-media/image/upload/v1752867590/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/github-app-permissions-flowchart.jpg)
 
 ***
 
@@ -81,7 +81,7 @@ Regularly audit your App’s permissions in **Settings**. Use the App’s dashbo
 
 `GITHUB_TOKEN` is an automatically generated secret available in GitHub Actions workflows. It provides repository-scoped authentication for checkout, API calls, and publishing packages—without manual secret management.
 
-![The image is a flowchart explaining the process of understanding GITHUB\_TOKEN, showing that a workflow is initiated, GitHub Actions generates the token, and it is used for authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867590/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/github-token-flowchart-explained.jpg)
+![The image is a flowchart explaining the process of understanding GITHUB\_TOKEN, showing that a workflow is initiated, GitHub Actions generates the token, and it is used for authentication.](https://kodekloud.com/kk-media/image/upload/v1752867590/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/github-token-flowchart-explained.jpg)
 
 ### Benefits
 
@@ -89,7 +89,7 @@ Regularly audit your App’s permissions in **Settings**. Use the App’s dashbo
 * Limited to current repository to minimize blast radius
 * No manual rotation or storage needed
 
-![The image is a slide titled "GITHUB\_TOKEN – Benefits" with a highlighted point about "Automatic generation and scope limitation."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867592/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/github-token-benefits-automatic-generation.jpg)
+![The image is a slide titled "GITHUB\_TOKEN – Benefits" with a highlighted point about "Automatic generation and scope limitation."](https://kodekloud.com/kk-media/image/upload/v1752867592/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/github-token-benefits-automatic-generation.jpg)
 
 ### Usage Example
 
@@ -119,7 +119,7 @@ jobs:
 
 Personal Access Tokens (PATs) provide user-level authentication for GitHub APIs and Git operations. You can choose **classic** or **fine-grained** tokens to control scope and expiration.
 
-![The image is an introduction to Personal Access Tokens (PATs) for GitHub, highlighting their use as alternative passwords for better security in accessing GitHub APIs and repositories.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867593/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/github-personal-access-tokens-introduction.jpg)
+![The image is an introduction to Personal Access Tokens (PATs) for GitHub, highlighting their use as alternative passwords for better security in accessing GitHub APIs and repositories.](https://kodekloud.com/kk-media/image/upload/v1752867593/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/github-personal-access-tokens-introduction.jpg)
 
 ### Use Cases
 
@@ -135,9 +135,9 @@ Personal Access Tokens (PATs) provide user-level authentication for GitHub APIs 
 4. Select scopes (e.g., `repo`, `workflow`, `admin:org`).
 5. Generate the token and store it securely.
 
-![The image shows a screenshot of a GitHub interface for generating a personal access token (PAT), highlighting the "Generate new token" option.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867594/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/github-personal-access-token-screenshot.jpg)
+![The image shows a screenshot of a GitHub interface for generating a personal access token (PAT), highlighting the "Generate new token" option.](https://kodekloud.com/kk-media/image/upload/v1752867594/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/github-personal-access-token-screenshot.jpg)
 
-![The image shows a user interface for creating a new personal access token (classic) with options to set expiration and select various scopes for permissions. It includes sections for repository, workflow, and admin controls, among others.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867595/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/personal-access-token-ui-options.jpg)
+![The image shows a user interface for creating a new personal access token (classic) with options to set expiration and select various scopes for permissions. It includes sections for repository, workflow, and admin controls, among others.](https://kodekloud.com/kk-media/image/upload/v1752867595/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/personal-access-token-ui-options.jpg)
 
 ### Authenticating with a PAT
 
@@ -159,7 +159,7 @@ curl -H "Authorization: token <PAT>" https://api.github.com/user/repos
 | GITHUB\_TOKEN | Single repo                 | Auto-rotated | GitHub Actions workflows                          |
 | PATs          | User-level, broad or narrow | Manual       | CLI scripts, local development, third-party tools |
 
-![The image compares three authentication methods: GitHub Apps, GITHUB\_TOKEN, and PATs, highlighting their features and ideal use cases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867596/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/authentication-methods-github-apps-token-pats.jpg)
+![The image compares three authentication methods: GitHub Apps, GITHUB\_TOKEN, and PATs, highlighting their features and ideal use cases.](https://kodekloud.com/kk-media/image/upload/v1752867596/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-and-manage-GitHub-Authentication/authentication-methods-github-apps-token-pats.jpg)
 
 **Security Best Practices**
 

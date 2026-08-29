@@ -75,9 +75,7 @@ Common horizontal stack elements:
 * Availability: vertical is a single point of failure; horizontal provides redundancy.
 * Time-to-solution: vertical is usually faster to implement; horizontal requires design and testing.
 
-<Callout icon="lightbulb">
-  Quick interview tip: describe both approaches (vertical and horizontal), explain their trade-offs (cost, complexity, availability), and give a short, concrete example (e.g., 50-user internal tool vs. million-user consumer app).
-</Callout>
+> **lightbulb** Quick interview tip: describe both approaches (vertical and horizontal), explain their trade-offs (cost, complexity, availability), and give a short, concrete example (e.g., 50-user internal tool vs. million-user consumer app).
 
 ## References and further reading
 
@@ -88,6 +86,4 @@ Common horizontal stack elements:
 * memcached — [https://memcached.org/](https://memcached.org/)
 * Database replication and sharding — search terms: “database replication”, “database sharding”, “partitioning”
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/607fce88-e15d-4890-92b6-510fcbcf2dbb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/607fce88-e15d-4890-92b6-510fcbcf2dbb)

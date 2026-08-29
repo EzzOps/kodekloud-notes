@@ -45,9 +45,7 @@ When your API returns a response, it might look something like this:
 }
 ```
 
-<Callout icon="lightbulb">
-  After setting your variables in the "dev" environment, remember to save your changes. When testing the sign-up and login processes, use the variable references rather than hardcoded values.
-</Callout>
+> **lightbulb** After setting your variables in the "dev" environment, remember to save your changes. When testing the sign-up and login processes, use the variable references rather than hardcoded values.
 
 ## Referencing Variables in Requests
 
@@ -110,20 +108,14 @@ fetch("localhost:4000/products", requestOptions)
   .catch(error => console.log('error', error));
 ```
 
-<Frame>
-  ![The image shows a Postman interface with environment variables set for "email" and "password" in the "Dev" environment. The sidebar includes options like Collections, APIs, and Environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882943/notes-assets/images/Postman-Essentials-Variables/postman-dev-environment-variables.jpg)
-</Frame>
+![The image shows a Postman interface with environment variables set for "email" and "password" in the "Dev" environment. The sidebar includes options like Collections, APIs, and Environments.](https://kodekloud.com/kk-media/image/upload/v1752882943/notes-assets/images/Postman-Essentials-Variables/postman-dev-environment-variables.jpg)
 
 ## Transitioning to JSON Web Tokens (JWT)
 
 After mastering environment variables, the next topic in our teaching series is JSON Web Tokens (JWT). JWT provides a token-based approach for API authentication, which modernizes the process compared to traditional sessions and cookies.
 
-<Callout icon="lightbulb">
-  Adopting JWT for API authentication enhances security by limiting the lifespan of each token and reducing the risks associated with static session management.
-</Callout>
+> **lightbulb** Adopting JWT for API authentication enhances security by limiting the lifespan of each token and reducing the risks associated with static session management.
 
 Happy testing, and keep exploring the dynamic capabilities of Postman for smarter API development and validation!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/postman-essentials/module/0a8a02c7-cab8-4bd9-886e-c7570885146f/lesson/540ed626-3222-465e-ab39-cdb42818042f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/postman-essentials/module/0a8a02c7-cab8-4bd9-886e-c7570885146f/lesson/540ed626-3222-465e-ab39-cdb42818042f)

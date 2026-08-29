@@ -16,12 +16,10 @@ In this guide, you’ll learn how to enable and use the Transit Secrets Engine i
 
 ## Prerequisites
 
-<Callout icon="lightbulb">
-  Make sure you have:
+> **lightbulb** Make sure you have:
 
   * Vault CLI installed and authenticated (`VAULT_ADDR` & token configured).
   * A running Vault server (Dev mode or Production).
-</Callout>
 
 ***
 

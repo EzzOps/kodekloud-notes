@@ -23,9 +23,7 @@ In the function above, we:
 3. Multiply each element by 2 and append the result to multiplied\_values.
 4. Return the new list containing the multiplied values.
 
-<Callout icon="lightbulb">
-  When calling the function, ensure that the argument provided is an iterable (e.g., a list). Passing a non-iterable, like an integer, will result in a runtime error.
-</Callout>
+> **lightbulb** When calling the function, ensure that the argument provided is an iterable (e.g., a list). Passing a non-iterable, like an integer, will result in a runtime error.
 
 Let's test the multiply\_values function with a sample list:
 
@@ -39,6 +37,4 @@ For additional Python function tutorials and best practices, be sure to check ou
 
 Thanks for reading! Enjoy practicing and mastering Python lists as arguments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/e169dc83-5d71-40ac-8437-4f500246efe6/lesson/2edefa1d-59ac-49e6-9c6a-2524a8476965" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/e169dc83-5d71-40ac-8437-4f500246efe6/lesson/2edefa1d-59ac-49e6-9c6a-2524a8476965)

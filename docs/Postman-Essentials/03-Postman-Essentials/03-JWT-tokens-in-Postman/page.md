@@ -4,9 +4,7 @@ Source: https://notes.kodekloud.com/docs/Postman-Essentials/Postman-Essentials/J
 
 This guide covers using JWT tokens in Postman for authenticating and securing API requests.
 
-<Callout icon="lightbulb">
-  Before proceeding, please note that restarting your server will clear all previously stored data. This means you must re-register (sign up) and log in again to obtain a new token.
-</Callout>
+> **lightbulb** Before proceeding, please note that restarting your server will clear all previously stored data. This means you must re-register (sign up) and log in again to obtain a new token.
 
 ## Signing Up and Logging In
 
@@ -136,6 +134,4 @@ In this guide, we have covered how to effectively use JWT tokens in Postman to a
 * [Postman Documentation](https://learning.postman.com/docs/getting-started/introduction/)
 * [JWT Introduction](https://jwt.io/introduction)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/postman-essentials/module/0a8a02c7-cab8-4bd9-886e-c7570885146f/lesson/fae996b8-b0dc-43bf-a768-38eacb54dffb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/postman-essentials/module/0a8a02c7-cab8-4bd9-886e-c7570885146f/lesson/fae996b8-b0dc-43bf-a768-38eacb54dffb)

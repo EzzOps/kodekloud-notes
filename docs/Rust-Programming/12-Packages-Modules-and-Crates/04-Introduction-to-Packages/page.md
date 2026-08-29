@@ -8,17 +8,13 @@ Crates are the fundamental building blocks of Rust projects. In this guide, we e
 
 A package in Rust is a collection of one or more crates managed together. Every package features a Cargo.toml file, which is the manifest that specifies how the package is built, lists its dependencies, includes metadata, and much more. Let’s examine the key characteristics of packages.
 
-<Frame>
-  ![The image is an introduction to Rust packages, showing a package containing crates and a Cargo.toml file that defines how the package is built and its dependencies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883975/notes-assets/images/Rust-Programming-Introduction-to-Packages/rust-packages-crates-cargo-toml.jpg)
-</Frame>
+![The image is an introduction to Rust packages, showing a package containing crates and a Cargo.toml file that defines how the package is built and its dependencies.](https://kodekloud.com/kk-media/image/upload/v1752883975/notes-assets/images/Rust-Programming-Introduction-to-Packages/rust-packages-crates-cargo-toml.jpg)
 
 A package can include at most one library crate, which contains reusable code that can be linked to from other crates. Additionally, a package may contain multiple binary crates, each responsible for generating a separate executable. These binary crates are typically used to build different command-line tools or applications.
 
 Managed by Cargo, Rust’s official package manager, packages are built, tested, and have their dependencies managed efficiently. In simple terms, if a crate is like a single tool, then a package is like a toolbox that organizes one or more tools for efficient use.
 
-<Frame>
-  ![The image describes key characteristics of packages, highlighting "One Library Crate," "Multiple Binary Crates," and "Managed by Cargo."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883976/notes-assets/images/Rust-Programming-Introduction-to-Packages/package-characteristics-library-binary-cargo.jpg)
-</Frame>
+![The image describes key characteristics of packages, highlighting "One Library Crate," "Multiple Binary Crates," and "Managed by Cargo."](https://kodekloud.com/kk-media/image/upload/v1752883976/notes-assets/images/Rust-Programming-Introduction-to-Packages/package-characteristics-library-binary-cargo.jpg)
 
 Let’s learn how to create a new Rust package using Cargo.
 
@@ -328,6 +324,4 @@ This prints the default "Hello, world!" output provided by the `cargo new` comma
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/4cdab411-800e-4072-90d8-005dd70de03c/lesson/f3c56add-f591-45b7-b0a8-f9f2c17ba50c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/4cdab411-800e-4072-90d8-005dd70de03c/lesson/f3c56add-f591-45b7-b0a8-f9f2c17ba50c)

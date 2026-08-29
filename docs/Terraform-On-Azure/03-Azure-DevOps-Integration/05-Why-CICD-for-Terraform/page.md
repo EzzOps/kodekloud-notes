@@ -73,9 +73,7 @@ stages:
                   displayName: 'Terraform Apply (using saved plan)'
 ```
 
-<Callout icon="lightbulb">
-  Always save and publish the exact `tfplan` produced by the plan stage and use that saved plan in the apply stage. This ensures reviewers are approving the exact changes that will be applied, preventing drift between review and execution.
-</Callout>
+> **lightbulb** Always save and publish the exact `tfplan` produced by the plan stage and use that saved plan in the apply stage. This ensures reviewers are approving the exact changes that will be applied, preventing drift between review and execution.
 
 <Frame>
   <img alt="The image depicts a DevOps workflow involving a user creating infrastructure as code, storing it in Azure Repos, and passing it through a CI/CD pipeline with approvers, leading to testing, production, planning, and application stages." />
@@ -92,9 +90,7 @@ Running Terraform in CI/CD with remote state, state locking, controlled service 
 * [Azure Storage as Terraform backend](https://www.terraform.io/language/settings/backends/azurerm)
 * [Best practices for Terraform in CI/CD](https://www.terraform.io/docs/cloud/vs/cli.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/70677d20-46be-4257-9a02-34aa382b3b05/lesson/d3fe959a-9563-4929-8faa-74d7128732ea" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/70677d20-46be-4257-9a02-34aa382b3b05/lesson/d3fe959a-9563-4929-8faa-74d7128732ea)
 
 
 # Why CICD for Terraform
@@ -113,9 +109,7 @@ At the bottom is an engineer working in a local Git repository. They author Terr
   <img alt="The image is a diagram illustrating a CI/CD workflow using Terraform and Azure, highlighting the importance of consistency, auditability, controlled changes, and team collaboration in production infrastructure. It shows a process from local git repo code commit to the deployment of resources in Azure." />
 </Frame>
 
-<Callout icon="lightbulb">
-  CI/CD provides consistency, repeatability, and an auditable trail—turning ad-hoc infrastructure changes into governed, reviewable, and reproducible operations.
-</Callout>
+> **lightbulb** CI/CD provides consistency, repeatability, and an auditable trail—turning ad-hoc infrastructure changes into governed, reviewable, and reproducible operations.
 
 What does CI do for Terraform?
 
@@ -156,9 +150,7 @@ Credentials and secrets
 
 Store credentials centrally in your CI/CD system—use Azure DevOps service connections or service principals with secrets kept in the pipeline secret store. Where possible prefer managed identities to avoid long-lived credentials on machines.
 
-<Callout icon="warning">
-  Do not embed secrets in code or store long-lived credentials on developer machines. Centralize secrets in your pipeline or use managed identities to minimize operational risk.
-</Callout>
+> **warning** Do not embed secrets in code or store long-lived credentials on developer machines. Centralize secrets in your pipeline or use managed identities to minimize operational risk.
 
 Before the CD stage performs `terraform apply`, require approvals (manager, security, or change board) as appropriate. The recommended sequence is: plan → review → approve → apply. This preserves automation benefits while maintaining control.
 
@@ -191,6 +183,4 @@ Links and references
 * Managed identities: `https://learn.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview`
 * Compliance references: [ISO](https://www.iso.org/), [SOC](https://www.aicpa.org/interestareas/frc/assuranceadvisoryservices/soc-for-service-organizations.html), [HIPAA](https://www.hhs.gov/hipaa/index.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/70677d20-46be-4257-9a02-34aa382b3b05/lesson/58a7527e-8714-4d90-a8d8-4e6bb3c8ef93" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/70677d20-46be-4257-9a02-34aa382b3b05/lesson/58a7527e-8714-4d90-a8d8-4e6bb3c8ef93)

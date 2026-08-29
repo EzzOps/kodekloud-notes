@@ -25,9 +25,7 @@ For more options, refer to the official [systemctl documentation](https://www.fr
 
 If your system is hung or won’t shut down cleanly, you can force the operation. Use these commands sparingly—they bypass the normal shutdown sequence and risk data loss.
 
-<Callout icon="triangle-alert">
-  Forced shutdowns do not allow applications to close gracefully. Always try a standard reboot first.
-</Callout>
+> **triangle-alert** Forced shutdowns do not allow applications to close gracefully. Always try a standard reboot first.
 
 | Severity        | Command                                                                                |
 | --------------- | -------------------------------------------------------------------------------------- |
@@ -90,9 +88,7 @@ This message appears on all connected terminals, allowing users to save work bef
 * [shutdown(8) Manual](https://man7.org/linux/man-pages/man8/shutdown.8.html)
 * [Linux System Administration Basics](https://linuxhandbook.com/learn-linux/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/cfb03e11-b5b6-46a5-a71d-04714a0435c6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/cfb03e11-b5b6-46a5-a71d-04714a0435c6)
 
 
 # Diagnose and manage processes
@@ -132,9 +128,7 @@ Daemons such as `sshd` or long-running services remain active until explicitly s
 | Unix (POSIX) | `ps -e`  | Standard options prefixed with a dash |
 | BSD          | `ps axu` | Options without a dash                |
 
-<Callout icon="lightbulb">
-  Use `man ps` to explore all options and compare Unix vs. BSD syntax.
-</Callout>
+> **lightbulb** Use `man ps` to explore all options and compare Unix vs. BSD syntax.
 
 ### Common `ps` Usage
 
@@ -159,9 +153,7 @@ Daemons such as `sshd` or long-running services remain active until explicitly s
 
 The mnemonic **aux** (a: all with terminal, u: user format, x: include daemons) helps recall this combination.
 
-<Frame>
-  ![The image shows a terminal window displaying the manual page for the ps command, which reports a snapshot of current processes. It includes sections like NAME, SYNOPSIS, and DESCRIPTION.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881489/notes-assets/images/Linux-System-Administration-for-Beginners-Diagnose-and-manage-processes/ps-command-manual-terminal-snapshot.jpg)
-</Frame>
+![The image shows a terminal window displaying the manual page for the ps command, which reports a snapshot of current processes. It includes sections like NAME, SYNOPSIS, and DESCRIPTION.](https://kodekloud.com/kk-media/image/upload/v1752881489/notes-assets/images/Linux-System-Administration-for-Beginners-Diagnose-and-manage-processes/ps-command-manual-terminal-snapshot.jpg)
 
 Excerpt from `man ps`:
 
@@ -253,9 +245,7 @@ Display processes as a hierarchy:
 $ ps faxu
 ```
 
-<Frame>
-  ![The image shows a terminal window displaying a list of running processes on a CentOS system, including details like user, PID, CPU and memory usage, and command paths.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881490/notes-assets/images/Linux-System-Administration-for-Beginners-Diagnose-and-manage-processes/centos-terminal-running-processes-list.jpg)
-</Frame>
+![The image shows a terminal window displaying a list of running processes on a CentOS system, including details like user, PID, CPU and memory usage, and command paths.](https://kodekloud.com/kk-media/image/upload/v1752881490/notes-assets/images/Linux-System-Administration-for-Beginners-Diagnose-and-manage-processes/centos-terminal-running-processes-list.jpg)
 
 ***
 

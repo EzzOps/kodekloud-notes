@@ -73,7 +73,7 @@ In this configuration, the overlay imports the base resources, applies a patch t
 
 Below is another diagram that provides a more detailed look at the directory structure using Kustomize, showing both the base and overlay directories across different environments:
 
-![The image shows a directory structure for Kubernetes (K8s) configurations, including base and overlay folders for different environments like dev, stg, and prod, each containing YAML files. The "prod" overlay is highlighted with a dashed red line.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869808/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Overlays/kubernetes-kustomize-directory-structure.jpg)
+![The image shows a directory structure for Kubernetes (K8s) configurations, including base and overlay folders for different environments like dev, stg, and prod, each containing YAML files. The "prod" overlay is highlighted with a dashed red line.](https://kodekloud.com/kk-media/image/upload/v1752869808/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Overlays/kubernetes-kustomize-directory-structure.jpg)
 
 ## Summary
 

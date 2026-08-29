@@ -37,9 +37,9 @@ e
 
 Anonymous pipes use the `|` symbol to pass commands’ output directly as input to the next command, without creating files.
 
-![The image is a diagram explaining "Anonymous Pipe," which helps pass output from one place to another.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868646/notes-assets/images/Advanced-Bash-Scripting-Pipes/anonymous-pipe-diagram-explanation.jpg)
+![The image is a diagram explaining "Anonymous Pipe," which helps pass output from one place to another.](https://kodekloud.com/kk-media/image/upload/v1752868646/notes-assets/images/Advanced-Bash-Scripting-Pipes/anonymous-pipe-diagram-explanation.jpg)
 
-![The image shows a dark interface with the title "Pipes" at the top. It features a checkmark labeled "Pipe Input" and a vertical line symbol, possibly representing a pipe character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868647/notes-assets/images/Advanced-Bash-Scripting-Pipes/pipes-dark-interface-checkmark.jpg)
+![The image shows a dark interface with the title "Pipes" at the top. It features a checkmark labeled "Pipe Input" and a vertical line symbol, possibly representing a pipe character.](https://kodekloud.com/kk-media/image/upload/v1752868647/notes-assets/images/Advanced-Bash-Scripting-Pipes/pipes-dark-interface-checkmark.jpg)
 
 Think of a pipeline like an assembly line:
 
@@ -47,7 +47,7 @@ Think of a pipeline like an assembly line:
 2. Each subsequent command processes the incoming data and passes it along.
 3. The final output appears in your terminal.
 
-![The image illustrates the concept of pipes in computing, showing how the output of one process (command1) is used as input for another process (command2), ultimately displaying the result on a screen.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868648/notes-assets/images/Advanced-Bash-Scripting-Pipes/pipes-in-computing-processes-diagram.jpg)
+![The image illustrates the concept of pipes in computing, showing how the output of one process (command1) is used as input for another process (command2), ultimately displaying the result on a screen.](https://kodekloud.com/kk-media/image/upload/v1752868648/notes-assets/images/Advanced-Bash-Scripting-Pipes/pipes-in-computing-processes-diagram.jpg)
 
 ### Example: Filtering and Sorting a List
 

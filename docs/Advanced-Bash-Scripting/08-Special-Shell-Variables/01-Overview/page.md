@@ -52,7 +52,7 @@ This article explains special shell variables in Bash for better script feedback
 
 Shell scripting thrives on feedback—knowing whether each step succeeded, failed, or requires special handling. Special shell variables provide this introspection by exposing the shell environment, command-line arguments, process identifiers, and more. Leveraging these built-in indicators leads to more robust, maintainable scripts.
 
-![The image is a slide titled "Special Shell Variables," explaining that these variables allow access to information about the current shell environment and command-line arguments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868622/notes-assets/images/Advanced-Bash-Scripting-Overview/special-shell-variables-explanation.jpg)
+![The image is a slide titled "Special Shell Variables," explaining that these variables allow access to information about the current shell environment and command-line arguments.](https://kodekloud.com/kk-media/image/upload/v1752868622/notes-assets/images/Advanced-Bash-Scripting-Overview/special-shell-variables-explanation.jpg)
 
 ## Understanding Exit Status in Bash
 

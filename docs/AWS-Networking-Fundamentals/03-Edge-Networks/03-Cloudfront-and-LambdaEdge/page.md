@@ -6,7 +6,7 @@ This article explains how to use CloudFront and Lambda@Edge to run custom code a
 
 Amazon CloudFront delivers content from the nearest AWS edge location, reducing latency and improving performance. By integrating CloudFront Functions and Lambda\@Edge, you can inject custom logic into the request/response pipeline—right at the edge.
 
-![The image illustrates the flow of data through Amazon CloudFront, showing how CloudFront Functions and Lambda@Edge interact with various AWS services and edge locations to deliver content to a user.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863408/notes-assets/images/AWS-Networking-Fundamentals-Cloudfront-and-LambdaEdge/amazon-cloudfront-data-flow-diagram.jpg)
+![The image illustrates the flow of data through Amazon CloudFront, showing how CloudFront Functions and Lambda@Edge interact with various AWS services and edge locations to deliver content to a user.](https://kodekloud.com/kk-media/image/upload/v1752863408/notes-assets/images/AWS-Networking-Fundamentals-Cloudfront-and-LambdaEdge/amazon-cloudfront-data-flow-diagram.jpg)
 
 ## Supported Lifecycle Events
 
@@ -17,7 +17,7 @@ Edge functions trigger at specific points in CloudFront’s request/response cyc
 | CloudFront Functions | `viewer-request`, `viewer-response`                                      |
 | Lambda\@Edge         | `viewer-request`, `origin-request`, `origin-response`, `viewer-response` |
 
-![The image is a comparison chart showing when functions run for CloudFront and Lambda@Edge, detailing specific request and response events.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863410/notes-assets/images/AWS-Networking-Fundamentals-Cloudfront-and-LambdaEdge/cloudfront-lambdaedge-functions-comparison-chart.jpg)
+![The image is a comparison chart showing when functions run for CloudFront and Lambda@Edge, detailing specific request and response events.](https://kodekloud.com/kk-media/image/upload/v1752863410/notes-assets/images/AWS-Networking-Fundamentals-Cloudfront-and-LambdaEdge/cloudfront-lambdaedge-functions-comparison-chart.jpg)
 
 ## Detailed Request Flow
 
@@ -38,9 +38,9 @@ Edge functions trigger at specific points in CloudFront’s request/response cyc
 5. **Viewer Response**\
    Finally, before dispatching to the viewer, both function types can adjust the response payload or headers.
 
-![The image is a diagram illustrating a CloudFront distribution with Lambda functions triggering on viewer requests and responses, showing the interaction with CloudFront cache.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863411/notes-assets/images/AWS-Networking-Fundamentals-Cloudfront-and-LambdaEdge/cloudfront-distribution-lambda-diagram.jpg)
+![The image is a diagram illustrating a CloudFront distribution with Lambda functions triggering on viewer requests and responses, showing the interaction with CloudFront cache.](https://kodekloud.com/kk-media/image/upload/v1752863411/notes-assets/images/AWS-Networking-Fundamentals-Cloudfront-and-LambdaEdge/cloudfront-distribution-lambda-diagram.jpg)
 
-![The image is a diagram illustrating the flow of a cache miss in a CloudFront distribution, showing interactions between viewers, CloudFront cache, Lambda triggers, and an S3 bucket. It includes viewer request and response triggers, as well as origin request and response triggers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863412/notes-assets/images/AWS-Networking-Fundamentals-Cloudfront-and-LambdaEdge/cloudfront-cache-miss-diagram.jpg)
+![The image is a diagram illustrating the flow of a cache miss in a CloudFront distribution, showing interactions between viewers, CloudFront cache, Lambda triggers, and an S3 bucket. It includes viewer request and response triggers, as well as origin request and response triggers.](https://kodekloud.com/kk-media/image/upload/v1752863412/notes-assets/images/AWS-Networking-Fundamentals-Cloudfront-and-LambdaEdge/cloudfront-cache-miss-diagram.jpg)
 
 ## Common Use Cases
 
@@ -55,7 +55,7 @@ Edge functions trigger at specific points in CloudFront’s request/response cyc
 * **Request Authorization**\
   Perform lightweight token validation (e.g., JWT) by inspecting authorization headers.
 
-![The image lists four use cases for CloudFront Functions: cache key normalization, header manipulation, URL redirects or rewrites, and request authorization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863413/notes-assets/images/AWS-Networking-Fundamentals-Cloudfront-and-LambdaEdge/cloudfront-functions-use-cases-list.jpg)
+![The image lists four use cases for CloudFront Functions: cache key normalization, header manipulation, URL redirects or rewrites, and request authorization.](https://kodekloud.com/kk-media/image/upload/v1752863413/notes-assets/images/AWS-Networking-Fundamentals-Cloudfront-and-LambdaEdge/cloudfront-functions-use-cases-list.jpg)
 
 ### Lambda\@Edge
 
@@ -72,7 +72,7 @@ Edge functions trigger at specific points in CloudFront’s request/response cyc
 
 > **lightbulb** Use CloudFront Functions when you need sub-millisecond execution with minimal dependencies. Choose Lambda\@Edge for advanced workloads or when you require external network and file system access.
 
-![The image is a comparison table between CloudFront Functions and Lambda@Edge, detailing aspects like programming languages, event sources, scale, function duration, and pricing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863415/notes-assets/images/AWS-Networking-Fundamentals-Cloudfront-and-LambdaEdge/cloudfront-functions-lambda-edge-comparison.jpg)
+![The image is a comparison table between CloudFront Functions and Lambda@Edge, detailing aspects like programming languages, event sources, scale, function duration, and pricing.](https://kodekloud.com/kk-media/image/upload/v1752863415/notes-assets/images/AWS-Networking-Fundamentals-Cloudfront-and-LambdaEdge/cloudfront-functions-lambda-edge-comparison.jpg)
 
 ## Choosing the Right Option
 
@@ -92,7 +92,7 @@ Both CloudFront Functions and Lambda\@Edge extend your CDN with programmable log
 * Choose **CloudFront Functions** for lightweight, high-scale tasks such as header manipulation, redirects, or cache key normalization.
 * Opt for **Lambda\@Edge** when you need longer execution, external network access, or advanced libraries.
 
-![The image is a summary of CloudFront and Lambda@Edge functions, highlighting their use cases, operational details, and suitability for different tasks. It includes six key points about running code at edge locations, use cases, and function capabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863416/notes-assets/images/AWS-Networking-Fundamentals-Cloudfront-and-LambdaEdge/cloudfront-lambda-edge-summary-use-cases.jpg)
+![The image is a summary of CloudFront and Lambda@Edge functions, highlighting their use cases, operational details, and suitability for different tasks. It includes six key points about running code at edge locations, use cases, and function capabilities.](https://kodekloud.com/kk-media/image/upload/v1752863416/notes-assets/images/AWS-Networking-Fundamentals-Cloudfront-and-LambdaEdge/cloudfront-lambda-edge-summary-use-cases.jpg)
 
 ## References
 

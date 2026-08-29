@@ -35,9 +35,7 @@ You can use special characters in these fields:
 
 The default system-wide cron table, located at `/etc/crontab`, usually includes explanatory comments. Below is a sample excerpt:
 
-<Frame>
-  ![The image illustrates a server setup for automated tasks, specifically a database backup every Sunday at 3:00 AM, using Cron, Anacron, and "at" for scheduling.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881353/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Schedule-Tasks-to-Run-at-a-Set-Date-and-Time/server-setup-automated-backup-schedule.jpg)
-</Frame>
+![The image illustrates a server setup for automated tasks, specifically a database backup every Sunday at 3:00 AM, using Cron, Anacron, and "at" for scheduling.](https://kodekloud.com/kk-media/image/upload/v1752881353/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Schedule-Tasks-to-Run-at-a-Set-Date-and-Time/server-setup-automated-backup-schedule.jpg)
 
 ```bash theme={null}
 $ cat /etc/crontab

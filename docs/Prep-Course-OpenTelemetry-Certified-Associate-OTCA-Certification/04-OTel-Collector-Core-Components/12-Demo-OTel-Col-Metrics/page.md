@@ -11,9 +11,7 @@ This guide demonstrates how to configure the OpenTelemetry Collector to receive 
 
 Below are compact, corrected Collector configuration and application examples used in the demo, followed by representative Collector console output showing metrics ingestion. Use these snippets to validate both ingestion models and to troubleshoot common issues.
 
-<Callout icon="lightbulb">
-  This article shows two common ways to get metrics into the Collector: OTLP push and Prometheus scrape. You can enable both simultaneously by configuring both receivers and adding them to your metrics pipeline.
-</Callout>
+> **lightbulb** This article shows two common ways to get metrics into the Collector: OTLP push and Prometheus scrape. You can enable both simultaneously by configuring both receivers and adding them to your metrics pipeline.
 
 ## Collector: common pieces
 

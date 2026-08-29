@@ -70,9 +70,7 @@ This computes the per‑second request rate from a monotonic counter over a 5‑
 
 When diagnosing incidents, dimensions let you pinpoint issues to a specific user or session. However, each additional high‑cardinality attribute multiplies the number of unique series and can dramatically raise cost and complexity.
 
-<Callout icon="lightbulb">
-  Balance the utility of granular dimensions against the cost of higher cardinality. Consider sampling, rolling up identifiers, or using lower‑cardinality attributes instead of raw IDs when possible.
-</Callout>
+> **lightbulb** Balance the utility of granular dimensions against the cost of higher cardinality. Consider sampling, rolling up identifiers, or using lower‑cardinality attributes instead of raw IDs when possible.
 
 ## Quick reference table
 
@@ -97,6 +95,4 @@ When diagnosing incidents, dimensions let you pinpoint issues to a specific user
 
 That concludes the recap. Understanding monotonicity, temporality, aggregation, and dimensions ensures your metrics are reliable, efficient, and actionable for both monitoring and alerting.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/07291443-947a-4e39-8c0c-ccce6ae4f10e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/07291443-947a-4e39-8c0c-ccce6ae4f10e)

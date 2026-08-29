@@ -190,9 +190,7 @@ Links and references
 * [Kustomize](https://kustomize.io/)
 * [golangci-lint — Plugins](https://golangci-lint.run/plugins/module-plugins/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/20a4ec01-fde8-466d-83c7-2f74f6def1f0/lesson/3a7a64b0-9757-43f8-b3dc-cbd16825ad4b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/20a4ec01-fde8-466d-83c7-2f74f6def1f0/lesson/3a7a64b0-9757-43f8-b3dc-cbd16825ad4b)
 
 
 # Demo What The Generator Wrote For You

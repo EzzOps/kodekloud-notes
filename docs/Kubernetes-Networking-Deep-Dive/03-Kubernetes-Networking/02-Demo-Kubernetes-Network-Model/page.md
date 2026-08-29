@@ -261,6 +261,4 @@ This confirms **cluster-wide Pod-to-Pod connectivity**, a core requirement of th
 * [ip-netns Manual](https://man7.org/linux/man-pages/man8/ip-netns.8.html)
 * [CNI GitHub Repository](https://github.com/containernetworking/cni)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/0ef9d5a8-532a-4e0a-8fdc-fc2845255bd7/lesson/bbf4fc46-899f-491f-9057-6055472c16d7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/0ef9d5a8-532a-4e0a-8fdc-fc2845255bd7/lesson/bbf4fc46-899f-491f-9057-6055472c16d7)

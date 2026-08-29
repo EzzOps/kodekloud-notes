@@ -22,9 +22,7 @@ Links and references
 * [Cilium Documentation — CLI](https://docs.cilium.io/en/stable/gettingstarted/cli/)
 * [kubectl exec reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#exec)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/cc56f4b0-1780-44b2-8ead-8b4fbec08f5d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/cc56f4b0-1780-44b2-8ead-8b4fbec08f5d)
 
 
 # Course Introduction

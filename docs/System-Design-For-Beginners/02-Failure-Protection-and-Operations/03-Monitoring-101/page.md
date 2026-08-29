@@ -8,9 +8,7 @@ Our photo app has evolved into a full distributed system: load balancer, applica
 
 Monitoring (part of observability) gives you visibility into the system. It relies on three core signals — logs, metrics, and traces — and you want all three because each answers a different question about behavior and performance.
 
-<Callout icon="lightbulb">
-  Monitoring and observability are complementary: monitoring detects and alerts on problems; observability lets you investigate and understand root causes using logs, metrics, and traces.
-</Callout>
+> **lightbulb** Monitoring and observability are complementary: monitoring detects and alerts on problems; observability lets you investigate and understand root causes using logs, metrics, and traces.
 
 <Frame>
   <img alt="The image illustrates a system architecture showing the flow from a user's app through load balancer, app servers, cache, and database, while highlighting monitoring components: logs (what happened), metrics (how much/how fast), and traces (where did time go)." />
@@ -94,9 +92,7 @@ alert if error_rate > 1% for 5m:
 
 Think of an alert like a smoke detector: it notifies you when something is wrong. Be careful with thresholds and durations: overly sensitive alerts (false positives) cause alert fatigue, while overly lax thresholds delay detection.
 
-<Callout icon="warning">
-  Avoid alert fatigue by choosing thresholds and durations that reduce false positives. If alerts are noisy, responders will start ignoring them and real incidents may be missed.
-</Callout>
+> **warning** Avoid alert fatigue by choosing thresholds and durations that reduce false positives. If alerts are noisy, responders will start ignoring them and real incidents may be missed.
 
 When metrics are reliable, you can automate responses. Auto-scaling is a common example: use metrics (average CPU, request latency, queue depth) to grow or shrink capacity automatically, keeping user experience stable without manual intervention.
 
@@ -140,8 +136,6 @@ Links and references
 * Jaeger: [https://www.jaegertracing.io](https://www.jaegertracing.io)
 * Grafana Tempo: [https://grafana.com/oss/tempo](https://grafana.com/oss/tempo)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/c7a8e3b7-9370-4462-a298-4a441dd68f8a/lesson/7109fb48-acaa-4566-b95b-9e43a9592708" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/c7a8e3b7-9370-4462-a298-4a441dd68f8a/lesson/7109fb48-acaa-4566-b95b-9e43a9592708)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/c7a8e3b7-9370-4462-a298-4a441dd68f8a/lesson/a08be415-3992-4549-96d3-6be1bc1ac88f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/c7a8e3b7-9370-4462-a298-4a441dd68f8a/lesson/a08be415-3992-4549-96d3-6be1bc1ac88f)

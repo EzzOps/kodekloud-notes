@@ -8,9 +8,7 @@ Azure Active Directory (Azure AD) Identity Protection provides two key policy ty
 
 User Risk Policy leverages machine learning to determine the probability that a user identity has been compromised. This policy emphasizes enforcement: you define a risk level that triggers specific actions, such as blocking access, requiring a password reset, or prompting for multi-factor authentication (MFA). Azure AD continuously evaluates risk by analyzing historical data, offline signals, and real-time indicators. Using these insights, the system assigns a risk severity that helps determine the appropriate response. For example, if a user's risk is deemed very high, access to applications can be completely blocked.
 
-<Callout icon="lightbulb">
-  Microsoft recommends using conditional access policies over standalone user risk policies. Conditional access not only incorporates user risk scores but also provides enhanced control mechanisms. However, understanding the fundamentals of the user risk policy remains essential.
-</Callout>
+> **lightbulb** Microsoft recommends using conditional access policies over standalone user risk policies. Conditional access not only incorporates user risk scores but also provides enhanced control mechanisms. However, understanding the fundamentals of the user risk policy remains essential.
 
 ## Benefits of Deploying User Risk Policy
 
@@ -23,9 +21,7 @@ Implementing a User Risk Policy offers multiple advantages:
    * **High Risk:** Block access entirely.
 3. **Proactive Protection** – Detects and mitigates potential security threats before they escalate.
 
-<Frame>
-  ![The image outlines three benefits: Enhanced Security, Flexible Control, and Proactive Protection, each represented with icons and numbered 01 to 03.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881960/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-user-risk-policy/benefits-security-control-protection.jpg)
-</Frame>
+![The image outlines three benefits: Enhanced Security, Flexible Control, and Proactive Protection, each represented with icons and numbered 01 to 03.](https://kodekloud.com/kk-media/image/upload/v1752881960/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-user-risk-policy/benefits-security-control-protection.jpg)
 
 These benefits can be applied directly within Azure AD or through conditional access policies to gain enhanced control over user access.
 
@@ -49,13 +45,9 @@ To set up the User Risk Policy, follow these steps:
    * Block access.
    * Allow access while enforcing a password change.
 
-<Callout icon="triangle-alert">
-  Enforcing MFA directly through the user risk policy is not supported. To enforce MFA, implement a conditional access policy.
-</Callout>
+> **triangle-alert** Enforcing MFA directly through the user risk policy is not supported. To enforce MFA, implement a conditional access policy.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen displaying the "Identity Protection | User risk policy" settings. It includes options for user assignments, risk levels, and access controls, with a focus on requiring a password change.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881961/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-user-risk-policy/azure-identity-protection-user-risk-policy.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen displaying the "Identity Protection | User risk policy" settings. It includes options for user assignments, risk levels, and access controls, with a focus on requiring a password change.](https://kodekloud.com/kk-media/image/upload/v1752881961/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-user-risk-policy/azure-identity-protection-user-risk-policy.jpg)
 
 After configuring these settings, ensure that the policy is set to "Enabled" and save your changes. With the policy active, any sign-in event that reaches or exceeds the defined risk threshold will automatically trigger the selected enforcement action. For testing, consider configuring the policy to allow access with a password change requirement. This precaution minimizes the risk of unintentionally locking out accounts.
 
@@ -70,6 +62,4 @@ For further reading, check out the following resources:
 
 By understanding and implementing these risk policies, you can significantly enhance your organization's security posture.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d856cd5d-a782-4723-82b7-5a6e69cba71d/lesson/0795cded-24e6-415b-9853-480fbf100cd5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d856cd5d-a782-4723-82b7-5a6e69cba71d/lesson/0795cded-24e6-415b-9853-480fbf100cd5)

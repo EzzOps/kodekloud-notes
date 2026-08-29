@@ -72,9 +72,7 @@ kubectl get svc
   <img alt="The image outlines steps for connecting Grafana to Prometheus, including navigating to datasources, selecting Prometheus, setting the URL, and marking it as default." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Make sure the Prometheus URL is reachable from the Grafana pod. If Grafana cannot reach the service, check Kubernetes network policies, the service name, and the service port (Prometheus default is `9090`).
-</Callout>
+> **lightbulb** Make sure the Prometheus URL is reachable from the Grafana pod. If Grafana cannot reach the service, check Kubernetes network policies, the service name, and the service port (Prometheus default is `9090`).
 
 Example provisioning YAML (for automated provisioning in Grafana):
 

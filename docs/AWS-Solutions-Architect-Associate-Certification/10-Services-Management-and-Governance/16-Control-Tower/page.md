@@ -12,7 +12,7 @@ Built on top of AWS Organizations, AWS Control Tower leverages features such as 
 
 Control Tower also sets up a landing zone, a secure foundation for a well-architected, multi-account environment. This landing zone deploys a collection of best practices for services like AWS CloudTrail and AWS Organizations, eliminating the need for manual setup and enabling rapid deployment of new applications and services.
 
-![The image is a diagram of a "Control Tower" setup, showing a hierarchical structure with a "Root" node connected to various accounts like Security, Sandbox, Test, Staging, and Prod within a "Landing Zone."](../../../../images/kodekloud.com/kk-media/image/upload/v1752865306/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Control-Tower/control-tower-hierarchical-structure-diagram.jpg)
+![The image is a diagram of a "Control Tower" setup, showing a hierarchical structure with a "Root" node connected to various accounts like Security, Sandbox, Test, Staging, and Prod within a "Landing Zone."](https://kodekloud.com/kk-media/image/upload/v1752865306/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Control-Tower/control-tower-hierarchical-structure-diagram.jpg)
 
 > **lightbulb** If your organization lacks internal expertise for configuring multi-account environments according to AWS best practices, the preconfigured landing zone in AWS Control Tower provides a secure starting point.
 
@@ -28,7 +28,7 @@ When you provision a new account, AWS Control Tower enforces several guardrails 
 
 All guardrails are preconfigured within AWS Control Tower, ensuring that every new account automatically aligns with your organization’s security baseline.
 
-![The image illustrates AWS Control Tower Guardrails, featuring two types: Preventive and Detective, connected to AWS Organizations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865307/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Control-Tower/aws-control-tower-guardrails-diagram.jpg)
+![The image illustrates AWS Control Tower Guardrails, featuring two types: Preventive and Detective, connected to AWS Organizations.](https://kodekloud.com/kk-media/image/upload/v1752865307/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Control-Tower/aws-control-tower-guardrails-diagram.jpg)
 
 Consider these examples:
 
@@ -39,7 +39,7 @@ Consider these examples:
 
 AWS Control Tower simplifies the onboarding of new AWS accounts with its Account Factory. This feature automates the provisioning process by applying organizational policies, baselines, and the necessary guardrails consistently across all accounts.
 
-![The image is a diagram titled "Account Factory," showing a process with two main components: "New Account Creation" and "Configuration & Baseline," with inputs of "Organizational Unit" and "Account details."](../../../../images/kodekloud.com/kk-media/image/upload/v1752865308/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Control-Tower/account-factory-diagram-process.jpg)
+![The image is a diagram titled "Account Factory," showing a process with two main components: "New Account Creation" and "Configuration & Baseline," with inputs of "Organizational Unit" and "Account details."](https://kodekloud.com/kk-media/image/upload/v1752865308/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Control-Tower/account-factory-diagram-process.jpg)
 
 ## Key Features of AWS Control Tower
 
@@ -53,7 +53,7 @@ AWS Control Tower enhances your cloud infrastructure management with the followi
 | Improved Operational Efficiency     | Speeds up the deployment process and reduces management overhead.                          |
 | Continuous Monitoring               | Provides real-time visibility into your environment’s compliance with defined policies.    |
 
-![The image lists five features: Simplified Multi-Account Environments, Reduce Risk of Human Error, Automated Policy Enforcement, Improve Operational Efficiency, and Continuous Monitoring. Each feature is accompanied by an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865309/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Control-Tower/features-multi-account-automation-monitoring.jpg)
+![The image lists five features: Simplified Multi-Account Environments, Reduce Risk of Human Error, Automated Policy Enforcement, Improve Operational Efficiency, and Continuous Monitoring. Each feature is accompanied by an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752865309/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Control-Tower/features-multi-account-automation-monitoring.jpg)
 
 > **lightbulb** AWS Control Tower is designed to integrate seamlessly with your existing AWS infrastructure, ensuring compliance and operational excellence while reducing administrative burden.
 

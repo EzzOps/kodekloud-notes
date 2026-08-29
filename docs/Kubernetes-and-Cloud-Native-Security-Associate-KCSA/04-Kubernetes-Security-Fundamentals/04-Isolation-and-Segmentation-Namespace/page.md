@@ -27,9 +27,7 @@ Authorization is critical in multi-tenant clusters to isolate workloads and prot
 
 Kubernetes supports several authorization modes, evaluated in order:
 
-<Frame>
-  ![The image lists different authorization mechanisms: Node, ABAC, RBAC, and Webhook.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880778/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Authorization/authorization-mechanisms-node-abac-rbac-webhook.jpg)
-</Frame>
+![The image lists different authorization mechanisms: Node, ABAC, RBAC, and Webhook.](https://kodekloud.com/kk-media/image/upload/v1752880778/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Authorization/authorization-mechanisms-node-abac-rbac-webhook.jpg)
 
 | Mode    | Description                                                                                             |
 | ------- | ------------------------------------------------------------------------------------------------------- |
@@ -42,9 +40,7 @@ Kubernetes supports several authorization modes, evaluated in order:
 
 Kubelets use TLS client certificates (user `system:node:<nodeName>`, group `system:nodes`) to communicate with the API server. The Node Authorizer automatically grants permissions to read Pods/Services and report node status—nothing more.
 
-<Frame>
-  ![The image illustrates a "Node Authorizer" process involving a user, Kube API, and kubelet, with a certificate for authentication. It shows read and write permissions for services, endpoints, nodes, pods, and status updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880779/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Authorization/node-authorizer-process-kube-api.jpg)
-</Frame>
+![The image illustrates a "Node Authorizer" process involving a user, Kube API, and kubelet, with a certificate for authentication. It shows read and write permissions for services, endpoints, nodes, pods, and status updates.](https://kodekloud.com/kk-media/image/upload/v1752880779/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Authorization/node-authorizer-process-kube-api.jpg)
 
 ### 2. Attribute-Based Access Control (ABAC)
 
@@ -64,17 +60,13 @@ ABAC policies are static JSON files supplied at API server startup. Each entry m
 
 Multiple entries require manual edits and an API server restart.
 
-<Callout icon="triangle-alert">
-  ABAC can become unwieldy in large environments since every permission change needs a file update and server restart.
-</Callout>
+> **triangle-alert** ABAC can become unwieldy in large environments since every permission change needs a file update and server restart.
 
 ### 3. Role-Based Access Control (RBAC)
 
 RBAC organizes permissions into **Roles** (namespace-scoped) or **ClusterRoles** (cluster-scoped), then binds them to users, groups, or service accounts. Changes to a Role take effect immediately for all subjects.
 
-<Frame>
-  ![The image illustrates a Role-Based Access Control (RBAC) system, showing different users and groups with their assigned roles and permissions, such as "Developer" and "Security," with specific capabilities like viewing and creating PODs or approving CSRs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880780/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Authorization/rbac-system-users-roles-permissions.jpg)
-</Frame>
+![The image illustrates a Role-Based Access Control (RBAC) system, showing different users and groups with their assigned roles and permissions, such as "Developer" and "Security," with specific capabilities like viewing and creating PODs or approving CSRs.](https://kodekloud.com/kk-media/image/upload/v1752880780/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Authorization/rbac-system-users-roles-permissions.jpg)
 
 > RBAC is the recommended authorization mechanism for most production clusters.
 
@@ -101,9 +93,7 @@ ExecStart=/usr/local/bin/kube-apiserver \
   # (other flags omitted)
 ```
 
-<Callout icon="lightbulb">
-  If `--authorization-mode` is omitted, Kubernetes uses `AlwaysAllow` by default.
-</Callout>
+> **lightbulb** If `--authorization-mode` is omitted, Kubernetes uses `AlwaysAllow` by default.
 
 To combine multiple modes:
 
@@ -129,9 +119,7 @@ Role-Based Access Control in Kubernetes will be covered in more depth later in t
 * [RBAC in Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
 * [Open Policy Agent (OPA)](https://www.openpolicyagent.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/35283238-b8fb-4849-b620-fc3c7d1a8941" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/35283238-b8fb-4849-b620-fc3c7d1a8941)
 
 
 # Isolation and Segmentation Namespace
@@ -146,15 +134,11 @@ Efficient cluster management and security often start with isolating workloads i
 
 Imagine there are two boys both named Mark. To avoid confusion, one goes by **Mark Smith** and the other by **Mark Williams**. They each live in separate houses: the Smiths’ house and the Williams’ house. Inside a house, family members simply say “Mark.” But when talking to someone outside, they use the full name.
 
-<Frame>
-  ![The image shows two house-shaped outlines, one with a green family icon labeled "Mark Smith" and the other with a red single person icon labeled "Mark Williams."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880781/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Namespace/house-outlines-family-icons.jpg)
-</Frame>
+![The image shows two house-shaped outlines, one with a green family icon labeled "Mark Smith" and the other with a red single person icon labeled "Mark Williams."](https://kodekloud.com/kk-media/image/upload/v1752880781/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Namespace/house-outlines-family-icons.jpg)
 
 When someone from outside needs to address a Mark, they must specify which house:
 
-<Frame>
-  ![The image shows two houses labeled "Mark Smith" and "Mark Williams," each containing family figures. A person in the center is associated with speech bubbles indicating both names.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880782/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Namespace/houses-mark-smith-williams-family.jpg)
-</Frame>
+![The image shows two houses labeled "Mark Smith" and "Mark Williams," each containing family figures. A person in the center is associated with speech bubbles indicating both names.](https://kodekloud.com/kk-media/image/upload/v1752880782/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Namespace/houses-mark-smith-williams-family.jpg)
 
 This is exactly how Kubernetes namespaces operate: each namespace holds its own pods, services, and rules, preventing naming collisions and enabling fine-grained policy application.
 
@@ -176,17 +160,11 @@ Kubernetes creates several namespaces out of the box:
 | kube-system | Core components and add-ons (DNS, network plugins, controllers) |
 | kube-public | Read-only namespace for publicly accessible resources           |
 
-<Callout icon="lightbulb">
-  If you’re experimenting or running a small cluster, you can operate entirely within the `default` namespace. In production, separate namespaces (`dev`, `prod`, etc.) improve security and resource governance.
-</Callout>
+> **lightbulb** If you’re experimenting or running a small cluster, you can operate entirely within the `default` namespace. In production, separate namespaces (`dev`, `prod`, etc.) improve security and resource governance.
 
-<Frame>
-  ![The image illustrates the concept of namespace isolation with three house-shaped diagrams labeled "kube-system," "Default," and "kube-public," each containing a blue circle, red triangle, and yellow square.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880782/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Namespace/namespace-isolation-house-diagrams.jpg)
-</Frame>
+![The image illustrates the concept of namespace isolation with three house-shaped diagrams labeled "kube-system," "Default," and "kube-public," each containing a blue circle, red triangle, and yellow square.](https://kodekloud.com/kk-media/image/upload/v1752880782/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Namespace/namespace-isolation-house-diagrams.jpg)
 
-<Frame>
-  ![The image illustrates a diagram of Kubernetes namespaces and resource limits, showing different nodes and resources within a cluster. It includes labeled sections for Default, Prod, and Dev environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880784/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Namespace/kubernetes-namespaces-resource-limits-diagram.jpg)
-</Frame>
+![The image illustrates a diagram of Kubernetes namespaces and resource limits, showing different nodes and resources within a cluster. It includes labeled sections for Default, Prod, and Dev environments.](https://kodekloud.com/kk-media/image/upload/v1752880784/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Namespace/kubernetes-namespaces-resource-limits-diagram.jpg)
 
 ## Service Discovery and DNS
 

@@ -12,9 +12,7 @@ A concise one-line opener you can use:
 
 Saying this sentence up front demonstrates clarity about scope. Many candidates lose momentum because they immediately dive into implementation details without confirming the interviewer’s expectations.
 
-<Callout icon="lightbulb">
-  Always confirm the expected level of detail. Ask a clarifying question such as: "Do you want a high-level system architecture or a low-level class/data-structure design?"
-</Callout>
+> **lightbulb** Always confirm the expected level of detail. Ask a clarifying question such as: "Do you want a high-level system architecture or a low-level class/data-structure design?"
 
 Why set the altitude?
 
@@ -77,10 +75,6 @@ Resources and further reading
 * [Designing Data-Intensive Applications](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/)
 * [High Scalability](http://highscalability.com/)
 
-<Callout icon="warning">
-  Avoid starting with implementation details (classes, code) when the interviewer asked for a high-level system design. Confirm the expected altitude upfront.
-</Callout>
+> **warning** Avoid starting with implementation details (classes, code) when the interviewer asked for a high-level system design. Confirm the expected altitude upfront.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/6c85b350-ee21-4923-a539-742c78880e71" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/6c85b350-ee21-4923-a539-742c78880e71)

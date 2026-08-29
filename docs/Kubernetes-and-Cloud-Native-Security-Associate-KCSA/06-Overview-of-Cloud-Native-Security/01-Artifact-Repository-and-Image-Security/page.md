@@ -25,9 +25,7 @@ sarah   localhost=/usr/bin/shutdown -r now
 | Commands             | Allowed commands or `ALL` for full rights             | `/usr/bin/shutdown -r now`       |
 | Comments             | Lines beginning with `#` are ignored                  | `# User privilege specification` |
 
-<Callout icon="triangle-alert">
-  Never edit `/etc/sudoers` with a regular text editor. Syntax errors can lock out all sudo access. Always use `visudo`.
-</Callout>
+> **triangle-alert** Never edit `/etc/sudoers` with a regular text editor. Syntax errors can lock out all sudo access. Always use `visudo`.
 
 ## Best Practices for sudo Configuration
 
@@ -61,9 +59,7 @@ sarah   localhost=/usr/bin/shutdown -r now
 * [Principle of Least Privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege)
 * [Kali Linux Privilege Escalation Guide](https://www.kali.org/docs/practice/privilege-escalation/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/6da25ade-b162-485c-b9b9-f351990e99c2/lesson/95be0e42-0b15-4321-bd4c-41508664fd26" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/6da25ade-b162-485c-b9b9-f351990e99c2/lesson/95be0e42-0b15-4321-bd4c-41508664fd26)
 
 
 # Artifact Repository and Image Security
@@ -82,27 +78,19 @@ Team A selected containerization for their CRM application to achieve:
 * Isolation
 * Enhanced security
 
-<Frame>
-  ![The image illustrates a "Team A Scenario" focusing on containerization, highlighting key benefits such as portability, scalability, consistency, isolation, and security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880835/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/team-a-scenario-containerization-benefits.jpg)
-</Frame>
+![The image illustrates a "Team A Scenario" focusing on containerization, highlighting key benefits such as portability, scalability, consistency, isolation, and security.](https://kodekloud.com/kk-media/image/upload/v1752880835/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/team-a-scenario-containerization-benefits.jpg)
 
 ## Risk of Untrusted Base Images
 
 In the rush to deploy, Team A used a `latest`-tagged base image from Docker Hub without verifying its origin or maintenance status. While the container spun up successfully, the CRM soon experienced performance degradation and instability.
 
-<Frame>
-  ![The image illustrates a concept of software vulnerabilities, showing a document with a bug icon under a magnifying glass, labeled "Known Vulnerabilities," and mentions that Team A assumes it is secure with the latest tag, but it is not updated.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880837/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/software-vulnerabilities-known-bug.jpg)
-</Frame>
+![The image illustrates a concept of software vulnerabilities, showing a document with a bug icon under a magnifying glass, labeled "Known Vulnerabilities," and mentions that Team A assumes it is secure with the latest tag, but it is not updated.](https://kodekloud.com/kk-media/image/upload/v1752880837/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/software-vulnerabilities-known-bug.jpg)
 
 A deep dive revealed multiple unpatched CVEs in the `latest` image, which attackers exploited to compromise data integrity and leak customer information.
 
-<Frame>
-  ![The image illustrates vulnerabilities in software, highlighting a magnifying glass over a Docker logo with a bug icon, and mentions "Latest" and "Not Always Updated or Secure."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880838/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/docker-vulnerabilities-magnifying-glass.jpg)
-</Frame>
+![The image illustrates vulnerabilities in software, highlighting a magnifying glass over a Docker logo with a bug icon, and mentions "Latest" and "Not Always Updated or Secure."](https://kodekloud.com/kk-media/image/upload/v1752880838/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Artifact-Repository-and-Image-Security/docker-vulnerabilities-magnifying-glass.jpg)
 
-<Callout icon="triangle-alert">
-  Relying on the `latest` tag does not ensure up-to-date security patches. Image maintainers can assign it arbitrarily, leaving you exposed to risks.
-</Callout>
+> **triangle-alert** Relying on the `latest` tag does not ensure up-to-date security patches. Image maintainers can assign it arbitrarily, leaving you exposed to risks.
 
 ## Integrating Vulnerability Scanning
 

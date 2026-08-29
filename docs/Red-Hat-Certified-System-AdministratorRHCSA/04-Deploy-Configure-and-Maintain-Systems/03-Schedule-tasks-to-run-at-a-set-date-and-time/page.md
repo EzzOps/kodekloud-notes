@@ -63,9 +63,7 @@ Dec 08 16:48:53 LFCS-CentOS sshd[1031]: Server listening on :: port 22.
 Dec 08 16:48:53 LFCS-CentOS systemd[1]: Started OpenSSH server daemon.
 ```
 
-<Callout icon="lightbulb">
-  An enabled service will start automatically during system boot. Always check recent log messages to diagnose startup issues.
-</Callout>
+> **lightbulb** An enabled service will start automatically during system boot. Always check recent log messages to diagnose startup issues.
 
 ## Controlling Service States
 
@@ -97,9 +95,7 @@ Dec 08 17:26:20 LFCS-CentOS sshd[3952]: Received SIGHUP; restarting.
 Dec 08 17:26:20 LFCS-CentOS systemd[1]: Reloaded OpenSSH server daemon.
 ```
 
-<Callout icon="triangle-alert">
-  Not all applications support a graceful reload. If a reload is not possible, systemd may perform a full restart.
-</Callout>
+> **triangle-alert** Not all applications support a graceful reload. If a reload is not possible, systemd may perform a full restart.
 
 ## Enabling and Disabling Services
 
@@ -143,9 +139,7 @@ To disable plus stop a service at the same time:
 $ sudo systemctl disable --now sshd.service
 ```
 
-<Callout icon="triangle-alert">
-  Be cautious when disabling critical services such as the SSH daemon; doing so can lock you out of your system.
-</Callout>
+> **triangle-alert** Be cautious when disabling critical services such as the SSH daemon; doing so can lock you out of your system.
 
 ## Masking Services
 
@@ -200,11 +194,9 @@ In this article, we covered how Linux manages startup processes and services usi
 
 Now it's time to put these concepts into practice in a lab environment to solidify your understanding.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/736506db-a70d-463d-a061-74c768d309b0/lesson/6122c847-8679-4bad-a5ba-e468f4532bdb" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/736506db-a70d-463d-a061-74c768d309b0/lesson/6122c847-8679-4bad-a5ba-e468f4532bdb)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/736506db-a70d-463d-a061-74c768d309b0/lesson/061c4741-156a-4dc1-ab0e-e2f6c26620dc" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/736506db-a70d-463d-a061-74c768d309b0/lesson/061c4741-156a-4dc1-ab0e-e2f6c26620dc)
 
 
 # Schedule tasks to run at a set date and time

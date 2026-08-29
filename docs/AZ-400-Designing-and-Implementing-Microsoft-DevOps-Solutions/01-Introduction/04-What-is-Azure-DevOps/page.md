@@ -6,7 +6,7 @@ Azure DevOps is Microsoft’s cloud-native suite of services that supports the e
 
 Azure DevOps is Microsoft’s cloud-native suite of services that supports the entire software delivery lifecycle. It unifies planning, coding, building, testing, and deploying into a seamless experience—backed by extensibility through first- and third-party integrations.
 
-![The image is an introduction to Azure DevOps, featuring icons for Azure Subscriptions, Azure Repos, Azure Pipelines, and Azure Boards, along with a cloud and computer graphic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868094/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-Azure-DevOps/azure-devops-introduction-icons-cloud-computer.jpg)
+![The image is an introduction to Azure DevOps, featuring icons for Azure Subscriptions, Azure Repos, Azure Pipelines, and Azure Boards, along with a cloud and computer graphic.](https://kodekloud.com/kk-media/image/upload/v1752868094/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-Azure-DevOps/azure-devops-introduction-icons-cloud-computer.jpg)
 
 ***
 
@@ -20,7 +20,7 @@ Azure DevOps offers three foundational services that streamline modern developme
 | Repos     | Git-based version control & collaboration | `git clone`, pull requests           |
 | Pipelines | Automated CI/CD                           | YAML builds, release gates           |
 
-![The image outlines three core features: boards for project tracking, repos for source control, and pipelines for CI/CD, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868095/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-Azure-DevOps/project-tracking-source-control-ci-cd.jpg)
+![The image outlines three core features: boards for project tracking, repos for source control, and pipelines for CI/CD, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752868095/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-Azure-DevOps/project-tracking-source-control-ci-cd.jpg)
 
 > **lightbulb** You can extend each service with Marketplace extensions—such as test management, package feeds, and integration with third-party tools—to fit your workflow.
 
@@ -48,7 +48,7 @@ If you’re preparing for the [AZ-400: Designing and Implementing Microsoft DevO
 3. **CI/CD Pipeline Design**
    * YAML vs. Classic pipelines, release gates, deployment strategies
 
-![The image outlines the focus areas for the AZ-400 exam, which include understanding Azure services and implementing DevOps strategies, alongside a Microsoft certification badge for the AZ-400 exam.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868096/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-Azure-DevOps/az-400-exam-focus-areas-diagram.jpg)
+![The image outlines the focus areas for the AZ-400 exam, which include understanding Azure services and implementing DevOps strategies, alongside a Microsoft certification badge for the AZ-400 exam.](https://kodekloud.com/kk-media/image/upload/v1752868096/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-Azure-DevOps/az-400-exam-focus-areas-diagram.jpg)
 
 ***
 
@@ -56,7 +56,7 @@ If you’re preparing for the [AZ-400: Designing and Implementing Microsoft DevO
 
 Azure DevOps delivers an end-to-end solution for planning, developing, testing, and deploying applications. Its native integration with Azure services makes it a cornerstone for any modern DevOps environment—enabling faster delivery, higher quality, and improved collaboration.
 
-![The image is a summary slide with a gradient blue background on the left, listing two points: "Comprehensive DevOps solution" and "Integration with Azure services."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868097/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-Azure-DevOps/devops-solution-azure-integration-summary.jpg)
+![The image is a summary slide with a gradient blue background on the left, listing two points: "Comprehensive DevOps solution" and "Integration with Azure services."](https://kodekloud.com/kk-media/image/upload/v1752868097/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-What-is-Azure-DevOps/devops-solution-azure-integration-summary.jpg)
 
 ## Links and References
 

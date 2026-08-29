@@ -20,9 +20,7 @@ To start Vault using your configuration file:
 vault server -config /etc/vault.d/vault.hcl
 ```
 
-<Callout icon="lightbulb">
-  In production environments, manage Vault with a service manager like **systemd** or **Windows Service Manager** to ensure automatic startup and proper log handling.
-</Callout>
+> **lightbulb** In production environments, manage Vault with a service manager like **systemd** or **Windows Service Manager** to ensure automatic startup and proper log handling.
 
 ## Key Configuration Components
 

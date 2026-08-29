@@ -12,9 +12,7 @@ Mutation moves beyond passive checks. With Kyverno mutate rules, you can automat
   <img alt="The image illustrates Kyverno's &#x22;Mutate Rules,&#x22; describing a process where standards are enforced, and roles are shown as a gatekeeper and an assistant." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Mutation lets Kyverno modify resources—either as they're admitted or by updating existing cluster resources—to automatically bring them into compliance without blocking developers.
-</Callout>
+> **lightbulb** Mutation lets Kyverno modify resources—either as they're admitted or by updating existing cluster resources—to automatically bring them into compliance without blocking developers.
 
 To make this concrete, consider Alex, a platform engineer responsible for enforcing cluster standards.
 
@@ -85,12 +83,8 @@ Resources and further reading
 * JSON Patch (RFC 6902): [https://tools.ietf.org/html/rfc6902](https://tools.ietf.org/html/rfc6902)
 * Kubernetes Policies and Admission Controllers: [https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
 
-<Callout icon="warning">
-  Mutation is powerful and can overwrite fields. Test policies in a staging environment and use `validation` rules or rigorous preconditions where you need to avoid unintended changes.
-</Callout>
+> **warning** Mutation is powerful and can overwrite fields. Test policies in a staging environment and use `validation` rules or rigorous preconditions where you need to avoid unintended changes.
 
 By the end of this lesson you’ll be able to author Kyverno policies that automatically enforce standards, reduce developer friction, and keep your cluster compliant and manageable.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/0d589a60-4265-4482-98b1-68c9544f07fd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/0d589a60-4265-4482-98b1-68c9544f07fd)

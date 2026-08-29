@@ -15,9 +15,7 @@ You can trigger a run in two ways:
 * Push changes to your connected Git repository — the recommended approach for CI-driven, reproducible workflows.
 * Use the Trigger button in the Spacelift UI — useful for ad-hoc re-runs when you want to reapply the same configuration without committing code.
 
-<Callout icon="lightbulb">
-  Use the Trigger button for one-off or investigative runs. For routine changes, push commits to your repository so your runs remain versioned and reproducible.
-</Callout>
+> **lightbulb** Use the Trigger button for one-off or investigative runs. For routine changes, push commits to your repository so your runs remain versioned and reproducible.
 
 What happens after you trigger a run
 
@@ -89,10 +87,6 @@ Useful references
 * Spacelift documentation: [https://docs.spacelift.io](https://docs.spacelift.io)
 * Terraform documentation: [https://www.terraform.io/docs](https://www.terraform.io/docs)
 
-<Callout icon="warning">
-  Confirming an apply will change real infrastructure. Always review the plan carefully and ensure credentials and IAM permissions follow least-privilege best practices before confirming.
-</Callout>
+> **warning** Confirming an apply will change real infrastructure. Always review the plan carefully and ensure credentials and IAM permissions follow least-privilege best practices before confirming.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/74dbb4df-716f-4fa2-92e9-a223a3a697ca/lesson/d5fb7f0f-a264-4b8b-887a-e82c56422dda" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/74dbb4df-716f-4fa2-92e9-a223a3a697ca/lesson/d5fb7f0f-a264-4b8b-887a-e82c56422dda)

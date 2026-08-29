@@ -8,7 +8,7 @@ Understanding the difference between buffered and unbuffered channels in Golang 
 
 Buffered channels can allow a limited number of goroutines active simultaneously or control the amount of work that is queued. Despite their advantages, using buffered channels introduces the risk of blocking when the channel waits on a sender or receiver. Therefore, it’s important to carefully design your concurrency model when choosing between buffered and unbuffered channels.
 
-![The image is a slide discussing when to use buffered channels, highlighting the importance of handling blocking and limiting go-routines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868704/notes-assets/images/Advanced-Golang-Concurrency-Practices-Buffered-and-Unbuffered-Channels/buffered-channels-go-routines-slide.jpg)
+![The image is a slide discussing when to use buffered channels, highlighting the importance of handling blocking and limiting go-routines.](https://kodekloud.com/kk-media/image/upload/v1752868704/notes-assets/images/Advanced-Golang-Concurrency-Practices-Buffered-and-Unbuffered-Channels/buffered-channels-go-routines-slide.jpg)
 
 > **lightbulb** When designing concurrent systems, always evaluate whether the control over goroutine execution provided by buffered channels justifies the added complexity.
 

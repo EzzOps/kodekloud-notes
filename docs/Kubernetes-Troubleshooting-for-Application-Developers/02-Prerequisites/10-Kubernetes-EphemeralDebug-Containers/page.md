@@ -16,9 +16,7 @@ The kubectl debug command offers several advantages over kubectl exec:
 
 Moreover, kubectl debug extends beyond pods. You can also attach a debug container to a node, granting access to the node’s filesystem and host namespace.
 
-<Frame>
-  ![The image is a slide titled "kubectl debug - why," listing reasons such as minimizing pod disruptions, handling distroless images, and dealing with crashed containers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880418/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Kubernetes-EphemeralDebug-Containers/kubectl-debug-why-pod-disruptions.jpg)
-</Frame>
+![The image is a slide titled "kubectl debug - why," listing reasons such as minimizing pod disruptions, handling distroless images, and dealing with crashed containers.](https://kodekloud.com/kk-media/image/upload/v1752880418/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Kubernetes-EphemeralDebug-Containers/kubectl-debug-why-pod-disruptions.jpg)
 
 ## Debugging a Distroless Pod
 
@@ -37,9 +35,7 @@ controlplane ~ ➜ k exec -it distroless-debug-pod -- /bin/sh
 error: Internal error occurred: error executing command in container: failed to exec in container: failed to start exec "a440c2551da537883eb4edeb625e96a14336e895cac4ffbcd5801e21561c7": OCI runtime exec failed: exec failed: unable to start container process: exec "/bin/sh": stat /bin/sh: no such file or directory: unknown
 ```
 
-<Callout icon="lightbulb">
-  Use kubectl debug instead of exec when shell access is unavailable due to a minimal image footprint.
-</Callout>
+> **lightbulb** Use kubectl debug instead of exec when shell access is unavailable due to a minimal image footprint.
 
 Instead, run the debug command that attaches a new BusyBox container with an interactive shell:
 
@@ -70,9 +66,7 @@ distroless-debug-pod   1/1     Running     0          90s
 
 And while direct exec for /bin/sh fails due to its absence, using kubectl debug with BusyBox succeeds.
 
-<Callout icon="lightbulb">
-  Remember that the resources allocated for ephemeral containers are shared with the main pod. Use lightweight images for debugging purposes.
-</Callout>
+> **lightbulb** Remember that the resources allocated for ephemeral containers are shared with the main pod. Use lightweight images for debugging purposes.
 
 ## Inspecting Pod Details with Debug Containers
 
@@ -176,8 +170,6 @@ For more advanced debugging techniques and configurations, consult the [Kubernet
 
 Happy debugging, and happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/7f1a3941-2acf-4342-b0f4-9f683903e41e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/7f1a3941-2acf-4342-b0f4-9f683903e41e)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/b3faefd4-a420-4e92-8ce0-e8296fae1f09" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/b3faefd4-a420-4e92-8ce0-e8296fae1f09)

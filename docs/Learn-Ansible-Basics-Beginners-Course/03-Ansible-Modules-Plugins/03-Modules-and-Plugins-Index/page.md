@@ -10,17 +10,13 @@ By using the index, you can search for relevant resources based on keywords like
 
 For example, the Cisco IOS module is tailored for managing Cisco IOS devices. Its detailed documentation offers configuration guidelines and practical examples to help you integrate the module seamlessly into your automation workflows, streamlining the management of your network infrastructure.
 
-<Callout icon="lightbulb">
-  The Modules and Plugins index is not only a reference guide—it serves as a vital tool in automating and simplifying complex network management tasks using Ansible.
-</Callout>
+> **lightbulb** The Modules and Plugins index is not only a reference guide—it serves as a vital tool in automating and simplifying complex network management tasks using Ansible.
 
 ## Key Features and Benefits
 
 The following sections detail the core features of the Modules and Plugins index and explain how they enhance your Ansible automation experience.
 
-<Frame>
-  ![The image describes the "Modules & Plugins Index" for Ansible, highlighting its comprehensive resources, navigation tools, and the importance of indexing for module management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881065/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Modules-and-Plugins-Index/frame_110.jpg)
-</Frame>
+![The image describes the "Modules & Plugins Index" for Ansible, highlighting its comprehensive resources, navigation tools, and the importance of indexing for module management.](https://kodekloud.com/kk-media/image/upload/v1752881065/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Modules-and-Plugins-Index/frame_110.jpg)
 
 ### Search and Filtering
 
@@ -38,9 +34,7 @@ To prevent compatibility issues, the index specifies the version requirements fo
 
 A major strength of the Modules and Plugins index is the active contribution from the Ansible community. With collective insights and shared experiences from numerous experts, the index remains an ever-evolving resource that you can rely on for the latest updates and best practices.
 
-<Callout icon="lightbulb">
-  Always cross-check the version compatibility of a module or plugin with your current Ansible setup to maximize efficiency and avoid unexpected runtime issues.
-</Callout>
+> **lightbulb** Always cross-check the version compatibility of a module or plugin with your current Ansible setup to maximize efficiency and avoid unexpected runtime issues.
 
 ## Summary
 
@@ -53,8 +47,6 @@ For further details about network automation, you might consider exploring the f
 
 By leveraging this index, you can simplify your network management tasks and optimize your automation strategy.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/86d8dd66-9f62-4027-8c63-1830ce479bf0/lesson/b326ffd8-d53e-4a2d-a2c0-a14a3f1d47c0" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/86d8dd66-9f62-4027-8c63-1830ce479bf0/lesson/b326ffd8-d53e-4a2d-a2c0-a14a3f1d47c0)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/86d8dd66-9f62-4027-8c63-1830ce479bf0/lesson/74c580ff-caeb-4b02-b5ed-9f85896c7d29" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/86d8dd66-9f62-4027-8c63-1830ce479bf0/lesson/74c580ff-caeb-4b02-b5ed-9f85896c7d29)

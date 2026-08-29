@@ -66,9 +66,7 @@ Jenkins offers two common approaches during initial setup:
   <img alt="A Jenkins &#x22;Customize Jenkins&#x22; screen showing two plugin options: &#x22;Install suggested plugins&#x22; and &#x22;Select plugins to install.&#x22; The slide also has a &#x22;Plugins&#x22; header and a small KodeKloud copyright." />
 </Frame>
 
-<Callout icon="lightbulb">
-  If you’re unsure which plugins you need, choosing “Install suggested plugins” provides a sensible default set that covers common CI/CD workflows (Git, Pipeline, and basic build tool support).
-</Callout>
+> **lightbulb** If you’re unsure which plugins you need, choosing “Install suggested plugins” provides a sensible default set that covers common CI/CD workflows (Git, Pipeline, and basic build tool support).
 
 Manage plugins via the Jenkins web UI (Manage Jenkins → Manage Plugins). From there you can:
 
@@ -77,9 +75,7 @@ Manage plugins via the Jenkins web UI (Manage Jenkins → Manage Plugins). From 
 * Enable/disable plugins or uninstall those you no longer need.
 * Review the plugin dependency tree and plugin update notifications.
 
-<Callout icon="warning">
-  Uninstalling a plugin without checking dependencies or testing can break jobs and other plugins. Always review the plugin dependency tree and test plugin changes in a staging Jenkins before applying to production.
-</Callout>
+> **warning** Uninstalling a plugin without checking dependencies or testing can break jobs and other plugins. Always review the plugin dependency tree and test plugin changes in a staging Jenkins before applying to production.
 
 <Frame>
   <img alt="A screenshot of the Jenkins &#x22;Manage Plugins&#x22; page showing a list of installed plugins (Amazon EC2, AWS SDK, Ant, etc.) with a search box and enable/disable toggles. The left sidebar shows navigation options like Updates, Available plugins, and Installed plugins." />
@@ -103,6 +99,4 @@ Further reading and references
 
 Plugin installation, disabling, updates, and the Update Center are central to healthy Jenkins operations — manage them with care and include plugin maintenance in your regular CI/CD platform routines.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/99eab5cb-f53f-4bb2-93ef-58db36f588b9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/99eab5cb-f53f-4bb2-93ef-58db36f588b9)

@@ -109,9 +109,7 @@ Benefits of using pipelines
   <img alt="A presentation slide titled &#x22;Benefits of Pipelines&#x22; featuring six rounded tiles with icons. Each tile lists an advantage: Code as Configuration; Resilient by Design; Human Interaction Integration; Handling Complexity with Ease; Extensibility Beyond Limits; and Streamlined Build Management." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Store your Jenkinsfile alongside your application code in the same repository. This enables versioning, code review, and reproducible CI/CD pipelines that travel with your code.
-</Callout>
+> **lightbulb** Store your Jenkinsfile alongside your application code in the same repository. This enables versioning, code review, and reproducible CI/CD pipelines that travel with your code.
 
 Getting started and next steps
 
@@ -128,6 +126,4 @@ Links and references
 
 In this article we covered pipeline fundamentals—stages and steps, declarative vs scripted styles, and why pipelines often replace Freestyle jobs in modern CI/CD workflows. Recommended follow-ups: real-world pipeline patterns, handling parallelism, and designing resilient error handling and retry strategies.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/a73edd13-7bf6-474d-ad80-0b1a6f947ba3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/a73edd13-7bf6-474d-ad80-0b1a6f947ba3)

@@ -6,9 +6,7 @@ Circuit breaking prevents cascading failures in microservices by interrupting re
 
 Circuit breaking plays a vital role in preventing cascading failures within a microservices ecosystem. When a service—like the product service—relies on other services such as reviews or details, any degradation in performance or failures in these dependencies can lead to a buildup of requests. For example, if the details service becomes unresponsive or slow, it causes requests from the product service to accumulate, leading to increased delays and possible system strain.
 
-<Callout icon="lightbulb">
-  Circuit breaking proactively fails requests that depend on an unresponsive service, avoiding long wait times and improving overall system resilience.
-</Callout>
+> **lightbulb** Circuit breaking proactively fails requests that depend on an unresponsive service, avoiding long wait times and improving overall system resilience.
 
 ## How Circuit Breaking Works
 
@@ -39,9 +37,7 @@ spec:
 
 Let's head over to a demo to see this configuration in action. You will observe how the circuit breaker helps manage high traffic volumes and mitigates the impact of slow or failed service responses.
 
-<Callout icon="triangle-alert">
-  Before deploying circuit breaking in your production environment, ensure that you thoroughly test the configuration. Incorrect settings might lead to excessive request blocking or other unintended consequences.
-</Callout>
+> **triangle-alert** Before deploying circuit breaking in your production environment, ensure that you thoroughly test the configuration. Incorrect settings might lead to excessive request blocking or other unintended consequences.
 
 ## Additional Resources
 
@@ -49,6 +45,4 @@ Let's head over to a demo to see this configuration in action. You will observe 
 * [Istio Documentation](https://istio.io/latest/docs/)
 * [Microservices Best Practices](https://microservices.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/2b8e9509-230d-489a-9dca-b92de6215940" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/2b8e9509-230d-489a-9dca-b92de6215940)

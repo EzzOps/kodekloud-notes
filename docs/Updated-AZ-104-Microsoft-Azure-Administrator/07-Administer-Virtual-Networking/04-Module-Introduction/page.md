@@ -19,12 +19,8 @@ This module is designed to help you master three essential areas:
 3. **Configuring Azure DNS**\
    Understand the steps to manage Azure DNS effectively. Learn how to handle domain names and maintain proper name resolution within your Azure environment to ensure your applications remain accessible and performant.
 
-<Callout icon="lightbulb">
-  Ensure you have the required permissions and a valid Azure subscription before beginning the configuration steps in this module.
-</Callout>
+> **lightbulb** Ensure you have the required permissions and a valid Azure subscription before beginning the configuration steps in this module.
 
 With these objectives in mind, let's begin by exploring the creation and configuration of Virtual Networks.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/809fc274-7871-4b13-8f85-052b43442c81/lesson/30269f0b-9b5e-4e54-acaf-4e387c49ba44" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/809fc274-7871-4b13-8f85-052b43442c81/lesson/30269f0b-9b5e-4e54-acaf-4e387c49ba44)

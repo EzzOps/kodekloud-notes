@@ -16,7 +16,7 @@ Understanding the key building blocks of the Azure OpenAI platform is vital for 
 
 Azure OpenAI Studio is your centralized hub for model management. This intuitive interface allows you to deploy models, explore pre-trained generative AI solutions, and manage your experiments.
 
-![The image shows the Azure OpenAI Studio interface, featuring options for exploring AI models and tools like the Chat and Assistants playgrounds. It includes a welcome message and a banner promoting the updated studio.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856976/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-OpenAI-Capabilities/azure-openai-studio-interface.jpg)
+![The image shows the Azure OpenAI Studio interface, featuring options for exploring AI models and tools like the Chat and Assistants playgrounds. It includes a welcome message and a banner promoting the updated studio.](https://kodekloud.com/kk-media/image/upload/v1752856976/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-OpenAI-Capabilities/azure-openai-studio-interface.jpg)
 
 Within the Studio, you can build and deploy AI models tailored to your specific applications, including natural language processing, image generation, and data insights.
 
@@ -38,7 +38,7 @@ Azure OpenAI Service leverages state-of-the-art Generative Pre-trained Transform
 
 For example, when a user requests a three-day travel itinerary for Paris that includes major attractions and dining recommendations:
 
-![The image shows a 3-day travel itinerary for visiting Paris, detailing major attractions and dining options for each day. It includes visits to the Eiffel Tower, Louvre Museum, Notre-Dame Cathedral, and dining at various notable restaurants.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856977/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-OpenAI-Capabilities/paris-3-day-itinerary-attractions-dining.jpg)
+![The image shows a 3-day travel itinerary for visiting Paris, detailing major attractions and dining options for each day. It includes visits to the Eiffel Tower, Louvre Museum, Notre-Dame Cathedral, and dining at various notable restaurants.](https://kodekloud.com/kk-media/image/upload/v1752856977/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Azure-OpenAI-Capabilities/paris-3-day-itinerary-attractions-dining.jpg)
 
 The model processes the prompt and generates a structured itinerary, dividing each day into morning, afternoon, and evening sessions. It highlights iconic landmarks such as the Eiffel Tower and suggests dining venues, serving as an efficient virtual assistant for travel planning, chatbots, and content creation tools.
 

@@ -16,9 +16,7 @@ By the end of this lesson you will be able to:
 
 This lesson provides a reusable, production-oriented implementation pattern that you can adapt to your organization’s practices.
 
-<Callout icon="lightbulb">
-  Prerequisites: an [Azure DevOps project](https://learn.microsoft.com/azure/devops/?view=azure-devops), an [Azure service connection](https://learn.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops\&tabs=yaml) (or equivalent cloud provider connection), and a remote state backend such as an Azure Storage account or [Terraform Cloud](https://www.terraform.io/cloud). Ensure build agents have the [Terraform CLI](https://www.terraform.io/cli) available or use pipeline tasks that install Terraform. Keep secrets and backend credentials in secure pipeline variables or variable groups.
-</Callout>
+> **lightbulb** Prerequisites: an [Azure DevOps project](https://learn.microsoft.com/azure/devops/?view=azure-devops), an [Azure service connection](https://learn.microsoft.com/azure/devops/pipelines/library/service-endpoints?view=azure-devops\&tabs=yaml) (or equivalent cloud provider connection), and a remote state backend such as an Azure Storage account or [Terraform Cloud](https://www.terraform.io/cloud). Ensure build agents have the [Terraform CLI](https://www.terraform.io/cli) available or use pipeline tasks that install Terraform. Keep secrets and backend credentials in secure pipeline variables or variable groups.
 
 ## High-level design
 
@@ -127,9 +125,7 @@ Notes about the example:
 * The `environment: 'production'` line enables the use of environment-level approvals and checks in Azure DevOps (configure them in the UI).
 * Publishing the plan artifact allows reviewers and auditors to inspect exactly what will change.
 
-<Callout icon="warning">
-  Never enable unattended `terraform apply` against production without proper approvals and checks. Always produce an immutable plan artifact (`terraform plan -out=...`) in CI and require either manual approval or an automated policy that validates the plan before applying.
-</Callout>
+> **warning** Never enable unattended `terraform apply` against production without proper approvals and checks. Always produce an immutable plan artifact (`terraform plan -out=...`) in CI and require either manual approval or an automated policy that validates the plan before applying.
 
 ## Implementation tips and recommended practices
 
@@ -148,6 +144,4 @@ Notes about the example:
 * [Remote state with Azure Storage](https://learn.microsoft.com/azure/storage/common/storage-account-overview)
 * [Terraform Cloud](https://www.terraform.io/cloud)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/66c0006d-c716-4381-8b15-e4edb4f4fbe5/lesson/2b9bf0da-b546-4d65-bbcb-90f429c35100" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/66c0006d-c716-4381-8b15-e4edb4f4fbe5/lesson/2b9bf0da-b546-4d65-bbcb-90f429c35100)

@@ -20,7 +20,7 @@ By integrating these services, companies can streamline their document workflows
 
 Azure AI is capable of analyzing structured forms, such as invoices, receipts, and surveys. The system accurately identifies fields and their associated values, providing reliable data for record keeping and further analysis. This eliminates the need for manual data input, reducing errors and saving time.
 
-![The image is a module introduction slide listing four topics related to document intelligence services, including AI services, form analysis, a studio, and data extraction.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856858/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Module-Introduction/document-intelligence-module-introduction.jpg)
+![The image is a module introduction slide listing four topics related to document intelligence services, including AI services, form analysis, a studio, and data extraction.](https://kodekloud.com/kk-media/image/upload/v1752856858/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Module-Introduction/document-intelligence-module-introduction.jpg)
 
 ## Document Intelligence Studio
 

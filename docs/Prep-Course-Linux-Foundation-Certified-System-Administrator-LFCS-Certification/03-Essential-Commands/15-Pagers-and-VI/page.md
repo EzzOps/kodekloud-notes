@@ -53,9 +53,7 @@ You can scroll further using the arrow keys. For example, this snippet demonstra
 2024-05-07T00:34:30.894709+00:00 kodekloud kernel: BIOS-e820: [mem 0x0000000000100000-0x000000026a6fffff]
 ```
 
-<Callout icon="lightbulb">
-  Remember to use the arrow keys in Less for smooth navigation through your log files. For more extensive documents, Less is highly recommended over other simpler pagers.
-</Callout>
+> **lightbulb** Remember to use the arrow keys in Less for smooth navigation through your log files. For more extensive documents, Less is highly recommended over other simpler pagers.
 
 ### Searching Within Less
 
@@ -167,9 +165,7 @@ Vim is a mode-based editor, meaning it operates in different modes for specific 
 * **Insert Mode:** Press the `i` key to enter Insert mode and start editing your file.
 * **Command Mode:** Press the `Esc` key to switch back to Command mode. In this mode, you can run commands for saving, quitting, or navigating within the file.
 
-<Callout icon="lightbulb">
-  Always press `Esc` to ensure you are in Command mode before executing commands.
-</Callout>
+> **lightbulb** Always press `Esc` to ensure you are in Command mode before executing commands.
 
 ### Creating, Saving, and Quitting Files in Vim
 
@@ -224,6 +220,4 @@ Fusce cursus efficitur hendrerit. Duis aliquam nibh diam, sed fermentum justo ul
 
 That concludes our overview of terminal pagers and Vim. Happy editing, and see you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/493f2004-c7d6-4373-93e0-fd3ccfd74cd8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/493f2004-c7d6-4373-93e0-fd3ccfd74cd8)

@@ -36,7 +36,7 @@ Optimize costs by:
 * Limiting parallel jobs to critical workflows
 * Leveraging self-hosted agents for predictable workloads
 
-![The image is a slide titled "Evaluating Cost" with two sections: "Cost estimation approaches" and "Azure Pipelines pricing models."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867889/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary-Designing-and-Implementing-Pipelines/evaluating-cost-estimation-azure-pipelines.jpg)
+![The image is a slide titled "Evaluating Cost" with two sections: "Cost estimation approaches" and "Azure Pipelines pricing models."](https://kodekloud.com/kk-media/image/upload/v1752867889/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary-Designing-and-Implementing-Pipelines/evaluating-cost-estimation-azure-pipelines.jpg)
 
 ## Tool Selection
 
@@ -65,7 +65,7 @@ Best practices for license management:
 
 > **triangle-alert** Exceeding free tier limits can incur unexpected charges. Monitor job usage in the Azure DevOps portal.
 
-![The image is a slide titled "Licensing" with three sections: Azure Pipelines licensing requirements, understanding license tiers, and license management best practices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867889/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary-Designing-and-Implementing-Pipelines/licensing-azure-pipelines-license-management.jpg)
+![The image is a slide titled "Licensing" with three sections: Azure Pipelines licensing requirements, understanding license tiers, and license management best practices.](https://kodekloud.com/kk-media/image/upload/v1752867889/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary-Designing-and-Implementing-Pipelines/licensing-azure-pipelines-license-management.jpg)
 
 ## Connectivity
 
@@ -75,7 +75,7 @@ Network reliability is crucial for pipeline triggers and service hooks:
 * Configure **firewalls** and **VNet integration** for secure access
 * Monitor **latency** and **throughput** to detect bottlenecks
 
-![The image displays three colored boxes labeled 01, 02, and 03, each describing aspects of connectivity: ensuring reliable connectivity, Azure Pipelines and network configuration, and connectivity best practices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867890/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary-Designing-and-Implementing-Pipelines/connectivity-aspects-azure-pipelines-boxes.jpg)
+![The image displays three colored boxes labeled 01, 02, and 03, each describing aspects of connectivity: ensuring reliable connectivity, Azure Pipelines and network configuration, and connectivity best practices.](https://kodekloud.com/kk-media/image/upload/v1752867890/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary-Designing-and-Implementing-Pipelines/connectivity-aspects-azure-pipelines-boxes.jpg)
 
 ## Triggers
 
@@ -99,7 +99,7 @@ The Classic (GUI) editor provides a visual, drag-and-drop experience:
 
 Use when your team prefers a graphical interface and rapid prototyping.
 
-![The image is a slide titled "Classic Pipelines" with three colored boxes labeled 01, 02, and 03, each describing different aspects of classic pipelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867891/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary-Designing-and-Implementing-Pipelines/classic-pipelines-colored-boxes-slide.jpg)
+![The image is a slide titled "Classic Pipelines" with three colored boxes labeled 01, 02, and 03, each describing different aspects of classic pipelines.](https://kodekloud.com/kk-media/image/upload/v1752867891/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary-Designing-and-Implementing-Pipelines/classic-pipelines-colored-boxes-slide.jpg)
 
 ## YAML Pipelines
 
@@ -137,7 +137,7 @@ Parallelism strategies:
 * Use **matrix builds** for multiple OS and framework combinations
 * Optimize job dependencies to reduce idle time
 
-![The image is a slide titled "Understanding Build Agents and Parallelism," featuring three sections: "Role of build agents in pipelines," "Implementing parallel builds," and "Maximizing efficiency with parallelism."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867892/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary-Designing-and-Implementing-Pipelines/understanding-build-agents-parallelism-slide.jpg)
+![The image is a slide titled "Understanding Build Agents and Parallelism," featuring three sections: "Role of build agents in pipelines," "Implementing parallel builds," and "Maximizing efficiency with parallelism."](https://kodekloud.com/kk-media/image/upload/v1752867892/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary-Designing-and-Implementing-Pipelines/understanding-build-agents-parallelism-slide.jpg)
 
 ***
 

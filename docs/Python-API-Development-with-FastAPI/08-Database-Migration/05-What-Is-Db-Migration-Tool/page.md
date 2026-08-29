@@ -71,9 +71,7 @@ Alternatively, you can perform a relative downgrade by moving one revision back:
 
 After downgrading, refresh your database client to verify that the "content" column has been removed.
 
-<Callout icon="triangle-alert">
-  Before executing a downgrade in a production environment, ensure that you have backed up your database to prevent any accidental data loss.
-</Callout>
+> **triangle-alert** Before executing a downgrade in a production environment, ensure that you have backed up your database to prevent any accidental data loss.
 
 ## Summary
 
@@ -90,9 +88,7 @@ For further reading, check out these helpful resources:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/a6a7b30d-5ca7-4d69-a323-c508340e9931/lesson/ee4ed733-0132-42d5-94e7-9abbcb3dcf50" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/a6a7b30d-5ca7-4d69-a323-c508340e9931/lesson/ee4ed733-0132-42d5-94e7-9abbcb3dcf50)
 
 
 # What Is Db Migration Tool
@@ -161,9 +157,7 @@ INFO: Application startup complete.
 
 SQLAlchemy checks for the existence of a table by name, and if it already exists, it does not push any updates. Thus, if you modify your models, the changes will not reflect in the production database unless you manually drop the tables and restart your application.
 
-<Callout icon="triangle-alert">
-  Manually dropping tables in a production environment is not a viable strategy for managing schema updates.
-</Callout>
+> **triangle-alert** Manually dropping tables in a production environment is not a viable strategy for managing schema updates.
 
 ***
 
@@ -188,9 +182,7 @@ class Vote(Base):
 
 Even after saving and reloading the application, SQLAlchemy will not update the PostgreSQL table to include the new `phone_number` column. When inspecting the **users** table in pgAdmin, the new column is missing:
 
-<Frame>
-  ![The image shows a pgAdmin interface with a table structure for "users," displaying columns for id, email, password, and created\_at, along with their data types and constraints. The left panel shows a database schema with various tables and functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883382/notes-assets/images/Python-API-Development-with-FastAPI-What-Is-Db-Migration-Tool/pgadmin-users-table-structure.jpg)
-</Frame>
+![The image shows a pgAdmin interface with a table structure for "users," displaying columns for id, email, password, and created\_at, along with their data types and constraints. The left panel shows a database schema with various tables and functions.](https://kodekloud.com/kk-media/image/upload/v1752883382/notes-assets/images/Python-API-Development-with-FastAPI-What-Is-Db-Migration-Tool/pgadmin-users-table-structure.jpg)
 
 ***
 
@@ -249,6 +241,4 @@ In upcoming lessons, we will delve deeper into Alembic—covering installation, 
 * [SQLAlchemy Documentation](https://www.sqlalchemy.org/)
 * [FastAPI Official Site](https://fastapi.tiangolo.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/a6a7b30d-5ca7-4d69-a323-c508340e9931/lesson/0ebc75ed-6e41-4876-a453-feeb958d1a78" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/a6a7b30d-5ca7-4d69-a323-c508340e9931/lesson/0ebc75ed-6e41-4876-a453-feeb958d1a78)

@@ -65,9 +65,7 @@ packages:
     latestVersion: v2.7.0+1
 ```
 
-<Callout icon="lightbulb">
-  Glasskube parses the raw YAML index directly. Use the repository's raw file URL (for example, `https://raw.githubusercontent.com/.../index.yaml`) — do not use GitHub UI or directory URLs since those return HTML, not the raw YAML.
-</Callout>
+> **lightbulb** Glasskube parses the raw YAML index directly. Use the repository's raw file URL (for example, `https://raw.githubusercontent.com/.../index.yaml`) — do not use GitHub UI or directory URLs since those return HTML, not the raw YAML.
 
 Add a public repository
 To add a public, no-auth repository use:

@@ -48,9 +48,7 @@ This approach mirrors standard safe rollout patterns used for security and polic
 * Use `AuthorizationPolicy` to enforce service-to-service access using SPIFFE principals.
 * Validate with `istioctl x describe pod` and `kubectl` commands.
 
-<Callout icon="lightbulb">
-  Enable sidecar injection for the target namespaces and validate with `kubectl get pods -n <namespace>` (look for `2/2` READY) before switching PeerAuthentication to `STRICT`.
-</Callout>
+> **lightbulb** Enable sidecar injection for the target namespaces and validate with `kubectl get pods -n <namespace>` (look for `2/2` READY) before switching PeerAuthentication to `STRICT`.
 
 ## References
 
@@ -58,9 +56,7 @@ This approach mirrors standard safe rollout patterns used for security and polic
 * SPIFFE: [https://spiffe.io/](https://spiffe.io/)
 * Envoy Proxy: [https://www.envoyproxy.io/](https://www.envoyproxy.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/19c3a421-318d-40c7-aeb3-45eebb398056" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/19c3a421-318d-40c7-aeb3-45eebb398056)
 
 
 # BGPBorder Gateway Protocol
@@ -231,13 +227,9 @@ Key fields explained
 * families: choose address families (IPv4/IPv6) and safi (e.g., unicast).
 * advertisements selector: controls which Advertisement resources a BGPPeer should consult.
 
-<Callout icon="lightbulb">
-  If you rely on native routing (no encapsulation), enable PodCIDR advertisements so your physical routers learn how to reach pod networks. Use node labels (nodeSelector) to control which nodes run the BGP control plane and avoid advertising routes from every node if not required.
-</Callout>
+> **lightbulb** If you rely on native routing (no encapsulation), enable PodCIDR advertisements so your physical routers learn how to reach pod networks. Use node labels (nodeSelector) to control which nodes run the BGP control plane and avoid advertising routes from every node if not required.
 
-<Callout icon="warning">
-  Be cautious with ebgpMultihop and route attributes. Incorrect multihop or advertisement configuration can cause session flaps or unexpected route leaks. Always validate on a staging router before applying in production.
-</Callout>
+> **warning** Be cautious with ebgpMultihop and route attributes. Incorrect multihop or advertisement configuration can cause session flaps or unexpected route leaks. Always validate on a staging router before applying in production.
 
 ## Troubleshooting with the Cilium CLI
 
@@ -296,6 +288,4 @@ Further reading
 * [Cilium BGP documentation](https://docs.cilium.io/en/stable/networking/bgp/)
 * [Border Gateway Protocol (BGP) overview](https://www.cloudflare.com/learning/bgp/what-is-bgp/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/1921a7e1-109f-4d9d-b0d0-a54e277bbe8e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/1921a7e1-109f-4d9d-b0d0-a54e277bbe8e)

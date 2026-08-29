@@ -6,9 +6,7 @@ Guide to create and register custom Backstage frontend themes using @backstage/t
 
 In this guide you'll create a custom theme for Backstage and wire it into your frontend app so the UI uses your colors, fonts, and other theme settings. This lets you provide consistent branding across the catalog, docs, and plugins.
 
-<Callout icon="lightbulb">
-  Theme configuration objects and helpers live in the `@backstage/theme` package. For the [Prep Course - Certified Backstage Associate (CBA)](https://learn.kodekloud.com/user/courses/prep-course-certified-backstage-associate-cba), remember `@backstage/theme` as the package that contains the theming helpers.
-</Callout>
+> **lightbulb** Theme configuration objects and helpers live in the `@backstage/theme` package. For the [Prep Course - Certified Backstage Associate (CBA)](https://learn.kodekloud.com/user/courses/prep-course-certified-backstage-associate-cba), remember `@backstage/theme` as the package that contains the theming helpers.
 
 ## What you'll do (high level)
 
@@ -171,10 +169,6 @@ After switching to a theme like `funTheme`, the UI reflects your palette and fon
   * [https://backstage.io/docs](https://backstage.io/docs)
   * [https://github.com/backstage/backstage/tree/master/plugins/theme](https://github.com/backstage/backstage/tree/master/plugins/theme) (repository examples)
 
-<Callout icon="lightbulb">
-  Summary: create your theme file under the frontend app, export theme objects using `createBaseThemeOptions` + `createUnifiedTheme`, and register them in `createApp(...)` with a `Provider` that wraps children with `UnifiedThemeProvider`.
-</Callout>
+> **lightbulb** Summary: create your theme file under the frontend app, export theme objects using `createBaseThemeOptions` + `createUnifiedTheme`, and register them in `createApp(...)` with a `Provider` that wraps children with `UnifiedThemeProvider`.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/aad867ea-baf2-4ca7-b722-ad38ea794a7e/lesson/f5714cc0-79b1-4dcc-bdfa-c2f9a0749d3a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/aad867ea-baf2-4ca7-b722-ad38ea794a7e/lesson/f5714cc0-79b1-4dcc-bdfa-c2f9a0749d3a)

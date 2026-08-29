@@ -173,9 +173,7 @@ Deletion flow summary:
 3. Controller observes the timestamp, performs cleanup, and removes finalizers.
 4. When no finalizers remain, the API server deletes the object.
 
-<Callout icon="warning">
-  If cleanup fails (for example, cloud API outages), the object will remain in a Terminating state while finalizers persist. Implement robust retries, exponential backoff, and comprehensive logging so cleanup eventually completes and you avoid orphaned resources.
-</Callout>
+> **warning** If cleanup fails (for example, cloud API outages), the object will remain in a Terminating state while finalizers persist. Implement robust retries, exponential backoff, and comprehensive logging so cleanup eventually completes and you avoid orphaned resources.
 
 Operator frameworks
 
@@ -212,9 +210,7 @@ Additional resources
 * Operator SDK docs: [https://sdk.operatorframework.io/](https://sdk.operatorframework.io/)
 * Metacontroller: [https://metacontroller.github.io/](https://metacontroller.github.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/4c8d6b72-361f-4c1c-8b62-cf84a251000f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/4c8d6b72-361f-4c1c-8b62-cf84a251000f)
 
 
 # Platform Building Blocks Crossplane XRs Compositions and Functions
@@ -274,9 +270,7 @@ Crossplane provides these capabilities by treating Kubernetes as the universal c
 
 Callout icon example to highlight the main benefit:
 
-<Callout icon="lightbulb">
-  Crossplane lets platform teams create Kubernetes-native platform APIs so developers use the same GitOps, kubectl, and YAML workflows they already know — simplifying self-service and reducing mean time to provision.
-</Callout>
+> **lightbulb** Crossplane lets platform teams create Kubernetes-native platform APIs so developers use the same GitOps, kubectl, and YAML workflows they already know — simplifying self-service and reducing mean time to provision.
 
 Crossplane’s core concepts
 
@@ -435,6 +429,4 @@ Further reading and references
 * Argo CD (GitOps): [https://argo-cd.readthedocs.io/en/stable/](https://argo-cd.readthedocs.io/en/stable/)
 * Terraform: [https://www.terraform.io/](https://www.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/55341bf2-b35e-4453-b9d0-b4dd3aaaf898" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/55341bf2-b35e-4453-b9d0-b4dd3aaaf898)

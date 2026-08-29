@@ -10,9 +10,7 @@ OpenTelemetry is the open standard for collecting traces, metrics, and logs. Kub
 
 In Kubernetes, workloads are distributed across many pods and nodes. Pods are ephemeral — they can be created, destroyed, or rescheduled at any time — and workloads scale up and down frequently. Because of this dynamic nature, traditional monitoring approaches designed for static servers do not provide a complete picture. Observability in Kubernetes must follow workloads as they move and scale, and it must attach the right metadata so signals can be correlated back to the originating workloads.
 
-<Callout icon="lightbulb">
-  In Kubernetes, telemetry must carry rich metadata (for example, pod name, namespace, labels, and node) so you can correlate traces/metrics/logs to the correct workload as containers are created and destroyed.
-</Callout>
+> **lightbulb** In Kubernetes, telemetry must carry rich metadata (for example, pod name, namespace, labels, and node) so you can correlate traces/metrics/logs to the correct workload as containers are created and destroyed.
 
 <Frame>
   <img alt="The image illustrates the importance of observability in Kubernetes with a diagram showing nodes and containers, highlighting how observability helps manage ephemeral pods, dynamic scaling, and complex networking." />
@@ -34,9 +32,7 @@ These attributes enable you to group, filter, and correlate telemetry across the
   <img alt="The image compares Kubernetes telemetry with VM or bare-metal, highlighting that VMs or physical servers are static with fixed processes, while Kubernetes is dynamic with multiple nodes, pods, and containers, requiring metadata like pod name, namespace, labels, and node information." />
 </Frame>
 
-<Callout icon="warning">
-  If Kubernetes metadata is not attached to telemetry, observability systems cannot reliably attribute signals to the correct workloads—this leads to noisy dashboards, poor alerting, and harder troubleshooting.
-</Callout>
+> **warning** If Kubernetes metadata is not attached to telemetry, observability systems cannot reliably attribute signals to the correct workloads—this leads to noisy dashboards, poor alerting, and harder troubleshooting.
 
 ## Key OpenTelemetry components and patterns for Kubernetes
 
@@ -95,6 +91,4 @@ Using the Operator allows teams to standardize telemetry pipelines across cluste
 
 Subsequent sections will examine concrete Collector deployment examples (sidecar vs agent vs gateway), show Operator CRD examples for managing Collectors and instrumentation, and provide configuration snippets to ensure telemetry is enriched with Kubernetes metadata before export.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/949d4584-36b4-4f84-8cd3-4ee61fca9edc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/949d4584-36b4-4f84-8cd3-4ee61fca9edc)

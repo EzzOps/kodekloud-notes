@@ -22,9 +22,7 @@ The Archive Tier is designed for data that is rarely accessed and for which long
 
 Below is an overview summarizing the cost differences among the storage tiers:
 
-<Frame>
-  ![The image illustrates storage access tiers (Hot, Cool, Archive) with associated storage and access costs, alongside a dropdown menu for changing the access tier.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884403/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Storage-Tiers/storage-access-tiers-costs-diagram.jpg)
-</Frame>
+![The image illustrates storage access tiers (Hot, Cool, Archive) with associated storage and access costs, alongside a dropdown menu for changing the access tier.](https://kodekloud.com/kk-media/image/upload/v1752884403/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Storage-Tiers/storage-access-tiers-costs-diagram.jpg)
 
 * **Hot Storage:** Highest storage cost with lower access expense.
 * **Cool Storage:** Lower storage cost compared to Hot, with increased access expense.
@@ -42,9 +40,7 @@ When you create an Azure storage account, you can select the default access tier
 
 Upon logging into the Azure Portal, the storage account overview displays the default access tier (for example, Hot). Selecting this option allows you to navigate to a configuration blade where you can change the default tier to Cool if necessary.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying details of a storage account, including properties, security settings, and networking configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884404/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Storage-Tiers/azure-portal-storage-account-details.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying details of a storage account, including properties, security settings, and networking configurations.](https://kodekloud.com/kk-media/image/upload/v1752884404/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Storage-Tiers/azure-portal-storage-account-details.jpg)
 
 Within individual containers, such as one labeled "Site 1," you have the ability to adjust the access tier to Archive, Cold, or maintain Hot or Cool. By clicking on the "Change Tier" button, a selection menu presents the available options: Hot, Cool, Archive, and the newly introduced Cold Tier.
 
@@ -52,9 +48,7 @@ Within individual containers, such as one labeled "Site 1," you have the ability
 
 The Cold option provides an additional level of cost reduction for data that is not expected to be accessed for 90 days or longer. It offers even lower capacity costs compared to the Cool Tier.
 
-<Callout icon="lightbulb">
-  While some Azure Portal interfaces display a "Cold" option for object-level tiering, the primary officially supported access tiers in Azure Storage remain Hot, Cool, and Archive. Users should verify the latest Azure documentation to ensure compatibility with their storage account configuration.
-</Callout>
+> **lightbulb** While some Azure Portal interfaces display a "Cold" option for object-level tiering, the primary officially supported access tiers in Azure Storage remain Hot, Cool, and Archive. Users should verify the latest Azure documentation to ensure compatibility with their storage account configuration.
 
 ## Upcoming: Lifecycle Management
 
@@ -62,6 +56,4 @@ In the next section, we will explore Lifecycle Management, an important feature 
 
 For additional information on Azure Storage and configuration best practices, consider visiting the [Azure Storage Documentation](https://docs.microsoft.com/en-us/azure/storage/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/48d08f66-feb9-4bae-83b0-2e6aa34e24ae/lesson/4055366c-d46e-44e9-9af8-2e292b23bd1c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/48d08f66-feb9-4bae-83b0-2e6aa34e24ae/lesson/4055366c-d46e-44e9-9af8-2e292b23bd1c)

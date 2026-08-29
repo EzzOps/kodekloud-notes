@@ -12,9 +12,7 @@ Every modern software project relies on a version control system to manage sourc
 
 Typically, code on the main (or master) branch is regularly deployed to production. When introducing new features or modifying existing code, developers create a dedicated feature branch. This branch serves as an isolated environment where developers can commit changes. Once the feature is complete, a pull request is initiated to merge the changes back into the main branch. A comprehensive code review follows, ensuring that only high-quality, consistent code is integrated.
 
-<Frame>
-  ![The image illustrates a CI/CD process flow, showing the steps from feature branch creation, commit, pull request, review, and approval, to deployment and production. It includes explanatory text about the process and is labeled "Understanding CI/CD."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879464/notes-assets/images/Jenkins-For-Beginners-Basics-of-CICD/ci-cd-process-flow-diagram.jpg)
-</Frame>
+![The image illustrates a CI/CD process flow, showing the steps from feature branch creation, commit, pull request, review, and approval, to deployment and production. It includes explanatory text about the process and is labeled "Understanding CI/CD."](https://kodekloud.com/kk-media/image/upload/v1752879464/notes-assets/images/Jenkins-For-Beginners-Basics-of-CICD/ci-cd-process-flow-diagram.jpg)
 
 After a successful merge into the main branch, the code is deployed to production using either manual or automated processes.
 
@@ -26,13 +24,9 @@ Deploying code directly after merging, without continuous integration, can lead 
 * **Inefficient Deployment:** Without CI/CD, deployments across development, staging, and production environments tend to be manual, which increases the risk of errors and inconsistencies.
 * **Quality Assurance Dependence:** Relying solely on manual testing elevates the risk of human error and may stretch team resources thin.
 
-<Frame>
-  ![The image illustrates a workflow for continuous integration, showing the process from feature branches to production, highlighting steps like commit, pull request, review, and merge. It also outlines challenges such as delayed testing, inefficient deployment, and quality assurance issues without continuous integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879465/notes-assets/images/Jenkins-For-Beginners-Basics-of-CICD/continuous-integration-workflow-diagram.jpg)
-</Frame>
+![The image illustrates a workflow for continuous integration, showing the process from feature branches to production, highlighting steps like commit, pull request, review, and merge. It also outlines challenges such as delayed testing, inefficient deployment, and quality assurance issues without continuous integration.](https://kodekloud.com/kk-media/image/upload/v1752879465/notes-assets/images/Jenkins-For-Beginners-Basics-of-CICD/continuous-integration-workflow-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Adopting CI/CD practices helps mitigate these challenges by automating testing and deployment, ensuring issues are detected and resolved early.
-</Callout>
+> **lightbulb** Adopting CI/CD practices helps mitigate these challenges by automating testing and deployment, ensuring issues are detected and resolved early.
 
 ## A CI/CD Scenario
 
@@ -52,9 +46,7 @@ Consider the following scenario that demonstrates a typical CI/CD workflow:
    * Once validated, the pull request is approved and the branch is merged into the main branch.
    * The main branch now contains combined updates from both Feature Branch A and B. A final CI pipeline run ensures that the full integration is seamless and error-free.
 
-<Frame>
-  ![The image illustrates a continuous integration workflow, showing the process from feature branch commits to production deployment, including steps like pull requests, review, and CI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879466/notes-assets/images/Jenkins-For-Beginners-Basics-of-CICD/continuous-integration-workflow-diagram-2.jpg)
-</Frame>
+![The image illustrates a continuous integration workflow, showing the process from feature branch commits to production deployment, including steps like pull requests, review, and CI.](https://kodekloud.com/kk-media/image/upload/v1752879466/notes-assets/images/Jenkins-For-Beginners-Basics-of-CICD/continuous-integration-workflow-diagram-2.jpg)
 
 This streamlined process allows multiple developers to collaborate on the same project simultaneously while ensuring that all new changes integrate smoothly, maintaining high quality and stability.
 
@@ -68,16 +60,10 @@ Once code is integrated into the main branch and has passed the CI pipeline, dep
 
 * **Continuous Delivery:** In certain cases, an additional manual approval step is introduced before the final deployment to production. This safeguards quality and compliance by incorporating human oversight into the process. Once the CI pipeline for the main branch is successful, the CD pipeline pauses, awaiting manual approval before deploying to production.
 
-<Frame>
-  ![The image is a flowchart illustrating a continuous deployment/delivery pipeline, showing stages from feature branch creation to production deployment, including continuous integration steps like unit testing and code scanning. It also depicts branching conditions for deploying to staging or production environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879468/notes-assets/images/Jenkins-For-Beginners-Basics-of-CICD/continuous-deployment-pipeline-flowchart.jpg)
-</Frame>
+![The image is a flowchart illustrating a continuous deployment/delivery pipeline, showing stages from feature branch creation to production deployment, including continuous integration steps like unit testing and code scanning. It also depicts branching conditions for deploying to staging or production environments.](https://kodekloud.com/kk-media/image/upload/v1752879468/notes-assets/images/Jenkins-For-Beginners-Basics-of-CICD/continuous-deployment-pipeline-flowchart.jpg)
 
-<Callout icon="triangle-alert">
-  Always ensure that comprehensive tests are in place before introducing automated deployment, especially for production environments, to prevent potential downtime or deployment errors.
-</Callout>
+> **triangle-alert** Always ensure that comprehensive tests are in place before introducing automated deployment, especially for production environments, to prevent potential downtime or deployment errors.
 
 By implementing CI/CD practices, teams can not only reduce integration issues and deployment errors but also accelerate the entire delivery process. Adopting these processes leads to frequent, reliable releases and a more agile development environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/d923e9ad-da6b-4f99-85ce-a148e17c27d2/lesson/ed94dad8-6a39-4475-8c47-47ba4719b357" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/d923e9ad-da6b-4f99-85ce-a148e17c27d2/lesson/ed94dad8-6a39-4475-8c47-47ba4719b357)

@@ -109,9 +109,7 @@ Notes about the example
   * The `Percent` policy with `value: 10` limits downscaling to at most 10% of current replicas per 60-second period.
 * Policies are limits (caps), not guarantees: the HPA only changes replicas as much as needed, up to the specified limits.
 
-<Callout icon="lightbulb">
-  Defaults and behavior can vary by Kubernetes version and cloud controller implementations. As a rule of thumb, prefer aggressive scale-up (short stabilization window) and conservative scale-down (longer stabilization window) to reduce oscillation.
-</Callout>
+> **lightbulb** Defaults and behavior can vary by Kubernetes version and cloud controller implementations. As a rule of thumb, prefer aggressive scale-up (short stabilization window) and conservative scale-down (longer stabilization window) to reduce oscillation.
 
 Best practices
 
@@ -131,9 +129,7 @@ Best practices
   <img alt="A presentation slide titled &#x22;Scaling Behavior – Best Practices&#x22; showing three numbered tips: 01 Avoid rapid scaling, 02 Clear policies, and 03 Monitor and adjust, each with a simple icon. The layout uses colorful rounded boxes and gradient number badges." />
 </Frame>
 
-<Callout icon="warning">
-  Be aware of control-plane and metrics-server differences across Kubernetes versions. Some behavior fields and defaults changed between `autoscaling/v2beta2` and `autoscaling/v2`. Always consult your cluster's API documentation before applying HPA manifests.
-</Callout>
+> **warning** Be aware of control-plane and metrics-server differences across Kubernetes versions. Some behavior fields and defaults changed between `autoscaling/v2beta2` and `autoscaling/v2`. Always consult your cluster's API documentation before applying HPA manifests.
 
 Further reading and references
 
@@ -143,8 +139,6 @@ Further reading and references
 
 That concludes this lesson on HPA scaling behavior. Hope you found it useful and actionable.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/65f471ae-8728-43ae-8e06-ba3394c2d56f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/65f471ae-8728-43ae-8e06-ba3394c2d56f)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/babb082d-82ba-4e86-98e9-0365c0590551" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/babb082d-82ba-4e86-98e9-0365c0590551)

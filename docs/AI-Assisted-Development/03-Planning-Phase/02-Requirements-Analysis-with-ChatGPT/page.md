@@ -18,13 +18,13 @@ This precise prompt ensures that all necessary aspects are covered in the finali
 
 After copying the prompt into ChatGPT 4.0 using the Canvas functionality, the tool generates a comprehensive document covering all the outlined sections for the web application's requirements.
 
-![The image shows a web browser window with a document titled "Web App Requirements," detailing sections on constraints, acceptance criteria, and a conclusion for a web-based application project. The document is structured to provide clarity for developers, clients, and stakeholders.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857127/notes-assets/images/AI-Assisted-Development-Requirements-Analysis-with-ChatGPT/web-app-requirements-document.jpg)
+![The image shows a web browser window with a document titled "Web App Requirements," detailing sections on constraints, acceptance criteria, and a conclusion for a web-based application project. The document is structured to provide clarity for developers, clients, and stakeholders.](https://kodekloud.com/kk-media/image/upload/v1752857127/notes-assets/images/AI-Assisted-Development-Requirements-Analysis-with-ChatGPT/web-app-requirements-document.jpg)
 
 ## Step 3: Refining the Document with Interactive Queries
 
 One of ChatGPT’s interactive features is its ability to ask clarifying questions. These questions help refine and accurately complete the document. For example:
 
-![The image shows a web browser window with a document titled "Web App Requirements," detailing sections like Introduction, Purpose, Scope, and Functional Requirements for a web-based application. On the left, there are clarifying questions to help fill out the document.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857128/notes-assets/images/AI-Assisted-Development-Requirements-Analysis-with-ChatGPT/web-app-requirements-document-2.jpg)
+![The image shows a web browser window with a document titled "Web App Requirements," detailing sections like Introduction, Purpose, Scope, and Functional Requirements for a web-based application. On the left, there are clarifying questions to help fill out the document.](https://kodekloud.com/kk-media/image/upload/v1752857128/notes-assets/images/AI-Assisted-Development-Requirements-Analysis-with-ChatGPT/web-app-requirements-document-2.jpg)
 
 Using the clarifying questions, you can define key application details such as:
 
@@ -109,13 +109,13 @@ Below is an excerpt from the refined document for the Image Optimizer applicatio
 
 After refining the document, the content was copied into [Google Docs](https://docs.google.com) to view the formatted result.
 
-![The image shows a Google Docs document titled "Requirements Analysis Document for Image Optimizer," detailing the introduction, purpose, scope, and requirements for a web-based image optimization application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857129/notes-assets/images/AI-Assisted-Development-Requirements-Analysis-with-ChatGPT/requirements-analysis-image-optimizer-doc.jpg)
+![The image shows a Google Docs document titled "Requirements Analysis Document for Image Optimizer," detailing the introduction, purpose, scope, and requirements for a web-based image optimization application.](https://kodekloud.com/kk-media/image/upload/v1752857129/notes-assets/images/AI-Assisted-Development-Requirements-Analysis-with-ChatGPT/requirements-analysis-image-optimizer-doc.jpg)
 
 ## Final Thoughts
 
 Using ChatGPT in this way can significantly streamline the documentation process. Instead of manually drafting multiple documents over several hours, you can generate detailed, industry-standard documentation quickly and efficiently.
 
-![The image shows a Google Docs document with sections on assumptions, dependencies, constraints, and acceptance criteria for a project. It includes details about budget, timeframe, technology, and testing requirements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857130/notes-assets/images/AI-Assisted-Development-Requirements-Analysis-with-ChatGPT/google-docs-project-details-sections.jpg)
+![The image shows a Google Docs document with sections on assumptions, dependencies, constraints, and acceptance criteria for a project. It includes details about budget, timeframe, technology, and testing requirements.](https://kodekloud.com/kk-media/image/upload/v1752857130/notes-assets/images/AI-Assisted-Development-Requirements-Analysis-with-ChatGPT/google-docs-project-details-sections.jpg)
 
 > **lightbulb** By using a detailed prompt and clarifying questions, you ensure that ChatGPT generates a comprehensive and precise requirements analysis document, saving valuable time in the documentation process.
 

@@ -90,9 +90,7 @@ Commercial support is available at
 bob@nginx:~$
 ```
 
-<Callout icon="lightbulb">
-  Tip: Use NGINX configuration test before restarting: run `sudo nginx -t` to validate your config files. This reduces downtime caused by syntax errors.
-</Callout>
+> **lightbulb** Tip: Use NGINX configuration test before restarting: run `sudo nginx -t` to validate your config files. This reduces downtime caused by syntax errors.
 
 Whether you are optimizing web traffic, securing applications, or scaling infrastructure, you now have the fundamentals to tackle more complex challenges. Keep exploring NGINX's ecosystem—there’s always more to learn, from performance tuning and cloud integrations to advanced features and commercial offerings like NGINX Plus.
 
@@ -112,14 +110,10 @@ Below are curated resources and suggested next steps to continue your learning:
 | Performance tuning      | Improve throughput and latency with caching, buffering, and compression             | Search for "NGINX performance tuning" in docs and community blogs                                                                 |
 | Security best practices | TLS, HTTP security headers, rate limiting, WAF and access controls                  | See OWASP and NGINX security guides                                                                                               |
 
-<Callout icon="warning">
-  Before exposing your server to the public internet, ensure TLS/HTTPS is configured and your firewall rules allow only required traffic. Misconfigured servers can lead to data exposure or service disruption.
-</Callout>
+> **warning** Before exposing your server to the public internet, ensure TLS/HTTPS is configured and your firewall rules allow only required traffic. Misconfigured servers can lead to data exposure or service disruption.
 
 Thank you for your dedication and enthusiasm throughout this course. Keep experimenting, refine your configurations, and apply these lessons to real projects. Stay connected with the KodeKloud community to ask questions, share experiences, and continue growing.
 
 The web is evolving—armed with your NGINX expertise, you're ready to build fast, secure, and scalable applications. Best of luck on your continued learning journey.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8bbc0a90-81a2-4afd-9ec8-2010cbb4ec0b/lesson/725b4eb4-1f35-4064-b4e4-8948a86f283a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8bbc0a90-81a2-4afd-9ec8-2010cbb4ec0b/lesson/725b4eb4-1f35-4064-b4e4-8948a86f283a)

@@ -84,9 +84,7 @@ def upgrade():
 
 After running this migration, verify via your database interface that the users table contains the correct columns and constraints.
 
-<Frame>
-  ![The image shows a pgAdmin interface with a table schema for "users," displaying columns like id, email, password, and created\_at, along with their data types and constraints. The "Constraints" tab is open, showing a default value being set to "now()" for a timestamp column.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883375/notes-assets/images/Python-API-Development-with-FastAPI-Alembic-Finish-Rest-Of-Schema/pgadmin-users-table-schema-constraints.jpg)
-</Frame>
+![The image shows a pgAdmin interface with a table schema for "users," displaying columns like id, email, password, and created\_at, along with their data types and constraints. The "Constraints" tab is open, showing a default value being set to "now()" for a timestamp column.](https://kodekloud.com/kk-media/image/upload/v1752883375/notes-assets/images/Python-API-Development-with-FastAPI-Alembic-Finish-Rest-Of-Schema/pgadmin-users-table-schema-constraints.jpg)
 
 ***
 
@@ -139,9 +137,7 @@ INFO [alembic.runtime.migration] Running upgrade af786b740296 -> add foreign-key
 
 After the upgrade, verify in pgAdmin that the foreign key constraint is correctly set up:
 
-<Frame>
-  ![The image shows a pgAdmin interface with a foreign key constraint setup for a table named "posts," linking the "owner\_id" column to the "id" column in the "public.users" table. The interface includes options to save or cancel the changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883376/notes-assets/images/Python-API-Development-with-FastAPI-Alembic-Finish-Rest-Of-Schema/pgadmin-foreign-key-constraint-posts.jpg)
-</Frame>
+![The image shows a pgAdmin interface with a foreign key constraint setup for a table named "posts," linking the "owner\_id" column to the "id" column in the "public.users" table. The interface includes options to save or cancel the changes.](https://kodekloud.com/kk-media/image/upload/v1752883376/notes-assets/images/Python-API-Development-with-FastAPI-Alembic-Finish-Rest-Of-Schema/pgadmin-foreign-key-constraint-posts.jpg)
 
 ***
 
@@ -173,9 +169,7 @@ def downgrade():
 
 Run this migration and check the updated table structure via PostgreSQL. The image below shows the updated posts table schema:
 
-<Frame>
-  ![The image shows a pgAdmin interface displaying the structure of a "posts" table with columns like "id," "title," "content," and "published," along with their data types and constraints. The left panel lists various database schemas and tables.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883377/notes-assets/images/Python-API-Development-with-FastAPI-Alembic-Finish-Rest-Of-Schema/pgadmin-posts-table-structure.jpg)
-</Frame>
+![The image shows a pgAdmin interface displaying the structure of a "posts" table with columns like "id," "title," "content," and "published," along with their data types and constraints. The left panel lists various database schemas and tables.](https://kodekloud.com/kk-media/image/upload/v1752883377/notes-assets/images/Python-API-Development-with-FastAPI-Alembic-Finish-Rest-Of-Schema/pgadmin-posts-table-structure.jpg)
 
 ***
 
@@ -298,9 +292,7 @@ def upgrade():
 
 Upon running the upgrade, verify through pgAdmin that a new `phone_number` column is present in the users table:
 
-<Frame>
-  ![The image shows a pgAdmin interface displaying the structure of a "users" table with columns for ID, email, password, created\_at, and phone\_number. The data types and NULL constraints for each column are also visible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883378/notes-assets/images/Python-API-Development-with-FastAPI-Alembic-Finish-Rest-Of-Schema/pgadmin-users-table-structure.jpg)
-</Frame>
+![The image shows a pgAdmin interface displaying the structure of a "users" table with columns for ID, email, password, created\_at, and phone\_number. The data types and NULL constraints for each column are also visible.](https://kodekloud.com/kk-media/image/upload/v1752883378/notes-assets/images/Python-API-Development-with-FastAPI-Alembic-Finish-Rest-Of-Schema/pgadmin-users-table-structure.jpg)
 
 ***
 
@@ -345,9 +337,7 @@ By following these steps, you can efficiently manage your evolving database sche
 
 For further reading on Alembic and database migrations, consider exploring [Alembic's official documentation](https://alembic.sqlalchemy.org/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/a6a7b30d-5ca7-4d69-a323-c508340e9931/lesson/bb29afb7-96d5-499b-87f3-73a997c84429" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/a6a7b30d-5ca7-4d69-a323-c508340e9931/lesson/bb29afb7-96d5-499b-87f3-73a997c84429)
 
 
 # Alembic Setup
@@ -411,9 +401,7 @@ class Vote(Base):
     post_id = Column(Integer, ForeignKey("posts.id", ondelete="CASCADE"), primary_key=True)
 ```
 
-<Callout icon="lightbulb">
-  In this example, you are instructed to remove the `phone_number` field once Alembic is set up and you are ready to update your database schema.
-</Callout>
+> **lightbulb** In this example, you are instructed to remove the `phone_number` field once Alembic is set up and you are ready to update your database schema.
 
 ## Preparing the Database
 

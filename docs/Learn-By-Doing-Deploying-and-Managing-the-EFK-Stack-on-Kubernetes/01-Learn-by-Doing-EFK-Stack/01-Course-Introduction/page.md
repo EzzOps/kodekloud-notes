@@ -25,9 +25,7 @@ Links and references
 
 Now, let's jump in — navigate to the first lab and begin.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-by-doing-beginner-s-guide-to-apache-kafka-foundations-and-development/module/3e950c1f-5f14-4d73-9df6-7040a387aa53/lesson/cd8d8340-7c85-4115-9026-832cec952418" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-by-doing-beginner-s-guide-to-apache-kafka-foundations-and-development/module/3e950c1f-5f14-4d73-9df6-7040a387aa53/lesson/cd8d8340-7c85-4115-9026-832cec952418)
 
 
 # Course Introduction
@@ -60,14 +58,12 @@ How the labs work
 * Use the Hint and Solution tabs if you get stuck; they’re designed to guide rather than replace the learning.
 * After you complete a step, click the Check button to validate the task and unlock the next step.
 
-<Callout icon="lightbulb">
-  Use the terminal to run Kubernetes commands against the live cluster. If a task asks you to create or switch to a namespace, follow the exact command shown in the Tasks tab and then use the Check button to validate. Example namespace creation and switch:
+> **lightbulb** Use the terminal to run Kubernetes commands against the live cluster. If a task asks you to create or switch to a namespace, follow the exact command shown in the Tasks tab and then use the Check button to validate. Example namespace creation and switch:
 
   ```bash theme={null}
   kubectl create namespace elastic-stack
   kubectl config set-context --current --namespace=elastic-stack
   ```
-</Callout>
 
 <Frame>
   <img alt="The image shows logos of Elasticsearch, Fluentd, and Kibana inside a box that includes the Kubernetes logo, with a &#x22;Deploy&#x22; rocket icon below." />
@@ -108,9 +104,7 @@ Best practices emphasized in this course
 * Run Fluentd as a DaemonSet to collect logs across nodes.
 * Secure Kibana and Elasticsearch endpoints for production access.
 
-<Callout icon="warning">
-  This course uses a live sandbox Kubernetes cluster for labs. Do not use production credentials or expose sensitive data while completing exercises. Always follow your organization’s security policies when applying these patterns to production.
-</Callout>
+> **warning** This course uses a live sandbox Kubernetes cluster for labs. Do not use production credentials or expose sensitive data while completing exercises. Always follow your organization’s security policies when applying these patterns to production.
 
 <Frame>
   <img alt="The image showcases an overview of course topics related to Kubernetes and the EFK (Elasticsearch, Fluentd, Kibana) Stack, with eight specific topics listed." />
@@ -126,8 +120,6 @@ Links and references
 * [Fluentd Documentation](https://docs.fluentd.org/)
 * [Kibana Documentation](https://www.elastic.co/guide/en/kibana/current/index.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-by-doing-deploying-and-managing-the-efk-stack-on-kubernetes/module/7e1e94f6-6bde-47ce-852e-979b8caa89dc/lesson/4dfe1e2f-5433-43a5-b3c4-1ff048199aba" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-by-doing-deploying-and-managing-the-efk-stack-on-kubernetes/module/7e1e94f6-6bde-47ce-852e-979b8caa89dc/lesson/4dfe1e2f-5433-43a5-b3c4-1ff048199aba)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/learn-by-doing-deploying-and-managing-the-efk-stack-on-kubernetes/module/7e1e94f6-6bde-47ce-852e-979b8caa89dc/lesson/247ed6e4-d5a2-4ca3-ac01-588f55334fec" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learn-by-doing-deploying-and-managing-the-efk-stack-on-kubernetes/module/7e1e94f6-6bde-47ce-852e-979b8caa89dc/lesson/247ed6e4-d5a2-4ca3-ac01-588f55334fec)

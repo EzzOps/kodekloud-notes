@@ -109,11 +109,9 @@ Links and references
 * cert-manager: [https://cert-manager.io/](https://cert-manager.io/)
 * Kubernetes concepts: [https://kubernetes.io/docs/concepts/](https://kubernetes.io/docs/concepts/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/5231587b-53d5-4ea2-a084-44550d4ce9bb/lesson/43f31c93-c249-44ea-b581-f71091f4a80e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/5231587b-53d5-4ea2-a084-44550d4ce9bb/lesson/43f31c93-c249-44ea-b581-f71091f4a80e)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/5231587b-53d5-4ea2-a084-44550d4ce9bb/lesson/a357e18b-d68a-4427-9760-2415a5adb9cf" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/5231587b-53d5-4ea2-a084-44550d4ce9bb/lesson/a357e18b-d68a-4427-9760-2415a5adb9cf)
 
 
 # Introduction
@@ -188,10 +186,6 @@ Links and references
 
 Throughout the course you'll practice deploying, serving, and troubleshooting both generative and predictive ML models using KServe on Kubernetes. Each hands-on module includes sample manifests and inference examples so you can reproduce the demos in your own cluster.
 
-<Callout icon="lightbulb">
-  Before running the Helm commands, ensure your kubectl context points to the Kubernetes cluster where you intend to install KServe and that you have sufficient permissions to create cluster-level resources.
-</Callout>
+> **lightbulb** Before running the Helm commands, ensure your kubectl context points to the Kubernetes cluster where you intend to install KServe and that you have sufficient permissions to create cluster-level resources.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/5231587b-53d5-4ea2-a084-44550d4ce9bb/lesson/92be25d3-6011-4a0d-a9fc-68982ee9d025" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kserve-fundamentals-serving-ml-models-on-kubernetes/module/5231587b-53d5-4ea2-a084-44550d4ce9bb/lesson/92be25d3-6011-4a0d-a9fc-68982ee9d025)

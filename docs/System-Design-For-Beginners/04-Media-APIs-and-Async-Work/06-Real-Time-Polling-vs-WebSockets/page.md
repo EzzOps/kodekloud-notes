@@ -110,9 +110,7 @@ When your app is closed or backgrounded, platform push services are the reliable
   <img alt="The image illustrates a process flow when an app is closed, involving the phone's OS, a server, and cloud services like Apple Push Notification Service (APNs) and Firebase Cloud Messaging (FCM). It highlights the impact on battery drain and the role of the OS in managing notifications." />
 </Frame>
 
-<Callout icon="warning">
-  Mobile platforms intentionally limit background network activity to conserve battery. Rely on APNs/FCM for closed-app notifications rather than trying to keep persistent connections for each app.
-</Callout>
+> **warning** Mobile platforms intentionally limit background network activity to conserve battery. Rely on APNs/FCM for closed-app notifications rather than trying to keep persistent connections for each app.
 
 ## Decision Guide — Which to pick?
 
@@ -122,9 +120,7 @@ When your app is closed or backgrounded, platform push services are the reliable
   * WebSockets: choose when you need frequent, low-latency, bi-directional communication (chat, multiplayer, collaborative editing).
   * APNs/FCM: use for delivering notifications to backgrounded/closed mobile apps.
 
-<Callout icon="lightbulb">
-  Choose the simplest, reliable option that satisfies latency and scale requirements. If you adopt stateful connections (WebSockets), plan for scaling using pub/sub layers, connection sharding, or managed socket services.
-</Callout>
+> **lightbulb** Choose the simplest, reliable option that satisfies latency and scale requirements. If you adopt stateful connections (WebSockets), plan for scaling using pub/sub layers, connection sharding, or managed socket services.
 
 ## Links and References
 
@@ -133,6 +129,4 @@ When your app is closed or backgrounded, platform push services are the reliable
 * [Apple Push Notification service (APNs)](https://developer.apple.com/notifications/)
 * [Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/02240fc4-695f-4112-9594-bb05cfc5ca73/lesson/85034e7b-8245-4008-8ff9-e1e12f2ec5d4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/02240fc4-695f-4112-9594-bb05cfc5ca73/lesson/85034e7b-8245-4008-8ff9-e1e12f2ec5d4)

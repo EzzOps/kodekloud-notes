@@ -51,13 +51,9 @@ Overview
 * Wire the processor into the service pipeline so it runs for the intended telemetry type.
 * Prefer `regexp` for flexible pattern matching.
 
-<Callout icon="lightbulb">
-  Processor ordering matters: filter early in the pipeline (usually before heavy processors like `batch` or `attributes`) so unwanted telemetry is removed as soon as possible.
-</Callout>
+> **lightbulb** Processor ordering matters: filter early in the pipeline (usually before heavy processors like `batch` or `attributes`) so unwanted telemetry is removed as soon as possible.
 
-<Callout icon="warning">
-  Common startup errors stem from typos in the configuration keys. For example, use `metric_names` (not `metric_namees`). If the Collector fails on restart, inspect logs for configuration parse errors.
-</Callout>
+> **warning** Common startup errors stem from typos in the configuration keys. For example, use `metric_names` (not `metric_namees`). If the Collector fails on restart, inspect logs for configuration parse errors.
 
 ## Filter out metric names with a regular expression
 
@@ -260,6 +256,4 @@ Summary
 * Use regex patterns for flexible matching and include-only for tight control.
 * Verify processor ordering and configuration keys to avoid startup issues.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/0c79aa6d-2956-47c5-8820-8f5f0b2e9a86" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/0c79aa6d-2956-47c5-8820-8f5f0b2e9a86)

@@ -41,9 +41,7 @@ Crawl phase: growth and the first cost signals
   * Implement simple forecasting models and weekly or monthly reviews.
   * Assign cost owners who can act on optimization recommendations.
 
-<Callout icon="lightbulb">
-  Start building scalable FinOps habits during the crawl phase—visibility, tagging, lightweight cost ownership, and simple forecasting will pay dividends as cloud spend increases.
-</Callout>
+> **lightbulb** Start building scalable FinOps habits during the crawl phase—visibility, tagging, lightweight cost ownership, and simple forecasting will pay dividends as cloud spend increases.
 
 Multi-cloud complexity
 
@@ -75,9 +73,7 @@ Key responsibilities — practical breakdown
 | Security & governance collaboration | Design guardrails that preserve security posture            | Approve automation for shutting down unused environments, define IAM guardrails |
 | Cross-functional enablement         | Educate teams about cost trade-offs                         | Run workshops for engineering on right-sizing and cost-effective architecture   |
 
-<Callout icon="warning">
-  When optimizing costs, never sacrifice security or compliance. Cost reductions must preserve or improve your security posture and respect regulatory requirements.
-</Callout>
+> **warning** When optimizing costs, never sacrifice security or compliance. Cost reductions must preserve or improve your security posture and respect regulatory requirements.
 
 Why this role matters as complexity grows
 
@@ -112,6 +108,4 @@ Next steps
 
 Thank you — that concludes this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/17116beb-dcd6-4099-9424-bcb9554af3f3/lesson/6ca9b0ad-d3d2-4419-95c5-4fd65a1f49f3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/17116beb-dcd6-4099-9424-bcb9554af3f3/lesson/6ca9b0ad-d3d2-4419-95c5-4fd65a1f49f3)

@@ -6,9 +6,7 @@ Vault secures data at rest using a two-tier key architecture, ensuring encryptio
 
 Vault secures all data at rest by employing a two-tier key architecture. Your secrets are always encrypted in the storage backend, ensuring that even if an attacker gains full access to the backend, they cannot decrypt your data without the appropriate keys.
 
-<Frame>
-  ![The image illustrates how Vault protects data, showing a process where a Vault Node uses a Master Key to protect an Encryption Key, which in turn protects Vault Data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878237/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Data-Protection/vault-data-protection-process-diagram.jpg)
-</Frame>
+![The image illustrates how Vault protects data, showing a process where a Vault Node uses a Master Key to protect an Encryption Key, which in turn protects Vault Data.](https://kodekloud.com/kk-media/image/upload/v1752878237/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Data-Protection/vault-data-protection-process-diagram.jpg)
 
 ## How It Works: Two-Tier Key Flow
 
@@ -17,9 +15,7 @@ Vault secures all data at rest by employing a two-tier key architecture. Your se
 3. The Master Key encrypts the DEK; this encrypted DEK is stored alongside your encrypted data in the backend.
 4. On **unseal**, Vault operators supply unseal keys (traditional) or Vault fetches the Master Key from the auto-unseal backend. Vault then decrypts the DEK in memory, allowing seamless data operations.
 
-<Callout icon="triangle-alert">
-  If you lose all unseal key shares and have no auto-unseal configured, you will permanently lose access to your data. Always back up unseal keys or configure auto-unseal.
-</Callout>
+> **triangle-alert** If you lose all unseal key shares and have no auto-unseal configured, you will permanently lose access to your data. Always back up unseal keys or configure auto-unseal.
 
 ## Master Key vs. Data Encryption Key
 
@@ -30,9 +26,7 @@ Vault secures all data at rest by employing a two-tier key architecture. Your se
 
 ## Master Key Details
 
-<Frame>
-  ![The image is a slide explaining how Vault protects data using a Master Key and an Encryption Key, detailing their creation, storage, and usage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878238/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Data-Protection/vault-data-protection-master-key.jpg)
-</Frame>
+![The image is a slide explaining how Vault protects data using a Master Key and an Encryption Key, detailing their creation, storage, and usage.](https://kodekloud.com/kk-media/image/upload/v1752878238/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Data-Protection/vault-data-protection-master-key.jpg)
 
 * **Creation**\
   Generated at Vault initialization or during any rekey operation.
@@ -55,9 +49,7 @@ The Data Encryption Key (DEK) is responsible for encrypting payloads in your sto
   * New write operations use the latest key in the ring.
   * Reads first try the newest key, then fall back to older keys if needed.
 
-<Callout icon="lightbulb">
-  Regularly rotate your Data Encryption Key to limit the amount of data encrypted under a single key. See [Vault Encryption Key Rotation](https://www.vaultproject.io/docs/concepts/replication#encryption-key-rotation) for details.
-</Callout>
+> **lightbulb** Regularly rotate your Data Encryption Key to limit the amount of data encrypted under a single key. See [Vault Encryption Key Rotation](https://www.vaultproject.io/docs/concepts/replication#encryption-key-rotation) for details.
 
 ## Further Reading
 
@@ -65,6 +57,4 @@ The Data Encryption Key (DEK) is responsible for encrypting payloads in your sto
 * [Vault Encryption at Rest](https://www.vaultproject.io/docs/configuration/encryption)
 * [HashiCorp Vault Documentation](https://www.vaultproject.io/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/22434dd1-4734-40d4-b1fb-79fa90abccdf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/22434dd1-4734-40d4-b1fb-79fa90abccdf)

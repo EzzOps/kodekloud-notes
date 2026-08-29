@@ -34,9 +34,7 @@ Sticky sessions (session affinity)
 * When it's useful: simple, fast stopgap for small clusters or legacy apps.
 * Drawbacks: reduces load-balancer flexibility, causes uneven utilization, complicates rolling deployments, and doesn't survive instance failures.
 
-<Callout icon="lightbulb">
-  Tip: In interviews answer in this order—(1) state the cause (local in-memory sessions), (2) propose the robust fix (shared session store and stateless servers), and (3) mention sticky sessions as an alternative and explain its trade-offs.
-</Callout>
+> **lightbulb** Tip: In interviews answer in this order—(1) state the cause (local in-memory sessions), (2) propose the robust fix (shared session store and stateless servers), and (3) mention sticky sessions as an alternative and explain its trade-offs.
 
 ## Comparison: session strategies
 
@@ -62,9 +60,7 @@ Sticky sessions (session affinity)
 * Stateless tokens (signed `JWT`s): avoid server-side storage, but implement revocation lists or short token lifetimes with refresh tokens to handle logout and compromise scenarios.
 * Hybrid approaches: keep minimal session metadata in a shared store and use signed tokens for authentication claims.
 
-<Callout icon="warning">
-  Warning: Do not store sensitive session data in plaintext on the client or in an unprotected shared store. Secure your session store (authentication, TLS, ACLs), plan for replication and failover, and monitor performance to avoid introducing a single point of failure.
-</Callout>
+> **warning** Warning: Do not store sensitive session data in plaintext on the client or in an unprotected shared store. Secure your session store (authentication, TLS, ACLs), plan for replication and failover, and monitor performance to avoid introducing a single point of failure.
 
 ## Interview guidance
 
@@ -78,6 +74,4 @@ If you suggest a suboptimal approach during the interview, quickly explain why i
 * [Session affinity (sticky sessions)](https://en.wikipedia.org/wiki/Session_affinity)
 * MDN: `HttpOnly`, `Secure`, `SameSite` cookie flags — see the Set-Cookie documentation on MDN
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/2416183c-7c90-4fd4-853a-704a9839ffa9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/2416183c-7c90-4fd4-853a-704a9839ffa9)

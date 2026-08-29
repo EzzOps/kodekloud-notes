@@ -7,9 +7,7 @@ curl: (7) Failed to connect to localhost port 80: Connection refused
 
 Explanation: after removing the default server block that listened on port 80, Nginx no longer has a listener for that address/port. Connections to `localhost:80` are refused until you enable a site that listens on port 80.
 
-<Callout icon="warning">
-  Removing the default site will stop responses on port 80 until at least one valid site is enabled. Ensure you add and enable your site configurations before relying on the server in production.
-</Callout>
+> **warning** Removing the default site will stop responses on port 80 until at least one valid site is enabled. Ensure you add and enable your site configurations before relying on the server in production.
 
 ## Create site configurations
 
@@ -147,9 +145,7 @@ Operational considerations:
 * After a successful test, reload Nginx with `nginx -s reload` to apply changes.
 * Creating/editing files under `/etc/nginx/sites-available` alone does not activate a site — remember to create corresponding symlinks in `/etc/nginx/sites-enabled`.
 
-<Callout icon="lightbulb">
-  Keep each site's configuration separate (one file per site) and use symlinks in `/etc/nginx/sites-enabled` for better isolation and safer rollbacks.
-</Callout>
+> **lightbulb** Keep each site's configuration separate (one file per site) and use symlinks in `/etc/nginx/sites-enabled` for better isolation and safer rollbacks.
 
 That's it for this lesson.
 
@@ -158,11 +154,9 @@ That's it for this lesson.
 * [Nginx documentation — Server names](https://nginx.org/en/docs/http/server_names.html)
 * [Nginx documentation — try\_files directive](https://nginx.org/en/docs/http/ngx_http_core_module.html#try_files)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/db98f13e-91c5-43d1-9400-fd40daf84b42" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/db98f13e-91c5-43d1-9400-fd40daf84b42)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/c74f891f-6063-47cc-8144-ada26fef3e78" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/c74f891f-6063-47cc-8144-ada26fef3e78)
 
 
 # Demo Configure URL Redirect
@@ -266,9 +260,7 @@ Notes about this configuration:
 * The second server block enables `ssl`, and points to the certificate and key files used for TLS.
 * The example certificate/key paths are present for this exercise. In production obtain valid certificates (for example via Let's Encrypt) and reference them here.
 
-<Callout icon="lightbulb">
-  Using a `301 Moved Permanently` response will cause clients and search engines to cache the redirect. Use `302 Found` during testing if you expect to change behavior later, then switch to `301` once everything is final.
-</Callout>
+> **lightbulb** Using a `301 Moved Permanently` response will cause clients and search engines to cache the redirect. Use `302 Found` during testing if you expect to change behavior later, then switch to `301` once everything is final.
 
 ## 4. Enable the site and reload NGINX
 

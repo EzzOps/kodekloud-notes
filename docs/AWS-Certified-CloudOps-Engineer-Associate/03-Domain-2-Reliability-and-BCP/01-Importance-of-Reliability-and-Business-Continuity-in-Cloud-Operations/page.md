@@ -19,7 +19,7 @@ Reliability refers to the consistent and error-free performance of a system over
 * **Redundancy:**\
   Redundancy involves duplicating critical components (for example, multiple servers behind a load balancer or several database read replicas) so that if one component fails, another instantly takes its place.
 
-![The image illustrates the concept of reliability in cloud operations, highlighting fault tolerance, resiliency, and redundancy as key components. Each component is briefly explained with its role in maintaining system reliability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860146/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Reliability-and-Business-Continuity-in-Cloud-Operations/cloud-reliability-fault-tolerance-diagram.jpg)
+![The image illustrates the concept of reliability in cloud operations, highlighting fault tolerance, resiliency, and redundancy as key components. Each component is briefly explained with its role in maintaining system reliability.](https://kodekloud.com/kk-media/image/upload/v1752860146/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Reliability-and-Business-Continuity-in-Cloud-Operations/cloud-reliability-fault-tolerance-diagram.jpg)
 
 ## Exploring Business Continuity
 
@@ -31,7 +31,7 @@ Business continuity extends the concept of reliability by ensuring that core bus
 * **Failover and Failback:**\
   A robust business continuity plan involves strategies to both seamlessly transition to backup systems (failover) and revert to the primary system once conditions permit (failback). This dual strategy minimizes system downtime during unexpected disruptions.
 
-![The image explains the importance of business continuity, highlighting disaster recovery, high availability, and failover and failback as key components. Each component is briefly described in terms of its role in minimizing downtime and ensuring smooth operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860148/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Reliability-and-Business-Continuity-in-Cloud-Operations/business-continuity-disaster-recovery.jpg)
+![The image explains the importance of business continuity, highlighting disaster recovery, high availability, and failover and failback as key components. Each component is briefly described in terms of its role in minimizing downtime and ensuring smooth operations.](https://kodekloud.com/kk-media/image/upload/v1752860148/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Reliability-and-Business-Continuity-in-Cloud-Operations/business-continuity-disaster-recovery.jpg)
 
 ## AWS Services Enhancing Reliability
 
@@ -49,7 +49,7 @@ AWS offers a suite of services designed to bolster both reliability and business
 * **Multi-AZ Deployments:**\
   Deploying resources across multiple Availability Zones within a single region introduces redundancy, ensuring that backup instances are available to take over if the primary instance fails.
 
-![The image describes AWS services for enhancing reliability, including AWS Auto Scaling, Elastic Load Balancer (ELB), and Multi-AZ Deployment, each with a brief explanation of their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860149/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Reliability-and-Business-Continuity-in-Cloud-Operations/aws-reliability-services-diagram.jpg)
+![The image describes AWS services for enhancing reliability, including AWS Auto Scaling, Elastic Load Balancer (ELB), and Multi-AZ Deployment, each with a brief explanation of their functions.](https://kodekloud.com/kk-media/image/upload/v1752860149/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Reliability-and-Business-Continuity-in-Cloud-Operations/aws-reliability-services-diagram.jpg)
 
 ## AWS Tools for Business Continuity
 
@@ -67,7 +67,7 @@ AWS also provides robust tools to support business continuity efforts by minimiz
 * **AWS Elastic Disaster Recovery (EDR):**\
   Formerly known as CloudEndure, AWS EDR facilitates efficient block-by-block replication and driver insertion, allowing smooth migrations from on-premises systems to AWS or between AWS regions.
 
-![The image lists AWS services for business continuity, including Amazon S3, RDS Multi-AZ, AWS Backup, and AWS Elastic Disaster Recovery, each with a brief description of their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860150/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Reliability-and-Business-Continuity-in-Cloud-Operations/aws-business-continuity-services.jpg)
+![The image lists AWS services for business continuity, including Amazon S3, RDS Multi-AZ, AWS Backup, and AWS Elastic Disaster Recovery, each with a brief description of their functions.](https://kodekloud.com/kk-media/image/upload/v1752860150/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Reliability-and-Business-Continuity-in-Cloud-Operations/aws-business-continuity-services.jpg)
 
 ## Best Practices for Reliability and Business Continuity
 
@@ -88,7 +88,7 @@ Adhering to these best practices will help ensure your cloud operations remain r
 5. **Employ Fault Isolation and Redundancy:**\
    Determine whether a multi-AZ or multi-region strategy best suits your application. Design your systems to isolate faults effectively and incorporate necessary redundancy to maintain service continuity.
 
-![The image outlines five best practices for reliability and business continuity: design for failure, regular backups and testing, disaster recovery plans, monitor and respond to failures, and use fault isolation and redundancy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860151/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Reliability-and-Business-Continuity-in-Cloud-Operations/reliability-business-continuity-best-practices.jpg)
+![The image outlines five best practices for reliability and business continuity: design for failure, regular backups and testing, disaster recovery plans, monitor and respond to failures, and use fault isolation and redundancy.](https://kodekloud.com/kk-media/image/upload/v1752860151/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Reliability-and-Business-Continuity-in-Cloud-Operations/reliability-business-continuity-best-practices.jpg)
 
 > **lightbulb** Implementing a well-thought-out framework for reliability and business continuity is not just a technical requirement—it is a strategic investment. Leveraging AWS services and following industry best practices can significantly enhance your organization’s capacity to maintain uninterrupted operations.
 

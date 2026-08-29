@@ -97,9 +97,7 @@ Best practices and considerations
 * Keep spans short-lived and focused on logical units of work.
 * Avoid logging sensitive data to spans or attributes. Use masking or hashing when necessary.
 
-<Callout icon="warning">
-  Do not store unmasked sensitive data (full card numbers, personal identifiers, secrets) in span attributes. Use masking or tokenization to protect user data in telemetry.
-</Callout>
+> **warning** Do not store unmasked sensitive data (full card numbers, personal identifiers, secrets) in span attributes. Use masking or tokenization to protect user data in telemetry.
 
 Links and references
 
@@ -110,9 +108,7 @@ Links and references
 * Jaeger: [https://www.jaegertracing.io/](https://www.jaegertracing.io/)
 * Zipkin: [https://zipkin.io/](https://zipkin.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/59f4df72-f060-49ab-9e7d-e475b134b20b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/59f4df72-f060-49ab-9e7d-e475b134b20b)
 
 
 # Demo Instrumenting Application Creating the First Span

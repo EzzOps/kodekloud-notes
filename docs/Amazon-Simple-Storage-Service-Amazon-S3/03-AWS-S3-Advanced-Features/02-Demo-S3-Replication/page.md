@@ -10,7 +10,7 @@ Learn how to set up cross-region replication between two Amazon S3 buckets. This
 
 1. Open the [Amazon S3 console](https://s3.console.aws.amazon.com/s3/home) and click **Create bucket**.
 
-![The image shows the AWS S3 Management Console with the "Create bucket" page open, where users can configure settings for a new S3 bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869208/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Replication/aws-s3-management-console-create-bucket.jpg)
+![The image shows the AWS S3 Management Console with the "Create bucket" page open, where users can configure settings for a new S3 bucket.](https://kodekloud.com/kk-media/image/upload/v1752869208/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Replication/aws-s3-management-console-create-bucket.jpg)
 
 2. Name your buckets and choose regions:
 
@@ -21,7 +21,7 @@ Learn how to set up cross-region replication between two Amazon S3 buckets. This
 
 3. After creating both, you should see them listed:
 
-![The image shows an Amazon S3 management console with a list of two buckets, "kk-repl-source" and "kk-repl-destination," both marked as not public. A notification indicates a bucket was successfully created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869209/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Replication/amazon-s3-management-console-buckets.jpg)
+![The image shows an Amazon S3 management console with a list of two buckets, "kk-repl-source" and "kk-repl-destination," both marked as not public. A notification indicates a bucket was successfully created.](https://kodekloud.com/kk-media/image/upload/v1752869209/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Replication/amazon-s3-management-console-buckets.jpg)
 
 > **lightbulb** Bucket names must be globally unique and comply with DNS naming conventions.
 
@@ -29,13 +29,13 @@ Learn how to set up cross-region replication between two Amazon S3 buckets. This
 
 1. In the source bucket, select the **Management** tab and then **Replication rules**. Click **Create replication rule**.
 
-![The image shows an AWS S3 Management Console screen where a replication rule is being configured. It includes options for setting the source bucket, region, rule scope, and filter type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869210/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Replication/aws-s3-replication-rule-configuration.jpg)
+![The image shows an AWS S3 Management Console screen where a replication rule is being configured. It includes options for setting the source bucket, region, rule scope, and filter type.](https://kodekloud.com/kk-media/image/upload/v1752869210/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Replication/aws-s3-replication-rule-configuration.jpg)
 
 2. Enter a name (e.g., **MyReplication**) and enable the rule. Set the rule scope to **Entire bucket** so all objects replicate.
 
 3. Under **Destination**, click **Browse** and choose `kk-repl-destination`.
 
-![The image shows an AWS S3 Management Console screen for setting up bucket replication, with options for source and destination buckets and IAM role selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869212/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Replication/aws-s3-bucket-replication-console.jpg)
+![The image shows an AWS S3 Management Console screen for setting up bucket replication, with options for source and destination buckets and IAM role selection.](https://kodekloud.com/kk-media/image/upload/v1752869212/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Replication/aws-s3-bucket-replication-console.jpg)
 
 4. If versioning is not enabled on either bucket, follow the console prompts to turn it on.
 
@@ -45,11 +45,11 @@ Learn how to set up cross-region replication between two Amazon S3 buckets. This
 
 6. On the replication settings page, enable **Replication Time Control (RTC)** to guarantee replication within 15 minutes. You can also opt to replicate delete markers or metadata. Click **Save**.
 
-![The image shows an AWS S3 Management Console screen with options for configuring replication settings, including encryption, destination storage class, and additional replication options. A green notification bar at the top indicates that object versioning is enabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869214/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Replication/aws-s3-management-console-replication-settings.jpg)
+![The image shows an AWS S3 Management Console screen with options for configuring replication settings, including encryption, destination storage class, and additional replication options. A green notification bar at the top indicates that object versioning is enabled.](https://kodekloud.com/kk-media/image/upload/v1752869214/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Replication/aws-s3-management-console-replication-settings.jpg)
 
 7. Your new rule will now appear in the list:
 
-![The image shows an AWS S3 Management Console screen displaying replication rules for a bucket, with details about the source and destination regions and replication settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869215/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Replication/aws-s3-management-console-replication-rules.jpg)
+![The image shows an AWS S3 Management Console screen displaying replication rules for a bucket, with details about the source and destination regions and replication settings.](https://kodekloud.com/kk-media/image/upload/v1752869215/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Replication/aws-s3-management-console-replication-rules.jpg)
 
 ## 3. Review the IAM Role
 
@@ -57,7 +57,7 @@ The console created an IAM role (for example, `role-for-kk-repl-source`) with th
 
 1. Go to the [IAM console](https://console.aws.amazon.com/iam/home#/roles) and click **Roles**.
 
-![The image shows the AWS Identity and Access Management (IAM) console, specifically the "Roles" section, listing various roles and their trusted entities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869216/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Replication/aws-iam-console-roles-trusted-entities.jpg)
+![The image shows the AWS Identity and Access Management (IAM) console, specifically the "Roles" section, listing various roles and their trusted entities.](https://kodekloud.com/kk-media/image/upload/v1752869216/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Replication/aws-iam-console-roles-trusted-entities.jpg)
 
 2. Select the replication role and review its attached policy:
 
@@ -103,7 +103,7 @@ The console created an IAM role (for example, `role-for-kk-repl-source`) with th
 1. Upload a few files to the source bucket (`kk-repl-source`).
 2. In another tab, open the destination bucket (`kk-repl-destination`) and verify that the objects appear within 15 minutes.
 
-![The image shows an Amazon S3 bucket interface with a list of objects and folders, including files named "file1," "file2," "file3," and "secondfile.txt." The interface displays options for managing these objects, such as uploading and creating folders.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869217/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Replication/amazon-s3-bucket-interface-objects.jpg)
+![The image shows an Amazon S3 bucket interface with a list of objects and folders, including files named "file1," "file2," "file3," and "secondfile.txt." The interface displays options for managing these objects, such as uploading and creating folders.](https://kodekloud.com/kk-media/image/upload/v1752869217/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-S3-Replication/amazon-s3-bucket-interface-objects.jpg)
 
 Congratulations! You’ve successfully configured cross-region replication for Amazon S3.
 

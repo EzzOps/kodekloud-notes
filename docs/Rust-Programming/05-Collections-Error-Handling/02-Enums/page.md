@@ -50,22 +50,16 @@ fn main() {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Printing enums with `println!("{:?}", ...)` requires the `Debug` trait. If you encounter formatting errors, add `#[derive(Debug)]` above your enum definition.
-</Callout>
+> **triangle-alert** Printing enums with `println!("{:?}", ...)` requires the `Debug` trait. If you encounter formatting errors, add `#[derive(Debug)]` above your enum definition.
 
 The Rust standard library also provides useful enums such as `Option` and `Result`:
 
 * **Option:** Represents an optional value. Every `Option` is either `Some(value)` or `None`.
 * **Result:** Used for error handling. It is either `Ok(value)` for success or `Err(error)` for failure.
 
-<Frame>
-  ![The image is a diagram explaining enums, specifically the Option\<T> and Result\<T, E> types, detailing their purposes and variants.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883842/notes-assets/images/Rust-Programming-Enums/enums-option-result-diagram.jpg)
-</Frame>
+![The image is a diagram explaining enums, specifically the Option\<T> and Result\<T, E> types, detailing their purposes and variants.](https://kodekloud.com/kk-media/image/upload/v1752883842/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752883842/notes-assets/images/Rust-Programming-Enums/enums-option-result-diagram.jpg)
 
-<Callout icon="lightbulb">
-  The explanation provided here and in subsequent sections gives a complete understanding of how the `Option` and `Result` types work, making external diagrams optional.
-</Callout>
+> **lightbulb** The explanation provided here and in subsequent sections gives a complete understanding of how the `Option` and `Result` types work, making external diagrams optional.
 
 ***
 
@@ -153,9 +147,7 @@ In this example:
 * Replacing `msg2` with `msg3` or `msg4` will output the corresponding associated data.
 * The pattern matching technique extracts and prints the data based on the variant.
 
-<Callout icon="lightbulb">
-  If you assign variables like `msg3` or `msg4` without using them, the compiler may generate warnings. To suppress these warnings intentionally, prefix the variable name with an underscore (e.g., `_msg`).
-</Callout>
+> **lightbulb** If you assign variables like `msg3` or `msg4` without using them, the compiler may generate warnings. To suppress these warnings intentionally, prefix the variable name with an underscore (e.g., `_msg`).
 
 Another example with different variants demonstrates pattern matching:
 
@@ -218,13 +210,9 @@ This code attempts to open "hello.txt" and:
 
 When "hello.txt" is absent, you'll see the "File not found" message. Creating the file will result in a successful file details printout.
 
-<Frame>
-  ![The image is a diagram explaining enums, specifically the Option\<T> and Result\<T, E> types, detailing their purposes and variants.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883842/notes-assets/images/Rust-Programming-Enums/enums-option-result-diagram.jpg)
-</Frame>
+![The image is a diagram explaining enums, specifically the Option\<T> and Result\<T, E> types, detailing their purposes and variants.](https://kodekloud.com/kk-media/image/upload/v1752883842/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752883842/notes-assets/images/Rust-Programming-Enums/enums-option-result-diagram.jpg)
 
-<Callout icon="lightbulb">
-  The explanation in this section, in conjunction with the earlier discussion on Option and Result types, clearly illustrates error handling in Rust without the need for external diagrams.
-</Callout>
+> **lightbulb** The explanation in this section, in conjunction with the earlier discussion on Option and Result types, clearly illustrates error handling in Rust without the need for external diagrams.
 
 ***
 
@@ -353,6 +341,4 @@ For further reading, consider these resources:
 * [Rust Documentation](https://doc.rust-lang.org/book/)
 * [Rust Error Handling](https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/29fbe393-bae3-4a16-8fc5-a854a2400daa/lesson/b0560571-b8f0-4a7d-8b26-2ef3e2750adf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/29fbe393-bae3-4a16-8fc5-a854a2400daa/lesson/b0560571-b8f0-4a7d-8b26-2ef3e2750adf)

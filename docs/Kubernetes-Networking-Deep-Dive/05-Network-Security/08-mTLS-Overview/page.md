@@ -8,9 +8,7 @@ cilium hubble enable
 hubble observe --namespace default
 ```
 
-<Frame>
-  ![The image is a presentation slide titled "Observability With Hubble," featuring a stylized illustration of a satellite and a list of observability features such as network traffic visibility, application behavior visibility, and security events visibility.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880411/notes-assets/images/Kubernetes-Networking-Deep-Dive-Security-Overview/observability-with-hubble-satellite-slide.jpg)
-</Frame>
+![The image is a presentation slide titled "Observability With Hubble," featuring a stylized illustration of a satellite and a list of observability features such as network traffic visibility, application behavior visibility, and security events visibility.](https://kodekloud.com/kk-media/image/upload/v1752880411/notes-assets/images/Kubernetes-Networking-Deep-Dive-Security-Overview/observability-with-hubble-satellite-slide.jpg)
 
 ## Links and References
 
@@ -20,9 +18,7 @@ hubble observe --namespace default
 * [Traefik Ingress Controller](https://doc.traefik.io/traefik/)
 * [Cilium & Hubble](https://cilium.io/features/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/a90600fe-7343-4bfb-b836-f80177c6920d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/a90600fe-7343-4bfb-b836-f80177c6920d)
 
 
 # mTLS Overview
@@ -48,13 +44,9 @@ mTLS adds two more critical steps:
 
 This bidirectional verification ensures end-to-end encryption, prevents impersonation, and eliminates man-in-the-middle attacks.
 
-<Frame>
-  ![The image is an introduction to mTLS, showing a diagram of mutual identification between a client and a server, highlighting benefits like higher security and data integrity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880413/notes-assets/images/Kubernetes-Networking-Deep-Dive-mTLS-Overview/mtls-introduction-client-server-diagram.jpg)
-</Frame>
+![The image is an introduction to mTLS, showing a diagram of mutual identification between a client and a server, highlighting benefits like higher security and data integrity.](https://kodekloud.com/kk-media/image/upload/v1752880413/notes-assets/images/Kubernetes-Networking-Deep-Dive-mTLS-Overview/mtls-introduction-client-server-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Before deploying mTLS, ensure you have a Certificate Authority (CA) in place. Tools like [Cert-Manager](https://cert-manager.io/) can automate certificate issuance, rotation, and revocation.
-</Callout>
+> **lightbulb** Before deploying mTLS, ensure you have a Certificate Authority (CA) in place. Tools like [Cert-Manager](https://cert-manager.io/) can automate certificate issuance, rotation, and revocation.
 
 ## How mTLS Works
 
@@ -67,9 +59,7 @@ The mTLS handshake extends the standard TLS flow with certificate exchange on bo
 5. **Client Verification:** Server validates the client’s certificate.
 6. **Secure Channel Established:** Both parties exchange encrypted data over the secure channel.
 
-<Frame>
-  ![The image illustrates the process of mutual TLS (mTLS) authentication between a client and a server, detailing steps such as certificate exchange and verification for secure communication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880414/notes-assets/images/Kubernetes-Networking-Deep-Dive-mTLS-Overview/mutual-tls-authentication-client-server-diagram.jpg)
-</Frame>
+![The image illustrates the process of mutual TLS (mTLS) authentication between a client and a server, detailing steps such as certificate exchange and verification for secure communication.](https://kodekloud.com/kk-media/image/upload/v1752880414/notes-assets/images/Kubernetes-Networking-Deep-Dive-mTLS-Overview/mutual-tls-authentication-client-server-diagram.jpg)
 
 ## Key Benefits of mTLS in Kubernetes
 
@@ -102,9 +92,7 @@ Istio leverages Envoy sidecars:
 * Sidecars exchange and verify credentials against the Istio root CA.
 * Establish encrypted tunnels between services.
 
-<Frame>
-  ![The image compares Linkerd and Istio, showing a diagram of Linkerd's mTLS support with proxies in Pods A and B.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880415/notes-assets/images/Kubernetes-Networking-Deep-Dive-mTLS-Overview/linkerd-istio-mtls-proxies-diagram.jpg)
-</Frame>
+![The image compares Linkerd and Istio, showing a diagram of Linkerd's mTLS support with proxies in Pods A and B.](https://kodekloud.com/kk-media/image/upload/v1752880415/notes-assets/images/Kubernetes-Networking-Deep-Dive-mTLS-Overview/linkerd-istio-mtls-proxies-diagram.jpg)
 
 ### Cilium (Beta)
 
@@ -118,9 +106,7 @@ Cilium’s mTLS support is currently in beta. Refer to the official [Cilium docu
 * Provide training and run regular workshops on certificate troubleshooting.
 * Keep operational runbooks and troubleshooting guides up to date.
 
-<Callout icon="triangle-alert">
-  mTLS adds CPU/memory overhead for encryption and certificate checks. Plan resource allocation accordingly.
-</Callout>
+> **triangle-alert** mTLS adds CPU/memory overhead for encryption and certificate checks. Plan resource allocation accordingly.
 
 ## Challenges and Considerations
 
@@ -130,9 +116,7 @@ Cilium’s mTLS support is currently in beta. Refer to the official [Cilium docu
 4. Compatibility gaps in legacy or third-party services.
 5. Operational complexity requiring deeper security expertise.
 
-<Frame>
-  ![The image lists five challenges and considerations: performance overhead, higher costs, certificate management, compatibility, and operational complexity. Each challenge is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880416/notes-assets/images/Kubernetes-Networking-Deep-Dive-mTLS-Overview/challenges-performance-costs-management-icons.jpg)
-</Frame>
+![The image lists five challenges and considerations: performance overhead, higher costs, certificate management, compatibility, and operational complexity. Each challenge is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752880416/notes-assets/images/Kubernetes-Networking-Deep-Dive-mTLS-Overview/challenges-performance-costs-management-icons.jpg)
 
 ***
 
@@ -142,6 +126,4 @@ Cilium’s mTLS support is currently in beta. Refer to the official [Cilium docu
 * [Istio Security Concepts](https://istio.io/latest/docs/concepts/security/)
 * [Linkerd Security Overview](https://linkerd.io/2.11/security/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/c768d138-ead1-4640-8849-e5b2f9f80aca" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/c768d138-ead1-4640-8849-e5b2f9f80aca)

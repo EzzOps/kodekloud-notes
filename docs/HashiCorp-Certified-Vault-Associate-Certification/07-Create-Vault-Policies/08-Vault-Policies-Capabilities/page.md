@@ -18,13 +18,9 @@ When defining Vault policies, you specify both the path you’re granting privil
 | sudo       | N/A                        | Perform operations on root-protected paths |
 | deny       | N/A                        | Explicitly block access (overrides others) |
 
-<Callout icon="lightbulb">
-  Vault does *not* support a `write` capability. Instead, policies use separate `create` and `update` actions.
-</Callout>
+> **lightbulb** Vault does *not* support a `write` capability. Instead, policies use separate `create` and `update` actions.
 
-<Frame>
-  ![The image lists various "Vault Policies - Capabilities" such as Create, Read, Update, Delete, List, Sudo, and Deny, with a note stating that "Write" is not a valid capability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878143/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Policies-Capabilities/vault-policies-capabilities-list.jpg)
-</Frame>
+![The image lists various "Vault Policies - Capabilities" such as Create, Read, Update, Delete, List, Sudo, and Deny, with a note stating that "Write" is not a valid capability.](https://kodekloud.com/kk-media/image/upload/v1752878143/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Policies-Capabilities/vault-policies-capabilities-list.jpg)
 
 ## Create vs. Update
 
@@ -82,9 +78,7 @@ Requirements:
 * Grant **read** access to everything under `kv/apps/webapp/`.
 * **Deny** access to `kv/apps/webapp/super_secret`.
 
-<Frame>
-  ![The image shows an example of a Vault policy with requirements for accessing and denying access to specific paths in a key-value store. It includes a directory tree structure illustrating the paths.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878144/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Policies-Capabilities/vault-policy-key-value-paths-diagram.jpg)
-</Frame>
+![The image shows an example of a Vault policy with requirements for accessing and denying access to specific paths in a key-value store. It includes a directory tree structure illustrating the paths.](https://kodekloud.com/kk-media/image/upload/v1752878144/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Policies-Capabilities/vault-policy-key-value-paths-diagram.jpg)
 
 Use a wildcard for the first rule and an explicit `deny` for the second:
 
@@ -133,9 +127,7 @@ path "kv/apps/webapp/super_secret" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Without `list` on each parent path, users cannot navigate the directory structure in the Vault UI or via the CLI.
-</Callout>
+> **triangle-alert** Without `list` on each parent path, users cannot navigate the directory structure in the Vault UI or via the CLI.
 
 ## References
 
@@ -143,6 +135,4 @@ path "kv/apps/webapp/super_secret" {
 * [Vault HTTP API — System Policies](https://www.vaultproject.io/api-docs/system/policies)
 * [KV Secrets Engine (v2)](https://www.vaultproject.io/docs/secrets/kv/kv-v2)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/21d89bcb-d394-4910-8044-0e97950f287a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/21d89bcb-d394-4910-8044-0e97950f287a)

@@ -137,7 +137,7 @@ The article explains the Internal Field Separator (IFS) in Bash, its default beh
 
 The Internal Field Separator (`IFS`) is a special shell variable that defines how Bash—and other POSIX-compatible shells—split strings into fields. While environment variables provide static, system-wide settings, shell variables like `IFS` are dynamic and scoped to your shell session. Properly managing `IFS` enhances portability by ensuring your scripts behave consistently across different systems.
 
-![The image features a magnifying glass with the text "IFS Environment variables" and a thumbs-up icon, set against a dark background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868625/notes-assets/images/Advanced-Bash-Scripting-ifs/ifs-environment-variables-magnifying-glass.jpg)
+![The image features a magnifying glass with the text "IFS Environment variables" and a thumbs-up icon, set against a dark background.](https://kodekloud.com/kk-media/image/upload/v1752868625/notes-assets/images/Advanced-Bash-Scripting-ifs/ifs-environment-variables-magnifying-glass.jpg)
 
 By default, `IFS` includes space, tab, and newline. This default behavior impacts many common tasks, such as iterating over lists of filenames or parsing command output.
 
@@ -181,7 +181,7 @@ IFS=$' \t\n'
 
 > **lightbulb** The `$'…'` syntax tells Bash to process backslash escapes within single quotes, ensuring you include the exact characters you need.
 
-![The image is a slide titled "ANSI-C Quoting" and explains that it starts with a dollar sign.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868626/notes-assets/images/Advanced-Bash-Scripting-ifs/ansi-c-quoting-dollar-sign.jpg)
+![The image is a slide titled "ANSI-C Quoting" and explains that it starts with a dollar sign.](https://kodekloud.com/kk-media/image/upload/v1752868626/notes-assets/images/Advanced-Bash-Scripting-ifs/ansi-c-quoting-dollar-sign.jpg)
 
 ## Changing the Field Separator
 
@@ -262,7 +262,7 @@ Here, `set -- ${val}` replaces the shell’s positional parameters with the spli
 
 ## Restoring IFS and Handling Empty Strings
 
-![The image contains two questions about IFS: "How to restore IFS to default?" and "What happens if IFS is assigned to an empty string or a null value?" It also features speech bubble icons with question marks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868627/notes-assets/images/Advanced-Bash-Scripting-ifs/ifs-questions-speech-bubbles.jpg)
+![The image contains two questions about IFS: "How to restore IFS to default?" and "What happens if IFS is assigned to an empty string or a null value?" It also features speech bubble icons with question marks.](https://kodekloud.com/kk-media/image/upload/v1752868627/notes-assets/images/Advanced-Bash-Scripting-ifs/ifs-questions-speech-bubbles.jpg)
 
 1. **Restore IFS to default**
    ```bash theme={null}

@@ -28,9 +28,7 @@ Verify the snapshot file in your working directory:
 aws  rh  temp.snap
 ```
 
-<Callout icon="lightbulb">
-  Each Raft snapshot includes Vault’s complete configuration, metadata, and KV data. Store snapshots in a secure, redundant location.
-</Callout>
+> **lightbulb** Each Raft snapshot includes Vault’s complete configuration, metadata, and KV data. Store snapshots in a secure, redundant location.
 
 ## Restoring from a Snapshot
 
@@ -42,9 +40,7 @@ vault operator raft snapshot restore temp.snap
 
 This command rehydrates the Vault node with the state stored in `temp.snap`.
 
-<Callout icon="triangle-alert">
-  Restoring from a snapshot **overwrites** your existing Vault data. Confirm you have a valid backup before proceeding.
-</Callout>
+> **triangle-alert** Restoring from a snapshot **overwrites** your existing Vault data. Confirm you have a valid backup before proceeding.
 
 ## Configuring Automated Snapshots (Enterprise Only)
 
@@ -133,6 +129,4 @@ Automated Raft snapshots ensure continuous, reliable backups of your Vault data 
 * [Vault CLI Command Reference](https://www.vaultproject.io/docs/commands)
 * [AWS S3 Documentation](https://docs.aws.amazon.com/s3/index.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/1cb66cf7-2150-4569-be89-accd76668dd9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/1cb66cf7-2150-4569-be89-accd76668dd9)

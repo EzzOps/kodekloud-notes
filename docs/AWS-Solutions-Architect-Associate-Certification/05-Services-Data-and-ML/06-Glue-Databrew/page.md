@@ -21,17 +21,17 @@ The workflow of Glue DataBrew is straightforward:
 
 Data sources for Glue DataBrew include the Glue Catalog, various database services, and S3, all of which can be directly integrated into your workflows.
 
-![The image is a diagram showing AWS Glue Databrew connected to Amazon S3, Amazon Redshift, Amazon RDS, and AWS Glue.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865059/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Glue-Databrew/aws-glue-databrew-diagram.jpg)
+![The image is a diagram showing AWS Glue Databrew connected to Amazon S3, Amazon Redshift, Amazon RDS, and AWS Glue.](https://kodekloud.com/kk-media/image/upload/v1752865059/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Glue-Databrew/aws-glue-databrew-diagram.jpg)
 
 ### Example Workflow
 
 Consider a workflow where data is sourced from S3 and ingested into Glue DataBrew. It leverages pre-built transformations, and the output is subsequently loaded into Athena. The processed data then becomes accessible to QuickSight for analysis by data and business analysts.
 
-![The image is a flowchart illustrating the data processing workflow using AWS services, including AWS Glue Databrew, AWS Glue, Athena, and QuickSight, with roles for Data Analyst and Business Analyst.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865060/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Glue-Databrew/aws-data-processing-workflow-flowchart.jpg)
+![The image is a flowchart illustrating the data processing workflow using AWS services, including AWS Glue Databrew, AWS Glue, Athena, and QuickSight, with roles for Data Analyst and Business Analyst.](https://kodekloud.com/kk-media/image/upload/v1752865060/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Glue-Databrew/aws-data-processing-workflow-flowchart.jpg)
 
 Under the hood, Glue DataBrew utilizes AWS Glue to perform data transformations and supports machine learning workflows. For example, you can source data via DataBrew and export the processed output to services such as SageMaker, Rekognition, or Polly.
 
-![The image is a diagram showing the integration of AWS services, including Amazon S3, Amazon Redshift, AWS Glue, AWS Glue Databrew, and Amazon SageMaker. It illustrates a data processing workflow from storage to machine learning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865061/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Glue-Databrew/aws-services-integration-diagram.jpg)
+![The image is a diagram showing the integration of AWS services, including Amazon S3, Amazon Redshift, AWS Glue, AWS Glue Databrew, and Amazon SageMaker. It illustrates a data processing workflow from storage to machine learning.](https://kodekloud.com/kk-media/image/upload/v1752865061/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Glue-Databrew/aws-services-integration-diagram.jpg)
 
 ## Key Features of Glue DataBrew
 
@@ -43,7 +43,7 @@ Under the hood, Glue DataBrew utilizes AWS Glue to perform data transformations 
 | Integration with AWS Data Stores | Seamlessly integrates with services such as Aurora, Redshift, and RDS.                                           |
 | Job Scheduling and Reusability   | Schedule data tasks based on triggers or time, and create reusable project templates.                            |
 
-![The image lists five features: Visual Data Preparation, Data Profiling, Scalability and Performance, Integration with AWS Data Stores, and Job Scheduling and Reusability. Each feature is represented with an icon and a gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865062/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Glue-Databrew/data-preparation-profiling-features.jpg)
+![The image lists five features: Visual Data Preparation, Data Profiling, Scalability and Performance, Integration with AWS Data Stores, and Job Scheduling and Reusability. Each feature is represented with an icon and a gradient background.](https://kodekloud.com/kk-media/image/upload/v1752865062/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Glue-Databrew/data-preparation-profiling-features.jpg)
 
 ## In Summary
 

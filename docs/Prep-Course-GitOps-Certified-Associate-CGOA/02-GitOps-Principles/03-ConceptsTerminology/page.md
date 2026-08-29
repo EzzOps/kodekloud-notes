@@ -12,9 +12,7 @@ In this lesson we cover the foundational Argo CD concepts and terminology you ne
 * [Coursera Labs: Source Control & CI/CD - Hands-On](https://learn.kodekloud.com/user/courses/coursera-source-control-ci-cd-hands-on)
 * [GitOps with ArgoCD](https://learn.kodekloud.com/user/courses/gitops-with-argocd)
 
-<Callout icon="lightbulb">
-  Argo CD implements GitOps: the Git repository holds the desired (target) state, and Argo CD continuously reconciles the live cluster state to match that target state.
-</Callout>
+> **lightbulb** Argo CD implements GitOps: the Git repository holds the desired (target) state, and Argo CD continuously reconciles the live cluster state to match that target state.
 
 Core concepts at a glance
 
@@ -118,6 +116,4 @@ Further reading and references
 
 That covers the basic Argo CD concepts and terminology. Use this as a quick reference when designing GitOps workflows with Argo CD.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/33ca3f0b-f15f-410a-bfe0-e573051803f8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/33ca3f0b-f15f-410a-bfe0-e573051803f8)

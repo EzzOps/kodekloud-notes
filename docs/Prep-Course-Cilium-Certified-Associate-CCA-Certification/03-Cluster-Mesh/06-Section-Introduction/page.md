@@ -24,9 +24,7 @@ Cluster Mesh supports a range of multi-cluster design patterns depending on your
 * Selective connectivity: only specific clusters, namespaces, or services are permitted to communicate.
 * Geo-aware load distribution: direct traffic to nearest or healthiest cluster.
 
-<Callout icon="lightbulb">
-  Cluster Mesh lets you treat multiple clusters as a cohesive network domain while still enforcing cluster-local policies. Use selective connectivity to reduce attack surface and control egress/ingress paths between clusters.
-</Callout>
+> **lightbulb** Cluster Mesh lets you treat multiple clusters as a cohesive network domain while still enforcing cluster-local policies. Use selective connectivity to reduce attack surface and control egress/ingress paths between clusters.
 
 Table — Key topics and practical examples
 
@@ -38,9 +36,7 @@ Table — Key topics and practical examples
 
 Security and policy are critical considerations when enabling multi-cluster networking. Misconfigured connectivity can expose sensitive services or cause unintended lateral movement between clusters.
 
-<Callout icon="warning">
-  Always enforce least privilege when authorizing inter-cluster traffic. Combine network policies with identity and TLS controls to limit which workloads can communicate across clusters.
-</Callout>
+> **warning** Always enforce least privilege when authorizing inter-cluster traffic. Combine network policies with identity and TLS controls to limit which workloads can communicate across clusters.
 
 Recommended references
 
@@ -50,6 +46,4 @@ Recommended references
 
 In the following sections we will step through how Cluster Mesh establishes connections, how service and traffic distribution work across clusters, and how to enforce inter-cluster network policies with concrete configuration examples and patterns.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b8be180f-1719-47ca-b26e-7bf942694abf/lesson/88070f8d-475f-41f1-bbd5-cef9218b1a65" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b8be180f-1719-47ca-b26e-7bf942694abf/lesson/88070f8d-475f-41f1-bbd5-cef9218b1a65)

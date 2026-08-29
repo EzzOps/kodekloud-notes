@@ -303,13 +303,11 @@ A typical events output might be:
 
 The event source confirms that the custom scheduler successfully handled pod scheduling.
 
-<Callout icon="lightbulb">
-  To troubleshoot your custom scheduler, view its logs with:
+> **lightbulb** To troubleshoot your custom scheduler, view its logs with:
 
   kubectl logs my-custom-scheduler --namespace=kube-system
 
   Reviewing these logs will help pinpoint configuration errors or leader election issues.
-</Callout>
 
 ## Conclusion
 
@@ -319,9 +317,7 @@ Happy scheduling!
 
 For more information on Kubernetes scheduling, visit the [Kubernetes Documentation](https://kubernetes.io/docs/) and explore additional resources on [Custom Schedulers](https://kubernetes.io/docs/concepts/scheduling-eviction/scheduler-perf-tuning/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/4fab542c-3091-4f8e-ad7c-91d96d54b049/lesson/d40a3617-69db-4325-8fd8-aad28639e0f0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/4fab542c-3091-4f8e-ad7c-91d96d54b049/lesson/d40a3617-69db-4325-8fd8-aad28639e0f0)
 
 
 # Node Affinity
@@ -373,14 +369,12 @@ spec:
                   - Large
 ```
 
-<Callout icon="lightbulb">
-  In this configuration:
+> **lightbulb** In this configuration:
 
   * The `affinity` block is defined under the pod `spec`.
   * `nodeAffinity` specifies the criteria used for node scheduling.
   * The field `requiredDuringSchedulingIgnoredDuringExecution` indicates a mandatory requirement for scheduling; if no node meets the criteria, the pod is not scheduled.
   * `nodeSelectorTerms` holds an array of conditions—in this case, ensuring that the node label `size` must have a value included in the specified list.
-</Callout>
 
 To allow flexibility—for example, if the pod can also run on a "Medium" node—you simply add that value to the list:
 
@@ -463,12 +457,10 @@ There are two primary types of node affinity currently supported:
 * **preferredDuringSchedulingIgnoredDuringExecution**:\
   The scheduler attempts to honor the specified node affinity rules. If a matching node is not found, the pod can be scheduled on a non-matching node. Similarly, node label changes after scheduling are ignored.
 
-<Callout icon="lightbulb">
-  Future releases of Kubernetes plan to introduce additional affinity types that enforce rules during both scheduling and execution:
+> **lightbulb** Future releases of Kubernetes plan to introduce additional affinity types that enforce rules during both scheduling and execution:
 
   * requiredDuringSchedulingRequiredDuringExecution
   * preferredDuringSchedulingRequiredDuringExecution
-</Callout>
 
 ### Scheduling vs. Execution
 
@@ -483,9 +475,7 @@ Node affinity rules are applied during two key phases of a pod's lifecycle:
 Consider this scenario:\
 A pod is scheduled on a node with the label `size=Large`. If an administrator later removes this label, the pod continues to run under the current behavior. Future implementations with the "required during execution" option could result in pod eviction.
 
-<Frame>
-  ![The image explains node affinity types, showing scheduling and execution requirements for four types, alongside a diagram of a large node labeled "Node 1."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880694/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Node-Affinity/frame_420.jpg)
-</Frame>
+![The image explains node affinity types, showing scheduling and execution requirements for four types, alongside a diagram of a large node labeled "Node 1."](https://kodekloud.com/kk-media/image/upload/v1752880694/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Node-Affinity/frame_420.jpg)
 
 ## Conclusion
 
@@ -493,6 +483,4 @@ In this guide, we broke down the core components of node affinity and demonstrat
 
 For further reading and advanced configuration options, be sure to check out the [Kubernetes Documentation](https://kubernetes.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/4fab542c-3091-4f8e-ad7c-91d96d54b049/lesson/ad9f1015-9e5d-47e8-a83a-875e16fab549" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/4fab542c-3091-4f8e-ad7c-91d96d54b049/lesson/ad9f1015-9e5d-47e8-a83a-875e16fab549)

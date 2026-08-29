@@ -20,7 +20,7 @@ AWS Athena is designed to efficiently analyze both structured and unstructured d
 
 The following diagram illustrates a typical data processing workflow using AWS services:
 
-![The image is a diagram illustrating a data processing workflow using AWS services, including AWS Glue, S3 Bucket, and AWS Glue Data Catalog, with data sources feeding into a data lake.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865012/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Athena/aws-data-processing-workflow-diagram.jpg)
+![The image is a diagram illustrating a data processing workflow using AWS services, including AWS Glue, S3 Bucket, and AWS Glue Data Catalog, with data sources feeding into a data lake.](https://kodekloud.com/kk-media/image/upload/v1752865012/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Athena/aws-data-processing-workflow-diagram.jpg)
 
 Once the data is cataloged by AWS Glue, Athena enables business analysts to run SQL queries directly on the S3-stored datasets. For instance, if you want to analyze customer purchase data to compute total sales by product within a specific date range, your SQL query might look like this:
 
@@ -40,11 +40,11 @@ LIMIT 5;
 
 After running queries in Athena, you can seamlessly integrate the results with Amazon QuickSight for data visualization. QuickSight automatically updates dashboards based on the latest Athena query results, streamlining your data analysis and reporting workflow.
 
-![The image is a diagram showing the flow of data from an S3 Bucket to Athena and then to QuickSight, illustrating a data processing and visualization workflow.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865013/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Athena/s3-athena-quicksight-workflow-diagram.jpg)
+![The image is a diagram showing the flow of data from an S3 Bucket to Athena and then to QuickSight, illustrating a data processing and visualization workflow.](https://kodekloud.com/kk-media/image/upload/v1752865013/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Athena/s3-athena-quicksight-workflow-diagram.jpg)
 
 Athena's flexibility extends to many data sources, including Keyspaces, DynamoDB, DocumentDB, and RDS. These sources can be ingested into the Glue Data Catalog, queried with Athena, and then visualized using QuickSight.
 
-![The image is a flowchart illustrating the integration of AWS services, showing data sources like S3, RDS, and others feeding into AWS Glue Data Catalog, which connects to Athena, and then to Amazon QuickSight for visualization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865014/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Athena/aws-services-integration-flowchart.jpg)
+![The image is a flowchart illustrating the integration of AWS services, showing data sources like S3, RDS, and others feeding into AWS Glue Data Catalog, which connects to Athena, and then to Amazon QuickSight for visualization.](https://kodekloud.com/kk-media/image/upload/v1752865014/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Athena/aws-services-integration-flowchart.jpg)
 
 ## Key Features
 
@@ -54,7 +54,7 @@ Athena's flexibility extends to many data sources, including Keyspaces, DynamoDB
 * **Multiple Data Format Support:** Query datasets stored in a variety of formats such as Parquet, ORC, JSON, CSV, and TSV.
 * **Broad Integration:** Compatible with JDBC and ODBC drivers, Athena easily serves as a data source for popular BI tools like Power BI, and integrates seamlessly with numerous AWS services.
 
-![The image lists five features: serverless and pay-per-query, built-in functions and partitioning, standard SQL and UDF, support for various data formats and drivers, and integration with other AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865015/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Athena/aws-serverless-features-list.jpg)
+![The image lists five features: serverless and pay-per-query, built-in functions and partitioning, standard SQL and UDF, support for various data formats and drivers, and integration with other AWS services.](https://kodekloud.com/kk-media/image/upload/v1752865015/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Athena/aws-serverless-features-list.jpg)
 
 ## Conclusion
 

@@ -12,7 +12,7 @@ Instead of manually crafting IAM policies for each Lambda function, AWS offers p
 * **DynamoDB CRUD Policy:** Provides the necessary permissions for creating, reading, updating, and deleting items in a DynamoDB table.
 * **SQS Poller Policy:** Enables Lambda functions to poll messages from an SQS queue.
 
-![The image illustrates AWS SAM policy templates, showing connections between AWS Lambda functions and specific policies for S3, DynamoDB, and SQS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859448/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Policy-Templates/aws-sam-policy-templates-diagram.jpg)
+![The image illustrates AWS SAM policy templates, showing connections between AWS Lambda functions and specific policies for S3, DynamoDB, and SQS services.](https://kodekloud.com/kk-media/image/upload/v1752859448/notes-assets/images/AWS-Certified-Developer-Associate-SAM-Policy-Templates/aws-sam-policy-templates-diagram.jpg)
 
 > **lightbulb** Using these pre-configured policies in your SAM template means that permissions are automatically granted to your Lambda functions for common use cases. This approach not only simplifies permission management but also reduces the potential for errors when manually configuring IAM policies.
 

@@ -15,9 +15,7 @@ The Istio operator provides flexible control over which components and settings 
 * Istioctl documentation: [https://istio.io/latest/docs/ops/diagnostic-tools/istioctl/](https://istio.io/latest/docs/ops/diagnostic-tools/istioctl/)
 * Helm charts for Istio: [https://github.com/istio/istio/tree/master/manifests/charts](https://github.com/istio/istio/tree/master/manifests/charts)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/3f6daee7-6e1d-485b-b175-97c15083d129" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/3f6daee7-6e1d-485b-b175-97c15083d129)
 
 
 # Demo Canary Release Istio Upgrade
@@ -237,9 +235,7 @@ productpage-v1-...                     istiod-1-26-3-774fb5c659-xgx82           
 
 You can also use `kubectl rollout restart deployment/<deployment-name>` to trigger a restart and pick up the new revision tag.
 
-<Callout icon="lightbulb">
-  Before uninstalling the old control plane, ensure every workload has been migrated to the new revision. Uninstalling the old revision while proxies still point to it will detach those proxies and break traffic.
-</Callout>
+> **lightbulb** Before uninstalling the old control plane, ensure every workload has been migrated to the new revision. Uninstalling the old revision while proxies still point to it will detach those proxies and break traffic.
 
 6. Uninstall the old revision
 
@@ -301,8 +297,6 @@ Summary
 
 This revision-based canary install flow lets you upgrade Istio with minimal disruption and a straightforward rollback path if needed.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/c2888591-eda8-4a20-9b25-793310c0ccc8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/c2888591-eda8-4a20-9b25-793310c0ccc8)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/928905b6-7868-4098-96a2-a602291ffdc6" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/65ee174b-536e-4657-9b6f-85c90c7612da/lesson/928905b6-7868-4098-96a2-a602291ffdc6)

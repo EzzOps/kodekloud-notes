@@ -47,9 +47,7 @@ Output:
 {'first': 4, 'third': 5}
 ```
 
-<Callout icon="lightbulb">
-  Each instance maintains its own property dictionary. Modifying an instance variable in one object does not affect other objects.
-</Callout>
+> **lightbulb** Each instance maintains its own property dictionary. Modifying an instance variable in one object does not affect other objects.
 
 ## Using Private Variables
 
@@ -82,9 +80,7 @@ Output:
 {'_ExampleClass__first': 4, 'third': 5}
 ```
 
-<Callout icon="triangle-alert">
-  Although these variables are declared as private, they can still be accessed externally using their mangled names. Use this feature with care.
-</Callout>
+> **triangle-alert** Although these variables are declared as private, they can still be accessed externally using their mangled names. Use this feature with care.
 
 ## Checking for Attributes with hasattr
 
@@ -126,8 +122,6 @@ Here, hasattr confirms that the dog object contains a "name" property. This func
 
 That concludes our discussion on object properties in Python. With these examples and explanations, you are encouraged to gain hands-on experience with these concepts to further enhance your Python programming skills.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/7e473cae-90c2-4d9a-8e81-6509481b52ce/lesson/c22570eb-bf05-4146-bb5c-a5fbe1eff309" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/7e473cae-90c2-4d9a-8e81-6509481b52ce/lesson/c22570eb-bf05-4146-bb5c-a5fbe1eff309)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/7e473cae-90c2-4d9a-8e81-6509481b52ce/lesson/39dddc2c-5c17-48a2-9ca5-6112c97ba9a4" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/7e473cae-90c2-4d9a-8e81-6509481b52ce/lesson/39dddc2c-5c17-48a2-9ca5-6112c97ba9a4)

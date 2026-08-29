@@ -16,10 +16,8 @@ In this demo environment:
 
 Now that the intermediate CA is ready to issue certificates, let’s proceed.
 
-<Callout icon="lightbulb">
-  This tutorial skips the initial CA bootstrap. Every organization’s PKI topology differs.\
+> **lightbulb** This tutorial skips the initial CA bootstrap. Every organization’s PKI topology differs.\
   If you need to configure a root or intermediate CA, see the [Vault PKI Quickstart](https://learn.hashicorp.com/).
-</Callout>
 
 ## 1. Retrieve the Issuer ID
 
@@ -91,10 +89,8 @@ private_key_type rsa
 serial_number    16:6b:25:b5:6c:07:d3:38...
 ```
 
-<Callout icon="triangle-alert">
-  This is the **only** time Vault returns the private key.\
+> **triangle-alert** This is the **only** time Vault returns the private key.\
   Ensure you store `private_key` securely—Vault will not expose it again.
-</Callout>
 
 ***
 
@@ -104,9 +100,7 @@ All of the above operations can also be performed in the Vault web interface.
 
 ### 4.1 Roles List
 
-<Frame>
-  ![The image shows a web interface for HashiCorp Vault, specifically the PKI secrets engine, displaying a list of roles with one entry labeled "webapp."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878430/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-PKI-Secrets-Engine/hashicorp-vault-pki-secrets-interface.jpg)
-</Frame>
+![The image shows a web interface for HashiCorp Vault, specifically the PKI secrets engine, displaying a list of roles with one entry labeled "webapp."](https://kodekloud.com/kk-media/image/upload/v1752878430/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-PKI-Secrets-Engine/hashicorp-vault-pki-secrets-interface.jpg)
 
 ### 4.2 Issue a Certificate
 
@@ -117,9 +111,7 @@ In the UI form:
 * **Subject Alternative Names**: DNS SANs, IP SANs
 * **TTL**: e.g., `72h`
 
-<Frame>
-  ![The image shows a web interface for issuing a certificate, with fields for common name, format, and subject alternative names (SANs). There are options to generate or cancel the certificate request.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878431/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-PKI-Secrets-Engine/certificate-request-web-interface-sans.jpg)
-</Frame>
+![The image shows a web interface for issuing a certificate, with fields for common name, format, and subject alternative names (SANs). There are options to generate or cancel the certificate request.](https://kodekloud.com/kk-media/image/upload/v1752878431/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-PKI-Secrets-Engine/certificate-request-web-interface-sans.jpg)
 
 After clicking **Generate**, the UI displays your certificate and warns you to copy the private key immediately.
 
@@ -127,17 +119,13 @@ After clicking **Generate**, the UI displays your certificate and warns you to c
 
 You can view or edit the role’s settings:
 
-<Frame>
-  ![The image shows a web interface displaying configuration details for a certificate or security settings, including fields like "Issuer ref," "Signature bits," and "TTL." The interface is part of a tool or application related to security management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878432/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-PKI-Secrets-Engine/web-interface-security-configuration-details.jpg)
-</Frame>
+![The image shows a web interface displaying configuration details for a certificate or security settings, including fields like "Issuer ref," "Signature bits," and "TTL." The interface is part of a tool or application related to security management.](https://kodekloud.com/kk-media/image/upload/v1752878432/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-PKI-Secrets-Engine/web-interface-security-configuration-details.jpg)
 
 ### 4.4 Certificate Listings
 
 Under **Certificates**, Vault lists all issued certs with their serial numbers. You can inspect or revoke them here.
 
-<Frame>
-  ![The image shows a web interface for HashiCorp Vault, displaying a list of certificates under the "pki" section. The interface includes options for roles, certificates, and configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878433/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-PKI-Secrets-Engine/hashicorp-vault-pki-certificates-interface.jpg)
-</Frame>
+![The image shows a web interface for HashiCorp Vault, displaying a list of certificates under the "pki" section. The interface includes options for roles, certificates, and configuration.](https://kodekloud.com/kk-media/image/upload/v1752878433/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-PKI-Secrets-Engine/hashicorp-vault-pki-certificates-interface.jpg)
 
 ***
 
@@ -155,6 +143,4 @@ Under **Certificates**, Vault lists all issued certs with their serial numbers. 
 * [HashiCorp Vault Learn](https://learn.hashicorp.com/collections/vault)
 * [Certificate Management Best Practices](https://www.vaultproject.io/docs/secrets/pki#best-practices)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/7d3bfee9-81e3-4024-b95e-d15ca75e3653" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/7d3bfee9-81e3-4024-b95e-d15ca75e3653)

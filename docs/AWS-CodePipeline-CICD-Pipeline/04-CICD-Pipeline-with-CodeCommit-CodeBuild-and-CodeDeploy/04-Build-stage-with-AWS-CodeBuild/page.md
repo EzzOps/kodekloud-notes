@@ -23,7 +23,7 @@ AWS CodeBuild offers a rich set of managed images out of-the-box:
 
 > **lightbulb** You can also supply a custom Docker image stored in Amazon ECR or a public registry to match your exact build requirements.
 
-![The image lists various programming environments such as Java, Ruby, GoLang, Node.js, Android, Microsoft.NET, PHP, and Docker, under the heading "Preconfigured Environments."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862582/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Build-stage-with-AWS-CodeBuild/preconfigured-environments-programming-languages.jpg)
+![The image lists various programming environments such as Java, Ruby, GoLang, Node.js, Android, Microsoft.NET, PHP, and Docker, under the heading "Preconfigured Environments."](https://kodekloud.com/kk-media/image/upload/v1752862582/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Build-stage-with-AWS-CodeBuild/preconfigured-environments-programming-languages.jpg)
 
 ## CodeBuild Workflow
 
@@ -36,7 +36,7 @@ When you trigger a build, CodeBuild orchestrates the following steps:
 5. **Upload** build artifacts to Amazon S3 or your chosen destination.
 6. **Tear down** the temporary container.
 
-![The image outlines the CodeBuild process in six steps: creating a temporary compute container, loading the runtime environment, downloading source code, executing project commands, uploading artifacts to S3, and removing the temporary container.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862583/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Build-stage-with-AWS-CodeBuild/codebuild-process-six-steps-outline.jpg)
+![The image outlines the CodeBuild process in six steps: creating a temporary compute container, loading the runtime environment, downloading source code, executing project commands, uploading artifacts to S3, and removing the temporary container.](https://kodekloud.com/kk-media/image/upload/v1752862583/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Build-stage-with-AWS-CodeBuild/codebuild-process-six-steps-outline.jpg)
 
 Here’s a sample `buildspec.yml`:
 
@@ -74,13 +74,13 @@ CodeBuild integrates natively with Amazon CloudWatch and SNS:
 | Build Status Alerts   | Amazon SNS             | Email, SMS, HTTP endpoint alerts |
 | Event-Driven Triggers | CloudWatch Events      | Automate downstream workflows    |
 
-![The image is a diagram showing AWS CodeBuild connected to AWS CloudWatch for monitoring and to Amazon Simple Notification Service (SNS) for notifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862584/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Build-stage-with-AWS-CodeBuild/aws-codebuild-cloudwatch-sns-diagram.jpg)
+![The image is a diagram showing AWS CodeBuild connected to AWS CloudWatch for monitoring and to Amazon Simple Notification Service (SNS) for notifications.](https://kodekloud.com/kk-media/image/upload/v1752862584/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Build-stage-with-AWS-CodeBuild/aws-codebuild-cloudwatch-sns-diagram.jpg)
 
 ## Automatic Scaling
 
 AWS CodeBuild automatically adjusts the number of build containers to match your concurrent jobs. There’s no provisioning or server management—just pay for the time your builds run.
 
-![The image illustrates the concept of automatic scale-up and scale-down, showing multiple icons representing scaling processes with arrows indicating increase and decrease.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862586/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Build-stage-with-AWS-CodeBuild/automatic-scale-up-down-icons-diagram.jpg)
+![The image illustrates the concept of automatic scale-up and scale-down, showing multiple icons representing scaling processes with arrows indicating increase and decrease.](https://kodekloud.com/kk-media/image/upload/v1752862586/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Build-stage-with-AWS-CodeBuild/automatic-scale-up-down-icons-diagram.jpg)
 
 ## Summary
 
@@ -101,7 +101,7 @@ AWS CodeBuild provides a robust, scalable build service within your CI/CD pipeli
 | Logging & Metrics        | Amazon CloudWatch Logs            |
 | Notifications & Triggers | Amazon SNS, CloudWatch Events     |
 
-![The image is a summary slide about AWS CodeBuild, highlighting it as a building service, for continuous integration, and usable by itself.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862587/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Build-stage-with-AWS-CodeBuild/aws-codebuild-summary-continuous-integration.jpg)
+![The image is a summary slide about AWS CodeBuild, highlighting it as a building service, for continuous integration, and usable by itself.](https://kodekloud.com/kk-media/image/upload/v1752862587/notes-assets/images/AWS-CodePipeline-CICD-Pipeline-Build-stage-with-AWS-CodeBuild/aws-codebuild-summary-continuous-integration.jpg)
 
 A hands-on demonstration—setting up a CodeBuild project, configuring a buildspec, and running your first build—will reinforce these concepts.
 

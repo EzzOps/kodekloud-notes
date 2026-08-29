@@ -42,9 +42,7 @@ ENFORCEMENT ENFORCEMENT
 
 This listing shows per-endpoint numeric ID, identity, labels, IP address, and status. In day-to-day Kubernetes troubleshooting you can think of an endpoint as the corresponding Pod.
 
-<Callout icon="lightbulb">
-  Remember: in Kubernetes, a Pod’s IP ≈ Cilium endpoint for practical policy and observability tasks. Use `cilium endpoint list` to map Pod IPs to Cilium endpoint IDs.
-</Callout>
+> **lightbulb** Remember: in Kubernetes, a Pod’s IP ≈ Cilium endpoint for practical policy and observability tasks. Use `cilium endpoint list` to map Pod IPs to Cilium endpoint IDs.
 
 ## IP-based policy limitations
 
@@ -191,6 +189,4 @@ This output shows multiple endpoints (different Pod IPs) sharing the same identi
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Cilium GitHub](https://github.com/cilium/cilium)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/0807e400-fd1b-4f25-bba5-d0fdb0f4e3f2/lesson/ff323637-70bb-4f69-9355-c99fc739505c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/0807e400-fd1b-4f25-bba5-d0fdb0f4e3f2/lesson/ff323637-70bb-4f69-9355-c99fc739505c)

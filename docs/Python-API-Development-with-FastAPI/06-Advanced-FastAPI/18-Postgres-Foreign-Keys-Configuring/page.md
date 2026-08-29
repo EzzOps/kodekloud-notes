@@ -31,9 +31,7 @@ DELETE 1
 Query returned successfully in 29 msec.
 ```
 
-<Callout icon="lightbulb">
-  Clearing the posts table ensures that new columns and constraints can be added without conflicting with existing data.
-</Callout>
+> **lightbulb** Clearing the posts table ensures that new columns and constraints can be added without conflicting with existing data.
 
 ***
 
@@ -60,15 +58,11 @@ You should now see an interface similar to the one described below.
 
 Next, configure the constraint actions. Since the posts table references a user by ID, set “ON DELETE” to cascade. This ensures that when a user is deleted, all associated posts are automatically removed.
 
-<Frame>
-  ![The image shows a pgAdmin interface with a database schema, focusing on setting a foreign key constraint between the "posts" and "users" tables. The "user\_id" column in "posts" references the "id" column in "users".](../../../../images/kodekloud.com/kk-media/image/upload/v1752883334/notes-assets/images/Python-API-Development-with-FastAPI-Postgres-Foreign-Keys-Configuring/pgadmin-foreign-key-constraint-schema.jpg)
-</Frame>
+![The image shows a pgAdmin interface with a database schema, focusing on setting a foreign key constraint between the "posts" and "users" tables. The "user\_id" column in "posts" references the "id" column in "users".](https://kodekloud.com/kk-media/image/upload/v1752883334/notes-assets/images/Python-API-Development-with-FastAPI-Postgres-Foreign-Keys-Configuring/pgadmin-foreign-key-constraint-schema.jpg)
 
 Further configuration options, including “ON UPDATE” actions, can be observed in the following interface:
 
-<Frame>
-  ![The image shows a pgAdmin interface where a foreign key constraint is being configured for a PostgreSQL database table. Options for "On update" and "On delete" actions are being selected.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883335/notes-assets/images/Python-API-Development-with-FastAPI-Postgres-Foreign-Keys-Configuring/pgadmin-foreign-key-constraint-config.jpg)
-</Frame>
+![The image shows a pgAdmin interface where a foreign key constraint is being configured for a PostgreSQL database table. Options for "On update" and "On delete" actions are being selected.](https://kodekloud.com/kk-media/image/upload/v1752883335/notes-assets/images/Python-API-Development-with-FastAPI-Postgres-Foreign-Keys-Configuring/pgadmin-foreign-key-constraint-config.jpg)
 
 After completing these steps, click **Save** to apply the changes.
 
@@ -105,9 +99,7 @@ ORDER BY id ASC;
 
 PgAdmin will generate an error similar to "update on table post violates foreign key constraint" because there is no user with ID 20. Correct the entry by providing a valid user ID.
 
-<Callout icon="triangle-alert">
-  Always ensure that any new post references an existing user ID to maintain referential integrity.
-</Callout>
+> **triangle-alert** Always ensure that any new post references an existing user ID to maintain referential integrity.
 
 ***
 
@@ -171,6 +163,4 @@ In upcoming articles, we will explore how to use SQL JOINs to combine data from 
 
 This concludes our guide on configuring foreign keys in PgAdmin. Happy coding and database managing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/2888907f-753f-46c4-ba96-254b90fcd35b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/2888907f-753f-46c4-ba96-254b90fcd35b)

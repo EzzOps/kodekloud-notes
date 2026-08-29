@@ -25,33 +25,33 @@ Follow these steps once you have the demo application:
    * **Development Environment**\
      Click on "Create environment" and select the web server environment type. Name this environment `webapp-dev`. Upload your application code by selecting the nodejs.zip file, then choose Node.js as the platform. For cost efficiency, configure the environment with a single instance.
 
-![The image shows the AWS Elastic Beanstalk Developer Guide webpage listing tutorials and sample applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858023/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-tutorials-sample-apps.jpg)
+![The image shows the AWS Elastic Beanstalk Developer Guide webpage listing tutorials and sample applications.](https://kodekloud.com/kk-media/image/upload/v1752858023/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-tutorials-sample-apps.jpg)
 
-![The image shows the AWS Elastic Beanstalk interface for creating a new application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858024/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-create-app.jpg)
+![The image shows the AWS Elastic Beanstalk interface for creating a new application.](https://kodekloud.com/kk-media/image/upload/v1752858024/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-create-app.jpg)
 
-![The image shows the AWS Elastic Beanstalk console lacking any existing environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858026/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-no-environments.jpg)
+![The image shows the AWS Elastic Beanstalk console lacking any existing environments.](https://kodekloud.com/kk-media/image/upload/v1752858026/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-no-environments.jpg)
 
-![The image shows the AWS Elastic Beanstalk configuration page for setting up environment details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858028/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-configuration-page.jpg)
+![The image shows the AWS Elastic Beanstalk configuration page for setting up environment details.](https://kodekloud.com/kk-media/image/upload/v1752858028/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-configuration-page.jpg)
 
 * **Production Environment**\
   Create another environment called `webapp-env-prod`. Choose Node.js as the platform and specify the existing application version (v1) instead of uploading a new file. Ensure the correct EC2 role and key pair are selected.
 
-![The image shows the AWS Elastic Beanstalk configuration screen for uploading application code.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858030/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-configuration-upload.jpg)
+![The image shows the AWS Elastic Beanstalk configuration screen for uploading application code.](https://kodekloud.com/kk-media/image/upload/v1752858030/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-configuration-upload.jpg)
 
-![The image shows the AWS Elastic Beanstalk configuration screen for service access settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858031/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-configuration-screen.jpg)
+![The image shows the AWS Elastic Beanstalk configuration screen for service access settings.](https://kodekloud.com/kk-media/image/upload/v1752858031/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-configuration-screen.jpg)
 
-![The image shows the AWS Elastic Beanstalk configuration screen for service access settings (production).](../../../../images/kodekloud.com/kk-media/image/upload/v1752858032/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-configuration-screen-2.jpg)
+![The image shows the AWS Elastic Beanstalk configuration screen for service access settings (production).](https://kodekloud.com/kk-media/image/upload/v1752858032/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-configuration-screen-2.jpg)
 
 3. **Verify Deployment**\
    After a few minutes, confirm that both environments are successfully deployed by checking the URLs provided in the Elastic Beanstalk dashboards.
 
    * **Production Environment Dashboard**
 
-![Dashboard for "Webapp-env-prod" showing details such as health status and platform information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858034/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-dashboard-webapp-env-prod.jpg)
+![Dashboard for "Webapp-env-prod" showing details such as health status and platform information.](https://kodekloud.com/kk-media/image/upload/v1752858034/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-dashboard-webapp-env-prod.jpg)
 
 * **Development Environment Dashboard**
 
-![Dashboard for "Webapp-env-dev" after deployment showing that the application is running.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858035/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-webapp-env-dashboard.jpg)
+![Dashboard for "Webapp-env-dev" after deployment showing that the application is running.](https://kodekloud.com/kk-media/image/upload/v1752858035/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-webapp-env-dashboard.jpg)
 
 ***
 
@@ -91,31 +91,31 @@ Now that your application and repository are set up, configure [CodePipeline](ht
    * **Service Role & Artifact Store**\
      Create a new service role for the pipeline and use the default S3 artifact store settings unless you need custom configurations.
 
-![The image shows the AWS CodePipeline setup screen with artifact store configuration options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858037/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codepipeline-setup-screen.jpg)
+![The image shows the AWS CodePipeline setup screen with artifact store configuration options.](https://kodekloud.com/kk-media/image/upload/v1752858037/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codepipeline-setup-screen.jpg)
 
 2. **Configure the Source Stage**\
    Select CodeCommit as the source provider, choose the **webapp** repository, and select the `main` branch. For change detection, use CloudWatch events or periodic checks as recommended.
 
-![The image shows an AWS CodePipeline source stage setup connected to GitHub, illustrating the configuration process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858038/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codepipeline-github-setup.jpg)
+![The image shows an AWS CodePipeline source stage setup connected to GitHub, illustrating the configuration process.](https://kodekloud.com/kk-media/image/upload/v1752858038/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codepipeline-github-setup.jpg)
 
 3. **Skip the Build Stage**\
    Since this demo focuses on deploying to Elastic Beanstalk using CodeDeploy, skip the build stage. (Future demos may include integration with CodeBuild or [Jenkins](https://learn.kodekloud.com/user/courses/jenkins).)
 
-![The image shows the CodePipeline interface where the build stage is being skipped.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858039/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codepipeline-add-source-stage-github.jpg)
+![The image shows the CodePipeline interface where the build stage is being skipped.](https://kodekloud.com/kk-media/image/upload/v1752858039/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codepipeline-add-source-stage-github.jpg)
 
 4. **Configure the Deploy Stage**\
    Set up the deployment action to deploy your application to Elastic Beanstalk:
    * Choose Elastic Beanstalk as the deployment provider.
    * Select the application **web app** and the development environment `webapp-dev`.
 
-![The image shows the AWS CodePipeline deploy stage configuration with Elastic Beanstalk settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858041/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-console-deploy-stage-pipeline.jpg)
+![The image shows the AWS CodePipeline deploy stage configuration with Elastic Beanstalk settings.](https://kodekloud.com/kk-media/image/upload/v1752858041/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-console-deploy-stage-pipeline.jpg)
 
 5. **Review and Create the Pipeline**\
    Review your configuration settings and create the pipeline. It will automatically:
    * Pull code from CodeCommit in the source stage.
    * Deploy the code to Elastic Beanstalk in the deploy stage.
 
-![The image shows the AWS CodePipeline interface indicating successful deployment stages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858042/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codepipeline-successful-deploy.jpg)
+![The image shows the AWS CodePipeline interface indicating successful deployment stages.](https://kodekloud.com/kk-media/image/upload/v1752858042/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codepipeline-successful-deploy.jpg)
 
 6. **Examine Pipeline Details**\
    In the CodePipeline interface, you can view:
@@ -126,9 +126,9 @@ Now that your application and repository are set up, configure [CodePipeline](ht
 
    Your S3 artifact store contains the zipped artifacts.
 
-![The image shows various details of the CodePipeline deployment stage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858043/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codepipeline-deployment-stage-dropdown.jpg)
+![The image shows various details of the CodePipeline deployment stage.](https://kodekloud.com/kk-media/image/upload/v1752858043/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codepipeline-deployment-stage-dropdown.jpg)
 
-![The image shows the AWS CodePipeline interface with both successful source and deploy stages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858044/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codepipeline-webapp-success.jpg)
+![The image shows the AWS CodePipeline interface with both successful source and deploy stages.](https://kodekloud.com/kk-media/image/upload/v1752858044/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codepipeline-webapp-success.jpg)
 
 ***
 
@@ -139,18 +139,18 @@ Demonstrate how pipeline automation works by modifying your application code in 
 1. **Make a Code Change**\
    Edit the `index.html` file in CodeCommit (for example, change the text from “congratulations” to “this is version two”) and commit your changes.
 
-![The image shows the AWS CodeCommit interface with an HTML file being edited.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858045/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codecommit-html-file-editing.jpg)
+![The image shows the AWS CodeCommit interface with an HTML file being edited.](https://kodekloud.com/kk-media/image/upload/v1752858045/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codecommit-html-file-editing.jpg)
 
 2. **Observe the Pipeline Execution**\
    After committing, open the CodePipeline console to see the new execution:
    * The source stage will detect the new commit.
    * The deploy stage will update the development environment with the modified application.
 
-![The image shows the Elastic Beanstalk environment dashboard after the update.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858046/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-dashboard-update.jpg)
+![The image shows the Elastic Beanstalk environment dashboard after the update.](https://kodekloud.com/kk-media/image/upload/v1752858046/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-elastic-beanstalk-dashboard-update.jpg)
 
-![The image shows the AWS CodeCommit repository interface listing files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858047/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codecommit-webapp-repo-files.jpg)
+![The image shows the AWS CodeCommit repository interface listing files.](https://kodekloud.com/kk-media/image/upload/v1752858047/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codecommit-webapp-repo-files.jpg)
 
-![The image shows the AWS CodePipeline interface indicating successful execution for the updated version.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858048/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codepipeline-webapp-pipeline-success.jpg)
+![The image shows the AWS CodePipeline interface indicating successful execution for the updated version.](https://kodekloud.com/kk-media/image/upload/v1752858048/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codepipeline-webapp-pipeline-success.jpg)
 
 3. **Verify the Change on Elastic Beanstalk**\
    Refresh the development environment URL to ensure that the application now displays version two.
@@ -167,7 +167,7 @@ Improve your deployment process by adding a production stage that includes a man
 2. **Add a Manual Approval Action**\
    Within the `deploy prod` stage, insert an action group for manual approval. For example, label this action **leadership approval**. This step requires team lead or management approval before proceeding with production deployment.
 
-![The image shows the AWS CodePipeline "Edit Action" dialog where an action name and provider are selected.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858049/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codepipeline-edit-action-dialog.jpg)
+![The image shows the AWS CodePipeline "Edit Action" dialog where an action name and provider are selected.](https://kodekloud.com/kk-media/image/upload/v1752858049/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codepipeline-edit-action-dialog.jpg)
 
 3. **Deploy to Production**\
    Following the manual approval, add an action to deploy the code to the production environment using Elastic Beanstalk. Configure the action with:
@@ -182,14 +182,14 @@ Improve your deployment process by adding a production stage that includes a man
 
    Once approved, the pipeline will deploy the updated code to the production environment.
 
-![The image shows the CodeCommit interface when editing an HTML file for a new commit.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858052/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codecommit-html-file-editing-2.jpg)
+![The image shows the CodeCommit interface when editing an HTML file for a new commit.](https://kodekloud.com/kk-media/image/upload/v1752858052/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codecommit-html-file-editing-2.jpg)
 
-![The image shows the AWS CodePipeline interface with the updated deployment process waiting for manual approval.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858054/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codepipeline-deployment-process.jpg)
+![The image shows the AWS CodePipeline interface with the updated deployment process waiting for manual approval.](https://kodekloud.com/kk-media/image/upload/v1752858054/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codepipeline-deployment-process.jpg)
 
 5. **Final Verification**\
    After manual approval and deployment, verify in Elastic Beanstalk that the production environment is running version three of the application.
 
-![The image shows the AWS CodeCommit commits list for the "webapp" repository.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858055/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codecommit-webapp-commits.jpg)
+![The image shows the AWS CodeCommit commits list for the "webapp" repository.](https://kodekloud.com/kk-media/image/upload/v1752858055/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline-Demo/aws-codecommit-webapp-commits.jpg)
 
 You can inspect the deployed HTML code:
 

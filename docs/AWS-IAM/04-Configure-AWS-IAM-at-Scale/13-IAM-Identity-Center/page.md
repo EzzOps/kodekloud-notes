@@ -14,7 +14,7 @@ AWS IAM Identity Center provides a unified, organizational-level identity manage
 | User Identities      | Create users in AWS or connect to external identity providers (Okta, AD)      | Flexible identity source, no separate sync   |
 | Single Sign-On (SSO) | Integrate cloud apps and AWS accounts for seamless access                     | One-click access to all authorized resources |
 
-![The image describes IAM Identity Center features, highlighting centralized access, user identities, and single sign-on capabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862973/notes-assets/images/AWS-IAM-IAM-Identity-Center/iam-identity-center-access-features.jpg)
+![The image describes IAM Identity Center features, highlighting centralized access, user identities, and single sign-on capabilities.](https://kodekloud.com/kk-media/image/upload/v1752862973/notes-assets/images/AWS-IAM-IAM-Identity-Center/iam-identity-center-access-features.jpg)
 
 ***
 
@@ -36,7 +36,7 @@ Follow these steps to enable IAM Identity Center (formerly AWS SSO) in your Orga
 2. Open the **IAM Identity Center** page.
 3. Click **Enable IAM Identity Center** to activate SSO for all member accounts.
 
-![The image is a slide titled "Demo: Enable IAM Identity Center," featuring an illustration of a person with a speech bubble labeled "Demo" and instructions for enabling the IAM Identity Center for single sign-on.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862974/notes-assets/images/AWS-IAM-IAM-Identity-Center/enable-iam-identity-center-demo-slide.jpg)
+![The image is a slide titled "Demo: Enable IAM Identity Center," featuring an illustration of a person with a speech bubble labeled "Demo" and instructions for enabling the IAM Identity Center for single sign-on.](https://kodekloud.com/kk-media/image/upload/v1752862974/notes-assets/images/AWS-IAM-IAM-Identity-Center/enable-iam-identity-center-demo-slide.jpg)
 
 ### (Optional) CLI Alternative
 

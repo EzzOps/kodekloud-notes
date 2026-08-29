@@ -19,7 +19,7 @@ Selecting the appropriate data path depends on your specific data requirements:
 * **Cold Path:**\
   The cold path is tailored for data that is infrequently accessed but needs to be retained for compliance, legal purposes, or long-term batch analytics. After initial processing via the hot or warm paths, older data—spanning months or years—can be analyzed using complex aggregations or joins.
 
-![The image is a table explaining when to use hot, warm, and cold data paths, detailing their requirements and use cases. It highlights the frequency of data changes and processing needs for each path.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866889/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-data-flow-strategy/data-paths-hot-warm-cold-table.jpg)
+![The image is a table explaining when to use hot, warm, and cold data paths, detailing their requirements and use cases. It highlights the frequency of data changes and processing needs for each path.](https://kodekloud.com/kk-media/image/upload/v1752866889/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-data-flow-strategy/data-paths-hot-warm-cold-table.jpg)
 
 ## Modern Data Platform Architecture
 
@@ -40,7 +40,7 @@ Integrating multiple data paths is essential for building a robust modern data p
    * Data such as images, videos, audio files, and textual information is ingested via Data Factory.
    * This data is stored in ADLS, processed by tools like Synapse Analytics, and ultimately utilized for analytics and application delivery.
 
-![The image is a diagram of a modern data platform reference architecture, illustrating the flow of data from various sources through processes like ingestion, storage, and analytics using tools such as Azure Data Lake, Databricks, and Power BI. It highlights components like Event Hubs, Data Factory, and Azure Synapse Analytics, showing their roles in data processing and serving business users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866891/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-data-flow-strategy/modern-data-platform-architecture-diagram.jpg)
+![The image is a diagram of a modern data platform reference architecture, illustrating the flow of data from various sources through processes like ingestion, storage, and analytics using tools such as Azure Data Lake, Databricks, and Power BI. It highlights components like Event Hubs, Data Factory, and Azure Synapse Analytics, showing their roles in data processing and serving business users.](https://kodekloud.com/kk-media/image/upload/v1752866891/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-data-flow-strategy/modern-data-platform-architecture-diagram.jpg)
 
 ## Leveraging Real-Time Analytics
 

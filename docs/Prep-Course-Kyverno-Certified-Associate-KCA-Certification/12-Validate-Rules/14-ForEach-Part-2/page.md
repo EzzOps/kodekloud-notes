@@ -18,9 +18,7 @@ Quick refresher: core `foreach` components
 | `element`          | Current item in the loop       | `element.host`              |
 | `deny` / `pattern` | Validation applied per element | `deny` with `conditions`    |
 
-<Callout icon="lightbulb">
-  Use `element` to reference fields on the current item (for example, `element.host` or `element.volumeMounts[]`). Combined with JMESPath expressions, `list` can merge arrays such as `initContainers` and `containers`.
-</Callout>
+> **lightbulb** Use `element` to reference fields on the current item (for example, `element.host` or `element.volumeMounts[]`). Combined with JMESPath expressions, `list` can merge arrays such as `initContainers` and `containers`.
 
 ## Ingress: block wildcard hosts
 
@@ -60,9 +58,7 @@ Notes on the deny condition:
 * `contains(element.host, '*')` returns `true` when `*` exists in the hostname.
 * If any `element` satisfies the condition, Kyverno denies the entire request.
 
-<Callout icon="warning">
-  Deny rules inside `foreach` will reject the whole resource if any element matches. Use them only when you intend to block the entire request for a single failing item.
-</Callout>
+> **warning** Deny rules inside `foreach` will reject the whole resource if any element matches. Use them only when you intend to block the entire request for a single failing item.
 
 ## Using preconditions to filter loop items (emptyDir example)
 
@@ -118,6 +114,4 @@ Links and references
   <img alt="The image is a summary of advanced &#x22;forEach&#x22; techniques, highlighting the use of &#x22;deny&#x22; in loops for validation, applying preconditions for targeted policies, and writing advanced JMESPath to merge lists." />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/34c3e7c5-f13c-4af5-93fc-0c4adc97e044" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/34c3e7c5-f13c-4af5-93fc-0c4adc97e044)

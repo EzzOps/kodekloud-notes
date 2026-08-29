@@ -22,15 +22,11 @@ To set up a Jenkins backup plugin, follow these steps:
 2. Click on **Manage Jenkins**.
 3. Select **Manage Plugins**.
 
-<Frame>
-  ![The image shows the "Manage Jenkins" dashboard, featuring options for system configuration, plugin management, and node/cloud management, with security setup suggestions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880140/notes-assets/images/Jenkins-Backup-Jenkins/frame_80.jpg)
-</Frame>
+![The image shows the "Manage Jenkins" dashboard, featuring options for system configuration, plugin management, and node/cloud management, with security setup suggestions.](https://kodekloud.com/kk-media/image/upload/v1752880140/notes-assets/images/Jenkins-Backup-Jenkins/frame_80.jpg)
 
 Next, navigate to the **Available** tab and search for "Backup". While the Thin Backup plugin is widely used, you might also consider alternatives like the Google Cloud Backup plugin.
 
-<Frame>
-  ![The image shows a list of backup plugins for Jenkins, including their versions, descriptions, and update information. Options to install or download are available.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880141/notes-assets/images/Jenkins-Backup-Jenkins/frame_100.jpg)
-</Frame>
+![The image shows a list of backup plugins for Jenkins, including their versions, descriptions, and update information. Options to install or download are available.](https://kodekloud.com/kk-media/image/upload/v1752880141/notes-assets/images/Jenkins-Backup-Jenkins/frame_100.jpg)
 
 After selecting Thin Backup, click **Install Without Restart**. Once installation is complete, return to **Manage Jenkins** and locate the Thin Backup section.
 
@@ -42,9 +38,7 @@ Within Thin Backup, you can configure settings to back up global configurations 
 * **Files Excluded:** List files to be ignored during the backup.
 * **Backup Scope:** Choose which files are to be included in the backup.
 
-<Callout icon="triangle-alert">
-  A valid backup directory is critical. If no backup directory is configured correctly, the backup process will fail.
-</Callout>
+> **triangle-alert** A valid backup directory is critical. If no backup directory is configured correctly, the backup process will fail.
 
 After adjusting the settings, click **Backup Now**. If the backup directory is not correctly specified, you will need to configure a proper directory before retrying.
 
@@ -74,15 +68,11 @@ If the directory exists but lacks the required permissions, adjust them—tempor
 mike@jenkins01:~$ chmod 777 jenkinsbackup/
 ```
 
-<Callout icon="triangle-alert">
-  Avoid using 777 permissions in production environments. Always adjust permissions in accordance with your organization’s security policies.
-</Callout>
+> **triangle-alert** Avoid using 777 permissions in production environments. Always adjust permissions in accordance with your organization’s security policies.
 
 Once the directory is properly configured, return to Jenkins and click **Backup Now**. Verify the backup file by checking your backup directory once the process completes.
 
-<Frame>
-  ![The image shows a Jenkins backup configuration screen with options for backing up build results, user content, and plugins, among others.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880143/notes-assets/images/Jenkins-Backup-Jenkins/frame_250.jpg)
-</Frame>
+![The image shows a Jenkins backup configuration screen with options for backing up build results, user content, and plugins, among others.](https://kodekloud.com/kk-media/image/upload/v1752880143/notes-assets/images/Jenkins-Backup-Jenkins/frame_250.jpg)
 
 ## Conclusion
 
@@ -90,9 +80,7 @@ This article has provided a detailed overview of various backup strategies for J
 
 For further details on Jenkins and its capabilities, visit the [Jenkins Documentation](https://www.jenkins.io/doc/). Happy backing up!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/3fa36943-55fe-48d9-a4b8-b1a170a0cc3d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/3fa36943-55fe-48d9-a4b8-b1a170a0cc3d)
 
 
 # Backup and restoring Jenkins
@@ -107,9 +95,7 @@ When planning a backup strategy for Jenkins—or any similar system—it’s ess
 
 While it might seem ideal to back up every component, the most crucial element is the Jenkins home folder. This folder contains approximately 90% of your valuable data, including configuration settings and job definitions.
 
-<Callout icon="lightbulb">
-  Backing up the Jenkins home folder is paramount for maintaining your CI/CD pipelines and overall system integrity.
-</Callout>
+> **lightbulb** Backing up the Jenkins home folder is paramount for maintaining your CI/CD pipelines and overall system integrity.
 
 ### Key Items Inside the Jenkins Home Folder
 
@@ -119,13 +105,9 @@ While it might seem ideal to back up every component, the most crucial element i
 2. **Jobs Directory**\
    The `jobs` directory contains all your individual pipelines. This directory is critical because losing it would mean losing every CI/CD pipeline, effectively wiping out your deployment processes and associated efforts.
 
-<Frame>
-  ![The image shows a diagram of files to backup in Jenkins, including configuration files (config.xml) and jobs within the \$JENKINS\_HOME directory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880144/notes-assets/images/Jenkins-Backup-and-restoring-Jenkins/frame_70.jpg)
-</Frame>
+![The image shows a diagram of files to backup in Jenkins, including configuration files (config.xml) and jobs within the \$JENKINS\_HOME directory.](https://kodekloud.com/kk-media/image/upload/v1752880144/notes-assets/images/Jenkins-Backup-and-restoring-Jenkins/frame_70.jpg)
 
-<Callout icon="triangle-alert">
-  Neglecting to include the entire Jenkins home folder in your backup strategy can lead to significant data loss and system downtime.
-</Callout>
+> **triangle-alert** Neglecting to include the entire Jenkins home folder in your backup strategy can lead to significant data loss and system downtime.
 
 ## Final Thoughts
 
@@ -138,6 +120,4 @@ That concludes this article. We look forward to sharing more insights in the nex
 * [Jenkins Documentation](https://www.jenkins.io/doc/)
 * [Continuous Integration and Continuous Delivery (CI/CD)](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/b18fefbe-dcc3-4a4c-bc60-d9585c9343de" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/b18fefbe-dcc3-4a4c-bc60-d9585c9343de)

@@ -118,7 +118,7 @@ EFS allows you to create a file system that can be remotely mounted by Amazon EC
 
 To deploy an EFS file system, you must launch it within a Virtual Private Cloud (VPC). Inside the VPC, the file system becomes accessible through mount targets. When you create an EFS file system, you designate specific subnets for these mount targets, and each one is assigned an IP address. EC2 instances connect to the EFS file system using the IP address of the chosen mount target. For high availability, it is advisable to create mount targets in multiple availability zones.
 
-![The image illustrates how an EFS (Elastic File System) works within a Virtual Private Cloud (VPC), showing two availability zones with mount targets connected to an EFS filesystem.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859653/notes-assets/images/AWS-Certified-Developer-Associate-EFS/efs-vpc-architecture-diagram.jpg)
+![The image illustrates how an EFS (Elastic File System) works within a Virtual Private Cloud (VPC), showing two availability zones with mount targets connected to an EFS filesystem.](https://kodekloud.com/kk-media/image/upload/v1752859653/notes-assets/images/AWS-Certified-Developer-Associate-EFS/efs-vpc-architecture-diagram.jpg)
 
 ## Storage Classes
 
@@ -130,7 +130,7 @@ EFS offers two main storage class families to cater to different needs:
 * **One Zone Storage Classes:**\
   This family features EFS One Zone and EFS One Zone Infrequent Access, delivering cost savings by storing data in a single availability zone.
 
-![The image is a diagram comparing two types of Elastic File System (EFS) storage classes: Standard Storage Classes and One Zone Storage Classes, highlighting their features and benefits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859654/notes-assets/images/AWS-Certified-Developer-Associate-EFS/efs-storage-classes-comparison-diagram.jpg)
+![The image is a diagram comparing two types of Elastic File System (EFS) storage classes: Standard Storage Classes and One Zone Storage Classes, highlighting their features and benefits.](https://kodekloud.com/kk-media/image/upload/v1752859654/notes-assets/images/AWS-Certified-Developer-Associate-EFS/efs-storage-classes-comparison-diagram.jpg)
 
 ## Performance and Throughput Modes
 
@@ -146,7 +146,7 @@ In addition to varying storage classes, you can configure EFS to optimize perfor
    * **Bursting Throughput:** The default mode that automatically scales with the size of your file system, offering performance bursts when required.
    * **Provisioned Throughput:** Allows you to set a fixed throughput independent of file system capacity, ensuring consistent performance.
 
-![The image describes three modes of Elastic File System (EFS): Max I/O Performance Mode, Provisioned Throughput Mode, and Bursting Throughput Mode, each with different throughput characteristics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859656/notes-assets/images/AWS-Certified-Developer-Associate-EFS/efs-modes-throughput-characteristics.jpg)
+![The image describes three modes of Elastic File System (EFS): Max I/O Performance Mode, Provisioned Throughput Mode, and Bursting Throughput Mode, each with different throughput characteristics.](https://kodekloud.com/kk-media/image/upload/v1752859656/notes-assets/images/AWS-Certified-Developer-Associate-EFS/efs-modes-throughput-characteristics.jpg)
 
 ## Setting Up EFS on an Amazon EC2 Linux Instance
 
@@ -193,6 +193,6 @@ Amazon EFS is a powerful file system storage service that:
 * Offers two primary storage class families (Standard and One Zone) along with configurable performance and throughput modes.
 * Functions similarly to a traditional file system mounting process, but unlike block storage (e.g., EBS volumes), it cannot be booted.
 
-![The image is a summary slide about EFS (Elastic File System), highlighting its availability in a VPC, storage classes, and performance modes. It includes three points numbered 05 to 07.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859657/notes-assets/images/AWS-Certified-Developer-Associate-EFS/efs-summary-vpc-storage-performance.jpg)
+![The image is a summary slide about EFS (Elastic File System), highlighting its availability in a VPC, storage classes, and performance modes. It includes three points numbered 05 to 07.](https://kodekloud.com/kk-media/image/upload/v1752859657/notes-assets/images/AWS-Certified-Developer-Associate-EFS/efs-summary-vpc-storage-performance.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/e8ae2293-e16b-42d3-b32b-5c260a1f1e5d/lesson/b4432ffc-af7e-4013-aa9f-0d9e52fe6496)

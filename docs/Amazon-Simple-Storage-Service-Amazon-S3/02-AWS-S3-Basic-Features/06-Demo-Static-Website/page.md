@@ -24,7 +24,7 @@ Your local directory (`static-demo/`) contains:
 * `404.html` – Custom error page
 * `images/` – JPEG photos used in the gallery
 
-![The image shows an AWS Management Console with a Windows File Explorer window open, displaying a folder named "static-demo" containing HTML files and an "images" folder.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869254/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/aws-management-console-windows-file-explorer.jpg)
+![The image shows an AWS Management Console with a Windows File Explorer window open, displaying a folder named "static-demo" containing HTML files and an "images" folder.](https://kodekloud.com/kk-media/image/upload/v1752869254/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/aws-management-console-windows-file-explorer.jpg)
 
 ***
 
@@ -99,11 +99,11 @@ When users request a missing resource, S3 serves this custom error page:
 2. Enter a unique bucket name (e.g., `kk-static-demo`) and select your region.
 3. Keep default settings and click **Create bucket**.
 
-![The image shows the AWS S3 console interface for creating a new bucket, with fields for bucket name, region selection, and object ownership settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869255/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/aws-s3-console-create-bucket-interface.jpg)
+![The image shows the AWS S3 console interface for creating a new bucket, with fields for bucket name, region selection, and object ownership settings.](https://kodekloud.com/kk-media/image/upload/v1752869255/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/aws-s3-console-create-bucket-interface.jpg)
 
 Once created, locate your bucket in the list:
 
-![The image shows the Amazon S3 Management Console with a notification of a successfully created bucket named "kk-static-demo." The console displays the bucket's details, including its creation date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869255/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/amazon-s3-console-kk-static-demo.jpg)
+![The image shows the Amazon S3 Management Console with a notification of a successfully created bucket named "kk-static-demo." The console displays the bucket's details, including its creation date.](https://kodekloud.com/kk-media/image/upload/v1752869255/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/amazon-s3-console-kk-static-demo.jpg)
 
 ***
 
@@ -113,7 +113,7 @@ Once created, locate your bucket in the list:
 2. Drag & drop `index.html`, `index.css`, `404.html`, and the `images/` folder into the console.
 3. Choose **Upload** and confirm.
 
-![The image shows an AWS S3 Management Console screen with a successful upload status for 13 files totaling 2.5 MB. The files listed include images and an HTML file, all marked as succeeded.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869256/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/aws-s3-management-console-upload-success.jpg)
+![The image shows an AWS S3 Management Console screen with a successful upload status for 13 files totaling 2.5 MB. The files listed include images and an HTML file, all marked as succeeded.](https://kodekloud.com/kk-media/image/upload/v1752869256/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/aws-s3-management-console-upload-success.jpg)
 
 ***
 
@@ -125,15 +125,15 @@ Once created, locate your bucket in the list:
 4. For **Error document**, enter `404.html`.
 5. Save changes.
 
-![The image shows an Amazon Web Services (AWS) S3 bucket configuration page for setting up a static website. It includes options for enabling website hosting, specifying index and error documents, and adding redirection rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869257/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/aws-s3-bucket-static-website-setup.jpg)
+![The image shows an Amazon Web Services (AWS) S3 bucket configuration page for setting up a static website. It includes options for enabling website hosting, specifying index and error documents, and adding redirection rules.](https://kodekloud.com/kk-media/image/upload/v1752869257/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/aws-s3-bucket-static-website-setup.jpg)
 
 Review the bucket’s static hosting properties:
 
-![The image shows an Amazon S3 bucket properties page for "kk-static-demo," displaying details like bucket versioning, tags, and default encryption settings. The bucket is located in the US East (N. Virginia) region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869258/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/amazon-s3-bucket-properties-kk-static-demo.jpg)
+![The image shows an Amazon S3 bucket properties page for "kk-static-demo," displaying details like bucket versioning, tags, and default encryption settings. The bucket is located in the US East (N. Virginia) region.](https://kodekloud.com/kk-media/image/upload/v1752869258/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/amazon-s3-bucket-properties-kk-static-demo.jpg)
 
 You should see a **Bucket website endpoint** listed:
 
-![The image shows an Amazon S3 console page with settings for a bucket, including options for transfer acceleration, object lock, requester pays, and static website hosting. Static website hosting is enabled, and a bucket website endpoint is provided.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869259/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/amazon-s3-bucket-settings-console.jpg)
+![The image shows an Amazon S3 console page with settings for a bucket, including options for transfer acceleration, object lock, requester pays, and static website hosting. Static website hosting is enabled, and a bucket website endpoint is provided.](https://kodekloud.com/kk-media/image/upload/v1752869259/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/amazon-s3-bucket-settings-console.jpg)
 
 At this point, clicking the endpoint yields **Access Denied** since the bucket is private.
 
@@ -146,7 +146,7 @@ At this point, clicking the endpoint yields **Access Denied** since the bucket i
 1. Go to **Permissions** → **Block public access (bucket settings)** → **Edit**.
 2. Uncheck **Block all public access** and confirm.
 
-![The image shows an AWS S3 bucket permissions settings page, where public access is blocked. The "Block all public access" option is turned on, and there is a note about the bucket policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869260/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/aws-s3-bucket-permissions-blocked.jpg)
+![The image shows an AWS S3 bucket permissions settings page, where public access is blocked. The "Block all public access" option is turned on, and there is a note about the bucket policy.](https://kodekloud.com/kk-media/image/upload/v1752869260/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/aws-s3-bucket-permissions-blocked.jpg)
 
 ### 4.2 Add a Bucket Policy
 
@@ -169,11 +169,11 @@ Still under **Permissions**, select **Bucket policy** and paste the following JS
 
 Save the policy. Alternatively, use the **Add a resource** UI:
 
-![The image shows a web interface for adding a resource in AWS, specifically for an S3 service, with a dropdown menu for selecting the resource type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869261/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/aws-s3-resource-add-interface.jpg)
+![The image shows a web interface for adding a resource in AWS, specifically for an S3 service, with a dropdown menu for selecting the resource type.](https://kodekloud.com/kk-media/image/upload/v1752869261/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/aws-s3-resource-add-interface.jpg)
 
 Your bucket will now appear publicly accessible:
 
-![The image shows an Amazon S3 bucket permissions page, indicating that the bucket "kk-static-demo" is publicly accessible, with options to block public access and a section displaying the bucket policy in JSON format.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869262/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/amazon-s3-bucket-permissions-public-access.jpg)
+![The image shows an Amazon S3 bucket permissions page, indicating that the bucket "kk-static-demo" is publicly accessible, with options to block public access and a section displaying the bucket policy in JSON format.](https://kodekloud.com/kk-media/image/upload/v1752869262/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/amazon-s3-bucket-permissions-public-access.jpg)
 
 > **triangle-alert** Making your bucket public exposes all objects. Ensure only intended files are uploaded.
 
@@ -185,7 +185,7 @@ Return to **Properties** → **Static website hosting** and click the endpoint l
 
 You do **not** need to append `/index.html`—the index document is served automatically.
 
-![The image shows an Amazon S3 bucket interface with a list of objects, including HTML and CSS files, and a folder named "images." The bucket is labeled as "publicly accessible."](../../../../images/kodekloud.com/kk-media/image/upload/v1752869263/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/amazon-s3-bucket-interface-html-css.jpg)
+![The image shows an Amazon S3 bucket interface with a list of objects, including HTML and CSS files, and a folder named "images." The bucket is labeled as "publicly accessible."](https://kodekloud.com/kk-media/image/upload/v1752869263/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Static-Website/amazon-s3-bucket-interface-html-css.jpg)
 
 | Resource                    | URL Pattern                                                                |
 | --------------------------- | -------------------------------------------------------------------------- |

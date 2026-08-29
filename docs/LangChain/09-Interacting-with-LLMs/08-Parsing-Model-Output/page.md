@@ -36,9 +36,7 @@ prompt = PromptTemplate(
 )
 ```
 
-<Callout icon="lightbulb">
-  This example shows how the parser provides `format_instructions` (a JSON Schema-like specification). Including these instructions in your prompt guides the LLM to emit well-formed JSON that the parser can validate and load into a Pydantic model.
-</Callout>
+> **lightbulb** This example shows how the parser provides `format_instructions` (a JSON Schema-like specification). Including these instructions in your prompt guides the LLM to emit well-formed JSON that the parser can validate and load into a Pydantic model.
 
 ## Notes on imports and model invocation
 
@@ -125,9 +123,7 @@ Ticket(date='Friday', time='6:00 PM', theater='AMC', count=2, movie='Interstella
 * Parsing into a Pydantic model makes downstream processing, validation, and IDE/autocomplete support straightforward.
 * Embedding `parser.get_format_instructions()` in the prompt aligns the LLM output to the schema, reducing parsing errors.
 
-<Callout icon="lightbulb">
-  The parser validates and converts JSON to an instance of the `Ticket` model. If the model's output does not conform to the schema, the parser will raise a validation error—so including `format_instructions` in the prompt is important to guide the LLM toward valid output.
-</Callout>
+> **lightbulb** The parser validates and converts JSON to an instance of the `Ticket` model. If the model's output does not conform to the schema, the parser will raise a validation error—so including `format_instructions` in the prompt is important to guide the LLM toward valid output.
 
 ## Summary
 
@@ -149,11 +145,9 @@ This approach makes it straightforward to work with LLM-generated data in a type
 
 A future article will cover adding short-term and long-term memory to LLMs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/31aecd1b-7ea9-4bab-898d-b8bc6b35ab62" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/31aecd1b-7ea9-4bab-898d-b8bc6b35ab62)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/932a32b6-0fa6-445f-b1f6-7db4e21dc369" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/932a32b6-0fa6-445f-b1f6-7db4e21dc369)
 
 
 # Parsing Model Output

@@ -79,13 +79,13 @@ Deployments manage the creation and maintenance of identical pod replicas. For i
 
 Manifests are YAML or JSON files used to deploy resources on Kubernetes. They define the configuration settings and desired state of your applications.
 
-![The image is an educational diagram explaining the basics of Azure Kubernetes Service (AKS), including concepts like pools, nodes, pods, deployments, and manifests, with a visual representation of their relationships.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866861/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Kubernetes-Services/azure-kubernetes-service-diagram.jpg)
+![The image is an educational diagram explaining the basics of Azure Kubernetes Service (AKS), including concepts like pools, nodes, pods, deployments, and manifests, with a visual representation of their relationships.](https://kodekloud.com/kk-media/image/upload/v1752866861/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Kubernetes-Services/azure-kubernetes-service-diagram.jpg)
 
 ## When to Use AKS
 
 Determining whether AKS is the right choice for your application is essential. The decision flowchart below illustrates scenarios where containerized applications—whether for lift-and-shift, migration, or enhanced cloud optimization—would benefit from full-fledged orchestration using AKS.
 
-![The image is a flowchart from KodeKloud titled "When to use AKS?" It guides users through decision points to determine whether to use Azure Kubernetes Service (AKS) or other Azure services based on specific requirements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866862/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Kubernetes-Services/when-to-use-aks-flowchart.jpg)
+![The image is a flowchart from KodeKloud titled "When to use AKS?" It guides users through decision points to determine whether to use Azure Kubernetes Service (AKS) or other Azure services based on specific requirements.](https://kodekloud.com/kk-media/image/upload/v1752866862/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Kubernetes-Services/when-to-use-aks-flowchart.jpg)
 
 ## Considerations for Using AKS
 

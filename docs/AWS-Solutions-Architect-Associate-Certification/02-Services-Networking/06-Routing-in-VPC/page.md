@@ -20,7 +20,7 @@ For instance, consider an IPv6 route as depicted in the diagram below. Although 
 
 When a packet's destination IP falls within a specific prefix range (e.g., 10.16.0.0/16), the router selects the matching route. In scenarios where multiple routes can apply—such as an overlapping 10.16.1.0/24 alongside the broader 10.16.0.0/16—the router prioritizes the route with the largest (most specific) prefix length.
 
-![The image shows a route table interface with two routes listed, each having a destination and a target labeled as "local."](../../../../images/kodekloud.com/kk-media/image/upload/v1752865666/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Routing-in-VPC/route-table-interface-local-targets.jpg)
+![The image shows a route table interface with two routes listed, each having a destination and a target labeled as "local."](https://kodekloud.com/kk-media/image/upload/v1752865666/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Routing-in-VPC/route-table-interface-local-targets.jpg)
 
 ## Route Targets and Default Routes
 
@@ -43,6 +43,6 @@ Amazon VPC routing revolves around a dedicated router that facilitates both inte
 * When overlapping routes exist, the router chooses the one with the most specific prefix.
 * A default route table automatically provides a local route for internal VPC communications, with the flexibility to associate specific subnets with custom route tables when required.
 
-![The image is a summary slide explaining VPC routing, including the role of routers, interfaces, route tables, and packet destination IPs. It features a gradient background with numbered points.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865667/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Routing-in-VPC/vpc-routing-summary-routers-interfaces.jpg)
+![The image is a summary slide explaining VPC routing, including the role of routers, interfaces, route tables, and packet destination IPs. It features a gradient background with numbered points.](https://kodekloud.com/kk-media/image/upload/v1752865667/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Routing-in-VPC/vpc-routing-summary-routers-interfaces.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/e03ffb87-3345-4fbb-9576-cb53d21d7a6a/lesson/07b2db9e-ef01-4780-9b9b-0137e1080a81)

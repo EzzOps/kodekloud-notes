@@ -6,25 +6,17 @@ This article introduces Vault Secrets Engines, explaining their functions and ho
 
 When you check into a hotel, you receive a room key—much like obtaining a token in [HashiCorp Vault](https://www.vaultproject.io/). Once Authenticated, you can use that token (or key card) to access your room, gym, or spa without returning to the front desk every time.
 
-<Frame>
-  ![The image shows a hotel reception scene with two people, one handing over a room key, and a close-up of a keycard with instructions. The title "Vault Interfaces" is at the top.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878091/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/hotel-reception-keycard-vault-interfaces.jpg)
-</Frame>
+![The image shows a hotel reception scene with two people, one handing over a room key, and a close-up of a keycard with instructions. The title "Vault Interfaces" is at the top.](https://kodekloud.com/kk-media/image/upload/v1752878091/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/hotel-reception-keycard-vault-interfaces.jpg)
 
 In Vault, **Secrets Engines** are like these hotel amenities: they represent the capabilities you want to access once you present a valid token.
 
-<Frame>
-  ![The image shows a gym with treadmills, exercise bikes, and fitness equipment, alongside a graphic of a hotel key card with instructions. The text mentions "Vault Interfaces" and includes a cartoon character with sunglasses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878094/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/gym-fitness-equipment-key-card.jpg)
-</Frame>
+![The image shows a gym with treadmills, exercise bikes, and fitness equipment, alongside a graphic of a hotel key card with instructions. The text mentions "Vault Interfaces" and includes a cartoon character with sunglasses.](https://kodekloud.com/kk-media/image/upload/v1752878094/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/gym-fitness-equipment-key-card.jpg)
 
 Once your token is validated, you can interact with one or more Secrets Engines without re-authenticating. These engines provide functionality such as storing static credentials, generating dynamic secrets, encrypting data, issuing certificates, and more.
 
-<Frame>
-  ![The image illustrates the concept of Vault Secrets Engines, showing how vault clients use tokens to access various secrets engines like Kubernetes, databases, and cloud services. It includes icons representing different components such as KV, PKI, and Transit.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878094/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/vault-secrets-engines-concept-diagram.jpg)
-</Frame>
+![The image illustrates the concept of Vault Secrets Engines, showing how vault clients use tokens to access various secrets engines like Kubernetes, databases, and cloud services. It includes icons representing different components such as KV, PKI, and Transit.](https://kodekloud.com/kk-media/image/upload/v1752878094/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/vault-secrets-engines-concept-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Secrets Engines are the primary reason to deploy Vault. They deliver on Vault’s promise: centralized, dynamic, and secure management of sensitive information.
-</Callout>
+> **lightbulb** Secrets Engines are the primary reason to deploy Vault. They deliver on Vault’s promise: centralized, dynamic, and secure management of sensitive information.
 
 ***
 
@@ -39,9 +31,7 @@ A **Secrets Engine** is a plugin-style component in Vault that you enable at a s
 
 You can enable multiple engines—including multiple instances of the same type—by assigning unique mount paths.
 
-<Frame>
-  ![The image is a slide about "Secrets Engines," explaining their role in storing, generating, or encrypting data, and highlighting their functionality as plugins in Vault. It also mentions that secrets engines are enabled and isolated at a unique path.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878096/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/secrets-engines-vault-functionality-slide.jpg)
-</Frame>
+![The image is a slide about "Secrets Engines," explaining their role in storing, generating, or encrypting data, and highlighting their functionality as plugins in Vault. It also mentions that secrets engines are enabled and isolated at a unique path.](https://kodekloud.com/kk-media/image/upload/v1752878096/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/secrets-engines-vault-functionality-slide.jpg)
 
 ***
 
@@ -55,9 +45,7 @@ A **secret** is any piece of data your organization considers sensitive:
 * Database credentials
 * Application configuration files
 
-<Frame>
-  ![The image explains what constitutes a secret within an organization, listing examples like usernames, passwords, TLS certificates, API keys, database credentials, and application data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878097/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/organization-secrets-examples-list.jpg)
-</Frame>
+![The image explains what constitutes a secret within an organization, listing examples like usernames, passwords, TLS certificates, API keys, database credentials, and application data.](https://kodekloud.com/kk-media/image/upload/v1752878097/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/organization-secrets-examples-list.jpg)
 
 Vault treats secrets as a service. You generate, manage, and revoke them on demand, backed by leases and audit trails:
 
@@ -67,9 +55,7 @@ Vault treats secrets as a service. You generate, manage, and revoke them on dema
 
 > **Scenario:** A fleet of web servers requests dynamic database credentials from Vault. If one server is compromised, only its credentials are affected. You can pinpoint and revoke its credentials without impacting others.
 
-<Frame>
-  ![The image is an infographic titled "Secrets as a Service," explaining how to use Vault to manage credentials, with features like automatic revocation, audit trails, and access control. It includes a flowchart showing the process from a Vault Admin to an Amazon S3 Bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878098/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/secrets-as-a-service-vault-infographic.jpg)
-</Frame>
+![The image is an infographic titled "Secrets as a Service," explaining how to use Vault to manage credentials, with features like automatic revocation, audit trails, and access control. It includes a flowchart showing the process from a Vault Admin to an Amazon S3 Bucket.](https://kodekloud.com/kk-media/image/upload/v1752878098/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/secrets-as-a-service-vault-infographic.jpg)
 
 ***
 
@@ -110,9 +96,7 @@ Vault includes a broad set of engines by default. Select and enable the ones you
 | Encryption & Certificates | Transit, Transform *(Enterprise Only)*, PKI, Venafi         |
 | Utilities                 | SSH, TOTP, Terraform Cloud                                  |
 
-<Frame>
-  ![The image lists various "Secrets Engines" in colorful boxes, including services like AWS, Google Cloud, and MongoDB Atlas. It features a stylized character in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878099/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/secrets-engines-aws-google-mongodb.jpg)
-</Frame>
+![The image lists various "Secrets Engines" in colorful boxes, including services like AWS, Google Cloud, and MongoDB Atlas. It features a stylized character in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878099/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/secrets-engines-aws-google-mongodb.jpg)
 
 ***
 
@@ -123,9 +107,7 @@ Use the KV engine to store static data.
 * **KV v1**: Overwrites on write; no history.
 * **KV v2**: Versioned store; supports history and rollback.
 
-<Frame>
-  ![The image is a diagram titled "Secrets Engines" showing a flow from "KV" to "Key/Value – Version 1" and "Key/Value – Version 2." It includes a small character illustration in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878100/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/secrets-engines-diagram-kv-flow.jpg)
-</Frame>
+![The image is a diagram titled "Secrets Engines" showing a flow from "KV" to "Key/Value – Version 1" and "Key/Value – Version 2." It includes a small character illustration in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878100/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/secrets-engines-diagram-kv-flow.jpg)
 
 ***
 
@@ -138,23 +120,17 @@ Dynamically generate database credentials for many backends:
 * Oracle, PostgreSQL, Redshift, Snowflake
 * Custom database plugins
 
-<Frame>
-  ![The image is a diagram titled "Secrets Engines" showing a list of database types, including Cassandra, MongoDB, PostgreSQL, and others, connected to a "Database" label.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878101/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/secrets-engines-database-types-diagram.jpg)
-</Frame>
+![The image is a diagram titled "Secrets Engines" showing a list of database types, including Cassandra, MongoDB, PostgreSQL, and others, connected to a "Database" label.](https://kodekloud.com/kk-media/image/upload/v1752878101/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/secrets-engines-database-types-diagram.jpg)
 
 ***
 
-<Callout icon="triangle-alert">
-  Key Management and Transform engines are **Enterprise Only**. Ensure your Vault license includes these features before enabling.
-</Callout>
+> **triangle-alert** Key Management and Transform engines are **Enterprise Only**. Ensure your Vault license includes these features before enabling.
 
 ***
 
 ## Grouping Secrets Engines by Function
 
-<Frame>
-  ![The image lists various "Secrets Engines" grouped by function, including cloud services, databases, identity management, and encryption tools. It features icons representing each category and a pixelated design on the right side.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878102/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/secrets-engines-functions-icons-pixelated.jpg)
-</Frame>
+![The image lists various "Secrets Engines" grouped by function, including cloud services, databases, identity management, and encryption tools. It features icons representing each category and a pixelated design on the right side.](https://kodekloud.com/kk-media/image/upload/v1752878102/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/secrets-engines-functions-icons-pixelated.jpg)
 
 * **Cloud Platforms**: AWS, Azure, GCP, Alibaba
 * **Databases**: SQL/NoSQL backends
@@ -166,9 +142,7 @@ Dynamically generate database credentials for many backends:
 
 ## Overview of Built-In Engines
 
-<Frame>
-  ![The image describes different secrets engines and their functions, including Active Directory, AliCloud, AWS, Azure, and Consul, each with a brief explanation of their credential management capabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878103/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/secrets-engines-credential-management-overview.jpg)
-</Frame>
+![The image describes different secrets engines and their functions, including Active Directory, AliCloud, AWS, Azure, and Consul, each with a brief explanation of their credential management capabilities.](https://kodekloud.com/kk-media/image/upload/v1752878103/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/secrets-engines-credential-management-overview.jpg)
 
 * **Active Directory**\
   Rotate service account passwords; Vault requires a service account for rotation.
@@ -199,17 +173,11 @@ Dynamically generate database credentials for many backends:
 * **Venafi**\
   Certificate issuance via Venafi integration.
 
-<Frame>
-  ![The image is a slide titled "Secrets Engines" that explains the functions of different secrets engines like Cubbyhole, Database, Google Cloud, Google Cloud KMS, and Key Management. Each engine's purpose is briefly described, focusing on data storage, credential generation, and key management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878104/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/secrets-engines-data-storage-credential-management.jpg)
-</Frame>
+![The image is a slide titled "Secrets Engines" that explains the functions of different secrets engines like Cubbyhole, Database, Google Cloud, Google Cloud KMS, and Key Management. Each engine's purpose is briefly described, focusing on data storage, credential generation, and key management.](https://kodekloud.com/kk-media/image/upload/v1752878104/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/secrets-engines-data-storage-credential-management.jpg)
 
-<Frame>
-  ![The image is an informational graphic about different "Secrets Engines" in Vault, describing their functions such as KMIP, KV, Identity, MongoDB Atlas, and Nomad. Each engine is briefly explained with its specific role and capabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878105/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/vault-secrets-engines-info-graphic.jpg)
-</Frame>
+![The image is an informational graphic about different "Secrets Engines" in Vault, describing their functions such as KMIP, KV, Identity, MongoDB Atlas, and Nomad. Each engine is briefly explained with its specific role and capabilities.](https://kodekloud.com/kk-media/image/upload/v1752878105/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/vault-secrets-engines-info-graphic.jpg)
 
-<Frame>
-  ![The image describes different secrets engines and their functions, including OpenLDAP, PKI, RabbitMQ, SSH, and Terraform Cloud. Each engine is associated with specific tasks like managing credentials, generating certificates, and providing secure authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878107/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/secrets-engines-functions-openldap-pki.jpg)
-</Frame>
+![The image describes different secrets engines and their functions, including OpenLDAP, PKI, RabbitMQ, SSH, and Terraform Cloud. Each engine is associated with specific tasks like managing credentials, generating certificates, and providing secure authentication.](https://kodekloud.com/kk-media/image/upload/v1752878107/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Introduction-to-Secrets-Engines/secrets-engines-functions-openldap-pki.jpg)
 
 ***
 
@@ -226,6 +194,4 @@ You’ve learned the core concepts and built-in Secrets Engines in Vault. In the
 * [KV Secrets Engine](https://www.vaultproject.io/docs/secrets/kv)
 * [HashiCorp Vault on GitHub](https://github.com/hashicorp/vault)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/4421d57f-b1ad-4f4c-a3fc-9d901aae3664" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/4421d57f-b1ad-4f4c-a3fc-9d901aae3664)

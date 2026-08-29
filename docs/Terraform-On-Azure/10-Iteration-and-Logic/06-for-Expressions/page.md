@@ -126,15 +126,11 @@ Reference links
 * [Terraform docs: for\_each](https://www.terraform.io/language/meta-arguments/for_each)
 * [Terraform docs: zipmap](https://www.terraform.io/language/functions/zipmap)
 
-<Callout icon="lightbulb">
-  Prefer `for_each` for stable, long-lived resources and `count` for simple numeric repetition. Remember that `toset()` removes duplicates and discards order—use maps or `zipmap()` to create deterministic keys when you need stable identities and per-item metadata.
-</Callout>
+> **lightbulb** Prefer `for_each` for stable, long-lived resources and `count` for simple numeric repetition. Remember that `toset()` removes duplicates and discards order—use maps or `zipmap()` to create deterministic keys when you need stable identities and per-item metadata.
 
 With this, the comparison between `count` and `for_each` is complete.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/fb5019bb-df21-4583-818e-6dae40fde2ec/lesson/f4c88663-77b9-419e-8725-5389e3e7e2fa" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/fb5019bb-df21-4583-818e-6dae40fde2ec/lesson/f4c88663-77b9-419e-8725-5389e3e7e2fa)
 
 
 # for Expressions
@@ -168,9 +164,7 @@ resource "azurerm_resource_group" "rg" {
 }
 ```
 
-<Callout icon="lightbulb">
-  For expressions only produce data—they do not create resources. Use them to prepare or reshape values (lists, sets, maps, strings) that you then pass into `for_each`, resource arguments, modules, or other expressions. They keep configurations DRY and easier to maintain.
-</Callout>
+> **lightbulb** For expressions only produce data—they do not create resources. Use them to prepare or reshape values (lists, sets, maps, strings) that you then pass into `for_each`, resource arguments, modules, or other expressions. They keep configurations DRY and easier to maintain.
 
 Line-by-line explanation
 
@@ -195,9 +189,7 @@ Best practices and behavior notes
 * Use `toset()` or `tomap()` when required by consumers like `for_each` so Terraform can use stable keys to track resources across runs.
 * When using a map with `for_each`, the map keys become resource instance keys and `each.value` is the corresponding value. For sets of primitive values, the element itself becomes the stable identifier used by `for_each`.
 
-<Callout icon="warning">
-  Do not pass a plain list directly into `for_each`. Always convert lists into `toset()` or build a map to ensure deterministic resource keys and avoid unexpected resource recreation.
-</Callout>
+> **warning** Do not pass a plain list directly into `for_each`. Always convert lists into `toset()` or build a map to ensure deterministic resource keys and avoid unexpected resource recreation.
 
 Quick reference table
 
@@ -225,6 +217,4 @@ Links and references
 * [Terraform documentation: for\_each meta-argument](https://www.terraform.io/docs/language/meta-arguments/for_each.html)
 * [Terraform locals documentation](https://www.terraform.io/docs/language/values/locals.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/fb5019bb-df21-4583-818e-6dae40fde2ec/lesson/94612c9a-84fb-4096-bdac-b5765470e478" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/fb5019bb-df21-4583-818e-6dae40fde2ec/lesson/94612c9a-84fb-4096-bdac-b5765470e478)

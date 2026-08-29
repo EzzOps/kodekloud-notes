@@ -21,9 +21,7 @@ NameError: name 'naem' is not defined
 
 In this case, Python raises a NameError because the variable "naem" does not exist. Instead of crashing immediately, you can catch and handle exceptions so that the program continues executing.
 
-<Callout icon="lightbulb">
-  Use a try-except block to monitor code for errors. The code under the try block executes normally, but if an error occurs, the code in the corresponding except block takes over.
-</Callout>
+> **lightbulb** Use a try-except block to monitor code for errors. The code under the try block executes normally, but if an error occurs, the code in the corresponding except block takes over.
 
 ## Try-Except: A Basic Example
 
@@ -62,9 +60,7 @@ Python allows you to handle specific types of errors individually. Among the com
 * KeyError
 * IndentationError
 
-<Frame>
-  ![The image lists various Python error types, including ZeroDivisionError, ValueError, TypeError, SystemError, AssertionError, AttributeError, IndexError, KeyError, IndentationError, and others.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883528/notes-assets/images/Python-Basics-Errors-and-Exceptions/frame_80.jpg)
-</Frame>
+![The image lists various Python error types, including ZeroDivisionError, ValueError, TypeError, SystemError, AssertionError, AttributeError, IndexError, KeyError, IndentationError, and others.](https://kodekloud.com/kk-media/image/upload/v1752883528/notes-assets/images/Python-Basics-Errors-and-Exceptions/frame_80.jpg)
 
 Suppose you ask a user to input a number and try to compute its reciprocal. Two issues may occur:
 
@@ -92,12 +88,8 @@ print("All done!")
 
 When a ValueError occurs (for example, if the user inputs a non-integer), the corresponding except block is executed. Likewise, entering zero triggers the ZeroDivisionError block. Note that any generic `except` block without a specified exception type should always come last to catch any other unforeseen errors.
 
-<Callout icon="lightbulb">
-  Always handle specific exceptions before using a generic exception block. This practice improves code readability and error handling precision.
-</Callout>
+> **lightbulb** Always handle specific exceptions before using a generic exception block. This practice improves code readability and error handling precision.
 
 That concludes our article on Python errors and exceptions. Now, it's time to put this knowledge into practice and enhance your Python programming skills!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/b7dfa718-4f50-4b8b-bc7c-51915b87a2a7/lesson/eb3cef1e-6cb3-4adf-a763-992614247cde" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/b7dfa718-4f50-4b8b-bc7c-51915b87a2a7/lesson/eb3cef1e-6cb3-4adf-a763-992614247cde)

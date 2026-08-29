@@ -31,9 +31,7 @@ $ sudo apt install nginx
 [sudo] password for michael: 
 ```
 
-<Callout icon="lightbulb">
-  If you see `User michael is not in the sudoers file`, add your user to the `sudo` group or update `/etc/sudoers` accordingly.
-</Callout>
+> **lightbulb** If you see `User michael is not in the sudoers file`, add your user to the `sudo` group or update `/etc/sudoers` accordingly.
 
 ## Configuring sudo: /etc/sudoers
 

@@ -17,9 +17,7 @@ The OpenAI platform provides a seamless developer experience through four core l
 | RESTful API Endpoint | Scalable HTTP interface for model inference and management             | `POST /v1/completions`        |
 | Official SDKs & CLI  | Client libraries and utilities for integration                         | OpenAI Python client, CLI     |
 
-<Frame>
-  ![The image is a flowchart titled "OpenAI – 10,000-Ft. Overview," showing the interaction between tools, libraries, apps, an API, OpenAI, and foundation models.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881562/notes-assets/images/Mastering-Generative-AI-with-OpenAI-A-Closer-Look-at-OpenAI-API/openai-10000ft-overview-flowchart.jpg)
-</Frame>
+![The image is a flowchart titled "OpenAI – 10,000-Ft. Overview," showing the interaction between tools, libraries, apps, an API, OpenAI, and foundation models.](https://kodekloud.com/kk-media/image/upload/v1752881562/notes-assets/images/Mastering-Generative-AI-with-OpenAI-A-Closer-Look-at-OpenAI-API/openai-10000ft-overview-flowchart.jpg)
 
 Customer applications—whether your web app, mobile client, or backend service—interact with these layers by calling the RESTful API directly or using one of the managed SDKs.
 
@@ -33,9 +31,7 @@ When you send a request to the OpenAI API, there are several parameters you can 
 * **Temperature**: Controls randomness in output (0.0–1.0).
 * **Top\_p**: Enables nucleus sampling for probabilistic curation.
 
-<Callout icon="lightbulb">
-  Every API call consumes tokens based on the length of your prompt and the response. Monitor your usage in the [OpenAI dashboard](https://platform.openai.com/account/usage) to manage costs.
-</Callout>
+> **lightbulb** Every API call consumes tokens based on the length of your prompt and the response. Monitor your usage in the [OpenAI dashboard](https://platform.openai.com/account/usage) to manage costs.
 
 ### Example: Text Completion Request
 
@@ -88,6 +84,4 @@ A typical response object contains:
 * [OpenAI Pricing](https://openai.com/pricing/)
 * [Token Calculator](https://platform.openai.com/tokenizer)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/e983525e-3a5a-4043-9319-4f259e41bc79/lesson/375ca884-2d8f-47af-98c1-81b666346d80" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/e983525e-3a5a-4043-9319-4f259e41bc79/lesson/375ca884-2d8f-47af-98c1-81b666346d80)

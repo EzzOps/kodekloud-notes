@@ -30,15 +30,11 @@ When managing Azure resources, it is essential to identify critical management g
 
 Access to these sensitive resources is managed through just-in-time activation combined with multi-factor authentication. This methodology provides granular, time-bound access control, significantly reducing potential security risks.
 
-<Callout icon="lightbulb">
-  Remember, securing your production subscriptions and critical resources is paramount to maintaining a robust security posture.
-</Callout>
+> **lightbulb** Remember, securing your production subscriptions and critical resources is paramount to maintaining a robust security posture.
 
 Below is a diagram illustrating the scope of PIM for Azure resources, highlighting key groups, subscriptions, and essential resources:
 
-<Frame>
-  ![The image is about the scope of PIM (Privileged Identity Management) and highlights key groups, subscriptions, and essential resources related to Azure Resources. It asks which Azure AD roles and resources should be protected with PIM.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881656/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configuring-scope-of-PIM/pim-scope-azure-resources-diagram.jpg)
-</Frame>
+![The image is about the scope of PIM (Privileged Identity Management) and highlights key groups, subscriptions, and essential resources related to Azure Resources. It asks which Azure AD roles and resources should be protected with PIM.](https://kodekloud.com/kk-media/image/upload/v1752881656/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configuring-scope-of-PIM/pim-scope-azure-resources-diagram.jpg)
 
 ***
 
@@ -58,6 +54,4 @@ When you explore the portal, you might encounter a demonstration of how PIM for 
 
 With these concepts clarified, you are now ready to proceed with PIM onboarding.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/4c177d01-df52-459d-8089-073ff3170c4f/lesson/14124da9-f312-4856-a274-9d2297ff4a60" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/4c177d01-df52-459d-8089-073ff3170c4f/lesson/14124da9-f312-4856-a274-9d2297ff4a60)

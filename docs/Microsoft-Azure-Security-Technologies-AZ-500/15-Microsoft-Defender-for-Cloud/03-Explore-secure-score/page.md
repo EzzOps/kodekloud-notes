@@ -8,9 +8,7 @@ In this lesson, we dive into the concept of Secure Score and its significance in
 
 Secure Score is a vital metric that measures your organization's security status by evaluating key aspects such as access control, threat protection, data security, compliance, and incident response. It is determined by how thoroughly you have implemented recommended security controls and configurations. For example, a score of 33% indicates that only one-third of the recommended security measures are in place.
 
-<Callout icon="lightbulb">
-  A higher Secure Score generally translates to a stronger security posture. Aim for a score of at least 75%—bearing in mind that you can exempt recommendations that are not applicable to your organization.
-</Callout>
+> **lightbulb** A higher Secure Score generally translates to a stronger security posture. Aim for a score of at least 75%—bearing in mind that you can exempt recommendations that are not applicable to your organization.
 
 ## Why Secure Score Matters
 
@@ -30,9 +28,7 @@ For free, it continuously updates to address emerging threats and evolving stand
 
 Let's head back to the Azure portal to see this in action:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen displaying the "Microsoft Defender for Cloud" recommendations. It includes a secure score of 33% and lists various security recommendations with their statuses and potential score increases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882024/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Explore-secure-score/azure-portal-defender-cloud-recommendations.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen displaying the "Microsoft Defender for Cloud" recommendations. It includes a secure score of 33% and lists various security recommendations with their statuses and potential score increases.](https://kodekloud.com/kk-media/image/upload/v1752882024/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Explore-secure-score/azure-portal-defender-cloud-recommendations.jpg)
 
 In the portal, you can view the Secure Score along with various recommendations that contribute to it. Although not all recommendations have a specific score value, they collectively help guide your actions to boost your security measures—much like earning points in a game. This visual feedback offers an immediate understanding of overall security performance.
 
@@ -51,6 +47,4 @@ For additional resources on cloud security, consider reviewing the following lin
 
 Stay proactive and keep your Secure Score high to ensure optimal protection for your organization.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/aea85892-224f-4bd2-8013-e36764e15f37/lesson/c41438ec-e198-4ad6-baff-4295b62410ad" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/aea85892-224f-4bd2-8013-e36764e15f37/lesson/c41438ec-e198-4ad6-baff-4295b62410ad)

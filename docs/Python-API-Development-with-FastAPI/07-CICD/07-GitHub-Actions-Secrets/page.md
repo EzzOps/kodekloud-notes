@@ -6,9 +6,7 @@ This article explains how to use GitHub Actions Secrets to securely manage sensi
 
 In the previous lesson, we learned that hard-coding environment variables directly into your GitHub Actions workflow can expose sensitive information. As illustrated in the diagram below, when these values are embedded in the workflow file, anyone with access to the repository is able to view them:
 
-<Frame>
-  ![The image shows a GitHub Actions page for a repository, displaying a list of workflow runs with their statuses and timestamps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883369/notes-assets/images/Python-API-Development-with-FastAPI-GitHub-Actions-Secrets/github-actions-workflow-runs-statuses.jpg)
-</Frame>
+![The image shows a GitHub Actions page for a repository, displaying a list of workflow runs with their statuses and timestamps.](https://kodekloud.com/kk-media/image/upload/v1752883369/notes-assets/images/Python-API-Development-with-FastAPI-GitHub-Actions-Secrets/github-actions-workflow-runs-statuses.jpg)
 
 For instance, a workflow might initially be configured as follows:
 
@@ -39,9 +37,7 @@ Since these configuration values are visible in your repository, it’s recommen
 
 To protect sensitive data, navigate to your repository's **Settings** and locate the **Secrets** section. There, you can define repository secrets that are accessible across all branches. For example, you might create a secret named `DATABASE_HOSTNAME` with a value such as `localhost`.
 
-<Frame>
-  ![The image shows a GitHub repository settings page where a new secret is being added under "Actions secrets." The secret name is "DATABASE\_HOSTNAME" with the value "localhost."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883369/notes-assets/images/Python-API-Development-with-FastAPI-GitHub-Actions-Secrets/github-repo-settings-actions-secret.jpg)
-</Frame>
+![The image shows a GitHub repository settings page where a new secret is being added under "Actions secrets." The secret name is "DATABASE\_HOSTNAME" with the value "localhost."](https://kodekloud.com/kk-media/image/upload/v1752883369/notes-assets/images/Python-API-Development-with-FastAPI-GitHub-Actions-Secrets/github-repo-settings-actions-secret.jpg)
 
 After setting up your secret, update your workflow file to reference it using the following syntax:
 
@@ -81,9 +77,7 @@ To configure an environment secret:
 
 Once the environment secrets are defined, modify your workflow to specify the target environment:
 
-<Frame>
-  ![The image shows a GitHub repository settings page focused on "Actions secrets," with options to manage environment and repository secrets. The page indicates there are no environment secrets, but a repository secret named "DATABASE\_HOSTNAME" is listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883371/notes-assets/images/Python-API-Development-with-FastAPI-GitHub-Actions-Secrets/github-repo-settings-actions-secrets.jpg)
-</Frame>
+![The image shows a GitHub repository settings page focused on "Actions secrets," with options to manage environment and repository secrets. The page indicates there are no environment secrets, but a repository secret named "DATABASE\_HOSTNAME" is listed.](https://kodekloud.com/kk-media/image/upload/v1752883371/notes-assets/images/Python-API-Development-with-FastAPI-GitHub-Actions-Secrets/github-repo-settings-actions-secrets.jpg)
 
 Here’s an example of a workflow configured to use environment secrets:
 
@@ -111,9 +105,7 @@ jobs:
         uses: actions/setup-python@v2
 ```
 
-<Callout icon="lightbulb">
-  If a secret exists in both the repository and environment scopes with the same name, check the GitHub documentation to understand the precedence rules.
-</Callout>
+> **lightbulb** If a secret exists in both the repository and environment scopes with the same name, check the GitHub documentation to understand the precedence rules.
 
 ## Committing Your Workflow Changes
 
@@ -129,9 +121,7 @@ After updating the workflow file, remember to commit your changes and push them 
 
 After pushing your changes, you might encounter errors in your GitHub Actions job. For example, an error like “unrecognized name, database\_port” suggests that one of the environment variables was referenced without using the required `secrets.` prefix. The screenshot below highlights such an error:
 
-<Frame>
-  ![The image shows a GitHub Actions page with a build and deploy workflow that has failed due to an invalid workflow file error related to unrecognized named values.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883372/notes-assets/images/Python-API-Development-with-FastAPI-GitHub-Actions-Secrets/github-actions-build-deploy-error.jpg)
-</Frame>
+![The image shows a GitHub Actions page with a build and deploy workflow that has failed due to an invalid workflow file error related to unrecognized named values.](https://kodekloud.com/kk-media/image/upload/v1752883372/notes-assets/images/Python-API-Development-with-FastAPI-GitHub-Actions-Secrets/github-actions-build-deploy-error.jpg)
 
 To fix this issue, ensure that every secret is referenced using the correct syntax, `${{ secrets.VARIABLE_NAME }}`. Here is the corrected job configuration:
 
@@ -170,16 +160,10 @@ pytest
 
 This error occurs because the workflow attempts to connect to a non-existent database. A future lesson will detail how to set up a test database on your runner to ensure that your tests execute properly.
 
-<Frame>
-  ![The image shows a GitHub Actions interface with a failed job titled "job1" that includes steps like setting up a job, pulling a git repo, installing Python, and testing with pytest. The log details show environment variables and the installation of pytest.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883373/notes-assets/images/Python-API-Development-with-FastAPI-GitHub-Actions-Secrets/github-actions-failed-job1-pytest.jpg)
-</Frame>
+![The image shows a GitHub Actions interface with a failed job titled "job1" that includes steps like setting up a job, pulling a git repo, installing Python, and testing with pytest. The log details show environment variables and the installation of pytest.](https://kodekloud.com/kk-media/image/upload/v1752883373/notes-assets/images/Python-API-Development-with-FastAPI-GitHub-Actions-Secrets/github-actions-failed-job1-pytest.jpg)
 
-<Frame>
-  ![The image shows a computer screen displaying a code editor with error logs from a failed job, likely related to a Python script using SQLAlchemy. The left side has a summary panel, and the right side shows detailed error messages and code snippets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883374/notes-assets/images/Python-API-Development-with-FastAPI-GitHub-Actions-Secrets/code-editor-error-logs-python-sqlalchemy.jpg)
-</Frame>
+![The image shows a computer screen displaying a code editor with error logs from a failed job, likely related to a Python script using SQLAlchemy. The left side has a summary panel, and the right side shows detailed error messages and code snippets.](https://kodekloud.com/kk-media/image/upload/v1752883374/notes-assets/images/Python-API-Development-with-FastAPI-GitHub-Actions-Secrets/code-editor-error-logs-python-sqlalchemy.jpg)
 
 In the next lesson, we will explore setting up a test database on the runner to enable successful connections and error-free test executions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/4979410a-af57-460b-8f71-5a177fa10d2d/lesson/22c29e83-b0ea-4fe4-8e62-9fb89daded54" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/4979410a-af57-460b-8f71-5a177fa10d2d/lesson/22c29e83-b0ea-4fe4-8e62-9fb89daded54)

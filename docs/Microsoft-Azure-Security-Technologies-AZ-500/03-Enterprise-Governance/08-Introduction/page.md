@@ -14,16 +14,10 @@ Welcome back! In this lesson, we’re launching our new module on Enterprise Gov
 * Azure Blueprints
 * Subscription Management
 
-<Frame>
-  ![The image is an introduction slide outlining key topics related to Azure, including shared responsibility, hierarchy of systems, policies, role-based access control, resource locks, blueprints, and subscription management plans.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881837/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Introduction/azure-introduction-key-topics.jpg)
-</Frame>
+![The image is an introduction slide outlining key topics related to Azure, including shared responsibility, hierarchy of systems, policies, role-based access control, resource locks, blueprints, and subscription management plans.](https://kodekloud.com/kk-media/image/upload/v1752881837/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Introduction/azure-introduction-key-topics.jpg)
 
-<Callout icon="lightbulb">
-  The topics outlined provide a solid foundation for understanding enterprise governance in Azure and are essential for optimizing cloud security and compliance.
-</Callout>
+> **lightbulb** The topics outlined provide a solid foundation for understanding enterprise governance in Azure and are essential for optimizing cloud security and compliance.
 
 Let’s begin by exploring the Shared Responsibility Model.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/3c48a4f2-a6f3-45fd-87d7-c53f36f2fb2a/lesson/910c8404-01c3-494a-af3b-a7d66305b1bd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/3c48a4f2-a6f3-45fd-87d7-c53f36f2fb2a/lesson/910c8404-01c3-494a-af3b-a7d66305b1bd)

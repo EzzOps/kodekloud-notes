@@ -36,9 +36,7 @@ This lesson covered the core ArgoCD concepts you'll use daily when implementing 
 
 For additional courses and guided tutorials, see the referenced learning paths at Learn KodeKloud.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/37b87ace-4404-4c7a-a919-6eace075053b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/37b87ace-4404-4c7a-a919-6eace075053b)
 
 
 # ArgoCD Features
@@ -93,9 +91,7 @@ ArgoCD integrates with developer workflows, CI systems, and Git provider events 
   <img alt="A slide titled &#x22;ArgoCD Features&#x22; listing items 11–14: webhook integration (GitHub, BitBucket, GitLab); CLI and access tokens for automation/CI; a real-time Web UI; and automated or manual syncing to desired state. The slide uses turquoise numbered markers and a KodeKloud copyright." />
 </Frame>
 
-<Callout icon="lightbulb">
-  ArgoCD is designed around Git as the single source of truth. Adopt Git workflows and branching strategies to manage application lifecycle (promotion, rollbacks, and approvals). Combine RBAC and SSO to enforce secure, multi-tenant operations and integrate ArgoCD metrics into Prometheus for centralized observability.
-</Callout>
+> **lightbulb** ArgoCD is designed around Git as the single source of truth. Adopt Git workflows and branching strategies to manage application lifecycle (promotion, rollbacks, and approvals). Combine RBAC and SSO to enforce secure, multi-tenant operations and integrate ArgoCD metrics into Prometheus for centralized observability.
 
 ## Links and references
 
@@ -105,6 +101,4 @@ ArgoCD integrates with developer workflows, CI systems, and Git provider events 
 * [Prometheus Certified Associate](https://learn.kodekloud.com/user/courses/prometheus-certified-associate-pca-certification)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/04bcf4d6-daad-42fd-ba23-ce4c3e8672e2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/04bcf4d6-daad-42fd-ba23-ce4c3e8672e2)

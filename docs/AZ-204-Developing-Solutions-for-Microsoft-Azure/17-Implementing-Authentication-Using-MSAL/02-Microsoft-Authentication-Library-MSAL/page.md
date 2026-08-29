@@ -6,7 +6,7 @@ The Microsoft Authentication Library (MSAL) provides secure access to Microsoft 
 
 The Microsoft Authentication Library (MSAL) is a comprehensive framework that delivers secure access to Microsoft services. It enables applications to authenticate users seamlessly across multiple environments, ensuring robust security for APIs regardless of where they are hosted. MSAL supports an extensive range of application architectures and platforms, making it a versatile choice for modern software development.
 
-![The image is about the Microsoft Authentication Library, highlighting its secure access to various APIs and support for multiple application architectures and platforms like .NET, JavaScript, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866565/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Microsoft-Authentication-Library-MSAL/microsoft-authentication-library-api-access.jpg)
+![The image is about the Microsoft Authentication Library, highlighting its secure access to various APIs and support for multiple application architectures and platforms like .NET, JavaScript, and more.](https://kodekloud.com/kk-media/image/upload/v1752866565/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Microsoft-Authentication-Library-MSAL/microsoft-authentication-library-api-access.jpg)
 
 Whether you’re developing for .NET, JavaScript, Java, Python, Android, or iOS, MSAL's flexibility makes it a widely adopted solution in today’s application development landscape.
 
@@ -20,7 +20,7 @@ MSAL is designed to meet various authentication needs in diverse scenarios, incl
 * **Mobile and Native Applications:** Ensures secure and seamless user authentication on iOS and Android platforms.
 * **Daemons or Server-Side Applications:**
 
-![The image is a diagram from the Microsoft Authentication Library, showing different application types and scenarios: Web Applications, Web APIs, Single-Page Apps (JavaScript), Mobile and Native Applications, and Daemons and Server-Side Applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866566/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Microsoft-Authentication-Library-MSAL/microsoft-authentication-library-diagram.jpg)
+![The image is a diagram from the Microsoft Authentication Library, showing different application types and scenarios: Web Applications, Web APIs, Single-Page Apps (JavaScript), Mobile and Native Applications, and Daemons and Server-Side Applications.](https://kodekloud.com/kk-media/image/upload/v1752866566/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Microsoft-Authentication-Library-MSAL/microsoft-authentication-library-diagram.jpg)
 
 For backend processes where user interaction is not possible, MSAL supports robust, token-based authentication for server-side applications and daemons.
 
@@ -50,7 +50,7 @@ Designed for single-page applications, the implicit flow retrieves tokens immedi
 
 This flow is tailored for devices with limited input capabilities, such as IoT devices or smart TVs. With device code flow, users are required to visit a URL and enter a unique code to authenticate. This method is commonly utilized in scenarios like signing in on a Microsoft Xbox, where the code is provided via a terminal command (e.g., from azcopy).
 
-![The image is a table from the Microsoft Authentication Library, listing different authentication flows and their descriptions, such as "Authorization code" and "Device code."](../../../../images/kodekloud.com/kk-media/image/upload/v1752866567/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Microsoft-Authentication-Library-MSAL/microsoft-authentication-flows-table.jpg)
+![The image is a table from the Microsoft Authentication Library, listing different authentication flows and their descriptions, such as "Authorization code" and "Device code."](https://kodekloud.com/kk-media/image/upload/v1752866567/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Microsoft-Authentication-Library-MSAL/microsoft-authentication-flows-table.jpg)
 
 ### 6. Integrated Windows Flow
 

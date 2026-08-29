@@ -12,6 +12,6 @@ In this lesson, we delve into App Service deployment slots, a powerful feature t
 
 Let's begin by exploring how staging environments work:
 
-![The image is an introduction slide explaining deployment slots, highlighting their use for managing development environments, functioning as live applications with distinct hostnames, and allowing seamless swapping of app content and configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866344/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Introduction/deployment-slots-introduction-slide.jpg)
+![The image is an introduction slide explaining deployment slots, highlighting their use for managing development environments, functioning as live applications with distinct hostnames, and allowing seamless swapping of app content and configurations.](https://kodekloud.com/kk-media/image/upload/v1752866344/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Introduction/deployment-slots-introduction-slide.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/az-204-developing-solutions-for-microsoft-azure/module/c2500ec0-a3d9-49e3-bab7-75609ceda6f4/lesson/43c96c3a-6a5b-43ef-8b21-933c7b0c2d16)

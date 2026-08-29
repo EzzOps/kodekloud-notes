@@ -56,13 +56,9 @@ A subsequent `tofu plan` will no longer list that resource for replacement.
 | tofu apply-replace RESOURCE | Marks a resource as tainted for next apply  | `$ tofu apply-replace aws_instance.webserver` |
 | tofu untaint RESOURCE       | Removes the taint flag from a resource      | `$ tofu untaint aws_instance.webserver`       |
 
-<Callout icon="triangle-alert">
-  Using `tofu apply-replace` will destroy and recreate resources. Ensure you have appropriate backups or snapshots before proceeding.
-</Callout>
+> **triangle-alert** Using `tofu apply-replace` will destroy and recreate resources. Ensure you have appropriate backups or snapshots before proceeding.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/0fda982f-8bb2-4b57-8009-996870d27e43/lesson/04753b68-9a1d-46ca-a149-cdf9c1ae58c0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/0fda982f-8bb2-4b57-8009-996870d27e43/lesson/04753b68-9a1d-46ca-a149-cdf9c1ae58c0)
 
 
 # Demo OpenTofu Modules
@@ -129,19 +125,15 @@ Plan: 3 to add, 0 to change, 0 to destroy.
 
 The extra resources result from default boolean inputs.
 
-<Frame>
-  ![The image shows a table listing AWS IAM resources and inputs, including their types, defaults, and whether they are required. It also includes a cookie consent notice at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882877/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-OpenTofu-Modules/aws-iam-resources-inputs-table.jpg)
-</Frame>
+![The image shows a table listing AWS IAM resources and inputs, including their types, defaults, and whether they are required. It also includes a cookie consent notice at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752882877/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-OpenTofu-Modules/aws-iam-resources-inputs-table.jpg)
 
-<Callout icon="lightbulb">
-  By default, the `iam-user` module defines these inputs:
+> **lightbulb** By default, the `iam-user` module defines these inputs:
 
   | Variable                          | Type   | Default | Required |
   | --------------------------------- | ------ | ------- | -------- |
   | name                              | string | —       | yes      |
   | create\_iam\_access\_key          | bool   | true    | no       |
   | create\_iam\_user\_login\_profile | bool   | true    | no       |
-</Callout>
 
 ## 4. Restricting Resource Creation
 
@@ -185,8 +177,6 @@ You have now configured the `iam-user` module to create a single IAM user, contr
 
 [iam-user module docs]: https://registry.terraform.io/modules/terraform-aws-modules/iam/aws/latest
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/d4c286c6-b8ee-47b1-bea3-abcf408b00ed/lesson/b3d60ff8-79d5-4a00-802c-79111cd664ff" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/d4c286c6-b8ee-47b1-bea3-abcf408b00ed/lesson/b3d60ff8-79d5-4a00-802c-79111cd664ff)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/d4c286c6-b8ee-47b1-bea3-abcf408b00ed/lesson/aeb71e1a-1044-4f39-92c4-24d99715436f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/d4c286c6-b8ee-47b1-bea3-abcf408b00ed/lesson/aeb71e1a-1044-4f39-92c4-24d99715436f)

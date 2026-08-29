@@ -27,9 +27,7 @@ Key IaC properties
 | Drift detection           | Detects when live infrastructure diverges from declared config | Enables remediation and compliance              |
 | Versioning & auditability | Configurations live in Git (or similar) with history           | Traceability, code review, and rollback         |
 
-<Callout icon="lightbulb">
-  IaC can be declarative (you describe the desired end state) or imperative (you script the steps to get there). Most modern IaC tools favor declarative approaches because they simplify reconciliation and reduce complexity.
-</Callout>
+> **lightbulb** IaC can be declarative (you describe the desired end state) or imperative (you script the steps to get there). Most modern IaC tools favor declarative approaches because they simplify reconciliation and reduce complexity.
 
 Key benefits of Infrastructure as Code
 
@@ -95,9 +93,7 @@ Best practices for IaC
 * Implement drift detection and monitoring: schedule checks or use automation to detect and correct drift.
 * Test infrastructure code: use unit tests, integration tests, and ephemeral test environments to validate changes.
 
-<Callout icon="warning">
-  Be careful with state, locking, and secrets. Mismanaged state files or unencrypted secrets in configs can lead to security risks or resource conflicts. Always use remote state locking and secure secret storage.
-</Callout>
+> **warning** Be careful with state, locking, and secrets. Mismanaged state files or unencrypted secrets in configs can lead to security risks or resource conflicts. Always use remote state locking and secure secret storage.
 
 Links and references
 
@@ -109,6 +105,4 @@ Links and references
 
 These resources will help you explore IaC tooling and patterns that fit your team’s needs and cloud strategy.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/ba3df1b5-1b9a-4f11-b32a-218c32aa1614/lesson/ff9624bd-1873-417d-9b8e-8ff39dd061ac" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/ba3df1b5-1b9a-4f11-b32a-218c32aa1614/lesson/ff9624bd-1873-417d-9b8e-8ff39dd061ac)

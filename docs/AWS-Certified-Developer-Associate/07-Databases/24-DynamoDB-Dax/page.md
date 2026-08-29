@@ -10,7 +10,7 @@ When your application executes a read-heavy workload, DAX acts as an intermediar
 
 DynamoDB Accelerator (DAX) dramatically speeds up read-intensive applications by offering a fully managed caching solution specifically for DynamoDB tables. Below, we examine the key features and benefits of using DAX.
 
-![The image is a diagram illustrating the architecture of DynamoDB DAX, showing the interaction between an application on an EC2 instance, a DAX client, a DAX cluster, and a DynamoDB table.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858740/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Dax/dynamodb-dax-architecture-diagram.jpg)
+![The image is a diagram illustrating the architecture of DynamoDB DAX, showing the interaction between an application on an EC2 instance, a DAX client, a DAX cluster, and a DynamoDB table.](https://kodekloud.com/kk-media/image/upload/v1752858740/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Dax/dynamodb-dax-architecture-diagram.jpg)
 
 ## Key Benefits of DynamoDB DAX
 
@@ -24,7 +24,7 @@ DynamoDB Accelerator (DAX) dramatically speeds up read-intensive applications by
 
 To summarize, DynamoDB DAX serves as an effective caching layer for DynamoDB, enhancing performance for read-intensive applications by minimizing latency and reducing the load on your primary database.
 
-![The image lists five features of DynamoDB DAX: fully managed cache, compatibility with DynamoDB API, ideal for high read workloads, customizable TTL settings, and scalability with high availability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858741/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Dax/dynamodb-dax-features-list.jpg)
+![The image lists five features of DynamoDB DAX: fully managed cache, compatibility with DynamoDB API, ideal for high read workloads, customizable TTL settings, and scalability with high availability.](https://kodekloud.com/kk-media/image/upload/v1752858741/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Dax/dynamodb-dax-features-list.jpg)
 
 By leveraging DynamoDB DAX, you can achieve improved application performance even under heavy read workloads, making it a valuable tool in modern scalable architectures.
 

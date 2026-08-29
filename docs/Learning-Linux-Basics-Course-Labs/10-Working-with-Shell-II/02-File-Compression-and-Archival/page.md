@@ -6,9 +6,7 @@ This lesson explores file compression and archival techniques in Linux, covering
 
 In this lesson, we continue our journey into the Linux shell by exploring file compression and archival techniques. You'll learn about several tools for compressing and archiving files, methods for searching files and directories, and basic pattern matching in Linux. In addition, there is an interactive lab that allows you to experiment with the VI Editor.
 
-<Frame>
-  ![The image lists Linux Core Concepts, including file compression, data extraction, and text editors, with associated labs for practical learning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881160/notes-assets/images/Learning-Linux-Basics-Course-Labs-File-Compression-and-Archival/frame_20.jpg)
-</Frame>
+![The image lists Linux Core Concepts, including file compression, data extraction, and text editors, with associated labs for practical learning.](https://kodekloud.com/kk-media/image/upload/v1752881160/notes-assets/images/Learning-Linux-Basics-Course-Labs-File-Compression-and-Archival/frame_20.jpg)
 
 Before diving into file compression and archival commands, let's start by checking the size of a file in Linux. The `du` command (short for disk usage) is widely used to determine file sizes.
 

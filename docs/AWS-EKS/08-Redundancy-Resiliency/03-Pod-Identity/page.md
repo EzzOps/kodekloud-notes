@@ -34,11 +34,11 @@ Pod Identity modernizes IRSA by embedding role-to-service-account mappings in th
 
 Pods continue calling the AWS SDK normally. A mutating webhook in the EKS control plane injects environment variables pointing to a local, node-hosted proxy. A privileged DaemonSet uses host networking to listen for SDK requests, then interacts with the EKS API to issue temporary credentials.
 
-![The image illustrates the concept of "Pod Identity" with a focus on creating proxied credentials and using a privileged pod with host networking, represented by gears and a daemon set icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862892/notes-assets/images/AWS-EKS-Pod-Identity/pod-identity-privileged-pod-credentials.jpg)
+![The image illustrates the concept of "Pod Identity" with a focus on creating proxied credentials and using a privileged pod with host networking, represented by gears and a daemon set icon.](https://kodekloud.com/kk-media/image/upload/v1752862892/notes-assets/images/AWS-EKS-Pod-Identity/pod-identity-privileged-pod-credentials.jpg)
 
 This proxy authenticates using the node’s EC2 instance role and retrieves the correct IAM role for each service account.
 
-![The image illustrates the concept of "Pod Identity" with elements like Daemon Set, Service Accounts, and AWS IAM, highlighting the need for credential association between service accounts and IAM.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862893/notes-assets/images/AWS-EKS-Pod-Identity/pod-identity-daemon-set-aws-iam.jpg)
+![The image illustrates the concept of "Pod Identity" with elements like Daemon Set, Service Accounts, and AWS IAM, highlighting the need for credential association between service accounts and IAM.](https://kodekloud.com/kk-media/image/upload/v1752862893/notes-assets/images/AWS-EKS-Pod-Identity/pod-identity-daemon-set-aws-iam.jpg)
 
 ***
 
@@ -65,7 +65,7 @@ Pod Identity fully supports AWS attribute-based access control. Tag your AWS res
 1. The service account ➔ IAM role mapping
 2. Any resource tags defined in IAM policies
 
-![The image illustrates a concept of "Tag-Based Credentials" in AWS, showing a user, an S3 bucket, and a message about writing to the bucket if it has the right tags.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862894/notes-assets/images/AWS-EKS-Pod-Identity/tag-based-credentials-aws-s3-diagram.jpg)
+![The image illustrates a concept of "Tag-Based Credentials" in AWS, showing a user, an S3 bucket, and a message about writing to the bucket if it has the right tags.](https://kodekloud.com/kk-media/image/upload/v1752862894/notes-assets/images/AWS-EKS-Pod-Identity/tag-based-credentials-aws-s3-diagram.jpg)
 
 ***
 
@@ -78,7 +78,7 @@ Pod Identity fully supports AWS attribute-based access control. Tag your AWS res
 5. EKS checks the service-account→role mapping and any tag-based policies, then issues temporary credentials.
 6. The proxy returns credentials to the SDK, which uses them for AWS API calls (e.g., `PutObject` to S3).
 
-![The image illustrates the workflow of an EKS cluster, showing components like the control plane, service accounts, IAM roles, and a daemon set interacting with a workload and an S3 bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862896/notes-assets/images/AWS-EKS-Pod-Identity/eks-cluster-workflow-control-plane.jpg)
+![The image illustrates the workflow of an EKS cluster, showing components like the control plane, service accounts, IAM roles, and a daemon set interacting with a workload and an S3 bucket.](https://kodekloud.com/kk-media/image/upload/v1752862896/notes-assets/images/AWS-EKS-Pod-Identity/eks-cluster-workflow-control-plane.jpg)
 
 ***
 
@@ -88,7 +88,7 @@ Pod Identity fully supports AWS attribute-based access control. Tag your AWS res
 
 You can run both IRSA and Pod Identity in the same cluster. EKS will prioritize Pod Identity for credential injection but still support IRSA workloads during your migration.
 
-![The image is a comparison chart showing "Kube2iam," "IRSA," and "Pod Identity," with checkmarks next to "IRSA" and "Pod Identity," and an icon labeled "Webhook" below "Pod Identity."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862897/notes-assets/images/AWS-EKS-Pod-Identity/kube2iam-irsa-pod-identity-chart.jpg)
+![The image is a comparison chart showing "Kube2iam," "IRSA," and "Pod Identity," with checkmarks next to "IRSA" and "Pod Identity," and an icon labeled "Webhook" below "Pod Identity."](https://kodekloud.com/kk-media/image/upload/v1752862897/notes-assets/images/AWS-EKS-Pod-Identity/kube2iam-irsa-pod-identity-chart.jpg)
 
 ### Feature Comparison
 

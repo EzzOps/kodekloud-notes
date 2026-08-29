@@ -45,13 +45,9 @@ Prefer reloading the configuration so worker processes are replaced without drop
 * Reload (graceful): `nginx -s reload` or `sudo systemctl reload nginx`
 * Restart (full stop/start): `sudo systemctl restart nginx`
 
-<Callout icon="warning">
-  Avoid `restart` unless necessary. `restart` interrupts active connections briefly; `reload` applies configuration changes without downtime when `nginx -t` reports OK.
-</Callout>
+> **warning** Avoid `restart` unless necessary. `restart` interrupts active connections briefly; `reload` applies configuration changes without downtime when `nginx -t` reports OK.
 
-<Callout icon="lightbulb">
-  Always run `nginx -t` and then `nginx -s reload` (or `systemctl reload nginx`) if the test is successful. Use `restart` only for recovering failed workers or replacing the master process.
-</Callout>
+> **lightbulb** Always run `nginx -t` and then `nginx -s reload` (or `systemctl reload nginx`) if the test is successful. Use `restart` only for recovering failed workers or replacing the master process.
 
 ## Main configuration and logging
 
@@ -259,9 +255,7 @@ ssl_protocols TLSv1.2 TLSv1.3;
 
 Thanks for reading — I appreciate it.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/53475fbe-d12f-48d7-9602-d4a93debd874" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/53475fbe-d12f-48d7-9602-d4a93debd874)
 
 
 # Monitoring Troubleshooting
@@ -511,9 +505,7 @@ systemctl start nginx
 journalctl -u nginx --since "10 minutes ago"
 ```
 
-<Callout icon="warning">
-  Do not run two services bound to the same port (for example, Apache and NGINX both listening on port 80). Port conflicts will prevent the web server from starting.
-</Callout>
+> **warning** Do not run two services bound to the same port (for example, Apache and NGINX both listening on port 80). Port conflicts will prevent the web server from starting.
 
 ## Quick runtime checks
 
@@ -567,9 +559,7 @@ sudo firewall-cmd --reload
 
 ## Final recommendations
 
-<Callout icon="lightbulb">
-  Always validate configuration changes with `nginx -t` before reloading, restrict sensitive endpoints (e.g., `/nginx_status`) to trusted hosts, and centralize logs and metrics to simplify troubleshooting and alerting.
-</Callout>
+> **lightbulb** Always validate configuration changes with `nginx -t` before reloading, restrict sensitive endpoints (e.g., `/nginx_status`) to trusted hosts, and centralize logs and metrics to simplify troubleshooting and alerting.
 
 This concludes the monitoring and troubleshooting guide for NGINX. For further reading, see:
 
@@ -578,6 +568,4 @@ This concludes the monitoring and troubleshooting guide for NGINX. For further r
 * Grafana: [https://grafana.com/](https://grafana.com/)
 * Datadog: [https://www.datadoghq.com/](https://www.datadoghq.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/b7d13e4f-c250-4bf4-a964-c072516a654a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/b7d13e4f-c250-4bf4-a964-c072516a654a)

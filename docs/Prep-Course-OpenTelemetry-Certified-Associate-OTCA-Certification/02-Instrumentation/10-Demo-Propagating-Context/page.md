@@ -169,9 +169,7 @@ if __name__ == "__main__":
 
 When executed, you should see multiple spans exported with correct parent/child `parent_id` relationships, providing clear observability into the operation.
 
-<Callout icon="lightbulb">
-  Use context managers for deterministic start/stop semantics and for clearer scope handling. They automatically end spans even if exceptions occur.
-</Callout>
+> **lightbulb** Use context managers for deterministic start/stop semantics and for clearer scope handling. They automatically end spans even if exceptions occur.
 
 ***
 
@@ -179,9 +177,7 @@ When executed, you should see multiple spans exported with correct parent/child 
 
 You can reuse the context manager as a decorator to start a span every time a function is invoked. Important: the tracer instance used by the decorator must be available at function-definition time.
 
-<Callout icon="warning">
-  If using `@tracer.start_as_current_span("...")` as a decorator, initialize the `tracer` (for example with `tracer = configure_tracer()`) before defining the decorated functions. Otherwise the decorator won't have access to the tracer and will raise an error.
-</Callout>
+> **warning** If using `@tracer.start_as_current_span("...")` as a decorator, initialize the `tracer` (for example with `tracer = configure_tracer()`) before defining the decorated functions. Otherwise the decorator won't have access to the tracer and will raise an error.
 
 Example (initialize tracer first):
 
@@ -238,9 +234,7 @@ Further reading and references:
 * OpenTelemetry Python documentation: [https://opentelemetry.io/docs/instrumentation/python/](https://opentelemetry.io/docs/instrumentation/python/)
 * OpenTelemetry specification: [https://opentelemetry.io/technical-specification/trace/](https://opentelemetry.io/technical-specification/trace/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/d6517599-f23f-4881-ab12-3f733c4cebd6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/d6517599-f23f-4881-ab12-3f733c4cebd6)
 
 
 # Demo Propagating Context
@@ -256,9 +250,7 @@ Overview
 * Client (payment service): inject the current OpenTelemetry context into outgoing HTTP headers.
 * Server (charge service): extract the context from incoming headers, attach it for the request lifecycle, and detach it in teardown.
 
-<Callout icon="lightbulb">
-  We inject the context into an HTTP carrier (headers) with `inject(...)` and retrieve it on the server with `extract(...)`. Both utilities are available from `opentelemetry.propagate`.
-</Callout>
+> **lightbulb** We inject the context into an HTTP carrier (headers) with `inject(...)` and retrieve it on the server with `extract(...)`. Both utilities are available from `opentelemetry.propagate`.
 
 Quick reference
 

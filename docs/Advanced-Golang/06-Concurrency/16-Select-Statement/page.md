@@ -27,7 +27,7 @@ select {
 
 The Select Statement excels in concurrent programming when dealing with channels and Goroutines, offering a robust way to manage synchronization and concurrency.
 
-![The image is a slide discussing the applications of the "select" statement in programming, highlighting its use in managing synchronization and concurrency with go-routines and channels.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868712/notes-assets/images/Advanced-Golang-Select-Statement/select-statement-go-routines-concurrency.jpg)
+![The image is a slide discussing the applications of the "select" statement in programming, highlighting its use in managing synchronization and concurrency with go-routines and channels.](https://kodekloud.com/kk-media/image/upload/v1752868712/notes-assets/images/Advanced-Golang-Select-Statement/select-statement-go-routines-concurrency.jpg)
 
 Imagine a scenario where you need to fetch data from two servers simultaneously. By leveraging a Select Statement, you can initiate both calls concurrently. The first server to respond triggers its corresponding case to execute, making it an invaluable tool for handling asynchronous operations in Golang.
 
@@ -240,7 +240,7 @@ Understanding the differences between Select and Switch statements is crucial wh
 | Switch         | Non-blocking                             | Evaluating sequential expressions       | Deterministic; executes the first matching case               |
 | Select         | Blocks unless a default case is provided | Handling multiple channel communication | Can block; non-deterministic when multiple channels are ready |
 
-![The image compares "select" and "switch" statements, highlighting differences in blocking behavior and determinism. "Switch" is non-blocking and deterministic, while "select" can block and is non-deterministic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868713/notes-assets/images/Advanced-Golang-Select-Statement/select-vs-switch-statements-comparison.jpg)
+![The image compares "select" and "switch" statements, highlighting differences in blocking behavior and determinism. "Switch" is non-blocking and deterministic, while "select" can block and is non-deterministic.](https://kodekloud.com/kk-media/image/upload/v1752868713/notes-assets/images/Advanced-Golang-Select-Statement/select-vs-switch-statements-comparison.jpg)
 
 In summary, the Select Statement is an essential tool for Golang developers. It enables efficient management of multiple channel operations, ensuring smooth synchronization and concurrency within your applications.
 

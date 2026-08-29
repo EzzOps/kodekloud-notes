@@ -12,9 +12,7 @@ Using the digest above ensures the cluster pulls the exact content you pushed.
 * [Kubernetes Documentation — Images](https://kubernetes.io/docs/concepts/containers/images/)
 * [Docker Registry (distribution) GitHub](https://github.com/distribution/distribution)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/5a9bfe56-bc26-4325-b659-06027d4e815f/lesson/fa37ed3b-f8dd-4a7b-8859-c344c18d5ed1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/5a9bfe56-bc26-4325-b659-06027d4e815f/lesson/fa37ed3b-f8dd-4a7b-8859-c344c18d5ed1)
 
 
 # Lab Solution Deploy Your Operator To The Cluster
@@ -149,9 +147,7 @@ Expected output: `True`
 
 When that condition is `True`, the packaging loop is closed: the operator image was built, pushed, installed, and the in-cluster controller reconciled the custom resource and its child resources.
 
-<Callout icon="lightbulb">
-  Ensure the registry referenced by `IMG_REGISTRY` is reachable from your cluster nodes (for example, a local registry may require special configuration or a registry running inside the cluster). If the cluster cannot pull the image, the controller deployment will remain unavailable.
-</Callout>
+> **lightbulb** Ensure the registry referenced by `IMG_REGISTRY` is reachable from your cluster nodes (for example, a local registry may require special configuration or a registry running inside the cluster). If the cluster cannot pull the image, the controller deployment will remain unavailable.
 
 ## Quick reference: common commands
 
@@ -175,6 +171,4 @@ When that condition is `True`, the packaging loop is closed: the operator image 
 * [Kubebuilder Book](https://book.kubebuilder.io/)
 * [Operator SDK](https://sdk.operatorframework.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/5a9bfe56-bc26-4325-b659-06027d4e815f/lesson/fbae7306-4a7e-4f95-8f4f-00dc16f24103" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/5a9bfe56-bc26-4325-b659-06027d4e815f/lesson/fbae7306-4a7e-4f95-8f4f-00dc16f24103)

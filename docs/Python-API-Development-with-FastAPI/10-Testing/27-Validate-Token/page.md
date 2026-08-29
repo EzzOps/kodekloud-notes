@@ -145,9 +145,7 @@ def test_login_user(test_user, client):
 
 Ensure that the configuration from, for example, `app.config import settings` is properly imported so that the `secret_key` and `algorithm` values are correctly referenced during the token decoding process.
 
-<Callout icon="lightbulb">
-  The test fixture used to create a test user is vital for ensuring consistent test results. Ensure that the test user creation code is correctly configured.
-</Callout>
+> **lightbulb** The test fixture used to create a test user is vital for ensuring consistent test results. Ensure that the test user creation code is correctly configured.
 
 Below is an example of a test fixture for creating a test user:
 
@@ -176,6 +174,4 @@ c:\users\sanje\documents\courses\fastapi\venv\lib\site-packages\aiofiles\os.py:1
 
 The final login user test confirms that the token correctly decodes to the expected user details and that the token type is set to "bearer". This robust validation ensures that both the login process and token authentication work seamlessly in your FastAPI application.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/4cd307f8-727f-4ae4-89d2-bf1162adc589" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/4cd307f8-727f-4ae4-89d2-bf1162adc589)

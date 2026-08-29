@@ -68,23 +68,23 @@ Refreshing your application immediately after pushing the updated image may stil
 
 The diagram below shows the AWS ECS Task Details page, which provides essential information about running tasks, including network settings and container statuses:
 
-![The image shows an AWS ECS task details page, displaying information about a running task, including network settings and container status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869143/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-Demo-Deploying-task-revisions/aws-ecs-task-details-page.jpg)
+![The image shows an AWS ECS task details page, displaying information about a running task, including network settings and container status.](https://kodekloud.com/kk-media/image/upload/v1752869143/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-Demo-Deploying-task-revisions/aws-ecs-task-details-page.jpg)
 
 Additionally, observe the following diagram that illustrates a cluster with an active service:
 
-![The image shows an AWS ECS console displaying details of a cluster named "cluster1," with an active service called "project1-service" running on Fargate.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869144/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-Demo-Deploying-task-revisions/aws-ecs-cluster1-project1-service.jpg)
+![The image shows an AWS ECS console displaying details of a cluster named "cluster1," with an active service called "project1-service" running on Fargate.](https://kodekloud.com/kk-media/image/upload/v1752869144/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-Demo-Deploying-task-revisions/aws-ecs-cluster1-project1-service.jpg)
 
 After applying the force deployment, ECS pulls the updated image and redeploys the tasks. Review the ECS Service Configuration screen as shown in the following diagram:
 
-![The image shows an AWS ECS configuration screen for setting up a service with details like task definition, launch type, operating system, and cluster information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869145/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-Demo-Deploying-task-revisions/aws-ecs-service-configuration-screen.jpg)
+![The image shows an AWS ECS configuration screen for setting up a service with details like task definition, launch type, operating system, and cluster information.](https://kodekloud.com/kk-media/image/upload/v1752869145/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-Demo-Deploying-task-revisions/aws-ecs-service-configuration-screen.jpg)
 
 If you also modify the task definition file, a new revision of the task definition is created. For example, after updating "ecs-project1-taskdef", the ECS console may display multiple revisions:
 
-![The image shows a web interface displaying task definitions for "ecs-project1-taskdef" with two active revisions listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869146/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-Demo-Deploying-task-revisions/ecs-project1-taskdef-revisions-interface.jpg)
+![The image shows a web interface displaying task definitions for "ecs-project1-taskdef" with two active revisions listed.](https://kodekloud.com/kk-media/image/upload/v1752869146/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-Demo-Deploying-task-revisions/ecs-project1-taskdef-revisions-interface.jpg)
 
 Then, review the updated service configuration before finalizing the update:
 
-![The image shows an AWS ECS service configuration review screen, detailing settings like cluster, launch type, task definition, and network configuration. There is an option to update the service at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869148/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-Demo-Deploying-task-revisions/aws-ecs-service-configuration-review.jpg)
+![The image shows an AWS ECS service configuration review screen, detailing settings like cluster, launch type, task definition, and network configuration. There is an option to update the service at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752869148/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-Demo-Deploying-task-revisions/aws-ecs-service-configuration-review.jpg)
 
 After updating the service, ECS starts new tasks using the latest image while gradually shutting down the older tasks once the new ones pass all health checks. You can monitor this transition in the ECS Tasks view.
 
@@ -92,7 +92,7 @@ After updating the service, ECS starts new tasks using the latest image while gr
 
 After the deployment, refresh the ECS service page and inspect one of the running tasks. Keep in mind that the task's IP address changes with each new deployment. The diagram below illustrates the network details and container status of a running task:
 
-![The image shows an Amazon ECS console displaying details of a running task, including network information and container status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869150/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-Demo-Deploying-task-revisions/amazon-ecs-console-running-task-details.jpg)
+![The image shows an Amazon ECS console displaying details of a running task, including network information and container status.](https://kodekloud.com/kk-media/image/upload/v1752869150/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-Demo-Deploying-task-revisions/amazon-ecs-console-running-task-details.jpg)
 
 Once you confirm the update on port 3000, you'll notice the additional exclamation points in the H1 tag. However, be aware that changes in IP addresses could affect clients accessing the application directly.
 

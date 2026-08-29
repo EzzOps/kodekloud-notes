@@ -8,7 +8,7 @@ This article provides a high-level review of AWS networking components and demon
 
 The diagram below illustrates key AWS networking features and their interactions. It highlights that your AWS Virtual Private Cloud (VPC) is region-specific. Within the VPC, you deploy subnets that align with specific availability zones. For example, one subnet may be linked to Availability Zone 1 and another to Availability Zone 2, ensuring that resources such as servers are strategically placed across the infrastructure.
 
-![The image illustrates a Virtual Private Cloud (VPC) architecture with public and private subnets, internet and NAT gateways, route tables, and ACLs across two availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861969/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Networking-Overview/frame_50.jpg)
+![The image illustrates a Virtual Private Cloud (VPC) architecture with public and private subnets, internet and NAT gateways, route tables, and ACLs across two availability zones.](https://kodekloud.com/kk-media/image/upload/v1752861969/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Networking-Overview/frame_50.jpg)
 
 Each resource within a subnet is assigned a security group, which acts as a dedicated firewall controlling inbound and outbound traffic for that resource. This ensures that only authorized communication occurs.
 

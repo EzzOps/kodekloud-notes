@@ -6,9 +6,7 @@ This article explains Pod Security Admission and Pod Security Standards in Kuber
 
 In this lesson, we’ll dive into [Pod Security Admission (PSA)](https://kubernetes.io/docs/concepts/security/pod-security-admission/) and [Pod Security Standards (PSS)](https://kubernetes.io/docs/concepts/security/pod-security-standards/). Introduced via [KEP 2579](https://github.com/kubernetes/enhancements/tree/master/keps/sig-auth/2579-psp-migration), PSA replaces Pod Security Policies (PSP) with a safer, simpler, and extensible solution. For advanced checks, you can integrate external tools like [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/).
 
-<Frame>
-  ![The image lists the "Pod Security Requirements" for Kubernetes, including points like validation, safety in clusters, built-in controller, Windows support, API responsiveness, ease of use, and extensibility. It also references KEP 2579 for PSP replacement.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880794/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Pod-Security-Standards-Pod-Security-Admissions/pod-security-requirements-kubernetes.jpg)
-</Frame>
+![The image lists the "Pod Security Requirements" for Kubernetes, including points like validation, safety in clusters, built-in controller, Windows support, API responsiveness, ease of use, and extensibility. It also references KEP 2579 for PSP replacement.](https://kodekloud.com/kk-media/image/upload/v1752880794/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Pod-Security-Standards-Pod-Security-Admissions/pod-security-requirements-kubernetes.jpg)
 
 ## Pod Security Admission Overview
 
@@ -28,9 +26,7 @@ Configure PSA at the **namespace level** by adding labels:
 kubectl label namespace <NAMESPACE> pod-security.kubernetes.io/<mode>=<profile>
 ```
 
-<Callout icon="lightbulb">
-  PSA modes (`enforce`, `audit`, `warn`) and profiles (`privileged`, `baseline`, `restricted`) can be combined to meet your security requirements.
-</Callout>
+> **lightbulb** PSA modes (`enforce`, `audit`, `warn`) and profiles (`privileged`, `baseline`, `restricted`) can be combined to meet your security requirements.
 
 ## Pod Security Standards: Built-in Profiles
 
@@ -42,9 +38,7 @@ PSA offers three out-of-the-box profiles:
 | baseline   | Minimal restrictions; prevents privilege escalation | Most standard applications        |
 | restricted | Strict hardening; follows best practices            | High-security or compliance needs |
 
-<Frame>
-  ![The image is a slide titled "Configure PSA" showing tables that describe modes and profiles for security standards, including actions on violation and policy descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880795/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Pod-Security-Standards-Pod-Security-Admissions/configure-psa-security-standards.jpg)
-</Frame>
+![The image is a slide titled "Configure PSA" showing tables that describe modes and profiles for security standards, including actions on violation and policy descriptions.](https://kodekloud.com/kk-media/image/upload/v1752880795/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Pod-Security-Standards-Pod-Security-Admissions/configure-psa-security-standards.jpg)
 
 ## Pod Security Admission Modes
 
@@ -67,21 +61,15 @@ You can combine modes and profiles, for example:
 
 Designed for ease of adoption, the baseline profile prevents unauthorized privilege escalation while maintaining compatibility.
 
-<Frame>
-  ![The image shows a document titled "Baseline Profile" detailing Kubernetes security policies, including restricted fields and allowed values for various configurations. It includes sections on host processes, namespaces, privileged containers, capabilities, host path volumes, host ports, and AppArmor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880796/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Pod-Security-Standards-Pod-Security-Admissions/kubernetes-security-policies-baseline-profile.jpg)
-</Frame>
+![The image shows a document titled "Baseline Profile" detailing Kubernetes security policies, including restricted fields and allowed values for various configurations. It includes sections on host processes, namespaces, privileged containers, capabilities, host path volumes, host ports, and AppArmor.](https://kodekloud.com/kk-media/image/upload/v1752880796/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Pod-Security-Standards-Pod-Security-Admissions/kubernetes-security-policies-baseline-profile.jpg)
 
 ### Restricted Profile
 
 Enforces the latest pod-hardening best practices. Be aware that compatibility issues may arise.
 
-<Frame>
-  ![The image shows a slide titled "Restricted Profile" with text detailing Kubernetes security policies, including volume types, privilege escalation, and capabilities. It includes a link to Kubernetes documentation on pod security standards.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880797/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Pod-Security-Standards-Pod-Security-Admissions/restricted-profile-kubernetes-security.jpg)
-</Frame>
+![The image shows a slide titled "Restricted Profile" with text detailing Kubernetes security policies, including volume types, privilege escalation, and capabilities. It includes a link to Kubernetes documentation on pod security standards.](https://kodekloud.com/kk-media/image/upload/v1752880797/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Pod-Security-Standards-Pod-Security-Admissions/restricted-profile-kubernetes-security.jpg)
 
-<Callout icon="triangle-alert">
-  The restricted profile may require you to update container images or init scripts to comply with stricter defaults.
-</Callout>
+> **triangle-alert** The restricted profile may require you to update container images or init scripts to comply with stricter defaults.
 
 ### Privileged Profile
 
@@ -110,6 +98,4 @@ kubectl label namespace dev     pod-security.kubernetes.io/warn=restricted
 * [OPA Gatekeeper](https://open-policy-agent.github.io/gatekeeper/)
 * [KEP 2579: PSP Migration](https://github.com/kubernetes/enhancements/tree/master/keps/sig-auth/2579-psp-migration)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/2adaacf7-51b1-4675-ba47-5b5818cbd2e3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/2adaacf7-51b1-4675-ba47-5b5818cbd2e3)

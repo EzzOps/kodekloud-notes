@@ -20,9 +20,7 @@ Usage: vault auth [OPTIONS] COMMAND
 | tune    | Adjust configuration settings for a mount     |
 | help    | Show help for a specific `vault auth` command |
 
-<Callout icon="lightbulb">
-  Use `vault auth help <subcommand>` for in-depth usage details and examples.
-</Callout>
+> **lightbulb** Use `vault auth help <subcommand>` for in-depth usage details and examples.
 
 ## Enabling an Auth Method
 
@@ -59,9 +57,7 @@ $ vault auth disable apps
 Success! Disabled the auth method (if it existed) at: apps/
 ```
 
-<Callout icon="triangle-alert">
-  Specifying the wrong mount path will have no effect. Always verify the path with `vault auth list` before disabling.
-</Callout>
+> **triangle-alert** Specifying the wrong mount path will have no effect. Always verify the path with `vault auth list` before disabling.
 
 ## Listing Enabled Auth Methods
 
@@ -136,6 +132,4 @@ You now know how to enable, disable, list, tune, and configure Vault auth method
 * [Authentication Methods Overview](https://www.vaultproject.io/docs/auth)
 * [AppRole Auth Method](https://www.vaultproject.io/docs/auth/approle)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/9156dd83-34f1-43bb-bca8-b4d9a3becb62" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/9156dd83-34f1-43bb-bca8-b4d9a3becb62)

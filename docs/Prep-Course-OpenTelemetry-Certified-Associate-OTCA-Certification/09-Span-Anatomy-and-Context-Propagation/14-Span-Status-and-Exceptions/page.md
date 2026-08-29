@@ -56,9 +56,7 @@ Using environment variables enforces consistent resource attributes across deplo
   <img alt="The image is a summary of OpenTelemetry resource configuration, highlighting key points about defining telemetry data origins, SDK initialization, default attributes, and resource detectors." />
 </Frame>
 
-<Callout icon="lightbulb">
-  For consistent and searchable telemetry, set `service.name` and other domain-specific attributes using OpenTelemetry semantic conventions. Prefer environment variables for deployment-wide defaults and let resource detectors populate infrastructure-level attributes automatically.
-</Callout>
+> **lightbulb** For consistent and searchable telemetry, set `service.name` and other domain-specific attributes using OpenTelemetry semantic conventions. Prefer environment variables for deployment-wide defaults and let resource detectors populate infrastructure-level attributes automatically.
 
 Links and references
 
@@ -67,9 +65,7 @@ Links and references
 
 That's it for this section.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/ce08725b-eb7c-4f0a-b00b-38eb399793b7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/ce08725b-eb7c-4f0a-b00b-38eb399793b7)
 
 
 # Span Status and Exceptions
@@ -143,9 +139,7 @@ Tracing instrumentation commonly creates exception events on spans and sets the 
 }
 ```
 
-<Callout icon="lightbulb">
-  The attributes `exception.type`, `exception.message`, and `exception.stacktrace` follow the OpenTelemetry semantic conventions for exceptions. These attributes let observability tools display error details and group similar errors. See the OpenTelemetry spec for exceptions for more details: [https://opentelemetry.io/docs/reference/specification/semantic\_conventions/exceptions/](https://opentelemetry.io/docs/reference/specification/semantic_conventions/exceptions/)
-</Callout>
+> **lightbulb** The attributes `exception.type`, `exception.message`, and `exception.stacktrace` follow the OpenTelemetry semantic conventions for exceptions. These attributes let observability tools display error details and group similar errors. See the OpenTelemetry spec for exceptions for more details: [https://opentelemetry.io/docs/reference/specification/semantic\_conventions/exceptions/](https://opentelemetry.io/docs/reference/specification/semantic_conventions/exceptions/)
 
 When a span contains an exception event like the example above, the tracing SDK or instrumentation typically sets `status` to `ERROR` and includes a summary description. This makes it straightforward to filter traces for failures and inspect the associated exception attributes.
 
@@ -177,6 +171,4 @@ Further reading and references
 
 That covers span status and how exceptions affect it.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/7d493c36-e9fc-4df7-bdf4-e49bb5039860" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/7d493c36-e9fc-4df7-bdf4-e49bb5039860)

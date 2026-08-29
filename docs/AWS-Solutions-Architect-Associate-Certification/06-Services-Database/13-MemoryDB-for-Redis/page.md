@@ -19,7 +19,7 @@ A MemoryDB cluster consists of one or more nodes serving a single dataset. Withi
 * The **primary node** manages both read and write requests.
 * **Replica nodes** handle read requests, offloading the primary node to improve read scalability.
 
-![The image illustrates the components of Amazon MemoryDB for Redis, showing a cluster with a primary node and two replica nodes, along with read and write operations from a computer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865174/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MemoryDB-for-Redis/amazon-memorydb-redis-cluster-diagram.jpg)
+![The image illustrates the components of Amazon MemoryDB for Redis, showing a cluster with a primary node and two replica nodes, along with read and write operations from a computer.](https://kodekloud.com/kk-media/image/upload/v1752865174/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MemoryDB-for-Redis/amazon-memorydb-redis-cluster-diagram.jpg)
 
 In the event of a primary node failure, a replica can be promoted to become the new primary, ensuring high availability. Each node runs on an EC2 instance using the selected version of Redis and belongs to a shard within the cluster.
 
@@ -38,11 +38,11 @@ Every cluster features at least one shard, ensuring that workload distribution a
 * **Subnet Groups:** Ensure that only designated traffic has access to your cluster.
 * **Access Control Lists:** Define user permissions for executing Redis commands and accessing data.
 
-![The image is a diagram illustrating the components of Amazon MemoryDB for Redis, showing a cluster with primary and replica nodes, parameter groups, subnet groups, and access control lists.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865175/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MemoryDB-for-Redis/amazon-memorydb-redis-diagram.jpg)
+![The image is a diagram illustrating the components of Amazon MemoryDB for Redis, showing a cluster with primary and replica nodes, parameter groups, subnet groups, and access control lists.](https://kodekloud.com/kk-media/image/upload/v1752865175/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MemoryDB-for-Redis/amazon-memorydb-redis-diagram.jpg)
 
 MemoryDB stores your entire dataset in memory while employing a distributed multi-AZ transactional log for durability, consistency, and recoverability. By replicating data across multiple availability zones, MemoryDB supports swift recovery and restarts. Its in-memory architecture ensures ultra-fast performance and high throughput compared to traditional disk-based databases.
 
-![The image is a diagram illustrating the components of Amazon MemoryDB for Redis, showing a cluster with a primary node, replicas, and a multi-AZ transactional log, along with read and write operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865176/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MemoryDB-for-Redis/amazon-memorydb-redis-diagram-2.jpg)
+![The image is a diagram illustrating the components of Amazon MemoryDB for Redis, showing a cluster with a primary node, replicas, and a multi-AZ transactional log, along with read and write operations.](https://kodekloud.com/kk-media/image/upload/v1752865176/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MemoryDB-for-Redis/amazon-memorydb-redis-diagram-2.jpg)
 
 Scaling is versatile with MemoryDB:
 
@@ -62,10 +62,10 @@ MemoryDB for Redis caters to various workloads that demand high performance and 
 
 > **lightbulb** MemoryDB’s ability to serve both as a primary database and cache simplifies your architecture by reducing the overhead of managing separate systems for caching and primary data storage.
 
-![The image shows four use cases for technology applications: building web and mobile applications, quickly accessing customer data, online games, and streaming media and entertainment. Each use case is represented with an icon and a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865177/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MemoryDB-for-Redis/technology-use-cases-applications.jpg)
+![The image shows four use cases for technology applications: building web and mobile applications, quickly accessing customer data, online games, and streaming media and entertainment. Each use case is represented with an icon and a brief description.](https://kodekloud.com/kk-media/image/upload/v1752865177/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MemoryDB-for-Redis/technology-use-cases-applications.jpg)
 
 In summary, AWS MemoryDB for Redis is a managed service that combines high throughput, low latency, and simplified database management. It is an ideal solution for applications requiring fast, reliable, and scalable data operations—making it a strong choice for modern, high-demand workloads.
 
-![The image is a summary of MemoryDB, highlighting its features as an AWS managed service offering a Redis-compatible, in-memory database with high performance and low latency. It emphasizes microsecond read and millisecond write latencies for demanding applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865179/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MemoryDB-for-Redis/memorydb-aws-redis-summary.jpg)
+![The image is a summary of MemoryDB, highlighting its features as an AWS managed service offering a Redis-compatible, in-memory database with high performance and low latency. It emphasizes microsecond read and millisecond write latencies for demanding applications.](https://kodekloud.com/kk-media/image/upload/v1752865179/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MemoryDB-for-Redis/memorydb-aws-redis-summary.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/9fb73cb5-caf2-4dc2-ad5c-fe5fe69507e3/lesson/aac177b8-0b74-44e6-9191-591be98db35f)

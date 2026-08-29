@@ -6,9 +6,7 @@ Kubernetes Network Policies define rules for pod communication, enhancing securi
 
 Kubernetes pods communicate freely by default, which simplifies development but poses risks in production. Network Policies close this gap by defining fine-grained rules for pod-to-pod, namespace, and external traffic. Think of them as traffic signs in your cluster that explicitly allow or deny connections.
 
-<Frame>
-  ![The image illustrates a network policy concept, showing a connection from one pod to a network policy, which blocks access to another pod.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880284/notes-assets/images/Kubernetes-Networking-Deep-Dive-Network-Policies-Overview/network-policy-pod-connection-illustration.jpg)
-</Frame>
+![The image illustrates a network policy concept, showing a connection from one pod to a network policy, which blocks access to another pod.](https://kodekloud.com/kk-media/image/upload/v1752880284/notes-assets/images/Kubernetes-Networking-Deep-Dive-Network-Policies-Overview/network-policy-pod-connection-illustration.jpg)
 
 ## Key Entity Types
 
@@ -20,9 +18,7 @@ Network Policies match traffic based on three entities:
 | Namespaces  | namespaceSelector | Select namespaces by labels        |
 | IP Blocks   | ipBlock           | Specify CIDR ranges and exclusions |
 
-<Frame>
-  ![The image is a diagram titled "Network Policies" showing three entities: Other Pods (podSelector), Namespaces (namespaceSelector), and IP Blocks (ipBlock).](../../../../images/kodekloud.com/kk-media/image/upload/v1752880285/notes-assets/images/Kubernetes-Networking-Deep-Dive-Network-Policies-Overview/network-policies-pod-selector-diagram.jpg)
-</Frame>
+![The image is a diagram titled "Network Policies" showing three entities: Other Pods (podSelector), Namespaces (namespaceSelector), and IP Blocks (ipBlock).](https://kodekloud.com/kk-media/image/upload/v1752880285/notes-assets/images/Kubernetes-Networking-Deep-Dive-Network-Policies-Overview/network-policies-pod-selector-diagram.jpg)
 
 ## Defining a NetworkPolicy
 
@@ -55,9 +51,7 @@ spec:
             cidr: 10.0.0.0/24
 ```
 
-<Callout icon="lightbulb">
-  Network Policies only take effect when a CNI plugin that supports them is installed (e.g., [Calico](https://projectcalico.org), [Cilium](https://cilium.io)).
-</Callout>
+> **lightbulb** Network Policies only take effect when a CNI plugin that supports them is installed (e.g., [Calico](https://projectcalico.org), [Cilium](https://cilium.io)).
 
 ### Entity Selectors and IP Blocks
 

@@ -6,9 +6,7 @@ This article explains how to save HTTP requests in Postman collections for persi
 
 Before writing any further code, it's essential to save your HTTP requests. While Postman temporarily retains requests in memory, storing them in a collection ensures they persist between sessions—even after you close the application.
 
-<Callout icon="lightbulb">
-  Saving your requests in a collection not only prevents data loss but also makes it easier to organize and reuse endpoints for future tests.
-</Callout>
+> **lightbulb** Saving your requests in a collection not only prevents data loss but also makes it easier to organize and reuse endpoints for future tests.
 
 ## Step 1: Create a New Collection
 
@@ -67,12 +65,8 @@ After successfully saving, even if you close Postman, you can easily retrieve th
 }
 ```
 
-<Callout icon="lightbulb">
-  Postman is a powerful tool for API development. Saving your requests in a collection not only helps manage your endpoints effectively but also streamlines your overall API development workflow.
-</Callout>
+> **lightbulb** Postman is a powerful tool for API development. Saving your requests in a collection not only helps manage your endpoints effectively but also streamlines your overall API development workflow.
 
 As you progress through your API development journey, continue exploring Postman's robust features and techniques to enhance your productivity and maintain organized code samples.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/338e2b52-7ff3-479b-b605-9ba586168985" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/338e2b52-7ff3-479b-b605-9ba586168985)

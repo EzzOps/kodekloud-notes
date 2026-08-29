@@ -178,9 +178,7 @@ man virt-install
 
 Below is an excerpt from the manual detailing the creation of a VM from an existing disk image:
 
-<Frame>
-  ![The image shows a manual page for the "virt-install" command, which is used to provision new virtual machines. It includes sections like NAME, SYNOPSIS, and DESCRIPTION, explaining its functionality and options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881329/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-and-Boot-a-Virtual-Machine/virt-install-manual-page.jpg)
-</Frame>
+![The image shows a manual page for the "virt-install" command, which is used to provision new virtual machines. It includes sections like NAME, SYNOPSIS, and DESCRIPTION, explaining its functionality and options.](https://kodekloud.com/kk-media/image/upload/v1752881329/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-and-Boot-a-Virtual-Machine/virt-install-manual-page.jpg)
 
 Remember to include the `--import` option to bypass a new OS installation because the disk image already contains an operating system:
 
@@ -342,15 +340,13 @@ Sometimes the operating system inside a virtual disk image may be a newer or unl
 
 1. Use `--osinfo detect=on` to let virt-install automatically determine the OS type
 
-<Callout icon="lightbulb">
-  Use `--osinfo detect=on` to let virt-install automatically determine the OS type.
+> **lightbulb** Use `--osinfo detect=on` to let virt-install automatically determine the OS type.
 
   Example:
 
   ```bash theme={null}
   virt-install --osinfo detect=on --name ubuntu1 --memory 1024 --vcpus 1 --import --disk /var/lib/libvirt/images/ubuntu-24.04-minimal-cloudimg-amd64.img --graphics none --cloud-init root-password-generate=on
   ```
-</Callout>
 
 2. **Specify a Generic OS Variant:**\
    If you are sure the distribution is modern, you might use a generic identifier:
@@ -392,10 +388,6 @@ In this guide, we covered the following steps:
 
 With these steps, you now have a fully functional virtual machine running Ubuntu 24.04. In the next lesson, we’ll explore additional configuration and management options.
 
-<Frame>
-  ![The image shows a command-line interface with options and examples for creating a new virtual machine using specified install media. It includes parameters for configuring memory, vCPUs, CPU features, metadata, and XML options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881331/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-and-Boot-a-Virtual-Machine/create-virtual-machine-command-line.jpg)
-</Frame>
+![The image shows a command-line interface with options and examples for creating a new virtual machine using specified install media. It includes parameters for configuring memory, vCPUs, CPU features, metadata, and XML options.](https://kodekloud.com/kk-media/image/upload/v1752881331/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-and-Boot-a-Virtual-Machine/create-virtual-machine-command-line.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/557be0af-6086-45df-80f2-e7784e961004" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/557be0af-6086-45df-80f2-e7784e961004)

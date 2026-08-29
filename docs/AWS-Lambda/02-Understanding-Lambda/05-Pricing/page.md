@@ -22,7 +22,7 @@ Lambda charges are based on:
 1. **Number of requests**
 2. **Compute time measured in gigabyte-seconds (GB-s)**
 
-![The image outlines the components of Lambda cost, highlighting the number of requests and gigabit seconds (amount of time multiplied by the amount of resources).](../../../../images/kodekloud.com/kk-media/image/upload/v1752863187/notes-assets/images/AWS-Lambda-Pricing/lambda-cost-components-requests-gigabit.jpg)
+![The image outlines the components of Lambda cost, highlighting the number of requests and gigabit seconds (amount of time multiplied by the amount of resources).](https://kodekloud.com/kk-media/image/upload/v1752863187/notes-assets/images/AWS-Lambda-Pricing/lambda-cost-components-requests-gigabit.jpg)
 
 ### 1. Requests
 
@@ -43,13 +43,13 @@ GB-s = (Allocated memory in GB) × (Execution duration in seconds)
 
 > **triangle-alert** AWS rounds up to the nearest ms, so a 1.0001 ms function is billed as 2 ms.
 
-![The image is a diagram illustrating the flow of data from a source to AWS Lambda, where a Lambda function is executed, and then to another AWS service. It includes a timeline for initialization and shutdown, labeled "Gigabit Seconds."](../../../../images/kodekloud.com/kk-media/image/upload/v1752863188/notes-assets/images/AWS-Lambda-Pricing/data-flow-aws-lambda-diagram.jpg)
+![The image is a diagram illustrating the flow of data from a source to AWS Lambda, where a Lambda function is executed, and then to another AWS service. It includes a timeline for initialization and shutdown, labeled "Gigabit Seconds."](https://kodekloud.com/kk-media/image/upload/v1752863188/notes-assets/images/AWS-Lambda-Pricing/data-flow-aws-lambda-diagram.jpg)
 
 ## Memory and CPU Allocation
 
 When you configure a Lambda function, you select memory between 128 MB and 10 240 MB. CPU power scales linearly with memory—more RAM also means more CPU share, speeding up execution and reducing GB-s.
 
-![The image illustrates a concept related to "Gigabit Seconds" with a focus on CPU and memory allocation for a Lambda function, showing a range from 128 MB to 10,240 MB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863189/notes-assets/images/AWS-Lambda-Pricing/gigabit-seconds-cpu-memory-allocation.jpg)
+![The image illustrates a concept related to "Gigabit Seconds" with a focus on CPU and memory allocation for a Lambda function, showing a range from 128 MB to 10,240 MB.](https://kodekloud.com/kk-media/image/upload/v1752863189/notes-assets/images/AWS-Lambda-Pricing/gigabit-seconds-cpu-memory-allocation.jpg)
 
 ## CPU Architectures
 
@@ -73,7 +73,7 @@ Besides requests and GB-s, consider these extras:
 
 > **triangle-alert** Provisioned concurrency charges apply even during idle periods. Use only for latency-sensitive functions.
 
-![The image outlines pricing components for a service, highlighting memory range, ephemeral storage, provisioned concurrency, and cold start avoidance. It includes region-specific pricing and uses a lambda symbol.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863190/notes-assets/images/AWS-Lambda-Pricing/pricing-components-service-memory-storage-lambda.jpg)
+![The image outlines pricing components for a service, highlighting memory range, ephemeral storage, provisioned concurrency, and cold start avoidance. It includes region-specific pricing and uses a lambda symbol.](https://kodekloud.com/kk-media/image/upload/v1752863190/notes-assets/images/AWS-Lambda-Pricing/pricing-components-service-memory-storage-lambda.jpg)
 
 ## Summary
 

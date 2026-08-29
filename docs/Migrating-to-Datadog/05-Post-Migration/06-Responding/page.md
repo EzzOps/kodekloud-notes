@@ -12,9 +12,7 @@ We instrument applications and infrastructure with monitoring and an alert manag
   <img alt="The image illustrates a DevOps and SRE process for monitoring and incident response, highlighting steps: build & innovate, monitor continuously, integrate alerts, and respond to incidents. It includes a workflow diagram showing the interaction between an environment, platform monitoring, alert creation, and engineers." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Instrument services and infrastructure so alerts route to the right people or teams. Proper signal-to-noise tuning prevents alert fatigue and ensures critical incidents are escalated immediately.
-</Callout>
+> **lightbulb** Instrument services and infrastructure so alerts route to the right people or teams. Proper signal-to-noise tuning prevents alert fatigue and ensures critical incidents are escalated immediately.
 
 When the monitoring stack is configured correctly, engineers don’t need to stare at dashboards waiting for issues. Instead, alerts notify the relevant on-call responders when signals cross thresholds, which typically triggers incident creation and mobilizes responders.
 
@@ -57,9 +55,7 @@ Incident analysis is iterative: you’ll move between telemetry sources, follow 
   <img alt="The image is a flowchart showing steps after incident detection, involving incident-related data, log querying, and external events, with various metrics involved. It notes that tracking external events can be difficult and highlights the iterative nature of the debugging process." />
 </Frame>
 
-<Callout icon="warning">
-  Avoid jumping to remediation without confirming cause. Rapid changes (e.g., restarts, rollbacks) can complicate forensics. Document each action and its rationale during an incident.
-</Callout>
+> **warning** Avoid jumping to remediation without confirming cause. Rapid changes (e.g., restarts, rollbacks) can complicate forensics. Document each action and its rationale during an incident.
 
 With a modern observability platform like Datadog, investigation becomes more efficient: Datadog correlates metrics, logs, and traces; links related components; and aids root cause analysis. This correlation is especially valuable as systems scale and more services or resources are added without centralized visibility.
 
@@ -87,6 +83,4 @@ References and further reading
 * [Slack](https://slack.com/)
 * [Microsoft Teams](https://www.microsoft.com/en/microsoft-teams)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9add8e22-a057-4808-880b-be8b91e0d5f2/lesson/cc1250b3-eaaa-44ec-a106-e861a995f34c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9add8e22-a057-4808-880b-be8b91e0d5f2/lesson/cc1250b3-eaaa-44ec-a106-e861a995f34c)

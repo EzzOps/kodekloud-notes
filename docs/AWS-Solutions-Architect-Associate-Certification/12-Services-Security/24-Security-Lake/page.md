@@ -12,7 +12,7 @@ AWS Security Lake resolves this challenge by consolidating logs and events from 
 
 > **lightbulb** AWS Security Lake stores logs in an Amazon S3 bucket, leveraging S3's robust lifecycle policies, built-in encryption, and cost-effective storage solutions. After storage, logs are normalized—optimizing them for efficient querying with tools such as Amazon Athena using standard SQL.
 
-![The image illustrates a "Security Lake Flow" process, showing steps from collecting logs, storing them in S3 buckets, normalizing AWS logs into OCSF, and providing data and query access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865919/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Security-Lake/security-lake-flow-process-diagram.jpg)
+![The image illustrates a "Security Lake Flow" process, showing steps from collecting logs, storing them in S3 buckets, normalizing AWS logs into OCSF, and providing data and query access.](https://kodekloud.com/kk-media/image/upload/v1752865919/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Security-Lake/security-lake-flow-process-diagram.jpg)
 
 ## How AWS Security Lake Works
 
@@ -32,7 +32,7 @@ AWS Security Lake offers numerous features designed to simplify multi-environmen
 * **Multi-Account and Multi-Region Support:** Seamlessly operate across multiple AWS accounts and regions.
 * **Data Lifecycle Management:** Manage retention policies and storage costs using automated tiering within S3.
 
-![The image lists five features related to data management: Data Aggregation, Variety of Supported Log and Event Sources, Data Transformation and Normalization, Multi-Account and Multi-Region Data Management, and Data Lifecycle Management and Optimization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865921/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Security-Lake/data-management-features-list.jpg)
+![The image lists five features related to data management: Data Aggregation, Variety of Supported Log and Event Sources, Data Transformation and Normalization, Multi-Account and Multi-Region Data Management, and Data Lifecycle Management and Optimization.](https://kodekloud.com/kk-media/image/upload/v1752865921/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Security-Lake/data-management-features-list.jpg)
 
 ## Benefits of Centralized Log Management
 

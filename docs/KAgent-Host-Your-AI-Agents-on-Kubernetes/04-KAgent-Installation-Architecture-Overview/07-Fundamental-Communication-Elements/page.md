@@ -235,9 +235,7 @@ service/observability-agent               8080/TCP
 service/promql-agent                      8080/TCP
 ```
 
-<Callout icon="warning">
-  When removing kagent, uninstall the application release first and remove CRDs separately. Deleting CRDs before removing dependent resources can leave orphaned resources or break uninstall workflows.
-</Callout>
+> **warning** When removing kagent, uninstall the application release first and remove CRDs separately. Deleting CRDs before removing dependent resources can leave orphaned resources or break uninstall workflows.
 
 ### Uninstalling Helm release and CRDs
 
@@ -295,11 +293,9 @@ Choose CLI for quick experimentation and Helm for production/cluster-managed dep
 * [Helm Documentation](https://helm.sh/docs/)
 * kagent project: [https://github.com/kagent-dev/kagent](https://github.com/kagent-dev/kagent)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/a40af8f9-4f17-4356-84f4-fa13a1b94071" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/a40af8f9-4f17-4356-84f4-fa13a1b94071)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/f9250211-acaa-4e98-8a39-e674eeb3783c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/f9250211-acaa-4e98-8a39-e674eeb3783c)
 
 
 # Fundamental Communication Elements
@@ -353,9 +349,7 @@ Example Agent Card (Kubernetes-focused agent):
 }
 ```
 
-<Callout icon="lightbulb">
-  Agent discovery returns the Agent Card so other agents know how to connect, which capabilities are available, and what authentication is required. Exposing accurate capabilities and skill metadata improves automated routing and orchestration in multi-agent systems.
-</Callout>
+> **lightbulb** Agent discovery returns the Agent Card so other agents know how to connect, which capabilities are available, and what authentication is required. Exposing accurate capabilities and skill metadata improves automated routing and orchestration in multi-agent systems.
 
 Messages and Parts
 Messages are the basic units that agents exchange. Each message typically includes metadata (sender, unique ID) and a list of parts. A part contains the actual content and can be one of:

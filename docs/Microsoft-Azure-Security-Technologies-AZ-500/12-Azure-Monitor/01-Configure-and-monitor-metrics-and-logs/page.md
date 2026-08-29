@@ -12,9 +12,7 @@ In this guide, you will learn how to configure and monitor metrics and logs in A
 
 Azure metrics represent time-series data that capture the state of your resources at any given moment. They provide near real-time visualizations to help you monitor critical performance indicators such as CPU usage, memory consumption, and network traffic. Once a resource is deployed, its metrics are immediately available through the resource's overview blade or the Metrics Explorer.
 
-<Frame>
-  ![The image is a diagram illustrating the configuration and monitoring of metrics and logs, featuring graphs of CPU and network usage, and highlighting features like zero configuration, time series, and real-time data. It also mentions logs being organized as records, requiring additional configuration, and having a rich query language.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881686/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-monitor-metrics-and-logs/metrics-logs-configuration-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating the configuration and monitoring of metrics and logs, featuring graphs of CPU and network usage, and highlighting features like zero configuration, time series, and real-time data. It also mentions logs being organized as records, requiring additional configuration, and having a rich query language.](https://kodekloud.com/kk-media/image/upload/v1752881686/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-monitor-metrics-and-logs/metrics-logs-configuration-diagram.jpg)
 
 ***
 
@@ -28,9 +26,7 @@ Azure’s robust [Kusto Query Language (KQL)](https://docs.microsoft.com/en-us/a
 AzureDiagnostics | where Category == 'SQLSecurityAuditEvents'
 ```
 
-<Callout icon="lightbulb">
-  Azure logs provide deep insights into your resource events, allowing you to perform detailed analysis and troubleshooting.
-</Callout>
+> **lightbulb** Azure logs provide deep insights into your resource events, allowing you to perform detailed analysis and troubleshooting.
 
 ***
 
@@ -42,13 +38,9 @@ The Azure Activity Log is a subscription-level tool that records critical events
 * **Audit Trail:** Provides information about who initiated the operation, when it occurred, and its outcomes.
 * **Retention Policy:** Activity Logs are enabled by default with a 90-day retention period. After 90 days, logs are purged unless exported or forwarded to a storage account or Log Analytics workspace.
 
-<Frame>
-  ![The image is a diagram of the Azure Activity Log, detailing subscription-level logging, auditing, retention, and querying data, along with application and resource logs. It categorizes logs into application and resource types, highlighting diagnostic and activity logs for Azure infrastructure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881687/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-monitor-metrics-and-logs/azure-activity-log-diagram.jpg)
-</Frame>
+![The image is a diagram of the Azure Activity Log, detailing subscription-level logging, auditing, retention, and querying data, along with application and resource logs. It categorizes logs into application and resource types, highlighting diagnostic and activity logs for Azure infrastructure.](https://kodekloud.com/kk-media/image/upload/v1752881687/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-monitor-metrics-and-logs/azure-activity-log-diagram.jpg)
 
-<Callout icon="triangle-alert">
-  The Activity Log only captures Azure infrastructure-level events. It does not record events that occur within the guest operating system.
-</Callout>
+> **triangle-alert** The Activity Log only captures Azure infrastructure-level events. It does not record events that occur within the guest operating system.
 
 ***
 
@@ -60,15 +52,11 @@ When managing your virtual machine or other resources in the Azure portal, you c
 
 By navigating to the “Monitoring” section of a resource, you can view platform metrics such as CPU usage, memory consumption, and network throughput. Clicking on **See all metrics** opens the Metrics Explorer.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying performance metrics for a virtual machine named "win-sql-access," including VM availability and CPU usage graphs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881688/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-monitor-metrics-and-logs/azure-portal-vm-performance-metrics.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying performance metrics for a virtual machine named "win-sql-access," including VM availability and CPU usage graphs.](https://kodekloud.com/kk-media/image/upload/v1752881688/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-monitor-metrics-and-logs/azure-portal-vm-performance-metrics.jpg)
 
 For instance, to compare CPU usage with memory consumption over time, you can plot these metrics simultaneously.
 
-<Frame>
-  ![The image shows a Microsoft Azure metrics dashboard for a virtual machine named "win-sql-access," displaying a line chart of average CPU percentage and available memory over time. The chart indicates a drop in CPU usage at one point, with current averages shown at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881689/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-monitor-metrics-and-logs/azure-metrics-dashboard-win-sql-access.jpg)
-</Frame>
+![The image shows a Microsoft Azure metrics dashboard for a virtual machine named "win-sql-access," displaying a line chart of average CPU percentage and available memory over time. The chart indicates a drop in CPU usage at one point, with current averages shown at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752881689/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-monitor-metrics-and-logs/azure-metrics-dashboard-win-sql-access.jpg)
 
 ### Accessing the Activity Log
 
@@ -85,21 +73,15 @@ To view the Activity Log, select the corresponding blade within the Azure portal
 | **Auto Scale**      | Activities related to automatic scaling.                                   |
 | **Resource Health** | The health status of specific resources.                                   |
 
-<Frame>
-  ![The image shows the Microsoft Azure portal displaying the "Activity log" for a subscription, with filters for operations and a list of recent activities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881690/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-monitor-metrics-and-logs/azure-portal-activity-log-filters.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal displaying the "Activity log" for a subscription, with filters for operations and a list of recent activities.](https://kodekloud.com/kk-media/image/upload/v1752881690/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-monitor-metrics-and-logs/azure-portal-activity-log-filters.jpg)
 
 Filtering these events assists in pinpointing actions, such as a particular administrative task initiated by a specific user.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal displaying the activity log for a subscription named "Kodekloud AZ-500 PoC3." It includes filters and a list of recent activities with details like status, time, and event initiator.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881691/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-monitor-metrics-and-logs/azure-portal-activity-log-kodekloud.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal displaying the activity log for a subscription named "Kodekloud AZ-500 PoC3." It includes filters and a list of recent activities with details like status, time, and event initiator.](https://kodekloud.com/kk-media/image/upload/v1752881691/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-monitor-metrics-and-logs/azure-portal-activity-log-kodekloud.jpg)
 
 If the default 90-day retention does not suit your needs, consider exporting the Activity Log as a CSV file or forwarding the logs to a storage account or Log Analytics workspace for extended retention and advanced querying.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for configuring diagnostic settings, where various log categories and destination details are selected for a subscription.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881692/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-monitor-metrics-and-logs/azure-portal-diagnostic-settings.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for configuring diagnostic settings, where various log categories and destination details are selected for a subscription.](https://kodekloud.com/kk-media/image/upload/v1752881692/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-and-monitor-metrics-and-logs/azure-portal-diagnostic-settings.jpg)
 
 ***
 
@@ -109,6 +91,4 @@ This guide detailed how Azure metrics provide an immediate, out-of-the-box view 
 
 Next, we will explore logging in greater detail using Log Analytics for advanced querying and analytics.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7b98ab58-5aa5-4f2b-9cfa-fdfef40ddc37/lesson/dd19446b-8a9b-4915-bc25-dfee50e6f287" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7b98ab58-5aa5-4f2b-9cfa-fdfef40ddc37/lesson/dd19446b-8a9b-4915-bc25-dfee50e6f287)

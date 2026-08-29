@@ -19,9 +19,7 @@ while guess != secret_number:
 
 In this example, the secret number is set to 3. The program prompts the user to enter a guess. As long as the guessed number is not equal to the secret number, the loop continues prompting the user for a new guess. Once the correct number is entered, the loop terminates.
 
-<Callout icon="lightbulb">
-  Using a while loop allows your program to handle an unknown number of iterations, making it ideal for input validation and games such as this guessing game.
-</Callout>
+> **lightbulb** Using a while loop allows your program to handle an unknown number of iterations, making it ideal for input validation and games such as this guessing game.
 
 ## While Loop with Else Clause
 
@@ -38,9 +36,7 @@ else:
 
 When the user eventually guesses the correct number (in this case, 3), the while loop exits and the else block displays a congratulatory message.
 
-<Callout icon="lightbulb">
-  The else block in a while loop is executed only when the loop terminates normally and is not triggered by a break statement.
-</Callout>
+> **lightbulb** The else block in a while loop is executed only when the loop terminates normally and is not triggered by a break statement.
 
 ## Get Hands-On Practice
 
@@ -48,6 +44,4 @@ Now that you've seen how a while loop operates both with and without an else cla
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/87023015-df32-4bcb-a972-659f3e76b1d1/lesson/bdab383b-7695-481f-9238-ead4b0b035d0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/87023015-df32-4bcb-a972-659f3e76b1d1/lesson/bdab383b-7695-481f-9238-ead4b0b035d0)

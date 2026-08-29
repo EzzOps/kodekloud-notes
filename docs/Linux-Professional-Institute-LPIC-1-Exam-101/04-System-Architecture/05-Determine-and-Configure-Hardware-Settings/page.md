@@ -17,9 +17,7 @@ Computers use firmware interfaces to initialize hardware and start the boot proc
 | Firmware updates          | Manufacturer-specific flasher tools | Built-in update utilities                           |
 | Hardware testing & config | Basic POST (Power-On Self-Test)     | Extended diagnostics, secure boot, variable storage |
 
-<Frame>
-  ![The image is a diagram explaining the acronyms BIOS, UEFI, and POST, with their full forms: Basic Input/Output System, Unified Extensible Firmware Interface, and Power-On Self-Test.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881459/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Determine-and-Configure-Hardware-Settings/bios-uefi-post-acronyms-diagram.jpg)
-</Frame>
+![The image is a diagram explaining the acronyms BIOS, UEFI, and POST, with their full forms: Basic Input/Output System, Unified Extensible Firmware Interface, and Power-On Self-Test.](https://kodekloud.com/kk-media/image/upload/v1752881459/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Determine-and-Configure-Hardware-Settings/bios-uefi-post-acronyms-diagram.jpg)
 
 During POST, your firmware checks CPU, memory, and motherboard health. To enter the setup utility, press the key shown on-screen (often **F2**, **Delete**, or **F12**). Inside you can:
 
@@ -31,9 +29,7 @@ During POST, your firmware checks CPU, memory, and motherboard health. To enter 
 * Enable performance features (XMP, virtualization)
 * Disable unused hardware for security or power saving
 
-<Callout icon="triangle-alert">
-  Changing firmware settings can affect system stability. Always document original values before modifying.
-</Callout>
+> **triangle-alert** Changing firmware settings can affect system stability. Always document original values before modifying.
 
 ## 2. Detecting Hardware in Linux
 

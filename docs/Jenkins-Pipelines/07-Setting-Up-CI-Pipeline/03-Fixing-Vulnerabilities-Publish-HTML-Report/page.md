@@ -107,9 +107,7 @@ After committing the fixes, a new build is triggered in Jenkins. Next, configure
 
 In your project workspace, locate the HTML report file (e.g., `dependency-check-jenkins.html`). For example, the following screenshot shows where the file is located:
 
-<Frame>
-  ![The image shows a Jenkins workspace interface displaying a list of files and directories with their sizes and timestamps. The interface includes options like "Console Output" and "Open Blue Ocean" on the left sidebar.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879780/notes-assets/images/Jenkins-Pipelines-Fixing-Vulnerabilities-Publish-HTML-Report/jenkins-workspace-interface-files-list.jpg)
-</Frame>
+![The image shows a Jenkins workspace interface displaying a list of files and directories with their sizes and timestamps. The interface includes options like "Console Output" and "Open Blue Ocean" on the left sidebar.](https://kodekloud.com/kk-media/image/upload/v1752879780/notes-assets/images/Jenkins-Pipelines-Fixing-Vulnerabilities-Publish-HTML-Report/jenkins-workspace-interface-files-list.jpg)
 
 Using the Pipeline Syntax Generator, create a publish HTML step. The configuration parameters include:
 
@@ -134,9 +132,7 @@ publishHTML(
 
 The screenshot below illustrates the HTML report configuration:
 
-<Frame>
-  ![The image shows a Jenkins Pipeline Syntax configuration screen, specifically for generating a script to publish HTML reports. It includes fields for specifying the HTML directory, index page, and report title.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879782/notes-assets/images/Jenkins-Pipelines-Fixing-Vulnerabilities-Publish-HTML-Report/jenkins-pipeline-html-report-config.jpg)
-</Frame>
+![The image shows a Jenkins Pipeline Syntax configuration screen, specifically for generating a script to publish HTML reports. It includes fields for specifying the HTML directory, index page, and report title.](https://kodekloud.com/kk-media/image/upload/v1752879782/notes-assets/images/Jenkins-Pipelines-Fixing-Vulnerabilities-Publish-HTML-Report/jenkins-pipeline-html-report-config.jpg)
 
 ### Publishing JUnit Test Reports
 
@@ -148,9 +144,7 @@ junit allowEmptyResults: true, keepProperties: true, testResults: 'dependency-ch
 
 An example configuration page for test result settings is shown below:
 
-<Frame>
-  ![The image shows a Jenkins Pipeline Syntax configuration page with options for test report XMLs, test output retention, and health report settings. Various checkboxes and input fields are visible for customizing the pipeline behavior.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879783/notes-assets/images/Jenkins-Pipelines-Fixing-Vulnerabilities-Publish-HTML-Report/jenkins-pipeline-syntax-configuration.jpg)
-</Frame>
+![The image shows a Jenkins Pipeline Syntax configuration page with options for test report XMLs, test output retention, and health report settings. Various checkboxes and input fields are visible for customizing the pipeline behavior.](https://kodekloud.com/kk-media/image/upload/v1752879783/notes-assets/images/Jenkins-Pipelines-Fixing-Vulnerabilities-Publish-HTML-Report/jenkins-pipeline-syntax-configuration.jpg)
 
 ### Combined Pipeline Snippet
 
@@ -205,17 +199,13 @@ When the build finishes, Jenkins archives the HTML report. You can verify the ar
 
 The artifact view will include the HTML dependency check report:
 
-<Frame>
-  ![The image shows a Jenkins interface displaying artifacts for a project named "solar-system" under the "Gitea-Organization." It lists a pipeline log and a dependency check HTML report.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879784/notes-assets/images/Jenkins-Pipelines-Fixing-Vulnerabilities-Publish-HTML-Report/jenkins-solar-system-artifacts.jpg)
-</Frame>
+![The image shows a Jenkins interface displaying artifacts for a project named "solar-system" under the "Gitea-Organization." It lists a pipeline log and a dependency check HTML report.](https://kodekloud.com/kk-media/image/upload/v1752879784/notes-assets/images/Jenkins-Pipelines-Fixing-Vulnerabilities-Publish-HTML-Report/jenkins-solar-system-artifacts.jpg)
 
 ***
 
 ## Additional Configuration: Content Security Policy
 
-<Callout icon="lightbulb">
-  By default, the published HTML report may lack CSS styling due to strict Content Security Policies (CSP) in Jenkins. To ensure the report is correctly styled, update the system property accordingly.
-</Callout>
+> **lightbulb** By default, the published HTML report may lack CSS styling due to strict Content Security Policies (CSP) in Jenkins. To ensure the report is correctly styled, update the system property accordingly.
 
 To view the report with full styling, you can relax the CSP by updating the system property, for example:
 
@@ -256,9 +246,7 @@ Passed - 2974
 
 The screenshot below shows a Jenkins test results page listing several failures with details related to npm packages and CVE identifiers:
 
-<Frame>
-  ![The image shows a Jenkins test results page indicating that 18 tests have failed, with a list of existing failures related to various npm packages and CVE identifiers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879785/notes-assets/images/Jenkins-Pipelines-Fixing-Vulnerabilities-Publish-HTML-Report/jenkins-test-results-failed-npm-cves.jpg)
-</Frame>
+![The image shows a Jenkins test results page indicating that 18 tests have failed, with a list of existing failures related to various npm packages and CVE identifiers.](https://kodekloud.com/kk-media/image/upload/v1752879785/notes-assets/images/Jenkins-Pipelines-Fixing-Vulnerabilities-Publish-HTML-Report/jenkins-test-results-failed-npm-cves.jpg)
 
 Clicking on an individual test entry provides more detailed information, including CVSS scores, patch recommendations, and links to commit patches (e.g., for Express.js redirection issues).
 
@@ -275,6 +263,4 @@ This guide demonstrated how to:
 
 Following this workflow ensures that vulnerabilities are addressed promptly and that comprehensive reporting is available directly within the Jenkins UI, enhancing the overall security posture and efficiency of your development pipeline.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/7e239b62-2dfd-4594-85cf-e51c0707121c/lesson/8ad9f70b-8f1b-49da-996c-171c51006ed2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/7e239b62-2dfd-4594-85cf-e51c0707121c/lesson/8ad9f70b-8f1b-49da-996c-171c51006ed2)

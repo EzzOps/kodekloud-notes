@@ -115,13 +115,9 @@ There are 31 days left before the first match of the ICC Men's T20 World Cup 202
 
 Because the agent used Python for the arithmetic, the numeric result is exact and reliable; the agent can then present that result in natural language.
 
-<Callout icon="lightbulb">
-  Using a Python REPL tool allows the agent to run exact computations (like date arithmetic, numeric calculations, or custom logic) instead of relying on the LLM to calculate, which improves accuracy.
-</Callout>
+> **lightbulb** Using a Python REPL tool allows the agent to run exact computations (like date arithmetic, numeric calculations, or custom logic) instead of relying on the LLM to calculate, which improves accuracy.
 
-<Callout icon="warning">
-  Python REPL can execute arbitrary code. Only enable it in trusted environments and ensure you have safeguards for untrusted inputs.
-</Callout>
+> **warning** Python REPL can execute arbitrary code. Only enable it in trusted environments and ensure you have safeguards for untrusted inputs.
 
 Concise recap — final setup
 
@@ -180,11 +176,9 @@ Final notes and references
 
 With this configuration the agent combines web/factual search (Tavily) and exact computation (Python REPL) to answer complex, multi-step questions reliably.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/530ad7de-8948-4806-8824-19eb10923d1d/lesson/36589ae2-a513-4802-a9c4-7890498a4018" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/530ad7de-8948-4806-8824-19eb10923d1d/lesson/36589ae2-a513-4802-a9c4-7890498a4018)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/530ad7de-8948-4806-8824-19eb10923d1d/lesson/81d50dee-7ffb-4092-95c2-3f8b8b07686b" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langchain/module/530ad7de-8948-4806-8824-19eb10923d1d/lesson/81d50dee-7ffb-4092-95c2-3f8b8b07686b)
 
 
 # Building a Real time Flight Agent
@@ -217,13 +211,11 @@ Once you create an API key, you can monitor usage and quotas from the AeroAPI da
   <img alt="The image shows a FlightAware AeroAPI usage dashboard, displaying a line graph of flight call API usage over time, with a summary of total calls and cost below." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Set your FlightAware API key in the environment before running the code. For example, on macOS/Linux:
+> **lightbulb** Set your FlightAware API key in the environment before running the code. For example, on macOS/Linux:
 
   ```bash theme={null}
   export AEROAPI_KEY="your_api_key_here"
   ```
-</Callout>
 
 Overview of the solution
 

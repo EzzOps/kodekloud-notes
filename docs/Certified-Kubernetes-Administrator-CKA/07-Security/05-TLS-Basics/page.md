@@ -8,7 +8,7 @@ Welcome to this comprehensive lesson on SSL/TLS certificates. In this guide, we 
 
 Imagine a scenario where a user accesses their online banking application over an unsecured connection. The credentials entered would be transmitted in plain text, making it easy for a hacker spying on the network to intercept and misuse the sensitive data.
 
-![The image illustrates a phishing scenario where a user's login credentials are intercepted by a hacker during an online banking session.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869967/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-Basics/frame_60.jpg)
+![The image illustrates a phishing scenario where a user's login credentials are intercepted by a hacker during an online banking session.](https://kodekloud.com/kk-media/image/upload/v1752869967/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-Basics/frame_60.jpg)
 
 To prevent such risks, data is encrypted using encryption keys—a set of random numbers and characters. Initially, symmetric encryption was used, where the same key is responsible for both encrypting and decrypting data. However, transmitting this key over the network to initiate a secure session introduces vulnerabilities, as an attacker intercepting the key could decrypt the data.
 
@@ -16,7 +16,7 @@ This is where asymmetric encryption becomes valuable. Asymmetric encryption uses
 
 Before delving into the web server example, let’s explore a simpler use case: securing SSH access using key pairs.
 
-![The image illustrates asymmetric encryption, showing a private key, public lock, and a user-password example.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869968/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-Basics/frame_200.jpg)
+![The image illustrates asymmetric encryption, showing a private key, public lock, and a user-password example.](https://kodekloud.com/kk-media/image/upload/v1752869968/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-TLS-Basics/frame_200.jpg)
 
 Imagine you need to access a server but want to avoid the security risks associated with passwords. By using key pairs, you can generate a private key (id\_rsa) and a public key (id\_rsa.pub). The private key stays secure on your device, while the public key is added to the server's SSH authorized keys file. When you initiate an SSH connection, you specify your private key to authenticate.
 

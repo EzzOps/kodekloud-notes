@@ -101,9 +101,7 @@ Related resources:
 * Istio installation docs: [https://istio.io/latest/docs/setup/install/](https://istio.io/latest/docs/setup/install/)
 * Minikube documentation: [https://minikube.sigs.k8s.io/docs/](https://minikube.sigs.k8s.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/12a627c5-7aec-43ae-a211-1980cf9a9255" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/12a627c5-7aec-43ae-a211-1980cf9a9255)
 
 
 # Istio
@@ -116,9 +114,7 @@ In this lesson, we explore Istio—its architecture, operation, and key componen
 
 Istio is an open-source service mesh that simplifies securing, connecting, and monitoring services within both Kubernetes and traditional workloads. It provides universal traffic management, telemetry, and security for complex deployments, and is widely supported by major cloud providers and consulting firms.
 
-<Callout icon="lightbulb">
-  Istio leverages an open-source, high-performance proxy called Envoy. These Envoy proxies offload critical tasks from microservices, ensuring efficient communication between services as part of the data plane.
-</Callout>
+> **lightbulb** Istio leverages an open-source, high-performance proxy called Envoy. These Envoy proxies offload critical tasks from microservices, ensuring efficient communication between services as part of the data plane.
 
 ## Istio Architecture
 
@@ -138,18 +134,12 @@ The control plane manages and configures the proxies to route traffic, enforce p
 
 Later, these components were consolidated into a single daemon called Istiod, streamlining the architecture and simplifying management.
 
-<Frame>
-  ![The image is a diagram of a microservices architecture using Istio, showing a control plane with Istiod, Citadel, Pilot, and Galley, and a data plane with services like Product Page, Details, Reviews, and Ratings, each with an Envoy proxy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879340/notes-assets/images/Istio-Service-Mesh-Istio/microservices-istio-architecture-diagram.jpg)
-</Frame>
+![The image is a diagram of a microservices architecture using Istio, showing a control plane with Istiod, Citadel, Pilot, and Galley, and a data plane with services like Product Page, Details, Reviews, and Ratings, each with an Envoy proxy.](https://kodekloud.com/kk-media/image/upload/v1752879340/notes-assets/images/Istio-Service-Mesh-Istio/microservices-istio-architecture-diagram.jpg)
 
 Within each pod, an Istio agent works in tandem with the Envoy proxy. The agent is responsible for delivering configuration secrets and other necessary data to ensure that the proxy operates correctly.
 
-<Callout icon="lightbulb">
-  This overview of Istio's architecture provides the groundwork for understanding its installation process and advanced features, which will be covered in subsequent sections.
-</Callout>
+> **lightbulb** This overview of Istio's architecture provides the groundwork for understanding its installation process and advanced features, which will be covered in subsequent sections.
 
 In the next sections, we will delve into the installation process for Istio and explore its comprehensive features and functionalities in detail.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/59b3de7e-9646-414d-a5b8-0f3a262f4a74" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/59b3de7e-9646-414d-a5b8-0f3a262f4a74)

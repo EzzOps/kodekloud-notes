@@ -14,31 +14,23 @@ Our setup plan includes:
 2. Creating a CentOS template virtual machine.
 3. Deploying an Ansible control machine and two target machines using the CentOS template.
 
-<Frame>
-  ![The image depicts a lab environment with an Ansible control machine, two Ansible target machines, and a template, all within a virtual setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881089/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_60.jpg)
-</Frame>
+![The image depicts a lab environment with an Ansible control machine, two Ansible target machines, and a template, all within a virtual setup.](https://kodekloud.com/kk-media/image/upload/v1752881089/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_60.jpg)
 
 ## Installing Oracle VirtualBox
 
 Although these instructions are written from a Windows perspective, they apply equally to Linux or macOS. Begin by visiting the [VirtualBox website](https://www.virtualbox.org/) and download the appropriate software for your operating system.
 
-<Frame>
-  ![The image shows the VirtualBox website homepage, featuring a download button for version 5.2, navigation links, and a news flash section with release updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881091/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_90.jpg)
-</Frame>
+![The image shows the VirtualBox website homepage, featuring a download button for version 5.2, navigation links, and a news flash section with release updates.](https://kodekloud.com/kk-media/image/upload/v1752881091/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_90.jpg)
 
 On the download page, you will find links for various operating systems.
 
-<Frame>
-  ![The image shows a webpage for downloading VirtualBox, listing platform packages for Windows, OS X, Linux, and Solaris, along with checksums and extension pack information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881092/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_100.jpg)
-</Frame>
+![The image shows a webpage for downloading VirtualBox, listing platform packages for Windows, OS X, Linux, and Solaris, along with checksums and extension pack information.](https://kodekloud.com/kk-media/image/upload/v1752881092/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_100.jpg)
 
 For this guide, I downloaded the Windows version. Simply run the executable and follow the installation wizard. If VirtualBox is already installed on your system, you can skip this step.
 
 After installation, open the Oracle VM VirtualBox interface. You will see a layout similar to the example below as you prepare to deploy virtual machines:
 
-<Frame>
-  ![The image shows the Oracle VM VirtualBox Manager interface on a Windows desktop, displaying options for managing virtual machines and snapshots.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881093/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_140.jpg)
-</Frame>
+![The image shows the Oracle VM VirtualBox Manager interface on a Windows desktop, displaying options for managing virtual machines and snapshots.](https://kodekloud.com/kk-media/image/upload/v1752881093/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_140.jpg)
 
 ## Deploying Virtual Machines
 
@@ -49,15 +41,11 @@ There are two main methods to deploy virtual machines in VirtualBox:
 
 For simplicity, we will use the pre-built images. Visit [osboxes.org](https://www.osboxes.org/), click the VirtualBox images link at the top, and select your desired operating system. For this lesson, we recommend the CentOS image. You will be directed to a page detailing the CentOS image download; choose the VirtualBox image for CentOS 7 (64-bit).
 
-<Frame>
-  ![The image shows a webpage offering CentOS virtual machine images for download, with options for VirtualBox and VMware, and includes file sizes and SHA256 checksums.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881094/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_190.jpg)
-</Frame>
+![The image shows a webpage offering CentOS virtual machine images for download, with options for VirtualBox and VMware, and includes file sizes and SHA256 checksums.](https://kodekloud.com/kk-media/image/upload/v1752881094/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_190.jpg)
 
 The download comes as a .7z compressed file. You will need extraction software such as [7-Zip](https://www.7-zip.org/), tar, or WinZip to extract the contents.
 
-<Frame>
-  ![A file extraction process is underway on a Windows computer, showing progress details for a CentOS virtual machine image in a 7z archive.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881095/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_210.jpg)
-</Frame>
+![A file extraction process is underway on a Windows computer, showing progress details for a CentOS virtual machine image in a 7z archive.](https://kodekloud.com/kk-media/image/upload/v1752881095/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_210.jpg)
 
 After extraction, navigate to the folder and locate the "64-bit" subfolder. Inside, you'll find a file with the .vdi extension representing the virtual disk for your new virtual machine.
 
@@ -66,38 +54,26 @@ After extraction, navigate to the folder and locate the "64-bit" subfolder. Insi
 1. **Launch VirtualBox and start a New VM:**\
    Click on "New" to launch the creation wizard.
 
-<Frame>
-  ![The image shows the Oracle VM VirtualBox Manager interface, with a dialog box open for creating a new virtual machine, selecting Windows 7 as the operating system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881096/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_250.jpg)
-</Frame>
+![The image shows the Oracle VM VirtualBox Manager interface, with a dialog box open for creating a new virtual machine, selecting Windows 7 as the operating system.](https://kodekloud.com/kk-media/image/upload/v1752881096/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_250.jpg)
 
 2. **Configure VM Details:**\
    Name your virtual machine "CentOS-Template". Set its type to Linux and select "Other Linux (64-bit)".
 
-<Callout icon="lightbulb">
-  If you do not see 64-bit options, reboot your laptop and enable "Virtualization Technology" in your BIOS settings.
-</Callout>
+> **lightbulb** If you do not see 64-bit options, reboot your laptop and enable "Virtualization Technology" in your BIOS settings.
 
-<Frame>
-  ![The image shows a VirtualBox interface for creating a virtual machine, with options to select the operating system type and version, such as Red Hat and Ubuntu.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881097/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_290.jpg)
-</Frame>
+![The image shows a VirtualBox interface for creating a virtual machine, with options to select the operating system type and version, such as Red Hat and Ubuntu.](https://kodekloud.com/kk-media/image/upload/v1752881097/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_290.jpg)
 
 3. **Adjust Memory and Disk Settings:**\
    Increase the memory allocation from the default 512 MB to approximately 2 GB. Choose "Use an existing virtual hard disk file" and browse to select the extracted CentOS 7 .vdi file.
 
-<Frame>
-  ![The image shows a virtual machine setup window, prompting the user to create or use an existing virtual hard disk, with options and a recommended size.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881099/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_370.jpg)
-</Frame>
+![The image shows a virtual machine setup window, prompting the user to create or use an existing virtual hard disk, with options and a recommended size.](https://kodekloud.com/kk-media/image/upload/v1752881099/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_370.jpg)
 
 4. **Configure Additional Settings:**\
    Open the "Settings" for the created VM. Under the "System" tab, increase the CPU allocation to 2 cores. Later, in the "Network" tab, choose "Bridged Adapter" for Adapter 1. This setting allows the virtual machine to access network resources, essential for package downloads and updates.
 
-<Frame>
-  ![The image shows the settings window of a virtual machine in VirtualBox, focusing on the system processor configuration with options for CPU allocation and execution cap.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881100/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_400.jpg)
-</Frame>
+![The image shows the settings window of a virtual machine in VirtualBox, focusing on the system processor configuration with options for CPU allocation and execution cap.](https://kodekloud.com/kk-media/image/upload/v1752881100/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_400.jpg)
 
-<Frame>
-  ![The image shows a VirtualBox settings window for a "centos-template" virtual machine, focusing on network settings with a bridged adapter configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881100/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_410.jpg)
-</Frame>
+![The image shows a VirtualBox settings window for a "centos-template" virtual machine, focusing on network settings with a bridged adapter configuration.](https://kodekloud.com/kk-media/image/upload/v1752881100/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_410.jpg)
 
 ## Booting and Configuring the Template
 
@@ -172,18 +148,12 @@ Use an SSH client to securely connect to your CentOS virtual machine. In this gu
 2. **Login Credentials:**\
    When prompted, use the username "osboxes" and the password "osboxes.org".
 
-<Frame>
-  ![The image shows the MobaXterm application interface, specifically the session settings for establishing an SSH connection to a remote host with IP 192.168.1.12.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881101/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_520.jpg)
-</Frame>
+![The image shows the MobaXterm application interface, specifically the session settings for establishing an SSH connection to a remote host with IP 192.168.1.12.](https://kodekloud.com/kk-media/image/upload/v1752881101/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Demo-Setup-Ansible-Local-Environment-Using-VirtualBox/frame_520.jpg)
 
 Once you have confirmed that the SSH connection is successfully established, shut down this virtual machine—this will serve as the template from which you can clone additional VMs for your Ansible lab.
 
-<Callout icon="lightbulb">
-  With your CentOS template configured and verified, you can now proceed to clone this virtual machine. This cloned environment will be used to set up both the control machine and the target nodes in your Ansible lab.
-</Callout>
+> **lightbulb** With your CentOS template configured and verified, you can now proceed to clone this virtual machine. This cloned environment will be used to set up both the control machine and the target nodes in your Ansible lab.
 
 Happy learning and experimenting with Ansible!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/a1ba12c0-66c7-4d81-bede-62917ee0b1cf/lesson/371a5d25-c693-4aaf-a340-050ad961af0d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/a1ba12c0-66c7-4d81-bede-62917ee0b1cf/lesson/371a5d25-c693-4aaf-a340-050ad961af0d)

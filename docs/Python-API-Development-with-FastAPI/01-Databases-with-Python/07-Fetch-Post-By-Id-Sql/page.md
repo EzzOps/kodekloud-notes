@@ -63,9 +63,7 @@ def delete_post(id: int):
     # deletion logic here
 ```
 
-<Callout icon="lightbulb">
-  This approach retrieves all records from the posts table. Later, we will optimize the query to ensure that only the specified post is selected.
-</Callout>
+> **lightbulb** This approach retrieves all records from the posts table. Later, we will optimize the query to ensure that only the specified post is selected.
 
 ***
 
@@ -113,9 +111,7 @@ def get_post(id: int):
     return {"post_detail": post}
 ```
 
-<Callout icon="triangle-alert">
-  Be sure to include an extra comma in the tuple (i.e., `(str(id),)`) to prevent unexpected issues with parameter tuple assignment.
-</Callout>
+> **triangle-alert** Be sure to include an extra comma in the tuple (i.e., `(str(id),)`) to prevent unexpected issues with parameter tuple assignment.
 
 ***
 
@@ -181,6 +177,4 @@ This error should resolve once the SQL query correctly uses parameter substituti
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/cb897d35-af84-4d34-8ecf-2adf47b33592" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/cb897d35-af84-4d34-8ecf-2adf47b33592)

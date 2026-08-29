@@ -12,7 +12,7 @@ Welcome to this guide on managing updates and rollbacks in Kubernetes deployment
 
 When you create a deployment, Kubernetes initiates a rollout that establishes the first deployment revision (revision one). Later, when you update your application—say by changing the container image version—Kubernetes triggers another rollout, creating a new revision (revision two). These revisions help you track changes and enable rollbacks to previous versions if issues arise.
 
-![The image illustrates rollout and versioning with two revisions of nginx:1.7.0 and nginx:1.7.1, each containing multiple instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869667/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Rolling-Updates-and-Rollbacks/frame_40.jpg)
+![The image illustrates rollout and versioning with two revisions of nginx:1.7.0 and nginx:1.7.1, each containing multiple instances.](https://kodekloud.com/kk-media/image/upload/v1752869667/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Rolling-Updates-and-Rollbacks/frame_40.jpg)
 
 To monitor and review these rollouts, you can use the following commands:
 
@@ -34,11 +34,11 @@ There are different strategies to update your applications. For example, conside
 
 One approach is the "recreate" strategy, which involves shutting down all existing instances before deploying new ones. However, this method results in temporary downtime as the application becomes inaccessible during the update.
 
-![The image illustrates a deployment strategy showing a transition from nginx version 1.7.0 to 1.7.1, with an application downtime during the process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869668/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Rolling-Updates-and-Rollbacks/frame_120.jpg)
+![The image illustrates a deployment strategy showing a transition from nginx version 1.7.0 to 1.7.1, with an application downtime during the process.](https://kodekloud.com/kk-media/image/upload/v1752869668/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Rolling-Updates-and-Rollbacks/frame_120.jpg)
 
 A more seamless approach is the "rolling update" strategy. Here, instances are updated one at a time, ensuring continuous application availability throughout the process.
 
-![The image illustrates two deployment strategies: "Recreate" and "Rolling Update," showing the transition from nginx version 1.7.0 to 1.7.1, with application downtime in "Recreate."](../../../../images/kodekloud.com/kk-media/image/upload/v1752869670/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Rolling-Updates-and-Rollbacks/frame_140.jpg)
+![The image illustrates two deployment strategies: "Recreate" and "Rolling Update," showing the transition from nginx version 1.7.0 to 1.7.1, with application downtime in "Recreate."](https://kodekloud.com/kk-media/image/upload/v1752869670/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Rolling-Updates-and-Rollbacks/frame_140.jpg)
 
 If no strategy is specified when creating a deployment, Kubernetes uses the rolling update strategy by default.
 
@@ -182,7 +182,7 @@ Events:
 
 During an upgrade, Kubernetes creates a new ReplicaSet for the updated containers while the original ReplicaSet continues to run the old version. This rolling update process ensures that new pods replace the old ones gradually without causing downtime.
 
-![The image illustrates a Kubernetes deployment with two replica sets, each containing multiple pods, labeled "Upgrades."](../../../../images/kodekloud.com/kk-media/image/upload/v1752869671/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Rolling-Updates-and-Rollbacks/frame_300.jpg)
+![The image illustrates a Kubernetes deployment with two replica sets, each containing multiple pods, labeled "Upgrades."](https://kodekloud.com/kk-media/image/upload/v1752869671/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Rolling-Updates-and-Rollbacks/frame_300.jpg)
 
 If an issue is detected after an upgrade, you can revert to the previous version using the rollback feature. To perform a rollback, run:
 

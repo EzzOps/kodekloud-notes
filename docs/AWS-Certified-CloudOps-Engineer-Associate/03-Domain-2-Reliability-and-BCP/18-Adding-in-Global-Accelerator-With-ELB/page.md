@@ -26,7 +26,7 @@ The complications include:
 
 For instance, if the US West 1 region fails, DNS caches might still direct user traffic there due to outdated entries, which undermines the reliability of DNS-based load balancing.
 
-![The image illustrates DNS resolution and failover challenges using Amazon Route 53, showing how user requests are routed to different AWS regions based on health checks and failover mechanisms. It includes components like Application Load Balancers and Amazon EC2 instances in US-East and US-West regions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860010/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Adding-in-Global-Accelerator-With-ELB/dns-resolution-failover-amazon-route53.jpg)
+![The image illustrates DNS resolution and failover challenges using Amazon Route 53, showing how user requests are routed to different AWS regions based on health checks and failover mechanisms. It includes components like Application Load Balancers and Amazon EC2 instances in US-East and US-West regions.](https://kodekloud.com/kk-media/image/upload/v1752860010/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Adding-in-Global-Accelerator-With-ELB/dns-resolution-failover-amazon-route53.jpg)
 
 ## Global Accelerator: A Robust Global Load Balancer
 
@@ -42,7 +42,7 @@ To address the shortcomings of DNS-based load balancing, AWS Global Accelerator 
 
 Consider the following diagram that illustrates how Global Accelerator connects seamlessly to an application load balancer in a specific region:
 
-![The image is a diagram illustrating the AWS Global Accelerator, showing how users connect through it to reach application load balancers and Amazon EC2 instances in different regions, highlighting features like anycast IP address, intelligent routing, fast failover, and consistent performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860012/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Adding-in-Global-Accelerator-With-ELB/aws-global-accelerator-diagram.jpg)
+![The image is a diagram illustrating the AWS Global Accelerator, showing how users connect through it to reach application load balancers and Amazon EC2 instances in different regions, highlighting features like anycast IP address, intelligent routing, fast failover, and consistent performance.](https://kodekloud.com/kk-media/image/upload/v1752860012/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Adding-in-Global-Accelerator-With-ELB/aws-global-accelerator-diagram.jpg)
 
 Since Global Accelerator bypasses DNS caching for routing decisions, it delivers real-time failover and unparalleled availability. This centralized approach simplifies network management by unifying traffic distribution under a single, globally distributed endpoint.
 
@@ -52,11 +52,11 @@ AWS Global Accelerator works in perfect harmony with Elastic Load Balancers. Whe
 
 This integration enhances real-time failover, global performance, and overall availability by minimizing dependency on public DNS caching. The diagram below shows how AWS Global Accelerator interacts with ELB instances across various regions:
 
-![The image illustrates how AWS Global Accelerator works with Elastic Load Balancing (ELB) across different regions, showing users connecting through the accelerator to application load balancers in various AWS regions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860013/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Adding-in-Global-Accelerator-With-ELB/aws-global-accelerator-elb-diagram.jpg)
+![The image illustrates how AWS Global Accelerator works with Elastic Load Balancing (ELB) across different regions, showing users connecting through the accelerator to application load balancers in various AWS regions.](https://kodekloud.com/kk-media/image/upload/v1752860013/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Adding-in-Global-Accelerator-With-ELB/aws-global-accelerator-elb-diagram.jpg)
 
 Moreover, Global Accelerator benefits from AWS-managed network security. Robust defense mechanisms automatically mitigate DDoS attempts and malicious traffic, ensuring that your applications remain secure and resilient.
 
-![The image outlines the benefits of adding a Global Accelerator to ELB, highlighting improved global performance, enhanced availability, simplified network management, and increased security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860014/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Adding-in-Global-Accelerator-With-ELB/global-accelerator-elb-benefits.jpg)
+![The image outlines the benefits of adding a Global Accelerator to ELB, highlighting improved global performance, enhanced availability, simplified network management, and increased security.](https://kodekloud.com/kk-media/image/upload/v1752860014/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Adding-in-Global-Accelerator-With-ELB/global-accelerator-elb-benefits.jpg)
 
 ## Summary
 

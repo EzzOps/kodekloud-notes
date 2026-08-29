@@ -14,7 +14,7 @@ Grant users and roles only the permissions they require. In this example, Sarah 
 * **Developers**: access limited to a specific Sales folder.
 * **Test** (Kathy and Alan): no access to the Sales folder.
 
-![The image illustrates a diagram for implementing the Principle of Least Privilege, showing different user groups (Admins, Developers, Test) and their access permissions to AWS Services and a Sales Folder.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863057/notes-assets/images/AWS-IAM-IAM-Policies-and-Permissions/least-privilege-diagram-user-groups-aws.jpg)
+![The image illustrates a diagram for implementing the Principle of Least Privilege, showing different user groups (Admins, Developers, Test) and their access permissions to AWS Services and a Sales Folder.](https://kodekloud.com/kk-media/image/upload/v1752863057/notes-assets/images/AWS-IAM-IAM-Policies-and-Permissions/least-privilege-diagram-user-groups-aws.jpg)
 
 > **lightbulb** Applying least privilege minimizes the blast radius if credentials are compromised.
 
@@ -39,7 +39,7 @@ An IAM policy is a JSON document that defines:
 
 IAM policies give you granular control over access.
 
-![The image explains IAM policies, highlighting their role in managing access and permissions in AWS, defining permissions for identities or resources, specifying accessible resources and operations, and providing fine-grained access control.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863058/notes-assets/images/AWS-IAM-IAM-Policies-and-Permissions/iam-policies-aws-access-control.jpg)
+![The image explains IAM policies, highlighting their role in managing access and permissions in AWS, defining permissions for identities or resources, specifying accessible resources and operations, and providing fine-grained access control.](https://kodekloud.com/kk-media/image/upload/v1752863058/notes-assets/images/AWS-IAM-IAM-Policies-and-Permissions/iam-policies-aws-access-control.jpg)
 
 ### Policy Types
 
@@ -50,7 +50,7 @@ IAM policies fall into two primary categories:
 | Identity-based policy | Users, groups, roles             | Grant permissions to IAM identities              |
 | Resource-based policy | AWS resources (e.g., S3, Lambda) | Attach policies directly to resources themselves |
 
-![The image categorizes IAM policies into "Identity Policies" and "Resource-Based Policies," with examples like Role, Group, User, S3, and Lambda.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863059/notes-assets/images/AWS-IAM-IAM-Policies-and-Permissions/iam-policies-identity-resource-examples.jpg)
+![The image categorizes IAM policies into "Identity Policies" and "Resource-Based Policies," with examples like Role, Group, User, S3, and Lambda.](https://kodekloud.com/kk-media/image/upload/v1752863059/notes-assets/images/AWS-IAM-IAM-Policies-and-Permissions/iam-policies-identity-resource-examples.jpg)
 
 You can attach an identity-based policy to a group of developers or assign a role to an EC2 instance so your applications inherit those permissions.
 
@@ -99,7 +99,7 @@ Follow these steps in the AWS Management Console to create and attach an identit
 4. Review and **Create policy**.
 5. Attach the new policy to your IAM group.
 
-![The image is a slide titled "Create Identity Policy" with an illustration of a person pointing to a "Demo" sign. It includes instructions for creating identity-based policies for IAM groups on AWS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863060/notes-assets/images/AWS-IAM-IAM-Policies-and-Permissions/create-identity-policy-aws-iam-demo.jpg)
+![The image is a slide titled "Create Identity Policy" with an illustration of a person pointing to a "Demo" sign. It includes instructions for creating identity-based policies for IAM groups on AWS.](https://kodekloud.com/kk-media/image/upload/v1752863060/notes-assets/images/AWS-IAM-IAM-Policies-and-Permissions/create-identity-policy-aws-iam-demo.jpg)
 
 ## Links and References
 

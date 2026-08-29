@@ -40,16 +40,16 @@ For greater control over your network, you can define custom route tables. Follo
 1. Navigate to the "Route Tables" section in the VPC console.
 2. Click "Create Route Table", provide a name such as "Route Table One", and select your demo VPC.
 
-![The image shows an AWS VPC management console displaying route tables with active routes for specific IP destinations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865659/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Route-Table-Demo/aws-vpc-route-tables-console.jpg)
+![The image shows an AWS VPC management console displaying route tables with active routes for specific IP destinations.](https://kodekloud.com/kk-media/image/upload/v1752865659/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Route-Table-Demo/aws-vpc-route-tables-console.jpg)
 
 3. After creation, view the "Subnet Associations" tab. By default, no subnets are explicitly linked.
 4. Click "Edit" and associate the route table with Subnet One. With this association in place, traffic from Subnet One follows the rules defined in "Route Table One".
 
 If needed, you can create an additional custom route table and assign it to Subnet Two to segregate routing rules. This setup is particularly useful when configuring different network behaviors for public and private subnets.
 
-![The image shows an AWS Management Console screen for creating a route table, with fields for naming the route table and selecting a VPC, along with options to add tags.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865661/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Route-Table-Demo/aws-management-console-route-table-creation.jpg)
+![The image shows an AWS Management Console screen for creating a route table, with fields for naming the route table and selecting a VPC, along with options to add tags.](https://kodekloud.com/kk-media/image/upload/v1752865661/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Route-Table-Demo/aws-management-console-route-table-creation.jpg)
 
-![The image shows an AWS VPC Management Console screen displaying details of a route table, including subnet associations and CIDR information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865662/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Route-Table-Demo/aws-vpc-route-table-details.jpg)
+![The image shows an AWS VPC Management Console screen displaying details of a route table, including subnet associations and CIDR information.](https://kodekloud.com/kk-media/image/upload/v1752865662/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Route-Table-Demo/aws-vpc-route-table-details.jpg)
 
 > **lightbulb** For more details on AWS VPCs and route tables, refer to the [AWS VPC Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html).
 
@@ -63,7 +63,7 @@ Customizing routes is essential for directing network traffic efficiently. To ad
 4. Select an appropriate target for this route, such as an Internet Gateway, NAT Gateway, or another designated target.
 5. Click "Save Changes" to apply your modifications.
 
-![The image shows an AWS VPC Management Console screen displaying details of a route table, including subnet associations and CIDR information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865664/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Route-Table-Demo/aws-vpc-route-table-details-2.jpg)
+![The image shows an AWS VPC Management Console screen displaying details of a route table, including subnet associations and CIDR information.](https://kodekloud.com/kk-media/image/upload/v1752865664/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Route-Table-Demo/aws-vpc-route-table-details-2.jpg)
 
 This process demonstrates the manner in which AWS routes incoming packets: by inspecting the destination IP, matching it against the configured rules, and subsequently forwarding the traffic along the approved path.
 
@@ -73,7 +73,7 @@ After completing your demo, it is important to clean up your resources to avoid 
 
 * Delete the VPC you created. AWS will automatically remove all associated subnets, route tables, and other related resources.
 
-![The image shows an AWS management console screen where a user is in the process of deleting a VPC named "vpcdemo," along with associated resources like route tables and subnets. The user is required to type "delete" to confirm the action.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865665/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Route-Table-Demo/aws-console-delete-vpc-demo.jpg)
+![The image shows an AWS management console screen where a user is in the process of deleting a VPC named "vpcdemo," along with associated resources like route tables and subnets. The user is required to type "delete" to confirm the action.](https://kodekloud.com/kk-media/image/upload/v1752865665/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Route-Table-Demo/aws-console-delete-vpc-demo.jpg)
 
 > **triangle-alert** Always verify that you have terminated or deleted all temporary resources to prevent unexpected service charges.
 

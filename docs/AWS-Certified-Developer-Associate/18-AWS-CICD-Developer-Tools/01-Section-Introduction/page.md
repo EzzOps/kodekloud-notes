@@ -8,7 +8,7 @@ In this article, we explore a wide range of AWS developer tools designed to enha
 
 Additionally, we delve into other essential developer tools including CodeArtifact, CodeGuru, Cloud9, CodeWhisperer, and Amplify, each offering unique capabilities to streamline development processes.
 
-![The image shows a collection of AWS Developer Tools, including CodeCommit, CodeBuild, CodeDeploy, CodePipeline, CodeStar, CodeArtifact, CodeGuru, Cloud9, CodeWhisperer, and Amplify, with a central icon labeled "Developer."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858076/notes-assets/images/AWS-Certified-Developer-Associate-Section-Introduction/aws-developer-tools-collection.jpg)
+![The image shows a collection of AWS Developer Tools, including CodeCommit, CodeBuild, CodeDeploy, CodePipeline, CodeStar, CodeArtifact, CodeGuru, Cloud9, CodeWhisperer, and Amplify, with a central icon labeled "Developer."](https://kodekloud.com/kk-media/image/upload/v1752858076/notes-assets/images/AWS-Certified-Developer-Associate-Section-Introduction/aws-developer-tools-collection.jpg)
 
 > **lightbulb** For a deeper understanding of AWS CI/CD tools and best practices, consider exploring the [AWS Developer Tools Documentation](https://aws.amazon.com/developer/tools/).
 

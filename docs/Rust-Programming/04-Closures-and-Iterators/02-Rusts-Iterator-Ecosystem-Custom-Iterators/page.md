@@ -6,17 +6,13 @@ This article explores Rust iterators, their implementation, advantages, and best
 
 In this lesson, we will explore Rust iterators—a powerful and flexible tool for processing sequences of elements. An iterator in Rust is any object that implements the Iterator trait, providing a standardized way to traverse a sequence of items. The standard library includes numerous iterator methods for mapping, filtering, and reducing collections.
 
-<Frame>
-  ![The image is an introduction to iterators, featuring three icons labeled "Mapping," "Filtering," and "Reducing," each with a distinct color and symbol.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883834/notes-assets/images/Rust-Programming-Rusts-Iterator-Ecosystem-Custom-Iterators/introduction-to-iterators-icons.jpg)
-</Frame>
+![The image is an introduction to iterators, featuring three icons labeled "Mapping," "Filtering," and "Reducing," each with a distinct color and symbol.](https://kodekloud.com/kk-media/image/upload/v1752883834/notes-assets/images/Rust-Programming-Rusts-Iterator-Ecosystem-Custom-Iterators/introduction-to-iterators-icons.jpg)
 
 ## Why Use Iterators?
 
 Iterators offer a concise and expressive approach to handling collections. They help eliminate common pitfalls associated with manual loop management—such as off-by-one errors—and greatly enhance code readability and maintainability.
 
-<Frame>
-  ![The image is a diagram explaining why to use iterators, highlighting that they are concise and expressive.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883835/notes-assets/images/Rust-Programming-Rusts-Iterator-Ecosystem-Custom-Iterators/iterators-why-use-diagram.jpg)
-</Frame>
+![The image is a diagram explaining why to use iterators, highlighting that they are concise and expressive.](https://kodekloud.com/kk-media/image/upload/v1752883835/notes-assets/images/Rust-Programming-Rusts-Iterator-Ecosystem-Custom-Iterators/iterators-why-use-diagram.jpg)
 
 ## The Iterator Trait
 
@@ -402,22 +398,16 @@ In this custom iterator, the `Fibonacci` struct maintains the state of the curre
 
 ## Best Practices for Using Iterators
 
-<Frame>
-  ![The image lists three best practices: prefer iterators over loops, avoid premature collection, and use custom iterators, with a gradient blue background on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883836/notes-assets/images/Rust-Programming-Rusts-Iterator-Ecosystem-Custom-Iterators/best-practices-iterators-collection.jpg)
-</Frame>
+![The image lists three best practices: prefer iterators over loops, avoid premature collection, and use custom iterators, with a gradient blue background on the left.](https://kodekloud.com/kk-media/image/upload/v1752883836/notes-assets/images/Rust-Programming-Rusts-Iterator-Ecosystem-Custom-Iterators/best-practices-iterators-collection.jpg)
 
 1. **Prefer iterators over manual loops:** Utilize Rust's built-in safety and performance optimizations by relying on iterators rather than manually handling loop counters.
 2. **Avoid premature collection:** Take advantage of lazy evaluation to prevent unnecessary memory allocation and computation.
 3. **Implement custom iterators when necessary:** For complex iteration logic, create custom iterators to keep the codebase clean and maintainable.
 
-<Callout icon="lightbulb">
-  Remember that using iterators can lead to more concise and readable code. Their zero-cost abstraction ensures that you do not sacrifice performance.
-</Callout>
+> **lightbulb** Remember that using iterators can lead to more concise and readable code. Their zero-cost abstraction ensures that you do not sacrifice performance.
 
 This lesson has provided an in-depth overview of Rust iterators, covering how to consume them, how to extend their functionality with adapters, and how to implement custom iterators. By leveraging these techniques, you can write cleaner, more efficient, and highly maintainable Rust programs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/ec5f51b7-2bd4-4b24-bff0-94947cac5257/lesson/c37d0014-a319-43cd-9cb4-a561b0728219" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/ec5f51b7-2bd4-4b24-bff0-94947cac5257/lesson/c37d0014-a319-43cd-9cb4-a561b0728219)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/rust/module/ec5f51b7-2bd4-4b24-bff0-94947cac5257/lesson/3b2e465f-0d44-4a9c-ac37-7768a47c2b4f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/rust/module/ec5f51b7-2bd4-4b24-bff0-94947cac5257/lesson/3b2e465f-0d44-4a9c-ac37-7768a47c2b4f)

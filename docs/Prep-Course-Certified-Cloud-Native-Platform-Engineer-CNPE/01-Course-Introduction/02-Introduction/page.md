@@ -8,9 +8,7 @@ Did you know organizations such as Spotify, Intuit, and Mercedes‑Benz reduced 
 
 Welcome to the Certified Cloud Native Platform Engineer course. I’m Nourhan Mohamed, and in this lesson I’ll guide you through the practical skills required to design, build, and operate stable, scalable platforms. Having completed the CNPE myself, I’ll share targeted exam preparation strategies and hands‑on approaches that reflect real‑world platform engineering tasks.
 
-<Callout icon="lightbulb">
-  This lesson assumes familiarity with Kubernetes fundamentals, CI/CD concepts, and daily use of `kubectl`. If you haven’t yet completed those basics, take the [Certified Kubernetes Administrator (CKA)](https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator) or an equivalent Kubernetes course first, then return here.
-</Callout>
+> **lightbulb** This lesson assumes familiarity with Kubernetes fundamentals, CI/CD concepts, and daily use of `kubectl`. If you haven’t yet completed those basics, take the [Certified Kubernetes Administrator (CKA)](https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator) or an equivalent Kubernetes course first, then return here.
 
 CNPE is a performance‑based exam that mirrors production scenarios: you won’t be choosing multiple‑choice answers. Instead, you’ll demonstrate how you make engineering decisions, choose appropriate tools, and get a platform working under time pressure. This course follows that model with demos and hands‑on labs for every major topic.
 
@@ -92,6 +90,4 @@ Are you ready to earn one of the most respected platform engineering certificati
 * [Linux Foundation Training — CNPE program](https://training.linuxfoundation.org/)
 * [GitOps resources and best practices](https://www.gitops.tech/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/cde3e2ef-28b1-4c9a-988b-49cbeb851f45/lesson/4e0e11af-efbf-4f94-b7ad-2b9d0161da33" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/cde3e2ef-28b1-4c9a-988b-49cbeb851f45/lesson/4e0e11af-efbf-4f94-b7ad-2b9d0161da33)

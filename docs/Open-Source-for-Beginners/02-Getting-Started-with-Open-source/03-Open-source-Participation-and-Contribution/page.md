@@ -6,17 +6,13 @@ This article discusses how to participate and contribute to open source projects
 
 Contributing to open source projects goes beyond writing code. You can make an impact through design, documentation, content creation, community management, and advocacy.
 
-<Frame>
-  ![The image is a diagram illustrating open source participation and collaboration, featuring a central icon surrounded by labeled segments: Advocacy, Code, Design, Documentation, Content, and Communities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882509/notes-assets/images/Open-Source-for-Beginners-Open-source-Participation-and-Contribution/open-source-participation-collaboration-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating open source participation and collaboration, featuring a central icon surrounded by labeled segments: Advocacy, Code, Design, Documentation, Content, and Communities.](https://kodekloud.com/kk-media/image/upload/v1752882509/notes-assets/images/Open-Source-for-Beginners-Open-source-Participation-and-Contribution/open-source-participation-collaboration-diagram.jpg)
 
 ## Understanding the Ecosystem
 
 Before diving in, familiarize yourself with the project’s ecosystem, methodology, and communities. These three pillars shape how decisions are made and how you can participate effectively.
 
-<Frame>
-  ![The image is a diagram showing a lightbulb icon connected to three labeled sections: "Ecosystem," "Methodology," and "Communities," representing open source participation and collaboration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882510/notes-assets/images/Open-Source-for-Beginners-Open-source-Participation-and-Contribution/lightbulb-ecosystem-methodology-communities-diagram.jpg)
-</Frame>
+![The image is a diagram showing a lightbulb icon connected to three labeled sections: "Ecosystem," "Methodology," and "Communities," representing open source participation and collaboration.](https://kodekloud.com/kk-media/image/upload/v1752882510/notes-assets/images/Open-Source-for-Beginners-Open-source-Participation-and-Contribution/lightbulb-ecosystem-methodology-communities-diagram.jpg)
 
 ## Getting Connected
 
@@ -28,9 +24,7 @@ Identify and join the channels where the community interacts:
 
 Once you’ve joined, clone the repository locally, build the project, and explore its structure. Don’t hesitate to ask on the appropriate channel if you hit a roadblock.
 
-<Frame>
-  ![The image shows a network diagram with interconnected nodes and icons of communication platforms like Slack and Discord, suggesting open source participation and collaboration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882512/notes-assets/images/Open-Source-for-Beginners-Open-source-Participation-and-Contribution/network-diagram-communication-platforms-collaboration.jpg)
-</Frame>
+![The image shows a network diagram with interconnected nodes and icons of communication platforms like Slack and Discord, suggesting open source participation and collaboration.](https://kodekloud.com/kk-media/image/upload/v1752882512/notes-assets/images/Open-Source-for-Beginners-Open-source-Participation-and-Contribution/network-diagram-communication-platforms-collaboration.jpg)
 
 ## Choosing Where to Contribute
 
@@ -45,13 +39,9 @@ Your unique skills add the most value when aligned with project needs. Common co
 
 Refer to the project’s CONTRIBUTING.md for guidelines on branching, commit messages, and review policies.
 
-<Frame>
-  ![The image illustrates "Standard Practices" in open source participation, highlighting mailing lists, email exchanges, and control systems with a central icon of a lock and envelope.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882513/notes-assets/images/Open-Source-for-Beginners-Open-source-Participation-and-Contribution/standard-practices-open-source-mailing-lists.jpg)
-</Frame>
+![The image illustrates "Standard Practices" in open source participation, highlighting mailing lists, email exchanges, and control systems with a central icon of a lock and envelope.](https://kodekloud.com/kk-media/image/upload/v1752882513/notes-assets/images/Open-Source-for-Beginners-Open-source-Participation-and-Contribution/standard-practices-open-source-mailing-lists.jpg)
 
-<Callout icon="triangle-alert">
-  Always review the project’s license and any Contributor License Agreement (CLA) before submitting changes.
-</Callout>
+> **triangle-alert** Always review the project’s license and any Contributor License Agreement (CLA) before submitting changes.
 
 ## Governance and Best Practices
 
@@ -72,9 +62,7 @@ Good collaboration accelerates progress and fosters inclusivity. Ask yourself:
 * Does communication follow the Code of Conduct?
 * Is credit given to those who contributed?
 
-<Frame>
-  ![The image contains a list of questions related to open source participation and collaboration, focusing on inclusivity, goals, relationships, resource sharing, communication, and credit.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882514/notes-assets/images/Open-Source-for-Beginners-Open-source-Participation-and-Contribution/open-source-participation-questions-list.jpg)
-</Frame>
+![The image contains a list of questions related to open source participation and collaboration, focusing on inclusivity, goals, relationships, resource sharing, communication, and credit.](https://kodekloud.com/kk-media/image/upload/v1752882514/notes-assets/images/Open-Source-for-Beginners-Open-source-Participation-and-Contribution/open-source-participation-questions-list.jpg)
 
 ## Contribution Types at a Glance
 
@@ -94,6 +82,4 @@ Good collaboration accelerates progress and fosters inclusivity. Ask yourself:
 * [Terraform Registry](https://registry.terraform.io/)
 * [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/fbb6900d-94ee-411a-8821-42557ca81867/lesson/1bc31a95-1193-436c-8046-82589b788c95" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/fbb6900d-94ee-411a-8821-42557ca81867/lesson/1bc31a95-1193-436c-8046-82589b788c95)

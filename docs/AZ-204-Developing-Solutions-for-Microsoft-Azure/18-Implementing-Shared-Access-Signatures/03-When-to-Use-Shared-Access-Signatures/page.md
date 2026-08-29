@@ -12,7 +12,7 @@ When using a storage account to store data, there are two common design patterns
 
 In the first design pattern, a frontend proxy service handles all client interactions with the storage account. Clients upload and download data through this proxy, which also manages authentication and business rule validations.
 
-![The image illustrates a data flow diagram showing the use of a front-end proxy service to upload/download data between a computer and Microsoft Azure Storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866673/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-When-to-Use-Shared-Access-Signatures/data-flow-diagram-azure-storage.jpg)
+![The image illustrates a data flow diagram showing the use of a front-end proxy service to upload/download data between a computer and Microsoft Azure Storage.](https://kodekloud.com/kk-media/image/upload/v1752866673/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-When-to-Use-Shared-Access-Signatures/data-flow-diagram-azure-storage.jpg)
 
 This approach provides the following benefits and trade-offs:
 
@@ -32,7 +32,7 @@ The second design pattern involves a lightweight service dedicated to SaaS authe
 2. The service verifies the client’s identity.
 3. Upon successful verification, the service returns a SAS token with defined permissions.
 
-![The image is a flowchart illustrating the process of using Shared Access Signatures (SAS) with a computer, SAS Provider Service, and Microsoft Azure Storage, showing the steps of authentication, data saving, and reading.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866674/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-When-to-Use-Shared-Access-Signatures/sas-flowchart-azure-storage.jpg)
+![The image is a flowchart illustrating the process of using Shared Access Signatures (SAS) with a computer, SAS Provider Service, and Microsoft Azure Storage, showing the steps of authentication, data saving, and reading.](https://kodekloud.com/kk-media/image/upload/v1752866674/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-When-to-Use-Shared-Access-Signatures/sas-flowchart-azure-storage.jpg)
 
 This design pattern offers significant advantages:
 

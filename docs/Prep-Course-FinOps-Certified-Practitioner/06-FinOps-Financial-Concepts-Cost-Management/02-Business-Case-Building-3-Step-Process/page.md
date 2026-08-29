@@ -8,9 +8,7 @@ Hello and welcome back.
 
 This lesson walks through a concise, repeatable three-step process to build a business case for FinOps, cloud cost optimization, or a dedicated FinOps team. A clear, data-driven business case helps leadership understand the problem, the investment required, and the expected return — so you can get approval faster.
 
-<Callout icon="lightbulb">
-  Use this 3-step framework as a template you can adapt to any team or organization: 1) Qualify the problem, 2) Define the solution, and 3) Calculate ROI. Keep assumptions explicit to make the analysis credible.
-</Callout>
+> **lightbulb** Use this 3-step framework as a template you can adapt to any team or organization: 1) Qualify the problem, 2) Define the solution, and 3) Calculate ROI. Keep assumptions explicit to make the analysis credible.
 
 ## Step 1 — Qualify the problem
 
@@ -102,9 +100,7 @@ Example (rounded numbers)
 * Monthly net savings = `$15,000`
 * If initial implementation investment = `$60,000`, payback period = `4 months`
 
-<Callout icon="lightbulb">
-  If the payback period is under 6 months, the proposal is typically much easier to approve. Show sensitivity (e.g., 10% vs 30% waste reduction) so leadership sees optimistic and conservative outcomes.
-</Callout>
+> **lightbulb** If the payback period is under 6 months, the proposal is typically much easier to approve. Show sensitivity (e.g., 10% vs 30% waste reduction) so leadership sees optimistic and conservative outcomes.
 
 Consider including a small sensitivity table in your slide deck:
 
@@ -131,6 +127,4 @@ If you’re pursuing the [FinOps Practitioner certification](https://learn.kodek
 
 I hope this framework is helpful. A later section will apply this business-case approach to a sample organization and walk through the actual numbers and slides you can present.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/e8688559-7ee4-4f9c-9300-fe64236e249b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/e8688559-7ee4-4f9c-9300-fe64236e249b)

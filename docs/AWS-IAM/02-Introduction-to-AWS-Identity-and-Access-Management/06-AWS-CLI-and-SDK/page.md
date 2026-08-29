@@ -19,7 +19,7 @@ For more details, refer to the [AWS CLI User Guide](https://docs.aws.amazon.com/
 
 To enable both console and programmatic access, create an IAM user (e.g., **John**) and generate an **Access Key ID** and **Secret Access Key**. These credentials allow John to authenticate with AWS services via CLI or SDKs.
 
-![The image is a diagram illustrating IAM user access keys, showing how a user named John accesses AWS services through the AWS Management Console, CLI, and SDK using specific credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863000/notes-assets/images/AWS-IAM-AWS-CLI-and-SDK/iam-user-access-keys-diagram.jpg)
+![The image is a diagram illustrating IAM user access keys, showing how a user named John accesses AWS services through the AWS Management Console, CLI, and SDK using specific credentials.](https://kodekloud.com/kk-media/image/upload/v1752863000/notes-assets/images/AWS-IAM-AWS-CLI-and-SDK/iam-user-access-keys-diagram.jpg)
 
 John can now:
 
@@ -70,7 +70,7 @@ Now, any AWS CLI command you execute uses John’s credentials, targets the spec
 
 AWS SDKs enable you to interact with AWS services programmatically. Below is a high-level flow for a browser-based app using the AWS SDK for JavaScript:
 
-![The image is a diagram illustrating the interaction between a browser script using the Amazon SDK for JavaScript, Amazon Polly, and Amazon Cognito, showing the flow of requests and responses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863001/notes-assets/images/AWS-IAM-AWS-CLI-and-SDK/browser-script-amazon-sdk-diagram.jpg)
+![The image is a diagram illustrating the interaction between a browser script using the Amazon SDK for JavaScript, Amazon Polly, and Amazon Cognito, showing the flow of requests and responses.](https://kodekloud.com/kk-media/image/upload/v1752863001/notes-assets/images/AWS-IAM-AWS-CLI-and-SDK/browser-script-amazon-sdk-diagram.jpg)
 
 1. The browser script initializes the AWS SDK with temporary credentials (often retrieved via [Amazon Cognito](https://aws.amazon.com/cognito/)).
 2. It calls an AWS service API (for example, Polly’s `SynthesizeSpeech`).
@@ -118,7 +118,7 @@ IAM groups simplify permission management by allowing you to assign policies to 
 | Granular Policies | Attach least-privilege policies to groups | `AmazonS3ReadOnlyAccess`                 |
 | Role Similarity   | Group users with similar responsibilities | Marketing, Engineering, Finance          |
 
-![The image is a diagram illustrating the concept of IAM (Identity and Access Management) Groups, highlighting aspects like simplifying user management, using descriptive names, grouping similar roles, and applying policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863003/notes-assets/images/AWS-IAM-AWS-CLI-and-SDK/iam-groups-user-management-diagram.jpg)
+![The image is a diagram illustrating the concept of IAM (Identity and Access Management) Groups, highlighting aspects like simplifying user management, using descriptive names, grouping similar roles, and applying policies.](https://kodekloud.com/kk-media/image/upload/v1752863003/notes-assets/images/AWS-IAM-AWS-CLI-and-SDK/iam-groups-user-management-diagram.jpg)
 
 ### Demo: Creating an IAM Group
 

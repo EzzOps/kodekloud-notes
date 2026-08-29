@@ -24,9 +24,7 @@ prometheus-kube-prometheus-stack-prometheus-0          2/2     Running   0      
 
 Prometheus uses a pull model: it periodically scrapes configured endpoints rather than relying on agents pushing metrics. This centralizes control over scrape frequency, relabeling, and the exact endpoints collected — applications only need to expose metrics.
 
-<Callout icon="lightbulb">
-  Prometheus' pull model gives central control over what and when to scrape. You control scrape intervals, relabeling, and which endpoints are collected — applications only need to expose metrics.
-</Callout>
+> **lightbulb** Prometheus' pull model gives central control over what and when to scrape. You control scrape intervals, relabeling, and which endpoints are collected — applications only need to expose metrics.
 
 Open the Prometheus UI and navigate to Status → Targets to inspect which endpoints are being scraped and whether they are healthy.
 
@@ -122,9 +120,7 @@ sum(rate(apiserver_request_total[5m])) by (verb)
 sum(increase(http_requests_total{namespace="workloads"}[1h])) by (code)
 ```
 
-<Callout icon="lightbulb">
-  Use `rate()` (or `irate()` for instant rate) with counters when you want a per-second velocity. Use `increase()` when you want the total increment of a counter over a time window (useful for totals and pie charts).
-</Callout>
+> **lightbulb** Use `rate()` (or `irate()` for instant rate) with counters when you want a per-second velocity. Use `increase()` when you want the total increment of a counter over a time window (useful for totals and pie charts).
 
 ### Error rate percentage
 
@@ -163,8 +159,6 @@ This returns the percentage of requests that had 5xx status codes in the last 5 
 
 Now start practicing these Prometheus queries with hands-on exercises to get comfortable building dashboards and alerts.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/f0820e36-3f8c-4741-8b79-6dbe9c077761" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/f0820e36-3f8c-4741-8b79-6dbe9c077761)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/c31eb94b-7f3b-49a3-909e-5fda15273fc2" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/c31eb94b-7f3b-49a3-909e-5fda15273fc2)

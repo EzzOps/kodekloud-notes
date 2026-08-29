@@ -17,9 +17,7 @@ As Kubernetes expanded, alternative container runtimes like Rocket emerged. To a
 
 Although Docker images conform to OCI standards, Docker itself predates CRI and lacks native CRI support. To bridge this gap, Kubernetes implemented the Docker Shim, which allowed Kubernetes to interact with Docker despite its non-compliance with CRI. With the maturation of alternatives like ContainerD (which evolved from Docker’s architecture), Kubernetes now directly supports these CRI-compatible runtimes, thereby eliminating the extra maintenance overhead of the Docker shim.
 
-<Frame>
-  ![The image illustrates the relationship between Docker, containerd, Kubernetes, and rkt, highlighting components like CLI, API, and CRI, with a focus on container runtime interfaces.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880645/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Docker-vs-ContainerD/frame_190.jpg)
-</Frame>
+![The image illustrates the relationship between Docker, containerd, Kubernetes, and rkt, highlighting components like CLI, API, and CRI, with a focus on container runtime interfaces.](https://kodekloud.com/kk-media/image/upload/v1752880645/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Docker-vs-ContainerD/frame_190.jpg)
 
 ## Understanding Docker’s Components
 
@@ -51,9 +49,7 @@ $ ctr images pull docker.io/library/redis:alpine
 $ ctr run docker.io/library/redis:alpine redis
 ```
 
-<Callout icon="lightbulb">
-  For day-to-day container management in production environments, consider using tools that provide a more comprehensive and user-friendly experience.
-</Callout>
+> **lightbulb** For day-to-day container management in production environments, consider using tools that provide a more comprehensive and user-friendly experience.
 
 ## nerdctl: A Docker-like CLI for ContainerD
 
@@ -72,9 +68,7 @@ $ nerdctl run --name redis redis:alpine
 $ nerdctl run --name webserver -p 80:80 -d nginx
 ```
 
-<Frame>
-  ![The image describes "nerdctl," a Docker-like CLI for containerD, supporting features like Docker Compose, encrypted images, lazy pulling, P2P distribution, image signing, and Kubernetes namespaces.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880646/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Docker-vs-ContainerD/frame_380.jpg)
-</Frame>
+![The image describes "nerdctl," a Docker-like CLI for containerD, supporting features like Docker Compose, encrypted images, lazy pulling, P2P distribution, image signing, and Kubernetes namespaces.](https://kodekloud.com/kk-media/image/upload/v1752880646/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Docker-vs-ContainerD/frame_380.jpg)
 
 This tool not only mirrors Docker’s functionality but also provides access to innovative features emerging within ContainerD.
 
@@ -94,19 +88,13 @@ $ crictl ps -a
 
 To run commands inside a container or to view logs, crictl provides syntax similar to Docker’s, while also handling pod-specific details—a feature Docker does not offer.
 
-<Frame>
-  ![The image explains "crictl," a CLI for CRI-compatible container runtimes, used for inspecting and debugging, not creating containers, and works across different runtimes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880647/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Docker-vs-ContainerD/frame_470.jpg)
-</Frame>
+![The image explains "crictl," a CLI for CRI-compatible container runtimes, used for inspecting and debugging, not creating containers, and works across different runtimes.](https://kodekloud.com/kk-media/image/upload/v1752880647/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Docker-vs-ContainerD/frame_470.jpg)
 
 A comparison of common Docker CLI commands versus crictl commands highlights many similarities in functionality, covering tasks such as attach, exec, images, info, inspect, logs, ps, stats, and version.
 
-<Frame>
-  ![A comparison table of Docker CLI and crictl commands, descriptions, and unsupported features for debugging information retrieval.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880649/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Docker-vs-ContainerD/frame_640.jpg)
-</Frame>
+![A comparison table of Docker CLI and crictl commands, descriptions, and unsupported features for debugging information retrieval.](https://kodekloud.com/kk-media/image/upload/v1752880649/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Docker-vs-ContainerD/frame_640.jpg)
 
-<Frame>
-  ![A comparison table of Docker CLI and crictl commands, showing descriptions and unsupported features for container management tasks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880650/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Docker-vs-ContainerD/frame_650.jpg)
-</Frame>
+![A comparison table of Docker CLI and crictl commands, showing descriptions and unsupported features for container management tasks.](https://kodekloud.com/kk-media/image/upload/v1752880650/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Docker-vs-ContainerD/frame_650.jpg)
 
 For additional details on these differences, refer to the documentation linked in the original repository.
 
@@ -138,9 +126,7 @@ For example, valid endpoints include:
 
 Reviewing pull request 869 and issue 868 in the Kubernetes CRI tools repository can provide further insights into these changes.
 
-<Callout icon="triangle-alert">
-  Always ensure your runtime endpoint is configured correctly to avoid connectivity issues between Kubernetes and your container runtime.
-</Callout>
+> **triangle-alert** Always ensure your runtime endpoint is configured correctly to avoid connectivity issues between Kubernetes and your container runtime.
 
 ## Summary
 
@@ -150,14 +136,10 @@ To recap the key points:
 * nerdctl provides a full-featured, Docker-like CLI for efficient container management with ContainerD and is ideal for production scenarios.
 * crictl, maintained by the Kubernetes community, is excellent for debugging and inspecting container runtimes across any CRI-supported platform.
 
-<Frame>
-  ![The image compares container tools: ctr, nerdctl, and crictl, detailing their purposes, communities, and compatibility with ContainerD and Kubernetes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880651/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Docker-vs-ContainerD/frame_750.jpg)
-</Frame>
+![The image compares container tools: ctr, nerdctl, and crictl, detailing their purposes, communities, and compatibility with ContainerD and Kubernetes.](https://kodekloud.com/kk-media/image/upload/v1752880651/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Docker-vs-ContainerD/frame_750.jpg)
 
 Thank you for engaging with this lesson. We hope it has clarified the differences between Docker, ContainerD, and the various CLI tools used in managing containers and orchestrating Kubernetes deployments.
 
 For more detailed information, please visit the [Kubernetes Documentation](https://kubernetes.io/docs/) or explore related articles on container management.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/8403f56b-91f8-42f9-89e9-5c27a7438ef2/lesson/31329fc2-21e5-40ab-8092-d52ffa0b4717" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/8403f56b-91f8-42f9-89e9-5c27a7438ef2/lesson/31329fc2-21e5-40ab-8092-d52ffa0b4717)

@@ -69,15 +69,13 @@ kubectl apply -f manifests/
 kubectl port-forward svc/ml-model-service 8
 ```
 
-<Callout icon="lightbulb">
-  While the load test executes in the background, observe how the Horizontal Pod Autoscaler automatically scales your application when the average CPU utilization exceeds 70%. You can inspect the HPA status with:
+> **lightbulb** While the load test executes in the background, observe how the Horizontal Pod Autoscaler automatically scales your application when the average CPU utilization exceeds 70%. You can inspect the HPA status with:
 
   ```bash theme={null}
   kubectl describe hpa ml-model-hpa
   ```
 
   Note that HPA uses the CPU resource requests defined in the deployment rather than the resource limits.
-</Callout>
 
 ***
 
@@ -243,9 +241,7 @@ kubectl apply -f manifests/test-pods.yaml
 kubectl get pods -w
 ```
 
-<Callout icon="lightbulb">
-  The absence of the required toleration in the Nginx deployment prevents its pods from landing on node02.
-</Callout>
+> **lightbulb** The absence of the required toleration in the Nginx deployment prevents its pods from landing on node02.
 
 ***
 
@@ -306,8 +302,6 @@ These techniques empower you to fine-tune your Kubernetes deployments and meet s
 
 Thanks for reading!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/caadb2eb-ce72-402b-b576-f8218af04876" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/caadb2eb-ce72-402b-b576-f8218af04876)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/6f914b07-bff5-4511-9a47-72278be78fbf" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/6f914b07-bff5-4511-9a47-72278be78fbf)

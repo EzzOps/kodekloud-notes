@@ -10,19 +10,19 @@ In this article, we explore the intricacies of the Go Runtime Scheduler and how 
 
 When a Go program starts, the runtime creates a set of operating system threads equal to the number of logical CPUs available. The operating system handles the creation, blocking, and scheduling of these threads on CPU cores. You can determine the number of available logical processors using the `runtime.NumCPU` method. This method calculates the count by multiplying the number of physical cores by the number of hardware threads each core supports.
 
-![The image is a slide discussing what happens when you start a Go program, highlighting the use of the runtime.NumCPU method to find the number of logical processors and explaining the calculation of logical cores.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868705/notes-assets/images/Advanced-Golang-Go-runtime-scheduler/go-program-runtime-numcpu-slide.jpg)
+![The image is a slide discussing what happens when you start a Go program, highlighting the use of the runtime.NumCPU method to find the number of logical processors and explaining the calculation of logical cores.](https://kodekloud.com/kk-media/image/upload/v1752868705/notes-assets/images/Advanced-Golang-Go-runtime-scheduler/go-program-runtime-numcpu-slide.jpg)
 
 ## Calculating Logical Processors and Goroutine Multiplexing
 
 Goroutines are lightweight application-level threads that execute independently. The Go runtime employs an M:N scheduling technique to multiplex many Goroutines over a limited number of operating system threads. This efficient model allows you to run an arbitrary number of Goroutines on a fixed pool of threads, ensuring optimal resource utilization.
 
-![The image is a slide explaining Go-routines, describing them as lightweight application-level threads with independent execution, and detailing how the Go runtime schedules them using m:n multiplexing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868706/notes-assets/images/Advanced-Golang-Go-runtime-scheduler/go-routines-lightweight-threads-explained.jpg)
+![The image is a slide explaining Go-routines, describing them as lightweight application-level threads with independent execution, and detailing how the Go runtime schedules them using m:n multiplexing.](https://kodekloud.com/kk-media/image/upload/v1752868706/notes-assets/images/Advanced-Golang-Go-runtime-scheduler/go-routines-lightweight-threads-explained.jpg)
 
 ## Understanding the Go Runtime Scheduler
 
 The operating system scheduler manages threads for each logical core. Within the Go runtime, each thread is associated with a local run queue (LRQ) that stores Goroutines designated for that specific thread. Additionally, the runtime uses a global run queue (GRQ) to hold Goroutines that have not yet been assigned to any LRQ. Periodically, the scheduler moves Goroutines from the GRQ to LRQs based on execution needs.
 
-![The image is a diagram illustrating the Go scheduler, showing how goroutines (G1 to G10) are managed across OS threads and logical CPUs. It includes components like the OS scheduler, Go scheduler, and queues (GRQ and LRQ).](../../../../images/kodekloud.com/kk-media/image/upload/v1752868707/notes-assets/images/Advanced-Golang-Go-runtime-scheduler/go-scheduler-goroutines-diagram.jpg)
+![The image is a diagram illustrating the Go scheduler, showing how goroutines (G1 to G10) are managed across OS threads and logical CPUs. It includes components like the OS scheduler, Go scheduler, and queues (GRQ and LRQ).](https://kodekloud.com/kk-media/image/upload/v1752868707/notes-assets/images/Advanced-Golang-Go-runtime-scheduler/go-scheduler-goroutines-diagram.jpg)
 
 ## Cooperative Scheduling in Go
 
@@ -30,7 +30,7 @@ The Go scheduler operates on a cooperative basis, meaning it does not force pree
 
 > **lightbulb** Goroutines must yield control voluntarily, which depends on checkpoints within the code such as I/O operations and function calls.
 
-![The image is a slide explaining the concept of a cooperative scheduler, highlighting that the Golang scheduler is cooperative, where processes voluntarily yield control, and context switches occur at specific checkpoints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868708/notes-assets/images/Advanced-Golang-Go-runtime-scheduler/cooperative-scheduler-golang-explanation.jpg)
+![The image is a slide explaining the concept of a cooperative scheduler, highlighting that the Golang scheduler is cooperative, where processes voluntarily yield control, and context switches occur at specific checkpoints.](https://kodekloud.com/kk-media/image/upload/v1752868708/notes-assets/images/Advanced-Golang-Go-runtime-scheduler/cooperative-scheduler-golang-explanation.jpg)
 
 ## Context Switching
 
@@ -41,7 +41,7 @@ Context switching in Go occurs when a Goroutine makes a function call, prompting
 * Network operations
 * Channel communications
 
-![The image is a slide titled "Context Switching" with a list of items: Functions Call, Garbage Collection, Network Calls, Channel operations, and On using go keyword.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868709/notes-assets/images/Advanced-Golang-Go-runtime-scheduler/context-switching-functions-garbage-network-channel-go.jpg)
+![The image is a slide titled "Context Switching" with a list of items: Functions Call, Garbage Collection, Network Calls, Channel operations, and On using go keyword.](https://kodekloud.com/kk-media/image/upload/v1752868709/notes-assets/images/Advanced-Golang-Go-runtime-scheduler/context-switching-functions-garbage-network-channel-go.jpg)
 
 ## Goroutines vs. Threads
 
@@ -49,7 +49,7 @@ Goroutines are much lighter than traditional operating system threads. Typically
 
 Goroutines also communicate using channels, which provide a safe mechanism to synchronize memory access and data exchange between concurrent operations.
 
-![The image is a slide comparing Go-routines and threads, highlighting that Go-routines are cheaper, multiplexed to fewer OS threads, have faster context switching, and communicate using channels.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868711/notes-assets/images/Advanced-Golang-Go-runtime-scheduler/go-routines-vs-threads-comparison.jpg)
+![The image is a slide comparing Go-routines and threads, highlighting that Go-routines are cheaper, multiplexed to fewer OS threads, have faster context switching, and communicate using channels.](https://kodekloud.com/kk-media/image/upload/v1752868711/notes-assets/images/Advanced-Golang-Go-runtime-scheduler/go-routines-vs-threads-comparison.jpg)
 
 ## Next Steps
 

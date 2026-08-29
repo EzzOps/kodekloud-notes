@@ -24,9 +24,7 @@ Key features include:
 
 The recommendations in Microsoft Defender for Cloud primarily focus on host security. You can filter recommendations by resource type—for example, to view all virtual machine recommendations.
 
-<Frame>
-  ![The image shows a Microsoft Defender for Cloud Recommendations dashboard, listing various security controls for virtual machines, their scores, and potential improvements. It includes details on resource health and actions needed for each control.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881883/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Explore-Azure-Security-Center-recommendations/microsoft-defender-cloud-recommendations-dashboard.jpg)
-</Frame>
+![The image shows a Microsoft Defender for Cloud Recommendations dashboard, listing various security controls for virtual machines, their scores, and potential improvements. It includes details on resource health and actions needed for each control.](https://kodekloud.com/kk-media/image/upload/v1752881883/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Explore-Azure-Security-Center-recommendations/microsoft-defender-cloud-recommendations-dashboard.jpg)
 
 These recommendations for virtual machines include:
 
@@ -45,9 +43,7 @@ By default, Microsoft Defender for Cloud provides these recommendations at no ex
 
 When you access the Azure portal and navigate to Defender for Cloud, you will find a dedicated section for security recommendations. For instance, selecting "All recommendations" displays a comprehensive dashboard:
 
-<Frame>
-  ![The image shows a Microsoft Defender for Cloud dashboard with security recommendations, displaying a secure score of 31% and listing various security tasks with their statuses and potential score increases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881884/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Explore-Azure-Security-Center-recommendations/microsoft-defender-cloud-dashboard-security.jpg)
-</Frame>
+![The image shows a Microsoft Defender for Cloud dashboard with security recommendations, displaying a secure score of 31% and listing various security tasks with their statuses and potential score increases.](https://kodekloud.com/kk-media/image/upload/v1752881884/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Explore-Azure-Security-Center-recommendations/microsoft-defender-cloud-dashboard-security.jpg)
 
 From this view, you can efficiently filter and identify recommendations specifically related to your virtual machines.
 
@@ -55,13 +51,9 @@ From this view, you can efficiently filter and identify recommendations specific
 
 Some recommendations may already be in progress or completed. For example, protecting management ports on virtual machines with just-in-time access might be partially implemented, as indicated by a status such as three out of five recommendations being complete. When you select a recommendation, detailed information is provided, such as the presence of unhealthy machines with public IP addresses. You can then choose to remediate the issue directly from the portal—a key advantage of using Microsoft Defender for Cloud.
 
-<Frame>
-  ![The image shows a Microsoft Defender for Cloud dashboard with security recommendations, highlighting active recommendations by severity and resource health status. It includes a list of specific security issues with their severity, status, and insights.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881885/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Explore-Azure-Security-Center-recommendations/microsoft-defender-cloud-dashboard-security-recommendations.jpg)
-</Frame>
+![The image shows a Microsoft Defender for Cloud dashboard with security recommendations, highlighting active recommendations by severity and resource health status. It includes a list of specific security issues with their severity, status, and insights.](https://kodekloud.com/kk-media/image/upload/v1752881885/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Explore-Azure-Security-Center-recommendations/microsoft-defender-cloud-dashboard-security-recommendations.jpg)
 
-<Callout icon="lightbulb">
-  It is essential to regularly review and act upon the recommended security measures to continuously enhance the security posture of your virtual machines.
-</Callout>
+> **lightbulb** It is essential to regularly review and act upon the recommended security measures to continuously enhance the security posture of your virtual machines.
 
 ## Conclusion
 
@@ -69,6 +61,4 @@ This article demonstrates that all virtual machine (VM)-related security recomme
 
 Happy securing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d8d70777-3d80-4e41-803e-0929352de5e7/lesson/83b3f459-f9a8-42c4-bf79-406198826c25" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d8d70777-3d80-4e41-803e-0929352de5e7/lesson/83b3f459-f9a8-42c4-bf79-406198826c25)

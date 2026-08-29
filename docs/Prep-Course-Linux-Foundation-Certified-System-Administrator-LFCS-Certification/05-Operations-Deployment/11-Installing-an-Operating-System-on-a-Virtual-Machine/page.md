@@ -6,9 +6,7 @@ This guide explains how to set up a virtual machine and install an operating sys
 
 Cloud images with pre-installed operating systems can simplify deployments by eliminating the OS installation step. However, in some cases, you may want to perform a fresh operating system installation on a virtual machine. This guide explains how to set up a virtual machine using a virtual CD-ROM/DVD-ROM and an empty disk image, then install an operating system using the virt-install tool.
 
-<Frame>
-  ![The image illustrates the process of installing an operating system on a virtual machine using a virtual CD/DVD drive.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881343/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Installing-an-Operating-System-on-a-Virtual-Machine/installing-os-virtual-machine.jpg)
-</Frame>
+![The image illustrates the process of installing an operating system on a virtual machine using a virtual CD/DVD drive.](https://kodekloud.com/kk-media/image/upload/v1752881343/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Installing-an-Operating-System-on-a-Virtual-Machine/installing-os-virtual-machine.jpg)
 
 ## Overview of the Process
 
@@ -77,13 +75,9 @@ As the setup continues, kernel output is generated, displaying messages similar 
 
 After the kernel completes its startup messages, the system boots directly into the Debian installer. In text-based terminal environments, the display might sometimes seem misaligned. Since the installation interface is minimal, not all languages or options may be available. You can simply press Enter to accept the default options during the initial setup.
 
-<Frame>
-  ![The image shows a text-based installation screen prompting the user to select a language, with "English" highlighted as the current selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881344/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Installing-an-Operating-System-on-a-Virtual-Machine/text-installation-language-selection-english.jpg)
-</Frame>
+![The image shows a text-based installation screen prompting the user to select a language, with "English" highlighted as the current selection.](https://kodekloud.com/kk-media/image/upload/v1752881344/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Installing-an-Operating-System-on-a-Virtual-Machine/text-installation-language-selection-english.jpg)
 
-<Callout icon="lightbulb">
-  For demonstration purposes, this guide stops at the installer boot stage. Continuing the process would trigger additional downloads and extended waiting times. If you wish to cancel the installation, press Ctrl+] to exit the terminal session.
-</Callout>
+> **lightbulb** For demonstration purposes, this guide stops at the installer boot stage. Continuing the process would trigger additional downloads and extended waiting times. If you wish to cancel the installation, press Ctrl+] to exit the terminal session.
 
 Please note that terminal outputs may sometimes appear distorted. In such situations, using the clear command might not fully resolve display issues.
 
@@ -93,8 +87,6 @@ This guide demonstrated how to create a virtual machine and perform a complete o
 
 This concludes the demonstration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/815399d5-0d94-4cd2-825e-44de760c5905" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/815399d5-0d94-4cd2-825e-44de760c5905)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/969eafd2-f6a1-4ddb-bdbf-829962cb2477" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/969eafd2-f6a1-4ddb-bdbf-829962cb2477)

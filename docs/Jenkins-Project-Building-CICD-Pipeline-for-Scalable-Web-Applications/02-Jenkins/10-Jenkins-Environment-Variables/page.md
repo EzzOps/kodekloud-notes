@@ -8,23 +8,17 @@ In this lesson, we explore environment variables in Jenkins and their importance
 
 Imagine an application that connects to a database. During development, the application might connect to a development database; however, in production, it needs to communicate with a production database. Hardcoding the development database's IP address is not a viable solution because the connection details must change in production. Instead, storing these details as environment variables ensures that the correct settings are applied based on the deployment target. The operating system supplies the appropriate configuration, enabling seamless transitions between environments.
 
-<Frame>
-  ![The image illustrates the concept of environment variables, showing an application connected to a database, with a key-value pair icon, and labels for development and production databases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879904/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Jenkins-Environment-Variables/environment-variables-app-database-diagram.jpg)
-</Frame>
+![The image illustrates the concept of environment variables, showing an application connected to a database, with a key-value pair icon, and labels for development and production databases.](https://kodekloud.com/kk-media/image/upload/v1752879904/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Jenkins-Environment-Variables/environment-variables-app-database-diagram.jpg)
 
 By storing your database connection details as environment variables on the target machine, your application can retrieve dynamic values at runtime. For instance, when deploying to production, you update the environment variables on the production server, allowing your application to connect to the production database without modifying code.
 
 Environment variables can store a wide range of information, including credentials, API keys, SSL certificates, secrets, SSH keys, and other critical configuration details. This approach not only adds flexibility but also enhances security by keeping sensitive data out of version-controlled source code.
 
-<Frame>
-  ![The image shows three icons labeled "Credentials," "Secrets," and "Keys" under the heading "Environment Variables."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879905/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Jenkins-Environment-Variables/environment-variables-credentials-secrets-keys.jpg)
-</Frame>
+![The image shows three icons labeled "Credentials," "Secrets," and "Keys" under the heading "Environment Variables."](https://kodekloud.com/kk-media/image/upload/v1752879905/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Jenkins-Environment-Variables/environment-variables-credentials-secrets-keys.jpg)
 
 Using environment variables is crucial in Jenkins because the Jenkinsfile is stored in your Git repository. Hardcoding sensitive information could expose it to unauthorized access. By leveraging environment variables, you ensure that sensitive data remains secure and is managed separately from your code.
 
-<Frame>
-  ![The image shows icons representing "Key value pair" and "Jenkins" under the heading "Environment Variables."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879906/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Jenkins-Environment-Variables/key-value-pair-jenkins-environment-variables.jpg)
-</Frame>
+![The image shows icons representing "Key value pair" and "Jenkins" under the heading "Environment Variables."](https://kodekloud.com/kk-media/image/upload/v1752879906/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Jenkins-Environment-Variables/key-value-pair-jenkins-environment-variables.jpg)
 
 ## Types of Environment Variables in Jenkins
 
@@ -129,18 +123,12 @@ pipeline {
 
 In this script, the build ID and Jenkins URL are printed during the build stage.
 
-<Callout icon="lightbulb">
-  * Use the Jenkins Credentials Plugin to inject secrets into environment variables instead of hardcoding them.
+> **lightbulb** * Use the Jenkins Credentials Plugin to inject secrets into environment variables instead of hardcoding them.
   * Maintain consistent naming conventions across all projects to improve clarity and maintenance.
   * Document the usage and purpose of each environment variable within your Jenkins jobs and pipelines.
-</Callout>
 
-<Frame>
-  ![The image outlines three best practices: keeping systems secure, maintaining consistency, and ensuring documentation. Each practice is represented by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879907/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Jenkins-Environment-Variables/best-practices-security-consistency-documentation.jpg)
-</Frame>
+![The image outlines three best practices: keeping systems secure, maintaining consistency, and ensuring documentation. Each practice is represented by an icon.](https://kodekloud.com/kk-media/image/upload/v1752879907/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Jenkins-Environment-Variables/best-practices-security-consistency-documentation.jpg)
 
 By leveraging environment variables effectively, you can create flexible, secure, and maintainable Jenkins pipelines that adapt seamlessly to different deployment environments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/12c83378-e826-4ed4-9161-be0e29c4a4f9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/12c83378-e826-4ed4-9161-be0e29c4a4f9)

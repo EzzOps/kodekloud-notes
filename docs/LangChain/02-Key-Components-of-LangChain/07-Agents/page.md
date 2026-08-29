@@ -24,9 +24,7 @@ Example travel scenario
 * LLM: Produces a booking plan (which service to call, pickup time relative to arrival, confirmation).
 * Agent: Executes the plan by calling the cab-booking API and reports back.
 
-<Callout icon="lightbulb">
-  Agents enable iterative reasoning: the LLM asks follow-ups, the agent gathers facts via tools, the LLM plans, and the agent executes. This loop allows complex workflows that go beyond single-prompt answers.
-</Callout>
+> **lightbulb** Agents enable iterative reasoning: the LLM asks follow-ups, the agent gathers facts via tools, the LLM plans, and the agent executes. This loop allows complex workflows that go beyond single-prompt answers.
 
 ## When to use agents
 

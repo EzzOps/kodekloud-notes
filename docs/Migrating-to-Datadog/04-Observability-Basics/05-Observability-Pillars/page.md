@@ -6,9 +6,7 @@ Explains metrics, logs, traces, and profiles and how correlating them helps diag
 
 We're returning to fundamentals to cover the four pillars of observability: metrics, logs, traces, and profiles. An observability stack exposes different kinds of telemetry so engineers can reason about system behavior. Knowing what each telemetry type represents, how it's used, and how to correlate them helps you diagnose incidents faster and optimize systems more effectively.
 
-<Callout icon="lightbulb">
-  Observability is most powerful when you combine telemetry types: metrics for trends and alerts, logs for detailed events, traces for request flow, and profiles for resource-level hotspots.
-</Callout>
+> **lightbulb** Observability is most powerful when you combine telemetry types: metrics for trends and alerts, logs for detailed events, traces for request flow, and profiles for resource-level hotspots.
 
 An observability stack commonly provides the following telemetry:
 
@@ -95,9 +93,7 @@ Key benefits of profiling:
 * Use flame graphs to quickly locate long-running or resource-heavy call stacks.
 * Combine profiles with traces to connect slow requests to hot code paths.
 
-<Callout icon="warning">
-  Be mindful of data volume and sampling: high-cardinality metrics and verbose logs can increase costs, while overly aggressive profiling or tracing can add overhead. Use sampling, aggregation, and structured logging to balance observability depth with performance and cost.
-</Callout>
+> **warning** Be mindful of data volume and sampling: high-cardinality metrics and verbose logs can increase costs, while overly aggressive profiling or tracing can add overhead. Use sampling, aggregation, and structured logging to balance observability depth with performance and cost.
 
 Links and References
 
@@ -108,6 +104,4 @@ Links and References
 
 And that's it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9d4795bc-91eb-4262-ae9c-f7153c17438e/lesson/662a3003-2c3e-4afc-b8da-f53c2d8c6ebe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9d4795bc-91eb-4262-ae9c-f7153c17438e/lesson/662a3003-2c3e-4afc-b8da-f53c2d8c6ebe)

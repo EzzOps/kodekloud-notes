@@ -152,9 +152,7 @@ When bootstrapping in GitOps mode you may see warnings like:
 
 This is expected during the GitOps bootstrap flow; Glasskube will push manifests to your Git repo and install Argo CD and Glasskube controllers into the cluster.
 
-<Callout icon="lightbulb">
-  Tip: Argo CD startup and the first Application sync can take a few minutes. Use the Argo CD UI to monitor Application sync status and logs for troubleshooting.
-</Callout>
+> **lightbulb** Tip: Argo CD startup and the first Application sync can take a few minutes. Use the Argo CD UI to monitor Application sync status and logs for troubleshooting.
 
 After Argo CD is installed, view the Glasskube UI to inspect available packages and installation status.
 
@@ -289,9 +287,7 @@ Summary — GitOps package management with Glasskube
 * Use Renovate for automated package upgrade PRs.
 * Argo CD continuously reconciles cluster state to match Git — merge changes to deploy updates.
 
-<Callout icon="lightbulb">
-  Tip: After pushing changes, allow a few minutes for Argo CD to detect and reconcile new manifests. If an application fails to sync, check the Argo CD application logs and the Glasskube controller logs for details.
-</Callout>
+> **lightbulb** Tip: After pushing changes, allow a few minutes for Argo CD to detect and reconcile new manifests. If an application fails to sync, check the Argo CD application logs and the Glasskube controller logs for details.
 
 Next steps
 Customize the ApplicationSet generators, add your own packages, tune Renovate rules, and practice making Git-driven changes to provision a production-ready GitOps-managed cluster with Glasskube.
@@ -303,8 +299,6 @@ Links and references
 * Renovate documentation: [https://docs.renovatebot.com/](https://docs.renovatebot.com/)
 * Kubernetes documentation: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/0ddd5879-550c-4c12-82cd-ac19fb487de5/lesson/dd6da699-addd-46c9-84d1-3ce0437e9af8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/0ddd5879-550c-4c12-82cd-ac19fb487de5/lesson/dd6da699-addd-46c9-84d1-3ce0437e9af8)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/0ddd5879-550c-4c12-82cd-ac19fb487de5/lesson/7e672c75-bb5d-4f2f-989a-bbbf77275c7f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/0ddd5879-550c-4c12-82cd-ac19fb487de5/lesson/7e672c75-bb5d-4f2f-989a-bbbf77275c7f)

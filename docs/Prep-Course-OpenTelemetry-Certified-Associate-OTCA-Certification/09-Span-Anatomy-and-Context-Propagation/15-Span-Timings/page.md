@@ -77,9 +77,7 @@ From the example timestamps we calculate:
 
 Note that many backends and processing layers compute duration from the start and end timestamps rather than storing it as a separate span attribute in the payload.
 
-<Callout icon="lightbulb">
-  Timestamps can be exported as RFC 3339/ISO 8601 strings or as epoch numeric fields (for example, `time_unix_nano` in OTLP protobuf). SDKs often provide microsecond or nanosecond precision, and observability backends derive duration from the recorded start and end times.
-</Callout>
+> **lightbulb** Timestamps can be exported as RFC 3339/ISO 8601 strings or as epoch numeric fields (for example, `time_unix_nano` in OTLP protobuf). SDKs often provide microsecond or nanosecond precision, and observability backends derive duration from the recorded start and end times.
 
 Span events: pinpointing moments inside a span
 
@@ -104,6 +102,4 @@ References
 * [RFC 3339 / ISO 8601 timestamps](https://www.rfc-editor.org/rfc/rfc3339.html)
 * OTLP protobuf: `time_unix_nano` (see OpenTelemetry proto repository)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/8a71c7c7-1de0-424d-b7c5-51f7adbdb682" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/8a71c7c7-1de0-424d-b7c5-51f7adbdb682)

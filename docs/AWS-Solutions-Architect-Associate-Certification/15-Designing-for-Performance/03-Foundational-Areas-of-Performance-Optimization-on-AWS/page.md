@@ -24,7 +24,7 @@ The optimal solution for a specific workload depends on varying technical requir
 
 For instance, while one approach may fall short, another that utilizes AWS services like DynamoDB can achieve single-digit millisecond latency with a fully managed NoSQL database—eliminating the burden of server management. Knowing AWS's extensive service portfolio is crucial to match your workload requirements with the best solution.
 
-![The image compares two architecture selection approaches, highlighting Approach 2 as the preferred option with a checkmark, while Approach 1 is marked with an X.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863529/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Foundational-Areas-of-Performance-Optimization-on-AWS/architecture-selection-comparison-checkmark-x.jpg)
+![The image compares two architecture selection approaches, highlighting Approach 2 as the preferred option with a checkmark, while Approach 1 is marked with an X.](https://kodekloud.com/kk-media/image/upload/v1752863529/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Foundational-Areas-of-Performance-Optimization-on-AWS/architecture-selection-comparison-checkmark-x.jpg)
 
 > **lightbulb** Always consider cost, trade-offs, and reference architectures. Utilize data-driven benchmarking and proof-of-concepts (POCs) to ensure your chosen approach meets your performance needs.
 
@@ -36,7 +36,7 @@ Choosing the right compute resources is vital and depends on your application's 
 
 Regularly reassessing your compute choices is essential to stay current with evolving performance needs. Monitoring metrics and leveraging features like dynamic scaling and auto-scaling ensures your AWS architecture adapts seamlessly to workload fluctuations.
 
-![The image outlines key points for optimizing compute and hardware performance, including periodic selection, constant evaluation, and dynamic scaling, alongside a simple diagram of a computer connected to servers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863530/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Foundational-Areas-of-Performance-Optimization-on-AWS/compute-hardware-performance-optimization.jpg)
+![The image outlines key points for optimizing compute and hardware performance, including periodic selection, constant evaluation, and dynamic scaling, alongside a simple diagram of a computer connected to servers.](https://kodekloud.com/kk-media/image/upload/v1752863530/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Foundational-Areas-of-Performance-Optimization-on-AWS/compute-hardware-performance-optimization.jpg)
 
 Key considerations include:
 
@@ -56,7 +56,7 @@ Effective data management strategies involve:
 * Optimizing for distinct data access patterns and frequency.
 * Leveraging metadata to monitor and fine-tune performance.
 
-![The image is a presentation slide titled "Area #3 – Data Management Performance," featuring a diagram of interconnected tables and a line graph, with bullet points about data management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863532/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Foundational-Areas-of-Performance-Optimization-on-AWS/data-management-performance-diagram.jpg)
+![The image is a presentation slide titled "Area #3 – Data Management Performance," featuring a diagram of interconnected tables and a line graph, with bullet points about data management.](https://kodekloud.com/kk-media/image/upload/v1752863532/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Foundational-Areas-of-Performance-Optimization-on-AWS/data-management-performance-diagram.jpg)
 
 > **lightbulb** Remember, there is no one-size-fits-all storage solution. Customize your data management approach using purpose-built tools that best suit your application's needs.
 
@@ -70,7 +70,7 @@ When scaling your AWS infrastructure, consider that instance sizing often influe
 
 An additional advantage is AWS's integrated load balancing, which distributes traffic across multiple compute resources to maintain efficient performance.
 
-![The image outlines key aspects of AWS networking and content delivery performance, highlighting virtualization, networking services, and load balancing. It includes a diagram illustrating network distribution to multiple servers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863533/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Foundational-Areas-of-Performance-Optimization-on-AWS/aws-networking-content-delivery-diagram.jpg)
+![The image outlines key aspects of AWS networking and content delivery performance, highlighting virtualization, networking services, and load balancing. It includes a diagram illustrating network distribution to multiple servers.](https://kodekloud.com/kk-media/image/upload/v1752863533/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Foundational-Areas-of-Performance-Optimization-on-AWS/aws-networking-content-delivery-diagram.jpg)
 
 Focus on building robust networking architectures that facilitate load distribution, improve latency, and ensure consistent throughput.
 
@@ -88,7 +88,7 @@ Key practices include:
 * Conducting rigorous performance testing and consistently reviewing operational metrics.
 * Adopting a culture of continuous improvement at both the organizational and individual levels.
 
-![The image is a presentation slide titled "Area #5 – Process and Culture," listing key concepts like "Infrastructure as Code" and "Deployment Pipelines," alongside a colorful, layered pyramid graphic with a lightbulb icon on top.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863534/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Foundational-Areas-of-Performance-Optimization-on-AWS/area-5-process-culture-pyramid.jpg)
+![The image is a presentation slide titled "Area #5 – Process and Culture," listing key concepts like "Infrastructure as Code" and "Deployment Pipelines," alongside a colorful, layered pyramid graphic with a lightbulb icon on top.](https://kodekloud.com/kk-media/image/upload/v1752863534/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Foundational-Areas-of-Performance-Optimization-on-AWS/area-5-process-culture-pyramid.jpg)
 
 > **lightbulb** Embracing a culture of continuous improvement not only drives performance but also fosters innovation and efficiency across your organization.
 
@@ -98,7 +98,7 @@ Key practices include:
 
 In summary, achieving exceptional performance on AWS involves a deep understanding and careful optimization of the five key areas: architecture selection, compute and hardware performance, data management performance, networking and content delivery performance, and process and culture. These categories integrate seamlessly with AWS design principles, ensuring that you choose the right services and configurations to meet your workload demands.
 
-![The image is a summary slide outlining key areas of cloud performance and design principles related to AWS services, including architecture selection, data management, and process and culture. It emphasizes the importance of these areas in design, though they are not directly tested in exams.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863535/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Foundational-Areas-of-Performance-Optimization-on-AWS/aws-cloud-performance-design-summary.jpg)
+![The image is a summary slide outlining key areas of cloud performance and design principles related to AWS services, including architecture selection, data management, and process and culture. It emphasizes the importance of these areas in design, though they are not directly tested in exams.](https://kodekloud.com/kk-media/image/upload/v1752863535/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Foundational-Areas-of-Performance-Optimization-on-AWS/aws-cloud-performance-design-summary.jpg)
 
 Thank you for reading. I’m Michael Forrester, and I look forward to exploring more AWS services with you in the next article. Join us online in the forums or stay tuned for our upcoming content!
 

@@ -72,9 +72,7 @@ Start by measuring tokens for every component in your prompt:
 
 Token counts rarely equal word counts—tokenization rules vary by model/tokenizer—so always use the tokenizer for your target model (or its official estimator). Many frameworks provide token-estimation utilities; for example, LangChain and other libraries include helpers to approximate token usage.
 
-<Callout icon="lightbulb">
-  Tokenizers and token counts differ by model and tokenizer implementation. Always use the same tokenizer as the target model (or its official estimator) to measure tokens accurately.
-</Callout>
+> **lightbulb** Tokenizers and token counts differ by model and tokenizer implementation. Always use the same tokenizer as the target model (or its official estimator) to measure tokens accurately.
 
 <Frame>
   <img alt="The image is a diagram titled &#x22;Measuring Token Usage,&#x22; showing a prompt divided into sections: &#x22;System,&#x22; &#x22;Instructions,&#x22; &#x22;Examples,&#x22; and &#x22;User Message,&#x22; highlighting a high token section and suggesting to identify and shorten token-heavy parts." />
@@ -90,9 +88,7 @@ When a prompt exceeds the context window, you can expect one of the following:
 | Automatic truncation | The system drops the oldest or least-priority tokens to fit the window | Important context may be lost without notice     |
 | Silent degradation   | The assistant responds but lacks necessary prior context               | Misaligned, inconsistent, or incorrect responses |
 
-<Callout icon="warning">
-  Automatic truncation can remove crucial context (e.g., user constraints or earlier clarifications). Relying on uncontrolled truncation is risky—implement deliberate context-management policies instead.
-</Callout>
+> **warning** Automatic truncation can remove crucial context (e.g., user constraints or earlier clarifications). Relying on uncontrolled truncation is risky—implement deliberate context-management policies instead.
 
 <Frame>
   <img alt="The image illustrates what happens when context overflows, showing that earlier context is truncated and important parts may be removed, potentially leading to AI misalignment." />
@@ -135,6 +131,4 @@ Further reading and references
 * LangChain: tokenizer and token-count helpers — [https://python.langchain.com/](https://python.langchain.com/)
 * Tokenizer libraries and guides (Byte Pair Encoding, GPT tokenizers)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/05995ed3-9e58-46e9-bf8c-2ae90b212ba8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/05995ed3-9e58-46e9-bf8c-2ae90b212ba8)

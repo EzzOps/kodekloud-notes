@@ -10,7 +10,7 @@ In this article, we explore several prevalent challenges encountered during depl
 
 Configuration drift occurs when the deployed system configuration deviates from the originally specified state. This misalignment can cause unanticipated issues if not detected early. Many cloud management platforms offer drift detection features—for instance, you might find a "detect stack drift" option in the upper right-hand corner of the interface. This tool helps you pinpoint differences between the intended configuration and the actual deployment state.
 
-![The image shows a screenshot of a cloud management interface highlighting deployment issues related to configuration drift, with a drift status indicating "DRIFTED" and details of specific resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860271/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Common-Deployment-Issues-and-Challenges/cloud-management-deployment-drift-screenshot.jpg)
+![The image shows a screenshot of a cloud management interface highlighting deployment issues related to configuration drift, with a drift status indicating "DRIFTED" and details of specific resources.](https://kodekloud.com/kk-media/image/upload/v1752860271/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Common-Deployment-Issues-and-Challenges/cloud-management-deployment-drift-screenshot.jpg)
 
 In the above screenshot, although a dead-letter queue remains aligned with its configuration, an SQS input queue has been modified, leading to an overall status of "DRIFTED."
 
@@ -47,7 +47,7 @@ Beyond code, infrastructure also relies on service dependencies. For example, en
 
 Handling unexpected traffic surges is another common deployment challenge. When demand increases, a resilient system must scale to accommodate the additional load. Auto Scaling combined with load balancers dynamically adjusts the number of instances to meet traffic demands.
 
-![The image illustrates a system architecture for handling traffic and scaling issues, featuring an application load balancer distributing requests to instances in two autoscaling groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860271/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Common-Deployment-Issues-and-Challenges/traffic-scaling-system-architecture.jpg)
+![The image illustrates a system architecture for handling traffic and scaling issues, featuring an application load balancer distributing requests to instances in two autoscaling groups.](https://kodekloud.com/kk-media/image/upload/v1752860271/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Common-Deployment-Issues-and-Challenges/traffic-scaling-system-architecture.jpg)
 
 For prolonged high-demand conditions, additional strategies—such as incorporating read replicas in Aurora/RDS or leveraging read nodes in ElastiCache—can further alleviate the pressure on your primary instances.
 
@@ -59,7 +59,7 @@ Managing rollbacks effectively is critical when deploying new software versions.
 
 For example, during a canary deployment, you might begin by directing only 10% of the traffic to the new version and gradually increase the exposure once confirmed stable. Decisions to either freeze the deployment or perform a rollback depend on real-time performance feedback.
 
-![The image illustrates a flowchart of rollback complexities in an AWS environment, showing interactions between Amazon API Gateway, AWS Lambda versions, Amazon S3, AWS CodeDeploy, and Amazon CloudWatch. It highlights traffic distribution, monitoring, and rollback processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860274/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Common-Deployment-Issues-and-Challenges/aws-rollback-complexities-flowchart.jpg)
+![The image illustrates a flowchart of rollback complexities in an AWS environment, showing interactions between Amazon API Gateway, AWS Lambda versions, Amazon S3, AWS CodeDeploy, and Amazon CloudWatch. It highlights traffic distribution, monitoring, and rollback processes.](https://kodekloud.com/kk-media/image/upload/v1752860274/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Common-Deployment-Issues-and-Challenges/aws-rollback-complexities-flowchart.jpg)
 
 > **triangle-alert** Always test your rollback procedures in a staging environment to ensure they work as expected during production failures.
 
@@ -69,7 +69,7 @@ Deployment strategies like blue-green, canary, or linear deployments each requir
 
 Maintaining overall system health extends beyond smooth deployment and scaling. Regular health checks are essential to ensure that microservices remain available and operate correctly. Network and connectivity problems—such as difficulties accessing message brokers or instances receiving imbalanced traffic—can severely hamper service quality.
 
-![The image illustrates network and connectivity issues in a microservices architecture, showing the health status of different instances and highlighting errors with specific components like the message broker and database engine. It uses color coding to indicate component availability, health, and interface errors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860275/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Common-Deployment-Issues-and-Challenges/microservices-network-connectivity-issues.jpg)
+![The image illustrates network and connectivity issues in a microservices architecture, showing the health status of different instances and highlighting errors with specific components like the message broker and database engine. It uses color coding to indicate component availability, health, and interface errors.](https://kodekloud.com/kk-media/image/upload/v1752860275/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Common-Deployment-Issues-and-Challenges/microservices-network-connectivity-issues.jpg)
 
 Active monitoring of these components helps quickly detect and resolve network-related issues, ensuring that the entire application ecosystem remains synchronized and resilient.
 

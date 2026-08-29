@@ -52,9 +52,7 @@ By managing system-wide environment profiles with files such as `/etc/environmen
 
 Happy configuring!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/69752e32-4511-4bd0-9301-8337e8b18011" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/69752e32-4511-4bd0-9301-8337e8b18011)
 
 
 # Manage Template User Environment
@@ -67,9 +65,7 @@ In this article, you'll learn how to manage the template user environment in Lin
 
 Imagine you want to inform every new user about a default policy while existing users are already familiar with it. To achieve this, you can add a custom file containing your policy message directly into /etc/skel.
 
-<Callout icon="lightbulb">
-  Adding a custom file in /etc/skel ensures that all new users automatically receive important information without manual intervention.
-</Callout>
+> **lightbulb** Adding a custom file in /etc/skel ensures that all new users automatically receive important information without manual intervention.
 
 ## Adding a Custom README
 
@@ -144,8 +140,6 @@ Any changes made to files in /etc/skel will be automatically applied when new us
 
 For more detailed information on managing user environments and best practices, consider exploring the [Linux Documentation Project](https://www.tldp.org/) or related [system administration guides](https://www.linux.com/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/69d90b4c-a1a1-4332-9e42-54eb9ebc05d1" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/69d90b4c-a1a1-4332-9e42-54eb9ebc05d1)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/c6d0947e-990f-44b5-9918-21b28398d7e6" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/b36d272b-24e2-44e1-82cb-20a5cfa93635/lesson/c6d0947e-990f-44b5-9918-21b28398d7e6)

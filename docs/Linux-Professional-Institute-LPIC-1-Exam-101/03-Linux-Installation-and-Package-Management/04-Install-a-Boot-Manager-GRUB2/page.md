@@ -6,9 +6,7 @@ This guide covers installing, configuring, and troubleshooting the GRUB2 bootloa
 
 Welcome to this comprehensive guide on installing, configuring, and troubleshooting the GRUB2 bootloader on CentOS Stream 8. You’ll learn how to recover a non-booting system using rescue media, install GRUB in BIOS or UEFI mode, customize its settings, and verify your changes.
 
-<Frame>
-  ![The image shows a boot menu for CentOS Stream 8-stream, offering options to install, test media, or troubleshoot.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881426/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Install-a-Boot-Manager-GRUB2/centos-stream-8-boot-menu-options.jpg)
-</Frame>
+![The image shows a boot menu for CentOS Stream 8-stream, offering options to install, test media, or troubleshoot.](https://kodekloud.com/kk-media/image/upload/v1752881426/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Install-a-Boot-Manager-GRUB2/centos-stream-8-boot-menu-options.jpg)
 
 ***
 
@@ -20,9 +18,7 @@ Before you begin, ensure you have:
 * Physical or virtual access to the target machine.
 * A basic understanding of Linux shell commands.
 
-<Callout icon="lightbulb">
-  You will need root (or sudo) privileges to run most commands in this tutorial.
-</Callout>
+> **lightbulb** You will need root (or sudo) privileges to run most commands in this tutorial.
 
 ***
 

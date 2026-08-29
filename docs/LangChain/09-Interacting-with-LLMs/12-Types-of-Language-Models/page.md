@@ -26,9 +26,7 @@ Links and references
 * [OpenAI API keys](https://platform.openai.com/account/api-keys)
 * [python-dotenv (for local dev secrets)](https://pypi.org/project/python-dotenv/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/5f40ca43-ec72-4c68-a0df-06085674863e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/5f40ca43-ec72-4c68-a0df-06085674863e)
 
 
 # Types of Language Models
@@ -44,9 +42,7 @@ Large language models (LLMs) fall into two primary categories: Base LLMs and Cha
 * Base LLMs: General-purpose models trained to model and generate text from a single prompt.
 * Chat models: LLM variants fine-tuned for conversational interaction, often using supervised dialogue data and reinforcement learning from human feedback (RLHF).
 
-<Callout icon="lightbulb">
-  Use Base LLMs when you need single-turn generation (e.g., text completion, creative writing) and Chat models when you require multi-turn, stateful conversations (e.g., chatbots, assistants).
-</Callout>
+> **lightbulb** Use Base LLMs when you need single-turn generation (e.g., text completion, creative writing) and Chat models when you require multi-turn, stateful conversations (e.g., chatbots, assistants).
 
 ## 1) Base LLMs
 
@@ -91,9 +87,7 @@ Use cases:
 * Assistants that maintain session state across turns
 * Multi-step workflows and applications requiring follow-up questions
 
-<Callout icon="warning">
-  Chat models can maintain context across many messages, but they can still hallucinate or produce unwanted outputs. Use system messages, prompt engineering, and moderation/safety layers to reduce risk.
-</Callout>
+> **warning** Chat models can maintain context across many messages, but they can still hallucinate or produce unwanted outputs. Use system messages, prompt engineering, and moderation/safety layers to reduce risk.
 
 ## Side-by-side comparison
 
@@ -132,6 +126,4 @@ Use cases:
 
 In this lesson, you will learn how to interact with both Base LLMs and Chat models, and select the pattern that best fits your use case.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/46332dc3-f81b-4b21-bd67-574c6a4de70a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/46332dc3-f81b-4b21-bd67-574c6a4de70a)

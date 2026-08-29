@@ -61,9 +61,7 @@ DynamoDB supports ACID transactions for multi-item, multi-table operations. When
 * Isolation — in-flight transaction changes are not visible until commit.
 * Durability — committed transactions persist despite failures.
 
-<Callout icon="lightbulb">
-  Use DynamoDB transactions when you require strong consistency across multiple items (for example, transferring balances between accounts). Transactions incur additional cost and throughput considerations, so use them only when necessary.
-</Callout>
+> **lightbulb** Use DynamoDB transactions when you require strong consistency across multiple items (for example, transferring balances between accounts). Transactions incur additional cost and throughput considerations, so use them only when necessary.
 
 <Frame>
   <img alt="A slide titled &#x22;DynamoDB Transactions – ACID Properties&#x22; showing four colored panels labeled Atomicity, Consistency, Isolation, and Durability with corresponding icons beneath each. The slide appears to illustrate the ACID properties of DynamoDB transactions." />
@@ -117,9 +115,7 @@ Two primary key types:
    * The partition key groups items; the sort key orders items within the partition.
    * The pair (partition key, sort key) must be unique. The same partition key can appear in multiple items if the sort key differs.
 
-<Callout icon="warning">
-  Primary keys are immutable: you cannot change an item's primary key values. To "change" a primary key you must create a new item and delete the old one.
-</Callout>
+> **warning** Primary keys are immutable: you cannot change an item's primary key values. To "change" a primary key you must create a new item and delete the old one.
 
 <Frame>
   <img alt="A presentation slide explaining primary/partition keys using a sample employee table where &#x22;employee_id&#x22; is marked as the partition key and &#x22;name&#x22;, &#x22;email&#x22;, and &#x22;salary&#x22; are shown as attributes. The table highlights duplicate employee_id values to illustrate the uniqueness requirement." />
@@ -172,6 +168,4 @@ Further reading and references
 
 Use the above references to deepen your understanding of DynamoDB integration patterns, pricing models (on-demand vs provisioned), and best practices for table design and indexing.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/da590403-c3a4-45ff-95e1-7f539adf90e8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/da590403-c3a4-45ff-95e1-7f539adf90e8)

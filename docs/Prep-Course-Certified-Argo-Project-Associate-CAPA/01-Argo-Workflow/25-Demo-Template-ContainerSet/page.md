@@ -50,9 +50,7 @@ Inspecting logs and individual container output
   <img alt="A screenshot of an Argo Workflows web UI showing a &#x22;Logs&#x22; modal with a container dropdown (showing options like main, init, wait, a, b), an empty log area, and filter/UTC fields. A dark left sidebar with app icons and a top bar with workflow controls (RESUBMIT, DELETE) is visible behind it." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Container set templates run multiple containers in the same pod (sidecars). Use the Logs dropdown in the Argo UI to select logs for each container (init, wait, a, b, etc.). Choose `containerSet` when containers must share networking, storage, or lifecycle; choose separate templates when you need separate pods or separate scheduling/scaling behavior.
-</Callout>
+> **lightbulb** Container set templates run multiple containers in the same pod (sidecars). Use the Logs dropdown in the Argo UI to select logs for each container (init, wait, a, b, etc.). Choose `containerSet` when containers must share networking, storage, or lifecycle; choose separate templates when you need separate pods or separate scheduling/scaling behavior.
 
 When to use containerSet vs separate templates
 
@@ -74,6 +72,4 @@ References and further reading
 
 This example demonstrates how `containerSet` enables sidecar-like behavior inside Argo Workflows and how to inspect and debug those containers via the Argo UI.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/3dafa9f3-9427-4f69-8d97-4f9ba1fd7523" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/3dafa9f3-9427-4f69-8d97-4f9ba1fd7523)

@@ -10,7 +10,7 @@ Consider an S3 bucket serving multiple stakeholders, such as developers, infrast
 
 When all these requirements are consolidated into a single bucket policy, the configuration can quickly become overly complex:
 
-![The image illustrates a diagram of access points to a central bucket, with roles such as Legal, Developers, Infra, and Admin connected to it, highlighting a "very complex bucket policy."](../../../../images/kodekloud.com/kk-media/image/upload/v1752866034/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points/access-points-bucket-policy-diagram.jpg)
+![The image illustrates a diagram of access points to a central bucket, with roles such as Legal, Developers, Infra, and Admin connected to it, highlighting a "very complex bucket policy."](https://kodekloud.com/kk-media/image/upload/v1752866034/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points/access-points-bucket-policy-diagram.jpg)
 
 To manage this complexity, you can create separate access points for each group. Each access point acts as a dedicated gateway into the S3 bucket, with its own Amazon Resource Name (ARN) and a set of finely tuned policies.
 
@@ -18,7 +18,7 @@ For instance, when developers need access to objects in the S3 bucket, they refe
 
 The following diagram illustrates how different user roles access a central resource through dedicated access points:
 
-![The image is a diagram showing different user roles (Developers, Admin, Infra, Legal) accessing a central resource, represented by a bucket, through access points. Each role is depicted with an icon and connected to the bucket via arrows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866035/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points/user-roles-access-diagram.jpg)
+![The image is a diagram showing different user roles (Developers, Admin, Infra, Legal) accessing a central resource, represented by a bucket, through access points. Each role is depicted with an icon and connected to the bucket via arrows.](https://kodekloud.com/kk-media/image/upload/v1752866035/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points/user-roles-access-diagram.jpg)
 
 > **lightbulb** Access points not only simplify policy management but also enhance security by isolating permissions. This approach reduces the risk associated with misconfigurations typically found in complex bucket policies.
 
@@ -26,13 +26,13 @@ Another significant benefit of access points is their capability to enforce netw
 
 This concept is demonstrated in the diagram below:
 
-![The image illustrates a concept of access point restriction for Virtual Private Clouds (VPCs), showing one VPC with access and another without, leading to a storage bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866036/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points/vpc-access-point-restriction-diagram.jpg)
+![The image illustrates a concept of access point restriction for Virtual Private Clouds (VPCs), showing one VPC with access and another without, leading to a storage bucket.](https://kodekloud.com/kk-media/image/upload/v1752866036/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points/vpc-access-point-restriction-diagram.jpg)
 
 When defining access point policies, it is important to note that the initial configuration requires the access point policy to be mirrored in the bucket policy. However, to streamline management and reduce redundancy, you can modify the bucket policy to delegate access control directly to the access points. This delegation centralizes policy management at the access point level and minimizes the need for frequent updates to the bucket policy.
 
 This approach is illustrated below:
 
-![The image illustrates an "Access Point Policy" with diagrams showing the process of copying policies to a bucket policy and delegating policies to an access point.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866039/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points/access-point-policy-diagram.jpg)
+![The image illustrates an "Access Point Policy" with diagrams showing the process of copying policies to a bucket policy and delegating policies to an access point.](https://kodekloud.com/kk-media/image/upload/v1752866039/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points/access-point-policy-diagram.jpg)
 
 ## Benefits of Using S3 Access Points
 
@@ -45,7 +45,7 @@ This approach is illustrated below:
 
 The summary diagram below encapsulates these key points:
 
-![The image is a summary slide outlining five points about managing access to S3 buckets, including simplifying access management, assigning access points, and applying policies to access points.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866040/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points/s3-bucket-access-management-summary.jpg)
+![The image is a summary slide outlining five points about managing access to S3 buckets, including simplifying access management, assigning access points, and applying policies to access points.](https://kodekloud.com/kk-media/image/upload/v1752866040/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points/s3-bucket-access-management-summary.jpg)
 
 > **lightbulb** S3 Access Points offer an effective method to segregate and manage access rights for various roles, enhance security through network control, and simplify policy management. Leveraging dedicated access points can significantly reduce the complexity of your S3 bucket policies.
 

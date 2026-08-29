@@ -14,11 +14,9 @@ To create an archive, such as "archive2.star" located in your home directory con
 $ star -cv file=/home/aaron/archive2.star file1
 ```
 
-<Callout icon="lightbulb">
-  * The flags `c` (create), `t` (list), and `x` (extract) are combined with a dash (e.g., `-cv`).
+> **lightbulb** * The flags `c` (create), `t` (list), and `x` (extract) are combined with a dash (e.g., `-cv`).
   * Specify the archive location with `file=` followed by the desired path.
   * After the archive location, list the files or directories to be included.
-</Callout>
 
 ### Listing Archive Contents
 
@@ -72,14 +70,10 @@ $ star -xv file=/home/aaron/archive2.star.gz
 
 The same process applies to bzip2-compressed archives; simply supply the filename when using the extract option.
 
-<Callout icon="lightbulb">
-  Remember: Star’s syntax is similar to tar, with the key difference being the order of arguments. Always specify the archive location using `file=` before listing the files or directories.
-</Callout>
+> **lightbulb** Remember: Star’s syntax is similar to tar, with the key difference being the order of arguments. Always specify the archive location using `file=` before listing the files or directories.
 
 By following these examples, you can efficiently manage files and directories with star on Linux systems. Whether you're creating archives, compressing them using gzip or bzip2, or extracting files to a specified directory, star provides a flexible and straightforward approach.
 
 For further information on Linux archiving tools, consider checking out the [Linux Documentation](https://www.kernel.org/doc/html/latest/) or [tar Manual Page](https://www.gnu.org/software/tar/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/d90701cd-3eb7-4dd9-af5d-3eefe23e4d02" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/d90701cd-3eb7-4dd9-af5d-3eefe23e4d02)

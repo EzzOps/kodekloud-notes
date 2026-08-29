@@ -18,7 +18,7 @@ az keyvault secret show \
 
 > **lightbulb** Ensure your user or service principal has the `Key Vault Contributor` role or an equivalent access policy.
 
-![The image is a slide titled "Implementing and Managing Secrets, Keys, and Certificates by Using Azure Key Vault," listing three topics: Exploring Azure Key Vault, Understanding Secrets, and Working With Keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867973/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/implementing-managing-secrets-azure-key-vault.jpg)
+![The image is a slide titled "Implementing and Managing Secrets, Keys, and Certificates by Using Azure Key Vault," listing three topics: Exploring Azure Key Vault, Understanding Secrets, and Working With Keys.](https://kodekloud.com/kk-media/image/upload/v1752867973/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/implementing-managing-secrets-azure-key-vault.jpg)
 
 ### Access Control, Monitoring, and Best Practices
 
@@ -30,7 +30,7 @@ Secure your vault by defining access policies, enabling logging with Azure Monit
 | Diagnostic Logging | Capture read/write operations for audit and alerts |
 | Key Rotation       | Automate renewal of keys and certificates          |
 
-![The image is a slide titled "Implementing and Managing Secrets, Keys, and Certificates by Using Azure Key Vault," listing topics such as Access Policies, Monitoring and Logging, and Best Practices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867974/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/implementing-managing-secrets-azure-key-vault-2.jpg)
+![The image is a slide titled "Implementing and Managing Secrets, Keys, and Certificates by Using Azure Key Vault," listing topics such as Access Policies, Monitoring and Logging, and Best Practices.](https://kodekloud.com/kk-media/image/upload/v1752867974/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/implementing-managing-secrets-azure-key-vault-2.jpg)
 
 ***
 
@@ -75,7 +75,7 @@ steps:
 
 > **lightbulb** Use the Azure Key Vault task in Azure Pipelines to pull secrets at runtime rather than storing them statically.
 
-![The image is a slide titled "Implementing and Managing Secrets in GitHub Actions and Azure Pipelines," listing four topics: understanding secrets in DevOps, managing secrets in GitHub Actions, secrets in Azure Pipelines, and best practices in GitHub Actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867976/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/implementing-managing-secrets-github-azure.jpg)
+![The image is a slide titled "Implementing and Managing Secrets in GitHub Actions and Azure Pipelines," listing four topics: understanding secrets in DevOps, managing secrets in GitHub Actions, secrets in Azure Pipelines, and best practices in GitHub Actions.](https://kodekloud.com/kk-media/image/upload/v1752867976/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/implementing-managing-secrets-github-azure.jpg)
 
 ***
 
@@ -91,7 +91,7 @@ Service connections let your pipelines authenticate to external systems such as 
 | GitHub                 | Checkout or trigger workflows on GitHub |
 | Docker Registry        | Push/pull container images              |
 
-![The image is a slide titled "Using Service Connections in Pipeline," listing two topics: "Introduction to Service Connections in Azure Pipelines" and "Types of Service Connections."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867977/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/using-service-connections-azure-pipelines.jpg)
+![The image is a slide titled "Using Service Connections in Pipeline," listing two topics: "Introduction to Service Connections in Azure Pipelines" and "Types of Service Connections."](https://kodekloud.com/kk-media/image/upload/v1752867977/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/using-service-connections-azure-pipelines.jpg)
 
 ### Configuring and Using Service Connections
 
@@ -111,7 +111,7 @@ steps:
       echo "Cloning via $(MyGitHubConnection)"
 ```
 
-![The image is a slide titled "Using Service Connections in Pipeline," listing three topics: configuring GitHub service connections, using service connections in pipelines, and best practices for managing service connections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867978/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/using-service-connections-pipeline-slide.jpg)
+![The image is a slide titled "Using Service Connections in Pipeline," listing three topics: configuring GitHub service connections, using service connections in pipelines, and best practices for managing service connections.](https://kodekloud.com/kk-media/image/upload/v1752867978/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/using-service-connections-pipeline-slide.jpg)
 
 ***
 

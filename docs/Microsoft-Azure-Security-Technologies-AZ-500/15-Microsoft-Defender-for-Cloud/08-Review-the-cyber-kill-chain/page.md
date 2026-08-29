@@ -32,13 +32,9 @@ In this article, we explore the Cyber Kill Chain—a comprehensive framework tha
 8. **Exfiltration**\
    In the final phase, the attacker extracts valuable data from the compromised system.
 
-<Frame>
-  ![The image illustrates the stages of a cyber kill chain, including reconnaissance, intrusion, exploitation, privilege escalation, lateral movement, obfuscation, denial of service, and exfiltration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882038/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Review-the-cyber-kill-chain/cyber-kill-chain-stages-diagram.jpg)
-</Frame>
+![The image illustrates the stages of a cyber kill chain, including reconnaissance, intrusion, exploitation, privilege escalation, lateral movement, obfuscation, denial of service, and exfiltration.](https://kodekloud.com/kk-media/image/upload/v1752882038/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Review-the-cyber-kill-chain/cyber-kill-chain-stages-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Understanding each phase of the Cyber Kill Chain is essential for building effective defense strategies. By identifying and monitoring these stages, organizations can detect early signs of intrusion and prevent further compromise.
-</Callout>
+> **lightbulb** Understanding each phase of the Cyber Kill Chain is essential for building effective defense strategies. By identifying and monitoring these stages, organizations can detect early signs of intrusion and prevent further compromise.
 
 ## Enhancing Security with Microsoft Defender for Cloud
 
@@ -48,6 +44,4 @@ By integrating Microsoft Defender for Cloud into your security strategy, you enh
 
 For additional guidance on improving your security measures and understanding threat patterns, refer to relevant resources in the [Microsoft Defender for Cloud documentation](https://learn.microsoft.com/en-us/azure/defender-for-cloud).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/aea85892-224f-4bd2-8013-e36764e15f37/lesson/fc552bde-c894-4c9e-9446-c93548746cff" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/aea85892-224f-4bd2-8013-e36764e15f37/lesson/fc552bde-c894-4c9e-9446-c93548746cff)

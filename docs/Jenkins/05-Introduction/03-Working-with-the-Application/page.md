@@ -31,9 +31,7 @@ Next, test the API endpoints:
   /api/books
   ```
 
-<Frame>
-  ![The image shows a browser with the address bar displaying "localhost:8080/a" and a dropdown of suggested URLs related to local API endpoints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880072/notes-assets/images/Jenkins-Working-with-the-Application/frame_60.jpg)
-</Frame>
+![The image shows a browser with the address bar displaying "localhost:8080/a" and a dropdown of suggested URLs related to local API endpoints.](https://kodekloud.com/kk-media/image/upload/v1752880072/notes-assets/images/Jenkins-Working-with-the-Application/frame_60.jpg)
 
 This endpoint retrieves information about the books available in the application.
 
@@ -76,17 +74,13 @@ This command runs all tests in the controller directory. A successful test run w
 2022-02-24T09:06:33.235-0500 INFO  middleware/middleware.go:89 ::1 test /api/books GET 200
 ```
 
-<Callout icon="lightbulb">
-  Integrating tests in your CI/CD pipeline can save you time by automatically running these tests during every code change.
-</Callout>
+> **lightbulb** Integrating tests in your CI/CD pipeline can save you time by automatically running these tests during every code change.
 
 ## The Challenges of Manual Testing
 
 Manually starting the application, opening a browser, and testing each API endpoint can be tedious—especially when small changes require repeated tests. This process is inefficient for DevOps engineers.
 
-<Frame>
-  ![The image shows a Visual Studio Code interface with a file explorer and terminal displaying debug logs for a Go web application project.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880073/notes-assets/images/Jenkins-Working-with-the-Application/frame_170.jpg)
-</Frame>
+![The image shows a Visual Studio Code interface with a file explorer and terminal displaying debug logs for a Go web application project.](https://kodekloud.com/kk-media/image/upload/v1752880073/notes-assets/images/Jenkins-Working-with-the-Application/frame_170.jpg)
 
 Instead, automating tests via a CI/CD pipeline with [Jenkins](https://learn.kodekloud.com/user/courses/jenkins) streamlines this process. In a CI pipeline, commands like "go test -v ." are executed automatically, promptly identifying any failures. Here’s an example of test output from a CI process:
 
@@ -104,9 +98,7 @@ ok      github.com/ybkuroki/go-webapp-sample/controller (cached)
 
 By integrating tests with Jenkins, you eliminate the need for manual testing, ensuring consistent and reliable API validation.
 
-<Callout icon="triangle-alert">
-  Always verify that your CI/CD pipeline is running tests automatically after every change to catch any issues early.
-</Callout>
+> **triangle-alert** Always verify that your CI/CD pipeline is running tests automatically after every change to catch any issues early.
 
 ## Visualizing the API with Swagger
 
@@ -118,14 +110,10 @@ The application includes a Swagger API interface that documents all available en
 
 This Swagger UI displays detailed information about each API endpoint such as GET, POST, PUT, and DELETE methods, making it an invaluable resource during development and debugging.
 
-<Frame>
-  ![The image shows a Swagger UI interface displaying API endpoints for authentication, book management, and categories, with methods like GET, POST, PUT, and DELETE.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880074/notes-assets/images/Jenkins-Working-with-the-Application/frame_290.jpg)
-</Frame>
+![The image shows a Swagger UI interface displaying API endpoints for authentication, book management, and categories, with methods like GET, POST, PUT, and DELETE.](https://kodekloud.com/kk-media/image/upload/v1752880074/notes-assets/images/Jenkins-Working-with-the-Application/frame_290.jpg)
 
 That concludes this article. Now, it's time to practice what you've learned and enhance your development workflow.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/5a828d07-ced8-44a3-8b8d-f2467f247360/lesson/14d43374-e4d6-42bf-9c2f-968d2f26e985" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/5a828d07-ced8-44a3-8b8d-f2467f247360/lesson/14d43374-e4d6-42bf-9c2f-968d2f26e985)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/5a828d07-ced8-44a3-8b8d-f2467f247360/lesson/676b9040-7278-403f-a1a4-8de0fa5dc83c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/jenkins/module/5a828d07-ced8-44a3-8b8d-f2467f247360/lesson/676b9040-7278-403f-a1a4-8de0fa5dc83c)

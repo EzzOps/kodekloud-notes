@@ -36,7 +36,7 @@ Welcome to KODEKLOUD! Visitor Count: 9
 
 Adhering to the principles of the [12 Factor App](https://learn.kodekloud.com/user/courses/12-factor-app) methodology, our deployment process strictly separates these stages. The diagram below illustrates the separation between build, release, and run phases:
 
-![The image describes the twelve-factor app's strict separation between build, release, and run stages, labeled as "V Build, release, run."](../../../../images/kodekloud.com/kk-media/image/upload/v1752856825/notes-assets/images/12-Factor-App-Build-Release-and-Run/frame_50.jpg)
+![The image describes the twelve-factor app's strict separation between build, release, and run stages, labeled as "V Build, release, run."](https://kodekloud.com/kk-media/image/upload/v1752856825/notes-assets/images/12-Factor-App-Build-Release-and-Run/frame_50.jpg)
 
 ## Phases of the Deployment Cycle
 

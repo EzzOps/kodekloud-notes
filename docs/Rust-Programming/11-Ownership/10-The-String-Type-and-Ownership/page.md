@@ -25,9 +25,7 @@ fn main() {
 
 In this example, the variable `s` is declared as mutable, allowing you to change its reference. Initially, the program prints "hello", and after being reassigned, it prints "world". Remember, even though `s` is mutable, the content of each string literal remains immutable.
 
-<Callout icon="lightbulb">
-  Always keep in mind that string literals are hardcoded into your program's binary and cannot be altered at runtime.
-</Callout>
+> **lightbulb** Always keep in mind that string literals are hardcoded into your program's binary and cannot be altered at runtime.
 
 ## The String Object
 
@@ -84,12 +82,8 @@ This example clearly shows that:
 * **String Literals** are immutable and stored in read-only memory.
 * **String Objects** are mutable and allocated on the heap, making them ideal for scenarios where you need to modify or extend the string value.
 
-<Callout icon="lightbulb">
-  Understanding the differences between string literals and `String` objects is essential for writing efficient and safe Rust code. This knowledge helps you choose the appropriate type based on whether immutability or dynamic modification is required.
-</Callout>
+> **lightbulb** Understanding the differences between string literals and `String` objects is essential for writing efficient and safe Rust code. This knowledge helps you choose the appropriate type based on whether immutability or dynamic modification is required.
 
 For further reading, consider exploring the [Rust Programming Language Book](https://doc.rust-lang.org/book/) to deepen your understanding of memory management and ownership in Rust.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/6a20d77b-a8bb-45ae-b7bd-246802a1281a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/6a20d77b-a8bb-45ae-b7bd-246802a1281a)

@@ -10,7 +10,7 @@ In this lesson, we explore the design considerations for Azure Files—a service
 
 Azure Files is organized hierarchically, starting with a storage account. Within this account, you can create multiple file shares (e.g., A, B, C). Each file share contains directories (or folders) where individual files are stored.
 
-![The image is a diagram illustrating the structure of Azure Files, showing the flow from an Azure File Service account to file shares, directories, and individual files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867120/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Files/azure-files-structure-diagram.jpg)
+![The image is a diagram illustrating the structure of Azure Files, showing the flow from an Azure File Service account to file shares, directories, and individual files.](https://kodekloud.com/kk-media/image/upload/v1752867120/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Files/azure-files-structure-diagram.jpg)
 
 > **lightbulb** Azure Files is designed for easy and scalable file storage in the cloud, providing seamless integration with different operating systems.
 
@@ -24,7 +24,7 @@ There are two main methods to access your Azure file shares:
 2. **Azure File Sync:**\
    Azure File Sync converts your on-premises Windows servers into caches for your Azure file shares. This setup centralizes file management by caching frequently accessed files locally, thereby reducing retrieval times compared to cloud downloads. The tiering feature helps prioritize and cache critical files on-premises.
 
-![The image is an infographic from KodeKloud about accessing file shares, highlighting two methods: direct mounting using the SMB protocol and Azure File Sync for centralizing file shares.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867121/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Files/kodekloud-file-shares-infographic.jpg)
+![The image is an infographic from KodeKloud about accessing file shares, highlighting two methods: direct mounting using the SMB protocol and Azure File Sync for centralizing file shares.](https://kodekloud.com/kk-media/image/upload/v1752867121/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Files/kodekloud-file-shares-infographic.jpg)
 
 ## Performance Levels
 
@@ -36,7 +36,7 @@ The performance of your Azure file share depends on your business needs and cost
 * **Premium Tier:**\
   This tier takes advantage of SSD storage, resulting in lower, single-digit millisecond latencies. Premium file shares support up to 100,000 IOPS and offer bandwidth up to 5 gigabits per second. Because of its enhanced performance, the premium tier is more expensive and is currently available only in zones that support ZRS. When creating a file share, select the premium option if your region supports it.
 
-![The image compares two performance levels, "Standard" and "Premium," for data storage, highlighting differences in latency, IOPS, bandwidth, and cost. The "Standard" uses HDDs, while the "Premium" uses SSDs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867123/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Files/performance-comparison-standard-premium.jpg)
+![The image compares two performance levels, "Standard" and "Premium," for data storage, highlighting differences in latency, IOPS, bandwidth, and cost. The "Standard" uses HDDs, while the "Premium" uses SSDs.](https://kodekloud.com/kk-media/image/upload/v1752867123/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Files/performance-comparison-standard-premium.jpg)
 
 ## Storage Tiers for Azure Files
 
@@ -51,7 +51,7 @@ Azure Files provides various storage tiers designed to balance performance and c
 
 > **lightbulb** Only the Premium tier utilizes SSD storage; the Transaction Optimized, Hot, and Cool tiers all rely on HDD storage.
 
-![The image describes four storage tiers: Premium, Transaction Optimized, Hot, and Cool, each with different performance and cost characteristics for data storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867124/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Files/storage-tiers-premium-transaction-hot-cool.jpg)
+![The image describes four storage tiers: Premium, Transaction Optimized, Hot, and Cool, each with different performance and cost characteristics for data storage.](https://kodekloud.com/kk-media/image/upload/v1752867124/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Files/storage-tiers-premium-transaction-hot-cool.jpg)
 
 ## Comparison with Blob Storage and Azure NetApp Files
 

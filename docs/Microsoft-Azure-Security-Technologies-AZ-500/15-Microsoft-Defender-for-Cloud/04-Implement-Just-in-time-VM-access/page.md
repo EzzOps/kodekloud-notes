@@ -14,9 +14,7 @@ Exposing management ports to the internet poses security risks. With JIT access,
 * Granular control over privileged access.
 * Comprehensive audit trails that log every access request, approval, and active timeframe.
 
-<Callout icon="lightbulb">
-  Regularly review and update your access policies to align with evolving security requirements.
-</Callout>
+> **lightbulb** Regularly review and update your access policies to align with evolving security requirements.
 
 ## How JIT Access Works
 
@@ -45,46 +43,34 @@ Below, we walk through the configuration process for JIT access using the Azure 
 
 Assume you have a Linux VM with port 22 exposed to the internet. Begin by reviewing its Network Security Group (NSG) settings.
 
-<Frame>
-  ![The image shows the network settings page for a virtual machine named "linux-brtf-vm" in the Microsoft Azure portal, displaying details like network interface, IP addresses, and security rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882025/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Just-in-time-VM-access/azure-virtual-machine-network-settings.jpg)
-</Frame>
+![The image shows the network settings page for a virtual machine named "linux-brtf-vm" in the Microsoft Azure portal, displaying details like network interface, IP addresses, and security rules.](https://kodekloud.com/kk-media/image/upload/v1752882025/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Just-in-time-VM-access/azure-virtual-machine-network-settings.jpg)
 
 ### Step 2: Access Microsoft Defender for Cloud
 
 Next, navigate to Microsoft Defender for Cloud to explore the JIT access settings. Look for the "Workload Protection" quick link, which, after a brief load, displays JIT VM access details.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen for a virtual machine, displaying security recommendations from Microsoft Defender for Cloud. It lists six recommendations with varying severity levels to enhance security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882026/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Just-in-time-VM-access/azure-portal-virtual-machine-security-recommendations.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen for a virtual machine, displaying security recommendations from Microsoft Defender for Cloud. It lists six recommendations with varying severity levels to enhance security.](https://kodekloud.com/kk-media/image/upload/v1752882026/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Just-in-time-VM-access/azure-portal-virtual-machine-security-recommendations.jpg)
 
 In some cases, you might see a message indicating that no machines are currently configured with JIT. This occurs when the VM without a public IP is considered secure. However, for machines with NSGs allowing access to management ports, enabling JIT is highly recommended.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for "Just-in-time VM access," displaying a list of virtual machines with their configuration status and security details. It highlights the importance of enabling JIT access to restrict management port access for VMs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882027/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Just-in-time-VM-access/azure-portal-just-in-time-vm-access.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for "Just-in-time VM access," displaying a list of virtual machines with their configuration status and security details. It highlights the importance of enabling JIT access to restrict management port access for VMs.](https://kodekloud.com/kk-media/image/upload/v1752882027/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Just-in-time-VM-access/azure-portal-just-in-time-vm-access.jpg)
 
 ### Step 3: Configure JIT Access
 
 Select the virtual machine that requires JIT access configuration. For a Linux VM, you might want to remove any unnecessary port configurations on port 22 before adding a secure rule.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for configuring Just-In-Time (JIT) VM access, listing ports, protocols, allowed source IPs, and time ranges.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882028/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Just-in-time-VM-access/azure-portal-jit-vm-access-config.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for configuring Just-In-Time (JIT) VM access, listing ports, protocols, allowed source IPs, and time ranges.](https://kodekloud.com/kk-media/image/upload/v1752882028/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Just-in-time-VM-access/azure-portal-jit-vm-access-config.jpg)
 
 When setting up the rule, use the following configuration details:
 
 * **Port:** 22 with TCP as the protocol.
 * **Maximum Request Time:** 1 hour (after which access is automatically revoked).
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen for configuring Just-In-Time (JIT) VM access, specifically for port 22 with options for protocol and allowed source IPs. On the right, there's a panel for adding port configuration details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882029/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Just-in-time-VM-access/azure-jit-vm-access-port-22.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen for configuring Just-In-Time (JIT) VM access, specifically for port 22 with options for protocol and allowed source IPs. On the right, there's a panel for adding port configuration details.](https://kodekloud.com/kk-media/image/upload/v1752882029/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Just-in-time-VM-access/azure-jit-vm-access-port-22.jpg)
 
 After saving the settings, JIT access is enabled for the selected VM.
 
-<Callout icon="triangle-alert">
-  Always verify that the correct ports and IP addresses are configured to prevent unintended access.
-</Callout>
+> **triangle-alert** Always verify that the correct ports and IP addresses are configured to prevent unintended access.
 
 ### Step 4: Request and Use JIT Access
 
@@ -95,9 +81,7 @@ To access your VM, follow these steps:
 3. In the connection portal, review the configuration for port 22 and use the request access option.
 4. Select the appropriate IP address (for example, your local machine's IP) and request access.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for managing virtual machines, specifically focusing on connecting to a virtual machine named "linux-brtf-vm" using just-in-time access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882030/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Just-in-time-VM-access/azure-portal-virtual-machine-connection.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for managing virtual machines, specifically focusing on connecting to a virtual machine named "linux-brtf-vm" using just-in-time access.](https://kodekloud.com/kk-media/image/upload/v1752882030/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Implement-Just-in-time-VM-access/azure-portal-virtual-machine-connection.jpg)
 
 Once your request is approved, connect using an SSH command from your terminal. For example:
 
@@ -147,6 +131,4 @@ For further reading and best practices, check out the following links:
 
 Happy securing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/aea85892-224f-4bd2-8013-e36764e15f37/lesson/40be32d1-3abe-4935-ae99-6a3c667a5af4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/aea85892-224f-4bd2-8013-e36764e15f37/lesson/40be32d1-3abe-4935-ae99-6a3c667a5af4)

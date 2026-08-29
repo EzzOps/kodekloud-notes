@@ -30,9 +30,7 @@ Notes:
 * sentence-transformers: [https://www.sbert.net/](https://www.sbert.net/)
 * Hugging Face: [https://huggingface.co/](https://huggingface.co/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/2ab2521e-4861-45d9-a718-e201f5d20011" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/2ab2521e-4861-45d9-a718-e201f5d20011)
 
 
 # RAG Architecture Components
@@ -82,10 +80,6 @@ Note on continual learning and gradient descent
 * Continuous model updates via gradient descent are not part of the inference pipeline. When you need the model to learn from new data, typical approaches include periodic offline fine-tuning, parameter-efficient updates (e.g., adapters), or re-embedding the index and refreshing the vector database.
 * In short: keep retrieval fast and up-to-date; apply training and weight updates as separate, controlled offline processes.
 
-<Callout icon="lightbulb">
-  RAG architectures center on retrieval, preprocessing/chunking, and generation. Continuous weight updates via gradient descent during inference are not part of the standard RAG pipeline—updates are handled separately when needed.
-</Callout>
+> **lightbulb** RAG architectures center on retrieval, preprocessing/chunking, and generation. Continuous weight updates via gradient descent during inference are not part of the standard RAG pipeline—updates are handled separately when needed.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/ae9a459b-6631-4149-9a67-19696cd617c9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/ae9a459b-6631-4149-9a67-19696cd617c9)

@@ -137,9 +137,7 @@ Key point: Equality anchors look downwards — a parent field’s presence trigg
 | Conditional Anchor | `(field)`  | Sideways (peers/siblings) | Value match at the anchored field or nested test | Sibling/peer elements of the anchored element | Cross-block rules (e.g., spec → metadata)                        |
 | Equality Anchor    | `=(field)` | Downwards (children)      | Existence of the anchored field                  | Child fields inside the anchored element      | Enforce constraints inside the same object (e.g., hostPath.path) |
 
-<Callout icon="lightbulb">
-  Choose your direction before writing a rule: conditional anchors validate sibling fields (sideways), while equality anchors validate children (downwards). Picking the wrong anchor changes the meaning of the rule.
-</Callout>
+> **lightbulb** Choose your direction before writing a rule: conditional anchors validate sibling fields (sideways), while equality anchors validate children (downwards). Picking the wrong anchor changes the meaning of the rule.
 
 ## Practical tips and gotchas
 
@@ -152,9 +150,7 @@ Key point: Equality anchors look downwards — a parent field’s presence trigg
   <img alt="" />
 </Frame>
 
-<Callout icon="warning">
-  Using the wrong anchor breaks the intention of your rule. If your rule should enforce a sibling requirement but you used an equality anchor, the check will remain inside the same block and won’t validate the sibling field.
-</Callout>
+> **warning** Using the wrong anchor breaks the intention of your rule. If your rule should enforce a sibling requirement but you used an equality anchor, the check will remain inside the same block and won’t validate the sibling field.
 
 ## Quick reference and links
 
@@ -168,6 +164,4 @@ Further reading:
 
 That concludes Part 1. In Part 2 we’ll cover Existence anchors, Negation anchors, and the Global anchor to complete the anchor toolkit.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/058330cd-c47c-4cb9-8001-f5555ce6fff9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/058330cd-c47c-4cb9-8001-f5555ce6fff9)

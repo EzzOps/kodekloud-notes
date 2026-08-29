@@ -14,11 +14,11 @@ In this tutorial, you’ll learn how to create a custom IAM identity policy in A
 2. Click **Create group**, name it **Developers**, and add the user **John** to the group.
 3. Skip attaching any policies for now and finish the wizard.
 
-![The image shows an AWS Identity and Access Management (IAM) console screen where users can be added to a group, with a list of users and their details such as groups, last activity, and creation time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863028/notes-assets/images/AWS-IAM-Demo-Identity-Policy/aws-iam-console-user-group-details.jpg)
+![The image shows an AWS Identity and Access Management (IAM) console screen where users can be added to a group, with a list of users and their details such as groups, last activity, and creation time.](https://kodekloud.com/kk-media/image/upload/v1752863028/notes-assets/images/AWS-IAM-Demo-Identity-Policy/aws-iam-console-user-group-details.jpg)
 
 Once created, you’ll see **Developers** listed without any permissions:
 
-![The image shows an AWS IAM (Identity and Access Management) console with a list of user groups, including "Developers" and "HR," along with their user counts and creation times. A notification indicates that the "Developers" user group was created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863030/notes-assets/images/AWS-IAM-Demo-Identity-Policy/aws-iam-console-user-groups-notification.jpg)
+![The image shows an AWS IAM (Identity and Access Management) console with a list of user groups, including "Developers" and "HR," along with their user counts and creation times. A notification indicates that the "Developers" user group was created.](https://kodekloud.com/kk-media/image/upload/v1752863030/notes-assets/images/AWS-IAM-Demo-Identity-Policy/aws-iam-console-user-groups-notification.jpg)
 
 ***
 
@@ -27,7 +27,7 @@ Once created, you’ll see **Developers** listed without any permissions:
 1. In the IAM sidebar, select **Policies**.
 2. Click **Create policy**.
 
-![The image shows the AWS Identity and Access Management (IAM) console, specifically the Policies section, listing various customer-managed policies with options to filter, create, and manage them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863031/notes-assets/images/AWS-IAM-Demo-Identity-Policy/aws-iam-console-policies-management.jpg)
+![The image shows the AWS Identity and Access Management (IAM) console, specifically the Policies section, listing various customer-managed policies with options to filter, create, and manage them.](https://kodekloud.com/kk-media/image/upload/v1752863031/notes-assets/images/AWS-IAM-Demo-Identity-Policy/aws-iam-console-policies-management.jpg)
 
 ### 2.1 Grant S3 Read Access
 
@@ -38,9 +38,9 @@ Once created, you’ll see **Developers** listed without any permissions:
   * Object: `*`\
     The console will build the ARN for you.
 
-![The image shows an AWS IAM policy creation interface for S3, where actions and access levels can be specified. Options include listing, reading, writing, permissions management, and tagging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863032/notes-assets/images/AWS-IAM-Demo-Identity-Policy/aws-iam-policy-s3-interface.jpg)
+![The image shows an AWS IAM policy creation interface for S3, where actions and access levels can be specified. Options include listing, reading, writing, permissions management, and tagging.](https://kodekloud.com/kk-media/image/upload/v1752863032/notes-assets/images/AWS-IAM-Demo-Identity-Policy/aws-iam-policy-s3-interface.jpg)
 
-![The image shows a dialog box in the AWS IAM console for specifying ARNs, with fields for resource bucket and object names, and an ARN being entered.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863034/notes-assets/images/AWS-IAM-Demo-Identity-Policy/aws-iam-console-arn-dialog-box.jpg)
+![The image shows a dialog box in the AWS IAM console for specifying ARNs, with fields for resource bucket and object names, and an ARN being entered.](https://kodekloud.com/kk-media/image/upload/v1752863034/notes-assets/images/AWS-IAM-Demo-Identity-Policy/aws-iam-console-arn-dialog-box.jpg)
 
 ### 2.2 Grant EC2 Full Access
 
@@ -50,9 +50,9 @@ Once created, you’ll see **Developers** listed without any permissions:
 
 > **triangle-alert** Using `*` for resources grants full access to all EC2 instances. In production, scope this down by specifying ARNs for specific instances or regions.
 
-![The image shows an Amazon Web Services (AWS) IAM policy creation interface, specifically for setting permissions related to EC2 actions. It includes options to allow or deny actions, with categories like List, Read, Write, Permissions management, and Tagging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863035/notes-assets/images/AWS-IAM-Demo-Identity-Policy/aws-iam-policy-ec2-permissions-interface.jpg)
+![The image shows an Amazon Web Services (AWS) IAM policy creation interface, specifically for setting permissions related to EC2 actions. It includes options to allow or deny actions, with categories like List, Read, Write, Permissions management, and Tagging.](https://kodekloud.com/kk-media/image/upload/v1752863035/notes-assets/images/AWS-IAM-Demo-Identity-Policy/aws-iam-policy-ec2-permissions-interface.jpg)
 
-![The image shows an AWS IAM policy creation interface, highlighting a warning about using the wildcard '\*' for resource permissions, suggesting that specifying ARNs can improve security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863037/notes-assets/images/AWS-IAM-Demo-Identity-Policy/aws-iam-policy-wildcard-warning.jpg)
+![The image shows an AWS IAM policy creation interface, highlighting a warning about using the wildcard '\*' for resource permissions, suggesting that specifying ARNs can improve security.](https://kodekloud.com/kk-media/image/upload/v1752863037/notes-assets/images/AWS-IAM-Demo-Identity-Policy/aws-iam-policy-wildcard-warning.jpg)
 
 ### 2.3 Review, Name, and Create
 
@@ -60,7 +60,7 @@ Once created, you’ll see **Developers** listed without any permissions:
 2. Set **Name** to `Developers_Policy` and add an optional description.
 3. Click **Create policy**.
 
-![The image shows a web page from the AWS IAM console where a user is creating a policy named "Developers\_Policy." The page includes fields for policy details and an optional description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863038/notes-assets/images/AWS-IAM-Demo-Identity-Policy/aws-iam-console-developers-policy-creation.jpg)
+![The image shows a web page from the AWS IAM console where a user is creating a policy named "Developers\_Policy." The page includes fields for policy details and an optional description.](https://kodekloud.com/kk-media/image/upload/v1752863038/notes-assets/images/AWS-IAM-Demo-Identity-Policy/aws-iam-console-developers-policy-creation.jpg)
 
 ***
 
@@ -174,7 +174,7 @@ Combine all statements into your final policy:
 
 Click **Save changes** to apply the updated policy.
 
-![The image shows an AWS IAM policy editor screen, detailing permissions for S3 and EC2 services with options to allow or deny actions. There is a button to save changes at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863040/notes-assets/images/AWS-IAM-Demo-Identity-Policy/aws-iam-policy-editor-s3-ec2.jpg)
+![The image shows an AWS IAM policy editor screen, detailing permissions for S3 and EC2 services with options to allow or deny actions. There is a button to save changes at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752863040/notes-assets/images/AWS-IAM-Demo-Identity-Policy/aws-iam-policy-editor-s3-ec2.jpg)
 
 ***
 

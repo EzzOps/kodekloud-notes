@@ -22,9 +22,7 @@ Thanks for following along — that wraps up this lesson. Below is a focused rec
 * Platform guidance
   * While you can test NGINX on Windows or macOS for learning, Linux is the recommended platform for production NGINX servers.
 
-<Callout icon="warning">
-  Avoid running production NGINX on Windows or macOS—Linux is the standard and most supported platform for production NGINX deployments.
-</Callout>
+> **warning** Avoid running production NGINX on Windows or macOS—Linux is the standard and most supported platform for production NGINX deployments.
 
 * Controlling the NGINX process
   * Use your service manager for lifecycle operations:
@@ -47,9 +45,7 @@ Thanks for following along — that wraps up this lesson. Below is a focused rec
   * The primary config file is `nginx.conf`. Its main parts are the global directives, the `events` block, the `http` block, and inside `http` multiple `server` blocks for virtual hosting.
   * You can host multiple sites on one NGINX instance using separate `server` blocks. Always set `server_name` for each site; if no `server_name` matches, NGINX uses the default server for that listen address (the first matching server block, or the one marked `default_server`).
 
-<Callout icon="lightbulb">
-  Tip: Use `default_server` on the `listen` directive to explicitly choose the server block that should handle unmatched requests.
-</Callout>
+> **lightbulb** Tip: Use `default_server` on the `listen` directive to explicitly choose the server block that should handle unmatched requests.
 
 * Quick reference: `nginx.conf` blocks
 
@@ -97,8 +93,6 @@ Thanks for following along — that wraps up this lesson. Below is a focused rec
 
 Thanks again for participating in this module. You’ve earned a break—grab a cup of coffee.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/0de43784-b08d-4ce0-8470-a7541b78fe58/lesson/48af9384-cad6-4cbf-a8c4-10299f8f241e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/0de43784-b08d-4ce0-8470-a7541b78fe58/lesson/48af9384-cad6-4cbf-a8c4-10299f8f241e)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/0de43784-b08d-4ce0-8470-a7541b78fe58/lesson/4a9d775f-003d-4a42-8cc3-661b8dbde1eb" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/0de43784-b08d-4ce0-8470-a7541b78fe58/lesson/4a9d775f-003d-4a42-8cc3-661b8dbde1eb)

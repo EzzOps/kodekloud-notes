@@ -17,9 +17,7 @@ Azure AD Connect supports the following authentication options:
 
 Below is an overview of each method along with their key benefits.
 
-<Callout icon="lightbulb">
-  Each authentication method is designed to fit different organizational requirements. Evaluate your current security infrastructure and compliance needs before selecting a method.
-</Callout>
+> **lightbulb** Each authentication method is designed to fit different organizational requirements. Evaluate your current security infrastructure and compliance needs before selecting a method.
 
 ### Password Hash Synchronization
 
@@ -41,11 +39,7 @@ Seamless Single Sign-On enhances the user experience by allowing automatic acces
 
 Each authentication option in Azure AD Connect is configurable to meet the unique needs of your organization. In the following sections, we will dive into detailed configuration steps, starting with Password Hash Synchronization. For further technical guidance, refer to the [Azure AD Connect documentation](https://learn.microsoft.com/en-us/azure/active-directory/hybrid/overview).
 
-<Callout icon="lightbulb">
-  * [Azure AD Connect Overview](https://learn.microsoft.com/en-us/azure/active-directory/hybrid/overview)
+> **lightbulb** * [Azure AD Connect Overview](https://learn.microsoft.com/en-us/azure/active-directory/hybrid/overview)
   * [Choose an Authentication Method](https://learn.microsoft.com/en-us/azure/active-directory/hybrid/choose-authentication)
-</Callout>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/ec3dd1c7-a3f1-4d9a-ae3c-59b398091a52/lesson/2ce0c372-4d65-4515-98fa-9ad5d1a863a7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/ec3dd1c7-a3f1-4d9a-ae3c-59b398091a52/lesson/2ce0c372-4d65-4515-98fa-9ad5d1a863a7)

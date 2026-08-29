@@ -19,18 +19,14 @@ The SBOM process is comprised of the following key steps:
 
 Two key formats dominate in the SBOM space: SPDX and CycloneDX.
 
-<Frame>
-  ![The image illustrates an "SBOM Workflow" with steps: Generate SBOM, Store SBOM, Scan SBOM, Analyze Results, Remediate Issues, and Monitor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752871712/notes-assets/images/Certified-Kubernetes-Security-Specialist-CKS-SBOM-Workflow/frame_30.jpg)
-</Frame>
+![The image illustrates an "SBOM Workflow" with steps: Generate SBOM, Store SBOM, Scan SBOM, Analyze Results, Remediate Issues, and Monitor.](https://kodekloud.com/kk-media/image/upload/v1752871712/notes-assets/images/Certified-Kubernetes-Security-Specialist-CKS-SBOM-Workflow/frame_30.jpg)
 
 Choose the format that best meets your needs:
 
 * Use SPDX for open-source projects and enterprises that require licensing compliance, trace software origins, audit security, and manage vulnerabilities.
 * Opt for CycloneDX to enhance vulnerability management across the software lifecycle and to ensure software integrity.
 
-<Frame>
-  ![The image presents a choice between two SBOM standards: SPDX and CycloneDX.](../../../../images/kodekloud.com/kk-media/image/upload/v1752871713/notes-assets/images/Certified-Kubernetes-Security-Specialist-CKS-SBOM-Workflow/frame_50.jpg)
-</Frame>
+![The image presents a choice between two SBOM standards: SPDX and CycloneDX.](https://kodekloud.com/kk-media/image/upload/v1752871713/notes-assets/images/Certified-Kubernetes-Security-Specialist-CKS-SBOM-Workflow/frame_50.jpg)
 
 ## Generating an SBOM
 

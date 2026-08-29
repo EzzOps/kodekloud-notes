@@ -6,7 +6,7 @@ This lesson demonstrates modifying Elastic Beanstalk environment configurations 
 
 In this lesson, we demonstrate how to modify your Elastic Beanstalk environment configuration using the EB extensions folder in your application's source code. By leveraging EB extensions, you can configure nearly every option available through the AWS CLI or the AWS Management Console. For a complete list of configuration options, please refer to the [AWS Elastic Beanstalk documentation](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options.html) under "Configuring Environments – Advanced Configuration Options."
 
-![The image shows a webpage from the AWS Elastic Beanstalk Developer Guide, listing various namespaces related to configuration options for environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858882/notes-assets/images/AWS-Certified-Developer-Associate-ebextensions-demo/aws-elastic-beanstalk-namespaces-guide.jpg)
+![The image shows a webpage from the AWS Elastic Beanstalk Developer Guide, listing various namespaces related to configuration options for environments.](https://kodekloud.com/kk-media/image/upload/v1752858882/notes-assets/images/AWS-Certified-Developer-Associate-ebextensions-demo/aws-elastic-beanstalk-namespaces-guide.jpg)
 
 ## Setting Up the .ebextensions Folder
 
@@ -81,7 +81,7 @@ To confirm that the environment variables and other settings have been applied:
 2. Navigate to the configuration section under "Updates, Monitoring, and Logging."
 3. Scroll down to "Platform Software" and review the "Environment Properties" that were set by your EB extensions.
 
-![The image shows an AWS Elastic Beanstalk configuration page where log streaming to CloudWatch is being set up, and environment properties like database username and password are being configured.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858884/notes-assets/images/AWS-Certified-Developer-Associate-ebextensions-demo/aws-elastic-beanstalk-log-streaming-config.jpg)
+![The image shows an AWS Elastic Beanstalk configuration page where log streaming to CloudWatch is being set up, and environment properties like database username and password are being configured.](https://kodekloud.com/kk-media/image/upload/v1752858884/notes-assets/images/AWS-Certified-Developer-Associate-ebextensions-demo/aws-elastic-beanstalk-log-streaming-config.jpg)
 
 ## Conclusion
 

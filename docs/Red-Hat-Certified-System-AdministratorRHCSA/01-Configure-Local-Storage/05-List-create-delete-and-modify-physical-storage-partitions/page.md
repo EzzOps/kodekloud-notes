@@ -138,13 +138,9 @@ sudo chattr -i newfile
 
 For further information on available attributes beyond append-only and immutable, refer to the manual page for `chattr`. Note that some attributes may have no effect, depending on your file system type. For instance, the `c` attribute for compression does not work on file systems such as ext4 that do not support on-the-fly compression.
 
-<Frame>
-  ![The image shows a terminal window displaying a manual page for the chattr command, detailing file attributes like 'C', 'd', and 'D'.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883549/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Create-manage-and-diagnose-advanced-file-system-permissions/chattr-command-manual-terminal.jpg)
-</Frame>
+![The image shows a terminal window displaying a manual page for the chattr command, detailing file attributes like 'C', 'd', and 'D'.](https://kodekloud.com/kk-media/image/upload/v1752883549/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Create-manage-and-diagnose-advanced-file-system-permissions/chattr-command-manual-terminal.jpg)
 
-<Callout icon="lightbulb">
-  Always verify your file system's support for specific attributes to avoid unexpected behavior. Explore `man chattr` for a detailed list.
-</Callout>
+> **lightbulb** Always verify your file system's support for specific attributes to avoid unexpected behavior. Explore `man chattr` for a detailed list.
 
 ## Conclusion
 
@@ -158,9 +154,7 @@ For more detailed information, consider exploring additional resources:
 
 Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/207496ef-0e82-42c8-aa9d-7996cfb968a6/lesson/933069b6-15b3-4dd4-9898-59f54ba83874" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/207496ef-0e82-42c8-aa9d-7996cfb968a6/lesson/933069b6-15b3-4dd4-9898-59f54ba83874)
 
 
 # List create delete and modify physical storage partitions
@@ -194,9 +188,7 @@ sr0   11:0    1 1024M  0 rom
 
 Here, the primary disk `sda` includes partitions (`sda1` and `sda2`) along with LVM volumes (`cs-root` and `cs-swap`). Disk names might vary in virtual environments (e.g., starting with "v"), so always refer to the TYPE column to distinguish between entire devices and their partitions.
 
-<Callout icon="lightbulb">
-  Remember: `/dev/sda1` specifically accesses the first partition on `/dev/sda`, while `/dev/sda` refers to the whole disk.
-</Callout>
+> **lightbulb** Remember: `/dev/sda1` specifically accesses the first partition on `/dev/sda`, while `/dev/sda` refers to the whole disk.
 
 You can verify device file usage with this repeated `lsblk` command:
 
@@ -223,9 +215,7 @@ sudo fdisk --list /dev/sda
 
 The output includes detailed information such as sector size. If your output shows a 512-byte sector size and the first partition starts at sector 2048, the calculation (2048 × 512) confirms a 1,048,576-byte (1MB) offset reserved for a bootloader. For disks with a sector size of 4,096 bytes, the calculation adjusts accordingly.
 
-<Callout icon="triangle-alert">
-  Modifying partition tables requires elevated privileges. Double-check the device names and calculations to prevent data loss.
-</Callout>
+> **triangle-alert** Modifying partition tables requires elevated privileges. Double-check the device names and calculations to prevent data loss.
 
 ## Interactive Partitioning using cfdisk
 
@@ -241,9 +231,7 @@ Depending on your setup, the additional disk might be represented as `/dev/sdb` 
 
 When beginning with `cfdisk`, you are prompted to choose a partition table type. Historically, the Master Boot Record (MBR) was common, but modern setups typically favor the GUID Partition Table (GPT) due to its support for more partitions and larger drives.
 
-<Frame>
-  ![The image shows a terminal window on a CentOS system prompting the user to select a partition label type, with options like GPT, DOS, SGI, and SUN.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883550/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-List-create-delete-and-modify-physical-storage-partitions/centos-terminal-partition-labels.jpg)
-</Frame>
+![The image shows a terminal window on a CentOS system prompting the user to select a partition label type, with options like GPT, DOS, SGI, and SUN.](https://kodekloud.com/kk-media/image/upload/v1752883550/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-List-create-delete-and-modify-physical-storage-partitions/centos-terminal-partition-labels.jpg)
 
 ### Creating and Adjusting Partitions with cfdisk
 
@@ -266,9 +254,7 @@ At this point, you have established two partitions: SDB1 (8GB) and SDB2 (2GB). L
 
 Note that partition numbers are assigned based on creation order rather than physical disk locations.
 
-<Frame>
-  ![The image shows a terminal window displaying disk partition information for /dev/sdb, listing three partitions with their sizes and types. The interface includes options for managing the partitions, such as delete, resize, and quit.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883552/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-List-create-delete-and-modify-physical-storage-partitions/disk-partition-info-dev-sdb.jpg)
-</Frame>
+![The image shows a terminal window displaying disk partition information for /dev/sdb, listing three partitions with their sizes and types. The interface includes options for managing the partitions, such as delete, resize, and quit.](https://kodekloud.com/kk-media/image/upload/v1752883552/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-List-create-delete-and-modify-physical-storage-partitions/disk-partition-info-dev-sdb.jpg)
 
 To reorder partitions according to their physical position, select the “Sort” option. After sorting, SDB1 remains 4GB, SDB2 becomes 4GB, and SDB3 (now at the end of the disk) functions as a 2GB swap partition. You may also delete and recreate partitions at any time using the “Delete” and “New” options, noting that these changes remain tentative until committed.
 
@@ -276,9 +262,7 @@ To reorder partitions according to their physical position, select the “Sort�
 
 Before committing the changes, you might need to adjust a partition’s type. For example, to designate SDB3 (the 2GB partition) as swap space, navigate to it and press the “Type” button. Then select “Linux swap” from the menu and confirm by pressing Enter.
 
-<Frame>
-  ![The image shows a terminal window on a CentOS system with a menu for selecting a partition type, highlighting "Linux swap."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883553/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-List-create-delete-and-modify-physical-storage-partitions/centos-terminal-partition-linux-swap.jpg)
-</Frame>
+![The image shows a terminal window on a CentOS system with a menu for selecting a partition type, highlighting "Linux swap."](https://kodekloud.com/kk-media/image/upload/v1752883553/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-List-create-delete-and-modify-physical-storage-partitions/centos-terminal-partition-linux-swap.jpg)
 
 By default, partitions are created with a standard Linux file system type suitable for data storage. Changing the partition type is particularly useful when setting up swap areas or specific boot partitions (like EFI system partitions).
 
@@ -286,9 +270,7 @@ By default, partitions are created with a standard Linux file system type suitab
 
 All modifications you make in `cfdisk` are provisional until you commit them. This feature allows you to review your changes and cancel if necessary. When ready, press the “Write” button (or similar) to apply the modifications. The tool will prompt for confirmation—type “Yes” and press Enter to proceed.
 
-<Frame>
-  ![The image shows a terminal window displaying disk partition information for /dev/sdb, including details about three partitions with their sizes and types. It prompts the user to confirm writing the partition table to disk.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883554/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-List-create-delete-and-modify-physical-storage-partitions/disk-partition-info-dev-sdb-2.jpg)
-</Frame>
+![The image shows a terminal window displaying disk partition information for /dev/sdb, including details about three partitions with their sizes and types. It prompts the user to confirm writing the partition table to disk.](https://kodekloud.com/kk-media/image/upload/v1752883554/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-List-create-delete-and-modify-physical-storage-partitions/disk-partition-info-dev-sdb-2.jpg)
 
 Once the partition table is committed, exit `cfdisk` by selecting “Quit.” Running the `lsblk` command again should display the updated partition layout similar to the following:
 
@@ -318,12 +300,8 @@ In this guide, you learned how to:
 * Choose between MBR and GPT partition tables based on your system’s requirements.
 * Commit changes safely after reviewing your planned partition layout.
 
-<Callout icon="lightbulb">
-  Properly managing disk partitions is crucial for maintaining system stability and data integrity. Always back up any critical data before making significant changes to your disk structure.
-</Callout>
+> **lightbulb** Properly managing disk partitions is crucial for maintaining system stability and data integrity. Always back up any critical data before making significant changes to your disk structure.
 
 Thank you for following this guide. Continue to explore additional lectures and labs to deepen your understanding of Linux storage management.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/207496ef-0e82-42c8-aa9d-7996cfb968a6/lesson/e6047763-d2b7-49a3-b096-ff36647fdf02" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/207496ef-0e82-42c8-aa9d-7996cfb968a6/lesson/e6047763-d2b7-49a3-b096-ff36647fdf02)

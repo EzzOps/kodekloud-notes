@@ -6,9 +6,7 @@ FinOps Optimize phase turning cost visibility into actions to reduce cloud waste
 
 Before diving in: a common misconception is that optimization means endlessly tweaking infrastructure for its own sake. Optimization must be purpose-driven: know why you’re optimizing, what outcome you want, and when the effort is worth the cost.
 
-<Callout icon="lightbulb">
-  Optimization is the process of turning visibility into deliberate action. Focus on business outcomes and measurable goals rather than continuous micro-adjustments.
-</Callout>
+> **lightbulb** Optimization is the process of turning visibility into deliberate action. Focus on business outcomes and measurable goals rather than continuous micro-adjustments.
 
 The Inform phase (building visibility into cloud spend) is the foundation. The Optimize phase converts those insights into actions that reduce waste, improve unit economics, and align spend to business value. Shift the team mindset from passive monitoring to active response: monitoring describes what happened; optimization changes what happens next. Faster responses to cost signals mean smaller incidents, quicker recovery, and less wasted spend.
 
@@ -104,9 +102,7 @@ Trade-offs and the iron triangle
 
 Optimization always involves trade-offs. The “iron triangle” (cost, speed, quality) reminds us that saving money at the expense of customer experience or revenue is counterproductive. Make cost decisions that are strategically aligned and ensure accurate cost allocation so teams are accountable.
 
-<Callout icon="warning">
-  Beware of over-optimizing: aggressive cost cuts that reduce reliability or slow development can harm customer experience and revenue. Always validate trade-offs against business objectives.
-</Callout>
+> **warning** Beware of over-optimizing: aggressive cost cuts that reduce reliability or slow development can harm customer experience and revenue. Always validate trade-offs against business objectives.
 
 <Frame>
   <img alt="The image depicts a pyramid illustrating the &#x22;Iron Triangle and Trade-offs&#x22; in project management, detailing different aspects like cost savings, strategic alignment, the iron triangle (good, fast, cheap), and cost allocation. It conveys the concept of optimization involving trade-offs between cost, speed, and quality." />
@@ -124,6 +120,4 @@ The FinOps Operate phase embeds these optimization practices into daily operatio
 
 That is it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/5dec4577-7276-4a7a-8040-c172cd00f341/lesson/5ca9a821-59ce-4b24-a570-f80d7403bf6e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/5dec4577-7276-4a7a-8040-c172cd00f341/lesson/5ca9a821-59ce-4b24-a570-f80d7403bf6e)

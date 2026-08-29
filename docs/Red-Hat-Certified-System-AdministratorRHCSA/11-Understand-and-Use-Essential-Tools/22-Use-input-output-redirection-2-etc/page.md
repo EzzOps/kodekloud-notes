@@ -16,9 +16,7 @@ Linux programs use three primary standard streams:
 
 By default, most programs display output on the terminal. However, output redirection allows you to save results to files or combine multiple streams.
 
-<Frame>
-  ![The image illustrates the flow of standard input, output, and error in a command-line environment, showing how data from "file.txt" is processed by the "sort" command, with standard output directed to the terminal and standard error to "errors.txt".](../../../../images/kodekloud.com/kk-media/image/upload/v1752883639/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Use-input-output-redirection-2-etc/command-line-input-output-flow.jpg)
-</Frame>
+![The image illustrates the flow of standard input, output, and error in a command-line environment, showing how data from "file.txt" is processed by the "sort" command, with standard output directed to the terminal and standard error to "errors.txt".](https://kodekloud.com/kk-media/image/upload/v1752883639/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Use-input-output-redirection-2-etc/command-line-input-output-flow.jpg)
 
 ## Redirecting Output
 
@@ -54,9 +52,7 @@ To save the sorted output to a new file instead of displaying it, you can use th
 $ sort file.txt > sortedfile.txt
 ```
 
-<Callout icon="lightbulb">
-  The target file (`sortedfile.txt`) is created automatically if it does not exist.
-</Callout>
+> **lightbulb** The target file (`sortedfile.txt`) is created automatically if it does not exist.
 
 ### Overwriting Versus Appending
 
@@ -112,9 +108,7 @@ Linux allows you to handle error messages separately by using the file descripto
 $ command 2>errors.txt
 ```
 
-<Callout icon="triangle-alert">
-  Be sure to differentiate between standard output and error messages. This helps in troubleshooting issues effectively.
-</Callout>
+> **triangle-alert** Be sure to differentiate between standard output and error messages. This helps in troubleshooting issues effectively.
 
 For instance, running:
 
@@ -200,6 +194,4 @@ This guide introduced essential redirection and piping techniques in Linux:
 
 That concludes our discussion on input and output redirection in Linux. With these techniques, you can manipulate data streams to suit various operational needs. Now it's time to apply this knowledge in your hands-on labs and command-line experiments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/ce7ead34-51cd-41c8-a4be-2052ae5faaca" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/ce7ead34-51cd-41c8-a4be-2052ae5faaca)

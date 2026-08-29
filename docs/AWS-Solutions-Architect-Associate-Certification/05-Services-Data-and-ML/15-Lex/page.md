@@ -16,7 +16,7 @@ Imagine needing to create a hotel booking system where users interact with a cha
 
 AWS Lex is a highly abstracted machine learning service that allows developers to design and deploy chatbot-style workflows with minimal overhead. It integrates natively with various AWS services, enabling you to create dynamic and scalable applications with ease.
 
-![The image is a flowchart illustrating the interaction between a user and various AWS services: Amazon Cognito, Amazon Lex, AWS Lambda, and Amazon DocumentDB. It shows the sequence of data flow and processing among these services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865075/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lex/aws-services-user-interaction-flowchart.jpg)
+![The image is a flowchart illustrating the interaction between a user and various AWS services: Amazon Cognito, Amazon Lex, AWS Lambda, and Amazon DocumentDB. It shows the sequence of data flow and processing among these services.](https://kodekloud.com/kk-media/image/upload/v1752865075/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lex/aws-services-user-interaction-flowchart.jpg)
 
 In the diagram above, notice the inclusion of Amazon Cognito, which handles application authentication rather than AWS infrastructure security. For example, when a user logs into your website via Cognito, they gain access to Lex for interactive engagement. When Lex processes a user's request for hotel booking information, it can trigger an AWS Lambda function. This function then interacts with Amazon DocumentDB (Amazon's MongoDB-compatible database) to verify booking details or fetch available dates. The result is a responsive chatbot that guides the user with either an existing booking status or available booking dates.
 
@@ -29,7 +29,7 @@ AWS Lex brings two major features that make it a powerful tool for developing co
 
 These core features empower you to create highly engaging applications that offer lifelike conversational experiences. Lex’s design simplicity and tight integration with other AWS services like Lambda, Cognito, and Polly amplify its functionality, allowing for rapid development across multiple platforms including mobile devices, chat apps, and IoT devices.
 
-![The image lists five features: Natural Language Understanding and Automatic Speech Recognition, Easy to Build, Fully Managed, Built-in Integrations, and Multi-Channel Support. Each feature is represented with an icon and a gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865076/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lex/features-natural-language-speech-recognition.jpg)
+![The image lists five features: Natural Language Understanding and Automatic Speech Recognition, Easy to Build, Fully Managed, Built-in Integrations, and Multi-Channel Support. Each feature is represented with an icon and a gradient background.](https://kodekloud.com/kk-media/image/upload/v1752865076/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lex/features-natural-language-speech-recognition.jpg)
 
 ## Integration and Deployment
 

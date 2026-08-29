@@ -80,9 +80,7 @@ NAME                                         DESIRED   CURRENT   READY   AGE
 replicaset.apps/argo-rollouts-64d959676c     1         1         1       24s
 ```
 
-<Callout icon="lightbulb">
-  The Rollouts controller exposes metrics via a ClusterIP Service (internal to the cluster). It does not provide an externally hosted dashboard by default — to view the Rollouts UI locally, install the kubectl plugin which proxies the dashboard to your machine.
-</Callout>
+> **lightbulb** The Rollouts controller exposes metrics via a ClusterIP Service (internal to the cluster). It does not provide an externally hosted dashboard by default — to view the Rollouts UI locally, install the kubectl plugin which proxies the dashboard to your machine.
 
 ## Install the kubectl-argo-rollouts plugin
 

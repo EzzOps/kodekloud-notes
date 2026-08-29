@@ -71,9 +71,7 @@ Once you're satisfied with the preview, apply the change in-place:
 $ sed -i 's/canda/canada/g' userinfo.txt
 ```
 
-<Callout icon="lightbulb">
-  Always back up your files before performing in-place edits with `sed -i`.
-</Callout>
+> **lightbulb** Always back up your files before performing in-place edits with `sed -i`.
 
 It is important to quote the expression correctly to prevent Bash from misinterpreting special characters such as the asterisk. Both single and double quotes can be used:
 
@@ -178,9 +176,7 @@ identical line 3
 exists in file 2
 ```
 
-<Callout icon="lightbulb">
-  Using the `diff` command with different options (`-c`, `-y`, or `sdiff`) can help you pinpoint changes more easily during system upgrades or when troubleshooting configuration issues.
-</Callout>
+> **lightbulb** Using the `diff` command with different options (`-c`, `-y`, or `sdiff`) can help you pinpoint changes more easily during system upgrades or when troubleshooting configuration issues.
 
 ## Summary
 
@@ -188,6 +184,4 @@ This guide introduced a variety of Linux commands—`cat`, `tac`, `head`, `sed`,
 
 For more detailed explanations and advanced use cases, consider exploring additional [Linux command-line resources](https://linux.die.net/man/1/sed).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/fbd277ee-c901-4143-b4b3-518ec13339a8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/fbd277ee-c901-4143-b4b3-518ec13339a8)

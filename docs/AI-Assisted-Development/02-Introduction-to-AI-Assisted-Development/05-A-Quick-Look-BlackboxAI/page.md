@@ -18,7 +18,7 @@ BlackboxAI provides a versatile web interface that lets you:
 
 The interface supports multiple models, such as GPT 4.0, Gemini Pro, Cloud Sonata 3.5, and BlackboxAI Pro. My current favorite is Cloud Sonata 3.5 due to its high-quality code output, though your experience may vary.
 
-![The image shows a webpage for Blackbox AI, featuring a dropdown menu for selecting AI models and options for web search, code analysis, GitHub chat, and app building.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857076/notes-assets/images/AI-Assisted-Development-A-Quick-Look-BlackboxAI/blackbox-ai-webpage-dropdown-menu.jpg)
+![The image shows a webpage for Blackbox AI, featuring a dropdown menu for selecting AI models and options for web search, code analysis, GitHub chat, and app building.](https://kodekloud.com/kk-media/image/upload/v1752857076/notes-assets/images/AI-Assisted-Development-A-Quick-Look-BlackboxAI/blackbox-ai-webpage-dropdown-menu.jpg)
 
 > **lightbulb** Experience a wide range of functionalities through BlackboxAI, from code analysis to app scaffolding.
 
@@ -36,9 +36,9 @@ python main.py
 
 When you ask, "How does this script work?" BlackboxAI explains that the script extracts URLs from an XML sitemap, imports necessary libraries, defines several functions—including the main function—and more.
 
-![The image shows a GitHub repository page for a project called "Sitemap To PDF," which is a tool for parsing sitemaps and generating PDFs for each page. The repository includes files like LICENSE, README.md, main.py, and requirements.txt.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857077/notes-assets/images/AI-Assisted-Development-A-Quick-Look-BlackboxAI/sitemap-to-pdf-github-repo.jpg)
+![The image shows a GitHub repository page for a project called "Sitemap To PDF," which is a tool for parsing sitemaps and generating PDFs for each page. The repository includes files like LICENSE, README.md, main.py, and requirements.txt.](https://kodekloud.com/kk-media/image/upload/v1752857077/notes-assets/images/AI-Assisted-Development-A-Quick-Look-BlackboxAI/sitemap-to-pdf-github-repo.jpg)
 
-![The image shows a browser window displaying a webpage with function definitions for a script that extracts URLs from a sitemap and converts them into PDFs. The page includes details about the functions and their processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857078/notes-assets/images/AI-Assisted-Development-A-Quick-Look-BlackboxAI/url-extractor-sitemap-pdf-functions.jpg)
+![The image shows a browser window displaying a webpage with function definitions for a script that extracts URLs from a sitemap and converts them into PDFs. The page includes details about the functions and their processes.](https://kodekloud.com/kk-media/image/upload/v1752857078/notes-assets/images/AI-Assisted-Development-A-Quick-Look-BlackboxAI/url-extractor-sitemap-pdf-functions.jpg)
 
 Additionally, BlackboxAI can translate code between languages. For example, it easily converts Python scripts into Go by providing a sample Golang implementation.
 
@@ -84,7 +84,7 @@ Below is an HTML snippet generated for a simple news app:
 
 Moreover, you can create custom AI agents for personalized interactions; these agents can be marked as public or private. The image below shows the interface for creating an AI agent:
 
-![The image shows a web interface for creating an AI agent, with fields for the agent's name, instructions, and publication settings. A cursor is hovering over the "Private" option for publishing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857079/notes-assets/images/AI-Assisted-Development-A-Quick-Look-BlackboxAI/ai-agent-creation-interface.jpg)
+![The image shows a web interface for creating an AI agent, with fields for the agent's name, instructions, and publication settings. A cursor is hovering over the "Private" option for publishing.](https://kodekloud.com/kk-media/image/upload/v1752857079/notes-assets/images/AI-Assisted-Development-A-Quick-Look-BlackboxAI/ai-agent-creation-interface.jpg)
 
 ## Creating a Go Application with BlackboxAI
 
@@ -260,7 +260,7 @@ It can also generate a README file that includes an application overview, instal
 
 BlackboxAI is a powerful tool for AI-assisted development, offering features for code generation, project scaffolding, and interactive code discussions across multiple languages—from Python to Go. Whether you’re integrating with GitHub repositories, working in Visual Studio Code, or using the CyberCoder agent, BlackboxAI greatly streamlines the development workflow.
 
-![The image shows the Visual Studio Code interface with a sidebar featuring options for "BLACKBOX.AI" and "CyberCoder," and a large logo in the center.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857080/notes-assets/images/AI-Assisted-Development-A-Quick-Look-BlackboxAI/visual-studio-code-blackbox-cybercoder.jpg)
+![The image shows the Visual Studio Code interface with a sidebar featuring options for "BLACKBOX.AI" and "CyberCoder," and a large logo in the center.](https://kodekloud.com/kk-media/image/upload/v1752857080/notes-assets/images/AI-Assisted-Development-A-Quick-Look-BlackboxAI/visual-studio-code-blackbox-cybercoder.jpg)
 
 This comprehensive overview shows how to leverage BlackboxAI’s features in your projects. Stay tuned for future articles where we delve into additional tools and techniques for efficient AI-assisted development.
 

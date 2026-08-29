@@ -121,9 +121,7 @@ Operational tips
 * Confirm the Secret exists and includes `tls.crt` and `tls.key`: `kubectl get secret example-com-tls-secret -n default -o yaml`
 * Troubleshoot with CertificateRequest objects and cert-manager controller logs when issuance fails.
 
-<Callout icon="lightbulb">
-  cert-manager stores TLS material in a Secret of type `kubernetes.io/tls` with keys `tls.crt` (certificate chain) and `tls.key` (private key). Applications should reference the Secret name so cert-manager can update the data in-place during renewal. See [cert-manager documentation](https://cert-manager.io/) and Kubernetes TLS Secret docs: `https://kubernetes.io/docs/concepts/configuration/secret/#tls-secrets`.
-</Callout>
+> **lightbulb** cert-manager stores TLS material in a Secret of type `kubernetes.io/tls` with keys `tls.crt` (certificate chain) and `tls.key` (private key). Applications should reference the Secret name so cert-manager can update the data in-place during renewal. See [cert-manager documentation](https://cert-manager.io/) and Kubernetes TLS Secret docs: `https://kubernetes.io/docs/concepts/configuration/secret/#tls-secrets`.
 
 Next steps
 
@@ -135,6 +133,4 @@ Links and references
 * Let’s Encrypt: [https://letsencrypt.org](https://letsencrypt.org)
 * Kubernetes TLS Secrets: [https://kubernetes.io/docs/concepts/configuration/secret/#tls-secrets](https://kubernetes.io/docs/concepts/configuration/secret/#tls-secrets)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/b5e6237b-c98e-4357-b26a-f18c583af395/lesson/c8ea2064-681b-4291-9798-0c3840403022" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/b5e6237b-c98e-4357-b26a-f18c583af395/lesson/c8ea2064-681b-4291-9798-0c3840403022)

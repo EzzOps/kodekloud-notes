@@ -128,7 +128,7 @@ localhost:10000/product/2
 
 The response should indicate a "successful deletion." You can verify the removal by using the getAllProducts API endpoint to confirm that the product is no longer in the inventory.
 
-![The image shows a Postman interface with a DELETE request setup for a product in a collection named "my-inventory." The request URL is "localhost:10000/product/2," and the response section is empty.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868678/notes-assets/images/Advanced-Golang-Demo-Delete-method/postman-delete-request-my-inventory.jpg)
+![The image shows a Postman interface with a DELETE request setup for a product in a collection named "my-inventory." The request URL is "localhost:10000/product/2," and the response section is empty.](https://kodekloud.com/kk-media/image/upload/v1752868678/notes-assets/images/Advanced-Golang-Demo-Delete-method/postman-delete-request-my-inventory.jpg)
 
 ## Final Route Handler
 

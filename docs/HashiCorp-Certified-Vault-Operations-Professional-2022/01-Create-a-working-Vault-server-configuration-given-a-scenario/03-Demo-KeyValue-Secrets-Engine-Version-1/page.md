@@ -81,9 +81,7 @@ Path       Plugin  Accessor      Default TTL  Max TTL  Options  Description
 training/  kv      kv_11d31683   n/a          n/a      map[]    n/a
 ```
 
-<Callout icon="lightbulb">
-  In **KV v2**, the options map includes `"version":"2"`.
-</Callout>
+> **lightbulb** In **KV v2**, the options map includes `"version":"2"`.
 
 ***
 
@@ -186,9 +184,7 @@ vault kv get -format=json training/apps/jenkins | jq -r .data.apikey
 vault kv get -format=json training/apps/jenkins | jq -r .data.user
 ```
 
-<Callout icon="lightbulb">
-  Using JSON output is useful for automation and scripting.
-</Callout>
+> **lightbulb** Using JSON output is useful for automation and scripting.
 
 ***
 
@@ -268,6 +264,4 @@ jenkins
 * [Vault CLI Commands](https://www.vaultproject.io/docs/commands)
 * [jq Manual](https://stedolan.github.io/jq/manual/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/e0ae6919-1c59-4449-be16-5ee20a32da96" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/e0ae6919-1c59-4449-be16-5ee20a32da96)

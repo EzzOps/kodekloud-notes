@@ -53,9 +53,7 @@ jaeger-ui-nodeport             NodePort    172.20.161.35   16686:30086/TCP
 
 Quick reference: gRPC uses port `4317`; HTTP/protobuf uses `4318`. Make sure the protocol you set in `OTEL_EXPORTER_OTLP_PROTOCOL` matches the port you target — mismatch is a frequent cause of missing traces.
 
-<Callout icon="lightbulb">
-  Ensure the container name you patch matches the container name defined in the deployment. Patching the wrong container leaves the environment variables unapplied and the service will continue not to emit traces.
-</Callout>
+> **lightbulb** Ensure the container name you patch matches the container name defined in the deployment. Patching the wrong container leaves the environment variables unapplied and the service will continue not to emit traces.
 
 ## Patch the frontend deployment to emit traces
 
@@ -131,9 +129,7 @@ Interpretation tips:
 * Make sure `OTEL_TRACES_EXPORTER` is set to `otlp`.
 * Confirm you patched the correct deployment and container name.
 
-<Callout icon="warning">
-  If traces do not appear, the most common issues are: incorrect collector endpoint (DNS or port), protocol/port mismatch, or patching the wrong container name. Double-check those first.
-</Callout>
+> **warning** If traces do not appear, the most common issues are: incorrect collector endpoint (DNS or port), protocol/port mismatch, or patching the wrong container name. Double-check those first.
 
 ## Wrap-up and next steps
 
@@ -144,11 +140,9 @@ Further reading:
 * OpenTelemetry: [https://opentelemetry.io/](https://opentelemetry.io/)
 * Jaeger Tracing: [https://www.jaegertracing.io/](https://www.jaegertracing.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/9507aaae-93db-4f66-9d14-017d3e6651d8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/9507aaae-93db-4f66-9d14-017d3e6651d8)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/4da36e12-ad6b-4d91-a8b8-451e1bf4b8fe" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/4da36e12-ad6b-4d91-a8b8-451e1bf4b8fe)
 
 
 # Distributed Tracing Context Propagation and Trace Analysis

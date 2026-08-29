@@ -16,9 +16,7 @@ Traditionally, CI systems (Jenkins, GitHub Actions, GitLab CI) run outside your 
 Example story
 A company ran Jenkins on a dedicated EC2 instance with cluster-admin access to three clusters, push rights to the container registry, and secrets for seven environments. After a Jenkins plugin vulnerability was disclosed, the organization had to rotate cluster credentials, regenerate registry tokens, and replace deployment secrets across environments. The emergency took two weeks.
 
-<Callout icon="warning">
-  Centralized CI servers with broad privileges create a high blast radius. When one service is compromised or vulnerable, all stored credentials and access can be exposed. Moving CI into the cluster reduces external credential sprawl and improves isolation.
-</Callout>
+> **warning** Centralized CI servers with broad privileges create a high blast radius. When one service is compromised or vulnerable, all stored credentials and access can be exposed. Moving CI into the cluster reduces external credential sprawl and improves isolation.
 
 The core problems in the external-CI model:
 
@@ -156,9 +154,7 @@ Both projects are Kubernetes-native and integrate well with GitOps practices, bu
   <img alt="The image is a comparison chart between Tekton and Argo Workflows, highlighting differences in aspects such as primary focus, execution model, data passing, UI, ecosystem, and best use cases." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Choose Tekton when you want CI/CD primitives with shared-workspace efficiency and tight integration for builds/tests. Choose Argo Workflows when you need a general DAG engine for complex orchestration, strong isolation between steps, or advanced artifact handling.
-</Callout>
+> **lightbulb** Choose Tekton when you want CI/CD primitives with shared-workspace efficiency and tight integration for builds/tests. Choose Argo Workflows when you need a general DAG engine for complex orchestration, strong isolation between steps, or advanced artifact handling.
 
 Best practices for Kubernetes-native CI
 
@@ -180,6 +176,4 @@ Links and references
 * Kaniko (example image builder used with Tekton): [https://github.com/GoogleContainerTools/kaniko](https://github.com/GoogleContainerTools/kaniko)
 * Kubernetes RBAC concept: [https://kubernetes.io/docs/reference/access-authn-authz/rbac/](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/3a285de6-56db-4118-8f22-a8fc032d2731" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/3a285de6-56db-4118-8f22-a8fc032d2731)

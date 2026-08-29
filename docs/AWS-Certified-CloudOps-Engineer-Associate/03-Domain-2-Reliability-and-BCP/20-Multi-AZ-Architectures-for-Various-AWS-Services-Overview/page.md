@@ -14,7 +14,7 @@ AWS managed services are generally configured to ensure high availability within
 
 The diagram below compares single-AZ and multi-AZ configurations. It details how components such as subnets, databases, auto scaling groups, Elastic Load Balancers, and security groups work together to enhance reliability and security.
 
-![The image illustrates a Multi-AZ Architecture on AWS, showing a Virtual Private Cloud (VPC) with multiple availability zones, public and private subnets, auto-scaling groups, and Amazon RDS instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860152/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Multi-AZ-Architectures-for-Various-AWS-Services-Overview/multi-az-architecture-aws-vpc.jpg)
+![The image illustrates a Multi-AZ Architecture on AWS, showing a Virtual Private Cloud (VPC) with multiple availability zones, public and private subnets, auto-scaling groups, and Amazon RDS instances.](https://kodekloud.com/kk-media/image/upload/v1752860152/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Multi-AZ-Architectures-for-Various-AWS-Services-Overview/multi-az-architecture-aws-vpc.jpg)
 
 This basic multi-AZ architecture facilitates data redundancy, automatic failover, and elevated availability. When combined with a global load balancer, it can also support disaster recovery by replicating the setup across multiple regions.
 
@@ -22,7 +22,7 @@ This basic multi-AZ architecture facilitates data redundancy, automatic failover
 
 Amazon RDS is a prime example of multi-AZ deployment. By simply enabling the Multi-AZ option in the configuration, RDS creates a primary-secondary (active-passive) environment. In this setup, synchronous replication ensures that a write operation on the primary is simultaneously applied to the standby replica before confirmation is returned to the client.
 
-![The image illustrates an Amazon RDS Multi-AZ Deployment, showing a master and standby replica setup with synchronous replication across two availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860153/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Multi-AZ-Architectures-for-Various-AWS-Services-Overview/amazon-rds-multi-az-deployment.jpg)
+![The image illustrates an Amazon RDS Multi-AZ Deployment, showing a master and standby replica setup with synchronous replication across two availability zones.](https://kodekloud.com/kk-media/image/upload/v1752860153/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Multi-AZ-Architectures-for-Various-AWS-Services-Overview/amazon-rds-multi-az-deployment.jpg)
 
 > **lightbulb** For scenarios where minimal replication lag is acceptable, asynchronous replication using read replicas is an alternative. This option is also available for other services like ElastiCache.
 
@@ -34,7 +34,7 @@ Configuring an application load balancer to distribute traffic across three subn
 
 Services such as Amazon S3, DynamoDB, and Lambda are designed for high availability by operating across multiple data centers within a region.
 
-![The image shows icons for Amazon S3, Amazon DynamoDB, and AWS Lambda, with their respective names and logos.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860154/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Multi-AZ-Architectures-for-Various-AWS-Services-Overview/amazon-s3-dynamodb-lambda-icons.jpg)
+![The image shows icons for Amazon S3, Amazon DynamoDB, and AWS Lambda, with their respective names and logos.](https://kodekloud.com/kk-media/image/upload/v1752860154/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Multi-AZ-Architectures-for-Various-AWS-Services-Overview/amazon-s3-dynamodb-lambda-icons.jpg)
 
 > **lightbulb** These services typically require no extra configuration for intra-region redundancy. However, if you need enhanced disaster recovery (DR), consider options like DynamoDB Global Tables, S3 cross-region replication, or replicating Lambda code and configuration to another region.
 
@@ -42,7 +42,7 @@ Services such as Amazon S3, DynamoDB, and Lambda are designed for high availabil
 
 Elastic File System (EFS) leverages the NFS protocol and, when paired with a load-balanced application, provides shared file storage that is automatically redundant across the entire region.
 
-![The image is a diagram illustrating the architecture of an Elastic File System (EFS) within a Virtual Private Cloud (VPC), showing traffic flow through Elastic Load Balancing to Amazon EC2 instances across three availability zones, with file access to EFS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860156/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Multi-AZ-Architectures-for-Various-AWS-Services-Overview/efs-architecture-vpc-diagram.jpg)
+![The image is a diagram illustrating the architecture of an Elastic File System (EFS) within a Virtual Private Cloud (VPC), showing traffic flow through Elastic Load Balancing to Amazon EC2 instances across three availability zones, with file access to EFS.](https://kodekloud.com/kk-media/image/upload/v1752860156/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Multi-AZ-Architectures-for-Various-AWS-Services-Overview/efs-architecture-vpc-diagram.jpg)
 
 ## Key Takeaways
 

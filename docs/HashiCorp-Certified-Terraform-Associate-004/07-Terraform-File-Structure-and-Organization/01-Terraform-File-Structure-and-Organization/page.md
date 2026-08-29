@@ -78,13 +78,9 @@ Because state often contains resource IDs, IP addresses, and sometimes sensitive
   <img alt="The image describes two Terraform files: terraform.tfstate, which stores the state, and terraform.tfstate.backup, which is a backup of the previous state file. It also shows a directory listing with various Terraform-related files." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Always add `terraform.tfstate`, `terraform.tfstate.backup`, `.terraform/`, and `.terraform.lock.hcl` to your repository's `.gitignore`. This prevents accidentally committing sensitive or environment-specific data into version control.
-</Callout>
+> **lightbulb** Always add `terraform.tfstate`, `terraform.tfstate.backup`, `.terraform/`, and `.terraform.lock.hcl` to your repository's `.gitignore`. This prevents accidentally committing sensitive or environment-specific data into version control.
 
-<Callout icon="warning">
-  Do not store secrets (API keys, passwords, private keys) in plaintext inside `.tfvars` or Terraform files. Use environment variables, a secret manager (e.g., AWS Secrets Manager, HashiCorp Vault), or remote backends with proper access controls instead.
-</Callout>
+> **warning** Do not store secrets (API keys, passwords, private keys) in plaintext inside `.tfvars` or Terraform files. Use environment variables, a secret manager (e.g., AWS Secrets Manager, HashiCorp Vault), or remote backends with proper access controls instead.
 
 Example .gitignore snippet
 

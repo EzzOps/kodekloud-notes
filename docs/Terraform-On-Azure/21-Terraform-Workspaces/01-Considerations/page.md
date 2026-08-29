@@ -54,18 +54,14 @@ A simplified excerpt of a Terraform state file (JSON):
 
 This JSON includes provider info, resource types and names, and all recorded attributes (SKU, replication type, access tier, etc.). Because the state can contain sensitive or critical information (resource IDs, endpoints, sometimes secrets), protecting state is essential.
 
-<Callout icon="lightbulb">
-  Protect your state: state files can contain sensitive values (resource IDs, endpoints, and occasionally secrets). When storing state remotely, enable encryption and strict access controls to prevent unauthorized access.
-</Callout>
+> **lightbulb** Protect your state: state files can contain sensitive values (resource IDs, endpoints, and occasionally secrets). When storing state remotely, enable encryption and strict access controls to prevent unauthorized access.
 
 ## Where is state stored?
 
 * By default: `terraform.tfstate` stored locally in your working directory. This is fine for learning, demos, or single-user scenarios.
 * For teams and automation: use a remote backend (Azure Storage, Amazon S3, Terraform Cloud, etc.) to centralize state, provide locking, and improve access control.
 
-<Callout icon="warning">
-  Warning: Local state lacks concurrency protection. Multiple users or CI jobs operating on the same local state can cause conflicts or corruption. Use a remote backend for team workflows.
-</Callout>
+> **warning** Warning: Local state lacks concurrency protection. Multiple users or CI jobs operating on the same local state can cause conflicts or corruption. Use a remote backend for team workflows.
 
 ## Remote backends — why and when to use them
 
@@ -109,9 +105,7 @@ Check your working directory for `terraform.tfstate` to confirm the resources yo
 
 Now that you understand Terraform state and why it’s important, the next step is to configure a remote backend suited to your team and automation needs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/d0fef6dd-c271-403d-b4ac-ee1f20c1839b/lesson/130cadb8-31f6-42e0-8ef0-4686ad423a81" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/d0fef6dd-c271-403d-b4ac-ee1f20c1839b/lesson/130cadb8-31f6-42e0-8ef0-4686ad423a81)
 
 
 # Considerations
@@ -178,9 +172,7 @@ These patterns align well with large organizations, regulated industries, or mul
 * For small teams and non-critical workloads, workspaces can reduce duplication and speed onboarding.
 * For production-critical or regulated systems, prefer separate backends/repositories and distinct pipelines to avoid accidental cross-environment impacts.
 
-<Callout icon="lightbulb">
-  If you are unsure which approach to choose, map ownership, compliance requirements, and blast-radius tolerance. For small teams with simple requirements, workspaces may be acceptable. For multi-team, compliant, or production-critical environments, prefer separate backends and repositories.
-</Callout>
+> **lightbulb** If you are unsure which approach to choose, map ownership, compliance requirements, and blast-radius tolerance. For small teams with simple requirements, workspaces may be acceptable. For multi-team, compliant, or production-critical environments, prefer separate backends and repositories.
 
 ## Links and references
 
@@ -188,8 +180,6 @@ These patterns align well with large organizations, regulated industries, or mul
 * [Terraform Backends — HashiCorp Documentation](https://www.terraform.io/docs/language/settings/backends/index.html)
 * [Best practices for managing Terraform state](https://www.terraform.io/docs/cloud/guides/recommended-practices/state.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/0eb3275a-a37d-45a5-86b5-4920e2e44e7c/lesson/7441dbfe-cfd4-4775-8c72-630bf79a51ab" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/0eb3275a-a37d-45a5-86b5-4920e2e44e7c/lesson/7441dbfe-cfd4-4775-8c72-630bf79a51ab)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/0eb3275a-a37d-45a5-86b5-4920e2e44e7c/lesson/c8ca3a25-469d-4405-b2fe-da02e518a033" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/0eb3275a-a37d-45a5-86b5-4920e2e44e7c/lesson/c8ca3a25-469d-4405-b2fe-da02e518a033)

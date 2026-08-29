@@ -11,9 +11,7 @@ Ensure users have the appropriate permissions in the target directory before cre
 * [Filesystem Fundamentals](https://www.linuxfoundation.org/)
 * [GNU Coreutils: ln Manual](https://www.gnu.org/software/coreutils/manual/html_node/ln-invocation.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/03bf8733-1baa-419c-808c-6e9f9a9829c6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/03bf8733-1baa-419c-808c-6e9f9a9829c6)
 
 
 # Create and manage soft links
@@ -28,9 +26,7 @@ In this lesson, you’ll learn how Linux handles soft links (symbolic links), al
 
 When you install an application on Windows, you often get a desktop shortcut pointing to the actual program in `C:\Program Files\MyCoolApp\application.exe`. Double-clicking the shortcut launches the app even though its files reside elsewhere. A Linux soft link works the same way: it’s a special file containing the path to another file or directory.
 
-<Frame>
-  ![The image shows a diagram illustrating a soft link from a Brave browser icon to a file path "C:\Program Files\MyCoolApp\application.exe" with a browser window open in private mode.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881471/notes-assets/images/Linux-System-Administration-for-Beginners-Create-and-manage-soft-links/brave-browser-soft-link-diagram.jpg)
-</Frame>
+![The image shows a diagram illustrating a soft link from a Brave browser icon to a file path "C:\Program Files\MyCoolApp\application.exe" with a browser window open in private mode.](https://kodekloud.com/kk-media/image/upload/v1752881471/notes-assets/images/Linux-System-Administration-for-Beginners-Create-and-manage-soft-links/brave-browser-soft-link-diagram.jpg)
 
 ## Creating a Symbolic Link
 

@@ -6,7 +6,7 @@ This article explores how taints and tolerations control pod scheduling on speci
 
 In this article, we explore the relationship between pods and nodes, and demonstrate how taints and tolerations control pod scheduling on specific nodes. Think of it like using a repellent on a person to keep bugs away. In Kubernetes, a taint is applied to a node (the repellent) to repel pods unless they have a matching toleration (an immunity to the repellent). This ensures that only intended pods can run on tainted nodes.
 
-![A figure with a bug symbol on its chest is positioned between the words "Intolerant," "Tolerant," and "Taint," suggesting a concept of tolerance and contamination.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869914/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Taints-and-Tolerations/frame_60.jpg)
+![A figure with a bug symbol on its chest is positioned between the words "Intolerant," "Tolerant," and "Taint," suggesting a concept of tolerance and contamination.](https://kodekloud.com/kk-media/image/upload/v1752869914/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Taints-and-Tolerations/frame_60.jpg)
 
 ## How Taints and Tolerations Work
 
@@ -29,7 +29,7 @@ When the scheduler assigns pods:
 * Pod C, without a matching toleration, is scheduled on node two or three.
 * Pod D, having the correct toleration, is scheduled on node one.
 
-![The image shows three nodes labeled Node 1, Node 2, and Node 3, with containers A, B, C, and D, and a note indicating "Taint=blue."](../../../../images/kodekloud.com/kk-media/image/upload/v1752869915/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Taints-and-Tolerations/frame_240.jpg)
+![The image shows three nodes labeled Node 1, Node 2, and Node 3, with containers A, B, C, and D, and a note indicating "Taint=blue."](https://kodekloud.com/kk-media/image/upload/v1752869915/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Taints-and-Tolerations/frame_240.jpg)
 
 ## Tainting a Node
 
@@ -80,7 +80,7 @@ Using the **NoExecute** taint effect has a more immediate impact. Suppose node o
 * Pods without a matching toleration (e.g., Pod C) will be evicted from node one if already running, or prevented from being scheduled.
 * Pods with the correct toleration (e.g., Pod D) continue to run on node one.
 
-![The image illustrates Kubernetes nodes with a "NoExecute" taint, showing pods A, B, C, and D distributed across Node 1, Node 2, and Node 3.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869916/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Taints-and-Tolerations/frame_420.jpg)
+![The image illustrates Kubernetes nodes with a "NoExecute" taint, showing pods A, B, C, and D distributed across Node 1, Node 2, and Node 3.](https://kodekloud.com/kk-media/image/upload/v1752869916/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Taints-and-Tolerations/frame_420.jpg)
 
 > **lightbulb** Taints and tolerations are used to ensure that pods are not accidentally scheduled on nodes that should run only specific workloads, but they do not guarantee that a pod will run on a particular node. For node-specific scheduling, consider using node affinity.
 

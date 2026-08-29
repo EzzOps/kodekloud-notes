@@ -10,17 +10,13 @@ In this article, we dive deep into how variables and data interact with the conc
 
 In Rust, a move transfers the ownership of a value from one variable to another. After a value is moved, the original variable becomes invalid, and trying to access it results in a compile-time error. This design enforces memory safety and prevents data races without relying on a garbage collector.
 
-<Frame>
-  ![The image explains the concept of "Move" in programming, highlighting memory safety and data race prevention without a garbage collector. It shows that Variable A becomes invalid after its value is moved to Variable B.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883964/notes-assets/images/Rust-Programming-Variables-and-Data-Interacting-with-Move/move-concept-memory-safety-diagram.jpg)
-</Frame>
+![The image explains the concept of "Move" in programming, highlighting memory safety and data race prevention without a garbage collector. It shows that Variable A becomes invalid after its value is moved to Variable B.](https://kodekloud.com/kk-media/image/upload/v1752883964/notes-assets/images/Rust-Programming-Variables-and-Data-Interacting-with-Move/move-concept-memory-safety-diagram.jpg)
 
 ## How Does Move Work?
 
 When one variable is assigned to another, Rust transfers ownership of the data instead of making a copy. This is particularly important for types that allocate data on the heap, such as `String` or `Vector`, where shallow or deep copying would be less efficient.
 
-<Frame>
-  ![The image explains how ownership is moved rather than copied in programming, specifically for types that allocate data on the heap. It shows a diagram where ownership is transferred from Variable A to Variable B.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883965/notes-assets/images/Rust-Programming-Variables-and-Data-Interacting-with-Move/ownership-transfer-heap-variables-diagram.jpg)
-</Frame>
+![The image explains how ownership is moved rather than copied in programming, specifically for types that allocate data on the heap. It shows a diagram where ownership is transferred from Variable A to Variable B.](https://kodekloud.com/kk-media/image/upload/v1752883965/notes-assets/images/Rust-Programming-Variables-and-Data-Interacting-with-Move/ownership-transfer-heap-variables-diagram.jpg)
 
 ### Moving with Integer Types
 
@@ -42,9 +38,7 @@ Since integers implement the `Copy` trait, the value is duplicated, leaving both
 
 In Rust, a trait defines shared behavior across different types, functioning similarly to interfaces in other programming languages. The `Copy` trait allows values to be duplicated rather than moved. For instance, since integers implement the `Copy` trait, assigning one integer to another does not invalidate the original variable.
 
-<Callout icon="lightbulb">
-  Later in this article, we will discuss traits in greater detail. For now, understand that the `Copy` trait enables efficient duplication of values on the stack.
-</Callout>
+> **lightbulb** Later in this article, we will discuss traits in greater detail. For now, understand that the `Copy` trait enables efficient duplication of values on the stack.
 
 ### Moving with String Types
 
@@ -81,9 +75,7 @@ struct String {
 
 When a string is created, Rust allocates memory on the heap for the data and stores the pointer, length, and capacity in a stack-allocated struct.
 
-<Frame>
-  ![The image explains the internals of a string in Rust, showing how the string struct is stored on the stack with a pointer, length, and capacity, while the actual string data is stored on the heap.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883966/notes-assets/images/Rust-Programming-Variables-and-Data-Interacting-with-Move/rust-string-internals-struct.jpg)
-</Frame>
+![The image explains the internals of a string in Rust, showing how the string struct is stored on the stack with a pointer, length, and capacity, while the actual string data is stored on the heap.](https://kodekloud.com/kk-media/image/upload/v1752883966/notes-assets/images/Rust-Programming-Variables-and-Data-Interacting-with-Move/rust-string-internals-struct.jpg)
 
 ## Why Move Instead of Copy?
 
@@ -94,9 +86,7 @@ Moving ownership for heap-allocated types like `String` offers several advantage
 | Performance   | Only a shallow copy of the pointer, length, and capacity is performed, avoiding the overhead of duplicating large buffers.     |
 | Memory Safety | Ensures that only one owner is responsible for deallocating the heap memory, preventing double-free errors and similar issues. |
 
-<Frame>
-  ![The image outlines the benefits of moving ownership instead of copying ownership, highlighting advantages in performance and safety. It explains that moving is faster and prevents memory safety issues like double free errors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883968/notes-assets/images/Rust-Programming-Variables-and-Data-Interacting-with-Move/moving-ownership-benefits-performance-safety.jpg)
-</Frame>
+![The image outlines the benefits of moving ownership instead of copying ownership, highlighting advantages in performance and safety. It explains that moving is faster and prevents memory safety issues like double free errors.](https://kodekloud.com/kk-media/image/upload/v1752883968/notes-assets/images/Rust-Programming-Variables-and-Data-Interacting-with-Move/moving-ownership-benefits-performance-safety.jpg)
 
 ## Double-Free Errors and Rust's Ownership Model
 
@@ -127,9 +117,7 @@ fn main() {
 }
 ```
 
-<Callout icon="lightbulb">
-  Rust's ownership model guarantees that there is always a single owner for a heap-allocated resource, which inherently prevents double-free errors and other memory safety issues.
-</Callout>
+> **lightbulb** Rust's ownership model guarantees that there is always a single owner for a heap-allocated resource, which inherently prevents double-free errors and other memory safety issues.
 
 ## The Process of Moving a String
 
@@ -140,14 +128,10 @@ When a string is moved in Rust, the following process occurs:
 3. The heap-allocated data is now exclusively owned by the new variable.
 4. When the new variable goes out of scope, Rust automatically calls `drop` to deallocate the heap memory.
 
-<Frame>
-  ![The image explains the process of moving a string in programming, detailing steps like creating a shallow copy, invalidating the original string, and transferring memory ownership. It includes diagrams showing the transition from s1 to s2 with associated data structures.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883969/notes-assets/images/Rust-Programming-Variables-and-Data-Interacting-with-Move/string-move-process-diagram.jpg)
-</Frame>
+![The image explains the process of moving a string in programming, detailing steps like creating a shallow copy, invalidating the original string, and transferring memory ownership. It includes diagrams showing the transition from s1 to s2 with associated data structures.](https://kodekloud.com/kk-media/image/upload/v1752883969/notes-assets/images/Rust-Programming-Variables-and-Data-Interacting-with-Move/string-move-process-diagram.jpg)
 
 An essential design choice in Rust is that it never automatically creates deep copies of data. This approach ensures that ownership transfers remain efficient and predictable. Topics such as deep copying and more about Rust’s memory management will be covered in future articles.
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/bc943cc7-c04e-48ab-983e-f1e6299d5e09" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/bc943cc7-c04e-48ab-983e-f1e6299d5e09)

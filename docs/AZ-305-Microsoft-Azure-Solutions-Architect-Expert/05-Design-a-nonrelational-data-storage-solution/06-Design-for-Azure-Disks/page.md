@@ -24,7 +24,7 @@ Azure offers a range of disk types to match varying performance requirements and
 4. **Standard HDD**\
    Standard HDDs offer the most economical solution with relatively low throughput and IOPS. They work best for backup solutions, non-critical workloads, or development environments.
 
-![The image is an infographic comparing four types of Azure disks: Ultra SSD, Premium SSD, Standard SSD, and Standard HDD, highlighting their performance metrics and ideal use cases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867114/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Disks/azure-disks-comparison-infographic.jpg)
+![The image is an infographic comparing four types of Azure disks: Ultra SSD, Premium SSD, Standard SSD, and Standard HDD, highlighting their performance metrics and ideal use cases.](https://kodekloud.com/kk-media/image/upload/v1752867114/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Disks/azure-disks-comparison-infographic.jpg)
 
 ## Azure Disk Caching
 
@@ -39,7 +39,7 @@ Optimizing read and write operations is critical to enhancing performance on you
 3. **Read-write**\
    Ideal for applications with mixed read and write demands, this option writes data to the cache first before persisting it to disk. This strategy enhances both read and write efficiency.
 
-![The image is an infographic from KodeKloud about enhancing performance using disk caching, showing three options: "None," "Read-only," and "Read-write," each with a description and a plant graphic symbolizing growth.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867115/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Disks/disk-caching-performance-infographic.jpg)
+![The image is an infographic from KodeKloud about enhancing performance using disk caching, showing three options: "None," "Read-only," and "Read-write," each with a description and a plant graphic symbolizing growth.](https://kodekloud.com/kk-media/image/upload/v1752867115/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Disks/disk-caching-performance-infographic.jpg)
 
 ## Disk Encryption and Security Options
 
@@ -56,7 +56,7 @@ Ensuring that your data remains secure is paramount. Azure provides multiple enc
 3. **Encryption at Host**\
    This approach encrypts data at the VM host level, safeguarding data both at rest and in transit. However, if using a customer-managed key with SSE, ADE or encryption at host cannot be combined. With Microsoft-managed keys, combining SSE with ADE adds an extra layer of security through a defense-in-depth strategy.
 
-![The image is an infographic titled "Securing data disks," explaining Azure's encryption strategies, including Azure Disks Encryption, Server-Side Encryption, and Encryption at host. It provides brief descriptions of each method's purpose and functionality.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867116/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Disks/securing-data-disks-azure-encryption.jpg)
+![The image is an infographic titled "Securing data disks," explaining Azure's encryption strategies, including Azure Disks Encryption, Server-Side Encryption, and Encryption at host. It provides brief descriptions of each method's purpose and functionality.](https://kodekloud.com/kk-media/image/upload/v1752867116/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Disks/securing-data-disks-azure-encryption.jpg)
 
 ## Configuring Disk Settings in the Azure Portal
 
@@ -67,18 +67,18 @@ Follow these steps to configure disk caching and encryption through the Azure Po
    * Modify the caching option—switch between read-write, read-only, or none—depending on your workload's demands.
    * The selected caching mode determines whether data is read directly from the disk or via a host-level cache, thereby impacting performance.
 
-![The image shows a Microsoft Azure portal interface displaying the disk settings for a virtual machine named "sde-vm-01," including options for OS and data disks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867117/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Disks/azure-portal-disk-settings-sde-vm-01.jpg)
+![The image shows a Microsoft Azure portal interface displaying the disk settings for a virtual machine named "sde-vm-01," including options for OS and data disks.](https://kodekloud.com/kk-media/image/upload/v1752867117/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Disks/azure-portal-disk-settings-sde-vm-01.jpg)
 
 2. **Azure Disk Encryption and SSE**
    * In the disk's additional settings, you can configure encryption options.
    * The ADE section lets you select the disk for encryption and specify an Azure Key Vault for key management.
    * SSE settings are visible by default, typically set to use a platform-managed key. Switching to customer-managed keys is possible when the VM is deallocated, though this can limit the use of other encryption options like ADE or encryption at host.
 
-![The image shows the "Disk settings" page in the Microsoft Azure portal, where options for Ultra Disk compatibility, encryption at host, and encryption settings are configured.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867118/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Disks/azure-disk-settings-page.jpg)
+![The image shows the "Disk settings" page in the Microsoft Azure portal, where options for Ultra Disk compatibility, encryption at host, and encryption settings are configured.](https://kodekloud.com/kk-media/image/upload/v1752867118/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Disks/azure-disk-settings-page.jpg)
 
 * To access further encryption configurations, open the disk details, locate the encryption settings, and review the key management options available.
 
-![The image shows a Microsoft Azure portal page focused on the encryption settings for a virtual machine disk. It includes options for key management, with a dropdown menu for selecting a platform-managed key.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867119/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Disks/azure-portal-encryption-settings-vm.jpg)
+![The image shows a Microsoft Azure portal page focused on the encryption settings for a virtual machine disk. It includes options for key management, with a dropdown menu for selecting a platform-managed key.](https://kodekloud.com/kk-media/image/upload/v1752867119/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Disks/azure-portal-encryption-settings-vm.jpg)
 
 ## Next Steps
 

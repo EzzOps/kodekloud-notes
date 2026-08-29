@@ -13,9 +13,7 @@ Blue Ocean is an integrated part of Jenkins, but it is not enabled by default. I
 3. Enter "Blue Ocean" in the search box. Among the results, locate the **Blue Ocean aggregator**.
 4. Click on the **Blue Ocean aggregator** entry and then choose **Install without Restart**.
 
-<Callout icon="lightbulb">
-  Jenkins will automatically install multiple related components, so there is no need to install them individually.
-</Callout>
+> **lightbulb** Jenkins will automatically install multiple related components, so there is no need to install them individually.
 
 Allow a few minutes for the installation to complete. Once finished, you can proceed to access Blue Ocean.
 
@@ -27,14 +25,10 @@ To launch Blue Ocean, simply append `/blue` to your Jenkins URL. This action ope
 
 If you need to return to the standard Jenkins portal, click on **Administration** within Blue Ocean. To switch back to Blue Ocean later, either append `/blue` to your Jenkins URL or click on the **Open Blue Ocean** button within the interface.
 
-<Callout icon="triangle-alert">
-  Ensure that you have proper access rights and a stable connection before making significant changes to your Jenkins configuration.
-</Callout>
+> **triangle-alert** Ensure that you have proper access rights and a stable connection before making significant changes to your Jenkins configuration.
 
 ## Next Steps
 
 This article covers the installation and access procedures for Blue Ocean. Stay tuned for further discussions on Jenkins pipelines and additional advanced configurations.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/77db3006-93f7-42b0-90d0-6fd961631d1f/lesson/8c68182c-d48c-413c-ab5e-a66494f5f6c0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/77db3006-93f7-42b0-90d0-6fd961631d1f/lesson/8c68182c-d48c-413c-ab5e-a66494f5f6c0)

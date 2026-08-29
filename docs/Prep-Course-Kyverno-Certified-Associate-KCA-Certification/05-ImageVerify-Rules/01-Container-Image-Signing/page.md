@@ -73,9 +73,7 @@ A typical signing and verification flow:
 
 Kyverno does not generate signatures. Its responsibility is to verify signatures and enforce policies at admission time. Kyverno integrates with tools like [Sigstore Cosign](https://github.com/sigstore/cosign) and [Notary](https://github.com/theupdateframework/notary) by fetching signatures/attestations from the registry and validating them against configured trust material (public keys or trust roots).
 
-<Callout icon="lightbulb">
-  Kyverno verifies image signatures during admission using configured trust sources. Signing is typically done by your CI/CD pipeline or a dedicated signing process.
-</Callout>
+> **lightbulb** Kyverno verifies image signatures during admission using configured trust sources. Signing is typically done by your CI/CD pipeline or a dedicated signing process.
 
 <Frame>
   <img alt="The image outlines the process Kyverno uses to verify signatures: intercepting the request, connecting to a container registry, using a public key for validation, and deciding whether to allow or deny pod creation." />

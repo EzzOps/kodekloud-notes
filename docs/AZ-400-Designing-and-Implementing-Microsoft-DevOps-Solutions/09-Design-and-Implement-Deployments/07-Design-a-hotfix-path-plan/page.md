@@ -56,7 +56,7 @@ This guide covers creating a hotfix deployment plan in Azure DevOps to maintain 
 
 In this guide, we’ll walk through creating a streamlined hotfix deployment plan in Azure DevOps. A well-defined hotfix strategy is critical for maintaining production stability, meeting Service Level Objectives (SLOs), and succeeding on the \[AZ-400 Exam]. Hotfixes address urgent bugs and security vulnerabilities—think of them as emergency patches that keep your application running under pressure.
 
-![The image is a slide titled "Hotfix Path Plan – Introduction" with a quote about code changes for critical issues, alongside an illustration of a wrench and flames.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867609/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-hotfix-path-plan/hotfix-path-plan-introduction-quote.jpg)
+![The image is a slide titled "Hotfix Path Plan – Introduction" with a quote about code changes for critical issues, alongside an illustration of a wrench and flames.](https://kodekloud.com/kk-media/image/upload/v1752867609/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-hotfix-path-plan/hotfix-path-plan-introduction-quote.jpg)
 
 ## Why You Need a Hotfix Path Plan
 
@@ -67,7 +67,7 @@ Having a pre-approved hotfix workflow delivers two major benefits:
 * **Minimal service disruption**\
   Apply fixes swiftly without compromising system reliability.
 
-![The image is an introduction to a "Hotfix Path Plan," featuring two points: ensuring rapid and controlled deployment of changes, and minimizing disruption while maintaining system integrity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867610/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-hotfix-path-plan/hotfix-path-plan-deployment-integration.jpg)
+![The image is an introduction to a "Hotfix Path Plan," featuring two points: ensuring rapid and controlled deployment of changes, and minimizing disruption while maintaining system integrity.](https://kodekloud.com/kk-media/image/upload/v1752867610/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-hotfix-path-plan/hotfix-path-plan-deployment-integration.jpg)
 
 ## Hotfix Branching Strategy
 
@@ -85,7 +85,7 @@ Adopt a clear branching model to isolate and track urgent fixes:
 2. Implement and test the fix in the hotfix branch.
 3. Merge changes back into both **master** and **dev** to keep all branches up to date.
 
-![The image is a diagram illustrating a "Hotfix Path Plan," showing branches and merges between "master," "hotfix," and "dev" paths, with version labels v2.0 and v3.0.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867612/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-hotfix-path-plan/hotfix-path-plan-branches-diagram.jpg)
+![The image is a diagram illustrating a "Hotfix Path Plan," showing branches and merges between "master," "hotfix," and "dev" paths, with version labels v2.0 and v3.0.](https://kodekloud.com/kk-media/image/upload/v1752867612/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-hotfix-path-plan/hotfix-path-plan-branches-diagram.jpg)
 
 ## Five Steps of a Hotfix Path Plan
 
@@ -102,7 +102,7 @@ Follow these structured stages to ensure a smooth hotfix rollout:
 5. **Post-Deployment Review**\
    Document outcomes, identify improvements, and update runbooks.
 
-![The image outlines the components of a "Hotfix Path Plan," including steps like issue detection, prioritization, development, deployment, and post-deployment review. Each step is represented with a numbered and colored card.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867613/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-hotfix-path-plan/hotfix-path-plan-steps-outline.jpg)
+![The image outlines the components of a "Hotfix Path Plan," including steps like issue detection, prioritization, development, deployment, and post-deployment review. Each step is represented with a numbered and colored card.](https://kodekloud.com/kk-media/image/upload/v1752867613/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-hotfix-path-plan/hotfix-path-plan-steps-outline.jpg)
 
 ### Deep Dive: Prioritization & Approval
 
@@ -127,7 +127,7 @@ trigger:
 
 This configuration runs unit and integration tests on each push, catching regressions before deployment.
 
-![The image is a presentation slide titled "Streamlining Hotfix Implementation" featuring the Azure DevOps logo, with a note about automating and accelerating development and testing phases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867614/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-hotfix-path-plan/streamlining-hotfix-implementation-azure-devops.jpg)
+![The image is a presentation slide titled "Streamlining Hotfix Implementation" featuring the Azure DevOps logo, with a note about automating and accelerating development and testing phases.](https://kodekloud.com/kk-media/image/upload/v1752867614/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-hotfix-path-plan/streamlining-hotfix-implementation-azure-devops.jpg)
 
 Automation reduces manual steps and speeds up your hotfix delivery.
 
@@ -140,7 +140,7 @@ Choose the right rollout plan based on risk and urgency:
 | Phased Rollout | Deploy to a subset of users or environments | Safer but slower   |
 | Full Rollout   | Release to all users at once                | Faster but riskier |
 
-![The image compares two methods of hotfix deployment: "Phased Rollout" and "Full Rollout."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867615/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-hotfix-path-plan/hotfix-deployment-phased-full-rollout.jpg)
+![The image compares two methods of hotfix deployment: "Phased Rollout" and "Full Rollout."](https://kodekloud.com/kk-media/image/upload/v1752867615/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-a-hotfix-path-plan/hotfix-deployment-phased-full-rollout.jpg)
 
 Balance the criticality of the fix against potential side effects to select the optimal approach.
 

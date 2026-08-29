@@ -109,9 +109,7 @@ On the dashboard, you’ll find:
 
 On the **Services** page, you can drill into each service’s pods and endpoints. In our CompanyX application, all services show healthy endpoints:
 
-<Frame>
-  ![The image shows a Traefik dashboard displaying service details for a Kubernetes load balancer, including server URLs and their statuses. It also lists routers used by the service with associated rules and priorities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880301/notes-assets/images/Kubernetes-Networking-Deep-Dive-Demo-Traefik-Observability/traefik-dashboard-kubernetes-load-balancer.jpg)
-</Frame>
+![The image shows a Traefik dashboard displaying service details for a Kubernetes load balancer, including server URLs and their statuses. It also lists routers used by the service with associated rules and priorities.](https://kodekloud.com/kk-media/image/upload/v1752880301/notes-assets/images/Kubernetes-Networking-Deep-Dive-Demo-Traefik-Observability/traefik-dashboard-kubernetes-load-balancer.jpg)
 
 ## 4. Scale the Application
 
@@ -138,17 +136,13 @@ companyx-website-5d596d7d7d-mno90     1/1     Running   0          1m
 
 Refresh the Traefik dashboard—you’ll now see five healthy pods listed under the CompanyX service.
 
-<Callout icon="lightbulb">
-  In a production setup, secure the dashboard with authentication or restrict access to a private network.
-</Callout>
+> **lightbulb** In a production setup, secure the dashboard with authentication or restrict access to a private network.
 
 ***
 
 This completes our overview of the Traefik observability dashboard—an invaluable tool for monitoring traffic flows, routing, and service health in Kubernetes. For further reading, see the [Traefik documentation](https://doc.traefik.io/traefik/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/19677663-2b7d-4c3d-92ee-06df9f5530eb/lesson/de4fe60d-c213-4a51-bd72-8293086d4a37" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/19677663-2b7d-4c3d-92ee-06df9f5530eb/lesson/de4fe60d-c213-4a51-bd72-8293086d4a37)
 
 
 # External DNS Overview
@@ -159,15 +153,11 @@ ExternalDNS automates DNS record management for Kubernetes services and ingresse
 
 The Kubernetes DNS system enables services and pods to discover one another via in-cluster lookups. When you expose applications to the public internet, managing DNS records manually can become error-prone. ExternalDNS automates this process by synchronizing Kubernetes Services and Ingresses with your DNS provider—AWS Route 53, Cloudflare, Google Cloud DNS, and more.
 
-<Frame>
-  ![The image is an infographic explaining the features of ExternalDNS, highlighting its capabilities in automating DNS record synchronization, interacting with DNS providers, dynamically updating records, ensuring external access via domain names, and adjusting records automatically.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880302/notes-assets/images/Kubernetes-Networking-Deep-Dive-External-DNS-Overview/external-dns-features-infographic.jpg)
-</Frame>
+![The image is an infographic explaining the features of ExternalDNS, highlighting its capabilities in automating DNS record synchronization, interacting with DNS providers, dynamically updating records, ensuring external access via domain names, and adjusting records automatically.](https://kodekloud.com/kk-media/image/upload/v1752880302/notes-assets/images/Kubernetes-Networking-Deep-Dive-External-DNS-Overview/external-dns-features-infographic.jpg)
 
 ExternalDNS continuously watches for Kubernetes resource changes. When a Service or Ingress is created, updated, or deleted, it will create, update, or remove the corresponding DNS records, ensuring your applications remain reachable even as IP addresses shift.
 
-<Frame>
-  ![The image illustrates the concept of ExternalDNS for Kubernetes, showing the connection between a Kubernetes cluster and a DNS service, mapping an IP address to a domain name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880302/notes-assets/images/Kubernetes-Networking-Deep-Dive-External-DNS-Overview/external-dns-kubernetes-connection-diagram.jpg)
-</Frame>
+![The image illustrates the concept of ExternalDNS for Kubernetes, showing the connection between a Kubernetes cluster and a DNS service, mapping an IP address to a domain name.](https://kodekloud.com/kk-media/image/upload/v1752880302/notes-assets/images/Kubernetes-Networking-Deep-Dive-External-DNS-Overview/external-dns-kubernetes-connection-diagram.jpg)
 
 ## Key Features
 
@@ -191,9 +181,7 @@ ExternalDNS continuously watches for Kubernetes resource changes. When a Service
    | DigitalOcean DNS    | DO-managed domains       | `--provider=digitalocean` |
    | NS1, Infoblox, etc. | Enterprise DNS solutions | `--provider=<name>`       |
 
-<Frame>
-  ![The image highlights key features of a DNS management service, including dynamic DNS updates, wide DNS provider support, and flexibility, with compatibility across various platforms like AWS Route 53, Google Cloud DNS, and Cloudflare.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880304/notes-assets/images/Kubernetes-Networking-Deep-Dive-External-DNS-Overview/dns-management-service-features-diagram.jpg)
-</Frame>
+![The image highlights key features of a DNS management service, including dynamic DNS updates, wide DNS provider support, and flexibility, with compatibility across various platforms like AWS Route 53, Google Cloud DNS, and Cloudflare.](https://kodekloud.com/kk-media/image/upload/v1752880304/notes-assets/images/Kubernetes-Networking-Deep-Dive-External-DNS-Overview/dns-management-service-features-diagram.jpg)
 
 ## Architecture Scenarios
 
@@ -215,9 +203,7 @@ helm repo add external-dns https://kubernetes-sigs.github.io/external-dns/
 helm repo update
 ```
 
-<Callout icon="triangle-alert">
-  Ensure your cloud IAM role or API credentials have permissions to create and modify DNS records. See [ExternalDNS GitHub](https://github.com/kubernetes-sigs/external-dns) for provider-specific requirements.
-</Callout>
+> **triangle-alert** Ensure your cloud IAM role or API credentials have permissions to create and modify DNS records. See [ExternalDNS GitHub](https://github.com/kubernetes-sigs/external-dns) for provider-specific requirements.
 
 Install with Helm, replacing `provider` and provider-specific settings as needed:
 
@@ -228,9 +214,7 @@ helm install external-dns external-dns/external-dns \
   --set aws.zoneType=public
 ```
 
-<Callout icon="lightbulb">
-  You can also install ExternalDNS by applying a plain Kubernetes Deployment manifest—ideal for GitOps workflows.
-</Callout>
+> **lightbulb** You can also install ExternalDNS by applying a plain Kubernetes Deployment manifest—ideal for GitOps workflows.
 
 ## Deployment Configuration
 
@@ -273,9 +257,7 @@ spec:
 * `--policy` (sync or create-only)
 * `--domain-filter` (restrict to specific domains)
 
-<Frame>
-  ![The image shows a person working on a laptop with a list of configuration arguments divided into "General Arguments" and "DNS Provider Arguments." The arguments include options like source, namespace, provider, policy, domain-filter, and provider-specific settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880305/notes-assets/images/Kubernetes-Networking-Deep-Dive-External-DNS-Overview/laptop-configuration-arguments-list.jpg)
-</Frame>
+![The image shows a person working on a laptop with a list of configuration arguments divided into "General Arguments" and "DNS Provider Arguments." The arguments include options like source, namespace, provider, policy, domain-filter, and provider-specific settings.](https://kodekloud.com/kk-media/image/upload/v1752880305/notes-assets/images/Kubernetes-Networking-Deep-Dive-External-DNS-Overview/laptop-configuration-arguments-list.jpg)
 
 ## Security, Authentication & Advanced Options
 
@@ -284,9 +266,7 @@ spec:
 * `--annotation-filter` (manage only annotated resources)
 * `--fqdn-template` (custom FQDN generation)
 
-<Frame>
-  ![The image shows an illustration of a person working on a laptop with a list of configuration arguments related to "Security and Authentication" and "Advanced" settings. The background includes gears and a code symbol, suggesting a tech or programming context.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880306/notes-assets/images/Kubernetes-Networking-Deep-Dive-External-DNS-Overview/person-laptop-security-authentication-illustration.jpg)
-</Frame>
+![The image shows an illustration of a person working on a laptop with a list of configuration arguments related to "Security and Authentication" and "Advanced" settings. The background includes gears and a code symbol, suggesting a tech or programming context.](https://kodekloud.com/kk-media/image/upload/v1752880306/notes-assets/images/Kubernetes-Networking-Deep-Dive-External-DNS-Overview/person-laptop-security-authentication-illustration.jpg)
 
 ## Configuring Application Resources
 

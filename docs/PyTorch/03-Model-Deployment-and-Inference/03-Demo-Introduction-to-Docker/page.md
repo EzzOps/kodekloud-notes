@@ -214,9 +214,7 @@ This mapping step translates the model’s output into a readable class label.
 
 ***
 
-<Frame>
-  ![The image shows a Jupyter Notebook interface with Python code related to exporting a model using the torch.onnx.export function. The help documentation for this function is displayed, detailing its usage and arguments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883211/notes-assets/images/PyTorch-Demo-Deployment-Options/jupyter-notebook-torch-export-function.jpg)
-</Frame>
+![The image shows a Jupyter Notebook interface with Python code related to exporting a model using the torch.onnx.export function. The help documentation for this function is displayed, detailing its usage and arguments.](https://kodekloud.com/kk-media/image/upload/v1752883211/notes-assets/images/PyTorch-Demo-Deployment-Options/jupyter-notebook-torch-export-function.jpg)
 
 ***
 
@@ -233,15 +231,11 @@ In this demo, we explored the end-to-end process of working with ONNX and ONNX R
 | Running Inference               | Deploying the ONNX model with ONNX Runtime and determining the predicted class from raw logits. |
 | Mapping Predictions             | Converting numerical predictions to human-readable class labels.                                |
 
-<Callout icon="lightbulb">
-  This guide provides a solid foundation for integrating ONNX models in a variety of deployment environments. For additional information, explore the [ONNX Documentation](https://onnx.ai/).
-</Callout>
+> **lightbulb** This guide provides a solid foundation for integrating ONNX models in a variety of deployment environments. For additional information, explore the [ONNX Documentation](https://onnx.ai/).
 
 Thank you for reading this demonstration on exporting and using ONNX models for inference in real-world applications.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/35e334ea-9ad5-4570-b988-6562dd95a5a8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/a958efa1-845c-4cdf-9261-7688050bd96c/lesson/35e334ea-9ad5-4570-b988-6562dd95a5a8)
 
 
 # Demo Introduction to Docker
@@ -258,9 +252,7 @@ In this lesson, we guide you through using Docker to deploy a Flask application 
 
 Docker runs on Linux, Windows, and macOS, but in this example we focus on an Ubuntu server. The following instructions are adapted from the official Docker documentation.
 
-<Callout icon="lightbulb">
-  Before starting the installation, update your package index to ensure you have the latest information from the repositories.
-</Callout>
+> **lightbulb** Before starting the installation, update your package index to ensure you have the latest information from the repositories.
 
 ### Step 1: Prerequisites
 

@@ -53,13 +53,9 @@ Practical calculation example:
 * `Pods` policy: `4` → allows `4` pods
 * With `selectPolicy: Max` the HPA would allow up to `4` pods; with `selectPolicy: Min` it would allow `2` pods.
 
-<Callout icon="lightbulb">
-  Default HPA controller sync period is typically 15 seconds (`--horizontal-pod-autoscaler-sync-period`). Policies control the minimum interval for specific changes via `periodSeconds`, so frequent metric checks can still be gated by policy limits.
-</Callout>
+> **lightbulb** Default HPA controller sync period is typically 15 seconds (`--horizontal-pod-autoscaler-sync-period`). Policies control the minimum interval for specific changes via `periodSeconds`, so frequent metric checks can still be gated by policy limits.
 
-<Callout icon="warning">
-  Be cautious with overly aggressive policies (large `value` and short `periodSeconds`). They can cause rapid scaling that overshoots capacity or generates instability. Start conservative and validate with load testing.
-</Callout>
+> **warning** Be cautious with overly aggressive policies (large `value` and short `periodSeconds`). They can cause rapid scaling that overshoots capacity or generates instability. Start conservative and validate with load testing.
 
 ## Configuring `behavior` with `scaleUp` and `scaleDown`
 
@@ -139,6 +135,4 @@ Defaults and best practices:
 * [kube-controller-manager options — `--horizontal-pod-autoscaler-sync-period`](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/)
 * For examples and HPA API fields, consult the Kubernetes API reference and HPA v2/v2beta2 docs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/d9eaf966-8398-420c-94d2-3e1b79bed80e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/d9eaf966-8398-420c-94d2-3e1b79bed80e)

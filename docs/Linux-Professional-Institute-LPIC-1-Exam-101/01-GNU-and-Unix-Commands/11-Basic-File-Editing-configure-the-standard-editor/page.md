@@ -11,9 +11,7 @@ $ groups
 aaron wheel family
 ```
 
-<Callout icon="lightbulb">
-  You can only switch a file’s group to one you’re already a member of.
-</Callout>
+> **lightbulb** You can only switch a file’s group to one you’re already a member of.
 
 ## Changing File Owner with chown
 
@@ -41,9 +39,7 @@ The permissions string (`-rwxrwxrwx`) breaks down as:
   * `l` = symbolic link
 * Next nine: three triplets for **owner**, **group**, and **others**, each with `r` (read), `w` (write), and `x` (execute).
 
-<Frame>
-  ![The image illustrates file and directory permissions in a Unix-like system, showing the permission string "rwxrwxrwx" for owner, group, and others, along with a key explaining the meaning of each permission bit.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881384/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Manage-File-Permissions-and-Ownership/unix-file-directory-permissions-diagram.jpg)
-</Frame>
+![The image illustrates file and directory permissions in a Unix-like system, showing the permission string "rwxrwxrwx" for owner, group, and others, along with a key explaining the meaning of each permission bit.](https://kodekloud.com/kk-media/image/upload/v1752881384/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Manage-File-Permissions-and-Ownership/unix-file-directory-permissions-diagram.jpg)
 
 ### Permission Effects
 
@@ -97,9 +93,7 @@ $ ls -l
 -rw-r----- 1 aaron family 49 Oct 27 14:41 family_dog.jpg
 ```
 
-<Frame>
-  ![The image shows a guide on removing permissions in a command-line interface, with examples for users, groups, and others. It includes options like u-, g-, and o- with examples such as u-w, g-rw, and o-rwx.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881385/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Manage-File-Permissions-and-Ownership/remove-permissions-command-line-guide.jpg)
-</Frame>
+![The image shows a guide on removing permissions in a command-line interface, with examples for users, groups, and others. It includes options like u-, g-, and o- with examples such as u-w, g-rw, and o-rwx.](https://kodekloud.com/kk-media/image/upload/v1752881385/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Manage-File-Permissions-and-Ownership/remove-permissions-command-line-guide.jpg)
 
 ### Setting Exact Permissions
 
@@ -143,9 +137,7 @@ $ stat family_dog.jpg
 
 Here **owner** has `rw-` (6), **group** has `r--` (4), **others** have `---` (0) → mode `640`.
 
-<Frame>
-  ![The image illustrates octal file permissions, showing the conversion between symbolic, binary, and decimal representations. It includes examples of permissions like "rw-r--r--" and "rwxr-xr-x" with their corresponding binary and decimal values.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881386/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Manage-File-Permissions-and-Ownership/octal-file-permissions-symbolic-binary.jpg)
-</Frame>
+![The image illustrates octal file permissions, showing the conversion between symbolic, binary, and decimal representations. It includes examples of permissions like "rw-r--r--" and "rwxr-xr-x" with their corresponding binary and decimal values.](https://kodekloud.com/kk-media/image/upload/v1752881386/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Manage-File-Permissions-and-Ownership/octal-file-permissions-symbolic-binary.jpg)
 
 Alternatively, assign values: `r=4`, `w=2`, `x=1`:
 
@@ -153,9 +145,7 @@ Alternatively, assign values: `r=4`, `w=2`, `x=1`:
 * `r-x` = 4+0+1 = 5
 * `r--` = 4+0+0 = 4
 
-<Frame>
-  ![The image explains octal permissions in a Unix-like system, showing how the permissions "rw-r-----" translate to the octal value "640". It also provides a key for permission values: read (r) is 4, write (w) is 2, and execute (x) is 1.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881386/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Manage-File-Permissions-and-Ownership/octal-permissions-unix-diagram-640.jpg)
-</Frame>
+![The image explains octal permissions in a Unix-like system, showing how the permissions "rw-r-----" translate to the octal value "640". It also provides a key for permission values: read (r) is 4, write (w) is 2, and execute (x) is 1.](https://kodekloud.com/kk-media/image/upload/v1752881386/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Manage-File-Permissions-and-Ownership/octal-permissions-unix-diagram-640.jpg)
 
 ### Setting Numeric Permissions
 
@@ -170,9 +160,7 @@ $ chmod 640 family_dog.jpg  # rw-r-----
 * [chmod Command Tutorial](https://linux.die.net/man/1/chmod)
 * [chown and chgrp Usage](https://linux.die.net/man/1/chown)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/f4992ea9-7155-41cd-a174-9fbebcdc4ccf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/f4992ea9-7155-41cd-a174-9fbebcdc4ccf)
 
 
 # Basic File Editing configure the standard editor
@@ -188,9 +176,7 @@ Changing the shell’s default text editor lets you work faster when editing fil
 | VISUAL   | Full-screen, visual editors   | `vim`, `emacs` |
 | EDITOR   | Simple, line-oriented editors | `nano`, `ed`   |
 
-<Callout icon="lightbulb">
-  If both `VISUAL` and `EDITOR` are set, many programs will prefer `VISUAL`. To ensure consistency, consider exporting both variables.
-</Callout>
+> **lightbulb** If both `VISUAL` and `EDITOR` are set, many programs will prefer `VISUAL`. To ensure consistency, consider exporting both variables.
 
 ## 1. Setting the Editor for the Current Session
 
@@ -202,9 +188,7 @@ export EDITOR=nano
 
 After running this, any program in this session that relies on your default editor will open `nano` instead of `vi`.
 
-<Callout icon="triangle-alert">
-  This change only applies to the current session. Close the terminal or start a new shell, and you’ll revert to the previous default.
-</Callout>
+> **triangle-alert** This change only applies to the current session. Close the terminal or start a new shell, and you’ll revert to the previous default.
 
 ## 2. Making the Change Permanent
 
@@ -228,10 +212,6 @@ Save and exit. From now on, all new Bash sessions for that user will launch `nan
 * [Environment Variables in Linux](https://www.gnu.org/software/sh-utils/manual/html_node/Environmental-Variables.html)
 * [Nano Editor Documentation](https://www.nano-editor.org/docs.php)
 
-<Callout icon="lightbulb">
-  Check your understanding with the quiz.
-</Callout>
+> **lightbulb** Check your understanding with the quiz.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/c52d877a-3522-4ac9-b7ee-0a6df6f95ae3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/c52d877a-3522-4ac9-b7ee-0a6df6f95ae3)

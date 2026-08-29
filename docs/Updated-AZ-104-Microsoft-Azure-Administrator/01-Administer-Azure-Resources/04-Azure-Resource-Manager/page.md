@@ -16,9 +16,7 @@ When you issue commands—whether through the Azure portal, Azure PowerShell, CL
 
 When you deploy a resource, your instructions are forwarded to ARM, which then provisions the necessary services behind the scenes. Conversely, when a resource is slated for deletion, the request is routed through the API to ARM, which manages the removal process.
 
-<Callout icon="lightbulb">
-  ARM provides a reliable and consistent way to manage your cloud infrastructure, reducing the complexity involved in handling disparate services.
-</Callout>
+> **lightbulb** ARM provides a reliable and consistent way to manage your cloud infrastructure, reducing the complexity involved in handling disparate services.
 
 ## Core Features
 
@@ -42,6 +40,4 @@ This refined approach marks a significant advancement compared to the older Azur
 
 Next, we will explore ARM templates—Azure Resource Manager templates—and demonstrate how they automate the deployment process. To learn more about these templates and automate your resource deployment process, refer to the [Azure Resource Manager documentation](https://learn.microsoft.com/en-us/azure/azure-resource-manager/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/7f421132-242f-4d10-85e5-6673b7307d12/lesson/d6fc98fd-cd32-480f-ab6a-78785d7ba196" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/7f421132-242f-4d10-85e5-6673b7307d12/lesson/d6fc98fd-cd32-480f-ab6a-78785d7ba196)

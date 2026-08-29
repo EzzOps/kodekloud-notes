@@ -32,7 +32,7 @@ Pipeline health monitoring ensures that your builds and deployments are reliable
 | Queue Time       | Wait time before an agent picks a job     | \< 2 minutes       |
 | Flaky Test Count | Number of non-deterministic test failures | Zero or minimal    |
 
-![The image is a slide titled "Discovering Pipeline Health," listing topics related to monitoring and managing DevOps pipelines, including Azure tools and strategies for handling flaky tests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868132/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/discovering-pipeline-health-devops-monitoring.jpg)
+![The image is a slide titled "Discovering Pipeline Health," listing topics related to monitoring and managing DevOps pipelines, including Azure tools and strategies for handling flaky tests.](https://kodekloud.com/kk-media/image/upload/v1752868132/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/discovering-pipeline-health-devops-monitoring.jpg)
 
 > **lightbulb** Flaky tests can erode confidence in your CI/CD process. Incorporate retries and isolate tests to identify root causes quickly.
 
@@ -95,7 +95,7 @@ YAML Pipelines provide full version control, modular templates, and better colla
    * Implement environment-specific variable groups
    * Integrate security and dependency scanning early
 
-![The image is a slide titled "Migrating a Pipeline From Classic to YAML in Azure Pipelines," listing topics such as introduction, YAML and classic pipelines, migration reasons, checklist, process, challenges, and best practices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868134/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/migrating-pipeline-classic-yaml-azure.jpg)
+![The image is a slide titled "Migrating a Pipeline From Classic to YAML in Azure Pipelines," listing topics such as introduction, YAML and classic pipelines, migration reasons, checklist, process, challenges, and best practices.](https://kodekloud.com/kk-media/image/upload/v1752868134/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/migrating-pipeline-classic-yaml-azure.jpg)
 
 > **lightbulb** Test your YAML pipeline thoroughly before decommissioning the Classic version to avoid production disruptions.
 

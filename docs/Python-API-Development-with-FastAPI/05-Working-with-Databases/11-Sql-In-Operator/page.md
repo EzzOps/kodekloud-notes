@@ -54,9 +54,7 @@ Data Output
 | remote        |                   | 10    | 3       | false | 0            | 2021-08-20 00:49:58.021274-04 |
 ```
 
-<Callout icon="lightbulb">
-  Using the IN operator not only reduces the repetition of SQL keywords but also improves readability, especially when filtering based on multiple values.
-</Callout>
+> **lightbulb** Using the IN operator not only reduces the repetition of SQL keywords but also improves readability, especially when filtering based on multiple values.
 
 ## Recap of the IN Operator
 
@@ -68,6 +66,4 @@ SELECT * FROM products WHERE id IN (1, 2, 3);
 
 This approach is especially beneficial when dealing with larger sets of filtering criteria, making your queries easier to write and understand.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/dca528bf-6957-457b-8981-b8623c46a682" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/dca528bf-6957-457b-8981-b8623c46a682)

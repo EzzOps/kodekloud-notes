@@ -2,9 +2,7 @@
 MESSAGE=Hello, World
 ```
 
-<Callout icon="lightbulb">
-  Pods do not automatically update if a mounted ConfigMap changes. To see the updated configuration, you must restart the pod.
-</Callout>
+> **lightbulb** Pods do not automatically update if a mounted ConfigMap changes. To see the updated configuration, you must restart the pod.
 
 To update the running configuration, restart the deployment:
 
@@ -79,9 +77,7 @@ Once restarted, monitor the pod’s status and events to ensure it becomes ready
 
 These examples illustrate that updating a ConfigMap or Secret does not automatically refresh the environment variables in running pods. Kubernetes requires a pod or deployment restart for changes to take effect. For large-scale environments with many pods, manually tracking which resources need a restart can be challenging.
 
-<Callout icon="lightbulb">
-  Whenever you modify an external ConfigMap or Secret that is mounted onto pods, ensure that you restart the affected pods or deployments. This step is essential for the changes to be applied to the running configuration.
-</Callout>
+> **lightbulb** Whenever you modify an external ConfigMap or Secret that is mounted onto pods, ensure that you restart the affected pods or deployments. This step is essential for the changes to be applied to the running configuration.
 
 In an upcoming lesson, we will discuss strategies to manage these challenges more efficiently in your Kubernetes clusters.
 
@@ -92,9 +88,7 @@ For more detailed Kubernetes concepts and best practices, check these resources:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/bcd00274-e7fc-450d-bf2b-167b12bbe508" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/bcd00274-e7fc-450d-bf2b-167b12bbe508)
 
 
 # Crashing Pods
@@ -426,14 +420,10 @@ With these updated probe settings, the analytics container has sufficient time t
 
 ***
 
-<Callout icon="lightbulb">
-  This lesson has detailed several common causes of CrashLoopBackOff errors—from missing environment variables and file permission issues to misconfigurations and resource constraints. By carefully reviewing logs, events, and container states, you can identify the root cause and apply the appropriate fixes for more stable pod deployments.
-</Callout>
+> **lightbulb** This lesson has detailed several common causes of CrashLoopBackOff errors—from missing environment variables and file permission issues to misconfigurations and resource constraints. By carefully reviewing logs, events, and container states, you can identify the root cause and apply the appropriate fixes for more stable pod deployments.
 
 Happy troubleshooting!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/e453f1ba-98fb-4654-ab01-d959e59c2c1c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/e453f1ba-98fb-4654-ab01-d959e59c2c1c)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/6be2b74f-b9b4-4cd1-a01e-2d86344bfd01" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/6be2b74f-b9b4-4cd1-a01e-2d86344bfd01)

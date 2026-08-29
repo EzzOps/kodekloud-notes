@@ -52,9 +52,7 @@ Why rollback matters:
 * Prometheus, Grafana, Alertmanager: [https://learn.kodekloud.com/user/courses/aiops-foundations-intelligent-monitoring-with-prometheus-grafana](https://learn.kodekloud.com/user/courses/aiops-foundations-intelligent-monitoring-with-prometheus-grafana)
 * Kubernetes concepts: [https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/c61c911c-ea63-4920-ac9f-047b262566a5/lesson/5f8aa0fd-51b6-462c-bb07-e39b47937c52" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/c61c911c-ea63-4920-ac9f-047b262566a5/lesson/5f8aa0fd-51b6-462c-bb07-e39b47937c52)
 
 
 # Course Overview
@@ -95,9 +93,7 @@ This push-plus-manual approach produced three primary issues:
 
 GitOps is a methodology that treats Git as the single source of truth for the desired system state and uses automated, auditable mechanisms to reconcile the live cluster state with Git. Instead of pushing changes into the cluster from outside, GitOps relies on pull-based agents (controllers) running inside the cluster to continuously compare and apply the declared state from Git.
 
-<Callout icon="lightbulb">
-  GitOps: Store the desired state in Git, and use automated controllers (pull-based agents) inside the cluster to continuously reconcile the live state with Git. This improves auditability, reduces credential exposure, prevents configuration drift, and simplifies disaster recovery.
-</Callout>
+> **lightbulb** GitOps: Store the desired state in Git, and use automated controllers (pull-based agents) inside the cluster to continuously reconcile the live state with Git. This improves auditability, reduces credential exposure, prevents configuration drift, and simplifies disaster recovery.
 
 ## Key benefits of GitOps
 
@@ -122,6 +118,4 @@ GitOps is a methodology that treats Git as the single source of truth for the de
 * [Terraform basics training](https://learn.kodekloud.com/user/courses/terraform-basics-training-course)
 * [Ansible for automation](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/c61c911c-ea63-4920-ac9f-047b262566a5/lesson/360f7fe6-0850-4369-bef9-b2ea2f5742aa" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/c61c911c-ea63-4920-ac9f-047b262566a5/lesson/360f7fe6-0850-4369-bef9-b2ea2f5742aa)

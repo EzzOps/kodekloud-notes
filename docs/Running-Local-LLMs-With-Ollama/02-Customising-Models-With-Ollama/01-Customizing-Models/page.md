@@ -14,9 +14,7 @@ In this guide, we’ll walk through creating a domain-specific AI assistant by e
 
 First, create a `Modelfile` that builds on **Llama 3.2**, lowers creativity for financial precision, and sets up a system prompt:
 
-<Frame>
-  ![The image contains text that explains how to use a Modelfile to create a custom model from a base model. It is set against a dark background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883674/notes-assets/images/Running-Local-LLMs-With-Ollama-Customizing-Models/modelfile-custom-model-guide.jpg)
-</Frame>
+![The image contains text that explains how to use a Modelfile to create a custom model from a base model. It is set against a dark background.](https://kodekloud.com/kk-media/image/upload/v1752883674/notes-assets/images/Running-Local-LLMs-With-Ollama-Customizing-Models/modelfile-custom-model-guide.jpg)
 
 ```dockerfile theme={null}
 FROM llama3.2
@@ -30,17 +28,13 @@ SYSTEM You are Harris, an AI assistant for the employees of an investment and po
 | PARAMETER | Adjusts model settings (e.g., creativity, temperature) | `PARAMETER temperature 0.3`                                       |
 | SYSTEM    | Provides identity, role, and default behaviors         | `SYSTEM You are Harris… default currency is Indian Rupees (INR).` |
 
-<Callout icon="lightbulb">
-  Using `PARAMETER temperature 0.3` ensures more accurate, fact-driven responses—crucial for financial applications.
-</Callout>
+> **lightbulb** Using `PARAMETER temperature 0.3` ensures more accurate, fact-driven responses—crucial for financial applications.
 
 ## 2. Build the Custom Model
 
 With your `Modelfile` ready, run:
 
-<Frame>
-  ![The image shows a screen titled "Creating a New Model" with a focus on "llama3.2" and an icon labeled "Base Model."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883675/notes-assets/images/Running-Local-LLMs-With-Ollama-Customizing-Models/creating-new-model-llama3-2.jpg)
-</Frame>
+![The image shows a screen titled "Creating a New Model" with a focus on "llama3.2" and an icon labeled "Base Model."](https://kodekloud.com/kk-media/image/upload/v1752883675/notes-assets/images/Running-Local-LLMs-With-Ollama-Customizing-Models/creating-new-model-llama3-2.jpg)
 
 ```bash theme={null}
 $ ollama create harris -f ./Modelfile
@@ -86,17 +80,13 @@ Notice Harris automatically interprets contributions in ₹, courtesy of the `SY
 
 Once you’re satisfied, push **Harris** to a registry so colleagues can pull it:
 
-<Frame>
-  ![The image outlines two next steps: uploading custom models and enabling access via the "ollama pull" command.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883675/notes-assets/images/Running-Local-LLMs-With-Ollama-Customizing-Models/uploading-custom-models-ollama-pull.jpg)
-</Frame>
+![The image outlines two next steps: uploading custom models and enabling access via the "ollama pull" command.](https://kodekloud.com/kk-media/image/upload/v1752883675/notes-assets/images/Running-Local-LLMs-With-Ollama-Customizing-Models/uploading-custom-models-ollama-pull.jpg)
 
 ```bash theme={null}
 $ ollama pull your-org/harris
 ```
 
-<Callout icon="triangle-alert">
-  Ensure your registry credentials are configured before pushing or pulling custom models to avoid authentication errors.
-</Callout>
+> **triangle-alert** Ensure your registry credentials are configured before pushing or pulling custom models to avoid authentication errors.
 
 ***
 
@@ -106,6 +96,4 @@ $ ollama pull your-org/harris
 * [Llama 3.2 Release Notes](https://ollama.com/models/llama3-2)
 * [Building Secure AI Assistants](/docs/security)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/5785c7c7-5088-4ac3-b82f-8835e72b66d0/lesson/b9852adc-b7c5-42f7-bd57-241a90ea0c86" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/5785c7c7-5088-4ac3-b82f-8835e72b66d0/lesson/b9852adc-b7c5-42f7-bd57-241a90ea0c86)

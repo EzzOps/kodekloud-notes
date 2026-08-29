@@ -36,9 +36,7 @@ Most operating systems follow a layered model:
 
 This layering keeps systems modular — each layer has focused responsibilities and the OS enforces cooperation across layers.
 
-<Callout icon="warning">
-  The kernel runs with privileged access to hardware. Bugs or misconfiguration in kernel code can crash or compromise the entire system. Treat kernel-level changes and drivers with caution.
-</Callout>
+> **warning** The kernel runs with privileged access to hardware. Bugs or misconfiguration in kernel code can crash or compromise the entire system. Treat kernel-level changes and drivers with caution.
 
 ### Types of operating systems
 
@@ -74,9 +72,7 @@ Think briefly before you check the answer below.
   <img alt="A man wearing a KodeKloud T-shirt stands to the right of a large presentation slide. The slide asks &#x22;What is the main job of an operating system?&#x22; and shows the answer &#x22;To run apps and manage hardware.&#x22;" />
 </Frame>
 
-<Callout icon="lightbulb">
-  Correct answer: B — The OS’s primary role is to run applications and manage hardware resources. File storage (A) and malware protection (C) are specific services or responsibilities within the broader task of resource management and system services.
-</Callout>
+> **lightbulb** Correct answer: B — The OS’s primary role is to run applications and manage hardware resources. File storage (A) and malware protection (C) are specific services or responsibilities within the broader task of resource management and system services.
 
 ## A brief history: how operating systems evolved
 
@@ -138,6 +134,4 @@ Further reading and references:
 
 If you’d like, next we can dive into kernel architecture (monolithic vs microkernel), process scheduling algorithms, or how modern OSes implement memory protection and virtual memory. Which topic should we explore next?
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/8cc6f888-e958-4535-904e-22ffe290ae7d/lesson/d27b47ee-4cb3-4bb0-8047-ceaea24251c5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/8cc6f888-e958-4535-904e-22ffe290ae7d/lesson/d27b47ee-4cb3-4bb0-8047-ceaea24251c5)

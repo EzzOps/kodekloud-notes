@@ -10,15 +10,11 @@ In this guide, we walk through creating and deploying an ImageStream in OpenShif
 
 First, open the OpenShift console and navigate to the Builds section, then select ImageStreams. You will notice that many deployments already have their own ImageStreams.
 
-<Frame>
-  ![The image shows the Red Hat OpenShift Container Platform interface, specifically the "ImageStreams" section, listing image streams like "approved-apache" and "goweb" with their creation times and labels.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882585/notes-assets/images/OpenShift-4-Demo-Image-Streams/openshift-imagestreams-interface.jpg)
-</Frame>
+![The image shows the Red Hat OpenShift Container Platform interface, specifically the "ImageStreams" section, listing image streams like "approved-apache" and "goweb" with their creation times and labels.](https://kodekloud.com/kk-media/image/upload/v1752882585/notes-assets/images/OpenShift-4-Demo-Image-Streams/openshift-imagestreams-interface.jpg)
 
 Next, by clicking on "Microservice Demo Git," you can inspect the SockShop application that was previously deployed. This application already has an associated ImageStream.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Container Platform interface displaying project details, including labels and image repository information for a microservices demo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882586/notes-assets/images/OpenShift-4-Demo-Image-Streams/red-hat-openshift-project-details.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Container Platform interface displaying project details, including labels and image repository information for a microservices demo.](https://kodekloud.com/kk-media/image/upload/v1752882586/notes-assets/images/OpenShift-4-Demo-Image-Streams/red-hat-openshift-project-details.jpg)
 
 ## Creating a New ImageStream for the Carts App
 
@@ -42,9 +38,7 @@ spec:
 
 This YAML configuration sets up an ImageStream for the Carts app using the tag "0.4.8," which is sourced from the specified Docker image.
 
-<Callout icon="lightbulb">
-  ImageStreams help you manage different versions of container images efficiently, ensuring consistency across your deployments.
-</Callout>
+> **lightbulb** ImageStreams help you manage different versions of container images efficiently, ensuring consistency across your deployments.
 
 ## Inspecting the Deployment Manifest
 
@@ -94,9 +88,7 @@ mlevan@littleship01 ~  [] Desktop  microservices-demo-openshift  🡆 master ≡
 oc
 ```
 
-<Callout icon="triangle-alert">
-  An error indicating that the deployment already exists means that a previous deployment is conflicting with the new one.
-</Callout>
+> **triangle-alert** An error indicating that the deployment already exists means that a previous deployment is conflicting with the new one.
 
 ### Resolving Deployment Conflicts
 
@@ -166,6 +158,4 @@ user-db             1/1     1            1           3d18h
 
 With these steps, the new ImageStream for the Carts app has been successfully deployed. This method allows you to target and deploy individual microservices using ImageStreams in OpenShift, thereby simplifying application management in a containerized environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/3200131b-dec7-4422-9e05-68c751bc4213/lesson/27cfad89-1e21-4550-8bc4-cc667147d405" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/3200131b-dec7-4422-9e05-68c751bc4213/lesson/27cfad89-1e21-4550-8bc4-cc667147d405)

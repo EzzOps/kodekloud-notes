@@ -28,15 +28,15 @@ The benefits of implementing RBAC include:
 * **Streamlined management:** Simplifies permission handling in complex environments.
 * **Enhanced compliance:** Ensures that access controls conform to industry and organizational standards.
 
-![The image outlines the benefits of Role-Based Access Control, highlighting least privilege, streamlined management, and improved compliance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868440/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Role-Based-Access-Control/role-based-access-control-benefits.jpg)
+![The image outlines the benefits of Role-Based Access Control, highlighting least privilege, streamlined management, and improved compliance.](https://kodekloud.com/kk-media/image/upload/v1752868440/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Role-Based-Access-Control/role-based-access-control-benefits.jpg)
 
 RBAC is particularly useful in multi-user and large organizational environments as well as in projects that demand strict access controls. Whether managing sensitive healthcare records or overseeing financial transactions, RBAC ensures that access remains secure and appropriately managed.
 
-![The image illustrates use cases for Role-Based Access Control, highlighting multi-user environments, large organizations, and projects requiring strict access control.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868441/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Role-Based-Access-Control/role-based-access-control-use-cases.jpg)
+![The image illustrates use cases for Role-Based Access Control, highlighting multi-user environments, large organizations, and projects requiring strict access control.](https://kodekloud.com/kk-media/image/upload/v1752868441/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Role-Based-Access-Control/role-based-access-control-use-cases.jpg)
 
 By leveraging Azure RBAC, you establish strong safeguards that determine precisely who can perform specific actions on your Azure resources. With authentication through Microsoft Entra ID securing your access to the environment, RBAC then defines your actual permissions once inside.
 
-![The image is a summary slide highlighting the importance of Azure RBAC and Entra ID for security and task performance within the Azure environment. It lists three key points about role-based access control and authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868442/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Role-Based-Access-Control/azure-rbac-entral-id-summary.jpg)
+![The image is a summary slide highlighting the importance of Azure RBAC and Entra ID for security and task performance within the Azure environment. It lists three key points about role-based access control and authentication.](https://kodekloud.com/kk-media/image/upload/v1752868442/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Role-Based-Access-Control/azure-rbac-entral-id-summary.jpg)
 
 With this solid understanding of RBAC, we now move on to a discussion of Zero Trust security models.
 

@@ -71,29 +71,19 @@ To deploy this Go Web API application:
 3. Paste the Git repository URL. The web console will detect the Dockerfile in the repository and use it to build and deploy your application.
 4. Provide a unique name for your application (e.g., GoWebAPI or goweb).
 
-<Frame>
-  ![The image shows the Red Hat OpenShift Container Platform interface, specifically the "Import from Git" section where a Git repository URL is being validated.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882706/notes-assets/images/OpenShift-4-Deploying-applications-web-console/openshift-import-from-git-interface.jpg)
-</Frame>
+![The image shows the Red Hat OpenShift Container Platform interface, specifically the "Import from Git" section where a Git repository URL is being validated.](https://kodekloud.com/kk-media/image/upload/v1752882706/notes-assets/images/OpenShift-4-Deploying-applications-web-console/openshift-import-from-git-interface.jpg)
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Container Platform interface where a user is configuring a Dockerfile import strategy, entering an application name "goweb" and a component name "go-web-api-git."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882707/notes-assets/images/OpenShift-4-Deploying-applications-web-console/openshift-dockerfile-import-goweb.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Container Platform interface where a user is configuring a Dockerfile import strategy, entering an application name "goweb" and a component name "go-web-api-git."](https://kodekloud.com/kk-media/image/upload/v1752882707/notes-assets/images/OpenShift-4-Deploying-applications-web-console/openshift-dockerfile-import-goweb.jpg)
 
 5. Configure additional settings such as the target port, which sets the exposed port of your application. OpenShift automatically creates a route—a public URL—so your application can be accessed externally.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Container Platform interface, specifically the "DeploymentConfig" section with advanced options for setting a target port and creating a route to the application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882708/notes-assets/images/OpenShift-4-Deploying-applications-web-console/openshift-deploymentconfig-interface.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Container Platform interface, specifically the "DeploymentConfig" section with advanced options for setting a target port and creating a route to the application.](https://kodekloud.com/kk-media/image/upload/v1752882708/notes-assets/images/OpenShift-4-Deploying-applications-web-console/openshift-deploymentconfig-interface.jpg)
 
 After clicking **Create**, the build starts automatically. Once the build completes successfully, verify the pod status by navigating to **Workloads** > **Pods**.
 
-<Frame>
-  ![The image shows the Red Hat OpenShift Container Platform interface, displaying a topology view with applications and resources like pods and builds. The sidebar includes options such as Topology, Observe, and Search.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882709/notes-assets/images/OpenShift-4-Deploying-applications-web-console/red-hat-openshift-topology-view.jpg)
-</Frame>
+![The image shows the Red Hat OpenShift Container Platform interface, displaying a topology view with applications and resources like pods and builds. The sidebar includes options such as Topology, Observe, and Search.](https://kodekloud.com/kk-media/image/upload/v1752882709/notes-assets/images/OpenShift-4-Deploying-applications-web-console/red-hat-openshift-topology-view.jpg)
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Container Platform interface displaying details of a pod named "goweb-1-build" with a status of "Completed." The interface includes various tabs and a sidebar with options like "Pods" and "Deployments."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882710/notes-assets/images/OpenShift-4-Deploying-applications-web-console/red-hat-openshift-pod-goweb-1.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Container Platform interface displaying details of a pod named "goweb-1-build" with a status of "Completed." The interface includes various tabs and a sidebar with options like "Pods" and "Deployments."](https://kodekloud.com/kk-media/image/upload/v1752882710/notes-assets/images/OpenShift-4-Deploying-applications-web-console/red-hat-openshift-pod-goweb-1.jpg)
 
 Finally, check the **Routes** section under **Networking**. Click the route URL to confirm that the homepage displays “Welcome to the Go Web API!”—indicating your application is running properly.
 
@@ -115,9 +105,7 @@ For more information on related topics, visit the following resources:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/0bce3da1-167c-4f11-a004-4d57bfc7adac/lesson/80a1a010-3255-44cc-a605-98ed79d9edfa" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/0bce3da1-167c-4f11-a004-4d57bfc7adac/lesson/80a1a010-3255-44cc-a605-98ed79d9edfa)
 
 
 # Projects and Users
@@ -140,9 +128,7 @@ Under the hood, projects in OpenShift are implemented as Kubernetes namespaces. 
 
 Below is a diagram that illustrates how multiple projects are structured. In this image, each project contains a service called "teamX.myservice" connected to various components (shown as red cubes), with servers arranged in a row at the bottom.
 
-<Frame>
-  ![The image is a diagram showing four projects, each with a service labeled "teamX.myservice" and connected to multiple components, represented by red cubes. Below, there are icons of servers arranged in a row.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882711/notes-assets/images/OpenShift-4-Projects-and-Users/teamx-myservice-projects-diagram.jpg)
-</Frame>
+![The image is a diagram showing four projects, each with a service labeled "teamX.myservice" and connected to multiple components, represented by red cubes. Below, there are icons of servers arranged in a row.](https://kodekloud.com/kk-media/image/upload/v1752882711/notes-assets/images/OpenShift-4-Projects-and-Users/teamx-myservice-projects-diagram.jpg)
 
 Once a project is created, you can deploy applications without the hassle of manually managing namespaces—OpenShift automates these details to streamline your workflow.
 
@@ -169,13 +155,9 @@ system:serviceaccount:proj1:db_user
 
 The image below visually summarizes the three types of users. It features icons that represent a regular user ("developer"), a system user ("system:admin"), and a service account (illustrated by an Android robot).
 
-<Frame>
-  ![The image shows three user types: "Regular" with a simple person icon, "System" with a female silhouette icon, and an Android robot icon, each labeled with roles like "developer" and "system:admin".](../../../../images/kodekloud.com/kk-media/image/upload/v1752882712/notes-assets/images/OpenShift-4-Projects-and-Users/user-types-icons-developer-admin.jpg)
-</Frame>
+![The image shows three user types: "Regular" with a simple person icon, "System" with a female silhouette icon, and an Android robot icon, each labeled with roles like "developer" and "system:admin".](https://kodekloud.com/kk-media/image/upload/v1752882712/notes-assets/images/OpenShift-4-Projects-and-Users/user-types-icons-developer-admin.jpg)
 
-<Callout icon="lightbulb">
-  Understanding the differences between these user types is crucial for setting up proper access control and ensuring your cluster remains secure.
-</Callout>
+> **lightbulb** Understanding the differences between these user types is crucial for setting up proper access control and ensuring your cluster remains secure.
 
 ## OAuth and User Authentication
 
@@ -187,13 +169,9 @@ For more secure environments, the "deny-all" identity provider is the default. H
 
 The following diagram outlines the behavior of the OAuth server for both "Allow All" and "Deny All" configurations. It also highlights the location of the master configuration file.
 
-<Frame>
-  ![The image shows a diagram related to an OAuth Server with icons representing "Allow All" and "Deny All" configurations, along with a file path: /etc/openshift/master/master-config.yaml.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882713/notes-assets/images/OpenShift-4-Projects-and-Users/oauth-server-allow-deny-diagram.jpg)
-</Frame>
+![The image shows a diagram related to an OAuth Server with icons representing "Allow All" and "Deny All" configurations, along with a file path: /etc/openshift/master/master-config.yaml.](https://kodekloud.com/kk-media/image/upload/v1752882713/notes-assets/images/OpenShift-4-Projects-and-Users/oauth-server-allow-deny-diagram.jpg)
 
-<Callout icon="triangle-alert">
-  In production environments, always opt for a secure identity provider configuration to prevent unauthorized access.
-</Callout>
+> **triangle-alert** In production environments, always opt for a secure identity provider configuration to prevent unauthorized access.
 
 ## Conclusion
 
@@ -201,6 +179,4 @@ This lesson has provided you with a thorough introduction to projects and user m
 
 Thank you for joining this lesson. For further reading and more detailed instructions, please consult the [OpenShift Documentation](https://docs.openshift.com/). See you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/0bce3da1-167c-4f11-a004-4d57bfc7adac/lesson/53f80255-ff0e-4358-abf7-4ace4f207b9a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/0bce3da1-167c-4f11-a004-4d57bfc7adac/lesson/53f80255-ff0e-4358-abf7-4ace4f207b9a)

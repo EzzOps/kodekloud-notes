@@ -55,9 +55,7 @@ pod/highway-animation-rollout-5f9c6d59f-qcxb4      1/1     Running       0      
 
 At this point the Rollout resource controls the application; the original Deployment has been scaled down according to the scaleDown policy, and the blue/green services allow controlled traffic promotion and preview testing.
 
-<Callout icon="lightbulb">
-  Note: Using workloadRef allows you to convert an existing Deployment to be managed by Argo Rollouts without rewriting the pod template. Review the available scaleDown options (onSuccess, never, progressive) to choose the behavior that suits your release workflow.
-</Callout>
+> **lightbulb** Note: Using workloadRef allows you to convert an existing Deployment to be managed by Argo Rollouts without rewriting the pod template. Review the available scaleDown options (onSuccess, never, progressive) to choose the behavior that suits your release workflow.
 
 Links and references
 
@@ -67,9 +65,7 @@ Links and references
 
 That's all for now.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/196ad805-5a18-4575-b30f-21fe0f0cb005" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/196ad805-5a18-4575-b30f-21fe0f0cb005)
 
 
 # Demo Health Check

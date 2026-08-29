@@ -36,13 +36,9 @@ Key behaviors and interactions
 * Automated analysis: AnalysisRuns let you run metric queries (Prometheus, Datadog, etc.) or Jobs to validate application health and user experience before promoting the canary.
 * Promotion and rollback: Promotion happens when defined success criteria are met. Rollback is triggered automatically if metrics or tests fail, minimizing user impact.
 
-<Callout icon="lightbulb">
-  Make sure the cluster has the required CRDs and RBAC configured for Argo Rollouts, and that any external metric providers used by AnalysisTemplates are reachable from the cluster.
-</Callout>
+> **lightbulb** Make sure the cluster has the required CRDs and RBAC configured for Argo Rollouts, and that any external metric providers used by AnalysisTemplates are reachable from the cluster.
 
-<Callout icon="warning">
-  Traffic routing behavior depends on the integration you choose (Ingress vs. service mesh). Ensure the chosen provider is supported and properly configured before running automated canaries.
-</Callout>
+> **warning** Traffic routing behavior depends on the integration you choose (Ingress vs. service mesh). Ensure the chosen provider is supported and properly configured before running automated canaries.
 
 Best practices and recommendations
 
@@ -60,6 +56,4 @@ Links and references
 * [Prometheus](https://prometheus.io/)
 * [Datadog](https://www.datadoghq.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/871ac10a-5b48-4dc7-923d-7fcffbbed88d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/871ac10a-5b48-4dc7-923d-7fcffbbed88d)

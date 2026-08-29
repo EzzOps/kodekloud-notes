@@ -20,7 +20,7 @@ Azure Data Box is engineered for demanding data migration projects. Key features
 
 > **lightbulb** For environments where traditional transfer methods like email or Bluetooth fail due to file size, Azure Data Box provides a dependable and efficient alternative.
 
-![The image highlights the key features of Azure Databox: physical devices for data transfer, offline data transfer, and security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868519/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Data-Box/azure-databox-features-diagram.jpg)
+![The image highlights the key features of Azure Databox: physical devices for data transfer, offline data transfer, and security.](https://kodekloud.com/kk-media/image/upload/v1752868519/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Data-Box/azure-databox-features-diagram.jpg)
 
 ## Benefits
 
@@ -30,7 +30,7 @@ Using Azure Data Box comes with several notable advantages:
 * **Cost-Effectiveness:** By cutting down on network bandwidth dependency, it minimizes costs and simplifies large-scale data movement.
 * **Ease of Use:** Seamlessly integrated into the Azure Portal, the tool simplifies management and tracking of your data transfer processes.
 
-![The image highlights the benefits of Azure Databox, featuring high-speed data transfer, cost-effectiveness, and ease of use.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868520/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Data-Box/azure-databox-benefits-high-speed.jpg)
+![The image highlights the benefits of Azure Databox, featuring high-speed data transfer, cost-effectiveness, and ease of use.](https://kodekloud.com/kk-media/image/upload/v1752868520/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Data-Box/azure-databox-benefits-high-speed.jpg)
 
 ## Variants of Azure Data Box
 
@@ -40,7 +40,7 @@ Azure Data Box is available in multiple variants to meet diverse data transfer r
 * **Data Box:** A durable device ideal for handling larger volumes of data, designed for outdoor conditions.
 * **Data Box Heavy:** Tailored for very large data migrations, akin to using a moving truck for bulk transfers.
 
-![The image describes three variants of Azure Data Box: Data Box Disk for smaller data loads, Data Box for larger data volumes, and Data Box Heavy for very large-scale data transfer needs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868521/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Data-Box/azure-data-box-variants-diagram.jpg)
+![The image describes three variants of Azure Data Box: Data Box Disk for smaller data loads, Data Box for larger data volumes, and Data Box Heavy for very large-scale data transfer needs.](https://kodekloud.com/kk-media/image/upload/v1752868521/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Data-Box/azure-data-box-variants-diagram.jpg)
 
 ## Use Cases
 
@@ -50,7 +50,7 @@ Azure Data Box is versatile and can be deployed in scenarios such as:
 * Data center shutdowns, where physical relocation of digital information is necessary.
 * Establishing on-premises backups by securely transferring large archival datasets.
 
-![The image illustrates Azure Databox use cases, including large data migration, data center shutdowns, on-premises backup, and large dataset transfers, with icons representing different devices connected to a cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868523/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Data-Box/azure-databox-use-cases-diagram.jpg)
+![The image illustrates Azure Databox use cases, including large data migration, data center shutdowns, on-premises backup, and large dataset transfers, with icons representing different devices connected to a cloud.](https://kodekloud.com/kk-media/image/upload/v1752868523/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Data-Box/azure-databox-use-cases-diagram.jpg)
 
 > **lightbulb** Azure Data Box is designed to simplify large-scale data migrations, providing a secure, efficient, and cost-effective solution for organizations facing significant data transfer challenges.
 

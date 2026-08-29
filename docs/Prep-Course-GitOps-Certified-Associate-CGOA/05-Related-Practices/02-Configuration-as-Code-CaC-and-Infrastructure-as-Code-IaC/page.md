@@ -14,9 +14,7 @@ This lesson explains how Infrastructure-as-Code (IaC) and Configuration-as-Code 
 └── configmap.yaml
 ```
 
-<Callout icon="lightbulb">
-  GitOps treats Git as the single source of truth: make changes by updating Git and let automation (CI/CD or a GitOps controller) reconcile those changes against your environments.
-</Callout>
+> **lightbulb** GitOps treats Git as the single source of truth: make changes by updating Git and let automation (CI/CD or a GitOps controller) reconcile those changes against your environments.
 
 ## At a glance
 
@@ -100,6 +98,4 @@ By keeping both infrastructure and configuration declarative in Git and automati
 * [Argo CD Documentation](https://argo-cd.readthedocs.io/)
 * [Flux CD Documentation](https://fluxcd.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/673786b2-bedb-4405-a2c9-835aea1a9dd4/lesson/e5dccd05-0be3-4141-b6aa-27d4245f89f7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/673786b2-bedb-4405-a2c9-835aea1a9dd4/lesson/e5dccd05-0be3-4141-b6aa-27d4245f89f7)

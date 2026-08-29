@@ -103,9 +103,7 @@ vault token lookup
 2. Log in with your root token.
 3. Click the **Namespaces** dropdown—you’ll see `hcvop/` listed:
 
-<Frame>
-  ![The image shows a web interface of HashiCorp Vault displaying a list of secret engines and namespaces. The background features various tech-related logos.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878332/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Namespace/hashicorp-vault-secret-engines-interface.jpg)
-</Frame>
+![The image shows a web interface of HashiCorp Vault displaying a list of secret engines and namespaces. The background features various tech-related logos.](https://kodekloud.com/kk-media/image/upload/v1752878332/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Namespace/hashicorp-vault-secret-engines-interface.jpg)
 
 4. Select `hcvop`, re-enter your token, then switch between its `certification` and `training` child namespaces.
 
@@ -143,9 +141,7 @@ vault secrets list
 
 In the UI under **Secrets**, you’ll see your enabled engines:
 
-<Frame>
-  ![The image shows a web interface for HashiCorp Vault, displaying a list of secret engines such as AWS, certification-kv, cubbyhole, and Kubernetes. There's also a warning about being logged in with a root token.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878334/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Namespace/hashicorp-vault-web-interface-secrets.jpg)
-</Frame>
+![The image shows a web interface for HashiCorp Vault, displaying a list of secret engines such as AWS, certification-kv, cubbyhole, and Kubernetes. There's also a warning about being logged in with a root token.](https://kodekloud.com/kk-media/image/upload/v1752878334/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Namespace/hashicorp-vault-web-interface-secrets.jpg)
 
 ***
 
@@ -163,30 +159,22 @@ EOF
 
 Success! In the UI under **Access > Policies**, you’ll see your new policy:
 
-<Frame>
-  ![The image shows a web interface for managing ACL policies in HashiCorp Vault, with a warning about using a root token. The background features various tech-related logos.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878335/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Namespace/acl-policies-hashi-vault-interface.jpg)
-</Frame>
+![The image shows a web interface for managing ACL policies in HashiCorp Vault, with a warning about using a root token. The background features various tech-related logos.](https://kodekloud.com/kk-media/image/upload/v1752878335/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Namespace/acl-policies-hashi-vault-interface.jpg)
 
 ***
 
 ## Enabling Userpass Authentication
 
-<Callout icon="lightbulb">
-  Authentication methods are namespace-specific. Confirm your context is `hcvop/certification`.
-</Callout>
+> **lightbulb** Authentication methods are namespace-specific. Confirm your context is `hcvop/certification`.
 
 1. In the UI, navigate to **Auth > Enable new method**.
 2. Select **Username & Password**, then click **Enable**:
 
-<Frame>
-  ![The image shows a web interface for enabling a username and password authentication method in HashiCorp Vault, with a terminal window partially visible in the background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878336/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Namespace/hashicorp-vault-username-password-authentication.jpg)
-</Frame>
+![The image shows a web interface for enabling a username and password authentication method in HashiCorp Vault, with a terminal window partially visible in the background.](https://kodekloud.com/kk-media/image/upload/v1752878336/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Namespace/hashicorp-vault-username-password-authentication.jpg)
 
 3. Create a user `Bryan` with password `HCVOP` and attach `certification-policy`:
 
-<Frame>
-  ![The image shows a web interface for creating a user in a system, with fields for entering a username and password. The background features a terminal window with text and a pattern of logos.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878338/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Namespace/user-creation-interface-username-password.jpg)
-</Frame>
+![The image shows a web interface for creating a user in a system, with fields for entering a username and password. The background features a terminal window with text and a pattern of logos.](https://kodekloud.com/kk-media/image/upload/v1752878338/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Namespace/user-creation-interface-username-password.jpg)
 
 ***
 
@@ -200,9 +188,7 @@ Log out of the root session. On the UI login page:
 
 You’ll see only the `certification-kv/` engine. Other paths (e.g., `aws/`) will return an authorization error:
 
-<Frame>
-  ![The image shows a login page for "Vault" with fields for namespace, method, and token, alongside a terminal window displaying a list of keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878339/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Namespace/vault-login-page-keys-terminal.jpg)
-</Frame>
+![The image shows a login page for "Vault" with fields for namespace, method, and token, alongside a terminal window displaying a list of keys.](https://kodekloud.com/kk-media/image/upload/v1752878339/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Namespace/vault-login-page-keys-terminal.jpg)
 
 ***
 
@@ -235,8 +221,6 @@ You can target a namespace in two ways:
 Namespaces let you organize and isolate Vault resources for different teams, applications, or environments.\
 Learn more: [Vault Namespaces](https://www.vaultproject.io/docs/enterprise/namespaces)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/968cf007-376b-48c8-83f9-17521b5dd575/lesson/eeacf0fa-a9ef-4b59-96b6-0777cb3adcab" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/968cf007-376b-48c8-83f9-17521b5dd575/lesson/eeacf0fa-a9ef-4b59-96b6-0777cb3adcab)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/968cf007-376b-48c8-83f9-17521b5dd575/lesson/b8e4cb0b-90a0-4e8b-9c5d-5b5a94a0e374" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/968cf007-376b-48c8-83f9-17521b5dd575/lesson/b8e4cb0b-90a0-4e8b-9c5d-5b5a94a0e374)

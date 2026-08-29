@@ -24,13 +24,13 @@ Once your data is prepared, you can train your machine learning model. During tr
 
 After training, SageMaker provides tools to validate and fine-tune your model. This phase involves adjusting parameters to improve accuracy and reliability. Evaluating the model before deployment ensures that it performs effectively in production environments.
 
-![The image illustrates the SageMaker Workflow, detailing four steps: Data Ingestion, Data Preparation and Exploration, Model Training, and Model Evaluation and Tuning. Each step includes specific tools or components like S3 bucket, SageMaker Notebook, and Training Data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865094/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Sagemaker/sagemaker-workflow-four-steps.jpg)
+![The image illustrates the SageMaker Workflow, detailing four steps: Data Ingestion, Data Preparation and Exploration, Model Training, and Model Evaluation and Tuning. Each step includes specific tools or components like S3 bucket, SageMaker Notebook, and Training Data.](https://kodekloud.com/kk-media/image/upload/v1752865094/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Sagemaker/sagemaker-workflow-four-steps.jpg)
 
 ### 4. Model Deployment
 
 When your model is tuned and validated, you can deploy it to production using SageMaker Endpoints. This enables near real-time predictions and supports advanced deployment options such as A/B testing, auto scaling, and concurrent serving of multiple models.
 
-![The image illustrates a SageMaker Workflow, detailing five steps: Data Ingestion, Data Preparation and Exploration, Model Training, Model Evaluation and Tuning, and Model Deployment. Each step includes associated tools and processes like S3 bucket, SageMaker Notebook, and SageMaker Endpoints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865096/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Sagemaker/sagemaker-workflow-five-steps.jpg)
+![The image illustrates a SageMaker Workflow, detailing five steps: Data Ingestion, Data Preparation and Exploration, Model Training, Model Evaluation and Tuning, and Model Deployment. Each step includes associated tools and processes like S3 bucket, SageMaker Notebook, and SageMaker Endpoints.](https://kodekloud.com/kk-media/image/upload/v1752865096/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Sagemaker/sagemaker-workflow-five-steps.jpg)
 
 ## Deep Dive into SageMaker Components
 
@@ -58,9 +58,9 @@ SageMaker offers several advanced capabilities that make it a complete ML platfo
 * **SageMaker Studio:** Access a unified IDE covering every stage of the ML lifecycle, from data preparation to deployment.
 * **Built-in Algorithms and Bring Your Own Algorithm (BYOA):** Flexibility to choose from pre-built algorithms or integrate your custom algorithms within SageMaker’s containerized environment.
 
-![The image is a flowchart illustrating a data processing and machine learning workflow using AWS services, including S3 for data storage, AWS Glue for ETL, and SageMaker for data analysis, cleaning, model building, and deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865096/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Sagemaker/aws-data-processing-ml-workflow.jpg)
+![The image is a flowchart illustrating a data processing and machine learning workflow using AWS services, including S3 for data storage, AWS Glue for ETL, and SageMaker for data analysis, cleaning, model building, and deployment.](https://kodekloud.com/kk-media/image/upload/v1752865096/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Sagemaker/aws-data-processing-ml-workflow.jpg)
 
-![The image lists five features: Built-in Algorithms and BYOA, Integrated Jupyter Notebooks, Distributed Training, Automatic Model Tuning, and SageMaker Studio. Each feature is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865098/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Sagemaker/sagemaker-features-list-icons.jpg)
+![The image lists five features: Built-in Algorithms and BYOA, Integrated Jupyter Notebooks, Distributed Training, Automatic Model Tuning, and SageMaker Studio. Each feature is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752865098/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Sagemaker/sagemaker-features-list-icons.jpg)
 
 ## Summary
 

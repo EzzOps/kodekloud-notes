@@ -44,10 +44,6 @@ Useful links and references
 * Argo CD (GitOps operator): [https://argo-cd.readthedocs.io/en/stable/](https://argo-cd.readthedocs.io/en/stable/)
 * Kubernetes documentation: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 
-<Callout icon="lightbulb">
-  GitOps combines declarative infrastructure, Git-based versioning, and an automated pull-based operator to provide a provable, auditable, and self-healing delivery model. Git stores the canonical desired state and the operator continuously enforces it in the cluster.
-</Callout>
+> **lightbulb** GitOps combines declarative infrastructure, Git-based versioning, and an automated pull-based operator to provide a provable, auditable, and self-healing delivery model. Git stores the canonical desired state and the operator continuously enforces it in the cluster.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/fba78df5-0d92-4a50-85c9-a766064d7402" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/fba78df5-0d92-4a50-85c9-a766064d7402)

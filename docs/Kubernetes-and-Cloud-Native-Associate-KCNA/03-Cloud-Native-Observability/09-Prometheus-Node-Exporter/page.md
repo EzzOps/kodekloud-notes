@@ -10,9 +10,7 @@ This guide details how to set up the Prometheus Node Exporter on a Linux host. T
 
 Begin by visiting the official [Prometheus downloads page](https://prometheus.io/download) and selecting the Node Exporter. Choose the desired version and either download the binary directly or copy the URL for use with wget.
 
-<Frame>
-  ![The image shows instructions for downloading Node Exporter binaries, including file names, OS, architecture, size, and SHA256 checksums.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880553/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Node-Exporter/frame_40.jpg)
-</Frame>
+![The image shows instructions for downloading Node Exporter binaries, including file names, OS, architecture, size, and SHA256 checksums.](https://kodekloud.com/kk-media/image/upload/v1752880553/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Node-Exporter/frame_40.jpg)
 
 Once you have the URL, download the tarred file using wget. For example:
 
@@ -33,9 +31,7 @@ node_exporter-1.3.1.linux-amd64.tar.gz   100%[==================================
 2022-09-02 15:04:10 (12.4 MB/s) - ‘node_exporter-1.3.1.linux-amd64.tar.gz’ saved [9033415/9033415]
 ```
 
-<Callout icon="lightbulb">
-  Verify the file's integrity by comparing its SHA256 checksum with the one provided on the download page.
-</Callout>
+> **lightbulb** Verify the file's integrity by comparing its SHA256 checksum with the one provided on the download page.
 
 ## Step 2: Extracting the Archive
 
@@ -67,9 +63,7 @@ ts=2022-09-05T16:51:59.947Z caller=node_exporter.go:199 level=info msg="listenin
 ts=2022-09-05T16:51:59.947Z caller=tls_config.go:195 level=info msg="TLS is disabled." http2=false
 ```
 
-<Callout icon="lightbulb">
-  Make sure that port 9100 is open in your firewall settings to allow Prometheus to scrape the metrics.
-</Callout>
+> **lightbulb** Make sure that port 9100 is open in your firewall settings to allow Prometheus to scrape the metrics.
 
 ## Step 4: Verifying the Installation
 

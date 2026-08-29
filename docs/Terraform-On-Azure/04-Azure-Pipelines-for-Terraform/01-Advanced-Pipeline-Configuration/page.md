@@ -109,9 +109,7 @@ Key points explained
   * The Apply job is a `deployment` job scoped to an Azure DevOps environment `terraform-approval`. Environments support checks such as manual approvals; when configured, the deployment pauses until an approver releases it.
   * After approval, the job downloads the plan, runs `terraform init` again (to ensure backend/provider configuration on the agent), and applies the exact binary plan via `terraform apply --auto-approve <plan-file>`.
 
-<Callout icon="lightbulb">
-  Create an Azure DevOps environment named `terraform-approval` (or change the pipeline to reference an existing environment). Configure approvals and checks for that environment to enforce a manual approval gate before the Apply job runs.
-</Callout>
+> **lightbulb** Create an Azure DevOps environment named `terraform-approval` (or change the pipeline to reference an existing environment). Configure approvals and checks for that environment to enforce a manual approval gate before the Apply job runs.
 
 The environment creation UI in Azure DevOps looks like this:
 
@@ -187,9 +185,7 @@ Final notes
 * Using pipeline artifacts plus environment approvals provides a safe, auditable, and repeatable process: generate the plan once, keep it immutable, and only apply what was reviewed.
 * Keep credentials and service connections minimal. Grant the service connection only the permissions required.
 
-<Callout icon="warning">
-  Ensure the Azure DevOps service connection `tf-svc-01` has the required permissions: access to the backend storage account/container and the target subscription/resource group for resource creation. Misconfigured permissions will cause backend init or apply failures.
-</Callout>
+> **warning** Ensure the Azure DevOps service connection `tf-svc-01` has the required permissions: access to the backend storage account/container and the target subscription/resource group for resource creation. Misconfigured permissions will cause backend init or apply failures.
 
 Links and references
 
@@ -199,6 +195,4 @@ Links and references
 * PublishPipelineArtifact: [https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/publish-pipeline-artifact](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/publish-pipeline-artifact)
 * DownloadPipelineArtifact: [https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-pipeline-artifact](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/download-pipeline-artifact)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/66c0006d-c716-4381-8b15-e4edb4f4fbe5/lesson/58e3a969-870c-4bb0-98bd-7ba796c58a54" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/66c0006d-c716-4381-8b15-e4edb4f4fbe5/lesson/58e3a969-870c-4bb0-98bd-7ba796c58a54)

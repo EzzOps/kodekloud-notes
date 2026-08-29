@@ -12,9 +12,7 @@ In a typical DDoS scenario:
 * The attacker harnesses numerous compromised devices (botnets) to generate a flood of requests.
 * The inundated traffic prevents legitimate users from accessing the service.
 
-<Frame>
-  ![The image illustrates a Distributed Denial of Service (DDoS) attack, showing an attacker using botnets to target a victim's computer system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882162/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Distributed-Denial-of-Service-DDoS-Protection/ddos-attack-botnets-victim.jpg)
-</Frame>
+![The image illustrates a Distributed Denial of Service (DDoS) attack, showing an attacker using botnets to target a victim's computer system.](https://kodekloud.com/kk-media/image/upload/v1752882162/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Distributed-Denial-of-Service-DDoS-Protection/ddos-attack-botnets-victim.jpg)
 
 Azure acts like a modern mall, where each shop (online application) is guarded by built-in security measures. Azure DDoS Protection ensures your online services remain operational and secure during a DDoS attack.
 
@@ -28,9 +26,7 @@ Azure provides two primary offerings that integrate with robust application desi
    * Detailed mitigation reports, metrics, alerts, and flow logs
    * Integration with Microsoft Sentinel for enhanced monitoring
 
-<Callout icon="lightbulb">
-  DDoS IP Protection supports only standard public IP addresses. Basic Tier public IP addresses are not eligible, making this option ideal for protecting one or two dedicated public-facing IPs.
-</Callout>
+> **lightbulb** DDoS IP Protection supports only standard public IP addresses. Basic Tier public IP addresses are not eligible, making this option ideal for protecting one or two dedicated public-facing IPs.
 
 2. **DDoS Network Protection**\
    Charged per 100 protected IP addresses, this plan dynamically adjusts to safeguard all resources within your virtual network. It protects IPv4 and IPv6 addresses across various resources, such as virtual network interfaces, application gateways, and load balancers. Benefits include:
@@ -38,9 +34,7 @@ Azure provides two primary offerings that integrate with robust application desi
    * Cost protection from unexpected financial impacts
    * Discounts on Web Application Firewall (WAF) usage for additional layers of security
 
-<Frame>
-  ![The image is an infographic about Azure DDoS Protection, highlighting features of DDoS IP Protection and DDoS Network Protection, including pricing models and value-added services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882163/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Distributed-Denial-of-Service-DDoS-Protection/azure-ddos-protection-infographic.jpg)
-</Frame>
+![The image is an infographic about Azure DDoS Protection, highlighting features of DDoS IP Protection and DDoS Network Protection, including pricing models and value-added services.](https://kodekloud.com/kk-media/image/upload/v1752882163/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Distributed-Denial-of-Service-DDoS-Protection/azure-ddos-protection-infographic.jpg)
 
 ### Key Differences Between Protection Plans
 
@@ -49,9 +43,7 @@ Azure provides two primary offerings that integrate with robust application desi
 
 Azure continuously monitors traffic patterns and leverages intelligent analytics—without storing any customer data—to detect and mitigate suspicious traffic spikes that resemble DDoS attacks.
 
-<Frame>
-  ![The image shows a webpage from Microsoft Azure detailing a comparison of features between DDoS IP Protection and DDoS Network Protection tiers. It includes a table listing various features and their availability in each tier, along with additional resources and documentation links.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882164/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Distributed-Denial-of-Service-DDoS-Protection/azure-ddos-protection-comparison.jpg)
-</Frame>
+![The image shows a webpage from Microsoft Azure detailing a comparison of features between DDoS IP Protection and DDoS Network Protection tiers. It includes a table listing various features and their availability in each tier, along with additional resources and documentation links.](https://kodekloud.com/kk-media/image/upload/v1752882164/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Distributed-Denial-of-Service-DDoS-Protection/azure-ddos-protection-comparison.jpg)
 
 ## Enabling DDoS Protection in Azure
 
@@ -66,9 +58,7 @@ Begin by creating a public IP address with the Standard SKU (the Basic SKU is no
 3. Ensure that the SKU is set to "Standard."
 4. Click on "Review and create," then "Create."
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a public IP address. It includes fields for instance details like region and configuration details such as name, IP version, SKU, and availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882165/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Distributed-Denial-of-Service-DDoS-Protection/azure-portal-public-ip-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a public IP address. It includes fields for instance details like region and configuration details such as name, IP version, SKU, and availability zone.](https://kodekloud.com/kk-media/image/upload/v1752882165/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Distributed-Denial-of-Service-DDoS-Protection/azure-portal-public-ip-creation.jpg)
 
 Once the public IP address is created, navigate to its resource page.
 
@@ -83,9 +73,7 @@ Once the public IP address is created, navigate to its resource page.
 
 After making your selection, click "Save" to enable DDoS protection for this public IP.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for configuring DDoS protection on a public IP address. It includes options for setting the protection status and type, with a warning about connecting the IP to a backend resource.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882166/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Distributed-Denial-of-Service-DDoS-Protection/azure-ddos-protection-portal.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for configuring DDoS protection on a public IP address. It includes options for setting the protection status and type, with a warning about connecting the IP to a backend resource.](https://kodekloud.com/kk-media/image/upload/v1752882166/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Distributed-Denial-of-Service-DDoS-Protection/azure-ddos-protection-portal.jpg)
 
 ### Step 3: Creating a DDoS Protection Plan
 
@@ -97,25 +85,17 @@ For broader protection across multiple resources, create a DDoS Protection Plan:
    * Name: For example, "DDoS Plan East US."
 3. Once the plan is deployed, you can link various resources (public IP addresses, virtual network interfaces, application gateways, load balancers, etc.) across subscriptions and resource groups to this single plan. Note that each plan supports up to 100 protected IPs—additional IPs may incur extra costs.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for DDoS protection plans, indicating that there are no DDoS protection plans currently displayed. There is an option to create a new DDoS protection plan.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882167/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Distributed-Denial-of-Service-DDoS-Protection/azure-ddos-protection-plans-page.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for DDoS protection plans, indicating that there are no DDoS protection plans currently displayed. There is an option to create a new DDoS protection plan.](https://kodekloud.com/kk-media/image/upload/v1752882167/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Distributed-Denial-of-Service-DDoS-Protection/azure-ddos-protection-plans-page.jpg)
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a DDoS protection plan, with fields for project and instance details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882168/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Distributed-Denial-of-Service-DDoS-Protection/azure-ddos-protection-plan-portal.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a DDoS protection plan, with fields for project and instance details.](https://kodekloud.com/kk-media/image/upload/v1752882168/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Distributed-Denial-of-Service-DDoS-Protection/azure-ddos-protection-plan-portal.jpg)
 
 After deploying the plan, view and manage your protected resources by clicking "Protected resources." You can then add virtual networks, firewalls, application gateways, bastion hosts, load balancers, and any resource that possesses a public IP.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying a DDoS protection plan overview with no protected resources listed. The sidebar includes options like Overview, Activity log, and Protected resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882169/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Distributed-Denial-of-Service-DDoS-Protection/azure-portal-ddos-protection-overview.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying a DDoS protection plan overview with no protected resources listed. The sidebar includes options like Overview, Activity log, and Protected resources.](https://kodekloud.com/kk-media/image/upload/v1752882169/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Distributed-Denial-of-Service-DDoS-Protection/azure-portal-ddos-protection-overview.jpg)
 
 If available, you may also add VNets by clicking "Add a VNet" to extend the plan’s coverage.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for managing a DDoS protection plan, specifically the "Protected resources" section, with no resources currently listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882170/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Distributed-Denial-of-Service-DDoS-Protection/azure-ddos-protection-portal-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for managing a DDoS protection plan, specifically the "Protected resources" section, with no resources currently listed.](https://kodekloud.com/kk-media/image/upload/v1752882170/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Distributed-Denial-of-Service-DDoS-Protection/azure-ddos-protection-portal-2.jpg)
 
 ### Choosing Between Per IP and DDoS Protection Plans
 
@@ -126,10 +106,6 @@ With Azure DDoS Protection enabled, you can operate with confidence knowing that
 
 For additional security measures, consider exploring services like [Azure Firewall](https://learn.microsoft.com/en-us/azure/firewall/).
 
-<Callout icon="lightbulb">
-  For more insights into protecting your infrastructure, visit the [Microsoft Azure Security documentation](https://learn.microsoft.com/en-us/azure/security/).
-</Callout>
+> **lightbulb** For more insights into protecting your infrastructure, visit the [Microsoft Azure Security documentation](https://learn.microsoft.com/en-us/azure/security/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/cb10a3ae-53f4-4588-ad61-042af34f31ab/lesson/5a9f0c3f-2356-4f40-aedb-bc404415cde3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/cb10a3ae-53f4-4588-ad61-042af34f31ab/lesson/5a9f0c3f-2356-4f40-aedb-bc404415cde3)

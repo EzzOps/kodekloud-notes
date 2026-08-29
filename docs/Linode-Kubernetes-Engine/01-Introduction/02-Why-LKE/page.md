@@ -52,9 +52,7 @@ You can also scale on the fly:
 kubectl scale deployment/web-app --replicas=10
 ```
 
-<Callout icon="lightbulb">
-  Kubernetes is platform-agnostic. You can run it on bare metal, on-premises VMs, or any cloud provider.
-</Callout>
+> **lightbulb** Kubernetes is platform-agnostic. You can run it on bare metal, on-premises VMs, or any cloud provider.
 
 ***
 
@@ -85,9 +83,7 @@ Maintaining these at scale demands time and expertise. Linode Kubernetes Engine 
 * **Integrated Add-Ons**: Built-in logging, monitoring, and autoscaling.
 * **Simplified Networking & Storage**: Linode’s CNI and Block Storage integrates seamlessly.
 
-<Callout icon="triangle-alert">
-  Be sure to review [Linode’s resource quotas and limits](https://www.linode.com/docs/kubernetes/) before provisioning production clusters to avoid unexpected interruptions.
-</Callout>
+> **triangle-alert** Be sure to review [Linode’s resource quotas and limits](https://www.linode.com/docs/kubernetes/) before provisioning production clusters to avoid unexpected interruptions.
 
 ***
 
@@ -109,6 +105,4 @@ Stay tuned for a hands-on tutorial that takes you from zero to running workloads
 * [Linode Kubernetes Engine Overview](https://www.linode.com/docs/kubernetes/)
 * [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/c530412c-19ac-4b5a-a852-d025b095a75c/lesson/1ee5579f-c086-4390-8785-ec1271387f8f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/c530412c-19ac-4b5a-a852-d025b095a75c/lesson/1ee5579f-c086-4390-8785-ec1271387f8f)

@@ -33,7 +33,7 @@ Detecting and resolving issues early offers multiple advantages:
 | Cost Savings & Resource Optimization | Identify underutilized resources or over-provisioning to lower cloud expenses.           |
 | Strengthened Security                | Spot suspicious activity or vulnerabilities early, preventing potential breaches.        |
 
-![The image is a slide titled "Why?" that outlines four key benefits: minimizing downtime, enhancing user experience, cost savings and resource optimization, and enhancing security, with the result being software reliability, performance, and user satisfaction.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862540/notes-assets/images/AWS-CloudWatch-Proactive-problem-detection/why-key-benefits-software-reliability.jpg)
+![The image is a slide titled "Why?" that outlines four key benefits: minimizing downtime, enhancing user experience, cost savings and resource optimization, and enhancing security, with the result being software reliability, performance, and user satisfaction.](https://kodekloud.com/kk-media/image/upload/v1752862540/notes-assets/images/AWS-CloudWatch-Proactive-problem-detection/why-key-benefits-software-reliability.jpg)
 
 ### Key Outcomes
 

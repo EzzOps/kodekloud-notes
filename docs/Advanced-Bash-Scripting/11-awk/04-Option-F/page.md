@@ -278,7 +278,7 @@ Certain characters (for example, `|`, `&`, `*`, `<`, `>`) have special meanings 
   awk -F \| '{ print $1 }' employees.txt
   ```
 
-![The image shows a tip about using the awk command with a field separator, suggesting to enclose the character in double quotes for literal values. There's also a lightbulb icon and a checkmark.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868665/notes-assets/images/Advanced-Bash-Scripting-Option-F/awk-command-field-separator-tip.jpg)
+![The image shows a tip about using the awk command with a field separator, suggesting to enclose the character in double quotes for literal values. There's also a lightbulb icon and a checkmark.](https://kodekloud.com/kk-media/image/upload/v1752868665/notes-assets/images/Advanced-Bash-Scripting-Option-F/awk-command-field-separator-tip.jpg)
 
 ## 4. Common Field Separators
 
@@ -290,7 +290,7 @@ Certain characters (for example, `|`, `&`, `*`, `<`, `>`) have special meanings 
 | \t        | Tab (escape \t)     | TSV files         |
 | =         | Assignment (escape) | Key-value configs |
 
-![The image shows a list of special characters separated by dotted lines, under the heading "awk -F - Field Separator."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868666/notes-assets/images/Advanced-Bash-Scripting-Option-F/awk-field-separator-special-characters.jpg)
+![The image shows a list of special characters separated by dotted lines, under the heading "awk -F - Field Separator."](https://kodekloud.com/kk-media/image/upload/v1752868666/notes-assets/images/Advanced-Bash-Scripting-Option-F/awk-field-separator-special-characters.jpg)
 
 ## 5. Example: Processing Database Output
 

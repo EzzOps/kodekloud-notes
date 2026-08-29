@@ -19,7 +19,7 @@ Azure Key Vault offers three primary functionalities:
 3. **Certificate Management**\
    Provision, manage, and deploy both public and private SSL/TLS certificates, which are crucial for secure communications.
 
-![The image is an infographic about Azure Key Vault, highlighting its three main features: Secrets Management, Key Management, and Certificate Management. Each feature is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866636/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Key-Vault/azure-key-vault-infographic.jpg)
+![The image is an infographic about Azure Key Vault, highlighting its three main features: Secrets Management, Key Management, and Certificate Management. Each feature is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752866636/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Key-Vault/azure-key-vault-infographic.jpg)
 
 ## Benefits of Using Azure Key Vault
 
@@ -37,7 +37,7 @@ Azure Key Vault provides significant advantages:
 * **Simplified Administration**\
   Enjoy easier management with features like automatic renewal and high availability, reducing administrative overhead.
 
-![The image is an infographic highlighting the key benefits of Azure Key Vault, including centralized application secrets, secure storage of secrets and keys, monitoring access and use, and simplified administration of application secrets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866638/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Key-Vault/azure-key-vault-benefits-infographic.jpg)
+![The image is an infographic highlighting the key benefits of Azure Key Vault, including centralized application secrets, secure storage of secrets and keys, monitoring access and use, and simplified administration of application secrets.](https://kodekloud.com/kk-media/image/upload/v1752866638/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Key-Vault/azure-key-vault-benefits-infographic.jpg)
 
 > **lightbulb** Implementing Azure Key Vault enhances the security posture of your applications by ensuring that sensitive assets are centrally managed and rigorously monitored.
 
@@ -72,13 +72,13 @@ Carefully configure the following settings:
 
 After reviewing the configuration settings, click the "Create" button.
 
-![The image shows a configuration review screen for creating a resource in Azure, detailing settings like subscription, resource group, region, and access configurations. A "Create" button is highlighted at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866638/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Key-Vault/azure-resource-configuration-review.jpg)
+![The image shows a configuration review screen for creating a resource in Azure, detailing settings like subscription, resource group, region, and access configurations. A "Create" button is highlighted at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752866638/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Key-Vault/azure-resource-configuration-review.jpg)
 
 ### Step 3: Explore the Deployed Key Vault
 
 Once deployment is complete, click "Go to resource" to access your Key Vault. The overview page displays key sections for managing keys, secrets, and certificates, along with the vault URI for retrieving stored objects.
 
-![The image shows the Microsoft Azure portal interface for a key vault named "akvaz204," displaying its overview, settings, and management options for keys and secrets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866640/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Key-Vault/azure-portal-key-vault-akvaz204.jpg)
+![The image shows the Microsoft Azure portal interface for a key vault named "akvaz204," displaying its overview, settings, and management options for keys and secrets.](https://kodekloud.com/kk-media/image/upload/v1752866640/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Key-Vault/azure-portal-key-vault-akvaz204.jpg)
 
 ## Managing Keys, Secrets, and Certificates
 
@@ -90,7 +90,7 @@ To manage cryptographic keys:
 * Generate or import keys according to your cryptographic requirements.
 * Configure key properties such as key type, size, activation, and expiration dates.
 
-![The image shows a Microsoft Azure interface for creating a key, with options to set the key type, RSA key size, activation and expiration dates, and other configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866642/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Key-Vault/azure-key-creation-interface.jpg)
+![The image shows a Microsoft Azure interface for creating a key, with options to set the key type, RSA key size, activation and expiration dates, and other configurations.](https://kodekloud.com/kk-media/image/upload/v1752866642/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Key-Vault/azure-key-creation-interface.jpg)
 
 ### Secrets
 
@@ -102,7 +102,7 @@ Adding and managing secrets is straightforward:
 
 > **triangle-alert** You may receive a warning regarding insufficient access permissions if your current account does not have the required data plane permissions.
 
-![The image shows a Microsoft Azure interface for creating a secret in the Key Vault. It includes fields for entering the secret's name, value, content type, activation and expiration dates, and tags, with options to enable or disable the secret.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866643/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Key-Vault/azure-key-vault-secret-creation.jpg)
+![The image shows a Microsoft Azure interface for creating a secret in the Key Vault. It includes fields for entering the secret's name, value, content type, activation and expiration dates, and tags, with options to enable or disable the secret.](https://kodekloud.com/kk-media/image/upload/v1752866643/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Key-Vault/azure-key-vault-secret-creation.jpg)
 
 ## Role-Based Access Control and Data Plane Permissions
 
@@ -114,7 +114,7 @@ Azure Key Vault enforces role-based access control (RBAC) on its data plane alon
   1. **Vault Access Policies:** Utilize checkboxes to grant specific permissions.
   2. **Azure Role-Based Access Control (RBAC):** Offers more granular access control and is the recommended approach.
 
-![The image shows the "Access configuration" page for a key vault in Microsoft Azure, where options for permission models and resource access are being configured.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866645/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Key-Vault/azure-key-vault-access-configuration.jpg)
+![The image shows the "Access configuration" page for a key vault in Microsoft Azure, where options for permission models and resource access are being configured.](https://kodekloud.com/kk-media/image/upload/v1752866645/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Key-Vault/azure-key-vault-access-configuration.jpg)
 
 ### Configuring Role-Based Access Control
 
@@ -124,11 +124,11 @@ To configure RBAC for secrets management, follow these steps:
 2. Click to add a role assignment by selecting an appropriate role (e.g., "Key Vault Secrets Officer" for modifying secrets or "Key Vault Secrets User" for read-only access).
 3. Assign the role to the relevant account or service principal to unlock data plane access.
 
-![The image shows a Microsoft Azure portal interface for adding a role assignment, specifically listing various Key Vault roles with descriptions, types, categories, and details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866646/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Key-Vault/azure-portal-role-assignment-key-vault.jpg)
+![The image shows a Microsoft Azure portal interface for adding a role assignment, specifically listing various Key Vault roles with descriptions, types, categories, and details.](https://kodekloud.com/kk-media/image/upload/v1752866646/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Key-Vault/azure-portal-role-assignment-key-vault.jpg)
 
 For scenarios centered on secret management, assign the "Key Vault Secrets Officer" role:
 
-![The image shows a Microsoft Azure portal screen where a role assignment is being added, specifically assigning the "Key Vault Secrets Officer" role to a user within a specified scope.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866648/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Key-Vault/azure-portal-role-assignment-key-vault-2.jpg)
+![The image shows a Microsoft Azure portal screen where a role assignment is being added, specifically assigning the "Key Vault Secrets Officer" role to a user within a specified scope.](https://kodekloud.com/kk-media/image/upload/v1752866648/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Key-Vault/azure-portal-role-assignment-key-vault-2.jpg)
 
 ## Example: Storing a SQL Connection String as a Secret
 

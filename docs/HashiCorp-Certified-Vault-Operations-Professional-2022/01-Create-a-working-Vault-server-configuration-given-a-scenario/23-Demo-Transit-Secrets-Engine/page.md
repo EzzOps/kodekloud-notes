@@ -78,11 +78,9 @@ vault operator key-status
 
 Practice these steps in a non-production environment to master Vault’s key management workflows.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/d7006525-2ee1-4eac-a91a-2bb1e16ba570" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/d7006525-2ee1-4eac-a91a-2bb1e16ba570)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/df72d3c4-15e6-4055-b47e-ab53e0a0aa8c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/df72d3c4-15e6-4055-b47e-ab53e0a0aa8c)
 
 
 # Demo Transit Secrets Engine
@@ -129,9 +127,7 @@ Expected output in dev mode:
 | secret/    | kv (v2)   | key/value secret storage                 |
 | sys/       | system    | system endpoints for control & debugging |
 
-<Callout icon="lightbulb">
-  In Vault dev mode, the `cubbyhole/`, `identity/`, `secret/` (KV v2), and `sys/` engines are enabled by default.
-</Callout>
+> **lightbulb** In Vault dev mode, the `cubbyhole/`, `identity/`, `secret/` (KV v2), and `sys/` engines are enabled by default.
 
 ## Enable the Transit Engine
 

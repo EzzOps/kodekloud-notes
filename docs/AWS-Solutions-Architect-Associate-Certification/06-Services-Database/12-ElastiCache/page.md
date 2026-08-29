@@ -18,7 +18,7 @@ Each time a user interacts with an application—whether signing up or making a 
 
 To alleviate this, a caching layer is introduced between the application server and the database. An in-memory cache holds frequently accessed data—such as the top-selling items on an e-commerce site—for faster retrieval compared to disk-based storage.
 
-![The image illustrates a data flow diagram showing the interaction between a user device, servers, a cache, and a database, highlighting the role of caching in data retrieval.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865157/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ElastiCache/data-flow-diagram-user-server-cache-database.jpg)
+![The image illustrates a data flow diagram showing the interaction between a user device, servers, a cache, and a database, highlighting the role of caching in data retrieval.](https://kodekloud.com/kk-media/image/upload/v1752865157/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ElastiCache/data-flow-diagram-user-server-cache-database.jpg)
 
 The cache significantly reduces the load on the database. When data is retrieved during the first request, subsequent requests can fetch it directly from the cache—leading to improved response times and enhanced performance under heavy loads.
 
@@ -47,7 +47,7 @@ Node types determine the CPU, memory, and performance characteristics of individ
 
 This group configures the engine-specific settings for your cache cluster, ensuring the optimal performance of your caching layer.
 
-![The image is a diagram of AWS ElastiCache, showing a cache node within a cluster, surrounded by a cluster parameter group and a cache security group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865158/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ElastiCache/aws-elasticache-cluster-diagram.jpg)
+![The image is a diagram of AWS ElastiCache, showing a cache node within a cluster, surrounded by a cluster parameter group and a cache security group.](https://kodekloud.com/kk-media/image/upload/v1752865158/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ElastiCache/aws-elasticache-cluster-diagram.jpg)
 
 ### Cache Security Group
 
@@ -72,7 +72,7 @@ Subnet groups are collections of subnets designated for your cache clusters. The
 * **Auto Discovery:** Automatically manage nodes during scaling events.
 * **Data Partitioning and Sharding:** Efficiently distribute data across multiple nodes.
 
-![The image is an infographic about AWS ElastiCache, highlighting features for Redis and Memcached, such as read replicas, data persistence, encryption, and multi-AZ deployments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865159/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ElastiCache/aws-elasticache-infographic-redis-memcached.jpg)
+![The image is an infographic about AWS ElastiCache, highlighting features for Redis and Memcached, such as read replicas, data persistence, encryption, and multi-AZ deployments.](https://kodekloud.com/kk-media/image/upload/v1752865159/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ElastiCache/aws-elasticache-infographic-redis-memcached.jpg)
 
 Regardless of the caching engine chosen, AWS ElastiCache takes away the administrative overhead of managing your caching environment by ensuring that it is always properly configured, secured, and scaled.
 
@@ -91,11 +91,11 @@ ElastiCache is widely adopted to reduce the load on relational databases (like A
 | Real-Time Data Applications | Supporting dynamic applications such as leaderboards or messaging apps | Enables rapid data retrieval and scalability     |
 | Database Offloading         | Reducing direct database queries to alleviate load                     | Works with relational databases like AWS RDS     |
 
-![The image outlines three features of AWS ElastiCache: fully managed Redis and Memcached, caching to relational databases, and scaling clusters to match demand.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865161/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ElastiCache/aws-elasticache-features-diagram.jpg)
+![The image outlines three features of AWS ElastiCache: fully managed Redis and Memcached, caching to relational databases, and scaling clusters to match demand.](https://kodekloud.com/kk-media/image/upload/v1752865161/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ElastiCache/aws-elasticache-features-diagram.jpg)
 
 Additionally, ElastiCache’s global datastore feature allows for write operations in one AWS region with read operations from cross-region replica clusters. This capability supports low-latency access and strengthens disaster recovery across multiple AWS regions.
 
-![The image is a diagram showing Amazon ElastiCache's integration with other AWS services, highlighting key service benefits like microsecond speed and high availability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865162/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ElastiCache/amazon-elasticache-aws-integration-diagram.jpg)
+![The image is a diagram showing Amazon ElastiCache's integration with other AWS services, highlighting key service benefits like microsecond speed and high availability.](https://kodekloud.com/kk-media/image/upload/v1752865162/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ElastiCache/amazon-elasticache-aws-integration-diagram.jpg)
 
 ## Summary
 
@@ -107,9 +107,9 @@ Key highlights include:
 * **For Memcached:** Simple yet powerful clustering with multi-threaded support and auto discovery.
 * **Overall Benefits:** Reduced latency, minimized database load, and seamless integration with other AWS services for a holistic cloud application environment.
 
-![The image is a summary of Amazon ElastiCache, highlighting its features such as being a fully managed in-memory caching service, compatibility with Redis and Memcached, minimizing latency, and scaling with demand to reduce costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865164/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ElastiCache/amazon-elasticache-summary-features.jpg)
+![The image is a summary of Amazon ElastiCache, highlighting its features such as being a fully managed in-memory caching service, compatibility with Redis and Memcached, minimizing latency, and scaling with demand to reduce costs.](https://kodekloud.com/kk-media/image/upload/v1752865164/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ElastiCache/amazon-elasticache-summary-features.jpg)
 
-![The image is a summary of AWS ElastiCache, highlighting features of Redis and Memcached, including Redis's support for pub/sub messaging and data persistence, and Memcached's simplicity and multi-core processing capabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865165/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ElastiCache/aws-elasticache-redis-memcached-summary.jpg)
+![The image is a summary of AWS ElastiCache, highlighting features of Redis and Memcached, including Redis's support for pub/sub messaging and data persistence, and Memcached's simplicity and multi-core processing capabilities.](https://kodekloud.com/kk-media/image/upload/v1752865165/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ElastiCache/aws-elasticache-redis-memcached-summary.jpg)
 
 > **lightbulb** For more detailed information on AWS ElastiCache and related AWS services, explore the [AWS Documentation](https://aws.amazon.com/documentation/) and additional tutorials available online.
 

@@ -12,7 +12,7 @@ An AMI is a pre-configured image that includes the operating system, configurati
 
 AMIs can launch multiple virtual machine copies across public and private subnets in your VPCs. They can be copied between regions, and due to the operating system often defining the processor architecture (e.g., Intel or ARM), the image includes important details such as the root device type and sometimes the virtualization type (such as HVM or PV).
 
-![The image is a diagram illustrating the components of an Amazon Machine Image (AMI), showing a VPC with public and private subnets, and listing attributes like region, operating system, processor architecture, root device type, and virtualization type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860252/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Amazon-Machine-Images-in-AWS-Overview/ami-components-vpc-diagram.jpg)
+![The image is a diagram illustrating the components of an Amazon Machine Image (AMI), showing a VPC with public and private subnets, and listing attributes like region, operating system, processor architecture, root device type, and virtualization type.](https://kodekloud.com/kk-media/image/upload/v1752860252/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Amazon-Machine-Images-in-AWS-Overview/ami-components-vpc-diagram.jpg)
 
 ## Characteristics of an AMI
 
@@ -23,7 +23,7 @@ AMIs typically come in two primary types based on their storage:
 
 Different permissions can be set when launching an AMI. While there may be multiple virtualization types (HVM and PV), modern AWS instances predominantly run on HVM, which leverages hardware virtualization extensions.
 
-![The image outlines the characteristics of an AMI, including root device type, launch permission, and virtualization type. It lists options such as EBS-backed and instance store-backed AMI, public, explicit, and implicit permissions, and HVM and PV virtualization types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860253/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Amazon-Machine-Images-in-AWS-Overview/ami-characteristics-root-device-virtualization.jpg)
+![The image outlines the characteristics of an AMI, including root device type, launch permission, and virtualization type. It lists options such as EBS-backed and instance store-backed AMI, public, explicit, and implicit permissions, and HVM and PV virtualization types.](https://kodekloud.com/kk-media/image/upload/v1752860253/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Amazon-Machine-Images-in-AWS-Overview/ami-characteristics-root-device-virtualization.jpg)
 
 ## Benefits of Using AMIs
 
@@ -37,7 +37,7 @@ Using AMIs in your AWS environment provides multiple benefits:
 
 Amazon Linux, for instance, is AWS’s proprietary Linux distribution based on Red Hat Enterprise Linux (RHEL).
 
-![The image shows a user interface for finding an Amazon Machine Image (AMI) on AWS, with options for different operating systems like Amazon Linux, macOS, Ubuntu, and Windows. It includes details about the selected AMI, such as architecture and description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860254/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Amazon-Machine-Images-in-AWS-Overview/aws-ami-user-interface-options.jpg)
+![The image shows a user interface for finding an Amazon Machine Image (AMI) on AWS, with options for different operating systems like Amazon Linux, macOS, Ubuntu, and Windows. It includes details about the selected AMI, such as architecture and description.](https://kodekloud.com/kk-media/image/upload/v1752860254/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Amazon-Machine-Images-in-AWS-Overview/aws-ami-user-interface-options.jpg)
 
 ## Launching an AMI
 
@@ -48,7 +48,7 @@ Launching an EC2 instance from an AMI involves a series of steps:
 
 You can also employ tools such as Packer to build images. However, AWS’s official solution for this purpose is the EC2 Image Builder, which streamlines the creation of custom AMIs.
 
-![The image illustrates the AMI lifecycle and creation process, detailing steps to create an image using an EC2 instance, an EBS snapshot, and EC2 Image Builder.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860255/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Amazon-Machine-Images-in-AWS-Overview/ami-lifecycle-creation-process.jpg)
+![The image illustrates the AMI lifecycle and creation process, detailing steps to create an image using an EC2 instance, an EBS snapshot, and EC2 Image Builder.](https://kodekloud.com/kk-media/image/upload/v1752860255/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Amazon-Machine-Images-in-AWS-Overview/ami-lifecycle-creation-process.jpg)
 
 ## Storage and Lifecycle of AMIs
 
@@ -60,9 +60,9 @@ The typical AMI lifecycle involves the following stages:
 * **Usage:** Utilize the AMI to launch new EC2 instances.
 * **Deregistration and Deletion:** Once an AMI is no longer needed, deregister it and remove the associated EBS snapshots and other resources to avoid ongoing storage charges.
 
-![The image illustrates the AMI lifecycle and storage process, showing the interaction between Amazon EC2, AMI, and Amazon S3 within a VPC in a region. It depicts the storing and restoring of AMI to and from Amazon S3.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860256/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Amazon-Machine-Images-in-AWS-Overview/ami-lifecycle-storage-ec2-s3.jpg)
+![The image illustrates the AMI lifecycle and storage process, showing the interaction between Amazon EC2, AMI, and Amazon S3 within a VPC in a region. It depicts the storing and restoring of AMI to and from Amazon S3.](https://kodekloud.com/kk-media/image/upload/v1752860256/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Amazon-Machine-Images-in-AWS-Overview/ami-lifecycle-storage-ec2-s3.jpg)
 
-![The image illustrates the AMI lifecycle process, showing steps to deregister and delete an AMI, including EBS snapshots and EC2 instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860257/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Amazon-Machine-Images-in-AWS-Overview/ami-lifecycle-deregister-delete-diagram.jpg)
+![The image illustrates the AMI lifecycle process, showing steps to deregister and delete an AMI, including EBS snapshots and EC2 instances.](https://kodekloud.com/kk-media/image/upload/v1752860257/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Amazon-Machine-Images-in-AWS-Overview/ami-lifecycle-deregister-delete-diagram.jpg)
 
 > **triangle-alert** Ensure that you deregister outdated AMIs and delete unused snapshots on time to prevent accumulating unnecessary storage costs.
 

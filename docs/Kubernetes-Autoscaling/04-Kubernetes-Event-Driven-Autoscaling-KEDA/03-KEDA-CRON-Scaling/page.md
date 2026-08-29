@@ -59,9 +59,7 @@ triggers:
     desiredReplicas: "10"        # Note: value must be a string
 ```
 
-<Callout icon="lightbulb">
-  Always use a valid IANA timezone string for `timezone` and provide cron expressions in 24-hour format. Quote cron expressions and `desiredReplicas` to avoid parsing issues.
-</Callout>
+> **lightbulb** Always use a valid IANA timezone string for `timezone` and provide cron expressions in 24-hour format. Quote cron expressions and `desiredReplicas` to avoid parsing issues.
 
 ## Example ScaledObject
 
@@ -108,8 +106,6 @@ spec:
 * IANA Time Zone Database: [https://www.iana.org/time-zones](https://www.iana.org/time-zones)
 * Kubernetes Deployments: [https://kubernetes.io/docs/concepts/workloads/controllers/deployment/](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/9e740c2e-e6fe-4358-9ad6-710868c57124" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/9e740c2e-e6fe-4358-9ad6-710868c57124)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/0dfeafae-cad9-4b5f-9afe-16ade758ed6d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/c218f836-7d7e-425b-a8b7-0148914eb040/lesson/0dfeafae-cad9-4b5f-9afe-16ade758ed6d)

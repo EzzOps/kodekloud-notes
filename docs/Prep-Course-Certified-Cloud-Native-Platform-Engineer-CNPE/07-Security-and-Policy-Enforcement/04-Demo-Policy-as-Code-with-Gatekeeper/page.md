@@ -175,11 +175,9 @@ Further reading:
 * [Kubernetes Pod Security Standards](https://kubernetes.io/docs/concepts/security/pod-security-standards/)
 * [Kubernetes Pod Security Admission](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#podsecurity)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/0a0c1ba8-a55f-4023-be39-fba7a86f5fa8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/0a0c1ba8-a55f-4023-be39-fba7a86f5fa8)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/45b8b593-7312-4acf-b1e5-093d3bc53b62" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/45b8b593-7312-4acf-b1e5-093d3bc53b62)
 
 
 # Demo Policy as Code with Gatekeeper
@@ -473,9 +471,7 @@ Enforcement action options
 | `dryrun` | Allows requests but records violations      | Safe auditing and onboarding    |
 | `warn`   | Allows requests and emits warnings          | Non-blocking guidance for users |
 
-<Callout icon="lightbulb">
-  Start in `dryrun` to discover existing violations, remediate resources where needed, and then switch to `deny` to fully enforce the policy. This staged rollout pattern reduces disruption.
-</Callout>
+> **lightbulb** Start in `dryrun` to discover existing violations, remediate resources where needed, and then switch to `deny` to fully enforce the policy. This staged rollout pattern reduces disruption.
 
 ## Summary
 
@@ -484,8 +480,6 @@ Enforcement action options
 * Use `dryrun` to audit and identify violations before enabling `deny`.
 * Gatekeeper is an effective policy-as-code solution for Kubernetes: use it to enforce labels, image registries, tag policies, and other organizational rules.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/4808f9b3-7985-47bf-95e5-d3e2368d1aa5" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/4808f9b3-7985-47bf-95e5-d3e2368d1aa5)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/ec93bd81-3b25-4469-9194-50fabe8b8a18" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/ec93bd81-3b25-4469-9194-50fabe8b8a18)

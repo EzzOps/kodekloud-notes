@@ -63,9 +63,7 @@ Accept-Ranges: bytes
 
 You should now see `Strict-Transport-Security`, `X-Frame-Options`, `Content-Security-Policy`, and `Referrer-Policy` in DevTools → Network for resource responses.
 
-<Callout icon="lightbulb">
-  Strict-Transport-Security (HSTS) instructs browsers to access the site only over HTTPS. When testing, use a conservative `max-age` (for example, a few hours) before committing a long duration or adding `preload`. For more, see the HSTS specification and browser docs.
-</Callout>
+> **lightbulb** Strict-Transport-Security (HSTS) instructs browsers to access the site only over HTTPS. When testing, use a conservative `max-age` (for example, a few hours) before committing a long duration or adding `preload`. For more, see the HSTS specification and browser docs.
 
 Quick reference — common security headers:
 
@@ -205,9 +203,7 @@ root@node01 /etc/apache2 ➜ systemctl restart apache2
 
 If you prefer the `remote host` (`%h`) to reflect the original client IP automatically, consider using Apache's `mod_remoteip` which rewrites the client IP based on trusted proxy headers.
 
-<Callout icon="lightbulb">
-  If you receive `X-Forwarded-For` from trusted proxies, enable Apache's `mod_remoteip` (see the official docs) so `%h` and access control reflect the real client IP. Only enable this when you trust the upstream proxies.
-</Callout>
+> **lightbulb** If you receive `X-Forwarded-For` from trusted proxies, enable Apache's `mod_remoteip` (see the official docs) so `%h` and access control reflect the real client IP. Only enable this when you trust the upstream proxies.
 
 Relevant links:
 
@@ -262,11 +258,9 @@ Further reading and references:
 * Apache HTTP Server documentation: [https://httpd.apache.org/docs/](https://httpd.apache.org/docs/)
 * Mozilla SSL Configuration Generator: [https://ssl-config.mozilla.org/](https://ssl-config.mozilla.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/ad952d6c-3932-42af-88c6-a41c7168fa07" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/ad952d6c-3932-42af-88c6-a41c7168fa07)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/e597c364-ed3e-403b-98d1-5138c40a7d5c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/e597c364-ed3e-403b-98d1-5138c40a7d5c)
 
 
 # Demo HTTPS
@@ -296,9 +290,7 @@ Prerequisites and notes
 * Ensure OS firewall (e.g., `ufw`) allows `443/tcp` on all servers that should accept HTTPS traffic.
 * If NGINX will proxy over HTTPS to backends, the backends must present valid certificates, or you must explicitly configure NGINX to skip verification (not recommended for production).
 
-<Callout icon="lightbulb">
-  For local development use `mkcert` to create locally-trusted certs quickly. For production, automate certificate issuance and renewal with Let's Encrypt or another trusted CA.
-</Callout>
+> **lightbulb** For local development use `mkcert` to create locally-trusted certs quickly. For production, automate certificate issuance and renewal with Let's Encrypt or another trusted CA.
 
 Quick checklist
 

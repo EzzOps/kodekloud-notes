@@ -173,13 +173,11 @@ HTTP/134.209.155.82:8080 (200 OK)
 FAIL-NEW: @ INFO: 0 | WARN-INPROG: @ INFO: 0 | IGNORE: 1 | PASS: 112
 ```
 
-<Callout icon="triangle-alert">
-  If you encounter an error like:
+> **triangle-alert** If you encounter an error like:
 
   Failed to load config file /zap/wrk/zap\_ignore\_rules Unexpected number of tokens on line - there should be at least 3, tab separated: 100001 IGNORE
 
   it indicates that your ignore file does not follow the proper format. Edit the file with a reliable text editor (e.g., vi) to ensure each line has at least three tab-separated tokens.
-</Callout>
 
 For example, use the following commands in your terminal:
 
@@ -202,33 +200,23 @@ By following this configuration, you can integrate OWASP ZAP into your CI/CD pip
 
 ***
 
-<Frame>
-  ![The image shows an Argo CD dashboard with two applications listed: "bitnami-sealed-secrets" and "solar-system-argo-app," displaying their status, repository information, and sync details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879706/notes-assets/images/Jenkins-Pipelines-DAST-Ignore-Rules/argo-cd-dashboard-bitnami-solar-system.jpg)
-</Frame>
+![The image shows an Argo CD dashboard with two applications listed: "bitnami-sealed-secrets" and "solar-system-argo-app," displaying their status, repository information, and sync details.](https://kodekloud.com/kk-media/image/upload/v1752879706/notes-assets/images/Jenkins-Pipelines-DAST-Ignore-Rules/argo-cd-dashboard-bitnami-solar-system.jpg)
 
 After synchronizing Argo CD, you should see a new replica set and multiple pods being created as the application is updated. The deployment dashboard may resemble the following:
 
-<Frame>
-  ![The image shows an Argo CD application dashboard displaying the status and details of a Kubernetes deployment, including health and sync status, with a visual representation of the application's components and their relationships.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879708/notes-assets/images/Jenkins-Pipelines-DAST-Ignore-Rules/argo-cd-kubernetes-deployment-dashboard.jpg)
-</Frame>
+![The image shows an Argo CD application dashboard displaying the status and details of a Kubernetes deployment, including health and sync status, with a visual representation of the application's components and their relationships.](https://kodekloud.com/kk-media/image/upload/v1752879708/notes-assets/images/Jenkins-Pipelines-DAST-Ignore-Rules/argo-cd-kubernetes-deployment-dashboard.jpg)
 
 Finally, the Jenkins pipeline interface presents various build stages and includes a prompt to confirm that the pull request has been merged and ArgoCD is synchronized:
 
-<Frame>
-  ![The image shows a Jenkins pipeline interface for a project named "solar-system" with various stages like dependency scanning, unit testing, and deployment. It includes a prompt asking if the pull request is merged and ArgoCD is synced, with an option to confirm.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879708/notes-assets/images/Jenkins-Pipelines-DAST-Ignore-Rules/jenkins-pipeline-solar-system-stages.jpg)
-</Frame>
+![The image shows a Jenkins pipeline interface for a project named "solar-system" with various stages like dependency scanning, unit testing, and deployment. It includes a prompt asking if the pull request is merged and ArgoCD is synced, with an option to confirm.](https://kodekloud.com/kk-media/image/upload/v1752879708/notes-assets/images/Jenkins-Pipelines-DAST-Ignore-Rules/jenkins-pipeline-solar-system-stages.jpg)
 
 Upon successful pipeline completion, you can review the OWASP ZAP security scanning report:
 
-<Frame>
-  ![The image shows a ZAP Scanning Report detailing security alerts for various websites, with a summary of risk levels and specific alert details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879709/notes-assets/images/Jenkins-Pipelines-DAST-Ignore-Rules/zap-scanning-report-security-alerts.jpg)
-</Frame>
+![The image shows a ZAP Scanning Report detailing security alerts for various websites, with a summary of risk levels and specific alert details.](https://kodekloud.com/kk-media/image/upload/v1752879709/notes-assets/images/Jenkins-Pipelines-DAST-Ignore-Rules/zap-scanning-report-security-alerts.jpg)
 
 This concludes the demonstration on how to configure OWASP ZAP to ignore specific warnings and integrate it into a CI/CD pipeline for Kubernetes deployments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/fb6b2c83-178c-4962-b4e6-ca5528721170/lesson/2c26bfe9-bdc1-4932-8c6b-605489ccc3d4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/fb6b2c83-178c-4962-b4e6-ca5528721170/lesson/2c26bfe9-bdc1-4932-8c6b-605489ccc3d4)
 
 
 # DAST and Manual Input
@@ -255,9 +243,7 @@ ZAP can be easily integrated into a CI/CD environment using Docker images. Diffe
 
 For this demo, we will perform an API scan. The API scan script accepts a target API definition (via a URL or local file) along with a format specification (e.g., openapi) and generates reports in HTML, Markdown, JSON, and XML formats.
 
-<Frame>
-  ![The image shows a webpage titled "ZAP Docker Documentation" by Checkmarx, listing various guides and tools related to ZAP's Docker images for automation in CI/CD environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879710/notes-assets/images/Jenkins-Pipelines-DAST-and-Manual-Input/zap-docker-documentation-guides.jpg)
-</Frame>
+![The image shows a webpage titled "ZAP Docker Documentation" by Checkmarx, listing various guides and tools related to ZAP's Docker images for automation in CI/CD environments.](https://kodekloud.com/kk-media/image/upload/v1752879710/notes-assets/images/Jenkins-Pipelines-DAST-and-Manual-Input/zap-docker-documentation-guides.jpg)
 
 The usage of the scan script is described below:
 
@@ -280,9 +266,7 @@ Usage: zap-api-scan.py -t <target> -f <format> [options]
   -P                 Do not fail on warning (post 2.9.0)
 ```
 
-<Callout icon="lightbulb">
-  If URLs return unexpected content types, the script raises corresponding alerts. For more information on available options, please refer to the usage message above.
-</Callout>
+> **lightbulb** If URLs return unexpected content types, the script raises corresponding alerts. For more information on available options, please refer to the usage message above.
 
 ## Configuring DAST in the Jenkins Pipeline
 
@@ -311,9 +295,7 @@ stage('DAST - OWASP ZAP') {
 }
 ```
 
-<Callout icon="lightbulb">
-  The command `chmod 777 $(pwd)` ensures that the generated reports have appropriate permissions, allowing them to be copied from the Docker container to the current working directory. Make sure to replace the target URL with your actual Kubernetes endpoint.
-</Callout>
+> **lightbulb** The command `chmod 777 $(pwd)` ensures that the generated reports have appropriate permissions, allowing them to be copied from the Docker container to the current working directory. Make sure to replace the target URL with your actual Kubernetes endpoint.
 
 ## API Documentation
 
@@ -408,21 +390,15 @@ The "App Deployed" stage employs a Jenkins input step with a timeout to ensure t
 
 When the pipeline reaches the input step, a prompt is displayed asking for confirmation before proceeding. The screenshots below illustrate examples of the Jenkins interface for input configuration:
 
-<Frame>
-  ![The image shows a Jenkins interface with the "Snippet Generator" tool open, allowing users to configure and generate pipeline scripts. The interface includes options for selecting and configuring steps, such as archiving artifacts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879711/notes-assets/images/Jenkins-Pipelines-DAST-and-Manual-Input/jenkins-snippet-generator-interface.jpg)
-</Frame>
+![The image shows a Jenkins interface with the "Snippet Generator" tool open, allowing users to configure and generate pipeline scripts. The interface includes options for selecting and configuring steps, such as archiving artifacts.](https://kodekloud.com/kk-media/image/upload/v1752879711/notes-assets/images/Jenkins-Pipelines-DAST-and-Manual-Input/jenkins-snippet-generator-interface.jpg)
 
 If there's an error or a required input is missing, Jenkins will display an appropriate error message:
 
-<Frame>
-  ![The image shows a Jenkins interface with the "Declarative Directive Generator" open, where a user can generate pipeline code for a declarative pipeline directive. An error message indicates that an input message must be provided.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879713/notes-assets/images/Jenkins-Pipelines-DAST-and-Manual-Input/jenkins-declarative-directive-generator-error.jpg)
-</Frame>
+![The image shows a Jenkins interface with the "Declarative Directive Generator" open, where a user can generate pipeline code for a declarative pipeline directive. An error message indicates that an input message must be provided.](https://kodekloud.com/kk-media/image/upload/v1752879713/notes-assets/images/Jenkins-Pipelines-DAST-and-Manual-Input/jenkins-declarative-directive-generator-error.jpg)
 
 For more details on configuring the input directive, refer to the [Jenkins documentation](https://www.jenkins.io/doc/).
 
-<Frame>
-  ![The image shows a webpage from the Jenkins documentation, specifically detailing the "input" directive in pipeline syntax, with configuration options and descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879714/notes-assets/images/Jenkins-Pipelines-DAST-and-Manual-Input/jenkins-input-directive-pipeline.jpg)
-</Frame>
+![The image shows a webpage from the Jenkins documentation, specifically detailing the "input" directive in pipeline syntax, with configuration options and descriptions.](https://kodekloud.com/kk-media/image/upload/v1752879714/notes-assets/images/Jenkins-Pipelines-DAST-and-Manual-Input/jenkins-input-directive-pipeline.jpg)
 
 ## The Complete Flow
 
@@ -446,12 +422,8 @@ docker run -v $(pwd):/zap/wrk ghcr.io/zaproxy/zap-api-scan.py \
 -x zap_xml_report.xml
 ```
 
-<Callout icon="triangle-alert">
-  If warnings are detected (e.g., unexpected content types), the scan might complete most tests successfully but still return a non-zero exit code. You can either address the warning or configure ZAP to ignore it in subsequent runs.
-</Callout>
+> **triangle-alert** If warnings are detected (e.g., unexpected content types), the scan might complete most tests successfully but still return a non-zero exit code. You can either address the warning or configure ZAP to ignore it in subsequent runs.
 
 Thank you for following this guide to integrate DAST with manual approval into your CI/CD pipeline. This configuration not only improves security testing efficiency but also ensures that tests are run against the most recent application deployment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/fb6b2c83-178c-4962-b4e6-ca5528721170/lesson/4e07c4dc-d403-4d21-8dfe-72f383b111a6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/fb6b2c83-178c-4962-b4e6-ca5528721170/lesson/4e07c4dc-d403-4d21-8dfe-72f383b111a6)

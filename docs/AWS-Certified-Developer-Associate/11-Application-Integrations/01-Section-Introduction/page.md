@@ -6,7 +6,7 @@ This article explores application integration on AWS, highlighting services that
 
 In this section, we explore the concept of application integration on AWS—a suite of services designed to facilitate communication between decoupled components in microservices, distributed systems, and serverless applications. These services help ensure seamless, reliable interactions across your application architecture.
 
-![The image is an introduction slide showing icons and names of four AWS services: Amazon SQS, Amazon SNS, AWS Step Functions, and AWS AppSync.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858446/notes-assets/images/AWS-Certified-Developer-Associate-Section-Introduction/aws-services-introduction-icons.jpg)
+![The image is an introduction slide showing icons and names of four AWS services: Amazon SQS, Amazon SNS, AWS Step Functions, and AWS AppSync.](https://kodekloud.com/kk-media/image/upload/v1752858446/notes-assets/images/AWS-Certified-Developer-Associate-Section-Introduction/aws-services-introduction-icons.jpg)
 
 > **lightbulb** This lesson focuses on the following AWS services:
 

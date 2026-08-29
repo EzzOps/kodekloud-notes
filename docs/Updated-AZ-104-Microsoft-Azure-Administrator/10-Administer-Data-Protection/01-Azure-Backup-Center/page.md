@@ -10,12 +10,8 @@ Azure Backup Center emphasizes data source–centric management, allowing admini
 
 Furthermore, Azure Backup Center seamlessly integrates with other Azure services. These native integrations enable advanced functionalities such as automated backup scheduling, policy enforcement, and compliance reporting. As a result, managing large-scale backup operations becomes more streamlined and efficient.
 
-<Callout icon="lightbulb">
-  Azure Backup Center is free to use. Simply navigate to the Azure portal and search for "Backup Center." If no backup operations are configured, you may initially see an empty dashboard. Once you complete demos for file and folder backup as well as VM backup, the dashboard will populate with the relevant data.
-</Callout>
+> **lightbulb** Azure Backup Center is free to use. Simply navigate to the Azure portal and search for "Backup Center." If no backup operations are configured, you may initially see an empty dashboard. Once you complete demos for file and folder backup as well as VM backup, the dashboard will populate with the relevant data.
 
 On that note, let's begin by exploring file and folder backup.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/a25ecd10-20ce-4ff9-bcc1-386c2e018b09/lesson/eb29cde8-f318-4eb1-9955-7cd28b41060e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/a25ecd10-20ce-4ff9-bcc1-386c2e018b09/lesson/eb29cde8-f318-4eb1-9955-7cd28b41060e)

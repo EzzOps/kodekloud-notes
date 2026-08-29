@@ -35,9 +35,7 @@ Use these as a checklist when building the skeleton (blueprint) repository.
    * fetches the skeleton, templates values into files, publishes the repo, and registers the component
 4. Developer uses the template through Backstage Create UI — Backstage runs the template and provisions the repo and catalog entry.
 
-<Callout icon="lightbulb">
-  Design templates so platform-spec decisions (lint, test, CI) are enforced by the skeleton. Use consistent parameter names (e.g., `name`, `owner`) to simplify templating and avoid parsing pitfalls.
-</Callout>
+> **lightbulb** Design templates so platform-spec decisions (lint, test, CI) are enforced by the skeleton. Use consistent parameter names (e.g., `name`, `owner`) to simplify templating and avoid parsing pitfalls.
 
 This is what the template tile will look like inside Backstage:
 

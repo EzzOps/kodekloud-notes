@@ -81,9 +81,7 @@ Guidelines:
 * If you need higher accuracy and can afford extra calls, prefer `refine`.
 * If you need the fastest throughput and context fits: `stuff` is usually best.
 
-<Callout icon="lightbulb">
-  Choosing the right combiner (e.g., `stuff`, `map_reduce`, `refine`) affects quality and cost: `stuff` is fast and simple, `map_reduce` reduces token usage by summarizing pieces first, and `refine` iteratively improves an answer and can yield higher-quality responses.
-</Callout>
+> **lightbulb** Choosing the right combiner (e.g., `stuff`, `map_reduce`, `refine`) affects quality and cost: `stuff` is fast and simple, `map_reduce` reduces token usage by summarizing pieces first, and `refine` iteratively improves an answer and can yield higher-quality responses.
 
 ## Example end-to-end flow (retrieval + stuff)
 
@@ -129,9 +127,7 @@ print(answer)
 * Chroma: [https://www.trychroma.com/](https://www.trychroma.com/)
 * Overview on RAG patterns: [https://arxiv.org/abs/2005.11401](https://arxiv.org/abs/2005.11401)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/a4d85af7-bfc2-40d7-89fc-f537792272ff/lesson/83ce2c7c-a5ea-428f-8fec-a33a56c9d69e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/a4d85af7-bfc2-40d7-89fc-f537792272ff/lesson/83ce2c7c-a5ea-428f-8fec-a33a56c9d69e)
 
 
 # Using Document Chain
@@ -268,10 +264,6 @@ Links and references
 * [OpenAI Chat Models](https://platform.openai.com/docs/models)
 * [TechCrunch](https://techcrunch.com/)
 
-<Callout icon="lightbulb">
-  Use the stuff documents chain when your documents' combined size is comfortably within the model's context window. If you expect larger corpora or many documents, prefer a retrieval chain to select relevant chunks before prompting the LLM.
-</Callout>
+> **lightbulb** Use the stuff documents chain when your documents' combined size is comfortably within the model's context window. If you expect larger corpora or many documents, prefer a retrieval chain to select relevant chunks before prompting the LLM.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/a4d85af7-bfc2-40d7-89fc-f537792272ff/lesson/19ac7110-a87f-434a-aa15-a4fcb9e410b1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/a4d85af7-bfc2-40d7-89fc-f537792272ff/lesson/19ac7110-a87f-434a-aa15-a4fcb9e410b1)

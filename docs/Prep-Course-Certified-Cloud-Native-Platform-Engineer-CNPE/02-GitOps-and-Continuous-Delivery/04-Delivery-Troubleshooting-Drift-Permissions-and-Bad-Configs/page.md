@@ -169,9 +169,7 @@ Further reading and references
 * Kustomize patches valid YAML bases and is a good fit for readable overlays and simple environment changes.
 * Both integrate with GitOps tools; choose the approach that best fits the team, the application, and operational needs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/dd65e2cc-6e0c-487f-ac70-31523af5309e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/dd65e2cc-6e0c-487f-ac70-31523af5309e)
 
 
 # Delivery Troubleshooting Drift Permissions and Bad Configs

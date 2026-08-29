@@ -159,9 +159,7 @@ spec:
   automountServiceAccountToken: false
 ```
 
-<Callout icon="lightbulb">
-  Once a pod is created, you cannot change its service account. To apply changes, delete and recreate the pod or update the deployment to trigger a rollout.
-</Callout>
+> **lightbulb** Once a pod is created, you cannot change its service account. To apply changes, delete and recreate the pod or update the deployment to trigger a rollout.
 
 ***
 
@@ -273,13 +271,9 @@ metadata:
 
 Ensure the service account exists before creating the secret. According to Kubernetes documentation, the Token Request API is the recommended approach due to its improved security features.
 
-<Frame>
-  ![The image describes Kubernetes v1.22's KEP 1205, highlighting security and scalability issues with JWTs in service account tokens.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880607/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Service-Accounts/frame_600.jpg)
-</Frame>
+![The image describes Kubernetes v1.22's KEP 1205, highlighting security and scalability issues with JWTs in service account tokens.](https://kodekloud.com/kk-media/image/upload/v1752880607/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Service-Accounts/frame_600.jpg)
 
-<Frame>
-  ![The image is about Kubernetes v1.22, featuring KEP 1205 for Bound Service Account Tokens, highlighting TokenRequestAPI with audience, time, and object-bound features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880608/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Service-Accounts/frame_630.jpg)
-</Frame>
+![The image is about Kubernetes v1.22, featuring KEP 1205 for Bound Service Account Tokens, highlighting TokenRequestAPI with audience, time, and object-bound features.](https://kodekloud.com/kk-media/image/upload/v1752880608/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Service-Accounts/frame_630.jpg)
 
 To summarize the commands in Kubernetes 1.24:
 
@@ -304,19 +298,13 @@ metadata:
     kubernetes.io/service-account.name: dashboard-sa
 ```
 
-<Callout icon="triangle-alert">
-  Avoid using non-expiring tokens unless absolutely necessary. The Token Request API provides a more secure, time-bound alternative.
-</Callout>
+> **triangle-alert** Avoid using non-expiring tokens unless absolutely necessary. The Token Request API provides a more secure, time-bound alternative.
 
-<Frame>
-  ![The image explains Kubernetes service account token secrets, recommending the TokenRequest API for secure token management since version 1.22.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880610/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Service-Accounts/frame_850.jpg)
-</Frame>
+![The image explains Kubernetes service account token secrets, recommending the TokenRequest API for secure token management since version 1.22.](https://kodekloud.com/kk-media/image/upload/v1752880610/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Service-Accounts/frame_850.jpg)
 
 This concludes our discussion on Kubernetes service accounts and the evolution of their token management. By understanding these concepts, you can better secure your cluster and manage authentication effectively.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/0d97d59b-1676-4c8a-9ec9-84f0a3474ea8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/0d97d59b-1676-4c8a-9ec9-84f0a3474ea8)
 
 
 # TLS in Kubernetes Certificate Creation
@@ -518,9 +506,7 @@ ExecStart=/usr/local/bin/kube-apiserver \\
   --v=2
 ```
 
-<Callout icon="lightbulb">
-  Each Kubernetes component uses the CA certificate to verify its clients, ensuring a completely secure communication channel.
-</Callout>
+> **lightbulb** Each Kubernetes component uses the CA certificate to verify its clients, ensuring a completely secure communication channel.
 
 ### Kubelet Certificates
 
@@ -528,9 +514,7 @@ The Kubelet, the node-level component responsible for managing pods, needs its o
 
 After generating these certificates, include them in the kubeconfig files for the respective nodes.
 
-<Frame>
-  ![The image illustrates Kubernetes client certificates for nodes node01, node02, and node03, showing their authentication setup with kubelet servers using certificates and keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880611/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-TLS-in-Kubernetes-Certificate-Creation/frame_630.jpg)
-</Frame>
+![The image illustrates Kubernetes client certificates for nodes node01, node02, and node03, showing their authentication setup with kubelet servers using certificates and keys.](https://kodekloud.com/kk-media/image/upload/v1752880611/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-TLS-in-Kubernetes-Certificate-Creation/frame_630.jpg)
 
 ## Summary
 
@@ -542,14 +526,8 @@ In this guide, we covered the process of generating TLS certificates for both cl
 
 In our next article, we will explore how to view certificate details and how tools like kubeadm handle certificate configuration.
 
-<Frame>
-  ![The image illustrates the process of generating and signing a certificate for "Kube Scheduler," including key generation, certificate signing request, and certificate signing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880612/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-TLS-in-Kubernetes-Certificate-Creation/frame_230.jpg)
-</Frame>
+![The image illustrates the process of generating and signing a certificate for "Kube Scheduler," including key generation, certificate signing request, and certificate signing.](https://kodekloud.com/kk-media/image/upload/v1752880612/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-TLS-in-Kubernetes-Certificate-Creation/frame_230.jpg)
 
-<Frame>
-  ![The image illustrates a certificate management system for Kubernetes, showing client and server certificates with keys for various components like admin, scheduler, and kubelet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880614/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-TLS-in-Kubernetes-Certificate-Creation/frame_330.jpg)
-</Frame>
+![The image illustrates a certificate management system for Kubernetes, showing client and server certificates with keys for various components like admin, scheduler, and kubelet.](https://kodekloud.com/kk-media/image/upload/v1752880614/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-TLS-in-Kubernetes-Certificate-Creation/frame_330.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/367eceba-5a86-4368-9444-8b995aa05b70" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/367eceba-5a86-4368-9444-8b995aa05b70)

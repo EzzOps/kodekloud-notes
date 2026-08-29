@@ -19,7 +19,7 @@ In this lesson, you will learn how to configure CRR by selecting a source bucket
 
 > **lightbulb** This configuration is ideal for purposes such as disaster recovery, compliance, global content availability (for static resources like images and videos), and backup. However, it is not suitable for database replication.
 
-![The image illustrates the benefits of Amazon S3 Cross-Region Replication, highlighting features like disaster recovery, compliance, improved latency, and data protection. It includes diagrams of bucket replication processes and options for changing destination accounts and storage classes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860167/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-S3-for-CRR/amazon-s3-cross-region-replication-benefits.jpg)
+![The image illustrates the benefits of Amazon S3 Cross-Region Replication, highlighting features like disaster recovery, compliance, improved latency, and data protection. It includes diagrams of bucket replication processes and options for changing destination accounts and storage classes.](https://kodekloud.com/kk-media/image/upload/v1752860167/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-S3-for-CRR/amazon-s3-cross-region-replication-benefits.jpg)
 
 ## Prerequisites
 
@@ -32,14 +32,14 @@ Before configuring CRR, ensure you have met the following prerequisites:
 
 > **triangle-alert** Keep in mind that replicating every version of every file may lead to increased costs, and replication may experience delays of up to 30 seconds based on connection performance.
 
-![The image outlines prerequisites for setting up cross-region replication, including source and destination buckets, versioning enabled, replication IAM role, and permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860168/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-S3-for-CRR/cross-region-replication-prerequisites.jpg)
+![The image outlines prerequisites for setting up cross-region replication, including source and destination buckets, versioning enabled, replication IAM role, and permissions.](https://kodekloud.com/kk-media/image/upload/v1752860168/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-S3-for-CRR/cross-region-replication-prerequisites.jpg)
 
 ### Additional Considerations
 
 * **Data Integrity**: Be aware that any corrupted files will be replicated without alteration.
 * **Deletion Process**: Removing a file adds a delete marker instead of erasing all existing versions. To completely remove an object, you must delete all versions and the delete markers.
 
-![The image outlines considerations for setting up cross-region replication, including costs, replication delay, data integrity, and delete markers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860169/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-S3-for-CRR/cross-region-replication-considerations.jpg)
+![The image outlines considerations for setting up cross-region replication, including costs, replication delay, data integrity, and delete markers.](https://kodekloud.com/kk-media/image/upload/v1752860169/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-S3-for-CRR/cross-region-replication-considerations.jpg)
 
 ## Configuring Cross-Region Replication
 
@@ -52,7 +52,7 @@ Follow these steps to configure CRR for your S3 buckets:
 5. **Configure Replication Options**: Apply filters such as prefixes or tags and adjust the destination storage class if needed.
 6. **Save the Replication Rule** to finalize the configuration.
 
-![The image outlines six steps to configure Cross-Region Replication (CRR) for S3, including enabling versioning, creating a replication rule, defining buckets, setting permissions, selecting options, and saving the rule.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860170/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-S3-for-CRR/s3-cross-region-replication-steps.jpg)
+![The image outlines six steps to configure Cross-Region Replication (CRR) for S3, including enabling versioning, creating a replication rule, defining buckets, setting permissions, selecting options, and saving the rule.](https://kodekloud.com/kk-media/image/upload/v1752860170/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-S3-for-CRR/s3-cross-region-replication-steps.jpg)
 
 These steps are crucial and may also be covered in AWS certification exams. The process starts with enabling versioning and continues through rule creation, bucket definition, permission configuration, option selection, and finally, saving the rule.
 
@@ -70,7 +70,7 @@ However, note the following:
 * Objects stored in archival storage (e.g., Glacier) are not replicated.
 * Certain lifecycle actions or delete markers are not replicated.
 
-![The image is a comparison chart showing what is replicated and what is not in a data storage context. It lists unencrypted objects and certain encrypted objects as replicated, while already replicated objects, objects in specific archives, and lifecycle actions are not replicated.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860171/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-S3-for-CRR/data-storage-replication-comparison-chart.jpg)
+![The image is a comparison chart showing what is replicated and what is not in a data storage context. It lists unencrypted objects and certain encrypted objects as replicated, while already replicated objects, objects in specific archives, and lifecycle actions are not replicated.](https://kodekloud.com/kk-media/image/upload/v1752860171/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Setting-Up-S3-for-CRR/data-storage-replication-comparison-chart.jpg)
 
 Ensure that your application replicates only the intended data. More advanced lifecycle actions might require reconfiguration in the destination bucket.
 

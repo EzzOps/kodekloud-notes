@@ -12,12 +12,8 @@ Leveraging Istio allows you to gain deep insights into your services without bui
 2. Enabling distributed tracing with Jaeger.
 3. Analyzing the service mesh behavior with Kiali.
 
-<Callout icon="lightbulb">
-  Before you begin, ensure that your environment is correctly configured with Istio to take full advantage of its observability features.
-</Callout>
+> **lightbulb** Before you begin, ensure that your environment is correctly configured with Istio to take full advantage of its observability features.
 
 Let's get started on enhancing your service mesh observability.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/7696566a-6631-4367-9fbc-ce86b23cd608/lesson/06962496-3272-4b16-b792-cbcf257d7ad1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/7696566a-6631-4367-9fbc-ce86b23cd608/lesson/06962496-3272-4b16-b792-cbcf257d7ad1)

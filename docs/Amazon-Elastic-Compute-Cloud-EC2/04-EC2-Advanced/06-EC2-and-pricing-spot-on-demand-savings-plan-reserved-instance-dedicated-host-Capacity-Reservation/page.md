@@ -17,7 +17,7 @@ Every organization’s cloud journey typically moves through three phases:
 * **Growth Phase**\
   Fluctuating hourly demand, advanced analytics and batch processing, high user volume.
 
-![The image illustrates the phases of cloud growth: Start-up Phase, Steady Phase, and Growth Phase, each with specific characteristics like on-demand services, regular traffic, and complex functionalities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869036/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-pricing-spot-on-demand-savings-plan-reserved-instance-dedicated-host-Capacity-Reservation/cloud-growth-phases-startup-steady-growth.jpg)
+![The image illustrates the phases of cloud growth: Start-up Phase, Steady Phase, and Growth Phase, each with specific characteristics like on-demand services, regular traffic, and complex functionalities.](https://kodekloud.com/kk-media/image/upload/v1752869036/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-pricing-spot-on-demand-savings-plan-reserved-instance-dedicated-host-Capacity-Reservation/cloud-growth-phases-startup-steady-growth.jpg)
 
 As your application evolves, selecting the right EC2 pricing model is key to achieving cost efficiency without sacrificing performance.
 
@@ -29,7 +29,7 @@ Amazon EC2 often represents a significant portion of your AWS bill. Gaining clar
 * Apply the most cost-effective pricing option
 * Forecast and control cloud expenditure
 
-![The image is about "EC2 Cost Management" and features a pie chart highlighting EC2, along with icons representing AWS Cloud and cost-saving ideas.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869037/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-pricing-spot-on-demand-savings-plan-reserved-instance-dedicated-host-Capacity-Reservation/ec2-cost-management-pie-chart-icons.jpg)
+![The image is about "EC2 Cost Management" and features a pie chart highlighting EC2, along with icons representing AWS Cloud and cost-saving ideas.](https://kodekloud.com/kk-media/image/upload/v1752869037/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-pricing-spot-on-demand-savings-plan-reserved-instance-dedicated-host-Capacity-Reservation/ec2-cost-management-pie-chart-icons.jpg)
 
 AWS provides six pricing models for EC2 instances:
 
@@ -40,7 +40,7 @@ AWS provides six pricing models for EC2 instances:
 * Dedicated Hosts
 * On-Demand Capacity Reservations
 
-![The image outlines the AWS EC2 pricing model, listing six options: On-Demand Price, Spot, Savings Plans, Reserved Instances, Dedicated Hosts, and On-Demand Capacity Reservation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869038/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-pricing-spot-on-demand-savings-plan-reserved-instance-dedicated-host-Capacity-Reservation/aws-ec2-pricing-model-options.jpg)
+![The image outlines the AWS EC2 pricing model, listing six options: On-Demand Price, Spot, Savings Plans, Reserved Instances, Dedicated Hosts, and On-Demand Capacity Reservation.](https://kodekloud.com/kk-media/image/upload/v1752869038/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-pricing-spot-on-demand-savings-plan-reserved-instance-dedicated-host-Capacity-Reservation/aws-ec2-pricing-model-options.jpg)
 
 To compare these options at a glance, refer to the table below:
 
@@ -73,7 +73,7 @@ Use cases:
 
 Spot Instances provide access to spare EC2 capacity at discounts of up to 90% off On-Demand prices. AWS may reclaim Spot Instances with a two-minute warning when capacity is needed elsewhere.
 
-![The image illustrates the concept of AWS Spot Instances, showing a diagram of cloud resources with price matching and on-demand requests, alongside icons representing features and use cases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869040/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-pricing-spot-on-demand-savings-plan-reserved-instance-dedicated-host-Capacity-Reservation/aws-spot-instances-diagram-cloud-resources.jpg)
+![The image illustrates the concept of AWS Spot Instances, showing a diagram of cloud resources with price matching and on-demand requests, alongside icons representing features and use cases.](https://kodekloud.com/kk-media/image/upload/v1752869040/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-pricing-spot-on-demand-savings-plan-reserved-instance-dedicated-host-Capacity-Reservation/aws-spot-instances-diagram-cloud-resources.jpg)
 
 Key points:
 
@@ -93,7 +93,7 @@ Use cases:
 
 Savings Plans offer significant discounts in exchange for a constant hourly spend commitment over a one- or three-year term.
 
-![The image illustrates AWS Saving Plans, showing a comparison between on-demand and discounted prices, and highlighting Compute and EC2 Instance Savings Plans.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869041/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-pricing-spot-on-demand-savings-plan-reserved-instance-dedicated-host-Capacity-Reservation/aws-saving-plans-comparison-diagram.jpg)
+![The image illustrates AWS Saving Plans, showing a comparison between on-demand and discounted prices, and highlighting Compute and EC2 Instance Savings Plans.](https://kodekloud.com/kk-media/image/upload/v1752869041/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-pricing-spot-on-demand-savings-plan-reserved-instance-dedicated-host-Capacity-Reservation/aws-saving-plans-comparison-diagram.jpg)
 
 Two plan types:
 
@@ -111,7 +111,7 @@ Two plan types:
 
 Reserved Instances (RIs) are an older commitment model offering deep discounts in exchange for a one- or three-year term.
 
-![The image is an infographic about AWS Reserved Instances, showing a comparison between Standard and Convertible Reserved Instances with savings percentages and flexibility options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869042/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-pricing-spot-on-demand-savings-plan-reserved-instance-dedicated-host-Capacity-Reservation/aws-reserved-instances-comparison-infographic.jpg)
+![The image is an infographic about AWS Reserved Instances, showing a comparison between Standard and Convertible Reserved Instances with savings percentages and flexibility options.](https://kodekloud.com/kk-media/image/upload/v1752869042/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-pricing-spot-on-demand-savings-plan-reserved-instance-dedicated-host-Capacity-Reservation/aws-reserved-instances-comparison-infographic.jpg)
 
 Types of RIs:
 
@@ -127,7 +127,7 @@ Types of RIs:
 
 Dedicated Hosts allocate a physical server solely for your use, enabling you to bring existing software licenses and meet strict compliance requirements.
 
-![The image is an infographic about AWS Cloud dedicated hosts, highlighting features like BYOL and reserved instance savings plans, and detailing specifications for the c7g instance family.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869044/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-pricing-spot-on-demand-savings-plan-reserved-instance-dedicated-host-Capacity-Reservation/aws-cloud-dedicated-hosts-infographic.jpg)
+![The image is an infographic about AWS Cloud dedicated hosts, highlighting features like BYOL and reserved instance savings plans, and detailing specifications for the c7g instance family.](https://kodekloud.com/kk-media/image/upload/v1752869044/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-pricing-spot-on-demand-savings-plan-reserved-instance-dedicated-host-Capacity-Reservation/aws-cloud-dedicated-hosts-infographic.jpg)
 
 Key features:
 
@@ -146,7 +146,7 @@ Example c7g host capacity:
 
 On-Demand Capacity Reservations let you reserve compute capacity in a specific Availability Zone, ensuring capacity is available when you need it.
 
-![The image is an illustration of AWS On-Demand Capacity Reservation, highlighting features such as capacity assurance, regulatory HA requirements, disaster recovery, and support for RI and savings plans.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869046/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-pricing-spot-on-demand-savings-plan-reserved-instance-dedicated-host-Capacity-Reservation/aws-on-demand-capacity-reservation-illustration.jpg)
+![The image is an illustration of AWS On-Demand Capacity Reservation, highlighting features such as capacity assurance, regulatory HA requirements, disaster recovery, and support for RI and savings plans.](https://kodekloud.com/kk-media/image/upload/v1752869046/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-and-pricing-spot-on-demand-savings-plan-reserved-instance-dedicated-host-Capacity-Reservation/aws-on-demand-capacity-reservation-illustration.jpg)
 
 Use cases:
 

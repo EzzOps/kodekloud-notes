@@ -10,7 +10,7 @@ When you enable the static website feature, Azure automatically creates the \$we
 
 Mapping the auto-generated URL (e.g., [https://youraccountname.blob.core.windows.net](https://youraccountname.blob.core.windows.net)) to a custom domain is also supported. You can provide a memorable domain name like [www.kodekloud.com](http://www.kodekloud.com) by updating your DNS settings to point to the Azure Blob Storage endpoint.
 
-![The image outlines three features of static website hosting: serving static content from a storage container, enabling serverless architectures with Azure Functions, and availability via a custom domain.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866761/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/static-website-hosting-features.jpg)
+![The image outlines three features of static website hosting: serving static content from a storage container, enabling serverless architectures with Azure Functions, and availability via a custom domain.](https://kodekloud.com/kk-media/image/upload/v1752866761/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/static-website-hosting-features.jpg)
 
 ## Benefits & Limitations of Static Website Hosting
 
@@ -19,7 +19,7 @@ One major benefit is the ease of setup. With just a few clicks in the Azure port
 * **Custom HTTP Headers:** Azure Blob Storage does not natively support configuring custom HTTP headers (e.g., Content Security Policy, X-Frame-Options, or cache control). Although integrating Azure CDN can serve as a workaround, it introduces additional complexity and potential cost.
 * **Authentication and Authorization:** Built-in static website hosting does not offer features for authentication or authorization. To restrict access (for example, to admin or premium sections), you need to integrate services like Microsoft Entra ID or Azure AD.
 
-![The image lists two limitations of static website hosting: the inability to configure headers and the lack of support for authentication and authorization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866762/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/static-website-hosting-limitations.jpg)
+![The image lists two limitations of static website hosting: the inability to configure headers and the lack of support for authentication and authorization.](https://kodekloud.com/kk-media/image/upload/v1752866762/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/static-website-hosting-limitations.jpg)
 
 ## Setting Up a Static Website
 
@@ -31,7 +31,7 @@ Follow these steps to create a static website using Azure Blob Storage in the Az
 * In the menu (located above "Lifecycle management"), select "Static website" and enable the feature.
 * Enter the *index document name* (commonly `index.html`). If required, specify an error document (e.g., `error.html`).
 
-![The image shows a Microsoft Azure portal interface for configuring a static website, with options to enable the site and specify the index document name as "index.html".](../../../../images/kodekloud.com/kk-media/image/upload/v1752866764/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/azure-portal-static-website-config.jpg)
+![The image shows a Microsoft Azure portal interface for configuring a static website, with options to enable the site and specify the index document name as "index.html".](https://kodekloud.com/kk-media/image/upload/v1752866764/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/azure-portal-static-website-config.jpg)
 
 Once enabled, Azure creates the \$web container where your web files will be stored.
 
@@ -40,7 +40,7 @@ Once enabled, Azure creates the \$web container where your web files will be sto
 * Navigate to the storage account’s containers and find the newly created \$web container.
 * By default, the container is private. Click on it, then select "Change access level" and choose "blob" to allow anonymous public access.
 
-![The image shows a Microsoft Azure portal interface displaying a list of storage containers with details such as name, last modified date, anonymous access level, and lease state. The containers listed are "\$logs," "asp," and "files."](../../../../images/kodekloud.com/kk-media/image/upload/v1752866766/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/azure-portal-storage-containers-list.jpg)
+![The image shows a Microsoft Azure portal interface displaying a list of storage containers with details such as name, last modified date, anonymous access level, and lease state. The containers listed are "\$logs," "asp," and "files."](https://kodekloud.com/kk-media/image/upload/v1752866766/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/azure-portal-storage-containers-list.jpg)
 
 ### 3. Upload Your Website Files
 
@@ -54,11 +54,11 @@ In this example, we will use AzCopy.
 
 Before using AzCopy, ensure your account has the necessary permissions for data plane operations by assigning the "Storage Blob Data Contributor" role on your storage account.
 
-![The image shows the "Add role assignment" page in Microsoft Azure, where different job function roles related to Azure Storage Blob data are listed, such as Contributor, Owner, and Reader.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866767/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/add-role-assignment-azure-storage.jpg)
+![The image shows the "Add role assignment" page in Microsoft Azure, where different job function roles related to Azure Storage Blob data are listed, such as Contributor, Owner, and Reader.](https://kodekloud.com/kk-media/image/upload/v1752866767/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/add-role-assignment-azure-storage.jpg)
 
 Review and confirm the role assignment details.
 
-![The image shows a Microsoft Azure portal page where a role assignment is being added, specifically assigning the "Storage Blob Data Contributor" role to a user. The page includes details like the scope, member name, and object ID.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866769/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/azure-portal-role-assignment-storage-blobs.jpg)
+![The image shows a Microsoft Azure portal page where a role assignment is being added, specifically assigning the "Storage Blob Data Contributor" role to a user. The page includes details like the scope, member name, and object ID.](https://kodekloud.com/kk-media/image/upload/v1752866769/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/azure-portal-role-assignment-storage-blobs.jpg)
 
 ### 4. Use AzCopy to Transfer Files
 
@@ -84,14 +84,14 @@ Final Job Status: Completed
 
 Now, return to the \$web container in the Azure portal to confirm that your website files have been uploaded successfully.
 
-![The image shows a Microsoft Azure portal interface displaying a container named "\$web" with no results or blobs listed. The interface includes options for uploading, changing access levels, and other management actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866770/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/azure-portal-container-web-interface.jpg)
+![The image shows a Microsoft Azure portal interface displaying a container named "\$web" with no results or blobs listed. The interface includes options for uploading, changing access levels, and other management actions.](https://kodekloud.com/kk-media/image/upload/v1752866770/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/azure-portal-container-web-interface.jpg)
 
 ### 5. Test the Static Website
 
 * Locate the `index.html` blob and inspect its properties.
 * Click on the blob, copy its URL, and paste it into a web browser. The static website should load as expected.
 
-![The image shows a Microsoft Azure portal interface displaying the properties of a blob file named "index.html" within a storage container. The interface includes details such as URL, size, access tier, and encryption status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866772/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/azure-portal-blob-properties-index-html.jpg)
+![The image shows a Microsoft Azure portal interface displaying the properties of a blob file named "index.html" within a storage container. The interface includes details such as URL, size, access tier, and encryption status.](https://kodekloud.com/kk-media/image/upload/v1752866772/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/azure-portal-blob-properties-index-html.jpg)
 
 If your files appear in a subdirectory (e.g., the URL includes “web-template/index.html”), use the "--as-subdir=false" parameter with AzCopy to copy the files directly to the root of the \$web container:
 
@@ -113,7 +113,7 @@ Final Job Status: Completed
 
 Once the files reside at the root, your static website will be directly accessible.
 
-![The image shows a Microsoft Azure portal interface displaying a list of files and folders in a container named "\$web." The files include "index.html," "LICENSE.txt," and "README.txt," with details like modification date, access tier, and size.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866773/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/azure-portal-container-files-list.jpg)
+![The image shows a Microsoft Azure portal interface displaying a list of files and folders in a container named "\$web." The files include "index.html," "LICENSE.txt," and "README.txt," with details like modification date, access tier, and size.](https://kodekloud.com/kk-media/image/upload/v1752866773/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/azure-portal-container-files-list.jpg)
 
 ### 6. Associate Custom Domains & Additional Services
 
@@ -121,9 +121,9 @@ Azure Blob Storage allows you to map a custom domain to your static website. You
 
 * To configure a custom domain, navigate to the networking settings in your storage account and follow the instructions to set up a CNAME record.
 
-![The image shows a Microsoft Azure portal interface displaying a list of storage containers with details such as name, last modified date, anonymous access level, and lease state. The sidebar includes options for data storage and security settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866775/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/azure-portal-storage-containers-interface.jpg)
+![The image shows a Microsoft Azure portal interface displaying a list of storage containers with details such as name, last modified date, anonymous access level, and lease state. The sidebar includes options for data storage and security settings.](https://kodekloud.com/kk-media/image/upload/v1752866775/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/azure-portal-storage-containers-interface.jpg)
 
-![The image shows a Microsoft Azure portal interface for configuring a custom domain for a storage account. It includes instructions for setting up a CNAME record and a field to enter the domain name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866776/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/azure-portal-custom-domain-setup.jpg)
+![The image shows a Microsoft Azure portal interface for configuring a custom domain for a storage account. It includes instructions for setting up a CNAME record and a field to enter the domain name.](https://kodekloud.com/kk-media/image/upload/v1752866776/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Static-Websites/azure-portal-custom-domain-setup.jpg)
 
 For example, you might assign the custom domain "kodekloud.com" so users can access your static website directly via that domain instead of the full Azure Blob Storage URL.
 

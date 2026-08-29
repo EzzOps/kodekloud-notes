@@ -27,9 +27,7 @@ To retrieve a specific value in a dictionary, use its key inside square brackets
 print(usernames["sarah"])  # Output: "sarah123"
 ```
 
-<Callout icon="triangle-alert">
-  Attempting to access a key that does not exist in the dictionary will raise a KeyError.
-</Callout>
+> **triangle-alert** Attempting to access a key that does not exist in the dictionary will raise a KeyError.
 
 ## Common Dictionary Methods
 
@@ -108,6 +106,4 @@ usernames_copy = usernames.copy()
 
 In this lesson, we explored Python dictionaries, discussing their structure, how to access elements, and the various methods available to modify dictionary content. Mastering dictionaries is essential for efficient data management in Python. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/999967d9-7cca-48f8-893c-5e61014671f8/lesson/79d5e64c-a3cb-4953-a956-0fbb17bc2266" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/999967d9-7cca-48f8-893c-5e61014671f8/lesson/79d5e64c-a3cb-4953-a956-0fbb17bc2266)

@@ -29,15 +29,11 @@ When to use each method
 * Prototyping or constrained environments: try quantized weights (8-bit/4-bit) to run on smaller GPUs.
 * No GPUs available: CPU-only execution as a fallback (expect significantly slower performance).
 
-<Callout icon="lightbulb">
-  For inference of very large models, combine sharding/offload with reduced precision (FP16/BF16 or quantization). For training, add gradient checkpointing if you need further memory savings at the cost of extra computation.
-</Callout>
+> **lightbulb** For inference of very large models, combine sharding/offload with reduced precision (FP16/BF16 or quantization). For training, add gradient checkpointing if you need further memory savings at the cost of extra computation.
 
 In short: use model parallelism or offloading techniques (optionally combined with lower precision) to manage GPU memory constraints; use gradient checkpointing mainly for training scenarios, and reserve CPU-only execution for situations where GPU-based solutions are unavailable.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/91679a6d-713b-47de-947c-6cb6060819ca" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/91679a6d-713b-47de-947c-6cb6060819ca)
 
 
 # Monitoring High Throughput LLM Production Performance
@@ -90,9 +86,7 @@ Comparison table — what to monitor and why
 | Model parameter count  | Indicates capacity/quality of model (not runtime throughput)        | Choose model size based on accuracy/throughput trade-offs; consider distillation or smaller variants     |
 | Cache hit ratio        | Reduces compute for repeatable queries and lowers effective latency | Measure hits/misses; tune cache TTL and cache keys; combine cache metrics with TPS to judge benefit      |
 
-<Callout icon="lightbulb">
-  Monitor tokens per second as your primary throughput metric, and use GPU memory utilization, cache hit ratio, and latency metrics to diagnose and optimize bottlenecks. Instrument your inference pipeline to emit TPS so autoscaling and optimization are driven by the user-facing capacity metric.
-</Callout>
+> **lightbulb** Monitor tokens per second as your primary throughput metric, and use GPU memory utilization, cache hit ratio, and latency metrics to diagnose and optimize bottlenecks. Instrument your inference pipeline to emit TPS so autoscaling and optimization are driven by the user-facing capacity metric.
 
 <Frame>
   <img alt="The image contains a question about the most important performance metric to monitor when deploying a large language model (LLM) for high throughput applications, with the answer being &#x22;Tokens per second&#x22; and an explanation provided." />
@@ -104,6 +98,4 @@ References and further reading
 * NVIDIA Data Center GPU Manager (DCGM): [https://developer.nvidia.com/dcgm](https://developer.nvidia.com/dcgm)
 * Best practices for serving LLMs and throughput optimization: see vendor docs (Triton, Hugging Face Inference, NVIDIA guides) and profiling tools (nsight, DCGM, Prometheus)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/0348573f-9f82-4248-b999-61907254c60c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/0348573f-9f82-4248-b999-61907254c60c)

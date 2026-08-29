@@ -47,9 +47,7 @@ Use a methodical approach to diagnose exporter failures and performance issues:
   <img alt="The image provides quick fixes and diagnostic tips for troubleshooting, including checking startup logs, verifying counters, simulating link outages, and using a small canary pipeline." />
 </Frame>
 
-<Callout icon="lightbulb">
-  When testing resilience, run controlled outages against a canary pipeline first. This reduces risk and gives faster feedback about `queued_retry` and `batch` sizing behavior.
-</Callout>
+> **lightbulb** When testing resilience, run controlled outages against a canary pipeline first. This reduces risk and gives faster feedback about `queued_retry` and `batch` sizing behavior.
 
 ## Best practices and configuration recommendations
 
@@ -102,6 +100,4 @@ If you require that requests for the same `routing key` always hit the same back
 
 Wrap-up: Applying these exporter patterns and operational practices will improve the reliability and maintainability of your Collector deployment while preserving trace coherence and enabling scalable delivery to multiple backends.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/bf8fadf0-cbc3-476f-9608-965a3c7bceb0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/bf8fadf0-cbc3-476f-9608-965a3c7bceb0)

@@ -10,7 +10,7 @@ In modern software development and CI/CD pipelines, effective package management
 * Reduce dependency conflicts and drift
 * Accelerate development and deployment cycles
 
-![The image is a slide titled "Discovering Package Management Tools," featuring three sections: definition of package management, its importance in software development and CI/CD, and an overview of tools like Azure Artifacts, GitHub Packages, NuGet, and npm.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867920/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/discovering-package-management-tools-overview.jpg)
+![The image is a slide titled "Discovering Package Management Tools," featuring three sections: definition of package management, its importance in software development and CI/CD, and an overview of tools like Azure Artifacts, GitHub Packages, NuGet, and npm.](https://kodekloud.com/kk-media/image/upload/v1752867920/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/discovering-package-management-tools-overview.jpg)
 
 ## Key Package Management Tools
 

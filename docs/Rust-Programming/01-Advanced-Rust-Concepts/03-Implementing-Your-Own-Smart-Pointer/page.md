@@ -43,9 +43,7 @@ fn main() {
 
 In this Rust example, the generic type parameter `T` allows the function to handle slices containing any type. The return type is `Option<&T>`, which gracefully deals with the possibility of an empty slice.
 
-<Frame>
-  ![The image explains the benefits of using generics, highlighting two points: avoiding code duplication and improving flexibility and robustness.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883763/notes-assets/images/Rust-Programming-Generic-Types/generics-benefits-code-duplication-flexibility.jpg)
-</Frame>
+![The image explains the benefits of using generics, highlighting two points: avoiding code duplication and improving flexibility and robustness.](https://kodekloud.com/kk-media/image/upload/v1752883763/notes-assets/images/Rust-Programming-Generic-Types/generics-benefits-code-duplication-flexibility.jpg)
 
 ## Generic Structs
 
@@ -72,9 +70,7 @@ fn main() {
 }
 ```
 
-<Frame>
-  ![The image is a slide titled "Using Generics in Structs," with a note stating that Rust structs can be generic to store any type of value.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883764/notes-assets/images/Rust-Programming-Generic-Types/using-generics-in-structs-rust.jpg)
-</Frame>
+![The image is a slide titled "Using Generics in Structs," with a note stating that Rust structs can be generic to store any type of value.](https://kodekloud.com/kk-media/image/upload/v1752883764/notes-assets/images/Rust-Programming-Generic-Types/using-generics-in-structs-rust.jpg)
 
 The type parameter `T` in the `Pair` struct allows you to store any type, and Rust infers the specific type based on the provided values.
 
@@ -155,9 +151,7 @@ Each method call works for any instantiation of `Pair<T>`, making your code more
 
 ## Performance Considerations
 
-<Callout icon="lightbulb">
-  Rust uses a process called monomorphization during compilation to generate type-specific versions of your generic code. This ensures that there is no runtime overhead, and your generic code performs as efficiently as if it were written specifically for each type.
-</Callout>
+> **lightbulb** Rust uses a process called monomorphization during compilation to generate type-specific versions of your generic code. This ensures that there is no runtime overhead, and your generic code performs as efficiently as if it were written specifically for each type.
 
 ## Conclusion
 
@@ -171,9 +165,7 @@ For further reading, check out these resources:
 
 Embrace generics to write code that adapts to your needs without compromising on performance.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/37d4032f-c90d-43ee-a0cd-981b95ab22b0/lesson/5806e4de-49f2-4b17-be72-c528e394e2c0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/37d4032f-c90d-43ee-a0cd-981b95ab22b0/lesson/5806e4de-49f2-4b17-be72-c528e394e2c0)
 
 
 # Implementing Your Own Smart Pointer
@@ -192,9 +184,7 @@ We will walk you through the process of building a custom smart pointer by imple
 
 The Deref trait enables your smart pointer to be used like any other reference. By implementing Deref, you can use the dereference operator (`*`) to access the data inside the smart pointer, making it compatible in contexts where a regular reference is needed.
 
-<Frame>
-  ![The image is a diagram explaining the implementation of the Deref trait, showing a "MySmartPointer" containing "Data" that points to "Underlying Data" and interacts with the "Deref Trait."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883764/notes-assets/images/Rust-Programming-Implementing-Your-Own-Smart-Pointer/deref-trait-mysmartpointer-diagram.jpg)
-</Frame>
+![The image is a diagram explaining the implementation of the Deref trait, showing a "MySmartPointer" containing "Data" that points to "Underlying Data" and interacts with the "Deref Trait."](https://kodekloud.com/kk-media/image/upload/v1752883764/notes-assets/images/Rust-Programming-Implementing-Your-Own-Smart-Pointer/deref-trait-mysmartpointer-diagram.jpg)
 
 Consider the following example where we define a generic tuple struct, `MySmartPointer\<T>`, that wraps around a value of any type `T`. The implementation block includes a constructor method that initializes the smart pointer:
 
@@ -251,9 +241,7 @@ By implementing Deref, our custom smart pointer can be seamlessly passed to func
 
 The Drop trait is essential for defining custom behavior when a smart pointer goes out of scope. It allows you to implement cleanup logic for resources such as memory, file handles, or network connections.
 
-<Frame>
-  ![The image is titled "The Drop Trait – Managing Cleanup" and features a diagram of a smart pointer managing memory, file handles, and network connections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883765/notes-assets/images/Rust-Programming-Implementing-Your-Own-Smart-Pointer/drop-trait-managing-cleanup-diagram.jpg)
-</Frame>
+![The image is titled "The Drop Trait – Managing Cleanup" and features a diagram of a smart pointer managing memory, file handles, and network connections.](https://kodekloud.com/kk-media/image/upload/v1752883765/notes-assets/images/Rust-Programming-Implementing-Your-Own-Smart-Pointer/drop-trait-managing-cleanup-diagram.jpg)
 
 In the following example, we extend our previous implementation by adding a custom Drop implementation. When an instance of `MySmartPointer` is dropped, the `drop` method is triggered, which in this example prints a message to indicate that the pointer is being cleaned up.
 
@@ -292,12 +280,10 @@ fn main() {
 
 When the variable `y` falls out of scope at the end of `main`, Rust automatically calls the `drop` method, ensuring that any associated resources are properly released.
 
-<Callout icon="lightbulb">
-  The sample console output for this code is:
+> **lightbulb** The sample console output for this code is:
 
   Value of y: 5\
   Dropping MySmartPointer!
-</Callout>
 
 ***
 
@@ -305,9 +291,7 @@ When the variable `y` falls out of scope at the end of `main`, Rust automaticall
 
 By implementing the Deref trait, your custom smart pointer works seamlessly as a regular reference, simplifying its integration with functions that expect references. Meanwhile, the Drop trait guarantees automatic cleanup of resources when the smart pointer goes out of scope, ensuring efficient resource management.
 
-<Frame>
-  ![The image is a conclusion slide with three key points about smart pointers, emphasizing flexibility, resource management, and control over memory. It features a gradient background and is copyrighted by KodeKloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883767/notes-assets/images/Rust-Programming-Implementing-Your-Own-Smart-Pointer/smart-pointers-conclusion-slide.jpg)
-</Frame>
+![The image is a conclusion slide with three key points about smart pointers, emphasizing flexibility, resource management, and control over memory. It features a gradient background and is copyrighted by KodeKloud.](https://kodekloud.com/kk-media/image/upload/v1752883767/notes-assets/images/Rust-Programming-Implementing-Your-Own-Smart-Pointer/smart-pointers-conclusion-slide.jpg)
 
 Together, these traits offer you fine-grained control over memory and resource management in Rust, paving the way for more advanced and safe programming paradigms.
 
@@ -320,8 +304,6 @@ Together, these traits offer you fine-grained control over memory and resource m
 
 For further reading on implementing custom smart pointers and advanced memory management techniques, explore additional tutorials available in the [Rust Programming Language Book](https://doc.rust-lang.org/book/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/37d4032f-c90d-43ee-a0cd-981b95ab22b0/lesson/8b5a96f3-ce71-459b-8bff-e068e4bbb6a8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/37d4032f-c90d-43ee-a0cd-981b95ab22b0/lesson/8b5a96f3-ce71-459b-8bff-e068e4bbb6a8)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/rust/module/37d4032f-c90d-43ee-a0cd-981b95ab22b0/lesson/0d9e02ac-0cc6-4e47-9a30-5443c6706575" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/rust/module/37d4032f-c90d-43ee-a0cd-981b95ab22b0/lesson/0d9e02ac-0cc6-4e47-9a30-5443c6706575)

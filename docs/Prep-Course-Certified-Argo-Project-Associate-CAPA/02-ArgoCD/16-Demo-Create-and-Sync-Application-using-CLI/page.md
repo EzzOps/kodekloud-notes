@@ -86,13 +86,9 @@ kubectl -n highway-animation get pods
 * [Docker Desktop](https://www.docker.com/products/docker-desktop)
 * [Kubernetes documentation](https://kubernetes.io/docs/)
 
-<Callout icon="lightbulb">
-  Tip: If you want continuous deployments, change the Application sync policy to Automatic and configure any required pruning or hooks. For controlled rollouts keep Manual sync and use Argo CD’s health checks and rollout features.
-</Callout>
+> **lightbulb** Tip: If you want continuous deployments, change the Application sync policy to Automatic and configure any required pruning or hooks. For controlled rollouts keep Manual sync and use Argo CD’s health checks and rollout features.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/c175199a-a8f3-4897-a445-de634e21b7b8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/c175199a-a8f3-4897-a445-de634e21b7b8)
 
 
 # Demo Create and Sync Application using CLI

@@ -24,9 +24,7 @@ Configuration management tools manage the state and software inside systems afte
 
 In cloud environments, configuration management ensures servers have the correct packages, services running, and consistent configuration across many machines. These tools are built to be idempotent: applying the same configuration repeatedly will converge the system to the desired state without creating duplicates or unintended side effects. Configuration tools may be agent-based or agentless (for example, Ansible is agentless) and typically support remote execution, drift detection, and continuous enforcement.
 
-<Callout icon="lightbulb">
-  Idempotence matters: running the same configuration multiple times should result in the same desired state, not duplicated changes or errors.
-</Callout>
+> **lightbulb** Idempotence matters: running the same configuration multiple times should result in the same desired state, not duplicated changes or errors.
 
 Examples: Ansible, Puppet, Salt.
 
@@ -42,9 +40,7 @@ Technically, server templating creates machine images, virtual machine snapshots
 
 Examples: Packer (image building), Docker (container images), Vagrant (developer VM images).
 
-<Callout icon="lightbulb">
-  Immutable infrastructure increases reliability: updates are delivered by creating and deploying a new image rather than modifying running instances in place.
-</Callout>
+> **lightbulb** Immutable infrastructure increases reliability: updates are delivered by creating and deploying a new image rather than modifying running instances in place.
 
 <Frame>
   <img alt="The image outlines types of Infrastructure as Code (IaC) tools, specifically server templating tools, featuring pre-installed packages, images, and immutable infrastructure. Each type is briefly described and associated with an icon." />
@@ -89,6 +85,4 @@ So far we’ve covered the main types of IaC tools and when to use each approach
 
 If you want targeted examples or a comparison of tools for a specific use case (e.g., multi-cloud provisioning vs. Azure-only deployments), tell me your environment and goals and I’ll provide recommended workflows and sample configurations.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/ba3df1b5-1b9a-4f11-b32a-218c32aa1614/lesson/b389de20-683e-4a31-9f93-f0b3cd580790" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/ba3df1b5-1b9a-4f11-b32a-218c32aa1614/lesson/b389de20-683e-4a31-9f93-f0b3cd580790)

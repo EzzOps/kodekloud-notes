@@ -10,7 +10,7 @@ In this lesson, we explore the certification roadmap for becoming a Microsoft Az
 
 Begin your Azure journey with the [AZ-900: Azure Fundamentals](https://learn.kodekloud.com/user/courses/az900-microsoft-azure-fundamentals) course. Although optional, this course is highly recommended for those new to cloud concepts. It provides the essential foundation you need before advancing to more specialized courses like Administrator or Architect.
 
-![The image is a certification roadmap for Microsoft Azure, showing a progression from Azure Fundamentals to Azure Solutions Architect Expert, with a paper airplane symbolizing progress.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867247/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Certification-Details/azure-certification-roadmap-progress.jpg)
+![The image is a certification roadmap for Microsoft Azure, showing a progression from Azure Fundamentals to Azure Solutions Architect Expert, with a paper airplane symbolizing progress.](https://kodekloud.com/kk-media/image/upload/v1752867247/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Certification-Details/azure-certification-roadmap-progress.jpg)
 
 ## Azure Administrator and Solutions Architect
 
@@ -29,7 +29,7 @@ The AZ-305 exam assesses your ability to design Azure solutions across several c
 
 These exam areas cover the essential topics and ensure that you are well-prepared for real-world challenges.
 
-![The image outlines the skills measured in the Exam AZ-305, including design identity, governance, monitoring solutions, data storage solutions, business continuity solutions, and infrastructure solutions, with corresponding percentage ranges.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867248/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Certification-Details/az-305-exam-skills-outline.jpg)
+![The image outlines the skills measured in the Exam AZ-305, including design identity, governance, monitoring solutions, data storage solutions, business continuity solutions, and infrastructure solutions, with corresponding percentage ranges.](https://kodekloud.com/kk-media/image/upload/v1752867248/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Certification-Details/az-305-exam-skills-outline.jpg)
 
 ## Detailed Module Breakdown
 
@@ -42,7 +42,7 @@ In this module, you will learn to design and recommend solutions for:
 * **Governance:** Establish a hierarchical structure for managing Azure resources, ensuring compliance and effective auditing.
 * **Application Access Management:** Integrate solutions for managing secrets, passwords, and application access with Azure Active Directory.
 
-![The image outlines four steps for designing identity, governance, and monitoring solutions, including logging and monitoring, authentication and authorization, governance, and application access. Each step includes a brief description of recommended solutions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867249/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Certification-Details/identity-governance-monitoring-steps.jpg)
+![The image outlines four steps for designing identity, governance, and monitoring solutions, including logging and monitoring, authentication and authorization, governance, and application access. Each step includes a brief description of recommended solutions.](https://kodekloud.com/kk-media/image/upload/v1752867249/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Certification-Details/identity-governance-monitoring-steps.jpg)
 
 > **lightbulb** In this lesson, modules 2 and 4 are combined to maintain continuity. The focus is on designing and recommending solutions rather than on the hands-on implementation approach used in the Azure Administrator course.
 
@@ -62,7 +62,7 @@ This module is subdivided into two focused areas:
 * **Backup and Disaster Recovery:** Develop strategies to ensure the continuity of compute, storage, and database services in disaster scenarios.
 * **High Availability:** Design solutions to guarantee high availability across compute, storage, and database systems.
 
-![The image is a slide titled "Design business continuity solutions" with two points: designing for backup and disaster recovery, and designing for high availability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867250/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Certification-Details/design-business-continuity-solutions.jpg)
+![The image is a slide titled "Design business continuity solutions" with two points: designing for backup and disaster recovery, and designing for high availability.](https://kodekloud.com/kk-media/image/upload/v1752867250/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Certification-Details/design-business-continuity-solutions.jpg)
 
 > **lightbulb** High availability concepts are integrated into the respective sections (compute, storage, and database) to provide a comprehensive contextual discussion.
 
@@ -75,7 +75,7 @@ In this section, focus on designing robust infrastructure solutions that include
 * **Migration:** Recommend the best migration strategies for servers, databases, and web applications.
 * **Network Solutions:** Design secure and efficient virtual network communications along with hybrid connectivity options.
 
-![The image outlines four steps in designing infrastructure solutions: compute solution, application architecture, migration, and network solutions, each with a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867251/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Certification-Details/infrastructure-design-steps-outline.jpg)
+![The image outlines four steps in designing infrastructure solutions: compute solution, application architecture, migration, and network solutions, each with a brief description.](https://kodekloud.com/kk-media/image/upload/v1752867251/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Certification-Details/infrastructure-design-steps-outline.jpg)
 
 ## Frequently Asked Questions
 
@@ -109,9 +109,9 @@ This course also provides an overview of how various Azure services align with s
 
 For data architects, additional exams such as DP-200, DP-201, DP-203, and DP-300 are available. For security-focused roles, the AZ-500 certification is recommended.
 
-![The image is a table listing Azure services alongside corresponding Microsoft certification exams, specifically AZ-104 and AZ-204.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867253/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Certification-Details/azure-services-certification-exams-table.jpg)
+![The image is a table listing Azure services alongside corresponding Microsoft certification exams, specifically AZ-104 and AZ-204.](https://kodekloud.com/kk-media/image/upload/v1752867253/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Certification-Details/azure-services-certification-exams-table.jpg)
 
-![The image is a table listing various Azure services alongside corresponding exams, such as Cosmos DB and Azure Data Factory, with exams like DP-200 and DP-201.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867254/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Certification-Details/azure-services-exams-table.jpg)
+![The image is a table listing various Azure services alongside corresponding exams, such as Cosmos DB and Azure Data Factory, with exams like DP-200 and DP-201.](https://kodekloud.com/kk-media/image/upload/v1752867254/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Certification-Details/azure-services-exams-table.jpg)
 
 For more information, you can browse additional certifications by role on the official Microsoft portal.
 
@@ -131,7 +131,7 @@ The modules in this lesson have been thoughtfully reordered to ensure a seamless
 10. Application Architecture
 11. Monitoring
 
-![The image lists various design modules related to IT solutions, including authentication, governance, network architecture, and data storage. It is branded with the KodeKloud logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867255/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Certification-Details/it-solutions-design-modules-kodekloud.jpg)
+![The image lists various design modules related to IT solutions, including authentication, governance, network architecture, and data storage. It is branded with the KodeKloud logo.](https://kodekloud.com/kk-media/image/upload/v1752867255/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Certification-Details/it-solutions-design-modules-kodekloud.jpg)
 
 Now, let’s begin with authentication and authorization. Good luck on your journey to becoming an Azure Solutions Architect!
 

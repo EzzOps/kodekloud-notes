@@ -27,7 +27,7 @@ When a packet leaves a subnet, the router:
 
 For example, given two IPv6 routes:
 
-![The image shows a "Route Tables" interface with two routes listed, each having a destination and a target labeled as "local."](../../../../images/kodekloud.com/kk-media/image/upload/v1752863321/notes-assets/images/AWS-Networking-Fundamentals-Routing-in-VPC/route-tables-interface-local-routes.jpg)
+![The image shows a "Route Tables" interface with two routes listed, each having a destination and a target labeled as "local."](https://kodekloud.com/kk-media/image/upload/v1752863321/notes-assets/images/AWS-Networking-Fundamentals-Routing-in-VPC/route-tables-interface-local-routes.jpg)
 
 * `2001:db8:abcd::/48` → local
 * `2001:db8:abcd:0012::/64` → local
@@ -43,7 +43,7 @@ By default, every route table in a VPC contains:
 
 When a VPC is created, AWS provides a **default route table**. Subnets automatically associate with this default unless you specify another.
 
-![The image illustrates a default VPC setup with public subnets in two availability zones, each associated with default route tables.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863322/notes-assets/images/AWS-Networking-Fundamentals-Routing-in-VPC/default-vpc-public-subnets-setup.jpg)
+![The image illustrates a default VPC setup with public subnets in two availability zones, each associated with default route tables.](https://kodekloud.com/kk-media/image/upload/v1752863322/notes-assets/images/AWS-Networking-Fundamentals-Routing-in-VPC/default-vpc-public-subnets-setup.jpg)
 
 You can group subnets—for instance, all public subnets—under a “public” route table that directs internet-bound traffic through an Internet Gateway. Private subnets can use a separate table routing through a NAT Gateway or other appliance.
 
@@ -59,7 +59,7 @@ You can group subnets—for instance, all public subnets—under a “public” 
 
 ## VPC Routing Overview
 
-![The image is a summary of VPC routing concepts, detailing the role of routers, interfaces, route tables, and packet forwarding processes. It includes five key points, each marked with a colorful arrow and number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863323/notes-assets/images/AWS-Networking-Fundamentals-Routing-in-VPC/vpc-routing-concepts-summary-diagram.jpg)
+![The image is a summary of VPC routing concepts, detailing the role of routers, interfaces, route tables, and packet forwarding processes. It includes five key points, each marked with a colorful arrow and number.](https://kodekloud.com/kk-media/image/upload/v1752863323/notes-assets/images/AWS-Networking-Fundamentals-Routing-in-VPC/vpc-routing-concepts-summary-diagram.jpg)
 
 1. Each VPC has an implicit router with one interface per subnet (`.1` address).
 2. Route tables define forwarding rules based on IP prefix destinations.

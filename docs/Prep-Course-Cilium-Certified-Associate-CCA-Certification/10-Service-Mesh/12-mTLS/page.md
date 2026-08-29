@@ -12,9 +12,7 @@ Cilium integrates mTLS using the SPIFFE identity framework. SPIRE is the most co
   <img alt="A slide titled &#x22;Mutual Authentication in Cilium&#x22; showing Cilium, SPIFFE, and SPIRE logos with arrows indicating Cilium uses SPIFFE and SPIFFE is implemented by SPIRE. Captions note SPIFFE is a framework for secure identity management and SPIRE is an open-source implementation." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Quick overview: Cilium performs mTLS at the node-agent level. The Cilium agent uses SPIRE-issued SPIFFE identities (SVIDs) to establish TLS sessions with other node agents. Pods are not directly involved in the certificate exchange; the node agents handle authentication on their behalf.
-</Callout>
+> **lightbulb** Quick overview: Cilium performs mTLS at the node-agent level. The Cilium agent uses SPIRE-issued SPIFFE identities (SVIDs) to establish TLS sessions with other node agents. Pods are not directly involved in the certificate exchange; the node agents handle authentication on their behalf.
 
 ## How mTLS works in a cluster
 
@@ -126,9 +124,7 @@ spec:
 
 This policy only allows TCP traffic to port 80 for pods with label app=pod2 when a mutual authentication session exists between the endpoints.
 
-<Callout icon="lightbulb">
-  Cilium agents perform the mTLS authentication on behalf of pods. Pods themselves do not exchange certificates — Cilium's TLS session managers handle authentication between node agents.
-</Callout>
+> **lightbulb** Cilium agents perform the mTLS authentication on behalf of pods. Pods themselves do not exchange certificates — Cilium's TLS session managers handle authentication between node agents.
 
 ## Observability — checking logs and debugging
 

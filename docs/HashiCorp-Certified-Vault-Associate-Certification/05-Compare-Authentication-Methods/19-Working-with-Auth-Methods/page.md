@@ -11,9 +11,7 @@ Common scenarios include:
 * **Cloud-native applications** leveraging provider-specific auth methods to eliminate embedded credentials.
 * **Legacy applications** using static credentials or external identity providers for compatibility.
 
-<Frame>
-  ![The image is a slide titled "Auth Methods," explaining the requirements and default settings for authentication methods, including the use of tokens in new Vault deployments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878044/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Working-with-Auth-Methods/auth-methods-requirements-default-settings.jpg)
-</Frame>
+![The image is a slide titled "Auth Methods," explaining the requirements and default settings for authentication methods, including the use of tokens in new Vault deployments.](https://kodekloud.com/kk-media/image/upload/v1752878044/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Working-with-Auth-Methods/auth-methods-requirements-default-settings.jpg)
 
 ## Default Token Authentication
 
@@ -30,17 +28,13 @@ Use this root token to:
 3. Configure policies and roles.
 4. Rotate, revoke, or secure the root token once setup is complete.
 
-<Callout icon="triangle-alert">
-  Keep your initial root token secure. Rotate or revoke it after adding other auth methods to follow security best practices.
-</Callout>
+> **triangle-alert** Keep your initial root token secure. Rotate or revoke it after adding other auth methods to follow security best practices.
 
 ## Enabling and Configuring Auth Backends
 
 Auth methods can be managed via the **CLI**, the **HTTP API**, or the **UI**. While the UI is improving, full feature coverage is available through the CLI and API.
 
-<Frame>
-  ![The image is a slide about "Auth Methods," explaining how they can be enabled, disabled, and configured using the UI, API, or CLI, and the need for a valid token with proper privileges.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878045/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Working-with-Auth-Methods/auth-methods-ui-api-cli-configure.jpg)
-</Frame>
+![The image is a slide about "Auth Methods," explaining how they can be enabled, disabled, and configured using the UI, API, or CLI, and the need for a valid token with proper privileges.](https://kodekloud.com/kk-media/image/upload/v1752878045/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Working-with-Auth-Methods/auth-methods-ui-api-cli-configure.jpg)
 
 To **enable** the AppRole auth method with the CLI:
 
@@ -54,9 +48,7 @@ Example output:
 Success! Enabled approle auth method at: approle/
 ```
 
-<Callout icon="lightbulb">
-  Auth methods are mounted at a specific path—by default, the path matches the method name. To use a custom path, first disable the method, then re-enable it with the `-path` flag.
-</Callout>
+> **lightbulb** Auth methods are mounted at a specific path—by default, the path matches the method name. To use a custom path, first disable the method, then re-enable it with the `-path` flag.
 
 ### Custom Mount Path Example
 
@@ -95,6 +87,4 @@ After mounting an auth method, configure its **roles**, **policies**, and **sett
 * [Vault CLI Commands](https://www.vaultproject.io/docs/commands/auth)
 * [HashiCorp Vault Overview](https://www.vaultproject.io/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/505bcc23-aab5-494e-845c-c18149f519e3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/505bcc23-aab5-494e-845c-c18149f519e3)

@@ -55,9 +55,7 @@ Even though the `purpose` value is `test` (not `production`), the label operatio
   <img alt="The image shows a terminal output involving Kubernetes commands related to creating namespaces and applying specific labels with policies enforced by Kyverno. An error occurs when trying to create a namespace without the required &#x22;purpose&#x22; label set to &#x22;production.&#x22;" />
 </Frame>
 
-<Callout icon="lightbulb">
-  By default `allowExistingViolations: true` allows updates to resources that were non-compliant before the policy was added. This prevents sudden disruptions to an existing cluster.
-</Callout>
+> **lightbulb** By default `allowExistingViolations: true` allows updates to resources that were non-compliant before the policy was added. This prevents sudden disruptions to an existing cluster.
 
 ***
 
@@ -245,11 +243,9 @@ Summary
 * failureAction: Audit — allows the resource but records violations in ClusterPolicyReport objects.
 * emitWarning: true — with audit mode, returns a warning to the user in the terminal while still allowing the operation.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/ce743890-6f21-443d-9c32-590528a2b07a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/ce743890-6f21-443d-9c32-590528a2b07a)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/3475ed49-e9d2-4fce-bd2f-86278448eb51" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/3475ed49-e9d2-4fce-bd2f-86278448eb51)
 
 
 # Demo ForEach
@@ -311,9 +307,7 @@ Policy explanation
 * Each `pattern` is applied to each `element` in the corresponding list; the `image` field must match `trusted-registry.io/*` (the wildcard allows any image path under that registry).
 * If any container or initContainer has an image that does not match the pattern, the rule will fail and the Pod will be rejected.
 
-<Callout icon="lightbulb">
-  Using multiple `foreach` entries inside a single rule lets you validate different repeated fields (like `initContainers` and `containers`) without writing separate rules.
-</Callout>
+> **lightbulb** Using multiple `foreach` entries inside a single rule lets you validate different repeated fields (like `initContainers` and `containers`) without writing separate rules.
 
 Apply the policy
 

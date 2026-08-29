@@ -32,11 +32,9 @@ Now that you’ve created image variations, consider exploring other OpenAI offe
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/ad3893f7-fba6-4142-a575-422006496a97/lesson/0818deaa-36b0-45ad-aa21-aa04378587c7" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/ad3893f7-fba6-4142-a575-422006496a97/lesson/0818deaa-36b0-45ad-aa21-aa04378587c7)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/ad3893f7-fba6-4142-a575-422006496a97/lesson/641a7dc4-14a0-4bb9-b755-657b3fca56b6" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/ad3893f7-fba6-4142-a575-422006496a97/lesson/641a7dc4-14a0-4bb9-b755-657b3fca56b6)
 
 
 # Overview of DALL E 2
@@ -52,9 +50,7 @@ DALL-E 2 is OpenAI’s advanced text-to-image foundation model, designed to gene
 
 The model processes your input and returns one or more fully generated images, offering endless possibilities for design, prototyping, and creative exploration.
 
-<Frame>
-  ![The image is a diagram illustrating the DALL-E 2 Foundation Model, showing input as text and images leading to the model, which then outputs images.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881508/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Overview-of-DALL-E-2/dall-e-2-foundation-model-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating the DALL-E 2 Foundation Model, showing input as text and images leading to the model, which then outputs images.](https://kodekloud.com/kk-media/image/upload/v1752881508/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Overview-of-DALL-E-2/dall-e-2-foundation-model-diagram.jpg)
 
 ## Key DALL-E 2 APIs
 
@@ -66,9 +62,7 @@ DALL-E 2 provides three core RESTful endpoints for image creation and manipulati
 | Image Editing    | Edit or extend an existing image by applying a mask and text prompt to specify changes.    | Photo retouching, add/remove objects        |
 | Image Variation  | Produce multiple stylistic variations of a source image without any additional text input. | Branding explorations, style testing        |
 
-<Frame>
-  ![The image outlines three key APIs: Image Generation, Image Editing, and Image Variation, with a brief description of the Image Editing API's functionality.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881509/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Overview-of-DALL-E-2/image-generation-editing-variation-apis.jpg)
-</Frame>
+![The image outlines three key APIs: Image Generation, Image Editing, and Image Variation, with a brief description of the Image Editing API's functionality.](https://kodekloud.com/kk-media/image/upload/v1752881509/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Overview-of-DALL-E-2/image-generation-editing-variation-apis.jpg)
 
 ### 1. Image Generation
 
@@ -108,9 +102,7 @@ response = client.images.edit(
 print(response.data[0].url)
 ```
 
-<Callout icon="triangle-alert">
-  Ensure your mask file aligns exactly with the dimensions of the source image. Mismatched sizes will result in API errors.
-</Callout>
+> **triangle-alert** Ensure your mask file aligns exactly with the dimensions of the source image. Mismatched sizes will result in API errors.
 
 ### 3. Image Variation
 
@@ -127,13 +119,9 @@ for img in response.data:
     print(img.url)
 ```
 
-<Callout icon="lightbulb">
-  DALL-E 2 supports three output resolutions: **256×256**, **512×512**, and **1024×1024**. Square images tend to produce the best results, but feel free to experiment with other aspect ratios.
-</Callout>
+> **lightbulb** DALL-E 2 supports three output resolutions: **256×256**, **512×512**, and **1024×1024**. Square images tend to produce the best results, but feel free to experiment with other aspect ratios.
 
-<Frame>
-  ![The image describes three key APIs: Image Generation, Image Editing, and Image Variation, with a note that Image Variation generates multiple variations of the same image in different sizes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881510/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Overview-of-DALL-E-2/image-generation-editing-variation-apis-2.jpg)
-</Frame>
+![The image describes three key APIs: Image Generation, Image Editing, and Image Variation, with a note that Image Variation generates multiple variations of the same image in different sizes.](https://kodekloud.com/kk-media/image/upload/v1752881510/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Overview-of-DALL-E-2/image-generation-editing-variation-apis-2.jpg)
 
 Remember, generative image models incorporate a degree of creative randomness. Iterating your prompts—tweaking style descriptors, color palettes, or composition details—will help you achieve the perfect result.
 
@@ -151,6 +139,4 @@ In the following section, we’ll walk through a hands-on demonstration of each 
 * [GPT-3 Overview](https://openai.com/product/gpt-3)
 * [OpenAI Python Client](https://github.com/openai/openai-python)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/ad3893f7-fba6-4142-a575-422006496a97/lesson/dcf08f43-1a17-4aea-8646-cad4f746c1e2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/ad3893f7-fba6-4142-a575-422006496a97/lesson/dcf08f43-1a17-4aea-8646-cad4f746c1e2)

@@ -18,7 +18,7 @@ The feature manager orchestrates the lifecycle of feature flags. It initializes,
 
 A filter defines criteria or conditions that determine when a feature flag is enabled or disabled. These conditions could be based on factors such as user roles, geographic location, browser type, or even a percentage of the user base. For example, a filter might enable a feature for users in a specific region or only during certain hours.
 
-![The image explains three basic concepts of managing application features: Feature Flag, Feature Manager, and Filter, each with a brief description and icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866584/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Application-Features/feature-flag-manager-filter-diagram.jpg)
+![The image explains three basic concepts of managing application features: Feature Flag, Feature Manager, and Filter, each with a brief description and icon.](https://kodekloud.com/kk-media/image/upload/v1752866584/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Application-Features/feature-flag-manager-filter-diagram.jpg)
 
 ## Components for Managing Application Features
 
@@ -30,7 +30,7 @@ Effective feature management requires a number of components:
 2. **Feature Flag Repository:**\
    A dedicated repository (such as Azure App Configuration) stores the feature flags and their statuses (enabled/disabled) independently from your application code.
 
-![The image describes components for managing application features, highlighting an application using feature flags and a separate repository storing these flags and their states.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866585/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Application-Features/feature-flags-management-components.jpg)
+![The image describes components for managing application features, highlighting an application using feature flags and a separate repository storing these flags and their states.](https://kodekloud.com/kk-media/image/upload/v1752866585/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Application-Features/feature-flags-management-components.jpg)
 
 3. **App Configuration Service:**\
    This service provides a centralized location for storing feature flags, allowing real-time management of application configuration.
@@ -44,13 +44,13 @@ Feature flags are declared using two main components:
 
 When multiple filters are specified, they are evaluated sequentially. As soon as one filter condition is satisfied, the feature state is set according to your defined logic. Feature managers can also support external configuration files like `appsettings.json` to manage flags without hardcoding them.
 
-![The image describes three aspects of managing application features: feature flags have a name and filters, multiple filters are evaluated in order, and the feature manager supports appsettings.json for configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866588/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Application-Features/feature-flags-management-overview.jpg)
+![The image describes three aspects of managing application features: feature flags have a name and filters, multiple filters are evaluated in order, and the feature manager supports appsettings.json for configuration.](https://kodekloud.com/kk-media/image/upload/v1752866588/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Application-Features/feature-flags-management-overview.jpg)
 
 ## Feature Flag Repository with Azure App Configuration
 
 For optimal use of feature flags, externalizing them is crucial. Hardcoding feature flags negates the benefit of dynamic configuration. Instead, use an external system like Azure App Configuration, which facilitates centralized management across various environments and services.
 
-![The image explains managing application features using a feature flag repository, highlighting the importance of externalizing feature flags and using Azure App Configuration as a centralized repository.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866589/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Application-Features/feature-flag-repository-azure-app-config.jpg)
+![The image explains managing application features using a feature flag repository, highlighting the importance of externalizing feature flags and using Azure App Configuration as a centralized repository.](https://kodekloud.com/kk-media/image/upload/v1752866589/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Application-Features/feature-flag-repository-azure-app-config.jpg)
 
 In the Azure portal, you can configure and manage feature flags, integrate Azure App Configuration into your code, and retrieve configuration values dynamically using paired keys and values.
 
@@ -136,7 +136,7 @@ Ensure that your project file includes the necessary packages:
 
 In Azure App Configuration, create key-value pairs for your app settings (e.g., background color, font size, welcome message). The image below shows the key-value pairs in the configuration explorer:
 
-![The image shows a Microsoft Azure Configuration Explorer interface displaying key-value pairs for app configuration settings, including background color, font size, and a welcome message.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866591/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Application-Features/azure-configuration-explorer-settings.jpg)
+![The image shows a Microsoft Azure Configuration Explorer interface displaying key-value pairs for app configuration settings, including background color, font size, and a welcome message.](https://kodekloud.com/kk-media/image/upload/v1752866591/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Application-Features/azure-configuration-explorer-settings.jpg)
 
 For example, you might set the landing page background color to a specific hex code, font size as a numeric value, and a custom welcome message. Caching (set to five seconds) ensures your application retrieves the latest configurations automatically.
 
@@ -259,7 +259,7 @@ Feature flags are managed directly through the Azure portal. Follow these steps 
 2. Provide a unique name (e.g., "ShowNewUI") and optionally add a description and label.
 3. Add filters if you require targeted control, such as a time window filter for scheduling.
 
-![The image shows a Microsoft Azure portal interface for creating a new feature flag with options to set a feature name, key, and description, along with a time window filter for scheduling.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866593/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Application-Features/azure-portal-feature-flag-creation.jpg)
+![The image shows a Microsoft Azure portal interface for creating a new feature flag with options to set a feature name, key, and description, along with a time window filter for scheduling.](https://kodekloud.com/kk-media/image/upload/v1752866593/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Application-Features/azure-portal-feature-flag-creation.jpg)
 
 After configuring the feature flag in the portal, update your application code to incorporate feature management.
 
@@ -342,7 +342,7 @@ Ensure your project file includes the appropriate packages:
 
 In the HomeController (as shown earlier), default configuration values are overridden when the "ShowNewUI" feature flag is enabled. Activating this flag in the Azure portal will update your application UI dynamically, while disabling the flag will revert to the default configuration.
 
-![The image shows the Microsoft Azure portal's Feature Manager interface, displaying a feature flag named "ShowNewUI" that is currently disabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866595/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Application-Features/azure-portal-feature-manager-shownewui.jpg)
+![The image shows the Microsoft Azure portal's Feature Manager interface, displaying a feature flag named "ShowNewUI" that is currently disabled.](https://kodekloud.com/kk-media/image/upload/v1752866595/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Application-Features/azure-portal-feature-manager-shownewui.jpg)
 
 Run your application to see the changes. Refreshing the page will reflect any new configuration based on the active feature flags.
 

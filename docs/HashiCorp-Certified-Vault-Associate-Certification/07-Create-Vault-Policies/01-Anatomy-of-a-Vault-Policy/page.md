@@ -23,10 +23,8 @@ path "<another-path>" {
 }
 ```
 
-<Callout icon="lightbulb">
-  Path patterns support wildcards (`*`, `?`) and must match the Vault mount and engine.\
+> **lightbulb** Path patterns support wildcards (`*`, `?`) and must match the Vault mount and engine.\
   For details, see the [Vault Policy Rules](https://www.vaultproject.io/docs/concepts/policies) documentation.
-</Callout>
 
 ## Common Capabilities
 
@@ -68,9 +66,7 @@ path "aws/creds/web-app" {
 * **aws/creds/web-app**\
   Permits `read` access to dynamic AWS credentials from the `web-app` role in the AWS Secrets Engine.
 
-<Callout icon="triangle-alert">
-  Overly broad path patterns (e.g., `*`) can expose more resources than intended. Always validate wildcard usage to avoid privilege escalation.
-</Callout>
+> **triangle-alert** Overly broad path patterns (e.g., `*`) can expose more resources than intended. Always validate wildcard usage to avoid privilege escalation.
 
 By composing targeted rules, Vault policies help you grant only the permissions required for each team or application, adhering to security best practices.
 
@@ -80,6 +76,4 @@ By composing targeted rules, Vault policies help you grant only the permissions 
 * [KV Secrets Engine](https://www.vaultproject.io/docs/secrets/kv)
 * [AWS Secrets Engine](https://www.vaultproject.io/docs/secrets/aws)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/582cbe44-54fe-4ede-bcd6-16b8d736ab93" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/582cbe44-54fe-4ede-bcd6-16b8d736ab93)

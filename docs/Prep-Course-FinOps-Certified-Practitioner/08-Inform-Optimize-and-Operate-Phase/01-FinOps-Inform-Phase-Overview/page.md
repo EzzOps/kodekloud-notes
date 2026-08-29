@@ -99,9 +99,7 @@ Bottom line
 
 The Inform phase is about measurement and clarity—not perfection. Collect broad metrics, then iterate: refine tagging, reporting standards, and allocation rules so the data becomes progressively more accurate and actionable. Good FinOps begins with visibility, then builds governance and processes that enable continuous optimization.
 
-<Callout icon="lightbulb">
-  Measure broadly and iteratively: initial measurements may be imperfect, but they are essential to enable optimization and accountability.
-</Callout>
+> **lightbulb** Measure broadly and iteratively: initial measurements may be imperfect, but they are essential to enable optimization and accountability.
 
 What’s next
 
@@ -115,6 +113,4 @@ Links and references
 * [CloudHealth by VMware](https://www.vmware.com/products/cloudhealth.html) — multi-cloud cost management platform
 * [CloudCheckr](https://www.cloudcheckr.com/) — cloud cost, security, and compliance tooling
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/5dec4577-7276-4a7a-8040-c172cd00f341/lesson/afcf443f-48f5-4ccc-948e-7388835c2b4e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/5dec4577-7276-4a7a-8040-c172cd00f341/lesson/afcf443f-48f5-4ccc-948e-7388835c2b4e)

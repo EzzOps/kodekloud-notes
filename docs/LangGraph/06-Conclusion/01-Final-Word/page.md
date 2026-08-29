@@ -29,9 +29,7 @@ Best practices for reliable time travel
 * Validate restored state before resuming execution to avoid propagating unexpected values.
 * Limit checkpoint frequency for performance-sensitive graphs and increase it for critical checkpoints.
 
-<Callout icon="lightbulb">
-  Enable persistence (checkpointing) in production and tag critical steps so snapshots are meaningful and reproducible.
-</Callout>
+> **lightbulb** Enable persistence (checkpointing) in production and tag critical steps so snapshots are meaningful and reproducible.
 
 <Frame>
   <img alt="The image outlines best practices for time travel, emphasizing validating integrity before resuming, enabling persistent sessions in production, and tagging important checkpoints." />
@@ -49,9 +47,7 @@ Time travel improves resilience and developer productivity in LangGraph by letti
   <img alt="The image lists two takeaways: Time travel enhances LangGraph's fault tolerance and developer-friendliness, and it allows re-running workflow parts to explore alternate paths." />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/74df2352-cf65-40d3-a3c3-70fdfb767635/lesson/0fd7dd32-af2b-4937-9e7f-52ae07d707cc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/74df2352-cf65-40d3-a3c3-70fdfb767635/lesson/0fd7dd32-af2b-4937-9e7f-52ae07d707cc)
 
 
 # Final Word
@@ -86,9 +82,7 @@ Key practical skills you now have:
 
 LangGraph is more than a library — it’s a growing ecosystem and a community shaping the future of agentic applications. Share what you build, contribute to open-source components, document your lessons, and participate in discussions. Collaboration accelerates improvement and helps surface better patterns for the whole community.
 
-<Callout icon="lightbulb">
-  Share your work, open-source components, and lessons learned. Community feedback and collaboration accelerate progress for everyone.
-</Callout>
+> **lightbulb** Share your work, open-source components, and lessons learned. Community feedback and collaboration accelerate progress for everyone.
 
 <Frame>
   <img alt="The image shows a world map with multiple user icons placed across different continents, indicating a global community presence, alongside the text &#x22;You're Part of the LangGraph Community.&#x22;" />
@@ -106,6 +100,4 @@ Next steps and resources
 
 On behalf of the entire team, thank you. We hope you walk away with a refreshed way of thinking about software, agents, and intelligence. Stay curious, keep building, and we look forward to seeing what you create.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/fba2d122-092f-42c8-bc27-0955ffaf786b/lesson/f29ba7ed-6610-40f6-b467-f8f7a3f0991a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/fba2d122-092f-42c8-bc27-0955ffaf786b/lesson/f29ba7ed-6610-40f6-b467-f8f7a3f0991a)

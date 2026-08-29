@@ -32,16 +32,12 @@ Understanding the container lifecycle is crucial for troubleshooting these issue
 2. **Container Configuration**\
    Kubernetes creates the container configuration by setting environment variables, command arguments, resource limits, volume mounts, network settings, security contexts, and more.
 
-<Callout icon="lightbulb">
-  A CreateContainerConfigError is raised if required configurations (such as a referenced Secret or ConfigMap) are missing.
-</Callout>
+> **lightbulb** A CreateContainerConfigError is raised if required configurations (such as a referenced Secret or ConfigMap) are missing.
 
 3. **Container Creation**\
    The container runtime (e.g., containerd or Docker) creates the container using the pulled image. This involves establishing the filesystem and Linux namespaces.
 
-<Callout icon="triangle-alert">
-  A CreateContainerError is typically due to issues encountered by the container runtime while setting up the container.
-</Callout>
+> **triangle-alert** A CreateContainerError is typically due to issues encountered by the container runtime while setting up the container.
 
 4. **Container Start**\
    Finally, the container's process starts by executing the defined command or entry point. Errors occurring at this stage are often referred to as run container errors, signaling problems with the process startup.

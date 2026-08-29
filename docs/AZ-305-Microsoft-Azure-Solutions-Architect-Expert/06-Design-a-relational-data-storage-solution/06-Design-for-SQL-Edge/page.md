@@ -56,7 +56,7 @@ SQL Edge leverages a powerful streaming engine at its core to manage and transfo
 4. The stored data supports more advanced analysis, including the creation of machine learning models.
 5. Finally, the ingested data is synchronized with external services such as Cosmos DB, SQL Database, and SQL Managed Instance.
 
-![The image is a diagram illustrating the design for SQL Edge, showing the flow from IoT devices through ingestion, processing, and analysis using Azure SQL Edge, with machine learning and data exchange components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867169/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-SQL-Edge/sql-edge-iot-flow-diagram.jpg)
+![The image is a diagram illustrating the design for SQL Edge, showing the flow from IoT devices through ingestion, processing, and analysis using Azure SQL Edge, with machine learning and data exchange components.](https://kodekloud.com/kk-media/image/upload/v1752867169/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-SQL-Edge/sql-edge-iot-flow-diagram.jpg)
 
 This diagram effectively represents the overall working architecture of SQL Edge. It visualizes how data from IoT devices is captured, processed, and then exchanged with external databases or analytical platforms.
 

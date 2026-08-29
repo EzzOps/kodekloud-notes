@@ -18,7 +18,7 @@ Migrating your Azure Pipelines definitions from the Classic Editor to YAML unloc
 
 Before you begin, review and document every aspect of your existing Classic Pipeline:
 
-![The image is a "Pre-Migration Checklist" with four steps: reviewing existing pipeline features, identifying scripts and environment variables, checking for unsupported tasks, and planning for testing the YAML pipeline. There's also an icon of a checklist and pencil.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868134/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Migrate-a-pipeline-from-classic-to-YAML-in-Azure-Pipelines/pre-migration-checklist-four-steps.jpg)
+![The image is a "Pre-Migration Checklist" with four steps: reviewing existing pipeline features, identifying scripts and environment variables, checking for unsupported tasks, and planning for testing the YAML pipeline. There's also an icon of a checklist and pencil.](https://kodekloud.com/kk-media/image/upload/v1752868134/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Migrate-a-pipeline-from-classic-to-YAML-in-Azure-Pipelines/pre-migration-checklist-four-steps.jpg)
 
 | Task                                    | Description                                                                              |
 | --------------------------------------- | ---------------------------------------------------------------------------------------- |
@@ -100,7 +100,7 @@ steps:
 
 > **lightbulb** Use the **Validate** feature in the Azure Pipelines UI to catch syntax errors before running the pipeline.
 
-![The image illustrates a step-by-step migration process for validating and testing a YAML pipeline, showing a menu selection for "Validate" and a confirmation that the pipeline is valid, followed by a "Run" option.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868136/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Migrate-a-pipeline-from-classic-to-YAML-in-Azure-Pipelines/yaml-pipeline-migration-validation-testing.jpg)
+![The image illustrates a step-by-step migration process for validating and testing a YAML pipeline, showing a menu selection for "Validate" and a confirmation that the pipeline is valid, followed by a "Run" option.](https://kodekloud.com/kk-media/image/upload/v1752868136/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Migrate-a-pipeline-from-classic-to-YAML-in-Azure-Pipelines/yaml-pipeline-migration-validation-testing.jpg)
 
 Iterate on your YAML until it passes validation and your test runs succeed. Repeat for each Classic task to fully migrate your build or release pipeline.
 
@@ -114,7 +114,7 @@ Migrating real-world pipelines often surfaces these challenges:
 | Unsupported or custom tasks | Explore the [Azure DevOps Marketplace](https://marketplace.visualstudio.com/) for community extensions       |
 | Complex multi-stage flows   | Leverage YAML templates, parameters, and `extends` syntax for modular pipelines                              |
 
-![The image outlines common challenges and solutions in software development, including managing secrets, handling complex deployments, ensuring CI/CD best practices, and dealing with unsupported tasks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868137/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Migrate-a-pipeline-from-classic-to-YAML-in-Azure-Pipelines/software-development-challenges-solutions.jpg)
+![The image outlines common challenges and solutions in software development, including managing secrets, handling complex deployments, ensuring CI/CD best practices, and dealing with unsupported tasks.](https://kodekloud.com/kk-media/image/upload/v1752868137/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Migrate-a-pipeline-from-classic-to-YAML-in-Azure-Pipelines/software-development-challenges-solutions.jpg)
 
 ## Best Practices
 
@@ -123,7 +123,7 @@ Migrating real-world pipelines often surfaces these challenges:
 * Use templates and reusable modules for consistency
 * Document pipeline changes via pull requests
 
-![The image is a diagram titled "Best Practices," highlighting two key points: reviewing steps in migrating to YAML and emphasizing the importance of testing and iteration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868139/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Migrate-a-pipeline-from-classic-to-YAML-in-Azure-Pipelines/best-practices-yaml-migration-diagram.jpg)
+![The image is a diagram titled "Best Practices," highlighting two key points: reviewing steps in migrating to YAML and emphasizing the importance of testing and iteration.](https://kodekloud.com/kk-media/image/upload/v1752868139/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Migrate-a-pipeline-from-classic-to-YAML-in-Azure-Pipelines/best-practices-yaml-migration-diagram.jpg)
 
 ## References
 

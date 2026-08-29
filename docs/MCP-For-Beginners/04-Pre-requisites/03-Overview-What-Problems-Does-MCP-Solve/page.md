@@ -49,9 +49,7 @@ MCP provides a standardized data‑exchange protocol and a common interface for 
 
 MCP also supports two‑way communication: models can retrieve information and trigger actions (for example, query sales data then initiate a workflow), enabling models to act as active agents.
 
-<Callout icon="lightbulb">
-  Developer simplicity is a core benefit: write an integration for MCP once, then reuse it across models and clients.
-</Callout>
+> **lightbulb** Developer simplicity is a core benefit: write an integration for MCP once, then reuse it across models and clients.
 
 ## Problems vs. MCP advantages
 
@@ -70,9 +68,7 @@ MCP supports flexible deployment models tailored to trust and privacy needs:
 * Local‑first MCP servers: data can remain on a user’s device (laptop, phone) unless explicitly shared — ideal for privacy‑sensitive workflows.
 * Remote MCP modules: run in trusted remote environments when centralized access or compute is required.
 
-<Callout icon="warning">
-  Be deliberate about trust boundaries: local MCP servers keep data on the device, while remote MCP endpoints may require explicit data sharing and authorization. Design your deployment model to match your security and compliance requirements.
-</Callout>
+> **warning** Be deliberate about trust boundaries: local MCP servers keep data on the device, while remote MCP endpoints may require explicit data sharing and authorization. Design your deployment model to match your security and compliance requirements.
 
 ## Developer experience
 
@@ -131,6 +127,4 @@ This lesson includes practical examples and follow‑up modules showing how to i
 
 (Use these references to explore deployment choices, adapter design patterns, and how to secure MCP endpoints in production.)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/ef6da233-05e8-4813-b17a-52f829e130f1/lesson/38e7f67e-6da6-4055-b00f-a3015d0ac76b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/ef6da233-05e8-4813-b17a-52f829e130f1/lesson/38e7f67e-6da6-4055-b00f-a3015d0ac76b)

@@ -19,9 +19,7 @@ The given "for_each" argument value is unsuitable: "for_each" supports maps and 
 
 This error occurs because the nested `for` expression produced a list that contains inner lists. `flatten()` converts a nested list into a single flat list, which `toset()` can then convert into a set of strings acceptable to `for_each`.
 
-<Callout icon="warning">
-  If you produce nested lists, call `flatten()` before `toset()` when using `for_each`. Otherwise Terraform will complain that the argument type is not a set of strings.
-</Callout>
+> **warning** If you produce nested lists, call `flatten()` before `toset()` when using `for_each`. Otherwise Terraform will complain that the argument type is not a set of strings.
 
 Plan output and environment overrides
 
@@ -81,11 +79,9 @@ Links and references
 * [Terraform for Expressions](https://www.terraform.io/docs/language/expressions/for.html)
 * [Azure Provider (azurerm) Documentation](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/fb5019bb-df21-4583-818e-6dae40fde2ec/lesson/fda91ce8-39e6-4206-b1bb-9491f1b1753e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/fb5019bb-df21-4583-818e-6dae40fde2ec/lesson/fda91ce8-39e6-4206-b1bb-9491f1b1753e)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/fb5019bb-df21-4583-818e-6dae40fde2ec/lesson/5e9c2799-c739-4d2a-a547-bca4eebb7eee" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/fb5019bb-df21-4583-818e-6dae40fde2ec/lesson/5e9c2799-c739-4d2a-a547-bca4eebb7eee)
 
 
 # Introduction
@@ -108,9 +104,7 @@ In this lesson we'll explore how Terraform handles repetition and decision-makin
 
 All of these patterns let your configurations adapt programmatically, reducing repetition and making modules easier to maintain and evolve.
 
-<Callout icon="lightbulb">
-  Use `count` when you need simple repetition of identical resources. Prefer `for_each` for collections where each instance needs a stable address or when keys/identities matter for the Terraform state.
-</Callout>
+> **lightbulb** Use `count` when you need simple repetition of identical resources. Prefer `for_each` for collections where each instance needs a stable address or when keys/identities matter for the Terraform state.
 
 ## Quick overview: when to use each pattern
 
@@ -129,9 +123,7 @@ All of these patterns let your configurations adapt programmatically, reducing r
 4. `for` expressions — reshaping data for use in resources.
 5. Conditional expressions — gating resources and settings by environment or flags.
 
-<Callout icon="warning">
-  Changing between `count` and `for_each` (or changing keys used by `for_each`) can force Terraform to recreate resources. Test changes in a safe environment and plan before apply to avoid unexpected replacements.
-</Callout>
+> **warning** Changing between `count` and `for_each` (or changing keys used by `for_each`) can force Terraform to recreate resources. Test changes in a safe environment and plan before apply to avoid unexpected replacements.
 
 ## Links and references
 
@@ -142,6 +134,4 @@ All of these patterns let your configurations adapt programmatically, reducing r
 
 These topics will help you write Terraform configurations that are both concise and resilient as your infrastructure grows.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/fb5019bb-df21-4583-818e-6dae40fde2ec/lesson/ee652b86-0e33-48f1-bea5-f99104adddd3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/fb5019bb-df21-4583-818e-6dae40fde2ec/lesson/ee652b86-0e33-48f1-bea5-f99104adddd3)

@@ -7,11 +7,9 @@ kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/v3.1.5/manifests/ha/install.yaml
 ```
 
-<Callout icon="lightbulb">
-  Choose the non-HA manifest for single-node or local clusters (quickstart). Use
+> **lightbulb** Choose the non-HA manifest for single-node or local clusters (quickstart). Use
   the HA manifest for production-grade deployments that require multiple
   replicas and higher availability.
-</Callout>
 
 ## Example environment and initial cluster state
 
@@ -130,10 +128,8 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath='{.data.pas
 # prints the initial admin password
 ```
 
-<Callout icon="lightbulb">
-  On macOS the base64 CLI flag may differ—if `--decode` doesn't work try `base64
+> **lightbulb** On macOS the base64 CLI flag may differ—if `--decode` doesn't work try `base64
       -D`.
-</Callout>
 
 If your installation uses a different secret name or structure, list secrets and inspect the relevant secret:
 
@@ -182,11 +178,9 @@ left."
 * [Argo Project GitHub Release Manifests](https://github.com/argoproj/argo-cd/tree/stable/manifests)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/aa65f38b-6b37-4190-a77c-6c724123305f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/aa65f38b-6b37-4190-a77c-6c724123305f)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/37230076-2c41-4e48-b0ce-314db9042398" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/37230076-2c41-4e48-b0ce-314db9042398)
 
 
 # Demo Create Application using UI
@@ -284,10 +278,8 @@ Example source fields in the create form:
   <img alt="A screenshot of the Argo CD web UI showing a form to create an application, with fields for Repository URL (http://localhost:50.../kk-org/capa-demos), Revision set to HEAD, and Path set to ./vanilla. The left sidebar shows navigation items like Applications, Settings, User Info, and Documentation." />
 </Frame>
 
-<Callout icon="lightbulb">
-  If Argo CD is running inside a Kubernetes environment such as Docker Desktop, avoid using `localhost` in the repository URL because `localhost` inside the cluster does not point to your host machine. Use the Docker Desktop host DNS name instead, for example:
+> **lightbulb** If Argo CD is running inside a Kubernetes environment such as Docker Desktop, avoid using `localhost` in the repository URL because `localhost` inside the cluster does not point to your host machine. Use the Docker Desktop host DNS name instead, for example:
   `http://host.docker.internal:5000/kk-org/capa-demos`
-</Callout>
 
 When you create the Application with CreateNamespace enabled, Argo CD will create the `highway-animation` namespace at sync time (not when the Application resource is created).
 

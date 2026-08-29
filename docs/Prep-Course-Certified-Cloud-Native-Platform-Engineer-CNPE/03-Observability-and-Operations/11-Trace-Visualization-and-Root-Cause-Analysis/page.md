@@ -119,17 +119,13 @@ The waterfall shows where the problem is; span details show why it happened.
   <img alt="The image provides tips and tricks for using Jaeger, focusing on setting minimum duration, using tags in search, adjusting time range, and using trace compare." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Compare a slow trace with a fast trace of the same operation — the difference is often the quickest path to the root cause.
-</Callout>
+> **lightbulb** Compare a slow trace with a fast trace of the same operation — the difference is often the quickest path to the root cause.
 
 <Frame>
   <img alt="The image provides tips and tricks for using Jaeger in practice, including noting span count, looking for retries, following the critical path, and checking for gaps, all centered around a graphic of a stylized brain." />
 </Frame>
 
-<Callout icon="warning">
-  If spans are missing (gaps), don’t assume the slow child is the cause — the uninstrumented interval might be the true source. Add instrumentation before concluding.
-</Callout>
+> **warning** If spans are missing (gaps), don’t assume the slow child is the cause — the uninstrumented interval might be the true source. Add instrumentation before concluding.
 
 ## Quick checklist for live triage
 
@@ -152,6 +148,4 @@ The waterfall shows where the problem is; span details show why it happened.
 * OpenTelemetry: [https://opentelemetry.io/](https://opentelemetry.io/)
 * Distributed tracing best practices: [https://opentelemetry.io/docs/concepts/best-practices/](https://opentelemetry.io/docs/concepts/best-practices/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/1b7e7dc8-f5b0-4683-b739-8aa9d0a7ebc1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/1b7e7dc8-f5b0-4683-b739-8aa9d0a7ebc1)

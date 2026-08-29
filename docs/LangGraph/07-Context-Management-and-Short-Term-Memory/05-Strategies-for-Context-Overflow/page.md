@@ -133,9 +133,7 @@ After several exchanges, trigger summarization. Older messages are compressed in
 * Tune the summarization prompt to preserve facts, decisions, and action items.
 * Use observability tools (LangGraph Studio / [LangSmith](https://learn.kodekloud.com/user/courses/langsmith)) to inspect state evolution and verify critical facts are retained.
 
-<Callout icon="lightbulb">
-  Always test by printing or inspecting the state after each node to ensure summaries preserve key facts and that retained recent messages provide the necessary context for correct responses.
-</Callout>
+> **lightbulb** Always test by printing or inspecting the state after each node to ensure summaries preserve key facts and that retained recent messages provide the necessary context for correct responses.
 
 ## Why this pattern matters
 
@@ -145,9 +143,7 @@ Treat summarization as a first-class architectural component. By modeling memory
   <img alt="The image lists four takeaways focused on smart state management, performance in long conversations, lightweight graph design, and improving model accuracy and user engagement." />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/e69446b9-3d1f-444b-bb90-d153546aa669" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/e69446b9-3d1f-444b-bb90-d153546aa669)
 
 
 # Strategies for Context Overflow
@@ -188,9 +184,7 @@ Many conversations are driven by the most recent user and assistant exchanges. F
   <img alt="The image shows a mobile phone displaying a chat interface, accompanied by a strategy for prioritizing recent turns by truncating older history to focus on the current goal, with tasks like summarizing, translating, and responding to a prompt." />
 </Frame>
 
-<Callout icon="warning">
-  When truncating, never discard persistent system instructions, user preferences, or critical configuration the assistant relies on. Losing these can break correctness even if recent turns remain intact.
-</Callout>
+> **warning** When truncating, never discard persistent system instructions, user preferences, or critical configuration the assistant relies on. Losing these can break correctness even if recent turns remain intact.
 
 ## 2) Summarize or compress older exchanges
 
@@ -207,9 +201,7 @@ Instead of preserving every earlier message verbatim, collapse groups of past me
   <img alt="The image shows a smartphone displaying a chat interface with a prompt summarizing user preferences for trip advice, emphasizing a warm climate and avoiding crowds." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Store concise user preferences and persistent facts as structured summaries so they can be re-inserted into the prompt when needed without exhausting the token budget.
-</Callout>
+> **lightbulb** Store concise user preferences and persistent facts as structured summaries so they can be re-inserted into the prompt when needed without exhausting the token budget.
 
 ## 3) Role-based filtering
 
@@ -289,6 +281,4 @@ Context overflow is inevitable in real-world LLM apps. The goal is to design pol
 
 Like someone deciding which packages to keep on a crowded cart, choose the context you can't live without and discard or compress the rest.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/ba89c994-703e-4cf1-b8fb-adbb6560a2a9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/ba89c994-703e-4cf1-b8fb-adbb6560a2a9)

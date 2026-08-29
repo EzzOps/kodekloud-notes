@@ -23,9 +23,7 @@ The SPDX format is structured into the following sections:
 5. **File Information:** Tracks individual files within the package.
 6. **Additional Metadata:** Offers extra details like notes, licensing information, and review records to ensure the SBOM’s accuracy.
 
-<Frame>
-  ![The image outlines the ISBOM SPDX format, listing categories like Document, Package, File, License, Relationships, Snippets, Annotations, and Review Information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752871710/notes-assets/images/Certified-Kubernetes-Security-Specialist-CKS-SBOM-Format/frame_70.jpg)
-</Frame>
+![The image outlines the ISBOM SPDX format, listing categories like Document, Package, File, License, Relationships, Snippets, Annotations, and Review Information.](https://kodekloud.com/kk-media/image/upload/v1752871710/notes-assets/images/Certified-Kubernetes-Security-Specialist-CKS-SBOM-Format/frame_70.jpg)
 
 ### Example: SPDX Document for NGINX Package
 
@@ -120,9 +118,7 @@ This JSON snippet demonstrates file information for a pod namespace service file
 }
 ```
 
-<Callout icon="lightbulb">
-  This snippet records detailed metadata about the file, including file type and checksum information. License details are marked as "NOASSERTION" when no definitive information is provided.
-</Callout>
+> **lightbulb** This snippet records detailed metadata about the file, including file type and checksum information. License details are marked as "NOASSERTION" when no definitive information is provided.
 
 ***
 
@@ -187,9 +183,7 @@ The following JSON snippet illustrates a CycloneDX BOM, showcasing schema inform
 }
 ```
 
-<Callout icon="lightbulb">
-  This CycloneDX BOM snippet highlights the use of the format for documenting containerized applications, and includes metadata about tools utilized during the SBOM generation.
-</Callout>
+> **lightbulb** This CycloneDX BOM snippet highlights the use of the format for documenting containerized applications, and includes metadata about tools utilized during the SBOM generation.
 
 ***
 
@@ -203,14 +197,8 @@ Both SPDX and CycloneDX are powerful SBOM formats, each with their own set of st
 | Security Focus      | Detailed license data and compliance metrics.                                                 | Emphasizes vulnerability tracking and dependency management.                                    |
 | Ease of Use         | More complex due to extensive metadata coverage.                                              | Simpler and more focused on security and compliance.                                            |
 
-<Callout icon="triangle-alert">
-  When choosing an SBOM format, consider your focus—comprehensive legal and licensing details with SPDX versus streamlined security insights with CycloneDX.
-</Callout>
+> **triangle-alert** When choosing an SBOM format, consider your focus—comprehensive legal and licensing details with SPDX versus streamlined security insights with CycloneDX.
 
-<Frame>
-  ![The image compares SPDX and CycloneDX, highlighting differences in purpose, format types, complexity, metadata support, license information, dependency tracking, and ease of use.](../../../../images/kodekloud.com/kk-media/image/upload/v1752871711/notes-assets/images/Certified-Kubernetes-Security-Specialist-CKS-SBOM-Format/frame_290.jpg)
-</Frame>
+![The image compares SPDX and CycloneDX, highlighting differences in purpose, format types, complexity, metadata support, license information, dependency tracking, and ease of use.](https://kodekloud.com/kk-media/image/upload/v1752871711/notes-assets/images/Certified-Kubernetes-Security-Specialist-CKS-SBOM-Format/frame_290.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-kubernetes-security-specialist-cks/module/e4511664-185f-4204-9aa2-b4250cbadf84/lesson/17cd35eb-5adc-4732-8814-4037bfe61761" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-kubernetes-security-specialist-cks/module/e4511664-185f-4204-9aa2-b4250cbadf84/lesson/17cd35eb-5adc-4732-8814-4037bfe61761)

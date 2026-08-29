@@ -27,9 +27,7 @@ SELECT * FROM products;
 
 The first statement deletes the row with the specified ID, and the second statement retrieves the remaining products so you can verify that the deletion was successful.
 
-<Callout icon="lightbulb">
-  Always use a unique identifier when deleting records to avoid accidentally removing multiple rows.
-</Callout>
+> **lightbulb** Always use a unique identifier when deleting records to avoid accidentally removing multiple rows.
 
 ## Handling Non-Existent Rows
 
@@ -83,9 +81,7 @@ Query returned successfully in 103 msec.
 
 This output confirms that no products with an inventory of zero remain in the table.
 
-<Callout icon="lightbulb">
-  Always verify deletions by running a SELECT query after your DELETE operations to ensure that only the intended rows were removed.
-</Callout>
+> **lightbulb** Always verify deletions by running a SELECT query after your DELETE operations to ensure that only the intended rows were removed.
 
 By following these examples and explanations, you can efficiently manage data deletions in your SQL database while ensuring that you receive appropriate confirmation for each operation.
 
@@ -96,6 +92,4 @@ By following these examples and explanations, you can efficiently manage data de
 
 This comprehensive approach not only secures your database operations but also aligns with best practices in SQL data management.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/3e06bef3-5868-4d18-960f-ad8f836e2400" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/3e06bef3-5868-4d18-960f-ad8f836e2400)

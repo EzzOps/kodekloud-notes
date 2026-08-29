@@ -58,9 +58,7 @@ user1@control-plane:~$ kubectl apply -f egress-gateway.yaml
 ciliumegressgatewaypolicy.cilium.io/egress-example created
 ```
 
-<Callout icon="warning">
-  When authoring CiliumEgressGatewayPolicy YAML, always quote label values (for example: egress: "true") so they are treated as strings. Also ensure your Cilium version supports the egress gateway feature and that kubeProxyReplacement and bpf.masquerade are enabled.
-</Callout>
+> **warning** When authoring CiliumEgressGatewayPolicy YAML, always quote label values (for example: egress: "true") so they are treated as strings. Also ensure your Cilium version supports the egress gateway feature and that kubeProxyReplacement and bpf.masquerade are enabled.
 
 Verify Cilium BPF egress entries
 
@@ -175,11 +173,9 @@ If you'd like, I can also provide:
 * Steps to configure multiple egress nodes with failover,
 * Commands to inspect Cilium policy state and logs for troubleshooting.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/39bdf5f3-64a6-4e1d-8ac6-4484d992500a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/39bdf5f3-64a6-4e1d-8ac6-4484d992500a)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/1464469f-605c-4a8e-96da-a3b305e041cb" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/1464469f-605c-4a8e-96da-a3b305e041cb)
 
 
 # Demo L2 Announcement
@@ -240,9 +236,7 @@ helm upgrade cilium ./cilium \
   --set k8sServicePort=${API_SERVER_PORT}
 ```
 
-<Callout icon="lightbulb">
-  When enabling kube-proxy replacement, provide the API server host and port (k8sServiceHost and k8sServicePort) so Cilium can reach the Kubernetes API. You can also edit the chart values file and set these keys before installing via Helm.
-</Callout>
+> **lightbulb** When enabling kube-proxy replacement, provide the API server host and port (k8sServiceHost and k8sServicePort) so Cilium can reach the Kubernetes API. You can also edit the chart values file and set these keys before installing via Helm.
 
 A good workflow is to fetch the default chart values, edit them, and then install:
 

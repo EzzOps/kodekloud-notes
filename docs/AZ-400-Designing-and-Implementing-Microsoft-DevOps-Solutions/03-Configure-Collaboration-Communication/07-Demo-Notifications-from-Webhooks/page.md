@@ -29,7 +29,7 @@ Our project **TestWeb** hosts an ASP.NET Web API pipeline also named **TestWeb**
 2. Click **Service Hooks**.
 3. Choose **+ Create subscription**.
 
-![The image shows a web interface for Azure DevOps, specifically the "Service Hooks" settings page, with a dialog box open for selecting a service to integrate with, such as "App Center."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867445/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Notifications-from-Webhooks/azure-devops-service-hooks-settings-dialog.jpg)
+![The image shows a web interface for Azure DevOps, specifically the "Service Hooks" settings page, with a dialog box open for selecting a service to integrate with, such as "App Center."](https://kodekloud.com/kk-media/image/upload/v1752867445/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Notifications-from-Webhooks/azure-devops-service-hooks-settings-dialog.jpg)
 
 ### 2. Choose the Webhooks Service
 
@@ -43,13 +43,13 @@ Our project **TestWeb** hosts an ASP.NET Web API pipeline also named **TestWeb**
 3. Restrict **Build status** to **Succeeded**.
 4. Click **Next**.
 
-![The image shows a web interface for configuring service hooks in a project setting, with a focus on setting a trigger for a "Build completed" event.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867446/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Notifications-from-Webhooks/service-hooks-web-interface-build-trigger.jpg)
+![The image shows a web interface for configuring service hooks in a project setting, with a focus on setting a trigger for a "Build completed" event.](https://kodekloud.com/kk-media/image/upload/v1752867446/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Notifications-from-Webhooks/service-hooks-web-interface-build-trigger.jpg)
 
 ### 4. Define the Webhook Endpoint
 
 You can deliver to any HTTP(S) URL—public or private. For this demo, we’ll use [RequestBin](https://requestbin.com/) to capture and inspect the payload.
 
-![The image shows a web interface for configuring service hooks in Azure DevOps, with a dialog box open for setting up a new service hook subscription. The dialog includes fields for URL, authentication, and other settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867447/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Notifications-from-Webhooks/azure-devops-service-hooks-configuration.jpg)
+![The image shows a web interface for configuring service hooks in Azure DevOps, with a dialog box open for setting up a new service hook subscription. The dialog includes fields for URL, authentication, and other settings.](https://kodekloud.com/kk-media/image/upload/v1752867447/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Notifications-from-Webhooks/azure-devops-service-hooks-configuration.jpg)
 
 | Option                            | Description                                                  |
 | --------------------------------- | ------------------------------------------------------------ |
@@ -70,11 +70,11 @@ curl -d '{ "name": "Yoda" }' \
      https://enkmx78wgdqmb.x.pipedream.net/
 ```
 
-![The image shows a web interface for configuring a new service hook subscription in Azure DevOps, with options to post events via HTTP to a specified URL. The settings include fields for URL, SSL certificate acceptance, and basic authentication credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867448/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Notifications-from-Webhooks/azure-devops-service-hook-configuration.jpg)
+![The image shows a web interface for configuring a new service hook subscription in Azure DevOps, with options to post events via HTTP to a specified URL. The settings include fields for URL, SSL certificate acceptance, and basic authentication credentials.](https://kodekloud.com/kk-media/image/upload/v1752867448/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Notifications-from-Webhooks/azure-devops-service-hook-configuration.jpg)
 
 A successful test displays a green checkmark:
 
-![The image shows a web interface for Azure DevOps, specifically the "Service Hooks" settings page, with a notification indicating a successful test of a web hook.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867449/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Notifications-from-Webhooks/azure-devops-service-hooks-settings-webhook.jpg)
+![The image shows a web interface for Azure DevOps, specifically the "Service Hooks" settings page, with a notification indicating a successful test of a web hook.](https://kodekloud.com/kk-media/image/upload/v1752867449/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Notifications-from-Webhooks/azure-devops-service-hooks-settings-webhook.jpg)
 
 ***
 
@@ -109,7 +109,7 @@ Choose **All** for resource details and message formats to see everything Azure 
 
 Click **Finish** to save your subscription.
 
-![The image shows a web interface for Azure DevOps, specifically the "Service Hooks" settings page, displaying a configured webhook for a project.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867450/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Notifications-from-Webhooks/azure-devops-service-hooks-webhook-settings.jpg)
+![The image shows a web interface for Azure DevOps, specifically the "Service Hooks" settings page, displaying a configured webhook for a project.](https://kodekloud.com/kk-media/image/upload/v1752867450/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Notifications-from-Webhooks/azure-devops-service-hooks-webhook-settings.jpg)
 
 ## Testing the Webhook in Real Time
 
@@ -155,7 +155,7 @@ Return to **Project Settings** > **Service Hooks** at any time to:
 * Add integrations for [Microsoft Teams](https://teams.microsoft.com), [Slack](https://slack.com), [Trello](https://trello.com), and more.
 * Build multiple subscriptions for custom apps.
 
-![The image shows a settings page for service hooks in Azure DevOps, with a dialog box open for selecting a trigger event, such as "Pull request commented on."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867452/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Notifications-from-Webhooks/azure-devops-service-hooks-settings-dialog-2.jpg)
+![The image shows a settings page for service hooks in Azure DevOps, with a dialog box open for selecting a trigger event, such as "Pull request commented on."](https://kodekloud.com/kk-media/image/upload/v1752867452/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Notifications-from-Webhooks/azure-devops-service-hooks-settings-dialog-2.jpg)
 
 Webhooks in Azure DevOps unlock powerful automation scenarios—experiment with different event types and endpoints to streamline your CI/CD workflows.
 

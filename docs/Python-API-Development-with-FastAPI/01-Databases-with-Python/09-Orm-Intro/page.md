@@ -10,15 +10,11 @@ Alternatively, you can use an Object Relational Mapper (ORM). An ORM acts as an 
 
 Below is a diagram that compares traditional SQL database interaction with using an ORM in a FastAPI application:
 
-<Frame>
-  ![The image compares traditional SQL database interaction with using an Object Relational Mapper (ORM) in FastAPI. It shows how ORM uses Python and psycopg to interact with the database, simplifying the process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883386/notes-assets/images/Python-API-Development-with-FastAPI-Orm-Intro/sql-vs-orm-fastapi-diagram.jpg)
-</Frame>
+![The image compares traditional SQL database interaction with using an Object Relational Mapper (ORM) in FastAPI. It shows how ORM uses Python and psycopg to interact with the database, simplifying the process.](https://kodekloud.com/kk-media/image/upload/v1752883386/notes-assets/images/Python-API-Development-with-FastAPI-Orm-Intro/sql-vs-orm-fastapi-diagram.jpg)
 
 In the traditional setup, the FastAPI server communicates with the PostgreSQL database by sending SQL commands through the default driver. With an ORM, the application instead operates through Python-based interactions. The ORM translates these interactions into SQL, leveraging the same driver for database communication. This abstraction minimizes the direct use of complex SQL commands.
 
-<Callout icon="lightbulb">
-  One major advantage of using an ORM is the ability to define your database tables as Python models. This approach eliminates the need to manually create tables via a database management tool like PgAdmin.
-</Callout>
+> **lightbulb** One major advantage of using an ORM is the ability to define your database tables as Python models. This approach eliminates the need to manually create tables via a database management tool like PgAdmin.
 
 For instance, consider the following model that defines a table:
 
@@ -44,14 +40,8 @@ It is important to note that while ORMs provide significant conveniences, they a
 
 Below is a diagram that underscores SQLAlchemy’s role as a standalone Python ORM, highlighting its compatibility with different applications and frameworks:
 
-<Frame>
-  ![The image is a slide about SQLAlchemy, describing it as a popular Python ORM that is standalone and can be used with any Python web framework or application, without association with FastAPI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883388/notes-assets/images/Python-API-Development-with-FastAPI-Orm-Intro/sqlalchemy-python-orm-slide.jpg)
-</Frame>
+![The image is a slide about SQLAlchemy, describing it as a popular Python ORM that is standalone and can be used with any Python web framework or application, without association with FastAPI.](https://kodekloud.com/kk-media/image/upload/v1752883388/notes-assets/images/Python-API-Development-with-FastAPI-Orm-Intro/sqlalchemy-python-orm-slide.jpg)
 
-<Callout icon="lightbulb">
-  In the upcoming lesson, you'll learn how to set up a database connection using SQLAlchemy instead of the default PostgreSQL driver. This lesson will demonstrate how to integrate SQLAlchemy with a FastAPI application effectively.
-</Callout>
+> **lightbulb** In the upcoming lesson, you'll learn how to set up a database connection using SQLAlchemy instead of the default PostgreSQL driver. This lesson will demonstrate how to integrate SQLAlchemy with a FastAPI application effectively.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/20b84dc3-81d9-4072-b423-da48474cda3c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/20b84dc3-81d9-4072-b423-da48474cda3c)

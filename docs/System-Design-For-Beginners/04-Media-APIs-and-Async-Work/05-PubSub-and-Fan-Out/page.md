@@ -44,9 +44,7 @@ Summary
 
 Message queues let you safely hand off long-running or unreliable tasks, decouple producers from consumers, buffer traffic spikes, and simplify scaling and recovery. Common real-world options include [RabbitMQ](https://www.rabbitmq.com/) and [Amazon SQS](https://aws.amazon.com/sqs/). For operations with critical side effects, combine queues with idempotency checks, deduplication, or transactional outbox patterns.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/02240fc4-695f-4112-9594-bb05cfc5ca73/lesson/f88dd042-654a-4b46-9640-6d69abbe1774" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/02240fc4-695f-4112-9594-bb05cfc5ca73/lesson/f88dd042-654a-4b46-9640-6d69abbe1774)
 
 
 # PubSub and Fan Out
@@ -119,15 +117,11 @@ When to choose pub/sub
 
 Shift your mental model from “after I upload, I call A, B, and C” to “I announce that an upload happened, and interested systems subscribe and handle it independently.”
 
-<Callout icon="lightbulb">
-  Pub/Sub is ideal for decoupling and scaling many independent reactions to the same event. For simple one-off work items where exactly one worker must process the job, a queue is still the simpler and more appropriate choice.
-</Callout>
+> **lightbulb** Pub/Sub is ideal for decoupling and scaling many independent reactions to the same event. For simple one-off work items where exactly one worker must process the job, a queue is still the simpler and more appropriate choice.
 
 ## Links and references
 
 * Kafka (event streaming): [https://learn.kodekloud.com/user/courses/event-streaming-with-kafka](https://learn.kodekloud.com/user/courses/event-streaming-with-kafka)
 * Pub/Sub pattern overview: [https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe\_pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/02240fc4-695f-4112-9594-bb05cfc5ca73/lesson/14bc3bc8-5893-408f-a952-f348d262e51e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/02240fc4-695f-4112-9594-bb05cfc5ca73/lesson/14bc3bc8-5893-408f-a952-f348d262e51e)

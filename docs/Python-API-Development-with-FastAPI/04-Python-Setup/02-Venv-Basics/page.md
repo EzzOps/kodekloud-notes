@@ -15,9 +15,7 @@ Imagine you have two projects:
 
 If FastAPI were installed globally and you upgraded to version 2.4.3 for Project Two, Project One might break if version 2.4.3 lacks backward compatibility with version 1.2.1. Virtual environments solve this problem by allowing you to install packages locally, ensuring that each project has its own separate dependencies.
 
-<Callout icon="lightbulb">
-  Using virtual environments ensures that different projects can use different versions of the same package without conflicts. This isolation is crucial for maintaining stability across your projects.
-</Callout>
+> **lightbulb** Using virtual environments ensures that different projects can use different versions of the same package without conflicts. This isolation is crucial for maintaining stability across your projects.
 
 For example:
 
@@ -26,9 +24,7 @@ For example:
 
 This method keeps your projects separate and avoids any unintended version conflicts.
 
-<Frame>
-  ![The image illustrates the structure of Python virtual environments for two projects, each with its own virtual environment and version of FastAPI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883461/notes-assets/images/Python-API-Development-with-FastAPI-Venv-Basics/python-virtual-environments-fastapi.jpg)
-</Frame>
+![The image illustrates the structure of Python virtual environments for two projects, each with its own virtual environment and version of FastAPI.](https://kodekloud.com/kk-media/image/upload/v1752883461/notes-assets/images/Python-API-Development-with-FastAPI-Venv-Basics/python-virtual-environments-fastapi.jpg)
 
 Each virtual environment is completely isolated, allowing you to work on multiple projects simultaneously without worrying about shared dependencies interfering with each other.
 
@@ -62,6 +58,4 @@ Moving forward, always ensure your virtual environment is activated before insta
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/441565b9-9f18-459f-9b0b-252b1caff7b1/lesson/d4a5561d-da6c-44df-a150-d4ea3b205b31" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/441565b9-9f18-459f-9b0b-252b1caff7b1/lesson/d4a5561d-da6c-44df-a150-d4ea3b205b31)

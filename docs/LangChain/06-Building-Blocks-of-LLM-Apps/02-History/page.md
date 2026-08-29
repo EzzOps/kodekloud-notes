@@ -32,9 +32,7 @@ Practical guidance for storing and using history
   * Retrieval: Use semantic search or vector databases to surface the most relevant history items (e.g., previous answers, facts, or user preferences) instead of feeding the entire log.
 * Be mindful of context window limits. Long raw histories can exceed token limits and degrade performance; use selective truncation, summarization, or retrieval-augmented generation (RAG) patterns to scale.
 
-<Callout icon="lightbulb">
-  Persisting prompts, responses, and metadata is essential for teams that must audit, debug, or evaluate LLM interactions. A well-designed history store simplifies compliance checks and helps you reproduce or analyze model outputs over time.
-</Callout>
+> **lightbulb** Persisting prompts, responses, and metadata is essential for teams that must audit, debug, or evaluate LLM interactions. A well-designed history store simplifies compliance checks and helps you reproduce or analyze model outputs over time.
 
 To summarize the building blocks we’ve covered so far:
 
@@ -58,6 +56,4 @@ Links and references
 * [Retrieval-Augmented Generation (RAG) — overview and patterns](https://en.wikipedia.org/wiki/Retrieval-augmented_generation)
 * [Best practices for prompt engineering and history management](https://platform.openai.com/docs/guides/prompts)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/bb8afda8-9de9-4865-aabf-bc71786440b2/lesson/e76a9074-ea53-468a-8ccf-c22fb4d1758c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/bb8afda8-9de9-4865-aabf-bc71786440b2/lesson/e76a9074-ea53-468a-8ccf-c22fb4d1758c)

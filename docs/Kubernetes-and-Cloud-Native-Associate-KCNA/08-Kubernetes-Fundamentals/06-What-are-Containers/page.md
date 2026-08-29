@@ -17,21 +17,15 @@ In one project, I faced the challenge of establishing an end-to-end application 
 1. Services required specific operating system versions. Sometimes, mismatched versions meant that one service would work on an OS that another could not.
 2. Services depended on different library versions, making it difficult to find a single environment that satisfied all dependencies.
 
-<Frame>
-  ![The image explains the need for containers, showing software components like Node.js, MongoDB, and Redis, with complex dependencies on libraries and hardware infrastructure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880660/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-What-are-Containers/frame_130.jpg)
-</Frame>
+![The image explains the need for containers, showing software components like Node.js, MongoDB, and Redis, with complex dependencies on libraries and hardware infrastructure.](https://kodekloud.com/kk-media/image/upload/v1752880660/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-What-are-Containers/frame_130.jpg)
 
 Moreover, as the application evolved with upgrades and even component switches (like changing databases), each change brought new compatibility challenges, often described as the “matrix from hell.”
 
 Another significant hurdle was onboarding new developers. They had to execute a long list of manual setup instructions, ensuring that their development environments matched production exactly—resulting in inconsistencies and higher error rates.
 
-<Frame>
-  ![The image explains the need for containers, highlighting issues like compatibility, setup time, and environment differences, with a chaotic "Matrix from Hell" illustration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880661/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-What-are-Containers/frame_180.jpg)
-</Frame>
+![The image explains the need for containers, highlighting issues like compatibility, setup time, and environment differences, with a chaotic "Matrix from Hell" illustration.](https://kodekloud.com/kk-media/image/upload/v1752880661/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-What-are-Containers/frame_180.jpg)
 
-<Callout icon="lightbulb">
-  Docker solved these challenges by encapsulating each application component in its own isolated container. This isolation bundled libraries, dependencies, and a lightweight file system within each container—enabling seamless environment replication across development, testing, and production.
-</Callout>
+> **lightbulb** Docker solved these challenges by encapsulating each application component in its own isolated container. This isolation bundled libraries, dependencies, and a lightweight file system within each container—enabling seamless environment replication across development, testing, and production.
 
 With Docker, developers simply run a Docker command as long as Docker is installed, regardless of the underlying operating system.
 
@@ -39,9 +33,7 @@ With Docker, developers simply run a Docker command as long as Docker is install
 
 Containers provide isolated environments that run processes, services, network interfaces, and file system mounts—similar to virtual machines (VMs). However, unlike VMs, containers share the host’s operating system kernel.
 
-<Frame>
-  ![The image explains containers, showing a person presenting a diagram with containers having processes, network, and mounts, all running on a shared OS kernel.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880661/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-What-are-Containers/frame_290.jpg)
-</Frame>
+![The image explains containers, showing a person presenting a diagram with containers having processes, network, and mounts, all running on a shared OS kernel.](https://kodekloud.com/kk-media/image/upload/v1752880661/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-What-are-Containers/frame_290.jpg)
 
 The concept of containerization is not new. Early implementations such as LXC, LXD, and LXCFS paved the way for Docker, which popularized containers by offering an easy-to-use, high-level interface that abstracts the complexities of container management.
 
@@ -54,9 +46,7 @@ Understanding Docker’s power starts with the operating system. Consider popula
 
 Docker containers share the host’s kernel. For instance, an Ubuntu system running Docker can host containers based on Debian, Fedora, SUSE, or CentOS, as all share the same kernel. Each container includes only the additional software that sets it apart.
 
-<Frame>
-  ![A person stands in front of a diagram explaining kernel sharing with Docker, featuring software icons and an Ubuntu operating system.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880663/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-What-are-Containers/frame_400.jpg)
-</Frame>
+![A person stands in front of a diagram explaining kernel sharing with Docker, featuring software icons and an Ubuntu operating system.](https://kodekloud.com/kk-media/image/upload/v1752880663/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-What-are-Containers/frame_400.jpg)
 
 A key exception is Windows. Docker on Linux cannot run Windows-based containers due to kernel differences; for Windows containers, Docker must run on a Windows Server.
 
@@ -71,9 +61,7 @@ Understanding the distinction between containers and virtual machines (VMs) is c
 | Boot Time            | Seconds                             | Minutes                                  |
 | Isolation Level      | Shares host kernel                  | Full OS isolation                        |
 
-<Frame>
-  ![The image compares containers and virtual machines, highlighting differences in utilization, size, boot-up time, and architecture layers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880665/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-What-are-Containers/frame_550.jpg)
-</Frame>
+![The image compares containers and virtual machines, highlighting differences in utilization, size, boot-up time, and architecture layers.](https://kodekloud.com/kk-media/image/upload/v1752880665/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-What-are-Containers/frame_550.jpg)
 
 While containers require less overhead, they provide a lower level of isolation compared to VMs since they share the host's kernel.
 
@@ -99,9 +87,7 @@ It is important to differentiate between Docker images and containers:
 * A Docker image is a template containing instructions to create a container—similar to a VM template.
 * A Docker container is a running instance of that image, providing an isolated environment with its own processes and resources.
 
-<Frame>
-  ![The image explains the difference between a Docker image and Docker containers, illustrating a Docker image as a template for multiple containers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880666/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-What-are-Containers/frame_690.jpg)
-</Frame>
+![The image explains the difference between a Docker image and Docker containers, illustrating a Docker image as a template for multiple containers.](https://kodekloud.com/kk-media/image/upload/v1752880666/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-What-are-Containers/frame_690.jpg)
 
 Many popular products are “Dockerized” already. If a prebuilt image does not meet your requirements, you can create one using a Dockerfile and push it to Docker Hub for wider use.
 
@@ -111,16 +97,10 @@ Traditionally, developers built applications and handed them off to the operatio
 
 Docker transforms this dynamic. Developers now define the application environment within a Dockerfile. Once the Docker image is built and tested, it behaves consistently across all platforms, simplifying the deployment process for operations teams.
 
-<Frame>
-  ![The image illustrates the "Container Advantage" with icons representing a developer, a Docker image, and operations personnel.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880667/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-What-are-Containers/frame_780.jpg)
-</Frame>
+![The image illustrates the "Container Advantage" with icons representing a developer, a Docker image, and operations personnel.](https://kodekloud.com/kk-media/image/upload/v1752880667/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-What-are-Containers/frame_780.jpg)
 
-<Callout icon="lightbulb">
-  By encapsulating the application environment in a Docker image, you eliminate the "works on my machine" problem. The image, once verified in development, guarantees consistent production behavior.
-</Callout>
+> **lightbulb** By encapsulating the application environment in a Docker image, you eliminate the "works on my machine" problem. The image, once verified in development, guarantees consistent production behavior.
 
 With this foundation in containers and Docker, you are now ready to explore Kubernetes and harness its powerful orchestration capabilities.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/8403f56b-91f8-42f9-89e9-5c27a7438ef2/lesson/dcf25ec9-e616-4c8b-948b-c46b98a21766" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/8403f56b-91f8-42f9-89e9-5c27a7438ef2/lesson/dcf25ec9-e616-4c8b-948b-c46b98a21766)

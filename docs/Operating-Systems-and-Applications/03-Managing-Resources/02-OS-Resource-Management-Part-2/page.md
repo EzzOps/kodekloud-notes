@@ -32,9 +32,7 @@ Key implications of threads
 * Easier to communicate (shared memory) but requires synchronization (locks, mutexes, semaphores, condition variables) to avoid inconsistent state.
 * OS schedulers still manage threads (they can be scheduled individually), but you don’t always see threads listed in simple process viewers.
 
-<Callout icon="lightbulb">
-  Threads share the same address space. That makes context switches cheaper than between processes but requires careful synchronization to avoid race conditions.
-</Callout>
+> **lightbulb** Threads share the same address space. That makes context switches cheaper than between processes but requires careful synchronization to avoid race conditions.
 
 Quick check — threads
 Which of these is true about threads?
@@ -129,6 +127,4 @@ Summary
   <img alt="A slide showing three numbered learning objectives about operating systems (scheduling/switching, processes vs threads and multitasking, and using multiple cores for parallelism). A presenter stands on the right and a small cartoon cat graphic is on the left." />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/f1c2dfb7-7917-4c97-be15-ba6300068f41/lesson/307c47ce-b365-4ca2-837d-efdc746b08e3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/f1c2dfb7-7917-4c97-be15-ba6300068f41/lesson/307c47ce-b365-4ca2-837d-efdc746b08e3)

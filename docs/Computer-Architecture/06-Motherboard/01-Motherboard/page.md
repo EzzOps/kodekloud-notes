@@ -23,9 +23,7 @@ By the end of this lesson you will be able to:
 
 We’ll use a mix of real photos and labeled diagrams of motherboards to illustrate concepts. Now, let’s dive into power, cooling, interfaces, and buses.
 
-<Callout icon="lightbulb">
-  When you install RAM, align the module’s notch with the slot key and press firmly until the latches click. If a module won’t seat, don’t force it — double-check orientation and the slot’s retention clips.
-</Callout>
+> **lightbulb** When you install RAM, align the module’s notch with the slot key and press firmly until the latches click. If a module won’t seat, don’t force it — double-check orientation and the slot’s retention clips.
 
 Power: sources, regulation, and data retention
 
@@ -45,9 +43,7 @@ Power also dictates what happens to data on different storage types:
 
 A small backup battery (commonly a CMOS/RTC battery) preserves the real-time clock and minimal state when the main battery is removed; modern firmware settings are usually saved in non-volatile flash.
 
-<Callout icon="warning">
-  Avoid removing or inserting components with the main battery and charger connected. Static discharge or accidental shorting can damage VRMs, memory modules, and other sensitive components.
-</Callout>
+> **warning** Avoid removing or inserting components with the main battery and charger connected. Static discharge or accidental shorting can damage VRMs, memory modules, and other sensitive components.
 
 Cooling: passive transport and active exhaust
 
@@ -155,6 +151,4 @@ Summary
 
 This concludes our look at the motherboard. You should now understand how power stability affects data retention, why cooling matters for consistent performance, which interfaces connect components, and how buses and controllers coordinate communication behind the scenes.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/computer-architecture/module/c924270c-0aa1-48ba-90f9-ae102175c6b0/lesson/3a9eb207-f82a-4fa0-b2a3-847a932fe251" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/computer-architecture/module/c924270c-0aa1-48ba-90f9-ae102175c6b0/lesson/3a9eb207-f82a-4fa0-b2a3-847a932fe251)

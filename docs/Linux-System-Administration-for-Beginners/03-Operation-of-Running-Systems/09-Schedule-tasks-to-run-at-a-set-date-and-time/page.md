@@ -107,9 +107,7 @@ $ sudo systemctl enable --now sshd.service
 $ sudo systemctl disable --now sshd.service
 ```
 
-<Callout icon="triangle-alert">
-  Disabling and stopping `sshd.service` will prevent all SSH logins.
-</Callout>
+> **triangle-alert** Disabling and stopping `sshd.service` will prevent all SSH logins.
 
 ***
 
@@ -153,11 +151,9 @@ $ systemctl list-units --type=service --all
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/b1bf2343-f406-4f20-b97f-1c5bdc245a12" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/b1bf2343-f406-4f20-b97f-1c5bdc245a12)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/056b53be-ae53-416a-9c5f-5b9c77d5c7e6" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/056b53be-ae53-416a-9c5f-5b9c77d5c7e6)
 
 
 # Schedule tasks to run at a set date and time
@@ -168,9 +164,7 @@ Learn to automate routine maintenance on Linux by scheduling tasks with cron, an
 
 Automating routine maintenance—like database backups or log rotations—ensures a reliable Linux server. In this guide, you’ll learn how to schedule both recurring and one-off tasks using three core utilities: **cron**, **anacron**, and **at**.
 
-<Frame>
-  ![The image features an icon of an alarm clock and the text "Schedule Tasks To Run At a Set Time" on a dark background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881491/notes-assets/images/Linux-System-Administration-for-Beginners-Schedule-tasks-to-run-at-a-set-date-and-time/alarm-clock-schedule-tasks-icon.jpg)
-</Frame>
+![The image features an icon of an alarm clock and the text "Schedule Tasks To Run At a Set Time" on a dark background.](https://kodekloud.com/kk-media/image/upload/v1752881491/notes-assets/images/Linux-System-Administration-for-Beginners-Schedule-tasks-to-run-at-a-set-date-and-time/alarm-clock-schedule-tasks-icon.jpg)
 
 ## Scheduling Utilities Overview
 

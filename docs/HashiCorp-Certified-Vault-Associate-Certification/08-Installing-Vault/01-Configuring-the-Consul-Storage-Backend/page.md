@@ -15,9 +15,7 @@ vault kv put secret/api/key/google key="ABCDE12345"
 vault read aws/creds/s3-readonly
 ```
 
-<Callout icon="triangle-alert">
-  Always test both allowed and denied operations. Overprovisioned policies can lead to security risks.
-</Callout>
+> **triangle-alert** Always test both allowed and denied operations. Overprovisioned policies can lead to security risks.
 
 ***
 
@@ -76,11 +74,9 @@ path "sys/seal" {
 * [Terraform Vault Provider Registry](https://registry.terraform.io/providers/hashicorp/vault/latest)
 * [jq Manual](https://stedolan.github.io/jq/manual/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/8e53f231-10d5-472a-a37f-99b72974b689" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/8e53f231-10d5-472a-a37f-99b72974b689)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/77addfcc-3dee-4a61-a241-bdf03488c60b" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/83a61f63-3f1f-436c-8aa3-e972b099eeec/lesson/77addfcc-3dee-4a61-a241-bdf03488c60b)
 
 
 # Configuring the Consul Storage Backend
@@ -103,9 +99,7 @@ Consul offers robust features that enhance Vault’s resilience and scalability:
 | Automated Snapshots  | Simplified backups           | Create snapshots for backup and upgrades with minimal downtime.   |
 | Enterprise Support   | Official HashiCorp support   | Fully supported as a Vault backend in enterprise environments.    |
 
-<Callout icon="lightbulb">
-  Running a dedicated Consul cluster adds maintenance overhead—setup, ACLs, upgrades, and monitoring. However, with proper automation, it operates with minimal intervention.
-</Callout>
+> **lightbulb** Running a dedicated Consul cluster adds maintenance overhead—setup, ACLs, upgrades, and monitoring. However, with proper automation, it operates with minimal intervention.
 
 ## Cluster Topology
 
@@ -119,9 +113,7 @@ To prevent resource contention and maintain performance, host Vault storage on a
 
 ## AWS Deployment Example
 
-<Frame>
-  ![The image illustrates the deployment of the Consul storage backend across three availability zones within a VPC, each containing a private subnet. It highlights a special installation of Consul using redundancy zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878148/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Configuring-the-Consul-Storage-Backend/consul-storage-backend-deployment-vpc.jpg)
-</Frame>
+![The image illustrates the deployment of the Consul storage backend across three availability zones within a VPC, each containing a private subnet. It highlights a special installation of Consul using redundancy zones.](https://kodekloud.com/kk-media/image/upload/v1752878148/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Configuring-the-Consul-Storage-Backend/consul-storage-backend-deployment-vpc.jpg)
 
 Distribute Vault and Consul nodes across multiple Availability Zones (AZs) in a VPC:
 
@@ -134,9 +126,7 @@ Even if an entire AZ becomes unavailable, both Consul and Vault remain operation
 
 Vault servers run a local Consul agent in client mode. Each agent joins the cluster and handles all API requests, so Vault always points to localhost:
 
-<Frame>
-  ![The image illustrates the deployment of a Consul storage backend with three Vault nodes, each communicating with a local Consul agent, connected to a Consul cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878149/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Configuring-the-Consul-Storage-Backend/consul-storage-backend-vault-nodes-deployment.jpg)
-</Frame>
+![The image illustrates the deployment of a Consul storage backend with three Vault nodes, each communicating with a local Consul agent, connected to a Consul cluster.](https://kodekloud.com/kk-media/image/upload/v1752878149/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Configuring-the-Consul-Storage-Backend/consul-storage-backend-vault-nodes-deployment.jpg)
 
 This model removes the need to update Vault’s configuration when the Consul cluster membership changes.
 
@@ -173,9 +163,7 @@ ui           = true
 log_level    = "INFO"
 ```
 
-<Callout icon="triangle-alert">
-  Ensure the Consul ACL token has permissions scoped only to the `vault/` path. Rotate tokens periodically to maintain security.
-</Callout>
+> **triangle-alert** Ensure the Consul ACL token has permissions scoped only to the `vault/` path. Rotate tokens periodically to maintain security.
 
 ## Consul Server Configuration Example
 
@@ -225,6 +213,4 @@ Customize addresses, data directories, and ACL tokens to fit your environment.
 
 Use available coupons to get started with Consul and Vault today!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/e7e944a2-5b70-407b-80c2-e505d93e3725" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/e7e944a2-5b70-407b-80c2-e505d93e3725)

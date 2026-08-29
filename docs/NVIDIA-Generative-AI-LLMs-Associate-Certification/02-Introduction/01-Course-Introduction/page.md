@@ -21,9 +21,7 @@ Additional notes
 * Attention is learned during training — the model optimizes the projections that produce Q, K, V to maximize downstream performance.
 * Attention is not a stop-word remover nor a random selector: it’s a differentiable, data-driven weighting mechanism.
 
-<Callout icon="lightbulb">
-  Attention is a learned, dynamic weighting mechanism that lets transformers focus on the most relevant tokens for each prediction — effectively a configurable spotlight over the input sequence.
-</Callout>
+> **lightbulb** Attention is a learned, dynamic weighting mechanism that lets transformers focus on the most relevant tokens for each prediction — effectively a configurable spotlight over the input sequence.
 
 Further reading and references
 
@@ -31,9 +29,7 @@ Further reading and references
 * Illustrated Transformer (visual explanation): [https://jalammar.github.io/illustrated-transformer/](https://jalammar.github.io/illustrated-transformer/)
 * Transformer model family and docs: [https://huggingface.co/docs/transformers/](https://huggingface.co/docs/transformers/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/34646bb2-0ea6-4cb0-94e0-78ca85f46dad" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/34646bb2-0ea6-4cb0-94e0-78ca85f46dad)
 
 
 # Course Introduction
@@ -54,9 +50,7 @@ NVIDIA GenAI is applied across many domains: healthcare (real-time diagnostics),
 
 I’m Jeremy Morgan, your instructor. I recently earned the NVIDIA NCA-GenL certification and will guide you through hands-on labs, real-world scenarios, and examination-style questions.
 
-<Callout icon="lightbulb">
-  This course follows a question-driven, hands-on approach. Each module is organized around practical scenarios and end-to-end solutions so you can apply techniques directly to projects and assessments.
-</Callout>
+> **lightbulb** This course follows a question-driven, hands-on approach. Each module is organized around practical scenarios and end-to-end solutions so you can apply techniques directly to projects and assessments.
 
 What makes this course different:
 
@@ -131,9 +125,7 @@ At KodeKloud we emphasize collaborative learning. Use the forums to discuss labs
 |                Trustworthy AI | Privacy, bias mitigation, adversarial defenses        | Implement safeguards and audit logs for safe deployment                        |
 |     Community & Collaboration | Peer review, forums, shared troubleshooting           | Learn from peer examples and collaborate on projects                           |
 
-<Callout icon="warning">
-  When experimenting with real data, follow all applicable legal and privacy requirements. Avoid using personally identifiable information (PII) without consent and apply anonymization and access controls where required.
-</Callout>
+> **warning** When experimenting with real data, follow all applicable legal and privacy requirements. Avoid using personally identifiable information (PII) without consent and apply anonymization and access controls where required.
 
 ## Recommended prerequisites
 
@@ -151,6 +143,4 @@ At KodeKloud we emphasize collaborative learning. Use the forums to discuss labs
 
 Let's embark on this journey and build practical, responsible GenAI solutions—one challenge at a time.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/52187922-c24a-4bcf-ae41-c1154ff6ab31/lesson/d72bb6d5-b1cb-44de-b179-6e61f11f5e36" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/52187922-c24a-4bcf-ae41-c1154ff6ab31/lesson/d72bb6d5-b1cb-44de-b179-6e61f11f5e36)

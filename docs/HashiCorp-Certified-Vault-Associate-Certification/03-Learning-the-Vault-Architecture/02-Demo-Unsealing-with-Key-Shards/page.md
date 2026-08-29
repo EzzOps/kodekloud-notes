@@ -14,9 +14,7 @@ In this guide, you’ll walk through unsealing a Vault server using Vault’s de
 | Vault Binary       | Installed and available in your `$PATH`.         |
 | Configuration File | Basic HCL at `/etc/vault.d/vault.hcl`.           |
 
-<Callout icon="lightbulb">
-  Ensure you have write permissions to `/etc/vault.d` and that Vault can read this directory.
-</Callout>
+> **lightbulb** Ensure you have write permissions to `/etc/vault.d` and that Vault can read this directory.
 
 ***
 
@@ -73,9 +71,7 @@ ui           = true
 log_level    = "INFO"
 ```
 
-<Callout icon="lightbulb">
-  You can find more on Vault seal configurations in the [Vault Seal/Unseal Concepts](https://www.vaultproject.io/docs/concepts/seal) guide.
-</Callout>
+> **lightbulb** You can find more on Vault seal configurations in the [Vault Seal/Unseal Concepts](https://www.vaultproject.io/docs/concepts/seal) guide.
 
 ***
 
@@ -121,9 +117,7 @@ Storage Type    raft
 HA Enabled      true
 ```
 
-<Callout icon="triangle-alert">
-  Store unseal keys and root tokens in a secure location. Exposure of these allows full control over your Vault.
-</Callout>
+> **triangle-alert** Store unseal keys and root tokens in a secure location. Exposure of these allows full control over your Vault.
 
 ***
 
@@ -184,6 +178,4 @@ sys/        system      system_2ab43a59
 * [Vault Documentation: Getting Started](https://www.vaultproject.io/docs)
 * [Shamir's Secret Sharing Explained](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/cbd99f3a-0029-4df2-ab6a-4b28a6c8a130" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/cbd99f3a-0029-4df2-ab6a-4b28a6c8a130)

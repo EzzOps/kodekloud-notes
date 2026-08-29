@@ -33,9 +33,7 @@ favorite_color = input("What is your favorite color? ")
 print("Your favorite color is " + favorite_color)
 ```
 
-<Callout icon="lightbulb">
-  Remember that the value returned by the input function is always a string. This is an important detail when you are handling arithmetic operations.
-</Callout>
+> **lightbulb** Remember that the value returned by the input function is always a string. This is an important detail when you are handling arithmetic operations.
 
 ## Working with Numerical Input
 
@@ -77,6 +75,4 @@ Let's review what we've learned about the Python input function:
 
 This concludes our exploration of the input function. Stay tuned for more in-depth Python tutorials in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/4178f96e-8dcd-46a2-a9c9-f65a8c9c73b0/lesson/5e399606-2372-4eb6-9ebb-78ce82329f1e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/4178f96e-8dcd-46a2-a9c9-f65a8c9c73b0/lesson/5e399606-2372-4eb6-9ebb-78ce82329f1e)

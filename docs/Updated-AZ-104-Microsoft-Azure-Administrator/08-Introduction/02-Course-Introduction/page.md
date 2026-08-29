@@ -21,9 +21,7 @@ As an Azure Administrator, your role is critical in ensuring that your organizat
 * Securing identities, data, and applications
 * Monitoring and maintaining Azure resources
 
-<Callout icon="lightbulb">
-  By completing this course, you will gain the necessary skills to implement and manage advanced Azure solutions tailored to your organization’s needs.
-</Callout>
+> **lightbulb** By completing this course, you will gain the necessary skills to implement and manage advanced Azure solutions tailored to your organization’s needs.
 
 ## Learning Materials
 
@@ -35,6 +33,4 @@ Your active participation is vital. Feel free to ask questions, engage with your
 
 Without further ado, let's embark on this exciting Azure Administration journey. Let's get started!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/edb6b82d-2942-45b9-89e9-33fbe75528c2/lesson/4bf18f91-9693-4d2e-a953-53b017c39b89" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/edb6b82d-2942-45b9-89e9-33fbe75528c2/lesson/4bf18f91-9693-4d2e-a953-53b017c39b89)

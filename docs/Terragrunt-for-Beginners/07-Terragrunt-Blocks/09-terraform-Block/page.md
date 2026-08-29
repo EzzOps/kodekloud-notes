@@ -15,10 +15,8 @@ The Terraform block in Terragrunt defines how Terragrunt locates and invokes you
 | `extra_arguments` | Defines additional CLI flags or variable files to pass to Terraform                  | `arguments = ["-var-file=prod.tfvars"]`                                      |
 | `hooks`           | `before_hook` or `after_hook` blocks for executing scripts around Terraform commands | `before_hook "lint" { commands = ["plan"]; execute = ["npm","run","lint"] }` |
 
-<Callout icon="lightbulb">
-  Always lock your modules to a specific `version` or `ref` to avoid unintended upgrades.\
+> **lightbulb** Always lock your modules to a specific `version` or `ref` to avoid unintended upgrades.\
   For Registry modules, append `?version=`, and for Git sources, use `?ref=`.
-</Callout>
 
 ***
 
@@ -117,10 +115,8 @@ terraform {
 | `before_hook` | Run tasks prior to Terraform execution          |
 | `after_hook`  | Run cleanup or notifications post Terraform run |
 
-<Callout icon="triangle-alert">
-  Use hooks carefully in production: unexpected script failures can block Terraform runs.\
+> **triangle-alert** Use hooks carefully in production: unexpected script failures can block Terraform runs.\
   Always test hooks in a development environment first.
-</Callout>
 
 ***
 
@@ -130,6 +126,4 @@ terraform {
 * [Terraform Registry](https://registry.terraform.io/)
 * [GitHub Modules](https://github.com/terraform-aws-modules)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/b96e4c21-28e8-4db7-9389-6136d4a5020c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/b96e4c21-28e8-4db7-9389-6136d4a5020c)

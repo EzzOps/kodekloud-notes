@@ -10,11 +10,11 @@ In this lesson, we explore how to work with AWS CloudTrail to monitor and store 
 
 AWS CloudTrail automatically records events for the past 90 days. You can view these events directly from the event history without the need to create a trail. For instance, when you search for a "CreateUser" event, you'll see detailed information such as the event timestamp, the actor responsible, the source IP address, and the relevant AWS resource.
 
-![The image shows the AWS CloudTrail dashboard, highlighting features for logging AWS account activity and providing options for creating a trail, with sections on how it works, pricing, and getting started.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858282/notes-assets/images/AWS-Certified-Developer-Associate-CloudTrail-Demo/aws-cloudtrail-dashboard-logging.jpg)
+![The image shows the AWS CloudTrail dashboard, highlighting features for logging AWS account activity and providing options for creating a trail, with sections on how it works, pricing, and getting started.](https://kodekloud.com/kk-media/image/upload/v1752858282/notes-assets/images/AWS-Certified-Developer-Associate-CloudTrail-Demo/aws-cloudtrail-dashboard-logging.jpg)
 
 Clicking on an event (like user creation) will display additional details, including event time, user identity, source IP, and resource affected.
 
-![The image shows an AWS CloudTrail event history page detailing a "CreateUser" event, including information such as event time, user name, source IP address, and resources referenced.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858283/notes-assets/images/AWS-Certified-Developer-Associate-CloudTrail-Demo/aws-cloudtrail-createuser-event-history.jpg)
+![The image shows an AWS CloudTrail event history page detailing a "CreateUser" event, including information such as event time, user name, source IP address, and resources referenced.](https://kodekloud.com/kk-media/image/upload/v1752858283/notes-assets/images/AWS-Certified-Developer-Associate-CloudTrail-Demo/aws-cloudtrail-createuser-event-history.jpg)
 
 Viewing an event in detail will reveal a JSON view containing key entries such as user identity, event type, and region.
 
@@ -26,7 +26,7 @@ If you require event logs beyond the standard 90-day period, or want to forward 
 2. Enter a trail name, for example, "CodeCloud-CloudTrail-demo".
 3. By default, CloudTrail captures events from all regions. Optionally, you can capture events across all accounts in your organization (for this demo, leave this unchecked).
 
-![The image shows an AWS CloudTrail setup page where a user is configuring trail attributes, including trail name, storage location, and encryption settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858284/notes-assets/images/AWS-Certified-Developer-Associate-CloudTrail-Demo/aws-cloudtrail-setup-configuration.jpg)
+![The image shows an AWS CloudTrail setup page where a user is configuring trail attributes, including trail name, storage location, and encryption settings.](https://kodekloud.com/kk-media/image/upload/v1752858284/notes-assets/images/AWS-Certified-Developer-Associate-CloudTrail-Demo/aws-cloudtrail-setup-configuration.jpg)
 
 4. Decide if you want to create a new S3 bucket or use an existing one. In this demonstration, a new S3 bucket will be created.
 5. Optionally, enable encryption for your log files. In this example, encryption remains disabled.
@@ -39,11 +39,11 @@ Click **Next** to proceed.
 
 On the next screen, specify the types of events you wish to log. By default, management events are selected. While you could also log data or insight events, this demo focuses solely on management events.
 
-![The image shows an AWS CloudTrail configuration page, with options for log file validation, SNS notification delivery, and CloudWatch Logs settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858289/notes-assets/images/AWS-Certified-Developer-Associate-CloudTrail-Demo/aws-cloudtrail-configuration-settings.jpg)
+![The image shows an AWS CloudTrail configuration page, with options for log file validation, SNS notification delivery, and CloudWatch Logs settings.](https://kodekloud.com/kk-media/image/upload/v1752858289/notes-assets/images/AWS-Certified-Developer-Associate-CloudTrail-Demo/aws-cloudtrail-configuration-settings.jpg)
 
 Finally, you can refine API activity logging by filtering for read or write events, or even excluding specific events (such as those from KMS or the RDS Data API).
 
-![The image shows an AWS CloudTrail setup screen where users can choose log events, including management, data, and insights events, with options for API activity logging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858293/notes-assets/images/AWS-Certified-Developer-Associate-CloudTrail-Demo/aws-cloudtrail-setup-log-events.jpg)
+![The image shows an AWS CloudTrail setup screen where users can choose log events, including management, data, and insights events, with options for API activity logging.](https://kodekloud.com/kk-media/image/upload/v1752858293/notes-assets/images/AWS-Certified-Developer-Associate-CloudTrail-Demo/aws-cloudtrail-setup-log-events.jpg)
 
 Review your settings and create the trail.
 
@@ -56,7 +56,7 @@ After creating the trail, navigate to your designated S3 bucket. CloudTrail prov
 * Logs are organized by region—in our example, only logs for the "us-east-1" region are available.
 * Within the regional folder, logs are further divided by year, month, and day.
 
-![The image shows an Amazon S3 console with a bucket named "AWSLogs" containing a folder labeled "841860923737". The interface displays options for managing objects, such as creating folders and uploading files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858295/notes-assets/images/AWS-Certified-Developer-Associate-CloudTrail-Demo/amazon-s3-console-awslogs-folder.jpg)
+![The image shows an Amazon S3 console with a bucket named "AWSLogs" containing a folder labeled "841860923737". The interface displays options for managing objects, such as creating folders and uploading files.](https://kodekloud.com/kk-media/image/upload/v1752858295/notes-assets/images/AWS-Certified-Developer-Associate-CloudTrail-Demo/amazon-s3-console-awslogs-folder.jpg)
 
 Selecting a log file opens it in JSON format. Although the raw JSON might not be visually appealing, you can copy and paste it into a JSON Viewer for a clearer, structured display.
 
@@ -171,7 +171,7 @@ Within the log group, select a log stream to inspect events—these logs will fo
 
 Forwarding logs to CloudWatch allows for real-time event monitoring and deeper analysis.
 
-![The image shows a JSON viewer interface displaying a structured JSON file with nested data elements. The left panel lists the JSON keys and values, while the right panel shows the name and value of selected records.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858297/notes-assets/images/AWS-Certified-Developer-Associate-CloudTrail-Demo/json-viewer-interface-structured-data.jpg)
+![The image shows a JSON viewer interface displaying a structured JSON file with nested data elements. The left panel lists the JSON keys and values, while the right panel shows the name and value of selected records.](https://kodekloud.com/kk-media/image/upload/v1752858297/notes-assets/images/AWS-Certified-Developer-Associate-CloudTrail-Demo/json-viewer-interface-structured-data.jpg)
 
 ## Conclusion
 

@@ -15,9 +15,7 @@ Links and references
 * [Jaeger Tracing](https://www.jaegertracing.io/)
 * telemetrygen (generate telemetry): [https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/cmd/telemetrygen](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/cmd/telemetrygen)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/b601d1de-df58-4240-8dbb-f9a1bc9c2a20" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/b601d1de-df58-4240-8dbb-f9a1bc9c2a20)
 
 
 # Demo OTel Col Prometheus Exporter
@@ -33,9 +31,7 @@ This guide shows how to push metrics from an OpenTelemetry Collector to Promethe
 * Configure the OpenTelemetry Collector to export metrics via `prometheusremotewrite`
 * Start the stack and validate metrics in the Prometheus UI
 
-<Callout icon="lightbulb">
-  This demonstration uses Prometheus' remote write API so the OpenTelemetry Collector can push metrics directly into Prometheus. Use this when you want the Collector to push metrics rather than having Prometheus scrape targets.
-</Callout>
+> **lightbulb** This demonstration uses Prometheus' remote write API so the OpenTelemetry Collector can push metrics directly into Prometheus. Use this when you want the Collector to push metrics rather than having Prometheus scrape targets.
 
 ## Overview
 

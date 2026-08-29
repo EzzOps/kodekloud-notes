@@ -52,7 +52,7 @@ node3$ ip route add 10.244.2.2 via 192.168.1.12
 
 Below is an image that illustrates a Docker network setup with three nodes, each with distinct IP addresses and subnet configurations, connected via a virtual network bridge:
 
-![The image illustrates a Docker network setup with three nodes, each having distinct IP addresses and subnet configurations, connected via a virtual network bridge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869856/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Pod-Networking/frame_420.jpg)
+![The image illustrates a Docker network setup with three nodes, each having distinct IP addresses and subnet configurations, connected via a virtual network bridge.](https://kodekloud.com/kk-media/image/upload/v1752869856/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Pod-Networking/frame_420.jpg)
 
 ## Integrating Container Network Interface (CNI)
 
@@ -94,7 +94,7 @@ Welcome to this comprehensive guide on the Container Networking Interface (CNI) 
 
 Network namespaces create isolated network environments on a single host. These namespaces are interconnected by a bridge network that establishes virtual interfaces (or virtual cables) for communication between namespaces. This involves assigning IP addresses, activating interfaces, and enabling NAT or IP masquerading for external connectivity. Although Docker configures its bridge networking using similar methods, it employs its own naming conventions. Other container platforms like Rocket, Mesos Containerizer, and Kubernetes address these networking challenges in a comparable way.
 
-![The image shows a comparison of network namespace setup steps for Docker, rkt, Mesos, and Kubernetes, each with eight similar configuration steps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869857/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Prerequisite-CNI/frame_70.jpg)
+![The image shows a comparison of network namespace setup steps for Docker, rkt, Mesos, and Kubernetes, each with eight similar configuration steps.](https://kodekloud.com/kk-media/image/upload/v1752869857/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Prerequisite-CNI/frame_70.jpg)
 
 To standardize this process and avoid duplicating efforts across multiple platforms, a dedicated program known as "bridge" was developed. This program automates the tasks required to connect a container to a bridge network. For instance, you can run the program with the container ID and network namespace as shown below:
 
@@ -117,7 +117,7 @@ CNI defines a standard for creating and integrating network plugins with contain
 
 On the plugin side, CNI requires support for three command-line arguments: "add", "del", and "check". These commands must accept parameters such as the container ID and network namespace. The plugin then takes over to manage IP addresses and necessary routing, ensuring that containers can communicate effectively. The output of these operations must follow a strict format for consistency.
 
-![The image outlines the Container Network Interface (CNI) requirements and processes, including network namespace creation, plugin invocation, and IP management, with logos of rkt, Mesos, and Kubernetes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869858/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Prerequisite-CNI/frame_240.jpg)
+![The image outlines the Container Network Interface (CNI) requirements and processes, including network namespace creation, plugin invocation, and IP management, with logos of rkt, Mesos, and Kubernetes.](https://kodekloud.com/kk-media/image/upload/v1752869858/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Prerequisite-CNI/frame_240.jpg)
 
 When both container runtimes and network plugins adhere to CNI standards, seamless interoperability is achieved. Any CNI-compliant plugin can work with any container runtime that supports these standards. The ecosystem already includes several CNI plugins such as bridge, VLAN, IP VLAN, MAC VLAN, and even one designed for Windows. IP address management (IPAM) plugins like host-local and DHCP are also available, along with third-party solutions like Weave, Flannel, Cilium, VMware NSX, Calico, and Infoblox.
 

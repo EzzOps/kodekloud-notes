@@ -3,7 +3,7 @@
 
 Earlier, we discussed namespaces in Kubernetes. Remember that pods within the same namespace (default namespace is usually "default") can communicate using just their short names. The image below illustrates the concept of separate namespaces and how naming differs between them.
 
-![The image illustrates two namespaces, each containing different individuals named Mark, highlighting the concept of name differentiation within separate contexts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869847/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-DNS-in-kubernetes/frame_180.jpg)
+![The image illustrates two namespaces, each containing different individuals named Mark, highlighting the concept of name differentiation within separate contexts.](https://kodekloud.com/kk-media/image/upload/v1752869847/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-DNS-in-kubernetes/frame_180.jpg)
 
 In our scenario, because the test pod, web pod, and web-service are all in the **default** namespace, the test pod can simply refer to the service as "web-service." However, if the web-service were deployed in another namespace (for example, "apps"), you would need to access it using "web-service.apps." Here, "apps" becomes part of the fully qualified service name.
 
@@ -87,7 +87,7 @@ Imagine your company expands and you launch new services. For example, you might
 
 Even if both applications run within the same cluster with separate Deployments and Services (e.g., a LoadBalancer Service for the video service), each service might get its own high port and cloud load balancer. Managing multiple load balancers can increase costs, add complexity, and complicate SSL/TLS (HTTPS) configurations.
 
-![The image illustrates a network architecture with GCP load balancers directing traffic to "wear" and "video" services, each with multiple instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869848/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Ingress/frame_310.jpg)
+![The image illustrates a network architecture with GCP load balancers directing traffic to "wear" and "video" services, each with multiple instances.](https://kodekloud.com/kk-media/image/upload/v1752869848/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Ingress/frame_310.jpg)
 
 ### Introducing Ingress
 
@@ -95,17 +95,17 @@ Ingress simplifies external access by providing a single externally accessible I
 
 Even with Ingress, you still need an initial exposure mechanism (via NodePort or a cloud-native LoadBalancer). However, once this is set up, all further changes are made through the Ingress controller.
 
-![The image illustrates a network architecture with load balancers distributing traffic to "wear" and "video" services for an online store.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869849/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Ingress/frame_380.jpg)
+![The image illustrates a network architecture with load balancers distributing traffic to "wear" and "video" services for an online store.](https://kodekloud.com/kk-media/image/upload/v1752869849/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Ingress/frame_380.jpg)
 
 Without Ingress, you would have to manually deploy and configure a reverse proxy or load balancer (such as NGINX, HAProxy, or Traefik) within your cluster to handle URL routing and manage SSL certificates. Ingress builds on these principles to offer an integrated solution.
 
-![The image illustrates a Google Cloud Platform ingress architecture with load balancing, showing "wear" and "video" services managed under an ingress service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869850/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Ingress/frame_440.jpg)
+![The image illustrates a Google Cloud Platform ingress architecture with load balancing, showing "wear" and "video" services managed under an ingress service.](https://kodekloud.com/kk-media/image/upload/v1752869850/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Ingress/frame_440.jpg)
 
 ## Deploying an Ingress Controller
 
 To use Ingress, you must first deploy an Ingress controller. The controller continuously monitors the cluster for changes in Ingress resources and reconfigures the underlying load balancing solution accordingly.
 
-![The image illustrates deploying and configuring ingress controllers like NGINX, HAProxy, and Traefik, which are not deployed by default, for managing ingress resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869850/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Ingress/frame_540.jpg)
+![The image illustrates deploying and configuring ingress controllers like NGINX, HAProxy, and Traefik, which are not deployed by default, for managing ingress resources.](https://kodekloud.com/kk-media/image/upload/v1752869850/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Ingress/frame_540.jpg)
 
 > **lightbulb** A Kubernetes cluster does not include an Ingress controller by default. If you create Ingress resources without deploying an Ingress controller, they will have no effect.
 
@@ -367,7 +367,7 @@ spec:
 
 In this example, each rule handles traffic for a specific domain by routing all requests ("/") to the designated backend Service.
 
-![The image outlines ingress resource rules for different URLs, categorizing paths like "/wear," "/watch," and "/movies" with corresponding images and a 404 error message.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869852/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Ingress/frame_1030.jpg)
+![The image outlines ingress resource rules for different URLs, categorizing paths like "/wear," "/watch," and "/movies" with corresponding images and a 404 error message.](https://kodekloud.com/kk-media/image/upload/v1752869852/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Ingress/frame_1030.jpg)
 
 > **lightbulb** Splitting traffic by URL involves one rule with multiple paths, whereas splitting traffic by domain requires multiple rules with specific host fields. If you do not define a host, the Ingress rule will match all incoming traffic, regardless of the domain.
 

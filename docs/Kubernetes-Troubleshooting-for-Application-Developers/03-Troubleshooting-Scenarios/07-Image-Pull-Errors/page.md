@@ -32,9 +32,7 @@ Each retry increases the delay before the next attempt.
 
 Let's start by inspecting one of the pods that is not starting correctly. In this section, we describe the API pod to look at the events, which illustrate that the image pull error is due to an unresolved image reference.
 
-<Frame>
-  ![The image shows a terminal interface displaying Kubernetes pod details, including container readiness, pod scheduling, volume information, and event logs related to image pulling errors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880432/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Image-Pull-Errors/kubernetes-pod-details-terminal.jpg)
-</Frame>
+![The image shows a terminal interface displaying Kubernetes pod details, including container readiness, pod scheduling, volume information, and event logs related to image pulling errors.](https://kodekloud.com/kk-media/image/upload/v1752880432/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Image-Pull-Errors/kubernetes-pod-details-terminal.jpg)
 
 The events reveal that the cluster scheduled the pod correctly but failed to pull the image because the reference could not be resolved. Common error messages include "pull access denied," "repository does not exist," or messages indicating the need for authorization.
 
@@ -114,9 +112,7 @@ NAME         TYPE                               DATA   AGE
 ghcr-secret  kubernetes.io/dockerconfigjson     1      10m
 ```
 
-<Callout icon="lightbulb">
-  Since you're editing a pod directly (instead of a Deployment), some fields cannot be updated on a running pod. You must delete the pod and reapply the updated configuration.
-</Callout>
+> **lightbulb** Since you're editing a pod directly (instead of a Deployment), some fields cannot be updated on a running pod. You must delete the pod and reapply the updated configuration.
 
 ### Updated Notifications Pod Definition
 
@@ -176,9 +172,7 @@ spec:
 
 After applying the changes, verify the pod status using a CLI tool like [K9s](https://k9scli.io/).
 
-<Frame>
-  ![The image shows a terminal interface of K9s, a Kubernetes CLI tool, displaying the status of pods in a cluster. It lists four pods with their readiness, status, restarts, CPU, memory usage, IP, node, and age, highlighting issues like "ImagePullBackOff" and "ContainerCreating."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880433/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Image-Pull-Errors/k9s-kubernetes-cli-pod-status.jpg)
-</Frame>
+![The image shows a terminal interface of K9s, a Kubernetes CLI tool, displaying the status of pods in a cluster. It lists four pods with their readiness, status, restarts, CPU, memory usage, IP, node, and age, highlighting issues like "ImagePullBackOff" and "ContainerCreating."](https://kodekloud.com/kk-media/image/upload/v1752880433/notes-assets/images/Kubernetes-Troubleshooting-for-Application-Developers-Image-Pull-Errors/k9s-kubernetes-cli-pod-status.jpg)
 
 The notifications pod should now be in a Running state.
 
@@ -206,9 +200,7 @@ Running a local nslookup confirms that the hostname cannot be resolved:
 nslookup gitlab.kodekloud.com
 ```
 
-<Callout icon="triangle-alert">
-  Since the cluster cannot resolve the hostname, you will need to coordinate with your networking team or cluster administrators to fix the DNS issue.
-</Callout>
+> **triangle-alert** Since the cluster cannot resolve the hostname, you will need to coordinate with your networking team or cluster administrators to fix the DNS issue.
 
 ***
 
@@ -236,8 +228,6 @@ It is essential to verify application details, ensure image URL correctness, and
 
 For more Kubernetes resources, check out the [Kubernetes Documentation](https://kubernetes.io/docs/) and [Docker Hub](https://hub.docker.com/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/58eb1ac7-8410-4692-926d-469728655bfd" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/58eb1ac7-8410-4692-926d-469728655bfd)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/93267892-5937-47b7-8c27-300032234840" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/143d3913-caef-4dab-bde6-b77e96dbb161/lesson/93267892-5937-47b7-8c27-300032234840)

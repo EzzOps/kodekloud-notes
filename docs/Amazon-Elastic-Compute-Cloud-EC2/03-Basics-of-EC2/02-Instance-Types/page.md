@@ -36,7 +36,7 @@ Choosing the right EC2 instance type delivers:
 5. **Architectural Alignment**\
    Leverage enhanced networking (ENA), EBS-optimized instances, and Nitro system features where needed.
 
-![The image lists five benefits: performance optimization, cost optimization, specialized workloads, scalability and flexibility, and architecture optimization. Each benefit is accompanied by an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868988/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Instance-Types/benefits-performance-cost-scalability-architecture.jpg)
+![The image lists five benefits: performance optimization, cost optimization, specialized workloads, scalability and flexibility, and architecture optimization. Each benefit is accompanied by an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752868988/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Instance-Types/benefits-performance-cost-scalability-architecture.jpg)
 
 ## Instance Sizes and Scaling
 

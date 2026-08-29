@@ -55,9 +55,7 @@ If the pod is already created and its `nodeName` cannot be modified, you need to
         http://$SERVER/api/v1/namespaces/default/pods/$PODNAME/binding/
    ```
 
-<Callout icon="lightbulb">
-  Ensure that you replace `$SERVER` and `$PODNAME` with your actual server address and pod name.
-</Callout>
+> **lightbulb** Ensure that you replace `$SERVER` and `$PODNAME` with your actual server address and pod name.
 
 ## Summary
 
@@ -70,9 +68,7 @@ This approach provides flexibility in environments where automated scheduling ma
 
 Happy scheduling!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/4fab542c-3091-4f8e-ad7c-91d96d54b049/lesson/8268701e-0523-4d87-ae9d-35407df68073" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/4fab542c-3091-4f8e-ad7c-91d96d54b049/lesson/8268701e-0523-4d87-ae9d-35407df68073)
 
 
 # Multiple Schedulers
@@ -85,9 +81,7 @@ Welcome to this article on deploying multiple schedulers in a Kubernetes cluster
 
 Kubernetes distributes pods evenly across nodes and considers factors such as taints, tolerations, and node affinity when using its default scheduler. However, if your application requires custom scheduling behavior, Kubernetes allows you to implement and deploy a custom scheduler alongside the default one. When running multiple schedulers, each must have a unique name so Kubernetes can easily differentiate between them. The default scheduler is typically named "default-scheduler".
 
-<Callout icon="lightbulb">
-  Even though you do not need an explicit configuration file for the default scheduler, creating one can help you document and customize the scheduling behavior if needed.
-</Callout>
+> **lightbulb** Even though you do not need an explicit configuration file for the default scheduler, creating one can help you document and customize the scheduling behavior if needed.
 
 ## Default Scheduler Configuration
 

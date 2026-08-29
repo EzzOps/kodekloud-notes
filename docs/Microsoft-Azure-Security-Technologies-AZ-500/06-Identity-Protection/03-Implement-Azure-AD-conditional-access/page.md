@@ -35,9 +35,7 @@ Example use case: allow access only from a trusted corporate network. Even if a 
 |      Conditions | Define when a policy applies                | Users/groups, device state (compliant), location/IP ranges, client app type, platform, sign-in or user risk                                      |
 | Access controls | Define what happens when conditions are met | Allow, Block, Require MFA, Require device compliance, Require approved client app, Require hybrid Azure AD join, Require authentication strength |
 
-<Callout icon="lightbulb">
-  Password reset or forcing a password change is generally handled by Azure AD Identity Protection risk remediation policies rather than as a Conditional Access grant control.
-</Callout>
+> **lightbulb** Password reset or forcing a password change is generally handled by Azure AD Identity Protection risk remediation policies rather than as a Conditional Access grant control.
 
 <Frame>
   <img alt="A slide titled &#x22;Key Features&#x22; with two panels labeled &#x22;Conditions&#x22; and &#x22;Access control,&#x22; each containing a short explanatory blurb. Below the panels are colored circular icons: an orange clipboard-and-pen icon for Conditions and a blue lock/finger-touch icon for Access control." />
@@ -71,9 +69,7 @@ Below is a step-by-step example to create a policy that blocks a single user (Ab
    * New Azure AD tenants enable Security Defaults by default. Security Defaults is a Microsoft-managed set of baseline security controls (including MFA for admins). You cannot create custom Conditional Access policies until you disable Security Defaults.
    * If you plan to manage your own policies, you must disable Security Defaults first.
 
-<Callout icon="warning">
-  Disabling Security Defaults enables custom Conditional Access policies but increases the risk of misconfiguration. Ensure you have protection for privileged/break-glass accounts (for example, keep an emergency admin secured with MFA) before turning it off.
-</Callout>
+> **warning** Disabling Security Defaults enables custom Conditional Access policies but increases the risk of misconfiguration. Ensure you have protection for privileged/break-glass accounts (for example, keep an emergency admin secured with MFA) before turning it off.
 
 3. To disable Security Defaults:
    * Go to Azure Active Directory → Properties → Manage Security Defaults (at the bottom) and switch it off. Follow the prompts and save.
@@ -165,6 +161,4 @@ After creation, review the Conditional Access Overview and policy tiles in the p
 
 Next topic: Access reviews.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d856cd5d-a782-4723-82b7-5a6e69cba71d/lesson/2054c2d2-90a7-4261-98ed-f499287bd97f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d856cd5d-a782-4723-82b7-5a6e69cba71d/lesson/2054c2d2-90a7-4261-98ed-f499287bd97f)

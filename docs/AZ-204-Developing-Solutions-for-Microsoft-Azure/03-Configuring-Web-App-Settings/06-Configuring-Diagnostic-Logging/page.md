@@ -26,7 +26,7 @@ Also available only on Windows, detailed error logging records copies of HTML er
 
 Failed request tracing, another Windows-only feature, provides an in-depth breakdown of step-by-step details for requests that failed to process correctly. This diagnostic tool is particularly beneficial for identifying routing errors, timeouts, or other processing issues that affect request completion.
 
-![The image is a table describing different types of diagnostic logging, their platforms, and descriptions. It includes application logging, web server logging, detailed error logging, and failed request tracing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866180/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Diagnostic-Logging/diagnostic-logging-types-table.jpg)
+![The image is a table describing different types of diagnostic logging, their platforms, and descriptions. It includes application logging, web server logging, detailed error logging, and failed request tracing.](https://kodekloud.com/kk-media/image/upload/v1752866180/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Diagnostic-Logging/diagnostic-logging-types-table.jpg)
 
 ### Deployment Logging
 
@@ -59,7 +59,7 @@ Next, choose your log destination. You can send this information to several endp
 
 For this guide, we will use the Log Analytics Workspace as the destination.
 
-![The image shows a Microsoft Azure portal page for configuring diagnostic settings, where various log categories and destination details are selected for sending data to a Log Analytics workspace.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866181/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Diagnostic-Logging/azure-portal-diagnostic-settings-log.jpg)
+![The image shows a Microsoft Azure portal page for configuring diagnostic settings, where various log categories and destination details are selected for sending data to a Log Analytics workspace.](https://kodekloud.com/kk-media/image/upload/v1752866181/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Diagnostic-Logging/azure-portal-diagnostic-settings-log.jpg)
 
 After saving the diagnostic settings, allow a few minutes for your App Service to start collecting logs in the Log Analytics Workspace.
 
@@ -87,11 +87,11 @@ AppServiceHTTPLogs
 
 This query provides a breakdown of requests by status code, such as the counts for 200, 404, and other responses.
 
-![The image shows the Diagnostic settings page for a web app in Microsoft Azure, displaying options for configuring log and metric exports. It includes a list of diagnostic settings and available data types for collection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866183/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Diagnostic-Logging/azure-web-app-diagnostic-settings.jpg)
+![The image shows the Diagnostic settings page for a web app in Microsoft Azure, displaying options for configuring log and metric exports. It includes a list of diagnostic settings and available data types for collection.](https://kodekloud.com/kk-media/image/upload/v1752866183/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Diagnostic-Logging/azure-web-app-diagnostic-settings.jpg)
 
-![The image shows a Microsoft Azure portal interface displaying log analytics for an application, with a table listing HTTP log entries including details like time generated, category, method, and user agent.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866185/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Diagnostic-Logging/azure-portal-log-analytics-http-logs.jpg)
+![The image shows a Microsoft Azure portal interface displaying log analytics for an application, with a table listing HTTP log entries including details like time generated, category, method, and user agent.](https://kodekloud.com/kk-media/image/upload/v1752866185/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Diagnostic-Logging/azure-portal-log-analytics-http-logs.jpg)
 
-![The image shows a Microsoft Azure portal interface displaying log analytics for a workspace. It includes a query result table with details such as time generated, category, method, and status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866187/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Diagnostic-Logging/azure-portal-log-analytics-workspace.jpg)
+![The image shows a Microsoft Azure portal interface displaying log analytics for a workspace. It includes a query result table with details such as time generated, category, method, and status.](https://kodekloud.com/kk-media/image/upload/v1752866187/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Diagnostic-Logging/azure-portal-log-analytics-workspace.jpg)
 
 > **lightbulb** Using descriptive and specific query examples in your documentation improves its visibility to search engines. Leverage keywords like "Azure diagnostic logging", "Log Analytics queries", and "Azure App Service monitoring" to enhance SEO performance.
 

@@ -79,14 +79,10 @@ References and further reading
 * [Kruskal, Fleiss, and Krippendorff reliability measures](https://en.wikipedia.org/)
 * [Designing effective annotation guidelines — practical tips and templates](https://example.com/annotation-guidelines) (replace with your internal guide)
 
-<Callout icon="lightbulb">
-  For reliable, actionable human evaluation of LLM outputs, combine a diverse evaluator panel with a clear rubric, annotator calibration, multiple independent ratings per item, and explicit inter-rater reliability metrics.
-</Callout>
+> **lightbulb** For reliable, actionable human evaluation of LLM outputs, combine a diverse evaluator panel with a clear rubric, annotator calibration, multiple independent ratings per item, and explicit inter-rater reliability metrics.
 
 <Frame>
   <img alt="The image presents a question about designing a human evaluation protocol for LLM outputs, with an answer highlighting the importance of using a diverse panel of evaluators with clear rubrics and inter-rater reliability metrics." />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/c68e7899-a00c-405e-b3ae-a6cc1f3a837a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/c68e7899-a00c-405e-b3ae-a6cc1f3a837a)

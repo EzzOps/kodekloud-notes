@@ -57,9 +57,7 @@ A typical `package.json` for this example enables ES modules and provides a `bin
 }
 ```
 
-<Callout icon="lightbulb">
-  Make sure `"type": "module"` is present so Node.js accepts ES module `import` syntax in `server.js`.
-</Callout>
+> **lightbulb** Make sure `"type": "module"` is present so Node.js accepts ES module `import` syntax in `server.js`.
 
 ## Files and commands at a glance
 
@@ -238,9 +236,7 @@ Postman supports MCP-style workflows and can invoke stdio transports or HTTP tra
   * `arguments: { "a": 3, "b": 3 }`
 * Postman will display the JSON-RPC responses similar to the command-line examples above.
 
-<Callout icon="lightbulb">
-  If you prefer HTTP transport for testing or integration, you can adapt the server to an HTTP transport or use a proxy that translates HTTP requests to stdio MCP messages.
-</Callout>
+> **lightbulb** If you prefer HTTP transport for testing or integration, you can adapt the server to an HTTP transport or use a proxy that translates HTTP requests to stdio MCP messages.
 
 ## Recap and next steps
 
@@ -264,6 +260,4 @@ Next ideas to extend this project:
 
 Thank you for following this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/a27f1996-5412-4f48-a085-c87d68c51206/lesson/d30edec1-a055-437f-82bc-18aadbcf3985" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/a27f1996-5412-4f48-a085-c87d68c51206/lesson/d30edec1-a055-437f-82bc-18aadbcf3985)

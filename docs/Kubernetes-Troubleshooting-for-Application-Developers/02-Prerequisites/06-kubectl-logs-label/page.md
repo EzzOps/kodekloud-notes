@@ -16,9 +16,7 @@ kubectl logs -l app=notes-app
 
 The command above demonstrates how to retrieve logs from all pods associated with the given label.
 
-<Callout icon="lightbulb">
-  Using labels to filter pods simplifies log retrieval and enhances troubleshooting by aggregating logs from multiple pods in one command.
-</Callout>
+> **lightbulb** Using labels to filter pods simplifies log retrieval and enhances troubleshooting by aggregating logs from multiple pods in one command.
 
 ## Examining the Deployment's Labels
 
@@ -89,14 +87,10 @@ controlplane ~ ➜
 
 Because the pods share the same label (`app=notes-app`), the command returns logs from both pods seamlessly.
 
-<Callout icon="lightbulb">
-  Using label selectors for logging is an efficient technique for monitoring real-time application behavior across multiple pods. This can significantly reduce the overhead of troubleshooting individual pod issues.
-</Callout>
+> **lightbulb** Using label selectors for logging is an efficient technique for monitoring real-time application behavior across multiple pods. This can significantly reduce the overhead of troubleshooting individual pod issues.
 
 This approach streamlines the process of monitoring and debugging, as you no longer need to specify each pod name individually. For further insights into Kubernetes log management and best practices, consider exploring the [Kubernetes Documentation](https://kubernetes.io/docs/).
 
 Happy logging!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/64f81c41-dbec-4e60-b96e-d50d7394202a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/64f81c41-dbec-4e60-b96e-d50d7394202a)

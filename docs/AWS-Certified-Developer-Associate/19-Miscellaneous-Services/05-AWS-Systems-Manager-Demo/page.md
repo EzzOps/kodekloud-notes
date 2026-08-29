@@ -8,33 +8,33 @@ In this lesson, we demonstrate how to use AWS Systems Manager (SSM) to automatic
 
 Before you begin, note that an SSM Agent must be installed on each EC2 instance for Systems Manager to function correctly. For installation instructions on various operating systems, refer to the [official AWS documentation](https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html). For instance, Amazon Linux 2 and Amazon Linux 2023 images usually have the SSM Agent pre-installed, eliminating the need for a manual setup.
 
-![The image shows an AWS EC2 dashboard with two running instances named "server1" and "server2," both of type t2.micro, with details about "server1" displayed below.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859093/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-ec2-dashboard-server-instances.jpg)
+![The image shows an AWS EC2 dashboard with two running instances named "server1" and "server2," both of type t2.micro, with details about "server1" displayed below.](https://kodekloud.com/kk-media/image/upload/v1752859093/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-ec2-dashboard-server-instances.jpg)
 
 ## Setting Up Systems Manager
 
 To begin, navigate to the Systems Manager page in the AWS Management Console. Search for "Systems Manager" and open the service. Click on **Quick Setup** to start configuring host management for automatic EC2 instance management.
 
-![The image shows the AWS Systems Manager Quick Setup interface, displaying various configuration options like Host Management, Config Recording, and Patch Manager. Each option includes a brief description and a "Create" button for setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859094/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-systems-manager-quick-setup-interface.jpg)
+![The image shows the AWS Systems Manager Quick Setup interface, displaying various configuration options like Host Management, Config Recording, and Patch Manager. Each option includes a brief description and a "Create" button for setup.](https://kodekloud.com/kk-media/image/upload/v1752859094/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-systems-manager-quick-setup-interface.jpg)
 
 When you click **Create**, you'll see several configuration options. For example, you can enable the Systems Manager Agent to update automatically every two weeks, collect inventory every 30 minutes, and schedule a daily scan for missing patches. You can also configure the CloudWatch agent and the EC2 launch agent (both with default 30-day update cycles).
 
-![The image shows the AWS Systems Manager interface, specifically the Quick Setup configuration options for managing Systems Manager, Amazon CloudWatch, and Amazon EC2 Launch Agent settings. It includes checkboxes for various update and monitoring tasks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859096/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-systems-manager-quick-setup.jpg)
+![The image shows the AWS Systems Manager interface, specifically the Quick Setup configuration options for managing Systems Manager, Amazon CloudWatch, and Amazon EC2 Launch Agent settings. It includes checkboxes for various update and monitoring tasks.](https://kodekloud.com/kk-media/image/upload/v1752859096/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-systems-manager-quick-setup.jpg)
 
 ### Choosing Targets
 
 Under the targets section, you can deploy the configuration to your entire organization, the current account, or a customized selection. For this demo, select the current account and limit the deployment to the current region (e.g., Northern Virginia, US East 1). You may choose to manage all instances automatically, filter instances by a tag or resource group, or manually select specific instances. In this example, manually choose server one and server two.
 
-![The image shows the AWS Systems Manager interface, displaying a list of EC2 instances with details such as instance ID, type, state, and availability zone. The interface includes options for targeting instances and a summary section for configuration actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859097/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-systems-manager-ec2-instances.jpg)
+![The image shows the AWS Systems Manager interface, displaying a list of EC2 instances with details such as instance ID, type, state, and availability zone. The interface includes options for targeting instances and a summary section for configuration actions.](https://kodekloud.com/kk-media/image/upload/v1752859097/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-systems-manager-ec2-instances.jpg)
 
 After selecting your instances, click **Create**. When the deployment completes, a success status is displayed. The process automatically creates the required IAM roles and assigns the necessary instance profile to your EC2 instances. To verify this, select an EC2 instance, go to **Actions > Security > Modify IAM Role**, and confirm that a role (e.g., "Amazon SSM Quick Setup") is assigned.
 
-![The image shows the AWS Systems Manager interface, specifically the Host Management section, displaying configuration deployment and association statuses with success and pending indicators.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859098/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-systems-manager-host-management.jpg)
+![The image shows the AWS Systems Manager interface, specifically the Host Management section, displaying configuration deployment and association statuses with success and pending indicators.](https://kodekloud.com/kk-media/image/upload/v1752859098/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-systems-manager-host-management.jpg)
 
 You can also review the assigned roles in the IAM console. Searching for “ssm” in the Roles section will display roles such as **SSMManagedInstanceCore** and **SSMPatchAssociation**, which are essential for proper Systems Manager operation.
 
-![The image shows the AWS Identity and Access Management (IAM) console, specifically the "Roles" section, with a search for "ssm" displaying a list of roles related to AWS Systems Manager.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859100/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-iam-console-roles-ssm.jpg)
+![The image shows the AWS Identity and Access Management (IAM) console, specifically the "Roles" section, with a search for "ssm" displaying a list of roles related to AWS Systems Manager.](https://kodekloud.com/kk-media/image/upload/v1752859100/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-iam-console-roles-ssm.jpg)
 
-![The image shows an AWS Identity and Access Management (IAM) console screen, displaying permissions policies for a role, including "AmazonSSMManagedInstanceCore" and "AmazonSSMPatchAssociation."](../../../../images/kodekloud.com/kk-media/image/upload/v1752859101/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-iam-console-permissions-policies.jpg)
+![The image shows an AWS Identity and Access Management (IAM) console screen, displaying permissions policies for a role, including "AmazonSSMManagedInstanceCore" and "AmazonSSMPatchAssociation."](https://kodekloud.com/kk-media/image/upload/v1752859101/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-iam-console-permissions-policies.jpg)
 
 > **lightbulb** Ensure that the IAM roles have the correct permissions to allow Systems Manager functions.
 
@@ -42,23 +42,23 @@ You can also review the assigned roles in the IAM console. Searching for “ssm�
 
 Your EC2 instances need outbound access on port 443 to communicate with SSM endpoints. For instances in a private subnet, configure outbound connectivity using a NAT Gateway. If your instances are in a public subnet, verify that the security group settings allow outbound internet traffic.
 
-![The image shows a webpage from AWS documentation about troubleshooting SSM Agent connectivity issues, specifically focusing on the inability to connect to SSM endpoints. It includes instructions and notes on configuring network settings and using ssm-cli for troubleshooting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859102/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-ssm-agent-troubleshooting-guide.jpg)
+![The image shows a webpage from AWS documentation about troubleshooting SSM Agent connectivity issues, specifically focusing on the inability to connect to SSM endpoints. It includes instructions and notes on configuring network settings and using ssm-cli for troubleshooting.](https://kodekloud.com/kk-media/image/upload/v1752859102/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-ssm-agent-troubleshooting-guide.jpg)
 
 For example, when reviewing server one’s network settings, a default route pointing to a NAT Gateway confirms that outbound connectivity—and access to SSM endpoints—is available.
 
-![The image shows an AWS EC2 dashboard with details of two running instances, focusing on the networking details of "server2."](../../../../images/kodekloud.com/kk-media/image/upload/v1752859104/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-ec2-dashboard-server2-networking.jpg)
+![The image shows an AWS EC2 dashboard with details of two running instances, focusing on the networking details of "server2."](https://kodekloud.com/kk-media/image/upload/v1752859104/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-ec2-dashboard-server2-networking.jpg)
 
 ## Using Fleet Manager and Session Manager
 
 Once Systems Manager is configured and the instances are online, navigate to **Fleet Manager** under Node Management. This dashboard gives you an overview of all managed nodes. Verify that server one and server two are running and having an "online" ping status, which confirms they are ready for further operations.
 
-![The image shows an AWS VPC dashboard displaying details of a subnet, including its ID, state, and associated route table with specific routes listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859105/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-vpc-dashboard-subnet-details.jpg)
+![The image shows an AWS VPC dashboard displaying details of a subnet, including its ID, state, and associated route table with specific routes listed.](https://kodekloud.com/kk-media/image/upload/v1752859105/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-vpc-dashboard-subnet-details.jpg)
 
-![The image shows an AWS Host Management dashboard with configuration deployment and association status, indicating successful deployments and associations. The sidebar includes options for operations, application, change, and node management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859106/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-host-management-dashboard.jpg)
+![The image shows an AWS Host Management dashboard with configuration deployment and association status, indicating successful deployments and associations. The sidebar includes options for operations, application, change, and node management.](https://kodekloud.com/kk-media/image/upload/v1752859106/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-host-management-dashboard.jpg)
 
 A key feature of Systems Manager is Session Manager, which allows you to securely connect to your EC2 instances—even those without public IP addresses. To initiate a session, navigate to the **Session Manager** section or select **Connect** from the EC2 page. This opens a terminal window directly connected to your instance.
 
-![The image shows the AWS Fleet Manager interface displaying a list of managed nodes, including their node IDs, states, names, platforms, and ping statuses. Two nodes are running and online, while one node is stopped with a connection lost.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859107/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-fleet-manager-nodes-status.jpg)
+![The image shows the AWS Fleet Manager interface displaying a list of managed nodes, including their node IDs, states, names, platforms, and ping statuses. Two nodes are running and online, while one node is stopped with a connection lost.](https://kodekloud.com/kk-media/image/upload/v1752859107/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-fleet-manager-nodes-status.jpg)
 
 When connected via Session Manager, you can execute commands on the instance. For example, running `ls -la` lists the directory contents, confirming that you are interacting with the instance’s operating system. This remote connectivity eliminates the need for configuring a separate jump server.
 
@@ -141,11 +141,11 @@ To create a new user across your instances, navigate back to Systems Manager and
 
 Then, manually specify the target instances (e.g., server one and server two) and click **Run**. The command will execute across your selected instances and create the new user.
 
-![The image shows the AWS Systems Manager interface, specifically the "AWSFleetManager-CreateUser" command, with fields for entering user details and options for creating a home directory and performing actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859108/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-systems-manager-create-user.jpg)
+![The image shows the AWS Systems Manager interface, specifically the "AWSFleetManager-CreateUser" command, with fields for entering user details and options for creating a home directory and performing actions.](https://kodekloud.com/kk-media/image/upload/v1752859108/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-systems-manager-create-user.jpg)
 
 After execution, the dashboard will display the command status, including details on target count, completed tasks, and confirmation that no errors occurred.
 
-![The image shows an AWS Systems Manager interface displaying a successful command execution on two EC2 instances, with details on command status and instance information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859109/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-systems-manager-ec2-command-execution.jpg)
+![The image shows an AWS Systems Manager interface displaying a successful command execution on two EC2 instances, with details on command status and instance information.](https://kodekloud.com/kk-media/image/upload/v1752859109/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager-Demo/aws-systems-manager-ec2-command-execution.jpg)
 
 To verify that the new user has been created, log in to one of the EC2 instances (for example, server one) via Session Manager and run:
 

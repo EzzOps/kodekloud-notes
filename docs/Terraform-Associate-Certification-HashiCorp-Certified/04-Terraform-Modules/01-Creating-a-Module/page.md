@@ -12,9 +12,7 @@ In this guide, we will walk you through creating a new Terraform module that dep
 
 Users access the application hosted on the EC2 instance, and this simplified setup utilizes the default VPC. It does not include advanced configurations such as VPC endpoints or specific IAM roles. The high-level architecture diagram below depicts this setup:
 
-<Frame>
-  ![The image depicts a simplified AWS architecture with an EC2 instance, S3 bucket, and DynamoDB table within a default VPC, focusing on payroll data management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884149/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Creating-a-Module/frame_70.jpg)
-</Frame>
+![The image depicts a simplified AWS architecture with an EC2 instance, S3 bucket, and DynamoDB table within a default VPC, focusing on payroll data management.](https://kodekloud.com/kk-media/image/upload/v1752884149/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Creating-a-Module/frame_70.jpg)
 
 The primary goal is to create a reusable Terraform module that deploys a consistent stack of resources across different regions.
 
@@ -126,9 +124,7 @@ module "us_payroll" {
 }
 ```
 
-<Callout icon="lightbulb">
-  If you need to override the default bucket name, you can specify the `bucket` variable in this module configuration.
-</Callout>
+> **lightbulb** If you need to override the default bucket name, you can specify the `bucket` variable in this module configuration.
 
 After setting up the directory, initialize Terraform by running:
 

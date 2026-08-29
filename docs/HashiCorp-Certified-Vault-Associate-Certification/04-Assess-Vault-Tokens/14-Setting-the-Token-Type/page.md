@@ -25,9 +25,7 @@ By defining both a TTL and a `-use-limit`, Vault tokens can expire on whichever 
 * [Vault Token CLI Commands](https://www.vaultproject.io/docs/commands/token)
 * [Vault Best Practices](https://www.vaultproject.io/docs/best-practices)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/966e8b59-f69f-4d8f-8bed-95aedc4091be" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/966e8b59-f69f-4d8f-8bed-95aedc4091be)
 
 
 # Setting the Token Type
@@ -50,9 +48,7 @@ Use `vault token create` flags to define token type, TTL, and renewal behavior.
 | `-ttl`    | Sets a time-to-live (non-renewable)             | `-ttl="60s"`    |
 | `-period` | Creates a renewable (periodic) token            | `-period="24h"` |
 
-<Callout icon="lightbulb">
-  By default, Vault issues a non-renewable **service** token when no `-type` or `-period` is provided.
-</Callout>
+> **lightbulb** By default, Vault issues a non-renewable **service** token when no `-type` or `-period` is provided.
 
 ### Example: Periodic Token (24h)
 
@@ -111,9 +107,7 @@ You can predefine token types for roles within an auth method. This example uses
 | training | batch              | 60s (TTL)       | Short-lived, non-renewable batch token |
 | jenkins  | service → periodic | 72h (renewable) | Renewable periodic service token       |
 
-<Callout icon="triangle-alert">
-  Roles without an explicit `token_type` default to **service** tokens. Ensure you set `token_type` or `period` for the desired behavior.
-</Callout>
+> **triangle-alert** Roles without an explicit `token_type` default to **service** tokens. Ensure you set `token_type` or `period` for the desired behavior.
 
 ## Summary
 
@@ -137,6 +131,4 @@ By using these techniques, you can ensure Vault issues tokens that match your se
 * [AppRole Auth Method](https://www.vaultproject.io/docs/auth/approle)
 * [Vault CLI Commands](https://www.vaultproject.io/docs/commands)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/f03aba50-5092-49f2-9afa-d27fac80c53a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/f03aba50-5092-49f2-9afa-d27fac80c53a)

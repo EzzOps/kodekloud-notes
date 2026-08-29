@@ -4,9 +4,7 @@ DocumentRoot "/kodedu"
 # Further configuration...
 ```
 
-<Frame>
-  ![The image shows a terminal window displaying the configuration file for an Apache HTTP server, with comments and settings related to server directives and log file paths.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883595/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Restore-default-file-contexts/apache-http-server-configuration-terminal.jpg)
-</Frame>
+![The image shows a terminal window displaying the configuration file for an Apache HTTP server, with comments and settings related to server directives and log file paths.](https://kodekloud.com/kk-media/image/upload/v1752883595/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Restore-default-file-contexts/apache-http-server-configuration-terminal.jpg)
 
 After updating the configuration, create the new document root directory and add a simple HTML file:
 
@@ -29,9 +27,7 @@ ls -laZ /kodedu/
 
 Files in `/kodedu` often have a generic context (e.g., `default_t`) instead of the required `httpd_sys_content_t`.
 
-<Callout icon="lightbulb">
-  To resolve this, use the `semanage` command to assign the proper context.
-</Callout>
+> **lightbulb** To resolve this, use the `semanage` command to assign the proper context.
 
 Apply the correct file context with:
 
@@ -72,11 +68,9 @@ In this lesson, you learned how to:
 
 Proceed to your next lab or lecture with these troubleshooting techniques to ensure a secure and smoothly functioning SELinux environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5935b82f-37ac-4f4e-b619-0a6f8824088b/lesson/f0b8a7df-876c-4dc6-b244-5646249e9b1e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5935b82f-37ac-4f4e-b619-0a6f8824088b/lesson/f0b8a7df-876c-4dc6-b244-5646249e9b1e)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5935b82f-37ac-4f4e-b619-0a6f8824088b/lesson/cd35f9c8-f07f-423e-bf97-73b96b18d76f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/5935b82f-37ac-4f4e-b619-0a6f8824088b/lesson/cd35f9c8-f07f-423e-bf97-73b96b18d76f)
 
 
 # Configure PAM

@@ -9,9 +9,7 @@ Verify the new VPC in the AWS Console.
 
 Create `Terraform stack/ec2-web/terragrunt.hcl` and reference the VPC outputs:
 
-<Frame>
-  ![The image shows a split-screen view of a coding environment. On the left, there's a task description about setting dependencies for an EC2 web module, and on the right, there's a code editor displaying Terraform configuration files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884301/notes-assets/images/Terragrunt-for-Beginners-Demo-of-Lab-3/ec2-web-module-terraform-coding-view.jpg)
-</Frame>
+![The image shows a split-screen view of a coding environment. On the left, there's a task description about setting dependencies for an EC2 web module, and on the right, there's a code editor displaying Terraform configuration files.](https://kodekloud.com/kk-media/image/upload/v1752884301/notes-assets/images/Terragrunt-for-Beginners-Demo-of-Lab-3/ec2-web-module-terraform-coding-view.jpg)
 
 ```hcl theme={null}
 terraform {
@@ -110,11 +108,9 @@ By generating the backend, provider, and Terraform-version files at the project 
 
 Thank you for completing Lab Three! You now have a reusable Terragrunt setup for AWS VPC, EC2, and remote state management. See you in the next lab!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/afc1e84c-ca3e-4ad0-a1b0-344073719a34" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/afc1e84c-ca3e-4ad0-a1b0-344073719a34)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/22d3770d-f36b-47c7-bd42-f0a0c8e76214" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/22d3770d-f36b-47c7-bd42-f0a0c8e76214)
 
 
 # Terragrunt Blocks Overview
@@ -125,9 +121,7 @@ This article provides an overview of the seven core Terragrunt configuration blo
 
 In this lesson, we’ll dive into the seven core Terragrunt configuration blocks that power your Terraform workflows. Whether you’re already familiar with Terraform or new to Terragrunt’s advanced features, you’ll learn how each block streamlines state management, dependency handling, and DRY (Don’t Repeat Yourself) principles for infrastructure as code.
 
-<Callout icon="lightbulb">
-  Terragrunt extends Terraform by adding useful wrappers around remote state, dependencies, and configuration generation. If you’re new to Terragrunt, check out the [official Terragrunt documentation](https://terragrunt.gruntwork.io/).
-</Callout>
+> **lightbulb** Terragrunt extends Terraform by adding useful wrappers around remote state, dependencies, and configuration generation. If you’re new to Terragrunt, check out the [official Terragrunt documentation](https://terragrunt.gruntwork.io/).
 
 ## Summary of Terragrunt Blocks
 
@@ -171,9 +165,7 @@ remote_state {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Always enable state locking (e.g., DynamoDB for S3 backends) to prevent concurrent state modifications.
-</Callout>
+> **triangle-alert** Always enable state locking (e.g., DynamoDB for S3 backends) to prevent concurrent state modifications.
 
 ## 3. include Block
 

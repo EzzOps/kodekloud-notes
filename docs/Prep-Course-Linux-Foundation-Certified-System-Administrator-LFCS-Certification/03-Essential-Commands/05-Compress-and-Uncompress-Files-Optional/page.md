@@ -56,9 +56,7 @@ Mandatory arguments to long options are mandatory for short options too.
   -V, --version      display version number
 ```
 
-<Callout icon="lightbulb">
-  Using the `--keep` (or `-k`) option retains the original file when compressing.
-</Callout>
+> **lightbulb** Using the `--keep` (or `-k`) option retains the original file when compressing.
 
 Here are examples of using the `--keep` option:
 

@@ -16,7 +16,7 @@ Log-based metrics capture every event as it occurs, storing them as logs in Appl
 
 Pre-aggregated metrics compile telemetry data into summarized time series, retaining only the key dimensions needed for monitoring. This significantly reduces storage requirements and is ideal for applications that generate large volumes of telemetry. Modern SDKs support pre-aggregation by default, ensuring efficient data collection. Even if your chosen SDK does not support pre-aggregation, Application Insights can automatically aggregate incoming events.
 
-![The image is a comparison table of "Log-Based Metrics" and "Pre-Aggregated Metrics," highlighting their characteristics and uses in application insights.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866717/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Collecting-Application-Logs/log-based-vs-pre-aggregated-metrics.jpg)
+![The image is a comparison table of "Log-Based Metrics" and "Pre-Aggregated Metrics," highlighting their characteristics and uses in application insights.](https://kodekloud.com/kk-media/image/upload/v1752866717/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Collecting-Application-Logs/log-based-vs-pre-aggregated-metrics.jpg)
 
 In summary, choose log-based metrics for detailed diagnostics and pre-aggregated metrics for efficient monitoring in high-scale environments. Your decision should align with your application’s telemetry volume and diagnostic needs.
 
@@ -36,7 +36,7 @@ Distributed tracing is essential for observing microservices and complex distrib
 
 You can enable distributed tracing by instrumenting your application with the Application Insights SDK for .NET, Java, Node.js, or Python. Additionally, libraries like OpenCensus can integrate with Application Insights to offer comprehensive tracing across distributed environments.
 
-![The image is a comparison between "Auto-Instrumentation" and "Instrumenting for Distributed Tracing" for app monitoring, detailing their features and methods. It highlights enabling application monitoring and distributed tracing using Application Insights and OpenCensus.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866719/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Collecting-Application-Logs/auto-instrumentation-vs-distributed-tracing.jpg)
+![The image is a comparison between "Auto-Instrumentation" and "Instrumenting for Distributed Tracing" for app monitoring, detailing their features and methods. It highlights enabling application monitoring and distributed tracing using Application Insights and OpenCensus.](https://kodekloud.com/kk-media/image/upload/v1752866719/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Collecting-Application-Logs/auto-instrumentation-vs-distributed-tracing.jpg)
 
 Auto-instrumentation provides a quick setup for monitoring, especially when your framework is supported natively. Distributed tracing, on the other hand, offers deeper insights into the request flows—a critical aspect for microservices architectures. If auto-instrumentation is not supported in your environment, consider manual instrumentation using the Application Insights SDK or the OpenTelemetry API to ensure complete telemetry ingestion.
 

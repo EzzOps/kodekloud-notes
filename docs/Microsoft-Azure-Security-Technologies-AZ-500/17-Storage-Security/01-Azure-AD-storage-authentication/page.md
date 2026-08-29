@@ -16,13 +16,9 @@ Imagine a scenario where a user who holds the "Storage Blob Contributor" role on
 
 Before Azure AD authentication can be implemented, the storage account must be configured with the appropriate Role-Based Access Control (RBAC) roles. Even if your user account has full subscription access—as an owner or contributor—specific RBAC roles are still required. Similar to configuring Key Vault for secret keys or certificates, each Azure Storage resource type (blob, queues, tables, etc.) has its own set of dedicated roles.
 
-<Frame>
-  ![The image illustrates the Azure AD Authentication process for accessing a Storage Blob Container, highlighting the secure authentication method and the requirement for dedicated RBAC roles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882271/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-storage-authentication/azure-ad-authentication-storage-blob.jpg)
-</Frame>
+![The image illustrates the Azure AD Authentication process for accessing a Storage Blob Container, highlighting the secure authentication method and the requirement for dedicated RBAC roles.](https://kodekloud.com/kk-media/image/upload/v1752882271/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-storage-authentication/azure-ad-authentication-storage-blob.jpg)
 
-<Callout icon="lightbulb">
-  Azure AD authentication integrates access with user identity and RBAC permissions, eliminating the dependency on short-lived tokens like SAS.
-</Callout>
+> **lightbulb** Azure AD authentication integrates access with user identity and RBAC permissions, eliminating the dependency on short-lived tokens like SAS.
 
 ## Configuring Azure AD Authentication for Storage Access
 
@@ -41,13 +37,9 @@ To configure Azure AD Authentication for accessing your Azure Storage, follow th
 4. Generate a new client secret and save its value securely (for example, in Notepad).
 5. Record your tenant ID and the endpoint for V1 authentication.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal, specifically the "App registrations" section under "Kodekloud," with options to manage applications and a message about no owned applications in the directory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882272/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-storage-authentication/azure-portal-app-registrations-kodekloud.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal, specifically the "App registrations" section under "Kodekloud," with options to manage applications and a message about no owned applications in the directory.](https://kodekloud.com/kk-media/image/upload/v1752882272/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-storage-authentication/azure-portal-app-registrations-kodekloud.jpg)
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for app registrations, specifically for an application named "storage-spn." It displays details like the application ID, object ID, and directory ID, along with options for managing credentials and settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882273/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-storage-authentication/azure-portal-app-registration-storage-spn.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for app registrations, specifically for an application named "storage-spn." It displays details like the application ID, object ID, and directory ID, along with options for managing credentials and settings.](https://kodekloud.com/kk-media/image/upload/v1752882273/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-storage-authentication/azure-portal-app-registration-storage-spn.jpg)
 
 ### Assigning the Appropriate Role
 
@@ -58,9 +50,7 @@ Next, ensure your service principal is granted proper access by assigning it the
 3. If you require read-only access, search for "Storage Blob Data Reader" (or choose a role that matches your requirements).
 4. Select your service principal (e.g., storage-SPN) and complete the role assignment.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for adding a role assignment, specifically for storage blob data roles. It lists various roles like "Defender for Storage Data Scanner" and "Storage Blob Data Contributor" with their descriptions and types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882274/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-storage-authentication/azure-portal-role-assignment-storage.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for adding a role assignment, specifically for storage blob data roles. It lists various roles like "Defender for Storage Data Scanner" and "Storage Blob Data Contributor" with their descriptions and types.](https://kodekloud.com/kk-media/image/upload/v1752882274/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-storage-authentication/azure-portal-role-assignment-storage.jpg)
 
 ### Generating and Using the Bearer Token in Postman
 
@@ -109,14 +99,10 @@ To interact with blob storage via Azure AD authentication, perform the following
 
    Resend the request. If configured properly, the storage service should now return the expected data response.
 
-<Callout icon="lightbulb">
-  The bearer token is temporary. Once it expires, you need to re-authenticate to continue accessing the storage account. This process is similar regardless of whether you're using a service principal or a user account.
-</Callout>
+> **lightbulb** The bearer token is temporary. Once it expires, you need to re-authenticate to continue accessing the storage account. This process is similar regardless of whether you're using a service principal or a user account.
 
 By following this guide, you can securely configure and use Azure AD Storage Authentication, harnessing the strength of identity-based access controls and dedicated RBAC roles to protect your data. Mastery of these concepts is crucial for exploring more complex topics like blob data retention policies.
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7acacade-befa-46b1-99e2-3f298d33623d/lesson/7b677959-a885-40e4-8997-40db80f88e33" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7acacade-befa-46b1-99e2-3f298d33623d/lesson/7b677959-a885-40e4-8997-40db80f88e33)

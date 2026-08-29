@@ -29,15 +29,11 @@ Git branches allow you to develop different versions of your project simultaneou
 
 Imagine your master branch is currently at version 1.0 with file1 and file2. The diagram below illustrates this concept by presenting the "Master branch" as the stable codebase accessed by users.
 
-<Frame>
-  ![The image illustrates a diagram of Git branches, highlighting the "Master branch" as the stable version, with users accessing it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881246/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Branches-and-Remote-Repositories/git-branches-master-branch-diagram.jpg)
-</Frame>
+![The image illustrates a diagram of Git branches, highlighting the "Master branch" as the stable version, with users accessing it.](https://kodekloud.com/kk-media/image/upload/v1752881246/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Branches-and-Remote-Repositories/git-branches-master-branch-diagram.jpg)
 
 To experiment or develop new features without affecting the master branch, create a new branch. In this case, the branch is named "1.1-testing" to indicate that it is under development.
 
-<Frame>
-  ![The image illustrates a Git branching structure, showing a "Master branch" with a "1.0 Branch" and a "1.1 - testing" branch, each containing files with different versions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881247/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Branches-and-Remote-Repositories/git-branching-structure-master-versions.jpg)
-</Frame>
+![The image illustrates a Git branching structure, showing a "Master branch" with a "1.0 Branch" and a "1.1 - testing" branch, each containing files with different versions.](https://kodekloud.com/kk-media/image/upload/v1752881247/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Branches-and-Remote-Repositories/git-branching-structure-master-versions.jpg)
 
 ──────────────────────────────
 
@@ -68,9 +64,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-<Callout icon="lightbulb">
-  Before committing, always add your changes to the staging area using "git add" to ensure that only the intended modifications are committed.
-</Callout>
+> **lightbulb** Before committing, always add your changes to the staging area using "git add" to ensure that only the intended modifications are committed.
 
 Proceed to add and commit your changes:
 
@@ -194,9 +188,7 @@ ssh-ed25519 AAAAC3NzaC1lZDII1NTE5AAAAIBwgR4rMy6jBVr3GUM2OejEiLRHTaRrxgGpgzYWzwtt
 
 Copy the displayed key and add it to your GitHub account under Settings → SSH and GPG keys.
 
-<Frame>
-  ![The image shows a GitHub settings page where a user is adding a new SSH key, with options for key type and a field for the key itself.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881249/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Branches-and-Remote-Repositories/github-settings-add-ssh-key.jpg)
-</Frame>
+![The image shows a GitHub settings page where a user is adding a new SSH key, with options for key type and a field for the key itself.](https://kodekloud.com/kk-media/image/upload/v1752881249/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Branches-and-Remote-Repositories/github-settings-add-ssh-key.jpg)
 
 After adding your SSH key, you can securely push your changes.
 
@@ -212,9 +204,7 @@ git clone git@github.com:jeremykodekloud/kkproject.git
 
 This command creates a local directory named "kkproject" along with a hidden .git folder containing all commit history.
 
-<Frame>
-  ![The image shows a GitHub repository page for "kkproject" with options to clone the repository using HTTPS, SSH, or GitHub CLI. It also suggests adding a README file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881250/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Branches-and-Remote-Repositories/kkproject-github-repo-clone-options.jpg)
-</Frame>
+![The image shows a GitHub repository page for "kkproject" with options to clone the repository using HTTPS, SSH, or GitHub CLI. It also suggests adding a README file.](https://kodekloud.com/kk-media/image/upload/v1752881250/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Branches-and-Remote-Repositories/kkproject-github-repo-clone-options.jpg)
 
 ──────────────────────────────
 
@@ -246,15 +236,11 @@ Added our first two files to get the project started
 
 For further reading and advanced Git techniques, please visit the [KodeKloud Git Documentation](https://www.kodekloud.com).
 
-<Frame>
-  ![The image shows a section of the Git manual for the git-add command, detailing its name, synopsis, and description. It explains how the command updates the index with content from the working tree for the next commit.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881251/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Branches-and-Remote-Repositories/git-add-command-manual-section.jpg)
-</Frame>
+![The image shows a section of the Git manual for the git-add command, detailing its name, synopsis, and description. It explains how the command updates the index with content from the working tree for the next commit.](https://kodekloud.com/kk-media/image/upload/v1752881251/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Git-Branches-and-Remote-Repositories/git-add-command-manual-section.jpg)
 
 ──────────────────────────────
 This lesson has covered the fundamental techniques for working with Git branches and remote repositories. Continue with our next lesson to further enhance your Git skills.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/bbbfc366-f8b0-4cda-88b5-1ca4043f0b4a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/bbbfc366-f8b0-4cda-88b5-1ca4043f0b4a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/d5b0561e-7331-425a-af4c-ca91f2c61d1a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/115b1db7-7970-4cc8-91d4-0ac4892fed9f/lesson/d5b0561e-7331-425a-af4c-ca91f2c61d1a)

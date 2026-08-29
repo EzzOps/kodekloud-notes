@@ -14,19 +14,19 @@ Start by navigating to the US East (us-east-1) region in your AWS Management Con
 
 1. Go to the Volumes section and click on **Create Volume**.
 
-![The image shows an AWS management console displaying a list of Elastic Block Store (EBS) volumes with details like volume ID, type, size, IOPS, and availability zone. The interface includes options for managing instances and other AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859611/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-1/aws-management-console-ebs-volumes.jpg)
+![The image shows an AWS management console displaying a list of Elastic Block Store (EBS) volumes with details like volume ID, type, size, IOPS, and availability zone. The interface includes options for managing instances and other AWS services.](https://kodekloud.com/kk-media/image/upload/v1752859611/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-1/aws-management-console-ebs-volumes.jpg)
 
 2. Select the volume type (default is acceptable) and set the volume size to 10 GB. It is essential to choose the correct Availability Zone—here, "us-east-1a". You may enable encryption as needed, but for this demonstration it remains disabled.
 
-![The image shows an Amazon Web Services (AWS) interface for creating an EBS volume, with options for size, IOPS, availability zone, encryption, and tags.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859612/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-1/aws-ebs-volume-creation-interface.jpg)
+![The image shows an Amazon Web Services (AWS) interface for creating an EBS volume, with options for size, IOPS, availability zone, encryption, and tags.](https://kodekloud.com/kk-media/image/upload/v1752859612/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-1/aws-ebs-volume-creation-interface.jpg)
 
 3. Once the volume is created, verify that it appears in the console with an "available" status:
 
-![The image shows an AWS EC2 dashboard displaying a list of EBS volumes with details such as volume ID, type, size, and status. A specific volume is highlighted, showing its detailed information below.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859614/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-1/aws-ec2-dashboard-ebs-volumes.jpg)
+![The image shows an AWS EC2 dashboard displaying a list of EBS volumes with details such as volume ID, type, size, and status. A specific volume is highlighted, showing its detailed information below.](https://kodekloud.com/kk-media/image/upload/v1752859614/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-1/aws-ec2-dashboard-ebs-volumes.jpg)
 
 4. Assign a suitable name (for example, "demo volume"). When the volume is available, select it, choose **Actions**, and then click on **Attach Volume**. The management console will show EC2 instances within the same Availability Zone—select server one.
 
-![The image shows an AWS EC2 console screen for attaching a volume to an instance, with options to select the instance and device name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859614/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-1/aws-ec2-attach-volume-console.jpg)
+![The image shows an AWS EC2 console screen for attaching a volume to an instance, with options to select the instance and device name.](https://kodekloud.com/kk-media/image/upload/v1752859614/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-1/aws-ec2-attach-volume-console.jpg)
 
 Note that when you attach the volume, AWS assigns a device name (commonly starting as "/dev/sdf") which might be renamed (e.g., to "/dev/xvdf") by the Linux kernel.
 
@@ -207,9 +207,9 @@ This section demonstrates the portability of an EBS volume between EC2 instances
    * Navigate to the EBS volume details in the AWS Management Console.
    * Select the "demo volume", click **Actions**, and then select **Detach Volume**.
 
-![The image shows an AWS EC2 dashboard displaying a list of volumes, with details about a specific volume named "demo-volume" highlighted, including its ID, type, size, and status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859616/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-1/aws-ec2-dashboard-demo-volume.jpg)
+![The image shows an AWS EC2 dashboard displaying a list of volumes, with details about a specific volume named "demo-volume" highlighted, including its ID, type, size, and status.](https://kodekloud.com/kk-media/image/upload/v1752859616/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-1/aws-ec2-dashboard-demo-volume.jpg)
 
-![The image shows an AWS EC2 management console with a pop-up confirmation dialog asking if the user wants to detach a specific volume. The dialog provides information about potential charges for detached volumes and offers "Cancel" and "Detach" options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859617/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-1/aws-ec2-detach-volume-dialog.jpg)
+![The image shows an AWS EC2 management console with a pop-up confirmation dialog asking if the user wants to detach a specific volume. The dialog provides information about potential charges for detached volumes and offers "Cancel" and "Detach" options.](https://kodekloud.com/kk-media/image/upload/v1752859617/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-1/aws-ec2-detach-volume-dialog.jpg)
 
 3. **Attach the Volume to Server Two:**
 

@@ -8,9 +8,7 @@ span.set_attribute("file.size_kb", 328)
 
 Note that even if a virus is not detected, you still usually want to record file details on the span; those belong as attributes because they describe the span regardless of whether the event occurred.
 
-<Callout icon="lightbulb">
-  Use span events for time-specific occurrences and span attributes for persistent metadata describing the span.
-</Callout>
+> **lightbulb** Use span events for time-specific occurrences and span attributes for persistent metadata describing the span.
 
 Key distinctions and guidance
 
@@ -48,9 +46,7 @@ References and further reading
 
 This concludes the explanation of span events vs span attributes.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/af5a1bca-aa16-4e9b-87af-3ed6ba4a969d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/af5a1bca-aa16-4e9b-87af-3ed6ba4a969d)
 
 
 # Span Events
@@ -104,9 +100,7 @@ Common uses are capturing milestones such as a DB query completion, an external 
 }
 ```
 
-<Callout icon="lightbulb">
-  [OpenTelemetry](https://opentelemetry.io/docs/specs/otel/semantic_conventions/exceptions/) recommends recording exceptions as span events so they remain connected to the trace context and are timestamped for easier debugging.
-</Callout>
+> **lightbulb** [OpenTelemetry](https://opentelemetry.io/docs/specs/otel/semantic_conventions/exceptions/) recommends recording exceptions as span events so they remain connected to the trace context and are timestamped for easier debugging.
 
 Recording exceptions as span events keeps the error context within the trace itself, simplifying root-cause analysis and making it easier to see exactly when and where a problem happened.
 
@@ -202,6 +196,4 @@ Links and references
 * [OpenTelemetry: Tracing overview](https://opentelemetry.io/docs/specs/otel/overview/)
 * [OpenTelemetry SDKs and APIs](https://opentelemetry.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/81cdac8a-ce21-43b3-a994-a7cda8cb9c8c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/81cdac8a-ce21-43b3-a994-a7cda8cb9c8c)

@@ -51,7 +51,7 @@ EKS extends the Kubernetes API with custom resources and services in your AWS ac
 
 These data plane components reside within your AWS account, giving you control over scaling, updates, and monitoring.
 
-![The image is a diagram illustrating the components of an EKS (Elastic Kubernetes Service) control plane, including etcd nodes, controller managers, schedulers, API servers, and integrations with AWS CloudWatch and OIDC Endpoint. It also shows add-ons and node groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862775/notes-assets/images/AWS-EKS-Architecture/eks-control-plane-components-diagram.jpg)
+![The image is a diagram illustrating the components of an EKS (Elastic Kubernetes Service) control plane, including etcd nodes, controller managers, schedulers, API servers, and integrations with AWS CloudWatch and OIDC Endpoint. It also shows add-ons and node groups.](https://kodekloud.com/kk-media/image/upload/v1752862775/notes-assets/images/AWS-EKS-Architecture/eks-control-plane-components-diagram.jpg)
 
 This diagram provides a holistic view of the Amazon EKS control plane services, AWS integrations, and data plane extensions that power a resilient Kubernetes cluster on AWS.
 

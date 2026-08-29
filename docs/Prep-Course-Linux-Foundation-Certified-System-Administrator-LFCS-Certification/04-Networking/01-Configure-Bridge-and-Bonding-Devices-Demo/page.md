@@ -30,9 +30,7 @@ network:
 
 This configuration defines a single Ethernet interface (`enp3s0`) with DHCP disabled, and a bridge (`br0`) that obtains an IP address via DHCP. This file serves as our starting template.
 
-<Callout icon="lightbulb">
-  Before making any modifications, verify that the network interfaces referenced in the configuration match your system’s hardware.
-</Callout>
+> **lightbulb** Before making any modifications, verify that the network interfaces referenced in the configuration match your system’s hardware.
 
 ## Copying and Securing the Configuration File
 
@@ -109,9 +107,7 @@ To remove the bridge configuration and free up the network interfaces, simply de
 sudo ip link delete br0
 ```
 
-<Callout icon="lightbulb">
-  For a complete reset of network settings in a production environment, consider rebooting the system after deleting the configuration.
-</Callout>
+> **lightbulb** For a complete reset of network settings in a production environment, consider rebooting the system after deleting the configuration.
 
 ## Configuring Network Bonding
 
@@ -154,13 +150,11 @@ In this configuration:
 
 For additional bonding modes (such as balance-rr, balance-xor, broadcast, 802.3ad, balance-tlb, or balance-alb), review the bonding documentation and adjust the parameters accordingly.
 
-<Callout icon="lightbulb">
-  For a deeper understanding of the bonding options and Netplan configuration, consult the manual by running:
+> **lightbulb** For a deeper understanding of the bonding options and Netplan configuration, consult the manual by running:
 
   sudo man netplan
 
   Then search for "bonding" within the manual.
-</Callout>
 
 Apply the new Netplan configuration:
 
@@ -205,12 +199,8 @@ sudo ip link set dev bond0 down
 sudo ip addr add 10.0.0.9/24 dev bond0
 ```
 
-<Callout icon="lightbulb">
-  Changes made with the IP command are temporary and will be reset after a system reboot.
-</Callout>
+> **lightbulb** Changes made with the IP command are temporary and will be reset after a system reboot.
 
 Thank you for following this tutorial. Happy networking, and see you in the next article!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/1c101353-86c6-4fc2-883a-874fbc94ccc1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/1c101353-86c6-4fc2-883a-874fbc94ccc1)

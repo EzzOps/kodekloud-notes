@@ -21,7 +21,7 @@ AWS offers a suite of tools that provide complete observability into your system
 
 Effective log analysis and alerting are vital for early detection of deployment issues. AWS CloudWatch, along with CloudWatch Logs Insights, analyzes log data and triggers notifications when predefined thresholds are met. This proactive monitoring can significantly reduce downtime and enhance system resilience.
 
-![The image illustrates a process flow for log analysis and alerting, involving a user sending logs to AWS CloudWatch, which applies a log filter, triggers an Amazon CloudWatch Alarm, and sends an email notification.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860325/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Strategies-for-Identifying-and-Remedying-Deployment-Issues/log-analysis-alerting-process-flow.jpg)
+![The image illustrates a process flow for log analysis and alerting, involving a user sending logs to AWS CloudWatch, which applies a log filter, triggers an Amazon CloudWatch Alarm, and sends an email notification.](https://kodekloud.com/kk-media/image/upload/v1752860325/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Strategies-for-Identifying-and-Remedying-Deployment-Issues/log-analysis-alerting-process-flow.jpg)
 
 In addition to reactive monitoring, integrating automated tests into both pre-production and production pipelines helps ensure ongoing operational health.
 
@@ -29,19 +29,19 @@ In addition to reactive monitoring, integrating automated tests into both pre-pr
 
 Ensuring the validity of deployments can be efficiently achieved by incorporating health checks. Health checks can be conducted using load balancers or Amazon Route 53, while custom metrics and logs are collected via CloudWatch. This approach confirms that deployments meet expected performance and operational standards.
 
-![The image illustrates a deployment validation process using health checks, showing an Elastic Load Balancer connected to an instance with specified protocol, port, and endpoint details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860326/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Strategies-for-Identifying-and-Remedying-Deployment-Issues/deployment-validation-health-checks-elb.jpg)
+![The image illustrates a deployment validation process using health checks, showing an Elastic Load Balancer connected to an instance with specified protocol, port, and endpoint details.](https://kodekloud.com/kk-media/image/upload/v1752860326/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Strategies-for-Identifying-and-Remedying-Deployment-Issues/deployment-validation-health-checks-elb.jpg)
 
 ## Debugging and Tracing in Distributed Systems
 
 For environments comprising multiple interdependent services, AWS X-Ray is essential for debugging and tracing distributed systems. The service map feature in X-Ray, integrated within CloudWatch, provides insightful diagrams and performance metrics across AWS services (e.g., API Gateway, Lambda), allowing you to quickly identify performance bottlenecks.
 
-![The image shows a diagram and table related to debugging and tracing in distributed systems, featuring AWS services like API Gateway and Lambda. It includes a trace map and performance metrics for different components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860327/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Strategies-for-Identifying-and-Remedying-Deployment-Issues/debugging-tracing-distributed-systems-diagram.jpg)
+![The image shows a diagram and table related to debugging and tracing in distributed systems, featuring AWS services like API Gateway and Lambda. It includes a trace map and performance metrics for different components.](https://kodekloud.com/kk-media/image/upload/v1752860327/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Strategies-for-Identifying-and-Remedying-Deployment-Issues/debugging-tracing-distributed-systems-diagram.jpg)
 
 ## Monitoring Service Level Objectives (SLOs)
 
 Defining and monitoring Service Level Objectives (SLOs) is crucial for maintaining service quality. AWS CloudWatch enables you to set up SLOs and configure alerts that notify you when performance or error thresholds are exceeded. By continuously measuring SLOs, you can ensure that your services remain within acceptable performance boundaries.
 
-![The image shows a dashboard for analyzing metrics and user feedback, focusing on Service Level Objectives (SLOs) with graphs and tables indicating performance and status. It includes data on latency and error budgets for different services, highlighting areas that are "Unhealthy" or "Healthy."](../../../../images/kodekloud.com/kk-media/image/upload/v1752860328/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Strategies-for-Identifying-and-Remedying-Deployment-Issues/slo-dashboard-metrics-analysis.jpg)
+![The image shows a dashboard for analyzing metrics and user feedback, focusing on Service Level Objectives (SLOs) with graphs and tables indicating performance and status. It includes data on latency and error budgets for different services, highlighting areas that are "Unhealthy" or "Healthy."](https://kodekloud.com/kk-media/image/upload/v1752860328/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Strategies-for-Identifying-and-Remedying-Deployment-Issues/slo-dashboard-metrics-analysis.jpg)
 
 ## Advanced Monitoring Features
 

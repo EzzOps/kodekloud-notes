@@ -15,7 +15,7 @@ AWS CodePipeline integrates with AWS services like CodeCommit, CodeBuild, and Co
 
 This automated workflow also supports manual review steps prior to progressing to production.
 
-![The image illustrates an AWS CodePipeline workflow, showing stages from AWS CodeCommit to CodeBuild, CodeDeploy, and manual review, leading to staging and production environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858056/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline/aws-codepipeline-workflow-diagram.jpg)
+![The image illustrates an AWS CodePipeline workflow, showing stages from AWS CodeCommit to CodeBuild, CodeDeploy, and manual review, leading to staging and production environments.](https://kodekloud.com/kk-media/image/upload/v1752858056/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline/aws-codepipeline-workflow-diagram.jpg)
 
 The diagram above clearly demonstrates how CodePipeline connects various AWS services to construct robust CI/CD pipelines. Rather than adding new features, its primary focus lies in orchestrating the automation process.
 
@@ -34,7 +34,7 @@ When designing a CI/CD pipeline with CodePipeline, the process generally involve
 
 To efficiently transition code artifacts between stages, CodePipeline uses artifacts generated at each step, ensuring seamless propagation of the application throughout the pipeline.
 
-![The image illustrates an AWS CodePipeline workflow, showing the sequence from AWS CodeCommit to CodeBuild, CodeDeploy, and finally to AWS EC2.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858057/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline/aws-codepipeline-workflow-diagram-2.jpg)
+![The image illustrates an AWS CodePipeline workflow, showing the sequence from AWS CodeCommit to CodeBuild, CodeDeploy, and finally to AWS EC2.](https://kodekloud.com/kk-media/image/upload/v1752858057/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline/aws-codepipeline-workflow-diagram-2.jpg)
 
 > **lightbulb** Artifacts are crucial in CodePipeline as they encapsulate the state of your application at various stages, guaranteeing consistency from source code commits to production deployments.
 
@@ -54,7 +54,7 @@ AWS CodePipeline goes beyond basic pipeline orchestration by offering advanced f
 * **Third-Party Integrations**\
   Seamlessly integrate with external tools like GitHub, Bitbucket, and Jenkins, allowing you to maintain your preferred development environment.
 
-![The image lists four features: automated pipelines, integration with AWS services, flexible workflow modeling and custom actions, and manual approval steps. Each feature is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858058/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline/features-automated-pipelines-aws-integration.jpg)
+![The image lists four features: automated pipelines, integration with AWS services, flexible workflow modeling and custom actions, and manual approval steps. Each feature is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752858058/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline/features-automated-pipelines-aws-integration.jpg)
 
 > **triangle-alert** Ensure you configure proper identity and access management (IAM) policies when integrating CodePipeline with other AWS services and third-party tools to maintain a secure CI/CD process.
 
@@ -62,7 +62,7 @@ AWS CodePipeline goes beyond basic pipeline orchestration by offering advanced f
 
 AWS CodePipeline automates the entire release lifecycle by coordinating services such as CodeCommit, CodeBuild, and CodeDeploy. Leveraging artifacts for data transfer between stages and incorporating manual approvals where necessary, CodePipeline establishes a robust framework for continuous integration and delivery.
 
-![The image is a summary slide highlighting four points about a process: automating build, test, and deploy phases; orchestrating CodeCommit, CodeBuild, and CodeDeploy; passing artifacts between pipeline stages; and supporting manual approvals.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858059/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline/automating-build-test-deploy-summary.jpg)
+![The image is a summary slide highlighting four points about a process: automating build, test, and deploy phases; orchestrating CodeCommit, CodeBuild, and CodeDeploy; passing artifacts between pipeline stages; and supporting manual approvals.](https://kodekloud.com/kk-media/image/upload/v1752858059/notes-assets/images/AWS-Certified-Developer-Associate-CodePipeline/automating-build-test-deploy-summary.jpg)
 
 For more details on setting up and optimizing your CI/CD pipelines on AWS, consider exploring the following resources:
 

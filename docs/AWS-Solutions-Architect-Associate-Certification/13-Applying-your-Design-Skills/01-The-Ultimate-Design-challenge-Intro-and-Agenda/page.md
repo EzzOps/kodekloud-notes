@@ -34,7 +34,7 @@ Consider these available services:
 
 To complete the challenge, drag DataSync into the corresponding gray box and click the submit button. If your selection is incorrect, the system will prompt you to try again until the correct service is identified.
 
-![The image depicts an AWS architecture diagram for capturing and analyzing laboratory instrument logs, featuring services like Amazon S3, AWS Lambda, and Amazon Elasticsearch Service, among others. It outlines a data processing pipeline from experiment execution to data storage and analysis.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863443/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-The-Ultimate-Design-challenge-Intro-and-Agenda/aws-architecture-laboratory-logs-diagram.jpg)
+![The image depicts an AWS architecture diagram for capturing and analyzing laboratory instrument logs, featuring services like Amazon S3, AWS Lambda, and Amazon Elasticsearch Service, among others. It outlines a data processing pipeline from experiment execution to data storage and analysis.](https://kodekloud.com/kk-media/image/upload/v1752863443/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-The-Ultimate-Design-challenge-Intro-and-Agenda/aws-architecture-laboratory-logs-diagram.jpg)
 
 ## Scenario Two: Development Environment Architecture
 
@@ -44,7 +44,7 @@ Imagine an environment where development teams require a robust monitoring syste
 * Application monitoring
 * Database scalability
 
-![The image depicts a system architecture diagram for a development environment using AWS and IBM services, highlighting components like Instana SaaS, Amazon EC2, and various AWS services for container orchestration and database management. It includes a task to identify three integral services for container orchestration, application monitoring, and database scalability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863444/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-The-Ultimate-Design-challenge-Intro-and-Agenda/aws-ibm-architecture-diagram.jpg)
+![The image depicts a system architecture diagram for a development environment using AWS and IBM services, highlighting components like Instana SaaS, Amazon EC2, and various AWS services for container orchestration and database management. It includes a task to identify three integral services for container orchestration, application monitoring, and database scalability.](https://kodekloud.com/kk-media/image/upload/v1752863444/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-The-Ultimate-Design-challenge-Intro-and-Agenda/aws-ibm-architecture-diagram.jpg)
 
 Key considerations for this scenario:
 

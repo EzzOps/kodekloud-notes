@@ -8,9 +8,7 @@ In this lesson you'll install the CustomResourceDefinition (CRD) into your clust
 
 Work from the WebApp operator project root directory. Every Make target reads the local Makefile and project files, so running commands from elsewhere may fail.
 
-<Callout icon="lightbulb">
-  Always run the commands from the operator project root so `make` targets, generated code, and file paths resolve correctly.
-</Callout>
+> **lightbulb** Always run the commands from the operator project root so `make` targets, generated code, and file paths resolve correctly.
 
 ## 1) Verify the API types
 
@@ -194,6 +192,4 @@ Next steps: implement the reconcile function to perform desired actions (e.g., c
 * [Kubebuilder Book](https://book.kubebuilder.io/)
 * [controller-runtime documentation](https://pkg.go.dev/sigs.k8s.io/controller-runtime)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/a59c9831-1bc2-49c9-86c4-15fa3b632341" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/a59c9831-1bc2-49c9-86c4-15fa3b632341)

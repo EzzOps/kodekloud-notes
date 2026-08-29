@@ -51,7 +51,7 @@ Outputs:
 3. Under **Template source**, select **Upload a template file**, choose the YAML above, then **Next**.
 4. Enter **CloudWatch-Dashboard-App01** as the stack name, accept defaults, acknowledge IAM changes, and click **Create stack**.
 
-![The image shows an AWS CloudFormation interface for creating a stack, where a user can prepare and specify a template by uploading a YAML file. The interface includes options to choose a template source and upload a file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862486/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-Cloudwatch-Dashboards/aws-cloudformation-stack-template-upload.jpg)
+![The image shows an AWS CloudFormation interface for creating a stack, where a user can prepare and specify a template by uploading a YAML file. The interface includes options to choose a template source and upload a file.](https://kodekloud.com/kk-media/image/upload/v1752862486/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-Cloudwatch-Dashboards/aws-cloudformation-stack-template-upload.jpg)
 
 Wait until the stack reaches **CREATE\_COMPLETE**.
 
@@ -63,7 +63,7 @@ Wait until the stack reaches **CREATE\_COMPLETE**.
 2. Confirm your t2.micro instance is **running**.
 3. Under **Security → IAM role**, ensure `EC2DynamoDBRole` is attached.
 
-![The image shows an AWS EC2 dashboard displaying details of a running instance, including its ID, type, security details, and inbound rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862488/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-Cloudwatch-Dashboards/aws-ec2-dashboard-running-instance-details.jpg)
+![The image shows an AWS EC2 dashboard displaying details of a running instance, including its ID, type, security details, and inbound rules.](https://kodekloud.com/kk-media/image/upload/v1752862488/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-Cloudwatch-Dashboards/aws-ec2-dashboard-running-instance-details.jpg)
 
 ## 3. Connect via Session Manager
 
@@ -72,7 +72,7 @@ Use AWS Systems Manager Session Manager to get a shell without SSH keys:
 1. In the **EC2** console, select the instance.
 2. Click **Connect** → **Session Manager** → **Connect**.
 
-![The image shows an AWS EC2 console interface for connecting to an instance, with options for connection type and a button to connect.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862489/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-Cloudwatch-Dashboards/aws-ec2-console-connection-interface.jpg)
+![The image shows an AWS EC2 console interface for connecting to an instance, with options for connection type and a button to connect.](https://kodekloud.com/kk-media/image/upload/v1752862489/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-Cloudwatch-Dashboards/aws-ec2-console-connection-interface.jpg)
 
 Once connected, switch to root and navigate:
 
@@ -176,7 +176,7 @@ python3 app.py
 
 In the **DynamoDB** console, under **Tables**, confirm **ShoppingData** is active:
 
-![The image shows the Amazon DynamoDB console with a table named "ShoppingData" that is active, displaying details like partition key, status, and capacity modes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862490/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-Cloudwatch-Dashboards/amazon-dynamodb-console-shoppingdata-table.jpg)
+![The image shows the Amazon DynamoDB console with a table named "ShoppingData" that is active, displaying details like partition key, status, and capacity modes.](https://kodekloud.com/kk-media/image/upload/v1752862490/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-Cloudwatch-Dashboards/amazon-dynamodb-console-shoppingdata-table.jpg)
 
 ## 6. Apply Load with a Stress Script
 
@@ -204,7 +204,7 @@ This generates CPU, memory, and disk activity on the instance.
 2. Name it **Application-01** and click **Create dashboard**.
 3. For each widget, choose **Add widget** and select the type.
 
-![The image shows an AWS CloudWatch dashboard interface for adding a widget, with options like Line, Number, Gauge, and Pie charts. There are also data source options for Metrics and Logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862491/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-Cloudwatch-Dashboards/aws-cloudwatch-dashboard-widget-options.jpg)
+![The image shows an AWS CloudWatch dashboard interface for adding a widget, with options like Line, Number, Gauge, and Pie charts. There are also data source options for Metrics and Logs.](https://kodekloud.com/kk-media/image/upload/v1752862491/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-Cloudwatch-Dashboards/aws-cloudwatch-dashboard-widget-options.jpg)
 
 ### 7.1 EC2 CPU Metrics (Line Chart)
 
@@ -246,7 +246,7 @@ This generates CPU, memory, and disk activity on the instance.
 
 Your dashboard should now look like this:
 
-![The image shows an AWS CloudWatch dashboard for "application-01," displaying CPU metrics, successful request latency, and DynamoDB write capacity. It includes a note about the on-call engineer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862492/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-Cloudwatch-Dashboards/aws-cloudwatch-dashboard-application-01.jpg)
+![The image shows an AWS CloudWatch dashboard for "application-01," displaying CPU metrics, successful request latency, and DynamoDB write capacity. It includes a note about the on-call engineer.](https://kodekloud.com/kk-media/image/upload/v1752862492/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-Cloudwatch-Dashboards/aws-cloudwatch-dashboard-application-01.jpg)
 
 ### 7.6 Alarm Status (Alarm Status Widget)
 
@@ -258,7 +258,7 @@ Your dashboard should now look like this:
 
 Now you’ll see live alarm indicators:
 
-![The image shows an AWS CloudWatch dashboard for "application-01," displaying various metrics such as CPU utilization, DynamoDB write capacity, and request latency, along with an alert notification.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862493/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-Cloudwatch-Dashboards/aws-cloudwatch-dashboard-application-01-2.jpg)
+![The image shows an AWS CloudWatch dashboard for "application-01," displaying various metrics such as CPU utilization, DynamoDB write capacity, and request latency, along with an alert notification.](https://kodekloud.com/kk-media/image/upload/v1752862493/notes-assets/images/AWS-CloudWatch-Demo-Hands-on-with-Cloudwatch-Dashboards/aws-cloudwatch-dashboard-application-01-2.jpg)
 
 ## 8. Cleanup
 
@@ -352,7 +352,7 @@ Annotations and alert overviews keep your team informed:
 
 By selecting the right combination of these visualization types, you can tailor your CloudWatch Dashboard to meet your monitoring goals, accelerate troubleshooting, and maintain operational excellence.
 
-![The image is a categorized list of visualization types, including "Graphs and Charts," "Stats and Numbers," "Misc," and "Widgets," each with specific examples like "Time Series" and "Table."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862494/notes-assets/images/AWS-CloudWatch-Different-types-of-Visualizations/visualization-types-graphs-charts-widgets.jpg)
+![The image is a categorized list of visualization types, including "Graphs and Charts," "Stats and Numbers," "Misc," and "Widgets," each with specific examples like "Time Series" and "Table."](https://kodekloud.com/kk-media/image/upload/v1752862494/notes-assets/images/AWS-CloudWatch-Different-types-of-Visualizations/visualization-types-graphs-charts-widgets.jpg)
 
 ## Links and References
 

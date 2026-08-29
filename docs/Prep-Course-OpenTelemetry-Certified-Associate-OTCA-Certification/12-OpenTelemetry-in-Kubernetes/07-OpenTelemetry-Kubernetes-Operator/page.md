@@ -26,9 +26,7 @@ There are two common installation methods:
 
 Before installing, ensure a certificate manager is available in the cluster. The operator requires webhook TLS certificates to perform automatic injection and manage CRD webhooks.
 
-<Callout icon="lightbulb">
-  `cert-manager` (or an equivalent certificate manager) must be present in the cluster before installing the operator because the operator creates webhook certificates automatically. See the cert-manager documentation for installation steps.
-</Callout>
+> **lightbulb** `cert-manager` (or an equivalent certificate manager) must be present in the cluster before installing the operator because the operator creates webhook certificates automatically. See the cert-manager documentation for installation steps.
 
 ### Helm installation example
 
@@ -114,6 +112,4 @@ Because the operator supports multiple deployment patterns (Deployment, DaemonSe
 * OpenTelemetry project: [https://opentelemetry.io/](https://opentelemetry.io/)
 * Helm documentation: [https://helm.sh/docs/](https://helm.sh/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/0bdd2c57-a0b1-479d-8f67-475499c0dc59" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/0bdd2c57-a0b1-479d-8f67-475499c0dc59)

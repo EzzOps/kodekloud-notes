@@ -23,7 +23,7 @@ steps:
 4. Select your `KodeKloud Key Vault Connection` and choose the vault `KodeKloudKeyVault123`.
 5. Add the secret **DBPassword** and click **Save**.
 
-![The image shows an Azure DevOps interface for configuring a variable group named "KeyVaultSecrets," with options to link secrets from an Azure key vault. A warning message indicates the need for secret management permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867928/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Pipelines-Secrets-with-Azure-Key-Vault/azure-devops-variable-group-keyvault-secrets.jpg)
+![The image shows an Azure DevOps interface for configuring a variable group named "KeyVaultSecrets," with options to link secrets from an Azure key vault. A warning message indicates the need for secret management permissions.](https://kodekloud.com/kk-media/image/upload/v1752867928/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Pipelines-Secrets-with-Azure-Key-Vault/azure-devops-variable-group-keyvault-secrets.jpg)
 
 ## 6. Retrieving and Using the Secret in a Pipeline
 
@@ -53,7 +53,7 @@ steps:
 
 Run the pipeline and, when prompted, grant permission for the service connection to read Key Vault secrets.
 
-![The image shows an Azure DevOps pipeline interface where a permission request is needed to access a resource, with options to permit or cancel the action.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867929/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Pipelines-Secrets-with-Azure-Key-Vault/azure-devops-pipeline-permission-request.jpg)
+![The image shows an Azure DevOps pipeline interface where a permission request is needed to access a resource, with options to permit or cancel the action.](https://kodekloud.com/kk-media/image/upload/v1752867929/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Azure-Pipelines-Secrets-with-Azure-Key-Vault/azure-devops-pipeline-permission-request.jpg)
 
 Upon successful execution, you’ll see the retrieval step complete with the password masked in the logs:
 
@@ -150,14 +150,14 @@ To inspect secrets in a repository:
 1. Navigate to **Settings** → **Secrets and variables**.
 2. Choose **Actions**, **Codespaces**, or **Dependabot**.
 
-![The image shows a GitHub repository settings page for "Actions secrets and variables," displaying a repository secret named "AZURE\_WEBAPP\_PUBLISH\_PROFILE."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867930/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Secrets/github-repo-actions-secrets-variables.jpg)
+![The image shows a GitHub repository settings page for "Actions secrets and variables," displaying a repository secret named "AZURE\_WEBAPP\_PUBLISH\_PROFILE."](https://kodekloud.com/kk-media/image/upload/v1752867930/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Secrets/github-repo-actions-secrets-variables.jpg)
 
 #### Variables vs. Secrets
 
 * **Secrets** are encrypted and masked in logs.
 * **Variables** hold non-sensitive data (e.g., server names) and can be updated centrally.
 
-![The image shows a GitHub repository settings page for "Actions secrets and variables," with options to manage secrets and variables. The "Variables" tab is selected, and there are no repository variables currently set.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867931/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Secrets/github-repo-actions-secrets-variables-2.jpg)
+![The image shows a GitHub repository settings page for "Actions secrets and variables," with options to manage secrets and variables. The "Variables" tab is selected, and there are no repository variables currently set.](https://kodekloud.com/kk-media/image/upload/v1752867931/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Secrets/github-repo-actions-secrets-variables-2.jpg)
 
 ## Creating and Updating Repository Secrets
 
@@ -166,11 +166,11 @@ To inspect secrets in a repository:
 3. Enter a **Name** (e.g., `API_KEY`) and the secret **Value**.
 4. Click **Add secret**.
 
-![The image shows a GitHub interface where a user is adding a new secret under "Actions secrets" in the settings of a project. The fields for "Name" and "Secret" are being filled out.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867932/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Secrets/github-actions-secrets-settings-interface.jpg)
+![The image shows a GitHub interface where a user is adding a new secret under "Actions secrets" in the settings of a project. The fields for "Name" and "Secret" are being filled out.](https://kodekloud.com/kk-media/image/upload/v1752867932/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Secrets/github-actions-secrets-settings-interface.jpg)
 
 Once created, the secret appears in the list—its value remains hidden:
 
-![The image shows a GitHub repository settings page for managing "Actions secrets and variables," with an "API\_KEY" listed as a repository secret.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867933/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Secrets/github-repo-settings-actions-secrets.jpg)
+![The image shows a GitHub repository settings page for managing "Actions secrets and variables," with an "API\_KEY" listed as a repository secret.](https://kodekloud.com/kk-media/image/upload/v1752867933/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Secrets/github-repo-settings-actions-secrets.jpg)
 
 To update a secret, click **Edit**, provide a new value, and re-authenticate if prompted.
 
@@ -194,11 +194,11 @@ jobs:
 
 Here, `${{ secrets.API_KEY }}` retrieves the value securely.
 
-![The image shows a GitHub Actions setup page for a repository, offering options to configure workflows such as a simple workflow or deployment to various cloud services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867935/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Secrets/github-actions-workflow-setup-page.jpg)
+![The image shows a GitHub Actions setup page for a repository, offering options to configure workflows such as a simple workflow or deployment to various cloud services.](https://kodekloud.com/kk-media/image/upload/v1752867935/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Secrets/github-actions-workflow-setup-page.jpg)
 
 Commit the workflow and trigger it manually or on push. GitHub masks the secret in logs, replacing characters with `***`, while your external endpoint receives the correct token.
 
-![The image shows a GitHub Actions interface with a workflow file named main.yml and two recent workflow runs. The interface includes options for managing workflows and running them manually.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867936/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Secrets/github-actions-workflow-main-yml.jpg)
+![The image shows a GitHub Actions interface with a workflow file named main.yml and two recent workflow runs. The interface includes options for managing workflows and running them manually.](https://kodekloud.com/kk-media/image/upload/v1752867936/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Secrets/github-actions-workflow-main-yml.jpg)
 
 > **triangle-alert** Secrets are **not** exposed to workflows triggered by pull requests from forks. This prevents unauthorized access to your credentials.
 
@@ -283,7 +283,7 @@ steps:
 
 ## Best Practices for GitHub Secrets
 
-![The image shows a list of best practices for managing secrets in code, including limiting exposure, using short-lived tokens, and enabling secret scanning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867937/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Secrets/best-practices-managing-secrets-code.jpg)
+![The image shows a list of best practices for managing secrets in code, including limiting exposure, using short-lived tokens, and enabling secret scanning.](https://kodekloud.com/kk-media/image/upload/v1752867937/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Secrets/best-practices-managing-secrets-code.jpg)
 
 * Limit access with fine-grained permissions.
 * Use short-lived tokens or ephemeral credentials.

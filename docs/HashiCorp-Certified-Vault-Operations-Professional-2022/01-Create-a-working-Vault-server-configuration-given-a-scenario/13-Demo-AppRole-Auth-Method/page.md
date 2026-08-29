@@ -29,9 +29,7 @@ For more, see the [Vault API Reference](https://www.vaultproject.io/api-docs).
 
 Response wrapping lets you transmit secrets securely over untrusted channels (e.g., email, chat). Instead of sending raw data, Vault issues a **wrapping token**, stores the secret in that token’s cubbyhole, and returns only the token. The recipient unpacks it to retrieve the secret.
 
-<Frame>
-  ![The image is a slide explaining the concept of "Response Wrapping" in a security context, highlighting the use of a temporary, single-use wrapping token to securely retrieve secrets over a network. It includes a cartoon character illustration at the bottom right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878400/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Cubbyhole-Secrets-Engine/response-wrapping-security-token-illustration.jpg)
-</Frame>
+![The image is a slide explaining the concept of "Response Wrapping" in a security context, highlighting the use of a temporary, single-use wrapping token to securely retrieve secrets over a network. It includes a cartoon character illustration at the bottom right.](https://kodekloud.com/kk-media/image/upload/v1752878400/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Cubbyhole-Secrets-Engine/response-wrapping-security-token-illustration.jpg)
 
 ## Workflow Overview
 
@@ -41,9 +39,7 @@ Response wrapping lets you transmit secrets securely over untrusted channels (e.
 4. Requester shares the wrapping token over any channel.
 5. Recipient unwraps the token to fetch the secret.
 
-<Frame>
-  ![The image illustrates a process called "Response Wrapping" involving five steps for securely handling secrets using a token system. It shows two characters, one with access to secrets and one without, interacting with a vault to wrap and unwrap secrets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878401/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Cubbyhole-Secrets-Engine/response-wrapping-token-system-illustration.jpg)
-</Frame>
+![The image illustrates a process called "Response Wrapping" involving five steps for securely handling secrets using a token system. It shows two characters, one with access to secrets and one without, interacting with a vault to wrap and unwrap secrets.](https://kodekloud.com/kk-media/image/upload/v1752878401/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Cubbyhole-Secrets-Engine/response-wrapping-token-system-illustration.jpg)
 
 ## Benefits
 
@@ -53,9 +49,7 @@ Response wrapping lets you transmit secrets securely over untrusted channels (e.
 | Malfeasance Detection | Single-use tokens prevent multiple unwrappings.          |
 | Lifetime Limitation   | Tokens expire quickly (e.g., default TTL of 60 seconds). |
 
-<Frame>
-  ![The image outlines the benefits of response wrapping, highlighting privacy, malfeasance detection, and limitation of secret exposure lifetime. It features a yellow background with a cartoon character in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878403/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Cubbyhole-Secrets-Engine/response-wrapping-benefits-privacy-cartoon.jpg)
-</Frame>
+![The image outlines the benefits of response wrapping, highlighting privacy, malfeasance detection, and limitation of secret exposure lifetime. It features a yellow background with a cartoon character in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878403/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Cubbyhole-Secrets-Engine/response-wrapping-benefits-privacy-cartoon.jpg)
 
 ***
 
@@ -97,9 +91,7 @@ In the Vault UI:
 2. Click **Copy**, then **Wrap Secret**.
 3. The wrap token appears in the bottom-right panel—copy and share it.
 
-<Frame>
-  ![The image is a tutorial on how to wrap a secret using a user interface, showing a screenshot of a Vault application with steps highlighted for copying and wrapping a secret.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878404/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Cubbyhole-Secrets-Engine/vault-secret-wrapping-tutorial-screenshot.jpg)
-</Frame>
+![The image is a tutorial on how to wrap a secret using a user interface, showing a screenshot of a Vault application with steps highlighted for copying and wrapping a secret.](https://kodekloud.com/kk-media/image/upload/v1752878404/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Cubbyhole-Secrets-Engine/vault-secret-wrapping-tutorial-screenshot.jpg)
 
 ***
 
@@ -136,9 +128,7 @@ vault unwrap
 
 In the UI, go to **Tools » Unwrap**, paste your wrapping token, then click **Unwrap Data**. The secret fields will display in the panel.
 
-<Frame>
-  ![The image shows a user interface for unwrapping data using a tool, with steps highlighted for entering a wrapping token and viewing unwrapped data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878405/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Cubbyhole-Secrets-Engine/data-unwrapping-tool-user-interface.jpg)
-</Frame>
+![The image shows a user interface for unwrapping data using a tool, with steps highlighted for entering a wrapping token and viewing unwrapped data.](https://kodekloud.com/kk-media/image/upload/v1752878405/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Cubbyhole-Secrets-Engine/data-unwrapping-tool-user-interface.jpg)
 
 ***
 
@@ -150,9 +140,7 @@ Cubbyhole and response wrapping are key patterns for securely sharing static or 
 * [Vault CLI Commands](https://www.vaultproject.io/docs/commands)
 * [Vault API Reference](https://www.vaultproject.io/api-docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/fb642978-4f5c-4527-8d65-8c7d6fda5ece" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/fb642978-4f5c-4527-8d65-8c7d6fda5ece)
 
 
 # Demo AppRole Auth Method
@@ -321,9 +309,7 @@ secret_id_accessor  6daa5f2e-e3f1-e29d-af10-65dd0860f23b
 secret_id_ttl       0s
 ```
 
-<Callout icon="triangle-alert">
-  Treat both Role ID and Secret ID as sensitive credentials. Avoid exposing them in logs, version control, or shared terminals.
-</Callout>
+> **triangle-alert** Treat both Role ID and Secret ID as sensitive credentials. Avoid exposing them in logs, version control, or shared terminals.
 
 ## 7. Authenticate with AppRole
 
@@ -349,21 +335,17 @@ token_policies        ["kv-policy" "default"]
 
 You now hold a Vault token, renewable for 24 hours, with read-only access to `kv/data/*`.
 
-<Callout icon="lightbulb">
-  AppRole is ideal for automation and CI/CD pipelines. You can also authenticate via the HTTP API:\
+> **lightbulb** AppRole is ideal for automation and CI/CD pipelines. You can also authenticate via the HTTP API:\
   POST `/v1/auth/approle/login` with JSON body:
 
   ```json theme={null}
   { "role_id": "...", "secret_id": "..." }
   ```
-</Callout>
 
 ***
 
 You have successfully configured Vault’s AppRole auth method. For more details, see the [Vault AppRole Authentication Guide](https://www.vaultproject.io/docs/auth/approle).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/deedd4da-a247-449a-925d-2f6c0b99b4de" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/deedd4da-a247-449a-925d-2f6c0b99b4de)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/a78e07d2-c84d-4821-a40b-1826158fcbd2" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/a78e07d2-c84d-4821-a40b-1826158fcbd2)

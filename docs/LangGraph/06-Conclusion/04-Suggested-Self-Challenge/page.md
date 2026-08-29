@@ -61,9 +61,7 @@ When modeling state, prefer well-typed, minimal fields. Example state shape:
 }
 ```
 
-<Callout icon="lightbulb">
-  When designing state, favor small, well-typed fields over opaque blobs — it makes debugging, testing, and persistence far easier.
-</Callout>
+> **lightbulb** When designing state, favor small, well-typed fields over opaque blobs — it makes debugging, testing, and persistence far easier.
 
 ### Practical tips for interruptions and resumption
 
@@ -119,9 +117,7 @@ This is a great way to connect and grow. The self-challenge is the bridge from l
   <img alt="The image features three takeaways for learning: &#x22;Build something meaningful to solidify your learning,&#x22; &#x22;Push the boundaries of what you learned,&#x22; and &#x22;Reflect, iterate, and grow as an AI builder.&#x22;" />
 </Frame>
 
-<Callout icon="warning">
-  Be mindful of user privacy and safety: never store sensitive personal data or API secrets in cleartext state. Add guards to interruption points to prevent accidental exposure of sensitive content.
-</Callout>
+> **warning** Be mindful of user privacy and safety: never store sensitive personal data or API secrets in cleartext state. Add guards to interruption points to prevent accidental exposure of sensitive content.
 
 Good luck — explore, build, and share what you create.
 
@@ -131,6 +127,4 @@ Good luck — explore, build, and share what you create.
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) — for deployment patterns
 * [GitHub](https://github.com) — share your project and tag it with `#LangGraphChallenge`
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/fba2d122-092f-42c8-bc27-0955ffaf786b/lesson/affcf52b-eb19-4a3a-b925-24f4a2c541f0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/fba2d122-092f-42c8-bc27-0955ffaf786b/lesson/affcf52b-eb19-4a3a-b925-24f4a2c541f0)

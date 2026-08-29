@@ -199,10 +199,10 @@ If needed, you can remove the table or database using standard SQL commands:
 
 This demonstration explained how to upload a CSV file to an S3 bucket, create an external table in Amazon Athena that references the CSV data, and execute SQL queries to retrieve and filter your data. For further details, refer to the [Amazon Athena documentation](https://docs.aws.amazon.com/athena).
 
-![The image shows an Amazon Web Services (AWS) interface for creating a table from S3 bucket data using Amazon Athena. It includes fields for table details and database configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858604/notes-assets/images/AWS-Certified-Developer-Associate-Athena-Demo/aws-athena-s3-table-creation.jpg)
+![The image shows an Amazon Web Services (AWS) interface for creating a table from S3 bucket data using Amazon Athena. It includes fields for table details and database configuration.](https://kodekloud.com/kk-media/image/upload/v1752858604/notes-assets/images/AWS-Certified-Developer-Associate-Athena-Demo/aws-athena-s3-table-creation.jpg)
 
-![The image shows a section of the AWS console where a user is defining column details for a table, including column names, types, and optional descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858605/notes-assets/images/AWS-Certified-Developer-Associate-Athena-Demo/aws-console-table-column-details.jpg)
+![The image shows a section of the AWS console where a user is defining column details for a table, including column names, types, and optional descriptions.](https://kodekloud.com/kk-media/image/upload/v1752858605/notes-assets/images/AWS-Certified-Developer-Associate-Athena-Demo/aws-console-table-column-details.jpg)
 
-![The image shows a screenshot of an AWS Athena query editor displaying a table with user data, including columns for ID, first name, last name, email, profession, and country. The query results indicate 43 entries with various professions and email addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858606/notes-assets/images/AWS-Certified-Developer-Associate-Athena-Demo/aws-athena-query-user-data.jpg)
+![The image shows a screenshot of an AWS Athena query editor displaying a table with user data, including columns for ID, first name, last name, email, profession, and country. The query results indicate 43 entries with various professions and email addresses.](https://kodekloud.com/kk-media/image/upload/v1752858606/notes-assets/images/AWS-Certified-Developer-Associate-Athena-Demo/aws-athena-query-user-data.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/ac3fe785-4e7a-4f57-ae16-99fcd3cfde7e/lesson/36081b27-725d-4551-8e8b-718553800434)

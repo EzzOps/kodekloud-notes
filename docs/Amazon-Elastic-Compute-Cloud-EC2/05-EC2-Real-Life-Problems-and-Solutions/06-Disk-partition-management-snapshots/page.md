@@ -19,7 +19,7 @@ Selecting the appropriate EBS volume type is critical for meeting your performan
 | io1         | High-performance databases    | Up to 64,000  |
 | io2         | Mission-critical applications | Up to 64,000  |
 
-![The image illustrates EBS disk partitioning, showing a pie chart with sections for OS and data volumes, and lists volume types such as gp3, gp2, io2, and io1.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869074/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Disk-partition-management-snapshots/ebc-disk-partitioning-pie-chart.jpg)
+![The image illustrates EBS disk partitioning, showing a pie chart with sections for OS and data volumes, and lists volume types such as gp3, gp2, io2, and io1.](https://kodekloud.com/kk-media/image/upload/v1752869074/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Disk-partition-management-snapshots/ebc-disk-partitioning-pie-chart.jpg)
 
 > **lightbulb** gp3 volumes let you provision IOPS and throughput independently, often yielding cost savings for variable workloads.
 

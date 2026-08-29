@@ -24,9 +24,7 @@ The following conditions and equipment are mandatory for the remote exam:
 * Webcam cables must be at least one meter long.
 * Prior to starting, you will need to show your testing environment. The area should be quiet, well-lit, and free of unnecessary equipment or electronics, as it will be inspected by the proctor via webcam.
 
-<Callout icon="lightbulb">
-  Before your exam day, verify that your computer meets all technical requirements by reviewing the remote exam e-book provided by Red Hat. Also, ensure that your identification documents are clearly visible on your webcam to avoid any issues during verification.
-</Callout>
+> **lightbulb** Before your exam day, verify that your computer meets all technical requirements by reviewing the remote exam e-book provided by Red Hat. Also, ensure that your identification documents are clearly visible on your webcam to avoid any issues during verification.
 
 ## Identification Requirements
 
@@ -39,9 +37,7 @@ Candidates must adhere to the following identification guidelines:
 
 For further reference, visit the [Red Hat Certification FAQ](https://www.redhat.com/en/services/certification/faq).
 
-<Frame>
-  ![The image contains information about RHCSA exam identification requirements, stating that candidates must be 16 or older and need a government-issued photo ID for verification. It also provides guidance for those without access to such IDs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883539/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Exam-Details/rhcsa-exam-id-requirements-guide.jpg)
-</Frame>
+![The image contains information about RHCSA exam identification requirements, stating that candidates must be 16 or older and need a government-issued photo ID for verification. It also provides guidance for those without access to such IDs.](https://kodekloud.com/kk-media/image/upload/v1752883539/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Exam-Details/rhcsa-exam-id-requirements-guide.jpg)
 
 ## Allowed Tools and Resources During the Exam
 
@@ -52,16 +48,10 @@ During the RHCSA exam, candidates can use several built-in tools and resourcesâ€
 * The info command
 * Packages that are part of the distribution and not additional installations
 
-<Callout icon="triangle-alert">
-  Remember, only use the resources provided within the exam's Linux terminal. Any external or unauthorized material usage may lead to disqualification.
-</Callout>
+> **triangle-alert** Remember, only use the resources provided within the exam's Linux terminal. Any external or unauthorized material usage may lead to disqualification.
 
-<Frame>
-  ![The image lists resources allowed during the RHCSA exam, including man pages, documents installed by the distribution, and packages that are part of the distribution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883540/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Exam-Details/rhcsa-exam-allowed-resources.jpg)
-</Frame>
+![The image lists resources allowed during the RHCSA exam, including man pages, documents installed by the distribution, and packages that are part of the distribution.](https://kodekloud.com/kk-media/image/upload/v1752883540/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Exam-Details/rhcsa-exam-allowed-resources.jpg)
 
 I wish you the best of luck in your exam preparation. When you succeed, be sure to celebrate and share your achievement on social mediaâ€”tag us to let everyone know about your accomplishment!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c9f83040-7854-48ac-a875-45c1271f6b26/lesson/996ab211-8d11-4b74-8835-4bfe3562a200" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c9f83040-7854-48ac-a875-45c1271f6b26/lesson/996ab211-8d11-4b74-8835-4bfe3562a200)

@@ -39,9 +39,7 @@ Why state locking matters
 * Without locking, simultaneous applies can corrupt state or leave resources in an inconsistent state.
 * The Azure Storage backend leverages blob leasing so only one apply can modify the state at any time.
 
-<Callout icon="warning">
-  Never rely on ephemeral build agent disks to persist your Terraform state. Use a remote backend with locking to avoid state corruption and accidental resource recreation.
-</Callout>
+> **warning** Never rely on ephemeral build agent disks to persist your Terraform state. Use a remote backend with locking to avoid state corruption and accidental resource recreation.
 
 Typical backend setup in Azure
 
@@ -100,10 +98,6 @@ References and further reading
 * Storage Blob Data Contributor role — [https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor)
 * Azure Blob leases for locking — [https://learn.microsoft.com/en-us/rest/api/storageservices/lease-container](https://learn.microsoft.com/en-us/rest/api/storageservices/lease-container)
 
-<Callout icon="lightbulb">
-  Using a dedicated, RBAC-protected storage account with Azure Blob versioning and Entra ID authentication gives you secure, durable, and recoverable Terraform state for CI/CD pipelines.
-</Callout>
+> **lightbulb** Using a dedicated, RBAC-protected storage account with Azure Blob versioning and Entra ID authentication gives you secure, durable, and recoverable Terraform state for CI/CD pipelines.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/70677d20-46be-4257-9a02-34aa382b3b05/lesson/cafab432-987d-4070-913b-0dfb01721aa3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/70677d20-46be-4257-9a02-34aa382b3b05/lesson/cafab432-987d-4070-913b-0dfb01721aa3)

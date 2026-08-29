@@ -50,9 +50,7 @@ Comparison: Push vs Pull
 | Security            |     Requires CI/CD access to cluster | Reduced blast radius—operator runs with scoped permissions |
 | Typical fit         |      Non-Kubernetes or simple setups | Kubernetes-centric, production-grade ops                   |
 
-<Callout icon="lightbulb">
-  For Kubernetes-focused deployments, the pull model (with a GitOps operator like Argo CD) is generally recommended because it provides continuous reconciliation, better audit trails, and reduced operational complexity.
-</Callout>
+> **lightbulb** For Kubernetes-focused deployments, the pull model (with a GitOps operator like Argo CD) is generally recommended because it provides continuous reconciliation, better audit trails, and reduced operational complexity.
 
 Key takeaways
 
@@ -67,6 +65,4 @@ References and further reading
 * [Argo CD documentation](https://argo-cd.readthedocs.io/en/stable/)
 * [Kubernetes documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/0ddd5879-550c-4c12-82cd-ac19fb487de5/lesson/6919992f-40a7-4a4b-aafa-7e8cdcb5ba6b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/0ddd5879-550c-4c12-82cd-ac19fb487de5/lesson/6919992f-40a7-4a4b-aafa-7e8cdcb5ba6b)

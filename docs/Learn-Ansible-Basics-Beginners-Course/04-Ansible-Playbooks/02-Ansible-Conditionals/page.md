@@ -58,9 +58,7 @@ Ansible automatically populates the built-in variable `ansible_os_family` with t
       when: ansible_os_family == "RedHat" or ansible_os_family == "SUSE"
 ```
 
-<Callout icon="lightbulb">
-  Ensure that the `ansible_os_family` and `ansible_distribution_version` facts are correctly set in your inventory and gathered before executing these tasks.
-</Callout>
+> **lightbulb** Ensure that the `ansible_os_family` and `ansible_distribution_version` facts are correctly set in your inventory and gathered before executing these tasks.
 
 ## Using Conditionals in Loops
 
@@ -111,9 +109,7 @@ Another practical scenario involves triggering subsequent tasks based on the out
 
 In this playbook, the output of the `service httpd status` command is captured using the `register` keyword. The subsequent task checks if the service status includes the word "down" and sends an alert if the condition is met.
 
-<Callout icon="lightbulb">
-  Always validate the output captured from commands before using string methods like `find` to avoid unexpected behavior.
-</Callout>
+> **lightbulb** Always validate the output captured from commands before using string methods like `find` to avoid unexpected behavior.
 
 ## Summary Table of Conditionals Use Cases
 
@@ -127,6 +123,4 @@ By mastering conditionals in Ansible, you can create dynamic and robust playbook
 
 Happy automating!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/f7bcdbad-4792-4e82-beaa-b799773214fd/lesson/b274b2a6-14fa-42c4-8682-9e94608f7164" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/f7bcdbad-4792-4e82-beaa-b799773214fd/lesson/b274b2a6-14fa-42c4-8682-9e94608f7164)

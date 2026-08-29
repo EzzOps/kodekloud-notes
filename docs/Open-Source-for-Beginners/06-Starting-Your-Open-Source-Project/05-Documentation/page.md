@@ -69,9 +69,7 @@ Use `inline code` to highlight commands or file names.
 
 Fenced code blocks support syntax highlighting. Specify the language after the opening backticks:
 
-<Callout icon="lightbulb">
-  Always include the language identifier (e.g., `javascript`, `python`) for better readability.
-</Callout>
+> **lightbulb** Always include the language identifier (e.g., `javascript`, `python`) for better readability.
 
 ```javascript theme={null}
 console.log("Hello, world!");
@@ -110,9 +108,7 @@ Now that you’ve mastered Markdown basics, you’re ready to write clear, SEO-f
 * [CommonMark Spec](https://spec.commonmark.org/)
 * [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/767d06e2-2c02-403c-aa37-6e4a5549e6a6/lesson/48c8da8d-edee-4c5b-afeb-fcc37a9a4256" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/767d06e2-2c02-403c-aa37-6e4a5549e6a6/lesson/48c8da8d-edee-4c5b-afeb-fcc37a9a4256)
 
 
 # Documentation
@@ -146,9 +142,7 @@ At the entry point of most repositories sits the **README.md**. It typically cov
 * Installation instructions
 * Basic usage examples
 
-<Frame>
-  ![The image shows a dark interface with a central icon resembling a document and code symbol, accompanied by three buttons labeled "Project Details," "Set Guidelines," and "Core Working." On the left, there are three vertical icons in different colors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882564/notes-assets/images/Open-Source-for-Beginners-Documentation/dark-interface-document-code-icons.jpg)
-</Frame>
+![The image shows a dark interface with a central icon resembling a document and code symbol, accompanied by three buttons labeled "Project Details," "Set Guidelines," and "Core Working." On the left, there are three vertical icons in different colors.](https://kodekloud.com/kk-media/image/upload/v1752882564/notes-assets/images/Open-Source-for-Beginners-Documentation/dark-interface-document-code-icons.jpg)
 
 ### README Essentials
 
@@ -156,9 +150,7 @@ At the entry point of most repositories sits the **README.md**. It typically cov
 2. **Quick Start:** `git clone`, installation prerequisites, and first steps.
 3. **Usage Examples:** Code snippets or CLI examples demonstrating common tasks.
 
-<Callout icon="lightbulb">
-  Keep your README updated with each release. Link to deeper guides or reference documentation to avoid bloating the main file.
-</Callout>
+> **lightbulb** Keep your README updated with each release. Link to deeper guides or reference documentation to avoid bloating the main file.
 
 ## Contribution Guidelines (CONTRIBUTING.md)
 
@@ -168,9 +160,7 @@ The **CONTRIBUTING.md** file tells potential contributors how to participate:
 * Branch naming and commit message conventions
 * Testing requirements and code style checks
 
-<Callout icon="lightbulb">
-  A clear CONTRIBUTING.md reduces friction and encourages first-time contributors. Include templates for issues and PRs where possible.
-</Callout>
+> **lightbulb** A clear CONTRIBUTING.md reduces friction and encourages first-time contributors. Include templates for issues and PRs where possible.
 
 ## Issue Tracking & Discussions
 
@@ -184,9 +174,7 @@ Most projects manage bugs and feature requests through platforms like [GitHub Is
 | GitHub Issues      | Bug reports, feature requests          | [https://docs.github.com/en/issues](https://docs.github.com/en/issues)                       |
 | GitLab Discussions | Community feedback, design discussions | [https://docs.gitlab.com/ee/user/discussions/](https://docs.gitlab.com/ee/user/discussions/) |
 
-<Callout icon="triangle-alert">
-  Always include a Code of Conduct and issue templates. This ensures contributors know the process and fosters a welcoming environment.
-</Callout>
+> **triangle-alert** Always include a Code of Conduct and issue templates. This ensures contributors know the process and fosters a welcoming environment.
 
 ## Additional Resources
 
@@ -196,6 +184,4 @@ Most projects manage bugs and feature requests through platforms like [GitHub Is
 
 By adopting these conventions and maintaining clear, structured documentation, you’ll streamline collaboration, improve onboarding, and help your project thrive.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/767d06e2-2c02-403c-aa37-6e4a5549e6a6/lesson/1c672a0a-ce32-452c-ae18-a7b072929c56" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/767d06e2-2c02-403c-aa37-6e4a5549e6a6/lesson/1c672a0a-ce32-452c-ae18-a7b072929c56)

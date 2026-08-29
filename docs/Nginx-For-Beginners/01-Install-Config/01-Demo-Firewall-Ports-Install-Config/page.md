@@ -55,9 +55,7 @@ In this lab the firewall is initially inactive, so both services are reachable d
 
 UFW (Uncomplicated Firewall) is a simple frontend to manage Linux iptables rules. See the official UFW documentation for details: [https://help.ubuntu.com/community/UFW](https://help.ubuntu.com/community/UFW). The recommended workflow is to enable UFW and explicitly allow only the ports your system needs.
 
-<Callout icon="lightbulb">
-  Before enabling the firewall, always make sure you allow SSH access (for example `sudo ufw allow OpenSSH` or `sudo ufw allow 22/tcp`) so you don't lock yourself out of the server.
-</Callout>
+> **lightbulb** Before enabling the firewall, always make sure you allow SSH access (for example `sudo ufw allow OpenSSH` or `sudo ufw allow 22/tcp`) so you don't lock yourself out of the server.
 
 ## Typical UFW workflow
 

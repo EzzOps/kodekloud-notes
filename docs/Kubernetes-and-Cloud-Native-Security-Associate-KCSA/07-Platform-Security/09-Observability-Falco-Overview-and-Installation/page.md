@@ -17,9 +17,7 @@ Falco captures kernel events via two primary methods, then filters them through 
 
 Once captured, events flow through Falco’s user-space components—including Sysdig libraries and the Falco policy engine—where they’re evaluated against rules. Alerts can be forwarded to syslog, standard output, Slack, email, and other sinks.
 
-<Frame>
-  ![The image is a diagram of Falco's architecture, showing the interaction between applications, syscalls, the Falco kernel module, eBPF, and components like the policy engine, libraries, and Falco rules, leading to output.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880892/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Observability-Falco-Overview-and-Installation/falco-architecture-diagram-syscalls.jpg)
-</Frame>
+![The image is a diagram of Falco's architecture, showing the interaction between applications, syscalls, the Falco kernel module, eBPF, and components like the policy engine, libraries, and Falco rules, leading to output.](https://kodekloud.com/kk-media/image/upload/v1752880892/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Observability-Falco-Overview-and-Installation/falco-architecture-diagram-syscalls.jpg)
 
 ## Installation Methods
 
@@ -34,8 +32,6 @@ You have two common ways to deploy Falco, depending on your access level and pla
 
 Use this approach if you can install packages and kernel modules directly on your host. It ensures Falco remains operational even if your Kubernetes control plane is compromised.
 
-<Callout icon="triangle-alert">
-  Ensure you have the correct `linux-headers-$(uname -r)` package. Mismatched headers can prevent the Falco kernel module from building.
-</Callout>
+> **triangle-alert** Ensure you have the correct `linux-headers-$(uname -r)` package. Mismatched headers can prevent the Falco kernel module from building.
 
 ```bash theme={null}

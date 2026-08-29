@@ -8,9 +8,7 @@ Hello and welcome to the Fundamentals of MLOps course. I’m Raghunandan Sanur, 
 
 Throughout this course, you will participate in hands-on labs that provide a practical, real-world environment. These labs encourage experimentation, allow you to learn through trial and error, and ultimately prepare you for the challenges of implementing DevOps in production settings.
 
-<Callout icon="lightbulb">
-  This course emphasizes practical learning through interactive labs. Embrace the opportunity to experiment, make mistakes, and grow your expertise with real-world projects.
-</Callout>
+> **lightbulb** This course emphasizes practical learning through interactive labs. Embrace the opportunity to experiment, make mistakes, and grow your expertise with real-world projects.
 
 ## Overview of MLOps Concepts
 
@@ -25,9 +23,7 @@ You will also learn how to select the most appropriate tools for your MLOps proj
 
 Data is the backbone of every machine learning project. In this course, you will cover various data processes including data ingestion, cleaning, transformation, and the use of data lakes.
 
-<Frame>
-  ![The image shows a person speaking into a microphone, with a presentation slide titled "Fundamentals of MLOps" listing topics such as data collection, model development, and AWS SageMaker.](../../../../images/kodekloud.com/kk-media/image/upload/v1752875097/notes-assets/images/Fundamentals-of-MLOps-Course-Introduction/mlops-fundamentals-presentation-microphone.jpg)
-</Frame>
+![The image shows a person speaking into a microphone, with a presentation slide titled "Fundamentals of MLOps" listing topics such as data collection, model development, and AWS SageMaker.](https://kodekloud.com/kk-media/image/upload/v1752875097/notes-assets/images/Fundamentals-of-MLOps-Course-Introduction/mlops-fundamentals-presentation-microphone.jpg)
 
 ## Model Development and Deployment
 
@@ -45,6 +41,4 @@ At KodeKloud, community matters. We foster a vibrant forum where you can ask que
 
 Let's embark on this MLOps journey with enthusiasm and confidence. Without further ado, let's dive into the course. See you there!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/fundamentals-of-mlops/module/0e2e3177-bf87-467e-9063-e8e0f7e095df/lesson/5314653c-66c1-4b3a-9582-e734ade99d2e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/fundamentals-of-mlops/module/0e2e3177-bf87-467e-9063-e8e0f7e095df/lesson/5314653c-66c1-4b3a-9582-e734ade99d2e)

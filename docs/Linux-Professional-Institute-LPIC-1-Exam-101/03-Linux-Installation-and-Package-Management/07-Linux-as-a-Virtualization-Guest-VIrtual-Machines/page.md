@@ -6,9 +6,7 @@ packages:
   - nginx
 ```
 
-<Callout icon="triangle-alert">
-  The line `#cloud-config` must begin at the very start of the file with no leading whitespace.
-</Callout>
+> **triangle-alert** The line `#cloud-config` must begin at the very start of the file with no leading whitespace.
 
 ## References
 
@@ -19,9 +17,7 @@ packages:
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/8aa0f6ec-d0f5-4318-a577-d65a23a7440c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/8aa0f6ec-d0f5-4318-a577-d65a23a7440c)
 
 
 # Linux as a Virtualization Guest VIrtual Machines
@@ -47,13 +43,11 @@ sudo dnf install -y qemu-kvm libvirt
 * **qemu-kvm**: Hardware-accelerated virtualization
 * **libvirt**: API and utilities for managing VMs
 
-<Callout icon="lightbulb">
-  You may also need to start and enable the libvirtd service:
+> **lightbulb** You may also need to start and enable the libvirtd service:
 
   ```bash theme={null}
   sudo systemctl enable --now libvirtd
   ```
-</Callout>
 
 ***
 
@@ -115,9 +109,7 @@ Sample:
 | -- | ----------- | -------- |
 | -  | TestMachine | shut off |
 
-<Callout icon="lightbulb">
-  Omit `--all` to list only running domains.
-</Callout>
+> **lightbulb** Omit `--all` to list only running domains.
 
 ***
 

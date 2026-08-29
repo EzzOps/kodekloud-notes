@@ -55,13 +55,9 @@ egressGateway:
   enabled: true
 ```
 
-<Callout icon="lightbulb">
-  After changing Cilium configuration, restart the Cilium operator and agents so the new settings are applied cluster-wide.
-</Callout>
+> **lightbulb** After changing Cilium configuration, restart the Cilium operator and agents so the new settings are applied cluster-wide.
 
-<Callout icon="warning">
-  The egressIP you configure in a CiliumEgressGatewayPolicy must exist on an interface of the egress node. If the IP is not present, SNAT will fail and outbound traffic will not be translated correctly.
-</Callout>
+> **warning** The egressIP you configure in a CiliumEgressGatewayPolicy must exist on an interface of the egress node. If the IP is not present, SNAT will fail and outbound traffic will not be translated correctly.
 
 ## Creating a Cilium Egress Gateway Policy
 
@@ -149,6 +145,4 @@ Note: Egress IP and Gateway IP can be the same or different. The Egress IP is wh
 
 If you want to force traffic from selected pods to egress via a particular node (for compliance, fixed public IPs, audit logging, or firewall rules), apply a CiliumEgressGatewayPolicy as shown above.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/867bdf6b-2e01-46bd-844e-a770f3563f60" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/809ecc9d-097b-45b8-a548-8f33d8ee89a2/lesson/867bdf6b-2e01-46bd-844e-a770f3563f60)

@@ -49,9 +49,7 @@ Use centralized views of triggered alerts and historical trends to analyze incid
   <img alt="The image is a data visualization diagram showing alerts being used for &#x22;Change of state&#x22; and &#x22;Anomaly detection.&#x22;" />
 </Frame>
 
-<Callout icon="lightbulb">
-  Use ML-powered anomaly detection (Watchdog) to catch unusual patterns you may not anticipate with static thresholds. Combine it with state-change alerts for clear, actionable notifications.
-</Callout>
+> **lightbulb** Use ML-powered anomaly detection (Watchdog) to catch unusual patterns you may not anticipate with static thresholds. Combine it with state-change alerts for clear, actionable notifications.
 
 ## Logs
 
@@ -76,9 +74,7 @@ Indexing improves performance for high-volume datasets and enables cost manageme
 * Investigate noisy signals at their root cause instead of adding superficial filters. Persistent noise often indicates engineering or design issues.
 * Make every panel purposeful: dashboards should deliver visibility and actionable context, not just visual appeal.
 
-<Callout icon="warning">
-  Querying your entire log dataset directly from dashboard panels can lead to higher latencies and unexpected cost spikes. Prefer precomputed log-based metrics or indexed queries for high-traffic dashboards.
-</Callout>
+> **warning** Querying your entire log dataset directly from dashboard panels can lead to higher latencies and unexpected cost spikes. Prefer precomputed log-based metrics or indexed queries for high-traffic dashboards.
 
 Creating dashboards and visualizations is both practical and creative. Focus on clarity, reuse, and actionability so your telemetry becomes a reliable decision-making surface for your teams.
 
@@ -91,6 +87,4 @@ That's it for this lesson. I hope you found it useful.
 * Datadog Notebooks: [https://docs.datadoghq.com/notebooks/](https://docs.datadoghq.com/notebooks/)
 * Datadog Watchdog & Anomaly Detection: [https://docs.datadoghq.com/monitors/monitor\_types/watchdog/](https://docs.datadoghq.com/monitors/monitor_types/watchdog/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/0771537c-cf42-466f-a605-4ec0c452fefc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/0771537c-cf42-466f-a605-4ec0c452fefc)

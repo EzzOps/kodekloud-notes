@@ -6,13 +6,9 @@ This guide explains how to set up and run a demo API using Node.js from a GitHub
 
 In this guide, you'll learn how to set up and run a demo API built with Node.js. This demo API is part of a GitHub repository that contains several lesson folders, each demonstrating various Postman features through a simple API.
 
-<Callout icon="lightbulb">
-  Before starting, ensure you have Node.js installed on your computer. If you haven't installed it yet, please download the latest version (LTS or Current) from the [official Node.js website](https://nodejs.org/en/).
-</Callout>
+> **lightbulb** Before starting, ensure you have Node.js installed on your computer. If you haven't installed it yet, please download the latest version (LTS or Current) from the [official Node.js website](https://nodejs.org/en/).
 
-<Frame>
-  ![The image shows a GitHub repository page for "kodekloudhub/postman" with files and folders listed, including a README.md file. The page also displays contributor information and indicates that the project is written in JavaScript.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882937/notes-assets/images/Postman-Essentials-Setting-Up-Demo-API/github-repo-kodekloudhub-postman.jpg)
-</Frame>
+![The image shows a GitHub repository page for "kodekloudhub/postman" with files and folders listed, including a README.md file. The page also displays contributor information and indicates that the project is written in JavaScript.](https://kodekloud.com/kk-media/image/upload/v1752882937/notes-assets/images/Postman-Essentials-Setting-Up-Demo-API/github-repo-kodekloudhub-postman.jpg)
 
 ## Repository Setup
 
@@ -39,9 +35,7 @@ Follow these steps to clone and install the repository:
    C:\Users\sanje\Documents\demo\postman>npm install
    ```
 
-<Frame>
-  ![The image shows the Node.js download page, offering options to download the LTS and Current versions for Windows (x64). The page includes navigation links and information about supported releases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882939/notes-assets/images/Postman-Essentials-Setting-Up-Demo-API/nodejs-download-page-lts-current.jpg)
-</Frame>
+![The image shows the Node.js download page, offering options to download the LTS and Current versions for Windows (x64). The page includes navigation links and information about supported releases.](https://kodekloud.com/kk-media/image/upload/v1752882939/notes-assets/images/Postman-Essentials-Setting-Up-Demo-API/nodejs-download-page-lts-current.jpg)
 
 ## Running the Demo API Lessons
 
@@ -84,21 +78,17 @@ listening on port 4000
 
 Once the API is running and listening on port 4000, it means your server is active on your local machine.
 
-<Callout icon="lightbulb">
-  You can validate the functioning of the API by running:
+> **lightbulb** You can validate the functioning of the API by running:
 
   ```bash theme={null}
   curl localhost:4000
   ```
 
   If the API is working correctly, you’ll receive a response indicating success.
-</Callout>
 
 To stop the API at any time, press Ctrl+C in the terminal. You can then run another lesson by executing its corresponding command.
 
-<Frame>
-  ![The image shows a GitHub repository page for "kodekloudhub/postman" with files and folders listed, including "lesson1," "lesson2," and "lesson3." The repository is written in JavaScript and has contributors listed on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882940/notes-assets/images/Postman-Essentials-Setting-Up-Demo-API/kodekloudhub-postman-repo-files.jpg)
-</Frame>
+![The image shows a GitHub repository page for "kodekloudhub/postman" with files and folders listed, including "lesson1," "lesson2," and "lesson3." The repository is written in JavaScript and has contributors listed on the right.](https://kodekloud.com/kk-media/image/upload/v1752882940/notes-assets/images/Postman-Essentials-Setting-Up-Demo-API/kodekloudhub-postman-repo-files.jpg)
 
 ## Conclusion
 
@@ -110,6 +100,4 @@ For more information on working with Node.js and APIs, you might find these reso
 * [Postman Learning Center](https://learning.postman.com/)
 * [GitHub Guides](https://guides.github.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/postman-essentials/module/0a8a02c7-cab8-4bd9-886e-c7570885146f/lesson/f83b17f0-17d3-4109-b93e-a5834803790f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/postman-essentials/module/0a8a02c7-cab8-4bd9-886e-c7570885146f/lesson/f83b17f0-17d3-4109-b93e-a5834803790f)

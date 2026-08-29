@@ -23,7 +23,7 @@ Data can be ingested into ADLS from various sources, ensuring your data remains 
 
 All these varied types of data—ad-hoc, relational, and streaming—are preserved in their original formats. To access this stored data, you can use Storage Explorer, which offers a user interface similar to that of table storage. Alternatively, you can interact with ADLS using PowerShell, Azure CLI, HDFS CLI, and several programming SDKs. Access is controlled using Azure RBAC and granular access control lists (ACLs).
 
-![The image is a diagram explaining how ADLS (Azure Data Lake Storage) works, showing the flow of ad hoc, relational, and streaming data into ADLS. It includes icons representing different data types and processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866905/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Lake-Storage/adls-data-flow-diagram.jpg)
+![The image is a diagram explaining how ADLS (Azure Data Lake Storage) works, showing the flow of ad hoc, relational, and streaming data into ADLS. It includes icons representing different data types and processes.](https://kodekloud.com/kk-media/image/upload/v1752866905/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Lake-Storage/adls-data-flow-diagram.jpg)
 
 ## When to Use ADLS
 
@@ -32,7 +32,7 @@ ADLS is ideal for three primary scenarios:
 1. **Large Amounts of Data:**\
    ADLS serves as a cloud-based data warehouse capable of managing massive volumes of data. Its scalability and reliability allow for automatic billing adjustments as storage needs increase.
 
-![The image is an infographic from KodeKloud explaining when to use Azure Data Lake Storage (ADLS) for large amounts of data, managing multiple file types, and real-time streaming.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866906/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Lake-Storage/azure-data-lake-storage-infographic.jpg)
+![The image is an infographic from KodeKloud explaining when to use Azure Data Lake Storage (ADLS) for large amounts of data, managing multiple file types, and real-time streaming.](https://kodekloud.com/kk-media/image/upload/v1752866906/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Lake-Storage/azure-data-lake-storage-infographic.jpg)
 
 2. **Multiple File Types:**\
    By supporting a wide range of file types (such as JSON, CSV, XML, etc.), ADLS offers flexible ingestion of ad-hoc, relational, or streaming data. This diversity enables robust processing using tools like Data Explorer and Data Factory.
@@ -52,7 +52,7 @@ Although ADLS and Blob Storage share the same pricing model, there are significa
 | Hadoop Compatibility | Not optimized for Hadoop ecosystems                                 | Designed to work natively with Hadoop storage solutions                                             |
 | Security             | Access control mainly at the storage account or container level     | Granular control with detailed ACLs                                                                 |
 
-![The image is a comparison between Azure Blob Storage and ADLS, highlighting differences in data storage, replication, namespace, Hadoop compatibility, and access granularity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866907/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Lake-Storage/azure-blob-storage-adls-comparison.jpg)
+![The image is a comparison between Azure Blob Storage and ADLS, highlighting differences in data storage, replication, namespace, Hadoop compatibility, and access granularity.](https://kodekloud.com/kk-media/image/upload/v1752866907/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Lake-Storage/azure-blob-storage-adls-comparison.jpg)
 
 For analytics solutions like Databricks, HDInsight, and others, ADLS provides an optimal storage back-end.
 
@@ -65,7 +65,7 @@ Setting up an ADLS-enabled storage account in the Azure portal is straightforwar
 3. For this example, select **Standard** and **LRS** as your options.
 4. In the **Advanced** settings, enable **Data Lake Storage Gen2** to activate the hierarchical namespace and unlock ADLS capabilities.
 
-![The image shows a Microsoft Azure portal page for creating a storage account, displaying various configuration options under the "Review" tab. It includes sections for basics and advanced settings, with options like subscription, resource group, location, and replication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866908/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Lake-Storage/azure-portal-storage-account-review.jpg)
+![The image shows a Microsoft Azure portal page for creating a storage account, displaying various configuration options under the "Review" tab. It includes sections for basics and advanced settings, with options like subscription, resource group, location, and replication.](https://kodekloud.com/kk-media/image/upload/v1752866908/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Lake-Storage/azure-portal-storage-account-review.jpg)
 
 > **lightbulb** You can also upgrade an existing storage account to support ADLS:
 
@@ -74,7 +74,7 @@ Setting up an ADLS-enabled storage account in the Azure portal is straightforwar
   3. Click the corresponding button to enable it and follow the validation process.
   4. Once validated, your storage account will be upgraded to support Azure Data Lake Storage Gen2 capabilities.
 
-![The image shows a Microsoft Azure portal interface for upgrading a storage account to Azure Data Lake Gen2 capabilities. It includes steps for reviewing, validating, and upgrading the account, all marked as "Not started."](../../../../images/kodekloud.com/kk-media/image/upload/v1752866910/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Lake-Storage/azure-portal-storage-upgrade-datalake.jpg)
+![The image shows a Microsoft Azure portal interface for upgrading a storage account to Azure Data Lake Gen2 capabilities. It includes steps for reviewing, validating, and upgrading the account, all marked as "Not started."](https://kodekloud.com/kk-media/image/upload/v1752866910/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Lake-Storage/azure-portal-storage-upgrade-datalake.jpg)
 
 With your storage account configured for ADLS, you are ready to integrate with Azure Databricks or other analytics solutions to process your data efficiently.
 

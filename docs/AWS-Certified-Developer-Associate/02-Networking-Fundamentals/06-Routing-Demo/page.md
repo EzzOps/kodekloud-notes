@@ -20,7 +20,7 @@ Begin by creating a demo VPC named "VPC demo" with a predefined CIDR block and e
 
 When you create the VPC and subnets, AWS automatically assigns the default (main) route table to any subnet that doesn’t have an explicit association.
 
-![The image shows an AWS VPC management console with details of a VPC named "vpcdemo," including its ID, state, and CIDR information. The console displays various options and settings related to virtual private clouds.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859199/notes-assets/images/AWS-Certified-Developer-Associate-Routing-Demo/aws-vpc-management-console-vpcdemo.jpg)
+![The image shows an AWS VPC management console with details of a VPC named "vpcdemo," including its ID, state, and CIDR information. The console displays various options and settings related to virtual private clouds.](https://kodekloud.com/kk-media/image/upload/v1752859199/notes-assets/images/AWS-Certified-Developer-Associate-Routing-Demo/aws-vpc-management-console-vpcdemo.jpg)
 
 ## Exploring the Default Route Table
 
@@ -31,9 +31,9 @@ Navigate to the VPC section and open the main route table in a new tab. In this 
 
 Note that while there may be no explicit subnet associations displayed, both subnets automatically inherit the routes from this main route table.
 
-![The image shows an AWS VPC management console displaying a route table with two active routes. The routes are listed with their destinations, targets, and statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859201/notes-assets/images/AWS-Certified-Developer-Associate-Routing-Demo/aws-vpc-route-table-console.jpg)
+![The image shows an AWS VPC management console displaying a route table with two active routes. The routes are listed with their destinations, targets, and statuses.](https://kodekloud.com/kk-media/image/upload/v1752859201/notes-assets/images/AWS-Certified-Developer-Associate-Routing-Demo/aws-vpc-route-table-console.jpg)
 
-![The image shows an AWS VPC Management Console screen displaying route tables and subnet associations. It highlights subnets without explicit associations in a specific VPC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859202/notes-assets/images/AWS-Certified-Developer-Associate-Routing-Demo/aws-vpc-management-route-tables.jpg)
+![The image shows an AWS VPC Management Console screen displaying route tables and subnet associations. It highlights subnets without explicit associations in a specific VPC.](https://kodekloud.com/kk-media/image/upload/v1752859202/notes-assets/images/AWS-Certified-Developer-Associate-Routing-Demo/aws-vpc-management-route-tables.jpg)
 
 When an EC2 instance within either subnet sends a packet, the route table reviews the destination IP and selects the closest matching rule to route that packet.
 
@@ -45,15 +45,15 @@ You can also create a custom route table tailored to your needs. Follow these st
 2. By default, the new route table will not be associated with any subnets. Edit the subnet associations to add Subnet One.
 3. Once Subnet One is linked with "Route Table One," all traffic from that subnet adheres to the rules defined in this custom route table.
 
-![The image shows the AWS Management Console interface for creating a route table, with fields for naming the route table and selecting a VPC. There is also an option to add tags.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859203/notes-assets/images/AWS-Certified-Developer-Associate-Routing-Demo/aws-management-console-route-table.jpg)
+![The image shows the AWS Management Console interface for creating a route table, with fields for naming the route table and selecting a VPC. There is also an option to add tags.](https://kodekloud.com/kk-media/image/upload/v1752859203/notes-assets/images/AWS-Certified-Developer-Associate-Routing-Demo/aws-management-console-route-table.jpg)
 
 For additional flexibility, you may create another route table for Subnet Two. While it is not mandatory to have a unique route table per subnet, separating them allows you to manage different routing requirements – such as differentiating between public subnets (with internet access) and private subnets (without internet access).
 
-![The image shows an AWS VPC Management Console screen displaying details of a route table, including subnet associations and related information. The interface includes options for editing subnet associations and viewing various network components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859204/notes-assets/images/AWS-Certified-Developer-Associate-Routing-Demo/aws-vpc-management-route-table.jpg)
+![The image shows an AWS VPC Management Console screen displaying details of a route table, including subnet associations and related information. The interface includes options for editing subnet associations and viewing various network components.](https://kodekloud.com/kk-media/image/upload/v1752859204/notes-assets/images/AWS-Certified-Developer-Associate-Routing-Demo/aws-vpc-management-route-table.jpg)
 
 Finally, note that the console may display additional views of route tables:
 
-![The image shows an AWS VPC Management Console screen displaying details of a route table, including its ID, associated subnets, and active routes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859205/notes-assets/images/AWS-Certified-Developer-Associate-Routing-Demo/aws-vpc-route-table-console-2.jpg)
+![The image shows an AWS VPC Management Console screen displaying details of a route table, including its ID, associated subnets, and active routes.](https://kodekloud.com/kk-media/image/upload/v1752859205/notes-assets/images/AWS-Certified-Developer-Associate-Routing-Demo/aws-vpc-route-table-console-2.jpg)
 
 ## Editing Routes
 
@@ -64,7 +64,7 @@ To update or add routes in a route table:
 3. Specify the target for the new route; your choices include an internet gateway, a NAT gateway, or routing locally.
 4. Save your changes to update the route table accordingly.
 
-![The image shows the AWS VPC Management Console with a route table being edited. It displays destinations, targets, and their statuses, with a dropdown menu for selecting routes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859206/notes-assets/images/AWS-Certified-Developer-Associate-Routing-Demo/aws-vpc-management-console-route-table.jpg)
+![The image shows the AWS VPC Management Console with a route table being edited. It displays destinations, targets, and their statuses, with a dropdown menu for selecting routes.](https://kodekloud.com/kk-media/image/upload/v1752859206/notes-assets/images/AWS-Certified-Developer-Associate-Routing-Demo/aws-vpc-management-console-route-table.jpg)
 
 When a packet arrives, the route table determines the appropriate route by checking the destination IP against its routing rules and selecting the closest match.
 
@@ -72,7 +72,7 @@ When a packet arrives, the route table determines the appropriate route by check
 
 > **lightbulb** After completing your testing, it is important to delete the created resources to avoid incurring unnecessary charges. Simply delete the VPC ("vpcdemo"), and AWS will automatically remove all associated subnets and route tables.
 
-![The image shows an AWS management console screen where a user is in the process of deleting a VPC named "vpcdemo" along with its associated resources. The user has typed "delete" to confirm the action.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859207/notes-assets/images/AWS-Certified-Developer-Associate-Routing-Demo/aws-console-delete-vpcdemo.jpg)
+![The image shows an AWS management console screen where a user is in the process of deleting a VPC named "vpcdemo" along with its associated resources. The user has typed "delete" to confirm the action.](https://kodekloud.com/kk-media/image/upload/v1752859207/notes-assets/images/AWS-Certified-Developer-Associate-Routing-Demo/aws-console-delete-vpcdemo.jpg)
 
 ## Conclusion
 

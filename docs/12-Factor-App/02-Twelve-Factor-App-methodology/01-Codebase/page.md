@@ -52,17 +52,17 @@ Without a proper version control system, concurrent modifications by different d
 
 The central repository is typically hosted on a cloud platform. For example, [GitHub](https://github.com) is a popular platform for hosting Git repositories, while [GitLab](https://about.gitlab.com) and [Bitbucket](https://bitbucket.org) offer similar solutions.
 
-![The image shows a central folder icon connected to four laptops, each with a person, representing a shared network or collaborative workspace.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856826/notes-assets/images/12-Factor-App-Codebase/frame_120.jpg)
+![The image shows a central folder icon connected to four laptops, each with a person, representing a shared network or collaborative workspace.](https://kodekloud.com/kk-media/image/upload/v1752856826/notes-assets/images/12-Factor-App-Codebase/frame_120.jpg)
 
 ### Managing Multiple Applications
 
 Consider starting with an initial web application. Over time, you might expand your system by adding services such as order processing or delivery functionalities. In the past, it was common to maintain a single codebase for all related applications. However, once multiple services are deployed, the architecture becomes distributed, and sharing one codebase across multiple applications violates the 12-Factor App principles. Each application should reside in its own codebase.
 
-![The image highlights that sharing code among multiple apps violates the twelve-factor app principles, with icons and a list of services showing recent updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856828/notes-assets/images/12-Factor-App-Codebase/frame_200.jpg)
+![The image highlights that sharing code among multiple apps violates the twelve-factor app principles, with icons and a list of services showing recent updates.](https://kodekloud.com/kk-media/image/upload/v1752856828/notes-assets/images/12-Factor-App-Codebase/frame_200.jpg)
 
 Within a single codebase, you can still deploy multiple instances of your application across various environments (such as development, staging, and production). This strategy ensures that while each application maintains its isolated codebase, you can manage multiple deployments seamlessly.
 
-![The image depicts a deployment pipeline diagram with stages labeled "dev," "staging," and "prod," connected to a central icon representing a web application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856830/notes-assets/images/12-Factor-App-Codebase/frame_210.jpg)
+![The image depicts a deployment pipeline diagram with stages labeled "dev," "staging," and "prod," connected to a central icon representing a web application.](https://kodekloud.com/kk-media/image/upload/v1752856830/notes-assets/images/12-Factor-App-Codebase/frame_210.jpg)
 
 This structure not only keeps your development process organized but also promotes consistency across different environments, allowing for smoother transitions between development, testing, and production stages.
 

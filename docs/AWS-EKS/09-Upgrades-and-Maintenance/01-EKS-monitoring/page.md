@@ -12,7 +12,7 @@ Enable control plane logging when creating your EKS cluster to capture API activ
 
 > **lightbulb** Control plane logs are invaluable for auditing and security compliance. Enable them at cluster creation—AWS handles the log delivery.
 
-![The image is a diagram showing the integration of an EKS Cluster's Control Plane with CloudWatch Logs. It illustrates the flow of data from the EKS Cluster to CloudWatch for monitoring purposes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862920/notes-assets/images/AWS-EKS-EKS-monitoring/eks-cluster-cloudwatch-logs-diagram.jpg)
+![The image is a diagram showing the integration of an EKS Cluster's Control Plane with CloudWatch Logs. It illustrates the flow of data from the EKS Cluster to CloudWatch for monitoring purposes.](https://kodekloud.com/kk-media/image/upload/v1752862920/notes-assets/images/AWS-EKS-EKS-monitoring/eks-cluster-cloudwatch-logs-diagram.jpg)
 
 You can then use the [CloudWatch console](https://console.aws.amazon.com/cloudwatch/) to:
 
@@ -24,7 +24,7 @@ You can then use the [CloudWatch console](https://console.aws.amazon.com/cloudwa
 
 To capture node-level system logs and container stdout/stderr streams, deploy the CloudWatch Logs agent on each EC2 node via the AWS Observability Add-on.
 
-![The image illustrates the architecture of CloudWatch Log Agents, showing how an EKS Cluster's control plane and EC2 instance send logs to CloudWatch and CloudWatch Logs, with an observability add-on.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862921/notes-assets/images/AWS-EKS-EKS-monitoring/cloudwatch-log-agents-architecture-diagram.jpg)
+![The image illustrates the architecture of CloudWatch Log Agents, showing how an EKS Cluster's control plane and EC2 instance send logs to CloudWatch and CloudWatch Logs, with an observability add-on.](https://kodekloud.com/kk-media/image/upload/v1752862921/notes-assets/images/AWS-EKS-EKS-monitoring/cloudwatch-log-agents-architecture-diagram.jpg)
 
 Key log sources:
 
@@ -38,7 +38,7 @@ Key log sources:
 
 The AWS Distro for OpenTelemetry (ADOT) add-on extends CloudWatch Logs agent capabilities by collecting metrics, logs, and distributed traces. You can send data to CloudWatch or any OpenTelemetry-compatible backend.
 
-![The image illustrates the AWS Distro for Open Telemetry (ADOT) setup, showing an EKS Cluster with an agent and ADOT sending metrics and logs to CloudWatch.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862922/notes-assets/images/AWS-EKS-EKS-monitoring/adot-eks-cluster-setup-cloudwatch.jpg)
+![The image illustrates the AWS Distro for Open Telemetry (ADOT) setup, showing an EKS Cluster with an agent and ADOT sending metrics and logs to CloudWatch.](https://kodekloud.com/kk-media/image/upload/v1752862922/notes-assets/images/AWS-EKS-EKS-monitoring/adot-eks-cluster-setup-cloudwatch.jpg)
 
 Benefits of ADOT:
 
@@ -70,7 +70,7 @@ For a fully managed Prometheus/Grafana experience, AWS offers:
 | Amazon Managed Prometheus | Scalable metrics ingestion & storage | Auto scale, high availability, Prometheus-compatible |
 | Amazon Managed Grafana    | Dashboards & alerting                | IAM integration, plugins, team management            |
 
-![The image is a diagram illustrating Amazon Managed Prometheus (AMP) and AWS Managed Grafana (AMG), highlighting features like cluster scraping, workload management, and deep integration. It also mentions IAM for identity and access management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862923/notes-assets/images/AWS-EKS-EKS-monitoring/amazon-managed-prometheus-grafana-diagram.jpg)
+![The image is a diagram illustrating Amazon Managed Prometheus (AMP) and AWS Managed Grafana (AMG), highlighting features like cluster scraping, workload management, and deep integration. It also mentions IAM for identity and access management.](https://kodekloud.com/kk-media/image/upload/v1752862923/notes-assets/images/AWS-EKS-EKS-monitoring/amazon-managed-prometheus-grafana-diagram.jpg)
 
 Configure AMP to scrape your EKS cluster endpoints, then build rich, interactive dashboards in AMG.
 

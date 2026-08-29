@@ -89,9 +89,7 @@ Practical exam preparation checklist
 4. Review exam environment tips: navigation, time management, and common pitfalls.
 5. When practice is consistent and mock scores are stable, schedule your exam.
 
-<Callout icon="lightbulb">
-  Finish every lab, practice repeatedly to build speed, and use mock exams to target weak spots — those three steps will pay off the most on exam day.
-</Callout>
+> **lightbulb** Finish every lab, practice repeatedly to build speed, and use mock exams to target weak spots — those three steps will pay off the most on exam day.
 
 Links and references
 
@@ -109,6 +107,4 @@ You’ve completed the course, practiced with real tools, and learned how the pi
 
 Thank you for taking this course — I’m confident you’ll do great.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/a947aaf5-7e9e-4a67-b319-702d6246b513/lesson/7343554a-3aca-49e4-85e5-0c5dea7f3113" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/a947aaf5-7e9e-4a67-b319-702d6246b513/lesson/7343554a-3aca-49e4-85e5-0c5dea7f3113)

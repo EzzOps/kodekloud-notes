@@ -19,7 +19,7 @@ These strategies are aimed at minimizing disruptions by ensuring rapid restorati
 
 AWS Resilience Hub simplifies and automates your disaster recovery process in the AWS cloud. It offers a centralized console from which you can manage resilient activities such as backup scheduling and setting recovery objectives—including Recovery Point Objective (RPO) and Recovery Time Objective (RTO).
 
-![The image is a diagram illustrating a resilience hub, showing the timeline of an incident with data loss and downtime, marked by RPO (Recovery Point Objective) and RTO (Recovery Time Objective) intervals.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865367/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Resilience-Hub/resilience-hub-incident-timeline-diagram.jpg)
+![The image is a diagram illustrating a resilience hub, showing the timeline of an incident with data loss and downtime, marked by RPO (Recovery Point Objective) and RTO (Recovery Time Objective) intervals.](https://kodekloud.com/kk-media/image/upload/v1752865367/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Resilience-Hub/resilience-hub-incident-timeline-diagram.jpg)
 
 For clarity:
 
@@ -30,7 +30,7 @@ After deployment, Resilience Hub continuously monitors your application's resili
 
 When a disruption occurs, Resilience Hub identifies the root cause, alerts operators, and facilitates execution of standard recovery procedures.
 
-![The image illustrates AWS Resilience Hub with icons representing different AWS services across two regions, us-east-1 and ap-south-1, along with features like continuous tracking and alerting during outages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865368/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Resilience-Hub/aws-resilience-hub-icons-diagram.jpg)
+![The image illustrates AWS Resilience Hub with icons representing different AWS services across two regions, us-east-1 and ap-south-1, along with features like continuous tracking and alerting during outages.](https://kodekloud.com/kk-media/image/upload/v1752865368/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Resilience-Hub/aws-resilience-hub-icons-diagram.jpg)
 
 ## Configuring and Assessing Resilience
 
@@ -40,11 +40,11 @@ Configuring Resilience Hub begins by specifying which resources to protect. Ther
 * Utilize a resource group
 * If managing with Terraform, reference the Terraform state file
 
-![The image shows a selection interface for describing an application and its resources in AWS Resilience Hub, with options like CloudFormation stacks, resource groups, AppRegistry, Terraform state files, and existing applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865369/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Resilience-Hub/aws-resilience-hub-selection-interface.jpg)
+![The image shows a selection interface for describing an application and its resources in AWS Resilience Hub, with options like CloudFormation stacks, resource groups, AppRegistry, Terraform state files, and existing applications.](https://kodekloud.com/kk-media/image/upload/v1752865369/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Resilience-Hub/aws-resilience-hub-selection-interface.jpg)
 
 After defining your resources, Resilience Hub analyzes them to identify potential weaknesses. You then set your application’s resilience objectives by attaching a resilience policy that outlines specific RTO and RPO targets for various disruption scenarios. With the application and policy in place, initiate a resiliency assessment. This assessment cross-checks your configuration against the defined resiliency policy and generates a report detailing where adjustments might be necessary.
 
-![The image outlines "Step 2: Define and Assess" with three icons representing "Define Resilience Policies," "Run Assessments," and "Review Assessments."](../../../../images/kodekloud.com/kk-media/image/upload/v1752865370/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Resilience-Hub/step-2-define-assess-icons.jpg)
+![The image outlines "Step 2: Define and Assess" with three icons representing "Define Resilience Policies," "Run Assessments," and "Review Assessments."](https://kodekloud.com/kk-media/image/upload/v1752865370/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Resilience-Hub/step-2-define-assess-icons.jpg)
 
 Based on the assessment report, you receive targeted recommendations to bolster your application's resilience. These recommendations may advise configuration changes, setting up alarms, implementing regular testing, or revising your recovery standard operating procedures (SOPs). Following updates to your application and policy, you can re-run the assessment. This iterative process continues until the desired resilience targets are met.
 

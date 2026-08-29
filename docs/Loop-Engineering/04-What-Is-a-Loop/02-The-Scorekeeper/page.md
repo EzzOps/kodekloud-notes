@@ -63,9 +63,7 @@ Simple mitigations
   <img alt="The image illustrates a concept titled &#x22;Simple Tricks&#x22; about keeping some checks held out to avoid overfitting, featuring graphics of a loop and checkmarks." />
 </Frame>
 
-<Callout icon="warning">
-  Never allow the loop to weaken or edit the scorekeeper. If the system can lower the bar, it will choose the easiest path to pass rather than actually fix the work.
-</Callout>
+> **warning** Never allow the loop to weaken or edit the scorekeeper. If the system can lower the bar, it will choose the easiest path to pass rather than actually fix the work.
 
 Protecting the scorekeeper
 
@@ -83,9 +81,7 @@ Write the scorekeeper before you start the loop. Defining the score up front mak
   <img alt="The image provides a &#x22;Rule of Thumb&#x22; with two steps: first, &#x22;Write the scorekeeper,&#x22; accompanied by a checklist icon, and second, &#x22;The goal says what 'done' looks like,&#x22; illustrated by a target icon." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Write the scorekeeper first. Define the goal clearly, then use automated, objective checks to measure progress. Protect those checks from being modified by the loop.
-</Callout>
+> **lightbulb** Write the scorekeeper first. Define the goal clearly, then use automated, objective checks to measure progress. Protect those checks from being modified by the loop.
 
 Recap
 
@@ -113,6 +109,4 @@ Further reading and references
 
 The loop can only run well when it has a trustworthy judge.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/loop-engineering/module/63fbab29-f6e1-497c-ba71-cff4793c2731/lesson/60e19746-b666-45b4-be5b-a7eb52de95b1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/loop-engineering/module/63fbab29-f6e1-497c-ba71-cff4793c2731/lesson/60e19746-b666-45b4-be5b-a7eb52de95b1)

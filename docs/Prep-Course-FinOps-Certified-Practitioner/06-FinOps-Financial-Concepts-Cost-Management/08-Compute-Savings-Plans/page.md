@@ -58,13 +58,9 @@ Practical guidance and recommendations
   <img alt="The image describes types of savings plans, highlighting key advantages of automatic optimization across compute portfolios and recommending using Compute Savings Plans for flexibility alongside EC2 Instance Savings Plans." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Start with Compute Savings Plans to capture quick wins and maintain flexibility. After observing usage for a few months, evaluate whether targeted EC2 Instance Savings Plans will deliver incremental savings.
-</Callout>
+> **lightbulb** Start with Compute Savings Plans to capture quick wins and maintain flexibility. After observing usage for a few months, evaluate whether targeted EC2 Instance Savings Plans will deliver incremental savings.
 
-<Callout icon="warning">
-  Savings Plans are a financial commitment (hourly spend for 1 or 3 years). Regularly monitor utilization to avoid committing to unused capacity.
-</Callout>
+> **warning** Savings Plans are a financial commitment (hourly spend for 1 or 3 years). Regularly monitor utilization to avoid committing to unused capacity.
 
 Applying Savings Plans as a FinOps or engineering practitioner
 
@@ -90,6 +86,4 @@ Next steps and references
 
 Thanks for reading — see you in the next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/a9022431-d3d5-45f7-af6e-cdc1c52fdbf6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/a9022431-d3d5-45f7-af6e-cdc1c52fdbf6)

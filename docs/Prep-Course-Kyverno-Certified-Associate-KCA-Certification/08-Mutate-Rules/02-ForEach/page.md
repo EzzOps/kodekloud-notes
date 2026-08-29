@@ -63,9 +63,7 @@ rules:
                 runAsNonRoot: true
 ```
 
-<Callout icon="lightbulb">
-  The `elementIndex` variable lets you construct precise JSON Patch paths such as `/spec/containers/0/securityContext`, `/spec/containers/1/securityContext`, and so on.
-</Callout>
+> **lightbulb** The `elementIndex` variable lets you construct precise JSON Patch paths such as `/spec/containers/0/securityContext`, `/spec/containers/1/securityContext`, and so on.
 
 Using patchStrategicMerge inside forEach
 
@@ -103,9 +101,7 @@ How this works:
 * For each `element`, Kyverno finds the container with the matching `name`.
 * The `+(allowPrivilegeEscalation): false` anchor adds the field only if it's missing; existing values are preserved.
 
-<Callout icon="lightbulb">
-  Combining a conditional anchor to identify the list element by `name` with the add-if-not-present anchor (`+()`) is a safe, common pattern when using `patchStrategicMerge` inside `foreach`.
-</Callout>
+> **lightbulb** Combining a conditional anchor to identify the list element by `name` with the add-if-not-present anchor (`+()`) is a safe, common pattern when using `patchStrategicMerge` inside `foreach`.
 
 Practical example: set default resource requests for every container
 

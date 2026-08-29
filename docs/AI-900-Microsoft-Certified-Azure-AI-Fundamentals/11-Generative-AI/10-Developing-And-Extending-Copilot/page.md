@@ -24,7 +24,7 @@ Azure AI Studio caters to developers who need a more customized and advanced env
 * **Orchestration Capabilities:** Simplify the management of intricate workflows by integrating multiple prompts and models into one cohesive system.
 * **Integrated Evaluation Tools:**
 
-![The image shows the Azure AI Studio interface, featuring a model catalog with various AI models and tools for pro-code development, infrastructure control, orchestration, and evaluation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857007/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Developing-And-Extending-Copilot/azure-ai-studio-model-catalog.jpg)
+![The image shows the Azure AI Studio interface, featuring a model catalog with various AI models and tools for pro-code development, infrastructure control, orchestration, and evaluation.](https://kodekloud.com/kk-media/image/upload/v1752857007/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Developing-And-Extending-Copilot/azure-ai-studio-model-catalog.jpg)
 
 These tools rigorously test and validate AI models to ensure they meet standards for performance, reliability, and responsible AI practices.
 

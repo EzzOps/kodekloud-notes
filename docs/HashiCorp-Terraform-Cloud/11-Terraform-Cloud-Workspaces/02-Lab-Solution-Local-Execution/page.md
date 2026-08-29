@@ -6,9 +6,7 @@ This guide covers configuring and running Terraform Cloud Workspaces in local ex
 
 In this guide, we’ll walk through configuring and running Terraform Cloud Workspaces using **local execution mode**. Follow each step to authenticate, set up AWS credentials, create your workspace, and manage your infrastructure—all from your local machine.
 
-<Frame>
-  ![The image shows a KodeKloud lab interface for "Terraform Cloud Workspace - Local Execution," with instructions and shortcuts for using VS Code on the left and a file explorer with a README.md file open on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878929/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Local-Execution/kodekloud-terraform-cloud-workspace-lab.jpg)
-</Frame>
+![The image shows a KodeKloud lab interface for "Terraform Cloud Workspace - Local Execution," with instructions and shortcuts for using VS Code on the left and a file explorer with a README.md file open on the right.](https://kodekloud.com/kk-media/image/upload/v1752878929/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Local-Execution/kodekloud-terraform-cloud-workspace-lab.jpg)
 
 ## Table of Contents
 
@@ -32,9 +30,7 @@ terraform login
 
 Follow the on-screen prompts to generate a new API token.
 
-<Frame>
-  ![The image shows a web interface for creating an API token on Terraform Cloud, with a dialog box prompting for a description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878930/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Local-Execution/terraform-cloud-api-token-dialog.jpg)
-</Frame>
+![The image shows a web interface for creating an API token on Terraform Cloud, with a dialog box prompting for a description.](https://kodekloud.com/kk-media/image/upload/v1752878930/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Local-Execution/terraform-cloud-api-token-dialog.jpg)
 
 When prompted, paste your API token into the terminal. Successful authentication will display your user ID and a confirmation message.
 
@@ -51,13 +47,9 @@ export AWS_ACCESS_KEY_ID=YOUR_AWS_ACCESS_KEY_ID
 export AWS_SECRET_ACCESS_KEY=YOUR_AWS_SECRET_ACCESS_KEY
 ```
 
-<Callout icon="triangle-alert">
-  Never commit your AWS credentials or API tokens to version control. Use environment variables or a secrets manager.
-</Callout>
+> **triangle-alert** Never commit your AWS credentials or API tokens to version control. Use environment variables or a secrets manager.
 
-<Callout icon="lightbulb">
-  These lab environments automatically tear down after one hour, so your temporary credentials remain safe.
-</Callout>
+> **lightbulb** These lab environments automatically tear down after one hour, so your temporary credentials remain safe.
 
 | Environment Variable    | Purpose            |
 | ----------------------- | ------------------ |
@@ -74,9 +66,7 @@ In Terraform Cloud’s web UI:
    * **Name**: `devops-aws-myapp-dev`
    * **Description**: Development environment for MyApp on AWS.
 
-<Frame>
-  ![The image shows a web interface for creating a new workspace in Terraform Cloud, with fields for entering a workspace name and description. There are options to configure settings and buttons to create or cancel the workspace creation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878931/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Local-Execution/terraform-cloud-workspace-creation-interface.jpg)
-</Frame>
+![The image shows a web interface for creating a new workspace in Terraform Cloud, with fields for entering a workspace name and description. There are options to configure settings and buttons to create or cancel the workspace creation.](https://kodekloud.com/kk-media/image/upload/v1752878931/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Local-Execution/terraform-cloud-workspace-creation-interface.jpg)
 
 Add the following backend configuration to `backend.tf` (or your chosen `.tf` file):
 
@@ -105,9 +95,7 @@ In Terraform Cloud’s UI, go to **Workspace → Settings → General**, then:
 * Change **Execution Mode** to **Local**.
 * Save your changes.
 
-<Frame>
-  ![The image shows the General Settings page of a Terraform Cloud workspace, with fields for ID, Name, Description, Execution Mode, and Remote State Sharing options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878933/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Local-Execution/terraform-cloud-workspace-settings-page.jpg)
-</Frame>
+![The image shows the General Settings page of a Terraform Cloud workspace, with fields for ID, Name, Description, Execution Mode, and Remote State Sharing options.](https://kodekloud.com/kk-media/image/upload/v1752878933/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Local-Execution/terraform-cloud-workspace-settings-page.jpg)
 
 ## 5. Initialize, Plan, and Apply
 
@@ -195,8 +183,6 @@ Apply complete! Resources: 0 added, 0 changed, 23 destroyed.
 * [Terraform Documentation](https://www.terraform.io/docs)
 * [AWS Credentials Configuration](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/69fc91b2-bf0f-4922-831c-2aee42d19b03/lesson/0a6ef325-dc19-4050-904b-ced34b6433ab" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/69fc91b2-bf0f-4922-831c-2aee42d19b03/lesson/0a6ef325-dc19-4050-904b-ced34b6433ab)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/69fc91b2-bf0f-4922-831c-2aee42d19b03/lesson/64c307ef-f6e0-463f-8a40-352fd04b3bd4" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/69fc91b2-bf0f-4922-831c-2aee42d19b03/lesson/64c307ef-f6e0-463f-8a40-352fd04b3bd4)

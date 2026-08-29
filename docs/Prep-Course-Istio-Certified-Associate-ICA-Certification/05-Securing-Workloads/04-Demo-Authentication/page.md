@@ -106,9 +106,7 @@ kubectl exec -n test curl -- curl --head http://helloworld.hello.svc.cluster.loc
 # Connection: keep-alive
 ```
 
-<Callout icon="lightbulb">
-  In Ambient mode, mTLS enforcement is handled by the ztunnel at the dataplane layer. For successful communication, both caller and callee namespaces should be labeled with `istio.io/dataplane-mode=ambient` (or the client must present mTLS identity).
-</Callout>
+> **lightbulb** In Ambient mode, mTLS enforcement is handled by the ztunnel at the dataplane layer. For successful communication, both caller and callee namespaces should be labeled with `istio.io/dataplane-mode=ambient` (or the client must present mTLS identity).
 
 ## Authorization policies: layer-3/4 vs layer-7 differences
 
@@ -193,9 +191,7 @@ kubectl exec -n test curl -- curl --head http://helloworld.hello.svc.cluster.loc
 
 A 503 indicates the request is reaching the waypoint Envoy, but the L7 enforcement point is rejecting the request. This commonly happens because the AuthorizationPolicy is not expressed in a form Ambient mode expects for L7 enforcement.
 
-<Callout icon="warning">
-  When you enable a waypoint for L7 enforcement, ensure AuthorizationPolicy targets and identity principals are expressed explicitly. Using namespace selectors alone often does not work for L7 in Ambient mode.
-</Callout>
+> **warning** When you enable a waypoint for L7 enforcement, ensure AuthorizationPolicy targets and identity principals are expressed explicitly. Using namespace selectors alone often does not work for L7 in Ambient mode.
 
 ## AuthorizationPolicy for Ambient mode: use targetRefs + principals
 
@@ -313,11 +309,9 @@ kubectl delete -n web namespace/web || true
 * PeerAuthentication reference: [https://istio.io/latest/docs/reference/config/security/peer\_authentication/](https://istio.io/latest/docs/reference/config/security/peer_authentication/)
 * Kubernetes Basics: [https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/43061c1f-8ac1-4a33-aa98-dff962f9b9ad" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/43061c1f-8ac1-4a33-aa98-dff962f9b9ad)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/2cd41378-65b3-4710-a7f0-46fbb10c4f77" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/2cd41378-65b3-4710-a7f0-46fbb10c4f77)
 
 
 # Demo Authentication
@@ -330,9 +324,7 @@ In this lesson you'll configure authentication in Istio, deploy a simple hello-w
 
 Prerequisites: `kubectl` and `istioctl` configured to talk to your cluster.
 
-<Callout icon="lightbulb">
-  Ensure your cluster has Istio installed and the `istio-system` namespace is present. Use `istioctl version` and `kubectl get ns` to validate installation before proceeding.
-</Callout>
+> **lightbulb** Ensure your cluster has Istio installed and the `istio-system` namespace is present. Use `istioctl version` and `kubectl get ns` to validate installation before proceeding.
 
 ## 1) Verify Istio automatic sidecar injection on namespaces
 
@@ -635,9 +627,7 @@ Summary: a global `STRICT` enforces mTLS cluster-wide. PeerAuthentication resour
 * [Istio: PeerAuthentication (mTLS)](https://istio.io/latest/docs/tasks/security/authentication/peer_authentication/)
 * `istioctl analyze` — use for policy validation and troubleshooting
 
-<Callout icon="lightbulb">
-  For troubleshooting: know that a global PeerAuthentication in `istio-system` can be overridden by PeerAuthentication resources in a namespace or by selectors. Use `istioctl analyze` and `kubectl get peerauthentications.security.istio.io -A` to inspect effective policies.
-</Callout>
+> **lightbulb** For troubleshooting: know that a global PeerAuthentication in `istio-system` can be overridden by PeerAuthentication resources in a namespace or by selectors. Use `istioctl analyze` and `kubectl get peerauthentications.security.istio.io -A` to inspect effective policies.
 
 <Frame>
   <img alt="The image shows a webpage from Istio's documentation about Peer Authentication, specifically focusing on MutualTLS settings." />
@@ -689,8 +679,6 @@ spec:
 
 That completes this demo on PeerAuthentication and mTLS enforcement with Istio.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/7afc3a1c-dc16-4d2f-9c30-2964d7839bfe" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/7afc3a1c-dc16-4d2f-9c30-2964d7839bfe)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/074126a9-c3c1-4922-a4d1-6c40c70e4cd8" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/074126a9-c3c1-4922-a4d1-6c40c70e4cd8)

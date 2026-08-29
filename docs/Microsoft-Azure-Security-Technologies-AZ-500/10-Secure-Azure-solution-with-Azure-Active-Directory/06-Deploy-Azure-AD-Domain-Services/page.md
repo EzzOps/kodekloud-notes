@@ -10,9 +10,7 @@ This article provides an in-depth look at deploying Azure AD Domain Services, co
 
 As illustrated in the diagram below, Azure AD is integrated with Azure AD Domain Services, which is deployed within a virtual network. Think of Domain Services as a fully managed service provided by Microsoft, designed to simplify domain management tasks while ensuring secure and reliable operations.
 
-<Frame>
-  ![The image is a diagram illustrating Azure AD Domain Services, highlighting features like managed domain services, integration with Azure AD, and centralized identity services. It shows the connection between school/campus workloads in Azure IaaS and Azure Active Directory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882231/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-Domain-Services/azure-ad-domain-services-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating Azure AD Domain Services, highlighting features like managed domain services, integration with Azure AD, and centralized identity services. It shows the connection between school/campus workloads in Azure IaaS and Azure Active Directory.](https://kodekloud.com/kk-media/image/upload/v1752882231/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-Domain-Services/azure-ad-domain-services-diagram.jpg)
 
 ## Key Features
 
@@ -31,9 +29,7 @@ Key features of Azure AD Domain Services include:
 
 These features are designed to work as seamlessly in the cloud as they do on-premises, enabling organizations to migrate legacy applications—such as those needing Kerberos authentication—to the cloud without a complete overhaul of their authentication infrastructure.
 
-<Callout icon="lightbulb">
-  For example, even if your legacy applications rely on Kerberos authentication, Azure AD Domain Services supports them, even as modern protocols like SAML, OpenID, and OAuth dominate the cloud landscape.
-</Callout>
+> **lightbulb** For example, even if your legacy applications rely on Kerberos authentication, Azure AD Domain Services supports them, even as modern protocols like SAML, OpenID, and OAuth dominate the cloud landscape.
 
 ### Integration with Existing Azure AD Tenant
 
@@ -67,22 +63,16 @@ Before choosing Azure AD Domain Services, consider the following limitations:
 8. **Regional Availability Constraints:** The service may not be available in all Azure regions and might not meet every uptime requirement.
 9. **Cost Considerations:** Evaluate the service costs in the context of your organizational budget and operational needs.
 
-<Callout icon="triangle-alert">
-  Ensure you review these limitations carefully to determine if Azure AD Domain Services aligns with your organizational and technical requirements before deployment.
-</Callout>
+> **triangle-alert** Ensure you review these limitations carefully to determine if Azure AD Domain Services aligns with your organizational and technical requirements before deployment.
 
 ## Alternative Options
 
 If Azure AD Domain Services do not fully meet your organizational needs, consider exploring alternative methods for deploying Active Directory Domain Services in Azure. Each solution comes with its own set of benefits and trade-offs to be evaluated against your specific use case.
 
-<Frame>
-  ![The image is a comparison chart listing the advantages and limitations of a service, with advantages in a green box and limitations in a gradient orange box.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882232/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-Domain-Services/service-advantages-limitations-chart.jpg)
-</Frame>
+![The image is a comparison chart listing the advantages and limitations of a service, with advantages in a green box and limitations in a gradient orange box.](https://kodekloud.com/kk-media/image/upload/v1752882232/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-Azure-AD-Domain-Services/service-advantages-limitations-chart.jpg)
 
 This comparative overview aids in selecting the most appropriate Active Directory deployment option for your Azure infrastructure.
 
 For more detailed guidance on deploying Azure services, visit the [Azure Documentation](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c0f70ae1-790f-4a5d-8e09-29450b5ee610/lesson/6cc15920-9c81-4027-9535-fa738743dc08" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c0f70ae1-790f-4a5d-8e09-29450b5ee610/lesson/6cc15920-9c81-4027-9535-fa738743dc08)

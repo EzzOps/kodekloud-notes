@@ -18,7 +18,7 @@ CodeDeploy provides a wealth of features that simplify and secure your deploymen
 * **Health Tracking:** Continuously monitor the health of deployments. Should errors or failures exceed a set threshold, automatic rollbacks can be triggered.
 * **Flexible Deployment Types:** Choose from rolling updates (updating instances gradually) or blue-green deployments (running the new version alongside the old one before switching traffic).
 
-![The image lists five features: automated deployments, centralized control, rollbacks, health tracking, and rolling and blue/green updates. Each feature is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858005/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/features-of-deployment-automation.jpg)
+![The image lists five features: automated deployments, centralized control, rollbacks, health tracking, and rolling and blue/green updates. Each feature is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752858005/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/features-of-deployment-automation.jpg)
 
 ## Setting Up CodeDeploy
 
@@ -29,7 +29,7 @@ Setting up CodeDeploy involves several clear steps:
 3. **Specify Deployment Configurations:** Configure settings such as the minimum number of healthy hosts required, rollback options, and the update method (blue-green or rolling).
 4. **Execute the Deployment:** CodeDeploy orchestrates the update process based on the instructions defined in your `appspec.yaml` file.
 
-![The image outlines the steps for "Code Deploy," including setting up a deployment group, creating a deployment, configuring deployment settings, and deploying the application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858006/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/code-deploy-steps-outline.jpg)
+![The image outlines the steps for "Code Deploy," including setting up a deployment group, creating a deployment, configuring deployment settings, and deploying the application.](https://kodekloud.com/kk-media/image/upload/v1752858006/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/code-deploy-steps-outline.jpg)
 
 ## CodeDeploy and CI/CD Pipelines
 
@@ -39,7 +39,7 @@ Within a CI/CD pipeline, CodeDeploy plays a crucial role:
 * The commit triggers a build process (commonly via CodeBuild), which executes tests, linters, and code formatting.
 * CodeDeploy then takes the resulting build artifact from CodeBuild and deploys it onto the designated compute platform (e.g., EC2).
 
-![The image illustrates a workflow for AWS CodeDeploy, showing a sequence from a user to AWS CodeCommit, AWS CodeBuild, AWS CodeDeploy, and finally AWS EC2.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858008/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/aws-codedeploy-workflow-diagram.jpg)
+![The image illustrates a workflow for AWS CodeDeploy, showing a sequence from a user to AWS CodeCommit, AWS CodeBuild, AWS CodeDeploy, and finally AWS EC2.](https://kodekloud.com/kk-media/image/upload/v1752858008/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/aws-codedeploy-workflow-diagram.jpg)
 
 ## The AppSpec.yaml File
 
@@ -89,7 +89,7 @@ For deployments targeting EC2 or on-premises servers, CodeDeploy supports two pr
    * **Half-at-a-Time:** Update half of the instances initially; upon success, update the remainder.
    * **One-at-a-Time:** Update instances sequentially, minimizing risk but potentially increasing deployment duration.
 
-![The image outlines deployment types for EC2/on-premise, detailing two options: in-place update and blue/green deployment, with different speeds for in-place updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858009/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/ec2-deployment-types-in-place-blue-green.jpg)
+![The image outlines deployment types for EC2/on-premise, detailing two options: in-place update and blue/green deployment, with different speeds for in-place updates.](https://kodekloud.com/kk-media/image/upload/v1752858009/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/ec2-deployment-types-in-place-blue-green.jpg)
 
 For instance, in a deployment group with four EC2 instances running version one:
 
@@ -97,12 +97,12 @@ For instance, in a deployment group with four EC2 instances running version one:
 * A half-at-a-time update upgrades two instances first, followed by the remaining two.
 * A one-at-a-time update processes each instance sequentially.
 
-![The image shows a diagram labeled "Deployment Types – EC2/On-premise - HalfAtATime" with four icons representing a deployment group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858010/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/deployment-types-ec2-on-premise-diagram.jpg)
+![The image shows a diagram labeled "Deployment Types – EC2/On-premise - HalfAtATime" with four icons representing a deployment group.](https://kodekloud.com/kk-media/image/upload/v1752858010/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/deployment-types-ec2-on-premise-diagram.jpg)
 
 2. **Blue/Green Deployments:**
    * The current environment (blue) continues serving traffic while a new environment (green) is set up with the updated code. Once the new version is verified, traffic is redirected to the green environment, significantly reducing downtime.
 
-![The image illustrates a CodeDeploy Blue/Green Deployment Strategy using AWS CodeDeploy, showing two deployment groups, A and B, with connected icons representing servers or instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858012/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/codedeploy-blue-green-strategy.jpg)
+![The image illustrates a CodeDeploy Blue/Green Deployment Strategy using AWS CodeDeploy, showing two deployment groups, A and B, with connected icons representing servers or instances.](https://kodekloud.com/kk-media/image/upload/v1752858012/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/codedeploy-blue-green-strategy.jpg)
 
 ### Lambda Deployments
 
@@ -112,7 +112,7 @@ For AWS Lambda functions, deployments are managed via aliases that point to spec
 * **Linear Deployment:** Incrementally shift a specified percentage of traffic (e.g., 10% every minute) until the new version handles 100% of the traffic.
 * **Canary Deployment:** Initially send a small fraction of traffic (e.g., 10%) to the new version, and after a brief verification period (e.g., 10 minutes), route all traffic to the new version if no issues are observed.
 
-![The image explains deployment types for AWS Lambda using CodeDeploy, detailing linear and canary traffic shifting strategies, with a diagram showing traffic distribution between two versions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858013/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/aws-lambda-deployment-types-diagram.jpg)
+![The image explains deployment types for AWS Lambda using CodeDeploy, detailing linear and canary traffic shifting strategies, with a diagram showing traffic distribution between two versions.](https://kodekloud.com/kk-media/image/upload/v1752858013/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/aws-lambda-deployment-types-diagram.jpg)
 
 **Example of a Linear Lambda Deployment:**
 
@@ -122,7 +122,7 @@ When using a "linear 10% every 10 minutes" strategy:
 * After 10 minutes, 10% of the traffic shifts to the new version.
 * This incremental process continues until the new version handles all traffic.
 
-![The image illustrates a linear deployment strategy for AWS Lambda, showing a 10% traffic shift every 10 minutes between two versions, v1 and v2, with v1 receiving 80% and v2 receiving 20% of the traffic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858014/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/aws-lambda-linear-deployment-strategy.jpg)
+![The image illustrates a linear deployment strategy for AWS Lambda, showing a 10% traffic shift every 10 minutes between two versions, v1 and v2, with v1 receiving 80% and v2 receiving 20% of the traffic.](https://kodekloud.com/kk-media/image/upload/v1752858014/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/aws-lambda-linear-deployment-strategy.jpg)
 
 **Example of a Canary Lambda Deployment:**
 
@@ -131,7 +131,7 @@ For a "canary 10%, 10 minutes" deployment:
 * Initially, 10% of the traffic is directed to the new version while 90% remains with the old version.
 * After a 10-minute verification period, 100% of the traffic is switched to the new version.
 
-![The image illustrates a Lambda Canary deployment strategy, showing traffic distribution between two versions (v1 and v2) with v1 receiving 0% and v2 receiving 100%.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858015/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/lambda-canary-deployment-strategy.jpg)
+![The image illustrates a Lambda Canary deployment strategy, showing traffic distribution between two versions (v1 and v2) with v1 receiving 0% and v2 receiving 100%.](https://kodekloud.com/kk-media/image/upload/v1752858015/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/lambda-canary-deployment-strategy.jpg)
 
 ### ECS Deployments
 
@@ -141,13 +141,13 @@ Amazon ECS deployments follow similar strategies to those used in Lambda:
 * **Canary Deployments:** Start by shifting a smaller initial percentage (e.g., 10%) and, after a verification period, move all traffic to the new version.
 * **All-at-Once Deployments:** Switch the entire service to the new version immediately.
 
-![The image illustrates different ECS deployment types: Linear, Canary, and AllAtOnce, with a diagram showing traffic shifting from version 1 (v1) to version 2 (v2).](../../../../images/kodekloud.com/kk-media/image/upload/v1752858016/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/ecs-deployment-types-diagram.jpg)
+![The image illustrates different ECS deployment types: Linear, Canary, and AllAtOnce, with a diagram showing traffic shifting from version 1 (v1) to version 2 (v2).](https://kodekloud.com/kk-media/image/upload/v1752858016/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/ecs-deployment-types-diagram.jpg)
 
 ## Automatic Rollbacks and Monitoring
 
 One of CodeDeploy's standout features is its integration with Amazon CloudWatch. If the newly deployed version triggers alarms due to errors or performance issues, CodeDeploy can automatically roll back to the previous stable version. This proactive approach minimizes any negative impact on your users.
 
-![The image illustrates an AWS CodeDeploy rollback process, showing a sequence of versions from V1.1 to V1.4, with a rollback from V1.4 to V1.3 due to an alarm.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858017/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/aws-codedeploy-rollback-process.jpg)
+![The image illustrates an AWS CodeDeploy rollback process, showing a sequence of versions from V1.1 to V1.4, with a rollback from V1.4 to V1.3 due to an alarm.](https://kodekloud.com/kk-media/image/upload/v1752858017/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/aws-codedeploy-rollback-process.jpg)
 
 > **lightbulb** Leverage automatic rollbacks in CodeDeploy to quickly mitigate issues and ensure a seamless user experience, especially during critical updates.
 
@@ -160,7 +160,7 @@ CodeDeploy is a versatile and robust deployment automation service that supports
 * Seamless integration with CI/CD pipelines, ensuring smooth transitions from code commit to production.
 * Clear configuration requirements via the `appspec.yaml` file and specific setup considerations for different compute platforms.
 
-![The image is a summary of a service that automates deployments to various platforms, supports automatic rollbacks, and different deployment strategies, and requires specific configurations and permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858018/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/deployment-automation-summary.jpg)
+![The image is a summary of a service that automates deployments to various platforms, supports automatic rollbacks, and different deployment strategies, and requires specific configurations and permissions.](https://kodekloud.com/kk-media/image/upload/v1752858018/notes-assets/images/AWS-Certified-Developer-Associate-CodeDeploy/deployment-automation-summary.jpg)
 
 Understanding these deployment methods and configurations is crucial, especially if you're preparing for AWS certification exams. With CodeDeploy, you can select the best strategy for your environment and user impact tolerance, ensuring smoother and more reliable application updates.
 

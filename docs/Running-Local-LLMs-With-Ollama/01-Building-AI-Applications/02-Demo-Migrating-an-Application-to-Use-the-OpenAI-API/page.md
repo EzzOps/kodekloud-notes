@@ -164,15 +164,11 @@ Example Flask access log:
   * Cache or paginate long-running requests and handle model timeouts gracefully.
   * When switching to OpenAI hosted APIs, change the `LLM_ENDPOINT` and set a valid `OPENAI_API_KEY`.
 
-<Callout icon="lightbulb">
-  This is a simple demo intended for local development. For production, use a production WSGI server (gunicorn/uvicorn), secure environment secrets properly, and follow best practices for rate-limiting, error handling, and user input sanitization.
-</Callout>
+> **lightbulb** This is a simple demo intended for local development. For production, use a production WSGI server (gunicorn/uvicorn), secure environment secrets properly, and follow best practices for rate-limiting, error handling, and user input sanitization.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/8df2f2d5-d3c5-433d-b5f5-f553b040b2e7/lesson/a1ed1316-1893-4329-ae9e-f93f7202d62b" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/8df2f2d5-d3c5-433d-b5f5-f553b040b2e7/lesson/a1ed1316-1893-4329-ae9e-f93f7202d62b)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/8df2f2d5-d3c5-433d-b5f5-f553b040b2e7/lesson/ef20f910-b01d-45e1-8509-ce81507dfe77" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/8df2f2d5-d3c5-433d-b5f5-f553b040b2e7/lesson/ef20f910-b01d-45e1-8509-ce81507dfe77)
 
 
 # Demo Migrating an Application to Use the OpenAI API
@@ -183,9 +179,7 @@ This guide explains how to migrate a Flask-based AI app to use the OpenAI API wh
 
 This guide shows you how to update a Flask-based AI app to use the OpenAI API in production while still developing locally with Ollama. By changing only a few environment variables, you can switch between free local development and cost-effective cloud inference.
 
-<Frame>
-  ![The image shows the OpenAI developer platform webpage, featuring options to sign up or log in, and information about different AI models like GPT-4o and o1-mini. The sidebar includes links to various capabilities and resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883645/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Migrating-an-Application-to-Use-the-OpenAI-API/openai-developer-platform-webpage.jpg)
-</Frame>
+![The image shows the OpenAI developer platform webpage, featuring options to sign up or log in, and information about different AI models like GPT-4o and o1-mini. The sidebar includes links to various capabilities and resources.](https://kodekloud.com/kk-media/image/upload/v1752883645/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Migrating-an-Application-to-Use-the-OpenAI-API/openai-developer-platform-webpage.jpg)
 
 ***
 
@@ -193,22 +187,16 @@ This guide shows you how to update a Flask-based AI app to use the OpenAI API in
 
 1. Sign in or sign up at [platform.openai.com](https://platform.openai.com/).
 
-<Frame>
-  ![The image shows a login page for OpenAI, offering options to sign in with an email address, phone, Google, Microsoft, or Apple accounts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883646/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Migrating-an-Application-to-Use-the-OpenAI-API/openai-login-page-options.jpg)
-</Frame>
+![The image shows a login page for OpenAI, offering options to sign in with an email address, phone, Google, Microsoft, or Apple accounts.](https://kodekloud.com/kk-media/image/upload/v1752883646/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Migrating-an-Application-to-Use-the-OpenAI-API/openai-login-page-options.jpg)
 
 2. Navigate to **Settings → API keys**, then click **Create new secret key**.
 3. Provide a name (e.g., “Ollama app”), assign it to your default project, set permissions, and copy the secret key.
 
-<Frame>
-  ![The image shows a webpage for creating a new secret API key on the OpenAI platform, with a form to input details like name, project, and permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883647/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Migrating-an-Application-to-Use-the-OpenAI-API/openai-new-api-key-form.jpg)
-</Frame>
+![The image shows a webpage for creating a new secret API key on the OpenAI platform, with a form to input details like name, project, and permissions.](https://kodekloud.com/kk-media/image/upload/v1752883647/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Migrating-an-Application-to-Use-the-OpenAI-API/openai-new-api-key-form.jpg)
 
 4. Confirm that your new key appears under **API keys**.
 
-<Frame>
-  ![The image shows a webpage from the OpenAI platform displaying API key management, with details of an API key named "ollama-app" including its secret key, creation date, and permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883648/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Migrating-an-Application-to-Use-the-OpenAI-API/openai-api-key-management-ollama-app.jpg)
-</Frame>
+![The image shows a webpage from the OpenAI platform displaying API key management, with details of an API key named "ollama-app" including its secret key, creation date, and permissions.](https://kodekloud.com/kk-media/image/upload/v1752883648/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Migrating-an-Application-to-Use-the-OpenAI-API/openai-api-key-management-ollama-app.jpg)
 
 ::: note
 Keep your secret key safe. Do not commit it to version control.
@@ -225,9 +213,7 @@ Open the [Quickstart Guide](https://platform.openai.com/docs/quickstart) or the 
 | Local (Ollama)      | [http://localhost:11434](http://localhost:11434)       | o1-mini     | none           |
 | Production (OpenAI) | [https://api.openai.com/v1](https://api.openai.com/v1) | gpt-4o-mini | Bearer API Key |
 
-<Frame>
-  ![The image shows a webpage from the OpenAI API documentation, detailing flagship models like GPT-4o and their capabilities, along with a sidebar menu for navigation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883650/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Migrating-an-Application-to-Use-the-OpenAI-API/openai-api-documentation-gpt4o.jpg)
-</Frame>
+![The image shows a webpage from the OpenAI API documentation, detailing flagship models like GPT-4o and their capabilities, along with a sidebar menu for navigation.](https://kodekloud.com/kk-media/image/upload/v1752883650/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Migrating-an-Application-to-Use-the-OpenAI-API/openai-api-documentation-gpt4o.jpg)
 
 ***
 
@@ -346,9 +332,7 @@ Error code: 403 - {
 
 Switching to the `https://` endpoint resolves this.
 
-<Frame>
-  ![The image shows an AI Poem Generator interface with a text box for input and a button labeled "Generate Poem." Below, there's a section displaying an AI-generated poem.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883651/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Migrating-an-Application-to-Use-the-OpenAI-API/ai-poem-generator-interface.jpg)
-</Frame>
+![The image shows an AI Poem Generator interface with a text box for input and a button labeled "Generate Poem." Below, there's a section displaying an AI-generated poem.](https://kodekloud.com/kk-media/image/upload/v1752883651/notes-assets/images/Running-Local-LLMs-With-Ollama-Demo-Migrating-an-Application-to-Use-the-OpenAI-API/ai-poem-generator-interface.jpg)
 
 ***
 
@@ -361,6 +345,4 @@ With just an environment-variable tweak, your app seamlessly transitions from lo
 * [Python OpenAI Library](https://pypi.org/project/openai/)
 * [python-dotenv Documentation](https://pypi.org/project/python-dotenv/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/8df2f2d5-d3c5-433d-b5f5-f553b040b2e7/lesson/ca26ae89-22ef-4a76-bb68-78feb12b6f3b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/8df2f2d5-d3c5-433d-b5f5-f553b040b2e7/lesson/ca26ae89-22ef-4a76-bb68-78feb12b6f3b)

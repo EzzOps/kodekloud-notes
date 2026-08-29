@@ -85,9 +85,7 @@ Quick reference: connector roles
 |      Exporter (source) | `service.pipelines.traces.exporters`  | Receives traces from the traces pipeline and performs conversion/aggregation.       |
 | Receiver (destination) | `service.pipelines.metrics.receivers` | Accepts the emitted metric into the metrics pipeline for further processing/export. |
 
-<Callout icon="lightbulb">
-  The connector functions as an exporter on the source pipeline and as a receiver on the destination pipeline. That dual role is why it must be listed in both places.
-</Callout>
+> **lightbulb** The connector functions as an exporter on the source pipeline and as a receiver on the destination pipeline. That dual role is why it must be listed in both places.
 
 Run a generator that emits a few traces to the OTLP receiver. After the connector processes them, the `debug` exporter prints the generated metric. Example debug output (abbreviated) showing `trace.span.count` with value 5:
 
@@ -125,9 +123,7 @@ Best practices and considerations
 * Consider aggregation temporality and monotonicity: this example produces a monotonic sum with delta temporality; choose semantics that match your monitoring needs.
 * If you translate high-volume signals into metrics, review resource and cardinality implications to avoid metric explosion.
 
-<Callout icon="warning">
-  Be careful to register the connector name both where it should act as an exporter (source pipeline) and where it should act as a receiver (destination pipeline). Omitting either will break the flow.
-</Callout>
+> **warning** Be careful to register the connector name both where it should act as an exporter (source pipeline) and where it should act as a receiver (destination pipeline). Omitting either will break the flow.
 
 Further reading and references
 
@@ -139,6 +135,4 @@ Further reading and references
 
 This example demonstrates a simple, practical use-case: turning traces into a span count metric using a connector. Connectors are flexible and can perform richer transformations or signal translations when needed.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/4c81863b-6c00-4438-bd44-3e475092a574" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/4c81863b-6c00-4438-bd44-3e475092a574)

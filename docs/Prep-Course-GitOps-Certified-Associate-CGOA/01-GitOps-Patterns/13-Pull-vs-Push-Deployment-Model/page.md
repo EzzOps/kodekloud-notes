@@ -42,9 +42,7 @@ Drawbacks:
 * Storing cluster credentials in CI increases attack surface — a compromised CI runner can modify the cluster.
 * Enforcing least-privilege is harder because CI often requires broad cluster permissions.
 
-<Callout icon="warning">
-  Storing long-lived or overly broad cluster credentials in CI systems is a common attack vector. Prefer short-lived credentials, fine-grained permissions, and dedicated service accounts whenever possible.
-</Callout>
+> **warning** Storing long-lived or overly broad cluster credentials in CI systems is a common attack vector. Prefer short-lived credentials, fine-grained permissions, and dedicated service accounts whenever possible.
 
 ## Pull-based model (GitOps)
 
@@ -123,6 +121,4 @@ Trade-offs and considerations:
 
 That's all for now.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/7f25d7ec-c8a1-4db0-b435-6897944f4e25" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/7f25d7ec-c8a1-4db0-b435-6897944f4e25)

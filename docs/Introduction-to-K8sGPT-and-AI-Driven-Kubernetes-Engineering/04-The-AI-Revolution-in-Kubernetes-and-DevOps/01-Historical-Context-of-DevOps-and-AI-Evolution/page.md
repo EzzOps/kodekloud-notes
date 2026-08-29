@@ -6,15 +6,11 @@ Explores K8sGPT and AI agents in Kubernetes engineering, highlighting AIs role i
 
 Welcome future AI engineers and DevOps professionals! I’m Michael Forrester. In this lesson, we explore K8sGPT and the rise of AI agents in Kubernetes engineering. Learn how AI will act as a force multiplier in cloud-native workflows—streamlining provisioning, diagnostics, and continuous delivery—and what future landscapes operations-focused engineers should anticipate.
 
-<Callout icon="lightbulb">
-  According to a CNCF report, AI empowers operations and development teams to work smarter and faster—boosting speed and quality while reducing effort in testing and troubleshooting.
-</Callout>
+> **lightbulb** According to a CNCF report, AI empowers operations and development teams to work smarter and faster—boosting speed and quality while reducing effort in testing and troubleshooting.
 
 Why focus on Kubernetes and AI? Kubernetes offers a well-bounded yet complex platform that lets us explore AI-driven tooling in a realistic cloud-native environment. Below is an illustration of this intersection:
 
-<Frame>
-  ![The image features an illustration with the Kubernetes logo, a person thinking, and symbols representing AI and coding, alongside the text "Why are we talking about Kubernetes and AI?" In the bottom right corner, there's a person speaking, possibly in a video or presentation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878977/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Historical-Context-of-DevOps-and-AI-Evolution/kubernetes-ai-discussion-illustration.jpg)
-</Frame>
+![The image features an illustration with the Kubernetes logo, a person thinking, and symbols representing AI and coding, alongside the text "Why are we talking about Kubernetes and AI?" In the bottom right corner, there's a person speaking, possibly in a video or presentation.](https://kodekloud.com/kk-media/image/upload/v1752878977/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Historical-Context-of-DevOps-and-AI-Evolution/kubernetes-ai-discussion-illustration.jpg)
 
 With this foundation, you’ll be inspired and better equipped to navigate the evolving roles in Kubernetes and AI-driven DevOps.
 
@@ -36,9 +32,7 @@ Review these key milestones to understand the evolution from virtualization to A
 | Late 2022 | ChatGPT launches, igniting mainstream interest in generative AI.                                                              |
 | Dec 2023  | CNCF adopts K8sGPT as a sandbox project, cementing the Kubernetes–AI intersection.                                            |
 
-<Frame>
-  ![The image is a timeline highlighting significant technological milestones from 2001 to 2023, including the introduction of OS virtualization, the launch of AWS S3, and the release of ChatGPT.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878979/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Historical-Context-of-DevOps-and-AI-Evolution/technology-timeline-2001-2023-milestones.jpg)
-</Frame>
+![The image is a timeline highlighting significant technological milestones from 2001 to 2023, including the introduction of OS virtualization, the launch of AWS S3, and the release of ChatGPT.](https://kodekloud.com/kk-media/image/upload/v1752878979/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Historical-Context-of-DevOps-and-AI-Evolution/technology-timeline-2001-2023-milestones.jpg)
 
 Kubernetes was the last major innovation reshaping software deployment, and AI is the next seismic shift—forming a powerful synergy for the future of operations.
 
@@ -52,13 +46,9 @@ Anticipate these AI-driven trends in Kubernetes and DevOps:
 • **2028** – Autonomous agents and robotics dominate retail, manufacturing, and logistics, driving new dynamics in knowledge worker organization.\
 • **Beyond** – Personalized AI assistants become standard partners for provisioning, architecture research, and documentation, under human ethical oversight.
 
-<Frame>
-  ![The image is a timeline discussing the future impact of Kubernetes and AI from 2026 to 2028, highlighting trends like digital charisma filters, AI productivity, smart robots, and unionization. A person is visible in the bottom right corner, possibly presenting the information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878980/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Historical-Context-of-DevOps-and-AI-Evolution/kubernetes-ai-impact-timeline-2026-2028.jpg)
-</Frame>
+![The image is a timeline discussing the future impact of Kubernetes and AI from 2026 to 2028, highlighting trends like digital charisma filters, AI productivity, smart robots, and unionization. A person is visible in the bottom right corner, possibly presenting the information.](https://kodekloud.com/kk-media/image/upload/v1752878980/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Historical-Context-of-DevOps-and-AI-Evolution/kubernetes-ai-impact-timeline-2026-2028.jpg)
 
-<Callout icon="triangle-alert">
-  AI tools should operate under human oversight to ensure ethical compliance, unbiased decision-making, and security best practices.
-</Callout>
+> **triangle-alert** AI tools should operate under human oversight to ensure ethical compliance, unbiased decision-making, and security best practices.
 
 AI will reshape DevOps roles and spawn new specialties—just as cloud and Kubernetes did. By focusing on Kubernetes and AI, you’ll be ready to lead in this emerging landscape.
 
@@ -70,6 +60,4 @@ AI will reshape DevOps roles and spawn new specialties—just as cloud and Kuber
 * [AWS Whitepapers](https://aws.amazon.com/whitepapers/)
 * [ChatGPT (OpenAI)](https://openai.com/blog/chatgpt/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-k8sgpt-and-ai-driven-kubernetes-engineering/module/4da806e1-9c46-49f3-8515-27dfc6d5bde5/lesson/a25c2693-b08e-45c3-b703-5a09b6e9ed6f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-k8sgpt-and-ai-driven-kubernetes-engineering/module/4da806e1-9c46-49f3-8515-27dfc6d5bde5/lesson/a25c2693-b08e-45c3-b703-5a09b6e9ed6f)

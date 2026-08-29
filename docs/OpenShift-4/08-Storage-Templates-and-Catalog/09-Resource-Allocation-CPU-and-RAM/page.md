@@ -10,35 +10,25 @@ In this article, we explore how Kubernetes manages CPU and memory resources for 
 
 A resource request specifies the minimum amount of CPU and memory that a Pod needs. For example, if a Pod requires 500 megabytes of memory, a resource request is made so that the Kubernetes scheduler can place the Pod on a worker node with sufficient available resources.
 
-<Frame>
-  ![The image illustrates a process flow related to Kubernetes, showing a sequence involving resource requests, a scheduler finding a node, and icons representing storage, a hexagon, a calendar, and a network.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882805/notes-assets/images/OpenShift-4-Resource-Allocation-CPU-and-RAM/kubernetes-process-flow-resource-scheduler.jpg)
-</Frame>
+![The image illustrates a process flow related to Kubernetes, showing a sequence involving resource requests, a scheduler finding a node, and icons representing storage, a hexagon, a calendar, and a network.](https://kodekloud.com/kk-media/image/upload/v1752882805/notes-assets/images/OpenShift-4-Resource-Allocation-CPU-and-RAM/kubernetes-process-flow-resource-scheduler.jpg)
 
-<Callout icon="lightbulb">
-  Resource requests are critical to ensuring that workloads are scheduled on nodes that have the capacity to meet their needs.
-</Callout>
+> **lightbulb** Resource requests are critical to ensuring that workloads are scheduled on nodes that have the capacity to meet their needs.
 
 ## The Impact of Continuous Resource Requests
 
 Imagine a scenario where multiple Pods continuously request additional CPU and memory on a cluster with three worker nodes, each with a finite resource pool (for example, 24GB of RAM per node). Over time, as Pods increase their resource requests, the available capacity on the worker nodes becomes exhausted. Without a cluster autoscaling mechanism in place, this situation can lead to severe resource shortages and service disruptions.
 
-<Frame>
-  ![The image shows a diagram with a series of red icons and text indicating a request process, with a message bubble stating, "Hey! We are running out of space..." and references to "24 GIGs."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882806/notes-assets/images/OpenShift-4-Resource-Allocation-CPU-and-RAM/request-process-red-icons-diagram.jpg)
-</Frame>
+![The image shows a diagram with a series of red icons and text indicating a request process, with a message bubble stating, "Hey! We are running out of space..." and references to "24 GIGs."](https://kodekloud.com/kk-media/image/upload/v1752882806/notes-assets/images/OpenShift-4-Resource-Allocation-CPU-and-RAM/request-process-red-icons-diagram.jpg)
 
 ## Defining Resource Limits
 
 Resource limits serve as a safeguard by specifying the maximum amount of CPU and memory a Pod is allowed to use. For example, while a Pod's resource request might keep increasing ("gimme, gimme, gimme"), a resource limit enforces a hard cap (e.g., 2GB of RAM). If the application tries to exceed this limit, it may encounter a failure, which can signal issues such as memory leaks.
 
-<Frame>
-  ![The image illustrates a concept of resource limits, showing a reduction from 3GB to 2GB with a hand icon indicating restriction.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882806/notes-assets/images/OpenShift-4-Resource-Allocation-CPU-and-RAM/resource-limits-reduction-hand-icon.jpg)
-</Frame>
+![The image illustrates a concept of resource limits, showing a reduction from 3GB to 2GB with a hand icon indicating restriction.](https://kodekloud.com/kk-media/image/upload/v1752882806/notes-assets/images/OpenShift-4-Resource-Allocation-CPU-and-RAM/resource-limits-reduction-hand-icon.jpg)
 
 The kubelet—running on every worker node—ensures that no Pod exceeds its allocated resource limits. This mechanism is invaluable in identifying potential problems. For instance, if an application designed to use 500 megabytes suddenly consumes 1GB of RAM, it may be symptomatic of a memory leak.
 
-<Frame>
-  ![The image illustrates a concept related to "Limits" with a note that "Kubelet Ensures that the Limit is Met," featuring icons of hierarchical structures and check marks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882807/notes-assets/images/OpenShift-4-Resource-Allocation-CPU-and-RAM/limits-kubelet-hierarchical-structure.jpg)
-</Frame>
+![The image illustrates a concept related to "Limits" with a note that "Kubelet Ensures that the Limit is Met," featuring icons of hierarchical structures and check marks.](https://kodekloud.com/kk-media/image/upload/v1752882807/notes-assets/images/OpenShift-4-Resource-Allocation-CPU-and-RAM/limits-kubelet-hierarchical-structure.jpg)
 
 ## Example: Configuring Resource Quotas and Container Resources
 
@@ -99,9 +89,7 @@ spec:
             - containerPort: 80
 ```
 
-<Callout icon="lightbulb">
-  It is common practice in Kubernetes to specify CPU requests without limits to allow for efficient resource reclamation, while both requests and limits are applied to memory to prevent resource exhaustion and aid in troubleshooting.
-</Callout>
+> **lightbulb** It is common practice in Kubernetes to specify CPU requests without limits to allow for efficient resource reclamation, while both requests and limits are applied to memory to prevent resource exhaustion and aid in troubleshooting.
 
 ## Summary
 
@@ -114,6 +102,4 @@ This article emphasizes the importance of strategic resource allocation in Kuber
 
 For more detailed information on Kubernetes resource management, visit the [Kubernetes Documentation](https://kubernetes.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/301a480c-2b61-448f-8966-4f228aa6cbea" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/301a480c-2b61-448f-8966-4f228aa6cbea)

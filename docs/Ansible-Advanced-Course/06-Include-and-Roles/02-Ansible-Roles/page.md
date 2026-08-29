@@ -107,7 +107,7 @@ In this article, we explain the concept of roles in Ansible and how they help or
 
 For example, to convert a blank server into a MySQL database server, you would install prerequisite packages, install the MySQL packages, start the MySQL service, and then configure databases or users. Similarly, setting up a web server involves installing prerequisites, setting up Nginx, configuring its service, and preparing custom web pages.
 
-![The image outlines steps to become a doctor or engineer and instructions for installing MySQL and Nginx, including prerequisites and configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869397/notes-assets/images/Ansible-Advanced-Course-Ansible-Roles/frame_90.jpg)
+![The image outlines steps to become a doctor or engineer and instructions for installing MySQL and Nginx, including prerequisites and configuration.](https://kodekloud.com/kk-media/image/upload/v1752869397/notes-assets/images/Ansible-Advanced-Course-Ansible-Roles/frame_90.jpg)
 
 Up to this point, you could have accomplished these tasks using a regular Ansible playbook. Consider the following simple playbook that installs and configures MySQL on a database server:
 
@@ -197,11 +197,11 @@ Within this structure:
 
 Roles simplify sharing your work with the broader Ansible community. [Ansible Galaxy](https://galaxy.ansible.com) is an excellent resource to discover thousands of roles covering a broad spectrum of tasks—from deploying web servers to managing databases.
 
-![The image shows a webpage interface for "GALAXY" with navigation options like Home, Search, and Community, featuring categories such as System, Development, Networking, and Security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869398/notes-assets/images/Ansible-Advanced-Course-Ansible-Roles/frame_210.jpg)
+![The image shows a webpage interface for "GALAXY" with navigation options like Home, Search, and Community, featuring categories such as System, Development, Networking, and Security.](https://kodekloud.com/kk-media/image/upload/v1752869398/notes-assets/images/Ansible-Advanced-Course-Ansible-Roles/frame_210.jpg)
 
 Before diving into new playbooks, it’s worth checking [Ansible Galaxy](https://galaxy.ansible.com) to see if a role already exists that meets your requirements. The following image presents a list of available Ansible roles:
 
-![The image shows a list of Ansible roles with names, descriptions, tags, scores, download counts, and import dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869399/notes-assets/images/Ansible-Advanced-Course-Ansible-Roles/frame_230.jpg)
+![The image shows a list of Ansible roles with names, descriptions, tags, scores, download counts, and import dates.](https://kodekloud.com/kk-media/image/upload/v1752869399/notes-assets/images/Ansible-Advanced-Course-Ansible-Roles/frame_230.jpg)
 
 ## Creating Your Own Role
 

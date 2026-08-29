@@ -6,9 +6,7 @@ Best practices for managing Jenkins to ensure stability, scalability, and quick 
 
 Managing Jenkins efficiently requires a comprehensive administration plan that ensures stability, scalability, and quick recovery from issues. Follow these best practices to keep your Jenkins environment running optimally:
 
-<Callout icon="lightbulb">
-  Regular backups of your server and all critical files and folders are essential. However, a backup is only as effective as its accompanying restore strategy. Always validate and test your restoration procedures to ensure reliability during emergencies.
-</Callout>
+> **lightbulb** Regular backups of your server and all critical files and folders are essential. However, a backup is only as effective as its accompanying restore strategy. Always validate and test your restoration procedures to ensure reliability during emergencies.
 
 ## Proactive Monitoring and Diagnostics
 
@@ -22,9 +20,7 @@ As the user base and CI/CD pipelines grow, your Jenkins infrastructure may need 
 
 Jenkins is not a set-it-and-forget-it platform. Regular maintenance, including applying updates, patches, and security fixes, is key to keeping your system secure and performing at its best.
 
-<Frame>
-  ![The image shows icons labeled Backup, Restore, Monitor, Scale, and Manage, related to administering Jenkins.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880138/notes-assets/images/Jenkins-Administering-Jenkins/frame_90.jpg)
-</Frame>
+![The image shows icons labeled Backup, Restore, Monitor, Scale, and Manage, related to administering Jenkins.](https://kodekloud.com/kk-media/image/upload/v1752880138/notes-assets/images/Jenkins-Administering-Jenkins/frame_90.jpg)
 
 ## Summary
 
@@ -37,6 +33,4 @@ To maintain a robust Jenkins environment, focus on:
 
 Thank you for reading, and see you in the next article!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/e5db9f73-b364-499f-9b38-f478fd9dfafc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/22de6dac-d594-40dc-a3fb-1cc8d20b8a61/lesson/e5db9f73-b364-499f-9b38-f478fd9dfafc)

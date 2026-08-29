@@ -6,19 +6,13 @@ Parameters enhance code flexibility and reusability by allowing functions to acc
 
 Parameters allow you to pass dynamic information into functions by serving as placeholders for the actual values. They enhance the flexibility and reusability of your code by determining the function's behavior based on the input provided.
 
-<Frame>
-  ![The image explains the concept of parameters in programming, showing how they pass information to functions and serve as placeholders for actual values.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883892/notes-assets/images/Rust-Programming-Parameters/programming-parameters-functions-placeholder.jpg)
-</Frame>
+![The image explains the concept of parameters in programming, showing how they pass information to functions and serve as placeholders for actual values.](https://kodekloud.com/kk-media/image/upload/v1752883892/notes-assets/images/Rust-Programming-Parameters/programming-parameters-functions-placeholder.jpg)
 
 Consider a coffee machine analogy: just as you specify the amount of water and coffee beans to brew your favorite cup of coffee, parameters allow functions to process diverse data inputs. This analogy highlights how providing different values can alter the outcome, much like different recipes yield unique beverages.
 
-<Frame>
-  ![The image is a diagram titled "Understanding Parameters," highlighting that functions are flexible and reusable, and perform tasks based on different inputs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883893/notes-assets/images/Rust-Programming-Parameters/understanding-parameters-functions-diagram.jpg)
-</Frame>
+![The image is a diagram titled "Understanding Parameters," highlighting that functions are flexible and reusable, and perform tasks based on different inputs.](https://kodekloud.com/kk-media/image/upload/v1752883893/notes-assets/images/Rust-Programming-Parameters/understanding-parameters-functions-diagram.jpg)
 
-<Frame>
-  ![The image illustrates the process of making coffee, showing coffee beans and water being added to a coffee machine, resulting in a cup of coffee. A note emphasizes specifying the amount of water and coffee beans.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883894/notes-assets/images/Rust-Programming-Parameters/coffee-making-process-illustration.jpg)
-</Frame>
+![The image illustrates the process of making coffee, showing coffee beans and water being added to a coffee machine, resulting in a cup of coffee. A note emphasizes specifying the amount of water and coffee beans.](https://kodekloud.com/kk-media/image/upload/v1752883894/notes-assets/images/Rust-Programming-Parameters/coffee-making-process-illustration.jpg)
 
 ## Defining Functions with Parameters in Rust
 
@@ -30,9 +24,7 @@ fn function_name(parameter1: Type, parameter2: Type) {
 }
 ```
 
-<Callout icon="lightbulb">
-  Defining parameters with explicit types not only enhances code readability but also leverages Rust’s strong type system to prevent many common programming errors.
-</Callout>
+> **lightbulb** Defining parameters with explicit types not only enhances code readability but also leverages Rust’s strong type system to prevent many common programming errors.
 
 ### Example: Greeting with a Parameter
 
@@ -97,10 +89,6 @@ This example demonstrates how the `add_prefix` function uses two `&str` paramete
 
 Parameters are a critical concept in programming that enable functions to be modular, dynamic, and reusable. In Rust, you define functions with parameters by using the `fn` keyword, which is followed by the function name, a list of parameters with their types, and the function's code block. Real-world examples, such as generating personalized greetings, calculating areas, and adding prefixes to messages, illustrate how parameters empower developers to write clean, maintainable, and efficient code.
 
-<Frame>
-  ![The image is a summary slide with three points about function parameters, including their role, how to define them, and examples of their use. It features a gradient background and numbered markers for each point.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883895/notes-assets/images/Rust-Programming-Parameters/function-parameters-summary-slide.jpg)
-</Frame>
+![The image is a summary slide with three points about function parameters, including their role, how to define them, and examples of their use. It features a gradient background and numbered markers for each point.](https://kodekloud.com/kk-media/image/upload/v1752883895/notes-assets/images/Rust-Programming-Parameters/function-parameters-summary-slide.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/7ec396a4-7aea-4d77-abd2-48f4cee7fd94/lesson/c332a8a7-daff-4e47-bec7-2c94c61f6ef8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/7ec396a4-7aea-4d77-abd2-48f4cee7fd94/lesson/c332a8a7-daff-4e47-bec7-2c94c61f6ef8)

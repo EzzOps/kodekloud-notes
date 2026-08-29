@@ -10,15 +10,11 @@ In this lesson, we will explore the dependency lock file in Terraform, understan
 
 The dependency lock file in Terraform, named `.terraform.lock.hcl`, is essential for managing external provider dependencies. This file records the exact provider versions used within your Terraform configurations, ensuring consistency across all environments and operations.
 
-<Frame>
-  ![The image explains a dependency lock file, "Terraform.lock.hcl," ensuring consistent provider versions across AWS, GCP, and Azure environments for Terraform operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884153/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Dependency-Lock-File/frame_20.jpg)
-</Frame>
+![The image explains a dependency lock file, "Terraform.lock.hcl," ensuring consistent provider versions across AWS, GCP, and Azure environments for Terraform operations.](https://kodekloud.com/kk-media/image/upload/v1752884153/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Dependency-Lock-File/frame_20.jpg)
 
-<Callout icon="lightbulb">
-  * Guarantees that all team members and deployment pipelines use the same provider versions.
+> **lightbulb** * Guarantees that all team members and deployment pipelines use the same provider versions.
   * Enhances reproducibility by enforcing exact versioning.
   * Prevents accidental upgrades that could introduce breaking changes.
-</Callout>
 
 ## How It Works
 
@@ -49,9 +45,7 @@ You may now begin working with Terraform. Try running "terraform plan" to see an
 If you ever set or change modules or backend configuration for Terraform, rerun this command to reinitialize your working directory. If you forget, other commands will detect it and remind you to do so if necessary.
 ```
 
-<Frame>
-  ![The image shows a menu titled "Lock file contents" with three options: "Exact versions," "Provider checksums" (highlighted), and "Information."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884154/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Dependency-Lock-File/frame_90.jpg)
-</Frame>
+![The image shows a menu titled "Lock file contents" with three options: "Exact versions," "Provider checksums" (highlighted), and "Information."](https://kodekloud.com/kk-media/image/upload/v1752884154/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Dependency-Lock-File/frame_90.jpg)
 
 To update your lock file when upgrading to newer provider versions, use the following command:
 
@@ -70,22 +64,14 @@ Following these best practices will help you maintain an effective dependency lo
 | Commit the lock file                   | Always include `.terraform.lock.hcl` in version control to ensure consistency across environments. |
 | Review changes during provider updates | Carefully check the lock file after updates to understand version and dependency modifications.    |
 
-<Callout icon="lightbulb">
-  Before deploying changes to production, always compare your lock file versions to avoid unintended updates that can impact your infrastructure stability.
-</Callout>
+> **lightbulb** Before deploying changes to production, always compare your lock file versions to avoid unintended updates that can impact your infrastructure stability.
 
-<Frame>
-  ![The image outlines best practices for lock files: "Commit the lock file" and "Review changes," with corresponding icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884155/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Dependency-Lock-File/frame_130.jpg)
-</Frame>
+![The image outlines best practices for lock files: "Commit the lock file" and "Review changes," with corresponding icons.](https://kodekloud.com/kk-media/image/upload/v1752884155/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Dependency-Lock-File/frame_130.jpg)
 
 ## Conclusion
 
 The dependency lock file is a powerful tool in Terraform that manages provider versions, ensuring stable and predictable infrastructure deployments. It safeguards your projects against unintended updates and provides a clear path for safely upgrading providers.
 
-<Frame>
-  ![The image is a conclusion slide stating that dependency lock files manage provider versions in Terraform, ensuring stable and predictable infrastructure deployments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884156/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Dependency-Lock-File/frame_150.jpg)
-</Frame>
+![The image is a conclusion slide stating that dependency lock files manage provider versions in Terraform, ensuring stable and predictable infrastructure deployments.](https://kodekloud.com/kk-media/image/upload/v1752884156/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Dependency-Lock-File/frame_150.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/4b6ab52b-4fbb-4a33-9dbc-0fb1c6900c7e/lesson/eafe069d-a66f-4800-8c36-6cce0ff7dd37" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/4b6ab52b-4fbb-4a33-9dbc-0fb1c6900c7e/lesson/eafe069d-a66f-4800-8c36-6cce0ff7dd37)

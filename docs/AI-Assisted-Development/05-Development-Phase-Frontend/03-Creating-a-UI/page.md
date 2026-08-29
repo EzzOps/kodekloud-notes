@@ -178,7 +178,7 @@ def upload():
 
 After integrating these enhancements, our Flask API is robust and ready for frontend consumption. Later, we will scaffold the frontend using Cursor alongside tools like Tabnine and GitHub Copilot.
 
-![The image shows a code editor with Python code for an image upload function, alongside a terminal displaying error logs related to HTTP requests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857065/notes-assets/images/AI-Assisted-Development-Testing-with-Postman/python-image-upload-code-terminal-logs.jpg)
+![The image shows a code editor with Python code for an image upload function, alongside a terminal displaying error logs related to HTTP requests.](https://kodekloud.com/kk-media/image/upload/v1752857065/notes-assets/images/AI-Assisted-Development-Testing-with-Postman/python-image-upload-code-terminal-logs.jpg)
 
 > **lightbulb** When testing, check the API logs to see messages such as:
 
@@ -587,7 +587,7 @@ button {
 
 The CSS above creates a responsive grid layout where the upload section, quality control, and button are evenly spaced and centered.
 
-![The image shows a web application interface for an "Image Optimizer" with options to upload an image, adjust quality, and optimize it. The background displays a code editor with a project directory and code files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857066/notes-assets/images/AI-Assisted-Development-Creating-a-UI/image-optimizer-web-interface.jpg)
+![The image shows a web application interface for an "Image Optimizer" with options to upload an image, adjust quality, and optimize it. The background displays a code editor with a project directory and code files.](https://kodekloud.com/kk-media/image/upload/v1752857066/notes-assets/images/AI-Assisted-Development-Creating-a-UI/image-optimizer-web-interface.jpg)
 
 Notice that the dashed border around the file input has been adjusted using padding and box-sizing properties. The button styling was also refined for better consistency.
 
@@ -611,7 +611,7 @@ body {
 
 After applying these changes, your final design will feature a responsive layout with a clean background and centered form elements, ensuring a user-friendly experience.
 
-![The image shows a web application interface for an "Image Optimizer" with options to upload an image, adjust quality, and optimize it. The background is blue, and the interface is displayed in a browser window.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857067/notes-assets/images/AI-Assisted-Development-Creating-a-UI/image-optimizer-web-interface-2.jpg)
+![The image shows a web application interface for an "Image Optimizer" with options to upload an image, adjust quality, and optimize it. The background is blue, and the interface is displayed in a browser window.](https://kodekloud.com/kk-media/image/upload/v1752857067/notes-assets/images/AI-Assisted-Development-Creating-a-UI/image-optimizer-web-interface-2.jpg)
 
 At this stage, the interface includes all required features: selecting a file, adjusting the quality parameter via a slider, and optimizing the image using a neatly arranged grid layout.
 

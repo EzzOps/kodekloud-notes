@@ -10,11 +10,11 @@ In this article, we explore how to effectively set up and use [AWS Cloud9](https
 
 Begin by clicking on the **Create Environment** button. Enter a name for your environment (for example, "demo") and select your preferred environment type.
 
-![The image shows the AWS Cloud9 interface for creating a new environment, where users can input details like name and description, and choose between a new EC2 instance or existing compute resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857918/notes-assets/images/AWS-Certified-Developer-Associate-Cloud9-Demo/aws-cloud9-new-environment-interface.jpg)
+![The image shows the AWS Cloud9 interface for creating a new environment, where users can input details like name and description, and choose between a new EC2 instance or existing compute resources.](https://kodekloud.com/kk-media/image/upload/v1752857918/notes-assets/images/AWS-Certified-Developer-Associate-Cloud9-Demo/aws-cloud9-new-environment-interface.jpg)
 
 At this stage, you can either launch a new EC2 instance or utilize an existing one. For demonstration purposes, we will create a new EC2 instance. Select the desired instance type (for instance, the most cost-effective option), choose the platform (e.g., Amazon Linux 2023), and set the timeout—here, the environment will automatically time out after 30 minutes of inactivity.
 
-![The image shows an AWS console screen for creating a new EC2 instance, with options for instance type, platform, timeout settings, and network connection preferences.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857920/notes-assets/images/AWS-Certified-Developer-Associate-Cloud9-Demo/aws-ec2-instance-creation-console.jpg)
+![The image shows an AWS console screen for creating a new EC2 instance, with options for instance type, platform, timeout settings, and network connection preferences.](https://kodekloud.com/kk-media/image/upload/v1752857920/notes-assets/images/AWS-Certified-Developer-Associate-Cloud9-Demo/aws-ec2-instance-creation-console.jpg)
 
 > **lightbulb** When configuring your environment, consider setting a timeout that reflects your usage patterns to manage resources more efficiently.
 
@@ -24,7 +24,7 @@ Next, determine how you want to access your Cloud9 environment. You can configur
 
 Once the environment is ready, click the **Open** button. This action launches your Cloud9 IDE in a new browser tab.
 
-![The image shows the AWS Cloud9 console with a list of environments, including one named "demo," which is an EC2 instance connected via AWS Systems Manager. A green notification bar indicates successful creation of the environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857921/notes-assets/images/AWS-Certified-Developer-Associate-Cloud9-Demo/aws-cloud9-console-environment-demo.jpg)
+![The image shows the AWS Cloud9 console with a list of environments, including one named "demo," which is an EC2 instance connected via AWS Systems Manager. A green notification bar indicates successful creation of the environment.](https://kodekloud.com/kk-media/image/upload/v1752857921/notes-assets/images/AWS-Certified-Developer-Associate-Cloud9-Demo/aws-cloud9-console-environment-demo.jpg)
 
 ## Exploring the Cloud9 IDE
 
@@ -34,7 +34,7 @@ Upon launching, the Cloud9 interface presents several key features:
 * **Built-in Terminal**: Embedded at the bottom, this terminal is already configured with your AWS credentials and the AWS CLI.
 * **Project Organization**: Easily create new folders (e.g., "src") and files (e.g., "index.js") to organize your projects.
 
-![The image shows the AWS Cloud9 integrated development environment (IDE) with a README.md file open, displaying a welcome message and instructions for getting started. The interface includes a file explorer on the left and a terminal at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857922/notes-assets/images/AWS-Certified-Developer-Associate-Cloud9-Demo/aws-cloud9-ide-readme-welcome.jpg)
+![The image shows the AWS Cloud9 integrated development environment (IDE) with a README.md file open, displaying a welcome message and instructions for getting started. The interface includes a file explorer on the left and a terminal at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752857922/notes-assets/images/AWS-Certified-Developer-Associate-Cloud9-Demo/aws-cloud9-ide-readme-welcome.jpg)
 
 ## Using the Integrated Terminal
 

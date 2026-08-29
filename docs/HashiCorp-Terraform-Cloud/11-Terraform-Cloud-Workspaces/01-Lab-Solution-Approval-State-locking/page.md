@@ -12,9 +12,7 @@ In this lab, you’ll learn how Terraform Cloud manages state locks to prevent c
 * Terraform Cloud account with access to the `Mastering-Terraform-CI` organization
 * An existing Terraform workspace named `devops-aws-myapp-dev`
 
-<Callout icon="lightbulb">
-  Ensure you have **Workspace Admin** privileges in Terraform Cloud to manage locks.
-</Callout>
+> **lightbulb** Ensure you have **Workspace Admin** privileges in Terraform Cloud to manage locks.
 
 ***
 
@@ -116,13 +114,9 @@ You can manually lock your workspace to halt any new runs:
 
 You’ll see who owns the lock and any queued runs will wait:
 
-<Frame>
-  ![The image shows a KodeKloud lab interface for Terraform Cloud Workspaces, with instructions to unlock a workspace and a terminal window displaying a file explorer with Terraform files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878926/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Approval-State-locking/kodekloud-terraform-cloud-workspaces-lab.jpg)
-</Frame>
+![The image shows a KodeKloud lab interface for Terraform Cloud Workspaces, with instructions to unlock a workspace and a terminal window displaying a file explorer with Terraform files.](https://kodekloud.com/kk-media/image/upload/v1752878926/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Approval-State-locking/kodekloud-terraform-cloud-workspaces-lab.jpg)
 
-<Callout icon="triangle-alert">
-  Queued runs remain in the **Pending** state until the lock is released. Ensure this doesn’t block critical deployments.
-</Callout>
+> **triangle-alert** Queued runs remain in the **Pending** state until the lock is released. Ensure this doesn’t block critical deployments.
 
 ***
 
@@ -133,9 +127,7 @@ Once you're ready to proceed:
 1. Navigate to **Manage lock** in the workspace settings.
 2. Click **Unlock**.
 
-<Frame>
-  ![The image shows a Terraform Cloud workspace settings page with a focus on the "Locking" section, indicating the workspace is currently unlocked. A success message confirms the workspace has been unlocked.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878927/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Approval-State-locking/terraform-cloud-workspace-locking-settings.jpg)
-</Frame>
+![The image shows a Terraform Cloud workspace settings page with a focus on the "Locking" section, indicating the workspace is currently unlocked. A success message confirms the workspace has been unlocked.](https://kodekloud.com/kk-media/image/upload/v1752878927/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Approval-State-locking/terraform-cloud-workspace-locking-settings.jpg)
 
 After unlocking, any pending runs will automatically move forward through plan and apply phases.
 
@@ -163,6 +155,4 @@ After unlocking, any pending runs will automatically move forward through plan a
 
 [api-runs]: https://www.terraform.io/docs/cloud/api/runs.html
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/69fc91b2-bf0f-4922-831c-2aee42d19b03/lesson/537f3a1e-69b2-4fbf-afec-5664f7cff4fd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/69fc91b2-bf0f-4922-831c-2aee42d19b03/lesson/537f3a1e-69b2-4fbf-afec-5664f7cff4fd)

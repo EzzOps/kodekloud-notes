@@ -109,13 +109,9 @@ for i, msg in enumerate(saved_state["messages"], start=1):
 
 This confirms the system stored and restored the conversation memory.
 
-<Callout icon="warning">
-  Avoid using `InMemorySaver` for production: in-memory checkpointers do not survive process restarts or multi-instance deployments. Always choose a durable backing store (see examples below).
-</Callout>
+> **warning** Avoid using `InMemorySaver` for production: in-memory checkpointers do not survive process restarts or multi-instance deployments. Always choose a durable backing store (see examples below).
 
-<Callout icon="lightbulb">
-  In this lesson we used an in-memory checkpointer for simplicity. For production deployments, replace `InMemorySaver` with a durable checkpoint implementation so conversations persist across restarts and multiple instances.
-</Callout>
+> **lightbulb** In this lesson we used an in-memory checkpointer for simplicity. For production deployments, replace `InMemorySaver` with a durable checkpoint implementation so conversations persist across restarts and multiple instances.
 
 ## Checkpointer options and recommendations
 
@@ -143,11 +139,9 @@ Persistent memory is essential for realistic conversational AI. LangGraph implem
 
 This pattern — shared state, checkpoint after each invocation, and restore by conversation identifier — forms the foundation for assistants that maintain continuity across sessions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/5d61391b-1eed-4ca1-9333-2ef0a43d6d7b" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/5d61391b-1eed-4ca1-9333-2ef0a43d6d7b)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/7caa0f21-eaee-4ff3-9f8c-291e75424b05" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/7caa0f21-eaee-4ff3-9f8c-291e75424b05)
 
 
 # LangSmith Observability Introduction

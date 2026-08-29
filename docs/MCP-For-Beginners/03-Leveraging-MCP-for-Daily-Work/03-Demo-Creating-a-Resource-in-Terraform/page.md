@@ -83,9 +83,7 @@ Add a custom connector in Claude
 
 Once connected, upload a file in Claude and ask it to "Convert to Markdown." Claude will call your MCP server, which returns the converted Markdown content.
 
-<Callout icon="lightbulb">
-  When adding a custom connector pointing to a local server, verify the MCP service is reachable at the URL you provide (correct host, port, and path). If you run behind a firewall or use a different network interface, update the host accordingly.
-</Callout>
+> **lightbulb** When adding a custom connector pointing to a local server, verify the MCP service is reachable at the URL you provide (correct host, port, and path). If you run behind a firewall or use a different network interface, update the host accordingly.
 
 Inspector and developer tools
 
@@ -108,9 +106,7 @@ Deployment and operational suggestions
 | Isolate dependencies       | Run MCP servers in Docker containers                                                         |
 | Team/internal access       | Host MCP servers on an internal network, or expose public endpoints only after securing them |
 
-<Callout icon="warning">
-  Do not expose MCP endpoints publicly unless you understand and have implemented proper authentication, TLS, and access controls. Exposing local connectors without protection can leak sensitive data.
-</Callout>
+> **warning** Do not expose MCP endpoints publicly unless you understand and have implemented proper authentication, TLS, and access controls. Exposing local connectors without protection can leak sensitive data.
 
 Troubleshooting checklist
 
@@ -131,9 +127,7 @@ Links and references
 * Docker: [https://www.docker.com](https://www.docker.com)
 * Python venv: [https://docs.python.org/3/library/venv.html](https://docs.python.org/3/library/venv.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/910a0b7a-ac6e-43f1-956e-203a70c3d455/lesson/4410741d-0261-4a26-a421-687e357f3cc6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mcp-for-beginners/module/910a0b7a-ac6e-43f1-956e-203a70c3d455/lesson/4410741d-0261-4a26-a421-687e357f3cc6)
 
 
 # Demo Creating a Resource in Terraform

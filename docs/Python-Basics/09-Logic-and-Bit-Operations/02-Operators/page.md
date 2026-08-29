@@ -41,9 +41,7 @@ print(22 << 2)  # 88
   <img alt="A dark presentation slide titled &#x22;Operators&#x22; with three bullet points explaining logical operators (and, not, or), bitwise operators (&, |, ^, ~) that return 0 or 1, and bit shifting using << and >>. The operator names are highlighted in different colors." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Bitwise operators are useful for flags, masks, and efficient low-level manipulations. Remember that Python integers are unbounded and bitwise operations follow two's‑complement logic, so \~n equals -n - 1.
-</Callout>
+> **lightbulb** Bitwise operators are useful for flags, masks, and efficient low-level manipulations. Remember that Python integers are unbounded and bitwise operations follow two's‑complement logic, so \~n equals -n - 1.
 
 Recap
 
@@ -56,9 +54,7 @@ Links and references
 * [Python Numeric Types — bitwise operations](https://docs.python.org/3/library/stdtypes.html#bitwise-operations-on-integer-types)
 * [Two's complement explanation (Wikipedia)](https://en.wikipedia.org/wiki/Two%27s_complement)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/24b7c33f-d6b5-4346-9b97-739cf4a7e698/lesson/c69cf016-3d7e-42ac-9a20-3097cea2c14f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/24b7c33f-d6b5-4346-9b97-739cf4a7e698/lesson/c69cf016-3d7e-42ac-9a20-3097cea2c14f)
 
 
 # Operators
@@ -87,19 +83,13 @@ else:
 
 The first condition uses the `and` operator to determine if both `age1` and `age2` are greater than or equal to 18. The `and` operator returns True only when both conditions are met; otherwise, it yields False, and the following code blocks are evaluated accordingly.
 
-<Frame>
-  ![The image shows a truth table for the logical "AND" operation with combinations of "True" and "False" values.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883535/notes-assets/images/Python-Basics-Operators/frame_60.jpg)
-</Frame>
+![The image shows a truth table for the logical "AND" operation with combinations of "True" and "False" values.](https://kodekloud.com/kk-media/image/upload/v1752883535/notes-assets/images/Python-Basics-Operators/frame_60.jpg)
 
 The next condition employs the `or` operator. This operator returns True if at least one of the conditions is True. In this scenario, if either `age1` or `age2` is 18 or older, the program will execute the corresponding code block. Only when both conditions are False does the program fall through to the final block.
 
-<Frame>
-  ![The image shows a truth table for the logical "or" operation, illustrating combinations of "True" and "False" values.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883536/notes-assets/images/Python-Basics-Operators/frame_90.jpg)
-</Frame>
+![The image shows a truth table for the logical "or" operation, illustrating combinations of "True" and "False" values.](https://kodekloud.com/kk-media/image/upload/v1752883536/notes-assets/images/Python-Basics-Operators/frame_90.jpg)
 
-<Callout icon="lightbulb">
-  Logical operators like `and`, `or`, and `not` are fundamental in programming. They help you combine or invert conditions to build complex decision-making logic in your code.
-</Callout>
+> **lightbulb** Logical operators like `and`, `or`, and `not` are fundamental in programming. They help you combine or invert conditions to build complex decision-making logic in your code.
 
 Another useful logical operator in Python is `not`. This operator reverses the truth value of a boolean expression. For example, if we want to display "You are not hungry" when the variable `is_hungry` is False, we can check this condition as follows:
 
@@ -113,6 +103,4 @@ Since `is_hungry` is False, the expression `not is_hungry` evaluates to True, an
 
 That’s all for this lesson. Happy coding, and see you in the next article!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/24b7c33f-d6b5-4346-9b97-739cf4a7e698/lesson/bcb63a16-5dd1-4ba2-b360-ed842918f1cd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/24b7c33f-d6b5-4346-9b97-739cf4a7e698/lesson/bcb63a16-5dd1-4ba2-b360-ed842918f1cd)

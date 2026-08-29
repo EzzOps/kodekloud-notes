@@ -86,7 +86,7 @@ Key elements:
 
 A typical Azure DevOps pipeline run reveals build warnings, repository info, branch, and elapsed time:
 
-![The image shows an Azure DevOps pipeline run summary with warnings related to possible null reference dereferences in the code. It includes details like the repository, branch, and time elapsed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868080/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-YAML-Templates/azure-devops-pipeline-run-summary-warnings.jpg)
+![The image shows an Azure DevOps pipeline run summary with warnings related to possible null reference dereferences in the code. It includes details like the repository, branch, and time elapsed.](https://kodekloud.com/kk-media/image/upload/v1752868080/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-YAML-Templates/azure-devops-pipeline-run-summary-warnings.jpg)
 
 ***
 
@@ -94,7 +94,7 @@ A typical Azure DevOps pipeline run reveals build warnings, repository info, bra
 
 When you create a pipeline, select your source—Azure Repos Git, Bitbucket Cloud, GitHub, or GitHub Enterprise—and choose the Starter Pipeline for IntelliSense support:
 
-![The image shows an Azure DevOps interface for creating a new pipeline, with options to select the code source from Azure Repos, Bitbucket Cloud, GitHub, or GitHub Enterprise Server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868081/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-YAML-Templates/azure-devops-new-pipeline-interface.jpg)
+![The image shows an Azure DevOps interface for creating a new pipeline, with options to select the code source from Azure Repos, Bitbucket Cloud, GitHub, or GitHub Enterprise Server.](https://kodekloud.com/kk-media/image/upload/v1752868081/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-YAML-Templates/azure-devops-new-pipeline-interface.jpg)
 
 The default YAML appears:
 
@@ -270,15 +270,15 @@ steps:
 
 After applying templates, review your build results in the pipeline summary:
 
-![The image shows an Azure DevOps pipeline run summary with details about a specific build, including warnings related to null reference dereferencing. The build is triggered by a user and shows test results and code coverage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868082/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-YAML-Templates/azure-devops-pipeline-build-summary.jpg)
+![The image shows an Azure DevOps pipeline run summary with details about a specific build, including warnings related to null reference dereferencing. The build is triggered by a user and shows test results and code coverage.](https://kodekloud.com/kk-media/image/upload/v1752868082/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-YAML-Templates/azure-devops-pipeline-build-summary.jpg)
 
 Monitor recent runs and their status:
 
-![The image shows an Azure DevOps pipeline interface with a list of recent pipeline runs for "KodeKloudData," each marked with a green check indicating successful completion.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868083/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-YAML-Templates/azure-devops-pipeline-kodeklouddata-success.jpg)
+![The image shows an Azure DevOps pipeline interface with a list of recent pipeline runs for "KodeKloudData," each marked with a green check indicating successful completion.](https://kodekloud.com/kk-media/image/upload/v1752868083/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-YAML-Templates/azure-devops-pipeline-kodeklouddata-success.jpg)
 
 Check detailed logs to confirm test success:
 
-![The image shows an Azure DevOps pipeline run with a list of completed jobs, all marked as successful, and a log indicating that 100% of tests passed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868084/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-YAML-Templates/azure-devops-pipeline-successful-jobs.jpg)
+![The image shows an Azure DevOps pipeline run with a list of completed jobs, all marked as successful, and a log indicating that 100% of tests passed.](https://kodekloud.com/kk-media/image/upload/v1752868084/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-YAML-Templates/azure-devops-pipeline-successful-jobs.jpg)
 
 ***
 

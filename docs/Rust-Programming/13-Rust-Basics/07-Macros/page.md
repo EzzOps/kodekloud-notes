@@ -6,15 +6,11 @@ This guide explores Rust macros, focusing on declarative macros to enhance code 
 
 In this guide, we delve into one of Rust's most powerful features: macros. Macros enable developers to write cleaner and more efficient code by generating code at compile time—a technique known as metaprogramming. This comprehensive Rust macros tutorial covers both basic and practical examples to help you reduce boilerplate code, design domain-specific languages (DSLs), and simplify repetitive tasks.
 
-<Frame>
-  ![The image contains a text box explaining that macros in Rust are a way of writing code that writes other code, known as metaprogramming.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883990/notes-assets/images/Rust-Programming-Macros/rust-macros-metaprogramming-explanation.jpg)
-</Frame>
+![The image contains a text box explaining that macros in Rust are a way of writing code that writes other code, known as metaprogramming.](https://kodekloud.com/kk-media/image/upload/v1752883990/notes-assets/images/Rust-Programming-Macros/rust-macros-metaprogramming-explanation.jpg)
 
 Macros in Rust come primarily in two forms: declarative and procedural. In this article, we focus on declarative macros, which use the `macro_rules!` keyword. Declarative macros are the most commonly used macros in Rust.
 
-<Callout icon="lightbulb">
-  Declarative macros allow you to define pattern-matching rules that generate code, making your codebase easier to maintain.
-</Callout>
+> **lightbulb** Declarative macros allow you to define pattern-matching rules that generate code, making your codebase easier to maintain.
 
 ## A Simple Macro Example
 
@@ -87,16 +83,12 @@ fn main() {
 
 This provides a clear demonstration of how fundamental macros work in Rust to print messages to the console.
 
-<Callout icon="lightbulb">
-  Understanding macros in Rust can significantly reduce code redundancy and improve readability. As you explore further, you'll discover that macros offer a powerful way to express complex logic concisely.
-</Callout>
+> **lightbulb** Understanding macros in Rust can significantly reduce code redundancy and improve readability. As you explore further, you'll discover that macros offer a powerful way to express complex logic concisely.
 
 In this guide, we have covered the basics of declarative macros in Rust, including simple macro definitions, macros with arguments, and several practical applications like logging. With practice, you'll unlock the full potential of macros to write more expressive and efficient Rust code.
 
 For more in-depth learning, consider exploring additional resources on Rust metaprogramming and procedural macros. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/5cd8bafb-c8e8-47e9-acd0-704c79bd8490" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/5cd8bafb-c8e8-47e9-acd0-704c79bd8490)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/caec6763-4bfc-423e-a736-4c86e34f0457" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/caec6763-4bfc-423e-a736-4c86e34f0457)

@@ -38,8 +38,7 @@ cosign verify-attestation \
   sbom.k8s.io/v1.27.4/release.spdx
 ```
 
-<Callout icon="lightbulb">
-  [in-toto](https://in-toto.io) defines and verifies attestations across your entire pipeline. Sample step definition:
+> **lightbulb** [in-toto](https://in-toto.io) defines and verifies attestations across your entire pipeline. Sample step definition:
 
   ```yaml theme={null}
   - name: build
@@ -51,7 +50,6 @@ cosign verify-attestation \
     expected_products:
       - "CREATE binary"
   ```
-</Callout>
 
 ## 4. Policies: Automated Compliance Enforcement
 
@@ -92,9 +90,7 @@ spec:
 
 Enforce policies at admission time with Sigstore’s [Policy Controller](https://docs.sigstore.dev/policy-controller/).
 
-<Frame>
-  ![The image outlines key components of supply chain security, including artifact signing, metadata detailing, attestation signing, and policy enforcement. It emphasizes the use of Cosign for signing binaries and container images, and the role of SBOM in identifying risks and ensuring trustworthiness.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880728/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Supply-Chain-Compliance/supply-chain-security-cosign-sbom.jpg)
-</Frame>
+![The image outlines key components of supply chain security, including artifact signing, metadata detailing, attestation signing, and policy enforcement. It emphasizes the use of Cosign for signing binaries and container images, and the role of SBOM in identifying risks and ensuring trustworthiness.](https://kodekloud.com/kk-media/image/upload/v1752880728/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Supply-Chain-Compliance/supply-chain-security-cosign-sbom.jpg)
 
 ***
 
@@ -107,9 +103,7 @@ Enforce policies at admission time with Sigstore’s [Policy Controller](https:/
 * [Sigstore Policy Controller](https://docs.sigstore.dev/policy-controller/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/2d1969ad-ad49-4d47-93ca-493416c81c76/lesson/0a4ddea8-199a-4a0e-815f-101914e6b2ee" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/2d1969ad-ad49-4d47-93ca-493416c81c76/lesson/0a4ddea8-199a-4a0e-815f-101914e6b2ee)
 
 
 # Threat Modelling Frameworks
@@ -124,15 +118,11 @@ In this lesson, we’ll dive into popular threat modeling frameworks that guide 
 
 Compliance frameworks—such as GDPR, HIPAA, PCI DSS, NIST, and CIS Benchmarks—define **what** security controls and processes are required for regulatory or industry compliance:
 
-<Frame>
-  ![The image lists various compliance frameworks, including GDPR, HIPAA, PCI DSS, NIST, and CIS Benchmarks, under the heading "Compliance Frameworks" with the note "Defines what to do."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880730/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Threat-Modelling-Frameworks/compliance-frameworks-gdpr-hipaa-pci-dss.jpg)
-</Frame>
+![The image lists various compliance frameworks, including GDPR, HIPAA, PCI DSS, NIST, and CIS Benchmarks, under the heading "Compliance Frameworks" with the note "Defines what to do."](https://kodekloud.com/kk-media/image/upload/v1752880730/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Threat-Modelling-Frameworks/compliance-frameworks-gdpr-hipaa-pci-dss.jpg)
 
 For instance, GDPR mandates protecting personal data against unauthorized access but does not prescribe **how** to implement those safeguards:
 
-<Frame>
-  ![The image explains compliance frameworks, specifically GDPR, highlighting that it mandates securing personal data against unauthorized access without specifying how to achieve it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880731/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Threat-Modelling-Frameworks/gdpr-compliance-frameworks-personal-data.jpg)
-</Frame>
+![The image explains compliance frameworks, specifically GDPR, highlighting that it mandates securing personal data against unauthorized access without specifying how to achieve it.](https://kodekloud.com/kk-media/image/upload/v1752880731/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Threat-Modelling-Frameworks/gdpr-compliance-frameworks-personal-data.jpg)
 
 Threat modeling frameworks fill this gap by offering structured methods—like attack trees or matrices—to discover potential attacks and recommend specific countermeasures. Two widely adopted models are:
 
@@ -159,9 +149,7 @@ STRIDE breaks down threats into six distinct types, helping teams audit applicat
 An attacker forges credentials to access the front end (e.g., NGINX).\
 Mitigation: enforce strong authentication and certificate validation.
 
-<Frame>
-  ![The image illustrates a threat modeling framework involving spoofing, showing an attacker targeting an NGINX server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880732/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Threat-Modelling-Frameworks/threat-modeling-spoofing-nginx-attack.jpg)
-</Frame>
+![The image illustrates a threat modeling framework involving spoofing, showing an attacker targeting an NGINX server.](https://kodekloud.com/kk-media/image/upload/v1752880732/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Threat-Modelling-Frameworks/threat-modeling-spoofing-nginx-attack.jpg)
 
 ### 2. Tampering
 
@@ -173,18 +161,14 @@ Mitigation: apply end-to-end encryption and use checksums or digital signatures.
 Users or attackers deny performing specific actions (e.g., financial transfers).\
 Mitigation: implement immutable audit logs and digital-signature-based non-repudiation.
 
-<Frame>
-  ![The image illustrates key threat modeling frameworks, focusing on "Repudiation" with icons representing a user and application logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880733/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Threat-Modelling-Frameworks/threat-modeling-repudiation-frameworks-icons.jpg)
-</Frame>
+![The image illustrates key threat modeling frameworks, focusing on "Repudiation" with icons representing a user and application logs.](https://kodekloud.com/kk-media/image/upload/v1752880733/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Threat-Modelling-Frameworks/threat-modeling-repudiation-frameworks-icons.jpg)
 
 ### 4. Information Disclosure
 
 Sensitive information (e.g., customer PII in a MySQL database) becomes exposed.\
 Mitigation: encrypt data at rest and enforce TLS/TCP encryption in transit.
 
-<Frame>
-  ![The image illustrates a threat modeling framework focusing on information disclosure, showing a MySQL database with encryption in transit and at rest. It highlights the importance of securing data to prevent unauthorized access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880735/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Threat-Modelling-Frameworks/threat-modeling-framework-mysql-encryption.jpg)
-</Frame>
+![The image illustrates a threat modeling framework focusing on information disclosure, showing a MySQL database with encryption in transit and at rest. It highlights the importance of securing data to prevent unauthorized access.](https://kodekloud.com/kk-media/image/upload/v1752880735/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Threat-Modelling-Frameworks/threat-modeling-framework-mysql-encryption.jpg)
 
 ### 5. Denial of Service
 
@@ -196,13 +180,9 @@ Mitigation: configure rate limits, implement resource quotas in Kubernetes, and 
 An unauthorized principal gains admin-level rights within the cluster.\
 Mitigation: enforce strict RBAC policies and conduct regular privilege reviews.
 
-<Frame>
-  ![The image illustrates key threat modeling frameworks, focusing on "Elevation of Privilege," "RBAC Policies," and "Admin Rights" related to high privilege.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880736/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Threat-Modelling-Frameworks/threat-modeling-elevation-privilege-rbac.jpg)
-</Frame>
+![The image illustrates key threat modeling frameworks, focusing on "Elevation of Privilege," "RBAC Policies," and "Admin Rights" related to high privilege.](https://kodekloud.com/kk-media/image/upload/v1752880736/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Threat-Modelling-Frameworks/threat-modeling-elevation-privilege-rbac.jpg)
 
-<Callout icon="lightbulb">
-  Integrating STRIDE early in your design process uncovers gaps before production deployment.
-</Callout>
+> **lightbulb** Integrating STRIDE early in your design process uncovers gaps before production deployment.
 
 ***
 
@@ -216,17 +196,13 @@ The [MITRE ATT\&CK](https://attack.mitre.org/) framework catalogs adversary tact
 * **Privilege Escalation**: Abuse misconfigured RBAC or admission controllers
 * **Defense Evasion**: Disable logging, tamper with audit trails
 
-<Frame>
-  ![The image outlines the MITRE ATT\&CK Framework, detailing various attack techniques such as initial access, execution, persistence, privilege escalation, and defense evasion.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880737/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Threat-Modelling-Frameworks/mitre-attck-framework-attack-techniques.jpg)
-</Frame>
+![The image outlines the MITRE ATT\&CK Framework, detailing various attack techniques such as initial access, execution, persistence, privilege escalation, and defense evasion.](https://kodekloud.com/kk-media/image/upload/v1752880737/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Threat-Modelling-Frameworks/mitre-attck-framework-attack-techniques.jpg)
 
 ### MITRE Kubernetes Threat Matrix
 
 Microsoft’s Kubernetes threat matrix adapts ATT\&CK to cluster contexts, enabling teams to visualize attacker pathways and design targeted mitigations:
 
-<Frame>
-  ![The image shows a section of the MITRE ATT\&CK Framework, specifically a "Threat Matrix for Kubernetes," detailing various tactics and techniques used in cybersecurity. It includes categories like Initial Access, Execution, Persistence, and others, with specific methods listed under each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880738/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Threat-Modelling-Frameworks/mitre-attck-kubernetes-threat-matrix.jpg)
-</Frame>
+![The image shows a section of the MITRE ATT\&CK Framework, specifically a "Threat Matrix for Kubernetes," detailing various tactics and techniques used in cybersecurity. It includes categories like Initial Access, Execution, Persistence, and others, with specific methods listed under each.](https://kodekloud.com/kk-media/image/upload/v1752880738/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Threat-Modelling-Frameworks/mitre-attck-kubernetes-threat-matrix.jpg)
 
 Under **Using Cloud Credentials** (Initial Access), ATT\&CK recommends:
 
@@ -234,13 +210,9 @@ Under **Using Cloud Credentials** (Initial Access), ATT\&CK recommends:
 * Restricting API server exposure with IP allowlists
 * Applying least‐privilege principles to service accounts
 
-<Frame>
-  ![The image is a screenshot of the MITRE ATT\&CK Framework for Kubernetes, focusing on using cloud credentials. It includes a list of mitigations with descriptions to prevent cluster takeover in cloud environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880739/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Threat-Modelling-Frameworks/mitre-attck-kubernetes-cloud-credentials.jpg)
-</Frame>
+![The image is a screenshot of the MITRE ATT\&CK Framework for Kubernetes, focusing on using cloud credentials. It includes a list of mitigations with descriptions to prevent cluster takeover in cloud environments.](https://kodekloud.com/kk-media/image/upload/v1752880739/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Threat-Modelling-Frameworks/mitre-attck-kubernetes-cloud-credentials.jpg)
 
-<Callout icon="triangle-alert">
-  Neglecting to map MITRE techniques to your Kubernetes deployment can leave critical attack paths unaddressed.
-</Callout>
+> **triangle-alert** Neglecting to map MITRE techniques to your Kubernetes deployment can leave critical attack paths unaddressed.
 
 ***
 
@@ -263,6 +235,4 @@ Integrate these models into your SDLC to identify risks early and build resilien
 * [Kubernetes RBAC Documentation](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
 * [GDPR Compliance Guide](https://ec.europa.eu/info/law/law-topic/data-protection_en)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/2d1969ad-ad49-4d47-93ca-493416c81c76/lesson/2be448bc-19c6-41d2-ba4b-62d52c2ab071" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/2d1969ad-ad49-4d47-93ca-493416c81c76/lesson/2be448bc-19c6-41d2-ba4b-62d52c2ab071)

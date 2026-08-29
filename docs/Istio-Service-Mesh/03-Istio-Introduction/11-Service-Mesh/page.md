@@ -10,11 +10,9 @@ In traditional microservice architectures, each service was tasked with handling
 
 The proxies communicate with a central server-side component known as the Control Plane. The Control Plane oversees and directs all traffic entering and leaving the services, ensuring a larger, cohesive system.
 
-<Callout icon="lightbulb">
-  * Dynamic configuration of service interactions without direct code changes.
+> **lightbulb** * Dynamic configuration of service interactions without direct code changes.
   * Enhanced security through mutual TLS, protecting communications between services.
   * Comprehensive observability, enabling real-time monitoring, performance assessments, and bottleneck detection.
-</Callout>
 
 A service mesh provides a suite of powerful capabilities:
 
@@ -24,9 +22,7 @@ A service mesh provides a suite of powerful capabilities:
 | Health Checks     | Continuously monitors the status of services and maintains a pool of healthy instances.     | Improves resilience and fault tolerance.                     |
 | Load Balancing    | Routes traffic intelligently toward healthy instances, isolating or bypassing failing ones. | Optimizes resource usage and minimizes downtime.             |
 
-<Frame>
-  ![The image illustrates the responsibilities of a service mesh, including traffic management, security, observability, and service discovery, with examples of different services using proxies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879351/notes-assets/images/Istio-Service-Mesh-Service-Mesh/service-mesh-responsibilities-illustration.jpg)
-</Frame>
+![The image illustrates the responsibilities of a service mesh, including traffic management, security, observability, and service discovery, with examples of different services using proxies.](https://kodekloud.com/kk-media/image/upload/v1752879351/notes-assets/images/Istio-Service-Mesh-Service-Mesh/service-mesh-responsibilities-illustration.jpg)
 
 By abstracting the networking logic into a separate infrastructure, a service mesh allows you to dynamically configure and manage the interactions between services. This means enhanced security, improved scalability, and more efficient traffic management, leading to robust and resilient application performance.
 
@@ -34,6 +30,4 @@ In the following sections, we will analyze each capability in greater detail, di
 
 See you in the next section.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/17a5b71f-2898-4541-b0df-678cfa9e721a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/17a5b71f-2898-4541-b0df-678cfa9e721a)

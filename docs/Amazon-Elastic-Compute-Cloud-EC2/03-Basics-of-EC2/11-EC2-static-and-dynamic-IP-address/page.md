@@ -88,7 +88,7 @@ These maps neatly to AWS EC2’s public IP models:
 
 ## Dynamic Public IP Addresses
 
-![The image illustrates the structure of an AWS cloud setup, showing a region with an AWS account containing both a default and a custom VPC, each with their own public subnets, and a pool of public IPs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868983/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-static-and-dynamic-IP-address/aws-cloud-setup-vpc-structure-diagram.jpg)
+![The image illustrates the structure of an AWS cloud setup, showing a region with an AWS account containing both a default and a custom VPC, each with their own public subnets, and a pool of public IPs.](https://kodekloud.com/kk-media/image/upload/v1752868983/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-static-and-dynamic-IP-address/aws-cloud-setup-vpc-structure-diagram.jpg)
 
 ### How Dynamic Public IPs Work
 
@@ -97,7 +97,7 @@ These maps neatly to AWS EC2’s public IP models:
 
 ### Lifecycle and Limitations
 
-![The image illustrates the concept of EC2 dynamic IP addresses within an AWS cloud environment, showing the relationship between AWS accounts, VPCs, and public subnets. It also notes that IPs are released back to the pool when instances are stopped, hibernated, or terminated.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868984/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-static-and-dynamic-IP-address/ec2-dynamic-ip-aws-cloud-diagram.jpg)
+![The image illustrates the concept of EC2 dynamic IP addresses within an AWS cloud environment, showing the relationship between AWS accounts, VPCs, and public subnets. It also notes that IPs are released back to the pool when instances are stopped, hibernated, or terminated.](https://kodekloud.com/kk-media/image/upload/v1752868984/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-static-and-dynamic-IP-address/ec2-dynamic-ip-aws-cloud-diagram.jpg)
 
 * When an instance is **stopped**, **hibernated**, or **terminated**, its public IPv4 address is released back to AWS’s global pool.
 * Restarting a stopped instance assigns a **new** public IP.
@@ -114,7 +114,7 @@ Learn more in the [AWS EC2 addressing guide][ec2-ip-addresses].
 
 Elastic IPs are AWS’s solution for static, publicly routable IPv4 addresses—like owning a permanent phone number.
 
-![The image is a diagram illustrating the concept of an EC2 Elastic IP Address within AWS Cloud, showing two regions (ap-southeast-1 and us-east-1) each containing an AWS Account.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868985/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-static-and-dynamic-IP-address/ec2-elastic-ip-address-aws-diagram.jpg)
+![The image is a diagram illustrating the concept of an EC2 Elastic IP Address within AWS Cloud, showing two regions (ap-southeast-1 and us-east-1) each containing an AWS Account.](https://kodekloud.com/kk-media/image/upload/v1752868985/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-static-and-dynamic-IP-address/ec2-elastic-ip-address-aws-diagram.jpg)
 
 ### Key Characteristics
 
@@ -144,7 +144,7 @@ Below is a quick reference table summarizing the core differences between dynami
 | DNS Stability     | IP changes on stop/start              | Fixed IP, no DNS propagation issues    |
 | Cost              | Free while attached                   | Free when attached; charged when idle  |
 
-![The image is a comparison table summarizing the differences between EC2 Static and Dynamic IP addresses, highlighting attributes such as region specificity, account assignment, and reallocation capabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868987/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-static-and-dynamic-IP-address/ec2-static-dynamic-ip-comparison-table.jpg)
+![The image is a comparison table summarizing the differences between EC2 Static and Dynamic IP addresses, highlighting attributes such as region specificity, account assignment, and reallocation capabilities.](https://kodekloud.com/kk-media/image/upload/v1752868987/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-static-and-dynamic-IP-address/ec2-static-dynamic-ip-comparison-table.jpg)
 
 ***
 

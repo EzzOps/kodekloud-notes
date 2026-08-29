@@ -6,9 +6,7 @@ This guide explains how to enable and secure remote access for virtual machines 
 
 In this guide, you will learn how to enable and secure remote access for your virtual machines using Azure Bastion. In previous examples, a jump box was used to connect to virtual machines without public IP addresses. However, while a jump box is simply a virtual machine with a public IP address, it demands constant management and security updates.
 
-<Callout icon="lightbulb">
-  Remember that while Microsoft manages the underlying infrastructure (data center, networking, physical hardware), you are responsible for the virtual machine’s operating system, patching, updates, and securing application access.
-</Callout>
+> **lightbulb** Remember that while Microsoft manages the underlying infrastructure (data center, networking, physical hardware), you are responsible for the virtual machine’s operating system, patching, updates, and securing application access.
 
 Maintaining a jump box can be cumbersome because of the continual update and hardening tasks it requires. Azure Bastion simplifies this by providing a managed service that allows secure RDP or SSH connections directly from the Azure portal, without exposing a public IP.
 
@@ -18,9 +16,7 @@ Azure Bastion must be deployed to a dedicated subnet within your virtual network
 
 Below is a diagram that illustrates secure remote access management using Azure Bastion within a virtual network. It shows the connections between the Bastion host, subnets, and administrators:
 
-<Frame>
-  ![The image illustrates a diagram of secure remote access management using Azure Bastion within a virtual network, showing connections between subnets and administrators.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881867/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-and-secure-remote-access-management/azure-bastion-remote-access-diagram.jpg)
-</Frame>
+![The image illustrates a diagram of secure remote access management using Azure Bastion within a virtual network, showing connections between subnets and administrators.](https://kodekloud.com/kk-media/image/upload/v1752881867/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-and-secure-remote-access-management/azure-bastion-remote-access-diagram.jpg)
 
 ***
 
@@ -45,9 +41,7 @@ Azure Bastion offers several advantages over traditional jump boxes:
 
 The diagram below outlines these features, including direct RDP/SSH access, the elimination of public IPs, simplified NSG management, port scanning protection, and support for both basic and standard SKUs:
 
-<Frame>
-  ![The image outlines features of secure remote access management, including direct RDP/SSH in Azure, no public IP requirement, no need to tweak NSGs, port scanning protection, hardening, and support for basic and standard SKUs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881868/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-and-secure-remote-access-management/secure-remote-access-management-azure.jpg)
-</Frame>
+![The image outlines features of secure remote access management, including direct RDP/SSH in Azure, no public IP requirement, no need to tweak NSGs, port scanning protection, hardening, and support for basic and standard SKUs.](https://kodekloud.com/kk-media/image/upload/v1752881868/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-and-secure-remote-access-management/secure-remote-access-management-azure.jpg)
 
 Azure Bastion is available in two SKUs:
 
@@ -104,15 +98,11 @@ ProximityPlacementGroup     :
 
 Returning to the Azure portal, navigate to the resource group named "rg-remoteaccess-20231002" that contains your Linux and Windows machines:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying a resource group named "rg-remoteaccess-20231002" with various resources listed, including virtual machines and disks, located in the East US region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881870/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-and-secure-remote-access-management/azure-portal-rg-remoteaccess-resources.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying a resource group named "rg-remoteaccess-20231002" with various resources listed, including virtual machines and disks, located in the East US region.](https://kodekloud.com/kk-media/image/upload/v1752881870/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-and-secure-remote-access-management/azure-portal-rg-remoteaccess-resources.jpg)
 
 Open the virtual network "remote access" to see its connected devices. There are two subnets: one for Windows machines and one for Linux machines:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying connected devices in a virtual network, listing two network interfaces with their IP addresses and subnets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881872/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-and-secure-remote-access-management/azure-portal-connected-devices-network.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying connected devices in a virtual network, listing two network interfaces with their IP addresses and subnets.](https://kodekloud.com/kk-media/image/upload/v1752881872/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-and-secure-remote-access-management/azure-portal-connected-devices-network.jpg)
 
 ### Setting Up Azure Bastion
 
@@ -124,9 +114,7 @@ Open the virtual network "remote access" to see its connected devices. There are
    * **Tier:** Standard.
    * **Instance Count:** Two (or more if needed).
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a Bastion host, with fields for project and instance details, virtual network configuration, and public IP address settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881873/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-and-secure-remote-access-management/azure-portal-bastion-host-setup.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a Bastion host, with fields for project and instance details, virtual network configuration, and public IP address settings.](https://kodekloud.com/kk-media/image/upload/v1752881873/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-and-secure-remote-access-management/azure-portal-bastion-host-setup.jpg)
 
 2. **Configure the Virtual Network**\
    Choose the "VNet remote access" and click on "Manage subnet configuration" to add a subnet. Name this subnet "Azure Bastion subnet" and assign an appropriate address space (a /26 is sufficient). Azure Bastion will automatically detect this dedicated subnet.
@@ -137,9 +125,7 @@ Open the virtual network "remote access" to see its connected devices. There are
 4. **Review and Create**\
    Review your settings, and optionally configure additional features such as IT base connection and Kerberos authentication. Then, click on Create to deploy the Bastion host.
 
-<Frame>
-  ![The image shows the "Create a Bastion" page on the Microsoft Azure portal, displaying a summary of settings for a Bastion host configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881875/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-and-secure-remote-access-management/create-bastion-azure-portal.jpg)
-</Frame>
+![The image shows the "Create a Bastion" page on the Microsoft Azure portal, displaying a summary of settings for a Bastion host configuration.](https://kodekloud.com/kk-media/image/upload/v1752881875/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-and-secure-remote-access-management/create-bastion-azure-portal.jpg)
 
 Once deployed, Azure Bastion becomes available as a managed resource ready to provide secure remote access.
 
@@ -157,13 +143,9 @@ With Azure Bastion deployed, connecting to your virtual machines is straightforw
 
 You will now be connected directly through your browser. The same process applies when connecting to a Linux virtual machine via the "Overview" section by selecting "Connect" and choosing "Bastion."
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying details of a Bastion resource named "ra-bastion," including its resource group, location, subscription, and provisioning state.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881876/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-and-secure-remote-access-management/azure-portal-bastion-resource-details.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying details of a Bastion resource named "ra-bastion," including its resource group, location, subscription, and provisioning state.](https://kodekloud.com/kk-media/image/upload/v1752881876/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-and-secure-remote-access-management/azure-portal-bastion-resource-details.jpg)
 
-<Callout icon="lightbulb">
-  There is no need to deploy Azure Bastion in every virtual network. A centralized Bastion host in a hub network can provide secure access to virtual machines across multiple peered VNets.
-</Callout>
+> **lightbulb** There is no need to deploy Azure Bastion in every virtual network. A centralized Bastion host in a hub network can provide secure access to virtual machines across multiple peered VNets.
 
 ***
 
@@ -173,6 +155,4 @@ By leveraging Azure Bastion, you enhance the security and management of remote a
 
 This concludes our guide on enabling and securing remote access management using Azure Bastion. For additional information on Azure security technologies, consider exploring the [Azure Documentation](https://docs.microsoft.com/azure/security/) and related resources.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d8d70777-3d80-4e41-803e-0929352de5e7/lesson/5d60e4a9-628a-4b4d-88d0-017e3c4bed0f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d8d70777-3d80-4e41-803e-0929352de5e7/lesson/5d60e4a9-628a-4b4d-88d0-017e3c4bed0f)

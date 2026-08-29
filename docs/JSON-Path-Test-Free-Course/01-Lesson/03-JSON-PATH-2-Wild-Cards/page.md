@@ -6,9 +6,7 @@ This article provides a comprehensive guide on using the JSONPath wildcard opera
 
 Welcome to this comprehensive guide on using the JSONPath wildcard (`*`) operator. In this lesson, you’ll discover how to apply wildcards to both JSON objects and arrays, and how to combine them for powerful queries.
 
-<Callout icon="lightbulb">
-  JSONPath implementations can differ in syntax and features. Always test your expressions with your chosen library or tool.
-</Callout>
+> **lightbulb** JSONPath implementations can differ in syntax and features. Always test your expressions with your chosen library or tool.
 
 ***
 
@@ -114,9 +112,7 @@ You can mix object wildcards and array wildcards for nested structures. Here’s
    * Final: `$.*.wheels[*].model`
 3. Use online [JSONPath evaluators](https://jsonpath.com/) to verify results interactively.
 
-<Callout icon="triangle-alert">
-  Overusing deep wildcards (`$..*`) can be inefficient on large JSON documents. Optimize your path when performance matters.
-</Callout>
+> **triangle-alert** Overusing deep wildcards (`$..*`) can be inefficient on large JSON documents. Optimize your path when performance matters.
 
 ***
 
@@ -130,8 +126,6 @@ You can mix object wildcards and array wildcards for nested structures. Here’s
 
 Practice creating your own JSONPath expressions with wildcards to master complex data extraction scenarios!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/4ee22714-9402-46bf-aca6-e96b9b3428ba" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/4ee22714-9402-46bf-aca6-e96b9b3428ba)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/6554e5ac-4380-4798-8b2b-01bf77f61fd3" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/6554e5ac-4380-4798-8b2b-01bf77f61fd3)

@@ -23,9 +23,7 @@ In summary, using provider aliases in Terraform allows you to manage resources a
 
 That concludes this lesson on Terraform provider aliases.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/e442ec14-d1e8-4e05-9ae1-078f6f00b63a/lesson/9810e0f2-6d39-483a-987c-095a80c454d7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/e442ec14-d1e8-4e05-9ae1-078f6f00b63a/lesson/9810e0f2-6d39-483a-987c-095a80c454d7)
 
 
 # Multiple Providers
@@ -40,9 +38,7 @@ In this lesson, you'll learn how to configure and use multiple providers within 
 
 Terraform allows you to define resources from various providers in a single configuration file. In the example below, the configuration file includes two resource blocks: one managed by the local provider and another by the random provider.
 
-<Callout icon="lightbulb">
-  When adding a new provider, Terraform automatically downloads and installs the necessary plugin during initialization.
-</Callout>
+> **lightbulb** When adding a new provider, Terraform automatically downloads and installs the necessary plugin during initialization.
 
 ## Example Configuration
 
@@ -145,9 +141,7 @@ resource "aws_instance" "web" {
 
 When `terraform apply` is executed with this configuration, Terraform generates the random string and applies it as a tag to the AWS instance resource. This effectively demonstrates how resource attribute references can bridge resources managed by different providers.
 
-<Callout icon="lightbulb">
-  For enhanced search engine optimization and user engagement, ensure that your Terraform configuration documentation includes clear, concise headings and detailed examples. Reference related documentation such as [Terraform Providers](https://www.terraform.io/docs/providers/index.html) and [AWS Instances](https://aws.amazon.com/ec2/) for additional context.
-</Callout>
+> **lightbulb** For enhanced search engine optimization and user engagement, ensure that your Terraform configuration documentation includes clear, concise headings and detailed examples. Reference related documentation such as [Terraform Providers](https://www.terraform.io/docs/providers/index.html) and [AWS Instances](https://aws.amazon.com/ec2/) for additional context.
 
 ## Conclusion
 
@@ -155,6 +149,4 @@ This lesson covered how to use multiple providers in Terraform. You learned how 
 
 Thank you.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/e442ec14-d1e8-4e05-9ae1-078f6f00b63a/lesson/1e0f0f6e-5a49-4c01-9e72-45761a5b4001" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/e442ec14-d1e8-4e05-9ae1-078f6f00b63a/lesson/1e0f0f6e-5a49-4c01-9e72-45761a5b4001)

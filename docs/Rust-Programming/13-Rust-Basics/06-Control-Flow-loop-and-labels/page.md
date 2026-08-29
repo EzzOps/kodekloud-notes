@@ -6,9 +6,7 @@ This article explores loops and labels in Rust, detailing constructs like loop, 
 
 In this lesson, we will explore loops and labels in Rust. Looping allows you to execute a block of code repeatedly, and Rust provides several looping constructs including `loop`, `while`, and `for`. Notably, the `loop` construct repeats indefinitely until it is explicitly stopped with a `break` statement.
 
-<Frame>
-  ![The image is an introduction to looping in Rust, highlighting that looping allows code to execute repeatedly, and Rust offers constructs like loop, while, and for. It also notes that the loop construct repeats indefinitely until stopped with a break statement.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883986/notes-assets/images/Rust-Programming-Control-Flow-loop-and-labels/rust-looping-introduction-diagram.jpg)
-</Frame>
+![The image is an introduction to looping in Rust, highlighting that looping allows code to execute repeatedly, and Rust offers constructs like loop, while, and for. It also notes that the loop construct repeats indefinitely until stopped with a break statement.](https://kodekloud.com/kk-media/image/upload/v1752883986/notes-assets/images/Rust-Programming-Control-Flow-loop-and-labels/rust-looping-introduction-diagram.jpg)
 
 ## Basic Looping with `loop`
 
@@ -67,9 +65,7 @@ The result is: 20
 
 Rust allows you to label loops to make it easier to control nested loops. Labels are defined by a single quote (`'`) followed by the label name. This feature is especially useful when you need to break out of or continue a specific loop in a nested structure.
 
-<Frame>
-  ![The image is an introduction to labels in Rust, explaining that labeling loops is useful for controlling nested loops.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883988/notes-assets/images/Rust-Programming-Control-Flow-loop-and-labels/rust-labels-introduction-nested-loops.jpg)
-</Frame>
+![The image is an introduction to labels in Rust, explaining that labeling loops is useful for controlling nested loops.](https://kodekloud.com/kk-media/image/upload/v1752883988/notes-assets/images/Rust-Programming-Control-Flow-loop-and-labels/rust-labels-introduction-nested-loops.jpg)
 
 Consider the following example where an outer loop is labeled `'outer`. An inner loop runs without a label. The inner loop breaks when `inner_count` reaches 2, but if `outer_count` reaches 3, the `break 'outer` statement exits the outer loop entirely:
 
@@ -141,19 +137,13 @@ The number is: 4
 The number is: 5
 ```
 
-<Callout icon="lightbulb">
-  * Basic loops are created using the `loop` construct and continue indefinitely until a `break` statement is encountered.
+> **lightbulb** * Basic loops are created using the `loop` construct and continue indefinitely until a `break` statement is encountered.
   * Loop labels allow you to manage control flow in nested loop scenarios.
   * Use `break` to exit a loop immediately and optionally return a value.
   * The `continue` statement skips the remainder of the loop's current iteration.
-</Callout>
 
-<Frame>
-  ![The image is a summary of programming loop concepts, including basic loops, loop labels, and break and continue statements, with a colorful design.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883989/notes-assets/images/Rust-Programming-Control-Flow-loop-and-labels/programming-loops-summary-diagram.jpg)
-</Frame>
+![The image is a summary of programming loop concepts, including basic loops, loop labels, and break and continue statements, with a colorful design.](https://kodekloud.com/kk-media/image/upload/v1752883989/notes-assets/images/Rust-Programming-Control-Flow-loop-and-labels/programming-loops-summary-diagram.jpg)
 
 Mastering these control-flow constructs in Rust will help you write more concise, efficient, and readable code when handling various loop-based tasks. For further reading, consider exploring the [Rust Programming Language Book](https://doc.rust-lang.org/book/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/82d572c8-d549-49ec-8996-ba4849f3282f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/82d572c8-d549-49ec-8996-ba4849f3282f)

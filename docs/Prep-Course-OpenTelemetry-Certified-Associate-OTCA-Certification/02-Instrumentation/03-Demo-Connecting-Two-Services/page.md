@@ -235,9 +235,7 @@ Links and references
 * OTLP Protocol: [https://github.com/open-telemetry/opentelemetry-proto](https://github.com/open-telemetry/opentelemetry-proto)
 * Collector: [https://opentelemetry.io/docs/collector/intro/](https://opentelemetry.io/docs/collector/intro/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/254a6366-034f-4488-96f6-6fc45a2a0c93" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/254a6366-034f-4488-96f6-6fc45a2a0c93)
 
 
 # Demo Connecting Two Services

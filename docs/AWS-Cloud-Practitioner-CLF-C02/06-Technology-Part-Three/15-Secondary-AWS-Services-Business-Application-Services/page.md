@@ -6,7 +6,7 @@ This article provides a guide on AWS business application services, focusing on 
 
 Welcome to this comprehensive guide for Cloud Practitioners. In this article, we delve into two essential AWS business application services that empower organizations to enhance their communication and customer service capabilities. We will explore Amazon Simple Email Service (SES) and Amazon Connect, outlining their key functionalities, benefits, and real-world use cases.
 
-![The image is a presentation slide listing objectives, including defining business application services, Amazon Simple Email Service, and Amazon Connect, with a blue gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862127/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Business-Application-Services/frame_10.jpg)
+![The image is a presentation slide listing objectives, including defining business application services, Amazon Simple Email Service, and Amazon Connect, with a blue gradient background.](https://kodekloud.com/kk-media/image/upload/v1752862127/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Business-Application-Services/frame_10.jpg)
 
 Think of these services as specialized tools in your business toolkit. Much like a hammer is best for driving nails while a screwdriver is ideal for fastening screws, AWS offers distinct services designed to target specific business needs:
 
@@ -29,11 +29,11 @@ Key features of Amazon SES include:
 
 For example, Amazon SES is often used to dispatch newsletters, order confirmations, shipping notifications, and promotional emails. Setting up and managing an in-house email server might work on a small scale, but scaling up becomes challenging. SES is purpose-built to overcome these challenges, offering natural integration with other AWS services.
 
-![The image shows a diagram of the SES Dashboard, categorizing emails into Marketing, Transactional, and Informational types, with icons representing each category.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862128/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Business-Application-Services/frame_190.jpg)
+![The image shows a diagram of the SES Dashboard, categorizing emails into Marketing, Transactional, and Informational types, with icons representing each category.](https://kodekloud.com/kk-media/image/upload/v1752862128/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Business-Application-Services/frame_190.jpg)
 
 Additionally, SES has been a long-standing service within AWS, demonstrating its stability and breadth of integration across the AWS ecosystem. This longevity reaffirms its reliability, making it a cornerstone for businesses that rely on consistent email communications.
 
-![The image highlights Amazon SES's benefits: scalability and seamless integration, using icons and text.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862130/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Business-Application-Services/frame_250.jpg)
+![The image highlights Amazon SES's benefits: scalability and seamless integration, using icons and text.](https://kodekloud.com/kk-media/image/upload/v1752862130/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Business-Application-Services/frame_250.jpg)
 
 > **lightbulb** Amazon SES simplifies mass email communication while ensuring deliverability and performance metrics are easily monitored.
 
@@ -52,15 +52,15 @@ Key functionalities of Amazon Connect include:
 
 Typical use cases for Amazon Connect include handling product inquiries, managing technical support, and resolving billing questions. Its seamless integration with customer relationship management systems and backend databases ensures that agents have real-time access to the necessary customer information.
 
-![The image illustrates a flowchart for Amazon Connect's Customer Service Desk, showing a connection between a cloud service icon and a voice communication icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862131/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Business-Application-Services/frame_120.jpg)
+![The image illustrates a flowchart for Amazon Connect's Customer Service Desk, showing a connection between a cloud service icon and a voice communication icon.](https://kodekloud.com/kk-media/image/upload/v1752862131/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Business-Application-Services/frame_120.jpg)
 
-![The image outlines three components of handling customer interactions: Call Routing, Interactive Voice Response (IVR), and Real-Time Analytics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862132/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Business-Application-Services/frame_350.jpg)
+![The image outlines three components of handling customer interactions: Call Routing, Interactive Voice Response (IVR), and Real-Time Analytics.](https://kodekloud.com/kk-media/image/upload/v1752862132/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Business-Application-Services/frame_350.jpg)
 
-![The image illustrates handling customer queries, including product inquiries and technical support to billing questions, with icons representing each type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862133/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Business-Application-Services/frame_360.jpg)
+![The image illustrates handling customer queries, including product inquiries and technical support to billing questions, with icons representing each type.](https://kodekloud.com/kk-media/image/upload/v1752862133/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Business-Application-Services/frame_360.jpg)
 
 The advantages of Amazon Connect lie in its fast deployment, scalability, and inherent integration with the broader suite of AWS services. This makes it an ideal solution for building an efficient, modern cloud-based contact center that enhances customer satisfaction.
 
-![The image highlights Amazon Connect's benefits as a service desk: scalability and seamless integration, using icons to represent these features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862134/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Business-Application-Services/frame_420.jpg)
+![The image highlights Amazon Connect's benefits as a service desk: scalability and seamless integration, using icons to represent these features.](https://kodekloud.com/kk-media/image/upload/v1752862134/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Business-Application-Services/frame_420.jpg)
 
 > **lightbulb** Amazon Connect helps reduce operational costs while maintaining high-quality customer service, making it an essential tool for scalable contact center operations.
 
@@ -70,7 +70,7 @@ The advantages of Amazon Connect lie in its fast deployment, scalability, and in
 
 In this article, we explored two core AWS business application services: Amazon Simple Email Service (SES) and Amazon Connect. Amazon SES serves as your reliable, scalable digital post office for mass email communications, while Amazon Connect functions as an efficient cloud-based contact center to manage multifaceted customer interactions. Together, these services empower your business to handle communication and customer service challenges effectively in a modern, scalable environment.
 
-![The image illustrates AWS Business Application Services as a tool to nurture businesses, featuring the AWS logo and a plant being watered.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862135/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Business-Application-Services/frame_460.jpg)
+![The image illustrates AWS Business Application Services as a tool to nurture businesses, featuring the AWS logo and a plant being watered.](https://kodekloud.com/kk-media/image/upload/v1752862135/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Secondary-AWS-Services-Business-Application-Services/frame_460.jpg)
 
 Keep these services in mind as you prepare for your certification exams and plan your cloud strategy. For more in-depth information on AWS services, visit the [AWS Documentation](https://aws.amazon.com/documentation/).
 

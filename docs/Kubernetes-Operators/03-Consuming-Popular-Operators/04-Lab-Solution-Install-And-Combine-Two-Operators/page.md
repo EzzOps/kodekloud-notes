@@ -31,9 +31,7 @@ This pattern — "custom resources in, operator-managed result out" — avoids w
 
 That completes an end-to-end cert-manager flow: Issuer + Certificate in, TLS Secret out, and renewal handled by the operator.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/b5e6237b-c98e-4357-b26a-f18c583af395/lesson/49964cfd-04ff-4cab-aa04-3e357dc1d20f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/b5e6237b-c98e-4357-b26a-f18c583af395/lesson/49964cfd-04ff-4cab-aa04-3e357dc1d20f)
 
 
 # Lab Solution Install And Combine Two Operators
@@ -49,9 +47,7 @@ This lesson demonstrates how to run two independent Kubernetes operators in the 
 
 These cert-manager components work together: the controller reconciles Certificate resources, the webhook validates cert-manager API requests, and cainjector injects CA trust data into Kubernetes resources.
 
-<Callout icon="lightbulb">
-  Operators claim ownership only of the custom resources defined by their CRDs. Co-locating resources in the same Kubernetes namespace is useful for visibility, but it does not imply shared ownership or control.
-</Callout>
+> **lightbulb** Operators claim ownership only of the custom resources defined by their CRDs. Co-locating resources in the same Kubernetes namespace is useful for visibility, but it does not imply shared ownership or control.
 
 ## Prerequisites and overview
 

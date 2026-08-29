@@ -122,19 +122,13 @@ Adopt the following best practices to maintain a robust CI/CD pipeline:
 * **Monitor Deployments:** Keep a close watch on deployments to quickly identify and resolve potential issues.
 * **Start Simple:** Begin with a basic pipeline and incrementally add steps as your project evolves.
 
-<Frame>
-  ![The image outlines best practices for CI/CD pipelines, including securing the pipeline, testing thoroughly, monitoring deployments, and keeping it simple.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883999/notes-assets/images/Rust-Programming-Building-and-Deploying-with-CICD/ci-cd-pipeline-best-practices.jpg)
-</Frame>
+![The image outlines best practices for CI/CD pipelines, including securing the pipeline, testing thoroughly, monitoring deployments, and keeping it simple.](https://kodekloud.com/kk-media/image/upload/v1752883999/notes-assets/images/Rust-Programming-Building-and-Deploying-with-CICD/ci-cd-pipeline-best-practices.jpg)
 
-<Callout icon="lightbulb">
-  Following these best practices not only improves the reliability of your deployments but also enhances overall code quality and team collaboration.
-</Callout>
+> **lightbulb** Following these best practices not only improves the reliability of your deployments but also enhances overall code quality and team collaboration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/e9736aa9-07fd-49d2-b348-ab9c4534b367/lesson/b265f5cb-324c-43e0-939a-1467ff54153d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/e9736aa9-07fd-49d2-b348-ab9c4534b367/lesson/b265f5cb-324c-43e0-939a-1467ff54153d)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/rust/module/e9736aa9-07fd-49d2-b348-ab9c4534b367/lesson/ca2b8f97-c505-405f-87c5-3b31543f989e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/rust/module/e9736aa9-07fd-49d2-b348-ab9c4534b367/lesson/ca2b8f97-c505-405f-87c5-3b31543f989e)
 
 
 # Introduction to Testing in Rust
@@ -186,14 +180,12 @@ mod tests {
 }
 ```
 
-<Callout icon="lightbulb">
-  Key points:
+> **lightbulb** Key points:
 
   * `#[cfg(test)]` makes the test module compile only when running `cargo test`.
   * `mod tests` is a conventional place to group unit tests.
   * `use super::*;` imports parent-module items to make them available to the tests.
   * `#[test]` marks functions that Cargo will execute as tests.
-</Callout>
 
 ## Running tests with Cargo
 
@@ -344,9 +336,7 @@ mod tests {
 
 This test passes because the function panics with the expected message.
 
-<Callout icon="warning">
-  Use `#[should_panic(expected = "...")]` carefully: matching an expected substring can make tests fragile if panic messages change. Prefer asserting error types or Result-based APIs when possible.
-</Callout>
+> **warning** Use `#[should_panic(expected = "...")]` carefully: matching an expected substring can make tests fragile if panic messages change. Prefer asserting error types or Result-based APIs when possible.
 
 ## Writing tests that return Result\<T, E>
 
@@ -417,6 +407,4 @@ Following these practices results in more reliable tests and a healthier codebas
 
 Mocking and integration testing are more advanced topics you can explore next; start there once you're comfortable with unit testing basics and the patterns shown above.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/e9736aa9-07fd-49d2-b348-ab9c4534b367/lesson/5e629a8e-da68-410c-8071-405d1a7e86b5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/e9736aa9-07fd-49d2-b348-ab9c4534b367/lesson/5e629a8e-da68-410c-8071-405d1a7e86b5)

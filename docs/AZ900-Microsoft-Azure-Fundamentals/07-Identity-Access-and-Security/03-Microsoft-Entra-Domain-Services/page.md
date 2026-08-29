@@ -20,7 +20,7 @@ Group Policy enables centralized management of security settings and configurati
 
 ### LDAP and Kerberos/NTLM Authentication
 
-![The image lists key features of Microsoft Entra Domain Services: Domain Join, Group Policy, and LDAP and Kerberos/NTLM Authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868430/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Entra-Domain-Services/microsoft-entra-domain-services-features.jpg)
+![The image lists key features of Microsoft Entra Domain Services: Domain Join, Group Policy, and LDAP and Kerberos/NTLM Authentication.](https://kodekloud.com/kk-media/image/upload/v1752868430/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Entra-Domain-Services/microsoft-entra-domain-services-features.jpg)
 
 The service supports both legacy authentication protocols such as LDAP and Kerberos/NTLM. While modern applications usually leverage protocols like OpenID, OAuth, and SAML through Microsoft Entra ID, many legacy applications rely on LDAP and Kerberos for authentication. This dual compatibility ensures that your older applications remain secure and fully integrated with your directory services.
 
@@ -42,13 +42,13 @@ Microsoft Entra Domain Services is designed with growth in mind. It scales along
 
 Security and regulatory compliance are at the core of Microsoft Entra Domain Services. The service adheres to industry compliance standards and implements robust security measures, allowing you to focus on leveraging the service without worrying about meeting complex regulatory requirements.
 
-![The image outlines the benefits of Microsoft Entra Domain Services, highlighting simplified administration, scalability and reliability, and security and compliance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868431/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Entra-Domain-Services/microsoft-entra-domain-services-benefits.jpg)
+![The image outlines the benefits of Microsoft Entra Domain Services, highlighting simplified administration, scalability and reliability, and security and compliance.](https://kodekloud.com/kk-media/image/upload/v1752868431/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Entra-Domain-Services/microsoft-entra-domain-services-benefits.jpg)
 
 ## Use Cases
 
 Microsoft Entra Domain Services is an ideal solution for organizations aiming to migrate on-premises Active Directory roles to the cloud. This migration enables businesses to retain essential features—like group policy management and legacy authentication—without the need to overhaul existing systems.
 
-![The image shows three use cases for Microsoft Entra Domain Services: active directory migration, maintaining group policy, and authentication for legacy apps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868432/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Entra-Domain-Services/microsoft-entra-domain-services-use-cases.jpg)
+![The image shows three use cases for Microsoft Entra Domain Services: active directory migration, maintaining group policy, and authentication for legacy apps.](https://kodekloud.com/kk-media/image/upload/v1752868432/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Microsoft-Entra-Domain-Services/microsoft-entra-domain-services-use-cases.jpg)
 
 ## Next Steps: Authentication and Authorization
 

@@ -15,7 +15,7 @@ Azure Synapse Analytics leverages a Massively Parallel Processing (MPP) architec
 * **PolyBase** efficiently retrieves data from both relational and nonrelational external data sources, distributing it across compute nodes for processing.
 * Processed results are subsequently stored in Azure Storage.
 
-![The image is a diagram illustrating the architecture of Azure Synapse Analytics, showing the flow from external data sources through Polybase to control and compute nodes, and finally to an application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866918/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Synapse-Analytics/azure-synapse-analytics-architecture-diagram.jpg)
+![The image is a diagram illustrating the architecture of Azure Synapse Analytics, showing the flow from external data sources through Polybase to control and compute nodes, and finally to an application.](https://kodekloud.com/kk-media/image/upload/v1752866918/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Synapse-Analytics/azure-synapse-analytics-architecture-diagram.jpg)
 
 > **lightbulb** The MPP design of Azure Synapse Analytics ensures that large-scale data processing is highly efficient and scalable.
 
@@ -38,7 +38,7 @@ Azure Synapse Analytics consists of several key components that work in tandem t
 5. **Synapse Studio**\
    A comprehensive, web-based integrated development environment (IDE) that simplifies the management and creation of Spark pools, SQL pools, pipelines, and external data source connections.
 
-![The image is an infographic from KodeKloud describing the components of Azure Synapse Analytics, including Synapse SQL Pool, Synapse Spark Pool, Synapse Pipelines, Synapse Link, and Synapse Studio. Each component is briefly explained on the right side.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866920/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Synapse-Analytics/azure-synapse-analytics-infographic.jpg)
+![The image is an infographic from KodeKloud describing the components of Azure Synapse Analytics, including Synapse SQL Pool, Synapse Spark Pool, Synapse Pipelines, Synapse Link, and Synapse Studio. Each component is briefly explained on the right side.](https://kodekloud.com/kk-media/image/upload/v1752866920/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Synapse-Analytics/azure-synapse-analytics-infographic.jpg)
 
 ## Types of Analytics with Azure Synapse
 
@@ -56,7 +56,7 @@ Azure Synapse Analytics supports a variety of analytics methodologies to meet di
 * **Prescriptive Analytics (What needs to be done?)**\
   Engage in real-time or near-real-time data ingestion and analysis—such as streaming data from IoT sensors via Azure Stream Analytics—to determine actionable strategies.
 
-![The image is an infographic from KodeKloud about Azure Synapse Analytics, detailing four types of analytics: descriptive, diagnostic, predictive, and prescriptive. Each type is briefly explained with its purpose and method.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866921/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Synapse-Analytics/azure-synapse-analytics-infographic-2.jpg)
+![The image is an infographic from KodeKloud about Azure Synapse Analytics, detailing four types of analytics: descriptive, diagnostic, predictive, and prescriptive. Each type is briefly explained with its purpose and method.](https://kodekloud.com/kk-media/image/upload/v1752866921/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Synapse-Analytics/azure-synapse-analytics-infographic-2.jpg)
 
 ## Comparing Azure Synapse Analytics with Related Services
 
@@ -71,7 +71,7 @@ Understanding the differences among Azure Synapse Analytics, Azure Data Factory,
 | Cross-Region Data Flow              | Supports cross-region data flows                      | Does not support cross-region data flows                              |
 | Spark Jobs for Data Flow Monitoring | Does not support Spark job creation                   | Offers Spark tools for creating and monitoring Spark jobs             |
 
-![The image is a comparison table between Azure Data Factory and Azure Synapse Analytics, highlighting differences in integration runtime sharing, solution templates, cross-region data flows, and Spark jobs for data flow monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866923/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Synapse-Analytics/azure-data-factory-synapse-comparison.jpg)
+![The image is a comparison table between Azure Data Factory and Azure Synapse Analytics, highlighting differences in integration runtime sharing, solution templates, cross-region data flows, and Spark jobs for data flow monitoring.](https://kodekloud.com/kk-media/image/upload/v1752866923/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Synapse-Analytics/azure-data-factory-synapse-comparison.jpg)
 
 ### Azure Databricks vs. Azure Synapse Analytics
 
@@ -81,7 +81,7 @@ Understanding the differences among Azure Synapse Analytics, Azure Data Factory,
 | Feature Set                   | Optimized for an Apache Spark environment                            | Integrates distributed Transact-SQL, Spark, data integration, and Synapse Studio for a comprehensive experience                                 |
 | Reporting                     | Integrates with Power BI via a dedicated connector                   | Offers direct Power BI integration through Synapse Studio                                                                                       |
 
-![The image is a comparison table between Azure Databricks and Azure Synapse Analytics, highlighting their capabilities in machine learning, feature set, and reporting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866924/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Synapse-Analytics/azure-databricks-synapse-comparison.jpg)
+![The image is a comparison table between Azure Databricks and Azure Synapse Analytics, highlighting their capabilities in machine learning, feature set, and reporting.](https://kodekloud.com/kk-media/image/upload/v1752866924/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Synapse-Analytics/azure-databricks-synapse-comparison.jpg)
 
 > **lightbulb** Understanding the unique capabilities of each service helps organizations select the best tool based on specific data processing and analytics requirements.
 

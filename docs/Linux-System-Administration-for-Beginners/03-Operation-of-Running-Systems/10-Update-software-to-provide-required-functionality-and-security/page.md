@@ -27,9 +27,7 @@ Special operators:
 * `-` : range (e.g., `2-4`)
 * `/` : step (e.g., `*/4` for every 4th unit)
 
-<Callout icon="lightbulb">
-  Always use full paths in your cron jobs. For example, find `touch` with `which touch` and use `/usr/bin/touch`.
-</Callout>
+> **lightbulb** Always use full paths in your cron jobs. For example, find `touch` with `which touch` and use `/usr/bin/touch`.
 
 ### Edit Your User Crontab
 
@@ -138,9 +136,7 @@ Supported time formats:
 * Relative: `at 'now + 30 minutes'`
 * Other: `at 'now + 3 days'`, `at 'now + 3 weeks'`, etc.
 
-<Callout icon="triangle-alert">
-  Ensure the `atd` daemon is running; otherwise `at` jobs won’t execute.
-</Callout>
+> **triangle-alert** Ensure the `atd` daemon is running; otherwise `at` jobs won’t execute.
 
 ### Managing at Jobs
 
@@ -167,9 +163,7 @@ Practice with these tools to automate backups, cleanup tasks, and custom scripts
 * [anacron Documentation](https://man7.org/linux/man-pages/man5/anacrontab.5.html)
 * [at Manual Page](https://man7.org/linux/man-pages/man1/at.1.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/4e728479-499c-4899-b48c-ddc5384c394e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/4e728479-499c-4899-b48c-ddc5384c394e)
 
 
 # Update software to provide required functionality and security
@@ -180,9 +174,7 @@ This article explains how to use the DNF package manager on CentOS Stream to upd
 
 Keeping your Linux system up to date is critical—most online attacks exploit known vulnerabilities in outdated software. In this guide, you’ll learn how to use the DNF package manager on CentOS Stream (and other RHEL‐based distributions) to check for updates, apply upgrades, and reboot when necessary.
 
-<Callout icon="lightbulb">
-  Regular updates not only patch security holes but also introduce new features and performance improvements.
-</Callout>
+> **lightbulb** Regular updates not only patch security holes but also introduce new features and performance improvements.
 
 ## Package Management with DNF
 
@@ -242,9 +234,7 @@ Is this ok [y/N]:
 
 Type `y` and press Enter to proceed.
 
-<Callout icon="triangle-alert">
-  Pay attention to the download size and package count. Large upgrades on production servers may require scheduled maintenance windows.
-</Callout>
+> **triangle-alert** Pay attention to the download size and package count. Large upgrades on production servers may require scheduled maintenance windows.
 
 ## Reboot After Core Updates
 
@@ -254,9 +244,7 @@ Upgrading the kernel, system services, or libraries often requires a reboot. To 
 sudo reboot
 ```
 
-<Callout icon="lightbulb">
-  Always verify critical services after rebooting to ensure they’ve started correctly.
-</Callout>
+> **lightbulb** Always verify critical services after rebooting to ensure they’ve started correctly.
 
 ## Summary of Common Commands
 
@@ -272,6 +260,4 @@ sudo reboot
 * [DNF Package Manager Guide](https://dnf.readthedocs.io/)
 * [Linux Security Best Practices](https://www.kernel.org/doc/html/latest/admin-guide/security.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/a06d2741-99f5-4523-b00e-f909c8ece853" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/ca5e9d7c-9dac-4ecc-9e21-dafef5ef2641/lesson/a06d2741-99f5-4523-b00e-f909c8ece853)

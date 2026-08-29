@@ -43,9 +43,7 @@ Additional links and references
 * [Terraform Cloud: Workspaces](https://developer.hashicorp.com/terraform/cloud/workspaces)
 * [Terraform CLI workspaces documentation](https://developer.hashicorp.com/terraform/cli/commands/workspace)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/0eb3275a-a37d-45a5-86b5-4920e2e44e7c/lesson/ce4e59eb-f32b-4d99-a3c4-20aedd6aa377" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/0eb3275a-a37d-45a5-86b5-4920e2e44e7c/lesson/ce4e59eb-f32b-4d99-a3c4-20aedd6aa377)
 
 
 # What Are Terraform Workspaces
@@ -73,9 +71,7 @@ Workspaces are a lightweight mechanism to manage multiple state files from one T
 | Safety by design     | Operations in one workspace cannot modify resources tracked by another workspace because state is separated. |
 | Default workspace    | Terraform provides a `default` workspace. If you don’t create/select another, you operate in `default`.      |
 
-<Callout icon="lightbulb">
-  Workspaces provide lightweight state isolation for identical infrastructure topologies. Use them when you need separate state files for multiple environments without duplicating configuration.
-</Callout>
+> **lightbulb** Workspaces provide lightweight state isolation for identical infrastructure topologies. Use them when you need separate state files for multiple environments without duplicating configuration.
 
 What workspaces are designed to support
 

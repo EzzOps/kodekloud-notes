@@ -14,13 +14,9 @@ Hello, I'm Python!
 Hi, Alice.
 ```
 
-<Frame>
-  ![The image shows the Python.org downloads page, highlighting the latest Python version for macOS and listing active Python releases with their maintenance status and support timelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881564/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Configuring-the-Development-Environment/python-org-downloads-page-latest-version.jpg)
-</Frame>
+![The image shows the Python.org downloads page, highlighting the latest Python version for macOS and listing active Python releases with their maintenance status and support timelines.](https://kodekloud.com/kk-media/image/upload/v1752881564/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Configuring-the-Development-Environment/python-org-downloads-page-latest-version.jpg)
 
-<Callout icon="lightbulb">
-  Using Python 3.10 or later ensures compatibility with the latest OpenAI Python client.
-</Callout>
+> **lightbulb** Using Python 3.10 or later ensures compatibility with the latest OpenAI Python client.
 
 ***
 
@@ -67,13 +63,9 @@ pip install openai jupyter
 2. Navigate to **API Keys**.
 3. Generate a new secret key (e.g., “KodeKloud”) and copy it immediately.
 
-<Frame>
-  ![The image shows a webpage from OpenAI's platform displaying API key management, including options to create a new secret key and set a default organization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881565/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Configuring-the-Development-Environment/openai-api-key-management-webpage.jpg)
-</Frame>
+![The image shows a webpage from OpenAI's platform displaying API key management, including options to create a new secret key and set a default organization.](https://kodekloud.com/kk-media/image/upload/v1752881565/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Configuring-the-Development-Environment/openai-api-key-management-webpage.jpg)
 
-<Callout icon="triangle-alert">
-  Your API key grants access to your account—never expose it in public repositories or share it.
-</Callout>
+> **triangle-alert** Your API key grants access to your account—never expose it in public repositories or share it.
 
 ***
 
@@ -152,9 +144,7 @@ If the notebook returns the expected answer, your development environment is cor
 * [Jupyter Documentation](https://jupyter.org/documentation)
 * [OpenAI API Reference](https://platform.openai.com/docs/api-reference/overview/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/e983525e-3a5a-4043-9319-4f259e41bc79/lesson/66ce9135-5ded-4123-9234-cfb7335f37c1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/e983525e-3a5a-4043-9319-4f259e41bc79/lesson/66ce9135-5ded-4123-9234-cfb7335f37c1)
 
 
 # Section Intro
@@ -165,13 +155,9 @@ This lesson covers the OpenAI platform, API configuration, and key parameters fo
 
 Welcome back! In this lesson, we’ll revisit the OpenAI platform’s big picture, configure our development environment to invoke the API, and explore the key parameters available in the OpenAI Playground, so you can hit the ground running.
 
-<Callout icon="lightbulb">
-  Make sure you have an active OpenAI account and your API key ready. You’ll also need a recent version of [Node.js](https://nodejs.org/) or Python installed.
-</Callout>
+> **lightbulb** Make sure you have an active OpenAI account and your API key ready. You’ll also need a recent version of [Node.js](https://nodejs.org/) or Python installed.
 
-<Frame>
-  ![The image is a slide titled "Objectives" with a list of topics related to the OpenAI API, including a closer look at the API, configuring the development environment, understanding tokens, and API parameters.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881566/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Section-Intro/openai-api-objectives-slide.jpg)
-</Frame>
+![The image is a slide titled "Objectives" with a list of topics related to the OpenAI API, including a closer look at the API, configuring the development environment, understanding tokens, and API parameters.](https://kodekloud.com/kk-media/image/upload/v1752881566/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Section-Intro/openai-api-objectives-slide.jpg)
 
 **What We’ll Cover:**
 
@@ -182,6 +168,4 @@ Welcome back! In this lesson, we’ll revisit the OpenAI platform’s big pictur
 
 Let’s get started and move from high-level concepts to hands-on implementation!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/e983525e-3a5a-4043-9319-4f259e41bc79/lesson/5f9019d2-37c8-4e7f-83dd-64f829ea6e8d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/e983525e-3a5a-4043-9319-4f259e41bc79/lesson/5f9019d2-37c8-4e7f-83dd-64f829ea6e8d)

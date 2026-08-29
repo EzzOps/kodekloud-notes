@@ -99,13 +99,9 @@ Environment variables successfully updated.
 
 * When complete, these settings are stored in your local `gh` configuration so subsequent `gh actions-importer` commands can authenticate to the configured Jenkins and GitHub instances.
 
-<Callout icon="lightbulb">
-  Ensure your GitHub personal access token has the necessary scopes (for example, `repo` and any required organization permissions). For Jenkins, use an API token tied to a user with sufficient access to read the jobs and pipelines you plan to migrate.
-</Callout>
+> **lightbulb** Ensure your GitHub personal access token has the necessary scopes (for example, `repo` and any required organization permissions). For Jenkins, use an API token tied to a user with sufficient access to read the jobs and pipelines you plan to migrate.
 
-<Callout icon="warning">
-  Do not expose personal access tokens or Jenkins API tokens in logs, screenshots, or shared files. Treat these tokens like passwords and rotate them immediately if they are accidentally exposed.
-</Callout>
+> **warning** Do not expose personal access tokens or Jenkins API tokens in logs, screenshots, or shared files. Treat these tokens like passwords and rotate them immediately if they are accidentally exposed.
 
 Commands overview
 
@@ -132,6 +128,4 @@ Links and references
 * [Jenkins](https://learn.kodekloud.com/user/courses/jenkins)
 * [GitHub Docs: Personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/0ddbc4de-c775-42d5-8599-83b7ec9ca54a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/0ddbc4de-c775-42d5-8599-83b7ec9ca54a)

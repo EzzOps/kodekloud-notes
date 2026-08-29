@@ -18,7 +18,7 @@ Consider a scenario where an EC2 instance located in a private subnet needs acce
 
 PrivateLink uses VPC endpoints to facilitate seamless, private access to AWS services and third-party services hosted on other VPCs. With these endpoints in place, private links make external services appear as if they are part of your own VPC network.
 
-![The image is a diagram illustrating a Private Link setup in AWS, showing connections between a Virtual Private Cloud (VPC), AWS services, and a third-party VPC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865654/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Privatelink/aws-private-link-setup-diagram.jpg)
+![The image is a diagram illustrating a Private Link setup in AWS, showing connections between a Virtual Private Cloud (VPC), AWS services, and a third-party VPC.](https://kodekloud.com/kk-media/image/upload/v1752865654/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Privatelink/aws-private-link-setup-diagram.jpg)
 
 This approach not only improves security by minimizing external exposure but also streamlines connectivity, ensuring that only the required communications occur within your secured network boundaries.
 
@@ -33,7 +33,7 @@ By integrating PrivateLink, you can:
 
 This capability is particularly valuable when you need to restrict direct Internet exposure yet require internal communication across services.
 
-![The image is a summary slide with two points about VPC connectivity in AWS, highlighting connections to services within the same VPC and to public AWS services or other VPCs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865655/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Privatelink/vpc-connectivity-aws-summary-slide.jpg)
+![The image is a summary slide with two points about VPC connectivity in AWS, highlighting connections to services within the same VPC and to public AWS services or other VPCs.](https://kodekloud.com/kk-media/image/upload/v1752865655/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Privatelink/vpc-connectivity-aws-summary-slide.jpg)
 
 ## In Summary
 

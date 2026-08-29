@@ -2,9 +2,7 @@
 [~]$
 ```
 
-<Callout icon="lightbulb">
-  Always check your current directory by observing the prompt, and use the `pwd` command for confirmation.
-</Callout>
+> **lightbulb** Always check your current directory by observing the prompt, and use the `pwd` command for confirmation.
 
 ## Executing Commands
 
@@ -40,9 +38,7 @@ Another useful command is `uptime`, which displays how long the system has been 
 [~]$
 ```
 
-<Callout icon="lightbulb">
-  If you are ever unsure about a command or its available options, refer to its help output (using `command --help`) or consult the man pages.
-</Callout>
+> **lightbulb** If you are ever unsure about a command or its available options, refer to its help output (using `command --help`) or consult the man pages.
 
 ## Understanding Command Types
 
@@ -72,9 +68,7 @@ For further exploration, check out additional resources such as:
 
 Happy exploring!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/267dec49-c3e9-4627-b7f8-9bf9aa834e53/lesson/a07b1843-0a6f-4cf5-91a5-d2ce9f2bf26c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/267dec49-c3e9-4627-b7f8-9bf9aa834e53/lesson/a07b1843-0a6f-4cf5-91a5-d2ce9f2bf26c)
 
 
 # Lab Introduction
@@ -87,9 +81,7 @@ This article provides an introductory tour of the Hands-on Labs available in thi
 
 The Hands-on Labs simulate a genuine Linux Command Line Interface where you execute commands using your keyboard. For the best experience, we recommend using a laptop or desktop computer. Each lab is specifically designed to reinforce the concepts covered in previous lecture sessions.
 
-<Callout icon="lightbulb">
-  Before starting a lab, click the provided link to open the Hands-on Labs environment. Please allow a few minutes for the lab environment to load, as it simulates a real Linux setup running on Mumshad Mannambeth's laptop.
-</Callout>
+> **lightbulb** Before starting a lab, click the provided link to open the Hands-on Labs environment. Please allow a few minutes for the lab environment to load, as it simulates a real Linux setup running on Mumshad Mannambeth's laptop.
 
 The lab interface is divided into two primary sections:
 
@@ -167,12 +159,8 @@ Good luck with your labs, and enjoy the hands-on learning experience!
 * [KodeKloud Labs Documentation](/docs/klabs)
 * [Linux Command Line Basics](https://linuxcommand.org/)
 
-<Callout icon="lightbulb">
-  For optimal learning, practice these commands on your local terminal while following along with the lab instructions.
-</Callout>
+> **lightbulb** For optimal learning, practice these commands on your local terminal while following along with the lab instructions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/267dec49-c3e9-4627-b7f8-9bf9aa834e53/lesson/1b2b6aa8-4fa7-4708-abc0-ef91b537aa67" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/267dec49-c3e9-4627-b7f8-9bf9aa834e53/lesson/1b2b6aa8-4fa7-4708-abc0-ef91b537aa67)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/267dec49-c3e9-4627-b7f8-9bf9aa834e53/lesson/6d98e2f5-b982-4f21-add1-2ab4fb50826b" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/267dec49-c3e9-4627-b7f8-9bf9aa834e53/lesson/6d98e2f5-b982-4f21-add1-2ab4fb50826b)

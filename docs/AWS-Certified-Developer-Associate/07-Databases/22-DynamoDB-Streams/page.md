@@ -17,7 +17,7 @@ DynamoDB Streams supports four configuration options to control the amount of da
 
 > **lightbulb** Choose "new and old image" for complete detail when every change is critical to your application. Otherwise, select the option that best matches your data requirements.
 
-![The image illustrates the flow of DynamoDB Streams, showing data moving from a stream through different image types (Keys Only, New Image, Old Image, New and Old Image) to a Lambda function.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858805/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Streams/dynamodb-streams-flow-lambda-function.jpg)
+![The image illustrates the flow of DynamoDB Streams, showing data moving from a stream through different image types (Keys Only, New Image, Old Image, New and Old Image) to a Lambda function.](https://kodekloud.com/kk-media/image/upload/v1752858805/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Streams/dynamodb-streams-flow-lambda-function.jpg)
 
 ## How It Works in Practice
 
@@ -51,7 +51,7 @@ DynamoDB Streams offers several notable features:
 
 > **lightbulb** Leveraging these features, you can build reactive, event-driven applications that respond in real time to changes in your DynamoDB tables.
 
-![The image outlines key features of DynamoDB Streams, including time-ordered processing, item-level changes, 24-hour retention, and integration with AWS Lambda.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858806/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Streams/dynamodb-streams-key-features.jpg)
+![The image outlines key features of DynamoDB Streams, including time-ordered processing, item-level changes, 24-hour retention, and integration with AWS Lambda.](https://kodekloud.com/kk-media/image/upload/v1752858806/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Streams/dynamodb-streams-key-features.jpg)
 
 ## Conclusion
 

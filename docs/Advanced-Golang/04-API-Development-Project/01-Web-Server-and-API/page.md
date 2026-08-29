@@ -10,13 +10,13 @@ Before diving into building our own API server, it's important to grasp the fund
 
 A web server is responsible for hosting and delivering web pages to users. It serves a variety of content—ranging from simple HTML files to complex pages that include JavaScript and CSS. Essentially, the web server is the backbone that allows your web application to be accessible over the internet.
 
-![The image is a slide about web servers, explaining their role in serving web pages and hosting web applications, and mentioning the use of HTML, JavaScript, and CSS files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868689/notes-assets/images/Advanced-Golang-Web-Server-and-API/web-servers-role-html-js-css.jpg)
+![The image is a slide about web servers, explaining their role in serving web pages and hosting web applications, and mentioning the use of HTML, JavaScript, and CSS files.](https://kodekloud.com/kk-media/image/upload/v1752868689/notes-assets/images/Advanced-Golang-Web-Server-and-API/web-servers-role-html-js-css.jpg)
 
 ## The Request-Response Model
 
 The request-response model is a fundamental concept in network communications. In this model, a client (typically a web browser) sends a request for specific data, and the server processes this request and responds with the appropriate content. For example, when you enter "wikipedia.com" into your browser, the URL triggers a request that passes through various layers of the network. The web server then handles the request and responds by delivering the homepage.
 
-![The image illustrates the request-response model, showing a browser sending a request to a web server and receiving a response.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868690/notes-assets/images/Advanced-Golang-Web-Server-and-API/request-response-model-browser-server.jpg)
+![The image illustrates the request-response model, showing a browser sending a request to a web server and receiving a response.](https://kodekloud.com/kk-media/image/upload/v1752868690/notes-assets/images/Advanced-Golang-Web-Server-and-API/request-response-model-browser-server.jpg)
 
 ## Use Cases of a Web (HTTP) Server
 
@@ -29,7 +29,7 @@ Web servers support a broad range of functionalities. Below are some common use 
 * Facilitating URL matching and rewriting for better SEO and user experience.
 * Generating dynamic content via server-side processing.
 
-![The image lists use cases for a web server, including serving HTML, CSS, and JS files, handling HTTP error messaging, and processing dynamic content.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868691/notes-assets/images/Advanced-Golang-Web-Server-and-API/web-server-use-cases-list.jpg)
+![The image lists use cases for a web server, including serving HTML, CSS, and JS files, handling HTTP error messaging, and processing dynamic content.](https://kodekloud.com/kk-media/image/upload/v1752868691/notes-assets/images/Advanced-Golang-Web-Server-and-API/web-server-use-cases-list.jpg)
 
 ## Understanding APIs
 
@@ -37,7 +37,7 @@ APIs, or Application Programming Interfaces, are sets of protocols and definitio
 
 For example, if your project requires navigation features, you might integrate with the [Google Maps API](https://developers.google.com/maps). This abstraction not only accelerates development but also ensures that you can leverage complex features without extra overhead. In the request-response model discussed earlier, an API acts as a bridge between the client and various backend systems like databases or other services, facilitating smooth data transactions.
 
-![The image illustrates the interaction between a browser and an API server, showing the flow of requests and responses through an API.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868691/notes-assets/images/Advanced-Golang-Web-Server-and-API/browser-api-server-interaction-diagram.jpg)
+![The image illustrates the interaction between a browser and an API server, showing the flow of requests and responses through an API.](https://kodekloud.com/kk-media/image/upload/v1752868691/notes-assets/images/Advanced-Golang-Web-Server-and-API/browser-api-server-interaction-diagram.jpg)
 
 > **lightbulb** Understanding the roles of web servers and APIs is crucial for modern web development. While web servers manage data delivery and content hosting, APIs enable seamless integration between different services, enhancing the functionality of your applications.
 

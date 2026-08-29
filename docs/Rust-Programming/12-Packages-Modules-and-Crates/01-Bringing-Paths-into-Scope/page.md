@@ -155,9 +155,7 @@ fn main() {
 }
 ```
 
-<Callout icon="lightbulb">
-  While the glob operator simplifies imports by including every public item, use it sparingly to avoid ambiguity in larger codebases.
-</Callout>
+> **lightbulb** While the glob operator simplifies imports by including every public item, use it sparingly to avoid ambiguity in larger codebases.
 
 ## Summary
 
@@ -170,6 +168,4 @@ In summary, this article covered several Rust techniques to bring module compone
 
 Mastering these strategies will help you write cleaner, more maintainable Rust code as your projects grow. For further insights, explore the [Rust documentation](https://doc.rust-lang.org/book/) and expand your understanding of module management in Rust.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/4cdab411-800e-4072-90d8-005dd70de03c/lesson/e1713bc6-29a4-4472-b654-5653d7cdb4fe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/4cdab411-800e-4072-90d8-005dd70de03c/lesson/e1713bc6-29a4-4472-b654-5653d7cdb4fe)

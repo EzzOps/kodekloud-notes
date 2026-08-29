@@ -8,9 +8,7 @@ Python 3 includes 63 built-in exceptions that are structured in a tree hierarchy
 
 Because ZeroDivisionError is a type of ArithmeticError, you can choose to handle all arithmetic-related errors with a single ArithmeticError branch instead of addressing ZeroDivisionError separately. However, keep in mind that an ArithmeticError might be raised in scenarios other than division by zero. Therefore, ensure that your error messages are appropriately general.
 
-<Callout icon="lightbulb">
-  When multiple except branches are present, only the first matching branch is executed. This makes the order of the branches crucial for proper error handling.
-</Callout>
+> **lightbulb** When multiple except branches are present, only the first matching branch is executed. This makes the order of the branches crucial for proper error handling.
 
 Below is an example that demonstrates how to handle exceptions using specific branches:
 
@@ -191,14 +189,10 @@ Traceback (most recent call last):
 AssertionError
 ```
 
-<Callout icon="lightbulb">
-  Using assertions in your code can help prevent the program from producing invalid results when input data has not been pre-validated.
-</Callout>
+> **lightbulb** Using assertions in your code can help prevent the program from producing invalid results when input data has not been pre-validated.
 
 The official Python documentation provides a comprehensive overview of all possible exceptions. While memorizing each exception is not necessary, it is beneficial to be familiar with the most common ones to ensure that your code reliably handles errors.
 
 That's it for this lesson. Now start practicing what you've learned with the provided exercises.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/b7dfa718-4f50-4b8b-bc7c-51915b87a2a7/lesson/bdbdc28f-4dca-436f-8675-aa6257914c8e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/b7dfa718-4f50-4b8b-bc7c-51915b87a2a7/lesson/bdbdc28f-4dca-436f-8675-aa6257914c8e)

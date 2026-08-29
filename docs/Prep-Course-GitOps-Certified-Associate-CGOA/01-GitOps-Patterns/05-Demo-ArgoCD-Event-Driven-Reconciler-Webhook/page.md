@@ -27,9 +27,7 @@ NAME                                           DESIRED   CURRENT   READY
 replicaset.apps/app-rollout-76f479c6bf         10        10        10
 ```
 
-<Callout icon="lightbulb">
-  Argo Rollouts manages ReplicaSets and pods for `Rollout` resources. You will not see a Kubernetes `Deployment` for this workload — instead look for `rollout.argoproj.io` and ReplicaSets.
-</Callout>
+> **lightbulb** Argo Rollouts manages ReplicaSets and pods for `Rollout` resources. You will not see a Kubernetes `Deployment` for this workload — instead look for `rollout.argoproj.io` and ReplicaSets.
 
 ## Inspecting Rollouts
 
@@ -140,9 +138,7 @@ Summary of best practices
 * Observe application metrics and logs during each pause before promoting.
 * Use the Argo Rollouts UI or `kubectl-argo-rollouts` plugin to promote, inspect, and roll back as needed.
 
-<Callout icon="lightbulb">
-  Ensure Argo Rollouts CRDs and controller are installed in your cluster and install the `kubectl-argo-rollouts` plugin if you intend to promote or inspect rollouts from the CLI. See the Argo Rollouts installation guide for details.
-</Callout>
+> **lightbulb** Ensure Argo Rollouts CRDs and controller are installed in your cluster and install the `kubectl-argo-rollouts` plugin if you intend to promote or inspect rollouts from the CLI. See the Argo Rollouts installation guide for details.
 
 ## Links and references
 
@@ -152,11 +148,9 @@ Summary of best practices
 
 That's all for now.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/6f3f1da1-beae-47f1-aab1-80bd01295229" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/6f3f1da1-beae-47f1-aab1-80bd01295229)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/6853933e-4532-4fc2-9e48-3fb5c05ba5d7" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/6853933e-4532-4fc2-9e48-3fb5c05ba5d7)
 
 
 # Demo ArgoCD Event Driven Reconciler Webhook
@@ -205,9 +199,7 @@ Links and references:
 
 If your Argo CD server uses a self-signed certificate, some Git hosting services (including Gitea) may not deliver webhooks to it. For local labs and demos a common workaround is to run the Argo CD server in insecure mode (disable TLS) so the webhook endpoint is reachable over HTTP.
 
-<Callout icon="warning">
-  Setting `server.insecure: "true"` disables TLS on the Argo CD server. This is insecure and should only be used for local testing or demos — do not use this in production.
-</Callout>
+> **warning** Setting `server.insecure: "true"` disables TLS on the Argo CD server. This is insecure and should only be used for local testing or demos — do not use this in production.
 
 To enable insecure mode, edit the Argo CD CLI parameters ConfigMap and add `server.insecure: "true"`:
 

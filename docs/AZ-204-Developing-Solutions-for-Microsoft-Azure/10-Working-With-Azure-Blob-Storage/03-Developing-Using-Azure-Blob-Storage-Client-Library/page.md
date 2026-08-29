@@ -27,7 +27,7 @@ Each client class is designed for a specific function:
 * **BlobUriBuilder**\
   Builds or modifies a blob’s uniform resource identifier (URI), including modifications to the container or storage account URI. It is particularly useful when generating pre-signed URLs with Shared Access Signatures or dynamically adjusting the target resource during storage operations.
 
-![The image is an overview table of the Azure Blob Storage Client Library, listing different classes and their purposes, such as BlobClient and BlobServiceClient.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866777/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Using-Azure-Blob-Storage-Client-Library/azure-blob-storage-client-library-overview.jpg)
+![The image is an overview table of the Azure Blob Storage Client Library, listing different classes and their purposes, such as BlobClient and BlobServiceClient.](https://kodekloud.com/kk-media/image/upload/v1752866777/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Using-Azure-Blob-Storage-Client-Library/azure-blob-storage-client-library-overview.jpg)
 
 Each of these classes plays a vital role in managing Azure Blob Storage, providing developers with a comprehensive API to handle all storage-related tasks.
 
@@ -55,7 +55,7 @@ The final step is authentication. Using the `DefaultAzureCredential` class provi
 
 > **lightbulb** Using `DefaultAzureCredential` automatically manages token retrieval and refresh, simplifying the authentication process in your cloud applications.
 
-![The image lists steps for creating a client object, including passing and constructing the endpoint URI, retrieving the endpoint at runtime, and authentication with DefaultAzureCredential.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866778/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Using-Azure-Blob-Storage-Client-Library/client-object-creation-steps.jpg)
+![The image lists steps for creating a client object, including passing and constructing the endpoint URI, retrieving the endpoint at runtime, and authentication with DefaultAzureCredential.](https://kodekloud.com/kk-media/image/upload/v1752866778/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Using-Azure-Blob-Storage-Client-Library/client-object-creation-steps.jpg)
 
 ### Code Example: Creating a BlobServiceClient
 
@@ -145,7 +145,7 @@ class Program
 
 When you run this application, it will display the storage endpoint and list the names of all containers within your storage account. Note that the credentials are obtained from your Azure login. If you haven't logged in using `az login`, the application will fail to authenticate.
 
-![The image shows a Microsoft Azure portal interface displaying the endpoints for a storage account, including details for blob, file, queue, and table services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866780/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Using-Azure-Blob-Storage-Client-Library/azure-portal-storage-endpoints.jpg)
+![The image shows a Microsoft Azure portal interface displaying the endpoints for a storage account, including details for blob, file, queue, and table services.](https://kodekloud.com/kk-media/image/upload/v1752866780/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Developing-Using-Azure-Blob-Storage-Client-Library/azure-portal-storage-endpoints.jpg)
 
 This example showcases a straightforward use case of the Azure Blob Storage Client Library in a .NET SDK environment. Once initialized, the BlobServiceClient can be used to perform various operations such as retrieving container information and managing blobs.
 

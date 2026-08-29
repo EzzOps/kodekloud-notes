@@ -77,7 +77,7 @@ Follow these steps to deploy and connect to an Azure Cache for Redis instance us
 1. **Searching for Redis in the Azure Portal:**\
    Open the Azure portal and search for "Redis" to display available Azure Cache for Redis options.
 
-![The image shows the Microsoft Azure portal with a search for "redis" in progress, displaying options like "Azure Cache for Redis." The portal also lists recent resources and their last viewed times.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866210/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Azure-Cache-for-Redis/azure-portal-redis-search-options.jpg)
+![The image shows the Microsoft Azure portal with a search for "redis" in progress, displaying options like "Azure Cache for Redis." The portal also lists recent resources and their last viewed times.](https://kodekloud.com/kk-media/image/upload/v1752866210/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Azure-Cache-for-Redis/azure-portal-redis-search-options.jpg)
 
 2. **Creating a Redis Cache Instance:**
    * Click on "Create Redis Cache."
@@ -87,13 +87,13 @@ Follow these steps to deploy and connect to an Azure Cache for Redis instance us
    * In the networking tab, configure settings as per your security requirements.
    * In the advanced settings tab, ensure that access keys authentication is enabled.
 
-![The image shows a Microsoft Azure portal interface for creating a new Redis Cache, with fields for subscription, resource group, DNS name, location, and cache size.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866212/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Azure-Cache-for-Redis/azure-portal-redis-cache-creation.jpg)
+![The image shows a Microsoft Azure portal interface for creating a new Redis Cache, with fields for subscription, resource group, DNS name, location, and cache size.](https://kodekloud.com/kk-media/image/upload/v1752866212/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Azure-Cache-for-Redis/azure-portal-redis-cache-creation.jpg)
 
-![The image shows a Microsoft Azure portal page for creating a new Redis Cache, specifically on the "Advanced" tab, with options for enabling Microsoft Entra Authentication and Access Keys Authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866214/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Azure-Cache-for-Redis/azure-portal-redis-cache-advanced.jpg)
+![The image shows a Microsoft Azure portal page for creating a new Redis Cache, specifically on the "Advanced" tab, with options for enabling Microsoft Entra Authentication and Access Keys Authentication.](https://kodekloud.com/kk-media/image/upload/v1752866214/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Azure-Cache-for-Redis/azure-portal-redis-cache-advanced.jpg)
 
 Once validation passes, click on "Review and Create" followed by "Create." After deployment, navigate to the resource overview where the hostname and access keys are displayed.
 
-![The image shows the Microsoft Azure portal displaying an overview of a Redis cache instance, including memory usage and server load graphs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866221/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Azure-Cache-for-Redis/azure-portal-redis-cache-overview.jpg)
+![The image shows the Microsoft Azure portal displaying an overview of a Redis cache instance, including memory usage and server load graphs.](https://kodekloud.com/kk-media/image/upload/v1752866221/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Azure-Cache-for-Redis/azure-portal-redis-cache-overview.jpg)
 
 3. **Connecting Using the Redis CLI:**\
    Open your terminal and connect to your instance using the Redis CLI. If TLS is enabled (which is the default for Azure Cache for Redis), use the following command by replacing the hostname and access key with your resource’s specific details:
@@ -175,7 +175,7 @@ Azure Cache for Redis further enhances these capabilities by offering a fully ma
 
 To summarize these features, review the comparison chart below:
 
-![The image is a comparison chart highlighting features of Azure Cache for Redis, emphasizing its speed with in-memory data storage and low latency, and its fully managed services with updates, reliability, and security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866223/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Cache-for-Redis/azure-cache-redis-comparison-chart.jpg)
+![The image is a comparison chart highlighting features of Azure Cache for Redis, emphasizing its speed with in-memory data storage and low latency, and its fully managed services with updates, reliability, and security.](https://kodekloud.com/kk-media/image/upload/v1752866223/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Cache-for-Redis/azure-cache-redis-comparison-chart.jpg)
 
 ## Key Scenarios for Azure Cache for Redis
 
@@ -189,7 +189,7 @@ Azure Cache for Redis is ideal for several critical scenarios where speed, scala
 
 These capabilities help businesses achieve faster data access, enhanced scalability, and reliable transaction handling. The key scenarios for Azure Cache for Redis are illustrated in the diagram below:
 
-![The image outlines key scenarios for using Azure Cache for Redis, including data cache, content cache, session store, job and message queuing, and distributed transactions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866224/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Cache-for-Redis/azure-cache-redis-scenarios.jpg)
+![The image outlines key scenarios for using Azure Cache for Redis, including data cache, content cache, session store, job and message queuing, and distributed transactions.](https://kodekloud.com/kk-media/image/upload/v1752866224/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Cache-for-Redis/azure-cache-redis-scenarios.jpg)
 
 ## Service Tiers of Azure Cache for Redis
 
@@ -205,7 +205,7 @@ Azure Cache for Redis is available in multiple service tiers, each designed to m
 
 This tiered structure enables organizations to choose the right level of performance and reliability based on specific application needs. The service tier comparison is depicted in the image below:
 
-![The image shows a comparison of service tiers for Azure Cache for Redis, including Basic, Standard, Premium, Enterprise, and Enterprise Flash. Each tier is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866225/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Cache-for-Redis/azure-cache-redis-service-tiers.jpg)
+![The image shows a comparison of service tiers for Azure Cache for Redis, including Basic, Standard, Premium, Enterprise, and Enterprise Flash. Each tier is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752866225/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Cache-for-Redis/azure-cache-redis-service-tiers.jpg)
 
 > **triangle-alert** When selecting a service tier, make sure to evaluate your application’s performance requirements and data consistency needs. Upgrading tiers may involve additional costs.
 

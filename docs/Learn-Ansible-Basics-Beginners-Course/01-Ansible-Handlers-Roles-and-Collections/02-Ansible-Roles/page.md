@@ -8,9 +8,7 @@ In this article, we explore the concept of roles in Ansible. Just like individua
 
 Assigning a role involves executing every necessary step to configure a server for its intended purpose. For example, becoming a doctor involves attending medical school, completing a residency, and obtaining a license. Likewise, transforming a server into a MySQL database server entails installing prerequisites, adding MySQL packages, configuring the MySQL service, and setting up databases or users. Similarly, setting up a web server using Nginx includes installing prerequisites for Nginx, adding the necessary packages, configuring its service, and establishing custom web pages.
 
-<Frame>
-  ![The image compares career paths for doctors and engineers with steps for setting up MySQL and Nginx, using icons and bullet points.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881040/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Roles/frame_80.jpg)
-</Frame>
+![The image compares career paths for doctors and engineers with steps for setting up MySQL and Nginx, using icons and bullet points.](https://kodekloud.com/kk-media/image/upload/v1752881040/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Roles/frame_80.jpg)
 
 By now, you are familiar with how to perform these tasks using Ansible playbooks. Consider the following simple playbook that installs and configures MySQL:
 
@@ -48,9 +46,7 @@ Once you develop such a playbook, it can be reused by anyone who needs to instal
     - mysql
 ```
 
-<Callout icon="lightbulb">
-  Roles promote code reusability across projects, encourage best practices by organizing files into directories such as tasks, vars, defaults, handlers, and templates, and simplify code sharing within the community.
-</Callout>
+> **lightbulb** Roles promote code reusability across projects, encourage best practices by organizing files into directories such as tasks, vars, defaults, handlers, and templates, and simplify code sharing within the community.
 
 Below is an example structure inside a role:
 
@@ -90,9 +86,7 @@ defaults:
 
 Roles not only simplify local development but also enable you to share your solutions with the broader Ansible community. [Ansible Galaxy](https://galaxy.ansible.com/) is a widely used hub where you can find thousands of roles for diverse tasks like setting up web servers, database servers, automation tools, monitoring systems, packaging tools, and security software.
 
-<Frame>
-  ![The image shows a webpage interface for "Galaxy" with navigation options like Home, Search, and Community, featuring categories such as System, Development, and Security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881041/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Roles/frame_210.jpg)
-</Frame>
+![The image shows a webpage interface for "Galaxy" with navigation options like Home, Search, and Community, featuring categories such as System, Development, and Security.](https://kodekloud.com/kk-media/image/upload/v1752881041/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Roles/frame_210.jpg)
 
 Before writing your own playbooks, it is worthwhile to explore Ansible Galaxy; someone may have already created the role you need.
 
@@ -188,11 +182,7 @@ $ ansible-galaxy install geerlingguy.mysql -p ./roles
 
 By leveraging roles, you can simplify the development, reuse, and sharing of your Ansible playbooks—whether you’re configuring a single server or managing setups across hundreds of servers.
 
-<Callout icon="lightbulb">
-  * Learn more about [Ansible Roles Best Practices](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html).
+> **lightbulb** * Learn more about [Ansible Roles Best Practices](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html).
   * Explore more on [Ansible Galaxy](https://galaxy.ansible.com/).
-</Callout>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/e98a2ff3-ee65-4cf3-9bf3-b91507d617e3/lesson/52317fb0-2d32-4015-bf28-fcc54881314c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/e98a2ff3-ee65-4cf3-9bf3-b91507d617e3/lesson/52317fb0-2d32-4015-bf28-fcc54881314c)

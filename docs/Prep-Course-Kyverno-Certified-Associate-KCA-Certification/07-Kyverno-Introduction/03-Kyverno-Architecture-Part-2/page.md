@@ -29,9 +29,7 @@ When processing an admission request, the Admission Controller:
 
 For non‑blocking follow-up actions (for example, generating supplemental resources or creating policy reports), the Admission Controller creates lightweight work tickets and hands them off to background controllers so the original API request is not delayed.
 
-<Callout icon="lightbulb">
-  The Admission Controller handles synchronous checks and short mutations. For longer-running or cluster-wide changes (generate/mutate of existing resources, report aggregation), rely on Kyverno’s background controllers—these operate asynchronously to preserve admission performance.
-</Callout>
+> **lightbulb** The Admission Controller handles synchronous checks and short mutations. For longer-running or cluster-wide changes (generate/mutate of existing resources, report aggregation), rely on Kyverno’s background controllers—these operate asynchronously to preserve admission performance.
 
 <Frame>
   <img alt="The image is an infographic explaining the functions of an Admission Controller, detailing steps such as receiving requests, processing rules, managing webhooks, validating policies, and creating work for other controllers." />
@@ -64,9 +62,7 @@ Typical responsibilities:
 
 Because these operations run asynchronously, they enable eventual consistency across the cluster without slowing down user requests.
 
-<Callout icon="warning">
-  Generate and background mutate operations are asynchronous. Do not assume immediate, synchronous results from background work—tests and controllers should account for eventual consistency.
-</Callout>
+> **warning** Generate and background mutate operations are asynchronous. Do not assume immediate, synchronous results from background work—tests and controllers should account for eventual consistency.
 
 <Frame>
   <img alt="The image is an infographic about the &#x22;Background Controller,&#x22; explaining its roles to generate and mutate resources in a computing cluster. It describes generating new resources based on triggers and changing resources already in the cluster." />
@@ -127,6 +123,4 @@ Summary
 
 Together, these controllers enable Kyverno to enforce policies in real time while delegating longer-running or cluster‑wide tasks to specialized, resilient components.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/8cf118e1-7ca8-49b6-be5a-af80c331f394/lesson/80d253dc-0b89-4337-99bb-fbbec3c94a0e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/8cf118e1-7ca8-49b6-be5a-af80c331f394/lesson/80d253dc-0b89-4337-99bb-fbbec3c94a0e)

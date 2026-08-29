@@ -8,13 +8,13 @@ Platform as a Service (PaaS) is like leasing a pre-furnished apartment where ess
 
 > **lightbulb** For developers, PaaS offers a comprehensive environment with pre-installed development tools and components, enabling a streamlined development and deployment process.
 
-![The image illustrates "Platform as a Service" with a cloud icon above a computer monitor displaying a pencil and a rocket, symbolizing development and deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868245/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Platform-as-a-Service/platform-as-a-service-cloud-monitor.jpg)
+![The image illustrates "Platform as a Service" with a cloud icon above a computer monitor displaying a pencil and a rocket, symbolizing development and deployment.](https://kodekloud.com/kk-media/image/upload/v1752868245/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Platform-as-a-Service/platform-as-a-service-cloud-monitor.jpg)
 
 Consider the case of Bella Innovations' invoicing application. Previously, setting up an operating system, installing Python, and migrating code to the cloud required significant manual effort. With PaaS, developers can simply deploy their Python application directly onto the cloud platform, which already includes the necessary Python runtime and dependencies. This approach eliminates manual installations and configurations, simplifying the entire deployment process.
 
 PaaS builds on the foundational IaaS layer by adding more components—such as operating systems and development tools. While IaaS provides the basic building blocks like servers, storage, and network connectivity, PaaS goes further by managing operating system updates, security patches, scalability, and more. This layer of abstraction relieves developers from handling underlying infrastructure, allowing them to focus on crafting and enhancing their applications.
 
-![The image is a diagram explaining "Platform as a Service" (PaaS), highlighting components like servers, networking, data centers, operating systems, and development tools, with a focus on application and infrastructure management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868245/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Platform-as-a-Service/paas-diagram-application-infrastructure.jpg)
+![The image is a diagram explaining "Platform as a Service" (PaaS), highlighting components like servers, networking, data centers, operating systems, and development tools, with a focus on application and infrastructure management.](https://kodekloud.com/kk-media/image/upload/v1752868245/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Platform-as-a-Service/paas-diagram-application-infrastructure.jpg)
 
 > **lightbulb** PaaS is tailored for application developers by removing infrastructure management tasks such as runtime updates, OS patches, and security maintenance. This allows developers to concentrate on writing high-quality code and accelerating the deployment cycle.
 

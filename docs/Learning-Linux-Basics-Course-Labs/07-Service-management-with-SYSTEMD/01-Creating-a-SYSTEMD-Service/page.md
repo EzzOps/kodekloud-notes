@@ -94,9 +94,7 @@ User=project_mercury
 WantedBy=graphical.target
 ```
 
-<Callout icon="lightbulb">
-  Using a dedicated service account improves security by limiting the permissions available to the service.
-</Callout>
+> **lightbulb** Using a dedicated service account improves security by limiting the permissions available to the service.
 
 ***
 
@@ -167,9 +165,7 @@ RestartSec=10
 WantedBy=graphical.target
 ```
 
-<Callout icon="lightbulb">
-  Bob intends to replicate these steps on the development server, ensuring the Python Django application and PostgreSQL database are configured reliably and efficiently with SYSTEMD.
-</Callout>
+> **lightbulb** Bob intends to replicate these steps on the development server, ensuring the Python Django application and PostgreSQL database are configured reliably and efficiently with SYSTEMD.
 
 ***
 
@@ -189,6 +185,4 @@ sudo systemctl status project-mercury.service
 
 This completes the configuration of the SYSTEMD service for project-mercury. Enjoy a more automated and robust service deployment!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/35ba7692-62b1-429d-87e3-74ac7cc25061/lesson/0f723dc6-97c3-484e-8b24-734fec3a3fc6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/35ba7692-62b1-429d-87e3-74ac7cc25061/lesson/0f723dc6-97c3-484e-8b24-734fec3a3fc6)

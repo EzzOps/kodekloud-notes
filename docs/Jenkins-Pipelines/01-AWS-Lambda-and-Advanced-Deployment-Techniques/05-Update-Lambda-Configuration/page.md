@@ -103,9 +103,7 @@ Links and references
 
 Next lesson: Automate these steps and make deployments repeatable and secure with [Jenkins Pipelines](https://learn.kodekloud.com/user/courses/jenkins-pipelines).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/78297356-097c-4793-b690-bc83f9aba3f0/lesson/4be4b517-e6be-4d8a-bf33-2a305eb9995b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/78297356-097c-4793-b690-bc83f9aba3f0/lesson/4be4b517-e6be-4d8a-bf33-2a305eb9995b)
 
 
 # Update Lambda Configuration
@@ -120,9 +118,7 @@ In this article, we explain how to update the AWS Lambda configuration using a J
 
 The AWS CLI command for updating Lambda function configuration is documented in the [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/lambda/update-function-configuration.html). One key option in this command is "environment," which accepts environment variables as key-value pairs. Below is an overview of the command syntax:
 
-<Frame>
-  ![The image shows a webpage from the AWS CLI Command Reference, specifically for the "update-function-configuration" command related to AWS Lambda. It includes sections like description, synopsis, options, and examples.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879592/notes-assets/images/Jenkins-Pipelines-Update-Lambda-Configuration/aws-cli-update-function-configuration.jpg)
-</Frame>
+![The image shows a webpage from the AWS CLI Command Reference, specifically for the "update-function-configuration" command related to AWS Lambda. It includes sections like description, synopsis, options, and examples.](https://kodekloud.com/kk-media/image/upload/v1752879592/notes-assets/images/Jenkins-Pipelines-Update-Lambda-Configuration/aws-cli-update-function-configuration.jpg)
 
 ```plaintext theme={null}
 update-function-configuration
@@ -158,9 +154,7 @@ update-function-configuration
 
 The environment variables are provided in JSON format. For more details on configuring Lambda functions using other methods (e.g., AWS SAM, SDKs, or the console), review the AWS documentation.
 
-<Frame>
-  ![The image shows a webpage from the AWS CLI Command Reference, specifically detailing the configuration of environment variables for AWS Lambda functions, including syntax examples.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879593/notes-assets/images/Jenkins-Pipelines-Update-Lambda-Configuration/aws-cli-lambda-env-variables.jpg)
-</Frame>
+![The image shows a webpage from the AWS CLI Command Reference, specifically detailing the configuration of environment variables for AWS Lambda functions, including syntax examples.](https://kodekloud.com/kk-media/image/upload/v1752879593/notes-assets/images/Jenkins-Pipelines-Update-Lambda-Configuration/aws-cli-lambda-env-variables.jpg)
 
 ## AWS SAM Template Example
 
@@ -285,9 +279,7 @@ After these changes, the package is zipped, uploaded to S3, and both the Lambda 
 
 During the build process, you may encounter dependency issues. For example, the pipeline might initially fail due to a detected critical vulnerability in the "i18n" dependency. To temporarily bypass this issue, you can modify the dependency scanning stage in the Jenkinsfile by setting the `stopBuild` flag to false.
 
-<Callout icon="triangle-alert">
-  It is best practice to resolve such vulnerabilities rather than bypassing them. Use the bypass only as a temporary measure.
-</Callout>
+> **triangle-alert** It is best practice to resolve such vulnerabilities rather than bypassing them. Use the bypass only as a temporary measure.
 
 Here is an example of the modified dependency scanning stage:
 
@@ -336,9 +328,7 @@ aws lambda update-function-code --function-name solar-system-function --s3-bucke
 
 Finally, you can visit the AWS Lambda console to verify that the environment variables appear as expected:
 
-<Frame>
-  ![The image shows an AWS Lambda console displaying the configuration tab with environment variables for a function, including keys and values for MongoDB connection details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879594/notes-assets/images/Jenkins-Pipelines-Update-Lambda-Configuration/aws-lambda-console-env-variables.jpg)
-</Frame>
+![The image shows an AWS Lambda console displaying the configuration tab with environment variables for a function, including keys and values for MongoDB connection details.](https://kodekloud.com/kk-media/image/upload/v1752879594/notes-assets/images/Jenkins-Pipelines-Update-Lambda-Configuration/aws-lambda-console-env-variables.jpg)
 
 After testing, the application should no longer return an internal server error. When you access the application endpoint, the response should be:
 
@@ -356,6 +346,4 @@ This article has demonstrated how to update the AWS Lambda configuration using t
 
 Thank you for following along.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/78297356-097c-4793-b690-bc83f9aba3f0/lesson/7af7ff12-5e8b-48d3-b865-94e78616e97e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/78297356-097c-4793-b690-bc83f9aba3f0/lesson/7af7ff12-5e8b-48d3-b865-94e78616e97e)

@@ -50,9 +50,7 @@ def test_login_user(client):
     assert res.status_code == 201  # Note: Originally expecting a 307 redirect, but we want a 201
 ```
 
-<Callout icon="lightbulb">
-  For authentication, the login endpoint does not accept JSON. Instead, form data should be sent. Additionally, the field name should be "username" (not "email").
-</Callout>
+> **lightbulb** For authentication, the login endpoint does not accept JSON. Instead, form data should be sent. Additionally, the field name should be "username" (not "email").
 
 To simulate a proper login, update the test to send form data as follows:
 
@@ -179,9 +177,7 @@ def test_login_user(client):
     assert res.status_code == 200
 ```
 
-<Callout icon="lightbulb">
-  While it might be tempting to tweak fixture scopes (e.g., set them to module or session scopes) to share state between tests, isolating each test is best practice. This prevents cascading failures and ensures that each test validates only its own functionality.
-</Callout>
+> **lightbulb** While it might be tempting to tweak fixture scopes (e.g., set them to module or session scopes) to share state between tests, isolating each test is best practice. This prevents cascading failures and ensures that each test validates only its own functionality.
 
 ***
 
@@ -191,9 +187,7 @@ This lesson demonstrated how to create independent and reliable tests for user c
 
 Happy Testing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/fc57a9bb-8e59-4b57-a225-e4ec1542d062" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/fc57a9bb-8e59-4b57-a225-e4ec1542d062)
 
 
 # Fixtures
@@ -270,9 +264,7 @@ def test_collect_interest():
 
 This repetitive code can become tedious when you have many tests (for example, 50 tests in a single class). Pytest fixtures help minimize this redundancy.
 
-<Callout icon="lightbulb">
-  A fixture is simply a function that runs before your tests and sets up the necessary environment, such as creating an instance of a bank account.
-</Callout>
+> **lightbulb** A fixture is simply a function that runs before your tests and sets up the necessary environment, such as creating an instance of a bank account.
 
 ## Creating Fixtures
 
@@ -382,10 +374,6 @@ Each parameterized scenario uses the fixture to set up the test environment corr
 
 Using pytest fixtures helps eliminate repetitive setup code across multiple tests. They not only simplify your test code for scenarios like deposit and withdrawal operations but also make it easier to manage more complex cases, such as setting up databases or external services.
 
-<Callout icon="lightbulb">
-  By combining fixtures with parameterized test cases, you can efficiently cover a wide range of scenarios while keeping your test code concise, maintainable, and SEO-friendly.
-</Callout>
+> **lightbulb** By combining fixtures with parameterized test cases, you can efficiently cover a wide range of scenarios while keeping your test code concise, maintainable, and SEO-friendly.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/b77bff5f-f83c-401c-a32b-7692f7ccd2ab" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/b77bff5f-f83c-401c-a32b-7692f7ccd2ab)

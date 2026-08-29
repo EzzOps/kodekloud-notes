@@ -21,7 +21,7 @@ The TCO Calculator provides several valuable functions designed to deliver a com
 * **Detailed Reports**\
   Beyond summary figures, the tool generates in-depth breakdowns of expenses and savings.
 
-![The image outlines the key features of a TCO Calculator, highlighting comprehensive cost analysis, customizable inputs, and detailed reports.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868358/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-TCO-Calculator/tco-calculator-features-outline.jpg)
+![The image outlines the key features of a TCO Calculator, highlighting comprehensive cost analysis, customizable inputs, and detailed reports.](https://kodekloud.com/kk-media/image/upload/v1752868358/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-TCO-Calculator/tco-calculator-features-outline.jpg)
 
 ## Benefits of the TCO Calculator
 
@@ -36,17 +36,17 @@ Using the TCO Calculator offers multiple advantages:
 * **Effective Planning**\
   It serves as an essential resource for budgeting and devising a robust cloud migration strategy.
 
-![The image is a graphic titled "TCO Calculator – Benefits," highlighting three benefits: Informed Decision Making, Cost Transparency, and Planning Tool. Each benefit is represented with an icon and a numbered label.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868358/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-TCO-Calculator/tco-calculator-benefits-graphic.jpg)
+![The image is a graphic titled "TCO Calculator – Benefits," highlighting three benefits: Informed Decision Making, Cost Transparency, and Planning Tool. Each benefit is represented with an icon and a numbered label.](https://kodekloud.com/kk-media/image/upload/v1752868358/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-TCO-Calculator/tco-calculator-benefits-graphic.jpg)
 
 ## How to Use the TCO Calculator
 
 Getting started with the TCO Calculator is straightforward. Begin by entering details about your current on-premises infrastructure, specifying the Azure services you plan to use, and reviewing the resulting cost report. This process is ideal for organizations seeking to understand the financial implications of a cloud migration.
 
-![The image is a three-step guide for using a TCO Calculator, involving entering current infrastructure details, specifying future Azure services, and viewing and analyzing the cost report.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868359/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-TCO-Calculator/tco-calculator-three-step-guide.jpg)
+![The image is a three-step guide for using a TCO Calculator, involving entering current infrastructure details, specifying future Azure services, and viewing and analyzing the cost report.](https://kodekloud.com/kk-media/image/upload/v1752868359/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-TCO-Calculator/tco-calculator-three-step-guide.jpg)
 
 Next, compare your on-premises costs with the projected expenses in Azure to see a side-by-side analysis.
 
-![The image shows two use cases for a TCO Calculator: assessing Azure migration costs and understanding benefits for organizations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868360/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-TCO-Calculator/tco-calculator-azure-migration-benefits.jpg)
+![The image shows two use cases for a TCO Calculator: assessing Azure migration costs and understanding benefits for organizations.](https://kodekloud.com/kk-media/image/upload/v1752868360/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-TCO-Calculator/tco-calculator-azure-migration-benefits.jpg)
 
 ## Demonstration: Estimating Costs
 
@@ -73,7 +73,7 @@ You can also add detailed storage information:
 
 After entering these details, click **Next** to proceed to the assumptions page.
 
-![The image shows a webpage from Azure's pricing calculator, specifically the "Adjust assumptions" section, which includes options for software assurance coverage, geo-redundant storage, virtual machine costs, and electricity costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868361/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-TCO-Calculator/azure-pricing-calculator-assumptions.jpg)
+![The image shows a webpage from Azure's pricing calculator, specifically the "Adjust assumptions" section, which includes options for software assurance coverage, geo-redundant storage, virtual machine costs, and electricity costs.](https://kodekloud.com/kk-media/image/upload/v1752868361/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-TCO-Calculator/azure-pricing-calculator-assumptions.jpg)
 
 On the assumptions page, you can fine-tune parameters such as:
 
@@ -86,15 +86,15 @@ Additionally, you can adjust hardware-specific expenses, including costs per pro
 
 After reviewing your inputs, clicking **Next** may initially show no cost savings.
 
-![The image shows a Microsoft Azure TCO (Total Cost of Ownership) calculator webpage indicating no cost savings based on user inputs, with suggestions for reducing costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868362/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-TCO-Calculator/azure-tco-calculator-no-savings.jpg)
+![The image shows a Microsoft Azure TCO (Total Cost of Ownership) calculator webpage indicating no cost savings based on user inputs, with suggestions for reducing costs.](https://kodekloud.com/kk-media/image/upload/v1752868362/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-TCO-Calculator/azure-tco-calculator-no-savings.jpg)
 
 At this stage, the comparison might reveal that both on-premises and Azure costs are nearly identical. To identify potential savings, experiment by adjusting parameters. For example, modify the values for physical servers to 10, assign 10 processors per server, and set a cost factor of 20 per processor (using sample values). With these adjustments, the calculator might estimate savings over five years—say, \$6,442—and provide a detailed cost breakdown.
 
-![The image shows a comparison of total costs over five years between on-premises and Azure environments, with pie charts detailing cost distribution in categories like compute, data center, networking, storage, and IT labor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868363/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-TCO-Calculator/cost-comparison-onpremises-azure.jpg)
+![The image shows a comparison of total costs over five years between on-premises and Azure environments, with pie charts detailing cost distribution in categories like compute, data center, networking, storage, and IT labor.](https://kodekloud.com/kk-media/image/upload/v1752868363/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-TCO-Calculator/cost-comparison-onpremises-azure.jpg)
 
 The final report includes total on-premises cost, Azure cost, and a breakdown of various cost components. You can export the report to share with colleagues, offering a comprehensive financial overview.
 
-![The image shows a comparison of on-premises and Azure costs over five years, with bar charts and a cost breakdown summary for each. The on-premises cost is 1,265,734, while the Azure cost is 1,259,292.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868364/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-TCO-Calculator/on-premises-azure-cost-comparison.jpg)
+![The image shows a comparison of on-premises and Azure costs over five years, with bar charts and a cost breakdown summary for each. The on-premises cost is 1,265,734, while the Azure cost is 1,259,292.](https://kodekloud.com/kk-media/image/upload/v1752868364/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-TCO-Calculator/on-premises-azure-cost-comparison.jpg)
 
 > **lightbulb** The numbers provided in this demonstration are for illustration purposes only. Actual savings and benefits may vary significantly based on your organizational context and specific workloads.
 

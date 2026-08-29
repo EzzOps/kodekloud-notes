@@ -76,9 +76,7 @@ import (
 
 These imports do not create resources by themselves; they enable the Get/Create and owner-setting code to compile.
 
-<Callout icon="lightbulb">
-  Always keep imports minimal but explicit. Add `apierrors` to check for `IsNotFound` and `controllerutil` to set owner references. This makes your controller resilient to the common "get or create" reconciliation pattern.
-</Callout>
+> **lightbulb** Always keep imports minimal but explicit. Add `apierrors` to check for `IsNotFound` and `controllerutil` to set owner references. This makes your controller resilient to the common "get or create" reconciliation pattern.
 
 ## Wiring the Deployment in Reconcile
 
@@ -150,9 +148,7 @@ func (r *WebAppReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctr
 
 This pattern avoids creating duplicates and keeps the first reconcile loop simple. You can add update/drift-repair logic later to reconcile spec differences.
 
-<Callout icon="warning">
-  When calling `SetControllerReference`, ensure the `owner` and `object` types are valid and the `scheme` includes the owner type. Otherwise `SetControllerReference` will return an error and reconciliation should stop.
-</Callout>
+> **warning** When calling `SetControllerReference`, ensure the `owner` and `object` types are valid and the `scheme` includes the owner type. Otherwise `SetControllerReference` will return an error and reconciliation should stop.
 
 ## Example deployment helper
 
@@ -265,6 +261,4 @@ Table — Common reconciliation checks
 
 This wiring — importing the right helpers, creating a desired object, setting the controller reference, and using a safe get-or-create pattern — is the core of many Kubernetes reconciler implementations.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/4768a5b9-ac1f-4c3d-8f13-242b213b1ff7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/4768a5b9-ac1f-4c3d-8f13-242b213b1ff7)

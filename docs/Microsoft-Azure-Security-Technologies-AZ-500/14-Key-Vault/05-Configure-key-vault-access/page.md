@@ -11,9 +11,7 @@ Authentication is performed using Azure Active Directory (Azure AD), while autho
 * RBAC is primarily used for management plane operations (e.g., creating, updating, or deleting the Key Vault, retrieving vault properties, and managing access policies).
 * For the data plane—which involves keys, secrets, and certificates—permissions must be granted through the Key Vault Access Policy. However, you can also use RBAC for the data plane if preferred.
 
-<Frame>
-  ![The image is a flowchart illustrating the configuration of Key Vault access, showing the process from user authentication via Azure AD to authorization, and detailing operations in the management and data planes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881996/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/key-vault-access-flowchart.jpg)
-</Frame>
+![The image is a flowchart illustrating the configuration of Key Vault access, showing the process from user authentication via Azure AD to authorization, and detailing operations in the management and data planes.](https://kodekloud.com/kk-media/image/upload/v1752881996/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/key-vault-access-flowchart.jpg)
 
 The Azure Portal provides an option to switch between these access models. You can choose to manage both the management and data planes exclusively with Azure RBAC, or use RBAC for managing the Key Vault and rely on Access Policies for data operations.
 
@@ -38,35 +36,25 @@ Within the Azure Portal, search for "Key Vault". Even if you have an existing va
   yourKeyVaultName.vault.azure.net\
 This URL format ensures uniqueness across Azure.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a key vault, with fields for subscription, resource group, key vault name, region, and pricing tier.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881997/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-portal-key-vault-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a key vault, with fields for subscription, resource group, key vault name, region, and pricing tier.](https://kodekloud.com/kk-media/image/upload/v1752881997/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-portal-key-vault-creation.jpg)
 
 If you require Hardware Security Module (HSM) usage, switch to the premium tier, although the standard tier is sufficient for this demonstration. Additional options, such as configuring soft delete and purge protection, aid in vault recovery and will be discussed later.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating a key vault, with options to set the key vault name, region, pricing tier, and recovery options like soft delete and purge protection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881998/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-key-vault-creation-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating a key vault, with options to set the key vault name, region, pricing tier, and recovery options like soft delete and purge protection.](https://kodekloud.com/kk-media/image/upload/v1752881998/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-key-vault-creation-interface.jpg)
 
 Next, in the "Permission model" blade, choose how to control access to the data plane (keys, secrets, and certificates). The recommended option is Azure RBAC, although the Vault Access Policy is still available.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen for creating a key vault, specifically on the "Access configuration" tab. It includes options for configuring data plane access and selecting a permission model, with "Azure role-based access control" recommended.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882000/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-portal-key-vault-access-config.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen for creating a key vault, specifically on the "Access configuration" tab. It includes options for configuring data plane access and selecting a permission model, with "Azure role-based access control" recommended.](https://kodekloud.com/kk-media/image/upload/v1752882000/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-portal-key-vault-access-config.jpg)
 
 After selecting a permission model, add access policies as needed. For example, virtual machines might require access to Key Vault certificates during ARM template deployments, and disk encryption scenarios require corresponding permissions. Click "Next" to proceed.
 
 On the networking blade, control access by enabling/disabling public access, restricting access to selected networks, or configuring a private endpoint. For demonstration purposes, the public access option is used.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a key vault, specifically focusing on the networking configuration options. It includes settings for enabling public access and creating private endpoints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882001/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-key-vault-networking-options.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a key vault, specifically focusing on the networking configuration options. It includes settings for enabling public access and creating private endpoints.](https://kodekloud.com/kk-media/image/upload/v1752882001/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-key-vault-networking-options.jpg)
 
 Once the settings are reviewed, click "Review and Create". After validation, create the Key Vault. Once deployment is complete, click "Go to Resource" to view your new vault and note its vault URI.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page indicating that a deployment named "akvappsec" is complete. It provides details such as the subscription, resource group, and start time, with options to view deployment details and next steps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882002/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-portal-deployment-akvappsec.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page indicating that a deployment named "akvappsec" is complete. It provides details such as the subscription, resource group, and start time, with options to view deployment details and next steps.](https://kodekloud.com/kk-media/image/upload/v1752882002/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-portal-deployment-akvappsec.jpg)
 
 ***
 
@@ -74,9 +62,7 @@ Once the settings are reviewed, click "Review and Create". After validation, cre
 
 When retrieving objects like keys from the Key Vault, you might encounter notifications stating that the operation is not permitted through RBAC—even for subscription owners. This is because the data plane operations require explicit RBAC roles. To modify keys, secrets, or certificates, assign roles like "Key Vault Administrator" to allow full management access. Other available roles include "Certificate Officer", "Key Vault Contributor", "Key Vault Crypto Officer", and "Key Vault Reader".
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for a Key Vault named "akvappsec," displaying a message that the user is unauthorized to view the contents due to role-based access control (RBAC) restrictions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882004/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-portal-key-vault-rbac.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for a Key Vault named "akvappsec," displaying a message that the user is unauthorized to view the contents due to role-based access control (RBAC) restrictions.](https://kodekloud.com/kk-media/image/upload/v1752882004/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-portal-key-vault-rbac.jpg)
 
 Even users with global administrative privileges must have explicit RBAC permissions for the data plane. In this demonstration, assigning the "Key Vault Administrator" role removes the access banner when retrieving keys.
 
@@ -91,15 +77,11 @@ Even users with global administrative privileges must have explicit RBAC permiss
 3. Optionally, set an expiration date, define a rotation policy, and adjust export or immutability settings.
 4. Click "Create" when ready.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating a key, with options to set the key name, type, RSA key size, and other configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882004/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-key-creation-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating a key, with options to set the key name, type, RSA key size, and other configurations.](https://kodekloud.com/kk-media/image/upload/v1752882004/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-key-creation-interface.jpg)
 
 Upon creation, details such as the current version number and key identifier are shown, with an option to download the public key.
 
-<Frame>
-  ![The image shows a Microsoft Azure Key Vault interface displaying details of an RSA key, including its key type, size, creation and update dates, and permitted operations like encrypt and decrypt.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882006/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-key-vault-rsa-key-details.jpg)
-</Frame>
+![The image shows a Microsoft Azure Key Vault interface displaying details of an RSA key, including its key type, size, creation and update dates, and permitted operations like encrypt and decrypt.](https://kodekloud.com/kk-media/image/upload/v1752882006/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-key-vault-rsa-key-details.jpg)
 
 ### Creating a Secret
 
@@ -108,9 +90,7 @@ Upon creation, details such as the current version number and key identifier are
 3. Set optional details such as activation and expiration dates.
 4. Click "Create".
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a secret, with fields for name, secret value, and optional settings like activation and expiration dates. The secret is named "sql-db-connstring" and is currently enabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882007/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-portal-create-secret-sql-db.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a secret, with fields for name, secret value, and optional settings like activation and expiration dates. The secret is named "sql-db-connstring" and is currently enabled.](https://kodekloud.com/kk-media/image/upload/v1752882007/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-portal-create-secret-sql-db.jpg)
 
 After creation, verify the secret's value by selecting it and clicking "Show Secret".
 
@@ -135,13 +115,9 @@ When accessing keys, secrets, or certificates in Key Vault, specific RBAC roles 
 | Key Vault Contributor   | Manage the Key Vault resource (but not its data)               |
 | Key Vault Reader        | Read metadata and certificates, without exposing secret values |
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for adding role assignments, listing various job function roles with descriptions, types, and categories.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882008/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-portal-role-assignments.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for adding role assignments, listing various job function roles with descriptions, types, and categories.](https://kodekloud.com/kk-media/image/upload/v1752882008/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-portal-role-assignments.jpg)
 
-<Callout icon="lightbulb">
-  Always assign only the necessary roles to users and applications to adhere to the principle of least privilege.
-</Callout>
+> **lightbulb** Always assign only the necessary roles to users and applications to adhere to the principle of least privilege.
 
 ***
 
@@ -232,20 +208,16 @@ Push-OutputBinding -Name Response -Value [HttpResponseContext]@{
 
 If the secret is successfully retrieved, its value is returned with an HTTP 200 (OK) status. Otherwise, the function returns an error message with a 500 (Internal Server Error) status.
 
-<Callout icon="lightbulb">
-  To test this configuration:
+> **lightbulb** To test this configuration:
 
   1. Copy the function URL.
   2. Append the required parameters (for example, keyVaultName and secret) to the URL.
   3. Open the URL in your browser.
      If retrieval fails, verify that the service principal has been assigned the appropriate role (e.g., "Secret User") on the Key Vault.
-</Callout>
 
 For example, assign the service principal by navigating to the Key Vault's "Access control (IAM)", selecting an appropriate role, adding the service principal as a member, and confirming the assignment. Then, reattempt the function URL.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying details of a Key Vault named "akvappsec." It includes information such as resource group, location, subscription ID, and settings related to keys and secrets management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882009/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-portal-key-vault-akvappsec-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying details of a Key Vault named "akvappsec." It includes information such as resource group, location, subscription ID, and settings related to keys and secrets management.](https://kodekloud.com/kk-media/image/upload/v1752882009/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-key-vault-access/azure-portal-key-vault-akvappsec-2.jpg)
 
 Once correctly configured, the secret’s value (for example, a connection string) will be returned in the browser, matching the value stored in the Key Vault. An example secret might be:
 
@@ -257,6 +229,4 @@ This demonstration shows how a Function App can retrieve a secret from Azure Key
 
 We hope this lesson clarifies how Azure Key Vault access is configured, and how RBAC and Access Policies work together to manage keys, secrets, and certificates.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/e6ef26f3-b79d-482a-8f38-130223404051/lesson/40281a0e-d70a-4075-9e08-59aae423e2b0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/e6ef26f3-b79d-482a-8f38-130223404051/lesson/40281a0e-d70a-4075-9e08-59aae423e2b0)

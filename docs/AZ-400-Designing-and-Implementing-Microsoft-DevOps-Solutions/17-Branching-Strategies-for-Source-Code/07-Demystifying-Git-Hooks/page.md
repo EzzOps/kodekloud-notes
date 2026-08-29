@@ -6,13 +6,13 @@ Git Hooks are scripts that automate tasks in your Git workflow, enhancing code q
 
 Git Hooks are powerful scripts that execute at predefined points in your Git workflow. By automating checks, enforcing standards, and triggering tasks, hooks help maintain code quality and streamline development.
 
-![The image shows a list of Git hook sample files and a description explaining that Git hooks are customizable scripts that run at specific points in Git's workflow, acting like triggers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867342/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demystifying-Git-Hooks/git-hooks-sample-files-description.jpg)
+![The image shows a list of Git hook sample files and a description explaining that Git hooks are customizable scripts that run at specific points in Git's workflow, acting like triggers.](https://kodekloud.com/kk-media/image/upload/v1752867342/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demystifying-Git-Hooks/git-hooks-sample-files-description.jpg)
 
 ## Why Use Git Hooks?
 
 Integrating Git Hooks into your workflow offers several advantages:
 
-![The image is a presentation slide titled "Git Hooks – Purpose and Power," highlighting two points: "Prevent problems" and "Enforce standards."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867343/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demystifying-Git-Hooks/git-hooks-purpose-power-presentation.jpg)
+![The image is a presentation slide titled "Git Hooks – Purpose and Power," highlighting two points: "Prevent problems" and "Enforce standards."](https://kodekloud.com/kk-media/image/upload/v1752867343/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demystifying-Git-Hooks/git-hooks-purpose-power-presentation.jpg)
 
 * Prevent regressions by running linters or unit tests before committing code.
 * Enforce commit message conventions to maintain a readable history.
@@ -24,7 +24,7 @@ Integrating Git Hooks into your workflow offers several advantages:
 
 Client-side hooks run on a developer’s machine, catching issues early. Server-side hooks execute on the remote repository to enforce organization-wide policies.
 
-![The image compares client-side hooks, which operate on a local machine to catch issues early, with server-side hooks, which act on the server for broader control.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867345/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demystifying-Git-Hooks/client-side-vs-server-side-hooks-comparison.jpg)
+![The image compares client-side hooks, which operate on a local machine to catch issues early, with server-side hooks, which act on the server for broader control.](https://kodekloud.com/kk-media/image/upload/v1752867345/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demystifying-Git-Hooks/client-side-vs-server-side-hooks-comparison.jpg)
 
 ### Common Client-Side Hooks
 
@@ -55,7 +55,7 @@ Think of hooks as quality gates and automation triggers:
 * **pre-receive**: Stops forbidden changes from entering the central repo
 * **post-merge**: Refreshes dependencies or runs smoke tests after merging
 
-![The image explains Git hooks, describing them as tools for code quality control and defense against disruption, with examples like pre-commit, pre-push, pre-receive, and post-merge hooks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867346/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demystifying-Git-Hooks/git-hooks-code-quality-control-explained.jpg)
+![The image explains Git hooks, describing them as tools for code quality control and defense against disruption, with examples like pre-commit, pre-push, pre-receive, and post-merge hooks.](https://kodekloud.com/kk-media/image/upload/v1752867346/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demystifying-Git-Hooks/git-hooks-code-quality-control-explained.jpg)
 
 ## Git Hook Execution Sequence
 
@@ -71,7 +71,7 @@ Understanding the order of hooks during commit and push helps you design effecti
   2. update
   3. post-receive
 
-![The image is a flowchart illustrating Git hooks, showing the sequence of events on the client and server sides during a commit and push process. It includes stages like pre-commit, commit-msg, post-commit, pre-receive, update, and post-receive.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867346/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demystifying-Git-Hooks/git-hooks-flowchart-commit-push.jpg)
+![The image is a flowchart illustrating Git hooks, showing the sequence of events on the client and server sides during a commit and push process. It includes stages like pre-commit, commit-msg, post-commit, pre-receive, update, and post-receive.](https://kodekloud.com/kk-media/image/upload/v1752867346/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demystifying-Git-Hooks/git-hooks-flowchart-commit-push.jpg)
 
 ## Further Reading
 

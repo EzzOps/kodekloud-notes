@@ -18,7 +18,7 @@ Below are the seven areas of cloud security:
 
 There is significant overlap among these areas, but each one emphasizes a specific aspect of cloud security.
 
-![The image lists seven areas of cloud security: Foundations, Identity and Access Management, Detection, Infrastructure Protection, Data Protection, Application Security, and Incident Response.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864576/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Understanding-the-seven-foundations-of-Security/cloud-security-seven-areas.jpg)
+![The image lists seven areas of cloud security: Foundations, Identity and Access Management, Detection, Infrastructure Protection, Data Protection, Application Security, and Incident Response.](https://kodekloud.com/kk-media/image/upload/v1752864576/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Understanding-the-seven-foundations-of-Security/cloud-security-seven-areas.jpg)
 
 ***
 
@@ -26,7 +26,7 @@ There is significant overlap among these areas, but each one emphasizes a specif
 
 This section establishes the baseline for all subsequent security measures. It involves planning activities such as defining roles, identifying critical services, and determining the necessary protection levels—whether that means 24/7 monitoring or security during specific timeframes. By setting clear objectives for system updates, threat identification, and account management, the security foundations guide your overall strategy.
 
-![The image is a slide titled "Security Foundations" with a target and arrow graphic, outlining key security concepts such as defining "who, what, when, where, and how," and objectives like security, updating, and threat identification.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864578/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Understanding-the-seven-foundations-of-Security/security-foundations-target-arrow.jpg)
+![The image is a slide titled "Security Foundations" with a target and arrow graphic, outlining key security concepts such as defining "who, what, when, where, and how," and objectives like security, updating, and threat identification.](https://kodekloud.com/kk-media/image/upload/v1752864578/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Understanding-the-seven-foundations-of-Security/security-foundations-target-arrow.jpg)
 
 ***
 
@@ -34,7 +34,7 @@ This section establishes the baseline for all subsequent security measures. It i
 
 This category focuses on controlling who can access your cloud resources and what permissions are granted. In AWS, for example, this is achieved using IAM (Identity and Access Management). A robust identity and access management process not only prevents unauthorized entry but also facilitates secure operations for authorized users.
 
-![The image is about "Identity and Access Management," featuring an icon of a user with a gear and a cross mark, alongside text discussing the importance of strong identity management and permissions management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864579/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Understanding-the-seven-foundations-of-Security/identity-access-management-icon.jpg)
+![The image is about "Identity and Access Management," featuring an icon of a user with a gear and a cross mark, alongside text discussing the importance of strong identity management and permissions management.](https://kodekloud.com/kk-media/image/upload/v1752864579/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Understanding-the-seven-foundations-of-Security/identity-access-management-icon.jpg)
 
 ***
 
@@ -42,7 +42,7 @@ This category focuses on controlling who can access your cloud resources and wha
 
 Detection involves deploying tools and processes to identify security issues early. This includes monitoring for unexpected configuration changes, analyzing logs and metrics, and tracking vulnerabilities. The goal is to provide centralized and actionable information that can trigger timely alerts and remediation efforts.
 
-![The image is a diagram about "Detection," focusing on detecting unexpected configuration changes and actions, and governing logs, metrics, and data analysis. It includes a central location and action points.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864580/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Understanding-the-seven-foundations-of-Security/detection-configuration-changes-diagram.jpg)
+![The image is a diagram about "Detection," focusing on detecting unexpected configuration changes and actions, and governing logs, metrics, and data analysis. It includes a central location and action points.](https://kodekloud.com/kk-media/image/upload/v1752864580/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Understanding-the-seven-foundations-of-Security/detection-configuration-changes-diagram.jpg)
 
 ***
 
@@ -50,7 +50,7 @@ Detection involves deploying tools and processes to identify security issues ear
 
 Infrastructure Protection is dedicated to defending the underlying cloud infrastructure. This area involves implementing various defenses—such as network security, continuous network inspections, and vulnerability assessments for compute assets. Protecting essential components like network switches, storage systems, and compute instances is vital to prevent exploitation.
 
-![The image is a slide titled "Infrastructure Protection," highlighting the protection of networks and compute resources, and practices like security at network layers, network inspection, and vulnerability assessments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864581/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Understanding-the-seven-foundations-of-Security/infrastructure-protection-network-security.jpg)
+![The image is a slide titled "Infrastructure Protection," highlighting the protection of networks and compute resources, and practices like security at network layers, network inspection, and vulnerability assessments.](https://kodekloud.com/kk-media/image/upload/v1752864581/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Understanding-the-seven-foundations-of-Security/infrastructure-protection-network-security.jpg)
 
 ***
 
@@ -58,7 +58,7 @@ Infrastructure Protection is dedicated to defending the underlying cloud infrast
 
 Data Protection focuses on safeguarding your data independently of the underlying infrastructure. This includes encryption of data at rest and in transit, key lifecycle management, and implementing data classification based on sensitivity. Maintaining data integrity and confidentiality—using built-in cloud features or additional security measures—is a top priority.
 
-![The image is a slide titled "Data Protection" with a list of practices related to data protection, including encryption, key management, and data lifecycle. It also mentions protecting data at rest, in transit, and through classification.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864582/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Understanding-the-seven-foundations-of-Security/data-protection-practices-slide.jpg)
+![The image is a slide titled "Data Protection" with a list of practices related to data protection, including encryption, key management, and data lifecycle. It also mentions protecting data at rest, in transit, and through classification.](https://kodekloud.com/kk-media/image/upload/v1752864582/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Understanding-the-seven-foundations-of-Security/data-protection-practices-slide.jpg)
 
 ***
 
@@ -84,13 +84,13 @@ An understanding of these seven areas allows you to map specific security requir
 * To log user activity, implement Detection strategies such as using S3 access logs.
 * To control resource access, focus on Identity and Access Management, utilizing AWS IAM policies.
 
-![The image is a flowchart illustrating security requirements for Amazon S3, detailing data protection, detection, and identity/access management solutions like S3 encryption, access logs, and AWS IAM.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864583/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Understanding-the-seven-foundations-of-Security/s3-security-requirements-flowchart.jpg)
+![The image is a flowchart illustrating security requirements for Amazon S3, detailing data protection, detection, and identity/access management solutions like S3 encryption, access logs, and AWS IAM.](https://kodekloud.com/kk-media/image/upload/v1752864583/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Understanding-the-seven-foundations-of-Security/s3-security-requirements-flowchart.jpg)
 
 The purple-highlighted service features in the diagrams indicate which AWS service or feature to enable for meeting these security needs. These seven areas work together with cloud design principles to help evaluate and enhance the security posture of AWS services.
 
 For example, if you are strengthening data protection for a database, you might implement encryption and enable detailed access logs. Conversely, if your focus is on user authentication for S3, you would utilize IAM services for effective access control. Although these categories are not part of the formal exam, they are essential for conducting a thorough security analysis and designing robust solutions.
 
-![The image is a summary slide outlining key areas of cloud security, including security foundations, identity and access management, and incident response, in relation to AWS services. It emphasizes the importance of applying these areas to enhance security and notes that these principles won't be on the exam.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864584/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Understanding-the-seven-foundations-of-Security/cloud-security-aws-summary-slide.jpg)
+![The image is a summary slide outlining key areas of cloud security, including security foundations, identity and access management, and incident response, in relation to AWS services. It emphasizes the importance of applying these areas to enhance security and notes that these principles won't be on the exam.](https://kodekloud.com/kk-media/image/upload/v1752864584/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Understanding-the-seven-foundations-of-Security/cloud-security-aws-summary-slide.jpg)
 
 ***
 

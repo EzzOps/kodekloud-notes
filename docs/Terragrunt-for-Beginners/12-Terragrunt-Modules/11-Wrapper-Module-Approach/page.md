@@ -53,9 +53,7 @@ This command refreshes your local copy of the module, incorporating any fixes or
 
 ## 5. Security and Best Practices
 
-<Callout icon="triangle-alert">
-  Always verify the module’s publisher and review its source code before applying in production. Prefer modules marked as **Verified** or provided by official vendors to reduce risk.
-</Callout>
+> **triangle-alert** Always verify the module’s publisher and review its source code before applying in production. Prefer modules marked as **Verified** or provided by official vendors to reduce risk.
 
 * Review module inputs, outputs, and provisioners for security compliance.
 * Check the [Terraform Registry](https://registry.terraform.io) page for the module’s documentation and changelog.
@@ -67,9 +65,7 @@ This command refreshes your local copy of the module, incorporating any fixes or
 * [Terragrunt Documentation](https://terragrunt.gruntwork.io/)
 * [Terraform Modules Best Practices](https://www.terraform.io/docs/language/modules/develop/index.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/0d9390cd-e0d4-4e5f-af6f-00a2e9bf6d3b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/4d4cda50-7d42-4622-b0d4-fa6e6ce0a16d/lesson/0d9390cd-e0d4-4e5f-af6f-00a2e9bf6d3b)
 
 
 # Wrapper Module Approach

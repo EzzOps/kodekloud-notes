@@ -33,21 +33,17 @@ Why the other options are less appropriate
 
 Best practices for rigorous ablation studies
 
-<Callout icon="lightbulb">
-  Follow these practices to make ablation results reliable and actionable:
+> **lightbulb** Follow these practices to make ablation results reliable and actionable:
 
   * Change only one factor per experiment (controlled ablation).
   * Keep datasets, evaluation metrics, random seeds, and training/optimization regimes constant across runs.
   * Run multiple trials and report variance, confidence intervals, or statistical significance.
   * Log full configurations, checkpoints, and artifacts to ensure reproducibility.
   * If components are likely to interact, supplement single-factor ablations with factorial designs or pairwise ablations to detect interaction effects.
-</Callout>
 
 Common pitfalls and cautions
 
-<Callout icon="warning">
-  Avoid drawing conclusions from single runs or from experiments where multiple variables change simultaneously. Interaction effects can hide or exaggerate a component’s true contribution—design experiments (and report them) to surface and quantify these interactions.
-</Callout>
+> **warning** Avoid drawing conclusions from single runs or from experiments where multiple variables change simultaneously. Interaction effects can hide or exaggerate a component’s true contribution—design experiments (and report them) to surface and quantify these interactions.
 
 Quick checklist for an ablation experiment
 
@@ -67,6 +63,4 @@ References and further reading
 
 This methodology ensures your ablation study yields interpretable, reproducible, and statistically sound insights into which LLM components truly drive performance.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/56e8ade5-5c7d-47db-96f6-c1c84789d1ec" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/56e8ade5-5c7d-47db-96f6-c1c84789d1ec)

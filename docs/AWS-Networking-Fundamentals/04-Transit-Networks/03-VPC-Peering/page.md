@@ -6,7 +6,7 @@ VPC Peering establishes a private network connection between two VPCs, enabling 
 
 In AWS, each Virtual Private Cloud (VPC) is an isolated network boundary. By default, resources in one VPC cannot reach resources in another VPC without an explicit link.
 
-![The image illustrates the behavior of Virtual Private Clouds (VPCs) acting as network boundaries, showing two VPCs with a boundary between them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863431/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering/vpc-network-boundaries-illustration.jpg)
+![The image illustrates the behavior of Virtual Private Clouds (VPCs) acting as network boundaries, showing two VPCs with a boundary between them.](https://kodekloud.com/kk-media/image/upload/v1752863431/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering/vpc-network-boundaries-illustration.jpg)
 
 ## What Is VPC Peering?
 
@@ -16,7 +16,7 @@ VPC Peering establishes a private network connection between two VPCs, allowing 
 * VPCs across different regions (Inter-Region Peering)
 * VPCs in separate AWS accounts
 
-![The image illustrates VPC Peering between two AWS accounts, each containing a Virtual Private Cloud (VPC).](../../../../images/kodekloud.com/kk-media/image/upload/v1752863432/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering/vpc-peering-aws-accounts-diagram.jpg)
+![The image illustrates VPC Peering between two AWS accounts, each containing a Virtual Private Cloud (VPC).](https://kodekloud.com/kk-media/image/upload/v1752863432/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering/vpc-peering-aws-accounts-diagram.jpg)
 
 > **lightbulb** Once peered, you must update route tables; peering alone doesn’t modify routing.
 
@@ -49,7 +49,7 @@ Steps to create the peering link:
 3. **Verify Connection**
    * Status changes to `active` in the Peering Connections list—but routing is still pending.
 
-![The image illustrates a VPC peering process between two virtual private clouds (VPC 1 and VPC 2) with IP ranges 10.1.0.0/16 and 10.2.0.0/16, showing the sending and accepting of a peering request.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863433/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering/vpc-peering-process-ip-ranges-diagram.jpg)
+![The image illustrates a VPC peering process between two virtual private clouds (VPC 1 and VPC 2) with IP ranges 10.1.0.0/16 and 10.2.0.0/16, showing the sending and accepting of a peering request.](https://kodekloud.com/kk-media/image/upload/v1752863433/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering/vpc-peering-process-ip-ranges-diagram.jpg)
 
 ## Configuring Route Tables
 
@@ -71,7 +71,7 @@ Destination     Target
 
 This ensures traffic flows over the peering link instead of the internet gateway.
 
-![The image illustrates a VPC peering connection between two virtual private clouds (VPC 1 and VPC 2) with their respective IP ranges and routing tables.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863434/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering/vpc-peering-connection-ip-ranges-routing.jpg)
+![The image illustrates a VPC peering connection between two virtual private clouds (VPC 1 and VPC 2) with their respective IP ranges and routing tables.](https://kodekloud.com/kk-media/image/upload/v1752863434/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering/vpc-peering-connection-ip-ranges-routing.jpg)
 
 > **triangle-alert** VPC Peering is non-transitive. If VPC1 peers with VPC2, and VPC2 peers with VPC3, VPC1 cannot reach VPC3 through VPC2. Each pair requires its own peering connection.
 
@@ -83,7 +83,7 @@ This ensures traffic flows over the peering link instead of the internet gateway
 
 ## Summary
 
-![The image is a summary slide about VPC Peering, highlighting three points: network connection between VPCs, connection across regions and AWS accounts, and cost details regarding data transfer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863435/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering/vpc-peering-summary-network-connection.jpg)
+![The image is a summary slide about VPC Peering, highlighting three points: network connection between VPCs, connection across regions and AWS accounts, and cost details regarding data transfer.](https://kodekloud.com/kk-media/image/upload/v1752863435/notes-assets/images/AWS-Networking-Fundamentals-VPC-Peering/vpc-peering-summary-network-connection.jpg)
 
 * VPC Peering connects two VPCs privately.
 * Peerings can span regions and AWS accounts.

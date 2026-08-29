@@ -8,7 +8,7 @@ Azure Container Apps is a powerful service that enables developers to effortless
 
 Authentication confirms user identity, while authorization determines the level of access granted to authenticated users. Azure Container Apps leverages federated identity by integrating with third-party identity providers such as Microsoft Identity Platform (Azure Active Directory or Microsoft Entra ID), Facebook, GitHub, Google, Twitter, and any provider supporting OpenID Connect. This approach streamlines identity management and integrates seamlessly with your existing authentication schemes.
 
-![The image illustrates Azure Container Apps' authentication and authorization using third-party identity providers, including logos of Microsoft, Facebook, GitHub, and Google.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866600/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authentication-and-Authorization-in-Azure-Container-Apps/azure-container-apps-authentication-logos.jpg)
+![The image illustrates Azure Container Apps' authentication and authorization using third-party identity providers, including logos of Microsoft, Facebook, GitHub, and Google.](https://kodekloud.com/kk-media/image/upload/v1752866600/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authentication-and-Authorization-in-Azure-Container-Apps/azure-container-apps-authentication-logos.jpg)
 
 The authentication flow remains consistent across providers, though the details may vary depending on whether you use the provider's SDK.
 
@@ -22,7 +22,7 @@ There are two primary authentication flows:
 2. **Client-Directed (Client-Flow) Authentication:**\
    When using the provider's SDK, the application handles the sign-in process directly on behalf of the user. The SDK then submits the obtained authentication token to the container app for validation.
 
-![The image is a flowchart illustrating two authentication processes for Azure Container Apps: "Browser-Based Sign-In" and "Client-Directed Authentication," each showing steps from user request to validation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866601/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authentication-and-Authorization-in-Azure-Container-Apps/azure-container-apps-authentication-flowchart.jpg)
+![The image is a flowchart illustrating two authentication processes for Azure Container Apps: "Browser-Based Sign-In" and "Client-Directed Authentication," each showing steps from user request to validation.](https://kodekloud.com/kk-media/image/upload/v1752866601/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authentication-and-Authorization-in-Azure-Container-Apps/azure-container-apps-authentication-flowchart.jpg)
 
 > **lightbulb** For detailed implementation examples, refer to the official [Azure Container Apps documentation](https://learn.microsoft.com/en-us/azure/container-apps/).
 
@@ -33,7 +33,7 @@ Follow these steps to implement server-directed authentication (without the prov
 1. Using the same container app created earlier, navigate to the **Authentication** section in the Azure Portal.
 2. Select the desired identity provider. For this example, choose **Microsoft** and create a new app registration.
 
-![The image shows a Microsoft Azure portal interface for adding an identity provider, with options for app registration and additional checks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866603/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authentication-and-Authorization-in-Azure-Container-Apps/azure-portal-identity-provider-interface.jpg)
+![The image shows a Microsoft Azure portal interface for adding an identity provider, with options for app registration and additional checks.](https://kodekloud.com/kk-media/image/upload/v1752866603/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authentication-and-Authorization-in-Azure-Container-Apps/azure-portal-identity-provider-interface.jpg)
 
 3. Configure the settings for the identity provider:
    * Set the token expiration to 90 days (or as required).
@@ -55,7 +55,7 @@ Below is an example JSON response retrieved after successful authentication:
 
 Upon sign-in, the Microsoft login page will display a consent request indicating the permissions required by the application.
 
-![The image shows a Microsoft login page requesting permissions for an application named "airportcodeapiapp2," with options to accept or cancel.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866605/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authentication-and-Authorization-in-Azure-Container-Apps/microsoft-login-airportcodeapiapp2.jpg)
+![The image shows a Microsoft login page requesting permissions for an application named "airportcodeapiapp2," with options to accept or cancel.](https://kodekloud.com/kk-media/image/upload/v1752866605/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authentication-and-Authorization-in-Azure-Container-Apps/microsoft-login-airportcodeapiapp2.jpg)
 
 ## Additional JSON Output Example
 

@@ -31,9 +31,7 @@ type WebAppSpec struct {
 
 Kubebuilder markers (Go comments processed by `controller-gen`) can add API-server behavior such as defaults and validation. Running `make manifests` converts those markers into the CRD OpenAPI schema that the API server enforces.
 
-<Callout icon="warning">
-  Remember to add kubebuilder validation and default markers if you expect defaults or input validation. Without them, the API server won't enforce constraints and invalid manifests could reach your controller.
-</Callout>
+> **warning** Remember to add kubebuilder validation and default markers if you expect defaults or input validation. Without them, the API server won't enforce constraints and invalid manifests could reach your controller.
 
 Summary table — WebApp first-version contract:
 
@@ -57,9 +55,7 @@ References:
 * [kubebuilder book](https://book.kubebuilder.io/)
 * [controller-gen (kubebuilder marker docs)](https://book.kubebuilder.io/reference/markers.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/806a4312-3ca5-4ce7-aa47-7336e21a1324" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/806a4312-3ca5-4ce7-aa47-7336e21a1324)
 
 
 # Inside the Reconcile Loop
@@ -101,9 +97,7 @@ The `req` contains a `NamespacedName` (the key of the object that needs attentio
 
 Controllers in Kubernetes are level-triggered, not edge-triggered. You do not react to "a WebApp was created"; you react to "the WebApp named `foo` in namespace `bar` might need work — go look." Embracing this mental model is essential.
 
-<Callout icon="lightbulb">
-  Controllers are level-triggered: always reconcile to the current desired state by looking up the object by key, not by relying on the event payload.
-</Callout>
+> **lightbulb** Controllers are level-triggered: always reconcile to the current desired state by looking up the object by key, not by relying on the event payload.
 
 <Frame>
   <img alt="The image contrasts edge-triggered and level-triggered concepts, suggesting that level-triggered is more important in the lesson." />
@@ -150,9 +144,7 @@ This fetch-and-bail pattern (under ten lines of Go) is the canonical approach to
 
 The reconcile loop must be idempotent. The same WebApp will be reconciled many times — on creation, on spec changes, on periodic resyncs, after controller restarts, and after transient errors. If running reconcile twice yields a different result than running it once, you have a bug.
 
-<Callout icon="warning">
-  Idempotency is critical: ensure reconcile is safe to run repeatedly. Avoid relying on side-effects that make subsequent runs behave differently.
-</Callout>
+> **warning** Idempotency is critical: ensure reconcile is safe to run repeatedly. Avoid relying on side-effects that make subsequent runs behave differently.
 
 <Frame>
   <img alt="The image illustrates the concept of idempotency in loops, stating &#x22;Run twice == run once&#x22; and mentions the importance of handling creation, spec changes, re-sync, restarts, and errors. It emphasizes that if running twice doesn't equal running once, it's considered a bug." />
@@ -191,6 +183,4 @@ Links and references:
 * [`k8s.io/apimachinery/pkg/api/errors`](https://pkg.go.dev/k8s.io/apimachinery/pkg/api/errors)
 * [OwnerReferences and garbage collection](https://kubernetes.io/docs/concepts/overview/working-with-objects/owners-dependents/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/5377c550-a928-4c7d-bf1b-61df639cf1c4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ef5c1b44-311a-415f-8eeb-8a460e759cfe/lesson/5377c550-a928-4c7d-bf1b-61df639cf1c4)

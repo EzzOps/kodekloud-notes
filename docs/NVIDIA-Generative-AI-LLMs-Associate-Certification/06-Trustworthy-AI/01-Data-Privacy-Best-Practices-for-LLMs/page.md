@@ -40,13 +40,9 @@ References
 * SavedModel: [https://www.tensorflow.org/guide/saved\_model](https://www.tensorflow.org/guide/saved_model)
 * Quantization-aware training (QAT) guide: [https://www.tensorflow.org/model\_optimization/guide/quantization/training](https://www.tensorflow.org/model_optimization/guide/quantization/training)
 
-<Callout icon="lightbulb">
-  Use a representative calibration dataset and validate generation quality after quantization. If specific layers degrade significantly under INT8, consider mixed-precision (INT8 + FP16) or QAT for those layers.
-</Callout>
+> **lightbulb** Use a representative calibration dataset and validate generation quality after quantization. If specific layers degrade significantly under INT8, consider mixed-precision (INT8 + FP16) or QAT for those layers.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/928a084f-42c4-495d-a079-aef1bfca417a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/928a084f-42c4-495d-a079-aef1bfca417a)
 
 
 # Data Privacy Best Practices for LLMs
@@ -64,9 +60,7 @@ Question 4 — Which approach to data privacy in LLM applications represents a b
 
 Answer: Implementing data minimization and purpose limitation.
 
-<Callout icon="lightbulb">
-  Implementing data minimization and purpose limitation means collecting only the data strictly necessary for a stated purpose and not using it beyond that purpose without additional consent. This approach balances utility with privacy and aligns with ethical and legal data-protection frameworks.
-</Callout>
+> **lightbulb** Implementing data minimization and purpose limitation means collecting only the data strictly necessary for a stated purpose and not using it beyond that purpose without additional consent. This approach balances utility with privacy and aligns with ethical and legal data-protection frameworks.
 
 <Frame>
   <img alt="The image presents a multiple-choice question about data privacy best practices in LLM applications, with the correct answer being &#x22;Implementing data minimization and purpose limitation.&#x22; A detailed explanation of this choice is provided below the answer." />
@@ -108,6 +102,4 @@ Further reading and references
 * [NIST Privacy Framework](https://www.nist.gov/privacy-framework)
 * [Differential Privacy — Google Research](https://research.google/pubs/pub46419/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/f5fcaa31-ee4e-4d79-9474-be230c1c96b7/lesson/7774ff60-4ce5-4204-b44a-5fed29ab8fd7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/f5fcaa31-ee4e-4d79-9474-be230c1c96b7/lesson/7774ff60-4ce5-4204-b44a-5fed29ab8fd7)

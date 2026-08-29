@@ -12,9 +12,7 @@ Modules in Rust offer several key benefits:
 * Namespace Management: Prevent naming conflicts by allowing identical names to be used in different modules.
 * Hierarchical Organization: Nest modules within each other to mirror your project’s structure.
 
-<Frame>
-  ![The image is an introduction to modules in Rust, highlighting three key concepts: encapsulation, namespace management, and hierarchical organization. Each concept is briefly explained with accompanying icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883972/notes-assets/images/Rust-Programming-Introduction-to-Modules/rust-modules-introduction-concepts.jpg)
-</Frame>
+![The image is an introduction to modules in Rust, highlighting three key concepts: encapsulation, namespace management, and hierarchical organization. Each concept is briefly explained with accompanying icons.](https://kodekloud.com/kk-media/image/upload/v1752883972/notes-assets/images/Rust-Programming-Introduction-to-Modules/rust-modules-introduction-concepts.jpg)
 
 Let’s dive into how you can define and use modules in Rust with two common approaches: defining modules inline within a single file and splitting them across multiple files.
 
@@ -72,9 +70,7 @@ produces the output:
 Sum: 8, Difference: 2
 ```
 
-<Callout icon="lightbulb">
-  If the `math.rs` file does not exist, you can create it using the command: `touch src/math.rs`.
-</Callout>
+> **lightbulb** If the `math.rs` file does not exist, you can create it using the command: `touch src/math.rs`.
 
 ***
 
@@ -86,9 +82,7 @@ When you declare a module, Rust’s compiler searches for the module’s code in
 * **File Modules:** The compiler searches for a file named after the module (e.g., `math.rs`) in the same directory as the parent module.
 * **Submodules:** For nested modules, the compiler looks for a directory named after the module.
 
-<Frame>
-  ![The image explains where a compiler searches for modules, detailing three types: inline modules, file modules, and submodules, with examples for each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883973/notes-assets/images/Rust-Programming-Introduction-to-Modules/compiler-module-search-explanation.jpg)
-</Frame>
+![The image explains where a compiler searches for modules, detailing three types: inline modules, file modules, and submodules, with examples for each.](https://kodekloud.com/kk-media/image/upload/v1752883973/notes-assets/images/Rust-Programming-Introduction-to-Modules/compiler-module-search-explanation.jpg)
 
 This hierarchy ensures that your modules are organized and accessed according to your project’s structure.
 
@@ -246,9 +240,7 @@ In this example, the `child` module calls the `parent_function` from its parent 
 This is the parent function.
 ```
 
-<Callout icon="triangle-alert">
-  If functions such as `child_function` are not called, the compiler might produce a warning about unused code. These warnings can be safely ignored if the code is intentional.
-</Callout>
+> **triangle-alert** If functions such as `child_function` are not called, the compiler might produce a warning about unused code. These warnings can be safely ignored if the code is intentional.
 
 ***
 
@@ -296,6 +288,4 @@ These features assist in creating modular, maintainable Rust projects while clea
 
 For further information, consider checking out [Rust's official documentation](https://www.rust-lang.org/learn).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/4cdab411-800e-4072-90d8-005dd70de03c/lesson/d9f85945-0b1d-4432-a0ac-1904f014865c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/4cdab411-800e-4072-90d8-005dd70de03c/lesson/d9f85945-0b1d-4432-a0ac-1904f014865c)

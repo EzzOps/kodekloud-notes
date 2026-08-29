@@ -171,7 +171,7 @@ Because pods receive dynamic IP addresses that can change when they are recreate
 
 For instance, by creating a service for the back-end pods, you can group them together under one interface. Similarly, services can be set up for Redis or other application tiers, ensuring that each layer can scale independently without disrupting internal connectivity.
 
-![The image depicts a Kubernetes ClusterIP setup with front-end, back-end, and Redis pods, each assigned specific IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869743/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Services-Cluster-IP/frame_120.jpg)
+![The image depicts a Kubernetes ClusterIP setup with front-end, back-end, and Redis pods, each assigned specific IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752869743/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Services-Cluster-IP/frame_120.jpg)
 
 > **lightbulb** Each service in Kubernetes is automatically assigned an IP and DNS name within the cluster. This Cluster IP should be used by other pods when accessing the service, ensuring consistent and reliable connectivity.
 

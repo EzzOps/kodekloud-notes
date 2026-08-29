@@ -36,13 +36,9 @@ Interpretation tips
 * Compare heads and layers to see how attention patterns evolve across the network; compute summary stats (e.g., entropy per query) to quantify concentration.
 * Use attention visualizations alongside other interpretability tools (e.g., integrated gradients, ablation studies) to form more robust explanations.
 
-<Callout icon="lightbulb">
-  When comparing heads or layers, plot multiple heat maps side-by-side (one per head or per layer) or compute summary statistics (for example, entropy per query) to quantify how concentrated attention is. Interactive viewers (e.g., Plotly) help explore long sequences and multiple heads.
-</Callout>
+> **lightbulb** When comparing heads or layers, plot multiple heat maps side-by-side (one per head or per layer) or compute summary statistics (for example, entropy per query) to quantify how concentrated attention is. Interactive viewers (e.g., Plotly) help explore long sequences and multiple heads.
 
-<Callout icon="warning">
-  Attention weights are informative but are not a guaranteed causal explanation of model decisions. Interpret attention visualizations cautiously and corroborate findings with additional interpretability methods.
-</Callout>
+> **warning** Attention weights are informative but are not a guaranteed causal explanation of model decisions. Interpret attention visualizations cautiously and corroborate findings with additional interpretability methods.
 
 <Frame>
   <img alt="The image shows a heat map illustrating the attention weights in transformer models, specifically detailing the relationships between input and output tokens. It also includes a text explanation of how heat maps visualize attention distribution." />
@@ -55,9 +51,7 @@ Links and references
 * [matplotlib: plotting library for Python](https://matplotlib.org/)
 * Attention interpretation resources: Vaswani et al., "Attention is All You Need" and follow-up interpretability work on transformer explanations
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/b8ad33c7-78ce-4828-a30c-4a8fc01d1781/lesson/e6c5cc72-8812-4eec-b74d-47135bc561fd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/b8ad33c7-78ce-4828-a30c-4a8fc01d1781/lesson/e6c5cc72-8812-4eec-b74d-47135bc561fd)
 
 
 # Determining Optimal LLM Context Window Size
@@ -79,9 +73,7 @@ Which approach would provide the most reliable results?
 
 Answer: Systematically testing incremental window sizes and measuring performance metrics.
 
-<Callout icon="lightbulb">
-  The most reliable method is a controlled, systematic experiment across multiple context window sizes, measuring both model performance and system/resource metrics. This reveals performance trends and practical trade-offs (accuracy, latency, memory, cost), rather than relying on a single data point or subjective preference.
-</Callout>
+> **lightbulb** The most reliable method is a controlled, systematic experiment across multiple context window sizes, measuring both model performance and system/resource metrics. This reveals performance trends and practical trade-offs (accuracy, latency, memory, cost), rather than relying on a single data point or subjective preference.
 
 Why this approach works
 
@@ -134,9 +126,7 @@ Practical tips and pitfalls
 * Use validation splits and repeated trials to mitigate noisy measurements.
 * If long contexts are necessary but expensive, evaluate hybrid solutions (retrieval, summarization, chunking) as first-class options.
 
-<Callout icon="warning">
-  Avoid making decisions based on a single run, purely model-documented defaults, or user preference alone. Those approaches miss the trade-offs that matter in production (latency, memory, and cost). Always validate experimentally for your specific task and deployment constraints.
-</Callout>
+> **warning** Avoid making decisions based on a single run, purely model-documented defaults, or user preference alone. Those approaches miss the trade-offs that matter in production (latency, memory, and cost). Always validate experimentally for your specific task and deployment constraints.
 
 The diagram below summarizes the recommended, systematic testing workflow and why it yields more reliable, actionable results than single-point or purely opinion-based choices.
 
@@ -144,6 +134,4 @@ The diagram below summarizes the recommended, systematic testing workflow and wh
   <img alt="The image features a question about determining the optimal context window size for an LLM application, with the answer suggesting a systematic approach of testing incremental window sizes and measuring performance metrics." />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/5b9d0f98-c154-480c-b223-e496f43e11bd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/5b9d0f98-c154-480c-b223-e496f43e11bd)

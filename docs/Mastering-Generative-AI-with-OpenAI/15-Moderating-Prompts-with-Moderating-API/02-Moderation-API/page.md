@@ -51,9 +51,7 @@ curl https://api.openai.com/v1/moderations \
 }
 ```
 
-<Callout icon="lightbulb">
-  Use the confidence values in `category_scores` to prioritize human review of borderline cases.
-</Callout>
+> **lightbulb** Use the confidence values in `category_scores` to prioritize human review of borderline cases.
 
 ## Integrating Moderation into Your Application Workflow
 

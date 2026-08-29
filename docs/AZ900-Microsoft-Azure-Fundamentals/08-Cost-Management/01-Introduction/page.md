@@ -45,6 +45,6 @@ Resource tags are labels that you can apply to Azure resources. They help you or
 
 > **lightbulb** Begin by examining the factors that affect your Azure costs. Understanding these elements is the first step toward optimizing your cloud spend.
 
-![The image is a slide titled "Cost Management" with a list of topics related to Azure, including factors affecting cost, Azure Marketplace, pricing calculator, TCO calculator, Azure cost management, and resource tags.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868342/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Introduction/cost-management-azure-topics.jpg)
+![The image is a slide titled "Cost Management" with a list of topics related to Azure, including factors affecting cost, Azure Marketplace, pricing calculator, TCO calculator, Azure cost management, and resource tags.](https://kodekloud.com/kk-media/image/upload/v1752868342/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Introduction/cost-management-azure-topics.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/az900-microsoft-azure-fundamentals/module/e35bb215-c8ca-410f-815d-5f59659dc9ce/lesson/019f11d2-ba50-423c-8f74-579ec6cadd6a)

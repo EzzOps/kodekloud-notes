@@ -10,7 +10,7 @@ In this article, we explore AWS versioning and lifecycle management with a prima
 
 When versioning is enabled on an S3 bucket, every time you upload a new or updated file, AWS saves it as a unique version while keeping previous versions intact. For instance, if a file is updated, the new version becomes the current one, yet the earlier version is preserved. As additional versions are added—such as a third version marked in orange—the most recent upload remains active while all prior versions are retained.
 
-![The image illustrates versioning in AWS, showing how different versions of a file are stored with unique version IDs after being uploaded.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860234/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Versioning-and-Lifecycle-Options-in-AWS-Overview/aws-versioning-file-storage-diagram.jpg)
+![The image illustrates versioning in AWS, showing how different versions of a file are stored with unique version IDs after being uploaded.](https://kodekloud.com/kk-media/image/upload/v1752860234/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Versioning-and-Lifecycle-Options-in-AWS-Overview/aws-versioning-file-storage-diagram.jpg)
 
 > **lightbulb** Enabling versioning in S3 offers significant benefits including straightforward data recovery and protection against inadvertent overwrites, while also maintaining an audit trail for every modification.
 
@@ -22,7 +22,7 @@ Versioning delivers multiple advantages:
 * Prevention of accidental or intentional overwrites.
 * Comprehensive audit trails that support compliance, especially useful when object locks are not in place.
 
-![The image outlines the benefits of versioning, highlighting data recovery, protection against overwrites, and auditing and compliance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860235/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Versioning-and-Lifecycle-Options-in-AWS-Overview/versioning-benefits-data-recovery.jpg)
+![The image outlines the benefits of versioning, highlighting data recovery, protection against overwrites, and auditing and compliance.](https://kodekloud.com/kk-media/image/upload/v1752860235/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Versioning-and-Lifecycle-Options-in-AWS-Overview/versioning-benefits-data-recovery.jpg)
 
 ## Lifecycle Management in AWS
 
@@ -32,7 +32,7 @@ For context, the standard S3 hot tier costs approximately $20 per terabyte in th
 
 Lifecycle rules also let you automate the expiration and deletion of objects, such as temporary files that only need to be retained for 30 or 60 days.
 
-![The image illustrates the lifecycle management of a file in AWS, showing its transition from Standard storage to Glacier, and finally to expiration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860236/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Versioning-and-Lifecycle-Options-in-AWS-Overview/aws-file-lifecycle-management.jpg)
+![The image illustrates the lifecycle management of a file in AWS, showing its transition from Standard storage to Glacier, and finally to expiration.](https://kodekloud.com/kk-media/image/upload/v1752860236/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Versioning-and-Lifecycle-Options-in-AWS-Overview/aws-file-lifecycle-management.jpg)
 
 > **lightbulb** Implementing lifecycle management not only reduces storage costs by transitioning infrequently accessed data to cheaper tiers but also helps maintain compliance by automatically removing outdated or temporary resources.
 

@@ -39,9 +39,7 @@ Content-Length: 118
 }
 ```
 
-<Callout icon="lightbulb">
-  The extension listens by default on port 13133. You can use this endpoint in health checks, load balancer probes, or external orchestration tools to decide rollout and restart behavior.
-</Callout>
+> **lightbulb** The extension listens by default on port 13133. You can use this endpoint in health checks, load balancer probes, or external orchestration tools to decide rollout and restart behavior.
 
 ## Kubernetes: map to liveness and readiness probes
 
@@ -97,6 +95,4 @@ External systems can poll `http://<host>:13133/` for a quick health signal and u
 * [Kubernetes Probes — Liveness and Readiness](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
 * [Docker Compose — Expose ports](https://docs.docker.com/compose/compose-file/compose-file-v3/#ports)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/c28a78c1-76d1-405d-af1a-6c458dbda94b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/c28a78c1-76d1-405d-af1a-6c458dbda94b)

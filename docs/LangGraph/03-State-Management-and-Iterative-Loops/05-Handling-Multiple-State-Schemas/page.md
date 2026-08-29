@@ -117,9 +117,7 @@ def is_search_state(state: dict) -> bool:
 
 Use guards inside routers or nodes to branch safely and avoid KeyError exceptions. You can create stricter guards that check types with `isinstance` or raise informative errors when a state is malformed.
 
-<Callout icon="lightbulb">
-  Type hints and `TypedDict`s improve clarity and tooling support. Always validate runtime assumptions with explicit guards or adapter nodes when composing independent subgraphs.
-</Callout>
+> **lightbulb** Type hints and `TypedDict`s improve clarity and tooling support. Always validate runtime assumptions with explicit guards or adapter nodes when composing independent subgraphs.
 
 Benefits of multiple schemas
 
@@ -150,6 +148,4 @@ Further reading and references
 Summary
 Treat schemas as local contracts for subgraphs and nodes. Use `TypedDict` and type hints to improve developer experience, introduce adapters to translate state between modules, and protect runtime behavior with explicit type guards. This approach keeps LangGraph workflows modular, easier to reason about, and safer to evolve over time.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/344d3bd4-df92-4548-944b-b60b8d7f0516" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/7a80b285-b366-4c4d-95d0-bce0c24aaf58/lesson/344d3bd4-df92-4548-944b-b60b8d7f0516)

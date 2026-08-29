@@ -51,7 +51,7 @@ Enhance your text-processing workflow by using `sed` to search, print, or delete
 
 To follow along, we’ll use an `employees.txt` file with records formatted as `ID|First|Last|Department|Role|Email|Salary`.
 
-![The image shows a text file named "employees.txt" containing a list of employees with details such as name, department, job title, email, and salary.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868669/notes-assets/images/Advanced-Bash-Scripting-Find/employees-list-details-text-file.jpg)
+![The image shows a text file named "employees.txt" containing a list of employees with details such as name, department, job title, email, and salary.](https://kodekloud.com/kk-media/image/upload/v1752868669/notes-assets/images/Advanced-Bash-Scripting-Find/employees-list-details-text-file.jpg)
 
 ## 1. Basic Search Syntax
 

@@ -46,9 +46,7 @@ server {
 }
 ```
 
-<Callout icon="lightbulb">
-  Best practice: configure `proxy_set_header` lines so your backend sees the original Host and client IPs, and include `proxy_ssl_server_name on;` when proxying to HTTPS backends.
-</Callout>
+> **lightbulb** Best practice: configure `proxy_set_header` lines so your backend sees the original Host and client IPs, and include `proxy_ssl_server_name on;` when proxying to HTTPS backends.
 
 ## Inflating images for the demo
 
@@ -75,9 +73,7 @@ drwxr-xr-x 5 root root 4096 Feb 17 20:31 ../
 
 After `fallocate -l 20M`, each `.jpg` reports a much larger size. This produces invalid image contents in many cases — acceptable here because we only demonstrate transfer size and compression behavior, not image fidelity.
 
-<Callout icon="warning">
-  Using `fallocate` as shown will change file contents and can corrupt images. Do this only in test/demo environments where file integrity doesn't matter.
-</Callout>
+> **warning** Using `fallocate` as shown will change file contents and can corrupt images. Do this only in test/demo environments where file integrity doesn't matter.
 
 ## Monitoring access logs
 
@@ -305,11 +301,9 @@ Additional resources:
 * NGINX gzip module: [https://nginx.org/en/docs/http/ngx\_http\_gzip\_module.html](https://nginx.org/en/docs/http/ngx_http_gzip_module.html)
 * MDN — HTTP headers: [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/ab86ef5a-e11e-439b-9dbe-6aa962facf7b" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/ab86ef5a-e11e-439b-9dbe-6aa962facf7b)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/a5e800f9-add5-4f9d-9970-e3d9dfed2b9e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/a5e800f9-add5-4f9d-9970-e3d9dfed2b9e)
 
 
 # Demo Monitoring
@@ -320,9 +314,7 @@ Guide to installing the Datadog Agent on Ubuntu EC2 and enabling NGINX stub stat
 
 In this lesson you'll install the Datadog Agent on an Ubuntu EC2 instance and enable Datadog's NGINX integration so the agent can collect system metrics (CPU, memory, disk I/O, network) and NGINX `stub_status` metrics (active connections, requests, reading/writing/waiting). You will need a Datadog account and an API key to follow along.
 
-<Callout icon="lightbulb">
-  Sign up for a [Datadog trial account](https://www.datadoghq.com/) if you don't have one. During onboarding, copy the one-line agent install command and your API key — you'll use them on your EC2 host.
-</Callout>
+> **lightbulb** Sign up for a [Datadog trial account](https://www.datadoghq.com/) if you don't have one. During onboarding, copy the one-line agent install command and your API key — you'll use them on your EC2 host.
 
 ## Prerequisites
 
@@ -517,6 +509,4 @@ That completes the Datadog Agent install and NGINX integration setup. In future 
 * [Datadog NGINX integration docs](https://docs.datadoghq.com/integrations/nginx/)
 * [NGINX stub\_status module documentation](https://nginx.org/en/docs/http/ngx_http_stub_status_module.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/c2a5f613-208c-4bab-b4b7-201c76dc566a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/4a5db5c4-df5f-4291-84f0-013d1c4ce235/lesson/c2a5f613-208c-4bab-b4b7-201c76dc566a)

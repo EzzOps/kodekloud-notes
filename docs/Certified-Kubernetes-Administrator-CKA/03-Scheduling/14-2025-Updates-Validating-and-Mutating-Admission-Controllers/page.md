@@ -54,7 +54,7 @@ Some controllers perform both mutation and validation. Typically, mutating contr
 
 > **lightbulb** If any admission controller (mutating or validating) rejects a request, the entire request is denied and an error is returned to the user.
 
-![The image depicts a diagram of Kubernetes admission controllers, showing categories like "Mutating" and "Validating," with examples such as "AlwaysPullImages" and "DefaultStorageClass."](../../../../images/kodekloud.com/kk-media/image/upload/v1752869883/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-2025-Updates-Validating-and-Mutating-Admission-Controllers/frame_140.jpg)
+![The image depicts a diagram of Kubernetes admission controllers, showing categories like "Mutating" and "Validating," with examples such as "AlwaysPullImages" and "DefaultStorageClass."](https://kodekloud.com/kk-media/image/upload/v1752869883/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-2025-Updates-Validating-and-Mutating-Admission-Controllers/frame_140.jpg)
 
 All built-in admission controllers are part of the Kubernetes source code. But for custom validations and mutations, Kubernetes supports external admission controllers using webhook mechanisms:
 

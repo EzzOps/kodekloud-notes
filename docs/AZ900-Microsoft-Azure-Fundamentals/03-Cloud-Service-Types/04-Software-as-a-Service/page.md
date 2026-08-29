@@ -12,13 +12,13 @@ When analyzing the diagram below, the distinctions among various cloud service m
 * **Platform-as-a-Service (PaaS):** Extends IaaS by also managing the operating system and development tools, enabling developers to focus on writing and pushing code without handling the underlying infrastructure.
 * **Software-as-a-Service (SaaS):** Delivers complete applications ready for use, eliminating the need for any setup related to infrastructure or platform management.
 
-![The image is a diagram illustrating the layers of cloud services: IaaS, PaaS, and SaaS, with components like servers, networking, operating systems, and applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868249/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Software-as-a-Service/cloud-services-layers-iaas-paas-saas.jpg)
+![The image is a diagram illustrating the layers of cloud services: IaaS, PaaS, and SaaS, with components like servers, networking, operating systems, and applications.](https://kodekloud.com/kk-media/image/upload/v1752868249/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Software-as-a-Service/cloud-services-layers-iaas-paas-saas.jpg)
 
 With SaaS, minimal initial setup is required. Users subscribe to the service and gain immediate access. Consider email services like Hotmail or Gmail—users do not need to manage server configurations or maintenance tasks. Similarly, streaming services like Netflix allow you to enjoy your content while the provider manages all technical details behind the scenes.
 
 For Bella Innovation, adopting a SaaS model for invoicing means purchasing or subscribing to a tailored application rather than developing and maintaining custom code internally. Other widely recognized SaaS examples include Microsoft 365 (e.g., Outlook) and popular email services such as Gmail and Hotmail. These applications enable end-users to focus on functionality rather than worrying about hosting details, patch management, or underlying operating systems.
 
-![The image illustrates the concept of "Software as a Service" (SaaS) with a cloud icon and logos of popular services like Google, Microsoft, and Netflix on a computer screen.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868250/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Software-as-a-Service/saas-cloud-icon-services-illustration.jpg)
+![The image illustrates the concept of "Software as a Service" (SaaS) with a cloud icon and logos of popular services like Google, Microsoft, and Netflix on a computer screen.](https://kodekloud.com/kk-media/image/upload/v1752868250/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Software-as-a-Service/saas-cloud-icon-services-illustration.jpg)
 
 > **lightbulb** Understanding the differences among IaaS, PaaS, and SaaS is crucial when selecting the right cloud service model for your business needs.
 

@@ -131,10 +131,6 @@ Useful references
 * [Amazon S3 (object storage)](https://aws.amazon.com/s3/)
 * [Content Delivery Networks (CDN) overview](https://en.wikipedia.org/wiki/Content_delivery_network)
 
-<Callout icon="lightbulb">
-  Round numbers and state your assumptions clearly. Interviewers are evaluating your approach and trade-offs more than any single exact number.
-</Callout>
+> **lightbulb** Round numbers and state your assumptions clearly. Interviewers are evaluating your approach and trade-offs more than any single exact number.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/7d9bce38-0967-4516-9f37-86b633ac4e22/lesson/3201dfe4-e1c7-4b53-80df-c8e08e2620aa" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/7d9bce38-0967-4516-9f37-86b633ac4e22/lesson/3201dfe4-e1c7-4b53-80df-c8e08e2620aa)

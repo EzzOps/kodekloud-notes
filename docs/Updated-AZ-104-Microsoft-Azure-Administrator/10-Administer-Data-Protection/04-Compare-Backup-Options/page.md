@@ -26,15 +26,11 @@ MABS offers a more robust set of features for advanced backup scenarios. Its ben
 
 A complete evaluation of these options covers their components, benefits, limitations, the types of items they protect, and their backup storage mechanisms. See the comparison table below for a quick visual reference:
 
-<Frame>
-  ![The image is a comparison table of Azure Backup options, detailing components, benefits, limits, what they protect, and backup storage for Azure Backup (MARS) agent and Azure Backup Server (MABS).](../../../../images/kodekloud.com/kk-media/image/upload/v1752884480/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Compare-Backup-Options/azure-backup-options-comparison-table.jpg)
-</Frame>
+![The image is a comparison table of Azure Backup options, detailing components, benefits, limits, what they protect, and backup storage for Azure Backup (MARS) agent and Azure Backup Server (MABS).](https://kodekloud.com/kk-media/image/upload/v1752884480/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Compare-Backup-Options/azure-backup-options-comparison-table.jpg)
 
 ## Limitations
 
-<Callout icon="lightbulb">
-  Review the following limitations for each solution to ensure they align with your backup strategy.
-</Callout>
+> **lightbulb** Review the following limitations for each solution to ensure they align with your backup strategy.
 
 ### MARS Agent Limitations
 
@@ -64,6 +60,4 @@ Both solutions utilize Recovery Services vaults, albeit with different storage s
 
 With these detailed insights, you now have a comprehensive understanding of how each backup option caters to different environments and requirements. Next, we'll delve into additional data protection methods, including the benefits of soft delete, to further enhance your backup strategy.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/a25ecd10-20ce-4ff9-bcc1-386c2e018b09/lesson/2c08d923-b216-4e80-bfa9-bf822eddb3f0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/a25ecd10-20ce-4ff9-bcc1-386c2e018b09/lesson/2c08d923-b216-4e80-bfa9-bf822eddb3f0)

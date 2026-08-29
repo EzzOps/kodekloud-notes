@@ -18,17 +18,13 @@ In a basic scenario, you may run a single instance of your application in a Dock
 
 When demand increases and scaling is necessary, you should deploy additional pods, each containing an instance of your application. Consider the following diagram that illustrates a Kubernetes cluster running a Python application inside a pod:
 
-<Frame>
-  ![The image illustrates a Kubernetes cluster with a pod containing a Python application, showing user interaction and node structure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880678/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Pods/frame_100.jpg)
-</Frame>
+![The image illustrates a Kubernetes cluster with a pod containing a Python application, showing user interaction and node structure.](https://kodekloud.com/kk-media/image/upload/v1752880678/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Pods/frame_100.jpg)
 
 As load increases, more pods are created on the same node or on additional nodes, ensuring efficient distribution of resources and optimal performance.
 
 Another important aspect is that pods typically maintain a one-to-one relationship with containers. To scale up, create new pods; to scale down, delete existing pods. Additional containers are not added to an existing pod for scaling purposes.
 
-<Frame>
-  ![The image illustrates a Kubernetes cluster with nodes containing pods running Python applications, highlighting one pod as inactive or failed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880680/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Pods/frame_150.jpg)
-</Frame>
+![The image illustrates a Kubernetes cluster with nodes containing pods running Python applications, highlighting one pod as inactive or failed.](https://kodekloud.com/kk-media/image/upload/v1752880680/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Pods/frame_150.jpg)
 
 ## Multi-Container Pods
 
@@ -36,13 +32,9 @@ While most pods run a single container, there are scenarios where running multip
 
 The diagram below demonstrates a multi-container pod configuration:
 
-<Frame>
-  ![The image illustrates a Kubernetes multi-container pod setup, showing two containers within a pod on a node, labeled as "Helper Containers."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880680/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Pods/frame_220.jpg)
-</Frame>
+![The image illustrates a Kubernetes multi-container pod setup, showing two containers within a pod on a node, labeled as "Helper Containers."](https://kodekloud.com/kk-media/image/upload/v1752880680/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Pods/frame_220.jpg)
 
-<Callout icon="lightbulb">
-  Containers within a pod can communicate with each other using `localhost` since they share the same network context, making inter-container communication seamless.
-</Callout>
+> **lightbulb** Containers within a pod can communicate with each other using `localhost` since they share the same network context, making inter-container communication seamless.
 
 ## Benefits of Pods Over Direct Docker Commands
 
@@ -72,9 +64,7 @@ docker run helper --link app4
 
 Managing network connectivity, shared storage, and the lifecycles of interconnected containers manually can be complex and error-prone. Pods encapsulate these responsibilities—ensuring shared networking, storage, and lifecycle management automatically without manual intervention.
 
-<Callout icon="triangle-alert">
-  Manual configurations for linking containers in Docker can lead to significant operational overhead. Pods in Kubernetes abstract these complexities, offering streamlined management and deployment.
-</Callout>
+> **triangle-alert** Manual configurations for linking containers in Docker can lead to significant operational overhead. Pods in Kubernetes abstract these complexities, offering streamlined management and deployment.
 
 ## Deploying a Pod Using kubectl
 
@@ -114,6 +104,4 @@ At this stage, note that the nginx web server is configured for internal access 
 
 Pods are fundamental to Kubernetes, encapsulating containers and simplifying scaling, deployment, and management. Whether running a single container or a multi-container setup, the pod abstraction provides a robust foundation for building scalable, resilient applications on your Kubernetes cluster.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/7f6091bd-ec84-44c7-aca5-1209db22a2a1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/7f6091bd-ec84-44c7-aca5-1209db22a2a1)

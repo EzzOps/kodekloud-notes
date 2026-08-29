@@ -56,9 +56,7 @@ No resources found.
 
 Typing long flag lists is tedious. Let’s streamline this with a kubeconfig file.
 
-<Callout icon="lightbulb">
-  By default, `kubectl` looks for `~/.kube/config`. You can override with `--kubeconfig=PATH`.
-</Callout>
+> **lightbulb** By default, `kubectl` looks for `~/.kube/config`. You can override with `--kubeconfig=PATH`.
 
 ## 3. Creating and Using a kubeconfig File
 

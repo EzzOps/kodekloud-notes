@@ -16,7 +16,7 @@ In AWS Identity and Access Management (IAM), policies are JSON documents that gr
 | Condition | Optional restrictions (time, IP address, MFA)   | `"DateLessThan": {"aws:CurrentTime":"09:00:00Z"}` |
 | Principal | Who the policy applies to (users, services)     | `"Principal":{"Service":"lambda.amazonaws.com"}`  |
 
-![The image illustrates the structure of IAM policies in JSON format, detailing components like effect, actions, resources, conditions, and principal.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862986/notes-assets/images/AWS-IAM-IAM-Policy-Building-Blocks/iam-policies-json-structure-diagram.jpg)
+![The image illustrates the structure of IAM policies in JSON format, detailing components like effect, actions, resources, conditions, and principal.](https://kodekloud.com/kk-media/image/upload/v1752862986/notes-assets/images/AWS-IAM-IAM-Policy-Building-Blocks/iam-policies-json-structure-diagram.jpg)
 
 ## Example: Resource-Based Policy with Time and IP Conditions
 

@@ -18,9 +18,7 @@ A Kubernetes cluster uses these control-plane components:
 * **Scheduler**
   * Assigns pods to nodes based on resource availability and scheduling constraints
 
-<Frame>
-  ![The image illustrates the architecture of Kubernetes Controller Manager and Scheduler, showing their roles in managing node health, pod health, and service accounts within a cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880760/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Controller-Manager-Scheduler/kubernetes-controller-manager-scheduler-architecture.jpg)
-</Frame>
+![The image illustrates the architecture of Kubernetes Controller Manager and Scheduler, showing their roles in managing node health, pod health, and service accounts within a cluster.](https://kodekloud.com/kk-media/image/upload/v1752880760/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Controller-Manager-Scheduler/kubernetes-controller-manager-scheduler-architecture.jpg)
 
 ## 1. Isolation on Dedicated Nodes
 
@@ -30,22 +28,16 @@ Running the Controller Manager and Scheduler on isolated master nodes prevents c
 * Taint master nodes to avoid scheduling regular workloads
 * Monitor and patch these nodes independently
 
-<Frame>
-  ![The image illustrates the architecture of a Kubernetes cluster, highlighting the controller manager, scheduler, and nodes with pods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880761/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Controller-Manager-Scheduler/kubernetes-cluster-architecture-diagram.jpg)
-</Frame>
+![The image illustrates the architecture of a Kubernetes cluster, highlighting the controller manager, scheduler, and nodes with pods.](https://kodekloud.com/kk-media/image/upload/v1752880761/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Controller-Manager-Scheduler/kubernetes-cluster-architecture-diagram.jpg)
 
 By isolating control-plane components:
 
 * You limit lateral movement if an application pod is breached
 * You can apply updates and security patches without impacting user workloads
 
-<Callout icon="lightbulb">
-  Use `kubectl taint nodes` and node selectors to keep control-plane pods off worker nodes.
-</Callout>
+> **lightbulb** Use `kubectl taint nodes` and node selectors to keep control-plane pods off worker nodes.
 
-<Frame>
-  ![The image illustrates a Kubernetes cluster with nodes, showing the controller manager and scheduler components, along with pods distributed across the nodes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880762/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Controller-Manager-Scheduler/kubernetes-cluster-nodes-diagram.jpg)
-</Frame>
+![The image illustrates a Kubernetes cluster with nodes, showing the controller manager and scheduler components, along with pods distributed across the nodes.](https://kodekloud.com/kk-media/image/upload/v1752880762/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Controller-Manager-Scheduler/kubernetes-cluster-nodes-diagram.jpg)
 
 ## 2. Role-Based Access Control (RBAC)
 
@@ -60,9 +52,7 @@ Adopt least-privilege RBAC policies so the Controller Manager and Scheduler only
   <img alt="The image illustrates the Kubernetes Controller Manager and Scheduler, showing how RBAC manages pod replicas, service accounts, and scheduling tasks within a cluster of nodes." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Review the [Kubernetes RBAC documentation](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) when defining your ClusterRoles and RoleBindings.
-</Callout>
+> **lightbulb** Review the [Kubernetes RBAC documentation](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) when defining your ClusterRoles and RoleBindings.
 
 ## 3. Encrypting Communications with TLS
 
@@ -72,13 +62,9 @@ Ensure all communication between the Controller Manager, Scheduler, API Server, 
 * Use a reputable Certificate Authority (CA) or [cert-manager](https://cert-manager.io/)
 * Automate certificate renewal to avoid expired credentials
 
-<Frame>
-  ![The image illustrates a Kubernetes cluster architecture, showing nodes with controller manager, scheduler, and pods, connected via SSL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880763/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Controller-Manager-Scheduler/kubernetes-cluster-architecture-diagram-2.jpg)
-</Frame>
+![The image illustrates a Kubernetes cluster architecture, showing nodes with controller manager, scheduler, and pods, connected via SSL.](https://kodekloud.com/kk-media/image/upload/v1752880763/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Controller-Manager-Scheduler/kubernetes-cluster-architecture-diagram-2.jpg)
 
-<Callout icon="triangle-alert">
-  Expired certificates can silently fail, causing control-plane outages. Implement automated alerts to track upcoming expirations.
-</Callout>
+> **triangle-alert** Expired certificates can silently fail, causing control-plane outages. Implement automated alerts to track upcoming expirations.
 
 ## 4. Audit Logging
 
@@ -104,9 +90,7 @@ Use monitoring stacks like [Prometheus](https://prometheus.io/) and [Grafana](ht
 
 ## Summary of Best Practices
 
-<Frame>
-  ![The image lists seven security practices for Kubernetes Controller Manager and Scheduler, including isolating nodes, using RBAC, encrypting communications, enabling audit logging, securing settings, running the latest version, and scanning for vulnerabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880764/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Controller-Manager-Scheduler/kubernetes-security-practices-list.jpg)
-</Frame>
+![The image lists seven security practices for Kubernetes Controller Manager and Scheduler, including isolating nodes, using RBAC, encrypting communications, enabling audit logging, securing settings, running the latest version, and scanning for vulnerabilities.](https://kodekloud.com/kk-media/image/upload/v1752880764/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Securing-Controller-Manager-Scheduler/kubernetes-security-practices-list.jpg)
 
 1. Isolate Controller Manager and Scheduler on dedicated, tainted nodes
 2. Apply least-privilege RBAC policies
@@ -124,6 +108,4 @@ Use monitoring stacks like [Prometheus](https://prometheus.io/) and [Grafana](ht
 * [Grafana Dashboards](https://grafana.com/)
 * [cert-manager](https://cert-manager.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/52d1f427-cc90-4a23-b923-31f7e7e71b8c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/52d1f427-cc90-4a23-b923-31f7e7e71b8c)

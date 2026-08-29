@@ -28,9 +28,7 @@ Prerequisites
 * Basic familiarity with Docker and PostgreSQL (or access to a managed Postgres service).
 * Access to an identity provider for configuring OIDC or SSO (e.g., Okta, Google Workspace, Azure AD).
 
-<Callout icon="lightbulb">
-  This lesson is intended for readers who already have a Backstage app set up for local development. The default development database (in-memory or SQLite) is convenient for local testing but is not suitable for production—use a managed PostgreSQL instance or an equivalent production-grade database instead.
-</Callout>
+> **lightbulb** This lesson is intended for readers who already have a Backstage app set up for local development. The default development database (in-memory or SQLite) is convenient for local testing but is not suitable for production—use a managed PostgreSQL instance or an equivalent production-grade database instead.
 
 Links and references
 
@@ -44,6 +42,4 @@ Next steps
 
 Proceed to the database migration section to replace the development DB with PostgreSQL, then configure authentication and containerization. Each step includes configuration snippets, sample Dockerfiles, and recommended production settings.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/d82fc857-4b5c-42a7-ab46-3772f749a741/lesson/10148bbb-c4d2-42f6-82d2-c677c0e1b0ea" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/d82fc857-4b5c-42a7-ab46-3772f749a741/lesson/10148bbb-c4d2-42f6-82d2-c677c0e1b0ea)

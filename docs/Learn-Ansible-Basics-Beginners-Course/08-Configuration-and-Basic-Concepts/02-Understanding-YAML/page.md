@@ -97,14 +97,10 @@ When managing data for multiple items, such as a collection of cars, the approac
 
 The diagram below compares various data structures—dictionary, list, and list of dictionaries—using car attributes like color, model, transmission, and price:
 
-<Frame>
-  ![The image compares data structures: dictionary, list, and list of dictionaries, using car attributes like color, model, transmission, and price.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881105/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Understanding-YAML/frame_420.jpg)
-</Frame>
+![The image compares data structures: dictionary, list, and list of dictionaries, using car attributes like color, model, transmission, and price.](https://kodekloud.com/kk-media/image/upload/v1752881105/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Understanding-YAML/frame_420.jpg)
 
-<Callout icon="lightbulb">
-  * A dictionary is an unordered collection, which means the sequence of key-value pairs does not impact the data's meaning. For example, the order of nutritional attributes for a fruit is irrelevant as long as the pairs are correct.
+> **lightbulb** * A dictionary is an unordered collection, which means the sequence of key-value pairs does not impact the data's meaning. For example, the order of nutritional attributes for a fruit is irrelevant as long as the pairs are correct.
   * In contrast, a list is always ordered. This means that the elements are processed in the sequence they appear.
-</Callout>
 
 Consider this simple ordered list of fruits:
 

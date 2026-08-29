@@ -16,7 +16,7 @@ DynamoDB distinguishes between two types of read operations, each with its own c
 
 When data is written to DynamoDB, it is replicated across multiple servers. Fetching data from a replica other than the one that received the write can cause temporary inconsistencies. This scenario results in an eventually consistent read. In contrast, strongly consistent reads always reflect the latest data but consume twice the RCUs.
 
-![The image compares "Strongly Consistent Read" and "Eventually Consistent Read," explaining that the former provides correct data immediately but consumes more resources, while the latter may return stale data. It includes a diagram illustrating data replication and read/write processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858787/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput/strongly-vs-eventually-consistent-read.jpg)
+![The image compares "Strongly Consistent Read" and "Eventually Consistent Read," explaining that the former provides correct data immediately but consumes more resources, while the latter may return stale data. It includes a diagram illustrating data replication and read/write processes.](https://kodekloud.com/kk-media/image/upload/v1752858787/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput/strongly-vs-eventually-consistent-read.jpg)
 
 #### Read Capacity Calculations
 
@@ -37,7 +37,7 @@ Below are examples of how to calculate RCUs for different read scenarios:
 
   RCUs required = 30 (reads/s) × (12 KB / 4 KB) = 90 RCUs.
 
-![The image provides examples of calculating Read Capacity Units (RCUs) for different scenarios involving consistent and eventually consistent reads, with varying item sizes and read frequencies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858788/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput/rcu-calculation-examples-reads.jpg)
+![The image provides examples of calculating Read Capacity Units (RCUs) for different scenarios involving consistent and eventually consistent reads, with varying item sizes and read frequencies.](https://kodekloud.com/kk-media/image/upload/v1752858788/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput/rcu-calculation-examples-reads.jpg)
 
 > **lightbulb** Exceeding the provisioned throughput for RCUs or WCUs will trigger a "ProvisionedThroughputExceededException." This often happens when there is a high frequency of operations on a single partition key, inadequate partition key distribution, or unusually large item sizes.
 
@@ -49,7 +49,7 @@ To prevent or mitigate these errors, consider the following strategies:
 * Implement exponential backoff to manage retries when requests are throttled.
 * Leverage DynamoDB Accelerator (DAX) to cache read-intensive operations, reducing the likelihood of read throttling.
 
-![The image explains the "ProvisionedThroughputExceededException" error in throttling, detailing when it occurs and providing solutions such as distributing partition keys and using exponential backoff.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858790/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput/provisioned-throughput-exceeded-exception.jpg)
+![The image explains the "ProvisionedThroughputExceededException" error in throttling, detailing when it occurs and providing solutions such as distributing partition keys and using exponential backoff.](https://kodekloud.com/kk-media/image/upload/v1752858790/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput/provisioned-throughput-exceeded-exception.jpg)
 
 ## Summary
 
@@ -65,7 +65,7 @@ For optimal performance and cost-efficiency when using provisioned mode:
 * Consider implementing exponential backoff for retries.
 * Explore DAX for caching to help manage high read loads.
 
-![The image is a summary slide about DynamoDB's capacity modes, explaining provisioned and on-demand modes, temporary burst capacity, and strategies for throttling.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858791/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput/dynamodb-capacity-modes-summary.jpg)
+![The image is a summary slide about DynamoDB's capacity modes, explaining provisioned and on-demand modes, temporary burst capacity, and strategies for throttling.](https://kodekloud.com/kk-media/image/upload/v1752858791/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Pricing-Throughput/dynamodb-capacity-modes-summary.jpg)
 
 For more detailed information, refer to the [official DynamoDB documentation](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html).
 
@@ -396,7 +396,7 @@ If everything executes correctly, check your DynamoDB table to confirm that the 
 
 ***
 
-![The image shows an Amazon DynamoDB console with a table displaying items, including columns for ID, category, inventory, name, onSale status, and price. The sidebar contains navigation options like Dashboard, Tables, and Explore items.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858792/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-SDK-Part1-Demo/dynamodb-console-table-items-navigation.jpg)
+![The image shows an Amazon DynamoDB console with a table displaying items, including columns for ID, category, inventory, name, onSale status, and price. The sidebar contains navigation options like Dashboard, Tables, and Explore items.](https://kodekloud.com/kk-media/image/upload/v1752858792/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-SDK-Part1-Demo/dynamodb-console-table-items-navigation.jpg)
 
 ***
 

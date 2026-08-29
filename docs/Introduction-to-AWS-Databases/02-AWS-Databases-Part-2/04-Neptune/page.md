@@ -25,9 +25,7 @@ Neptune Global Database
 
 Neptune supports global deployments via Neptune Global Database. You can deploy a primary Neptune cluster in one AWS Region and asynchronously replicate data to up to five secondary read-only clusters in other Regions. This provides low-latency reads around the world and enhances availability in case of regional disruptions.
 
-<Callout icon="warning">
-  Neptune Global Database secondaries are read-only. All writes must go to the primary cluster; those writes are asynchronously replicated to secondaries for read scalability and geographic distribution.
-</Callout>
+> **warning** Neptune Global Database secondaries are read-only. All writes must go to the primary cluster; those writes are asynchronously replicated to secondaries for read scalability and geographic distribution.
 
 <Frame>
   <img alt="A diagram of AWS Neptune Global Database showing a primary region (P) and multiple secondary regions (S) on a world map. A detailed schematic on the right shows a primary DB cluster (writer/reader + reader) in US West and a secondary DB cluster (readers) in US East with storage replication between them." />
@@ -43,9 +41,7 @@ Neptune ML
 
 Neptune ML applies graph neural networks (GNNs) and other graph-aware machine learning techniques to Neptune data. It automates graph feature engineering and model training, often using Amazon SageMaker, so you can build models for tasks like link prediction, node classification, or recommendations directly from your graph datasets.
 
-<Callout icon="lightbulb">
-  Neptune ML leverages GNNs to extract structure-aware features and typically uses SageMaker for training. This approach often yields better predictive accuracy on graph problems than non-graph methods.
-</Callout>
+> **lightbulb** Neptune ML leverages GNNs to extract structure-aware features and typically uses SageMaker for training. This approach often yields better predictive accuracy on graph problems than non-graph methods.
 
 <Frame>
   <img alt="A slide titled &#x22;Amazon Neptune – ML&#x22; with two rounded panels: the left highlights &#x22;Graph Neural Networks (GNNs)&#x22; with a neural circuit icon, and the right shows &#x22;Fast and Accurate Predictions&#x22; with a stopwatch/speed icon." />
@@ -109,6 +105,4 @@ Links and references
 * AWS Database Migration Service: [https://aws.amazon.com/dms/](https://aws.amazon.com/dms/)
 * AWS Backup: [https://aws.amazon.com/backup/](https://aws.amazon.com/backup/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/6b775562-0b27-41e9-93fc-bb16dab05d87/lesson/698a3428-13a2-4787-9f54-0127d218eaa1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/6b775562-0b27-41e9-93fc-bb16dab05d87/lesson/698a3428-13a2-4787-9f54-0127d218eaa1)

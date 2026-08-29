@@ -18,13 +18,9 @@ There are scenarios where creating a new App Service Plan is advantageous:
 * Switching operating systems (e.g., moving from Linux to Windows).
 * Meeting high-performance demands when your application requires more memory or processing power than your current plan supports.
 
-<Callout icon="triangle-alert">
-  Even if no applications are deployed, you are billed for the App Service Plan. Unlike VMs, stopping the service does not stop billing, so choosing the right plan is critical for cost optimization.
-</Callout>
+> **triangle-alert** Even if no applications are deployed, you are billed for the App Service Plan. Unlike VMs, stopping the service does not stop billing, so choosing the right plan is critical for cost optimization.
 
-<Frame>
-  ![The image is a diagram of app service plans, showing components like data access, applications, runtime, and operating systems, with specific mentions of .NET Core, Python, and Linux App Service Plan. It also includes considerations like compute, performance tier, and hosting multiple apps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884736/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-App-Service-Plans/app-service-plans-diagram-dotnet-python-linux.jpg)
-</Frame>
+![The image is a diagram of app service plans, showing components like data access, applications, runtime, and operating systems, with specific mentions of .NET Core, Python, and Linux App Service Plan. It also includes considerations like compute, performance tier, and hosting multiple apps.](https://kodekloud.com/kk-media/image/upload/v1752884736/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-App-Service-Plans/app-service-plans-diagram-dotnet-python-linux.jpg)
 
 ## App Service Plan Tiers
 
@@ -66,9 +62,7 @@ Azure provides multiple tiers of App Service Plans to accommodate projects rangi
   • Scale-out capability up to 100 instances\
   • Virtual Network support (deployed as an App Service Environment)
 
-<Frame>
-  ![The image shows a comparison table of app service plans, detailing features like web apps, disk space, auto scale, deployment slots, and max instances across different tiers (Free, Shared, Basic, Standard, Premium, Isolated). It also describes the compute options: Shared, Dedicated, and Isolated.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884738/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-App-Service-Plans/app-service-plans-comparison-table.jpg)
-</Frame>
+![The image shows a comparison table of app service plans, detailing features like web apps, disk space, auto scale, deployment slots, and max instances across different tiers (Free, Shared, Basic, Standard, Premium, Isolated). It also describes the compute options: Shared, Dedicated, and Isolated.](https://kodekloud.com/kk-media/image/upload/v1752884738/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-App-Service-Plans/app-service-plans-comparison-table.jpg)
 
 Choosing the right tier depends on your application's requirements, anticipated traffic, and budget.
 
@@ -85,9 +79,7 @@ Azure App Service Plans cater to diverse compute needs with three primary comput
 * **Isolated Compute:**\
   Exclusive to the Isolated tier, VMs run within a dedicated Virtual Network, providing the highest level of isolation and scaling.
 
-<Frame>
-  ![The image shows a comparison of app service plans with different pricing tiers for Dev/Test, Production, and Isolated environments, highlighting features like memory and compute time. It also includes a note about scaling up by adding more CPU, memory, disk, and features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884739/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-App-Service-Plans/app-service-plans-comparison.jpg)
-</Frame>
+![The image shows a comparison of app service plans with different pricing tiers for Dev/Test, Production, and Isolated environments, highlighting features like memory and compute time. It also includes a note about scaling up by adding more CPU, memory, disk, and features.](https://kodekloud.com/kk-media/image/upload/v1752884739/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-App-Service-Plans/app-service-plans-comparison.jpg)
 
 ## Scaling in Azure App Service Plans
 
@@ -99,9 +91,7 @@ Azure App Service Plans support two types of scaling to ensure your application 
 * **Scale Out (Horizontal Scaling):**\
   Increase the number of running instances to distribute the load across multiple servers. Autoscaling—available from the Standard tier onward—automatically adjusts instances based on metrics like CPU usage or request queues, while manual scaling is an option in the Basic tier.
 
-<Frame>
-  ![The image shows a user interface for configuring app service plans, with options for manual scaling and custom autoscaling. It includes a sidebar menu and a description of scaling methods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884740/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-App-Service-Plans/app-service-plans-ui-scaling.jpg)
-</Frame>
+![The image shows a user interface for configuring app service plans, with options for manual scaling and custom autoscaling. It includes a sidebar menu and a description of scaling methods.](https://kodekloud.com/kk-media/image/upload/v1752884740/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-App-Service-Plans/app-service-plans-ui-scaling.jpg)
 
 ## Deploying an App Service Plan in the Azure Portal
 
@@ -112,34 +102,24 @@ Follow these steps to deploy an App Service Plan using the Azure Portal:
 3. Select your subscription and create a new resource group (for example, "RG apps 01").
 4. Name your plan (e.g., "ASP 01 App Service Plan 01").
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating an App Service Plan, with fields for project details, app service plan details, and pricing tier options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884741/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-App-Service-Plans/azure-portal-app-service-plan.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating an App Service Plan, with fields for project details, app service plan details, and pricing tier options.](https://kodekloud.com/kk-media/image/upload/v1752884741/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-App-Service-Plans/azure-portal-app-service-plan.jpg)
 
 5. Choose the operating system (select Windows in this example) and click on "Explore Pricing Plans" to view available options. Two views will be presented:
    * A hardware view detailing the underlying infrastructure.
    * A feature view listing capabilities such as custom domains, autoscaling, backups, staging slots, and zone redundancy.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying various App Service pricing plans, including details like custom domain, auto scale, daily backups, and costs per hour and month.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884742/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-App-Service-Plans/azure-portal-app-service-pricing.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying various App Service pricing plans, including details like custom domain, auto scale, daily backups, and costs per hour and month.](https://kodekloud.com/kk-media/image/upload/v1752884742/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-App-Service-Plans/azure-portal-app-service-pricing.jpg)
 
 6. Select the Free tier (or another tier based on your requirements) and create the App Service Plan.
 
 Once deployed, click "Go to resource" to view an overview of your App Service Plan. At this stage, you will notice that no apps or deployment slots are configured. (Deployment slots will be discussed later.) Auto scaling options are also visible; remember that the Free tier does not support autoscaling—upgrading to the Standard tier or above will unlock autoscaling features.
 
-<Callout icon="lightbulb">
-  For the Isolated plan, note that it is deployed as an App Service Environment and requires native integration with a Virtual Network. During deployment, you must select a Virtual Network.
-</Callout>
+> **lightbulb** For the Isolated plan, note that it is deployed as an App Service Environment and requires native integration with a Virtual Network. During deployment, you must select a Virtual Network.
 
-<Frame>
-  ![The image shows an overview of an App Service plan in Microsoft Azure, displaying details like resource group, status, location, and performance metrics such as CPU and memory percentage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884744/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-App-Service-Plans/azure-app-service-plan-overview.jpg)
-</Frame>
+![The image shows an overview of an App Service plan in Microsoft Azure, displaying details like resource group, status, location, and performance metrics such as CPU and memory percentage.](https://kodekloud.com/kk-media/image/upload/v1752884744/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-App-Service-Plans/azure-app-service-plan-overview.jpg)
 
 With your App Service Plan up and running, you can now start deploying your applications. Later on, you may scale out or upgrade the plan to meet increased traffic or take advantage of advanced features.
 
 Next, we will explore how to add applications to your App Service Plan.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/c1871647-c1ec-478a-beab-b21781cec58f/lesson/17b5b4de-3570-4b78-bfb3-a3fd79ab6883" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/c1871647-c1ec-478a-beab-b21781cec58f/lesson/17b5b4de-3570-4b78-bfb3-a3fd79ab6883)

@@ -24,9 +24,7 @@ Learning objectives
 * Compare Istio at a high level with other service meshes and proxy choices.
 * Prepare for certification by meeting prerequisites and completing targeted labs.
 
-<Callout icon="lightbulb">
-  Before continuing, ensure you have a basic familiarity with Kubernetes concepts (pods, services, namespaces) and `kubectl`. These prerequisites will make the hands-on sections much more productive.
-</Callout>
+> **lightbulb** Before continuing, ensure you have a basic familiarity with Kubernetes concepts (pods, services, namespaces) and `kubectl`. These prerequisites will make the hands-on sections much more productive.
 
 What to expect in the module
 
@@ -63,6 +61,4 @@ References and further reading
 
 We have a lot to cover — let’s begin by understanding service meshes and the role of proxies.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/da4579eb-7769-4ab9-a0e8-b81f70a12978/lesson/e93e566d-e5ca-46a9-8e6a-668fd0c72fdd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/da4579eb-7769-4ab9-a0e8-b81f70a12978/lesson/e93e566d-e5ca-46a9-8e6a-668fd0c72fdd)

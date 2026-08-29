@@ -10,9 +10,7 @@ To close, here are practical lessons learned from the pre-migration phase of a D
 
 Compatibility checks are a gating factor. Confirm that every component you plan to migrate is supported by your target technology stack. Teams often run older language runtimes, unsupported OS versions, or legacy libraries that require upgrades before they can be connected to Datadog agents or integrations. Identifying these gaps early prevents schedule slips and difficult conversations with stakeholders.
 
-<Callout icon="lightbulb">
-  Before announcing timelines, run a compatibility audit across languages, frameworks, agents, and any integration points. Document components that require upgrades, replacements, or configuration changes so deadlines are realistic.
-</Callout>
+> **lightbulb** Before announcing timelines, run a compatibility audit across languages, frameworks, agents, and any integration points. Document components that require upgrades, replacements, or configuration changes so deadlines are realistic.
 
 ## 2. Confirm Datadog feature availability for your account
 
@@ -20,9 +18,7 @@ Datadog is feature-rich, but not all features are bundled into every plan. Coord
 
 At one point in my project I designed a logging solution that depended on a Datadog capability we didn’t have. When I discovered the gap, I had to revise the schedule and present a new plan to leadership—an avoidable delay.
 
-<Callout icon="warning">
-  Always validate feature availability with your account manager or procurement team before designing workstreams around specific platform features. Planning for unavailable capabilities causes rework and timeline risk.
-</Callout>
+> **warning** Always validate feature availability with your account manager or procurement team before designing workstreams around specific platform features. Planning for unavailable capabilities causes rework and timeline risk.
 
 <Frame>
   <img alt="The image presents key lessons learned regarding feature usage for Datadog, focusing on understanding package features, avoiding inaccessible features, and maintaining schedules to prevent disappointment." />
@@ -62,6 +58,4 @@ Further reading and references
 
 That's it. I hope you found it useful.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/8ad4856d-3aff-4380-b379-2445cbd30e0a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/8ad4856d-3aff-4380-b379-2445cbd30e0a)

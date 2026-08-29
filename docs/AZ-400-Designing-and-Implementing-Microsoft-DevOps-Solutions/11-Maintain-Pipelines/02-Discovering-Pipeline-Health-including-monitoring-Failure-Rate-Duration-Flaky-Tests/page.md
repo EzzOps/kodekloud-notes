@@ -8,7 +8,7 @@ Welcome to this guide on **Discovering Pipeline Health in Azure DevOps**. In mod
 
 Pipeline health monitoring means regularly tracking metrics to catch issues early, reduce failures, and accelerate feedback loops.
 
-![The image is a diagram titled "Pipeline Health Monitoring – Introduction," showing two connected boxes labeled "Automate" and "Improve," which relate to "Software development and operational processes."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868116/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/pipeline-health-monitoring-diagram.jpg)
+![The image is a diagram titled "Pipeline Health Monitoring – Introduction," showing two connected boxes labeled "Automate" and "Improve," which relate to "Software development and operational processes."](https://kodekloud.com/kk-media/image/upload/v1752868116/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/pipeline-health-monitoring-diagram.jpg)
 
 ## Key Metrics for Pipeline Health
 
@@ -40,7 +40,7 @@ $ yarn test
 
 Failure rate measures how often your builds or deployments do not succeed. A low failure rate indicates a stable pipeline, whereas a consistently high failure rate signals deeper issues.
 
-![The image shows a "Monitoring Failure Rate" slide with a pipeline failure report indicating a 3.64% pass rate, highlighting its importance in identifying problems in builds and deployments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868117/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/monitoring-failure-rate-pipeline-report.jpg)
+![The image shows a "Monitoring Failure Rate" slide with a pipeline failure report indicating a 3.64% pass rate, highlighting its importance in identifying problems in builds and deployments.](https://kodekloud.com/kk-media/image/upload/v1752868117/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/monitoring-failure-rate-pipeline-report.jpg)
 
 Common causes of high failure rates:
 
@@ -50,7 +50,7 @@ Common causes of high failure rates:
 
 > **triangle-alert** A sustained high failure rate can block releases and erode trust in your CI/CD process. Investigate immediately.
 
-![The image illustrates the concept of monitoring failure rates, showing a computer with a rising graph labeled "High failure" and a person analyzing data, indicating a need for better quality control or workflow adjustments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868118/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/monitoring-failure-rates-graph-analysis.jpg)
+![The image illustrates the concept of monitoring failure rates, showing a computer with a rising graph labeled "High failure" and a person analyzing data, indicating a need for better quality control or workflow adjustments.](https://kodekloud.com/kk-media/image/upload/v1752868118/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/monitoring-failure-rates-graph-analysis.jpg)
 
 ***
 
@@ -58,7 +58,7 @@ Common causes of high failure rates:
 
 Pipeline duration affects how quickly developers receive feedback. Long-running pipelines slow down releases and lower developer productivity.
 
-![The image illustrates "Monitoring Duration" with a person interacting with a computer screen, showing a duration of 3 hours. It highlights the time from commit to deployment, affecting update speed and response time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868120/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/monitoring-duration-person-computer-screen.jpg)
+![The image illustrates "Monitoring Duration" with a person interacting with a computer screen, showing a duration of 3 hours. It highlights the time from commit to deployment, affecting update speed and response time.](https://kodekloud.com/kk-media/image/upload/v1752868120/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/monitoring-duration-person-computer-screen.jpg)
 
 Use **Azure DevOps Analytics** to track duration and pinpoint bottlenecks:
 
@@ -66,7 +66,7 @@ Use **Azure DevOps Analytics** to track duration and pinpoint bottlenecks:
 2. Select the **Analytics** tab.
 3. Install the [Analytics extension](https://marketplace.visualstudio.com/items?itemName=ms.vss-analytics) if required.
 
-![The image is a diagram titled "Monitoring Duration" showing the impacts of prolonged durations, specifically "Delayed Feedback" and "Slower Release Cycles."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868121/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/monitoring-duration-delayed-feedback-diagram.jpg)
+![The image is a diagram titled "Monitoring Duration" showing the impacts of prolonged durations, specifically "Delayed Feedback" and "Slower Release Cycles."](https://kodekloud.com/kk-media/image/upload/v1752868121/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/monitoring-duration-delayed-feedback-diagram.jpg)
 
 ***
 
@@ -74,19 +74,19 @@ Use **Azure DevOps Analytics** to track duration and pinpoint bottlenecks:
 
 Flaky tests are those that pass or fail without code changes. They undermine confidence in your test suite and waste developer time.
 
-![The image is a slide titled "Flaky Tests" with three icons and labels: "Testing processes," "Delay deployments," and "Increase maintenance work."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868122/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/flaky-tests-testing-processes-icons.jpg)
+![The image is a slide titled "Flaky Tests" with three icons and labels: "Testing processes," "Delay deployments," and "Increase maintenance work."](https://kodekloud.com/kk-media/image/upload/v1752868122/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/flaky-tests-testing-processes-icons.jpg)
 
 ### Strategies to Handle Flaky Tests
 
 1. **Identify and Isolate**\
    Use test-history tracking in CI to flag and quarantine flaky tests.
 
-![The image outlines strategies for mitigating flakiness in tests, focusing on tracking test history and flagging and isolating flaky tests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868122/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/mitigating-flakiness-test-strategies.jpg)
+![The image outlines strategies for mitigating flakiness in tests, focusing on tracking test history and flagging and isolating flaky tests.](https://kodekloud.com/kk-media/image/upload/v1752868122/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/mitigating-flakiness-test-strategies.jpg)
 
 2. **Investigate Root Causes**\
    Examine environmental factors (databases, networks), concurrency issues, or timeouts.
 
-![The image outlines strategies for mitigating flakiness by addressing root causes such as environment issues, concurrency issues, and timing and delays. Each section provides specific actions to reduce flakiness in testing environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868124/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/mitigating-flakiness-testing-strategies.jpg)
+![The image outlines strategies for mitigating flakiness by addressing root causes such as environment issues, concurrency issues, and timing and delays. Each section provides specific actions to reduce flakiness in testing environments.](https://kodekloud.com/kk-media/image/upload/v1752868124/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/mitigating-flakiness-testing-strategies.jpg)
 
 3. **Improve Test Design**
    * Use stable test data (avoid timestamps).
@@ -96,12 +96,12 @@ Flaky tests are those that pass or fail without code changes. They undermine con
 4. **Automatic Reruns**\
    Configure retries for failed tests to distinguish real failures from flakes.
 
-![The image outlines strategies for mitigating flakiness in tests, focusing on automatic reruns and analyzing rerun results to distinguish between real bugs and flakiness.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868124/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/mitigating-flakiness-test-strategies-2.jpg)
+![The image outlines strategies for mitigating flakiness in tests, focusing on automatic reruns and analyzing rerun results to distinguish between real bugs and flakiness.](https://kodekloud.com/kk-media/image/upload/v1752868124/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/mitigating-flakiness-test-strategies-2.jpg)
 
 5. **Prioritize and Quarantine**\
    Move flaky tests into a quarantine suite and schedule regular fixes.
 
-![The image outlines strategies for mitigating flakiness in tests, focusing on prioritizing and quarantining flaky tests and allocating time for fixes. It suggests moving flaky tests to a quarantine area and regularly allocating time for developers to address these issues.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868126/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/mitigating-flakiness-in-tests-strategies.jpg)
+![The image outlines strategies for mitigating flakiness in tests, focusing on prioritizing and quarantining flaky tests and allocating time for fixes. It suggests moving flaky tests to a quarantine area and regularly allocating time for developers to address these issues.](https://kodekloud.com/kk-media/image/upload/v1752868126/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/mitigating-flakiness-in-tests-strategies.jpg)
 
 6. **Select Robust Tools**\
    Choose test frameworks and CI platforms with built-in stability and analytics.
@@ -112,7 +112,7 @@ Flaky tests are those that pass or fail without code changes. They undermine con
 
 [Azure Test Plans](https://learn.microsoft.com/en-us/azure/devops/test/overview) offers integrated test management and analytics to unify test efforts in your pipelines.
 
-![The image shows a dashboard for Azure Test Plans in CI/CD, featuring various charts and graphs displaying test execution states, test automation status, configuration coverage, and testing ownership.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868127/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/azure-test-plans-dashboard-ci-cd.jpg)
+![The image shows a dashboard for Azure Test Plans in CI/CD, featuring various charts and graphs displaying test execution states, test automation status, configuration coverage, and testing ownership.](https://kodekloud.com/kk-media/image/upload/v1752868127/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/azure-test-plans-dashboard-ci-cd.jpg)
 
 Key benefits:
 
@@ -120,11 +120,11 @@ Key benefits:
 * **Collaboration** via shared test plans and results
 * **Traceability** linking tests to builds and releases
 
-![The image illustrates the benefits of Azure Test Plans in CI/CD, highlighting integration, traceability, and collaboration with a triangular diagram.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868128/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/azure-test-plans-ci-cd-diagram.jpg)
+![The image illustrates the benefits of Azure Test Plans in CI/CD, highlighting integration, traceability, and collaboration with a triangular diagram.](https://kodekloud.com/kk-media/image/upload/v1752868128/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/azure-test-plans-ci-cd-diagram.jpg)
 
 By leveraging Azure Test Plans, teams can manage flaky tests effectively and keep CI/CD processes stable.
 
-![The image illustrates the benefits of Azure Test Plans in CI/CD, highlighting better management of flaky test challenges leading to stable and reliable CI/CD processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868129/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/azure-test-plans-cicd-benefits.jpg)
+![The image illustrates the benefits of Azure Test Plans in CI/CD, highlighting better management of flaky test challenges leading to stable and reliable CI/CD processes.](https://kodekloud.com/kk-media/image/upload/v1752868129/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/azure-test-plans-cicd-benefits.jpg)
 
 ***
 
@@ -135,7 +135,7 @@ By leveraging Azure Test Plans, teams can manage flaky tests effectively and kee
 * Optimize build scripts and test suites
 * Use Azure DevOps tools for feedback loops and ongoing improvements
 
-![The image outlines best practices for improving pipeline health, including regular monitoring, continuous improvement practices, and integrated solutions for feedback and improvement.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868131/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/pipeline-health-best-practices-diagram.jpg)
+![The image outlines best practices for improving pipeline health, including regular monitoring, continuous improvement practices, and integrated solutions for feedback and improvement.](https://kodekloud.com/kk-media/image/upload/v1752868131/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Discovering-Pipeline-Health-including-monitoring-Failure-Rate-Duration-Flaky-Tests/pipeline-health-best-practices-diagram.jpg)
 
 ***
 

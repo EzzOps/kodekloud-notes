@@ -79,16 +79,10 @@ Links and references
 * [Istio Documentation](https://istio.io/latest/docs/)
 * [Kubernetes Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 
-<Callout icon="lightbulb">
-  Practical checklist: first enforce mTLS with a `PeerAuthentication`, then layer `AuthorizationPolicy` rules to grant or deny access. Use service accounts as principals for clearer, auditable authorization bindings where appropriate.
-</Callout>
+> **lightbulb** Practical checklist: first enforce mTLS with a `PeerAuthentication`, then layer `AuthorizationPolicy` rules to grant or deny access. Use service accounts as principals for clearer, auditable authorization bindings where appropriate.
 
-<Callout icon="lightbulb">
-  Exam note: Ambient mode specifics are less likely to be heavily tested on the Istio Certified Associate exam, but you should understand differences between sidecar and ambient dataplanes and when a waypoint proxy is required for L7 enforcement. Review the Istio docs and practice hands-on; practical exercises align closely with exam topics.
-</Callout>
+> **lightbulb** Exam note: Ambient mode specifics are less likely to be heavily tested on the Istio Certified Associate exam, but you should understand differences between sidecar and ambient dataplanes and when a waypoint proxy is required for L7 enforcement. Review the Istio docs and practice hands-on; practical exercises align closely with exam topics.
 
 That concludes this section.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/43dff065-fb80-4139-a280-fa3b491ffd08" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/17ba1cac-61f4-48b6-b354-c2c735f5791d/lesson/43dff065-fb80-4139-a280-fa3b491ffd08)

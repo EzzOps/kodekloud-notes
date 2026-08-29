@@ -28,9 +28,7 @@ vault --version
 * [Helm Charts](https://github.com/hashicorp/vault-helm)
 * [APT Package Repository](https://apt.releases.hashicorp.com)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/0ab4cf0a-9e52-4d9e-b338-736d4ace8138" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/0ab4cf0a-9e52-4d9e-b338-736d4ace8138)
 
 
 # Running Vault Dev Server
@@ -41,13 +39,11 @@ This article explains how to run HashiCorp Vault in Dev Server mode for experime
 
 Now that you’ve installed HashiCorp Vault on your machine, you can start Vault in Dev Server mode. This mode launches Vault fully initialized, unsealed, and authenticated as the root user—without requiring any configuration files. Dev Server runs entirely in memory, with no TLS encryption, making it ideal for quick experimentation and development but **not** for production.
 
-<Callout icon="triangle-alert">
-  Vault Dev Server skips all security controls.
+> **triangle-alert** Vault Dev Server skips all security controls.
 
   * Data is lost when the process stops.
   * All traffic is unencrypted.\
     Never use Dev Server in a production or sensitive environment.
-</Callout>
 
 ## Dev Server Features
 
@@ -61,9 +57,7 @@ Now that you’ve installed HashiCorp Vault on your machine, you can start Vault
 | Default KV v2 Secrets Engine at `secret/` | Pre-mounted for immediate key/value operations                  |
 | Single authentication method              | Root token only; no additional auth backends enabled by default |
 
-<Frame>
-  ![The image is a slide titled "Running Vault Dev Server," listing features and warnings about using the Vault Dev Server mode, emphasizing not to use it in production.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878169/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Running-Vault-Dev-Server/running-vault-dev-server-features-warnings.jpg)
-</Frame>
+![The image is a slide titled "Running Vault Dev Server," listing features and warnings about using the Vault Dev Server mode, emphasizing not to use it in production.](https://kodekloud.com/kk-media/image/upload/v1752878169/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Running-Vault-Dev-Server/running-vault-dev-server-features-warnings.jpg)
 
 ## When to Use Dev Server
 
@@ -74,9 +68,7 @@ Vault Dev Server is perfect for:
 * Developing CI/CD integrations (e.g., with [Jenkins](https://www.jenkins.io/))
 * Exploring unfamiliar secrets engines
 
-<Frame>
-  ![The image is a slide titled "Where Would I Use Dev Server?" listing four uses: Proof of Concepts, New Development Integrations, Testing New Features of Vault, and Experimenting with Features. It includes a graphic of a triangle labeled "Dev Server Mode" and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878170/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Running-Vault-Dev-Server/dev-server-uses-proof-concepts-testing.jpg)
-</Frame>
+![The image is a slide titled "Where Would I Use Dev Server?" listing four uses: Proof of Concepts, New Development Integrations, Testing New Features of Vault, and Experimenting with Features. It includes a graphic of a triangle labeled "Dev Server Mode" and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878170/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Running-Vault-Dev-Server/dev-server-uses-proof-concepts-testing.jpg)
 
 Never run Dev Server mode in a production environment.
 
@@ -104,15 +96,13 @@ You should see output like the following:
 Root Token: s.XXXXXXXXXXXXXXXX
 ```
 
-<Callout icon="lightbulb">
-  Before running additional commands, point your shell to the Dev Server:
+> **lightbulb** Before running additional commands, point your shell to the Dev Server:
 
   ```bash theme={null}
   export VAULT_ADDR='http://127.0.0.1:8200'
   # Windows PowerShell:
   # $Env:VAULT_ADDR = "http://127.0.0.1:8200"
   ```
-</Callout>
 
 ### Verify Vault Status
 
@@ -158,6 +148,4 @@ You’re now connected to your Dev Server and ready to start issuing Vault comma
 * [HashiCorp Vault Overview](https://www.vaultproject.io/docs/concepts/overview)
 * [GitHub Repository: hashicorp/vault](https://github.com/hashicorp/vault)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/1d9f7b1a-9a85-4ff9-90b0-649285632e07" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/1d9f7b1a-9a85-4ff9-90b0-649285632e07)

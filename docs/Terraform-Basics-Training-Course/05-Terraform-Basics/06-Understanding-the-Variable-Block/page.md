@@ -142,9 +142,7 @@ variable "numbers" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  If the default values do not match the declared type, Terraform will produce an error when running `terraform plan` or `terraform apply`. For instance, using a string when a number is required will trigger an error.
-</Callout>
+> **triangle-alert** If the default values do not match the declared type, Terraform will produce an error when running `terraform plan` or `terraform apply`. For instance, using a string when a number is required will trigger an error.
 
 Similarly, you can enforce type constraints on maps:
 
@@ -274,16 +272,12 @@ variable "kitty" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Running `terraform plan` with the above configuration will generate an error indicating that the default value does not match the tuple's required type structure.
-</Callout>
+> **triangle-alert** Running `terraform plan` with the above configuration will generate an error indicating that the default value does not match the tuple's required type structure.
 
 ***
 
 That's the end of this lesson. In the next section, we will explore how to work with variable types in Terraform in greater detail. For additional resources, refer to the [Terraform Documentation](https://www.terraform.io/docs) and other related materials.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/2980bbb2-201c-455a-ba27-29ebb2ba1d03" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/2980bbb2-201c-455a-ba27-29ebb2ba1d03)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/86b22ea4-d4ba-4bda-858d-5f0f3b1fd15f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/86b22ea4-d4ba-4bda-858d-5f0f3b1fd15f)

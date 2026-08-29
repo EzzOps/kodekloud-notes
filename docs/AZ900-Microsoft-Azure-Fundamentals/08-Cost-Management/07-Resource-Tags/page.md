@@ -18,7 +18,7 @@ Much like a library catalog, you can create and assign custom tags based on your
 
 Bella Innovation experienced challenges with cost tracking until they adopted Azure Resource Tags. When using Azure Cost Analysis, you can group costs by tags for detailed budgeting and expense categorization—similar to generating a comprehensive budget report.
 
-![The image outlines the key features of Azure Resource Tags, highlighting customizable labeling, resource management, and cost allocation and reporting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868352/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Tags/azure-resource-tags-features-outline.jpg)
+![The image outlines the key features of Azure Resource Tags, highlighting customizable labeling, resource management, and cost allocation and reporting.](https://kodekloud.com/kk-media/image/upload/v1752868352/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Tags/azure-resource-tags-features-outline.jpg)
 
 ## Benefits of Using Azure Resource Tags
 
@@ -28,7 +28,7 @@ Bella Innovation experienced challenges with cost tracking until they adopted Az
 | Enhanced Cost Management | Enables detailed cost tracking and budgeting for financial clarity.                       |
 | Automation Support       | Integrates with automation rules and policies to streamline operations and reduce errors. |
 
-![The image lists the benefits of Azure Resource Tags, highlighting improved organization, enhanced cost management, and automation support.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868353/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Tags/azure-resource-tags-benefits.jpg)
+![The image lists the benefits of Azure Resource Tags, highlighting improved organization, enhanced cost management, and automation support.](https://kodekloud.com/kk-media/image/upload/v1752868353/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Tags/azure-resource-tags-benefits.jpg)
 
 ## Use Cases
 
@@ -38,7 +38,7 @@ Azure Resource Tags are ideal for:
 * Tracking resource ownership and usage during the entire lifecycle—from deployment to decommissioning.
 * Triggering automated processes based on specific tags.
 
-![The image outlines three use cases for Azure Resource Tags: resource categorization for billing, ownership and usage tracking, and automating resource lifecycle.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868355/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Tags/azure-resource-tags-use-cases.jpg)
+![The image outlines three use cases for Azure Resource Tags: resource categorization for billing, ownership and usage tracking, and automating resource lifecycle.](https://kodekloud.com/kk-media/image/upload/v1752868355/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Tags/azure-resource-tags-use-cases.jpg)
 
 Azure Policy can further automate tagging and enforce compliance rules. Future discussions will cover governance strategies related to tagging.
 
@@ -69,11 +69,11 @@ Below is a step-by-step guide to applying resource tags through the Azure Portal
 5. **Cost Analysis Example:**\
    In Azure Cost Analysis, filter costs by tags to group and display associated expenses. For example, selecting the "department: HR" tag will show costs related only to HR-tagged resources.
 
-![The image shows a Microsoft Azure cost analysis dashboard with a graph displaying accumulated and forecasted costs over time, along with pie charts detailing costs by service, location, and resource group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868356/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Tags/azure-cost-analysis-dashboard.jpg)
+![The image shows a Microsoft Azure cost analysis dashboard with a graph displaying accumulated and forecasted costs over time, along with pie charts detailing costs by service, location, and resource group.](https://kodekloud.com/kk-media/image/upload/v1752868356/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Tags/azure-cost-analysis-dashboard.jpg)
 
 By implementing resource tags, you can effectively create a cost center model that distributes cloud expenses based on the relevant tags configured in the Azure Portal.
 
-![The image shows a Microsoft Azure portal page displaying resources tagged with "Dept: HR." It lists two resources: a container instance and a storage account, both located in the East US region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868357/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Tags/azure-portal-hr-resources-eastus.jpg)
+![The image shows a Microsoft Azure portal page displaying resources tagged with "Dept: HR." It lists two resources: a container instance and a storage account, both located in the East US region.](https://kodekloud.com/kk-media/image/upload/v1752868357/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Resource-Tags/azure-portal-hr-resources-eastus.jpg)
 
 ## Conclusion
 

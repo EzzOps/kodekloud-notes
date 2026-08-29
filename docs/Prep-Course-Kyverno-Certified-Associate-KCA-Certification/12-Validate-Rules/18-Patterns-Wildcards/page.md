@@ -73,9 +73,7 @@ rules:
 
 This pattern ensures `spec.template.metadata.labels.app` exists on the Deployment and that its value is not empty.
 
-<Callout icon="lightbulb">
-  If you want to validate Pods directly, use the container path for Pods: `spec.containers` instead of `spec.template.spec.containers`. Always adjust the pattern path to match the resource type being validated.
-</Callout>
+> **lightbulb** If you want to validate Pods directly, use the container path for Pods: `spec.containers` instead of `spec.template.spec.containers`. Always adjust the pattern path to match the resource type being validated.
 
 ## Practical security example: require resources for every container
 
@@ -126,6 +124,4 @@ Notes on this pattern:
 * [Kubernetes labels and selectors](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
 * [Kubernetes resource management (requests & limits)](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/af2a7afc-46a1-4af4-8ffb-2c28ba0efe59" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/af2a7afc-46a1-4af4-8ffb-2c28ba0efe59)

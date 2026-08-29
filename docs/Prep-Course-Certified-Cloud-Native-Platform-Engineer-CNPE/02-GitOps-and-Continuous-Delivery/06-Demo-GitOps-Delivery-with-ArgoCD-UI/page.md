@@ -12,9 +12,7 @@ Argo CD is a popular GitOps continuous delivery tool. In GitOps you declare the 
 * Network access to the Argo CD server UI.
 * For this demo we used the `admin` user with password `admin123` (replace with your secure password in real environments).
 
-<Callout icon="lightbulb">
-  Use a secure admin password in production. You can create dedicated Argo CD users or integrate SSO instead of reusing the `admin` account.
-</Callout>
+> **lightbulb** Use a secure admin password in production. You can create dedicated Argo CD users or integrate SSO instead of reusing the `admin` account.
 
 ## 1. Verify Argo CD pods
 
@@ -176,9 +174,7 @@ You should see the number of pods matching the value you set (for example, two p
   <img alt="The image shows a dashboard from Argo CD displaying the status of a &#x22;web-backend&#x22; application, with its health marked as &#x22;Healthy&#x22; and sync status as &#x22;Synced.&#x22; It includes a flow diagram depicting the components and relationships within the application architecture." />
 </Frame>
 
-<Callout icon="warning">
-  When enabling Automatic sync, Argo CD will immediately reconcile any divergence. Use automatic sync for production only if you’ve validated the repo and policies; otherwise keep Manual sync while testing.
-</Callout>
+> **warning** When enabling Automatic sync, Argo CD will immediately reconcile any divergence. Use automatic sync for production only if you’ve validated the repo and policies; otherwise keep Manual sync while testing.
 
 ## Quick reference: Commands & concepts
 
@@ -198,6 +194,4 @@ You should see the number of pods matching the value you set (for example, two p
 
 This overview demonstrated creating applications from plain manifests and Helm charts, inspecting resource diffs, syncing, and observing Argo CD reconciliation behavior. Next you can explore automating Argo CD via the CLI and managing applications using `argocd` commands and ApplicationSets.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/e3b88945-2390-4aad-9959-16c8512e6322" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/e3b88945-2390-4aad-9959-16c8512e6322)

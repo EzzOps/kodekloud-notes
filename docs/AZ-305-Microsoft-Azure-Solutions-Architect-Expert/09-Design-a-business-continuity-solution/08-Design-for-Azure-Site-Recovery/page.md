@@ -17,13 +17,13 @@ Imagine you have a set of VMs running in East US. With ASR, these machines can b
 
 The diagram below illustrates the fundamental concept of replicating VMs from East US to West US:
 
-![The image illustrates Azure Site Recovery, showing disaster recovery processes between East US and West US regions, with steps for BCDR, migration, and replication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866820/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Site-Recovery/azure-site-recovery-bcdr-diagram.jpg)
+![The image illustrates Azure Site Recovery, showing disaster recovery processes between East US and West US regions, with steps for BCDR, migration, and replication.](https://kodekloud.com/kk-media/image/upload/v1752866820/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Site-Recovery/azure-site-recovery-bcdr-diagram.jpg)
 
 ## Configuring ASR in the Azure Portal
 
 Setting up ASR involves using a Recovery Services Vault in the Azure Portal, which supports both backup and site recovery operations.
 
-![The image shows the Microsoft Azure portal interface, displaying various Azure services and a list of recent resources with their types and last viewed times.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866822/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Site-Recovery/azure-portal-interface-services-list.jpg)
+![The image shows the Microsoft Azure portal interface, displaying various Azure services and a list of recent resources with their types and last viewed times.](https://kodekloud.com/kk-media/image/upload/v1752866822/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Site-Recovery/azure-portal-interface-services-list.jpg)
 
 ### Steps to Enable Replication
 
@@ -33,7 +33,7 @@ Setting up ASR involves using a Recovery Services Vault in the Azure Portal, whi
 2. **Select Enable Replication**\
    Click on **"Enable Replication"** to start replicating your Azure Virtual Machine or other supported infrastructures (e.g., VMware, Hyper-V, AWS, or GCP environments).
 
-![The image is a screenshot of the Microsoft Azure portal, specifically the Site Recovery section, showing options for protecting infrastructure for disaster recovery with Azure virtual machines, VMware machines, and Hyper-V machines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866823/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Site-Recovery/azure-site-recovery-disaster-recovery.jpg)
+![The image is a screenshot of the Microsoft Azure portal, specifically the Site Recovery section, showing options for protecting infrastructure for disaster recovery with Azure virtual machines, VMware machines, and Hyper-V machines.](https://kodekloud.com/kk-media/image/upload/v1752866823/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Site-Recovery/azure-site-recovery-disaster-recovery.jpg)
 
 3. **Configure Source and Target Details**
    * Verify that the VM is located in East US.
@@ -49,19 +49,19 @@ Setting up ASR involves using a Recovery Services Vault in the Azure Portal, whi
    * **Failover Network:** Specify the correct network for failover
    * **Failover Subnet:** Choose or configure the subnet for the VM in the target region
 
-![The image shows a Microsoft Azure portal screen for enabling replication settings in Site Recovery, with options for location, resource group, network, storage, and availability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866825/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Site-Recovery/azure-portal-replication-settings.jpg)
+![The image shows a Microsoft Azure portal screen for enabling replication settings in Site Recovery, with options for location, resource group, network, storage, and availability.](https://kodekloud.com/kk-media/image/upload/v1752866825/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Site-Recovery/azure-portal-replication-settings.jpg)
 
 > **lightbulb** If you do not specify names for target resources, Azure will automatically append an "ASR" suffix to source resource names.
 
 5. **Configure Retention Policies and Extensions**\
    Before finalizing, set up the retention policies and any extension settings. By clicking **"Enable Replication"**, the process starts replicating your VM’s disks from East US to West US. Note that several background resources will be provisioned during this process, which may take some time.
 
-![The image shows a Microsoft Azure interface for enabling replication, with options to set a replication policy, manage replication groups, and configure extension settings. The user is on the "Manage" step of the process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866826/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Site-Recovery/azure-replication-interface-manage.jpg)
+![The image shows a Microsoft Azure interface for enabling replication, with options to set a replication policy, manage replication groups, and configure extension settings. The user is on the "Manage" step of the process.](https://kodekloud.com/kk-media/image/upload/v1752866826/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Site-Recovery/azure-replication-interface-manage.jpg)
 
 6. **Monitor Replication Progress**\
    After initiating replication, monitor the process to track the creation of resources, restore points, and policy applications. Review the summary of replication settings and target resources:
 
-![The image shows a Microsoft Azure interface for enabling replication in a site recovery service. It includes a summary of settings such as region, subscription, and virtual machine details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866828/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Site-Recovery/azure-replication-site-recovery-interface.jpg)
+![The image shows a Microsoft Azure interface for enabling replication in a site recovery service. It includes a summary of settings such as region, subscription, and virtual machine details.](https://kodekloud.com/kk-media/image/upload/v1752866828/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Site-Recovery/azure-replication-site-recovery-interface.jpg)
 
 Additionally, a cache storage account is created in the source region to store data temporarily before it is transferred.
 
@@ -73,13 +73,13 @@ Test and manual failovers are initiated via the Recovery Services Vault. Keep in
 
 Once synchronization is complete and the status is displayed as "protected," you can perform a failover, which creates a new VM in West US. The diagram below displays the replication status and monitoring details for a VM:
 
-![The image shows a Microsoft Azure portal interface displaying the replication status of a virtual machine named "sde-vm-01," indicating a healthy replication status and no errors. It includes details about failover readiness, configuration issues, and agent status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866829/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Site-Recovery/azure-portal-sde-vm-replication-status.jpg)
+![The image shows a Microsoft Azure portal interface displaying the replication status of a virtual machine named "sde-vm-01," indicating a healthy replication status and no errors. It includes details about failover readiness, configuration issues, and agent status.](https://kodekloud.com/kk-media/image/upload/v1752866829/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Site-Recovery/azure-portal-sde-vm-replication-status.jpg)
 
 The current Recovery Point Objective (RPO) is two minutes. Failovers can be executed manually via the portal or automated using Azure Monitor and automation runbooks. Once failover is initiated, note that synchronization is not automatically reversed when the primary region (East US) recovers. You must manually replicate the VM back to East US and trigger resynchronization.
 
 Another view of the replication jobs is available here:
 
-![The image shows a Microsoft Azure portal page displaying "Site Recovery jobs" with two entries: one for creating a site, which is in progress, and another for creating a replication policy, which is successful.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866830/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Site-Recovery/azure-portal-site-recovery-jobs.jpg)
+![The image shows a Microsoft Azure portal page displaying "Site Recovery jobs" with two entries: one for creating a site, which is in progress, and another for creating a replication policy, which is successful.](https://kodekloud.com/kk-media/image/upload/v1752866830/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Site-Recovery/azure-portal-site-recovery-jobs.jpg)
 
 ## Combining ASR with Azure Backup
 
@@ -94,7 +94,7 @@ For on-premises environments hosting multiple VMs, it is common to deploy two ke
 
 The following diagram illustrates the integration of ASR with Azure Backup:
 
-![The image is a diagram illustrating the integration of ASR (Azure Site Recovery) and Azure Backup, showing data flow between on-premises systems and a Recovery Services Vault in the cloud. It includes components like backup agents, ASR mobility agents, and a cloud vault for disaster recovery.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866832/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Site-Recovery/asr-azure-backup-integration-diagram.jpg)
+![The image is a diagram illustrating the integration of ASR (Azure Site Recovery) and Azure Backup, showing data flow between on-premises systems and a Recovery Services Vault in the cloud. It includes components like backup agents, ASR mobility agents, and a cloud vault for disaster recovery.](https://kodekloud.com/kk-media/image/upload/v1752866832/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Site-Recovery/asr-azure-backup-integration-diagram.jpg)
 
 ## Conclusion
 

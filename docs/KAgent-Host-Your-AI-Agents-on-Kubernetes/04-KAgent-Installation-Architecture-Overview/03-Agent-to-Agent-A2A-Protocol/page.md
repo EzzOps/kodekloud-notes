@@ -6,9 +6,7 @@ Explains A2A, an open standard enabling secure, discoverable, interoperable agen
 
 Welcome—this lesson explains the A2A protocol: an open standard for secure, discoverable, and interoperable agent-to-agent communication. You’ll learn why A2A exists, the problems it solves in multi-agent systems, and the practical benefits for building AI agents that collaborate reliably across frameworks and vendors.
 
-<Callout icon="lightbulb">
-  A2A (Agent-to-Agent) is a protocol designed to make multi-agent collaboration predictable and secure by standardizing discovery, invocation, data exchange, and long-running interactions between agents.
-</Callout>
+> **lightbulb** A2A (Agent-to-Agent) is a protocol designed to make multi-agent collaboration predictable and secure by standardizing discovery, invocation, data exchange, and long-running interactions between agents.
 
 <Frame>
   <img alt="A diagram showing two friendly robot &#x22;agents&#x22; linked by a central box labeled &#x22;A2A Protocol — An open standard for agent-to-agent communication.&#x22; Below are three colored blocks labeled Developers, Frameworks, and Organizations." />
@@ -43,9 +41,7 @@ At its core, A2A solves the practical challenges of enabling multiple specialize
 
 * Security gaps: Inconsistent security practices cause risks in inter-agent calls. A2A prescribes security primitives (TLS/HTTPS, authentication, scoped disclosures) so agents can trust one another and limit exposure of sensitive data.
 
-<Callout icon="warning">
-  Security is a first-class concern in A2A. Implement TLS, mutual auth where appropriate, and fine-grained scopes to limit the data and capabilities shared between agents.
-</Callout>
+> **warning** Security is a first-class concern in A2A. Implement TLS, mutual auth where appropriate, and fine-grained scopes to limit the data and capabilities shared between agents.
 
 ## Problems → A2A Solutions (at a glance)
 
@@ -104,6 +100,4 @@ Adopting A2A reduces integration overhead, increases interoperability, preserves
 * [LangChain course reference](https://learn.kodekloud.com/user/courses/langchain)
 * [Kubernetes Documentation](https://kubernetes.io/docs/) (for deploying agent runtimes and orchestration)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/c082bfab-3205-43f4-9863-07820b8a5f3b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/c082bfab-3205-43f4-9863-07820b8a5f3b)

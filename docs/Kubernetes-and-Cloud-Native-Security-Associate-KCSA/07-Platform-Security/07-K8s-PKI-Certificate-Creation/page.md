@@ -6,11 +6,9 @@ Generate TLS certificates for securing a Kubernetes cluster using OpenSSL, inclu
 
 Secure your Kubernetes cluster by generating TLS certificates using OpenSSL. This guide walks through creating a root Certificate Authority (CA), issuing client certificates for users and system components, and setting up server certificates for etcd, the API server, and kubelet nodes.
 
-<Callout icon="lightbulb">
-  * Ensure OpenSSL is installed (`openssl version`).
+> **lightbulb** * Ensure OpenSSL is installed (`openssl version`).
   * Work in a secure directory with strict file permissions.
   * Replace placeholder IPs, hostnames, and node names to match your environment.
-</Callout>
 
 ## Certificate Overview
 
@@ -26,9 +24,7 @@ Secure your Kubernetes cluster by generating TLS certificates using OpenSSL. Thi
 
 Protect your CA private key at all costs—this key signs every other certificate in your cluster.
 
-<Callout icon="triangle-alert">
-  Protect `ca.key` securely. If compromised, all cluster certificates become untrusted.
-</Callout>
+> **triangle-alert** Protect `ca.key` securely. If compromised, all cluster certificates become untrusted.
 
 ```bash theme={null}
 openssl genrsa -out ca.key 2048
@@ -71,9 +67,7 @@ Repeat the process for each Kubernetes control-plane component:
 * kube-controller-manager
 * kube-proxy
 
-<Frame>
-  ![The image shows a certificate for "Kube Scheduler" with related icons and text about generating keys, certificate signing requests, and signing certificates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880884/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-K8s-PKI-Certificate-Creation/kube-scheduler-certificate-signing-keys.jpg)
-</Frame>
+![The image shows a certificate for "Kube Scheduler" with related icons and text about generating keys, certificate signing requests, and signing certificates.](https://kodekloud.com/kk-media/image/upload/v1752880884/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-K8s-PKI-Certificate-Creation/kube-scheduler-certificate-signing-keys.jpg)
 
 Each CSR’s CN must be prefixed with `system:` (e.g., `/CN=system:kube-scheduler`).
 
@@ -121,9 +115,7 @@ Most Kubernetes clients leverage `kubeconfig` to manage certificates and endpoin
 
 All Kubernetes servers must trust the CA root (`ca.crt`) and present valid certificates signed by it.
 
-<Frame>
-  ![The image is a diagram showing the organization of client and server certificates for Kubernetes components, including keys and certificates for various services like kube-scheduler, kube-controller-manager, and kubelet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880886/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-K8s-PKI-Certificate-Creation/kubernetes-client-server-certificates-diagram.jpg)
-</Frame>
+![The image is a diagram showing the organization of client and server certificates for Kubernetes components, including keys and certificates for various services like kube-scheduler, kube-controller-manager, and kubelet.](https://kodekloud.com/kk-media/image/upload/v1752880886/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-K8s-PKI-Certificate-Creation/kubernetes-client-server-certificates-diagram.jpg)
 
 ### 4.1 etcd Server and Peers
 

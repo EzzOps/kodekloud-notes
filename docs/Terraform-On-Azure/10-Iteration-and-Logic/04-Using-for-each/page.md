@@ -96,9 +96,7 @@ Comparison at a glance
 | Changing size  | Removes highest indices first; middle removals are complex | Removing a key removes that specific instance without shifting others  |
 | Best use case  |       Short-lived or ephemeral infrastructure, quick demos | Long-lived infra where individual resource identity must remain stable |
 
-<Callout icon="warning">
-  Avoid using `count` for resources where instance identity must remain stable across reorders, removals, or updates. Prefer `for_each` when you need deterministic, key-based identities for individual instances.
-</Callout>
+> **warning** Avoid using `count` for resources where instance identity must remain stable across reorders, removals, or updates. Prefer `for_each` when you need deterministic, key-based identities for individual instances.
 
 Summary
 
@@ -112,9 +110,7 @@ Links and references
 * Official Terraform docs: [https://www.terraform.io/docs](https://www.terraform.io/docs)
 * `for_each` vs `count` guidance: [https://www.terraform.io/docs/language/meta-arguments/count.html](https://www.terraform.io/docs/language/meta-arguments/count.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/fb5019bb-df21-4583-818e-6dae40fde2ec/lesson/7200843c-0c99-4508-95e2-14e9dac71d63" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/fb5019bb-df21-4583-818e-6dae40fde2ec/lesson/7200843c-0c99-4508-95e2-14e9dac71d63)
 
 
 # Using for each
@@ -158,9 +154,7 @@ Key notes about this example:
 
 Because `for_each` uses meaningful keys rather than numeric indexes, Terraform state does not shift when you add or remove other items. This makes `for_each` far safer than `count` in many production scenarios.
 
-<Callout icon="lightbulb">
-  Prefer `for_each` when each resource has a meaningful identifier (name, subnet ID, DNS name, etc.). Use `count` only for N identical resources where individual identity or lifecycle does not matter.
-</Callout>
+> **lightbulb** Prefer `for_each` when each resource has a meaningful identifier (name, subnet ID, DNS name, etc.). Use `count` only for N identical resources where individual identity or lifecycle does not matter.
 
 Why index-based `count` is brittle
 

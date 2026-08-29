@@ -19,7 +19,7 @@ Azure offers several native solutions to define, monitor, and enforce your desir
 * **Azure Automation Desired State Configuration (DSC)**: Comprehensive machine configuration management.
 * **Azure Policy**: Lightweight governance and compliance enforcement.
 
-![The image is a comparison table of configuration management technologies for application infrastructure, specifically contrasting Azure Automation State Configuration and Azure Policy across various features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867736/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/configuration-management-azure-comparison-table.jpg)
+![The image is a comparison table of configuration management technologies for application infrastructure, specifically contrasting Azure Automation State Configuration and Azure Policy across various features.](https://kodekloud.com/kk-media/image/upload/v1752867736/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/configuration-management-azure-comparison-table.jpg)
 
 > **triangle-alert** Misconfiguring Azure Policy assignments can block resource provisioning. Always test policies in non-production scopes first.
 
@@ -33,7 +33,7 @@ Integrating these practices helps maintain a secure, compliant Azure environment
 * Conduct **regular audits** to detect drift and unauthorized changes
 * Continuously refine your processes to adapt to new compliance standards
 
-![The image is a slide titled "Exploring Configuration Management Technology for Application Infrastructure," featuring two points: "Version control integration" and "Regular audits," each with brief descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867737/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/exploring-configuration-management-technology-slide.jpg)
+![The image is a slide titled "Exploring Configuration Management Technology for Application Infrastructure," featuring two points: "Version control integration" and "Regular audits," each with brief descriptions.](https://kodekloud.com/kk-media/image/upload/v1752867737/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/exploring-configuration-management-technology-slide.jpg)
 
 ## Desired State Configuration (DSC) and Related Tools
 
@@ -43,7 +43,7 @@ Azure Automation DSC lets you declare and enforce the state of your VM configura
 * **Bicep**: A concise DSL that simplifies authoring and maintaining ARM templates.
 * **Azure Automanage Machine Configuration**: Automates best practices and configuration across Azure VMs.
 
-![The image is a slide titled "Design and Implementation of Desired State Configuration (DSC) for Environments," listing configuration management tools such as Azure Automation State Configuration, Azure Resource Manager, Bicep, and Azure Automanage Machine Configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867739/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/design-implementation-desired-state-configuration.jpg)
+![The image is a slide titled "Design and Implementation of Desired State Configuration (DSC) for Environments," listing configuration management tools such as Azure Automation State Configuration, Azure Resource Manager, Bicep, and Azure Automanage Machine Configuration.](https://kodekloud.com/kk-media/image/upload/v1752867739/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/design-implementation-desired-state-configuration.jpg)
 
 | Tool                                   | Purpose                         | Documentation                                                                                |
 | -------------------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------- |
@@ -64,7 +64,7 @@ Implement a scalable IaC approach to manage Azure resources through versioned co
 3. **Deployment Automation**
    * Provision resources reliably with **Terraform**, **ARM**, or **Bicep** at scale.
 
-![The image outlines a strategy for Infrastructure as Code (IaC), including introduction, source control, testing automation, and deployment automation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867740/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/iac-strategy-source-control-testing-deployment.jpg)
+![The image outlines a strategy for Infrastructure as Code (IaC), including introduction, source control, testing automation, and deployment automation.](https://kodekloud.com/kk-media/image/upload/v1752867740/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/iac-strategy-source-control-testing-deployment.jpg)
 
 | Step            | Description                                      | Tooling                             |
 | --------------- | ------------------------------------------------ | ----------------------------------- |
@@ -88,7 +88,7 @@ Designing multiple deployment stages and release strategies helps minimize risk 
 * **Deployment Strategies**: Implement **Blue/Green**, **Canary**, or **A/B testing** for controlled rollouts.
 * **Monitoring & Maintenance**: Leverage **Azure Monitor** and **Application Insights** for real-time telemetry and alerts.
 
-![The image is a presentation slide titled "Design and Implementation of Azure Deployment Environments for On-Demand Self-Deployment," listing four topics related to Azure deployment strategies and maintenance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867741/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/azure-deployment-environments-presentation-slide.jpg)
+![The image is a presentation slide titled "Design and Implementation of Azure Deployment Environments for On-Demand Self-Deployment," listing four topics related to Azure deployment strategies and maintenance.](https://kodekloud.com/kk-media/image/upload/v1752867741/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/azure-deployment-environments-presentation-slide.jpg)
 
 ***
 

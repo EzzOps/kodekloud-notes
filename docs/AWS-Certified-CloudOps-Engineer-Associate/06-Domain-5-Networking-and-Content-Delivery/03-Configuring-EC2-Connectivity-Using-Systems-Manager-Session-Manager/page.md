@@ -12,11 +12,11 @@ AWS Systems Manager simplifies operational tasks by allowing you to install an S
 
 Systems Manager is designed to address the challenges of managing diverse environments, including AWS cloud instances, on-premises servers, and even IoT devices. Its core capabilities include patch management, configuration management via the Parameter Store, and maintenance windows. Among these, Session Manager provides a secure method to connect to your instances without needing bastion hosts or managing SSH keys.
 
-![The image is a diagram of a Systems Manager, showing various management tools like Inventory, Patch Manager, and Incident Manager, connected to different environments such as AWS, data centers, and IoT fleets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860795/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EC2-Connectivity-Using-Systems-Manager-Session-Manager/systems-manager-management-tools-diagram.jpg)
+![The image is a diagram of a Systems Manager, showing various management tools like Inventory, Patch Manager, and Incident Manager, connected to different environments such as AWS, data centers, and IoT fleets.](https://kodekloud.com/kk-media/image/upload/v1752860795/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EC2-Connectivity-Using-Systems-Manager-Session-Manager/systems-manager-management-tools-diagram.jpg)
 
 By starting a Session Manager session, you can directly connect to your instances without opening additional ports. This method works seamlessly with both public and private subnets.
 
-![The image is a diagram illustrating the flow of AWS Systems Manager's Session Manager, showing interactions between a user, AWS Systems Manager, and an SSM Agent.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860796/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EC2-Connectivity-Using-Systems-Manager-Session-Manager/aws-systems-manager-session-manager-diagram.jpg)
+![The image is a diagram illustrating the flow of AWS Systems Manager's Session Manager, showing interactions between a user, AWS Systems Manager, and an SSM Agent.](https://kodekloud.com/kk-media/image/upload/v1752860796/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EC2-Connectivity-Using-Systems-Manager-Session-Manager/aws-systems-manager-session-manager-diagram.jpg)
 
 ## How It Works
 
@@ -31,11 +31,11 @@ The process of configuring Session Manager involves the following key steps:
 3. **Network Connectivity**\
    Your instance must have outbound HTTPS access (port 443) to AWS endpoints, such as ec2messages.region.amazonaws.com. This connectivity can be established either directly or via a private interface endpoint for secure interactions.
 
-![The image illustrates the architecture of an AWS Session Manager setup, showing the interaction between AWS General Users, AWS Systems Manager, and components within a Virtual Private Cloud (VPC) such as EC2 instances and S3 buckets. It highlights the flow of creating sessions and viewing logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860799/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EC2-Connectivity-Using-Systems-Manager-Session-Manager/aws-session-manager-architecture-diagram.jpg)
+![The image illustrates the architecture of an AWS Session Manager setup, showing the interaction between AWS General Users, AWS Systems Manager, and components within a Virtual Private Cloud (VPC) such as EC2 instances and S3 buckets. It highlights the flow of creating sessions and viewing logs.](https://kodekloud.com/kk-media/image/upload/v1752860799/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EC2-Connectivity-Using-Systems-Manager-Session-Manager/aws-session-manager-architecture-diagram.jpg)
 
 Additionally, Session Manager allows logging of sessions to Amazon S3 or CloudWatch Logs for auditing. It also supports configurable session preferences such as default usernames, session timeout policies, and environment variables.
 
-![The image outlines the prerequisites for using Session Manager, including supported operating systems like Linux, macOS, and Windows, and the required SSM Agent version.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860799/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EC2-Connectivity-Using-Systems-Manager-Session-Manager/session-manager-prerequisites-ssm-agent.jpg)
+![The image outlines the prerequisites for using Session Manager, including supported operating systems like Linux, macOS, and Windows, and the required SSM Agent version.](https://kodekloud.com/kk-media/image/upload/v1752860799/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EC2-Connectivity-Using-Systems-Manager-Session-Manager/session-manager-prerequisites-ssm-agent.jpg)
 
 ## Supported Operating Systems
 
@@ -51,11 +51,11 @@ Session Manager supports a variety of operating systems, including:
 
 Once the SSM Agent is installed and the instance possesses the appropriate IAM role and network configuration, you are ready to establish a session. You can initiate a Session Manager session either through the AWS Management Console or via the AWS CLI, connecting over HTTPS on port 443. This setup ensures that even instances in private subnets are managed securely.
 
-![The image is about network connectivity, indicating that managed nodes need outbound HTTPS (port 443) to AWS endpoints, specifically to "ec2messages.region.amazonaws.com".](../../../../images/kodekloud.com/kk-media/image/upload/v1752860800/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EC2-Connectivity-Using-Systems-Manager-Session-Manager/network-connectivity-https-aws-endpoints.jpg)
+![The image is about network connectivity, indicating that managed nodes need outbound HTTPS (port 443) to AWS endpoints, specifically to "ec2messages.region.amazonaws.com".](https://kodekloud.com/kk-media/image/upload/v1752860800/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EC2-Connectivity-Using-Systems-Manager-Session-Manager/network-connectivity-https-aws-endpoints.jpg)
 
 Ensure that your instance's IAM role includes the AmazonSSMManagedInstanceCore policy so that it can securely communicate with AWS Systems Manager.
 
-![The image illustrates the process of verifying or adding instance permissions in AWS, showing the relationship between a VPC, private subnet, security group, SSM Agent, and AWS Systems Manager. It also includes a role and policy for AmazonSSMManagedInstanceCore.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860802/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EC2-Connectivity-Using-Systems-Manager-Session-Manager/aws-instance-permissions-diagram.jpg)
+![The image illustrates the process of verifying or adding instance permissions in AWS, showing the relationship between a VPC, private subnet, security group, SSM Agent, and AWS Systems Manager. It also includes a role and policy for AmazonSSMManagedInstanceCore.](https://kodekloud.com/kk-media/image/upload/v1752860802/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EC2-Connectivity-Using-Systems-Manager-Session-Manager/aws-instance-permissions-diagram.jpg)
 
 ## Managing Session Access
 
@@ -67,9 +67,9 @@ Session Manager also provides fine-grained control over user sessions. As an adm
 * Session timeout durations
 * Working directories and environment variables
 
-![The image illustrates the concept of granting or revoking session access, showing user/group connections to instances and allowed Session Manager API operations like closing, creating, describing, and deleting sessions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860803/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EC2-Connectivity-Using-Systems-Manager-Session-Manager/session-access-grant-revoke-diagram.jpg)
+![The image illustrates the concept of granting or revoking session access, showing user/group connections to instances and allowed Session Manager API operations like closing, creating, describing, and deleting sessions.](https://kodekloud.com/kk-media/image/upload/v1752860803/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EC2-Connectivity-Using-Systems-Manager-Session-Manager/session-access-grant-revoke-diagram.jpg)
 
-![The image is a flowchart titled "Configuring Session Preferences," detailing steps like "Run As Support," "KMS Encryption," "Session Logging," "Shell Profiles," and "Session Timeouts," with a computer and tools icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860804/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EC2-Connectivity-Using-Systems-Manager-Session-Manager/configuring-session-preferences-flowchart.jpg)
+![The image is a flowchart titled "Configuring Session Preferences," detailing steps like "Run As Support," "KMS Encryption," "Session Logging," "Shell Profiles," and "Session Timeouts," with a computer and tools icon.](https://kodekloud.com/kk-media/image/upload/v1752860804/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EC2-Connectivity-Using-Systems-Manager-Session-Manager/configuring-session-preferences-flowchart.jpg)
 
 ## Summary
 

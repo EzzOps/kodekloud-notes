@@ -17,20 +17,20 @@ In this step-by-step guide, you'll learn how to create an AWS Identity and Acces
 1. Open the [IAM console](https://console.aws.amazon.com/iam/), select **Roles**, then click **Create role**.
 2. On **Select trusted entity**, choose **AWS service**.
 
-![The image shows an AWS IAM console screen for creating a role, specifically the step to select a trusted entity type, with options like AWS service, AWS account, Web identity, SAML 2.0 federation, and custom trust policy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863020/notes-assets/images/AWS-IAM-Demo-Creating-IAM-Role/aws-iam-console-create-role-trusted-entity.jpg)
+![The image shows an AWS IAM console screen for creating a role, specifically the step to select a trusted entity type, with options like AWS service, AWS account, Web identity, SAML 2.0 federation, and custom trust policy.](https://kodekloud.com/kk-media/image/upload/v1752863020/notes-assets/images/AWS-IAM-Demo-Creating-IAM-Role/aws-iam-console-create-role-trusted-entity.jpg)
 
 3. Under **Use cases for other AWS services**, select **EC2**.
 
-![The image shows an AWS IAM console screen where a user is selecting a use case for creating a role, with options related to EC2 services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863021/notes-assets/images/AWS-IAM-Demo-Creating-IAM-Role/aws-iam-console-ec2-role-selection.jpg)
+![The image shows an AWS IAM console screen where a user is selecting a use case for creating a role, with options related to EC2 services.](https://kodekloud.com/kk-media/image/upload/v1752863021/notes-assets/images/AWS-IAM-Demo-Creating-IAM-Role/aws-iam-console-ec2-role-selection.jpg)
 
 4. Click **Next** to move to the permissions page.
 5. In **Permissions**, search for **company1** and select the **Company1 logs policy** which grants `s3:GetObject` access to the `company1-logs` bucket.
 
-![The image shows an AWS IAM console screen where permissions are being added to a role. Two customer-managed policies are listed, with one selected.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863023/notes-assets/images/AWS-IAM-Demo-Creating-IAM-Role/aws-iam-console-role-permissions-policies.jpg)
+![The image shows an AWS IAM console screen where permissions are being added to a role. Two customer-managed policies are listed, with one selected.](https://kodekloud.com/kk-media/image/upload/v1752863023/notes-assets/images/AWS-IAM-Demo-Creating-IAM-Role/aws-iam-console-role-permissions-policies.jpg)
 
 6. Click **Next**, then enter a **Role name** (e.g., `Company1-Logs-Role`) and an optional description.
 
-![The image shows an AWS IAM console screen where a role is being created, with fields for role name and description filled in. The role name is "Company1-Logs-Role," and the description mentions allowing EC2 instances to call AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863024/notes-assets/images/AWS-IAM-Demo-Creating-IAM-Role/aws-iam-console-role-creation.jpg)
+![The image shows an AWS IAM console screen where a role is being created, with fields for role name and description filled in. The role name is "Company1-Logs-Role," and the description mentions allowing EC2 instances to call AWS services.](https://kodekloud.com/kk-media/image/upload/v1752863024/notes-assets/images/AWS-IAM-Demo-Creating-IAM-Role/aws-iam-console-role-creation.jpg)
 
 7. Review the **Trust relationship** to ensure EC2 can assume this role. It should resemble:
 
@@ -56,7 +56,7 @@ In this step-by-step guide, you'll learn how to create an AWS Identity and Acces
 2. From the **Actions** menu, select **Security > Modify IAM role**.
 3. In the **IAM role** dropdown, pick **Company1-Logs-Role**.
 
-![The image shows an AWS console interface for modifying an IAM role attached to an EC2 instance. It includes a dropdown to select an IAM role and a warning about removing existing roles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863025/notes-assets/images/AWS-IAM-Demo-Creating-IAM-Role/aws-console-iam-role-ec2-instance.jpg)
+![The image shows an AWS console interface for modifying an IAM role attached to an EC2 instance. It includes a dropdown to select an IAM role and a warning about removing existing roles.](https://kodekloud.com/kk-media/image/upload/v1752863025/notes-assets/images/AWS-IAM-Demo-Creating-IAM-Role/aws-console-iam-role-ec2-instance.jpg)
 
 4. Click **Update IAM role** to apply the change.
 

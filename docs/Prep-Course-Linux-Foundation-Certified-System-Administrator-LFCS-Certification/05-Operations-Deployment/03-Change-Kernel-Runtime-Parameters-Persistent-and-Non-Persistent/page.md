@@ -49,15 +49,11 @@ Additional systemd targets include emergency.target and rescue.target. The table
 | emergency.target  | Boots with minimal system services; root FS is read-only  | Critical troubleshooting when other services cause issues | (Invoked automatically when selected)        |
 | rescue.target     | Loads essential services with a root shell access         | Administrative tasks in a minimal environment             | (Invoked automatically when selected)        |
 
-<Callout icon="triangle-alert">
-  When booting into emergency.target or rescue.target, ensure that the root account has a password set. Without a root password, these modes will not be accessible.
-</Callout>
+> **triangle-alert** When booting into emergency.target or rescue.target, ensure that the root account has a password set. Without a root password, these modes will not be accessible.
 
 This concludes the demonstration on changing systemd targets and boot modes. For further details on system management and troubleshooting, be sure to refer to the official [systemd documentation](https://www.freedesktop.org/wiki/Software/systemd/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/99c33a5f-0308-4bf8-925b-9436fc8c0c7c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/99c33a5f-0308-4bf8-925b-9436fc8c0c7c)
 
 
 # Change Kernel Runtime Parameters Persistent and Non Persistent
@@ -115,9 +111,7 @@ $ sudo sysctl net.ipv6.conf.default.disable_ipv6
 net.ipv6.conf.default.disable_ipv6 = 1
 ```
 
-<Callout icon="lightbulb">
-  Non-persistent changes will revert upon reboot, reverting to the default values.
-</Callout>
+> **lightbulb** Non-persistent changes will revert upon reboot, reverting to the default values.
 
 To check a specific parameter without listing all parameters, append its name to the `sysctl` command. Use `sudo` if permissions are insufficient.
 
@@ -125,9 +119,7 @@ To check a specific parameter without listing all parameters, append its name to
 
 Persistent adjustments require adding a configuration file in the `/etc/sysctl.d` directory. These files must have a `.conf` extension, ensuring that your custom settings are applied automatically at system boot.
 
-<Frame>
-  ![The image shows a directory path "/etc/sysctl.d/" with a configuration file named "Filename.conf" to make changes persistent.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881327/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Change-Kernel-Runtime-Parameters-Persistent-and-Non-Persistent/etc-sysctl-d-filename-conf.jpg)
-</Frame>
+![The image shows a directory path "/etc/sysctl.d/" with a configuration file named "Filename.conf" to make changes persistent.](https://kodekloud.com/kk-media/image/upload/v1752881327/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Change-Kernel-Runtime-Parameters-Persistent-and-Non-Persistent/etc-sysctl-d-filename-conf.jpg)
 
 For more details, refer to the manual page:
 
@@ -173,9 +165,7 @@ To permanently change `vm.swappiness` to 20, follow these steps:
    $ sudo sysctl -p /etc/sysctl.d/swap-less.conf
    ```
 
-<Callout icon="lightbulb">
-  Editing kernel parameters in `/etc/sysctl.conf` is an alternative, though this file may be overwritten during system upgrades. It is recommended to use `/etc/sysctl.d` for persistent customizations.
-</Callout>
+> **lightbulb** Editing kernel parameters in `/etc/sysctl.conf` is an alternative, though this file may be overwritten during system upgrades. It is recommended to use `/etc/sysctl.d` for persistent customizations.
 
 ## Summary Table
 
@@ -186,6 +176,4 @@ To permanently change `vm.swappiness` to 20, follow these steps:
 
 With these techniques, you can modify kernel runtime parameters for your Linux system effectively—using both non-persistent methods for immediate changes and persistent methods for settings that survive reboots. For further details on Linux kernel parameters, consider browsing related documentation provided by your Linux distribution or the official [Linux Kernel Documentation](https://www.kernel.org/doc/html/latest/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/42afda02-1c10-4a8c-9069-a54b3ee2c18b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/42afda02-1c10-4a8c-9069-a54b3ee2c18b)

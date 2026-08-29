@@ -8,27 +8,19 @@ In this lesson, we explore the concept of RefCell and interior mutability in Rus
 
 Rust strictly enforces borrowing rules to prevent data races and ensure safety. Typically, a variable can either have multiple immutable references or one mutable reference at a time. However, situations arise where modifying data is necessary even when only immutable references are available. This technique, known as interior mutability, enables you to achieve that flexibility. The RefCell\<T> type is widely used for this purpose as it dynamically enforces borrowing rules at runtime instead of compile time.
 
-<Frame>
-  ![The image shows a person pondering with question marks around them, accompanied by a text bubble asking about mutating data with immutable references, and a button labeled "RefCell\<T>".](../../../../images/kodekloud.com/kk-media/image/upload/v1752883780/notes-assets/images/Rust-Programming-RefCell-and-Interior-Mutability/pondering-person-mutating-data-refcell.jpg)
-</Frame>
+![The image shows a person pondering with question marks around them, accompanied by a text bubble asking about mutating data with immutable references, and a button labeled "RefCell\<T>".](https://kodekloud.com/kk-media/image/upload/v1752883780/notes-assets/images/Rust-Programming-RefCell-and-Interior-Mutability/pondering-person-mutating-data-refcell.jpg)
 
 With RefCell\<T>, you can bypass several compile-time restrictions. While Rust enforces borrowing rules during compilation, RefCell\<T> shifts these checks to runtime. If conflicting borrows occur, the program will panic rather than fail to compile. This runtime check delivers additional flexibility, though it comes with the risk of panics if the rules are violated.
 
-<Callout icon="lightbulb">
-  Interior mutability is especially beneficial when you want to maintain an API that seems immutable externally while still allowing internal state changes. This approach is ideal for scenarios where a value needs dynamic updates despite numerous immutable references.
-</Callout>
+> **lightbulb** Interior mutability is especially beneficial when you want to maintain an API that seems immutable externally while still allowing internal state changes. This approach is ideal for scenarios where a value needs dynamic updates despite numerous immutable references.
 
-<Frame>
-  ![The image explains the concept of interior mutability in Rust, illustrating how data can be mutated even with immutable references. It features a diagram with labeled blocks representing immutable references and internal modifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883782/notes-assets/images/Rust-Programming-RefCell-and-Interior-Mutability/interior-mutability-rust-diagram.jpg)
-</Frame>
+![The image explains the concept of interior mutability in Rust, illustrating how data can be mutated even with immutable references. It features a diagram with labeled blocks representing immutable references and internal modifications.](https://kodekloud.com/kk-media/image/upload/v1752883782/notes-assets/images/Rust-Programming-RefCell-and-Interior-Mutability/interior-mutability-rust-diagram.jpg)
 
 ## Understanding RefCell
 
 RefCell is a smart pointer that encapsulates data and provides methods for both mutable and immutable borrowing—namely, the `borrow_mut` and `borrow` methods. Unlike standard references that enforce borrowing rules during compile time, RefCell performs these checks at runtime. Consequently, if two parts of your code attempt conflicting borrows simultaneously, the program panics at runtime.
 
-<Frame>
-  ![The image is an infographic titled "Exploring RefCell\<T>" that outlines five features: allowing data borrowing, supporting mutable and immutable borrowing, enforcing borrowing rules at runtime, offering flexibility in data access, and causing runtime panics instead of compile-time errors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883783/notes-assets/images/Rust-Programming-RefCell-and-Interior-Mutability/exploring-refcell-features-infographic.jpg)
-</Frame>
+![The image is an infographic titled "Exploring RefCell\<T>" that outlines five features: allowing data borrowing, supporting mutable and immutable borrowing, enforcing borrowing rules at runtime, offering flexibility in data access, and causing runtime panics instead of compile-time errors.](https://kodekloud.com/kk-media/image/upload/v1752883783/notes-assets/images/Rust-Programming-RefCell-and-Interior-Mutability/exploring-refcell-features-infographic.jpg)
 
 ## A Practical Example with ConfigManager
 
@@ -142,9 +134,7 @@ Module B sees: Module A changed this setting
 Original config sees: Module A changed this setting
 ```
 
-<Frame>
-  ![The image is a summary slide explaining the use of RefCell\\\<T> and Rc\\\<T> in programming, highlighting their roles in sharing mutable data, providing interior mutability, and enabling multiple ownership.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883784/notes-assets/images/Rust-Programming-RefCell-and-Interior-Mutability/refcell-rc-sharing-mutable-data.jpg)
-</Frame>
+![The image is a summary slide explaining the use of RefCell\\\<T> and Rc\\\<T> in programming, highlighting their roles in sharing mutable data, providing interior mutability, and enabling multiple ownership.](https://kodekloud.com/kk-media/image/upload/v1752883784/notes-assets/images/Rust-Programming-RefCell-and-Interior-Mutability/refcell-rc-sharing-mutable-data.jpg)
 
 ## Summary
 
@@ -154,10 +144,6 @@ Next, we will delve into managing reference cycles using weak smart pointers to 
 
 For more information, visit the [Rust Documentation](https://www.rust-lang.org/learn) and explore related topics.
 
-<Callout icon="lightbulb">
-  To expand your understanding of Rust's memory safety features, check out additional guides on smart pointers and ownership.
-</Callout>
+> **lightbulb** To expand your understanding of Rust's memory safety features, check out additional guides on smart pointers and ownership.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/37d4032f-c90d-43ee-a0cd-981b95ab22b0/lesson/ff28129c-b89a-4343-98b0-6b86ec4fa4a5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/37d4032f-c90d-43ee-a0cd-981b95ab22b0/lesson/ff28129c-b89a-4343-98b0-6b86ec4fa4a5)

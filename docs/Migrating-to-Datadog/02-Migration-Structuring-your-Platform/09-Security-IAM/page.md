@@ -59,13 +59,9 @@ Permissions, lifecycle, and enforcement
 * Implement approval workflows for elevated access and temporary roles; time-bound access reduces long-term exposure.
 * Log access changes and review membership periodically to detect stale privileges.
 
-<Callout icon="lightbulb">
-  Use the principle of least privilege: automate lifecycle events (onboarding, transfers, offboarding), and provide self-service requests with approval workflows. These measures help ensure access is granted only when needed and removed promptly when it is not.
-</Callout>
+> **lightbulb** Use the principle of least privilege: automate lifecycle events (onboarding, transfers, offboarding), and provide self-service requests with approval workflows. These measures help ensure access is granted only when needed and removed promptly when it is not.
 
-<Callout icon="warning">
-  Failing to automate offboarding or relying on manual access changes significantly increases security risk. Ensure offboarding workflows are integrated with HR events and the IdP to avoid orphaned accounts and lingering access.
-</Callout>
+> **warning** Failing to automate offboarding or relying on manual access changes significantly increases security risk. Ensure offboarding workflows are integrated with HR events and the IdP to avoid orphaned accounts and lingering access.
 
 Recommended checklist for IAM in observability platforms
 
@@ -86,6 +82,4 @@ Adopting strong IAM processes, RBAC with clear SoD, and protecting sensitive dat
 
 That's it for this lesson. I hope you found it useful.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/7342e054-4b25-4a1e-a3cb-d4dcb00e378e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/7342e054-4b25-4a1e-a3cb-d4dcb00e378e)

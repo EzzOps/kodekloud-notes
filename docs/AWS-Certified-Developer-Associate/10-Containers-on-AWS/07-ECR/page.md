@@ -22,7 +22,7 @@ Follow these steps when using ECR:
 
 ECR functions as an integral Docker registry at every step of this process, ensuring flexibility and consistency across various deployment environments.
 
-![The image is a diagram showing Amazon ECR connected to Amazon ECS, Amazon EKS, and an on-premise setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858503/notes-assets/images/AWS-Certified-Developer-Associate-ECR/amazon-ecr-ecs-eks-diagram.jpg)
+![The image is a diagram showing Amazon ECR connected to Amazon ECS, Amazon EKS, and an on-premise setup.](https://kodekloud.com/kk-media/image/upload/v1752858503/notes-assets/images/AWS-Certified-Developer-Associate-ECR/amazon-ecr-ecs-eks-diagram.jpg)
 
 ## Creating Registries in ECR
 
@@ -56,9 +56,9 @@ AWS ECR comes packed with features designed to streamline container management:
 * **Image Scanning:**\
   Provides vulnerability scanning for container images, allowing you to detect and address security issues early.
 
-![The image is a diagram illustrating the structure of a public and private ECR (Elastic Container Registry), showing connections to cloud and user icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858505/notes-assets/images/AWS-Certified-Developer-Associate-ECR/ecr-structure-diagram-cloud-user.jpg)
+![The image is a diagram illustrating the structure of a public and private ECR (Elastic Container Registry), showing connections to cloud and user icons.](https://kodekloud.com/kk-media/image/upload/v1752858505/notes-assets/images/AWS-Certified-Developer-Associate-ECR/ecr-structure-diagram-cloud-user.jpg)
 
-![The image is a diagram showing features of Amazon ECR, including compressing, encrypting, managing versions and lifecycle of images, and controlling access to images.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858506/notes-assets/images/AWS-Certified-Developer-Associate-ECR/amazon-ecr-features-diagram.jpg)
+![The image is a diagram showing features of Amazon ECR, including compressing, encrypting, managing versions and lifecycle of images, and controlling access to images.](https://kodekloud.com/kk-media/image/upload/v1752858506/notes-assets/images/AWS-Certified-Developer-Associate-ECR/amazon-ecr-features-diagram.jpg)
 
 ## Summary
 
@@ -70,7 +70,7 @@ AWS Elastic Container Registry (ECR) offers a powerful, fully managed solution f
 * Provides essential features like image compression, encryption, versioning, lifecycle management, and vulnerability scanning.
 * Easily integrates with CI/CD pipelines to facilitate automated build and deployment processes.
 
-![The image lists four features: Fully Managed, Integration with AWS Services, Private Registry, and Image Lifecycle Management, each with a corresponding icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858507/notes-assets/images/AWS-Certified-Developer-Associate-ECR/managed-aws-integration-private-registry.jpg)
+![The image lists four features: Fully Managed, Integration with AWS Services, Private Registry, and Image Lifecycle Management, each with a corresponding icon.](https://kodekloud.com/kk-media/image/upload/v1752858507/notes-assets/images/AWS-Certified-Developer-Associate-ECR/managed-aws-integration-private-registry.jpg)
 
 > **lightbulb** ECR is not confined to AWS-only platforms; any system capable of pulling Docker images can benefit from storing images in ECR.
 

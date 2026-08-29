@@ -102,8 +102,7 @@ def root():
 
 If a client sends a JSON payload without a "published" field, it automatically defaults to True; similarly, if "rating" is omitted, its value becomes None.
 
-<Callout icon="triangle-alert">
-  If the client sends a value that does not match the expected type (e.g., a non-integer for "rating"), FastAPI returns a validation error. For example, a request with an invalid "rating" field:
+> **triangle-alert** If the client sends a value that does not match the expected type (e.g., a non-integer for "rating"), FastAPI returns a validation error. For example, a request with an invalid "rating" field:
 
   ```json theme={null}
   {
@@ -124,7 +123,6 @@ If a client sends a JSON payload without a "published" field, it automatically d
     }
   }
   ```
-</Callout>
 
 ─────────────────────────────
 Accessing Validated Data and Converting the Model to a Dictionary
@@ -175,6 +173,4 @@ For more information, explore additional resources:
 * [Pydantic Documentation](https://pydantic-docs.helpmanual.io/)
 * [Python Type Hints](https://docs.python.org/3/library/typing.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/daf8dc7f-a91c-42bf-a559-2ac631a5cd2d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/daf8dc7f-a91c-42bf-a559-2ac631a5cd2d)

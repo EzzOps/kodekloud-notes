@@ -25,18 +25,14 @@ Always keep an eye on the latest features and advanced utilities in the Terragru
 
 If your scenario demands logic beyond built-ins, Terragrunt’s plugin system lets you author custom helpers in Go.
 
-<Callout icon="lightbulb">
-  When writing custom plugins:
+> **lightbulb** When writing custom plugins:
 
   * Follow Go module conventions.
   * Respect Terragrunt’s plugin API.
   * Version and distribute via your internal registry.
-</Callout>
 
-<Callout icon="triangle-alert">
-  Custom plugins can introduce breaking changes if not versioned properly.\
+> **triangle-alert** Custom plugins can introduce breaking changes if not versioned properly.\
   Always pin plugin versions in your `terragrunt.hcl` and test in a sandbox environment.
-</Callout>
 
 ## Best Practices & Tips
 
@@ -50,6 +46,4 @@ If your scenario demands logic beyond built-ins, Terragrunt’s plugin system le
 * [Terraform Registry](https://registry.terraform.io/)
 * [Go Plugin Overview](https://golang.org/pkg/plugin/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/5775621f-5504-4da8-835d-661cda37a852/lesson/01e9987d-846a-45a0-883c-ecd9bcd8f915" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/5775621f-5504-4da8-835d-661cda37a852/lesson/01e9987d-846a-45a0-883c-ecd9bcd8f915)

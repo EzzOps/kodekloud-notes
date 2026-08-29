@@ -28,9 +28,7 @@ spec:
 
 Under normal circumstances, the Kubernetes scheduler scans for pods without a specified `nodeName`, determines the appropriate node based on its scheduling algorithm, and creates a binding object to assign the pod to that node.
 
-<Callout icon="lightbulb">
-  Without an active scheduler, pods will remain in the **Pending** state. You can confirm this by executing:
-</Callout>
+> **lightbulb** Without an active scheduler, pods will remain in the **Pending** state. You can confirm this by executing:
 
 ```bash theme={null}
 kubectl get pods

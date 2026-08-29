@@ -38,11 +38,11 @@ This principle is vital to scaling your services quickly without compromising on
 
 Serverless architectures remove the need to manage underlying servers for traditional compute tasks. With serverless solutions, you can achieve automatic scaling and pay only for the exact resources you use, reducing operational overhead and boosting performance.
 
-![The image is an infographic titled "Go Global in Minutes," showing a laptop connected to two servers with steps for deploying workloads globally, bringing services closer to users, using automation, and employing resiliency/failover for load distribution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863519/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Performance/go-global-in-minutes-infographic.jpg)
+![The image is an infographic titled "Go Global in Minutes," showing a laptop connected to two servers with steps for deploying workloads globally, bringing services closer to users, using automation, and employing resiliency/failover for load distribution.](https://kodekloud.com/kk-media/image/upload/v1752863519/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Performance/go-global-in-minutes-infographic.jpg)
 
 It’s important to note that serverless is not limited to AWS Lambda. It includes any service where you avoid managing servers, such as serverless storage for static websites or event-driven architectures that scale on demand.
 
-![The image is about using serverless architectures, highlighting benefits like not managing underlying servers, automated scaling, and event-driven architectures. It includes a diagram of servers and a person overseeing them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863521/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Performance/serverless-architecture-benefits-diagram.jpg)
+![The image is about using serverless architectures, highlighting benefits like not managing underlying servers, automated scaling, and event-driven architectures. It includes a diagram of servers and a person overseeing them.](https://kodekloud.com/kk-media/image/upload/v1752863521/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Performance/serverless-architecture-benefits-diagram.jpg)
 
 > **lightbulb** Serverless architectures trigger only when necessary, making them a cost-effective and high-performance choice.
 
@@ -52,7 +52,7 @@ Experimentation is essential for pinpointing the optimal performance configurati
 
 For example, testing various AWS instance sizes can reveal the configuration that offers the best value in terms of performance per dollar. Regular experimentation empowers you to innovate, optimize resource allocation, and make data-driven performance decisions.
 
-![The image is a slide titled "Experiment More Often," suggesting trying new scenarios, creating pre-production environments, and ensuring metrics for experiments. It includes a simple graphic of a circle on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863522/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Performance/experiment-more-often-slide.jpg)
+![The image is a slide titled "Experiment More Often," suggesting trying new scenarios, creating pre-production environments, and ensuring metrics for experiments. It includes a simple graphic of a circle on the right.](https://kodekloud.com/kk-media/image/upload/v1752863522/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Performance/experiment-more-often-slide.jpg)
 
 ## Principle 5: Consider Mechanical Sympathy
 
@@ -60,7 +60,7 @@ Mechanical sympathy emphasizes using the right technology for its intended purpo
 
 For instance, if you need a transactional database, Amazon RDS or Aurora is preferable over DynamoDB, which is optimized for different workloads. Similarly, evaluate whether a full server is necessary for running cron jobs or if a lightweight AWS Lambda function will suffice.
 
-![The image provides guidance on "Consider Mechanical Sympathy," emphasizing using tools for their intended purpose and minimizing resource use, illustrated with icons of a nail, screwdriver, and hammer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863524/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Performance/consider-mechanical-sympathy-tools-guide.jpg)
+![The image provides guidance on "Consider Mechanical Sympathy," emphasizing using tools for their intended purpose and minimizing resource use, illustrated with icons of a nail, screwdriver, and hammer.](https://kodekloud.com/kk-media/image/upload/v1752863524/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Performance/consider-mechanical-sympathy-tools-guide.jpg)
 
 ## Applying the Design Principles
 
@@ -68,7 +68,7 @@ Imagine a scenario where you require storage without the headache of managing it
 
 Experimentation allows you to assess various options—whether you’re evaluating S3 storage for database-like purposes or determining when to switch to Amazon RDS for better performance. Each design principle offers guidance in matching technology features with your service requirements, acknowledging that attributes like performance, security, reliability, and cost may call for different strategies.
 
-![The image illustrates a flowchart for applying performance design principles to Amazon S3, outlining requirements, design principles, and corresponding service features. It suggests solutions like using serverless architectures and experimenting more often to address specific storage needs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863526/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Performance/performance-design-principles-amazon-s3.jpg)
+![The image illustrates a flowchart for applying performance design principles to Amazon S3, outlining requirements, design principles, and corresponding service features. It suggests solutions like using serverless architectures and experimenting more often to address specific storage needs.](https://kodekloud.com/kk-media/image/upload/v1752863526/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Performance/performance-design-principles-amazon-s3.jpg)
 
 ## Summary
 
@@ -82,7 +82,7 @@ To recap, the design principles for performance include:
 
 These principles are key to evaluating and optimizing cloud architecture performance. While they might not appear directly on certification exams, they are invaluable in guiding your performance-related decisions.
 
-![The image is a summary slide outlining four design principles related to performance, technology democratization, global reach, and serverless use, with a note that these principles won't be on the exam.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863527/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Performance/design-principles-summary-slide.jpg)
+![The image is a summary slide outlining four design principles related to performance, technology democratization, global reach, and serverless use, with a note that these principles won't be on the exam.](https://kodekloud.com/kk-media/image/upload/v1752863527/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Design-Principles-for-Performance/design-principles-summary-slide.jpg)
 
 Thank you for reading this article. Stay tuned for our next installment where we will explore design principles related to cost optimization.
 

@@ -18,7 +18,7 @@
 (command1 || command2)
 ```
 
-![The image explains the use of the OR operator || in subshell scenarios, showing a syntax example: (command1 || command2).](../../../../images/kodekloud.com/kk-media/image/upload/v1752868566/notes-assets/images/Advanced-Bash-Scripting-Subshells/or-operator-subshell-syntax.jpg)
+![The image explains the use of the OR operator || in subshell scenarios, showing a syntax example: (command1 || command2).](https://kodekloud.com/kk-media/image/upload/v1752868566/notes-assets/images/Advanced-Bash-Scripting-Subshells/or-operator-subshell-syntax.jpg)
 
 ***
 
@@ -28,7 +28,7 @@
 
 Run commands in a different folder without affecting your current directory:
 
-![The image is a slide titled "Subshell – common scenarios," highlighting the use of a subshell to run commands without changing directories.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868567/notes-assets/images/Advanced-Bash-Scripting-Subshells/subshell-common-scenarios-slide.jpg)
+![The image is a slide titled "Subshell – common scenarios," highlighting the use of a subshell to run commands without changing directories.](https://kodekloud.com/kk-media/image/upload/v1752868567/notes-assets/images/Advanced-Bash-Scripting-Subshells/subshell-common-scenarios-slide.jpg)
 
 ```bash theme={null}
 #!/usr/bin/env bash

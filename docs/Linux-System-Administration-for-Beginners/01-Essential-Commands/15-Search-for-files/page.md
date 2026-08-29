@@ -29,9 +29,7 @@ find [search_path] [expression]
 
 If you omit `search_path`, `find` searches the **current directory**.
 
-<Callout icon="lightbulb">
-  Omitting the search path is equivalent to specifying `.` (the current directory).
-</Callout>
+> **lightbulb** Omitting the search path is equivalent to specifying `.` (the current directory).
 
 ### Examples
 

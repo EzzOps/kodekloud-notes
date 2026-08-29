@@ -19,7 +19,7 @@ With a self-managed approach, you provision EC2 VMs for both the control plane (
 
 > **triangle-alert** If you lose etcd data, your entire Kubernetes cluster state is irretrievably lost. Implement reliable backup and restore procedures.
 
-![The image is a diagram of a Kubernetes cluster, showing the control plane with components like etcd, API server, and scheduler, and the data plane with worker nodes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862777/notes-assets/images/AWS-EKS-Common-Use-Cases/kubernetes-cluster-diagram-control-plane.jpg)
+![The image is a diagram of a Kubernetes cluster, showing the control plane with components like etcd, API server, and scheduler, and the data plane with worker nodes.](https://kodekloud.com/kk-media/image/upload/v1752862777/notes-assets/images/AWS-EKS-Common-Use-Cases/kubernetes-cluster-diagram-control-plane.jpg)
 
 ***
 
@@ -29,7 +29,7 @@ etcd is the distributed key-value store that underpins every Kubernetes cluster.
 
 > **lightbulb** A production etcd cluster should run in a highly available configuration (odd number of nodes) and have automated snapshot backups.
 
-![The image illustrates a Kubernetes cluster architecture, showing a database connected to the control plane (with etcd, API server, and scheduler) and the data plane (with worker nodes).](../../../../images/kodekloud.com/kk-media/image/upload/v1752862778/notes-assets/images/AWS-EKS-Common-Use-Cases/kubernetes-cluster-architecture-diagram.jpg)
+![The image illustrates a Kubernetes cluster architecture, showing a database connected to the control plane (with etcd, API server, and scheduler) and the data plane (with worker nodes).](https://kodekloud.com/kk-media/image/upload/v1752862778/notes-assets/images/AWS-EKS-Common-Use-Cases/kubernetes-cluster-architecture-diagram.jpg)
 
 ***
 
@@ -50,7 +50,7 @@ Amazon EKS shifts control plane (including etcd) management to AWS. You still la
 
 > **lightbulb** Use [Amazon EKS best practices](https://docs.aws.amazon.com/eks/latest/userguide/best-practices.html) for VPC design, IAM policies, and node group configuration.
 
-![The image is a diagram of a Kubernetes cluster, showing the control plane with components like etcd, API server, and scheduler, and the data plane with worker nodes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862780/notes-assets/images/AWS-EKS-Common-Use-Cases/kubernetes-cluster-diagram-control-plane-2.jpg)
+![The image is a diagram of a Kubernetes cluster, showing the control plane with components like etcd, API server, and scheduler, and the data plane with worker nodes.](https://kodekloud.com/kk-media/image/upload/v1752862780/notes-assets/images/AWS-EKS-Common-Use-Cases/kubernetes-cluster-diagram-control-plane-2.jpg)
 
 ***
 
@@ -63,7 +63,7 @@ Most organizations deploy Kubernetes alongside other AWS services—RDS for data
 * Elastic Load Balancing to expose Ingress controllers
 * Amazon Route 53 for internal and external DNS routing
 
-![The image shows a central Kubernetes icon surrounded by icons representing various AWS services, illustrating EKS as an integrator.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862781/notes-assets/images/AWS-EKS-Common-Use-Cases/kubernetes-eks-aws-services-diagram.jpg)
+![The image shows a central Kubernetes icon surrounded by icons representing various AWS services, illustrating EKS as an integrator.](https://kodekloud.com/kk-media/image/upload/v1752862781/notes-assets/images/AWS-EKS-Common-Use-Cases/kubernetes-eks-aws-services-diagram.jpg)
 
 ***
 

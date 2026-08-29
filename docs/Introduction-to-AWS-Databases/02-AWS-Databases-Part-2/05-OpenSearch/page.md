@@ -21,9 +21,7 @@ OpenSearch (a community-driven fork of Elasticsearch) is optimized to index, sea
 
 When Elasticsearch and Kibana licensing changed, Amazon forked the last Apache 2.0–licensed releases to create OpenSearch. This preserved an open-source, community-driven search and analytics suite under an Apache 2.0–compatible governance model. For most practical purposes OpenSearch and Elasticsearch offer similar core features, but OpenSearch remains governed and developed with an open-source focus.
 
-<Callout icon="lightbulb">
-  OpenSearch is a community-driven fork intended to preserve an open-source search and analytics suite after licensing changes to Elasticsearch.
-</Callout>
+> **lightbulb** OpenSearch is a community-driven fork intended to preserve an open-source search and analytics suite after licensing changes to Elasticsearch.
 
 ## OpenSearch components and deployment options
 
@@ -104,6 +102,4 @@ OpenSearch is an open-source search and analytics suite that excels at handling 
 * [AWS Lambda](https://aws.amazon.com/lambda/)
 * [Amazon QuickSight](https://aws.amazon.com/quicksight/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/6b775562-0b27-41e9-93fc-bb16dab05d87/lesson/abc082f0-522a-46a6-a6fc-2d577da0933c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/6b775562-0b27-41e9-93fc-bb16dab05d87/lesson/abc082f0-522a-46a6-a6fc-2d577da0933c)

@@ -26,9 +26,7 @@ This UUID identifies a single user session or workflow instance. LangGraph will 
 
 Session awareness is critical: without it, workflows can mix state, produce incorrect outputs, corrupt history, and become hard to resume or debug.
 
-<Callout icon="lightbulb">
-  Use a session-aware execution model: tie every graph run to a unique `thread_id`, and include that identifier in logs, traces, and checkpoint keys so workflows are traceable and resumable.
-</Callout>
+> **lightbulb** Use a session-aware execution model: tie every graph run to a unique `thread_id`, and include that identifier in logs, traces, and checkpoint keys so workflows are traceable and resumable.
 
 <Frame>
   <img alt="The image contrasts the risks of not using unique session management, such as state leakage and inability to resume flows, with the benefits of session-based execution, including logging progress and supporting multi-tenant environments." />
@@ -67,9 +65,7 @@ Concurrency can be implemented using multiple techniques. LangGraph does not man
 
 Race conditions are a classic systems problem: when multiple executions read or write the same resource concurrently, inconsistent or corrupted data can result. Minimize shared mutable state; where sharing is unavoidable (counters, logs, shared caches), rely on the storage layer's atomic operations, transactions, or explicit locks.
 
-<Callout icon="warning">
-  Avoid shared mutable global state. When shared resources are necessary, protect them with atomic operations, transactions, or locks to prevent race conditions and data corruption.
-</Callout>
+> **warning** Avoid shared mutable global state. When shared resources are necessary, protect them with atomic operations, transactions, or locks to prevent race conditions and data corruption.
 
 <Frame>
   <img alt="The image illustrates avoiding race conditions in concurrency with three panels: &#x22;Race Condition&#x22; for concurrent reads and writes, &#x22;Goal&#x22; to minimize shared mutable state, and &#x22;Solution&#x22; suggesting locks and atomic operations." />
@@ -104,9 +100,7 @@ Key takeaways:
 
 Following these principles lets your LangGraph system scale from prototypes to thousands of concurrent users while preserving correctness, auditability, and observability.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/99515dd9-9046-41d3-9a0a-9d14a007f870" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/e0cd494a-00a7-4c52-88e9-b3932b03ff9f/lesson/99515dd9-9046-41d3-9a0a-9d14a007f870)
 
 
 # Stateful Persistence Checkpoints

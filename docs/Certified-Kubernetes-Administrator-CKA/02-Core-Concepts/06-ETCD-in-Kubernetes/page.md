@@ -8,7 +8,7 @@ Welcome to this comprehensive guide on etcd in Kubernetes. In this article, we e
 
 etcd is a distributed key-value store that maintains configuration data, state information, and metadata for your Kubernetes cluster. Every object—nodes, pods, configurations, secrets, accounts, roles, and role bindings—is stored within etcd. When you run a command like `kubectl get`, the data is retrieved from this data store.
 
-![The image illustrates a Kubernetes architecture with a master node managing an ETCD cluster, listing components like nodes, pods, configs, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869716/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-in-Kubernetes/frame_20.jpg)
+![The image illustrates a Kubernetes architecture with a master node managing an ETCD cluster, listing components like nodes, pods, configs, and more.](https://kodekloud.com/kk-media/image/upload/v1752869716/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-in-Kubernetes/frame_20.jpg)
 
 Any changes you make to the cluster—whether adding nodes, deploying pods, or configuring ReplicaSets—are first recorded in etcd. Only after etcd is updated are these changes considered to be complete.
 

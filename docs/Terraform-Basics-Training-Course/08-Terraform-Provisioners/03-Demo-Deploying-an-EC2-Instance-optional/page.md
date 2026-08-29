@@ -8,23 +8,17 @@ In this lesson, you will learn how to provision a Linux EC2 instance using the A
 
 Access the EC2 service from the AWS Management Console by clicking on the Services tab at the top left.
 
-<Frame>
-  ![The image shows the AWS Management Console homepage, featuring service search, recently visited services, solution-building options, and links to AWS resources and training.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884197/notes-assets/images/Terraform-Basics-Training-Course-Demo-Deploying-an-EC2-Instance-optional/frame_10.jpg)
-</Frame>
+![The image shows the AWS Management Console homepage, featuring service search, recently visited services, solution-building options, and links to AWS resources and training.](https://kodekloud.com/kk-media/image/upload/v1752884197/notes-assets/images/Terraform-Basics-Training-Course-Demo-Deploying-an-EC2-Instance-optional/frame_10.jpg)
 
 The EC2 service is grouped under the Compute category. Alternatively, you can use the service search bar on the dashboard to quickly locate EC2.
 
-<Frame>
-  ![The image shows the AWS Management Console, displaying a list of various AWS services categorized under sections like Compute, Storage, Database, and Machine Learning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884198/notes-assets/images/Terraform-Basics-Training-Course-Demo-Deploying-an-EC2-Instance-optional/frame_20.jpg)
-</Frame>
+![The image shows the AWS Management Console, displaying a list of various AWS services categorized under sections like Compute, Storage, Database, and Machine Learning.](https://kodekloud.com/kk-media/image/upload/v1752884198/notes-assets/images/Terraform-Basics-Training-Course-Demo-Deploying-an-EC2-Instance-optional/frame_20.jpg)
 
 For an even faster start, click the "launch a virtual machine" link located just below the search bar.
 
 Once inside the EC2 console, ensure you are in the central Canada region; this is where your instance will be deployed.
 
-<Frame>
-  ![The image shows the Amazon EC2 management console, displaying resources and options for launching instances in the Canada (Central) region, with service health status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884199/notes-assets/images/Terraform-Basics-Training-Course-Demo-Deploying-an-EC2-Instance-optional/frame_40.jpg)
-</Frame>
+![The image shows the Amazon EC2 management console, displaying resources and options for launching instances in the Canada (Central) region, with service health status.](https://kodekloud.com/kk-media/image/upload/v1752884199/notes-assets/images/Terraform-Basics-Training-Course-Demo-Deploying-an-EC2-Instance-optional/frame_40.jpg)
 
 ***
 
@@ -40,23 +34,15 @@ Select an Amazon Machine Image (AMI). For this demonstration, we will deploy a w
 
 Choose an instance type; for example, select **t2.micro** to remain within the free tier.
 
-<Frame>
-  ![The image shows the AWS EC2 launch instance wizard, specifically the step for choosing an Amazon Machine Image (AMI) with various operating system options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884200/notes-assets/images/Terraform-Basics-Training-Course-Demo-Deploying-an-EC2-Instance-optional/frame_60.jpg)
-</Frame>
+![The image shows the AWS EC2 launch instance wizard, specifically the step for choosing an Amazon Machine Image (AMI) with various operating system options.](https://kodekloud.com/kk-media/image/upload/v1752884200/notes-assets/images/Terraform-Basics-Training-Course-Demo-Deploying-an-EC2-Instance-optional/frame_60.jpg)
 
 The subsequent screens allow you to configure instance parameters. For most settings, the default options are suitable. Use the default VPC for the region and select the default subnet.
 
-<Frame>
-  ![The image shows the AWS EC2 instance selection screen, highlighting the "t2.micro" instance type, which is eligible for the free usage tier.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884201/notes-assets/images/Terraform-Basics-Training-Course-Demo-Deploying-an-EC2-Instance-optional/frame_70.jpg)
-</Frame>
+![The image shows the AWS EC2 instance selection screen, highlighting the "t2.micro" instance type, which is eligible for the free usage tier.](https://kodekloud.com/kk-media/image/upload/v1752884201/notes-assets/images/Terraform-Basics-Training-Course-Demo-Deploying-an-EC2-Instance-optional/frame_70.jpg)
 
-<Frame>
-  ![The image shows the "Configure Instance Details" page of the AWS EC2 launch instance wizard, displaying options for setting up a virtual server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884203/notes-assets/images/Terraform-Basics-Training-Course-Demo-Deploying-an-EC2-Instance-optional/frame_90.jpg)
-</Frame>
+![The image shows the "Configure Instance Details" page of the AWS EC2 launch instance wizard, displaying options for setting up a virtual server.](https://kodekloud.com/kk-media/image/upload/v1752884203/notes-assets/images/Terraform-Basics-Training-Course-Demo-Deploying-an-EC2-Instance-optional/frame_90.jpg)
 
-<Callout icon="lightbulb">
-  To serve web content, leverage the EC2 user data feature by pasting the following shell script in the "Advanced Details" section. This script installs and configures Nginx automatically.
-</Callout>
+> **lightbulb** To serve web content, leverage the EC2 user data feature by pasting the following shell script in the "Advanced Details" section. This script installs and configures Nginx automatically.
 
 Paste the following script:
 
@@ -72,9 +58,7 @@ sudo systemctl start nginx
 
 Click **Next** to proceed to the storage configuration stage. By default, an 8 GB gp2 SSD volume is provisioned as the root partition.
 
-<Frame>
-  ![The image shows the "Add Storage" step in the AWS EC2 launch instance wizard, detailing volume configuration options like size, type, and encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884204/notes-assets/images/Terraform-Basics-Training-Course-Demo-Deploying-an-EC2-Instance-optional/frame_130.jpg)
-</Frame>
+![The image shows the "Add Storage" step in the AWS EC2 launch instance wizard, detailing volume configuration options like size, type, and encryption.](https://kodekloud.com/kk-media/image/upload/v1752884204/notes-assets/images/Terraform-Basics-Training-Course-Demo-Deploying-an-EC2-Instance-optional/frame_130.jpg)
 
 ### Step 4: Add Tags
 
@@ -84,17 +68,13 @@ For easy identification, add a tag with the key `Name` and the value `web server
 
 Set up the security group to allow SSH access. Create a new security group (e.g., "SSH access") and supply a suitable description. Under rule type, select SSH with the default source set to `0.0.0.0/0`. Note that while this configuration is convenient for testing, it is not recommended for production environments.
 
-<Frame>
-  ![The image shows the AWS EC2 instance launch wizard, specifically the "Configure Security Group" step, with SSH access settings being configured.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884205/notes-assets/images/Terraform-Basics-Training-Course-Demo-Deploying-an-EC2-Instance-optional/frame_160.jpg)
-</Frame>
+![The image shows the AWS EC2 instance launch wizard, specifically the "Configure Security Group" step, with SSH access settings being configured.](https://kodekloud.com/kk-media/image/upload/v1752884205/notes-assets/images/Terraform-Basics-Training-Course-Demo-Deploying-an-EC2-Instance-optional/frame_160.jpg)
 
 ### Step 6: Review and Launch
 
 Review your instance configuration and click **Launch**. You will then be prompted to choose an existing key pair or create a new one. Since no key pair exists in this region, opt to create a new key pair named `web` and download it. This key pair is essential for SSH authentication.
 
-<Frame>
-  ![The image shows an AWS EC2 instance launch wizard, prompting to select or create a key pair for secure access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884206/notes-assets/images/Terraform-Basics-Training-Course-Demo-Deploying-an-EC2-Instance-optional/frame_210.jpg)
-</Frame>
+![The image shows an AWS EC2 instance launch wizard, prompting to select or create a key pair for secure access.](https://kodekloud.com/kk-media/image/upload/v1752884206/notes-assets/images/Terraform-Basics-Training-Course-Demo-Deploying-an-EC2-Instance-optional/frame_210.jpg)
 
 It may take a few minutes for the instance to launch. Click **View Instances** to monitor its status. Once launched, look for the instance tagged as `web server` in the running state. Clicking on the instance will display essential details such as the public IP address, VPC, subnet, instance type, AMI ID, security group, and attached EBS volumes.
 
@@ -125,9 +105,7 @@ Load key "/home/yourusername/Downloads/web.pem": bad permissions
 ubuntu@3.97.9.249: Permission denied (publickey).
 ```
 
-<Callout icon="triangle-alert">
-  If you receive this error about private key file permissions, ensure the key file is restricted so that only the owner can read it. Execute the following command:
-</Callout>
+> **triangle-alert** If you receive this error about private key file permissions, ensure the key file is restricted so that only the owner can read it. Execute the following command:
 
 ```bash theme={null}
 chmod 400 ~/Downloads/web.pem
@@ -175,6 +153,4 @@ This concludes the lesson on deploying an EC2 instance using the AWS Management 
 
 Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9fcbd3cd-b06d-4816-8646-3639ca3d19cd/lesson/d8ee21e7-848e-4775-b878-b7093917153c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9fcbd3cd-b06d-4816-8646-3639ca3d19cd/lesson/d8ee21e7-848e-4775-b878-b7093917153c)

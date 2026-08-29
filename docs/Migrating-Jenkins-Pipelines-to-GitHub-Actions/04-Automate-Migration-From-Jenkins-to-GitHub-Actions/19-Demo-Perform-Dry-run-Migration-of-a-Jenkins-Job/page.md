@@ -65,17 +65,13 @@ jobs:
 
 The dry-run log reveals these internal steps: the importer fetched the job's `config.xml`, converted XML to an intermediate JSON representation, applied configured transformers, and emitted workflow YAML. Transformers were found for `echo` but not for `sleep`, so `sleep` entries appear as comments.
 
-<Callout icon="lightbulb">
-  The importer emits commented placeholders for Jenkins constructs that lack matching transformers. To retain or convert such steps (for example, `sleep`), create a custom transformer that maps the Jenkins keyword/function to an equivalent GitHub Actions step (for instance, `run: sleep 5`). Custom transformers let you tailor conversions for team-specific pipeline usage.
-</Callout>
+> **lightbulb** The importer emits commented placeholders for Jenkins constructs that lack matching transformers. To retain or convert such steps (for example, `sleep`), create a custom transformer that maps the Jenkins keyword/function to an equivalent GitHub Actions step (for instance, `run: sleep 5`). Custom transformers let you tailor conversions for team-specific pipeline usage.
 
-<Callout icon="warning">
-  Before running a full `migrate`:
+> **warning** Before running a full `migrate`:
 
   * Validate the dry-run output under `tmp/dry-run` and manually review any commented placeholders.
   * Add or author transformers for unsupported keywords if you need automated conversions.
   * Only push or open PRs after confirming the generated workflows are functionally equivalent.
-</Callout>
 
 ## Next steps
 
@@ -91,11 +87,9 @@ The dry-run log reveals these internal steps: the importer fetched the job's `co
 
 That's all for this lesson — use the dry-run to iterate safely until all steps convert cleanly.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/a65b1d88-434f-41e3-8d2f-6e8a0644cbf9" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/a65b1d88-434f-41e3-8d2f-6e8a0644cbf9)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/7d298231-8e0e-49ff-8121-9d257ffd0f5e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/7d298231-8e0e-49ff-8121-9d257ffd0f5e)
 
 
 # Demo Perform Dry run Migration of a Jenkins Job

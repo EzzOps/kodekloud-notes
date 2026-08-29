@@ -8,9 +8,7 @@ Understanding the advantages of LVM (Logical Volume Manager) begins with examini
 
 LVM overcomes this issue by abstracting the physical disk layout. Instead of rigidly partitioning the disk, you add the disk to LVM, which then manages all available space. The diagram below illustrates a disk layout where a beginning partition, a middle partition, and free unpartitioned space are managed seamlessly by LVM:
 
-<Frame>
-  ![The image shows a diagram of a disk partition layout with three sections: Beginning Partition, Middle Partition, and Free Space (Unpartitioned), labeled under LVM.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881361/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Manage-and-Configure-LVM-Storage/disk-partition-layout-lvm-diagram.jpg)
-</Frame>
+![The image shows a diagram of a disk partition layout with three sections: Beginning Partition, Middle Partition, and Free Space (Unpartitioned), labeled under LVM.](https://kodekloud.com/kk-media/image/upload/v1752881361/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Manage-and-Configure-LVM-Storage/disk-partition-layout-lvm-diagram.jpg)
 
 Now, imagine that same disk setup is managed using LVM. When you want to expand the first partition, LVM identifies available free space—even if it’s not contiguous—and logically combines it with partition 1. To the operating system, the partition appears as a continuous block, streamlining tasks like resizing and storage management for administrators.
 
@@ -20,9 +18,7 @@ This core concept of LVM sets the stage for its broader capabilities. Let’s di
 
 For this lesson, we will attach three virtual disks to a virtual machine, each with a capacity of 5 GB. The diagram below shows a virtual machine connected to three virtual disks to support our exercises:
 
-<Frame>
-  ![The image is a diagram showing a virtual machine connected to three virtual disks, labeled as a practical exercise.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881362/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Manage-and-Configure-LVM-Storage/virtual-machine-three-disks-diagram.jpg)
-</Frame>
+![The image is a diagram showing a virtual machine connected to three virtual disks, labeled as a practical exercise.](https://kodekloud.com/kk-media/image/upload/v1752881362/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Manage-and-Configure-LVM-Storage/virtual-machine-three-disks-diagram.jpg)
 
 To install the necessary LVM tools, run the following command. On most Ubuntu systems, this package is already installed:
 
@@ -218,9 +214,7 @@ jeremy@kodekloud:~$
 
 Using this command, "partition1" expands without interrupting its continuous appearance to the operating system.
 
-<Callout icon="triangle-alert">
-  Shrinking a logical volume that contains data is risky. Always ensure your data is backed up before resizing volumes.
-</Callout>
+> **triangle-alert** Shrinking a logical volume that contains data is risky. Always ensure your data is backed up before resizing volumes.
 
 If you need to shrink an LV—say, returning it to 2 GB—make sure you understand the risks and use:
 
@@ -256,9 +250,7 @@ Once an LV is created, you can format it with an ext4 filesystem using:
 sudo mkfs.ext4 /dev/my_volume/partition1
 ```
 
-<Callout icon="lightbulb">
-  After formatting an LV, ensure that the filesystem is managed carefully. Resizing the logical volume without adjusting the filesystem can result in the filesystem not utilizing the extra space.
-</Callout>
+> **lightbulb** After formatting an LV, ensure that the filesystem is managed carefully. Resizing the logical volume without adjusting the filesystem can result in the filesystem not utilizing the extra space.
 
 For example, resizing the LV without altering the filesystem:
 
@@ -293,8 +285,6 @@ This lesson has covered the fundamentals of managing and configuring LVM storage
 
 For further reference, consult the LVM manual by running `man lvm` or use terminal tab completion for hints. Happy managing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/b5d19bb7-3a84-40c0-9f34-85f1be784984" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/b5d19bb7-3a84-40c0-9f34-85f1be784984)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/a37c2d48-0a8e-4953-94bd-5200dd215f42" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cfd9ce0f-72d4-40ec-97cd-875899512ff2/lesson/a37c2d48-0a8e-4953-94bd-5200dd215f42)

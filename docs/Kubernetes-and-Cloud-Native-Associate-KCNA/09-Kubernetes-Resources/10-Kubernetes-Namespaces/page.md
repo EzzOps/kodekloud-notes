@@ -19,15 +19,11 @@ For smaller or learning environments, you might continue working in the default 
 
 Below is a diagram that illustrates how different namespaces provide isolation:
 
-<Frame>
-  ![The image illustrates Kubernetes namespaces for isolation, showing five labeled houses: kube-system, Default, kube-public, Dev, and Prod, each containing a circle, triangle, and square.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880676/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Kubernetes-Namespaces/frame_180.jpg)
-</Frame>
+![The image illustrates Kubernetes namespaces for isolation, showing five labeled houses: kube-system, Default, kube-public, Dev, and Prod, each containing a circle, triangle, and square.](https://kodekloud.com/kk-media/image/upload/v1752880676/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Kubernetes-Namespaces/frame_180.jpg)
 
 Each namespace can enforce its own set of policies and resource quotas. The following diagram demonstrates how various environments (Default, Prod, Dev) are allocated resources such as nodes and containers:
 
-<Frame>
-  ![The image illustrates Kubernetes namespace resource limits, showing different environments (Default, Prod, Dev) with nodes and containers, highlighting resource allocation and management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880677/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Kubernetes-Namespaces/frame_200.jpg)
-</Frame>
+![The image illustrates Kubernetes namespace resource limits, showing different environments (Default, Prod, Dev) with nodes and containers, highlighting resource allocation and management.](https://kodekloud.com/kk-media/image/upload/v1752880677/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Kubernetes-Namespaces/frame_200.jpg)
 
 ## DNS Service Discovery within Namespaces
 
@@ -89,13 +85,11 @@ kube-proxy-jjrsbs                         1/1     Running   7          7d
 kube-scheduler-master                     1/1     Running   7          7d
 ```
 
-<Callout icon="lightbulb">
-  Remember, if you want to list Pods across all namespaces, use:
+> **lightbulb** Remember, if you want to list Pods across all namespaces, use:
 
   ```bash theme={null}
   kubectl get pods --all-namespaces
   ```
-</Callout>
 
 ### Creating Pods in Specific Namespaces
 

@@ -57,15 +57,11 @@ vault write pki/config/urls \
 
 A **role** in Vault maps policies to certificate settings (allowed domains, TTLs, SANs).
 
-<Frame>
-  ![The image is an informational slide about PKI roles, explaining the mapping between a policy and configuration in a secrets engine, with notable configurations listed. It includes a Vault certification badge and a cartoon character illustration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878481/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-PKI-Secrets-Engine/pki-roles-policy-configuration-slide.jpg)
-</Frame>
+![The image is an informational slide about PKI roles, explaining the mapping between a policy and configuration in a secrets engine, with notable configurations listed. It includes a Vault certification badge and a cartoon character illustration.](https://kodekloud.com/kk-media/image/upload/v1752878481/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-PKI-Secrets-Engine/pki-roles-policy-configuration-slide.jpg)
 
 ### Example Role Configurations
 
-<Frame>
-  ![The image describes unique PKI roles with configurations for web, internal apps, and Kubernetes apps, detailing allowed domains, subdomain permissions, and maximum TTL. It also includes a Vault certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878482/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-PKI-Secrets-Engine/pki-roles-configurations-web-kubernetes.jpg)
-</Frame>
+![The image describes unique PKI roles with configurations for web, internal apps, and Kubernetes apps, detailing allowed domains, subdomain permissions, and maximum TTL. It also includes a Vault certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878482/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-PKI-Secrets-Engine/pki-roles-configurations-web-kubernetes.jpg)
 
 | Role Name          | Allowed Domains | Subdomains | Bare Domains | Max TTL |
 | ------------------ | --------------- | ---------- | ------------ | ------- |
@@ -89,9 +85,7 @@ vault write pki/roles/web_dmz_role \
   country=US
 ```
 
-<Frame>
-  ![The image illustrates a process for creating roles in a Vault system, showing how different PKI roles request certificates for various applications. It includes icons representing Vault, roles, and applications, with a certification badge in the top right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878483/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-PKI-Secrets-Engine/vault-pki-roles-certificate-process.jpg)
-</Frame>
+![The image illustrates a process for creating roles in a Vault system, showing how different PKI roles request certificates for various applications. It includes icons representing Vault, roles, and applications, with a certification badge in the top right corner.](https://kodekloud.com/kk-media/image/upload/v1752878483/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-PKI-Secrets-Engine/vault-pki-roles-certificate-process.jpg)
 
 Applications authenticate to Vault and request certificates based on their assigned role.
 
@@ -116,9 +110,7 @@ Response fields:
 * `private_key_type`: Key algorithm (e.g., rsa)
 * `serial_number`: Unique cert serial number
 
-<Callout icon="lightbulb">
-  Always save the `private_key` immediately; Vault does not retain it for later retrieval.
-</Callout>
+> **lightbulb** Always save the `private_key` immediately; Vault does not retain it for later retrieval.
 
 ***
 
@@ -156,9 +148,7 @@ Vault logs the tidy operation—monitor server logs for completion status.
 * [X.509 Certificate Profile](https://tools.ietf.org/html/rfc5280)
 * [Managing Certificate Revocation List (CRL)](https://tools.ietf.org/html/rfc5280#section-5.1.2.4)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/d4743df6-33f4-4e60-a234-1c657f4ba2e4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/d4743df6-33f4-4e60-a234-1c657f4ba2e4)
 
 
 # Regenerating a Root Token
@@ -173,9 +163,7 @@ When standard authentication methods fail, regenerating a root token grants temp
 
 A **root token** is Vault’s superuser credential. It’s bound to the built-in `root` policy—which cannot be modified or deleted—and grants unrestricted access across your Vault cluster.
 
-<Frame>
-  ![The image is an informational slide about root tokens, explaining their unlimited access to Vault, lack of expiration, and guidelines for their use and revocation. It also includes a Vault certification badge and a cartoon character at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878484/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Regenerating-a-Root-Token/root-tokens-vault-access-guidelines.jpg)
-</Frame>
+![The image is an informational slide about root tokens, explaining their unlimited access to Vault, lack of expiration, and guidelines for their use and revocation. It also includes a Vault certification badge and a cartoon character at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878484/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Regenerating-a-Root-Token/root-tokens-vault-access-guidelines.jpg)
 
 Key characteristics:
 

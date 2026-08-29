@@ -22,7 +22,7 @@ In-place deployment updates each instance within the deployment group individual
 
 This method is cost-effective, yet it may result in brief downtime if the application cannot tolerate temporary unavailability. A load balancer typically minimizes user impact, except in scenarios of significantly reduced capacity.
 
-![The image illustrates the AWS CodeDeploy in-place deployment process for EC2, showing the flow from a development machine to Amazon S3, GitHub, and EC2 instances. It includes components like deployment groups and auto-scaling groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860278/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Different-Deployment-Strategies-for-Various-AWS-Services/aws-codedeploy-inplace-deployment.jpg)
+![The image illustrates the AWS CodeDeploy in-place deployment process for EC2, showing the flow from a development machine to Amazon S3, GitHub, and EC2 instances. It includes components like deployment groups and auto-scaling groups.](https://kodekloud.com/kk-media/image/upload/v1752860278/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Different-Deployment-Strategies-for-Various-AWS-Services/aws-codedeploy-inplace-deployment.jpg)
 
 ### 2. Blue-Green Deployment
 
@@ -48,19 +48,19 @@ This strategy immediately replaces all instances of a Lambda function with the n
 * The deployment artifact is typically built by CodeBuild.
 * CodeDeploy manages the seamless transition from the old version (e.g., version 1.1) to the new version (e.g., version 1.2).
 
-![The image illustrates the AWS CodeDeploy process for Lambda using an all-at-once deployment strategy, showing a sequence from AWS EC2 to AWS CodeBuild, AWS CodeDeploy, and finally AWS Lambda.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860279/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Different-Deployment-Strategies-for-Various-AWS-Services/aws-codedeploy-lambda-process-diagram.jpg)
+![The image illustrates the AWS CodeDeploy process for Lambda using an all-at-once deployment strategy, showing a sequence from AWS EC2 to AWS CodeBuild, AWS CodeDeploy, and finally AWS Lambda.](https://kodekloud.com/kk-media/image/upload/v1752860279/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Different-Deployment-Strategies-for-Various-AWS-Services/aws-codedeploy-lambda-process-diagram.jpg)
 
 ### 2. Linear Deployment
 
 In a linear deployment, traffic shifts gradually from the current version to the new one over a specified period. For example, CodeDeploy can be set to shift 10% of the traffic every minute. This incremental approach continues until all traffic is directed to the new version.
 
-![The image illustrates AWS CodeDeploy for Lambda with a linear deployment strategy, showing a diagram of traffic shifting between Lambda versions and a deployment status bar indicating progress.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860281/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Different-Deployment-Strategies-for-Various-AWS-Services/aws-codedeploy-lambda-diagram.jpg)
+![The image illustrates AWS CodeDeploy for Lambda with a linear deployment strategy, showing a diagram of traffic shifting between Lambda versions and a deployment status bar indicating progress.](https://kodekloud.com/kk-media/image/upload/v1752860281/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Different-Deployment-Strategies-for-Various-AWS-Services/aws-codedeploy-lambda-diagram.jpg)
 
 ### 3. Canary Deployment
 
 Canary deployments begin by directing a small percentage of traffic (e.g., 10%) to the new version, while the remaining traffic continues to be handled by the existing version. After a monitoring period (for example, five minutes), if the new version proves stable, all traffic is shifted over.
 
-![The image illustrates the AWS CodeDeploy process for Lambda using a canary deployment strategy, showing the flow from code commit to deployment with traffic distribution between original and new versions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860282/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Different-Deployment-Strategies-for-Various-AWS-Services/aws-codedeploy-lambda-canary-deployment.jpg)
+![The image illustrates the AWS CodeDeploy process for Lambda using a canary deployment strategy, showing the flow from code commit to deployment with traffic distribution between original and new versions.](https://kodekloud.com/kk-media/image/upload/v1752860282/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Different-Deployment-Strategies-for-Various-AWS-Services/aws-codedeploy-lambda-canary-deployment.jpg)
 
 ***
 
@@ -72,11 +72,11 @@ For containerized applications running on ECS, the deployment strategies mirror 
 * **Linear:** Gradually transitions traffic in defined increments.
 * **Canary:** Begins with a small portion of traffic being shifted to the new container version, followed by monitoring and then a complete switch once validated.
 
-![The image shows three AWS CodeDeploy deployment strategies for ECS: All-at-Once, Linear, and Canary, each with options for traffic rerouting and deployment configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860283/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Different-Deployment-Strategies-for-Various-AWS-Services/aws-codedeploy-ecs-strategies.jpg)
+![The image shows three AWS CodeDeploy deployment strategies for ECS: All-at-Once, Linear, and Canary, each with options for traffic rerouting and deployment configuration.](https://kodekloud.com/kk-media/image/upload/v1752860283/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Different-Deployment-Strategies-for-Various-AWS-Services/aws-codedeploy-ecs-strategies.jpg)
 
 For further details on ECS canary deployments, visual progress indicators such as traffic shifting phases and status updates clearly depict the gradual process.
 
-![The image illustrates the AWS CodeDeploy process for ECS using a canary deployment strategy, showing initial and incremental traffic shifting phases with progress bars and status updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860284/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Different-Deployment-Strategies-for-Various-AWS-Services/aws-codedeploy-ecs-canary-deployment.jpg)
+![The image illustrates the AWS CodeDeploy process for ECS using a canary deployment strategy, showing initial and incremental traffic shifting phases with progress bars and status updates.](https://kodekloud.com/kk-media/image/upload/v1752860284/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-Different-Deployment-Strategies-for-Various-AWS-Services/aws-codedeploy-ecs-canary-deployment.jpg)
 
 ***
 

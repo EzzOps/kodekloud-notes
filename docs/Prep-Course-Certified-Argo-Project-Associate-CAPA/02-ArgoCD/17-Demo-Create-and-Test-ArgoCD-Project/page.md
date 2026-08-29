@@ -14,9 +14,7 @@ The login flow may prompt:
 * Username (commonly `admin` unless changed)
 * Password
 
-<Callout icon="warning">
-  If the server uses a self-signed certificate, argocd will warn that the certificate is signed by an unknown authority. You can proceed insecurely by answering `y` to the prompt, but for production environments configure TLS correctly to avoid security risks.
-</Callout>
+> **warning** If the server uses a self-signed certificate, argocd will warn that the certificate is signed by an unknown authority. You can proceed insecurely by answering `y` to the prompt, but for production environments configure TLS correctly to avoid security risks.
 
 On successful login you should see:
 
@@ -122,15 +120,11 @@ argocd app list
 * Prefer overlays, separate paths, or separate repositories when deploying distinct environments.
 * For production, configure proper TLS certificates rather than accepting self-signed certificates.
 
-<Callout icon="lightbulb">
-  If multiple Argo CD applications point to the same manifests and overlap resources (same names/namespaces), Argo CD raises SharedResourceWarning. Avoid conflicts by using distinct repository paths, kustomize overlays, or separate namespaces and repositories.
-</Callout>
+> **lightbulb** If multiple Argo CD applications point to the same manifests and overlap resources (same names/namespaces), Argo CD raises SharedResourceWarning. Avoid conflicts by using distinct repository paths, kustomize overlays, or separate namespaces and repositories.
 
 This completes the demo for creating and synchronizing an Argo CD application using the CLI. For more examples and advanced workflows, see the [Argo CD CLI reference](https://argo-cd.readthedocs.io/en/stable/cli_operations/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/ea24d846-8c67-457a-88d8-26a0873c94c7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/ea24d846-8c67-457a-88d8-26a0873c94c7)
 
 
 # Demo Create and Test ArgoCD Project
@@ -157,9 +151,7 @@ Relevant links and references
 
 A Project is a logical grouping of applications in ArgoCD. Projects scope what applications in that group are allowed to use — including which Git repos they can pull from, which cluster destinations and namespaces they can deploy to, and which Kubernetes API kinds they may create. Use projects to enforce team boundaries and reduce blast radius (for example, disallow non-operator teams from creating cluster-scoped resources like ClusterRole).
 
-<Callout icon="warning">
-  ArgoCD ships with a `default` project that is highly permissive (it can pull from any repository, deploy to any destination, and create cluster-level resources). You can modify the `default` project but you cannot delete it.
-</Callout>
+> **warning** ArgoCD ships with a `default` project that is highly permissive (it can pull from any repository, deploy to any destination, and create cluster-level resources). You can modify the `default` project but you cannot delete it.
 
 ## Default / Permissive Project Behavior
 

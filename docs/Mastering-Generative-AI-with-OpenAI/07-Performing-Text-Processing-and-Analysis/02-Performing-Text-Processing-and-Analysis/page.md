@@ -21,11 +21,9 @@ Best practices
 * Delimit large contexts (e.g., using triple backticks) so the model can clearly distinguish input data from the instruction.
 * When requesting structured outputs (JSON, XML, CSV), be explicit about the required schema to minimize parsing errors.
 
-<Callout icon="lightbulb">
-  When embedding large context into prompts, delimit it (for example with triple
+> **lightbulb** When embedding large context into prompts, delimit it (for example with triple
   backticks) so the model can clearly distinguish the source content from the
   instruction.
-</Callout>
 
 Summarization
 
@@ -253,11 +251,9 @@ Further reading and references
 
 Embeddings and similarity search are core techniques used for retrieval-augmented generation and semantic search — topics for a follow-up lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/0bad671a-6a77-4e3b-b63d-6c771ea3087f/lesson/57e895f5-f8b2-4066-a203-8cd242d01870" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/0bad671a-6a77-4e3b-b63d-6c771ea3087f/lesson/57e895f5-f8b2-4066-a203-8cd242d01870)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/0bad671a-6a77-4e3b-b63d-6c771ea3087f/lesson/513d39ab-dcb6-4f67-a208-26949181f4a0" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/0bad671a-6a77-4e3b-b63d-6c771ea3087f/lesson/513d39ab-dcb6-4f67-a208-26949181f4a0)
 
 
 # Performing Text Processing and Analysis
@@ -268,15 +264,11 @@ This article discusses advanced NLP techniques using LLMs for tasks like summari
 
 Welcome back to our deep dive into advanced Natural Language Processing (NLP) techniques powered by Large Language Models (LLMs). With GPT-3.5, GPT-4, and similar models, you can go well beyond simple text completion to perform a suite of tasks—such as summarization, sentiment analysis, translation, and formatting—using a single API endpoint.
 
-<Callout icon="lightbulb">
-  You only need one LLM instance to handle multiple text-based tasks, reducing infrastructure complexity and accelerating development.
-</Callout>
+> **lightbulb** You only need one LLM instance to handle multiple text-based tasks, reducing infrastructure complexity and accelerating development.
 
 Before the rise of LLMs, each capability required its own specialized neural network. Today’s generative AI models are trained so broadly that you can prompt the same model to:
 
-<Frame>
-  ![The image illustrates a large language model (LLM) at the center, with arrows pointing to its applications: summarization, translation, sentiment analysis, and formatting and conversion.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881540/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Performing-Text-Processing-and-Analysis/large-language-model-applications-diagram.jpg)
-</Frame>
+![The image illustrates a large language model (LLM) at the center, with arrows pointing to its applications: summarization, translation, sentiment analysis, and formatting and conversion.](https://kodekloud.com/kk-media/image/upload/v1752881540/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Performing-Text-Processing-and-Analysis/large-language-model-applications-diagram.jpg)
 
 | Task               | Description                                | Example Prompt                                           |
 | ------------------ | ------------------------------------------ | -------------------------------------------------------- |
@@ -294,9 +286,7 @@ In the sections below, we'll explore simple code examples using the [OpenAI API 
 3. Translation
 4. Text Conversion
 
-<Callout icon="triangle-alert">
-  Be mindful of token usage and rate limits when processing large volumes of text. Review the [OpenAI API pricing](https://platform.openai.com/pricing) before running extensive jobs.
-</Callout>
+> **triangle-alert** Be mindful of token usage and rate limits when processing large volumes of text. Review the [OpenAI API pricing](https://platform.openai.com/pricing) before running extensive jobs.
 
 ## Links and References
 
@@ -305,6 +295,4 @@ In the sections below, we'll explore simple code examples using the [OpenAI API 
 * [OpenAI API Documentation](https://platform.openai.com/docs/)
 * [Generative AI Overview (Wikipedia)](https://en.wikipedia.org/wiki/Generative_adversarial_network)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/0bad671a-6a77-4e3b-b63d-6c771ea3087f/lesson/971e03a5-ea68-4a02-9e73-84ea344306c9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/0bad671a-6a77-4e3b-b63d-6c771ea3087f/lesson/971e03a5-ea68-4a02-9e73-84ea344306c9)

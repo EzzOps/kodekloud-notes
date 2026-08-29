@@ -36,9 +36,7 @@ spec:
 
 One potential issue with the current configuration is that the container could run with elevated privileges. In Kubernetes, running a container in privileged mode gives it enhanced access to system resources, which could expose your system to vulnerabilities. For enhanced security, containers that do not require root-level permissions should run in a non-privileged mode.
 
-<Callout icon="lightbulb">
-  The updated configuration below includes a security context that explicitly disables privileged access and sets the root filesystem as read-only. This additional safeguard minimizes the risk of unauthorized changes if the container is compromised.
-</Callout>
+> **lightbulb** The updated configuration below includes a security context that explicitly disables privileged access and sets the root filesystem as read-only. This additional safeguard minimizes the risk of unauthorized changes if the container is compromised.
 
 To address these security concerns, update the deployment with the following enhanced YAML configuration:
 
@@ -106,6 +104,4 @@ By following these steps, you have successfully implemented a more secure deploy
 * [OpenShift Documentation](https://docs.openshift.com/)
 * [Docker Hub](https://hub.docker.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/43e87026-14cb-4cb6-bc0c-d2ae77c53cbb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/43e87026-14cb-4cb6-bc0c-d2ae77c53cbb)

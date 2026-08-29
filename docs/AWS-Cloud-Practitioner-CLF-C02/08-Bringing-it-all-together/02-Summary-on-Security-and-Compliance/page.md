@@ -15,7 +15,7 @@ There are two primary service categories in AWS:
 * **Unmanaged Services:** You are responsible for many security aspects.
 * **Managed Services:** AWS takes care of most security tasks, reducing your workload.
 
-![The image summarizes the AWS Shared Responsibility Model, highlighting customer and AWS responsibilities, user security for unmanaged services, and AWS's role in managed services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861534/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Security-and-Compliance/frame_50.jpg)
+![The image summarizes the AWS Shared Responsibility Model, highlighting customer and AWS responsibilities, user security for unmanaged services, and AWS's role in managed services.](https://kodekloud.com/kk-media/image/upload/v1752861534/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Security-and-Compliance/frame_50.jpg)
 
 > **lightbulb** Review the AWS Shared Responsibility Model thoroughly to understand which areas require your intervention and which are covered by AWS.
 
@@ -30,7 +30,7 @@ AWS provides several tools to simplify compliance management:
 * **Audit Manager:** Automated data collection for audit readiness.
 * **AWS Config:** Continuously monitors resource configurations, ensuring historical tracking for audits.
 
-![The image summarizes the AWS Shared Responsibility Model, highlighting compliance frameworks, AWS Artifact, Compliance Center, Audit Manager, and AWS Config for regulatory adherence.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861536/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Security-and-Compliance/frame_120.jpg)
+![The image summarizes the AWS Shared Responsibility Model, highlighting compliance frameworks, AWS Artifact, Compliance Center, Audit Manager, and AWS Config for regulatory adherence.](https://kodekloud.com/kk-media/image/upload/v1752861536/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Security-and-Compliance/frame_120.jpg)
 
 ## Security Responsibilities Based on Service Type
 
@@ -58,7 +58,7 @@ Every AWS account starts with a root user that has unrestricted access. To enhan
 * Use IAM roles to grant temporary elevated privileges when needed.
 * Practice the principle of least privilege to minimize risk.
 
-![The image illustrates the AWS Shared Responsibility Model, comparing responsibilities across On-Premises, IaaS, PaaS, and SaaS environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861537/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Security-and-Compliance/frame_190.jpg)
+![The image illustrates the AWS Shared Responsibility Model, comparing responsibilities across On-Premises, IaaS, PaaS, and SaaS environments.](https://kodekloud.com/kk-media/image/upload/v1752861537/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Security-and-Compliance/frame_190.jpg)
 
 IAM policies are defined using JSON. Below is an example of a policy document with multiple statements:
 
@@ -95,13 +95,13 @@ In this example:
 * "Action" specifies the AWS operations controlled.
 * "Resource" defines the resources to which the actions apply.
 
-![The image summarizes AWS Identity Access Management, highlighting root user access, IAM responsibilities, user roles, and policy functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861539/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Security-and-Compliance/frame_230.jpg)
+![The image summarizes AWS Identity Access Management, highlighting root user access, IAM responsibilities, user roles, and policy functions.](https://kodekloud.com/kk-media/image/upload/v1752861539/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Security-and-Compliance/frame_230.jpg)
 
 ## AWS Organizations
 
 AWS Organizations simplifies the management of multiple AWS accounts by enabling you to group them based on business needs or service control policies. This approach ensures consistent security governance and streamlined billing processes across the organization.
 
-![The image summarizes AWS Organizations, highlighting account management, organizational units for grouping, and service control policies for account restrictions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861540/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Security-and-Compliance/frame_360.jpg)
+![The image summarizes AWS Organizations, highlighting account management, organizational units for grouping, and service control policies for account restrictions.](https://kodekloud.com/kk-media/image/upload/v1752861540/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Security-and-Compliance/frame_360.jpg)
 
 ## Overview of AWS Security Services
 
@@ -123,7 +123,7 @@ AWS employs a layered security approach, offering services across three main cat
 * **Security Lake:** Consolidates logs from various sources into a query-optimized format.
 * **AWS Macie:** Scans S3 buckets for sensitive data and alerts on findings.
 
-![The image summarizes AWS security resources for detection, including GuardDuty, Detective, CloudTrail, AWS Config, Security Hub, and Security Lake, highlighting their monitoring and analysis functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861541/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Security-and-Compliance/frame_440.jpg)
+![The image summarizes AWS security resources for detection, including GuardDuty, Detective, CloudTrail, AWS Config, Security Hub, and Security Lake, highlighting their monitoring and analysis functions.](https://kodekloud.com/kk-media/image/upload/v1752861541/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Security-and-Compliance/frame_440.jpg)
 
 ### Management-Based Security Resources
 
@@ -136,7 +136,7 @@ AWS employs a layered security approach, offering services across three main cat
 * **Key Management Service (KMS):** Manages encryption keys to protect your data.
 * **CloudHSM:** Provides dedicated hardware for secure cryptographic key management.
 
-![The image summarizes AWS security management resources, including Firewall Manager, Resource Access Manager, Cognito, IAM, Identity Center, and Secrets Manager, highlighting their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861542/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Security-and-Compliance/frame_500.jpg)
+![The image summarizes AWS security management resources, including Firewall Manager, Resource Access Manager, Cognito, IAM, Identity Center, and Secrets Manager, highlighting their functions.](https://kodekloud.com/kk-media/image/upload/v1752861542/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Summary-on-Security-and-Compliance/frame_500.jpg)
 
 > **lightbulb** Understanding AWS's layered security approach is vital for building a secure, compliant, and well-managed cloud infrastructure.
 

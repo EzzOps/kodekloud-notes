@@ -6,7 +6,7 @@ This lesson guides you through creating and configuring an Amazon OpenSearch dom
 
 In this lesson, we guide you through working with Amazon OpenSearch by creating and configuring an OpenSearch domain. A domain represents an OpenSearch cluster with specific settings, instance types, instance counts, and storage resources. In this demo, our domain is named "demo."
 
-![The image shows an AWS OpenSearch Service interface for creating a new domain, with options for domain name, creation method, and engine version. A summary of the configuration is displayed on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865190/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-OpenSearch-Demo/aws-opensearch-create-domain-interface.jpg)
+![The image shows an AWS OpenSearch Service interface for creating a new domain, with options for domain name, creation method, and engine version. A summary of the configuration is displayed on the right.](https://kodekloud.com/kk-media/image/upload/v1752865190/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-OpenSearch-Demo/aws-opensearch-create-domain-interface.jpg)
 
 ## Domain Creation: Easy Create vs. Standard Create
 
@@ -44,7 +44,7 @@ Configure your storage preferences:
 
 Optionally, you can enable a dedicated master node; however, for this demonstration, that option remains disabled.
 
-![The image shows an AWS OpenSearch Service configuration screen, detailing options for data storage, node types, and encryption settings. A summary panel on the right provides an overview of the selected configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865191/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-OpenSearch-Demo/aws-opensearch-service-configuration.jpg)
+![The image shows an AWS OpenSearch Service configuration screen, detailing options for data storage, node types, and encryption settings. A summary panel on the right provides an overview of the selected configurations.](https://kodekloud.com/kk-media/image/upload/v1752865191/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-OpenSearch-Demo/aws-opensearch-service-configuration.jpg)
 
 ### Network and Access Control Settings
 
@@ -52,11 +52,11 @@ Scroll down to configure network settings. For this demo, choose public access. 
 
 For access control, you have two options: use IAM or create a master user. In this example, we create a master user by entering a default master username and password that meet security requirements.
 
-![The image shows an AWS console screen for setting up fine-grained access control in OpenSearch, with options for creating a master user and configuring authentication settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865193/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-OpenSearch-Demo/aws-console-opensearch-access-control.jpg)
+![The image shows an AWS console screen for setting up fine-grained access control in OpenSearch, with options for creating a master user and configuring authentication settings.](https://kodekloud.com/kk-media/image/upload/v1752865193/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-OpenSearch-Demo/aws-console-opensearch-access-control.jpg)
 
 Additional options include enabling SAM authentication or Amazon Cognito authentication. Under access policies, this demo uses fine-grained access control without further modifications.
 
-![The image shows an AWS console screen for creating a domain, with options for domain access policy and encryption settings. A summary panel on the right displays configuration details like engine version, data nodes, and network access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865194/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-OpenSearch-Demo/aws-console-domain-creation-settings.jpg)
+![The image shows an AWS console screen for creating a domain, with options for domain access policy and encryption settings. A summary panel on the right displays configuration details like engine version, data nodes, and network access.](https://kodekloud.com/kk-media/image/upload/v1752865194/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-OpenSearch-Demo/aws-console-domain-creation-settings.jpg)
 
 Leave the remaining settings (such as automatic software updates) as default and deploy your cluster.
 
@@ -74,13 +74,13 @@ At this point, the cluster will be empty. OpenSearch provides a demo dataset to 
 
 When adding data, you will see three sample datasets. For this lesson, select the **e-commerce orders** dataset. After installation, click "view data" to explore the new configurations created automatically within OpenSearch.
 
-![The image shows an eCommerce dashboard with various data visualizations, including transaction statistics, sales by gender, average sales price, total revenue, and sales by category.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865195/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-OpenSearch-Demo/ecommerce-dashboard-data-visualizations.jpg)
+![The image shows an eCommerce dashboard with various data visualizations, including transaction statistics, sales by gender, average sales price, total revenue, and sales by category.](https://kodekloud.com/kk-media/image/upload/v1752865195/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-OpenSearch-Demo/ecommerce-dashboard-data-visualizations.jpg)
 
 Within the OpenSearch Dashboard, navigate to **Management > Index Management > Indices** to view the indices created for the dataset. By selecting the specific e-commerce dataset, you can review the index mappings and see which fields are indexed.
 
 Switch to the **Discover** tab in the OpenSearch Dashboard to view all data points. By default, the date filter covers the last seven days, but you can adjust this range as needed.
 
-![The image shows a dashboard from OpenSearch with a bar chart displaying order data over time and a detailed log of transactions below. The interface includes filters and options for data analysis.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865196/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-OpenSearch-Demo/opensearch-dashboard-order-data-chart.jpg)
+![The image shows a dashboard from OpenSearch with a bar chart displaying order data over time and a detailed log of transactions below. The interface includes filters and options for data analysis.](https://kodekloud.com/kk-media/image/upload/v1752865196/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-OpenSearch-Demo/opensearch-dashboard-order-data-chart.jpg)
 
 Filters allow you to refine the data further. For instance, selecting the "manufacturer" field displays the top five manufacturers. You can also add filters for fields like "day of week" (e.g., filtering for Saturday) to combine multiple criteria.
 
@@ -160,7 +160,7 @@ If successful, your response will indicate that documents have been added (statu
 
 After uploading, verify the data in the **Index Management** section of the OpenSearch Dashboard by reviewing the "movies" index mappings. This view will display fields such as actor, director, genre, title, and year.
 
-![The image shows an OpenSearch Dashboards interface displaying details of a "movies" index, including its overview and index mappings with fields like actor, director, genre, title, and year.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865197/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-OpenSearch-Demo/opensearch-dashboards-movies-index.jpg)
+![The image shows an OpenSearch Dashboards interface displaying details of a "movies" index, including its overview and index mappings with fields like actor, director, genre, title, and year.](https://kodekloud.com/kk-media/image/upload/v1752865197/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-OpenSearch-Demo/opensearch-dashboards-movies-index.jpg)
 
 ### Searching Data via Dashboards
 
@@ -170,7 +170,7 @@ To search for data in OpenSearch Dashboards:
 2. Go to the **Discover** tab.
 3. Select the "movies" index and run queries. For example, search for movies featuring a specific actor like Robert Downey Jr.
 
-![The image shows an OpenSearch Dashboards interface with a filter being edited to search for movies by a specific actor. The results display movie details such as genre, year, and title.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865198/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-OpenSearch-Demo/opensearch-dashboards-movie-filter.jpg)
+![The image shows an OpenSearch Dashboards interface with a filter being edited to search for movies by a specific actor. The results display movie details such as genre, year, and title.](https://kodekloud.com/kk-media/image/upload/v1752865198/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-OpenSearch-Demo/opensearch-dashboards-movie-filter.jpg)
 
 ## Deleting the OpenSearch Domain
 
@@ -180,7 +180,7 @@ To conclude this lesson, delete your OpenSearch cluster by following these steps
 2. Select your "demo" domain.
 3. Click **delete** and confirm by typing the domain name ("demo") into the confirmation dialog.
 
-![The image shows a confirmation dialog box for deleting a domain named "demo" in the Amazon OpenSearch Service console, requiring the user to type "demo" to confirm the deletion.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865199/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-OpenSearch-Demo/delete-domain-confirmation-dialog.jpg)
+![The image shows a confirmation dialog box for deleting a domain named "demo" in the Amazon OpenSearch Service console, requiring the user to type "demo" to confirm the deletion.](https://kodekloud.com/kk-media/image/upload/v1752865199/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-OpenSearch-Demo/delete-domain-confirmation-dialog.jpg)
 
 > **lightbulb** This concludes our lesson on Amazon OpenSearch. Enjoy exploring the capabilities and features that OpenSearch has to offer!
 

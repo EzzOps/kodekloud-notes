@@ -17,9 +17,7 @@ Managing a Linux system’s power state correctly ensures data integrity and giv
 
 Most modern Linux distributions use systemd, and `systemctl` is the primary tool to control power states.
 
-<Callout icon="lightbulb">
-  All `systemctl` commands require root privileges. Prepend `sudo` if you’re not running as root.
-</Callout>
+> **lightbulb** All `systemctl` commands require root privileges. Prepend `sudo` if you’re not running as root.
 
 | Action        | As Root                | As Non-Root User            |
 | ------------- | ---------------------- | --------------------------- |

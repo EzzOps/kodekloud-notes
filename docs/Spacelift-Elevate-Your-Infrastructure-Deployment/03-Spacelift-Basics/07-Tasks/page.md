@@ -98,13 +98,9 @@ After defining your policy, you need to attach it to your stack:
 2. Navigate to the Policies section.
 3. Attach the "instance size policy" to your stack.
 
-<Callout icon="lightbulb">
-  The dashboard interface provides the necessary options to attach policies. If you do not see the visual guide, simply locate the Policies section under your stack settings.
-</Callout>
+> **lightbulb** The dashboard interface provides the necessary options to attach policies. If you do not see the visual guide, simply locate the Policies section under your stack settings.
 
-<Frame>
-  ![The image shows a Spacelift dashboard interface, specifically the settings page for a stack named "spacelift-demo," with options to attach policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884081/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Policies/spacelift-dashboard-settings-spacelift-demo.jpg)
-</Frame>
+![The image shows a Spacelift dashboard interface, specifically the settings page for a stack named "spacelift-demo," with options to attach policies.](https://kodekloud.com/kk-media/image/upload/v1752884081/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Policies/spacelift-dashboard-settings-spacelift-demo.jpg)
 
 Now, run your plan. Since the policy condition always evaluates to true, the policy will deny the plan during the planning phase. The console output may include logs resembling the following:
 
@@ -225,9 +221,7 @@ deny["Policy was denied"] {
 sample { true }
 ```
 
-<Callout icon="triangle-alert">
-  If you encounter an error stating that the "sanitized" function is undefined, verify that you are using the correct function name or adjust your approach according to your environment's specifications.
-</Callout>
+> **triangle-alert** If you encounter an error stating that the "sanitized" function is undefined, verify that you are using the correct function name or adjust your approach according to your environment's specifications.
 
 After pushing your changes via git, Spacelift will run the plan. The policy will deny the plan if the instance type does not match the approved value. For instance, the Terraform plan logs may display:
 
@@ -273,13 +267,9 @@ Now, the plan should proceed because the instance type complies with the enforce
 
 Once your policy is active, use the Spacelift dashboard to verify its status and view detailed logs. The dashboard lists all policies attached to your stack along with information about their creation and update times.
 
-<Callout icon="lightbulb">
-  The image below provides an illustrative example of the dashboard interface for managing policies. All necessary functionality is accessible through the dashboard, regardless of the visual layout.
-</Callout>
+> **lightbulb** The image below provides an illustrative example of the dashboard interface for managing policies. All necessary functionality is accessible through the dashboard, regardless of the visual layout.
 
-<Frame>
-  ![The image shows a dashboard interface for managing policies, with a list of policies including "instance size policy" and "Validate Instance Size," along with their creation and update times. The sidebar includes options like Stacks, Blueprints, and Modules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884082/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Policies/policy-management-dashboard-interface.jpg)
-</Frame>
+![The image shows a dashboard interface for managing policies, with a list of policies including "instance size policy" and "Validate Instance Size," along with their creation and update times. The sidebar includes options like Stacks, Blueprints, and Modules.](https://kodekloud.com/kk-media/image/upload/v1752884082/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-Policies/policy-management-dashboard-interface.jpg)
 
 ────────────────────────────
 
@@ -289,9 +279,7 @@ This article demonstrated how to create, test, and update a Spacelift plan polic
 
 Happy policy building!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/74dbb4df-716f-4fa2-92e9-a223a3a697ca/lesson/90718dac-dc08-4897-aeff-bcccc7781bb0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/74dbb4df-716f-4fa2-92e9-a223a3a697ca/lesson/90718dac-dc08-4897-aeff-bcccc7781bb0)
 
 
 # Tasks
@@ -302,9 +290,7 @@ This article explains how to execute one-off Terraform commands within Spacelift
 
 When working with Spacelift, there may be occasions when you need to run one-off Terraform commands—such as "terraform state list"—to troubleshoot issues or quickly gather important infrastructure details. This article explains how to execute these commands within Spacelift in a streamlined manner.
 
-<Callout icon="lightbulb">
-  One-off commands can be especially useful when you need immediate feedback on the state of your infrastructure without altering your main configuration processes.
-</Callout>
+> **lightbulb** One-off commands can be especially useful when you need immediate feedback on the state of your infrastructure without altering your main configuration processes.
 
 ## Running One-Off Terraform Commands
 
@@ -328,12 +314,8 @@ Below is a sample output demonstrating a successful one-off command execution:
 [0m[32m[0161AZ1ZKRCFPHW9RCHMBOX] calculating state checksum...
 ```
 
-<Callout icon="lightbulb">
-  This facility not only helps in troubleshooting but also assists in gathering real-time state information without impacting your ongoing infrastructure operations.
-</Callout>
+> **lightbulb** This facility not only helps in troubleshooting but also assists in gathering real-time state information without impacting your ongoing infrastructure operations.
 
 Using one-off Terraform commands in Spacelift provides a quick and efficient method to inspect and diagnose your infrastructure, ensuring that you can address issues as they arise. For additional information on integrating Spacelift with Terraform workflows, refer to the [Spacelift Documentation](https://spacelift.io/docs) and [Terraform Documentation](https://www.terraform.io/docs).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/74dbb4df-716f-4fa2-92e9-a223a3a697ca/lesson/36939112-f096-4fad-bf68-d50f6ef8217c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/74dbb4df-716f-4fa2-92e9-a223a3a697ca/lesson/36939112-f096-4fad-bf68-d50f6ef8217c)

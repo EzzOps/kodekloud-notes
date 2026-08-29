@@ -12,9 +12,7 @@ A pointer is a variable that stores the memory address of another variable. This
 
 On the other hand, a reference in Rust is a high-level abstraction akin to pointers but comes with additional safety features. References in Rust are guaranteed to be valid and can never be null, making them the preferred method for accessing data safely.
 
-<Frame>
-  ![The image explains the concepts of pointers and references, highlighting that pointers store memory addresses and are low-level, while references in Rust are high-level, safe, and cannot be null.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883952/notes-assets/images/Rust-Programming-References-and-Borrowing/pointers-references-rust-explained.jpg)
-</Frame>
+![The image explains the concepts of pointers and references, highlighting that pointers store memory addresses and are low-level, while references in Rust are high-level, safe, and cannot be null.](https://kodekloud.com/kk-media/image/upload/v1752883952/notes-assets/images/Rust-Programming-References-and-Borrowing/pointers-references-rust-explained.jpg)
 
 ## Immutable References
 
@@ -34,13 +32,9 @@ println!("The value of x is: {}", y); // You can read x, but cannot modify it th
 
 Here, the ampersand (&) operator creates an immutable reference to x. While y provides access to x's value, it does not have the ability to modify it.
 
-<Frame>
-  ![The image is a diagram explaining immutable references in Rust, showing how a reference y points to a value x using the \&x syntax. It highlights that x holds the value 10, and y does not own the value, allowing x to remain valid even if y goes out of scope.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883953/notes-assets/images/Rust-Programming-References-and-Borrowing/immutable-references-rust-diagram.jpg)
-</Frame>
+![The image is a diagram explaining immutable references in Rust, showing how a reference y points to a value x using the \&x syntax. It highlights that x holds the value 10, and y does not own the value, allowing x to remain valid even if y goes out of scope.](https://kodekloud.com/kk-media/image/upload/v1752883953/notes-assets/images/Rust-Programming-References-and-Borrowing/immutable-references-rust-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Immutable references enable safe data access without transferring ownership, ensuring your original data remains intact.
-</Callout>
+> **lightbulb** Immutable references enable safe data access without transferring ownership, ensuring your original data remains intact.
 
 ## Borrowing Versus Ownership
 
@@ -79,10 +73,6 @@ fn calculate_length(s: &String) -> usize {
 
 In this improved version, the `calculate_length` function borrows the string by accepting a reference (`&String`) as its parameter. Consequently, the main function retains ownership of `s1`, enabling its continued use post-function call.
 
-<Callout icon="lightbulb">
-  Borrowing is a core feature in Rust that allows efficient access to data without compromising safety or ownership.
-</Callout>
+> **lightbulb** Borrowing is a core feature in Rust that allows efficient access to data without compromising safety or ownership.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/9d19fff4-3911-42ba-9926-107573d375fd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/9d19fff4-3911-42ba-9926-107573d375fd)

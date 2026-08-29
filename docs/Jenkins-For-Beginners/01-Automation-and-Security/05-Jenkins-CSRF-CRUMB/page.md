@@ -8,17 +8,13 @@ In this lesson, you will learn how to generate and use Jenkins CSRF crumb tokens
 
 Jenkins protects you by generating a unique, randomly created token (crumb) for each user session. This token is produced by hashing details such as the username, session ID, IP address, and a unique Jenkins salt. When a submission is made, these details must match for the crumb to be considered valid.
 
-<Callout icon="lightbulb">
-  Jenkins enables CSRF protection by default. It is highly recommended to keep this protection enabled to prevent unauthorized requests.
-</Callout>
+> **lightbulb** Jenkins enables CSRF protection by default. It is highly recommended to keep this protection enabled to prevent unauthorized requests.
 
 ## Configuring CSRF Protection
 
 By default, CSRF protection is enabled in Jenkins. Administrators can verify the settings by navigating to **Manage Jenkins > Configure Global Security**. In the security configuration, look for the CSRF protection settings, as shown in the image below:
 
-<Frame>
-  ![The image shows a webpage from Jenkins documentation about configuring CSRF protection, with a focus on the "Crumb Issuer" settings. The left sidebar contains a navigation menu for various Jenkins topics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879428/notes-assets/images/Jenkins-For-Beginners-Jenkins-CSRF-CRUMB/jenkins-csrf-protection-crumb-issuer.jpg)
-</Frame>
+![The image shows a webpage from Jenkins documentation about configuring CSRF protection, with a focus on the "Crumb Issuer" settings. The left sidebar contains a navigation menu for various Jenkins topics.](https://kodekloud.com/kk-media/image/upload/v1752879428/notes-assets/images/Jenkins-For-Beginners-Jenkins-CSRF-CRUMB/jenkins-csrf-protection-crumb-issuer.jpg)
 
 If necessary, it is possible to disable CSRF protection by setting the following system property:
 
@@ -28,9 +24,7 @@ hudson.security.csrf.GlobalCrumbIssuerConfiguration.DISABLE_CSRF_PROTECTION=true
 
 Scrolling down in the Jenkins security configuration reveals that the default crumb issuer is selected by default:
 
-<Frame>
-  ![The image shows a Jenkins security configuration page with options for CSRF protection, copy artifact compatibility mode, and Git plugin access tokens. The "Default Crumb Issuer" is selected, and there are buttons to save or apply changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879429/notes-assets/images/Jenkins-For-Beginners-Jenkins-CSRF-CRUMB/jenkins-security-configuration-csrf.jpg)
-</Frame>
+![The image shows a Jenkins security configuration page with options for CSRF protection, copy artifact compatibility mode, and Git plugin access tokens. The "Default Crumb Issuer" is selected, and there are buttons to save or apply changes.](https://kodekloud.com/kk-media/image/upload/v1752879429/notes-assets/images/Jenkins-For-Beginners-Jenkins-CSRF-CRUMB/jenkins-security-configuration-csrf.jpg)
 
 ## Generating and Using the Crumb Token
 
@@ -63,9 +57,7 @@ This command outputs a JSON object similar to:
 }
 ```
 
-<Callout icon="lightbulb">
-  To view the full response headers, remove the `jq` filter and enable verbose output with the `-v` flag:
-</Callout>
+> **lightbulb** To view the full response headers, remove the `jq` filter and enable verbose output with the `-v` flag:
 
 ```bash theme={null}
 curl -v -s \

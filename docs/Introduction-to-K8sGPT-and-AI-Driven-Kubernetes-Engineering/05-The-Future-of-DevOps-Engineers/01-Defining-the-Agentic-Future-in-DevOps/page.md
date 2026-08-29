@@ -8,9 +8,7 @@ Artificial intelligence (AI) is evolving from a passive helper to an active coll
 
 ## Types of AI Agents
 
-<Frame>
-  ![The image is a diagram showing different types of AI agents, including simple reflex, model-based reflex, goal-based, utilities-based, learning, and hierarchical agents. It also includes decorative elements and a person in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878985/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Defining-the-Agentic-Future-in-DevOps/ai-agents-types-diagram.jpg)
-</Frame>
+![The image is a diagram showing different types of AI agents, including simple reflex, model-based reflex, goal-based, utilities-based, learning, and hierarchical agents. It also includes decorative elements and a person in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878985/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Defining-the-Agentic-Future-in-DevOps/ai-agents-types-diagram.jpg)
 
 Below is an overview of the main AI agent categories and their Kubernetes applications:
 
@@ -63,16 +61,12 @@ Hierarchical agents manage decisions across multiple layers—from low-level con
 4. **Intelligent Collaboration**\
    Agents can generate insights, propose experiments, or request policy updates through chat interfaces, maintaining an interactive dialogue with engineers.
 
-<Frame>
-  ![The image displays a slide titled "Key Features" with four points: Autonomous problem-solving, Continuous learning and improvement, Predictive and Proactive, and Intelligent Collaboration. There is also a person in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878986/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Defining-the-Agentic-Future-in-DevOps/key-features-autonomous-learning-collaboration.jpg)
-</Frame>
+![The image displays a slide titled "Key Features" with four points: Autonomous problem-solving, Continuous learning and improvement, Predictive and Proactive, and Intelligent Collaboration. There is also a person in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878986/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Defining-the-Agentic-Future-in-DevOps/key-features-autonomous-learning-collaboration.jpg)
 
 5. **Cross-System Optimization**\
    Viewing the CI/CD pipeline as an interconnected ecosystem, agents optimize repository workflows, build jobs, artifact storage, test suites, and multi-environment rollouts simultaneously.
 
-<Callout icon="lightbulb">
-  To achieve optimal results, configure agents with clear policies, performance budgets, and rollback strategies.
-</Callout>
+> **lightbulb** To achieve optimal results, configure agents with clear policies, performance budgets, and rollback strategies.
 
 ***
 
@@ -90,13 +84,9 @@ Hierarchical agents manage decisions across multiple layers—from low-level con
 4. **Democratization of DevOps**\
    Sophisticated agents lower the barrier to entry—empowering newcomers to manage large-scale environments while experts tackle strategic initiatives.
 
-<Frame>
-  ![The image outlines the potential impact on DevOps roles and processes, highlighting shifts in human roles, accelerated innovation, enhanced reliability and performance, and the democratization of DevOps. A person is also visible in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878987/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Defining-the-Agentic-Future-in-DevOps/devops-impact-roles-processes-diagram.jpg)
-</Frame>
+![The image outlines the potential impact on DevOps roles and processes, highlighting shifts in human roles, accelerated innovation, enhanced reliability and performance, and the democratization of DevOps. A person is also visible in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878987/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Defining-the-Agentic-Future-in-DevOps/devops-impact-roles-processes-diagram.jpg)
 
-<Callout icon="triangle-alert">
-  AI agents should operate under human oversight with clear approval workflows to prevent unintended system changes.
-</Callout>
+> **triangle-alert** AI agents should operate under human oversight with clear approval workflows to prevent unintended system changes.
 
 ***
 
@@ -109,6 +99,4 @@ Hierarchical agents manage decisions across multiple layers—from low-level con
 
 As AI agents evolve from simple reflex systems to hierarchical orchestrators, the DevOps landscape will become increasingly autonomous, predictive, and collaborative—reshaping how teams architect, deploy, and manage robust cloud-native environments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-k8sgpt-and-ai-driven-kubernetes-engineering/module/9c3332bd-1119-4acd-a297-b06465d775a9/lesson/a028be67-01d8-4aa4-bd1d-dd6ec8ecc9f2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-k8sgpt-and-ai-driven-kubernetes-engineering/module/9c3332bd-1119-4acd-a297-b06465d775a9/lesson/a028be67-01d8-4aa4-bd1d-dd6ec8ecc9f2)

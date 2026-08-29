@@ -12,15 +12,11 @@ A ConfigMap is a Kubernetes API resource used to store configuration data as key
 
 For instance, when deploying a Pod within a Deployment, you might need to pass in parameters such as a database username or database name. ConfigMaps enable you to provide these details without hardcoding them into your Deployment manifests.
 
-<Frame>
-  ![The image illustrates a concept of injecting containers with configuration data using a ConfigMap, featuring icons and a "Deployment" label.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882714/notes-assets/images/OpenShift-4-Config-Map-Overview/configmap-injecting-containers-deployment.jpg)
-</Frame>
+![The image illustrates a concept of injecting containers with configuration data using a ConfigMap, featuring icons and a "Deployment" label.](https://kodekloud.com/kk-media/image/upload/v1752882714/notes-assets/images/OpenShift-4-Config-Map-Overview/configmap-injecting-containers-deployment.jpg)
 
 Using ConfigMaps to pass environment variables or other configuration data at runtime enhances the flexibility of your containerized applications. This method improves code reusability and streamlines updates—if configuration changes, you update the ConfigMap rather than modifying multiple resource manifests.
 
-<Frame>
-  ![The image is a diagram illustrating a "ConfigMap" with elements like environment variables, configuration data, and parameters, alongside a gear icon. It includes red dropdown icons and text about adding environment variables and config data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882716/notes-assets/images/OpenShift-4-Config-Map-Overview/configmap-environment-variables-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating a "ConfigMap" with elements like environment variables, configuration data, and parameters, alongside a gear icon. It includes red dropdown icons and text about adding environment variables and config data.](https://kodekloud.com/kk-media/image/upload/v1752882716/notes-assets/images/OpenShift-4-Config-Map-Overview/configmap-environment-variables-diagram.jpg)
 
 ## Working with ConfigMaps
 
@@ -32,9 +28,7 @@ There are multiple ways to create and manage ConfigMaps in your cluster:
 2. **Using CLI Commands:**\
    You can quickly create and manage ConfigMaps via command-line tools. For Kubernetes, you'd use `kubectl`, and for OpenShift, the equivalent CLI command is `oc`.
 
-<Callout icon="lightbulb">
-  You can inspect and troubleshoot ConfigMaps using commands like `oc describe configmap` and display all ConfigMaps with `oc get configmap`.
-</Callout>
+> **lightbulb** You can inspect and troubleshoot ConfigMaps using commands like `oc describe configmap` and display all ConfigMaps with `oc get configmap`.
 
 Below is an example of common commands for working with ConfigMaps:
 
@@ -46,6 +40,4 @@ oc get configmap
 
 With an understanding of ConfigMaps and how to manage them, let’s dive into a demo that shows ConfigMaps in action within a real-world scenario.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/4c58f7aa-65e7-48c9-a199-83985f75922d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/4c58f7aa-65e7-48c9-a199-83985f75922d)

@@ -10,9 +10,7 @@ Recoverable errors occur when an operation might fail, but the failure can be ma
 
 This powerful type system helps prevent common bugs by forcing developers to handle potential errors explicitly.
 
-<Frame>
-  ![The image explains "Recoverable Errors" using two concepts: Result\<T, E>, which indicates success with Ok(T) or failure with Err(E), and Option\<T>, which contains a value with Some(T) or indicates absence with None.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883849/notes-assets/images/Rust-Programming-Recoverable-Errors/recoverable-errors-result-option-diagram.jpg)
-</Frame>
+![The image explains "Recoverable Errors" using two concepts: Result\<T, E>, which indicates success with Ok(T) or failure with Err(E), and Option\<T>, which contains a value with Some(T) or indicates absence with None.](https://kodekloud.com/kk-media/image/upload/v1752883849/notes-assets/images/Rust-Programming-Recoverable-Errors/recoverable-errors-result-option-diagram.jpg)
 
 ## The Result Type in Detail
 
@@ -164,9 +162,7 @@ When working with recoverable errors in Rust, keep these best practices in mind:
 4. Utilize combinators like `map`, `and_then`, and `unwrap_or_else` to handle errors gracefully.
 5. Handle errors at appropriate points in your code to avoid excessive error propagation.
 
-<Callout icon="lightbulb">
-  For a quick reference on Rust error handling, consult the [Rust Error Handling Guide](https://doc.rust-lang.org/book/ch09-00-error-handling.html).
-</Callout>
+> **lightbulb** For a quick reference on Rust error handling, consult the [Rust Error Handling Guide](https://doc.rust-lang.org/book/ch09-00-error-handling.html).
 
 Consider the following consolidated example, which demonstrates the use of both `Result` and `Option` along with the `unwrap_or_else` method:
 
@@ -215,10 +211,6 @@ Error: Cannot find the square root of a negative number.
 Square root result: 0
 ```
 
-<Callout icon="lightbulb">
-  By following these techniques, you ensure your Rust applications can handle errors robustly, allowing them to continue operating smoothly even under unexpected conditions.
-</Callout>
+> **lightbulb** By following these techniques, you ensure your Rust applications can handle errors robustly, allowing them to continue operating smoothly even under unexpected conditions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/29fbe393-bae3-4a16-8fc5-a854a2400daa/lesson/6846e5a9-07f1-47c2-a41d-2b8b1157ed4b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/29fbe393-bae3-4a16-8fc5-a854a2400daa/lesson/6846e5a9-07f1-47c2-a41d-2b8b1157ed4b)

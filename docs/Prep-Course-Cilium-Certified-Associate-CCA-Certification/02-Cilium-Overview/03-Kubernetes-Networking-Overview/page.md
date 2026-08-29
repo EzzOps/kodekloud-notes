@@ -43,9 +43,7 @@ By default, Kubernetes networking is permissive: any pod can reach any other pod
   <img alt="A slide titled &#x22;Kubernetes Networking Model – Network Policy&#x22; showing frontend and backend pods (IPs 172.16.0.3 and 172.16.0.4) and a database pod (172.16.0.5) with a network policy that permits traffic to the database on port 5436 only from the backend pod." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Kubernetes defines the NetworkPolicy API, but enforcement depends on the cluster’s CNI plugin. If the CNI does not implement NetworkPolicy semantics, the policies will not be enforced.
-</Callout>
+> **lightbulb** Kubernetes defines the NetworkPolicy API, but enforcement depends on the cluster’s CNI plugin. If the CNI does not implement NetworkPolicy semantics, the policies will not be enforced.
 
 ## Kubernetes does not ship full data-plane networking
 
@@ -55,9 +53,7 @@ Kubernetes itself does not provide pod IP allocation, overlay routing, or Networ
   <img alt="A slide titled &#x22;Kubernetes Networking Model&#x22; showing a central Kubernetes icon labeled &#x22;Kubernetes Limitations&#x22; with three connected teal bars listing &#x22;No IP address assignment,&#x22; &#x22;Communication barriers,&#x22; and &#x22;Non-functional network policies.&#x22;" />
 </Frame>
 
-<Callout icon="warning">
-  If a cluster is created without a conformant CNI plugin, pods will not get IP addresses from a Pod CIDR and cluster networking (including NetworkPolicy enforcement) will not work.
-</Callout>
+> **warning** If a cluster is created without a conformant CNI plugin, pods will not get IP addresses from a Pod CIDR and cluster networking (including NetworkPolicy enforcement) will not work.
 
 ## Choose a conformant CNI plugin
 
@@ -104,6 +100,4 @@ With this foundation you’ll be better prepared to understand what Cilium imple
 * [Calico](https://projectcalico.org/)
 * [Flannel](https://github.com/flannel-io/flannel)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/9c9fa5ec-2721-4654-9383-5cb9b264e8b6/lesson/1dd04108-4f90-43e9-9358-976fec112d91" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/9c9fa5ec-2721-4654-9383-5cb9b264e8b6/lesson/1dd04108-4f90-43e9-9358-976fec112d91)

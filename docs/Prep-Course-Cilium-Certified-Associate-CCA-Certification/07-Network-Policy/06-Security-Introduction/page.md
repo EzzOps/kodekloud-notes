@@ -24,13 +24,9 @@ kubectl -n kube-system exec cilium-pvq7s -- hubble observe flows -t policy-verdi
 # Jun  3 07:00:52.959: default/backend-7d965dd744-gvpmt:53198 (ID:7661) -> default/db-584f4c666-wjfkq:80 (ID:6942) policy-verdict:L3-Only INGRESS ALLOWED (TCP Flags: SYN)
 ```
 
-<Callout icon="lightbulb">
-  Policy audit mode is ideal for testing and validating network policies safely. Use it to identify unexpected denies and tune your rules before switching to enforcement.
-</Callout>
+> **lightbulb** Policy audit mode is ideal for testing and validating network policies safely. Use it to identify unexpected denies and tune your rules before switching to enforcement.
 
-<Callout icon="warning">
-  Audit mode does not provide network isolation or enforce security controls. Do not rely on audit mode for protection — enable policy enforcement only after you have validated the behavior.
-</Callout>
+> **warning** Audit mode does not provide network isolation or enforce security controls. Do not rely on audit mode for protection — enable policy enforcement only after you have validated the behavior.
 
 Links and references
 
@@ -39,9 +35,7 @@ Links and references
 * Hubble (observability): [https://docs.cilium.io/en/stable/gettingstarted/hubble/](https://docs.cilium.io/en/stable/gettingstarted/hubble/)
 * Cilium documentation: [https://docs.cilium.io/](https://docs.cilium.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/bf652c52-bb30-4bcc-9d18-c703f7b3e88a/lesson/8cb4e165-c24d-4539-b5f3-d76923682758" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/bf652c52-bb30-4bcc-9d18-c703f7b3e88a/lesson/8cb4e165-c24d-4539-b5f3-d76923682758)
 
 
 # Security Introduction
@@ -61,9 +55,7 @@ What this page covers:
 * Kubernetes NetworkPolicy — the native API for expressing allowed traffic between pods, namespaces, and IP blocks.
 * Cilium NetworkPolicy (CNP) and Clusterwide CiliumNetworkPolicy (CCNP) — Cilium’s extended, eBPF-based policy types that add identity-based selectors, richer L7 rules, and cluster-scoped enforcement.
 
-<Callout icon="lightbulb">
-  Kubernetes NetworkPolicy is opt-in: if no policies select a pod, that pod remains reachable by other pods. When a pod is selected by one or more NetworkPolicy resources, traffic is restricted according to those policies, allowing you to adopt a least-privilege model for the selected pods.
-</Callout>
+> **lightbulb** Kubernetes NetworkPolicy is opt-in: if no policies select a pod, that pod remains reachable by other pods. When a pod is selected by one or more NetworkPolicy resources, traffic is restricted according to those policies, allowing you to adopt a least-privilege model for the selected pods.
 
 Why use Cilium for network security
 
@@ -100,10 +92,6 @@ Links and references
 * [Cilium Network Policy concepts](https://docs.cilium.io/en/stable/policy/)
 * [Cilium Hubble observability](https://docs.cilium.io/en/stable/gettingstarted/hubble/)
 
-<Callout icon="lightbulb">
-  Tip: Use `kubectl describe` and Cilium’s `hubble` tools to observe which policy matches traffic during testing. This helps iterate policies without risking production outages.
-</Callout>
+> **lightbulb** Tip: Use `kubectl describe` and Cilium’s `hubble` tools to observe which policy matches traffic during testing. This helps iterate policies without risking production outages.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/bf652c52-bb30-4bcc-9d18-c703f7b3e88a/lesson/f6656d91-c2cc-4aaf-ae72-f6cb30fd1d35" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/bf652c52-bb30-4bcc-9d18-c703f7b3e88a/lesson/f6656d91-c2cc-4aaf-ae72-f6cb30fd1d35)

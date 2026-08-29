@@ -8,39 +8,39 @@ Welcome to this technical lesson on Network Access Control Lists (NACLs). In thi
 
 Before you begin testing NACLs, ensure that your EC2 instances have security groups configured correctly to avoid interference. Security groups are stateful and typically control traffic for individual instances, whereas NACLs filter traffic for the entire subnet. In our scenario, we configure our security groups to allow all traffic so that NACLs become the primary filter.
 
-![The image shows an AWS EC2 Management Console with two running instances, "server-2" and "server1," both of type t2.micro, with details of "server1" displayed below.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865621/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-ec2-management-console-instances.jpg)
+![The image shows an AWS EC2 Management Console with two running instances, "server-2" and "server1," both of type t2.micro, with details of "server1" displayed below.](https://kodekloud.com/kk-media/image/upload/v1752865621/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-ec2-management-console-instances.jpg)
 
 ## Step 1: Verifying Security Group Settings
 
 Begin by verifying the security groups associated with your servers. For example, one server might be using the "webserver-sg" security group:
 
-![The image shows an AWS EC2 Management Console with two running instances, "server-2" and "server1," both of type t2.micro. The details for "server1" are displayed, including security group information and inbound rules for ports 22, 80, and 443.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865622/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-ec2-management-console-instances-2.jpg)
+![The image shows an AWS EC2 Management Console with two running instances, "server-2" and "server1," both of type t2.micro. The details for "server1" are displayed, including security group information and inbound rules for ports 22, 80, and 443.](https://kodekloud.com/kk-media/image/upload/v1752865622/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-ec2-management-console-instances-2.jpg)
 
 If a server shows no security group initially, refresh the console to load the updated details:
 
-![The image shows an AWS EC2 Management Console with two running instances, "server-2" and "server1," both of type t2.micro. The details of "server-2" are displayed, including its instance ID, public IPv4 address, and instance state.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865623/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-ec2-management-console-instances-3.jpg)
+![The image shows an AWS EC2 Management Console with two running instances, "server-2" and "server1," both of type t2.micro. The details of "server-2" are displayed, including its instance ID, public IPv4 address, and instance state.](https://kodekloud.com/kk-media/image/upload/v1752865623/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-ec2-management-console-instances-3.jpg)
 
 Update the security group on every instance to "webserver-sg." This configuration ensures that security groups allow all traffic, so that subsequent tests focus on NACL behavior. For example, update server two as shown below:
 
-![The image shows an AWS EC2 Management Console with two running instances, displaying details for one instance named "server-2," including security group information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865624/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-ec2-management-console-server-2.jpg)
+![The image shows an AWS EC2 Management Console with two running instances, displaying details for one instance named "server-2," including security group information.](https://kodekloud.com/kk-media/image/upload/v1752865624/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-ec2-management-console-server-2.jpg)
 
 Next, change the security group settings for the instance:
 
-![The image shows an AWS EC2 Management Console screen where security groups are being changed for an instance. It displays instance details and a dropdown menu for selecting security groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865626/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-ec2-security-groups-console.jpg)
+![The image shows an AWS EC2 Management Console screen where security groups are being changed for an instance. It displays instance details and a dropdown menu for selecting security groups.](https://kodekloud.com/kk-media/image/upload/v1752865626/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-ec2-security-groups-console.jpg)
 
 Then, open the "webserver-sg" settings and modify its rules to allow all inbound and outbound traffic:
 
-![The image shows an AWS EC2 Management Console screen displaying details of a security group named "webserver-sg," including its inbound and outbound rules. The outbound rules section is highlighted, showing a rule allowing all traffic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865626/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-ec2-security-group-webserver-sg.jpg)
+![The image shows an AWS EC2 Management Console screen displaying details of a security group named "webserver-sg," including its inbound and outbound rules. The outbound rules section is highlighted, showing a rule allowing all traffic.](https://kodekloud.com/kk-media/image/upload/v1752865626/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-ec2-security-group-webserver-sg.jpg)
 
 ## Step 2: Confirming Subnet Consistency
 
 Ensure that both instances reside on the same subnet by checking the networking details from the EC2 console. For example, inspect server one to verify that it is in the correct subnet (e.g., subnet 168.3):
 
-![The image shows an AWS EC2 Management Console with details of two running instances, including instance IDs, types, and networking information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865632/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-ec2-management-console-instances-4.jpg)
+![The image shows an AWS EC2 Management Console with details of two running instances, including instance IDs, types, and networking information.](https://kodekloud.com/kk-media/image/upload/v1752865632/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-ec2-management-console-instances-4.jpg)
 
 Then, navigate to the VPC dashboard. Under the "Security Network ACLs" section, select the default NACL for your VPC (VPC A):
 
-![The image shows the AWS Management Console displaying the Network ACLs section, listing various network ACL IDs and their associated subnets and VPCs. The interface includes details about a selected network ACL, including its ID and associated subnet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865633/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-management-console-network-acls.jpg)
+![The image shows the AWS Management Console displaying the Network ACLs section, listing various network ACL IDs and their associated subnets and VPCs. The interface includes details about a selected network ACL, including its ID and associated subnet.](https://kodekloud.com/kk-media/image/upload/v1752865633/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-management-console-network-acls.jpg)
 
 Examine the inbound rules. You will notice a rule numbered 100 allowing all traffic. Since NACL rules are processed sequentially, any following rule (such as a deny rule) will not take effect if rule 100 already permits the traffic.
 
@@ -83,7 +83,7 @@ Now, modify the NACL rules to showcase their stateless behavior. Edit the inboun
 
 To test this configuration, SSH into the instance using server two:
 
-![The image shows an AWS EC2 Management Console with details of two running instances, including their instance IDs, states, types, and public IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865635/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-ec2-management-console-instances-5.jpg)
+![The image shows an AWS EC2 Management Console with details of two running instances, including their instance IDs, states, types, and public IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752865635/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-ec2-management-console-instances-5.jpg)
 
 Connect using a command similar to:
 
@@ -134,7 +134,7 @@ One of the advantages of using NACLs over security groups is the ability to expl
 
 To demonstrate this, add a deny rule with a lower rule number (e.g., rule 90) that blocks SSH from a defined IP range. This rule will override the general SSH allow rule for that specific range, while SSH from all other addresses will still be permitted.
 
-![The image shows an AWS VPC dashboard displaying network ACLs and their associated inbound rules. It includes details such as rule numbers, types, protocols, port ranges, sources, and whether the traffic is allowed or denied.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865636/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-vpc-dashboard-network-acls.jpg)
+![The image shows an AWS VPC dashboard displaying network ACLs and their associated inbound rules. It includes details such as rule numbers, types, protocols, port ranges, sources, and whether the traffic is allowed or denied.](https://kodekloud.com/kk-media/image/upload/v1752865636/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NACLs-Demo/aws-vpc-dashboard-network-acls.jpg)
 
 ## Summary
 

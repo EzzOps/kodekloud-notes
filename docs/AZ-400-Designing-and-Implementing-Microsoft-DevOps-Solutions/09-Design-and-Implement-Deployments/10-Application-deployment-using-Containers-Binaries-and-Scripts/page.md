@@ -25,7 +25,7 @@ Every deployment pipeline typically follows three stages:
 3. **Install**\
    Deploy artifacts to your Azure environment (e.g., App Service, Kubernetes, VMs).
 
-![The image is a flowchart titled "Application Deployment in Azure – Introduction," showing three steps: "Build code," "Test," and "Install on server."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867603/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Application-deployment-using-Containers-Binaries-and-Scripts/application-deployment-azure-flowchart.jpg)
+![The image is a flowchart titled "Application Deployment in Azure – Introduction," showing three steps: "Build code," "Test," and "Install on server."](https://kodekloud.com/kk-media/image/upload/v1752867603/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Application-deployment-using-Containers-Binaries-and-Scripts/application-deployment-azure-flowchart.jpg)
 
 Understanding this three-step flow is essential for both exam success and real-world delivery.
 
@@ -42,7 +42,7 @@ Containers package your application code, dependencies, and configuration into l
 * **Isolation**\
   Processes run in separate namespaces, reducing conflicts.
 
-![The image is a slide titled "Deploying Applications With Containers," highlighting three benefits: consistency across environments, scalability, and isolation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867604/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Application-deployment-using-Containers-Binaries-and-Scripts/deploying-applications-containers-benefits.jpg)
+![The image is a slide titled "Deploying Applications With Containers," highlighting three benefits: consistency across environments, scalability, and isolation.](https://kodekloud.com/kk-media/image/upload/v1752867604/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Application-deployment-using-Containers-Binaries-and-Scripts/deploying-applications-containers-benefits.jpg)
 
 ### Azure Container Services
 
@@ -53,7 +53,7 @@ Azure offers two main container hosting options:
 | Azure Kubernetes Service (AKS)  | Managed Kubernetes cluster for advanced orchestration | Production microservices with high availability |
 | Azure Container Instances (ACI) | Serverless containers without VM management           | On-demand tasks, dev/test environments          |
 
-![The image illustrates two Azure services for managing and deploying containers: Azure Kubernetes Service (AKS) and Azure Container Instances (ACI).](../../../../images/kodekloud.com/kk-media/image/upload/v1752867605/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Application-deployment-using-Containers-Binaries-and-Scripts/azure-kubernetes-service-container-instances.jpg)
+![The image illustrates two Azure services for managing and deploying containers: Azure Kubernetes Service (AKS) and Azure Container Instances (ACI).](https://kodekloud.com/kk-media/image/upload/v1752867605/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Application-deployment-using-Containers-Binaries-and-Scripts/azure-kubernetes-service-container-instances.jpg)
 
 > **lightbulb** Use ACI for simple, burstable workloads and prototyping. Choose AKS for production-grade orchestration, autoscaling, and complex networking.
 
@@ -68,7 +68,7 @@ AKS simplifies Kubernetes deployment in Azure. Key features include:
 * **Monitoring**\
   Built-in support for [Azure Monitor](https://learn.microsoft.com/azure/azure-monitor/) and [Log Analytics](https://learn.microsoft.com/azure/azure-monitor/logs/).
 
-![The image is a slide titled "Container Orchestration With Azure Kubernetes Service," featuring three sections labeled Integrated CI/CD, Security, and Monitoring. Each section is numbered and has a corresponding icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867606/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Application-deployment-using-Containers-Binaries-and-Scripts/container-orchestration-azure-kubernetes-slide.jpg)
+![The image is a slide titled "Container Orchestration With Azure Kubernetes Service," featuring three sections labeled Integrated CI/CD, Security, and Monitoring. Each section is numbered and has a corresponding icon.](https://kodekloud.com/kk-media/image/upload/v1752867606/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Application-deployment-using-Containers-Binaries-and-Scripts/container-orchestration-azure-kubernetes-slide.jpg)
 
 Mastering AKS fundamentals is critical for the [AZ-400 exam](https://learn.microsoft.com/certifications/exams/az-400) and for running resilient container workloads.
 
@@ -83,7 +83,7 @@ Binaries are compiled executables that run directly on the host OS. Azure App Se
 3. Deployment pipeline pushes binaries to Azure App Service.
 4. App Service host runs the application.
 
-![The image illustrates a process flow for deploying applications with binaries, showing a sequence from a user to a Git repository, then to a deployment tool, and finally to a service plan and app service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867607/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Application-deployment-using-Containers-Binaries-and-Scripts/application-deployment-process-flow-diagram.jpg)
+![The image illustrates a process flow for deploying applications with binaries, showing a sequence from a user to a Git repository, then to a deployment tool, and finally to a service plan and app service.](https://kodekloud.com/kk-media/image/upload/v1752867607/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Application-deployment-using-Containers-Binaries-and-Scripts/application-deployment-process-flow-diagram.jpg)
 
 ### App Service Deployment Methods
 
@@ -98,7 +98,7 @@ Binaries are compiled executables that run directly on the host OS. Azure App Se
 
 Automating Azure resource provisioning and application deployment with scripts guarantees repeatable, versioned environments.
 
-![The image is a slide titled "Scripted Deployments in Azure Pipelines," featuring an icon of a script file and a description stating that scripts are sets of commands for deploying applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867608/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Application-deployment-using-Containers-Binaries-and-Scripts/scripted-deployments-azure-pipelines.jpg)
+![The image is a slide titled "Scripted Deployments in Azure Pipelines," featuring an icon of a script file and a description stating that scripts are sets of commands for deploying applications.](https://kodekloud.com/kk-media/image/upload/v1752867608/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Application-deployment-using-Containers-Binaries-and-Scripts/scripted-deployments-azure-pipelines.jpg)
 
 Azure supports two primary scripting tools:
 

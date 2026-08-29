@@ -48,9 +48,7 @@ otelcol validate --config=customconfig.yaml
 
 Note: Use the correct binary for your distribution (for example `otelcol` or `otelcol-contrib`).
 
-<Callout icon="lightbulb">
-  If validation fails, carefully check YAML indentation and keys—most issues are typos or mis-indentation. You can also run `otelcol --config customconfig.yaml --dry-run` with some builds to surface runtime validation errors.
-</Callout>
+> **lightbulb** If validation fails, carefully check YAML indentation and keys—most issues are typos or mis-indentation. You can also run `otelcol --config customconfig.yaml --dry-run` with some builds to surface runtime validation errors.
 
 ## Receivers
 

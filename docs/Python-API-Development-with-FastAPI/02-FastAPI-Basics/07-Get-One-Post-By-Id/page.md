@@ -88,9 +88,7 @@ def get_post(id):
     return {"post_detail": post}
 ```
 
-<Callout icon="lightbulb">
-  If a non-numeric value is passed (e.g., `/posts/asdfasdf`), converting the string to an integer will raise a `ValueError` and result in an internal server error.
-</Callout>
+> **lightbulb** If a non-numeric value is passed (e.g., `/posts/asdfasdf`), converting the string to an integer will raise a `ValueError` and result in an internal server error.
 
 ## Leveraging FastAPI’s Validation
 
@@ -173,10 +171,6 @@ def get_post(id: int):
     return {"post_detail": post}
 ```
 
-<Callout icon="lightbulb">
-  This implementation not only provides robust type validation for the path parameter but also lays the groundwork for future extensions like updating or deleting posts. Explore additional documentation in the [FastAPI official docs](https://fastapi.tiangolo.com/) for further enhancements.
-</Callout>
+> **lightbulb** This implementation not only provides robust type validation for the path parameter but also lays the groundwork for future extensions like updating or deleting posts. Explore additional documentation in the [FastAPI official docs](https://fastapi.tiangolo.com/) for further enhancements.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/27110f26-4b81-4bf8-b40d-748d016a325f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/27110f26-4b81-4bf8-b40d-748d016a325f)

@@ -32,9 +32,7 @@ On the permissions page, attach the SSM policy that allows Session Manager acces
   <img alt="The image shows an AWS IAM management console screen where a role is being created. It highlights steps for adding permissions and tags, with a focus on the &#x22;AmazonSSMFullAccess&#x22; policy." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Session Manager lets you open a browser-based shell to your EC2 instance without SSH keys or open SSH ports. Attaching an IAM role with SSM permissions is the recommended approach for secure, keyless access.
-</Callout>
+> **lightbulb** Session Manager lets you open a browser-based shell to your EC2 instance without SSH keys or open SSH ports. Attaching an IAM role with SSM permissions is the recommended approach for secure, keyless access.
 
 Launch an EC2 instance and attach the IAM role
 

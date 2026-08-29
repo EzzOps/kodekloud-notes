@@ -8,17 +8,13 @@ In this guide, we explore how to manage network services in Linux by starting, s
 
 Let's begin by examining the programs currently active and waiting for incoming network connections.
 
-<Frame>
-  ![The image shows a diagram with a user icon connected to a server running three services: sshd, mariadbd, and nginx.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881326/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Start-Stop-and-Check-Status-of-Network-Services/user-server-services-diagram.jpg)
-</Frame>
+![The image shows a diagram with a user icon connected to a server running three services: sshd, mariadbd, and nginx.](https://kodekloud.com/kk-media/image/upload/v1752881326/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Start-Stop-and-Check-Status-of-Network-Services/user-server-services-diagram.jpg)
 
 ## Viewing Active Network Connections
 
 Two commonly used utilities for viewing active network connections are **SS** and **Netstat**. While **SS** is the modern alternative, **Netstat** is older and may eventually be deprecated in future Linux releases.
 
-<Frame>
-  ![The image shows a dark interface labeled "Utilities" with two icons: "ss" and "netstat," each represented by a gear symbol.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881326/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Start-Stop-and-Check-Status-of-Network-Services/utilities-dark-interface-ss-netstat.jpg)
-</Frame>
+![The image shows a dark interface labeled "Utilities" with two icons: "ss" and "netstat," each represented by a gear symbol.](https://kodekloud.com/kk-media/image/upload/v1752881326/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Start-Stop-and-Check-Status-of-Network-Services/utilities-dark-interface-ss-netstat.jpg)
 
 ### Using the SS Utility
 
@@ -44,9 +40,7 @@ Below is a brief overview of the options used:
 * **-n**: Show numeric values (such as port numbers) instead of resolving service names.
 * **-p**: Display the process using each socket (root privileges are required to view processes owned by root).
 
-<Callout icon="lightbulb">
-  Using the `-n` option ensures that you see exact port numbers. For example, port 22 in the output confirms the SSH daemon's listening port.
-</Callout>
+> **lightbulb** Using the `-n` option ensures that you see exact port numbers. For example, port 22 in the output confirms the SSH daemon's listening port.
 
 A useful mnemonic to remember these options is **L-T-U-N-P** (Listening, TCP, UDP, Numeric, Process). Alternatively, arrange them as **TUNLP** (Tunnel Programs) for ease of recall.
 
@@ -118,9 +112,7 @@ systemctl status mariadb.service
 systemctl status ssh.service
 ```
 
-<Callout icon="lightbulb">
-  On Ubuntu, the SSH service is often listed as `ssh` (without a trailing "d"). In contrast, other distributions like Red Hat may refer to it as `sshd`.
-</Callout>
+> **lightbulb** On Ubuntu, the SSH service is often listed as `ssh` (without a trailing "d"). In contrast, other distributions like Red Hat may refer to it as `sshd`.
 
 Below is an example of the output for both MariaDB and SSH services:
 
@@ -242,8 +234,6 @@ For further reading, consider exploring:
 
 Happy troubleshooting!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/36b2c86a-e779-44be-86ae-4e7c6dd81058" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/36b2c86a-e779-44be-86ae-4e7c6dd81058)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/3e903fa8-d9b9-4735-8300-49c1170577a6" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/3e903fa8-d9b9-4735-8300-49c1170577a6)

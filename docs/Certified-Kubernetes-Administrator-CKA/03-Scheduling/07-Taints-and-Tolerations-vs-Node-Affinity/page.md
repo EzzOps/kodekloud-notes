@@ -41,7 +41,7 @@ static-web-node01   0/1     ContainerCreating   0          29s
 
 Notice that the pod name includes the node name (e.g., "node01") to indicate its origin.
 
-![The image illustrates the architecture of static pods in Kubernetes, showing components like kube-apiserver, ETCD cluster, kube-scheduler, and kubelet with YAML files for pod configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869910/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Static-Pods/frame_340.jpg)
+![The image illustrates the architecture of static pods in Kubernetes, showing components like kube-apiserver, ETCD cluster, kube-scheduler, and kubelet with YAML files for pod configuration.](https://kodekloud.com/kk-media/image/upload/v1752869910/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Static-Pods/frame_340.jpg)
 
 ## Static Pods vs. DaemonSets
 
@@ -56,7 +56,7 @@ A common question that arises is how static pods differ from DaemonSets. The tab
 
 Static pods are especially useful for deploying control plane components themselves. Once the kubelet is installed on all master nodes, you can create pod definition files for essential components like the API server and controller manager. By placing these files in the designated manifest folder, the kubelet ensures they are running as pods and restarts them automatically if they fail. When you check the pods in the kube-system namespace, you'll see these control plane components running as pods—a standard configuration in clusters set up using kubeadm.
 
-![The image compares Static PODs and DaemonSets, highlighting their creation sources, deployment purposes, and interaction with the Kube-Scheduler.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869911/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Static-Pods/frame_490.jpg)
+![The image compares Static PODs and DaemonSets, highlighting their creation sources, deployment purposes, and interaction with the Kube-Scheduler.](https://kodekloud.com/kk-media/image/upload/v1752869911/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Static-Pods/frame_490.jpg)
 
 > **lightbulb** This lesson has detailed the concept of static pods, their configuration, and their behavior both in standalone and clustered environments. Using static pods is a simplified yet powerful method to manage critical workloads without relying on the full Kubernetes control plane.
 
@@ -81,7 +81,7 @@ Welcome to this article where we explain how to control pod placement in a Kuber
 
 To begin, we apply a taint to each node that marks it with its respective color (blue, red, or green). Then, each pod is configured with a corresponding toleration. With this setup, the Kubernetes scheduler places the pods on nodes that accept their tolerations. For instance, the green pod is placed on the green node and the blue pod on the blue node.
 
-![The image illustrates "Taints and Tolerations" with colored icons and server symbols labeled Blue, Red, Green, and Other, likely representing a Kubernetes concept.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869912/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Taints-and-Tolerations-vs-Node-Affinity/frame_50.jpg)
+![The image illustrates "Taints and Tolerations" with colored icons and server symbols labeled Blue, Red, Green, and Other, likely representing a Kubernetes concept.](https://kodekloud.com/kk-media/image/upload/v1752869912/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Taints-and-Tolerations-vs-Node-Affinity/frame_50.jpg)
 
 However, while taints and tolerations ensure that pods with matching tolerations are admitted by the nodes, they do not guarantee exclusive scheduling. Consequently, a pod (for example, a red pod) might still be scheduled on an untainted node, leading to undesired placements.
 
@@ -100,7 +100,7 @@ For exclusive node usage, combining both strategies is the optimal solution. The
 
 This combined approach dedicates the nodes exclusively to the intended pods, assuring correct pod assignments and preventing interference by other workloads.
 
-![The image illustrates "Taints/Tolerations and Node Affinity" with colored boxes and server icons labeled Blue, Red, Green, and Other.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869913/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Taints-and-Tolerations-vs-Node-Affinity/frame_130.jpg)
+![The image illustrates "Taints/Tolerations and Node Affinity" with colored boxes and server icons labeled Blue, Red, Green, and Other.](https://kodekloud.com/kk-media/image/upload/v1752869913/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Taints-and-Tolerations-vs-Node-Affinity/frame_130.jpg)
 
 > **lightbulb** In summary, leveraging both taints/tolerations and node affinity in Kubernetes ensures precise pod scheduling. This approach is particularly useful in multi-tenant clusters where exclusive node usage is critical.
 

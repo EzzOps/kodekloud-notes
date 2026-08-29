@@ -154,9 +154,7 @@ def delete_post(id: int, db: Session = Depends(get_db)):
     return Response(status_code=status.HTTP_204_NO_CONTENT)
 ```
 
-<Callout icon="lightbulb">
-  When you use `response_model` with SQLAlchemy ORM objects, set `orm_mode = True` on the response Pydantic model (as shown in `PostOut`). This tells Pydantic to read attributes from ORM instances instead of expecting plain dicts.
-</Callout>
+> **lightbulb** When you use `response_model` with SQLAlchemy ORM objects, set `orm_mode = True` on the response Pydantic model (as shown in `PostOut`). This tells Pydantic to read attributes from ORM instances instead of expecting plain dicts.
 
 ## When to create multiple request schemas
 
@@ -181,6 +179,4 @@ Schemas/Pydantic models define both request and response shapes, enforce require
 
 Use these practices to keep your code modular, validation explicit, and responses predictable — improving developer experience and API reliability.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/8fab93e9-8c4a-4c46-a5e3-bcc5bca0afd6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/8fab93e9-8c4a-4c46-a5e3-bcc5bca0afd6)

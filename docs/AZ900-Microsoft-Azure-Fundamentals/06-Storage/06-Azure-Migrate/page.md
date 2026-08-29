@@ -19,7 +19,7 @@ Azure Migrate offers a range of tools that make cloud migration efficient and ef
 3. **Integrated Tools**\
    Azure Migrate includes a collection of complementary tools provided by Microsoft and its partners. Similar to having a versatile toolkit on moving day, these integrated solutions work together to ensure your migration proceeds without a hitch.
 
-![The image outlines the key features of Azure Migrate, highlighting Assessment Tools, Migration Services, and Integrated Tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868524/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Migrate/azure-migrate-key-features-diagram.jpg)
+![The image outlines the key features of Azure Migrate, highlighting Assessment Tools, Migration Services, and Integrated Tools.](https://kodekloud.com/kk-media/image/upload/v1752868524/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Migrate/azure-migrate-key-features-diagram.jpg)
 
 ## Benefits
 
@@ -34,7 +34,7 @@ Azure Migrate simplifies your journey to Azure by offering several proven advant
 * **Flexibility and Compatibility:**\
   Just as a versatile moving company can handle any type of item, Azure Migrate supports a wide array of applications and workloads, ensuring that every element of your IT infrastructure is properly transferred to the cloud.
 
-![The image outlines the benefits of Azure Migrate, highlighting a streamlined migration process, cost-effectiveness, and flexibility and compatibility.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868525/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Migrate/azure-migrate-benefits-outline.jpg)
+![The image outlines the benefits of Azure Migrate, highlighting a streamlined migration process, cost-effectiveness, and flexibility and compatibility.](https://kodekloud.com/kk-media/image/upload/v1752868525/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Migrate/azure-migrate-benefits-outline.jpg)
 
 > **lightbulb** For organizations with complex infrastructures, Azure Migrate provides detailed insights and tailored recommendations to enhance both the migration process and post-migration performance.
 
@@ -46,7 +46,7 @@ Azure Migrate is ideal for scenarios where you need to move on-premises applicat
 * Transitioning databases and web applications to leverage Azure's managed services.
 * Consolidating disparate systems from multiple environments into a unified Azure infrastructure.
 
-![The image is an illustration related to "Azure Migrate – Use Cases," showing various devices like a computer, tablet, and smartphone, with a cloud in the background. It lists three use cases: on-premises infrastructure, applications, and data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868525/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Migrate/azure-migrate-use-cases-illustration.jpg)
+![The image is an illustration related to "Azure Migrate – Use Cases," showing various devices like a computer, tablet, and smartphone, with a cloud in the background. It lists three use cases: on-premises infrastructure, applications, and data.](https://kodekloud.com/kk-media/image/upload/v1752868525/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Migrate/azure-migrate-use-cases-illustration.jpg)
 
 > **triangle-alert** Ensure that you review all compatibility requirements and dependencies in your existing environment before initiating the migration. Overlooking these details can lead to challenges during and after the migration process.
 

@@ -134,9 +134,7 @@ cilium status
 
 Typical status output shows agent and operator availability, Hubble status, Envoy proxy counts, and any health issues.
 
-<Callout icon="lightbulb">
-  If you are deploying to a managed Kubernetes service (EKS, GKE, AKS), consult the Cilium documentation for platform-specific prerequisites and recommended settings (for example, node taints/labels, node groups, or specific annotations). These are documented in the Cilium installation guide: [https://docs.cilium.io/en/v1.17/](https://docs.cilium.io/en/v1.17/)
-</Callout>
+> **lightbulb** If you are deploying to a managed Kubernetes service (EKS, GKE, AKS), consult the Cilium documentation for platform-specific prerequisites and recommended settings (for example, node taints/labels, node groups, or specific annotations). These are documented in the Cilium installation guide: [https://docs.cilium.io/en/v1.17/](https://docs.cilium.io/en/v1.17/)
 
 Quick reference — common verification commands
 
@@ -159,9 +157,7 @@ Summary of the Helm-based installation flow:
 
 For production deployments or cloud-managed clusters, follow the platform-specific guidance in the Cilium docs: [https://docs.cilium.io/en/v1.17/](https://docs.cilium.io/en/v1.17/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/e9ff683d-d77f-4eaa-bd54-489ee9f27d2f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/e9ff683d-d77f-4eaa-bd54-489ee9f27d2f)
 
 
 # Demo Updating Cilium Configuration

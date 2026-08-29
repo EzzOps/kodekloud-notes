@@ -51,9 +51,7 @@ def root():
 
 Begin by importing JWT functionalities from python‑jose and setting up your token configuration. This includes defining a secret key, algorithm, and token expiration time. The secret key should be a long, randomly generated string.
 
-<Callout icon="lightbulb">
-  To generate a secure secret key, use the command: `openssl rand -hex 32`
-</Callout>
+> **lightbulb** To generate a secure secret key, use the command: `openssl rand -hex 32`
 
 Below is an example configuration:
 

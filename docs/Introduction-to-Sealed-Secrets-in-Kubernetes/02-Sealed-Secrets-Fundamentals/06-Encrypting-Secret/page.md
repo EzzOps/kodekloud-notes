@@ -18,9 +18,7 @@ This encrypted manifest can be safely stored in Git and applied to any cluster t
 * [Kubernetes Secrets](https://kubernetes.io/docs/concepts/configuration/secret/)
 * [Sealed Secrets (kubeseal)](https://github.com/bitnami-labs/sealed-secrets)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/0f3ed562-f151-48f9-bb8c-8d3a4dbb4fc3/lesson/0c6da7ae-2f36-40a2-9d6e-5dccdb4ed8d3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/0f3ed562-f151-48f9-bb8c-8d3a4dbb4fc3/lesson/0c6da7ae-2f36-40a2-9d6e-5dccdb4ed8d3)
 
 
 # Encrypting Secret
@@ -38,9 +36,7 @@ In this guide, you'll learn how to use the Bitnami Sealed Secrets controller to 
 * [Sealed Secrets controller](https://github.com/bitnami/sealed-secrets) deployed (e.g., via Helm or `kubectl apply`)
 * `kubeseal` CLI installed locally
 
-<Callout icon="lightbulb">
-  Ensure the `kubeseal` client version matches your controller version. Mismatched versions can lead to encryption or decryption errors.
-</Callout>
+> **lightbulb** Ensure the `kubeseal` client version matches your controller version. Mismatched versions can lead to encryption or decryption errors.
 
 ## Step 1: Prepare Your Secret Manifest
 
@@ -97,9 +93,7 @@ spec:
 
 The `encryptedData` field contains the fully encrypted payload. Since this data is encrypted with the controller’s public key, it’s safe to commit to version control.
 
-<Callout icon="triangle-alert">
-  Do **not** include the original `secret.yaml` in your Git repository. Only commit the generated `sealed-secret.yaml`.
-</Callout>
+> **triangle-alert** Do **not** include the original `secret.yaml` in your Git repository. Only commit the generated `sealed-secret.yaml`.
 
 ## Next Steps
 
@@ -121,6 +115,4 @@ The `encryptedData` field contains the fully encrypted payload. Since this data 
 * [Installing Sealed Secrets Controller](https://github.com/bitnami/sealed-secrets#installing)
 * [kubeseal CLI Usage](https://github.com/bitnami/sealed-secrets#client)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/0f3ed562-f151-48f9-bb8c-8d3a4dbb4fc3/lesson/b9921e8d-59e5-4805-98e5-1bc020c290f6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/0f3ed562-f151-48f9-bb8c-8d3a4dbb4fc3/lesson/b9921e8d-59e5-4805-98e5-1bc020c290f6)

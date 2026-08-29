@@ -43,9 +43,7 @@ If you want to permanently delete the workspace and make Terraform forget about 
 terraform workspace delete -force dev
 ```
 
-<Callout icon="warning">
-  Deleting a workspace that contains resources can leave real infrastructure orphaned and unmanaged. Always run `terraform destroy` in the workspace first if you intend to remove the actual cloud resources. Use `-force` only when you understand the consequences.
-</Callout>
+> **warning** Deleting a workspace that contains resources can leave real infrastructure orphaned and unmanaged. Always run `terraform destroy` in the workspace first if you intend to remove the actual cloud resources. Use `-force` only when you understand the consequences.
 
 ## Summary & best practices
 
@@ -60,9 +58,7 @@ References:
 * [Terraform Workspaces](https://www.terraform.io/docs/cli/concepts/workspaces.html)
 * [AzureRM Backend](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/state)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/0eb3275a-a37d-45a5-86b5-4920e2e44e7c/lesson/6ec19685-743e-4758-a830-969e3dedb58b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/0eb3275a-a37d-45a5-86b5-4920e2e44e7c/lesson/6ec19685-743e-4758-a830-969e3dedb58b)
 
 
 # Defining Variables

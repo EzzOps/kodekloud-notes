@@ -24,7 +24,7 @@ Awk is more than a simple filter—it’s a small programming language tailored 
 * Built-in variables (`NR`, `NF`, `FS`, `OFS`)
 * Control structures (`if`, `while`, `for`)
 
-![The image is a slide titled "Introduction to awk," explaining that a Domain-Specific Language is a programming language designed for a specific subject area.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868664/notes-assets/images/Advanced-Bash-Scripting-Introduction-to-awk/introduction-to-awk-dsl-slide.jpg)
+![The image is a slide titled "Introduction to awk," explaining that a Domain-Specific Language is a programming language designed for a specific subject area.](https://kodekloud.com/kk-media/image/upload/v1752868664/notes-assets/images/Advanced-Bash-Scripting-Introduction-to-awk/introduction-to-awk-dsl-slide.jpg)
 
 > **lightbulb** Awk treats any sequence of spaces and tabs as the default field separator (`FS` = `[ \t]+`).
 
@@ -32,7 +32,7 @@ Awk is more than a simple filter—it’s a small programming language tailored 
 
 Even if your data has inconsistent spacing, Awk splits fields correctly:
 
-![The image is an introduction to "awk," highlighting its ability to create powerful programs or one-liner scripts for parsing large and complex text data easily.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868665/notes-assets/images/Advanced-Bash-Scripting-Introduction-to-awk/awk-introduction-text-parsing.jpg)
+![The image is an introduction to "awk," highlighting its ability to create powerful programs or one-liner scripts for parsing large and complex text data easily.](https://kodekloud.com/kk-media/image/upload/v1752868665/notes-assets/images/Advanced-Bash-Scripting-Introduction-to-awk/awk-introduction-text-parsing.jpg)
 
 ```bash theme={null}
 $ awk 'NR == 2 { print $3 }' minimovies.txt

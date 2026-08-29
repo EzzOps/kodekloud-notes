@@ -11,9 +11,7 @@ Unload (remove) a module:
 sudo modprobe -r snd_hda_intel
 ```
 
-<Callout icon="triangle-alert">
-  Unloading critical modules (e.g., storage or network drivers) can render your system unbootable. Proceed with caution.
-</Callout>
+> **triangle-alert** Unloading critical modules (e.g., storage or network drivers) can render your system unbootable. Proceed with caution.
 
 View detailed information about a module:
 
@@ -50,21 +48,15 @@ Linux exposes hardware and process information via two virtual filesystems:
 * `/proc`: Process and kernel data (e.g., `/proc/cpuinfo`)
 * `/sys`: Device and driver attributes (e.g., `/sys/class/net`)
 
-<Frame>
-  ![The image is a slide titled "Information and Device Files," describing the /proc and /sys directories as special directories in RAM used by the kernel to store information on running processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881460/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Determine-and-Configure-Hardware-Settings/information-device-files-proc-sys-slide.jpg)
-</Frame>
+![The image is a slide titled "Information and Device Files," describing the /proc and /sys directories as special directories in RAM used by the kernel to store information on running processes.](https://kodekloud.com/kk-media/image/upload/v1752881460/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Determine-and-Configure-Hardware-Settings/information-device-files-proc-sys-slide.jpg)
 
-<Callout icon="lightbulb">
-  Since `/proc` and `/sys` reside in volatile memory, their contents reset on reboot.
-</Callout>
+> **lightbulb** Since `/proc` and `/sys` reside in volatile memory, their contents reset on reboot.
 
 ***
 
 Continue to the quiz to test your understanding of Linux hardware configuration and inspection.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/55c2d118-3a85-4da1-8a7f-e9f8671cc818/lesson/5985cc6f-eacb-4c02-bc57-2317e64ce94f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/55c2d118-3a85-4da1-8a7f-e9f8671cc818/lesson/5985cc6f-eacb-4c02-bc57-2317e64ce94f)
 
 
 # Conclusion
@@ -88,9 +80,7 @@ Throughout the course, you learned how to:
 
 These skills have laid a solid foundation for your future as a certified Linux administrator.
 
-<Callout icon="lightbulb">
-  Hands-on labs and real-world scenarios played a crucial role in reinforcing your knowledge, allowing you to apply theoretical concepts to practical challenges confidently.
-</Callout>
+> **lightbulb** Hands-on labs and real-world scenarios played a crucial role in reinforcing your knowledge, allowing you to apply theoretical concepts to practical challenges confidently.
 
 Below is an example command you might have used during the course:
 
@@ -102,14 +92,10 @@ I extend my deepest gratitude for your dedication, enthusiasm, and commitment th
 
 If you’re aiming to further enhance your skills and credentials, consider the [Red Hat Certified System Administrator (RHCSA)](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa) course available on KodeKloud. This course is meticulously designed to help you master Red Hat Enterprise Linux and excel in the RHCSA certification exam.
 
-<Callout icon="lightbulb">
-  Your newly acquired skills have vast potential to impact your career and the broader tech community. Go forward with confidence, curiosity, and determination—the dynamic realm of Linux system administration awaits your influence.
-</Callout>
+> **lightbulb** Your newly acquired skills have vast potential to impact your career and the broader tech community. Go forward with confidence, curiosity, and determination—the dynamic realm of Linux system administration awaits your influence.
 
 Thank you once again for your commitment, and best of luck as you continue your professional journey!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/f408d15b-a4a0-45ea-96ba-b5717e0f1896/lesson/53a047dd-597e-4bbe-8381-8ae133d53ae4" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/f408d15b-a4a0-45ea-96ba-b5717e0f1896/lesson/53a047dd-597e-4bbe-8381-8ae133d53ae4)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/da07a41e-0d84-4c94-9e9b-9a43a838b76e/lesson/f82ed719-396e-4d60-a122-6abbd55e2b07" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/da07a41e-0d84-4c94-9e9b-9a43a838b76e/lesson/f82ed719-396e-4d60-a122-6abbd55e2b07)

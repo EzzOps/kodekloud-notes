@@ -8,21 +8,15 @@ In this lesson, we explore the Linux package management tools used across variou
 
 Since you are using Ubuntu, we'll start by discussing package managers such as APT and DPKG. Later, we will cover RPM-based managers used on distributions like RHEL and CentOS.
 
-<Frame>
-  ![The image introduces package managers, comparing DPKG/APT for Ubuntu and Debian with RPM for Red Hat and CentOS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881130/notes-assets/images/Learning-Linux-Basics-Course-Labs-Package-Management-Introduction/frame_50.jpg)
-</Frame>
+![The image introduces package managers, comparing DPKG/APT for Ubuntu and Debian with RPM for Red Hat and CentOS.](https://kodekloud.com/kk-media/image/upload/v1752881130/notes-assets/images/Learning-Linux-Basics-Course-Labs-Package-Management-Introduction/frame_50.jpg)
 
 Dave explains that there are hundreds of Linux distributions available today. A common method to categorize these distributions is by the package management system they utilize. For example, distributions such as RHEL (Red Hat Enterprise Linux), Fedora, and CentOS are built on the RPM package system, often referred to as RPM-based distributions. In contrast, Debian-based distributions—such as Ubuntu, Debian, and Linux Mint—employ Debian package management tools like DPKG.
 
 To illustrate the relationship between different systems, consider RHEL and CentOS. CentOS is a community-driven enterprise operating system that is essentially a fork of RHEL, offering similar functionality without the paid support that Red Hat requires.
 
-<Frame>
-  ![The image compares Red Hat's enterprise offering with a community version, highlighting differences in support and cost.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881131/notes-assets/images/Learning-Linux-Basics-Course-Labs-Package-Management-Introduction/frame_140.jpg)
-</Frame>
+![The image compares Red Hat's enterprise offering with a community version, highlighting differences in support and cost.](https://kodekloud.com/kk-media/image/upload/v1752881131/notes-assets/images/Learning-Linux-Basics-Course-Labs-Package-Management-Introduction/frame_140.jpg)
 
-<Callout icon="lightbulb">
-  RHEL is available exclusively through a paid subscription, providing comprehensive support for mission-critical systems and early access to features. CentOS, however, offers a free alternative for enterprise environments.
-</Callout>
+> **lightbulb** RHEL is available exclusively through a paid subscription, providing comprehensive support for mission-critical systems and early access to features. CentOS, however, offers a free alternative for enterprise environments.
 
 Before diving into package managers, let’s clarify what a package is. In its simplest form, a package is a compressed archive containing all the files necessary for specific software to run. For example, when installing the image editing software GIMP (GNU Image Manipulation Program) on Ubuntu, the GIMP.DEB package contains all the necessary binaries, supporting files, and metadata for proper installation and execution.
 
@@ -52,9 +46,7 @@ Keep in mind that each dependency may have further dependencies, making manual p
 
 A package manager automates the installation, upgrade, configuration, and removal of software packages in Linux. It verifies package integrity and authenticity using digital certificates and checksums, ensuring that the downloaded package comes from a trusted source. Additionally, package managers simplify tasks such as querying for packages, grouping them by function, and managing complex dependency chains—thus avoiding the notorious "dependency hell."
 
-<Frame>
-  ![The image illustrates the concept of package managers, showing a Linux system, a package manager, and a repository containing packages and dependencies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881133/notes-assets/images/Learning-Linux-Basics-Course-Labs-Package-Management-Introduction/frame_300.jpg)
-</Frame>
+![The image illustrates the concept of package managers, showing a Linux system, a package manager, and a repository containing packages and dependencies.](https://kodekloud.com/kk-media/image/upload/v1752881133/notes-assets/images/Learning-Linux-Basics-Course-Labs-Package-Management-Introduction/frame_300.jpg)
 
 Some key functions of a package manager include:
 
@@ -63,9 +55,7 @@ Some key functions of a package manager include:
 * Grouping packages by function to reduce user confusion.
 * Managing dependencies to ensure all required components are included during installation.
 
-<Frame>
-  ![The image lists functions of package managers: package integrity and authenticity, simplified package management, grouping packages, and managing dependencies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881133/notes-assets/images/Learning-Linux-Basics-Course-Labs-Package-Management-Introduction/frame_350.jpg)
-</Frame>
+![The image lists functions of package managers: package integrity and authenticity, simplified package management, grouping packages, and managing dependencies.](https://kodekloud.com/kk-media/image/upload/v1752881133/notes-assets/images/Learning-Linux-Basics-Course-Labs-Package-Management-Introduction/frame_350.jpg)
 
 Below is a table summarizing the different package managers and their common use cases:
 
@@ -78,13 +68,9 @@ Below is a table summarizing the different package managers and their common use
 | YUM             | RHEL, CentOS, Fedora               | Front-end for RPM systems                      |
 | DNF             | Modern Red Hat-based distributions | Feature-rich front-end for RPM systems         |
 
-<Callout icon="lightbulb">
-  Next, we will dive deeper into RPM and YUM for RPM-based distributions followed by a detailed exploration of DEB and APT for Debian-based systems.
-</Callout>
+> **lightbulb** Next, we will dive deeper into RPM and YUM for RPM-based distributions followed by a detailed exploration of DEB and APT for Debian-based systems.
 
-<Frame>
-  ![The image lists types of package managers: DPKG, RPM, APT, YUM, APT-GET, and DNF, with a "KodeKloud" logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881134/notes-assets/images/Learning-Linux-Basics-Course-Labs-Package-Management-Introduction/frame_420.jpg)
-</Frame>
+![The image lists types of package managers: DPKG, RPM, APT, YUM, APT-GET, and DNF, with a "KodeKloud" logo.](https://kodekloud.com/kk-media/image/upload/v1752881134/notes-assets/images/Learning-Linux-Basics-Course-Labs-Package-Management-Introduction/frame_420.jpg)
 
 For further reading on package management concepts, explore these resources:
 
@@ -95,6 +81,4 @@ For further reading on package management concepts, explore these resources:
 
 This comprehensive overview sets the stage for understanding and efficiently managing software packages on various Linux distributions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/7ced7d44-760f-47a8-a9bc-69971bb0ca17/lesson/13a92413-8972-4371-b11b-1f07c4122c42" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/7ced7d44-760f-47a8-a9bc-69971bb0ca17/lesson/13a92413-8972-4371-b11b-1f07c4122c42)

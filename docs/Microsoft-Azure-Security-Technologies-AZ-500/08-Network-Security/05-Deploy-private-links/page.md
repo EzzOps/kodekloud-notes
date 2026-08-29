@@ -6,9 +6,7 @@ This article covers deploying Azure Private Link for secure, private access to A
 
 In this lesson, we will deploy private links in Azure. Previously, we discussed service endpoints and examined how they allow access to Azure services over the backbone network. Now, we will explore an alternative connectivity option—Azure Private Link—that offers secure, private access.
 
-<Frame>
-  ![The image illustrates a network diagram showing a virtual machine within a workload subnet connected to an Azure Storage Service via a service endpoint.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882110/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-private-links/network-diagram-virtual-machine-azure-storage.jpg)
-</Frame>
+![The image illustrates a network diagram showing a virtual machine within a workload subnet connected to an Azure Storage Service via a service endpoint.](https://kodekloud.com/kk-media/image/upload/v1752882110/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-private-links/network-diagram-virtual-machine-azure-storage.jpg)
 
 ## Understanding Connectivity Options
 
@@ -23,9 +21,7 @@ Using Private Link offers several key benefits:
 * Azure services are accessed using a private IP, effectively making them part of your own network.
 * It supports connectivity between VNets in different regions and provides on-premises access via a private IP.
 
-<Callout icon="lightbulb">
-  If your environment requires private IP provisioning within your VNet and strict traffic isolation, Azure Private Link is the recommended solution over service endpoints.
-</Callout>
+> **lightbulb** If your environment requires private IP provisioning within your VNet and strict traffic isolation, Azure Private Link is the recommended solution over service endpoints.
 
 ## Scenario Overview
 
@@ -33,17 +29,13 @@ Imagine you have previously configured a VM and a storage account with a service
 
 To achieve complete privacy, you will disable public network access for the storage account and set up a private connection using a Private Link.
 
-<Frame>
-  ![The image is a graphic titled "Private Link" highlighting benefits such as Azure services via private connection, seamless integration, risk elimination, and direct availability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882111/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-private-links/private-link-azure-benefits-graphic.jpg)
-</Frame>
+![The image is a graphic titled "Private Link" highlighting benefits such as Azure services via private connection, seamless integration, risk elimination, and direct availability.](https://kodekloud.com/kk-media/image/upload/v1752882111/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-private-links/private-link-azure-benefits-graphic.jpg)
 
 ### Disabling Public Access
 
 In the Azure portal, you previously set up a service endpoint. Now, disable public network access for your storage account. With public access turned off, the VM will no longer be able to reach the storage account via the service endpoint.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface focused on the networking settings of a storage account. It displays options for configuring firewalls, virtual networks, and network routing preferences.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882112/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-private-links/azure-portal-networking-settings.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface focused on the networking settings of a storage account. It displays options for configuring firewalls, virtual networks, and network routing preferences.](https://kodekloud.com/kk-media/image/upload/v1752882112/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-private-links/azure-portal-networking-settings.jpg)
 
 When you try to access an image stored in the storage account from the VM, it will result in an authorization failure:
 
@@ -72,42 +64,30 @@ Next, we will create a private connection by configuring a private endpoint:
 1. **Navigate to the Private Endpoint Section:**\
    In the Azure portal, go to the private endpoint connection area.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface focused on the networking settings of a storage account. It displays options for configuring public network access and network routing preferences.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882114/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-private-links/azure-portal-network-settings-storage.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface focused on the networking settings of a storage account. It displays options for configuring public network access and network routing preferences.](https://kodekloud.com/kk-media/image/upload/v1752882114/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-private-links/azure-portal-network-settings-storage.jpg)
 
 2. **Create a New Private Endpoint:**\
    Provide a name (e.g., "PE storage") and select the blob endpoint on your storage account. For the virtual network, choose the one where your VM resides. The private endpoint can be deployed in the same subnet or a different one—as long as the VNets are peered.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating a private endpoint, with options to select a virtual network and subnet, configure a private IP, and set an application security group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882115/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-private-links/azure-private-endpoint-configuration.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating a private endpoint, with options to select a virtual network and subnet, configure a private IP, and set an application security group.](https://kodekloud.com/kk-media/image/upload/v1752882115/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-private-links/azure-private-endpoint-configuration.jpg)
 
 3. **DNS Integration:**\
    After creating the private endpoint, an automatic private DNS zone (typically named private-link.blob.core.windows.net) is provisioned. This zone includes an A record mapping the storage account's name to its private IP address.\
    Ensure that any virtual networks requiring DNS resolution are linked with this private DNS zone. For VMs that use Azure-provided DNS, this setup is seamless. For on-premises environments, you may need to configure a DNS conditional forwarder.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a private endpoint, specifically focusing on the DNS integration step. It includes options for configuring a private DNS zone and selecting a subscription and resource group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882116/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-private-links/azure-portal-private-endpoint-dns.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a private endpoint, specifically focusing on the DNS integration step. It includes options for configuring a private DNS zone and selecting a subscription and resource group.](https://kodekloud.com/kk-media/image/upload/v1752882116/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-private-links/azure-portal-private-endpoint-dns.jpg)
 
 4. **Review Private Endpoint Details:**\
    Once deployment completes, verify the private endpoint details in the Azure portal, which include subscription, resource group, and virtual network information.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a private endpoint, displaying details such as subscription, resource group, and virtual network information. The "Review + create" step is highlighted, indicating the final review before creation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882116/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-private-links/azure-portal-private-endpoint-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a private endpoint, displaying details such as subscription, resource group, and virtual network information. The "Review + create" step is highlighted, indicating the final review before creation.](https://kodekloud.com/kk-media/image/upload/v1752882116/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-private-links/azure-portal-private-endpoint-creation.jpg)
 
 5. **Confirm Private DNS Records:**\
    Upon checking the DNS zone associated with the private endpoint, you will see that it includes the DNS record for your storage account.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying details of a private endpoint, including resource group, location, subscription ID, and connection status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882117/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-private-links/azure-portal-private-endpoint-details.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying details of a private endpoint, including resource group, location, subscription ID, and connection status.](https://kodekloud.com/kk-media/image/upload/v1752882117/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-private-links/azure-portal-private-endpoint-details.jpg)
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying DNS configuration details for a private DNS zone, including resource group, subscription information, and DNS records.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882119/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-private-links/azure-portal-dns-configuration.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying DNS configuration details for a private DNS zone, including resource group, subscription information, and DNS records.](https://kodekloud.com/kk-media/image/upload/v1752882119/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-private-links/azure-portal-dns-configuration.jpg)
 
 ## Verifying DNS Resolution and Connectivity
 
@@ -160,9 +140,7 @@ City1.jpg  City2.jpg  City3-copy.jpg  City3.jpg  City4.png
 
 This confirms that the storage account is now accessible over a private IP address. If the DNS resolution does not return a private IP, double-check your DNS configuration, including virtual network links, forwarders, or DNS records.
 
-<Callout icon="lightbulb">
-  For more details on private DNS zones and extensive network troubleshooting, refer to the [AZ-104: Microsoft Azure Administrator](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator) course.
-</Callout>
+> **lightbulb** For more details on private DNS zones and extensive network troubleshooting, refer to the [AZ-104: Microsoft Azure Administrator](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator) course.
 
 ## Conclusion
 
@@ -172,6 +150,4 @@ Next, we will move on to implementing load balancing in Azure.
 
 Happy networking!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/0489a935-a4dd-41c6-b5d3-6054c570299b/lesson/38aae97e-09c6-4766-bb5a-05f53167e1b2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/0489a935-a4dd-41c6-b5d3-6054c570299b/lesson/38aae97e-09c6-4766-bb5a-05f53167e1b2)

@@ -73,9 +73,7 @@ This guide breaks down the core components used to define an AI agent. Use these
   <img alt="A slide titled &#x22;Advanced Technique: Use Another Model&#x22; showing a woman and a friendly robot interacting via a large chat window. The chat bubble displays a sample agent prompt asking to improve a prompt's effectiveness." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Always review and validate outputs from any model used to refine prompts. Models can produce plausible-sounding but incorrect recommendations (hallucinations).
-</Callout>
+> **lightbulb** Always review and validate outputs from any model used to refine prompts. Models can produce plausible-sounding but incorrect recommendations (hallucinations).
 
 ## Share common prompts across agents
 

@@ -16,9 +16,7 @@ At 8:00 AM, an emergency meeting was called by Andrew. Leaving Donald in charge 
 
 Inside the war room—a scenario Bob had long hoped to avoid early in his career—each second became critical. As he glanced around, he saw Andrew pacing nervously, a constant reminder of the urgent situation.
 
-<Callout icon="triangle-alert">
-  Bob’s window for resolution was rapidly closing. With the client demonstration scheduled for 10:00 AM, every minute counted.
-</Callout>
+> **triangle-alert** Bob’s window for resolution was rapidly closing. With the client demonstration scheduled for 10:00 AM, every minute counted.
 
 ## The Critical Diagnosis
 
@@ -28,9 +26,7 @@ Realizing that his job might be on the line, Bob was determined to pinpoint the 
 
 It was then that he noticed Donald, who remained unexpectedly calm amidst the chaos.
 
-<Callout icon="lightbulb">
-  Donald’s steady demeanor proved to be a beacon of clarity. He suggested focusing on the differences between Bob’s development environment and his local setup, rather than doubting the code itself.
-</Callout>
+> **lightbulb** Donald’s steady demeanor proved to be a beacon of clarity. He suggested focusing on the differences between Bob’s development environment and his local setup, rather than doubting the code itself.
 
 Donald explained, "Since everything functions as expected on your laptop, we can rule out a code error. Instead, let’s examine the disparities between the development environment and your local setup. It could be a network issue, a dependency conflict, or even a misconfiguration."
 
@@ -54,8 +50,6 @@ This critical hour serves as a powerful reminder: ensuring environmental parity 
 
 For more insights on robust troubleshooting practices and effective environment management, check out our [Kubernetes Documentation](https://kubernetes.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/c7cd22df-1e91-4206-8802-3a3f94f2d192/lesson/734a2f31-fd2c-4a6b-9609-aa6ba7c7ddfd" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/c7cd22df-1e91-4206-8802-3a3f94f2d192/lesson/734a2f31-fd2c-4a6b-9609-aa6ba7c7ddfd)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/c7cd22df-1e91-4206-8802-3a3f94f2d192/lesson/66a632ba-8d01-4efb-9d4f-229aeb869e71" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/c7cd22df-1e91-4206-8802-3a3f94f2d192/lesson/66a632ba-8d01-4efb-9d4f-229aeb869e71)

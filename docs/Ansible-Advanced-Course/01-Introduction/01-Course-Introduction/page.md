@@ -38,7 +38,7 @@ Additional topics include:
 
 Supplementary lectures in this course address prerequisites like shell scripting, package installation, and configuring services and firewall rules. For any questions, our dedicated [Slack community](https://slack.com/) is available for additional support.
 
-![Join our Slack community for course support and discussion](../../../../images/kodekloud.com/kk-media/image/upload/v1752869403/notes-assets/images/Ansible-Advanced-Course-Course-Introduction/frame_190.jpg)
+![Join our Slack community for course support and discussion](https://kodekloud.com/kk-media/image/upload/v1752869403/notes-assets/images/Ansible-Advanced-Course-Course-Introduction/frame_190.jpg)
 
 That’s all for now. I look forward to guiding you through the advanced concepts of Ansible and seeing you succeed in the course!
 

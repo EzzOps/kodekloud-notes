@@ -17,9 +17,7 @@ In this guide, you’ll learn how to format and optimize Linux partitions using 
 
 XFS is the default filesystem on CentOS and is known for high performance and scalability.
 
-<Callout icon="triangle-alert">
-  Running `mkfs.xfs` on a device will destroy all existing data. Double-check the device name (e.g., `/dev/sdb1`) before proceeding.
-</Callout>
+> **triangle-alert** Running `mkfs.xfs` on a device will destroy all existing data. Double-check the device name (e.g., `/dev/sdb1`) before proceeding.
 
 ### 1. Create an XFS Filesystem
 
@@ -37,9 +35,7 @@ Consult the `mkfs.xfs` manual for all available options, such as adding a volume
 man mkfs.xfs
 ```
 
-<Frame>
-  ![The image shows a terminal window displaying a manual page for the mkfs.xfs command, detailing options and usage for setting filesystem labels and other parameters.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881379/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Create-Partitions-and-Filesystems-Use-various-mkfs-commands-to-create-various-filesystems/mkfs-xfs-manual-terminal-window.jpg)
-</Frame>
+![The image shows a terminal window displaying a manual page for the mkfs.xfs command, detailing options and usage for setting filesystem labels and other parameters.](https://kodekloud.com/kk-media/image/upload/v1752881379/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Create-Partitions-and-Filesystems-Use-various-mkfs-commands-to-create-various-filesystems/mkfs-xfs-manual-terminal-window.jpg)
 
 To assign a label (up to 12 characters):
 

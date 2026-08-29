@@ -45,9 +45,7 @@ This approach reduces human error, prevents configuration drift, and provides a 
 | Service principal or managed identity with least privilege | Secure, auditable pipeline permissions                   |
 | Save and publish the `tfplan` artifact                     | Ensures reviewers can inspect the exact proposed changes |
 
-<Callout icon="warning">
-  Enforce least-privilege on the service connection used by your pipeline. Avoid using broad contributor permissions; scope the identity to only the required resource groups and actions.
-</Callout>
+> **warning** Enforce least-privilege on the service connection used by your pipeline. Avoid using broad contributor permissions; scope the identity to only the required resource groups and actions.
 
 ## Approval gates and plan review
 

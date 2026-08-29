@@ -6,7 +6,7 @@ This guide explains how the AWS VPC CNI plugin assigns IPs to EKS cluster nodes 
 
 In this guide, we’ll walk through how the AWS VPC CNI plugin assigns IPs to your EKS cluster’s nodes and pods. Each node and pod runs on Elastic Network Interfaces (ENIs) within the VPC subnets in their Availability Zone. Understanding this CNI integration helps you optimize pod density, avoid IP exhaustion, and fine-tune scaling parameters.
 
-![The image is a diagram illustrating how a Container Network Interface (CNI) works within a Virtual Private Cloud (VPC), showing a Kubernetes cluster with nodes connected to a subnet via Elastic Network Interfaces (ENIs) in an availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862792/notes-assets/images/AWS-EKS-How-networking-works/cni-vpc-kubernetes-diagram-eni.jpg)
+![The image is a diagram illustrating how a Container Network Interface (CNI) works within a Virtual Private Cloud (VPC), showing a Kubernetes cluster with nodes connected to a subnet via Elastic Network Interfaces (ENIs) in an availability zone.](https://kodekloud.com/kk-media/image/upload/v1752862792/notes-assets/images/AWS-EKS-How-networking-works/cni-vpc-kubernetes-diagram-eni.jpg)
 
 ## 1. Confirm Your EKS Cluster
 

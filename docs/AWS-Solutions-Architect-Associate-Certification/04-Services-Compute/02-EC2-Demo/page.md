@@ -12,19 +12,19 @@ In this detailed tutorial, you will learn how to deploy, connect to, and manage 
 
 Begin by accessing the AWS console and using the search bar to navigate to the EC2 service. In the EC2 dashboard, click on the "Instances" section. You can either click the direct "Launch instances" button on the dashboard or select the option within the instances page.
 
-![The image shows the Amazon EC2 dashboard from AWS, displaying resources, account attributes, and options to launch instances in the US East (N. Virginia) region. It includes sections for service health, scheduled events, and AWS exploration tips.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864820/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2-Demo/amazon-ec2-dashboard-us-east.jpg)
+![The image shows the Amazon EC2 dashboard from AWS, displaying resources, account attributes, and options to launch instances in the US East (N. Virginia) region. It includes sections for service health, scheduled events, and AWS exploration tips.](https://kodekloud.com/kk-media/image/upload/v1752864820/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2-Demo/amazon-ec2-dashboard-us-east.jpg)
 
 On the instances page, click "Launch instances" to start the configuration process. The first step is to assign a name to your instance – for example, "EC2 demo instance" – and select a specific AMI. The selected AMI acts as a blueprint for your instance by defining the operating system and optionally including pre-installed software or services.
 
-![The image shows an AWS EC2 instance launch configuration screen, where a user is selecting an Amazon Machine Image (AMI) and configuring instance details. The summary section on the right provides an overview of the selected options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864822/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2-Demo/aws-ec2-instance-launch-configuration.jpg)
+![The image shows an AWS EC2 instance launch configuration screen, where a user is selecting an Amazon Machine Image (AMI) and configuring instance details. The summary section on the right provides an overview of the selected options.](https://kodekloud.com/kk-media/image/upload/v1752864822/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2-Demo/aws-ec2-instance-launch-configuration.jpg)
 
 You can choose AMIs from the Quick Start section, which include popular options like Amazon Linux, Ubuntu, and macOS. Custom AMIs will appear under "My AMIs", or you can use the search bar to find a specific image, such as typing "Ubuntu" to explore different versions and architectures.
 
-![The image shows an AWS EC2 console displaying a list of Ubuntu AMIs (Amazon Machine Images) available for selection, with options for different versions and architectures.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864823/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2-Demo/aws-ec2-ubuntu-amis-list.jpg)
+![The image shows an AWS EC2 console displaying a list of Ubuntu AMIs (Amazon Machine Images) available for selection, with options for different versions and architectures.](https://kodekloud.com/kk-media/image/upload/v1752864823/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2-Demo/aws-ec2-ubuntu-amis-list.jpg)
 
 If preferred, explore the Amazon Marketplace for pre-configured AMIs provided by software vendors. This can help you deploy applications like a Cisco router with the appropriate license without manual setup of a base OS.
 
-![The image shows an AWS console page for selecting an Amazon Machine Image (AMI), specifically displaying Ubuntu options from the AWS Marketplace.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864824/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2-Demo/aws-console-ami-ubuntu-options.jpg)
+![The image shows an AWS console page for selecting an Amazon Machine Image (AMI), specifically displaying Ubuntu options from the AWS Marketplace.](https://kodekloud.com/kk-media/image/upload/v1752864824/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2-Demo/aws-console-ami-ubuntu-options.jpg)
 
 For this demo, we will use the Amazon Linux 2023 AMI from the Quick Start tab. Keep in mind that each AMI includes a unique ID associated with a specific region, so verify the AMI ID for your desired region before proceeding.
 
@@ -35,7 +35,7 @@ Next, choose your instance type. For example, the T2 micro is free tier eligible
 3. Choose the default RSA type and the .pem format.
 4. Download the PEM file and store it securely.
 
-![The image shows a dialog box in the AWS console for creating a key pair, with options to name the key pair, select the key pair type (RSA or ED25519), and choose the private key file format (.pem or .ppk).](../../../../images/kodekloud.com/kk-media/image/upload/v1752864825/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2-Demo/aws-console-key-pair-dialog.jpg)
+![The image shows a dialog box in the AWS console for creating a key pair, with options to name the key pair, select the key pair type (RSA or ED25519), and choose the private key file format (.pem or .ppk).](https://kodekloud.com/kk-media/image/upload/v1752864825/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2-Demo/aws-console-key-pair-dialog.jpg)
 
 ***
 
@@ -47,7 +47,7 @@ Next, assign an existing security group or create a new one. By default, a new s
 
 Once all settings are applied, click "Launch instance". Your "EC2 demo instance" will now be deployed.
 
-![The image shows an AWS EC2 console with a success message indicating the launch of an instance. Below, there are options for next steps, such as creating billing alerts, connecting to the instance, and managing monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864826/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2-Demo/aws-ec2-console-instance-launch.jpg)
+![The image shows an AWS EC2 console with a success message indicating the launch of an instance. Below, there are options for next steps, such as creating billing alerts, connecting to the instance, and managing monitoring.](https://kodekloud.com/kk-media/image/upload/v1752864826/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2-Demo/aws-ec2-console-instance-launch.jpg)
 
 ***
 
@@ -64,9 +64,9 @@ After launching the instance, return to the Instances page to review its details
 
 Additional details include the security group settings, key pair name, launch time, and monitoring metrics like CPU utilization. You can also review network settings such as inbound/outbound rules, subnet, and network interfaces.
 
-![The image shows an AWS EC2 management console with details of a running instance named "ec2-demo-instance," including its security group settings and inbound/outbound rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864828/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2-Demo/aws-ec2-management-console-instance.jpg)
+![The image shows an AWS EC2 management console with details of a running instance named "ec2-demo-instance," including its security group settings and inbound/outbound rules.](https://kodekloud.com/kk-media/image/upload/v1752864828/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2-Demo/aws-ec2-management-console-instance.jpg)
 
-![The image shows an AWS EC2 management console with monitoring details for an instance named "ec2-demo-instance." It displays metrics like CPU utilization, network activity, and status checks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864829/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2-Demo/aws-ec2-management-console-metrics.jpg)
+![The image shows an AWS EC2 management console with monitoring details for an instance named "ec2-demo-instance." It displays metrics like CPU utilization, network activity, and status checks.](https://kodekloud.com/kk-media/image/upload/v1752864829/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2-Demo/aws-ec2-management-console-metrics.jpg)
 
 ***
 

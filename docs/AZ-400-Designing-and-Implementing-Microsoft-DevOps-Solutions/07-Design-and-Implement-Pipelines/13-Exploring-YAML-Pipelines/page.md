@@ -79,7 +79,7 @@ stages:
 * **Jobs**: Units of work that run in parallel or sequentially.
 * **Steps**: Individual tasks or scripts executed in a job.
 
-![The image illustrates a YAML pipeline structure, showing the flow from a trigger through stages, jobs, and steps, with tasks like publishing build artifacts and deploying Azure App Services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867860/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-YAML-Pipelines/yaml-pipeline-structure-azure-deployment.jpg)
+![The image illustrates a YAML pipeline structure, showing the flow from a trigger through stages, jobs, and steps, with tasks like publishing build artifacts and deploying Azure App Services.](https://kodekloud.com/kk-media/image/upload/v1752867860/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-YAML-Pipelines/yaml-pipeline-structure-azure-deployment.jpg)
 
 ### Minimal Pipeline Example
 
@@ -106,7 +106,7 @@ stages:
 3. Let the wizard scaffold a starter YAML file.
 4. Review, customize, and commit the YAML—your pipeline runs on every push.
 
-![The image is a guide for creating a YAML pipeline, showing steps to select a repository from a list. It includes a sidebar with steps and a dark interface for selecting a repository.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867861/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-YAML-Pipelines/yaml-pipeline-repository-selection-guide.jpg)
+![The image is a guide for creating a YAML pipeline, showing steps to select a repository from a list. It includes a sidebar with steps and a dark interface for selecting a repository.](https://kodekloud.com/kk-media/image/upload/v1752867861/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-YAML-Pipelines/yaml-pipeline-repository-selection-guide.jpg)
 
 ## Automating with Triggers
 
@@ -151,7 +151,7 @@ Leverage these techniques for more sophisticated pipelines:
 * Templates: Share and reuse common steps across multiple pipelines.
 * Conditions & Dependencies: Control execution with `dependsOn`, `condition`, and runtime expressions.
 
-![The image shows a diagram of an advanced YAML pipeline with stages labeled Development, Stage, and Production, along with features like multi-stage pipelines, using templates for reuse, and conditional insertions and dependencies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867862/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-YAML-Pipelines/yaml-pipeline-advanced-diagram-stages.jpg)
+![The image shows a diagram of an advanced YAML pipeline with stages labeled Development, Stage, and Production, along with features like multi-stage pipelines, using templates for reuse, and conditional insertions and dependencies.](https://kodekloud.com/kk-media/image/upload/v1752867862/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-YAML-Pipelines/yaml-pipeline-advanced-diagram-stages.jpg)
 
 ## Best Practices
 
@@ -161,7 +161,7 @@ Leverage these techniques for more sophisticated pipelines:
 
 > **triangle-alert** Never commit plain-text credentials or secrets in your YAML. Always use secured variables and secret scopes.
 
-![The image outlines best practices for YAML pipelines, focusing on readability, securing sensitive data, and testing strategies. It features three colored sections with icons and text.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867863/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-YAML-Pipelines/yaml-pipeline-best-practices-outline.jpg)
+![The image outlines best practices for YAML pipelines, focusing on readability, securing sensitive data, and testing strategies. It features three colored sections with icons and text.](https://kodekloud.com/kk-media/image/upload/v1752867863/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-YAML-Pipelines/yaml-pipeline-best-practices-outline.jpg)
 
 ## Links and References
 

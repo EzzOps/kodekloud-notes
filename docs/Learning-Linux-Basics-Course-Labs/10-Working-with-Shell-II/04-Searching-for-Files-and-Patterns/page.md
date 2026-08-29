@@ -20,15 +20,13 @@ locate City.txt
 
 The command returns all paths that match the provided pattern quickly. However, if you have a freshly installed Linux system or if new files have been created recently, `locate` might not find them because the database is outdated.
 
-<Callout icon="lightbulb">
-  If the file isn't listed, update the database manually by running:
+> **lightbulb** If the file isn't listed, update the database manually by running:
 
   ```bash theme={null}
   sudo updatedb
   ```
 
   Then re-run the `locate` command.
-</Callout>
 
 ***
 
@@ -169,6 +167,4 @@ This command provides helpful context around the matching line, making it easier
 By mastering these commands, you can efficiently search files and patterns on Linux systems. Whether you're managing system files or scanning through logs and documents, these tools offer the flexibility and power you need to access the information quickly and accurately.\
 Explore more about these commands and their advanced options in the [Linux Documentation](https://www.kernel.org/doc/html/latest/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/8587333b-3a93-4eb5-8d3f-13c4a3435d1b/lesson/5d2dba42-b447-483f-ae3a-06985a18a74e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/8587333b-3a93-4eb5-8d3f-13c4a3435d1b/lesson/5d2dba42-b447-483f-ae3a-06985a18a74e)

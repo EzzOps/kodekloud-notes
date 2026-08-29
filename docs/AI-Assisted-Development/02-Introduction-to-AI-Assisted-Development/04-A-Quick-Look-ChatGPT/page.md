@@ -18,7 +18,7 @@ The ChatGPT interface is designed to be both intuitive and minimalistic. Your on
 
 In response, ChatGPT produces a detailed, step-by-step guide that includes installing the necessary `mysql-connector-python` package and providing sample code. Below is an image that illustrates this interaction:
 
-![The image shows a ChatGPT interface with a user asking how to connect to MySQL using Python. The response provides a step-by-step guide, starting with installing the mysql-connector-python package.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857081/notes-assets/images/AI-Assisted-Development-A-Quick-Look-ChatGPT/chatgpt-mysql-python-guide.jpg)
+![The image shows a ChatGPT interface with a user asking how to connect to MySQL using Python. The response provides a step-by-step guide, starting with installing the mysql-connector-python package.](https://kodekloud.com/kk-media/image/upload/v1752857081/notes-assets/images/AI-Assisted-Development-A-Quick-Look-ChatGPT/chatgpt-mysql-python-guide.jpg)
 
 Here’s a Python snippet demonstrating basic database query operations:
 

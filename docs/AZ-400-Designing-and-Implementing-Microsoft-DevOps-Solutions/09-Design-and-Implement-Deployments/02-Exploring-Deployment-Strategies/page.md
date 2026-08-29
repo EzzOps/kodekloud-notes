@@ -12,7 +12,7 @@ When delivering new software versions, a solid deployment strategy is essential 
 * **Improved Uptime**: Roll out updates in stages to avoid downtime.
 * **Continuous Delivery**: Deploy features more frequently with confidence.
 
-![The image is a slide titled "Deployment Strategies – Introduction," listing six strategies: Blue/Green, Canary, Ring, Progressive Exposure, Feature Flags, and A/B Testing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867623/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Deployment-Strategies/deployment-strategies-introduction-slide.jpg)
+![The image is a slide titled "Deployment Strategies – Introduction," listing six strategies: Blue/Green, Canary, Ring, Progressive Exposure, Feature Flags, and A/B Testing.](https://kodekloud.com/kk-media/image/upload/v1752867623/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Deployment-Strategies/deployment-strategies-introduction-slide.jpg)
 
 ## Table of Contents
 
@@ -33,11 +33,11 @@ Blue/Green deployments use two identical production environments to achieve near
 2. Switch the router or load balancer so all traffic flows to **blue**.
 3. Monitor metrics; if issues occur, revert traffic to **green** immediately.
 
-![The image illustrates a Blue/Green deployment process, showing a user connecting through a router to either a new version deployment or the current production application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867624/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Deployment-Strategies/blue-green-deployment-process-diagram.jpg)
+![The image illustrates a Blue/Green deployment process, showing a user connecting through a router to either a new version deployment or the current production application.](https://kodekloud.com/kk-media/image/upload/v1752867624/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Deployment-Strategies/blue-green-deployment-process-diagram.jpg)
 
 > **lightbulb** Blue/Green is ideal when you need a fast rollback plan and zero interruption for end users.
 
-![The image is about Blue/Green Deployments, highlighting the ability to quickly roll back if issues arise and enhancing overall system reliability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867625/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Deployment-Strategies/blue-green-deployments-rollback-reliability.jpg)
+![The image is about Blue/Green Deployments, highlighting the ability to quickly roll back if issues arise and enhancing overall system reliability.](https://kodekloud.com/kk-media/image/upload/v1752867625/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Deployment-Strategies/blue-green-deployments-rollback-reliability.jpg)
 
 ***
 
@@ -49,7 +49,7 @@ Canary deployments roll out new features to a small subset of users, enabling ea
 * Collect metrics, logs, and user feedback.
 * Gradually increase traffic to the canary cohort if all health checks pass.
 
-![The image is a diagram titled "Canary Deployments," showing a process where developers monitor performance and catch potential issues early.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867628/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Deployment-Strategies/canary-deployments-performance-monitoring-diagram.jpg)
+![The image is a diagram titled "Canary Deployments," showing a process where developers monitor performance and catch potential issues early.](https://kodekloud.com/kk-media/image/upload/v1752867628/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Deployment-Strategies/canary-deployments-performance-monitoring-diagram.jpg)
 
 If anomalies arise, you can halt the rollout or roll back with minimal impact.
 
@@ -64,7 +64,7 @@ Ring deployments build on canary by defining multiple user “rings” that rece
 3. **Targeted**: Larger user segment.
 4. **Broad**: All remaining users.
 
-![The image illustrates a "Ring Deployments" process with a series of overlapping circles labeled Insider, Pilot, Targeted, and Broad, along with categories for Geography, Device Type, and Usage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867629/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Deployment-Strategies/ring-deployments-overlapping-circles-diagram.jpg)
+![The image illustrates a "Ring Deployments" process with a series of overlapping circles labeled Insider, Pilot, Targeted, and Broad, along with categories for Geography, Device Type, and Usage.](https://kodekloud.com/kk-media/image/upload/v1752867629/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Deployment-Strategies/ring-deployments-overlapping-circles-diagram.jpg)
 
 > **triangle-alert** Managing multiple rings introduces complexity in monitoring and coordination—plan your automation carefully.
 
@@ -74,7 +74,7 @@ Ring deployments build on canary by defining multiple user “rings” that rece
 
 Progressive exposure combines canary and ring patterns by advancing through well-defined stages based on real-time metrics. This method works well for large-scale features that require validation under varying loads.
 
-![The image illustrates a "Progressive Exposure" process with a flowchart showing stages: Canary, Pilot Customers, Light-Load Regions, and Medium-Load Regions. Each stage is represented by a box connected with arrows, indicating a sequential progression.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867630/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Deployment-Strategies/progressive-exposure-flowchart-stages.jpg)
+![The image illustrates a "Progressive Exposure" process with a flowchart showing stages: Canary, Pilot Customers, Light-Load Regions, and Medium-Load Regions. Each stage is represented by a box connected with arrows, indicating a sequential progression.](https://kodekloud.com/kk-media/image/upload/v1752867630/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Deployment-Strategies/progressive-exposure-flowchart-stages.jpg)
 
 **Stages**
 
@@ -94,7 +94,7 @@ Feature flags (also known as feature toggles) decouple code deployment from feat
 * Enable canary or phased rollouts by flagging select user segments.
 * Instantly disable problematic features to avoid full rollback.
 
-![The image illustrates the concept of feature flags, showing how new features can be toggled on for development and quality assurance teams, while remaining off for production users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867631/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Deployment-Strategies/feature-flags-development-qa-illustration.jpg)
+![The image illustrates the concept of feature flags, showing how new features can be toggled on for development and quality assurance teams, while remaining off for production users.](https://kodekloud.com/kk-media/image/upload/v1752867631/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Deployment-Strategies/feature-flags-development-qa-illustration.jpg)
 
 > **lightbulb** Use a centralized flag management service to avoid flag sprawl and technical debt.
 

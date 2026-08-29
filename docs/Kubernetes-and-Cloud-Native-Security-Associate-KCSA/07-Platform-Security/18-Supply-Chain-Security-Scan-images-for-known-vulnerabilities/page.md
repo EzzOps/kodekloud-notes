@@ -25,18 +25,14 @@ CMD ["bash"]
 
 When an image starts `FROM scratch`, it sits at the bottom of the chain—there are no layers beneath it.
 
-<Callout icon="lightbulb">
-  Images built `FROM scratch` are true minimal bases. Everything in your container must be added explicitly.
-</Callout>
+> **lightbulb** Images built `FROM scratch` are true minimal bases. Everything in your container must be added explicitly.
 
 ## Best Practices for Building Minimal Images
 
 1. **Design for Modularity**\
    Build one service per image. Compose them together at runtime for scalability and separation of concerns.
 
-<Frame>
-  ![The image features three icons: a blue globe, a green box, and a pink database, each within a square. The word "Modular" is written at the top left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880912/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Supply-Chain-Security-Minimize-base-image-footprint/modular-blue-globe-green-box-pink-database.jpg)
-</Frame>
+![The image features three icons: a blue globe, a green box, and a pink database, each within a square. The word "Modular" is written at the top left.](https://kodekloud.com/kk-media/image/upload/v1752880912/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Supply-Chain-Security-Minimize-base-image-footprint/modular-blue-globe-green-box-pink-database.jpg)
 
 2. **Keep Containers Stateless**\
    Containers should be ephemeral. Persist data in external volumes or managed services like [Redis](https://redis.io).
@@ -49,9 +45,7 @@ When an image starts `FROM scratch`, it sits at the bottom of the chain—there 
    COPY index.html /usr/local/apache2/htdocs/index.html
    ```
 
-<Frame>
-  ![The image shows a webpage displaying search results for "httpd," specifically the Apache HTTP Server Project, with details about its recent update and supported platforms.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880913/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Supply-Chain-Security-Minimize-base-image-footprint/httpd-apache-http-server-results.jpg)
-</Frame>
+![The image shows a webpage displaying search results for "httpd," specifically the Apache HTTP Server Project, with details about its recent update and supported platforms.](https://kodekloud.com/kk-media/image/upload/v1752880913/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Supply-Chain-Security-Minimize-base-image-footprint/httpd-apache-http-server-results.jpg)
 
 4. **Keep Images Small**
 
@@ -67,13 +61,9 @@ When an image starts `FROM scratch`, it sits at the bottom of the chain—there 
    | Minimal OS            | Use Alpine or slim variants             | `FROM python:3.10-alpine`                                              |
    | Cleanup after install | Remove package caches and temp files    | `RUN apk add --no-cache build-base && \`<br />`    apk del build-base` |
 
-<Frame>
-  ![The image provides guidelines for creating slim or minimal images, including steps like using official minimal images, installing only necessary packages, and maintaining different images for various environments. It also suggests using multi-stage builds for lean production-ready images.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880915/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Supply-Chain-Security-Minimize-base-image-footprint/slim-minimal-image-guidelines.jpg)
-</Frame>
+![The image provides guidelines for creating slim or minimal images, including steps like using official minimal images, installing only necessary packages, and maintaining different images for various environments. It also suggests using multi-stage builds for lean production-ready images.](https://kodekloud.com/kk-media/image/upload/v1752880915/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Supply-Chain-Security-Minimize-base-image-footprint/slim-minimal-image-guidelines.jpg)
 
-<Callout icon="triangle-alert">
-  Leaving package managers or shells in production images increases the attack surface. Always strip out unused binaries.
-</Callout>
+> **triangle-alert** Leaving package managers or shells in production images increases the attack surface. Always strip out unused binaries.
 
 One popular set of ultra-minimal images is [Google’s Distroless](https://github.com/GoogleContainerTools/distroless), which include only your app and runtime libraries—no shell, no package manager.
 
@@ -101,9 +91,7 @@ Switching to an Alpine-based `httpd` drops known issues to zero:
 * [Trivy Vulnerability Scanner](https://github.com/aquasecurity/trivy)
 * [Google Distroless Images](https://github.com/GoogleContainerTools/distroless)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/03bf5b94-11ed-41a7-a8a0-0751868b8ba6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/03bf5b94-11ed-41a7-a8a0-0751868b8ba6)
 
 
 # Supply Chain Security Scan images for known vulnerabilities
@@ -118,13 +106,9 @@ Container image scanning is a critical step in supply-chain security. In this gu
 
 **Common Vulnerabilities and Exposures (CVE)** is the industry-standard database for public security flaws. Each vulnerability gets a unique identifier, helping you avoid duplicates and streamline research.
 
-<Callout icon="lightbulb">
-  Visit the [CVE Database](https://cve.mitre.org/) to search for published vulnerabilities and track remediation status.
-</Callout>
+> **lightbulb** Visit the [CVE Database](https://cve.mitre.org/) to search for published vulnerabilities and track remediation status.
 
-<Frame>
-  ![The image shows a webpage from the Common Vulnerabilities and Exposures (CVE) database, listing search results for various CVE records with their descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880916/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Supply-Chain-Security-Scan-images-for-known-vulnerabilities/cve-database-search-results.jpg)
-</Frame>
+![The image shows a webpage from the Common Vulnerabilities and Exposures (CVE) database, listing search results for various CVE records with their descriptions.](https://kodekloud.com/kk-media/image/upload/v1752880916/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Supply-Chain-Security-Scan-images-for-known-vulnerabilities/cve-database-search-results.jpg)
 
 Typical CVE categories include:
 
@@ -143,17 +127,13 @@ The [Common Vulnerability Scoring System (CVSS)](https://www.first.org/cvss/) pr
 | High     | 7.0 – 8.9        |
 | Critical | 9.0 – 10.0       |
 
-<Frame>
-  ![The image shows a color gradient bar representing CVE severity scores from 0 to 10, along with tables comparing CVSS v2.0 and v3.0 ratings and their corresponding base score ranges.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880917/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Supply-Chain-Security-Scan-images-for-known-vulnerabilities/icve-severity-scores-gradient-table.jpg)
-</Frame>
+![The image shows a color gradient bar representing CVE severity scores from 0 to 10, along with tables comparing CVSS v2.0 and v3.0 ratings and their corresponding base score ranges.](https://kodekloud.com/kk-media/image/upload/v1752880917/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Supply-Chain-Security-Scan-images-for-known-vulnerabilities/icve-severity-scores-gradient-table.jpg)
 
 ## Example: CVE-2020-5911
 
 **CVE-2020-5911** affects the NGINX Ingress Controller installer on Debian/Ubuntu by downloading packages over HTTP instead of HTTPS. Its CVSS base score is **7.3 (High)**, indicating a serious risk.
 
-<Frame>
-  ![The image shows details of a CVE (Common Vulnerabilities and Exposures) entry, specifically CVE-2020-5911, with a description of the vulnerability and a CVSS (Common Vulnerability Scoring System) base score of 7.3, indicating high severity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880918/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Supply-Chain-Security-Scan-images-for-known-vulnerabilities/cve-2020-5911-details-cvss-7-3.jpg)
-</Frame>
+![The image shows details of a CVE (Common Vulnerabilities and Exposures) entry, specifically CVE-2020-5911, with a description of the vulnerability and a CVSS (Common Vulnerability Scoring System) base score of 7.3, indicating high severity.](https://kodekloud.com/kk-media/image/upload/v1752880918/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Supply-Chain-Security-Scan-images-for-known-vulnerabilities/cve-2020-5911-details-cvss-7-3.jpg)
 
 ## Why Scan Container Images?
 
@@ -163,9 +143,7 @@ Containers often bundle multiple libraries and OS packages, each a potential vec
 * Apply patches or workarounds
 * Remove unused components to reduce risk
 
-<Frame>
-  ![The image shows a "CVE Scanner" title with an illustration of a smartphone displaying gear icons, alongside a list of CVE (Common Vulnerabilities and Exposures) entries with descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880920/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Supply-Chain-Security-Scan-images-for-known-vulnerabilities/cve-scanner-smartphone-illustration.jpg)
-</Frame>
+![The image shows a "CVE Scanner" title with an illustration of a smartphone displaying gear icons, alongside a list of CVE (Common Vulnerabilities and Exposures) entries with descriptions.](https://kodekloud.com/kk-media/image/upload/v1752880920/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Supply-Chain-Security-Scan-images-for-known-vulnerabilities/cve-scanner-smartphone-illustration.jpg)
 
 ## Container Vulnerability Scanner: Trivy
 

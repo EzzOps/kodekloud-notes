@@ -36,29 +36,19 @@ With ShellCheck, you ensure that your script adheres to industry best practices 
 
 For users who prefer a visual interface, many free and open-source IDEs support shell scripting. One notable option is the [JetBrains PyCharm Community Edition IDE](https://www.jetbrains.com/pycharm/download/#section=windows), which, via plugins, offers syntax highlighting and real-time recommendations that help improve your scripts.
 
-<Frame>
-  ![The image shows a webpage for downloading PyCharm, offering Professional and Community editions for Windows, Mac, and Linux, with version details and download links.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884059/notes-assets/images/Shell-Scripts-for-Beginners-Tips-amp-Tricks-ShellCheck-amp-IDE/frame_90.jpg)
-</Frame>
+![The image shows a webpage for downloading PyCharm, offering Professional and Community editions for Windows, Mac, and Linux, with version details and download links.](https://kodekloud.com/kk-media/image/upload/v1752884059/notes-assets/images/Shell-Scripts-for-Beginners-Tips-amp-Tricks-ShellCheck-amp-IDE/frame_90.jpg)
 
 Other popular IDEs include [Microsoft Visual Studio](https://visualstudio.microsoft.com/) and [Atom](https://atom.io/), both of which provide environments tailored to writing and debugging shell scripts. For a comprehensive look at industry best practices, consider reviewing [Google’s shell scripting style guide](https://google.github.io/styleguide/shellguide.html).
 
-<Frame>
-  ![The image compares Visual Studio Code and Atom, showcasing download options for macOS, with a focus on editing and debugging features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884060/notes-assets/images/Shell-Scripts-for-Beginners-Tips-amp-Tricks-ShellCheck-amp-IDE/frame_110.jpg)
-</Frame>
+![The image compares Visual Studio Code and Atom, showcasing download options for macOS, with a focus on editing and debugging features.](https://kodekloud.com/kk-media/image/upload/v1752884060/notes-assets/images/Shell-Scripts-for-Beginners-Tips-amp-Tricks-ShellCheck-amp-IDE/frame_110.jpg)
 
-<Frame>
-  ![The image shows a Shell Style Guide table of contents, covering topics like environment, comments, formatting, and naming conventions, with a link to the full guide.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884062/notes-assets/images/Shell-Scripts-for-Beginners-Tips-amp-Tricks-ShellCheck-amp-IDE/frame_120.jpg)
-</Frame>
+![The image shows a Shell Style Guide table of contents, covering topics like environment, comments, formatting, and naming conventions, with a link to the full guide.](https://kodekloud.com/kk-media/image/upload/v1752884062/notes-assets/images/Shell-Scripts-for-Beginners-Tips-amp-Tricks-ShellCheck-amp-IDE/frame_120.jpg)
 
-<Callout icon="lightbulb">
-  Integrating IDE plugins for shell scripting can help catch potential issues before runtime, streamlining your development process.
-</Callout>
+> **lightbulb** Integrating IDE plugins for shell scripting can help catch potential issues before runtime, streamlining your development process.
 
 By incorporating these tools and methodologies into your workflow, you can significantly enhance the quality and reliability of your shell scripts. Happy scripting and enjoy exploring these practical techniques!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2e5d4133-6bc2-421e-bc8f-0389e7f96490/lesson/dcc9872e-95d3-464f-b73e-33ff0fb0ac1f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2e5d4133-6bc2-421e-bc8f-0389e7f96490/lesson/dcc9872e-95d3-464f-b73e-33ff0fb0ac1f)
 
 
 # Arithmetic Operations
@@ -78,9 +68,7 @@ $ expr 6 + 3
 9
 ```
 
-<Callout icon="lightbulb">
-  Ensure that operators and operands are strictly separated by spaces. When multiplying using `expr`, the star symbol (\*) must be escaped with a backslash because `*` is interpreted as a reserved regex character.
-</Callout>
+> **lightbulb** Ensure that operators and operands are strictly separated by spaces. When multiplying using `expr`, the star symbol (\*) must be escaped with a backslash because `*` is interpreted as a reserved regex character.
 
 The `expr` command supports other arithmetic operations like subtraction, division, and multiplication. You can also incorporate variable substitution. Consider the following examples:
 
@@ -138,9 +126,7 @@ $ echo $(( A-- ))
 7
 ```
 
-<Callout icon="triangle-alert">
-  Always use `echo` or store the result in a variable when using arithmetic expansion. Failing to do so might cause the shell to misinterpret the output as a command, leading to errors.
-</Callout>
+> **triangle-alert** Always use `echo` or store the result in a variable when using arithmetic expansion. Failing to do so might cause the shell to misinterpret the output as a command, leading to errors.
 
 ## Performing Floating Point Arithmetic with bc
 
@@ -172,8 +158,6 @@ By utilizing the methods discussed above, you can effectively perform both integ
 
 Happy scripting!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/60ae59e7-fbc1-4954-bcdc-0b574f259399" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/60ae59e7-fbc1-4954-bcdc-0b574f259399)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/3cb2b8e2-e29c-4525-8fc7-0c999dda4f9b" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/3cb2b8e2-e29c-4525-8fc7-0c999dda4f9b)

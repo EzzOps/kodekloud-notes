@@ -104,9 +104,7 @@ kubectl get servicemonitor argocd-server-metrics -n argocd -o yaml
 
 Re-check the generated Prometheus configuration (as in Step 1) to confirm `job_name` entries for your ServiceMonitors appear.
 
-<Callout icon="warning">
-  If a ServiceMonitor is created before the Prometheus Operator and its CRDs are installed, the resource may be ignored or not processed. Always install the operator and CRDs first, then apply monitoring CRs.
-</Callout>
+> **warning** If a ServiceMonitor is created before the Prometheus Operator and its CRDs are installed, the resource may be ignored or not processed. Always install the operator and CRDs first, then apply monitoring CRs.
 
 ### 5) Visualize ArgoCD metrics in Grafana
 
@@ -150,9 +148,7 @@ Wrapping up
 * Ensure correct labels, port names, and namespace selection so the operator picks up your monitoring resources.
 * Use Grafana to build dashboards from the scraped ArgoCD metrics.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/241be712-9418-4199-94c1-73f07c0999af" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/241be712-9418-4199-94c1-73f07c0999af)
 
 
 # Demo Helm

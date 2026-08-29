@@ -2,9 +2,7 @@
 -/+ resource "aws_instance" "webserver-3" {
 ```
 
-<Callout icon="triangle-alert">
-  Double-check your resource configuration and provisioner commands to avoid unintentional resource replacement.
-</Callout>
+> **triangle-alert** Double-check your resource configuration and provisioner commands to avoid unintentional resource replacement.
 
 ## Forcing a Resource Rebuild
 
@@ -63,9 +61,7 @@ By leveraging the taint and untaint commands, you can manage resource lifecycle 
 
 For further details, explore the [Terraform Documentation](https://www.terraform.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/29825b4d-c0d3-4732-a4e0-ec3a2988e2a3/lesson/bec58f8f-0c05-40f4-baaa-c19827185899" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/29825b4d-c0d3-4732-a4e0-ec3a2988e2a3/lesson/bec58f8f-0c05-40f4-baaa-c19827185899)
 
 
 # Creating and Using a Module
@@ -85,15 +81,11 @@ The simplified architecture leverages the default VPC and incorporates the follo
 
 These components integrate to form a basic deployment model for the payroll application.
 
-<Frame>
-  ![The image depicts a simplified AWS architecture with a VPC, an EC2 instance, an S3 bucket, and a DynamoDB table for a payroll application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884194/notes-assets/images/Terraform-Basics-Training-Course-Creating-and-Using-a-Module/frame_60.jpg)
-</Frame>
+![The image depicts a simplified AWS architecture with a VPC, an EC2 instance, an S3 bucket, and a DynamoDB table for a payroll application.](https://kodekloud.com/kk-media/image/upload/v1752884194/notes-assets/images/Terraform-Basics-Training-Course-Creating-and-Using-a-Module/frame_60.jpg)
 
 The goal is to encapsulate this setup into a Terraform module so that the same stack can be deployed across different regions. Based on the high-level design outlined above, let’s create the corresponding Terraform configuration.
 
-<Callout icon="lightbulb">
-  Some values, such as the instance type, are hard-coded for consistency, while others — like the AMI and region-specific naming — are configurable via variables.
-</Callout>
+> **lightbulb** Some values, such as the instance type, are hard-coded for consistency, while others — like the AMI and region-specific naming — are configurable via variables.
 
 ## Module Directory Structure
 

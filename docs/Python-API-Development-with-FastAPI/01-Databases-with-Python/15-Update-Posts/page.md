@@ -6,9 +6,7 @@ This guide explains how to update a post resource by adding a new path operation
 
 In this guide, we explain how to update a post resource by adding a new path operation that supports modifying posts. First, we introduce a basic update function that changes a post in an in-memory posts list.
 
-<Callout icon="lightbulb">
-  Ensure that each code block is tested properly before deploying changes to production.
-</Callout>
+> **lightbulb** Ensure that each code block is tested properly before deploying changes to production.
 
 ## Basic Update Function
 
@@ -141,9 +139,7 @@ The endpoint should return:
 
 After checking the database, you will find that the post has been updated correctly.
 
-<Callout icon="triangle-alert">
-  The initial update query did not include a WHERE clause, inadvertently updating every post. Always verify that your SQL queries update only the intended record.
-</Callout>
+> **triangle-alert** The initial update query did not include a WHERE clause, inadvertently updating every post. Always verify that your SQL queries update only the intended record.
 
 To address this bug, add a WHERE condition to target the post with the specified ID. The updated SQL query is as follows:
 
@@ -211,6 +207,4 @@ Make sure that existing posts are updated as expected and that non-existent post
 * [PostgreSQL SQL Command Reference](https://www.postgresql.org/docs/current/sql-update.html/)
 * [Python DB-API Documentation](https://www.python.org/dev/peps/pep-0249/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/44f218a9-b18f-4837-a97e-259767549c44" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/44f218a9-b18f-4837-a97e-259767549c44)

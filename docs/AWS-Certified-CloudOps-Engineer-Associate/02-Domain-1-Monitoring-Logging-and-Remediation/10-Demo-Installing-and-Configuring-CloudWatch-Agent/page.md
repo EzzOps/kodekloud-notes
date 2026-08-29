@@ -16,7 +16,7 @@ Before launching your EC2 instance, you must update its IAM role to include the 
 2. Locate the role used for metric filtering.
 3. Click **Add permission** and select **Attach policies**. Then, attach the **CloudWatch agent server policy**.
 
-![The image shows an AWS Identity and Access Management (IAM) console screen for a role named "metrics-filter," displaying its summary, permissions policies, and related details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859912/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Installing-and-Configuring-CloudWatch-Agent/aws-iam-console-metrics-filter.jpg)
+![The image shows an AWS Identity and Access Management (IAM) console screen for a role named "metrics-filter," displaying its summary, permissions policies, and related details.](https://kodekloud.com/kk-media/image/upload/v1752859912/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Installing-and-Configuring-CloudWatch-Agent/aws-iam-console-metrics-filter.jpg)
 
 ***
 
@@ -30,9 +30,9 @@ Proceed to the EC2 console and launch a new instance using these guidelines:
 4. In **Advanced Details**, select the updated IAM role.
 5. Launch the instance.
 
-![The image shows an AWS EC2 console interface for launching an instance, with options for selecting an Amazon Machine Image (AMI) and instance type. The summary section on the right provides details about the selected configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859913/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Installing-and-Configuring-CloudWatch-Agent/aws-ec2-launch-instance-console.jpg)
+![The image shows an AWS EC2 console interface for launching an instance, with options for selecting an Amazon Machine Image (AMI) and instance type. The summary section on the right provides details about the selected configuration.](https://kodekloud.com/kk-media/image/upload/v1752859913/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Installing-and-Configuring-CloudWatch-Agent/aws-ec2-launch-instance-console.jpg)
 
-![The image shows an AWS EC2 instance launch configuration screen, detailing options for security groups, storage, and instance type. The summary section on the right provides an overview of the selected settings, including the free tier eligibility.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859914/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Installing-and-Configuring-CloudWatch-Agent/aws-ec2-instance-launch-configuration.jpg)
+![The image shows an AWS EC2 instance launch configuration screen, detailing options for security groups, storage, and instance type. The summary section on the right provides an overview of the selected settings, including the free tier eligibility.](https://kodekloud.com/kk-media/image/upload/v1752859914/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Installing-and-Configuring-CloudWatch-Agent/aws-ec2-instance-launch-configuration.jpg)
 
 ***
 
@@ -146,7 +146,7 @@ Log in to the CloudWatch console and create a log group:
 2. Click **Create log group**.
 3. Enter **login-monitoring** as the log group name and confirm.
 
-![The image shows an AWS CloudWatch interface for creating a new log group, with fields for log group name, retention setting, and log class. The log group name is set to "login-monitoring," and there are options for adding tags.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859916/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Installing-and-Configuring-CloudWatch-Agent/aws-cloudwatch-log-group-creation.jpg)
+![The image shows an AWS CloudWatch interface for creating a new log group, with fields for log group name, retention setting, and log class. The log group name is set to "login-monitoring," and there are options for adding tags.](https://kodekloud.com/kk-media/image/upload/v1752859916/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Installing-and-Configuring-CloudWatch-Agent/aws-cloudwatch-log-group-creation.jpg)
 
 When the CloudWatch agent starts sending logs, it will automatically generate a log stream named after your EC2 instance ID.
 
@@ -244,7 +244,7 @@ round_interval = false
 
 After starting the agent, review the CloudWatch Logs console to see a log stream (named after your EC2 instance ID) populated with the audit log entries.
 
-![The image shows an AWS CloudWatch console displaying a list of log events with timestamps and various log types. The interface includes navigation options on the left and a detailed log view on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859918/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Installing-and-Configuring-CloudWatch-Agent/aws-cloudwatch-log-events-console.jpg)
+![The image shows an AWS CloudWatch console displaying a list of log events with timestamps and various log types. The interface includes navigation options on the left and a detailed log view on the right.](https://kodekloud.com/kk-media/image/upload/v1752859918/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Installing-and-Configuring-CloudWatch-Agent/aws-cloudwatch-log-events-console.jpg)
 
 ***
 

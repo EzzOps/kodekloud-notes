@@ -14,9 +14,7 @@ with tracer.start_as_current_span("process_item", links=[link]) as span:
     # perform work for this independent span...
 ```
 
-<Callout icon="lightbulb">
-  Use span links when related work is produced and consumed asynchronously, when multiple independent workers process parts of a single logical operation, or when you need to associate messages and events without creating parent-child spans.
-</Callout>
+> **lightbulb** Use span links when related work is produced and consumed asynchronously, when multiple independent workers process parts of a single logical operation, or when you need to associate messages and events without creating parent-child spans.
 
 ## Practical use cases
 
@@ -52,9 +50,7 @@ Span links are a core OpenTelemetry feature for connecting related spans that ar
 * OpenTelemetry Python documentation: [https://opentelemetry.io/docs/instrumentation/python/](https://opentelemetry.io/docs/instrumentation/python/)
 * Distributed tracing concepts: [https://opentracing.io/](https://opentracing.io/) (conceptual background)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/9475eb2b-5716-40df-8215-df264b39f0d7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/2708459f-e4ca-4659-9878-5769d439a274/lesson/9475eb2b-5716-40df-8215-df264b39f0d7)
 
 
 # Span Name and Context
@@ -91,9 +87,7 @@ Common examples of span names:
 * `listAdsByCategory`
 * `getLoyaltyStatus`
 
-<Callout icon="lightbulb">
-  Keep span names generic and stable. Put request-specific details (URLs, IDs, amounts) into span attributes rather than the span name.
-</Callout>
+> **lightbulb** Keep span names generic and stable. Put request-specific details (URLs, IDs, amounts) into span attributes rather than the span name.
 
 <Frame>
   <img alt="The image illustrates the concept of naming custom spans, differentiating between auto-instrumentation (handling standard operations like HTTP requests and DB queries) and custom spans (capturing unique business logic), with a naming convention of &#x22;verb object&#x22;." />
@@ -151,9 +145,7 @@ A representative (illustrative) span context (JSON-style for clarity):
 
 Note: the HTTP propagation format is defined by the W3C Trace Context spec (for example, `traceparent` and `tracestate` headers). The JSON above is illustrative — the essential idea is that the trace id, span id, flags, and optional trace\_state are what get propagated between processes.
 
-<Callout icon="lightbulb">
-  Exam tip: When asked "which part moves across process boundaries?", the answer is the span context (trace\_id, span\_id, trace\_flags, and trace\_state), typically carried in headers during propagation.
-</Callout>
+> **lightbulb** Exam tip: When asked "which part moves across process boundaries?", the answer is the span context (trace\_id, span\_id, trace\_flags, and trace\_state), typically carried in headers during propagation.
 
 ## Trace ID
 

@@ -109,9 +109,7 @@ Error: Instance aws_instance.cerberus must be replaced
 Resource aws_instance.cerberus has lifecycle prevent_destroy set, but plan requires resource to be replaced. This operation would destroy the existing resource.
 ```
 
-<Callout icon="lightbulb">
-  `prevent_destroy` does *not* block a direct `tofu destroy`. It only prevents destruction during apply operations triggered by configuration changes.
-</Callout>
+> **lightbulb** `prevent_destroy` does *not* block a direct `tofu destroy`. It only prevents destruction during apply operations triggered by configuration changes.
 
 ***
 
@@ -167,9 +165,7 @@ aws_instance.cerberus: Refreshing state... [id=i-1234567890abcdef0]
 Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
 ```
 
-<Callout icon="triangle-alert">
-  Use `ignore_changes = all` cautiously. Ignoring all drift may mask unintended configuration drift over time.
-</Callout>
+> **triangle-alert** Use `ignore_changes = all` cautiously. Ignoring all drift may mask unintended configuration drift over time.
 
 ***
 
@@ -189,6 +185,4 @@ Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
 * [OpenTofu Documentation on Lifecycle Rules](https://github.com/opentofu/opentofu/blob/main/docs/lifecycle.md)
 * [Terraform Meta-Arguments: Lifecycle](https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/a1daef77-08c8-402e-9f9e-bd35488ddfe7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/a1daef77-08c8-402e-9f9e-bd35488ddfe7)

@@ -12,7 +12,7 @@ Amazon RDS utilizes replication techniques to ensure high availability and busin
 
 This synchronous replication is critical within a multi-AZ deployment, which typically includes one primary and one standby instance. The standby is kept in sync but is not accessible for read operations, as accessing it could delay the replication process and impact performance. By contrast, a multi-AZ cluster deployment includes two standby instances, one of which can serve read operations. This configuration enables active-active failover and enhances read performance.
 
-![The image illustrates the benefits of RDS replication, showing a setup with a primary and standby availability zone, highlighting high availability, fault tolerance, and enhanced performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859991/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-RDS-Replication-Types-Introduction/rds-replication-benefits-diagram.jpg)
+![The image illustrates the benefits of RDS replication, showing a setup with a primary and standby availability zone, highlighting high availability, fault tolerance, and enhanced performance.](https://kodekloud.com/kk-media/image/upload/v1752859991/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-RDS-Replication-Types-Introduction/rds-replication-benefits-diagram.jpg)
 
 In the event of a failure, the standby is automatically promoted to primary, ensuring uninterrupted operations for both reads and writes.
 
@@ -28,7 +28,7 @@ Amazon RDS supports several replication configurations:
 
 Read replicas allow you to distribute read traffic by asynchronously replicating data from the primary instance to one or more read-only replicas. Because the replication is asynchronous, there may be a slight delay—known as replication lag—between updates on the primary and their appearance on the replica. This configuration is ideal for workload offloading, such as business intelligence or reporting. Additionally, read replicas can be deployed in the same or different availability zones and can even span across regions. You also have the option to break the replication link and promote a read replica to a standalone primary if needed.
 
-![The image is a diagram illustrating RDS Read Replicas, showing application servers performing read/write operations on a primary database server, which asynchronously replicates data to a read-only replica for BI/reporting purposes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859992/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-RDS-Replication-Types-Introduction/rds-read-replicas-diagram.jpg)
+![The image is a diagram illustrating RDS Read Replicas, showing application servers performing read/write operations on a primary database server, which asynchronously replicates data to a read-only replica for BI/reporting purposes.](https://kodekloud.com/kk-media/image/upload/v1752859992/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-RDS-Replication-Types-Introduction/rds-read-replicas-diagram.jpg)
 
 ### Multi-AZ Deployments
 
@@ -37,13 +37,13 @@ Multi-AZ deployments enhance availability and fault tolerance through synchronou
 1. **Instance Deployment:** Features one primary instance and one standby instance. The standby remains inaccessible for read operations but can be promoted automatically during failover.
 2. **Cluster Deployment:** Consists of one primary instance and two standby instances. In this setup, one standby instance can serve read operations, providing improved scaling along with high availability. Note that additional instances might increase overall costs.
 
-![The image illustrates a Multi-AZ Cluster Deployment for Amazon RDS, showing a region with multiple availability zones containing a writer DB instance and reader DB instances, with replication and client access paths.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859993/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-RDS-Replication-Types-Introduction/multi-az-cluster-deployment-rds.jpg)
+![The image illustrates a Multi-AZ Cluster Deployment for Amazon RDS, showing a region with multiple availability zones containing a writer DB instance and reader DB instances, with replication and client access paths.](https://kodekloud.com/kk-media/image/upload/v1752859993/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-RDS-Replication-Types-Introduction/multi-az-cluster-deployment-rds.jpg)
 
 ### Cross-Region Replication
 
 Cross-region replication maintains a near real-time copy of your data in a remote, geographically distant region. It employs asynchronous replication, which may result in slight delays (replication lag) between the primary and the replica. This replication type is particularly useful for disaster recovery and ensuring data availability across multiple regions. Although failover in a cross-region setup is usually manual (with some exceptions in Aurora), it significantly strengthens your disaster recovery strategy.
 
-![The image illustrates a cross-region replica setup for Amazon RDS, showing asynchronous replication between a primary DB instance and a read replica across two regions, with clients accessing each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859994/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-RDS-Replication-Types-Introduction/cross-region-rds-replica-setup.jpg)
+![The image illustrates a cross-region replica setup for Amazon RDS, showing asynchronous replication between a primary DB instance and a read replica across two regions, with clients accessing each.](https://kodekloud.com/kk-media/image/upload/v1752859994/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-RDS-Replication-Types-Introduction/cross-region-rds-replica-setup.jpg)
 
 ## Comparing RDS Replication Types
 
@@ -56,7 +56,7 @@ Below is a summary of the key differences between the replication types:
 | Read Replicas                  | Asynchronous | Multiple read endpoints | Manual (with Aurora exception) | Same or across regions |
 | Cross-Region Replication       | Asynchronous | Multiple read endpoints | Manual (with Aurora exception) | Across regions         |
 
-![The image is a comparison table of RDS replication types, detailing features like replication type, read performance, failover, and use cases for Multi-AZ (Instance and Cluster), Read Replicas, and Cross-Region Replication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859994/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-RDS-Replication-Types-Introduction/rds-replication-types-comparison-table.jpg)
+![The image is a comparison table of RDS replication types, detailing features like replication type, read performance, failover, and use cases for Multi-AZ (Instance and Cluster), Read Replicas, and Cross-Region Replication.](https://kodekloud.com/kk-media/image/upload/v1752859994/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-RDS-Replication-Types-Introduction/rds-replication-types-comparison-table.jpg)
 
 ## Best Practices for RDS Replication
 
@@ -69,7 +69,7 @@ To ensure optimal performance and reliability, follow these best practices:
 5. Regularly test both manual and automatic failover scenarios to validate your disaster recovery plan.
 6. Use RDS Proxy to simplify and streamline failover processes, especially in multi-AZ deployments.
 
-![The image lists five best practices and considerations for replication, including monitoring replication logs, using appropriate instance types, considering network latency, understanding consistency models, and regularly testing failover scenarios.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859998/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-RDS-Replication-Types-Introduction/replication-best-practices-considerations.jpg)
+![The image lists five best practices and considerations for replication, including monitoring replication logs, using appropriate instance types, considering network latency, understanding consistency models, and regularly testing failover scenarios.](https://kodekloud.com/kk-media/image/upload/v1752859998/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-RDS-Replication-Types-Introduction/replication-best-practices-considerations.jpg)
 
 > **lightbulb** Regular monitoring and testing of your replication setup can help quickly identify and mitigate issues before they impact your application performance.
 

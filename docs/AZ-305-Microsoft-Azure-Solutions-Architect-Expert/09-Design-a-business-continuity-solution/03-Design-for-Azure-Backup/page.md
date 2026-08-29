@@ -8,7 +8,7 @@ In this article, we explore the robust architecture of the Azure Backup service.
 
 Azure Backup is a versatile solution that supports both Azure and non-Azure workloads. As illustrated in the diagram below, multiple backup sources on the left feed data into a centralized backup storage system on the right.
 
-![The image is a diagram titled "Design for Azure Backup," illustrating components like backup agents, built-in backup, backup vault, and recovery services vault, with Azure Backup at the center. It highlights various Azure services and workloads that can be backed up.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866806/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Backup/azure-backup-design-diagram.jpg)
+![The image is a diagram titled "Design for Azure Backup," illustrating components like backup agents, built-in backup, backup vault, and recovery services vault, with Azure Backup at the center. It highlights various Azure services and workloads that can be backed up.](https://kodekloud.com/kk-media/image/upload/v1752866806/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Backup/azure-backup-design-diagram.jpg)
 
 ## Data Collection and Backup Processes
 

@@ -190,9 +190,7 @@ def create_posts(post: Post, db: Session = Depends(get_db)):
 
 Using `**post.dict()` automatically unpacks the dictionary into keyword arguments that match the fields defined in your `Post` model. This method is scalable and easier to maintain when additional fields are introduced.
 
-<Callout icon="lightbulb">
-  Check that your model is defined accurately. The fields in your Pydantic model should directly correspond to the fields in your SQLAlchemy model for seamless data mapping.
-</Callout>
+> **lightbulb** Check that your model is defined accurately. The fields in your Pydantic model should directly correspond to the fields in your SQLAlchemy model for seamless data mapping.
 
 ## Final Endpoint Implementation
 
@@ -210,10 +208,6 @@ def create_posts(post: Post, db: Session = Depends(get_db)):
 
 This approach eliminates the need for manual attribute mapping, ensures that all changes are correctly committed to PostgreSQL, and makes your codebase more scalable and maintainable.
 
-<Callout icon="triangle-alert">
-  Remember to always commit your database session after adding new entries. Missing a commit could result in data not being persisted in the database.
-</Callout>
+> **triangle-alert** Remember to always commit your database session after adding new entries. Missing a commit could result in data not being persisted in the database.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/91918418-00a1-42c0-b429-b57e69f3f6b1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/1c3ad280-5fee-4b8e-a891-42a61f9a2dd0/lesson/91918418-00a1-42c0-b429-b57e69f3f6b1)

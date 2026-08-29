@@ -16,19 +16,19 @@ For instance, initiating a conversation with the finance team can help you:
 * Identify successful and underperforming business lines.
 * Decide which offerings to support or retire.
 
-![The image is a flowchart titled "Defining Needs and Use Cases," showing a sequence of steps: Identify teams, Define metadata, Organize resources, and Apply to teams.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861135/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Tagging-Resources-for-Cost-Management-Best-Practices/defining-needs-use-cases-flowchart.jpg)
+![The image is a flowchart titled "Defining Needs and Use Cases," showing a sequence of steps: Identify teams, Define metadata, Organize resources, and Apply to teams.](https://kodekloud.com/kk-media/image/upload/v1752861135/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Tagging-Resources-for-Cost-Management-Best-Practices/defining-needs-use-cases-flowchart.jpg)
 
 Likewise, discussions with the operations and security teams play a vital role. Finance often provides insights into business buckets and cost allocation while the security team ensures that data categorization complies with audit and regulatory standards.
 
-![The image outlines the needs and use cases for finance and business lines, including mapping investments to costs, identifying successful business lines, and making decisions on offerings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861136/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Tagging-Resources-for-Cost-Management-Best-Practices/finance-business-needs-use-cases.jpg)
+![The image outlines the needs and use cases for finance and business lines, including mapping investments to costs, identifying successful business lines, and making decisions on offerings.](https://kodekloud.com/kk-media/image/upload/v1752861136/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Tagging-Resources-for-Cost-Management-Best-Practices/finance-business-needs-use-cases.jpg)
 
 When addressing security concerns, emphasize that accurate data categorization is essential for meeting regulatory requirements and audit standards.
 
-![The image is a slide titled "Defining Needs and Use Cases" focusing on "Governance and Compliance," with points on understanding data categorization and ensuring workloads meet audit/regulatory standards.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861137/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Tagging-Resources-for-Cost-Management-Best-Practices/defining-needs-governance-compliance.jpg)
+![The image is a slide titled "Defining Needs and Use Cases" focusing on "Governance and Compliance," with points on understanding data categorization and ensuring workloads meet audit/regulatory standards.](https://kodekloud.com/kk-media/image/upload/v1752861137/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Tagging-Resources-for-Cost-Management-Best-Practices/defining-needs-governance-compliance.jpg)
 
 Additionally, operational teams and downstream development groups need to consider specific resource requirements. For example, S3 buckets, EBS volumes, and databases must be tagged properly. There is also a tactical element—threat hunters in InfoSec rely on accurate tagging to differentiate sensitive from non-sensitive data and identify critical business functions.
 
-![The image outlines the need to define and manage security controls within Information Security (InfoSec) and Security Operations (SecOps).](../../../../images/kodekloud.com/kk-media/image/upload/v1752861138/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Tagging-Resources-for-Cost-Management-Best-Practices/infosec-secops-security-controls-outline.jpg)
+![The image outlines the need to define and manage security controls within Information Security (InfoSec) and Security Operations (SecOps).](https://kodekloud.com/kk-media/image/upload/v1752861138/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Tagging-Resources-for-Cost-Management-Best-Practices/infosec-secops-security-controls-outline.jpg)
 
 ## Defining and Publishing the Tagging Schema
 
@@ -46,7 +46,7 @@ With your schema finalized, integrate it effectively across your organization. A
 
 > **lightbulb** Automating your tagging process minimizes human error and ensures standardized compliance across all resources.
 
-![The image outlines four methods for implementing and enforcing tagging: manually managed resources, Infrastructure as Code (IaC) managed resources, CI/CD pipeline managed resources, and enforcement using AWS Resource Groups and Tag Editor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861139/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Tagging-Resources-for-Cost-Management-Best-Practices/tagging-implementation-methods-diagram.jpg)
+![The image outlines four methods for implementing and enforcing tagging: manually managed resources, Infrastructure as Code (IaC) managed resources, CI/CD pipeline managed resources, and enforcement using AWS Resource Groups and Tag Editor.](https://kodekloud.com/kk-media/image/upload/v1752861139/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Tagging-Resources-for-Cost-Management-Best-Practices/tagging-implementation-methods-diagram.jpg)
 
 Utilize AWS Resource Groups and the AWS Tag Editor to enforce compliance by applying tag policies organization-wide. This strategy ranges from manual management to a fully automated CI/CD pipeline with robust policy enforcement.
 
@@ -60,7 +60,7 @@ Once your tagging strategy is in place, regularly measure its effectiveness. Lev
 
 These tools can help you analyze data, track expenses, and determine if adjustments are needed.
 
-![The image outlines tools for measuring tagging effectiveness and driving improvements, featuring AWS Cost Explorer, AWS Cost and Usage Report, and Resource Groups and Tag Editor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861141/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Tagging-Resources-for-Cost-Management-Best-Practices/tagging-effectiveness-tools-aws.jpg)
+![The image outlines tools for measuring tagging effectiveness and driving improvements, featuring AWS Cost Explorer, AWS Cost and Usage Report, and Resource Groups and Tag Editor.](https://kodekloud.com/kk-media/image/upload/v1752861141/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Tagging-Resources-for-Cost-Management-Best-Practices/tagging-effectiveness-tools-aws.jpg)
 
 When feedback reveals that certain tags are underperforming or misaligned with organizational needs, refine your tagging schema accordingly.
 
@@ -78,11 +78,11 @@ To optimize your tagging strategy, consider these best practices:
 * Enforce reserved tag sets to support finance and audit requirements.
 * Integrate tagging policy checks within your CI/CD processes to ensure compliance.
 
-![The image lists best practices for tagging, including creating a strategy early, using consistent tag names, assigning ownership tags, tagging by environment and project, and tagging resource purpose.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861142/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Tagging-Resources-for-Cost-Management-Best-Practices/best-practices-tagging-strategy.jpg)
+![The image lists best practices for tagging, including creating a strategy early, using consistent tag names, assigning ownership tags, tagging by environment and project, and tagging resource purpose.](https://kodekloud.com/kk-media/image/upload/v1752861142/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Tagging-Resources-for-Cost-Management-Best-Practices/best-practices-tagging-strategy.jpg)
 
 Additionally, ensure that automated compliance checks remove unused tags and split required granular tags as necessary.
 
-![The image lists best practices for tagging, including using cost allocation tags, enforcing a tagging policy, and optimizing tag usage with reports.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861143/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Tagging-Resources-for-Cost-Management-Best-Practices/best-practices-tagging-policy-reports.jpg)
+![The image lists best practices for tagging, including using cost allocation tags, enforcing a tagging policy, and optimizing tag usage with reports.](https://kodekloud.com/kk-media/image/upload/v1752861143/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Tagging-Resources-for-Cost-Management-Best-Practices/best-practices-tagging-policy-reports.jpg)
 
 ## Conclusion
 

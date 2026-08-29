@@ -54,7 +54,7 @@ In this guide, we demonstrate how to upgrade a Kubernetes cluster from version 1
 
 ![The image shows a webpage from Kubernetes documentation about upgrading
   kubeadm clusters, detailing version updates and providing links for further
-  information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869692/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Demo-Cluster-upgrade/frame_30.jpg)
+  information.](https://kodekloud.com/kk-media/image/upload/v1752869692/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Demo-Cluster-upgrade/frame_30.jpg)
 
 The documentation provides dedicated instructions for each upgrade path. In this case, we are upgrading from 1.28 to 1.29 (the latest release). Similar procedures exist for other upgrade paths (e.g., 1.27 to 1.28, 1.26 to 1.27, etc.). Simply select the correct upgrade path and follow the detailed steps accordingly.
 
@@ -67,7 +67,7 @@ Before beginning the upgrade, review the updated package repository information.
 ![The image shows a Kubernetes documentation page about changing package
   repositories, highlighting the deprecation of legacy repositories and
   recommending new ones from September 13,
-  2023.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869694/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Demo-Cluster-upgrade/frame_80.jpg)
+  2023.](https://kodekloud.com/kk-media/image/upload/v1752869694/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Demo-Cluster-upgrade/frame_80.jpg)
 
 > **lightbulb** Before proceeding, confirm that you are using the new package repositories.
   Check the documentation and click the provided link for the latest

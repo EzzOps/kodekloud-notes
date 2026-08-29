@@ -38,7 +38,7 @@ Configure the following parameters:
 | IPv6 CIDR block | Amazon-provided (default) |
 | Tenancy         | Default                   |
 
-![The image shows the AWS Management Console interface for creating a VPC, with options for configuring VPC settings, subnets, and route tables. The preview section displays the structure of the VPC and its associated resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863191/notes-assets/images/AWS-Networking-Fundamentals-Custom-VPC-Demo/aws-management-console-vpc-creation.jpg)
+![The image shows the AWS Management Console interface for creating a VPC, with options for configuring VPC settings, subnets, and route tables. The preview section displays the structure of the VPC and its associated resources.](https://kodekloud.com/kk-media/image/upload/v1752863191/notes-assets/images/AWS-Networking-Fundamentals-Custom-VPC-Demo/aws-management-console-vpc-creation.jpg)
 
 After verifying the settings, click **Create VPC**.
 
@@ -46,7 +46,7 @@ After verifying the settings, click **Create VPC**.
 
 When the VPC creation succeeds, a green status bar appears. Select your new VPC to view its properties:
 
-![The image shows the AWS VPC Management Console with details of a specific VPC, including its ID, state, CIDR, and associated resources. The console indicates that the VPC is available and provides options for managing subnets, route tables, and network connections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863192/notes-assets/images/AWS-Networking-Fundamentals-Custom-VPC-Demo/aws-vpc-management-console-details.jpg)
+![The image shows the AWS VPC Management Console with details of a specific VPC, including its ID, state, CIDR, and associated resources. The console indicates that the VPC is available and provides options for managing subnets, route tables, and network connections.](https://kodekloud.com/kk-media/image/upload/v1752863192/notes-assets/images/AWS-Networking-Fundamentals-Custom-VPC-Demo/aws-vpc-management-console-details.jpg)
 
 Key attributes:
 
@@ -62,7 +62,7 @@ Key attributes:
 
 At this point, your VPC exists but contains no subnets yet.
 
-![The image shows the AWS VPC Management Console, displaying details of a newly created VPC named "demo-vpc" with its status marked as available.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863193/notes-assets/images/AWS-Networking-Fundamentals-Custom-VPC-Demo/aws-vpc-management-console-demo-vpc.jpg)
+![The image shows the AWS VPC Management Console, displaying details of a newly created VPC named "demo-vpc" with its status marked as available.](https://kodekloud.com/kk-media/image/upload/v1752863193/notes-assets/images/AWS-Networking-Fundamentals-Custom-VPC-Demo/aws-vpc-management-console-demo-vpc.jpg)
 
 ## Deleting the VPC
 

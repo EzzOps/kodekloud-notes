@@ -13,7 +13,7 @@ Pretty cool, right? Let's explore the technical components that make this projec
 
 The backend is built with Python Flask and is responsible for handling image uploads, processing them with OpenCV, and returning the optimized image along with file size details. This ensures a smooth server-side experience when users upload images for compression.
 
-![The image shows a Visual Studio Code interface with a file explorer open on the left, displaying a project named "IMAGEOPTIMIZER." The terminal at the bottom is open, ready for input.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857110/notes-assets/images/AI-Assisted-Development-What-We-Will-build/visual-studio-code-imageoptimizer-terminal.jpg)
+![The image shows a Visual Studio Code interface with a file explorer open on the left, displaying a project named "IMAGEOPTIMIZER." The terminal at the bottom is open, ready for input.](https://kodekloud.com/kk-media/image/upload/v1752857110/notes-assets/images/AI-Assisted-Development-What-We-Will-build/visual-studio-code-imageoptimizer-terminal.jpg)
 
 Below is a code snippet that shows how the Flask blueprint is configured to handle the image upload route:
 
@@ -83,11 +83,11 @@ The React application provides an interactive user interface to work with the Su
 
 After selecting an image and setting the desired compression level (e.g., 87%), the backend processes the image and returns the optimized version. Below is an illustration of the web interface:
 
-![The image shows a web application interface for an "Image Optimizer" with options to upload an image and adjust quality settings. Below, there's an illustration of a person in sunglasses and a hoodie holding a phone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857111/notes-assets/images/AI-Assisted-Development-What-We-Will-build/image-optimizer-interface-upload-settings.jpg)
+![The image shows a web application interface for an "Image Optimizer" with options to upload an image and adjust quality settings. Below, there's an illustration of a person in sunglasses and a hoodie holding a phone.](https://kodekloud.com/kk-media/image/upload/v1752857111/notes-assets/images/AI-Assisted-Development-What-We-Will-build/image-optimizer-interface-upload-settings.jpg)
 
 Once the image is processed, the user interface displays the new file size. For example, an image originally sized at 85 kilobytes might be reduced to 48 kilobytes. Take a look at this screenshot:
 
-![The image shows a screenshot of a web page with a cartoon character wearing sunglasses and a hoodie, holding a phone. The page displays information about image optimization, including file size and reduction percentage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857113/notes-assets/images/AI-Assisted-Development-What-We-Will-build/cartoon-character-image-optimization-screenshot.jpg)
+![The image shows a screenshot of a web page with a cartoon character wearing sunglasses and a hoodie, holding a phone. The page displays information about image optimization, including file size and reduction percentage.](https://kodekloud.com/kk-media/image/upload/v1752857113/notes-assets/images/AI-Assisted-Development-What-We-Will-build/cartoon-character-image-optimization-screenshot.jpg)
 
 The interactive UI allows you to experiment with various compression levels—whether you choose a high reduction at 89% or a moderate compression at 77%, the React frontend seamlessly communicates with the Flask backend.
 
@@ -95,7 +95,7 @@ The interactive UI allows you to experiment with various compression levels—wh
 
 Throughout this guide, we've detailed both the backend and frontend components of the Super Image Optimizer. You can access all the code on GitHub:
 
-![The image shows a GitHub repository page for "Super-Image-Optimizer," featuring folders, files, and a description of the project as a web-based image optimizer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857113/notes-assets/images/AI-Assisted-Development-What-We-Will-build/github-repo-super-image-optimizer.jpg)
+![The image shows a GitHub repository page for "Super-Image-Optimizer," featuring folders, files, and a description of the project as a web-based image optimizer.](https://kodekloud.com/kk-media/image/upload/v1752857113/notes-assets/images/AI-Assisted-Development-What-We-Will-build/github-repo-super-image-optimizer.jpg)
 
 This GitHub repository contains the entire codebase that you'll build and further expand upon.
 
@@ -214,11 +214,11 @@ graph TD
 
 The images below illustrate the overall data flow and the key components of the image processing service:
 
-![The image shows a webpage with a description of an image processing service's data flow, detailing steps from image upload to retrieval. The interface includes options for features, image generation, and app building.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857115/notes-assets/images/AI-Assisted-Development-Creating-Component-Diagrams-and-Data-Flow/image-processing-service-data-flow.jpg)
+![The image shows a webpage with a description of an image processing service's data flow, detailing steps from image upload to retrieval. The interface includes options for features, image generation, and app building.](https://kodekloud.com/kk-media/image/upload/v1752857115/notes-assets/images/AI-Assisted-Development-Creating-Component-Diagrams-and-Data-Flow/image-processing-service-data-flow.jpg)
 
 Tools like Excalidraw and Draw\.io allow you to import Mermaid diagrams for further customization. With Draw\.io, for example, you can import the Mermaid code directly, adjust colors, export to SVG or PNG, and achieve a polished look quickly.
 
-![The image is a flowchart depicting an image processing system, showing interactions between a user interface, image upload service, image processing service using Flask and OpenCV, and an image retrieval service. It illustrates the process of uploading, processing, and retrieving optimized images.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857116/notes-assets/images/AI-Assisted-Development-Creating-Component-Diagrams-and-Data-Flow/image-processing-flowchart-flask-opencv.jpg)
+![The image is a flowchart depicting an image processing system, showing interactions between a user interface, image upload service, image processing service using Flask and OpenCV, and an image retrieval service. It illustrates the process of uploading, processing, and retrieving optimized images.](https://kodekloud.com/kk-media/image/upload/v1752857116/notes-assets/images/AI-Assisted-Development-Creating-Component-Diagrams-and-Data-Flow/image-processing-flowchart-flask-opencv.jpg)
 
 > **lightbulb** Other AI tools like ChatGPT can also generate similar outputs, but BlackboxAI has proven especially useful for displaying detailed and thorough documentation. Moreover, you can use BlackboxAI without an account—simply visit their website, generate your Mermaid diagram, and even export it as an SVG if needed.
 

@@ -24,13 +24,11 @@ df -h
 sudo apt update
 ```
 
-<Callout icon="lightbulb">
-  If SSH fails, check:
+> **lightbulb** If SSH fails, check:
 
   * Security group inbound rules (SSH allowed from your IP).
   * The username matches the AMI (e.g., `ubuntu`, `ec2-user`).
   * The private key file has restrictive permissions (`chmod 400 ec2-demo.pem`).
-</Callout>
 
 ## 8. Stop, reboot, or terminate
 
@@ -52,11 +50,9 @@ Terminate or stop unused instances to avoid unexpected charges.
 
 Follow these steps to quickly launch and access an EC2 instance; for production environments apply hardened security group rules, use IAM roles, and enable monitoring and backups.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/crash-course-aws-basics/module/76d6cbfc-c16d-4f87-a93c-31cfa5f795f7/lesson/f899c186-e429-421b-bbe4-2cd3d1fa2e80" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/crash-course-aws-basics/module/76d6cbfc-c16d-4f87-a93c-31cfa5f795f7/lesson/f899c186-e429-421b-bbe4-2cd3d1fa2e80)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/crash-course-aws-basics/module/76d6cbfc-c16d-4f87-a93c-31cfa5f795f7/lesson/c38f7fe0-bcbd-4f92-80b1-5bb1097d2369" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/crash-course-aws-basics/module/76d6cbfc-c16d-4f87-a93c-31cfa5f795f7/lesson/c38f7fe0-bcbd-4f92-80b1-5bb1097d2369)
 
 
 # Amazon S3 Simple Storage Service Part 1
@@ -81,9 +77,7 @@ Important: the region selector at the top of the console controls the default re
 
 Click **Create bucket** and enter a globally unique name for your bucket. Bucket names must be unique across all AWS accounts and regions, so pick a name that is unlikely to be taken (for example, include your initials, project name, or a timestamp).
 
-<Callout icon="lightbulb">
-  S3 bucket names are globally unique across all AWS accounts and regions. Use a descriptive, unique name (for example `yourname-project-2026`) to avoid naming conflicts.
-</Callout>
+> **lightbulb** S3 bucket names are globally unique across all AWS accounts and regions. Use a descriptive, unique name (for example `yourname-project-2026`) to avoid naming conflicts.
 
 Example of the Create bucket page showing a chosen name and region:
 
@@ -144,9 +138,7 @@ The Permissions tab centralizes who can access the bucket and its objects. By de
   <img alt="A screenshot of an AWS S3 bucket settings page showing &#x22;Block all public access&#x22; turned on and the Bucket policy section reporting &#x22;Public access is blocked&#x22; with &#x22;No policy to display.&#x22; The panel also includes an Edit button and links to learn more about Amazon S3 Block Public Access." />
 </Frame>
 
-<Callout icon="warning">
-  Be careful when disabling Block Public Access or making objects public. Misconfigured public buckets can expose sensitive data to the internet.
-</Callout>
+> **warning** Be careful when disabling Block Public Access or making objects public. Misconfigured public buckets can expose sensitive data to the internet.
 
 ## 6. Metrics and Management
 
@@ -199,8 +191,6 @@ References:
 
 This completes the basics: creating an S3 bucket, inspecting its properties and permissions, and uploading your first object. Future lessons will dive deeper into versioning, lifecycle rules, encryption, replication, and advanced access patterns.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/crash-course-aws-basics/module/76d6cbfc-c16d-4f87-a93c-31cfa5f795f7/lesson/aac28cb1-a3a9-46a5-bd68-18d22e3825a0" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/crash-course-aws-basics/module/76d6cbfc-c16d-4f87-a93c-31cfa5f795f7/lesson/aac28cb1-a3a9-46a5-bd68-18d22e3825a0)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/crash-course-aws-basics/module/76d6cbfc-c16d-4f87-a93c-31cfa5f795f7/lesson/e13894c8-f3f2-471b-93dc-6b173612dcbb" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/crash-course-aws-basics/module/76d6cbfc-c16d-4f87-a93c-31cfa5f795f7/lesson/e13894c8-f3f2-471b-93dc-6b173612dcbb)

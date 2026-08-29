@@ -30,9 +30,7 @@ Popular services that use webhooks:
 
 When designing integrations, choose webhooks for near-instant notifications and efficiency, and reserve polling only for simple or constrained scenarios.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/devops-interview-prep/module/c1eb3967-23d3-4a34-b23d-14a892f95e1d/lesson/41f5da65-39ef-4dbc-8d86-a2a5156d1c66" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/devops-interview-prep/module/c1eb3967-23d3-4a34-b23d-14a892f95e1d/lesson/41f5da65-39ef-4dbc-8d86-a2a5156d1c66)
 
 
 # dnsPolicy Trap

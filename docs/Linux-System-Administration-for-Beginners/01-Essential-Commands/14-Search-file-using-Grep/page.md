@@ -45,9 +45,7 @@ The sticky bit ensures that only the file owner (or root) can delete or rename f
 * [chmod Manual Page](https://man7.org/linux/man-pages/man1/chmod.1.html)
 * [Understanding Linux File System Permissions](https://www.redhat.com/en/topics/linux/what-is-linux-file-permissions)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/6c86d57f-0864-4e96-b7cf-4a0bad7fba25" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/6c86d57f-0864-4e96-b7cf-4a0bad7fba25)
 
 
 # Search file using Grep
@@ -81,13 +79,11 @@ grep [OPTIONS] PATTERN [FILE...]
 * **FILE**\
   One or more files or directories to scan. If no file is given, `grep` reads from standard input.
 
-<Callout icon="lightbulb">
-  Always quote patterns that contain spaces or shell metacharacters:
+> **lightbulb** Always quote patterns that contain spaces or shell metacharacters:
 
   ```bash theme={null}
   grep -i 'error message' /var/log/syslog
   ```
-</Callout>
 
 ***
 
@@ -139,13 +135,11 @@ $ grep -ir 'centos' /etc/
 …
 ```
 
-<Callout icon="triangle-alert">
-  You may encounter “Permission denied” messages when scanning protected directories. Use `sudo` if you need elevated privileges:
+> **triangle-alert** You may encounter “Permission denied” messages when scanning protected directories. Use `sudo` if you need elevated privileges:
 
   ```bash theme={null}
   sudo grep -ir 'centos' /etc/
   ```
-</Callout>
 
 ***
 
@@ -202,6 +196,4 @@ You’ve now covered the essentials of `grep` for searching text in files. In up
 * [Regular Expressions Overview](https://www.regular-expressions.info/)
 * [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/f38bcd9a-c4e3-4161-87c6-a75e4117c3d7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/f38bcd9a-c4e3-4161-87c6-a75e4117c3d7)

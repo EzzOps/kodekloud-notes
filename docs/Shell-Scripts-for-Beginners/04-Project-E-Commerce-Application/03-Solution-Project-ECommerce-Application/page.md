@@ -9,9 +9,7 @@ MariaDB > FLUSH PRIVILEGES;
 $ mysql < db-load-script.sql
 ```
 
-<Callout icon="lightbulb">
-  Ensure that the `/etc/my.cnf` file is correctly updated with the appropriate port settings before starting MariaDB.
-</Callout>
+> **lightbulb** Ensure that the `/etc/my.cnf` file is correctly updated with the appropriate port settings before starting MariaDB.
 
 ## Step 2: Apache and PHP Configuration
 
@@ -37,9 +35,7 @@ This completes the deployment of the LAMP stack application on a single-node sys
 
 In a multi-node deployment scenario, the database and web server are hosted on separate nodes. The fundamental configuration steps remain the same, with an emphasis on connectivity settings. For example, when configuring the database, specify the web server's IP address for user access. Similarly, update the `index.php` file on the web server with the database server’s IP address.
 
-<Frame>
-  ![The image illustrates a multi-node deployment model with two servers, one running MariaDB and the other running Apache and PHP, identified by IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884053/notes-assets/images/Shell-Scripts-for-Beginners-Project-KodeKloud-e-commerce-application/frame_260.jpg)
-</Frame>
+![The image illustrates a multi-node deployment model with two servers, one running MariaDB and the other running Apache and PHP, identified by IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752884053/notes-assets/images/Shell-Scripts-for-Beginners-Project-KodeKloud-e-commerce-application/frame_260.jpg)
 
 ### Configuring the Database for Multi-Node Setup
 
@@ -106,9 +102,7 @@ if ($link) {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Double-check the database credentials and IP addresses during configuration. Incorrect settings may lead to connection failures.
-</Callout>
+> **triangle-alert** Double-check the database credentials and IP addresses during configuration. Incorrect settings may lead to connection failures.
 
 ## Conclusion
 
@@ -121,9 +115,7 @@ For further reading, consider exploring the following resources:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/0e75480e-85f7-470c-9aa4-fac3fef0ede7/lesson/14e1f54f-6652-41e6-8cab-96c4c823e784" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/0e75480e-85f7-470c-9aa4-fac3fef0ede7/lesson/14e1f54f-6652-41e6-8cab-96c4c823e784)
 
 
 # Solution Project ECommerce Application
@@ -157,9 +149,7 @@ sudo firewall-cmd --reload
 mysql
 ```
 
-<Callout icon="lightbulb">
-  Although the instructions include manual editing of `/etc/my.cnf` using `vi`, you can automate configuration changes with tools like `sed` for a fully automated deployment.
-</Callout>
+> **lightbulb** Although the instructions include manual editing of `/etc/my.cnf` using `vi`, you can automate configuration changes with tools like `sed` for a fully automated deployment.
 
 ***
 
@@ -206,9 +196,7 @@ EOF
 sudo mysql < configure-db.sql
 ```
 
-<Callout icon="lightbulb">
-  For automated configuration, consider replacing manual edits with command-line utilities such as `sed` to modify files like `/etc/my.cnf` programmatically.
-</Callout>
+> **lightbulb** For automated configuration, consider replacing manual edits with command-line utilities such as `sed` to modify files like `/etc/my.cnf` programmatically.
 
 ### 3.2. Loading Inventory Data
 

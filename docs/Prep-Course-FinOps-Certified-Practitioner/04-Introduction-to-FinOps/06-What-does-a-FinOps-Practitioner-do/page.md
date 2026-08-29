@@ -101,9 +101,7 @@ Practitioners must:
 * Adapt practices for modern workloads (especially AI/ML) where compute and experimentation can dominate costs.
 * Collaborate across engineering, finance, product, and platform teams — FinOps is cross-functional.
 
-<Callout icon="lightbulb">
-  FinOps is a team effort: engineers, finance, product, and platform teams must work together to keep organizational spend healthy and aligned with business goals.
-</Callout>
+> **lightbulb** FinOps is a team effort: engineers, finance, product, and platform teams must work together to keep organizational spend healthy and aligned with business goals.
 
 ## Certifications and learning paths
 
@@ -116,6 +114,4 @@ FinOps Foundation provides defined certification paths that validate knowledge a
 
 That completes this article.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/24982811-6142-4554-afd8-2b5f3b8a7f28/lesson/bb5a4eae-5eff-4f5c-b881-e431e5a421d5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/24982811-6142-4554-afd8-2b5f3b8a7f28/lesson/bb5a4eae-5eff-4f5c-b881-e431e5a421d5)

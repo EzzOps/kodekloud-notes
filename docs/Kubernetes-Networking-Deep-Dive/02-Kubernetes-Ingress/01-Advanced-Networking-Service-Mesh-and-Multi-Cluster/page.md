@@ -16,13 +16,9 @@ A Service Mesh is a dedicated infrastructure layer for handling service-to-servi
 * Security
 * Observability
 
-<Callout icon="lightbulb">
-  Service Mesh isn’t part of Company X’s current stack, but understanding it is crucial for complex microservices landscapes.
-</Callout>
+> **lightbulb** Service Mesh isn’t part of Company X’s current stack, but understanding it is crucial for complex microservices landscapes.
 
-<Frame>
-  ![The image is an overview of a service mesh, featuring a geometric network design and a description of its function in microservices architecture.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880290/notes-assets/images/Kubernetes-Networking-Deep-Dive-Advanced-Networking-Service-Mesh-and-Multi-Cluster/service-mesh-overview-geometric-network.jpg)
-</Frame>
+![The image is an overview of a service mesh, featuring a geometric network design and a description of its function in microservices architecture.](https://kodekloud.com/kk-media/image/upload/v1752880290/notes-assets/images/Kubernetes-Networking-Deep-Dive-Advanced-Networking-Service-Mesh-and-Multi-Cluster/service-mesh-overview-geometric-network.jpg)
 
 ### Key Benefits
 
@@ -32,9 +28,7 @@ A Service Mesh is a dedicated infrastructure layer for handling service-to-servi
 | Security           | mTLS encryption, automatic certificate rotation, policy enforcement |
 | Observability      | Metrics, logs, distributed tracing for deep insights                |
 
-<Frame>
-  ![The image illustrates the benefits of a service mesh, highlighting traffic management, security, and observability, alongside a geometric network design.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880291/notes-assets/images/Kubernetes-Networking-Deep-Dive-Advanced-Networking-Service-Mesh-and-Multi-Cluster/service-mesh-benefits-traffic-security-observability.jpg)
-</Frame>
+![The image illustrates the benefits of a service mesh, highlighting traffic management, security, and observability, alongside a geometric network design.](https://kodekloud.com/kk-media/image/upload/v1752880291/notes-assets/images/Kubernetes-Networking-Deep-Dive-Advanced-Networking-Service-Mesh-and-Multi-Cluster/service-mesh-benefits-traffic-security-observability.jpg)
 
 ### Popular Providers
 
@@ -44,9 +38,7 @@ A Service Mesh is a dedicated infrastructure layer for handling service-to-servi
 | Linkerd  | Lightweight, high-performance, minimal operational overhead  | [linkerd.io](https://linkerd.io/) |
 | Cilium   | eBPF-powered mesh combining networking and security          | [cilium.io](https://cilium.io/)   |
 
-<Frame>
-  ![The image shows logos of three popular service mesh technologies: Istio, Linkerd, and Cilium. Each logo is distinct and labeled accordingly.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880292/notes-assets/images/Kubernetes-Networking-Deep-Dive-Advanced-Networking-Service-Mesh-and-Multi-Cluster/service-mesh-logos-istio-linkerd-cilium.jpg)
-</Frame>
+![The image shows logos of three popular service mesh technologies: Istio, Linkerd, and Cilium. Each logo is distinct and labeled accordingly.](https://kodekloud.com/kk-media/image/upload/v1752880292/notes-assets/images/Kubernetes-Networking-Deep-Dive-Advanced-Networking-Service-Mesh-and-Multi-Cluster/service-mesh-logos-istio-linkerd-cilium.jpg)
 
 ### Core Architecture
 
@@ -59,29 +51,21 @@ Service Mesh consists of three main components:
 3. **Sidecar Proxy**\
    Enforces routing rules, load balancing, security policies, and collects telemetry in each pod.
 
-<Callout icon="triangle-alert">
-  Proper certificate lifecycle management is critical for mTLS. Misconfigured certificates can lead to downtime or security gaps.
-</Callout>
+> **triangle-alert** Proper certificate lifecycle management is critical for mTLS. Misconfigured certificates can lead to downtime or security gaps.
 
-<Frame>
-  ![The image illustrates the core architecture of a service mesh, showing the relationship between the control plane, data plane, and proxy (sidecar) components. It includes labeled elements such as "Control Plane," "Data Plane," "Proxy," and "Pod."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880293/notes-assets/images/Kubernetes-Networking-Deep-Dive-Advanced-Networking-Service-Mesh-and-Multi-Cluster/service-mesh-architecture-control-data-proxy.jpg)
-</Frame>
+![The image illustrates the core architecture of a service mesh, showing the relationship between the control plane, data plane, and proxy (sidecar) components. It includes labeled elements such as "Control Plane," "Data Plane," "Proxy," and "Pod."](https://kodekloud.com/kk-media/image/upload/v1752880293/notes-assets/images/Kubernetes-Networking-Deep-Dive-Advanced-Networking-Service-Mesh-and-Multi-Cluster/service-mesh-architecture-control-data-proxy.jpg)
 
 ### Use Cases
 
 1. **Canary Deployments for A/B Testing**\
    Gradually shift a small percentage of traffic to a new version before full rollout.
 
-<Frame>
-  ![The image is about a service mesh use case for canary deployments in A/B testing, highlighting a situation of introducing a new service version and a solution involving advanced routing for stability and performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880294/notes-assets/images/Kubernetes-Networking-Deep-Dive-Advanced-Networking-Service-Mesh-and-Multi-Cluster/canary-deployments-ab-testing-service-mesh.jpg)
-</Frame>
+![The image is about a service mesh use case for canary deployments in A/B testing, highlighting a situation of introducing a new service version and a solution involving advanced routing for stability and performance.](https://kodekloud.com/kk-media/image/upload/v1752880294/notes-assets/images/Kubernetes-Networking-Deep-Dive-Advanced-Networking-Service-Mesh-and-Multi-Cluster/canary-deployments-ab-testing-service-mesh.jpg)
 
 2. **Enhanced Security & Compliance**\
    Automatically enforce mTLS, RBAC, and network policies for sensitive data flows.
 
-<Frame>
-  ![The image is a presentation slide about service mesh use cases, focusing on enhanced security and access control. It outlines a situation of ensuring secure communication and compliance, and a solution involving enhanced security for compliance, data protection, and access control.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880296/notes-assets/images/Kubernetes-Networking-Deep-Dive-Advanced-Networking-Service-Mesh-and-Multi-Cluster/service-mesh-use-cases-security-access.jpg)
-</Frame>
+![The image is a presentation slide about service mesh use cases, focusing on enhanced security and access control. It outlines a situation of ensuring secure communication and compliance, and a solution involving enhanced security for compliance, data protection, and access control.](https://kodekloud.com/kk-media/image/upload/v1752880296/notes-assets/images/Kubernetes-Networking-Deep-Dive-Advanced-Networking-Service-Mesh-and-Multi-Cluster/service-mesh-use-cases-security-access.jpg)
 
 3. **High Availability**\
    Detect unhealthy instances and reroute traffic to healthy pods, ensuring continuous service.
@@ -101,9 +85,7 @@ Operating multiple Kubernetes clusters—either independently or as a cohesive s
 | Hybrid Deployments     | Combine on-premises and multiple clouds to avoid vendor lock-in |
 | Unified Management     | Centralized control via Federation or Anthos                    |
 
-<Frame>
-  ![The image lists use cases for multi-cluster systems, including high availability and disaster recovery, scalability, compliance and isolation, resource management, hybrid, and unified management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880297/notes-assets/images/Kubernetes-Networking-Deep-Dive-Advanced-Networking-Service-Mesh-and-Multi-Cluster/multi-cluster-use-cases-high-availability.jpg)
-</Frame>
+![The image lists use cases for multi-cluster systems, including high availability and disaster recovery, scalability, compliance and isolation, resource management, hybrid, and unified management.](https://kodekloud.com/kk-media/image/upload/v1752880297/notes-assets/images/Kubernetes-Networking-Deep-Dive-Advanced-Networking-Service-Mesh-and-Multi-Cluster/multi-cluster-use-cases-high-availability.jpg)
 
 Key tools for Multi-Cluster control:
 
@@ -125,9 +107,7 @@ Merging Service Mesh with Multi-Cluster delivers:
 * **Consolidated Observability**\
   Centralized logging, metrics, and tracing from every cluster.
 
-<Frame>
-  ![The image illustrates a diagram of a multi-cluster service mesh with interconnected nodes and lists benefits such as unified service communication, centralized policy and security management, and high availability and disaster recovery.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880298/notes-assets/images/Kubernetes-Networking-Deep-Dive-Advanced-Networking-Service-Mesh-and-Multi-Cluster/multi-cluster-service-mesh-diagram.jpg)
-</Frame>
+![The image illustrates a diagram of a multi-cluster service mesh with interconnected nodes and lists benefits such as unified service communication, centralized policy and security management, and high availability and disaster recovery.](https://kodekloud.com/kk-media/image/upload/v1752880298/notes-assets/images/Kubernetes-Networking-Deep-Dive-Advanced-Networking-Service-Mesh-and-Multi-Cluster/multi-cluster-service-mesh-diagram.jpg)
 
 ***
 
@@ -140,13 +120,9 @@ Since Company X uses Cilium as its CNI, Cilium Cluster Mesh extends networking a
 * Cross-cluster load balancing and failover
 * Unified observability
 
-<Callout icon="lightbulb">
-  Cilium Cluster Mesh requires host kernel support for eBPF features.
-</Callout>
+> **lightbulb** Cilium Cluster Mesh requires host kernel support for eBPF features.
 
-<Frame>
-  ![The image illustrates a Cilium Cluster Mesh setup with two Kubernetes clusters, each containing multiple pods, and highlights features like service discovery, load balancing, network policy, encryption, and pod IP routing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880299/notes-assets/images/Kubernetes-Networking-Deep-Dive-Advanced-Networking-Service-Mesh-and-Multi-Cluster/cilium-cluster-mesh-kubernetes-setup.jpg)
-</Frame>
+![The image illustrates a Cilium Cluster Mesh setup with two Kubernetes clusters, each containing multiple pods, and highlights features like service discovery, load balancing, network policy, encryption, and pod IP routing.](https://kodekloud.com/kk-media/image/upload/v1752880299/notes-assets/images/Kubernetes-Networking-Deep-Dive-Advanced-Networking-Service-Mesh-and-Multi-Cluster/cilium-cluster-mesh-kubernetes-setup.jpg)
 
 Getting started only requires multiple clusters running Cilium and network connectivity between them.
 
@@ -172,6 +148,4 @@ Service Mesh and Multi-Cluster architectures provide:
 * [Kubernetes Federation](https://kubernetes.io/docs/concepts/cluster-administration/federation/)
 * [Anthos by Google Cloud](https://cloud.google.com/anthos)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/19677663-2b7d-4c3d-92ee-06df9f5530eb/lesson/4082731f-fae7-4938-ace1-58611a1331bc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/19677663-2b7d-4c3d-92ee-06df9f5530eb/lesson/4082731f-fae7-4938-ace1-58611a1331bc)

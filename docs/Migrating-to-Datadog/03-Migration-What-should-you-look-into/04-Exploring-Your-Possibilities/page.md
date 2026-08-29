@@ -62,9 +62,7 @@ Use the following guide when weighing extended support, integrations, third-part
 | Buy a third-party tool      | Mature functionality that integrates with your platform | Faster time-to-value; vendor support                         | Licensing cost; potential integration drift                 |
 | Build custom in-house       | Unique needs that no vendor meets                       | Full control of features and roadmap                         | High development & maintenance cost; risk of long-term debt |
 
-<Callout icon="lightbulb">
-  When evaluating options, compare total cost of ownership, time-to-value, operational risk, and the long-term maintenance burden. Prioritize solutions that reduce technical debt and align with available engineering resources.
-</Callout>
+> **lightbulb** When evaluating options, compare total cost of ownership, time-to-value, operational risk, and the long-term maintenance burden. Prioritize solutions that reduce technical debt and align with available engineering resources.
 
 ## Quick migration checklist
 
@@ -83,6 +81,4 @@ Use the following guide when weighing extended support, integrations, third-part
 
 That’s it for this lesson. I hope you found it helpful.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/d7aaa833-22da-4f94-af5c-5d196f04ab31/lesson/0f796eb4-aef7-44fd-bc58-4ce9890d3a41" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/d7aaa833-22da-4f94-af5c-5d196f04ab31/lesson/0f796eb4-aef7-44fd-bc58-4ce9890d3a41)

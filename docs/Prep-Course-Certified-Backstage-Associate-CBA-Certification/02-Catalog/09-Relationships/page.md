@@ -32,9 +32,7 @@ Summary of common relationships
 
 Users and groups are connected either through the user's `memberOf` list or the group's `members` list. You only need to declare the relationship on one side — Backstage will infer and display the link from either perspective.
 
-<Callout icon="lightbulb">
-  Define membership on whichever source of truth your organization maintains. Use `memberOf` on `User` entities or `members` on `Group` entities — you do not need both.
-</Callout>
+> **lightbulb** Define membership on whichever source of truth your organization maintains. Use `memberOf` on `User` entities or `members` on `Group` entities — you do not need both.
 
 Example: user declares membership
 
@@ -96,9 +94,7 @@ spec:
   members: [jdoe]
 ```
 
-<Callout icon="lightbulb">
-  A group may have only one `parent` but can list multiple `children`. Model parents where applicable to reflect reporting or organizational ownership.
-</Callout>
+> **lightbulb** A group may have only one `parent` but can list multiple `children`. Model parents where applicable to reflect reporting or organizational ownership.
 
 ***
 
@@ -361,6 +357,4 @@ Links and references
 * Backstage Catalog documentation: [https://backstage.io/docs/features/software-catalog](https://backstage.io/docs/features/software-catalog)
 * Backstage entity model: [https://backstage.io/docs/features/software-catalog/entity-model](https://backstage.io/docs/features/software-catalog/entity-model)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/f15df75e-bf38-4b11-b8fc-43c0f883e958" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/f15df75e-bf38-4b11-b8fc-43c0f883e958)

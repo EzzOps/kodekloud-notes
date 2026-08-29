@@ -47,13 +47,9 @@ Key technical concepts (practical tips)
 * Idempotency and deduplication: Consumers must handle retries and potential duplicate deliveries; design processors to be idempotent or to detect and discard duplicates.
 * Consumer groups: Multiple instances of the same logical consumer can form a consumer group to share partitions (scale-out). Different logical consumers (warehouse vs fraud) should use different consumer group IDs so each receives all events.
 
-<Callout icon="lightbulb">
-  This is a simplified end-to-end architecture. In production you will also consider schema management (e.g., Avro/Schema Registry), monitoring, security (TLS/auth), retention policies, and error-handling strategies (dead-letter queues, retries).
-</Callout>
+> **lightbulb** This is a simplified end-to-end architecture. In production you will also consider schema management (e.g., Avro/Schema Registry), monitoring, security (TLS/auth), retention policies, and error-handling strategies (dead-letter queues, retries).
 
-<Callout icon="warning">
-  Ordering and idempotency are common pain points: if you need per-user ordering, consistently key events by user. For at-least-once delivery (Kafka default), make consumer processing idempotent or add deduplication logic to avoid processing the same event multiple times.
-</Callout>
+> **warning** Ordering and idempotency are common pain points: if you need per-user ordering, consistently key events by user. For at-least-once delivery (Kafka default), make consumer processing idempotent or add deduplication logic to avoid processing the same event multiple times.
 
 Implementation plan — step by step
 
@@ -95,6 +91,4 @@ Links and references
 
 That’s it for this lesson. In the next article we’ll start provisioning the demo environment and implementing the producer and consumer code. See you there.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/event-streaming-with-kafka/module/95f49caf-8e0b-4ed9-b7dd-9f43ff31ed9a/lesson/f6633582-0c5d-4e44-8daa-059e0d9b364c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/event-streaming-with-kafka/module/95f49caf-8e0b-4ed9-b7dd-9f43ff31ed9a/lesson/f6633582-0c5d-4e44-8daa-059e0d9b364c)

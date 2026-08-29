@@ -71,9 +71,7 @@ You can develop and deploy the frontend and backend independently, but keeping t
   <img alt="A screenshot of a project file tree titled &#x22;Backstage Architecture&#x22; showing folders like .yarn, dist-types, examples, node_modules and a packages folder. The packages folder contains &#x22;app&#x22; and &#x22;backend&#x22; entries, with visual labels linking &#x22;app&#x22; to Frontend and &#x22;backend&#x22; to Backend." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Plugins may include only a frontend if no server-side logic or secrets are required. Add a backend component when you need to access databases, store secrets, or call third-party services securely.
-</Callout>
+> **lightbulb** Plugins may include only a frontend if no server-side logic or secrets are required. Add a backend component when you need to access databases, store secrets, or call third-party services securely.
 
 ## Frontend: React and components
 
@@ -149,6 +147,4 @@ Backstage uses Material UI (MUI) to maintain a consistent look-and-feel and prov
 * Material UI (MUI): [https://mui.com/](https://mui.com/)
 * Kubernetes Concepts: [https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/fcbbf923-69c3-4147-bd51-18db2bd18957/lesson/eb3ecd35-b1f4-4a92-ba1d-98d952e6c268" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/fcbbf923-69c3-4147-bd51-18db2bd18957/lesson/eb3ecd35-b1f4-4a92-ba1d-98d952e6c268)

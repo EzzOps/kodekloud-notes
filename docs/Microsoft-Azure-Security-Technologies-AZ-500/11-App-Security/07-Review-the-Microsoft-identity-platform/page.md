@@ -12,9 +12,7 @@ Developers start by registering their applications via the [Azure Portal](https:
 
 At the core of this integration is the Microsoft Authentication Library (MSAL). MSAL plays a crucial role in obtaining tokens from Microsoft endpoints. The authentication flow starts with MSAL, which then interacts with the Microsoft Identity Platform endpoint 2.0 to handle all authentication requests.
 
-<Callout icon="lightbulb">
-  The Microsoft Identity Platform simplifies the complex process of authentication by centralizing user verification and token management. This not only improves security but also enhances user experience.
-</Callout>
+> **lightbulb** The Microsoft Identity Platform simplifies the complex process of authentication by centralizing user verification and token management. This not only improves security but also enhances user experience.
 
 ## Supported Account Types
 
@@ -45,9 +43,7 @@ KodeKloud provides a practical example of how to effectively integrate the Micro
 * **Personal Accounts:** For individual users and students subscribing directly through KodeKloud.
 * **Social Media Accounts:** Permit convenient logins using platforms like Facebook, LinkedIn, and others.
 
-<Callout icon="lightbulb">
-  By outsourcing authentication, KodeKloud leverages Microsoft’s robust security infrastructure to avoid the complexities and vulnerabilities associated with developing an in-house authentication system.
-</Callout>
+> **lightbulb** By outsourcing authentication, KodeKloud leverages Microsoft’s robust security infrastructure to avoid the complexities and vulnerabilities associated with developing an in-house authentication system.
 
 ## Benefits of the Microsoft Identity Platform
 
@@ -69,12 +65,8 @@ The Microsoft Identity Platform offers numerous benefits that make it a preferre
 
 In the upcoming lessons, you will witness live demonstrations on creating app registrations and interacting with the authentication endpoint. The diagram below offers a comprehensive review of the Microsoft Identity Platform, emphasizing its key features: simplified authentication, enhanced security, scalability, flexibility, and enterprise integration. It clearly outlines the flow from application registration to the handling of various account types (work, personal, and social).
 
-<Frame>
-  ![The image is a diagram reviewing the Microsoft Identity Platform, highlighting features like simplified authentication, enhanced security, scalability, flexibility, and enterprise integration. It shows the flow from app registrations to different types of accounts, including work, personal, and social accounts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881639/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Review-the-Microsoft-identity-platform/microsoft-identity-platform-diagram.jpg)
-</Frame>
+![The image is a diagram reviewing the Microsoft Identity Platform, highlighting features like simplified authentication, enhanced security, scalability, flexibility, and enterprise integration. It shows the flow from app registrations to different types of accounts, including work, personal, and social accounts.](https://kodekloud.com/kk-media/image/upload/v1752881639/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Review-the-Microsoft-identity-platform/microsoft-identity-platform-diagram.jpg)
 
 Stay tuned for the next lesson, where live demonstrations will guide you through the creation of app registrations and the interaction with the Microsoft Identity Platform endpoint.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c93091f0-246d-47cc-a399-0e33ad87ee7f/lesson/b5670a0e-c27c-4c1f-8080-6abdb28b6637" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c93091f0-246d-47cc-a399-0e33ad87ee7f/lesson/b5670a0e-c27c-4c1f-8080-6abdb28b6637)

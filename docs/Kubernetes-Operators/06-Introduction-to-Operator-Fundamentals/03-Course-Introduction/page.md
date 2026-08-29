@@ -36,9 +36,7 @@ Operator projects are commonly scaffolded using Kubebuilder or the Operator SDK.
   <img alt="The image is a slide about when to use the Operator SDK, showcasing two scenarios: using a Helm chart without Go, and using OpenShift/OperatorHub for packaging and distribution. It includes a small video inset of a person speaking." />
 </Frame>
 
-<Callout icon="lightbulb">
-  This course emphasizes a Go-based operator built with Kubebuilder and the Operator SDK to teach the reconciliation pattern, CRD design, webhooks, and production packaging. If you already have Helm charts, you can follow a Helm-based operator path instead.
-</Callout>
+> **lightbulb** This course emphasizes a Go-based operator built with Kubebuilder and the Operator SDK to teach the reconciliation pattern, CRD design, webhooks, and production packaging. If you already have Helm charts, you can follow a Helm-based operator path instead.
 
 ## Reconciliation: core of an Operator
 
@@ -101,9 +99,7 @@ spec:
   validationActions: ["Deny"]
 ```
 
-<Callout icon="warning">
-  Admission webhooks and validating policies require cluster-level privileges and correct TLS setup. Test webhooks in a controlled environment to avoid disrupting cluster API server operations.
-</Callout>
+> **warning** Admission webhooks and validating policies require cluster-level privileges and correct TLS setup. Test webhooks in a controlled environment to avoid disrupting cluster API server operations.
 
 ## Packaging, integration, and monitoring
 
@@ -175,6 +171,4 @@ At KodeKloud, learning continues beyond the course—join the community to ask q
 
 If you're ready to take your Kubernetes skills to the next level, let's get started.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/3e159be6-37b3-4aff-afb7-bfc2c2672dd8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/3e159be6-37b3-4aff-afb7-bfc2c2672dd8)

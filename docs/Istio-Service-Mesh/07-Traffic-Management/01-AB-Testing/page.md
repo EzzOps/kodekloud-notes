@@ -30,12 +30,8 @@ spec:
 
 In this configuration, 99% of incoming traffic is directed to subset v1, while the remaining 1% is routed to subset v2. Even if the Reviews V2 service scales out to multiple pods, the traffic split remains fixed based on the Virtual Service settings. This granular control empowers you to seamlessly manage and evaluate performance across different service versions.
 
-<Callout icon="lightbulb">
-  Leveraging Istio's traffic management capabilities in your A/B testing strategy helps validate new features or modifications. By isolating experimental changes, you minimize risks associated with broad deployments.
-</Callout>
+> **lightbulb** Leveraging Istio's traffic management capabilities in your A/B testing strategy helps validate new features or modifications. By isolating experimental changes, you minimize risks associated with broad deployments.
 
 By utilizing these techniques, you ensure that experimental traffic is effectively managed, allowing you to assess the impact of new features accurately. For further reading on Istio and traffic management, check out the [Istio Documentation](https://istio.io/latest/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/a6f2bc4a-add8-4b4a-920a-2c748a5577d9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/a6f2bc4a-add8-4b4a-920a-2c748a5577d9)

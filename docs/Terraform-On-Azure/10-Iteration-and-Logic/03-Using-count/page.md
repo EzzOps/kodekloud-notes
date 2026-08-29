@@ -29,9 +29,7 @@ This creates:
 
 `count.index` exists only inside resource blocks that use `count` and increments from `0` to `count - 1`.
 
-<Callout icon="lightbulb">
-  Use `count` when instance identity is strictly positional (index-based) and you only need simple duplication with small index-driven differences (for example, suffixes or offsets). For long-lived infrastructure that requires stable identities, prefer `for_each`.
-</Callout>
+> **lightbulb** Use `count` when instance identity is strictly positional (index-based) and you only need simple duplication with small index-driven differences (for example, suffixes or offsets). For long-lived infrastructure that requires stable identities, prefer `for_each`.
 
 When `count` is a poor fit
 

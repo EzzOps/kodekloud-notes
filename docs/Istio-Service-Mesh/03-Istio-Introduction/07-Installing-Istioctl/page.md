@@ -42,9 +42,7 @@ To track the update on this work in progress feature please check:
 https://github.com/kubernetes/minikube/issues/7332
 ```
 
-<Callout icon="lightbulb">
-  On macOS, if you need the ingress addon, use a VM-based driver (for example, `hyperkit`) rather than the Docker driver.
-</Callout>
+> **lightbulb** On macOS, if you need the ingress addon, use a VM-based driver (for example, `hyperkit`) rather than the Docker driver.
 
 If you encounter this limitation, delete the Docker-based Minikube cluster and start Minikube using a VM-based driver (for example, hyperkit).
 
@@ -75,9 +73,7 @@ istiotraining@local ~ $ minikube addons enable ingress
 ✨  The 'ingress' addon is enabled
 ```
 
-<Callout icon="warning">
-  Switching drivers will recreate the Minikube VM. Delete the existing cluster if you want to change drivers (`minikube delete`). Back up any local resources you need before deleting.
-</Callout>
+> **warning** Switching drivers will recreate the Minikube VM. Delete the existing cluster if you want to change drivers (`minikube delete`). Back up any local resources you need before deleting.
 
 ## 2) Download the Istio release (installs istioctl)
 

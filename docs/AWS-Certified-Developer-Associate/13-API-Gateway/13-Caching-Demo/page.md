@@ -23,7 +23,7 @@ You have the flexibility to adjust several caching parameters at the stage level
 
 > **lightbulb** When cache authorization is enabled, you can configure the response for unauthorized invalidation attempts. Options include ignoring the header, issuing a warning, or returning a 403 status code.
 
-![The image shows an AWS API Gateway settings page, where options for caching, throttling, and firewall settings are being configured. The page includes dropdown menus and toggle switches for various settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857860/notes-assets/images/AWS-Certified-Developer-Associate-Caching-Demo/aws-api-gateway-settings-configure.jpg)
+![The image shows an AWS API Gateway settings page, where options for caching, throttling, and firewall settings are being configured. The page includes dropdown menus and toggle switches for various settings.](https://kodekloud.com/kk-media/image/upload/v1752857860/notes-assets/images/AWS-Certified-Developer-Associate-Caching-Demo/aws-api-gateway-settings-configure.jpg)
 
 ## Step 3: Configure Caching for Individual API Methods
 
@@ -33,11 +33,11 @@ Caching can also be tailored for individual API methods. To enable this:
 2. In the method configuration page, enable method-level caching.
 3. Adjust parameters such as TTL or cache capacity to override stage-level settings if necessary.
 
-![The image shows a configuration page from AWS API Gateway, detailing settings for API caching, throttling, and firewall and certificate options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857861/notes-assets/images/AWS-Certified-Developer-Associate-Caching-Demo/aws-api-gateway-configuration-settings.jpg)
+![The image shows a configuration page from AWS API Gateway, detailing settings for API caching, throttling, and firewall and certificate options.](https://kodekloud.com/kk-media/image/upload/v1752857861/notes-assets/images/AWS-Certified-Developer-Associate-Caching-Demo/aws-api-gateway-configuration-settings.jpg)
 
 Further adjustments can be made directly in the method's override settings:
 
-![The image shows the "Edit method overrides" settings page in AWS API Gateway, where options for CloudWatch logs, throttling, method cache, and cache time-to-live are configured.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857862/notes-assets/images/AWS-Certified-Developer-Associate-Caching-Demo/edit-method-overrides-aws-api-gateway.jpg)
+![The image shows the "Edit method overrides" settings page in AWS API Gateway, where options for CloudWatch logs, throttling, method cache, and cache time-to-live are configured.](https://kodekloud.com/kk-media/image/upload/v1752857862/notes-assets/images/AWS-Certified-Developer-Associate-Caching-Demo/edit-method-overrides-aws-api-gateway.jpg)
 
 ## Conclusion
 

@@ -15,7 +15,7 @@ spec:
     app: myapp
 ```
 
-![The image illustrates a Node Port Service in a Kubernetes cluster, showing the flow from a host through a specific port to multiple pods within the cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862860/notes-assets/images/AWS-EKS-LoadBalancers-Intro/node-port-service-kubernetes-cluster-diagram.jpg)
+![The image illustrates a Node Port Service in a Kubernetes cluster, showing the flow from a host through a specific port to multiple pods within the cluster.](https://kodekloud.com/kk-media/image/upload/v1752862860/notes-assets/images/AWS-EKS-LoadBalancers-Intro/node-port-service-kubernetes-cluster-diagram.jpg)
 
 ### LoadBalancer Service
 
@@ -34,7 +34,7 @@ spec:
     app: myapp
 ```
 
-![The image illustrates a Load Balancer Service directing traffic to a Kubernetes cluster, which contains a node managing multiple pods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862861/notes-assets/images/AWS-EKS-LoadBalancers-Intro/load-balancer-kubernetes-cluster-pods.jpg)
+![The image illustrates a Load Balancer Service directing traffic to a Kubernetes cluster, which contains a node managing multiple pods.](https://kodekloud.com/kk-media/image/upload/v1752862861/notes-assets/images/AWS-EKS-LoadBalancers-Intro/load-balancer-kubernetes-cluster-pods.jpg)
 
 ### Health Checks and kube-proxy
 
@@ -50,7 +50,7 @@ spec:
     app: myapp
 ```
 
-![The image illustrates the role of Kube Proxy in Kubernetes, showing its interaction with multiple pods and a network component.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862862/notes-assets/images/AWS-EKS-LoadBalancers-Intro/kube-proxy-kubernetes-pods-network-diagram.jpg)
+![The image illustrates the role of Kube Proxy in Kubernetes, showing its interaction with multiple pods and a network component.](https://kodekloud.com/kk-media/image/upload/v1752862862/notes-assets/images/AWS-EKS-LoadBalancers-Intro/kube-proxy-kubernetes-pods-network-diagram.jpg)
 
 ## AWS Load Balancer Controller
 
@@ -69,7 +69,7 @@ metadata:
     service.beta.kubernetes.io/aws-load-balancer-target-type: ip
 ```
 
-![The image is a diagram about load balancers within a Kubernetes cluster, showing Application Load Balancer, Network Load Balancer, and Elastic Load Balancer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862863/notes-assets/images/AWS-EKS-LoadBalancers-Intro/kubernetes-load-balancers-diagram.jpg)
+![The image is a diagram about load balancers within a Kubernetes cluster, showing Application Load Balancer, Network Load Balancer, and Elastic Load Balancer.](https://kodekloud.com/kk-media/image/upload/v1752862863/notes-assets/images/AWS-EKS-LoadBalancers-Intro/kubernetes-load-balancers-diagram.jpg)
 
 ## Integrating External DNS
 
@@ -77,15 +77,15 @@ To automate DNS entries in Route 53 (or other providers), run [External DNS](htt
 
 For example, a Service named `myapp.fun` can automatically generate a `myapp.fun` A record in Route 53 that resolves to your load balancer.
 
-![The image illustrates the integration of AWS Route 53 with a Kubernetes cluster using External DNS, showing connections to various AWS services like S3, CloudFront, and Lambda.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862865/notes-assets/images/AWS-EKS-LoadBalancers-Intro/aws-route53-kubernetes-external-dns.jpg)
+![The image illustrates the integration of AWS Route 53 with a Kubernetes cluster using External DNS, showing connections to various AWS services like S3, CloudFront, and Lambda.](https://kodekloud.com/kk-media/image/upload/v1752862865/notes-assets/images/AWS-EKS-LoadBalancers-Intro/aws-route53-kubernetes-external-dns.jpg)
 
-![The image illustrates a flowchart for external DNS configuration, showing the progression from "myapp.fun" through Kubernetes External DNS, Route 53, and finally to a Load Balancer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862866/notes-assets/images/AWS-EKS-LoadBalancers-Intro/external-dns-configuration-flowchart.jpg)
+![The image illustrates a flowchart for external DNS configuration, showing the progression from "myapp.fun" through Kubernetes External DNS, Route 53, and finally to a Load Balancer.](https://kodekloud.com/kk-media/image/upload/v1752862866/notes-assets/images/AWS-EKS-LoadBalancers-Intro/external-dns-configuration-flowchart.jpg)
 
 ## Global Load Balancer
 
 AWS offers a Global Load Balancer for routing traffic across regions. You point a Route 53 alias to it and distribute traffic to regional ALBs/NLBs with failover or weighted policies. Currently, the AWS Load Balancer Controller manages only regional resources, but global support may arrive in future releases.
 
-![The image is a diagram illustrating a hierarchy of load balancers, with a global load balancer at the top branching into an application load balancer and a network load balancer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862867/notes-assets/images/AWS-EKS-LoadBalancers-Intro/load-balancer-hierarchy-diagram.jpg)
+![The image is a diagram illustrating a hierarchy of load balancers, with a global load balancer at the top branching into an application load balancer and a network load balancer.](https://kodekloud.com/kk-media/image/upload/v1752862867/notes-assets/images/AWS-EKS-LoadBalancers-Intro/load-balancer-hierarchy-diagram.jpg)
 
 ## Summary
 
@@ -126,11 +126,11 @@ In this article, we’ll dive into the Kubernetes Gateway API—the next-generat
 
 Ingress controllers route Layer 7 traffic based on hosts or URL paths. The Gateway API extends this by supporting multiple protocols (HTTP, TCP, UDP, gRPC, TLS) and offering more granular control.
 
-![The image is an introduction to the Kubernetes Gateway API, showing traffic flow through a Gateway API to a cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862868/notes-assets/images/AWS-EKS-VPC-Lattice/kubernetes-gateway-api-introduction-traffic-flow.jpg)
+![The image is an introduction to the Kubernetes Gateway API, showing traffic flow through a Gateway API to a cluster.](https://kodekloud.com/kk-media/image/upload/v1752862868/notes-assets/images/AWS-EKS-VPC-Lattice/kubernetes-gateway-api-introduction-traffic-flow.jpg)
 
 In AWS EKS, the **Lattice Controller** serves as a specialized Gateway Controller, managing Gateway API resources for you.
 
-![The image illustrates the role of a Lattice Controller in AWS EKS, showing it managing a Gateway API.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862869/notes-assets/images/AWS-EKS-VPC-Lattice/lattice-controller-aws-eks-gateway-api.jpg)
+![The image illustrates the role of a Lattice Controller in AWS EKS, showing it managing a Gateway API.](https://kodekloud.com/kk-media/image/upload/v1752862869/notes-assets/images/AWS-EKS-VPC-Lattice/lattice-controller-aws-eks-gateway-api.jpg)
 
 ***
 
@@ -138,7 +138,7 @@ In AWS EKS, the **Lattice Controller** serves as a specialized Gateway Controlle
 
 With a traditional Ingress setup, you deploy an Ingress Controller behind an external Load Balancer. The controller inspects HTTP requests and forwards them to Services by host or path.
 
-![The image illustrates a traditional approach using ingress controllers in a Kubernetes environment, showing traffic flow from an AWS Load Balancer to a service and ingress controller.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862870/notes-assets/images/AWS-EKS-VPC-Lattice/kubernetes-ingress-controllers-traffic-flow.jpg)
+![The image illustrates a traditional approach using ingress controllers in a Kubernetes environment, showing traffic flow from an AWS Load Balancer to a service and ingress controller.](https://kodekloud.com/kk-media/image/upload/v1752862870/notes-assets/images/AWS-EKS-VPC-Lattice/kubernetes-ingress-controllers-traffic-flow.jpg)
 
 The Gateway API preserves this topology—external Load Balancer plus in-cluster controller—but introduces three core resources:
 
@@ -148,7 +148,7 @@ The Gateway API preserves this topology—external Load Balancer plus in-cluster
 | Gateway      | Binds external listeners (ports/protocols) to Routes                  | Expose HTTP on port 80              |
 | Route Types  | Split by protocol: HTTPRoute, TLSRoute, TCPRoute, UDPRoute, GRPCRoute | Fine-grained traffic matching rules |
 
-![The image illustrates routing options with a Gateway API, showing a Kubernetes setup with services, an ingress controller, and an AWS load balancer. It lists different types of ingress routes such as HTTP, TLS, TCP, UDP, and GRPC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862871/notes-assets/images/AWS-EKS-VPC-Lattice/gateway-api-kubernetes-routing-options.jpg)
+![The image illustrates routing options with a Gateway API, showing a Kubernetes setup with services, an ingress controller, and an AWS load balancer. It lists different types of ingress routes such as HTTP, TLS, TCP, UDP, and GRPC.](https://kodekloud.com/kk-media/image/upload/v1752862871/notes-assets/images/AWS-EKS-VPC-Lattice/gateway-api-kubernetes-routing-options.jpg)
 
 ***
 
@@ -156,11 +156,11 @@ The Gateway API preserves this topology—external Load Balancer plus in-cluster
 
 AWS VPC Lattice offers a service-mesh–style abstraction for your VPCs without the complexity of peering or Transit Gateways. Central to this model is the **Service Network**, which uses AWS Cloud Map to register endpoints and perform service discovery.
 
-![The image is a diagram illustrating service networks in AWS Lattice, showing two VPCs (VPC 01 and VPC 02) connected through AWS Lattice, with references to AWS IAM and AWS Cloud Map.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862873/notes-assets/images/AWS-EKS-VPC-Lattice/aws-lattice-service-networks-diagram.jpg)
+![The image is a diagram illustrating service networks in AWS Lattice, showing two VPCs (VPC 01 and VPC 02) connected through AWS Lattice, with references to AWS IAM and AWS Cloud Map.](https://kodekloud.com/kk-media/image/upload/v1752862873/notes-assets/images/AWS-EKS-VPC-Lattice/aws-lattice-service-networks-diagram.jpg)
 
 When Kubernetes workloads join a Lattice Service Network, pod IPs are flattened across clusters just as a CNI flattens IPs inside a cluster.
 
-![The image illustrates a diagram of service networks in AWS Lattice, showing two VPCs (VPC 01 and VPC 02) connected through a Lattice service network, with Kubernetes DNS integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862874/notes-assets/images/AWS-EKS-VPC-Lattice/aws-lattice-service-networks-diagram-2.jpg)
+![The image illustrates a diagram of service networks in AWS Lattice, showing two VPCs (VPC 01 and VPC 02) connected through a Lattice service network, with Kubernetes DNS integration.](https://kodekloud.com/kk-media/image/upload/v1752862874/notes-assets/images/AWS-EKS-VPC-Lattice/aws-lattice-service-networks-diagram-2.jpg)
 
 ***
 
@@ -175,7 +175,7 @@ Here’s how traffic flows when a pod communicates across the Service Network:
 
 > **lightbulb** AWS Lattice supports hybrid environments—traffic can route to other EKS clusters, EC2 instances, AWS Lambda, or external services registered in Cloud Map.
 
-![The image illustrates a Kubernetes setup with a Lattice Gateway Controller, service endpoints, and pods, highlighting its suitability for complex enterprise environments and challenges with scaling. It also mentions AWS Lambda and AWS EC2 integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862875/notes-assets/images/AWS-EKS-VPC-Lattice/kubernetes-lattice-gateway-aws-integration.jpg)
+![The image illustrates a Kubernetes setup with a Lattice Gateway Controller, service endpoints, and pods, highlighting its suitability for complex enterprise environments and challenges with scaling. It also mentions AWS Lambda and AWS EC2 integration.](https://kodekloud.com/kk-media/image/upload/v1752862875/notes-assets/images/AWS-EKS-VPC-Lattice/kubernetes-lattice-gateway-aws-integration.jpg)
 
 ***
 
@@ -190,7 +190,7 @@ While VPC Lattice streamlines cross-VPC communication, there are trade-offs:
 
 > **triangle-alert** Frequent Gateway API or Service Network changes may incur delays. Plan your deployment workflows to batch updates when possible.
 
-![The image outlines challenges associated with AWS Lattice, highlighting heavy reliance on IAM permissions, dependence on AWS services for provisioning, and service network creation time delays. It includes a diagram illustrating traffic management through AWS IAM with advanced permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862876/notes-assets/images/AWS-EKS-VPC-Lattice/aws-lattice-challenges-iam-diagram.jpg)
+![The image outlines challenges associated with AWS Lattice, highlighting heavy reliance on IAM permissions, dependence on AWS services for provisioning, and service network creation time delays. It includes a diagram illustrating traffic management through AWS IAM with advanced permissions.](https://kodekloud.com/kk-media/image/upload/v1752862876/notes-assets/images/AWS-EKS-VPC-Lattice/aws-lattice-challenges-iam-diagram.jpg)
 
 AWS VPC Lattice is ideal for **enterprise-scale** environments requiring strict isolation and multi-account routing. For smaller clusters or simpler cross-cluster needs, consider lighter-weight solutions like native Kubernetes Service or Ingress.
 

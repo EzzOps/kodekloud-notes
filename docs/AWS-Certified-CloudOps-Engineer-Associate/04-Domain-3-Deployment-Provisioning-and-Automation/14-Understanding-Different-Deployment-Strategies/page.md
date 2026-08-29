@@ -26,7 +26,7 @@ Let's explore each strategy in detail.
 
 Recreate Deployment is the simplest approach. In this method, the current version of the application is completely shut down and replaced with the new version. Since the old version is terminated before the new version starts, users may experience service downtime. For example, if the application takes five minutes to start, that downtime is inevitable during the transition.
 
-![The image illustrates a "Recreating Deployment" process, showing a new version being connected to a load balancer, with notes explaining that the older version is stopped before deploying the new one, and service downtime is expected.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860337/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Understanding-Different-Deployment-Strategies/recreating-deployment-load-balancer.jpg)
+![The image illustrates a "Recreating Deployment" process, showing a new version being connected to a load balancer, with notes explaining that the older version is stopped before deploying the new one, and service downtime is expected.](https://kodekloud.com/kk-media/image/upload/v1752860337/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Understanding-Different-Deployment-Strategies/recreating-deployment-load-balancer.jpg)
 
 > **lightbulb** This strategy is best suited for applications where a brief downtime is acceptable and the startup process is optimized.
 
@@ -36,7 +36,7 @@ Recreate Deployment is the simplest approach. In this method, the current versio
 
 Blue-Green Deployment maintains two separate environments: one live (blue) and one updated (green). Initially, the DNS points to the live blue environment. Once the new version is deployed to the green environment, DNS is switched to redirect users to it. Often, database updates are performed in parallel, which might require maintaining duplicate databases. This strategy facilitates a quick rollback by simply switching DNS back, though it typically incurs higher infrastructure costs due to running duplicate environments.
 
-![The image illustrates a Blue/Green Deployment strategy using AWS Cloud, showing parallel environments (Blue and Green) with Amazon Route 53 DNS endpoints, highlighting features like instant rollback and higher infrastructure costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860338/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Understanding-Different-Deployment-Strategies/blue-green-deployment-aws-cloud.jpg)
+![The image illustrates a Blue/Green Deployment strategy using AWS Cloud, showing parallel environments (Blue and Green) with Amazon Route 53 DNS endpoints, highlighting features like instant rollback and higher infrastructure costs.](https://kodekloud.com/kk-media/image/upload/v1752860338/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Understanding-Different-Deployment-Strategies/blue-green-deployment-aws-cloud.jpg)
 
 > **triangle-alert** Blue-Green Deployment can double infrastructure costs. Ensure that budget constraints are considered before opting for this strategy.
 
@@ -48,7 +48,7 @@ Rolling Updates involve updating only a subset of servers at a time rather than 
 
 This strategy works best when differences between the old and new versions are minimal. Significant differences or accompanying database changes might create inconsistencies, in which case a Blue-Green Deployment could be a better fit. With Rolling Updates, continuous availability is maintained with minimal service disruption as long as changes are incremental.
 
-![The image illustrates a "Rolling Update Deployment" process, showing a sequence of states where updates are applied incrementally to maintain continuous availability and minimal service disruption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860339/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Understanding-Different-Deployment-Strategies/rolling-update-deployment-process.jpg)
+![The image illustrates a "Rolling Update Deployment" process, showing a sequence of states where updates are applied incrementally to maintain continuous availability and minimal service disruption.](https://kodekloud.com/kk-media/image/upload/v1752860339/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Understanding-Different-Deployment-Strategies/rolling-update-deployment-process.jpg)
 
 ***
 
@@ -66,7 +66,7 @@ A/B Testing is used primarily to compare two versions of an application rather t
 
 While similar in appearance to Canary Deployment, A/B Testing's main aim is performance and user experience comparison, not a full rollout. This strategy is particularly useful when validating new features before finalizing the selection for complete deployment.
 
-![The image illustrates an A/B testing deployment setup, showing load balancing between two serving pages, with 75% of users directed to the original page and 25% to a test variant. It includes application servers for both the original and test variant deployments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860340/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Understanding-Different-Deployment-Strategies/ab-testing-deployment-setup.jpg)
+![The image illustrates an A/B testing deployment setup, showing load balancing between two serving pages, with 75% of users directed to the original page and 25% to a test variant. It includes application servers for both the original and test variant deployments.](https://kodekloud.com/kk-media/image/upload/v1752860340/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Understanding-Different-Deployment-Strategies/ab-testing-deployment-setup.jpg)
 
 ***
 
@@ -87,7 +87,7 @@ For example:
 * If a controlled, gradual rollout fits your needs, Rolling Updates or a Canary Deployment minimizes the risk.
 * For feature comparison and testing user experience, A/B Testing offers valuable insights.
 
-![The image illustrates two deployment strategies: Canary and Blue/Green, showing their processes and components for gradual release, real-time monitoring, and risk mitigation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860341/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Understanding-Different-Deployment-Strategies/canary-blue-green-deployment-strategies.jpg)
+![The image illustrates two deployment strategies: Canary and Blue/Green, showing their processes and components for gradual release, real-time monitoring, and risk mitigation.](https://kodekloud.com/kk-media/image/upload/v1752860341/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Understanding-Different-Deployment-Strategies/canary-blue-green-deployment-strategies.jpg)
 
 Understanding these deployment strategies allows you to select the most appropriate method based on risk management, downtime, infrastructure costs, and deployment speed. This knowledge is not only beneficial for exam preparation but also essential for real-world application in dynamic production environments.
 

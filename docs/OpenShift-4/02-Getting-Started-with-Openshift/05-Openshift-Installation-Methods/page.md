@@ -6,9 +6,7 @@ This article explains how to create a Red Hat account necessary for OpenShift in
 
 Before you begin using OpenShift, you must first sign up for a Red Hat account. Registration is free, so there is no cost involved.
 
-<Callout icon="lightbulb">
-  Ensure you create your account well before starting the installation process to avoid any delays.
-</Callout>
+> **lightbulb** Ensure you create your account well before starting the installation process to avoid any delays.
 
 ## Steps to Create a Red Hat Account
 
@@ -23,9 +21,7 @@ When you click the registration button, a form will appear requesting your perso
 * Job title and email address
 * Company information (if applicable)
 
-<Frame>
-  ![The image shows a registration form for joining an existing account, with sections for account type selection, login information, and personal information. It includes fields for choosing a Red Hat login, password, and entering personal details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882662/notes-assets/images/OpenShift-4-Openshift-Installation-Methods/registration-form-account-login-details.jpg)
-</Frame>
+![The image shows a registration form for joining an existing account, with sections for account type selection, login information, and personal information. It includes fields for choosing a Red Hat login, password, and entering personal details.](https://kodekloud.com/kk-media/image/upload/v1752882662/notes-assets/images/OpenShift-4-Openshift-Installation-Methods/registration-form-account-login-details.jpg)
 
 Once you have completed the registration form, click "Create Account." After your account is set up, you can proceed with the OpenShift installation tasks as detailed in this guide.
 
@@ -34,6 +30,4 @@ For more information on OpenShift and related topics, consider visiting the foll
 * [Red Hat OpenShift Documentation](https://docs.openshift.com)
 * [OpenShift Quick Start](https://www.openshift.com/learn/quickstarts)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/7ba3dd10-68d9-414d-b26b-8e9109a4a3d3/lesson/4527a917-0f46-450a-adca-54cb13bf75eb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/7ba3dd10-68d9-414d-b26b-8e9109a4a3d3/lesson/4527a917-0f46-450a-adca-54cb13bf75eb)

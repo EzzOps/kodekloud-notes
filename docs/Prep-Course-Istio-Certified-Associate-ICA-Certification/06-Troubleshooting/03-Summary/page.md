@@ -48,9 +48,7 @@ Use the following commands to quickly identify common Istio and Kubernetes issue
 | `kubectl logs`                        |                             View container logs (application or sidecar) | `kubectl logs my-pod -c my-container -n my-namespace`                      |
 | `kubectl get events`                  |            Check for cluster events that affect scheduling or networking | `kubectl get events -n my-namespace`                                       |
 
-<Callout icon="lightbulb">
-  Always SSH into any host referenced by an exam question, run the required checks from that host, then exit before moving to the next question. Also run `istioctl analyze -n <namespace>` early — it catches many common Istio issues quickly.
-</Callout>
+> **lightbulb** Always SSH into any host referenced by an exam question, run the required checks from that host, then exit before moving to the next question. Also run `istioctl analyze -n <namespace>` early — it catches many common Istio issues quickly.
 
 ## Quick troubleshooting checklist
 
@@ -68,9 +66,7 @@ Use the following commands to quickly identify common Istio and Kubernetes issue
 * Use a large monitor if possible so you can view multiple terminals and resources at once; it reduces context-switching and speeds up verification.
 * Practice navigating between hosts via SSH, running diagnostics, and exiting cleanly — exam questions may require interacting with multiple nodes.
 
-<Callout icon="warning">
-  Exam tip: If the question lists specific hosts, SSH into each listed host and complete the checks from there. Failing to SSH into the required hosts (or forgetting to exit) can cause exam errors.
-</Callout>
+> **warning** Exam tip: If the question lists specific hosts, SSH into each listed host and complete the checks from there. Failing to SSH into the required hosts (or forgetting to exit) can cause exam errors.
 
 ## Links and references
 
@@ -81,8 +77,6 @@ Use the following commands to quickly identify common Istio and Kubernetes issue
 
 Congratulations on completing this course — you should now be ready to attempt the mock exams and the real ICA exam. Good luck!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/3b1a1d7c-b04a-4a3d-bf30-65da7d5460c3/lesson/5a08da93-ae0a-4a21-80ae-378873d45306" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/3b1a1d7c-b04a-4a3d-bf30-65da7d5460c3/lesson/5a08da93-ae0a-4a21-80ae-378873d45306)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/2d0c6545-943b-49e4-b231-9092b777e287/lesson/9ec8607c-4689-4281-8c2b-a791f16c2b18" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/2d0c6545-943b-49e4-b231-9092b777e287/lesson/9ec8607c-4689-4281-8c2b-a791f16c2b18)

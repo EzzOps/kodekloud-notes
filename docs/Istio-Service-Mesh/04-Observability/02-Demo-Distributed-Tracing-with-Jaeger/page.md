@@ -20,9 +20,7 @@ istioctl dashboard jaeger
 
 Once the dashboard loads, you will see several search criteria on the left side. These include filters for service name, operation name, tags, trace duration, and the number of results. Click on **Find Traces** to display a graph containing the traces.
 
-<Callout icon="lightbulb">
-  For a broader view, increase the number of traces to 50. Keep in mind that under heavy load, Jaeger may sample only a few seconds (typically 3 or 4) of the timeline for these traces. You can also sort the traces by criteria such as longest duration, shortest duration, most spans, or least spans.
-</Callout>
+> **lightbulb** For a broader view, increase the number of traces to 50. Keep in mind that under heavy load, Jaeger may sample only a few seconds (typically 3 or 4) of the timeline for these traces. You can also sort the traces by criteria such as longest duration, shortest duration, most spans, or least spans.
 
 ## Analyzing Traces
 
@@ -39,9 +37,7 @@ To focus on the review service, filter the traces to display only those specific
 
 Next, we introduce delays in the detail service to simulate performance issues. As seen in the traffic management section, a delay in the detail service causes the product service to wait for 3 seconds before returning an error. This confirms the delay is functioning as expected.
 
-<Callout icon="triangle-alert">
-  When applying delays, ensure your environment is properly monitored to avoid unintended performance degradations in production.
-</Callout>
+> **triangle-alert** When applying delays, ensure your environment is properly monitored to avoid unintended performance degradations in production.
 
 ## Verifying with Kiali
 
@@ -54,9 +50,7 @@ Switch back to the Jaeger dashboard and filter by the "product page" service. Th
 * A scatter plot graph representing trace data
 * A list of traces showing details like duration and spans
 
-<Frame>
-  ![The image shows a Jaeger UI interface displaying trace data with a scatter plot graph and a list of traces for a service, including details like duration and spans.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879355/notes-assets/images/Istio-Service-Mesh-Demo-Distributed-Tracing-with-Jaeger/jaeger-ui-trace-data-scatter-plot.jpg)
-</Frame>
+![The image shows a Jaeger UI interface displaying trace data with a scatter plot graph and a list of traces for a service, including details like duration and spans.](https://kodekloud.com/kk-media/image/upload/v1752879355/notes-assets/images/Istio-Service-Mesh-Demo-Distributed-Tracing-with-Jaeger/jaeger-ui-trace-data-scatter-plot.jpg)
 
 For simplified analysis, limit your results to 20 traces. Within these traces:
 
@@ -75,8 +69,6 @@ For further reading and resources:
 
 Happy tracing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/7696566a-6631-4367-9fbc-ce86b23cd608/lesson/061a3361-30a2-4a0b-ba4c-53db488e0b52" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/7696566a-6631-4367-9fbc-ce86b23cd608/lesson/061a3361-30a2-4a0b-ba4c-53db488e0b52)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/7696566a-6631-4367-9fbc-ce86b23cd608/lesson/5e2c86f3-72b0-49e4-ac30-fc2ad2af375e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/7696566a-6631-4367-9fbc-ce86b23cd608/lesson/5e2c86f3-72b0-49e4-ac30-fc2ad2af375e)

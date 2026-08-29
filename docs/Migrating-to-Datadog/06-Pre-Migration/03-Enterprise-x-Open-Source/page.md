@@ -87,9 +87,7 @@ How to choose
 * Calculate TCO: include infrastructure, personnel, training, and potential vendor fees to make an apples-to-apples comparison.
 * Consider hybrid approaches: some organizations adopt open-source components for core telemetry (e.g., Prometheus + Grafana) while using commercial SaaS for long-term storage, alerting, or incident management.
 
-<Callout icon="lightbulb">
-  When evaluating options, document total cost of ownership (infrastructure + personnel + vendor fees), required SLAs, and the team’s ability to operate the solution. This makes comparison apples-to-apples.
-</Callout>
+> **lightbulb** When evaluating options, document total cost of ownership (infrastructure + personnel + vendor fees), required SLAs, and the team’s ability to operate the solution. This makes comparison apples-to-apples.
 
 Further reading and references
 
@@ -100,6 +98,4 @@ Further reading and references
 
 That's it for this lesson. I hope you found it useful.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/b62154a9-956c-4ff6-8257-bd2c3beea082" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/b62154a9-956c-4ff6-8257-bd2c3beea082)

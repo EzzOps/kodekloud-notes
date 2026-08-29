@@ -8,7 +8,7 @@ Welcome to the Solutions Architect Associate lesson focused on designing for rel
 
 Before we start, please note that there is a design challenge at the end of these four sections. This interactive challenge will have you match AWS services with corresponding design requirements. The following sections on costs and performance will follow after reliability.
 
-![The image is an agenda for "Designing for Reliability," featuring three main points: design principles and foundation, specific application of reliability with demos and labs, and a design challenge/quiz.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863548/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Reliability/designing-for-reliability-agenda.jpg)
+![The image is an agenda for "Designing for Reliability," featuring three main points: design principles and foundation, specific application of reliability with demos and labs, and a design challenge/quiz.](https://kodekloud.com/kk-media/image/upload/v1752863548/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Reliability/designing-for-reliability-agenda.jpg)
 
 ***
 
@@ -26,7 +26,7 @@ Before we start, please note that there is a design challenge at the end of thes
 * **Final Design Challenge**\
   Reinforce your learning with a quiz that simulates real-world AWS design choices.
 
-![The image is an agenda for a presentation titled "Designing for Reliability," covering topics like design principles, disaster recovery, and reliability for various services. It includes sections on network, storage, compute, and other services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863549/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Reliability/designing-for-reliability-agenda-2.jpg)
+![The image is an agenda for a presentation titled "Designing for Reliability," covering topics like design principles, disaster recovery, and reliability for various services. It includes sections on network, storage, compute, and other services.](https://kodekloud.com/kk-media/image/upload/v1752863549/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Reliability/designing-for-reliability-agenda-2.jpg)
 
 ***
 
@@ -39,7 +39,7 @@ We begin by reviewing essential design principles for reliability. This section 
 * Warm Standby
 * Pilot Light Setups
 
-![The image illustrates design principles for reliability, featuring a central laptop icon connected to four principles: scale automatically, automatic recovery from failure, automate as much as possible, and plan for failure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863551/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Reliability/reliability-design-principles-laptop.jpg)
+![The image illustrates design principles for reliability, featuring a central laptop icon connected to four principles: scale automatically, automatic recovery from failure, automate as much as possible, and plan for failure.](https://kodekloud.com/kk-media/image/upload/v1752863551/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Reliability/reliability-design-principles-laptop.jpg)
 
 > **lightbulb** Focusing on these principles early will help simplify the complex topics later in the course.
 
@@ -49,7 +49,7 @@ We begin by reviewing essential design principles for reliability. This section 
 
 Next, we discuss various disaster recovery models. In this section, you'll explore models ranging from simple backup and restore to multi-site active-active configurations. Each model has its trade-offs between cost, control, and recovery speed.
 
-![The image illustrates different disaster recovery models in the cloud, ranging from "Backup & Restore" to "Multi-site active/active," with varying RPO/RTO times from hours to real-time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863552/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Reliability/disaster-recovery-models-cloud.jpg)
+![The image illustrates different disaster recovery models in the cloud, ranging from "Backup & Restore" to "Multi-site active/active," with varying RPO/RTO times from hours to real-time.](https://kodekloud.com/kk-media/image/upload/v1752863552/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Reliability/disaster-recovery-models-cloud.jpg)
 
 ***
 
@@ -64,7 +64,7 @@ We now introduce major categories that shape reliability and design:
 | Process and Change Management | Strategies to manage system modifications and updates.      |
 | Failure Management            | Approaches to detect, respond, and recover from failures.   |
 
-![The image outlines four major categories for designing reliability: Foundations (Infrastructure), Application Architecture, Change Management, and Failure Management. Each category is represented with a distinct color and icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863554/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Reliability/reliability-design-categories-diagram.jpg)
+![The image outlines four major categories for designing reliability: Foundations (Infrastructure), Application Architecture, Change Management, and Failure Management. Each category is represented with a distinct color and icon.](https://kodekloud.com/kk-media/image/upload/v1752863554/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Reliability/reliability-design-categories-diagram.jpg)
 
 Within AWS, our primary focus will be on the foundational elements and application architecture. Although change management and failure management are essential, they are more pertinent to operational excellence and often feature in the operations exam.
 
@@ -86,7 +86,7 @@ We will now explore various AWS service groups through the lens of reliability. 
 
 The general progression begins with networking, followed by storage, compute, and database services. After that, application integration, followed by machine learning, migration/transfer, and finally, management and security are discussed.
 
-![The image is a layered diagram illustrating the components of a service architecture, including transfer, security, database, and storage, linked to functions like data/machine learning, management, application integration, compute, and network.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863555/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Reliability/service-architecture-components-diagram.jpg)
+![The image is a layered diagram illustrating the components of a service architecture, including transfer, security, database, and storage, linked to functions like data/machine learning, management, application integration, compute, and network.](https://kodekloud.com/kk-media/image/upload/v1752863555/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Reliability/service-architecture-components-diagram.jpg)
 
 ***
 
@@ -100,7 +100,7 @@ Towards the end of this section series, you'll engage in a design challenge. Thi
 * For scalable key-value data storage, DynamoDB often fits the need.
 * For serverless compute, AWS Lambda is a popular choice.
 
-![The image is a flowchart titled "Designing for Reliability – Design Challenge," illustrating various AWS services and components involved in creating a reliable architecture. It includes elements like AWS Route 53, Amazon CloudFront, and AWS EC2, connected through different processes and decision points.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863556/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Reliability/designing-for-reliability-flowchart.jpg)
+![The image is a flowchart titled "Designing for Reliability – Design Challenge," illustrating various AWS services and components involved in creating a reliable architecture. It includes elements like AWS Route 53, Amazon CloudFront, and AWS EC2, connected through different processes and decision points.](https://kodekloud.com/kk-media/image/upload/v1752863556/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Agenda-and-Introduction-for-Reliability/designing-for-reliability-flowchart.jpg)
 
 > **triangle-alert** Pay special attention to the design challenge—this part of the lesson is designed to mirror real-world scenarios and exam-style questions. Practice and internalize these concepts to build a strong foundation for the exam.
 

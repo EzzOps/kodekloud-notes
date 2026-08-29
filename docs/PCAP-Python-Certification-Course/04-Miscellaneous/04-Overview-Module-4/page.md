@@ -10,9 +10,7 @@ This module provided an in-depth look at several essential Python features that 
 
 We began by exploring generators, which allow you to control the iteration process in Python. You learned about built-in generators like the one returned by the range function, and how to create custom generators by implementing the iterator protocol. A key feature of generators is the ability to pause execution with the `yield` keyword, resuming only when the generator is called again.
 
-<Callout icon="lightbulb">
-  Generators can be particularly useful for handling large datasets without consuming excessive memory.
-</Callout>
+> **lightbulb** Generators can be particularly useful for handling large datasets without consuming excessive memory.
 
 ## List Comprehensions and Generator Expressions
 
@@ -26,9 +24,7 @@ The discussion then shifted to lambda functions and closures. You learned how la
 
 The module also addressed Python's approach for converting slashes to support different operating systems—ensuring your code runs seamlessly across platforms. Additionally, you worked with streams by learning how to read and write both text and binary data. It is important to use the correct mode while opening streams to avoid errors in file handling.
 
-<Callout icon="triangle-alert">
-  Always verify the mode in which your file is opened (text or binary) to prevent unexpected behavior.
-</Callout>
+> **triangle-alert** Always verify the mode in which your file is opened (text or binary) to prevent unexpected behavior.
 
 ## Advanced File Handling
 
@@ -53,6 +49,4 @@ Each of these topics builds on Python fundamentals and equips you with powerful 
 
 By mastering these tools, you'll be better prepared to leverage Python's capabilities in handling complex programming challenges.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/f130fee7-a5f4-4c7f-bc8e-ffd6f1b8fdc1/lesson/de4ce711-91bd-48b0-a25a-86b7bb67684d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/f130fee7-a5f4-4c7f-bc8e-ffd6f1b8fdc1/lesson/de4ce711-91bd-48b0-a25a-86b7bb67684d)

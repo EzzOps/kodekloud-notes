@@ -22,9 +22,7 @@ The operator installs admission webhooks that require a TLS certificate trusted 
 | Operator auto-generate (recommended for demos) | Quick demos or local clusters                     | Let the operator generate a self-signed cert by enabling `admissionWebhooks.autoGenerateCert.enabled`.                                                               |
 | Provide your own cert                          | Advanced / policy-controlled environments         | Supply the webhook certificate from your own PKI and configure the operator accordingly.                                                                             |
 
-<Callout icon="lightbulb">
-  If you don't want to install `cert-manager`, set `admissionWebhooks.certManager.enabled` to `false` and `admissionWebhooks.autoGenerateCert.enabled` to `true` so the operator auto-creates a self-signed webhook certificate suitable for demos and local testing.
-</Callout>
+> **lightbulb** If you don't want to install `cert-manager`, set `admissionWebhooks.certManager.enabled` to `false` and `admissionWebhooks.autoGenerateCert.enabled` to `true` so the operator auto-creates a self-signed webhook certificate suitable for demos and local testing.
 
 Use this `values.yaml` snippet to enable the operator's auto-generated certificate:
 
@@ -292,9 +290,7 @@ Using the OpenTelemetry Operator makes collectors Kubernetes-first: define an `O
 * Jaeger project: [https://www.jaegertracing.io/](https://www.jaegertracing.io/)
 * Kubernetes documentation: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/d4a4c311-382c-44d4-b259-145d79432d16" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/d4a4c311-382c-44d4-b259-145d79432d16)
 
 
 # Important Receivers for Kubernetes
@@ -316,9 +312,7 @@ processors:
   k8sattributes: {}
 ```
 
-<Callout icon="lightbulb">
-  Kubernetes metadata enrichment requires the Collector to have proper [Kubernetes RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) permissions (to read pods, nodes, and endpoints). Ensure your Collector's [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) has the required [Role/ClusterRole](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#role-and-clusterrole).
-</Callout>
+> **lightbulb** Kubernetes metadata enrichment requires the Collector to have proper [Kubernetes RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) permissions (to read pods, nodes, and endpoints). Ensure your Collector's [ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/) has the required [Role/ClusterRole](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#role-and-clusterrole).
 
 ## kubeletstats receiver
 
@@ -370,13 +364,9 @@ receivers:
   prometheus: {}
 ```
 
-<Callout icon="note">
-  The Prometheus receiver requires a full `config.scrape_configs` section (service discovery or explicit `scrape_configs`). The example above is minimal—define jobs, targets, and relabeling to avoid misconfigured scrapes.
-</Callout>
+> **note** The Prometheus receiver requires a full `config.scrape_configs` section (service discovery or explicit `scrape_configs`). The example above is minimal—define jobs, targets, and relabeling to avoid misconfigured scrapes.
 
-<Callout icon="warning">
-  If multiple Collectors can scrape the same Prometheus targets you will receive duplicate metrics. Coordinate scrapes (for example, partition targets or use a target allocator) to avoid duplication and metric inflation.
-</Callout>
+> **warning** If multiple Collectors can scrape the same Prometheus targets you will receive duplicate metrics. Coordinate scrapes (for example, partition targets or use a target allocator) to avoid duplication and metric inflation.
 
 ## hostmetrics receiver
 
@@ -431,6 +421,4 @@ Review and adapt these choices to match your Collector deployment model (DaemonS
 * [Kubelet resource usage monitoring](https://kubernetes.io/docs/tasks/debug-application-cluster/resource-usage-monitoring/)
 * [Prometheus exposition formats](https://prometheus.io/docs/instrumenting/exposition_formats/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/36b80307-ad56-4210-b1f6-b421379e8f8e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/09e46ae9-895f-4e3f-98dd-c7be94303a09/lesson/36b80307-ad56-4210-b1f6-b421379e8f8e)

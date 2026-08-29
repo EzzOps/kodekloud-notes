@@ -18,7 +18,7 @@ However, as your infrastructure expands, managing resources through the console 
 
 For those seeking greater efficiency, the AWS Command Line Interface (CLI) is an excellent option. This tool lets you manage AWS resources directly from the command line, streamlining operations and enabling automation.
 
-![The image shows icons representing a command line interface and AWS, with various related symbols around the AWS logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858147/notes-assets/images/AWS-Certified-Developer-Associate-Accessing-AWS/aws-command-line-interface-icons.jpg)
+![The image shows icons representing a command line interface and AWS, with various related symbols around the AWS logo.](https://kodekloud.com/kk-media/image/upload/v1752858147/notes-assets/images/AWS-Certified-Developer-Associate-Accessing-AWS/aws-command-line-interface-icons.jpg)
 
 With the CLI, repetitive tasks can be automated seamlessly by reusing commands and scripts, which can be easily shared among team members. Additionally, the CLI offers certain configurations that are only available outside the console, making it indispensable for advanced users who need tight control over their environments.
 
@@ -28,7 +28,7 @@ With the CLI, repetitive tasks can be automated seamlessly by reusing commands a
 
 The AWS Software Development Kit (SDK) empowers developers to interact with AWS programmatically via their code. It supports popular programming languages such as JavaScript, Java, and C#, enabling your applications to automatically manage AWS resources based on real-time events or user interactions.
 
-![The image shows two icons: one resembling a notepad with code lines and the other featuring the AWS logo surrounded by various service icons, labeled "AWS SDK."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858148/notes-assets/images/AWS-Certified-Developer-Associate-Accessing-AWS/notepad-aws-sdk-icons.jpg)
+![The image shows two icons: one resembling a notepad with code lines and the other featuring the AWS logo surrounded by various service icons, labeled "AWS SDK."](https://kodekloud.com/kk-media/image/upload/v1752858148/notes-assets/images/AWS-Certified-Developer-Associate-Accessing-AWS/notepad-aws-sdk-icons.jpg)
 
 Using the AWS SDK, your application can dynamically create resources—for example, automatically generating an S3 bucket or provisioning a server when a user logs in. This method is particularly useful for building scalable and responsive cloud-based applications.
 

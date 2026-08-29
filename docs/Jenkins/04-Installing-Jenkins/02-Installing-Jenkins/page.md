@@ -6,9 +6,7 @@ This article demonstrates how to install Jenkins quickly and efficiently on Ubun
 
 In this article, we will demonstrate how to install Jenkins quickly and efficiently. With just a few terminal commands and an open port, you'll have Jenkins up and running in no time, making it easier than ever to kickstart your CI/CD journey.
 
-<Callout icon="lightbulb">
-  This guide is specifically designed for Ubuntu 20.04. Although the demonstration uses a Ubuntu virtual machine in Azure, you can use AWS, GCP, or run a local virtual machine on your desktop—choose the environment that best fits your needs.
-</Callout>
+> **lightbulb** This guide is specifically designed for Ubuntu 20.04. Although the demonstration uses a Ubuntu virtual machine in Azure, you can use AWS, GCP, or run a local virtual machine on your desktop—choose the environment that best fits your needs.
 
 ## Overview
 
@@ -30,6 +28,4 @@ For more detailed instructions and best practices, consider reviewing the offici
 
 That concludes this installation guide. We look forward to seeing you in the next article where we further explore Jenkins configurations and advanced setups.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/d9ec3aa2-1c6e-4512-bee1-f1d811ec7b6e/lesson/3b2bcce8-9f64-4d3a-916c-c6f15e819f8f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/d9ec3aa2-1c6e-4512-bee1-f1d811ec7b6e/lesson/3b2bcce8-9f64-4d3a-916c-c6f15e819f8f)

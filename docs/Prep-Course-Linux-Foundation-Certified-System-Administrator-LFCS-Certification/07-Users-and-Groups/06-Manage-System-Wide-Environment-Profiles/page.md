@@ -55,9 +55,7 @@ $ touch /home/jane/saved_file
 
 If Aaron runs the script, it will create `/home/aaron/saved_file`; if Jane runs it, her file will be created in `/home/jane/saved_file`. This dynamic adjustment is one of the key benefits of using environment variables.
 
-<Callout icon="lightbulb">
-  If you want users to maintain personalized environment variables, you can modify their `.bashrc` file. However, for system-wide settings that affect all users, update the `/etc/environment` file.
-</Callout>
+> **lightbulb** If you want users to maintain personalized environment variables, you can modify their `.bashrc` file. However, for system-wide settings that affect all users, update the `/etc/environment` file.
 
 ## Configuring Environment Variables
 

@@ -106,14 +106,12 @@ Jaeger UI: [http://localhost:16686](http://localhost:16686)
    * `current_humidity_percentage`
 3. Run queries to confirm metrics are visible and being updated.
 
-<Callout icon="lightbulb">
-  If metrics are missing, check:
+> **lightbulb** If metrics are missing, check:
 
   * The Collector is running and its metrics pipeline includes the `prometheusremotewrite` exporter.
   * The `endpoint` in the Collector exporter is `http://prometheus:9090/api/v1/write`.
   * Prometheus was started with `--web.enable-remote-write-receiver` and the mounted `prometheus.yml` is valid.
   * Services are on the same Docker Compose network so hostnames resolve between containers.
-</Callout>
 
 Troubleshooting tips
 
@@ -132,11 +130,9 @@ References and further reading
 
 This completes the end-to-end setup for pushing metrics from an OpenTelemetry Collector to Prometheus using Prometheus' remote write receiver.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/bd50c58e-2742-4b53-80d7-95063578edc4" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/bd50c58e-2742-4b53-80d7-95063578edc4)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/c9d44c13-fd59-4f7b-978a-75c136505053" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/c9d44c13-fd59-4f7b-978a-75c136505053)
 
 
 # OTel Col Connectors
@@ -161,9 +157,7 @@ What is a connector?
   <img alt="The image illustrates an OpenTelemetry Collector setup, showing two pipelines—Traces and Metrics—connected by a connector. Each pipeline includes Receivers, Processors, and Exporters." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Connectors bridge pipelines by appearing as an exporter on the source pipeline and as a receiver on the target pipeline. This allows the Collector to derive new telemetry (for example, metrics from spans) without changing application or SDK code.
-</Callout>
+> **lightbulb** Connectors bridge pipelines by appearing as an exporter on the source pipeline and as a receiver on the target pipeline. This allows the Collector to derive new telemetry (for example, metrics from spans) without changing application or SDK code.
 
 Connector placement and flow
 
@@ -552,9 +546,7 @@ Connectors let you transform, route, and enrich telemetry inside the Collector w
 
 Start small, validate outputs in a staging environment, and monitor for duplicate telemetry or overload when enabling multiple connectors that might fan out signals.
 
-<Callout icon="warning">
-  Be careful with fan-out and overlapping rules. Multiple connectors or routing rules can cause duplicated metrics/logs if match conditions overlap. Test configurations and use `match_once` when appropriate.
-</Callout>
+> **warning** Be careful with fan-out and overlapping rules. Multiple connectors or routing rules can cause duplicated metrics/logs if match conditions overlap. Test configurations and use `match_once` when appropriate.
 
 <Frame>
   <img alt="The image is a slide labeled &#x22;Wrap-up&#x22; that outlines four key points related to telemetry, metrics, and performance. Each point has a number and highlights functions like connectors, common metrics, and strategic guidelines." />
@@ -566,6 +558,4 @@ Links and references
 * OTTL (OpenTelemetry Transformation Language): [https://opentelemetry.io/docs/collector/transformations/](https://opentelemetry.io/docs/collector/transformations/) (refer to your Collector distribution docs for exact syntax)
 * Collector Connectors (see your Collector distribution / contrib docs for supported connector names and options)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/ddb4f7cf-8fdb-46e7-b492-7fdecee52d52" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/ddb4f7cf-8fdb-46e7-b492-7fdecee52d52)

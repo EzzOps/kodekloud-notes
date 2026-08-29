@@ -10,9 +10,7 @@ Buildah automatically creates container images that comply with the Open Contain
 
 The following diagram illustrates Buildah’s role in automating these tasks:
 
-<Frame>
-  ![The image features the "buildah" logo with text highlighting its capabilities: creating a working container from scratch and building images in an OCI-compliant fashion, with automation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882593/notes-assets/images/OpenShift-4-Docker-Build/buildah-logo-container-automation.jpg)
-</Frame>
+![The image features the "buildah" logo with text highlighting its capabilities: creating a working container from scratch and building images in an OCI-compliant fashion, with automation.](https://kodekloud.com/kk-media/image/upload/v1752882593/notes-assets/images/OpenShift-4-Docker-Build/buildah-logo-container-automation.jpg)
 
 ## Docker BuildConfig Example
 
@@ -81,9 +79,7 @@ To create the BuildConfig through the OpenShift console, follow these steps:
 
 4. Save the configuration. With this BuildConfig in place, OpenShift will monitor your Git repository for the Dockerfile, execute the build using the Docker strategy, and push the resulting image to the internal registry.
 
-<Callout icon="lightbulb">
-  Ensure that your Git repository and Dockerfile are correctly configured to avoid build-time issues.
-</Callout>
+> **lightbulb** Ensure that your Git repository and Dockerfile are correctly configured to avoid build-time issues.
 
 ## The Dockerfile
 
@@ -133,9 +129,7 @@ These logs confirm that the build process is being executed within the OpenShift
 
 Once the process is finished, open the "Builds" section to review the completed build. Selecting the "GoWebAPI:latest" image stream detail will display the container's configuration, including key settings like the command, working directory, exposed port, and architecture.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Container Platform interface displaying details of a completed Docker build for a project named "mywebsite-1." It includes information about the namespace, labels, Git repository, and commit details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882594/notes-assets/images/OpenShift-4-Docker-Build/openshift-docker-build-mywebsite-1.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Container Platform interface displaying details of a completed Docker build for a project named "mywebsite-1." It includes information about the namespace, labels, Git repository, and commit details.](https://kodekloud.com/kk-media/image/upload/v1752882594/notes-assets/images/OpenShift-4-Docker-Build/openshift-docker-build-mywebsite-1.jpg)
 
 Key configuration details include:
 
@@ -158,10 +152,6 @@ For additional resources on container image building and OpenShift, please refer
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Docker Hub](https://hub.docker.com/)
 
-<Callout icon="triangle-alert">
-  Ensure that both your Dockerfile and BuildConfig are kept up to date with the latest security patches and best practices to maintain a robust container security posture.
-</Callout>
+> **triangle-alert** Ensure that both your Dockerfile and BuildConfig are kept up to date with the latest security patches and best practices to maintain a robust container security posture.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/3200131b-dec7-4422-9e05-68c751bc4213/lesson/f17b386a-3f50-4bff-9e79-a9558ec7548d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/3200131b-dec7-4422-9e05-68c751bc4213/lesson/f17b386a-3f50-4bff-9e79-a9558ec7548d)

@@ -74,9 +74,7 @@ fn main() {
 }
 ```
 
-<Callout icon="lightbulb">
-  Make sure that `example.txt` is located in the project's root directory before running the code to avoid file not found errors.
-</Callout>
+> **lightbulb** Make sure that `example.txt` is located in the project's root directory before running the code to avoid file not found errors.
 
 ***
 
@@ -157,9 +155,7 @@ fn main() {
 
 When you run the code, your terminal displays the contents of `example.txt` along with status messages for each file operation.
 
-<Callout icon="lightbulb">
-  Compiler warnings may flag the unused `Result` from `read_to_string`. Consider incorporating robust error handling in your production code.
-</Callout>
+> **lightbulb** Compiler warnings may flag the unused `Result` from `read_to_string`. Consider incorporating robust error handling in your production code.
 
 ***
 
@@ -260,9 +256,7 @@ cargo run --quiet
 Data appended to file.
 ```
 
-<Callout icon="triangle-alert">
-  Ensure that `output.txt` exists before attempting to append data. Otherwise, the program will fail.
-</Callout>
+> **triangle-alert** Ensure that `output.txt` exists before attempting to append data. Otherwise, the program will fail.
 
 ***
 
@@ -288,6 +282,4 @@ These core file operations are foundational for managing disk-based data in real
 
 Keep exploring and happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/5b50abd7-c86a-4458-a1a3-90a7ebb3d776/lesson/ef519e58-8940-49a3-a93d-950d79417620" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/5b50abd7-c86a-4458-a1a3-90a7ebb3d776/lesson/ef519e58-8940-49a3-a93d-950d79417620)

@@ -28,23 +28,23 @@ To see Azure Cost Management in action, follow these steps:
 2. Search for “Cost Management” from the home page.
 3. Change the scope as needed. Remember, the hierarchical structure from management groups, subscriptions, to resource groups applies in cost management as well.
 
-![The image outlines the key features of Azure Cost Management, highlighting cost analysis, budgets, and recommendations. Each feature is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868326/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Cost-Management/azure-cost-management-features.jpg)
+![The image outlines the key features of Azure Cost Management, highlighting cost analysis, budgets, and recommendations. Each feature is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752868326/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Cost-Management/azure-cost-management-features.jpg)
 
 ## Cost Analysis Dashboard
 
 When you click on the "Cost Analysis" feature, you can adjust the scope to a specific subscription. Once set, choose the accumulated cost option to display a graph showing your current spending along with a forecast. For instance, you might see that your forecasted cost by a future date (e.g., April 7) reaches \$34.50, with the amount converted to US dollars for clarity.
 
-![The image shows a Microsoft Azure Cost Management overview page, featuring options for setting up accounts, analyzing trends, and optimizing cloud costs. It includes navigation links and sections for cost analysis, alerts, budgets, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868327/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Cost-Management/azure-cost-management-overview.jpg)
+![The image shows a Microsoft Azure Cost Management overview page, featuring options for setting up accounts, analyzing trends, and optimizing cloud costs. It includes navigation links and sections for cost analysis, alerts, budgets, and more.](https://kodekloud.com/kk-media/image/upload/v1752868327/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Cost-Management/azure-cost-management-overview.jpg)
 
 The dashboard displays the total cost incurred—say, $27 so far—and projects that your spending might reach $41.62 by April 7. Detailed filtering options are available, letting you analyze data by service name, location, resource group, and more. Filters, sometimes called dimensions, include tags and time frames (e.g., the last three months). You can also group data by resource group names or switch between different views, such as daily cost or column stack format, to explore your spending patterns more thoroughly.
 
-![The image shows a Microsoft Azure cost analysis dashboard with a graph displaying accumulated and forecasted costs over time, along with pie charts detailing costs by service, location, and resource group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868328/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Cost-Management/azure-cost-analysis-dashboard.jpg)
+![The image shows a Microsoft Azure cost analysis dashboard with a graph displaying accumulated and forecasted costs over time, along with pie charts detailing costs by service, location, and resource group.](https://kodekloud.com/kk-media/image/upload/v1752868328/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Cost-Management/azure-cost-analysis-dashboard.jpg)
 
 ## Additional Visualizations and Cost Alerts
 
 Additional visualizations help you break down expenses even further. For example, switching to a column stack view simplifies the visualization of how costs accumulate over time. Moreover, you can set up cost alerts and establish budgets to stay on top of your spending. Advisor recommendations, integrated with insights from Azure Advisor, cover performance, operational excellence, security, and reliability. However, within the cost blade, only cost-related recommendations are displayed, providing targeted advice to manage your cloud spending effectively.
 
-![The image shows a Microsoft Azure cost analysis dashboard with a graph displaying accumulated costs over time and pie charts breaking down expenses by service, location, and resource group. The total actual cost is \$76.96.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868329/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Cost-Management/azure-cost-analysis-dashboard-2.jpg)
+![The image shows a Microsoft Azure cost analysis dashboard with a graph displaying accumulated costs over time and pie charts breaking down expenses by service, location, and resource group. The total actual cost is \$76.96.](https://kodekloud.com/kk-media/image/upload/v1752868329/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Cost-Management/azure-cost-analysis-dashboard-2.jpg)
 
 With these capabilities, Azure Cost Management stands out as a robust platform for analyzing your cloud costs, forecasting future expenditures, and optimizing your cloud investments.
 

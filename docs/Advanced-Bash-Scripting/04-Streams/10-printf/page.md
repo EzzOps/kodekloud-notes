@@ -24,7 +24,7 @@ Hello, printf!
 
 > **lightbulb** Because `printf` is external, the shell forks a new process to execute it. Despite this overhead, `printf` offers richer formatting capabilities and consistent behavior across different shells.
 
-![The image shows a diagram related to the "printf" function, highlighting its capabilities such as formatting text in a specific way, left-aligning, and right-aligning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868659/notes-assets/images/Advanced-Bash-Scripting-printf/printf-function-formatting-diagram.jpg)
+![The image shows a diagram related to the "printf" function, highlighting its capabilities such as formatting text in a specific way, left-aligning, and right-aligning.](https://kodekloud.com/kk-media/image/upload/v1752868659/notes-assets/images/Advanced-Bash-Scripting-printf/printf-function-formatting-diagram.jpg)
 
 ## Format Specifiers
 
@@ -60,7 +60,7 @@ Welcome to the Advanced Shell Scripting
 Name: Alice | Age: 28 | Weight: 65.2 kg
 ```
 
-![The image shows a dark background with four dotted boxes labeled "Floating numbers," "Width for integers," "Alignment," and "...", under the title "printf."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868660/notes-assets/images/Advanced-Bash-Scripting-printf/printf-floating-numbers-boxes.jpg)
+![The image shows a dark background with four dotted boxes labeled "Floating numbers," "Width for integers," "Alignment," and "...", under the title "printf."](https://kodekloud.com/kk-media/image/upload/v1752868660/notes-assets/images/Advanced-Bash-Scripting-printf/printf-floating-numbers-boxes.jpg)
 
 ## Escape Sequences and Portability
 

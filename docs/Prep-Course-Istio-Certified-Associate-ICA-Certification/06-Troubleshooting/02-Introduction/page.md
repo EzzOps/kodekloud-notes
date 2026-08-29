@@ -96,9 +96,7 @@ kubectl exec -n charlie curl -- curl helloworld.alpha.svc.cluster.local:5000/hel
 # Hello version: v1, instance: helloworld-v1-...
 ```
 
-<Callout icon="lightbulb">
-  Always verify both that the namespace has the `istio-injection=enabled` label and that pods were recreated after labeling. Labeling a namespace does not retroactively inject sidecars into existing pods.
-</Callout>
+> **lightbulb** Always verify both that the namespace has the `istio-injection=enabled` label and that pods were recreated after labeling. Labeling a namespace does not retroactively inject sidecars into existing pods.
 
 ***
 
@@ -369,15 +367,11 @@ Notes and exam tips
 * Common misconfiguration patterns: selector typos, wrong hostnames, incorrect namespaces, and wrong ports.
 * For exams: apply the correct resource changes where necessary — partial corrections may still earn partial credit; avoid leaving answers blank.
 
-<Callout icon="lightbulb">
-  When editing resources: after changing a namespace label or Deployment annotation related to sidecar injection, you must recreate the pods to get the sidecar injected. Labeling alone doesn't modify existing pods.
-</Callout>
+> **lightbulb** When editing resources: after changing a namespace label or Deployment annotation related to sidecar injection, you must recreate the pods to get the sidecar injected. Labeling alone doesn't modify existing pods.
 
 This completes the common troubleshooting scenarios covered in this lesson/article.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/3b1a1d7c-b04a-4a3d-bf30-65da7d5460c3/lesson/23dac211-f39b-4747-a399-fd8b8f686098" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/3b1a1d7c-b04a-4a3d-bf30-65da7d5460c3/lesson/23dac211-f39b-4747-a399-fd8b8f686098)
 
 
 # Introduction
@@ -395,9 +389,7 @@ We'll finish with concise personal tips and tricks to help you maximize your cha
 
 Short and focused — let’s bring this home.
 
-<Callout icon="lightbulb">
-  This lesson prioritizes exam-relevant troubleshooting patterns for Istio. Focus on recurring misconfigurations, expected debugging commands, and how to interpret common error messages — these are high-value skills for the ICA.
-</Callout>
+> **lightbulb** This lesson prioritizes exam-relevant troubleshooting patterns for Istio. Focus on recurring misconfigurations, expected debugging commands, and how to interpret common error messages — these are high-value skills for the ICA.
 
 ## What this lesson covers
 
@@ -433,9 +425,7 @@ Short and focused — let’s bring this home.
 * `istioctl proxy-config routes <pod> --name <listener>` — inspect route configuration.
 * `istioctl analyze` — automatically detect common configuration issues.
 
-<Callout icon="lightbulb">
-  Tip: Learn a small set of `istioctl` and `kubectl` commands well. During the exam, efficient use of a few reliable commands saves time and reduces guesswork.
-</Callout>
+> **lightbulb** Tip: Learn a small set of `istioctl` and `kubectl` commands well. During the exam, efficient use of a few reliable commands saves time and reduces guesswork.
 
 ## Links and references
 
@@ -445,6 +435,4 @@ Short and focused — let’s bring this home.
 
 Good luck — this module is meant to be concise and actionable. Use the checklist and commands above during practice sessions so they become second nature for exam day.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/3b1a1d7c-b04a-4a3d-bf30-65da7d5460c3/lesson/d48654d1-e167-4342-9cc2-958f319132f9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/3b1a1d7c-b04a-4a3d-bf30-65da7d5460c3/lesson/d48654d1-e167-4342-9cc2-958f319132f9)

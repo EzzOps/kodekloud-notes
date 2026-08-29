@@ -15,9 +15,7 @@ Key arguments supported by the `variable` block
 * `nullable` — Controls whether `null` is an allowed value.
 * `ephemeral` — Not a Terraform core attribute. For short‑lived or run‑only secrets, prefer passing values via the CLI (`-var`), environment variables, a secrets manager, or using [Terraform Cloud/Enterprise](https://www.terraform.io/cloud) run‑only variables or other secret management integrations to avoid persisting secrets in state.
 
-<Callout icon="lightbulb">
-  Use `sensitive = true` together with secure state backends (for example, encrypted [remote state](https://www.terraform.io/language/state/remote)) when handling secrets. `sensitive` masks output but does not prevent values from being stored in state.
-</Callout>
+> **lightbulb** Use `sensitive = true` together with secure state backends (for example, encrypted [remote state](https://www.terraform.io/language/state/remote)) when handling secrets. `sensitive` masks output but does not prevent values from being stored in state.
 
 Arguments quick reference
 
@@ -209,9 +207,7 @@ Links and references
 * [Terraform Variables — Official Documentation](https://www.terraform.io/language/values/variables)
 * [Terraform State — Remote Backends](https://www.terraform.io/language/state/remote)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/6909fa70-4ccc-40c3-a918-1188673d8985/lesson/a9827670-df89-4638-9ee0-7063fc36abc1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/6909fa70-4ccc-40c3-a918-1188673d8985/lesson/a9827670-df89-4638-9ee0-7063fc36abc1)
 
 
 # Variable Datatypes
@@ -251,9 +247,7 @@ For additional reading, see the Terraform docs on input variables: [https://www.
 * tuple: Useful for fixed-position data such as `[ "log", 30 ]` where positions convey meaning.
 * any: Avoid in production code; it defeats type checking and can hide configuration errors.
 
-<Callout icon="lightbulb">
-  Prefer specific types (string, number, bool, list, map, object) over `any` whenever possible. Strong typing enables Terraform to validate inputs and catch errors early.
-</Callout>
+> **lightbulb** Prefer specific types (string, number, bool, list, map, object) over `any` whenever possible. Strong typing enables Terraform to validate inputs and catch errors early.
 
 The following diagram shows a concrete example of variable declarations for a storage account and how those variables are intended to be consumed by resources.
 

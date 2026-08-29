@@ -8,7 +8,7 @@ In this article, we explore when and how to use Azure Logic Apps to implement ev
 
 To illustrate the differences between these two services, consider the following flowchart:
 
-![The image is a flowchart from KodeKloud explaining when to use Azure Logic Apps, with examples of tasks like forwarding emails, analyzing tweets, and posting messages to Microsoft Teams.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866863/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-logic-apps-flowchart-examples.jpg)
+![The image is a flowchart from KodeKloud explaining when to use Azure Logic Apps, with examples of tasks like forwarding emails, analyzing tweets, and posting messages to Microsoft Teams.](https://kodekloud.com/kk-media/image/upload/v1752866863/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-logic-apps-flowchart-examples.jpg)
 
 Logic Apps works in a manner similar to the Shortcuts App on your iPhone or iPad, where you can easily build workflows through a series of customizable steps. Although minimal coding might be needed (for tasks such as string manipulation), most of the process leverages connectors that integrate with services like OneDrive, Salesforce, Google Drive, Gmail, and many more. If needed, custom connectors can be developed using REST APIs.
 
@@ -27,7 +27,7 @@ Let's compare the two Azure services at a high level:
 * **Azure Functions:** Employs a code-first strategy, enabling custom workflows using languages like PowerShell, .NET, or Python.
 * **Azure Logic Apps:** Uses a designer-first strategy with a visual interface (Logic Apps Designer) and pre-built actions, reducing the need for manual coding.
 
-![The image is a comparison between Azure Functions and Azure Logic Apps, highlighting a code-first approach for Azure Functions and a designer-first approach for Azure Logic Apps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866865/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-functions-logic-apps-comparison.jpg)
+![The image is a comparison between Azure Functions and Azure Logic Apps, highlighting a code-first approach for Azure Functions and a designer-first approach for Azure Logic Apps.](https://kodekloud.com/kk-media/image/upload/v1752866865/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-functions-logic-apps-comparison.jpg)
 
 For workflows that demand complex custom code, Azure Functions may be a better fit. However, when looking for a low-code solution with extensive integration capabilities—provided that the external applications support open API specifications—Logic Apps is often the preferred choice.
 
@@ -44,24 +44,24 @@ Follow this step-by-step example to create a business workflow using Azure Logic
 5. Enter a name (for example, "Linda Teams Workflow") and select a region (such as "East US").
 6. Create the Logic App.
 
-![The image shows a Microsoft Azure portal interface for creating a Logic App, with fields for project and instance details, and options for plan type and zone redundancy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866866/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-portal-logic-app-creation.jpg)
+![The image shows a Microsoft Azure portal interface for creating a Logic App, with fields for project and instance details, and options for plan type and zone redundancy.](https://kodekloud.com/kk-media/image/upload/v1752866866/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-portal-logic-app-creation.jpg)
 
 Once the Logic App is created, click "Go to resource" to open the Logic Apps Designer, where you will see a list of available triggers.
 
-![The image shows the Microsoft Azure Logic Apps Designer interface, featuring a video introduction and options to start with common triggers for creating workflows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866868/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-logic-apps-designer-interface.jpg)
+![The image shows the Microsoft Azure Logic Apps Designer interface, featuring a video introduction and options to start with common triggers for creating workflows.](https://kodekloud.com/kk-media/image/upload/v1752866868/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-logic-apps-designer-interface.jpg)
 
 ### Step 2. Configure the Email Trigger
 
 Since the workflow initiates with an email from a specific sender containing "INV" in the subject, select the **Outlook 365** trigger ("When a new email arrives").
 
-![The image shows the Microsoft Azure Logic Apps Designer interface, displaying a list of triggers related to Office 365 Outlook, such as "When a new email arrives."](../../../../images/kodekloud.com/kk-media/image/upload/v1752866869/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-logic-apps-designer-outlook-triggers.jpg)
+![The image shows the Microsoft Azure Logic Apps Designer interface, displaying a list of triggers related to Office 365 Outlook, such as "When a new email arrives."](https://kodekloud.com/kk-media/image/upload/v1752866869/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-logic-apps-designer-outlook-triggers.jpg)
 
 Steps to configure:
 
 1. Connect the Outlook 365 connector using Linda’s account.
 2. Set up the trigger with filters such as the "Inbox" folder, importance level, and a subject filter for "INV."
 
-![The image shows the Microsoft Azure Logic Apps Designer interface, specifically a configuration screen for setting up a trigger for when a new email arrives, with options to specify parameters like folder, importance, and attachments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866871/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-logic-apps-email-trigger.jpg)
+![The image shows the Microsoft Azure Logic Apps Designer interface, specifically a configuration screen for setting up a trigger for when a new email arrives, with options to specify parameters like folder, importance, and attachments.](https://kodekloud.com/kk-media/image/upload/v1752866871/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-logic-apps-email-trigger.jpg)
 
 ### Step 3. Setting Up the Microsoft Teams Action
 
@@ -71,7 +71,7 @@ After the email trigger, add an action to send a message in Microsoft Teams:
 2. Connect using Linda’s account.
 3. Choose the "Post a message" action (or similar) to display a notification that includes dynamic content from the email, such as the invoice number from the subject.
 
-![The image shows the Microsoft Azure Logic Apps Designer interface, specifically displaying options for Microsoft Teams actions and triggers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866872/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-logic-apps-teams-interface.jpg)
+![The image shows the Microsoft Azure Logic Apps Designer interface, specifically displaying options for Microsoft Teams actions and triggers.](https://kodekloud.com/kk-media/image/upload/v1752866872/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-logic-apps-teams-interface.jpg)
 
 Ensure the message parameters include dynamic content (e.g., headline and body) that automatically integrates the invoice details from the email trigger.
 
@@ -85,12 +85,12 @@ In order to verify whether the invoice was processed (e.g., a response of "compl
      * Use the Outlook 365 action "Send an email" to notify Rithin while cc’ing Linda.
      * Include dynamic content, such as the confirmation number extracted from the Teams response.
 
-![The image shows the Microsoft Azure Logic Apps Designer interface, where an email automation workflow is being configured. It includes settings for sending an email with dynamic content based on certain conditions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866874/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-logic-apps-email-workflow-2.jpg)
+![The image shows the Microsoft Azure Logic Apps Designer interface, where an email automation workflow is being configured. It includes settings for sending an email with dynamic content based on certain conditions.](https://kodekloud.com/kk-media/image/upload/v1752866874/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-logic-apps-email-workflow-2.jpg)
 
 * **If the condition is false (response equals "pending"):**
   * Terminate the workflow, optionally logging an error message like "User did not complete" with an error code (e.g., 500).
 
-![The image shows a Microsoft Azure Logic Apps Designer interface, where a workflow is being set up to trigger actions when a new email arrives, including posting options to a user via a bot.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866875/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-logic-apps-email-workflow.jpg)
+![The image shows a Microsoft Azure Logic Apps Designer interface, where a workflow is being set up to trigger actions when a new email arrives, including posting options to a user via a bot.](https://kodekloud.com/kk-media/image/upload/v1752866875/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-logic-apps-email-workflow.jpg)
 
 After setting up the conditional logic and corresponding actions, save your Logic App.
 
@@ -136,15 +136,15 @@ And a sample payload for the email trigger:
 
 After Linda receives the email, she will see a notification on Microsoft Teams:
 
-![The image shows a Microsoft Teams chat window with a Power Automate card displaying a pending invoice notification. There are options to mark the invoice as "Completed" or "Pending," and a comment section with a submit button.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866876/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/microsoft-teams-invoice-notification.jpg)
+![The image shows a Microsoft Teams chat window with a Power Automate card displaying a pending invoice notification. There are options to mark the invoice as "Completed" or "Pending," and a comment section with a submit button.](https://kodekloud.com/kk-media/image/upload/v1752866876/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/microsoft-teams-invoice-notification.jpg)
 
 Once Linda responds, Rithin will receive an email containing the invoice details and confirmation number. The dynamic content populated from earlier steps ensures a seamless, low-code integration process.
 
-![The image shows the Microsoft Azure Logic Apps Designer interface with a workflow that triggers on a new email, posts options to a user, and includes conditional logic for sending an email or terminating the process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866878/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-logic-apps-workflow-designer.jpg)
+![The image shows the Microsoft Azure Logic Apps Designer interface with a workflow that triggers on a new email, posts options to a user, and includes conditional logic for sending an email or terminating the process.](https://kodekloud.com/kk-media/image/upload/v1752866878/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-logic-apps-workflow-designer.jpg)
 
 Finally, check the run status in the Logic Apps interface. A successful run displays a "Succeeded" status along with step-by-step details, which can help troubleshoot if any issues arise.
 
-![The image shows a Microsoft Azure Logic App run interface, displaying a workflow with steps for handling emails, including conditions and actions like sending an email or terminating the process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866880/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-logic-app-workflow-email.jpg)
+![The image shows a Microsoft Azure Logic App run interface, displaying a workflow with steps for handling emails, including conditions and actions like sending an email or terminating the process.](https://kodekloud.com/kk-media/image/upload/v1752866880/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Logic-Apps/azure-logic-app-workflow-email.jpg)
 
 ## Conclusion
 

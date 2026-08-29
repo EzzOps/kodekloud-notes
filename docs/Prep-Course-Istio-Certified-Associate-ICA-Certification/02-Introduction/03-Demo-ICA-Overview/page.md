@@ -28,9 +28,7 @@ Note: If you earned a certification under the older rules, it may still carry th
 
 The ICA is proctored remotely through PSI. During the exam you will be monitored via webcam, microphone, and screen sharing. Expect to show your surroundings and keep audio/video enabled for the entire session.
 
-<Callout icon="warning">
-  Remote proctoring requires your camera and microphone to remain on. You may be asked to show your workspace, and certain behaviors (e.g., covering your mouth, looking away frequently, or having another person present) can cause interruptions or disqualification. Review PSI's system requirements before your exam.
-</Callout>
+> **warning** Remote proctoring requires your camera and microphone to remain on. You may be asked to show your workspace, and certain behaviors (e.g., covering your mouth, looking away frequently, or having another person present) can cause interruptions or disqualification. Review PSI's system requirements before your exam.
 
 <Frame>
   <img alt="The image shows a webpage detailing information about how exams are proctored and the system requirements for taking an exam, including notes on remote proctoring through video, audio, and screen sharing." />
@@ -45,9 +43,7 @@ Recommended resources:
 
 The exam is open-book: you can use Istio's official documentation during the test. That makes familiarity with the docs and fast navigation essential.
 
-<Callout icon="lightbulb">
-  Being able to quickly locate documentation pages and configuration references is as important as hands-on practice. Practice searching the Istio docs for APIs such as VirtualService, DestinationRule, Gateway, and Authentication policies so you can look up details during the exam.
-</Callout>
+> **lightbulb** Being able to quickly locate documentation pages and configuration references is as important as hands-on practice. Practice searching the Istio docs for APIs such as VirtualService, DestinationRule, Gateway, and Authentication policies so you can look up details during the exam.
 
 <Frame>
   <img alt="The image shows a webpage from Istio's documentation site with navigation links on the left and various documentation categories and resources displayed on the right." />
@@ -128,6 +124,4 @@ These changes make the exam more focused and, for many candidates, easier to com
 
 If you want, I can provide a focused study plan, sample hands-on tasks, or a practice checklist tailored to the ICA 1.26 objectives. Which would help you most right now?
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-certified-associate/module/da4579eb-7769-4ab9-a0e8-b81f70a12978/lesson/86992247-ae84-4fc0-8081-2db5f994f998" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-certified-associate/module/da4579eb-7769-4ab9-a0e8-b81f70a12978/lesson/86992247-ae84-4fc0-8081-2db5f994f998)

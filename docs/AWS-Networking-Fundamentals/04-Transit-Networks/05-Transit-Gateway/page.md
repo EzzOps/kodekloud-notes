@@ -64,7 +64,7 @@ When you attach a VPC to a Transit Gateway, you specify one subnet in each Avail
 
 You can terminate all VPN and Direct Connect circuits on the Transit Gateway, reducing tunnel count and improving bandwidth utilization.
 
-![The image illustrates an AWS Transit Gateway setup, showing connections between a corporate data center and multiple VPCs, with notes on its function as a routing device.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863423/notes-assets/images/AWS-Networking-Fundamentals-Transit-Gateway/aws-transit-gateway-setup-diagram.jpg)
+![The image illustrates an AWS Transit Gateway setup, showing connections between a corporate data center and multiple VPCs, with notes on its function as a routing device.](https://kodekloud.com/kk-media/image/upload/v1752863423/notes-assets/images/AWS-Networking-Fundamentals-Transit-Gateway/aws-transit-gateway-setup-diagram.jpg)
 
 * **VPN Consolidation**: One VPN tunnel to TGW replaces N tunnels to N VPCs.
 * **Direct Connect**: Attach a DX gateway to TGW for high throughput and low latency.
@@ -75,7 +75,7 @@ You can terminate all VPN and Direct Connect circuits on the Transit Gateway, re
 
 Use Transit Gateway peering to connect hubs across regions or accounts:
 
-![The image illustrates a diagram of AWS Transit Gateway peerings between two regions, each containing an AWS Transit Gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863424/notes-assets/images/AWS-Networking-Fundamentals-Transit-Gateway/aws-transit-gateway-peerings-diagram.jpg)
+![The image illustrates a diagram of AWS Transit Gateway peerings between two regions, each containing an AWS Transit Gateway.](https://kodekloud.com/kk-media/image/upload/v1752863424/notes-assets/images/AWS-Networking-Fundamentals-Transit-Gateway/aws-transit-gateway-peerings-diagram.jpg)
 
 | Peering Type  | Description                               |
 | ------------- | ----------------------------------------- |
@@ -86,7 +86,7 @@ Use Transit Gateway peering to connect hubs across regions or accounts:
 
 ## Key Features and Benefits
 
-![The image is a summary slide about Transit Gateway features, highlighting networking simplification, transitive routing, subnet specification, and peering capabilities. It includes four numbered points with brief descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863425/notes-assets/images/AWS-Networking-Fundamentals-Transit-Gateway/transit-gateway-features-summary-slide.jpg)
+![The image is a summary slide about Transit Gateway features, highlighting networking simplification, transitive routing, subnet specification, and peering capabilities. It includes four numbered points with brief descriptions.](https://kodekloud.com/kk-media/image/upload/v1752863425/notes-assets/images/AWS-Networking-Fundamentals-Transit-Gateway/transit-gateway-features-summary-slide.jpg)
 
 | Feature              | Benefit                                                          |
 | -------------------- | ---------------------------------------------------------------- |

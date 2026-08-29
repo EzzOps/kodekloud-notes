@@ -20,23 +20,23 @@ Imagine you have an "orange" pod that must be accessible to a "blue" pod. Instea
 
 By default, when a service is created, it is accessible to all pods in the cluster, regardless of the node they run on. This default service type, called ClusterIP, is ideal for applications meant strictly for internal access. For example, if your orange pod hosts a database, a ClusterIP service ensures internal connectivity.
 
-![The image illustrates a ClusterIP setup with three nodes, each having unique IP addresses and interconnected services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869866/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Networking/frame_110.jpg)
+![The image illustrates a ClusterIP setup with three nodes, each having unique IP addresses and interconnected services.](https://kodekloud.com/kk-media/image/upload/v1752869866/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Networking/frame_110.jpg)
 
 ### NodePort Services
 
 When you need a service to be accessible from outside the cluster, such as when a purple pod hosts a web application, you use a NodePort service. This service still receives an internal cluster IP for intra-cluster communication, but it also exposes the application on a specific port on every node. This allows external users or applications to reach the service without direct access to individual pod IPs.
 
-![The image illustrates a NodePort configuration with three nodes, each having unique IP addresses and ports, showing network traffic flow between them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869867/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Networking/frame_140.jpg)
+![The image illustrates a NodePort configuration with three nodes, each having unique IP addresses and ports, showing network traffic flow between them.](https://kodekloud.com/kk-media/image/upload/v1752869867/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Networking/frame_140.jpg)
 
 ## How Kubernetes Manages Service Networking
 
 Let’s start with a clean slate. Picture a three-node Kubernetes cluster that has no pods or services deployed yet. Each node runs a Kubelet process, responsible for pod creation by communicating with the Kube API Server and invoking the CNI plugin to configure networking. In parallel, every node also runs a Kube Proxy, which monitors cluster changes via the API Server and sets up forwarding rules whenever a new service is created.
 
-![The image illustrates a Kubernetes cluster with three nodes, each running kubelet and kube-proxy, connected to a kube-apiserver. Node1 hosts a pod with IP 10.244.1.2.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869868/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Networking/frame_210.jpg)
+![The image illustrates a Kubernetes cluster with three nodes, each running kubelet and kube-proxy, connected to a kube-apiserver. Node1 hosts a pod with IP 10.244.1.2.](https://kodekloud.com/kk-media/image/upload/v1752869868/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Networking/frame_210.jpg)
 
 Unlike pods that have their dedicated network interfaces, services are virtual constructs spanning the entire cluster. When you create a service object, Kubernetes automatically assigns it an IP address from a predefined range (set via the Kube API Server’s --service-cluster-ip-range option). The kube-proxy on each node then configures the appropriate forwarding rules so that any traffic targeted at the service's IP and port is correctly routed to the backend pod.
 
-![The image illustrates a Kubernetes network setup with kubelet and kube-proxy on three nodes, showing IP addresses and forwarding paths.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869869/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Networking/frame_280.jpg)
+![The image illustrates a Kubernetes network setup with kubelet and kube-proxy on three nodes, showing IP addresses and forwarding paths.](https://kodekloud.com/kk-media/image/upload/v1752869869/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Networking/frame_280.jpg)
 
 Whenever a pod sends traffic to a service IP, the kube-proxy rules step in to forward that traffic to the chosen backend pod. These rules are dynamically updated as services are created or removed. Kube Proxy supports several proxy modes, including user space, iptables, and IPVS (with iptables being the default unless specified otherwise).
 

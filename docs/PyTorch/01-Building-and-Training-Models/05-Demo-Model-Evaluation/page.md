@@ -68,9 +68,7 @@ activation_relu_example = nn.ReLU()(output_linear_example)
 print("Output after ReLU:", activation_relu_example)
 ```
 
-<Callout icon="lightbulb">
-  The ReLU function is used to prevent the network from learning only linear relationships, which is essential for handling complex data patterns.
-</Callout>
+> **lightbulb** The ReLU function is used to prevent the network from learning only linear relationships, which is essential for handling complex data patterns.
 
 ***
 
@@ -168,9 +166,7 @@ These dataloaders manage the batching of data and feed it to the model during bo
 
 Below is an example that illustrates how to set up an image classification neural network. This example uses a simple structure similar to our previous model. In real scenarios, convolutional networks are more appropriate for image data.
 
-<Callout icon="lightbulb">
-  For demonstration, we will reuse our `SimpleNeuralNetwork` class. In practice, you would define a convolutional architecture for image classification tasks.
-</Callout>
+> **lightbulb** For demonstration, we will reuse our `SimpleNeuralNetwork` class. In practice, you would define a convolutional architecture for image classification tasks.
 
 To set up your device (CPU or GPU) and instantiate the model:
 
@@ -264,11 +260,9 @@ For more information on neural networks and model training, consider exploring t
 * [Deep Learning with PyTorch](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html)
 * [FashionMNIST Dataset](https://github.com/zalandoresearch/fashion-mnist)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/638a0372-15c1-4a36-a17e-8a29e4914f08" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/638a0372-15c1-4a36-a17e-8a29e4914f08)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/8462ddce-ac18-4e06-b701-2d315b1bdc77" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/8462ddce-ac18-4e06-b701-2d315b1bdc77)
 
 
 # Demo Model Evaluation

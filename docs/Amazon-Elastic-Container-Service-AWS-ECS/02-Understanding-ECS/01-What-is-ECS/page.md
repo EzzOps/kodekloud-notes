@@ -15,7 +15,7 @@ A container orchestrator manages the lifecycle of containers by performing key f
 * Monitoring container health and replacing or restarting containers if they crash.
 * Distributing and load balancing applications across multiple servers.
 
-![The image explains that ECS is a managed container orchestrator, comparing it with Swarm, Kubernetes, and AWS ECS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869156/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-What-is-ECS/ecs-managed-container-orchestrator-comparison.jpg)
+![The image explains that ECS is a managed container orchestrator, comparing it with Swarm, Kubernetes, and AWS ECS.](https://kodekloud.com/kk-media/image/upload/v1752869156/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-What-is-ECS/ecs-managed-container-orchestrator-comparison.jpg)
 
 > **lightbulb** Using a single server environment with tools like Docker or Docker Compose may work during development, but in a production setting, it creates a single point of failure.
 
@@ -25,7 +25,7 @@ Deploying an application on one server only risks downtime if that server fails.
 
 Another significant benefit is auto scaling. Imagine a scenario where your small application experiences a sudden spike in traffic. ECS automatically provisions additional container instances to handle the increased load. Once the demand subsides, it scales down the resources to optimize costs.
 
-![The image lists reasons for using orchestrators, including managing container lifecycles, deploying and load-balancing applications, autoscaling, and rolling out changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869157/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-What-is-ECS/orchestrators-reasons-container-management.jpg)
+![The image lists reasons for using orchestrators, including managing container lifecycles, deploying and load-balancing applications, autoscaling, and rolling out changes.](https://kodekloud.com/kk-media/image/upload/v1752869157/notes-assets/images/Amazon-Elastic-Container-Service-AWS-ECS-What-is-ECS/orchestrators-reasons-container-management.jpg)
 
 ## Seamless Application Updates
 

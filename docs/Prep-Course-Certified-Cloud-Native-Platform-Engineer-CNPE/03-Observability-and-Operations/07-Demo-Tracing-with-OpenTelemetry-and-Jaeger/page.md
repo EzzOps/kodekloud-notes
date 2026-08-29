@@ -76,13 +76,11 @@ Click Save & Test. On success Grafana will show a green confirmation that it was
   <img alt="The image shows a Grafana data source configuration screen for Prometheus, with various settings toggles and input fields for performance and connection parameters. There's a notification indicating successful querying of the Prometheus API." />
 </Frame>
 
-<Callout icon="lightbulb">
-  If Save & Test fails, verify the following:
+> **lightbulb** If Save & Test fails, verify the following:
 
   * The service DNS and port are correct: `http://prometheus-operated.monitoring.svc.cluster.local:9090`.
   * Prometheus pods are running in the `monitoring` namespace: `kubectl get pods -n monitoring`.
   * NetworkPolicies, firewall rules, or cluster network ACLs are not preventing in-cluster requests from Grafana to Prometheus.
-</Callout>
 
 Next steps
 
@@ -96,9 +94,7 @@ Links and references
 * Prometheus documentation: [https://prometheus.io/docs/](https://prometheus.io/docs/)
 * Kubernetes DNS and Services: [https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/](https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/b380cd38-72e3-4794-8486-ab7f52739839" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/b380cd38-72e3-4794-8486-ab7f52739839)
 
 
 # Demo Tracing with OpenTelemetry and Jaeger

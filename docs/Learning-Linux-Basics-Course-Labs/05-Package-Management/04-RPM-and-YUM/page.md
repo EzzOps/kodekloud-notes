@@ -46,9 +46,7 @@ RPM is the package management system for Red Hat Enterprise Linux, CentOS, Fedor
   rpm -Vf <path to file>
   ```
 
-<Callout icon="lightbulb">
-  Verification compares the current file metadata with the original data, ensuring the package's integrity and trustworthiness.
-</Callout>
+> **lightbulb** Verification compares the current file metadata with the original data, ensuring the package's integrity and trustworthiness.
 
 One important limitation of RPM is that it does not automatically resolve package dependencies. This shortcoming is addressed by a higher-level package manager known as YUM.
 
@@ -62,9 +60,7 @@ Repository configurations are stored in `.repo` files located in the `/etc/yum.r
 
 In cases where the official repository does not offer the latest software version or the required package, you can add a third-party repository. For instance, by creating a repository file for NGINX, you can install its latest version.
 
-<Frame>
-  ![The image illustrates the YUM Package Manager process, showing software repositories, configuration files, and the RPM Package Manager interaction with local or remote sources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881135/notes-assets/images/Learning-Linux-Basics-Course-Labs-RPM-and-YUM/frame_300.jpg)
-</Frame>
+![The image illustrates the YUM Package Manager process, showing software repositories, configuration files, and the RPM Package Manager interaction with local or remote sources.](https://kodekloud.com/kk-media/image/upload/v1752881135/notes-assets/images/Learning-Linux-Basics-Course-Labs-RPM-and-YUM/frame_300.jpg)
 
 ### YUM Installation Process
 
@@ -133,9 +129,7 @@ Total download size: 64 M
 Is this ok [y/d/N]:
 ```
 
-<Callout icon="triangle-alert">
-  Always review the transaction summary before confirming an update or installation to avoid conflicts or unintended changes.
-</Callout>
+> **triangle-alert** Always review the transaction summary before confirming an update or installation to avoid conflicts or unintended changes.
 
 ## Conclusion
 
@@ -148,8 +142,6 @@ For more in-depth information, consider exploring:
 
 By understanding both tools and their interactions, you can effectively manage and maintain software packages on your system.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/7ced7d44-760f-47a8-a9bc-69971bb0ca17/lesson/a1706761-19b2-42f6-b855-4268ba555ca1" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/7ced7d44-760f-47a8-a9bc-69971bb0ca17/lesson/a1706761-19b2-42f6-b855-4268ba555ca1)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/7ced7d44-760f-47a8-a9bc-69971bb0ca17/lesson/6e3df3d0-2aa8-445e-b983-b373b2dc1a1c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/7ced7d44-760f-47a8-a9bc-69971bb0ca17/lesson/6e3df3d0-2aa8-445e-b983-b373b2dc1a1c)

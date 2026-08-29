@@ -32,7 +32,7 @@ esac
 
 Loops are ideal for executing commands multiple times, either a fixed count or until a condition changes.
 
-![The image shows a diagram labeled "Loops" with options for "FOR LOOP," "WHILE LOOP," and "UNTIL LOOP" on the left, and a code editor with colorful lines of code on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868606/notes-assets/images/Advanced-Bash-Scripting-Scriptflow/loops-diagram-for-while-until.jpg)
+![The image shows a diagram labeled "Loops" with options for "FOR LOOP," "WHILE LOOP," and "UNTIL LOOP" on the left, and a code editor with colorful lines of code on the right.](https://kodekloud.com/kk-media/image/upload/v1752868606/notes-assets/images/Advanced-Bash-Scripting-Scriptflow/loops-diagram-for-while-until.jpg)
 
 Here are five versatile loop patterns:
 
@@ -80,7 +80,7 @@ Here are five versatile loop patterns:
 
 > **lightbulb** Choose `while` or `until` when waiting for a dynamic condition or external event.
 
-![The image contains a list of programming tips related to loops, with checkmarks next to each point. It discusses when to use "while" and "for" loops in different scenarios.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868607/notes-assets/images/Advanced-Bash-Scripting-Scriptflow/programming-tips-loops-checklist.jpg)
+![The image contains a list of programming tips related to loops, with checkmarks next to each point. It discusses when to use "while" and "for" loops in different scenarios.](https://kodekloud.com/kk-media/image/upload/v1752868607/notes-assets/images/Advanced-Bash-Scripting-Scriptflow/programming-tips-loops-checklist.jpg)
 
 ***
 
@@ -88,7 +88,7 @@ Here are five versatile loop patterns:
 
 You can import another script or configuration file mid-execution using `source` or the shorthand `.`. This merges the external content into your current shell environment.
 
-![The image illustrates a concept called "Scriptflow," showing how source code can be sourced from other files mid-script. It includes a visual representation of a source code file and a command line interface.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868608/notes-assets/images/Advanced-Bash-Scripting-Scriptflow/scriptflow-source-code-diagram.jpg)
+![The image illustrates a concept called "Scriptflow," showing how source code can be sourced from other files mid-script. It includes a visual representation of a source code file and a command line interface.](https://kodekloud.com/kk-media/image/upload/v1752868608/notes-assets/images/Advanced-Bash-Scripting-Scriptflow/scriptflow-source-code-diagram.jpg)
 
 ### Example v1: Basic Sourcing
 
@@ -163,7 +163,7 @@ In this lesson, we’ll explore how the **shebang** (`#!`) directive affects scr
 * Demonstrate shebangs across different shells (e.g., Bash, C shell).
 * Adopt a modern, portable shebang and avoid common pitfalls.
 
-![The image is a slide titled "Shebang" with a checklist of three items related to modifying and recommending shebangs in scripts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868609/notes-assets/images/Advanced-Bash-Scripting-Shebang/shebang-checklist-modifying-recommending.jpg)
+![The image is a slide titled "Shebang" with a checklist of three items related to modifying and recommending shebangs in scripts.](https://kodekloud.com/kk-media/image/upload/v1752868609/notes-assets/images/Advanced-Bash-Scripting-Shebang/shebang-checklist-modifying-recommending.jpg)
 
 ## The Shebang Analogy
 

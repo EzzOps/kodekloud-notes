@@ -6,7 +6,7 @@ AWS X-Ray is a tracing tool that provides insights into application requests, he
 
 In modern distributed architectures, managing and troubleshooting applications can be quite challenging. With hundreds of independent services interacting simultaneously, it is often difficult to pinpoint the root cause of issues. AWS X-Ray simplifies this process by providing deep insights into each request and its entire journey through your system.
 
-![The image is a diagram illustrating the components and flow of an X-Ray system, including the X-Ray Daemon, API, SDK, and Console, with connections to application code and a web browser.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865397/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-X-Ray/xray-system-components-flow-diagram.jpg)
+![The image is a diagram illustrating the components and flow of an X-Ray system, including the X-Ray Daemon, API, SDK, and Console, with connections to application code and a web browser.](https://kodekloud.com/kk-media/image/upload/v1752865397/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-X-Ray/xray-system-components-flow-diagram.jpg)
 
 ## Overview of AWS X-Ray
 
@@ -26,7 +26,7 @@ This detailed breakdown allows you to pinpoint which segment is causing a delay.
 
 > **triangle-alert** When diagnosing performance issues, ensure you analyze the complete trace. Missing any segment in the analysis might lead to an incorrect conclusion about the root cause.
 
-![The image illustrates AWS X-Ray components, showing three traces, each containing segments and sub-segments. Each trace is color-coded differently to distinguish between them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865398/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-X-Ray/aws-xray-components-traces-diagram.jpg)
+![The image illustrates AWS X-Ray components, showing three traces, each containing segments and sub-segments. Each trace is color-coded differently to distinguish between them.](https://kodekloud.com/kk-media/image/upload/v1752865398/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-X-Ray/aws-xray-components-traces-diagram.jpg)
 
 ## Key Concepts of X-Ray
 

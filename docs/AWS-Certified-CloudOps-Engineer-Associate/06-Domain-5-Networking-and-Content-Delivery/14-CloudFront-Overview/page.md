@@ -14,7 +14,7 @@ When a user located far from a web server requests content, the physical distanc
 
 This process is illustrated in the diagram below, which shows the distribution of original source content to edge servers globally:
 
-![The image shows a world map illustrating global content delivery and edge locations, with a central web server connected to various points around the globe.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860762/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudFront-Overview/global-content-delivery-map.jpg)
+![The image shows a world map illustrating global content delivery and edge locations, with a central web server connected to various points around the globe.](https://kodekloud.com/kk-media/image/upload/v1752860762/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudFront-Overview/global-content-delivery-map.jpg)
 
 ## How CloudFront Works
 
@@ -29,7 +29,7 @@ The architecture of CloudFront consists of the following key components:
 
 The diagram below details the overall CloudFront architecture, illustrating how content flows from origin servers to edge locations and ultimately reaches the end user:
 
-![The image illustrates the architecture of Amazon CloudFront, showing the flow from origin servers to edge locations and then to the end user. It highlights how content is cached and delivered efficiently.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860763/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudFront-Overview/amazon-cloudfront-architecture-diagram.jpg)
+![The image illustrates the architecture of Amazon CloudFront, showing the flow from origin servers to edge locations and then to the end user. It highlights how content is cached and delivered efficiently.](https://kodekloud.com/kk-media/image/upload/v1752860763/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudFront-Overview/amazon-cloudfront-architecture-diagram.jpg)
 
 Regardless of whether your content is served from an S3 bucket, a load balancer, or a dedicated web server, CloudFront provides a unique URL (e.g., xyz.cloudfront.net) as the entry point, handling redirection and distribution seamlessly.
 
@@ -41,11 +41,11 @@ CloudFront offers a range of features designed to optimize performance and bolst
 
 * **Cache Invalidation:** If immediate updates are necessary, you can invalidate cached content across all edge locations. This ensures users always receive the most current data rather than outdated cached copies.
 
-![The image illustrates cache invalidation, showing how content cached at edge locations can be invalidated, with a TTL of 24 hours, and the issue of receiving outdated content.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860764/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudFront-Overview/cache-invalidation-edge-locations.jpg)
+![The image illustrates cache invalidation, showing how content cached at edge locations can be invalidated, with a TTL of 24 hours, and the issue of receiving outdated content.](https://kodekloud.com/kk-media/image/upload/v1752860764/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudFront-Overview/cache-invalidation-edge-locations.jpg)
 
 * **Origin Failover:** CloudFront supports configuring both primary and secondary origins. Under normal circumstances, content is fetched from the primary source; however, if the primary origin becomes unavailable, CloudFront automatically switches to the secondary source, enhancing availability and reliability.
 
-![The image illustrates a CloudFront setup with primary and secondary origin groups, showing EC2 as the primary origin and an S3 bucket as the secondary origin, emphasizing availability and reliability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860765/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudFront-Overview/cloudfront-setup-ec2-s3-origin.jpg)
+![The image illustrates a CloudFront setup with primary and secondary origin groups, showing EC2 as the primary origin and an S3 bucket as the secondary origin, emphasizing availability and reliability.](https://kodekloud.com/kk-media/image/upload/v1752860765/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudFront-Overview/cloudfront-setup-ec2-s3-origin.jpg)
 
 * **Request and Response Customization:** Customize HTTP headers, cookies, and query strings on the fly to tailor content delivery to your application's specific needs.
 * **Logging and Monitoring:** CloudFront integrates with CloudWatch for detailed logging and supports storing logs in S3 for further analysis. These logs include critical data such as request times, client IP addresses, response status codes, and user-agent information.
@@ -53,11 +53,11 @@ CloudFront offers a range of features designed to optimize performance and bolst
 
 The diagram below explains how CloudFront interacts with an S3 bucket. It shows the process of checking for cached content at edge locations and fetching from the origin when necessary:
 
-![The image illustrates the process of CloudFront interacting with an S3 bucket, showing how requests are handled through edge locations, checking for cache, and fetching from the origin if missed. It highlights the flow of requests and responses between users, CloudFront, and the S3 bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860766/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudFront-Overview/cloudfront-s3-bucket-interaction-diagram.jpg)
+![The image illustrates the process of CloudFront interacting with an S3 bucket, showing how requests are handled through edge locations, checking for cache, and fetching from the origin if missed. It highlights the flow of requests and responses between users, CloudFront, and the S3 bucket.](https://kodekloud.com/kk-media/image/upload/v1752860766/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudFront-Overview/cloudfront-s3-bucket-interaction-diagram.jpg)
 
 Another diagram highlights how CloudFront manages requests from a custom HTTP backend:
 
-![The image illustrates the process of a request being handled by CloudFront, which fetches and responds to data from a custom HTTP backend. It shows the flow from users to CloudFront's edge location and then to the origin server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860767/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudFront-Overview/cloudfront-request-handling-diagram.jpg)
+![The image illustrates the process of a request being handled by CloudFront, which fetches and responds to data from a custom HTTP backend. It shows the flow from users to CloudFront's edge location and then to the origin server.](https://kodekloud.com/kk-media/image/upload/v1752860767/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudFront-Overview/cloudfront-request-handling-diagram.jpg)
 
 > **lightbulb** When configuring CloudFront, consider using cache-control headers to fine-tune the TTL and optimize performance based on your specific application needs.
 
@@ -69,7 +69,7 @@ Cache busting (or invalidation) allows you to override the default TTL, ensuring
 
 The diagram below summarizes CloudFront's TTL mechanism and its role in managing cached content:
 
-![The image explains CloudFront Time to Live (TTL), detailing how cached content remains at an edge location for a set time, with a default TTL of 24 hours, and can have objects expire at specific times.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860768/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudFront-Overview/cloudfront-ttl-cached-content-diagram.jpg)
+![The image explains CloudFront Time to Live (TTL), detailing how cached content remains at an edge location for a set time, with a default TTL of 24 hours, and can have objects expire at specific times.](https://kodekloud.com/kk-media/image/upload/v1752860768/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudFront-Overview/cloudfront-ttl-cached-content-diagram.jpg)
 
 ## Conclusion
 

@@ -6,9 +6,7 @@ This article explains Kubernetes cluster roles, their management, and the distin
 
 Kubernetes roles and their bindings are typically namespaced. If you create them without specifying a namespace, they default to the "default" namespace—limiting access to resources only within that namespace. In contrast, certain resources, such as nodes and persistent volumes, are cluster-scoped and cannot be confined to any specific namespace.
 
-<Frame>
-  ![The image illustrates Kubernetes resources categorized as "Namespaced" and "Cluster Scoped," showing different components under each category.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880592/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cluster-Roles/frame_100.jpg)
-</Frame>
+![The image illustrates Kubernetes resources categorized as "Namespaced" and "Cluster Scoped," showing different components under each category.](https://kodekloud.com/kk-media/image/upload/v1752880592/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cluster-Roles/frame_100.jpg)
 
 ## Namespaced vs Cluster-Scoped Resources
 
@@ -26,9 +24,7 @@ kubectl api-resources --namespaced=true
 kubectl api-resources --namespaced=false
 ```
 
-<Callout icon="lightbulb">
-  While roles and role bindings were originally used to manage namespaced resources, Kubernetes provides cluster roles and cluster role bindings to control access to cluster-scoped resources.
-</Callout>
+> **lightbulb** While roles and role bindings were originally used to manage namespaced resources, Kubernetes provides cluster roles and cluster role bindings to control access to cluster-scoped resources.
 
 ## Managing Cluster Roles
 
@@ -70,13 +66,9 @@ roleRef:
 
 In this binding example, the `subjects` section specifies the user (in this case, `cluster-admin`), while the `roleRef` section links to the previously defined `cluster-administrator` role. To create the role binding, you would typically use a `kubectl create` command.
 
-<Callout icon="lightbulb">
-  While cluster roles and bindings are mainly used to manage cluster-scoped resources, they can also be applied to namespace-scoped resources. When used in this way, the assigned user gains access to those resources across all namespaces, unlike namespaced roles, which limit access to a specific namespace.
-</Callout>
+> **lightbulb** While cluster roles and bindings are mainly used to manage cluster-scoped resources, they can also be applied to namespace-scoped resources. When used in this way, the assigned user gains access to those resources across all namespaces, unlike namespaced roles, which limit access to a specific namespace.
 
-<Frame>
-  ![The image illustrates Kubernetes cluster roles, distinguishing between namespaced and cluster-scoped resources, including pods, nodes, roles, and clusterroles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880594/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cluster-Roles/frame_240.jpg)
-</Frame>
+![The image illustrates Kubernetes cluster roles, distinguishing between namespaced and cluster-scoped resources, including pods, nodes, roles, and clusterroles.](https://kodekloud.com/kk-media/image/upload/v1752880594/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Cluster-Roles/frame_240.jpg)
 
 ## Default Cluster Roles
 
@@ -84,6 +76,4 @@ By default, Kubernetes creates several cluster roles when the cluster is first s
 
 For additional insights on Kubernetes roles, bindings, and RBAC, refer to the [Kubernetes Documentation](https://kubernetes.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/eb973ef1-2772-448f-8373-b35c0c8874b7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/9cdabd48-a7e9-400d-b6b7-e8f2c2f7ee5f/lesson/eb973ef1-2772-448f-8373-b35c0c8874b7)

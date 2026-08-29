@@ -20,29 +20,21 @@ Attackers may use one or more of the following methods:
 | Modify Host Files            | Mounted host filesystem allows tampering with config files or startup scripts.  | Persistence and stealthy backdoors.   |
 | Host-Level Process Injection | Abusing host PID namespace or `SYS_PTRACE` to trace/inject into host processes. | Host compromise and lateral movement. |
 
-<Callout icon="triangle-alert">
-  Granting `SYS_PTRACE` or enabling host PID namespaces is highly risky. Review [Kubernetes Pod Security Standards](https://kubernetes.io/docs/concepts/security/pod-security-standards/) before enabling any privileged capabilities.
-</Callout>
+> **triangle-alert** Granting `SYS_PTRACE` or enabling host PID namespaces is highly risky. Review [Kubernetes Pod Security Standards](https://kubernetes.io/docs/concepts/security/pod-security-standards/) before enabling any privileged capabilities.
 
-<Frame>
-  ![The image is a flowchart illustrating various methods for executing processes in a running container, including importing malicious code, modifying host files, and starting processes with specific container privileges.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880819/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Malicious-Code-Execution/container-process-execution-flowchart.jpg)
-</Frame>
+![The image is a flowchart illustrating various methods for executing processes in a running container, including importing malicious code, modifying host files, and starting processes with specific container privileges.](https://kodekloud.com/kk-media/image/upload/v1752880819/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Malicious-Code-Execution/container-process-execution-flowchart.jpg)
 
 ### Post-Compromise via Kubernetes API
 
 Once inside the container, an attacker can call the [Kubernetes API](https://kubernetes.io/docs/reference/using-api/api-overview) to spawn new pods, trigger Denial of Service, or harvest credentials.
 
-<Frame>
-  ![The image is a diagram titled "Compromised Application," showing a network of interconnected components, including pods, nodes, and APIs, with some elements marked as compromised.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880820/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Malicious-Code-Execution/compromised-application-diagram.jpg)
-</Frame>
+![The image is a diagram titled "Compromised Application," showing a network of interconnected components, including pods, nodes, and APIs, with some elements marked as compromised.](https://kodekloud.com/kk-media/image/upload/v1752880820/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Malicious-Code-Execution/compromised-application-diagram.jpg)
 
 ### Poisoning the Image Repository
 
 If attackers obtain an image pull secret, they can push backdoored images to your registry. Subsequent deployments that pull these images will run malicious containers.
 
-<Frame>
-  ![The image is a diagram illustrating the concept of "Poisoning the Image Repository," showing a flow of containers and pods interacting with Docker Hub and a host system. It includes elements like Nginx, Node.js, and MySQL, highlighting potential vulnerabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880821/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Malicious-Code-Execution/poisoning-image-repository-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating the concept of "Poisoning the Image Repository," showing a flow of containers and pods interacting with Docker Hub and a host system. It includes elements like Nginx, Node.js, and MySQL, highlighting potential vulnerabilities.](https://kodekloud.com/kk-media/image/upload/v1752880821/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Malicious-Code-Execution/poisoning-image-repository-diagram.jpg)
 
 ***
 
@@ -52,21 +44,15 @@ If attackers obtain an image pull secret, they can push backdoored images to you
 
 Regularly scan container images and host OS for CVEs. Integrate vulnerability scanners like [Trivy](https://github.com/aquasecurity/trivy) in your CI/CD pipeline and apply security patches promptly.
 
-<Frame>
-  ![The image is a slide titled "Malicious Code Execution – Mitigating Risks," featuring icons for "Scanning vulnerabilities" and "Applying patches," with a note about updating servers and backend with security patches to reduce exploitation risk.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880822/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Malicious-Code-Execution/malicious-code-execution-mitigating-risks.jpg)
-</Frame>
+![The image is a slide titled "Malicious Code Execution – Mitigating Risks," featuring icons for "Scanning vulnerabilities" and "Applying patches," with a note about updating servers and backend with security patches to reduce exploitation risk.](https://kodekloud.com/kk-media/image/upload/v1752880822/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Malicious-Code-Execution/malicious-code-execution-mitigating-risks.jpg)
 
-<Callout icon="lightbulb">
-  Automate image scanning with every build. Block deployments if high-severity vulnerabilities are found.
-</Callout>
+> **lightbulb** Automate image scanning with every build. Block deployments if high-severity vulnerabilities are found.
 
 ### 2. Restrict API Server Access
 
 Enforce strong authentication and granular [RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) policies so that only trusted identities can call sensitive API endpoints.
 
-<Frame>
-  ![The image illustrates a concept of mitigating risks in malicious code execution, showing a user being blocked from accessing an API, with references to unauthorized command execution and RBAC (Role-Based Access Control).](../../../../images/kodekloud.com/kk-media/image/upload/v1752880823/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Malicious-Code-Execution/mitigating-risks-malicious-code-execution.jpg)
-</Frame>
+![The image illustrates a concept of mitigating risks in malicious code execution, showing a user being blocked from accessing an API, with references to unauthorized command execution and RBAC (Role-Based Access Control).](https://kodekloud.com/kk-media/image/upload/v1752880823/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Malicious-Code-Execution/mitigating-risks-malicious-code-execution.jpg)
 
 ### 3. Secure Image Repositories and Pull Secrets
 
@@ -131,9 +117,7 @@ spec:
 
 Periodically review RBAC roles, service account permissions, and image registry policies. Conduct penetration tests to validate your security posture.
 
-<Frame>
-  ![The image is a slide titled "Malicious Code Execution – Mitigating Risks," featuring three key points: permissions for service accounts, security of image repositories, and access controls for API servers, along with an icon for auditing and reviewing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880824/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Malicious-Code-Execution/malicious-code-execution-mitigating-risks-2.jpg)
-</Frame>
+![The image is a slide titled "Malicious Code Execution – Mitigating Risks," featuring three key points: permissions for service accounts, security of image repositories, and access controls for API servers, along with an icon for auditing and reviewing.](https://kodekloud.com/kk-media/image/upload/v1752880824/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Malicious-Code-Execution/malicious-code-execution-mitigating-risks-2.jpg)
 
 ***
 
@@ -145,9 +129,7 @@ Periodically review RBAC roles, service account permissions, and image registry 
 4. Keep containers and hosts up to date with patches.
 5. Regularly audit RBAC, service accounts, and CI/CD pipelines.
 
-<Frame>
-  ![The image is a summary slide listing five security measures for containers, including restricting API access, securing image repositories, monitoring activities, and updating applications. The slide has a gradient background with numbered points.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880826/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Malicious-Code-Execution/container-security-measures-summary.jpg)
-</Frame>
+![The image is a summary slide listing five security measures for containers, including restricting API access, securing image repositories, monitoring activities, and updating applications. The slide has a gradient background with numbered points.](https://kodekloud.com/kk-media/image/upload/v1752880826/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Malicious-Code-Execution/container-security-measures-summary.jpg)
 
 ***
 
@@ -159,6 +141,4 @@ Periodically review RBAC roles, service account permissions, and image registry 
 * [HashiCorp Vault](https://www.vaultproject.io/)
 * [Kubernetes Pod Security Standards](https://kubernetes.io/docs/concepts/security/pod-security-standards/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/6da25ade-b162-485c-b9b9-f351990e99c2/lesson/bf0751b4-47db-4be2-abf1-15d30593659f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/6da25ade-b162-485c-b9b9-f351990e99c2/lesson/bf0751b4-47db-4be2-abf1-15d30593659f)

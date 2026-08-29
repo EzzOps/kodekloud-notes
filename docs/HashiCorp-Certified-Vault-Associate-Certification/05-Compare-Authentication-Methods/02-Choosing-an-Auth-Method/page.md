@@ -14,17 +14,13 @@ You don’t have to be locked into your hosting platform’s native Auth Method.
 * **AWS workloads** can authenticate via AWS—yet AppRole or Kubernetes Auth also work.
 * **Kubernetes pods** often use Kubernetes Auth but are free to switch if integration or policy demands differ.
 
-<Callout icon="lightbulb">
-  Platform-native methods simplify integration and audit trails, but you can mix and match methods to satisfy complex requirements.
-</Callout>
+> **lightbulb** Platform-native methods simplify integration and audit trails, but you can mix and match methods to satisfy complex requirements.
 
 ## Narrowing Down by Integration Characteristics
 
 Identify keywords in your use case—such as “frequently rotated” or “existing user credentials”—to eliminate unsuitable Auth Methods quickly.
 
-<Frame>
-  ![The image is a slide titled "Choosing an Auth Method," discussing key considerations for authentication methods, including frequent rotation and removing secrets from processes, with examples of what meets or does not meet the requirements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878010/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Choosing-an-Auth-Method/choosing-auth-methods-considerations-slide.jpg)
-</Frame>
+![The image is a slide titled "Choosing an Auth Method," discussing key considerations for authentication methods, including frequent rotation and removing secrets from processes, with examples of what meets or does not meet the requirements.](https://kodekloud.com/kk-media/image/upload/v1752878010/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Choosing-an-Auth-Method/choosing-auth-methods-considerations-slide.jpg)
 
 ### 1. Frequently Rotated
 
@@ -38,9 +34,7 @@ Dynamic credentials are essential when secrets must rotate often. Avoid baking s
   • TLS Certificates\
   • AppRole
 
-<Callout icon="triangle-alert">
-  Avoid embedding Userpass, TLS certificates, or AppRole secrets directly in images or pipelines—they are static and not automatically rotated.
-</Callout>
+> **triangle-alert** Avoid embedding Userpass, TLS certificates, or AppRole secrets directly in images or pipelines—they are static and not automatically rotated.
 
 ### 2. Removing Secrets from a Process or Pipeline
 
@@ -62,9 +56,7 @@ Leverage your identity provider if you prefer human-centric logins without manag
   • Userpass\
   • AWS, Azure, GCP Auth Methods
 
-<Frame>
-  ![The image is a slide titled "Choosing an Auth Method," discussing the use of existing user credentials for authentication. It lists methods that meet requirements (OIDC, LDAP, Okta, GitHub) and those that do not (Userpass, AWS, Azure, GCP).](../../../../images/kodekloud.com/kk-media/image/upload/v1752878011/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Choosing-an-Auth-Method/choosing-auth-method-user-credentials.jpg)
-</Frame>
+![The image is a slide titled "Choosing an Auth Method," discussing the use of existing user credentials for authentication. It lists methods that meet requirements (OIDC, LDAP, Okta, GitHub) and those that do not (Userpass, AWS, Azure, GCP).](https://kodekloud.com/kk-media/image/upload/v1752878011/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Choosing-an-Auth-Method/choosing-auth-method-user-credentials.jpg)
 
 ***
 
@@ -84,6 +76,4 @@ By matching keywords—dynamic vs. static, integrated vs. standalone, identity p
 * [OIDC Auth Method](https://www.vaultproject.io/docs/auth/jwt)
 * [Kubernetes Auth Method](https://www.vaultproject.io/docs/auth/kubernetes)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/c71da459-b644-4f7a-acf2-891d1cf670a0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/c71da459-b644-4f7a-acf2-891d1cf670a0)

@@ -9,7 +9,7 @@
 * Include only relevant data: timestamps, event messages, and context.
 * Use consistent formatting to facilitate automated parsing.
 
-![The image shows a signpost with two directions: "Judiciously and succinctly" marked with a red cross, and "Quality and relevance" marked with a green check.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868575/notes-assets/images/Advanced-Bash-Scripting-Logging/signpost-judiciously-quality-relevance.jpg)
+![The image shows a signpost with two directions: "Judiciously and succinctly" marked with a red cross, and "Quality and relevance" marked with a green check.](https://kodekloud.com/kk-media/image/upload/v1752868575/notes-assets/images/Advanced-Bash-Scripting-Logging/signpost-judiciously-quality-relevance.jpg)
 
 ## Links and References
 
@@ -51,7 +51,7 @@ Before diving deeper, let’s review how Bash’s logical operators influence co
 
 Use `&&` and `||` to chain commands based on exit statuses:
 
-![The image explains the use of "OR" (||) and "AND" (&&) operators in scripting. It shows that command2 runs if the first command is unsuccessful with "OR", and if successful with "AND".](../../../../images/kodekloud.com/kk-media/image/upload/v1752868576/notes-assets/images/Advanced-Bash-Scripting-Strict-Mode/or-and-operators-scripting-explained.jpg)
+![The image explains the use of "OR" (||) and "AND" (&&) operators in scripting. It shows that command2 runs if the first command is unsuccessful with "OR", and if successful with "AND".](https://kodekloud.com/kk-media/image/upload/v1752868576/notes-assets/images/Advanced-Bash-Scripting-Strict-Mode/or-and-operators-scripting-explained.jpg)
 
 * `command1 && command2`\
   Runs `command2` only if `command1` succeeds (exit code 0).
@@ -93,7 +93,7 @@ $ echo $?
 
 Linux reserves certain exit codes for common errors:
 
-![The image shows a list of reserved exit codes used in scripting, detailing their numbers and meanings, such as "Success" for code 0 and "General error" for code 1.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868577/notes-assets/images/Advanced-Bash-Scripting-Strict-Mode/reserved-exit-codes-list.jpg)
+![The image shows a list of reserved exit codes used in scripting, detailing their numbers and meanings, such as "Success" for code 0 and "General error" for code 1.](https://kodekloud.com/kk-media/image/upload/v1752868577/notes-assets/images/Advanced-Bash-Scripting-Strict-Mode/reserved-exit-codes-list.jpg)
 
 | Exit Code | Description              |
 | --------- | ------------------------ |
@@ -143,7 +143,7 @@ $ echo $?
 0
 ```
 
-![The image illustrates a process flow in strict mode scripting, showing two commands connected by a pipe, with "Stderr" and an output display labeled "2".](../../../../images/kodekloud.com/kk-media/image/upload/v1752868578/notes-assets/images/Advanced-Bash-Scripting-Strict-Mode/strict-mode-scripting-process-flow.jpg)
+![The image illustrates a process flow in strict mode scripting, showing two commands connected by a pipe, with "Stderr" and an output display labeled "2".](https://kodekloud.com/kk-media/image/upload/v1752868578/notes-assets/images/Advanced-Bash-Scripting-Strict-Mode/strict-mode-scripting-process-flow.jpg)
 
 To catch errors anywhere in the pipeline, combine all three flags and handle failures explicitly:
 

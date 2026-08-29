@@ -3,9 +3,7 @@
 cp -r ~/template-lab-skaffold/.[!.]* ~/backstage/templates/skaffold/ || true
 ```
 
-<Callout icon="warning">
-  If your source folder contains no dotfiles (hidden files beginning with `.`), the `cp` glob may fail. The `|| true` in the command prevents the script from exiting with an error in that case.
-</Callout>
+> **warning** If your source folder contains no dotfiles (hidden files beginning with `.`), the `cp` glob may fail. The `|| true` in the command prevents the script from exiting with an error in that case.
 
 ## Course structure — what you'll learn
 
@@ -79,9 +77,7 @@ By the end of this course you will be ready to deploy and operate Backstage, bui
 
 Join our KodeKloud community to collaborate with fellow learners and get help as you practice the labs and prepare for the exam.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/aa692961-a0a1-49f4-b0c5-d3af3b5afb4b/lesson/42f973bf-4500-4f5d-b13b-24b64f62ed7f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/aa692961-a0a1-49f4-b0c5-d3af3b5afb4b/lesson/42f973bf-4500-4f5d-b13b-24b64f62ed7f)
 
 
 # Exam Overview
@@ -94,9 +90,7 @@ This lesson summarizes the Certified Backstage Associate (CBA) exam format and t
 
 The exam is proctored online and timed at 90 minutes. Questions are multiple-choice with a single correct answer. There are no hands-on or lab-based tasks — you will not be required to log into any terminals. If you pass, the certification is valid for two years.
 
-<Callout icon="lightbulb">
-  The exam is 90 minutes long, proctored online, multiple-choice (single answer), with no lab exercises. The certification remains valid for two years after passing.
-</Callout>
+> **lightbulb** The exam is 90 minutes long, proctored online, multiple-choice (single answer), with no lab exercises. The certification remains valid for two years after passing.
 
 Exam domains at a glance:
 
@@ -167,6 +161,4 @@ Links and references
 
 Focus your review on the competencies listed under each domain to prepare effectively for the exam. Good luck with your preparation!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/aa692961-a0a1-49f4-b0c5-d3af3b5afb4b/lesson/e024f866-4cb2-4435-a611-90e349547970" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/aa692961-a0a1-49f4-b0c5-d3af3b5afb4b/lesson/e024f866-4cb2-4435-a611-90e349547970)

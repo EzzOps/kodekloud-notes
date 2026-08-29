@@ -42,9 +42,7 @@ cp -r animal/* forest/
 rm *ate*
 ```
 
-<Callout icon="lightbulb">
-  In interactive shells, wrap `*` patterns in quotes (e.g., `"*.png"`) to prevent premature expansion by your shell.
-</Callout>
+> **lightbulb** In interactive shells, wrap `*` patterns in quotes (e.g., `"*.png"`) to prevent premature expansion by your shell.
 
 You can use multiple asterisks in a single pattern, at any position:
 
@@ -114,9 +112,7 @@ ls f*[0-9].txt
 # Output: file1.txt  file23.txt  fom23.txt
 ```
 
-<Callout icon="triangle-alert">
-  Be cautious when using wildcards with destructive commands like `rm`. Always double-check your pattern with `ls` before deletion.
-</Callout>
+> **triangle-alert** Be cautious when using wildcards with destructive commands like `rm`. Always double-check your pattern with `ls` before deletion.
 
 ***
 
@@ -128,9 +124,7 @@ ls f*[0-9].txt
 
 That concludes Part 1 of wildcard specifications. In the next lesson, we’ll dive deeper into escape sequences and advanced glob qualifiers.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/f6a282c3-a525-46e1-b479-9455f24b31d2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/f6a282c3-a525-46e1-b479-9455f24b31d2)
 
 
 # Perform Basic File Management Part 1
@@ -161,9 +155,7 @@ Before you begin, make sure you understand:
 * The difference between **absolute paths** and **relative paths**
 * How to navigate directories with `cd` and identify your location with `pwd`
 
-<Callout icon="lightbulb">
-  Absolute paths start at the root directory `/` while relative paths are based on your current working directory.
-</Callout>
+> **lightbulb** Absolute paths start at the root directory `/` while relative paths are based on your current working directory.
 
 ## Listing Files and Directories
 
@@ -234,9 +226,7 @@ $ cd ..                 # up one level
 $ cd documents          # down into current dir’s "documents"
 ```
 
-<Frame>
-  ![The image shows a directory structure with a command line interface on the left. The directory tree includes folders like "home," "var," and "root," with a file named "Invoice.pdf" under "aaron/Documents."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881397/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Perform-Basic-File-Management-Part-1/directory-structure-command-line-invoice.jpg)
-</Frame>
+![The image shows a directory structure with a command line interface on the left. The directory tree includes folders like "home," "var," and "root," with a file named "Invoice.pdf" under "aaron/Documents."](https://kodekloud.com/kk-media/image/upload/v1752881397/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Perform-Basic-File-Management-Part-1/directory-structure-command-line-invoice.jpg)
 
 From `/home/aaron`, these relative paths resolve to:
 
@@ -305,9 +295,7 @@ $ mv receipts/ old_receipts/
 
 ## Deleting Files and Directories
 
-<Callout icon="triangle-alert">
-  `rm -r` permanently deletes directories and their contents. Use with caution to avoid data loss.
-</Callout>
+> **triangle-alert** `rm -r` permanently deletes directories and their contents. Use with caution to avoid data loss.
 
 * Remove a file:
 
@@ -342,6 +330,4 @@ Always include `-r` when deleting directories.
 * [Linux File System Basics](https://www.tldp.org/LDP/intro-linux/html/sect_03_01.html)
 * [Bash Reference Manual](https://www.gnu.org/software/bash/manual/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/bc254632-a371-4fc5-9ad5-3d95cf332d4f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/bc254632-a371-4fc5-9ad5-3d95cf332d4f)

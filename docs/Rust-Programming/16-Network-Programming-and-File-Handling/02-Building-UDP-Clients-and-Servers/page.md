@@ -155,9 +155,7 @@ UDP server listening on 127.0.0.1:7878
 Received 22 bytes from 127.0.0.1:55740: Hello from UDP client!
 ```
 
-<Callout icon="lightbulb">
-  Keep in mind that UDP does not provide the reliability guarantees of TCP. Its lightweight and connectionless nature make it ideal for scenarios where speed is essential and occasional packet loss is acceptable.
-</Callout>
+> **lightbulb** Keep in mind that UDP does not provide the reliability guarantees of TCP. Its lightweight and connectionless nature make it ideal for scenarios where speed is essential and occasional packet loss is acceptable.
 
 ***
 
@@ -172,14 +170,10 @@ Received 22 bytes from 127.0.0.1:55740: Hello from UDP client!
 * **Error Handling:**\
   Effective error handling and message validation improve the robustness of network applications.
 
-<Frame>
-  ![The image presents key takeaways about network programming, focusing on the differences between UDP and TCP, using UDP in Rust, and handling errors and edge cases in network communication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883922/notes-assets/images/Rust-Programming-Building-UDP-Clients-and-Servers/network-programming-udp-tcp-rust.jpg)
-</Frame>
+![The image presents key takeaways about network programming, focusing on the differences between UDP and TCP, using UDP in Rust, and handling errors and edge cases in network communication.](https://kodekloud.com/kk-media/image/upload/v1752883922/notes-assets/images/Rust-Programming-Building-UDP-Clients-and-Servers/network-programming-udp-tcp-rust.jpg)
 
 By following this lesson, you now have a working example of a UDP echo server and client in Rust. Continue exploring further enhancements and additional error-handling strategies to build robust network applications.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/5b50abd7-c86a-4458-a1a3-90a7ebb3d776/lesson/c6aa3ada-fa30-4f5c-bca0-96b59b2197c7" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/5b50abd7-c86a-4458-a1a3-90a7ebb3d776/lesson/c6aa3ada-fa30-4f5c-bca0-96b59b2197c7)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/rust/module/5b50abd7-c86a-4458-a1a3-90a7ebb3d776/lesson/22906078-7772-48e2-a698-7271cc54bfaf" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/rust/module/5b50abd7-c86a-4458-a1a3-90a7ebb3d776/lesson/22906078-7772-48e2-a698-7271cc54bfaf)

@@ -33,9 +33,7 @@ vault secrets list -detailed
 # kv-v2/ kv kv_ghi789 map[version:2]   # v2
 ```
 
-<Callout icon="triangle-alert">
-  Upgrading an existing KV v1 mount to v2 is irreversible. Plan carefully before enabling versioning.
-</Callout>
+> **triangle-alert** Upgrading an existing KV v1 mount to v2 is irreversible. Plan carefully before enabling versioning.
 
 Enable versioning on an existing mount:
 
@@ -73,13 +71,9 @@ Option B: Multiple mounts per domain
 | automation/ | CI/CD & scripts         | v2      |
 | data/       | Analytics & warehousing | v2      |
 
-<Frame>
-  ![The image is a diagram illustrating a Key/Value Secrets Engine, showing how data can be organized into categories like cloud, automation, and data, with subcategories for each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878110/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-KeyValue-Secrets-Engine/key-value-secrets-engine-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating a Key/Value Secrets Engine, showing how data can be organized into categories like cloud, automation, and data, with subcategories for each.](https://kodekloud.com/kk-media/image/upload/v1752878110/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-KeyValue-Secrets-Engine/key-value-secrets-engine-diagram.jpg)
 
-<Frame>
-  ![The image illustrates a Key/Value Secrets Engine with multiple KV stores, showing a hierarchical organization of data related to cloud, data, and automation. It includes various nodes like "cloud," "data," and "automation," each branching into specific categories such as "aws," "jenkins," and "prod."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878111/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-KeyValue-Secrets-Engine/key-value-secrets-engine-hierarchy.jpg)
-</Frame>
+![The image illustrates a Key/Value Secrets Engine with multiple KV stores, showing a hierarchical organization of data related to cloud, data, and automation. It includes various nodes like "cloud," "data," and "automation," each branching into specific categories such as "aws," "jenkins," and "prod."](https://kodekloud.com/kk-media/image/upload/v1752878111/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-KeyValue-Secrets-Engine/key-value-secrets-engine-hierarchy.jpg)
 
 ### Path Example: `apps/`
 
@@ -94,9 +88,7 @@ apps/
 * Secret path: `apps/aws/prod`
 * Read: `vault kv get apps/aws/prod`
 
-<Frame>
-  ![The image illustrates a Key/Value Secrets Engine with a hierarchical path structure for storing secrets, showing paths for "prod" and "dev" environments under "apps/aws".](../../../../images/kodekloud.com/kk-media/image/upload/v1752878112/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-KeyValue-Secrets-Engine/key-value-secrets-engine-hierarchy-2.jpg)
-</Frame>
+![The image illustrates a Key/Value Secrets Engine with a hierarchical path structure for storing secrets, showing paths for "prod" and "dev" environments under "apps/aws".](https://kodekloud.com/kk-media/image/upload/v1752878112/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-KeyValue-Secrets-Engine/key-value-secrets-engine-hierarchy-2.jpg)
 
 ## KV v2 Metadata & API Prefixes
 
@@ -112,17 +104,11 @@ Mounting v2 at `cloud/` yields:
 
 The CLI abstracts these, so `vault kv get cloud/apps/aws` works without prefix.
 
-<Frame>
-  ![The image explains how KV V2 is different by adding metadata to key-value entries, supporting versioning, and introducing two prefixes for data and metadata.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878114/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-KeyValue-Secrets-Engine/kv-v2-metadata-versioning-prefixes.jpg)
-</Frame>
+![The image explains how KV V2 is different by adding metadata to key-value entries, supporting versioning, and introducing two prefixes for data and metadata.](https://kodekloud.com/kk-media/image/upload/v1752878114/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-KeyValue-Secrets-Engine/kv-v2-metadata-versioning-prefixes.jpg)
 
-<Frame>
-  ![The image explains the structure and path differences in KV V2, highlighting a hierarchy of cloud data paths and the use of a "data/" prefix to read secrets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878115/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-KeyValue-Secrets-Engine/kv-v2-structure-data-paths-diagram.jpg)
-</Frame>
+![The image explains the structure and path differences in KV V2, highlighting a hierarchy of cloud data paths and the use of a "data/" prefix to read secrets.](https://kodekloud.com/kk-media/image/upload/v1752878115/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-KeyValue-Secrets-Engine/kv-v2-structure-data-paths-diagram.jpg)
 
-<Frame>
-  ![The image explains differences in KV V2, highlighting the requirement of "data/" and "metadata/" prefixes for API and Vault policies, and notes that CLI interaction remains unchanged. It reassures with a message about upcoming examples.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878116/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-KeyValue-Secrets-Engine/kv-v2-api-metadata-prefixes-explained.jpg)
-</Frame>
+![The image explains differences in KV V2, highlighting the requirement of "data/" and "metadata/" prefixes for API and Vault policies, and notes that CLI interaction remains unchanged. It reassures with a message about upcoming examples.](https://kodekloud.com/kk-media/image/upload/v1752878116/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-KeyValue-Secrets-Engine/kv-v2-api-metadata-prefixes-explained.jpg)
 
 ## Versioning Workflow in KV v2
 
@@ -150,9 +136,7 @@ Leverage versioning for history, rollback, undelete, and destruction:
    ```
 6. New write → v4
 
-<Frame>
-  ![The image explains the versioning process in KV V2, showing steps for writing, updating, deleting, and rolling back a secret, with different versions indicated.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878118/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-KeyValue-Secrets-Engine/kv-v2-versioning-process-diagram.jpg)
-</Frame>
+![The image explains the versioning process in KV V2, showing steps for writing, updating, deleting, and rolling back a secret, with different versions indicated.](https://kodekloud.com/kk-media/image/upload/v1752878118/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-KeyValue-Secrets-Engine/kv-v2-versioning-process-diagram.jpg)
 
 ## Next Steps
 
@@ -168,9 +152,7 @@ Leverage versioning for history, rollback, undelete, and destruction:
 * [Jenkins Plugins](https://plugins.jenkins.io/)
 * [GitLab CI/CD Docs](https://docs.gitlab.com/ee/ci/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/1860f23b-0aeb-4406-8f17-c67b91cf1a3f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/1860f23b-0aeb-4406-8f17-c67b91cf1a3f)
 
 
 # Section Overview
@@ -199,6 +181,4 @@ Although the exam lists these objectives in the order above, this guide follows 
 
 Let’s get started!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/9217c679-60fb-40ac-ad9c-def62caf4b54" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/9217c679-60fb-40ac-ad9c-def62caf4b54)

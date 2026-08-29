@@ -10,7 +10,7 @@ In this lesson, we explore CloudHSM, AWS's managed hardware security module serv
 
 A hardware security module (HSM) addresses key exposure by storing all your cryptographic keys in one secure device. This dedicated module is responsible for all cryptographic operations, including encryption and decryption. When you need to encrypt or decrypt data, you simply send it to the HSM, which processes the operation while keeping the keys securely stored within the device.
 
-![The image illustrates a CloudHSM system where data is sent to the HSM for encryption and decryption, with keys securely stored on the HSM and never leaving the device.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865750/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudHSM/cloudhsm-encryption-decryption-diagram.jpg)
+![The image illustrates a CloudHSM system where data is sent to the HSM for encryption and decryption, with keys securely stored on the HSM and never leaving the device.](https://kodekloud.com/kk-media/image/upload/v1752865750/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudHSM/cloudhsm-encryption-decryption-diagram.jpg)
 
 This single point of key management minimizes the potential for key leakage, significantly enhancing the security of your cryptographic processes.
 
@@ -18,13 +18,13 @@ This single point of key management minimizes the potential for key leakage, sig
 
 CloudHSM extends the traditional HSM model by offering a managed service in the cloud. Instead of investing in and maintaining your own HSM hardware, AWS manages the infrastructure for you. This cloud-based solution allows you to focus on your applications while securely processing encryption and decryption requests.
 
-![The image is a diagram illustrating AWS CloudHSM, showing a connection between AWS Cloud and a hardware security module (HSM) with keys, highlighting that CloudHSM provides hardware security modules in the cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865751/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudHSM/aws-cloudhsm-diagram-security-keys.jpg)
+![The image is a diagram illustrating AWS CloudHSM, showing a connection between AWS Cloud and a hardware security module (HSM) with keys, highlighting that CloudHSM provides hardware security modules in the cloud.](https://kodekloud.com/kk-media/image/upload/v1752865751/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudHSM/aws-cloudhsm-diagram-security-keys.jpg)
 
 ## Scalable and Resilient HSM Clusters
 
 CloudHSM supports deployment in clusters, enabling multiple HSM modules to work in tandem. This architecture not only improves performance by positioning the HSM as close as possible to your AWS services but also enhances scalability and availability. Unlike on-premises HSMs that require external communication from AWS services, cloud-deployed HSMs process requests more quickly and reliably.
 
-![The image is a diagram illustrating the architecture of AWS CloudHSM, showing an HSM cluster within a VPC, connected to AWS Cloud, a user, and an EC2 instance with a CloudHSM client and application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865753/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudHSM/aws-cloudhsm-architecture-diagram.jpg)
+![The image is a diagram illustrating the architecture of AWS CloudHSM, showing an HSM cluster within a VPC, connected to AWS Cloud, a user, and an EC2 instance with a CloudHSM client and application.](https://kodekloud.com/kk-media/image/upload/v1752865753/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudHSM/aws-cloudhsm-architecture-diagram.jpg)
 
 ### Client Integration
 
@@ -38,7 +38,7 @@ To connect with a CloudHSM cluster, install the CloudHSM client on your EC2 inst
   * Seamless integration with multiple AWS services for robust data protection
   * Enhanced compliance capabilities with a hardware-based key management solution
 
-![The image lists four features: Dedicated Hardware Security, Full Control Over Keys, Scalability and Resilience, and Integration With AWS Services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865754/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudHSM/hardware-security-aws-integration.jpg)
+![The image lists four features: Dedicated Hardware Security, Full Control Over Keys, Scalability and Resilience, and Integration With AWS Services.](https://kodekloud.com/kk-media/image/upload/v1752865754/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CloudHSM/hardware-security-aws-integration.jpg)
 
 CloudHSM offers a compelling solution for organizations seeking a highly secure, scalable, and managed hardware security module service in the cloud. By consolidating key management and providing exclusive control over encryption keys, CloudHSM significantly reduces the risk of key exposure while enhancing overall security and compliance.
 

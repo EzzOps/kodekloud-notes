@@ -6,13 +6,13 @@ Learn to perform dry runs in Bash scripts using the no-op command to test logic 
 
 In this lesson, you’ll learn how to perform a “dry run” in your Bash or Unix shell scripts using the built-in no-op (`:`) command. A dry run lets you verify script logic and flow without modifying files or data—perfect for testing complex workflows before production.
 
-![The image shows a computer monitor with a network or blockchain icon on the left and a series of colored lines resembling code on the right, with the text "No op command" at the top.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868579/notes-assets/images/Advanced-Bash-Scripting-no-op-Commands/computer-monitor-network-icon-code.jpg)
+![The image shows a computer monitor with a network or blockchain icon on the left and a series of colored lines resembling code on the right, with the text "No op command" at the top.](https://kodekloud.com/kk-media/image/upload/v1752868579/notes-assets/images/Advanced-Bash-Scripting-no-op-Commands/computer-monitor-network-icon-code.jpg)
 
 ## What Is a Dry Run?
 
 The term “dry run” dates back to fire departments: they practice hose deployment without water, hence “dry.” In software, many tools offer a dry-run or no-op mode to preview changes safely.
 
-![The image shows two icons: a firefighter with a flame and a light bulb with a gear labeled "Wet run," under the title "No op command."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868581/notes-assets/images/Advanced-Bash-Scripting-no-op-Commands/firefighter-flame-lightbulb-gear-no-op-command.jpg)
+![The image shows two icons: a firefighter with a flame and a light bulb with a gear labeled "Wet run," under the title "No op command."](https://kodekloud.com/kk-media/image/upload/v1752868581/notes-assets/images/Advanced-Bash-Scripting-no-op-Commands/firefighter-flame-lightbulb-gear-no-op-command.jpg)
 
 ## Common Dry-Run Flags in DevOps Tools
 
@@ -54,7 +54,7 @@ else
 fi
 ```
 
-![The image describes a "No-op command" as a placeholder shell-built command with no programmed behavior, and it includes references to looping and if-else statements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868582/notes-assets/images/Advanced-Bash-Scripting-no-op-Commands/no-op-command-placeholder-loop-if-else.jpg)
+![The image describes a "No-op command" as a placeholder shell-built command with no programmed behavior, and it includes references to looping and if-else statements.](https://kodekloud.com/kk-media/image/upload/v1752868582/notes-assets/images/Advanced-Bash-Scripting-no-op-Commands/no-op-command-placeholder-loop-if-else.jpg)
 
 Because `:` is a shell builtin, it runs faster and cleaner than alternatives like `echo ""` or `true`.
 

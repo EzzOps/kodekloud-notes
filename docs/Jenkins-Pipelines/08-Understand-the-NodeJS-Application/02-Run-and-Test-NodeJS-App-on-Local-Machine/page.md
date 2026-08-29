@@ -142,12 +142,10 @@ mongoose.connect(
 // ... other app routes and server startup ...
 ```
 
-<Callout icon="lightbulb">
-  Ensure MONGO\_URI, MONGO\_USERNAME, and MONGO\_PASSWORD are provided in your
+> **lightbulb** Ensure MONGO\_URI, MONGO\_USERNAME, and MONGO\_PASSWORD are provided in your
   environment before running tests or starting the server. Without a valid
   MONGO\_URI, mongoose.connect will fail with "The `uri` parameter to `openUri()`
   must be a string, got 'undefined'".
-</Callout>
 
 ## app.controller.js — data model and API endpoints
 
@@ -374,11 +372,9 @@ To run tests locally you can:
 * Use a local MongoDB instance, or
 * Temporarily hardcode a connection string (not recommended—see warning below).
 
-<Callout icon="warning">
-  Never commit real credentials. If you must hardcode a connection string for
+> **warning** Never commit real credentials. If you must hardcode a connection string for
   local debugging, ensure it is removed before committing and never store
   production secrets in source control.
-</Callout>
 
 Example of a hardcoded connection (for demo only — do not commit):
 

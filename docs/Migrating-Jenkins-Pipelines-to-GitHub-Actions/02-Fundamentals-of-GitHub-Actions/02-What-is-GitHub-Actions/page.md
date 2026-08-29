@@ -67,9 +67,7 @@ What this example demonstrates:
 * `runs-on: ${{ matrix.os }}` provisions one runner per OS in the matrix (three runners total).
 * Each runner executes steps serially (checkout → install → run tests), while the runners run concurrently.
 
-<Callout icon="lightbulb">
-  Workflows live in the `.github/workflows` directory of the repository. Each YAML file in that directory defines one workflow and its triggers.
-</Callout>
+> **lightbulb** Workflows live in the `.github/workflows` directory of the repository. Each YAML file in that directory defines one workflow and its triggers.
 
 ## Runners and execution
 
@@ -119,6 +117,4 @@ Summary
 
 That's all for now.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/7d6172e9-5a43-4701-9feb-e4cfdb65b256/lesson/f4a99186-571a-4774-a391-be03822efaf6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/7d6172e9-5a43-4701-9feb-e4cfdb65b256/lesson/f4a99186-571a-4774-a391-be03822efaf6)

@@ -12,13 +12,9 @@ What you'll do:
 * Test the policy by creating Pods that match one or both conditions.
 * Update the policy to use `match.all` (logical AND) and re-run tests to observe the difference.
 
-<Callout icon="lightbulb">
-  The `any` filter behaves like a logical OR: the rule applies if at least one condition matches. The `all` filter behaves like a logical AND: the rule applies only if every condition matches.
-</Callout>
+> **lightbulb** The `any` filter behaves like a logical OR: the rule applies if at least one condition matches. The `all` filter behaves like a logical AND: the rule applies only if every condition matches.
 
-<Callout icon="warning">
-  These policies use `validationFailureAction: enforce`, which means matching requests will be blocked by the admission webhook if validation fails. Apply policies cautiously in production clusters.
-</Callout>
+> **warning** These policies use `validationFailureAction: enforce`, which means matching requests will be blocked by the admission webhook if validation fails. Apply policies cautiously in production clusters.
 
 ***
 

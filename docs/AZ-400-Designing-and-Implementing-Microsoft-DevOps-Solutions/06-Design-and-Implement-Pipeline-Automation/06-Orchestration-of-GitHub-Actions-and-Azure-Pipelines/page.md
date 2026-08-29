@@ -10,15 +10,15 @@ In this guide, you’ll learn how to trigger a GitHub Actions workflow from an A
 
 Our private GitHub repo **KodeKloudCoffee** contains a Node.js app that builds automatically on commits to `main`.
 
-![The image shows a GitHub repository page named "KodeKloudCoffee," which is private and contains several files and folders. The main branch is not protected, and there are 22 commits listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867776/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Orchestration-of-GitHub-Actions-and-Azure-Pipelines/kodekloudcoffee-github-repo-private-commits.jpg)
+![The image shows a GitHub repository page named "KodeKloudCoffee," which is private and contains several files and folders. The main branch is not protected, and there are 22 commits listed.](https://kodekloud.com/kk-media/image/upload/v1752867776/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Orchestration-of-GitHub-Actions-and-Azure-Pipelines/kodekloudcoffee-github-repo-private-commits.jpg)
 
 Here’s the current GitHub Actions run history:
 
-![The image shows a GitHub Actions page for the repository "KodeKloudCoffee," displaying a list of workflow runs with their statuses and details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867778/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Orchestration-of-GitHub-Actions-and-Azure-Pipelines/github-actions-kodekloudcoffee-workflows.jpg)
+![The image shows a GitHub Actions page for the repository "KodeKloudCoffee," displaying a list of workflow runs with their statuses and details.](https://kodekloud.com/kk-media/image/upload/v1752867778/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Orchestration-of-GitHub-Actions-and-Azure-Pipelines/github-actions-kodekloudcoffee-workflows.jpg)
 
 When a Pull Request is merged, the build kicks off and shows a success check:
 
-![The image shows a GitHub pull request page where a pull request has been successfully merged and closed. There is an option to delete the branch and a section to add comments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867779/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Orchestration-of-GitHub-Actions-and-Azure-Pipelines/github-pull-request-merged-closed.jpg)
+![The image shows a GitHub pull request page where a pull request has been successfully merged and closed. There is an option to delete the branch and a section to add comments.](https://kodekloud.com/kk-media/image/upload/v1752867779/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Orchestration-of-GitHub-Actions-and-Azure-Pipelines/github-pull-request-merged-closed.jpg)
 
 ## 2. Create a GitHub Personal Access Token
 
@@ -30,9 +30,9 @@ Azure Pipelines needs a PAT with `repo` and `workflow` scopes to dispatch workfl
    * `repo` (full control of private repos)
    * `workflow` (manage GitHub Actions workflows)
 
-![The image shows the GitHub Developer Settings page for managing personal access tokens, with options to generate new tokens and a list of existing tokens with their expiration dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867780/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Orchestration-of-GitHub-Actions-and-Azure-Pipelines/github-developer-settings-personal-access-tokens.jpg)
+![The image shows the GitHub Developer Settings page for managing personal access tokens, with options to generate new tokens and a list of existing tokens with their expiration dates.](https://kodekloud.com/kk-media/image/upload/v1752867780/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Orchestration-of-GitHub-Actions-and-Azure-Pipelines/github-developer-settings-personal-access-tokens.jpg)
 
-![The image shows a GitHub settings page for creating a new personal access token, with various scopes and permissions options listed for selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867781/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Orchestration-of-GitHub-Actions-and-Azure-Pipelines/github-settings-personal-access-token.jpg)
+![The image shows a GitHub settings page for creating a new personal access token, with various scopes and permissions options listed for selection.](https://kodekloud.com/kk-media/image/upload/v1752867781/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Orchestration-of-GitHub-Actions-and-Azure-Pipelines/github-settings-personal-access-token.jpg)
 
 > **triangle-alert** Store your PAT securely. After you copy it, you won’t be able to view it again.\
   Do not commit it to your repo or share it in plain text.
@@ -144,11 +144,11 @@ steps:
 
 Run the pipeline. It will call the GitHub API and start the **Deploy to Azure** job.
 
-![The image shows a GitHub Actions page for a repository named "KodeKloudCoffee," displaying a list of workflow runs with their statuses and details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867782/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Orchestration-of-GitHub-Actions-and-Azure-Pipelines/github-actions-kodekloudcoffee-workflows-2.jpg)
+![The image shows a GitHub Actions page for a repository named "KodeKloudCoffee," displaying a list of workflow runs with their statuses and details.](https://kodekloud.com/kk-media/image/upload/v1752867782/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Orchestration-of-GitHub-Actions-and-Azure-Pipelines/github-actions-kodekloudcoffee-workflows-2.jpg)
 
 Refresh the Actions tab to see the new dispatch run:
 
-![The image shows a GitHub Actions page displaying a list of workflow runs, including "Deploy to Azure" and updates to "azure-pipelines.yml."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867783/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Orchestration-of-GitHub-Actions-and-Azure-Pipelines/github-actions-workflow-runs-azure.jpg)
+![The image shows a GitHub Actions page displaying a list of workflow runs, including "Deploy to Azure" and updates to "azure-pipelines.yml."](https://kodekloud.com/kk-media/image/upload/v1752867783/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Orchestration-of-GitHub-Actions-and-Azure-Pipelines/github-actions-workflow-runs-azure.jpg)
 
 ## 6. Managing Deployment Gates
 
@@ -162,7 +162,7 @@ Now you can control deployments from Azure Pipelines—perfect for environments 
 
 > **lightbulb** To enforce strict gating, remove `push` and `workflow_dispatch` triggers and rely solely on `repository_dispatch`.
 
-![The image shows an Azure DevOps Pipelines interface with a recently run pipeline named "jeremymorgankodekloud.KodeKloudCoffee" that was manually triggered.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867784/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Orchestration-of-GitHub-Actions-and-Azure-Pipelines/azure-devops-pipelines-jeremymorgankodekloud.jpg)
+![The image shows an Azure DevOps Pipelines interface with a recently run pipeline named "jeremymorgankodekloud.KodeKloudCoffee" that was manually triggered.](https://kodekloud.com/kk-media/image/upload/v1752867784/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Orchestration-of-GitHub-Actions-and-Azure-Pipelines/azure-devops-pipelines-jeremymorgankodekloud.jpg)
 
 ***
 

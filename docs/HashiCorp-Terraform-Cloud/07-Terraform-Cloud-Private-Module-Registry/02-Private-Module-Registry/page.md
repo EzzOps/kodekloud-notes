@@ -6,9 +6,7 @@ Terraform Cloud’s private registry centralizes approved modules and providers,
 
 One of the biggest advantages of Infrastructure as Code (IaC) is the ability to create reusable, versioned components for common infrastructure patterns. Terraform supports this through providers, modules, and policies. While the [public Terraform Registry](https://registry.terraform.io) enables anyone to share, Terraform Cloud offers a private registry scoped to your organization. In this guide, we’ll cover what the private registry is, why to use it, and how to publish, manage, and consume modules and providers within it.
 
-<Frame>
-  ![The image is an informational note about the "Private Registry" feature in Terraform Cloud, explaining its name change from "Private Module Registry" and its support for custom providers and policies. It includes a logo and cartoon characters at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878807/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/terraform-cloud-private-registry-note.jpg)
-</Frame>
+![The image is an informational note about the "Private Registry" feature in Terraform Cloud, explaining its name change from "Private Module Registry" and its support for custom providers and policies. It includes a logo and cartoon characters at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878807/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/terraform-cloud-private-registry-note.jpg)
 
 ## Key Features
 
@@ -18,9 +16,7 @@ Terraform Cloud’s private registry helps you centrally store, version, and sha
 * Control which providers and modules your teams can use
 * Track and roll out new versions without disrupting existing users
 
-<Frame>
-  ![The image explains the features of Terraform Cloud's private registry, highlighting its ability to curate, store, and share custom modules and providers within an organization, while supporting versioning and standardization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878808/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/terraform-cloud-private-registry-features.jpg)
-</Frame>
+![The image explains the features of Terraform Cloud's private registry, highlighting its ability to curate, store, and share custom modules and providers within an organization, while supporting versioning and standardization.](https://kodekloud.com/kk-media/image/upload/v1752878808/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/terraform-cloud-private-registry-features.jpg)
 
 ## Providers and Modules in Terraform
 
@@ -31,9 +27,7 @@ Terraform components fall into two categories:
 
 Both public and private registries make it simple to discover and integrate providers and modules into your configurations.
 
-<Frame>
-  ![The image explains the concept of a Private Registry in Terraform, highlighting that providers are plugins for managing infrastructure resources, and modules are reusable configurations. It also mentions that the Terraform Registry facilitates the use of any provider or module.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878809/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/terraform-private-registry-concept.jpg)
-</Frame>
+![The image explains the concept of a Private Registry in Terraform, highlighting that providers are plugins for managing infrastructure resources, and modules are reusable configurations. It also mentions that the Terraform Registry facilitates the use of any provider or module.](https://kodekloud.com/kk-media/image/upload/v1752878809/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/terraform-private-registry-concept.jpg)
 
 ### Providers
 
@@ -43,9 +37,7 @@ In your private registry, you can:
 * Automatically sync updates from the [public Terraform Registry](https://registry.terraform.io).
 * Publish custom, organization-specific providers.
 
-<Frame>
-  ![The image is a slide titled "Private Registry: Providers" with bullet points explaining features of Terraform Cloud's private registry, such as designating recommended public providers, synchronizing with the public Terraform Registry, and supporting private provider publication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878810/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/private-registry-terraform-cloud-features.jpg)
-</Frame>
+![The image is a slide titled "Private Registry: Providers" with bullet points explaining features of Terraform Cloud's private registry, such as designating recommended public providers, synchronizing with the public Terraform Registry, and supporting private provider publication.](https://kodekloud.com/kk-media/image/upload/v1752878810/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/private-registry-terraform-cloud-features.jpg)
 
 ### Modules
 
@@ -71,9 +63,7 @@ module "vault-aws-tgw" {
 }
 ```
 
-<Frame>
-  ![The image is a slide titled "Managing Modules" from HashiCorp Terraform Cloud, explaining how to configure Terraform modules in three steps. It includes a brief description and two illustrated characters at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878812/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/managing-modules-terraform-cloud-slide.jpg)
-</Frame>
+![The image is a slide titled "Managing Modules" from HashiCorp Terraform Cloud, explaining how to configure Terraform modules in three steps. It includes a brief description and two illustrated characters at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878812/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/managing-modules-terraform-cloud-slide.jpg)
 
 ## Managing Modules at Scale
 
@@ -83,13 +73,9 @@ When you have dozens of modules with multiple versions, file shares and manual v
 * Publish and version for discoverability
 * Support new releases while retaining older versions
 
-<Frame>
-  ![The image is a slide titled "Managing Modules" with common questions about module management, including handling multiple modules, managing versions, and accessing the correct module. It features the HashiCorp Terraform Cloud logo and two illustrated characters at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878813/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/managing-modules-module-management-questions.jpg)
-</Frame>
+![The image is a slide titled "Managing Modules" with common questions about module management, including handling multiple modules, managing versions, and accessing the correct module. It features the HashiCorp Terraform Cloud logo and two illustrated characters at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878813/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/managing-modules-module-management-questions.jpg)
 
-<Frame>
-  ![The image is a guide on publishing to the private registry in Terraform Cloud, showing examples of adding providers and modules from the public registry to an organization's infrastructure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878814/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/terraform-cloud-private-registry-guide.jpg)
-</Frame>
+![The image is a guide on publishing to the private registry in Terraform Cloud, showing examples of adding providers and modules from the public registry to an organization's infrastructure.](https://kodekloud.com/kk-media/image/upload/v1752878814/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/terraform-cloud-private-registry-guide.jpg)
 
 You can also enforce policy-based controls with [Sentinel](https://www.terraform.io/cloud/sentinel), ensuring that all modules and providers come from your private registry and preventing unapproved sources.
 
@@ -97,9 +83,7 @@ You can also enforce policy-based controls with [Sentinel](https://www.terraform
 
 Publishing to the private registry follows public registry guidelines—except that your Git repositories can stay private. Public registry rules include:
 
-<Frame>
-  ![The image provides guidelines for publishing a module to the public registry on GitHub, including naming conventions, repository description, module structure, and version tagging. It features the HashiCorp Terraform Cloud logo and cartoon characters at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878816/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/github-module-publishing-guidelines-terraform.jpg)
-</Frame>
+![The image provides guidelines for publishing a module to the public registry on GitHub, including naming conventions, repository description, module structure, and version tagging. It features the HashiCorp Terraform Cloud logo and cartoon characters at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878816/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/github-module-publishing-guidelines-terraform.jpg)
 
 * Host code on GitHub (public for public registry).
 * Name your repo as `terraform-<PROVIDER>-<NAME>`.
@@ -107,20 +91,13 @@ Publishing to the private registry follows public registry guidelines—except t
 * Follow the standard module structure (`variables.tf`, `outputs.tf`, `README.md`, etc.).
 * Tag releases with [semantic versioning](https://semver.org/) (e.g., `v1.0.0`, `v3.2.5`).
 
-<Frame>
-  ![The image provides guidelines for publishing a module to the Terraform public registry, including requirements for GitHub, naming conventions, repository descriptions, module structure, and version tagging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878818/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/terraform-module-publishing-guidelines.jpg)
-</Frame>
+![The image provides guidelines for publishing a module to the Terraform public registry, including requirements for GitHub, naming conventions, repository descriptions, module structure, and version tagging.](https://kodekloud.com/kk-media/image/upload/v1752878818/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/terraform-module-publishing-guidelines.jpg)
 
-<Callout icon="lightbulb">
-  When you connect your VCS to Terraform Cloud, private repositories must still follow naming, structure, and tagging rules.
-</Callout>
+> **lightbulb** When you connect your VCS to Terraform Cloud, private repositories must still follow naming, structure, and tagging rules.
 
-<Frame>
-  ![The image is a slide about publishing to the Terraform Cloud private registry, listing requirements like VCS provider support, naming conventions, repository description, standard module structure, and version tags. It includes a Terraform Cloud logo and cartoon characters at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878820/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/terraform-cloud-publishing-requirements-slide.jpg)
-</Frame>
+![The image is a slide about publishing to the Terraform Cloud private registry, listing requirements like VCS provider support, naming conventions, repository description, standard module structure, and version tags. It includes a Terraform Cloud logo and cartoon characters at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878820/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/terraform-cloud-publishing-requirements-slide.jpg)
 
-<Callout icon="lightbulb">
-  Terraform Cloud integrates with these version control systems:
+> **lightbulb** Terraform Cloud integrates with these version control systems:
 
   | Provider        | Link                                                                                         | Type               |
   | --------------- | -------------------------------------------------------------------------------------------- | ------------------ |
@@ -128,7 +105,6 @@ Publishing to the private registry follows public registry guidelines—except t
   | GitLab          | [https://gitlab.com](https://gitlab.com)                                                     | SaaS               |
   | Bitbucket Cloud | [https://bitbucket.org](https://bitbucket.org)                                               | SaaS               |
   | Azure DevOps    | [https://azure.microsoft.com/services/devops/](https://azure.microsoft.com/services/devops/) | SaaS               |
-</Callout>
 
 ## Consuming Modules
 
@@ -143,9 +119,7 @@ module "security-group" {
 
 Terraform Cloud provides a copy/paste code block to ensure you use the correct source and version.
 
-<Frame>
-  ![The image shows a screenshot of a Terraform Cloud interface, specifically detailing a security group module for AWS EC2-VPC. It includes module information, usage instructions, and configuration details, with a "Using the Private Registry" title and a Terraform Cloud logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878821/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/terraform-cloud-aws-ec2-vpc-module.jpg)
-</Frame>
+![The image shows a screenshot of a Terraform Cloud interface, specifically detailing a security group module for AWS EC2-VPC. It includes module information, usage instructions, and configuration details, with a "Using the Private Registry" title and a Terraform Cloud logo.](https://kodekloud.com/kk-media/image/upload/v1752878821/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/terraform-cloud-aws-ec2-vpc-module.jpg)
 
 ## Versioning Modules
 
@@ -155,16 +129,12 @@ Terraform Cloud watches for new tags that follow `MAJOR.MINOR.PATCH`. To release
 2. Push it to your repository.
 3. Terraform Cloud automatically registers the new version in your private registry.
 
-<Frame>
-  ![The image provides instructions on releasing new versions in the Terraform Registry, emphasizing the use of semantic version tags. It includes examples of valid tags and explains the process of creating and pushing a new tag to notify the registry.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878822/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/terraform-registry-versioning-instructions.jpg)
-</Frame>
+![The image provides instructions on releasing new versions in the Terraform Registry, emphasizing the use of semantic version tags. It includes examples of valid tags and explains the process of creating and pushing a new tag to notify the registry.](https://kodekloud.com/kk-media/image/upload/v1752878822/notes-assets/images/HashiCorp-Terraform-Cloud-Private-Module-Registry/terraform-registry-versioning-instructions.jpg)
 
 ***
 
 Terraform Cloud’s private registry centralizes your approved modules and providers, enforces organizational policies, and simplifies version management—empowering your teams to build and scale infrastructure consistently and securely.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/55b59425-ff18-4a6b-a521-907542051f03/lesson/e33b7403-01a1-409c-8372-be50f7b18439" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/55b59425-ff18-4a6b-a521-907542051f03/lesson/e33b7403-01a1-409c-8372-be50f7b18439)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/55b59425-ff18-4a6b-a521-907542051f03/lesson/001a25e6-4646-4e33-8e16-42187f771758" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/55b59425-ff18-4a6b-a521-907542051f03/lesson/001a25e6-4646-4e33-8e16-42187f771758)

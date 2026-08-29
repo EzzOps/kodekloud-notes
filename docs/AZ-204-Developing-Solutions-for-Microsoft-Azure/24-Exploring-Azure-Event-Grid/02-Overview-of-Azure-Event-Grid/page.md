@@ -8,7 +8,7 @@ Azure Event Grid is a fully managed event-routing service that simplifies commun
 
 Azure Event Grid offers native integration with several Azure services, including [Azure Blob Storage](https://docs.microsoft.com/azure/storage/blobs/), [Azure Functions](https://docs.microsoft.com/azure/azure-functions/), [Logic Apps](https://docs.microsoft.com/azure/logic-apps/), and [IoT Hub](https://docs.microsoft.com/azure/iot-hub/). In addition to these built-in sources, you can create custom events and topics to address unique requirements. With the ability to define specific filters, you can ensure that only the relevant events reach designated endpoints, enhancing both efficiency and accuracy in event handling.
 
-![The image is a diagram explaining Azure Event Grid, showing event sources on the left, event handlers on the right, and the Event Grid in the center as a mediator. It highlights various Azure services involved in event processing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866487/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Overview-of-Azure-Event-Grid/azure-event-grid-diagram.jpg)
+![The image is a diagram explaining Azure Event Grid, showing event sources on the left, event handlers on the right, and the Event Grid in the center as a mediator. It highlights various Azure services involved in event processing.](https://kodekloud.com/kk-media/image/upload/v1752866487/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Overview-of-Azure-Event-Grid/azure-event-grid-diagram.jpg)
 
 > **lightbulb** Azure Event Grid leverages the Cloud Native Foundation's Cloud Events 1.0 specification to standardize event formats, ensuring consistency across different systems.
 

@@ -24,9 +24,7 @@ Quick comparison: IPsec vs WireGuard
 | Compatibility    | Works across many kernels | Requires WireGuard support in kernel or module |
 | Typical use case |  Stable enterprise setups | High-throughput, low-latency environments      |
 
-<Callout icon="lightbulb">
-  Before you begin: ensure you have kubectl access to the cluster, Cilium installed (via Helm, CiliumOperator/CiliumConfig, or daemonset), and permissions to create secrets in the kube-system namespace.
-</Callout>
+> **lightbulb** Before you begin: ensure you have kubectl access to the cluster, Cilium installed (via Helm, CiliumOperator/CiliumConfig, or daemonset), and permissions to create secrets in the kube-system namespace.
 
 ## Creating the IPsec key secret
 
@@ -46,9 +44,7 @@ Verify the secret exists:
 kubectl -n kube-system get secret cilium-ipsec-keys
 ```
 
-<Callout icon="warning">
-  Protect your PSKs: store/retrieve secrets using secure tooling (e.g., external KMS or sealed-secrets) and rotate keys periodically. Exposing PSKs compromises all encrypted traffic.
-</Callout>
+> **warning** Protect your PSKs: store/retrieve secrets using secure tooling (e.g., external KMS or sealed-secrets) and rotate keys periodically. Exposing PSKs compromises all encrypted traffic.
 
 ## Enabling IPsec in the Cilium Helm values
 
@@ -124,9 +120,7 @@ Cilium only encrypts pod-to-pod traffic that traverses the network between diffe
   <img alt="A diagram titled &#x22;Encryption Behavior&#x22; showing a Kubernetes cluster with two nodes, each hosting two pods (IPs like 10.244.0.1, 10.244.0.2, 10.244.2.1, 10.244.2.2). Arrows between pods indicate pod-to-pod traffic and are labeled &#x22;Not Encrypted.&#x22;" />
 </Frame>
 
-<Callout icon="lightbulb">
-  Traffic between pods on the same node is left unencrypted because protecting it would not stop an attacker who already has root on that node. Cilium focuses on encrypting inter-node pod traffic — the traffic that traverses the network where interception is possible without node compromise.
-</Callout>
+> **lightbulb** Traffic between pods on the same node is left unencrypted because protecting it would not stop an attacker who already has root on that node. Cilium focuses on encrypting inter-node pod traffic — the traffic that traverses the network where interception is possible without node compromise.
 
 References and further reading
 
@@ -134,6 +128,4 @@ References and further reading
 * WireGuard: [https://www.wireguard.com/](https://www.wireguard.com/)
 * IPsec overview: [https://datatracker.ietf.org/wg/ipsecme/about/](https://datatracker.ietf.org/wg/ipsecme/about/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/73990fb7-5a82-49c5-92a8-e36ccbb17f94" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/73990fb7-5a82-49c5-92a8-e36ccbb17f94)

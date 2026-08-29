@@ -157,12 +157,8 @@ Key takeaways — how protocols work together
 
 The TCP/IP model gives a practical framework for understanding, building, and troubleshooting end-to-end communication — from the single click in a browser to the packets traversing dozens of routers worldwide.
 
-<Callout icon="lightbulb">
-  Remember: IPs route packets across networks; ports deliver data to the correct service on a host; MAC addresses are for local-link delivery; and each layer in the stack solves a distinct problem.
-</Callout>
+> **lightbulb** Remember: IPs route packets across networks; ports deliver data to the correct service on a host; MAC addresses are for local-link delivery; and each layer in the stack solves a distinct problem.
 
 Later lessons will cover troubleshooting techniques — from basic connectivity checks (ping, traceroute) to packet-level inspection (tcpdump, Wireshark) — so you can trace where a packet is lost, delayed, or rewritten.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/networks-and-communications/module/a35e2604-798a-4eb8-a204-4c1b8a1d4943/lesson/308977c9-582d-416c-aad8-65e3b7c554fc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/networks-and-communications/module/a35e2604-798a-4eb8-a204-4c1b8a1d4943/lesson/308977c9-582d-416c-aad8-65e3b7c554fc)

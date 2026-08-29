@@ -10,13 +10,9 @@ In this guide, you’ll learn how to deploy a production-ready, highly available
 
 A single-node Vault server cannot tolerate failures or scale out. If the node goes offline, Vault becomes inaccessible—acceptable only for development or testing.
 
-<Callout icon="triangle-alert">
-  A single-node Vault instance has zero redundancy. Do **not** use this configuration in production.
-</Callout>
+> **triangle-alert** A single-node Vault instance has zero redundancy. Do **not** use this configuration in production.
 
-<Frame>
-  ![The image illustrates a single-node Vault server architecture, highlighting its lack of redundancy, scalability, and failure tolerance, and includes a configuration file and storage backend. It is labeled as not a recommended architecture.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878291/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Configure-a-Highly-Available-Vault-Cluster/single-node-vault-server-architecture.jpg)
-</Frame>
+![The image illustrates a single-node Vault server architecture, highlighting its lack of redundancy, scalability, and failure tolerance, and includes a configuration file and storage backend. It is labeled as not a recommended architecture.](https://kodekloud.com/kk-media/image/upload/v1752878291/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Configure-a-Highly-Available-Vault-Cluster/single-node-vault-server-architecture.jpg)
 
 ## Key Characteristics of an Ideal Vault Cluster
 
@@ -27,21 +23,15 @@ A robust, production-grade Vault cluster should:
 * Scale horizontally as application demands grow
 * Maintain a fully replicated, peer-to-peer architecture
 
-<Frame>
-  ![The image is a slide discussing the ideal characteristics of a cluster, emphasizing redundancy, failure tolerance, scalability, and a fully replicated architecture. It mentions the use of Integrated Storage over Consul for Vault Enterprise and notes that the Vault Operations Professional exam will not include Consul.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878292/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Configure-a-Highly-Available-Vault-Cluster/ideal-cluster-characteristics-redundancy-scalability.jpg)
-</Frame>
+![The image is a slide discussing the ideal characteristics of a cluster, emphasizing redundancy, failure tolerance, scalability, and a fully replicated architecture. It mentions the use of Integrated Storage over Consul for Vault Enterprise and notes that the Vault Operations Professional exam will not include Consul.](https://kodekloud.com/kk-media/image/upload/v1752878292/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Configure-a-Highly-Available-Vault-Cluster/ideal-cluster-characteristics-redundancy-scalability.jpg)
 
-<Callout icon="lightbulb">
-  Vault Enterprise supports two storage backends: Integrated Storage (Raft) and [Consul](https://www.consul.io/docs). For production, HashiCorp strongly recommends Integrated Storage (Raft). The [Vault Operations Professional exam](https://www.hashicorp.com/certification/vault-operations-professional) covers only Integrated Storage.
-</Callout>
+> **lightbulb** Vault Enterprise supports two storage backends: Integrated Storage (Raft) and [Consul](https://www.consul.io/docs). For production, HashiCorp strongly recommends Integrated Storage (Raft). The [Vault Operations Professional exam](https://www.hashicorp.com/certification/vault-operations-professional) covers only Integrated Storage.
 
 ## Integrated Storage Overview
 
 Integrated Storage (Raft) leverages the Raft consensus protocol to replicate data across Vault nodes. Every node retains a full copy of the data. The leader handles writes and streams updates to follower nodes. If the leader goes down, followers elect a new leader almost immediately.
 
-<Frame>
-  ![The image illustrates a multi-node cluster using integrated storage, showing how data is replicated among nodes labeled A, B, and C, with Node B as the Raft leader. It includes a diagram of data replication paths and storage components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878294/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Configure-a-Highly-Available-Vault-Cluster/multi-node-cluster-data-replication-diagram.jpg)
-</Frame>
+![The image illustrates a multi-node cluster using integrated storage, showing how data is replicated among nodes labeled A, B, and C, with Node B as the Raft leader. It includes a diagram of data replication paths and storage components.](https://kodekloud.com/kk-media/image/upload/v1752878294/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Configure-a-Highly-Available-Vault-Cluster/multi-node-cluster-data-replication-diagram.jpg)
 
 ## Configuring Integrated Storage
 
@@ -111,9 +101,7 @@ storage "raft" {
 
 ## CLI Management for Integrated Storage
 
-<Frame>
-  ![The image is a slide about managing integrated storage via CLI using the vault operator raft command, listing commands like list-peers, join, remove-peer, and snapshot with their functions. It has a yellow background and a cartoon character at the bottom right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878295/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Configure-a-Highly-Available-Vault-Cluster/managing-integrated-storage-cli-vault.jpg)
-</Frame>
+![The image is a slide about managing integrated storage via CLI using the vault operator raft command, listing commands like list-peers, join, remove-peer, and snapshot with their functions. It has a yellow background and a cartoon character at the bottom right.](https://kodekloud.com/kk-media/image/upload/v1752878295/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Configure-a-Highly-Available-Vault-Cluster/managing-integrated-storage-cli-vault.jpg)
 
 Use `vault operator raft` subcommands to manage your cluster:
 
@@ -140,9 +128,7 @@ Use `vault operator raft` subcommands to manage your cluster:
    vault operator unseal
    ```
 
-<Callout icon="lightbulb">
-  With auto-unseal (e.g., AWS KMS), Vault nodes unseal themselves after joining.
-</Callout>
+> **lightbulb** With auto-unseal (e.g., AWS KMS), Vault nodes unseal themselves after joining.
 
 4. Repeat steps 2–3 for each node until all peers have joined.
 

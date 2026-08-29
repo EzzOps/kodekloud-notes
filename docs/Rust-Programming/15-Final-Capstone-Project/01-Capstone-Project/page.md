@@ -18,9 +18,7 @@ The primary operations of the database include:
 
 Data persistence is achieved by writing to disk (using formats like JSON or a custom binary format), ensuring survival through server restarts. The server supports concurrent client connections, robust error handling for invalid commands, malformed requests, and I/O errors, and is designed with extensibility in mind.
 
-<Frame>
-  ![The image outlines functional requirements for a system, including core operations, persistence, concurrency, networking, and error handling. Each section provides specific tasks or features related to the system's functionality.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883888/notes-assets/images/Rust-Programming-Capstone-Project/functional-requirements-system-outline.jpg)
-</Frame>
+![The image outlines functional requirements for a system, including core operations, persistence, concurrency, networking, and error handling. Each section provides specific tasks or features related to the system's functionality.](https://kodekloud.com/kk-media/image/upload/v1752883888/notes-assets/images/Rust-Programming-Capstone-Project/functional-requirements-system-outline.jpg)
 
 ***
 
@@ -43,9 +41,7 @@ The system is organized into several key components:
 4. **Persistence Module:** Persists snapshots of the in-memory data to disk and reloads them on startup.
 5. **Command Execution Engine:** Processes the commands by interfacing with both the key-value store and the persistence module.
 
-<Frame>
-  ![The image outlines the high-level architecture of a system, detailing key components such as the Networking Layer, Command Parser, Core Key-Value Store, Persistence Module, and Command Execution Engine, along with their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883889/notes-assets/images/Rust-Programming-Capstone-Project/system-architecture-key-components-diagram.jpg)
-</Frame>
+![The image outlines the high-level architecture of a system, detailing key components such as the Networking Layer, Command Parser, Core Key-Value Store, Persistence Module, and Command Execution Engine, along with their functions.](https://kodekloud.com/kk-media/image/upload/v1752883889/notes-assets/images/Rust-Programming-Capstone-Project/system-architecture-key-components-diagram.jpg)
 
 Error handling spans across network, file, I/O, and command-related errors for graceful operation. The typical data flow in the system is as follows:
 
@@ -93,9 +89,7 @@ Key design aspects of this project include:
 * **Error Handling:** Provide descriptive errors for invalid or malformed inputs.
 * **Scalability:** Process multiple client requests concurrently using asynchronous programming.
 
-<Frame>
-  ![The image outlines four key design considerations: Thread Safety, Data Durability, Error Handling, and Scalability, each with a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883890/notes-assets/images/Rust-Programming-Capstone-Project/design-considerations-thread-safety-durability.jpg)
-</Frame>
+![The image outlines four key design considerations: Thread Safety, Data Durability, Error Handling, and Scalability, each with a brief description.](https://kodekloud.com/kk-media/image/upload/v1752883890/notes-assets/images/Rust-Programming-Capstone-Project/design-considerations-thread-safety-durability.jpg)
 
 ### Technology Stack
 
@@ -105,9 +99,7 @@ Key design aspects of this project include:
 | Networking    | TCP networking for client-server connection | tokio::net        |
 | Serialization | Data serialization to persist data          | Serde, Serde JSON |
 
-<Frame>
-  ![The image lists a technology stack including "Async Runtime" with "tokio," "TCP Networking" with "tokio::net," and "Serialization" with "serde and serde\_json."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883890/notes-assets/images/Rust-Programming-Capstone-Project/async-runtime-tcp-networking-serialization.jpg)
-</Frame>
+![The image lists a technology stack including "Async Runtime" with "tokio," "TCP Networking" with "tokio::net," and "Serialization" with "serde and serde\_json."](https://kodekloud.com/kk-media/image/upload/v1752883890/notes-assets/images/Rust-Programming-Capstone-Project/async-runtime-tcp-networking-serialization.jpg)
 
 For more details on these technologies, refer to [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/).
 
@@ -421,10 +413,6 @@ When you terminate the program with Ctrl+C, the server saves the current state t
 
 ***
 
-<Callout icon="lightbulb">
-  Congratulations! You have successfully implemented a robust key-value store with comprehensive networking, command parsing, thread-safe in-memory storage, and persistence. This project demonstrates key Rust programming principles and asynchronous programming using Tokio.
-</Callout>
+> **lightbulb** Congratulations! You have successfully implemented a robust key-value store with comprehensive networking, command parsing, thread-safe in-memory storage, and persistence. This project demonstrates key Rust programming principles and asynchronous programming using Tokio.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/fcc41d3c-3eb4-41f5-bd8d-501517eac874/lesson/7ac32daf-a528-4e6f-8f22-4995e4888e71" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/fcc41d3c-3eb4-41f5-bd8d-501517eac874/lesson/7ac32daf-a528-4e6f-8f22-4995e4888e71)

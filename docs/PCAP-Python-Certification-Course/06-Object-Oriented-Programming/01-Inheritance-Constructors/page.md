@@ -74,9 +74,7 @@ if __name__ == "__main__":
     print(get_sum(nums) == 15)
 ```
 
-<Callout icon="lightbulb">
-  The shebang (`#!/usr/bin/env python3`) ensures compatibility on Unix-like systems. The `if __name__ == "__main__":` block runs test code only when the module is executed as a standalone script.
-</Callout>
+> **lightbulb** The shebang (`#!/usr/bin/env python3`) ensures compatibility on Unix-like systems. The `if __name__ == "__main__":` block runs test code only when the module is executed as a standalone script.
 
 To use this module in your main application, you can write:
 
@@ -132,9 +130,7 @@ I am in module 1
 
 Note: Although many development environments show a file explorer with project files like `module1.py`, the functionality of module importation does not depend on the visual layout of your project.
 
-<Frame>
-  ![The image shows a coding environment with a file explorer on the left, displaying Python files, and an open editor in the center with a console on the right. The file "module1.py" is currently open and appears to be empty.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882919/notes-assets/images/PCAP-Python-Certification-Course-User-Defined-Modules/coding-environment-python-files-editor.jpg)
-</Frame>
+![The image shows a coding environment with a file explorer on the left, displaying Python files, and an open editor in the center with a console on the right. The file "module1.py" is currently open and appears to be empty.](https://kodekloud.com/kk-media/image/upload/v1752882919/notes-assets/images/PCAP-Python-Certification-Course-User-Defined-Modules/coding-environment-python-files-editor.jpg)
 
 To instruct Python to look in this directory, append its path to `sys.path`:
 
@@ -191,15 +187,11 @@ This article has covered the essentials of creating user-defined modules and pac
 * Inspect and manipulate the module search path.
 * Organize modules into packages for a scalable project structure.
 
-<Callout icon="lightbulb">
-  To further solidify your understanding, experiment with these examples and consider integrating them into your own projects.
-</Callout>
+> **lightbulb** To further solidify your understanding, experiment with these examples and consider integrating them into your own projects.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/a65eb782-d2dc-4850-9046-e4bb57d38876/lesson/b2a38fb6-e9ff-4db2-8b79-08d6ec762e1f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/a65eb782-d2dc-4850-9046-e4bb57d38876/lesson/b2a38fb6-e9ff-4db2-8b79-08d6ec762e1f)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/a65eb782-d2dc-4850-9046-e4bb57d38876/lesson/33d8559d-185e-43c5-a734-6c638a0321d1" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/a65eb782-d2dc-4850-9046-e4bb57d38876/lesson/33d8559d-185e-43c5-a734-6c638a0321d1)
 
 
 # Inheritance Constructors
@@ -229,9 +221,7 @@ print(pet1)
 
 Inheritance is a foundational concept in object-oriented programming. It allows a new class (called the subclass) to inherit attributes and methods from an existing class (known as the superclass). This mechanism enables you to extend or modify the behavior of the existing class without duplicating code.
 
-<Frame>
-  ![The image illustrates the concept of inheritance in programming, showing a hierarchy where attributes and methods are passed from a superclass "Vehicle" to subclasses "WheeledVehicle" and "Car."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882921/notes-assets/images/PCAP-Python-Certification-Course-Inheritance-Constructors/inheritance-programming-vehicle-hierarchy.jpg)
-</Frame>
+![The image illustrates the concept of inheritance in programming, showing a hierarchy where attributes and methods are passed from a superclass "Vehicle" to subclasses "WheeledVehicle" and "Car."](https://kodekloud.com/kk-media/image/upload/v1752882921/notes-assets/images/PCAP-Python-Certification-Course-Inheritance-Constructors/inheritance-programming-vehicle-hierarchy.jpg)
 
 Subclasses are specialized versions of a parent class. In the example below, the Animal class is the base class for two subclasses, Mammal and Dog. Here, a Mammal is an Animal, and a Dog is a Mammal.
 
@@ -394,9 +384,7 @@ This design pattern keeps your code clean and consistent by allowing subclasses 
 
 An alternative to inheritance for extending a class's capabilities is composition. With composition, you include instances of other classes within a class, enabling you to combine behaviors flexibly with reduced coupling.
 
-<Callout icon="lightbulb">
-  Composition can offer greater flexibility compared to inheritance, especially when you want to dynamically change behavior by combining different objects.
-</Callout>
+> **lightbulb** Composition can offer greater flexibility compared to inheritance, especially when you want to dynamically change behavior by combining different objects.
 
 The example below demonstrates how composition can be used to implement behavior by combining different objects:
 
@@ -500,8 +488,6 @@ That concludes this article. Now it's time to put these concepts into practice!
 
 For more information on these topics, be sure to check out our [additional Python tutorials](https://www.python.org/doc/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/7e473cae-90c2-4d9a-8e81-6509481b52ce/lesson/0c32de64-2a75-4d5b-b083-b49cd9653cca" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/7e473cae-90c2-4d9a-8e81-6509481b52ce/lesson/0c32de64-2a75-4d5b-b083-b49cd9653cca)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/7e473cae-90c2-4d9a-8e81-6509481b52ce/lesson/607248d0-99f7-4702-808f-ef45af510922" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/7e473cae-90c2-4d9a-8e81-6509481b52ce/lesson/607248d0-99f7-4702-808f-ef45af510922)

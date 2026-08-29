@@ -19,7 +19,7 @@ Ask yourself:
 
 Public subnets host resources that must serve or receive traffic from the internet (for example, web servers, load balancers, or bastion hosts). These subnets have a route to an Internet Gateway (IGW) and a public IP assigned to each resource.
 
-![The image illustrates the use of private and public subnets within a VPC, showing a web server in a public subnet connected to the internet and a database in a private subnet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863296/notes-assets/images/AWS-Networking-Fundamentals-Public-vs-Private-Subnets/vpc-private-public-subnets-diagram.jpg)
+![The image illustrates the use of private and public subnets within a VPC, showing a web server in a public subnet connected to the internet and a database in a private subnet.](https://kodekloud.com/kk-media/image/upload/v1752863296/notes-assets/images/AWS-Networking-Fundamentals-Public-vs-Private-Subnets/vpc-private-public-subnets-diagram.jpg)
 
 Key characteristics:
 
@@ -55,7 +55,7 @@ This ensures:
 
 Organizations often extend their corporate networks into AWS using VPN or AWS Direct Connect. In this architecture, all AWS resources reside in private subnets, and traffic flows over a secure tunnel to on-premises infrastructure.
 
-![The image illustrates a use case for a private subnet, showing a connection from a private data center to an AWS private subnet via a VPN.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863297/notes-assets/images/AWS-Networking-Fundamentals-Public-vs-Private-Subnets/private-subnet-vpn-connection-aws.jpg)
+![The image illustrates a use case for a private subnet, showing a connection from a private data center to an AWS private subnet via a VPN.](https://kodekloud.com/kk-media/image/upload/v1752863297/notes-assets/images/AWS-Networking-Fundamentals-Public-vs-Private-Subnets/private-subnet-vpn-connection-aws.jpg)
 
 Benefits:
 
@@ -75,7 +75,7 @@ Benefits:
 
 ## Summary
 
-![The image is a slide with a blue gradient background on the left labeled "Summary" and a note on the right stating that resources in public subnets are accessible to and from the internet.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863298/notes-assets/images/AWS-Networking-Fundamentals-Public-vs-Private-Subnets/summary-public-subnets-internet-access.jpg)
+![The image is a slide with a blue gradient background on the left labeled "Summary" and a note on the right stating that resources in public subnets are accessible to and from the internet.](https://kodekloud.com/kk-media/image/upload/v1752863298/notes-assets/images/AWS-Networking-Fundamentals-Public-vs-Private-Subnets/summary-public-subnets-internet-access.jpg)
 
 * **Public subnets**: Resources are reachable by—and can initiate connections with—the internet.
 * **Private subnets**: Resources are hidden from direct internet access, using NAT Gateways or on-premises VPN for outbound traffic.

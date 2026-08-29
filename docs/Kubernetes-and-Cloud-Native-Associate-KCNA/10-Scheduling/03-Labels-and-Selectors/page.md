@@ -62,9 +62,7 @@ monitoring-daemon   1         1         1       1            1           41
 
 DaemonSets automatically schedule Pods on every node in your cluster. In earlier Kubernetes versions, the `nodeName` property was used to assign Pods directly to nodes, bypassing the scheduler. However, since version 1.12, DaemonSets leverage the default scheduler and node affinity rules to manage Pod placement.
 
-<Frame>
-  ![The image illustrates a network diagram with nodes labeled node01 to node06, connected to six devices, under the title "How does it work?".](../../../../images/kodekloud.com/kk-media/image/upload/v1752880693/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-DaemonSets/frame_220.jpg)
-</Frame>
+![The image illustrates a network diagram with nodes labeled node01 to node06, connected to six devices, under the title "How does it work?".](https://kodekloud.com/kk-media/image/upload/v1752880693/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-DaemonSets/frame_220.jpg)
 
 To summarize, a DaemonSet ensures that a specific Pod is running on all nodes in your cluster—making it ideal for running services such as:
 
@@ -74,9 +72,7 @@ To summarize, a DaemonSet ensures that a specific Pod is running on all nodes in
 
 Happy clustering!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/4fab542c-3091-4f8e-ad7c-91d96d54b049/lesson/f6d944ea-aea7-46f2-a97c-99318338b06b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/4fab542c-3091-4f8e-ad7c-91d96d54b049/lesson/f6d944ea-aea7-46f2-a97c-99318338b06b)
 
 
 # Labels and Selectors
@@ -91,9 +87,7 @@ This concept is applied widely—from tagging YouTube videos or blog posts, to u
 
 In Kubernetes, labels and selectors are essential for managing a cluster filled with objects such as Pods, Services, ReplicaSets, and Deployments. Labels help organize these resources by applying characteristics like application type or functionality, allowing you to filter and group them even when dealing with hundreds or thousands of objects. Selectors then query these objects based on the criteria specified by the labels.
 
-<Frame>
-  ![The image illustrates "Labels & Selectors in Kubernetes," showing various labeled components like Front-End, Web-Servers, and DB, represented by different colored shapes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880693/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Labels-and-Selectors/frame_140.jpg)
-</Frame>
+![The image illustrates "Labels & Selectors in Kubernetes," showing various labeled components like Front-End, Web-Servers, and DB, represented by different colored shapes.](https://kodekloud.com/kk-media/image/upload/v1752880693/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Labels-and-Selectors/frame_140.jpg)
 
 For every Kubernetes object, you attach labels as needed (for example, app or function) and then use selectors to filter the objects. For instance, if you want to filter objects where the label app equals App1, your selector would look like this:
 
@@ -138,9 +132,7 @@ simple-webapp    0/1     Completed   0          1d
 
 When working with ReplicaSets to manage multiple Pods, you label the Pod definition and then specify a selector in the ReplicaSet to group the desired Pods. It’s crucial that the selector in the ReplicaSet specification matches the labels on the Pods exactly.
 
-<Callout icon="lightbulb">
-  Only the labels on the Pod template are used for selection; labels on the ReplicaSet itself are not considered.
-</Callout>
+> **lightbulb** Only the labels on the Pod template are used for selection; labels on the ReplicaSet itself are not considered.
 
 Below is a correct ReplicaSet definition that connects the ReplicaSet to its Pods by matching labels:
 
@@ -217,10 +209,6 @@ For more detailed information, consider exploring:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<Callout icon="lightbulb">
-  Using specific labels and selectors efficiently can significantly streamline your Kubernetes resource management. Experiment with various configurations to understand the best practices for your deployment needs.
-</Callout>
+> **lightbulb** Using specific labels and selectors efficiently can significantly streamline your Kubernetes resource management. Experiment with various configurations to understand the best practices for your deployment needs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/4fab542c-3091-4f8e-ad7c-91d96d54b049/lesson/52340979-76f2-456c-9f91-0da38a75750c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/4fab542c-3091-4f8e-ad7c-91d96d54b049/lesson/52340979-76f2-456c-9f91-0da38a75750c)

@@ -23,7 +23,7 @@ Additionally, Azure offers powerful tools for data migration:
 
 Before diving into the details of configuring storage accounts, let’s explore a practical scenario by considering the requirements of Bill Innovation.
 
-![The image is a graphic with a blue gradient background on the left labeled "Storage" and a list of storage-related topics on the right, including "Storage Accounts," "Redundancy Options," and "Azure Migrate."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868528/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Introduction/storage-topics-azure-migrate.jpg)
+![The image is a graphic with a blue gradient background on the left labeled "Storage" and a list of storage-related topics on the right, including "Storage Accounts," "Redundancy Options," and "Azure Migrate."](https://kodekloud.com/kk-media/image/upload/v1752868528/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Introduction/storage-topics-azure-migrate.jpg)
 
 ## Bill Innovation: A Use Case
 
@@ -33,7 +33,7 @@ Bill Innovation requires a robust and versatile Azure solution to address multip
 * **Team File Sharing:** A common file share is needed to store employee onboarding details, executable files, and documents that the team can easily access.
 * **Bi-Directional File Management:** Users should have the ability to copy and manage files seamlessly between their laptops and the cloud.
 
-![The image shows a graphic with various devices and a cloud, labeled "Bella Innovation – Storage Requirements," listing storage for website assets, file sharing for a team, and file management from a laptop.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868529/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Introduction/bella-innovation-storage-requirements.jpg)
+![The image shows a graphic with various devices and a cloud, labeled "Bella Innovation – Storage Requirements," listing storage for website assets, file sharing for a team, and file management from a laptop.](https://kodekloud.com/kk-media/image/upload/v1752868529/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Introduction/bella-innovation-storage-requirements.jpg)
 
 > **lightbulb** In the following sections, we will demonstrate how Azure Storage Accounts can be configured to meet these specific requirements, ensuring both secure data storage and flexible management.
 

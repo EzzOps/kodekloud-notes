@@ -15,9 +15,7 @@ Prepare your local machine to experiment with the OpenAI API. We’ll cover inst
 5. Export `OPENAI_API_KEY`
 6. Verify with `curl` and in Jupyter
 
-<Frame>
-  ![The image outlines six steps for setting up a Python environment with OpenAI and Jupyter, including installing Python, creating a virtual environment, installing modules, obtaining an API key, setting an environment variable, and testing the setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881563/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Configuring-the-Development-Environment/python-environment-setup-openai-jupyter.jpg)
-</Frame>
+![The image outlines six steps for setting up a Python environment with OpenAI and Jupyter, including installing Python, creating a virtual environment, installing modules, obtaining an API key, setting an environment variable, and testing the setup.](https://kodekloud.com/kk-media/image/upload/v1752881563/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Configuring-the-Development-Environment/python-environment-setup-openai-jupyter.jpg)
 
 ***
 

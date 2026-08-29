@@ -27,7 +27,7 @@ Once these signals are collected, Azure moves into the verification stage. Durin
 
 If access is approved, users seamlessly reach the necessary applications and data.
 
-![The image is a flowchart illustrating a conditional access process, showing signals like user location and devices, verification steps such as allowing access or requiring MFA, and access to apps and data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868407/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Conditional-Access/conditional-access-flowchart-signals.jpg)
+![The image is a flowchart illustrating a conditional access process, showing signals like user location and devices, verification steps such as allowing access or requiring MFA, and access to apps and data.](https://kodekloud.com/kk-media/image/upload/v1752868407/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Conditional-Access/conditional-access-flowchart-signals.jpg)
 
 > **lightbulb** Understanding the flow of signals and verification steps is crucial. Each step reinforces your organization's security posture by ensuring that only the appropriate users gain access.
 
@@ -51,7 +51,7 @@ Like verifying a security badge before entry, device-based policies ensure that 
 
 Risk-based policies work alongside Azure Risk Detection. If Azure notices a deviation from the established usage pattern—such as an unexpected login location—it can immediately escalate the response by blocking access or demanding additional verification.
 
-![The image outlines four key features of conditional access: user and group-based policies, location-based policies, device-based policies, and risk-based policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868408/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Conditional-Access/conditional-access-key-features.jpg)
+![The image outlines four key features of conditional access: user and group-based policies, location-based policies, device-based policies, and risk-based policies.](https://kodekloud.com/kk-media/image/upload/v1752868408/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Conditional-Access/conditional-access-key-features.jpg)
 
 ## Benefits of Conditional Access
 
@@ -61,7 +61,7 @@ Implementing Conditional Access in your organization offers a range of benefits:
 * **Flexibility and Control:** Policies can be finely tuned for specific applications, users, or devices, similar to instituting customizable locks for different doors.
 * **Improved User Experience:** By minimizing unnecessary obstacles for legitimate users while effectively keeping out unauthorized access attempts, Conditional Access supports a smooth workflow.
 
-![The image outlines the benefits of conditional access, highlighting enhanced security, flexibility and control, and a streamlined user experience.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868409/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Conditional-Access/conditional-access-benefits-diagram.jpg)
+![The image outlines the benefits of conditional access, highlighting enhanced security, flexibility and control, and a streamlined user experience.](https://kodekloud.com/kk-media/image/upload/v1752868409/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Conditional-Access/conditional-access-benefits-diagram.jpg)
 
 > **lightbulb** Conditional Access is especially beneficial in remote work or Bring Your Own Device (BYOD) environments, where securing access from various locations and devices is critical.
 
@@ -69,6 +69,6 @@ Essentially, Conditional Access functions akin to an "if-then" statement: If a u
 
 In conclusion, Conditional Access forms a foundational element of secure cloud access management, paving the way for a deeper exploration into business-to-business (B2B) and business-to-customer (B2C) concepts within Microsoft Entra.
 
-![The image illustrates a flowchart of conditional access use cases, showing the process from user sign-in to access verification and corporate application access, with options to allow access, require MFA, or block access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868410/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Conditional-Access/conditional-access-flowchart-use-cases.jpg)
+![The image illustrates a flowchart of conditional access use cases, showing the process from user sign-in to access verification and corporate application access, with options to allow access, require MFA, or block access.](https://kodekloud.com/kk-media/image/upload/v1752868410/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Conditional-Access/conditional-access-flowchart-use-cases.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/az900-microsoft-azure-fundamentals/module/89fa8b43-65f9-450e-9f65-ebd0bcd5ca8b/lesson/c2ecfc7c-09a6-421b-9d7b-5a513b6ec18f)

@@ -42,12 +42,12 @@ AppConfig is ideal for various scenarios, including:
 
 * **Feature Flags:** Manage feature toggling without the need to redeploy your application.
 
-![The image is an infographic about AWS AppConfig, highlighting features such as creating and managing configurations, live updates without code changes, rollback capabilities, and validating configuration changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859119/notes-assets/images/AWS-Certified-Developer-Associate-AppConfig/aws-appconfig-infographic-features.jpg)
+![The image is an infographic about AWS AppConfig, highlighting features such as creating and managing configurations, live updates without code changes, rollback capabilities, and validating configuration changes.](https://kodekloud.com/kk-media/image/upload/v1752859119/notes-assets/images/AWS-Certified-Developer-Associate-AppConfig/aws-appconfig-infographic-features.jpg)
 
 * **Allow/Deny Lists:** Simplify the process of updating security and access configurations.
 * **Application Tuning:** Adjust performance parameters centrally for optimal application performance.
 
-![The image outlines three use cases for AppConfig: feature flags, allow/deny lists, and application tuning, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859120/notes-assets/images/AWS-Certified-Developer-Associate-AppConfig/appconfig-use-cases-icons.jpg)
+![The image outlines three use cases for AppConfig: feature flags, allow/deny lists, and application tuning, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752859120/notes-assets/images/AWS-Certified-Developer-Associate-AppConfig/appconfig-use-cases-icons.jpg)
 
 ## How AppConfig Works
 
@@ -62,7 +62,7 @@ The process for implementing AppConfig in your environment involves several key 
 3. **Deploy and Monitor:**\
    Configure your application instances to poll AppConfig for changes. Integrate CloudWatch alarms to monitor configuration changes and trigger rollbacks if any issues are detected.
 
-![The image is a diagram illustrating AWS AppConfig, showing components like Bucket, Parameter Store, and SSM Documents, with processes for validation, polling for config changes, and rollback involving alarms and instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859121/notes-assets/images/AWS-Certified-Developer-Associate-AppConfig/aws-appconfig-diagram-components.jpg)
+![The image is a diagram illustrating AWS AppConfig, showing components like Bucket, Parameter Store, and SSM Documents, with processes for validation, polling for config changes, and rollback involving alarms and instances.](https://kodekloud.com/kk-media/image/upload/v1752859121/notes-assets/images/AWS-Certified-Developer-Associate-AppConfig/aws-appconfig-diagram-components.jpg)
 
 > **lightbulb** AppConfig not only simplifies configuration management but also enhances overall application reliability through its built-in monitoring and rollback mechanisms.
 

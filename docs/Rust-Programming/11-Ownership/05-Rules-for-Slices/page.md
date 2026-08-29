@@ -12,9 +12,7 @@ In this lesson, we explore the essential rules governing slices in Rust, focusin
 
 Rust’s borrow checker enforces these rules, ensuring that your code remains both safe and efficient.
 
-<Callout icon="lightbulb">
-  Always ensure that any slice in your code points to valid and in-scope data. This is crucial to prevent runtime errors and data corruption.
-</Callout>
+> **lightbulb** Always ensure that any slice in your code points to valid and in-scope data. This is crucial to prevent runtime errors and data corruption.
 
 ## Dangling Slice Prevention
 
@@ -109,12 +107,8 @@ fn main() {
 
 This approach ensures that the mutable reference does not conflict with any active immutable references, maintaining Rust’s guarantees for data safety.
 
-<Callout icon="triangle-alert">
-  Mixing mutable and immutable references in overlapping scopes is disallowed in Rust. Always structure your code to manage reference scopes properly, ensuring that mutable references are only introduced once all immutable references have expired.
-</Callout>
+> **triangle-alert** Mixing mutable and immutable references in overlapping scopes is disallowed in Rust. Always structure your code to manage reference scopes properly, ensuring that mutable references are only introduced once all immutable references have expired.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/ccad49f3-5d95-4525-98a1-9336e137725a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/ccad49f3-5d95-4525-98a1-9336e137725a)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/41baa26d-08fe-4d9b-b521-640197f6f5d4" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/41baa26d-08fe-4d9b-b521-640197f6f5d4)

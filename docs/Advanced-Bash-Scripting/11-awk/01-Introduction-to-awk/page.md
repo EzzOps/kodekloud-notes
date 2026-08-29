@@ -17,7 +17,7 @@ Awk is a powerful, domain-specific language for text processing. Whether you’r
 
 Imagine a seating chart stored in `minimovies.txt`, where “Y” means a seat is taken and “N” means it’s available. Awk treats each line as a **record** and each whitespace-separated item as a **field**.
 
-![The image is an "Introduction to awk" diagram showing a table with columns labeled 1 to 5 and rows containing letters "a" to "e" with "y" and "n" indicating whether something is taken or not. A legend explains that "y" means it's taken and "n" means it's not.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868662/notes-assets/images/Advanced-Bash-Scripting-Introduction-to-awk/introduction-to-awk-diagram.jpg)
+![The image is an "Introduction to awk" diagram showing a table with columns labeled 1 to 5 and rows containing letters "a" to "e" with "y" and "n" indicating whether something is taken or not. A legend explains that "y" means it's taken and "n" means it's not.](https://kodekloud.com/kk-media/image/upload/v1752868662/notes-assets/images/Advanced-Bash-Scripting-Introduction-to-awk/introduction-to-awk-diagram.jpg)
 
 * Columns ➔ Fields (`$1`, `$2`, …)
 * Rows ➔ Records (`NR` is the built-in record counter)
@@ -27,6 +27,6 @@ Imagine a seating chart stored in `minimovies.txt`, where “Y” means a seat i
 Step 1: Select the third column (`$3`) for every record.\
 Step 2: Filter for record number 2 using `NR`.
 
-![The image is an introduction to the "awk" command, showing a table with columns labeled a, b, c, d, e, and highlighting column c. It includes instructions for using "awk" to extract column c and create a comparison operation for equality.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868663/notes-assets/images/Advanced-Bash-Scripting-Introduction-to-awk/awk-command-introduction-column-c.jpg)
+![The image is an introduction to the "awk" command, showing a table with columns labeled a, b, c, d, e, and highlighting column c. It includes instructions for using "awk" to extract column c and create a comparison operation for equality.](https://kodekloud.com/kk-media/image/upload/v1752868663/notes-assets/images/Advanced-Bash-Scripting-Introduction-to-awk/awk-command-introduction-column-c.jpg)
 
 ```bash theme={null}

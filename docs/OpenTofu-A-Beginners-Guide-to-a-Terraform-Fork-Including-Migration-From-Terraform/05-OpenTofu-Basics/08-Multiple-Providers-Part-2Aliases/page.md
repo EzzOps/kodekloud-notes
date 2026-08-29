@@ -26,11 +26,9 @@ That’s it for this lab. Thank you for following along!
 * [OpenTofu GitHub Repository](https://github.com/OpenTofu)
 * [Terraform Local Provider](https://registry.terraform.io/providers/hashicorp/local/latest)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/2fd9cf67-3105-4688-bc49-25da6c99e3f3" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/2fd9cf67-3105-4688-bc49-25da6c99e3f3)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/84672ea0-e48d-476e-b0c2-aea7a86a732a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/84672ea0-e48d-476e-b0c2-aea7a86a732a)
 
 
 # Multiple Providers Part 2Aliases
@@ -104,9 +102,7 @@ resource "aws_key_pair" "beta" {
 * `alpha` continues to use the **default** AWS provider (`us-east-1`).
 * `beta` now uses the **aws.central** provider (`ca-central-1`).
 
-<Callout icon="lightbulb">
-  Provider aliases are ideal for multi-region or multi-account strategies in a single configuration. You can also combine aliases with workspaces or backends for more complex deployments.
-</Callout>
+> **lightbulb** Provider aliases are ideal for multi-region or multi-account strategies in a single configuration. You can also combine aliases with workspaces or backends for more complex deployments.
 
 ## 5. Verify with `tofu show`
 

@@ -8,7 +8,7 @@ In this article, we explore AWS Simple Workflow Service (SWF), a fully managed s
 
 Based on its role as a task coordinator and its ability to construct flexible workflows, SWF shares similarities with [AWS Step Functions](https://aws.amazon.com/step-functions/). While both services offer workflow orchestration, AWS generally recommends using [AWS Step Functions](https://aws.amazon.com/step-functions/) for most scenarios. However, there are cases where SWF provides distinct advantages.
 
-![The image explains the need for SWF (Simple Workflow Service) with three points: State Tracker and Task Coordinator, Workflow Orchestration, and Task Assignment and Scheduling, each accompanied by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864792/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Simple-Workflow-Service/swf-need-state-tracker-orchestration.jpg)
+![The image explains the need for SWF (Simple Workflow Service) with three points: State Tracker and Task Coordinator, Workflow Orchestration, and Task Assignment and Scheduling, each accompanied by an icon.](https://kodekloud.com/kk-media/image/upload/v1752864792/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Simple-Workflow-Service/swf-need-state-tracker-orchestration.jpg)
 
 > **lightbulb** One key scenario for preferring SWF over [AWS Step Functions](https://aws.amazon.com/step-functions/) is when your application requires external signals to intervene in the process. For example, if you need to integrate external inputs or trigger child processes from a parent process before returning a result, SWF is a more flexible option. It supports common programming languages—such as Python, JavaScript, Java, or C#—giving you the freedom to implement custom orchestration logic.
 
@@ -22,7 +22,7 @@ Moreover, SWF provides the flexibility to implement workflow logic in the langua
 | Complex Web Backend Operations | Multi-step task management in web applications |
 | Business Process Workflows     | Automating tasks and analytics pipelines       |
 
-![The image displays three features of SWF: "Logical Separation," "Simple," and "Flexible," each represented by a colored card with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864794/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Simple-Workflow-Service/swf-logical-separation-simple-flexible.jpg)
+![The image displays three features of SWF: "Logical Separation," "Simple," and "Flexible," each represented by a colored card with an icon.](https://kodekloud.com/kk-media/image/upload/v1752864794/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Simple-Workflow-Service/swf-logical-separation-simple-flexible.jpg)
 
 > **lightbulb** AWS Simple Workflow Service offers a programmable approach to workflow orchestration, abstracting the complexities of state management and task coordination. Whether you need to manage media processing tasks, build sophisticated web backends, or streamline business processes, SWF is a robust solution tailored to handle complex workflows.
 

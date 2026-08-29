@@ -58,9 +58,7 @@ kubectl apply -f bad-pod.yaml
 
 Because the "if" condition matched and the required label was missing, admission is denied.
 
-<Callout icon="warning">
-  Policies with `failureAction: Enforce` will block resource creation on non-compliance. Use `background` and `failureAction` carefully in production clusters.
-</Callout>
+> **warning** Policies with `failureAction: Enforce` will block resource creation on non-compliance. Use `background` and `failureAction` carefully in production clusters.
 
 ***
 
@@ -250,11 +248,9 @@ These anchors let you write compact, declarative Kyverno validate patterns for c
 * Kyverno GitHub: [https://github.com/kyverno/kyverno](https://github.com/kyverno/kyverno)
 * Kubernetes documentation: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/7e0be25b-ff0d-451f-86c3-c509bdc4a075" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/7e0be25b-ff0d-451f-86c3-c509bdc4a075)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/a0161669-b400-4a56-be96-9830372afa74" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/a0161669-b400-4a56-be96-9830372afa74)
 
 
 # Demo Patterns Operators

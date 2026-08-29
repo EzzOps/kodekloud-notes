@@ -744,6 +744,4 @@ So let's understand the differences
 
 between Azure RBAC and Microsoft Entra ID roles.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/9e0ebfef-0121-402d-bc21-c0c2605ade1e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/9e0ebfef-0121-402d-bc21-c0c2605ade1e)

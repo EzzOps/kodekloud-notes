@@ -43,9 +43,7 @@ def test_unauthorized_user_delete_post(client, test_user, test_posts):
     assert res.status_code == 401
 ```
 
-<Callout icon="lightbulb">
-  Notice that the DELETE HTTP method is used when attempting to delete a post. This ensures that the endpoint is correctly handling HTTP methods and returns the appropriate error code for unauthorized users.
-</Callout>
+> **lightbulb** Notice that the DELETE HTTP method is used when attempting to delete a post. This ensures that the endpoint is correctly handling HTTP methods and returns the appropriate error code for unauthorized users.
 
 ## Authorized User Deletion Tests
 
@@ -97,9 +95,7 @@ def test_delete_other_user_post(authorized_client, test_user, test_posts):
     assert res.status_code == 403
 ```
 
-<Callout icon="triangle-alert">
-  Always ensure that API endpoints enforce proper ownership checks to avoid unauthorized deletions.
-</Callout>
+> **triangle-alert** Always ensure that API endpoints enforce proper ownership checks to avoid unauthorized deletions.
 
 ## Test Output Example
 
@@ -139,6 +135,4 @@ tests/test_posts.py::test_delete_other_user_post PASSED
 
 This concludes the delete tests for our posts. In the next lesson, we will review procedures for updating posts, further enhancing your API's robustness and security.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/0a0b6597-f851-43d9-8ecb-4a2529a66282" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/0a0b6597-f851-43d9-8ecb-4a2529a66282)

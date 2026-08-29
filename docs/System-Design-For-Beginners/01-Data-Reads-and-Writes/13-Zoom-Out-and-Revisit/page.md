@@ -16,9 +16,7 @@ Session management
 
 * All user login sessions are stored centrally in Redis. Centralized sessions let any app server authenticate a user without sticky sessions, enabling seamless scaling and server replacement.
 
-<Callout icon="lightbulb">
-  Store sessions in a dedicated Redis cluster configured with persistence (RDB/AOF), eviction policies, and clustering to avoid session loss and bottlenecks. For very high security requirements, couple Redis session data with short TTLs and server-side session validation.
-</Callout>
+> **lightbulb** Store sessions in a dedicated Redis cluster configured with persistence (RDB/AOF), eviction policies, and clustering to avoid session loss and bottlenecks. For very high security requirements, couple Redis session data with short TTLs and server-side session validation.
 
 Caching strategies
 
@@ -35,9 +33,7 @@ Primary and read-scale database (Postgres)
 * Structured entities—users, photos, likes, comments, follows—are stored in Postgres with indexed columns for common queries.
 * To scale read throughput, we run one primary that accepts all writes and two read replicas for read traffic. A read load balancer distributes queries to replicas (and optionally the primary).
 
-<Callout icon="warning">
-  Read replicas often replicate asynchronously. Expect replication lag: reads served from replicas may be eventually consistent. Design UX and critical reads to tolerate or avoid stale data (e.g., read-your-writes scenarios).
-</Callout>
+> **warning** Read replicas often replicate asynchronously. Expect replication lag: reads served from replicas may be eventually consistent. Design UX and critical reads to tolerate or avoid stale data (e.g., read-your-writes scenarios).
 
 Additional data stores
 
@@ -77,6 +73,4 @@ If the dataset grows beyond what a single database instance can hold, we can par
 
 This diagram summarizes the complete design so far. As requirements evolve—higher throughput, lower latency, stronger consistency guarantees—we will add components and apply optimizations such as CDN edge caching, async job queues, rate limiting, and more advanced database partitioning.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/7bb42e92-567c-4e82-ba3a-1b74d9d70ea7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/7bb42e92-567c-4e82-ba3a-1b74d9d70ea7)

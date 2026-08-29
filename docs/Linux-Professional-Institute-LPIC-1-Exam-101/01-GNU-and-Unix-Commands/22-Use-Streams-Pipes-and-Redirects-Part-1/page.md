@@ -36,9 +36,7 @@ Make the preceding atom optional:
 egrep -r 'disabled?' /etc/
 ```
 
-<Callout icon="lightbulb">
-  Because grep matches substrings by default, `disabled?` also finds `disables` unless you anchor (`^`, `$`) or use word boundaries (`\b`).
-</Callout>
+> **lightbulb** Because grep matches substrings by default, `disabled?` also finds `disables` unless you anchor (`^`, `$`) or use word boundaries (`\b`).
 
 ## Zero or More with `*`
 
@@ -49,9 +47,7 @@ egrep -r 'disabled?' /etc/
 egrep -r '/dev/.*' /etc/
 ```
 
-<Callout icon="triangle-alert">
-  Unbounded `.*` is greedy and may overmatch. Constrain it with character classes or quantifiers whenever possible.
-</Callout>
+> **triangle-alert** Unbounded `.*` is greedy and may overmatch. Constrain it with character classes or quantifiers whenever possible.
 
 ## Alternation with `|`
 
@@ -117,9 +113,7 @@ Each refinement better aligns with real devices like `/dev/sda`, `/dev/ttyS0`, a
 
 Group subpatterns with parentheses so quantifiers apply to the entire unit:
 
-<Frame>
-  ![The image shows a dark-themed interface with a command line on the left and a mathematical expression evaluation on the right, demonstrating the use of subexpressions with parentheses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881409/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Search-Text-Files-Using-Regular-Expressions-Part-1-Understand-the-differences-between-basic-and-extended-regular-expressions/dark-interface-command-line-math-evaluation.jpg)
-</Frame>
+![The image shows a dark-themed interface with a command line on the left and a mathematical expression evaluation on the right, demonstrating the use of subexpressions with parentheses.](https://kodekloud.com/kk-media/image/upload/v1752881409/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Search-Text-Files-Using-Regular-Expressions-Part-1-Understand-the-differences-between-basic-and-extended-regular-expressions/dark-interface-command-line-math-evaluation.jpg)
 
 ```bash theme={null}
 egrep -r '/dev/([a-z]*[0-9]?)+ ' /etc/
@@ -145,9 +139,7 @@ Mastering EREs in `grep`, `egrep`, `sed`, and related tools empowers you to craf
 * [Regexr – Online Regex Tester](https://regexr.com/)
 * [POSIX Regular Expressions](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap09.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/ce40bbd2-29eb-44ef-9c97-f378e9d0d4d8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/ce40bbd2-29eb-44ef-9c97-f378e9d0d4d8)
 
 
 # Use Streams Pipes and Redirects Part 1
@@ -183,9 +175,7 @@ Linux programs communicate using three standard streams:
 | 1          | stdout (standard output) | Sends regular output (terminal, files) |
 | 2          | stderr (standard error)  | Sends error messages (terminal, files) |
 
-<Frame>
-  ![The image is a diagram illustrating the flow of standard input, output, and error in a command-line environment, showing how data from "file.txt" is processed by the "sort" command, with output directed to a terminal and errors to "errors.txt".](../../../../images/kodekloud.com/kk-media/image/upload/v1752881410/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Use-Streams-Pipes-and-Redirects-Part-1/command-line-input-output-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating the flow of standard input, output, and error in a command-line environment, showing how data from "file.txt" is processed by the "sort" command, with output directed to a terminal and errors to "errors.txt".](https://kodekloud.com/kk-media/image/upload/v1752881410/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Use-Streams-Pipes-and-Redirects-Part-1/command-line-input-output-diagram.jpg)
 
 By default, both `stdout` and `stderr` appear on your terminal. You can redirect them separately:
 
@@ -222,9 +212,7 @@ To save a command’s output to a file (creating or overwriting it), use the `>`
    6
    ```
 
-<Callout icon="triangle-alert">
-  Using `>` always overwrites the target file. You will lose previous contents!
-</Callout>
+> **triangle-alert** Using `>` always overwrites the target file. You will lose previous contents!
 
 ## Appending Output (`>>`)
 
@@ -270,9 +258,7 @@ This filters matching lines while discarding all error messages.
   $ grep -r '^The' /etc/ > all_output.txt 2>&1
   ```
 
-<Callout icon="lightbulb">
-  Order matters: `> all_output.txt 2>&1` merges error output into the same file, while reversing redirects leaves errors on the console.
-</Callout>
+> **lightbulb** Order matters: `> all_output.txt 2>&1` merges error output into the same file, while reversing redirects leaves errors on the console.
 
 ## Redirecting Input (`<`)
 
@@ -379,6 +365,4 @@ USERGROUPS_ENAB     yes
 * [Terraform Registry](https://registry.terraform.io/)
 * [Docker Hub](https://hub.docker.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/ddde1c84-71a5-4d55-a5fe-a8d7f319a260" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/ddde1c84-71a5-4d55-a5fe-a8d7f319a260)

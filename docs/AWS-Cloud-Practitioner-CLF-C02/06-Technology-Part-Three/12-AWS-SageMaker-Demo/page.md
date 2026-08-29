@@ -16,11 +16,11 @@ SageMaker includes several powerful features such as:
 * **Ground Truth** (for dataset labeling)
 * Additional governance options and quick-start jumpstarts
 
-![The image shows the Amazon SageMaker interface, highlighting features for building, training, and deploying machine learning models, with navigation options and setup guides.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862049/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_20.jpg)
+![The image shows the Amazon SageMaker interface, highlighting features for building, training, and deploying machine learning models, with navigation options and setup guides.](https://kodekloud.com/kk-media/image/upload/v1752862049/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_20.jpg)
 
 For this lesson, we focus on SageMaker Studio—an integrated development environment (IDE) designed to streamline access to all SageMaker functionalities. The demonstration environment has been pre-configured, and the necessary workshop materials are already downloaded.
 
-![The image shows the Amazon SageMaker Studio interface, an integrated development environment for machine learning, with sections on features, pricing, and documentation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862051/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_80.jpg)
+![The image shows the Amazon SageMaker Studio interface, an integrated development environment for machine learning, with sections on features, pricing, and documentation.](https://kodekloud.com/kk-media/image/upload/v1752862051/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_80.jpg)
 
 ## Navigating SageMaker Studio and Opening a Notebook
 
@@ -28,7 +28,7 @@ Start by navigating to the folder named "built-in algorithm HPO tabular" and dou
 
 To execute a code cell in the notebook, simply click the play button or use the shortcut Shift+Enter. This interactive approach is ideal for data scientists and ML engineers as it facilitates immediate feedback and iterative development.
 
-![The image shows an Amazon SageMaker Studio interface, setting up a notebook environment with options for image, kernel, instance type, and startup script.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862052/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_120.jpg)
+![The image shows an Amazon SageMaker Studio interface, setting up a notebook environment with options for image, kernel, instance type, and startup script.](https://kodekloud.com/kk-media/image/upload/v1752862052/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SageMaker-Demo/frame_120.jpg)
 
 ## Setting Up the Environment
 

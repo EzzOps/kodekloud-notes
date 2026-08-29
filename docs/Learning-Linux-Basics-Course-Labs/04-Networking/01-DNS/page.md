@@ -105,8 +105,7 @@ nameserver 192.168.1.100
 
 Once set, if a hostname cannot be resolved locally, the system forwards the request to the DNS server. This centralization dramatically simplifies managing IP address changes since updates need to be made only on the DNS server.
 
-<Callout icon="lightbulb">
-  Local `/etc/hosts` entries remain effective for names that do not need to be shared network-wide. They take precedence over DNS records as configured in `/etc/nsswitch.conf`:
+> **lightbulb** Local `/etc/hosts` entries remain effective for names that do not need to be shared network-wide. They take precedence over DNS records as configured in `/etc/nsswitch.conf`:
 
   ```bash theme={null}
   [~]$ cat /etc/nsswitch.conf
@@ -114,7 +113,6 @@ Once set, if a hostname cannot be resolved locally, the system forwards the requ
   hosts:          files dns
   ...
   ```
-</Callout>
 
 For example, to set up a test server that is locally resolved only:
 
@@ -153,9 +151,7 @@ For example, consider Google. Its domain hierarchy is organized as follows:
 * Top-Level Domain (.com, .net, .org, etc.)
 * Subdomains (e.g., maps.google.com, mail.google.com)
 
-<Frame>
-  ![The image illustrates the hierarchy of domain names, showing root, top-level domain (.com), and subdomains (mail, drive, www, maps, apps) under "google".](../../../../images/kodekloud.com/kk-media/image/upload/v1752881123/notes-assets/images/Learning-Linux-Basics-Course-Labs-DNS/frame_650.jpg)
-</Frame>
+![The image illustrates the hierarchy of domain names, showing root, top-level domain (.com), and subdomains (mail, drive, www, maps, apps) under "google".](https://kodekloud.com/kk-media/image/upload/v1752881123/notes-assets/images/Learning-Linux-Basics-Course-Labs-DNS/frame_650.jpg)
 
 When a request such as apps.google.com is made, your organization's DNS server will forward the query if it does not have a record for it:
 
@@ -165,9 +161,7 @@ When a request such as apps.google.com is made, your organization's DNS server w
 
 Internal caching is commonly used to optimize performance, with results stored from a few seconds to several minutes.
 
-<Frame>
-  ![The image illustrates the DNS resolution process for "apps.google.com," showing the hierarchy from organizational DNS to IP address 216.58.221.78.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881125/notes-assets/images/Learning-Linux-Basics-Course-Labs-DNS/frame_740.jpg)
-</Frame>
+![The image illustrates the DNS resolution process for "apps.google.com," showing the hierarchy from organizational DNS to IP address 216.58.221.78.](https://kodekloud.com/kk-media/image/upload/v1752881125/notes-assets/images/Learning-Linux-Basics-Course-Labs-DNS/frame_740.jpg)
 
 ***
 
@@ -183,9 +177,7 @@ Organizations often implement an internal hierarchical structure similar to publ
 
 These records are centrally managed on your internal DNS server.
 
-<Frame>
-  ![The image illustrates a domain structure with "mycompany.com" and subdomains like nfs, web, mail, drive, www, pay, hr, and sql, under "Org DNS."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881126/notes-assets/images/Learning-Linux-Basics-Course-Labs-DNS/frame_800.jpg)
-</Frame>
+![The image illustrates a domain structure with "mycompany.com" and subdomains like nfs, web, mail, drive, www, pay, hr, and sql, under "Org DNS."](https://kodekloud.com/kk-media/image/upload/v1752881126/notes-assets/images/Learning-Linux-Basics-Course-Labs-DNS/frame_800.jpg)
 
 You can simplify local hostname resolution by configuring search domains in your `/etc/resolv.conf` file. This allows short names (e.g., "web") to automatically be expanded to their fully qualified domain names (e.g., "web.mycompany.com"). For example:
 
@@ -232,9 +224,7 @@ DNS servers store various types of records. The most common include:
 
 For example, a food delivery service might be accessible via aliases such as “eat” or “hungry” by using a CNAME record.
 
-<Frame>
-  ![The image shows DNS record types: A, AAAA, and CNAME, with examples of corresponding domain names and IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881127/notes-assets/images/Learning-Linux-Basics-Course-Labs-DNS/frame_970.jpg)
-</Frame>
+![The image shows DNS record types: A, AAAA, and CNAME, with examples of corresponding domain names and IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752881127/notes-assets/images/Learning-Linux-Basics-Course-Labs-DNS/frame_970.jpg)
 
 To troubleshoot DNS resolution without interference from local `/etc/hosts` entries, you can use diagnostic tools such as `nslookup` and `dig`. For example, the `nslookup` command directly queries your DNS server:
 
@@ -279,8 +269,6 @@ www.google.com.       245     IN      A       64.233.177.99
 
 In the upcoming practice exercises, you will work through hands-on labs focused on viewing, configuring, and troubleshooting DNS in a lab environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/beae84be-64d2-41b6-b807-575f4107dfc9/lesson/8e0ed154-45ec-4b40-92e2-80167da32dc8" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/beae84be-64d2-41b6-b807-575f4107dfc9/lesson/8e0ed154-45ec-4b40-92e2-80167da32dc8)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/beae84be-64d2-41b6-b807-575f4107dfc9/lesson/6d17b286-b673-4733-aede-7e9827973306" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/beae84be-64d2-41b6-b807-575f4107dfc9/lesson/6d17b286-b673-4733-aede-7e9827973306)

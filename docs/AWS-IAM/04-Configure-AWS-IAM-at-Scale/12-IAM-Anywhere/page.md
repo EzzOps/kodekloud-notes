@@ -21,7 +21,7 @@ External servers, hybrid clouds, and non-AWS environments often require access t
 3. Register your Certificate Authority (CA) with IAM Roles Anywhere
 4. Request temporary AWS credentials by presenting a certificate
 
-![The image is a diagram illustrating how servers outside of AWS can access AWS resources using IAM Roles Anywhere and Public Key Infrastructure (PKI). It shows components like applications, hybrid cloud, and compute outside of AWS, connecting to AWS Cloud services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862968/notes-assets/images/AWS-IAM-IAM-Anywhere/aws-iam-roles-pki-diagram.jpg)
+![The image is a diagram illustrating how servers outside of AWS can access AWS resources using IAM Roles Anywhere and Public Key Infrastructure (PKI). It shows components like applications, hybrid cloud, and compute outside of AWS, connecting to AWS Cloud services.](https://kodekloud.com/kk-media/image/upload/v1752862968/notes-assets/images/AWS-IAM-IAM-Anywhere/aws-iam-roles-pki-diagram.jpg)
 
 When an external workload presents a valid certificate, IAM Roles Anywhere verifies it against your registered CA. Upon successful validation, it issues temporary AWS credentials scoped to an IAM role, granting secure and auditable access to AWS services.
 
@@ -38,7 +38,7 @@ When an external workload presents a valid certificate, IAM Roles Anywhere verif
 
 ## Benefits of IAM Roles Anywhere
 
-![The image is an infographic highlighting the benefits of "IAM Anywhere" for customers, including centralized access management, improved security, and simplified access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862969/notes-assets/images/AWS-IAM-IAM-Anywhere/iam-anywhere-benefits-infographic.jpg)
+![The image is an infographic highlighting the benefits of "IAM Anywhere" for customers, including centralized access management, improved security, and simplified access.](https://kodekloud.com/kk-media/image/upload/v1752862969/notes-assets/images/AWS-IAM-IAM-Anywhere/iam-anywhere-benefits-infographic.jpg)
 
 | Benefit                       | Description                                                          |
 | ----------------------------- | -------------------------------------------------------------------- |

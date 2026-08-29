@@ -42,10 +42,8 @@ remote_state {
 | dynamodb\_table | DynamoDB table for state locking       | `"terraform-locks"`             |
 | encrypt         | Enable server-side encryption          | `true`                          |
 
-<Callout icon="lightbulb">
-  Terragrunt will initialize the backend automatically, but it **won’t** create the S3 bucket or DynamoDB table for you.\
+> **lightbulb** Terragrunt will initialize the backend automatically, but it **won’t** create the S3 bucket or DynamoDB table for you.\
   Ensure these resources exist beforehand.
-</Callout>
 
 ## 2. Initializing Remote State
 
@@ -75,10 +73,8 @@ EOF
 
 This writes a `providers.tf` file in each subdirectory, ensuring all modules use the same AWS region and provider settings.
 
-<Callout icon="triangle-alert">
-  Using `if_exists = "overwrite"` will replace any existing `providers.tf` file in your module directories.\
+> **triangle-alert** Using `if_exists = "overwrite"` will replace any existing `providers.tf` file in your module directories.\
   Backup or merge custom provider configurations if necessary.
-</Callout>
 
 ## 4. Terragrunt Best Practices
 
@@ -87,9 +83,7 @@ This writes a `providers.tf` file in each subdirectory, ensuring all modules use
 * **Use dynamic blocks**: Employ loops and conditional blocks for DRY configurations.
 * **Structure by environment**: Group stages (dev, staging, prod) under separate folders for clarity.
 
-<Frame>
-  ![The image outlines five steps for root configuration and remote state management, including setup, configuration, initialization, provider block generation, and best practices. Each step is represented with an icon and a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884250/notes-assets/images/Terragrunt-for-Beginners-Root-Configuration-and-Remote-State/root-configuration-remote-state-steps.jpg)
-</Frame>
+![The image outlines five steps for root configuration and remote state management, including setup, configuration, initialization, provider block generation, and best practices. Each step is represented with an icon and a brief description.](https://kodekloud.com/kk-media/image/upload/v1752884250/notes-assets/images/Terragrunt-for-Beginners-Root-Configuration-and-Remote-State/root-configuration-remote-state-steps.jpg)
 
 ## References
 
@@ -97,6 +91,4 @@ This writes a `providers.tf` file in each subdirectory, ensuring all modules use
 * [Terraform Remote State](https://www.terraform.io/language/state/remote)
 * [AWS S3 Backend](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/07066843-7439-443b-b2d4-d31be3c50c97/lesson/8b756ac1-22b4-4c8e-970a-bb4763d4207f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/07066843-7439-443b-b2d4-d31be3c50c97/lesson/8b756ac1-22b4-4c8e-970a-bb4763d4207f)

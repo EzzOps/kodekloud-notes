@@ -40,7 +40,7 @@ This article clarifies the terms shell, CLI, terminal, console, TTY, and POSIX c
 
 In this lesson, we’ll clarify the often-interchanged terms—**shell**, **CLI**, **terminal**, **console**, **TTY**, and **POSIX**—and explain what POSIX compliance means for your Unix-like environment. Having a consistent vocabulary will help you follow advanced Bash scripting techniques with confidence.
 
-![The image shows a diagram with interconnected sections labeled with concepts: Shell, CLI, TTY, Terminal, Console, and POSIX. It is titled "Terminology."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868583/notes-assets/images/Advanced-Bash-Scripting-Terminology/terminology-shell-cli-tty-diagram.jpg)
+![The image shows a diagram with interconnected sections labeled with concepts: Shell, CLI, TTY, Terminal, Console, and POSIX. It is titled "Terminology."](https://kodekloud.com/kk-media/image/upload/v1752868583/notes-assets/images/Advanced-Bash-Scripting-Terminology/terminology-shell-cli-tty-diagram.jpg)
 
 ## Shell
 
@@ -80,7 +80,7 @@ A **terminal**, or terminal emulator, is the application window where your CLI s
 
 Originally, a **console** was the physical keyboard-and-display unit directly wired into a machine via a dedicated port. Think of a video game console—hardware designed for one system. Modern usage sometimes treats “console” as synonymous with “terminal,” but the historical distinction remains.
 
-![The image shows a section labeled "Consoles" with icons of a smartphone, laptop, and game controller, alongside a pixelated ghost and a clicking cursor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868584/notes-assets/images/Advanced-Bash-Scripting-Terminology/consoles-smartphone-laptop-game-controller.jpg)
+![The image shows a section labeled "Consoles" with icons of a smartphone, laptop, and game controller, alongside a pixelated ghost and a clicking cursor.](https://kodekloud.com/kk-media/image/upload/v1752868584/notes-assets/images/Advanced-Bash-Scripting-Terminology/consoles-smartphone-laptop-game-controller.jpg)
 
 ## TTY
 

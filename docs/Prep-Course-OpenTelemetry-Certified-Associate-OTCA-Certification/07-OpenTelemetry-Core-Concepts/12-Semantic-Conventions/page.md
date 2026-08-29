@@ -110,9 +110,7 @@ The documentation covers many domains (HTTP, databases, messaging, cloud provide
 
 If you use official instrumentation libraries or auto-instrumentation, many of these attributes are applied for you. You do not need to memorize every attribute, but become familiar with common conventions and consult the docs when adding custom attributes or manual instrumentation.
 
-<Callout icon="lightbulb">
-  You don’t need to memorize every semantic attribute. Use the official OpenTelemetry instrumentation libraries and consult the semantic conventions documentation when defining custom attributes or manual instrumentation.
-</Callout>
+> **lightbulb** You don’t need to memorize every semantic attribute. Use the official OpenTelemetry instrumentation libraries and consult the semantic conventions documentation when defining custom attributes or manual instrumentation.
 
 Summary — key takeaways
 
@@ -132,6 +130,4 @@ Further reading and references
 
 That’s it for this section.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/55ac3503-fecf-40db-bb78-185a6354ad7a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/55ac3503-fecf-40db-bb78-185a6354ad7a)

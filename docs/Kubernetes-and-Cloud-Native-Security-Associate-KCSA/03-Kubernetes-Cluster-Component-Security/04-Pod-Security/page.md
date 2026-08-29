@@ -21,21 +21,15 @@ curl http://localhost:8001
 }
 ```
 
-<Callout icon="lightbulb">
-  By default, `kubectl proxy` listens only on the loopback interface (127.0.0.1) for security.
-</Callout>
+> **lightbulb** By default, `kubectl proxy` listens only on the loopback interface (127.0.0.1) for security.
 
-<Callout icon="triangle-alert">
-  Avoid exposing the proxy on public IPs without proper authentication controls.
-</Callout>
+> **triangle-alert** Avoid exposing the proxy on public IPs without proper authentication controls.
 
 ## 3. Accessing In-Cluster Services via Proxy
 
 You can also reach Services of type `ClusterIP` inside the cluster through the proxy. For example, to access an NGINX Service in the `default` namespace:
 
-<Frame>
-  ![The image illustrates the architecture of a Kubectl Proxy setup, showing the connection between a laptop running Kubectl and a Kubernetes cluster's API server through specific ports.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880747/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Client-Security-kubectl-proxy-port-forward/kubectl-proxy-architecture-diagram.jpg)
-</Frame>
+![The image illustrates the architecture of a Kubectl Proxy setup, showing the connection between a laptop running Kubectl and a Kubernetes cluster's API server through specific ports.](https://kodekloud.com/kk-media/image/upload/v1752880747/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Client-Security-kubectl-proxy-port-forward/kubectl-proxy-architecture-diagram.jpg)
 
 ```bash theme={null}
 curl http://localhost:8001/api/v1/namespaces/default/services/nginx/proxy/
@@ -76,9 +70,7 @@ Now, visiting `http://localhost:8080` sends traffic through the API server to th
 * [kubectl proxy Reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#proxy)
 * [kubectl port-forward Reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#port-forward)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/50710279-96bd-47b6-a146-9527b3f8187c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/50710279-96bd-47b6-a146-9527b3f8187c)
 
 
 # Pod Security
@@ -126,17 +118,13 @@ spec:
 * `hostPath` volume\
   Exposes the host file system, increasing your cluster’s attack surface.
 
-<Callout icon="triangle-alert">
-  Allowing `privileged` containers or `hostPath` volumes can compromise the security and stability of your entire cluster.
-</Callout>
+> **triangle-alert** Allowing `privileged` containers or `hostPath` volumes can compromise the security and stability of your entire cluster.
 
 ## Evolution of Pod Security in Kubernetes
 
 Kubernetes originally enforced Pod restrictions through **Pod Security Policies (PSP)**. As of **v1.25**, PSP was removed in favor of the simpler, namespace-scoped **Pod Security Admission** (PSA) and **Pod Security Standards** (PSS), which are now stable.
 
-<Frame>
-  ![The image outlines changes in pod security, noting the removal of Pod Security Policy (PSP) in version 1.25 and the stability of Pod Security Admission (PSA) and Pod Security Standards (PSS) in the same version.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880748/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Pod-Security/pod-security-changes-1-25.jpg)
-</Frame>
+![The image outlines changes in pod security, noting the removal of Pod Security Policy (PSP) in version 1.25 and the stability of Pod Security Admission (PSA) and Pod Security Standards (PSS) in the same version.](https://kodekloud.com/kk-media/image/upload/v1752880748/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Pod-Security/pod-security-changes-1-25.jpg)
 
 ## Pod Security Policies (PSP)
 
@@ -246,9 +234,7 @@ roleRef:
   name: psp-example-role
 ```
 
-<Callout icon="triangle-alert">
-  Without these RBAC bindings, **all** Pod creation requests will be denied once the PSP admission plugin is enabled.
-</Callout>
+> **triangle-alert** Without these RBAC bindings, **all** Pod creation requests will be denied once the PSP admission plugin is enabled.
 
 ## Common Challenges with PSP
 
@@ -282,6 +268,4 @@ Pod Security Admission and Pod Security Standards simplify namespace-level enfor
 2. Choose a Pod Security Standard (`restricted`, `baseline`, `privileged`) per namespace.
 3. Monitor audit events before enforcing stricter policies.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/59805c3e-4067-497b-ba44-6a7f0c546892" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/ca772db3-53aa-44c1-b424-3d32a046b683/lesson/59805c3e-4067-497b-ba44-6a7f0c546892)

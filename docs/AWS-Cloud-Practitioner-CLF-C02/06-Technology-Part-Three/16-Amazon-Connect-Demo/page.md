@@ -17,30 +17,30 @@ In this guide, we demonstrate how to set up a basic virtual contact center using
    Begin by adding a new instance. In this setup, we are using Amazon Connect’s native user directory, without external directory or SAML-based integration.
    * Name the instance “KodeKloudConnect.myConnect.aws” and click **Next**.
 
-![The image shows the "Set identity" page in Amazon Connect, where users can choose identity management options and set a custom access URL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862077/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_40.jpg)
+![The image shows the "Set identity" page in Amazon Connect, where users can choose identity management options and set a custom access URL.](https://kodekloud.com/kk-media/image/upload/v1752862077/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_40.jpg)
 
 3. **Administrator Setup:**\
    Provide administrator credentials by entering the username “admin,” a memorable password, and an email address such as [Michael@KodeKloud.com](mailto:Michael@KodeKloud.com).
 
-![The image shows an Amazon Connect interface for adding an administrator, with fields for name, username, password, and email.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862079/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_70.jpg)
+![The image shows an Amazon Connect interface for adding an administrator, with fields for name, username, password, and email.](https://kodekloud.com/kk-media/image/upload/v1752862079/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_70.jpg)
 
 4. **Telephony and Data Storage:**\
    Since this is a contact center instance, enable both incoming and outgoing calls. The default data storage configuration automatically creates an S3 bucket.
    * Select the “Amazon Connect bucket” option and click **Next**.
 
-![The image shows an Amazon Connect data storage setup screen, detailing permissions, S3 bucket information, and options for enabling customer profiles and customizing data storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862080/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_80.jpg)
+![The image shows an Amazon Connect data storage setup screen, detailing permissions, S3 bucket information, and options for enabling customer profiles and customizing data storage.](https://kodekloud.com/kk-media/image/upload/v1752862080/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_80.jpg)
 
 5. **Review Settings:**\
    Verify all the settings on the summary page—identity management, telephony options, flow logs, encryption keys, and administrator details—before clicking **Create Instance**.
 
-![The image shows an Amazon Connect setup interface, detailing identity management, administrator details, telephony options, and data storage settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862081/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_100.jpg)
+![The image shows an Amazon Connect setup interface, detailing identity management, administrator details, telephony options, and data storage settings.](https://kodekloud.com/kk-media/image/upload/v1752862081/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_100.jpg)
 
 6. **Instance Activation:**\
    Once the instance status changes to **Active**, a unique URL will be provided. Click this URL (it will open in a new tab) and log in using the admin credentials. The initial dashboard allows configuration of queues, routing profiles, and agent settings.
 
-![The image shows the Amazon Connect dashboard with a virtual contact center instance named "kodekloudconnect," which is active and supports inbound and outbound telephony.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862082/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_190.jpg)
+![The image shows the Amazon Connect dashboard with a virtual contact center instance named "kodekloudconnect," which is active and supports inbound and outbound telephony.](https://kodekloud.com/kk-media/image/upload/v1752862082/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_190.jpg)
 
-![The image shows the Amazon Connect dashboard with configuration steps for setting up communication channels, hours of operation, queues, prompts, flows, and routing profiles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862084/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_220.jpg)
+![The image shows the Amazon Connect dashboard with configuration steps for setting up communication channels, hours of operation, queues, prompts, flows, and routing profiles.](https://kodekloud.com/kk-media/image/upload/v1752862084/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_220.jpg)
 
 > **lightbulb** Ensure that the instance is fully active and accessible via the provided URL before proceeding to further configurations.
 
@@ -58,7 +58,7 @@ Proper configuration of hours and queues is essential for efficient call routing
 4. Set the time zone to US Eastern, then define the working days (Monday through Friday) with operating hours from 8 AM to 5 PM.
 5. Click **Save**.
 
-![The image shows an Amazon Connect interface for setting IT helpdesk hours, with a schedule from Monday to Friday, 8 AM to 5 PM, in the US/Eastern timezone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862085/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_320.jpg)
+![The image shows an Amazon Connect interface for setting IT helpdesk hours, with a schedule from Monday to Friday, 8 AM to 5 PM, in the US/Eastern timezone.](https://kodekloud.com/kk-media/image/upload/v1752862085/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_320.jpg)
 
 ### Creating Queues
 
@@ -66,7 +66,7 @@ Proper configuration of hours and queues is essential for efficient call routing
 2. For the first queue, named "return to hardware," select “IT helpdesk default hours” as the operating hours. Optionally, specify the maximum contacts and quick connects before clicking **Save**.
 3. Repeat the process for the second queue, "IT helpdesk tech support," with similar settings and click **Save**.
 
-![The image shows an Amazon Connect interface for adding a queue, including queue details, hours of operation, and outbound caller configuration settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862086/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_370.jpg)
+![The image shows an Amazon Connect interface for adding a queue, including queue details, hours of operation, and outbound caller configuration settings.](https://kodekloud.com/kk-media/image/upload/v1752862086/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_370.jpg)
 
 ***
 
@@ -83,11 +83,11 @@ Routing and security profiles are crucial for directing contacts to the right ag
 5. Enable Chat and Task channels if needed.
 6. Click **Save**.
 
-![The image shows an Amazon Connect interface for adding a routing profile, detailing channel settings and queue configurations for voice, chat, and task channels.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862088/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_480.jpg)
+![The image shows an Amazon Connect interface for adding a routing profile, detailing channel settings and queue configurations for voice, chat, and task channels.](https://kodekloud.com/kk-media/image/upload/v1752862088/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_480.jpg)
 
 After saving, verify that the new routing profile appears alongside the basic routing profile.
 
-![The image shows an Amazon Connect interface for adding a routing profile, with options to assign queues, set priorities, and configure outbound queue settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862089/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_530.jpg)
+![The image shows an Amazon Connect interface for adding a routing profile, with options to assign queues, set priorities, and configure outbound queue settings.](https://kodekloud.com/kk-media/image/upload/v1752862089/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_530.jpg)
 
 ### Reviewing Security Profiles
 
@@ -98,9 +98,9 @@ Security profiles determine role-based permissions for agents and managers.
 3. Click the **Agent** profile and examine the permissions under the **Contact Control Panel**. Confirm that contact lens data, Customer Profiles, Agent Applications, and Wisdom settings are properly enabled.
 4. Click **Save** after confirming the settings.
 
-![The image shows an Amazon Connect interface displaying security profiles for roles like Agent, CallCenterManager, and QualityAnalyst, with associated permissions and analytics features listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862090/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_580.jpg)
+![The image shows an Amazon Connect interface displaying security profiles for roles like Agent, CallCenterManager, and QualityAnalyst, with associated permissions and analytics features listed.](https://kodekloud.com/kk-media/image/upload/v1752862090/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_580.jpg)
 
-![The image shows an Amazon Connect interface for editing security profile permissions, including routing, user permissions, and contact control panel access settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862092/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_600.jpg)
+![The image shows an Amazon Connect interface for editing security profile permissions, including routing, user permissions, and contact control panel access settings.](https://kodekloud.com/kk-media/image/upload/v1752862092/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_600.jpg)
 
 ***
 
@@ -115,11 +115,11 @@ Create a user to serve as an agent with the necessary profiles and settings.
 5. Configure additional settings such as softphone usage and after-call work timeout (e.g., 5 seconds). Remember, setting the timeout to zero will keep the call active until manually closed.
 6. Click **Save**.
 
-![The image shows an Amazon Connect interface for adding a user, with fields for login, email, and settings like security and routing profiles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862093/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_700.jpg)
+![The image shows an Amazon Connect interface for adding a user, with fields for login, email, and settings like security and routing profiles.](https://kodekloud.com/kk-media/image/upload/v1752862093/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_700.jpg)
 
 Verify that the new agent appears alongside the admin user.
 
-![The image shows an Amazon Connect user management interface with a list of users, their profiles, and settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862095/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_770.jpg)
+![The image shows an Amazon Connect user management interface with a list of users, their profiles, and settings.](https://kodekloud.com/kk-media/image/upload/v1752862095/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_770.jpg)
 
 ***
 
@@ -137,7 +137,7 @@ Contact flows manage the handling of incoming calls. This example covers two flo
    * **Set Recording and Analytics:**\
      Add a **Set Recording and Analytics Behavior** block. Configure it to enable call recording for both the agent and customer, and enable Contact Lens conversational analysis, speech analytics, and chat analytics. Connect the "in-hours" branch from the previous block.
 
-![The image shows an Amazon Connect contact flow diagram for an IT help desk, detailing steps like checking hours of operation and setting recording and analytics behavior.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862096/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_860.jpg)
+![The image shows an Amazon Connect contact flow diagram for an IT help desk, detailing steps like checking hours of operation and setting recording and analytics behavior.](https://kodekloud.com/kk-media/image/upload/v1752862096/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_860.jpg)
 
 * **Transfer to Queue:**\
   Add a **Transfer to Queue** block linked to the success branch of the recording block.
@@ -146,7 +146,7 @@ Contact flows manage the handling of incoming calls. This example covers two flo
 * **Disconnect:**\
   Optionally, add a **Disconnect** block after handling the transfer.
 
-![The image shows an Amazon Connect contact flow diagram for an IT help desk, detailing steps like checking hours, transferring to a queue, and playing prompts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862098/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_1160.jpg)
+![The image shows an Amazon Connect contact flow diagram for an IT help desk, detailing steps like checking hours, transferring to a queue, and playing prompts.](https://kodekloud.com/kk-media/image/upload/v1752862098/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_1160.jpg)
 
 4. Review all branch connections, then click **Save** and **Publish**.
 
@@ -160,14 +160,14 @@ Contact flows manage the handling of incoming calls. This example covers two flo
    * **Set Voice:**\
      Insert a **Set Voice** block and choose the default voice (for example, Joanna for US English).
 
-![The image shows an Amazon Connect contact flow diagram for an IT help desk, detailing steps like setting voice, working queue, and transferring to flow.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862099/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_1570.jpg)
+![The image shows an Amazon Connect contact flow diagram for an IT help desk, detailing steps like setting voice, working queue, and transferring to flow.](https://kodekloud.com/kk-media/image/upload/v1752862099/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_1570.jpg)
 
 * **Play Welcome Prompt:**\
   Add a **Play Prompt** block with text-to-speech configured to deliver a welcome message (e.g., “Welcome to the Blunder Muffin IT Help Desk.”) and connect it to the **Set Voice** block.
 * **Set Working Queue and Transfer:**\
   Insert a **Set Working Queue** block and select the tech support queue. Then, add a **Transfer to Queue** block that uses this working queue. (If issues occur with the dropdown, ensure that the transfer flow is published.)
 
-![The image shows an Amazon Connect contact flow diagram with various blocks for checking hours, transferring to queue, and playing prompts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862100/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_1680.jpg)
+![The image shows an Amazon Connect contact flow diagram with various blocks for checking hours, transferring to queue, and playing prompts.](https://kodekloud.com/kk-media/image/upload/v1752862100/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_1680.jpg)
 
 4. Make sure the flow ends correctly with termination and disconnect, then click **Save** and **Publish**.
 
@@ -182,9 +182,9 @@ To receive inbound calls, you need to claim a phone number for your Amazon Conne
 3. Select the United States (or another country of your choice) and, in the **Flow IVR** field, select your main contact flow.
 4. Attempt to claim the number. If you encounter an error (for example, due to country prefix or business address requirements), try selecting another country (such as Mexico) if available.
 
-![The image shows an Amazon Connect interface for claiming a phone number, with an error message indicating a failure to claim the selected number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862101/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_1800.jpg)
+![The image shows an Amazon Connect interface for claiming a phone number, with an error message indicating a failure to claim the selected number.](https://kodekloud.com/kk-media/image/upload/v1752862101/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_1800.jpg)
 
-![The image shows an Amazon Connect interface for claiming a phone number, with a dropdown menu for selecting country codes. A message indicates a failed claim attempt.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862102/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_1830.jpg)
+![The image shows an Amazon Connect interface for claiming a phone number, with a dropdown menu for selecting country codes. A message indicates a failed claim attempt.](https://kodekloud.com/kk-media/image/upload/v1752862102/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_1830.jpg)
 
 Once successfully claimed, copy the provided phone number.
 
@@ -197,7 +197,7 @@ Once successfully claimed, copy the provided phone number.
 3. Allow access to your microphone when prompted.
 4. Create a caller profile by clicking your profile button and entering details such as name, gender, and date of birth, then click **Save**.
 
-![The image shows a customer profile creation form with fields for name, gender, party type, and date of birth, alongside a sidebar with agent options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862104/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_1940.jpg)
+![The image shows a customer profile creation form with fields for name, gender, party type, and date of birth, alongside a sidebar with agent options.](https://kodekloud.com/kk-media/image/upload/v1752862104/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Amazon-Connect-Demo/frame_1940.jpg)
 
 5. Use a cell phone to dial the claimed phone number (for example, 5255-9156-9300). If you call outside operating hours (after 5 PM), you should hear a message similar to:\
    “Welcome to the Flutter Midland IT Help Desk. The help desk is currently closed. Working hours are Monday to Friday from 8 AM…”\

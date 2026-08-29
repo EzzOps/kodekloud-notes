@@ -21,9 +21,7 @@ Ensure you have OpenTofu installed and accessible in your `$PATH`. We will work 
 
 Initially, this directory contains only `main.tf`.
 
-<Callout icon="lightbulb">
-  Always run `opentofu init` before performing other commands to download necessary provider plugins and create the `.terraform` folder.
-</Callout>
+> **lightbulb** Always run `opentofu init` before performing other commands to download necessary provider plugins and create the `.terraform` folder.
 
 ***
 
@@ -53,9 +51,7 @@ resource "local_file" "more-things-to-do" {
 }
 ```
 
-<Frame>
-  ![The image shows a coding environment with a file explorer displaying a directory structure and a code editor with Terraform configuration files. A question about the version of a plugin for a local provider is visible on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882824/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-OpenTofu-Providers/coding-environment-file-explorer-terraform.jpg)
-</Frame>
+![The image shows a coding environment with a file explorer displaying a directory structure and a code editor with Terraform configuration files. A question about the version of a plugin for a local provider is visible on the left.](https://kodekloud.com/kk-media/image/upload/v1752882824/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-OpenTofu-Providers/coding-environment-file-explorer-terraform.jpg)
 
 ***
 
@@ -163,8 +159,6 @@ terraform {
 * [Terraform Language Configuration](https://www.terraform.io/docs/language/index.html)
 * [Local File Provider](https://registry.terraform.io/providers/hashicorp/local/latest/docs/resources/file)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/be7c20bb-e42e-44fc-b48a-316bbc5c0c05" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/be7c20bb-e42e-44fc-b48a-316bbc5c0c05)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/f68bdd98-1f91-43cc-8c24-b58a98b66748" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/f68bdd98-1f91-43cc-8c24-b58a98b66748)

@@ -10,7 +10,7 @@ In this lesson, we explore how to use AWS Security Groups and Network ACLs (NACL
 
 First, create an EC2 instance—named "server one"—using the default Linux AMI. During the networking configuration, select your pre-existing VPC. At this point, a new security group is automatically created with a default inbound rule for SSH (TCP port 22).
 
-![The image shows the AWS EC2 Management Console interface for launching an instance. It includes options for naming the instance, selecting an Amazon Machine Image (AMI), and configuring instance details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859210/notes-assets/images/AWS-Certified-Developer-Associate-Security-Groups-Demo/aws-ec2-management-console-launch-instance.jpg)
+![The image shows the AWS EC2 Management Console interface for launching an instance. It includes options for naming the instance, selecting an Amazon Machine Image (AMI), and configuring instance details.](https://kodekloud.com/kk-media/image/upload/v1752859210/notes-assets/images/AWS-Certified-Developer-Associate-Security-Groups-Demo/aws-ec2-management-console-launch-instance.jpg)
 
 By default, the SSH rule permits access from any IP address (0.0.0.0/0), which is useful for testing. However, in a production environment, it is recommended to restrict SSH access to known IP addresses—for example, your corporate headquarters.
 
@@ -36,7 +36,7 @@ To simulate a restrictive security scenario, you can modify the security group b
 
 After deleting the rule, the inbound rules section will be empty, blocking all incoming traffic.
 
-![The image shows the AWS EC2 Management Console, specifically the "Edit inbound rules" section for a security group, with an SSH rule allowing traffic from any IP address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859211/notes-assets/images/AWS-Certified-Developer-Associate-Security-Groups-Demo/aws-ec2-inbound-rules-ssh.jpg)
+![The image shows the AWS EC2 Management Console, specifically the "Edit inbound rules" section for a security group, with an SSH rule allowing traffic from any IP address.](https://kodekloud.com/kk-media/image/upload/v1752859211/notes-assets/images/AWS-Certified-Developer-Associate-Security-Groups-Demo/aws-ec2-inbound-rules-ssh.jpg)
 
 Now, if you try connecting to the instance via SSH again:
 
@@ -53,7 +53,7 @@ Next, create a new security group for web server use. Name it "web server securi
 * **Inbound:** Allow SSH (TCP port 22) from any IP.
 * **Outbound:** Allow all traffic.
 
-![The image shows an AWS EC2 Management Console screen displaying security group settings, with inbound rules allowing SSH access from any IP and outbound rules allowing all traffic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859212/notes-assets/images/AWS-Certified-Developer-Associate-Security-Groups-Demo/aws-ec2-security-group-settings.jpg)
+![The image shows an AWS EC2 Management Console screen displaying security group settings, with inbound rules allowing SSH access from any IP and outbound rules allowing all traffic.](https://kodekloud.com/kk-media/image/upload/v1752859212/notes-assets/images/AWS-Certified-Developer-Associate-Security-Groups-Demo/aws-ec2-security-group-settings.jpg)
 
 Attach this new security group to your EC2 instance by choosing "Actions" → "Security" → "Change Security Groups." Remove the old group and add the "web server security group." With this configuration, SSH connectivity is restored as the new security group permits traffic on port 22.
 
@@ -97,7 +97,7 @@ To access the web server from your browser using the instance’s public IP, not
 * **HTTP:** Allow TCP port 80 from any IP.
 * **HTTPS:** Allow TCP port 443 from any IP.
 
-![The image shows an AWS EC2 security group settings page where inbound rules are being edited, allowing SSH, HTTP, and HTTPS traffic from any IP address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859213/notes-assets/images/AWS-Certified-Developer-Associate-Security-Groups-Demo/aws-ec2-security-group-inbound-rules.jpg)
+![The image shows an AWS EC2 security group settings page where inbound rules are being edited, allowing SSH, HTTP, and HTTPS traffic from any IP address.](https://kodekloud.com/kk-media/image/upload/v1752859213/notes-assets/images/AWS-Certified-Developer-Associate-Security-Groups-Demo/aws-ec2-security-group-inbound-rules.jpg)
 
 After updating the rules, refresh the security group settings. You should now be able to access the Nginx welcome page via your browser.
 
@@ -122,9 +122,9 @@ AWS allows you to attach multiple security groups to a single EC2 instance. The 
 
 Attach both groups to your instance to collectively allow SSH and HTTP traffic.
 
-![The image shows the AWS EC2 Management Console screen displaying security group settings with inbound and outbound rules. The inbound rule allows SSH access from anywhere, and the outbound rule allows all traffic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859214/notes-assets/images/AWS-Certified-Developer-Associate-Security-Groups-Demo/aws-ec2-security-group-settings-2.jpg)
+![The image shows the AWS EC2 Management Console screen displaying security group settings with inbound and outbound rules. The inbound rule allows SSH access from anywhere, and the outbound rule allows all traffic.](https://kodekloud.com/kk-media/image/upload/v1752859214/notes-assets/images/AWS-Certified-Developer-Associate-Security-Groups-Demo/aws-ec2-security-group-settings-2.jpg)
 
-![The image shows the AWS EC2 Management Console, specifically the security group settings where inbound rules are being configured. The user is selecting HTTP from a dropdown menu to allow HTTP access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859216/notes-assets/images/AWS-Certified-Developer-Associate-Security-Groups-Demo/aws-ec2-security-group-http-settings.jpg)
+![The image shows the AWS EC2 Management Console, specifically the security group settings where inbound rules are being configured. The user is selecting HTTP from a dropdown menu to allow HTTP access.](https://kodekloud.com/kk-media/image/upload/v1752859216/notes-assets/images/AWS-Certified-Developer-Associate-Security-Groups-Demo/aws-ec2-security-group-http-settings.jpg)
 
 To update the security groups for "server one," follow these steps:
 
@@ -141,11 +141,11 @@ Finally, create a security group for your database instance. Name it "database s
 
 One effective method is to set the source to any resource associated with the "allow HTTP" security group. This dynamic approach automatically includes new web servers with that security group without manually updating IP addresses.
 
-![The image shows the AWS Management Console interface for creating a new security group in EC2, with fields for entering the security group name, description, and VPC, along with sections for inbound and outbound rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859217/notes-assets/images/AWS-Certified-Developer-Associate-Security-Groups-Demo/aws-ec2-security-group-console.jpg)
+![The image shows the AWS Management Console interface for creating a new security group in EC2, with fields for entering the security group name, description, and VPC, along with sections for inbound and outbound rules.](https://kodekloud.com/kk-media/image/upload/v1752859217/notes-assets/images/AWS-Certified-Developer-Associate-Security-Groups-Demo/aws-ec2-security-group-console.jpg)
 
-![The image shows an AWS Management Console screen, specifically the security group settings for configuring inbound and outbound rules, with options for setting protocol, port range, and source or destination.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859218/notes-assets/images/AWS-Certified-Developer-Associate-Security-Groups-Demo/aws-management-console-security-groups.jpg)
+![The image shows an AWS Management Console screen, specifically the security group settings for configuring inbound and outbound rules, with options for setting protocol, port range, and source or destination.](https://kodekloud.com/kk-media/image/upload/v1752859218/notes-assets/images/AWS-Certified-Developer-Associate-Security-Groups-Demo/aws-management-console-security-groups.jpg)
 
-![The image shows an AWS EC2 Management Console with details of two running instances, both of type t2.micro, including their instance IDs, public IP addresses, and status checks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859220/notes-assets/images/AWS-Certified-Developer-Associate-Security-Groups-Demo/aws-ec2-management-console-instances-2.jpg)
+![The image shows an AWS EC2 Management Console with details of two running instances, both of type t2.micro, including their instance IDs, public IP addresses, and status checks.](https://kodekloud.com/kk-media/image/upload/v1752859220/notes-assets/images/AWS-Certified-Developer-Associate-Security-Groups-Demo/aws-ec2-management-console-instances-2.jpg)
 
 ## Conclusion
 

@@ -31,11 +31,9 @@ Links and references
 * [JSON Patch (RFC 6902)](https://tools.ietf.org/html/rfc6902)
 * [Kubernetes strategic merge patch](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#defaulting-and-validating)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/c46581d8-ea3d-4ec5-aae4-12c4e3604949" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/c46581d8-ea3d-4ec5-aae4-12c4e3604949)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/2368ac12-d190-4f1f-8c70-ec7f3d6dda3f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/2368ac12-d190-4f1f-8c70-ec7f3d6dda3f)
 
 
 # JSONPatch
@@ -215,9 +213,7 @@ Example: Adding a [Linkerd](https://linkerd.io) annotation whose key contains a 
 
 Here the `/` in `config.linkerd.io/skip-outbound-ports` is encoded as `~1` in the JSON Pointer.
 
-<Callout icon="warning">
-  When constructing JSON Pointer paths, always escape `~` and `/` per RFC 6901. A wrong escape will cause the patch to target an incorrect path or fail entirely.
-</Callout>
+> **warning** When constructing JSON Pointer paths, always escape `~` and `/` per RFC 6901. A wrong escape will cause the patch to target an incorrect path or fail entirely.
 
 ## Limitations and best practices
 
@@ -237,9 +233,7 @@ Best practices:
   <img alt="The image outlines key limitations and summary for using JSONPatch, highlighting its capability for precise operations and two critical limitations related to autogen and conditional anchors." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Remember: mutations occur before validation. Ensure your patches produce a valid final resource that will pass any subsequent validation rules.
-</Callout>
+> **lightbulb** Remember: mutations occur before validation. Ensure your patches produce a valid final resource that will pass any subsequent validation rules.
 
 ## Links and references
 
@@ -249,8 +243,6 @@ Best practices:
 * [Linkerd](https://linkerd.io)
 * [etcd](https://etcd.io)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/10c8d5d0-612d-4a5f-9959-74820c1ab7f7" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/10c8d5d0-612d-4a5f-9959-74820c1ab7f7)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/d03e94f1-706b-4c90-af04-85f9bda10c23" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/d03e94f1-706b-4c90-af04-85f9bda10c23)

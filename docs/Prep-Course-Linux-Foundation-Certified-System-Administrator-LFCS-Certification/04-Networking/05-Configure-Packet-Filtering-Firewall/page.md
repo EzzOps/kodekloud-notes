@@ -8,15 +8,11 @@ In this lesson, you will learn how to configure a firewall on Ubuntu machines to
 
 For example, consider an attacker who sends a malicious network packet designed to exploit an SSH daemon vulnerability. If the SSH daemon processes this packet, your system could be compromised. A packet filtering firewall identifies and rejects such malicious packets before they reach the SSH daemon, ensuring your system remains secure.
 
-<Frame>
-  ![The image illustrates the concept of packet filtering, showing a network data packet and a computer setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881306/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Configure-Packet-Filtering-Firewall/packet-filtering-network-illustration.jpg)
-</Frame>
+![The image illustrates the concept of packet filtering, showing a network data packet and a computer setup.](https://kodekloud.com/kk-media/image/upload/v1752881306/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Configure-Packet-Filtering-Firewall/packet-filtering-network-illustration.jpg)
 
 This preventive mechanism ensures that the SSH daemon never processes exploit attempts. Various types of firewalls exist; for instance, an application firewall monitors specific applications and applies custom rules to allow or block traffic. On Windows, you might allow traffic for Chrome while blocking it for the Windows Calculator. In contrast, Linux comes with a default packet filtering firewall that directly deals with network packets rather than individual applications.
 
-<Frame>
-  ![The image illustrates "Packet Filtering in Linux" with icons representing Linux, a network data packet, and an application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881306/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Configure-Packet-Filtering-Firewall/packet-filtering-linux-diagram.jpg)
-</Frame>
+![The image illustrates "Packet Filtering in Linux" with icons representing Linux, a network data packet, and an application.](https://kodekloud.com/kk-media/image/upload/v1752881306/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Configure-Packet-Filtering-Firewall/packet-filtering-linux-diagram.jpg)
 
 Now, let’s explore how to use a firewall on your Ubuntu machine.
 
@@ -46,9 +42,7 @@ Next, enable UFW:
 sudo ufw enable
 ```
 
-<Callout icon="triangle-alert">
-  Enabling UFW may temporarily disrupt any active SSH connections. Confirm the SSH rule is in place before proceeding.
-</Callout>
+> **triangle-alert** Enabling UFW may temporarily disrupt any active SSH connections. Confirm the SSH rule is in place before proceeding.
 
 To view the detailed status, including active rules and default policies, run:
 
@@ -189,9 +183,7 @@ sudo ufw deny out on enp0s3 to 8.8.8.8
 
 After applying this rule, subsequent ping commands to 8.8.8.8 should fail, indicating that the rule is working as intended.
 
-<Callout icon="lightbulb">
-  For incoming traffic, "to" refers to your machine's destination IP, and "from" specifies the source. For outgoing traffic, the fields are inverted: "from" is your machine’s IP, while "to" is the destination external IP.
-</Callout>
+> **lightbulb** For incoming traffic, "to" refers to your machine's destination IP, and "from" specifies the source. For outgoing traffic, the fields are inverted: "from" is your machine’s IP, while "to" is the destination external IP.
 
 ***
 
@@ -266,8 +258,6 @@ Even if you forget some of the commands, UFW’s help documentation is an excell
 
 Now, let's move on to our next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/7eb2bdde-b7eb-4122-ad57-a153b796d407" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/7eb2bdde-b7eb-4122-ad57-a153b796d407)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/69d09fb0-507e-4d2f-b690-217fb63349be" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/69d09fb0-507e-4d2f-b690-217fb63349be)

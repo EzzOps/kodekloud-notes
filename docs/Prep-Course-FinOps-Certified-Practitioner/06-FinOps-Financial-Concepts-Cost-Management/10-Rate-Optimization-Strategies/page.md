@@ -26,9 +26,7 @@ What the blended rate tells you:
    * Apply consistent unit rates for chargebacks or showbacks so teams are accountable for resource use.
    * Distinguish storage-heavy vs compute-heavy products and allocate indirect/overhead costs fairly.
 
-<Callout icon="lightbulb">
-  Not all cloud providers expose a ready-made blended rate in every billing view. You may need to collect usage and pricing data, centralize it, and compute blended rates using a cost platform, analytics pipeline, or spreadsheet.
-</Callout>
+> **lightbulb** Not all cloud providers expose a ready-made blended rate in every billing view. You may need to collect usage and pricing data, centralize it, and compute blended rates using a cost platform, analytics pipeline, or spreadsheet.
 
 ## Practical tips for implementation
 
@@ -47,11 +45,9 @@ References and further reading
 
 That’s it for this lesson. Thank you for reading.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/1fa93fd8-264e-4d1a-afa3-db12ff97c642" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/1fa93fd8-264e-4d1a-afa3-db12ff97c642)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/61d954b6-3a0d-4a3f-8ee7-855bf133d266" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/61d954b6-3a0d-4a3f-8ee7-855bf133d266)
 
 
 # Rate Optimization Strategies
@@ -126,9 +122,7 @@ Typical impact and tradeoffs
 * RideNow saw 60–70% cost reductions for applicable batch workloads; discounts vary by region and instance type (often 60–90% off on‑demand for many families).
 * Tradeoffs: eviction risk—architect for interruptions and maintain a minimum on‑demand baseline for critical services.
 
-<Callout icon="warning">
-  Spot/preemptible instances can be terminated with little notice. Ensure your workloads are designed for interruption (checkpointing, retries, fault‑tolerance) and keep a minimum on‑demand base capacity to preserve service availability.
-</Callout>
+> **warning** Spot/preemptible instances can be terminated with little notice. Ensure your workloads are designed for interruption (checkpointing, retries, fault‑tolerance) and keep a minimum on‑demand base capacity to preserve service availability.
 
 <Frame>
   <img alt="The image outlines a Spot/Preemptible Instance Strategy, highlighting use cases like batch processing, potential savings of 60-90% off on-demand pricing, implementation with auto-scaling groups, and best practices of combining with on-demand capacity." />
@@ -156,9 +150,7 @@ Typical impact and tradeoffs
 * Example reductions: 50–80% lower storage costs depending on volume and proportion moved.
 * Tradeoffs: higher retrieval latency and potential per‑GB retrieval charges for archived data—include these in total cost analysis.
 
-<Callout icon="lightbulb">
-  Be careful: moving frequently accessed objects into cold storage can increase retrieval costs and latency. Validate access patterns and include retrieval cost in your total cost analysis.
-</Callout>
+> **lightbulb** Be careful: moving frequently accessed objects into cold storage can increase retrieval costs and latency. Validate access patterns and include retrieval cost in your total cost analysis.
 
 <Frame>
   <img alt="The image illustrates storage optimization concepts including tiering, lifecycle management, financial impact, and examples like S3 Intelligent-Tiering and Azure Blob Archive." />
@@ -218,6 +210,4 @@ Links and references
 
 That concludes this lesson on rate optimization. Implement changes incrementally, measure impact, and iterate—cost optimization is a continuous FinOps discipline.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/0f293fe5-e0e5-468d-9657-a4d0b6315deb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/0f293fe5-e0e5-468d-9657-a4d0b6315deb)

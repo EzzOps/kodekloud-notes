@@ -13,11 +13,9 @@ In this section, we'll explore two primary topics:
 
 These built-in features of the Vault Agent—auto-auth, token synchronization, and templating—work together to streamline Vault integration.
 
-<Callout icon="lightbulb">
-  * Vault Server v1.2+ installed and accessible
+> **lightbulb** * Vault Server v1.2+ installed and accessible
   * Supported auto-auth method configured (e.g., Kubernetes, AWS, AppRole)
   * `vault` CLI and Vault Agent binary available in your PATH
-</Callout>
 
 ## Vault Agent Features at a Glance
 
@@ -65,9 +63,7 @@ Vault Agent’s auto-auth feature handles the initial login. Once authenticated,
   }
   ```
 
-<Callout icon="triangle-alert">
-  Ensure the Vault Agent configuration file (`agent.hcl`) has proper file permissions to prevent unauthorized users from reading sensitive settings.
-</Callout>
+> **triangle-alert** Ensure the Vault Agent configuration file (`agent.hcl`) has proper file permissions to prevent unauthorized users from reading sensitive settings.
 
 ## 2. Render Dynamic Templates
 
@@ -96,6 +92,4 @@ Example `config.ctmpl`:
 * [Vault Agent Template Engine](https://www.vaultproject.io/docs/agent/templates)
 * [Vault Configuration HCL](https://www.vaultproject.io/docs/configuration)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/0e6639de-d61c-402b-a161-8f7fc39daf07/lesson/544519ff-f54f-48fd-9133-3db87169cf12" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/0e6639de-d61c-402b-a161-8f7fc39daf07/lesson/544519ff-f54f-48fd-9133-3db87169cf12)

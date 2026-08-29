@@ -22,9 +22,7 @@ aws_dynamodb_table.cars: Creating...
 aws_dynamodb_table.cars: Creation complete after 0s [id=cars]
 ```
 
-<Callout icon="lightbulb">
-  Remember, on-demand billing is ideal for workloads with unpredictable traffic, as you only pay for the read/write operations you use.
-</Callout>
+> **lightbulb** Remember, on-demand billing is ideal for workloads with unpredictable traffic, as you only pay for the read/write operations you use.
 
 ## Inserting Items into the Table
 
@@ -91,9 +89,7 @@ Terraform will produce output indicating that the `aws_dynamodb_table_item.car-i
 Plan: 1 to add, 0 to change, 0 to destroy.
 ```
 
-<Callout icon="triangle-alert">
-  This method is intended for managing a few items. For large-scale data management or bulk operations, consider alternative solutions or data migration strategies.
-</Callout>
+> **triangle-alert** This method is intended for managing a few items. For large-scale data management or bulk operations, consider alternative solutions or data migration strategies.
 
 ## Hands-On Lab
 
@@ -106,11 +102,9 @@ For further reading and more advanced Terraform configurations, refer to the fol
 
 Happy building with Terraform and DynamoDB!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/74690b8e-93ec-4ed5-bf09-621199fc3db0" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/74690b8e-93ec-4ed5-bf09-621199fc3db0)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/4d16fcae-204c-453f-b5eb-c685fede6343" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/4d16fcae-204c-453f-b5eb-c685fede6343)
 
 
 # Getting Started with AWS
@@ -123,17 +117,13 @@ AWS is one of the world’s most popular and innovative cloud computing platform
 
 AWS provides a vast range of services—from core infrastructure technologies such as compute, storage, and databases, to modern innovations like machine learning, artificial intelligence, data lakes and analytics, and the Internet of Things. This extensive portfolio makes it faster, simpler, and more cost-effective to deploy applications, or even to migrate existing on-premises environments to the cloud.
 
-<Frame>
-  ![The image showcases AWS services categorized into Compute, Databases, Storage, Machine Learning, Analytics, and IoT, each represented by icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884235/notes-assets/images/Terraform-Basics-Training-Course-Getting-Started-with-AWS/frame_40.jpg)
-</Frame>
+![The image showcases AWS services categorized into Compute, Databases, Storage, Machine Learning, Analytics, and IoT, each represented by icons.](https://kodekloud.com/kk-media/image/upload/v1752884235/notes-assets/images/Terraform-Basics-Training-Course-Getting-Started-with-AWS/frame_40.jpg)
 
 ## Global Infrastructure
 
 One of AWS’s major strengths is its extensive global cloud infrastructure. AWS operates across numerous globally distributed regions, with multiple data centers, known as availability zones, within each region. This global distribution ensures high availability, resilience, and the ability to scale applications dynamically.
 
-<Frame>
-  ![The image shows a world map highlighting AWS regions globally, with a list of specific regions like US East, Europe, and Asia Pacific.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884236/notes-assets/images/Terraform-Basics-Training-Course-Getting-Started-with-AWS/frame_60.jpg)
-</Frame>
+![The image shows a world map highlighting AWS regions globally, with a list of specific regions like US East, Europe, and Asia Pacific.](https://kodekloud.com/kk-media/image/upload/v1752884236/notes-assets/images/Terraform-Basics-Training-Course-Getting-Started-with-AWS/frame_60.jpg)
 
 As of the time of this recording, AWS operates 77 availability zones within 24 geographic regions, making it one of the most robust cloud infrastructures available.
 
@@ -153,9 +143,7 @@ Below is a summary of some key AWS service categories:
 
 Terraform by HashiCorp is an Infrastructure as Code (IaC) tool designed to simplify the provisioning and management of AWS resources. As an advanced tier technology partner in the Amazon Partner Network, HashiCorp offers a dedicated AWS provider that allows users to define and manage infrastructure using the HashiCorp Configuration Language (HCL). These configuration files are human-readable, version-controlled, and seamlessly integrated with source control systems for enhanced manageability and reusability.
 
-<Callout icon="lightbulb">
-  For more details on Terraform and its AWS provider, visit the [Terraform Documentation](https://www.terraform.io/docs/providers/aws/index.html).
-</Callout>
+> **lightbulb** For more details on Terraform and its AWS provider, visit the [Terraform Documentation](https://www.terraform.io/docs/providers/aws/index.html).
 
 ## Learning Path and Course Outline
 
@@ -163,9 +151,7 @@ In this article, our journey begins with the fundamentals of AWS. We will guide 
 
 Starting with Identity and Access Management (IAM), you will learn the basics of access control and security. Once you’re comfortable with IAM, we will demonstrate how to deploy IAM resources using Terraform. As you progress, additional AWS services such as S3 and DynamoDB will be introduced, along with practical examples of how to configure and manage these resources with Terraform.
 
-<Callout icon="lightbulb">
-  Each lecture and demonstration is complemented by hands-on labs, giving you practical experience in deploying AWS resources using Terraform.
-</Callout>
+> **lightbulb** Each lecture and demonstration is complemented by hands-on labs, giving you practical experience in deploying AWS resources using Terraform.
 
 This step-by-step approach helps you build a strong foundation in AWS while simultaneously gaining proficiency in Terraform—a powerful tool to manage and automate your cloud infrastructure.
 
@@ -177,6 +163,4 @@ This step-by-step approach helps you build a strong foundation in AWS while simu
 
 With this knowledge, you are now ready to explore AWS and harness the power of Infrastructure as Code with Terraform. Enjoy your journey into cloud computing and modern infrastructure management!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/32ddc88e-d4bb-4ddd-b632-44f914ea9be6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/32ddc88e-d4bb-4ddd-b632-44f914ea9be6)

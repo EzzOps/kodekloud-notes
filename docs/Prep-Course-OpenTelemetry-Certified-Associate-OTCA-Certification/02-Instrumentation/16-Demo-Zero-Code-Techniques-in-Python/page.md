@@ -74,9 +74,7 @@ Mapping HTTP responses to span status (recommended defaults)
 | Server error      | `500–599`     | `ERROR`                   | Server-side failures indicate error conditions.                      |
 | Network/exception | N/A           | `ERROR`                   | Exceptions and timeouts should mark the span `ERROR`.                |
 
-<Callout icon="warning">
-  Do not rely solely on span status for debugging. Always record attributes like `http.status_code`, add meaningful events, and call `span.record_exception()` when catching exceptions to preserve stack/exception details.
-</Callout>
+> **warning** Do not rely solely on span status for debugging. Always record attributes like `http.status_code`, add meaningful events, and call `span.record_exception()` when catching exceptions to preserve stack/exception details.
 
 Notes and best practices
 
@@ -97,9 +95,7 @@ Links and references
 * Jaeger Tracing: [https://www.jaegertracing.io/](https://www.jaegertracing.io/)
 * OpenTelemetry semantic conventions (HTTP): [https://opentelemetry.io/docs/reference/specification/trace/semantic\_conventions/http/](https://opentelemetry.io/docs/reference/specification/trace/semantic_conventions/http/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/b38469f5-8819-4aea-8538-63233d729256" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/b38469f5-8819-4aea-8538-63233d729256)
 
 
 # Demo Zero Code Techniques in Python

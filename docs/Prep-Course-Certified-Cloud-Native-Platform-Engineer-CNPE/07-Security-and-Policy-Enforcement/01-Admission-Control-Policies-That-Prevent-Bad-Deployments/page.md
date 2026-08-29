@@ -51,13 +51,9 @@ Bringing it all together — quick checklist
   <img alt="The image presents key takeaways for setting up Grafana, focusing on its integration with Prometheus, datasource setup, panel type matching, and dashboard structuring." />
 </Frame>
 
-<Callout icon="warning">
-  Grafana visualizes metrics but does not store them long-term — ensure Prometheus retention, remote-write, or a long-term store is configured if you need extended history for investigations.
-</Callout>
+> **warning** Grafana visualizes metrics but does not store them long-term — ensure Prometheus retention, remote-write, or a long-term store is configured if you need extended history for investigations.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/1e920eab-1149-4389-8995-a12dd4293354" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/9bd090c8-8d99-4742-b50c-ae63e516e6b9/lesson/1e920eab-1149-4389-8995-a12dd4293354)
 
 
 # Admission Control Policies That Prevent Bad Deployments
@@ -96,9 +92,7 @@ Admission controllers examine the incoming object and can mutate or reject it ba
   <img alt="The image explains gaps in Role-Based Access Control (RBAC), listing issues like containers running as root and using images from untrusted registries, and how admission control can address them." />
 </Frame>
 
-<Callout icon="lightbulb">
-  RBAC and admission control are complementary: RBAC gates who can call the API and which resource types they can act on; admission control inspects the resource content and enforces configuration policies.
-</Callout>
+> **lightbulb** RBAC and admission control are complementary: RBAC gates who can call the API and which resource types they can act on; admission control inspects the resource content and enforces configuration policies.
 
 Where admission control sits in the Kubernetes API request flow
 
@@ -114,9 +108,7 @@ Ordering matters: mutating webhooks must run before validating webhooks because 
   <img alt="The image is a flowchart illustrating the process of admission control in computing, detailing steps from authentication to persisting data." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Mutating webhooks can change objects (for example, inject defaults or sidecars). Validating webhooks only accept or reject. Because mutating webhooks can affect the final object, they must run before validating webhooks.
-</Callout>
+> **lightbulb** Mutating webhooks can change objects (for example, inject defaults or sidecars). Validating webhooks only accept or reject. Because mutating webhooks can affect the final object, they must run before validating webhooks.
 
 Types of admission webhooks
 
@@ -193,10 +185,6 @@ Links and references
 * OPA Gatekeeper: [https://github.com/open-policy-agent/gatekeeper](https://github.com/open-policy-agent/gatekeeper)
 * Kyverno: [https://kyverno.io/](https://kyverno.io/)
 
-<Callout icon="warning">
-  When implementing admission policies, start with non-blocking enforcement (audit mode) where possible, validate policy behavior on a staging cluster, and progressively enforce to avoid unexpected production disruptions.
-</Callout>
+> **warning** When implementing admission policies, start with non-blocking enforcement (audit mode) where possible, validate policy behavior on a staging cluster, and progressively enforce to avoid unexpected production disruptions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/02eb4188-499e-4a59-a749-85042171efd8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/35a7fadb-02d8-4557-a819-2e4dcfa970cc/lesson/02eb4188-499e-4a59-a749-85042171efd8)

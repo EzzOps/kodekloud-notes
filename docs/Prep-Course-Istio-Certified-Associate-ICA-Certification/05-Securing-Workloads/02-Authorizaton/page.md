@@ -95,9 +95,7 @@ spec:
       values: ["https://accounts.google.com"]
 ```
 
-<Callout icon="lightbulb">
-  Important: Entries under `from:` are evaluated as OR between list items. If you combine multiple conditions under a single `source:` block instead of listing them separately, you may unintentionally require all conditions to be true (AND).
-</Callout>
+> **lightbulb** Important: Entries under `from:` are evaluated as OR between list items. If you combine multiple conditions under a single `source:` block instead of listing them separately, you may unintentionally require all conditions to be true (AND).
 
 You can list multiple `operation` blocks under `to:` to allow different method/path combinations for the same rule. Use `selector` to scope policies to specific workloads (by labels) in the namespace.
 

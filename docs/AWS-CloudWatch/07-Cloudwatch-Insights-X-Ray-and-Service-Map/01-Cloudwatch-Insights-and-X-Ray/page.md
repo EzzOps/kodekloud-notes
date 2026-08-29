@@ -33,7 +33,7 @@ AWS X-Ray captures detailed trace data to help you understand service interactio
 * **Request Sampling**: Control the volume of traces collected to balance cost and visibility.
 * **Storage in S3**: Archive and analyze trace data using tools like Athena or EMR.
 
-![The image is a diagram comparing "Operational Visibility" and "X-Ray Integration" features of CloudWatch, highlighting insights and monitoring capabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862496/notes-assets/images/AWS-CloudWatch-Cloudwatch-Insights-and-X-Ray/cloudwatch-operational-visibility-xray-diagram.jpg)
+![The image is a diagram comparing "Operational Visibility" and "X-Ray Integration" features of CloudWatch, highlighting insights and monitoring capabilities.](https://kodekloud.com/kk-media/image/upload/v1752862496/notes-assets/images/AWS-CloudWatch-Cloudwatch-Insights-and-X-Ray/cloudwatch-operational-visibility-xray-diagram.jpg)
 
 > **lightbulb** Integrate X-Ray with CloudWatch Events to trigger automated alerts or Lambda functions when anomalies are detected.\
   Learn more at [AWS X-Ray Developer Guide](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html).
@@ -51,7 +51,7 @@ By correlating CloudWatch metrics and logs with X-Ray traces, you get a holistic
 3. **Actionable Insights**
    * Automate incident response with CloudWatch Events and Lambda.
 
-![The image is a diagram titled "CloudWatch Insights, Operational Visibility, and X-Ray," showing three components: Issue Identification, Anomaly Detection, and Actionable Insights.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862497/notes-assets/images/AWS-CloudWatch-Cloudwatch-Insights-and-X-Ray/cloudwatch-insights-visibility-diagram.jpg)
+![The image is a diagram titled "CloudWatch Insights, Operational Visibility, and X-Ray," showing three components: Issue Identification, Anomaly Detection, and Actionable Insights.](https://kodekloud.com/kk-media/image/upload/v1752862497/notes-assets/images/AWS-CloudWatch-Cloudwatch-Insights-and-X-Ray/cloudwatch-insights-visibility-diagram.jpg)
 
 > **triangle-alert** Ensure that your services are instrumented correctly with the X-Ray SDK and that IAM roles grant permissions for both CloudWatch and X-Ray APIs. Failing to do so may result in incomplete trace data.
 

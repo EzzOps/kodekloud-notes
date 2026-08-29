@@ -59,15 +59,11 @@ A few clarifying points
 * Cluster Autoscaler (and alternatives like Karpenter on AWS) changes node count based on unschedulable Pods and cloud-provider scaling policies.
 * KEDA connects to external event sources (Kafka, SQS, Azure Queue, Prometheus, etc.) and exposes metrics or triggers that drive scaling, including scale-to-zero.
 
-<Callout icon="warning">
-  Avoid uncontrolled interaction between HPA and VPA: if both modify the same resource targets (for example, container CPU requests), they can create oscillations. Use recommended patterns—like VPA in "recommend" mode with HPA controlling replica count—or split responsibilities by workload type.
-</Callout>
+> **warning** Avoid uncontrolled interaction between HPA and VPA: if both modify the same resource targets (for example, container CPU requests), they can create oscillations. Use recommended patterns—like VPA in "recommend" mode with HPA controlling replica count—or split responsibilities by workload type.
 
 We’ll include hands-on examples for manual and automated scaling, plus practical tips to avoid common issues (metric selection, cooldowns, target utilization, and resource fragmentation). Follow along to learn when to use HPA, VPA, CPA, Cluster Autoscaler, and KEDA so your applications remain available during spikes and efficient during low load.
 
-<Callout icon="lightbulb">
-  By the end of this course you'll understand how these autoscalers interact, which to use for different problems, and implementation best practices so applications stay available under changing load.
-</Callout>
+> **lightbulb** By the end of this course you'll understand how these autoscalers interact, which to use for different problems, and implementation best practices so applications stay available under changing load.
 
 Links and references
 
@@ -79,6 +75,4 @@ Links and references
 
 Ready to get started with the first hands-on lesson?
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/66710f67-c094-4a4c-b718-4a031d1ddebe/lesson/7605b2e1-8fbb-4b8c-849e-8f6a8c02f064" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/66710f67-c094-4a4c-b718-4a031d1ddebe/lesson/7605b2e1-8fbb-4b8c-849e-8f6a8c02f064)

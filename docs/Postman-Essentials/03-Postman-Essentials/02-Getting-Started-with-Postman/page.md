@@ -6,15 +6,11 @@ This article provides a guide on using Postman to test API endpoints for creatin
 
 Postman offers both a web client and a desktop client. Although you can use the web client, the desktop version is recommended for its consistent behavior—especially in handling CORS. To download the app, scroll to the bottom of the Postman website and click on the "Download the app" link. Your operating system will be detected automatically, and you'll be directed to the appropriate download page.
 
-<Frame>
-  ![The image shows a webpage for Postman, an API platform, featuring a sign-up section and information about its tools and features. It includes a screenshot of the Postman interface and descriptions of its API tools, workspaces, and governance features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882931/notes-assets/images/Postman-Essentials-Getting-Started-with-Postman/postman-api-platform-webpage-screenshot.jpg)
-</Frame>
+![The image shows a webpage for Postman, an API platform, featuring a sign-up section and information about its tools and features. It includes a screenshot of the Postman interface and descriptions of its API tools, workspaces, and governance features.](https://kodekloud.com/kk-media/image/upload/v1752882931/notes-assets/images/Postman-Essentials-Getting-Started-with-Postman/postman-api-platform-webpage-screenshot.jpg)
 
 When you launch Postman, you'll be greeted by its interface.
 
-<Callout icon="lightbulb">
-  My Postman is set to dark mode, but you can switch themes by navigating to File > Settings > Themes. While signing in allows you to sync requests across devices, it is optional for this demonstration.
-</Callout>
+> **lightbulb** My Postman is set to dark mode, but you can switch themes by navigating to File > Settings > Themes. While signing in allows you to sync requests across devices, it is optional for this demonstration.
 
 ## Reviewing Our API Code
 
@@ -56,9 +52,7 @@ This confirms that the API is operational. In this lesson, we will mimic these c
 
 To create a new request, click the plus icon in Postman to open a new tab. Set the HTTP method to GET—matching our endpoint—and enter the URL (e.g., `http://localhost:4000/`). You can also set headers, input request data in the body, or configure authorization settings if necessary.
 
-<Frame>
-  ![The image shows the Postman application interface with a dropdown menu for selecting HTTP request methods, such as GET, POST, and DELETE. The interface also includes options for creating collections and entering request details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882932/notes-assets/images/Postman-Essentials-Getting-Started-with-Postman/postman-http-request-interface.jpg)
-</Frame>
+![The image shows the Postman application interface with a dropdown menu for selecting HTTP request methods, such as GET, POST, and DELETE. The interface also includes options for creating collections and entering request details.](https://kodekloud.com/kk-media/image/upload/v1752882932/notes-assets/images/Postman-Essentials-Getting-Started-with-Postman/postman-http-request-interface.jpg)
 
 After setting up the request, click the "Send" button. The response pane will display the output, including the body:
 
@@ -72,9 +66,7 @@ Along with the response data, you can review the status code (e.g., 200 for succ
 
 An additional benefit of Postman is the ability to save your requests for future use. Click "Save," assign a request name (e.g., "API Test"), and add it to a collection. Collections are useful for grouping related API requests. For this demonstration, I created an "e-commerce" collection and stored the "API Test" request within it.
 
-<Frame>
-  ![The image shows a Postman interface where a request named "Create Products" is being saved to a collection called "ecommerce." The interface includes options to save or cancel the action.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882933/notes-assets/images/Postman-Essentials-Getting-Started-with-Postman/postman-create-products-ecommerce.jpg)
-</Frame>
+![The image shows a Postman interface where a request named "Create Products" is being saved to a collection called "ecommerce." The interface includes options to save or cancel the action.](https://kodekloud.com/kk-media/image/upload/v1752882933/notes-assets/images/Postman-Essentials-Getting-Started-with-Postman/postman-create-products-ecommerce.jpg)
 
 ### Testing the GET /products Endpoint
 
@@ -132,9 +124,7 @@ To create a product with Postman, set the method to POST and use the URL `http:/
 
 Click "Send." The API should return a 201 status code along with the newly created product details, including an auto-generated `id`, `createdAt`, and `updatedAt` fields. Save this request as "Create Products" in the e-commerce collection.
 
-<Frame>
-  ![The image shows a Postman interface with a "Save Request" dialog open, prompting the user to create a collection to save an API request named "API Test."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882934/notes-assets/images/Postman-Essentials-Getting-Started-with-Postman/postman-save-request-api-test.jpg)
-</Frame>
+![The image shows a Postman interface with a "Save Request" dialog open, prompting the user to create a collection to save an API request named "API Test."](https://kodekloud.com/kk-media/image/upload/v1752882934/notes-assets/images/Postman-Essentials-Getting-Started-with-Postman/postman-save-request-api-test.jpg)
 
 ### Testing the GET /products/:id Endpoint
 
@@ -241,9 +231,7 @@ app.delete("/products/:id", async (req, res) => {
 
 To test deletion, create a DELETE request in Postman with the URL `http://localhost:4000/products/1` (or the corresponding product ID). A successful deletion will return a 204 status code with no content. You can verify the deletion by executing the GET request for products again and confirming that the product list is updated.
 
-<Frame>
-  ![The image shows a Postman interface with a collection of API requests related to an e-commerce application. The "Get Products" request is selected, displaying details like the request type, URL, and response status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882935/notes-assets/images/Postman-Essentials-Getting-Started-with-Postman/postman-ecommerce-api-requests.jpg)
-</Frame>
+![The image shows a Postman interface with a collection of API requests related to an e-commerce application. The "Get Products" request is selected, displaying details like the request type, URL, and response status.](https://kodekloud.com/kk-media/image/upload/v1752882935/notes-assets/images/Postman-Essentials-Getting-Started-with-Postman/postman-ecommerce-api-requests.jpg)
 
 ## Conclusion
 
@@ -251,6 +239,4 @@ This lesson has walked you through the steps of using Postman to test various AP
 
 Happy testing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/postman-essentials/module/0a8a02c7-cab8-4bd9-886e-c7570885146f/lesson/07eb4fd1-4664-49db-b556-14c7a4315888" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/postman-essentials/module/0a8a02c7-cab8-4bd9-886e-c7570885146f/lesson/07eb4fd1-4664-49db-b556-14c7a4315888)

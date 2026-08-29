@@ -28,9 +28,7 @@ my-release-sealed-secrets-76b49fc554-wk717    1/1     Running   0          21s
 storage-provisioner                           1/1     Running   0          13h
 ```
 
-<Callout icon="lightbulb">
-  If any core component is not `Running`, troubleshoot using `kubectl describe pod <pod-name> -n kube-system` or check your cluster’s control-plane logs.
-</Callout>
+> **lightbulb** If any core component is not `Running`, troubleshoot using `kubectl describe pod <pod-name> -n kube-system` or check your cluster’s control-plane logs.
 
 ## 2. Attempt to Fetch the Public Certificate
 
@@ -81,9 +79,7 @@ kubeseal --fetch-cert \
 
 If this completes without errors, you now have `pub-cert.pem` containing the Sealed Secrets controller’s public key.
 
-<Callout icon="lightbulb">
-  You’re ready to use `kubeseal` with `--cert pub-cert.pem` to encrypt your Kubernetes Secrets. Learn more in the [Sealed Secrets documentation](https://github.com/bitnami-labs/sealed-secrets).
-</Callout>
+> **lightbulb** You’re ready to use `kubeseal` with `--cert pub-cert.pem` to encrypt your Kubernetes Secrets. Learn more in the [Sealed Secrets documentation](https://github.com/bitnami-labs/sealed-secrets).
 
 ## Quick Reference Table
 
@@ -99,6 +95,4 @@ If this completes without errors, you now have `pub-cert.pem` containing the Sea
 * [Kubeseal CLI Usage](https://github.com/bitnami-labs/sealed-secrets#kubeseal)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/0f3ed562-f151-48f9-bb8c-8d3a4dbb4fc3/lesson/59fb8d23-93b4-451f-9541-c486dbd250bd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/0f3ed562-f151-48f9-bb8c-8d3a4dbb4fc3/lesson/59fb8d23-93b4-451f-9541-c486dbd250bd)

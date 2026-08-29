@@ -8,11 +8,11 @@ Welcome back, Cloud Practitioners! I'm Michael Forrester, and in this lesson we 
 
 Imagine stepping into a futuristic library where AI/ML tools unlock information effortlessly. Amazon Kendra is a highly accurate and user-friendly enterprise search service that indexes your organizational documents, making it easier than ever to find what you need.
 
-![The image introduces Amazon Kendra, highlighting its features of being accurate and easy to use, with a simple flowchart design.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861976/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Kendra/frame_70.jpg)
+![The image introduces Amazon Kendra, highlighting its features of being accurate and easy to use, with a simple flowchart design.](https://kodekloud.com/kk-media/image/upload/v1752861976/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Kendra/frame_70.jpg)
 
 Kendra functions as a state-of-the-art search engine that indexes all your enterprise documents. Leveraging advanced machine learning, it supports natural language queries such as "What's the latest on Project X?" or "Where is the most recent document on software development standards?" By indexing your company's data, Kendra delivers precise and tailored search results, essentially acting as a customized Google search engine for your enterprise.
 
-![The image highlights Amazon Kendra's features: machine learning, natural language queries, and data indexing, aimed at revolutionizing enterprise search.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861977/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Kendra/frame_110.jpg)
+![The image highlights Amazon Kendra's features: machine learning, natural language queries, and data indexing, aimed at revolutionizing enterprise search.](https://kodekloud.com/kk-media/image/upload/v1752861977/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Kendra/frame_110.jpg)
 
 ## Key Use Cases
 
@@ -24,7 +24,7 @@ Amazon Kendra is particularly beneficial in the following areas:
 
 > **lightbulb** Effective enterprise search and knowledge management are essential for boosting productivity and supporting data-driven decisions.
 
-![The image illustrates general use cases of Amazon Kendra: enterprise search, knowledge management, and customer service, using a flowchart with icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861978/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Kendra/frame_150.jpg)
+![The image illustrates general use cases of Amazon Kendra: enterprise search, knowledge management, and customer service, using a flowchart with icons.](https://kodekloud.com/kk-media/image/upload/v1752861978/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Kendra/frame_150.jpg)
 
 Kendra’s core functionality lies in its ability to quickly provide accurate answers by indexing enterprise data. Its integration of machine learning enables natural language queries, making it especially useful when documents are stored across various systems such as Google Drive, OneDrive, or email platforms.
 
@@ -34,7 +34,7 @@ In modern computing, effective information retrieval is critical. Amazon Kendra 
 
 > **triangle-alert** Unlike generic search engines, Kendra has been engineered for enterprise use. Be mindful when comparing it to traditional solutions that may not offer the same level of domain-specific indexing and natural language support.
 
-![The image illustrates the relevance of modern computing in facilitating informed decision-making, enhancing productivity, and improving customer satisfaction, with a central icon and three connected elements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861980/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Kendra/frame_260.jpg)
+![The image illustrates the relevance of modern computing in facilitating informed decision-making, enhancing productivity, and improving customer satisfaction, with a central icon and three connected elements.](https://kodekloud.com/kk-media/image/upload/v1752861980/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AIML-Kendra/frame_260.jpg)
 
 ## Summary
 

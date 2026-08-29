@@ -8,7 +8,7 @@ Welcome to the second installment of our EBS management series. In this guide, w
 
 In a previous lesson, we moved an EBS volume from one instance to another within the same Availability Zone. Now, we will attach the same EBS volume to Server Three in a different Availability Zone (us-east-1b).
 
-![The image shows an AWS EC2 management console with details of running instances, including instance IDs, types, status checks, and IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859618/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-ec2-management-console-instances.jpg)
+![The image shows an AWS EC2 management console with details of running instances, including instance IDs, types, status checks, and IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752859618/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-ec2-management-console-instances.jpg)
 
 ***
 
@@ -63,7 +63,7 @@ ec2-user@ip-10-0-13-253 ~/ $
 
 After unmounting, refresh your AWS console. Go to the EBS volumes section, select the volume, and detach it. Continue refreshing the console until the volume state changes from "in use" to "available." Now, attempt to attach the volume to Server Three. Because Server Three is in a different Availability Zone (us-east-1b), it won't appear in the available selection list.
 
-![The image shows an AWS EC2 interface for attaching a volume to an instance, with options to select the instance and availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859621/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-ec2-attach-volume-interface.jpg)
+![The image shows an AWS EC2 interface for attaching a volume to an instance, with options to select the instance and availability zone.](https://kodekloud.com/kk-media/image/upload/v1752859621/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-ec2-attach-volume-interface.jpg)
 
 ***
 
@@ -75,11 +75,11 @@ To move the volume to a different Availability Zone, create a snapshot:
 2. Choose **Create Snapshot**.
 3. Optionally, provide a description (e.g., "my snapshot") and review the snapshot details.
 
-![The image shows an Amazon Web Services (AWS) interface for creating a snapshot of an EBS volume. It includes fields for volume ID, description, encryption, and tags, with a "Create snapshot" button.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859623/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-ebs-snapshot-interface.jpg)
+![The image shows an Amazon Web Services (AWS) interface for creating a snapshot of an EBS volume. It includes fields for volume ID, description, encryption, and tags, with a "Create snapshot" button.](https://kodekloud.com/kk-media/image/upload/v1752859623/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-ebs-snapshot-interface.jpg)
 
 After initiating the snapshot, wait until its status shows as "available" (it may initially display as 7% complete). Navigate to the snapshots list to monitor its progress.
 
-![The image shows an AWS EC2 console displaying a list of EBS snapshots with details such as snapshot ID, volume size, and status. The selected snapshot has a size of 10 GiB and is marked as completed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859624/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-ec2-ebs-snapshots-list.jpg)
+![The image shows an AWS EC2 console displaying a list of EBS snapshots with details such as snapshot ID, volume size, and status. The selected snapshot has a size of 10 GiB and is marked as completed.](https://kodekloud.com/kk-media/image/upload/v1752859624/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-ec2-ebs-snapshots-list.jpg)
 
 Next, use the snapshot to create a new volume in the desired Availability Zone (us-east-1b):
 
@@ -89,7 +89,7 @@ Next, use the snapshot to create a new volume in the desired Availability Zone (
 4. Optionally, add a tag such as **Name: EBS clone**.
 5. Create the new volume.
 
-![The image shows a screenshot of AWS volume settings, including options for volume type, size, IOPS, throughput, availability zone, and encryption.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859625/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-volume-settings-screenshot.jpg)
+![The image shows a screenshot of AWS volume settings, including options for volume type, size, IOPS, throughput, availability zone, and encryption.](https://kodekloud.com/kk-media/image/upload/v1752859625/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-volume-settings-screenshot.jpg)
 
 Once the new volume (EBS clone) is available in **us-east-1b**, attach it to Server Three:
 
@@ -97,9 +97,9 @@ Once the new volume (EBS clone) is available in **us-east-1b**, attach it to Ser
 2. Go to **Actions** > **Attach Volume**.
 3. Attach the volume to Server Three.
 
-![The image shows an AWS EC2 dashboard displaying a list of volumes with details such as IOPS, throughput, snapshot, creation date, availability zone, volume state, alarm status, and attached instances. The sidebar includes options for managing instances, images, and elastic block storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859626/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-ec2-dashboard-volumes-details.jpg)
+![The image shows an AWS EC2 dashboard displaying a list of volumes with details such as IOPS, throughput, snapshot, creation date, availability zone, volume state, alarm status, and attached instances. The sidebar includes options for managing instances, images, and elastic block storage.](https://kodekloud.com/kk-media/image/upload/v1752859626/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-ec2-dashboard-volumes-details.jpg)
 
-![The image shows an AWS EC2 interface for attaching a volume to an instance, with options to select the instance and device name. There is a button labeled "Attach volume" at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859627/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-ec2-attach-volume-interface-2.jpg)
+![The image shows an AWS EC2 interface for attaching a volume to an instance, with options to select the instance and device name. There is a button labeled "Attach volume" at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752859627/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-ec2-attach-volume-interface-2.jpg)
 
 ***
 
@@ -159,11 +159,11 @@ If your goal is to attach the same block storage to an EC2 instance in a differe
 3. Provide a description (e.g., "copy of my snapshot") and choose the destination region (for example, US East 2 for Ohio).
 4. Complete the copy process.
 
-![The image shows an AWS interface for copying a snapshot, with a dropdown menu listing various AWS regions. There are options for encryption and adding tags.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859628/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-snapshot-copy-interface.jpg)
+![The image shows an AWS interface for copying a snapshot, with a dropdown menu listing various AWS regions. There are options for encryption and adding tags.](https://kodekloud.com/kk-media/image/upload/v1752859628/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-snapshot-copy-interface.jpg)
 
 Once the snapshot copy is complete, navigate to the snapshots view in the destination region (US East 2) to verify its presence.
 
-![The image shows an AWS EC2 console displaying a list of snapshots, with details such as snapshot ID, volume size, description, storage tier, and status. A green notification at the top indicates a successful snapshot copy creation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859630/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-ec2-snapshots-console-details.jpg)
+![The image shows an AWS EC2 console displaying a list of snapshots, with details such as snapshot ID, volume size, description, storage tier, and status. A green notification at the top indicates a successful snapshot copy creation.](https://kodekloud.com/kk-media/image/upload/v1752859630/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-ec2-snapshots-console-details.jpg)
 
 Create a volume from the copied snapshot by:
 
@@ -172,7 +172,7 @@ Create a volume from the copied snapshot by:
 3. Setting the Availability Zone (for example, us-east-2a).
 4. Once created, attach the new volume to Server Four.
 
-![The image shows an AWS EC2 dashboard displaying a list of volumes with details such as volume ID, type, size, IOPS, throughput, and snapshot information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859630/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-ec2-dashboard-volumes-details-2.jpg)
+![The image shows an AWS EC2 dashboard displaying a list of volumes with details such as volume ID, type, size, IOPS, throughput, and snapshot information.](https://kodekloud.com/kk-media/image/upload/v1752859630/notes-assets/images/AWS-Certified-Developer-Associate-EBS-Demo-2/aws-ec2-dashboard-volumes-details-2.jpg)
 
 ***
 

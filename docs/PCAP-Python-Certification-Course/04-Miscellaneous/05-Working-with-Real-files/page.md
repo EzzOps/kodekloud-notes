@@ -59,9 +59,7 @@ except IOError as e:
     print("I/O error occurred:", strerror(e.errno))
 ```
 
-<Callout icon="lightbulb">
-  If you're processing very large files, consider using an iterative approach (like `readline` or reading chunks) to avoid memory issues.
-</Callout>
+> **lightbulb** If you're processing very large files, consider using an iterative approach (like `readline` or reading chunks) to avoid memory issues.
 
 ## Working with Amorphous Data: Bytearrays
 
@@ -118,14 +116,10 @@ except IOError as e:
     print("I/O error occurred:", strerror(e.errno))
 ```
 
-<Callout icon="lightbulb">
-  In this lesson, we've covered multiple file handling methods in Python. Whether you're reading a file character by character, line by line, or in bulk as a binary file, each approach offers unique benefits depending on your application's requirements.
-</Callout>
+> **lightbulb** In this lesson, we've covered multiple file handling methods in Python. Whether you're reading a file character by character, line by line, or in bulk as a binary file, each approach offers unique benefits depending on your application's requirements.
 
 That concludes this lesson. Now, it's time to apply these examples in your projects to deepen your understanding of file I/O in Python. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/f130fee7-a5f4-4c7f-bc8e-ffd6f1b8fdc1/lesson/64be0314-a04f-464c-b5a1-1e3738828308" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/f130fee7-a5f4-4c7f-bc8e-ffd6f1b8fdc1/lesson/64be0314-a04f-464c-b5a1-1e3738828308)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/f130fee7-a5f4-4c7f-bc8e-ffd6f1b8fdc1/lesson/64766146-18b8-4ed5-a7a6-27dd444af162" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/f130fee7-a5f4-4c7f-bc8e-ffd6f1b8fdc1/lesson/64766146-18b8-4ed5-a7a6-27dd444af162)

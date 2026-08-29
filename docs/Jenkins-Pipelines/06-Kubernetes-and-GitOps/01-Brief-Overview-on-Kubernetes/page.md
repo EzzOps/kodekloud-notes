@@ -23,9 +23,7 @@ A pod is the smallest deployable unit in Kubernetes, representing a single insta
 * Pods follow a specific restart policy where individual containers may be restarted automatically; however, if a pod itself is terminated, it must be recreated manually or by using higher-level constructs.
 * To ensure high availability and consistency, pods are managed through replication controllers or deployments. Deployments offer a declarative update mechanism, allowing you to define your desired application state and let Kubernetes maintain it.
 
-<Callout icon="lightbulb">
-  For more details on pod management, review the [Kubernetes Pods documentation](https://kubernetes.io/docs/concepts/workloads/pods/).
-</Callout>
+> **lightbulb** For more details on pod management, review the [Kubernetes Pods documentation](https://kubernetes.io/docs/concepts/workloads/pods/).
 
 ## Accessing Pods with Services
 
@@ -37,13 +35,9 @@ After the pods are created, external components need to communicate with them re
 * **Load Balancer:** In cloud environments, this service type creates an external load balancer (like AWS ELB or GCP load balancer) to direct traffic to the service. Note that the specific features and costs may vary depending on the provider.
 * **Ingress:** To reduce the number of load balancers, Kubernetes Ingress functions as an alternative mechanism. Ingress manages and routes HTTP and HTTPS traffic based on rules like paths and domain names. Services typically use a ClusterIP type when exposed via Ingress, ensuring controlled and secure access.
 
-<Callout icon="triangle-alert">
-  Be aware that utilizing external load balancers might incur additional costs with your cloud provider. Always check pricing details before extensive deployment.
-</Callout>
+> **triangle-alert** Be aware that utilizing external load balancers might incur additional costs with your cloud provider. Always check pricing details before extensive deployment.
 
-<Frame>
-  ![The image illustrates the basic architecture of Kubernetes, showing the interaction between controller nodes, worker nodes, and various components like pods, services, and ingress. It highlights roles such as developers, admins, and ops, and includes elements like UI, CLI, and load balancing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879705/notes-assets/images/Jenkins-Pipelines-Brief-Overview-on-Kubernetes/kubernetes-architecture-controller-worker-diagram.jpg)
-</Frame>
+![The image illustrates the basic architecture of Kubernetes, showing the interaction between controller nodes, worker nodes, and various components like pods, services, and ingress. It highlights roles such as developers, admins, and ops, and includes elements like UI, CLI, and load balancing.](https://kodekloud.com/kk-media/image/upload/v1752879705/notes-assets/images/Jenkins-Pipelines-Brief-Overview-on-Kubernetes/kubernetes-architecture-controller-worker-diagram.jpg)
 
 ## Additional Resources
 
@@ -55,6 +49,4 @@ For additional insights and detailed guides, explore the following resources:
 
 This comprehensive overview should provide you with a strong foundational understanding of how Kubernetes orchestrates containerized applications. Whether you're getting started or looking to deepen your expertise, Kubernetes offers robust solutions for modern application deployment and management.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/fb6b2c83-178c-4962-b4e6-ca5528721170/lesson/d9f8b01c-c3ea-4fac-9567-b364b63a9fe6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/fb6b2c83-178c-4962-b4e6-ca5528721170/lesson/d9f8b01c-c3ea-4fac-9567-b364b63a9fe6)

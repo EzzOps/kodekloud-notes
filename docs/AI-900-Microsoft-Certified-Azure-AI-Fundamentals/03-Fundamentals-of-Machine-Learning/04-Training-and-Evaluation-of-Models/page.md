@@ -34,7 +34,7 @@ Developing a high-performing model is an iterative process. Various algorithms a
 
 > **lightbulb** While even the best models have a margin of error, a systematic approach to evaluation and refinement helps minimize this error and leads to more reliable predictions.
 
-![The image illustrates the process of model training and evaluation, showing steps from using training data to applying algorithms, creating a model, making predictions, and evaluating the model's performance. It highlights the iterative nature of refining the model with different algorithms and parameters.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857002/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Training-and-Evaluation-of-Models/model-training-evaluation-process.jpg)
+![The image illustrates the process of model training and evaluation, showing steps from using training data to applying algorithms, creating a model, making predictions, and evaluating the model's performance. It highlights the iterative nature of refining the model with different algorithms and parameters.](https://kodekloud.com/kk-media/image/upload/v1752857002/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Training-and-Evaluation-of-Models/model-training-evaluation-process.jpg)
 
 ## Summary
 

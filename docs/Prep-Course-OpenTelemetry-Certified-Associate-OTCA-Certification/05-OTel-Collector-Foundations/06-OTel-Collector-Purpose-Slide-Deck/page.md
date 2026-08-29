@@ -134,9 +134,7 @@ Operator repo and docs: [https://github.com/open-telemetry/opentelemetry-operato
   <img alt="The image illustrates an operator-driven setup concept in Kubernetes, showing a flow from a Custom Resource Definition (CRD) in a YAML file to an operator (controller), and finally to collector pods running in Kubernetes." />
 </Frame>
 
-<Callout icon="lightbulb">
-  For production, prefer validated OCB builds or vendor-supported distributions and deploy collectors declaratively (for example, via the OpenTelemetry Operator) to ensure reproducibility and easier operations.
-</Callout>
+> **lightbulb** For production, prefer validated OCB builds or vendor-supported distributions and deploy collectors declaratively (for example, via the OpenTelemetry Operator) to ensure reproducibility and easier operations.
 
 ## Wrap-up
 
@@ -153,9 +151,7 @@ Operator repo and docs: [https://github.com/open-telemetry/opentelemetry-operato
 * OpenTelemetry Operator: [https://github.com/open-telemetry/opentelemetry-operator](https://github.com/open-telemetry/opentelemetry-operator)
 * OpenTelemetry project: [https://opentelemetry.io/](https://opentelemetry.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/94d2710a-c270-4c49-9e4b-df67653f1b47/lesson/79639a16-6b5a-40d9-9ec8-f0b6d576dd9e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/94d2710a-c270-4c49-9e4b-df67653f1b47/lesson/79639a16-6b5a-40d9-9ec8-f0b6d576dd9e)
 
 
 # OTel Collector Purpose Slide Deck
@@ -282,10 +278,6 @@ Deployment considerations and best practices
   <img alt="The image outlines deployment considerations for a Collector, highlighting the need for a resource allocation plan for CPU and memory usage, reliability through replicas behind a load balancer, and monitoring via health-check and z-pages endpoints." />
 </Frame>
 
-<Callout icon="warning">
-  Always secure collector receivers. Use TLS and mutual TLS (mTLS) where clients must be authenticated, and apply access controls so only authorized services can send telemetry.
-</Callout>
+> **warning** Always secure collector receivers. Use TLS and mutual TLS (mTLS) where clients must be authenticated, and apply access controls so only authorized services can send telemetry.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/94d2710a-c270-4c49-9e4b-df67653f1b47/lesson/c2c3c349-a9bf-4562-87d1-7567b20e78a9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/94d2710a-c270-4c49-9e4b-df67653f1b47/lesson/c2c3c349-a9bf-4562-87d1-7567b20e78a9)

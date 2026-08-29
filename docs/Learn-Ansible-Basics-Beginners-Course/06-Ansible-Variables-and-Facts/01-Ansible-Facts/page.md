@@ -58,17 +58,13 @@ nameserver 8.8.8.8
 
 An effective directory structure for organizing your Ansible roles might look like the image below:
 
-<Frame>
-  ![The image shows a directory structure for "Templates in Roles," including folders for "mysql," "tasks," "handlers," and files like "README.md" and "templates."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881078/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Jinja2-Templates-for-Dynamic-Configs-Demo/frame_460.jpg)
-</Frame>
+![The image shows a directory structure for "Templates in Roles," including folders for "mysql," "tasks," "handlers," and files like "README.md" and "templates."](https://kodekloud.com/kk-media/image/upload/v1752881078/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Jinja2-Templates-for-Dynamic-Configs-Demo/frame_460.jpg)
 
 By leveraging Jinja2 templates and Ansible's extended filters, you can efficiently deploy dynamic configurations across your infrastructure while reducing redundancy and manual intervention. This approach not only simplifies management but also enhances the consistency and scalability of your deployments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/920849be-3dc5-4a4a-b398-67d89b67c710/lesson/c2585e90-5d41-41e1-b3df-2e0f872cf015" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/920849be-3dc5-4a4a-b398-67d89b67c710/lesson/c2585e90-5d41-41e1-b3df-2e0f872cf015)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/920849be-3dc5-4a4a-b398-67d89b67c710/lesson/a2362795-1391-4e14-9a02-6f936635c37c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/920849be-3dc5-4a4a-b398-67d89b67c710/lesson/a2362795-1391-4e14-9a02-6f936635c37c)
 
 
 # Ansible Facts
@@ -87,9 +83,7 @@ In this lesson, we explore how Ansible collects system information, known as Fac
 
 This comprehensive data collection is managed by the setup module, which is executed automatically at the beginning of every playbook unless explicitly disabled.
 
-<Callout icon="lightbulb">
-  The collected data is stored in the variable `ansible_facts`, which can be used in subsequent tasks to tailor configurations and decisions based on system characteristics.
-</Callout>
+> **lightbulb** The collected data is stored in the variable `ansible_facts`, which can be used in subsequent tasks to tailor configurations and decisions based on system characteristics.
 
 ## Simple Playbook Example
 

@@ -23,10 +23,8 @@ groups john
 # Output: john : developers
 ```
 
-<Callout icon="lightbulb">
-  `gpasswd` syntax is `gpasswd [--add|--delete] username group`\
+> **lightbulb** `gpasswd` syntax is `gpasswd [--add|--delete] username group`\
   `usermod` syntax is `usermod --gid group username`
-</Callout>
 
 ## Renaming and Deleting Groups
 
@@ -44,8 +42,7 @@ Delete a group when it’s no longer needed:
 sudo groupdel programmers
 ```
 
-<Callout icon="triangle-alert">
-  If the group is the primary group for any user, `groupdel` will fail with:
+> **triangle-alert** If the group is the primary group for any user, `groupdel` will fail with:
 
   ```bash theme={null}
   groupdel: cannot remove the primary group of user 'john'
@@ -62,7 +59,6 @@ sudo groupdel programmers
   ```bash theme={null}
   sudo groupdel programmers
   ```
-</Callout>
 
 ## Quick Reference Table
 
@@ -87,11 +83,9 @@ sudo groupdel programmers
 
 Practice these commands on a test environment to master Linux group administration!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/7e2b6f48-e58c-4d05-82e2-feb0f5f876f5/lesson/1dc2201d-4c56-41c7-9d80-35239a84607c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/7e2b6f48-e58c-4d05-82e2-feb0f5f876f5/lesson/1dc2201d-4c56-41c7-9d80-35239a84607c)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/7e2b6f48-e58c-4d05-82e2-feb0f5f876f5/lesson/33d61eed-41fe-4e58-9e6d-7f78b08a9d8c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/7e2b6f48-e58c-4d05-82e2-feb0f5f876f5/lesson/33d61eed-41fe-4e58-9e6d-7f78b08a9d8c)
 
 
 # Create delete and modify local user accounts
@@ -106,9 +100,7 @@ Managing local user accounts on Linux is essential for security, privacy, and st
 * Configure their own environment and tool settings
 * Operate with the least privilege, reducing accidental damage and attack surface
 
-<Frame>
-  ![The image shows a dark interface with the text "Manage Local User Accounts" on the left and a user icon in the center. The word "KodeKloud" is in the top right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881493/notes-assets/images/Linux-System-Administration-for-Beginners-Create-delete-and-modify-local-user-accounts/manage-local-user-accounts-interface.jpg)
-</Frame>
+![The image shows a dark interface with the text "Manage Local User Accounts" on the left and a user icon in the center. The word "KodeKloud" is in the top right corner.](https://kodekloud.com/kk-media/image/upload/v1752881493/notes-assets/images/Linux-System-Administration-for-Beginners-Create-delete-and-modify-local-user-accounts/manage-local-user-accounts-interface.jpg)
 
 ***
 
@@ -130,14 +122,12 @@ By default, this performs:
 | Account expiration    | No expiration date (unlimited)                                       |
 | Password              | Unset (must be initialized with `passwd`)                            |
 
-<Callout icon="lightbulb">
-  Skeleton files define initial user config.
+> **lightbulb** Skeleton files define initial user config.
 
   ```bash theme={null}
   ls -a /etc/skel
   # .  ..  .bash_logout  .bash_profile  .bashrc
   ```
-</Callout>
 
 You can also review default parameters:
 

@@ -64,9 +64,7 @@ Glasskube is open source and welcomes contributions. Here are practical ways to 
 * Browse the issue tracker to find starter tasks or feature requests that match your skills.
 * Join community channels to ask questions, offer feedback, or coordinate with maintainers.
 
-<Callout icon="lightbulb">
-  If you're interested in contributing: consider starring the project, reviewing open issues to find tasks that match your skills, and participating in community discussion channels to ask questions or coordinate with maintainers.
-</Callout>
+> **lightbulb** If you're interested in contributing: consider starring the project, reviewing open issues to find tasks that match your skills, and participating in community discussion channels to ask questions or coordinate with maintainers.
 
 <Frame>
   <img alt="The image shows a &#x22;Next Steps&#x22; section with two points: one is to contribute to the Glasskube project via a GitHub link, and the other is to join a Discord server via another link." />
@@ -87,6 +85,4 @@ Glasskube is open source and welcomes contributions. Here are practical ways to 
 
 That's it from my side. I hope this course clearly conveyed the core aspects of Kubernetes package management and demonstrated how Glasskube can simplify cluster operations. I also hope it inspired you to explore Glasskube, try it in your clusters, and contribute to the project.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/0ddd5879-550c-4c12-82cd-ac19fb487de5/lesson/ed1115c5-91e2-42c5-9766-471f4008410f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/0ddd5879-550c-4c12-82cd-ac19fb487de5/lesson/ed1115c5-91e2-42c5-9766-471f4008410f)

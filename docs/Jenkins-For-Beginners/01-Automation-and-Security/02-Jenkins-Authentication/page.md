@@ -62,9 +62,7 @@ java -jar jenkins-cli.jar -s JENKINS_URL -auth user:token build <job_name>
 java -jar jenkins-cli.jar -s JENKINS_URL -auth user:token get-job <job_name>
 ```
 
-<Callout icon="lightbulb">
-  Always use API tokens instead of plain text passwords to enhance security when automating Jenkins tasks.
-</Callout>
+> **lightbulb** Always use API tokens instead of plain text passwords to enhance security when automating Jenkins tasks.
 
 ***
 
@@ -93,9 +91,7 @@ http://localhost:8080/pluginManager/installNecessaryPlugins \
 
 This command sends the necessary XML to your Jenkins instance to install the specified plugin. You can also interact with the REST API using libraries available in various programming languages like Python or Java.
 
-<Callout icon="triangle-alert">
-  Avoid hardcoding credentials in your scripts. Use API tokens and secure HTTP header configurations to reduce the risk of exposing sensitive information.
-</Callout>
+> **triangle-alert** Avoid hardcoding credentials in your scripts. Use API tokens and secure HTTP header configurations to reduce the risk of exposing sensitive information.
 
 ***
 
@@ -110,9 +106,7 @@ For further reading and additional examples, consider exploring these additional
 
 Happy automating!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/cd53a160-c852-4d65-b718-31b284cb48da/lesson/6c0992eb-666a-48dc-af92-bf02d76e772b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/cd53a160-c852-4d65-b718-31b284cb48da/lesson/6c0992eb-666a-48dc-af92-bf02d76e772b)
 
 
 # Jenkins Authentication
@@ -129,9 +123,7 @@ After the initial Jenkins setup, only a single admin account is created. Notice 
 
 To begin, navigate to **Manage Jenkins** and then click on **Security**. Here you will see that Jenkins uses its own user database for authentication rather than delegating to an external system. As described in the documentation:
 
-<Frame>
-  ![The image shows a webpage from the Jenkins documentation, specifically focusing on managing security and security realms, with highlighted text about using Jenkins' own user database for authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879402/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-security-management-documentation.jpg)
-</Frame>
+![The image shows a webpage from the Jenkins documentation, specifically focusing on managing security and security realms, with highlighted text about using Jenkins' own user database for authentication.](https://kodekloud.com/kk-media/image/upload/v1752879402/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-security-management-documentation.jpg)
 
 For basic configuration, Jenkins manages its users internally. If you return to the **Manage Jenkins** page and click on **Users**, you will find the admin account. Although additional users can be created, we will demonstrate how in the next section.
 
@@ -139,21 +131,15 @@ For basic configuration, Jenkins manages its users internally. If you return to 
 
 Return to the **Security** page. You will notice settings such as “Keep me signed in” on the login page. For this demonstration, disable the “Keep me signed in” option and enable user sign-up. Once these changes are applied and you log out, the login page will no longer display the "remember me" option, and a registration option will be available:
 
-<Frame>
-  ![The image shows the Jenkins security configuration page, where options for authentication, authorization, and markup formatter settings are displayed. It includes checkboxes for disabling "Keep me signed in" and allowing user sign-up, with a warning about network authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879403/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-security-configuration-page.jpg)
-</Frame>
+![The image shows the Jenkins security configuration page, where options for authentication, authorization, and markup formatter settings are displayed. It includes checkboxes for disabling "Keep me signed in" and allowing user sign-up, with a warning about network authentication.](https://kodekloud.com/kk-media/image/upload/v1752879403/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-security-configuration-page.jpg)
 
 Register a new account by entering a username (for example, "John"), full name, email address, and password. The registration page appears as shown:
 
-<Frame>
-  ![The image shows a registration page for Jenkins, with fields for username, full name, email, and password. On the left, there's a logo of a character holding a cup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879403/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-registration-page-logo.jpg)
-</Frame>
+![The image shows a registration page for Jenkins, with fields for username, full name, email, and password. On the left, there's a logo of a character holding a cup.](https://kodekloud.com/kk-media/image/upload/v1752879403/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-registration-page-logo.jpg)
 
 After creating the account, Jenkins automatically logs you in, and you should now see two users—the original admin and the new user John—in the Jenkins user database:
 
-<Frame>
-  ![The image shows a Jenkins user management interface displaying two users, "admin" and "John," with options to manage or delete them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879404/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-user-management-interface.jpg)
-</Frame>
+![The image shows a Jenkins user management interface displaying two users, "admin" and "John," with options to manage or delete them.](https://kodekloud.com/kk-media/image/upload/v1752879404/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-user-management-interface.jpg)
 
 ## Exploring Authorization Options
 
@@ -161,9 +147,7 @@ Next, let’s shift our focus to authorization. By default, Jenkins is set so th
 
 For example, when an anonymous user triggers a build, the dashboard displays that the build was initiated by an unknown user:
 
-<Frame>
-  ![The image shows a Jenkins dashboard for a job named "ascii-deploy-job," displaying build history and options like "Build Now" and "Configure." It includes details about the last build and links to related projects.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879405/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-dashboard-ascii-deploy-job.jpg)
-</Frame>
+![The image shows a Jenkins dashboard for a job named "ascii-deploy-job," displaying build history and options like "Build Now" and "Configure." It includes details about the last build and links to related projects.](https://kodekloud.com/kk-media/image/upload/v1752879405/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-dashboard-ascii-deploy-job.jpg)
 
 The build log output is similar to the following:
 
@@ -180,9 +164,7 @@ Finished: FAILURE
 
 This log demonstrates that while the build is triggered, it is executed under anonymous credentials.
 
-<Callout icon="triangle-alert">
-  Allowing anonymous users full access poses a significant security risk. Log back in as admin and change the authorization settings to “Logged-in users can do anything” or consider enabling “Anonymous users read-only” to restrict actions.
-</Callout>
+> **triangle-alert** Allowing anonymous users full access poses a significant security risk. Log back in as admin and change the authorization settings to “Logged-in users can do anything” or consider enabling “Anonymous users read-only” to restrict actions.
 
 With read-only access, users can inspect job details and builds without the ability to create, modify, or delete jobs.
 
@@ -220,15 +202,11 @@ Attempting to log in as the previously created admin or John will not work. Inst
 
 Review the users and their groups using the Jenkins UI:
 
-<Frame>
-  ![The image shows a Jenkins security configuration page with a list of users and groups, including roles like admin, manager, and developer. There are options to save or apply changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879406/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-security-configuration-users-groups.jpg)
-</Frame>
+![The image shows a Jenkins security configuration page with a list of users and groups, including roles like admin, manager, and developer. There are options to save or apply changes.](https://kodekloud.com/kk-media/image/upload/v1752879406/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-security-configuration-users-groups.jpg)
 
 After logging in as Tina, who belongs to the developer and QA groups, her group memberships will be clearly displayed:
 
-<Frame>
-  ![The image shows a Jenkins dashboard for a user named "tina," displaying her user ID and group memberships, which include "developer" and "qa." The interface includes navigation options like Status, Builds, Configure, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879407/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-dashboard-tina-user-id.jpg)
-</Frame>
+![The image shows a Jenkins dashboard for a user named "tina," displaying her user ID and group memberships, which include "developer" and "qa." The interface includes navigation options like Status, Builds, Configure, and more.](https://kodekloud.com/kk-media/image/upload/v1752879407/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-dashboard-tina-user-id.jpg)
 
 It is important to note that the mock security realm only handles authentication and group association, not authorization. Consequently, even though Tina is a member of the developer and QA groups, she currently can build jobs and delete projects because the authorization setting remains “Logged-in users can do anything.”
 
@@ -243,28 +221,16 @@ In this lesson, we covered:
 * The risks associated with full anonymous access and how authorization rules affect user capabilities.
 * How to simulate an external security realm using the mock security realm plugin and define users with their associated groups.
 
-<Callout icon="lightbulb">
-  In practice, always tailor your authentication and authorization settings to meet your organization’s security requirements. For more detailed guidance, refer to the [Jenkins Documentation](https://www.jenkins.io/doc/).
-</Callout>
+> **lightbulb** In practice, always tailor your authentication and authorization settings to meet your organization’s security requirements. For more detailed guidance, refer to the [Jenkins Documentation](https://www.jenkins.io/doc/).
 
 Thank you for following along, and stay tuned for the next lesson where we will refine authorization rules to secure your Jenkins environment further.
 
-<Frame>
-  ![The image shows the "Manage Jenkins" dashboard interface, displaying various configuration options such as system settings, tools, nodes, plugins, and security. It includes a security warning about building on the built-in node and options to set up an agent or cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879408/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/manage-jenkins-dashboard-interface.jpg)
-</Frame>
+![The image shows the "Manage Jenkins" dashboard interface, displaying various configuration options such as system settings, tools, nodes, plugins, and security. It includes a security warning about building on the built-in node and options to set up an agent or cloud.](https://kodekloud.com/kk-media/image/upload/v1752879408/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/manage-jenkins-dashboard-interface.jpg)
 
-<Frame>
-  ![The image shows the Jenkins plugin management interface, displaying a list of available plugins with details such as name, version, and release date. The user is searching for plugins with the term "mod."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879410/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-plugin-management-interface.jpg)
-</Frame>
+![The image shows the Jenkins plugin management interface, displaying a list of available plugins with details such as name, version, and release date. The user is searching for plugins with the term "mod."](https://kodekloud.com/kk-media/image/upload/v1752879410/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-plugin-management-interface.jpg)
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying the download progress of plugins, with some tasks marked as "Pending."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879410/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-dashboard-plugin-download-progress.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying the download progress of plugins, with some tasks marked as "Pending."](https://kodekloud.com/kk-media/image/upload/v1752879410/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-dashboard-plugin-download-progress.jpg)
 
-<Frame>
-  ![The image shows a Jenkins dashboard for a user named "siddharth," displaying user details and group membership, with a focus on the "admin" group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879411/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-dashboard-siddharth-admin-group.jpg)
-</Frame>
+![The image shows a Jenkins dashboard for a user named "siddharth," displaying user details and group membership, with a focus on the "admin" group.](https://kodekloud.com/kk-media/image/upload/v1752879411/notes-assets/images/Jenkins-For-Beginners-Jenkins-Authentication/jenkins-dashboard-siddharth-admin-group.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/cd53a160-c852-4d65-b718-31b284cb48da/lesson/4c700fdd-a045-401c-a0e2-5d0818bdc2c0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/cd53a160-c852-4d65-b718-31b284cb48da/lesson/4c700fdd-a045-401c-a0e2-5d0818bdc2c0)

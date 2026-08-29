@@ -10,15 +10,15 @@ In this guide, you’ll learn how to build scalable, secure, and automated Azure
 
 Azure Deployment Environments are isolated, preconfigured resource groups and settings that streamline application rollout. They serve as reproducible “sandboxes” for development, testing, and production stages.
 
-![The image is a diagram explaining Azure Deployment Environments, showing a flow from "Pre-Configured settings" and "Resources" to "Deploying Applications."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867714/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-Azure-Deployment-Environments-for-on-demand-self-deployment/azure-deployment-environments-diagram.jpg)
+![The image is a diagram explaining Azure Deployment Environments, showing a flow from "Pre-Configured settings" and "Resources" to "Deploying Applications."](https://kodekloud.com/kk-media/image/upload/v1752867714/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-Azure-Deployment-Environments-for-on-demand-self-deployment/azure-deployment-environments-diagram.jpg)
 
 These environments integrate directly with your CI/CD pipelines, enabling automated builds, tests, and deployments.
 
-![The image is a diagram titled "Understanding Deployment Environments in Azure," showing two sections: "Continuous integration (CI/CD) pipelines" and "Continuous deployment (CI/CD) pipelines."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867715/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-Azure-Deployment-Environments-for-on-demand-self-deployment/understanding-deployment-environments-azure-diagram.jpg)
+![The image is a diagram titled "Understanding Deployment Environments in Azure," showing two sections: "Continuous integration (CI/CD) pipelines" and "Continuous deployment (CI/CD) pipelines."](https://kodekloud.com/kk-media/image/upload/v1752867715/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-Azure-Deployment-Environments-for-on-demand-self-deployment/understanding-deployment-environments-azure-diagram.jpg)
 
 By isolating each stage—Dev, QA, and Prod—you ensure consistent test results and minimize “it works on my machine” risks.
 
-![The image is a diagram titled "Understanding Deployment Environments in Azure," showing a flow from "Teams" to "Test" and "Deploy."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867716/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-Azure-Deployment-Environments-for-on-demand-self-deployment/understanding-deployment-environments-azure-diagram-2.jpg)
+![The image is a diagram titled "Understanding Deployment Environments in Azure," showing a flow from "Teams" to "Test" and "Deploy."](https://kodekloud.com/kk-media/image/upload/v1752867716/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-Azure-Deployment-Environments-for-on-demand-self-deployment/understanding-deployment-environments-azure-diagram-2.jpg)
 
 ## Common Deployment Strategies in Azure
 
@@ -44,7 +44,7 @@ To automate your pipeline end-to-end, combine these five key Azure DevOps compon
 
 > **lightbulb** Ensure your Git branches follow a naming convention (e.g., `feature/*`, `release/*`) and enable pull-request policies to enforce code reviews.
 
-![The image is a flowchart illustrating the setup process for Azure DevOps for self-deployment, including steps like repositories, build pipeline, release pipeline, and deployment environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867717/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-Azure-Deployment-Environments-for-on-demand-self-deployment/azure-devops-self-deployment-flowchart.jpg)
+![The image is a flowchart illustrating the setup process for Azure DevOps for self-deployment, including steps like repositories, build pipeline, release pipeline, and deployment environments.](https://kodekloud.com/kk-media/image/upload/v1752867717/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-Azure-Deployment-Environments-for-on-demand-self-deployment/azure-devops-self-deployment-flowchart.jpg)
 
 ### Example YAML Snippet: Build Pipeline Trigger
 
@@ -68,7 +68,7 @@ steps:
 
 ARM templates let you define Azure resources declaratively in JSON or Bicep. Store these templates in your repo and deploy from your pipeline:
 
-![The image illustrates the process of utilizing Azure Resource Manager (ARM) templates, showing a flow from "ARM Template Creation" to "Automated Deployment."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867718/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-Azure-Deployment-Environments-for-on-demand-self-deployment/azure-arm-templates-deployment-flow.jpg)
+![The image illustrates the process of utilizing Azure Resource Manager (ARM) templates, showing a flow from "ARM Template Creation" to "Automated Deployment."](https://kodekloud.com/kk-media/image/upload/v1752867718/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-Azure-Deployment-Environments-for-on-demand-self-deployment/azure-arm-templates-deployment-flow.jpg)
 
 > **triangle-alert** Keep sensitive values out of your template files. Use Azure Key Vault or pipeline variables with secret scopes for credentials and connection strings.
 
@@ -80,7 +80,7 @@ Securing each Deployment Environment prevents misconfigurations and unauthorized
 * Automate policy compliance using [Azure Policy](https://learn.microsoft.com/azure/governance/policy/).
 * Monitor threats in real time via Azure Defender.
 
-![The image illustrates a security consideration flow for deployment environments, showing Azure Policy enforcing compliance and Azure Environment monitoring security for threat detection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867719/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-Azure-Deployment-Environments-for-on-demand-self-deployment/security-consideration-flow-azure-policy.jpg)
+![The image illustrates a security consideration flow for deployment environments, showing Azure Policy enforcing compliance and Azure Environment monitoring security for threat detection.](https://kodekloud.com/kk-media/image/upload/v1752867719/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-Azure-Deployment-Environments-for-on-demand-self-deployment/security-consideration-flow-azure-policy.jpg)
 
 ## Monitoring and Maintenance
 
@@ -91,7 +91,7 @@ Proactive monitoring and regular upkeep ensure high availability and performance
 * Scale resources automatically with Azure Autoscale rules.
 * Patch and update services on a regular schedule.
 
-![The image shows icons for Azure Monitor and Application Insights under the title "Monitoring and Maintenance of Deployment Environments."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867720/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-Azure-Deployment-Environments-for-on-demand-self-deployment/azure-monitor-application-insights-icons.jpg)
+![The image shows icons for Azure Monitor and Application Insights under the title "Monitoring and Maintenance of Deployment Environments."](https://kodekloud.com/kk-media/image/upload/v1752867720/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-Azure-Deployment-Environments-for-on-demand-self-deployment/azure-monitor-application-insights-icons.jpg)
 
 ## Links and References
 

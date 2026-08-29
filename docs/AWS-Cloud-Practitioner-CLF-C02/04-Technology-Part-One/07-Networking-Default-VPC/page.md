@@ -25,7 +25,7 @@ Each default VPC in AWS exhibits the following characteristics:
 
 Below is an image that illustrates a typical default VPC setup, showcasing the Internet Gateway, public subnets, and security configurations:
 
-![The image illustrates a default VPC setup with an internet gateway, public subnets, and default security configurations, highlighting network access and routing in a cloud environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861960/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Networking-Default-VPC/frame_130.jpg)
+![The image illustrates a default VPC setup with an internet gateway, public subnets, and default security configurations, highlighting network access and routing in a cloud environment.](https://kodekloud.com/kk-media/image/upload/v1752861960/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Networking-Default-VPC/frame_130.jpg)
 
 ## Summary of Default VPC Features
 
@@ -38,7 +38,7 @@ Every AWS region comes configured with a default VPC that includes:
 
 The following image summarizes these core features—subnets, security groups, NACLs, CIDR allocation, internet access, and availability zones:
 
-![The image summarizes Default VPC features, including subnets, security groups, NACLs, CIDR block, internet access, and availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861962/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Networking-Default-VPC/frame_170.jpg)
+![The image summarizes Default VPC features, including subnets, security groups, NACLs, CIDR block, internet access, and availability zones.](https://kodekloud.com/kk-media/image/upload/v1752861962/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Networking-Default-VPC/frame_170.jpg)
 
 > **lightbulb** For further details and best practices on configuring VPCs, consider exploring the [AWS VPC Documentation](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html).
 

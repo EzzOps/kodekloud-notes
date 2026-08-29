@@ -10,13 +10,13 @@ In this guide, we demonstrate how to work with AWS Secrets Manager to securely s
 
 Begin by searching for the Secrets Manager service in the AWS Management Console. Once located, click on "Store New Secret" to start the process.
 
-![The image shows the AWS Secrets Manager interface with two secret names listed: "mysql-creds" and "postgres-creds," both last retrieved on March 10, 2024. There's an option to store a new secret.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859403/notes-assets/images/AWS-Certified-Developer-Associate-Secrets-Manager-Demo/aws-secrets-manager-interface.jpg)
+![The image shows the AWS Secrets Manager interface with two secret names listed: "mysql-creds" and "postgres-creds," both last retrieved on March 10, 2024. There's an option to store a new secret.](https://kodekloud.com/kk-media/image/upload/v1752859403/notes-assets/images/AWS-Certified-Developer-Associate-Secrets-Manager-Demo/aws-secrets-manager-interface.jpg)
 
 ## Selecting and Configuring Your Secret
 
 On the "Store New Secret" page, you can choose from several secret types. AWS Secrets Manager supports secrets tailored for various AWS services such as Amazon RDS, DocumentDB, and Redshift. You also have the option to store generic secrets for any application.
 
-![The image shows the AWS Secrets Manager interface where a user can choose a secret type, such as credentials for Amazon RDS, and enter credentials like username and password.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859405/notes-assets/images/AWS-Certified-Developer-Associate-Secrets-Manager-Demo/aws-secrets-manager-credentials-interface.jpg)
+![The image shows the AWS Secrets Manager interface where a user can choose a secret type, such as credentials for Amazon RDS, and enter credentials like username and password.](https://kodekloud.com/kk-media/image/upload/v1752859405/notes-assets/images/AWS-Certified-Developer-Associate-Secrets-Manager-Demo/aws-secrets-manager-credentials-interface.jpg)
 
 For this demo, we will create a generic secret that contains key-value pairs for a database username and password. You can include multiple key-value pairs within a single secret. For example:
 
@@ -25,15 +25,15 @@ For this demo, we will create a generic secret that contains key-value pairs for
 
 Next, select your encryption key. AWS Secrets Manager utilizes KMS for encryption - you can opt for the AWS managed key or a customer-managed key. In this demo, we are using the AWS managed key "aws/secretsmanager". Click **Next** to continue.
 
-![The image shows an AWS Secrets Manager interface where a user is configuring a secret with key/value pairs for a username and password.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859407/notes-assets/images/AWS-Certified-Developer-Associate-Secrets-Manager-Demo/aws-secrets-manager-configuration.jpg)
+![The image shows an AWS Secrets Manager interface where a user is configuring a secret with key/value pairs for a username and password.](https://kodekloud.com/kk-media/image/upload/v1752859407/notes-assets/images/AWS-Certified-Developer-Associate-Secrets-Manager-Demo/aws-secrets-manager-configuration.jpg)
 
 On the following screen, assign a name to your secret. For this demo, the secret name is set to "/backend/db-creds". You may also add a description, set resource permissions, and even enable secret replication across regions. For simplicity, we will skip the replication setup. Click **Next** to proceed.
 
-![The image shows an AWS Secrets Manager interface where a user is configuring a secret, including fields for the secret name, description, tags, and resource permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859409/notes-assets/images/AWS-Certified-Developer-Associate-Secrets-Manager-Demo/aws-secrets-manager-configuration-2.jpg)
+![The image shows an AWS Secrets Manager interface where a user is configuring a secret, including fields for the secret name, description, tags, and resource permissions.](https://kodekloud.com/kk-media/image/upload/v1752859409/notes-assets/images/AWS-Certified-Developer-Associate-Secrets-Manager-Demo/aws-secrets-manager-configuration-2.jpg)
 
 > **lightbulb** AWS Secrets Manager offers automatic rotation for secrets. You can set a rotation schedule by specifying intervals in hours, days, weeks, or months, and even rotate the secret immediately after creation by providing a Lambda function that handles the update. In this demo, automatic rotation will remain disabled.
 
-![The image shows an AWS Secrets Manager interface for configuring automatic rotation of secrets, including options for setting a rotation schedule and selecting a Lambda rotation function.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859410/notes-assets/images/AWS-Certified-Developer-Associate-Secrets-Manager-Demo/aws-secrets-manager-rotation-interface.jpg)
+![The image shows an AWS Secrets Manager interface for configuring automatic rotation of secrets, including options for setting a rotation schedule and selecting a Lambda rotation function.](https://kodekloud.com/kk-media/image/upload/v1752859410/notes-assets/images/AWS-Certified-Developer-Associate-Secrets-Manager-Demo/aws-secrets-manager-rotation-interface.jpg)
 
 ## Retrieving the Secret in Your Application
 

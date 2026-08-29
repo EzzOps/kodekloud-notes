@@ -17,13 +17,13 @@ Azure provides multiple ways to interact with its resources:
 
 In addition to these, advanced users can utilize software development kits (SDKs) and native REST APIs. Beginners should focus on the four primary methods mentioned above.
 
-![The image lists four tools for interacting with Azure: Azure Portal, Azure PowerShell, Azure Cloud Shell, and Azure CLI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868502/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Tools-for-Interacting-with-Azure/azure-interaction-tools-list.jpg)
+![The image lists four tools for interacting with Azure: Azure Portal, Azure PowerShell, Azure Cloud Shell, and Azure CLI.](https://kodekloud.com/kk-media/image/upload/v1752868502/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Tools-for-Interacting-with-Azure/azure-interaction-tools-list.jpg)
 
 ## Azure Portal
 
 The Azure Portal is a user-friendly, web-based interface for managing Azure services. It enables you to effortlessly create, manage, and monitor a wide range of resources—from simple web apps to complex cloud deployments.
 
-![The image shows a browser window with the URL "https://portal.azure.com" and three icons labeled "Create," "Manage," and "Monitor," representing features of the Azure Portal.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868503/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Tools-for-Interacting-with-Azure/azure-portal-browser-window-icons.jpg)
+![The image shows a browser window with the URL "https://portal.azure.com" and three icons labeled "Create," "Manage," and "Monitor," representing features of the Azure Portal.](https://kodekloud.com/kk-media/image/upload/v1752868503/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Tools-for-Interacting-with-Azure/azure-portal-browser-window-icons.jpg)
 
 With the Azure Portal, you can quickly deploy or scale resources without needing to write any scripts.
 
@@ -47,7 +47,7 @@ New-AzStorageAccount `
 
 Azure Cloud Shell is a browser-accessible shell that comes pre-configured with essential Azure tools. It eliminates the need for local installations, providing a ready-to-use environment for managing your resources.
 
-![The image is a flowchart titled "Azure Cloud Shell," showing a sequence from "Command-Line Experience" to "Browser Accessible Shell" and then to "Azure Management Task."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868504/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Tools-for-Interacting-with-Azure/azure-cloud-shell-flowchart.jpg)
+![The image is a flowchart titled "Azure Cloud Shell," showing a sequence from "Command-Line Experience" to "Browser Accessible Shell" and then to "Azure Management Task."](https://kodekloud.com/kk-media/image/upload/v1752868504/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Tools-for-Interacting-with-Azure/azure-cloud-shell-flowchart.jpg)
 
 Cloud Shell is integrated with the Azure Portal, making it convenient for managing tasks on-the-go.
 
@@ -65,7 +65,7 @@ az storage account create \
   --sku Standard_LRS
 ```
 
-![The image illustrates the Azure CLI, showing a connection between a command-line experience and Azure resources, with a Linux user depicted on the side.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868505/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Tools-for-Interacting-with-Azure/azure-cli-linux-user-connection.jpg)
+![The image illustrates the Azure CLI, showing a connection between a command-line experience and Azure resources, with a Linux user depicted on the side.](https://kodekloud.com/kk-media/image/upload/v1752868505/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Tools-for-Interacting-with-Azure/azure-cli-linux-user-connection.jpg)
 
 ## Choosing the Right Tool
 
@@ -74,7 +74,7 @@ The best tool for interacting with Azure depends on your workflow, operating sys
 * **Graphical vs. Command-Line:** The Azure Portal provides an excellent visual experience for individual or simple deployments. For deploying multiple Virtual Machines or executing complex tasks, automation with PowerShell or Azure CLI is more effective.
 * **Operating System Considerations:** While both Azure PowerShell and Azure CLI work on Linux, Windows, and macOS, users comfortable with bash will likely prefer Azure CLI, whereas those familiar with Windows might lean towards PowerShell.
 
-![The image is a graphic titled "Interacting With Azure – Choosing Your Tool," featuring three sections: Workflow, Operating System, and Graphical vs Command-Line Interface. Each section is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868507/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Tools-for-Interacting-with-Azure/interacting-with-azure-tool-graphic.jpg)
+![The image is a graphic titled "Interacting With Azure – Choosing Your Tool," featuring three sections: Workflow, Operating System, and Graphical vs Command-Line Interface. Each section is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752868507/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Tools-for-Interacting-with-Azure/interacting-with-azure-tool-graphic.jpg)
 
 > **lightbulb** For quick demonstrations, the Azure Portal is ideal. When dealing with complex scenarios or repetitive tasks, consider using scripting with PowerShell, Azure CLI, or other Infrastructure as Code tools like Bicep or ARM templates.
 
@@ -160,7 +160,7 @@ az login --use-device-code
 
 Follow the on-screen instructions by visiting [https://aka.ms/device-login](https://aka.ms/device-login) and entering the provided code. Once authenticated, you'll be securely connected to your Azure account.
 
-![The image shows a Microsoft Azure login screen where a user is prompted to pick an account to sign in. The screen includes options to select an existing account or use another account.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868508/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Tools-for-Interacting-with-Azure/azure-login-screen-account-selection.jpg)
+![The image shows a Microsoft Azure login screen where a user is prompted to pick an account to sign in. The screen includes options to select an existing account or use another account.](https://kodekloud.com/kk-media/image/upload/v1752868508/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Tools-for-Interacting-with-Azure/azure-login-screen-account-selection.jpg)
 
 List your resource groups with:
 

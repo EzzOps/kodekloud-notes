@@ -2,9 +2,7 @@
 input1 = input_number(num2=10, num1=20)
 ```
 
-<Callout icon="triangle-alert">
-  Avoid assigning a value to the same parameter more than once. For example, providing `num1` both positionally and by name will result in an error:
-</Callout>
+> **triangle-alert** Avoid assigning a value to the same parameter more than once. For example, providing `num1` both positionally and by name will result in an error:
 
 ```python theme={null}
 def input_number(num1, num2):
@@ -44,9 +42,7 @@ In this case, if the input is 12, the function computes 12 × 5, yielding 60.
 
 That's the end of our discussion on passing arguments to Python functions. It's time to get hands-on and practice these concepts. For further reading on Python functions, consider visiting the [Python Documentation](https://docs.python.org/3/tutorial/controlflow.html#defining-functions).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/e169dc83-5d71-40ac-8437-4f500246efe6/lesson/7e6d0bc3-0286-4025-aec1-a5d5b131f77e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/e169dc83-5d71-40ac-8437-4f500246efe6/lesson/7e6d0bc3-0286-4025-aec1-a5d5b131f77e)
 
 
 # Functions
@@ -57,9 +53,7 @@ Learn to create and use custom functions in Python to enhance code readability a
 
 In this lesson, you'll learn how to create and use custom functions in Python. So far, we've worked with built-in functions like `print`, `len`, and `input`, and we've distinguished between functions and methods. In Python, functions can come from the core language, external modules, or be defined by you.
 
-<Callout icon="lightbulb">
-  Encapsulating repeated code into functions enhances readability and minimizes potential bugs.
-</Callout>
+> **lightbulb** Encapsulating repeated code into functions enhances readability and minimizes potential bugs.
 
 ## Why Use Functions?
 
@@ -109,14 +103,10 @@ NameError: name 'input_number' is not defined
 
 This error occurs because Python processes the code sequentially and has not encountered the definition of `input_number` when it is called.
 
-<Callout icon="triangle-alert">
-  Always define your functions before invoking them to avoid `NameError` issues.
-</Callout>
+> **triangle-alert** Always define your functions before invoking them to avoid `NameError` issues.
 
 That’s all for this lesson. Keep practicing your function definitions and usage. [Learn more about Python functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions) for additional insights.
 
 See you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/e169dc83-5d71-40ac-8437-4f500246efe6/lesson/07eeb9c0-46aa-45f3-92b4-b1cb2c06e30d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/e169dc83-5d71-40ac-8437-4f500246efe6/lesson/07eeb9c0-46aa-45f3-92b4-b1cb2c06e30d)

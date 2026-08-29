@@ -12,7 +12,7 @@ Deployment slots are available based on your App Service plan tier. Here’s a q
 * Premium Tier: Offers up to 20 deployment slots.
 * Isolated Tier: Supports up to 20 deployment slots and runs in a fully isolated, dedicated environment to ensure high performance and enhanced security.
 
-![The image shows three types of staging environments: Standard, Premium, and Isolated, each represented by a different colored icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866348/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Staging-Environments/staging-environments-standard-premium-isolated.jpg)
+![The image shows three types of staging environments: Standard, Premium, and Isolated, each represented by a different colored icon.](https://kodekloud.com/kk-media/image/upload/v1752866348/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Staging-Environments/staging-environments-standard-premium-isolated.jpg)
 
 Deployment slots offer several key benefits in your deployment process:
 
@@ -25,7 +25,7 @@ Deployment slots offer several key benefits in your deployment process:
 3. Seamless Swap\
    Slot swapping exchanges the contents of the staging and production slots. The previous production slot is retained as the new staging slot, making it easy to roll back if issues surface during deployment.
 
-![The image outlines the benefits of a non-production slot, highlighting validation of app changes, warming up instances before production, and maintaining previous production apps after a swap.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866349/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Staging-Environments/non-production-slot-benefits-outline.jpg)
+![The image outlines the benefits of a non-production slot, highlighting validation of app changes, warming up instances before production, and maintaining previous production apps after a swap.](https://kodekloud.com/kk-media/image/upload/v1752866349/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Staging-Environments/non-production-slot-benefits-outline.jpg)
 
 > **lightbulb** Ensure that your App Service plan supports deployment slots. For more details on plan eligibility and pricing, refer to the [Azure App Service Pricing documentation](https://azure.microsoft.com/en-us/pricing/details/app-service/).
 

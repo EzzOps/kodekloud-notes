@@ -10,9 +10,7 @@ In this guide, we explore how Rust implements efficient concurrency using async/
 
 Modern applications often need to handle multiple operations simultaneously—such as processing user input, fetching data from servers, or writing to databases—without blocking the user interface. Asynchronous programming enables you to write non-blocking, efficient code even during intensive I/O operations. Unlike traditional blocking models, this approach ensures your application remains responsive, even when waiting on slow tasks.
 
-<Callout icon="lightbulb">
-  Asynchronous programming is particularly beneficial when dealing with I/O-bound tasks, as it maximizes resource utilization and improves overall performance.
-</Callout>
+> **lightbulb** Asynchronous programming is particularly beneficial when dealing with I/O-bound tasks, as it maximizes resource utilization and improves overall performance.
 
 ## The Async Runtime
 
@@ -24,9 +22,7 @@ The async runtime is at the heart of managing and scheduling asynchronous tasks.
 
 Since Rust does not ship with a built-in async runtime, developers often opt for external libraries like [Tokio](https://tokio.rs/)—which is the runtime used in our examples.
 
-<Frame>
-  ![The image is a slide titled "The Async Runtime" and lists key components: Reactor/Event Loop, Scheduler, and Executor, with brief descriptions of their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883797/notes-assets/images/Rust-Programming-Async-Await-and-Futures/async-runtime-reactor-scheduler-executor.jpg)
-</Frame>
+![The image is a slide titled "The Async Runtime" and lists key components: Reactor/Event Loop, Scheduler, and Executor, with brief descriptions of their functions.](https://kodekloud.com/kk-media/image/upload/v1752883797/notes-assets/images/Rust-Programming-Async-Await-and-Futures/async-runtime-reactor-scheduler-executor.jpg)
 
 ## Setting Up Tokio
 
@@ -59,9 +55,7 @@ Before diving deeper, it is important to grasp two fundamental concepts in async
 
 An async function returns a future, while tasks are the logical execution units created to run these futures.
 
-<Frame>
-  ![The image is a comparison between "Futures" and "Tasks" in programming, explaining their roles and relationship. Futures represent values available in the future and are inert until polled, while tasks are logical units of execution managed by the runtime.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883799/notes-assets/images/Rust-Programming-Async-Await-and-Futures/futures-tasks-comparison-programming.jpg)
-</Frame>
+![The image is a comparison between "Futures" and "Tasks" in programming, explaining their roles and relationship. Futures represent values available in the future and are inert until polled, while tasks are logical units of execution managed by the runtime.](https://kodekloud.com/kk-media/image/upload/v1752883799/notes-assets/images/Rust-Programming-Async-Await-and-Futures/futures-tasks-comparison-programming.jpg)
 
 ## Writing Async Functions in Rust
 
@@ -94,9 +88,7 @@ async fn main() {
 
 Without using `.await`, the body of `say_hello` would not execute, and no output would be produced.
 
-<Callout icon="lightbulb">
-  Always use `await` when calling async functions to ensure their execution.
-</Callout>
+> **lightbulb** Always use `await` when calling async functions to ensure their execution.
 
 ## Running Tasks Concurrently
 
@@ -162,9 +154,7 @@ let result = handle.await;
 
 The join handle is itself a future that returns a `Result<T, E>` indicating whether the task executed successfully (`Ok`) or encountered an error (`Err`). If you are confident the task will not panic, you may use `.await.unwrap()` to directly access the result.
 
-<Frame>
-  ![The image is an informational graphic explaining "JoinHandle" in programming, detailing its role as a handle to a spawned task and how it implements Future for awaiting. It also describes the process of awaiting a JoinHandle, including the return of a Result and handling of task completion or errors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883800/notes-assets/images/Rust-Programming-Async-Await-and-Futures/joinhandle-programming-graphic.jpg)
-</Frame>
+![The image is an informational graphic explaining "JoinHandle" in programming, detailing its role as a handle to a spawned task and how it implements Future for awaiting. It also describes the process of awaiting a JoinHandle, including the return of a Result and handling of task completion or errors.](https://kodekloud.com/kk-media/image/upload/v1752883800/notes-assets/images/Rust-Programming-Async-Await-and-Futures/joinhandle-programming-graphic.jpg)
 
 ## Best Practices for Async Rust
 
@@ -172,20 +162,14 @@ The join handle is itself a future that returns a `Result<T, E>` indicating whet
 * Avoid blocking operations such as the standard sleep. Instead, use asynchronous variants like `tokio::time::sleep`.
 * Only spawn tasks when you need concurrency. Unnecessary spawning can lead to increased resource consumption and added complexity.
 
-<Callout icon="triangle-alert">
-  Be cautious with excessive task spawning as it can lead to resource contention. Use concurrency only when it benefits your application's performance.
-</Callout>
+> **triangle-alert** Be cautious with excessive task spawning as it can lead to resource contention. Use concurrency only when it benefits your application's performance.
 
 ### Summary
 
 Async functions in Rust return futures, which can be executed using the `await` keyword. Spawning tasks allows for concurrent execution, and joining tasks lets you retrieve their results once they are finished. Understanding these concepts is crucial for developing responsive, efficient applications in Rust.
 
-<Frame>
-  ![The image is a summary slide with key takeaways about async functions, stating that they return futures and that "await" is used to execute futures.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883801/notes-assets/images/Rust-Programming-Async-Await-and-Futures/async-functions-key-takeaways-summary.jpg)
-</Frame>
+![The image is a summary slide with key takeaways about async functions, stating that they return futures and that "await" is used to execute futures.](https://kodekloud.com/kk-media/image/upload/v1752883801/notes-assets/images/Rust-Programming-Async-Await-and-Futures/async-functions-key-takeaways-summary.jpg)
 
 For further exploration, consider delving into async I/O operations or investigating async streams and channels to build even more sophisticated concurrent applications. For more information, check out the official [Tokio documentation](https://tokio.rs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/9f40c3c7-3b88-4cd7-b65e-7a45fc7d0d64/lesson/2eab58dd-ae54-48e3-b449-6548e109ecca" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/9f40c3c7-3b88-4cd7-b65e-7a45fc7d0d64/lesson/2eab58dd-ae54-48e3-b449-6548e109ecca)

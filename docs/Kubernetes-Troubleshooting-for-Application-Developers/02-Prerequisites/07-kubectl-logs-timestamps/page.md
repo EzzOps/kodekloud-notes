@@ -18,9 +18,7 @@ kubectl logs --timestamps
 
 For instance, when examining logs from an NGINX Ingress controller pod, you will see timestamps displayed alongside the application logs.
 
-<Callout icon="lightbulb">
-  Using timestamps along with log output is particularly useful for correlating log entries with system events or errors.
-</Callout>
+> **lightbulb** Using timestamps along with log output is particularly useful for correlating log entries with system events or errors.
 
 ***
 

@@ -43,9 +43,9 @@ sudo systemctl restart containerd
 > **lightbulb** For further details on cgroup drivers, please review the [container runtime
   documentation](https://kubernetes.io/docs/setup/production-environment/container-runtimes/).
 
-> ![The image shows a webpage from the Kubernetes documentation, detailing container runtimes and configuration instructions for kubeadm, including notes and cautions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869787/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Demo-Deployment-with-Kubeadm/frame_490.jpg)
+> ![The image shows a webpage from the Kubernetes documentation, detailing container runtimes and configuration instructions for kubeadm, including notes and cautions.](https://kodekloud.com/kk-media/image/upload/v1752869787/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Demo-Deployment-with-Kubeadm/frame_490.jpg)
 
-> ![The image shows a Kubernetes documentation page about configuring container runtime and kubelet cgroup drivers, including instructions and code snippets for setting up the systemd driver.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869788/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Demo-Deployment-with-Kubeadm/frame_510.jpg)
+> ![The image shows a Kubernetes documentation page about configuring container runtime and kubelet cgroup drivers, including instructions and code snippets for setting up the systemd driver.](https://kodekloud.com/kk-media/image/upload/v1752869788/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Demo-Deployment-with-Kubeadm/frame_510.jpg)
 
 ***
 
@@ -416,7 +416,7 @@ The common transformations available in Kustomize include:
 
 These methods provide a scalable and systematic approach to maintaining consistent configurations across your Kubernetes resources.
 
-![The image lists common transformations for Kubernetes resources, including adding labels, prefixes/suffixes, namespaces, and annotations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869797/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Common-Transformers/kubernetes-resource-transformations-list.jpg)
+![The image lists common transformations for Kubernetes resources, including adding labels, prefixes/suffixes, namespaces, and annotations.](https://kodekloud.com/kk-media/image/upload/v1752869797/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Common-Transformers/kubernetes-resource-transformations-list.jpg)
 
 In summary, Kustomize transformers offer a robust and error-resistant way to apply common configurations—such as labels, namespaces, name modifications, and annotations—to your Kubernetes resources, ensuring that your deployments remain consistent and manageable across various environments.
 

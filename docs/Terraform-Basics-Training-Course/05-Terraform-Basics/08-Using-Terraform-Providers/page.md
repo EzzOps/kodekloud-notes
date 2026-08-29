@@ -103,9 +103,7 @@ For further details on AWS resource management, keep an eye out for our upcoming
 
 Using input variables in Terraform improves code maintainability and allows for dynamic deployments. By defining variable defaults in a dedicated file and referencing them in your resource configurations, you can create more adaptable and scalable infrastructure deployments. Make sure to integrate these practices into your workflows to maximize the efficiency and flexibility of your Terraform projects.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/f88d4131-aec1-4d09-ba28-5846d4621761" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/f88d4131-aec1-4d09-ba28-5846d4621761)
 
 
 # Using Terraform Providers
@@ -161,9 +159,7 @@ in your configuration, with the constraint strings suggested below.
 Terraform has been successfully initialized!
 ```
 
-<Callout icon="lightbulb">
-  The `terraform init` command is safe to run repeatedly. It only updates the local plugin installation without modifying your deployed infrastructure.
-</Callout>
+> **lightbulb** The `terraform init` command is safe to run repeatedly. It only updates the local plugin installation without modifying your deployed infrastructure.
 
 ## Understanding Provider Source Addresses
 
@@ -178,22 +174,16 @@ Optionally, you can include a hostname to indicate the location of the registry.
 hashicorp/local version = "~> 2.0.0"
 ```
 
-<Frame>
-  ![The image provides instructions for adding version constraints in Terraform configurations to prevent automatic upgrades, with a URL example highlighted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884190/notes-assets/images/Terraform-Basics-Training-Course-Using-Terraform-Providers/frame_200.jpg)
-</Frame>
+![The image provides instructions for adding version constraints in Terraform configurations to prevent automatic upgrades, with a URL example highlighted.](https://kodekloud.com/kk-media/image/upload/v1752884190/notes-assets/images/Terraform-Basics-Training-Course-Using-Terraform-Providers/frame_200.jpg)
 
 Since the local provider is hosted in the public Terraform Registry under the HashiCorp namespace, you can refer to it in either of the following ways:
 
 * Full source address: `registry.terraform.io/hashicorp/local`
 * Simplified: `hashicorp/local`
 
-<Callout icon="triangle-alert">
-  Without version constraints, Terraform installs the latest available version by default. Automatic updates may introduce breaking changes. Lock your configuration to a specific provider version to ensure stable and predictable deployments.
-</Callout>
+> **triangle-alert** Without version constraints, Terraform installs the latest available version by default. Automatic updates may introduce breaking changes. Lock your configuration to a specific provider version to ensure stable and predictable deployments.
 
-<Frame>
-  ![The image shows a terminal output indicating the installation of the HashiCorp local provider version 2.0.0, with a recommendation to add version constraints.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884192/notes-assets/images/Terraform-Basics-Training-Course-Using-Terraform-Providers/frame_240.jpg)
-</Frame>
+![The image shows a terminal output indicating the installation of the HashiCorp local provider version 2.0.0, with a recommendation to add version constraints.](https://kodekloud.com/kk-media/image/upload/v1752884192/notes-assets/images/Terraform-Basics-Training-Course-Using-Terraform-Providers/frame_240.jpg)
 
 ## Next Steps
 
@@ -201,6 +191,4 @@ To maintain stable deployments and avoid unexpected changes, consider adding ver
 
 For further reading, explore the [Terraform Documentation](https://www.terraform.io/docs) to enhance your infrastructure as code strategy and master Terraform providers.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/687abdb6-01aa-4903-acca-808e752a4f88" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/687abdb6-01aa-4903-acca-808e752a4f88)

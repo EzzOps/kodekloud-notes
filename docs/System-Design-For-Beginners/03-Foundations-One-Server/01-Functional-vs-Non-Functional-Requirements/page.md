@@ -85,9 +85,7 @@ Combine these three tools:
 * Retries with exponential backoff and jitter, and a capped attempt count so transient errors can recover without creating retry storms.
 * Idempotency so retries of state-changing operations do not create duplicate side-effects.
 
-<Callout icon="lightbulb">
-  Timeouts, retries (with backoff), and idempotency are complementary. Timeouts prevent resource exhaustion, backoff-controlled retries handle transient failures, and idempotency makes retries safe for writes.
-</Callout>
+> **lightbulb** Timeouts, retries (with backoff), and idempotency are complementary. Timeouts prevent resource exhaustion, backoff-controlled retries handle transient failures, and idempotency makes retries safe for writes.
 
 ## Links and References
 
@@ -96,9 +94,7 @@ Combine these three tools:
 * [AWS Architecture: Exponential backoff and jitter](https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/)
 * [Microsoft: Resiliency best practices](https://learn.microsoft.com/azure/architecture/best-practices/resiliency)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/c7a8e3b7-9370-4462-a298-4a441dd68f8a/lesson/54183933-9f00-46d7-bc16-11c45fde371b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/c7a8e3b7-9370-4462-a298-4a441dd68f8a/lesson/54183933-9f00-46d7-bc16-11c45fde371b)
 
 
 # Functional vs Non Functional Requirements
@@ -161,15 +157,11 @@ This distinction explains why additional components appear in real-world systems
 | Durability     | Local backups often sufficient | Distributed replication, geo-redundancy |
 | Typical cost   | Low                            | High operational cost for scale         |
 
-<Callout icon="warning">
-  Non-functional requirements frequently conflict. Higher performance and higher availability usually increase cost and complexity. For example, maintaining hot standby machines to tolerate failures increases ongoing infrastructure expenses.
-</Callout>
+> **warning** Non-functional requirements frequently conflict. Higher performance and higher availability usually increase cost and complexity. For example, maintaining hot standby machines to tolerate failures increases ongoing infrastructure expenses.
 
 You cannot add every possible component by default. Prioritize components based on the NFRs that matter most for your product and constraints.
 
-<Callout icon="lightbulb">
-  Ask targeted questions to decide what to build: Who are your users? What are expected peak loads? What latency, durability, and availability targets do you need? What is your budget for infrastructure and operational complexity?
-</Callout>
+> **lightbulb** Ask targeted questions to decide what to build: Who are your users? What are expected peak loads? What latency, durability, and availability targets do you need? What is your budget for infrastructure and operational complexity?
 
 Answering these questions clarifies which non-functional requirements are critical, and that clarity guides the architectural choices you make next.
 
@@ -178,6 +170,4 @@ Further reading and references:
 * [System design basics and patterns](https://en.wikipedia.org/wiki/Software_architecture)
 * [Designing Data-Intensive Applications](https://dataintensive.net/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/d9a2aa00-d3e4-44ee-8890-2fa7feca84e0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/d9a2aa00-d3e4-44ee-8890-2fa7feca84e0)

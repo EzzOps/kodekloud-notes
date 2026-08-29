@@ -130,9 +130,7 @@ print(llm(prompt))
 
 This prints the result from whichever LLM wrapper is currently assigned to `llm`. The same pattern applies when swapping embeddings, vector stores, or other pipeline components — typically only the instantiation/import changes.
 
-<Callout icon="lightbulb">
-  When swapping providers, ensure you have installed the provider-specific client package and set the corresponding environment variables for authentication.
-</Callout>
+> **lightbulb** When swapping providers, ensure you have installed the provider-specific client package and set the corresponding environment variables for authentication.
 
 ***
 
@@ -161,9 +159,7 @@ Recommended reading and references:
 * OpenAI docs: [https://platform.openai.com/docs](https://platform.openai.com/docs)
 * Google Generative AI docs: [https://developers.generativeai.google/](https://developers.generativeai.google/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/9e76504b-2c1a-48b2-a099-b53c1c5bf71b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/9e76504b-2c1a-48b2-a099-b53c1c5bf71b)
 
 
 # Messages in ChatModel Demo
@@ -174,18 +170,14 @@ Guide to using message objects and best practices for constructing prompts with 
 
 In this lesson we'll examine message objects and best practices for constructing prompts for chat-based models. The goal is to demonstrate the typical flow: import message classes, initialize a chat model, create `SystemMessage` and `HumanMessage` objects, send them to the model, and inspect the returned AI message.
 
-<Callout icon="lightbulb">
-  Module and API names in SDKs such as [LangChain](https://learn.kodekloud.com/user/courses/langchain) change frequently. If an import or method shown here fails, consult the latest SDK documentation and adapt import paths or method names accordingly.
-</Callout>
+> **lightbulb** Module and API names in SDKs such as [LangChain](https://learn.kodekloud.com/user/courses/langchain) change frequently. If an import or method shown here fails, consult the latest SDK documentation and adapt import paths or method names accordingly.
 
 ## Prerequisites
 
 * An OpenAI-compatible API key available in your environment.
 * A compatible version of the chat SDK you plan to use (e.g., LangChain). If imports differ, check the package docs.
 
-<Callout icon="warning">
-  If the model call fails with authentication errors, confirm that your `OPENAI_API_KEY` is set and that your SDK supports the provider and model you are calling.
-</Callout>
+> **warning** If the model call fails with authentication errors, confirm that your `OPENAI_API_KEY` is set and that your SDK supports the provider and model you are calling.
 
 ## Environment variable
 

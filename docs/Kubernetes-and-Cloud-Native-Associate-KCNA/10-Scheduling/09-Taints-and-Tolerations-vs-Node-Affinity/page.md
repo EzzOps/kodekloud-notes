@@ -18,9 +18,7 @@ Taints and tolerations are a powerful mechanism to control pod placement. Follow
 2. **Set Tolerations on Pods:**\
    Configure each pod with a toleration that matches its designated node’s taint. When pods are created, Kubernetes verifies node taints and only schedules pods that have appropriate tolerations. For example, the green pod, which carries the matching toleration, will only be scheduled on the green node, and the same applies to the blue and red pods.
 
-<Callout icon="lightbulb">
-  While taints and tolerations allow pods with the proper tolerations to be scheduled on tainted nodes, they do not enforce that these pods are preferentially scheduled onto these nodes. This means that a pod (like the red pod) could potentially be scheduled on a node that lacks any specific taint if the scheduling criteria permit.
-</Callout>
+> **lightbulb** While taints and tolerations allow pods with the proper tolerations to be scheduled on tainted nodes, they do not enforce that these pods are preferentially scheduled onto these nodes. This means that a pod (like the red pod) could potentially be scheduled on a node that lacks any specific taint if the scheduling criteria permit.
 
 ## Using Node Affinity
 
@@ -44,14 +42,10 @@ To fully dedicate nodes to specific pods and prevent external interference, it i
 2. **Enforce Correct Pod Placement:**\
    Apply node affinity settings to ensure that pods are scheduled strictly on nodes with the appropriate labels.
 
-<Frame>
-  ![The image illustrates "Taints/Tolerations and Node Affinity" with colored icons representing nodes labeled as Blue, Red, Green, and Other.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880710/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Taints-and-Tolerations-vs-Node-Affinity/frame_140.jpg)
-</Frame>
+![The image illustrates "Taints/Tolerations and Node Affinity" with colored icons representing nodes labeled as Blue, Red, Green, and Other.](https://kodekloud.com/kk-media/image/upload/v1752880710/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Taints-and-Tolerations-vs-Node-Affinity/frame_140.jpg)
 
 By combining these techniques, you ensure that nodes are exclusively dedicated to specific pods while preventing any external pods from being scheduled on them.
 
 That concludes this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/4fab542c-3091-4f8e-ad7c-91d96d54b049/lesson/65c9160e-14cb-4411-bf14-01447de8bc4b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/4fab542c-3091-4f8e-ad7c-91d96d54b049/lesson/65c9160e-14cb-4411-bf14-01447de8bc4b)

@@ -35,9 +35,7 @@ EventSource responsibilities:
 * Listening/consuming events from external systems
 * Normalizing events into the CloudEvents format (id, source, type, time, data, etc.)
 
-<Callout icon="lightbulb">
-  Standardizing events to the CloudEvents spec simplifies downstream processing. CloudEvents provides a predictable envelope so Sensors and other consumers can reason about events without per-source parsing logic.
-</Callout>
+> **lightbulb** Standardizing events to the CloudEvents spec simplifies downstream processing. CloudEvents provides a predictable envelope so Sensors and other consumers can reason about events without per-source parsing logic.
 
 Example minimal EventSource (webhook) YAML:
 
@@ -69,9 +67,7 @@ Popular EventBus implementations:
 
 Argo Events uses these underlying messaging systems to route CloudEvents from EventSources to Sensors, allowing EventSources to simply publish without knowing which Sensors will consume the events.
 
-<Callout icon="warning">
-  NATS Streaming (STAN) is deprecated. For new deployments prefer NATS JetStream or Kafka, which provide better persistence and streaming semantics.
-</Callout>
+> **warning** NATS Streaming (STAN) is deprecated. For new deployments prefer NATS JetStream or Kafka, which provide better persistence and streaming semantics.
 
 ## Sensor — the event consumer and orchestrator
 
@@ -161,6 +157,4 @@ This separation (capture → normalize → transport → evaluate → trigger) f
 * [Apache Kafka](https://kafka.apache.org/)
 * [Kubernetes documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/c18b034d-c1e0-4c2d-84cc-0cb94cfef165" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/1d67f5a4-74b5-4121-892b-f68b5d87c82f/lesson/c18b034d-c1e0-4c2d-84cc-0cb94cfef165)

@@ -22,9 +22,7 @@ C:\> set VAULT_TOKEN=s.TEKrNn3Cv53pZdbPh8xg41Pu
 $ export VAULT_TOKEN=s.TEKrNn3Cv53pZdbPh8xg41Pu
 ```
 
-<Callout icon="lightbulb">
-  After exporting `VAULT_TOKEN`, all subsequent [Vault CLI][vault-cli-docs] commands will use this token automatically. Consider adding this line to your shell profile for convenience.
-</Callout>
+> **lightbulb** After exporting `VAULT_TOKEN`, all subsequent [Vault CLI][vault-cli-docs] commands will use this token automatically. Consider adding this line to your shell profile for convenience.
 
 Switching from the UI to the CLI lets you leverage commands not yet available in the interface.
 
@@ -42,9 +40,7 @@ Switching from the UI to the CLI lets you leverage commands not yet available in
 
 [vault-okta-docs]: https://www.vaultproject.io/docs/auth/okta
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/a8c5d884-c1a9-4047-bae9-3feeb5be5635" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/a8c5d884-c1a9-4047-bae9-3feeb5be5635)
 
 
 # Exam Tips for Objective 1
@@ -53,9 +49,7 @@ Source: https://notes.kodekloud.com/docs/HashiCorp-Certified-Vault-Associate-Cer
 
 Use this checklist to solidify your understanding of Vault’s authentication methods before the HashiCorp Certified Vault Associate exam.
 
-<Callout icon="lightbulb">
-  Use this checklist to solidify your understanding of Vault’s authentication methods before the HashiCorp Certified Vault Associate exam.
-</Callout>
+> **lightbulb** Use this checklist to solidify your understanding of Vault’s authentication methods before the HashiCorp Certified Vault Associate exam.
 
 ***
 
@@ -66,9 +60,7 @@ Use this checklist to solidify your understanding of Vault’s authentication me
 * Remember: **Auth Methods handle authentication**, while **policies handle authorization**.
 * Your end goal in any Auth Method flow is to obtain a valid Vault token (unless you already have one).
 
-<Frame>
-  ![The image provides exam tips related to authentication methods, focusing on validating identities, issuing tokens, and understanding policies and Vault support. It includes colorful text highlights and a cartoon character in the corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878028/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Exam-Tips-for-Objective-1/exam-tips-authentication-methods-vault.jpg)
-</Frame>
+![The image provides exam tips related to authentication methods, focusing on validating identities, issuing tokens, and understanding policies and Vault support. It includes colorful text highlights and a cartoon character in the corner.](https://kodekloud.com/kk-media/image/upload/v1752878028/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Exam-Tips-for-Objective-1/exam-tips-authentication-methods-vault.jpg)
 
 ***
 
@@ -93,9 +85,7 @@ No matter which method you pick—LDAP, OIDC, GitHub, AWS, or a custom plugin—
 * Watch for exam keywords like **“frequently rotated”**, **“existing provider”**, or **“no static secrets”**—these hint at specific methods.
 * You’re **not restricted** to a provider’s native method. For example, an Azure VM could use AppRole, OIDC, TLS certificates, or the Azure method itself.
 
-<Frame>
-  ![The image provides exam tips related to authentication methods, emphasizing understanding high-level operations, remembering key terms, and flexibility in method usage. It features a cartoon character in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878029/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Exam-Tips-for-Objective-1/exam-tips-authentication-methods-cartoon.jpg)
-</Frame>
+![The image provides exam tips related to authentication methods, emphasizing understanding high-level operations, remembering key terms, and flexibility in method usage. It features a cartoon character in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878029/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Exam-Tips-for-Objective-1/exam-tips-authentication-methods-cartoon.jpg)
 
 ***
 
@@ -109,9 +99,7 @@ No matter which method you pick—LDAP, OIDC, GitHub, AWS, or a custom plugin—
 * **Human-based** (interactive): require user input (LDAP, OIDC, GitHub).
 * **System-based** (non-interactive): use platform or machine credentials (AWS, Azure, GCP, AppRole, TLS).
 
-<Frame>
-  ![The image provides exam tips on authentication methods, distinguishing between human-based (e.g., LDAP, OIDC) and system-based (e.g., AWS, Azure) methods. It emphasizes understanding interactive and complex credential systems.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878031/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Exam-Tips-for-Objective-1/exam-tips-authentication-methods-credentials.jpg)
-</Frame>
+![The image provides exam tips on authentication methods, distinguishing between human-based (e.g., LDAP, OIDC) and system-based (e.g., AWS, Azure) methods. It emphasizes understanding interactive and complex credential systems.](https://kodekloud.com/kk-media/image/upload/v1752878031/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Exam-Tips-for-Objective-1/exam-tips-authentication-methods-credentials.jpg)
 
 ***
 
@@ -123,6 +111,4 @@ Master these concepts, and you’ll be prepared to answer any Vault Associate ex
 * [HashiCorp Certified: Vault Associate Exam Guide](https://learn.hashicorp.com/vault/associate)
 * [Vault Policies Overview](https://www.vaultproject.io/docs/concepts/policies)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/de3a757f-39ee-4faa-ae48-5cec340ef771" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/de3a757f-39ee-4faa-ae48-5cec340ef771)

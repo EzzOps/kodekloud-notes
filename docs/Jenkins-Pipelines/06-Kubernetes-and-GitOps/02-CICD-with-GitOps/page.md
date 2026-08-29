@@ -13,9 +13,7 @@ GitOps takes advantage of two separate Git repositories:
 
 The GitOps operator—in our case, the ArgoCD operator running inside a Kubernetes cluster—periodically pulls manifests from the Manifest Repository. If new or updated manifests are detected, it creates or updates the corresponding resources within the cluster.
 
-<Callout icon="lightbulb">
-  Whenever a developer pushes changes to the application repository—this might include modifications to a Dockerfile, Jenkins configuration, or application code—a CI/CD system (such as [Jenkins Pipelines](https://learn.kodekloud.com/user/courses/jenkins-pipelines)) automatically triggers a series of stages, such as unit testing, application builds, Docker image creation, and image pushes to a container registry.
-</Callout>
+> **lightbulb** Whenever a developer pushes changes to the application repository—this might include modifications to a Dockerfile, Jenkins configuration, or application code—a CI/CD system (such as [Jenkins Pipelines](https://learn.kodekloud.com/user/courses/jenkins-pipelines)) automatically triggers a series of stages, such as unit testing, application builds, Docker image creation, and image pushes to a container registry.
 
 For the deployment phase, the CI/CD pipeline follows these steps:
 
@@ -27,9 +25,7 @@ After the pull request is opened, a project manager or architect reviews the cha
 
 Subsequently, the ArgoCD operator automatically detects the newly merged changes, pulls the updated manifests, and applies them to the Kubernetes cluster.
 
-<Callout icon="triangle-alert">
-  If the newly deployed image introduces any issues, you can easily rollback to a stable state. Administrators or developers can inspect the application history using the ArgoCD CLI. This process allows quick identification and execution of a rollback.
-</Callout>
+> **triangle-alert** If the newly deployed image introduces any issues, you can easily rollback to a stable state. Administrators or developers can inspect the application history using the ArgoCD CLI. This process allows quick identification and execution of a rollback.
 
 To perform a rollback, use the following command:
 
@@ -49,6 +45,4 @@ This article has provided an overview of how a CI/CD pipeline integrates with Gi
 
 Thank you.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/fb6b2c83-178c-4962-b4e6-ca5528721170/lesson/494c9ccc-8e37-4b46-a891-d4c124a05f6d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/fb6b2c83-178c-4962-b4e6-ca5528721170/lesson/494c9ccc-8e37-4b46-a891-d4c124a05f6d)

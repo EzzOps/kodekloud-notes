@@ -43,9 +43,7 @@ cilium image (stable): v1.16.0
 
 If you need a specific version, visit the [Cilium CLI GitHub releases page][cilium-cli-releases] to download the right asset.
 
-<Frame>
-  ![The image shows a list of downloadable files with their sizes and upload dates, likely from a software release page. It includes various operating system versions and source code options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880261/notes-assets/images/Kubernetes-Networking-Deep-Dive-Installing-Cilium-and-Hubble-CLI/downloadable-files-sizes-upload-dates.jpg)
-</Frame>
+![The image shows a list of downloadable files with their sizes and upload dates, likely from a software release page. It includes various operating system versions and source code options.](https://kodekloud.com/kk-media/image/upload/v1752880261/notes-assets/images/Kubernetes-Networking-Deep-Dive-Installing-Cilium-and-Hubble-CLI/downloadable-files-sizes-upload-dates.jpg)
 
 ## Install Hubble CLI
 
@@ -110,9 +108,7 @@ Now that both the Cilium and Hubble CLIs are installed, you’re ready to procee
 
 [hubble-releases]: https://github.com/cilium/hubble/releases
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/7782c4cc-a537-4c18-81d9-b583f6c8f4f7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/7782c4cc-a537-4c18-81d9-b583f6c8f4f7)
 
 
 # Internal Kubernetes Communication Overview
@@ -123,9 +119,7 @@ This article explores pod communication within a Kubernetes cluster, covering ne
 
 In this lesson, we’ll explore how pods communicate inside a Kubernetes cluster. We’ll cover key patterns and tools—from the basic network model to advanced service meshes—so you can design reliable, secure, and scalable applications.
 
-<Frame>
-  ![The image outlines lesson objectives, focusing on pod-to-pod communication and exploring communication patterns and techniques.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880262/notes-assets/images/Kubernetes-Networking-Deep-Dive-Internal-Kubernetes-Communication-Overview/pod-to-pod-communication-objectives-diagram.jpg)
-</Frame>
+![The image outlines lesson objectives, focusing on pod-to-pod communication and exploring communication patterns and techniques.](https://kodekloud.com/kk-media/image/upload/v1752880262/notes-assets/images/Kubernetes-Networking-Deep-Dive-Internal-Kubernetes-Communication-Overview/pod-to-pod-communication-objectives-diagram.jpg)
 
 ## Table of Contents
 
@@ -148,13 +142,9 @@ Kubernetes enforces a flat, IP-per-pod network. The core principles are:
 3. **Cluster-wide Reachability**\
    Pods on different nodes talk without NAT, thanks to the CNI (we’re using Cilium).
 
-<Callout icon="lightbulb">
-  We use [Cilium](https://cilium.io/) with eBPF for high-performance routing, policy enforcement, and load balancing—no IP masquerading required.
-</Callout>
+> **lightbulb** We use [Cilium](https://cilium.io/) with eBPF for high-performance routing, policy enforcement, and load balancing—no IP masquerading required.
 
-<Frame>
-  ![The image illustrates the Kubernetes Network Model, showing pods with unique IP addresses within nodes. It highlights the concept of assigning a unique IP to each pod.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880263/notes-assets/images/Kubernetes-Networking-Deep-Dive-Internal-Kubernetes-Communication-Overview/kubernetes-network-model-pods-ip-addresses.jpg)
-</Frame>
+![The image illustrates the Kubernetes Network Model, showing pods with unique IP addresses within nodes. It highlights the concept of assigning a unique IP to each pod.](https://kodekloud.com/kk-media/image/upload/v1752880263/notes-assets/images/Kubernetes-Networking-Deep-Dive-Internal-Kubernetes-Communication-Overview/kubernetes-network-model-pods-ip-addresses.jpg)
 
 ## Pod-to-Pod Communication on the Same Node
 
@@ -163,9 +153,7 @@ When pods share a node, each pod’s network interface pairs with a veth endpoin
 * Low latency, no encapsulation
 * Direct IP routing on the bridge interface
 
-<Frame>
-  ![The image illustrates a network diagram showing pod-to-pod communication on the same node, using virtual Ethernet interfaces and a CNI (Container Network Interface) bridge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880264/notes-assets/images/Kubernetes-Networking-Deep-Dive-Internal-Kubernetes-Communication-Overview/network-diagram-pod-communication-cni.jpg)
-</Frame>
+![The image illustrates a network diagram showing pod-to-pod communication on the same node, using virtual Ethernet interfaces and a CNI (Container Network Interface) bridge.](https://kodekloud.com/kk-media/image/upload/v1752880264/notes-assets/images/Kubernetes-Networking-Deep-Dive-Internal-Kubernetes-Communication-Overview/network-diagram-pod-communication-cni.jpg)
 
 ## Pod-to-Pod Communication Across Nodes
 
@@ -178,9 +166,7 @@ For inter-node traffic, Cilium injects eBPF programs into the kernel to handle r
 
 This approach eliminates the need for traditional overlay networks and improves performance.
 
-<Frame>
-  ![The image illustrates a network diagram showing pod-to-pod communication across nodes, with components like eth0, veth0, and CNI labeled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880265/notes-assets/images/Kubernetes-Networking-Deep-Dive-Internal-Kubernetes-Communication-Overview/network-diagram-pod-communication-nodes.jpg)
-</Frame>
+![The image illustrates a network diagram showing pod-to-pod communication across nodes, with components like eth0, veth0, and CNI labeled.](https://kodekloud.com/kk-media/image/upload/v1752880265/notes-assets/images/Kubernetes-Networking-Deep-Dive-Internal-Kubernetes-Communication-Overview/network-diagram-pod-communication-nodes.jpg)
 
 ## Network Policies
 
@@ -193,9 +179,7 @@ Network Policies control traffic at the IP and port level (TCP/UDP). You can spe
 | IPBlock           | Allow/Deny external CIDR ranges | `ipBlock: cidr: 172.16.0.0/16`             |
 | PolicyTypes       | Ingress, Egress, or both        | `policyTypes: ["Ingress","Egress"]`        |
 
-<Frame>
-  ![The image illustrates network policies, showing how communication between pods is managed, with some connections allowed and others blocked. It highlights the management of communication between entities like other pods, namespaces, and IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880267/notes-assets/images/Kubernetes-Networking-Deep-Dive-Internal-Kubernetes-Communication-Overview/network-policies-pod-communication-diagram.jpg)
-</Frame>
+![The image illustrates network policies, showing how communication between pods is managed, with some connections allowed and others blocked. It highlights the management of communication between entities like other pods, namespaces, and IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752880267/notes-assets/images/Kubernetes-Networking-Deep-Dive-Internal-Kubernetes-Communication-Overview/network-policies-pod-communication-diagram.jpg)
 
 ## Services & DNS
 

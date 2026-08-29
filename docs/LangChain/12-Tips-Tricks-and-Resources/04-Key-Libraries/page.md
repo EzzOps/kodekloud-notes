@@ -35,9 +35,7 @@ In short: LangChain Core defines the runtime and abstract building blocks (inclu
 
 Callouts and quick guidance
 
-<Callout icon="lightbulb">
-  When architecting a LangChain application, think in layers: design your logic against Core abstractions (chains, retrievers, tools), then swap community integrations (LLMs, vector DBs, loaders) to suit your provider, budget, and latency requirements. This yields portable, testable code.
-</Callout>
+> **lightbulb** When architecting a LangChain application, think in layers: design your logic against Core abstractions (chains, retrievers, tools), then swap community integrations (LLMs, vector DBs, loaders) to suit your provider, budget, and latency requirements. This yields portable, testable code.
 
 Summary table — Layers at a glance
 
@@ -65,6 +63,4 @@ Links and references
 * [Azure OpenAI](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/)
 * [Google Vertex AI](https://cloud.google.com/vertex-ai)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/c68764ef-6651-4965-8e85-c4dc6a56408e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/c68764ef-6651-4965-8e85-c4dc6a56408e)

@@ -182,9 +182,7 @@ Using negated character classes gives you more control over your search patterns
 
 ***
 
-<Callout icon="lightbulb">
-  Regular expressions are a powerful tool not only in grep but also in utilities like sed. For more practice and interactive testing, visit [regexr.com](https://regexr.com).
-</Callout>
+> **lightbulb** Regular expressions are a powerful tool not only in grep but also in utilities like sed. For more practice and interactive testing, visit [regexr.com](https://regexr.com).
 
 For another example of using a negated set, consider the following command:
 
@@ -206,12 +204,8 @@ In this lesson, we explored several essential concepts of extended regular expre
 
 Practice these techniques in your labs to further refine and enhance your regex skills.
 
-<Frame>
-  ![The image shows a dark-themed interface with a command line on the left and a mathematical expression evaluation on the right, demonstrating the use of parentheses in subexpressions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883623/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Extended-Regular-Expressions/dark-interface-command-line-math.jpg)
-</Frame>
+![The image shows a dark-themed interface with a command line on the left and a mathematical expression evaluation on the right, demonstrating the use of parentheses in subexpressions.](https://kodekloud.com/kk-media/image/upload/v1752883623/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Extended-Regular-Expressions/dark-interface-command-line-math.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/b211cf9a-25da-4128-8d46-eaba0406ccae" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/b211cf9a-25da-4128-8d46-eaba0406ccae)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/20efc8bb-fd2a-47f1-b07e-7a4d98891666" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c3d8eded-b1dc-479c-a51a-c4f468ba6da3/lesson/20efc8bb-fd2a-47f1-b07e-7a4d98891666)

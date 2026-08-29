@@ -16,17 +16,13 @@ Registered Devices are primarily personal devices, such as smartphones or tablet
 
 Joined Devices are company-owned devices that are exclusively intended for work. They are directly joined to Microsoft Entra ID and require a company account for sign-in. By leveraging cloud-driven security features such as Conditional Access, these devices are ideal for cloud-centric organizations. Joined Devices are mainly compatible with Windows 10 and later operating systems.
 
-<Frame>
-  ![The image illustrates three types of device identities: Registered Devices, Joined Devices, and Hybrid Joined Devices, with diagrams and a list of features for cloud-centric organizations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884576/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configure-device-identities/device-identities-diagram-cloud-features.jpg)
-</Frame>
+![The image illustrates three types of device identities: Registered Devices, Joined Devices, and Hybrid Joined Devices, with diagrams and a list of features for cloud-centric organizations.](https://kodekloud.com/kk-media/image/upload/v1752884576/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configure-device-identities/device-identities-diagram-cloud-features.jpg)
 
 ## Hybrid Joined Devices
 
 Hybrid Joined Devices serve organizations that blend cloud services with on-premises infrastructure. These devices are joined to both the local Active Directory and Microsoft Entra ID. This dual configuration supports environments that rely on legacy desktop applications and Group Policy management, and it is compatible with Windows 7 and later versions. Hybrid Joined Devices enable the deployment of preconfigured system images along with seamless integration.
 
-<Frame>
-  ![The image illustrates three types of device identities: Registered Devices, Joined Devices, and Hybrid Joined Devices, with diagrams and a list of features for hybrid joined devices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884577/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configure-device-identities/device-identities-registered-joined-hybrid.jpg)
-</Frame>
+![The image illustrates three types of device identities: Registered Devices, Joined Devices, and Hybrid Joined Devices, with diagrams and a list of features for hybrid joined devices.](https://kodekloud.com/kk-media/image/upload/v1752884577/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configure-device-identities/device-identities-registered-joined-hybrid.jpg)
 
 Each device identity configuration offers unique benefits:
 
@@ -42,25 +38,17 @@ To view the configured devices, sign in to the Azure Portal and navigate to Micr
 
 In a demo environment, you may only notice a few unmanaged devices. These devices appear as unmanaged because they are not controlled by a device management solution like Intune, though they remain Entra-joined machines.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying a list of devices, including details such as device name, OS version, join type, and registration date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884578/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configure-device-identities/azure-portal-device-list-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying a list of devices, including details such as device name, OS version, join type, and registration date.](https://kodekloud.com/kk-media/image/upload/v1752884578/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configure-device-identities/azure-portal-device-list-interface.jpg)
 
 When devices are created as work or school account machines, they display as Microsoft Entra ID Joined devices. For example, if you join your personal phone, it appears as a Registered Device since it is added as a personal device.
 
 By clicking on a device in the Azure Portal, you can view detailed information such as the user principal name of the owner.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying the properties of a device named "DESKTOP-R1A05D7," including details like device ID, OS, version, and user principal name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884579/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configure-device-identities/azure-portal-device-properties-desktop.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying the properties of a device named "DESKTOP-R1A05D7," including details like device ID, OS, version, and user principal name.](https://kodekloud.com/kk-media/image/upload/v1752884579/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configure-device-identities/azure-portal-device-properties-desktop.jpg)
 
-<Callout icon="lightbulb">
-  The Mobile Device Management (MDM) field may show "none," indicating that the device is unmanaged. To test device joining, you can use a Windows 10 or Windows 11 machine.
-</Callout>
+> **lightbulb** The Mobile Device Management (MDM) field may show "none," indicating that the device is unmanaged. To test device joining, you can use a Windows 10 or Windows 11 machine.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal dashboard for device management, displaying alerts and statistics about stale, noncompliant, and unmanaged devices. It also includes navigation options and feature highlights related to device settings and troubleshooting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884580/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configure-device-identities/azure-portal-device-management-dashboard.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal dashboard for device management, displaying alerts and statistics about stale, noncompliant, and unmanaged devices. It also includes navigation options and feature highlights related to device settings and troubleshooting.](https://kodekloud.com/kk-media/image/upload/v1752884580/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configure-device-identities/azure-portal-device-management-dashboard.jpg)
 
 ## Joining a Device to Microsoft Entra ID
 
@@ -71,9 +59,7 @@ Follow these steps to join a device to Microsoft Entra ID:
 3. Connect your work or school account to Microsoft Entra ID. (Note: You might also see Azure AD referenced interchangeably.)
 4. Enter your work or school email address when prompted, which redirects you to the sign-in page.
 
-<Frame>
-  ![The image shows a Windows settings screen for setting up a work or school account, with a field to enter an email address. The left sidebar displays various settings options like System, Bluetooth & devices, and Accounts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884581/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configure-device-identities/windows-settings-work-school-account.jpg)
-</Frame>
+![The image shows a Windows settings screen for setting up a work or school account, with a field to enter an email address. The left sidebar displays various settings options like System, Bluetooth & devices, and Accounts.](https://kodekloud.com/kk-media/image/upload/v1752884581/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Configure-device-identities/windows-settings-work-school-account.jpg)
 
 After signing in, if the device is not connected already, it will be joined to Microsoft Entra ID automatically.
 
@@ -85,6 +71,4 @@ We will continue our exploration by covering effective strategies for managing u
 
 Thank you for reading.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/07e3a37e-65a9-430c-9919-011cc605b25d/lesson/723a0bf2-fa70-4323-9bdf-d1e2599585dd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/07e3a37e-65a9-430c-9919-011cc605b25d/lesson/723a0bf2-fa70-4323-9bdf-d1e2599585dd)

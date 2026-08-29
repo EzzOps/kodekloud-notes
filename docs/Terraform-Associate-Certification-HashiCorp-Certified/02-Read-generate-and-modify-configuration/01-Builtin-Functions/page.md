@@ -59,9 +59,7 @@ resource "aws_instance" "development" {
 
 In this example, the duplicate `"us-east-1"` is removed when the list is converted to a set.
 
-<Callout icon="lightbulb">
-  Terraform offers many other useful built-in functions. In the following sections, we delve into numeric, string, collection, and map functions to enhance your configuration authoring ability.
-</Callout>
+> **lightbulb** Terraform offers many other useful built-in functions. In the following sections, we delve into numeric, string, collection, and map functions to enhance your configuration authoring ability.
 
 ***
 
@@ -194,9 +192,7 @@ Terraform offers several useful map functions:
 
 * **keys**: Returns a list of keys from a map. For instance, the following example demonstrates how to extract all keys from the `ami` map:
 
-<Frame>
-  ![The image displays a menu with four buttons labeled: Numeric Functions, String Functions, Collection Functions, and Type Conversion Functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884104/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Builtin-Functions/frame_150.jpg)
-</Frame>
+![The image displays a menu with four buttons labeled: Numeric Functions, String Functions, Collection Functions, and Type Conversion Functions.](https://kodekloud.com/kk-media/image/upload/v1752884104/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Builtin-Functions/frame_150.jpg)
 
 In the console:
 
@@ -259,6 +255,4 @@ In this case, when `"us-west-2"` is absent from the map, Terraform returns the s
 
 This lesson has covered a variety of built-in functions ranging from numeric and string operations to collection and map manipulations. Mastering these functions is essential for creating dynamic, robust Terraform configurations that are both efficient and scalable. For additional guidance, explore the [Terraform Documentation](https://www.terraform.io/docs) and related resources.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/c59e52ed-8a8c-4a6c-8ad0-8dcc38c1598e/lesson/a019bf6d-1f93-4bfd-936a-08bd52e27676" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/c59e52ed-8a8c-4a6c-8ad0-8dcc38c1598e/lesson/a019bf6d-1f93-4bfd-936a-08bd52e27676)

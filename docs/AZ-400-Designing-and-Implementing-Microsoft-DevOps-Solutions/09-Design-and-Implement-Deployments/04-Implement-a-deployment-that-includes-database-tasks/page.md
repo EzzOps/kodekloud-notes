@@ -10,13 +10,13 @@ In this guide, you’ll learn how to design and execute Azure deployments that i
 
 Database updates often accompany application code changes—whether modifying table structures, migrating existing data, or tuning performance. Properly sequencing and automating these tasks in your pipeline reduces risk and ensures smooth rollouts.
 
-![The image is an introduction slide about deployments involving database tasks, featuring a person with a laptop standing next to a server rack and a cloud icon. A text box explains the importance of database tasks in application deployments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867633/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-a-deployment-that-includes-database-tasks/database-tasks-deployments-introduction-slide.jpg)
+![The image is an introduction slide about deployments involving database tasks, featuring a person with a laptop standing next to a server rack and a cloud icon. A text box explains the importance of database tasks in application deployments.](https://kodekloud.com/kk-media/image/upload/v1752867633/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-a-deployment-that-includes-database-tasks/database-tasks-deployments-introduction-slide.jpg)
 
 ## Balancing Safety and Speed
 
 DevOps strives for fast, reliable releases. When database changes are involved, you must prevent data loss or corruption while keeping downtime to a minimum. Automate every step—from generating migration scripts to running post-deployment checks—to strike the right balance.
 
-![The image illustrates a DevOps cycle involving database tasks, emphasizing safe updates and efficient processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867634/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-a-deployment-that-includes-database-tasks/devops-cycle-database-tasks-updates.jpg)
+![The image illustrates a DevOps cycle involving database tasks, emphasizing safe updates and efficient processes.](https://kodekloud.com/kk-media/image/upload/v1752867634/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-a-deployment-that-includes-database-tasks/devops-cycle-database-tasks-updates.jpg)
 
 ## Four Key Database Task Types
 
@@ -31,7 +31,7 @@ Plan your deployment by categorizing database work into these four areas:
 4. **Backup and Restoration**\
    Create and validate backups; prepare rollback procedures.
 
-![The image outlines four types of database tasks in Azure deployments: Schema Updates, Data Migration, Performance Tuning, and Backup and Restoration Processes, each with a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867636/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-a-deployment-that-includes-database-tasks/azure-database-tasks-schema-migration.jpg)
+![The image outlines four types of database tasks in Azure deployments: Schema Updates, Data Migration, Performance Tuning, and Backup and Restoration Processes, each with a brief description.](https://kodekloud.com/kk-media/image/upload/v1752867636/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-a-deployment-that-includes-database-tasks/azure-database-tasks-schema-migration.jpg)
 
 ## Azure Tools for Database Deployments
 
@@ -44,7 +44,7 @@ Use these Azure-native tools to streamline database operations:
 | Azure Data Studio            | Lightweight SQL editor and management UI                               | [Azure Data Studio][ads]           |
 | Entity Framework Migrations  | Code-based migrations for .NET projects                                | [Entity Framework Migrations][efm] |
 
-![The image is a diagram showing tools for database deployment in Azure, featuring Azure DevOps, SQL Server Data Tools (SSDT), Azure Data Studio, and Entity Framework migrations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867638/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-a-deployment-that-includes-database-tasks/azure-database-deployment-tools-diagram.jpg)
+![The image is a diagram showing tools for database deployment in Azure, featuring Azure DevOps, SQL Server Data Tools (SSDT), Azure Data Studio, and Entity Framework migrations.](https://kodekloud.com/kk-media/image/upload/v1752867638/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-a-deployment-that-includes-database-tasks/azure-database-deployment-tools-diagram.jpg)
 
 ## Real-World Example: SSDT + Azure DevOps
 
@@ -59,7 +59,7 @@ Follow this workflow to add a new table and index to an Azure SQL Database using
 4. **Validate Post-Deployment**\
    Run automated tests or manual queries to confirm success.
 
-![The image is a flowchart illustrating the steps for implementing a database deployment, including setting up a database project, checking in changes to Azure DevOps, configuring the CI/CD pipeline, and executing the deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867640/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-a-deployment-that-includes-database-tasks/database-deployment-flowchart-steps.jpg)
+![The image is a flowchart illustrating the steps for implementing a database deployment, including setting up a database project, checking in changes to Azure DevOps, configuring the CI/CD pipeline, and executing the deployment.](https://kodekloud.com/kk-media/image/upload/v1752867640/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implement-a-deployment-that-includes-database-tasks/database-deployment-flowchart-steps.jpg)
 
 ### Sample Azure Pipelines YAML
 

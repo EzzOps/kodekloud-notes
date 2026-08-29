@@ -108,9 +108,7 @@ Important diagnosis notes:
 
 * The HPA warnings about metrics indicate a metrics failure path that should be investigated (metrics-server, kubelet metrics, scraping), but the immediate blocker preventing scale-up was the `ResourceQuota` restricting pods to 1. Always correlate events + quotas + metrics to determine the decisive cause.
 
-<Callout icon="warning">
-  Do not increase namespace quotas indiscriminately in production. Align quota changes with capacity planning and organizational policies. If unsure, request approval or test changes in a non-production environment first.
-</Callout>
+> **warning** Do not increase namespace quotas indiscriminately in production. Align quota changes with capacity planning and organizational policies. If unsure, request approval or test changes in a non-production environment first.
 
 ***
 
@@ -184,11 +182,9 @@ References and further reading
 * [ResourceQuota](https://kubernetes.io/docs/concepts/policy/resource-quotas/)
 * [kubectl documentation](https://kubernetes.io/docs/reference/kubectl/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/a2bef22f-2221-4587-9f26-3c0bce28059e/lesson/2af65038-fb0e-44d5-98dd-1c26efb2be50" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/a2bef22f-2221-4587-9f26-3c0bce28059e/lesson/2af65038-fb0e-44d5-98dd-1c26efb2be50)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/a2bef22f-2221-4587-9f26-3c0bce28059e/lesson/b6b570e7-07e8-4afe-892d-d131158fd249" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/a2bef22f-2221-4587-9f26-3c0bce28059e/lesson/b6b570e7-07e8-4afe-892d-d131158fd249)
 
 
 # Why Use KAgent
@@ -201,9 +197,7 @@ Hello — welcome to this concise guide to KAgent. This lesson explains what KAg
 
 KAgent is an open source framework that brings agentic AI to Kubernetes. It targets DevOps and platform teams and integrates naturally into environments that already use Kubernetes primitives and GitOps workflows. KAgent provides Kubernetes-native APIs and controllers, built-in observability, and multi-LLM provider support.
 
-<Callout icon="lightbulb">
-  KAgent is part of the CNCF Sandbox (accepted April 25). There is both an open source edition and a commercial offering backed by Solo. The stable release as of January 2026 is `v0.7.8`. For community discussion and support, see the project Discord and GitHub repository.
-</Callout>
+> **lightbulb** KAgent is part of the CNCF Sandbox (accepted April 25). There is both an open source edition and a commercial offering backed by Solo. The stable release as of January 2026 is `v0.7.8`. For community discussion and support, see the project Discord and GitHub repository.
 
 <Frame>
   <img alt="A dark-themed infographic titled &#x22;Cloud Native Sandbox — April 2025&#x22; showing kagent and CNCF logos. Colored boxes highlight topics like Governance, Security, Community Standards and benefits such as enterprise-grade project maturity and a path to incubation." />
@@ -262,9 +256,7 @@ Observability is first-class via OpenTelemetry, enabling trace collection for ag
   <img alt="An infographic titled &#x22;Technical Advantages&#x22; showing seven numbered feature boxes (Kubernetes native; declarative configuration; multi‑provider LLM support; rich tool ecosystem; observability; extensibility; production ready). Below is a highlighted Observability section describing OpenTelemetry tracing, monitoring agent operations, and debug/troubleshoot capabilities." />
 </Frame>
 
-<Callout icon="warning">
-  KAgent scales with your cluster. Ensure you provision appropriate CPU, memory, and network resources for agent workloads and LLM calls (e.g., large-context models may increase memory and request rates).
-</Callout>
+> **warning** KAgent scales with your cluster. Ensure you provision appropriate CPU, memory, and network resources for agent workloads and LLM calls (e.g., large-context models may increase memory and request rates).
 
 Extensibility and production readiness make KAgent suitable for platform teams that want to expose agent-driven automation across clusters while retaining control via Kubernetes RBAC, network policies, and secrets management.
 
@@ -306,6 +298,4 @@ Multi-agent orchestration is a powerful pattern: run agents in isolation for saf
 
 Use these links to explore installation guides, example agent CRDs, and community resources.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/a2bef22f-2221-4587-9f26-3c0bce28059e/lesson/11a92265-50e4-4341-88a7-4e0845fc8d45" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/a2bef22f-2221-4587-9f26-3c0bce28059e/lesson/11a92265-50e4-4341-88a7-4e0845fc8d45)

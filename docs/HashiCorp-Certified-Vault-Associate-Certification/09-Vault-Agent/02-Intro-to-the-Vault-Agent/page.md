@@ -124,9 +124,7 @@ You’ve now automated the following with Vault Agent:
 * [Template Syntax](https://www.vaultproject.io/docs/agent/templates)
 * [KV Secrets Engine](https://www.vaultproject.io/docs/secrets/kv)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/25b89318-77a0-4f52-a4d7-2df3696e3362/lesson/72c31d12-bcc9-4d96-b28b-2057ea11b144" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/25b89318-77a0-4f52-a4d7-2df3696e3362/lesson/72c31d12-bcc9-4d96-b28b-2057ea11b144)
 
 
 # Intro to the Vault Agent
@@ -143,9 +141,7 @@ Vault Agent is a client-side daemon that runs alongside your application to hand
 * Automate authentication, token renewal, and secret caching
 * Render configuration files at startup using Vault data
 
-<Callout icon="lightbulb">
-  Vault Agent supports multiple authentication methods (like [AppRole][] and [Kubernetes][]) and can wrap responses to protect tokens in transit.
-</Callout>
+> **lightbulb** Vault Agent supports multiple authentication methods (like [AppRole][] and [Kubernetes][]) and can wrap responses to protect tokens in transit.
 
 ## Vault Agent Features at a Glance
 

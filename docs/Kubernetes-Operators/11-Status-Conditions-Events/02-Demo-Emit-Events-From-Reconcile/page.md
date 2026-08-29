@@ -14,9 +14,7 @@ These three lights provide a focused view without turning `status` into a crowde
   <img alt="The image explains three condition types using traffic lights: &#x22;Ready&#x22; (green), &#x22;Progressing&#x22; (yellow), and &#x22;Degraded&#x22; (red), each associated with a question about system status. A note suggests asking steady questions instead of keeping a diary." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Keep condition types steady and focused: they should ask continuous health questions (Ready, Progressing, Degraded), not log every event or reconcile step.
-</Callout>
+> **lightbulb** Keep condition types steady and focused: they should ask continuous health questions (Ready, Progressing, Degraded), not log every event or reconcile step.
 
 Design guidance and best practices
 
@@ -34,9 +32,7 @@ A single resource can show multiple lights at once. Conditions are not a single 
   <img alt="The image shows a diagram explaining two conditions: &#x22;Rollout&#x22; with progress lights indicating &#x22;Progressing&#x22; (True) and &#x22;Ready&#x22; (False), and &#x22;Steady state&#x22; with lights indicating &#x22;Ready&#x22; (True) and &#x22;Degraded&#x22; (False)." />
 </Frame>
 
-<Callout icon="warning">
-  Do not overload conditions with transient or debug-level events. Conditions should answer steady-state health questions, not act as a message log.
-</Callout>
+> **warning** Do not overload conditions with transient or debug-level events. Conditions should answer steady-state health questions, not act as a message log.
 
 Keep the dashboard small and pragmatic. For a typical web app controller, the three lights (Ready, Progressing, Degraded) give operators and tools the context they need without forcing them to interpret raw gauges alone.
 
@@ -48,9 +44,7 @@ Links and further reading
 * [metav1.Condition Go type reference](https://pkg.go.dev/k8s.io/apimachinery@v0.29.0/pkg/apis/meta/v1#Condition)
 * [Golang course reference used above](https://learn.kodekloud.com/user/courses/golang)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/c310be49-f2da-42f5-9e9f-9a67c26b5d7b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/c310be49-f2da-42f5-9e9f-9a67c26b5d7b)
 
 
 # Demo Emit Events From Reconcile
@@ -65,9 +59,7 @@ Events are valuable because they appear in places Kubernetes users already inspe
 
 Below we walk through the minimal changes required to emit informative, controller-scoped events from the reconciler.
 
-<Callout icon="lightbulb">
-  The manager owns the event broadcaster. Reconciler instances should accept an `EventRecorder` from the manager so events show which controller reported the action (don't create your own recorder directly).
-</Callout>
+> **lightbulb** The manager owns the event broadcaster. Reconciler instances should accept an `EventRecorder` from the manager so events show which controller reported the action (don't create your own recorder directly).
 
 ## Overview — what you will change
 
@@ -252,8 +244,6 @@ These events appear in `kubectl describe webapp <name>` and similar tooling, hel
 
 This demo continues from this point: the reconciler carefully updates only the fields it owns on the `Deployment` while leaving other fields stable, and emits events to make those actions visible to cluster users.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/7bc676fd-b40a-4ab9-aeb1-a2cda22fd5bc" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/7bc676fd-b40a-4ab9-aeb1-a2cda22fd5bc)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/7bb75dc4-045a-4a2c-a776-11137edeeb69" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/7bb75dc4-045a-4a2c-a776-11137edeeb69)

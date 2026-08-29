@@ -22,9 +22,7 @@ This section represents approximately 25% to 30% of the exam content. Here, the 
 * Enterprise Governance
 * Identity Protection
 
-<Frame>
-  ![The image outlines the topics for the AZ-500 Certification, including managing identity and access, secure networking, securing compute, storage, and databases, and managing security operations. It also lists specific areas like Azure Active Directory and identity protection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881978/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Certification-Details/az-500-certification-topics-outline.jpg)
-</Frame>
+![The image outlines the topics for the AZ-500 Certification, including managing identity and access, secure networking, securing compute, storage, and databases, and managing security operations. It also lists specific areas like Azure Active Directory and identity protection.](https://kodekloud.com/kk-media/image/upload/v1752881978/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Certification-Details/az-500-certification-topics-outline.jpg)
 
 ***
 
@@ -58,9 +56,7 @@ Covering about 25% to 30% of the exam, this section focuses on the management an
 * **Microsoft Defender for Cloud:** A suite providing extensive security for both Azure and non-Azure environments.
 * **Microsoft Sentinel:** Azure’s SIEM solution, designed for efficient threat detection, investigation, and response.
 
-<Callout icon="lightbulb">
-  Remember that each of these core areas is crucial for building a holistic security posture in modern cloud environments.
-</Callout>
+> **lightbulb** Remember that each of these core areas is crucial for building a holistic security posture in modern cloud environments.
 
 ***
 
@@ -78,30 +74,22 @@ Several services have been renamed to align with Microsoft's evolving branding s
 
 To schedule your AZ-500 exam, simply search for "AZ-500 exam" on your preferred search engine. You will find pages featuring prep videos, updated study guides, and a sandbox with exam-style questions.
 
-<Frame>
-  ![The image shows a webpage detailing the Microsoft Azure Security Technologies exam (AZ-500), including information about the exam's language options, passing score, and preparation tips. It also provides a link to schedule the exam and mentions the cost in USD.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881980/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Certification-Details/azure-security-technologies-exam-az500.jpg)
-</Frame>
+![The image shows a webpage detailing the Microsoft Azure Security Technologies exam (AZ-500), including information about the exam's language options, passing score, and preparation tips. It also provides a link to schedule the exam and mentions the cost in USD.](https://kodekloud.com/kk-media/image/upload/v1752881980/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Certification-Details/azure-security-technologies-exam-az500.jpg)
 
 Click the schedule link, sign in, and you will be redirected to Pearson VUE, where you can choose between a proctored exam or taking the exam at a testing center. Note that the exam fee is approximately 165 US dollars, though pricing may vary based on your country and local tax regulations.
 
 Furthermore, explore the [Microsoft Learn](https://learn.microsoft.com/) paths available for self-paced and instructor-led courses. These resources are constantly updated by Microsoft to ensure you have the latest information on security best practices and exam topics.
 
-<Frame>
-  ![The image shows a webpage for preparing for the AZ-500 Microsoft Azure Security Technologies exam, featuring self-paced and instructor-led learning paths. It lists learning paths such as "Manage Identity and Access," "Implement platform protection," and "Secure your data and applications."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881981/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Certification-Details/az-500-azure-security-exam-prep.jpg)
-</Frame>
+![The image shows a webpage for preparing for the AZ-500 Microsoft Azure Security Technologies exam, featuring self-paced and instructor-led learning paths. It lists learning paths such as "Manage Identity and Access," "Implement platform protection," and "Secure your data and applications."](https://kodekloud.com/kk-media/image/upload/v1752881981/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Certification-Details/az-500-azure-security-exam-prep.jpg)
 
-<Callout icon="lightbulb">
-  For further study, consider exploring the following links:
+> **lightbulb** For further study, consider exploring the following links:
 
   * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
   * [Microsoft Documentation](https://docs.microsoft.com/)
   * [Docker Hub](https://hub.docker.com/)
-</Callout>
 
 ***
 
 With this introduction complete, we wish you the best of luck on your AZ-500 certification journey. Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d3cee377-aede-453f-9ac6-782f570879e9/lesson/01ef3093-740b-4f89-95d5-79eab16330bb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d3cee377-aede-453f-9ac6-782f570879e9/lesson/01ef3093-740b-4f89-95d5-79eab16330bb)

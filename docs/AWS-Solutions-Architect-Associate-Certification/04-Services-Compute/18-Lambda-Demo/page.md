@@ -12,7 +12,7 @@ In this guide, you'll learn how to create and deploy an AWS Lambda function from
 
 Begin by searching for the Lambda service in the AWS Management Console search bar.
 
-![The image shows the AWS Management Console with a search for "lambda," displaying various AWS services and features related to the search term. The console includes options like Lambda, CodeBuild, AWS Signer, and Amazon Inspector.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864960/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-management-console-lambda-search.jpg)
+![The image shows the AWS Management Console with a search for "lambda," displaying various AWS services and features related to the search term. The console includes options like Lambda, CodeBuild, AWS Signer, and Amazon Inspector.](https://kodekloud.com/kk-media/image/upload/v1752864960/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-management-console-lambda-search.jpg)
 
 Once in the Lambda service, click **Create a function**. You will then see several options:
 
@@ -24,21 +24,21 @@ For this demo, select **Author from scratch**.
 
 Next, supply a name for your function (e.g., "my-first-function") and choose the runtime. AWS Lambda offers a variety of runtimes such as .NET, Go, Java, Node.js, Python, and Ruby. In this example, we will use Node.js. You may also select the architecture and configure the execution role. By default, Lambda creates a new role with CloudWatch Logs upload permissions. Alternatively, you can use an existing role or create a new one from an AWS policy template.
 
-![The image shows the AWS Lambda "Create function" page, where users can configure a new function with options for runtime, architecture, and permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864961/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-lambda-create-function-page.jpg)
+![The image shows the AWS Lambda "Create function" page, where users can configure a new function with options for runtime, architecture, and permissions.](https://kodekloud.com/kk-media/image/upload/v1752864961/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-lambda-create-function-page.jpg)
 
-![The image shows the AWS Lambda console where a user is creating a function using a blueprint. Various blueprints and runtime options are listed for selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864962/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-lambda-function-creation-blueprint.jpg)
+![The image shows the AWS Lambda console where a user is creating a function using a blueprint. Various blueprints and runtime options are listed for selection.](https://kodekloud.com/kk-media/image/upload/v1752864962/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-lambda-function-creation-blueprint.jpg)
 
-![The image shows the AWS Lambda console where a user is creating a new function. It displays options for creating the function using a blueprint, with various templates and runtimes listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864963/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-lambda-console-create-function.jpg)
+![The image shows the AWS Lambda console where a user is creating a new function. It displays options for creating the function using a blueprint, with various templates and runtimes listed.](https://kodekloud.com/kk-media/image/upload/v1752864963/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-lambda-console-create-function.jpg)
 
 Leave the optional settings (like VPC configuration) unchecked and click **Create function**.
 
 After creation, you'll see a graphical overview of your function. The interface includes a trigger section that indicates when your function will run. AWS Lambda can be initiated by various sources, including API Gateway, S3, SNS, SQS, Alexa, Apache Kafka, and more.
 
-![The image shows an AWS Lambda console where a function named "firstFunction" has been successfully created. It includes options to add triggers, destinations, and view the function's code source.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864964/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-lambda-firstfunction-console.jpg)
+![The image shows an AWS Lambda console where a function named "firstFunction" has been successfully created. It includes options to add triggers, destinations, and view the function's code source.](https://kodekloud.com/kk-media/image/upload/v1752864964/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-lambda-firstfunction-console.jpg)
 
 To review available triggers, click **Add trigger**. You will see a list of potential trigger sources.
 
-![The image shows the AWS Lambda console with the "Add trigger" section open, displaying a list of potential trigger sources such as Alexa, Apache Kafka, and API Gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864965/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-lambda-add-trigger-console.jpg)
+![The image shows the AWS Lambda console with the "Add trigger" section open, displaying a list of potential trigger sources such as Alexa, Apache Kafka, and API Gateway.](https://kodekloud.com/kk-media/image/upload/v1752864965/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-lambda-add-trigger-console.jpg)
 
 ***
 
@@ -109,11 +109,11 @@ To allow external HTTP requests to invoke your function, add an API Gateway trig
 
 An API Gateway is now attached to your function. You can view the API endpoint details in the configuration tab.
 
-![The image shows the AWS Lambda console where a user is configuring an API Gateway trigger. Options for creating a new API or using an existing one, along with API type and security settings, are visible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864966/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-lambda-api-gateway-configuration.jpg)
+![The image shows the AWS Lambda console where a user is configuring an API Gateway trigger. Options for creating a new API or using an existing one, along with API type and security settings, are visible.](https://kodekloud.com/kk-media/image/upload/v1752864966/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-lambda-api-gateway-configuration.jpg)
 
 The endpoint URL, including the specific path (e.g., "first function"), will be displayed. Copy this URL and use your browser, curl, or Postman to send a GET request. If properly configured, you will receive a response from your Lambda function (e.g., "lambda trigger example").
 
-![The image shows an AWS Lambda console with a configuration tab open, displaying details of an API Gateway trigger for a function named "firstFunction-API."](../../../../images/kodekloud.com/kk-media/image/upload/v1752864967/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-lambda-api-gateway-config.jpg)
+![The image shows an AWS Lambda console with a configuration tab open, displaying details of an API Gateway trigger for a function named "firstFunction-API."](https://kodekloud.com/kk-media/image/upload/v1752864967/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-lambda-api-gateway-config.jpg)
 
 ***
 
@@ -204,11 +204,11 @@ Next, associate the newly created layer with your Lambda function:
 
 Your function now loads bcryptjs from the layer instead of bundling it with the function code.
 
-![The image shows an AWS Lambda console where a function named "secondFunction" has been successfully updated. The console displays the code editor, execution results, and function logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864969/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-lambda-secondfunction-update.jpg)
+![The image shows an AWS Lambda console where a function named "secondFunction" has been successfully updated. The console displays the code editor, execution results, and function logs.](https://kodekloud.com/kk-media/image/upload/v1752864969/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-lambda-secondfunction-update.jpg)
 
 For further details on folder structure and additional instructions, refer to the [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html).
 
-![The image shows a webpage from the AWS Lambda Developer Guide, detailing how to include library dependencies in a layer for different Lambda runtimes like Node.js, Python, Java, and Ruby. It includes a table with paths for each runtime and an example folder structure for Node.js.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864970/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-lambda-library-dependencies-guide.jpg)
+![The image shows a webpage from the AWS Lambda Developer Guide, detailing how to include library dependencies in a layer for different Lambda runtimes like Node.js, Python, Java, and Ruby. It includes a table with paths for each runtime and an example folder structure for Node.js.](https://kodekloud.com/kk-media/image/upload/v1752864970/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-lambda-library-dependencies-guide.jpg)
 
 After adding the layer, test your function to ensure that bcryptjs is correctly imported and the output meets expectations.
 
@@ -233,7 +233,7 @@ Example log snippet:
 
 For a complete overview, access the full CloudWatch interface.
 
-![The image shows an AWS CloudWatch interface displaying log group details for a Lambda function, including log streams and their timestamps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864971/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-cloudwatch-lambda-log-details.jpg)
+![The image shows an AWS CloudWatch interface displaying log group details for a Lambda function, including log streams and their timestamps.](https://kodekloud.com/kk-media/image/upload/v1752864971/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda-Demo/aws-cloudwatch-lambda-log-details.jpg)
 
 ***
 

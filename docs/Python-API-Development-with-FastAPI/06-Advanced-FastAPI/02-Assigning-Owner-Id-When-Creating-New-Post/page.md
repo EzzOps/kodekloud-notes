@@ -6,9 +6,7 @@ This article explains how to assign the owner ID automatically when creating a n
 
 In a previous lesson, we encountered an error during post creation. Instead of creating a new post successfully, the application returned a 500 status code. The logs revealed an SQL error indicating that a null value in the "owner\_id" column violates the NOT NULL constraint.
 
-<Callout icon="lightbulb">
-  The error log was as follows:
-</Callout>
+> **lightbulb** The error log was as follows:
 
 ```plaintext theme={null}
 line 1771, in _execute_context
@@ -144,14 +142,10 @@ After a successful post creation, the response should look similar to:
 }
 ```
 
-<Callout icon="lightbulb">
-  The critical change is updating the post creation logic to include:
+> **lightbulb** The critical change is updating the post creation logic to include:
 
   new\_post = models.Post(owner\_id=current\_user.id, \*\*post.dict())
 
   This adjustment ensures that each post is automatically linked to its creator.
-</Callout>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/4f20d342-20f1-417a-a9cd-18a3d835b97b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/4f20d342-20f1-417a-a9cd-18a3d835b97b)

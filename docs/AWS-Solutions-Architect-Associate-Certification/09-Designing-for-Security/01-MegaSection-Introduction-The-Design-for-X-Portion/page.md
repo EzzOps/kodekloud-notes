@@ -17,7 +17,7 @@ Design for X means creating solutions with an emphasis on key attributes. In thi
 
 These core aspects are fundamental to the AWS Well-Architected Framework. For instance, designing for security and reliability is critical for mission-critical environments.
 
-![The image explains the concept of "Design for x," highlighting "Design for Security" and "Design for Reliability" with icons, and mentions there are more aspects.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863968/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MegaSection-Introduction-The-Design-for-X-Portion/design-for-x-security-reliability.jpg)
+![The image explains the concept of "Design for x," highlighting "Design for Security" and "Design for Reliability" with icons, and mentions there are more aspects.](https://kodekloud.com/kk-media/image/upload/v1752863968/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MegaSection-Introduction-The-Design-for-X-Portion/design-for-x-security-reliability.jpg)
 
 ## Four Specific Domains
 
@@ -30,7 +30,7 @@ The Solutions Architect Associate course covers the following four domains:
 
 While the full AWS Well-Architected Framework includes six pillars (such as Operational Excellence and Sustainability), this certification specifically focuses on the four domains listed above.
 
-![The image illustrates the four domains of the AWS Certified Solutions Architect Associate exam: Security, Reliability, Performance, and Cost-Optimization, arranged around a central badge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863969/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MegaSection-Introduction-The-Design-for-X-Portion/aws-certified-solutions-architect-domains.jpg)
+![The image illustrates the four domains of the AWS Certified Solutions Architect Associate exam: Security, Reliability, Performance, and Cost-Optimization, arranged around a central badge.](https://kodekloud.com/kk-media/image/upload/v1752863969/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MegaSection-Introduction-The-Design-for-X-Portion/aws-certified-solutions-architect-domains.jpg)
 
 ### Overview of the AWS Well-Architected Framework
 
@@ -45,7 +45,7 @@ The AWS Well-Architected Framework consists of six pillars:
 
 > **lightbulb** While Operational Excellence and Sustainability are integral parts of the framework, they are considered out of scope for the Solutions Architect Associate exam. These pillars are more relevant in cloud and system operations certifications.
 
-![The image is an overview of the Well-Architected Framework, highlighting six pillars: Security, Reliability, Performance Efficiency, Cost-Optimization, Operational Excellence, and Sustainability. Each pillar is represented with an icon and labeled accordingly.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863970/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MegaSection-Introduction-The-Design-for-X-Portion/well-architected-framework-pillars-overview.jpg)
+![The image is an overview of the Well-Architected Framework, highlighting six pillars: Security, Reliability, Performance Efficiency, Cost-Optimization, Operational Excellence, and Sustainability. Each pillar is represented with an icon and labeled accordingly.](https://kodekloud.com/kk-media/image/upload/v1752863970/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MegaSection-Introduction-The-Design-for-X-Portion/well-architected-framework-pillars-overview.jpg)
 
 ## Course Structure and Objectives
 
@@ -65,7 +65,7 @@ For each of the first four pillars, you will encounter:
 
 Often, AWS’s built-in features provide a strong foundation for security, so the focus shifts to identifying and leveraging available settings to further improve each service's security posture. Additionally, exam-style questions and detailed diagrams will help reinforce these concepts for each pillar.
 
-![The image lists five sections: Security, Reliability, Performance, Cost, and Design Challenge, each with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863971/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MegaSection-Introduction-The-Design-for-X-Portion/security-reliability-performance-cost-design-challenge.jpg)
+![The image lists five sections: Security, Reliability, Performance, Cost, and Design Challenge, each with an icon.](https://kodekloud.com/kk-media/image/upload/v1752863971/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MegaSection-Introduction-The-Design-for-X-Portion/security-reliability-performance-cost-design-challenge.jpg)
 
 ### Agenda for Each Domain
 
@@ -75,7 +75,7 @@ For each domain—Security, Reliability, Performance Efficiency, and Cost Optimi
 * Examination of how these principles are applied across various service categories (such as networking, storage, and compute).
 * A comprehensive design challenge that integrates all four pillars, enhancing your exam readiness.
 
-![The image outlines a general agenda for each pillar, including sections on general principles, increasing a specific pillar, and a design challenge. It also lists services such as network, storage, compute, and security services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863972/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MegaSection-Introduction-The-Design-for-X-Portion/general-agenda-pillar-design-challenge.jpg)
+![The image outlines a general agenda for each pillar, including sections on general principles, increasing a specific pillar, and a design challenge. It also lists services such as network, storage, compute, and security services.](https://kodekloud.com/kk-media/image/upload/v1752863972/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MegaSection-Introduction-The-Design-for-X-Portion/general-agenda-pillar-design-challenge.jpg)
 
 ## Preparing for the Design Challenge
 
@@ -85,7 +85,7 @@ As you progress through the course, take detailed notes—every design decision,
 * Walkthroughs of specific challenges in each domain.
 * An integrative challenge that combines these concepts into a cohesive architectural solution.
 
-![The image is a slide titled "End of the Course – The Design Challenge," listing various topics such as design principles, security design, performance, and cost optimization challenges.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863975/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MegaSection-Introduction-The-Design-for-X-Portion/end-of-course-design-challenge.jpg)
+![The image is a slide titled "End of the Course – The Design Challenge," listing various topics such as design principles, security design, performance, and cost optimization challenges.](https://kodekloud.com/kk-media/image/upload/v1752863975/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MegaSection-Introduction-The-Design-for-X-Portion/end-of-course-design-challenge.jpg)
 
 ## Summary
 
@@ -98,7 +98,7 @@ In summary, this lesson teaches you how to design as a Solutions Architect by fo
 
 Throughout the course, you will delve into domain-specific questions for various AWS services—whether it's applying security measures to VPCs, EC2, or EBS—and explore how these services interact through detailed diagrams and design challenges. This targeted approach is designed to prepare you for the AWS certification exam, ensuring you gain both the theoretical understanding and practical skills needed for success.
 
-![The image is a summary slide outlining a course on designing as a Solutions Architect, covering topics like security, reliability, performance, cost optimization, and includes a design challenge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863976/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MegaSection-Introduction-The-Design-for-X-Portion/solutions-architect-course-summary.jpg)
+![The image is a summary slide outlining a course on designing as a Solutions Architect, covering topics like security, reliability, performance, cost optimization, and includes a design challenge.](https://kodekloud.com/kk-media/image/upload/v1752863976/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-MegaSection-Introduction-The-Design-for-X-Portion/solutions-architect-course-summary.jpg)
 
 Go forth and conquer this mega section. We look forward to seeing you apply these design principles in the upcoming design challenges.
 

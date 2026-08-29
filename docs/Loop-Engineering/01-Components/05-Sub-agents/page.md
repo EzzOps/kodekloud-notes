@@ -44,9 +44,7 @@ Job two: checking work before saving. This pattern is often called the maker-and
 
 One agent (the maker) produces the change. A different agent (the checker) reviews it. Why use a different agent? The maker tends to trust its own output and can miss mistakes. A fresh checker, given its own instructions — and sometimes implemented as a stronger model — inspects the change with new eyes and flags problems the original agent might miss. Splitting the roles this way catches errors that a single agent would overlook.
 
-<Callout icon="lightbulb">
-  Use a separate checker when correctness matters. A fresh checker reduces confirmation bias and can be given stricter validation rules or a more powerful model.
-</Callout>
+> **lightbulb** Use a separate checker when correctness matters. A fresh checker reduces confirmation bias and can be given stricter validation rules or a more powerful model.
 
 A major advantage of sub-agents is containment of clutter. Big jobs generate lots of intermediate data: long search results, massive files, and extra context. If all that landed in the main loop, its working memory would fill up and reasoning would degrade. The sub-agent handles the messy work in its own space and returns a short, focused answer. The main loop only receives the distilled result.
 
@@ -99,6 +97,4 @@ Links and references
 * [Maker–checker pattern (general concept)](https://en.wikipedia.org/wiki/Segregation_of_duties)
 * [Designing isolated worker processes (concepts and patterns)](https://martinfowler.com/articles/patterns-of-distributed-systems.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/loop-engineering/module/6371e2a8-2e13-4841-ba89-95dd842b1bdd/lesson/39d03cf4-6d5c-4513-b7c5-086ed207d82c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/loop-engineering/module/6371e2a8-2e13-4841-ba89-95dd842b1bdd/lesson/39d03cf4-6d5c-4513-b7c5-086ed207d82c)

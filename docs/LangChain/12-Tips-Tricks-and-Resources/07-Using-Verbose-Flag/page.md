@@ -78,9 +78,7 @@ def persist_event(event, filename="langchain_trace.jsonl"):
 
 By combining verbose runtime flags with custom callback handlers and a standardized persistence pattern for traces, you can quickly locate the source of errors, validate prompt formats, and build a robust observability workflow around LangChain applications.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/873344b7-d6b4-4c2f-86ad-82ae24246258" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/873344b7-d6b4-4c2f-86ad-82ae24246258)
 
 
 # Using Verbose Flag
@@ -175,9 +173,7 @@ Enable `verbose=True` only on the component(s) you need to inspect. This focused
 |             Agent | Pass `verbose=True` to the agent when creating it     | `Agent(..., verbose=True)`       |
 | Custom components | Implement and expose a verbose flag in your component | `MyComponent(..., verbose=True)` |
 
-<Callout icon="lightbulb">
-  Use `verbose=True` on only the components you need to inspect. Global debug or tracing options can produce a large amount of output; verbose is a targeted way to get helpful runtime visibility.
-</Callout>
+> **lightbulb** Use `verbose=True` on only the components you need to inspect. Global debug or tracing options can produce a large amount of output; verbose is a targeted way to get helpful runtime visibility.
 
 ## Example input data
 
@@ -196,6 +192,4 @@ For more details, see:
 * LangChain documentation: [https://langchain.readthedocs.io/](https://langchain.readthedocs.io/)
 * ChatOpenAI: [https://pypi.org/project/langchain-openai/](https://pypi.org/project/langchain-openai/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/ea0b058a-7c2d-4b17-81e6-fb4026f5a6fe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/ea0b058a-7c2d-4b17-81e6-fb4026f5a6fe)

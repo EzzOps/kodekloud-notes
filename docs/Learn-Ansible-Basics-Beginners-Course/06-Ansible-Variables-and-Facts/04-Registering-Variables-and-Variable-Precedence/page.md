@@ -59,9 +59,7 @@ In this scenario, the host-level variable defined for web2 takes precedence over
         server: '{{ dns_server }}'
 ```
 
-<Callout icon="lightbulb">
-  Variables passed via the command line using the --extra-vars option have the highest precedence. For example, executing the playbook as shown below will override all other definitions.
-</Callout>
+> **lightbulb** Variables passed via the command line using the --extra-vars option have the highest precedence. For example, executing the playbook as shown below will override all other definitions.
 
 ```bash theme={null}
 $ ansible-playbook playbook.yml --extra-vars "dns_server=10.5.5.6"
@@ -69,9 +67,7 @@ $ ansible-playbook playbook.yml --extra-vars "dns_server=10.5.5.6"
 
 For a comprehensive understanding of variable precedence, refer to the [official Ansible documentation](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#variable-precedence-overview).
 
-<Frame>
-  ![The image shows a list of Ansible variable precedence, detailing the order in which variables are applied, with a link to Ansible documentation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881079/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Registering-Variables-and-Variable-Precedence/frame_190.jpg)
-</Frame>
+![The image shows a list of Ansible variable precedence, detailing the order in which variables are applied, with a link to Ansible documentation.](https://kodekloud.com/kk-media/image/upload/v1752881079/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Registering-Variables-and-Variable-Precedence/frame_190.jpg)
 
 ***
 
@@ -121,9 +117,7 @@ Likewise, to print just the return code of the command, use:
         var: result.rc
 ```
 
-<Callout icon="lightbulb">
-  Remember that variables registered with the register directive have host-level scope. This means they are available only for the duration of the playbook execution on the specific host where they were registered.
-</Callout>
+> **lightbulb** Remember that variables registered with the register directive have host-level scope. This means they are available only for the duration of the playbook execution on the specific host where they were registered.
 
 ***
 
@@ -166,6 +160,4 @@ This verbose mode displays detailed information about each task’s execution, i
 
 This lesson provided an overview of registering variables, understanding variable precedence, and using the register directive to capture task outputs in Ansible. For further details and advanced examples, be sure to consult the [Ansible Documentation](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#variable-precedence-overview).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/c85e487f-ca75-448b-b7dd-f72e9519d9b9/lesson/568d6d25-fe53-4359-b446-457f8827d315" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/c85e487f-ca75-448b-b7dd-f72e9519d9b9/lesson/568d6d25-fe53-4359-b446-457f8827d315)

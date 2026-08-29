@@ -15,7 +15,7 @@ In **Solution Explorer**, right-click **KodeKonvert** → **Properties** → **P
 | Description                     | Simple library to convert temperature |
 | Generate NuGet package on build | ✔ Enabled                             |
 
-![The image shows a Visual Studio interface with a project named "KodeKonvert" open. It displays the package settings for generating a NuGet package, including fields for Package ID, Title, Version, and Authors, along with a build output at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867913/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Packages/visual-studio-kodekonvert-nuget-package.jpg)
+![The image shows a Visual Studio interface with a project named "KodeKonvert" open. It displays the package settings for generating a NuGet package, including fields for Package ID, Title, Version, and Authors, along with a build output at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752867913/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Packages/visual-studio-kodekonvert-nuget-package.jpg)
 
 Save and close the Properties pane.
 
@@ -52,7 +52,7 @@ Remember the full path to the generated `.nupkg` file for later steps.
 
 > **lightbulb** Store your PAT securely; you’ll need it to authenticate your NuGet source and to push packages.
 
-![The image shows a GitHub page for creating a new personal access token, with options to set a note, expiration, and select various scopes for permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867914/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Packages/github-personal-access-token-creation.jpg)
+![The image shows a GitHub page for creating a new personal access token, with options to set a note, expiration, and select various scopes for permissions.](https://kodekloud.com/kk-media/image/upload/v1752867914/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Packages/github-personal-access-token-creation.jpg)
 
 ***
 
@@ -97,7 +97,7 @@ OK https://nuget.pkg.github.com/YOUR_GITHUB_USERNAME/ 380ms
 Your package was pushed.
 ```
 
-![The image shows a GitHub settings page for managing personal access tokens, with options to generate new tokens and view existing ones. It includes details about token usage and expiration dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867916/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Packages/github-settings-personal-access-tokens.jpg)
+![The image shows a GitHub settings page for managing personal access tokens, with options to generate new tokens and view existing ones. It includes details about token usage and expiration dates.](https://kodekloud.com/kk-media/image/upload/v1752867916/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-GitHub-Packages/github-settings-personal-access-tokens.jpg)
 
 Head over to your repository’s **Packages** section to confirm that `KodeKonvert` v1.0.0 is listed.
 
@@ -174,7 +174,7 @@ After creating the feed, click **My Project Feed**, then the gear icon to open *
 * **Package sharing**: Publish the latest version to a wiki or project homepage.
 * **Retention policies**: Automatically remove old or unused packages.
 
-![The image shows the "Feed Settings" page in Azure DevOps, where settings for a project feed named "MyProjectFeed" are being configured, including options for deleted packages, package sharing, and retention policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867917/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-package-feeds/azure-devops-feed-settings-myprojectfeed.jpg)
+![The image shows the "Feed Settings" page in Azure DevOps, where settings for a project feed named "MyProjectFeed" are being configured, including options for deleted packages, package sharing, and retention policies.](https://kodekloud.com/kk-media/image/upload/v1752867917/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-package-feeds/azure-devops-feed-settings-myprojectfeed.jpg)
 
 > **lightbulb** Once a package version is pushed to an immutable feed, its version number is permanently reserved. This ensures consistency for consumers who depend on that exact version.
 
@@ -193,7 +193,7 @@ Use the **Permissions** tab under **Feed Settings** to control who can view, pub
 2. Select **Add users/groups**.
 3. Assign the appropriate role (e.g., **Contributor** for package authors).
 
-![The image shows the "Feed Settings" page in Azure DevOps, specifically the "Permissions" tab, where users and groups are being managed for access roles. A pop-up window is open for adding users or groups with different permission levels.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867918/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-package-feeds/azure-devops-feed-settings-permissions-tab.jpg)
+![The image shows the "Feed Settings" page in Azure DevOps, specifically the "Permissions" tab, where users and groups are being managed for access roles. A pop-up window is open for adding users or groups with different permission levels.](https://kodekloud.com/kk-media/image/upload/v1752867918/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-package-feeds/azure-devops-feed-settings-permissions-tab.jpg)
 
 > **triangle-alert** Grant the minimum required permissions. Avoid giving **Feed Owner** rights unless management tasks are necessary.
 
@@ -206,7 +206,7 @@ Upstream sources allow caching and proxying of public or internal feeds:
 3. (Optional) Add other Azure Artifacts feeds or custom registry URLs.
 4. Click **Add**.
 
-![The image shows the "Feed Settings" page in Azure DevOps, specifically the "Upstream Sources" tab for a project feed. A dialog box titled "Add upstream source" is open, offering options to add a public source or an Azure Artifacts feed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867918/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-package-feeds/azure-devops-feed-settings-upstream-sources.jpg)
+![The image shows the "Feed Settings" page in Azure DevOps, specifically the "Upstream Sources" tab for a project feed. A dialog box titled "Add upstream source" is open, offering options to add a public source or an Azure Artifacts feed.](https://kodekloud.com/kk-media/image/upload/v1752867918/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-package-feeds/azure-devops-feed-settings-upstream-sources.jpg)
 
 ## 5. Publish a NuGet Package
 
@@ -297,7 +297,7 @@ Return to **Artifacts → My Project Feed**. You should see:
 * `Kalculator` **1.0.0** (NuGet package)
 * `my-first-package` **0.0.1** (Universal Package)
 
-![The image shows an Azure DevOps interface displaying a project feed named "MyProjectFeed" with a package titled "my-first-package" version 0.0.1. The sidebar includes options like Overview, Boards, Repos, Pipelines, Test Plans, and Artifacts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867919/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-package-feeds/azure-devops-myprojectfeed-package-0-0-1.jpg)
+![The image shows an Azure DevOps interface displaying a project feed named "MyProjectFeed" with a package titled "my-first-package" version 0.0.1. The sidebar includes options like Overview, Boards, Repos, Pipelines, Test Plans, and Artifacts.](https://kodekloud.com/kk-media/image/upload/v1752867919/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Implementing-package-feeds/azure-devops-myprojectfeed-package-0-0-1.jpg)
 
 ***
 

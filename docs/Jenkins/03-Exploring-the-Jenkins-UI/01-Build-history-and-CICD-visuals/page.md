@@ -18,13 +18,9 @@ Upon selecting **"test one"**, you will observe that:
 
 This basic pipeline is essentially a "Hello World" sample provided by Jenkins.
 
-<Frame>
-  ![The image shows a pipeline test interface with stage view details, including average stage times and a "Hello" stage taking 376ms.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880016/notes-assets/images/Jenkins-Build-history-and-CICD-visuals/frame_40.jpg)
-</Frame>
+![The image shows a pipeline test interface with stage view details, including average stage times and a "Hello" stage taking 376ms.](https://kodekloud.com/kk-media/image/upload/v1752880016/notes-assets/images/Jenkins-Build-history-and-CICD-visuals/frame_40.jpg)
 
-<Callout icon="lightbulb">
-  This simple pipeline run is used to quickly demonstrate how the Jenkins UI displays critical information such as build duration, failure status, and overall build history.
-</Callout>
+> **lightbulb** This simple pipeline run is used to quickly demonstrate how the Jenkins UI displays critical information such as build duration, failure status, and overall build history.
 
 The dashboard presents several key pieces of information:
 
@@ -39,15 +35,11 @@ Clicking on the pipeline reveals additional details such as permalinks for the l
 
 When you click on **"Build Now"**, a new pipeline run is triggered immediately. Notice how the dashboard reflects this change instantly:
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying a successful build (#1) started by a user named Mike on January 1, 2022.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880017/notes-assets/images/Jenkins-Build-history-and-CICD-visuals/frame_100.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying a successful build (#1) started by a user named Mike on January 1, 2022.](https://kodekloud.com/kk-media/image/upload/v1752880017/notes-assets/images/Jenkins-Build-history-and-CICD-visuals/frame_100.jpg)
 
 The dashboard confirms that the pipeline started at 15:12 (or 3:12 PM) and completed successfully, providing clear timestamps and status metrics.
 
-<Frame>
-  ![The image shows a Jenkins dashboard with options like "Build Now" and "Configure," displaying build history and stage view with average stage times.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880018/notes-assets/images/Jenkins-Build-history-and-CICD-visuals/frame_120.jpg)
-</Frame>
+![The image shows a Jenkins dashboard with options like "Build Now" and "Configure," displaying build history and stage view with average stage times.](https://kodekloud.com/kk-media/image/upload/v1752880018/notes-assets/images/Jenkins-Build-history-and-CICD-visuals/frame_120.jpg)
 
 Clicking on the logs brings up detailed execution records where you can verify that the pipeline executed a simple "Hello World" print statement. The logs clearly display the execution details, confirming the pipeline's expected behavior.
 
@@ -76,20 +68,14 @@ This script illustrates the basic pipeline syntax as seen on the dashboard. You 
 * Any recent changes.
 * Options to disable the job if necessary.
 
-<Frame>
-  ![The image shows a Jenkins pipeline dashboard with build options, stage view, and build history, displaying average stage times and recent changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880019/notes-assets/images/Jenkins-Build-history-and-CICD-visuals/frame_190.jpg)
-</Frame>
+![The image shows a Jenkins pipeline dashboard with build options, stage view, and build history, displaying average stage times and recent changes.](https://kodekloud.com/kk-media/image/upload/v1752880019/notes-assets/images/Jenkins-Build-history-and-CICD-visuals/frame_190.jpg)
 
 ## Conclusion
 
 This lesson provided an overview of what your CI/CD pipelines will look like in Jenkins. You learned how to navigate the build dashboard, interpret vital details, and review the execution logs. Now, try some hands-on practice exercises to apply what you've learned and deepen your understanding of Jenkins pipelines.
 
-<Callout icon="lightbulb">
-  Explore additional resources such as [Jenkins Documentation](https://www.jenkins.io/doc/) and [CI/CD Best Practices](https://www.atlassian.com/continuous-delivery/ci-vs-ci-vs-cd) to further enhance your skills.
-</Callout>
+> **lightbulb** Explore additional resources such as [Jenkins Documentation](https://www.jenkins.io/doc/) and [CI/CD Best Practices](https://www.atlassian.com/continuous-delivery/ci-vs-ci-vs-cd) to further enhance your skills.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/a04dd614-ac4a-452f-b42a-c7f7086c5897/lesson/7acc94d2-3f8f-40a1-9756-2c7152795faf" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/a04dd614-ac4a-452f-b42a-c7f7086c5897/lesson/7acc94d2-3f8f-40a1-9756-2c7152795faf)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/a04dd614-ac4a-452f-b42a-c7f7086c5897/lesson/5a0f0bb1-f72d-4f60-afef-7b5af858fb9a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/jenkins/module/a04dd614-ac4a-452f-b42a-c7f7086c5897/lesson/5a0f0bb1-f72d-4f60-afef-7b5af858fb9a)

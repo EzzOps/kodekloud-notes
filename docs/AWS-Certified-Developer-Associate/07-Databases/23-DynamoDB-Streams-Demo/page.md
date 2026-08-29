@@ -10,7 +10,7 @@ This guide provides a step-by-step walkthrough to set up DynamoDB Streams for a 
 
 First, open the Products table in your AWS DynamoDB console. Navigate to the **Exports and Streams** section and scroll down to review the DynamoDB Streams details.
 
-![The image shows the AWS DynamoDB console with a focus on the "products" table, displaying its general information and status. The table is active, with no items currently present.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858797/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Streams-Demo/aws-dynamodb-products-table-status.jpg)
+![The image shows the AWS DynamoDB console with a focus on the "products" table, displaying its general information and status. The table is active, with no items currently present.](https://kodekloud.com/kk-media/image/upload/v1752858797/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Streams-Demo/aws-dynamodb-products-table-status.jpg)
 
 Here, you’ll notice that DynamoDB Streams is set to **Off**. Click **Turn On** and select the desired streaming option:
 
@@ -24,7 +24,7 @@ For the richest dataset, choose **New and Old Images** and enable the stream.
 
 Since there is no trigger configured yet, create one by associating a Lambda function to process the stream events.
 
-![The image shows an AWS console screen for turning on a DynamoDB stream, with options to select the view type for capturing changes in a table. There are buttons to cancel or turn on the stream.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858799/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Streams-Demo/aws-dynamodb-stream-console-settings.jpg)
+![The image shows an AWS console screen for turning on a DynamoDB stream, with options to select the view type for capturing changes in a table. There are buttons to cancel or turn on the stream.](https://kodekloud.com/kk-media/image/upload/v1752858799/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Streams-Demo/aws-dynamodb-stream-console-settings.jpg)
 
 If you haven’t already created a Lambda function, follow these steps:
 
@@ -32,7 +32,7 @@ If you haven’t already created a Lambda function, follow these steps:
 2. Use the provided DynamoDB Streams template. When prompted, select the blueprint named “process updates made to a DynamoDB table” and choose the Node.js version.
 3. Name your function (e.g., "DynamoDBStreamExample") and create a new role with basic Lambda permissions. Note that you may need to add additional permissions later.
 
-![The image shows the AWS Lambda console where a user is creating a function using a blueprint. The interface includes options for naming the function, selecting runtime, and setting execution roles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858800/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Streams-Demo/aws-lambda-function-creation-blueprint.jpg)
+![The image shows the AWS Lambda console where a user is creating a function using a blueprint. The interface includes options for naming the function, selecting runtime, and setting execution roles.](https://kodekloud.com/kk-media/image/upload/v1752858800/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Streams-Demo/aws-lambda-function-creation-blueprint.jpg)
 
 ### Review the Example Code
 
@@ -55,7 +55,7 @@ export const handler = async (event) => {
 
 Configure the trigger by specifying that the Products table should stream data to the new Lambda function. You can adjust the batch size (e.g., 10 records per invocation) and choose "LATEST" for the starting position. Once configured, create the trigger.
 
-![The image shows an AWS Lambda console screen where a DynamoDB trigger is being configured. It includes options for selecting a DynamoDB table, activating the trigger, setting batch size, and choosing the starting position.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858801/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Streams-Demo/aws-lambda-dynamodb-trigger-setup.jpg)
+![The image shows an AWS Lambda console screen where a DynamoDB trigger is being configured. It includes options for selecting a DynamoDB table, activating the trigger, setting batch size, and choosing the starting position.](https://kodekloud.com/kk-media/image/upload/v1752858801/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Streams-Demo/aws-lambda-dynamodb-trigger-setup.jpg)
 
 ## Step 4: Update IAM Permissions If Needed
 
@@ -65,11 +65,11 @@ After creating the Lambda function, you might see an error indicating that the f
 2. Click the role associated with the Lambda function.
 3. Attach the policy **AWS Lambda DynamoDB Execution Role** to grant the necessary permissions.
 
-![The image shows an AWS Identity and Access Management (IAM) console screen, displaying details of a role named "dynamodb-stream-example-role-i8cg6o30," including its creation date and permissions policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858802/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Streams-Demo/aws-iam-console-dynamodb-role.jpg)
+![The image shows an AWS Identity and Access Management (IAM) console screen, displaying details of a role named "dynamodb-stream-example-role-i8cg6o30," including its creation date and permissions policies.](https://kodekloud.com/kk-media/image/upload/v1752858802/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Streams-Demo/aws-iam-console-dynamodb-role.jpg)
 
 > **lightbulb** After updating the IAM policies, refresh the Lambda console and the DynamoDB Streams configuration. You should now see that the Lambda function is properly attached as a trigger.
 
-![The image shows an AWS DynamoDB console with details about data streams and triggers. It includes options to manage Amazon Kinesis data streams and DynamoDB stream details, with a trigger section for AWS Lambda functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858803/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Streams-Demo/aws-dynamodb-console-data-streams.jpg)
+![The image shows an AWS DynamoDB console with details about data streams and triggers. It includes options to manage Amazon Kinesis data streams and DynamoDB stream details, with a trigger section for AWS Lambda functions.](https://kodekloud.com/kk-media/image/upload/v1752858803/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Streams-Demo/aws-dynamodb-console-data-streams.jpg)
 
 ## Step 5: Test the Stream with Table Operations
 
@@ -81,7 +81,7 @@ To confirm that your setup is working, perform some of the following operations 
 
 These table operations will trigger the stream events, which the Lambda function processes. Then, check CloudWatch logs to verify that the events are captured correctly.
 
-![The image shows an AWS CloudWatch Logs dashboard displaying log entries with timestamps and messages. The interface includes options for filtering and navigating through log data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858804/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Streams-Demo/aws-cloudwatch-logs-dashboard.jpg)
+![The image shows an AWS CloudWatch Logs dashboard displaying log entries with timestamps and messages. The interface includes options for filtering and navigating through log data.](https://kodekloud.com/kk-media/image/upload/v1752858804/notes-assets/images/AWS-Certified-Developer-Associate-DynamoDB-Streams-Demo/aws-cloudwatch-logs-dashboard.jpg)
 
 ### Example Log Entries
 

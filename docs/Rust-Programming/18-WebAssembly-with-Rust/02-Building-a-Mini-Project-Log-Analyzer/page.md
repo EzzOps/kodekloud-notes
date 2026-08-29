@@ -16,9 +16,7 @@ Message: System started
 
 The application will extract the timestamp, severity, and message components, displaying them on the webpage. It will also handle invalid log formats gracefully by showing a clear error message.
 
-<Callout icon="lightbulb">
-  Ensure that WASM pack is installed before starting this project.
-</Callout>
+> **lightbulb** Ensure that WASM pack is installed before starting this project.
 
 ***
 
@@ -149,9 +147,7 @@ Finished release [optimized] target(s) in 7.38s
 
 This step produces the WASM binary and the associated files required for further development.
 
-<Callout icon="lightbulb">
-  For more advanced projects, consider adding descriptive fields like 'description', 'repository', and 'license' in the Cargo.toml.
-</Callout>
+> **lightbulb** For more advanced projects, consider adding descriptive fields like 'description', 'repository', and 'license' in the Cargo.toml.
 
 ***
 
@@ -159,9 +155,7 @@ This step produces the WASM binary and the associated files required for further
 
 Below is the complete HTML file that provides a user interface for the log extractor. The HTML includes basic CSS styling and JavaScript code to initialize and interact with the WebAssembly module.
 
-<Frame>
-  ![The image shows a webpage titled "WebAssembly Log Extractor" with a form to enter a log message. It displays an extracted log with a timestamp, severity, and message.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884021/notes-assets/images/Rust-Programming-Building-a-Mini-Project-Log-Analyzer/webassembly-log-extractor-form.jpg)
-</Frame>
+![The image shows a webpage titled "WebAssembly Log Extractor" with a form to enter a log message. It displays an extracted log with a timestamp, severity, and message.](https://kodekloud.com/kk-media/image/upload/v1752884021/notes-assets/images/Rust-Programming-Building-a-Mini-Project-Log-Analyzer/webassembly-log-extractor-form.jpg)
 
 ```html theme={null}
 <!DOCTYPE html>
@@ -265,6 +259,4 @@ This project highlights the flexibility and performance benefits of integrating 
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/c16605ac-c7ae-46bc-8864-75c711c07762/lesson/e51cf6ca-7938-4669-878c-ffd265b99879" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/c16605ac-c7ae-46bc-8864-75c711c07762/lesson/e51cf6ca-7938-4669-878c-ffd265b99879)

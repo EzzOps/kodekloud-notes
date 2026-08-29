@@ -55,9 +55,7 @@ ip route add 192.168.2.0/24 via 192.168.1.1
 
 Similarly, device C requires a route entry enabling it to reach network 192.168.1.0 via the router's IP address on that network (192.168.2.1).
 
-<Callout icon="lightbulb">
-  For devices that also require Internet access (for example, connecting to Google, which might be in the 172.217.194.0 range), connect the router to the Internet and add a default route to the devices’ routing tables. A single default gateway entry allows devices to route any traffic destined for an unknown network through the router.
-</Callout>
+> **lightbulb** For devices that also require Internet access (for example, connecting to Google, which might be in the 172.217.194.0 range), connect the router to the Internet and add a default route to the devices’ routing tables. A single default gateway entry allows devices to route any traffic destined for an unknown network through the router.
 
 To configure a default gateway along with a specific route for network 192.168.1.0, you can use commands like these:
 
@@ -106,14 +104,10 @@ Below is a summary of essential commands covered in this lesson:
 | ip route / route | Views the routing table                       | `[~]$ route`                                |
 | ip route add     | Adds a new entry to the routing table         | `ip route add default via 192.168.2.1`      |
 
-<Callout icon="triangle-alert">
-  Remember that changes made using these commands are temporary and will be lost after a system restart. To ensure persistence, update the appropriate configuration files (e.g., /etc/network/interfaces on Linux).
-</Callout>
+> **triangle-alert** Remember that changes made using these commands are temporary and will be lost after a system restart. To ensure persistence, update the appropriate configuration files (e.g., /etc/network/interfaces on Linux).
 
 By understanding these fundamentals, you now have the tools necessary for setting up and troubleshooting basic networks. For more in-depth information, consider exploring further [networking documentation](https://www.kernel.org/doc/html/latest/networking/index.html).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/beae84be-64d2-41b6-b807-575f4107dfc9/lesson/a453eeae-dad3-4c45-b821-54e9522efb50" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/beae84be-64d2-41b6-b807-575f4107dfc9/lesson/a453eeae-dad3-4c45-b821-54e9522efb50)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/beae84be-64d2-41b6-b807-575f4107dfc9/lesson/882728fb-a94b-43b0-bd4b-88da8e5882d6" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/beae84be-64d2-41b6-b807-575f4107dfc9/lesson/882728fb-a94b-43b0-bd4b-88da8e5882d6)

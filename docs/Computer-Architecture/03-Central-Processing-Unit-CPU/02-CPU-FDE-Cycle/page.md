@@ -78,9 +78,7 @@ What changes if you increase the clock speed? Think of giving the chef an espres
 * The need for better cooling
 * Potential instability if thermal, electrical, or timing limits are exceeded
 
-<Callout icon="warning">
-  Overclocking can permanently damage hardware and void warranties. Ensure adequate cooling and stability testing before attempting higher clock speeds.
-</Callout>
+> **warning** Overclocking can permanently damage hardware and void warranties. Ensure adequate cooling and stability testing before attempting higher clock speeds.
 
 Quick recap — key CPU concepts:
 
@@ -93,9 +91,7 @@ Quick recap — key CPU concepts:
 | Clock Speed                 | Number of cycles per second (`GHz`)            | Higher => faster but more heat                   |
 | Cores & Threads             | Parallel execution units                       | Multi-core CPUs run multiple tasks concurrently  |
 
-<Callout icon="lightbulb">
-  Tip: To learn more about the von Neumann model and modern CPU optimizations (pipelines, caches, and out-of-order execution), see the [Von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture) and [CPU caching](https://en.wikipedia.org/wiki/CPU_cache) resources.
-</Callout>
+> **lightbulb** Tip: To learn more about the von Neumann model and modern CPU optimizations (pipelines, caches, and out-of-order execution), see the [Von Neumann architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture) and [CPU caching](https://en.wikipedia.org/wiki/CPU_cache) resources.
 
 Final summary:
 
@@ -116,6 +112,4 @@ Links and References
 * [Compiler — Wikipedia](https://en.wikipedia.org/wiki/Compiler)
 * [Assembler — Wikipedia](https://en.wikipedia.org/wiki/Assembler)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/computer-architecture/module/b128c92f-1260-4a45-8c3b-fe73eb53ea38/lesson/e8cb7828-2e46-4a12-906f-963f5297920b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/computer-architecture/module/b128c92f-1260-4a45-8c3b-fe73eb53ea38/lesson/e8cb7828-2e46-4a12-906f-963f5297920b)

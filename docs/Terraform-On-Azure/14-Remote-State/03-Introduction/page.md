@@ -6,9 +6,7 @@ Guide to using Azure Blob Storage as a Terraform remote backend, covering initia
 
 In this lesson we cover Terraform remote state: what it is, why you need it when multiple people or automated pipelines manage the same infrastructure, how to use Azure Storage as a centralized backend, how `terraform init` configures and migrates state, and common remote-state failure scenarios with recovery steps.
 
-<Callout icon="lightbulb">
-  This guide focuses on Azure Blob Storage as a Terraform backend, explains initialization and migration behavior, and summarizes common failure modes and mitigation steps. Use it as an operational checklist when configuring remote state for team and CI/CD workflows.
-</Callout>
+> **lightbulb** This guide focuses on Azure Blob Storage as a Terraform backend, explains initialization and migration behavior, and summarizes common failure modes and mitigation steps. Use it as an operational checklist when configuring remote state for team and CI/CD workflows.
 
 What you'll learn in this lesson/article:
 

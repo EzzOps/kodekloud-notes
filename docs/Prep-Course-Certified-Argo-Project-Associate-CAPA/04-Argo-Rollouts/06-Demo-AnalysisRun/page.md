@@ -176,9 +176,7 @@ template:
       - containerPort: 3000
 ```
 
-<Callout icon="lightbulb">
-  Note: Setting autoPromotionEnabled: false prevents automatic promotion even after a successful pre-promotion analysis. The Rollout will pause and require a manual promotion action (via UI or `kubectl argo rollouts promote`).
-</Callout>
+> **lightbulb** Note: Setting autoPromotionEnabled: false prevents automatic promotion even after a successful pre-promotion analysis. The Rollout will pause and require a manual promotion action (via UI or `kubectl argo rollouts promote`).
 
 When we deployed the new (green) version, the Rollout created the preview ReplicaSet and automatically triggered a pre-promotion AnalysisRun. The template ran the health-check metric three times (Count: 3) and recorded three successful measurements.
 
@@ -226,9 +224,7 @@ After reviewing the AnalysisRun results, an administrator can manually promote t
 
 This workflow enables progressive and safe promotion: only when an AnalysisRun passes do you promote the preview into production. Error handling (abort/rollback) is out of scope for this lesson but is supported by Argo Rollouts and should be part of production policies.
 
-<Callout icon="warning">
-  Blocking analyses (inline or pre-promotion) will pause rollouts until the AnalysisRun completes. Use background analysis when you want non-blocking monitoring, and use pre/post-promotion for stricter gates.
-</Callout>
+> **warning** Blocking analyses (inline or pre-promotion) will pause rollouts until the AnalysisRun completes. Use background analysis when you want non-blocking monitoring, and use pre/post-promotion for stricter gates.
 
 Summary table — Analysis placements and behavior
 
@@ -251,6 +247,4 @@ Success condition used by the AnalysisTemplate:
 result.code >= 200 && result.code < 300
 ```
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/a96edd30-7018-46b8-a8f7-647477bd22ca" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/a96edd30-7018-46b8-a8f7-647477bd22ca)

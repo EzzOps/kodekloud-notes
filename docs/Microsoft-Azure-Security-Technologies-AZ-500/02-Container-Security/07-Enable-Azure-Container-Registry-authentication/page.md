@@ -32,9 +32,7 @@ az acr login --name <registryName>    # Azure CLI command
 Connect-AzContainerRegistry -Name <registryName>    # Azure PowerShell command
 ```
 
-<Callout icon="lightbulb">
-  Make sure to keep track of token renewal to avoid authentication failures during your session.
-</Callout>
+> **lightbulb** Make sure to keep track of token renewal to avoid authentication failures during your session.
 
 ***
 
@@ -53,9 +51,7 @@ Every container registry includes a built-in admin user independent of your Azur
 docker login
 ```
 
-<Callout icon="triangle-alert">
-  If you encounter an error about the admin user not being enabled, navigate to the ACR access keys section in the Azure portal to enable it.
-</Callout>
+> **triangle-alert** If you encounter an error about the admin user not being enabled, navigate to the ACR access keys section in the Azure portal to enable it.
 
 ***
 
@@ -90,9 +86,7 @@ docker login
 az acr login --name <registryName>    # Azure CLI command
 ```
 
-<Callout icon="lightbulb">
-  Ensure that the Azure resource you are using supports managed identities.
-</Callout>
+> **lightbulb** Ensure that the Azure resource you are using supports managed identities.
 
 ***
 
@@ -107,9 +101,7 @@ When working with an Azure Kubernetes Service (AKS) cluster, you can utilize the
 
 Below is an image detailing the authentication differences for AKS clusters:
 
-<Frame>
-  ![The image is about ACR Authentication, highlighting the method, scenario, Azure RBAC, and limitations related to AKS clusters. It mentions enabling authentication when an AKS cluster is created or updated.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881746/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Container-Registry-authentication/acr-authentication-aks-rbac-limitations.jpg)
-</Frame>
+![The image is about ACR Authentication, highlighting the method, scenario, Azure RBAC, and limitations related to AKS clusters. It mentions enabling authentication when an AKS cluster is created or updated.](https://kodekloud.com/kk-media/image/upload/v1752881746/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Container-Registry-authentication/acr-authentication-aks-rbac-limitations.jpg)
 
 ***
 
@@ -141,15 +133,11 @@ This section demonstrates how to use the admin account in ACR to pull an image i
 1. In the Azure portal, navigate to your container registry and select it.
 2. Go to the Access Keys section to enable the admin user. Once enabled, you will see a username and password which can be used with the Docker login command.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a container instance, with fields for subscription, resource group, container details, and image source.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881747/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Container-Registry-authentication/azure-portal-container-instance-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a container instance, with fields for subscription, resource group, container details, and image source.](https://kodekloud.com/kk-media/image/upload/v1752881747/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Container-Registry-authentication/azure-portal-container-instance-creation.jpg)
 
 3. Open the container registry access keys view:
 
-<Frame>
-  ![The image shows the Microsoft Azure portal displaying the access keys section for a container registry named "acr56652." It includes details like the registry name, login server, and passwords.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881748/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Container-Registry-authentication/azure-portal-acr56652-access-keys.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal displaying the access keys section for a container registry named "acr56652." It includes details like the registry name, login server, and passwords.](https://kodekloud.com/kk-media/image/upload/v1752881748/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Container-Registry-authentication/azure-portal-acr56652-access-keys.jpg)
 
 4. Create a container instance by following these steps:
 
@@ -157,27 +145,19 @@ This section demonstrates how to use the admin account in ACR to pull an image i
    * Create a new instance by selecting the previously configured container registry and using the admin credentials.
    * Set container details (e.g., name, OS type, size) and configure the networking settings to expose port 80 publicly.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a container instance, with fields for container details such as name, region, SKU, and image source.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881749/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Container-Registry-authentication/azure-portal-container-instance-creation-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a container instance, with fields for container details such as name, region, SKU, and image source.](https://kodekloud.com/kk-media/image/upload/v1752881749/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Container-Registry-authentication/azure-portal-container-instance-creation-2.jpg)
 
 5. Configure the networking options for the container instance:
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating a container instance, specifically focusing on the networking options. It allows the user to choose between public, private, or no networking for the container instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881750/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Container-Registry-authentication/azure-container-instance-networking-options.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating a container instance, specifically focusing on the networking options. It allows the user to choose between public, private, or no networking for the container instance.](https://kodekloud.com/kk-media/image/upload/v1752881750/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Container-Registry-authentication/azure-container-instance-networking-options.jpg)
 
 6. Review all settings and click the "Create" button to deploy the container instance:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a container instance, with details like subscription, resource group, region, and container specifications. The "Create" button is highlighted, indicating readiness to proceed with the creation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881750/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Container-Registry-authentication/azure-portal-create-container-instance.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a container instance, with details like subscription, resource group, region, and container specifications. The "Create" button is highlighted, indicating readiness to proceed with the creation.](https://kodekloud.com/kk-media/image/upload/v1752881750/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Container-Registry-authentication/azure-portal-create-container-instance.jpg)
 
 7. After deployment, click "Go to Resource" to check the container details:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying details of a container instance named "aci-bootstrap," including its status, location, and resource usage metrics for CPU and memory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881751/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Container-Registry-authentication/azure-portal-aci-bootstrap-details.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying details of a container instance named "aci-bootstrap," including its status, location, and resource usage metrics for CPU and memory.](https://kodekloud.com/kk-media/image/upload/v1752881751/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Container-Registry-authentication/azure-portal-aci-bootstrap-details.jpg)
 
 Once deployed, you will see that the container has successfully pulled the ACI bootstrap image from your registry, started the instance, and is serving the expected Bootstrap template. Copy the public IP address from the portal and verify in your browser that the correct page is loading.
 
@@ -187,6 +167,4 @@ In this article, we covered the various authentication methods available for Azu
 
 Thank you.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/146650b0-63f9-4c4b-b452-716a780e5fc7/lesson/8e48b542-22b7-420a-9be2-d81f490a1e59" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/146650b0-63f9-4c4b-b452-716a780e5fc7/lesson/8e48b542-22b7-420a-9be2-d81f490a1e59)

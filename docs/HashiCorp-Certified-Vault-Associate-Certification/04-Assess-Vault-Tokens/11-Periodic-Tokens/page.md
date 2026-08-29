@@ -12,9 +12,7 @@ Periodic tokens in Vault are renewable credentials that you can extend indefinit
 * **Automatic renewal**: Reset the TTL back to the full period on each successful renewal.
 * **Safe revocation**: You can revoke them at any time without leaving orphaned credentials.
 
-<Callout icon="triangle-alert">
-  Periodic tokens require careful management. Failing to renew before TTL expiry will invalidate the token and disrupt any dependent service.
-</Callout>
+> **triangle-alert** Periodic tokens require careful management. Failing to renew before TTL expiry will invalidate the token and disrupt any dependent service.
 
 ***
 
@@ -116,9 +114,7 @@ vault token renew s.2kjqZ12ofDr3efPdtMJ1z5dZ
 
 Repeat this process indefinitely to keep the token alive.
 
-<Callout icon="lightbulb">
-  Automate renewal for long-lived services using a cron job or HashiCorp Consul Template to avoid manual intervention.
-</Callout>
+> **lightbulb** Automate renewal for long-lived services using a cron job or HashiCorp Consul Template to avoid manual intervention.
 
 ***
 
@@ -130,6 +126,4 @@ Repeat this process indefinitely to keep the token alive.
 
 [vault-policy-docs]: https://www.vaultproject.io/docs/concepts/policies#policy-syntax
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/db6e7827-230f-43f3-bb1b-34de59e69895" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/db6e7827-230f-43f3-bb1b-34de59e69895)

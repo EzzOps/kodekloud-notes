@@ -26,7 +26,7 @@ By properly configuring both application settings and connection strings, you en
 
 To review your configuration settings, open the Azure portal and navigate to your App Service. From here, click on the Environment Variables blade. On this screen, you might see various environment variables, including one labeled "Microsoft Graph provider authentication secret." This secret, established during an earlier app registration process, can be revealed by clicking the eye icon.
 
-![The image shows a screen displaying environment variables in an app settings interface, with options to show values for specific variables like "MICROSOFT\_PROVIDER\_AUTHENTICATION\_SECRET" and "WEBSITE\_AUTH\_AAD\_ALLOWED\_TENANTS."](../../../../images/kodekloud.com/kk-media/image/upload/v1752866176/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Application-Settings/app-settings-environment-variables.jpg)
+![The image shows a screen displaying environment variables in an app settings interface, with options to show values for specific variables like "MICROSOFT\_PROVIDER\_AUTHENTICATION\_SECRET" and "WEBSITE\_AUTH\_AAD\_ALLOWED\_TENANTS."](https://kodekloud.com/kk-media/image/upload/v1752866176/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Application-Settings/app-settings-environment-variables.jpg)
 
 Additionally, by clicking the gear icon next to the allowed tenants entry, you can view a GUID representing your tenant's directory ID. This GUID confirms that the web app is correctly configured for your environment.
 
@@ -34,13 +34,13 @@ Additionally, by clicking the gear icon next to the allowed tenants entry, you c
 
 Scroll down to the Connection Strings section. Here, add a new connection string by providing a name, a value (for instance, a random string to simulate a connection string), and selecting the appropriate type, such as SQL Server. Failure to provide the mandatory "Type" property will trigger an error message prompting you to complete the field.
 
-![The image shows a Microsoft Azure portal interface where a user is adding or editing a connection string for a web app, with fields for name, value, and type. An error message indicates that the "Type" is a required property for all connection strings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866177/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Application-Settings/azure-portal-connection-string-error.jpg)
+![The image shows a Microsoft Azure portal interface where a user is adding or editing a connection string for a web app, with fields for name, value, and type. An error message indicates that the "Type" is a required property for all connection strings.](https://kodekloud.com/kk-media/image/upload/v1752866177/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Application-Settings/azure-portal-connection-string-error.jpg)
 
 After entering the required details, click "Apply" to save your connection string.
 
 Returning to the Environment Variables screen, you will see all the configured application settings. For bulk operations, instead of clicking the "Add" button repeatedly, use the Advanced Edit option. This will present your settings in JSON format, allowing you to modify multiple entries—such as renaming keys from ENV\_1 to ENV\_one and ENV\_2 to ENV\_two. Once you've made your changes, click "OK" and then "Apply" to save all modifications.
 
-![The image shows the Microsoft Azure portal displaying environment variables for a web app named "az204demoapp01." It lists variables like ENV\_1, ENV\_2, and others, with options to show their values.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866178/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Application-Settings/azure-portal-env-variables-az204demoapp01.jpg)
+![The image shows the Microsoft Azure portal displaying environment variables for a web app named "az204demoapp01." It lists variables like ENV\_1, ENV\_2, and others, with options to show their values.](https://kodekloud.com/kk-media/image/upload/v1752866178/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Application-Settings/azure-portal-env-variables-az204demoapp01.jpg)
 
 ## Accessing Environment Variables from Your Application
 

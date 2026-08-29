@@ -6,9 +6,7 @@ Summarizes six components of loop engineering—automation, worktrees, skills, c
 
 A loop is like a compact engine: a set of cooperating parts that let a system improve itself autonomously. At the foundation of every effective loop are two essentials — a clear goal and a scorekeeper — which everything else builds on. This lesson gives a concise tour of the six components that make loops reliable and scalable. Each component will be explored in detail in later lessons.
 
-<Callout icon="lightbulb">
-  Every loop must start with a clear goal and a scorekeeper. Those two items form the base that everything else builds on.
-</Callout>
+> **lightbulb** Every loop must start with a clear goal and a scorekeeper. Those two items form the base that everything else builds on.
 
 The six components strengthen the loop, make it safer, and allow it to run without constant human supervision.
 
@@ -70,6 +68,4 @@ Further reading and references
 * CI/CD concepts: [https://en.wikipedia.org/wiki/Continuous\_delivery](https://en.wikipedia.org/wiki/Continuous_delivery)
 * Design patterns for autonomous agents: search academic and engineering resources for "agent orchestration" and "modular automation"
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/loop-engineering/module/63fbab29-f6e1-497c-ba71-cff4793c2731/lesson/d925f522-8924-49e4-8897-3ef77ebafb57" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/loop-engineering/module/63fbab29-f6e1-497c-ba71-cff4793c2731/lesson/d925f522-8924-49e4-8897-3ef77ebafb57)

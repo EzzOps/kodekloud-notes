@@ -82,13 +82,9 @@ versions:
 
 With such a schema, consumers or intermediaries can automatically translate between versions: map incoming attributes to the names dashboards expect, or update dashboards to understand new names. With both producers and consumers referencing the same schema, the dashboard works again without changing every producer.
 
-<Callout icon="lightbulb">
-  Schemas decouple producers and consumers by providing a versioned contract for attribute names and meanings. This enables safe, incremental evolution of telemetry without breaking downstream systems.
-</Callout>
+> **lightbulb** Schemas decouple producers and consumers by providing a versioned contract for attribute names and meanings. This enables safe, incremental evolution of telemetry without breaking downstream systems.
 
-<Callout icon="warning">
-  If you do not adopt schemas or a mapping strategy, dashboards, alerts, and queries that rely on specific attribute names are at risk of breaking when those names change. Consider adding `schema_url` to your producers and validating schema-aware mappings in pipelines.
-</Callout>
+> **warning** If you do not adopt schemas or a mapping strategy, dashboards, alerts, and queries that rely on specific attribute names are at risk of breaking when those names change. Consider adding `schema_url` to your producers and validating schema-aware mappings in pipelines.
 
 Key benefits of using OTel schemas
 
@@ -114,6 +110,4 @@ References and further reading
 
 Now that you understand why schemas matter, design producers and pipelines to include schema references so consumers can remain compatible as the telemetry data model evolves.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/8efc0cff-8139-475c-9600-8970cb10b39e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/85787c66-c021-47d9-bd3d-db54bc002465/lesson/8efc0cff-8139-475c-9600-8970cb10b39e)

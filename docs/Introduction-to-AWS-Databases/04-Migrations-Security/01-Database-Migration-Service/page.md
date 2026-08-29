@@ -46,9 +46,7 @@ Before you create tasks, ensure network connectivity (VPC/subnets, routing, secu
   <img alt="An infographic titled &#x22;DMS Components – Replication Instance&#x22; showing a purple DMS endpoint icon and a gray panel of five circular icons labeled Source or Target, DB Type, Server Name and port, Encryption, and Credentials. The graphic summarizes endpoint info for a replication instance." />
 </Frame>
 
-<Callout icon="lightbulb">
-  When configuring endpoints, verify network access (VPC, routing, security groups) and confirm credentials and any required certificates. Missing network routes or incorrect authentication are common causes of connection failures.
-</Callout>
+> **lightbulb** When configuring endpoints, verify network access (VPC, routing, security groups) and confirm credentials and any required certificates. Missing network routes or incorrect authentication are common causes of connection failures.
 
 ### Replication tasks and migration modes
 
@@ -73,9 +71,7 @@ Tasks are start/stop/pause capable and expose progress metrics and logs for moni
 
 Use the Full load + CDC pattern to reduce application downtime: perform the initial load while the source remains live, capture ongoing changes during the migration, and cut over once target lag is acceptable.
 
-<Callout icon="warning">
-  Always validate data consistency and plan for cutover testing. Network latency, LOBs/large objects, and unsupported data types can introduce replication delays or require manual reconciliation.
-</Callout>
+> **warning** Always validate data consistency and plan for cutover testing. Network latency, LOBs/large objects, and unsupported data types can introduce replication delays or require manual reconciliation.
 
 ### Automatic schema conversion and mappings
 
@@ -124,6 +120,4 @@ Plan a migration by discovering with Fleet Advisor, convert schemas with SCT whe
 * [Amazon Redshift](https://aws.amazon.com/redshift/)
 * [Amazon S3](https://aws.amazon.com/s3/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/79ca746d-b567-4dae-92cd-e572992ff80e/lesson/d761aaa1-f331-4966-beae-4b97768ea898" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/79ca746d-b567-4dae-92cd-e572992ff80e/lesson/d761aaa1-f331-4966-beae-4b97768ea898)

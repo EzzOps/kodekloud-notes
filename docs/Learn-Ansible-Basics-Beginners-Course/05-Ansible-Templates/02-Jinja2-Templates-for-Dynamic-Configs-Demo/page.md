@@ -6,9 +6,7 @@ This article explores using Jinja2 templates in Ansible for dynamic configuratio
 
 In this lesson, we explore how Ansible extends Jinja2 by incorporating filters tailored specifically for infrastructure management. While the base Jinja2 templating engine offers many built-in filters (see the [Jinja2 website](https://jinja.palletsprojects.com/) for more details), Ansible enhances this functionality with additional filters for tasks such as converting between YAML and JSON, manipulating file paths across Linux and Windows systems, managing passwords, and processing regular expressions.
 
-<Frame>
-  ![The image lists various Ansible filters, including functions like abs(), capitalize(), join(), to\_json(), and combine(), used for data manipulation in Ansible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881077/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Jinja2-Templates-for-Dynamic-Configs-Demo/frame_40.jpg)
-</Frame>
+![The image lists various Ansible filters, including functions like abs(), capitalize(), join(), to\_json(), and combine(), used for data manipulation in Ansible.](https://kodekloud.com/kk-media/image/upload/v1752881077/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Jinja2-Templates-for-Dynamic-Configs-Demo/frame_40.jpg)
 
 ## File-Related Filters
 

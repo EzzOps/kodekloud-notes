@@ -33,7 +33,7 @@ Explore strategies for motivating peers, influencing stakeholders, and driving d
 
 Discover how transparency, shared vision, and collaborative problem-solving can boost morale and keep your team moving toward common goals.
 
-![A person is speaking in front of a camera, with a list of topics displayed beside them: "Crafting Compelling Narratives," "Leading with Impact," and "Fostering Team Alignment and Energy."](../../../../images/kodekloud.com/kk-media/image/upload/v1752874578/notes-assets/images/Enhancing-Soft-Skills-for-DevOps-Engineers-Essential-Non-Technical-Skills-to-Thrive-Introduction-and-Problems-this-course-solves/speaking-camera-narratives-impact-alignment.jpg)
+![A person is speaking in front of a camera, with a list of topics displayed beside them: "Crafting Compelling Narratives," "Leading with Impact," and "Fostering Team Alignment and Energy."](https://kodekloud.com/kk-media/image/upload/v1752874578/notes-assets/images/Enhancing-Soft-Skills-for-DevOps-Engineers-Essential-Non-Technical-Skills-to-Thrive-Introduction-and-Problems-this-course-solves/speaking-camera-narratives-impact-alignment.jpg)
 
 ## Module 4: Navigating Priorities and Tasks Effectively
 

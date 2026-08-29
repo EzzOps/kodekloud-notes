@@ -3,9 +3,7 @@
 
 ### Permanent Removal with `destroy` (KV V2)
 
-<Callout icon="triangle-alert">
-  `destroy` permanently deletes specified versions. This action cannot be undone.
-</Callout>
+> **triangle-alert** `destroy` permanently deletes specified versions. This action cannot be undone.
 
 ```bash theme={null}
 $ vault kv destroy -versions=3 secret/app/web
@@ -29,9 +27,7 @@ You’ve now mastered the KV Secrets Engine CLI operations for both KV V1 and KV
 * [Vault CLI Documentation](https://developer.hashicorp.com/vault/docs/commands/kv)
 * [jq: Command-line JSON Processor](https://stedolan.github.io/jq/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/a2021b6a-3c7b-48f3-9f7c-fc37eca251a6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/a2021b6a-3c7b-48f3-9f7c-fc37eca251a6)
 
 
 # Working with a Secrets Engine
@@ -42,9 +38,7 @@ This article explains how to work with Secrets Engines in Vault, including enabl
 
 Vault uses **Secrets Engines** to store, generate, and manage sensitive data. Before you can work with any engine, you need to enable it under a unique mount path. Vault ships with two engines enabled by default—**cubbyhole** and **identity**—which cannot be disabled without impacting core functionality.
 
-<Callout icon="lightbulb">
-  Vault’s built-in engines `cubbyhole` and `identity` are always enabled and cannot be removed.
-</Callout>
+> **lightbulb** Vault’s built-in engines `cubbyhole` and `identity` are always enabled and cannot be removed.
 
 All other engines must be enabled explicitly using the CLI, API, or UI (note: not every feature is available in the UI).
 
@@ -52,9 +46,7 @@ All other engines must be enabled explicitly using the CLI, API, or UI (note: no
 2. API
 3. UI
 
-<Frame>
-  ![The image is a slide titled "Enabling a Secrets Engine," outlining steps and considerations for enabling secrets engines, including default settings, enabling methods, and path requirements. It features colorful text highlights and a small cartoon character in the corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878128/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Working-with-a-Secrets-Engine/enabling-secrets-engine-steps-outline.jpg)
-</Frame>
+![The image is a slide titled "Enabling a Secrets Engine," outlining steps and considerations for enabling secrets engines, including default settings, enabling methods, and path requirements. It features colorful text highlights and a small cartoon character in the corner.](https://kodekloud.com/kk-media/image/upload/v1752878128/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Working-with-a-Secrets-Engine/enabling-secrets-engine-steps-outline.jpg)
 
 ## Mounting a Secrets Engine
 
@@ -86,9 +78,7 @@ Choose descriptive names that align with your team or use case.
 * Renew leases before expiration (if allowed)
 * Renew their token (if allowed)
 
-<Frame>
-  ![The image outlines the responsibilities of a Secrets Engine, detailing tasks for privileged users and vault clients. It includes steps for enabling the engine, configuring connections, creating roles and policies, and managing credentials and tokens.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878130/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Working-with-a-Secrets-Engine/secrets-engine-responsibilities-outline.jpg)
-</Frame>
+![The image outlines the responsibilities of a Secrets Engine, detailing tasks for privileged users and vault clients. It includes steps for enabling the engine, configuring connections, creating roles and policies, and managing credentials and tokens.](https://kodekloud.com/kk-media/image/upload/v1752878130/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Working-with-a-Secrets-Engine/secrets-engine-responsibilities-outline.jpg)
 
 ***
 
@@ -119,9 +109,7 @@ $ vault secrets enable aws
 Success! Enabled the aws secrets engine at: aws/
 ```
 
-<Callout icon="triangle-alert">
-  Disabling a Secrets Engine removes all configuration data under that mount. Re-enabling creates a fresh configuration.
-</Callout>
+> **triangle-alert** Disabling a Secrets Engine removes all configuration data under that mount. Re-enabling creates a fresh configuration.
 
 ### Tuning Engine Parameters
 
@@ -176,15 +164,11 @@ vault secrets enable \
 1. Navigate to **Secrets** → **Enable new engine** in the top-right corner.
 2. Select the Secrets Engine type you need (note: not all appear here).
 
-<Frame>
-  ![The image shows a user interface for enabling a secrets engine, with options for different types of engines like Generic, Cloud, and Infra. It includes a playful note saying "Choose Your Weapon (I mean, Secrets Engine)" on a purple background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878131/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Working-with-a-Secrets-Engine/secrets-engine-user-interface-options.jpg)
-</Frame>
+![The image shows a user interface for enabling a secrets engine, with options for different types of engines like Generic, Cloud, and Infra. It includes a playful note saying "Choose Your Weapon (I mean, Secrets Engine)" on a purple background.](https://kodekloud.com/kk-media/image/upload/v1752878131/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Working-with-a-Secrets-Engine/secrets-engine-user-interface-options.jpg)
 
 3. Fill in **Path**, **Description**, and any **engine-specific settings** (e.g., TTLs, replication, seal wrap).
 
-<Frame>
-  ![The image shows a user interface for enabling the Google Cloud Secrets Engine, with fields for path and description, and options for customization. It includes annotations for guidance on where to input information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878131/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Working-with-a-Secrets-Engine/google-cloud-secrets-engine-ui.jpg)
-</Frame>
+![The image shows a user interface for enabling the Google Cloud Secrets Engine, with fields for path and description, and options for customization. It includes annotations for guidance on where to input information.](https://kodekloud.com/kk-media/image/upload/v1752878131/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Working-with-a-Secrets-Engine/google-cloud-secrets-engine-ui.jpg)
 
 ***
 
@@ -206,6 +190,4 @@ Stay tuned for hands-on tutorials!
 * [Vault CLI Commands](https://www.vaultproject.io/docs/commands/secrets)
 * [Vault API Reference](https://www.vaultproject.io/api-docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/46fd016d-69cc-4e02-9795-e510104f3b4e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/46fd016d-69cc-4e02-9795-e510104f3b4e)

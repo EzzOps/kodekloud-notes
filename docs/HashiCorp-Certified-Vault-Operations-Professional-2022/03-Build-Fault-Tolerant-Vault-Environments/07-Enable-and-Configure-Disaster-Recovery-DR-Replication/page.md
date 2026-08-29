@@ -5,9 +5,7 @@ vault token lookup
 vault write -f sys/replication/dr/primary/demote
 ```
 
-<Callout icon="triangle-alert">
-  Demoting the primary will briefly interrupt Vault service on that cluster. Ensure maintenance windows and inform your team.
-</Callout>
+> **triangle-alert** Demoting the primary will briefly interrupt Vault service on that cluster. Ensure maintenance windows and inform your team.
 
 Expected warning:
 
@@ -52,9 +50,7 @@ Switch context to your **DR secondary** cluster to create a one-time operation t
    DR Operation Token: hvs.vjJaqI8ACON0@FlUQeKHDIJO
    ```
 
-<Callout icon="lightbulb">
-  The DR operation token is time-limited and can only be used once to promote the secondary.
-</Callout>
+> **lightbulb** The DR operation token is time-limited and can only be used once to promote the secondary.
 
 ***
 
@@ -113,9 +109,7 @@ At this point, your DR secondary cluster is fully promoted and ready to operate 
 * [Vault API: sys/replication/dr](https://www.vaultproject.io/api-docs/replication/dr)
 * [HashiCorp Vault GitHub](https://github.com/hashicorp/vault)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/d6341e84-1d58-497c-92d1-fa086ac83364" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/d6341e84-1d58-497c-92d1-fa086ac83364)
 
 
 # Enable and Configure Disaster Recovery DR Replication
@@ -132,9 +126,7 @@ Vault Enterprise’s Disaster Recovery (DR) replication creates a warm-standby c
 
 Vault replication offers a global, consistent view of your policies, secret engines, auth methods, KV data, and audit configurations—eliminating manual duplication and ensuring high availability across data centers or cloud regions. It uses a leader-follower model with one primary (leader) cluster and one or more secondary (follower) clusters. All inter-cluster communication is end-to-end encrypted with mutual TLS.
 
-<Frame>
-  ![The image explains Vault Replication, highlighting that it is available only in Vault Enterprise and operates on a leader-follower model with primary and secondary clusters. It emphasizes end-to-end encrypted communication and asynchronous data replication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878302/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/vault-replication-enterprise-leader-follower.jpg)
-</Frame>
+![The image explains Vault Replication, highlighting that it is available only in Vault Enterprise and operates on a leader-follower model with primary and secondary clusters. It emphasizes end-to-end encrypted communication and asynchronous data replication.](https://kodekloud.com/kk-media/image/upload/v1752878302/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/vault-replication-enterprise-leader-follower.jpg)
 
 ***
 
@@ -150,9 +142,7 @@ Vault Enterprise supports two replication modes. Select the one that matches you
 | Tokens & Leases  | Not replicated                                               | Replicated                            |
 | Typical Use Case | Global read scaling                                          | Fast failover and seamless client ops |
 
-<Frame>
-  ![The image explains "Disaster Recovery Replication" for Vault, highlighting that it replicates configurations and data, cannot service reads from client requests, and requires client authentication with the primary cluster. It includes a diagram showing the flow between a primary and secondary cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878304/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/disaster-recovery-replication-vault-diagram.jpg)
-</Frame>
+![The image explains "Disaster Recovery Replication" for Vault, highlighting that it replicates configurations and data, cannot service reads from client requests, and requires client authentication with the primary cluster. It includes a diagram showing the flow between a primary and secondary cluster.](https://kodekloud.com/kk-media/image/upload/v1752878304/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/disaster-recovery-replication-vault-diagram.jpg)
 
 ***
 
@@ -160,9 +150,7 @@ Vault Enterprise supports two replication modes. Select the one that matches you
 
 Here’s how a performance secondary, primary, and DR secondary differ. Only DR replication includes tokens and leases in the secondary:
 
-<Frame>
-  ![The image is a diagram comparing three clusters: Perf Secondary Cluster, Primary Cluster, and DR Secondary Cluster, showing data replication processes and components like Vault Policies, Secrets Engines, Auth Methods, and Audit Configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878305/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/cluster-comparison-data-replication-diagram.jpg)
-</Frame>
+![The image is a diagram comparing three clusters: Perf Secondary Cluster, Primary Cluster, and DR Secondary Cluster, showing data replication processes and components like Vault Policies, Secrets Engines, Auth Methods, and Audit Configurations.](https://kodekloud.com/kk-media/image/upload/v1752878305/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/cluster-comparison-data-replication-diagram.jpg)
 
 ***
 
@@ -173,9 +161,7 @@ A DR secondary acts as a **warm standby**. It accepts replication logs but:
 * Does **not** serve any client operations (reads or writes).
 * Keeps most API paths disabled—even for admin or root tokens—until you promote it.
 
-<Frame>
-  ![The image is a slide about "Disaster Recovery Replication," explaining that it provides a warm-standby cluster where everything is replicated to secondary clusters, which do not respond to clients unless promoted to a primary cluster. It also notes that most paths on a secondary cluster are disabled, even for admins.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878306/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/disaster-recovery-replication-warm-standby.jpg)
-</Frame>
+![The image is a slide about "Disaster Recovery Replication," explaining that it provides a warm-standby cluster where everything is replicated to secondary clusters, which do not respond to clients unless promoted to a primary cluster. It also notes that most paths on a secondary cluster are disabled, even for admins.](https://kodekloud.com/kk-media/image/upload/v1752878306/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/disaster-recovery-replication-warm-standby.jpg)
 
 ***
 
@@ -189,9 +175,7 @@ Choose the topology that fits your environment:
 * Data Center B: Performance secondary + local DR secondary
 * Clients talk to their local cluster; on failure, promote the DR node.
 
-<Frame>
-  ![The image illustrates a replication architecture between two data centers, showing a primary cluster and a DR replication cluster in Data Center A, and a performance replication cluster and DR replication cluster in Data Center B.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878307/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/replication-architecture-data-centers-diagram.jpg)
-</Frame>
+![The image illustrates a replication architecture between two data centers, showing a primary cluster and a DR replication cluster in Data Center A, and a performance replication cluster and DR replication cluster in Data Center B.](https://kodekloud.com/kk-media/image/upload/v1752878307/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/replication-architecture-data-centers-diagram.jpg)
 
 ### AWS Regions
 
@@ -199,9 +183,7 @@ Choose the topology that fits your environment:
 * Northern California: Performance + DR
 * Ideal for multi-region AWS deployments.
 
-<Frame>
-  ![The image illustrates a replication architecture on a map of the United States, showing AWS data centers on the east and west coasts with arrows indicating data replication between them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878308/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/aws-replication-architecture-map.jpg)
-</Frame>
+![The image illustrates a replication architecture on a map of the United States, showing AWS data centers on the east and west coasts with arrows indicating data replication between them.](https://kodekloud.com/kk-media/image/upload/v1752878308/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/aws-replication-architecture-map.jpg)
 
 ### On-Prem VMware Example
 
@@ -209,9 +191,7 @@ Choose the topology that fits your environment:
 * Data Center B: Performance + DR
 * Separate non-prod environment mirroring production for QA/testing.
 
-<Frame>
-  ![The image is a diagram illustrating a real-world customer example of data replication between two data centers, showing production and non-production environments with VMware clusters. It highlights DR (Disaster Recovery) and performance replication processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878310/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/data-replication-diagram-vmware-clusters.jpg)
-</Frame>
+![The image is a diagram illustrating a real-world customer example of data replication between two data centers, showing production and non-production environments with VMware clusters. It highlights DR (Disaster Recovery) and performance replication processes.](https://kodekloud.com/kk-media/image/upload/v1752878310/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/data-replication-diagram-vmware-clusters.jpg)
 
 ### On-Prem to AWS Example
 
@@ -219,9 +199,7 @@ Choose the topology that fits your environment:
 * AWS: Performance + DR
 * Dedicated non-prod and QA clusters.
 
-<Frame>
-  ![The image is a diagram showing a real-world customer example of an on-premises datacenter setup with production, non-production, and QA environments, and their replication to AWS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878311/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/on-premises-datacenter-aws-replication-diagram.jpg)
-</Frame>
+![The image is a diagram showing a real-world customer example of an on-premises datacenter setup with production, non-production, and QA environments, and their replication to AWS.](https://kodekloud.com/kk-media/image/upload/v1752878311/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/on-premises-datacenter-aws-replication-diagram.jpg)
 
 ***
 
@@ -230,9 +208,7 @@ Choose the topology that fits your environment:
 * Bidirectional Vault-to-Vault on ports **8200** (cluster bootstrap/API) and **8201** (replication/Raft forwarding).
 * DNS resolution between clusters must be configured.
 
-<Callout icon="triangle-alert">
-  Open these ports only between trusted Vault clusters. Exposing replication ports publicly can lead to security risks.
-</Callout>
+> **triangle-alert** Open these ports only between trusted Vault clusters. Exposing replication ports publicly can lead to security risks.
 
 ***
 
@@ -240,17 +216,13 @@ Choose the topology that fits your environment:
 
 Follow these three steps to set up DR replication via the CLI:
 
-<Frame>
-  ![The image is a flowchart illustrating the setup process for a system, involving steps like activating a primary, fetching a secondary token, activating a secondary, and replication. It includes icons and brief descriptions for each step, with a Vault certification badge in the corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878312/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/system-setup-flowchart-activation-replication.jpg)
-</Frame>
+![The image is a flowchart illustrating the setup process for a system, involving steps like activating a primary, fetching a secondary token, activating a secondary, and replication. It includes icons and brief descriptions for each step, with a Vault certification badge in the corner.](https://kodekloud.com/kk-media/image/upload/v1752878312/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/system-setup-flowchart-activation-replication.jpg)
 
 ### 1. Activate DR on the Primary
 
 Vault generates an internal CA and mutual-TLS certificates for secure inter-cluster links. If you’re behind a TLS-terminating load balancer, pass through port 8201.
 
-<Frame>
-  ![The image is a slide about activating DR replication in Vault, detailing the need to enable replication on each cluster, use an internal root CA, and establish mutual TLS connections. It also notes potential issues with load balancers terminating TLS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878313/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/dr-replication-vault-activation-slide.jpg)
-</Frame>
+![The image is a slide about activating DR replication in Vault, detailing the need to enable replication on each cluster, use an internal root CA, and establish mutual TLS connections. It also notes potential issues with load balancers terminating TLS.](https://kodekloud.com/kk-media/image/upload/v1752878313/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/dr-replication-vault-activation-slide.jpg)
 
 ```bash theme={null}
 vault write -f sys/replication/dr/primary/enable
@@ -260,9 +232,7 @@ vault write -f sys/replication/dr/primary/enable
 
 Create a one-time, response-wrapped token to authorize the DR secondary. It includes the CA cert, client cert/key, and primary’s API address.
 
-<Frame>
-  ![The image is a slide discussing the concept of a "Secondary Token" used for permitting a secondary cluster to replicate from a primary cluster, highlighting its sensitivity, single-use nature, and the information it includes. It features a Vault certification badge and a cartoon character at the bottom right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878314/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/secondary-token-replication-slide.jpg)
-</Frame>
+![The image is a slide discussing the concept of a "Secondary Token" used for permitting a secondary cluster to replicate from a primary cluster, highlighting its sensitivity, single-use nature, and the information it includes. It features a Vault certification badge and a cartoon character at the bottom right.](https://kodekloud.com/kk-media/image/upload/v1752878314/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/secondary-token-replication-slide.jpg)
 
 ```bash theme={null}
 vault write sys/replication/dr/primary/secondary-token id="us-east-2-dr"
@@ -283,9 +253,7 @@ Inspect the unwrapped token to see embedded details:
 }
 ```
 
-<Callout icon="triangle-alert">
-  Treat the secondary token like a password. It’s single-use and grants high privileges.
-</Callout>
+> **triangle-alert** Treat the secondary token like a password. It’s single-use and grants high privileges.
 
 #### How the Token Is Used
 
@@ -293,13 +261,9 @@ Inspect the unwrapped token to see embedded details:
 2. It unwraps the token and retrieves certs and cluster info.
 3. Replication over port 8201 then begins automatically.
 
-<Frame>
-  ![The image illustrates the process of how a secondary token is used, showing steps like token creation, submission, and unwrapping via an API address. It includes icons and a flowchart on a yellow background, with a Vault certification badge in the corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878315/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/secondary-token-process-flowchart-api.jpg)
-</Frame>
+![The image illustrates the process of how a secondary token is used, showing steps like token creation, submission, and unwrapping via an API address. It includes icons and a flowchart on a yellow background, with a Vault certification badge in the corner.](https://kodekloud.com/kk-media/image/upload/v1752878315/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/secondary-token-process-flowchart-api.jpg)
 
-<Frame>
-  ![The image is a flowchart illustrating the process of using a secondary token, showing steps from token creation to secondary cluster readiness. It includes labeled icons and a certification badge for a Vault Certified Operations Professional.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878316/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/secondary-token-flowchart-operations-professional.jpg)
-</Frame>
+![The image is a flowchart illustrating the process of using a secondary token, showing steps from token creation to secondary cluster readiness. It includes labeled icons and a certification badge for a Vault Certified Operations Professional.](https://kodekloud.com/kk-media/image/upload/v1752878316/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/secondary-token-flowchart-operations-professional.jpg)
 
 ### 3. Activate DR on the Secondary
 
@@ -320,18 +284,14 @@ You can also enable DR replication through Vault’s web interface:
    * Choose **Disaster Recovery – Primary**, then click **Enable**
    * Click **Add Secondary**, assign a name, and **Generate Token**. Copy the token.
 
-<Frame>
-  ![The image shows a user interface for configuring replication in Vault, specifically for adding a secondary in disaster recovery. It highlights options to view existing secondaries and add a new secondary.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878317/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/vault-replication-configuration-ui.jpg)
-</Frame>
+![The image shows a user interface for configuring replication in Vault, specifically for adding a secondary in disaster recovery. It highlights options to view existing secondaries and add a new secondary.](https://kodekloud.com/kk-media/image/upload/v1752878317/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/vault-replication-configuration-ui.jpg)
 
 2. **Secondary**
    * Go to **Status → Replication → Enable Replication**
    * Select **Disaster Recovery – Secondary**
    * Paste the activation token and click **Enable**
 
-<Frame>
-  ![The image is a guide on configuring replication using a user interface, specifically for setting up a secondary cluster for disaster recovery replication. It includes steps to select disaster recovery, choose the secondary cluster mode, and paste the secondary activation token.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878319/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/disaster-recovery-replication-guide-ui.jpg)
-</Frame>
+![The image is a guide on configuring replication using a user interface, specifically for setting up a secondary cluster for disaster recovery replication. It includes steps to select disaster recovery, choose the secondary cluster mode, and paste the secondary activation token.](https://kodekloud.com/kk-media/image/upload/v1752878319/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Enable-and-Configure-Disaster-Recovery-DR-Replication/disaster-recovery-replication-guide-ui.jpg)
 
 ***
 
@@ -358,6 +318,4 @@ Now you’re ready to deploy DR replication in your Vault Enterprise environment
 * [Vault Enterprise Replication Documentation](https://www.vaultproject.io/docs/enterprise/replication)
 * [Vault Certified Operations Professional Exam](https://www.hashicorp.com/certification/vault-operations-professional)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/d335d5fe-97c9-4b0a-b438-3ba91a278192" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/c1dd23ce-c7fd-4564-84d8-4ff14b115bd7/lesson/d335d5fe-97c9-4b0a-b438-3ba91a278192)

@@ -10,9 +10,7 @@ AWS Lambda is a serverless compute service that lets you run code without provis
 
 Imagine a smart caveman who invented an ingenious program using two wooden sticks to create fire. This breakthrough not only lit up his world but also revolutionized how he lived—giving him the power to see in the dark, keep warm during winter, and even cook his food.
 
-<Frame>
-  ![The image shows a cartoon caveman with a club standing near a campfire, depicted in two circular frames and one larger image below.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879574/notes-assets/images/Jenkins-Pipelines-AWS-Lambda-Basics/caveman-campfire-cartoon-frames.jpg)
-</Frame>
+![The image shows a cartoon caveman with a club standing near a campfire, depicted in two circular frames and one larger image below.](https://kodekloud.com/kk-media/image/upload/v1752879574/notes-assets/images/Jenkins-Pipelines-AWS-Lambda-Basics/caveman-campfire-cartoon-frames.jpg)
 
 The caveman excitedly declared that his invention would change the world. However, back then, programs could only run on physical servers, meaning lengthy waits for server setup and provisioning. One day, a solution architect introduced him to AWS Lambda.
 
@@ -24,9 +22,7 @@ While this story is fictional, it captures the core idea behind AWS Lambda: run 
 
 AWS Lambda automates infrastructure tasks such as provisioning, maintenance, and scaling, so you don’t have to worry about them. Your application scales automatically based on incoming traffic—from thousands of simultaneous executions to zero when there is no traffic—and you only pay for what you use.
 
-<Callout icon="lightbulb">
-  With Lambda, you don’t need to worry about the underlying servers or scaling conditions, making it an ideal solution for dynamic workloads.
-</Callout>
+> **lightbulb** With Lambda, you don’t need to worry about the underlying servers or scaling conditions, making it an ideal solution for dynamic workloads.
 
 ## Supported Programming Languages
 
@@ -42,9 +38,7 @@ AWS Lambda supports a wide range of programming languages, including:
 
 Furthermore, AWS Lambda provides a Runtime API extension that allows you to use other languages beyond the ones officially supported. For example, AWS has featured use cases for running legacy COBOL applications using Lambda.
 
-<Frame>
-  ![The image shows the AWS Lambda logo surrounded by icons representing supported programming languages: Python, Java, C#, Node.js, Ruby, Go, and PowerShell.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879575/notes-assets/images/Jenkins-Pipelines-AWS-Lambda-Basics/aws-lambda-logo-programming-languages.jpg)
-</Frame>
+![The image shows the AWS Lambda logo surrounded by icons representing supported programming languages: Python, Java, C#, Node.js, Ruby, Go, and PowerShell.](https://kodekloud.com/kk-media/image/upload/v1752879575/notes-assets/images/Jenkins-Pipelines-AWS-Lambda-Basics/aws-lambda-logo-programming-languages.jpg)
 
 ## How AWS Lambda Works
 
@@ -54,9 +48,7 @@ In technical terms, AWS Lambda is a serverless compute service. This means:
 * Automatic scaling with traffic.
 * Payment based solely on usage.
 
-<Frame>
-  ![The image explains AWS Lambda as a "Serverless Compute Service" with an icon representing servers and tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879576/notes-assets/images/Jenkins-Pipelines-AWS-Lambda-Basics/aws-lambda-serverless-compute-icon.jpg)
-</Frame>
+![The image explains AWS Lambda as a "Serverless Compute Service" with an icon representing servers and tools.](https://kodekloud.com/kk-media/image/upload/v1752879576/notes-assets/images/Jenkins-Pipelines-AWS-Lambda-Basics/aws-lambda-serverless-compute-icon.jpg)
 
 ## Next Steps
 
@@ -64,6 +56,4 @@ In this article, we will show you how to deploy a Node.js application to AWS Lam
 
 Thank you for reading, and happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/78297356-097c-4793-b690-bc83f9aba3f0/lesson/4d248814-17e2-4c22-90b0-64343d944b9c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/78297356-097c-4793-b690-bc83f9aba3f0/lesson/4d248814-17e2-4c22-90b0-64343d944b9c)

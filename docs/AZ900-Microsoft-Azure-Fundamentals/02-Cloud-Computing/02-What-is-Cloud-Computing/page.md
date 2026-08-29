@@ -10,15 +10,15 @@ Cloud computing offers an innovative solution to the challenges faced by modern 
 
 Cloud computing could be the transformative answer for Bella Innovation. By migrating to the cloud, the company can overcome its current obstacles and ensure that website crashes during peak periods become a problem of the past. Scalability is achieved at the click of a button, allowing the business to efficiently manage sudden surges in traffic while maintaining high performance.
 
-![The image is a digital slide titled "The Start of Digital Revolution – Challenge," featuring a website with a warning symbol labeled "Slow" and "Unreliable," alongside goals for being "Fast," "Accessible," and "Do Not Crash."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868238/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-What-is-Cloud-Computing/digital-revolution-challenge-slide.jpg)
+![The image is a digital slide titled "The Start of Digital Revolution – Challenge," featuring a website with a warning symbol labeled "Slow" and "Unreliable," alongside goals for being "Fast," "Accessible," and "Do Not Crash."](https://kodekloud.com/kk-media/image/upload/v1752868238/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-What-is-Cloud-Computing/digital-revolution-challenge-slide.jpg)
 
 Cloud providers offer a range of solutions that benefit organizations with usage-based billing models. This not only provides enhanced cost optimization but also ensures efficient resource management through predictable billing practices.
 
-![The image is a slide titled "The Start of Digital Revolution – Solution," highlighting cloud providers offering usage-based billing with icons representing efficiency, predictability, and scalability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868240/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-What-is-Cloud-Computing/digital-revolution-solution-cloud-billing.jpg)
+![The image is a slide titled "The Start of Digital Revolution – Solution," highlighting cloud providers offering usage-based billing with icons representing efficiency, predictability, and scalability.](https://kodekloud.com/kk-media/image/upload/v1752868240/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-What-is-Cloud-Computing/digital-revolution-solution-cloud-billing.jpg)
 
 By transitioning to cloud computing, Bella Innovation lays the groundwork for a future-ready digital presence—a platform that is resilient, scalable, and cost-effective.
 
-![The image is a slide titled "The Start of Digital Revolution – Solution," highlighting cloud providers offering usage-based billing, with icons representing "Solve Issues and Innovate" and "Industry Leader."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868242/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-What-is-Cloud-Computing/digital-revolution-solution-cloud-billing-2.jpg)
+![The image is a slide titled "The Start of Digital Revolution – Solution," highlighting cloud providers offering usage-based billing, with icons representing "Solve Issues and Innovate" and "Industry Leader."](https://kodekloud.com/kk-media/image/upload/v1752868242/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-What-is-Cloud-Computing/digital-revolution-solution-cloud-billing-2.jpg)
 
 This strategic move not only addresses immediate performance issues but also paves the way for innovation and industry leadership. However, the journey doesn't end with cloud migration. The cloud landscape is vast, and selecting the appropriate cloud model is crucial.
 

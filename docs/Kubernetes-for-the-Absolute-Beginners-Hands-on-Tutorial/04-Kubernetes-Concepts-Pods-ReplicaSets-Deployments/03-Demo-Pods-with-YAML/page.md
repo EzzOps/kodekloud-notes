@@ -22,9 +22,7 @@ spec:
           image: nginx
 ```
 
-<Callout icon="lightbulb">
-  The deployment uses the same selector as the ReplicaSet, matching on `app: myapp`. This ensures that the deployment's pods are correctly managed.
-</Callout>
+> **lightbulb** The deployment uses the same selector as the ReplicaSet, matching on `app: myapp`. This ensures that the deployment's pods are correctly managed.
 
 ## Step 4: Reference the Original ReplicaSet Definition
 
@@ -128,9 +126,7 @@ replicaset.apps/myapp-replicaset       3         3         3       35m
 
 This output confirms that both the deployment and its corresponding ReplicaSet have been successfully created, with the expected pods up and running.
 
-<Callout icon="lightbulb">
-  You have now successfully deployed your application using Kubernetes Deployments. Experiment with these configurations in your practice environment for a deeper understanding of Kubernetes object management.
-</Callout>
+> **lightbulb** You have now successfully deployed your application using Kubernetes Deployments. Experiment with these configurations in your practice environment for a deeper understanding of Kubernetes object management.
 
 ## Additional Resources
 
@@ -139,11 +135,9 @@ This output confirms that both the deployment and its corresponding ReplicaSet h
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/7e954681-d6dc-4997-9c21-d7ed27daff64" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/7e954681-d6dc-4997-9c21-d7ed27daff64)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/a04dde16-f00b-454b-8314-8e7357b3d7ad" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/a04dde16-f00b-454b-8314-8e7357b3d7ad)
 
 
 # Demo Pods with YAML
@@ -187,9 +181,7 @@ spec:
       image: nginx
 ```
 
-<Callout icon="lightbulb">
-  Ensure consistent indentation in your YAML file. Use two spaces per indent level (avoid using tabs) to guarantee that keys like `name` and `labels` are recognized as children of the `metadata` key, and similarly for entries under `spec`.
-</Callout>
+> **lightbulb** Ensure consistent indentation in your YAML file. Use two spaces per indent level (avoid using tabs) to guarantee that keys like `name` and `labels` are recognized as children of the `metadata` key, and similarly for entries under `spec`.
 
 After editing the file, save and exit vim by pressing Escape and typing `:wq`.
 
@@ -258,9 +250,7 @@ Events:
   Normal  Started    14s   kubelet, minikube  Started container nginx
 ```
 
-<Callout icon="lightbulb">
-  For further troubleshooting or monitoring, refer to the detailed events in the `kubectl describe pod nginx` output. This information is crucial for debugging pod-related issues.
-</Callout>
+> **lightbulb** For further troubleshooting or monitoring, refer to the detailed events in the `kubectl describe pod nginx` output. This information is crucial for debugging pod-related issues.
 
 ## Next Steps
 
@@ -275,6 +265,4 @@ If you need additional resources or support, consider exploring:
 * [Terraform Registry](https://registry.terraform.io/)
 * [Docker Hub](https://hub.docker.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/ce127af3-6ffe-4ff9-a547-3f7a314882bc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/ce127af3-6ffe-4ff9-a547-3f7a314882bc)

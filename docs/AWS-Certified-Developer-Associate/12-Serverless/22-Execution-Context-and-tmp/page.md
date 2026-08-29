@@ -6,7 +6,7 @@ This article explains the execution context in AWS Lambda and the benefits of re
 
 AWS Lambda leverages an isolated runtime environment known as the execution context. This environment manages all the resources required for your function to operate, and it remains active for a period even after the function completes. The benefit is clear: reusing the execution context across subsequent invocations can help avoid the overhead associated with reinitializing expensive resources.
 
-![The image explains the concept of "Execution Context" in Lambda functions, highlighting the creation and reuse of the execution environment and its components like function code and temporary storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859475/notes-assets/images/AWS-Certified-Developer-Associate-Execution-Context-and-tmp/execution-context-lambda-functions.jpg)
+![The image explains the concept of "Execution Context" in Lambda functions, highlighting the creation and reuse of the execution environment and its components like function code and temporary storage.](https://kodekloud.com/kk-media/image/upload/v1752859475/notes-assets/images/AWS-Certified-Developer-Associate-Execution-Context-and-tmp/execution-context-lambda-functions.jpg)
 
 ## Benefits of Reusing the Execution Context
 

@@ -314,9 +314,7 @@ With the configuration and code snippets above you can validate both ingestion m
 * Python prometheus\_client: [https://github.com/prometheus/client\_python](https://github.com/prometheus/client_python)
 * OpenTelemetry Python metrics: [https://opentelemetry.io/docs/instrumentation/python/metrics/](https://opentelemetry.io/docs/instrumentation/python/metrics/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/54ccbea1-d07d-4179-acf5-34d70e93fa5c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/54ccbea1-d07d-4179-acf5-34d70e93fa5c)
 
 
 # Demo OTel Col Processors
@@ -333,9 +331,7 @@ Why this matters
 * High-volume telemetry can create excessive network traffic or overwhelm an exporter.
 * The Collector can batch, filter, modify, or sample telemetry between receivers and exporters using processors.
 
-<Callout icon="lightbulb">
-  Processors operate between receivers and exporters. They can modify, filter, sample, or batch telemetry before it is sent to exporters.
-</Callout>
+> **lightbulb** Processors operate between receivers and exporters. They can modify, filter, sample, or batch telemetry before it is sent to exporters.
 
 What processors do
 
@@ -459,9 +455,7 @@ Explanation
 
 Important: batching increases latency for individual telemetry items; tune `timeout` and `send_batch_size` to balance latency and throughput.
 
-<Callout icon="warning">
-  Batches reduce exporter load but introduce buffering delay. If you need near-real-time telemetry, set lower timeouts or avoid batching for that pipeline.
-</Callout>
+> **warning** Batches reduce exporter load but introduce buffering delay. If you need near-real-time telemetry, set lower timeouts or avoid batching for that pipeline.
 
 Enabling processors in service pipelines
 After defining processors under `processors:`, reference them in the `service.pipelines` section where you want them applied. Processors listed for a pipeline execute sequentially.

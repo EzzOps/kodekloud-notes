@@ -8,7 +8,7 @@ This lesson explains how Azure Functions connect to other Azure services, focusi
 
 In Azure Functions, configuration details are abstracted away from the source code, allowing you to update connection information without changing the code itself. The default configuration provider uses environment variables, which, in the Azure environment, are set via application settings.
 
-![The image is a diagram illustrating the connection of functions to Azure services, showing a configuration provider linked to a function project via a host name, with environment variables and local settings files as components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866229/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Connecting-to-Azure-Services/azure-functions-configuration-diagram.jpg)
+![The image is a diagram illustrating the connection of functions to Azure services, showing a configuration provider linked to a function project via a host name, with environment variables and local settings files as components.](https://kodekloud.com/kk-media/image/upload/v1752866229/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Connecting-to-Azure-Services/azure-functions-configuration-diagram.jpg)
 
 During local development, settings are typically read from a local settings.json file. This design ensures that the function accesses the proper configuration based on its runtime environment. For example, in a previous demonstration, the connection string was copied from the Azure Portal and pasted into local settings.json. The code was structured to dynamically retrieve the connection string from the configuration file rather than embedding it within the source code.
 
@@ -16,7 +16,7 @@ When the connection name corresponds to a single value, Azure Functions treats i
 
 In more complex scenarios, you might manage multiple related environment variables as a logical group. By using a shared prefix that ends with a double underscore (\_\_), these settings are organized into a collection for better management.
 
-![The image shows a diagram labeled "Connection Values" with a section titled "CONNECTION\_NAME" and a list of environment variables (ENV1\_\_, ENV2\_\_, ENV3\_\_, ENVn\_\_).](../../../../images/kodekloud.com/kk-media/image/upload/v1752866231/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Connecting-to-Azure-Services/connection-values-diagram-env-variables.jpg)
+![The image shows a diagram labeled "Connection Values" with a section titled "CONNECTION\_NAME" and a list of environment variables (ENV1\_\_, ENV2\_\_, ENV3\_\_, ENVn\_\_).](https://kodekloud.com/kk-media/image/upload/v1752866231/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Connecting-to-Azure-Services/connection-values-diagram-env-variables.jpg)
 
 This section further explores how Azure Functions connect to other Azure services, with an emphasis on identity-based connections and permission management.
 
@@ -34,7 +34,7 @@ When using Managed Identities or other forms of identity, it is crucial to grant
 
 Typically, permissions are assigned by specifying the scope—such as a resource group, subscription, or a specific resource—and by choosing the role that provides the necessary access.
 
-![The image provides guidance on connecting functions to Azure services, highlighting the configuration of identity-based connections and granting permissions to identities. It emphasizes using identities instead of secrets and assigning roles for permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866233/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Connecting-to-Azure-Services/azure-functions-identity-connections-guide.jpg)
+![The image provides guidance on connecting functions to Azure services, highlighting the configuration of identity-based connections and granting permissions to identities. It emphasizes using identities instead of secrets and assigning roles for permissions.](https://kodekloud.com/kk-media/image/upload/v1752866233/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Connecting-to-Azure-Services/azure-functions-identity-connections-guide.jpg)
 
 In some cases, you may also need to include the identity in an access policy (for example, in Azure Key Vault) to ensure it can access the required resources. Always adhere to the principle of least privilege—for example, if only reading blob data is required, assign just the Blob Data Reader role instead of more permissive roles like Data Owner or Contributor.
 

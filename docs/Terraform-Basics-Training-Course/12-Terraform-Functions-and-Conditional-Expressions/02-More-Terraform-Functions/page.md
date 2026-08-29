@@ -6,9 +6,7 @@ This lesson explores additional Terraform functions for processing and transform
 
 In this lesson, we'll explore additional functions available in Terraform. Throughout this course, we've used functions like `file` to read file data, `length` to count elements in lists or maps, and `toSet` to convert lists into sets. However, we haven't yet taken a closer look at how these functions process or transform values. Fortunately, Terraform’s interactive console allows you to test functions and interpolations before using them in your configurations.
 
-<Callout icon="lightbulb">
-  For a safe and interactive testing environment, always validate changes in the console to prevent unexpected results in production.
-</Callout>
+> **lightbulb** For a safe and interactive testing environment, always validate changes in the console to prevent unexpected results in production.
 
 ## Launching the Interactive Console
 
@@ -205,9 +203,7 @@ true
 false
 ```
 
-<Callout icon="lightbulb">
-  Remember that list indexing starts at zero, and the `contains` function is case-sensitive.
-</Callout>
+> **lightbulb** Remember that list indexing starts at zero, and the `contains` function is case-sensitive.
 
 ***
 
@@ -292,6 +288,4 @@ This lesson provided an overview of various Terraform functions used for numeric
 
 For more details on Terraform functions and best practices, visit the [Terraform Documentation](https://www.terraform.io/docs).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/cdfc2941-5d41-4d7c-b701-cddd299de4c5/lesson/69f247fc-d253-4fc5-8d99-53d27897f098" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/cdfc2941-5d41-4d7c-b701-cddd299de4c5/lesson/69f247fc-d253-4fc5-8d99-53d27897f098)

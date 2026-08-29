@@ -200,9 +200,7 @@ Quick reference table
 | Disable autogen         | Use annotation `pod-policies.kyverno.io/autogen-controllers: "none"`                                     |
 | When autogen is skipped | Name matches, Pod-only selectors/annotations, or `kinds` includes non-Pod resources.                     |
 
-<Callout icon="lightbulb">
-  Autogen simplifies policy management, but always review the generated rules in `status.autogen.rules` to confirm they match your intent — especially when working with custom controllers or operator-managed resources.
-</Callout>
+> **lightbulb** Autogen simplifies policy management, but always review the generated rules in `status.autogen.rules` to confirm they match your intent — especially when working with custom controllers or operator-managed resources.
 
 Summary
 
@@ -228,9 +226,7 @@ Further reading and references
 
 Using autogen will dramatically simplify your policy set and make it more robust and maintainable.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/b33740d9-ee2b-4dbb-868c-a40ce74692ea" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/b33740d9-ee2b-4dbb-868c-a40ce74692ea)
 
 
 # Basic Validations
@@ -324,9 +320,7 @@ metadata:
 
 Because `purpose` is `development` (not `production`), Kyverno will block the request.
 
-<Callout icon="lightbulb">
-  If validation fails, users receive immediate feedback when they run `kubectl apply`, preventing misconfigurations before resources are created.
-</Callout>
+> **lightbulb** If validation fails, users receive immediate feedback when they run `kubectl apply`, preventing misconfigurations before resources are created.
 
 Example kubectl failure output for the non-compliant manifest:
 
@@ -347,6 +341,4 @@ The error identifies the admission webhook, the blocked resource, the policy tha
 
 That's it for this lesson — a simple validate pattern can enforce important governance controls like required labels across your cluster.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/84d27a51-caa8-40d0-8c8a-7e4314ea4685" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/84d27a51-caa8-40d0-8c8a-7e4314ea4685)

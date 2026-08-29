@@ -14,7 +14,7 @@ Managing static AWS access keys on EC2 instances poses several operational and s
 * Rotating keys when they expire or are compromised.
 * Preventing API request failures due to missing or revoked keys.
 
-![The image is a diagram showing AWS Cloud components, including storage and processing instances, with connections indicating interactions between them. It features spot and auto-scaled instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869012/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-and-IAM-role/aws-cloud-components-diagram-instances.jpg)
+![The image is a diagram showing AWS Cloud components, including storage and processing instances, with connections indicating interactions between them. It features spot and auto-scaled instances.](https://kodekloud.com/kk-media/image/upload/v1752869012/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-and-IAM-role/aws-cloud-components-diagram-instances.jpg)
 
 Static credentials don’t scale in dynamic environments. IAM roles deliver temporary credentials automatically, solving distribution and rotation issues.
 
@@ -30,7 +30,7 @@ An IAM role is an AWS identity with attached permissions defined by IAM policies
 
 When you launch an EC2 instance, attach a role—and AWS will provision temporary credentials (AccessKeyId, SecretAccessKey, Token) via the instance metadata service.
 
-![The image illustrates the working of an AWS IAM role, showing a flow from a document icon to various AWS service icons, including a bucket and other service symbols.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869013/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-and-IAM-role/aws-iam-role-flow-diagram.jpg)
+![The image illustrates the working of an AWS IAM role, showing a flow from a document icon to various AWS service icons, including a bucket and other service symbols.](https://kodekloud.com/kk-media/image/upload/v1752869013/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-and-IAM-role/aws-iam-role-flow-diagram.jpg)
 
 ## EC2 Instance Metadata Service
 
@@ -106,7 +106,7 @@ Under the hood:
 * A single EC2 instance can hold one IAM role, while a role can attach to multiple instances.
 * AWS SDKs, CLI, and tools automatically retrieve metadata credentials without manual intervention.
 
-![The image is a summary of EC2 IAM roles, highlighting that IAM role credentials are temporary, work only from EC2 instances, an EC2 instance is attached to a single role, and a role can be attached to multiple EC2 instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869013/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-and-IAM-role/ec2-iam-roles-summary-temporary-credentials.jpg)
+![The image is a summary of EC2 IAM roles, highlighting that IAM role credentials are temporary, work only from EC2 instances, an EC2 instance is attached to a single role, and a role can be attached to multiple EC2 instances.](https://kodekloud.com/kk-media/image/upload/v1752869013/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Instance-and-IAM-role/ec2-iam-roles-summary-temporary-credentials.jpg)
 
 ## Links and References
 

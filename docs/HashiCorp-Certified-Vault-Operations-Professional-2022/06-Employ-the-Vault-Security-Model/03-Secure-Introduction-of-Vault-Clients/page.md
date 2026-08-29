@@ -12,17 +12,13 @@ Secret Zero is the initial secret an application needs to authenticate and retri
 
 Because Secret Zero unlocks access to dynamic secrets—database passwords, API keys, TLS certificates—it must be introduced at the last possible moment and never embedded in code or repositories.
 
-<Frame>
-  ![The image explains "Secret Zero," which is the initial secret needed to access other secrets, using examples like 1Password or LastPass. It highlights the importance of securely introducing secret zero to prevent unauthorized access and privilege escalation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878555/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Secure-Introduction-of-Vault-Clients/secret-zero-introduction-security-examples.jpg)
-</Frame>
+![The image explains "Secret Zero," which is the initial secret needed to access other secrets, using examples like 1Password or LastPass. It highlights the importance of securely introducing secret zero to prevent unauthorized access and privilege escalation.](https://kodekloud.com/kk-media/image/upload/v1752878555/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Secure-Introduction-of-Vault-Clients/secret-zero-introduction-security-examples.jpg)
 
 ## Secure Introduction Goals
 
 Use the following best practices to minimize risk when introducing Vault clients:
 
-<Frame>
-  ![The image lists "Secure Introduction Goals" with seven points focused on credential management and security practices, alongside a Vault certification badge.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878557/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Secure-Introduction-of-Vault-Clients/secure-introduction-goals-credential-management.jpg)
-</Frame>
+![The image lists "Secure Introduction Goals" with seven points focused on credential management and security practices, alongside a Vault certification badge.](https://kodekloud.com/kk-media/image/upload/v1752878557/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Secure-Introduction-of-Vault-Clients/secure-introduction-goals-credential-management.jpg)
 
 | Goal                                      | Benefit                                                   |
 | ----------------------------------------- | --------------------------------------------------------- |
@@ -46,9 +42,7 @@ Use short-lived credentials; if one is compromised, you can revoke its lease or 
 
 Authenticate at runtime instead of embedding secrets in code.
 
-<Callout icon="triangle-alert">
-  Never commit static credentials or `SecretID` values into version control.
-</Callout>
+> **triangle-alert** Never commit static credentials or `SecretID` values into version control.
 
 ### 4. Reduce TTLs and Use Dynamic Credentials
 
@@ -85,13 +79,9 @@ Applications running on trusted platforms (AWS, Azure, GCP, Kubernetes) can auth
 4. Vault validates the data with the cloud provider.
 5. On success, Vault issues a short-lived token.
 
-<Frame>
-  ![The image is a flowchart illustrating a secure platform process involving a vault admin, a trusted cloud platform, and an application server. It outlines steps for enabling authentication, obtaining and validating identity information, and returning a vault token.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878558/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Secure-Introduction-of-Vault-Clients/secure-platform-process-flowchart.jpg)
-</Frame>
+![The image is a flowchart illustrating a secure platform process involving a vault admin, a trusted cloud platform, and an application server. It outlines steps for enabling authentication, obtaining and validating identity information, and returning a vault token.](https://kodekloud.com/kk-media/image/upload/v1752878558/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Secure-Introduction-of-Vault-Clients/secure-platform-process-flowchart.jpg)
 
-<Frame>
-  ![The image illustrates a secure platform authentication process involving a trusted cloud platform, an application server, and a vault admin. It outlines steps for obtaining and validating identity information, authenticating, and returning a vault token.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878559/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Secure-Introduction-of-Vault-Clients/secure-platform-authentication-process-diagram.jpg)
-</Frame>
+![The image illustrates a secure platform authentication process involving a trusted cloud platform, an application server, and a vault admin. It outlines steps for obtaining and validating identity information, authenticating, and returning a vault token.](https://kodekloud.com/kk-media/image/upload/v1752878559/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Secure-Introduction-of-Vault-Clients/secure-platform-authentication-process-diagram.jpg)
 
 ***
 
@@ -107,13 +97,9 @@ A CI/CD pipeline can act as a trusted orchestrator to generate and inject secret
 4. The pipeline deploys the application and injects the SecretID at runtime.
 5. The application combines RoleID and SecretID to authenticate and retrieve secrets.
 
-<Frame>
-  ![The image illustrates a secure CI/CD orchestration process involving a Vault Admin, Developer, Docker Image, and an application deployment pipeline, highlighting steps for role creation, authentication, and secret management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878560/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Secure-Introduction-of-Vault-Clients/ci-cd-orchestration-vault-docker-pipeline.jpg)
-</Frame>
+![The image illustrates a secure CI/CD orchestration process involving a Vault Admin, Developer, Docker Image, and an application deployment pipeline, highlighting steps for role creation, authentication, and secret management.](https://kodekloud.com/kk-media/image/upload/v1752878560/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Secure-Introduction-of-Vault-Clients/ci-cd-orchestration-vault-docker-pipeline.jpg)
 
-<Callout icon="lightbulb">
-  For stronger protection, enable response wrapping so that only the intended application can unwrap the SecretID.
-</Callout>
+> **lightbulb** For stronger protection, enable response wrapping so that only the intended application can unwrap the SecretID.
 
 ***
 
@@ -128,9 +114,7 @@ Use Terraform to provision infrastructure and request Vault credentials without 
 3. Terraform injects the SecretID into the workload at deployment time.
 4. The application authenticates using its RoleID and the injected SecretID.
 
-<Frame>
-  ![The image illustrates a process flow for a "Secure Orchestrator" using Terraform, showing steps for provisioning a new workload, generating a new AppRole Secret-ID, injecting the Secret-ID, and authenticating with AppRole credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878561/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Secure-Introduction-of-Vault-Clients/secure-orchestrator-terraform-process-flow.jpg)
-</Frame>
+![The image illustrates a process flow for a "Secure Orchestrator" using Terraform, showing steps for provisioning a new workload, generating a new AppRole Secret-ID, injecting the Secret-ID, and authenticating with AppRole credentials.](https://kodekloud.com/kk-media/image/upload/v1752878561/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Secure-Introduction-of-Vault-Clients/secure-orchestrator-terraform-process-flow.jpg)
 
 The SecretID is never stored in your Terraform code repository—only the provisioning logic is.
 
@@ -148,9 +132,7 @@ Vault Agent can manage authentication and token renewal for your application, re
 4. The agent writes the client token to a local file.
 5. The application reads the token file for API requests to Vault.
 
-<Frame>
-  ![The image illustrates the process of Vault Agent Auto Auth, showing steps for authenticating with Vault, returning and storing a client token, and requesting secrets from Vault on an application server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878562/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Secure-Introduction-of-Vault-Clients/vault-agent-auto-auth-process-diagram.jpg)
-</Frame>
+![The image illustrates the process of Vault Agent Auto Auth, showing steps for authenticating with Vault, returning and storing a client token, and requesting secrets from Vault on an application server.](https://kodekloud.com/kk-media/image/upload/v1752878562/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Secure-Introduction-of-Vault-Clients/vault-agent-auto-auth-process-diagram.jpg)
 
 Vault Agent ensures applications never handle raw credentials directly and transparently renews tokens as needed.
 
@@ -181,6 +163,4 @@ Vault Agent ensures applications never handle raw credentials directly and trans
 
 [terraform]: https://www.terraform.io/
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/e5e1dc8a-e494-400d-8c96-44665ed5981d/lesson/2d0eb2be-4151-4812-b4bf-33e4593547bd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/e5e1dc8a-e494-400d-8c96-44665ed5981d/lesson/2d0eb2be-4151-4812-b4bf-33e4593547bd)

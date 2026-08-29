@@ -37,7 +37,7 @@ Each layer addresses different risks, but together they form a complete resilien
 
 ## Comparing Fault Tolerance, HA, and DR
 
-![The image is a table outlining core concepts of resiliency, including fault tolerance, high availability, and disaster recovery, with their main characteristics, benefits, and typical use cases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867621/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-a-resiliency-strategy-for-deployment/resiliency-core-concepts-table.jpg)
+![The image is a table outlining core concepts of resiliency, including fault tolerance, high availability, and disaster recovery, with their main characteristics, benefits, and typical use cases.](https://kodekloud.com/kk-media/image/upload/v1752867621/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-a-resiliency-strategy-for-deployment/resiliency-core-concepts-table.jpg)
 
 * Fault Tolerance: no single point of failure, ideal for mission-critical workloads (e.g., financial transactions)
 * High Availability: automated failover and load distribution, crucial for near-constant uptime (e.g., e-commerce)
@@ -70,7 +70,7 @@ Use the following Azure services to build fault-tolerant, highly available, and 
 | Azure Site Recovery   | Orchestrates failover and failback of VMs          | Continuous replication, automated failover runbooks   |
 | Azure Backup          | Automated backup and restore for cloud and on-prem | Application-consistent snapshots, long-term retention |
 
-![The image outlines four Azure resiliency strategies: Azure Load Balancer, Azure Traffic Manager, Azure Site Recovery, and Azure Backup, each with a brief description of their functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867622/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-a-resiliency-strategy-for-deployment/azure-resiliency-strategies-diagram.jpg)
+![The image outlines four Azure resiliency strategies: Azure Load Balancer, Azure Traffic Manager, Azure Site Recovery, and Azure Backup, each with a brief description of their functions.](https://kodekloud.com/kk-media/image/upload/v1752867622/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Design-and-implement-a-resiliency-strategy-for-deployment/azure-resiliency-strategies-diagram.jpg)
 
 ## Further Reading and References
 

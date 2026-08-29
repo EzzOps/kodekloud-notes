@@ -6,9 +6,7 @@ This article explores various types of files in Linux and methods to identify th
 
 Dave continues with the next topic. In this lesson, we will explore the various types of files in Linux and how to identify them.
 
-<Callout icon="lightbulb">
-  In Linux, the phrase "everything is a file" reflects the idea that every object—be it text data, a directory, or a device interface—can be treated as a file.
-</Callout>
+> **lightbulb** In Linux, the phrase "everything is a file" reflects the idea that every object—be it text data, a directory, or a device interface—can be treated as a file.
 
 ## Overview of File Types
 
@@ -97,6 +95,4 @@ Using commands like `file` and `ls -l` is an effective way to identify different
 
 Happy exploring!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/19296611-5fb9-4e5d-a926-d157d3f3c3db/lesson/d7832e47-aab2-440a-a7b7-74f713dee5be" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/19296611-5fb9-4e5d-a926-d157d3f3c3db/lesson/d7832e47-aab2-440a-a7b7-74f713dee5be)

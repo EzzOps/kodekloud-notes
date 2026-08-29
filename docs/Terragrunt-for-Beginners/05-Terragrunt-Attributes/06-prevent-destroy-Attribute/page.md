@@ -12,9 +12,7 @@ In this article, we dive into the `prevent_destroy` attribute within Terragrunt.
 
 Cloud environments often involve complex, interdependent resources. A single inadvertent `terraform destroy` can trigger cascading failures, leading to downtime and data loss. By setting `prevent_destroy = true`, you instruct Terraform to refuse any destroy operation on the designated resource or module.
 
-<Callout icon="triangle-alert">
-  Be cautious when enabling `prevent_destroy` globally. It can block legitimate operations that require a full teardown, so apply it selectively to high-value resources.
-</Callout>
+> **triangle-alert** Be cautious when enabling `prevent_destroy` globally. It can block legitimate operations that require a full teardown, so apply it selectively to high-value resources.
 
 ## Attribute Details
 
@@ -23,9 +21,7 @@ Cloud environments often involve complex, interdependent resources. A single ina
 | true  | Prohibit resource destruction        |
 | false | Allow resource destruction (default) |
 
-<Frame>
-  ![The image illustrates the concept of minimizing the risk of unintentional destruction, featuring a declining bar graph with a warning symbol and a building being demolished. It highlights the benefits of preventing destruction.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884278/notes-assets/images/Terragrunt-for-Beginners-prevent-destroy-Attribute/minimizing-destruction-risk-graph-warning.jpg)
-</Frame>
+![The image illustrates the concept of minimizing the risk of unintentional destruction, featuring a declining bar graph with a warning symbol and a building being demolished. It highlights the benefits of preventing destruction.](https://kodekloud.com/kk-media/image/upload/v1752884278/notes-assets/images/Terragrunt-for-Beginners-prevent-destroy-Attribute/minimizing-destruction-risk-graph-warning.jpg)
 
 ## Use Case: Protecting a VPC Module
 
@@ -123,9 +119,7 @@ Do you really want to destroy all resources? yes
 | Review Before Changes | Use `terragrunt plan` to detect potential conflicts early  |
 | Documentation         | Tag protected resources clearly in your repository         |
 
-<Callout icon="lightbulb">
-  For more details on Terragrunt attributes, refer to the [Terragrunt Documentation](https://terragrunt.gruntwork.io/docs/).
-</Callout>
+> **lightbulb** For more details on Terragrunt attributes, refer to the [Terragrunt Documentation](https://terragrunt.gruntwork.io/docs/).
 
 ## References
 
@@ -133,6 +127,4 @@ Do you really want to destroy all resources? yes
 * [Terragrunt Official Guide](https://terragrunt.gruntwork.io/)
 * [Terraform Basics](https://www.terraform.io/docs/index.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/a30aba05-3507-4290-aab7-385c125a96b0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/a30aba05-3507-4290-aab7-385c125a96b0)

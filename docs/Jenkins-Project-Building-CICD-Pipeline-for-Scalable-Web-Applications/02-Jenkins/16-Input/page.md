@@ -120,14 +120,10 @@ pipeline {
 
 After saving and pushing this Jenkinsfile to your Git repository, navigate to your Jenkins job. When viewing the console output, you will observe that the build completes the Setup and Test stages seamlessly. Once it reaches the Deployment stage, the pipeline pauses and prompts for manual confirmation. You have the option to hit “Yes” to continue or abort the process. Upon clicking “Yes,” the approval is logged with your username, and the deployment phase proceeds.
 
-<Callout icon="lightbulb">
-  Integrating manual input into your Jenkins pipeline adds an important checkpoint to ensure critical stages only execute after proper verification. This practice is especially useful in environments where a review process is necessary before a production deployment.
-</Callout>
+> **lightbulb** Integrating manual input into your Jenkins pipeline adds an important checkpoint to ensure critical stages only execute after proper verification. This practice is especially useful in environments where a review process is necessary before a production deployment.
 
 By following this guide, you can confidently incorporate manual interventions into your CI/CD workflows, reinforcing higher standards of quality control during deployments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/b41f91fe-e3fb-42ba-be7b-d0cce0a5576c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/b41f91fe-e3fb-42ba-be7b-d0cce0a5576c)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/4420473e-7a8d-4278-acf6-90ff6b7d69ad" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/4420473e-7a8d-4278-acf6-90ff6b7d69ad)

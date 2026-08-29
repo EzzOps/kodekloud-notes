@@ -64,7 +64,7 @@ This method offers full control over the certificate, making it ideal for scenar
 
 Public certificates can be loaded into your App Service or application code when remote resource access is needed. Note that these certificates are not used to secure custom domains.
 
-![The image outlines five steps for configuring security certificates: obtaining a free app service certificate, purchasing a certificate, importing from a key vault, uploading a private certificate, and uploading a public certificate.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866195/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Security-Certificates/security-certificates-configuration-steps.jpg)
+![The image outlines five steps for configuring security certificates: obtaining a free app service certificate, purchasing a certificate, importing from a key vault, uploading a private certificate, and uploading a public certificate.](https://kodekloud.com/kk-media/image/upload/v1752866195/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Security-Certificates/security-certificates-configuration-steps.jpg)
 
 ***
 
@@ -75,15 +75,15 @@ Follow these steps to manage security certificates using the Azure Portal:
 1. Log in to the Azure Portal and navigate to your App Service.
 2. From the App Service menu, select **Certificates** on the left-hand side.
 
-![The image shows a Microsoft Azure portal interface displaying details of a web app named "az204demoapp01," including its properties, hosting information, and deployment center.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866196/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Security-Certificates/azure-portal-web-app-details.jpg)
+![The image shows a Microsoft Azure portal interface displaying details of a web app named "az204demoapp01," including its properties, hosting information, and deployment center.](https://kodekloud.com/kk-media/image/upload/v1752866196/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Security-Certificates/azure-portal-web-app-details.jpg)
 
 3. Click **Add** to register a new certificate. By default, Azure uses the azurewebsites.net domain for web app access, which comes with a built-in certificate.
 
-![The image shows a Microsoft Azure portal interface for managing certificates, with options to add a new App Service Managed Certificate and a sidebar for various settings and deployment options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866198/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Security-Certificates/azure-portal-managing-certificates.jpg)
+![The image shows a Microsoft Azure portal interface for managing certificates, with options to add a new App Service Managed Certificate and a sidebar for various settings and deployment options.](https://kodekloud.com/kk-media/image/upload/v1752866198/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Security-Certificates/azure-portal-managing-certificates.jpg)
 
 4. To verify encryption, copy your website URL and open it in a browser. A valid certificate issued by Microsoft Corporation indicates that the connection is secure. The built-in certificate is provided free of charge.
 
-![The image shows a web page with a certificate viewer pop-up displaying SSL certificate details for an Azure website. The background features a design with text and icons related to web development services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866199/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Security-Certificates/ssl-certificate-viewer-azure-webpage.jpg)
+![The image shows a web page with a certificate viewer pop-up displaying SSL certificate details for an Azure website. The background features a design with text and icons related to web development services.](https://kodekloud.com/kk-media/image/upload/v1752866199/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Security-Certificates/ssl-certificate-viewer-azure-webpage.jpg)
 
 ***
 
@@ -95,17 +95,17 @@ When you use a custom domain, binding a certificate is essential for secure conn
 2. Enter the custom domain name (e.g., "firbish.com") and use an A record to point your domain to your App Service.
 3. Add the required DNS records via your DNS provider, and click **Validate** in the Azure Portal to confirm domain ownership.
 
-![The image shows a Microsoft Azure portal interface for managing custom domains, with options to add a custom domain and configure domain validation settings. A side panel is open for adding a custom domain, displaying fields for domain provider, TLS/SSL certificate, and domain validation details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866201/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Security-Certificates/azure-portal-custom-domains-interface.jpg)
+![The image shows a Microsoft Azure portal interface for managing custom domains, with options to add a custom domain and configure domain validation settings. A side panel is open for adding a custom domain, displaying fields for domain provider, TLS/SSL certificate, and domain validation details.](https://kodekloud.com/kk-media/image/upload/v1752866201/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Security-Certificates/azure-portal-custom-domains-interface.jpg)
 
 4. Once validated, your custom domain will initially be unsecured since no certificate is bound to it. Return to **Certificates** and select **Manage Certificates**.
 5. Click **Add Certificate**, select the custom domain (e.g., firbish.com), and click **Validate**. Note that creating an App Service Managed Certificate may take up to 10 minutes.
 
-![The image shows a Microsoft Azure portal interface for managing certificates in a web app. It includes options to add an App Service Managed Certificate, with a notification about the validation of a private key certificate's friendly name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866203/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Security-Certificates/azure-portal-managing-certificates-2.jpg)
+![The image shows a Microsoft Azure portal interface for managing certificates in a web app. It includes options to add an App Service Managed Certificate, with a notification about the validation of a private key certificate's friendly name.](https://kodekloud.com/kk-media/image/upload/v1752866203/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Security-Certificates/azure-portal-managing-certificates-2.jpg)
 
 6. After the certificate is created, return to **Custom domains**, click **Add Binding**, select the newly created certificate, then click **Add** to bind the certificate to your custom domain.
 7. Refresh your website (using an incognito window if needed) by navigating to [https://firbish.com](https://firbish.com). A secure connection will be indicated by a lock icon; clicking the icon will display certificate details like the common name and validity dates.
 
-![The image shows a Microsoft Azure portal interface for managing custom domains of a web app, displaying domain details and SSL certificate information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866204/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Security-Certificates/azure-portal-custom-domains-ssl.jpg)
+![The image shows a Microsoft Azure portal interface for managing custom domains of a web app, displaying domain details and SSL certificate information.](https://kodekloud.com/kk-media/image/upload/v1752866204/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Security-Certificates/azure-portal-custom-domains-ssl.jpg)
 
 ***
 
@@ -117,7 +117,7 @@ Azure App Service supports several additional certificate configurations beyond 
 * **Import from Key Vault:** Utilize certificates stored in Azure Key Vault.
 * **Uploading Public Certificates:** Load public certificates (CER files) into your application for scenarios where binding them to a custom domain is not necessary.
 
-![The image shows a Microsoft Azure portal interface for managing certificates in a web app, with an option to add a public key certificate by uploading a .cer file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866206/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Security-Certificates/azure-portal-managing-certificates-3.jpg)
+![The image shows a Microsoft Azure portal interface for managing certificates in a web app, with an option to add a public key certificate by uploading a .cer file.](https://kodekloud.com/kk-media/image/upload/v1752866206/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Configuring-Security-Certificates/azure-portal-managing-certificates-3.jpg)
 
 ***
 

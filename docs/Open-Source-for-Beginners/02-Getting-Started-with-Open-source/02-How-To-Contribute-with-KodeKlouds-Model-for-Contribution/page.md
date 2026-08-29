@@ -12,9 +12,7 @@ Contributing to open source is a rewarding experience that helps you grow your s
 * Raise
 * Apply
 
-<Frame>
-  ![The image features a stylized star icon followed by the words "Grow," "Learn," and "Build," each separated by arrows, on a dark background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882507/notes-assets/images/Open-Source-for-Beginners-How-To-Contribute-with-KodeKlouds-Model-for-Contribution/stylized-star-grow-learn-build-arrows.jpg)
-</Frame>
+![The image features a stylized star icon followed by the words "Grow," "Learn," and "Build," each separated by arrows, on a dark background.](https://kodekloud.com/kk-media/image/upload/v1752882507/notes-assets/images/Open-Source-for-Beginners-How-To-Contribute-with-KodeKlouds-Model-for-Contribution/stylized-star-grow-learn-build-arrows.jpg)
 
 ## Overview of the RETRY Model
 
@@ -48,13 +46,9 @@ Once you’ve chosen a project, immerse yourself in its community channels:
 
 Observe ongoing discussions, introduce yourself, and ask clarifying questions. This helps you learn the project’s norms and find areas where help is needed.
 
-<Callout icon="lightbulb">
-  Respect each project’s code of conduct and communication guidelines. Clear, concise messages go a long way in making a positive first impression.
-</Callout>
+> **lightbulb** Respect each project’s code of conduct and communication guidelines. Clear, concise messages go a long way in making a positive first impression.
 
-<Frame>
-  ![The image shows a network diagram with interconnected nodes and icons for GitHub, Slack, and Discord. It appears to represent a collaborative or communication platform.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882507/notes-assets/images/Open-Source-for-Beginners-How-To-Contribute-with-KodeKlouds-Model-for-Contribution/network-diagram-github-slack-discord.jpg)
-</Frame>
+![The image shows a network diagram with interconnected nodes and icons for GitHub, Slack, and Discord. It appears to represent a collaborative or communication platform.](https://kodekloud.com/kk-media/image/upload/v1752882507/notes-assets/images/Open-Source-for-Beginners-How-To-Contribute-with-KodeKlouds-Model-for-Contribution/network-diagram-github-slack-discord.jpg)
 
 ## Try
 
@@ -78,13 +72,9 @@ After you’re comfortable with the codebase, start contributing by raising your
 
 Always follow the project’s contribution guidelines when submitting pull requests or opening issues.
 
-<Callout icon="triangle-alert">
-  Before submitting, ensure your changes pass all tests and adhere to the repository’s style guide. Incomplete or non-compliant PRs may be closed without review.
-</Callout>
+> **triangle-alert** Before submitting, ensure your changes pass all tests and adhere to the repository’s style guide. Incomplete or non-compliant PRs may be closed without review.
 
-<Frame>
-  ![The image shows a user interface with a section displaying a list of issues or tasks, likely from a project management or coding platform, alongside icons and labels for different types of contributions like "Document," "Bug Fix," and "New Feature."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882508/notes-assets/images/Open-Source-for-Beginners-How-To-Contribute-with-KodeKlouds-Model-for-Contribution/user-interface-issues-tasks-contributions.jpg)
-</Frame>
+![The image shows a user interface with a section displaying a list of issues or tasks, likely from a project management or coding platform, alongside icons and labels for different types of contributions like "Document," "Bug Fix," and "New Feature."](https://kodekloud.com/kk-media/image/upload/v1752882508/notes-assets/images/Open-Source-for-Beginners-How-To-Contribute-with-KodeKlouds-Model-for-Contribution/user-interface-issues-tasks-contributions.jpg)
 
 ## Apply
 
@@ -104,6 +94,4 @@ Finally, leverage what you’ve learned to benefit other projects and teams. Sha
 
 [discord]: https://discord.com
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/fbb6900d-94ee-411a-8821-42557ca81867/lesson/b9d6948e-b9ec-4a5a-9129-d8c42f86a3aa" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/fbb6900d-94ee-411a-8821-42557ca81867/lesson/b9d6948e-b9ec-4a5a-9129-d8c42f86a3aa)

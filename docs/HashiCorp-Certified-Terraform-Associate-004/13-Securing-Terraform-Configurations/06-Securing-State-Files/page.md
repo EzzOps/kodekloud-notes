@@ -42,9 +42,7 @@ Key recommendations (defense in depth)
 * Mark variables and outputs as `sensitive = true` to avoid exposing values in logs and console output.
 * Protect Terraform state with a remote backend, encryption (for example, KMS), and least-privilege IAM roles; assume secrets may appear in state.
 
-<Callout icon="warning">
-  Even when you read secrets from an external manager, the secret values may end up in Terraform state. Make sure your state backend is encrypted and access is restricted (for example, use a remote backend with KMS encryption and least-privilege IAM).
-</Callout>
+> **warning** Even when you read secrets from an external manager, the secret values may end up in Terraform state. Make sure your state backend is encrypted and access is restricted (for example, use a remote backend with KMS encryption and least-privilege IAM).
 
 <Frame>
   <img alt="The image is a &#x22;Protection Quick Reference&#x22; table comparing techniques for protecting logs/output, state, and Git commits, highlighting sensitive variables, environment variables, and external sources. It includes recommendations for using environment variables, storing secrets externally, and using sensitive variables to hide output." />
@@ -67,9 +65,7 @@ Further reading and references
 * [Azure Key Vault](https://learn.microsoft.com/azure/key-vault/)
 * [Google Secret Manager](https://cloud.google.com/secret-manager)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/937ac82e-4dee-466c-92aa-9a731752424e/lesson/6692aa5c-6e6f-4e94-8c89-ba37927f2894" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/937ac82e-4dee-466c-92aa-9a731752424e/lesson/6692aa5c-6e6f-4e94-8c89-ba37927f2894)
 
 
 # Securing State Files
@@ -82,9 +78,7 @@ In this lesson we shift focus from protecting secrets in your configuration (sen
 
 Terraform state contains the complete configuration for every resource it manages, including attributes required to create and manage infrastructure — and sensitive values such as database passwords, API keys, private keys, and TLS certificates. Because state is plain JSON by default, any user who can read the file can access those secrets.
 
-<Callout icon="lightbulb">
-  Terraform state files often include secrets. Treat state as a sensitive artifact: secure where it’s stored, who can access it, and how it’s audited.
-</Callout>
+> **lightbulb** Terraform state files often include secrets. Treat state as a sensitive artifact: secure where it’s stored, who can access it, and how it’s audited.
 
 Example state snippet (JSON) showing sensitive values stored in plain text:
 
@@ -120,9 +114,7 @@ Example state snippet (JSON) showing sensitive values stored in plain text:
 }
 ```
 
-<Callout icon="warning">
-  Do not commit Terraform state files to version control. They commonly contain secrets and other sensitive infrastructure data.
-</Callout>
+> **warning** Do not commit Terraform state files to version control. They commonly contain secrets and other sensitive infrastructure data.
 
 Why local state is risky
 
@@ -215,6 +207,4 @@ Links and references
 * [AWS KMS Best Practices](https://docs.aws.amazon.com/kms/latest/developerguide/best-practices.html)
 * [DynamoDB for State Locking](https://www.terraform.io/docs/backends/types/s3.html#dynamodb-table)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/937ac82e-4dee-466c-92aa-9a731752424e/lesson/d01bf993-41e6-4d77-90a5-2a6797ce3668" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/937ac82e-4dee-466c-92aa-9a731752424e/lesson/d01bf993-41e6-4d77-90a5-2a6797ce3668)

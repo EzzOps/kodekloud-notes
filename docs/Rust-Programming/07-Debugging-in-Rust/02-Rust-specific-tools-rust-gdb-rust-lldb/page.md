@@ -10,9 +10,7 @@ In this lesson, we explore a powerful debugging tool tailored for Rust developme
 
 LLDB (Low-Level Debugger) is an efficient and user-friendly debugger that is part of the LLVM project. As the default debugger on macOS, it enables you to pause program execution, inspect variables, and step through code interactively.
 
-<Frame>
-  ![The image introduces "lldb" with an illustration of a person interacting with a laptop displaying code, highlighting features like being "Fast" and "User Friendly."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883866/notes-assets/images/Rust-Programming-Rust-specific-tools-rust-gdb-rust-lldb/lldb-fast-user-friendly-illustration.jpg)
-</Frame>
+![The image introduces "lldb" with an illustration of a person interacting with a laptop displaying code, highlighting features like being "Fast" and "User Friendly."](https://kodekloud.com/kk-media/image/upload/v1752883866/notes-assets/images/Rust-Programming-Rust-specific-tools-rust-gdb-rust-lldb/lldb-fast-user-friendly-illustration.jpg)
 
 ## Introducing Rust LLDB
 
@@ -24,15 +22,11 @@ rust-lldb --version
 
 If version information is displayed, Rust LLDB is installed and ready to use.
 
-<Frame>
-  ![The image describes "Rust lldb," a tool designed for a smoother debugging experience with Rust code, highlighting its configuration for Rust's unique features. It includes two arrows pointing in opposite directions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883867/notes-assets/images/Rust-Programming-Rust-specific-tools-rust-gdb-rust-lldb/rust-lldb-debugging-tool-diagram.jpg)
-</Frame>
+![The image describes "Rust lldb," a tool designed for a smoother debugging experience with Rust code, highlighting its configuration for Rust's unique features. It includes two arrows pointing in opposite directions.](https://kodekloud.com/kk-media/image/upload/v1752883867/notes-assets/images/Rust-Programming-Rust-specific-tools-rust-gdb-rust-lldb/rust-lldb-debugging-tool-diagram.jpg)
 
 Rust LLDB is ready to use out of the box as it comes bundled with the Rust toolchain.
 
-<Frame>
-  ![The image describes "Rust lldb" as a tool that is Rust-friendly and built for Rust developers, highlighting its ease of use and integration with the Rust toolchain.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883868/notes-assets/images/Rust-Programming-Rust-specific-tools-rust-gdb-rust-lldb/rust-lldb-tool-rust-developers.jpg)
-</Frame>
+![The image describes "Rust lldb" as a tool that is Rust-friendly and built for Rust developers, highlighting its ease of use and integration with the Rust toolchain.](https://kodekloud.com/kk-media/image/upload/v1752883868/notes-assets/images/Rust-Programming-Rust-specific-tools-rust-gdb-rust-lldb/rust-lldb-tool-rust-developers.jpg)
 
 ## Launching Rust LLDB
 
@@ -173,9 +167,7 @@ frame #0: 0x00000001000149c debug_rust`debug_rust::factorial::hc2078a81714cb92f(
 
 This confirms that `n` becomes 6 and continues increasing, which prevents the recursion from reaching its base case and ultimately leads to a stack overflow.
 
-<Callout icon="triangle-alert">
-  Using an incorrect recursive call (i.e., adding instead of subtracting) will cause an infinite loop, leading to a stack overflow error. Always verify the logic of recursive functions.
-</Callout>
+> **triangle-alert** Using an incorrect recursive call (i.e., adding instead of subtracting) will cause an infinite loop, leading to a stack overflow error. Always verify the logic of recursive functions.
 
 ## Fixing the Bug
 
@@ -234,14 +226,10 @@ fatal runtime error: stack overflow
 zsh: abort      cargo run --quiet
 ```
 
-<Callout icon="lightbulb">
-  By using Rust LLDB to step through your code and inspect variable values, you can efficiently pinpoint and resolve subtle bugs in your Rust applications.
-</Callout>
+> **lightbulb** By using Rust LLDB to step through your code and inspect variable values, you can efficiently pinpoint and resolve subtle bugs in your Rust applications.
 
 Happy debugging!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/fdebf97c-bade-4db7-bfcf-9881f9ec96fc/lesson/5db13f94-0b56-4bca-8c94-1999c4118a1f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/fdebf97c-bade-4db7-bfcf-9881f9ec96fc/lesson/5db13f94-0b56-4bca-8c94-1999c4118a1f)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/rust/module/fdebf97c-bade-4db7-bfcf-9881f9ec96fc/lesson/0de0f591-4119-47f9-a1ac-27449ee43040" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/rust/module/fdebf97c-bade-4db7-bfcf-9881f9ec96fc/lesson/0de0f591-4119-47f9-a1ac-27449ee43040)

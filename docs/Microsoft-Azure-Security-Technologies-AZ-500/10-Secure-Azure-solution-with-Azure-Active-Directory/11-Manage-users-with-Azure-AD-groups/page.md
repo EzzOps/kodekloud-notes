@@ -38,9 +38,7 @@ Dynamic user groups update their membership automatically based on predefined ru
 
 Dynamic device groups work similarly but are based on device-specific attributes like device type, operating system, or device version. Note that dynamic device membership is available only in security groups because devices typically do not require collaboration tools such as SharePoint or shared mailboxes. Use this option when you need to group devices for policy applications, like grouping older Windows 10 machines for targeted notifications.
 
-<Frame>
-  ![The image shows a user interface for managing user accounts in Azure Active Directory, displaying group types and assignment types. It includes a list of groups with details like name, object ID, and group type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882260/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-active-directory-user-management.jpg)
-</Frame>
+![The image shows a user interface for managing user accounts in Azure Active Directory, displaying group types and assignment types. It includes a list of groups with details like name, object ID, and group type.](https://kodekloud.com/kk-media/image/upload/v1752882260/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-active-directory-user-management.jpg)
 
 ***
 
@@ -48,21 +46,15 @@ Dynamic device groups work similarly but are based on device-specific attributes
 
 To create groups, navigate to **Azure Active Directory** in the Azure portal, then select **Groups** (located below Users).
 
-<Frame>
-  ![The image shows the Microsoft Azure portal, specifically the overview page for "Kodekloud" in Azure Active Directory, displaying basic information and alerts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882261/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-portal-kodekloud-overview.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal, specifically the overview page for "Kodekloud" in Azure Active Directory, displaying basic information and alerts.](https://kodekloud.com/kk-media/image/upload/v1752882261/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-portal-kodekloud-overview.jpg)
 
 Click **Groups** to initiate the creation of a new group. The default option is set to **Security**. Switching to Microsoft 365 groups will prompt you to provide a group email address. For demonstration, we will create both security and Microsoft 365 groups.
 
 It is best practice to use descriptive names for groups. Clear naming conventions help avoid confusion as the number of groups increases.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for creating a new group, with fields for group type, name, description, and membership type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882262/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-create-group-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for creating a new group, with fields for group type, name, description, and membership type.](https://kodekloud.com/kk-media/image/upload/v1752882262/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-create-group-interface.jpg)
 
-<Callout icon="lightbulb">
-  The dynamic membership option may not be available if you do not have the required license. To enable dynamic groups, ensure you have an appropriate P1 or P2 license. In the Azure portal, navigate to **Azure Active Directory > Licenses > License features** and search for "dynamic" to view available features. New tenants might also activate a free trial (typically 30 to 90 days).
-</Callout>
+> **lightbulb** The dynamic membership option may not be available if you do not have the required license. To enable dynamic groups, ensure you have an appropriate P1 or P2 license. In the Azure portal, navigate to **Azure Active Directory > Licenses > License features** and search for "dynamic" to view available features. New tenants might also activate a free trial (typically 30 to 90 days).
 
 ***
 
@@ -73,9 +65,7 @@ Before testing group features, verify that your tenant contains test users. Bulk
 1. **Download Existing Users**\
    In the source tenant, download all user data. If you’re familiar with bulk operations, you can skip the detailed steps; otherwise, follow along.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal displaying a list of users in the "Users" section, with options to manage and download user data. A sidebar indicates a successful download of user information in a CSV file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882263/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-portal-users-list-download.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal displaying a list of users in the "Users" section, with options to manage and download user data. A sidebar indicates a successful download of user information in a CSV file.](https://kodekloud.com/kk-media/image/upload/v1752882263/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-portal-users-list-download.jpg)
 
 2. **Modify the CSV File**\
    Open the CSV file in Excel and update the User Principal Name (UPN) as needed—using the find and replace tool—to ensure it aligns with the new tenant's domain.
@@ -90,9 +80,7 @@ Before testing group features, verify that your tenant contains test users. Bulk
 
    Remove any unneeded guest user entries. Once the CSV template is updated, save and upload it. The bulk operation's results, including links to detailed logs, will be displayed.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal displaying the results of a bulk user creation operation, with a notification indicating the success of the operation using a CSV file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882264/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-portal-bulk-user-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal displaying the results of a bulk user creation operation, with a notification indicating the success of the operation using a CSV file.](https://kodekloud.com/kk-media/image/upload/v1752882264/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-portal-bulk-user-creation.jpg)
 
 After the upload, confirm that users are available in the new tenant by checking the UPN domain (for example, ending with .labs for the lab tenant).
 
@@ -109,15 +97,11 @@ After the upload, confirm that users are available in the new tenant by checking
 
 Since this is a security group with assigned membership, members can be added manually. Azure AD role assignments can also be performed. Additionally, you can designate group owners to delegate management.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a new group, with fields for group type, name, description, and membership type. The group name is "DevRel" and the description is "Developer Rel."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882265/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-portal-create-group-devrel.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a new group, with fields for group type, name, description, and membership type. The group name is "DevRel" and the description is "Developer Rel."](https://kodekloud.com/kk-media/image/upload/v1752882265/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-portal-create-group-devrel.jpg)
 
 After creation, review the group details to see information on membership, nested groups (if any), and device counts.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying details of a group named "DevRel" with information about its membership type, source, type, object ID, and creation date. It also includes sections for managing properties, members, and activity logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882266/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-portal-devrel-group-details.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying details of a group named "DevRel" with information about its membership type, source, type, object ID, and creation date. It also includes sections for managing properties, members, and activity logs.](https://kodekloud.com/kk-media/image/upload/v1752882266/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-portal-devrel-group-details.jpg)
 
 ### Creating a Dynamic User Group
 
@@ -139,19 +123,13 @@ You can refine the rule by adding conditions, such as ensuring the account is en
 
 To test the dynamic rule, edit existing users’ attributes by setting their department to "DevRel". After several refreshes, these users should appear as members of the **DevRelInfo** group.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for configuring dynamic membership rules, with options to select properties, operators, and values for rule creation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882267/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-portal-dynamic-membership-rules.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for configuring dynamic membership rules, with options to select properties, operators, and values for rule creation.](https://kodekloud.com/kk-media/image/upload/v1752882267/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-portal-dynamic-membership-rules.jpg)
 
 Review the group details to verify that the group owner (usually the creator) is listed and that dynamic membership is updated automatically as user attributes match or no longer match the rule.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying the "DevRelInfo" group with a list of owners. The interface includes options to manage properties, members, and roles, with one user listed as a member.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882268/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-portal-devrelinfo-group.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying the "DevRelInfo" group with a list of owners. The interface includes options to manage properties, members, and roles, with one user listed as a member.](https://kodekloud.com/kk-media/image/upload/v1752882268/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-portal-devrelinfo-group.jpg)
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying the members of a group named "DevRelInfo," with one member listed as "April Davis."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882269/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-portal-devrelinfo-members.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying the members of a group named "DevRelInfo," with one member listed as "April Davis."](https://kodekloud.com/kk-media/image/upload/v1752882269/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-portal-devrelinfo-members.jpg)
 
 You can validate the dynamic rule by clicking **Validate Rules**. For example, if you modify a user’s department to a value such as HR or Finance, that user will be removed automatically from the group. Additionally, if you try to add a user manually (like Fenton) and their department value does not match (e.g., "devrel" in lowercase), they will not be added.
 
@@ -161,9 +139,7 @@ You can validate the dynamic rule by clicking **Validate Rules**. For example, i
 
 Dynamic device groups function in a similar manner to dynamic user groups but use device attributes (such as device model, manufacturer, OS type, and OS version). Note that dynamic device membership is supported only for security groups since devices typically do not require collaborative features.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for configuring dynamic membership rules, with options to select properties, operators, and values. A dropdown menu is open, displaying various properties like "accountEnabled" and "objectId."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882270/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-portal-dynamic-membership-rules-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for configuring dynamic membership rules, with options to select properties, operators, and values. A dropdown menu is open, displaying various properties like "accountEnabled" and "objectId."](https://kodekloud.com/kk-media/image/upload/v1752882270/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Manage-users-with-Azure-AD-groups/azure-portal-dynamic-membership-rules-2.jpg)
 
 Devices will be automatically added or removed based on the dynamic rule configuration, ensuring that device group membership reflects current device attributes.
 
@@ -187,6 +163,4 @@ Learn more about managing Azure Active Directory groups with our related resourc
 * [Microsoft Azure Documentation](https://docs.microsoft.com/azure/active-directory/)
 * [Azure AD Best Practices](https://docs.microsoft.com/azure/active-directory/best-practices)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c0f70ae1-790f-4a5d-8e09-29450b5ee610/lesson/340aa6ad-1cbb-4af1-b7aa-42d18e98bb4e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c0f70ae1-790f-4a5d-8e09-29450b5ee610/lesson/340aa6ad-1cbb-4af1-b7aa-42d18e98bb4e)

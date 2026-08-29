@@ -10,7 +10,7 @@ In this guide, you’ll learn how to secure your Azure resources by choosing the
 
 Effective identity management acts as the gatekeeper for your cloud environment. It ensures only authorized users and applications can access sensitive data and services in Azure. By implementing the correct identity model, you strengthen your security posture and simplify credential management.
 
-![The image is an introduction to identity management in Azure, showing a flow from identity management to an authorized user accessing sensitive data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867534/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Choose-between-Service-Principals-and-Managed-Identity/azure-identity-management-introduction-flow.jpg)
+![The image is an introduction to identity management in Azure, showing a flow from identity management to an authorized user accessing sensitive data.](https://kodekloud.com/kk-media/image/upload/v1752867534/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Choose-between-Service-Principals-and-Managed-Identity/azure-identity-management-introduction-flow.jpg)
 
 Azure provides two primary identity mechanisms for applications and services:
 
@@ -23,11 +23,11 @@ Azure provides two primary identity mechanisms for applications and services:
 
 A Service Principal is an identity created for use with applications, hosted services, and automated tools to access Azure resources. It follows the principle of least privilege by granting only the needed permissions.
 
-![The image is a diagram illustrating the concept of "Service Principals" in Azure, showing their connection to security identities and Azure resources like applications, hosted services, and automated tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867536/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Choose-between-Service-Principals-and-Managed-Identity/service-principals-azure-diagram.jpg)
+![The image is a diagram illustrating the concept of "Service Principals" in Azure, showing their connection to security identities and Azure resources like applications, hosted services, and automated tools.](https://kodekloud.com/kk-media/image/upload/v1752867536/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Choose-between-Service-Principals-and-Managed-Identity/service-principals-azure-diagram.jpg)
 
 A key scenario for Service Principals is non-interactive access—your app or CI/CD pipeline can authenticate without a user’s credentials:
 
-![The image is a diagram titled "Service Principals," showing a central icon connected to three user icons, with two having green check marks and one with a red cross.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867537/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Choose-between-Service-Principals-and-Managed-Identity/service-principals-diagram-user-icons.jpg)
+![The image is a diagram titled "Service Principals," showing a central icon connected to three user icons, with two having green check marks and one with a red cross.](https://kodekloud.com/kk-media/image/upload/v1752867537/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Choose-between-Service-Principals-and-Managed-Identity/service-principals-diagram-user-icons.jpg)
 
 ### Create a Service Principal
 
@@ -53,7 +53,7 @@ az role assignment create \
   --scope <scope>
 ```
 
-![The image illustrates the concept of managing service principals, showing a flow from "Service Principals" to "Permissions and Roles" with icons and a connecting shield symbol.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867539/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Choose-between-Service-Principals-and-Managed-Identity/service-principals-permissions-roles-flow.jpg)
+![The image illustrates the concept of managing service principals, showing a flow from "Service Principals" to "Permissions and Roles" with icons and a connecting shield symbol.](https://kodekloud.com/kk-media/image/upload/v1752867539/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Choose-between-Service-Principals-and-Managed-Identity/service-principals-permissions-roles-flow.jpg)
 
 ### Delete a Service Principal
 
@@ -69,7 +69,7 @@ az ad sp delete --id <objectId>
 
 Managed Identities in Azure Active Directory eliminate the need to store credentials in code. Azure handles credential issuance and rotation automatically.
 
-![The image is a diagram illustrating the concept of Managed Identity in Azure, showing the relationship between Azure Active Directory, Managed Identity, and Azure Services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867540/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Choose-between-Service-Principals-and-Managed-Identity/managed-identity-azure-diagram-relationship.jpg)
+![The image is a diagram illustrating the concept of Managed Identity in Azure, showing the relationship between Azure Active Directory, Managed Identity, and Azure Services.](https://kodekloud.com/kk-media/image/upload/v1752867540/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Choose-between-Service-Principals-and-Managed-Identity/managed-identity-azure-diagram-relationship.jpg)
 
 Azure offers two flavors:
 
@@ -80,7 +80,7 @@ Azure offers two flavors:
 
 Tied to a single Azure resource (VM, App Service, Function). Created and deleted alongside that resource.
 
-![The image is a diagram illustrating a system-assigned managed identity in Azure, showing its connection to app services, key vaults, and blob storage. It includes a note that this identity is tied to a single Azure resource.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867540/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Choose-between-Service-Principals-and-Managed-Identity/azure-managed-identity-diagram.jpg)
+![The image is a diagram illustrating a system-assigned managed identity in Azure, showing its connection to app services, key vaults, and blob storage. It includes a note that this identity is tied to a single Azure resource.](https://kodekloud.com/kk-media/image/upload/v1752867540/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Choose-between-Service-Principals-and-Managed-Identity/azure-managed-identity-diagram.jpg)
 
 **Lifecycle**
 
@@ -103,7 +103,7 @@ az vm create \
 
 A standalone Azure resource that can be shared across multiple services. You manage its lifecycle independently.
 
-![The image is a diagram illustrating the life cycle of a user-assigned managed identity, showing its interactions with app services, key vaults, and blob storage. It includes check and cross marks to indicate successful and unsuccessful connections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867541/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Choose-between-Service-Principals-and-Managed-Identity/user-assigned-managed-identity-lifecycle-diagram.jpg)
+![The image is a diagram illustrating the life cycle of a user-assigned managed identity, showing its interactions with app services, key vaults, and blob storage. It includes check and cross marks to indicate successful and unsuccessful connections.](https://kodekloud.com/kk-media/image/upload/v1752867541/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Choose-between-Service-Principals-and-Managed-Identity/user-assigned-managed-identity-lifecycle-diagram.jpg)
 
 **Use Case:**\
 Multiple App Services using one managed identity to access a SQL database.
@@ -122,7 +122,7 @@ az identity create \
 
 Both Service Principals and Managed Identities enable secure Azure authentication but differ in management overhead and flexibility.
 
-![The image compares Service Principals and Managed Identities, highlighting their differences in control, flexibility, and ease of use. Service Principals offer more control but require manual management, while Managed Identities provide simplified management with automatic credential rotation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867543/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Choose-between-Service-Principals-and-Managed-Identity/service-principals-managed-identities-comparison.jpg)
+![The image compares Service Principals and Managed Identities, highlighting their differences in control, flexibility, and ease of use. Service Principals offer more control but require manual management, while Managed Identities provide simplified management with automatic credential rotation.](https://kodekloud.com/kk-media/image/upload/v1752867543/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Choose-between-Service-Principals-and-Managed-Identity/service-principals-managed-identities-comparison.jpg)
 
 | Identity Type      | Credential Management      | Lifecycle                 | Best For                              |
 | ------------------ | -------------------------- | ------------------------- | ------------------------------------- |

@@ -33,9 +33,7 @@ Enter the new value, or press ENTER for the default
 Login Shell [/bin/bash]: /bin/sh
 ```
 
-<Callout icon="lightbulb">
-  After switching shells, consider exploring Bash-specific features to take full advantage of its functionalities.
-</Callout>
+> **lightbulb** After switching shells, consider exploring Bash-specific features to take full advantage of its functionalities.
 
 ***
 
@@ -175,8 +173,6 @@ This concludes chapter one of the Quick Start Guide. Bob encourages exploring Ba
 * [Linux Shell Scripting Tutorial](https://www.shellscript.sh/)
 * [Understanding Linux Paths](https://www.tldp.org/LDP/abs/html/pathname.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/267dec49-c3e9-4627-b7f8-9bf9aa834e53/lesson/854991ea-3c04-4a70-88e1-e777551031fd" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/267dec49-c3e9-4627-b7f8-9bf9aa834e53/lesson/854991ea-3c04-4a70-88e1-e777551031fd)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/267dec49-c3e9-4627-b7f8-9bf9aa834e53/lesson/74d2a70a-a0d3-4e62-aa1a-2583bafbe785" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/267dec49-c3e9-4627-b7f8-9bf9aa834e53/lesson/74d2a70a-a0d3-4e62-aa1a-2583bafbe785)

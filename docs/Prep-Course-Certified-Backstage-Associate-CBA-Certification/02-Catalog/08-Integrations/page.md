@@ -37,9 +37,7 @@ integrations:
       token: ${GITHUB_TOKEN}
 ```
 
-<Callout icon="lightbulb">
-  When using a GitHub token, grant only the minimal scopes required to read repository contents (for example, `repo` for private repos or appropriate read-only scopes). Keep tokens secure — use environment variables, secret managers, or vaults. See GitHub’s guidance for creating personal access tokens: [https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
-</Callout>
+> **lightbulb** When using a GitHub token, grant only the minimal scopes required to read repository contents (for example, `repo` for private repos or appropriate read-only scopes). Keep tokens secure — use environment variables, secret managers, or vaults. See GitHub’s guidance for creating personal access tokens: [https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
 Entity Providers: dynamic discovery
 
@@ -77,6 +75,4 @@ Links and references
 
 Use these integration patterns to keep your Backstage catalog synchronized with the systems you already maintain, reduce duplication, and automate onboarding of new components.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/1c0e64e1-1639-40d9-9077-220ae6657e76" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/1c0e64e1-1639-40d9-9077-220ae6657e76)

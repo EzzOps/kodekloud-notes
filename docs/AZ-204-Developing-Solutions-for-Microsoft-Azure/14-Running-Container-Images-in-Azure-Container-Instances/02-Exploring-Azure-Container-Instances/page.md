@@ -45,7 +45,7 @@ Container groups are a fundamental element of Azure Container Instances. They en
 
 Containers within a group share a common IP address and port namespace, facilitating seamless inter-container communication. Deployment of multi-container groups can be automated using ARM templates or YAML files, aligning with modern infrastructure-as-code practices. Resource allocation (CPU, memory, GPUs) is defined on a per-container basis, ensuring that each container is provisioned with the necessary resources.
 
-![The image illustrates Azure Container Instances and Container Groups, showing DNS name labels, exposed ports, and mounted paths for containers. It includes visual elements representing container and network concepts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866726/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Container-Instances/azure-container-instances-groups-diagram.jpg)
+![The image illustrates Azure Container Instances and Container Groups, showing DNS name labels, exposed ports, and mounted paths for containers. It includes visual elements representing container and network concepts.](https://kodekloud.com/kk-media/image/upload/v1752866726/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Container-Instances/azure-container-instances-groups-diagram.jpg)
 
 ## Creating an Azure Container Instance via the Azure Portal
 
@@ -56,7 +56,7 @@ The following steps illustrate how to create an Azure Container Instance using t
 3. Select an existing resource group (e.g., one designated for containers) and provide a unique name for your instance (for example, ACI01) since the DNS label must be unique.
 4. Choose your desired region (e.g., East US).
 
-![The image shows the Microsoft Azure portal interface for creating a container instance, with fields for project and container details such as subscription, resource group, container name, region, and image source.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866728/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Container-Instances/azure-portal-container-instance-creation.jpg)
+![The image shows the Microsoft Azure portal interface for creating a container instance, with fields for project and container details such as subscription, resource group, container name, region, and image source.](https://kodekloud.com/kk-media/image/upload/v1752866728/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Container-Instances/azure-portal-container-instance-creation.jpg)
 
 5. Optionally, select availability zones if needed and choose a SKU. Options include a standard SKU or configuring for confidential computing, which provides in-memory encryption and hardware-level isolation. For this demonstration, the standard SKU is used.
 6. Select your image source. You may use a kickstart image like the hello world container, or choose an image from your Container Registry.
@@ -68,11 +68,11 @@ The following steps illustrate how to create an Azure Container Instance using t
 
 After configuring all the settings, click "Create" to deploy the container instance. The instance typically comes online within 30 seconds.
 
-![The image shows a Microsoft Azure portal page for creating a container instance, displaying configuration details such as subscription, resource group, region, and container specifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866729/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Container-Instances/azure-portal-container-instance-creation-2.jpg)
+![The image shows a Microsoft Azure portal page for creating a container instance, displaying configuration details such as subscription, resource group, region, and container specifications.](https://kodekloud.com/kk-media/image/upload/v1752866729/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Container-Instances/azure-portal-container-instance-creation-2.jpg)
 
 Once the deployment is complete, click "Go to resource" to view your container instance.
 
-![The image shows the Microsoft Azure portal interface displaying an overview of a container instance named "aci-01," with details such as resource group, status, location, and performance metrics like CPU, memory, and network usage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866731/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Container-Instances/azure-portal-container-instance-aci-01.jpg)
+![The image shows the Microsoft Azure portal interface displaying an overview of a container instance named "aci-01," with details such as resource group, status, location, and performance metrics like CPU, memory, and network usage.](https://kodekloud.com/kk-media/image/upload/v1752866731/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Azure-Container-Instances/azure-portal-container-instance-aci-01.jpg)
 
 You can then copy the public IP address provided by the instance, enter it into your browser, and verify that the “Welcome to Azure Container Instances” page is displayed—confirming that your container is up and running.
 

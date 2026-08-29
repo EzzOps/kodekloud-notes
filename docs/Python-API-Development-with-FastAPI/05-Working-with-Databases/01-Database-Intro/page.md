@@ -12,32 +12,22 @@ There are two major categories of databases: relational and NoSQL databases. In 
 
 SQL (Structured Query Language) is the standard language used to communicate with the DBMS. With SQL, you perform various operations such as inserting, updating, and retrieving data. When you send SQL statements to the DBMS, it processes these commands and returns the requested results.
 
-<Frame>
-  ![The image explains that Structured Query Language (SQL) is used to communicate with a Database Management System (DBMS), illustrated with a flow from a person to a database.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883474/notes-assets/images/Python-API-Development-with-FastAPI-Database-Intro/sql-database-communication-diagram.jpg)
-</Frame>
+![The image explains that Structured Query Language (SQL) is used to communicate with a Database Management System (DBMS), illustrated with a flow from a person to a database.](https://kodekloud.com/kk-media/image/upload/v1752883474/notes-assets/images/Python-API-Development-with-FastAPI-Database-Intro/sql-database-communication-diagram.jpg)
 
-<Callout icon="lightbulb">
-  For more insight into SQL and DBMS communications, you can explore the [SQL Tutorial](https://www.w3schools.com/sql/) for additional examples and best practices.
-</Callout>
+> **lightbulb** For more insight into SQL and DBMS communications, you can explore the [SQL Tutorial](https://www.w3schools.com/sql/) for additional examples and best practices.
 
 In the following sections, we will cover the installation of PostgreSQL on both Windows and Mac OS environments. An important feature of PostgreSQL (and most other databases) is its ability to manage multiple isolated databases within a single server instance. By default, PostgreSQL creates a database named "Postgres" upon installation, but you have the flexibility to create separate databases for different applications.
 
 For instance, if you have two distinct applications—App1 and App2—you can create two separate databases (DB1 and DB2) within the same PostgreSQL instance. This strategy ensures that each application's data is maintained separately, reducing the risk of interference and promoting data isolation.
 
-<Frame>
-  ![The image is a diagram illustrating how a single instance of Postgres can be divided into multiple separate databases, with two applications (App1 and App2) connecting to different databases (DB1 and DB2).](../../../../images/kodekloud.com/kk-media/image/upload/v1752883475/notes-assets/images/Python-API-Development-with-FastAPI-Database-Intro/postgres-multiple-databases-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating how a single instance of Postgres can be divided into multiple separate databases, with two applications (App1 and App2) connecting to different databases (DB1 and DB2).](https://kodekloud.com/kk-media/image/upload/v1752883475/notes-assets/images/Python-API-Development-with-FastAPI-Database-Intro/postgres-multiple-databases-diagram.jpg)
 
 When PostgreSQL is installed, it automatically creates a default database named "Postgres." This database serves as a starting point or fallback when connecting to the PostgreSQL instance. Although you may not use this default database once your application-specific databases are created, it remains an integral part of your PostgreSQL setup.
 
-<Callout icon="lightbulb">
-  Remember: While the "Postgres" default database is useful for initial configuration and testing, it's good practice to create dedicated databases for each of your production applications to maintain clear boundaries.
-</Callout>
+> **lightbulb** Remember: While the "Postgres" default database is useful for initial configuration and testing, it's good practice to create dedicated databases for each of your production applications to maintain clear boundaries.
 
 In summary, this lesson introduced the basic concepts of databases, the role of a Database Management System (DBMS), and SQL in the context of your FastAPI application. In the sections that follow, we will dive into installing PostgreSQL and configuring your FastAPI application to interact with it, ensuring data persistence and reliability as your application grows.
 
 For more detailed instructions and best practices, consider checking out the [PostgreSQL Documentation](https://www.postgresql.org/docs/) and [FastAPI Guide](https://fastapi.tiangolo.com/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/5dd40a4b-bf41-444b-82f6-64785fd76999" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/5dd40a4b-bf41-444b-82f6-64785fd76999)

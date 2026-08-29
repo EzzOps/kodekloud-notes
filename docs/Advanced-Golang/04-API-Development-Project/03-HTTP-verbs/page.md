@@ -12,7 +12,7 @@ HTTP defines several request methods to determine the action to be taken for a g
 
 The GET method is used to request a representation of a specified resource. Endpoints defined with GET should strictly retrieve data without causing any side effects, ensuring safe and idempotent operations.
 
-![The image is a slide explaining the GET method in HTTP, stating that it requests a representation of a specified resource and should only retrieve data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868679/notes-assets/images/Advanced-Golang-HTTP-verbs/http-get-method-explanation-slide.jpg)
+![The image is a slide explaining the GET method in HTTP, stating that it requests a representation of a specified resource and should only retrieve data.](https://kodekloud.com/kk-media/image/upload/v1752868679/notes-assets/images/Advanced-Golang-HTTP-verbs/http-get-method-explanation-slide.jpg)
 
 > **lightbulb** Ensure that GET requests do not alter the resource state on the server.
 
@@ -20,13 +20,13 @@ The GET method is used to request a representation of a specified resource. Endp
 
 The POST method allows you to submit data to a specified resource. This operation often results in the creation of a new resource or triggers a change in the server's state. In the context of CRUD, POST is typically associated with the "create" action.
 
-![The image is a slide explaining the POST method, stating that it submits an entity to a specified resource, often causing a change in state or side effects on the server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868679/notes-assets/images/Advanced-Golang-HTTP-verbs/post-method-explanation-slide.jpg)
+![The image is a slide explaining the POST method, stating that it submits an entity to a specified resource, often causing a change in state or side effects on the server.](https://kodekloud.com/kk-media/image/upload/v1752868679/notes-assets/images/Advanced-Golang-HTTP-verbs/post-method-explanation-slide.jpg)
 
 ## PUT Method
 
 The PUT method is designed to update a resource. It replaces all current representations of the target resource with the data provided in the request payload. Use PUT when you need to perform full updates to existing resources.
 
-![The image is a slide explaining the PUT method in HTTP, stating that it replaces all current representations of the target resource with the request payload.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868680/notes-assets/images/Advanced-Golang-HTTP-verbs/http-put-method-explanation-slide.jpg)
+![The image is a slide explaining the PUT method in HTTP, stating that it replaces all current representations of the target resource with the request payload.](https://kodekloud.com/kk-media/image/upload/v1752868680/notes-assets/images/Advanced-Golang-HTTP-verbs/http-put-method-explanation-slide.jpg)
 
 > **lightbulb** When updating partial resources, consider using the PATCH method instead of PUT for efficiency.
 
@@ -34,7 +34,7 @@ The PUT method is designed to update a resource. It replaces all current represe
 
 The DELETE method allows for the removal of a specified resource from the server. This operation is essential for managing data lifecycle and cleaning up unnecessary resources.
 
-![The image is a slide explaining the DELETE method, stating that it deletes the specified resource.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868681/notes-assets/images/Advanced-Golang-HTTP-verbs/delete-method-resource-explanation.jpg)
+![The image is a slide explaining the DELETE method, stating that it deletes the specified resource.](https://kodekloud.com/kk-media/image/upload/v1752868681/notes-assets/images/Advanced-Golang-HTTP-verbs/delete-method-resource-explanation.jpg)
 
 For this project, we will focus on implementing these four HTTP methods—GET, POST, PUT, and DELETE—to perform the necessary CRUD operations effectively. This modular approach ensures that your API adheres to RESTful principles while providing a solid foundation for future expansion.
 

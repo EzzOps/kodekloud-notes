@@ -17,9 +17,7 @@ After that, we’ll walk through configuring and installing five packages that s
 
 Each walkthrough provides step-by-step guidance so you can follow along and apply the same patterns in your own cluster using Glasskube.
 
-<Callout icon="lightbulb">
-  This chapter is hands-on: you’ll see how to configure package manifests, choose scopes, and perform installs. If you’re new to Kubernetes, review the [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) first to get the most out of these examples.
-</Callout>
+> **lightbulb** This chapter is hands-on: you’ll see how to configure package manifests, choose scopes, and perform installs. If you’re new to Kubernetes, review the [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) first to get the most out of these examples.
 
 ## Package scopes: cluster-scoped vs. namespaced
 
@@ -30,9 +28,7 @@ Understanding scope is essential to safe package management. Use cluster-scoped 
 | Cluster-scoped | Services that require cluster-wide resources or control plane access (e.g., cluster-level monitoring, network policies)              | Requires cluster-admin permissions to install; affects resources across namespaces |
 | Namespaced     | Application-level components that should be contained to a namespace (e.g., app-specific databases, logging agents for a single app) | Can be installed by namespace-scoped operators; reduces blast radius               |
 
-<Callout icon="warning">
-  Cluster-scoped package installations typically require elevated privileges. Always review RBAC and resource definitions before granting cluster-wide install permissions.
-</Callout>
+> **warning** Cluster-scoped package installations typically require elevated privileges. Always review RBAC and resource definitions before granting cluster-wide install permissions.
 
 ## What we’ll install (overview)
 
@@ -59,6 +55,4 @@ Note: The examples above are typical choices in Kubernetes ecosystems. In the wa
 * Glasskube docs: `/docs/glasskube` (see local documentation for installation and CLI reference)
 * Best practices for RBAC: [https://kubernetes.io/docs/reference/access-authn-authz/rbac/](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/c3806869-7f9e-4cc2-8dc5-aa10304e3d1c/lesson/f142dd6a-2d0d-473c-a4b0-0acf72fed7bc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/c3806869-7f9e-4cc2-8dc5-aa10304e3d1c/lesson/f142dd6a-2d0d-473c-a4b0-0acf72fed7bc)

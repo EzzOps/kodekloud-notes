@@ -15,9 +15,7 @@ vault token renew hvb.AAAAQL7ypVnQ...
 # Error renewing token: batch tokens cannot be renewed
 ```
 
-<Callout icon="triangle-alert">
-  Batch tokens cannot be renewed or revoked. Plan token lifecycles accordingly.
-</Callout>
+> **triangle-alert** Batch tokens cannot be renewed or revoked. Plan token lifecycles accordingly.
 
 ## Using a Batch Token
 
@@ -54,11 +52,9 @@ vault secrets list
 
 You’ve now learned how to create, inspect, and securely use Vault Batch Tokens. For more details, see the [Vault Tokens documentation](https://www.vaultproject.io/docs/concepts/token/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b6a41fdb-447c-43b2-9489-6c8459821fab/lesson/38df6481-bcbd-4c5c-b7ea-061362970f7f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b6a41fdb-447c-43b2-9489-6c8459821fab/lesson/38df6481-bcbd-4c5c-b7ea-061362970f7f)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b6a41fdb-447c-43b2-9489-6c8459821fab/lesson/b6d94cbf-1da0-4a4b-a8e0-b898706cc2b3" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b6a41fdb-447c-43b2-9489-6c8459821fab/lesson/b6d94cbf-1da0-4a4b-a8e0-b898706cc2b3)
 
 
 # Demo Performance Replication
@@ -89,9 +85,7 @@ In this tutorial, you’ll configure Vault Enterprise performance replication be
 
 2. Enable the primary replication role:
 
-<Callout icon="triangle-alert">
-  Enabling the primary replication role will briefly make Vault unavailable. Expect a short service interruption.
-</Callout>
+> **triangle-alert** Enabling the primary replication role will briefly make Vault unavailable. Expect a short service interruption.
 
 ```bash theme={null}
 ec2-user@ip-10-1-102-170:~$ vault write -f sys/replication/performance/primary/enable
@@ -111,9 +105,7 @@ WARNING! The following warnings were returned from Vault:
    wrapping_token_creation_path  sys/replication/performance/primary/secondary-token
    ```
 
-<Callout icon="lightbulb">
-  Copy the `wrapping_token` value; you’ll need it to enable replication on the secondary node.
-</Callout>
+> **lightbulb** Copy the `wrapping_token` value; you’ll need it to enable replication on the secondary node.
 
 ***
 

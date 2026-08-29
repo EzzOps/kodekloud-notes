@@ -21,9 +21,7 @@ server {
 }
 ```
 
-<Callout icon="lightbulb">
-  Use `nginx -t` after edits to validate configuration before reloading with `systemctl reload nginx` or `nginx -s reload`.
-</Callout>
+> **lightbulb** Use `nginx -t` after edits to validate configuration before reloading with `systemctl reload nginx` or `nginx -s reload`.
 
 ## Redirecting HTTP to HTTPS
 
@@ -39,9 +37,7 @@ server {
 }
 ```
 
-<Callout icon="warning">
-  A `301` is cached by clients and search engines. Use `302` (temporary) during testing to avoid long-lived caches.
-</Callout>
+> **warning** A `301` is cached by clients and search engines. Use `302` (temporary) during testing to avoid long-lived caches.
 
 ## Rewrites and regex
 
@@ -153,6 +149,4 @@ Best practices:
 
 And that wraps it up for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/924e21e1-b2e9-4b6d-b35e-8b1f6ed56a62" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/924e21e1-b2e9-4b6d-b35e-8b1f6ed56a62)

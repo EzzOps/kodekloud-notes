@@ -5,9 +5,7 @@ inputs = {
 }
 ```
 
-<Callout icon="lightbulb">
-  Use precise variable names in `inputs` to match your Terraform module's `variables.tf` definitions.
-</Callout>
+> **lightbulb** Use precise variable names in `inputs` to match your Terraform module's `variables.tf` definitions.
 
 ### download\_dir
 
@@ -25,9 +23,7 @@ Safeguard resources from accidental destruction. When set to `true`, Terragrunt 
 prevent_destroy = true
 ```
 
-<Callout icon="triangle-alert">
-  Enabling `prevent_destroy` can block intentional resource teardown. Use with caution.
-</Callout>
+> **triangle-alert** Enabling `prevent_destroy` can block intentional resource teardown. Use with caution.
 
 ### skip
 
@@ -82,9 +78,7 @@ retryable_errors = [
 * [Terraform Registry](https://registry.terraform.io/)
 * [AWS IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/a003ce38-a068-480d-b48a-a45891633e92" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/a003ce38-a068-480d-b48a-a45891633e92)
 
 
 # download dir Attribute
@@ -104,9 +98,7 @@ In this lesson, we’ll dive into the **download\_dir** attribute in Terragrunt.
   * Separating cache directories for different environments or teams.
   * Keeping CI/CD pipelines’ caches isolated.
 
-<Callout icon="lightbulb">
-  The `download_dir` path can be absolute or relative. If the directory doesn’t exist, Terragrunt will attempt to create it.
-</Callout>
+> **lightbulb** The `download_dir` path can be absolute or relative. If the directory doesn’t exist, Terragrunt will attempt to create it.
 
 ## Key Benefits
 
@@ -122,13 +114,9 @@ In this lesson, we’ll dive into the **download\_dir** attribute in Terragrunt.
 * Verify file-system permissions to allow read/write operations.
 * Confirm sufficient disk space is available to store module downloads.
 
-<Callout icon="triangle-alert">
-  If `download_dir` lacks write permissions or runs out of space, Terragrunt may fail during `init`, interrupting your Terraform workflow.
-</Callout>
+> **triangle-alert** If `download_dir` lacks write permissions or runs out of space, Terragrunt may fail during `init`, interrupting your Terraform workflow.
 
-<Frame>
-  ![The image is an infographic titled "Download dir" with icons and text indicating the need for necessary permissions and directory accessibility, labeled under "Consideration."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884273/notes-assets/images/Terragrunt-for-Beginners-download-dir-Attribute/download-dir-infographic-permissions-accessibility.jpg)
-</Frame>
+![The image is an infographic titled "Download dir" with icons and text indicating the need for necessary permissions and directory accessibility, labeled under "Consideration."](https://kodekloud.com/kk-media/image/upload/v1752884273/notes-assets/images/Terragrunt-for-Beginners-download-dir-Attribute/download-dir-infographic-permissions-accessibility.jpg)
 
 ***
 
@@ -190,6 +178,4 @@ Notice the cache now resides under `../.terragrunt-kodekloud` instead of the def
 * [Terragrunt Documentation](https://terragrunt.gruntwork.io/docs/)
 * [Terraform Module Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/dd6b206d-54c8-44dd-bcd3-95001e813a39" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/dd6b206d-54c8-44dd-bcd3-95001e813a39)

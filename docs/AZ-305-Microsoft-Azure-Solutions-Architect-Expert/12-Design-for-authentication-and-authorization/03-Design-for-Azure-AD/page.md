@@ -60,7 +60,7 @@ Single Sign-On (SSO) enhances productivity by letting users access multiple corp
 
 These best practices contribute to a secure, efficient, and manageable Azure AD deployment.
 
-![The image provides best practices for Azure AD, including centralized management, single tenant approach, avoiding syncing AD privileged accounts, enabling password hash synchronization, and enabling SSO. It features a visually appealing design with icons and a wavy line connecting the points.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867200/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-AD/azure-ad-best-practices-guide.jpg)
+![The image provides best practices for Azure AD, including centralized management, single tenant approach, avoiding syncing AD privileged accounts, enabling password hash synchronization, and enabling SSO. It features a visually appealing design with icons and a wavy line connecting the points.](https://kodekloud.com/kk-media/image/upload/v1752867200/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-AD/azure-ad-best-practices-guide.jpg)
 
 ## Azure AD B2B Best Practices
 

@@ -16,7 +16,7 @@ Code coverage is a metric that shows the proportion of your source code executed
 
 Untested code can hide defects and increase maintenance costs. Integrating coverage analysis into your CI/CD pipeline reveals these gaps early, making your testing efforts more effective.
 
-![The image is an illustration related to "Code Coverage in Azure Pipelines," showing a person interacting with a large screen displaying code. A caption below states that it significantly enhances software reliability and maintainability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867788/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Code-Coverage/code-coverage-azure-pipelines-illustration.jpg)
+![The image is an illustration related to "Code Coverage in Azure Pipelines," showing a person interacting with a large screen displaying code. A caption below states that it significantly enhances software reliability and maintainability.](https://kodekloud.com/kk-media/image/upload/v1752867788/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Code-Coverage/code-coverage-azure-pipelines-illustration.jpg)
 
 Azure Pipelines automates coverage collection alongside build and test steps, ensuring your quality gates stay green without manual intervention.
 
@@ -32,7 +32,7 @@ Understanding different coverage metrics lets you choose the right level of test
 
 > **lightbulb** Branch and path coverage provide deeper insight into complex logic but can be more challenging to achieve.
 
-![The image describes three types of code coverage: statement coverage, branch coverage, and path coverage, each with a brief explanation. It includes a graphic of a code editor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867789/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Code-Coverage/code-coverage-statement-branch-path.jpg)
+![The image describes three types of code coverage: statement coverage, branch coverage, and path coverage, each with a brief explanation. It includes a graphic of a code editor.](https://kodekloud.com/kk-media/image/upload/v1752867789/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Code-Coverage/code-coverage-statement-branch-path.jpg)
 
 ## Integrating Coverage in Azure Pipelines
 
@@ -44,7 +44,7 @@ A robust CI/CD pipeline typically follows these steps:
 
 Popular tools include [Cobertura][cobertura] and [JaCoCo][jacoco] for Java, plus [Coverlet][coverlet] for .NET.
 
-![The image lists three tools required for code coverage: Cobertura, JaCoCo for Java, and Coverlet for .NET, each with their respective logos.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867790/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Code-Coverage/code-coverage-tools-cobertura-jacoco-coverlet.jpg)
+![The image lists three tools required for code coverage: Cobertura, JaCoCo for Java, and Coverlet for .NET, each with their respective logos.](https://kodekloud.com/kk-media/image/upload/v1752867790/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Code-Coverage/code-coverage-tools-cobertura-jacoco-coverlet.jpg)
 
 Below is a sample YAML configuration for a .NET application in Azure Pipelines:
 
@@ -87,11 +87,11 @@ Once the pipeline finishes:
 * Open the **Code Coverage** tab for detailed reports, including missed lines and risk areas
 * Download raw data for offline review or integration with other tools
 
-![The image is a flowchart titled "Analyzing Code Coverage Results," showing how coverage reports lead to three outcomes: percentage of code covered, number of missed lines, and potential areas of risk.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867790/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Code-Coverage/analyzing-code-coverage-results-flowchart.jpg)
+![The image is a flowchart titled "Analyzing Code Coverage Results," showing how coverage reports lead to three outcomes: percentage of code covered, number of missed lines, and potential areas of risk.](https://kodekloud.com/kk-media/image/upload/v1752867790/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Code-Coverage/analyzing-code-coverage-results-flowchart.jpg)
 
 To create richer visualizations, use [ReportGenerator][reportgenerator], which transforms XML and other coverage data into HTML reports with charts and summaries.
 
-![The image shows a code coverage analysis with a circular chart indicating 78% coverage, alongside a logo for "ReportGenerator."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867791/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Code-Coverage/code-coverage-analysis-reportgenerator-chart.jpg)
+![The image shows a code coverage analysis with a circular chart indicating 78% coverage, alongside a logo for "ReportGenerator."](https://kodekloud.com/kk-media/image/upload/v1752867791/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Code-Coverage/code-coverage-analysis-reportgenerator-chart.jpg)
 
 ## Best Practices
 
@@ -102,7 +102,7 @@ To create richer visualizations, use [ReportGenerator][reportgenerator], which t
 
 > **triangle-alert** Chasing 100% coverage can lead to overly complex or low-value tests. Focus on critical paths and high-risk modules instead.
 
-![The image outlines best practices for maximizing code coverage, emphasizing the importance of writing quality tests, maintaining balance, and avoiding the pursuit of 100% coverage at the expense of test quality.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867792/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Code-Coverage/code-coverage-best-practices-diagram.jpg)
+![The image outlines best practices for maximizing code coverage, emphasizing the importance of writing quality tests, maintaining balance, and avoiding the pursuit of 100% coverage at the expense of test quality.](https://kodekloud.com/kk-media/image/upload/v1752867792/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Understanding-Code-Coverage/code-coverage-best-practices-diagram.jpg)
 
 ## References
 

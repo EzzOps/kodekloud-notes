@@ -23,17 +23,13 @@ $ grep -r '/.*/' /etc/
 ...
 ```
 
-<Frame>
-  ![The image shows a dark-themed terminal interface with a command line prompt and a description of the asterisk (\*) symbol, indicating it matches the previous element zero or more times.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881403/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Perform-Basic-File-Management-Part-2-Using-find/dark-terminal-command-prompt-asterisk.jpg)
-</Frame>
+![The image shows a dark-themed terminal interface with a command line prompt and a description of the asterisk (\*) symbol, indicating it matches the previous element zero or more times.](https://kodekloud.com/kk-media/image/upload/v1752881403/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Perform-Basic-File-Management-Part-2-Using-find/dark-terminal-command-prompt-asterisk.jpg)
 
 ### `+` (One or More)
 
 In basic `grep`, `+` is literal unless escaped. To require at least one occurrence:
 
-<Frame>
-  ![The image shows a dark-themed command-line interface with a prompt and a description of the "+" symbol, indicating it matches the previous element one or more times.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881404/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Perform-Basic-File-Management-Part-2-Using-find/dark-command-line-plus-symbol-description.jpg)
-</Frame>
+![The image shows a dark-themed command-line interface with a prompt and a description of the "+" symbol, indicating it matches the previous element one or more times.](https://kodekloud.com/kk-media/image/upload/v1752881404/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Perform-Basic-File-Management-Part-2-Using-find/dark-command-line-plus-symbol-description.jpg)
 
 ```bash theme={null}
 # Zero or more matches still include lines without '0':
@@ -45,15 +41,13 @@ $ grep -r '0\+' /etc/
 /etc/brltty/Keyboard/keypad.ktb:bind KP0:!KP2 MENU_NEXT_ITEM
 ```
 
-<Callout icon="lightbulb">
-  Basic `grep` treats `+`, `?`, `{}`, `|`, and `()` as literals. To use them without escaping, switch to extended regex mode:
+> **lightbulb** Basic `grep` treats `+`, `?`, `{}`, `|`, and `()` as literals. To use them without escaping, switch to extended regex mode:
 
   ```bash theme={null}
   grep -E 'pattern+|another' file.txt
   # or
   egrep 'pattern+|another' file.txt
   ```
-</Callout>
 
 ## Next Steps
 
@@ -65,9 +59,7 @@ With these operators in your toolkit, you can build advanced patterns to extract
 * [Regular Expressions – Tutorialspoint](https://www.tutorialspoint.com/regular_expressions/index.htm)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/f01cd944-5755-477b-a37b-271639396ce9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/f01cd944-5755-477b-a37b-271639396ce9)
 
 
 # Process Text Streams Using Filters

@@ -45,15 +45,11 @@ Best practices for measuring fine-tuning impact
 * Consider ablation studies to separate contributions from dataset size, hyperparameters, and training strategy. See more on ablation methodology: [Ablation study](https://en.wikipedia.org/wiki/Ablation_study).
 * Monitor for overfitting and memorization; review examples where the model changed predictions after fine-tuning. Learn about overfitting: [Overfitting (Wikipedia)](https://en.wikipedia.org/wiki/Overfitting).
 
-<Callout icon="lightbulb">
-  For robust evaluation, compare the fine-tuned model to its own pre-fine-tuning baseline and measure performance on held-out test sets that reflect intended production use cases. Include repeated runs and clear reporting of metrics to support reproducible, interpretable conclusions.
-</Callout>
+> **lightbulb** For robust evaluation, compare the fine-tuned model to its own pre-fine-tuning baseline and measure performance on held-out test sets that reflect intended production use cases. Include repeated runs and clear reporting of metrics to support reproducible, interpretable conclusions.
 
 References and further reading
 
 * [Practical tips for reproducible ML experiments](https://www.paperswithcode.com/methods)
 * [Evaluating machine learning models — best practices](https://en.wikipedia.org/wiki/Model_evaluation)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/5d6c4ee1-8d95-47e3-aa4d-95571dd5865a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/5d6c4ee1-8d95-47e3-aa4d-95571dd5865a)

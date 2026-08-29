@@ -58,9 +58,7 @@ Cilium provides layered security that ranges from IP/port filtering to protocol-
 
 Example L7 policy use case: allow only HTTP GET /products from frontend to backend; any POST or non-GET requests are dropped by the L7-aware policy.
 
-<Callout icon="lightbulb">
-  CiliumNetworkPolicy enables protocol-aware L7 filtering (HTTP, Kafka, gRPC, etc.), allowing precise enforcement based on application semantics rather than just IPs and ports.
-</Callout>
+> **lightbulb** CiliumNetworkPolicy enables protocol-aware L7 filtering (HTTP, Kafka, gRPC, etc.), allowing precise enforcement based on application semantics rather than just IPs and ports.
 
 Note: runtime security (for example, Tetragon) provides syscall and process-level visibility but is outside the scope of this lesson.
 
@@ -153,9 +151,7 @@ eBPF enables many of Cilium’s features:
 * Enforcement of NetworkPolicy and CiliumNetworkPolicy with protocol-aware inspection.
 * Real-time flow visibility, metrics, tracing, and logging.
 
-<Callout icon="lightbulb">
-  Because eBPF runs inside the kernel, Cilium delivers low-latency, scalable packet processing and deep telemetry without requiring user-space proxies for many datapath operations.
-</Callout>
+> **lightbulb** Because eBPF runs inside the kernel, Cilium delivers low-latency, scalable packet processing and deep telemetry without requiring user-space proxies for many datapath operations.
 
 ## Summary
 
@@ -182,6 +178,4 @@ By combining eBPF-driven performance with identity-based security and Hubble obs
 * WireGuard: [https://www.wireguard.com](https://www.wireguard.com)
 * IPsec (Wikipedia): [https://en.wikipedia.org/wiki/IPsec](https://en.wikipedia.org/wiki/IPsec)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/9c9fa5ec-2721-4654-9383-5cb9b264e8b6/lesson/259bc127-2355-4830-b8a8-ae032cd0ca1c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/9c9fa5ec-2721-4654-9383-5cb9b264e8b6/lesson/259bc127-2355-4830-b8a8-ae032cd0ca1c)

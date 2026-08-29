@@ -20,9 +20,7 @@ By default, pods can communicate with any other pod in the cluster via cluster I
 
 In short: namespaces are not security boundaries. Kubernetes does not protect teams from each other by default—security, stability, and fairness require explicit configuration.
 
-<Callout icon="lightbulb">
-  Start with these minimum guardrails for a multi-team cluster: RBAC (least privilege), ResourceQuotas, and NetworkPolicies. These three reduce the most common cross-tenant risks.
-</Callout>
+> **lightbulb** Start with these minimum guardrails for a multi-team cluster: RBAC (least privilege), ResourceQuotas, and NetworkPolicies. These three reduce the most common cross-tenant risks.
 
 ## Why Kubernetes is not multi-tenant out of the box
 
@@ -106,9 +104,7 @@ Principle: start with the simplest model that satisfies your security and compli
 
 Use the guidance in this lesson to choose a tenancy model, implement the minimum guardrails (RBAC, ResourceQuota, NetworkPolicies), and iterate from there.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/473c5c5a-97c8-4094-8c6f-1c22e1dbfd25" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/473c5c5a-97c8-4094-8c6f-1c22e1dbfd25)
 
 
 # Persistent Storage Concepts Volumes Claims and Provisioners
@@ -129,9 +125,7 @@ Start with a real problem.
 
 A startup deployed PostgreSQL in Kubernetes without persistent volumes. During a routine cluster upgrade the node was drained, the Postgres pod restarted on a different node, and the container filesystem was empty. Six hours of customer transactions were lost.
 
-<Callout icon="warning">
-  This is not a hypothetical risk—running stateful services on ephemeral container storage can and will lead to data loss during node maintenance, evictions, autoscaling, and failures.
-</Callout>
+> **warning** This is not a hypothetical risk—running stateful services on ephemeral container storage can and will lead to data loss during node maintenance, evictions, autoscaling, and failures.
 
 <Frame>
   <img alt="The image illustrates data loss in a Kubernetes cluster when Postgres runs on ephemeral storage, highlighting the transition from an &#x22;Original Node&#x22; to an &#x22;Upgraded Node&#x22; which results in a loss of six hours of data. It emphasizes the importance of configuring persistent volumes." />
@@ -231,9 +225,7 @@ Common reasons for `Pending`:
 * StorageClass uses `volumeBindingMode: WaitForFirstConsumer` and no pod is scheduled that references the PVC yet.
 * Requested access mode is not supported by available PVs or provisioner.
 
-<Callout icon="lightbulb">
-  If a PVC stays `Pending`, check the StorageClass, backend capacity, and `volumeBindingMode`. For multi-AZ clusters, prefer `WaitForFirstConsumer` to ensure volumes are provisioned in the consuming Pod's zone.
-</Callout>
+> **lightbulb** If a PVC stays `Pending`, check the StorageClass, backend capacity, and `volumeBindingMode`. For multi-AZ clusters, prefer `WaitForFirstConsumer` to ensure volumes are provisioned in the consuming Pod's zone.
 
 ## StorageClass details
 
@@ -312,6 +304,4 @@ Name StorageClasses by use case (e.g., `fast-ssd`, `shared-nfs`, `bulk-hdd`) rat
 * AWS EBS CSI Driver: [https://github.com/kubernetes-sigs/aws-ebs-csi-driver](https://github.com/kubernetes-sigs/aws-ebs-csi-driver)
 * NFS and RWX solutions: see cloud vendor docs for EFS (AWS), Azure Files, and GCP Filestore.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/d2d5c77a-9d9f-4a6e-9eb5-b6023f7842c4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/989346de-0207-4837-af11-bf456d188972/lesson/d2d5c77a-9d9f-4a6e-9eb5-b6023f7842c4)

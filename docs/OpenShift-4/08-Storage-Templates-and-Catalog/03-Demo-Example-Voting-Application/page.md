@@ -6,9 +6,7 @@ This article provides a guide for deploying a multi-tier voting application in a
 
 Welcome to this comprehensive guide on deploying a multi-tier voting application in an OpenShift cluster. In this lesson, you will learn how to deploy and configure various components—including Redis, a Python-based voting app, a Node.js result app, and a worker application—using OpenShift's robust platform. The application code is hosted in a GitHub repository forked from the main example-voting-app, with minor modifications to include basic authentication between services.
 
-<Frame>
-  ![The image shows a GitHub repository page for "example-voting-app" by "dockersamples," displaying files and folders along with commit history and repository details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882777/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/github-repo-example-voting-app.jpg)
-</Frame>
+![The image shows a GitHub repository page for "example-voting-app" by "dockersamples," displaying files and folders along with commit history and repository details.](https://kodekloud.com/kk-media/image/upload/v1752882777/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/github-repo-example-voting-app.jpg)
 
 ***
 
@@ -18,9 +16,7 @@ Start by creating a new project in your OpenShift cluster. Name the project `vot
 
 In the initial design, the application is divided into multiple microservices:
 
-<Frame>
-  ![The image shows the OpenShift Origin web console with a catalog of software options like .NET, Apache HTTP Server, and Jenkins. A "Create Project" dialog is open on the right, with fields for project name, display name, and description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882778/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/openshift-origin-web-console-catalog.jpg)
-</Frame>
+![The image shows the OpenShift Origin web console with a catalog of software options like .NET, Apache HTTP Server, and Jenkins. A "Create Project" dialog is open on the right, with fields for project name, display name, and description.](https://kodekloud.com/kk-media/image/upload/v1752882778/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/openshift-origin-web-console-catalog.jpg)
 
 ***
 
@@ -28,15 +24,11 @@ In the initial design, the application is divided into multiple microservices:
 
 Since the front-end voting application depends on Redis, deploy the Redis service first.
 
-<Frame>
-  ![The image shows a design layout with five components labeled as "voting-app," "result-app," "redis," "db," and "worker," each represented by icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882779/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/design-layout-voting-result-redis-db-worker.jpg)
-</Frame>
+![The image shows a design layout with five components labeled as "voting-app," "result-app," "redis," "db," and "worker," each represented by icons.](https://kodekloud.com/kk-media/image/upload/v1752882779/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/design-layout-voting-result-redis-db-worker.jpg)
 
 If you don’t see Redis in the service catalog, you can add it manually using one of the available OpenShift templates. Search GitHub for the OpenShift and Redis template.
 
-<Frame>
-  ![The image shows a GitHub repository page for OpenShift database examples, listing various JSON template files for different databases like MariaDB, MongoDB, MySQL, PostgreSQL, and Redis.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882780/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/openshift-database-examples-json.jpg)
-</Frame>
+![The image shows a GitHub repository page for OpenShift database examples, listing various JSON template files for different databases like MariaDB, MongoDB, MySQL, PostgreSQL, and Redis.](https://kodekloud.com/kk-media/image/upload/v1752882780/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/openshift-database-examples-json.jpg)
 
 Locate the Redis template under the Examples section in the OpenShift Origin Repository. Follow these steps:
 
@@ -68,9 +60,7 @@ Below is a snippet from the Redis template that defines configuration parameters
 
 After refreshing your browser, the Redis service will be available for on-demand deployment. Now, select the catalog item to deploy a new Redis service:
 
-<Frame>
-  ![The image shows the OpenShift Web Console with a configuration window for setting up a Redis (Ephemeral) application, including fields for memory limit, namespace, database service name, and Redis image version.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882782/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/openshift-redis-configuration-console.jpg)
-</Frame>
+![The image shows the OpenShift Web Console with a configuration window for setting up a Redis (Ephemeral) application, including fields for memory limit, namespace, database service name, and Redis image version.](https://kodekloud.com/kk-media/image/upload/v1752882782/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/openshift-redis-configuration-console.jpg)
 
 Use the default values, specify a password for Redis (this same password will be used by the web application), and click Create. Note down the connection information. By default, the service is available under the name `redis`.
 
@@ -79,9 +69,7 @@ Password: redis_password
 Connection URL: redis://redis:6379/
 ```
 
-<Callout icon="lightbulb">
-  Ensure that the Redis password set here matches the one used by your front-end application to avoid connectivity issues.
-</Callout>
+> **lightbulb** Ensure that the Redis password set here matches the one used by your front-end application to avoid connectivity issues.
 
 ***
 
@@ -92,17 +80,11 @@ The front-end web application, which enables users to cast votes, is housed in t
 1. Add a new Python application to the project.
 2. Since the application does not reside at the repository root, click on Advanced Options and specify `/vote` as the context directory.
 
-<Frame>
-  ![The image shows a GitHub repository page for "example-voting-app" with a list of files and directories, including "Dockerfile" and "app.py". The branch is 10 commits ahead and 29 commits behind the master branch of the original repository.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882783/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/github-repo-example-voting-app-2.jpg)
-</Frame>
+![The image shows a GitHub repository page for "example-voting-app" with a list of files and directories, including "Dockerfile" and "app.py". The branch is 10 commits ahead and 29 commits behind the master branch of the original repository.](https://kodekloud.com/kk-media/image/upload/v1752882783/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/github-repo-example-voting-app-2.jpg)
 
-<Frame>
-  ![The image shows the OpenShift Web Console with a dialog box for creating a Python application, prompting for version, application name, and Git repository details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882785/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/openshift-web-console-python-app-dialog.jpg)
-</Frame>
+![The image shows the OpenShift Web Console with a dialog box for creating a Python application, prompting for version, application name, and Git repository details.](https://kodekloud.com/kk-media/image/upload/v1752882785/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/openshift-web-console-python-app-dialog.jpg)
 
-<Frame>
-  ![The image shows a setup screen for building a Python 3.6 application on CentOS 7, with fields for the application name, Git repository URL, and other configuration options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882786/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/python-36-application-setup-centos7.jpg)
-</Frame>
+![The image shows a setup screen for building a Python 3.6 application on CentOS 7, with fields for the application name, Git repository URL, and other configuration options.](https://kodekloud.com/kk-media/image/upload/v1752882786/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/python-36-application-setup-centos7.jpg)
 
 Leave all other configurations as default and create the application. OpenShift will automatically generate the build and deployment configuration. Monitor the progress on the Overview page:
 
@@ -150,9 +132,7 @@ def hello():
 
 Then, add a new environment variable named `REDIS_PASSWORD` for the Voting application and set it to the password used during Redis deployment.
 
-<Frame>
-  ![The image shows the OpenShift web console displaying the environment configuration for a container named "vote" in an example voting application. It includes fields for setting environment variables, such as "REDIS\_PASSWORD."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882787/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/openshift-vote-app-env-config.jpg)
-</Frame>
+![The image shows the OpenShift web console displaying the environment configuration for a container named "vote" in an example voting application. It includes fields for setting environment variables, such as "REDIS\_PASSWORD."](https://kodekloud.com/kk-media/image/upload/v1752882787/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/openshift-vote-app-env-config.jpg)
 
 Once you update the environment variable, casting a vote will be successful. The first part of the application stack is now functioning as expected.
 
@@ -165,19 +145,13 @@ The result application, which displays voting outcomes, relies on PostgreSQL for
 1. Deploy the PostgreSQL service (available by default in the catalog). Use `db` as the database service name.
 2. Configure the username and password. While secrets offer greater security, this guide uses a simpler approach.
 
-<Frame>
-  ![The image shows a configuration screen for setting up a PostgreSQL database in OpenShift Origin, with fields for memory limit, namespace, and database service name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882788/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/postgresql-openshift-configuration-screen.jpg)
-</Frame>
+![The image shows a configuration screen for setting up a PostgreSQL database in OpenShift Origin, with fields for memory limit, namespace, and database service name.](https://kodekloud.com/kk-media/image/upload/v1752882788/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/postgresql-openshift-configuration-screen.jpg)
 
-<Frame>
-  ![The image shows a configuration screen for setting up a PostgreSQL database, including fields for database name, volume capacity, and version selection. It also includes options for labeling the created resource.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882790/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/postgresql-database-setup-screen.jpg)
-</Frame>
+![The image shows a configuration screen for setting up a PostgreSQL database, including fields for database name, volume capacity, and version selection. It also includes options for labeling the created resource.](https://kodekloud.com/kk-media/image/upload/v1752882790/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/postgresql-database-setup-screen.jpg)
 
 After ensuring PostgreSQL is up and running, deploy the result application which is built using Node.js.
 
-<Frame>
-  ![The image shows a design layout with five components: voting-app, result-app, redis, db, and worker, each represented by icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882790/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/design-layout-voting-result-redis-db-worker-2.jpg)
-</Frame>
+![The image shows a design layout with five components: voting-app, result-app, redis, db, and worker, each represented by icons.](https://kodekloud.com/kk-media/image/upload/v1752882790/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/design-layout-voting-result-redis-db-worker-2.jpg)
 
 Like the Python application, create a Node.js application via Advanced Options:
 
@@ -225,9 +199,7 @@ The worker application processes votes and uses a Docker build strategy, unlike 
    * Remove the "from" section.
 4. Save the changes and start the build.
 
-<Frame>
-  ![The image shows the OpenShift web console displaying the configuration details for a build named "worker" in an example voting application project. It includes information about the build strategy, source repository, and triggers, with options to edit or delete the configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882793/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/openshift-web-console-worker-build-config.jpg)
-</Frame>
+![The image shows the OpenShift web console displaying the configuration details for a build named "worker" in an example voting application project. It includes information about the build strategy, source repository, and triggers, with options to edit or delete the configuration.](https://kodekloud.com/kk-media/image/upload/v1752882793/notes-assets/images/OpenShift-4-Demo-Example-Voting-Application/openshift-web-console-worker-build-config.jpg)
 
 Here is an example of the updated build configuration:
 
@@ -302,6 +274,4 @@ Happy deploying, and see you in the next lesson!
 
 For further details on OpenShift deployments and troubleshooting tips, be sure to check out [OpenShift Documentation](https://docs.openshift.com).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/eb77b005-08f8-4370-a4b3-47043aa8fd3e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/eb77b005-08f8-4370-a4b3-47043aa8fd3e)

@@ -18,9 +18,7 @@ order1  = 16106
 order2  = 16106
 ```
 
-<Callout icon="lightbulb">
-  You can learn more about OpenTofu and output variables in the official [Terraform Output Variables documentation](https://developer.hashicorp.com/terraform/language/values/outputs).
-</Callout>
+> **lightbulb** You can learn more about OpenTofu and output variables in the official [Terraform Output Variables documentation](https://developer.hashicorp.com/terraform/language/values/outputs).
 
 ## 3. Querying Individual Outputs
 
@@ -61,13 +59,9 @@ output "pet-name" {
 }
 ```
 
-<Callout icon="lightbulb">
-  If the image below doesn’t render, use the code snippet above to verify your setup.
-</Callout>
+> **lightbulb** If the image below doesn’t render, use the code snippet above to verify your setup.
 
-<Frame>
-  ![The image shows a coding environment with a task about inspecting configuration files in a directory. It includes a code editor displaying Terraform code and a terminal window, along with a multiple-choice question about the value of a variable.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882824/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Output-Variables/coding-environment-terraform-inspection-task.jpg)
-</Frame>
+![The image shows a coding environment with a task about inspecting configuration files in a directory. It includes a code editor displaying Terraform code and a terminal window, along with a multiple-choice question about the value of a variable.](https://kodekloud.com/kk-media/image/upload/v1752882824/notes-assets/images/OpenTofu-A-Beginners-Guide-to-a-Terraform-Fork-Including-Migration-From-Terraform-Demo-Output-Variables/coding-environment-terraform-inspection-task.jpg)
 
 Confirm the output:
 
@@ -113,11 +107,9 @@ tofu output welcome_message
 
 Congratulations! You’ve successfully configured and managed OpenTofu output variables.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/a2d9bdb7-87a2-4673-a0d4-7518747333b7" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/a2d9bdb7-87a2-4673-a0d4-7518747333b7)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/40fc97ef-10f3-440f-b969-23f948ee508e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/40fc97ef-10f3-440f-b969-23f948ee508e)
 
 
 # Demo Resource Attributes
@@ -160,9 +152,7 @@ resource "time_static" "time_update" {
 
 The `time_static` resource generates a fixed timestamp on apply. You don’t need to pass any arguments—OpenTofu handles everything.
 
-<Callout icon="lightbulb">
-  The `time_static` resource produces a stable timestamp similar to `random_pet`. You can use its exported attributes elsewhere in your configuration.
-</Callout>
+> **lightbulb** The `time_static` resource produces a stable timestamp similar to `random_pet`. You can use its exported attributes elsewhere in your configuration.
 
 ***
 

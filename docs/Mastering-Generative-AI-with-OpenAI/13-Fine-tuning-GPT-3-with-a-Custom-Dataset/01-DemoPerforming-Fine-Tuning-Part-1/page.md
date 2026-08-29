@@ -12,19 +12,13 @@ In this lesson, you’ll learn how to fine-tune an OpenAI model using the CLI. W
 
 Although OpenAI is deprecating older fine-tuning models by January 4th and announcing GPT-3.5/GPT-4 support soon, the core workflow remains the same.
 
-<Callout icon="triangle-alert">
-  Most existing fine-tuning models (e.g., older Curie, Davinci) will retire by **January 4th**. It’s recommended to wait for GPT-3.5/GPT-4 fine-tuning, but you can continue experimenting with Ada, Babbage, Curie, and Davinci until then.
-</Callout>
+> **triangle-alert** Most existing fine-tuning models (e.g., older Curie, Davinci) will retire by **January 4th**. It’s recommended to wait for GPT-3.5/GPT-4 fine-tuning, but you can continue experimenting with Ada, Babbage, Curie, and Davinci until then.
 
-<Frame>
-  ![The image shows a webpage from OpenAI's documentation about fine-tuning models, detailing the deprecation of certain models and the benefits of fine-tuning. It includes a sidebar with navigation links and a highlighted announcement about model updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881503/notes-assets/images/Mastering-Generative-AI-with-OpenAI-DemoPerforming-Fine-Tuning-Part-1/openai-fine-tuning-models-documentation.jpg)
-</Frame>
+![The image shows a webpage from OpenAI's documentation about fine-tuning models, detailing the deprecation of certain models and the benefits of fine-tuning. It includes a sidebar with navigation links and a highlighted announcement about model updates.](https://kodekloud.com/kk-media/image/upload/v1752881503/notes-assets/images/Mastering-Generative-AI-with-OpenAI-DemoPerforming-Fine-Tuning-Part-1/openai-fine-tuning-models-documentation.jpg)
 
 Pricing for fine-tuning varies by model. Ada remains the most cost-effective, while Davinci is the most expensive. Regardless of your budget, the process is identical across models.
 
-<Frame>
-  ![The image shows a webpage from OpenAI detailing pricing for fine-tuning and embedding models, including costs for different models like Ada, Babbage, Curie, and Davinci.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881504/notes-assets/images/Mastering-Generative-AI-with-OpenAI-DemoPerforming-Fine-Tuning-Part-1/openai-pricing-fine-tuning-embedding-models.jpg)
-</Frame>
+![The image shows a webpage from OpenAI detailing pricing for fine-tuning and embedding models, including costs for different models like Ada, Babbage, Curie, and Davinci.](https://kodekloud.com/kk-media/image/upload/v1752881504/notes-assets/images/Mastering-Generative-AI-with-OpenAI-DemoPerforming-Fine-Tuning-Part-1/openai-pricing-fine-tuning-embedding-models.jpg)
 
 ## Use Case: State of the Union Q\&A Chatbot
 
@@ -126,9 +120,7 @@ Example output:
 [2023-08-13 12:25:30] Fine-tune succeeded
 ```
 
-<Callout icon="lightbulb">
-  After completion, note the recommended `openai api completions.create` command in the CLI output to invoke your fine-tuned model.
-</Callout>
+> **lightbulb** After completion, note the recommended `openai api completions.create` command in the CLI output to invoke your fine-tuned model.
 
 ## 5. Invoke Your Fine-Tuned Model
 
@@ -147,6 +139,4 @@ The model will respond based on your custom SOTU Q\&A dataset. Adjust the model 
 * [OpenAI Fine-Tuning Guide](https://platform.openai.com/docs/guides/fine-tuning)
 * [OpenAI CLI Reference](https://platform.openai.com/docs/cli-reference)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/bdd763d1-210d-41de-a60c-607b722e7afe/lesson/dd30f926-3a31-495f-81fd-9f85f5b19c19" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/bdd763d1-210d-41de-a60c-607b722e7afe/lesson/dd30f926-3a31-495f-81fd-9f85f5b19c19)

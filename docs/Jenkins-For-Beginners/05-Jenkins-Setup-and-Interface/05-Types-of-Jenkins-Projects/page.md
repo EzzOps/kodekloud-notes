@@ -17,17 +17,11 @@ Freestyle Projects offer the simplest and most flexible option for setting up a 
 
 For example, a typical Freestyle Project workflow might include steps such as checking out code, running tests, building the application, pushing artifacts, and finally deploying the build.
 
-<Frame>
-  ![The image shows a setup for creating a "Freestyle Project" in a software development environment, with a workflow diagram illustrating steps like cloning code, running tests, building, pushing, and deploying across three projects.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879560/notes-assets/images/Jenkins-For-Beginners-Types-of-Jenkins-Projects/freestyle-project-setup-workflow-diagram.jpg)
-</Frame>
+![The image shows a setup for creating a "Freestyle Project" in a software development environment, with a workflow diagram illustrating steps like cloning code, running tests, building, pushing, and deploying across three projects.](https://kodekloud.com/kk-media/image/upload/v1752879560/notes-assets/images/Jenkins-For-Beginners-Types-of-Jenkins-Projects/freestyle-project-setup-workflow-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Freestyle Projects have five main drawbacks: limited workflow capability, non-code-based configuration, challenges in managing complex pipelines, restricted functionality, and the inability to resume after failures.
-</Callout>
+> **lightbulb** Freestyle Projects have five main drawbacks: limited workflow capability, non-code-based configuration, challenges in managing complex pipelines, restricted functionality, and the inability to resume after failures.
 
-<Frame>
-  ![The image lists five limitations of freestyle projects: limited workflow, non-code-based configuration, complexity challenges, limited functionality, and inability to resume after failure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879560/notes-assets/images/Jenkins-For-Beginners-Types-of-Jenkins-Projects/freestyle-project-limitations-list.jpg)
-</Frame>
+![The image lists five limitations of freestyle projects: limited workflow, non-code-based configuration, complexity challenges, limited functionality, and inability to resume after failure.](https://kodekloud.com/kk-media/image/upload/v1752879560/notes-assets/images/Jenkins-For-Beginners-Types-of-Jenkins-Projects/freestyle-project-limitations-list.jpg)
 
 ## Pipeline Projects
 
@@ -62,9 +56,7 @@ Jenkins offers a range of projects to match your build and deployment needs:
 | Multi-Configuration  | Running builds across multiple configurations          | Testing various environments and parameter combinations        |
 | Organization Folders | Hierarchical organization of projects                  | Grouping projects for clearer management in large environments |
 
-<Frame>
-  ![The image shows different types of Jenkins projects, including Freestyle Project, Pipeline Project, Multibranch Pipeline, Maven Project, Multi-configuration Project, and Organization Folders, each represented by a colorful icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879562/notes-assets/images/Jenkins-For-Beginners-Types-of-Jenkins-Projects/jenkins-project-types-icons.jpg)
-</Frame>
+![The image shows different types of Jenkins projects, including Freestyle Project, Pipeline Project, Multibranch Pipeline, Maven Project, Multi-configuration Project, and Organization Folders, each represented by a colorful icon.](https://kodekloud.com/kk-media/image/upload/v1752879562/notes-assets/images/Jenkins-For-Beginners-Types-of-Jenkins-Projects/jenkins-project-types-icons.jpg)
 
 In conclusion, while Freestyle Projects offer a traditional approach for simple tasks, modern CI/CD demands often call for Pipeline, Multibranch Pipeline, Maven, and Multi-Configuration Projects. Selecting the appropriate project type depends on the complexity and specific requirements of your build process.
 
@@ -73,6 +65,4 @@ For further reading, check out the following resources:
 * [Jenkins Documentation](https://www.jenkins.io/doc/)
 * [Continuous Integration Best Practices](https://www.atlassian.com/continuous-delivery/continuous-integration)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/3c1739a1-ee72-4285-a832-4ce3c95b784d/lesson/50f73f63-123c-4e57-8b2b-370f27d6c517" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/3c1739a1-ee72-4285-a832-4ce3c95b784d/lesson/50f73f63-123c-4e57-8b2b-370f27d6c517)

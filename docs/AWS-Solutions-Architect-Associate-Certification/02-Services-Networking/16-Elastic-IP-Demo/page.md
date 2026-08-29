@@ -22,7 +22,7 @@ Before configuring an Elastic IP, it's important to understand how dynamic publi
 4. Start the instance again.
 5. Observe that the new public IP address is different and may begin with a "3" rather than a "5".
 
-![The image shows an AWS EC2 management console with a list of instances, where one instance named "myserver" is running. Details about the instance, such as its ID, state, type, and IP addresses, are displayed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865545/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-IP-Demo/aws-ec2-management-console-instances.jpg)
+![The image shows an AWS EC2 management console with a list of instances, where one instance named "myserver" is running. Details about the instance, such as its ID, state, type, and IP addresses, are displayed.](https://kodekloud.com/kk-media/image/upload/v1752865545/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-IP-Demo/aws-ec2-management-console-instances.jpg)
 
 This behavior indicates that the public IP is dynamic. Every time the instance is restarted, it receives a new public IP, which can disrupt access if the IP is hardcoded in client configurations.
 
@@ -39,7 +39,7 @@ To reserve an Elastic IP, complete the following steps:
 3. Select "Allocate Elastic IP address."\
    AWS will automatically choose an IP address from the Amazon pool of IPv4 addresses and assign it to your account.
 
-![The image shows an AWS console page for allocating an Elastic IP address, with options for selecting a network border group and public IPv4 address pool. There are also sections for global static IP addresses and optional tags.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865546/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-IP-Demo/aws-console-elastic-ip-allocation.jpg)
+![The image shows an AWS console page for allocating an Elastic IP address, with options for selecting a network border group and public IPv4 address pool. There are also sections for global static IP addresses and optional tags.](https://kodekloud.com/kk-media/image/upload/v1752865546/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-IP-Demo/aws-console-elastic-ip-allocation.jpg)
 
 After the allocation, assume the assigned Elastic IP is 35.173.92.86. This static IP is now reserved exclusively for your account.
 
@@ -52,11 +52,11 @@ Once you have allocated an Elastic IP, associate it with your instance by follow
 3. Specify the instance (or network interface) that the IP should be associated with.\
    If the instance has multiple private IP addresses, select the appropriate one (in this demo, there is only one).
 
-![The image shows an AWS console interface for associating an Elastic IP address with an instance. It includes options to choose the instance and private IP address, with a button to associate the IP.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865547/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-IP-Demo/aws-console-elastic-ip-association.jpg)
+![The image shows an AWS console interface for associating an Elastic IP address with an instance. It includes options to choose the instance and private IP address, with a button to associate the IP.](https://kodekloud.com/kk-media/image/upload/v1752865547/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-IP-Demo/aws-console-elastic-ip-association.jpg)
 
 On successful association, the instance now displays the Elastic IP (35.173.92.86) as its public IP address.
 
-![The image shows an AWS EC2 Management Console with a list of instances, highlighting one named "myserver" that is currently running. It provides details such as the instance ID, public IPv4 address, and instance type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865549/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-IP-Demo/aws-ec2-management-console-myserver.jpg)
+![The image shows an AWS EC2 Management Console with a list of instances, highlighting one named "myserver" that is currently running. It provides details such as the instance ID, public IPv4 address, and instance type.](https://kodekloud.com/kk-media/image/upload/v1752865549/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Elastic-IP-Demo/aws-ec2-management-console-myserver.jpg)
 
 ## Verifying Connectivity
 

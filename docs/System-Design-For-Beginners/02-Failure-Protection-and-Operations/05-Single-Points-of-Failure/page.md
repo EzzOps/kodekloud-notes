@@ -25,9 +25,7 @@ Component-by-component analysis (short form)
 * Database writes: Typically go to the primary only. If the primary fails, writes stop unless a replica is promoted. Running replicas alone is not sufficient — you must have an automated and safe promotion/failover strategy (or a consensus cluster) to avoid split-brain and data loss.
 * Load balancer: Every incoming request passes through the load balancer. If you run a single LB instance, it becomes a SPOF even if app servers are redundant. Many cloud providers offer managed, redundant load balancers; the SPOF risk mainly applies to single self-hosted instances.
 
-<Callout icon="warning">
-  A single load balancer instance can make your whole fleet unreachable. Ensure LB redundancy (active/active or active/passive with automated failover) or use a managed, multi-AZ provider load balancer.
-</Callout>
+> **warning** A single load balancer instance can make your whole fleet unreachable. Ensure LB redundancy (active/active or active/passive with automated failover) or use a managed, multi-AZ provider load balancer.
 
 The general cure for any SPOF is redundancy: run at least two independent instances of the critical component and ensure one can take over if the other fails. Automatic takeover is called failover. The goal is that the system tolerates any single failure with minimal impact.
 
@@ -86,9 +84,7 @@ Best practices for backups and recovery
 * For distributed systems, use coordinated backups or transactional snapshots to avoid inconsistent restores.
 * Maintain off-site and immutable backups to protect against accidental deletions and ransomware.
 
-<Callout icon="lightbulb">
-  Redundancy answers: “What happens when a machine dies?” Backups answer: “What happens when we make a mistake?” Both are required for a reliable system.
-</Callout>
+> **lightbulb** Redundancy answers: “What happens when a machine dies?” Backups answer: “What happens when we make a mistake?” Both are required for a reliable system.
 
 Quick checklist to eliminate common SPOFs
 
@@ -107,6 +103,4 @@ Further reading and references
 
 Reliability is two questions, not one: first, what happens when a machine fails? Answer with redundancy and failover. Second, what happens when humans or software make mistakes? Answer with a backup and recovery strategy.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/c7a8e3b7-9370-4462-a298-4a441dd68f8a/lesson/9b2016ea-1806-4f82-971e-1723eb275818" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/c7a8e3b7-9370-4462-a298-4a441dd68f8a/lesson/9b2016ea-1806-4f82-971e-1723eb275818)

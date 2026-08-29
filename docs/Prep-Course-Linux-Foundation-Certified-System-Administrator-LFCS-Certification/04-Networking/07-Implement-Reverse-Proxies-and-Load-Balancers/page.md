@@ -139,11 +139,9 @@ Match User anoncvs
     # ForceCommand cvs server
 ```
 
-<Callout icon="lightbulb">
-  After modifying the configuration file, reload the SSH daemon for changes to take effect:
+> **lightbulb** After modifying the configuration file, reload the SSH daemon for changes to take effect:
 
   sudo systemctl reload ssh.service
-</Callout>
 
 Also, be aware that additional configuration files in the `/etc/ssh/sshd_config.d/` directory can override settings from the main file. For example, a file like `/etc/ssh/sshd_config.d/50-cloud-init.conf` may contain `PasswordAuthentication yes`, which re-enables password authentication even if disabled in the main configuration file. List and inspect these files with:
 
@@ -305,13 +303,9 @@ If necessary, you can also delete the entire `known_hosts` file to clear all sto
 
 The following diagrams provide a visual representation of SSH configuration and authentication settings:
 
-<Frame>
-  ![The image shows a section of a manual page for SSHD configuration, detailing authentication methods and settings like "password," "publickey," and "AuthorizedKeysCommand."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881308/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Configure-SSH-Servers-and-Clients/sshd-configuration-authentication-methods.jpg)
-</Frame>
+![The image shows a section of a manual page for SSHD configuration, detailing authentication methods and settings like "password," "publickey," and "AuthorizedKeysCommand."](https://kodekloud.com/kk-media/image/upload/v1752881308/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Configure-SSH-Servers-and-Clients/sshd-configuration-authentication-methods.jpg)
 
-<Frame>
-  ![The image shows a section of a manual page for SSHD configuration, detailing settings for password authentication, empty passwords, and TCP port forwarding permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881309/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Configure-SSH-Servers-and-Clients/sshd-configuration-manual-settings.jpg)
-</Frame>
+![The image shows a section of a manual page for SSHD configuration, detailing settings for password authentication, empty passwords, and TCP port forwarding permissions.](https://kodekloud.com/kk-media/image/upload/v1752881309/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Configure-SSH-Servers-and-Clients/sshd-configuration-manual-settings.jpg)
 
 ***
 
@@ -319,11 +313,9 @@ This concludes the article on configuring SSH servers and clients. By understand
 
 For more comprehensive guides on SSH and Linux server management, consider visiting [Kubernetes Documentation](https://kubernetes.io/docs/) or browsing [Docker Hub](https://hub.docker.com/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/9031622f-a6e7-45a5-bd5a-3bfe5486774c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/9031622f-a6e7-45a5-bd5a-3bfe5486774c)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/aa45ff2b-80fc-4f74-8048-a8076be7c85d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/2ba92913-296b-481d-af2d-6710bf3f7cdd/lesson/aa45ff2b-80fc-4f74-8048-a8076be7c85d)
 
 
 # Implement Reverse Proxies and Load Balancers
@@ -343,21 +335,15 @@ A reverse proxy acts as an intermediary between client requests and the backend 
 3. The web server processes the request and sends the response back to the reverse proxy.
 4. Finally, the reverse proxy relays the response to the user.
 
-<Frame>
-  ![The image illustrates the concept of a reverse proxy, showing the interaction between a user (web browser), a reverse proxy, and a web server. The user requests a web page, which is relayed by the reverse proxy to the web server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881309/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Implement-Reverse-Proxies-and-Load-Balancers/reverse-proxy-user-web-server.jpg)
-</Frame>
+![The image illustrates the concept of a reverse proxy, showing the interaction between a user (web browser), a reverse proxy, and a web server. The user requests a web page, which is relayed by the reverse proxy to the web server.](https://kodekloud.com/kk-media/image/upload/v1752881309/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Implement-Reverse-Proxies-and-Load-Balancers/reverse-proxy-user-web-server.jpg)
 
 This setup provides several advantages. For instance, if you deploy a new web server with enhanced resources like increased RAM and CPU power, you can quickly transition traffic by simply updating your reverse proxy configuration. This method avoids the delays associated with DNS propagation in a direct update scenario.
 
-<Frame>
-  ![The image illustrates the concept of a reverse proxy, showing the interaction between a user (web browser), a reverse proxy, and a web server, with arrows indicating the flow of web page requests and responses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881310/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Implement-Reverse-Proxies-and-Load-Balancers/reverse-proxy-user-interaction-diagram.jpg)
-</Frame>
+![The image illustrates the concept of a reverse proxy, showing the interaction between a user (web browser), a reverse proxy, and a web server, with arrows indicating the flow of web page requests and responses.](https://kodekloud.com/kk-media/image/upload/v1752881310/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Implement-Reverse-Proxies-and-Load-Balancers/reverse-proxy-user-interaction-diagram.jpg)
 
 Another visual example:
 
-<Frame>
-  ![The image is a diagram explaining how a reverse proxy works, showing the interaction between a user, a reverse proxy, and two web servers (old and new).](../../../../images/kodekloud.com/kk-media/image/upload/v1752881312/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Implement-Reverse-Proxies-and-Load-Balancers/reverse-proxy-diagram-user-servers.jpg)
-</Frame>
+![The image is a diagram explaining how a reverse proxy works, showing the interaction between a user, a reverse proxy, and two web servers (old and new).](https://kodekloud.com/kk-media/image/upload/v1752881312/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Implement-Reverse-Proxies-and-Load-Balancers/reverse-proxy-diagram-user-servers.jpg)
 
 Reverse proxies not only offer rapid traffic redirection; they can also filter web traffic, cache pages for faster delivery, and perform additional optimizations. These capabilities lay the groundwork for efficient load balancing.
 
@@ -367,13 +353,9 @@ Load balancing distributes incoming web requests across multiple servers, ensuri
 
 Multiple images in this lesson further emphasize these key concepts:
 
-<Frame>
-  ![The image explains what a reverse proxy is, highlighting its advantages such as filtering web traffic and caching pages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881313/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Implement-Reverse-Proxies-and-Load-Balancers/reverse-proxy-advantages-filtering-caching.jpg)
-</Frame>
+![The image explains what a reverse proxy is, highlighting its advantages such as filtering web traffic and caching pages.](https://kodekloud.com/kk-media/image/upload/v1752881313/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Implement-Reverse-Proxies-and-Load-Balancers/reverse-proxy-advantages-filtering-caching.jpg)
 
-<Frame>
-  ![The image illustrates how a load balancer distributes web page requests from a user to multiple web servers, ensuring efficient handling of traffic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881314/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Implement-Reverse-Proxies-and-Load-Balancers/load-balancer-web-servers-traffic.jpg)
-</Frame>
+![The image illustrates how a load balancer distributes web page requests from a user to multiple web servers, ensuring efficient handling of traffic.](https://kodekloud.com/kk-media/image/upload/v1752881314/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Implement-Reverse-Proxies-and-Load-Balancers/load-balancer-web-servers-traffic.jpg)
 
 When the load balancer smartly assigns inbound requests, it may choose the server with the fewest active connections, thereby maintaining an even workload across all servers.
 
@@ -446,9 +428,7 @@ proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 proxy_set_header X-Forwarded-Proto $scheme;
 ```
 
-<Callout icon="lightbulb">
-  Including these header settings ensures the target server receives crucial connection details such as the client’s original IP address.
-</Callout>
+> **lightbulb** Including these header settings ensures the target server receives crucial connection details such as the client’s original IP address.
 
 ### Step 2: Enable the Configuration
 

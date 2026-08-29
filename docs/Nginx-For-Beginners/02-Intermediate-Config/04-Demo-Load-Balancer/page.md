@@ -107,13 +107,9 @@ http://example.com/pics/pic10.jpg
 
 and the image will load from the new `/pics/` location.
 
-<Callout icon="warning">
-  Permanent redirects (HTTP 301) are cached aggressively by browsers and search engines. Use an incognito window or clear the cache when testing. If you need a temporary redirect while testing, use the `redirect` flag instead of `permanent`.
-</Callout>
+> **warning** Permanent redirects (HTTP 301) are cached aggressively by browsers and search engines. Use an incognito window or clear the cache when testing. If you need a temporary redirect while testing, use the `redirect` flag instead of `permanent`.
 
-<Callout icon="lightbulb">
-  Test rewrite rules on a staging environment before applying them in production. Regular expressions in `rewrite` directives are powerful but easy to misconfigure.
-</Callout>
+> **lightbulb** Test rewrite rules on a staging environment before applying them in production. Regular expressions in `rewrite` directives are powerful but easy to misconfigure.
 
 ## Quick reference — rewrite flags
 
@@ -128,11 +124,9 @@ For more details on `rewrite` and directives, see the official Nginx docs: [ngin
 
 That covers a basic permanent rewrite from `/images` to `/pics`. Adjust the regex and flags (`last`, `break`, `redirect`, `permanent`) to suit your specific routing and caching requirements.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/329f508c-8da5-4a0a-ad7a-f9504ab5e4f7" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/329f508c-8da5-4a0a-ad7a-f9504ab5e4f7)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/7716ca0d-be85-45f9-a67a-11e298853b2b" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/7716ca0d-be85-45f9-a67a-11e298853b2b)
 
 
 # Demo Load Balancer

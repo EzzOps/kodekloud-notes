@@ -30,10 +30,8 @@ Expected output:
 Success! Enabled approle auth method at: approle/
 ```
 
-<Callout icon="lightbulb">
-  AppRole is a machine-friendly auth method designed for non-interactive workflows.\
+> **lightbulb** AppRole is a machine-friendly auth method designed for non-interactive workflows.\
   Learn more: [AppRole Auth Method](https://www.vaultproject.io/docs/auth/approle)
-</Callout>
 
 ***
 
@@ -104,9 +102,7 @@ Create two files in your working directory:
 6b74a5ef-d4f5-0690-67f1-c457c1060ac7
 ```
 
-<Callout icon="triangle-alert">
-  Ensure these files have restrictive permissions (e.g., `chmod 600`) to prevent unauthorized access.
-</Callout>
+> **triangle-alert** Ensure these files have restrictive permissions (e.g., `chmod 600`) to prevent unauthorized access.
 
 ***
 
@@ -136,10 +132,8 @@ vault {
 }
 ```
 
-<Callout icon="lightbulb">
-  * `mount_path` defaults to `"approle"`.
+> **lightbulb** * `mount_path` defaults to `"approle"`.
   * Adjust `address` if your Vault server listens on a different host or port.
-</Callout>
 
 ***
 

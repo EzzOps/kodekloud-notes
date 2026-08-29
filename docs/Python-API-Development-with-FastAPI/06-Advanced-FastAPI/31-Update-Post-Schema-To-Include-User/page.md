@@ -25,9 +25,7 @@ This confirms that the JWT expiration functionality is working as expected.
 
 Transcribed by [Otter.ai](https://otter.ai)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/5b04858f-b9d3-44fe-8dcd-882adbab93b4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/5b04858f-b9d3-44fe-8dcd-882adbab93b4)
 
 
 # Update Post Schema To Include User
@@ -42,9 +40,7 @@ In this article, we review the changes introduced in the previous lesson and out
 
 First, we log in a user, update a variable, and retrieve all posts using our [Postman Essentials](https://learn.kodekloud.com/user/courses/postman-essentials) application. The image below illustrates a login request using the POST method with form data for the username and password. The response includes an access token and token type.
 
-<Frame>
-  ![The image shows the Postman application interface with a request to log in a user using a POST method. It includes form data with a username and password, and the response displays an access token and token type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883342/notes-assets/images/Python-API-Development-with-FastAPI-Update-Post-Schema-To-Include-User/postman-login-request-post-method.jpg)
-</Frame>
+![The image shows the Postman application interface with a request to log in a user using a POST method. It includes form data with a username and password, and the response displays an access token and token type.](https://kodekloud.com/kk-media/image/upload/v1752883342/notes-assets/images/Python-API-Development-with-FastAPI-Update-Post-Schema-To-Include-User/postman-login-request-post-method.jpg)
 
 When retrieving posts, even though our application currently returns one post, the response does not include the new "owner\_id" field. For example, the JSON output appears as follows:
 
@@ -217,9 +213,7 @@ After updating, retrieving a post (for example, with ID 4) returns the following
 
 This confirms that the "owner\_id" is now properly included in the response.
 
-<Callout icon="lightbulb">
-  All endpoints currently reference the updated `schemas.Post` to include owner information. This single change now propagates across various functionalities like retrieving a post, updating a post, and creating a post.
-</Callout>
+> **lightbulb** All endpoints currently reference the updated `schemas.Post` to include owner information. This single change now propagates across various functionalities like retrieving a post, updating a post, and creating a post.
 
 ## Handling Owner ID During Post Creation
 
@@ -235,14 +229,10 @@ DETAIL:  Failing row contains (5, top beaches in florida, something something be
 (Background on this error at: https://sqlalche.me/e/14/gkpj)
 ```
 
-<Callout icon="triangle-alert">
-  This error indicates that while "owner\_id" is mandatory in the database, the current logic does not automatically assign it during post creation. We will address this mechanism in the next article.
-</Callout>
+> **triangle-alert** This error indicates that while "owner\_id" is mandatory in the database, the current logic does not automatically assign it during post creation. We will address this mechanism in the next article.
 
 ## Conclusion
 
 By updating the schema to include the "owner\_id" field, the response for retrieving posts now provides clearer information about the post creator. However, the process for automatically assigning the owner ID during post creation still requires implementation. Stay tuned for the upcoming article, where we will tackle this issue and refine the owner assignment process.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/2ad8c18a-ca82-47e0-92f5-7ddfd45a55bb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/2ad8c18a-ca82-47e0-92f5-7ddfd45a55bb)

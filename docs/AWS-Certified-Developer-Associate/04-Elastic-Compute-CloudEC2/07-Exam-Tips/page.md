@@ -16,7 +16,7 @@ AWS offers a diverse range of instance types to suit different workload requirem
 * **Storage Optimized:** Designed for workloads that require high sequential read/write performance on local storage. These instances support traditional SQL databases, NoSQL stores, and ElastiCache scenarios by delivering tens of thousands of low latency random I/O operations per second.
 * **GPU Instances:** Equipped with hardware accelerators, GPU instances are perfect for machine learning, video transcoding, and other GPU-accelerated operations.
 
-![The image provides exam tips for EC2, highlighting memory optimized, storage optimized, and GPU instances, with examples like Redis, Memcached, and databases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858899/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/ec2-exam-tips-instances-guide.jpg)
+![The image provides exam tips for EC2, highlighting memory optimized, storage optimized, and GPU instances, with examples like Redis, Memcached, and databases.](https://kodekloud.com/kk-media/image/upload/v1752858899/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/ec2-exam-tips-instances-guide.jpg)
 
 ## Amazon Machine Images (AMIs)
 
@@ -26,7 +26,7 @@ An Amazon Machine Image (AMI) is a pre-configured virtual machine image that inc
 * **Private AMIs:** Custom images created for your specific needs.
 * **Shared AMIs:** AMIs that you can share with other AWS accounts.
 
-![The image provides exam tips for EC2, explaining that an AMI is a pre-configured virtual machine image used as a template for EC2 instances, and mentions types like Public, Private, and Shared AMI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858900/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/ec2-exam-tips-ami-types.jpg)
+![The image provides exam tips for EC2, explaining that an AMI is a pre-configured virtual machine image used as a template for EC2 instances, and mentions types like Public, Private, and Shared AMI.](https://kodekloud.com/kk-media/image/upload/v1752858900/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/ec2-exam-tips-ami-types.jpg)
 
 ## Instance Access and States
 
@@ -42,7 +42,7 @@ Users can also make use of user data scripts that run during the initial startup
 
 > **lightbulb** Keep in mind that managing instance states effectively can help optimize resource usage and cost.
 
-![The image provides exam tips for EC2, explaining instance states like "Stopping," "Shutting-down," and "Terminated," as well as concepts like "UserData" and "Storage Options."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858901/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/ec2-exam-tips-instance-states.jpg)
+![The image provides exam tips for EC2, explaining instance states like "Stopping," "Shutting-down," and "Terminated," as well as concepts like "UserData" and "Storage Options."](https://kodekloud.com/kk-media/image/upload/v1752858901/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/ec2-exam-tips-instance-states.jpg)
 
 ## Storage Options
 
@@ -72,6 +72,6 @@ AWS provides several pricing models to help you optimize cost based on your usag
 
 > **triangle-alert** Always review and understand the pricing model that best fits your workload to avoid unexpected costs.
 
-![The image provides exam tips for Amazon EC2, covering topics like spot pricing, reserved pricing, dedicated hosts, and dedicated instances. It highlights cost-saving strategies and considerations for different pricing models.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858902/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/amazon-ec2-exam-tips-pricing.jpg)
+![The image provides exam tips for Amazon EC2, covering topics like spot pricing, reserved pricing, dedicated hosts, and dedicated instances. It highlights cost-saving strategies and considerations for different pricing models.](https://kodekloud.com/kk-media/image/upload/v1752858902/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/amazon-ec2-exam-tips-pricing.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/538040df-b323-4fd1-ad80-f5c22725c345/lesson/c8fbfcb1-fd6a-4687-bd5b-20cfae97b41c)

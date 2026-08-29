@@ -10,7 +10,7 @@ We assume you have set up a hosted zone in Route 53 for the domain "KodeKloudDem
 
 > **lightbulb** AWS Certificate Manager is region-specific. For example, if your load balancer is deployed in the Northern Virginia region, you **must** generate the certificate in that same region.
 
-![The image shows an AWS Management Console page displaying details of a load balancer named "webapp-lb," which is an internet-facing application load balancer with an active status. It includes information about the VPC, availability zones, IP address type, and creation date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859285/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-load-balancer-webapp-lb-details.jpg)
+![The image shows an AWS Management Console page displaying details of a load balancer named "webapp-lb," which is an internet-facing application load balancer with an active status. It includes information about the VPC, availability zones, IP address type, and creation date.](https://kodekloud.com/kk-media/image/upload/v1752859285/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-load-balancer-webapp-lb-details.jpg)
 
 ## Requesting a Public Certificate
 
@@ -28,9 +28,9 @@ Follow these steps to request a public SSL certificate using ACM:
 
 ACM will now display your certificate along with its ID, type (Amazon issued), and a pending validation status.
 
-![The image shows the AWS Certificate Manager interface where a user is selecting the option to request a public certificate.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859286/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-certificate-manager-request-public-cert.jpg)
+![The image shows the AWS Certificate Manager interface where a user is selecting the option to request a public certificate.](https://kodekloud.com/kk-media/image/upload/v1752859286/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-certificate-manager-request-public-cert.jpg)
 
-![The image shows the AWS Certificate Manager (ACM) interface for requesting a certificate, with options to enter domain names, select a validation method, and choose a key algorithm.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859288/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-certificate-manager-interface.jpg)
+![The image shows the AWS Certificate Manager (ACM) interface for requesting a certificate, with options to enter domain names, select a validation method, and choose a key algorithm.](https://kodekloud.com/kk-media/image/upload/v1752859288/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-certificate-manager-interface.jpg)
 
 ## Validating Domain Ownership
 
@@ -49,9 +49,9 @@ Next, assign the new SSL certificate to your load balancer by following these st
 4. Under secure listener settings, choose **ACM** as the source for the SSL certificate, then select the certificate you created.
 5. Save the configuration.
 
-![The image shows an AWS management console interface, specifically the Load Balancer section, displaying details about listeners and rules for a web application. It includes information about protocol, port, and target group settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859289/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-load-balancer-console-listeners.jpg)
+![The image shows an AWS management console interface, specifically the Load Balancer section, displaying details about listeners and rules for a web application. It includes information about protocol, port, and target group settings.](https://kodekloud.com/kk-media/image/upload/v1752859289/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-load-balancer-console-listeners.jpg)
 
-![The image shows a screenshot of the AWS management console, specifically the "Secure listener settings" section for configuring SSL/TLS server certificates and security policies for a load balancer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859290/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-management-console-secure-listener-settings.jpg)
+![The image shows a screenshot of the AWS management console, specifically the "Secure listener settings" section for configuring SSL/TLS server certificates and security policies for a load balancer.](https://kodekloud.com/kk-media/image/upload/v1752859290/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-management-console-secure-listener-settings.jpg)
 
 With the HTTPS listener correctly configured, your load balancer now supports secure traffic.
 
@@ -66,9 +66,9 @@ To route traffic for "KodeKloudDemo123.com" to your load balancer:
 
 This configuration ensures that both HTTP and HTTPS traffic are directed to your load balancer.
 
-![The image shows a configuration window for defining a simple DNS record in AWS Route 53, with options for record name, record type, and routing traffic settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859291/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-route53-dns-record-configuration.jpg)
+![The image shows a configuration window for defining a simple DNS record in AWS Route 53, with options for record name, record type, and routing traffic settings.](https://kodekloud.com/kk-media/image/upload/v1752859291/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-route53-dns-record-configuration.jpg)
 
-![The image shows an AWS Route 53 dashboard displaying DNS records for the domain "kodeklouddemo123.com," including A, NS, SOA, and CNAME records.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859293/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-route53-dns-records-kodeklouddemo123.jpg)
+![The image shows an AWS Route 53 dashboard displaying DNS records for the domain "kodeklouddemo123.com," including A, NS, SOA, and CNAME records.](https://kodekloud.com/kk-media/image/upload/v1752859293/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-route53-dns-records-kodeklouddemo123.jpg)
 
 Now, when you access your domain via HTTPS, the load balancer will use the assigned SSL certificate to secure the connection.
 
@@ -80,7 +80,7 @@ To confirm your SSL certificate is active:
 2. Verify that the web application loads securely over HTTPS.
 3. Click the padlock icon in the browser address bar to inspect the certificate details, ensuring the common name matches your domain and checking the validity dates and encryption settings.
 
-![The image shows an AWS EC2 dashboard with details of a load balancer, including listeners and rules for HTTP and HTTPS protocols. It displays subnet information and configuration options for managing listeners and rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859294/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-ec2-dashboard-load-balancer.jpg)
+![The image shows an AWS EC2 dashboard with details of a load balancer, including listeners and rules for HTTP and HTTPS protocols. It displays subnet information and configuration options for managing listeners and rules.](https://kodekloud.com/kk-media/image/upload/v1752859294/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-ec2-dashboard-load-balancer.jpg)
 
 ## Using ACM with CloudFront
 
@@ -92,9 +92,9 @@ You can also assign your ACM SSL certificate to a CloudFront distribution. In th
 2. Under **Custom SSL Certificate**, CloudFront will display certificates available from US East (N. Virginia). Select the desired certificate.
 3. (Optionally) Choose the appropriate TLS versions—the default settings are typically sufficient—and then save your changes.
 
-![The image shows an AWS CloudFront console with a list of distributions, including their IDs, types, domain names, statuses, and last modified dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859295/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-cloudfront-distributions-console.jpg)
+![The image shows an AWS CloudFront console with a list of distributions, including their IDs, types, domain names, statuses, and last modified dates.](https://kodekloud.com/kk-media/image/upload/v1752859295/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-cloudfront-distributions-console.jpg)
 
-![The image shows an AWS CloudFront distribution details page, displaying information such as the distribution domain name, ARN, and settings like logging and HTTP versions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859296/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-cloudfront-distribution-details.jpg)
+![The image shows an AWS CloudFront distribution details page, displaying information such as the distribution domain name, ARN, and settings like logging and HTTP versions.](https://kodekloud.com/kk-media/image/upload/v1752859296/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-cloudfront-distribution-details.jpg)
 
 At this point, your CloudFront distribution is associated with the ACM certificate. However, you must update your DNS settings in Route 53 to direct traffic to CloudFront.
 
@@ -106,9 +106,9 @@ At this point, your CloudFront distribution is associated with the ACM certifica
 
 If your CloudFront distribution does not appear, verify that you have added "KodeKloudDemo123.com" as an Alternate Domain Name in your CloudFront settings. Wait a moment, then refresh the Route 53 console.
 
-![The image shows an AWS settings page for editing configurations, including options for price class, alternate domain names, and custom SSL certificates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859298/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-settings-page-configurations.jpg)
+![The image shows an AWS settings page for editing configurations, including options for price class, alternate domain names, and custom SSL certificates.](https://kodekloud.com/kk-media/image/upload/v1752859298/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-settings-page-configurations.jpg)
 
-![The image shows an AWS CloudFront distribution settings page, displaying details such as the distribution domain name, ARN, and settings related to SSL certificates and logging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859299/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-cloudfront-distribution-settings.jpg)
+![The image shows an AWS CloudFront distribution settings page, displaying details such as the distribution domain name, ARN, and settings related to SSL certificates and logging.](https://kodekloud.com/kk-media/image/upload/v1752859299/notes-assets/images/AWS-Certified-Developer-Associate-ACM-Demo/aws-cloudfront-distribution-settings.jpg)
 
 When the new DNS record is active, accessing "KodeKloudDemo123.com" will forward traffic to your CloudFront distribution over HTTPS.
 

@@ -8,13 +8,13 @@ In this lesson, you will learn about AWS Systems Manager—a comprehensive tool 
 
 AWS Systems Manager consolidates operations such as software inventory collection, configuration management (for example, adding new users or executing commands), and OS patch management into a single management console. This centralization minimizes the need for manual logins and simplifies day-to-day server administration.
 
-![The image is a diagram of a Systems Manager, showing various components like Inventory, Patch Manager, and Incident Manager, connected to cloud providers, AWS, data centers, and IoT fleets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859111/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager/systems-manager-diagram-components.jpg)
+![The image is a diagram of a Systems Manager, showing various components like Inventory, Patch Manager, and Incident Manager, connected to cloud providers, AWS, data centers, and IoT fleets.](https://kodekloud.com/kk-media/image/upload/v1752859111/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager/systems-manager-diagram-components.jpg)
 
 ## How It Works
 
 For a server to interact with AWS Systems Manager, it must have the SSM agent installed. This agent facilitates secure communication between the server and Systems Manager, enabling remote command execution and configuration changes seamlessly.
 
-![The image is a diagram showing the relationship between an Amazon EC2 or on-premises server with an SSM Agent and a Systems Manager.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859112/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager/ec2-ssm-agent-relationship-diagram.jpg)
+![The image is a diagram showing the relationship between an Amazon EC2 or on-premises server with an SSM Agent and a Systems Manager.](https://kodekloud.com/kk-media/image/upload/v1752859112/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager/ec2-ssm-agent-relationship-diagram.jpg)
 
 You can manage Systems Manager through various interfaces such as the AWS CLI, the AWS Management Console, or the AWS SDK. For example, the "Run Command" feature employs SSM documents that specify the instructions to be executed on target servers.
 
@@ -31,7 +31,7 @@ AWS Systems Manager offers a unified interface to monitor operational data and a
 * **Compliance and Inventory:** Continuously monitor patch compliance, configuration consistency, and collect metadata from instances.
 * **Hybrid Management:** Seamlessly manage both cloud-based and on-premises resources.
 
-![The image lists ten key features and capabilities, including Centralized Control, Resource Grouping, Automation, Patch Management, and others, each represented by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859113/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager/key-features-capabilities-icons.jpg)
+![The image lists ten key features and capabilities, including Centralized Control, Resource Grouping, Automation, Patch Management, and others, each represented by an icon.](https://kodekloud.com/kk-media/image/upload/v1752859113/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager/key-features-capabilities-icons.jpg)
 
 > **lightbulb** AWS Systems Manager centralizes management tasks, enabling greater operational efficiency and reducing the risk associated with manual interventions.
 
@@ -43,7 +43,7 @@ The Application Manager feature enables you to troubleshoot issues in AWS resour
 
 Parameter Store is a secure repository for storing configuration data and secrets. This tool ensures that applications can retrieve necessary settings and credentials at runtime in a secure and centralized manner.
 
-![The image illustrates an AWS architecture diagram showing a VPC containing Amazon EC2, AWS Lambda, and Amazon RDS, with an arrow pointing to a Parameter Store.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859114/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager/aws-architecture-vpc-ec2-lambda-rds.jpg)
+![The image illustrates an AWS architecture diagram showing a VPC containing Amazon EC2, AWS Lambda, and Amazon RDS, with an arrow pointing to a Parameter Store.](https://kodekloud.com/kk-media/image/upload/v1752859114/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager/aws-architecture-vpc-ec2-lambda-rds.jpg)
 
 ### Change Management Components
 
@@ -54,7 +54,7 @@ AWS Systems Manager includes several features to support controlled and auditabl
 * **Change Calendar:** Schedule blackout periods (like high-traffic holidays) during which operational changes are not permitted.
 * **Maintenance Windows:** Plan tasks during off-peak hours, like late night or early morning, to reduce user impact when performing updates or patches.
 
-![The image illustrates four components of change management: Change Manager, Automation, Change Calendar, and Maintenance Windows, each represented by a distinct icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859116/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager/change-management-components-icons.jpg)
+![The image illustrates four components of change management: Change Manager, Automation, Change Calendar, and Maintenance Windows, each represented by a distinct icon.](https://kodekloud.com/kk-media/image/upload/v1752859116/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager/change-management-components-icons.jpg)
 
 ### Node Management
 
@@ -69,12 +69,12 @@ Within node management, Systems Manager provides a range of functionalities desi
 * **Incident Manager:** Quickly respond to incidents such as website downtime by detecting outages via CloudWatch alarms, notifying on-call engineers, and executing a pre-defined response plan.
 * **Ops Center:** Consolidate alerts from various AWS services into a centralized dashboard to manage operational issues effectively.
 
-![The image shows icons representing different aspects of node management, including Compliance, Inventory, Session Manager, Run Command, State Manager, Patch Manager, and Distributor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859117/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager/node-management-icons-compliance-inventory.jpg)
+![The image shows icons representing different aspects of node management, including Compliance, Inventory, Session Manager, Run Command, State Manager, Patch Manager, and Distributor.](https://kodekloud.com/kk-media/image/upload/v1752859117/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager/node-management-icons-compliance-inventory.jpg)
 
 ## Conclusion
 
 In summary, AWS Systems Manager simplifies the management of both EC2 and on-premises servers by providing a single, powerful interface for configuration, automation, patch management, and operational insights. For successful integration, ensure that the SSM agent is installed and properly configured on each server. By leveraging the rich features of Systems Manager, you can achieve robust, secure, and efficient infrastructure management across your entire environment.
 
-![The image is a summary slide highlighting the management of EC2 and on-premise servers, the need for servers to be configured with the SSM agent, and the provision of configuration, secret management, automation, patch management, and operation insights.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859118/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager/ec2-on-premise-server-management-summary.jpg)
+![The image is a summary slide highlighting the management of EC2 and on-premise servers, the need for servers to be configured with the SSM agent, and the provision of configuration, secret management, automation, patch management, and operation insights.](https://kodekloud.com/kk-media/image/upload/v1752859118/notes-assets/images/AWS-Certified-Developer-Associate-AWS-Systems-Manager/ec2-on-premise-server-management-summary.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/de8f3e67-8f0c-4bc3-8a42-023e28485788/lesson/f4c759b2-56c5-44ed-bca7-890e7128562a)

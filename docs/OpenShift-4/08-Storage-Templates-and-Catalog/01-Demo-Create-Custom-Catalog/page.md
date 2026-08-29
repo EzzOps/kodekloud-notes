@@ -37,9 +37,7 @@ As noted, ensure that the template contains all the necessary components includi
 
 Start by adding the Secrets. Navigate to the Secrets section in your OpenShift resources. You will find two relevant secrets: the DB secret and the Redis secret.
 
-<Frame>
-  ![The image shows the OpenShift Web Console displaying a list of secrets for an "Example Voting Application," including their names, types, and creation times.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882770/notes-assets/images/OpenShift-4-Demo-Create-Custom-Catalog/openshift-web-console-secrets-voting-app.jpg)
-</Frame>
+![The image shows the OpenShift Web Console displaying a list of secrets for an "Example Voting Application," including their names, types, and creation times.](https://kodekloud.com/kk-media/image/upload/v1752882770/notes-assets/images/OpenShift-4-Demo-Create-Custom-Catalog/openshift-web-console-secrets-voting-app.jpg)
 
 To add the DB Secret, select it, click "Actions," and then "Edit YAML." Copy the content and paste it into your template file. Modify the secret by replacing the encrypted passwords with clear text and removing extraneous annotations and metadata, while retaining the essential information.
 
@@ -150,9 +148,7 @@ Next, add the BuildConfigs. Begin by selecting the YAML configuration for the ex
 
 Leave the content under the `spec` section as-is. Note that the GitHub URL embedded in the template can later be parameterized to prompt user input during deployment. Be sure to remove any `status` sections if they exist. Follow similar procedures for the BuildConfigs of the vote and worker applications.
 
-<Callout icon="lightbulb">
-  If possible, parameterize the GitHub URLs and other hard-coded values in your BuildConfig to enhance reusability.
-</Callout>
+> **lightbulb** If possible, parameterize the GitHub URLs and other hard-coded values in your BuildConfig to enhance reusability.
 
 Below is an additional snippet showcasing an ImageStreamTag configuration:
 
@@ -244,9 +240,7 @@ Then duplicate the configuration for the other two ImageStreams:
 
 Next, add the DeploymentConfigs. There are five DeploymentConfigs for the application components. In the OpenShift Origin web console, you can see the list of deployments, as shown in the image below:
 
-<Frame>
-  ![The image shows the OpenShift Origin web console displaying a list of deployments for an example voting application, with details such as name, last version, status, creation time, and trigger type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882771/notes-assets/images/OpenShift-4-Demo-Create-Custom-Catalog/openshift-origin-voting-app-deployments.jpg)
-</Frame>
+![The image shows the OpenShift Origin web console displaying a list of deployments for an example voting application, with details such as name, last version, status, creation time, and trigger type.](https://kodekloud.com/kk-media/image/upload/v1752882771/notes-assets/images/OpenShift-4-Demo-Create-Custom-Catalog/openshift-origin-voting-app-deployments.jpg)
 
 For every DeploymentConfig, select the YAML configuration, copy it into your template file, and remove any unnecessary details. Consider simplifying blocks such as the `livenessProbe` as shown below:
 
@@ -309,21 +303,15 @@ For Services, here is an example configuration for the worker application:
           lastTriggeredImage: ''
 ```
 
-<Callout icon="lightbulb">
-  Although the worker application does not strictly require its own Service because it interacts indirectly with Redis and PostgreSQL, include the Service (and Route) configurations for consistency with the wizard-generated template.
-</Callout>
+> **lightbulb** Although the worker application does not strictly require its own Service because it interacts indirectly with Redis and PostgreSQL, include the Service (and Route) configurations for consistency with the wizard-generated template.
 
 View the list of services in the OpenShift Origin web console as shown below:
 
-<Frame>
-  ![The image shows the OpenShift Origin web console displaying a list of services for an example voting application, including details like name, cluster IP, ports, selector, and age.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882772/notes-assets/images/OpenShift-4-Demo-Create-Custom-Catalog/openshift-origin-voting-app-services.jpg)
-</Frame>
+![The image shows the OpenShift Origin web console displaying a list of services for an example voting application, including details like name, cluster IP, ports, selector, and age.](https://kodekloud.com/kk-media/image/upload/v1752882772/notes-assets/images/OpenShift-4-Demo-Create-Custom-Catalog/openshift-origin-voting-app-services.jpg)
 
 For additional service details (e.g., for the worker application), refer to the image below:
 
-<Frame>
-  ![The image shows an OpenShift Origin web console displaying details of a service named "worker" within an "Example Voting Application" project. It includes information about service ports, target ports, and traffic routes, with no pods currently shown.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882773/notes-assets/images/OpenShift-4-Demo-Create-Custom-Catalog/openshift-origin-worker-service-details.jpg)
-</Frame>
+![The image shows an OpenShift Origin web console displaying details of a service named "worker" within an "Example Voting Application" project. It includes information about service ports, target ports, and traffic routes, with no pods currently shown.](https://kodekloud.com/kk-media/image/upload/v1752882773/notes-assets/images/OpenShift-4-Demo-Create-Custom-Catalog/openshift-origin-worker-service-details.jpg)
 
 For Routes, here’s an example configuration for the "result" application:
 
@@ -415,13 +403,9 @@ d:\Mumshad Files\Google Drive\Udemy\OpenShift\code>oc create -f example-voting-a
 
 After running this command, refresh the UI. You should see the new catalog item named `example-voting-app-template` displayed. Click on it and follow the deployment wizard to launch the application stack. Monitor the progress of builds and deployments on the monitoring page.
 
-<Frame>
-  ![The image shows the OpenShift Origin web console with a catalog of items to add to a project, including various software and frameworks like .NET, Apache HTTP Server, Jenkins, and MongoDB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882775/notes-assets/images/OpenShift-4-Demo-Create-Custom-Catalog/openshift-origin-web-console-catalog.jpg)
-</Frame>
+![The image shows the OpenShift Origin web console with a catalog of items to add to a project, including various software and frameworks like .NET, Apache HTTP Server, Jenkins, and MongoDB.](https://kodekloud.com/kk-media/image/upload/v1752882775/notes-assets/images/OpenShift-4-Demo-Create-Custom-Catalog/openshift-origin-web-console-catalog.jpg)
 
-<Frame>
-  ![The image shows the OpenShift Origin web console displaying the monitoring section for an example voting application, listing the status of various pods and deployments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882776/notes-assets/images/OpenShift-4-Demo-Create-Custom-Catalog/openshift-origin-monitoring-voting-app.jpg)
-</Frame>
+![The image shows the OpenShift Origin web console displaying the monitoring section for an example voting application, listing the status of various pods and deployments.](https://kodekloud.com/kk-media/image/upload/v1752882776/notes-assets/images/OpenShift-4-Demo-Create-Custom-Catalog/openshift-origin-monitoring-voting-app.jpg)
 
 After deployment, click on the Routes to access the voting and result pages.
 
@@ -431,6 +415,4 @@ You have successfully created a custom catalog item for the example voting appli
 
 Thank you for your time, and we hope this lesson helps you get started with creating custom templates in OpenShift.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/f6ba582e-d78f-4aa2-8c94-33d74083b2fe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/f6ba582e-d78f-4aa2-8c94-33d74083b2fe)

@@ -10,13 +10,13 @@ First, navigate to the VPC section in the AWS Management Console. You can locate
 
 For a brand new AWS account, you will see one default VPC along with a few extra security groups that could be present.
 
-![The image shows the AWS Management Console, specifically the VPC dashboard, displaying various resources and settings related to virtual private clouds in the US East region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858162/notes-assets/images/AWS-Certified-Developer-Associate-Default-VPC-Demo/aws-vpc-dashboard-us-east.jpg)
+![The image shows the AWS Management Console, specifically the VPC dashboard, displaying various resources and settings related to virtual private clouds in the US East region.](https://kodekloud.com/kk-media/image/upload/v1752858162/notes-assets/images/AWS-Certified-Developer-Associate-Default-VPC-Demo/aws-vpc-dashboard-us-east.jpg)
 
 ## Default VPC Details
 
 Take a closer look at this default VPC. It is in an "available" state with the CIDR block set as 172.31.0.0/16. Additionally, the "default VPC" flag is enabled. Clicking on the VPC confirms the CIDR block and the default status.
 
-![The image shows an AWS VPC management console with details of a specific VPC, including its ID, state, and configuration settings. The VPC is marked as available with DNS hostnames and resolution enabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858164/notes-assets/images/AWS-Certified-Developer-Associate-Default-VPC-Demo/aws-vpc-management-console-details.jpg)
+![The image shows an AWS VPC management console with details of a specific VPC, including its ID, state, and configuration settings. The VPC is marked as available with DNS hostnames and resolution enabled.](https://kodekloud.com/kk-media/image/upload/v1752858164/notes-assets/images/AWS-Certified-Developer-Associate-Default-VPC-Demo/aws-vpc-management-console-details.jpg)
 
 Next, switch to another region (for example, Ohio) and navigate to the VPC section. You will observe that there is exactly one VPC with the same CIDR block (172.31.0.0/16) marked as default. This confirms that AWS creates a default VPC with an identical configuration in every region.
 
@@ -24,11 +24,11 @@ Next, switch to another region (for example, Ohio) and navigate to the VPC secti
 
 Return to the Northern Virginia region and inspect the default VPC contents by checking its subnets. Identify the VPC ID (ending in ACB5) and then visit the Subnets section to find six subnets.
 
-![The image shows the AWS VPC Management Console displaying a list of subnets, their statuses, and associated details like VPC, IPv4 CIDR, and availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858166/notes-assets/images/AWS-Certified-Developer-Associate-Default-VPC-Demo/aws-vpc-management-console-subnets.jpg)
+![The image shows the AWS VPC Management Console displaying a list of subnets, their statuses, and associated details like VPC, IPv4 CIDR, and availability zones.](https://kodekloud.com/kk-media/image/upload/v1752858166/notes-assets/images/AWS-Certified-Developer-Associate-Default-VPC-Demo/aws-vpc-management-console-subnets.jpg)
 
 These six subnets exist because AWS provisions one default subnet per availability zone (for example, 1A, 1B, 1C, 1D, 1E, and 1F) within the region. To visualize the layout, reference the resource map in the VPC page, which clearly displays the six subnets aligned with their respective availability zones.
 
-![The image shows an AWS VPC management console with details of a virtual private cloud, including subnets, route tables, and network connections. It also features a resource map illustrating relationships between these components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858167/notes-assets/images/AWS-Certified-Developer-Associate-Default-VPC-Demo/aws-vpc-management-console-diagram.jpg)
+![The image shows an AWS VPC management console with details of a virtual private cloud, including subnets, route tables, and network connections. It also features a resource map illustrating relationships between these components.](https://kodekloud.com/kk-media/image/upload/v1752858167/notes-assets/images/AWS-Certified-Developer-Associate-Default-VPC-Demo/aws-vpc-management-console-diagram.jpg)
 
 > **lightbulb** The default VPC also features a route table that manages traffic flow and an Internet Gateway configured for internet access.
 
@@ -36,7 +36,7 @@ These six subnets exist because AWS provisions one default subnet per availabili
 
 Explore one of the subnets by navigating to its details page. You will notice that the subnet is configured to auto-assign public IPv4 addresses. This configuration ensures that any EC2 instance launched within the subnet will automatically receive a public IP address for internet connectivity.
 
-![The image shows the AWS VPC Management Console displaying a list of subnets with details such as Subnet ID, state, and VPC information. The selected subnet's detailed information is shown below, including its IPv4 CIDR and availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858168/notes-assets/images/AWS-Certified-Developer-Associate-Default-VPC-Demo/aws-vpc-management-console-subnets-2.jpg)
+![The image shows the AWS VPC Management Console displaying a list of subnets with details such as Subnet ID, state, and VPC information. The selected subnet's detailed information is shown below, including its IPv4 CIDR and availability zone.](https://kodekloud.com/kk-media/image/upload/v1752858168/notes-assets/images/AWS-Certified-Developer-Associate-Default-VPC-Demo/aws-vpc-management-console-subnets-2.jpg)
 
 Once you create an AWS account, you can immediately deploy servers with internet access by utilizing the default VPC and its associated subnets.
 
@@ -44,7 +44,7 @@ Once you create an AWS account, you can immediately deploy servers with internet
 
 To demonstrate this, navigate to the EC2 page and launch a new instance with the default configurations. For this demo, use the Amazon Linux image and select a T2 micro instance type. During the process, create a new key pair (for example, "aws-demo") and download the PEM file.
 
-![The image shows a dialog box in the AWS Management Console for creating a key pair, with options to specify the key pair name, type, and private key file format.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858169/notes-assets/images/AWS-Certified-Developer-Associate-Default-VPC-Demo/aws-key-pair-creation-dialog.jpg)
+![The image shows a dialog box in the AWS Management Console for creating a key pair, with options to specify the key pair name, type, and private key file format.](https://kodekloud.com/kk-media/image/upload/v1752858169/notes-assets/images/AWS-Certified-Developer-Associate-Default-VPC-Demo/aws-key-pair-creation-dialog.jpg)
 
 When launching the instance, ensure the following:
 
@@ -52,11 +52,11 @@ When launching the instance, ensure the following:
 * A specific subnet is selected if required.
 * The auto-assign public IPv4 address option is enabled to ensure the instance obtains internet connectivity.
 
-![The image shows an AWS EC2 management console where a user is configuring network settings and reviewing instance details before launching an instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858170/notes-assets/images/AWS-Certified-Developer-Associate-Default-VPC-Demo/aws-ec2-management-console-network-settings.jpg)
+![The image shows an AWS EC2 management console where a user is configuring network settings and reviewing instance details before launching an instance.](https://kodekloud.com/kk-media/image/upload/v1752858170/notes-assets/images/AWS-Certified-Developer-Associate-Default-VPC-Demo/aws-ec2-management-console-network-settings.jpg)
 
 After launching, move to the Instances section to confirm that your instance is running. You will see both a private IP address (from the default CIDR block) and a public IP address.
 
-![The image shows an AWS Management Console displaying details of a running EC2 instance, including its instance ID, public and private IP addresses, and instance type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858172/notes-assets/images/AWS-Certified-Developer-Associate-Default-VPC-Demo/aws-ec2-instance-details-console.jpg)
+![The image shows an AWS Management Console displaying details of a running EC2 instance, including its instance ID, public and private IP addresses, and instance type.](https://kodekloud.com/kk-media/image/upload/v1752858172/notes-assets/images/AWS-Certified-Developer-Associate-Default-VPC-Demo/aws-ec2-instance-details-console.jpg)
 
 > **triangle-alert** Always safeguard your key pair file and avoid sharing it publicly. It is essential for secure SSH access to your instances.
 

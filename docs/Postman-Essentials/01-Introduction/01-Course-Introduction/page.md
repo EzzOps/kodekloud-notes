@@ -330,11 +330,9 @@ Python Has Great Methods!
 
 That concludes our comprehensive guide on Python string methods. Start practicing these methods in your coding exercises and projects to improve your string manipulation skills. For more Python tutorials and examples, check out additional [Python documentation](https://www.python.org/doc/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/2c9c597a-cb2d-43ca-ba29-2dc1b630cae6/lesson/fb2e2b3f-9e59-4c15-aa80-d4dda7721f15" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/2c9c597a-cb2d-43ca-ba29-2dc1b630cae6/lesson/fb2e2b3f-9e59-4c15-aa80-d4dda7721f15)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/2c9c597a-cb2d-43ca-ba29-2dc1b630cae6/lesson/2e06ee69-6162-4f46-92fe-c70d879ed072" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/2c9c597a-cb2d-43ca-ba29-2dc1b630cae6/lesson/2e06ee69-6162-4f46-92fe-c70d879ed072)
 
 
 # Course Introduction
@@ -361,12 +359,8 @@ After establishing a solid foundation, we’ll move on to more advanced topics s
 * Leveraging scripts to automate testing tasks for better efficiency
 * Setting up multiple environments to switch seamlessly between production and development settings
 
-<Callout icon="lightbulb">
-  This course is designed to be both enjoyable and informative. Whether you're new to API testing or seeking to expand your technical skills, you'll find valuable insights throughout the lessons.
-</Callout>
+> **lightbulb** This course is designed to be both enjoyable and informative. Whether you're new to API testing or seeking to expand your technical skills, you'll find valuable insights throughout the lessons.
 
 Let's get started on this exciting journey into API testing with Postman!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/postman-essentials/module/20544a14-92cc-44ea-9aa0-4e2953ad6ca1/lesson/1929b7b8-69bf-4316-bf39-30060ee5ea7f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/postman-essentials/module/20544a14-92cc-44ea-9aa0-4e2953ad6ca1/lesson/1929b7b8-69bf-4316-bf39-30060ee5ea7f)

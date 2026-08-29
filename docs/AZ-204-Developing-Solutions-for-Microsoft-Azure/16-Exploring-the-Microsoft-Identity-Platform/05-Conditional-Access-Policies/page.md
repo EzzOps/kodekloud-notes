@@ -18,7 +18,7 @@ Another critical strategy involves restricting access solely to devices enrolled
 
 Conditional access can also apply location or IP range restrictions. For instance, policies can be configured to permit access only for users connecting from a certain country or trusted network. This additional layer of security minimizes the risk of unauthorized access from unrecognized or compromised environments.
 
-![The image outlines Conditional Access Policies, highlighting multi-factor authentication, allowing only Intune-enrolled devices to access services, and restricting user locations and IP ranges.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866548/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Conditional-Access-Policies/conditional-access-policies-mfa-intune.jpg)
+![The image outlines Conditional Access Policies, highlighting multi-factor authentication, allowing only Intune-enrolled devices to access services, and restricting user locations and IP ranges.](https://kodekloud.com/kk-media/image/upload/v1752866548/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Conditional-Access-Policies/conditional-access-policies-mfa-intune.jpg)
 
 ## Handling Conditional Access in Applications
 
@@ -36,7 +36,7 @@ Conditional access policies can affect application behavior, necessitating caref
 * **Web Apps Calling Protected Resources:**\
   Web applications interacting with APIs or other secured resources should handle potential delays or blocks resulting from conditional access policies, particularly those triggering MFA challenges.
 
-![The image is about "Discovering Conditional Access" and lists scenarios requiring code to handle Conditional Access challenges, including apps performing on-behalf-of flow, accessing multiple services, using MSAL.js, and web apps calling a resource.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866548/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Conditional-Access-Policies/discovering-conditional-access-scenarios.jpg)
+![The image is about "Discovering Conditional Access" and lists scenarios requiring code to handle Conditional Access challenges, including apps performing on-behalf-of flow, accessing multiple services, using MSAL.js, and web apps calling a resource.](https://kodekloud.com/kk-media/image/upload/v1752866548/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Conditional-Access-Policies/discovering-conditional-access-scenarios.jpg)
 
 ## The If-Then Logic Behind Conditional Access
 

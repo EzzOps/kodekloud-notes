@@ -10,11 +10,11 @@ A repository is a designated location in a version control system where a projec
 
 Before incorporating code from packages outside the standard library, you must declare your project as a module. Each module is assigned a globally unique identifier—often a GitHub repository URL, a private domain, or another URL—that Go tools use as the download path.
 
-![The image is a diagram explaining "Module & Packages" in Go, showing a Go module containing multiple packages, with a globally unique identifier example: "github.com/kodekloud/learn".](../../../../images/kodekloud.com/kk-media/image/upload/v1752868747/notes-assets/images/Advanced-Golang-Repositories-Modules-and-Packages/go-module-packages-diagram.jpg)
+![The image is a diagram explaining "Module & Packages" in Go, showing a Go module containing multiple packages, with a globally unique identifier example: "github.com/kodekloud/learn".](https://kodekloud.com/kk-media/image/upload/v1752868747/notes-assets/images/Advanced-Golang-Repositories-Modules-and-Packages/go-module-packages-diagram.jpg)
 
 In summary, Go code is structured into packages grouped into modules. A module not only organizes code but also specifies the dependencies needed to run the code, including the Go version and other modules, as recorded in the `go.mod` file.
 
-![The image explains the relationship between Go code, packages, and modules, highlighting that Go code is grouped into packages, which are then grouped into modules. It also describes that a module specifies dependencies, including the Go version and other required modules in the go.mod file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868748/notes-assets/images/Advanced-Golang-Repositories-Modules-and-Packages/go-code-packages-modules-diagram.jpg)
+![The image explains the relationship between Go code, packages, and modules, highlighting that Go code is grouped into packages, which are then grouped into modules. It also describes that a module specifies dependencies, including the Go version and other required modules in the go.mod file.](https://kodekloud.com/kk-media/image/upload/v1752868748/notes-assets/images/Advanced-Golang-Repositories-Modules-and-Packages/go-code-packages-modules-diagram.jpg)
 
 ## Creating a Go Module
 

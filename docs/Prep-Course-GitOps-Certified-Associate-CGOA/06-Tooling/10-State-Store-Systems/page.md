@@ -33,13 +33,9 @@ Table: Typical storage locations vs. OCI as a consolidated option
 
 Callouts
 
-<Callout icon="lightbulb">
-  Using a single OCI registry for multiple artifact types simplifies access management: you can reuse the same credentials, RBAC rules, and audit trails for images, charts, and other artifacts.
-</Callout>
+> **lightbulb** Using a single OCI registry for multiple artifact types simplifies access management: you can reuse the same credentials, RBAC rules, and audit trails for images, charts, and other artifacts.
 
-<Callout icon="warning">
-  Do not embed long-lived credentials in scripts. Prefer short-lived tokens, OIDC-based flows, or CI/CD secret managers. Always revoke or rotate Personal Access Tokens (PATs) used for registry access.
-</Callout>
+> **warning** Do not embed long-lived credentials in scripts. Prefer short-lived tokens, OIDC-based flows, or CI/CD secret managers. Always revoke or rotate Personal Access Tokens (PATs) used for registry access.
 
 Below are practical examples showing how to push images, Helm charts, and plain Kubernetes manifests into an OCI-compliant registry. The examples use GitHub Container Registry (`ghcr.io`) but the commands and concepts apply to other OCI registries (Docker Hub, Azure Container Registry, Google Artifact Registry).
 

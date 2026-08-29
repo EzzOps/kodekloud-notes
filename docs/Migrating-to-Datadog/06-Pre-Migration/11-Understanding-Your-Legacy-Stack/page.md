@@ -12,9 +12,7 @@ Start by inventorying the legacy systems and integrations. That early context re
   <img alt="The image is a slide titled &#x22;Migration Planning – Challenges&#x22; with two numbered boxes describing challenges: 1) aligning multiple elements, and 2) ensuring solutions meet all needs." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Understanding your legacy environment uncovers risks early and helps you select a target platform that supports your business needs, integrations, and compliance constraints.
-</Callout>
+> **lightbulb** Understanding your legacy environment uncovers risks early and helps you select a target platform that supports your business needs, integrations, and compliance constraints.
 
 Why collect legacy information early?
 
@@ -87,9 +85,7 @@ Detailed steps:
    * Mark integrations that are business-critical and need continuity during migration.
    * Document undocumented or fragile connections that require careful migration handling.
 
-<Callout icon="warning">
-  Undocumented integrations are a major risk—map them before cutover. Migrating without this knowledge can break essential business functionality.
-</Callout>
+> **warning** Undocumented integrations are a major risk—map them before cutover. Migrating without this knowledge can break essential business functionality.
 
 5. Understand environment nuances
    * Capture environment-specific constraints: network topology, compliance zones, data residency, and resource limits.
@@ -131,6 +127,4 @@ Further reading and references:
 
 That concludes this material. Use this guidance to plan a safer, more predictable migration that preserves visibility, supports users, and meets compliance needs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/52685b0c-fc05-4f88-ab43-e33e0b562b94" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/52685b0c-fc05-4f88-ab43-e33e0b562b94)

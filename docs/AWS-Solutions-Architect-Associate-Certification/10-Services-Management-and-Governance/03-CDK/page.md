@@ -8,7 +8,7 @@ AWS Cloud Development Kit (CDK) is a powerful Infrastructure as Code (IaC) tool 
 
 With a CDK app, you employ pre-configured constructs that bundle best practice defaults, expediting the onboarding process. Although you author your infrastructure in code, CDK synthesizes this code into standard CloudFormation templates. In other words, running the synthesis command (CDK synth) translates your code into CloudFormation templates that can then be deployed using CDK deploy.
 
-![The image illustrates the process of using AWS CDK to create and deploy CloudFormation templates, showing the flow from CDK App constructs to AWS CloudFormation stacks. It includes icons for programming languages like TypeScript, JavaScript, Java, .NET, and Python.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865275/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CDK/aws-cdk-cloudformation-templates-diagram.jpg)
+![The image illustrates the process of using AWS CDK to create and deploy CloudFormation templates, showing the flow from CDK App constructs to AWS CloudFormation stacks. It includes icons for programming languages like TypeScript, JavaScript, Java, .NET, and Python.](https://kodekloud.com/kk-media/image/upload/v1752865275/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CDK/aws-cdk-cloudformation-templates-diagram.jpg)
 
 > **lightbulb** CDK enables a more dynamic and maintainable approach to infrastructure management by bridging the gap between application code and cloud resource definitions.
 
@@ -22,7 +22,7 @@ AWS CDK provides several advantages for managing your infrastructure declarative
 * **Automated Synthesis:** Automatically generate CloudFormation templates from your application code, simplifying deployment processes.
 * **Environment Agnosticism:** Develop once and deploy across multiple environments by parameterizing your resources for different configurations.
 
-![The image lists five features: Declarative Approach, Component Reusability, AWS Construct Library, Automated Synthesis, and Environment Agnosticism, each with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865276/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CDK/features-declarative-reusability-aws-icons.jpg)
+![The image lists five features: Declarative Approach, Component Reusability, AWS Construct Library, Automated Synthesis, and Environment Agnosticism, each with an icon.](https://kodekloud.com/kk-media/image/upload/v1752865276/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CDK/features-declarative-reusability-aws-icons.jpg)
 
 A summary of the key features is provided below:
 
@@ -43,7 +43,7 @@ AWS CDK integrates seamlessly with AWS services to build robust CI/CD pipelines.
 * Builds artifacts and packages your application.
 * Deploys the resulting CloudFormation templates to provision AWS resources.
 
-![The image illustrates a CDK pipeline workflow using AWS services, including CodeCommit, CodePipeline, CodeBuild, and CloudFormation, leading to a CloudFormation stack with S3, EC2, VPC, and RDS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865277/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CDK/cdk-pipeline-aws-services-workflow.jpg)
+![The image illustrates a CDK pipeline workflow using AWS services, including CodeCommit, CodePipeline, CodeBuild, and CloudFormation, leading to a CloudFormation stack with S3, EC2, VPC, and RDS.](https://kodekloud.com/kk-media/image/upload/v1752865277/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-CDK/cdk-pipeline-aws-services-workflow.jpg)
 
 This integration ensures a smooth, automated, and efficient deployment process for your CDK applications, taking full advantage of AWS CodeCommit, CodePipeline, CodeBuild, and CloudFormation.
 

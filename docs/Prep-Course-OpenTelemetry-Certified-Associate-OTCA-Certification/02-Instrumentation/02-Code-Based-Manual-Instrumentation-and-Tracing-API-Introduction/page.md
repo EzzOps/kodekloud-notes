@@ -12,9 +12,7 @@ Instrumentation = explicit telemetry calls in application code (via the OpenTele
 * which metadata (attributes/events/exceptions) is captured, and
 * which signals are produced and exported.
 
-<Callout icon="lightbulb">
-  This lesson uses `ConsoleSpanExporter` so spans are visible on your console for demonstration. In production you would normally use an OTLP exporter (via the Collector) or a vendor-specific exporter.
-</Callout>
+> **lightbulb** This lesson uses `ConsoleSpanExporter` so spans are visible on your console for demonstration. In production you would normally use an OTLP exporter (via the Collector) or a vendor-specific exporter.
 
 OpenTelemetry architecture (quick recap)
 

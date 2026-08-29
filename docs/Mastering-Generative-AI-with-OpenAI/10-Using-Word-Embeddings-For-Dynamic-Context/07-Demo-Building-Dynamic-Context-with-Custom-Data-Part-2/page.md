@@ -79,9 +79,7 @@ df["text"] = df.apply(make_context, axis=1)
 df.head(3)
 ```
 
-<Frame>
-  ![The image shows a table with rows and columns containing data about film awards, including categories, nominees, and films. Below the table, there are sections for generating word embeddings and defining a function for the dot product.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881578/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Demo-Building-Dynamic-Context-with-Custom-Data-Part-1/film-awards-data-table-embeddings.jpg)
-</Frame>
+![The image shows a table with rows and columns containing data about film awards, including categories, nominees, and films. Below the table, there are sections for generating word embeddings and defining a function for the dot product.](https://kodekloud.com/kk-media/image/upload/v1752881578/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Demo-Building-Dynamic-Context-with-Custom-Data-Part-1/film-awards-data-table-embeddings.jpg)
 
 ### Example Context Sentences
 
@@ -114,9 +112,7 @@ In **Part 2**, we’ll dive into [OpenAI Embeddings] and similarity matching to 
 * [OpenAI Embeddings]: https://platform.openai.com/docs/guides/embeddings
 * [GPT-3.5 Turbo]: https://platform.openai.com/docs/models/gpt-3-5
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/cf879fc5-dcc3-4470-830d-4393645105c9/lesson/0150c68f-e590-43db-a8a1-68c0f4388db7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/cf879fc5-dcc3-4470-830d-4393645105c9/lesson/0150c68f-e590-43db-a8a1-68c0f4388db7)
 
 
 # Demo Building Dynamic Context with Custom Data Part 2

@@ -6,9 +6,7 @@ This article explains how to set up DynamoDB locks using Terraform and Terragrun
 
 Implementing state locking is critical for any Infrastructure as Code (IaC) workflow. By leveraging AWS DynamoDB, Terraform and Terragrunt coordinate changes to prevent conflicting updates and ensure consistency.
 
-<Frame>
-  ![The image describes the features of Terraform/Terragrunt locks using AWS DynamoDB, highlighting state file locking, prevention of multiple user access, and the use of DynamoDB for state locking.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884270/notes-assets/images/Terragrunt-for-Beginners-Setting-up-DynamoDB-Locks/terraform-terragrunt-dynamodb-locks-features.jpg)
-</Frame>
+![The image describes the features of Terraform/Terragrunt locks using AWS DynamoDB, highlighting state file locking, prevention of multiple user access, and the use of DynamoDB for state locking.](https://kodekloud.com/kk-media/image/upload/v1752884270/notes-assets/images/Terragrunt-for-Beginners-Setting-up-DynamoDB-Locks/terraform-terragrunt-dynamodb-locks-features.jpg)
 
 Terraform and Terragrunt acquire a lock before performing any write operations on the state file. In AWS-based pipelines, DynamoDB acts as the lock manager. This setup guarantees:
 
@@ -33,9 +31,7 @@ remote_state {
 }
 ```
 
-<Callout icon="lightbulb">
-  Terragrunt automatically provisions the DynamoDB table specified by `dynamodb_table`. You only need AWS IAM permissions for S3 and DynamoDB table creation.
-</Callout>
+> **lightbulb** Terragrunt automatically provisions the DynamoDB table specified by `dynamodb_table`. You only need AWS IAM permissions for S3 and DynamoDB table creation.
 
 | Backend Option  | Description                                      | Example Value                   |
 | --------------- | ------------------------------------------------ | ------------------------------- |

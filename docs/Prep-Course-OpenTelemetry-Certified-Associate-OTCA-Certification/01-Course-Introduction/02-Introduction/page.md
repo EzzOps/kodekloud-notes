@@ -96,9 +96,7 @@ extensions:
 
 Use zPages to inspect span sampling, batching, and exporter behavior when diagnosing Collector issues.
 
-<Callout icon="lightbulb">
-  This course is designed for SREs, DevOps engineers, platform engineers, and developers who want practical OpenTelemetry skills and OTCA exam preparation. Familiarity with distributed systems, HTTP, and Kubernetes will help you get the most from the labs.
-</Callout>
+> **lightbulb** This course is designed for SREs, DevOps engineers, platform engineers, and developers who want practical OpenTelemetry skills and OTCA exam preparation. Familiarity with distributed systems, HTTP, and Kubernetes will help you get the most from the labs.
 
 ## Community and next steps
 
@@ -113,6 +111,4 @@ If you're ready to advance your observability expertise, improve reliability eng
 * Collector zPages extension: [https://opentelemetry.io/docs/collector/configuration/extensions/zpages/](https://opentelemetry.io/docs/collector/configuration/extensions/zpages/)
 * OpenTelemetry Operator for Kubernetes: [https://github.com/open-telemetry/opentelemetry-operator](https://github.com/open-telemetry/opentelemetry-operator)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/edd3acd9-21a8-4513-a22f-19649e85cae9/lesson/a9497629-6549-47a7-b108-ceca5cc32e79" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/edd3acd9-21a8-4513-a22f-19649e85cae9/lesson/a9497629-6549-47a7-b108-ceca5cc32e79)

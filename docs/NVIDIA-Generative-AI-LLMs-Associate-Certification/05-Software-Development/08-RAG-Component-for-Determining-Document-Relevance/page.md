@@ -40,9 +40,7 @@ result = index.query(queries=[query_embedding.tolist()], top_k=5)
 print(result)
 ```
 
-<Callout icon="warning">
-  When using managed services like Pinecone, pay attention to data residency, privacy, and API key security. For sensitive data or strict compliance requirements, evaluate on‑premises or private cloud options (e.g., FAISS, Milvus).
-</Callout>
+> **warning** When using managed services like Pinecone, pay attention to data residency, privacy, and API key security. For sensitive data or strict compliance requirements, evaluate on‑premises or private cloud options (e.g., FAISS, Milvus).
 
 ## When to choose which
 
@@ -93,9 +91,7 @@ Summary
 * Correct answer: [FAISS](https://github.com/facebookresearch/faiss) or [Pinecone](https://www.pinecone.io/).
 * FAISS and Pinecone are purpose-built for vector storage and similarity search; NumPy, spaCy, and Matplotlib are not appropriate as vector databases for RAG systems.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/cce68739-7c5b-4b74-ae18-f9183b1accdc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/607ae39a-4ae7-4cfb-92a5-564d0bda12cb/lesson/cce68739-7c5b-4b74-ae18-f9183b1accdc)
 
 
 # RAG Component for Determining Document Relevance

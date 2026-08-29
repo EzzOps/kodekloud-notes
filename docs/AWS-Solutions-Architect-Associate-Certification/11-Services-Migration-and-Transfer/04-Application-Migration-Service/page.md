@@ -39,7 +39,7 @@ The migration process begins by installing a replication agent on your on-premis
 
 When executing a failover, cutover, or migration test, the service deploys the required servers within the migrated resources subnet as EC2 instances, sized appropriately and equipped with the latest snapshots from the replicated EBS volumes. Even after cutover, continuous replication persists from on-premises to the staging area. This approach enables you to remigrate with the latest data in case of issues or for additional testing.
 
-![The image is a diagram illustrating the automated cutover and testing features of AWS MGN, showing the data flow between a corporate data center and AWS Cloud, including components like AWS Replication Agent, EC2, and S3.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865414/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Application-Migration-Service/aws-mgn-automated-cutover-diagram.jpg)
+![The image is a diagram illustrating the automated cutover and testing features of AWS MGN, showing the data flow between a corporate data center and AWS Cloud, including components like AWS Replication Agent, EC2, and S3.](https://kodekloud.com/kk-media/image/upload/v1752865414/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Application-Migration-Service/aws-mgn-automated-cutover-diagram.jpg)
 
 ## Integration with Other AWS Services
 

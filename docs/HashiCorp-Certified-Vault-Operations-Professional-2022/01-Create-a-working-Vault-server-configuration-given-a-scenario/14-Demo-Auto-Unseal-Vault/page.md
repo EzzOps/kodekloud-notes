@@ -6,12 +6,10 @@ This guide explains how to configure Vault with AWS KMS for auto-unseal and migr
 
 In this guide, you’ll learn how to start a Vault server locally, initialize it with Raft storage, configure AWS KMS for auto-unseal, migrate from Shamir sealing to AWS KMS, and validate the auto-unseal workflow. This is ideal for test environments and hands-on practice toward certification.
 
-<Callout icon="lightbulb">
-  * Vault v1.10.0-ent or later
+> **lightbulb** * Vault v1.10.0-ent or later
   * AWS CLI v2 configured with sufficient IAM permissions
   * A customer-managed AWS KMS key in the desired region
   * Basic knowledge of Vault CLI and AWS IAM
-</Callout>
 
 ***
 
@@ -171,9 +169,7 @@ license_path = "/Users/bk/vault/vault.hclic"
 
 In the AWS KMS console, copy your customer-managed key ARN:
 
-<Frame>
-  ![The image shows an AWS Key Management Service (KMS) console screen displaying details of a customer-managed key, including its general configuration and key administrators. The background features various logos and icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878417/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Auto-Unseal-Vault/aws-kms-console-customer-key-details.jpg)
-</Frame>
+![The image shows an AWS Key Management Service (KMS) console screen displaying details of a customer-managed key, including its general configuration and key administrators. The background features various logos and icons.](https://kodekloud.com/kk-media/image/upload/v1752878417/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Auto-Unseal-Vault/aws-kms-console-customer-key-details.jpg)
 
 ***
 
@@ -181,13 +177,9 @@ In the AWS KMS console, copy your customer-managed key ARN:
 
 Create an IAM user with programmatic access and attach a policy allowing Vault to use the KMS key.
 
-<Frame>
-  ![The image shows a web page from the AWS Management Console where a user is being added. It includes fields for setting user details and selecting AWS access types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878418/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Auto-Unseal-Vault/aws-management-console-add-user-page.jpg)
-</Frame>
+![The image shows a web page from the AWS Management Console where a user is being added. It includes fields for setting user details and selecting AWS access types.](https://kodekloud.com/kk-media/image/upload/v1752878418/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Auto-Unseal-Vault/aws-management-console-add-user-page.jpg)
 
-<Frame>
-  ![The image shows an AWS IAM Management Console screen where a user is being added, with options to set permissions by attaching existing policies directly. The background features various tech-related logos.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878419/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Auto-Unseal-Vault/aws-iam-management-console-user-permissions.jpg)
-</Frame>
+![The image shows an AWS IAM Management Console screen where a user is being added, with options to set permissions by attaching existing policies directly. The background features various tech-related logos.](https://kodekloud.com/kk-media/image/upload/v1752878419/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Auto-Unseal-Vault/aws-iam-management-console-user-permissions.jpg)
 
 Example IAM policy:
 
@@ -228,9 +220,7 @@ export AWS_REGION="us-east-1"
 
 ***
 
-<Callout icon="triangle-alert">
-  Perform seal migration only in a non-production environment first. Ensure you have backups of your unseal keys before proceeding.
-</Callout>
+> **triangle-alert** Perform seal migration only in a non-production environment first. Ensure you have backups of your unseal keys before proceeding.
 
 ## 8. Restart & Migrate Seal
 
@@ -294,8 +284,6 @@ You have now configured Vault with AWS KMS auto-unseal, migrated from Shamir, an
 * [AWS KMS Developer Guide](https://docs.aws.amazon.com/kms/latest/developerguide/)
 * [HashiCorp Vault Docs](https://www.vaultproject.io/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/41ed18f5-944f-4ec4-84d9-b982100b3551" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/41ed18f5-944f-4ec4-84d9-b982100b3551)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/417b8f52-16d9-424f-b5d3-b11d6c3add88" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/417b8f52-16d9-424f-b5d3-b11d6c3add88)

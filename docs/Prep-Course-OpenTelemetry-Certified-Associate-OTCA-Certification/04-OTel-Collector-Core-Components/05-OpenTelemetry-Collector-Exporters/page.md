@@ -23,9 +23,7 @@ Table: Exporter role and examples
 | Fan-out        | Send same telemetry to multiple systems in parallel  | One pipeline → OTLP + logging              |
 | Observability  | Monitor exporter performance to detect failures      | Use `logging` exporter to inspect payloads |
 
-<Callout icon="lightbulb">
-  When an exporter name contains special characters (for example, a slash `/`), wrap the name in quotes in YAML (for example: `"otlp/primary"`) to avoid YAML parsing issues.
-</Callout>
+> **lightbulb** When an exporter name contains special characters (for example, a slash `/`), wrap the name in quotes in YAML (for example: `"otlp/primary"`) to avoid YAML parsing issues.
 
 ## Example configuration
 
@@ -82,9 +80,7 @@ Exporters focus on delivering data; end-to-end resilience is typically implement
 
 The `batch` processor in the example reduces overhead and increases throughput. For stronger guarantees (queueing, retries, backpressure protection), add appropriate processors prior to exporters.
 
-<Callout icon="warning">
-  Keep exporter endpoints and credentials secure. Many exporters support TLS, authentication headers, and other security settings—configure them to avoid leaking sensitive telemetry or credentials.
-</Callout>
+> **warning** Keep exporter endpoints and credentials secure. Many exporters support TLS, authentication headers, and other security settings—configure them to avoid leaking sensitive telemetry or credentials.
 
 ## Practical considerations and best practices
 
@@ -111,6 +107,4 @@ Exporters are a core piece of Collector configuration. They define where your te
 * [OTLP Specification](https://github.com/open-telemetry/opentelemetry-specification/tree/main/protocol)
 * [OpenTelemetry Collector Components](https://opentelemetry.io/docs/collector/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/ca480a1e-9058-4ade-af57-6107220374c8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/ca480a1e-9058-4ade-af57-6107220374c8)

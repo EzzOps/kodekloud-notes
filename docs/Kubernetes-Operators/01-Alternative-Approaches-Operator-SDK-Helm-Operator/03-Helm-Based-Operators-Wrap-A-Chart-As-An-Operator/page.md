@@ -27,9 +27,7 @@ operator-sdk version
 
 Note: the reported "kubernetes version" refers to the Kubernetes client libraries bundled with the SDK binary, not your cluster version.
 
-<Callout icon="lightbulb">
-  If you are already familiar with the [Kubebuilder](https://learn.kodekloud.com/user/courses/kubernetes-operators) scaffold, the operator-sdk Go scaffold will feel familiar: you still write API types and a reconciler, and you still run a controller manager. operator-sdk layers additional tooling and plugins (manifests, scorecard, OLM) around that shared foundation.
-</Callout>
+> **lightbulb** If you are already familiar with the [Kubebuilder](https://learn.kodekloud.com/user/courses/kubernetes-operators) scaffold, the operator-sdk Go scaffold will feel familiar: you still write API types and a reconciler, and you still run a controller manager. operator-sdk layers additional tooling and plugins (manifests, scorecard, OLM) around that shared foundation.
 
 ## Initialize a clean Go operator-sdk project
 
@@ -156,9 +154,7 @@ The operator-sdk Go plugin uses the same controller-runtime and Kubebuilder-styl
 * [Kubebuilder / Kubernetes Operators course](https://learn.kodekloud.com/user/courses/kubernetes-operators)
 * [controller-runtime documentation](https://pkg.go.dev/sigs.k8s.io/controller-runtime)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/d2537d70-4008-4d53-ad04-b7731ca0f7c0/lesson/0a8c350b-f62f-4772-8899-ee7f3c567bf6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/d2537d70-4008-4d53-ad04-b7731ca0f7c0/lesson/0a8c350b-f62f-4772-8899-ee7f3c567bf6)
 
 
 # Helm Based Operators Wrap A Chart As An Operator

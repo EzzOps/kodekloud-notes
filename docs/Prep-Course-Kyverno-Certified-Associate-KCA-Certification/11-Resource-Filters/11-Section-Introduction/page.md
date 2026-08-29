@@ -33,9 +33,7 @@ Filtering in Kyverno is built on two straightforward blocks at the rule level:
 
 A resource must satisfy the `match` criteria and must not match any `exclude` criteria for the rule to be applied.
 
-<Callout icon="lightbulb">
-  The `match` filter narrows which resources are considered; `exclude` removes exceptions from that matched set. A resource must pass `match` and not match any `exclude` to have the rule applied.
-</Callout>
+> **lightbulb** The `match` filter narrows which resources are considered; `exclude` removes exceptions from that matched set. A resource must pass `match` and not match any `exclude` to have the rule applied.
 
 Minimal example: match + exclude
 This concise rule enforces `spec.replicas: 3` for Deployments, but excludes Deployments in `kube-system` and those labeled `ci: "true"`:
@@ -105,6 +103,4 @@ Links and references
 * [Kubernetes labels and selectors](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
 * [Admission control and request context in Kyverno](https://kyverno.io/docs/writing-policies/validate/#using-context-variables)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/00d10aba-e01f-4e98-8e42-365790abdcd1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/00d10aba-e01f-4e98-8e42-365790abdcd1)

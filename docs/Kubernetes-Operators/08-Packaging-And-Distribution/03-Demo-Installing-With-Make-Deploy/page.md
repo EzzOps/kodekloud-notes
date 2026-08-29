@@ -45,9 +45,7 @@ Why this works well for operators:
 * Running as a non-root user increases runtime security.
 * Distroless images are ideal for production but limit in-container debugging because typical tooling is absent.
 
-<Callout icon="lightbulb">
-  Using a distroless image with a static binary improves security and minimizes image size, but it also means debugging inside the container is limited since shells and typical tooling are absent.
-</Callout>
+> **lightbulb** Using a distroless image with a static binary improves security and minimizes image size, but it also means debugging inside the container is limited since shells and typical tooling are absent.
 
 ## Makefile targets for building and publishing
 
@@ -97,9 +95,7 @@ Table: Makefile targets summary
 | `docker-push`   | Push a single-arch image to registry            | `make docker-push IMG=example/operator:dev`      |
 | `docker-buildx` | Build & push a multi-arch image (manifest list) | `make docker-buildx IMG=example/operator:latest` |
 
-<Callout icon="warning">
-  If a tag only points to an `amd64` image, an `arm64` node cannot run that image. Use a multi-arch manifest list (via Buildx) to support heterogeneous clusters.
-</Callout>
+> **warning** If a tag only points to an `amd64` image, an `arm64` node cannot run that image. Use a multi-arch manifest list (via Buildx) to support heterogeneous clusters.
 
 ## Separating image and install manifests
 
@@ -125,9 +121,7 @@ Further reading and references
 * [Docker Buildx documentation](https://docs.docker.com/buildx/working-with-buildx/)
 * [Container image best practices (Google)](https://cloud.google.com/container-registry/docs/best-practices)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/5a9bfe56-bc26-4325-b659-06027d4e815f/lesson/e84aeab2-57ea-4683-8b73-2dd39c38cf57" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/5a9bfe56-bc26-4325-b659-06027d4e815f/lesson/e84aeab2-57ea-4683-8b73-2dd39c38cf57)
 
 
 # Demo Installing With Make Deploy

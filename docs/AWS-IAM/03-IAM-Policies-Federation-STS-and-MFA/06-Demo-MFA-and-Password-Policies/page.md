@@ -11,12 +11,12 @@ In this tutorial, you’ll learn how to secure your AWS environment by enabling 
 1. Sign in to the AWS Management Console and open the **IAM** dashboard.
 2. Select **Users** in the navigation pane to view all IAM accounts.
 
-![The image shows an AWS Identity and Access Management (IAM) dashboard displaying a list of users with details such as username, path, groups, last activity, MFA, and password age.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862979/notes-assets/images/AWS-IAM-Demo-MFA-and-Password-Policies/aws-iam-dashboard-users-list-details.jpg)
+![The image shows an AWS Identity and Access Management (IAM) dashboard displaying a list of users with details such as username, path, groups, last activity, MFA, and password age.](https://kodekloud.com/kk-media/image/upload/v1752862979/notes-assets/images/AWS-IAM-Demo-MFA-and-Password-Policies/aws-iam-dashboard-users-list-details.jpg)
 
 3. Click on the user **John**, then open the **Security credentials** tab.
 4. Under **Multi-Factor Authentication (MFA)**, click **Assign MFA device**.
 
-![The image shows an AWS Identity and Access Management (IAM) console screen, focusing on multi-factor authentication (MFA) settings for a user, with an option to assign an MFA device.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862981/notes-assets/images/AWS-IAM-Demo-MFA-and-Password-Policies/aws-iam-console-mfa-settings.jpg)
+![The image shows an AWS Identity and Access Management (IAM) console screen, focusing on multi-factor authentication (MFA) settings for a user, with an option to assign an MFA device.](https://kodekloud.com/kk-media/image/upload/v1752862981/notes-assets/images/AWS-IAM-Demo-MFA-and-Password-Policies/aws-iam-console-mfa-settings.jpg)
 
 5. Provide a **Device label** (for example, “MFA”) and choose your device type from the table below:
 
@@ -26,7 +26,7 @@ In this tutorial, you’ll learn how to secure your AWS environment by enabling 
 | Security key        | FIDO2/WebAuthn hardware key                                      |
 | Hardware TOTP token | Physical token generating time-based codes                       |
 
-![The image shows an AWS IAM interface for selecting a multi-factor authentication (MFA) device, with options for an authenticator app, security key, and hardware TOTP token.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862982/notes-assets/images/AWS-IAM-Demo-MFA-and-Password-Policies/aws-iam-mfa-device-selection-interface.jpg)
+![The image shows an AWS IAM interface for selecting a multi-factor authentication (MFA) device, with options for an authenticator app, security key, and hardware TOTP token.](https://kodekloud.com/kk-media/image/upload/v1752862982/notes-assets/images/AWS-IAM-Demo-MFA-and-Password-Policies/aws-iam-mfa-device-selection-interface.jpg)
 
 > **lightbulb** Make sure your chosen authenticator app supports Time-based One-Time Passwords (TOTP).
 
@@ -52,7 +52,7 @@ In this tutorial, you’ll learn how to secure your AWS environment by enabling 
 | Password expiration       | Disabled                                                         |
 | Password reuse prevention | None                                                             |
 
-![The image shows an AWS Identity and Access Management (IAM) account settings page, detailing the default password policy requirements, including minimum length and character types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862983/notes-assets/images/AWS-IAM-Demo-MFA-and-Password-Policies/aws-iam-account-settings-password-policy.jpg)
+![The image shows an AWS Identity and Access Management (IAM) account settings page, detailing the default password policy requirements, including minimum length and character types.](https://kodekloud.com/kk-media/image/upload/v1752862983/notes-assets/images/AWS-IAM-Demo-MFA-and-Password-Policies/aws-iam-account-settings-password-policy.jpg)
 
 3. Click **Edit**, select **Custom**, and modify settings such as:
    * **Minimum password length**
@@ -60,7 +60,7 @@ In this tutorial, you’ll learn how to secure your AWS environment by enabling 
    * **Required character types**
    * **Prevent password reuse**
 
-![The image shows an AWS IAM password policy settings page, where custom password requirements can be configured, including minimum length and strength criteria.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862985/notes-assets/images/AWS-IAM-Demo-MFA-and-Password-Policies/aws-iam-password-policy-settings.jpg)
+![The image shows an AWS IAM password policy settings page, where custom password requirements can be configured, including minimum length and strength criteria.](https://kodekloud.com/kk-media/image/upload/v1752862985/notes-assets/images/AWS-IAM-Demo-MFA-and-Password-Policies/aws-iam-password-policy-settings.jpg)
 
 4. Once you've tailored the policy to your organizational standards, click **Save changes**. All IAM users will now be subject to the updated policy.
 

@@ -84,13 +84,9 @@ Think of a Deployment as a neighborhood plan and pods as houses. When you scale 
   <img alt="A presentation slide titled &#x22;Key Takeaways&#x22; with three colored panels—Scaling, Hostnames, and Application Behavior—each illustrated by an icon and a short note. It explains that increasing replicas adds pods, each pod gets a unique hostname, and scaling can change application behavior based on those hostnames." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Prefer Services for stable access to an application, and prefer stateless pods for easy horizontal scaling. Use StatefulSets only when you require stable pod identities or persistent storage tied to individual pods.
-</Callout>
+> **lightbulb** Prefer Services for stable access to an application, and prefer stateless pods for easy horizontal scaling. Use StatefulSets only when you require stable pod identities or persistent storage tied to individual pods.
 
-<Callout icon="warning">
-  Important: Do not use pod hostnames for durable session affinity, unique user identity, or persistent storage binding. Those requirements need Services, external storage, or StatefulSets to ensure stability across scaling and restarts.
-</Callout>
+> **warning** Important: Do not use pod hostnames for durable session affinity, unique user identity, or persistent storage binding. Those requirements need Services, external storage, or StatefulSets to ensure stability across scaling and restarts.
 
 Understanding these behaviors is essential before introducing automated scaling (HPA), because an HPA changes replica counts dynamically based on metrics — the same considerations about ephemeral hostnames and stateful behavior still apply.
 
@@ -100,8 +96,6 @@ Further reading and references:
 * [Kubernetes: Services](https://kubernetes.io/docs/concepts/services-networking/service/)
 * [Kubernetes: StatefulSets](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/66710f67-c094-4a4c-b718-4a031d1ddebe/lesson/4c3caee4-e0bd-4a9e-90ba-ac8e9ea9230f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/66710f67-c094-4a4c-b718-4a031d1ddebe/lesson/4c3caee4-e0bd-4a9e-90ba-ac8e9ea9230f)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/66710f67-c094-4a4c-b718-4a031d1ddebe/lesson/07c8db56-dd00-44c2-9da0-d391e677e204" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/66710f67-c094-4a4c-b718-4a031d1ddebe/lesson/07c8db56-dd00-44c2-9da0-d391e677e204)

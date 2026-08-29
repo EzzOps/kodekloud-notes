@@ -26,9 +26,7 @@ If you love writing code, start by exploring an open source project’s issue tr
 * Provide constructive code reviews on others’ PRs
 * Engage in architecture and design discussions
 
-<Callout icon="lightbulb">
-  Providing clear commit messages and following the project’s style guide will speed up your pull request reviews.
-</Callout>
+> **lightbulb** Providing clear commit messages and following the project’s style guide will speed up your pull request reviews.
 
 ## 2. Documentation and Technical Writing
 
@@ -40,9 +38,7 @@ Clear, concise documentation is essential for onboarding and retention. You can 
 
 Programs like [Google’s Season of Docs](https://developers.google.com/season-of-docs) pair technical writers with open source teams to produce high-quality docs.
 
-<Frame>
-  ![The image shows a webpage for "Season of Docs," featuring a welcome message and an illustration of a moon, sun, and clouds. The background is dark with a pixelated heart and a design icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882515/notes-assets/images/Open-Source-for-Beginners-Types-of-Contributions/season-of-docs-welcome-moon-sun-clouds.jpg)
-</Frame>
+![The image shows a webpage for "Season of Docs," featuring a welcome message and an illustration of a moon, sun, and clouds. The background is dark with a pixelated heart and a design icon.](https://kodekloud.com/kk-media/image/upload/v1752882515/notes-assets/images/Open-Source-for-Beginners-Types-of-Contributions/season-of-docs-welcome-moon-sun-clouds.jpg)
 
 ## 3. Event Organization
 
@@ -64,9 +60,7 @@ Good design elevates user experience and adoption. Designers can contribute by:
 * Creating or refining design systems and style guides
 * Producing open source templates, icons, and asset libraries
 
-<Frame>
-  ![The image is a diagram illustrating "Types of Contributions" in design, featuring a pixelated heart and four categories: Research Design, Standardize Design, Iterate Design, and Own Design Artefacts. Each category is represented with a distinct color and icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882516/notes-assets/images/Open-Source-for-Beginners-Types-of-Contributions/types-of-contributions-design-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating "Types of Contributions" in design, featuring a pixelated heart and four categories: Research Design, Standardize Design, Iterate Design, and Own Design Artefacts. Each category is represented with a distinct color and icon.](https://kodekloud.com/kk-media/image/upload/v1752882516/notes-assets/images/Open-Source-for-Beginners-Types-of-Contributions/types-of-contributions-design-diagram.jpg)
 
 ## 5. Mentorship and Community Support
 
@@ -77,9 +71,7 @@ Supporting and mentoring newcomers is vital for project longevity. You can:
 * Help define the project roadmap, governance, and contribution policies
 * Create blog posts, video tutorials, or give talks about project use cases
 
-<Callout icon="lightbulb">
-  Small gestures—like fixing a typo or welcoming a new member—foster a positive, inclusive community culture.
-</Callout>
+> **lightbulb** Small gestures—like fixing a typo or welcoming a new member—foster a positive, inclusive community culture.
 
 ***
 
@@ -92,6 +84,4 @@ Supporting and mentoring newcomers is vital for project longevity. You can:
 
 Ready to make your first contribution? Explore issues labeled `good first issue` on GitHub or GitLab today!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/fbb6900d-94ee-411a-8821-42557ca81867/lesson/3d614051-b5d9-40e2-bcfa-fd56fef89723" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/fbb6900d-94ee-411a-8821-42557ca81867/lesson/3d614051-b5d9-40e2-bcfa-fd56fef89723)

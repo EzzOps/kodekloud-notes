@@ -6,7 +6,7 @@ This lesson covers the fundamentals of identity and access management in AWS, fo
 
 In this lesson, we delve into the fundamentals of identity and access management (IAM) in AWS. We will cover essential concepts of authentication and authorization, demonstrating how AWS grants access privileges to users and employees in a secure manner.
 
-![The image is a slide titled "Section Objectives" with two bullet points: "Authentication and authorization in AWS" and "Granting access to AWS for users and employees."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858969/notes-assets/images/AWS-Certified-Developer-Associate-Section-Introduction/section-objectives-aws-authentication-access.jpg)
+![The image is a slide titled "Section Objectives" with two bullet points: "Authentication and authorization in AWS" and "Granting access to AWS for users and employees."](https://kodekloud.com/kk-media/image/upload/v1752858969/notes-assets/images/AWS-Certified-Developer-Associate-Section-Introduction/section-objectives-aws-authentication-access.jpg)
 
 > **lightbulb** Always follow AWS best practices when configuring IAM to ensure your resources remain secure.
 

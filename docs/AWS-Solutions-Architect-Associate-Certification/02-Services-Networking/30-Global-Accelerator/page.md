@@ -23,7 +23,7 @@ When Global Accelerator is enabled, user traffic is efficiently managed through 
 
 > **lightbulb** By bypassing the unpredictable public internet and leveraging the AWS backbone, Global Accelerator ensures your users experience faster and more consistent connections.
 
-![The image is a map illustrating the AWS Backbone Network with various global locations marked by icons, labeled "Global Accelerator."](../../../../images/kodekloud.com/kk-media/image/upload/v1752865556/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Global-Accelerator/aws-backbone-network-map.jpg)
+![The image is a map illustrating the AWS Backbone Network with various global locations marked by icons, labeled "Global Accelerator."](https://kodekloud.com/kk-media/image/upload/v1752865556/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Global-Accelerator/aws-backbone-network-map.jpg)
 
 The diagram above demonstrates how user traffic is swiftly routed onto the AWS backbone network, making the connection significantly faster compared to traditional internet routing.
 
@@ -38,7 +38,7 @@ While both CloudFront and Global Accelerator make use of edge locations, they se
 
 > **lightbulb** Explore more about AWS networking solutions and best practices by visiting the [AWS Documentation](https://aws.amazon.com/documentation/).
 
-![The image is a summary slide discussing AWS services, specifically CloudFront for caching data at the edge and Global Accelerator for routing users to edge locations for optimized network access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865557/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Global-Accelerator/aws-cloudfront-global-accelerator-summary.jpg)
+![The image is a summary slide discussing AWS services, specifically CloudFront for caching data at the edge and Global Accelerator for routing users to edge locations for optimized network access.](https://kodekloud.com/kk-media/image/upload/v1752865557/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Global-Accelerator/aws-cloudfront-global-accelerator-summary.jpg)
 
 Global Accelerator leverages the robust AWS global network to provide secure, fast, and efficient network paths, ensuring your application performs effectively regardless of user location.
 

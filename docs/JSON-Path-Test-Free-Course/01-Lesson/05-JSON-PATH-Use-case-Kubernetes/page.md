@@ -13,25 +13,19 @@ Hello and welcome! I’m Mumshal Manambath. In this guide, you’ll learn how to
 * Custom columns and table sorting
 * Practice exercises to reinforce your skills
 
-<Frame>
-  ![The image lists objectives related to using JSON PATH in KubeCtl, including topics like viewing JSON output, using JSON PATH, examples, loops, custom columns, sorting, and practice tests. There's also a small diagram showing a KubeCtl command and output.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879397/notes-assets/images/JSON-Path-Test-Free-Course-JSON-PATH-Use-case-Kubernetes/json-path-kubectl-objectives-diagram.jpg)
-</Frame>
+![The image lists objectives related to using JSON PATH in KubeCtl, including topics like viewing JSON output, using JSON PATH, examples, loops, custom columns, sorting, and practice tests. There's also a small diagram showing a KubeCtl command and output.](https://kodekloud.com/kk-media/image/upload/v1752879397/notes-assets/images/JSON-Path-Test-Free-Course-JSON-PATH-Use-case-Kubernetes/json-path-kubectl-objectives-diagram.jpg)
 
 ## Prerequisites
 
 You should already have a basic grasp of JSONPath syntax and be comfortable running `kubectl` commands against a Kubernetes cluster.
 
-<Callout icon="lightbulb">
-  If you’re new to JSONPath, try these free resources before continuing:
+> **lightbulb** If you’re new to JSONPath, try these free resources before continuing:
 
   * YouTube tutorials
   * [CodeKloud JSONPath exercises](https://kodekloud.com)
   * Online JSONPath playgrounds (e.g., [jsonpath.com](https://jsonpath.com))
-</Callout>
 
-<Frame>
-  ![The image lists prerequisites for a JSON PATH quiz, including resources on YouTube and KodeKloud, and provides a URL for the quiz.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879398/notes-assets/images/JSON-Path-Test-Free-Course-JSON-PATH-Use-case-Kubernetes/json-path-quiz-prerequisites.jpg)
-</Frame>
+![The image lists prerequisites for a JSON PATH quiz, including resources on YouTube and KodeKloud, and provides a URL for the quiz.](https://kodekloud.com/kk-media/image/upload/v1752879398/notes-assets/images/JSON-Path-Test-Free-Course-JSON-PATH-Use-case-Kubernetes/json-path-quiz-prerequisites.jpg)
 
 ## Why Use JSONPath with `kubectl`?
 
@@ -43,9 +37,7 @@ Managing production Kubernetes clusters often means inspecting hundreds of nodes
 
 Manual parsing is error-prone and time-consuming. JSONPath queries with `kubectl` provide a programmable way to slice and dice cluster data.
 
-<Frame>
-  ![The image is a slide titled "Why JSON PATH?" and lists reasons such as handling large datasets, including hundreds of nodes and thousands of PODs, deployments, and ReplicaSets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879399/notes-assets/images/JSON-Path-Test-Free-Course-JSON-PATH-Use-case-Kubernetes/why-json-path-large-datasets.jpg)
-</Frame>
+![The image is a slide titled "Why JSON PATH?" and lists reasons such as handling large datasets, including hundreds of nodes and thousands of PODs, deployments, and ReplicaSets.](https://kodekloud.com/kk-media/image/upload/v1752879399/notes-assets/images/JSON-Path-Test-Free-Course-JSON-PATH-Use-case-Kubernetes/why-json-path-large-datasets.jpg)
 
 ## Understanding `kubectl` Output
 
@@ -95,9 +87,7 @@ node01   Ready    <none>   40m   v1.11.3     172.17.0.63    Ubuntu 16.04.2 LTS  
 
 Neither the default table nor `kubectl describe` lets you build fully custom reports (for example, listing node CPU, taints, and container images in one view). This is where JSONPath shines.
 
-<Frame>
-  ![The image shows a Kubernetes-related table with node information, including CPU, taints, architecture, and images, under the title "KubeCtl - JSON PATH."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879400/notes-assets/images/JSON-Path-Test-Free-Course-JSON-PATH-Use-case-Kubernetes/kubectl-json-path-node-info-table.jpg)
-</Frame>
+![The image shows a Kubernetes-related table with node information, including CPU, taints, architecture, and images, under the title "KubeCtl - JSON PATH."](https://kodekloud.com/kk-media/image/upload/v1752879400/notes-assets/images/JSON-Path-Test-Free-Course-JSON-PATH-Use-case-Kubernetes/kubectl-json-path-node-info-table.jpg)
 
 ## Getting Started with JSONPath
 
@@ -118,9 +108,7 @@ Neither the default table nor `kubectl describe` lets you build fully custom rep
    kubectl get pods -o jsonpath='{.items[0].spec.containers[0].image}'
    ```
 
-<Callout icon="lightbulb">
-  Use an online JSONPath evaluator to verify your expression before embedding it in `kubectl`.
-</Callout>
+> **lightbulb** Use an online JSONPath evaluator to verify your expression before embedding it in `kubectl`.
 
 ## Basic JSONPath Queries
 
@@ -199,8 +187,6 @@ You now know how to extract, format, and sort Kubernetes data using JSONPath wit
 
 Happy querying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/ddf217bb-9d2a-44ff-88ed-18716f1a4e6b" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/ddf217bb-9d2a-44ff-88ed-18716f1a4e6b)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/b6bf9fca-719a-4013-9ae6-7ea3f11657dc" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/b6bf9fca-719a-4013-9ae6-7ea3f11657dc)

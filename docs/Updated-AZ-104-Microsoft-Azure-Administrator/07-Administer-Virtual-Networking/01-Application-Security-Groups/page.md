@@ -16,9 +16,7 @@ ASGs enable you to organize your VMs with similar security requirements into log
 
 This grouping technique allows you to reference an ASG directly in your NSG rules instead of individual IP addresses, reducing management complexity and easing future modifications.
 
-<Callout icon="lightbulb">
-  Grouping VMs by application roles not only simplifies the creation of security rules but also enhances the overall manageability of your network security posture.
-</Callout>
+> **lightbulb** Grouping VMs by application roles not only simplifies the creation of security rules but also enhances the overall manageability of your network security posture.
 
 ## Practical Scenario
 
@@ -28,9 +26,7 @@ Using ASGs, you can implement several NSG rules that reference these groups rath
 
 Below is a network diagram illustrating this setup:
 
-<Frame>
-  ![The image is a network diagram illustrating the setup of application security groups within a virtual network, showing connections between virtual machines, subnets, and the internet using specific TCP ports.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884794/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Application-Security-Groups/application-security-groups-network-diagram.jpg)
-</Frame>
+![The image is a network diagram illustrating the setup of application security groups within a virtual network, showing connections between virtual machines, subnets, and the internet using specific TCP ports.](https://kodekloud.com/kk-media/image/upload/v1752884794/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Application-Security-Groups/application-security-groups-network-diagram.jpg)
 
 ## Configuring ASGs in the Azure Portal
 
@@ -43,9 +39,7 @@ The following steps outline how to configure ASGs using the Azure portal:
    * Some predefined rules are temporarily removed to facilitate the setup.
    * SSH is allowed from external sources on VM1.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for managing virtual machines, specifically focusing on the networking settings of "workload-a-vm-1." A pop-up is asking to confirm the deletion of a security rule named "Allow\_web."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884796/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Application-Security-Groups/azure-portal-vm-network-settings.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for managing virtual machines, specifically focusing on the networking settings of "workload-a-vm-1." A pop-up is asking to confirm the deletion of a security rule named "Allow\_web."](https://kodekloud.com/kk-media/image/upload/v1752884796/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Application-Security-Groups/azure-portal-vm-network-settings.jpg)
 
 2. **Review Effective Security Rules:**
 
@@ -62,9 +56,7 @@ The following steps outline how to configure ASGs using the Azure portal:
    * Create a new ASG — for instance, name it "VMs" for your web servers.
    * Similarly, create another ASG for non-web VMs if required.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating an application security group, with fields for project and instance details such as subscription, resource group, name, and region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884797/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Application-Security-Groups/azure-portal-application-security-group.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating an application security group, with fields for project and instance details such as subscription, resource group, name, and region.](https://kodekloud.com/kk-media/image/upload/v1752884797/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Application-Security-Groups/azure-portal-application-security-group.jpg)
 
 4. **Assigning ASGs to Virtual Machines:**
 
@@ -72,13 +64,9 @@ The following steps outline how to configure ASGs using the Azure portal:
 
    * In the "Networking" section of a non-web VM, locate the "Application Security Groups" area and assign the corresponding ASG.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying details of an application security group named "b-vms," including its resource group, location, and subscription information. A notification about modifying the network interface is visible in the top right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884798/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Application-Security-Groups/azure-portal-application-security-group-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying details of an application security group named "b-vms," including its resource group, location, and subscription information. A notification about modifying the network interface is visible in the top right corner.](https://kodekloud.com/kk-media/image/upload/v1752884798/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Application-Security-Groups/azure-portal-application-security-group-2.jpg)
 
-<Callout icon="lightbulb">
-  Although the Application Security Groups blade displays the groups, actual assignments and modifications occur from within each virtual machine's configuration pane.
-</Callout>
+> **lightbulb** Although the Application Security Groups blade displays the groups, actual assignments and modifications occur from within each virtual machine's configuration pane.
 
 5. **Creating Inbound NSG Rules Using ASGs:**
 
@@ -90,9 +78,7 @@ The following steps outline how to configure ASGs using the Azure portal:
    * Choose a service tag like HTTP or specify a custom port (e.g., port 80).
    * Set the action to "Allow."
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface where a user is configuring networking settings for a virtual machine, specifically adding an inbound security rule.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884799/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Application-Security-Groups/azure-portal-networking-settings.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface where a user is configuring networking settings for a virtual machine, specifically adding an inbound security rule.](https://kodekloud.com/kk-media/image/upload/v1752884799/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Application-Security-Groups/azure-portal-networking-settings.jpg)
 
 After adding the rule, refresh the view to verify that traffic from the designated ASG can access the web server.
 
@@ -110,9 +96,7 @@ Once you have configured ASGs and NSG rules, testing the network setup is crucia
 
 3. If VM1 is removed from the ASG that permits web server access, connectivity may still persist due to default virtual network allowances. To enforce a block, create a high-priority NSG rule (using a lower numerical priority value, such as 100) to deny the unwanted traffic. This ensures that once removed from the ASG, the VM will no longer access the web server.
 
-<Callout icon="triangle-alert">
-  Ensure that you test the connectivity after applying rule changes. Improper configurations might expose VMs to unintended access.
-</Callout>
+> **triangle-alert** Ensure that you test the connectivity after applying rule changes. Improper configurations might expose VMs to unintended access.
 
 ## Benefits of Using ASGs with NSGs
 
@@ -136,6 +120,4 @@ By leveraging Application Security Groups together with Network Security Groups,
 
 This comprehensive approach not only boosts security but also enhances operational efficiency, making it an ideal solution for modern, dynamic cloud environments. Thanks for reading!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/809fc274-7871-4b13-8f85-052b43442c81/lesson/09a84e9d-070f-4ac9-88e7-424d3d7fa7bd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/809fc274-7871-4b13-8f85-052b43442c81/lesson/09a84e9d-070f-4ac9-88e7-424d3d7fa7bd)

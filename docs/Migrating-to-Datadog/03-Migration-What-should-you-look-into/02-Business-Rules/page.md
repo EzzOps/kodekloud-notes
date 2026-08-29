@@ -8,9 +8,7 @@ This lesson explains the core business rules and planning considerations when mi
 
 Prometheus is often the central piece of an observability stack because it collects both built-in and custom application metrics (for example, via Spring Boot Actuator). Audit Prometheus early so you can safely decommission it later—review configuration, scrape targets, metric filtering, and alerting rules that depend on those metrics.
 
-<Callout icon="lightbulb">
-  Audit Prometheus before deactivating it: verify alerts, scrape targets and paths, and any metric filtering to ensure Datadog will provide equivalent coverage.
-</Callout>
+> **lightbulb** Audit Prometheus before deactivating it: verify alerts, scrape targets and paths, and any metric filtering to ensure Datadog will provide equivalent coverage.
 
 ## Key Prometheus items to verify before migrating
 
@@ -37,9 +35,7 @@ Start with a focused audit of Prometheus to capture everything you'll need to re
   <img alt="The image is a diagram of a Prometheus setup for migration, highlighting three key components: Alerts from AlertManager, Scraping Endpoints, and Metrics Filter. Each section provides a brief description of its function, such as configuring alerts, defining endpoints, and filtering metrics." />
 </Frame>
 
-<Callout icon="warning">
-  Do not decommission Prometheus until you have validated parity in Datadog: test dashboards, alerting behavior, and run a parallel ingestion period to compare metrics and alerts.
-</Callout>
+> **warning** Do not decommission Prometheus until you have validated parity in Datadog: test dashboards, alerting behavior, and run a parallel ingestion period to compare metrics and alerts.
 
 Those are the essential Prometheus checkpoints—capture them in a migration runbook to avoid unexpected gaps in monitoring.
 
@@ -90,6 +86,4 @@ When mapping Prometheus concepts into Datadog, plan for ingestion method, cost, 
 
 That's it for this lesson. I hope you found the checklist and planning guidance helpful for a safe Prometheus to Datadog migration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/d7aaa833-22da-4f94-af5c-5d196f04ab31/lesson/f3291bd4-ca3a-4ef2-86e4-8d8ab2061865" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/d7aaa833-22da-4f94-af5c-5d196f04ab31/lesson/f3291bd4-ca3a-4ef2-86e4-8d8ab2061865)

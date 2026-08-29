@@ -5,9 +5,7 @@ ssh ec2-user@10.0.1.209
 ssh ec2-user@10.0.1.37
 ```
 
-<Callout icon="triangle-alert">
-  Ensure that both nodes can communicate over port `8200` and that the Vault CLI is installed and in your `PATH`.
-</Callout>
+> **triangle-alert** Ensure that both nodes can communicate over port `8200` and that the Vault CLI is installed and in your `PATH`.
 
 ***
 
@@ -59,9 +57,7 @@ Generate a token scoped to the `unseal` policy:
 vault token create -policy=unseal
 ```
 
-<Callout icon="lightbulb">
-  Save the `token` output securely. You will reference it in the target cluster’s configuration (for example, by exporting it as `VAULT_SEAL_TOKEN`).
-</Callout>
+> **lightbulb** Save the `token` output securely. You will reference it in the target cluster’s configuration (for example, by exporting it as `VAULT_SEAL_TOKEN`).
 
 ***
 
@@ -183,9 +179,7 @@ You’ve successfully set up a centralized Transit Secrets Engine to auto-unseal
 
 [raft-doc]: https://www.vaultproject.io/docs/storage/raft
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/66d6b1c0-e689-444c-8d5f-a30aa4c84101" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/66d6b1c0-e689-444c-8d5f-a30aa4c84101)
 
 
 # Pros and Cons of Unseal Options
@@ -202,9 +196,7 @@ Unlocking HashiCorp Vault requires an unseal mechanism that fits your security p
 | Cloud Auto-Unseal   | • Fully automated at startup<br />• Integrates with cloud HSM services | • Vendor lock-in potential<br />• Regional service limitations                |
 | Transit Auto-Unseal | • Centralized unseal for multiple clusters<br />• Cloud-agnostic       | • Requires highly available transit cluster<br />• Added operational overhead |
 
-<Frame>
-  ![The image is a comparison chart of unseal options, highlighting the pros of "Keys Shards," "Auto Unseal," and "Transit Unseal" with a colorful design and a cartoon character in the corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878213/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Pros-and-Cons-of-Unseal-Options/unseal-options-comparison-chart-colorful.jpg)
-</Frame>
+![The image is a comparison chart of unseal options, highlighting the pros of "Keys Shards," "Auto Unseal," and "Transit Unseal" with a colorful design and a cartoon character in the corner.](https://kodekloud.com/kk-media/image/upload/v1752878213/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Pros-and-Cons-of-Unseal-Options/unseal-options-comparison-chart-colorful.jpg)
 
 ## 1. Key Shards
 
@@ -222,9 +214,7 @@ Vault’s original unseal approach splits the master key into multiple shards. A
 * High risk of lost or exposed shards if not managed properly.
 * Shards must be rotated when custodians leave or keys are compromised.
 
-<Callout icon="triangle-alert">
-  Always store unseal shards in secure, separate locations. Consider encrypted hardware tokens or HSM-protected backups to reduce human-error risk.
-</Callout>
+> **triangle-alert** Always store unseal shards in secure, separate locations. Consider encrypted hardware tokens or HSM-protected backups to reduce human-error risk.
 
 ## 2. Cloud Auto-Unseal
 
@@ -241,9 +231,7 @@ Vault can integrate directly with cloud Key Management Services to decrypt its m
 * Tied to a specific cloud provider—potential for vendor lock-in.
 * Service availability and region limits may affect startup times.
 
-<Callout icon="lightbulb">
-  Review your cloud provider’s HSM SLAs to ensure they meet your uptime and latency requirements.
-</Callout>
+> **lightbulb** Review your cloud provider’s HSM SLAs to ensure they meet your uptime and latency requirements.
 
 ## 3. Transit Auto-Unseal
 
@@ -260,9 +248,7 @@ By leveraging Vault’s Transit secrets engine on a dedicated cluster, you can o
 * Introduces a critical dependency on a highly available transit cluster—misconfiguration can lead to outages.
 * Increases operational overhead to secure, monitor, and scale the transit cluster.
 
-<Callout icon="triangle-alert">
-  Ensure your transit cluster is deployed with replication or clustering enabled. A single Transit node failure could prevent all downstream Vault instances from unsealing.
-</Callout>
+> **triangle-alert** Ensure your transit cluster is deployed with replication or clustering enabled. A single Transit node failure could prevent all downstream Vault instances from unsealing.
 
 ## Further Reading
 
@@ -271,8 +257,6 @@ By leveraging Vault’s Transit secrets engine on a dedicated cluster, you can o
 * [Vault Transit Secrets Engine](https://www.vaultproject.io/docs/secrets/transit)
 * [Best Practices for Vault High Availability](https://www.vaultproject.io/docs/enterprise/haz)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/a201f459-d4bb-4332-a603-55b72ab566ab" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/a201f459-d4bb-4332-a603-55b72ab566ab)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/e222f1f9-db60-4d34-a0d3-12f9b0312710" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/e222f1f9-db60-4d34-a0d3-12f9b0312710)

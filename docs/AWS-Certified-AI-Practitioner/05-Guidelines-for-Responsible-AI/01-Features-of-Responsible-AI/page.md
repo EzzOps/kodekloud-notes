@@ -12,41 +12,41 @@ Responsible AI is underpinned by a set of guidelines and principles that help de
 
 Fairness is the cornerstone of responsible AI. It guarantees that AI models do not discriminate based on attributes such as age, gender, or race. For example, a credit score model should evaluate individuals based solely on their financial history rather than extraneous attributes like gender or ethnicity. Without this emphasis, AI systems may reinforce societal biases and erode public trust.
 
-![The image illustrates the core dimensions of responsible AI, including fairness, governance, privacy and security, robustness, and explainability, arranged in a circular diagram.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857570/notes-assets/images/AWS-Certified-AI-Practitioner-Features-of-Responsible-AI/responsible-ai-dimensions-diagram.jpg)
+![The image illustrates the core dimensions of responsible AI, including fairness, governance, privacy and security, robustness, and explainability, arranged in a circular diagram.](https://kodekloud.com/kk-media/image/upload/v1752857570/notes-assets/images/AWS-Certified-AI-Practitioner-Features-of-Responsible-AI/responsible-ai-dimensions-diagram.jpg)
 
 A common challenge in developing fair AI is addressing bias that may arise from imbalanced training data. When certain groups are underrepresented, the system may struggle to assess them accurately. For instance, if a medical AI model is trained predominantly on male patient data, it might underdiagnose conditions in women. Addressing these imbalances is essential to achieve fairness and ensure reliable outcomes for diverse populations.
 
-![The image is titled "Fairness in AI" and lists two topics: "Definition of fairness" and "The impact of bias in AI systems," each accompanied by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857571/notes-assets/images/AWS-Certified-AI-Practitioner-Features-of-Responsible-AI/fairness-in-ai-definition-bias.jpg)
+![The image is titled "Fairness in AI" and lists two topics: "Definition of fairness" and "The impact of bias in AI systems," each accompanied by an icon.](https://kodekloud.com/kk-media/image/upload/v1752857571/notes-assets/images/AWS-Certified-AI-Practitioner-Features-of-Responsible-AI/fairness-in-ai-definition-bias.jpg)
 
 ## Explainability
 
 Explainability helps foster accountability by making AI decision processes understandable for users. For example, if a loan application is rejected, the system should indicate whether the decision was influenced by factors such as inadequate credit history or low income. Transparent explanations reinforce user trust by ensuring that decisions are clear and justifiable.
 
-![The image is a slide titled "Explainability in AI," highlighting the importance of explaining AI decisions with a real-life example of loan rejection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857572/notes-assets/images/AWS-Certified-AI-Practitioner-Features-of-Responsible-AI/explainability-in-ai-loan-rejection.jpg)
+![The image is a slide titled "Explainability in AI," highlighting the importance of explaining AI decisions with a real-life example of loan rejection.](https://kodekloud.com/kk-media/image/upload/v1752857572/notes-assets/images/AWS-Certified-AI-Practitioner-Features-of-Responsible-AI/explainability-in-ai-loan-rejection.jpg)
 
 ## Robustness
 
 Robustness refers to the ability of an AI system to handle unexpected scenarios—such as missing data or unusual inputs—without crashing or producing inaccurate results. Whether it's deployed in autonomous vehicles or healthcare robots, a robust AI system can minimize faults and prevent errors that could lead to adverse outcomes.
 
-![The image is a slide titled "Robustness of AI Systems," highlighting the definition of robustness in AI and the importance of failure tolerance and minimizing errors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857573/notes-assets/images/AWS-Certified-AI-Practitioner-Features-of-Responsible-AI/robustness-of-ai-systems-slide.jpg)
+![The image is a slide titled "Robustness of AI Systems," highlighting the definition of robustness in AI and the importance of failure tolerance and minimizing errors.](https://kodekloud.com/kk-media/image/upload/v1752857573/notes-assets/images/AWS-Certified-AI-Practitioner-Features-of-Responsible-AI/robustness-of-ai-systems-slide.jpg)
 
 ## Privacy and Security
 
 In fields that handle sensitive data, such as healthcare and finance, privacy and security are non-negotiable. Robust data protection mechanisms help prevent unauthorized access and ensure compliance with regulations like GDPR. This focus not only maintains user trust but also reduces legal risks for organizations.
 
-![The image highlights "Privacy and Security in AI," focusing on protecting user data and preventing the exposure of Personally Identifiable Information (PII).](../../../../images/kodekloud.com/kk-media/image/upload/v1752857575/notes-assets/images/AWS-Certified-AI-Practitioner-Features-of-Responsible-AI/privacy-security-ai-user-data.jpg)
+![The image highlights "Privacy and Security in AI," focusing on protecting user data and preventing the exposure of Personally Identifiable Information (PII).](https://kodekloud.com/kk-media/image/upload/v1752857575/notes-assets/images/AWS-Certified-AI-Practitioner-Features-of-Responsible-AI/privacy-security-ai-user-data.jpg)
 
 ## Governance
 
 Governance integrates all other dimensions by ensuring that AI systems adhere to legal standards and industry best practices. Effective governance includes risk assessment, incident reporting, and structured response protocols to manage and mitigate potential issues.
 
-![The image outlines key aspects of AI governance, focusing on meeting industry standards, legal compliance, and risk estimation and mitigation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857576/notes-assets/images/AWS-Certified-AI-Practitioner-Features-of-Responsible-AI/ai-governance-industry-standards.jpg)
+![The image outlines key aspects of AI governance, focusing on meeting industry standards, legal compliance, and risk estimation and mitigation.](https://kodekloud.com/kk-media/image/upload/v1752857576/notes-assets/images/AWS-Certified-AI-Practitioner-Features-of-Responsible-AI/ai-governance-industry-standards.jpg)
 
 ## Transparency
 
 Transparency is vital for clarifying both the capabilities and limitations of AI systems. Organizations must communicate the potential risks and benefits, such as occasional "hallucinatory" outputs or inaccuracies, so users understand that the tool should not be solely relied upon for critical decisions. This openness helps prevent misuse and strengthens overall trust in AI.
 
-![The image discusses "Transparency in AI," highlighting the importance of providing clear information about AI's capabilities and risks, and ensuring users know when they are interacting with AI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857577/notes-assets/images/AWS-Certified-AI-Practitioner-Features-of-Responsible-AI/transparency-in-ai-capabilities-risks.jpg)
+![The image discusses "Transparency in AI," highlighting the importance of providing clear information about AI's capabilities and risks, and ensuring users know when they are interacting with AI.](https://kodekloud.com/kk-media/image/upload/v1752857577/notes-assets/images/AWS-Certified-AI-Practitioner-Features-of-Responsible-AI/transparency-in-ai-capabilities-risks.jpg)
 
 > **lightbulb** Understanding these key features is not only vital for designing ethical and reliable AI systems but is also a crucial part of our certification exam.
 

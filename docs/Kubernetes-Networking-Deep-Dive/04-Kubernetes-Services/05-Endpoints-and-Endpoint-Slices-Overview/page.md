@@ -10,9 +10,7 @@ Kubernetes Services provide a stable network endpoint for Pods, but under the ho
 
 An **Endpoint** object in Kubernetes keeps track of all Pod IPs and ports that back a Service. When you create a Service, Kubernetes uses its label selector to identify matching Pods and generates an Endpoints object with the same name.
 
-<Frame>
-  ![The image illustrates a network diagram showing a service (SVC) connected to endpoints with specific IP addresses, which in turn connect to three different pods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880346/notes-assets/images/Kubernetes-Networking-Deep-Dive-Endpoints-and-Endpoint-Slices-Overview/network-diagram-service-endpoints-pods.jpg)
-</Frame>
+![The image illustrates a network diagram showing a service (SVC) connected to endpoints with specific IP addresses, which in turn connect to three different pods.](https://kodekloud.com/kk-media/image/upload/v1752880346/notes-assets/images/Kubernetes-Networking-Deep-Dive-Endpoints-and-Endpoint-Slices-Overview/network-diagram-service-endpoints-pods.jpg)
 
 As Pods are created, deleted, or updated, the Endpoints object is managed automatically by the control plane—no manual edits are needed.
 
@@ -49,35 +47,25 @@ Fields explained:
 
 ### Limitations of Endpoints
 
-<Callout icon="triangle-alert">
-  Each Endpoints object can hold up to **1,000 addresses**. In large clusters or high-scale environments, this cap may lead to performance bottlenecks or truncated endpoint lists.
-</Callout>
+> **triangle-alert** Each Endpoints object can hold up to **1,000 addresses**. In large clusters or high-scale environments, this cap may lead to performance bottlenecks or truncated endpoint lists.
 
 | Resource  | Maximum Addresses | Impact                                  |
 | --------- | ----------------- | --------------------------------------- |
 | Endpoints | 1,000             | May require Service sharding or slicing |
 
-<Frame>
-  ![The image is a slide titled "Endpoint – Limitations," indicating that Kubernetes restricts endpoints to 1,000.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880347/notes-assets/images/Kubernetes-Networking-Deep-Dive-Endpoints-and-Endpoint-Slices-Overview/endpoint-limitations-kubernetes-restrictions.jpg)
-</Frame>
+![The image is a slide titled "Endpoint – Limitations," indicating that Kubernetes restricts endpoints to 1,000.](https://kodekloud.com/kk-media/image/upload/v1752880347/notes-assets/images/Kubernetes-Networking-Deep-Dive-Endpoints-and-Endpoint-Slices-Overview/endpoint-limitations-kubernetes-restrictions.jpg)
 
 ## Endpoint Slices
 
 Introduced as a beta feature in v1.17 and GA in v1.21, **Endpoint Slices** solve the scalability issues of Endpoints by splitting Pod endpoints into multiple, smaller objects. Each slice holds a subset of IPs, ports, and metadata, reducing control-plane load.
 
-<Frame>
-  ![The image is a diagram titled "Endpoint Slices," illustrating an advanced, scalable way to manage a network, with a network icon and a gradient label.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880348/notes-assets/images/Kubernetes-Networking-Deep-Dive-Endpoints-and-Endpoint-Slices-Overview/endpoint-slices-network-diagram.jpg)
-</Frame>
+![The image is a diagram titled "Endpoint Slices," illustrating an advanced, scalable way to manage a network, with a network icon and a gradient label.](https://kodekloud.com/kk-media/image/upload/v1752880348/notes-assets/images/Kubernetes-Networking-Deep-Dive-Endpoints-and-Endpoint-Slices-Overview/endpoint-slices-network-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Endpoint Slices support optional fields like **topology hints**, enabling you to optimize traffic routing based on node labels or zones.
-</Callout>
+> **lightbulb** Endpoint Slices support optional fields like **topology hints**, enabling you to optimize traffic routing based on node labels or zones.
 
 ### How Endpoint Slices Work
 
-<Frame>
-  ![The image illustrates how Endpoint Slices work in Kubernetes, showing the relationship between services, endpoint slices, and pods, with notes on management and dynamic updates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880349/notes-assets/images/Kubernetes-Networking-Deep-Dive-Endpoints-and-Endpoint-Slices-Overview/kubernetes-endpoint-slices-illustration.jpg)
-</Frame>
+![The image illustrates how Endpoint Slices work in Kubernetes, showing the relationship between services, endpoint slices, and pods, with notes on management and dynamic updates.](https://kodekloud.com/kk-media/image/upload/v1752880349/notes-assets/images/Kubernetes-Networking-Deep-Dive-Endpoints-and-Endpoint-Slices-Overview/kubernetes-endpoint-slices-illustration.jpg)
 
 * **Slices per Service**: Multiple Endpoint Slice objects can coexist for one Service.
 * **Subset Size**: By default, each slice holds up to 100 endpoints, configurable via the EndpointSlice API.
@@ -124,6 +112,4 @@ endpoints:
 * [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 * [Kubernetes Networking Deep Dive](https://kubernetes.io/blog/2020/09/03/kubernetes-networking-deep-dive/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/80501a3d-5b9b-46fc-b0f3-21c376a1730f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/00c6db37-72b0-44e1-8c3a-81e22c8d8af6/lesson/80501a3d-5b9b-46fc-b0f3-21c376a1730f)

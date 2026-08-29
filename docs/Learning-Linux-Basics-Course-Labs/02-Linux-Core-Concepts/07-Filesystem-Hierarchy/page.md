@@ -6,9 +6,7 @@ This article explores the Linux filesystem hierarchy, detailing the structure an
 
 In this article, we explore the Linux filesystem hierarchy, detailing the structure and purpose of various directories. Dave explains the layout while Bob listens attentively.
 
-<Frame>
-  ![The image illustrates a filesystem hierarchy, showing the root partition and directories like /bin, /boot, /dev, /etc, /home, /lib, /media, /mnt, /opt, /tmp, /usr, and /var.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881115/notes-assets/images/Learning-Linux-Basics-Course-Labs-Filesystem-Hierarchy/frame_10.jpg)
-</Frame>
+![The image illustrates a filesystem hierarchy, showing the root partition and directories like /bin, /boot, /dev, /etc, /home, /lib, /media, /mnt, /opt, /tmp, /usr, and /var.](https://kodekloud.com/kk-media/image/upload/v1752881115/notes-assets/images/Learning-Linux-Basics-Course-Labs-Filesystem-Hierarchy/frame_10.jpg)
 
 ## Key Directories and Their Purposes
 
@@ -21,9 +19,7 @@ Third-party programs are typically installed here. For example, if you are deplo
 • **/mnt** and **/tmp**\
 When setting up Bob’s laptop, Dave recommends installing security-mandated software. The software packages are stored in a repository on the company's network share. Dave mounts this repository temporarily at **/mnt** using the `mount` command, then copies the necessary packages to **/tmp**.
 
-<Callout icon="lightbulb">
-  **/mnt** is used for temporarily mounting filesystems, whereas **/tmp** is reserved for storing temporary data.
-</Callout>
+> **lightbulb** **/mnt** is used for temporarily mounting filesystems, whereas **/tmp** is reserved for storing temporary data.
 
 After the installation, Dave unmounts the network share from **/mnt** and deletes the temporary files in **/tmp**.
 
@@ -45,9 +41,7 @@ Modern Linux systems use **/usr** to store userland applications and their data.
 • **/var**\
 When system or application issues arise, logs and cached data stored in **/var** can provide essential troubleshooting insights.
 
-<Callout icon="lightbulb">
-  Always check the **/var** directory for log files and other system-generated information when diagnosing issues.
-</Callout>
+> **lightbulb** Always check the **/var** directory for log files and other system-generated information when diagnosing issues.
 
 ## Inspecting Mounted Filesystems
 
@@ -70,8 +64,6 @@ In this output, Bob observes that his USB drive is mounted under **/media** and 
 
 Before moving on, let's put these concepts into practice and solidify your understanding of the Linux filesystem hierarchy.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/19296611-5fb9-4e5d-a926-d157d3f3c3db/lesson/73c92380-90d6-4154-9cc8-82a6175d4fe7" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/19296611-5fb9-4e5d-a926-d157d3f3c3db/lesson/73c92380-90d6-4154-9cc8-82a6175d4fe7)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/19296611-5fb9-4e5d-a926-d157d3f3c3db/lesson/4e8c5cb2-6689-4685-8c4c-1cb73d32474e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/19296611-5fb9-4e5d-a926-d157d3f3c3db/lesson/4e8c5cb2-6689-4685-8c4c-1cb73d32474e)

@@ -51,9 +51,7 @@ pipeline {
 
 Once the changes are committed and pushed, Jenkins automatically triggers a new pipeline run. You can verify the successful execution using the Jenkins Blue Ocean interface. A successful build status in the corresponding job confirms that your pipeline has run correctly.
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying the activity of a project named "solar-system" under "Gitea-Organization," with a list of recent builds, their status, commit IDs, branches, messages, durations, and completion times.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879787/notes-assets/images/Jenkins-Pipelines-Install-Dependencies/jenkins-dashboard-solar-system-gitea.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying the activity of a project named "solar-system" under "Gitea-Organization," with a list of recent builds, their status, commit IDs, branches, messages, durations, and completion times.](https://kodekloud.com/kk-media/image/upload/v1752879787/notes-assets/images/Jenkins-Pipelines-Install-Dependencies/jenkins-dashboard-solar-system-gitea.jpg)
 
 ## Expected Installation Output
 
@@ -67,22 +65,16 @@ added 365 packages in 5s
 run `npm fund` for details
 ```
 
-<Callout icon="lightbulb">
-  The output confirms that the Node.js environment is set up properly and that the necessary dependencies have been installed.
-</Callout>
+> **lightbulb** The output confirms that the Node.js environment is set up properly and that the necessary dependencies have been installed.
 
 ## Verifying Dependency Installation
 
 After the installation is complete, check the `node_modules` folder in the Jenkins workspace to confirm that all dependencies have been added correctly. This view can be accessed via the Jenkins workspace interface:
 
-<Frame>
-  ![The image shows a Jenkins workspace interface displaying a list of folders and files within the "node\_modules" directory. The interface includes navigation options and a search bar.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879788/notes-assets/images/Jenkins-Pipelines-Install-Dependencies/jenkins-workspace-node-modules-interface.jpg)
-</Frame>
+![The image shows a Jenkins workspace interface displaying a list of folders and files within the "node\_modules" directory. The interface includes navigation options and a search bar.](https://kodekloud.com/kk-media/image/upload/v1752879788/notes-assets/images/Jenkins-Pipelines-Install-Dependencies/jenkins-workspace-node-modules-interface.jpg)
 
 With these steps, your Jenkins pipeline is now set up to install Node.js dependencies correctly with every repository push, setting the stage for subsequent pipeline processes.
 
 For more information on Jenkins pipelines and dependency management, visit the [Jenkins Documentation](https://www.jenkins.io/doc/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/7e239b62-2dfd-4594-85cf-e51c0707121c/lesson/8b696533-a64a-4edb-a091-20ce1775edcd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/7e239b62-2dfd-4594-85cf-e51c0707121c/lesson/8b696533-a64a-4edb-a091-20ce1775edcd)

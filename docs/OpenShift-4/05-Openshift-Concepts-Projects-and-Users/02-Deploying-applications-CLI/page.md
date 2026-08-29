@@ -17,9 +17,7 @@ kubectl apply -f complete-demo.yaml
 
 This procedure deploys several microservices that together form the full Sock Shop application. Once deployment completes, you should see a functional user interface displaying various components of the system.
 
-<Callout icon="lightbulb">
-  The Sock Shop app is widely used in Kubernetes demonstrations, making it a standard reference for multi-service architectures.
-</Callout>
+> **lightbulb** The Sock Shop app is widely used in Kubernetes demonstrations, making it a standard reference for multi-service architectures.
 
 ## Deploying on OpenShift
 
@@ -65,9 +63,7 @@ This YAML file defines several deployments and services that collectively bring 
 
 To confirm the successful deployment, navigate to the Routes section in the OpenShift console and locate the route for the new front-end service. Opening this route in your browser should display the application interface, demonstrating that the deployment has been successful.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Container Platform dashboard displaying a list of pods with their statuses, such as "Running" and "Completed." The interface includes navigation options like CronJobs, Jobs, and Networking Services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882698/notes-assets/images/OpenShift-4-Deploying-applications-CLI/openshift-dashboard-pods-statuses.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Container Platform dashboard displaying a list of pods with their statuses, such as "Running" and "Completed." The interface includes navigation options like CronJobs, Jobs, and Networking Services.](https://kodekloud.com/kk-media/image/upload/v1752882698/notes-assets/images/OpenShift-4-Deploying-applications-CLI/openshift-dashboard-pods-statuses.jpg)
 
 Using the CLI can significantly streamline the deployment process compared to the UI, especially if you are already familiar with commands like `kubectl apply -f` or `oc apply -f`.
 
@@ -100,9 +96,7 @@ deployment.apps/user created
 service/user created
 ```
 
-<Callout icon="lightbulb">
-  For rapid deployments and iterative configurations, the CLI method using `oc apply -f` is highly efficient.
-</Callout>
+> **lightbulb** For rapid deployments and iterative configurations, the CLI method using `oc apply -f` is highly efficient.
 
 ## Alternative Deployment Methods
 
@@ -116,6 +110,4 @@ Each method adheres to similar workflows. It’s beneficial to explore all appro
 
 Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/0bce3da1-167c-4f11-a004-4d57bfc7adac/lesson/dbf25340-e697-4e0e-9ea6-60e79e8d596d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/0bce3da1-167c-4f11-a004-4d57bfc7adac/lesson/dbf25340-e697-4e0e-9ea6-60e79e8d596d)

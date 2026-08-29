@@ -12,7 +12,7 @@ In this lesson, you'll learn how to integrate an Application Load Balancer with 
 
 Begin by creating a simple Lambda function using the Node.js runtime from the [AWS Lambda](https://learn.kodekloud.com/user/courses/aws-lambda) console. For this demo, we are naming the function "my app" (the exact name is not critical). This function logs the incoming event and returns a response with a status code of 200 along with a message.
 
-![The image shows the AWS Lambda console where a new function is being created. It includes options for setting the function name, runtime, architecture, and permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859476/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Application-LoadBalancer-Demo/aws-lambda-function-creation-console.jpg)
+![The image shows the AWS Lambda console where a new function is being created. It includes options for setting the function name, runtime, architecture, and permissions.](https://kodekloud.com/kk-media/image/upload/v1752859476/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Application-LoadBalancer-Demo/aws-lambda-function-creation-console.jpg)
 
 Enter the following code for your Lambda function:
 
@@ -39,7 +39,7 @@ Deploy your changes. Once the deployment is successful, your Lambda function wil
 
 Next, set up the Application Load Balancer that will forward requests to your Lambda function. In the AWS Management Console, navigate to the Load Balancer service and choose to create a new Application Load Balancer.
 
-![The image shows a webpage from the AWS Management Console for creating an Application Load Balancer, with options for basic configuration such as load balancer name, scheme, and IP address type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859478/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Application-LoadBalancer-Demo/aws-application-load-balancer-console.jpg)
+![The image shows a webpage from the AWS Management Console for creating an Application Load Balancer, with options for basic configuration such as load balancer name, scheme, and IP address type.](https://kodekloud.com/kk-media/image/upload/v1752859478/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Application-LoadBalancer-Demo/aws-application-load-balancer-console.jpg)
 
 Configure the following settings:
 
@@ -49,7 +49,7 @@ Configure the following settings:
 * Select your desired VPC (the default VPC is acceptable).
 * Choose a security group that allows web traffic on port 80 (or port 443 for HTTPS).
 
-![The image shows an AWS console interface for configuring an application load balancer, including settings for security groups and listener routing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859479/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Application-LoadBalancer-Demo/aws-console-application-load-balancer.jpg)
+![The image shows an AWS console interface for configuring an application load balancer, including settings for security groups and listener routing.](https://kodekloud.com/kk-media/image/upload/v1752859479/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Application-LoadBalancer-Demo/aws-console-application-load-balancer.jpg)
 
 ***
 
@@ -62,7 +62,7 @@ Set up the listeners for your load balancer. For a web application, create a lis
 3. Choose your Lambda function directly or register it by entering its ARN.
 4. Keep the version as "latest" and create the target group.
 
-![The image shows an AWS console screen where a user is configuring a target group for a Lambda function, with options for load balancing and health checks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859480/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Application-LoadBalancer-Demo/aws-console-target-group-lambda.jpg)
+![The image shows an AWS console screen where a user is configuring a target group for a Lambda function, with options for load balancing and health checks.](https://kodekloud.com/kk-media/image/upload/v1752859480/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Application-LoadBalancer-Demo/aws-console-target-group-lambda.jpg)
 
 After registering your target, return to the load balancer configuration and refresh the view. Your target group ("my app Lambda") should now be visible. Proceed to create the load balancer.
 
@@ -72,11 +72,11 @@ After registering your target, return to the load balancer configuration and ref
 
 Review the summary of your settings:
 
-![The image shows an AWS console page for creating an application load balancer, displaying configuration details such as security groups, network mapping, and listeners.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859482/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Application-LoadBalancer-Demo/aws-console-application-load-balancer-2.jpg)
+![The image shows an AWS console page for creating an application load balancer, displaying configuration details such as security groups, network mapping, and listeners.](https://kodekloud.com/kk-media/image/upload/v1752859482/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Application-LoadBalancer-Demo/aws-console-application-load-balancer-2.jpg)
 
 Click **Create Load Balancer** and allow a few minutes for initialization. You can verify the load balancer's provision by checking its DNS entry in the [Amazon Elastic Compute Cloud (EC2)](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2) console.
 
-![The image shows an AWS EC2 console page displaying details of an active application load balancer named "lambda-lb," including its status, VPC, and availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859484/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Application-LoadBalancer-Demo/aws-ec2-application-load-balancer.jpg)
+![The image shows an AWS EC2 console page displaying details of an active application load balancer named "lambda-lb," including its status, VPC, and availability zones.](https://kodekloud.com/kk-media/image/upload/v1752859484/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Application-LoadBalancer-Demo/aws-ec2-application-load-balancer.jpg)
 
 ***
 
@@ -162,7 +162,7 @@ When the Application Load Balancer invokes your Lambda function, it passes an ev
 
 Your Lambda function logs this event, and you can inspect the details in CloudWatch Logs.
 
-![The image shows an AWS CloudWatch interface displaying log details for a Lambda function, including request context, HTTP method, headers, and other metadata.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859485/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Application-LoadBalancer-Demo/aws-cloudwatch-lambda-logs-interface.jpg)
+![The image shows an AWS CloudWatch interface displaying log details for a Lambda function, including request context, HTTP method, headers, and other metadata.](https://kodekloud.com/kk-media/image/upload/v1752859485/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Application-LoadBalancer-Demo/aws-cloudwatch-lambda-logs-interface.jpg)
 
 To view these logs, navigate to the "Monitor" tab of your Lambda function's page and open CloudWatch Logs. Here, you'll find information such as the HTTP method, path, query string parameters, and headers.
 

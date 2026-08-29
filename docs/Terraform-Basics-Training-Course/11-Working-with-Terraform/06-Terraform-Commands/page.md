@@ -26,13 +26,9 @@ Imagine you are running an application server with Nginx version 1.17. When a ne
 
 For high availability, you might run a pool of servers with identical software and configurations. In this case, performing in-place updates individually on each server represents mutable infrastructure. Even though the underlying hardware or virtual infrastructure remains the same, the software and configuration details change with each update.
 
-<Frame>
-  ![The image shows a server icon with "v1.19" above it, a script file named "upgrade-nginx.sh," and the Ansible logo, suggesting an Nginx upgrade process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884248/notes-assets/images/Terraform-Basics-Training-Course-Mutable-vs-Immutable-Infrastructure/frame_70.jpg)
-</Frame>
+![The image shows a server icon with "v1.19" above it, a script file named "upgrade-nginx.sh," and the Ansible logo, suggesting an Nginx upgrade process.](https://kodekloud.com/kk-media/image/upload/v1752884248/notes-assets/images/Terraform-Basics-Training-Course-Mutable-vs-Immutable-Infrastructure/frame_70.jpg)
 
-<Callout icon="lightbulb">
-  An in-place update may lead to configuration drift over time. If one server fails to upgrade due to dependency issues, it will remain on an older version while others move forward, complicating future maintenance.
-</Callout>
+> **lightbulb** An in-place update may lead to configuration drift over time. If one server fails to upgrade due to dependency issues, it will remain on an older version while others move forward, complicating future maintenance.
 
 ### Challenges with Mutable Infrastructure
 
@@ -48,9 +44,7 @@ Immutable infrastructure takes a different approach. Instead of modifying existi
 
 In immutable infrastructure, resources are never modified post-deployment—they are always replaced. This method minimizes the risk of configuration drift because the previous version remains unchanged until a fully validated new version is deployed.
 
-<Frame>
-  ![The image illustrates "Immutable Infrastructure" with three identical server icons labeled "v1.18," representing unchangeable server versions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884249/notes-assets/images/Terraform-Basics-Training-Course-Mutable-vs-Immutable-Infrastructure/frame_280.jpg)
-</Frame>
+![The image illustrates "Immutable Infrastructure" with three identical server icons labeled "v1.18," representing unchangeable server versions.](https://kodekloud.com/kk-media/image/upload/v1752884249/notes-assets/images/Terraform-Basics-Training-Course-Mutable-vs-Immutable-Infrastructure/frame_280.jpg)
 
 ### Benefits of Immutable Infrastructure
 
@@ -96,15 +90,11 @@ Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
 
 By default, Terraform replaces the resource. However, you may encounter scenarios where you wish to modify this behavior—for example, creating a new resource before the old one is decommissioned or retaining the old resource for a time. Such behaviors can be controlled through lifecycle rules defined within the resource block. We will cover lifecycle customizations in the upcoming section.
 
-<Callout icon="triangle-alert">
-  Altering default resource creation and deletion strategies without a thorough understanding of lifecycle rules can lead to unexpected outages. Always test changes in a staging environment before applying them in production.
-</Callout>
+> **triangle-alert** Altering default resource creation and deletion strategies without a thorough understanding of lifecycle rules can lead to unexpected outages. Always test changes in a staging environment before applying them in production.
 
 For more insights into managing infrastructure with Terraform, refer to the official [Terraform Documentation](https://www.terraform.io/docs).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/fe362a30-ceb6-4246-9007-9208d2eec5b8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/fe362a30-ceb6-4246-9007-9208d2eec5b8)
 
 
 # Terraform Commands

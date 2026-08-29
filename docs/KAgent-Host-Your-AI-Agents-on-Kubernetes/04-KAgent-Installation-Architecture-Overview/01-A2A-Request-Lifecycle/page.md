@@ -53,9 +53,7 @@ Typical flow:
 3. Receive a JWT access token.
 4. Use the JWT in `Authorization: Bearer <token>` when calling the agent.
 
-<Callout icon="warning">
-  Store and transmit JWTs securely. Always use TLS, implement short token lifetimes, validate audience/issuer claims, and follow least-privilege practices.
-</Callout>
+> **warning** Store and transmit JWTs securely. Always use TLS, implement short token lifetimes, validate audience/issuer claims, and follow least-privilege practices.
 
 ## sendMessage (request)
 
@@ -160,9 +158,7 @@ When A2A is enabled in KAgent, KAgent exposes a discoverable endpoint so other a
 URL Format - kagent-controller:8083/api/a2a/namespace/agent-name
 ```
 
-<Callout icon="lightbulb">
-  KAgent exposes each agent's A2A endpoint under the controller's API. Replace `namespace` and `agent-name` with the actual Kubernetes namespace and agent name.
-</Callout>
+> **lightbulb** KAgent exposes each agent's A2A endpoint under the controller's API. Replace `namespace` and `agent-name` with the actual Kubernetes namespace and agent name.
 
 KAgent supports agent-as-tools (composition) and multi-agent workflows. A caller agent can invoke a callee agent for a specific skill and treat the callee as a managed tool within a larger workflow.
 

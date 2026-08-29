@@ -67,9 +67,7 @@ What each field does
 | `conditions`      | Safety checks evaluated against the matched resource | uses `{{ target.spec.replicas }}` to reference the matched Deployment |
 | `target` variable | The matched resource under evaluation                | use `{{ target.<path> }}` in conditions and expressions               |
 
-<Callout icon="lightbulb">
-  The `target` variable in condition expressions refers to the matched resource (for example, the Deployment being evaluated). In docs and examples, wrap the expression in backticks: `{{ target.spec.replicas }}`.
-</Callout>
+> **lightbulb** The `target` variable in condition expressions refers to the matched resource (for example, the Deployment being evaluated). In docs and examples, wrap the expression in backticks: `{{ target.spec.replicas }}`.
 
 RBAC: explicit permissions required
 
@@ -113,9 +111,7 @@ rules:
 
 When this ClusterRole is applied, the API server aggregates its rules into Kyverno’s cleanup controller role — a declarative and auditable approach.
 
-<Callout icon="warning">
-  If the cleanup controller lacks aggregated RBAC permissions for the targeted resource kinds, Kyverno will reject creation of the cleanup policy with an error. Ensure the cleanup controller has `get`, `list`, `watch`, and `delete` (or other necessary verbs) for each targeted kind.
-</Callout>
+> **warning** If the cleanup controller lacks aggregated RBAC permissions for the targeted resource kinds, Kyverno will reject creation of the cleanup policy with an error. Ensure the cleanup controller has `get`, `list`, `watch`, and `delete` (or other necessary verbs) for each targeted kind.
 
 Recap
 
@@ -135,8 +131,6 @@ With these concepts and the example policy in hand, you can build safe, automate
   <img alt="The image is a summary slide highlighting four key points about cleanup processes, including new components, policies, key fields, and prerequisites. The information is presented in a colorful and structured format." />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/38c696a0-131e-44d4-9265-2e8b3c6abe20/lesson/0ac25977-b5ff-4116-95f1-981401226e93" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/38c696a0-131e-44d4-9265-2e8b3c6abe20/lesson/0ac25977-b5ff-4116-95f1-981401226e93)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/38c696a0-131e-44d4-9265-2e8b3c6abe20/lesson/e43c5471-0486-4aba-9bf4-8c7a2dc3f744" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/38c696a0-131e-44d4-9265-2e8b3c6abe20/lesson/e43c5471-0486-4aba-9bf4-8c7a2dc3f744)

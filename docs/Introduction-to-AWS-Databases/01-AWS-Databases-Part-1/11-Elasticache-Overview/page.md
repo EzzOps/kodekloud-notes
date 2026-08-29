@@ -92,9 +92,7 @@ When to choose Redis vs. Memcached
   * Multi-threaded performance to utilize multiple CPU cores
   * Lightweight key-value caching without persistence or replication concerns
 
-<Callout icon="lightbulb">
-  Redis is a better fit when you need advanced data structures, durability, replication, or backups. Memcached can be preferable for simple, high-performance ephemeral caching where multi-threaded CPU utilization matters.
-</Callout>
+> **lightbulb** Redis is a better fit when you need advanced data structures, durability, replication, or backups. Memcached can be preferable for simple, high-performance ephemeral caching where multi-threaded CPU utilization matters.
 
 Summary
 
@@ -108,6 +106,4 @@ Links and references
 * [Redis](https://redis.io/)
 * [Memcached](https://memcached.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/e70d44d3-2460-4344-8cc8-6b82e9be84e4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/e70d44d3-2460-4344-8cc8-6b82e9be84e4)

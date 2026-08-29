@@ -10,7 +10,7 @@ GitHub Releases provide official, versioned snapshots of your codebase. Each Rel
 * Distribute binaries and assets
 * Publish detailed release notes and changelogs
 
-![The image explains the concepts of releases and tags in GitHub, highlighting that releases are official snapshots tied to version numbers, based on Git tags, which help organize and track code changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867519/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Organizing-Your-Repository-Using-Git-Tags-in-GitHub-Releases/github-releases-tags-concepts-explained.jpg)
+![The image explains the concepts of releases and tags in GitHub, highlighting that releases are official snapshots tied to version numbers, based on Git tags, which help organize and track code changes.](https://kodekloud.com/kk-media/image/upload/v1752867519/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Organizing-Your-Repository-Using-Git-Tags-in-GitHub-Releases/github-releases-tags-concepts-explained.jpg)
 
 ## Prerequisites
 

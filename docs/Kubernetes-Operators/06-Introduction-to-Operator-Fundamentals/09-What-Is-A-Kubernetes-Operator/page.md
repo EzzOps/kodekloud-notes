@@ -72,18 +72,12 @@ Quick comparison
 | Operators (controller + CRD) | Continuously reconcile cluster state to match higher-level intents | Use when the app needs automated lifecycle, repairs, or domain-specific logic       |
 | Kubernetes native resources  | Standard primitives like Deployment, Service, ConfigMap            | Use to run and expose workloads; often managed by Helm or an operator               |
 
-<Callout icon="lightbulb">
-  Prerequisites: Familiarity with `kubectl`, basic YAML, and the concept of Pods and Deployments in Kubernetes is sufficient. You don’t need a Kubernetes certification or to be a Go expert — basic programming comfort with functions and structs is enough. When a Go or Kubernetes detail matters, this lesson will explain it.
-</Callout>
+> **lightbulb** Prerequisites: Familiarity with `kubectl`, basic YAML, and the concept of Pods and Deployments in Kubernetes is sufficient. You don’t need a Kubernetes certification or to be a Go expert — basic programming comfort with functions and structs is enough. When a Go or Kubernetes detail matters, this lesson will explain it.
 
-<Callout icon="warning">
-  Operators are not a replacement for good architecture or security practices. Design your CRD behaviors carefully and consider RBAC, validation, and testing before deploying operators to production.
-</Callout>
+> **warning** Operators are not a replacement for good architecture or security practices. Design your CRD behaviors carefully and consider RBAC, validation, and testing before deploying operators to production.
 
 Next in this series, you will build the WebApp operator step-by-step: defining the Custom Resource, writing the controller’s reconcile logic, and wiring it to create the Deployment, Service, and ConfigMap. By the end you’ll understand the pattern and have a small, practical example you can adapt.
 
 That was all for this lesson. We'll also clarify two words people often mix.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/714f02ee-a0d6-4672-9d95-d4b5cb2a2234" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/7d198de7-d651-4c7e-a61d-166023fc1031/lesson/714f02ee-a0d6-4672-9d95-d4b5cb2a2234)

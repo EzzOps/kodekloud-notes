@@ -10,7 +10,7 @@ Amazon Managed Workflows for Apache Airflow (MWAA) takes care of provisioning, s
 
 > **lightbulb** When you create an Apache Airflow instance in AWS, you are essentially receiving the same open source Apache Airflow—but managed in the cloud. Simply upload your directed acyclic graphs (DAGs) defining your data pipelines to an S3 bucket, and Apache Airflow orchestrates the extraction, transformation, and loading (ETL) of your data.
 
-![The image is a diagram illustrating the components and workflow of Amazon MWAA (Managed Workflows for Apache Airflow), showing stages like extracting, transforming, loading data, and learning through analytics and machine learning. It includes elements like Amazon S3, directed acyclic graphs, and various data destinations such as analytics, storage, and databases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864740/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Managed-Apache-Airflow/amazon-mwaa-workflow-diagram.jpg)
+![The image is a diagram illustrating the components and workflow of Amazon MWAA (Managed Workflows for Apache Airflow), showing stages like extracting, transforming, loading data, and learning through analytics and machine learning. It includes elements like Amazon S3, directed acyclic graphs, and various data destinations such as analytics, storage, and databases.](https://kodekloud.com/kk-media/image/upload/v1752864740/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Managed-Apache-Airflow/amazon-mwaa-workflow-diagram.jpg)
 
 ## Key Benefits and Features
 
@@ -21,7 +21,7 @@ Amazon MWAA offers several advantages that allow you to focus on building robust
 * **Monitoring:** System metrics and logs from Apache Airflow are sent directly to Amazon CloudWatch, facilitating efficient monitoring of task delays and workflow errors across multiple environments.
 * **AWS Integrations:** MWAA integrates seamlessly with a variety of AWS services such as AWS Athena, Batch, DynamoDB, DataSync, EMR, Firehose, Glue, and Lambda, enabling you to build intricate workflows that harness the full ecosystem of AWS capabilities.
 
-![The image is a diagram highlighting features of MWAA, including built-in security, workflow monitoring in AWS or on-premises, and multiple AWS service integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864742/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Managed-Apache-Airflow/mwaa-features-security-monitoring-diagram.jpg)
+![The image is a diagram highlighting features of MWAA, including built-in security, workflow monitoring in AWS or on-premises, and multiple AWS service integration.](https://kodekloud.com/kk-media/image/upload/v1752864742/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Managed-Apache-Airflow/mwaa-features-security-monitoring-diagram.jpg)
 
 For a comprehensive list of supported AWS service integrations within Apache Airflow, please refer to the [official MWAA documentation](https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html).
 
@@ -33,9 +33,9 @@ Apache Airflow is well-suited for constructing and managing complex data pipelin
 * Orchestrating multiple ETL processes that involve diverse technology stacks.
 * Automating pipelines for data ingestion, transformation, and loading to power machine learning models and analytics platforms.
 
-![The image shows icons representing Amazon Web Services (AWS) integrations, including Amazon S3, AWS Glue, Amazon Redshift, and other AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864743/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Managed-Apache-Airflow/aws-integrations-icons-s3-glue-redshift.jpg)
+![The image shows icons representing Amazon Web Services (AWS) integrations, including Amazon S3, AWS Glue, Amazon Redshift, and other AWS services.](https://kodekloud.com/kk-media/image/upload/v1752864743/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Managed-Apache-Airflow/aws-integrations-icons-s3-glue-redshift.jpg)
 
-![The image outlines three use cases for MWAA: supporting complex workflows, coordinating ETL jobs, and preparing ML data, each with a corresponding icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864743/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Managed-Apache-Airflow/mwaa-use-cases-workflows-etl-ml.jpg)
+![The image outlines three use cases for MWAA: supporting complex workflows, coordinating ETL jobs, and preparing ML data, each with a corresponding icon.](https://kodekloud.com/kk-media/image/upload/v1752864743/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Managed-Apache-Airflow/mwaa-use-cases-workflows-etl-ml.jpg)
 
 > **lightbulb** Amazon Managed Workflows for Apache Airflow significantly simplifies the deployment, management, and scaling of Apache Airflow workflows in the cloud. By leveraging AWS's robust, integrated infrastructure, teams can effectively automate and manage complex data pipelines without the overhead of traditional infrastructure management.
 

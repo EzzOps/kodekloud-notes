@@ -134,13 +134,9 @@ Cilium supports additional IPAM modes for advanced or platform-specific requirem
 
 When selecting an IPAM mode, consult the Cilium IPAM documentation to confirm which network features are supported in that mode (not every feature is available for all modes): [https://docs.cilium.io/en/stable/network/concepts/ipam/](https://docs.cilium.io/en/stable/network/concepts/ipam/)
 
-<Callout icon="warning">
-  Do not change the IPAM mode of an existing, running cluster. Switching IPAM mode on a live cluster can disrupt networking and cause persistent connectivity issues for running workloads. To change modes safely, deploy a new cluster with the desired IPAM configuration and migrate workloads.
-</Callout>
+> **warning** Do not change the IPAM mode of an existing, running cluster. Switching IPAM mode on a live cluster can disrupt networking and cause persistent connectivity issues for running workloads. To change modes safely, deploy a new cluster with the desired IPAM configuration and migrate workloads.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/0807e400-fd1b-4f25-bba5-d0fdb0f4e3f2/lesson/bbf92c1d-8fe5-4f8a-a7dc-50234980b52d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/0807e400-fd1b-4f25-bba5-d0fdb0f4e3f2/lesson/bbf92c1d-8fe5-4f8a-a7dc-50234980b52d)
 
 
 # Kube Proxy less

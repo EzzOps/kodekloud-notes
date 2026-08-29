@@ -12,9 +12,7 @@ DynamoDB organizes data using key-value pairs and document structures. For examp
 
 Each row in the table is referred to as an "item." In our car database example, each item holds details about a car, including the manufacturer, model, year, and VIN. This process is illustrated in the diagram below:
 
-<Frame>
-  ![The image shows a table listing car details: manufacturer, model, year, and VIN for Toyota, Honda, Dodge, and Ford vehicles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884240/notes-assets/images/Terraform-Basics-Training-Course-Introduction-to-DynamoDB/frame_110.jpg)
-</Frame>
+![The image shows a table listing car details: manufacturer, model, year, and VIN for Toyota, Honda, Dodge, and Ford vehicles.](https://kodekloud.com/kk-media/image/upload/v1752884240/notes-assets/images/Terraform-Basics-Training-Course-Introduction-to-DynamoDB/frame_110.jpg)
 
 An item in DynamoDB is composed of one or more attributes that describe the data. In our vehicle database, these attributes include the manufacturer, model, year, and VIN. The JSON examples below demonstrate how each car item might be defined:
 
@@ -45,12 +43,8 @@ An item in DynamoDB is composed of one or more attributes that describe the data
 }
 ```
 
-<Callout icon="lightbulb">
-  DynamoDB requires a primary key to uniquely identify each item in a table. In this case, using the VIN as the primary key is ideal because each vehicle's identification number is unique. When adding a new item, providing a value for the primary key is mandatory, while other attributes remain optional and can be omitted if necessary.
-</Callout>
+> **lightbulb** DynamoDB requires a primary key to uniquely identify each item in a table. In this case, using the VIN as the primary key is ideal because each vehicle's identification number is unique. When adding a new item, providing a value for the primary key is mandatory, while other attributes remain optional and can be omitted if necessary.
 
 This concludes our introduction to DynamoDB. In the upcoming lessons, we will explore practical techniques for managing and querying your DynamoDB database to further enhance performance and scalability.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/56cc8ba2-b5eb-489d-9f29-032fbafb7d14" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/56cc8ba2-b5eb-489d-9f29-032fbafb7d14)

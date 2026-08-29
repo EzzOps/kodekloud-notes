@@ -76,13 +76,9 @@ How this works
   * `final_tags` uses `merge` to overlay any `var.extra_tags` onto `local.base_tags`. `try(var.extra_tags, {})` ensures that if evaluating `var.extra_tags` errors for any reason, Terraform falls back to an empty map rather than failing the plan.
   * `location` uses `lookup` to map environment names to region strings. If `var.environment` is not a key in the provided map, `lookup` returns the default value `"eastus"`.
 
-<Callout icon="lightbulb">
-  The `try` function returns the first expression that does not produce an error. Use it to guard against missing or invalid values. If a variable already has a safe default (for example, `default = {}`), `try` may be redundant in that specific case, but it remains handy when reading values that can error at evaluation time.
-</Callout>
+> **lightbulb** The `try` function returns the first expression that does not produce an error. Use it to guard against missing or invalid values. If a variable already has a safe default (for example, `default = {}`), `try` may be redundant in that specific case, but it remains handy when reading values that can error at evaluation time.
 
-<Callout icon="warning">
-  Avoid overusing `try` to silently swallow errors. While `try` prevents crashes from optional or invalid inputs, it can also mask issues that should be surfaced during development (for example, mis-typed variable names or unexpected nulls). Use it intentionally for inputs that are genuinely optional.
-</Callout>
+> **warning** Avoid overusing `try` to silently swallow errors. While `try` prevents crashes from optional or invalid inputs, it can also mask issues that should be surfaced during development (for example, mis-typed variable names or unexpected nulls). Use it intentionally for inputs that are genuinely optional.
 
 Best practices
 
@@ -95,8 +91,6 @@ Further reading
 
 * Terraform language functions: [https://developer.hashicorp.com/terraform/language/functions](https://developer.hashicorp.com/terraform/language/functions)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4fafc188-5a1a-4dbf-8fa0-50e3f00a270d/lesson/7aa42e70-c816-4f33-962d-e2c63184aed3" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4fafc188-5a1a-4dbf-8fa0-50e3f00a270d/lesson/7aa42e70-c816-4f33-962d-e2c63184aed3)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4fafc188-5a1a-4dbf-8fa0-50e3f00a270d/lesson/9f9b6605-d327-4ab6-86d8-d2e50d5d30df" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/4fafc188-5a1a-4dbf-8fa0-50e3f00a270d/lesson/9f9b6605-d327-4ab6-86d8-d2e50d5d30df)

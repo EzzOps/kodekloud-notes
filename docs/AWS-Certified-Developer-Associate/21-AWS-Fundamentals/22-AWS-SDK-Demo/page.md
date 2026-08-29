@@ -6,11 +6,11 @@ This guide explores using the AWS SDK to interact with AWS services programmatic
 
 In this guide, we explore how to work with AWS using the AWS SDK. The AWS SDK enables you to interact with AWS services directly from your application code. Whether you're building applications in JavaScript, Python, or any other supported language, simply provide your AWS credentials, install the appropriate SDK, and perform operations programmatically—just as you would via the AWS Console or CLI.
 
-![The image shows a webpage from AWS's Developer Center, highlighting tools for building applications on AWS, with a focus on programming languages like C++, Java, and Python. It includes sections for building applications, getting started, and connecting with the community.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858142/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SDK-Demo/aws-developer-center-tools-apps.jpg)
+![The image shows a webpage from AWS's Developer Center, highlighting tools for building applications on AWS, with a focus on programming languages like C++, Java, and Python. It includes sections for building applications, getting started, and connecting with the community.](https://kodekloud.com/kk-media/image/upload/v1752858142/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SDK-Demo/aws-developer-center-tools-apps.jpg)
 
 Consider a scenario where you are using Amazon S3 to store images or files for a web application. Every time a user uploads a file, your server can use the AWS SDK to seamlessly store that file in S3. For comprehensive documentation and setup instructions tailored for different programming languages, visit the AWS Developer Tools page. Selecting JavaScript, for example, will guide you to the AWS SDK for JavaScript documentation. This article focuses on a Node.js example.
 
-![The image shows a webpage from AWS, detailing options for developing server-side, web, and mobile apps using Node.js, JavaScript, and React Native, with links to get started using AWS SDK for JavaScript.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858143/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SDK-Demo/aws-nodejs-react-native-webpage.jpg)
+![The image shows a webpage from AWS, detailing options for developing server-side, web, and mobile apps using Node.js, JavaScript, and React Native, with links to get started using AWS SDK for JavaScript.](https://kodekloud.com/kk-media/image/upload/v1752858143/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SDK-Demo/aws-nodejs-react-native-webpage.jpg)
 
 > **lightbulb** Before you begin, ensure that you have Node.js installed on your development environment. For detailed setup instructions, refer to the [official AWS SDK documentation](https://aws.amazon.com/sdk-for-node-js/).
 
@@ -24,7 +24,7 @@ npm install @aws-sdk/client-s3
 
 This command installs the necessary S3 client library so you can integrate its functionalities within your application.
 
-![The image shows a Visual Studio Code interface with a JavaScript file open, displaying code related to AWS SDK commands, and a terminal window at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858145/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SDK-Demo/visual-studio-code-javascript-aws-sdk.jpg)
+![The image shows a Visual Studio Code interface with a JavaScript file open, displaying code related to AWS SDK commands, and a terminal window at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752858145/notes-assets/images/AWS-Certified-Developer-Associate-AWS-SDK-Demo/visual-studio-code-javascript-aws-sdk.jpg)
 
 ## Creating and Listing S3 Buckets
 

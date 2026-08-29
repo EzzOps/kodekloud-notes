@@ -6,9 +6,7 @@ Serverless time series database for ingesting, storing, and analyzing timestampe
 
 Amazon Timestream is a purpose-built, serverless time-series database for ingestion, storage, and analysis of timestamped data at scale. It’s optimized for workloads such as IoT telemetry, operational monitoring, and real-time analytics where data arrives continuously, evolves over time, and has varying retention needs.
 
-<Callout icon="lightbulb">
-  Timestream removes much of the operational overhead: it scales automatically, manages tiered storage, and exposes SQL-like queries with time-series functions. Use it when your workload needs fast ingest, time-based access patterns, and lifecycle-aware retention.
-</Callout>
+> **lightbulb** Timestream removes much of the operational overhead: it scales automatically, manages tiered storage, and exposes SQL-like queries with time-series functions. Use it when your workload needs fast ingest, time-based access patterns, and lifecycle-aware retention.
 
 ## Why a time-series database?
 
@@ -98,9 +96,7 @@ Use `INTERPOLATE`, `HISTOGRAM`, and window functions to fill gaps, compute perce
 * Schema flexibility: Add new measures or dimensions on the fly without table redefinition, which is useful for rapidly evolving telemetry.
 * Retention & cost: Configure retention policies to move data between tiers and limit storage cost while preserving the query performance you need.
 
-<Callout icon="warning">
-  Design retention policies and tiering rules intentionally. Long retention on the in-memory tier or very low TTLs across tiers can increase cost or impact historical analyses.
-</Callout>
+> **warning** Design retention policies and tiering rules intentionally. Long retention on the in-memory tier or very low TTLs across tiers can increase cost or impact historical analyses.
 
 <Frame>
   <img alt="A presentation slide titled &#x22;Summary Timestream&#x22; with a teal gradient panel on the left. On the right are two numbered points describing Timestream's flexible, evolving data model and schema adaptability to new data types." />
@@ -117,6 +113,4 @@ Use `INTERPOLATE`, `HISTOGRAM`, and window functions to fill gaps, compute perce
 * [Amazon QuickSight](https://aws.amazon.com/quicksight/)
 * [Grafana](https://grafana.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/6b775562-0b27-41e9-93fc-bb16dab05d87/lesson/c13f0538-7906-4eab-8ac6-c9d9664ea983" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/6b775562-0b27-41e9-93fc-bb16dab05d87/lesson/c13f0538-7906-4eab-8ac6-c9d9664ea983)

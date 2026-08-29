@@ -14,13 +14,13 @@ One of the core principles in network security is defense in depth, which involv
 
 When you open a port for internet access, you must secure that entry point through careful control and traffic filtering. The objective is to direct and inspect traffic from the IP layer up to the application layer while automating detection processes so that defense does not rely solely on human intervention.
 
-![The image illustrates a flowchart of multiple layers of defense in a network, highlighting steps such as creating network layers, controlling traffic, automating protection, and implementing inspection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860523/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Network-Defense/network-defense-flowchart-layers.jpg)
+![The image illustrates a flowchart of multiple layers of defense in a network, highlighting steps such as creating network layers, controlling traffic, automating protection, and implementing inspection.](https://kodekloud.com/kk-media/image/upload/v1752860523/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Network-Defense/network-defense-flowchart-layers.jpg)
 
 ## Network Layering in AWS
 
 Network defense in AWS begins with the Virtual Private Cloud (VPC). Within a VPC, creating subnets allows you to manage both public and private traffic routes. The network gateway directs traffic in and out, giving you the flexibility to configure direct, indirect, or no internet access for your workload.
 
-![The image illustrates a network architecture with a VPC containing two availability zones (AZ1 and AZ2), each with public subnets, connected to the internet via an internet gateway. A routing table is shown with a destination of 0.0.0.0/0 pointing to the internet gateway (igw).](../../../../images/kodekloud.com/kk-media/image/upload/v1752860524/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Network-Defense/vpc-network-architecture-diagram.jpg)
+![The image illustrates a network architecture with a VPC containing two availability zones (AZ1 and AZ2), each with public subnets, connected to the internet via an internet gateway. A routing table is shown with a destination of 0.0.0.0/0 pointing to the internet gateway (igw).](https://kodekloud.com/kk-media/image/upload/v1752860524/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Network-Defense/vpc-network-architecture-diagram.jpg)
 
 Key considerations for securing your network include:
 
@@ -35,7 +35,7 @@ To secure private connections, you can use a Virtual Private Network (VPN) or en
 
 AWS offers a variety of services designed to offload and redirect traffic while defending against Distributed Denial-of-Service (DDoS) attacks.
 
-![The image is a diagram illustrating traffic control at various layers within an AWS architecture, featuring components like VPC, subnets, security groups, and services such as Amazon Route 53, CloudFront, and AWS Direct Connect.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860525/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Network-Defense/aws-traffic-control-architecture-diagram.jpg)
+![The image is a diagram illustrating traffic control at various layers within an AWS architecture, featuring components like VPC, subnets, security groups, and services such as Amazon Route 53, CloudFront, and AWS Direct Connect.](https://kodekloud.com/kk-media/image/upload/v1752860525/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Network-Defense/aws-traffic-control-architecture-diagram.jpg)
 
 ## Automating Network Protection
 
@@ -50,11 +50,11 @@ Automating network protection is key to staying ahead of emerging threats. AWS p
 
 > **lightbulb** GuardDuty can work in tandem with flow logs to alert you of potential threats and assist in mitigating them.
 
-![The image illustrates the concept of "Implementing Inspection and Protection" with a focus on "Flow Logs," showing a person pointing to a graph that represents capturing IP traffic in a VPC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860526/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Network-Defense/implementing-inspection-protection-flow-logs.jpg)
+![The image illustrates the concept of "Implementing Inspection and Protection" with a focus on "Flow Logs," showing a person pointing to a graph that represents capturing IP traffic in a VPC.](https://kodekloud.com/kk-media/image/upload/v1752860526/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Network-Defense/implementing-inspection-protection-flow-logs.jpg)
 
 Additionally, features such as VPC traffic mirroring allow you to replicate traffic from specific segments to external security tools for in-depth content inspection, threat monitoring, and troubleshooting.
 
-![The image illustrates a process for implementing inspection and protection using traffic mirroring from an EC2 network interface, sending data to out-of-band security tools for content inspection, threat monitoring, and troubleshooting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860527/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Network-Defense/traffic-mirroring-ec2-inspection-process.jpg)
+![The image illustrates a process for implementing inspection and protection using traffic mirroring from an EC2 network interface, sending data to out-of-band security tools for content inspection, threat monitoring, and troubleshooting.](https://kodekloud.com/kk-media/image/upload/v1752860527/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Network-Defense/traffic-mirroring-ec2-inspection-process.jpg)
 
 ## AWS Network Defense Services
 
@@ -66,7 +66,7 @@ AWS provides a comprehensive suite of network defense services, including:
 
 These services work together to ensure that your network remains secure by actively filtering traffic and enforcing best practices for network security.
 
-![The image is a diagram illustrating the implementation of network defense in an AWS cloud environment, showing components like AWS Firewall Manager, Internet Gateway, and VPCs within production and non-production organizational units.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860529/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Network-Defense/aws-network-defense-diagram.jpg)
+![The image is a diagram illustrating the implementation of network defense in an AWS cloud environment, showing components like AWS Firewall Manager, Internet Gateway, and VPCs within production and non-production organizational units.](https://kodekloud.com/kk-media/image/upload/v1752860529/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Importance-of-Network-Defense/aws-network-defense-diagram.jpg)
 
 ## Conclusion
 

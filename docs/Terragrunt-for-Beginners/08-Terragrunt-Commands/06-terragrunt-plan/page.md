@@ -31,9 +31,7 @@ Success! The configuration is valid.
 
 That concludes our overview of `terragrunt init` and `terragrunt validate`. By initializing early and validating frequently, you ensure reliable, maintainable infrastructure as code.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/e42961fc-4288-4cc2-8db8-3882b884c0b1/lesson/2a6db1e8-f513-4eff-adf0-a077efb3b815" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/e42961fc-4288-4cc2-8db8-3882b884c0b1/lesson/2a6db1e8-f513-4eff-adf0-a077efb3b815)
 
 
 # terragrunt plan
@@ -50,13 +48,9 @@ Generates and reviews execution plans for Terraform infrastructure changes, enha
 
 Terragrunt enhances Terraform’s native `plan` command by recursively applying it across your entire configuration hierarchy. This provides a unified, end-to-end view of changes across all modules.
 
-<Callout icon="lightbulb">
-  Terragrunt delegates to [`terraform plan`](https://www.terraform.io/cli/plan) under the hood, orchestrating plans across multiple modules and directories.
-</Callout>
+> **lightbulb** Terragrunt delegates to [`terraform plan`](https://www.terraform.io/cli/plan) under the hood, orchestrating plans across multiple modules and directories.
 
-<Frame>
-  ![The image illustrates a Terragrunt plan process, showing how it generates an execution plan and applies it across a configuration hierarchy, with integration with Terraform.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884333/notes-assets/images/Terragrunt-for-Beginners-terragrunt-plan/terragrunt-plan-process-terraform-diagram.jpg)
-</Frame>
+![The image illustrates a Terragrunt plan process, showing how it generates an execution plan and applies it across a configuration hierarchy, with integration with Terraform.](https://kodekloud.com/kk-media/image/upload/v1752884333/notes-assets/images/Terragrunt-for-Beginners-terragrunt-plan/terragrunt-plan-process-terraform-diagram.jpg)
 
 ## Key Features of Terragrunt Plan
 
@@ -70,9 +64,7 @@ Terragrunt enhances Terraform’s native `plan` command by recursively applying 
 
 In a modular project structure, `terragrunt plan` can run in parallel, speeding up the planning phase by generating multiple execution plans simultaneously.
 
-<Frame>
-  ![The image illustrates a "Terragrunt plan" with a central icon connected to two puzzle piece icons, representing parallel execution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884334/notes-assets/images/Terragrunt-for-Beginners-terragrunt-plan/terragrunt-plan-parallel-execution-diagram.jpg)
-</Frame>
+![The image illustrates a "Terragrunt plan" with a central icon connected to two puzzle piece icons, representing parallel execution.](https://kodekloud.com/kk-media/image/upload/v1752884334/notes-assets/images/Terragrunt-for-Beginners-terragrunt-plan/terragrunt-plan-parallel-execution-diagram.jpg)
 
 ## Best Practices for `terragrunt plan`
 
@@ -80,13 +72,9 @@ In a modular project structure, `terragrunt plan` can run in parallel, speeding 
 * **Seek approval** from relevant stakeholders to prevent unintended infrastructure modifications.
 * Use version control to track and audit plan outputs.
 
-<Frame>
-  ![The image is a slide titled "Terragrunt plan" with icons and text for "Review plan" and "Seek approval," along with a "Best Practices" button.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884334/notes-assets/images/Terragrunt-for-Beginners-terragrunt-plan/terragrunt-plan-review-approval-best-practices.jpg)
-</Frame>
+![The image is a slide titled "Terragrunt plan" with icons and text for "Review plan" and "Seek approval," along with a "Best Practices" button.](https://kodekloud.com/kk-media/image/upload/v1752884334/notes-assets/images/Terragrunt-for-Beginners-terragrunt-plan/terragrunt-plan-review-approval-best-practices.jpg)
 
-<Callout icon="triangle-alert">
-  Never run `terragrunt apply` without first validating the execution plan. Unreviewed plans can lead to unexpected downtime or resource drift.
-</Callout>
+> **triangle-alert** Never run `terragrunt apply` without first validating the execution plan. Unreviewed plans can lead to unexpected downtime or resource drift.
 
 ## Example: Planning an AWS VPC Module
 

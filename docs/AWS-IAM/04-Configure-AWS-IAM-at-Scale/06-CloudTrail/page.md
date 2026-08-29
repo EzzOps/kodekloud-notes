@@ -109,7 +109,7 @@ CloudTrail provides a comprehensive audit trail of all API calls in your AWS acc
 
 When an unexpected EC2 instance stops, you need to know who performed that action. CloudTrail captures every API call, making it straightforward to identify the culprit.
 
-![The image is a diagram showing the process of investigating who shut down an EC2 instance using AWS CloudTrail. It involves an IAM user making an API call to stop the instance, which is logged by AWS CloudTrail.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862936/notes-assets/images/AWS-IAM-CloudTrail/ec2-instance-shutdown-investigation-diagram.jpg)
+![The image is a diagram showing the process of investigating who shut down an EC2 instance using AWS CloudTrail. It involves an IAM user making an API call to stop the instance, which is logged by AWS CloudTrail.](https://kodekloud.com/kk-media/image/upload/v1752862936/notes-assets/images/AWS-IAM-CloudTrail/ec2-instance-shutdown-investigation-diagram.jpg)
 
 ## How CloudTrail Works
 
@@ -129,7 +129,7 @@ When an unexpected EC2 instance stops, you need to know who performed that actio
 | Centralized Log Storage | Store logs in Amazon S3 for long-term retention                   |
 | Real-time Monitoring    | Integrate with CloudWatch Logs to trigger alerts instantly        |
 
-![The image explains AWS CloudTrail, highlighting its functions: creating an audit trail, enhancing security through activity monitoring, and storing logs in S3 buckets for real-time analysis.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862938/notes-assets/images/AWS-IAM-CloudTrail/aws-cloudtrail-audit-trail-security-logs.jpg)
+![The image explains AWS CloudTrail, highlighting its functions: creating an audit trail, enhancing security through activity monitoring, and storing logs in S3 buckets for real-time analysis.](https://kodekloud.com/kk-media/image/upload/v1752862938/notes-assets/images/AWS-IAM-CloudTrail/aws-cloudtrail-audit-trail-security-logs.jpg)
 
 ## Demo: Finding the StopInstances Event
 

@@ -12,13 +12,13 @@ In Go, a package is a collection of code that groups related functions, types, a
 
 > **lightbulb** Built-in packages are part of the Go Standard Library and come with the language, whereas third-party packages must be explicitly added as dependencies.
 
-![The image explains the difference between third-party packages, which require adding dependencies, and core packages, which are included with the programming language and do not require additional dependencies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868720/notes-assets/images/Advanced-Golang-Core-Packages-Intro/third-party-vs-core-packages.jpg)
+![The image explains the difference between third-party packages, which require adding dependencies, and core packages, which are included with the programming language and do not require additional dependencies.](https://kodekloud.com/kk-media/image/upload/v1752868720/notes-assets/images/Advanced-Golang-Core-Packages-Intro/third-party-vs-core-packages.jpg)
 
 ## The Go Standard Library
 
 The Standard Library is a comprehensive collection of core packages that cover a wide range of functionalities—from networking and string manipulation to file system operations and input/output handling. By leveraging these pre-written, well-tested packages, you can significantly decrease development time and improve the reliability of your code.
 
-![The image is a slide discussing core packages in Go, highlighting that they are bundled as the "Standard Library" and each package implements a functionality.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868720/notes-assets/images/Advanced-Golang-Core-Packages-Intro/go-standard-library-core-packages.jpg)
+![The image is a slide discussing core packages in Go, highlighting that they are bundled as the "Standard Library" and each package implements a functionality.](https://kodekloud.com/kk-media/image/upload/v1752868720/notes-assets/images/Advanced-Golang-Core-Packages-Intro/go-standard-library-core-packages.jpg)
 
 ## Overview of Core Packages
 
@@ -40,6 +40,6 @@ To help visualize the differences, consider this table:
 
 > **lightbulb** In the upcoming sections, we will dive deeper into these standard packages and demonstrate practical examples to enhance your Go programming skills.
 
-![The image lists core packages related to programming, including strings, input/output, file handling, errors, hashes and cryptography, sort, and testing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868721/notes-assets/images/Advanced-Golang-Core-Packages-Intro/programming-core-packages-list.jpg)
+![The image lists core packages related to programming, including strings, input/output, file handling, errors, hashes and cryptography, sort, and testing.](https://kodekloud.com/kk-media/image/upload/v1752868721/notes-assets/images/Advanced-Golang-Core-Packages-Intro/programming-core-packages-list.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/advanced-golang/module/c29202d1-1463-42eb-806b-0d6e38042661/lesson/306b2b45-7562-4329-ab90-00d361e6611f)

@@ -80,9 +80,7 @@ traceroute to google.com (142.250.185.14), 64 hops max, 40 byte packets
 1  192.168.0.1 (192.168.0.1)  1.523 ms  0.649 ms  0.732 ms
 ```
 
-<Callout icon="lightbulb">
-  On Windows, the equivalent command to `traceroute` is `tracert`.
-</Callout>
+> **lightbulb** On Windows, the equivalent command to `traceroute` is `tracert`.
 
 Community and support
 You won't be learning alone. At KodeKloud we believe practical skills grow faster in a supportive community. Join our forums to connect with peers, ask questions, share labs and projects, and get feedback from instructors.
@@ -106,6 +104,4 @@ Links and references
 
 Our community is here to support you every step of the way. So — ready to unravel what makes the whole world connect and communicate?
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/networks-and-communications/module/3699346c-c8d5-4b8b-a63c-e8c2c12ab477/lesson/1195ae49-712e-4c23-a388-d356105b8de1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/networks-and-communications/module/3699346c-c8d5-4b8b-a63c-e8c2c12ab477/lesson/1195ae49-712e-4c23-a388-d356105b8de1)

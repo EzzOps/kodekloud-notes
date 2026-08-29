@@ -12,7 +12,7 @@ In this guide, we’ll show you how to leverage Amazon EventBridge to respond dy
 
 Begin by opening the [Amazon EventBridge console](https://console.aws.amazon.com/events/) and navigating to the **Event buses** section. Every AWS account has a default event bus. Although you can create custom event buses, this demo uses the default.
 
-![The image shows the Amazon EventBridge console, specifically the "Event buses" section, where users can manage default and custom event buses, with options to start discovery, create archives, and send events.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864718/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-using-Eventbridge-to-respond-to-changes-in-your-environment-with-AWS-config/amazon-eventbridge-event-buses-console.jpg)
+![The image shows the Amazon EventBridge console, specifically the "Event buses" section, where users can manage default and custom event buses, with options to start discovery, create archives, and send events.](https://kodekloud.com/kk-media/image/upload/v1752864718/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-using-Eventbridge-to-respond-to-changes-in-your-environment-with-AWS-config/amazon-eventbridge-event-buses-console.jpg)
 
 Next, go to the **Rules** section. Here, you define the events of interest and specify the actions to take when those events occur. Click **Create rule**, provide a suitable name (e.g., "InstanceStatusChange"), and optionally add a description. Ensure the rule is associated with the default event bus.
 
@@ -23,7 +23,7 @@ There are two types of rules available:
 
 For our scenario, select **Event Pattern**. Then specify the event source. In this demo, we focus on AWS service events for EC2.
 
-![The image shows an AWS EventBridge interface where a rule is being defined, with fields for rule name, description, and event bus selection. It includes options for enabling the rule and choosing between an event pattern or schedule.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864719/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-using-Eventbridge-to-respond-to-changes-in-your-environment-with-AWS-config/aws-eventbridge-rule-definition-interface.jpg)
+![The image shows an AWS EventBridge interface where a rule is being defined, with fields for rule name, description, and event bus selection. It includes options for enabling the rule and choosing between an event pattern or schedule.](https://kodekloud.com/kk-media/image/upload/v1752864719/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-using-Eventbridge-to-respond-to-changes-in-your-environment-with-AWS-config/aws-eventbridge-rule-definition-interface.jpg)
 
 ### Defining the Event Pattern
 
@@ -76,7 +76,7 @@ After reviewing your configuration and optionally adding tags, click **Create ru
 
 To verify your setup, open the [EC2 console](https://console.aws.amazon.com/ec2/) and change the state of a running instance. For instance, select the instance, then choose **Instance state > Stop instance**. Allow a few seconds for the instance state to update.
 
-![The image shows an AWS EC2 management console with two running instances, displaying details for a selected instance named "jumpserver."](../../../../images/kodekloud.com/kk-media/image/upload/v1752864720/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-using-Eventbridge-to-respond-to-changes-in-your-environment-with-AWS-config/aws-ec2-management-console-jumpserver.jpg)
+![The image shows an AWS EC2 management console with two running instances, displaying details for a selected instance named "jumpserver."](https://kodekloud.com/kk-media/image/upload/v1752864720/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-using-Eventbridge-to-respond-to-changes-in-your-environment-with-AWS-config/aws-ec2-management-console-jumpserver.jpg)
 
 After the state change, EventBridge generates an event that triggers your Lambda function. Go to the Lambda console, navigate to the **Monitor** tab, and click the link to view CloudWatch logs. Look for an output similar to the following:
 
@@ -220,11 +220,11 @@ The API should respond with:
 
 After a few seconds, verify the CloudWatch logs for the "test two" Lambda function to confirm that it received the event with `"username": "user2"`.
 
-![The image shows the Amazon EventBridge interface with a notification about a rule being created successfully. It displays options for selecting an event bus and lists two enabled rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864721/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-using-Eventbridge-to-respond-to-changes-in-your-environment-with-AWS-config/amazon-eventbridge-rule-creation-interface.jpg)
+![The image shows the Amazon EventBridge interface with a notification about a rule being created successfully. It displays options for selecting an event bus and lists two enabled rules.](https://kodekloud.com/kk-media/image/upload/v1752864721/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-using-Eventbridge-to-respond-to-changes-in-your-environment-with-AWS-config/amazon-eventbridge-rule-creation-interface.jpg)
 
-![The image shows the "Send events" page in the Amazon EventBridge console, where users can configure and send custom events to an event bus. It includes fields for selecting the event bus, detail type, and entering event details in JSON format.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864722/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-using-Eventbridge-to-respond-to-changes-in-your-environment-with-AWS-config/send-events-amazon-eventbridge-console.jpg)
+![The image shows the "Send events" page in the Amazon EventBridge console, where users can configure and send custom events to an event bus. It includes fields for selecting the event bus, detail type, and entering event details in JSON format.](https://kodekloud.com/kk-media/image/upload/v1752864722/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-using-Eventbridge-to-respond-to-changes-in-your-environment-with-AWS-config/send-events-amazon-eventbridge-console.jpg)
 
-![The image shows an AWS CloudWatch console displaying log events, including timestamps, request IDs, and messages related to Lambda function executions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864723/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-using-Eventbridge-to-respond-to-changes-in-your-environment-with-AWS-config/aws-cloudwatch-lambda-logs-console.jpg)
+![The image shows an AWS CloudWatch console displaying log events, including timestamps, request IDs, and messages related to Lambda function executions.](https://kodekloud.com/kk-media/image/upload/v1752864723/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Demo-of-using-Eventbridge-to-respond-to-changes-in-your-environment-with-AWS-config/aws-cloudwatch-lambda-logs-console.jpg)
 
 > **lightbulb** Ensure that each step has been tested thoroughly to confirm that both AWS service events and custom application events are processed properly by your Lambda functions.
 

@@ -6,9 +6,7 @@ def handle_user_prompt(prompt):
     return call_generation_api(prompt)
 ```
 
-<Callout icon="triangle-alert">
-  Always enforce the moderation step. Skipping it may expose your system to disallowed or harmful content.
-</Callout>
+> **triangle-alert** Always enforce the moderation step. Skipping it may expose your system to disallowed or harmful content.
 
 ## Best Practices
 
@@ -22,9 +20,7 @@ def handle_user_prompt(prompt):
 * [OpenAI Content Policy](https://platform.openai.com/docs/policies/content-policy)
 * [OpenAI API Documentation](https://platform.openai.com/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/dca602e2-9f4b-4aa3-b03c-4dc3004871e5/lesson/8624dae5-0b8a-42b7-8352-d8b910684f83" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/dca602e2-9f4b-4aa3-b03c-4dc3004871e5/lesson/8624dae5-0b8a-42b7-8352-d8b910684f83)
 
 
 # Section Intro
@@ -43,9 +39,7 @@ In this final section of the course, you’ll learn how to integrate robust safe
 
 By the end of this lesson, you’ll be equipped to leverage the Moderation API to ensure that your generative AI features only process content that complies with your organization’s safety guidelines.
 
-<Callout icon="lightbulb">
-  Before you begin, make sure your OpenAI API key has access to the Moderation endpoint. You can verify your access in the [OpenAI Dashboard](https://platform.openai.com/account/api-keys).
-</Callout>
+> **lightbulb** Before you begin, make sure your OpenAI API key has access to the Moderation endpoint. You can verify your access in the [OpenAI Dashboard](https://platform.openai.com/account/api-keys).
 
 ### What Is the Moderation API?
 
@@ -96,9 +90,7 @@ moderatePrompt(userPrompt).then(result => {
 });
 ```
 
-<Callout icon="triangle-alert">
-  Relying solely on automated moderation can lead to false positives or negatives. Always combine the API with human review for critical applications.
-</Callout>
+> **triangle-alert** Relying solely on automated moderation can lead to false positives or negatives. Always combine the API with human review for critical applications.
 
 ### Next Steps
 
@@ -108,6 +100,4 @@ moderatePrompt(userPrompt).then(result => {
 
 By following these best practices, you’ll ensure your AI application maintains high standards of safety and user trust.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/dca602e2-9f4b-4aa3-b03c-4dc3004871e5/lesson/5b9562a4-d840-43b8-ad4f-963e4acdfc74" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/dca602e2-9f4b-4aa3-b03c-4dc3004871e5/lesson/5b9562a4-d840-43b8-ad4f-963e4acdfc74)

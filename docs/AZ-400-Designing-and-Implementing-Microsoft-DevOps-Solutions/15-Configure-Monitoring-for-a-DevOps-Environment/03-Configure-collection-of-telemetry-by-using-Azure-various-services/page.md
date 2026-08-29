@@ -32,7 +32,7 @@ These services, powered by [Azure Monitor](https://learn.microsoft.com/azure/azu
 
 Monitor application performance, detect anomalies, and analyze user behavior with Application Insights.
 
-![The image is an introduction to Application Insights, highlighting its role as an Application Performance Management (APM) service for developers and DevOps professionals, with features like monitoring app performance, detecting performance issues, and understanding user interactions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867472/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/application-insights-apm-introduction.jpg)
+![The image is an introduction to Application Insights, highlighting its role as an Application Performance Management (APM) service for developers and DevOps professionals, with features like monitoring app performance, detecting performance issues, and understanding user interactions.](https://kodekloud.com/kk-media/image/upload/v1752867472/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/application-insights-apm-introduction.jpg)
 
 ### Key Features
 
@@ -41,7 +41,7 @@ Monitor application performance, detect anomalies, and analyze user behavior wit
 * Exception logging & crash analysis
 * User behavior analytics
 
-![The image lists key features of Application Insights, including application monitoring, request rates, response times, dependency tracking, exception logging, and user analytics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867473/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/application-insights-key-features-list.jpg)
+![The image lists key features of Application Insights, including application monitoring, request rates, response times, dependency tracking, exception logging, and user analytics.](https://kodekloud.com/kk-media/image/upload/v1752867473/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/application-insights-key-features-list.jpg)
 
 ### Benefits
 
@@ -49,7 +49,7 @@ Monitor application performance, detect anomalies, and analyze user behavior wit
 * Proactive alerts to minimize downtime
 * Direct integration with CI/CD pipelines
 
-![The image outlines the benefits of Application Insights, highlighting insights into app performance, identifying bottlenecks, proactive monitoring, and integration with development tools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867474/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/application-insights-benefits-performance-monitoring.jpg)
+![The image outlines the benefits of Application Insights, highlighting insights into app performance, identifying bottlenecks, proactive monitoring, and integration with development tools.](https://kodekloud.com/kk-media/image/upload/v1752867474/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/application-insights-benefits-performance-monitoring.jpg)
 
 ### Setup Steps
 
@@ -59,7 +59,7 @@ Monitor application performance, detect anomalies, and analyze user behavior wit
 4. (Optional) Enable agent-based data collection for VMs or App Services.
 5. View telemetry on charts, maps, and logs in the portal.
 
-![The image shows a configuration screen for setting up Application Insights, detailing project, instance, and workspace details. It also includes a section labeled "Code integration methods."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867475/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/application-insights-configuration-screen.jpg)
+![The image shows a configuration screen for setting up Application Insights, detailing project, instance, and workspace details. It also includes a section labeled "Code integration methods."](https://kodekloud.com/kk-media/image/upload/v1752867475/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/application-insights-configuration-screen.jpg)
 
 ***
 
@@ -67,7 +67,7 @@ Monitor application performance, detect anomalies, and analyze user behavior wit
 
 Gain deep operational insights into your Azure Virtual Machines by tracking performance and dependencies.
 
-![The image shows a screenshot of the Azure portal with instructions for configuring VM Insights, highlighting the "Enable" button for monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867476/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/azure-portal-vm-insights-screenshot.jpg)
+![The image shows a screenshot of the Azure portal with instructions for configuring VM Insights, highlighting the "Enable" button for monitoring.](https://kodekloud.com/kk-media/image/upload/v1752867476/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/azure-portal-vm-insights-screenshot.jpg)
 
 ### Key Features
 
@@ -96,7 +96,7 @@ Gain deep operational insights into your Azure Virtual Machines by tracking perf
 
 Monitor container workloads on AKS or other Kubernetes clusters, from pods to nodes.
 
-![The image shows a dashboard for configuring container insights, displaying performance metrics and logs such as CPU and memory utilization, node count, and active pod count. It includes a section labeled "Accessing performance metrics and logs."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867477/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/container-insights-dashboard-performance-metrics.jpg)
+![The image shows a dashboard for configuring container insights, displaying performance metrics and logs such as CPU and memory utilization, node count, and active pod count. It includes a section labeled "Accessing performance metrics and logs."](https://kodekloud.com/kk-media/image/upload/v1752867477/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/container-insights-dashboard-performance-metrics.jpg)
 
 ### Key Features
 
@@ -124,7 +124,7 @@ Monitor container workloads on AKS or other Kubernetes clusters, from pods to no
 
 Diagnose and optimize Azure Storage account performance with detailed metrics and logs.
 
-![The image is an infographic titled "Storage Insights – Benefits," highlighting four benefits: insights into storage performance, optimization of storage usage, proactive monitoring, and integration with Azure services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867478/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/storage-insights-benefits-infographic.jpg)
+![The image is an infographic titled "Storage Insights – Benefits," highlighting four benefits: insights into storage performance, optimization of storage usage, proactive monitoring, and integration with Azure services.](https://kodekloud.com/kk-media/image/upload/v1752867478/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/storage-insights-benefits-infographic.jpg)
 
 ### Key Features
 
@@ -146,7 +146,7 @@ Diagnose and optimize Azure Storage account performance with detailed metrics an
 3. Configure diagnostic settings to a Log Analytics workspace.
 4. View throughput, latency, capacity, and transaction logs.
 
-![The image shows a screenshot of a storage insights dashboard with performance metrics and logs, including graphs and statistics on transactions and latency. It is titled "Configuring Storage Insights" and includes a sidebar menu for navigation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867479/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/configuring-storage-insights-dashboard-screenshot.jpg)
+![The image shows a screenshot of a storage insights dashboard with performance metrics and logs, including graphs and statistics on transactions and latency. It is titled "Configuring Storage Insights" and includes a sidebar menu for navigation.](https://kodekloud.com/kk-media/image/upload/v1752867479/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/configuring-storage-insights-dashboard-screenshot.jpg)
 
 ***
 
@@ -154,7 +154,7 @@ Diagnose and optimize Azure Storage account performance with detailed metrics an
 
 Visualize and troubleshoot your network topology, traffic patterns, and health in real time.
 
-![The image outlines key features of network monitoring, including performance metrics, network topology, traffic analysis, and diagnostic logs. Each feature is represented with an icon and a colored background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867480/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/network-monitoring-features-diagram.jpg)
+![The image outlines key features of network monitoring, including performance metrics, network topology, traffic analysis, and diagnostic logs. Each feature is represented with an icon and a colored background.](https://kodekloud.com/kk-media/image/upload/v1752867480/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/network-monitoring-features-diagram.jpg)
 
 ### Key Features
 
@@ -163,7 +163,7 @@ Visualize and troubleshoot your network topology, traffic patterns, and health i
 * Traffic flow and security analysis
 * Diagnostic logs for troubleshooting
 
-![The image outlines the benefits of network monitoring, including insights into network performance, optimization and connectivity fixes, proactive monitoring with real-time alerts, and integration with Azure services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867481/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/network-monitoring-benefits-insights-azure.jpg)
+![The image outlines the benefits of network monitoring, including insights into network performance, optimization and connectivity fixes, proactive monitoring with real-time alerts, and integration with Azure services.](https://kodekloud.com/kk-media/image/upload/v1752867481/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/network-monitoring-benefits-insights-azure.jpg)
 
 ### Benefits
 
@@ -180,11 +180,11 @@ Visualize and troubleshoot your network topology, traffic patterns, and health i
 4. Link to a Log Analytics workspace.
 5. Analyze throughput, latency, and packet-loss charts.
 
-![The image shows a screenshot of the Azure portal interface for configuring network monitoring, highlighting the "Insights" option under the Monitoring section. There's also a text box indicating "Enabling monitoring in the Azure portal."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867483/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/azure-portal-network-monitoring-insights.jpg)
+![The image shows a screenshot of the Azure portal interface for configuring network monitoring, highlighting the "Insights" option under the Monitoring section. There's also a text box indicating "Enabling monitoring in the Azure portal."](https://kodekloud.com/kk-media/image/upload/v1752867483/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/azure-portal-network-monitoring-insights.jpg)
 
-![The image shows a network monitoring configuration interface with a diagram of network connections and a sidebar menu for accessing various settings and metrics. It includes a label indicating access to performance metrics and logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867483/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/network-monitoring-configuration-interface-diagram.jpg)
+![The image shows a network monitoring configuration interface with a diagram of network connections and a sidebar menu for accessing various settings and metrics. It includes a label indicating access to performance metrics and logs.](https://kodekloud.com/kk-media/image/upload/v1752867483/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/network-monitoring-configuration-interface-diagram.jpg)
 
-![The image shows a network monitoring dashboard with throughput stats and metric charts for packets sent and received. It includes a section labeled "Accessing performance metrics and logs."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867484/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/network-monitoring-dashboard-throughput-metrics.jpg)
+![The image shows a network monitoring dashboard with throughput stats and metric charts for packets sent and received. It includes a section labeled "Accessing performance metrics and logs."](https://kodekloud.com/kk-media/image/upload/v1752867484/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-collection-of-telemetry-by-using-Azure-various-services/network-monitoring-dashboard-throughput-metrics.jpg)
 
 ***
 

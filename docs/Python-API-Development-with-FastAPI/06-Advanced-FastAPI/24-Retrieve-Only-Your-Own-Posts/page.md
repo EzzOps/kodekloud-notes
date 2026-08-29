@@ -123,9 +123,7 @@ If you're logged in as user with ID 23, a GET request to the posts endpoint now 
 
 Similarly, if a different user (for example, user ID 21) is authenticated, only that user's posts will be returned.
 
-<Callout icon="lightbulb">
-  For single post retrieval, apply similar logic to verify that only the owner can access the post. This ensures robust security and proper access control.
-</Callout>
+> **lightbulb** For single post retrieval, apply similar logic to verify that only the owner can access the post. This ensures robust security and proper access control.
 
 ## Retrieving an Individual Post with Error Handling
 
@@ -169,9 +167,7 @@ INFO:     FROM posts
 INFO:     WHERE posts.id IN (id1s)
 ```
 
-<Callout icon="triangle-alert">
-  Be cautious when using post IDs for filtering. Ensure that you are comparing the `owner_id` with the current user's ID to guarantee that only authorized data is retrieved.
-</Callout>
+> **triangle-alert** Be cautious when using post IDs for filtering. Ensure that you are comparing the `owner_id` with the current user's ID to guarantee that only authorized data is retrieved.
 
 ## Reverting to Public Posts if Needed
 
@@ -196,6 +192,4 @@ For further reading on FastAPI and SQLAlchemy best practices, check out the foll
 
 By following these guidelines, you can ensure that your endpoints are both secure and tailored to your application's specific requirements.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/270e4872-9ed6-4a6a-b386-21576fa53c4e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/270e4872-9ed6-4a6a-b386-21576fa53c4e)

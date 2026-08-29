@@ -40,7 +40,7 @@ The goal is to establish a system that consistently delivers respectful, accurat
 
 The final stage focuses on the continuous operation of the AI system. Consistent monitoring and regular updates are crucial to ensure that the chatbot maintains ethical standards and delivers smooth performance over time. The diagram below illustrates the operational workflow for an AI-powered customer service chatbot:
 
-![The image is a flowchart for implementing an AI-powered customer service chatbot, outlining steps: Identify, Measure, Mitigate, and Operate, with tasks like evaluating interactions and implementing filters.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857054/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Plan-a-Responsible-Generative-AI-Solution/ai-customer-service-chatbot-flowchart.jpg)
+![The image is a flowchart for implementing an AI-powered customer service chatbot, outlining steps: Identify, Measure, Mitigate, and Operate, with tasks like evaluating interactions and implementing filters.](https://kodekloud.com/kk-media/image/upload/v1752857054/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Plan-a-Responsible-Generative-AI-Solution/ai-customer-service-chatbot-flowchart.jpg)
 
 Regular updates guarantee that as AI technology and user expectations evolve, the chatbot remains effective, secure, and trustworthy.
 

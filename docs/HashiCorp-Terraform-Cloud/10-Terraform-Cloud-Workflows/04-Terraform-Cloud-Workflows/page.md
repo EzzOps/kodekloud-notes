@@ -72,9 +72,7 @@ terraform {
 
 This configuration tells Terraform where to store state and which workspace to target.
 
-<Callout icon="lightbulb">
-  If you haven’t authenticated yet, run `terraform login` to save your API token locally.
-</Callout>
+> **lightbulb** If you haven’t authenticated yet, run `terraform login` to save your API token locally.
 
 ***
 
@@ -135,9 +133,7 @@ Here’s one common mapping of Git branches to Terraform Cloud workspaces:
 | stage       | Staging     |
 | main/master | Production  |
 
-<Callout icon="triangle-alert">
-  Choose branch names and workspace mappings that align with your team’s release process to avoid accidental applies in production.
-</Callout>
+> **triangle-alert** Choose branch names and workspace mappings that align with your team’s release process to avoid accidental applies in production.
 
 ***
 
@@ -158,9 +154,7 @@ With the API workflow you will:
 
 Use official client libraries (Go, Python, Ruby, .NET) or direct HTTP requests to integrate tightly with your existing toolchain.
 
-<Callout icon="lightbulb">
-  Review the [Terraform Cloud API documentation](https://www.terraform.io/docs/cloud/api/index.html) for endpoint details and rate limits.
-</Callout>
+> **lightbulb** Review the [Terraform Cloud API documentation](https://www.terraform.io/docs/cloud/api/index.html) for endpoint details and rate limits.
 
 ***
 
@@ -176,8 +170,6 @@ Terraform Cloud provides three workflows to suit your team’s collaboration sty
 
 Each workspace in Terraform Cloud can be configured for one of these workflows—and you can switch workflows as your processes evolve.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/8dc830bd-1e70-4a76-bc45-b417ff7c1771/lesson/3a72a59c-44c6-41e6-8194-2d10e3643178" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/8dc830bd-1e70-4a76-bc45-b417ff7c1771/lesson/3a72a59c-44c6-41e6-8194-2d10e3643178)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/8dc830bd-1e70-4a76-bc45-b417ff7c1771/lesson/bd18884a-31cc-4311-be75-34742f717f38" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/8dc830bd-1e70-4a76-bc45-b417ff7c1771/lesson/bd18884a-31cc-4311-be75-34742f717f38)

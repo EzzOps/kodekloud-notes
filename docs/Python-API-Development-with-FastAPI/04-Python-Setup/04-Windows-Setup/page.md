@@ -16,9 +16,7 @@ This guide provides step-by-step instructions to install Python and Visual Studi
 
 4. Before clicking the Install button, ensure you select the checkbox labeled "A...
 
-<Callout icon="lightbulb">
-  Before clicking the Install button, ensure you select the checkbox labeled "Add Python 3.9 to PATH". If you miss this step, you might face issues later. In case it’s skipped, you can always uninstall and reinstall Python with the correct settings.
-</Callout>
+> **lightbulb** Before clicking the Install button, ensure you select the checkbox labeled "Add Python 3.9 to PATH". If you miss this step, you might face issues later. In case it’s skipped, you can always uninstall and reinstall Python with the correct settings.
 
 5. Accept any User Account Control prompts during installation. When you see the confirmation message that Python was installed successfully, the setup is complete.
 
@@ -30,9 +28,7 @@ This guide provides step-by-step instructions to install Python and Visual Studi
 
    The command should output the installed Python version (for example, "Python 3.9.6"). If you encounter an error or the command is not recognized, repeat the installation process.
 
-<Frame>
-  ![The image shows a Windows desktop with a web browser open to the Python download page, and a pop-up indicating that the Python setup was successful.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883464/notes-assets/images/Python-API-Development-with-FastAPI-Windows-Setup/windows-desktop-python-download-success.jpg)
-</Frame>
+![The image shows a Windows desktop with a web browser open to the Python download page, and a pop-up indicating that the Python setup was successful.](https://kodekloud.com/kk-media/image/upload/v1752883464/notes-assets/images/Python-API-Development-with-FastAPI-Windows-Setup/windows-desktop-python-download-success.jpg)
 
 ## Installing Visual Studio Code
 
@@ -40,9 +36,7 @@ This guide provides step-by-step instructions to install Python and Visual Studi
 
 2. During installation, accept the license agreement and proceed with the default settings by clicking **Next** until the installation commences. Once complete, VS Code will launch automatically.
 
-<Frame>
-  ![The image shows a Windows desktop with a Visual Studio Code installation window open, displaying additional setup tasks. The background is a webpage for downloading Visual Studio Code.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883465/notes-assets/images/Python-API-Development-with-FastAPI-Windows-Setup/windows-desktop-visual-studio-code.jpg)
-</Frame>
+![The image shows a Windows desktop with a Visual Studio Code installation window open, displaying additional setup tasks. The background is a webpage for downloading Visual Studio Code.](https://kodekloud.com/kk-media/image/upload/v1752883465/notes-assets/images/Python-API-Development-with-FastAPI-Windows-Setup/windows-desktop-visual-studio-code.jpg)
 
 ## Configuring VS Code with the Python Extension
 
@@ -52,27 +46,21 @@ This guide provides step-by-step instructions to install Python and Visual Studi
 
 3. After installation, close the extension sidebar to return to the main file explorer in VS Code.
 
-<Frame>
-  ![The image shows a Windows desktop with Visual Studio Code open, displaying the Python extension installation page. In the background, a web browser is open to the Python download page.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883467/notes-assets/images/Python-API-Development-with-FastAPI-Windows-Setup/windows-desktop-visual-studio-code-python.jpg)
-</Frame>
+![The image shows a Windows desktop with Visual Studio Code open, displaying the Python extension installation page. In the background, a web browser is open to the Python download page.](https://kodekloud.com/kk-media/image/upload/v1752883467/notes-assets/images/Python-API-Development-with-FastAPI-Windows-Setup/windows-desktop-visual-studio-code-python.jpg)
 
 ## Creating Your Project Folder and Testing Environment
 
 1. **Create a Project Folder**\
    It is considered best practice to organize your application code in a dedicated folder. In VS Code, click on **Open Folder** and select or create a folder for your project (for example, a folder named "FastAPI" in your Documents). If you receive a security prompt asking if you trust the authors of the files, click **Yes**. You may close the welcome screen once your project folder is open.
 
-<Frame>
-  ![The image shows a Windows desktop with Visual Studio Code open, displaying a prompt asking if the user trusts the authors of the files in a folder. In the background, a web browser is open to a Visual Studio Code documentation page.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883468/notes-assets/images/Python-API-Development-with-FastAPI-Windows-Setup/windows-desktop-visual-studio-code-prompt.jpg)
-</Frame>
+![The image shows a Windows desktop with Visual Studio Code open, displaying a prompt asking if the user trusts the authors of the files in a folder. In the background, a web browser is open to a Visual Studio Code documentation page.](https://kodekloud.com/kk-media/image/upload/v1752883468/notes-assets/images/Python-API-Development-with-FastAPI-Windows-Setup/windows-desktop-visual-studio-code-prompt.jpg)
 
 2. **Create a New Python File**\
    With your project folder open, right-click inside the Explorer pane and choose **New File**. Name the file **main.py**. The Python extension will automatically activate and will attempt to locate the correct interpreter (e.g., Python 3.9.6).
 
 3. If you have multiple Python versions installed and the extension selects the wrong interpreter, you can change it by opening the Command Palette (via **View > Command Palette**) and searching for "Python: Select Interpreter." Then, choose **Enter interpreter path** and provide the correct path to the desired Python version.
 
-<Frame>
-  ![The image shows a Windows desktop with Visual Studio Code open, displaying a Python file named "main.py" and a command palette with Python-related options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883469/notes-assets/images/Python-API-Development-with-FastAPI-Windows-Setup/windows-desktop-visual-studio-code-python-2.jpg)
-</Frame>
+![The image shows a Windows desktop with Visual Studio Code open, displaying a Python file named "main.py" and a command palette with Python-related options.](https://kodekloud.com/kk-media/image/upload/v1752883469/notes-assets/images/Python-API-Development-with-FastAPI-Windows-Setup/windows-desktop-visual-studio-code-python-2.jpg)
 
 ## Conclusion
 
@@ -80,6 +68,4 @@ You have now successfully installed Python, set up VS Code with the Python exten
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/441565b9-9f18-459f-9b0b-252b1caff7b1/lesson/6207ffa5-0678-4b55-a232-6f6069980646" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/441565b9-9f18-459f-9b0b-252b1caff7b1/lesson/6207ffa5-0678-4b55-a232-6f6069980646)

@@ -14,43 +14,31 @@ The OpenShift console offers two primary views: one tailored for developers and 
 
 The Developer portal provides a visual representation of your cluster’s architecture and the resources deployed within it. The Topology view offers an overall picture of your projects:
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Dedicated console with a project named "mikel1992-dev" and a topology view displaying resources like Deployments, ReplicaSets, and ConfigMaps. The interface includes navigation options on the left and resource details on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882638/notes-assets/images/OpenShift-4-Demo-OpenShift-UI-Overview/red-hat-openshift-topology-view.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Dedicated console with a project named "mikel1992-dev" and a topology view displaying resources like Deployments, ReplicaSets, and ConfigMaps. The interface includes navigation options on the left and resource details on the right.](https://kodekloud.com/kk-media/image/upload/v1752882638/notes-assets/images/OpenShift-4-Demo-OpenShift-UI-Overview/red-hat-openshift-topology-view.jpg)
 
 Even if your cluster is new and has minimal activity, clicking on your workspace reveals detailed information about deployments, replica sets, config maps, labels, namespaces, annotations, and more.
 
 The Observability section is where you can view logs, metrics, alerts, and events. Initially, activity might seem sparse, but as your cluster scales, this area will provide valuable insights:
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Dedicated console displaying streaming events related to a project named "mikel1992-dev," with details about container and pod activities. The left sidebar includes navigation options like Developer, Builds, and ConfigMaps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882640/notes-assets/images/OpenShift-4-Demo-OpenShift-UI-Overview/red-hat-openshift-streaming-events.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Dedicated console displaying streaming events related to a project named "mikel1992-dev," with details about container and pod activities. The left sidebar includes navigation options like Developer, Builds, and ConfigMaps.](https://kodekloud.com/kk-media/image/upload/v1752882640/notes-assets/images/OpenShift-4-Demo-OpenShift-UI-Overview/red-hat-openshift-streaming-events.jpg)
 
 For example, selecting performance metrics such as CPU usage is straightforward:
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Dedicated interface with a metrics query selection dropdown, offering options like CPU usage, memory usage, and bandwidth.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882640/notes-assets/images/OpenShift-4-Demo-OpenShift-UI-Overview/red-hat-openshift-metrics-dropdown.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Dedicated interface with a metrics query selection dropdown, offering options like CPU usage, memory usage, and bandwidth.](https://kodekloud.com/kk-media/image/upload/v1752882640/notes-assets/images/OpenShift-4-Demo-OpenShift-UI-Overview/red-hat-openshift-metrics-dropdown.jpg)
 
 Additionally, you can search for specific resources, view build configurations, or create a new build config directly from the portal:
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Dedicated interface with a search panel for selecting resources, displaying a dropdown list of available resources. The left sidebar includes options like Topology, Observe, Builds, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882642/notes-assets/images/OpenShift-4-Demo-OpenShift-UI-Overview/red-hat-openshift-interface-dropdown.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Dedicated interface with a search panel for selecting resources, displaying a dropdown list of available resources. The left sidebar includes options like Topology, Observe, Builds, and more.](https://kodekloud.com/kk-media/image/upload/v1752882642/notes-assets/images/OpenShift-4-Demo-OpenShift-UI-Overview/red-hat-openshift-interface-dropdown.jpg)
 
 In OpenShift, projects function similarly to namespaces in Kubernetes. You also have access to config maps and secrets, as shown in the following dashboard:
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Dedicated dashboard for a project named "mikel1992-dev," displaying its active status, details, and recent events. The left sidebar includes navigation options like Developer, Project, and ConfigMaps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882643/notes-assets/images/OpenShift-4-Demo-OpenShift-UI-Overview/red-hat-openshift-dashboard-mikel1992-dev.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Dedicated dashboard for a project named "mikel1992-dev," displaying its active status, details, and recent events. The left sidebar includes navigation options like Developer, Project, and ConfigMaps.](https://kodekloud.com/kk-media/image/upload/v1752882643/notes-assets/images/OpenShift-4-Demo-OpenShift-UI-Overview/red-hat-openshift-dashboard-mikel1992-dev.jpg)
 
 ### Administrator Portal
 
 Switching to the Administrator portal reveals additional management functionalities, such as operators, workloads, and networking. In the Workloads section, you can view pods, deployments, deployment configurations, and more. As you progress to the networking section, you’ll find services, ingress resources, and other networking components:
 
-<Frame>
-  ![The image shows a Red Hat OpenShift Dedicated interface displaying a list of Kubernetes secrets for a project named "mikel1992-dev." The secrets include various types such as docker configuration and service account tokens, with details like size and creation date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882644/notes-assets/images/OpenShift-4-Demo-OpenShift-UI-Overview/openshift-kubernetes-secrets-mikel1992.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift Dedicated interface displaying a list of Kubernetes secrets for a project named "mikel1992-dev." The secrets include various types such as docker configuration and service account tokens, with details like size and creation date.](https://kodekloud.com/kk-media/image/upload/v1752882644/notes-assets/images/OpenShift-4-Demo-OpenShift-UI-Overview/openshift-kubernetes-secrets-mikel1992.jpg)
 
 Other important tools accessible in this view include persistent volumes, storage classes, builds, user management, service accounts, roles, role bindings, and cluster settings.
 
@@ -79,9 +67,7 @@ spec:
         - containerPort: 8080
 ```
 
-<Callout icon="lightbulb">
-  This YAML follows the standard Kubernetes format by specifying the API version, kind, metadata, and specifications required for deployment. Even seasoned Kubernetes users can benefit from the clear breakdown provided by OpenShift.
-</Callout>
+> **lightbulb** This YAML follows the standard Kubernetes format by specifying the API version, kind, metadata, and specifications required for deployment. Even seasoned Kubernetes users can benefit from the clear breakdown provided by OpenShift.
 
 ## OpenShift Command-Line Interface (CLI) Overview
 
@@ -114,15 +100,11 @@ workspaced0af5646651143db-56cfddf4b7-jwc2s      2/2     Running   0          6m1
 
 These examples demonstrate that the OpenShift CLI uses a command structure similar to kubectl. Many operations available via kubectl are directly transferable to oc commands.
 
-<Callout icon="lightbulb">
-  If you prefer to use a terminal outside the OpenShift web console, you can download and install the oc CLI on your local machine. This provides you with the flexibility to manage your resources from your own environment.
-</Callout>
+> **lightbulb** If you prefer to use a terminal outside the OpenShift web console, you can download and install the oc CLI on your local machine. This provides you with the flexibility to manage your resources from your own environment.
 
 To install the oc CLI, navigate to the Red Hat Hybrid Cloud Console:
 
-<Frame>
-  ![The image shows a webpage from the Red Hat Hybrid Cloud Console, specifically the downloads section for command-line interface (CLI) tools for OpenShift, with options for different OS types and architectures.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882646/notes-assets/images/OpenShift-4-Demo-OpenShift-UI-Overview/red-hat-hybrid-cloud-cli-downloads.jpg)
-</Frame>
+![The image shows a webpage from the Red Hat Hybrid Cloud Console, specifically the downloads section for command-line interface (CLI) tools for OpenShift, with options for different OS types and architectures.](https://kodekloud.com/kk-media/image/upload/v1752882646/notes-assets/images/OpenShift-4-Demo-OpenShift-UI-Overview/red-hat-hybrid-cloud-cli-downloads.jpg)
 
 Select the appropriate version for your operating system, install the tool, and authenticate using the provided login command from the console’s dropdown menu. Once connected, you'll be ready to manage your OpenShift environment with ease.
 
@@ -138,6 +120,4 @@ Throughout this lesson, we've provided an overview of both the OpenShift UI and 
 
 Happy exploring!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/7ba3dd10-68d9-414d-b26b-8e9109a4a3d3/lesson/62a4cad0-0af0-4068-83f9-7b3568f994aa" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/7ba3dd10-68d9-414d-b26b-8e9109a4a3d3/lesson/62a4cad0-0af0-4068-83f9-7b3568f994aa)

@@ -15,9 +15,7 @@ This section focuses on:
 * A minimal repository layout and example manifests to get a cluster ready in seconds
 * Practical considerations for safely managing configuration and secrets during bootstrap
 
-<Callout icon="lightbulb">
-  GitOps enables declarative, Git-centered operations for Kubernetes. By storing cluster state in Git and using Argo CD to continuously reconcile the cluster, you get auditable changes, safer rollbacks, and repeatable cluster bootstraps.
-</Callout>
+> **lightbulb** GitOps enables declarative, Git-centered operations for Kubernetes. By storing cluster state in Git and using Argo CD to continuously reconcile the cluster, you get auditable changes, safer rollbacks, and repeatable cluster bootstraps.
 
 ## Why GitOps for cluster bootstrap
 
@@ -90,9 +88,7 @@ spec:
       selfHeal: true
 ```
 
-<Callout icon="warning">
-  Avoid committing plaintext secrets to Git. Use sealed-secrets, external secret stores (e.g., AWS Secrets Manager, HashiCorp Vault), or GitOps-compatible secret management to keep sensitive data safe.
-</Callout>
+> **warning** Avoid committing plaintext secrets to Git. Use sealed-secrets, external secret stores (e.g., AWS Secrets Manager, HashiCorp Vault), or GitOps-compatible secret management to keep sensitive data safe.
 
 ## Practical tips for a minimal Glasskube template
 
@@ -110,6 +106,4 @@ spec:
 
 Throughout the lesson you'll practice these concepts and configurations. By following this template you'll be able to provision and maintain a cluster that is auditable, reproducible, and ready for rapid iteration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/0ddd5879-550c-4c12-82cd-ac19fb487de5/lesson/b80c5b04-728f-44e3-94ba-27513e89804e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/0ddd5879-550c-4c12-82cd-ac19fb487de5/lesson/b80c5b04-728f-44e3-94ba-27513e89804e)

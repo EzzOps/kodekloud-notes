@@ -70,7 +70,7 @@ tmpfs           490M     0  490M   0% /dev/shm
 
 Consider an `employees.txt` file with pipe-delimited records:
 
-![The image shows a text file named "employees.txt" containing a list of employees with details such as name, department, job title, email, and salary.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868675/notes-assets/images/Advanced-Bash-Scripting-sed-print/employees-list-details-text-file.jpg)
+![The image shows a text file named "employees.txt" containing a list of employees with details such as name, department, job title, email, and salary.](https://kodekloud.com/kk-media/image/upload/v1752868675/notes-assets/images/Advanced-Bash-Scripting-sed-print/employees-list-details-text-file.jpg)
 
 | Field No. | Field Name    | Description           |
 | --------- | ------------- | --------------------- |
@@ -295,6 +295,6 @@ You have successfully set up a basic RESTful API server in Go. You now know how 
 
 In future lessons, we will add more functionalities and expand our API by introducing additional endpoints and middleware.
 
-![The image shows a web browser displaying a page with the text "Welcome to homepage" on a black background. The URL in the address bar is "localhost:10000/foo".](../../../../images/kodekloud.com/kk-media/image/upload/v1752868676/notes-assets/images/Advanced-Golang-Creating-an-API-server/welcome-homepage-black-background.jpg)
+![The image shows a web browser displaying a page with the text "Welcome to homepage" on a black background. The URL in the address bar is "localhost:10000/foo".](https://kodekloud.com/kk-media/image/upload/v1752868676/notes-assets/images/Advanced-Golang-Creating-an-API-server/welcome-homepage-black-background.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/advanced-golang/module/483ddd82-96d2-43d5-a9a8-e27e8cdb064d/lesson/9b33b9fd-f321-4bc2-bcfe-89921a91ee98)

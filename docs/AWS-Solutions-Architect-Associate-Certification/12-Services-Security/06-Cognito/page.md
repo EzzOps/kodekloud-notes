@@ -18,7 +18,7 @@ Cognito provides several clear benefits:
 * A pay-as-you-go pricing model where you only pay for the resources you use.
 * Scalability to support millions of users and hundreds of transactions per second.
 
-![The image lists five benefits: Secure Password Storage, Integration With Identity Providers, Quick Start-up, Pay-as-You-Go, and Scalable. Each benefit is accompanied by an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865760/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Cognito/benefits-secure-password-storage-icons.jpg)
+![The image lists five benefits: Secure Password Storage, Integration With Identity Providers, Quick Start-up, Pay-as-You-Go, and Scalable. Each benefit is accompanied by an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752865760/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Cognito/benefits-secure-password-storage-icons.jpg)
 
 ## Cognito User Pools
 
@@ -33,7 +33,7 @@ How Cognito User Pools work:
 
 The diagram below represents a typical serverless application architecture using Cognito User Pools in conjunction with AWS API Gateway, Lambda, and DynamoDB:
 
-![The image is a flow diagram illustrating a serverless app architecture using AWS services, including Cognito User Pools, API Gateway, Lambda, and DynamoDB. It shows the process of user authentication and token exchange leading to database interaction.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865762/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Cognito/serverless-app-architecture-aws-diagram.jpg)
+![The image is a flow diagram illustrating a serverless app architecture using AWS services, including Cognito User Pools, API Gateway, Lambda, and DynamoDB. It shows the process of user authentication and token exchange leading to database interaction.](https://kodekloud.com/kk-media/image/upload/v1752865762/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Cognito/serverless-app-architecture-aws-diagram.jpg)
 
 ## Cognito Identity Pools
 
@@ -43,7 +43,7 @@ This approach seamlessly integrates application-level authentication with AWS re
 
 The following diagram outlines the authentication flow when using Cognito Identity Pools:
 
-![The image is a diagram illustrating the flow of authentication using AWS Cognito Identity Pools, showing interactions between a mobile/web app, Cognito User Pools, social identity providers, and AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865763/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Cognito/aws-cognito-authentication-flow-diagram.jpg)
+![The image is a diagram illustrating the flow of authentication using AWS Cognito Identity Pools, showing interactions between a mobile/web app, Cognito User Pools, social identity providers, and AWS services.](https://kodekloud.com/kk-media/image/upload/v1752865763/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Cognito/aws-cognito-authentication-flow-diagram.jpg)
 
 ## Summary
 

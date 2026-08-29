@@ -65,9 +65,7 @@ spec:
                   default: 1
 ```
 
-<Callout icon="lightbulb">
-  Using `shortNames` (for example `wj`) makes commands like `kubectl get wj` possible and more convenient.
-</Callout>
+> **lightbulb** Using `shortNames` (for example `wj`) makes commands like `kubectl get wj` possible and more convenient.
 
 ## 2) Apply the CRD and wait until it is established
 
@@ -170,9 +168,7 @@ Error from server: error when creating "bad-widget.yaml": admission webhook "val
 
 Kubernetes rejects this object because `size: huge` is not one of the allowed enum values defined in the CRD.
 
-<Callout icon="warning">
-  If you update your CRD schema after CRs already exist, be careful: removing fields or tightening validation can cause existing objects to fail validation. Prefer adding new fields or using a migration strategy.
-</Callout>
+> **warning** If you update your CRD schema after CRs already exist, be careful: removing fields or tightening validation can cause existing objects to fail validation. Prefer adding new fields or using a migration strategy.
 
 ## Summary and next steps
 
@@ -186,6 +182,4 @@ Next recommended steps:
 * Implement a controller for the Widget kind to reconcile and act on Widget objects.
 * Read more: [Extending the Kubernetes API with CRDs](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ba392f08-9d70-442b-9751-fdc2052b777e/lesson/aa3ba4e5-e368-4686-be2b-2d16b5843fd8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ba392f08-9d70-442b-9751-fdc2052b777e/lesson/aa3ba4e5-e368-4686-be2b-2d16b5843fd8)

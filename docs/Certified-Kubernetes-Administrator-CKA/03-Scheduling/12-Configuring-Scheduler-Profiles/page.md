@@ -66,7 +66,7 @@ Several scheduler plugins play critical roles during these phases:
 
 The following image outlines the various extension points of the Kubernetes scheduler, including processes like the scheduling queue, filtering, scoring, and binding phases:
 
-![The image outlines Kubernetes scheduler extension points: Scheduling Queue, Filtering, Scoring, and Binding, with specific functions like queueSort, preFilter, and bind.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869885/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Configuring-Scheduler-Profiles/frame_380.jpg)
+![The image outlines Kubernetes scheduler extension points: Scheduling Queue, Filtering, Scoring, and Binding, with specific functions like queueSort, preFilter, and bind.](https://kodekloud.com/kk-media/image/upload/v1752869885/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Configuring-Scheduler-Profiles/frame_380.jpg)
 
 ## Customizing Scheduler Behavior with Profiles
 

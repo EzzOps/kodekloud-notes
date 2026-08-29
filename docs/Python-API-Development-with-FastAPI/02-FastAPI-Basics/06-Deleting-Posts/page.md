@@ -11,9 +11,7 @@ In this lesson, we'll learn how to implement a DELETE endpoint in FastAPI to rem
 * Handle scenarios where the post is not found.
 * Return the appropriate HTTP response, using a 204 status code for a successful deletion.
 
-<Callout icon="lightbulb">
-  Before deleting a post, ensure you have helper functions in place to locate the post and its index within your list.
-</Callout>
+> **lightbulb** Before deleting a post, ensure you have helper functions in place to locate the post and its index within your list.
 
 Below is an outline of the solution:
 
@@ -145,9 +143,7 @@ def delete_post(id: int):
     return Response(status_code=status.HTTP_204_NO_CONTENT)
 ```
 
-<Callout icon="triangle-alert">
-  Do not include any content in the response body when using a 204 status code, as this might cause errors related to the declared Content-Length.
-</Callout>
+> **triangle-alert** Do not include any content in the response body when using a 204 status code, as this might cause errors related to the declared Content-Length.
 
 ## Testing the DELETE Endpoint
 
@@ -167,15 +163,11 @@ INFO:     127.0.0.1:51801 - "DELETE /posts/1 HTTP/1.1" 204 No Content
 
 The image below from the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) shows various HTTP response status codes, including the expected 204 code for a successful deletion.
 
-<Frame>
-  ![The image shows a webpage from the Mozilla Developer Network (MDN) documentation, detailing HTTP response status codes, specifically focusing on successful responses like "200 OK" and "201 Created." The page includes descriptions and explanations of various status codes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883439/notes-assets/images/Python-API-Development-with-FastAPI-Deleting-Posts/mdn-http-status-codes-success.jpg)
-</Frame>
+![The image shows a webpage from the Mozilla Developer Network (MDN) documentation, detailing HTTP response status codes, specifically focusing on successful responses like "200 OK" and "201 Created." The page includes descriptions and explanations of various status codes.](https://kodekloud.com/kk-media/image/upload/v1752883439/notes-assets/images/Python-API-Development-with-FastAPI-Deleting-Posts/mdn-http-status-codes-success.jpg)
 
 After deleting the post, running a GET request to retrieve all posts confirms that the post has been removed:
 
-<Frame>
-  ![The image shows the Postman application interface with a GET request being sent to a local server endpoint. The request is part of a collection named "fastapi-course" and is retrieving posts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883440/notes-assets/images/Python-API-Development-with-FastAPI-Deleting-Posts/postman-get-request-fastapi-course.jpg)
-</Frame>
+![The image shows the Postman application interface with a GET request being sent to a local server endpoint. The request is part of a collection named "fastapi-course" and is retrieving posts.](https://kodekloud.com/kk-media/image/upload/v1752883440/notes-assets/images/Python-API-Development-with-FastAPI-Deleting-Posts/postman-get-request-fastapi-course.jpg)
 
 ## Verifying Deletion with the Updated Status Code
 
@@ -197,9 +189,7 @@ def delete_post(id: int):
 
 Sending a DELETE request now returns a 204 response with no content:
 
-<Frame>
-  ![The image shows a Postman interface with a DELETE request to a local server endpoint. The response status is 204 No Content, indicating a successful request.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883441/notes-assets/images/Python-API-Development-with-FastAPI-Deleting-Posts/postman-delete-request-204-response.jpg)
-</Frame>
+![The image shows a Postman interface with a DELETE request to a local server endpoint. The response status is 204 No Content, indicating a successful request.](https://kodekloud.com/kk-media/image/upload/v1752883441/notes-assets/images/Python-API-Development-with-FastAPI-Deleting-Posts/postman-delete-request-204-response.jpg)
 
 ## Conclusion
 
@@ -217,6 +207,4 @@ In the next lesson, we will explore how to update posts in FastAPI. Happy coding
 * [FastAPI Official Documentation](https://fastapi.tiangolo.com/)
 * [MDN Web Docs on HTTP Status Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/a93d2966-1c3b-4250-aa86-8b38d99c895b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/a93d2966-1c3b-4250-aa86-8b38d99c895b)

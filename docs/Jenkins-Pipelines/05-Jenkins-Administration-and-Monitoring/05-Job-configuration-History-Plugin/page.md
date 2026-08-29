@@ -6,9 +6,7 @@ Learn to use the Job Configuration History plugin for Jenkins to back up, compar
 
 In this guide, you will learn how to leverage the Job Configuration History plugin for Jenkins to automatically back up your job and system configurations. The plugin captures every modification to your configuration files, allows side-by-side diff comparisons, and even facilitates restoration of previous versions. This is especially useful when recovering accidentally deleted jobs or unintended changes.
 
-<Callout icon="lightbulb">
-  Before you begin, install the plugin and restart Jenkins manually to ensure all features are active.
-</Callout>
+> **lightbulb** Before you begin, install the plugin and restart Jenkins manually to ensure all features are active.
 
 ## Installation and Initial Setup
 
@@ -16,9 +14,7 @@ In this guide, you will learn how to leverage the Job Configuration History plug
 2. Manually restart Jenkins after installation.
 3. On the Jenkins dashboard, locate the new "Job Config History" option.
 
-<Frame>
-  ![The image shows a webpage from Jenkins, displaying a "Job Config History Revision Overview" with a table of job configuration changes, and a "Job Diff Side-By-Side View" section.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879675/notes-assets/images/Jenkins-Pipelines-Job-configuration-History-Plugin/jenkins-job-config-history-overview.jpg)
-</Frame>
+![The image shows a webpage from Jenkins, displaying a "Job Config History Revision Overview" with a table of job configuration changes, and a "Job Diff Side-By-Side View" section.](https://kodekloud.com/kk-media/image/upload/v1752879675/notes-assets/images/Jenkins-Pipelines-Job-configuration-History-Plugin/jenkins-job-config-history-overview.jpg)
 
 ## Navigating the Configuration History
 
@@ -113,17 +109,13 @@ When you inspect the job configuration, it will now contain:
 echo Hello Testing a new Plugin
 ```
 
-<Callout icon="lightbulb">
-  The restore feature allows you to quickly recover from any unintended configuration changes by reverting to a known good state.
-</Callout>
+> **lightbulb** The restore feature allows you to quickly recover from any unintended configuration changes by reverting to a known good state.
 
 ## Managing Deleted Jobs
 
 The plugin also tracks deleted jobs. If you accidentally remove a job, you can filter the history to display only deleted jobs and restore them as necessary.
 
-<Frame>
-  ![The image shows a Jenkins interface displaying the job configuration history for "Dasher\_testJob," listing changes made by a user with options to view, restore, or delete entries.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879676/notes-assets/images/Jenkins-Pipelines-Job-configuration-History-Plugin/jenkins-job-configuration-history-dasher.jpg)
-</Frame>
+![The image shows a Jenkins interface displaying the job configuration history for "Dasher\_testJob," listing changes made by a user with options to view, restore, or delete entries.](https://kodekloud.com/kk-media/image/upload/v1752879676/notes-assets/images/Jenkins-Pipelines-Job-configuration-History-Plugin/jenkins-job-configuration-history-dasher.jpg)
 
 To restore a deleted job, simply:
 
@@ -131,9 +123,7 @@ To restore a deleted job, simply:
 2. Click on the restore option.
 3. Confirm the restoration, and the job will reappear on the dashboard.
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying the job deletion history for a specific job, with details such as date, operation, user, and file options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879676/notes-assets/images/Jenkins-Pipelines-Job-configuration-History-Plugin/jenkins-job-deletion-history-dashboard.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying the job deletion history for a specific job, with details such as date, operation, user, and file options.](https://kodekloud.com/kk-media/image/upload/v1752879676/notes-assets/images/Jenkins-Pipelines-Job-configuration-History-Plugin/jenkins-job-deletion-history-dashboard.jpg)
 
 ## Configuring the Storage Directory
 
@@ -201,6 +191,4 @@ For further reading and related resources:
 
 Happy configuring!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/f046d5d1-6fa6-4156-b38d-202ed885b64d/lesson/b0b8a649-f5fc-4bcc-8644-2ab0c0db5ab9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/f046d5d1-6fa6-4156-b38d-202ed885b64d/lesson/b0b8a649-f5fc-4bcc-8644-2ab0c0db5ab9)

@@ -130,9 +130,7 @@ spec:
 
 Kyverno evaluates each `+(...)` independently: if `runAsUser` exists but `runAsGroup` does not, only `runAsGroup` is added. This preserves explicit developer settings while filling in missing safe defaults.
 
-<Callout icon="lightbulb">
-  Note: `runAsNonRoot` is commonly set at the container level (`container.securityContext`). Pod-level `securityContext` typically includes `runAsUser`, `runAsGroup`, and `fsGroup`. Adapt the example to container-level `securityContext` if you need `runAsNonRoot` enforced per container.
-</Callout>
+> **lightbulb** Note: `runAsNonRoot` is commonly set at the container level (`container.securityContext`). Pod-level `securityContext` typically includes `runAsUser`, `runAsGroup`, and `fsGroup`. Adapt the example to container-level `securityContext` if you need `runAsNonRoot` enforced per container.
 
 Global anchor
 
@@ -205,9 +203,7 @@ In the `annotate-empty-dir` example:
 
 You can set `spec.emitWarnings: true` in a policy to have Kyverno emit a warning to the user when it mutates a resource — a helpful visibility feature during `kubectl apply`.
 
-<Callout icon="lightbulb">
-  Set `spec.emitWarnings: true` in your policy to notify users when a mutation occurred — a helpful way to preserve developer awareness.
-</Callout>
+> **lightbulb** Set `spec.emitWarnings: true` in your policy to notify users when a mutation occurred — a helpful way to preserve developer awareness.
 
 Summary
 
@@ -225,8 +221,6 @@ Links and references
 * Kyverno anchors and `patchStrategicMerge`: [https://kyverno.io/docs/writing-policies/mutate/#patchstrategicmerge](https://kyverno.io/docs/writing-policies/mutate/#patchstrategicmerge)
 * Kubernetes securityContext reference: [https://kubernetes.io/docs/tasks/configure-pod-container/security-context/](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/7e4a391e-a0ac-4dba-bede-0cfc6e41cefc" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/7e4a391e-a0ac-4dba-bede-0cfc6e41cefc)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/a560c6f5-7b1e-4656-9666-2dd8f21c6336" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/c967815e-519d-419b-8413-d0acd9144b6a/lesson/a560c6f5-7b1e-4656-9666-2dd8f21c6336)

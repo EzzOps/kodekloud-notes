@@ -34,9 +34,7 @@ Dynamic user groups use attribute-based rules to automatically update membership
 
 Dynamic device groups apply only to security groups and function in a similar way as dynamic user groups, but they rely on device attributes. For example, you could set a rule to automatically include all devices running a specific operating system, enabling targeted software updates.
 
-<Callout icon="lightbulb">
-  Using dynamic groups can improve security and administrative efficiency by automating membership based on up-to-date user or device attributes.
-</Callout>
+> **lightbulb** Using dynamic groups can improve security and administrative efficiency by automating membership based on up-to-date user or device attributes.
 
 ***
 
@@ -51,18 +49,14 @@ To manage groups, log in to the Azure Portal, navigate to Microsoft Entra ID, an
 3. Optionally, add a description.
 4. If you plan to assign Azure AD or Microsoft Entra ID roles to the group, change this setting to "Yes" (the default is "No").
 
-<Callout icon="lightbulb">
-  Detailed role assignments are available in courses such as [Microsoft Azure Security Technologies (AZ-500)](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500).
-</Callout>
+> **lightbulb** Detailed role assignments are available in courses such as [Microsoft Azure Security Technologies (AZ-500)](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500).
 
 5. Set the membership type to "Assigned" to manage users manually.
 6. By default, the group creator becomes the owner. You can add more owners during or after the creation process.
 7. Under the Members section, add users—or even another group (e.g., DevRel) to form nested groups.
 8. Click "Create" to finalize the group.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying a list of groups with details such as name, object ID, group type, membership type, and email.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884582/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Group-Accounts/azure-portal-groups-list.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying a list of groups with details such as name, object ID, group type, membership type, and email.](https://kodekloud.com/kk-media/image/upload/v1752884582/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Group-Accounts/azure-portal-groups-list.jpg)
 
 ### Creating a Microsoft 365 Group
 
@@ -71,15 +65,11 @@ To create a Microsoft 365 group:
 1. Click on "New Group" and select "Microsoft 365."
 2. Fill in the group settings. Besides the common settings, you must specify a group email address, which will be used to create a shared mailbox (ensure you have an Exchange license).
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a new Microsoft 365 group. It includes fields for group type, name, email address, description, and membership type, with options for assigning Microsoft Entra roles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884583/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Group-Accounts/azure-portal-microsoft-365-group.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a new Microsoft 365 group. It includes fields for group type, name, email address, description, and membership type, with options for assigning Microsoft Entra roles.](https://kodekloud.com/kk-media/image/upload/v1752884583/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Group-Accounts/azure-portal-microsoft-365-group.jpg)
 
 The process is quite similar to creating a security group, with the additional step of providing an email address.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface where a new group named "Hiring Managers" is being created. The "Add members" section is open, displaying a list of groups and selected members on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884584/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Group-Accounts/azure-portal-hiring-managers-group.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface where a new group named "Hiring Managers" is being created. The "Add members" section is open, displaying a list of groups and selected members on the right.](https://kodekloud.com/kk-media/image/upload/v1752884584/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Group-Accounts/azure-portal-hiring-managers-group.jpg)
 
 ***
 
@@ -96,15 +86,11 @@ Bulk user creation is an efficient way to prepare for dynamic memberships. For e
 3. Click "Submit" to process the creation of users.
 4. Wait for the operation to complete. The CSV file settings will later help define dynamic group membership.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying a list of users with details such as display name, user principal name, and user type. On the right, there is a section for bulk creating users with options to download, edit, and upload a CSV file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884585/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Group-Accounts/azure-portal-user-list-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying a list of users with details such as display name, user principal name, and user type. On the right, there is a section for bulk creating users with options to download, edit, and upload a CSV file.](https://kodekloud.com/kk-media/image/upload/v1752884585/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Group-Accounts/azure-portal-user-list-interface.jpg)
 
 Once the process is complete (e.g., "20 out of 20 completed without any errors"), you can proceed to configure dynamic groups.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying the results of bulk user operations, including user creation and deletion, with details on file names, upload times, completion times, and statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884587/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Group-Accounts/azure-portal-bulk-user-operations.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying the results of bulk user operations, including user creation and deletion, with details on file names, upload times, completion times, and statuses.](https://kodekloud.com/kk-media/image/upload/v1752884587/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Group-Accounts/azure-portal-bulk-user-operations.jpg)
 
 ### Creating a Dynamic User Group
 
@@ -138,9 +124,7 @@ Dynamic device groups, available exclusively for security groups, rely on device
 2. Construct a dynamic query to include devices based on properties (for example, devices where the operating system is Windows).
 3. Follow similar steps as for dynamic user groups, but base your query on device attributes.
 
-<Callout icon="triangle-alert">
-  Ensure that device attribute data is accurate and up-to-date, as this directly affects dynamic group membership and subsequent policy applications.
-</Callout>
+> **triangle-alert** Ensure that device attribute data is accurate and up-to-date, as this directly affects dynamic group membership and subsequent policy applications.
 
 ***
 
@@ -158,6 +142,4 @@ This guide has provided a comprehensive overview of creating and managing differ
 
 Thank you.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/07e3a37e-65a9-430c-9919-011cc605b25d/lesson/44ef192e-51aa-4070-b223-3379ac21553b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/07e3a37e-65a9-430c-9919-011cc605b25d/lesson/44ef192e-51aa-4070-b223-3379ac21553b)

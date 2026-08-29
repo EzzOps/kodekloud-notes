@@ -7,11 +7,9 @@ Fruits:
 
 By familiarizing yourself with key-value pairs, lists, dictionaries, and the importance of proper indentation, you are now well-equipped to delve into coding exercises and start working with YAML files. Enjoy your exploration and happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/ea3fc0e5-7803-45ab-a82e-8be056ddfeb7/lesson/22e6c2bd-4ce8-4ee6-92f6-0a0e255265a4" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/ea3fc0e5-7803-45ab-a82e-8be056ddfeb7/lesson/22e6c2bd-4ce8-4ee6-92f6-0a0e255265a4)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/ea3fc0e5-7803-45ab-a82e-8be056ddfeb7/lesson/1f83fe99-6084-46e1-933d-082ac77369bd" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/ea3fc0e5-7803-45ab-a82e-8be056ddfeb7/lesson/1f83fe99-6084-46e1-933d-082ac77369bd)
 
 
 # A Quick Reminder
@@ -22,9 +20,7 @@ This article emphasizes the importance of following course labs and videos for a
 
 Welcome to this course! This reminder is designed to emphasize the importance of following the provided labs and videos. For the best learning experience, we recommend that you complete the course content before setting up your own local environment. The labs and videos are meticulously crafted to offer you a streamlined learning path, ensuring you build a strong skill set without distractions.
 
-<Callout icon="lightbulb">
-  Stick to the provided labs and video lessons. They are structured to help you efficiently grasp the concepts and techniques demonstrated in this course.
-</Callout>
+> **lightbulb** Stick to the provided labs and video lessons. They are structured to help you efficiently grasp the concepts and techniques demonstrated in this course.
 
 ## Docker Environment Example
 
@@ -52,6 +48,4 @@ $ docker run redis
 
 Thank you for being a valued member of the KodeKloud learning community. Stay focused, follow the course instructions, and make the most of the carefully structured labs and videos to achieve your learning goals.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/1b3f113a-1512-4858-a794-1b74c3541725/lesson/65fda943-5ceb-47f4-a612-c34106e22083" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/1b3f113a-1512-4858-a794-1b74c3541725/lesson/65fda943-5ceb-47f4-a612-c34106e22083)

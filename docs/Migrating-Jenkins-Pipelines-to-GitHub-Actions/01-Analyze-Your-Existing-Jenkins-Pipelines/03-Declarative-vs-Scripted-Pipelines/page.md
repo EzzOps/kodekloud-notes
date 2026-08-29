@@ -140,9 +140,7 @@ The diagram above summarizes the trade-offs: scripted pipelines prioritize flexi
   * Start with Declarative for most work and use `script` blocks only where necessary.
   * Reserve pure Scripted pipelines for workflows that truly require full Groovy flexibility.
 
-<Callout icon="lightbulb">
-  If you’re starting or want standardized, maintainable CI/CD, begin with Declarative pipelines. Move to Scripted pipelines only when your workflows require patterns or dynamic behavior that Declarative syntax cannot express.
-</Callout>
+> **lightbulb** If you’re starting or want standardized, maintainable CI/CD, begin with Declarative pipelines. Move to Scripted pipelines only when your workflows require patterns or dynamic behavior that Declarative syntax cannot express.
 
 ## Links and references
 
@@ -151,6 +149,4 @@ The diagram above summarizes the trade-offs: scripted pipelines prioritize flexi
 * [Apache Groovy — official site](https://groovy-lang.org/)
 * [Shared Libraries — Jenkins](https://www.jenkins.io/doc/book/pipeline/shared-libraries/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/c3b5612d-c270-4105-8f9e-0d103a45ccc8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/c3b5612d-c270-4105-8f9e-0d103a45ccc8)

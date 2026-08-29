@@ -16,9 +16,7 @@ The Billing and Cost Management dashboard provides a high-level snapshot of your
 
 Keep in mind that access to the billing view is commonly restricted. The account that controls billing is normally the management (payer) account in AWS Organizations — not merely the account root user. If you manage FinOps activities, ensure you have the appropriate permissions on the management/payer account so you can access organization-level billing and run cross-account analyses.
 
-<Callout icon="warning">
-  You must have access to the billing/management (payer) account to view organization-level billing data. Without this access you cannot perform many FinOps analyses.
-</Callout>
+> **warning** You must have access to the billing/management (payer) account to view organization-level billing data. Without this access you cannot perform many FinOps analyses.
 
 The dashboard displays cost trends and a service breakdown. Even small accounts show line items (for example, Amazon Route 53, EC2, KMS, taxes). If you need more granular analysis, open Cost Explorer to break down spend by service, usage type, tag, or time window. Scrolling the dashboard also surfaces recent usage and any tags configured for cost allocation—so a consistent tagging strategy and enabling Cost Allocation Tags are important for slicing costs by team, project, or environment.
 
@@ -33,9 +31,7 @@ AWS Cost Anomaly Detection monitors spend patterns and alerts you to unusual inc
   <img alt="The image is a screenshot of the AWS Cost Anomaly Detection page, outlining features and instructions for setting up automated cost anomaly detection and root cause analysis. It includes options for creating a cost monitor, pricing details, and additional resources." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Start with budgets to set expected spend and receive alerts when you approach or exceed thresholds. Budgets are a foundational control for cost governance.
-</Callout>
+> **lightbulb** Start with budgets to set expected spend and receive alerts when you approach or exceed thresholds. Budgets are a foundational control for cost governance.
 
 Data exports and third-party visualization
 For advanced reporting or BI integration, export billing data with Cost and Usage Reports (CUR) to an S3 bucket. CUR files are the canonical source for raw usage and cost lines and are commonly consumed by external tools like Tableau or Looker for custom dashboards and cross-functional reporting.
@@ -108,6 +104,4 @@ Links and references
 
 See you in the next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/b623bd4d-2f47-4afb-a61b-f224315cfbe1/lesson/4d2e5f3e-2efb-4564-847c-f458b68faeb9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/b623bd4d-2f47-4afb-a61b-f224315cfbe1/lesson/4d2e5f3e-2efb-4564-847c-f458b68faeb9)

@@ -21,7 +21,7 @@ Scalability and high availability come built-in with Azure App Service. Microsof
 
 Below is a diagram illustrating the flowchart for selecting an Azure App Service solution. It highlights key decision points for migrating or building new applications and emphasizes features like scalability and language support.
 
-![The image is a flowchart and guide for selecting an Azure App Service solution, detailing decision points for migrating or building new applications, and highlighting features like scalability and language options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866846/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-App-Service/azure-app-service-flowchart-guide.jpg)
+![The image is a flowchart and guide for selecting an Azure App Service solution, detailing decision points for migrating or building new applications, and highlighting features like scalability and language options.](https://kodekloud.com/kk-media/image/upload/v1752866846/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-App-Service/azure-app-service-flowchart-guide.jpg)
 
 ## Key Considerations
 
@@ -55,7 +55,7 @@ Modern app development relies on Continuous Integration and Continuous Deploymen
 
 Below is an infographic summarizing the critical considerations for utilizing Azure App Service as your compute solution. The infographic covers aspects such as sizing, authentication, deployment slots, application type, and CI/CD integration.
 
-![The image is an infographic from KodeKloud outlining considerations for using App Service as a compute solution, including sizing, authentication, deployment slots, app type, and CI/CD integration. It features a wavy design with icons and brief descriptions for each consideration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866846/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-App-Service/app-service-compute-infographic.jpg)
+![The image is an infographic from KodeKloud outlining considerations for using App Service as a compute solution, including sizing, authentication, deployment slots, app type, and CI/CD integration. It features a wavy design with icons and brief descriptions for each consideration.](https://kodekloud.com/kk-media/image/upload/v1752866846/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-App-Service/app-service-compute-infographic.jpg)
 
 > **lightbulb** For a detailed exploration of Azure App Service, including live deployment demonstrations, please refer to our [AZ-104: Microsoft Azure Administrator](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator) course.
 

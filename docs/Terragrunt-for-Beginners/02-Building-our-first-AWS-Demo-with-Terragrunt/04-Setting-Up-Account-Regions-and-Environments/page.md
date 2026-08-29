@@ -23,9 +23,7 @@ root/
 | account-2/ | Terragrunt configurations for AWS Account 2                      |
 | modules/   | Central repo for all Terraform modules (local, Git, or registry) |
 
-<Callout icon="lightbulb">
-  Place reusable Terraform modules in `modules/` to keep your infrastructure code DRY and version-controlled.
-</Callout>
+> **lightbulb** Place reusable Terraform modules in `modules/` to keep your infrastructure code DRY and version-controlled.
 
 ## 2. Account-Level and Region Structure
 
@@ -50,9 +48,7 @@ Each environment directory must include a `terragrunt.hcl` file that:
 * Defines input variables for that environment.
 * Configures remote state backend (S3 & DynamoDB).
 
-<Frame>
-  ![The image shows a diagram of a directory structure for root configuration and remote state, including directories for root, account, region, environments, modules, and Terragrunt config files. It also illustrates a hierarchy with nodes for different environments and regions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884255/notes-assets/images/Terragrunt-for-Beginners-Setting-Up-Account-Regions-and-Environments/directory-structure-root-config-diagram.jpg)
-</Frame>
+![The image shows a diagram of a directory structure for root configuration and remote state, including directories for root, account, region, environments, modules, and Terragrunt config files. It also illustrates a hierarchy with nodes for different environments and regions.](https://kodekloud.com/kk-media/image/upload/v1752884255/notes-assets/images/Terragrunt-for-Beginners-Setting-Up-Account-Regions-and-Environments/directory-structure-root-config-diagram.jpg)
 
 ## 4. Example `terragrunt.hcl`
 
@@ -86,9 +82,7 @@ remote_state {
 * Reference your shared modules via relative paths or Git/Terraform Registry URLs.
 * Leverage Terragrunt’s `include` and `dependency` blocks to minimize duplication.
 
-<Callout icon="triangle-alert">
-  Never hard-code sensitive values (API keys, secrets) in `terragrunt.hcl`. Use AWS Secrets Manager, SSM Parameter Store, or environment variables instead.
-</Callout>
+> **triangle-alert** Never hard-code sensitive values (API keys, secrets) in `terragrunt.hcl`. Use AWS Secrets Manager, SSM Parameter Store, or environment variables instead.
 
 ***
 
@@ -100,6 +94,4 @@ remote_state {
 
 By following this layered directory structure and best practices, you’ll build a scalable, maintainable foundation for managing AWS infrastructure with Terragrunt.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/07066843-7439-443b-b2d4-d31be3c50c97/lesson/2b1ca02a-447b-4406-b7ab-ee88ed2847ee" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/07066843-7439-443b-b2d4-d31be3c50c97/lesson/2b1ca02a-447b-4406-b7ab-ee88ed2847ee)

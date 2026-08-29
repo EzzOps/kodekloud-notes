@@ -15,9 +15,7 @@ When Vault is sealed:
 
 Unsealing Vault reconstructs the master key, decrypts the in-memory encryption key, and allows normal operations. Sealing removes the encryption key from memory, requiring a fresh unseal to resume.
 
-<Frame>
-  ![The image is a slide titled "Seal and Unseal," explaining the concept of sealing a Vault, which involves discarding the encryption key and requiring an unseal for further operations. It lists reasons for sealing, such as key exposure, network intrusion detection, and malware presence.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878215/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Seal-and-Unseal/seal-and-unseal-vault-concept.jpg)
-</Frame>
+![The image is a slide titled "Seal and Unseal," explaining the concept of sealing a Vault, which involves discarding the encryption key and requiring an unseal for further operations. It lists reasons for sealing, such as key exposure, network intrusion detection, and malware presence.](https://kodekloud.com/kk-media/image/upload/v1752878215/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Seal-and-Unseal/seal-and-unseal-vault-concept.jpg)
 
 ## Why Seal Vault Manually?
 
@@ -28,9 +26,7 @@ Common reasons to seal Vault immediately include:
 * Detection of network intrusion
 * Malware or spyware discovered on Vault nodes
 
-<Callout icon="triangle-alert">
-  If unseal key shards are compromised or lost, Vault cannot decrypt the data at rest until a valid threshold of shards is provided. Store and distribute shards securely.
-</Callout>
+> **triangle-alert** If unseal key shards are compromised or lost, Vault cannot decrypt the data at rest until a valid threshold of shards is provided. Store and distribute shards securely.
 
 ## Sealing & Unsealing Methods
 
@@ -42,9 +38,7 @@ Vault supports three primary unseal mechanisms:
 | Cloud Auto Unseal   | Integrates with a cloud KMS to auto-unseal on startup.                                | AWS KMS, Azure Key Vault                      |
 | Transit Auto Unseal | Uses a remote Vault (transit cluster) to protect and unseal the master key.           | Vault Transit Secrets Engine (remote cluster) |
 
-<Frame>
-  ![The image illustrates three options for sealing and unsealing: Key Sharding (Shamir), Cloud Auto Unseal, and Transit Auto Unseal, each represented with distinct icons and colors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878216/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Seal-and-Unseal/sealing-unsealing-options-key-sharding.jpg)
-</Frame>
+![The image illustrates three options for sealing and unsealing: Key Sharding (Shamir), Cloud Auto Unseal, and Transit Auto Unseal, each represented with distinct icons and colors.](https://kodekloud.com/kk-media/image/upload/v1752878216/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Seal-and-Unseal/sealing-unsealing-options-key-sharding.jpg)
 
 ***
 
@@ -56,9 +50,7 @@ To unseal:
 2. Vault combines them to reconstruct the master key.
 3. The master key decrypts the encryption key in memory, and Vault transitions to an **unsealed** state.
 
-<Frame>
-  ![The image illustrates the process of unsealing with key shards using Shamir's Secret Sharing Algorithm, showing how key shards combine to form a master key, which then protects an encryption key and vault data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878217/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Seal-and-Unseal/shamir-secret-sharing-unsealing-process-diagram.jpg)
-</Frame>
+![The image illustrates the process of unsealing with key shards using Shamir's Secret Sharing Algorithm, showing how key shards combine to form a master key, which then protects an encryption key and vault data.](https://kodekloud.com/kk-media/image/upload/v1752878217/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Seal-and-Unseal/shamir-secret-sharing-unsealing-process-diagram.jpg)
 
 ## Step-by-Step Demo
 
@@ -103,18 +95,14 @@ Once unsealed, Vault displays runtime and cluster details and begins serving req
 
 ## Best Practices for Key Shards
 
-<Frame>
-  ![The image is a slide titled "Unsealing with Key Shards," detailing guidelines for securely managing key shards, including distribution among employees and encryption practices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878218/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Seal-and-Unseal/unsealing-key-shards-guidelines-slide.jpg)
-</Frame>
+![The image is a slide titled "Unsealing with Key Shards," detailing guidelines for securely managing key shards, including distribution among employees and encryption practices.](https://kodekloud.com/kk-media/image/upload/v1752878218/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Seal-and-Unseal/unsealing-key-shards-guidelines-slide.jpg)
 
 * **Separate custody:** Distribute shares so no single person holds the threshold.
 * **Encrypt at rest:** Supply [PGP public keys](https://en.wikipedia.org/wiki/Pretty_Good_Privacy) during initialization to encrypt each shard.
 * **Offline storage:** Keep shards out of online systems and automated backups.
 * **Balance threshold:** A higher threshold boosts security but may affect availability.
 
-<Callout icon="lightbulb">
-  Preparing PGP keys for shard encryption helps ensure that only the intended recipient can decrypt their shard.
-</Callout>
+> **lightbulb** Preparing PGP keys for shard encryption helps ensure that only the intended recipient can decrypt their shard.
 
 ***
 
@@ -127,6 +115,4 @@ Once unsealed, Vault displays runtime and cluster details and begins serving req
 * [Azure Key Vault](https://azure.microsoft.com/services/key-vault/)
 * [Vault Transit Secrets Engine](https://www.vaultproject.io/docs/secrets/transit)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/f3adb868-9878-4649-956d-933c562078c0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/f3adb868-9878-4649-956d-933c562078c0)

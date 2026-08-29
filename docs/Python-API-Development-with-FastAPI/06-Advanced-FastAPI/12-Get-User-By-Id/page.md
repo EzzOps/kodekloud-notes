@@ -6,9 +6,7 @@ This article explains how to set up a FastAPI route to retrieve a users profile 
 
 In this article, we explain how to set up a FastAPI route to retrieve a user's profile information based on their ID. This endpoint is essential for authentication, profile viewing (similar to what websites like Twitter or Instagram use), and ensuring that only necessary data is exposed. While previous examples demonstrated similar operations for updating posts, here our focus is on fetching user details.
 
-<Callout icon="lightbulb">
-  Although the following code example shows an update operation for a post, it demonstrates the common pattern of querying the database, checking for existence, and then updating a record. This pattern is similar to what is used for retrieving user details.
-</Callout>
+> **lightbulb** Although the following code example shows an update operation for a post, it demonstrates the common pattern of querying the database, checking for existence, and then updating a record. This pattern is similar to what is used for retrieving user details.
 
 Below is an example snippet from a typical post update function:
 
@@ -76,9 +74,7 @@ Database connection was successful!
 
 Test this endpoint using a tool like Postman by sending a GET request to your local server, for example, [http://127.0.0.1:8000/users/1](http://127.0.0.1:8000/users/1). Ensure that you use the correct HTTP method and endpoint to receive the expected user details in JSON format.
 
-<Frame>
-  ![The image shows the Postman interface with a GET request setup for retrieving a user from a local server. The request is part of a collection named "fastapi-course," and the response section is currently empty.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883326/notes-assets/images/Python-API-Development-with-FastAPI-Get-User-By-Id/postman-get-request-fastapi-course.jpg)
-</Frame>
+![The image shows the Postman interface with a GET request setup for retrieving a user from a local server. The request is part of a collection named "fastapi-course," and the response section is currently empty.](https://kodekloud.com/kk-media/image/upload/v1752883326/notes-assets/images/Python-API-Development-with-FastAPI-Get-User-By-Id/postman-get-request-fastapi-course.jpg)
 
 Upon sending a request (e.g., to `/users/1`), if a user exists with that ID, the JSON response will include only non-sensitive fields such as ID, email, and creation timestamp. A sample response might be:
 
@@ -112,6 +108,4 @@ With these definitions, your GET endpoint securely returns only the appropriate 
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/1bc762d5-9cc6-4648-8128-078b76fe0bcc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/1bc762d5-9cc6-4648-8128-078b76fe0bcc)

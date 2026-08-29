@@ -6,9 +6,7 @@ This article provides a walkthrough for configuring a highly available Vault Raf
 
 In this walkthrough, you’ll configure three Vault Enterprise nodes on AWS to form a highly available (HA) Raft cluster with AWS KMS auto-unseal. We’ll cover node setup, initialization, joining new nodes, leadership management, and automated cluster joining.
 
-<Frame>
-  ![Three overlapping terminal windows with command prompts against a backdrop of tech logos](../../../../images/kodekloud.com/kk-media/image/upload/v1752878426/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Integrated-Storage/overlapping-terminals-command-prompts-logos.jpg)
-</Frame>
+![Three overlapping terminal windows with command prompts against a backdrop of tech logos](https://kodekloud.com/kk-media/image/upload/v1752878426/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Integrated-Storage/overlapping-terminals-command-prompts-logos.jpg)
 
 ## 1. Node Configuration
 
@@ -39,9 +37,7 @@ log_level     = "INFO"
 license_path  = "/etc/vault.d/vault.hcl"
 ```
 
-<Callout icon="triangle-alert">
-  Disabling TLS (`tls_disable = true`) is only recommended for demos. In production, always enable TLS for listener and cluster communication.
-</Callout>
+> **triangle-alert** Disabling TLS (`tls_disable = true`) is only recommended for demos. In production, always enable TLS for listener and cluster communication.
 
 | Node    | `node_id` | `api_addr`                                           | `cluster_addr`                                       |
 | ------- | --------- | ---------------------------------------------------- | ---------------------------------------------------- |
@@ -49,9 +45,7 @@ license_path  = "/etc/vault.d/vault.hcl"
 | vault-2 | vault-2   | [http://10.1.100.103:8200](http://10.1.100.103:8200) | [http://10.1.100.103:8201](http://10.1.100.103:8201) |
 | vault-3 | vault-3   | [http://10.1.100.107:8200](http://10.1.100.107:8200) | [http://10.1.100.107:8201](http://10.1.100.107:8201) |
 
-<Callout icon="lightbulb">
-  Nodes **vault-2** and **vault-3** use the same configuration, updating only `node_id`, `api_addr`, and `cluster_addr`.
-</Callout>
+> **lightbulb** Nodes **vault-2** and **vault-3** use the same configuration, updating only `node_id`, `api_addr`, and `cluster_addr`.
 
 ## 2. Checking Initial Status
 
@@ -201,9 +195,7 @@ storage "raft" {
 }
 ```
 
-<Callout icon="lightbulb">
-  You can also leverage cloud auto-join (e.g., AWS tags, Azure resource groups) for dynamic discovery. See [Vault Auto-Join][auto-join] for details.
-</Callout>
+> **lightbulb** You can also leverage cloud auto-join (e.g., AWS tags, Azure resource groups) for dynamic discovery. See [Vault Auto-Join][auto-join] for details.
 
 ***
 
@@ -217,6 +209,4 @@ With these steps, you have a resilient, three-node Vault Raft cluster featuring 
 
 [auto-join]: https://www.vaultproject.io/docs/configuration/auto-join.html
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/6653e054-70e5-45cd-b7a8-5ffa7e9e1588" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/6653e054-70e5-45cd-b7a8-5ffa7e9e1588)

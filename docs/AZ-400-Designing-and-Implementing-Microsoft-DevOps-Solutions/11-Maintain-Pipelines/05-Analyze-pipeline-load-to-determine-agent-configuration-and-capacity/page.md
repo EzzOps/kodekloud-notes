@@ -22,7 +22,7 @@ Agents are grouped into **agent pools**, which you share across projects and pip
 1. In Azure DevOps, navigate to **Project Settings > Agent pools**.
 2. Review each pool’s agents and their status (online, idle, offline).
 
-![The image shows the Azure DevOps interface, specifically the "Agent pools" section under "Project Settings," displaying details of a hosted agent that is currently online and idle.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868104/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-pipeline-load-to-determine-agent-configuration-and-capacity/azure-devops-agent-pools-interface.jpg)
+![The image shows the Azure DevOps interface, specifically the "Agent pools" section under "Project Settings," displaying details of a hosted agent that is currently online and idle.](https://kodekloud.com/kk-media/image/upload/v1752868104/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-pipeline-load-to-determine-agent-configuration-and-capacity/azure-devops-agent-pools-interface.jpg)
 
 ## 2. Analyzing Microsoft-hosted Agent Usage
 
@@ -31,13 +31,13 @@ To inspect Microsoft-hosted agent performance:
 1. Go to **Pipelines > Jobs**.
 2. Examine **queue time**, **wait time**, and **duration** for each job.
 
-![The image shows a screenshot of the Azure Pipelines interface, displaying a list of jobs with their status, project names, agent specifications, queue times, wait times, and durations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868105/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-pipeline-load-to-determine-agent-configuration-and-capacity/azure-pipelines-jobs-status-screenshot.jpg)
+![The image shows a screenshot of the Azure Pipelines interface, displaying a list of jobs with their status, project names, agent specifications, queue times, wait times, and durations.](https://kodekloud.com/kk-media/image/upload/v1752868105/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-pipeline-load-to-determine-agent-configuration-and-capacity/azure-pipelines-jobs-status-screenshot.jpg)
 
 ## 3. Monitoring Pool Consumption and Concurrency
 
 The **Pool consumption** dashboard provides insight into concurrent job usage, queued jobs, and running jobs. More concurrency reduces queue time but increases cost.
 
-![The image shows a dashboard from Azure Pipelines displaying pool consumption reports for public and private hosted concurrency, with graphs indicating concurrency, queued jobs, and running jobs over time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868106/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-pipeline-load-to-determine-agent-configuration-and-capacity/azure-pipelines-pool-consumption-dashboard.jpg)
+![The image shows a dashboard from Azure Pipelines displaying pool consumption reports for public and private hosted concurrency, with graphs indicating concurrency, queued jobs, and running jobs over time.](https://kodekloud.com/kk-media/image/upload/v1752868106/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-pipeline-load-to-determine-agent-configuration-and-capacity/azure-pipelines-pool-consumption-dashboard.jpg)
 
 ## 4. Using Self-hosted Agents
 
@@ -63,7 +63,7 @@ Navigate to **Pipelines > \[Your Pipeline] > Analytics** for:
 
 Click **Pipeline Duration** to view overall run times and the top 10 slowest steps.
 
-![The image shows an Azure DevOps pipeline duration report, displaying a graph of pipeline duration over time and a breakdown of the top 10 steps by duration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868107/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-pipeline-load-to-determine-agent-configuration-and-capacity/azure-devops-pipeline-duration-report.jpg)
+![The image shows an Azure DevOps pipeline duration report, displaying a graph of pipeline duration over time and a breakdown of the top 10 steps by duration.](https://kodekloud.com/kk-media/image/upload/v1752868107/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-pipeline-load-to-determine-agent-configuration-and-capacity/azure-devops-pipeline-duration-report.jpg)
 
 In this example, **checkout** and **initialize job** are the longest steps. Optimizing these can significantly reduce total run time.
 
@@ -71,7 +71,7 @@ In this example, **checkout** and **initialize job** are the longest steps. Opti
 
 Compare multiple pipelines to spot heavy tasks like VSTest or VSBuild.
 
-![The image shows a pipeline duration report from Azure DevOps, displaying a graph of pipeline durations over time and a breakdown of the top 10 steps by duration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868108/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-pipeline-load-to-determine-agent-configuration-and-capacity/azure-devops-pipeline-duration-report-2.jpg)
+![The image shows a pipeline duration report from Azure DevOps, displaying a graph of pipeline durations over time and a breakdown of the top 10 steps by duration.](https://kodekloud.com/kk-media/image/upload/v1752868108/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-pipeline-load-to-determine-agent-configuration-and-capacity/azure-devops-pipeline-duration-report-2.jpg)
 
 Long-running test or build phases often benefit from more CPU, memory, or additional self-hosted agents.
 
@@ -95,7 +95,7 @@ Aggregate metrics on a single pane:
 2. Click **Add widget**, search for “Pipeline.”
 3. Add **Build History**, **Release Pipeline Overview**, or community widgets from the Extension Marketplace.
 
-![The image shows an Azure DevOps dashboard with pipeline monitoring widgets, displaying build history and performance metrics. The interface includes options to add widgets and view pipeline statistics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868109/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-pipeline-load-to-determine-agent-configuration-and-capacity/azure-devops-dashboard-pipeline-monitoring.jpg)
+![The image shows an Azure DevOps dashboard with pipeline monitoring widgets, displaying build history and performance metrics. The interface includes options to add widgets and view pipeline statistics.](https://kodekloud.com/kk-media/image/upload/v1752868109/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-pipeline-load-to-determine-agent-configuration-and-capacity/azure-devops-dashboard-pipeline-monitoring.jpg)
 
 Monitoring **Average Duration** trends helps determine when to scale agents.
 
@@ -103,7 +103,7 @@ Monitoring **Average Duration** trends helps determine when to scale agents.
 
 For advanced telemetry, stream pipeline logs to an Azure Log Analytics workspace. Query build and release metrics over time for root-cause analysis.
 
-![The image shows a Microsoft Azure portal page for creating a Log Analytics workspace, with fields for project and instance details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868110/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-pipeline-load-to-determine-agent-configuration-and-capacity/azure-portal-log-analytics-workspace.jpg)
+![The image shows a Microsoft Azure portal page for creating a Log Analytics workspace, with fields for project and instance details.](https://kodekloud.com/kk-media/image/upload/v1752868110/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-pipeline-load-to-determine-agent-configuration-and-capacity/azure-portal-log-analytics-workspace.jpg)
 
 Learn more in the [Azure Monitor Logs documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-overview).
 
@@ -115,9 +115,9 @@ To scale quickly, install the **Build Agents for Azure DevOps** solution from th
 2. Choose VM size (vCPUs, RAM).
 3. Deploy and connect to your agent pool.
 
-![The image shows a Microsoft Azure portal interface for creating a single Windows VM plan, with fields for subscription, resource group, region, virtual machine name, and credentials. A warning message indicates that the selected resource group contains existing resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868112/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-pipeline-load-to-determine-agent-configuration-and-capacity/azure-portal-windows-vm-creation.jpg)
+![The image shows a Microsoft Azure portal interface for creating a single Windows VM plan, with fields for subscription, resource group, region, virtual machine name, and credentials. A warning message indicates that the selected resource group contains existing resources.](https://kodekloud.com/kk-media/image/upload/v1752868112/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-pipeline-load-to-determine-agent-configuration-and-capacity/azure-portal-windows-vm-creation.jpg)
 
-![The image shows a Microsoft Azure portal interface for selecting a virtual machine (VM) size, displaying various options with details like vCPUs, RAM, and data disks. The current selection is a Standard B1ms VM with 1 vCPU and 2 GB memory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868113/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-pipeline-load-to-determine-agent-configuration-and-capacity/azure-portal-vm-size-selection.jpg)
+![The image shows a Microsoft Azure portal interface for selecting a virtual machine (VM) size, displaying various options with details like vCPUs, RAM, and data disks. The current selection is a Standard B1ms VM with 1 vCPU and 2 GB memory.](https://kodekloud.com/kk-media/image/upload/v1752868113/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Analyze-pipeline-load-to-determine-agent-configuration-and-capacity/azure-portal-vm-size-selection.jpg)
 
 Alternatively, create VMs manually or via your own ARM/Bicep templates.
 

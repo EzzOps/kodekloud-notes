@@ -73,9 +73,7 @@ If you open Entra ID and inspect App registrations, you will see the app that ac
 * Grant `Storage Blob Data Contributor` to the service identity on the Storage account used for Terraform state.
 * Grant `Contributor` or a scoped custom role for resource deployment, limiting permissions to the minimum required.
 
-<Callout icon="lightbulb">
-  Workload identity federation is recommended because it avoids long-lived client secrets. If you must use client secrets, plan for regular rotation and update the service connection credentials when they change.
-</Callout>
+> **lightbulb** Workload identity federation is recommended because it avoids long-lived client secrets. If you must use client secrets, plan for regular rotation and update the service connection credentials when they change.
 
 Operational notes
 
@@ -90,6 +88,4 @@ Links and references
 * [Terraform remote backends — Terraform Docs](https://developer.hashicorp.com/terraform/language/state/remote)
 * [Azure RBAC overview — Microsoft Docs](https://learn.microsoft.com/azure/role-based-access-control/overview)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/70677d20-46be-4257-9a02-34aa382b3b05/lesson/06ef2eb2-3c2f-48fb-9541-80d679829e6b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/70677d20-46be-4257-9a02-34aa382b3b05/lesson/06ef2eb2-3c2f-48fb-9541-80d679829e6b)

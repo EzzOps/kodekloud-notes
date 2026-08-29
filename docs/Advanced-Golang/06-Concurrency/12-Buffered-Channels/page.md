@@ -10,9 +10,9 @@ A channel that demands a receiver as soon as a message is emitted is known as an
 
 Conversely, a buffered channel has a predetermined capacity. The send operation will block the sending Goroutine only if the buffer is full. For instance, if the buffer can hold 8 values, the sending operation proceeds smoothly until a ninth value is sent. Similarly, receiving from a channel will block only when the buffer is empty.
 
-![The image is a slide titled "Unbuffered Channels," explaining that such channels require a receiver as soon as a message is emitted and cannot store data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868698/notes-assets/images/Advanced-Golang-Buffered-Channels/unbuffered-channels-receiver-message.jpg)
+![The image is a slide titled "Unbuffered Channels," explaining that such channels require a receiver as soon as a message is emitted and cannot store data.](https://kodekloud.com/kk-media/image/upload/v1752868698/notes-assets/images/Advanced-Golang-Buffered-Channels/unbuffered-channels-receiver-message.jpg)
 
-![The image is a slide discussing "Buffered Channels," explaining that they have capacity to hold data, and detailing when sending and receiving operations block in a go-routine.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868699/notes-assets/images/Advanced-Golang-Buffered-Channels/buffered-channels-go-routine-slide.jpg)
+![The image is a slide discussing "Buffered Channels," explaining that they have capacity to hold data, and detailing when sending and receiving operations block in a go-routine.](https://kodekloud.com/kk-media/image/upload/v1752868699/notes-assets/images/Advanced-Golang-Buffered-Channels/buffered-channels-go-routine-slide.jpg)
 
 ## Creating a Buffered Channel
 

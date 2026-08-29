@@ -75,15 +75,11 @@ INFO:     127.0.0.1:55409 - "POST /users HTTP/1.1" 201 Created
 INFO:     127.0.0.1:55409 - "GET /users/1 HTTP/1.1" 200 OK
 ```
 
-<Callout icon="lightbulb">
-  Using routers helps keep your code clean and scalable. As your API grows, you can easily add new routers without cluttering the main application file.
-</Callout>
+> **lightbulb** Using routers helps keep your code clean and scalable. As your API grows, you can easily add new routers without cluttering the main application file.
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/dfef71ab-504b-4390-ad8d-7c8b45f0a3b4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/dfef71ab-504b-4390-ad8d-7c8b45f0a3b4)
 
 
 # Fetching User In Protected Route
@@ -129,9 +125,7 @@ def get_current_user(token: str = Depends(oauth2_scheme)):
 
 ***
 
-<Callout icon="lightbulb">
-  In a production application, remember that the token data only contains the user ID. To work with the entire user object, you must extend this implementation to query your database.
-</Callout>
+> **lightbulb** In a production application, remember that the token data only contains the user ID. To work with the entire user object, you must extend this implementation to query your database.
 
 ## Extended Implementation: Retrieving the User Object from the Database
 

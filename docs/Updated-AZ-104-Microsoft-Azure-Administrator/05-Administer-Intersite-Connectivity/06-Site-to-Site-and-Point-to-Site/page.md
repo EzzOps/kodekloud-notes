@@ -28,9 +28,7 @@ A Site-to-Site connection creates a secure VPN tunnel between your on-premises V
 
 The diagram below illustrates the overall architecture of a Site-to-Site VPN connection, including the gateway subnet, VPN gateway, local network gateway, and the on-premises VPN device:
 
-<Frame>
-  ![The image is a diagram illustrating a site-to-site connection, showing components like a gateway subnet, VPN gateway, local network gateway, on-premises VPN device, and the site-to-site connection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884639/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Site-to-Site-and-Point-to-Site/site-to-site-connection-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating a site-to-site connection, showing components like a gateway subnet, VPN gateway, local network gateway, on-premises VPN device, and the site-to-site connection.](https://kodekloud.com/kk-media/image/upload/v1752884639/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Site-to-Site-and-Point-to-Site/site-to-site-connection-diagram.jpg)
 
 ### Setting Up a Site-to-Site Connection
 
@@ -40,16 +38,12 @@ The diagram below illustrates the overall architecture of a Site-to-Site VPN con
 2. **Add a Connection:**\
    Under the "Connections" section of the Virtual Network Gateway, click on "Add connection." You can choose between a VNet-to-VNet connection (for connecting to another VNet) or a Site-to-Site connection. For this guide, select Site-to-Site and assign a suitable name (e.g., "Demo Site-to-Site East US").
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a connection, with fields for project and instance details such as subscription, resource group, connection type, name, and region. The "Review + create" and "Next: Settings" buttons are visible at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884641/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Site-to-Site-and-Point-to-Site/azure-portal-connection-setup.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a connection, with fields for project and instance details such as subscription, resource group, connection type, name, and region. The "Review + create" and "Next: Settings" buttons are visible at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752884641/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Site-to-Site-and-Point-to-Site/azure-portal-connection-setup.jpg)
 
 3. **Configure Connection Settings:**\
    In the next step, select the appropriate Virtual Network Gateway and reference the Local Network Gateway. Provide details such as the public IP address (or FQDN) of your on-premises VPN device and its served address range.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a connection, with settings for a virtual network gateway and a search for "local network gateways" in progress.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884642/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Site-to-Site-and-Point-to-Site/azure-portal-virtual-network-gateway.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a connection, with settings for a virtual network gateway and a search for "local network gateways" in progress.](https://kodekloud.com/kk-media/image/upload/v1752884642/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Site-to-Site-and-Point-to-Site/azure-portal-virtual-network-gateway.jpg)
 
 4. **Finalize the Connection:**\
    Specify additional parameters such as BGP (if needed), private IP addressing, policy settings, and connection modes. Make sure these settings are mirrored on your on-premises VPN device. After reviewing and confirming all settings, the Site-to-Site VPN connection will be established.
@@ -73,9 +67,7 @@ A Point-to-Site connection is designed for individual devices to securely connec
 
 The flowchart below outlines the key steps involved in establishing a Point-to-Site VPN connection:
 
-<Frame>
-  ![The image is a flowchart illustrating the steps for a Point-to-Site Connection, including Gateway Subnet, VPN Gateway, P2S Configuration, Download, and Connect.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884643/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Site-to-Site-and-Point-to-Site/point-to-site-connection-flowchart.jpg)
-</Frame>
+![The image is a flowchart illustrating the steps for a Point-to-Site Connection, including Gateway Subnet, VPN Gateway, P2S Configuration, Download, and Connect.](https://kodekloud.com/kk-media/image/upload/v1752884643/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Site-to-Site-and-Point-to-Site/point-to-site-connection-flowchart.jpg)
 
 ### Demonstration in the Azure Portal
 
@@ -88,9 +80,7 @@ The flowchart below outlines the key steps involved in establishing a Point-to-S
 3. **Connect to Azure:**\
    Install and launch the VPN client on your device. Use the provided settings to establish a secure connection to your Azure Virtual Network. Once connected, you can access Azure virtual machines and other resources as if they were part of your local network.
 
-<Callout icon="lightbulb">
-  For enhanced security, ensure that the configurations on your on-premises VPN device precisely match the settings in the Azure portal.
-</Callout>
+> **lightbulb** For enhanced security, ensure that the configurations on your on-premises VPN device precisely match the settings in the Azure portal.
 
 ***
 
@@ -102,6 +92,4 @@ Happy networking!
 
 For further reading on Azure VPN solutions, consider reviewing the [Azure VPN Gateway documentation](https://learn.microsoft.com/en-us/azure/vpn-gateway/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/f7470a91-91f6-4c6c-8a03-565abfeb7aee/lesson/e60f2c26-54e6-4fb1-b01d-0004a230d439" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/f7470a91-91f6-4c6c-8a03-565abfeb7aee/lesson/e60f2c26-54e6-4fb1-b01d-0004a230d439)

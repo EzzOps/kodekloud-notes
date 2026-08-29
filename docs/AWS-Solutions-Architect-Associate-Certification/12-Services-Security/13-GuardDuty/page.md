@@ -17,7 +17,7 @@ Aggregating data from these sources allows GuardDuty to identify suspicious patt
 
 GuardDuty can also be integrated with other AWS services to automate remediation processes, such as triggering a Lambda function or notifying the appropriate teams when threats are detected.
 
-![The image illustrates how GuardDuty works, showing a flow from data collection (CloudTrail events, VPC flow logs, etc.) to detection, triggering, and taking action using AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865801/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-GuardDuty/guardduty-data-flow-illustration.jpg)
+![The image illustrates how GuardDuty works, showing a flow from data collection (CloudTrail events, VPC flow logs, etc.) to detection, triggering, and taking action using AWS services.](https://kodekloud.com/kk-media/image/upload/v1752865801/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-GuardDuty/guardduty-data-flow-illustration.jpg)
 
 When a potential threat is detected, GuardDuty assigns a severity score ranging from 1 to 10:
 
@@ -45,7 +45,7 @@ GuardDuty classifies detected threats into several categories. The table below p
 | Account Compromise  | Encompasses suspicious activities such as API calls from unusual locations, use of anonymizing proxies, attempts to disable logging, changes that weaken password policies, unexpected resource deployments, region changes, or API calls from malicious IPs. |
 | Bucket Compromise   | Involves irregular S3 data access patterns, potential credential misuse, abnormal S3 activity from remote locations, or unauthorized access attempts from suspicious IP addresses.                                                                            |
 
-![The image lists four GuardDuty detection categories: reconnaissance, instance compromise, account compromise, and bucket compromise, each represented by a numbered icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865802/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-GuardDuty/guardduty-detection-categories-icons.jpg)
+![The image lists four GuardDuty detection categories: reconnaissance, instance compromise, account compromise, and bucket compromise, each represented by a numbered icon.](https://kodekloud.com/kk-media/image/upload/v1752865802/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-GuardDuty/guardduty-detection-categories-icons.jpg)
 
 > **triangle-alert** High severity alerts should be prioritized immediately. Make sure your incident response plan is up-to-date and that your team is prepared to act swiftly in the event of a critical threat.
 

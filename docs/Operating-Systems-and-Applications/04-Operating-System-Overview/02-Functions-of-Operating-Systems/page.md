@@ -56,9 +56,7 @@ These are OS subsystems that cooperate—often implemented inside the kernel (sc
 | Device drivers              | Translator | Interface with hardware, implement device-specific protocols    |
 | Authentication & security   | Guard      | Validate identity, enforce access control and privileges        |
 
-<Callout icon="lightbulb">
-  TIP: The kernel is the OS core, but many functions (like process scheduling and some services) appear as coordinated subsystems — sometimes implemented inside the kernel, sometimes in user space for safety and modularity.
-</Callout>
+> **lightbulb** TIP: The kernel is the OS core, but many functions (like process scheduling and some services) appear as coordinated subsystems — sometimes implemented inside the kernel, sometimes in user space for safety and modularity.
 
 To summarize key points:
 
@@ -78,9 +76,7 @@ A: the file system, B: the kernel, or C: the process manager?
 
 Correct answer: C, the process manager. While the kernel provides overall control and interfaces, the process manager (implemented via the kernel’s scheduler and process-management subsystems) is responsible for creating processes and allocating CPU time so applications can run concurrently.
 
-<Callout icon="warning">
-  Warning: Don’t conflate the kernel with a single, monolithic program that directly performs all tasks. Modern OSes split responsibilities between kernel-space and user-space for reliability, security, and modularity.
-</Callout>
+> **warning** Warning: Don’t conflate the kernel with a single, monolithic program that directly performs all tasks. Modern OSes split responsibilities between kernel-space and user-space for reliability, security, and modularity.
 
 ## Zooming out
 
@@ -97,6 +93,4 @@ Further reading and references:
 * [What is an operating system? (educational overview)](https://developer.ibm.com/articles/os-basics/)
 * [Kernel vs user space explained](https://lwn.net/Kernel/Index/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/8cc6f888-e958-4535-904e-22ffe290ae7d/lesson/e4eaba10-5c49-40a8-ba44-a0a17c1f2324" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/operating-systems-and-applications/module/8cc6f888-e958-4535-904e-22ffe290ae7d/lesson/e4eaba10-5c49-40a8-ba44-a0a17c1f2324)

@@ -138,9 +138,7 @@ Key details and options
 * In production you should enable upstream certificate validation. Depending on your environment you may need to provide a CA bundle or configure `proxy_ssl_trusted_certificate` and `proxy_ssl_verify` options (see NGINX docs).
 * For internal environments using self-signed certificates you can disable verification during testing, but this is a security risk in production.
 
-<Callout icon="warning">
-  Do NOT disable TLS verification (`proxy_ssl_verify off`) in production. If using self-signed certs for internal services, add the CA to the NGINX host trust store instead of skipping verification.
-</Callout>
+> **warning** Do NOT disable TLS verification (`proxy_ssl_verify off`) in production. If using self-signed certs for internal services, add the CA to the NGINX host trust store instead of skipping verification.
 
 Apache backend example
 
@@ -221,11 +219,9 @@ Links and references
 * Apache mod\_ssl / VirtualHost examples — [https://httpd.apache.org/docs/2.4/ssl/ssl\_howto.html](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html)
 * UFW (Uncomplicated Firewall) — [https://help.ubuntu.com/community/UFW](https://help.ubuntu.com/community/UFW)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/af1b832f-e266-40ac-b2f3-86945bc5805b" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/af1b832f-e266-40ac-b2f3-86945bc5805b)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/64f0226a-545c-4456-b704-e4ee931b410f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/64f0226a-545c-4456-b704-e4ee931b410f)
 
 
 # HTTP Headers
@@ -357,9 +353,7 @@ Important security headers:
 * `X-Frame-Options: SAMEORIGIN` — blocks framing by other origins (mitigates clickjacking).
 * `Strict-Transport-Security` (HSTS) — enforces HTTPS for future requests.
 
-<Callout icon="lightbulb">
-  Security headers like `Cache-Control`, `Pragma`, and `Expires` are often combined with CSP and HSTS to prevent sensitive pages from being cached and to harden the application against client-side attacks.
-</Callout>
+> **lightbulb** Security headers like `Cache-Control`, `Pragma`, and `Expires` are often combined with CSP and HSTS to prevent sensitive pages from being cached and to harden the application against client-side attacks.
 
 ## Authentication headers
 
@@ -372,9 +366,7 @@ Authorization: Basic YWRtaW46c2VjcmV0
 * `Authorization: Basic <base64>` — legacy Basic Auth, where the base64 decodes to `username:password`. Only use over TLS and avoid in modern systems.
 * `Authorization: Bearer <token>` — common for token-based authentication (OAuth2, JWT). Always protect tokens and avoid logging them.
 
-<Callout icon="warning">
-  Do not log full `Authorization` header values or other sensitive headers (tokens, passwords) in production logs. Mask or truncate these fields to prevent leakage.
-</Callout>
+> **warning** Do not log full `Authorization` header values or other sensitive headers (tokens, passwords) in production logs. Mask or truncate these fields to prevent leakage.
 
 ## Caching headers and how caching works
 
@@ -564,6 +556,4 @@ Notes:
 
 In follow-up lessons you can inspect headers with browser devtools, curl (`curl -I` / `curl -v`), or network proxies, and practice configuring NGINX to add, modify, and strip headers for different environments.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/889d65af-d23e-4813-98fb-afae795ba3e9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/889d65af-d23e-4813-98fb-afae795ba3e9)

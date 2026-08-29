@@ -52,17 +52,13 @@ The stream editor `sed` excels at find-and-replace tasks:
 * `s/pattern/replacement/g` replaces all occurrences on each line.
 * The `-i` flag edits the file directly.
 
-<Callout icon="triangle-alert">
-  Always preview your `sed` commands without `-i` first. To keep a backup, use `-i.bak` (e.g., `sed -i.bak 's/old/new/g' file`).
-</Callout>
+> **triangle-alert** Always preview your `sed` commands without `-i` first. To keep a backup, use `-i.bak` (e.g., `sed -i.bak 's/old/new/g' file`).
 
 ## Extracting Fields with `cut`
 
 When working with delimited data (spaces, commas, or tabs), `cut` slices out columns:
 
-<Frame>
-  ![The image shows a terminal interface with a command prompt on the left and a text file named "userinfo.txt" on the right, containing a list of names, cities, countries, and numbers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881405/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Process-Text-Streams-Using-Filters/terminal-command-prompt-userinfo-file.jpg)
-</Frame>
+![The image shows a terminal interface with a command prompt on the left and a text file named "userinfo.txt" on the right, containing a list of names, cities, countries, and numbers.](https://kodekloud.com/kk-media/image/upload/v1752881405/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Process-Text-Streams-Using-Filters/terminal-command-prompt-userinfo-file.jpg)
 
 * **By space delimiter:** extract the first field (name)
   ```bash theme={null}
@@ -81,9 +77,7 @@ The `uniq` filter only removes adjacent duplicates—sort first to catch all dup
 sort countries.txt | uniq
 ```
 
-<Callout icon="lightbulb">
-  If your file isn’t sorted, `uniq` may leave non-adjacent duplicates. Always sort before `uniq` for a full cleanse.
-</Callout>
+> **lightbulb** If your file isn’t sorted, `uniq` may leave non-adjacent duplicates. Always sort before `uniq` for a full cleanse.
 
 ## Comparing Files with `diff`
 
@@ -124,9 +118,7 @@ This helps pinpoint changes before editing or deploying configurations.
 * [sed – An Introduction and Tutorial](https://www.grymoire.com/Unix/Sed.html)
 * [Linux `diff` Tutorial](https://www.gnu.org/software/diffutils/manual/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/cfb18eb7-37ff-4763-ad32-3fd55c995d8b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/cfb18eb7-37ff-4763-ad32-3fd55c995d8b)
 
 
 # Work on the Command Line Part 1 Log into remote and graphical consoles demo
@@ -160,9 +152,7 @@ sudo systemctl set-default graphical.target
 sudo reboot
 ```
 
-<Callout icon="lightbulb">
-  If the VM defaults to text mode, start the graphical login with `sudo systemctl start gdm` or install the necessary GNOME packages.
-</Callout>
+> **lightbulb** If the VM defaults to text mode, start the graphical login with `sudo systemctl start gdm` or install the necessary GNOME packages.
 
 Once the GNOME login screen appears:
 
@@ -185,9 +175,7 @@ sudo firewall-cmd --add-service=rdp --permanent
 sudo firewall-cmd --reload
 ```
 
-<Callout icon="triangle-alert">
-  Exposing RDP (port 3389) on public networks may introduce security vulnerabilities. Use a VPN or SSH tunnel when possible.
-</Callout>
+> **triangle-alert** Exposing RDP (port 3389) on public networks may introduce security vulnerabilities. Use a VPN or SSH tunnel when possible.
 
 Next, open your preferred RDP client (e.g., Microsoft Remote Desktop) and enter the server’s IP address:
 
@@ -195,15 +183,11 @@ Next, open your preferred RDP client (e.g., Microsoft Remote Desktop) and enter 
 2. Input the IP address (for example, `192.168.0.18`) and click **Connect**.
 3. At the login prompt, the username field may auto-fill with `student`. Enter the password and proceed.
 
-<Frame>
-  ![The image shows a login screen for a remote desktop session with fields for session type, username, and password. The background is teal, and there's a logo with the text "Just connecting."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881411/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Work-on-the-Command-Line-Part-1-Log-into-remote-and-graphical-consoles-demo/remote-desktop-login-screen-teal.jpg)
-</Frame>
+![The image shows a login screen for a remote desktop session with fields for session type, username, and password. The background is teal, and there's a logo with the text "Just connecting."](https://kodekloud.com/kk-media/image/upload/v1752881411/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Work-on-the-Command-Line-Part-1-Log-into-remote-and-graphical-consoles-demo/remote-desktop-login-screen-teal.jpg)
 
 Once authenticated, verify the connection by checking the IP address in the RDP window’s title bar. Then, navigate to **Activities** → **GNOME Terminal** to open a terminal session.
 
-<Frame>
-  ![The image shows a computer desktop with a dark-themed terminal window open, set against a blue geometric patterned wallpaper.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881412/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Work-on-the-Command-Line-Part-1-Log-into-remote-and-graphical-consoles-demo/dark-terminal-desktop-blue-wallpaper.jpg)
-</Frame>
+![The image shows a computer desktop with a dark-themed terminal window open, set against a blue geometric patterned wallpaper.](https://kodekloud.com/kk-media/image/upload/v1752881412/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Work-on-the-Command-Line-Part-1-Log-into-remote-and-graphical-consoles-demo/dark-terminal-desktop-blue-wallpaper.jpg)
 
 ***
 
@@ -249,6 +233,4 @@ Further reading:
 
 [SSH]: https://www.openssh.com/manual.html
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/e54c417e-f5fb-45d9-95e2-d52f34538a18" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/e54c417e-f5fb-45d9-95e2-d52f34538a18)

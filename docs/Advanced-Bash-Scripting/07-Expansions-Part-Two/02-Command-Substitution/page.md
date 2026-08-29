@@ -20,7 +20,7 @@ echo {3..1}
 
 Suppose you need to create usernames for Marketing (MKT), Sales (SL), and Development (DEV), each with a three-digit suffix from `001` to `004`. Brace expansion handles this in one command:
 
-![The image illustrates the concept of brace expansion, showing how unique numbers are assigned to "Marketing team" and "Development team" with examples like MKT001, MKT002, DEV001, and DEV002.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868560/notes-assets/images/Advanced-Bash-Scripting-Brace/brace-expansion-marketing-development.jpg)
+![The image illustrates the concept of brace expansion, showing how unique numbers are assigned to "Marketing team" and "Development team" with examples like MKT001, MKT002, DEV001, and DEV002.](https://kodekloud.com/kk-media/image/upload/v1752868560/notes-assets/images/Advanced-Bash-Scripting-Brace/brace-expansion-marketing-development.jpg)
 
 ```bash theme={null}
 touch {MKT,SL,DEV}{001..004}
@@ -119,7 +119,7 @@ Combine expansions with other shell features to automate repetitive tasks.
 
 By mastering brace expansion, you can cut down on repetitive typing, automate bulk operations, and keep your scripts concise and readable.
 
-![The image shows a graphic of curly braces with a checkmark and text stating that brace expansion helps create powerful automations for shell scripts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868561/notes-assets/images/Advanced-Bash-Scripting-Brace/brace-expansion-automation-checkmark.jpg)
+![The image shows a graphic of curly braces with a checkmark and text stating that brace expansion helps create powerful automations for shell scripts.](https://kodekloud.com/kk-media/image/upload/v1752868561/notes-assets/images/Advanced-Bash-Scripting-Brace/brace-expansion-automation-checkmark.jpg)
 
 ***
 

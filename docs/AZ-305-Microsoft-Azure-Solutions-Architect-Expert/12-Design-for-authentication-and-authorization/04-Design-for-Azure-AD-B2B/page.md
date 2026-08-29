@@ -20,7 +20,7 @@ Azure AD B2B uses an invitation-based system to onboard external users. When a g
 
 After accepting the invitation and signing in, additional security measures come into play. Administrators can enforce Conditional Access policies that may include Multifactor Authentication (MFA) or other access restrictions to ensure that only authorized users are allowed access.
 
-![The image outlines best practices for Azure AD B2B, including managing guest users, using conditional access, leveraging MFA, integrating with third-party identity providers, and enabling self-service sign-up.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867198/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-AD-B2B/azure-ad-b2b-best-practices.jpg)
+![The image outlines best practices for Azure AD B2B, including managing guest users, using conditional access, leveraging MFA, integrating with third-party identity providers, and enabling self-service sign-up.](https://kodekloud.com/kk-media/image/upload/v1752867198/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-AD-B2B/azure-ad-b2b-best-practices.jpg)
 
 ## Additional Security and User Flow Considerations
 

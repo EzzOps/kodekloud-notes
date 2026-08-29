@@ -10,19 +10,13 @@ In this lesson, you’ll learn how to use Vault’s **path filter** feature to c
 
 Vault can replicate all data from a primary cluster to one or more performance replica clusters. However, cross-region replication may conflict with data residency laws. For instance, you might store [personally identifiable information (PII)][pii]—addresses, phone numbers, credit card details—under a Secrets Engine mount. European Union regulations like [GDPR][gdpr] forbid sending such data outside the EU.
 
-<Callout icon="triangle-alert">
-  Replicating PII or sensitive data outside regulated regions can lead to compliance violations and hefty fines under laws like GDPR.
-</Callout>
+> **triangle-alert** Replicating PII or sensitive data outside regulated regions can lead to compliance violations and hefty fines under laws like GDPR.
 
-<Frame>
-  ![The image illustrates data replication between a primary cluster in Europe and a secondary cluster in APAC, highlighting regulatory compliance considerations like GDPR. It includes labeled data categories and a note on performance replication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878594/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Create-a-Paths-Filter/data-replication-europe-apac-gdpr.jpg)
-</Frame>
+![The image illustrates data replication between a primary cluster in Europe and a secondary cluster in APAC, highlighting regulatory compliance considerations like GDPR. It includes labeled data categories and a note on performance replication.](https://kodekloud.com/kk-media/image/upload/v1752878594/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Create-a-Paths-Filter/data-replication-europe-apac-gdpr.jpg)
 
 In this example, sending `customers/` or `credit-cards/` from an EU primary to an APAC secondary would breach GDPR.
 
-<Frame>
-  ![The image illustrates data replication between a primary cluster in Europe and a secondary cluster in APAC, highlighting that certain data (e.g., customer data) may be restricted from replication due to regulatory compliance like GDPR.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878596/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Create-a-Paths-Filter/data-replication-europe-apac-gdpr-2.jpg)
-</Frame>
+![The image illustrates data replication between a primary cluster in Europe and a secondary cluster in APAC, highlighting that certain data (e.g., customer data) may be restricted from replication due to regulatory compliance like GDPR.](https://kodekloud.com/kk-media/image/upload/v1752878596/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Create-a-Paths-Filter/data-replication-europe-apac-gdpr-2.jpg)
 
 To enforce compliance, Vault’s **path filter** lets you define either:
 
@@ -47,9 +41,7 @@ ansible/   customers/ help-desk/   automation/
 
 Defining an allowlist with `kv/`, `cloud-team/`, `dev/`, `apps/`, and `ansible/` means **only** those five will replicate; the rest are excluded.
 
-<Frame>
-  ![The image explains a "Paths Filter - Allowlist" concept, showing which paths are included for replication to a secondary system, with a list of paths that will and will not be replicated.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878597/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Create-a-Paths-Filter/paths-filter-allowlist-replication-diagram.jpg)
-</Frame>
+![The image explains a "Paths Filter - Allowlist" concept, showing which paths are included for replication to a secondary system, with a list of paths that will and will not be replicated.](https://kodekloud.com/kk-media/image/upload/v1752878597/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Create-a-Paths-Filter/paths-filter-allowlist-replication-diagram.jpg)
 
 ## Denylist Mode
 
@@ -62,9 +54,7 @@ puppet/     rdt-team/  engineering-mobile/
 
 Excluding `eu-data/`, `certificates/`, and `encryption/` results in all mounts replicating **except** those three.
 
-<Frame>
-  ![The image explains a "Paths Filter - Denylist" concept, showing that all paths will be replicated except for those on the denylist, which includes "eu-data/", "certificates/", and "encryption/".](../../../../images/kodekloud.com/kk-media/image/upload/v1752878598/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Create-a-Paths-Filter/paths-filter-denylist-concept-diagram.jpg)
-</Frame>
+![The image explains a "Paths Filter - Denylist" concept, showing that all paths will be replicated except for those on the denylist, which includes "eu-data/", "certificates/", and "encryption/".](https://kodekloud.com/kk-media/image/upload/v1752878598/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Create-a-Paths-Filter/paths-filter-denylist-concept-diagram.jpg)
 
 ## Local Mounts
 
@@ -76,13 +66,9 @@ vault secrets enable -local -path=apac kv-v2
 
 This command configures a KV v2 mount at `apac/` on the secondary cluster (e.g., APAC) that does **not** replicate back to the primary or other replicas. You can also use `-local` on the primary if you need non-replicated mounts there.
 
-<Callout icon="lightbulb">
-  Local mounts are ideal for region-specific workloads or test data that must not propagate.
-</Callout>
+> **lightbulb** Local mounts are ideal for region-specific workloads or test data that must not propagate.
 
-<Frame>
-  ![The image illustrates a concept of local mounts in a database cluster setup, showing a primary cluster in Europe and a secondary cluster in APAC, with a focus on preventing certain data from being replicated across the replica set.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878599/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Create-a-Paths-Filter/local-mounts-database-cluster-setup.jpg)
-</Frame>
+![The image illustrates a concept of local mounts in a database cluster setup, showing a primary cluster in Europe and a secondary cluster in APAC, with a focus on preventing certain data from being replicated across the replica set.](https://kodekloud.com/kk-media/image/upload/v1752878599/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Create-a-Paths-Filter/local-mounts-database-cluster-setup.jpg)
 
 ## Configuring a Paths Filter
 
@@ -93,9 +79,7 @@ This command configures a KV v2 mount at `apac/` on the secondary cluster (e.g.,
 3. Scroll to **Filtered Paths**.
 4. Select **Allowlist** or **Denylist**, then enter the desired paths.
 
-<Frame>
-  ![The image is a guide on creating a paths filter for a secondary token in a performance cluster, with instructions on configuring settings, selecting list types, and adding paths. It includes a Vault certification badge and a cartoon character illustration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878601/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Create-a-Paths-Filter/paths-filter-guide-performance-cluster.jpg)
-</Frame>
+![The image is a guide on creating a paths filter for a secondary token in a performance cluster, with instructions on configuring settings, selecting list types, and adding paths. It includes a Vault certification badge and a cartoon character illustration.](https://kodekloud.com/kk-media/image/upload/v1752878601/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Create-a-Paths-Filter/paths-filter-guide-performance-cluster.jpg)
 
 ### Using the Vault CLI
 
@@ -111,9 +95,7 @@ vault write sys/replication/performance/primary/paths-filter/us-east-dr \
 * `mode=allow` selects allowlist mode
 * `paths=` lists the mounts to replicate
 
-<Frame>
-  ![The image shows a configuration screen for creating a paths filter, with settings for a mount filter config for "us-east-dr" in allow mode, and paths including "aws/", "customers/", and "hcvop/". It also features a Vault certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878602/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Create-a-Paths-Filter/paths-filter-configuration-us-east-dr.jpg)
-</Frame>
+![The image shows a configuration screen for creating a paths filter, with settings for a mount filter config for "us-east-dr" in allow mode, and paths including "aws/", "customers/", and "hcvop/". It also features a Vault certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878602/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Create-a-Paths-Filter/paths-filter-configuration-us-east-dr.jpg)
 
 ***
 
@@ -129,6 +111,4 @@ That wraps up how to configure allowlists, denylists, and local mounts in Vault�
 
 [gdpr]: https://gdpr.eu/
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b6a41fdb-447c-43b2-9489-6c8459821fab/lesson/21b5dacd-4317-4676-a7d4-a4b9170e1284" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b6a41fdb-447c-43b2-9489-6c8459821fab/lesson/21b5dacd-4317-4676-a7d4-a4b9170e1284)

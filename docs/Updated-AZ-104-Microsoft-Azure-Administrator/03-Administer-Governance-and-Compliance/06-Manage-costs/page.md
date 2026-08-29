@@ -18,9 +18,7 @@ For instance, when viewing cost analysis in the Azure portal:
 * **Scope Navigation:** Click on the scope to change your view. You can filter at the root management group level, a specific subscription, or even down to a particular Resource Group. Note that not all subscriptions (e.g., sponsorship subscriptions) support cost management.
 * **Filtering:** Use filters such as meter category (for example, "Virtual Machines") to focus on specific costs, and group data by dimensions like Resource Group name.
 
-<Callout icon="lightbulb">
-  When switching the granularity to monthly, you can view trends over time instead of an accumulated cost, which helps in detailed month-to-month analysis.
-</Callout>
+> **lightbulb** When switching the granularity to monthly, you can view trends over time instead of an accumulated cost, which helps in detailed month-to-month analysis.
 
 ### Example Walkthrough
 
@@ -44,9 +42,7 @@ Budgets in Azure Cost Management help you set spending limits and forecast futur
 4. **Defining Budget Amount:** Input your budget amount (e.g., \$300) and observe the red line indicator that represents your set threshold.
 5. **Alerts and Notifications:** Configure alert conditions to notify you when spending reaches a certain percentage (e.g., 80%). Use action groups to specify how alerts are delivered (e.g., text messages, emails, or phone calls).
 
-<Callout icon="lightbulb">
-  Azure Cost Management supports multiple alert thresholds, so you can notify different recipients as costs increase. Ensure you configure the alert recipients correctly to keep all key stakeholders informed.
-</Callout>
+> **lightbulb** Azure Cost Management supports multiple alert thresholds, so you can notify different recipients as costs increase. Ensure you configure the alert recipients correctly to keep all key stakeholders informed.
 
 Once created, your budget is visible within the cost analysis dashboard. You can view forecasted costs, historical spending, and make data-driven decisions to remain within your allocation.
 
@@ -83,9 +79,7 @@ Every penny saved in the cloud is a penny that can be reinvested in innovation a
 
 It is crucial to understand that aggressive cost optimization might come at the expense of performance, security, or compliance. For example, even if East US offers cheaper rates, a government entity may require data to be stored in a specific region for compliance reasons. Always ensure that cost savings do not compromise your organization's other critical pillars.
 
-<Callout icon="triangle-alert">
-  While using cost-saving measures, double-check that any optimization does not infringe on compliance or performance requirements. Adjust strategies carefully, ensuring optimal balance among cost efficiency, performance, and security.
-</Callout>
+> **triangle-alert** While using cost-saving measures, double-check that any optimization does not infringe on compliance or performance requirements. Adjust strategies carefully, ensuring optimal balance among cost efficiency, performance, and security.
 
 ## Pricing Calculator Example
 
@@ -107,6 +101,4 @@ Azure Cost Management equips you with the financial clarity and control needed t
 
 Next, learn how to configure Azure Policy to further streamline your cloud operations while maintaining control over your resources.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/eb5b895f-afd8-411f-9275-0c61b343fc46" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/df99187b-f512-443a-a64b-93af9d73c5bc/lesson/eb5b895f-afd8-411f-9275-0c61b343fc46)

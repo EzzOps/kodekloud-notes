@@ -76,13 +76,9 @@ ttl = base_ttl + jitter
 cache.set(key, value, ttl)
 ```
 
-<Callout icon="warning">
-  Using distributed locks for rebuilds is effective but introduces operational risk: poorly implemented locks can become bottlenecks or single points of failure. Mention alternatives like single-flight or stale-while-revalidate if you want to avoid lock complexity.
-</Callout>
+> **warning** Using distributed locks for rebuilds is effective but introduces operational risk: poorly implemented locks can become bottlenecks or single points of failure. Mention alternatives like single-flight or stale-while-revalidate if you want to avoid lock complexity.
 
-<Callout icon="lightbulb">
-  If you mention cache stampede and at least one mitigation (e.g., single-flight or stale-while-revalidate) proactively in an interview, it signals you’ve considered operational failure modes beyond basic eviction strategies.
-</Callout>
+> **lightbulb** If you mention cache stampede and at least one mitigation (e.g., single-flight or stale-while-revalidate) proactively in an interview, it signals you’ve considered operational failure modes beyond basic eviction strategies.
 
 ## 3) Keeping cache and database consistent
 
@@ -117,9 +113,7 @@ Table: cache-consistency strategies at a glance
 | Write-behind                         |                      Better write throughput | Risk of data loss or complexity in retries         |
 | Pub/Sub / CDC                        | Near real-time invalidation across processes | Infrastructure complexity                          |
 
-<Callout icon="lightbulb">
-  When discussing cache consistency in interviews, explain the trade-offs (staleness vs. complexity vs. throughput) and justify your choice against a hypothetical workload (e.g., “session data vs. inventory counts”).
-</Callout>
+> **lightbulb** When discussing cache consistency in interviews, explain the trade-offs (staleness vs. complexity vs. throughput) and justify your choice against a hypothetical workload (e.g., “session data vs. inventory counts”).
 
 ## Quick interview-ready checklist
 
@@ -136,6 +130,4 @@ Table: cache-consistency strategies at a glance
 
 Answer succinctly in interviews, back choices with workload reasoning, and mention at least one operational failure mode (like cache stampede) to stand out.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/456810d7-90d7-4778-abed-8b79da1a23ac" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/456810d7-90d7-4778-abed-8b79da1a23ac)

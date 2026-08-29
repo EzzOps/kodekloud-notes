@@ -42,9 +42,7 @@ Table — Key resources and their purpose
 |           `ServiceMonitor` | Selects services to scrape and configures scraping       | Prometheus Operator         |
 |                   `Secret` | Stores TLS key/cert and other secrets                    | Application pods, ingresses |
 
-<Callout icon="lightbulb">
-  Key learning outcomes: Understand cert-manager’s Issuer → Certificate → Secret flow, learn how ServiceMonitor integrates services with Prometheus, and develop the habit of evaluating operator ownership boundaries before consuming resources.
-</Callout>
+> **lightbulb** Key learning outcomes: Understand cert-manager’s Issuer → Certificate → Secret flow, learn how ServiceMonitor integrates services with Prometheus, and develop the habit of evaluating operator ownership boundaries before consuming resources.
 
 When consuming operators, ask operational questions up front. These affect security, availability, and upgrade paths:
 
@@ -68,9 +66,7 @@ Table — Operator checklist: what to check and where to look
   <img alt="The image outlines considerations for noticing any operator, including CRDs installation, namespaces watched, required permissions, deletion impact, and upgrade handling. It concludes with a message about consuming operators responsibly." />
 </Frame>
 
-<Callout icon="warning">
-  Before granting an operator broad cluster permissions or creating cluster-scoped CRs, confirm ownership and lifecycle expectations. Operators that own Secrets or Service configurations can impact many teams when misconfigured or upgraded.
-</Callout>
+> **warning** Before granting an operator broad cluster permissions or creating cluster-scoped CRs, confirm ownership and lifecycle expectations. Operators that own Secrets or Service configurations can impact many teams when misconfigured or upgraded.
 
 What’s next
 
@@ -83,6 +79,4 @@ Links & References
 * [Kubernetes CRD concepts](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/)
 * [Kubernetes RBAC documentation](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/b5e6237b-c98e-4357-b26a-f18c583af395/lesson/a1f2c723-dce0-457a-8aec-de1ecf308af4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/b5e6237b-c98e-4357-b26a-f18c583af395/lesson/a1f2c723-dce0-457a-8aec-de1ecf308af4)

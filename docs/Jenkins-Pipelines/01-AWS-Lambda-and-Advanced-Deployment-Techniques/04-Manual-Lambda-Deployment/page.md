@@ -61,13 +61,9 @@ Important: the deployed Lambda currently has MongoDB credentials stored as plain
   <img alt="A screenshot of the AWS Lambda console for a function named &#x22;solar-system-function,&#x22; open to the Configuration → Environment variables tab showing keys like MONGO_PASSWORD, MONGO_URI, and MONGO_USERNAME with their values. The page also shows navigation tabs, action buttons (Throttle, Copy ARN, Actions), and the left-side configuration menu." />
 </Frame>
 
-<Callout icon="warning">
-  Do not store sensitive secrets in plain environment variables for production. Use a secrets manager and grant the Lambda execution role least privilege.
-</Callout>
+> **warning** Do not store sensitive secrets in plain environment variables for production. Use a secrets manager and grant the Lambda execution role least privilege.
 
-<Callout icon="lightbulb">
-  For production deployments, avoid hardcoding sensitive values. Use [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) or [AWS Systems Manager Parameter Store (SSM)](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html) and grant the Lambda role least privilege to retrieve secrets.
-</Callout>
+> **lightbulb** For production deployments, avoid hardcoding sensitive values. Use [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) or [AWS Systems Manager Parameter Store (SSM)](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html) and grant the Lambda role least privilege to retrieve secrets.
 
 The Lambda function is exposed with a Function URL (you can view and test this in the Lambda console).
 

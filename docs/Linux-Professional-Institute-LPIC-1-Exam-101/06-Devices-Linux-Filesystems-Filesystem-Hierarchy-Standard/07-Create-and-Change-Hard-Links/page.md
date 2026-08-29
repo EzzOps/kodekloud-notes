@@ -24,9 +24,7 @@ sudo mount -o compression=zstd /dev/sdb1 /mnt/disk
 | lzo       | Fast     | Lower             |
 | zstd      | Fastest  | Similar to zlib   |
 
-<Frame>
-  ![The image lists three compression algorithms: ZLIB (default), LZO (faster but lower compression ratio), and ZSTD (faster with a similar compression ratio to ZLIB).](../../../../images/kodekloud.com/kk-media/image/upload/v1752881380/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Create-Partitions-and-Filesystems-btrfs/compression-algorithms-zlib-lzo-zstd.jpg)
-</Frame>
+![The image lists three compression algorithms: ZLIB (default), LZO (faster but lower compression ratio), and ZSTD (faster with a similar compression ratio to ZLIB).](https://kodekloud.com/kk-media/image/upload/v1752881380/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Create-Partitions-and-Filesystems-btrfs/compression-algorithms-zlib-lzo-zstd.jpg)
 
 ## Additional Resources
 
@@ -34,9 +32,7 @@ sudo mount -o compression=zstd /dev/sdb1 /mnt/disk
 * [Kernel Documentation – Btrfs](https://www.kernel.org/doc/html/latest/filesystems/btrfs.html)
 * [Linux Man Pages – btrfs](https://man7.org/linux/man-pages/man5/btrfs.5.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/894c1fe4-148d-4b21-90cc-51def300423a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/894c1fe4-148d-4b21-90cc-51def300423a)
 
 
 # Create and Change Hard Links

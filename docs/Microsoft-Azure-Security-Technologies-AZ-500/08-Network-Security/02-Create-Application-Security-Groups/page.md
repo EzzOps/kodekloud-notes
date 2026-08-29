@@ -8,15 +8,11 @@ Application Security Groups (ASGs) in Azure provide a powerful way to define fin
 
 In a typical scenario, all communication within a virtual network is allowed by default. However, you might want only designated VMs (such as web servers) to be accessible from the internet while keeping logic and database VMs isolated. Furthermore, you may restrict direct communication between front-end and database VMs by allowing only logic VMs to interact with the database.
 
-<Frame>
-  ![The image is a diagram illustrating the creation of application security groups within a virtual network, showing the flow of HTTP and TCP traffic between subnets and virtual machines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882082/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-Application-Security-Groups/application-security-groups-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating the creation of application security groups within a virtual network, showing the flow of HTTP and TCP traffic between subnets and virtual machines.](https://kodekloud.com/kk-media/image/upload/v1752882082/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-Application-Security-Groups/application-security-groups-diagram.jpg)
 
 Using ASGs streamlines NSG configurations. Even if you have multiple logic servers, you can group them under a single ASG and reference that group in your NSG rules.
 
-<Callout icon="lightbulb">
-  Using ASGs reduces the complexity of security rule maintenance. When a VM is removed from an ASG, the corresponding NSG rule automatically updates, simplifying policy management.
-</Callout>
+> **lightbulb** Using ASGs reduces the complexity of security rule maintenance. When a VM is removed from an ASG, the corresponding NSG rule automatically updates, simplifying policy management.
 
 ## Configuring ASGs in the Azure Portal
 
@@ -31,21 +27,15 @@ Follow these steps to set up and assign ASGs to your VMs:
    * In the Azure portal, navigate to the Application Security Groups section and create a new group. For example, create an ASG for VMs hosting web servers.
    * Similarly, create another ASG for non-web VMs.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page with a deployment in progress for "Microsoft.ApplicationSecurityGroup." It includes details like subscription, resource group, and start time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882083/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-Application-Security-Groups/azure-portal-deployment-progress.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page with a deployment in progress for "Microsoft.ApplicationSecurityGroup." It includes details like subscription, resource group, and start time.](https://kodekloud.com/kk-media/image/upload/v1752882083/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-Application-Security-Groups/azure-portal-deployment-progress.jpg)
 
 3. **Assign ASGs to VMs:**
    * Open the networking settings of each VM (e.g., VM1) and configure the "Application Security Groups" section by assigning the appropriate ASGs.
    * Repeat this process for each applicable VM. Note that direct configuration must be done at the individual VM blade; the ASG blade only displays current information.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface focused on the networking settings of a virtual machine named "workload-b-vm-1." It displays options for configuring network interfaces, security rules, and application security groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882085/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-Application-Security-Groups/azure-portal-network-settings-workload-vm.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface focused on the networking settings of a virtual machine named "workload-b-vm-1." It displays options for configuring network interfaces, security rules, and application security groups.](https://kodekloud.com/kk-media/image/upload/v1752882085/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-Application-Security-Groups/azure-portal-network-settings-workload-vm.jpg)
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying details of an application security group named "b-vms," including its resource group, location, and subscription information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882086/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-Application-Security-Groups/azure-portal-application-security-group.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying details of an application security group named "b-vms," including its resource group, location, and subscription information.](https://kodekloud.com/kk-media/image/upload/v1752882086/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-Application-Security-Groups/azure-portal-application-security-group.jpg)
 
 4. **Apply NSG Rules Referencing ASGs:**
    * From VM1’s networking interface, add an inbound rule where the source is an application security group.
@@ -59,15 +49,11 @@ Follow these steps to set up and assign ASGs to your VMs:
      | Action      | Allow                                                   |
      | Egress      | Set appropriately if needed                             |
 
-<Frame>
-  ![The image shows the Microsoft Azure portal interface, specifically the networking settings for a virtual machine, with a panel open to add an inbound security rule.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882087/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-Application-Security-Groups/azure-portal-networking-settings.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal interface, specifically the networking settings for a virtual machine, with a panel open to add an inbound security rule.](https://kodekloud.com/kk-media/image/upload/v1752882087/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-Application-Security-Groups/azure-portal-networking-settings.jpg)
 
 Once the rule is applied, VMs associated with the specified ASG can access the web server running on VM1.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying the networking settings for a virtual machine named "workload-a-vm-1," including its IP configuration and inbound port rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882087/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-Application-Security-Groups/azure-portal-networking-settings-workload-a-vm-1.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying the networking settings for a virtual machine named "workload-a-vm-1," including its IP configuration and inbound port rules.](https://kodekloud.com/kk-media/image/upload/v1752882087/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-Application-Security-Groups/azure-portal-networking-settings-workload-a-vm-1.jpg)
 
 ## Testing Your Configuration
 
@@ -120,9 +106,7 @@ To verify your configuration, follow these steps:
      kodekloud@workload-b-vm-1:~$
      ```
 
-<Callout icon="triangle-alert">
-  Even if a VM is removed from an ASG, it may remain accessible due to the default virtual network rules. To enforce stricter access, consider adding a higher-priority NSG rule (e.g., priority 100) that explicitly denies unwanted traffic.
-</Callout>
+> **triangle-alert** Even if a VM is removed from an ASG, it may remain accessible due to the default virtual network rules. To enforce stricter access, consider adding a higher-priority NSG rule (e.g., priority 100) that explicitly denies unwanted traffic.
 
 By grouping VMs using ASGs and applying NSG rules that reference these groups, you simplify network security management. If a VM is removed from an ASG, the associated NSG rule no longer applies, ensuring that your security policies are always aligned with your current infrastructure.
 
@@ -137,14 +121,10 @@ Integrating ASGs with NSGs in Azure provides several advantages:
 | Simplification of Security Measures    | Makes defining and enforcing security policies more intuitive and less complex, reducing operational overhead.                              |
 | Seamless Integration with Architecture | Allows ASGs and NSGs to blend smoothly with your existing network setup, even across multiple VNets or subscriptions connected via peering. |
 
-<Frame>
-  ![The image is a graphic with four colored boxes, each highlighting a benefit: streamlined management experience, enhanced limits and scalability, simplification of security measures, and seamless integration with architecture.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882088/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-Application-Security-Groups/benefits-streamlined-management-scalability-security-integration.jpg)
-</Frame>
+![The image is a graphic with four colored boxes, each highlighting a benefit: streamlined management experience, enhanced limits and scalability, simplification of security measures, and seamless integration with architecture.](https://kodekloud.com/kk-media/image/upload/v1752882088/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Create-Application-Security-Groups/benefits-streamlined-management-scalability-security-integration.jpg)
 
 In summary, the integration of ASGs with NSGs enables a simplified, scalable, and seamlessly integrated network security management solution in Azure. Rather than managing individual NSG rules for each VM, you can group similar machines and apply a single rule across the group, thereby reducing operational complexity.
 
 The discussion will continue with an exploration of service endpoints.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/0489a935-a4dd-41c6-b5d3-6054c570299b/lesson/9be9c9f7-dc8e-4799-9f8e-263fb650c02f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/0489a935-a4dd-41c6-b5d3-6054c570299b/lesson/9be9c9f7-dc8e-4799-9f8e-263fb650c02f)

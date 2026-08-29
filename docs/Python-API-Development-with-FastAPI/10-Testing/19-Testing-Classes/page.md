@@ -106,9 +106,7 @@ tests/test_calculations.py::test_deposit PASSED
 
 The final test checks the `collect_interest` method. Given an initial balance, applying this method should multiply the balance by 1.1. For example, a starting balance of 50 is expected to become roughly 55. However, due to floating-point arithmetic, the result might slightly differ (e.g., 55.000000000001). To handle this, the test uses the `round` function:
 
-<Callout icon="lightbulb">
-  Due to floating-point precision issues in Python, rounding the balance ensures accurate comparisons in tests.
-</Callout>
+> **lightbulb** Due to floating-point precision issues in Python, rounding the balance ensures accurate comparisons in tests.
 
 ```python theme={null}
 def test_collect_interest():
@@ -139,6 +137,4 @@ Finally, all tests pass:
 
 This lesson demonstrated how to write and organize tests for a Python class. We covered testing the constructor, deposit, and withdrawal methods, as well as handling floating-point precision when applying interest calculations. For more insights into Python testing, consider exploring [pytest documentation](https://docs.pytest.org/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/b440fd43-03ea-4631-bf01-babe2651c30a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/b440fd43-03ea-4631-bf01-babe2651c30a)

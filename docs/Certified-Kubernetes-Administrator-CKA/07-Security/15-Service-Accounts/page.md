@@ -11,13 +11,13 @@ There are two main types of accounts in Kubernetes:
 * **User Accounts:** Designed for human users like administrators or developers.
 * **Service Accounts:** Intended for machine-to-machine interactions or application-specific tasks. For instance, monitoring tools like Prometheus use a service account to query the Kubernetes API for performance metrics, while Jenkins uses one for deploying applications.
 
-![The image shows a comparison between "User" and "Service" roles, with icons for Admin, Developer, and robots.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869950/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Accounts/frame_60.jpg)
+![The image shows a comparison between "User" and "Service" roles, with icons for Admin, Developer, and robots.](https://kodekloud.com/kk-media/image/upload/v1752869950/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Accounts/frame_60.jpg)
 
 ## Example: A Kubernetes Dashboard Application
 
 Consider an example: "my Kubernetes dashboard," a basic dashboard application built with Python. This application retrieves a list of Pods from a Kubernetes cluster by sending API requests and subsequently displays the results on a web page. To authenticate its API requests, the application uses a dedicated service account.
 
-![The image shows a Kubernetes dashboard interface connected to a Kubernetes cluster with three nodes via the kube-api.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869951/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Accounts/frame_110.jpg)
+![The image shows a Kubernetes dashboard interface connected to a Kubernetes cluster with three nodes via the kube-api.](https://kodekloud.com/kk-media/image/upload/v1752869951/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Accounts/frame_110.jpg)
 
 ### Creating a Service Account
 
@@ -90,7 +90,7 @@ curl https://192.168.56.70:6443/api -k \
 
 When deploying third-party applications (such as a custom dashboard or Prometheus) on a Kubernetes cluster, you can have Kubernetes automatically mount the service account token as a volume into the Pod. This token is typically available at the path: `/var/run/secrets/kubernetes.io/serviceaccount`.
 
-![The image shows a Kubernetes dashboard interface with icons representing security, a database, and user credentials, indicating a secure connection to a Kubernetes pod.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869953/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Accounts/frame_270.jpg)
+![The image shows a Kubernetes dashboard interface with icons representing security, a database, and user credentials, indicating a secure connection to a Kubernetes pod.](https://kodekloud.com/kk-media/image/upload/v1752869953/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Accounts/frame_270.jpg)
 
 Every namespace includes a default service account that is automatically injected into Pods. For example, consider the following simple Pod manifest using a custom dashboard image:
 
@@ -242,13 +242,13 @@ type: kubernetes.io/service-account-token
 
 > **triangle-alert** It is highly recommended to use the TokenRequest API to generate tokens, as API-generated tokens provide additional security features such as expiry, audience restrictions, and improved manageability.
 
-![The image shows a JWT (JSON Web Token) decoding interface with encoded data on the left and decoded JSON data on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869955/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Accounts/frame_560.jpg)
+![The image shows a JWT (JSON Web Token) decoding interface with encoded data on the left and decoded JSON data on the right.](https://kodekloud.com/kk-media/image/upload/v1752869955/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Accounts/frame_560.jpg)
 
-![The image describes Kubernetes' JWT security issues, including lack of audience binding, broad attack surfaces, absence of time bounds, and scalability challenges requiring secrets per service account.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869956/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Accounts/frame_580.jpg)
+![The image describes Kubernetes' JWT security issues, including lack of audience binding, broad attack surfaces, absence of time bounds, and scalability challenges requiring secrets per service account.](https://kodekloud.com/kk-media/image/upload/v1752869956/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Accounts/frame_580.jpg)
 
-![The image is a slide about Kubernetes v1.22, featuring KEP 1205 for Bound Service Account Tokens, highlighting the TokenRequest API with audience and time-bound features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869957/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Accounts/frame_620.jpg)
+![The image is a slide about Kubernetes v1.22, featuring KEP 1205 for Bound Service Account Tokens, highlighting the TokenRequest API with audience and time-bound features.](https://kodekloud.com/kk-media/image/upload/v1752869957/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Accounts/frame_620.jpg)
 
-![The image explains Kubernetes service account token secrets and recommends the TokenRequest API for secure token management since version 1.22.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869958/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Accounts/frame_830.jpg)
+![The image explains Kubernetes service account token secrets and recommends the TokenRequest API for secure token management since version 1.22.](https://kodekloud.com/kk-media/image/upload/v1752869958/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Accounts/frame_830.jpg)
 
 ## Summary
 
@@ -260,7 +260,7 @@ type: kubernetes.io/service-account-token
 
 For additional insights, refer to the Kubernetes enhancement proposals and the official documentation on service accounts and tokens.
 
-![The image lists references related to Kubernetes service account tokens, including links to GitHub and Kubernetes documentation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869959/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Accounts/frame_870.jpg)
+![The image lists references related to Kubernetes service account tokens, including links to GitHub and Kubernetes documentation.](https://kodekloud.com/kk-media/image/upload/v1752869959/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Service-Accounts/frame_870.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator/module/77826599-d456-4cb5-8cbc-b713cc077b45/lesson/01b112f9-20dc-442a-8521-008064deb80d)
 

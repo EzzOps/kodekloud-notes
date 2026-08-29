@@ -15,9 +15,7 @@ wget https://github.com/bitnami-labs/sealed-secrets/releases/download/v0.18.0/ku
 kubeseal -o yaml --scope cluster-wide --cert sealedSecret.crt < mysql-password_k8s-secret.yaml > mysql-password_sealed-secret.yaml
 ```
 
-<Callout icon="lightbulb">
-  If you omit `--cert`, `kubeseal` will try to fetch the controller's public certificate from the cluster. Use `--cert` when you cannot reach the cluster API from your local environment or when you want to ensure reproducible encryption using a specific certificate.
-</Callout>
+> **lightbulb** If you omit `--cert`, `kubeseal` will try to fetch the controller's public certificate from the cluster. Use `--cert` when you cannot reach the cluster API from your local environment or when you want to ensure reproducible encryption using a specific certificate.
 
 5. Commit the generated `mysql-password_sealed-secret.yaml` to your Git repository. Any GitOps operator (ArgoCD, Flux, etc.) can sync the manifest to the cluster.
 
@@ -49,9 +47,7 @@ Bitnami Sealed Secrets offers a simple, Git-friendly method for managing Kuberne
 * SOPS: [https://github.com/mozilla/sops](https://github.com/mozilla/sops)
 * HashiCorp Vault: [https://www.vaultproject.io/](https://www.vaultproject.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/b5f617f3-f436-4f3d-87a0-e4971d42b0da" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/b5f617f3-f436-4f3d-87a0-e4971d42b0da)
 
 
 # Blue Green vs Canary vs AB vs Shadow
@@ -134,9 +130,7 @@ Which to choose:
 * Blue-Green: Use when you need a straightforward, reliable full-environment rollback and can allocate duplicate infrastructure.
 * Canary: Use when you want to minimize blast radius, capture real-user signals, and have automation to promote/rollback releases.
 
-<Callout icon="lightbulb">
-  Choose the strategy that matches your risk tolerance, monitoring maturity, and infrastructure constraints. Canary requires robust automation and observability, while Blue-Green requires duplicate environments.
-</Callout>
+> **lightbulb** Choose the strategy that matches your risk tolerance, monitoring maturity, and infrastructure constraints. Canary requires robust automation and observability, while Blue-Green requires duplicate environments.
 
 ## Progressive Delivery, Feature Flags, A/B Testing, and Shadowing
 
@@ -151,9 +145,7 @@ Progressive Delivery combines multiple techniques—Canary releases, feature fla
   <img alt="The image is a diagram titled &#x22;Progressive Delivery&#x22; featuring four concepts: Canary Deployment, Feature Flags, A/B Testing, and Traffic Mirroring. Each concept is represented in separate blue-green gradient rectangles with icons." />
 </Frame>
 
-<Callout icon="warning">
-  When using traffic mirroring / shadowing, ensure shadow instances do not perform destructive operations or call external systems that modify data. Mock or suppress side effects to prevent impacting production systems.
-</Callout>
+> **warning** When using traffic mirroring / shadowing, ensure shadow instances do not perform destructive operations or call external systems that modify data. Mock or suppress side effects to prevent impacting production systems.
 
 Practical combos:
 
@@ -178,6 +170,4 @@ Links and references
 * [Feature flagging primer (Martin Fowler)](https://martinfowler.com/articles/feature-toggles.html)
 * [Canary Releases (best practices)](https://cloud.google.com/architecture/canary-deployments)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/c602b9e0-b374-4452-97b8-c3a09c77e527" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/c602b9e0-b374-4452-97b8-c3a09c77e527)

@@ -20,9 +20,7 @@ In this guide, you’ll learn how to install, reinstall, and configure the GRUB 
 
 GRUB Legacy (version 0.9x) remains a popular choice for legacy hardware or minimal setups. You’ll install its core files to `/boot/grub` and write stage1 into the Master Boot Record (MBR).
 
-<Callout icon="triangle-alert">
-  Always double-check your target device (e.g., `/dev/sda`) before running `grub-install` or `setup`. Installing to the wrong disk can overwrite critical data.
-</Callout>
+> **triangle-alert** Always double-check your target device (e.g., `/dev/sda`) before running `grub-install` or `setup`. Installing to the wrong disk can overwrite critical data.
 
 ***
 
@@ -46,9 +44,7 @@ By default, GRUB places its core files under `/boot/grub`. To change this direct
 sudo grub-install --boot-directory=/custom/boot /dev/sda
 ```
 
-<Callout icon="lightbulb">
-  The `--boot-directory` option is helpful if you’re using a custom EFI or boot partition layout.
-</Callout>
+> **lightbulb** The `--boot-directory` option is helpful if you’re using a custom EFI or boot partition layout.
 
 ***
 
@@ -157,6 +153,4 @@ boot
 * [Linux Documentation Project: BootPrompt](https://tldp.org/HOWTO/BootPrompt-HOWTO/)
 * [GRUB Rescue Disk 101](https://wiki.archlinux.org/title/GRUB)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/839ddf40-72e9-4be9-965d-7f7543a765d3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/839ddf40-72e9-4be9-965d-7f7543a765d3)

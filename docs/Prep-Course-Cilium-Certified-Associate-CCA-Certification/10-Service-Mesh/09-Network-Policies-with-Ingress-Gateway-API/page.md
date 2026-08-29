@@ -26,13 +26,9 @@ spire:
   enabled: true
 ```
 
-<Callout icon="warning">
-  Spire must be reachable from Cilium agents for SPIFFE identity issuance and verification to succeed. Ensure network access, node selectors, tolerations, and resource constraints in your Helm values match your environment.
-</Callout>
+> **warning** Spire must be reachable from Cilium agents for SPIFFE identity issuance and verification to succeed. Ensure network access, node selectors, tolerations, and resource constraints in your Helm values match your environment.
 
-<Callout icon="lightbulb">
-  If you run a hardened cluster, adjust node selectors and tolerations for the Spire server and agents in the Helm values. Confirm the Cilium Helm chart version supports the spire integration for your Cilium release.
-</Callout>
+> **lightbulb** If you run a hardened cluster, adjust node selectors and tolerations for the Spire server and agents in the Helm values. Confirm the Cilium Helm chart version supports the spire integration for your Cilium release.
 
 Install / upgrade Cilium with the updated values
 Apply the updated Helm values to Cilium:
@@ -300,9 +296,7 @@ Links and references
 - CiliumNetworkPolicy reference: https://docs.cilium.io/en/stable/policy/language/
 - cilium CLI: https://docs.cilium.io/en/stable/cilium_cli/
 
-<CardGroup>
 <Card title="Watch Video" icon="video" cta="Learn more" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/92e4dc74-6da6-42bf-8677-ae012ffdc3eb"/>
-</CardGroup>
 ````
 
 
@@ -319,9 +313,7 @@ In this lesson we explain how Kubernetes network policies interact with ingress 
 
 Below are example Cilium policies and guidance for each enforcement point, plus recommended scoping patterns to follow for production deployments.
 
-<Callout icon="lightbulb">
-  When designing policies, consider both the traffic source (external clients vs. the ingress/Gateway identity) and the intended targets (ingress controller pods vs. backend application pods). Scoping policies to specific pod labels is safer than using broad selectors like empty endpointSelector or global entities.
-</Callout>
+> **lightbulb** When designing policies, consider both the traffic source (external clients vs. the ingress/Gateway identity) and the intended targets (ingress controller pods vs. backend application pods). Scoping policies to specific pod labels is safer than using broad selectors like empty endpointSelector or global entities.
 
 ## Enforcement points at a glance
 
@@ -435,9 +427,7 @@ spec:
         app: ingress-controller
 ```
 
-<Callout icon="lightbulb">
-  Use label-based selectors for least-privilege access. Entity-based allowances like world or cluster are useful for testing, but for production prefer policies that target specific ingress pod labels or backend labels to limit blast radius.
-</Callout>
+> **lightbulb** Use label-based selectors for least-privilege access. Entity-based allowances like world or cluster are useful for testing, but for production prefer policies that target specific ingress pod labels or backend labels to limit blast radius.
 
 ## Practical recommendations
 
@@ -461,8 +451,6 @@ spec:
 * [Cilium policy language](https://docs.cilium.io/en/stable/policy/language/)
 * [Cilium reserved identities](https://docs.cilium.io/en/stable/policy/reserved-identities/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/203dbdef-9a10-4c82-8f11-6058b6af7112" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/203dbdef-9a10-4c82-8f11-6058b6af7112)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/0560235c-c52b-4f56-a668-e779c30a55d6" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/0560235c-c52b-4f56-a668-e779c30a55d6)

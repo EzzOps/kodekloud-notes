@@ -19,9 +19,7 @@ Before you begin
 
 Why CKA first
 
-<Callout icon="lightbulb">
-  Prioritize the [CKA](https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator)-level skills (cluster architecture, `kubectl` usage, control plane components, and troubleshooting) before attempting CKS-focused security tasks — the CKS assumes those fundamentals.
-</Callout>
+> **lightbulb** Prioritize the [CKA](https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator)-level skills (cluster architecture, `kubectl` usage, control plane components, and troubleshooting) before attempting CKS-focused security tasks — the CKS assumes those fundamentals.
 
 Course format and environment
 
@@ -111,6 +109,4 @@ If you’ve completed your CKA-level preparation and you’re comfortable admini
 
 This concludes the introduction to the CKS full mock exam series.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/ultimate-certified-kubernetes-security-specialist-cks-mock-exam-series/module/b9d31b0e-81ad-4408-9df7-4700ec4e734a/lesson/c508638f-727d-4080-9d7c-4f54990643d9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/ultimate-certified-kubernetes-security-specialist-cks-mock-exam-series/module/b9d31b0e-81ad-4408-9df7-4700ec4e734a/lesson/c508638f-727d-4080-9d7c-4f54990643d9)

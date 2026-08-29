@@ -372,10 +372,8 @@ kubectl delete pod test --ignore-not-found
 
 Callouts and reminders:
 
-<Callout icon="lightbulb">
-  * Ensure unique cluster IDs (1..255) and unique pod CIDR pools per cluster before enabling Cluster Mesh.
+> **lightbulb** * Ensure unique cluster IDs (1..255) and unique pod CIDR pools per cluster before enabling Cluster Mesh.
   * When using LoadBalancer service type on kind clusters, a layer that provides an external IP (e.g., a [MetalLB](https://metallb.universe.tf/) deployment) is required to obtain EXTERNAL-IP addresses.
-</Callout>
 
 Further reading and references:
 
@@ -386,9 +384,7 @@ Further reading and references:
 * [hashicorp/http-echo image on Docker Hub](https://hub.docker.com/r/hashicorp/http-echo)
 * [nicolaka/netshoot image on Docker Hub](https://hub.docker.com/r/nicolaka/netshoot)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b8be180f-1719-47ca-b26e-7bf942694abf/lesson/8b010e05-9973-440f-9e08-7a86e424a1ed" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b8be180f-1719-47ca-b26e-7bf942694abf/lesson/8b010e05-9973-440f-9e08-7a86e424a1ed)
 
 
 # Global Service
@@ -405,9 +401,7 @@ Overview
 * Cilium Cluster Mesh can expose Services across clusters. Enabling a global service allows cross-cluster load balancing and failover.
 * To create a global service, deploy identical Service resources (same name, namespace, and ports) in each cluster where the Service should be reachable, and add the global annotation to enable cross-cluster behavior.
 
-<Callout icon="lightbulb">
-  Ensure the Service resource (name, namespace, ports) is identical on each cluster. Only the annotations differ when you want to control sharing or affinity per-cluster.
-</Callout>
+> **lightbulb** Ensure the Service resource (name, namespace, ports) is identical on each cluster. Only the annotations differ when you want to control sharing or affinity per-cluster.
 
 ## How global services work (high level)
 
@@ -563,9 +557,7 @@ Behavior:
 * Use `kubectl get svc -n <ns> -o yaml` on each cluster to confirm annotations and spec parity.
 * If a cluster’s Service is global but marked `shared: "false"`, that cluster will consume remote endpoints but will not advertise its own endpoints to others.
 
-<Callout icon="lightbulb">
-  Test global services using simple client Pods in each cluster. Verify endpoint lists and traffic flows with `kubectl describe svc` and by curling the Service from a test Pod to observe cross-cluster responses.
-</Callout>
+> **lightbulb** Test global services using simple client Pods in each cluster. Verify endpoint lists and traffic flows with `kubectl describe svc` and by curling the Service from a test Pod to observe cross-cluster responses.
 
 ## Summary
 
@@ -579,6 +571,4 @@ Links and references
 * [Cilium Cluster Mesh documentation](https://docs.cilium.io/en/stable/cluster-mesh/)
 * [Kubernetes Services documentation](https://kubernetes.io/docs/concepts/services-networking/service/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b8be180f-1719-47ca-b26e-7bf942694abf/lesson/cb3c3afd-ff1a-4c71-b9ca-11ad8d626275" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/b8be180f-1719-47ca-b26e-7bf942694abf/lesson/cb3c3afd-ff1a-4c71-b9ca-11ad8d626275)

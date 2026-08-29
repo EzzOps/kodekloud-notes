@@ -45,9 +45,7 @@ All three support declarative GitOps patterns; the main differences are operatio
   <img alt="The image compares GitOps tools: ArgoCD, FluxCD, and Jenkins X, highlighting their key features such as UI-driven flexibility, Kubernetes-native integration, and full CI/CD solutions." />
 </Frame>
 
-<Callout icon="lightbulb">
-  For strict GitOps—declarative desired state with continuous in-cluster reconciliation—choose [ArgoCD](https://learn.kodekloud.com/user/courses/gitops-with-argocd) or [FluxCD](https://fluxcd.io/). If you require integrated CI, preview environments, and developer-focused pipelines in addition to GitOps, consider [Jenkins X](https://jenkins-x.io/).
-</Callout>
+> **lightbulb** For strict GitOps—declarative desired state with continuous in-cluster reconciliation—choose [ArgoCD](https://learn.kodekloud.com/user/courses/gitops-with-argocd) or [FluxCD](https://fluxcd.io/). If you require integrated CI, preview environments, and developer-focused pipelines in addition to GitOps, consider [Jenkins X](https://jenkins-x.io/).
 
 ## Further reading and references
 
@@ -57,6 +55,4 @@ All three support declarative GitOps patterns; the main differences are operatio
 * Kubernetes GitOps concepts: [Kubernetes documentation](https://kubernetes.io/docs/concepts/cluster-administration/manage-deployment/)
 * Secret management with GitOps: resources on Sealed Secrets, SOPS, and Vault (see provider docs and guides)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/2acff53f-eadf-4064-ac04-9ce19eadc497" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/2acff53f-eadf-4064-ac04-9ce19eadc497)

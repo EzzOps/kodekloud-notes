@@ -44,7 +44,7 @@ In the target account, go to **S3 > company1-logs > Permissions > Bucket policy*
 }
 ```
 
-![The image shows an Amazon S3 bucket interface named "company1-logs" with two text files, "Logs1.txt" and "Logs2.txt," each 18 bytes in size. The interface displays options for managing the files, such as copying URLs, downloading, and deleting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862964/notes-assets/images/AWS-IAM-Demo-Cross-Account-Access/amazon-s3-bucket-company1-logs.jpg)
+![The image shows an Amazon S3 bucket interface named "company1-logs" with two text files, "Logs1.txt" and "Logs2.txt," each 18 bytes in size. The interface displays options for managing the files, such as copying URLs, downloading, and deleting.](https://kodekloud.com/kk-media/image/upload/v1752862964/notes-assets/images/AWS-IAM-Demo-Cross-Account-Access/amazon-s3-bucket-company1-logs.jpg)
 
 > **lightbulb** Ensure the bucket ARN and role ARN exactly match your resources. Typos in ARNs will prevent access.
 
@@ -96,7 +96,7 @@ Create an IAM policy named **company1-logs-read-policy**:
 }
 ```
 
-![The image shows an AWS Identity and Access Management (IAM) console displaying details of a role named "LogAnalystsRole," including its creation date, ARN, and other related information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862965/notes-assets/images/AWS-IAM-Demo-Cross-Account-Access/aws-iam-console-loganalystsrole-details.jpg)
+![The image shows an AWS Identity and Access Management (IAM) console displaying details of a role named "LogAnalystsRole," including its creation date, ARN, and other related information.](https://kodekloud.com/kk-media/image/upload/v1752862965/notes-assets/images/AWS-IAM-Demo-Cross-Account-Access/aws-iam-console-loganalystsrole-details.jpg)
 
 > **triangle-alert** Grant only the minimum privileges needed. Review your trust policy to prevent unauthorized access.
 

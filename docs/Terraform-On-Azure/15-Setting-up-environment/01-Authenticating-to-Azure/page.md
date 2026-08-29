@@ -48,9 +48,7 @@ Example: authenticate locally
 az login
 ```
 
-<Callout icon="lightbulb">
-  Use `az login` for interactive development, learning, and demos. Avoid using it for production automation because it uses your user identity, which may have broader permissions than necessary.
-</Callout>
+> **lightbulb** Use `az login` for interactive development, learning, and demos. Avoid using it for production automation because it uses your user identity, which may have broader permissions than necessary.
 
 Notes:
 
@@ -90,9 +88,7 @@ export ARM_CLIENT_ID="5eaaf6c4-d542-4eb6-bd8d-24c0e5986f90"
 export ARM_CLIENT_SECRET="REDACTED_SECRET"
 ```
 
-<Callout icon="warning">
-  Do not commit service principal credentials to source control. Store secrets securely (for example, in [Azure Key Vault](https://learn.microsoft.com/azure/key-vault/)) and rotate them regularly.
-</Callout>
+> **warning** Do not commit service principal credentials to source control. Store secrets securely (for example, in [Azure Key Vault](https://learn.microsoft.com/azure/key-vault/)) and rotate them regularly.
 
 Why use service principals:
 
@@ -149,8 +145,6 @@ Summary:
 
 With these patterns you can authenticate Terraform to Azure in a secure and auditable way.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/db2adc19-fa48-4b03-9d9a-8ef71c4c28db/lesson/c140ef67-4b6d-49ab-bfca-d2c449d2ab3a" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/db2adc19-fa48-4b03-9d9a-8ef71c4c28db/lesson/c140ef67-4b6d-49ab-bfca-d2c449d2ab3a)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/db2adc19-fa48-4b03-9d9a-8ef71c4c28db/lesson/3df81667-731b-4456-8751-9e6f680a6e9d" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/db2adc19-fa48-4b03-9d9a-8ef71c4c28db/lesson/3df81667-731b-4456-8751-9e6f680a6e9d)

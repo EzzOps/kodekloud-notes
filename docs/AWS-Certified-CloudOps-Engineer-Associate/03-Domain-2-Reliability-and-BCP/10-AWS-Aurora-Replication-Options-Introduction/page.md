@@ -14,7 +14,7 @@ AWS has tightly controlled Aurora’s development, resulting in advanced replica
 
 ***
 
-![The image illustrates the architecture of Amazon Aurora replicas within the same region, showing a writer instance and multiple reader instances across different availability zones, all connected to a shared storage volume. It highlights synchronous writes and asynchronous replication processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859978/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Aurora-Replication-Options-Introduction/amazon-aurora-replicas-architecture.jpg)
+![The image illustrates the architecture of Amazon Aurora replicas within the same region, showing a writer instance and multiple reader instances across different availability zones, all connected to a shared storage volume. It highlights synchronous writes and asynchronous replication processes.](https://kodekloud.com/kk-media/image/upload/v1752859978/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Aurora-Replication-Options-Introduction/amazon-aurora-replicas-architecture.jpg)
 
 The diagram above shows the internal architecture of Aurora read-only replicas. In Aurora, replicas are read-only copies of the primary instance. The writer instance (displayed at the upper left-hand side) is connected to a shared storage volume, which is central to Aurora’s design. Additionally, the diagram highlights two asynchronous reader instances located in different availability zones. By default, Aurora supports up to 15 replicas within the same region, benefiting from synchronous replication that ensures low latency and high performance.
 
@@ -22,7 +22,7 @@ The diagram above shows the internal architecture of Aurora read-only replicas. 
 
 For cross-region replication, you can replicate data from one Aurora cluster to another in different regions. Since replicating storage data between regions introduces higher latency, the replication process is completely asynchronous. This configuration excels in disaster recovery and global read scaling scenarios. In such setups, one cluster acts as the primary while another in a different region can be promoted if a failure occurs.
 
-![The image illustrates the process of Amazon Aurora Cross-Region Replication, showing data flow from users to an Aurora cluster, through binary logs, and into another region's Aurora cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859979/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Aurora-Replication-Options-Introduction/amazon-aurora-cross-region-replication.jpg)
+![The image illustrates the process of Amazon Aurora Cross-Region Replication, showing data flow from users to an Aurora cluster, through binary logs, and into another region's Aurora cluster.](https://kodekloud.com/kk-media/image/upload/v1752859979/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Aurora-Replication-Options-Introduction/amazon-aurora-cross-region-replication.jpg)
 
 The diagram above explains the binary log replication method used between a primary and secondary cluster in cross-region replication. Although synchronous replication isn't supported here due to latency, this approach provides excellent disaster recovery and read scaling benefits.
 
@@ -35,7 +35,7 @@ Next, let’s distinguish cross-region replication from the Aurora Global Databa
 * Global data replication occurs seamlessly between clusters.
 * In case of primary cluster failure, one of the secondary clusters is automatically promoted, with failover occurring in as little as one minute.
 
-![The image is a diagram of an AWS Aurora Global Database setup, showing a primary region with a primary cluster and a secondary region with a secondary cluster, connected via global database replication. It includes user connections, VPCs, and endpoints managed through Amazon Route 53.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859981/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Aurora-Replication-Options-Introduction/aws-aurora-global-database-diagram.jpg)
+![The image is a diagram of an AWS Aurora Global Database setup, showing a primary region with a primary cluster and a secondary region with a secondary cluster, connected via global database replication. It includes user connections, VPCs, and endpoints managed through Amazon Route 53.](https://kodekloud.com/kk-media/image/upload/v1752859981/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Aurora-Replication-Options-Introduction/aws-aurora-global-database-diagram.jpg)
 
 ***
 
@@ -47,7 +47,7 @@ A quick comparison of the three replication approaches is provided below:
 | Cross-Region Replicas     | Read replicas available in up to five other regions with asynchronous replication; manual failover      |
 | Aurora Global Database    | Consists of one primary cluster and up to five secondary clusters; automatic failover for global apps   |
 
-![The image is a comparison chart of Aurora replication types, detailing features of Aurora Replicas, Cross-Region Replicas, and Aurora Global Database.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859982/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Aurora-Replication-Options-Introduction/aurora-replication-types-comparison-chart.jpg)
+![The image is a comparison chart of Aurora replication types, detailing features of Aurora Replicas, Cross-Region Replicas, and Aurora Global Database.](https://kodekloud.com/kk-media/image/upload/v1752859982/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Aurora-Replication-Options-Introduction/aurora-replication-types-comparison-chart.jpg)
 
 A key difference is that cross-region replication requires manual failover, while the Aurora Global Database automatically promotes a secondary region should the primary cluster fail.
 
@@ -58,7 +58,7 @@ A key difference is that cross-region replication requires manual failover, whil
   * Utilize the Aurora Global Database for applications requiring automatic global failover.
   * Continuously monitor replication lag to manage any potential data loss (typically up to 30 seconds to one minute).
 
-![The image outlines four best practices for database management: using Aurora replicas for read scaling, leveraging cross-region replication for disaster recovery, implementing Aurora global databases for global applications, and monitoring replication lag.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859983/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Aurora-Replication-Options-Introduction/database-management-best-practices.jpg)
+![The image outlines four best practices for database management: using Aurora replicas for read scaling, leveraging cross-region replication for disaster recovery, implementing Aurora global databases for global applications, and monitoring replication lag.](https://kodekloud.com/kk-media/image/upload/v1752859983/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-AWS-Aurora-Replication-Options-Introduction/database-management-best-practices.jpg)
 
 It is crucial to discuss these replication strategies with business stakeholders to ensure they understand the implications of replication lag and the acceptable risk of minor data loss.
 

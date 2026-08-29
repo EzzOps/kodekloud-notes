@@ -12,13 +12,9 @@ Microservices come with unique security challenges. When one service communicate
 
 Equally important is implementing strict access control policies. For example, you might restrict access so that only the product page service can interact with the review service, while denying access to other services like the details service. Istio addresses these needs by providing mutual TLS (mTLS) for robust encryption and fine-grained access control policies to ensure that only authorized services can communicate with each other.
 
-<Callout icon="lightbulb">
-  Istio supports comprehensive audit logging, enabling you to track who performed specific actions and when they occurred. This feature is vital for maintaining transparency and security compliance in your environment.
-</Callout>
+> **lightbulb** Istio supports comprehensive audit logging, enabling you to track who performed specific actions and when they occurred. This feature is vital for maintaining transparency and security compliance in your environment.
 
-<Frame>
-  ![The image is a diagram illustrating a microservices architecture with components like "Product Page," "Reviews," and "Ratings," connected through an "istio-ingress gateway." It highlights security features such as encryption, mutual TLS, and audit logs, with some connections blocked.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879384/notes-assets/images/Istio-Service-Mesh-Security-in-Istio/microservices-architecture-istio-diagram.jpg)
-</Frame>
+![The image is a diagram illustrating a microservices architecture with components like "Product Page," "Reviews," and "Ratings," connected through an "istio-ingress gateway." It highlights security features such as encryption, mutual TLS, and audit logs, with some connections blocked.](https://kodekloud.com/kk-media/image/upload/v1752879384/notes-assets/images/Istio-Service-Mesh-Security-in-Istio/microservices-architecture-istio-diagram.jpg)
 
 ## What’s Next
 
@@ -26,6 +22,4 @@ In the upcoming sections, we will explore each of these security aspects in deta
 
 By following these guidelines, you can harness the full capabilities of Istio to ensure your microservices architecture remains secure and resilient against modern threats.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/e4a2171d-d190-4dc9-873e-a0dad6d3cb62/lesson/82eb56c8-2c19-4cfc-a88c-05a5e3669f78" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/e4a2171d-d190-4dc9-873e-a0dad6d3cb62/lesson/82eb56c8-2c19-4cfc-a88c-05a5e3669f78)

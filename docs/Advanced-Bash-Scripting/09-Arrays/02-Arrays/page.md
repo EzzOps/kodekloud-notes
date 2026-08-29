@@ -151,7 +151,7 @@ This article explains how to declare, access, and effectively use arrays in Bash
 
 Arrays in Bash empower you to store multiple values in an indexed collection, offering direct access to any element—first, middle, or last—by its index. This is analogous to reaching into a specific drawer when you know exactly where your socks are kept, rather than inspecting each one sequentially.
 
-![The image illustrates the concept of arrays using a drawer analogy, showing three drawers labeled 1, 2, and 3 on the left, and an array with indices 0, 1, and 2 on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868541/notes-assets/images/Advanced-Bash-Scripting-Arrays/arrays-drawer-analogy-diagram.jpg)
+![The image illustrates the concept of arrays using a drawer analogy, showing three drawers labeled 1, 2, and 3 on the left, and an array with indices 0, 1, and 2 on the right.](https://kodekloud.com/kk-media/image/upload/v1752868541/notes-assets/images/Advanced-Bash-Scripting-Arrays/arrays-drawer-analogy-diagram.jpg)
 
 > **lightbulb** Bash arrays are **zero-indexed**: the first element is at index `0`, the second at `1`, and so on.
 

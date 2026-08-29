@@ -74,10 +74,6 @@ In short:
 * Worker processes run the event loop and perform non-blocking request processing.
 * The event-driven model (epoll/kqueue) lets each worker handle many connections concurrently, giving NGINX its high performance and scalability.
 
-<Callout icon="lightbulb">
-  Nginx is non-blocking and asynchronous: workers don’t block waiting for I/O — they register interest in events and continue processing other connections until notified. This is the core reason NGINX can handle large numbers of concurrent clients with low resource usage.
-</Callout>
+> **lightbulb** Nginx is non-blocking and asynchronous: workers don’t block waiting for I/O — they register interest in events and continue processing other connections until notified. This is the core reason NGINX can handle large numbers of concurrent clients with low resource usage.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/9e6f72d7-933d-42dd-a948-ae48d66aecb6/lesson/56033553-c70c-4935-b94a-c1c369193c0a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/9e6f72d7-933d-42dd-a948-ae48d66aecb6/lesson/56033553-c70c-4935-b94a-c1c369193c0a)

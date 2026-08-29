@@ -73,13 +73,11 @@ print(test_chain.invoke({"question": "Tell me about Inception"}))
 
 ## Why this is useful
 
-<Callout icon="lightbulb">
-  `RunnablePassthrough` is a small but powerful primitive. Use it to:
+> **lightbulb** `RunnablePassthrough` is a small but powerful primitive. Use it to:
 
   * keep pipeline elements as hollow pipes when no transformation is required,
   * inject or compute additional inputs at runtime with `.assign(...)`,
   * pin or hide configuration/context values so external callers don't need to supply them.
-</Callout>
 
 ## Notes and best practices
 
@@ -105,9 +103,7 @@ You can convert arbitrary Python functions into runnable components (for example
 * [LangChain Core: Runnables Patterns](https://github.com/langchain-ai/langchain)
 * [OpenAI Chat Models (ChatOpenAI)](https://platform.openai.com/docs/models)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/18f5c92b-a25c-4449-ae23-6c65658209d5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/18f5c92b-a25c-4449-ae23-6c65658209d5)
 
 
 # LCEL Demo 5
@@ -127,9 +123,7 @@ We use:
 * `StrOutputParser` to extract clean string outputs
 * `RunnablePassthrough` to attach parsed strings to keys in the execution context so downstream mini-chains can reference them
 
-<Callout icon="lightbulb">
-  This pattern composes small, focused runnables into a chain-of-chains. Each stage returns a parsed string that is then attached to the execution context under a key like `title`, `outline`, or `blog`, allowing subsequent prompts to reference those values via placeholders (for example, `"{title}"`).
-</Callout>
+> **lightbulb** This pattern composes small, focused runnables into a chain-of-chains. Each stage returns a parsed string that is then attached to the execution context under a key like `title`, `outline`, or `blog`, allowing subsequent prompts to reference those values via placeholders (for example, `"{title}"`).
 
 Example Python imports and the pipeline wiring:
 

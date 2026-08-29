@@ -30,9 +30,7 @@ spec:
   replicas: 3
 ```
 
-<Callout icon="lightbulb">
-  Always quote a hex color in YAML (for example: `"#4287f5"`). Without quotes, `#` begins a comment and the value will be parsed incorrectly.
-</Callout>
+> **lightbulb** Always quote a hex color in YAML (for example: `"#4287f5"`). Without quotes, `#` begins a comment and the value will be parsed incorrectly.
 
 Apply the CR:
 
@@ -196,9 +194,7 @@ DESCRIPTION:
 
 If you add `description` fields to your CRD schema, they will appear here. Including descriptions in the CRD is valuable because `kubectl explain` surfaces them to users and scripts.
 
-<Callout icon="warning">
-  This lab contains only the CRD and CR (no controller). The API server validates and stores the object, but no controller will reconcile it or populate `status` until you implement one.
-</Callout>
+> **warning** This lab contains only the CRD and CR (no controller). The API server validates and stores the object, but no controller will reconcile it or populate `status` until you implement one.
 
 ## Wrap-up
 
@@ -216,6 +212,4 @@ Next step: implement a controller that watches and reconciles Widget resources t
 * [kubectl reference](https://kubernetes.io/docs/reference/kubectl/)
 * [Writing Kubernetes controllers](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/#custom-resources)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ba392f08-9d70-442b-9751-fdc2052b777e/lesson/dddf34b6-b714-4e34-a87a-2003f05cc735" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/ba392f08-9d70-442b-9751-fdc2052b777e/lesson/dddf34b6-b714-4e34-a87a-2003f05cc735)

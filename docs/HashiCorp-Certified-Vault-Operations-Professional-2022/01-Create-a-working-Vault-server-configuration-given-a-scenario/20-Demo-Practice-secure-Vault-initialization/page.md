@@ -23,9 +23,7 @@ frank.pub
 susan.pub
 ```
 
-<Callout icon="triangle-alert">
-  Make sure these files are the intended public keys. Do **not** expose your private keys.
-</Callout>
+> **triangle-alert** Make sure these files are the intended public keys. Do **not** expose your private keys.
 
 ## 2. Confirm Vault Is Uninitialized
 
@@ -65,9 +63,7 @@ $ vault operator init \
     > vaultinit.txt
 ```
 
-<Callout icon="triangle-alert">
-  The file `vaultinit.txt` contains sensitive data. Store it in a secure location—never commit it to version control.
-</Callout>
+> **triangle-alert** The file `vaultinit.txt` contains sensitive data. Store it in a secure location—never commit it to version control.
 
 ### Initialization Parameters
 
@@ -96,9 +92,7 @@ Each recovery key is a Base64-encoded string—encrypted with the matching PGP p
 
 To decrypt the share encrypted for Susan:
 
-<Callout icon="lightbulb">
-  Ensure you have Susan’s **private** key and know the GPG passphrase to unlock it.
-</Callout>
+> **lightbulb** Ensure you have Susan’s **private** key and know the GPG passphrase to unlock it.
 
 ```bash theme={null}
 $ echo "qW8/E7u5OzLmZk3R2H4jXn1a9vK5mCuXbJ9pR0gLZ2..." \
@@ -108,9 +102,7 @@ $ echo "qW8/E7u5OzLmZk3R2H4jXn1a9vK5mCuXbJ9pR0gLZ2..." \
 
 GPG will prompt for the passphrase:
 
-<Frame>
-  ![The image shows a dialog box prompting the user to enter a passphrase to unlock an OpenPGP secret key. It includes details about the key, such as the key ID and creation date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878434/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Practice-secure-Vault-initialization/openpgp-secret-key-passphrase-dialog.jpg)
-</Frame>
+![The image shows a dialog box prompting the user to enter a passphrase to unlock an OpenPGP secret key. It includes details about the key, such as the key ID and creation date.](https://kodekloud.com/kk-media/image/upload/v1752878434/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Demo-Practice-secure-Vault-initialization/openpgp-secret-key-passphrase-dialog.jpg)
 
 Once unlocked, you’ll see the plaintext recovery key:
 
@@ -134,8 +126,6 @@ By encrypting each recovery share with a different PGP key, you ensure that only
 * [OpenPGP Standard](https://www.openpgp.org/)
 * [GnuPG Homepage](https://gnupg.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/23d6aaad-e61d-49c0-b9d9-aff621d308a9" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/23d6aaad-e61d-49c0-b9d9-aff621d308a9)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/a04564ac-fa25-401b-99ee-4b6503202d4b" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/b59936f2-3ed0-4ec2-b1fd-971dcce5c2ca/lesson/a04564ac-fa25-401b-99ee-4b6503202d4b)

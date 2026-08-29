@@ -25,9 +25,7 @@ export PATH="$PATH:/usr/games:/usr/local/games"
 cat advice.message | cowsay -f "$(ls /usr/share/cowsay/cows | shuf -n 1)"
 ```
 
-<Callout icon="warning">
-  The script assumes `jq` and `cowsay` are available or can be installed with `sudo`. Installing packages on shared agents can have security and stability implications—prefer pre-baked agent images or containerized runners when possible.
-</Callout>
+> **warning** The script assumes `jq` and `cowsay` are available or can be installed with `sudo`. Installing packages on shared agents can have security and stability implications—prefer pre-baked agent images or containerized runners when possible.
 
 Triggering the job multiple times shows success and failure runs depending on the advice length.
 
@@ -156,9 +154,7 @@ References:
 * [cowsay](https://en.wikipedia.org/wiki/Cowsay)
 * [Migrating Jenkins Pipelines to GitHub Actions](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/39a8766a-9270-461c-ac87-b8ebd69b7c41" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/39a8766a-9270-461c-ac87-b8ebd69b7c41)
 
 
 # Demo Explore and Trigger Jenkins Projects 2
@@ -234,9 +230,7 @@ EXPOSE 3000
 CMD [ "npm", "start" ]
 ```
 
-<Callout icon="warning">
-  Avoid placing secrets in `Dockerfile` via `ENV` for production images. Store sensitive values in a secrets manager or inject them at runtime (e.g., via Jenkins credentials or container runtime secrets).
-</Callout>
+> **warning** Avoid placing secrets in `Dockerfile` via `ENV` for production images. Store sensitive values in a secrets manager or inject them at runtime (e.g., via Jenkins credentials or container runtime secrets).
 
 Jenkinsfile — pipeline summary
 The project’s declarative `Jenkinsfile` defines an end-to-end CI pipeline that runs inside Docker agents and uses Jenkins tools/credentials. Main stages include installing dependencies, dependency scanning, unit testing, code coverage, building & publishing a Docker image, and a Trivy image scan.
@@ -370,9 +364,7 @@ Notes:
 * Credentials for MongoDB, Docker Hub, and NVD API key are stored in Jenkins and referenced via `credentials()` and plugin parameters.
 * Dependency-Check and Trivy produce XML/HTML/JSON reports; the repository includes commented `publishHTML`/`junit` lines — uncomment to publish artifacts in Jenkins.
 
-<Callout icon="lightbulb">
-  Obtain an NVD API key and store it in Jenkins credentials. Using the API key reduces the time Dependency-Check spends downloading the NVD feed and improves scan reliability.
-</Callout>
+> **lightbulb** Obtain an NVD API key and store it in Jenkins credentials. Using the API key reduces the time Dependency-Check spends downloading the NVD feed and improves scan reliability.
 
 How to request an NVD API key (registration form)
 
@@ -496,8 +488,6 @@ Wrapping up
 * Artifacts produced (Dependency-Check HTML, Trivy HTML, JUnit XML, coverage reports) are present but publishing calls are commented out — uncomment `publishHTML` or `junit` lines in the Jenkinsfile to show these reports in Jenkins.
 * Next steps: migrate this pipeline to GitHub Actions and enable publishing of test, coverage, and security reports from the CI workflow. See [GitHub Actions course](https://learn.kodekloud.com/user/courses/github-actions) for guidance.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/9f51b321-5e14-495c-80aa-30c8f2a0bae4" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/9f51b321-5e14-495c-80aa-30c8f2a0bae4)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/622281cb-3902-4ea3-857d-4b5493649485" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/622281cb-3902-4ea3-857d-4b5493649485)

@@ -12,27 +12,19 @@ In this lesson, we will demonstrate how to use Terraform Cloud—from creating a
 
 Begin by visiting [Terraform Cloud](https://app.terraform.io) and creating your free account. You can choose to sign in or register a new account by clicking "Free Account." Provide your username, email, and password, and be sure to accept the Terms of Use and Privacy Policy.
 
-<Frame>
-  ![The image shows a Terraform Cloud account creation page with fields for username, email, and password, alongside features and benefits of using Terraform Cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884106/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_50.jpg)
-</Frame>
+![The image shows a Terraform Cloud account creation page with fields for username, email, and password, alongside features and benefits of using Terraform Cloud.](https://kodekloud.com/kk-media/image/upload/v1752884106/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_50.jpg)
 
 After registration, check your email for a confirmation message. Open the link provided to verify your email address.
 
-<Frame>
-  ![The image shows a web page for confirming an email address on Terraform's platform, with options to resend the confirmation link.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884108/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_60.jpg)
-</Frame>
+![The image shows a web page for confirming an email address on Terraform's platform, with options to resend the confirmation link.](https://kodekloud.com/kk-media/image/upload/v1752884108/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_60.jpg)
 
 Once confirmed, log in to Terraform Cloud. The dashboard initially shows your user settings such as username, email, and other profile details. Click the Terraform icon in the top left corner to access the main dashboard.
 
-<Frame>
-  ![The image shows a Terraform Cloud profile settings page, displaying options for username, email address, and avatar, with navigation links for user settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884109/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_80.jpg)
-</Frame>
+![The image shows a Terraform Cloud profile settings page, displaying options for username, email address, and avatar, with navigation links for user settings.](https://kodekloud.com/kk-media/image/upload/v1752884109/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_80.jpg)
 
 If this is your first login, you will see the "Welcome to Terraform Cloud" page.
 
-<Frame>
-  ![The image shows a "Welcome to Terraform Cloud" page offering setup workflow options: "Try an example configuration" and "Start from scratch."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884110/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_90.jpg)
-</Frame>
+![The image shows a "Welcome to Terraform Cloud" page offering setup workflow options: "Try an example configuration" and "Start from scratch."](https://kodekloud.com/kk-media/image/upload/v1752884110/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_90.jpg)
 
 ***
 
@@ -46,9 +38,7 @@ KodeKloud-terraform-cloud-demo-01
 
 The same email you registered with is used for the organization.
 
-<Frame>
-  ![The image shows a web interface for creating a new organization in Terraform Cloud, with fields for organization name and email address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884112/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_120.jpg)
-</Frame>
+![The image shows a web interface for creating a new organization in Terraform Cloud, with fields for organization name and email address.](https://kodekloud.com/kk-media/image/upload/v1752884112/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_120.jpg)
 
 ### 2.2 Create a Workspace
 
@@ -60,21 +50,15 @@ After your organization is set up, create a workspace. A workspace in Terraform 
 
 For this demo, select the **Version Control Workflow**.
 
-<Frame>
-  ![The image shows a Terraform Cloud interface for creating a new workspace, offering workflow options like version control, CLI-driven, and API-driven workflows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884113/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_170.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface for creating a new workspace, offering workflow options like version control, CLI-driven, and API-driven workflows.](https://kodekloud.com/kk-media/image/upload/v1752884113/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_170.jpg)
 
 Terraform Cloud will prompt you to connect a version control provider (defaulting to GitHub if already logged in).
 
-<Frame>
-  ![The image shows a Terraform Cloud interface for creating a new workspace, with options to connect to version control providers like GitHub, GitLab, Bitbucket, and Azure DevOps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884114/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_200.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface for creating a new workspace, with options to connect to version control providers like GitHub, GitLab, Bitbucket, and Azure DevOps.](https://kodekloud.com/kk-media/image/upload/v1752884114/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_200.jpg)
 
 Select your GitHub account, then choose the repository containing your Terraform configuration files (for example, a repository named "Terraform Cloud Repository" with files such as `main.tf`, `provider.tf`, and Sentinel policy files).
 
-<Frame>
-  ![The image shows a Terraform Cloud interface for creating a new workspace, with options to choose a repository and connect to version control.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884116/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_220.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface for creating a new workspace, with options to choose a repository and connect to version control.](https://kodekloud.com/kk-media/image/upload/v1752884116/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_220.jpg)
 
 Review the following example from your `main.tf` file, which provisions an AWS EC2 instance using predefined variables:
 
@@ -98,9 +82,7 @@ resource "aws_instance" "terraform-cloud-demo-server" {
 
 Similarly, the `provider.tf` file configures the AWS provider with the same variables. After selecting the repository, name the workspace (for example, "Terraform Cloud") and click **Create Workspace**.
 
-<Frame>
-  ![The image shows a Terraform Cloud interface indicating successful configuration upload and workspace creation, with options to configure variables or start a new plan.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884117/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_310.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface indicating successful configuration upload and workspace creation, with options to configure variables or start a new plan.](https://kodekloud.com/kk-media/image/upload/v1752884117/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_310.jpg)
 
 ***
 
@@ -117,9 +99,7 @@ Since the configuration files only declare variables, set their values in the **
 
 Also, add AWS access and secret keys as sensitive variables—this ensures that once entered, they will remain masked.
 
-<Frame>
-  ![The image shows a Terraform Cloud workspace variables page with five variables listed, including "ami," "region," "instance\_type," "subnet\_id," and a sensitive "access\_key."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884118/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_510.jpg)
-</Frame>
+![The image shows a Terraform Cloud workspace variables page with five variables listed, including "ami," "region," "instance\_type," "subnet\_id," and a sensitive "access\_key."](https://kodekloud.com/kk-media/image/upload/v1752884118/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_510.jpg)
 
 ### 3.1 Execute an Execution Plan
 
@@ -131,15 +111,11 @@ After configuring the variables, start your first execution plan:
 
 Terraform Cloud will generate an execution plan similar to running `terraform plan` on your local machine.
 
-<Frame>
-  ![The image shows a Terraform Cloud interface where a user is starting a new plan, selecting "Plan (most common)" as the plan type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884119/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_560.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface where a user is starting a new plan, selecting "Plan (most common)" as the plan type.](https://kodekloud.com/kk-media/image/upload/v1752884119/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_560.jpg)
 
 Review the plan and then choose to either confirm and apply or discard it. If you discard, the Overview tab will update to reflect this choice. You can then create a new plan if desired, and confirm to apply it to provision the EC2 instance.
 
-<Frame>
-  ![The image shows a Terraform Cloud interface with a completed plan for creating an AWS instance, triggered by a user, indicating successful resource creation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884121/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_660.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface with a completed plan for creating an AWS instance, triggered by a user, indicating successful resource creation.](https://kodekloud.com/kk-media/image/upload/v1752884121/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_660.jpg)
 
 When the plan is applied, the EC2 instance is created, and its resource details, including the provider and outputs, are displayed.
 
@@ -215,9 +191,7 @@ A sample state snippet might look like:
 }
 ```
 
-<Frame>
-  ![The image shows a Terraform Cloud workspace interface displaying current and past runs, with details like branch, status, and trigger source.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884122/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_830.jpg)
-</Frame>
+![The image shows a Terraform Cloud workspace interface displaying current and past runs, with details like branch, status, and trigger source.](https://kodekloud.com/kk-media/image/upload/v1752884122/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_830.jpg)
 
 ***
 
@@ -231,45 +205,31 @@ Within your workspace settings, you can modify:
 
 Locking a workspace prevents concurrent plans, and version control settings display which repository is connected.
 
-<Frame>
-  ![The image shows a Terraform Cloud settings page for version control, connected to a GitHub repository, with options for automatic run triggering and speculative plans.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884123/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1000.jpg)
-</Frame>
+![The image shows a Terraform Cloud settings page for version control, connected to a GitHub repository, with options for automatic run triggering and speculative plans.](https://kodekloud.com/kk-media/image/upload/v1752884123/notes-assetshttps://kodekloud.com/kk-media/image/upload/v1752884123/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1000.jpg)
 
 To manage your organization, access the user settings on the left to update organization details (like password changes and two-factor authentication). Organization-specific settings allow you to review the organization name and manage deletion if necessary.
 
-<Frame>
-  ![The image shows the general settings page of a Terraform Cloud organization, with options to update organization details or delete the organization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884124/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1050.jpg)
-</Frame>
+![The image shows the general settings page of a Terraform Cloud organization, with options to update organization details or delete the organization.](https://kodekloud.com/kk-media/image/upload/v1752884124/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1050.jpg)
 
 The **Plan & Billing** tab displays your current free plan (supporting up to five users) and offers comparisons for upgrading to more advanced plans. Upgrading to a trial plan for team accounts is available without requiring a credit card.
 
-<Frame>
-  ![The image shows a "Plan & Billing" page for Terraform Cloud, offering a 30-day free trial and displaying a current free plan with one active user.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884125/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1060.jpg)
-</Frame>
+![The image shows a "Plan & Billing" page for Terraform Cloud, offering a 30-day free trial and displaying a current free plan with one active user.](https://kodekloud.com/kk-media/image/upload/v1752884125/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1060.jpg)
 
 You can manage teams under the **Teams** section—by default, an "owners" team exists. You can add new users and create API tokens as necessary.
 
-<Frame>
-  ![The image shows a settings page for a team named "owners" in a cloud platform, with options for visibility and API token management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884126/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1080.jpg)
-</Frame>
+![The image shows a settings page for a team named "owners" in a cloud platform, with options for visibility and API token management.](https://kodekloud.com/kk-media/image/upload/v1752884126/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1080.jpg)
 
 Manage individual users in the **Users** section, and assign them to teams such as "owners."
 
-<Frame>
-  ![The image shows a user management interface in Terraform Cloud, displaying one active user with the email "terraform-cloud-demo-user@kodekloud.com" under the "Users" section.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884127/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1090.jpg)
-</Frame>
+![The image shows a user management interface in Terraform Cloud, displaying one active user with the email "terraform-cloud-demo-user@kodekloud.com" under the "Users" section.](https://kodekloud.com/kk-media/image/upload/v1752884127/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1090.jpg)
 
 Upgrade via the plan comparisons page to access additional features like creating extra teams and integrations.
 
-<Frame>
-  ![The image shows a pricing plan page for Terraform Cloud, detailing Free, Trial, Team, and Team & Governance options with features and costs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884129/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1120.jpg)
-</Frame>
+![The image shows a pricing plan page for Terraform Cloud, detailing Free, Trial, Team, and Team & Governance options with features and costs.](https://kodekloud.com/kk-media/image/upload/v1752884129/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1120.jpg)
 
 After upgrading to a trial plan, you gain access to features such as additional team creation and cost estimation capabilities.
 
-<Frame>
-  ![The image shows a "Team Management" page from Terraform Cloud, allowing users to create and manage teams with specific access control settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884130/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1170.jpg)
-</Frame>
+![The image shows a "Team Management" page from Terraform Cloud, allowing users to create and manage teams with specific access control settings.](https://kodekloud.com/kk-media/image/upload/v1752884130/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1170.jpg)
 
 ***
 
@@ -284,19 +244,13 @@ Terraform Cloud offers a cost estimation feature to help you monitor resource ex
 
 Once the resource is destroyed, create a new plan to provision the instance. The cost estimation stage will now display the estimated monthly cost (for example, \$8.63).
 
-<Frame>
-  ![The image shows a Terraform Cloud interface with a destroy run triggered, indicating one AWS instance to be destroyed. The plan and cost estimation are finished.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884131/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1220.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface with a destroy run triggered, indicating one AWS instance to be destroyed. The plan and cost estimation are finished.](https://kodekloud.com/kk-media/image/upload/v1752884131/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1220.jpg)
 
 After confirming and applying the plan, the instance is created. The Overview tab will then display updated resource details, including cost estimations.
 
-<Frame>
-  ![The image shows a Terraform Cloud interface with a completed run for "test cost estimation," indicating successful planning, cost estimation, and application of resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884133/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1290.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface with a completed run for "test cost estimation," indicating successful planning, cost estimation, and application of resources.](https://kodekloud.com/kk-media/image/upload/v1752884133/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1290.jpg)
 
-<Frame>
-  ![The image shows a Terraform Cloud workspace overview, displaying details of the latest run, including cost estimation, resources changed, and execution metrics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884134/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1310.jpg)
-</Frame>
+![The image shows a Terraform Cloud workspace overview, displaying details of the latest run, including cost estimation, resources changed, and execution metrics.](https://kodekloud.com/kk-media/image/upload/v1752884134/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1310.jpg)
 
 ### 5.2 Enforcing Compliance with Sentinel Policies
 
@@ -308,15 +262,11 @@ Follow these steps:
 2. Click **Connect a New Policy Set**.
 3. Choose GitHub as your VCS provider and select the repository containing your Sentinel policy files (this example repository includes Terraform Sentinel policy examples for AWS).
 
-<Frame>
-  ![The image shows a Terraform Cloud interface for connecting a policy set to a version control provider, with options for GitHub and other VCS connections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884135/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1370.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface for connecting a policy set to a version control provider, with options for GitHub and other VCS connections.](https://kodekloud.com/kk-media/image/upload/v1752884135/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1370.jpg)
 
 After connecting, name your policy set (for example, "policy set one") and select your desired workspace scope (either all workspaces or selected ones).
 
-<Frame>
-  ![The image shows a Terraform Cloud interface for connecting a policy set, allowing users to choose a repository for hosting Terraform source code.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884137/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1390.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface for connecting a policy set, allowing users to choose a repository for hosting Terraform source code.](https://kodekloud.com/kk-media/image/upload/v1752884137/notes-assets/images/Terraform-Associate-Certification-HashiCorp-Certified-Terraform-Cloud-Demo/frame_1390.jpg)
 
 Within your GitHub repository, create a Sentinel policy file (`restrict-ec2-instance-type.sentinel`) with the following content:
 

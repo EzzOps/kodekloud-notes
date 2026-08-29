@@ -24,9 +24,7 @@ What you'll learn:
   <img alt="A horizontal row of four rounded cards numbered 01–04 showing project items: &#x22;Backstage design system,&#x22; &#x22;Changing Color Theme&#x22; (highlighted in blue), &#x22;Adding 3rd Party Plugins,&#x22; and &#x22;Creating our own plugins,&#x22; each with a simple icon." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Before you begin, ensure you have a working local Backstage app (the App template or an existing instance). Familiarity with React, TypeScript, and basic plugin structure will make following the examples easier. If you need setup help, the Backstage docs include quickstart and local development guides.
-</Callout>
+> **lightbulb** Before you begin, ensure you have a working local Backstage app (the App template or an existing instance). Familiarity with React, TypeScript, and basic plugin structure will make following the examples easier. If you need setup help, the Backstage docs include quickstart and local development guides.
 
 Links and references
 
@@ -36,6 +34,4 @@ Links and references
 * Plugin development guide: [https://backstage.io/docs/plugins/overview](https://backstage.io/docs/plugins/overview)
 * Community plugins catalog: [https://backstage.io/plugins/overview](https://backstage.io/plugins/overview)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/aad867ea-baf2-4ca7-b722-ad38ea794a7e/lesson/62eb413f-9069-4e45-be9d-dbb30ad412bd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/aad867ea-baf2-4ca7-b722-ad38ea794a7e/lesson/62eb413f-9069-4e45-be9d-dbb30ad412bd)

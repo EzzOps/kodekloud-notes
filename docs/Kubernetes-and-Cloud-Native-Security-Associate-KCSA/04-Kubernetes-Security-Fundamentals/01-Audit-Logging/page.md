@@ -6,9 +6,7 @@ Audit logging in Kubernetes captures API server requests to detect unauthorized 
 
 Audit logging in Kubernetes captures detailed records of all API server requests, helping you detect suspicious or unauthorized activities within your cluster. By defining audit policies, you can control which events to log, reducing noise and focusing on critical operations.
 
-<Callout icon="lightbulb">
-  Audit logging is disabled by default in Kubernetes. Enabling it requires configuring the API server to use an audit policy and log backend.
-</Callout>
+> **lightbulb** Audit logging is disabled by default in Kubernetes. Enabling it requires configuring the API server to use an audit policy and log backend.
 
 ## Why Audit Logging Matters
 

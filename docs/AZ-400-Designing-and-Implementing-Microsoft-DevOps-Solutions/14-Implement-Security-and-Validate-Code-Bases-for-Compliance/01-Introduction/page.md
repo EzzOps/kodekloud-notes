@@ -12,7 +12,7 @@ Security is a shared responsibility in DevOps. In Azure, every stakeholder—fro
 
 Responsibility for security spans the entire organization. Whether you’re writing code, provisioning infrastructure, or using applications, you have a part to play.
 
-![The image illustrates the concept of "Shared Accountability" in securing a digital landscape, featuring icons for security and collaboration, and a cycle of infrastructure, app architecture, monitoring, and continuous validation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868019/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/shared-accountability-digital-security-illustration.jpg)
+![The image illustrates the concept of "Shared Accountability" in securing a digital landscape, featuring icons for security and collaboration, and a cycle of infrastructure, app architecture, monitoring, and continuous validation.](https://kodekloud.com/kk-media/image/upload/v1752868019/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/shared-accountability-digital-security-illustration.jpg)
 
 Key practices:
 
@@ -24,7 +24,7 @@ Key practices:
 
 Building security into your infrastructure lays the groundwork for resilient applications.
 
-![The image is an introduction slide about "Infrastructure Fortification," focusing on securing a digital framework. It includes a circular diagram with stages like infrastructure, app architecture, continuous validation, and monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868021/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/infrastructure-fortification-security-diagram.jpg)
+![The image is an introduction slide about "Infrastructure Fortification," focusing on securing a digital framework. It includes a circular diagram with stages like infrastructure, app architecture, continuous validation, and monitoring.](https://kodekloud.com/kk-media/image/upload/v1752868021/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/infrastructure-fortification-security-diagram.jpg)
 
 Core components:
 
@@ -37,7 +37,7 @@ Core components:
 
 Multiple defensive layers reduce risk if one control fails. Implement these at every tier of your architecture.
 
-![The image illustrates a "Stratified Security Design" concept, emphasizing the need for multiple defensive layers to protect against various attack vectors. It includes icons representing infrastructure, app architecture, monitoring, and continuous validation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868022/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/stratified-security-design-defensive-layers.jpg)
+![The image illustrates a "Stratified Security Design" concept, emphasizing the need for multiple defensive layers to protect against various attack vectors. It includes icons representing infrastructure, app architecture, monitoring, and continuous validation.](https://kodekloud.com/kk-media/image/upload/v1752868022/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/stratified-security-design-defensive-layers.jpg)
 
 | Layer                          | Purpose                                  | Example Azure Service          |
 | ------------------------------ | ---------------------------------------- | ------------------------------ |
@@ -51,7 +51,7 @@ Multiple defensive layers reduce risk if one control fails. Implement these at e
 
 Security validation must be ongoing to address evolving threats.
 
-![The image illustrates the concept of ongoing security assurance, emphasizing the importance of regular security checks and validations for effective defense against evolving threats. It includes icons representing security checks and defense, along with a circular diagram highlighting infrastructure, app architecture, monitoring, and continuous validation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868023/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/ongoing-security-assurance-diagram.jpg)
+![The image illustrates the concept of ongoing security assurance, emphasizing the importance of regular security checks and validations for effective defense against evolving threats. It includes icons representing security checks and defense, along with a circular diagram highlighting infrastructure, app architecture, monitoring, and continuous validation.](https://kodekloud.com/kk-media/image/upload/v1752868023/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/ongoing-security-assurance-diagram.jpg)
 
 Ongoing activities:
 
@@ -64,7 +64,7 @@ Ongoing activities:
 
 Real-time monitoring and alerting help you detect and respond to incidents before they escalate.
 
-![The image illustrates the concept of proactive surveillance for detecting and deterring cyber threats, featuring a diagram of a computer with a magnifying glass and a laptop with missiles. It also includes a circular diagram highlighting infrastructure, app architecture, continuous validation, and monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868024/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/proactive-surveillance-cyber-threats-diagram.jpg)
+![The image illustrates the concept of proactive surveillance for detecting and deterring cyber threats, featuring a diagram of a computer with a magnifying glass and a laptop with missiles. It also includes a circular diagram highlighting infrastructure, app architecture, continuous validation, and monitoring.](https://kodekloud.com/kk-media/image/upload/v1752868024/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Introduction/proactive-surveillance-cyber-threats-diagram.jpg)
 
 Key techniques:
 

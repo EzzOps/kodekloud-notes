@@ -6,9 +6,7 @@ assert 307 == 201
 
 This results in a test failure, as the initial 307 status code from the redirect does not match the expected 201.
 
-<Callout icon="lightbulb">
-  Always include the trailing slash in your request URL when your route is defined with one (e.g., `/users/`). This practice prevents unnecessary redirects and ensures your API responds as expected during tests.
-</Callout>
+> **lightbulb** Always include the trailing slash in your request URL when your route is defined with one (e.g., `/users/`). This practice prevents unnecessary redirects and ensures your API responds as expected during tests.
 
 ## Conclusion
 
@@ -18,9 +16,7 @@ For further details on FastAPI behavior and endpoint configuration, you can also
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/e3ad7f36-073b-4dbe-ba59-52c732e3fbdf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/e3ad7f36-073b-4dbe-ba59-52c732e3fbdf)
 
 
 # Unauthorized Get Posts
@@ -41,12 +37,8 @@ This error indicates that the caption for a post could not be retrieved due to a
 * Confirm that the proper authorization headers are included in your request.
 * Check that your user account has the necessary permissions to access the resource.
 
-<Callout icon="lightbulb">
-  Double-check your API gateway configuration to ensure that it correctly routes and validates authentication tokens.
-</Callout>
+> **lightbulb** Double-check your API gateway configuration to ensure that it correctly routes and validates authentication tokens.
 
 By addressing these points, you can prevent unauthorized errors and guarantee smooth access to post details.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/20dc6fae-7a0b-41fe-8951-f7a41c75eee1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/20dc6fae-7a0b-41fe-8951-f7a41c75eee1)

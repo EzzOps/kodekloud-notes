@@ -113,9 +113,7 @@ provider "azurerm" {
 }
 ```
 
-<Callout icon="lightbulb">
-  The `features {}` block is required by the AzureRM provider and enables provider defaults. You can supply credentials in the provider block (for example `subscription_id`), but it's common and recommended to authenticate via environment variables, Azure CLI (`az login`), or managed identities for automation scenarios.
-</Callout>
+> **lightbulb** The `features {}` block is required by the AzureRM provider and enables provider defaults. You can supply credentials in the provider block (for example `subscription_id`), but it's common and recommended to authenticate via environment variables, Azure CLI (`az login`), or managed identities for automation scenarios.
 
 Example with `subscription_id` embedded (less common for production):
 
@@ -270,10 +268,6 @@ When Terraform refreshes state (during `plan` or `apply`), it compares actual re
 | Remote State        | Share state safely across teams and CI/CD.                      |
 | Best practices      | Improve maintainability, security, and collaboration.           |
 
-<Callout icon="lightbulb">
-  Tip: Use the official HashiCorp Terraform extension for VS Code to get verified tooling and IntelliSense. If you use third-party extensions, ensure they come from trusted sources.
-</Callout>
+> **lightbulb** Tip: Use the official HashiCorp Terraform extension for VS Code to get verified tooling and IntelliSense. If you use third-party extensions, ensure they come from trusted sources.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/2dc00bf7-fa00-41df-a4e0-bce9fb23c19d/lesson/9fa4da18-074a-4680-9d92-3446d16bff6d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/2dc00bf7-fa00-41df-a4e0-bce9fb23c19d/lesson/9fa4da18-074a-4680-9d92-3446d16bff6d)

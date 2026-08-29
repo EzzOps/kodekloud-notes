@@ -6,9 +6,7 @@ Vault’s Database Secrets Engine generates dynamic, time-bound credentials for 
 
 Vault’s Database Secrets Engine generates dynamic, time-bound credentials for a variety of database backends. Each credential is leased, and Vault automatically revokes the user when the lease expires—eliminating stale accounts and reducing risk.
 
-<Frame>
-  ![The image is a slide titled "Intro to Database Secrets Engine," explaining how the engine generates dynamic credentials for databases, ties them to a lease, and revokes them upon expiration. It includes a certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878406/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Database-Secrets-Engine/intro-database-secrets-engine-slide.jpg)
-</Frame>
+![The image is a slide titled "Intro to Database Secrets Engine," explaining how the engine generates dynamic credentials for databases, ties them to a lease, and revokes them upon expiration. It includes a certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878406/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Database-Secrets-Engine/intro-database-secrets-engine-slide.jpg)
 
 ## Supported Database Plugins
 
@@ -27,13 +25,9 @@ Vault ships with numerous database plugins out of the box. Below is a selection 
 | Snowflake         | Cloud-native data warehouse          |
 | Redshift          | Petabyte-scale analytics             |
 
-<Callout icon="lightbulb">
-  If your database isn’t listed, implement a [custom database plugin](https://www.vaultproject.io/docs/secrets/plugins).
-</Callout>
+> **lightbulb** If your database isn’t listed, implement a [custom database plugin](https://www.vaultproject.io/docs/secrets/plugins).
 
-<Frame>
-  ![The image lists various database plugins for a "Database Secrets Engine," including Cassandra, MongoDB, Oracle, and others. It also features a Vault certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878408/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Database-Secrets-Engine/database-secrets-engine-plugins-list.jpg)
-</Frame>
+![The image lists various database plugins for a "Database Secrets Engine," including Cassandra, MongoDB, Oracle, and others. It also features a Vault certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878408/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Database-Secrets-Engine/database-secrets-engine-plugins-list.jpg)
 
 ## Configuration Workflow
 
@@ -42,9 +36,7 @@ Setting up the Database Secrets Engine consists of two main steps:
 1. Configure Vault’s connection to your database (using a management account).
 2. Define Vault roles that map to SQL statements granting the appropriate permissions.
 
-<Frame>
-  ![The image outlines two steps for configuring a database secrets engine: configuring Vault with database access and configuring roles based on required permissions. It includes a Vault certification badge and a cartoon character.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878409/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Database-Secrets-Engine/database-secrets-engine-configuration-steps.jpg)
-</Frame>
+![The image outlines two steps for configuring a database secrets engine: configuring Vault with database access and configuring roles based on required permissions. It includes a Vault certification badge and a cartoon character.](https://kodekloud.com/kk-media/image/upload/v1752878409/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Database-Secrets-Engine/database-secrets-engine-configuration-steps.jpg)
 
 ### 1. Enable the Engine and Configure a Connection
 
@@ -70,17 +62,13 @@ vault write database/config/prod-database \
 * `allowed_roles`: limits which Vault roles can issue credentials.
 * `username`/`password`: initial credentials Vault uses to manage users (these values are masked on read).
 
-<Frame>
-  ![The image illustrates a database secrets engine configuration, showing Vault interacting with multiple databases (prod-sql-01, mysql-dev-03, oracle-db-22) and highlighting the need for credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878410/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Database-Secrets-Engine/database-secrets-engine-vault-configuration.jpg)
-</Frame>
+![The image illustrates a database secrets engine configuration, showing Vault interacting with multiple databases (prod-sql-01, mysql-dev-03, oracle-db-22) and highlighting the need for credentials.](https://kodekloud.com/kk-media/image/upload/v1752878410/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Database-Secrets-Engine/database-secrets-engine-vault-configuration.jpg)
 
 ### 2. Rotate Root Credentials
 
 Regularly rotating root credentials reduces human exposure. Vault’s `rotate-root` endpoint generates new admin credentials and updates the database behind the scenes:
 
-<Frame>
-  ![The image is a slide about rotating root credentials, explaining the benefits of using the rotate-root endpoint for database configurations. It highlights compliance with internal policies and ensures only Vault and the database server know the credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878411/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Database-Secrets-Engine/rotate-root-credentials-database-configs.jpg)
-</Frame>
+![The image is a slide about rotating root credentials, explaining the benefits of using the rotate-root endpoint for database configurations. It highlights compliance with internal policies and ensures only Vault and the database server know the credentials.](https://kodekloud.com/kk-media/image/upload/v1752878411/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Database-Secrets-Engine/rotate-root-credentials-database-configs.jpg)
 
 ```bash theme={null}
 vault write -f database/rotate-root/prod-database

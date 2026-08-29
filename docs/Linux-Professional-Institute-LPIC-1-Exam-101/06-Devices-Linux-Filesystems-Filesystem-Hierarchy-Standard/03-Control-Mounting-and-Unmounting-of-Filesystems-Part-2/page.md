@@ -91,9 +91,7 @@ You’ve successfully configured on-demand mounting with AutoFS and NFS. In the 
 * [NFS Documentation](https://nfs.sourceforge.io/)
 * [Red Hat AutoFS Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/managing_file_systems/assembly_managing-network-file-systems_managing-file-systems)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/cb0c1447-f6ae-4243-90df-f44c5d9c1adf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/cb0c1447-f6ae-4243-90df-f44c5d9c1adf)
 
 
 # Control Mounting and Unmounting of Filesystems Part 2
@@ -131,14 +129,12 @@ Example: permitting all users to mount `/dev/sdb1` on `/mnt/userdrive`:
 /dev/sdb1  /mnt/userdrive  ext4  defaults,user  0 0
 ```
 
-<Callout icon="lightbulb">
-  After editing `/etc/fstab`, you can test the entry without rebooting:
+> **lightbulb** After editing `/etc/fstab`, you can test the entry without rebooting:
 
   ```bash theme={null}
   mount /mnt/userdrive
   umount /mnt/userdrive
   ```
-</Callout>
 
 ## Managing Mounts with systemd
 
@@ -177,9 +173,7 @@ systemd can manage both static mounts and on-demand automounts via unit files in
 | Options     | Mount options (same as in `/etc/fstab`)               |
 | WantedBy    | Target to activate the mount on (`multi-user.target`) |
 
-<Callout icon="triangle-alert">
-  The filename `mnt-external.mount` **must** exactly match the `Where` path `/mnt/external` (slashes → hyphens).
-</Callout>
+> **triangle-alert** The filename `mnt-external.mount` **must** exactly match the `Where` path `/mnt/external` (slashes → hyphens).
 
 3. Reload systemd and start the mount:
 
@@ -251,6 +245,4 @@ Now, whenever you `ls /mnt/external`, systemd will mount the disk automatically.
 * [systemd.mount Documentation](https://www.freedesktop.org/software/systemd/man/systemd.mount.html)
 * [systemd.automount Documentation](https://www.freedesktop.org/software/systemd/man/systemd.automount.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/fc36f121-9775-4674-8a4a-ef92971fadb6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/de71b96a-9dc0-4e92-987a-6c7055c44e8b/lesson/fc36f121-9775-4674-8a4a-ef92971fadb6)

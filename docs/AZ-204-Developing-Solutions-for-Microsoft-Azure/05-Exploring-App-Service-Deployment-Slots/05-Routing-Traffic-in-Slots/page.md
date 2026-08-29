@@ -20,7 +20,7 @@ Automatic traffic distribution enables you to gradually shift user traffic from 
 
 Manual traffic routing provides more precise control, allowing you to direct specific users to a particular slot. This method is especially useful when deploying beta versions that users can opt in or out of. By appending the `X-MS-Routing-Name` parameter to the URL, you can target particular requests without changing the overall traffic split.
 
-![The image explains two methods for routing traffic in an app service: one using deployment slots with a specified traffic percentage, and the other allowing manual routing to specific slots using a query parameter.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866345/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Routing-Traffic-in-Slots/app-service-traffic-routing-methods.jpg)
+![The image explains two methods for routing traffic in an app service: one using deployment slots with a specified traffic percentage, and the other allowing manual routing to specific slots using a query parameter.](https://kodekloud.com/kk-media/image/upload/v1752866345/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Routing-Traffic-in-Slots/app-service-traffic-routing-methods.jpg)
 
 ## Configuring Traffic Routing in the Azure Portal
 
@@ -29,7 +29,7 @@ Setting up and managing traffic routing via the Azure portal is straightforward.
 * Setting a **50%** traffic distribution for the staging slot means half of all incoming traffic is automatically routed to staging, while the remaining traffic is served by production.
 * For directing specific users to a particular slot, manually include headers (e.g., the `X-MS-Routing-Name` parameter) in the URL. This option provides selective access control, such as allowing beta users to test new features without affecting the general user base.
 
-![The image shows a Microsoft Azure portal page displaying deployment slots for a web app, with two slots listed: one for production and one for staging, both running with equal traffic distribution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866347/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Routing-Traffic-in-Slots/azure-portal-deployment-slots-web-app.jpg)
+![The image shows a Microsoft Azure portal page displaying deployment slots for a web app, with two slots listed: one for production and one for staging, both running with equal traffic distribution.](https://kodekloud.com/kk-media/image/upload/v1752866347/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Routing-Traffic-in-Slots/azure-portal-deployment-slots-web-app.jpg)
 
 > **triangle-alert** When manually routing traffic using the `X-MS-Routing-Name` parameter, ensure that your application logic correctly interprets the headers to avoid unintended behavior.
 

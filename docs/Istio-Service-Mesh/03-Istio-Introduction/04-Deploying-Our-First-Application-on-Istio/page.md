@@ -30,9 +30,7 @@ Run 'kubectl label namespace default istio-injection=enabled' to enable it, or
 not needing injection.
 ```
 
-<Callout icon="lightbulb">
-  The analysis reveals that sidecar injection is not active for the default namespace. In Kubernetes environments with multiple namespaces (e.g., kube-system for core services and default for user applications), you must explicitly enable Istio sidecar injection where required.
-</Callout>
+> **lightbulb** The analysis reveals that sidecar injection is not active for the default namespace. In Kubernetes environments with multiple namespaces (e.g., kube-system for core services and default for user applications), you must explicitly enable Istio sidecar injection where required.
 
 ## Step 3: Enable Istio Sidecar Injection
 
@@ -89,12 +87,8 @@ reviews-v3-869ff44845-h5pfp                 2/2     Running   0          26s
 
 This output confirms that Istio has successfully injected the Envoy proxies into every pod.
 
-<Callout icon="lightbulb">
-  In upcoming lessons, you'll explore how these Envoy sidecar proxies manage traffic, enforce policies, and enhance the overall security within the Istio service mesh.
-</Callout>
+> **lightbulb** In upcoming lessons, you'll explore how these Envoy sidecar proxies manage traffic, enforce policies, and enhance the overall security within the Istio service mesh.
 
 That's it for now—happy exploring, and see you in the demo!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/0a72340f-23b9-4864-b1c0-427b529e2005" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/dc0a9efc-09ce-4310-86e9-1c7aaab6a7d8/lesson/0a72340f-23b9-4864-b1c0-427b529e2005)

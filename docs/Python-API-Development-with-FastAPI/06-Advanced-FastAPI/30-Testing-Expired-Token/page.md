@@ -6,9 +6,7 @@ This guide demonstrates how to verify the JWT expiration mechanism and test acce
 
 This guide demonstrates how to verify that the JWT expiration mechanism works as expected. A JSON Web Token (JWT) contains an expiration time that limits the validity of a user session. In our implementation, the default access token expires after 30 minutes. If a user attempts to access protected endpoints with the token beyond this duration, an error will be returned.
 
-<Callout icon="lightbulb">
-  The default token expiration is 30 minutes, ensuring enhanced security. However, for testing purposes, the expiration time is temporarily shortened.
-</Callout>
+> **lightbulb** The default token expiration is 30 minutes, ensuring enhanced security. However, for testing purposes, the expiration time is temporarily shortened.
 
 ## Creating an Access Token with a 30-Minute Expiration
 

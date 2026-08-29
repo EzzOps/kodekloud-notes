@@ -12,13 +12,9 @@ By default, Kubernetes pods communicate without restrictions, which can expose a
 * Pod-to-Service
 * Pod-to-Namespace
 
-<Callout icon="lightbulb">
-  Network policies enhance cluster security by defining clear ingress and egress rules. Always start with a default deny posture in production.
-</Callout>
+> **lightbulb** Network policies enhance cluster security by defining clear ingress and egress rules. Always start with a default deny posture in production.
 
-<Frame>
-  ![The image is a slide titled "Network Policies Recap," summarizing key points about network policies in Kubernetes, including traffic control, communication restrictions, and security enhancements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880384/notes-assets/images/Kubernetes-Networking-Deep-Dive-CNI-Network-Policies-Overview/network-policies-recap-kubernetes-summary.jpg)
-</Frame>
+![The image is a slide titled "Network Policies Recap," summarizing key points about network policies in Kubernetes, including traffic control, communication restrictions, and security enhancements.](https://kodekloud.com/kk-media/image/upload/v1752880384/notes-assets/images/Kubernetes-Networking-Deep-Dive-CNI-Network-Policies-Overview/network-policies-recap-kubernetes-summary.jpg)
 
 ## Built-In vs. CNI-Specific Network Policies
 
@@ -32,9 +28,7 @@ Kubernetes ships with basic network policy support, but many CNI plugins extend 
 | Traffic Monitoring & Analytics | Limited         | ✅ Real-time metrics & logs          |
 | Multi-Cluster Policy Scope     | ✖️              | ✅ Global policy management          |
 
-<Frame>
-  ![The image is an overview of CNI (Container Network Interface) network policies, illustrating a Kubernetes cluster with nodes and an external network, highlighting features like network segmentation, encryption, and enhanced security. It also mentions projects like Calico, Cilium, and Weave Net.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880384/notes-assets/images/Kubernetes-Networking-Deep-Dive-CNI-Network-Policies-Overview/cni-network-policies-kubernetes-overview.jpg)
-</Frame>
+![The image is an overview of CNI (Container Network Interface) network policies, illustrating a Kubernetes cluster with nodes and an external network, highlighting features like network segmentation, encryption, and enhanced security. It also mentions projects like Calico, Cilium, and Weave Net.](https://kodekloud.com/kk-media/image/upload/v1752880384/notes-assets/images/Kubernetes-Networking-Deep-Dive-CNI-Network-Policies-Overview/cni-network-policies-kubernetes-overview.jpg)
 
 ## Key Benefits of CNI Network Policies
 
@@ -58,9 +52,7 @@ Cilium leverages eBPF for efficient enforcement of Layer 3, 4, and 7 policies wi
 * Multi-Cluster Policy Consistency
 * Rich eBPF-Powered Troubleshooting & Metrics
 
-<Frame>
-  ![The image is an informational graphic about Cilium Network Policies, highlighting protocol support (HTTP, gRPC, Kafka), layered controls (L3/L4 and L7), and extensive integrations. It features the Cilium logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880385/notes-assets/images/Kubernetes-Networking-Deep-Dive-CNI-Network-Policies-Overview/cilium-network-policies-protocols-graphic.jpg)
-</Frame>
+![The image is an informational graphic about Cilium Network Policies, highlighting protocol support (HTTP, gRPC, Kafka), layered controls (L3/L4 and L7), and extensive integrations. It features the Cilium logo.](https://kodekloud.com/kk-media/image/upload/v1752880385/notes-assets/images/Kubernetes-Networking-Deep-Dive-CNI-Network-Policies-Overview/cilium-network-policies-protocols-graphic.jpg)
 
 ## Policy Enforcement Modes
 
@@ -87,9 +79,7 @@ Subsequent rule sections can include:
 * Layer 7 rules: HTTP methods, paths, headers
 * CIDR blocks: Allow or exclude specific IP ranges
 
-<Frame>
-  ![The image explains two rule basics: "Layer 7 Rules," which define policies based on application layer parameters like HTTP methods and paths, and "CIDR Blocks," which control traffic to/from specific IP ranges for network integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880386/notes-assets/images/Kubernetes-Networking-Deep-Dive-CNI-Network-Policies-Overview/layer-7-rules-cidr-blocks-explained.jpg)
-</Frame>
+![The image explains two rule basics: "Layer 7 Rules," which define policies based on application layer parameters like HTTP methods and paths, and "CIDR Blocks," which control traffic to/from specific IP ranges for network integration.](https://kodekloud.com/kk-media/image/upload/v1752880386/notes-assets/images/Kubernetes-Networking-Deep-Dive-CNI-Network-Policies-Overview/layer-7-rules-cidr-blocks-explained.jpg)
 
 ### Example: Comprehensive CiliumNetworkPolicy (L3–L7)
 
@@ -137,9 +127,7 @@ Layer 3 policies define network-layer connectivity without deep packet inspectio
 * **Entities-based:** Match built-in identities like `host` or `world`
 * **DNS-based:** Use runtime-resolved DNS names (honoring TTLs)
 
-<Frame>
-  ![The image shows a list of Layer 3 policies alongside a diagram of the OSI Model layers, highlighting the Network layer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880387/notes-assets/images/Kubernetes-Networking-Deep-Dive-CNI-Network-Policies-Overview/layer-3-policies-osi-model-diagram.jpg)
-</Frame>
+![The image shows a list of Layer 3 policies alongside a diagram of the OSI Model layers, highlighting the Network layer.](https://kodekloud.com/kk-media/image/upload/v1752880387/notes-assets/images/Kubernetes-Networking-Deep-Dive-CNI-Network-Policies-Overview/layer-3-policies-osi-model-diagram.jpg)
 
 ### Examples
 

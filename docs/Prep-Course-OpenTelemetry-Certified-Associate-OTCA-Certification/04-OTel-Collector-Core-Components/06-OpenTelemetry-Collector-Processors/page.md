@@ -14,9 +14,7 @@ Processors are the central transformation and enrichment layer in the OpenTeleme
 
 This guide explains common processors, when to use them, and provides example configurations you can adapt for production.
 
-<Callout icon="lightbulb">
-  Processors execute in the order you list them in a pipeline. That order matters: place protective processors (e.g., `memory_limiter`) early, transformation/enrichment processors in the middle, and batching last for export efficiency.
-</Callout>
+> **lightbulb** Processors execute in the order you list them in a pipeline. That order matters: place protective processors (e.g., `memory_limiter`) early, transformation/enrichment processors in the middle, and batching last for export efficiency.
 
 ***
 
@@ -292,9 +290,7 @@ Processor ordering impacts correctness, data quality, and Collector stability. A
 3. resourcedetection / k8sattributes — add infrastructure metadata
 4. batch — prepare data for efficient export
 
-<Callout icon="warning">
-  Processor sequence is critical. For example, run `memory_limiter` early to protect the Collector; run `batch` near the end to optimize export behavior. Reordering can change transformations or cause unexpected data loss.
-</Callout>
+> **warning** Processor sequence is critical. For example, run `memory_limiter` early to protect the Collector; run `batch` near the end to optimize export behavior. Reordering can change transformations or cause unexpected data loss.
 
 Example pipeline demonstrating recommended ordering:
 
@@ -395,6 +391,4 @@ References and further reading:
 
 This is the end of the article on processors.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/0b30b764-1eb0-4ab0-9bbe-d6d51e542b63" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/f6507634-836f-4fe9-b29d-047d84bfcce7/lesson/0b30b764-1eb0-4ab0-9bbe-d6d51e542b63)

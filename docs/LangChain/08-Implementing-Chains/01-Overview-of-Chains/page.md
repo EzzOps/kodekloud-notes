@@ -13,9 +13,7 @@ We focus on two built-in chain constructs:
 
 These building blocks are central when you need to combine multiple documents, summarize content, or answer questions over large collections.
 
-<Callout icon="lightbulb">
-  In this article, "stuff" refers to the approach that formats and injects multiple documents directly into a single prompt, while "retrieval" refers to the pattern that first fetches relevant chunks from a retriever (e.g., a vector store) before combining them for the LLM.
-</Callout>
+> **lightbulb** In this article, "stuff" refers to the approach that formats and injects multiple documents directly into a single prompt, while "retrieval" refers to the pattern that first fetches relevant chunks from a retriever (e.g., a vector store) before combining them for the LLM.
 
 ## What is a chain in LangChain?
 

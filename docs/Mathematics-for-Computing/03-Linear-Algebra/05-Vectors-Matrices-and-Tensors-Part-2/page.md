@@ -53,9 +53,7 @@ Further reading and references:
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) — foundational infra concepts for serving models
 * Embeddings, one-hot encoding, and normalization strategies in modern recommendation systems
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/d8fa251f-80d2-4813-8b52-ad57051b1dcf/lesson/9330b081-e3b4-41cf-a560-5818bf204b63" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/d8fa251f-80d2-4813-8b52-ad57051b1dcf/lesson/9330b081-e3b4-41cf-a560-5818bf204b63)
 
 
 # Vectors Matrices and Tensors Part 2
@@ -80,9 +78,7 @@ Each row represents one bag and each column represents a feature. For example, A
 
 Rather than applying filters one at a time, a matrix lets us combine multiple criteria (e.g., `colour ≈ blue` AND `price ≈ 23`) and run vectorized operations to select matching rows efficiently. This is much faster and more scalable than iterating through each record and applying individual checks.
 
-<Callout icon="lightbulb">
-  In data terms: rows = observations (products), columns = features. A matrix with m rows and n columns is often called an m-by-n matrix.
-</Callout>
+> **lightbulb** In data terms: rows = observations (products), columns = features. A matrix with m rows and n columns is often called an m-by-n matrix.
 
 Simple Python example showing a matrix as a list of rows and filtering by price:
 

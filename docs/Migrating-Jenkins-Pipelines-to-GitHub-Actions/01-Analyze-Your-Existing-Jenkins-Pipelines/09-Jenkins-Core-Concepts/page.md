@@ -28,9 +28,7 @@ Before we dive into Jenkins pipelines and configuration, review these core conce
 | Nodes (controller & agents)      | Machines that run Jenkins tasks.                                                                                                | The controller (formerly called “master”) coordinates builds and serves the UI; agents (workers) execute build steps. Use multiple agents to distribute and scale work. |
 | Plugins                          | Extend Jenkins to integrate with SCMs, test systems, cloud platforms, notifications, and more.                                  | Plugins enable most integrations but require lifecycle management (updates and compatibility checks).                                                                   |
 
-<Callout icon="lightbulb">
-  Familiarize yourself with these concepts before writing or migrating pipelines — they shape how you design CI/CD workflows with Jenkins.
-</Callout>
+> **lightbulb** Familiarize yourself with these concepts before writing or migrating pipelines — they shape how you design CI/CD workflows with Jenkins.
 
 ## How the Jenkins pipeline typically runs
 
@@ -57,12 +55,8 @@ Next topics to explore include Jenkinsfile syntax (Declarative vs. Scripted), ag
   <img alt="A slide titled &#x22;Pro's and Con's&#x22; with a green thumbs-up column of advantages and an orange thumbs-down column of disadvantages. The pros list items like &#x22;Open Source and Free,&#x22; &#x22;Highly Customizable,&#x22; &#x22;Scriptable for Advanced Users,&#x22; &#x22;Pipeline as Code,&#x22; &#x22;Mature and Feature Rich,&#x22; and &#x22;Scalable,&#x22; while the cons list &#x22;Steeper Learning Curve,&#x22; &#x22;Maintenance Overhead,&#x22; &#x22;Performance Considerations,&#x22; &#x22;Security Concerns,&#x22; and &#x22;Hosting Required.&#x22;" />
 </Frame>
 
-<Callout icon="warning">
-  Because Jenkins is typically self‑hosted, plan and budget for ongoing maintenance: OS and plugin updates, backups, secure credential storage, access controls, and monitoring are essential to keep your CI/CD pipeline reliable and secure.
-</Callout>
+> **warning** Because Jenkins is typically self‑hosted, plan and budget for ongoing maintenance: OS and plugin updates, backups, secure credential storage, access controls, and monitoring are essential to keep your CI/CD pipeline reliable and secure.
 
 We’ve covered the essentials. From here, focus on writing a robust `Jenkinsfile`, deciding how to provision agents (static vs. dynamic), and adopting secure practices for credentials, secrets, and plugin management. For more details, consult the official Jenkins documentation and plugin-specific guides.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/8159cfe7-f85f-4afc-9918-535118825844" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/4ff3a393-a622-48d3-a0b5-4fb312c6c0a2/lesson/8159cfe7-f85f-4afc-9918-535118825844)

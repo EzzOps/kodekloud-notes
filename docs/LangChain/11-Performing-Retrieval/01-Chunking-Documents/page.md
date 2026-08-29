@@ -27,9 +27,7 @@ print(result)
 
 Note: APIs and LLms evolve—check your LangChain version docs for the most current agent initialization patterns.
 
-<Callout icon="warning">
-  Agents can incur additional API calls, latency, and cost because they loop between the LLM and tools. Validate tool permissions, rate limits, and error handling. Always add input sanitization and monitoring to avoid harmful or unintended actions.
-</Callout>
+> **warning** Agents can incur additional API calls, latency, and cost because they loop between the LLM and tools. Validate tool permissions, rate limits, and error handling. Always add input sanitization and monitoring to avoid harmful or unintended actions.
 
 ## Best practices for building reliable agents
 
@@ -47,9 +45,7 @@ Note: APIs and LLms evolve—check your LangChain version docs for the most curr
 
 These references will help you implement agents that safely coordinate LLM reasoning with external capabilities and deliver robust, multi-step automation.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/db49466c-c5af-4c79-b889-cf31536588ca" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/db49466c-c5af-4c79-b889-cf31536588ca)
 
 
 # Chunking Documents

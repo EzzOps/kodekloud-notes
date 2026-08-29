@@ -24,7 +24,7 @@ DevOps isn’t just about merging two teams—it’s a cultural shift powered by
 
 At the core of DevOps is the Infinity Loop, illustrating an unbroken lifecycle of software delivery:
 
-![The image depicts an infinity loop diagram representing the DevOps lifecycle, including stages like Plan, Build, Continuous Integration, Deploy, Operate, and Continuous Feedback, with an emphasis on collaboration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868092/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Unifying-People-Process-and-Technology/devops-lifecycle-infinity-loop-diagram.jpg)
+![The image depicts an infinity loop diagram representing the DevOps lifecycle, including stages like Plan, Build, Continuous Integration, Deploy, Operate, and Continuous Feedback, with an emphasis on collaboration.](https://kodekloud.com/kk-media/image/upload/v1752868092/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Unifying-People-Process-and-Technology/devops-lifecycle-infinity-loop-diagram.jpg)
 
 ### Phases of the Infinity Loop
 

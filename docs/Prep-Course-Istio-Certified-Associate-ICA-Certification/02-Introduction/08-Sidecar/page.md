@@ -37,9 +37,7 @@ A quick terminology note: "proxy" vs "sidecar"
 * A sidecar is the deployment pattern where that proxy runs alongside your application in the same Pod (or host).
   When people mention "sidecar injection," they refer to adding a proxy container (such as Envoy) to a workload so it intercepts and manages the application’s traffic.
 
-<Callout icon="lightbulb">
-  Sidecar injection means adding a proxy container (for example, Envoy) to a workload so the proxy runs alongside the application and intercepts inbound/outbound traffic.
-</Callout>
+> **lightbulb** Sidecar injection means adding a proxy container (for example, Envoy) to a workload so the proxy runs alongside the application and intercepts inbound/outbound traffic.
 
 How does an Envoy sidecar work?
 

@@ -11,9 +11,7 @@ To determine when a policy executes and can produce a report, inspect these two 
 * `spec.admission` (defaults to `true`) — runs the policy during admission requests (real-time).
 * `spec.background` (defaults to `true`) — runs the policy as part of periodic background scans.
 
-<Callout icon="lightbulb">
-  By default both modes are enabled. A policy must run in at least one mode — disabling both `admission` and `background` prevents the policy from executing.
-</Callout>
+> **lightbulb** By default both modes are enabled. A policy must run in at least one mode — disabling both `admission` and `background` prevents the policy from executing.
 
 <Frame>
   <img alt="The image explains two policy application modes: &#x22;spec.admission,&#x22; which applies policies during real-time admission control, and &#x22;spec.background,&#x22; which periodically scans resources against the policy." />
@@ -58,9 +56,7 @@ Use the table below to summarize outcomes:
 
 Warning about blocked resources
 
-<Callout icon="warning">
-  When a rule is in `Enforce` mode and a request is denied, the resource is never created — therefore no admission-linked PolicyReport is attached to that resource. Use `Audit` mode if you want to record violations without blocking creation.
-</Callout>
+> **warning** When a rule is in `Enforce` mode and a request is denied, the resource is never created — therefore no admission-linked PolicyReport is attached to that resource. Use `Audit` mode if you want to record violations without blocking creation.
 
 Concrete example: audit-only policy that requires a team label
 
@@ -163,8 +159,6 @@ Further reading and references
 
 Scanning and reporting for existing (already running) resources is covered in a separate article on background scans and reports.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/360718cb-5ab8-44a1-bcd2-beae95ede7c9/lesson/a9ecfe80-4cb4-471f-a215-927ad76db3ff" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/360718cb-5ab8-44a1-bcd2-beae95ede7c9/lesson/a9ecfe80-4cb4-471f-a215-927ad76db3ff)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/360718cb-5ab8-44a1-bcd2-beae95ede7c9/lesson/442698cb-2ab0-491b-ac6f-a0c124cc7b95" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/360718cb-5ab8-44a1-bcd2-beae95ede7c9/lesson/442698cb-2ab0-491b-ac6f-a0c124cc7b95)

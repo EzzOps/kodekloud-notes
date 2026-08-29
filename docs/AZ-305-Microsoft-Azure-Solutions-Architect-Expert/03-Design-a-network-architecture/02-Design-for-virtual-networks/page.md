@@ -58,7 +58,7 @@ Managing access to virtual networks is streamlined with Azure Role-Based Access 
 
 Azure Policy further enhances network management by providing built-in policies for DDoS protection, flow logs, diagnostic settings, and more. These policies help ensure your virtual network aligns with your operational and security standards.
 
-![The image is a guide from KodeKloud on designing virtual networks, outlining principles such as naming, regions, subscriptions, subnets, security, connectivity, permissions, and policy. It provides brief descriptions for each principle to aid in virtual network deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867099/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-virtual-networks/kodekloud-virtual-network-design-guide.jpg)
+![The image is a guide from KodeKloud on designing virtual networks, outlining principles such as naming, regions, subscriptions, subnets, security, connectivity, permissions, and policy. It provides brief descriptions for each principle to aid in virtual network deployment.](https://kodekloud.com/kk-media/image/upload/v1752867099/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-virtual-networks/kodekloud-virtual-network-design-guide.jpg)
 
 This comprehensive planning is critical, as the virtual network forms the foundation of all your resources. A well-thought-out network design guarantees that your environment remains secure, scalable, and compliant with your organization’s standards.
 

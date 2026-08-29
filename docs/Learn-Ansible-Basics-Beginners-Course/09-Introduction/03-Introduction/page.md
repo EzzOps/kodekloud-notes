@@ -64,9 +64,7 @@ Changing the execution target in Ansible is as simple as modifying one line. For
         name: johndoe
 ```
 
-<Callout icon="lightbulb">
-  Using Ansible, you can easily shift focus from a single host to multiple servers by updating the target hosts. This provides flexibility in managing both local and remote environments.
-</Callout>
+> **lightbulb** Using Ansible, you can easily shift focus from a single host to multiple servers by updating the target hosts. This provides flexibility in managing both local and remote environments.
 
 ***
 
@@ -76,23 +74,17 @@ Imagine needing to restart several hosts in a specific order. For instance, you 
 
 Another common scenario involves provisioning a complex infrastructure that spans both public and private clouds, managing hundreds of virtual machines. Ansible can provision VMs on platforms like Amazon AWS and private environments such as VMware. It then configures applications, updates configuration files, installs necessary software packages, and modifies firewall rules. Moreover, its extensive library of built-in modules facilitates integration with other systems—such as pulling data from your CMDB or triggering automated workflows via ServiceNow.
 
-<Frame>
-  ![The image illustrates a complex use case involving ServiceNow, databases, cloud, and multiple servers, with a person presenting the diagram.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881106/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Introduction/frame_190.jpg)
-</Frame>
+![The image illustrates a complex use case involving ServiceNow, databases, cloud, and multiple servers, with a person presenting the diagram.](https://kodekloud.com/kk-media/image/upload/v1752881106/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Introduction/frame_190.jpg)
 
 Explore the extensive guides and hundreds of playbook examples available in the [Ansible Documentation](https://docs.ansible.com) to deepen your understanding and broaden your automation skills.
 
-<Frame>
-  ![The image shows a webpage of Ansible Documentation with a person standing in front, wearing a navy and orange sweater.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881108/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Introduction/frame_200.jpg)
-</Frame>
+![The image shows a webpage of Ansible Documentation with a person standing in front, wearing a navy and orange sweater.](https://kodekloud.com/kk-media/image/upload/v1752881108/notes-assets/images/Learn-Ansible-Basics-Beginners-Course-Ansible-Introduction/frame_200.jpg)
 
 ***
 
 This article provided an overview of Ansible, showcasing its benefits and advantages over traditional scripting. In the upcoming lessons, we will guide you through setting up an Ansible hands-on lab environment and delve into more advanced playbook configurations. Stay tuned for the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/1b3f113a-1512-4858-a794-1b74c3541725/lesson/1d3be0a0-a3f5-489c-98c3-8f04b428ecbe" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/1b3f113a-1512-4858-a794-1b74c3541725/lesson/1d3be0a0-a3f5-489c-98c3-8f04b428ecbe)
 
 
 # Introduction
@@ -105,9 +97,7 @@ Welcome to the [Ansible for the Absolute Beginners](https://learn.kodekloud.com/
 
 In this course, you will learn Ansible by following a series of engaging lectures enhanced with animations and illustrations, which simplify complex concepts. We complement these lectures with demos to help you install and get started with Ansible, as well as browser-accessible hands-on labs. These labs are designed to run on any system without needing cloud platforms or high-end hardware since they use dedicated lab environments and challenges.
 
-<Callout icon="lightbulb">
-  Each lab is customized to the topic at hand so that you work through real-world scenarios, rather than following static instructions.
-</Callout>
+> **lightbulb** Each lab is customized to the topic at hand so that you work through real-world scenarios, rather than following static instructions.
 
 ## Course Objectives
 
@@ -131,6 +121,4 @@ I'm excited to embark on this automation journey with you. Let’s get started!
 
 Happy automating!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/1b3f113a-1512-4858-a794-1b74c3541725/lesson/7741ee47-6c45-4d99-a099-29257b769fb3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/1b3f113a-1512-4858-a794-1b74c3541725/lesson/7741ee47-6c45-4d99-a099-29257b769fb3)

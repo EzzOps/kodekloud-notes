@@ -61,9 +61,7 @@ Links and references:
 * Kubernetes: [https://kubernetes.io/](https://kubernetes.io/)
 * GitHub webhooks: [https://docs.github.com/en/developers/webhooks-and-events/about-webhooks](https://docs.github.com/en/developers/webhooks-and-events/about-webhooks)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/16e00975-ac10-4915-9801-a00bc17041c4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/16e00975-ac10-4915-9801-a00bc17041c4)
 
 
 # Course Introduction
@@ -88,17 +86,13 @@ Understand Source Control Management (SCM), Continuous Integration (CI), and Con
 
 Explore the master-agent architecture, install Jenkins on various platforms, perform initial configuration, and navigate the user interface.
 
-<Callout icon="lightbulb">
-  Ensure you have Java 8+ and Docker installed before starting the labs. These tools are prerequisites for many of our exercises.
-</Callout>
+> **lightbulb** Ensure you have Java 8+ and Docker installed before starting the labs. These tools are prerequisites for many of our exercises.
 
 ### 3. Plugins Management
 
 Discover, install, and manage Jenkins plugins to extend functionality and tailor Jenkins to your workflow.
 
-<Callout icon="triangle-alert">
-  Installing outdated or unverified plugins can pose security risks. Always verify plugin sources and versions.
-</Callout>
+> **triangle-alert** Installing outdated or unverified plugins can pose security risks. Always verify plugin sources and versions.
 
 ### 4. Jenkins Pipelines
 
@@ -131,6 +125,4 @@ Ready to become a **Certified Jenkins Engineer**? Enroll now and elevate your CI
 * [Terraform Registry](https://registry.terraform.io/)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-jenkins-engineer/module/2e8ea9bb-e5bb-428e-85d9-89f2eb816adb/lesson/d205f96d-b0e8-4df3-91f6-07bf531a19c9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-jenkins-engineer/module/2e8ea9bb-e5bb-428e-85d9-89f2eb816adb/lesson/d205f96d-b0e8-4df3-91f6-07bf531a19c9)

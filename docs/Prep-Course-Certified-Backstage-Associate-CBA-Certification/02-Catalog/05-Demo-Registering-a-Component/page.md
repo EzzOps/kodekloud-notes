@@ -25,9 +25,7 @@ Steps to create a PAT:
   <img alt="A screenshot of the GitHub &#x22;New personal access token (classic)&#x22; settings page showing fields for the token note, expiration (30 days), and selectable scopes. The &#x22;repo&#x22; scope is checked among other permissions like workflow and package-related options." />
 </Frame>
 
-<Callout icon="warning">
-  Personal access tokens are sensitive credentials. Grant the least privilege required (e.g., `repo` for reading private repos), and avoid long-lived tokens when possible. Use a secrets manager or short expirations in production.
-</Callout>
+> **warning** Personal access tokens are sensitive credentials. Grant the least privilege required (e.g., `repo` for reading private repos), and avoid long-lived tokens when possible. Use a secrets manager or short expirations in production.
 
 ## Set the token in the environment (recommended)
 
@@ -39,9 +37,7 @@ export GITHUB_TOKEN="paste_your_token_here"
 
 Then restart your Backstage backend so it picks up the environment variable (for example `yarn dev` or `yarn start` depending on your setup).
 
-<Callout icon="lightbulb">
-  Do not commit personal access tokens to source control. Use environment variables or a secrets manager for production deployments.
-</Callout>
+> **lightbulb** Do not commit personal access tokens to source control. Use environment variables or a secrets manager for production deployments.
 
 > Note: For local testing you can temporarily hardcode the token in `app-config.yaml`, but never commit such changes.
 
@@ -76,9 +72,7 @@ Further reading and references:
 
 This completes the walkthrough for configuring Backstage to read catalog files from private GitHub repositories.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/0b0b01d9-69a2-4dab-a159-e9ae7c0bf049" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/f9244f9d-083a-4acd-a518-549f54b644b5/lesson/0b0b01d9-69a2-4dab-a159-e9ae7c0bf049)
 
 
 # Demo Registering a Component

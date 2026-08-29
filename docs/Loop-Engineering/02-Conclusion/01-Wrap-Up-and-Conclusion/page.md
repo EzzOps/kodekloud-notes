@@ -56,9 +56,7 @@ $ git worktree prune
 Cleaning up worktree entries... done
 ```
 
-<Callout icon="lightbulb">
-  Worktrees share the same repository history (the main `.git`) while keeping separate working trees. The small `.git` file inside each worktree points Git back to the shared data, which is why creating a worktree is inexpensive.
-</Callout>
+> **lightbulb** Worktrees share the same repository history (the main `.git`) while keeping separate working trees. The small `.git` file inside each worktree points Git back to the shared data, which is why creating a worktree is inexpensive.
 
 The payoff
 
@@ -86,9 +84,7 @@ Links and references
 * [Git reference manual](https://git-scm.com/docs)
 * For detailed workflows and best practices, search for "git worktree workflows" or consult your CI system's docs for integrating ephemeral worktrees into automated loops.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/loop-engineering/module/6371e2a8-2e13-4841-ba89-95dd842b1bdd/lesson/9a47e6fc-677b-4583-81f9-3ef4cea9bdea" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/loop-engineering/module/6371e2a8-2e13-4841-ba89-95dd842b1bdd/lesson/9a47e6fc-677b-4583-81f9-3ef4cea9bdea)
 
 
 # Wrap Up and Conclusion
@@ -108,9 +104,7 @@ Only after those foundations should you add other components. Each additional pa
 
 Callouts for quick reference:
 
-<Callout icon="lightbulb">
-  Start with the goal and the scorekeeper in every project. Get one small, saved win (a green state) early — it reduces risk and provides a reliable baseline for iteration.
-</Callout>
+> **lightbulb** Start with the goal and the scorekeeper in every project. Get one small, saved win (a green state) early — it reduces risk and provides a reliable baseline for iteration.
 
 Core components and their roles
 
@@ -145,9 +139,7 @@ Engineering habits that keep loops healthy
 * Inspect the actual outputs shipped by the loop — don’t rely only on the score flipping green.
 * Decide up front when the loop should stop, and define the criteria for human handoff.
 
-<Callout icon="warning">
-  Automate carefully. Over-automation without clear stop conditions can produce brittle behavior. Define explicit termination or escalation rules to ensure safe handoffs to humans.
-</Callout>
+> **warning** Automate carefully. Over-automation without clear stop conditions can produce brittle behavior. Define explicit termination or escalation rules to ensure safe handoffs to humans.
 
 A short, practical cycle example
 
@@ -166,6 +158,4 @@ Links and references
 * [Continuous Integration (CI) Practices](https://martinfowler.com/articles/continuousIntegration.html) — for automation and frequent saves
 * [Designing Reliable Systems](https://en.wikipedia.org/wiki/Resilience_\(engineering\)) — resilience and safe handoffs
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/loop-engineering/module/e9e7e00f-c818-4786-9192-b1ebbae551d6/lesson/13c623bc-c1cf-4d11-8cb1-fc4857757dfc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/loop-engineering/module/e9e7e00f-c818-4786-9192-b1ebbae551d6/lesson/13c623bc-c1cf-4d11-8cb1-fc4857757dfc)

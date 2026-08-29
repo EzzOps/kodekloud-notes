@@ -12,9 +12,7 @@ Azure RBAC focuses on controlling who can perform actions on which resources. It
 
 For example, a database administrator may be given a role that allows the management of Azure SQL databases but restricts modifications to virtual machines. In practical terms, you might assign John, a database administrator, permissions to read, write, and delete SQL databases within a specific subscription (e.g., Subscription A).
 
-<Callout icon="lightbulb">
-  Azure RBAC is essential for enforcing secure administrative controls and ensuring that only authorized personnel can perform critical operations.
-</Callout>
+> **lightbulb** Azure RBAC is essential for enforcing secure administrative controls and ensuring that only authorized personnel can perform critical operations.
 
 ## Azure Policy
 
@@ -22,9 +20,7 @@ Unlike RBAC, Azure Policy is concerned with the configuration settings and prope
 
 For instance, you might deploy a policy that prevents the creation of storage accounts without encryption or one that enforces a standardized naming convention across all resources. With Azure Policy, you could require that every storage account in a given subscription, or any defined scope, has encryption enabled. Compliance reports can then be generated to review adherence to these standards.
 
-<Callout icon="lightbulb">
-  Using Azure Policy helps your organization maintain best practices and regulatory compliance by continuously monitoring and enforcing resource configurations.
-</Callout>
+> **lightbulb** Using Azure Policy helps your organization maintain best practices and regulatory compliance by continuously monitoring and enforcing resource configurations.
 
 ## Summary
 
@@ -38,6 +34,4 @@ Together, Azure RBAC and Azure Policy form a comprehensive governance framework 
 
 For more detailed information, see the official [Azure RBAC Documentation](https://docs.microsoft.com/en-us/azure/role-based-access-control/) and [Azure Policy Documentation](https://docs.microsoft.com/en-us/azure/governance/policy/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/3c48a4f2-a6f3-45fd-87d7-c53f36f2fb2a/lesson/03703e48-0b7c-4b49-b928-c140bf32b781" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/3c48a4f2-a6f3-45fd-87d7-c53f36f2fb2a/lesson/03703e48-0b7c-4b49-b928-c140bf32b781)

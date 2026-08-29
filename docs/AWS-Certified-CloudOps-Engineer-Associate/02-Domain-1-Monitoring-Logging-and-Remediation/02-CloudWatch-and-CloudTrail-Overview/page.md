@@ -16,7 +16,7 @@ You can use CloudWatch to:
 * Collect various metrics including CPU usage, load average, disk I/O, network bandwidth, and burst credits.
 * Configure alarms with set thresholds (e.g., alert when CPU usage exceeds 85%) and automatically trigger notifications via the Simple Notification Service (SNS).
 
-![The image illustrates the working of AWS CloudWatch, showing how it collects metrics from AWS Cloud, custom applications, and on-premises logs, and then triggers alarms that are sent to SNS (Simple Notification Service).](../../../../images/kodekloud.com/kk-media/image/upload/v1752859850/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudWatch-and-CloudTrail-Overview/aws-cloudwatch-metrics-illustration.jpg)
+![The image illustrates the working of AWS CloudWatch, showing how it collects metrics from AWS Cloud, custom applications, and on-premises logs, and then triggers alarms that are sent to SNS (Simple Notification Service).](https://kodekloud.com/kk-media/image/upload/v1752859850/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudWatch-and-CloudTrail-Overview/aws-cloudwatch-metrics-illustration.jpg)
 
 CloudWatch also enables you to analyze trends over time through:
 
@@ -24,7 +24,7 @@ CloudWatch also enables you to analyze trends over time through:
 * Log insights for querying and analyzing log streams.
 * Tracing capabilities for modern observability across distributed systems.
 
-![The image illustrates the working of AWS CloudWatch, showing how it collects metrics from AWS Cloud, custom applications, and on-premises logs, and then uses alarms and metrics insights to interact with SNS and a management console.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859851/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudWatch-and-CloudTrail-Overview/aws-cloudwatch-metrics-illustration-2.jpg)
+![The image illustrates the working of AWS CloudWatch, showing how it collects metrics from AWS Cloud, custom applications, and on-premises logs, and then uses alarms and metrics insights to interact with SNS and a management console.](https://kodekloud.com/kk-media/image/upload/v1752859851/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudWatch-and-CloudTrail-Overview/aws-cloudwatch-metrics-illustration-2.jpg)
 
 ### Key Components of CloudWatch
 
@@ -37,11 +37,11 @@ CloudWatch comprises several subservices that work together to provide comprehen
 * **Dashboards:** Create visualizations like pie charts, line charts, and historical trend graphs.
 * **Additional features:** Leverage Synthetics, real-time user metrics, Container Insights, Serverless Insights, Service Mapping, and more.
 
-![The image is a diagram of CloudWatch components, including Metrics, Alarms, Logs, Events, Dashboards, and Insights, with subcategories listed under each component.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859852/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudWatch-and-CloudTrail-Overview/cloudwatch-components-diagram.jpg)
+![The image is a diagram of CloudWatch components, including Metrics, Alarms, Logs, Events, Dashboards, and Insights, with subcategories listed under each component.](https://kodekloud.com/kk-media/image/upload/v1752859852/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudWatch-and-CloudTrail-Overview/cloudwatch-components-diagram.jpg)
 
 For example, when you launch an [EC2 instance](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2), it can automatically send default metrics to CloudWatch. For enhanced monitoring, you can install an agent on your [EC2 instance](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2) (or any system like Windows, macOS, or Linux) to collect more granular data. CloudWatch can then trigger automated responses such as initiating Auto Scaling to add additional [EC2 instances](https://learn.kodekloud.com/user/courses/amazon-elastic-compute-cloud-ec2) when necessary.
 
-![The image is a flow diagram showing an example of Amazon CloudWatch integration, with Amazon EC2 feeding into CloudWatch, which then connects to Autoscaling.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859856/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudWatch-and-CloudTrail-Overview/amazon-cloudwatch-ec2-autoscaling-diagram.jpg)
+![The image is a flow diagram showing an example of Amazon CloudWatch integration, with Amazon EC2 feeding into CloudWatch, which then connects to Autoscaling.](https://kodekloud.com/kk-media/image/upload/v1752859856/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudWatch-and-CloudTrail-Overview/amazon-cloudwatch-ec2-autoscaling-diagram.jpg)
 
 > **lightbulb** CloudWatch not only collects and analyzes built-in metrics but also allows you to:
 
@@ -59,11 +59,11 @@ While CloudWatch focuses on real-time operational monitoring, CloudTrail special
 
 CloudTrail logs enable you to export data to [Amazon S3](https://learn.kodekloud.com/user/courses/amazon-simple-storage-service-amazon-s3) for long-term analysis, or analyze logs directly using CloudWatch Logs and Log Insights—ideal for compliance and forensic investigations.
 
-![The image is a diagram illustrating AWS CloudTrail's process of capturing API calls and account activity from various AWS services, storing the logs in Amazon S3 for analysis and auditing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859858/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudWatch-and-CloudTrail-Overview/aws-cloudtrail-api-calls-diagram.jpg)
+![The image is a diagram illustrating AWS CloudTrail's process of capturing API calls and account activity from various AWS services, storing the logs in Amazon S3 for analysis and auditing.](https://kodekloud.com/kk-media/image/upload/v1752859858/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudWatch-and-CloudTrail-Overview/aws-cloudtrail-api-calls-diagram.jpg)
 
 CloudTrail can be accessed via the AWS Management Console, CLI, or SDKs and requires appropriate [IAM](https://learn.kodekloud.com/user/courses/aws-iam) permissions to configure and maintain its settings.
 
-![The image illustrates the working of AWS CloudTrail, showing how account activity from SDK, CLI, Console, and IAM is processed by CloudTrail and stored in an S3 Bucket and monitored by CloudWatch.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859859/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudWatch-and-CloudTrail-Overview/aws-cloudtrail-account-activity-diagram.jpg)
+![The image illustrates the working of AWS CloudTrail, showing how account activity from SDK, CLI, Console, and IAM is processed by CloudTrail and stored in an S3 Bucket and monitored by CloudWatch.](https://kodekloud.com/kk-media/image/upload/v1752859859/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudWatch-and-CloudTrail-Overview/aws-cloudtrail-account-activity-diagram.jpg)
 
 ### Key Components of CloudTrail
 
@@ -73,7 +73,7 @@ CloudTrail is built around several core components:
 * **Trails:** Store the captured events. Trails can be set up globally, per account, or organization-wide, covering single or multiple regions.
 * **CloudTrail Lake:** A feature designed for efficient storage and analysis of large volumes of CloudTrail log data.
 
-![The image is a diagram of CloudTrail components, showing sections for Events, Trails, and Lake, each with specific features like Management Events, Account Trails, and CloudTrail Lake.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859860/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudWatch-and-CloudTrail-Overview/cloudtrail-components-diagram.jpg)
+![The image is a diagram of CloudTrail components, showing sections for Events, Trails, and Lake, each with specific features like Management Events, Account Trails, and CloudTrail Lake.](https://kodekloud.com/kk-media/image/upload/v1752859860/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-CloudWatch-and-CloudTrail-Overview/cloudtrail-components-diagram.jpg)
 
 For instance, if an operation such as making an S3 bucket public is attempted, CloudTrail logs the API call, which could then trigger a CloudWatch alarm to prompt immediate remediation or notification.
 

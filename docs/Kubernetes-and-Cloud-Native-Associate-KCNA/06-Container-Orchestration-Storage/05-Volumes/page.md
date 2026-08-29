@@ -12,9 +12,7 @@ Docker containers are inherently transient—they are designed to run temporaril
 
 Similarly, Kubernetes pods are ephemeral. When a pod processes data and is eventually deleted, any data stored within it is lost unless a volume is attached. Volumes in Kubernetes ensure that essential data remains available even after a pod’s lifecycle ends.
 
-<Frame>
-  ![The image illustrates a data volume concept with files linked to green gear icons, representing processes or containers, and a database icon, under the heading "Volume."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880637/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Volumes/frame_60.jpg)
-</Frame>
+![The image illustrates a data volume concept with files linked to green gear icons, representing processes or containers, and a database icon, under the heading "Volume."](https://kodekloud.com/kk-media/image/upload/v1752880637/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Volumes/frame_60.jpg)
 
 ## A Simple Volume Implementation in Kubernetes
 
@@ -51,9 +49,7 @@ In this configuration:
 * The `volumeMounts` field ensures that the `data-volume` is mounted at `/opt` within the container.
 * The `volumes` section defines the `data-volume` using the host’s `/data` directory.
 
-<Callout icon="lightbulb">
-  Even if the pod is deleted, the file containing the random number remains stored on the host, preserving your generated data.
-</Callout>
+> **lightbulb** Even if the pod is deleted, the file containing the random number remains stored on the host, preserving your generated data.
 
 ## Considerations for Multi-Node Clusters
 
@@ -86,12 +82,8 @@ volumes:
 
 In this updated configuration, the `awsElasticBlockStore` field is specified along with the volume ID and file system type (ext4). This setup enables Kubernetes to manage volume storage on AWS EBS, providing a scalable and reliable external storage solution.
 
-<Callout icon="triangle-alert">
-  Using hostPath in multi-node clusters can lead to data inconsistency. Always consider using external storage solutions for environments that require shared storage across nodes.
-</Callout>
+> **triangle-alert** Using hostPath in multi-node clusters can lead to data inconsistency. Always consider using external storage solutions for environments that require shared storage across nodes.
 
 This overview demonstrates how volumes function in Kubernetes and illustrates how to configure them to persist data—even when pods are transient. For more information on Kubernetes storage options, check out the [Kubernetes Documentation](https://kubernetes.io/docs/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/fbd7b99a-b2c1-4eda-9ef9-f5e0d7a20fce/lesson/db807830-198c-41aa-8b05-6460595b4244" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/fbd7b99a-b2c1-4eda-9ef9-f5e0d7a20fce/lesson/db807830-198c-41aa-8b05-6460595b4244)

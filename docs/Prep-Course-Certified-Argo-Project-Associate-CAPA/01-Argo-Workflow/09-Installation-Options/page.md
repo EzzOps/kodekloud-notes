@@ -31,9 +31,7 @@ kubectl create namespace argo
 kubectl apply -n argo -f "https://github.com/argoproj/argo-workflows/releases/download/v3.7.2/install.yaml"
 ```
 
-<Callout icon="lightbulb">
-  Choose the minimal install for fast experimentation. For production, use the full install manifest, configure a persistent artifact repository (S3/MinIO/etc.), and follow the official Argo Workflows documentation for securing RBAC and multi-tenant setups: [https://argoproj.github.io/argo-workflows/security/](https://argoproj.github.io/argo-workflows/security/)
-</Callout>
+> **lightbulb** Choose the minimal install for fast experimentation. For production, use the full install manifest, configure a persistent artifact repository (S3/MinIO/etc.), and follow the official Argo Workflows documentation for securing RBAC and multi-tenant setups: [https://argoproj.github.io/argo-workflows/security/](https://argoproj.github.io/argo-workflows/security/)
 
 ## Scopes: cluster-wide vs namespace-scoped
 
@@ -58,9 +56,7 @@ Quick comparison:
 
 Note: The exact steps to achieve a fully namespaced installation (avoiding cluster-scoped RBAC) can change between releases. Always consult the release notes and official docs for the recommended namespaced manifest or flags for your target release.
 
-<Callout icon="warning">
-  When attempting a namespace-scoped installation, consult the Argo Workflows release notes ([https://github.com/argoproj/argo-workflows/releases](https://github.com/argoproj/argo-workflows/releases)) and documentation ([https://argoproj.github.io/argo-workflows/](https://argoproj.github.io/argo-workflows/)) for release-specific instructions to avoid unintentionally granting cluster-scoped privileges.
-</Callout>
+> **warning** When attempting a namespace-scoped installation, consult the Argo Workflows release notes ([https://github.com/argoproj/argo-workflows/releases](https://github.com/argoproj/argo-workflows/releases)) and documentation ([https://argoproj.github.io/argo-workflows/](https://argoproj.github.io/argo-workflows/)) for release-specific instructions to avoid unintentionally granting cluster-scoped privileges.
 
 ## Install and use the argo CLI
 

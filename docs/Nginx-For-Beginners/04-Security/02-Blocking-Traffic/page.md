@@ -82,9 +82,7 @@ When you visit `http://example.com/admin` (or `https://example.com/admin` if TLS
 
 Important security reminder
 
-<Callout icon="warning">
-  Always use HTTPS when using HTTP Basic Authentication. Basic auth sends credentials Base64-encoded with each request; over plain HTTP they can be intercepted. Configure TLS in NGINX and use certificate best practices for any protected endpoints on untrusted networks.
-</Callout>
+> **warning** Always use HTTPS when using HTTP Basic Authentication. Basic auth sends credentials Base64-encoded with each request; over plain HTTP they can be intercepted. Configure TLS in NGINX and use certificate best practices for any protected endpoints on untrusted networks.
 
 Best practices and final notes
 
@@ -102,9 +100,7 @@ Links and references
 
 Try this workflow in a test environment first to validate configuration and behavior before applying to production.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/3082fc69-784b-4bf2-b7d0-b19c7fb94952" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/8905470e-b1ea-48ec-b0cd-711687ce7159/lesson/3082fc69-784b-4bf2-b7d0-b19c7fb94952)
 
 
 # Blocking Traffic
@@ -170,9 +166,7 @@ Use CIDR to express address scope efficiently:
 * `/32` — single IPv4 address
 * `/24` — block of 256 addresses (e.g., `203.0.113.0` through `203.0.113.255`)
 
-<Callout icon="lightbulb">
-  CIDR quick reminder: `/32` = one IPv4 address; `/24` = 256 addresses. Use CIDR notation to manage large address sets instead of listing many single addresses.
-</Callout>
+> **lightbulb** CIDR quick reminder: `/32` = one IPv4 address; `/24` = 256 addresses. Use CIDR notation to manage large address sets instead of listing many single addresses.
 
 However, adding many `allow`/`deny` rules directly to NGINX configuration files does not scale well. Attackers rotate IPs, and long lists make configuration brittle and hard to maintain.
 

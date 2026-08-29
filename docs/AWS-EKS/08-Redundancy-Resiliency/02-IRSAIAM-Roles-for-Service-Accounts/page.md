@@ -87,7 +87,7 @@ Attach an S3 read permissions policy:
 
 EKS deploys a mutating webhook that intercepts pod creation. It mounts a projected service account token and injects AWS environment variables (`AWS_ROLE_ARN`, `AWS_WEB_IDENTITY_TOKEN_FILE`, etc.) into pods that reference an annotated ServiceAccount.
 
-![The image illustrates a setup for webhook and service account annotation, showing the integration of AWS IAM, an EKS cluster, and AWS S3 using IRSA.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862889/notes-assets/images/AWS-EKS-IRSAIAM-Roles-for-Service-Accounts/webhook-service-account-aws-eks-s3.jpg)
+![The image illustrates a setup for webhook and service account annotation, showing the integration of AWS IAM, an EKS cluster, and AWS S3 using IRSA.](https://kodekloud.com/kk-media/image/upload/v1752862889/notes-assets/images/AWS-EKS-IRSAIAM-Roles-for-Service-Accounts/webhook-service-account-aws-eks-s3.jpg)
 
 ***
 
@@ -158,9 +158,9 @@ spec:
 
 > **triangle-alert** If you run more than 100 EKS clusters in one AWS account, you will hit the OIDC provider limit. Consider using fewer providers or multiple AWS accounts.
 
-![The image is a diagram illustrating scalability concerns and limitations in an AWS EKS environment, showing interactions between components like EKS Clusters, IAM, OIDC, and AWS S3. It highlights the use of IRSA, webhooks, and service accounts within the architecture.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862890/notes-assets/images/AWS-EKS-IRSAIAM-Roles-for-Service-Accounts/aws-eks-scalability-diagram-components.jpg)
+![The image is a diagram illustrating scalability concerns and limitations in an AWS EKS environment, showing interactions between components like EKS Clusters, IAM, OIDC, and AWS S3. It highlights the use of IRSA, webhooks, and service accounts within the architecture.](https://kodekloud.com/kk-media/image/upload/v1752862890/notes-assets/images/AWS-EKS-IRSAIAM-Roles-for-Service-Accounts/aws-eks-scalability-diagram-components.jpg)
 
-![The image is a diagram illustrating management and maintenance challenges with AWS EKS clusters across different regions, showing connections between AWS IAM, ARN, and STS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862891/notes-assets/images/AWS-EKS-IRSAIAM-Roles-for-Service-Accounts/aws-eks-management-challenges-diagram.jpg)
+![The image is a diagram illustrating management and maintenance challenges with AWS EKS clusters across different regions, showing connections between AWS IAM, ARN, and STS.](https://kodekloud.com/kk-media/image/upload/v1752862891/notes-assets/images/AWS-EKS-IRSAIAM-Roles-for-Service-Accounts/aws-eks-management-challenges-diagram.jpg)
 
 ***
 

@@ -34,9 +34,7 @@ spec:
       protocol: HTTP
 ```
 
-<Callout icon="lightbulb">
-  Ensure that you understand how wildcard hosts affect traffic routing in Istio before proceeding.
-</Callout>
+> **lightbulb** Ensure that you understand how wildcard hosts affect traffic routing in Istio before proceeding.
 
 ## Deploying the Bookinfo Application
 
@@ -138,9 +136,7 @@ The command should output:
 virtualservice.networking.istio.io/bookinfo configured
 ```
 
-<Callout icon="lightbulb">
-  Ensure that the hosts in your Gateway and Virtual Service configurations match exactly for proper routing.
-</Callout>
+> **lightbulb** Ensure that the hosts in your Gateway and Virtual Service configurations match exactly for proper routing.
 
 ## Testing the Configuration
 
@@ -162,9 +158,7 @@ The expected output should display HTML content similar to:
 <title>Simple Bookstore App</title>
 ```
 
-<Callout icon="triangle-alert">
-  Always include the appropriate Host header in your requests to ensure they are routed correctly through the Istio Gateway.
-</Callout>
+> **triangle-alert** Always include the appropriate Host header in your requests to ensure they are routed correctly through the Istio Gateway.
 
 ## Verifying in Kiali
 
@@ -277,6 +271,4 @@ Using these steps, you can easily switch between a specific hostname and a wildc
 
 Happy configuring and exploring the powerful routing capabilities of Istio!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/ab601819-b451-4ac6-b641-29d84d350f13" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/ab601819-b451-4ac6-b641-29d84d350f13)

@@ -8,12 +8,8 @@ This article concludes our lesson on building APIs with FastAPI. In this session
 
 We also demonstrated the deployment process and validated the application's functionality through comprehensive testing. To ensure a smooth transition from testing to deployment, we integrated a CI/CD pipeline using [GitHub Actions](https://learn.kodekloud.com/user/courses/github-actions).
 
-<Callout icon="lightbulb">
-  Remember that mastering these steps will significantly enhance your ability to build scalable and secure APIs. Keep experimenting with these techniques to further refine your skills.
-</Callout>
+> **lightbulb** Remember that mastering these steps will significantly enhance your ability to build scalable and secure APIs. Keep experimenting with these techniques to further refine your skills.
 
 We hope the knowledge gained in this lesson empowers you to develop innovative projects in the future. Thank you for choosing KodeKloud as your learning resource. We are confident that this lesson has been as enlightening and valuable for you as it was exciting for us to create.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/4979410a-af57-460b-8f71-5a177fa10d2d/lesson/6f658a8b-5a99-4536-9dea-13e33bf57d8f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/4979410a-af57-460b-8f71-5a177fa10d2d/lesson/6f658a8b-5a99-4536-9dea-13e33bf57d8f)

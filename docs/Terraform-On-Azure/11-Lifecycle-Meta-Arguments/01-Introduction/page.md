@@ -87,9 +87,7 @@ resource "aws_s3_bucket" "important" {
 }
 ```
 
-<Callout icon="warning">
-  `prevent_destroy` will block any planned destroy, including `terraform destroy` for that resource. To remove such a resource you must first remove or change the `prevent_destroy` setting and then run `terraform apply`. Do not rely on it as the only form of protection — combine with IAM and organizational safeguards.
-</Callout>
+> **warning** `prevent_destroy` will block any planned destroy, including `terraform destroy` for that resource. To remove such a resource you must first remove or change the `prevent_destroy` setting and then run `terraform apply`. Do not rely on it as the only form of protection — combine with IAM and organizational safeguards.
 
 ## ignore\_changes
 
@@ -121,9 +119,7 @@ Important notes:
 * Granularity: Avoid ignoring entire maps unless necessary. Overusing `ignore_changes` can hide drift and lead to unmanaged differences between configuration and actual resources. If you only need to ignore specific map keys (e.g., one tag), prefer provider tag management features or targeted attribute paths if supported.
 * Workflow: When a resource has `ignore_changes`, Terraform will still read the real state but will suppress diffs for the specified attributes, so no update will be planned for those attributes even if they differ.
 
-<Callout icon="lightbulb">
-  Best practice: Use lifecycle meta-arguments sparingly and document their intent. They are powerful tools to align Terraform behavior with operational realities but can also mask drift or create surprising behavior if used without care.
-</Callout>
+> **lightbulb** Best practice: Use lifecycle meta-arguments sparingly and document their intent. They are powerful tools to align Terraform behavior with operational realities but can also mask drift or create surprising behavior if used without care.
 
 ## Combining lifecycle arguments
 
@@ -174,6 +170,4 @@ Use these options carefully, test in lower environments, and document why each l
 * Terraform documentation: [https://www.terraform.io/docs/](https://www.terraform.io/docs/)
 * Best practices and provider docs (example — AWS): [https://registry.terraform.io/providers/hashicorp/aws/latest/docs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/82cd6352-f026-4f6f-b739-634e56558de4/lesson/7c6f8401-272d-4b89-8fd4-abab580d7cf4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/82cd6352-f026-4f6f-b739-634e56558de4/lesson/7c6f8401-272d-4b89-8fd4-abab580d7cf4)

@@ -2,9 +2,7 @@
 terragrunt force-unlock LOCK_ID --terragrunt-non-interactive
 ```
 
-<Callout icon="triangle-alert">
-  Forcing an unlock can lead to concurrent modifications if another process is still running. Always verify no other operations are active before using `force-unlock`.
-</Callout>
+> **triangle-alert** Forcing an unlock can lead to concurrent modifications if another process is still running. Always verify no other operations are active before using `force-unlock`.
 
 ## Benefits of DynamoDB State Locking
 
@@ -24,9 +22,7 @@ By combining Terraform, Terragrunt, Amazon S3, and DynamoDB locks, teams can foc
 * [AWS DynamoDB Developer Guide](https://docs.aws.amazon.com/amazondb/)
 * [Managing Locks with S3 and DynamoDB](https://www.terraform.io/docs/cloud/run/lock.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/2eef056a-8494-4e5d-acf0-25b04fad55c4/lesson/216870e3-4bb2-4c54-97bf-c65306283363" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/2eef056a-8494-4e5d-acf0-25b04fad55c4/lesson/216870e3-4bb2-4c54-97bf-c65306283363)
 
 
 # Demo of Lab 4
@@ -37,15 +33,13 @@ This article guides configuring Terragrunt to deploy and manage an AWS VPC modul
 
 Welcome to Lab 4. In this lesson, you’ll configure Terragrunt to deploy and manage an AWS VPC module. You have access to an AWS account—follow the steps below to set up credentials, initialize modules, enforce safeguards, and customize Terragrunt settings for a robust infrastructure workflow.
 
-<Callout icon="lightbulb">
-  Keep your AWS credentials secure. You can retrieve them with:
+> **lightbulb** Keep your AWS credentials secure. You can retrieve them with:
 
   ```bash theme={null}
   show creds
   ```
 
   Or log in via the provided link using your username and password. Consider opening a second terminal tab to streamline copy-and-paste.
-</Callout>
 
 ***
 
@@ -137,9 +131,7 @@ terragrunt destroy
 
 Terragrunt will refuse to destroy due to the `prevent_destroy` setting.
 
-<Callout icon="triangle-alert">
-  If you need to remove the resource later, you must first remove or comment out the `prevent_destroy` block.
-</Callout>
+> **triangle-alert** If you need to remove the resource later, you must first remove or comment out the `prevent_destroy` block.
 
 ***
 
@@ -252,8 +244,6 @@ Terragrunt will retry on matching errors automatically.
 
 That completes **Lab 4**. Thank you for following along!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/85edd206-4f62-45a0-9a1e-b392827e2847" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/85edd206-4f62-45a0-9a1e-b392827e2847)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/6e9c7bbd-209c-4ab0-a0dc-410eb3c2af6b" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/6e9c7bbd-209c-4ab0-a0dc-410eb3c2af6b)

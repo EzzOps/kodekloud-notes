@@ -6,9 +6,7 @@ This article explores Python 3 internals, detailing code processing, implementat
 
 In this article, we dive deep into the internals of Python 3, revealing how your code is processed behind the scenes. A solid understanding of these inner workings can help you optimize your programs and make informed decisions about performance enhancements.
 
-<Callout icon="lightbulb">
-  Python is an interpreted language, which means that the Python interpreter reads and processes your code line by line. It converts human-readable source code into machine-friendly instructions that your computer can execute.
-</Callout>
+> **lightbulb** Python is an interpreted language, which means that the Python interpreter reads and processes your code line by line. It converts human-readable source code into machine-friendly instructions that your computer can execute.
 
 ## How Python Processes Code
 
@@ -25,9 +23,7 @@ There are several implementations of Python, each tailored for specific use case
 | Jython         | Java              | **Java Integration:** Designed for environments with extensive Java use. Note that Jython currently supports only Python 2, which may limit its applicability for modern Python 3 projects. |
 | RPython        | Restricted Python | **Executable Creation:** A subset of Python used primarily for developing efficient executables without relying on an interpreter.                                                          |
 
-<Callout icon="triangle-alert">
-  While Cython can significantly accelerate your code, bear in mind that the performance may still fall short of programs written entirely in C.
-</Callout>
+> **triangle-alert** While Cython can significantly accelerate your code, bear in mind that the performance may still fall short of programs written entirely in C.
 
 ## Detailed Look at Implementations
 
@@ -58,6 +54,4 @@ Each Python implementation has its strengths and is designed to cater to differe
 
 Understanding these internals equips you with the knowledge to select the right tool for your project and optimize your code for better performance. Now, it's time to gain some hands-on experience with these concepts.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/c8db2128-7092-4892-8ed9-8d600818f2a8/lesson/d53e044c-05eb-4eb8-a759-27cb3c36482c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/c8db2128-7092-4892-8ed9-8d600818f2a8/lesson/d53e044c-05eb-4eb8-a759-27cb3c36482c)

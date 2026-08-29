@@ -151,11 +151,11 @@ While the standard library works well for basic routing, slicing URL strings is 
 
 Gorilla Mux is one of the most popular routing packages in the Go ecosystem. It supports method-based routing and lets you define route variables using patterns like `/movies/{id}`, where `{id}` is dynamically extracted from the URL.
 
-![The image is a slide describing the "gorilla/mux router," which is a package that implements a request router and dispatcher for handling HTTP requests. It explains that "mux" stands for "HTTP request multiplexer" and compares it to the standard http.ServeMux.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868682/notes-assets/images/Advanced-Golang-Mux-Router/gorilla-mux-router-description.jpg)
+![The image is a slide describing the "gorilla/mux router," which is a package that implements a request router and dispatcher for handling HTTP requests. It explains that "mux" stands for "HTTP request multiplexer" and compares it to the standard http.ServeMux.](https://kodekloud.com/kk-media/image/upload/v1752868682/notes-assets/images/Advanced-Golang-Mux-Router/gorilla-mux-router-description.jpg)
 
 It also enables URL path variables:
 
-![The image explains that URL paths can support variables, using "/movies/id" as an example, where "id" is a dynamic variable.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868683/notes-assets/images/Advanced-Golang-Mux-Router/url-paths-variables-movies-id.jpg)
+![The image explains that URL paths can support variables, using "/movies/id" as an example, where "id" is a dynamic variable.](https://kodekloud.com/kk-media/image/upload/v1752868683/notes-assets/images/Advanced-Golang-Mux-Router/url-paths-variables-movies-id.jpg)
 
 > **lightbulb** To install Gorilla Mux, run the command:
 

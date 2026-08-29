@@ -32,9 +32,7 @@ Example:
 vault token revoke s.12VNpg4OA9tTdCd4V60DuDRK
 ```
 
-<Callout icon="triangle-alert">
-  Revoking a token is irreversible. Any sessions or processes using that token will lose access immediately.
-</Callout>
+> **triangle-alert** Revoking a token is irreversible. Any sessions or processes using that token will lose access immediately.
 
 ***
 
@@ -68,9 +66,7 @@ This helps you audit and verify permissions for service accounts or automation t
 * [Authentication Methods](https://www.vaultproject.io/docs/auth)
 * [Vault Token Authentication](https://www.vaultproject.io/docs/concepts/tokens)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/b2c77d39-3dea-4fce-986c-393f8df33b0a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/ffb53470-4115-4c47-aade-cb572b6b574f/lesson/b2c77d39-3dea-4fce-986c-393f8df33b0a)
 
 
 # Managing Tokens using the UI
@@ -96,9 +92,7 @@ Vault’s **Token** auth method is the simplest form of authentication. It’s m
 * You have the initial root token after deploying a new Vault cluster.
 * You generated a token via the Vault CLI or another auth method.
 
-<Callout icon="triangle-alert">
-  Treat Vault tokens like passwords. Never share them publicly or commit them to version control. Always store tokens securely (e.g., in a secrets manager).
-</Callout>
+> **triangle-alert** Treat Vault tokens like passwords. Never share them publicly or commit them to version control. Always store tokens securely (e.g., in a secrets manager).
 
 ## Logging In with a Token
 
@@ -121,9 +115,7 @@ After signing in (via Token, LDAP, Okta, OIDC, etc.), you can quickly retrieve y
 
 This copies your active token to the clipboard.
 
-<Callout icon="lightbulb">
-  Copying the token from the UI is ideal for one-off CLI commands or testing API endpoints without re-authenticating.
-</Callout>
+> **lightbulb** Copying the token from the UI is ideal for one-off CLI commands or testing API endpoints without re-authenticating.
 
 ## Examples: CLI & API Usage
 

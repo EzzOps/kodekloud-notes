@@ -18,9 +18,7 @@ Argo Rollouts requires the controller to run with appropriate RBAC permissions. 
 kubectl create clusterrolebinding YOURNAME-cluster-admin-binding --clusterrole=cluster-admin --user=`<YOUR_EMAIL>`
 ```
 
-<Callout icon="warning">
-  Granting `cluster-admin` is powerful. Only create a ClusterRoleBinding in test environments (minikube, kind, or disposable clusters) or when you understand the security implications.
-</Callout>
+> **warning** Granting `cluster-admin` is powerful. Only create a ClusterRoleBinding in test environments (minikube, kind, or disposable clusters) or when you understand the security implications.
 
 ## 2) Install Argo Rollouts
 
@@ -142,6 +140,4 @@ Useful links and references
 
 That's it — Argo Rollouts is installed and ready. The controller is running, and the CLI + dashboard are available so you can begin testing blue-green and canary deployment strategies.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/444c5850-0e7e-461a-bf4d-861dfa3ed065" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/444c5850-0e7e-461a-bf4d-861dfa3ed065)

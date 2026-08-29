@@ -170,9 +170,7 @@ func azure functionapp publish $functionAppName
 
 Once deployed, you can review the created resources in the [Azure portal](https://portal.azure.com).
 
-<Frame>
-  ![The image illustrates the concept of Managed Identities, showing various source icons accessing a target that supports Azure AD authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881617/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-managed-identities/managed-identities-azure-ad-authentication.jpg)
-</Frame>
+![The image illustrates the concept of Managed Identities, showing various source icons accessing a target that supports Azure AD authentication.](https://kodekloud.com/kk-media/image/upload/v1752881617/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-managed-identities/managed-identities-azure-ad-authentication.jpg)
 
 ## Overview of Managed Identities
 
@@ -192,9 +190,7 @@ There are two types of managed identities:
 | **Sharing**   | Not shareable                                                             | Can be mapped to multiple resources                                   |
 | **Use Cases** | Ideal for individual workloads (e.g., a Function App accessing Key Vault) | Best for scenarios where multiple resources require a common identity |
 
-<Frame>
-  ![The image is a comparison table of system-assigned and user-assigned managed identities in Azure, highlighting differences in alignment, lifecycle, sharing, and use cases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881618/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-managed-identities/azure-managed-identities-comparison-table.jpg)
-</Frame>
+![The image is a comparison table of system-assigned and user-assigned managed identities in Azure, highlighting differences in alignment, lifecycle, sharing, and use cases.](https://kodekloud.com/kk-media/image/upload/v1752881618/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-managed-identities/azure-managed-identities-comparison-table.jpg)
 
 ## Configuring Managed Identity in the Azure Portal
 
@@ -204,21 +200,15 @@ To enable a system-assigned managed identity for a Function App in the Azure por
 2. Under the Identity section, toggle the system-assigned managed identity to “On.”
 3. Save the settings. The identity is now registered with Azure AD.
 
-<Frame>
-  ![The image shows the configuration settings page of a Microsoft Azure Function App, displaying application settings with options to view, edit, or delete them. The interface includes a sidebar with various settings and deployment options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881620/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-managed-identities/azure-function-app-settings-page.jpg)
-</Frame>
+![The image shows the configuration settings page of a Microsoft Azure Function App, displaying application settings with options to view, edit, or delete them. The interface includes a sidebar with various settings and deployment options.](https://kodekloud.com/kk-media/image/upload/v1752881620/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-managed-identities/azure-function-app-settings-page.jpg)
 
 For shared identity requirements across multiple functions, consider creating and assigning a user-assigned managed identity manually.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen where a user is prompted to enable a system-assigned managed identity for a function app. The status toggle is set to "On."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881620/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-managed-identities/azure-portal-managed-identity-toggle.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen where a user is prompted to enable a system-assigned managed identity for a function app. The status toggle is set to "On."](https://kodekloud.com/kk-media/image/upload/v1752881620/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-managed-identities/azure-portal-managed-identity-toggle.jpg)
 
 After enabling the managed identity, verify its status in the Identity section of the Function App:
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface, specifically the Identity section for a function app, with options for managing system-assigned identities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881621/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-managed-identities/azure-portal-identity-function-app.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface, specifically the Identity section for a function app, with options for managing system-assigned identities.](https://kodekloud.com/kk-media/image/upload/v1752881621/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-managed-identities/azure-portal-identity-function-app.jpg)
 
 ## Testing the Functions
 
@@ -230,9 +220,7 @@ After deployment, navigate to your Function App in the Azure portal to test the 
 * **Managed Identity Function:**\
   This function leverages a managed identity to authenticate with Azure AD, retrieve the connection string from Key Vault, and connect securely to the SQL database. If you encounter an error, it may be due to missing permissions for the Function App’s managed identity in Key Vault.
 
-<Callout icon="triangle-alert">
-  Ensure you configure the Key Vault access policy to grant the Function App's managed identity permission to read secrets. Without this permission, the managed identity function will fail.
-</Callout>
+> **triangle-alert** Ensure you configure the Key Vault access policy to grant the Function App's managed identity permission to read secrets. Without this permission, the managed identity function will fail.
 
 To add the required access policy:
 
@@ -240,9 +228,7 @@ To add the required access policy:
 2. Add an access policy that grants the Function App's managed identity permission to read secrets.
 3. Save your changes.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying details of a Key Vault named "akv982393682," including its essentials, settings, and monitoring options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881623/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-managed-identities/azure-portal-key-vault-akv982393682.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying details of a Key Vault named "akv982393682," including its essentials, settings, and monitoring options.](https://kodekloud.com/kk-media/image/upload/v1752881623/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-managed-identities/azure-portal-key-vault-akv982393682.jpg)
 
 Once the access policy is properly configured, the managed identity function will retrieve the connection string from the Key Vault and display the SQL table names. A typical JSON response might look like:
 
@@ -278,9 +264,7 @@ This approach is applicable not only to PowerShell but also to other languages l
 
 Now, let’s move on to securing web applications.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c93091f0-246d-47cc-a399-0e33ad87ee7f/lesson/102c5454-b260-4ea5-bbdf-58b261e435f3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c93091f0-246d-47cc-a399-0e33ad87ee7f/lesson/102c5454-b260-4ea5-bbdf-58b261e435f3)
 
 
 # Explore Azure AD application scenarios
@@ -421,13 +405,9 @@ Across all these application types, the common integration steps include:
 5. API Permissions and Access Control
 6. Token Caching/Storage
 
-<Callout icon="lightbulb">
-  These standardized steps ensure a consistent authentication and authorization process across SPAs, web apps, web APIs, background processes, mobile apps, and desktop applications.
-</Callout>
+> **lightbulb** These standardized steps ensure a consistent authentication and authorization process across SPAs, web apps, web APIs, background processes, mobile apps, and desktop applications.
 
-<Frame>
-  ![The image is a flowchart illustrating different Azure AD application scenarios, detailing steps for building various types of apps such as Single-Page Apps, Web Apps, Web APIs, Background Processes, Mobile Apps, and Desktop Console Apps. Each scenario includes steps like app registration, configuration, and token management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881624/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Explore-Azure-AD-application-scenarios/azure-ad-application-flowchart.jpg)
-</Frame>
+![The image is a flowchart illustrating different Azure AD application scenarios, detailing steps for building various types of apps such as Single-Page Apps, Web Apps, Web APIs, Background Processes, Mobile Apps, and Desktop Console Apps. Each scenario includes steps like app registration, configuration, and token management.](https://kodekloud.com/kk-media/image/upload/v1752881624/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Explore-Azure-AD-application-scenarios/azure-ad-application-flowchart.jpg)
 
 The diagram above shows the authentication workflow and outlines the multi-stage process required before deploying an application to production. Each module—from initial registration, through setting up security policies, testing, and finally, production deployment—follows a structured approach, with slight adaptations for different application types.
 
@@ -437,12 +417,8 @@ The diagram above shows the authentication workflow and outlines the multi-stage
 
 In every scenario, application registration is the first and most critical step. Up next, we will explore how to register an application with Azure AD (now Microsoft Entra ID). This essential process lays the foundation for configuring identity services, token management, and permissions.
 
-<Callout icon="lightbulb">
-  By following the steps outlined in this lesson, you'll build a strong foundation in integrating Azure AD across diverse application architectures, ensuring secure authentication and effective authorization.
-</Callout>
+> **lightbulb** By following the steps outlined in this lesson, you'll build a strong foundation in integrating Azure AD across diverse application architectures, ensuring secure authentication and effective authorization.
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c93091f0-246d-47cc-a399-0e33ad87ee7f/lesson/b7952160-b0e1-4db5-9fb5-0d7f8e25543b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c93091f0-246d-47cc-a399-0e33ad87ee7f/lesson/b7952160-b0e1-4db5-9fb5-0d7f8e25543b)

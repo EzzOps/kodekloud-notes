@@ -8,9 +8,7 @@ Vault’s Identity Secrets Engine (enabled by default) provides a unified way to
 
 ## 1. Entities and Aliases
 
-<Callout icon="lightbulb">
-  An **entity** represents a user or machine in Vault with a unique ID, metadata, and attached policies. An **alias** links that entity to a specific auth method (e.g., auth mount accessor + username).
-</Callout>
+> **lightbulb** An **entity** represents a user or machine in Vault with a unique ID, metadata, and attached policies. An **alias** links that entity to a specific auth method (e.g., auth mount accessor + username).
 
 * **Entity**
   * Unique identifier (ID)
@@ -45,17 +43,13 @@ If Julia also logs in via LDAP (`jsmith@example.com`) and GitHub (`JSmith22`), V
 | LDAP        | ent-ldap-5678     | finance           |
 | GitHub      | ent-github-9012   | accounts\_payable |
 
-<Callout icon="triangle-alert">
-  Each login issues a token scoped only to that specific entity’s policies. To switch permissions, users must log out and authenticate with a different method.
-</Callout>
+> **triangle-alert** Each login issues a token scoped only to that specific entity’s policies. To switch permissions, users must log out and authenticate with a different method.
 
 ## 4. Consolidating into a Single Entity
 
 You can streamline user access by creating one master entity (e.g., “Julia Smith”) and assigning all auth-method aliases to it. Attach a shared policy (e.g., `management`) at the entity level so any login inherits both alias and entity policies.
 
-<Frame>
-  ![The image illustrates the concept of Vault Entities, showing how a user named Julie Smith is associated with multiple policies through different aliases, and how authentication with LDAP credentials results in a Vault token that inherits capabilities from these policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878038/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Entities/vault-entities-julie-smith-policies.jpg)
-</Frame>
+![The image illustrates the concept of Vault Entities, showing how a user named Julie Smith is associated with multiple policies through different aliases, and how authentication with LDAP credentials results in a Vault token that inherits capabilities from these policies.](https://kodekloud.com/kk-media/image/upload/v1752878038/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Entities/vault-entities-julie-smith-policies.jpg)
 
 ## 5. Login Workflow with a Consolidated Entity
 

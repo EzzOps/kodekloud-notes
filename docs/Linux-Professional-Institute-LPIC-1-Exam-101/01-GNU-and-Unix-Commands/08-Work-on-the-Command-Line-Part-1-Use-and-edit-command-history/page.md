@@ -44,9 +44,7 @@ Output:
 9  sudo systemctl reboot
 ```
 
-<Callout icon="lightbulb">
-  For comprehensive details on `grep`, see the [GNU grep Manual](https://www.gnu.org/software/grep/manual/).
-</Callout>
+> **lightbulb** For comprehensive details on `grep`, see the [GNU grep Manual](https://www.gnu.org/software/grep/manual/).
 
 ## 3. Locate the .bash\_history File
 
@@ -74,9 +72,7 @@ You can open `~/.bash_history` in any text editor or display it with:
 cat ~/.bash_history
 ```
 
-<Callout icon="triangle-alert">
-  Commands executed in your current session only appear in `~/.bash_history` **after** you log out.
-</Callout>
+> **triangle-alert** Commands executed in your current session only appear in `~/.bash_history` **after** you log out.
 
 ## 4. Navigate History Interactively
 
@@ -98,6 +94,4 @@ When you find the desired entry, press Enter to re-execute or edit it inline.
 * [Bash Command History Section](https://www.gnu.org/software/bash/manual/html_node/Bash-History-Builtins.html)
 * [Bash Prompt Customization](https://linuxhint.com/bash_prompt_customization/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/6791789b-52c3-4204-91c3-35419c2c3c4f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/6791789b-52c3-4204-91c3-35419c2c3c4f)

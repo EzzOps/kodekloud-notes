@@ -15,7 +15,7 @@ Kinesis Data Streams simplifies the real-time collection, processing, and analys
 * **Data Producers:**\
   Producers send data records to a stream using the PutRecords API. These producers can be applications that leverage the AWS SDK, the Kinesis Producer Library (KPL), IoT devices, mobile devices, or even DynamoDB Streams.
 
-![The image provides tips for using Kinesis Data Stream, highlighting its real-time data processing capabilities and the use of producers like AWS SDK/KPL and IoT devices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858607/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/kinesis-data-stream-tips-real-time.jpg)
+![The image provides tips for using Kinesis Data Stream, highlighting its real-time data processing capabilities and the use of producers like AWS SDK/KPL and IoT devices.](https://kodekloud.com/kk-media/image/upload/v1752858607/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/kinesis-data-stream-tips-real-time.jpg)
 
 * **Record Limitations and Throughput:**\
   Each record in the stream must be smaller than 1 MB. Producers can write up to 1 MB per second or 1,000 messages per shard.
@@ -32,7 +32,7 @@ Kinesis Data Streams simplifies the real-time collection, processing, and analys
 
 > **triangle-alert** Hot partitions can significantly impact your application's performance. Ensure you design your partition keys carefully and monitor shard performance to mitigate throughput issues.
 
-![The image provides tips for managing Kinesis Data Streams, including handling partition keys, addressing hot partitions, and implementing shard splitting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858608/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/kinesis-data-streams-management-tips.jpg)
+![The image provides tips for managing Kinesis Data Streams, including handling partition keys, addressing hot partitions, and implementing shard splitting.](https://kodekloud.com/kk-media/image/upload/v1752858608/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/kinesis-data-streams-management-tips.jpg)
 
 * **Data Consumption Modes:**\
   There are two primary ways to read data from a Kinesis stream:
@@ -45,7 +45,7 @@ Kinesis Data Streams simplifies the real-time collection, processing, and analys
      * Uses the SubscribeToShard API (push model).
      * Allocates an exclusive 2 MB per second per shard for each consumer, allowing higher throughput with multiple consumers.
 
-![The image provides tips for acing an exam on Kinesis Data Stream, including merging underused shards to reduce costs and explaining data reading modes for consumers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858610/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/kinesis-data-stream-exam-tips.jpg)
+![The image provides tips for acing an exam on Kinesis Data Stream, including merging underused shards to reduce costs and explaining data reading modes for consumers.](https://kodekloud.com/kk-media/image/upload/v1752858610/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/kinesis-data-stream-exam-tips.jpg)
 
 * **Kinesis Client Library (KCL):**\
   The KCL facilitates the setup of consumers across multiple nodes (EC2 instances, on-premises servers, or Elastic Beanstalk) to process data from Kinesis streams efficiently. Note that only one KCL instance can run per shard. For instance, with five shards, you can have a maximum of five KCL instances. The library also provides important features like checkpointing and workload distribution for improved reliability.
@@ -61,7 +61,7 @@ Kinesis Firehose is a fully managed service that reliably delivers streaming dat
   * Allows data transformation via AWS Lambda, enabling modifications to your data before storing it in destinations like S3.
   * Provides near real-time delivery with automated backup of failed data transfers to an S3 bucket.
 
-![The image provides tips for acing an exam on Kinesis Firehose, highlighting its ability to deliver real-time streaming data to destinations like S3, Redshift, and OpenSearch, and its support for data transformation using AWS Lambda.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858611/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/kinesis-firehose-exam-tips.jpg)
+![The image provides tips for acing an exam on Kinesis Firehose, highlighting its ability to deliver real-time streaming data to destinations like S3, Redshift, and OpenSearch, and its support for data transformation using AWS Lambda.](https://kodekloud.com/kk-media/image/upload/v1752858611/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/kinesis-firehose-exam-tips.jpg)
 
 ***
 
@@ -72,7 +72,7 @@ Amazon Kinesis Data Analytics empowers you to process and analyze streaming data
 * **Integration:**
   * Streaming data sources and sinks must be either Kinesis Data Streams or Kinesis Firehose, ensuring a seamless integration between data ingestion and analytics.
 
-![The image is a slide titled "Tips to Ace Your Exam – Kinesis Data Analytics," mentioning that Amazon Kinesis Data Analytics allows processing and analyzing streaming data using standard SQL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858612/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/tips-to-ace-exam-kinesis-data-analytics.jpg)
+![The image is a slide titled "Tips to Ace Your Exam – Kinesis Data Analytics," mentioning that Amazon Kinesis Data Analytics allows processing and analyzing streaming data using standard SQL.](https://kodekloud.com/kk-media/image/upload/v1752858612/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/tips-to-ace-exam-kinesis-data-analytics.jpg)
 
 ***
 
@@ -83,7 +83,7 @@ Amazon Athena enables interactive querying of data stored in S3 using SQL.
 * **Supported Formats:**\
   Athena supports multiple data formats including Parquet, JSON, CSV, ORC, and Avro. Once the data is queried, you can leverage Amazon QuickSight to create compelling visualizations.
 
-![The image provides tips for using Athena, highlighting its ability to query data in S3 using SQL and listing supported formats: Parquet, JSON, CSV, ORC, and Avro.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858613/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/athena-s3-query-tips-formats.jpg)
+![The image provides tips for using Athena, highlighting its ability to query data in S3 using SQL and listing supported formats: Parquet, JSON, CSV, ORC, and Avro.](https://kodekloud.com/kk-media/image/upload/v1752858613/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/athena-s3-query-tips-formats.jpg)
 
 ***
 
@@ -95,7 +95,7 @@ OpenSearch is a fully managed service that simplifies the deployment, scaling, a
   * Supports both managed and serverless cluster modes.
   * Ideal for scenarios requiring log analysis or robust search capabilities since queries can be executed across all fields and attributes.
 
-![The image provides tips for acing an exam on OpenSearch, highlighting its fully managed service, support for managed and serverless clusters, and suitability for logs and search implementation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858614/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/opensearch-exam-tips-managed-service.jpg)
+![The image provides tips for acing an exam on OpenSearch, highlighting its fully managed service, support for managed and serverless clusters, and suitability for logs and search implementation.](https://kodekloud.com/kk-media/image/upload/v1752858614/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/opensearch-exam-tips-managed-service.jpg)
 
 ***
 

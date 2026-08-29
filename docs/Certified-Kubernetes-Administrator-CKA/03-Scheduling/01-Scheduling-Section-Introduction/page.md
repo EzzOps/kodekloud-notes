@@ -27,7 +27,7 @@ spec:
 
 Consider a scenario where there are two workloads waiting to be scheduled: a critical application with a priority of 7 and a job with a priority of 5. With available resources, the higher priority critical application is scheduled first. If resources remain, the lower priority job is also scheduled.
 
-![The image illustrates the concept of pod priority, showing a comparison between "Jobs" with priority 5 and "Critical Apps" with priority 7, distributed across three servers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869898/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Priority-Classes/pod-priority-comparison-jobs-apps.jpg)
+![The image illustrates the concept of pod priority, showing a comparison between "Jobs" with priority 5 and "Critical Apps" with priority 7, distributed across three servers.](https://kodekloud.com/kk-media/image/upload/v1752869898/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Priority-Classes/pod-priority-comparison-jobs-apps.jpg)
 
 Now, suppose a new job with a priority of 6 is submitted when no extra resources are available. Whether this new Pod preempts (or evicts) an existing lower priority Pod depends on the preemption policy defined in its priority class. By default, Kubernetes applies the `PreemptLowerPriority` policy, meaning the scheduler will evict lower priority Pods to free up resources for higher priority ones.
 
@@ -89,6 +89,6 @@ In this lesson, you will learn about the following topics:
 
 Let's get started with the first topic—Manual Scheduling—and progressively build your expertise in Kubernetes scheduling.
 
-![The image lists course objectives, including core concepts, scheduling, logging, application lifecycle management, cluster maintenance, security, storage, networking, installation, and troubleshooting.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869904/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Scheduling-Section-Introduction/frame_50.jpg)
+![The image lists course objectives, including core concepts, scheduling, logging, application lifecycle management, cluster maintenance, security, storage, networking, installation, and troubleshooting.](https://kodekloud.com/kk-media/image/upload/v1752869904/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Scheduling-Section-Introduction/frame_50.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/cka-certification-course-certified-kubernetes-administrator/module/cd124bdf-9911-4cc1-8177-f2d8b6dfd2a0/lesson/5e3dfca7-9f2f-41ea-bc35-0be1e71da107)

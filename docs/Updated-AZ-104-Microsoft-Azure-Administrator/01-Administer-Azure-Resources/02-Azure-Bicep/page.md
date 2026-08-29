@@ -12,9 +12,7 @@ Azure Bicep files reduce the complexity and clutter inherent in ARM templates by
 
 Azure Bicep enables you to build smaller, modular files while automatically detecting dependencies between resources—minimizing deployment errors that arise when resource relationships are not clearly defined. Additionally, the Visual Studio Code extension offers auto-completion and code snippets, ensuring a smoother authoring experience.
 
-<Frame>
-  ![The image lists benefits of using Azure Bicep files, including simpler syntax, smaller module files, auto-detecting dependencies, and a VS Code extension for seamless authoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884367/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Bicep/azure-bicep-benefits-list.jpg)
-</Frame>
+![The image lists benefits of using Azure Bicep files, including simpler syntax, smaller module files, auto-detecting dependencies, and a VS Code extension for seamless authoring.](https://kodekloud.com/kk-media/image/upload/v1752884367/notes-assets/images/Updated-AZ-104-Microsoft-Azure-Administrator-Azure-Bicep/azure-bicep-benefits-list.jpg)
 
 Whether you are new to Azure or an experienced cloud professional, leveraging Azure Bicep can transform the way you manage and deploy your cloud infrastructure.
 
@@ -152,13 +150,11 @@ In this Bicep snippet, parameters enforce allowed values and string length const
 
 After saving your Bicep file (for example, as storage.bicep), you can deploy it using your preferred method. Remember to install the Bicep CLI manually if you are deploying through PowerShell.
 
-<Callout icon="lightbulb">
-  To deploy using PowerShell, even though ARM deployments require a template file, the process is similar:
+> **lightbulb** To deploy using PowerShell, even though ARM deployments require a template file, the process is similar:
 
   ```powershell theme={null}
   PS C:\Users\RithinSkaria\Downloads\arm> New-AzResourceGroupDeployment -Name 'demo-deployment' -ResourceGroupName arm-demo -TemplateFile .\template.json
   ```
-</Callout>
 
 For Azure CLI, deploying a Bicep template is even more straightforward as Azure CLI natively supports the Bicep language. Begin by verifying your active account and subscription:
 
@@ -183,8 +179,6 @@ Upon successful deployment, refresh the storage accounts list in the Azure porta
 
 This lesson demonstrates how Azure Bicep simplifies resource deployment with its concise syntax, modular design, and integrated tooling in Visual Studio Code. By converting complex ARM JSON templates into more manageable Bicep code, you can streamline and enhance your cloud resource management. Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/7f421132-242f-4d10-85e5-6673b7307d12/lesson/9dbf305e-278b-4812-b7b3-32e7bdb9c1a3" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/7f421132-242f-4d10-85e5-6673b7307d12/lesson/9dbf305e-278b-4812-b7b3-32e7bdb9c1a3)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/7f421132-242f-4d10-85e5-6673b7307d12/lesson/ee6f8050-c244-4b4e-b815-754326e66cfc" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/7f421132-242f-4d10-85e5-6673b7307d12/lesson/ee6f8050-c244-4b4e-b815-754326e66cfc)

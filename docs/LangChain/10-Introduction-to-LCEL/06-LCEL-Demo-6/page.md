@@ -79,9 +79,7 @@ A common pattern is to use specialized models per task:
 
 To swap models, replace `ChatOpenAI()` with another LLM runnable at the stage you want to change. The LCEL wiring (prompts → parser → passthrough) remains identical.
 
-<Callout icon="lightbulb">
-  Using different LLMs per mini-chain is a powerful approach: you can optimize cost and quality by selecting the best model for each subtask (e.g., catchy titles, structured outlines, long-form writing, and concise summarization).
-</Callout>
+> **lightbulb** Using different LLMs per mini-chain is a powerful approach: you can optimize cost and quality by selecting the best model for each subtask (e.g., catchy titles, structured outlines, long-form writing, and concise summarization).
 
 ## What we achieved
 
@@ -95,9 +93,7 @@ To swap models, replace `ChatOpenAI()` with another LLM runnable at the stage yo
 
 In a future lesson we will explore memory, retrieval, and building more complex chains and integrations—stay tuned.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/1f3becbf-1cff-4ffc-9082-6e462c0617b6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/1f3becbf-1cff-4ffc-9082-6e462c0617b6)
 
 
 # LCEL Demo 6
@@ -163,9 +159,7 @@ Observed behavior:
 
 Note: Python's `str.title()` transforms `"AI"` into `"Ai"`. That behavior is expected for title-casing with `str.title()`.
 
-<Callout icon="lightbulb">
-  When appending a Python function to an LCEL chain, pass the function reference (e.g., `RunnableLambda(to_titlecase)`), not a function call. LangChain invokes it at runtime as part of the pipeline.
-</Callout>
+> **lightbulb** When appending a Python function to an LCEL chain, pass the function reference (e.g., `RunnableLambda(to_titlecase)`), not a function call. LangChain invokes it at runtime as part of the pipeline.
 
 ## Adding a second runnable to inspect output length
 

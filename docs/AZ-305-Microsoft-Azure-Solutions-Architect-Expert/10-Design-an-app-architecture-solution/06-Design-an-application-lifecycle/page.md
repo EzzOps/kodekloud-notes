@@ -24,7 +24,7 @@ Provisioning a new test environment can be time-consuming and error-prone when d
 
 Most IaC tools include state management features that help maintain the desired configuration of your environments. If any changes occur over time, reapplying the template ensures that your infrastructure returns to its defined state.
 
-![The image is an infographic from KodeKloud about Infrastructure-as-Code, highlighting benefits such as repeatable results, testing and development, and avoiding environmental drift.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867183/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-application-lifecycle/infrastructure-as-code-infographic.jpg)
+![The image is an infographic from KodeKloud about Infrastructure-as-Code, highlighting benefits such as repeatable results, testing and development, and avoiding environmental drift.](https://kodekloud.com/kk-media/image/upload/v1752867183/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-application-lifecycle/infrastructure-as-code-infographic.jpg)
 
 ## Available Infrastructure as Code Solutions
 
@@ -56,7 +56,7 @@ Beyond infrastructure provisioning, Azure Automation extends capabilities to:
 
 Terraform is a cloud-agnostic IaC tool that supports providers like AWS, Azure, GCP, and on-premises environments. Using HashiCorp Configuration Language (HCL), Terraform is ideal for multi-cloud deployments, thanks to its flexibility and robust community support.
 
-![The image is a KodeKloud graphic about Infrastructure-as-Code, featuring tools like ARM Templates, Bicep templates, Azure Automation, and Terraform.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867184/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-application-lifecycle/infrastructure-as-code-tools-graphic.jpg)
+![The image is a KodeKloud graphic about Infrastructure-as-Code, featuring tools like ARM Templates, Bicep templates, Azure Automation, and Terraform.](https://kodekloud.com/kk-media/image/upload/v1752867184/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-application-lifecycle/infrastructure-as-code-tools-graphic.jpg)
 
 While other tools like Chef, Jenkins, and Ansible also offer valuable functionalities, the IaC solutions discussed here are among the most widely adopted. ARM templates have long been a favorite, though Bicep is quickly gaining popularity for Azure-specific deployments. Meanwhile, Terraform remains a strong choice for those embracing multi-cloud strategies.
 
@@ -71,7 +71,7 @@ App Configuration is a fully managed service designed to centralize and secure y
 * **Point-in-Time Replay:** Track and compare configuration changes over time, similar to version control systems like GitHub.
 * **Enhanced Security:** Secure access using either access keys or Azure AD authentication in combination with managed identities.
 
-![The image is an infographic about "App Configuration" by KodeKloud, highlighting features like centralized settings, easy key mapping, and enhanced security. It includes icons and brief descriptions of various benefits and functionalities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867185/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-application-lifecycle/app-configuration-infographic-kodekloud.jpg)
+![The image is an infographic about "App Configuration" by KodeKloud, highlighting features like centralized settings, easy key mapping, and enhanced security. It includes icons and brief descriptions of various benefits and functionalities.](https://kodekloud.com/kk-media/image/upload/v1752867185/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-an-application-lifecycle/app-configuration-infographic-kodekloud.jpg)
 
 Any service capable of using a managed identity can authenticate with App Configuration, making it an effective solution for managing application configurations across diverse Azure services.
 

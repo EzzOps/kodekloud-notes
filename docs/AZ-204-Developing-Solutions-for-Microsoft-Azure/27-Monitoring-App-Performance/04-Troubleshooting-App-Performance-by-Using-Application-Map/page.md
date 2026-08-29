@@ -10,7 +10,7 @@ Let's start by reviewing an overview diagram of Application Map:
 
 At the center of the map is a circle that represents one instance of the application handling 12% of the total load. Surrounding this central instance are several connected components—including Azure Blob Storage, SQL, and Cube—that display their own performance metrics. Notice the availability circle on the left, illustrating an overall system availability of 25%. Application Insights allows you to set up an Availability Test, which in this case shows 517 tests conducted with an average response time of 8.3 seconds. This feature lets you test any HTTP or HTTPS endpoint without modifying the target website. It is particularly useful when monitoring dependencies like REST APIs, even if the site isn’t owned by you. Typically, you can create up to 100 Availability Tests per Application Insights resource. A red availability metric indicates that the application is not consistently available.
 
-![The image is a diagram illustrating app performance troubleshooting using an application map, showing availability metrics and call times for Azure Blob, SQL, and Azure Queue services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866723/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Troubleshooting-App-Performance-by-Using-Application-Map/app-performance-troubleshooting-diagram.jpg)
+![The image is a diagram illustrating app performance troubleshooting using an application map, showing availability metrics and call times for Azure Blob, SQL, and Azure Queue services.](https://kodekloud.com/kk-media/image/upload/v1752866723/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Troubleshooting-App-Performance-by-Using-Application-Map/app-performance-troubleshooting-diagram.jpg)
 
 Observing the diagram further, on the right side, the application interacts with various services:
 
@@ -34,7 +34,7 @@ In this demonstration, we will deploy an Azure App Service using Application Ins
 4. Choose .NET 8 and deploy in the Canada Central region.
 5. Even though a database isn’t required, enable Application Insights by selecting "Yes" on the configuration screen under the Monitor plus Secure section.
 
-![The image shows a configuration screen for enabling Application Insights and Microsoft Defender for Cloud in an Azure environment. It includes options to enable these features and select a region for Application Insights.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866724/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Troubleshooting-App-Performance-by-Using-Application-Map/azure-application-insights-defender-config.jpg)
+![The image shows a configuration screen for enabling Application Insights and Microsoft Defender for Cloud in an Azure environment. It includes options to enable these features and select a region for Application Insights.](https://kodekloud.com/kk-media/image/upload/v1752866724/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Troubleshooting-App-Performance-by-Using-Application-Map/azure-application-insights-defender-config.jpg)
 
 After clicking on "Review and Create", the web app is deployed. Once completed, click "Go to Resource" to confirm that Application Insights is enabled and connected. You can later adjust telemetry data collection by selecting the Recommended option, which includes:
 
@@ -190,7 +190,7 @@ After deploying the Broken App, navigate to its overview in the Azure Portal and
 
 Additionally, Application Insights provides Live Metrics that enable you to monitor incoming requests and real-time exceptions. You can also use the Application Map to view your application instance, the database service (which, in this demo, does not return insights due to connection failure), and other related metadata services.
 
-![The image shows a Microsoft Azure portal interface displaying the "Availability" section of "Application Insights" for a project named "thebrokenappinsights." It includes a graph of availability over time and a panel for creating a standard test with various configuration options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866725/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Troubleshooting-App-Performance-by-Using-Application-Map/azure-portal-application-insights-availability.jpg)
+![The image shows a Microsoft Azure portal interface displaying the "Availability" section of "Application Insights" for a project named "thebrokenappinsights." It includes a graph of availability over time and a panel for creating a standard test with various configuration options.](https://kodekloud.com/kk-media/image/upload/v1752866725/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Troubleshooting-App-Performance-by-Using-Application-Map/azure-portal-application-insights-availability.jpg)
 
 With Application Insights configured and exceptions captured, you now have a comprehensive view of your application's performance, dependencies, and issues. This monitoring setup allows you to diagnose problems quickly and optimize performance in your production environment.
 

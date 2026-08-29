@@ -8,17 +8,13 @@ In this article, we explore threads and concurrency in Rust—a fundamental aspe
 
 In this lesson, we cover Rust's threading model by discussing how to create threads, join them, and transfer ownership using the move keyword. We provide concrete code examples to illustrate each concept and explain why these features are necessary.
 
-<Frame>
-  ![The image is an illustration related to concurrency, featuring a person at a desk with programming symbols and three labeled sections: "Thread Creation," "Joining Threads," and "Move Keyword."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883885/notes-assets/images/Rust-Programming-Threads/concurrency-illustration-thread-creation.jpg)
-</Frame>
+![The image is an illustration related to concurrency, featuring a person at a desk with programming symbols and three labeled sections: "Thread Creation," "Joining Threads," and "Move Keyword."](https://kodekloud.com/kk-media/image/upload/v1752883885/notes-assets/images/Rust-Programming-Threads/concurrency-illustration-thread-creation.jpg)
 
 ## What Is a Thread?
 
 A thread is a lightweight unit of a process that runs concurrently with other threads in the same process. While each thread has its own execution context—complete with its own stack and program counter—all threads share the same memory space. This shared memory enables effective inter-thread communication but also poses challenges such as data races. Rust’s ownership model is designed to prevent these issues by enforcing strict rules on memory access.
 
-<Frame>
-  ![The image illustrates the concept of threads and execution contexts using interconnected gears, with each gear labeled as either a "Thread" or "Execution Context."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883886/notes-assets/images/Rust-Programming-Threads/threads-execution-contexts-gears.jpg)
-</Frame>
+![The image illustrates the concept of threads and execution contexts using interconnected gears, with each gear labeled as either a "Thread" or "Execution Context."](https://kodekloud.com/kk-media/image/upload/v1752883886/notes-assets/images/Rust-Programming-Threads/threads-execution-contexts-gears.jpg)
 
 ## Creating a Thread
 
@@ -40,9 +36,7 @@ fn main() {
 
 In this snippet, a new thread is spawned to print messages from 1 to 4, while the main thread executes its own loop concurrently. Since thread scheduling is handled by the operating system, the output may interleave differently with every run.
 
-<Callout icon="lightbulb">
-  Keep in mind that because threads run concurrently, the order of printed messages between the spawned thread and the main thread is not guaranteed.
-</Callout>
+> **lightbulb** Keep in mind that because threads run concurrently, the order of printed messages between the spawned thread and the main thread is not guaranteed.
 
 For example, one execution might display:
 
@@ -124,13 +118,9 @@ fn main() {
 }
 ```
 
-<Callout icon="lightbulb">
-  Using the `move` keyword ensures that the data remains valid for the spawned thread, but remember that the original owner in the main thread loses access to that data.
-</Callout>
+> **lightbulb** Using the `move` keyword ensures that the data remains valid for the spawned thread, but remember that the original owner in the main thread loses access to that data.
 
-<Frame>
-  ![The image explains the concept of capturing variables in threads, highlighting the use of the "move" keyword, the necessity for thread ownership, and potential borrowing issues.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883887/notes-assets/images/Rust-Programming-Threads/capturing-variables-threads-move.jpg)
-</Frame>
+![The image explains the concept of capturing variables in threads, highlighting the use of the "move" keyword, the necessity for thread ownership, and potential borrowing issues.](https://kodekloud.com/kk-media/image/upload/v1752883887/notes-assets/images/Rust-Programming-Threads/capturing-variables-threads-move.jpg)
 
 ## Handling Panics in Threads
 
@@ -162,6 +152,4 @@ By understanding and leveraging thread spawning, joining, and ownership transfer
 
 For further details, you might want to explore more about Rust's concurrency guarantees and how its ownership model contributes to thread safety.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/0418d83c-2090-4aac-8b6e-8c3eab45d649/lesson/1207f543-389e-44e6-9df6-759290d79b20" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/0418d83c-2090-4aac-8b6e-8c3eab45d649/lesson/1207f543-389e-44e6-9df6-759290d79b20)

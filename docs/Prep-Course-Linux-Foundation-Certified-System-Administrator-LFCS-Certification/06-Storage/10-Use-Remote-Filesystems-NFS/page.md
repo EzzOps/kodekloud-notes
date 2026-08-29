@@ -6,22 +6,16 @@ This article explains how to use the Network File System (NFS) protocol for shar
 
 In previous lessons, we explored working with local file systems and local block storage devices—data stored on the same system where you are logged in. In this lesson, we focus on using remote file systems by leveraging the Network File System (NFS) protocol, a popular method for sharing data between Linux computers.
 
-<Frame>
-  ![The image illustrates the Network Filesystem Protocol (NFS) with two computers running Linux, connected by a file-sharing icon, emphasizing that protocols act as a "language."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881369/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Use-Remote-Filesystems-NFS/nfs-network-filesystem-protocol.jpg)
-</Frame>
+![The image illustrates the Network Filesystem Protocol (NFS) with two computers running Linux, connected by a file-sharing icon, emphasizing that protocols act as a "language."](https://kodekloud.com/kk-media/image/upload/v1752881369/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Use-Remote-Filesystems-NFS/nfs-network-filesystem-protocol.jpg)
 
 NFS operates based on a two-step process:
 
 1. Configuring an NFS server to share a file system with remote machines.
 2. Setting up an NFS client to mount the remote file system.
 
-<Frame>
-  ![The image illustrates the Network Filesystem Protocol (NFS) with a diagram showing an NFS server and NFS clients connected through the protocol.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881369/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Use-Remote-Filesystems-NFS/nfs-protocol-server-clients-diagram.jpg)
-</Frame>
+![The image illustrates the Network Filesystem Protocol (NFS) with a diagram showing an NFS server and NFS clients connected through the protocol.](https://kodekloud.com/kk-media/image/upload/v1752881369/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Use-Remote-Filesystems-NFS/nfs-protocol-server-clients-diagram.jpg)
 
-<Callout icon="lightbulb">
-  The NFS protocol simplifies remote file sharing by standardizing communication between the server and client. This allows Linux systems to seamlessly share and access files over the network.
-</Callout>
+> **lightbulb** The NFS protocol simplifies remote file sharing by standardizing communication between the server and client. This allows Linux systems to seamlessly share and access files over the network.
 
 ## Configuring the NFS Server
 

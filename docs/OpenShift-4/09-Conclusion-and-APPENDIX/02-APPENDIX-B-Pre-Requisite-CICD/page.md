@@ -31,9 +31,7 @@ After building your application and uploading your code to a source repository, 
   gem install app.gem
   ```
 
-<Callout icon="lightbulb">
-  For a consolidated view, here are the packaging commands for different types of applications:
-</Callout>
+> **lightbulb** For a consolidated view, here are the packaging commands for different types of applications:
 
 ## Overcoming Manual Setup Challenges
 
@@ -63,9 +61,7 @@ The entire process from committing code, building a Docker image, testing it, re
 
 The following image illustrates a typical build pipeline that includes stages like source code management, build, test, release, and deploy. It also highlights the use of industry-standard tools like Docker, Jenkins, and Kubernetes.
 
-<Frame>
-  ![The image illustrates a build pipeline process involving stages like source code, build, test, release, and deploy, using tools such as Docker, Jenkins, and Kubernetes. It highlights continuous integration, delivery, and deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882627/notes-assets/images/OpenShift-4-APPENDIX-B-Pre-Requisite-CICD/build-pipeline-continuous-integration.jpg)
-</Frame>
+![The image illustrates a build pipeline process involving stages like source code, build, test, release, and deploy, using tools such as Docker, Jenkins, and Kubernetes. It highlights continuous integration, delivery, and deployment.](https://kodekloud.com/kk-media/image/upload/v1752882627/notes-assets/images/OpenShift-4-APPENDIX-B-Pre-Requisite-CICD/build-pipeline-continuous-integration.jpg)
 
 ## CI/CD Pipeline Demo
 
@@ -79,12 +75,8 @@ Let’s move on to a practical demo where we add a Dockerfile to our application
 
 Each stage uses industry-standard tools to ensure a robust and streamlined CI/CD workflow.
 
-<Callout icon="lightbulb">
-  Explore additional resources such as [Kubernetes Documentation](https://kubernetes.io/docs/) and [Docker Hub](https://hub.docker.com/) for further insights into containerization and orchestration.
-</Callout>
+> **lightbulb** Explore additional resources such as [Kubernetes Documentation](https://kubernetes.io/docs/) and [Docker Hub](https://hub.docker.com/) for further insights into containerization and orchestration.
 
 That’s it for this article. Stay tuned for the next lesson where we dive deeper into CI/CD practices and further automation strategies.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/d84e1350-21eb-421e-87d0-2d7bf019360f/lesson/a0a57a2e-a3ff-424d-93ef-f4d309ecc6a5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/d84e1350-21eb-421e-87d0-2d7bf019360f/lesson/a0a57a2e-a3ff-424d-93ef-f4d309ecc6a5)

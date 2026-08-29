@@ -14,7 +14,7 @@ SQL Database provides three tiers of availability based on the selected performa
 2. **Premium Availability Model:** Utilized when opting for the premium tier in the DTU model or the business-critical tier in the vCore model.
 3. **Hyperscale Model:** Chosen when using the hyperscale tier.
 
-![The image is an infographic titled "High Availability in SQL Database" by KodeKloud, featuring a 3D puzzle cube with labels for different SQL models: Standard, Premium, and Hyperscale.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867171/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-database-availability/high-availability-sql-database-infographic.jpg)
+![The image is an infographic titled "High Availability in SQL Database" by KodeKloud, featuring a 3D puzzle cube with labels for different SQL models: Standard, Premium, and Hyperscale.](https://kodekloud.com/kk-media/image/upload/v1752867171/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-database-availability/high-availability-sql-database-infographic.jpg)
 
 These models differ significantly in their underlying architectures, though the complex details are abstracted since SQL Database is provided as a Platform as a Service (PaaS). Below, we explore the architecture behind each model.
 
@@ -25,7 +25,7 @@ In the Standard Model, the compute and storage layers are decoupled:
 * **Compute Layer:** Hosts the SQL Server executable along with TempDB and cache data.
 * **Storage Layer:** Houses the database files on Azure Premium Storage, leveraging replication options like GRS, LRS, or ZRS to maintain backup redundancy.
 
-![The image is an infographic explaining the "Standard Model – General Purpose / Standard / Basic" for database availability in Azure, highlighting the separation of compute and storage layers, use of Azure Storage for database files, and backup implementation. It includes a diagram showing the flow between application, primary replica, and storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867172/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-database-availability/azure-database-availability-infographic.jpg)
+![The image is an infographic explaining the "Standard Model – General Purpose / Standard / Basic" for database availability in Azure, highlighting the separation of compute and storage layers, use of Azure Storage for database files, and backup implementation. It includes a diagram showing the flow between application, primary replica, and storage.](https://kodekloud.com/kk-media/image/upload/v1752867172/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-database-availability/azure-database-availability-infographic.jpg)
 
 > **lightbulb** * The architecture shows a primary replica with secondary replicas across different nodes.
   * The compute layer is dedicated to running SQL Server.exe, whereas the storage layer secures database files.
@@ -41,7 +41,7 @@ The Premium Model integrates both compute and storage within a single node. Key 
 * **Multi-Node Cluster:** Typically deployed in clusters of three or four nodes for high availability.
 * **Designed for OLTP Applications:** Ensures high transaction rates and ultra-low I/O latency.
 
-![The image is an infographic from KodeKloud explaining the Premium Model for Business Critical/Premium databases, highlighting features like high transaction rates, low latency, and data replication using Azure's AlwaysON Availability Group. It includes a diagram showing the architecture with primary and secondary replicas, SSD storage, and Azure standard storage for backups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867173/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-database-availability/premium-database-model-infographic.jpg)
+![The image is an infographic from KodeKloud explaining the Premium Model for Business Critical/Premium databases, highlighting features like high transaction rates, low latency, and data replication using Azure's AlwaysON Availability Group. It includes a diagram showing the architecture with primary and secondary replicas, SSD storage, and Azure standard storage for backups.](https://kodekloud.com/kk-media/image/upload/v1752867173/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-database-availability/premium-database-model-infographic.jpg)
 
 > **lightbulb** * Primary replica leverages directly attached SSD storage to minimize latency.
   * All write operations occur on the primary replica. An Always On Availability Group ensures data is replicated to secondary nodes before commit.
@@ -57,7 +57,7 @@ The Hyperscale Model is designed for complex and high business-critical workload
 3. **Stateful Transaction Log Layer:** Captures all transactions from the primary compute and replicates log and cache data to secondary compute nodes.
 4. **Stateful Storage Layer:** Preserves the definitive database files, ensuring data integrity even if compute nodes encounter failures.
 
-![The image illustrates the Hyperscale Model for database availability, detailing its architecture with components like stateless compute and storage layers, stateful transaction log layers, and Azure storage integration. It includes a diagram showing the flow between compute nodes, page servers, and log services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867175/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-database-availability/hyperscale-database-availability-diagram.jpg)
+![The image illustrates the Hyperscale Model for database availability, detailing its architecture with components like stateless compute and storage layers, stateful transaction log layers, and Azure storage integration. It includes a diagram showing the flow between compute nodes, page servers, and log services.](https://kodekloud.com/kk-media/image/upload/v1752867175/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-database-availability/hyperscale-database-availability-diagram.jpg)
 
 > **lightbulb** * The compute layer directly handles read/write operations along with running the SQL Server process.
   * Page servers (stateless storage) manage transient and cached data.
@@ -72,7 +72,7 @@ While these models are generally deployed within a single data center, additiona
 
 2. **Geo-Replication:** For regional failures, geo-replication involves duplicating the SQL Database to a secondary logical server in a different region. The primary server handles read/write operations while redirecting read-only requests to the secondary. In the event of a primary region failure, the secondary region assumes full operations.
 
-![The image illustrates a failover strategy for high availability using Azure Traffic Manager, showing the setup of primary and secondary replicas across different availability zones and regions. It includes diagrams of traffic flow, replication, and backup storage configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867176/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-database-availability/azure-traffic-manager-failover-strategy.jpg)
+![The image illustrates a failover strategy for high availability using Azure Traffic Manager, showing the setup of primary and secondary replicas across different availability zones and regions. It includes diagrams of traffic flow, replication, and backup storage configurations.](https://kodekloud.com/kk-media/image/upload/v1752867176/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-database-availability/azure-traffic-manager-failover-strategy.jpg)
 
 > **lightbulb** * **Availability Zones:** Ensure continuity within the same region.
   * **Geo-Replication:** Provides robust protection across different regions with automatic failover capabilities.

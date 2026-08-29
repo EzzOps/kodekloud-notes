@@ -64,9 +64,7 @@ service:
       level: "ERROR"  # DEBUG | INFO | WARN | ERROR
 ```
 
-<Callout icon="warning">
-  Writing logs to local files or enabling DEBUG in production can increase disk usage and expose sensitive details. Review retention and access controls if you persist Collector logs.
-</Callout>
+> **warning** Writing logs to local files or enabling DEBUG in production can increase disk usage and expose sensitive details. Review retention and access controls if you persist Collector logs.
 
 ## Advanced logging options
 
@@ -176,9 +174,7 @@ This is the first place to inspect when validating pipeline initialization or di
 * OpenTelemetry Collector: [https://opentelemetry.io/docs/collector/](https://opentelemetry.io/docs/collector/)
 * Kubernetes logging: [https://kubernetes.io/docs/concepts/cluster-administration/logging/](https://kubernetes.io/docs/concepts/cluster-administration/logging/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/a1ac613f-7abd-4588-9cff-80505f44f58b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/9c72c1a7-4e0b-4541-8811-755843e69659/lesson/a1ac613f-7abd-4588-9cff-80505f44f58b)
 
 
 # Internal Metrics of the Collector
@@ -196,9 +192,7 @@ Key diagnostic tools and endpoints:
 * zPages to inspect live traces, spans, and internal workings of receivers and exporters.
 * Performance profiler (pprof) for detailed CPU and memory profiling.
 
-<Callout icon="lightbulb">
-  pprof is an advanced diagnostic tool used for deep performance investigations. It’s usually not necessary for routine troubleshooting.
-</Callout>
+> **lightbulb** pprof is an advanced diagnostic tool used for deep performance investigations. It’s usually not necessary for routine troubleshooting.
 
 <Frame>
   <img alt="The image is a diagram titled &#x22;Exploring Internal Telemetry Endpoints,&#x22; featuring the &#x22;OpenTelemetry Collector&#x22; and various components like Metrics, Health Checks, zPages, and pprof." />
@@ -220,9 +214,7 @@ Tool summary
 | zPages                        | Live inspection of receivers/exporters and internal spans          | zPages extension                     |
 | pprof                         | CPU/memory profiling for deep performance analysis                 | `net/http/pprof` docs                |
 
-<Callout icon="warning">
-  Important: Do not expose Collector telemetry endpoints (metrics, pprof, zPages, health) to the public internet. Restrict access with network controls, authentication, or internal-only interfaces.
-</Callout>
+> **warning** Important: Do not expose Collector telemetry endpoints (metrics, pprof, zPages, health) to the public internet. Restrict access with network controls, authentication, or internal-only interfaces.
 
 How the Collector exposes internal metrics
 By default many Collector setups expose internal metrics on port 8888 via a Prometheus pull-style reader. Example telemetry configuration:

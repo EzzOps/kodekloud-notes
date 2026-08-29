@@ -6,9 +6,7 @@ Learn to enable managed identities for secure SQL database connections without e
 
 In this article, you will learn how to enable managed identities to securely connect to a SQL database without exposing credentials in plain text. Managed identities allow an Azure resource (such as a Function App) to authenticate with Azure Active Directory (Azure AD) and access other resources that support Azure AD authentication.
 
-<Callout icon="lightbulb">
-  Avoid hardcoding credentials in your source code. Instead, leverage managed identities to improve your security posture.
-</Callout>
+> **lightbulb** Avoid hardcoding credentials in your source code. Instead, leverage managed identities to improve your security posture.
 
 ## Using Plain Text Credentials
 

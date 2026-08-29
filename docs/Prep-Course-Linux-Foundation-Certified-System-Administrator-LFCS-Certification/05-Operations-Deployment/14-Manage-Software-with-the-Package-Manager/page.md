@@ -31,9 +31,7 @@ Reading state information... Done
 jeremy@kodekloud:~$
 ```
 
-<Callout icon="lightbulb">
-  If the package information was last refreshed a while ago (for example, one week ago), running `sudo apt update` ensures you get the latest package listings.
-</Callout>
+> **lightbulb** If the package information was last refreshed a while ago (for example, one week ago), running `sudo apt update` ensures you get the latest package listings.
 
 ## Upgrading Installed Packages
 
@@ -209,9 +207,7 @@ After this operation, 1,596 kB disk space will be freed.
 Do you want to continue? [Y/n] y
 ```
 
-<Callout icon="lightbulb">
-  This command removes only the main package. Residual dependencies that are no longer needed remain on the system.
-</Callout>
+> **lightbulb** This command removes only the main package. Residual dependencies that are no longer needed remain on the system.
 
 To clean up those extra dependencies, use:
 
@@ -251,6 +247,4 @@ In this article, we covered the essentials of managing software on Ubuntu using 
 
 By mastering these commands, you can efficiently maintain and secure your Ubuntu system. Let's move on to the next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/1dd3329a-11d2-45aa-9871-6809f6d0f24b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/1dd3329a-11d2-45aa-9871-6809f6d0f24b)

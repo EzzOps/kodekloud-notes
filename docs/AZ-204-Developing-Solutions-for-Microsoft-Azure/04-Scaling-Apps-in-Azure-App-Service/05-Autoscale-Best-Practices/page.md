@@ -18,7 +18,7 @@ Select the most relevant metrics for monitoring your application's health—be i
 
 Setting precise thresholds for auto-scaling rules is vital. Too-low thresholds can prompt premature scaling, while overly high thresholds may degrade performance. Accurate calibration helps maintain the right balance between resource utilization and application responsiveness.
 
-![The image outlines three best practices for autoscaling: ensuring different maximum and minimum values with an adequate margin, choosing appropriate statistics for diagnostics, and carefully selecting thresholds for all metric types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866744/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Autoscale-Best-Practices/autoscaling-best-practices-diagram.jpg)
+![The image outlines three best practices for autoscaling: ensuring different maximum and minimum values with an adequate margin, choosing appropriate statistics for diagnostics, and carefully selecting thresholds for all metric types.](https://kodekloud.com/kk-media/image/upload/v1752866744/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Autoscale-Best-Practices/autoscaling-best-practices-diagram.jpg)
 
 ## Managing Multiple Rules
 
@@ -32,7 +32,7 @@ Define a safe default instance count that will run regardless of scaling conditi
 
 Set up autoscale notifications to receive real-time updates on scaling activities. These notifications are crucial for identifying and resolving any issues promptly, ensuring that your scaling strategy remains effective over time.
 
-![The image lists three autoscale best practices: checking for conflicts with multiple rules, selecting a safe default instance count, and configuring autoscale notifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866744/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Autoscale-Best-Practices/autoscale-best-practices-notifications.jpg)
+![The image lists three autoscale best practices: checking for conflicts with multiple rules, selecting a safe default instance count, and configuring autoscale notifications.](https://kodekloud.com/kk-media/image/upload/v1752866744/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Autoscale-Best-Practices/autoscale-best-practices-notifications.jpg)
 
 > **lightbulb** For more detailed insights on Azure scaling and performance tuning, explore additional [Azure Documentation](https://docs.microsoft.com/azure/) resources.
 

@@ -25,9 +25,7 @@ A typical workflow YAML contains the following top-level parts:
   * `entrypoint`: the name of the template that starts execution.
   * `templates`: a list of reusable templates. Templates describe tasks and can reference each other.
 
-<Callout icon="lightbulb">
-  Use generateName when you want to submit the same workflow multiple times without name collisions. Each submission will get a unique suffix appended to the provided generateName.
-</Callout>
+> **lightbulb** Use generateName when you want to submit the same workflow multiple times without name collisions. Each submission will get a unique suffix appended to the provided generateName.
 
 ## Template types (overview)
 

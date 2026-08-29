@@ -52,9 +52,7 @@ Links and references
 * [Jenkins documentation](https://www.jenkins.io/doc/)
 * [GitHub Actions Importer (gh actions-importer)](https://github.com/github/gh-actions-importer)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/8c88e5f7-609c-431e-9d7b-013ae5380f32" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/8c88e5f7-609c-431e-9d7b-013ae5380f32)
 
 
 # Forecast
@@ -132,9 +130,7 @@ Use those totals to estimate GitHub-hosted runner cost (runner minutes × price 
 * High queue time: indicates either not enough runners or uneven scheduling; consider autoscaling or redistributing workloads.
 * Per-queue differences: prioritize migrating queues with predictable usage first; complex or highly variable queues may need capacity buffer or dedicated self-hosted runners.
 
-<Callout icon="lightbulb">
-  Use the forecast results to size runner pools and estimate costs before migrating pipelines. Combine the forecasted runner minutes and peak concurrency with GitHub Actions pricing and your chosen runner types to prepare an accurate migration plan.
-</Callout>
+> **lightbulb** Use the forecast results to size runner pools and estimate costs before migrating pipelines. Combine the forecasted runner minutes and peak concurrency with GitHub Actions pricing and your chosen runner types to prepare an accurate migration plan.
 
 ## Example planning steps after a forecast
 
@@ -151,6 +147,4 @@ Use those totals to estimate GitHub-hosted runner cost (runner minutes × price 
 
 That’s all for now.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/3b575584-05ea-4df8-959c-9c5dbda8e0cd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/3b575584-05ea-4df8-959c-9c5dbda8e0cd)

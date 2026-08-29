@@ -48,9 +48,7 @@ spec:
           image: "nginx:2.4.4"
 ```
 
-<Callout icon="lightbulb">
-  Use `--values` (or `-f`) to specify different environment files, e.g., `-f values.prod.yaml`.
-</Callout>
+> **lightbulb** Use `--values` (or `-f`) to specify different environment files, e.g., `-f values.prod.yaml`.
 
 ## Helm Chart Structure
 
@@ -82,9 +80,7 @@ k8s/
 | Valid YAML Before Rendering   | ❌ Not valid until `helm template` runs               | ✔️ Always valid YAML           |
 | Native Kubernetes Integration | ✔️ Widely adopted, independent CLI                   | ✔️ Built into `kubectl`        |
 
-<Callout icon="triangle-alert">
-  Complex Helm charts with extensive logic can become hard to read and maintain. Ensure you document templates and values clearly.
-</Callout>
+> **triangle-alert** Complex Helm charts with extensive logic can become hard to read and maintain. Ensure you document templates and values clearly.
 
 ## Trade-offs: When to Use Each Tool
 
@@ -100,9 +96,7 @@ k8s/
 
 Balance your project’s complexity and team familiarity when choosing between the two.
 
-<Frame>
-  ![The image is a slide comparing Kustomize and Helm, highlighting Helm's features such as being a package manager, providing conditionals, loops, functions, and hooks, and noting that Helm templates are not valid YAML due to Go templating syntax.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880933/notes-assets/images/Kustomize-Kustomize-vs-Helm/kustomize-vs-helm-comparison-slide.jpg)
-</Frame>
+![The image is a slide comparing Kustomize and Helm, highlighting Helm's features such as being a package manager, providing conditionals, loops, functions, and hooks, and noting that Helm templates are not valid YAML due to Go templating syntax.](https://kodekloud.com/kk-media/image/upload/v1752880933/notes-assets/images/Kustomize-Kustomize-vs-Helm/kustomize-vs-helm-comparison-slide.jpg)
 
 ## References
 
@@ -110,9 +104,7 @@ Balance your project’s complexity and team familiarity when choosing between t
 * [Kustomize Documentation](https://kustomize.io/)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/414dd6d1-c083-49c0-8003-114e0ce66e15/lesson/3bd51d55-c169-4207-9fcc-70ac7bb0082e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/414dd6d1-c083-49c0-8003-114e0ce66e15/lesson/3bd51d55-c169-4207-9fcc-70ac7bb0082e)
 
 
 # Edit CICD Use Case
@@ -147,9 +139,7 @@ This is a typical flow for deploying code changes:
 | Update     | Use Kustomize to set the new image in manifests       | `kustomize edit set image api=myrepo/api:$GIT_COMMIT_HASH`                                     |
 | Deploy     | Apply the updated overlay to production cluster       | `kubectl apply -k overlays/production`                                                         |
 
-<Callout icon="lightbulb">
-  Using a Git commit hash (or semantic version) as your Docker image tag ensures traceability between your code and the container you deploy.
-</Callout>
+> **lightbulb** Using a Git commit hash (or semantic version) as your Docker image tag ensures traceability between your code and the container you deploy.
 
 ***
 

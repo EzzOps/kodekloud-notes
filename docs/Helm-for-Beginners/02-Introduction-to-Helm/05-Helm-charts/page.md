@@ -98,13 +98,13 @@ $ helm install my-second-site bitnami/wordpress
 
 Helm charts are available from a variety of trusted providers worldwide, including Appscode, community operators, TrueCharts, and Bitnami. Instead of visiting each repository individually, you can use the Artifact Hub (also known as Helm Hub) to browse a consolidated view of available charts. Visit [artifacthub.io](https://artifacthub.io) to explore the extensive collection of Helm charts.
 
-![The image is a diagram showing Helm repositories connected to ArtifactHub.io, with nodes labeled Appscode, Community Operators, TrueCharts, and Bitnami.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878962/notes-assets/images/Helm-for-Beginners-Helm-Components/helm-repositories-artifacthub-diagram.jpg)
+![The image is a diagram showing Helm repositories connected to ArtifactHub.io, with nodes labeled Appscode, Community Operators, TrueCharts, and Bitnami.](https://kodekloud.com/kk-media/image/upload/v1752878962/notes-assets/images/Helm-for-Beginners-Helm-Components/helm-repositories-artifacthub-diagram.jpg)
 
 Artifact Hub currently hosts over 6300 packages, allowing you to search for specific charts or browse by category. Pay attention to charts marked with official or verified publisher badges for added trust.
 
 Furthermore, Artifact Hub features an intuitive web interface for filtering and exploring charts:
 
-![The image shows a webpage from ArtifactHUB displaying Helm repositories, including "kube-prometheus-stack" and "ingress-nginx," with filters and search options on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878963/notes-assets/images/Helm-for-Beginners-Helm-Components/artifacthub-helm-repositories-webpage.jpg)
+![The image shows a webpage from ArtifactHUB displaying Helm repositories, including "kube-prometheus-stack" and "ingress-nginx," with filters and search options on the left.](https://kodekloud.com/kk-media/image/upload/v1752878963/notes-assets/images/Helm-for-Beginners-Helm-Components/artifacthub-helm-repositories-webpage.jpg)
 
 ## Conclusion
 

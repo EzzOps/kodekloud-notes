@@ -2,9 +2,7 @@
 df = df.assign(embedding=df["text"].apply(lambda x: text_embedding(x)))
 ```
 
-<Callout icon="lightbulb">
-  Generating embeddings for a large dataset may take some time. For 121 rows, expect multiple API calls.
-</Callout>
+> **lightbulb** Generating embeddings for a large dataset may take some time. For 121 rows, expect multiple API calls.
 
 Inspect the new `embedding` column:
 
@@ -135,11 +133,9 @@ The lyricist for RRR is Chandra Bose.
 
 This workflow—building dynamic context from a DataFrame using embeddings, then crafting prompts on the fly—unlocks powerful generative AI applications with OpenAI.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/cf879fc5-dcc3-4470-830d-4393645105c9/lesson/ad69eb15-6828-4cde-8497-48ae10cfce23" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/cf879fc5-dcc3-4470-830d-4393645105c9/lesson/ad69eb15-6828-4cde-8497-48ae10cfce23)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/cf879fc5-dcc3-4470-830d-4393645105c9/lesson/ccfb6f10-72b1-43e1-a9a7-c0836f996463" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/cf879fc5-dcc3-4470-830d-4393645105c9/lesson/ccfb6f10-72b1-43e1-a9a7-c0836f996463)
 
 
 # Azure AD Privileged Identity Management
@@ -162,13 +158,9 @@ PIM leverages just-in-time privileged access to provide elevated permissions onl
 
 Another major advantage of PIM is its support for both time-based and approval-based activations. For instance, when a developer requires access to a critical service, their request is reviewed and approved by a designated administrator. The access is then activated for a pre-determined time frame—such as 2 or 8 hours—ensuring that elevated permissions are strictly temporary.
 
-<Frame>
-  ![The image explains how Privileged Identity Management (PIM) works, highlighting just-in-time privileged access and time-based, approval-based role activation to manage access permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881654/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Privileged-Identity-Management/privileged-identity-management-pim-explained.jpg)
-</Frame>
+![The image explains how Privileged Identity Management (PIM) works, highlighting just-in-time privileged access and time-based, approval-based role activation to manage access permissions.](https://kodekloud.com/kk-media/image/upload/v1752881654/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Privileged-Identity-Management/privileged-identity-management-pim-explained.jpg)
 
-<Callout icon="lightbulb">
-  PIM's design is aligned with the principle of least privilege, ensuring that users obtain only the minimum necessary access to perform their tasks.
-</Callout>
+> **lightbulb** PIM's design is aligned with the principle of least privilege, ensuring that users obtain only the minimum necessary access to perform their tasks.
 
 ## Why Use PIM?
 
@@ -180,9 +172,7 @@ PIM introduces an additional layer of security by replacing direct, permanent ac
 | Compliance and Governance | Ensures adherence to regulatory standards such as GDPR and HIPAA, protecting both data and assets. |
 | Cost-Effectiveness        | Centralizes and automates access control, reducing administrative overhead and associated costs.   |
 
-<Frame>
-  ![The image is a slide titled "Why Use PIM?" highlighting three benefits: Risk Management, Compliance and Governance, and Cost-Effectiveness, each with corresponding icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881655/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Privileged-Identity-Management/why-use-pim-benefits-slide.jpg)
-</Frame>
+![The image is a slide titled "Why Use PIM?" highlighting three benefits: Risk Management, Compliance and Governance, and Cost-Effectiveness, each with corresponding icons.](https://kodekloud.com/kk-media/image/upload/v1752881655/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Azure-AD-Privileged-Identity-Management/why-use-pim-benefits-slide.jpg)
 
 **Risk Management:** PIM minimizes the chance of data breaches by limiting the duration and scope of privileged access, aligning with the zero trust security model—always verify and assume breach.
 
@@ -190,9 +180,7 @@ PIM introduces an additional layer of security by replacing direct, permanent ac
 
 **Cost-Effectiveness:** Automating and centralizing the management of privileged access cuts down administrative costs, allowing organizations to allocate resources more effectively.
 
-<Callout icon="lightbulb">
-  When setting up PIM, ensure that both time-based and approval-based role activations are configured correctly to fully leverage PIM's security benefits.
-</Callout>
+> **lightbulb** When setting up PIM, ensure that both time-based and approval-based role activations are configured correctly to fully leverage PIM's security benefits.
 
 ## Next Steps
 
@@ -200,6 +188,4 @@ This overview provides a high-level understanding of Azure AD Privileged Identit
 
 Thank you for reading.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/4c177d01-df52-459d-8089-073ff3170c4f/lesson/d9ac2d3f-12c3-442e-ab8c-ca30fbf895fc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/4c177d01-df52-459d-8089-073ff3170c4f/lesson/d9ac2d3f-12c3-442e-ab8c-ca30fbf895fc)

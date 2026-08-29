@@ -61,9 +61,7 @@ vpc-1  vpc-2
 * [Terragrunt Documentation](https://terragrunt.gruntwork.io/docs/)
 * [Terraform AWS VPC Module](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/e42961fc-4288-4cc2-8db8-3882b884c0b1/lesson/d273febc-2f10-4542-9f8e-b40385b9e299" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/e42961fc-4288-4cc2-8db8-3882b884c0b1/lesson/d273febc-2f10-4542-9f8e-b40385b9e299)
 
 
 # Directory Structure
@@ -120,9 +118,7 @@ A well-organized directory layout simplifies management of Terraform configurati
    * Shared providers
    * Pre/post hooks for automation
 
-<Callout icon="lightbulb">
-  Define secure and centralized remote state backends in your root file to maintain state consistency across teams.
-</Callout>
+> **lightbulb** Define secure and centralized remote state backends in your root file to maintain state consistency across teams.
 
 2. **Environment Overrides**\
    Each environment directory (`envs/dev`, `envs/prod`) contains:
@@ -146,9 +142,7 @@ A well-organized directory layout simplifies management of Terraform configurati
    }
    ```
 
-<Callout icon="triangle-alert">
-  Avoid duplicating variables across component configs. Centralize values in `common-vars.hcl` to prevent drift.
-</Callout>
+> **triangle-alert** Avoid duplicating variables across component configs. Centralize values in `common-vars.hcl` to prevent drift.
 
 ## Benefits
 
@@ -162,6 +156,4 @@ A well-organized directory layout simplifies management of Terraform configurati
 * [Terraform Modules](https://www.terraform.io/language/modules)
 * [Terraform Remote State](https://www.terraform.io/language/state/remote)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/52cf8076-030b-430e-9a8b-273697ad3399/lesson/99e9124e-f13b-4227-a093-422b9447bfb9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/52cf8076-030b-430e-9a8b-273697ad3399/lesson/99e9124e-f13b-4227-a093-422b9447bfb9)

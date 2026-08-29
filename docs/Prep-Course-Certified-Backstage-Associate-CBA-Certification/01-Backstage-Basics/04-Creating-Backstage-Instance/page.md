@@ -15,9 +15,7 @@ This guide walks through creating a Backstage instance on a remote server. It pr
 >
 > indicate a shell connected to a remote server (not your local workstation). When running Backstage on a remote server you may need to update host/IP/base URLs so the UI is reachable from your workstation.
 
-<Callout icon="lightbulb">
-  Before you begin, ensure you have shell access to the target server and permission to install Node.js, Yarn, and other developer tools. You can scaffold a Backstage app on your server and then expose it to your workstation via SSH tunneling, a reverse proxy, or by binding services to 0.0.0.0 and opening firewall ports.
-</Callout>
+> **lightbulb** Before you begin, ensure you have shell access to the target server and permission to install Node.js, Yarn, and other developer tools. You can scaffold a Backstage app on your server and then expose it to your workstation via SSH tunneling, a reverse proxy, or by binding services to 0.0.0.0 and opening firewall ports.
 
 ## Prerequisites
 

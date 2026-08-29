@@ -39,9 +39,7 @@ An AnalysisTemplate is a reusable, parameterized blueprint for health checks. Ke
   * failureLimit: how many failed samples are tolerated before the metric is considered failed.
   * successCondition: an expression evaluated against the query result.
 
-<Callout icon="lightbulb">
-  AnalysisTemplates let you centralize test logic. Use args to keep queries generic and portable across environments.
-</Callout>
+> **lightbulb** AnalysisTemplates let you centralize test logic. Use args to keep queries generic and portable across environments.
 
 Common metric providers and use cases
 
@@ -78,9 +76,7 @@ spec:
     successCondition: result >= 0.99
 ```
 
-<Callout icon="warning">
-  Ensure Argo Rollouts has network access to your Prometheus server (the provider address) and that Prometheus is configured to retain the required metrics at the desired scrape interval. Misconfigured queries or unreachable endpoints will cause AnalysisRuns to fail.
-</Callout>
+> **warning** Ensure Argo Rollouts has network access to your Prometheus server (the provider address) and that Prometheus is configured to retain the required metrics at the desired scrape interval. Misconfigured queries or unreachable endpoints will cause AnalysisRuns to fail.
 
 How AnalysisRuns integrate with rollouts
 When a rollout needs to validate a new version, Argo Rollouts creates an AnalysisRun from the referenced AnalysisTemplate. The AnalysisRun:
@@ -300,6 +296,4 @@ Links and references
 * [Prometheus Documentation](https://prometheus.io/docs/introduction/overview/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/9ea94314-c8cb-447b-a85f-02046ff7a759" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/959dfde0-9415-4fc2-bcad-fe9e4bf84cc7/lesson/9ea94314-c8cb-447b-a85f-02046ff7a759)

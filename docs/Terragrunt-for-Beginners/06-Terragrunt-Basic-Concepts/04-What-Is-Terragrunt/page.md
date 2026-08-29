@@ -13,9 +13,7 @@ inputs = {
 }
 ```
 
-<Frame>
-  ![The image illustrates the "Don't Repeat Yourself" (DRY) principle, highlighting modular configuration, modular and reusable components, and reduced redundancy.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884288/notes-assets/images/Terragrunt-for-Beginners-The-DRY-Principle/dry-principle-modular-configuration-diagram.jpg)
-</Frame>
+![The image illustrates the "Don't Repeat Yourself" (DRY) principle, highlighting modular configuration, modular and reusable components, and reduced redundancy.](https://kodekloud.com/kk-media/image/upload/v1752884288/notes-assets/images/Terragrunt-for-Beginners-The-DRY-Principle/dry-principle-modular-configuration-diagram.jpg)
 
 ***
 
@@ -48,9 +46,7 @@ inputs = merge(dependency.vars.outputs, {
 })
 ```
 
-<Frame>
-  ![The image explains the "Don't Repeat Yourself" (DRY) principle, highlighting variable abstraction to avoid code repetition and enable centralized variable management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884288/notes-assets/images/Terragrunt-for-Beginners-The-DRY-Principle/dry-principle-variable-abstraction-diagram.jpg)
-</Frame>
+![The image explains the "Don't Repeat Yourself" (DRY) principle, highlighting variable abstraction to avoid code repetition and enable centralized variable management.](https://kodekloud.com/kk-media/image/upload/v1752884288/notes-assets/images/Terragrunt-for-Beginners-The-DRY-Principle/dry-principle-variable-abstraction-diagram.jpg)
 
 ***
 
@@ -81,9 +77,7 @@ inputs = {
 }
 ```
 
-<Frame>
-  ![The image explains the "Don't Repeat Yourself" (DRY) principle, highlighting hierarchical configuration, enabling inheritance of settings, reducing duplicate configurations, and facilitating reuse of configuration settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884289/notes-assets/images/Terragrunt-for-Beginners-The-DRY-Principle/dry-principle-configuration-inheritance-reuse.jpg)
-</Frame>
+![The image explains the "Don't Repeat Yourself" (DRY) principle, highlighting hierarchical configuration, enabling inheritance of settings, reducing duplicate configurations, and facilitating reuse of configuration settings.](https://kodekloud.com/kk-media/image/upload/v1752884289/notes-assets/images/Terragrunt-for-Beginners-The-DRY-Principle/dry-principle-configuration-inheritance-reuse.jpg)
 
 ***
 
@@ -98,9 +92,7 @@ With DRY in place, updating modules or variables in one location propagates chan
 | Rapid Rollout               | Apply changes once and run `terragrunt apply-all`         | Security patch update                   |
 | Reduced Human Error         | Fewer manual edits across multiple HCL files              | Fix input typo in shared file           |
 
-<Frame>
-  ![The image illustrates the "Don't Repeat Yourself" (DRY) principle, highlighting benefits like simplified maintenance, more maintainable code, and uniform updates across code.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884290/notes-assets/images/Terragrunt-for-Beginners-The-DRY-Principle/dry-principle-benefits-code-maintenance.jpg)
-</Frame>
+![The image illustrates the "Don't Repeat Yourself" (DRY) principle, highlighting benefits like simplified maintenance, more maintainable code, and uniform updates across code.](https://kodekloud.com/kk-media/image/upload/v1752884290/notes-assets/images/Terragrunt-for-Beginners-The-DRY-Principle/dry-principle-benefits-code-maintenance.jpg)
 
 ***
 
@@ -111,9 +103,7 @@ With DRY in place, updating modules or variables in one location propagates chan
 * [Infrastructure as Code Best Practices](https://docs.microsoft.com/azure/devops/learn/what-is-infrastructure-as-code)
 * [HCL Language Reference](https://github.com/hashicorp/hcl)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/9618155f-f613-4c7b-92c7-9be9ddfa22b5/lesson/ac9182c8-4e96-4d29-b3eb-630496944ac8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/9618155f-f613-4c7b-92c7-9be9ddfa22b5/lesson/ac9182c8-4e96-4d29-b3eb-630496944ac8)
 
 
 # What Is Terragrunt
@@ -124,9 +114,7 @@ Terragrunt is a wrapper for Terraform that enhances Infrastructure as Code workf
 
 Terragrunt is a lightweight wrapper for [Terraform](https://www.terraform.io/), built by Gruntwork to bring structure and automation to Infrastructure as Code (IaC) workflows. Rather than replacing Terraform, Terragrunt enhances it—making it easier to manage complex, multi-environment infrastructures with less repetition and more consistency.
 
-<Callout icon="lightbulb">
-  Terragrunt works *on top* of Terraform. You still write your IaC in Terraform language and benefit from the Terraform CLI.
-</Callout>
+> **lightbulb** Terragrunt works *on top* of Terraform. You still write your IaC in Terraform language and benefit from the Terraform CLI.
 
 ## Why Terragrunt?
 
@@ -144,13 +132,9 @@ Terragrunt is a lightweight wrapper for [Terraform](https://www.terraform.io/), 
 | Modular Variable Definitions | Define shared variables in one place and reference them across multiple modules and environments.    |
 | DRY (Don't Repeat Yourself)  | Inherit and override configurations in a parent–child folder structure to minimize duplication.      |
 
-<Callout icon="triangle-alert">
-  Always enable state locking and encryption for your remote backend to prevent concurrent writes and protect sensitive data.
-</Callout>
+> **triangle-alert** Always enable state locking and encryption for your remote backend to prevent concurrent writes and protect sensitive data.
 
-<Frame>
-  ![The image lists four key features: Hierarchical Configuration, Remote Management, Modular Variable Definitions, and DRY Approach, each with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884291/notes-assets/images/Terragrunt-for-Beginners-What-Is-Terragrunt/key-features-hierarchical-remote-modular-dry.jpg)
-</Frame>
+![The image lists four key features: Hierarchical Configuration, Remote Management, Modular Variable Definitions, and DRY Approach, each with an icon.](https://kodekloud.com/kk-media/image/upload/v1752884291/notes-assets/images/Terragrunt-for-Beginners-What-Is-Terragrunt/key-features-hierarchical-remote-modular-dry.jpg)
 
 ## Common Use Cases
 
@@ -161,9 +145,7 @@ Terragrunt shines in scenarios where Terraform alone can become unwieldy:
 | Complex Infrastructure Projects | Simplifies management of interdependent modules, networks, and cloud resources.                |
 | Multi-Environment Deployments   | Maintains consistency across dev, staging, and prod through shared remote state and variables. |
 
-<Frame>
-  ![The image illustrates use cases for Terragrunt, highlighting its application in managing complex infrastructure and deployments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884293/notes-assets/images/Terragrunt-for-Beginners-What-Is-Terragrunt/terragrunt-use-cases-infrastructure-deployments.jpg)
-</Frame>
+![The image illustrates use cases for Terragrunt, highlighting its application in managing complex infrastructure and deployments.](https://kodekloud.com/kk-media/image/upload/v1752884293/notes-assets/images/Terragrunt-for-Beginners-What-Is-Terragrunt/terragrunt-use-cases-infrastructure-deployments.jpg)
 
 ## Links and References
 
@@ -171,6 +153,4 @@ Terragrunt shines in scenarios where Terraform alone can become unwieldy:
 * [Terraform Documentation](https://www.terraform.io/docs/)
 * [Gruntwork Blog on Terragrunt](https://blog.gruntwork.io/introducing-terragrunt-9f9d2c2bdb34)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/9618155f-f613-4c7b-92c7-9be9ddfa22b5/lesson/48d37272-f19b-4ae3-a51f-01a1c269e483" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/9618155f-f613-4c7b-92c7-9be9ddfa22b5/lesson/48d37272-f19b-4ae3-a51f-01a1c269e483)

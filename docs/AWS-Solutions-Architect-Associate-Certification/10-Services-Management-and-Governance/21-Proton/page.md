@@ -8,7 +8,7 @@ In this lesson, we explore AWS Proton, a powerful service designed to simplify i
 
 AWS Proton standardizes the application stack by allowing administrators or platform team members to create environment and service templates. An environment template defines the shared infrastructure required across multiple applications or microservices, while a service template specifies the infrastructure for a specific application or service. These templates ensure consistent deployment protocols across teams, leading to uniform and reliable configurations.
 
-![The image is a diagram illustrating the workflow of platform engineers and developers using environment and service templates to deploy services on AWS across different stages like Dev, Staging, and Prod.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865365/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Proton/platform-engineers-aws-workflow-diagram.jpg)
+![The image is a diagram illustrating the workflow of platform engineers and developers using environment and service templates to deploy services on AWS across different stages like Dev, Staging, and Prod.](https://kodekloud.com/kk-media/image/upload/v1752865365/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Proton/platform-engineers-aws-workflow-diagram.jpg)
 
 When developers need to deploy microservice infrastructure, they simply select a standardized service template. AWS Proton automatically creates the service, sets up a CI/CD pipeline, and manages the service instances running the source code. This significantly reduces the operational burden, allowing developers to focus on writing code rather than managing infrastructure.
 
@@ -22,7 +22,7 @@ When developers need to deploy microservice infrastructure, they simply select a
 * **Multi-Account Management:** Manage all resources centrally from a single AWS account, simplifying administrative oversight.
 * **Built-In Template Management:** Store and manage reusable versions of application stacks within AWS Proton, ensuring consistency and ease of updates.
 
-![The image lists five benefits: Automated Deployments, Flexible Definitions, Proton Service Components, Multi-Account Support, and Template Management, each with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865366/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Proton/benefits-of-proton-service-icons.jpg)
+![The image lists five benefits: Automated Deployments, Flexible Definitions, Proton Service Components, Multi-Account Support, and Template Management, each with an icon.](https://kodekloud.com/kk-media/image/upload/v1752865366/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Proton/benefits-of-proton-service-icons.jpg)
 
 ## Conclusion
 

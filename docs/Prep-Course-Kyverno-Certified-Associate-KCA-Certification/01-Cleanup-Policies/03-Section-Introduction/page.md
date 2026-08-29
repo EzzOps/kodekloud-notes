@@ -38,10 +38,6 @@ Below is a quick comparison to help choose the right approach for your use case.
 | `CleanupPolicy` / `ClusterCleanupPolicy` | For declarative, policy-driven cleanup that matches resources by selectors, age, or custom conditions. Use when you want centralized, auditable rules across namespaces or at cluster scope. | Examples: remove Namespaces labeled `env=dev` older than 7 days, delete Pods in a namespace that match a name pattern. |
 | TTL label (`cleanup.kyverno.io/ttl`)     | For ad-hoc, resource-level TTLs applied by developers or automation. Use when resources should self-expire after a fixed period.                                                             | Example: add the label `cleanup.kyverno.io/ttl: "24h"` to a Pod to auto-delete it after 24 hours.                      |
 
-<Callout icon="lightbulb">
-  Kyverno’s cleanup features let you automate resource lifecycle management — either centrally with CleanupPolicy/ClusterCleanupPolicy or per-resource with the `cleanup.kyverno.io/ttl` label. For implementation details and examples, see the official Kyverno cleanup documentation: [Kyverno Cleanup Policies](https://kyverno.io/docs/writing-policies/cleanup-policy/).
-</Callout>
+> **lightbulb** Kyverno’s cleanup features let you automate resource lifecycle management — either centrally with CleanupPolicy/ClusterCleanupPolicy or per-resource with the `cleanup.kyverno.io/ttl` label. For implementation details and examples, see the official Kyverno cleanup documentation: [Kyverno Cleanup Policies](https://kyverno.io/docs/writing-policies/cleanup-policy/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/38c696a0-131e-44d4-9265-2e8b3c6abe20/lesson/a0a29c23-9d33-4755-b13b-064eed20bf56" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/38c696a0-131e-44d4-9265-2e8b3c6abe20/lesson/a0a29c23-9d33-4755-b13b-064eed20bf56)

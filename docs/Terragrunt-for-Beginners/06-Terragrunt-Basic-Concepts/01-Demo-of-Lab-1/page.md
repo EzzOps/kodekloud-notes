@@ -46,9 +46,7 @@ ERROR[0000] The currently installed version of Terragrunt (0.58.12) is not compa
 ERROR[0000] Unable to determine underlying exit code, so Terragrunt will exit with error code 1
 ```
 
-<Callout icon="triangle-alert">
-  Locking to very specific versions can block legitimate upgrades. Plan your version bumps carefully and test in a staging environment.
-</Callout>
+> **triangle-alert** Locking to very specific versions can block legitimate upgrades. Plan your version bumps carefully and test in a staging environment.
 
 ## Links and References
 
@@ -56,9 +54,7 @@ ERROR[0000] Unable to determine underlying exit code, so Terragrunt will exit wi
 * [Terragrunt Configuration Reference](https://terragrunt.gruntwork.io/docs/reference/config-blocks/)
 * [Terraform AWS VPC Module](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/990b6330-6327-4a96-8994-f8f26bce751b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/990b6330-6327-4a96-8994-f8f26bce751b)
 
 
 # Demo of Lab 1
@@ -71,9 +67,7 @@ Welcome to **Lab 1**! This lesson will guide you through installing Terraform 1.
 
 When you open the lab, click **Open in VS Code** to launch the editor in a new browser tab. This allows you to copy and paste commands directly into the integrated terminal. Dismiss any initial prompts to get started.
 
-<Frame>
-  ![The image shows a split-screen view of a Visual Studio Code environment with instructions for opening a terminal and copying text, alongside a task prompt about using VS Code in a browser tab.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884284/notes-assets/images/Terragrunt-for-Beginners-Demo-of-Lab-1/vs-code-terminal-instructions-task-prompt.jpg)
-</Frame>
+![The image shows a split-screen view of a Visual Studio Code environment with instructions for opening a terminal and copying text, alongside a task prompt about using VS Code in a browser tab.](https://kodekloud.com/kk-media/image/upload/v1752884284/notes-assets/images/Terragrunt-for-Beginners-Demo-of-Lab-1/vs-code-terminal-instructions-task-prompt.jpg)
 
 ***
 

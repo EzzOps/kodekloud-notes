@@ -30,7 +30,7 @@ Azure Data Factory acts as the orchestration engine that manages data ingestion,
 
 After ingesting data into ADF and storing it in a Storage Blob, the data can be moved to platforms such as [Azure Synapse Analytics](https://learn.microsoft.com/en-us/azure/synapse-analytics/) (formerly known as Data Warehouse), analyzed with Azure Analysis Services, and visualized using Power BI.
 
-![The image is a diagram illustrating data-driven workflows, showing the flow from data sources through orchestration (ingestion and data storage) to analysis and visualization using tools like SQL Server, Storage Blob, Synapse, Analysis Service, and Power BI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866892/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Factory/data-driven-workflows-diagram.jpg)
+![The image is a diagram illustrating data-driven workflows, showing the flow from data sources through orchestration (ingestion and data storage) to analysis and visualization using tools like SQL Server, Storage Blob, Synapse, Analysis Service, and Power BI.](https://kodekloud.com/kk-media/image/upload/v1752866892/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Factory/data-driven-workflows-diagram.jpg)
 
 The diagram above provides an overview of a typical data-driven workflow. It demonstrates how data is collected from multiple sources, ingested into a Storage Blob, and then processed and transformed using Azure Synapse Analytics and Analysis Services, with the final output visualized in Power BI.
 
@@ -50,7 +50,7 @@ ADF is a clear choice for various data integration scenarios. Consider the follo
 * **Provisioning:**\
   ADF supports both dedicated and serverless provisioning modes. Serverless provisioning allows scaling automatically based on demand without manual compute node management.
 
-![The image is an infographic from KodeKloud titled "When to use ADF?" It outlines decision criteria for using Azure Data Factory, focusing on requirements, development, data sources, and provisioning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866893/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Factory/when-to-use-adf-infographic.jpg)
+![The image is an infographic from KodeKloud titled "When to use ADF?" It outlines decision criteria for using Azure Data Factory, focusing on requirements, development, data sources, and provisioning.](https://kodekloud.com/kk-media/image/upload/v1752866893/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Factory/when-to-use-adf-infographic.jpg)
 
 The infographic clearly summarizes the essential factors for determining whether Azure Data Factory meets your data integration needs.
 
@@ -61,26 +61,26 @@ Creating an Azure Data Factory instance is a straightforward process via the Azu
 1. **Access the Data Factory Resource:**\
    Open the Azure Portal and search for "Data Factory". If no data factories exist, you will see a message indicating that none are present.
 
-![The image shows a Microsoft Azure portal page for "Data factories," indicating that there are no data factories to display. There is an option to create a new data factory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866894/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Factory/azure-portal-data-factories-empty.jpg)
+![The image shows a Microsoft Azure portal page for "Data factories," indicating that there are no data factories to display. There is an option to create a new data factory.](https://kodekloud.com/kk-media/image/upload/v1752866894/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Factory/azure-portal-data-factories-empty.jpg)
 
 2. **Create a New Resource:**\
    Start by creating a new resource group with a unique name, then proceed to create the Data Factory instance.
 
-![The image shows a Microsoft Azure portal page for creating a Data Factory, with fields for subscription, resource group, and instance details. An error message indicates that the chosen Data Factory name is already taken.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866897/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Factory/azure-portal-data-factory-error.jpg)
+![The image shows a Microsoft Azure portal page for creating a Data Factory, with fields for subscription, resource group, and instance details. An error message indicates that the chosen Data Factory name is already taken.](https://kodekloud.com/kk-media/image/upload/v1752866897/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Factory/azure-portal-data-factory-error.jpg)
 
 3. **Configure the Instance Details:**\
    Choose a region (for example, East US) and select the appropriate version, typically V2. Git configuration and networking options (public or private endpoints) can be set up later.
 
-![The image shows a Microsoft Azure portal page for creating a Data Factory, specifically on the "Git configuration" tab, with options to configure a Git repository.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866899/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Factory/azure-data-factory-git-configuration.jpg)
+![The image shows a Microsoft Azure portal page for creating a Data Factory, specifically on the "Git configuration" tab, with options to configure a Git repository.](https://kodekloud.com/kk-media/image/upload/v1752866899/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Factory/azure-data-factory-git-configuration.jpg)
 
 4. **Review and Create:**\
    After reviewing your settings, navigate to the "Review + create" tab and click on the "Create" button.
 
-![The image shows a Microsoft Azure portal page for creating a Data Factory, with options to review and create the setup. The user is on the "Review + create" tab, and a "Create" button is highlighted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866902/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Factory/azure-portal-data-factory-create.jpg)
+![The image shows a Microsoft Azure portal page for creating a Data Factory, with options to review and create the setup. The user is on the "Review + create" tab, and a "Create" button is highlighted.](https://kodekloud.com/kk-media/image/upload/v1752866902/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Factory/azure-portal-data-factory-create.jpg)
 
 Once the instance is created, click "Go to resource" to view your new Data Factory. A kickstart guide will be available to help you begin working with ADF.
 
-![The image shows the Azure Data Factory Studio interface, displaying an overview of a data factory with options to launch the studio, access tutorials, and view monitoring details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866903/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Factory/azure-data-factory-studio-overview.jpg)
+![The image shows the Azure Data Factory Studio interface, displaying an overview of a data factory with options to launch the studio, access tutorials, and view monitoring details.](https://kodekloud.com/kk-media/image/upload/v1752866903/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Factory/azure-data-factory-studio-overview.jpg)
 
 > **lightbulb** After creating your Azure Data Factory instance, use the kickstart guide to familiarize yourself with its features and best practices for managing data workflows.
 
@@ -93,7 +93,7 @@ The Azure Data Factory Studio is the dedicated environment for managing and buil
 
 For example, accessing the "Ingestion" module allows you to create tasks that schedule data copying. You can choose to run these tasks on a daily basis or as one-time executions.
 
-![The image shows the Microsoft Azure Data Factory interface, specifically the "Copy Data Tool" section, where users can select task types and configure task schedules for data copying.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866904/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Factory/azure-data-factory-copy-tool.jpg)
+![The image shows the Microsoft Azure Data Factory interface, specifically the "Copy Data Tool" section, where users can select task types and configure task schedules for data copying.](https://kodekloud.com/kk-media/image/upload/v1752866904/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Data-Factory/azure-data-factory-copy-tool.jpg)
 
 When you select a source such as Blob Storage, the interface will prompt you to establish a new connection by providing the necessary connection string. The platform presents all available connectors, enabling you to build customized workflows seamlessly.
 

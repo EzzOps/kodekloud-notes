@@ -297,7 +297,7 @@ Helm has come a long way since its inception. Understanding the differences betw
 
 Helm 1.0 debuted in February 2016, followed by Helm 2.0 in November 2016 and Helm 3.0 in November 2019. The project has matured significantly, driven largely by enhancements in Kubernetes.
 
-![The image is a timeline of Helm's version history, showing releases 1.0 in February 2016, 2.0 in November 2016, and 3.0 in November 2019.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878958/notes-assets/images/Helm-for-Beginners-A-quick-note-about-Helm2-vs-Helm3/helm-version-history-timeline.jpg)
+![The image is a timeline of Helm's version history, showing releases 1.0 in February 2016, 2.0 in November 2016, and 3.0 in November 2019.](https://kodekloud.com/kk-media/image/upload/v1752878958/notes-assets/images/Helm-for-Beginners-A-quick-note-about-Helm2-vs-Helm3/helm-version-history-timeline.jpg)
 
 Improvements in Kubernetes empowered Helm with more robust tools, enabling a simpler and more effective design in Helm 3 compared to Helm 2. In this lesson, we focus on Helm 3, which simplifies the overall design and introduces enhanced features—particularly in security and revision management.
 
@@ -305,13 +305,13 @@ Improvements in Kubernetes empowered Helm with more robust tools, enabling a sim
 
 Helm uses a command-line client on your local machine to execute commands on a Kubernetes cluster. In Helm 2, limitations in Kubernetes—such as the absence of role-based access control (RBAC) and custom resource definitions (CRDs)—necessitated an extra component called Tiller. The Helm client communicated with Tiller, which then interacted with Kubernetes to implement your commands.
 
-![The image is a diagram illustrating the architecture of Helm 2, showing the interaction between the Helm CLI and Tiller, with references to Kubernetes and notes on Role-Based Access Control and Custom Resource Definitions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878959/notes-assets/images/Helm-for-Beginners-A-quick-note-about-Helm2-vs-Helm3/helm-2-architecture-diagram.jpg)
+![The image is a diagram illustrating the architecture of Helm 2, showing the interaction between the Helm CLI and Tiller, with references to Kubernetes and notes on Role-Based Access Control and Custom Resource Definitions.](https://kodekloud.com/kk-media/image/upload/v1752878959/notes-assets/images/Helm-for-Beginners-A-quick-note-about-Helm2-vs-Helm3/helm-2-architecture-diagram.jpg)
 
 > **lightbulb** In Helm 2, Tiller functioned with full privileges by default, which introduced significant security concerns.
 
 With the introduction of RBAC and CRDs in Kubernetes, the need for Tiller was eliminated. Consequently, Helm 3 removes Tiller entirely, allowing direct communication between the Helm CLI and the Kubernetes API. This change not only reduces complexity but also enhances security by enforcing Kubernetes’ RBAC policies consistently—whether commands are executed via kubectl or Helm.
 
-![The image is a diagram illustrating Helm 3 architecture, showing the interaction between the Helm CLI, Kubernetes, and features like Role-Based Access Control and Custom Resource Definitions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878960/notes-assets/images/Helm-for-Beginners-A-quick-note-about-Helm2-vs-Helm3/helm-3-architecture-diagram.jpg)
+![The image is a diagram illustrating Helm 3 architecture, showing the interaction between the Helm CLI, Kubernetes, and features like Role-Based Access Control and Custom Resource Definitions.](https://kodekloud.com/kk-media/image/upload/v1752878960/notes-assets/images/Helm-for-Beginners-A-quick-note-about-Helm2-vs-Helm3/helm-3-architecture-diagram.jpg)
 
 ## Three-Way Strategic Merge Patch: Intelligent Rollbacks and Upgrades
 
@@ -398,7 +398,7 @@ The key differences between Helm 2 and Helm 3 are summarized below:
 | Tiller             | Required for managing releases, with full privileges by default | Removed for direct CLI-to-Kubernetes communication                                      |
 | Rollback Mechanism | Based solely on chart comparison, ignoring manual changes       | Uses a three-way strategic merge patch to intelligently record and revert state changes |
 
-![The image is a comparison table between Helm 2 and Helm 3, showing that Helm 2 uses Tiller while Helm 3 does not, and Helm 3 supports 3-Way Strategic Merge Patch while Helm 2 does not.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878960/notes-assets/images/Helm-for-Beginners-A-quick-note-about-Helm2-vs-Helm3/helm-2-vs-helm-3-comparison.jpg)
+![The image is a comparison table between Helm 2 and Helm 3, showing that Helm 2 uses Tiller while Helm 3 does not, and Helm 3 supports 3-Way Strategic Merge Patch while Helm 2 does not.](https://kodekloud.com/kk-media/image/upload/v1752878960/notes-assets/images/Helm-for-Beginners-A-quick-note-about-Helm2-vs-Helm3/helm-2-vs-helm-3-comparison.jpg)
 
 That concludes this article. In the next lesson, we will explore more advanced Helm topics and further refine our practices in managing Kubernetes deployments.
 

@@ -10,21 +10,21 @@ In this lesson, you will learn how to work with the Amazon Elastic Container Reg
 
 Start by searching for "ECR" in the AWS Management Console. Once you locate the service, choose to create a repository. You can either click the "Create repository" button directly or navigate to "Repositories" and then click "Create repository."
 
-![The image shows the Amazon Elastic Container Registry (ECR) webpage, highlighting features like sharing and deploying container software, with sections on how it works, benefits, pricing, and getting started.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858497/notes-assets/images/AWS-Certified-Developer-Associate-ECR-Demo/amazon-ecr-webpage-features.jpg)
+![The image shows the Amazon Elastic Container Registry (ECR) webpage, highlighting features like sharing and deploying container software, with sections on how it works, benefits, pricing, and getting started.](https://kodekloud.com/kk-media/image/upload/v1752858497/notes-assets/images/AWS-Certified-Developer-Associate-ECR-Demo/amazon-ecr-webpage-features.jpg)
 
 On the "Create repository" page, begin by configuring the general settings. Under visibility, select between a private and a public repository. A public repository allows unauthenticated pulls (although only you can push images), whereas a private repository requires authentication for access. For this demo, we use a private repository. Note that once a repository is created, you cannot change its visibility.
 
 Next, provide a name for your repository (e.g., "ECR demo"). This name becomes part of the image's URL (formatted as "your-account-id/repository-name").
 
-![The image shows the "Create repository" page on Amazon ECR, where settings like visibility, repository name, and tag immutability are being configured.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858499/notes-assets/images/AWS-Certified-Developer-Associate-ECR-Demo/create-repository-amazon-ecr-settings.jpg)
+![The image shows the "Create repository" page on Amazon ECR, where settings like visibility, repository name, and tag immutability are being configured.](https://kodekloud.com/kk-media/image/upload/v1752858499/notes-assets/images/AWS-Certified-Developer-Associate-ECR-Demo/create-repository-amazon-ecr-settings.jpg)
 
 Optional settings—such as tag immutability, scan on push, and encryption—can be configured here. For this demonstration, these options remain disabled.
 
-![The image shows a section of the AWS console for creating a repository, with options for image scan settings and encryption settings. There is a deprecation warning about "ScanOnPush" and a button to create the repository.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858500/notes-assets/images/AWS-Certified-Developer-Associate-ECR-Demo/aws-console-repository-settings.jpg)
+![The image shows a section of the AWS console for creating a repository, with options for image scan settings and encryption settings. There is a deprecation warning about "ScanOnPush" and a button to create the repository.](https://kodekloud.com/kk-media/image/upload/v1752858500/notes-assets/images/AWS-Certified-Developer-Associate-ECR-Demo/aws-console-repository-settings.jpg)
 
 Click "Create repository" to complete the setup. At this point, your ECR demo repository is created and empty, meaning no images have been pushed yet.
 
-![The image shows the Amazon Elastic Container Registry (ECR) interface with a private repository named "ecrdemo" listed, including details like URI, creation date, and settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858501/notes-assets/images/AWS-Certified-Developer-Associate-ECR-Demo/amazon-ecr-private-repository-demo.jpg)
+![The image shows the Amazon Elastic Container Registry (ECR) interface with a private repository named "ecrdemo" listed, including details like URI, creation date, and settings.](https://kodekloud.com/kk-media/image/upload/v1752858501/notes-assets/images/AWS-Certified-Developer-Associate-ECR-Demo/amazon-ecr-private-repository-demo.jpg)
 
 ## Pushing a Docker Image to ECR
 
@@ -49,7 +49,7 @@ Once the Docker image is built and pushed, running `docker image ls` will list y
 
 After pushing, the AWS console will show the image details such as tags, URI, digest, and the push date.
 
-![The image shows the Amazon Elastic Container Registry (ECR) interface displaying details of a container image, including its tags, URI, digest, and push date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858502/notes-assets/images/AWS-Certified-Developer-Associate-ECR-Demo/amazon-ecr-container-image-details.jpg)
+![The image shows the Amazon Elastic Container Registry (ECR) interface displaying details of a container image, including its tags, URI, digest, and push date.](https://kodekloud.com/kk-media/image/upload/v1752858502/notes-assets/images/AWS-Certified-Developer-Associate-ECR-Demo/amazon-ecr-container-image-details.jpg)
 
 ## Deploying the Image from ECR
 

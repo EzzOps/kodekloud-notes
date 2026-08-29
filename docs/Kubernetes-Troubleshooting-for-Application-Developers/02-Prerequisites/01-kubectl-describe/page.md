@@ -73,9 +73,7 @@ Capacity:
 
 This output includes key details such as labels, annotations, taints, and conditions critical for troubleshooting.
 
-<Callout icon="lightbulb">
-  Regularly reviewing output from "kubectl describe" can help you proactively monitor your cluster's health and quickly pinpoint potential issues.
-</Callout>
+> **lightbulb** Regularly reviewing output from "kubectl describe" can help you proactively monitor your cluster's health and quickly pinpoint potential issues.
 
 ## Exploring the Events Section
 
@@ -117,9 +115,7 @@ kubectl describe -n monitoring pod/grafana-68cd584679-jrwd5
 
 This command returns detailed metadata about the pod, including its namespace, service account information, annotations, IP address, container details (like restart counts and image versions), and the status of readiness and liveness probes. The output also highlights various conditions (e.g., initialization, container readiness, scheduling) and an events section.
 
-<Callout icon="lightbulb">
-  Using "kubectl describe" across different resource types enables you to narrow down issues and understand the detailed state of each component in your cluster.
-</Callout>
+> **lightbulb** Using "kubectl describe" across different resource types enables you to narrow down issues and understand the detailed state of each component in your cluster.
 
 ## Retrieving a List of Cluster Events
 
@@ -140,6 +136,4 @@ For further reading and additional details on Kubernetes, consider exploring the
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/1a2b613f-674a-4baf-9d9b-b70e31ca9d55" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-troubleshooting-for-application-developers/module/09c2c8a6-ba29-4d55-bea1-cd8584be9107/lesson/1a2b613f-674a-4baf-9d9b-b70e31ca9d55)

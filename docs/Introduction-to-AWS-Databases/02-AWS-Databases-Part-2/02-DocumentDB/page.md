@@ -7,9 +7,7 @@ Specify a master username and a strong password (for example `admin` + a strong 
   <img alt="A screenshot of the AWS OpenSearch domain creation page showing fine-grained access control enabled with a created master user (username &#x22;admin&#x22;) and a masked password, alongside a Summary panel listing engine version, data node, network and encryption settings." />
 </Frame>
 
-<Callout icon="warning">
-  Using public access makes your cluster reachable from the internet. For production use a VPC and restrictive security groups. Only use public access for short-lived demos.
-</Callout>
+> **warning** Using public access makes your cluster reachable from the internet. For production use a VPC and restrictive security groups. Only use public access for short-lived demos.
 
 Other optional settings: SAML or Amazon Cognito authentication, index-level access policies, encryption at rest and in transit, automatic software updates, and advanced cluster parameters. After reviewing settings, create the domain — provisioning typically takes 15–20 minutes.
 
@@ -21,9 +19,7 @@ Other optional settings: SAML or Amazon Cognito authentication, index-level acce
 * Use the cluster endpoint for API calls and the Dashboards URL for the UI.
 * Log in to OpenSearch Dashboards with the master username/password. On first login you’ll be prompted about tenants — the default Global tenant is fine for demos.
 
-<Callout icon="lightbulb">
-  Keep your domain endpoint and master credentials private. Consider storing credentials in a secrets manager for repeatable scripts.
-</Callout>
+> **lightbulb** Keep your domain endpoint and master credentials private. Consider storing credentials in a secrets manager for repeatable scripts.
 
 <Frame>
   <img alt="A screenshot of the Amazon OpenSearch Service console displaying the &#x22;demo&#x22; domain details — showing domain status (Active), cluster health (Green), OpenSearch version, and domain endpoint links. The left sidebar shows navigation for Managed clusters, Serverless, and other OpenSearch settings." />
@@ -150,9 +146,7 @@ To avoid ongoing charges, delete the OpenSearch domain when you finish:
 
 This completes the lesson on provisioning an Amazon OpenSearch domain, using OpenSearch Dashboards with sample data, and indexing documents via the REST API.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/6b775562-0b27-41e9-93fc-bb16dab05d87/lesson/167596e5-3d9c-4e78-8802-b343bff462ea" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/6b775562-0b27-41e9-93fc-bb16dab05d87/lesson/167596e5-3d9c-4e78-8802-b343bff462ea)
 
 
 # DocumentDB
@@ -167,9 +161,7 @@ MongoDB is a widely used document (NoSQL) database known for flexible schemas an
 
 Amazon DocumentDB provides a managed MongoDB-compatible experience: AWS operates the underlying storage, replication, patching, and availability, similar to how Amazon RDS manages relational databases.
 
-<Callout icon="lightbulb">
-  DocumentDB is MongoDB-compatible and works with many `MongoDB` drivers and tools. Always verify compatibility for the specific MongoDB driver version and features your application depends on before migrating.
-</Callout>
+> **lightbulb** DocumentDB is MongoDB-compatible and works with many `MongoDB` drivers and tools. Always verify compatibility for the specific MongoDB driver version and features your application depends on before migrating.
 
 ## DocumentDB clusters: storage and instances
 
@@ -226,9 +218,7 @@ Replication is handled by the storage layer, so compute instances in each region
   <img alt="A presentation slide titled &#x22;DocumentDB – Features&#x22; showing three colored feature cards labeled &#x22;MongoDB-Compatible,&#x22; &#x22;Storage Auto-Repair,&#x22; and &#x22;Cache Warming,&#x22; each with a small icon." />
 </Frame>
 
-<Callout icon="warning">
-  DocumentDB aims for MongoDB compatibility, but there are differences and unsupported features (e.g., some storage engine internals, specific server-side features). Test your application against DocumentDB in a staging environment before full migration.
-</Callout>
+> **warning** DocumentDB aims for MongoDB compatibility, but there are differences and unsupported features (e.g., some storage engine internals, specific server-side features). Test your application against DocumentDB in a staging environment before full migration.
 
 ## Replicas and read scaling
 
@@ -294,6 +284,4 @@ Amazon DocumentDB is a fully managed, MongoDB-compatible document database that 
 * MongoDB drivers and read preferences: [https://www.mongodb.com/docs/manual/core/read-preference/](https://www.mongodb.com/docs/manual/core/read-preference/)
 * Amazon RDS (managed relational databases): [https://aws.amazon.com/rds/](https://aws.amazon.com/rds/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/6b775562-0b27-41e9-93fc-bb16dab05d87/lesson/efcc75fd-0c1f-40c1-b426-83f61f87c47e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/6b775562-0b27-41e9-93fc-bb16dab05d87/lesson/efcc75fd-0c1f-40c1-b426-83f61f87c47e)

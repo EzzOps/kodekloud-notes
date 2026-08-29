@@ -4,13 +4,9 @@ $ sudo mv kubebuilder /usr/local/bin/
 $ kubebuilder version
 ```
 
-<Callout icon="lightbulb">
-  Make sure `kubebuilder` is executable and located in a directory that is on your `PATH` (for example `/usr/local/bin`).
-</Callout>
+> **lightbulb** Make sure `kubebuilder` is executable and located in a directory that is on your `PATH` (for example `/usr/local/bin`).
 
-<Callout icon="warning">
-  Kubebuilder will not scaffold into a directory that already contains files. Always run `kubebuilder init` from an empty project folder (check your editor or run `ls -la` first). If the folder contains files, create a clean directory before continuing.
-</Callout>
+> **warning** Kubebuilder will not scaffold into a directory that already contains files. Always run `kubebuilder init` from an empty project folder (check your editor or run `ls -la` first). If the folder contains files, create a clean directory before continuing.
 
 ## Verify toolchain
 
@@ -110,9 +106,7 @@ References and further reading:
 * Kubernetes documentation: [https://kubernetes.io/docs/](https://kubernetes.io/docs/)
 * Go installation: [https://go.dev/doc/install](https://go.dev/doc/install)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/20a4ec01-fde8-466d-83c7-2f74f6def1f0/lesson/890865bb-b83d-494c-a64b-b96ca96194fb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/20a4ec01-fde8-466d-83c7-2f74f6def1f0/lesson/890865bb-b83d-494c-a64b-b96ca96194fb)
 
 
 # Demo Project Structure Walkthrough
@@ -125,17 +119,13 @@ You just ran `kubebuilder init`. When you open the generated folder it can feel 
 
 Think of this project as a labeled workbench: Kubebuilder has already placed the tools and drawers before you build the operator. You don't need to memorize every file — just know which drawer to open for each job.
 
-<Callout icon="lightbulb">
-  Treat this layout as a simple map: knowing where startup code, API types, reconcile logic, deployment manifests, and helper targets live is enough to get productive.
-</Callout>
+> **lightbulb** Treat this layout as a simple map: knowing where startup code, API types, reconcile logic, deployment manifests, and helper targets live is enough to get productive.
 
 Start at the root.
 
 PROJECT is the label on this workbench. It records the domain, repo path, project name, and every API you add later. Kubebuilder regenerates it as needed, so you generally should not hand-edit it.
 
-<Callout icon="warning">
-  The `PROJECT` file is code-generated. Avoid manual edits unless you fully understand the implications—let Kubebuilder and plugins manage this file.
-</Callout>
+> **warning** The `PROJECT` file is code-generated. Avoid manual edits unless you fully understand the implications—let Kubebuilder and plugins manage this file.
 
 A typical generated `PROJECT` file looks like:
 

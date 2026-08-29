@@ -10,7 +10,7 @@ For example, if your web application enables users to upload images or files, yo
 
 For a comprehensive setup guide and additional resources, visit [AWS Developer Tools](https://aws.amazon.com/developer/tools/). In this lesson, we focus on JavaScript. After selecting AWS SDK for JavaScript and Node.js, you will be guided through the necessary setup instructions and prerequisites.
 
-![The image shows an AWS documentation page for getting started with Node.js using the AWS SDK for JavaScript, including setup instructions and prerequisites.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861820/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SDK-Demo/frame_90.jpg)
+![The image shows an AWS documentation page for getting started with Node.js using the AWS SDK for JavaScript, including setup instructions and prerequisites.](https://kodekloud.com/kk-media/image/upload/v1752861820/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SDK-Demo/frame_90.jpg)
 
 > **lightbulb** Remember that each programming language requires its own SDK installation process. For JavaScript, the package manager npm is used to install the S3 library.
 
@@ -63,7 +63,7 @@ console.log(listResponse);
 
 For additional details about available commands and configurations, refer to the [AWS SDK for JavaScript v3 documentation for S3](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/client-s3/).
 
-![The image shows a webpage from AWS SDK for JavaScript v3 documentation, detailing S3Client configuration and operations, including multipart upload commands.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861822/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SDK-Demo/frame_190.jpg)
+![The image shows a webpage from AWS SDK for JavaScript v3 documentation, detailing S3Client configuration and operations, including multipart upload commands.](https://kodekloud.com/kk-media/image/upload/v1752861822/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-SDK-Demo/frame_190.jpg)
 
 > **lightbulb** After writing and saving your script (e.g., as sdkDemo.mjs), execute it from the terminal with the command:
 

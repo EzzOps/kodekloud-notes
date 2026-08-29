@@ -30,9 +30,7 @@ When you create an instance of this class, PyTorch recognizes it as a neural net
 
 The `torch.nn.Module` class offers a structured approach for defining layers and operations in your model. By inheriting from this module, you benefit from features such as automatic management of weights, gradients, and parameter updates. This design also simplifies saving, loading, and reusing your model.
 
-<Frame>
-  ![The image describes the features of torch.nn.Module in PyTorch, highlighting its role in defining layers, simplifying weights and gradients, and facilitating model management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883124/notes-assets/images/PyTorch-Building-and-Training-a-model/torch-nn-module-features-pytorch.jpg)
-</Frame>
+![The image describes the features of torch.nn.Module in PyTorch, highlighting its role in defining layers, simplifying weights and gradients, and facilitating model management.](https://kodekloud.com/kk-media/image/upload/v1752883124/notes-assets/images/PyTorch-Building-and-Training-a-model/torch-nn-module-features-pytorch.jpg)
 
 In the `__init__` function, by defining the layers, you ensure that they are primed to process data seamlessly.
 
@@ -64,15 +62,11 @@ When designing a neural network, you have various types of layers at your dispos
 6. **Batch Normalization**
    * Normalizes the outputs of each layer to improve training stability and speed.
 
-<Frame>
-  ![The image describes three types of neural network layers: Dropout, Activation Functions, and Batch Normalization, each with a brief explanation and examples.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883126/notes-assets/images/PyTorch-Building-and-Training-a-model/neural-network-layers-dropout-activation-batch.jpg)
-</Frame>
+![The image describes three types of neural network layers: Dropout, Activation Functions, and Batch Normalization, each with a brief explanation and examples.](https://kodekloud.com/kk-media/image/upload/v1752883126/notes-assets/images/PyTorch-Building-and-Training-a-model/neural-network-layers-dropout-activation-batch.jpg)
 
 Other layers include pooling (MaxPool, AveragePool), padding, and embedding layers (common in NLP tasks). Vision-specific layers, such as transformer layers, are used in advanced image processing and NLP models.
 
-<Frame>
-  ![The image describes three types of neural network layers: Pooling, Padding, and Embedding, each with a brief explanation and associated functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883127/notes-assets/images/PyTorch-Building-and-Training-a-model/neural-network-layers-pooling-padding-embedding.jpg)
-</Frame>
+![The image describes three types of neural network layers: Pooling, Padding, and Embedding, each with a brief explanation and associated functions.](https://kodekloud.com/kk-media/image/upload/v1752883127/notes-assets/images/PyTorch-Building-and-Training-a-model/neural-network-layers-pooling-padding-embedding.jpg)
 
 Transformers are widely used in state-of-the-art models like BERT and GPT:
 
@@ -85,9 +79,7 @@ nn.TransformerEncoder,
 nn.TransformerDecoder
 ```
 
-<Frame>
-  ![The image lists two types of neural network layers: "Vision Specific" for image processing tasks and "Transformer" for NLP tasks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883128/notes-assets/images/PyTorch-Building-and-Training-a-model/neural-network-layers-vision-transformer.jpg)
-</Frame>
+![The image lists two types of neural network layers: "Vision Specific" for image processing tasks and "Transformer" for NLP tasks.](https://kodekloud.com/kk-media/image/upload/v1752883128/notes-assets/images/PyTorch-Building-and-Training-a-model/neural-network-layers-vision-transformer.jpg)
 
 ***
 
@@ -117,9 +109,7 @@ print(model)
 
 Printing the model displays the input, hidden, and output layers along with their corresponding parameters (weights and biases).
 
-<Frame>
-  ![The image is an infographic titled "Model Parameters," outlining four key points about adjustable weights and biases in PyTorch, including automatic tracking, easy access, and monitoring during learning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883129/notes-assets/images/PyTorch-Building-and-Training-a-model/model-parameters-pytorch-infographic.jpg)
-</Frame>
+![The image is an infographic titled "Model Parameters," outlining four key points about adjustable weights and biases in PyTorch, including automatic tracking, easy access, and monitoring during learning.](https://kodekloud.com/kk-media/image/upload/v1752883129/notes-assets/images/PyTorch-Building-and-Training-a-model/model-parameters-pytorch-infographic.jpg)
 
 ***
 
@@ -132,9 +122,7 @@ When designing your neural network, consider the following factors:
 * **Layers and Connections:** Decide the number of neurons and the connectivity between layers. Too few neurons may cause underfitting, whereas too many may lead to overfitting.
 * **Activation Functions:** Select the right activation functions (e.g., ReLU, sigmoid, or tanh) to capture non-linear patterns within your data.
 
-<Frame>
-  ![The image outlines four considerations for building a model: input and output size, network architecture, layer sizes and connections, and activation functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883130/notes-assets/images/PyTorch-Building-and-Training-a-model/model-building-considerations-diagram.jpg)
-</Frame>
+![The image outlines four considerations for building a model: input and output size, network architecture, layer sizes and connections, and activation functions.](https://kodekloud.com/kk-media/image/upload/v1752883130/notes-assets/images/PyTorch-Building-and-Training-a-model/model-building-considerations-diagram.jpg)
 
 ***
 
@@ -145,9 +133,7 @@ After designing the model, the next step is training. Training involves optimizi
 * **Loss Function:** This function measures how well the model's predictions match the target values. Common examples include cross-entropy loss for classification tasks and mean squared error (MSE) for regression tasks.
 * **Optimizer:** The optimizer adjusts the model’s parameters to minimize the loss using gradients computed via backpropagation. Popular optimizers include Stochastic Gradient Descent (SGD) and Adam.
 
-<Frame>
-  ![The image is an infographic comparing loss functions and optimizers in machine learning. It explains the roles of each, including measuring model error, adjusting weights, and highlighting popular choices like SGD and Adam.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883130/notes-assets/images/PyTorch-Building-and-Training-a-model/loss-functions-optimizers-infographic.jpg)
-</Frame>
+![The image is an infographic comparing loss functions and optimizers in machine learning. It explains the roles of each, including measuring model error, adjusting weights, and highlighting popular choices like SGD and Adam.](https://kodekloud.com/kk-media/image/upload/v1752883130/notes-assets/images/PyTorch-Building-and-Training-a-model/loss-functions-optimizers-infographic.jpg)
 
 Below is an example that defines a loss function and an optimizer for a model:
 
@@ -160,18 +146,14 @@ optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
 
 Here, `criterion` is set to cross-entropy loss for classification tasks, and `optimizer` is configured as SGD with a learning rate of 0.001 and momentum of 0.9. Other loss functions such as Mean Squared Error (MSELoss) and Binary Cross-Entropy (BCELoss) cater to regression and binary classification tasks, respectively.
 
-<Frame>
-  ![The image lists three common loss functions: CrossEntropyLoss for multi-class classification, Mean Squared Error (MSELoss) for regression, and Binary Cross Entropy (BCELoss) for binary classification.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883131/notes-assets/images/PyTorch-Building-and-Training-a-model/loss-functions-classification-regression.jpg)
-</Frame>
+![The image lists three common loss functions: CrossEntropyLoss for multi-class classification, Mean Squared Error (MSELoss) for regression, and Binary Cross Entropy (BCELoss) for binary classification.](https://kodekloud.com/kk-media/image/upload/v1752883131/notes-assets/images/PyTorch-Building-and-Training-a-model/loss-functions-classification-regression.jpg)
 
 Common optimizers include:
 
 * **Stochastic Gradient Descent (SGD):** Updates weights based on gradients, often enhanced with momentum.
 * **Adam:** Combines SGD with adaptive learning rates for improved optimization.
 
-<Frame>
-  ![The image describes two common optimizers: Stochastic Gradient Descent (SGD), which updates weights using gradients and is often used with momentum, and Adam, which combines SGD with adaptive learning rates for faster optimization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883132/notes-assets/images/PyTorch-Building-and-Training-a-model/stochastic-gradient-descent-adam-optimizers.jpg)
-</Frame>
+![The image describes two common optimizers: Stochastic Gradient Descent (SGD), which updates weights using gradients and is often used with momentum, and Adam, which combines SGD with adaptive learning rates for faster optimization.](https://kodekloud.com/kk-media/image/upload/v1752883132/notes-assets/images/PyTorch-Building-and-Training-a-model/stochastic-gradient-descent-adam-optimizers.jpg)
 
 ***
 
@@ -179,9 +161,7 @@ Common optimizers include:
 
 One of PyTorch's standout features is automatic differentiation with Autograd. This mechanism tracks operations performed on Tensors to build a computational graph, which is later used to compute gradients during backpropagation. When you invoke `loss.backward()`, Autograd calculates the gradients for each parameter, guiding the optimizer in updating the model's weights.
 
-<Frame>
-  ![The image explains automatic differentiation (Autograd) in machine learning, highlighting the forward pass for recording operations and creating a computational graph, and the backward pass for computing gradients.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883133/notes-assets/images/PyTorch-Building-and-Training-a-model/automatic-differentiation-autograd-diagram.jpg)
-</Frame>
+![The image explains automatic differentiation (Autograd) in machine learning, highlighting the forward pass for recording operations and creating a computational graph, and the backward pass for computing gradients.](https://kodekloud.com/kk-media/image/upload/v1752883133/notes-assets/images/PyTorch-Building-and-Training-a-model/automatic-differentiation-autograd-diagram.jpg)
 
 This automated gradient computation simplifies the training process by eliminating the need for manual derivative calculations.
 
@@ -198,9 +178,7 @@ With the neural network, loss function, and optimizer defined, the next step is 
 
 An epoch signifies one complete pass through the training dataset.
 
-<Frame>
-  ![The image is a flowchart illustrating the process of training a model, which involves making predictions, calculating errors, and updating weights, repeated in cycles called epochs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883134/notes-assets/images/PyTorch-Building-and-Training-a-model/model-training-flowchart-epochs.jpg)
-</Frame>
+![The image is a flowchart illustrating the process of training a model, which involves making predictions, calculating errors, and updating weights, repeated in cycles called epochs.](https://kodekloud.com/kk-media/image/upload/v1752883134/notes-assets/images/PyTorch-Building-and-Training-a-model/model-training-flowchart-epochs.jpg)
 
 ### Example Training Loop
 
@@ -278,13 +256,9 @@ for epoch in range(N_EPOCHS):  # Loop for 3 epochs
     print(f"Epoch: {epoch} Train Loss: {training_loss/len(trainloader)} Val Loss: {val_loss/len(valoader)}")
 ```
 
-<Callout icon="lightbulb">
-  Remember to switch between training and evaluation modes using `model.train()` and `model.eval()`. This ensures that layers like dropout behave correctly during training and inference.
-</Callout>
+> **lightbulb** Remember to switch between training and evaluation modes using `model.train()` and `model.eval()`. This ensures that layers like dropout behave correctly during training and inference.
 
-<Frame>
-  ![The image is about model validation, specifically addressing model overfitting, explaining that overfitting occurs when a model learns too much from training data and struggles to generalize to new data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883135/notes-assets/images/PyTorch-Building-and-Training-a-model/model-validation-overfitting-explained.jpg)
-</Frame>
+![The image is about model validation, specifically addressing model overfitting, explaining that overfitting occurs when a model learns too much from training data and struggles to generalize to new data.](https://kodekloud.com/kk-media/image/upload/v1752883135/notes-assets/images/PyTorch-Building-and-Training-a-model/model-validation-overfitting-explained.jpg)
 
 ***
 
@@ -305,9 +279,7 @@ for epoch in range(N_EPOCHS):  # Loop for 3 epochs
    * Perform forward passes, compute the loss, backpropagate, and update weights.
    * Optionally incorporate validation to monitor generalization.
 
-<Frame>
-  ![The image outlines steps for building and training a model, including creating an instance, defining loss functions and optimizers, and running a training loop.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883135/notes-assets/images/PyTorch-Building-and-Training-a-model/model-building-training-steps.jpg)
-</Frame>
+![The image outlines steps for building and training a model, including creating an instance, defining loss functions and optimizers, and running a training loop.](https://kodekloud.com/kk-media/image/upload/v1752883135/notes-assets/images/PyTorch-Building-and-Training-a-model/model-building-training-steps.jpg)
 
 ***
 
@@ -322,9 +294,7 @@ In this article, we have covered:
 
 This foundational knowledge paves the way for exploring more advanced topics and practical demonstrations of neural networks in action.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/9c822dcd-3b71-4c90-9dc3-c1729b4ae61c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/9c822dcd-3b71-4c90-9dc3-c1729b4ae61c)
 
 
 # Demo Additional Training Methods

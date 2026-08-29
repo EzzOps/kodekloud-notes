@@ -46,21 +46,15 @@ This Dockerfile performs the following actions:
 * **Exposing Port 5000:** Documents the port on which the container will listen.
 * **Running the Application:** Executes the command to start the Flask application.
 
-<Callout icon="lightbulb">
-  The `EXPOSE` instruction is for documentation purposes only and does not publish the port. Use the `-p` flag to map container ports to the host, e.g., `docker run -p 5000:5000 my-flask-app:v1`.
-</Callout>
+> **lightbulb** The `EXPOSE` instruction is for documentation purposes only and does not publish the port. Use the `-p` flag to map container ports to the host, e.g., `docker run -p 5000:5000 my-flask-app:v1`.
 
 ## Selecting the Appropriate Base Image
 
 Since this application utilizes Python, we selected an Alpine-based Python image available on [Docker Hub](https://hub.docker.com) for its reduced size and efficiency. Searching for "python" on Docker Hub provides multiple options, including slim and Alpine variants.
 
-<Frame>
-  ![The image shows the Docker Hub website, featuring a search bar and sections for trusted content, spotlight articles, and categories related to development and machine learning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879857/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Building-a-Custom-Docker-Image/docker-hub-website-search-development.jpg)
-</Frame>
+![The image shows the Docker Hub website, featuring a search bar and sections for trusted content, spotlight articles, and categories related to development and machine learning.](https://kodekloud.com/kk-media/image/upload/v1752879857/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Building-a-Custom-Docker-Image/docker-hub-website-search-development.jpg)
 
-<Frame>
-  ![The image shows a search results page on Docker Hub for "python," displaying various Python-related container images with options to filter by products, trusted content, and categories.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879858/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Building-a-Custom-Docker-Image/docker-hub-python-search-results.jpg)
-</Frame>
+![The image shows a search results page on Docker Hub for "python," displaying various Python-related container images with options to filter by products, trusted content, and categories.](https://kodekloud.com/kk-media/image/upload/v1752879858/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Building-a-Custom-Docker-Image/docker-hub-python-search-results.jpg)
 
 ## Copying Application Files
 
@@ -195,9 +189,7 @@ For more detailed documentation, visit these links:
 
 Happy containerizing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/9eb65ce1-0aef-4f00-b661-5f8308aef2bd/lesson/f88eb052-fff3-4a78-83b3-3530030f8d7b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/9eb65ce1-0aef-4f00-b661-5f8308aef2bd/lesson/f88eb052-fff3-4a78-83b3-3530030f8d7b)
 
 
 # Configuring Jenkins Pipeline with Docker
@@ -219,28 +211,20 @@ The CI/CD pipeline is structured with the following stages:
 
 Before pushing an image, ensure that Jenkins has the appropriate Docker credentials for authentication. Also, verify that Docker is installed on the Jenkins machine so that it can execute Docker CLI commands.
 
-<Frame>
-  ![The image shows a pipeline configuration flowchart with four stages: "Checkout Code," "Test," "Build Docker Image," and "Push Image to DockerHub."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879859/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Jenkins-Pipeline-with-Docker/pipeline-configuration-flowchart-docker.jpg)
-</Frame>
+![The image shows a pipeline configuration flowchart with four stages: "Checkout Code," "Test," "Build Docker Image," and "Push Image to DockerHub."](https://kodekloud.com/kk-media/image/upload/v1752879859/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Jenkins-Pipeline-with-Docker/pipeline-configuration-flowchart-docker.jpg)
 
 ## Setting Up Docker Hub
 
 To begin, create a Docker Hub repository. For example, you might name it "jenkins-flask-app" under your Docker Hub username. The repository path should adhere to the following format:\
 \<username>/jenkins-flask-app
 
-<Frame>
-  ![The image is a guide to creating a DockerHub repository, showing a Docker Hub icon and a sample repository path format: \\\<username>/jenkins-flask-app.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879860/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Jenkins-Pipeline-with-Docker/dockerhub-repository-guide.jpg)
-</Frame>
+![The image is a guide to creating a DockerHub repository, showing a Docker Hub icon and a sample repository path format: \\\<username>/jenkins-flask-app.](https://kodekloud.com/kk-media/image/upload/v1752879860/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Jenkins-Pipeline-with-Docker/dockerhub-repository-guide.jpg)
 
 When building the Docker image, you should use the format `\<username>/<repo-name>` along with a tag. In our example, we append the Git SHA (provided as an environment variable in Jenkins) to the image tag, ensuring each image can be correlated with a specific Git commit for easier troubleshooting.
 
-<Callout icon="lightbulb">
-  Remember to add Jenkins credentials for Docker access (username and password) so Jenkins can authenticate and push images to Docker Hub securely.
-</Callout>
+> **lightbulb** Remember to add Jenkins credentials for Docker access (username and password) so Jenkins can authenticate and push images to Docker Hub securely.
 
-<Frame>
-  ![The image shows a diagram for configuring DockerHub credentials, featuring a character holding a coffee cup above a box labeled with "Username" and "Password."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879861/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Jenkins-Pipeline-with-Docker/dockerhub-credentials-diagram.jpg)
-</Frame>
+![The image shows a diagram for configuring DockerHub credentials, featuring a character holding a coffee cup above a box labeled with "Username" and "Password."](https://kodekloud.com/kk-media/image/upload/v1752879861/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Jenkins-Pipeline-with-Docker/dockerhub-credentials-diagram.jpg)
 
 ## Jenkins Pipeline Configuration
 
@@ -320,6 +304,4 @@ For more information on setting up CI/CD with Jenkins and Docker, check out [Jen
 
 This concludes the configuration for integrating Jenkins with Docker in your CI/CD workflow.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/9eb65ce1-0aef-4f00-b661-5f8308aef2bd/lesson/80fefaac-fdb4-47b5-88a9-7c744b806d10" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/9eb65ce1-0aef-4f00-b661-5f8308aef2bd/lesson/80fefaac-fdb4-47b5-88a9-7c744b806d10)

@@ -14,9 +14,7 @@ Terraform provides three primary lifecycle meta-arguments:
 * `prevent_destroy`
 * `ignore_changes`
 
-<Callout icon="lightbulb">
-  Lifecycle settings change how Terraform performs create/replace/delete operations; use them to control replacement order, protect resources, or ignore drift on attributes you don't want Terraform to manage.
-</Callout>
+> **lightbulb** Lifecycle settings change how Terraform performs create/replace/delete operations; use them to control replacement order, protect resources, or ignore drift on attributes you don't want Terraform to manage.
 
 ## Quick comparison
 
@@ -73,9 +71,7 @@ resource "aws_s3_bucket" "important" {
 }
 ```
 
-<Callout icon="warning">
-  `prevent_destroy = true` is a strong safeguard. To remove a protected resource you must explicitly change the configuration (for example, remove the lifecycle block or set `prevent_destroy = false`) and apply the change, or carefully manipulate the state. Avoid manipulating state unless you understand the risks.
-</Callout>
+> **warning** `prevent_destroy = true` is a strong safeguard. To remove a protected resource you must explicitly change the configuration (for example, remove the lifecycle block or set `prevent_destroy = false`) and apply the change, or carefully manipulate the state. Avoid manipulating state unless you understand the risks.
 
 When to use:
 
@@ -154,6 +150,4 @@ References:
 
 * [Terraform: lifecycle meta-argument documentation](https://developer.hashicorp.com/terraform/language/meta-arguments/lifecycle)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/82cd6352-f026-4f6f-b739-634e56558de4/lesson/c2e6ac7f-71ed-4339-bb30-1cf2117f1e09" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/82cd6352-f026-4f6f-b739-634e56558de4/lesson/c2e6ac7f-71ed-4339-bb30-1cf2117f1e09)

@@ -24,9 +24,7 @@ Key features include:
 * **Managed Identities:** Utilize service principals or managed identities so your applications can securely access other Azure resources.
 * **Pod-Managed Identities:** Assign specific identities to pods for enhanced permission control.
 
-<Callout icon="lightbulb">
-  For improved security, consider using pod-managed identities to limit access permissions on a per-pod basis.
-</Callout>
+> **lightbulb** For improved security, consider using pod-managed identities to limit access permissions on a per-pod basis.
 
 ***
 
@@ -72,9 +70,7 @@ Configure your cluster with the following details:
 * **Pricing Tier and Version:** For demo purposes, select the free control plane with version 1.26.6.
 * **Authentication and Authorization:** Choose "Azure AD with Azure RBAC" for enhanced security.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a Kubernetes cluster, with options for project and cluster details such as subscription, resource group, and region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881758/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Secure-authentication-to-Azure-Kubernetes-Service-with-Active-Directory/azure-portal-kubernetes-cluster.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a Kubernetes cluster, with options for project and cluster details such as subscription, resource group, and region.](https://kodekloud.com/kk-media/image/upload/v1752881758/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Secure-authentication-to-Azure-Kubernetes-Service-with-Active-Directory/azure-portal-kubernetes-cluster.jpg)
 
 ### Step 2: Node Pools
 
@@ -84,9 +80,7 @@ Configure your node pools as follows:
 * **Zone Distribution and Size:** Distribute nodes across zones and choose a cost-effective size (e.g., B2S).
 * **Scaling:** Enable autoscaling with a default pool of five nodes.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for updating a Kubernetes node pool, with options for node pool name, mode, OS type, availability zones, node size, and scaling method.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881759/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Secure-authentication-to-Azure-Kubernetes-Service-with-Active-Directory/azure-kubernetes-node-pool-update.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for updating a Kubernetes node pool, with options for node pool name, mode, OS type, availability zones, node size, and scaling method.](https://kodekloud.com/kk-media/image/upload/v1752881759/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Secure-authentication-to-Azure-Kubernetes-Service-with-Active-Directory/azure-kubernetes-node-pool-update.jpg)
 
 ### Step 3: Networking
 
@@ -96,9 +90,7 @@ For networking, configure these settings:
 * **Authorized IP Ranges:** Limit public access where applicable.
 * **Network Configuration:** Choose Azure CNI and select a network policy. For demonstration purposes, opting for "none" simplifies setup (in production, consider Calico or the native Azure solution).
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a Kubernetes cluster, specifically on the "Integrations" tab, with options for Microsoft Defender for Cloud, Azure Container Registry, and Azure Monitor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881760/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Secure-authentication-to-Azure-Kubernetes-Service-with-Active-Directory/azure-portal-kubernetes-integrations.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a Kubernetes cluster, specifically on the "Integrations" tab, with options for Microsoft Defender for Cloud, Azure Container Registry, and Azure Monitor.](https://kodekloud.com/kk-media/image/upload/v1752881760/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Secure-authentication-to-Azure-Kubernetes-Service-with-Active-Directory/azure-portal-kubernetes-integrations.jpg)
 
 ### Step 4: Additional Integrations
 
@@ -110,9 +102,7 @@ Additional integrations include:
 
 Finally, review your settings and click "Review and Create." Once validation passes, create your cluster.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating a Kubernetes cluster, detailing settings for node pools, access, networking, and integrations. The validation has passed, and options like Azure AD authentication and network configuration are highlighted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881761/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Secure-authentication-to-Azure-Kubernetes-Service-with-Active-Directory/azure-portal-kubernetes-cluster-settings.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating a Kubernetes cluster, detailing settings for node pools, access, networking, and integrations. The validation has passed, and options like Azure AD authentication and network configuration are highlighted.](https://kodekloud.com/kk-media/image/upload/v1752881761/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Secure-authentication-to-Azure-Kubernetes-Service-with-Active-Directory/azure-portal-kubernetes-cluster-settings.jpg)
 
 ***
 
@@ -165,9 +155,7 @@ Now that your cluster is running, let's deploy an application using an image fro
 
 In the Azure portal, navigate to your Container Registry and check the Access Control (IAM) settings. Ensure the AKS cluster's managed identity has the ACR Pull role assigned.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal, specifically the Access Control (IAM) section for a container registry, displaying a list of role assignments and permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881763/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Secure-authentication-to-Azure-Kubernetes-Service-with-Active-Directory/azure-portal-access-control-iam.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal, specifically the Access Control (IAM) section for a container registry, displaying a list of role assignments and permissions.](https://kodekloud.com/kk-media/image/upload/v1752881763/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Secure-authentication-to-Azure-Kubernetes-Service-with-Active-Directory/azure-portal-access-control-iam.jpg)
 
 ### Creating a Deployment with a Load Balancer
 
@@ -233,9 +221,7 @@ kubectl get svc bootstrap-service
 
 Open the IP address in your browser to verify the application is running.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page indicating that a deployment is complete, with options for next steps such as creating a Kubernetes deployment and connecting to a cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881764/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Secure-authentication-to-Azure-Kubernetes-Service-with-Active-Directory/azure-portal-deployment-complete.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page indicating that a deployment is complete, with options for next steps such as creating a Kubernetes deployment and connecting to a cluster.](https://kodekloud.com/kk-media/image/upload/v1752881764/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Secure-authentication-to-Azure-Kubernetes-Service-with-Active-Directory/azure-portal-deployment-complete.jpg)
 
 ### Scaling and Managing the Deployment
 
@@ -279,9 +265,7 @@ Integrations include:
 * **Defender for Cloud:** Provides advanced threat protection.
 * **Azure Key Vault:** Stores sensitive data securely. Your application can authenticate to Azure AD, retrieve an access token, and fetch secrets such as SQL connection strings from Key Vault.
 
-<Callout icon="lightbulb">
-  It is highly recommended to pair your container deployments with Azure Key Vault to manage secrets securely and minimize the risk of exposing sensitive information.
-</Callout>
+> **lightbulb** It is highly recommended to pair your container deployments with Azure Key Vault to manage secrets securely and minimize the risk of exposing sensitive information.
 
 Example of managing pods with improved security:
 
@@ -306,6 +290,4 @@ By employing these security measures—system-assigned managed identities, encry
 
 Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/146650b0-63f9-4c4b-b452-716a780e5fc7/lesson/dea33873-2064-4190-bd54-34d31014ffc6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/146650b0-63f9-4c4b-b452-716a780e5fc7/lesson/dea33873-2064-4190-bd54-34d31014ffc6)

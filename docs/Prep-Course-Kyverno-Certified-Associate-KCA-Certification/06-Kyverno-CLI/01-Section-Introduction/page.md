@@ -42,9 +42,7 @@ There has to be a better way: how can Alex test this deployment locally before i
 
 To solve Alex's slow feedback loop and empower developers, this lesson will teach you how to use the Kyverno CLI effectively.
 
-<Callout icon="lightbulb">
-  Shifting validation left lets developers catch policy violations locally, shorten development cycles, and reduce failed deployments. The Kyverno CLI provides local `validate`, `apply` (for mutation + validation), and `test` commands to run policy checks before kubectl ever talks to the API server.
-</Callout>
+> **lightbulb** Shifting validation left lets developers catch policy violations locally, shorten development cycles, and reduce failed deployments. The Kyverno CLI provides local `validate`, `apply` (for mutation + validation), and `test` commands to run policy checks before kubectl ever talks to the API server.
 
 First, we'll cover the basics: what the CLI is for and how to install it. Next, we'll focus on the most common developer use case: `kyverno apply`, which lets you validate and mutate manifests locally—directly addressing Alex's problem. Finally, for policy authors and maintainers, we'll explore `kyverno test`, which enables formal test cases and unit-testing practices for your policy-as-code repository.
 
@@ -57,14 +55,10 @@ Below is a quick learning agenda of the lesson:
 | Validate & Mutate (`kyverno apply`)      | Fast feedback for developers — validate and apply policy-driven mutations locally | `kyverno apply . --resource deployment.yaml`                                                           |
 | Unit tests for policies (`kyverno test`) | CI-friendly tests for policy authors and reviewers                                | `kyverno test ./policies --policy policy.yaml`                                                         |
 
-<Callout icon="warning">
-  If you rely only on cluster admission for validation, developers will encounter errors late in the cycle. Use `kyverno apply` and `kyverno test` locally and in CI to prevent repeated failed deployments.
-</Callout>
+> **warning** If you rely only on cluster admission for validation, developers will encounter errors late in the cycle. Use `kyverno apply` and `kyverno test` locally and in CI to prevent repeated failed deployments.
 
 <Frame>
   <img alt="The image outlines a learning agenda with three key topics: understanding the CLI and installation, validating resources with &#x22;kyverno apply,&#x22; and creating test cases with &#x22;kyverno test.&#x22;" />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f4ceb35e-5c8e-4601-856b-997a26924a4a/lesson/55014898-9a75-4e98-a230-99fa7027c349" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f4ceb35e-5c8e-4601-856b-997a26924a4a/lesson/55014898-9a75-4e98-a230-99fa7027c349)

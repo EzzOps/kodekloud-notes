@@ -78,7 +78,7 @@ In this setup, **Deploy** runs immediately after **Build**, but only when the so
 | Application Scope  | Stage or job level                            | Stage, job, or individual step level                 |
 | Parallel Execution | Supports parallel runs when no dependencies   | Skips or runs tasks based on evaluated expressions   |
 
-![The image is a comparison chart highlighting the differences between "DependsOn" and "Condition" in terms of execution management, criteria, support, and application scope.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868075/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Stages-Dependencies-and-Conditions/depends-on-vs-condition-comparison-chart.jpg)
+![The image is a comparison chart highlighting the differences between "DependsOn" and "Condition" in terms of execution management, criteria, support, and application scope.](https://kodekloud.com/kk-media/image/upload/v1752868075/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Stages-Dependencies-and-Conditions/depends-on-vs-condition-comparison-chart.jpg)
 
 ## Best Practices for Stages, Dependencies, and Conditions
 
@@ -88,7 +88,7 @@ In this setup, **Deploy** runs immediately after **Build**, but only when the so
 
 > **triangle-alert** Overly complex dependencies and conditions can make pipelines hard to maintain. Keep configurations as clear and simple as possible.
 
-![The image outlines three best practices: organizing stages logically, using conditions to skip unnecessary runs, and clearly defining dependencies. It features a central thumbs-up icon surrounded by these points.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868076/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Stages-Dependencies-and-Conditions/best-practices-stages-conditions-dependencies.jpg)
+![The image outlines three best practices: organizing stages logically, using conditions to skip unnecessary runs, and clearly defining dependencies. It features a central thumbs-up icon surrounded by these points.](https://kodekloud.com/kk-media/image/upload/v1752868076/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Stages-Dependencies-and-Conditions/best-practices-stages-conditions-dependencies.jpg)
 
 ## References
 

@@ -14,7 +14,7 @@ Machine Learning, a subset of AI, centers on the development of algorithms that 
 
 Deep Learning, a specialized area within machine learning, utilizes multi-layered neural networks to capture intricate data patterns. Drawing inspiration from the human brain, these networks learn hierarchical representations from large datasets and robust computational power. Deep learning is crucial for tasks like speech and facial recognition, natural language processing, and autonomous vehicle navigation.
 
-![The image is a diagram explaining the concepts of Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning, highlighting their applications and functions. AI is associated with transforming industries, ML with learning from data patterns, and Deep Learning with facial recognition and natural language processing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857311/notes-assets/images/AWS-Certified-AI-Practitioner-AI-ML-and-Deep-Learning-Similarities-and-Differences/ai-ml-deep-learning-diagram.jpg)
+![The image is a diagram explaining the concepts of Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning, highlighting their applications and functions. AI is associated with transforming industries, ML with learning from data patterns, and Deep Learning with facial recognition and natural language processing.](https://kodekloud.com/kk-media/image/upload/v1752857311/notes-assets/images/AWS-Certified-AI-Practitioner-AI-ML-and-Deep-Learning-Similarities-and-Differences/ai-ml-deep-learning-diagram.jpg)
 
 ## The Relationship Between AI, ML, and Deep Learning
 
@@ -24,11 +24,11 @@ The relationship among these fields can be visualized as nested circles, each la
 * **Machine Learning**: A subset focused on predictive analysis by learning from data patterns.
 * **Deep Learning**: A further specialized subset that leverages complex neural networks to execute high-precision tasks.
 
-![The image is a Venn diagram illustrating the relationship between Artificial Intelligence, Machine Learning, and Deep Learning, with brief descriptions of each concept.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857312/notes-assets/images/AWS-Certified-AI-Practitioner-AI-ML-and-Deep-Learning-Similarities-and-Differences/ai-machine-learning-deep-learning-venn.jpg)
+![The image is a Venn diagram illustrating the relationship between Artificial Intelligence, Machine Learning, and Deep Learning, with brief descriptions of each concept.](https://kodekloud.com/kk-media/image/upload/v1752857312/notes-assets/images/AWS-Certified-AI-Practitioner-AI-ML-and-Deep-Learning-Similarities-and-Differences/ai-machine-learning-deep-learning-venn.jpg)
 
 AI broadly drives automation by applying human-like reasoning, while ML specializes in data-driven predictions. Deep learning, on the other hand, is optimized for recognizing and processing complex patterns using advanced neural networks.
 
-![The image is a diagram comparing Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning, highlighting their differences in terms of general intelligence simulations, learning from data patterns, and complex pattern recognition with neural networks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857313/notes-assets/images/AWS-Certified-AI-Practitioner-AI-ML-and-Deep-Learning-Similarities-and-Differences/ai-ml-deep-learning-comparison-diagram.jpg)
+![The image is a diagram comparing Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning, highlighting their differences in terms of general intelligence simulations, learning from data patterns, and complex pattern recognition with neural networks.](https://kodekloud.com/kk-media/image/upload/v1752857313/notes-assets/images/AWS-Certified-AI-Practitioner-AI-ML-and-Deep-Learning-Similarities-and-Differences/ai-ml-deep-learning-comparison-diagram.jpg)
 
 ## Choosing the Right Approach
 
@@ -47,7 +47,7 @@ To recap the distinctions:
 * **Machine Learning**: Focuses on algorithms that predict and infer outcomes from data.
 * **Deep Learning**: Employs complex multi-layer neural networks to analyze large volumes of unstructured data and deliver precise results.
 
-![The image is a decision-making guide for choosing between Machine Learning and Deep Learning based on application needs, data availability, and computational resources. Machine Learning requires moderate data and resources, while Deep Learning needs substantial data and high computational power.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857314/notes-assets/images/AWS-Certified-AI-Practitioner-AI-ML-and-Deep-Learning-Similarities-and-Differences/ml-vs-dl-decision-guide.jpg)
+![The image is a decision-making guide for choosing between Machine Learning and Deep Learning based on application needs, data availability, and computational resources. Machine Learning requires moderate data and resources, while Deep Learning needs substantial data and high computational power.](https://kodekloud.com/kk-media/image/upload/v1752857314/notes-assets/images/AWS-Certified-AI-Practitioner-AI-ML-and-Deep-Learning-Similarities-and-Differences/ml-vs-dl-decision-guide.jpg)
 
 > **lightbulb** Understanding the distinctions between AI, ML, and Deep Learning is critical for building effective and efficient systems. Evaluating your project’s specific requirements will guide you in choosing the most suitable approach.
 

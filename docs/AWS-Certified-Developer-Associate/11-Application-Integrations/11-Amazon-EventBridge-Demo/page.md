@@ -14,13 +14,13 @@ Every AWS account starts with a default EventBridge event bus. You can send even
 
 Navigate to the Event Buses section in the EventBridge console. You will see a display similar to the image below, featuring the default event bus along with the option to create a custom bus if needed.
 
-![The image shows the Amazon EventBridge console, displaying options for managing event buses, including a default event bus and the ability to create custom event buses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858384/notes-assets/images/AWS-Certified-Developer-Associate-Amazon-EventBridge-Demo/amazon-eventbridge-console-event-buses.jpg)
+![The image shows the Amazon EventBridge console, displaying options for managing event buses, including a default event bus and the ability to create custom event buses.](https://kodekloud.com/kk-media/image/upload/v1752858384/notes-assets/images/AWS-Certified-Developer-Associate-Amazon-EventBridge-Demo/amazon-eventbridge-console-event-buses.jpg)
 
 Proceed to the Rules section where you define which events will trigger specific actions. Click on **Create Rule**. You will be prompted to choose an event bus for the rule; here, select the default event bus.
 
 Assign a meaningful name (for example, "instance-status-change") and provide a description. You have the option to trigger the rule either by an event pattern or on a scheduled basis (similar to a cron job). For this demo, choose the event pattern option.
 
-![The image shows an AWS EventBridge console screen where a user is defining rule details for an event, including fields for name, description, and event bus selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858385/notes-assets/images/AWS-Certified-Developer-Associate-Amazon-EventBridge-Demo/aws-eventbridge-rule-details-console.jpg)
+![The image shows an AWS EventBridge console screen where a user is defining rule details for an event, including fields for name, description, and event bus selection.](https://kodekloud.com/kk-media/image/upload/v1752858385/notes-assets/images/AWS-Certified-Developer-Associate-Amazon-EventBridge-Demo/aws-eventbridge-rule-details-console.jpg)
 
 ***
 
@@ -66,7 +66,7 @@ export const handler = async (event) => {
 };
 ```
 
-![The image shows an AWS EventBridge console screen where a user is selecting targets for a rule, with options to choose target types and configure settings for a Lambda function.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858386/notes-assets/images/AWS-Certified-Developer-Associate-Amazon-EventBridge-Demo/aws-eventbridge-console-targets-lambda.jpg)
+![The image shows an AWS EventBridge console screen where a user is selecting targets for a rule, with options to choose target types and configure settings for a Lambda function.](https://kodekloud.com/kk-media/image/upload/v1752858386/notes-assets/images/AWS-Certified-Developer-Associate-Amazon-EventBridge-Demo/aws-eventbridge-console-targets-lambda.jpg)
 
 After selecting your target (for example, a Lambda function named "test one"), complete the tagging and review steps, then click **Create rule**. Your EventBridge rule is now active.
 
@@ -78,7 +78,7 @@ To test the configured rule, access the EC2 console and select a running instanc
 
 Once the instance status changes, EventBridge emits an event that invokes the Lambda function. Check the CloudWatch logs of the Lambda function to confirm that the event has been received. A typical log entry might include details such as the source ("aws.ec2"), detail type ("EC2 Instance State-change Notification"), and the state of the instance.
 
-![The image shows the Amazon EventBridge console with a rule named "instance-status-change" that is enabled. The interface includes options for managing event buses and rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858387/notes-assets/images/AWS-Certified-Developer-Associate-Amazon-EventBridge-Demo/amazon-eventbridge-instance-status-rule.jpg)
+![The image shows the Amazon EventBridge console with a rule named "instance-status-change" that is enabled. The interface includes options for managing event buses and rules.](https://kodekloud.com/kk-media/image/upload/v1752858387/notes-assets/images/AWS-Certified-Developer-Associate-Amazon-EventBridge-Demo/amazon-eventbridge-instance-status-rule.jpg)
 
 A sample log output might look like:
 
@@ -161,7 +161,7 @@ Return to the EventBridge console and create a new rule tailored for your custom
 
 Choose the target for this rule (for example, a Lambda function named "test two") and complete the rule creation.
 
-![The image shows an AWS EventBridge console screen where a user is selecting targets for a rule, with options to choose an EventBridge event bus, API destination, or AWS service. The selected target is a Lambda function named "test2."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858388/notes-assets/images/AWS-Certified-Developer-Associate-Amazon-EventBridge-Demo/aws-eventbridge-targets-lambda-test2.jpg)
+![The image shows an AWS EventBridge console screen where a user is selecting targets for a rule, with options to choose an EventBridge event bus, API destination, or AWS service. The selected target is a Lambda function named "test2."](https://kodekloud.com/kk-media/image/upload/v1752858388/notes-assets/images/AWS-Certified-Developer-Associate-Amazon-EventBridge-Demo/aws-eventbridge-targets-lambda-test2.jpg)
 
 After the rule is set up, test the event directly from the Event Bus by clicking **Send event**. Enter the source ("my-app"), detail type ("New User"), and additional event details as shown in the example:
 
@@ -189,7 +189,7 @@ Verify the event reception by inspecting the logs of the Lambda function "test t
 }
 ```
 
-![The image shows the Amazon EventBridge interface with a focus on the "Rules" section, displaying two enabled rules named "instance-status-change" and "my-api."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858389/notes-assets/images/AWS-Certified-Developer-Associate-Amazon-EventBridge-Demo/amazon-eventbridge-rules-interface.jpg)
+![The image shows the Amazon EventBridge interface with a focus on the "Rules" section, displaying two enabled rules named "instance-status-change" and "my-api."](https://kodekloud.com/kk-media/image/upload/v1752858389/notes-assets/images/AWS-Certified-Developer-Associate-Amazon-EventBridge-Demo/amazon-eventbridge-rules-interface.jpg)
 
 ### End-to-End Custom Event Test
 

@@ -17,9 +17,7 @@ A DoS attack aims to exhaust system resources—CPU, memory, networking—or dis
 | Direct `etcd` writes               | Inject or inflate workload definitions by writing straight to `etcd` with stolen certificates or tokens.    |
 | API-server scaling abuse           | Create or scale deployments via the API server to force excessive pod creation.                             |
 
-<Frame>
-  ![The image is a flowchart illustrating attack vectors for Denial of Service (DoS) in a Kubernetes environment, detailing various methods and steps to exploit vulnerabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880808/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Denial-of-Service/kubernetes-dos-attack-vectors-flowchart.jpg)
-</Frame>
+![The image is a flowchart illustrating attack vectors for Denial of Service (DoS) in a Kubernetes environment, detailing various methods and steps to exploit vulnerabilities.](https://kodekloud.com/kk-media/image/upload/v1752880808/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Denial-of-Service/kubernetes-dos-attack-vectors-flowchart.jpg)
 
 ***
 
@@ -44,9 +42,7 @@ Running a container in privileged mode grants full host access:
 * Enter the host PID namespace to kill or spawn host processes.
 * Download and run malicious binaries with tools like `curl` or package managers.
 
-<Callout icon="triangle-alert">
-  Privileged containers bypass nearly all Kubernetes isolation. Use `securityContext.privileged: true` only when absolutely necessary and audit those pods.
-</Callout>
+> **triangle-alert** Privileged containers bypass nearly all Kubernetes isolation. Use `securityContext.privileged: true` only when absolutely necessary and audit those pods.
 
 ### Deep Dive: Privileged Container Attack Steps
 
@@ -224,9 +220,7 @@ spec:
             description: "Namespace {{ $labels.namespace }} CPU usage >80%. Possible DoS attack."
 ```
 
-<Callout icon="lightbulb">
-  Regularly review alerts and integrate with your incident-response workflow to minimize reaction time.
-</Callout>
+> **lightbulb** Regularly review alerts and integrate with your incident-response workflow to minimize reaction time.
 
 ***
 
@@ -249,6 +243,4 @@ To defend against Kubernetes DoS attacks:
 * [Prometheus Monitoring](https://prometheus.io)
 * [Grafana Dashboards](https://grafana.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/6da25ade-b162-485c-b9b9-f351990e99c2/lesson/94f96c8c-7485-4bce-a875-3d456669dea4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/6da25ade-b162-485c-b9b9-f351990e99c2/lesson/94f96c8c-7485-4bce-a875-3d456669dea4)

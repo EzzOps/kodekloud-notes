@@ -45,9 +45,7 @@ function like(id) { db.likes.incr(id); }
 
 Because services are separate processes, they must call each other over the network. That introduces latency, partial failures, and the need for extra networking, retries, and observability.
 
-<Callout icon="lightbulb">
-  For many small teams and moderate traffic, a monolith is simpler and faster to iterate on. Move to microservices only when you have clear, measurable reasons to do so (for example, independent scaling or team autonomy).
-</Callout>
+> **lightbulb** For many small teams and moderate traffic, a monolith is simpler and faster to iterate on. Move to microservices only when you have clear, measurable reasons to do so (for example, independent scaling or team autonomy).
 
 ## When to start with a monolith
 
@@ -98,9 +96,7 @@ Microservices introduce operational overhead. Each inter-service interaction bec
 
 Debugging becomes more complex: a single user request may traverse multiple services and you must correlate logs, traces, and metrics to diagnose problems.
 
-<Callout icon="warning">
-  Microservices add operational cost. Ensure you have monitoring, tracing, and a proper deployment strategy before adopting them broadly.
-</Callout>
+> **warning** Microservices add operational cost. Ensure you have monitoring, tracing, and a proper deployment strategy before adopting them broadly.
 
 <Frame>
   <img alt="The image compares debugging in monolithic and microservices architectures, illustrating that monoliths have one log per server, while microservices require piecing together multiple logs for a single request." />
@@ -133,6 +129,4 @@ For the photo app: start as a monolith and split out services only when you can 
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [Designing Data-Intensive Applications — Patterns for scalable systems](https://dataintensive.net/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/0e418fe1-a22c-4341-b890-676e56609d0d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/df166cca-6100-4b0c-af69-1c80618a63c1/lesson/0e418fe1-a22c-4341-b890-676e56609d0d)

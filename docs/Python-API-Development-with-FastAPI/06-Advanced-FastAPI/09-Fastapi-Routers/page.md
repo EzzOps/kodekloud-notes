@@ -119,9 +119,7 @@ ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 ```
 
-<Callout icon="lightbulb">
-  Avoid committing your `.env` file to version control. Add `.env` to your `.gitignore` to protect your sensitive data.
-</Callout>
+> **lightbulb** Avoid committing your `.env` file to version control. Add `.env` to your `.gitignore` to protect your sensitive data.
 
 ***
 
@@ -203,9 +201,7 @@ By centralizing configuration in `config.py`, your application automatically ada
 
 By following these practices, you improve your application’s security, scalability, and maintainability while reducing the risk of exposing sensitive information.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/ecc2161d-d790-4ab6-8454-baae59b225e7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/ecc2161d-d790-4ab6-8454-baae59b225e7)
 
 
 # Fastapi Routers
@@ -262,9 +258,7 @@ def get_user(id: int, db: Session = Depends(get_db)):
 
 Managing all endpoints in one file can become unwieldy as your application grows.
 
-<Callout icon="lightbulb">
-  Splitting your endpoints into separate files makes your code more modular and maintainable.
-</Callout>
+> **lightbulb** Splitting your endpoints into separate files makes your code more modular and maintainable.
 
 ## Organizing Code with Routers
 

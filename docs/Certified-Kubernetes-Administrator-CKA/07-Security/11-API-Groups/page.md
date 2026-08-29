@@ -45,7 +45,7 @@ kubectl create -f flight-operator.yaml
 
 One of the most popular examples is the etcd operator. It deploys and manages an etcd cluster within Kubernetes using a dedicated CRD and a custom controller that observes changes in the etcd cluster resource. Additionally, it supports extended functionalities such as taking backups and executing restores, simply by creating supplementary CRDs. Backup and Restore operators enhance these capabilities further.
 
-![The image illustrates an Operator Framework with Custom Resource Definitions (CRD) and Custom Controllers, including EtcdCluster, EtcdBackup, EtcdRestore, ETCD Controller, and Backup Operator.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869918/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-2025-Updates-Operator-Framework/frame_80.jpg)
+![The image illustrates an Operator Framework with Custom Resource Definitions (CRD) and Custom Controllers, including EtcdCluster, EtcdBackup, EtcdRestore, ETCD Controller, and Backup Operator.](https://kodekloud.com/kk-media/image/upload/v1752869918/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-2025-Updates-Operator-Framework/frame_80.jpg)
 
 Kubernetes operators handle tasks that would typically require manual intervention by system administrators. These tasks include application installation, routine maintenance, backup operations, disaster recovery through data restoration, and troubleshooting.
 
@@ -117,7 +117,7 @@ Likewise, listing pods in the cluster involves accessing the `/api/v1/pods` endp
 
 Kubernetes organizes its API into multiple groups based on specific functionality. These groups help in managing versioning, health metrics, logging, and more. For instance, the `/version` endpoint provides cluster version data, while endpoints like `/metrics` and `/healthz` offer insights into the cluster’s performance and health.
 
-![The image shows six colored labels with text: /metrics, /healthz, /version, /api, /apis, and /logs, each in a different color.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869920/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-API-Groups/frame_70.jpg)
+![The image shows six colored labels with text: /metrics, /healthz, /version, /api, /apis, and /logs, each in a different color.](https://kodekloud.com/kk-media/image/upload/v1752869920/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-API-Groups/frame_70.jpg)
 
 This article focuses on two main API group categories:
 
@@ -127,11 +127,11 @@ This article focuses on two main API group categories:
 2. **Named API Groups:**\
    Provides an organized structure for newer features. These groups include apps, extensions, networking, storage, authentication, and authorization. For example, under the apps group, you’ll find Deployments, ReplicaSets, and StatefulSets, whereas the networking group hosts resources such as Network Policies. Certificate-related resources like Certificate Signing Requests are also grouped under their relevant named groups.
 
-![The image shows a hierarchical structure of a core API, detailing components like namespaces, pods, nodes, and services under version v1.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869921/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-API-Groups/frame_120.jpg)
+![The image shows a hierarchical structure of a core API, detailing components like namespaces, pods, nodes, and services under version v1.](https://kodekloud.com/kk-media/image/upload/v1752869921/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-API-Groups/frame_120.jpg)
 
 Every API group includes various resources along with associated actions (verbs) such as list, get, create, delete, update, and watch.
 
-![The image is a diagram illustrating Kubernetes API groups, resources, and actions, including paths like /apps, /networking.k8s.io, and actions like list, get, create, and delete.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869922/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-API-Groups/frame_170.jpg)
+![The image is a diagram illustrating Kubernetes API groups, resources, and actions, including paths like /apps, /networking.k8s.io, and actions like list, get, create, and delete.](https://kodekloud.com/kk-media/image/upload/v1752869922/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-API-Groups/frame_170.jpg)
 
 For detailed information on the objects in each API group, consult the official Kubernetes API reference documentation.
 
@@ -230,13 +230,13 @@ The typical response should be:
 
 > **lightbulb** Remember that "kube proxy" and "kubectl proxy" serve different purposes. The former facilitates pod-to-pod and service communication within the cluster, while the latter is a local HTTP proxy for accessing the API server.
 
-![The image states "Kube proxy ≠ Kubectl proxy," highlighting a distinction between the two terms.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869923/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-API-Groups/frame_300.jpg)
+![The image states "Kube proxy ≠ Kubectl proxy," highlighting a distinction between the two terms.](https://kodekloud.com/kk-media/image/upload/v1752869923/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-API-Groups/frame_300.jpg)
 
 ## Summary
 
 Kubernetes organizes its resources into various API groups. At the highest level, there is the core API group coupled with multiple named API groups, each containing specific resources and actions. The diagram below outlines the hierarchical structure and relationships between API groups, resources, and associated verbs:
 
-![The image outlines Kubernetes API groups, resources, and verbs, showing the structure and hierarchy of API endpoints and actions like list, get, create, and delete.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869924/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-API-Groups/frame_330.jpg)
+![The image outlines Kubernetes API groups, resources, and verbs, showing the structure and hierarchy of API endpoints and actions like list, get, create, and delete.](https://kodekloud.com/kk-media/image/upload/v1752869924/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-API-Groups/frame_330.jpg)
 
 In the next section on authorization, we'll explore how these API groups and their associated actions control access to cluster resources.
 

@@ -17,21 +17,15 @@ stress -c 4 -t 1000
 
 You will see the CPU usage spike in real time on the monitoring dashboard. The next step is to monitor this spike until the five-minute average CPU usage exceeds 80%, which will trigger the alert rule.
 
-<Frame>
-  ![The image shows a Microsoft Azure monitoring dashboard displaying a line chart of CPU usage percentage for a virtual machine named "linux-ra-vm." The chart indicates fluctuations in CPU usage over a specified time period.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881709/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-monitoring-cpu-usage-chart.jpg)
-</Frame>
+![The image shows a Microsoft Azure monitoring dashboard displaying a line chart of CPU usage percentage for a virtual machine named "linux-ra-vm." The chart indicates fluctuations in CPU usage over a specified time period.](https://kodekloud.com/kk-media/image/upload/v1752881709/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-monitoring-cpu-usage-chart.jpg)
 
 Once the average CPU usage exceeds the threshold, you receive an email notification. For example, you might see an alert message indicating that the CPU usage is above 80%:
 
-<Frame>
-  ![The image shows an Azure alert notification for a virtual machine, indicating that the CPU percentage exceeded a threshold of 80%. The alert details include resource ID, metric name, and time aggregation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881710/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-alert-cpu-threshold-exceeded.jpg)
-</Frame>
+![The image shows an Azure alert notification for a virtual machine, indicating that the CPU percentage exceeded a threshold of 80%. The alert details include resource ID, metric name, and time aggregation.](https://kodekloud.com/kk-media/image/upload/v1752881710/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-alert-cpu-threshold-exceeded.jpg)
 
 Additionally, verify the alert by checking the Virtual Machine’s activity logs or the Alerts section in the Azure portal:
 
-<Frame>
-  ![The image shows a Microsoft Azure monitoring dashboard displaying a line chart of CPU usage for a virtual machine, with the CPU percentage reaching approximately 99.84%. A time range selection menu is open on the right side.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881712/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-monitoring-dashboard-cpu-usage.jpg)
-</Frame>
+![The image shows a Microsoft Azure monitoring dashboard displaying a line chart of CPU usage for a virtual machine, with the CPU percentage reaching approximately 99.84%. A time range selection menu is open on the right side.](https://kodekloud.com/kk-media/image/upload/v1752881712/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-monitor-Alerts/azure-monitoring-dashboard-cpu-usage.jpg)
 
 ***
 
@@ -57,9 +51,7 @@ Another important topic is configuring diagnostic logging properties to further 
 
 Happy monitoring!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7b98ab58-5aa5-4f2b-9cfa-fdfef40ddc37/lesson/701187e4-29e5-4c38-9987-388a55cec2cf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7b98ab58-5aa5-4f2b-9cfa-fdfef40ddc37/lesson/701187e4-29e5-4c38-9987-388a55cec2cf)
 
 
 # Enable Log Analytics
@@ -84,17 +76,13 @@ AzureDiagnostics
 
 The resulting time chart provides insights into user authentication activities, making it easier to monitor system access and detect anomalies.
 
-<Callout icon="lightbulb">
-  For more information on crafting efficient queries with KQL, refer to the [Kusto Query Language documentation](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/).
-</Callout>
+> **lightbulb** For more information on crafting efficient queries with KQL, refer to the [Kusto Query Language documentation](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/).
 
 ## Creating a Log Analytics Workspace
 
 Before you can ingest data, you need to create a Log Analytics workspace in Azure. This workspace serves as the centralized repository where you collect, analyze, and visualize data from your resources. You can deploy multiple workspaces across different regions based on business needs or compliance requirements.
 
-<Callout icon="lightbulb">
-  If your environment spans production and disaster recovery (DR) regions, consider setting up separate workspaces. This approach helps maintain data isolation and ensure that production data remains compliant with designated regional policies.
-</Callout>
+> **lightbulb** If your environment spans production and disaster recovery (DR) regions, consider setting up separate workspaces. This approach helps maintain data isolation and ensure that production data remains compliant with designated regional policies.
 
 After creating a workspace using the Azure Portal—typically starting with the default "pay-as-you-go" pricing tier—data ingestion begins immediately. If your usage exceeds 100 GB per day, switching to a commitment tier can help reduce the per-gigabyte cost.
 
@@ -128,9 +116,7 @@ To set up a new Log Analytics workspace, follow these steps:
 
 After completing these steps, onboard your resources to begin collecting and analyzing log data.
 
-<Frame>
-  ![The image shows a setup interface for creating a Log Analytics workspace in Azure, alongside features like workspace, data isolation, and storage of insights and sentinel data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881712/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Log-Analytics/azure-log-analytics-workspace-setup.jpg)
-</Frame>
+![The image shows a setup interface for creating a Log Analytics workspace in Azure, alongside features like workspace, data isolation, and storage of insights and sentinel data.](https://kodekloud.com/kk-media/image/upload/v1752881712/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Log-Analytics/azure-log-analytics-workspace-setup.jpg)
 
 This concludes the walkthrough on setting up and understanding the basics of Log Analytics. Stay tuned for more insights on managing connected sources and optimizing your log analytics strategy.
 
@@ -141,6 +127,4 @@ For further reading, consider exploring these resources:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7b98ab58-5aa5-4f2b-9cfa-fdfef40ddc37/lesson/47dc7a06-c8b5-4a40-9448-62c31b4f2a75" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/7b98ab58-5aa5-4f2b-9cfa-fdfef40ddc37/lesson/47dc7a06-c8b5-4a40-9448-62c31b4f2a75)

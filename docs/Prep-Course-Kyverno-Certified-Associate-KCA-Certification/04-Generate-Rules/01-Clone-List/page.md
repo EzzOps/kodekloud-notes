@@ -30,9 +30,7 @@ The `cloneList` object includes three primary fields:
 
 Using a selector avoids copying every Secret and ConfigMap from the source namespace — only those labeled for cloning will be included in the standard bundle.
 
-<Callout icon="lightbulb">
-  Using `selector` lets the platform team add or remove resources from the standard onboarding bundle by updating labels in the `staging` namespace — the Kyverno policy itself doesn't need to change.
-</Callout>
+> **lightbulb** Using `selector` lets the platform team add or remove resources from the standard onboarding bundle by updating labels in the `staging` namespace — the Kyverno policy itself doesn't need to change.
 
 ## cloneList example structure
 
@@ -81,9 +79,7 @@ spec:
               allowedToBeCloned: "true"
 ```
 
-<Callout icon="warning">
-  Cloning Secrets copies sensitive data into target namespaces. Ensure you have appropriate RBAC, Secrets encryption (e.g., KMS/provider secrets encryption), and audit controls in place to protect sensitive material.
-</Callout>
+> **warning** Cloning Secrets copies sensitive data into target namespaces. Ensure you have appropriate RBAC, Secrets encryption (e.g., KMS/provider secrets encryption), and audit controls in place to protect sensitive material.
 
 ## Why this approach is better
 
@@ -101,8 +97,6 @@ This article covered how to generate resources from clone sources using `cloneLi
 
 This pattern helps teams onboard new namespaces quickly and reliably by delivering a standard set of configuration objects from a central staging location.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/9024a647-736d-4de4-8b1a-d0efe638df18/lesson/a01ae335-2ae3-4e27-b0a7-37b21ed0f4cd" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/9024a647-736d-4de4-8b1a-d0efe638df18/lesson/a01ae335-2ae3-4e27-b0a7-37b21ed0f4cd)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/9024a647-736d-4de4-8b1a-d0efe638df18/lesson/e4d2f764-6ba7-410e-bf41-76f7adfd7f53" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/9024a647-736d-4de4-8b1a-d0efe638df18/lesson/e4d2f764-6ba7-410e-bf41-76f7adfd7f53)

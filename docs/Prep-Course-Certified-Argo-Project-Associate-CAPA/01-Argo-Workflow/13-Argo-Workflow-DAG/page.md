@@ -179,9 +179,7 @@ Example:
 
 You can replace `&&` with `||` or build more complex expressions with parentheses and NOT as needed.
 
-<Callout icon="lightbulb">
-  The `depends` field is a string expression evaluated by the controller. It is mutually exclusive with the `dependencies` array — use one or the other.
-</Callout>
+> **lightbulb** The `depends` field is a string expression evaluated by the controller. It is mutually exclusive with the `dependencies` array — use one or the other.
 
 Fail-fast behavior in DAGs
 
@@ -228,6 +226,4 @@ Links and references
 * Argo Workflows DAG docs: [https://argoproj.github.io/argo-workflows/workflow-types/dag/](https://argoproj.github.io/argo-workflows/workflow-types/dag/)
 * Kubernetes Concepts: [https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/6df01011-4f3a-428e-b68f-06cd04caca43" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/6df01011-4f3a-428e-b68f-06cd04caca43)

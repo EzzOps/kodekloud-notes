@@ -19,9 +19,7 @@ let slice = &arr[start_index..end_index];
 * The start index is **inclusive**, which means it marks the beginning of the slice.
 * The end index is **exclusive**, indicating where the slice ends.
 
-<Callout icon="lightbulb">
-  Remember that the range syntax helps prevent out-of-bounds errors by enforcing that the slice only covers valid indices of the collection.
-</Callout>
+> **lightbulb** Remember that the range syntax helps prevent out-of-bounds errors by enforcing that the slice only covers valid indices of the collection.
 
 ## Array Slices in Rust
 
@@ -79,9 +77,7 @@ fn main() {
 
 Even though the slice starts at index `1`, modifying `slice[0]` corresponds to changing the second element of the original array.
 
-<Callout icon="triangle-alert">
-  Always remember that modifying slices can affect the original collection. Ensure that your slice does not outlive the data it references to avoid unexpected behavior.
-</Callout>
+> **triangle-alert** Always remember that modifying slices can affect the original collection. Ensure that your slice does not outlive the data it references to avoid unexpected behavior.
 
 ## Advantages of Using Slices
 
@@ -96,6 +92,4 @@ By using slices, you can write more efficient and robust Rust code.
 
 Explore more about Rust slices to enhance your programming efficiency and ensure better memory management.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/3f1a164b-1daa-456d-b1cd-dec4d69121e1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/3f1a164b-1daa-456d-b1cd-dec4d69121e1)

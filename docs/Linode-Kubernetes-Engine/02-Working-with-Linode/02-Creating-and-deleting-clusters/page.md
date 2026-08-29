@@ -6,9 +6,7 @@ Learn to create and delete a Kubernetes cluster using Linode Cloud Manager and e
 
 In this guide, you’ll learn how to spin up a Kubernetes cluster using the Linode Cloud Manager UI and how to tear it down when you’re done. Later, you can automate provisioning with Terraform or another infrastructure-as-code tool.
 
-<Callout icon="lightbulb">
-  For repeatable workflows, consider using [Terraform](https://www.terraform.io) and the [Linode Terraform provider](https://registry.terraform.io/providers/linode/linode/latest).
-</Callout>
+> **lightbulb** For repeatable workflows, consider using [Terraform](https://www.terraform.io) and the [Linode Terraform provider](https://registry.terraform.io/providers/linode/linode/latest).
 
 ## Prerequisites
 
@@ -39,9 +37,7 @@ Click **Create Cluster** and configure these options:
 4. **High-Availability Control Plane**\
    Enable to provision three control-plane nodes instead of one. This setup eliminates a single point of failure for etcd and the Kubernetes API.
 
-<Callout icon="triangle-alert">
-  Enabling High Availability adds approximately \$60/month to your bill. Ensure this aligns with your budget.
-</Callout>
+> **triangle-alert** Enabling High Availability adds approximately \$60/month to your bill. Ensure this aligns with your budget.
 
 ### 1.1 Define Your Worker Node Pools
 
@@ -53,9 +49,7 @@ Choose a node pool based on your workload:
 | Shared CPU     | General development or testing    | Linode 2 GB  |
 | High Memory    | Memory-intensive applications     | Linode 16 GB |
 
-<Frame>
-  ![The image shows a web interface for adding node pools to a cluster, displaying various dedicated CPU plans with details on pricing, RAM, CPUs, and storage. There is also a cluster summary on the right with an option to enable a high availability control plane.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881205/notes-assets/images/Linode-Kubernetes-Engine-Creating-and-deleting-clusters/node-pools-cluster-interface-summary.jpg)
-</Frame>
+![The image shows a web interface for adding node pools to a cluster, displaying various dedicated CPU plans with details on pricing, RAM, CPUs, and storage. There is also a cluster summary on the right with an option to enable a high availability control plane.](https://kodekloud.com/kk-media/image/upload/v1752881205/notes-assets/images/Linode-Kubernetes-Engine-Creating-and-deleting-clusters/node-pools-cluster-interface-summary.jpg)
 
 For a dev environment, select **Shared CPU** → **Linode 2 GB**, then set node count:
 
@@ -64,22 +58,16 @@ For a dev environment, select **Shared CPU** → **Linode 2 GB**, then set node 
 
 Add two nodes:
 
-<Frame>
-  ![The image shows a web interface for configuring a Kubernetes cluster, including options for selecting a region, Kubernetes version, and adding high memory node pools with various plans and pricing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881206/notes-assets/images/Linode-Kubernetes-Engine-Creating-and-deleting-clusters/kubernetes-cluster-configuration-interface.jpg)
-</Frame>
+![The image shows a web interface for configuring a Kubernetes cluster, including options for selecting a region, Kubernetes version, and adding high memory node pools with various plans and pricing.](https://kodekloud.com/kk-media/image/upload/v1752881206/notes-assets/images/Linode-Kubernetes-Engine-Creating-and-deleting-clusters/kubernetes-cluster-configuration-interface.jpg)
 
 4. **Review & Create**\
    Confirm your settings and review the estimated monthly cost (\~\$80).
 
-<Frame>
-  ![The image shows a cloud service interface for configuring Kubernetes clusters, including options for selecting node pools with different plans based on RAM, CPUs, and storage. It also includes a cluster summary with pricing details and a recommendation for a minimum number of nodes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881207/notes-assets/images/Linode-Kubernetes-Engine-Creating-and-deleting-clusters/kubernetes-cluster-config-interface.jpg)
-</Frame>
+![The image shows a cloud service interface for configuring Kubernetes clusters, including options for selecting node pools with different plans based on RAM, CPUs, and storage. It also includes a cluster summary with pricing details and a recommendation for a minimum number of nodes.](https://kodekloud.com/kk-media/image/upload/v1752881207/notes-assets/images/Linode-Kubernetes-Engine-Creating-and-deleting-clusters/kubernetes-cluster-config-interface.jpg)
 
 Click **Create Cluster**. Provisioning takes 3–5 minutes as Linode sets up control-plane nodes, worker nodes, networking, and storage. When ready, your cluster appears in the dashboard:
 
-<Frame>
-  ![The image shows a Kubernetes management dashboard for a cluster named "kodekloud01," displaying details like version, CPU cores, RAM, and node pool status with IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881208/notes-assets/images/Linode-Kubernetes-Engine-Creating-and-deleting-clusters/kubernetes-dashboard-kodekloud01-details.jpg)
-</Frame>
+![The image shows a Kubernetes management dashboard for a cluster named "kodekloud01," displaying details like version, CPU cores, RAM, and node pool status with IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752881208/notes-assets/images/Linode-Kubernetes-Engine-Creating-and-deleting-clusters/kubernetes-dashboard-kodekloud01-details.jpg)
 
 ## 2. Delete a Cluster
 
@@ -96,6 +84,4 @@ Deleting the cluster will remove all associated resources.
 * [Terraform Registry: Linode Provider](https://registry.terraform.io/providers/linode/linode)
 * [Kubernetes Official Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/9702fbe2-4321-41c5-87e8-8ea364da097d/lesson/6237b20a-231b-423e-965b-1ac8ad8926f0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linode-kubernetes-engine/module/9702fbe2-4321-41c5-87e8-8ea364da097d/lesson/6237b20a-231b-423e-965b-1ac8ad8926f0)

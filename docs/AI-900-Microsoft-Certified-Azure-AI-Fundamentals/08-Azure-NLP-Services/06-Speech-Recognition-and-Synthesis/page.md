@@ -6,7 +6,7 @@ This article explores Azure Speech Services speech recognition and synthesis cap
 
 In this lesson, we explore two fundamental capabilities of the Azure Speech Service: Speech Recognition (speech-to-text) and Speech Synthesis (text-to-speech). These features empower developers to create interactive and accessible applications that seamlessly bridge the gap between spoken and written language.
 
-![The image illustrates the process of speech recognition and synthesis, showing two steps: converting speech to text and converting text to speech.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856930/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Speech-Recognition-and-Synthesis/speech-recognition-synthesis-process.jpg)
+![The image illustrates the process of speech recognition and synthesis, showing two steps: converting speech to text and converting text to speech.](https://kodekloud.com/kk-media/image/upload/v1752856930/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Speech-Recognition-and-Synthesis/speech-recognition-synthesis-process.jpg)
 
 ## Speech Recognition
 
@@ -14,7 +14,7 @@ Speech recognition, or speech-to-text, converts spoken language into written tex
 
 > **lightbulb** Speech recognition enhances user accessibility and productivity. It allows users to dictate documents hands-free, making it especially valuable for individuals with mobility impairments. Additionally, customer service applications leverage this technology to transcribe conversations for sentiment analysis and issue resolution.
 
-![The image illustrates a speech recognition process, showing the conversion of spoken words into written text, which is then processed or stored.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856931/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Speech-Recognition-and-Synthesis/speech-recognition-process-diagram.jpg)
+![The image illustrates a speech recognition process, showing the conversion of spoken words into written text, which is then processed or stored.](https://kodekloud.com/kk-media/image/upload/v1752856931/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Speech-Recognition-and-Synthesis/speech-recognition-process-diagram.jpg)
 
 ## Speech Synthesis
 
@@ -22,11 +22,11 @@ Speech synthesis, also known as text-to-speech, converts written text into audib
 
 > **lightbulb** Applications such as navigation apps can read out directions, while educational tools may read aloud instructions to enhance comprehension and engagement. These features help create more inclusive experiences for all users.
 
-![The image illustrates the concept of speech synthesis, showing a process where written text is converted into spoken words.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856932/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Speech-Recognition-and-Synthesis/speech-synthesis-text-to-speech.jpg)
+![The image illustrates the concept of speech synthesis, showing a process where written text is converted into spoken words.](https://kodekloud.com/kk-media/image/upload/v1752856932/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Speech-Recognition-and-Synthesis/speech-synthesis-text-to-speech.jpg)
 
 Together, speech recognition and synthesis facilitate seamless interaction between users and applications, enabling a natural and intuitive communication experience.
 
-![The image is about "Speech Synthesis" and features icons representing sound waves, a thumbs-up with stars, and concepts of accessibility and user interaction.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856933/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Speech-Recognition-and-Synthesis/speech-synthesis-accessibility-icons.jpg)
+![The image is about "Speech Synthesis" and features icons representing sound waves, a thumbs-up with stars, and concepts of accessibility and user interaction.](https://kodekloud.com/kk-media/image/upload/v1752856933/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Speech-Recognition-and-Synthesis/speech-synthesis-accessibility-icons.jpg)
 
 ## Practical Applications and Speech Studio Overview
 
@@ -42,15 +42,15 @@ Azure Speech Studio provides an interactive platform where you can experiment wi
 
 Within Speech Studio, you can manage voice resources and experiment with real-time captioning, a feature that benefits both live events and post-event processing.
 
-![The image shows a webpage from Microsoft Azure's Speech Studio, focusing on captioning with speech-to-text technology. It includes options to try out real-time and offline captioning with sample videos.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856934/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Speech-Recognition-and-Synthesis/azure-speech-studio-captioning.jpg)
+![The image shows a webpage from Microsoft Azure's Speech Studio, focusing on captioning with speech-to-text technology. It includes options to try out real-time and offline captioning with sample videos.](https://kodekloud.com/kk-media/image/upload/v1752856934/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Speech-Recognition-and-Synthesis/azure-speech-studio-captioning.jpg)
 
 Furthermore, the platform offers advanced post-call transcription analytics, which are particularly useful in customer service scenarios for analyzing conversations and uncovering key insights.
 
-![The image illustrates three categories related to speech recognition and synthesis: Virtual Assistants, Transcription Services, and Accessibility Tools, each represented by an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856935/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Speech-Recognition-and-Synthesis/speech-recognition-synthesis-icons.jpg)
+![The image illustrates three categories related to speech recognition and synthesis: Virtual Assistants, Transcription Services, and Accessibility Tools, each represented by an icon.](https://kodekloud.com/kk-media/image/upload/v1752856935/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Speech-Recognition-and-Synthesis/speech-recognition-synthesis-icons.jpg)
 
 For a broader look at the available features—including live chat avatars and language learning—explore the comprehensive tools provided within Speech Studio.
 
-![The image shows a webpage from Microsoft Azure's Speech Studio, highlighting various speech capabilities like captioning, transcription, live chat avatars, and language learning. It includes options to try out these features and a section for recent custom projects.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856937/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Speech-Recognition-and-Synthesis/azure-speech-studio-features.jpg)
+![The image shows a webpage from Microsoft Azure's Speech Studio, highlighting various speech capabilities like captioning, transcription, live chat avatars, and language learning. It includes options to try out these features and a section for recent custom projects.](https://kodekloud.com/kk-media/image/upload/v1752856937/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Speech-Recognition-and-Synthesis/azure-speech-studio-features.jpg)
 
 With this overview, we conclude our module on speech recognition and synthesis. Stay tuned for the next topic as we continue to explore powerful Azure services and their real-world applications.
 

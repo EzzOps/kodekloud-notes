@@ -18,7 +18,7 @@ Placing the caching configuration in the Base folder would inadvertently activat
 
 The overall project hierarchy is structured so that the Base configuration is common to all overlays, while each overlay selectively includes components for features like caching or an external database.
 
-![The image is a flowchart depicting components with a hierarchical structure, including "base," "dev," "Premium," and "Self hosted," with caching and external database options. It also includes a legend indicating which components use caching and external databases.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869797/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Components/hierarchical-flowchart-components-caching.jpg)
+![The image is a flowchart depicting components with a hierarchical structure, including "base," "dev," "Premium," and "Self hosted," with caching and external database options. It also includes a legend indicating which components use caching and external databases.](https://kodekloud.com/kk-media/image/upload/v1752869797/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Components/hierarchical-flowchart-components-caching.jpg)
 
 ## Organizing Your Project Structure
 
@@ -51,7 +51,7 @@ In the structure above, the `components` folder houses dedicated subdirectories 
 
 > **lightbulb** A well-organized project differentiates between the immutable Base configuration and the flexible environment-specific overlays. This separation allows you to add or remove optional features without disrupting the overall system configuration.
 
-![The image is a flowchart titled "Components," showing a hierarchical structure with nodes labeled "base," "dev," "Premium," "Self hosted," "Components," "caching," and "db." It illustrates relationships between these components with arrows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869798/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Components/components-flowchart-hierarchical-structure.jpg)
+![The image is a flowchart titled "Components," showing a hierarchical structure with nodes labeled "base," "dev," "Premium," "Self hosted," "Components," "caching," and "db." It illustrates relationships between these components with arrows.](https://kodekloud.com/kk-media/image/upload/v1752869798/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Components/components-flowchart-hierarchical-structure.jpg)
 
 ## Implementing a Component
 

@@ -18,7 +18,7 @@ When a get item request is made:
 
 > **lightbulb** By caching frequently accessed data, DAX minimizes direct calls to DynamoDB, thereby reducing database load and operational costs.
 
-![The image is a diagram illustrating the architecture of a DAX (DynamoDB Accelerator) setup, showing the interaction between an EC2 instance, a DAX cluster with cache nodes, and Amazon DynamoDB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865134/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Accelerator/dax-architecture-diagram-ec2-dynamodb.jpg)
+![The image is a diagram illustrating the architecture of a DAX (DynamoDB Accelerator) setup, showing the interaction between an EC2 instance, a DAX cluster with cache nodes, and Amazon DynamoDB.](https://kodekloud.com/kk-media/image/upload/v1752865134/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Accelerator/dax-architecture-diagram-ec2-dynamodb.jpg)
 
 ## Scalability and Management
 
@@ -33,7 +33,7 @@ Additionally, DAX offers flexible deployment options:
 * Provision a single DAX cluster to serve multiple DynamoDB tables.
 * Create multiple clusters tailored to a single table, depending on your workload and performance needs.
 
-![The image lists five features of DAX: Extreme Performance, Highly Scalable, Fully Managed, Ease of Use, and Flexible, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865136/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Accelerator/dax-features-performance-scalable-managed.jpg)
+![The image lists five features of DAX: Extreme Performance, Highly Scalable, Fully Managed, Ease of Use, and Flexible, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752865136/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Accelerator/dax-features-performance-scalable-managed.jpg)
 
 ## Integration with AWS Compute Services
 
@@ -48,12 +48,12 @@ In summary, DynamoDB Accelerator (DAX) enhances DynamoDB's read performance thro
 * Lowers operational costs by offloading read requests from DynamoDB.
 * Simplifies application architecture by eliminating the need for custom caching logic.
 
-![The image illustrates the integration of Amazon DynamoDB Accelerator (DAX) with Amazon Elastic Compute Cloud (EC2), Amazon DynamoDB, and AWS Lambda. It shows a flowchart with icons representing each service.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865137/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Accelerator/dynamodb-accelerator-ec2-lambda-flowchart.jpg)
+![The image illustrates the integration of Amazon DynamoDB Accelerator (DAX) with Amazon Elastic Compute Cloud (EC2), Amazon DynamoDB, and AWS Lambda. It shows a flowchart with icons representing each service.](https://kodekloud.com/kk-media/image/upload/v1752865137/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Accelerator/dynamodb-accelerator-ec2-lambda-flowchart.jpg)
 
 DAX ensures data consistency and high availability by writing data concurrently to both the cache and the underlying DynamoDB table. This write-through and read-through caching mechanism guarantees that the cached data remains up-to-date.
 
 > **lightbulb** Leveraging DAX allows your application to achieve higher throughput and lower latency, ensuring that you can scale effectively while managing costs.
 
-![The image is a summary of DynamoDB Accelerator (DAX), highlighting its ability to handle millions of requests per second and manage caching logic efficiently.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865138/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Accelerator/dynamodb-accelerator-summary-caching.jpg)
+![The image is a summary of DynamoDB Accelerator (DAX), highlighting its ability to handle millions of requests per second and manage caching logic efficiently.](https://kodekloud.com/kk-media/image/upload/v1752865138/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-DynamoDB-Accelerator/dynamodb-accelerator-summary-caching.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/9fb73cb5-caf2-4dc2-ad5c-fe5fe69507e3/lesson/ee9deaee-af92-4d97-8c13-0c3106264280)

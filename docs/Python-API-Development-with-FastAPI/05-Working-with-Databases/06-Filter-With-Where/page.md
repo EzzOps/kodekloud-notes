@@ -57,12 +57,8 @@ name               | price  | id  | is_sale | inventory | created_at
 TV                 | 200    | 1   | false   | 0         | 2021-08-20 00:49:58.021274-04
 ```
 
-<Callout icon="lightbulb">
-  Always enclose text values in single quotes when using them in WHERE clauses. Omitting the quotes will result in an error.
-</Callout>
+> **lightbulb** Always enclose text values in single quotes when using them in WHERE clauses. Omitting the quotes will result in an error.
 
 By utilizing the WHERE clause, you can efficiently filter your query results to match specific criteria, be they numeric or text-based. This technique is essential for data retrieval and management in SQL, ensuring that you get exactly the information you need.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/b9dd4edd-4b7a-4395-b42b-9d090b2fb87c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/0304b044-64ce-4fd6-a384-156867f36547/lesson/b9dd4edd-4b7a-4395-b42b-9d090b2fb87c)

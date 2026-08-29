@@ -35,17 +35,13 @@ model.fc = nn.Linear(num_ftrs, 10)
 
 Here, the final fully connected layer is replaced with a new one that outputs predictions for 10 classes. The number of input features is obtained from the original model's configuration.
 
-<Callout icon="lightbulb">
-  When modifying pre-trained models, remember to adjust the network's final layer to match the number of classes in your new task.
-</Callout>
+> **lightbulb** When modifying pre-trained models, remember to adjust the network's final layer to match the number of classes in your new task.
 
 ## PyTorch Hub
 
 PyTorch Hub is a community-driven platform that provides access to a wide range of pre-trained models. It simplifies the process of exploring, downloading, and sharing models contributed by researchers around the world.
 
-<Frame>
-  ![The image shows a webpage from PyTorch Hub, highlighting its offering of a variety of pre-trained models for researchers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883119/notes-assets/images/PyTorch-Additional-Training-Methods/pytorch-hub-pretrained-models.jpg)
-</Frame>
+![The image shows a webpage from PyTorch Hub, highlighting its offering of a variety of pre-trained models for researchers.](https://kodekloud.com/kk-media/image/upload/v1752883119/notes-assets/images/PyTorch-Additional-Training-Methods/pytorch-hub-pretrained-models.jpg)
 
 To browse available models, use the `torch.hub.list` function by specifying the GitHub repository. For example, to list vision models from the PyTorch/vision repository, execute:
 
@@ -106,9 +102,7 @@ model = torch.hub.load('username/repo_name', 'model', pretrained=True)
 
 Learning rate schedulers play a crucial role in training by adjusting the learning rate throughout the training process. This dynamic adjustment ensures that the model takes larger steps in the early stages and fine-tuned adjustments later, preventing issues like overshooting optimal parameters.
 
-<Frame>
-  ![The image explains the benefits of learning rate schedulers in model training, highlighting improved model convergence, prevention of overshooting, and faster convergence.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883120/notes-assets/images/PyTorch-Additional-Training-Methods/learning-rate-schedulers-benefits.jpg)
-</Frame>
+![The image explains the benefits of learning rate schedulers in model training, highlighting improved model convergence, prevention of overshooting, and faster convergence.](https://kodekloud.com/kk-media/image/upload/v1752883120/notes-assets/images/PyTorch-Additional-Training-Methods/learning-rate-schedulers-benefits.jpg)
 
 PyTorch provides several built-in learning rate schedulers:
 
@@ -116,9 +110,7 @@ PyTorch provides several built-in learning rate schedulers:
 * **ExponentialLR:** Applies an exponential decay to the learning rate.
 * **ReduceLROnPlateau:** Lowers the learning rate when performance metrics stagnate.
 
-<Frame>
-  ![The image describes three common learning rate schedulers: StepLR, ExponentialLR, and ReduceLROnPlateau, each with a brief explanation of their function.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883121/notes-assets/images/PyTorch-Additional-Training-Methods/learning-rate-schedulers-step-exponential-reduce.jpg)
-</Frame>
+![The image describes three common learning rate schedulers: StepLR, ExponentialLR, and ReduceLROnPlateau, each with a brief explanation of their function.](https://kodekloud.com/kk-media/image/upload/v1752883121/notes-assets/images/PyTorch-Additional-Training-Methods/learning-rate-schedulers-step-exponential-reduce.jpg)
 
 To integrate a learning rate scheduler into your training loop, first define an optimizer, then configure the scheduler, and finally update it at the end of each epoch. For instance, to use a StepLR scheduler with an SGD optimizer:
 
@@ -148,15 +140,11 @@ In summary, this article has covered several advanced training methods in PyTorc
 * **PyTorch Hub:** Access and share a wide range of pre-trained models through a community-driven platform.
 * **Learning Rate Schedulers:** Dynamically adjust learning rates during training to avoid overshooting and ensure efficient convergence.
 
-<Frame>
-  ![The image is a summary slide listing five key points about PyTorch, including training methods, transfer learning, PyTorch Hub, learning rate schedulers, and specific schedulers like StepLR and ExponentialLR.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883122/notes-assets/images/PyTorch-Additional-Training-Methods/pytorch-summary-training-methods-schedulers.jpg)
-</Frame>
+![The image is a summary slide listing five key points about PyTorch, including training methods, transfer learning, PyTorch Hub, learning rate schedulers, and specific schedulers like StepLR and ExponentialLR.](https://kodekloud.com/kk-media/image/upload/v1752883122/notes-assets/images/PyTorch-Additional-Training-Methods/pytorch-summary-training-methods-schedulers.jpg)
 
 These techniques are invaluable for building complex models with enhanced accuracy and efficiency. Next, let's move on to the demonstration section to see these methods in action.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/090bd418-7634-499a-bfd2-bf8bee0a8c46" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/b8cb82ae-a284-41d1-8469-7e60705bbab8/lesson/090bd418-7634-499a-bfd2-bf8bee0a8c46)
 
 
 # Building and Training a model
@@ -175,15 +163,11 @@ This is an exciting section where theory meets hands-on implementation.
 
 A model can be thought of as a blueprint or recipe that makes predictions based on input data. A popular type of model is a neural network, inspired by the human brain's structure and function.
 
-<Frame>
-  ![The image is a diagram titled "What Is a Model?" showing three sections labeled Blueprint, Recipe, and Instruction, with "Model" at the center.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883123/notes-assets/images/PyTorch-Building-and-Training-a-model/what-is-a-model-diagram.jpg)
-</Frame>
+![The image is a diagram titled "What Is a Model?" showing three sections labeled Blueprint, Recipe, and Instruction, with "Model" at the center.](https://kodekloud.com/kk-media/image/upload/v1752883123/notes-assets/images/PyTorch-Building-and-Training-a-model/what-is-a-model-diagram.jpg)
 
 A neural network is composed of layers of neurons, which work together to learn patterns in data. In PyTorch, you create a structure where input data passes through these layers and produces an output—such as identifying objects in an image.
 
-<Frame>
-  ![The image shows a diagram of a neural network model with an input layer, hidden layers, and an output layer, connected by lines representing the flow of information.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883124/notes-assets/images/PyTorch-Building-and-Training-a-model/neural-network-model-diagram.jpg)
-</Frame>
+![The image shows a diagram of a neural network model with an input layer, hidden layers, and an output layer, connected by lines representing the flow of information.](https://kodekloud.com/kk-media/image/upload/v1752883124/notes-assets/images/PyTorch-Building-and-Training-a-model/neural-network-model-diagram.jpg)
 
 PyTorch streamlines model creation by providing essential tools to define and link layers.
 

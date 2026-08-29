@@ -68,7 +68,7 @@ The data replication strategy is:
 * **In the Primary Region:** Data is synchronized across three Availability Zones (ZRS), ensuring high resiliency even if one zone encounters failure.
 * **In the Secondary Region:** Data is maintained using LRS, ensuring an extra layer of protection.
 
-![The image is a table describing different storage redundancy configurations, their deployment methods, and durability levels, ranging from "Locally redundant storage" to "Geo-zone-redundant storage."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868530/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Redundancy-Options/storage-redundancy-configurations-table.jpg)
+![The image is a table describing different storage redundancy configurations, their deployment methods, and durability levels, ranging from "Locally redundant storage" to "Geo-zone-redundant storage."](https://kodekloud.com/kk-media/image/upload/v1752868530/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Redundancy-Options/storage-redundancy-configurations-table.jpg)
 
 This dual approach ensures that if an entire Availability Zone fails, your data remains accessible in the other zones. Only in the extreme case where all zones are impacted would the system rely on the secondary region.
 

@@ -12,9 +12,7 @@ In this guide, we launch into the deployment phase of our pipeline by leveraging
 
 Begin by logging into the AWS Management Console and navigating to the EC2 dashboard. Here, you'll notice an instance named "dev deploy" that is currently running.
 
-<Frame>
-  ![The image shows an AWS EC2 console displaying details of a running instance named "dev-deploy" with instance ID "i-0457e1f4819e4dc85". It includes information such as the instance type (t2.micro), public and private IP addresses, and status checks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879630/notes-assets/images/Jenkins-Pipelines-Exploring-AWS-and-Setting-up-Jenkins-Instance/aws-ec2-console-dev-deploy-instance.jpg)
-</Frame>
+![The image shows an AWS EC2 console displaying details of a running instance named "dev-deploy" with instance ID "i-0457e1f4819e4dc85". It includes information such as the instance type (t2.micro), public and private IP addresses, and status checks.](https://kodekloud.com/kk-media/image/upload/v1752879630/notes-assets/images/Jenkins-Pipelines-Exploring-AWS-and-Setting-up-Jenkins-Instance/aws-ec2-console-dev-deploy-instance.jpg)
 
 After connecting to this plain Ubuntu EC2 instance (which comes with Docker pre-installed), you can verify the active Docker container with the following command:
 
@@ -34,19 +32,13 @@ As part of our deployment process, we will eventually push artifacts to an S3 bu
 
 Visit the IAM dashboard in the AWS console and locate the user named "jenkins-user," which has been configured with full access policies for Amazon EC2, Amazon S3, and AWS Lambda.
 
-<Frame>
-  ![The image shows an AWS Identity and Access Management (IAM) console screen for a user named "jenkins-user," displaying their permissions policies, which include AmazonEC2FullAccess, AmazonS3FullAccess, and AWSLambda\_FullAccess.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879631/notes-assets/images/Jenkins-Pipelines-Exploring-AWS-and-Setting-up-Jenkins-Instance/aws-iam-console-jenkins-user-permissions.jpg)
-</Frame>
+![The image shows an AWS Identity and Access Management (IAM) console screen for a user named "jenkins-user," displaying their permissions policies, which include AmazonEC2FullAccess, AmazonS3FullAccess, and AWSLambda\_FullAccess.](https://kodekloud.com/kk-media/image/upload/v1752879631/notes-assets/images/Jenkins-Pipelines-Exploring-AWS-and-Setting-up-Jenkins-Instance/aws-iam-console-jenkins-user-permissions.jpg)
 
-<Callout icon="lightbulb">
-  Although full access is provided for demo purposes, it is recommended to use the principle of least privilege in production environments.
-</Callout>
+> **lightbulb** Although full access is provided for demo purposes, it is recommended to use the principle of least privilege in production environments.
 
 After attaching the policies, you will receive an access key and a secret key. Store these credentials securely in Jenkins.
 
-<Frame>
-  ![The image shows an AWS Identity and Access Management (IAM) console screen, displaying user details, including access keys and multi-factor authentication settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879633/notes-assets/images/Jenkins-Pipelines-Exploring-AWS-and-Setting-up-Jenkins-Instance/aws-iam-console-user-details.jpg)
-</Frame>
+![The image shows an AWS Identity and Access Management (IAM) console screen, displaying user details, including access keys and multi-factor authentication settings.](https://kodekloud.com/kk-media/image/upload/v1752879633/notes-assets/images/Jenkins-Pipelines-Exploring-AWS-and-Setting-up-Jenkins-Instance/aws-iam-console-user-details.jpg)
 
 ***
 
@@ -54,15 +46,11 @@ After attaching the policies, you will receive an access key and a secret key. S
 
 Next, you need to configure Jenkins to store the AWS credentials. Start by installing the AWS Step Functions plugin (also known as the AWS Steps plugin) along with other AWS-related plugins available in Jenkins.
 
-<Frame>
-  ![The image shows a Jenkins interface displaying the download progress of various plugins, with some marked as "Success" and others as "Pending." The left sidebar includes options like Updates, Available plugins, Installed plugins, and Download progress.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879634/notes-assets/images/Jenkins-Pipelines-Exploring-AWS-and-Setting-up-Jenkins-Instance/jenkins-plugin-download-progress-interface.jpg)
-</Frame>
+![The image shows a Jenkins interface displaying the download progress of various plugins, with some marked as "Success" and others as "Pending." The left sidebar includes options like Updates, Available plugins, Installed plugins, and Download progress.](https://kodekloud.com/kk-media/image/upload/v1752879634/notes-assets/images/Jenkins-Pipelines-Exploring-AWS-and-Setting-up-Jenkins-Instance/jenkins-plugin-download-progress-interface.jpg)
 
 Once the plugins are installed, restart Jenkins. For a comprehensive overview of the plugin capabilities—including operations on S3 buckets, deployment APIs, SNS publishing, ECR, and ELBs—refer to the official documentation.
 
-<Frame>
-  ![The image shows a webpage from Jenkins documentation, detailing features of a plugin for interacting with AWS API, including a list of pipeline steps and related links.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879635/notes-assets/images/Jenkins-Pipelines-Exploring-AWS-and-Setting-up-Jenkins-Instance/jenkins-aws-api-plugin-features.jpg)
-</Frame>
+![The image shows a webpage from Jenkins documentation, detailing features of a plugin for interacting with AWS API, including a list of pipeline steps and related links.](https://kodekloud.com/kk-media/image/upload/v1752879635/notes-assets/images/Jenkins-Pipelines-Exploring-AWS-and-Setting-up-Jenkins-Instance/jenkins-aws-api-plugin-features.jpg)
 
 Below is an example snippet showing how you can use the plugin in a Jenkins pipeline to interact with S3:
 
@@ -89,9 +77,7 @@ Select the AWS credentials type provided by the plugin. For this demonstration, 
 
 Upon successful creation, Jenkins will confirm that the credentials are valid and have access to multiple availability zones.
 
-<Frame>
-  ![The image shows a Jenkins interface displaying AWS credentials, including an Access Key ID and a concealed Secret Access Key, with options for managing these credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879636/notes-assets/images/Jenkins-Pipelines-Exploring-AWS-and-Setting-up-Jenkins-Instance/jenkins-aws-credentials-interface.jpg)
-</Frame>
+![The image shows a Jenkins interface displaying AWS credentials, including an Access Key ID and a concealed Secret Access Key, with options for managing these credentials.](https://kodekloud.com/kk-media/image/upload/v1752879636/notes-assets/images/Jenkins-Pipelines-Exploring-AWS-and-Setting-up-Jenkins-Instance/jenkins-aws-credentials-interface.jpg)
 
 ***
 
@@ -105,9 +91,7 @@ Manage Jenkins > Credentials > Global > Add Credentials
 
 Select "SSH Username with private key," use "Ubuntu" as the username, and paste your private key. It is advisable to name this credential "AWS DevOps deploy EC2 instance" with the description "SSH username and private key for EC2."
 
-<Frame>
-  ![The image shows a Jenkins interface where a user is adding new credentials, with options like "Username with password" and "SSH Username with private key" visible in a dropdown menu.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879637/notes-assets/images/Jenkins-Pipelines-Exploring-AWS-and-Setting-up-Jenkins-Instance/jenkins-add-credentials-interface.jpg)
-</Frame>
+![The image shows a Jenkins interface where a user is adding new credentials, with options like "Username with password" and "SSH Username with private key" visible in a dropdown menu.](https://kodekloud.com/kk-media/image/upload/v1752879637/notes-assets/images/Jenkins-Pipelines-Exploring-AWS-and-Setting-up-Jenkins-Instance/jenkins-add-credentials-interface.jpg)
 
 ***
 
@@ -124,6 +108,4 @@ In the next article, we will create a pipeline stage that connects to the EC2 in
 
 Thank you for reading.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/a1289a46-be38-4446-a056-0b9730d05dfd/lesson/b75b3b60-4cfd-4d4f-b416-57be4e9c6bf0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/a1289a46-be38-4446-a056-0b9730d05dfd/lesson/b75b3b60-4cfd-4d4f-b416-57be4e9c6bf0)

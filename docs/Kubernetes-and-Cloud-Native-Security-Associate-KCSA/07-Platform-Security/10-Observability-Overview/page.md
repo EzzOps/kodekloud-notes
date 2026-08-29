@@ -15,9 +15,7 @@ systemctl enable --now falco
 
 If you’re on a managed Kubernetes service or prefer Kubernetes-native deployment, use Helm to install Falco as a DaemonSet:
 
-<Callout icon="lightbulb">
-  You can customize Falco’s configuration by passing values files (`-f values.yaml`) to `helm install`.
-</Callout>
+> **lightbulb** You can customize Falco’s configuration by passing values files (`-f values.yaml`) to `helm install`.
 
 ```bash theme={null}
 # Add the Falco Helm repository
@@ -50,9 +48,7 @@ kubectl get pods -l app=falco
 * [Kubernetes Official Docs](https://kubernetes.io/docs/)
 * [Aqua Security Tracee (eBPF)](https://github.com/aquasecurity/tracee)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/21203b3d-64b3-4ed1-ab02-2a111b6e7e9d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/21203b3d-64b3-4ed1-ab02-2a111b6e7e9d)
 
 
 # Observability Overview
@@ -65,9 +61,7 @@ In this lesson, we’ll explore how to monitor your Kubernetes clusters for abno
 
 Throughout this course, we’ve covered techniques to secure Kubernetes infrastructure:
 
-<Frame>
-  ![Five colored boxes illustrating key cybersecurity concepts: "Securing Cluster," "Sandboxing Techniques," "Restricting Network Access," "Minimizing Microservices Vulnerability," and "MTLS Encryption."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880893/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Observability-Overview/cybersecurity-concepts-colored-boxes.jpg)
-</Frame>
+![Five colored boxes illustrating key cybersecurity concepts: "Securing Cluster," "Sandboxing Techniques," "Restricting Network Access," "Minimizing Microservices Vulnerability," and "MTLS Encryption."](https://kodekloud.com/kk-media/image/upload/v1752880893/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Observability-Overview/cybersecurity-concepts-colored-boxes.jpg)
 
 ## Why Early Detection Matters
 
@@ -77,9 +71,7 @@ It might seem that once an attacker breaches your perimeter, the damage is done.
 
 Imagine your debit card is stolen. In the past, you might not notice fraudulent withdrawals until reviewing your statement days later. Today, banks send instant notifications, allow you to revert unauthorized transactions, and let you set spending limits:
 
-<Frame>
-  ![Credit card icon at the center with three labeled buttons below it: "Instant Notifications," "Revert Transactions," and "Transaction Limits."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880894/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Observability-Overview/credit-card-icon-buttons-notifications.jpg)
-</Frame>
+![Credit card icon at the center with three labeled buttons below it: "Instant Notifications," "Revert Transactions," and "Transaction Limits."](https://kodekloud.com/kk-media/image/upload/v1752880894/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Observability-Overview/credit-card-icon-buttons-notifications.jpg)
 
 Similarly, when a container is compromised:
 
@@ -91,9 +83,7 @@ Similarly, when a container is compromised:
 
 Once a container is breached, rapid detection prevents further spread:
 
-<Frame>
-  ![Network diagram showing a Kubernetes control plane, worker nodes, and a compromised worker node highlighted with an intruder icon and a warning on the node's screen.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880895/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Observability-Overview/network-diagram-security-breach.jpg)
-</Frame>
+![Network diagram showing a Kubernetes control plane, worker nodes, and a compromised worker node highlighted with an intruder icon and a warning on the node's screen.](https://kodekloud.com/kk-media/image/upload/v1752880895/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Observability-Overview/network-diagram-security-breach.jpg)
 
 What we need is a runtime security tool that inspects syscalls and flags suspicious activities in real time. Enter **Falco**.
 
@@ -101,17 +91,13 @@ What we need is a runtime security tool that inspects syscalls and flags suspici
 
 [Falco](https://falco.org) is an open-source runtime security project by Sysdig. It hooks into the Linux kernel to capture syscalls from containers and applies rules to detect:
 
-<Frame>
-  ![Diagram of containers making syscalls to the Linux kernel, with a list of syscall names on the side and the Falco logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880897/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Observability-Overview/system-architecture-containers-syscalls-falco.jpg)
-</Frame>
+![Diagram of containers making syscalls to the Linux kernel, with a list of syscall names on the side and the Falco logo.](https://kodekloud.com/kk-media/image/upload/v1752880897/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Observability-Overview/system-architecture-containers-syscalls-falco.jpg)
 
 * **Unexpected shell access** inside a container
 * **Reading sensitive files** like `/etc/shadow`
 * **Deleting or truncating logs** to cover tracks
 
-<Callout icon="lightbulb">
-  Falco requires privileged permissions to monitor syscalls. Make sure to deploy it with appropriate security contexts and RBAC settings.
-</Callout>
+> **lightbulb** Falco requires privileged permissions to monitor syscalls. Make sure to deploy it with appropriate security contexts and RBAC settings.
 
 ## Common Indicators of Compromise
 

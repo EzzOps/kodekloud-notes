@@ -10,9 +10,7 @@ This lab demonstrates running a small app in two backend containers behind an NG
 * Send multiple requests to the load balancer at `localhost:8080` and observe how requests are distributed.
 * Stop one backend container while requests are being served and observe failover to the remaining container.
 
-<Callout icon="lightbulb">
-  This lab assumes an NGINX-based load balancer is already configured to proxy requests from `localhost:8080` to the two backend app containers. For a refresher, see [Introduction to NGINX](https://learn.kodekloud.com/user/courses/introduction-to-nginx).
-</Callout>
+> **lightbulb** This lab assumes an NGINX-based load balancer is already configured to proxy requests from `localhost:8080` to the two backend app containers. For a refresher, see [Introduction to NGINX](https://learn.kodekloud.com/user/courses/introduction-to-nginx).
 
 ## What you'll observe
 

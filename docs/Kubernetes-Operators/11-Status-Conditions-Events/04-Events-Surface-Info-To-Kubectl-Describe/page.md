@@ -96,9 +96,7 @@ Use events sparingly and meaningfully:
 * Record noteworthy observations (threshold crossed, external failure).
 * Do not rely on events as persistent state or as input to reconciliation logic.
 
-<Callout icon="warning">
-  Events are recent context, not permanent storage. If a fact must drive controller behavior, put it in `spec`, `status`, or an external system — do not rely on events to decide what reconcile should do next time.
-</Callout>
+> **warning** Events are recent context, not permanent storage. If a fact must drive controller behavior, put it in `spec`, `status`, or an external system — do not rely on events to decide what reconcile should do next time.
 
 Quick reference
 
@@ -115,6 +113,4 @@ Together, these let your WebApp explain itself like a native Kubernetes resource
 In the next demo
 The controller obtains an event recorder and writes a few targeted events. The benefit is immediately visible in `kubectl describe webapp site`: the resource shows current status plus a short, human-readable timeline of recent controller actions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/1b89022e-6545-4df7-8dd6-70179b187c9f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/715ddc8b-3997-4878-8900-2f710183ee13/lesson/1b89022e-6545-4df7-8dd6-70179b187c9f)

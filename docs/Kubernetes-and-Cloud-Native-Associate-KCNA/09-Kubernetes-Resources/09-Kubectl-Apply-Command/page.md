@@ -40,9 +40,7 @@ When you execute the `kubectl apply` command, Kubernetes considers three sources
 2. The live object's configuration present in the Kubernetes cluster.
 3. The last applied configuration stored on the live object as an annotation.
 
-<Callout icon="lightbulb">
-  If the object does not exist in the cluster, Kubernetes creates it using the local configuration. The newly created object resembles the file you provided but includes additional fields (such as status information) added by the cluster.
-</Callout>
+> **lightbulb** If the object does not exist in the cluster, Kubernetes creates it using the local configuration. The newly created object resembles the file you provided but includes additional fields (such as status information) added by the cluster.
 
 For example, after creating the object, it might look similar to this:
 
@@ -103,9 +101,7 @@ the command compares the new image value with the live configuration. Any differ
 
 The following diagram explains how Kubernetes merges changes for both primitive and map fields. It details the actions taken based on the presence or absence of a field in the local, live, or last applied configuration:
 
-<Frame>
-  ![The image shows tables explaining how changes to primitive and map fields are merged in Kubernetes configurations, detailing actions based on field presence.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880675/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Kubectl-Apply-Command/frame_200.jpg)
-</Frame>
+![The image shows tables explaining how changes to primitive and map fields are merged in Kubernetes configurations, detailing actions based on field presence.](https://kodekloud.com/kk-media/image/upload/v1752880675/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Kubectl-Apply-Command/frame_200.jpg)
 
 ## Last Applied Configuration Storage
 
@@ -176,9 +172,7 @@ status:
   conditions: null
 ```
 
-<Callout icon="triangle-alert">
-  Only the `kubectl apply` command stores the last applied configuration. Commands like `kubectl create` or `kubectl replace` do not maintain this history. To ensure accurate tracking of changes, always use the declarative approach with `kubectl apply`.
-</Callout>
+> **triangle-alert** Only the `kubectl apply` command stores the last applied configuration. Commands like `kubectl create` or `kubectl replace` do not maintain this history. To ensure accurate tracking of changes, always use the declarative approach with `kubectl apply`.
 
 ## Conclusion
 
@@ -189,6 +183,4 @@ For more information on working with Kubernetes, be sure to explore the followin
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/0153c424-790a-4418-8f72-de05bb27d694" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/0153c424-790a-4418-8f72-de05bb27d694)

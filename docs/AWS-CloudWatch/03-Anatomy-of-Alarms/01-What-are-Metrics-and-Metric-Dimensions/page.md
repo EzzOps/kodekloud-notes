@@ -14,7 +14,7 @@ Consider a scenario where:
 
 First, you investigate and resolve the issue. Next, you decide which metrics to track and how to design effective alerts.
 
-![The image is a diagram illustrating an AWS cloud setup, featuring a Virtual Private Cloud (VPC) with an Availability Zone containing AWS RDS. It is titled "Metrics and Metric Dimensions."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862419/notes-assets/images/AWS-CloudWatch-What-are-Metrics-and-Metric-Dimensions/aws-cloud-setup-vpc-rds-diagram.jpg)
+![The image is a diagram illustrating an AWS cloud setup, featuring a Virtual Private Cloud (VPC) with an Availability Zone containing AWS RDS. It is titled "Metrics and Metric Dimensions."](https://kodekloud.com/kk-media/image/upload/v1752862419/notes-assets/images/AWS-CloudWatch-What-are-Metrics-and-Metric-Dimensions/aws-cloud-setup-vpc-rds-diagram.jpg)
 
 ## What Is a Metric?
 
@@ -44,7 +44,7 @@ Typical RDS dimensions:
 
 Pairing a metric with dimensions creates a fully qualified data point in CloudWatch.
 
-![The image is a diagram showing "Metrics" and "Metric Dimensions" related to database performance, including elements like CPU utilization, memory usage, and DB instance identifiers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862421/notes-assets/images/AWS-CloudWatch-What-are-Metrics-and-Metric-Dimensions/database-performance-metrics-diagram.jpg)
+![The image is a diagram showing "Metrics" and "Metric Dimensions" related to database performance, including elements like CPU utilization, memory usage, and DB instance identifiers.](https://kodekloud.com/kk-media/image/upload/v1752862421/notes-assets/images/AWS-CloudWatch-What-are-Metrics-and-Metric-Dimensions/database-performance-metrics-diagram.jpg)
 
 ### Example: Identifying a Stressed Instance
 

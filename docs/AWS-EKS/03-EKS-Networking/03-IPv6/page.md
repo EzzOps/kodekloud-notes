@@ -6,7 +6,7 @@ This guide explains how to enable and manage IPv6 support in Amazon EKS using du
 
 In this guide, we’ll dive into how IPv6 works in Amazon EKS when using the AWS VPC CNI plugin. By enabling IPv6 at VPC creation time, you get a dual-stack VPC (IPv4 + IPv6). As AWS services continue to evolve, IPv6-only VPCs are not yet supported, so you must use dual-stack.
 
-![The image illustrates the concept of visualizing IPv6 addresses within a dual-stack VPC, showing components like a node, RDS database, and S3 bucket, with IPv6 enabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862793/notes-assets/images/AWS-EKS-IPv6/ipv6-visualization-dual-stack-vpc.jpg)
+![The image illustrates the concept of visualizing IPv6 addresses within a dual-stack VPC, showing components like a node, RDS database, and S3 bucket, with IPv6 enabled.](https://kodekloud.com/kk-media/image/upload/v1752862793/notes-assets/images/AWS-EKS-IPv6/ipv6-visualization-dual-stack-vpc.jpg)
 
 ## Dual-Stack VPC and Prefix Delegation
 
@@ -16,7 +16,7 @@ When IPv6 is enabled on your VPC (and on your EKS cluster):
 * Kubernetes uses **Prefix Delegation** to hand out a `/80` IPv6 block to each node.\
   That `/80` block contains \~2.8 × 10^14 addresses—orders of magnitude more than all IPv4 addresses on the Internet.
 
-![The image illustrates the concept of visualizing IPv6 addresses within an EKS Cluster, showing a dual-stack VPC with both IPv4 and IPv6 capabilities, and highlighting the availability of 100 trillion IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862794/notes-assets/images/AWS-EKS-IPv6/ipv6-addresses-eks-cluster-diagram.jpg)
+![The image illustrates the concept of visualizing IPv6 addresses within an EKS Cluster, showing a dual-stack VPC with both IPv4 and IPv6 capabilities, and highlighting the availability of 100 trillion IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752862794/notes-assets/images/AWS-EKS-IPv6/ipv6-addresses-eks-cluster-diagram.jpg)
 
 ## Pod Networking and NAT64 Translation
 
@@ -29,7 +29,7 @@ By design, EKS Pods are **single-stack IPv6**: they only receive an IPv6 address
 
 All IPv6-to-IPv4 translation uses link-local addresses (`169.254.0.0/16` via `veth*`). If the destination has native IPv6, traffic flows directly over the IPv6 ENI.
 
-![The image illustrates the concept of visualizing IPv6 addresses within a dual-stack VPC, showing a node with a pod connected to an ENI, supporting both IPv4 and IPv6.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862795/notes-assets/images/AWS-EKS-IPv6/ipv6-addresses-dual-stack-vpc-diagram.jpg)
+![The image illustrates the concept of visualizing IPv6 addresses within a dual-stack VPC, showing a node with a pod connected to an ENI, supporting both IPv4 and IPv6.](https://kodekloud.com/kk-media/image/upload/v1752862795/notes-assets/images/AWS-EKS-IPv6/ipv6-addresses-dual-stack-vpc-diagram.jpg)
 
 > **triangle-alert** Pods accessing IPv4 services share the same node-level IPv4 address and NAT connections. This can become a throughput bottleneck at scale—plan accordingly.
 
@@ -43,7 +43,7 @@ Since IPv6 addresses are globally unique, you generally don’t need SNAT or NAT
 
 > **lightbulb** AWS does **not** offer an ingress-only IPv6 gateway. Control incoming IPv6 traffic with Security Groups or Network ACLs.
 
-![The image is a diagram illustrating the visualization of an IPv6 address, showing connections between IPv4, IPv6, and IPv6/80 through an ENI (Elastic Network Interface).](../../../../images/kodekloud.com/kk-media/image/upload/v1752862796/notes-assets/images/AWS-EKS-IPv6/ipv6-address-visualization-diagram.jpg)
+![The image is a diagram illustrating the visualization of an IPv6 address, showing connections between IPv4, IPv6, and IPv6/80 through an ENI (Elastic Network Interface).](https://kodekloud.com/kk-media/image/upload/v1752862796/notes-assets/images/AWS-EKS-IPv6/ipv6-address-visualization-diagram.jpg)
 
 ## 1. Creating a Dual-Stack EKS Cluster
 

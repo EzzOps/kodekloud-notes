@@ -12,15 +12,11 @@ So far, you have learned that there are two main methods to create and manage Ku
 
 Imagine you want to visit a friend's house on Street B. In the past, you might have hired a taxi and provided detailed, step-by-step directions—turn right onto Street B, then left onto Street C, and so on. This instruction-by-instruction guidance is similar to the imperative approach in Kubernetes.
 
-<Frame>
-  ![The image compares imperative and declarative approaches using a route map with streets and a taxi, illustrating different methods of reaching a destination.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880672/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Imperative-vs-Declarative/frame_50.jpg)
-</Frame>
+![The image compares imperative and declarative approaches using a route map with streets and a taxi, illustrating different methods of reaching a destination.](https://kodekloud.com/kk-media/image/upload/v1752880672/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Imperative-vs-Declarative/frame_50.jpg)
 
 Today, booking a cab through a service like Uber is much simpler. You simply provide your destination (e.g., Tom's house) and the system figures out the best route for you. This is analogous to the declarative approach, where you declare the desired state, and the system handles the underlying details.
 
-<Frame>
-  ![The image compares imperative and declarative directions, showing a route with specific turns versus a simple destination statement.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880673/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Imperative-vs-Declarative/frame_90.jpg)
-</Frame>
+![The image compares imperative and declarative directions, showing a route with specific turns versus a simple destination statement.](https://kodekloud.com/kk-media/image/upload/v1752880673/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Imperative-vs-Declarative/frame_90.jpg)
 
 ## Imperative Approach Explained
 
@@ -143,9 +139,7 @@ If you need to delete and recreate the object, consider using the force option:
 kubectl replace --force -f nginx.yaml
 ```
 
-<Callout icon="triangle-alert">
-  Running `kubectl create -f nginx.yaml` on an object that already exists will produce an error. Always check the object's existence before creation.
-</Callout>
+> **triangle-alert** Running `kubectl create -f nginx.yaml` on an object that already exists will produce an error. Always check the object's existence before creation.
 
 ## Declarative Approach with kubectl apply
 
@@ -183,9 +177,7 @@ kubectl set image deployment nginx nginx=nginx:1.18
 
 However, for more complex environments—such as deploying multi-container pods, setting up environment variables, or initializing containers—it is recommended to use YAML configuration files in combination with `kubectl apply`. This method allows you to iterate quickly and safely correct any mistakes directly in your configuration files.
 
-<Callout icon="lightbulb">
-  While imperative commands are efficient for simple tasks, maintaining configuration files in a version-controlled repository is key for managing larger and more complex clusters.
-</Callout>
+> **lightbulb** While imperative commands are efficient for simple tasks, maintaining configuration files in a version-controlled repository is key for managing larger and more complex clusters.
 
 ## Conclusion
 
@@ -193,10 +185,6 @@ Understanding the differences between imperative and declarative approaches in K
 
 For more details on Kubernetes management techniques, visit the [Kubernetes Documentation](https://kubernetes.io/docs).
 
-<Frame>
-  ![The image compares imperative and declarative approaches in Infrastructure as Code, detailing steps for setting up an NGINX server on a virtual machine.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880674/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Imperative-vs-Declarative/frame_240.jpg)
-</Frame>
+![The image compares imperative and declarative approaches in Infrastructure as Code, detailing steps for setting up an NGINX server on a virtual machine.](https://kodekloud.com/kk-media/image/upload/v1752880674/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Imperative-vs-Declarative/frame_240.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/66881a61-ace8-40b1-88c6-0b9431bef41e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/509501a0-727a-41b9-b9a5-e022735c098e/lesson/66881a61-ace8-40b1-88c6-0b9431bef41e)

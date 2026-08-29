@@ -94,11 +94,11 @@ Now that you understand the event schema, follow these steps to deploy an Event 
 
 3. Select the appropriate subscription and resource you wish to monitor. The image below shows the Azure portal interface for creating an Event Grid System Topic:
 
-![The image shows a Microsoft Azure portal interface for creating an Event Grid System Topic. It includes fields for selecting topic types, subscription, resource group, and entering a name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866461/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Event-Schemas/azure-portal-event-grid-topic.jpg)
+![The image shows a Microsoft Azure portal interface for creating an Event Grid System Topic. It includes fields for selecting topic types, subscription, resource group, and entering a name.](https://kodekloud.com/kk-media/image/upload/v1752866461/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Event-Schemas/azure-portal-event-grid-topic.jpg)
 
 4. Before configuring your Event Grid, create a storage account that will generate events. In the Azure portal, search for "Storage Account". Create a new Storage Account by selecting a subscription and creating a new resource group (for example, RGAZ204). Provide a unique name for the storage account (e.g., AZ204ST Event Grid) and choose a region. The following image illustrates the storage account creation process:
 
-![The image shows a Microsoft Azure portal page for creating a storage account, with fields for subscription, resource group, storage account name, region, and other configuration options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866463/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Event-Schemas/azure-portal-storage-account-creation.jpg)
+![The image shows a Microsoft Azure portal page for creating a storage account, with fields for subscription, resource group, storage account name, region, and other configuration options.](https://kodekloud.com/kk-media/image/upload/v1752866463/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Event-Schemas/azure-portal-storage-account-creation.jpg)
 
 > **lightbulb** When choosing a region, consider factors such as latency and regulatory compliance to optimize performance and meet local requirements.
 
@@ -108,11 +108,11 @@ Now that you understand the event schema, follow these steps to deploy an Event 
 
 7. Click on "Review and Create" to deploy the system topic. Once the deployment is complete, click "Go to Resource." The Event Grid system topic resource will provide an overview of various metrics, such as published, failed, and matched events. The image below displays the system topic details:
 
-![The image shows a Microsoft Azure portal interface for creating an Event Grid System Topic, with fields for topic details, system topic details, and identity settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866467/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Event-Schemas/azure-portal-event-grid-topic-2.jpg)
+![The image shows a Microsoft Azure portal interface for creating an Event Grid System Topic, with fields for topic details, system topic details, and identity settings.](https://kodekloud.com/kk-media/image/upload/v1752866467/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Event-Schemas/azure-portal-event-grid-topic-2.jpg)
 
 8. Following the deployment, you can add event subscriptions—for example, to trigger a Function App, Logic App, or webhook—to process the captured events. The next image showcases the Event Grid system topic along with its event subscription details:
 
-![The image shows a Microsoft Azure portal interface displaying details of an Event Grid System Topic, including metrics and event subscription information. The page includes options for managing the topic and viewing metrics over different time periods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866469/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Event-Schemas/azure-portal-event-grid-topic-3.jpg)
+![The image shows a Microsoft Azure portal interface displaying details of an Event Grid System Topic, including metrics and event subscription information. The page includes options for managing the topic and viewing metrics over different time periods.](https://kodekloud.com/kk-media/image/upload/v1752866469/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Discovering-Event-Schemas/azure-portal-event-grid-topic-3.jpg)
 
 > **triangle-alert** Ensure to configure proper event subscriptions to handle events securely and efficiently. Misconfigurations may lead to loss of critical event data or unintended operations.
 

@@ -48,9 +48,7 @@ Further reading and references:
 * [eBPF](https://ebpf.io/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/834012c3-3c5b-47cb-bfee-1cf373732e3d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/834012c3-3c5b-47cb-bfee-1cf373732e3d)
 
 
 # Building Your FinOps team
@@ -76,9 +74,7 @@ Think of the model as an orchestra: each team (musician) plays its own instrumen
 
 Starting a FinOps program can feel overwhelming. That’s normal. No organization gets its structure perfect on day one. Adopt an iterative mindset: start small, measure impact, and scale the capability as your cloud spend and organizational complexity grow.
 
-<Callout icon="lightbulb">
-  Start with a minimum-viable FinOps capability, measure impact, then evolve structure and roles as your spend and complexity grow.
-</Callout>
+> **lightbulb** Start with a minimum-viable FinOps capability, measure impact, then evolve structure and roles as your spend and complexity grow.
 
 ## Five Fundamental Questions for Building a FinOps Team
 
@@ -115,9 +111,7 @@ Start with a small corps of dedicated contributors and a broader set of part-tim
 
 Reporting into a leader who can influence both finance and engineering (CTO/CFO/COO) helps with authority and cross-functional execution. If separate reporting is unavoidable, create strong sponsorship and a clear charter.
 
-<Callout icon="warning">
-  Common blockers include poor access to billing and usage data, unclear ownership of cost outcomes, and incentives that favor feature velocity over cost efficiency. Address these early to unlock results.
-</Callout>
+> **warning** Common blockers include poor access to billing and usage data, unclear ownership of cost outcomes, and incentives that favor feature velocity over cost efficiency. Address these early to unlock results.
 
 <Frame>
   <img alt="The image focuses on building a FinOps team and lists questions about team composition and effectiveness. It features a person appearing thoughtful next to these points." />
@@ -142,6 +136,4 @@ Further reading:
 
 Thanks for reading.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/1de0a7cc-5e70-4e69-a8f4-f8c83d2b45fc/lesson/1f67578c-94e9-4cac-a9ba-a070d3c12378" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/1de0a7cc-5e70-4e69-a8f4-f8c83d2b45fc/lesson/1f67578c-94e9-4cac-a9ba-a070d3c12378)

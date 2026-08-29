@@ -123,9 +123,7 @@ Since Telepresence runs the container locally, those Pod environment variables w
    ...
    ```
 
-<Callout icon="lightbulb">
-  The `--mount=true` flag ensures your local process can read `my-envs.env` as if it were on your filesystem.
-</Callout>
+> **lightbulb** The `--mount=true` flag ensures your local process can read `my-envs.env` as if it were on your filesystem.
 
 ## 5. Loading the `.env` File in Node.js
 
@@ -195,6 +193,4 @@ This confirms that your local service reads the same environment variables as in
 * [dotenv on npm](https://www.npmjs.com/package/dotenv)
 * [node-fetch GitHub](https://github.com/node-fetch/node-fetch)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/2a2316b1-448a-4d03-994b-8d5ce97d3edf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/2a2316b1-448a-4d03-994b-8d5ce97d3edf)

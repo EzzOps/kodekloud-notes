@@ -64,9 +64,7 @@ Best practices and tips
 * Rate limits: respect Tavily's API rate limits; implement retries and backoff where appropriate.
 * Security: keep API keys in secrets management (environment variables, secret managers, or vaults).
 
-<Callout icon="warning">
-  Never commit your `TAVILY_API_KEY` (or any secret) to version control. Use environment variables or a secrets manager in production to avoid accidental exposure.
-</Callout>
+> **warning** Never commit your `TAVILY_API_KEY` (or any secret) to version control. Use environment variables or a secrets manager in production to avoid accidental exposure.
 
 Integrations and next steps
 
@@ -85,9 +83,7 @@ Key takeaways
 * Store your API key securely and use the `TavilySearchResults` wrapper to fetch structured results.
 * Aggregate, chunk, and cite returned `content` and `url` fields when constructing LLM context for accurate, up-to-date answers.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/06905b96-585d-4c9e-835a-d8fcaca76e2a/lesson/539b06ca-74c9-4105-a342-f3d2444affb0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/06905b96-585d-4c9e-835a-d8fcaca76e2a/lesson/539b06ca-74c9-4105-a342-f3d2444affb0)
 
 
 # Using Wikipedia Tool

@@ -80,9 +80,7 @@ stages {
 
 A new build triggered after committing these changes will show the echoed environment variables. Note that the colon-separated variable masks sensitive data, while the username appears in clear text, and the password remains masked.
 
-<Callout icon="lightbulb">
-  If your NPM tests require variables named MONGO\_USERNAME and MONGO\_PASSWORD, create two separate Secret Text credentials in Jenkins—one for the username and one for the password. Then update the environment block as shown below.
-</Callout>
+> **lightbulb** If your NPM tests require variables named MONGO\_USERNAME and MONGO\_PASSWORD, create two separate Secret Text credentials in Jenkins—one for the username and one for the password. Then update the environment block as shown below.
 
 ```groovy theme={null}
 environment {
@@ -236,14 +234,8 @@ By choosing the approach that best fits your requirements, you can reduce duplic
 
 For more detailed guidance, please refer to the [Jenkins documentation](https://www.jenkins.io/doc/).
 
-<Frame>
-  ![The image shows a webpage from the Jenkins documentation, specifically focusing on using a Jenkinsfile with credential environment variables. The page includes code snippets and explanations about handling credentials securely in a Jenkins pipeline.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879602/notes-assets/images/Jenkins-Pipelines-Refactoring-Jenkinsfile/jenkinsfile-credentials-environment-variables.jpg)
-</Frame>
+![The image shows a webpage from the Jenkins documentation, specifically focusing on using a Jenkinsfile with credential environment variables. The page includes code snippets and explanations about handling credentials securely in a Jenkins pipeline.](https://kodekloud.com/kk-media/image/upload/v1752879602/notes-assets/images/Jenkins-Pipelines-Refactoring-Jenkinsfile/jenkinsfile-credentials-environment-variables.jpg)
 
-<Frame>
-  ![The image shows a Jenkins pipeline interface for a project named "solar-system" under "Gitea-Organization," displaying the stages of a build process with some stages marked as successful and others with warnings or errors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879602/notes-assets/images/Jenkins-Pipelines-Refactoring-Jenkinsfile/jenkins-pipeline-solar-system-gitea.jpg)
-</Frame>
+![The image shows a Jenkins pipeline interface for a project named "solar-system" under "Gitea-Organization," displaying the stages of a build process with some stages marked as successful and others with warnings or errors.](https://kodekloud.com/kk-media/image/upload/v1752879602/notes-assets/images/Jenkins-Pipelines-Refactoring-Jenkinsfile/jenkins-pipeline-solar-system-gitea.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/bcd4711c-8a69-4218-a65c-113fd7a7a88d/lesson/0e42399c-5219-423c-b941-32896430e61f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/bcd4711c-8a69-4218-a65c-113fd7a7a88d/lesson/0e42399c-5219-423c-b941-32896430e61f)

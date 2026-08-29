@@ -22,13 +22,9 @@ According to Stack Overflow’s insights, Linux ranks among the most widely used
 
 These objectives reflect real-world system administration skills identified through LPI’s job task analysis. As an LPI-certified gold partner, **KodeKloud** ensures you learn from trusted experts.
 
-<Callout icon="lightbulb">
-  This course combines concise lessons, practice quizzes, and full-length mock exams to prepare you thoroughly for the LPIC-1 101 exam—the first of two exams for LPIC-1.
-</Callout>
+> **lightbulb** This course combines concise lessons, practice quizzes, and full-length mock exams to prepare you thoroughly for the LPIC-1 101 exam—the first of two exams for LPIC-1.
 
-<Frame>
-  ![The image shows a person wearing a "KodeKloud" shirt, with a graphic beside them displaying icons for "MCQ" and "Fill in the Blanks."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881423/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Course-Introduction/kodekloud-shirt-mcq-fill-blanks-icons.jpg)
-</Frame>
+![The image shows a person wearing a "KodeKloud" shirt, with a graphic beside them displaying icons for "MCQ" and "Fill in the Blanks."](https://kodekloud.com/kk-media/image/upload/v1752881423/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Course-Introduction/kodekloud-shirt-mcq-fill-blanks-icons.jpg)
 
 Each lesson simplifies complex concepts with illustrations and animations. After every lesson, you’ll tackle a short quiz to reinforce your understanding before moving forward. The course concludes with realistic mock exams that mirror the actual test format of multiple-choice and fill-in-the-blank questions.
 
@@ -43,16 +39,10 @@ During this series, we’ll cover all four domains of the LPIC-1 101 exam:
 | GNU and Unix Commands                   | Command line operations, file/process management, basic text editing |
 | Devices, Linux Filesystem & FHS         | Partition and filesystem handling, directory structure standards     |
 
-<Frame>
-  ![A person wearing a "KodeKloud" shirt is speaking, with a list of Linux-related topics displayed beside them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881424/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Course-Introduction/kodekloud-shirt-speaking-linux-topics.jpg)
-</Frame>
+![A person wearing a "KodeKloud" shirt is speaking, with a list of Linux-related topics displayed beside them.](https://kodekloud.com/kk-media/image/upload/v1752881424/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Course-Introduction/kodekloud-shirt-speaking-linux-topics.jpg)
 
-<Callout icon="lightbulb">
-  If you have questions or get stuck, join our [community channel](https://kodekloud.community/) to connect with peers and instructors.
-</Callout>
+> **lightbulb** If you have questions or get stuck, join our [community channel](https://kodekloud.community/) to connect with peers and instructors.
 
 I’m excited to get started—see you in the first lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/d4be6e48-68fa-4f21-a1d8-f53d01c122a4/lesson/e3a48bcb-ec1f-4d32-8e57-5f258d21fcf1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/d4be6e48-68fa-4f21-a1d8-f53d01c122a4/lesson/e3a48bcb-ec1f-4d32-8e57-5f258d21fcf1)

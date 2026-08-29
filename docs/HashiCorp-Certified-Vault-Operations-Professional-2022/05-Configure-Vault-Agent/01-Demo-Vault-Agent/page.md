@@ -39,9 +39,7 @@ path "secret/apps/+/*team-*" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  Wildcards can inadvertently grant broader access. Always test your patterns to ensure they match only the intended paths.
-</Callout>
+> **triangle-alert** Wildcards can inadvertently grant broader access. Always test your patterns to ensure they match only the intended paths.
 
 ***
 
@@ -149,9 +147,7 @@ For more examples, see the official HashiCorp [Vault documentation][vault-docs] 
 
 Mastering Vault policies—capabilities, wildcards, and templates—is essential for robust RBAC. Practice in a dev environment to solidify your understanding.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/968cf007-376b-48c8-83f9-17521b5dd575/lesson/8b8d6d11-227a-463c-8942-8d935f3ea30d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/968cf007-376b-48c8-83f9-17521b5dd575/lesson/8b8d6d11-227a-463c-8942-8d935f3ea30d)
 
 
 # Demo Vault Agent
@@ -168,9 +164,7 @@ In this tutorial, you’ll learn how to configure HashiCorp Vault Agent for auto
 * Vault CLI (`vault`) installed and authenticated as an operator.
 * Basic knowledge of Vault’s AppRole auth method and KV secrets engine.
 
-<Callout icon="lightbulb">
-  Ensure your Vault server is unsealed and you have the `root` or equivalent token in `VAULT_TOKEN` before proceeding.
-</Callout>
+> **lightbulb** Ensure your Vault server is unsealed and you have the `root` or equivalent token in `VAULT_TOKEN` before proceeding.
 
 ***
 
@@ -213,9 +207,7 @@ In this tutorial, you’ll learn how to configure HashiCorp Vault Agent for auto
    echo "<SECRET_ID>" > secret.txt
    ```
 
-<Callout icon="triangle-alert">
-  Keep `secret.txt` secure! Anyone with access can authenticate as the AppRole.
-</Callout>
+> **triangle-alert** Keep `secret.txt` secure! Anyone with access can authenticate as the AppRole.
 
 ***
 
@@ -384,6 +376,4 @@ You’ve successfully:
 
 For more details, visit the [Vault Agent Documentation](https://www.vaultproject.io/docs/agent).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/0e6639de-d61c-402b-a161-8f7fc39daf07/lesson/de64e058-744c-4a60-a44a-3cd3fe85b6d2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-operations-professional-2022/module/0e6639de-d61c-402b-a161-8f7fc39daf07/lesson/de64e058-744c-4a60-a44a-3cd3fe85b6d2)

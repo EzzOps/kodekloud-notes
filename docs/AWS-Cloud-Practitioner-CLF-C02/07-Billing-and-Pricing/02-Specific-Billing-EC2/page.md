@@ -25,7 +25,7 @@ EC2 pricing centers on several critical factors:
 
 Selecting the right EC2 instance can be challenging given the variety of types and sizes. A valuable resource is [ec2instances.info](https://ec2instances.info), which leverages AWS API data for easy searching based on memory, CPU, and instance storage. This tool even provides cost estimates; for example, a high-end system with 448 processors and 24 TB of temporary storage might cost around \$218 per hour.
 
-![The image shows a table detailing EC2 instance billing specifics, including instance types, memory, vCPUs, storage, network performance, and various cost metrics for Linux and Windows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861467/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Specific-Billing-EC2/frame_140.jpg)
+![The image shows a table detailing EC2 instance billing specifics, including instance types, memory, vCPUs, storage, network performance, and various cost metrics for Linux and Windows.](https://kodekloud.com/kk-media/image/upload/v1752861467/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Specific-Billing-EC2/frame_140.jpg)
 
 ## EC2 Billing Models
 
@@ -49,13 +49,13 @@ Spot Instances let you bid on spare capacity and can offer discounts of up to 90
 
 Reservations involve committing to a specific instance in a particular region (and operating system) for one or three years. This commitment generally results in considerable savings compared to on-demand pricing.
 
-![The image outlines four EC2 billing models: On-Demand, Savings Plans, Spot, and Reservations, detailing their pricing strategies and potential discounts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861468/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Specific-Billing-EC2/frame_390.jpg)
+![The image outlines four EC2 billing models: On-Demand, Savings Plans, Spot, and Reservations, detailing their pricing strategies and potential discounts.](https://kodekloud.com/kk-media/image/upload/v1752861468/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Specific-Billing-EC2/frame_390.jpg)
 
 ### Dedicated Instances and Hosts
 
 For customers with specific security or licensing requirements, dedicated instances and hosts provide exclusive use of physical hardware. While AWS’s shared tenancy is secure for most applications, dedicated models guarantee that no other customer’s instances will run on the same hardware. This premium option is typically the most expensive.
 
-![The image outlines EC2 billing models, highlighting "Dedicated" for private EC2 hosts, with icons representing different pricing models.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861469/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Specific-Billing-EC2/frame_460.jpg)
+![The image outlines EC2 billing models, highlighting "Dedicated" for private EC2 hosts, with icons representing different pricing models.](https://kodekloud.com/kk-media/image/upload/v1752861469/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Specific-Billing-EC2/frame_460.jpg)
 
 ## Billing Summary by Use Case
 
@@ -68,11 +68,11 @@ The three primary cost drivers for EC2 are compute (instance size), storage, and
 
 Using the on-demand model, each configuration has a defined hourly rate. Transitioning to a reservation model (with a one- or three-year commitment) might cut the costs nearly in half. Conversely, dedicated models may nearly double the compute cost relative to on-demand pricing.
 
-![The image outlines R5.xlarge pricing for cloud services, detailing costs for compute, storage, and network usage, with specific resource requests and associated charges.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861470/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Specific-Billing-EC2/frame_570.jpg)
+![The image outlines R5.xlarge pricing for cloud services, detailing costs for compute, storage, and network usage, with specific resource requests and associated charges.](https://kodekloud.com/kk-media/image/upload/v1752861470/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Specific-Billing-EC2/frame_570.jpg)
 
 For a larger instance, such as an R5.4xlarge, the dedicated model cost can be almost double compared to on-demand pricing.
 
-![The image outlines R5.4xlarge pricing, detailing costs for compute, storage, and network usage, with specific charges for a virtual machine, disk storage, and data transfer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861471/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Specific-Billing-EC2/frame_610.jpg)
+![The image outlines R5.4xlarge pricing, detailing costs for compute, storage, and network usage, with specific charges for a virtual machine, disk storage, and data transfer.](https://kodekloud.com/kk-media/image/upload/v1752861471/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Specific-Billing-EC2/frame_610.jpg)
 
 ## Additional Cost Considerations
 
@@ -85,7 +85,7 @@ Other factors that can increase your EC2 expenses include:
 
 Moreover, additional data transfers, especially outbound transfers to on-premises environments, will further impact billing.
 
-![The image lists potential costs for EC2 features like storage, Elastic IPs, load balancers, hibernation, and data transfer, with an EC2 icon on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861472/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Specific-Billing-EC2/frame_650.jpg)
+![The image lists potential costs for EC2 features like storage, Elastic IPs, load balancers, hibernation, and data transfer, with an EC2 icon on the right.](https://kodekloud.com/kk-media/image/upload/v1752861472/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Specific-Billing-EC2/frame_650.jpg)
 
 > **triangle-alert** While these pricing details provide a comprehensive overview for AWS Cloud Practitioner candidates, deeper design and cost management strategies are crucial for those pursuing advanced certifications such as the [AWS Solutions Architect Associate](https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification).
 
@@ -100,6 +100,6 @@ Moreover, additional data transfers, especially outbound transfers to on-premise
 
 Thank you for following this detailed EC2 billing summary. This is Michael Forrester signing off—see you in the next article.
 
-![The image summarizes EC2 billing, highlighting pay-per-use, common dimensions, five pricing models, sizing importance, and cost implications of features and integrations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861473/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Specific-Billing-EC2/frame_790.jpg)
+![The image summarizes EC2 billing, highlighting pay-per-use, common dimensions, five pricing models, sizing importance, and cost implications of features and integrations.](https://kodekloud.com/kk-media/image/upload/v1752861473/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-Specific-Billing-EC2/frame_790.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-cloud-practitioner-clf-c02/module/2bdfc163-f478-4c56-b843-e20f38ee028f/lesson/98e4e718-87d4-4c9a-91ce-266e4b4a5684)

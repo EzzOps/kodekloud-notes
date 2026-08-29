@@ -14,9 +14,7 @@ In Rust, generics serve as placeholders for types. When you see a generic parame
 
 Operator overloading enables you to customize the behavior of standard operators such as the `+` operator for your custom types. While Rust natively supports operators for built-in types, you can extend this functionality to your own types by implementing traits like `Add` from the standard library.
 
-<Frame>
-  ![The image explains operator overloading in Rust, specifically using the "Add" trait to define the behavior of the "+" operator. It includes a brief description and a visual icon representing the concept.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883752/notes-assets/images/Rust-Programming-Default-Generic-Type-Parameters/rust-operator-overloading-add-trait.jpg)
-</Frame>
+![The image explains operator overloading in Rust, specifically using the "Add" trait to define the behavior of the "+" operator. It includes a brief description and a visual icon representing the concept.](https://kodekloud.com/kk-media/image/upload/v1752883752/notes-assets/images/Rust-Programming-Default-Generic-Type-Parameters/rust-operator-overloading-add-trait.jpg)
 
 The `Add` trait is defined as follows:
 
@@ -62,9 +60,7 @@ fn main() {
 }
 ```
 
-<Callout icon="lightbulb">
-  Operator overloading in Rust is implemented through traits, promoting code reuse and clarity.
-</Callout>
+> **lightbulb** Operator overloading in Rust is implemented through traits, promoting code reuse and clarity.
 
 ## Example 2: Overloading Addition for Different Types (Inches and Feet)
 
@@ -95,9 +91,7 @@ fn main() {
 }
 ```
 
-<Callout icon="triangle-alert">
-  When overloading operators with different types, ensure you apply the correct conversion logic. Incorrect conversions may lead to unexpected results.
-</Callout>
+> **triangle-alert** When overloading operators with different types, ensure you apply the correct conversion logic. Incorrect conversions may lead to unexpected results.
 
 ## Summary
 
@@ -108,6 +102,4 @@ For further reading:
 * [Rust Programming Language](https://www.rust-lang.org/)
 * [Rust Documentation: Traits](https://doc.rust-lang.org/book/ch10-02-traits.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/bff86fa1-7afc-44e5-b0ac-00b8be577bf8/lesson/0054ff69-127f-4c79-a4ee-f313d3a0c97e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/bff86fa1-7afc-44e5-b0ac-00b8be577bf8/lesson/0054ff69-127f-4c79-a4ee-f313d3a0c97e)

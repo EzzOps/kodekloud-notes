@@ -22,9 +22,7 @@ MONGO_USERNAME: superuser
 
 After their removal, no environment variables should be displayed.
 
-<Frame>
-  ![The image shows an AWS Lambda console with a notification indicating a successful update to the "solar-system-function." The "Environment variables" section is open, showing no variables set.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879580/notes-assets/images/Jenkins-Pipelines-Lambda-Deployment-using-Jenkinsfile/aws-lambda-solar-system-update.jpg)
-</Frame>
+![The image shows an AWS Lambda console with a notification indicating a successful update to the "solar-system-function." The "Environment variables" section is open, showing no variables set.](https://kodekloud.com/kk-media/image/upload/v1752879580/notes-assets/images/Jenkins-Pipelines-Lambda-Deployment-using-Jenkinsfile/aws-lambda-solar-system-update.jpg)
 
 ***
 
@@ -87,9 +85,7 @@ Fast-forward
  create mode 100644 zap_ignore_rules
 ```
 
-<Callout icon="lightbulb">
-  Ensure that you are working on the main branch before triggering the build to avoid merging conflicts.
-</Callout>
+> **lightbulb** Ensure that you are working on the main branch before triggering the build to avoid merging conflicts.
 
 ***
 
@@ -266,9 +262,7 @@ Once the Jenkins job is triggered on the main branch, the Lambda S3 Upload & Dep
 2. **S3 Upload:**\
    The generated zip file (for example, "solar-system-lambda-2.zip") is uploaded to the S3 bucket. Confirm the new object in the AWS S3 console.
 
-<Frame>
-  ![The image shows an Amazon S3 bucket interface with two zip files named "solar-system-lambda-2.2x.zip" and "solar-system-lambda.zip," both with a size of 9.9 MB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879581/notes-assets/images/Jenkins-Pipelines-Lambda-Deployment-using-Jenkinsfile/amazon-s3-bucket-zip-files.jpg)
-</Frame>
+![The image shows an Amazon S3 bucket interface with two zip files named "solar-system-lambda-2.2x.zip" and "solar-system-lambda.zip," both with a size of 9.9 MB.](https://kodekloud.com/kk-media/image/upload/v1752879581/notes-assets/images/Jenkins-Pipelines-Lambda-Deployment-using-Jenkinsfile/amazon-s3-bucket-zip-files.jpg)
 
 3. **AWS Lambda Update:**\
    The AWS CLI command updates the function code. A successful update will return a JSON message similar to the following:
@@ -329,9 +323,7 @@ Once the Jenkins job is triggered on the main branch, the Lambda S3 Upload & Dep
    }
    ```
 
-<Callout icon="triangle-alert">
-  Make sure to review your AWS CloudWatch logs for any errors after deployment to ensure that all necessary configurations are applied correctly.
-</Callout>
+> **triangle-alert** Make sure to review your AWS CloudWatch logs for any errors after deployment to ensure that all necessary configurations are applied correctly.
 
 ***
 
@@ -394,6 +386,4 @@ Following this configuration update, the Lambda function will be able to establi
 
 Thank you for following along in this guide. With these steps, your AWS Lambda deployment is automated using Jenkins, ensuring a smoother release cycle and reducing manual configuration errors. Happy deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/78297356-097c-4793-b690-bc83f9aba3f0/lesson/36990d66-503a-4634-8676-ae67e653fce1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/78297356-097c-4793-b690-bc83f9aba3f0/lesson/36990d66-503a-4634-8676-ae67e653fce1)

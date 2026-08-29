@@ -8,9 +8,7 @@ In this lesson, we explore Identity and Access Management (IAM) in AWS—a criti
 
 When you first register for an AWS account, you use an email address and password. This email address is linked to the root account, which has complete administrative privileges—similar to the root user in Linux or an administrator in Windows. Although the root account provides full access to all AWS services, it is highly recommended that you use it only for creating new IAM users. Once these users are established, secure your root account credentials and refrain from using them for routine tasks.
 
-<Frame>
-  ![A diagram showing an AWS Root Account connected to four users: Lucy, Max, Abdul, and Lee.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884241/notes-assets/images/Terraform-Basics-Training-Course-Introduction-to-IAM/frame_90.jpg)
-</Frame>
+![A diagram showing an AWS Root Account connected to four users: Lucy, Max, Abdul, and Lee.](https://kodekloud.com/kk-media/image/upload/v1752884241/notes-assets/images/Terraform-Basics-Training-Course-Introduction-to-IAM/frame_90.jpg)
 
 In this lesson, we demonstrate how to create new IAM users: Lucy, Max, Abdul, and Lee. AWS provides two distinct access methods for these users:
 
@@ -23,9 +21,7 @@ For instance, to interact with an S3 bucket programmatically, you might execute:
 aws s3api create-bucket --bucket my-bucket --region us-east-1
 ```
 
-<Callout icon="lightbulb">
-  Remember that programmatic access keys do not allow login to the Management Console. This distinction is crucial for maintaining secure access practices.
-</Callout>
+> **lightbulb** Remember that programmatic access keys do not allow login to the Management Console. This distinction is crucial for maintaining secure access practices.
 
 ## Assigning Permissions
 
@@ -48,15 +44,11 @@ This policy grants Lucy complete access to perform any action on all resources w
 
 AWS also offers a variety of managed policies tailored for specific job functions such as billing, database administration, and network management. For further details on these policies, refer to the extended discussion later in this lesson.
 
-<Frame>
-  ![The image shows a list of AWS IAM policies, including "AdministratorAccess," with types and usage details, from the AWS Management Console.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884242/notes-assets/images/Terraform-Basics-Training-Course-Introduction-to-IAM/frame_270.jpg)
-</Frame>
+![The image shows a list of AWS IAM policies, including "AdministratorAccess," with types and usage details, from the AWS Management Console.](https://kodekloud.com/kk-media/image/upload/v1752884242/notes-assets/images/Terraform-Basics-Training-Course-Introduction-to-IAM/frame_270.jpg)
 
 For developers like Max, Abdul, and Lee who require access to both AWS EC2 and S3 services, a common practice is to create an IAM group (e.g., "Developer Group") and attach policies such as AmazonEC2FullAccess and AmazonS3FullAccess. You are also able to attach additional policies directly to individual users within the group if necessary.
 
-<Frame>
-  ![The image illustrates an IAM group named "Developer Group" with members Max, Abdul, and Lee, having AmazonEC2FullAccess and AmazonS3FullAccess permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884243/notes-assets/images/Terraform-Basics-Training-Course-Introduction-to-IAM/frame_380.jpg)
-</Frame>
+![The image illustrates an IAM group named "Developer Group" with members Max, Abdul, and Lee, having AmazonEC2FullAccess and AmazonS3FullAccess permissions.](https://kodekloud.com/kk-media/image/upload/v1752884243/notes-assets/images/Terraform-Basics-Training-Course-Introduction-to-IAM/frame_380.jpg)
 
 ## IAM Roles for AWS Services
 
@@ -98,6 +90,4 @@ For more detailed information or further reading, consider exploring the followi
 * [AWS IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/)
 * [Security Best Practices](https://aws.amazon.com/security/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/0aea4cb1-d8fd-4296-a21d-80fccb11fe93" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/0aea4cb1-d8fd-4296-a21d-80fccb11fe93)

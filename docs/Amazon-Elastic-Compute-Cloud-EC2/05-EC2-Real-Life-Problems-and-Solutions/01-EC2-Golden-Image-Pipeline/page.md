@@ -48,7 +48,7 @@ Acme operates three environments—development, staging, and production—each h
 | Staging     | Nginx     | Node.js, Go |
 | Production  | Nginx     | Node.js, Go |
 
-![The image is a diagram of the Acme Corporation's AWS cloud environment, showing production, staging, and development stages with components like Nginx, Node.js, and Go. It also indicates frontend and backend sections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869076/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Golden-Image-Pipeline/acme-corporation-aws-cloud-diagram.jpg)
+![The image is a diagram of the Acme Corporation's AWS cloud environment, showing production, staging, and development stages with components like Nginx, Node.js, and Go. It also indicates frontend and backend sections.](https://kodekloud.com/kk-media/image/upload/v1752869076/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Golden-Image-Pipeline/acme-corporation-aws-cloud-diagram.jpg)
 
 ***
 
@@ -58,13 +58,13 @@ Acme operates three environments—development, staging, and production—each h
 
 Over time, developers applied manual updates and installed varying software versions across environments. As a result, staging no longer mirrors production, making debugging unpredictable.
 
-![The image is a diagram illustrating "Configuration Drift" in AWS Cloud, showing different environments (Production, Staging, Development) with varying software versions and configurations across two environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869077/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Golden-Image-Pipeline/configuration-drift-aws-diagram.jpg)
+![The image is a diagram illustrating "Configuration Drift" in AWS Cloud, showing different environments (Production, Staging, Development) with varying software versions and configurations across two environments.](https://kodekloud.com/kk-media/image/upload/v1752869077/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Golden-Image-Pipeline/configuration-drift-aws-diagram.jpg)
 
 ### 2. Version Upgrade Complexity
 
 Compliance mandates a uniform Nginx version, but automating upgrades can fail in edge cases. Skipped releases or unexpected behavior complicate rollbacks and extend maintenance windows.
 
-![The image illustrates a version upgrade process within AWS Cloud, showing different environments (Production, Staging, Development) across two environments with version numbers and Nginx icons. It also includes icons representing business, development, and management processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869078/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Golden-Image-Pipeline/aws-version-upgrade-process-diagram.jpg)
+![The image illustrates a version upgrade process within AWS Cloud, showing different environments (Production, Staging, Development) across two environments with version numbers and Nginx icons. It also includes icons representing business, development, and management processes.](https://kodekloud.com/kk-media/image/upload/v1752869078/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Golden-Image-Pipeline/aws-version-upgrade-process-diagram.jpg)
 
 ### 3. Security Vulnerability Remediation
 
@@ -81,7 +81,7 @@ Automation tools can scan and update instances, but handling live servers remain
 
 Traditional configuration management (Ansible, Chef) enforces state but often leads to lengthy runs and unpredictable outcomes on mutable servers. An immutable infrastructure pattern—where servers are replaced rather than modified—offers greater consistency and reliability.
 
-![The image shows a comparison between Ansible and Chef, with their respective icons and names, under the heading "Solution."](../../../../images/kodekloud.com/kk-media/image/upload/v1752869079/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Golden-Image-Pipeline/ansible-chef-comparison-solution-icons.jpg)
+![The image shows a comparison between Ansible and Chef, with their respective icons and names, under the heading "Solution."](https://kodekloud.com/kk-media/image/upload/v1752869079/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Golden-Image-Pipeline/ansible-chef-comparison-solution-icons.jpg)
 
 ***
 
@@ -101,7 +101,7 @@ Each pipeline stage produces a new AMI, feeding into the next:
 | Tool  | OS-stage AMI               | Install monitoring agents (CloudWatch Agent), security tools | Tool-stage AMI |
 | Tech  | Tool-stage AMI             | Install Nginx, Node.js, Go runtimes                          | Tech-stage AMI |
 
-![The image illustrates an "Image Building Process" pipeline, showing stages from Base OS to Tools and Technology, with components like Patch, Security, and CloudWatch, leading to different AMI outputs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869081/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Golden-Image-Pipeline/image-building-process-pipeline-ami.jpg)
+![The image illustrates an "Image Building Process" pipeline, showing stages from Base OS to Tools and Technology, with components like Patch, Security, and CloudWatch, leading to different AMI outputs.](https://kodekloud.com/kk-media/image/upload/v1752869081/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Golden-Image-Pipeline/image-building-process-pipeline-ami.jpg)
 
 ### Deployment Strategy
 
@@ -113,7 +113,7 @@ Once golden AMIs are built, roll them out in sequence:
 | Staging     | After 24 h of testing       | Next day              |
 | Production  | Post-staging validation     | Scheduled maintenance |
 
-![The image illustrates a "Golden AMI Solution" with an image build process creating different AMIs (ami-789, ami-900, ami-901) and their deployment across AWS Cloud environments: Production, Staging, and Development.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869082/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Golden-Image-Pipeline/golden-ami-solution-image-build-process.jpg)
+![The image illustrates a "Golden AMI Solution" with an image build process creating different AMIs (ami-789, ami-900, ami-901) and their deployment across AWS Cloud environments: Production, Staging, and Development.](https://kodekloud.com/kk-media/image/upload/v1752869082/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-EC2-Golden-Image-Pipeline/golden-ami-solution-image-build-process.jpg)
 
 Automating image builds and progressive rollouts ensures consistent environments, simplifies version management, and accelerates security patches—addressing drift, upgrades, and vulnerabilities in one streamlined workflow.
 

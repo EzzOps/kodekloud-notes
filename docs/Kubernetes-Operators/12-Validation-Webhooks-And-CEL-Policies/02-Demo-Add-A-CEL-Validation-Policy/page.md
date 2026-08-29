@@ -22,9 +22,7 @@ Start with `warn` or `audit` when introducing a new policy to observe cluster im
 When to use CEL — and when not to
 CEL is a strong fit for concise, object-local rules that can be expressed as pure predicates. It is not a general-purpose programming extension for the API server: do not attempt side effects, external network calls, or large workflows inside CEL.
 
-<Callout icon="warning">
-  Do not use CEL for checks that require external API calls, side effects, or complex business logic. For those cases, implement a custom validating webhook or another admission design that can perform network calls and richer processing.
-</Callout>
+> **warning** Do not use CEL for checks that require external API calls, side effects, or complex business logic. For those cases, implement a custom validating webhook or another admission design that can perform network calls and richer processing.
 
 <Frame>
   <img alt="The image outlines the boundaries of CEL, indicating it's a &#x22;Good fit&#x22; for clear expressions and object-local checks, but &#x22;Not a programming extension&#x22; for tasks involving side effects, external calls, or large workflows." />
@@ -45,9 +43,7 @@ References and further reading
 * Kubernetes Admission Controllers overview: [https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
 * ValidatingAdmissionPolicy docs: [https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#validatingadmissionpolicy](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#validatingadmissionpolicy)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/06ac03ac-518a-4bc6-b2f8-6ed63fcb26d5/lesson/33941c74-e52c-489e-a74d-e752fc4a54cf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/06ac03ac-518a-4bc6-b2f8-6ed63fcb26d5/lesson/33941c74-e52c-489e-a74d-e752fc4a54cf)
 
 
 # Demo Add A CEL Validation Policy
@@ -81,9 +77,7 @@ spec:
       messageExpression: "'spec.replicas must be between 1 and 10, got ' + string(object.spec.replicas)"
 ```
 
-<Callout icon="lightbulb">
-  Using `failurePolicy: Fail` ensures that if the policy cannot be evaluated, or a validation fails, the API server will block the matching request rather than allowing it to proceed silently.
-</Callout>
+> **lightbulb** Using `failurePolicy: Fail` ensures that if the policy cannot be evaluated, or a validation fails, the API server will block the matching request rather than allowing it to proceed silently.
 
 Policy fields — concise explanation:
 

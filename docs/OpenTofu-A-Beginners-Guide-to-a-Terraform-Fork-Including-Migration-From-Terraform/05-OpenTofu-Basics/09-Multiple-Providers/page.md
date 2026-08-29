@@ -28,9 +28,7 @@ Here, `alpha` appears in **us-east-1** (default) and `beta` in **ca-central-1** 
 | aws\_key\_pair.alpha | aws (default)       | us-east-1    |
 | aws\_key\_pair.beta  | aws.central (alias) | ca-central-1 |
 
-<Callout icon="triangle-alert">
-  Make sure your AWS credentials have permissions for each region or profile you target. Missing credentials can cause resource creation failures.
-</Callout>
+> **triangle-alert** Make sure your AWS credentials have permissions for each region or profile you target. Missing credentials can cause resource creation failures.
 
 ## Links and References
 
@@ -38,9 +36,7 @@ Here, `alpha` appears in **us-east-1** (default) and `beta` in **ca-central-1** 
 * [AWS Regions and Availability Zones](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
 * [Terraform Providers Documentation](https://www.terraform.io/docs/language/providers/configuration.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/8c04d4c3-0f65-454a-95b3-b95dcdc21e6a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/8c04d4c3-0f65-454a-95b3-b95dcdc21e6a)
 
 
 # Multiple Providers
@@ -73,9 +69,7 @@ resource "random_pet" "my-pet" {
 }
 ```
 
-<Callout icon="lightbulb">
-  Whenever you introduce a new Provider (e.g., the `random` provider here), you must reinitialize your configuration so OpenTofu can download or reuse the required plugin.
-</Callout>
+> **lightbulb** Whenever you introduce a new Provider (e.g., the `random` provider here), you must reinitialize your configuration so OpenTofu can download or reuse the required plugin.
 
 ## Initializing Providers
 
@@ -99,9 +93,7 @@ Initializing provider plugins...
 OpenTofu has been successfully initialized!
 ```
 
-<Callout icon="triangle-alert">
-  Review changes in your `.terraform.lock.hcl` after `tofu init`. Commit updates only if they match your intended dependency versions.
-</Callout>
+> **triangle-alert** Review changes in your `.terraform.lock.hcl` after `tofu init`. Commit updates only if they match your intended dependency versions.
 
 ## Planning and Applying Changes
 
@@ -171,6 +163,4 @@ Linking resources in this way lets you orchestrate complex, multi-provider deplo
 * [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest)
 * [HashiCorp Random Provider](https://registry.terraform.io/providers/hashicorp/random/latest)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/60de153e-0f0d-4bd5-b14d-83dbd1d45729" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/c3586b29-e450-4c95-bad9-91bdf332eb24/lesson/60de153e-0f0d-4bd5-b14d-83dbd1d45729)

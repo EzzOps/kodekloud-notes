@@ -10,7 +10,7 @@ In this lesson, we’ll dive into how Kubernetes networking works on AWS, why a 
 
 Kubernetes mandates a flat pod network: every pod must have a unique IP and be able to reach any other pod directly, without NAT or VLANs. All segmentation and isolation occur via higher-level constructs like NetworkPolicies.
 
-![The image illustrates the concept of "Flat Networking" with two labeled layers: "Segmentation and Isolation" and "Networking."](../../../../images/kodekloud.com/kk-media/image/upload/v1752862786/notes-assets/images/AWS-EKS-Networking/flat-networking-segmentation-isolation-diagram.jpg)
+![The image illustrates the concept of "Flat Networking" with two labeled layers: "Segmentation and Isolation" and "Networking."](https://kodekloud.com/kk-media/image/upload/v1752862786/notes-assets/images/AWS-EKS-Networking/flat-networking-segmentation-isolation-diagram.jpg)
 
 This stands in contrast to traditional three-tier architectures, where web, app, and database tiers each live in separate subnets. In Kubernetes, pods share a single IP space, and you enforce fine-grained controls using native policies.
 
@@ -50,7 +50,7 @@ Key characteristics:
 
 If you’d rather not consume VPC IPs for pods, consider overlay CNIs such as Flannel, Cilium, or Calico. They allocate pod IPs from an independent CIDR and encapsulate traffic between nodes.
 
-![The image illustrates an overlay network setup within a VPC, featuring a public subnet with a pod, IP addresses, and references to Cilium and Calico.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862787/notes-assets/images/AWS-EKS-Networking/vpc-overlay-network-cilium-calico-pod.jpg)
+![The image illustrates an overlay network setup within a VPC, featuring a public subnet with a pod, IP addresses, and references to Cilium and Calico.](https://kodekloud.com/kk-media/image/upload/v1752862787/notes-assets/images/AWS-EKS-Networking/vpc-overlay-network-cilium-calico-pod.jpg)
 
 | Plugin      | Pod IP Source | Overlay | Encapsulation Overhead  |
 | ----------- | ------------- | ------- | ----------------------- |
@@ -75,7 +75,7 @@ When using the AWS VPC CNI, plan your subnet sizes and pods-per-node carefully. 
 
 > **triangle-alert** Exhausting your subnet’s IP pool will prevent new pods from scheduling. Monitor `kubectl describe node` for IP allocations and right-size your VPC ranges accordingly.
 
-![The image is a diagram illustrating a VPC with a public subnet containing a pod, showing multiple IP addresses and an X-ENI connection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862788/notes-assets/images/AWS-EKS-Networking/vpc-public-subnet-pod-diagram.jpg)
+![The image is a diagram illustrating a VPC with a public subnet containing a pod, showing multiple IP addresses and an X-ENI connection.](https://kodekloud.com/kk-media/image/upload/v1752862788/notes-assets/images/AWS-EKS-Networking/vpc-public-subnet-pod-diagram.jpg)
 
 ***
 

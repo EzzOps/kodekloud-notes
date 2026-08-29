@@ -21,7 +21,7 @@ In this section, we will configure authentication using the Microsoft Identity P
 1. Navigate to your Azure App Service in the Azure Portal.
 2. From the left-hand menu, click **Authentication**.
 
-![The image shows a Microsoft Azure portal interface displaying details of a web app named "az204demoapp01," including its properties, deployment settings, and configuration options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866370/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authentication-and-Authorization-in-Azure-App-Service/azure-portal-web-app-details.jpg)
+![The image shows a Microsoft Azure portal interface displaying details of a web app named "az204demoapp01," including its properties, deployment settings, and configuration options.](https://kodekloud.com/kk-media/image/upload/v1752866370/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authentication-and-Authorization-in-Azure-App-Service/azure-portal-web-app-details.jpg)
 
 By default, anonymous access is enabled. This means that accessing your web application does not require credentials until you configure authentication.
 
@@ -34,7 +34,7 @@ To set up authentication through a trusted provider:
 
 This setup enables Microsoft authentication, allowing employees to securely sign in and access the application.
 
-![The image shows a form for adding an identity provider, specifically for Microsoft, with options for tenant configuration, app registration, and supported account types. It includes selections for workforce or external configuration and additional checks for client application requirements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866372/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authentication-and-Authorization-in-Azure-App-Service/microsoft-identity-provider-form.jpg)
+![The image shows a form for adding an identity provider, specifically for Microsoft, with options for tenant configuration, app registration, and supported account types. It includes selections for workforce or external configuration and additional checks for client application requirements.](https://kodekloud.com/kk-media/image/upload/v1752866372/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authentication-and-Authorization-in-Azure-App-Service/microsoft-identity-provider-form.jpg)
 
 ## Setting Up App Registration
 
@@ -46,15 +46,15 @@ When a user signs in, the app registration captures their credentials and uses t
 * Ensure access is restricted and authentication enforced.
 * Note that the default permission, User.Read, is automatically assigned. This permission allows your app to read basic user profile details such as name, picture, and email address.
 
-![The image shows a configuration screen for adding an identity provider, with options for client application, identity, and tenant requirements, as well as app service authentication settings. It includes radio buttons and dropdown menus for setting authentication and access restrictions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866373/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authentication-and-Authorization-in-Azure-App-Service/identity-provider-configuration-screen.jpg)
+![The image shows a configuration screen for adding an identity provider, with options for client application, identity, and tenant requirements, as well as app service authentication settings. It includes radio buttons and dropdown menus for setting authentication and access restrictions.](https://kodekloud.com/kk-media/image/upload/v1752866373/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authentication-and-Authorization-in-Azure-App-Service/identity-provider-configuration-screen.jpg)
 
 > **triangle-alert** Ensure that additional permissions are only granted if absolutely necessary. Over-granting permissions may expose sensitive user data.
 
-![The image shows a screen for adding an identity provider with Microsoft Graph permissions, specifically highlighting the "User.Read" permission for signing in and reading user profiles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866375/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authentication-and-Authorization-in-Azure-App-Service/microsoft-graph-identity-provider-permissions.jpg)
+![The image shows a screen for adding an identity provider with Microsoft Graph permissions, specifically highlighting the "User.Read" permission for signing in and reading user profiles.](https://kodekloud.com/kk-media/image/upload/v1752866375/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authentication-and-Authorization-in-Azure-App-Service/microsoft-graph-identity-provider-permissions.jpg)
 
 After verifying these settings, click **Add**. The Azure Portal will then update the authentication settings accordingly.
 
-![The image shows the Microsoft Azure portal, specifically the authentication settings page for a web app named "az204demoapp01." It displays options for configuring identity providers and authentication settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866382/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authentication-and-Authorization-in-Azure-App-Service/azure-portal-authentication-settings-az204demoapp01.jpg)
+![The image shows the Microsoft Azure portal, specifically the authentication settings page for a web app named "az204demoapp01." It displays options for configuring identity providers and authentication settings.](https://kodekloud.com/kk-media/image/upload/v1752866382/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authentication-and-Authorization-in-Azure-App-Service/azure-portal-authentication-settings-az204demoapp01.jpg)
 
 ## Testing the Authentication Flow
 

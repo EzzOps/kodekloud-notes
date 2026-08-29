@@ -15,12 +15,8 @@ Open source projects thrive on diverse perspectives and skills—there’s truly
 | Non-technical volunteers | Help with design, translations, community support   |
 | Hobbyists & students     | Experiment with code, join mentorship programs      |
 
-<Callout icon="lightbulb">
-  You don’t need deep expertise in the project’s core technology to get started. Small contributions—like improving documentation or reproducing bugs—are just as valuable as code submissions.
-</Callout>
+> **lightbulb** You don’t need deep expertise in the project’s core technology to get started. Small contributions—like improving documentation or reproducing bugs—are just as valuable as code submissions.
 
 For those exploring new technologies, open source offers a hands-on learning environment. Jump in today to sharpen your skills, make meaningful connections, and help shape the tools you rely on.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/fbb6900d-94ee-411a-8821-42557ca81867/lesson/10c7d753-ed26-4f50-93e2-05fa3eca4b09" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/open-source-for-beginners/module/fbb6900d-94ee-411a-8821-42557ca81867/lesson/10c7d753-ed26-4f50-93e2-05fa3eca4b09)

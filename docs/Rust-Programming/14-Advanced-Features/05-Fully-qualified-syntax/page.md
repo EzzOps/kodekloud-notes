@@ -10,19 +10,13 @@ In this lesson, we explore a crucial feature in Rust: fully-qualified syntax. Th
 
 Methods in Rust are functions defined within the context of a struct, enum, or trait. They are associated with a particular instance of a type and typically take `self` (or a reference to it) as their first parameter, allowing the method to access or modify instance data.
 
-<Frame>
-  ![The image explains "Methods" and "Self Parameter" in programming, highlighting that methods are functions tied to structures and the self parameter is used to access and modify instance data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883754/notes-assets/images/Rust-Programming-Fully-qualified-syntax/methods-self-parameter-programming.jpg)
-</Frame>
+![The image explains "Methods" and "Self Parameter" in programming, highlighting that methods are functions tied to structures and the self parameter is used to access and modify instance data.](https://kodekloud.com/kk-media/image/upload/v1752883754/notes-assets/images/Rust-Programming-Fully-qualified-syntax/methods-self-parameter-programming.jpg)
 
 Because Rust allows multiple traits—or even a trait and a struct—to define methods with identical names, ambiguity may arise. For instance, if two traits and a struct each implement a method called `move_forward`, it becomes necessary to clarify which version of `move_forward` should be executed.
 
-<Frame>
-  ![The image illustrates a diagram showing the concept of calling methods with the same name, specifically "move\_forward," from different sources: Driver, Flyer, and struct Robot. It poses a question about which method is called when using "robot.move\_forward()".](../../../../images/kodekloud.com/kk-media/image/upload/v1752883754/notes-assets/images/Rust-Programming-Fully-qualified-syntax/method-overloading-move-forward-diagram.jpg)
-</Frame>
+![The image illustrates a diagram showing the concept of calling methods with the same name, specifically "move\_forward," from different sources: Driver, Flyer, and struct Robot. It poses a question about which method is called when using "robot.move\_forward()".](https://kodekloud.com/kk-media/image/upload/v1752883754/notes-assets/images/Rust-Programming-Fully-qualified-syntax/method-overloading-move-forward-diagram.jpg)
 
-<Callout icon="lightbulb">
-  Fully-qualified syntax is essential in Rust to ensure that the correct method is called, preventing ambiguity when multiple implementations exist.
-</Callout>
+> **lightbulb** Fully-qualified syntax is essential in Rust to ensure that the correct method is called, preventing ambiguity when multiple implementations exist.
 
 ## A Practical Example with Methods
 
@@ -157,12 +151,8 @@ The general pattern for using fully-qualified syntax is:
 
 For methods that take `self`, you include the instance as an argument. For associated functions, simply supply the necessary parameters after the function name.
 
-<Callout icon="triangle-alert">
-  Be cautious when using the same function name across multiple traits and structs. Without fully-qualified syntax, Rust may not know which function version to execute, leading to bugs or unexpected behavior.
-</Callout>
+> **triangle-alert** Be cautious when using the same function name across multiple traits and structs. Without fully-qualified syntax, Rust may not know which function version to execute, leading to bugs or unexpected behavior.
 
 Fully-qualified syntax is vital in Rust to disambiguate between different implementations and ensure that the correct function is called, thereby enhancing code clarity and maintainability.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/bff86fa1-7afc-44e5-b0ac-00b8be577bf8/lesson/b89530b2-4dcf-4dd3-8c6a-00d4f13466d1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/bff86fa1-7afc-44e5-b0ac-00b8be577bf8/lesson/b89530b2-4dcf-4dd3-8c6a-00d4f13466d1)

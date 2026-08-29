@@ -45,7 +45,7 @@ Use case scenario: Imagine preparing an e-commerce platform for Black Friday tra
 
 When running microservices in containers, you need a holistic view of CPU, memory, network, and logs—all in one dashboard. Container Insights collects, aggregates, and visualizes these metrics so you can take action before small issues become outages.
 
-![The image illustrates a concept of "Container Insights" with icons representing containers, gears, and users, leading to a central insight symbol surrounded by settings icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862498/notes-assets/images/AWS-CloudWatch-Container-InsightsLambda-InsightsContributor-InsightsApplication-Insights/container-insights-icons-gears-users.jpg)
+![The image illustrates a concept of "Container Insights" with icons representing containers, gears, and users, leading to a central insight symbol surrounded by settings icons.](https://kodekloud.com/kk-media/image/upload/v1752862498/notes-assets/images/AWS-CloudWatch-Container-InsightsLambda-InsightsContributor-InsightsApplication-Insights/container-insights-icons-gears-users.jpg)
 
 ### Key Features
 
@@ -58,7 +58,7 @@ When running microservices in containers, you need a holistic view of CPU, memor
 
 > **lightbulb** You can enable Container Insights via the AWS Management Console, CLI, or CloudFormation in just a few clicks—no code changes required.
 
-![The image is a slide titled "Container Insights" with three sections: Performance Monitoring, Log Analytics and Troubleshooting, and Pricing, each with an icon and number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862499/notes-assets/images/AWS-CloudWatch-Container-InsightsLambda-InsightsContributor-InsightsApplication-Insights/container-insights-performance-log-pricing.jpg)
+![The image is a slide titled "Container Insights" with three sections: Performance Monitoring, Log Analytics and Troubleshooting, and Pricing, each with an icon and number.](https://kodekloud.com/kk-media/image/upload/v1752862499/notes-assets/images/AWS-CloudWatch-Container-InsightsLambda-InsightsContributor-InsightsApplication-Insights/container-insights-performance-log-pricing.jpg)
 
 ***
 
@@ -66,7 +66,7 @@ When running microservices in containers, you need a holistic view of CPU, memor
 
 If your architecture relies on AWS Lambda for event-driven workloads (e.g., S3 triggers, EventBridge rules), Lambda Insights centralizes performance metrics and logs so you don’t have to investigate each function separately.
 
-![The image illustrates a process flow involving Lambda functions, tools, and users, leading to a central "Lambda Insight" component, surrounded by configuration icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862500/notes-assets/images/AWS-CloudWatch-Container-InsightsLambda-InsightsContributor-InsightsApplication-Insights/lambda-functions-process-flow-diagram.jpg)
+![The image illustrates a process flow involving Lambda functions, tools, and users, leading to a central "Lambda Insight" component, surrounded by configuration icons.](https://kodekloud.com/kk-media/image/upload/v1752862500/notes-assets/images/AWS-CloudWatch-Container-InsightsLambda-InsightsContributor-InsightsApplication-Insights/lambda-functions-process-flow-diagram.jpg)
 
 ### Key Features
 
@@ -77,7 +77,7 @@ If your architecture relies on AWS Lambda for event-driven workloads (e.g., S3 t
 
 > **lightbulb** Lambda Insights incurs a small additional cost per metric and log, but gives you actionable data to reduce overall Lambda spend.
 
-![The image is a slide titled "Lambda Insights" with four sections: Easy Setup, Operational Visibility, Monitoring and Optimization, and Pricing, each represented by an icon and number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862501/notes-assets/images/AWS-CloudWatch-Container-InsightsLambda-InsightsContributor-InsightsApplication-Insights/lambda-insights-setup-visibility-monitoring-pricing.jpg)
+![The image is a slide titled "Lambda Insights" with four sections: Easy Setup, Operational Visibility, Monitoring and Optimization, and Pricing, each represented by an icon and number.](https://kodekloud.com/kk-media/image/upload/v1752862501/notes-assets/images/AWS-CloudWatch-Container-InsightsLambda-InsightsContributor-InsightsApplication-Insights/lambda-insights-setup-visibility-monitoring-pricing.jpg)
 
 ***
 
@@ -85,7 +85,7 @@ If your architecture relies on AWS Lambda for event-driven workloads (e.g., S3 t
 
 Contributor Insights provides real-time analytics on high-cardinality data (user IDs, API endpoints, order IDs) so you can pinpoint which component in your transaction pipeline is causing issues.
 
-![The image outlines three aspects of "Contributor Insights": High-Cardinality Data Analysis, Performance Impact Identification, and Data Aggregation and Discovery.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862502/notes-assets/images/AWS-CloudWatch-Container-InsightsLambda-InsightsContributor-InsightsApplication-Insights/contributor-insights-data-analysis-performance.jpg)
+![The image outlines three aspects of "Contributor Insights": High-Cardinality Data Analysis, Performance Impact Identification, and Data Aggregation and Discovery.](https://kodekloud.com/kk-media/image/upload/v1752862502/notes-assets/images/AWS-CloudWatch-Container-InsightsLambda-InsightsContributor-InsightsApplication-Insights/contributor-insights-data-analysis-performance.jpg)
 
 ### Key Features
 
@@ -103,7 +103,7 @@ Contributor Insights provides real-time analytics on high-cardinality data (user
 
 For full-stack web applications—like a live video streaming site—Application Insights offers automatic error detection, performance tracing, and dependency mapping to keep end users happy.
 
-![The image shows a slide titled "Application Insights" with two sections: "Web Application Monitoring" and "Telemetry Data Utilization," each with an icon and number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862503/notes-assets/images/AWS-CloudWatch-Container-InsightsLambda-InsightsContributor-InsightsApplication-Insights/application-insights-web-monitoring-telemetry.jpg)
+![The image shows a slide titled "Application Insights" with two sections: "Web Application Monitoring" and "Telemetry Data Utilization," each with an icon and number.](https://kodekloud.com/kk-media/image/upload/v1752862503/notes-assets/images/AWS-CloudWatch-Container-InsightsLambda-InsightsContributor-InsightsApplication-Insights/application-insights-web-monitoring-telemetry.jpg)
 
 ### Key Features
 

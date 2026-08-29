@@ -44,9 +44,7 @@ Table: Topics, outcomes, and lab focus
 | Default-deny posture         | Why baseline deny is important for security                            | Implement default-deny and open necessary ports   |
 | Egress controls              | How to limit outbound traffic from pods                                | Enforce egress policies for external access       |
 
-<Callout icon="lightbulb">
-  This course is suitable for beginners and practitioners who want hands-on practice with Kubernetes network security. If you already know Kubernetes basics (pods, services, namespaces), you'll get the most value.
-</Callout>
+> **lightbulb** This course is suitable for beginners and practitioners who want hands-on practice with Kubernetes network security. If you already know Kubernetes basics (pods, services, namespaces), you'll get the most value.
 
 Final challenge
 
@@ -69,6 +67,4 @@ Whether you are just starting with Kubernetes or want to strengthen your cluster
 
 If you're ready, let's jump into the very first lab, where we'll learn why NetworkPolicies are essential and how they protect cluster network traffic.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-by-doing-kubernetes-network-policies/module/fc6339e3-ce19-45d1-b542-71f47f691275/lesson/65cc748e-060d-4f9b-9284-4ea0163b4db9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-by-doing-kubernetes-network-policies/module/fc6339e3-ce19-45d1-b542-71f47f691275/lesson/65cc748e-060d-4f9b-9284-4ea0163b4db9)

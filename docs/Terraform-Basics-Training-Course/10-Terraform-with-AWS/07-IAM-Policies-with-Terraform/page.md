@@ -6,9 +6,7 @@ Learn to create and attach IAM policies using Terraform, following the principle
 
 In this lesson, you will learn how to create IAM policies using Terraform and attach them to an AWS user. We will use the example of an IAM user named Lucy, who initially has no permissions. By following the principle of least privilege, we will incrementally grant her the required permissions.
 
-<Callout icon="lightbulb">
-  Always start AWS users with the least privilege and only grant specific permissions as needed.
-</Callout>
+> **lightbulb** Always start AWS users with the least privilege and only grant specific permissions as needed.
 
 ## Prerequisites
 

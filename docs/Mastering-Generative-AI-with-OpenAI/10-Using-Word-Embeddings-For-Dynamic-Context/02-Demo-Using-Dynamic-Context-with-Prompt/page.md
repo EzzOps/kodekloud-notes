@@ -39,9 +39,7 @@ Expected response:
 I’m sorry, but I don’t have information on events after September 2021.
 ```
 
-<Callout icon="lightbulb">
-  Without external context, the model defaults to stating its knowledge cutoff.
-</Callout>
+> **lightbulb** Without external context, the model defaults to stating its knowledge cutoff.
 
 ## 2. Injecting Static Context
 
@@ -84,9 +82,7 @@ Output:
 "Everything Everywhere All at Once" won the Best Picture award at the 95th Academy Awards.
 ```
 
-<Callout icon="triangle-alert">
-  Static context can quickly bloat your prompt and is tedious to maintain as information changes.
-</Callout>
+> **triangle-alert** Static context can quickly bloat your prompt and is tedious to maintain as information changes.
 
 ## 3. Why You Need Dynamic Context
 
@@ -120,8 +116,6 @@ Stay tuned for the detailed implementation guide!
 
 [gma]: https://abcnews.go.com/GoodMorningAmerica/
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/cf879fc5-dcc3-4470-830d-4393645105c9/lesson/478f01b4-0988-4d48-88d0-316f8e513f16" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/cf879fc5-dcc3-4470-830d-4393645105c9/lesson/478f01b4-0988-4d48-88d0-316f8e513f16)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/cf879fc5-dcc3-4470-830d-4393645105c9/lesson/47024875-1f0f-49a1-a396-f4305f1b5ca2" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/cf879fc5-dcc3-4470-830d-4393645105c9/lesson/47024875-1f0f-49a1-a396-f4305f1b5ca2)

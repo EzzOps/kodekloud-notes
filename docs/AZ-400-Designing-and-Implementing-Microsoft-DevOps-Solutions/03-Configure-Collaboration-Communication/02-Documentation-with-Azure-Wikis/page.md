@@ -29,7 +29,7 @@ Azure Wikis in Azure DevOps deliver an integrated, version-controlled documentat
 
 A provisioned wiki provides a built-in, managed wiki experience. After creation, you can immediately add content via the Azure DevOps editor.
 
-![The image shows a screenshot of a "Provisioned Wiki" in Azure DevOps, displaying a customer portal wiki with a text editor interface.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867452/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Documentation-with-Azure-Wikis/provisioned-wiki-azure-devops-screenshot.jpg)
+![The image shows a screenshot of a "Provisioned Wiki" in Azure DevOps, displaying a customer portal wiki with a text editor interface.](https://kodekloud.com/kk-media/image/upload/v1752867452/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Documentation-with-Azure-Wikis/provisioned-wiki-azure-devops-screenshot.jpg)
 
 ### Key Features
 
@@ -38,7 +38,7 @@ A provisioned wiki provides a built-in, managed wiki experience. After creation,
 * **Attachments**: Upload files directly to pages
 * **Inline comments**: Collaborate and discuss changes
 
-![The image shows a screenshot of a "Customer Portal Wiki" interface with options to add, edit, or delete pages, and a section for comments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867454/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Documentation-with-Azure-Wikis/customer-portal-wiki-interface-screenshot.jpg)
+![The image shows a screenshot of a "Customer Portal Wiki" interface with options to add, edit, or delete pages, and a section for comments.](https://kodekloud.com/kk-media/image/upload/v1752867454/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Documentation-with-Azure-Wikis/customer-portal-wiki-interface-screenshot.jpg)
 
 ### Navigation & Management
 
@@ -48,7 +48,7 @@ A provisioned wiki provides a built-in, managed wiki experience. After creation,
 * View and revert revision history
 * Option to delete the entire wiki
 
-![The image shows a screenshot of a "Provisioned Wiki" in Azure DevOps, displaying a customer portal wiki page with navigation options on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867455/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Documentation-with-Azure-Wikis/provisioned-wiki-azure-devops-screenshot-2.jpg)
+![The image shows a screenshot of a "Provisioned Wiki" in Azure DevOps, displaying a customer portal wiki page with navigation options on the left.](https://kodekloud.com/kk-media/image/upload/v1752867455/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Documentation-with-Azure-Wikis/provisioned-wiki-azure-devops-screenshot-2.jpg)
 
 ***
 
@@ -63,7 +63,7 @@ With the code-published approach, your documentation lives in a Git repository, 
 
 > **triangle-alert** Editing content directly in the provisioned wiki editor won’t update your Git repository. For changes, commit to your repo branch.
 
-![The image shows a guide on publishing code as a wiki, highlighting features like organizing content, browsing, publishing new versions, managing content, and searching the wiki. It also includes a form for setting up a wiki with repository and branch options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867456/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Documentation-with-Azure-Wikis/wiki-publishing-guide-content-management.jpg)
+![The image shows a guide on publishing code as a wiki, highlighting features like organizing content, browsing, publishing new versions, managing content, and searching the wiki. It also includes a form for setting up a wiki with repository and branch options.](https://kodekloud.com/kk-media/image/upload/v1752867456/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Documentation-with-Azure-Wikis/wiki-publishing-guide-content-management.jpg)
 
 ### Benefits
 

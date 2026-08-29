@@ -23,7 +23,7 @@ When discussing core networking, we primarily refer to Virtual Private Clouds (V
 
 Additionally, some AWS services—such as Route 53 and Simple Storage Service (S3)—are hosted in separate data centers within the same region, ensuring isolation from EC2 subnets.
 
-![The image is a diagram of an AWS Virtual Private Cloud (VPC) setup, showing components like public and private subnets, internet and egress-only gateways, NAT gateways, and VPC endpoints within a cloud account.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863851/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/aws-vpc-setup-diagram.jpg)
+![The image is a diagram of an AWS Virtual Private Cloud (VPC) setup, showing components like public and private subnets, internet and egress-only gateways, NAT gateways, and VPC endpoints within a cloud account.](https://kodekloud.com/kk-media/image/upload/v1752863851/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/aws-vpc-setup-diagram.jpg)
 
 ***
 
@@ -35,7 +35,7 @@ Consider a scenario where departmental VPCs need to be interconnected with a sha
 * **VPC Peering:** Suitable for simpler setups with four or five VPCs, but less scalable.
 * **Direct Connect and VPN connections:** Generally used to connect back to your corporate network rather than interconnecting VPCs directly.
 
-![The image presents a scenario where an enterprise is expanding its AWS infrastructure using a multi-VPC architecture, and it lists four solutions for connecting departmental VPCs with a shared service VPC. The options include using AWS Transit Gateway, VPC Peering, AWS Direct Connect, and VPN connections.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863852/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/aws-multi-vpc-architecture-solutions.jpg)
+![The image presents a scenario where an enterprise is expanding its AWS infrastructure using a multi-VPC architecture, and it lists four solutions for connecting departmental VPCs with a shared service VPC. The options include using AWS Transit Gateway, VPC Peering, AWS Direct Connect, and VPN connections.](https://kodekloud.com/kk-media/image/upload/v1752863852/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/aws-multi-vpc-architecture-solutions.jpg)
 
 For multi-VPC environments, AWS Transit Gateway is the recommended solution. In simpler architectures, VPC Peering might be acceptable.
 
@@ -49,7 +49,7 @@ To build a highly reliable network, deploy applications across multiple Availabi
 * Positioning load balancers in public subnets for secure, internet-facing access.
 * Implementing a transit VPC connected with VPN gateways across several VPCs for inherent resiliency.
 
-![The image depicts a network architecture with multiple VPCs connected to a central Transit VPC via VPN Gateways. Each VPC is linked to the Transit VPC, illustrating a hub-and-spoke model.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863854/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/network-architecture-vpcs-transit-vpn.jpg)
+![The image depicts a network architecture with multiple VPCs connected to a central Transit VPC via VPN Gateways. Each VPC is linked to the Transit VPC, illustrating a hub-and-spoke model.](https://kodekloud.com/kk-media/image/upload/v1752863854/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/network-architecture-vpcs-transit-vpn.jpg)
 
 Note that while default VPCs are convenient for testing, they are not recommended for production environments. Creating a custom VPC with configurations that prevent single points of failure is best practice. Spreading resources across multiple subnets ensures effective failover; for example, if a load balancer spans two public subnets and one goes down, the other can continue to handle traffic.
 
@@ -63,7 +63,7 @@ Routing is critical for maintaining network reliability. By using separate routi
 * The application tier communicates with both the web tier and the database tier.
 * The database tier remains isolated from direct internet access to enhance security.
 
-![The image presents a scenario about a multinational corporation deploying a multi-tier web application on AWS, with a question on managing traffic flow between tiers and the internet. It offers four options for configuring routing tables to ensure secure and functional connectivity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863855/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/aws-multinational-web-app-routing.jpg)
+![The image presents a scenario about a multinational corporation deploying a multi-tier web application on AWS, with a question on managing traffic flow between tiers and the internet. It offers four options for configuring routing tables to ensure secure and functional connectivity.](https://kodekloud.com/kk-media/image/upload/v1752863855/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/aws-multinational-web-app-routing.jpg)
 
 This segmented approach minimizes vulnerabilities and reduces dependency on a single routing table.
 
@@ -91,19 +91,19 @@ Effective IP address management is essential for network reliability. Best pract
 
 Elastic IP addresses improve network resiliency by allowing reassignment to other network interfaces or EC2 instances in case of failure. This is especially useful for legacy applications that do not support load balancing.
 
-![The image presents a question about configuring subnets in an AWS VPC for optimal network reliability and flexibility, with four suggested practices for IP addressing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863856/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/aws-vpc-subnet-configuration-practices.jpg)
+![The image presents a question about configuring subnets in an AWS VPC for optimal network reliability and flexibility, with four suggested practices for IP addressing.](https://kodekloud.com/kk-media/image/upload/v1752863856/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/aws-vpc-subnet-configuration-practices.jpg)
 
 For high-throughput workloads, choose advanced network interfaces such as the Elastic Network Adapter (ENA) or Elastic Fabric Adapter (EFA).
 
-![The image presents a scenario where a company needs to choose a network interface option for EC2 instances requiring high throughput and low-latency connectivity, with five options listed: Elastic Network Interface (ENI), Elastic Network Adapter (ENA), Elastic Fabric Adapter (EFA), Secondary private IP addresses, and Placement groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863857/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/ec2-network-interface-options-diagram.jpg)
+![The image presents a scenario where a company needs to choose a network interface option for EC2 instances requiring high throughput and low-latency connectivity, with five options listed: Elastic Network Interface (ENI), Elastic Network Adapter (ENA), Elastic Fabric Adapter (EFA), Secondary private IP addresses, and Placement groups.](https://kodekloud.com/kk-media/image/upload/v1752863857/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/ec2-network-interface-options-diagram.jpg)
 
 For instance, ENA can improve throughput and reduce latency, critical for real-time applications such as multiplayer gaming backends or high-performance computing.
 
-![The image presents a scenario where a gaming company is deploying a multiplayer game backend on AWS EC2, requiring high-performance networking. It lists four approaches to ensure network performance and reliability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863858/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/aws-ec2-multiplayer-game-backend.jpg)
+![The image presents a scenario where a gaming company is deploying a multiplayer game backend on AWS EC2, requiring high-performance networking. It lists four approaches to ensure network performance and reliability.](https://kodekloud.com/kk-media/image/upload/v1752863858/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/aws-ec2-multiplayer-game-backend.jpg)
 
 For ultra-low latency scenarios, consider the Elastic Fabric Adapter, which bypasses parts of the operating system to accelerate performance.
 
-![The image presents a scenario where a financial analytics company is deploying a high-performance computing application on AWS, requiring low latency and high throughput. It lists four approaches to ensure network performance and reliability for the application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863859/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/aws-financial-analytics-hpc-deployment.jpg)
+![The image presents a scenario where a financial analytics company is deploying a high-performance computing application on AWS, requiring low latency and high throughput. It lists four approaches to ensure network performance and reliability for the application.](https://kodekloud.com/kk-media/image/upload/v1752863859/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/aws-financial-analytics-hpc-deployment.jpg)
 
 ***
 
@@ -114,11 +114,11 @@ AWS leverages virtual network security devices with built-in redundancy:
 * **Network ACLs and Security Groups:** These devices prevent single points of failure while enforcing security across multiple Availability Zones.
 * **Application and Network Load Balancers:** These load balancers distribute traffic across Availability Zones. Enabling cross-zone load balancing enhances the resiliency of your applications.
 
-![The image presents a scenario where a company is migrating a mission-critical application to AWS, requiring reliable traffic distribution across EC2 instances in multiple Availability Zones. It lists five potential approaches, highlighting the implementation of an Application Load Balancer with cross-zone load balancing as a solution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863860/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/aws-application-migration-load-balancer.jpg)
+![The image presents a scenario where a company is migrating a mission-critical application to AWS, requiring reliable traffic distribution across EC2 instances in multiple Availability Zones. It lists five potential approaches, highlighting the implementation of an Application Load Balancer with cross-zone load balancing as a solution.](https://kodekloud.com/kk-media/image/upload/v1752863860/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/aws-application-migration-load-balancer.jpg)
 
 For UDP-based applications, a Network Load Balancer can be configured per Availability Zone with cross-zone load balancing enabled.
 
-![The image presents a scenario where a company is migrating a UDP-based application to AWS, requiring high availability, and lists five load balancing options, highlighting the third option: setting up a Network Load Balancer per Availability Zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863861/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/aws-udp-migration-load-balancing-options.jpg)
+![The image presents a scenario where a company is migrating a UDP-based application to AWS, requiring high availability, and lists five load balancing options, highlighting the third option: setting up a Network Load Balancer per Availability Zone.](https://kodekloud.com/kk-media/image/upload/v1752863861/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/aws-udp-migration-load-balancing-options.jpg)
 
 Gateway load balancers, used for traffic inspection with firewall appliances, are also engineered for resilience and often deployed with auto-scaling groups to handle failovers effortlessly.
 
@@ -131,15 +131,15 @@ Hybrid networking scenarios require redundant connections for high availability.
 * **Transit Gateway with Dual VPN Connections:** Enhances resiliency through multiple connectivity paths.
 * **Redundant Direct Connect Circuits:** Important for ensuring continuous high-bandwidth connections.
 
-![The image presents a scenario where a company is migrating its application to AWS and needs a high-redundancy hybrid connection between the VPC and on-premises network. It lists five implementation options, including a transit gateway with dual VPN connections and a CloudHub router with redundant VPN tunnels.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863863/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/aws-hybrid-connection-options.jpg)
+![The image presents a scenario where a company is migrating its application to AWS and needs a high-redundancy hybrid connection between the VPC and on-premises network. It lists five implementation options, including a transit gateway with dual VPN connections and a CloudHub router with redundant VPN tunnels.](https://kodekloud.com/kk-media/image/upload/v1752863863/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/aws-hybrid-connection-options.jpg)
 
 Since both Direct Connect and VPN offer single connectivity paths, adding a second connection is critical for true redundancy.
 
-![The image presents a scenario where a company needs a high-bandwidth, low-latency hybrid connection between their HQ and AWS, requiring redundancy. It lists five deployment options, highlighting "Two Direct Connect connections to different DCs" as a potential solution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863864/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/hybrid-connection-aws-redundancy-options.jpg)
+![The image presents a scenario where a company needs a high-bandwidth, low-latency hybrid connection between their HQ and AWS, requiring redundancy. It lists five deployment options, highlighting "Two Direct Connect connections to different DCs" as a potential solution.](https://kodekloud.com/kk-media/image/upload/v1752863864/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/hybrid-connection-aws-redundancy-options.jpg)
 
 Within AWS, interconnections such as VPC Peering and Transit Gateway benefit from AWS’s highly redundant physical network infrastructure.
 
-![The image presents a diagram illustrating a network architecture using a Transit Gateway to connect a corporate data center to various AWS VPCs (Production, Test, Development, and Infrastructure Shared Services) via a site-to-site VPN connection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863865/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/network-architecture-transit-gateway-diagram.jpg)
+![The image presents a diagram illustrating a network architecture using a Transit Gateway to connect a corporate data center to various AWS VPCs (Production, Test, Development, and Infrastructure Shared Services) via a site-to-site VPN connection.](https://kodekloud.com/kk-media/image/upload/v1752863865/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/network-architecture-transit-gateway-diagram.jpg)
 
 ***
 
@@ -160,15 +160,15 @@ Amazon CloudFront is AWS’s global content delivery network (CDN), featuring nu
 * Combining CloudFront with DNS failover and regional origins offers robust global content delivery.
 * CloudFront routes requests to regional servers that retrieve the content from the origin (e.g., an S3 bucket) and then cache it at the edge.
 
-![The image presents a scenario where a company needs to deliver web content globally with low latency and redundancy. It lists five options, highlighting "A CloudFront distribution with multiple edge locations" as the recommended solution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863867/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/cloudfront-global-content-delivery.jpg)
+![The image presents a scenario where a company needs to deliver web content globally with low latency and redundancy. It lists five options, highlighting "A CloudFront distribution with multiple edge locations" as the recommended solution.](https://kodekloud.com/kk-media/image/upload/v1752863867/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/cloudfront-global-content-delivery.jpg)
 
-![The image is a diagram showing a client accessing Amazon CloudFront, which routes requests to two different S3 buckets based on the path.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863868/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/cloudfront-s3-buckets-diagram.jpg)
+![The image is a diagram showing a client accessing Amazon CloudFront, which routes requests to two different S3 buckets based on the path.](https://kodekloud.com/kk-media/image/upload/v1752863868/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/cloudfront-s3-buckets-diagram.jpg)
 
 For dynamic content, AWS offers CloudFront Functions and Lambda\@Edge, which execute code at edge locations for low-latency processing of viewer requests and origin responses.
 
-![The image presents a scenario where a company needs to optimize media files delivered through CloudFront, with five potential solutions listed, highlighting "Lambda@Edge functions triggered on CloudFront requests" as the primary option.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863869/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/cloudfront-media-optimization-solutions.jpg)
+![The image presents a scenario where a company needs to optimize media files delivered through CloudFront, with five potential solutions listed, highlighting "Lambda@Edge functions triggered on CloudFront requests" as the primary option.](https://kodekloud.com/kk-media/image/upload/v1752863869/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/cloudfront-media-optimization-solutions.jpg)
 
-![The image illustrates the flow of requests and responses in a Lambda@Edge architecture, showing interactions between a client, CloudFront edge caches, regional edge caches, and the origin server. It highlights the roles of CloudFront Functions and Lambda@Edge Functions in processing viewer and origin requests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863870/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/lambda-edge-architecture-flow-diagram.jpg)
+![The image illustrates the flow of requests and responses in a Lambda@Edge architecture, showing interactions between a client, CloudFront edge caches, regional edge caches, and the origin server. It highlights the roles of CloudFront Functions and Lambda@Edge Functions in processing viewer and origin requests.](https://kodekloud.com/kk-media/image/upload/v1752863870/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/lambda-edge-architecture-flow-diagram.jpg)
 
 ***
 
@@ -180,9 +180,9 @@ AWS Route 53 provides Domain Name System (DNS) services with a 100% SLA, utilizi
 * In a multi-region setup, Route 53 health checks trigger failover routing to a standby site when the primary site is unavailable.
 * The Route 53 Application Recovery Controller conducts deep analytics to facilitate automated failover decisions.
 
-![The image presents a scenario for deploying a multi-region web application for disaster recovery, asking which two approaches could implement an automated failover routing solution. Options include using CloudFront, Route 53 health checks, latency-based routing, failover routing, and AWS Shield Advanced.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863871/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/multi-region-web-app-failover-routing.jpg)
+![The image presents a scenario for deploying a multi-region web application for disaster recovery, asking which two approaches could implement an automated failover routing solution. Options include using CloudFront, Route 53 health checks, latency-based routing, failover routing, and AWS Shield Advanced.](https://kodekloud.com/kk-media/image/upload/v1752863871/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/multi-region-web-app-failover-routing.jpg)
 
-![The image is a diagram illustrating the architecture of a Route 53 Application Recovery Controller setup, featuring two AWS regions (us-east-1 as active and us-west-1 as standby) with TicTacToe game servers and Amazon DynamoDB for data management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863872/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/route-53-application-recovery-diagram.jpg)
+![The image is a diagram illustrating the architecture of a Route 53 Application Recovery Controller setup, featuring two AWS regions (us-east-1 as active and us-west-1 as standby) with TicTacToe game servers and Amazon DynamoDB for data management.](https://kodekloud.com/kk-media/image/upload/v1752863872/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Turning-up-Reliability-on-Network-Services/route-53-application-recovery-diagram.jpg)
 
 ***
 

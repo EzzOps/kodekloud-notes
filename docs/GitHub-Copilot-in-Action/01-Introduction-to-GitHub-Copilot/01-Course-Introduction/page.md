@@ -41,9 +41,7 @@ A core goal of the course is to make documentation and tests first-class citizen
 * Generating unit tests and test skeletons you can expand.
 * Producing API documentation and example requests to help onboard teammates and users.
 
-<Callout icon="lightbulb">
-  GitHub Copilot is a powerful assistant, but it is not a substitute for review. Always validate generated code for correctness, security, and alignment with your project requirements.
-</Callout>
+> **lightbulb** GitHub Copilot is a powerful assistant, but it is not a substitute for review. Always validate generated code for correctness, security, and alignment with your project requirements.
 
 This course is designed to provide practical skills and hands-on experience so you can confidently include GitHub Copilot in your daily development workflow.
 
@@ -70,6 +68,4 @@ Now let's dive in and harness the productivity gains GitHub Copilot can bring to
 * [Guide to comment-driven development (concepts and examples)](https://www.freecodecamp.org/news/comment-driven-development/)
 * [Best practices for unit testing](https://en.wikipedia.org/wiki/Unit_testing)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/github-copilot-in-action/module/fb848134-d908-42a6-b195-1ea9c9cd1ffe/lesson/1dda50bf-f615-43aa-97d4-65ca86a327a2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/github-copilot-in-action/module/fb848134-d908-42a6-b195-1ea9c9cd1ffe/lesson/1dda50bf-f615-43aa-97d4-65ca86a327a2)

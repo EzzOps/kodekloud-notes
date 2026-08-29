@@ -70,13 +70,9 @@ Resource groups are commonly used as lifecycle boundaries. Terraform normally:
 
 Terraform typically creates the resource group before resources that depend on it, ensuring correct deployment ordering. Understanding dependency relationships and resource attributes is essential for predictable deployments.
 
-<Callout icon="warning">
-  Deleting a resource group in Azure deletes everything it contains—regardless of whether Terraform created those resources. Accidental deletions outside Terraform cause state drift and can break future Terraform operations. Design resource groups and environment separation carefully to avoid unintended data or service loss.
-</Callout>
+> **warning** Deleting a resource group in Azure deletes everything it contains—regardless of whether Terraform created those resources. Accidental deletions outside Terraform cause state drift and can break future Terraform operations. Design resource groups and environment separation carefully to avoid unintended data or service loss.
 
-<Callout icon="lightbulb">
-  Use remote state backends and access controls to keep Terraform state consistent and safe. For Azure, the `azurerm` backend using an Azure Storage Account plus a `container_name` and `key` is a common pattern for team workflows.
-</Callout>
+> **lightbulb** Use remote state backends and access controls to keep Terraform state consistent and safe. For Azure, the `azurerm` backend using an Azure Storage Account plus a `container_name` and `key` is a common pattern for team workflows.
 
 Example remote backend configuration (replace placeholders):
 
@@ -106,6 +102,4 @@ Links and references
 * [Azure CLI authentication](https://learn.microsoft.com/cli/azure/authenticate-azure-cli)
 * [Terraform backend azurerm](https://www.terraform.io/language/settings/backends/azurerm)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/7fc76e5f-e1e7-4c53-8940-57761020744e/lesson/cebc9f10-30fe-4ce0-bfb2-1324044b1fa9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/7fc76e5f-e1e7-4c53-8940-57761020744e/lesson/cebc9f10-30fe-4ce0-bfb2-1324044b1fa9)

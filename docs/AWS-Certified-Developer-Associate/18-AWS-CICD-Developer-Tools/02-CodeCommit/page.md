@@ -8,7 +8,7 @@ In this article, we explore AWS CodeCommit—a fully managed source control serv
 
 Imagine working on a group project where a designated location for your files prevents chaos, version conflicts, and lost data. In software development, this same challenge exists when multiple developers work on a single codebase. AWS CodeCommit serves as that centralized repository, much like [GitHub](https://github.com) or [GitLab](https://about.gitlab.com), with the added benefit of seamless integration with other AWS services.
 
-![The image illustrates a flowchart showing a developer interacting with an app, which is then accessed by users. Below, there is a version control timeline labeled V1 to V6.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857966/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit/developer-app-user-flowchart-v1-v6.jpg)
+![The image illustrates a flowchart showing a developer interacting with an app, which is then accessed by users. Below, there is a version control timeline labeled V1 to V6.](https://kodekloud.com/kk-media/image/upload/v1752857966/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit/developer-app-user-flowchart-v1-v6.jpg)
 
 Just as you track different versions of project files, version control in software development allows developers to monitor code changes, revert to previous versions, and maintain a historical record of modifications. Leveraging Git’s robust features, CodeCommit supports decentralized work while ensuring that code remains securely stored on AWS.
 
@@ -22,7 +22,7 @@ Before diving deeper into AWS CodeCommit, it is essential to understand some key
 * **Staging Area (Index):** This area provides an opportunity to review and modify changes before committing, keeping your commit history clean.
 * **Non-linear Development:** Git supports multiple development workflows, maintaining detailed metadata such as authorship, timestamps, and commit messages.
 
-![The image lists five Git features: Distributed Version Control, Branching and Merging, Staging Area, Non-linear Development, and Tracking History, each with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857967/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit/git-features-list-icons.jpg)
+![The image lists five Git features: Distributed Version Control, Branching and Merging, Staging Area, Non-linear Development, and Tracking History, each with an icon.](https://kodekloud.com/kk-media/image/upload/v1752857967/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit/git-features-list-icons.jpg)
 
 ### Git Workflow Overview
 
@@ -45,7 +45,7 @@ For seamless collaboration, you may also use:
 * `git pull` to fetch changes from the remote repository.
 * `git checkout` to switch between branches or revert to a specific state in your working directory.
 
-![The image illustrates a Git workflow, showing the process from the working directory to the remote repository, including commands like git add, git commit, git push, git pull, and git checkout.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857968/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit/git-workflow-illustration-commands.jpg)
+![The image illustrates a Git workflow, showing the process from the working directory to the remote repository, including commands like git add, git commit, git push, git pull, and git checkout.](https://kodekloud.com/kk-media/image/upload/v1752857968/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit/git-workflow-illustration-commands.jpg)
 
 ## AWS CodeCommit Overview
 
@@ -61,9 +61,9 @@ Local changes made by developers are pushed to the remote CodeCommit repository 
 
 Tags in CodeCommit, similar to Git tags, mark significant release points such as versions or milestones, providing an immutable record of the project’s progression.
 
-![The image illustrates a branching model in CodeCommit, showing a master branch and a feature branch with a series of connected nodes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857969/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit/codecommit-branching-model-diagram.jpg)
+![The image illustrates a branching model in CodeCommit, showing a master branch and a feature branch with a series of connected nodes.](https://kodekloud.com/kk-media/image/upload/v1752857969/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit/codecommit-branching-model-diagram.jpg)
 
-![The image illustrates a CodeCommit workflow, showing interactions between users and a central repository, including actions like push, pull, fork, and pull request.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857970/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit/codecommit-workflow-interactions-diagram.jpg)
+![The image illustrates a CodeCommit workflow, showing interactions between users and a central repository, including actions like push, pull, fork, and pull request.](https://kodekloud.com/kk-media/image/upload/v1752857970/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit/codecommit-workflow-interactions-diagram.jpg)
 
 ## Key Features of AWS CodeCommit
 
@@ -93,7 +93,7 @@ Authentication and authorization in CodeCommit are managed via AWS Identity and 
 
 > **lightbulb** Integrating CodeCommit with AWS IAM not only enhances security by restricting access based on permissions but also simplifies user management across the AWS ecosystem.
 
-![The image is a diagram illustrating the authentication and authorization process for CodeCommit, involving AWS IAM, CodeCommit, and developers using HTTPS/SSH keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857971/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit/codecommit-authentication-authorization-diagram.jpg)
+![The image is a diagram illustrating the authentication and authorization process for CodeCommit, involving AWS IAM, CodeCommit, and developers using HTTPS/SSH keys.](https://kodekloud.com/kk-media/image/upload/v1752857971/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit/codecommit-authentication-authorization-diagram.jpg)
 
 ## Summary
 
@@ -106,6 +106,6 @@ In summary, AWS CodeCommit provides a fully managed source control solution that
 
 With AWS CodeCommit, you can streamline the process of managing and deploying code, making it an excellent choice for teams already utilizing AWS services.
 
-![The image is a summary slide highlighting four points: a fully-managed source control service, code stored in AWS for increased security, authentication through IAM, and SSH or HTTPS-based authentication.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857973/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit/source-control-service-summary-slide.jpg)
+![The image is a summary slide highlighting four points: a fully-managed source control service, code stored in AWS for increased security, authentication through IAM, and SSH or HTTPS-based authentication.](https://kodekloud.com/kk-media/image/upload/v1752857973/notes-assets/images/AWS-Certified-Developer-Associate-CodeCommit/source-control-service-summary-slide.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/184641b0-93ba-48d1-a9d7-1bc2b57db724/lesson/eca13ae4-31eb-4822-9fd6-57a02de4b4ca)

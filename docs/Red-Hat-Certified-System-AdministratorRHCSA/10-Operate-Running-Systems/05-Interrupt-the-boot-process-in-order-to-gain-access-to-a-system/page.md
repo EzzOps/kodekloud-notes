@@ -12,9 +12,7 @@ In this article, we explain how to interrupt the Linux boot process to gain acce
 
 Begin by logging into your Red Hat Enterprise Linux 8 virtual machine and perform a restart. When the GRUB boot menu appears, press the down arrow key to pause the automatic boot process. This menu displays the available kernel versions. Next, press **E** to edit the default kernel entry.
 
-<Frame>
-  ![The image shows a boot menu for Red Hat Enterprise Linux with multiple kernel versions listed. It provides options to select or edit the boot entry.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883601/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Interrupt-the-boot-process-in-order-to-gain-access-to-a-system/red-hat-enterprise-linux-boot-menu.jpg)
-</Frame>
+![The image shows a boot menu for Red Hat Enterprise Linux with multiple kernel versions listed. It provides options to select or edit the boot entry.](https://kodekloud.com/kk-media/image/upload/v1752883601/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Interrupt-the-boot-process-in-order-to-gain-access-to-a-system/red-hat-enterprise-linux-boot-menu.jpg)
 
 At this stage, you will see the kernel line with various options passed by GRUB. There are several scenarios where modifying these boot parameters is necessary. In our case, we assume the root password has been lost and emergency access is required. Follow these steps:
 
@@ -68,9 +66,7 @@ Retype new password:
 passwd: all authentication tokens updated successfully.
 ```
 
-<Callout icon="lightbulb">
-  Red Hat Enterprise Linux systems use SELinux for security. It is essential to signal the system to relabel file contexts on the next boot.
-</Callout>
+> **lightbulb** Red Hat Enterprise Linux systems use SELinux for security. It is essential to signal the system to relabel file contexts on the next boot.
 
 To trigger this process, create the hidden file `.autorelabel` in the root directory:
 
@@ -174,14 +170,8 @@ This guide demonstrated how to interrupt the boot process on both Red Hat Enterp
 
 Thank you for following along. Continue exploring our labs and documentation to further strengthen your Linux system administration skills.
 
-<Frame>
-  ![The image shows a VirtualBox 6.1 boot screen with an Oracle logo and a cube graphic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883602/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Interrupt-the-boot-process-in-order-to-gain-access-to-a-system/virtualbox-6-1-boot-screen.jpg)
-</Frame>
+![The image shows a VirtualBox 6.1 boot screen with an Oracle logo and a cube graphic.](https://kodekloud.com/kk-media/image/upload/v1752883602/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Interrupt-the-boot-process-in-order-to-gain-access-to-a-system/virtualbox-6-1-boot-screen.jpg)
 
-<Frame>
-  ![The image shows a boot menu for Red Hat Enterprise Linux with multiple kernel versions listed. It provides options to select and edit the boot configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883603/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Interrupt-the-boot-process-in-order-to-gain-access-to-a-system/red-hat-enterprise-linux-boot-menu-2.jpg)
-</Frame>
+![The image shows a boot menu for Red Hat Enterprise Linux with multiple kernel versions listed. It provides options to select and edit the boot configuration.](https://kodekloud.com/kk-media/image/upload/v1752883603/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Interrupt-the-boot-process-in-order-to-gain-access-to-a-system/red-hat-enterprise-linux-boot-menu-2.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/1f9267ea-33a4-455a-9598-af1eb8cc36a5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/1f9267ea-33a4-455a-9598-af1eb8cc36a5)

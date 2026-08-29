@@ -10,17 +10,13 @@ Docker containers are inherently transient, meaning that data stored inside them
 
 OpenShift provisions storage using the Kubernetes Persistent Volume (PV) framework and supports a wide range of plugins and platforms. Storage can be provisioned with plugins such as Local, iSCSI, Fibre Channel, and NFS, or through platforms like ClusterFS, Ceph RBD, OpenStack Cinder, AWS Elastic Block Store, Azure Disk, Azure File, and VMware vSphere.
 
-<Frame>
-  ![The image lists various storage plugins such as Local, iSCSI, and AWS Elastic Block Store, alongside a diagram showing Kubernetes with red blocks and database icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882812/notes-assets/images/OpenShift-4-Storage/storage-plugins-kubernetes-diagram.jpg)
-</Frame>
+![The image lists various storage plugins such as Local, iSCSI, and AWS Elastic Block Store, alongside a diagram showing Kubernetes with red blocks and database icons.](https://kodekloud.com/kk-media/image/upload/v1752882812/notes-assets/images/OpenShift-4-Storage/storage-plugins-kubernetes-diagram.jpg)
 
 The available storage resources in the OpenShift cluster form a consolidated pool of persistent volume resources. Projects can claim parts of this pool by creating Persistent Volume Claims (PVCs), which are subsequently used by pods as their persistent storage.
 
 To create storage, navigate to the OpenShift web console and click the **Create Storage** button.
 
-<Frame>
-  ![The image illustrates a Kubernetes storage concept, showing Persistent Volume Claims (PVC) of different sizes (10GB, 20GB, 100GB) being allocated from a total PV resource of 1TB.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882812/notes-assets/images/OpenShift-4-Storage/kubernetes-storage-pvc-allocation-diagram.jpg)
-</Frame>
+![The image illustrates a Kubernetes storage concept, showing Persistent Volume Claims (PVC) of different sizes (10GB, 20GB, 100GB) being allocated from a total PV resource of 1TB.](https://kodekloud.com/kk-media/image/upload/v1752882812/notes-assets/images/OpenShift-4-Storage/kubernetes-storage-pvc-allocation-diagram.jpg)
 
 Within the **Create Storage** interface, follow these steps:
 
@@ -36,18 +32,12 @@ Within the **Create Storage** interface, follow these steps:
 3. **Set the Required Size**\
    Define the storage capacity required for your persistent volume claim.
 
-<Callout icon="lightbulb">
-  Once the persistent volume claim is created, attach it to your pods by adding a volume reference in the deployment configuration.
-</Callout>
+> **lightbulb** Once the persistent volume claim is created, attach it to your pods by adding a volume reference in the deployment configuration.
 
-<Frame>
-  ![The image shows a "Create Storage" interface for setting up storage with options for name, access mode, and size. On the right, there's an illustration of three users accessing a shared database.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882813/notes-assets/images/OpenShift-4-Storage/create-storage-interface-users-database.jpg)
-</Frame>
+![The image shows a "Create Storage" interface for setting up storage with options for name, access mode, and size. On the right, there's an illustration of three users accessing a shared database.](https://kodekloud.com/kk-media/image/upload/v1752882813/notes-assets/images/OpenShift-4-Storage/create-storage-interface-users-database.jpg)
 
 This guide demonstrates the process of managing storage in an OpenShift cluster, from provisioning persistent volumes to claiming them within projects. By understanding these steps, you can effectively plan and implement persistent data storage in your containerized environments.
 
 Happy provisioning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/e56c810c-1123-481d-a0be-70910e075c25" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/e56c810c-1123-481d-a0be-70910e075c25)

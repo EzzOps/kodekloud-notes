@@ -52,9 +52,7 @@ Notes:
 * `include /etc/nginx/conf.d/*.conf` and `include /etc/nginx/sites-enabled/*` pull in additional server blocks and per-site configs.
 * Best practice: keep site definitions in `sites-available/` and enable them by symlinking into `sites-enabled/`. Keep `nginx.conf` focused on global settings.
 
-<Callout icon="warning">
-  Always validate configuration changes before reloading the service. Run `sudo nginx -t` to test syntax and correctness. Failing to test can cause Nginx to reject a reload and potentially interrupt service.
-</Callout>
+> **warning** Always validate configuration changes before reloading the service. Run `sudo nginx -t` to test syntax and correctness. Failing to test can cause Nginx to reject a reload and potentially interrupt service.
 
 Before applying changes:
 
@@ -105,9 +103,7 @@ For further reading:
 * Nginx Beginner’s Guide: [https://nginx.org/en/docs/beginners\_guide.html](https://nginx.org/en/docs/beginners_guide.html)
 * Ubuntu Nginx package on Launchpad/Debian packaging notes (for distro-specific differences).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/0de43784-b08d-4ce0-8470-a7541b78fe58/lesson/8a76fda2-9055-43c0-af1e-f08df0c8cb1a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/0de43784-b08d-4ce0-8470-a7541b78fe58/lesson/8a76fda2-9055-43c0-af1e-f08df0c8cb1a)
 
 
 # Firewall Ports
@@ -154,17 +150,13 @@ A port is a network communication endpoint used by services on a computer. If a 
 
 You don’t need to memorize every port number, but know `80`, `443`, and `22`. For servers exposed to the public internet, generally only open the web ports (80/443) and any management port (like SSH) restricted to trusted IPs. If you must open additional ports, prefer IP whitelisting or VPN access over broad exposure.
 
-<Callout icon="warning">
-  Avoid opening ports to “anywhere” unless absolutely necessary. Exposing management ports to the internet increases risk—use IP allowlists, SSH keys, or a VPN.
-</Callout>
+> **warning** Avoid opening ports to “anywhere” unless absolutely necessary. Exposing management ports to the internet increases risk—use IP allowlists, SSH keys, or a VPN.
 
 Managing UFW (Debian / Ubuntu)
 
 Before enabling UFW on a remote machine, allow SSH so you don't lock yourself out.
 
-<Callout icon="lightbulb">
-  Always allow SSH first. Example: `sudo ufw allow 22/tcp` before running `sudo ufw enable` on a remote server.
-</Callout>
+> **lightbulb** Always allow SSH first. Example: `sudo ufw allow 22/tcp` before running `sudo ufw enable` on a remote server.
 
 Common UFW commands:
 

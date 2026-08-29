@@ -25,7 +25,7 @@ Amazon CloudWatch enables you to collect, monitor, and analyze metrics and logs 
   * **Standard Resolution:** Provides one-minute granularity.
   * **High Resolution:** Offers one-second granularity.
 
-![The image provides tips for using AWS CloudWatch, highlighting its capabilities for tracking metrics, sending logs, setting alarms, and querying logs for insights.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858323/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-cloudwatch-tips-metrics-logs.jpg)
+![The image provides tips for using AWS CloudWatch, highlighting its capabilities for tracking metrics, sending logs, setting alarms, and querying logs for insights.](https://kodekloud.com/kk-media/image/upload/v1752858323/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-cloudwatch-tips-metrics-logs.jpg)
 
 ### Logs in CloudWatch
 
@@ -39,7 +39,7 @@ When leveraging CloudWatch for log management, note the following definitions:
 
 > **lightbulb** For EC2 instances, make sure to install the CloudWatch agent to enable log forwarding. The legacy CloudWatch logs agent handles only logs, whereas the unified agent supports both logs and metrics.
 
-![The image provides tips for acing an exam on AWS CloudWatch, focusing on metrics, namespaces, dimensions, and publishing custom metrics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858325/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-cloudwatch-exam-tips-metrics.jpg)
+![The image provides tips for acing an exam on AWS CloudWatch, focusing on metrics, namespaces, dimensions, and publishing custom metrics.](https://kodekloud.com/kk-media/image/upload/v1752858325/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-cloudwatch-exam-tips-metrics.jpg)
 
 ### CloudWatch Logs Insights and Alarms
 
@@ -51,7 +51,7 @@ CloudWatch Logs Insights is a powerful tool that allows you to query your logs t
 
 Composite alarms also allow you to combine multiple metrics using logical operators like AND and OR.
 
-![The image provides tips for using CloudWatch, explaining how thresholds can trigger alarms and detailing the different alarm states: OK, INSUFFICIENT\_DATA, and ALARM.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858326/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/cloudwatch-tips-thresholds-alarms.jpg)
+![The image provides tips for using CloudWatch, explaining how thresholds can trigger alarms and detailing the different alarm states: OK, INSUFFICIENT\_DATA, and ALARM.](https://kodekloud.com/kk-media/image/upload/v1752858326/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/cloudwatch-tips-thresholds-alarms.jpg)
 
 ***
 
@@ -70,7 +70,7 @@ AWS CloudTrail records all API activity and actions in your AWS account, offerin
 * **CloudTrail Insights:**\
   Use CloudTrail Insights to detect unusual activity and automatically identify unexpected changes in your AWS environment.
 
-![The image provides tips for acing an exam on AWS CloudTrail, highlighting its functions such as tracking API activity, serving as an audit trail, storing events, and analyzing unusual activity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858327/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-cloudtrail-exam-tips.jpg)
+![The image provides tips for acing an exam on AWS CloudTrail, highlighting its functions such as tracking API activity, serving as an audit trail, storing events, and analyzing unusual activity.](https://kodekloud.com/kk-media/image/upload/v1752858327/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-cloudtrail-exam-tips.jpg)
 
 ***
 
@@ -101,15 +101,15 @@ To integrate X-Ray into your application, import the X-Ray SDK and configure a t
 
 > **triangle-alert** Ensure that your X-Ray daemon and client have the necessary permissions (such as `xray:GetSamplingRules` and `xray:GetTraceSummaries`) to successfully send and retrieve trace data.
 
-![The image provides tips for acing an exam related to X-Ray, detailing concepts like segments, subsegments, traces, annotations, and metadata. Each term is briefly explained in the context of application requests and data indexing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858328/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/xray-exam-tips-segments-annotations.jpg)
+![The image provides tips for acing an exam related to X-Ray, detailing concepts like segments, subsegments, traces, annotations, and metadata. Each term is briefly explained in the context of application requests and data indexing.](https://kodekloud.com/kk-media/image/upload/v1752858328/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/xray-exam-tips-segments-annotations.jpg)
 
-![The image provides tips for acing an exam related to X-Ray, explaining how it records requests and the sampling rate for additional requests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858330/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/x-ray-exam-tips-sampling-rate.jpg)
+![The image provides tips for acing an exam related to X-Ray, explaining how it records requests and the sampling rate for additional requests.](https://kodekloud.com/kk-media/image/upload/v1752858330/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/x-ray-exam-tips-sampling-rate.jpg)
 
 ### X-Ray Integration on Different AWS Services
 
 For services like Elastic Beanstalk, X-Ray is available out of the box—you can enable it via the AWS Management Console or through configuration files (such as `.ebextensions`). For EC2 instances, make sure the instance has an appropriate IAM role or specific instance profile to allow sending data to X-Ray.
 
-![The image lists tips for acing an exam related to X-Ray, detailing various functions like xray:GetSamplingRules and xray:GetTraceSummaries.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858332/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/xray-exam-tips-sampling-rules.jpg)
+![The image lists tips for acing an exam related to X-Ray, detailing various functions like xray:GetSamplingRules and xray:GetTraceSummaries.](https://kodekloud.com/kk-media/image/upload/v1752858332/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/xray-exam-tips-sampling-rules.jpg)
 
 ***
 

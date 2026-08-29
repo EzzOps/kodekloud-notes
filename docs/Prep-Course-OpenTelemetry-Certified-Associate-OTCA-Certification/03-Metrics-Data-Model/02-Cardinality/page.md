@@ -119,13 +119,9 @@ High cardinality enables user-level troubleshooting and business analytics (e.g.
   <img alt="The image is a table showcasing high cardinality key aspects using userID and state attributes, with userID having high cardinality and state having low cardinality. It also includes use cases related to backend load and error spikes." />
 </Frame>
 
-<Callout icon="lightbulb">
-  High-cardinality metrics provide detailed, actionable insight but increase the number of metric series. Design labels to balance operational needs with backend cost and performance.
-</Callout>
+> **lightbulb** High-cardinality metrics provide detailed, actionable insight but increase the number of metric series. Design labels to balance operational needs with backend cost and performance.
 
-<Callout icon="warning">
-  Warning: storing and querying high-cardinality data increases backend load. Confirm your observability backend can handle the ingestion and query volume before adding many high-cardinality labels.
-</Callout>
+> **warning** Warning: storing and querying high-cardinality data increases backend load. Confirm your observability backend can handle the ingestion and query volume before adding many high-cardinality labels.
 
 ## Practical guidance and patterns
 
@@ -148,6 +144,4 @@ Cardinality is a key design decision in observability. Thoughtful selection of l
 * Prometheus documentation (time series & labels): [https://prometheus.io/docs/introduction/overview/](https://prometheus.io/docs/introduction/overview/)
 * Observability best practices: [https://landing.google.com/sre/sre-book/](https://landing.google.com/sre/sre-book/) (relevant SRE guidance)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/8d54f805-508c-44c2-b695-504e599ab07a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/fffcb239-a53d-4a2c-beab-cc23c3514158/lesson/8d54f805-508c-44c2-b695-504e599ab07a)

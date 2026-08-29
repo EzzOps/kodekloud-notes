@@ -12,9 +12,7 @@ Patterns in Kyverno can match exact values or use operator expressions to perfor
 * Kyverno detects operators at the start of the string and performs the appropriate comparison (it does not do plain string comparisons).
 * Equality is the default: provide a raw value (for example, `replicas: 3`) to test for equality.
 
-<Callout icon="warning">
-  Always enclose operator expressions in quotes so Kyverno treats them as operator strings (for example, `">=2"` or `"!default"`). Unquoted values will be treated as plain values, not operator expressions.
-</Callout>
+> **warning** Always enclose operator expressions in quotes so Kyverno treats them as operator strings (for example, `">=2"` or `"!default"`). Unquoted values will be treated as plain values, not operator expressions.
 
 ## Common operators (quick reference)
 
@@ -96,9 +94,7 @@ spec:
 
 Behavior: Resources with `metadata.namespace: default` (or with the field omitted) fail validation; other namespaces pass.
 
-<Callout icon="lightbulb">
-  When testing operator strings, remember equality is the default: provide the value directly to test equality (for example, `replicas: 3`). Use quoted operator strings for comparisons, ranges, and negations (for example, `">=2"` or `"!default"`).
-</Callout>
+> **lightbulb** When testing operator strings, remember equality is the default: provide the value directly to test equality (for example, `replicas: 3`). Use quoted operator strings for comparisons, ranges, and negations (for example, `">=2"` or `"!default"`).
 
 ## Additional tips
 
@@ -111,6 +107,4 @@ Behavior: Resources with `metadata.namespace: default` (or with the field omitte
 * [Kyverno documentation](https://kyverno.io/docs/)
 * [Kubernetes API and object fields](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.27/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/22c5539c-8114-493c-9401-23489f36533f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/22c5539c-8114-493c-9401-23489f36533f)

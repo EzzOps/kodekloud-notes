@@ -15,7 +15,7 @@ We begin by examining how DevOps transforms the traditional IT development lifec
 * Define **Continuous Integration (CI)** and **Continuous Deployment (CD)**
 * Outline a **YAML pipeline** scaffold that supports multi-stage releases
 
-![The image is a slide titled "Release Strategy" with a color-coded list describing different aspects of IT development, including the traditional cycle, release process, CI/CD components, and YAML pipeline structure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868077/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/release-strategy-it-development-slide.jpg)
+![The image is a slide titled "Release Strategy" with a color-coded list describing different aspects of IT development, including the traditional cycle, release process, CI/CD components, and YAML pipeline structure.](https://kodekloud.com/kk-media/image/upload/v1752868077/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/release-strategy-it-development-slide.jpg)
 
 ## Designing a Release Strategy
 
@@ -29,7 +29,7 @@ Designing a release strategy in Azure Pipelines involves clear stage definitions
 
 > **lightbulb** Use `[dependencies]` to structure complex pipelines, but rely on `[condition]` expressions (e.g., `succeeded()`, `and()`, `or()`) for granular control.
 
-![The image is a presentation slide titled "Stages, Dependencies, and Conditions," with a color-coded list explaining stages in Azure pipelines, managing dependencies, implementing conditions, and differences between conditions and dependencies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868078/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/stages-dependencies-conditions-azure-pipelines.jpg)
+![The image is a presentation slide titled "Stages, Dependencies, and Conditions," with a color-coded list explaining stages in Azure pipelines, managing dependencies, implementing conditions, and differences between conditions and dependencies.](https://kodekloud.com/kk-media/image/upload/v1752868078/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/stages-dependencies-conditions-azure-pipelines.jpg)
 
 ## Implementing Release Gates
 
@@ -49,7 +49,7 @@ Release gates act as automated quality checks before a deployment proceeds. Youâ
 | Invoke REST API | Integrate third-party services         | Trigger approval workflow in a service management system |
 | Azure Monitor   | Check application telemetry thresholds | Validate error rate is below threshold before proceeding |
 
-![The image is a slide titled "Implementing Release Gates," listing topics such as the importance, types, setup, examples, and best practices of release gates. It features a gradient background and colored bullet points.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868079/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/implementing-release-gates-topics-slide.jpg)
+![The image is a slide titled "Implementing Release Gates," listing topics such as the importance, types, setup, examples, and best practices of release gates. It features a gradient background and colored bullet points.](https://kodekloud.com/kk-media/image/upload/v1752868079/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/implementing-release-gates-topics-slide.jpg)
 
 ## Links and References
 

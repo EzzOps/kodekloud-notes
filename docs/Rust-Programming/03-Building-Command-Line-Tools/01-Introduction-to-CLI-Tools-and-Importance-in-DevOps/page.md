@@ -19,9 +19,7 @@ Popular examples of CLI tools include:
 
 These tools enable consistent automation and the repeatable management of tasks, making them crucial elements in the DevOps workflow. They streamline processes such as automation, infrastructure as code, continuous integration/continuous deployment (CI/CD), monitoring, logging, and version control.
 
-<Frame>
-  ![The image outlines the role of CLI tools in DevOps, highlighting their use in automation, infrastructure as code, CI/CD, monitoring and logging, and version control. Each section briefly describes how these tools enhance efficiency and management in development processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883826/notes-assets/images/Rust-Programming-Introduction-to-CLI-Tools-and-Importance-in-DevOps/cli-tools-devops-automation-overview.jpg)
-</Frame>
+![The image outlines the role of CLI tools in DevOps, highlighting their use in automation, infrastructure as code, CI/CD, monitoring and logging, and version control. Each section briefly describes how these tools enhance efficiency and management in development processes.](https://kodekloud.com/kk-media/image/upload/v1752883826/notes-assets/images/Rust-Programming-Introduction-to-CLI-Tools-and-Importance-in-DevOps/cli-tools-devops-automation-overview.jpg)
 
 ## CLI Tools in a DevOps Workflow
 
@@ -33,9 +31,7 @@ Imagine deploying an application to a Kubernetes cluster. In such a scenario, CL
 
 By automating these tasks using CLI commands, you achieve faster deployments that are consistent and less prone to errors.
 
-<Frame>
-  ![The image outlines a DevOps workflow example using CLI tools, including kubectl for managing resources, helm for deploying Kubernetes resources, and Docker for building and pushing container images.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883827/notes-assets/images/Rust-Programming-Introduction-to-CLI-Tools-and-Importance-in-DevOps/devops-workflow-cli-tools.jpg)
-</Frame>
+![The image outlines a DevOps workflow example using CLI tools, including kubectl for managing resources, helm for deploying Kubernetes resources, and Docker for building and pushing container images.](https://kodekloud.com/kk-media/image/upload/v1752883827/notes-assets/images/Rust-Programming-Introduction-to-CLI-Tools-and-Importance-in-DevOps/devops-workflow-cli-tools.jpg)
 
 ## Why Use Rust for Building CLI Tools?
 
@@ -45,24 +41,14 @@ Rust offers several significant benefits for developing CLI tools:
 * **Memory Safety:** Rust’s unique ownership model ensures high memory safety without requiring a garbage collector.
 * **Concurrency:** Rust enables robust concurrency, allowing your applications to perform multiple tasks simultaneously without data races.
 
-<Frame>
-  ![The image highlights the advantages of using Rust for building CLI tools, focusing on performance, memory safety, and concurrency. Each advantage is briefly explained with accompanying icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883828/notes-assets/images/Rust-Programming-Introduction-to-CLI-Tools-and-Importance-in-DevOps/rust-cli-tools-advantages.jpg)
-</Frame>
+![The image highlights the advantages of using Rust for building CLI tools, focusing on performance, memory safety, and concurrency. Each advantage is briefly explained with accompanying icons.](https://kodekloud.com/kk-media/image/upload/v1752883828/notes-assets/images/Rust-Programming-Introduction-to-CLI-Tools-and-Importance-in-DevOps/rust-cli-tools-advantages.jpg)
 
-<Callout icon="lightbulb">
-  Rust’s ecosystem includes libraries such as CLAP (Command Line Argument Parser), which simplifies parsing and managing command line arguments for your applications. Additionally, Rust’s package manager, Cargo, streamlines the process of compiling your CLI tools for Linux, macOS, and Windows.
-</Callout>
+> **lightbulb** Rust’s ecosystem includes libraries such as CLAP (Command Line Argument Parser), which simplifies parsing and managing command line arguments for your applications. Additionally, Rust’s package manager, Cargo, streamlines the process of compiling your CLI tools for Linux, macOS, and Windows.
 
-<Frame>
-  ![The image outlines the advantages of using Rust for building CLI tools, highlighting its ecosystem, cross-platform capabilities, and community support.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883830/notes-assets/images/Rust-Programming-Introduction-to-CLI-Tools-and-Importance-in-DevOps/rust-cli-tools-advantages-2.jpg)
-</Frame>
+![The image outlines the advantages of using Rust for building CLI tools, highlighting its ecosystem, cross-platform capabilities, and community support.](https://kodekloud.com/kk-media/image/upload/v1752883830/notes-assets/images/Rust-Programming-Introduction-to-CLI-Tools-and-Importance-in-DevOps/rust-cli-tools-advantages-2.jpg)
 
 By leveraging Rust's advanced features alongside the power of CLI tools, you can develop robust, efficient, and reliable solutions tailored for modern DevOps practices.
 
-<Callout icon="triangle-alert">
-  Ensure that you follow best practices in Rust development and regularly update your toolchain to keep your CLI tools secure and efficient.
-</Callout>
+> **triangle-alert** Ensure that you follow best practices in Rust development and regularly update your toolchain to keep your CLI tools secure and efficient.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/bb7ae445-2739-4b78-a1f2-e30c0b7944e3/lesson/f80f980b-48c6-46e3-bcfc-5bfb6d995594" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/bb7ae445-2739-4b78-a1f2-e30c0b7944e3/lesson/f80f980b-48c6-46e3-bcfc-5bfb6d995594)

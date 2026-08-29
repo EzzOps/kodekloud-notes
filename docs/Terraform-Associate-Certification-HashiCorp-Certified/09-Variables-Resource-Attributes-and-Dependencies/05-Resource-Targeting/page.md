@@ -11,9 +11,7 @@ resource "aws_key_pair" "alpha" {
 
 This output reveals exported attributes such as ARN, fingerprint, ID, key name, public key, and tags. For more detailed explanations of these attributes, refer to the [Terraform Documentation](https://www.terraform.io/docs) for each resource.
 
-<Callout icon="lightbulb">
-  Remember: Utilizing exported attributes allows you to build dependencies between resources, enabling dynamic infrastructure provisioning.
-</Callout>
+> **lightbulb** Remember: Utilizing exported attributes allows you to build dependencies between resources, enabling dynamic infrastructure provisioning.
 
 ## Referencing Resource Attributes
 
@@ -51,9 +49,7 @@ aws_instance.cerberus: Creation complete after 10s [id=i-c791dc46a6639d4a7]
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed
 ```
 
-<Callout icon="lightbulb">
-  Terraform automatically manages the creation order by analyzing resource dependencies. During deletion, resources are removed in reverse order, ensuring a safe teardown.
-</Callout>
+> **lightbulb** Terraform automatically manages the creation order by analyzing resource dependencies. During deletion, resources are removed in reverse order, ensuring a safe teardown.
 
 ## Managing Explicit Dependencies
 
@@ -78,9 +74,7 @@ resource "aws_instance" "web" {
 
 With the `depends_on` argument, Terraform provisions the database instance first. When removing resources, it deletes the web instance before the database instance, preserving the dependency order.
 
-<Callout icon="triangle-alert">
-  Be cautious with explicit dependencies. Overusing `depends_on` can lead to unnecessarily complex dependency graphs, which might complicate the execution plan.
-</Callout>
+> **triangle-alert** Be cautious with explicit dependencies. Overusing `depends_on` can lead to unnecessarily complex dependency graphs, which might complicate the execution plan.
 
 ## Conclusion
 
@@ -93,9 +87,7 @@ Happy building with Terraform!
 * [Terraform Documentation](https://www.terraform.io/docs)
 * [AWS Provider Docs](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/cca81ade-f05a-42b2-af56-1926cade6582/lesson/c980f12b-3dab-4e34-8d4f-beb7178d78be" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-associate-certification-hashicorp-certified/module/cca81ade-f05a-42b2-af56-1926cade6582/lesson/c980f12b-3dab-4e34-8d4f-beb7178d78be)
 
 
 # Resource Targeting
@@ -153,9 +145,7 @@ aws_instance.web: Modifications complete after 0s [id=i-67428769e06ae2901]
 Apply complete! Resources: 1 added, 1 changed, 1 destroyed.
 ```
 
-<Callout icon="triangle-alert">
-  Using `terraform apply` without proper targeting will update both the random string and the AWS instance tag. Make sure this is the desired behavior before proceeding.
-</Callout>
+> **triangle-alert** Using `terraform apply` without proper targeting will update both the random string and the AWS instance tag. Make sure this is the desired behavior before proceeding.
 
 ## Resource Targeting to Isolate Changes
 

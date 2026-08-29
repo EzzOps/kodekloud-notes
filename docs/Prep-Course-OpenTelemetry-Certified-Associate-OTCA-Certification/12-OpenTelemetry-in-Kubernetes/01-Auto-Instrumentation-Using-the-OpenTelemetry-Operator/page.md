@@ -6,9 +6,7 @@ Explains using the OpenTelemetry Operator to auto-instrument Kubernetes workload
 
 This article explains how auto-instrumentation works with the OpenTelemetry Operator and how it simplifies collecting telemetry from applications running in Kubernetes. While manual instrumentation remains an option, operator-based auto-instrumentation lets you collect traces, metrics, and logs with minimal code changes.
 
-<Callout icon="lightbulb">
-  Auto-instrumentation is ideal when you need quick visibility into running workloads or when you want consistent observability settings across many deployments and namespaces.
-</Callout>
+> **lightbulb** Auto-instrumentation is ideal when you need quick visibility into running workloads or when you want consistent observability settings across many deployments and namespaces.
 
 <Frame>
   <img alt="The image illustrates a comparison between manual instrumentation and auto-instrumentation for telemetry, highlighting that manual requires explicit coding, while auto collects data with minimal setup." />

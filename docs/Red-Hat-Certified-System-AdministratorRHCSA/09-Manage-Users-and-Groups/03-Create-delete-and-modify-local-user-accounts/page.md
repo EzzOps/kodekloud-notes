@@ -8,13 +8,11 @@ There are situations where you might need to change a user's primary group. By d
 sudo usermod -g developers john
 ```
 
-<Callout icon="lightbulb">
-  A user can have only one primary group but can belong to multiple secondary groups. Avoid confusing the lowercase -g option (for the primary group) with the uppercase -G option (for secondary groups). To minimize errors, consider using the long option --gid:
+> **lightbulb** A user can have only one primary group but can belong to multiple secondary groups. Avoid confusing the lowercase -g option (for the primary group) with the uppercase -G option (for secondary groups). To minimize errors, consider using the long option --gid:
 
   ```bash theme={null}
   sudo usermod --gid developers john
   ```
-</Callout>
 
 It is also important to note the difference in syntax between gpasswd and usermod. The gpasswd command expects the username before the group name, whereas usermod requires the group option immediately preceding the username.
 
@@ -51,11 +49,9 @@ For further reading, consider exploring these resources:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c2d7d0cc-a429-484c-b81b-674ff5fadc7e/lesson/f77d27d5-18e2-4b39-97dd-0ae9eb44809e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c2d7d0cc-a429-484c-b81b-674ff5fadc7e/lesson/f77d27d5-18e2-4b39-97dd-0ae9eb44809e)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c2d7d0cc-a429-484c-b81b-674ff5fadc7e/lesson/6e4ef3b7-df0d-4912-a183-286c87ef5131" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/c2d7d0cc-a429-484c-b81b-674ff5fadc7e/lesson/6e4ef3b7-df0d-4912-a183-286c87ef5131)
 
 
 # Create delete and modify local user accounts
@@ -106,9 +102,7 @@ CREATE_MAIL_SPOOL=yes
 
 These settings explain key aspects such as the home directory location, default shell, and group configuration.
 
-<Callout icon="lightbulb">
-  Always review the default settings to ensure they align with your organization’s policies before creating user accounts.
-</Callout>
+> **lightbulb** Always review the default settings to ensure they align with your organization’s policies before creating user accounts.
 
 ## Setting a Password and Deleting an Account
 

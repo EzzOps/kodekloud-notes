@@ -42,9 +42,7 @@ Prerequisites
 * Azure CLI installed and available on your PATH.
 * An Azure account with a subscription you can use.
 
-<Callout icon="lightbulb">
-  If you are using a development environment such as [Codespaces](https://github.com/features/codespaces), the Azure CLI is often pre-installed.
-</Callout>
+> **lightbulb** If you are using a development environment such as [Codespaces](https://github.com/features/codespaces), the Azure CLI is often pre-installed.
 
 Quick overview of authentication options
 
@@ -153,9 +151,7 @@ Notes and troubleshooting
   ```
 * For non-interactive automation (CI/CD), use a Service Principal or a managed identity instead of `az login`. See the official docs for best practices and examples.
 
-<Callout icon="warning">
-  Do not commit secrets or credentials (client secrets, subscription IDs, or other sensitive data) to version control. For automation, prefer Service Principal or Managed Identity with least-privilege RBAC and store credentials in a secure secrets manager.
-</Callout>
+> **warning** Do not commit secrets or credentials (client secrets, subscription IDs, or other sensitive data) to version control. For automation, prefer Service Principal or Managed Identity with least-privilege RBAC and store credentials in a secure secrets manager.
 
 References and further reading
 
@@ -165,6 +161,4 @@ References and further reading
 
 That’s it — authenticate with `az login`, set the subscription (via environment variable or `az account set`), then use `terraform plan` and `terraform apply` to manage your Azure resources.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/df5b5815-c1ea-45f5-ba18-7a5c53ded28a/lesson/4151a641-8fd6-42cb-83ae-e06ed7b81cf8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-terraform-associate-004/module/df5b5815-c1ea-45f5-ba18-7a5c53ded28a/lesson/4151a641-8fd6-42cb-83ae-e06ed7b81cf8)

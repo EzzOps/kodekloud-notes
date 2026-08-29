@@ -66,9 +66,7 @@ copy_of_letters = letters[:]
 print(copy_of_letters)  # Output: ["A", "B", "C", "D", "E"]
 ```
 
-<Callout icon="lightbulb">
-  Creating a copy using slicing produces a new list in memory. Therefore, modifying the new list will not affect the original list.
-</Callout>
+> **lightbulb** Creating a copy using slicing produces a new list in memory. Therefore, modifying the new list will not affect the original list.
 
 ## Slicing vs. Assignment
 
@@ -96,9 +94,7 @@ print(letters)  # Output: ["A", "D", "E"]
 
 If you use `del` without any indices, it will remove all elements, resulting in an empty list.
 
-<Callout icon="triangle-alert">
-  Be careful when using the `del` keyword, as it modifies the original list permanently.
-</Callout>
+> **triangle-alert** Be careful when using the `del` keyword, as it modifies the original list permanently.
 
 ## Summary
 
@@ -112,6 +108,4 @@ Slicing is a powerful feature in Python that allows you to work with subsets of 
 
 Practice these slicing techniques to build familiarity and enhance your Python skills. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/a115db9d-996c-4cfc-be27-9cfd7e6d77f5/lesson/ca83f5cc-90e4-4176-8a20-7afc9cff8e83" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/a115db9d-996c-4cfc-be27-9cfd7e6d77f5/lesson/ca83f5cc-90e4-4176-8a20-7afc9cff8e83)

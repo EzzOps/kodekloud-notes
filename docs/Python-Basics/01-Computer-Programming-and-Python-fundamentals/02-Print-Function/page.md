@@ -29,9 +29,7 @@ The code consists of:\
 
 By combining these elements, Python understands that it should display the provided string on the terminal.
 
-<Callout icon="lightbulb">
-  The print function is built into Python and requires no additional imports. Beyond printing text, functions in Python can process values, produce side effects, and even return data, allowing you to design your own functions for more complex tasks.
-</Callout>
+> **lightbulb** The print function is built into Python and requires no additional imports. Beyond printing text, functions in Python can process values, produce side effects, and even return data, allowing you to design your own functions for more complex tasks.
 
 Let's revisit the function’s structure with another example:
 
@@ -142,12 +140,8 @@ The print function is an essential built-in Python tool for displaying output on
 • The role of special characters like the newline (\n).\
 • How keyword arguments like end and sep allow for versatile output control.
 
-<Frame>
-  ![The image describes the print() function as a built-in tool for printing values to the console, usable without importing, and invoked with parentheses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883520/notes-assets/images/Python-Basics-Print-Function/frame_390.jpg)
-</Frame>
+![The image describes the print() function as a built-in tool for printing values to the console, usable without importing, and invoked with parentheses.](https://kodekloud.com/kk-media/image/upload/v1752883520/notes-assets/images/Python-Basics-Print-Function/frame_390.jpg)
 
 This article has provided a comprehensive overview of the print function. Practice what you've learned by experimenting with these examples in your own Python environment!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-basics/module/4178f96e-8dcd-46a2-a9c9-f65a8c9c73b0/lesson/7b2dd853-2f3e-4adb-b265-b16256f107da" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-basics/module/4178f96e-8dcd-46a2-a9c9-f65a8c9c73b0/lesson/7b2dd853-2f3e-4adb-b265-b16256f107da)

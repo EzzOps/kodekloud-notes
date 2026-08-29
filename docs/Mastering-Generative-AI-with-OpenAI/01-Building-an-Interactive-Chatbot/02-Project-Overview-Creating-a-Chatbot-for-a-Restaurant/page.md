@@ -7,13 +7,9 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 # openai.api_key = "YOUR_API_KEY"
 ```
 
-<Callout icon="lightbulb">
-  Storing your API key in an environment variable keeps it secure. Avoid committing secrets to version control.
-</Callout>
+> **lightbulb** Storing your API key in an environment variable keeps it secure. Avoid committing secrets to version control.
 
-<Callout icon="triangle-alert">
-  Hardcoding your API key in source code can expose it publicly. Use environment variables or secret managers.
-</Callout>
+> **triangle-alert** Hardcoding your API key in source code can expose it publicly. Use environment variables or secret managers.
 
 ***
 
@@ -189,11 +185,9 @@ This history enables the model to maintain context across turns, crucial for coh
 * [Python `os` module](https://docs.python.org/3/library/os.html)
 * [Environment Variables Best Practices](https://12factor.net/config)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/36c56a19-11f6-4db1-8bd7-bd6a96c82268/lesson/c11fdf11-ed65-4c3f-87e8-992a06e9b699" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/36c56a19-11f6-4db1-8bd7-bd6a96c82268/lesson/c11fdf11-ed65-4c3f-87e8-992a06e9b699)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/36c56a19-11f6-4db1-8bd7-bd6a96c82268/lesson/2d995331-76c9-4ad5-b235-271effda8247" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/36c56a19-11f6-4db1-8bd7-bd6a96c82268/lesson/2d995331-76c9-4ad5-b235-271effda8247)
 
 
 # Project Overview Creating a Chatbot for a Restaurant

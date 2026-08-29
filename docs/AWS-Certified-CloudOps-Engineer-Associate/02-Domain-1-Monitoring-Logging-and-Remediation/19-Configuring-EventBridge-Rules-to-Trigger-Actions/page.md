@@ -14,7 +14,7 @@ When events are sent to an event bus, it's essential to determine the appropriat
 
 Below is an overview of the standard EventBridge architecture:
 
-![The image is a diagram explaining Amazon EventBridge, showing how events from various sources like AWS services and custom apps are processed through event buses and rules, and then routed to targets such as AWS Lambda and Amazon SNS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859861/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EventBridge-Rules-to-Trigger-Actions/amazon-eventbridge-diagram-events-routing.jpg)
+![The image is a diagram explaining Amazon EventBridge, showing how events from various sources like AWS services and custom apps are processed through event buses and rules, and then routed to targets such as AWS Lambda and Amazon SNS.](https://kodekloud.com/kk-media/image/upload/v1752859861/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EventBridge-Rules-to-Trigger-Actions/amazon-eventbridge-diagram-events-routing.jpg)
 
 In the diagram, events from different sources land on the event bus. The EventBridge rules then evaluate each event, and if an event meets the specified pattern, it is routed to one or more appropriate targets like AWS Lambda functions, APIs, or other AWS services.
 
@@ -31,7 +31,7 @@ Configuring an EventBridge rule involves a clear sequence of steps:
 
 Once activated, the rule continuously listens for incoming events, performs pattern matching, and triggers the necessary actions.
 
-![The image outlines the steps to configure an EventBridge rule, including defining the event source, event pattern, target, and creating the rule. It provides examples like using an AWS S3 bucket and specifying actions such as a Lambda function.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859863/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EventBridge-Rules-to-Trigger-Actions/eventbridge-rule-configuration-steps.jpg)
+![The image outlines the steps to configure an EventBridge rule, including defining the event source, event pattern, target, and creating the rule. It provides examples like using an AWS S3 bucket and specifying actions such as a Lambda function.](https://kodekloud.com/kk-media/image/upload/v1752859863/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EventBridge-Rules-to-Trigger-Actions/eventbridge-rule-configuration-steps.jpg)
 
 > **lightbulb** For enhanced security and reliability, ensure that all IAM roles associated with your EventBridge rules have the minimum required permissions.
 
@@ -45,7 +45,7 @@ Consider an example where an object is uploaded to an S3 bucket. Here's how the 
 * The configured EventBridge rule, which is set to monitor this specific event pattern, routes the event to an AWS Lambda function.
 * The Lambda function processes the uploaded object—for instance, generating thumbnails for images.
 
-![The image illustrates a process where an S3 bucket event triggers an AWS Lambda function via Amazon EventBridge. It shows the flow from the event source to the event rule and finally to the target Lambda function.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859864/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EventBridge-Rules-to-Trigger-Actions/s3-bucket-event-aws-lambda-flow.jpg)
+![The image illustrates a process where an S3 bucket event triggers an AWS Lambda function via Amazon EventBridge. It shows the flow from the event source to the event rule and finally to the target Lambda function.](https://kodekloud.com/kk-media/image/upload/v1752859864/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Configuring-EventBridge-Rules-to-Trigger-Actions/s3-bucket-event-aws-lambda-flow.jpg)
 
 > **lightbulb** Remember, while this example uses Lambda as the target, EventBridge supports over 200 AWS services and third-party integrations, providing significant flexibility to suit your application's requirements.
 

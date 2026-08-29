@@ -13,9 +13,7 @@ In this article, we will cover several key topics:
 1. **Deploying Azure AD Connect**\
    We will deploy a domain controller using a script that also configures the Azure AD Connect service. This service synchronizes your on-premises users to the cloud.
 
-<Callout icon="lightbulb">
-  If you are using the core cloud labs, be aware of potential limitations. If you have your own tenant, you can test the full functionality without restrictions.
-</Callout>
+> **lightbulb** If you are using the core cloud labs, be aware of potential limitations. If you have your own tenant, you can test the full functionality without restrictions.
 
 2. **Exploring Authentication Options**\
    Azure AD Connect offers flexibility in handling authentication for synchronized accounts. You can choose from several methods based on your security and operational requirements:
@@ -34,12 +32,8 @@ In this article, we will cover several key topics:
 
 Below is an introductory diagram that outlines the steps for deploying and configuring Azure AD, including the various authentication options, password synchronization, and federation:
 
-<Frame>
-  ![The image is an introduction slide outlining steps for deploying and configuring Azure AD, including authentication options, password synchronization, and federation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881930/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Introduction/azure-ad-deployment-steps-intro.jpg)
-</Frame>
+![The image is an introduction slide outlining steps for deploying and configuring Azure AD, including authentication options, password synchronization, and federation.](https://kodekloud.com/kk-media/image/upload/v1752881930/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Introduction/azure-ad-deployment-steps-intro.jpg)
 
 Let's begin by deploying Azure AD Connect.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/ec3dd1c7-a3f1-4d9a-ae3c-59b398091a52/lesson/b3d0506e-ddbc-49d4-895c-b1559a18a9af" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/ec3dd1c7-a3f1-4d9a-ae3c-59b398091a52/lesson/b3d0506e-ddbc-49d4-895c-b1559a18a9af)

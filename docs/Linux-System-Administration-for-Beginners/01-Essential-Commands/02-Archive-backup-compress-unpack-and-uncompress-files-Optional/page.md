@@ -71,9 +71,7 @@ $ grep -r '/.*/' /etc/
 
 The plus operator requires at least one occurrence of the preceding element.
 
-<Callout icon="lightbulb">
-  Use `\+` in basic `grep` to enable the plus operator, or switch to extended regex with `grep -E`.
-</Callout>
+> **lightbulb** Use `\+` in basic `grep` to enable the plus operator, or switch to extended regex with `grep -E`.
 
 ```bash theme={null}
 $ grep -r '0\+' /etc/
@@ -99,9 +97,7 @@ With this foundation, you can harness regex patterns in Linux to perform precise
 * [GNU grep Manual](https://www.gnu.org/software/grep/manual/grep.html)
 * [Regular Expressions Tutorial](https://www.regular-expressions.info/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/73d4bc39-7b48-48ad-b06f-146366279c6c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/73d4bc39-7b48-48ad-b06f-146366279c6c)
 
 
 # Archive backup compress unpack and uncompress files Optional
@@ -118,9 +114,7 @@ Typical backup workflow:
 2. **Compress**: Shrink the archive size (e.g., `backup.tar.gz`).
 3. **Transfer**: Copy the compressed archive to a remote server, shared drive, or cloud storage.
 
-<Frame>
-  ![The image illustrates a process for archiving, compressing, and backing up files, showing steps from creating a "backup.tar" archive to compressing it into "backup.tar.gz" and then backing it up.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881465/notes-assets/images/Linux-System-Administration-for-Beginners-Archive-backup-compress-unpack-and-uncompress-files-Optional/file-archiving-compressing-backing-up.jpg)
-</Frame>
+![The image illustrates a process for archiving, compressing, and backing up files, showing steps from creating a "backup.tar" archive to compressing it into "backup.tar.gz" and then backing it up.](https://kodekloud.com/kk-media/image/upload/v1752881465/notes-assets/images/Linux-System-Administration-for-Beginners-Archive-backup-compress-unpack-and-uncompress-files-Optional/file-archiving-compressing-backing-up.jpg)
 
 We’ll focus first on archiving with **tar**, then move on to compression and remote backups.
 
@@ -158,9 +152,7 @@ file2
 file3
 ```
 
-<Callout icon="lightbulb">
-  Always put the `--file` (or `-f`) option at the end of your option list, immediately followed by the archive name.
-</Callout>
+> **lightbulb** Always put the `--file` (or `-f`) option at the end of your option list, immediately followed by the archive name.
 
 ## Creating and Appending to a Tarball
 

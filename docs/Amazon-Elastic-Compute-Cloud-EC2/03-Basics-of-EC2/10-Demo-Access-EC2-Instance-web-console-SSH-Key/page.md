@@ -23,7 +23,7 @@ In this tutorial, you’ll learn multiple ways to connect to your Amazon EC2 ins
 2. Select your running instance (e.g., “demo”).
 3. Click the **Connect** button in the top right.
 
-![The image shows an AWS EC2 management console with a running instance named "demo," displaying details like instance ID, type, and IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868956/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Access-EC2-Instance-web-console-SSH-Key/aws-ec2-management-console-running-instance.jpg)
+![The image shows an AWS EC2 management console with a running instance named "demo," displaying details like instance ID, type, and IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752868956/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Access-EC2-Instance-web-console-SSH-Key/aws-ec2-management-console-running-instance.jpg)
 
 You’ll now see all available connection options.
 
@@ -37,7 +37,7 @@ EC2 Instance Connect provides a quick, browser-based SSH session—no local keys
 2. Confirm the **Username** (default is `ec2-user` on Amazon Linux).
 3. Click **Connect**.
 
-![The image shows an AWS EC2 console interface for connecting to an instance, with options for connection type and details like instance ID and public IP address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868957/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Access-EC2-Instance-web-console-SSH-Key/aws-ec2-console-connection-interface.jpg)
+![The image shows an AWS EC2 console interface for connecting to an instance, with options for connection type and details like instance ID and public IP address.](https://kodekloud.com/kk-media/image/upload/v1752868957/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Access-EC2-Instance-web-console-SSH-Key/aws-ec2-console-connection-interface.jpg)
 
 A new tab opens with your SSH shell. Verify connectivity:
 
@@ -128,7 +128,7 @@ To SSH from your workstation, use the `.pem` file downloaded when you launched t
 
 For troubleshooting boot or BIOS issues, use the EC2 Serial Console.
 
-![The image shows an AWS EC2 console screen with a message indicating that the account is not authorized to use the EC2 serial console. There are options for connecting to an instance using different methods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868958/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Access-EC2-Instance-web-console-SSH-Key/aws-ec2-console-unauthorized-message.jpg)
+![The image shows an AWS EC2 console screen with a message indicating that the account is not authorized to use the EC2 serial console. There are options for connecting to an instance using different methods.](https://kodekloud.com/kk-media/image/upload/v1752868958/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Access-EC2-Instance-web-console-SSH-Key/aws-ec2-console-unauthorized-message.jpg)
 
 > **triangle-alert** Your IAM principal must have explicit permission (`ec2-instance-connect:SendSerialConsoleSSHPublicKey`) to use the EC2 Serial Console.
 

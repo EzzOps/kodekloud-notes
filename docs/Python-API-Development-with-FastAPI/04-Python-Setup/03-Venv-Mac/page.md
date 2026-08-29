@@ -24,9 +24,7 @@ sanjeev@sanjeevs-MacBook-Pro Documents % cd fastapi
 sanjeev@sanjeevs-MacBook-Pro fastapi %
 ```
 
-<Callout icon="lightbulb">
-  When using the VS Code integrated terminal, you will automatically be in your project folder, which simplifies your workflow.
-</Callout>
+> **lightbulb** When using the VS Code integrated terminal, you will automatically be in your project folder, which simplifies your workflow.
 
 For demonstration purposes, the presenter is using a virtual machine running macOS on a Windows system. Some minor glitches or differences in terminal behavior might occur, but it is highly recommended to use the VS Code terminal for a smoother experience.
 
@@ -87,18 +85,12 @@ sanjeev@sanjeevs-MacBook-Pro ~/Documents/fastapi % source venv/bin/activate
 
 Once activated, your terminal prompt will be prefixed with the name of your virtual environment (e.g., "venv"). This indicates that any packages installed with pip will only be added to this isolated environment.
 
-<Callout icon="lightbulb">
-  You must reactivate your virtual environment each time you open a new terminal session or restart VS Code. If the interpreter reverts to the global version, simply reselect the appropriate interpreter via the Command Palette.
-</Callout>
+> **lightbulb** You must reactivate your virtual environment each time you open a new terminal session or restart VS Code. If the interpreter reverts to the global version, simply reselect the appropriate interpreter via the Command Palette.
 
-<Frame>
-  ![The image shows a Visual Studio Code interface with a Python project open, displaying a file explorer, a command palette, and a terminal window. The terminal shows a command prompt on a MacBook Pro, and the desktop dock is visible at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883462/notes-assets/images/Python-API-Development-with-FastAPI-Venv-Mac/visual-studio-code-python-project.jpg)
-</Frame>
+![The image shows a Visual Studio Code interface with a Python project open, displaying a file explorer, a command palette, and a terminal window. The terminal shows a command prompt on a MacBook Pro, and the desktop dock is visible at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752883462/notes-assets/images/Python-API-Development-with-FastAPI-Venv-Mac/visual-studio-code-python-project.jpg)
 
 With your virtual environment correctly set up and activated, you are now ready to begin coding your project. This isolated environment ensures that installed packages do not interfere with global Python configurations, making your development process smoother and more efficient.
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/441565b9-9f18-459f-9b0b-252b1caff7b1/lesson/2f38b7de-07cf-4fbd-a381-a05b13633e45" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/441565b9-9f18-459f-9b0b-252b1caff7b1/lesson/2f38b7de-07cf-4fbd-a381-a05b13633e45)

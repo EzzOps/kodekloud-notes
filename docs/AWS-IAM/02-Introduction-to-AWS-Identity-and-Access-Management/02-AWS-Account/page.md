@@ -24,7 +24,7 @@ To start using AWS resources and services, you must first create an AWS account.
 | Consolidated Billing           | Aggregate charges across accounts in a single invoice | Manage all costs via AWS Organizations    |
 | Cross-Account Resource Sharing | Securely share resources with other AWS accounts      | Grant S3 bucket access to another account |
 
-![The image outlines five benefits of creating an AWS account, including access to cloud resources, a pay-as-you-go model, account communication, consolidated billing, and creating accounts for different departments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862998/notes-assets/images/AWS-IAM-AWS-Account/aws-account-benefits-cloud-resources.jpg)
+![The image outlines five benefits of creating an AWS account, including access to cloud resources, a pay-as-you-go model, account communication, consolidated billing, and creating accounts for different departments.](https://kodekloud.com/kk-media/image/upload/v1752862998/notes-assets/images/AWS-IAM-AWS-Account/aws-account-benefits-cloud-resources.jpg)
 
 ## Demo: Creating an AWS Account
 
@@ -39,7 +39,7 @@ Follow these steps to register and activate your AWS account:
 
 > **triangle-alert** Avoid using the root user for daily operations. Create IAM users with the least privilege necessary and manage permissions through [AWS IAM](https://docs.aws.amazon.com/iam/latest/UserGuide/introduction.html).
 
-![The image is a guide for creating an AWS account, featuring a simple illustration of a person with a "Demo" sign and instructions to visit the AWS website and enter an email address to create a password.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862999/notes-assets/images/AWS-IAM-AWS-Account/aws-account-creation-guide-illustration.jpg)
+![The image is a guide for creating an AWS account, featuring a simple illustration of a person with a "Demo" sign and instructions to visit the AWS website and enter an email address to create a password.](https://kodekloud.com/kk-media/image/upload/v1752862999/notes-assets/images/AWS-IAM-AWS-Account/aws-account-creation-guide-illustration.jpg)
 
 ## Next Steps
 

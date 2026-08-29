@@ -72,9 +72,7 @@ patchesJson6902:
   value: 5
 ```
 
-<Callout icon="lightbulb">
-  External JSON 6902 patches are ideal when you need to apply multiple operations or share patches across environments.
-</Callout>
+> **lightbulb** External JSON 6902 patches are ideal when you need to apply multiple operations or share patches across environments.
 
 ***
 
@@ -131,9 +129,7 @@ spec:
   replicas: 5
 ```
 
-<Callout icon="triangle-alert">
-  The `metadata.name` in your patch must exactly match the target resource name; otherwise, the patch won’t be applied.
-</Callout>
+> **triangle-alert** The `metadata.name` in your patch must exactly match the target resource name; otherwise, the patch won’t be applied.
 
 ***
 
@@ -151,6 +147,4 @@ spec:
 * [JSON Patch RFC 6902](https://tools.ietf.org/html/rfc6902)
 * [Kubernetes Strategic Merge Patches](https://kubernetes.io/docs/tasks/manage-kubernetes-objects/update-api-object-kubectl-patch/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/3143d106-366c-4cec-95d5-b7f9b3e890cf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/8b591384-c5e2-4411-afc1-443d3f2ba735/lesson/3143d106-366c-4cec-95d5-b7f9b3e890cf)

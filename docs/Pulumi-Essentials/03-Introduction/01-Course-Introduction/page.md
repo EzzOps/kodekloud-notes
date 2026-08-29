@@ -8,9 +8,7 @@ Hello everyone, and welcome to the course! I'm Sanjeev Thiyagarajan from KodeKlo
 
 Pulumi allows you to treat your infrastructure as code, automating the provisioning process based on your defined configuration. This approach streamlines infrastructure management, reduces errors, and improves overall deployment efficiency.
 
-<Callout icon="lightbulb">
-  Pulumi not only simplifies infrastructure deployment but also integrates seamlessly with existing CI/CD pipelines, offering robust scalability and flexibility.
-</Callout>
+> **lightbulb** Pulumi not only simplifies infrastructure deployment but also integrates seamlessly with existing CI/CD pipelines, offering robust scalability and flexibility.
 
 ## How Pulumi Stands Out
 
@@ -35,6 +33,4 @@ For additional insights on related technologies, check out:
 
 Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pulumi-essentials/module/120264b8-4fea-4851-ae6c-31a2ea963714/lesson/b69b93ae-09ed-4bc2-ab98-1944301cc952" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/pulumi-essentials/module/120264b8-4fea-4851-ae6c-31a2ea963714/lesson/b69b93ae-09ed-4bc2-ab98-1944301cc952)

@@ -24,9 +24,7 @@ To remove it:
 unset LD_LIBRARY_PATH
 ```
 
-<Callout icon="triangle-alert">
-  Overusing `LD_LIBRARY_PATH` can cause version conflicts and security issues. Prefer updating `/etc/ld.so.conf.d/` and running `ldconfig` for persistent changes.
-</Callout>
+> **triangle-alert** Overusing `LD_LIBRARY_PATH` can cause version conflicts and security issues. Prefer updating `/etc/ld.so.conf.d/` and running `ldconfig` for persistent changes.
 
 For permanent updates, add the `export` line to `~/.bashrc` or `/etc/profile`.
 
@@ -76,9 +74,7 @@ Unused entries often result from linker options during the build process.
 * [Linux Shared Libraries HOWTO](https://tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html)
 * [ld.so.conf Configuration](https://man7.org/linux/man-pages/man5/ld.so.conf.5.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/fd8ddef4-51d5-41b5-83cd-b388e3ef653f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/fd8ddef4-51d5-41b5-83cd-b388e3ef653f)
 
 
 # Use Debian Package Management Part 1
@@ -109,10 +105,8 @@ sudo dpkg -i mypackage.deb
 * If no version is installed, `dpkg` adds a fresh copy.
 * If an older version exists, it upgrades in place.
 
-<Callout icon="lightbulb">
-  For automated dependency resolution, consider using [`apt`](https://wiki.debian.org/Teams/Apt) or `apt-get` instead.\
+> **lightbulb** For automated dependency resolution, consider using [`apt`](https://wiki.debian.org/Teams/Apt) or `apt-get` instead.\
   `sudo apt install ./mypackage.deb` will fetch missing dependencies automatically.
-</Callout>
 
 ### Handling Dependency Errors
 
@@ -184,9 +178,7 @@ sudo dpkg -i --force-depends openshot-qt_2.4.3+dfsg1-1_all.deb
 
 Use `--force-all` to override nearly all safeguards. Only force when you understand the implications.
 
-<Callout icon="triangle-alert">
-  Forcing package operations may lead to an inconsistent system state. Always have backups and test in a sandbox before using on production.
-</Callout>
+> **triangle-alert** Forcing package operations may lead to an inconsistent system state. Always have backups and test in a sandbox before using on production.
 
 ***
 
@@ -256,6 +248,4 @@ This command re-executes maintainer scripts, prompting you to confirm or update 
 
 Future installments will cover advanced package building, repository management, and best practices for Debian package maintenance.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/7f4a465c-2c3b-45a6-ada8-6ae201480062" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/7f4a465c-2c3b-45a6-ada8-6ae201480062)

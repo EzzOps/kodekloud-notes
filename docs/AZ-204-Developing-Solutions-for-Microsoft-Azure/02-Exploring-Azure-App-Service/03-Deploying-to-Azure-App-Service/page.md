@@ -15,13 +15,13 @@ Azure App Service offers two deployment approaches:
 * **Manual Deployment**: Upload and manage your application files directly.
 * **Automated Deployment**: Integrate with CI/CD tools to automatically deploy code changes.
 
-![The image illustrates the process of deploying to Azure App Service, showing two methods: manual deployment and automated deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866397/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Deploying-to-Azure-App-Service/azure-app-service-deployment-methods.jpg)
+![The image illustrates the process of deploying to Azure App Service, showing two methods: manual deployment and automated deployment.](https://kodekloud.com/kk-media/image/upload/v1752866397/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Deploying-to-Azure-App-Service/azure-app-service-deployment-methods.jpg)
 
 ### Automated Deployment
 
 Automated deployment leverages tools such as Azure DevOps, GitHub, or Bitbucket to manage and deploy your code changes. This continuous integration and continuous deployment (CI/CD) approach streamlines the update process, minimizes manual errors, and ensures that every commit results in a consistent deployment.
 
-![The image illustrates automated deployment to an app service using Azure DevOps, GitHub, and Bitbucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866399/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Deploying-to-Azure-App-Service/automated-deployment-azure-devops.jpg)
+![The image illustrates automated deployment to an app service using Azure DevOps, GitHub, and Bitbucket.](https://kodekloud.com/kk-media/image/upload/v1752866399/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Deploying-to-Azure-App-Service/automated-deployment-azure-devops.jpg)
 
 ### Manual Deployment
 
@@ -29,7 +29,7 @@ Manual deployment is ideal for initial setups or when you require granular contr
 
 * **Git Deployment**: Push code directly to the Azure App Service Git repository.
 
-![The image is a diagram titled "Deploying to App Service," showing Git as a source for manual deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866401/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Deploying-to-Azure-App-Service/deploying-to-app-service-git-diagram.jpg)
+![The image is a diagram titled "Deploying to App Service," showing Git as a source for manual deployment.](https://kodekloud.com/kk-media/image/upload/v1752866401/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Deploying-to-Azure-App-Service/deploying-to-app-service-git-diagram.jpg)
 
 * **CLI Deployment**: Deploy applications from the command line using the Azure CLI.
 * **Zip Deploy**: Package your application into a zip file and upload it.
@@ -140,7 +140,7 @@ Before deploying via Visual Studio Code, install the Azure App Service extension
 
 During deployment, your application files are packaged and pushed to the App Service. Once deployment is complete, refresh your browser to see your updated web page.
 
-![The image shows a Microsoft Azure portal interface displaying details of a web app named "az204demoapp01." It includes information about the app's resource group, status, location, and other properties.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866409/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Deploying-to-Azure-App-Service/azure-portal-web-app-details.jpg)
+![The image shows a Microsoft Azure portal interface displaying details of a web app named "az204demoapp01." It includes information about the app's resource group, status, location, and other properties.](https://kodekloud.com/kk-media/image/upload/v1752866409/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Deploying-to-Azure-App-Service/azure-portal-web-app-details.jpg)
 
 > **lightbulb** Before deploying, ensure your project folder is free of unnecessary files to optimize the deployment package.
 
@@ -152,7 +152,7 @@ During deployment, your application files are packaged and pushed to the App Ser
 
 To deploy via FTP/FTPS, navigate to the Deployment Center in the Azure portal to retrieve your FTPS credentials. Use these credentials to securely upload your files. Remember to enable FTP authentication in the configuration settings.
 
-![The image shows a Microsoft Azure Deployment Center interface for a web app, displaying FTPS credentials settings with fields for username and password. An alert indicates that FTP authentication is disabled for the app.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866411/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Deploying-to-Azure-App-Service/azure-deployment-center-ftps-settings.jpg)
+![The image shows a Microsoft Azure Deployment Center interface for a web app, displaying FTPS credentials settings with fields for username and password. An alert indicates that FTP authentication is disabled for the app.](https://kodekloud.com/kk-media/image/upload/v1752866411/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Deploying-to-Azure-App-Service/azure-deployment-center-ftps-settings.jpg)
 
 ### Deploying with Azure CLI
 
@@ -294,16 +294,16 @@ An example commit change might look like:
    * Choose the organization, project, repository, and branch (typically the main branch).
    * Enable the necessary settings (such as SCM basic authentication) and save. Note that this may restart your application.
 
-![The image shows an Azure DevOps interface displaying a repository's file structure and details, including folders like "css," "font," "images," and "js," along with files such as "index.html" and "README.md." The right panel contains sections for "Introduction," "Getting Started," "Build and Test," and "Contribute."](../../../../images/kodekloud.com/kk-media/image/upload/v1752866413/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Deploying-to-Azure-App-Service/azure-devops-repository-file-structure.jpg)
+![The image shows an Azure DevOps interface displaying a repository's file structure and details, including folders like "css," "font," "images," and "js," along with files such as "index.html" and "README.md." The right panel contains sections for "Introduction," "Getting Started," "Build and Test," and "Contribute."](https://kodekloud.com/kk-media/image/upload/v1752866413/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Deploying-to-Azure-App-Service/azure-devops-repository-file-structure.jpg)
 
 4. **Trigger Automated Deployment**
    * Once configured, every new commit will trigger an automated deployment. Monitor the deployment logs in the Deployment Center.
 
-![The image shows the Microsoft Azure Deployment Center interface for a web app, with settings for deploying code from Azure Repos. It includes options for selecting the organization, project, repository, and branch.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866415/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Deploying-to-Azure-App-Service/azure-deployment-center-web-app.jpg)
+![The image shows the Microsoft Azure Deployment Center interface for a web app, with settings for deploying code from Azure Repos. It includes options for selecting the organization, project, repository, and branch.](https://kodekloud.com/kk-media/image/upload/v1752866415/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Deploying-to-Azure-App-Service/azure-deployment-center-web-app.jpg)
 
 * After a successful deployment, refresh the App Service overview to verify that your changes are live.
 
-![The image shows the Microsoft Azure Deployment Center interface, displaying deployment logs and details for a web app, including commit information and activity logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866417/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Deploying-to-Azure-App-Service/azure-deployment-center-logs-web-app.jpg)
+![The image shows the Microsoft Azure Deployment Center interface, displaying deployment logs and details for a web app, including commit information and activity logs.](https://kodekloud.com/kk-media/image/upload/v1752866417/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Deploying-to-Azure-App-Service/azure-deployment-center-logs-web-app.jpg)
 
 > **lightbulb** Automated deployments not only streamline the release process but also enable rapid rollback and improve quality assurance by integrating with continuous testing.
 

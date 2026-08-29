@@ -108,7 +108,7 @@ This article provides an in-depth comparison of various Azure compute services, 
 * **Azure Functions:**\
   Operates on a pay-per-use model, where costs are incurred based on the number of executions and the corresponding resource consumption.
 
-![The image is a comparison table of different Azure compute services, detailing features such as primary use, scalability, management overhead, flexibility, ideal use cases, and pricing for Virtual Machines, Azure Virtual Desktop, Azure App Service, Containers, and Azure Functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868296/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Compare-Compute-Services/azure-compute-services-comparison-table.jpg)
+![The image is a comparison table of different Azure compute services, detailing features such as primary use, scalability, management overhead, flexibility, ideal use cases, and pricing for Virtual Machines, Azure Virtual Desktop, Azure App Service, Containers, and Azure Functions.](https://kodekloud.com/kk-media/image/upload/v1752868296/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Compare-Compute-Services/azure-compute-services-comparison-table.jpg)
 
 > **lightbulb** For more detailed insights into Azure compute services and advanced topics, explore the [AZ-305: Microsoft Azure Solutions Architect Expert](https://learn.kodekloud.com/user/courses/az-305-microsoft-azure-solutions-architect-expert) exam resources and complete decision flowcharts on service selection.
 

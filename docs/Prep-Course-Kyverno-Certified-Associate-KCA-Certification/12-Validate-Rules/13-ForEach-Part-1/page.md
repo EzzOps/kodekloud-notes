@@ -84,9 +84,7 @@ Important details and validation options
 
 * The `list` value is a JMESPath expression written as a string. Do not wrap it in double curly braces.
 
-<Callout icon="lightbulb">
-  Write [JMESPath](https://jmespath.org/) expressions directly as strings, for example: `"request.object.spec.containers"`. Do not use `{{ }}`.
-</Callout>
+> **lightbulb** Write [JMESPath](https://jmespath.org/) expressions directly as strings, for example: `"request.object.spec.containers"`. Do not use `{{ }}`.
 
 * `element` is the implicit variable representing the current item in the iteration (e.g., a single container object).
 * Validation clauses available inside a `forEach` entry:
@@ -138,6 +136,4 @@ Links and references
 * JMESPath specification: [https://jmespath.org/](https://jmespath.org/)
 * Kubernetes Pods: [https://kubernetes.io/docs/concepts/workloads/pods/containers/](https://kubernetes.io/docs/concepts/workloads/pods/containers/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/34ddbb12-7fd1-4012-be31-118bc0751688" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/34ddbb12-7fd1-4012-be31-118bc0751688)

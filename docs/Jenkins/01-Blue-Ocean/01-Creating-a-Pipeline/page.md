@@ -11,17 +11,13 @@ In this guide, we'll walk through the process of creating a new pipeline using B
 1. Click the **New Pipeline** button.
 2. Choose where your code is stored. For this example, select **GitHub** and then choose the appropriate organization.
 
-<Callout icon="lightbulb">
-  If you are authenticating for the first time, you'll need a personal access token from GitHub (or your respective code host). Click the option to generate the token and provide it when prompted.
-</Callout>
+> **lightbulb** If you are authenticating for the first time, you'll need a personal access token from GitHub (or your respective code host). Click the option to generate the token and provide it when prompted.
 
 ## Step 2: Select Your Repository
 
 For this demonstration, select the **GoWebApp sample** repository where our pipelines are executed.
 
-<Frame>
-  ![The image shows a software interface for selecting a repository named "go-webapp-sample" from a list to create a pipeline.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879998/notes-assets/images/Jenkins-Creating-a-Pipeline/frame_50.jpg)
-</Frame>
+![The image shows a software interface for selecting a repository named "go-webapp-sample" from a list to create a pipeline.](https://kodekloud.com/kk-media/image/upload/v1752879998/notes-assets/images/Jenkins-Creating-a-Pipeline/frame_50.jpg)
 
 ## Step 3: Create and Configure the Pipeline
 
@@ -70,9 +66,7 @@ This Jenkinsfile runs the test command, ensuring that the pipeline functions pro
 
 Return to the Jenkins interface, where you can see your pipeline with all its defined steps.
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying a pipeline activity for "gowebapp," with a branch indexing process running for 21 seconds.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879999/notes-assets/images/Jenkins-Creating-a-Pipeline/frame_130.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying a pipeline activity for "gowebapp," with a branch indexing process running for 21 seconds.](https://kodekloud.com/kk-media/image/upload/v1752879999/notes-assets/images/Jenkins-Creating-a-Pipeline/frame_130.jpg)
 
 The visual representation of pipeline steps in Blue Ocean makes it much easier to manage and understand compared to manually editing a Jenkinsfile.
 
@@ -85,6 +79,4 @@ That concludes this guide on creating a pipeline with Blue Ocean. Happy coding, 
 * [Jenkins Documentation](https://www.jenkins.io/doc/)
 * [Blue Ocean User Guide](https://www.jenkins.io/projects/blueocean/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/77db3006-93f7-42b0-90d0-6fd961631d1f/lesson/c3cb11e3-7286-4b79-ad01-574f2bca3d0d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/77db3006-93f7-42b0-90d0-6fd961631d1f/lesson/c3cb11e3-7286-4b79-ad01-574f2bca3d0d)

@@ -26,7 +26,7 @@ Amazon S3 is a robust storage option for files and data that your Lambda functio
 
 For scenarios requiring persistent, shared storage across multiple invocations, Amazon EFS is the recommended option. EFS requires you to specify a mount point within your Lambda function’s file system. Once mounted, your function can read from and write to the EFS file system just like a local directory while the data remains persistent.
 
-![The image is an infographic titled "Lambda Storage," showing five types of storage: Code Storage, Temporary Disk Storage (/tmp), AWS Lambda Layers, S3, and Elastic File System (EFS) Integration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859548/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Storage/lambda-storage-infographic-types.jpg)
+![The image is an infographic titled "Lambda Storage," showing five types of storage: Code Storage, Temporary Disk Storage (/tmp), AWS Lambda Layers, S3, and Elastic File System (EFS) Integration.](https://kodekloud.com/kk-media/image/upload/v1752859548/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Storage/lambda-storage-infographic-types.jpg)
 
 ### Special Considerations for EFS
 
@@ -42,9 +42,9 @@ When using EFS with Lambda, there are several performance-related factors to con
 
 > **lightbulb** If your Lambda functions use provisioned concurrency, be aware that each instance maintains an active connection to EFS throughout its invocation, impacting the overall number of available connections.
 
-![The image illustrates a connection between AWS Lambda and EFS (Elastic File System) via a mount point, with arrows indicating the flow.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859549/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Storage/aws-lambda-efs-connection-diagram.jpg)
+![The image illustrates a connection between AWS Lambda and EFS (Elastic File System) via a mount point, with arrows indicating the flow.](https://kodekloud.com/kk-media/image/upload/v1752859549/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Storage/aws-lambda-efs-connection-diagram.jpg)
 
-![The image outlines key points about EFS connections, including support for up to 25,000 connections, Lambda instance maintenance, concurrency limits, burst handling, and monitoring via CloudWatch. It also features a network diagram icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859551/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Storage/efs-connections-key-points-diagram.jpg)
+![The image outlines key points about EFS connections, including support for up to 25,000 connections, Lambda instance maintenance, concurrency limits, burst handling, and monitoring via CloudWatch. It also features a network diagram icon.](https://kodekloud.com/kk-media/image/upload/v1752859551/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Storage/efs-connections-key-points-diagram.jpg)
 
 #### Throughput
 
@@ -57,7 +57,7 @@ When using EFS with Lambda, there are several performance-related factors to con
 * **Monitoring Throughput:**\
   Monitoring the BurstCreditBalance metric is essential for managing overall throughput.
 
-![The image is an infographic about throughput, detailing how EFS uses a bursting model, the impact of read/write operations on burst credits, and the importance of monitoring BurstCreditBalance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859552/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Storage/throughput-efs-bursting-infographic.jpg)
+![The image is an infographic about throughput, detailing how EFS uses a bursting model, the impact of read/write operations on burst credits, and the importance of monitoring BurstCreditBalance.](https://kodekloud.com/kk-media/image/upload/v1752859552/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Storage/throughput-efs-bursting-infographic.jpg)
 
 #### IOPS (Input/Output Operations Per Second)
 
@@ -67,7 +67,7 @@ When using EFS with Lambda, there are several performance-related factors to con
 * **Performance Management:**\
   Monitoring the percent IO limit helps ensure that your function operates within optimal performance boundaries.
 
-![The image is an infographic about IOPS, explaining it as a measure of read/write operations per second, with tips on monitoring and managing IOPS usage to avoid function timeouts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859553/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Storage/iops-infographic-monitoring-tips.jpg)
+![The image is an infographic about IOPS, explaining it as a measure of read/write operations per second, with tips on monitoring and managing IOPS usage to avoid function timeouts.](https://kodekloud.com/kk-media/image/upload/v1752859553/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Storage/iops-infographic-monitoring-tips.jpg)
 
 ## Storage Options Overview
 
@@ -93,6 +93,6 @@ AWS Lambda provides flexible storage options to meet the needs of various use ca
 
 > **triangle-alert** When using Amazon EFS with Lambda, always be mindful of its connection, throughput, and IOPS limitations. Monitoring these metrics via CloudWatch is essential to maintain optimal function performance.
 
-![The image is a summary slide detailing storage options and configurations for EFS in Lambda functions, including connection limits and mount-point information. It features a gradient background with numbered points.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859554/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Storage/efs-lambda-storage-options-summary.jpg)
+![The image is a summary slide detailing storage options and configurations for EFS in Lambda functions, including connection limits and mount-point information. It features a gradient background with numbered points.](https://kodekloud.com/kk-media/image/upload/v1752859554/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Storage/efs-lambda-storage-options-summary.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/3c842ffc-5841-456d-9fad-7bb3af5fdbfc/lesson/6178a2ee-a2ae-4d14-bb21-3f1ae5a502a6)

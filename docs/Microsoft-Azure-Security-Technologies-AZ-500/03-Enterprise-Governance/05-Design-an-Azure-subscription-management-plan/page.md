@@ -37,9 +37,7 @@ Every Azure subscription has a unique subscription ID—a critical identifier em
 
 /subscriptions//...
 
-<Callout icon="lightbulb">
-  Remember that the subscription ID is essential for resource identification, tracking, and management.
-</Callout>
+> **lightbulb** Remember that the subscription ID is essential for resource identification, tracking, and management.
 
 A subscription also defines the billing boundary. All resource usage—whether virtual machines, databases, or other services—is aggregated within the subscription. This compartmentalization helps organize and segregate environments. Common examples of subscription separations include:
 
@@ -64,9 +62,7 @@ Effective Azure subscription management underpins strong governance, precise cos
 * **Security:**\
   Managing subscriptions effectively is a critical component of Azure security strategies (as highlighted in the [AZ-500 exam objectives](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500)). Segregating resources across different subscriptions mitigates the impact of potential security incidents. For instance, if a security breach occurs within one subscription, the data and operations in isolated subscriptions—such as those used by the finance team—remain protected. Tools like Azure Policy, Role-Based Access Control, and Azure Blueprints further enforce security policies across subscriptions.
 
-<Callout icon="triangle-alert">
-  Ensure that your subscription strategy supports minimal blast radius for security incidents. Regularly review and update your security policies and RBAC settings to maintain maximum protection.
-</Callout>
+> **triangle-alert** Ensure that your subscription strategy supports minimal blast radius for security incidents. Regularly review and update your security policies and RBAC settings to maintain maximum protection.
 
 ## Summary
 
@@ -74,6 +70,4 @@ An Azure subscription serves as a logical container for your cloud resources, in
 
 Understanding and leveraging effective subscription management is crucial as you continue your Azure journey. For further exploration, please proceed with the hands-on labs and quizzes. Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/3c48a4f2-a6f3-45fd-87d7-c53f36f2fb2a/lesson/8331e9aa-45c5-45d2-bcf0-97c174629b4e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/3c48a4f2-a6f3-45fd-87d7-c53f36f2fb2a/lesson/8331e9aa-45c5-45d2-bcf0-97c174629b4e)

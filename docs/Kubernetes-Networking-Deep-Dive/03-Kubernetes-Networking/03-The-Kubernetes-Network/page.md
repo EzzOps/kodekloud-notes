@@ -14,17 +14,11 @@ Kubernetes adopts a flat, unified network approach based on these core principle
 * Pods can communicate with any other pod on any node without Network Address Translation (NAT).
 * Agents (like the kubelet) on each node can reach all pods on that node.
 
-<Frame>
-  ![The image illustrates the Kubernetes Networking Model, showing a cluster with nodes containing pods, and the communication between them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880334/notes-assets/images/Kubernetes-Networking-Deep-Dive-The-Kubernetes-Network/kubernetes-networking-model-cluster-pods.jpg)
-</Frame>
+![The image illustrates the Kubernetes Networking Model, showing a cluster with nodes containing pods, and the communication between them.](https://kodekloud.com/kk-media/image/upload/v1752880334/notes-assets/images/Kubernetes-Networking-Deep-Dive-The-Kubernetes-Network/kubernetes-networking-model-cluster-pods.jpg)
 
-<Callout icon="lightbulb">
-  Think of each pod as a micro-VM: it receives its own IP address, allowing direct pod-to-pod connectivity across the cluster—just like virtual machines in a traditional network.
-</Callout>
+> **lightbulb** Think of each pod as a micro-VM: it receives its own IP address, allowing direct pod-to-pod connectivity across the cluster—just like virtual machines in a traditional network.
 
-<Frame>
-  ![The image illustrates the "IP-per-pod" concept in a Kubernetes cluster, showing each pod with its own IP address and a network of servers, each also with an IP address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880336/notes-assets/images/Kubernetes-Networking-Deep-Dive-The-Kubernetes-Network/ip-per-pod-kubernetes-cluster-diagram.jpg)
-</Frame>
+![The image illustrates the "IP-per-pod" concept in a Kubernetes cluster, showing each pod with its own IP address and a network of servers, each also with an IP address.](https://kodekloud.com/kk-media/image/upload/v1752880336/notes-assets/images/Kubernetes-Networking-Deep-Dive-The-Kubernetes-Network/ip-per-pod-kubernetes-cluster-diagram.jpg)
 
 ### Network Namespace in Pods
 
@@ -38,9 +32,7 @@ All containers in a pod share the same network namespace, meaning:
   ![The image illustrates a pod containing two containers, labeled "Container 1" and "Container 2," with a node labeled "Eth0 \[IP Address\]" below them.](https://kodekloud.com/kk-media/image/upload/v1752880337/notes-assets/images/Kubernetes-Networking-Deep-Dive-The-Kubernetes-Network/pod-with-two-containers-eth0-ip.jpg)
 </Frame>
 
-<Frame>
-  ![The image illustrates the concept of network namespaces, showing a container within a pod, connected via a virtual Ethernet (veth) to the root network namespace on a node.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880338/notes-assets/images/Kubernetes-Networking-Deep-Dive-The-Kubernetes-Network/network-namespaces-container-pod-diagram.jpg)
-</Frame>
+![The image illustrates the concept of network namespaces, showing a container within a pod, connected via a virtual Ethernet (veth) to the root network namespace on a node.](https://kodekloud.com/kk-media/image/upload/v1752880338/notes-assets/images/Kubernetes-Networking-Deep-Dive-The-Kubernetes-Network/network-namespaces-container-pod-diagram.jpg)
 
 ## Four Core Networking Challenges
 
@@ -61,13 +53,9 @@ Each resource type uses distinct IP ranges to avoid conflicts:
 | Service       | kube-apiserver assigns cluster IPs from service CIDR  |
 | Node          | Provided by infrastructure (DHCP, static, cloud APIs) |
 
-<Frame>
-  ![The image illustrates the IP address ranges within a Kubernetes cluster, showing the relationship between services, pods, and nodes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880339/notes-assets/images/Kubernetes-Networking-Deep-Dive-The-Kubernetes-Network/kubernetes-ip-address-ranges-illustration.jpg)
-</Frame>
+![The image illustrates the IP address ranges within a Kubernetes cluster, showing the relationship between services, pods, and nodes.](https://kodekloud.com/kk-media/image/upload/v1752880339/notes-assets/images/Kubernetes-Networking-Deep-Dive-The-Kubernetes-Network/kubernetes-ip-address-ranges-illustration.jpg)
 
-<Callout icon="triangle-alert">
-  Ensure your pod CIDR and service CIDR do not overlap with each other or your physical network to prevent routing issues.
-</Callout>
+> **triangle-alert** Ensure your pod CIDR and service CIDR do not overlap with each other or your physical network to prevent routing issues.
 
 ## Implementing the Networking Model with CNI
 
@@ -78,9 +66,7 @@ Kubernetes relies on the **Container Network Interface (CNI)** to provision and 
 * Program routes and firewall (iptables) rules
 * Tear down networks when pods terminate
 
-<Frame>
-  ![The image illustrates the concept of Container Network Interface (CNI) with a logo and a diagram showing connections to virtual networks labeled with "IP."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880340/notes-assets/images/Kubernetes-Networking-Deep-Dive-The-Kubernetes-Network/cni-logo-diagram-virtual-networks-ip.jpg)
-</Frame>
+![The image illustrates the concept of Container Network Interface (CNI) with a logo and a diagram showing connections to virtual networks labeled with "IP."](https://kodekloud.com/kk-media/image/upload/v1752880340/notes-assets/images/Kubernetes-Networking-Deep-Dive-The-Kubernetes-Network/cni-logo-diagram-virtual-networks-ip.jpg)
 
 ### Comparing Popular CNI Plugins
 
@@ -91,9 +77,7 @@ Kubernetes relies on the **Container Network Interface (CNI)** to provision and 
 | Weave   | Easy mesh networking                 | Automatic mesh, encryption, DNS service discovery       |
 | Cilium  | High-performance, eBPF-based         | eBPF datapath, Kubernetes NetworkPolicy, Load Balancing |
 
-<Frame>
-  ![The image shows logos of different Container Network Interface (CNI) plugins: Calico, Flannel, Weave, and Cilium.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880342/notes-assets/images/Kubernetes-Networking-Deep-Dive-The-Kubernetes-Network/cni-plugins-calico-flannel-weave-cilium.jpg)
-</Frame>
+![The image shows logos of different Container Network Interface (CNI) plugins: Calico, Flannel, Weave, and Cilium.](https://kodekloud.com/kk-media/image/upload/v1752880342/notes-assets/images/Kubernetes-Networking-Deep-Dive-The-Kubernetes-Network/cni-plugins-calico-flannel-weave-cilium.jpg)
 
 ## Next Steps
 
@@ -108,6 +92,4 @@ With the networking fundamentals in place, you’re ready to delve into advanced
 * [Weaveworks Weave Net](https://github.com/weaveworks/weave)
 * [Cilium GitHub Repository](https://github.com/cilium/cilium)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/0ef9d5a8-532a-4e0a-8fdc-fc2845255bd7/lesson/359cdf6d-acbc-4887-ae70-458e84b75074" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/0ef9d5a8-532a-4e0a-8fdc-fc2845255bd7/lesson/359cdf6d-acbc-4887-ae70-458e84b75074)

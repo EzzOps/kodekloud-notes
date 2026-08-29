@@ -51,9 +51,7 @@ Why Pods are recreated
 * Kubernetes treats resource requests (CPU/memory) as immutable for a running Pod. To change those values, the Pod must be terminated and a new Pod created with the updated requests.
 * VPA can observe resource usage and either propose new requests or automatically apply them. When VPA applies a change, the Pod is evicted and re-scheduled with the new resource requests.
 
-<Callout icon="lightbulb">
-  VPA observes resource usage and can propose or apply new resource requests for Pods. When requests change, Pods are typically recreated (evicted and re-scheduled) so the new resource requests take effect.
-</Callout>
+> **lightbulb** VPA observes resource usage and can propose or apply new resource requests for Pods. When requests change, Pods are typically recreated (evicted and re-scheduled) so the new resource requests take effect.
 
 Quick summary of the lab
 
@@ -98,8 +96,6 @@ Links and references
 
 This lab demonstrates the core behavior of VPA-driven resizing: resource request changes result in Pod recreation so the scheduler can place the new Pod with appropriate resources.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/66710f67-c094-4a4c-b718-4a031d1ddebe/lesson/ea9c96ec-aedc-4153-9033-4cd302458f7c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/66710f67-c094-4a4c-b718-4a031d1ddebe/lesson/ea9c96ec-aedc-4153-9033-4cd302458f7c)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/66710f67-c094-4a4c-b718-4a031d1ddebe/lesson/9a0afaa7-9937-49ec-aa31-6f2a03b6fab0" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/66710f67-c094-4a4c-b718-4a031d1ddebe/lesson/9a0afaa7-9937-49ec-aa31-6f2a03b6fab0)

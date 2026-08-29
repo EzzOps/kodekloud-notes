@@ -22,9 +22,7 @@ The process can be summarized as:
 * **Investigate**
 * **Respond**
 
-<Frame>
-  ![The image is an infographic about enabling Microsoft Sentinel, highlighting features like threat detection, risk mitigation, and response across infrastructures. It emphasizes a single-pane-of-glass approach and includes steps like collect, detect, investigate, and respond.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882058/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Sentinel/microsoft-sentinel-infographic-threat-detection.jpg)
-</Frame>
+![The image is an infographic about enabling Microsoft Sentinel, highlighting features like threat detection, risk mitigation, and response across infrastructures. It emphasizes a single-pane-of-glass approach and includes steps like collect, detect, investigate, and respond.](https://kodekloud.com/kk-media/image/upload/v1752882058/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Sentinel/microsoft-sentinel-infographic-threat-detection.jpg)
 
 ## How Microsoft Sentinel Works
 
@@ -37,9 +35,7 @@ Once you enable Sentinel, you can:
 * Investigate incidents
 * Respond using playbooks and automation
 
-<Callout icon="lightbulb">
-  To begin, you will need a Log Analytics workspace since all collected data is ingested into this workspace.
-</Callout>
+> **lightbulb** To begin, you will need a Log Analytics workspace since all collected data is ingested into this workspace.
 
 ## Setup Process: Enabling Microsoft Sentinel
 
@@ -51,9 +47,7 @@ For this implementation, a script is used to create:
 
 Before proceeding, review the resource group that includes the Log Analytics workspace along with the Linux and Windows machines distributed via the automation script.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface displaying details of a resource group named "rg-sentinel-20231012," including resources like a Log Analytics workspace and a virtual machine, all located in East US.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882059/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Sentinel/azure-portal-rg-sentinel-details.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface displaying details of a resource group named "rg-sentinel-20231012," including resources like a Log Analytics workspace and a virtual machine, all located in East US.](https://kodekloud.com/kk-media/image/upload/v1752882059/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Sentinel/azure-portal-rg-sentinel-details.jpg)
 
 ### Adding Microsoft Sentinel to Your Workspace
 
@@ -61,18 +55,12 @@ Before proceeding, review the resource group that includes the Log Analytics wor
 2. Click on "Create."
 3. When prompted, select a Log Analytics workspace. In this example, Microsoft Sentinel is added to a new workspace that currently does not have any agents or data.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for adding Microsoft Sentinel to a workspace, listing two workspaces named "law-monitoring" and "law-sentinel" located in "eastus."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882060/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Sentinel/azure-portal-add-sentinel-workspace.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for adding Microsoft Sentinel to a workspace, listing two workspaces named "law-monitoring" and "law-sentinel" located in "eastus."](https://kodekloud.com/kk-media/image/upload/v1752882060/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Enable-Azure-Sentinel/azure-portal-add-sentinel-workspace.jpg)
 
 4. Click on "Add" to integrate Microsoft Sentinel with your chosen workspace. This action completes the enablement process from the Sentinel side.
 
-<Callout icon="lightbulb">
-  The next phase is data collection. Once you configure data connections, you can import content from various sources to further secure your environment.
-</Callout>
+> **lightbulb** The next phase is data collection. Once you configure data connections, you can import content from various sources to further secure your environment.
 
 Now, proceed to the next topic: configuring data connections to Microsoft Sentinel, which will guide you through collecting and managing your security data effectively.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/fdf529c7-54c7-4550-a622-aec81172dcad/lesson/060d38c8-c278-4712-a603-85fef05ca263" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/fdf529c7-54c7-4550-a622-aec81172dcad/lesson/060d38c8-c278-4712-a603-85fef05ca263)

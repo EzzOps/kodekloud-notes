@@ -38,7 +38,7 @@ In the API Gateway console, follow these steps:
 2. Create a new usage plan (e.g., name it "premium").
 3. Define different models if required—for example, offering a free plan for general access and a premium plan for increased rate limits.
 
-![The image shows an AWS interface for creating a usage plan, with fields for name, description, throttling, rate, burst, and quota settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857840/notes-assets/images/AWS-Certified-Developer-Associate-API-Keys-Usage-Plans-Demo/aws-usage-plan-interface-settings.jpg)
+![The image shows an AWS interface for creating a usage plan, with fields for name, description, throttling, rate, burst, and quota settings.](https://kodekloud.com/kk-media/image/upload/v1752857840/notes-assets/images/AWS-Certified-Developer-Associate-API-Keys-Usage-Plans-Demo/aws-usage-plan-interface-settings.jpg)
 
 Within the usage plan, you can configure the following settings:
 
@@ -48,7 +48,7 @@ Within the usage plan, you can configure the following settings:
 
 After configuring these settings, create the usage plan.
 
-![The image shows an AWS API Gateway interface with a "premium" usage plan created, displaying details like request rate, burst, and quota. The interface includes options for managing APIs, custom domain names, and VPC links.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857841/notes-assets/images/AWS-Certified-Developer-Associate-API-Keys-Usage-Plans-Demo/aws-api-gateway-premium-plan.jpg)
+![The image shows an AWS API Gateway interface with a "premium" usage plan created, displaying details like request rate, burst, and quota. The interface includes options for managing APIs, custom domain names, and VPC links.](https://kodekloud.com/kk-media/image/upload/v1752857841/notes-assets/images/AWS-Certified-Developer-Associate-API-Keys-Usage-Plans-Demo/aws-api-gateway-premium-plan.jpg)
 
 ## Creating and Associating an API Key
 
@@ -58,7 +58,7 @@ Next, create an API key for your client by following these steps:
 2. Choose to auto-generate the key or customize it as per your requirements.
 3. Once the key is generated, view or copy its value.
 
-![The image shows an AWS console screen for creating an API key, with fields for entering the name and an optional description, and options to auto-generate or customize the key.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857842/notes-assets/images/AWS-Certified-Developer-Associate-API-Keys-Usage-Plans-Demo/aws-console-api-key-creation.jpg)
+![The image shows an AWS console screen for creating an API key, with fields for entering the name and an optional description, and options to auto-generate or customize the key.](https://kodekloud.com/kk-media/image/upload/v1752857842/notes-assets/images/AWS-Certified-Developer-Associate-API-Keys-Usage-Plans-Demo/aws-console-api-key-creation.jpg)
 
 After generating the API key, associate it with your created usage plan:
 
@@ -66,7 +66,7 @@ After generating the API key, associate it with your created usage plan:
 2. Click **Add to Usage Plan**.
 3. Select the "premium" usage plan previously created and save the changes.
 
-![The image shows an AWS API Gateway interface displaying details of an API key named "user1," including its ID, status, and creation date, with options to edit, delete, or add to a usage plan.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857843/notes-assets/images/AWS-Certified-Developer-Associate-API-Keys-Usage-Plans-Demo/aws-api-gateway-user1-key-details.jpg)
+![The image shows an AWS API Gateway interface displaying details of an API key named "user1," including its ID, status, and creation date, with options to edit, delete, or add to a usage plan.](https://kodekloud.com/kk-media/image/upload/v1752857843/notes-assets/images/AWS-Certified-Developer-Associate-API-Keys-Usage-Plans-Demo/aws-api-gateway-user1-key-details.jpg)
 
 After association, the API key becomes active. Ensure that you include a header in your API requests using `x-api-key` followed by the API key value.
 

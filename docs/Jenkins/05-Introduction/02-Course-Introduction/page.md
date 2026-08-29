@@ -21,18 +21,12 @@ Let's address some common challenges that many teams face today:
 
 Manual interventions, such as copying files and modifying configurations, frequently result in these issues.
 
-<Frame>
-  ![Challenges encountered by development teams, including slow releases, manual processes, and lack of automation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880070/notes-assets/images/Jenkins-Course-Introduction/frame_130.jpg)
-</Frame>
+![Challenges encountered by development teams, including slow releases, manual processes, and lack of automation.](https://kodekloud.com/kk-media/image/upload/v1752880070/notes-assets/images/Jenkins-Course-Introduction/frame_130.jpg)
 
 The solution is Jenkins. Jenkins streamlines the software development lifecycle by automating builds, tests, CI/CD pipelines, and deployments. It can be installed locally, eliminating dependency on SaaS platforms, and has a proven track record in the CI/CD space.
 
-<Frame>
-  ![Jenkins capabilities: automated builds, tests, pipelines, deployments, local installation, and plugin support.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880071/notes-assets/images/Jenkins-Course-Introduction/frame_160.jpg)
-</Frame>
+![Jenkins capabilities: automated builds, tests, pipelines, deployments, local installation, and plugin support.](https://kodekloud.com/kk-media/image/upload/v1752880071/notes-assets/images/Jenkins-Course-Introduction/frame_160.jpg)
 
 With these tools and techniques at your disposal, you're well on your way to becoming a Jenkins expert. Let's dive in and start building your mastery of Jenkins!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/5a828d07-ced8-44a3-8b8d-f2467f247360/lesson/6bd24ce6-701b-48b8-87af-5718de4ed290" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/5a828d07-ced8-44a3-8b8d-f2467f247360/lesson/6bd24ce6-701b-48b8-87af-5718de4ed290)

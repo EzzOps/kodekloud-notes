@@ -164,7 +164,7 @@ docker run --entrypoint sleep2.0 ubuntu-sleeper 10
 
 This command starts the container with `sleep2.0 10` (provided that `sleep2.0` is a valid command).
 
-![The image is a plain white background with no discernible objects or features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869660/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Commands-and-Arguments-in-Docker/frame_190.jpg)
+![The image is a plain white background with no discernible objects or features.](https://kodekloud.com/kk-media/image/upload/v1752869660/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Commands-and-Arguments-in-Docker/frame_190.jpg)
 
 ## Conclusion
 

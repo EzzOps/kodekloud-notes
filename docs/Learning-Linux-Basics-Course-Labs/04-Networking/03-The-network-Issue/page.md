@@ -63,12 +63,10 @@ Jackie smiles and replies:
 
 ***
 
-<Callout icon="lightbulb">
-  Jackie begins the troubleshooting session by summarizing the situation:\
+> **lightbulb** Jackie begins the troubleshooting session by summarizing the situation:\
   "You were trying to access the site using the URL `http://caleston-repos` and encountered the error: 'DNS probe finished NXDOMAIN'. This error indicates that your laptop, acting as a client, was unable to resolve the IP address for `caleston-repos`."
 
   She explains that the system relies on a DNS server to translate human-friendly domain names into IP addresses. In this case, the DNS server couldn’t find a matching record for the provided URL.
-</Callout>
 
 Jackie’s explanation emphasizes the importance of understanding DNS resolution when troubleshooting connectivity issues. By verifying that the URL is correct and ensuring the appropriate DNS records are in place, you can narrow down the cause of network problems.
 
@@ -84,6 +82,4 @@ For those interested in further reading on DNS and network troubleshooting, chec
 
 \[End of Article]
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/beae84be-64d2-41b6-b807-575f4107dfc9/lesson/44c2171e-8cc7-4b7f-8264-d736ec92d98b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/beae84be-64d2-41b6-b807-575f4107dfc9/lesson/44c2171e-8cc7-4b7f-8264-d736ec92d98b)

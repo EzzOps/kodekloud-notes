@@ -13,9 +13,7 @@ This guide walks through creating a namespaced `Database` CRD that:
 * Validates `engine` and `size` using enums.
 * Allows optional `version` and `storage` fields.
 
-<Callout icon="lightbulb">
-  Only one version entry in `spec.versions` may have `storage: true`. This version is used as the persisted storage version in etcd.
-</Callout>
+> **lightbulb** Only one version entry in `spec.versions` may have `storage: true`. This version is used as the persisted storage version in etcd.
 
 ## CRD structure — key fields and meaning
 
@@ -286,9 +284,7 @@ This confirms that:
 
 ## Troubleshooting tips
 
-<Callout icon="lightbulb">
-  If you don't see your CRD listed after applying, check the API server logs and `kubectl get crd` output. Also ensure `metadata.name` in the CRD follows the required `<plural>.<group>` naming convention and that `spec.versions[*].storage` is set on only one version.
-</Callout>
+> **lightbulb** If you don't see your CRD listed after applying, check the API server logs and `kubectl get crd` output. Also ensure `metadata.name` in the CRD follows the required `<plural>.<group>` naming convention and that `spec.versions[*].storage` is set on only one version.
 
 Common checks:
 
@@ -309,8 +305,6 @@ Further reading:
 * [Custom Resource Definitions (Kubernetes docs)](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/)
 * [apiextensions.k8s.io API reference](https://kubernetes.io/docs/reference/using-api/api-concepts/#custom-resources)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/c82aa899-a70b-43ff-b920-da6222c154c1" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/c82aa899-a70b-43ff-b920-da6222c154c1)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/57aa85b4-e21b-4311-8593-6489e31df10a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/756ffaae-767b-4743-9724-c05d3fbf9a18/lesson/57aa85b4-e21b-4311-8593-6489e31df10a)

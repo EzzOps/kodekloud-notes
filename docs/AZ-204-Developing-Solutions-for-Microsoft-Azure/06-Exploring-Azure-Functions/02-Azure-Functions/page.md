@@ -10,7 +10,7 @@ For example, Azure Functions can process real-time data from various origins, su
 
 When building RESTful APIs, you can quickly develop and expose endpoints that scale with demand. In microservice architectures, every function represents a self-contained, isolated piece of functionality.
 
-![The image is a diagram illustrating the uses of Azure Functions, including IoT, system integration, building APIs, data processing, and building microservices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866535/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions/azure-functions-uses-diagram.jpg)
+![The image is a diagram illustrating the uses of Azure Functions, including IoT, system integration, building APIs, data processing, and building microservices.](https://kodekloud.com/kk-media/image/upload/v1752866535/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions/azure-functions-uses-diagram.jpg)
 
 > **lightbulb** Azure Functions is ideal for tasks triggered by specific events such as HTTP requests, updates in Azure Blob Storage, or messages arriving in a queue. Its built-in integration with various Azure services simplifies designing event-based systems.
 
@@ -20,7 +20,7 @@ When discussing Azure Functions, it is essential to understand its three key com
 
 Triggers are events that cause a function to execute. For instance, an HTTP trigger runs a function upon receiving an HTTP request, while a timer trigger runs a function according to a scheduled interval.
 
-![The image is a diagram showing Azure Functions at the center, connected to various services like Event Grid, Cosmos DB, Twilio, and Storage options such as Queue and Blob.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866536/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions/azure-functions-diagram-services.jpg)
+![The image is a diagram showing Azure Functions at the center, connected to various services like Event Grid, Cosmos DB, Twilio, and Storage options such as Queue and Blob.](https://kodekloud.com/kk-media/image/upload/v1752866536/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions/azure-functions-diagram-services.jpg)
 
 ## Bindings
 
@@ -64,7 +64,7 @@ Both services can be managed via REST APIs and the Azure Portal. Logic Apps offe
 
 Developers can run Azure Functions locally or in the cloud, offering flexibility during development and testing. Although Logic Apps are designed for various environments, their deployment is more optimized for orchestrated workflows.
 
-![The image is a comparison chart between Azure Functions and Logic Apps, highlighting differences in development, connectivity, actions, monitoring, management, and execution context.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866537/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions/azure-functions-logic-apps-comparison.jpg)
+![The image is a comparison chart between Azure Functions and Logic Apps, highlighting differences in development, connectivity, actions, monitoring, management, and execution context.](https://kodekloud.com/kk-media/image/upload/v1752866537/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions/azure-functions-logic-apps-comparison.jpg)
 
 Each service has its strengths: Azure Functions is best suited for code-driven backend processing, while Logic Apps shines in orchestrating workflows and integrations with minimal coding effort.
 
@@ -90,7 +90,7 @@ Azure Functions follows a pay-per-use pricing model, making it cost-effective fo
 
 Azure Functions integrates effortlessly with Logic Apps to create powerful workflows triggered by events. While WebJobs can also be linked to workflows, they generally require more manual configuration to achieve the same integration.
 
-![The image compares Azure Functions and WebJobs, highlighting that Azure Functions supports features like a serverless app model, browser development, pay-per-use pricing, and seamless Logic Apps integration, whereas WebJobs do not.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866539/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions/azure-functions-vs-webjobs-comparison.jpg)
+![The image compares Azure Functions and WebJobs, highlighting that Azure Functions supports features like a serverless app model, browser development, pay-per-use pricing, and seamless Logic Apps integration, whereas WebJobs do not.](https://kodekloud.com/kk-media/image/upload/v1752866539/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Azure-Functions/azure-functions-vs-webjobs-comparison.jpg)
 
 Overall, Azure Functions is a more flexible and cost-efficient model for serverless tasks with deep integration into Azure services. In comparison, WebJobs are more suited for continuous execution tasks within an App Service environment.
 

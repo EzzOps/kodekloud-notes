@@ -24,9 +24,7 @@ Auto unseal removes the manual overhead of key-shares at startup by delegating m
 4. **Automatic Unseal**\
    No operator action is needed. As soon as Vault initializes, it retrieves and decrypts its master key via the KMS/HSM and completes the unseal process automatically.
 
-<Callout icon="lightbulb">
-  Auto unseal works with both open-source and Enterprise Vault. Since Vault 1.0, this feature is available in the open-source edition.
-</Callout>
+> **lightbulb** Auto unseal works with both open-source and Enterprise Vault. Since Vault 1.0, this feature is available in the open-source edition.
 
 ## Supported Auto Unseal Providers
 
@@ -66,9 +64,7 @@ ui       = true
 * **region**: The AWS region where your KMS key exists.
 * **kms\_key\_id**: The full ARN or key ID of the KMS key used to encrypt/decrypt the Vault master key.
 
-<Callout icon="triangle-alert">
-  Do not commit your `kms_key_id` (or any credentials) into source control. Use environment variables or a secrets management workflow to inject sensitive data.
-</Callout>
+> **triangle-alert** Do not commit your `kms_key_id` (or any credentials) into source control. Use environment variables or a secrets management workflow to inject sensitive data.
 
 You can swap out `"awskms"` for any of the other supported providers by updating the seal stanza accordingly.
 
@@ -80,6 +76,4 @@ You can swap out `"awskms"` for any of the other supported providers by updating
 * [Vault Google Cloud KMS Seal](https://www.vaultproject.io/docs/secrets/gcp#auto-unseal-using-gcp-kms)
 * [Vault PKCS#11 HSM Seal](https://www.vaultproject.io/docs/secrets/pkcs11#auto-unseal-using-pkcs11-hsm)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/67201222-6b28-441e-8e82-ac0313868e85" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/67201222-6b28-441e-8e82-ac0313868e85)

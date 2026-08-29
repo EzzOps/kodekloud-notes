@@ -49,11 +49,11 @@ You can verify outputs locally with a small console runner.
 
 In Azure DevOps, select **Azure Repos Git** as the source and point to the `SimpleConverter` repository:
 
-![The image shows a screenshot of an Azure DevOps repository interface, displaying a list of files and folders in the "SimpleConverter" project with details about recent commits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867756/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Integration-of-automated-tests-into-pipelines/azure-devops-simpleconverter-repo-screenshot.jpg)
+![The image shows a screenshot of an Azure DevOps repository interface, displaying a list of files and folders in the "SimpleConverter" project with details about recent commits.](https://kodekloud.com/kk-media/image/upload/v1752867756/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Integration-of-automated-tests-into-pipelines/azure-devops-simpleconverter-repo-screenshot.jpg)
 
 Choose the **.NET Desktop** template to match our class library:
 
-![The image shows an Azure DevOps interface for configuring a new pipeline, with options for different project types like ASP.NET, .NET Core, and Xamarin. The sidebar includes navigation links for various DevOps features such as Boards, Repos, and Pipelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867757/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Integration-of-automated-tests-into-pipelines/azure-devops-pipeline-configuration-interface.jpg)
+![The image shows an Azure DevOps interface for configuring a new pipeline, with options for different project types like ASP.NET, .NET Core, and Xamarin. The sidebar includes navigation links for various DevOps features such as Boards, Repos, and Pipelines.](https://kodekloud.com/kk-media/image/upload/v1752867757/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Integration-of-automated-tests-into-pipelines/azure-devops-pipeline-configuration-interface.jpg)
 
 Here’s the initial `azure-pipelines.yml` for CI:
 
@@ -90,7 +90,7 @@ steps:
 
 After committing, the pipeline runs successfully:
 
-![The image shows an Azure DevOps pipeline interface with a list of jobs and their statuses on the left, and detailed logs of the "VSBuild" job on the right. The pipeline appears to be running successfully with green check marks indicating completed steps.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867759/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Integration-of-automated-tests-into-pipelines/azure-devops-pipeline-jobs-logs.jpg)
+![The image shows an Azure DevOps pipeline interface with a list of jobs and their statuses on the left, and detailed logs of the "VSBuild" job on the right. The pipeline appears to be running successfully with green check marks indicating completed steps.](https://kodekloud.com/kk-media/image/upload/v1752867759/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Integration-of-automated-tests-into-pipelines/azure-devops-pipeline-jobs-logs.jpg)
 
 ### Pipeline Task Overview
 
@@ -172,7 +172,7 @@ The temperature is 30 degrees, or 4 degrees Fahrenheit
 
 When pushed, the VSTest step fails in Azure DevOps:
 
-![The image shows an Azure DevOps pipeline interface with a list of jobs on the left and detailed logs of a failed test on the right. The test failure is highlighted in red, indicating an error in the VS Test step.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867760/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Integration-of-automated-tests-into-pipelines/azure-devops-pipeline-failed-test-logs.jpg)
+![The image shows an Azure DevOps pipeline interface with a list of jobs on the left and detailed logs of a failed test on the right. The test failure is highlighted in red, indicating an error in the VS Test step.](https://kodekloud.com/kk-media/image/upload/v1752867760/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Integration-of-automated-tests-into-pipelines/azure-devops-pipeline-failed-test-logs.jpg)
 
 This enforcement blocks deployment until the logic error is fixed.
 

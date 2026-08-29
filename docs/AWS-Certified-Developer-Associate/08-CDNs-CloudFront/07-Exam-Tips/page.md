@@ -18,12 +18,12 @@ Cache behavior settings enable you to control which origin CloudFront should fet
 
 The cache key acts as an identifier for cached files and can be customized using various parameters such as host names, headers, query strings, resource paths, and cookies. With cache policies, you can fine-tune both the cache key parameters and the TTL for cached files, ensuring optimal cache performance.
 
-![The image provides tips for acing an exam, focusing on CloudFront configurations such as origin groups, cache behavior, and cache keys. It includes examples of how to set up primary and backup origins, and how cache keys identify cached files.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858489/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/exam-tips-cloudfront-configurations.jpg)
+![The image provides tips for acing an exam, focusing on CloudFront configurations such as origin groups, cache behavior, and cache keys. It includes examples of how to set up primary and backup origins, and how cache keys identify cached files.](https://kodekloud.com/kk-media/image/upload/v1752858489/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/exam-tips-cloudfront-configurations.jpg)
 
 All values included in the cache key are forwarded to the origin during an origin request. To include additional parameters in the origin request without affecting the cache key, you can use an origin request policy. This allows for a more granular control over the parameters sent to the origin.
 
 CloudFront signed URLs enable secure access restrictions to your content by serving private content through CloudFront distributions. Additionally, geographic restrictions can be configured to prevent certain regions from accessing designated content, enhancing your security posture.
 
-![The image provides tips for acing an exam, focusing on cache policies, origin request policies, and CloudFront signed URLs. It highlights customization, value inclusion, and secure content access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858490/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/exam-tips-cache-policies-cloudfront.jpg)
+![The image provides tips for acing an exam, focusing on cache policies, origin request policies, and CloudFront signed URLs. It highlights customization, value inclusion, and secure content access.](https://kodekloud.com/kk-media/image/upload/v1752858490/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/exam-tips-cache-policies-cloudfront.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/d25d5e41-6379-4261-9036-c1d8017dbdab/lesson/263e6097-9852-4cdb-9ea4-2b1ee33a2735)

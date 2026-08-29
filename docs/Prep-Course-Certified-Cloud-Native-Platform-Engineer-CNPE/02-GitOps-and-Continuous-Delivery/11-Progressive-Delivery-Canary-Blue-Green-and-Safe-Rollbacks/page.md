@@ -164,9 +164,7 @@ spec:
 
 With this configuration, Argo Rollouts will only advance the canary after the analysis passes. If the analysis fails, it can automatically abort and roll back or pause for manual review.
 
-<Callout icon="lightbulb">
-  [Argo Rollouts](https://argoproj.github.io/argo-rollouts/) requires its CRDs and controller to be installed in the cluster. It integrates with traffic control solutions (e.g., [Istio](https://istio.io), Gateway API (`https://gateway-api.sigs.k8s.io/`), and cloud load balancers) to implement traffic splitting, and pairs well with [Argo CD](https://learn.kodekloud.com/user/courses/gitops-with-argocd) for visualizing rollouts in the UI.
-</Callout>
+> **lightbulb** [Argo Rollouts](https://argoproj.github.io/argo-rollouts/) requires its CRDs and controller to be installed in the cluster. It integrates with traffic control solutions (e.g., [Istio](https://istio.io), Gateway API (`https://gateway-api.sigs.k8s.io/`), and cloud load balancers) to implement traffic splitting, and pairs well with [Argo CD](https://learn.kodekloud.com/user/courses/gitops-with-argocd) for visualizing rollouts in the UI.
 
 <Frame>
   <img alt="The image highlights key features of &#x22;Argo Rollouts,&#x22; including Canary and Blue-Green strategies, traffic management, analysis templates, and ArgoCD integration." />
@@ -209,6 +207,4 @@ Progressive delivery reduces blast radius by validating changes with real user t
 * Gateway API: [https://gateway-api.sigs.k8s.io/](https://gateway-api.sigs.k8s.io/)
 * Prometheus: [https://prometheus.io](https://prometheus.io)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/225de7cf-0ffe-47dc-a96f-cc5af3ffc44a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-certified-cloud-native-platform-engineer-cnpe/module/dff5382b-dbe7-4cac-bd2b-d5a47028945e/lesson/225de7cf-0ffe-47dc-a96f-cc5af3ffc44a)

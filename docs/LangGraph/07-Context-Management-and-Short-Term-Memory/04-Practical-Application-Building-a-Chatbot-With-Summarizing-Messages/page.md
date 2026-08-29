@@ -92,17 +92,11 @@ Over time, iterate on prompts and summarization cadence so summaries become both
   <img alt="The image presents two key takeaways: summarization nodes compress history without losing context, and they improve token efficiency and focus." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Trigger summarization at meaningful transition points (end of task cycles, before expensive reasoning, or when history size exceeds thresholds) to balance compute cost and context fidelity.
-</Callout>
+> **lightbulb** Trigger summarization at meaningful transition points (end of task cycles, before expensive reasoning, or when history size exceeds thresholds) to balance compute cost and context fidelity.
 
-<Callout icon="warning">
-  Always validate summaries periodically. Important facts can be lost in aggressive compression — monitor, log, and tune prompts accordingly.
-</Callout>
+> **warning** Always validate summaries periodically. Important facts can be lost in aggressive compression — monitor, log, and tune prompts accordingly.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/8c234f88-7163-4865-9489-a31a37eae7bc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/372c4db3-b58a-4c3e-9e5e-851e67d45b06/lesson/8c234f88-7163-4865-9489-a31a37eae7bc)
 
 
 # Practical Application Building a Chatbot With Summarizing Messages

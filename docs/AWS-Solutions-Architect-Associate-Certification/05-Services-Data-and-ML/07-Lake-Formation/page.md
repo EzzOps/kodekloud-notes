@@ -14,7 +14,7 @@ After ingestion, data is centrally stored in S3 in its native format (CSV, TSV, 
 
 The diagram below illustrates the key components of AWS Lake Formation, highlighting data ingestion, storage, and processing:
 
-![The image illustrates AWS Lake Formation, highlighting three components: Ingestion, Storage, and Processing, with corresponding icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865071/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lake-Formation/aws-lake-formation-components-diagram.jpg)
+![The image illustrates AWS Lake Formation, highlighting three components: Ingestion, Storage, and Processing, with corresponding icons.](https://kodekloud.com/kk-media/image/upload/v1752865071/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lake-Formation/aws-lake-formation-components-diagram.jpg)
 
 ## Data Processing
 
@@ -28,7 +28,7 @@ To summarize the process:
 
 The diagram below outlines the complete architecture, demonstrating how data flows from source systems to processing services:
 
-![The image is a diagram illustrating AWS Lake Formation, showing data sources like S3, RDS, and Redshift on the left, and services like Athena and AWS Glue on the right. It depicts the flow of data from sources to services through Lake Formation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865072/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lake-Formation/aws-lake-formation-diagram.jpg)
+![The image is a diagram illustrating AWS Lake Formation, showing data sources like S3, RDS, and Redshift on the left, and services like Athena and AWS Glue on the right. It depicts the flow of data from sources to services through Lake Formation.](https://kodekloud.com/kk-media/image/upload/v1752865072/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lake-Formation/aws-lake-formation-diagram.jpg)
 
 ## Integration with Other AWS Services
 
@@ -40,7 +40,7 @@ AWS Lake Formation integrates effortlessly with various AWS services, enabling c
 
 The following flowchart demonstrates how diverse data sources converge in Lake Formation before being analyzed by services such as Athena and Amazon QuickSight:
 
-![The image is a flowchart illustrating data sources like S3, RDS, Redshift, Aurora, DynamoDB, and Glue feeding into Lake Formation, which then connects to Athena and Amazon QuickSight for data analysis and visualization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865073/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lake-Formation/data-sources-flowchart-lake-formation.jpg)
+![The image is a flowchart illustrating data sources like S3, RDS, Redshift, Aurora, DynamoDB, and Glue feeding into Lake Formation, which then connects to Athena and Amazon QuickSight for data analysis and visualization.](https://kodekloud.com/kk-media/image/upload/v1752865073/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lake-Formation/data-sources-flowchart-lake-formation.jpg)
 
 ## Key Features of AWS Lake Formation
 
@@ -53,7 +53,7 @@ AWS Lake Formation simplifies the creation of a modern data lake by centralizing
 
 The diagram below summarizes the key features of Lake Formation:
 
-![The image lists four features: Simplified Data Lake Creation, Centralized Data Access Control, Data Cleaning, and Cross-Region Data Replication. Each feature is represented with an icon and a gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865074/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lake-Formation/data-lake-features-icons-gradient.jpg)
+![The image lists four features: Simplified Data Lake Creation, Centralized Data Access Control, Data Cleaning, and Cross-Region Data Replication. Each feature is represented with an icon and a gradient background.](https://kodekloud.com/kk-media/image/upload/v1752865074/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lake-Formation/data-lake-features-icons-gradient.jpg)
 
 ## Conclusion
 

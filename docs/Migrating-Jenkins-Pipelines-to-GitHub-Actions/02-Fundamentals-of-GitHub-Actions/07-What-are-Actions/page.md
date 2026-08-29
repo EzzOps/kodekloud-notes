@@ -19,9 +19,7 @@ Actions in the Marketplace fall into two broad categories:
 
 Always review an action’s source repository and the permissions it requests before adding it to production workflows—particularly any actions that will run against private repositories or that may receive secrets. Inspecting the action’s code helps prevent accidental leakage of secrets or sensitive data.
 
-<Callout icon="lightbulb">
-  Before adding an action, verify its source and the permissions it requires. This minimizes risk of secret exposure and unexpected side effects in your workflows.
-</Callout>
+> **lightbulb** Before adding an action, verify its source and the permissions it requires. This minimizes risk of secret exposure and unexpected side effects in your workflows.
 
 ## How to reference an action in your workflow
 
@@ -39,9 +37,7 @@ The differences are summarized below.
 | Branch         |        A branch name (e.g., `main`) | `actions/checkout@main`           | Always gets latest changes on branch              | Can introduce breaking changes unexpectedly                     |
 | Commit SHA     |               A specific commit SHA | `actions/checkout@a8240080857...` | Immutable and reproducible                        | Harder to track when to update                                  |
 
-<Callout icon="warning">
-  Referencing a branch (for example, `@main`) means the action may change without any changes to your workflow. This can introduce breaking behavior if the upstream branch receives incompatible updates.
-</Callout>
+> **warning** Referencing a branch (for example, `@main`) means the action may change without any changes to your workflow. This can introduce breaking behavior if the upstream branch receives incompatible updates.
 
 Examples of referencing an action in a workflow:
 

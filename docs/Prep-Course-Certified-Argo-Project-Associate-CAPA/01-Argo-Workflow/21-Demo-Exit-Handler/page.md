@@ -40,9 +40,7 @@ spec:
         fi
 ```
 
-<Callout icon="lightbulb">
-  Use `onExit` to centralize cleanup and notification logic. Inspect `{{workflow.status}}` to run conditional actions (for example, send alerts on Failure or perform extra validation on Succeeded).
-</Callout>
+> **lightbulb** Use `onExit` to centralize cleanup and notification logic. Inspect `{{workflow.status}}` to run conditional actions (for example, send alerts on Failure or perform extra validation on Succeeded).
 
 ## What each template does
 
@@ -77,9 +75,7 @@ Sending failure notification
 
 You can replace the `echo` commands with real integrations: Slack notifications, posting status to a webhook, cleaning up cloud resources, or triggering recovery workflows. When designing critical cleanup actions, make them idempotent so repeated runs are safe.
 
-<Callout icon="warning">
-  Although `onExit` executes in normal success and failure scenarios, extreme outages (for example: controller crashes, severe cluster failures, or lost persistence) may prevent the exit handler from running. For critical cleanup, combine `onExit` with idempotent design or external watchdog processes.
-</Callout>
+> **warning** Although `onExit` executes in normal success and failure scenarios, extreme outages (for example: controller crashes, severe cluster failures, or lost persistence) may prevent the exit handler from running. For critical cleanup, combine `onExit` with idempotent design or external watchdog processes.
 
 ## Practical tips
 
@@ -93,6 +89,4 @@ You can replace the `echo` commands with real integrations: Slack notifications,
 * Jenkins pipeline `post` directive: [https://www.jenkins.io/doc/book/pipeline/syntax/#post](https://www.jenkins.io/doc/book/pipeline/syntax/#post)
 * Example Slack incoming webhook: [https://api.slack.com/messaging/webhooks](https://api.slack.com/messaging/webhooks)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/e2ced3ee-781d-4448-8a60-7bb557fc0505" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/e2ced3ee-781d-4448-8a60-7bb557fc0505)

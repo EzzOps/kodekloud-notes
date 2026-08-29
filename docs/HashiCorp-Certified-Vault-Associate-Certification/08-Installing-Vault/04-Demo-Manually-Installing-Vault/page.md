@@ -11,9 +11,7 @@ Congratulations—you now have a reusable AMI with Vault 1.7.1 installed!
 * [Vault 1.7.1 Release Notes](https://github.com/hashicorp/vault/blob/v1.7.1/CHANGELOG.md)
 * [AWS EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/9177bf8a-b861-4f9d-8f44-a8f0ac536123" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/9177bf8a-b861-4f9d-8f44-a8f0ac536123)
 
 
 # Demo Manually Installing Vault
@@ -24,9 +22,7 @@ Learn to download and install the Vault binary on an AWS EC2 instance running Am
 
 In this lesson, you’ll learn how to download and install the Vault binary on an AWS EC2 instance running Amazon Linux 2. By following these steps, you’ll have Vault ready for development and testing in minutes.
 
-<Frame>
-  ![The image is a webpage from HashiCorp Vault, showcasing features for managing secrets and protecting sensitive data, with options to try the cloud or download the CLI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878162/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Manually-Installing-Vault/hashicorp-vault-managing-secrets-webpage.jpg)
-</Frame>
+![The image is a webpage from HashiCorp Vault, showcasing features for managing secrets and protecting sensitive data, with options to try the cloud or download the CLI.](https://kodekloud.com/kk-media/image/upload/v1752878162/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Manually-Installing-Vault/hashicorp-vault-managing-secrets-webpage.jpg)
 
 ## Download the Vault Binary
 
@@ -38,9 +34,7 @@ Head over to the Vault [download page](https://www.vaultproject.io/download) and
 
 Copy the link address for your selected build, or navigate directly to [releases.hashicorp.com](https://releases.hashicorp.com) for all available versions.
 
-<Frame>
-  ![The image is a webpage from HashiCorp Vault, showcasing features for managing secrets and protecting sensitive data, with options to try the cloud or download the CLI.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878163/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Manually-Installing-Vault/hashicorp-vault-managing-secrets-webpage-2.jpg)
-</Frame>
+![The image is a webpage from HashiCorp Vault, showcasing features for managing secrets and protecting sensitive data, with options to try the cloud or download the CLI.](https://kodekloud.com/kk-media/image/upload/v1752878163/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Manually-Installing-Vault/hashicorp-vault-managing-secrets-webpage-2.jpg)
 
 Here’s an example Vault policy to control access to your application secrets:
 
@@ -85,9 +79,7 @@ sudo yum -y install vault
 2. Copy the link for `vault_1.7.1_linux_amd64.zip`.
 3. On your EC2 instance, download it with `curl`.
 
-<Frame>
-  ![The image shows a webpage from releases.hashicorp.com, listing various software tools and projects such as "consul," "nomad," and "terraform."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878164/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Manually-Installing-Vault/hashicorp-releases-software-tools-list.jpg)
-</Frame>
+![The image shows a webpage from releases.hashicorp.com, listing various software tools and projects such as "consul," "nomad," and "terraform."](https://kodekloud.com/kk-media/image/upload/v1752878164/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Manually-Installing-Vault/hashicorp-releases-software-tools-list.jpg)
 
 A quick listing of Vault 1.7.1 assets:
 
@@ -164,9 +156,7 @@ vault_1.7.1_windows_amd64.zip
 
 ## Starting a Development Server
 
-<Callout icon="triangle-alert">
-  Development mode runs entirely in-memory, starts unsealed with a single unseal key, and is *not* suitable for production environments.
-</Callout>
+> **triangle-alert** Development mode runs entirely in-memory, starts unsealed with a single unseal key, and is *not* suitable for production environments.
 
 Launch Vault in dev mode:
 
@@ -178,13 +168,11 @@ Unseal Key: U+jhCm8lOUJNa5nb1QmQy9ScHjWlow5/T+GE=
 Root Token: zT5IvSJEfQzSzrctw8l6I081
 ```
 
-<Callout icon="lightbulb">
-  You may need to set the Vault address:
+> **lightbulb** You may need to set the Vault address:
 
   ```bash theme={null}
   export VAULT_ADDR='http://127.0.0.1:8200'
   ```
-</Callout>
 
 ***
 
@@ -195,6 +183,4 @@ That’s all it takes to manually install the Vault binary, place it in your `PA
 * [Vault Downloads](https://www.vaultproject.io/download)
 * [Releases · HashiCorp Vault](https://releases.hashicorp.com/vault/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/6114661f-4915-4e88-9f4d-ac8088a9399b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/a5a3d715-00ac-4573-aa63-061912aafce2/lesson/6114661f-4915-4e88-9f4d-ac8088a9399b)

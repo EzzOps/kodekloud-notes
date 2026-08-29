@@ -163,7 +163,7 @@ After starting the Flask server, test the `/upload` endpoint using tools like Po
 
 The diagram below illustrates a Postman interface with a GET request to the base URL and a browser displaying the welcome message.
 
-![The image shows a Postman interface with a GET request to "http://localhost:5000" and a browser window displaying "Welcome to My Flask App."](../../../../images/kodekloud.com/kk-media/image/upload/v1752857057/notes-assets/images/AI-Assisted-Development-Implementing-OpenCV/postman-get-request-flask-app.jpg)
+![The image shows a Postman interface with a GET request to "http://localhost:5000" and a browser window displaying "Welcome to My Flask App."](https://kodekloud.com/kk-media/image/upload/v1752857057/notes-assets/images/AI-Assisted-Development-Implementing-OpenCV/postman-get-request-flask-app.jpg)
 
 Upon a successful POST request, server logs will show a 200 response, and the processed image is saved locally.
 
@@ -214,7 +214,7 @@ curl -X POST -F "image=@/path/to/your/image.jpg" -F "quality=50" http://127.0.0.
 
 This Postman diagram below shows an example of a POST request being made. Ensure the request type is POST with form-data.
 
-![The image shows a code editor with Python code on the left and a Postman interface on the right, where a POST request to a local server is being made, resulting in a 404 error.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857058/notes-assets/images/AI-Assisted-Development-Implementing-OpenCV/postman-405-error-python-code.jpg)
+![The image shows a code editor with Python code on the left and a Postman interface on the right, where a POST request to a local server is being made, resulting in a 404 error.](https://kodekloud.com/kk-media/image/upload/v1752857058/notes-assets/images/AI-Assisted-Development-Implementing-OpenCV/postman-405-error-python-code.jpg)
 
 Make sure your requests use multipart/form-data and target the correct URL ([http://localhost:5000/upload](http://localhost:5000/upload)).
 

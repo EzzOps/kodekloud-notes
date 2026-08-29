@@ -3,12 +3,10 @@
 
 After you create the Application, Argo CD continuously compares the live cluster state against the Git-specified desired state and will deploy or reconcile resources according to the configured sync policy.
 
-<Callout icon="lightbulb">
-  An Argo CD Application has two primary parts:
+> **lightbulb** An Argo CD Application has two primary parts:
 
   * `source`: where the desired manifests live (Git repo, path, branch/tag, Helm chart, Kustomize or Jsonnet).
   * `destination`: the target Kubernetes API server and namespace where resources should be applied.
-</Callout>
 
 ## Example Application manifest
 
@@ -78,9 +76,7 @@ spec:
 
 For step-by-step tutorials and deeper examples, see the Argo CD documentation and community guides linked above.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/eb4ae0e2-b87a-4e9c-a480-63f94fa8f583" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/eb4ae0e2-b87a-4e9c-a480-63f94fa8f583)
 
 
 # ArgoCD Basics
@@ -91,9 +87,7 @@ Introduction to ArgoCD and GitOps explaining declarative continuous delivery for
 
 In this lesson we use ArgoCD to learn core GitOps terminology and practical features. The goal is to explain the essential ArgoCD concepts and workflows needed to implement GitOps-inspired continuous delivery for Kubernetes—not to exhaustively document every ArgoCD capability.
 
-<Callout icon="lightbulb">
-  This lesson focuses on the essential ArgoCD features needed to learn GitOps concepts and workflows.
-</Callout>
+> **lightbulb** This lesson focuses on the essential ArgoCD features needed to learn GitOps concepts and workflows.
 
 What is ArgoCD?
 
@@ -128,9 +122,7 @@ Supported manifest sources and when to use them
 | `Jsonnet`               |                Programmatic manifests for advanced customization | Good for large systems needing reusable logic — [https://jsonnet.org/](https://jsonnet.org/)                   |
 | `Other generators`      |                        Custom tooling or plugin-based generators | ArgoCD supports additional supported plugins and generators                                                    |
 
-<Callout icon="warning">
-  Some older tools (for example, `ksonnet`) are deprecated and no longer actively maintained. Prefer actively supported tools such as `Helm`, `Kustomize`, or `Jsonnet` for templating and generation.
-</Callout>
+> **warning** Some older tools (for example, `ksonnet`) are deprecated and no longer actively maintained. Prefer actively supported tools such as `Helm`, `Kustomize`, or `Jsonnet` for templating and generation.
 
 Sync strategies, diffs, and hooks
 
@@ -171,6 +163,4 @@ Further learning
 * Try deploying a simple app with ArgoCD using a Helm chart or plain YAML to see reconciliation and diff behavior.
 * Explore RBAC, SSO integration, and metrics/auditing for production-ready setups.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/e31b7279-e0c3-4eb9-8f23-2699ecaa351f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/09e1d9df-2018-4278-805d-983bcf7b23d2/lesson/e31b7279-e0c3-4eb9-8f23-2699ecaa351f)

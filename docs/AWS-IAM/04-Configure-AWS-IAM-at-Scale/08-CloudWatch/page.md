@@ -6,7 +6,7 @@ This article explains how to use AWS CloudWatch for monitoring, setting alarms, 
 
 AWS CloudWatch is the central observability service for collecting metrics, logs, and events from your AWS resources and applications. In this guide, you’ll learn how to set up a CPU utilization alarm for an EC2 instance, ensuring you receive notifications whenever usage crosses a critical threshold.
 
-![The image shows a CPU utilization graph with a red alarm threshold line at 75%, indicating that the CPU usage has exceeded this threshold multiple times, triggering an alarm.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862939/notes-assets/images/AWS-IAM-CloudWatch/cpu-utilization-graph-alarm-threshold.jpg)
+![The image shows a CPU utilization graph with a red alarm threshold line at 75%, indicating that the CPU usage has exceeded this threshold multiple times, triggering an alarm.](https://kodekloud.com/kk-media/image/upload/v1752862939/notes-assets/images/AWS-IAM-CloudWatch/cpu-utilization-graph-alarm-threshold.jpg)
 
 ## Why Use CloudWatch?
 
@@ -29,7 +29,7 @@ With CloudWatch, you can:
 | Dashboards   | Customizable visualizations combining metrics and logs in one view.  |
 | Events/Rules | Automated reactions to state changes or scheduled tasks across AWS.  |
 
-![The image explains AWS Cloudwatch, highlighting its use for monitoring and observability, setting up alarms for issues, and analyzing data through dashboards.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862940/notes-assets/images/AWS-IAM-CloudWatch/aws-cloudwatch-monitoring-alarms-dashboards.jpg)
+![The image explains AWS Cloudwatch, highlighting its use for monitoring and observability, setting up alarms for issues, and analyzing data through dashboards.](https://kodekloud.com/kk-media/image/upload/v1752862940/notes-assets/images/AWS-IAM-CloudWatch/aws-cloudwatch-monitoring-alarms-dashboards.jpg)
 
 ## Demo: Configure a High-CPU Alarm
 

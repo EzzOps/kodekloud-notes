@@ -103,9 +103,7 @@ Useful links and references
 
 You can run the commands shown above to confirm which ports your services are listening on and which ports are allowed by your firewall.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/0de43784-b08d-4ce0-8470-a7541b78fe58/lesson/4ff8592e-fd7b-4f7f-9a35-39994c529479" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/0de43784-b08d-4ce0-8470-a7541b78fe58/lesson/4ff8592e-fd7b-4f7f-9a35-39994c529479)
 
 
 # Install Config Introduction
@@ -141,9 +139,7 @@ Package managers automate installing, upgrading, configuring, and removing softw
 
 Use the package manager native to your OS for the smoothest installation and updates.
 
-<Callout icon="lightbulb">
-  When choosing where to run Nginx on Windows, prefer WSL (Windows Subsystem for Linux) for a Linux-like experience and easier parity with production Linux servers.
-</Callout>
+> **lightbulb** When choosing where to run Nginx on Windows, prefer WSL (Windows Subsystem for Linux) for a Linux-like experience and easier parity with production Linux servers.
 
 ***
 

@@ -28,7 +28,7 @@ Multiplexing enables multiple streams of related messages to be processed throug
 
 The Multiplexed Request/Reply pattern extends multiplexing by supporting multiple reply messages for each request within a stream. This pattern works well in complex workflows with multi-step interactions where each step may produce a distinct response.
 
-![The image describes four types of message routing and correlation: Simple Request/Reply, Multicast Request/Reply, Multiplexing, and Multiplexed Request/Reply, each with a brief explanation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866303/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Service-Bus-Message-Payloads-and-Serialization/message-routing-correlation-types.jpg)
+![The image describes four types of message routing and correlation: Simple Request/Reply, Multicast Request/Reply, Multiplexing, and Multiplexed Request/Reply, each with a brief explanation.](https://kodekloud.com/kk-media/image/upload/v1752866303/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Service-Bus-Message-Payloads-and-Serialization/message-routing-correlation-types.jpg)
 
 > **lightbulb** Understanding the different routing patterns helps you choose the best approach for your messaging needs, ensuring both efficiency and scalability in your system.
 
@@ -54,7 +54,7 @@ With the legacy SBMP protocol, objects are serialized using a binary serializer.
 
 AMQP, an industry-standard protocol, serializes objects into a byte stream ensuring interoperability with various messaging systems that support AMQP.
 
-![The image is an infographic titled "Payload Serialization," describing four aspects: Content Type Property, Service Bus API (.NET Framework), Serialization (SBMP Protocol), and Serialization (AMQP Protocol). Each section briefly explains its function in serialization processes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866305/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Service-Bus-Message-Payloads-and-Serialization/payload-serialization-infographic.jpg)
+![The image is an infographic titled "Payload Serialization," describing four aspects: Content Type Property, Service Bus API (.NET Framework), Serialization (SBMP Protocol), and Serialization (AMQP Protocol). Each section briefly explains its function in serialization processes.](https://kodekloud.com/kk-media/image/upload/v1752866305/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Service-Bus-Message-Payloads-and-Serialization/payload-serialization-infographic.jpg)
 
 > **lightbulb** Choosing the appropriate serialization method is crucial for ensuring that your messaging system is both efficient and robust. Evaluate your system's needs based on data complexity and interoperability requirements.
 
@@ -72,7 +72,7 @@ Follow these steps to create a Service Bus instance and explore sending and rece
    * **Namespace Name:** Choose a unique name (e.g., AZ204-SV-Hub09) to register under servicebus.windows.net.
    * **Tier:** Basic (suitable for simple messaging scenarios)
 
-![The image shows a configuration screen for creating a new namespace in a cloud service, with options for subscription, resource group, namespace name, location, and pricing tier. There is also a section for geo-replication settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866307/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Service-Bus-Message-Payloads-and-Serialization/cloud-service-namespace-configuration.jpg)
+![The image shows a configuration screen for creating a new namespace in a cloud service, with options for subscription, resource group, namespace name, location, and pricing tier. There is also a section for geo-replication settings.](https://kodekloud.com/kk-media/image/upload/v1752866307/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Service-Bus-Message-Payloads-and-Serialization/cloud-service-namespace-configuration.jpg)
 
 3. Navigate to the Advanced > Networking section and select public access (note that private endpoints require a higher tier).
 4. After validation, deploy the Service Bus.
@@ -84,7 +84,7 @@ Follow these steps to create a Service Bus instance and explore sending and rece
 
 After deploying your Service Bus instance, create a queue (e.g., Q01) for your messaging operations. The default settings such as queue size, maximum delivery count, dead lettering, and partitioning are generally sufficient for initial testing.
 
-![The image shows the Microsoft Azure portal interface for creating a Service Bus queue, with options to set the queue name, size, and other configurations. The left panel displays various Azure services and settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866308/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Service-Bus-Message-Payloads-and-Serialization/azure-portal-service-bus-queue.jpg)
+![The image shows the Microsoft Azure portal interface for creating a Service Bus queue, with options to set the queue name, size, and other configurations. The left panel displays various Azure services and settings.](https://kodekloud.com/kk-media/image/upload/v1752866308/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Exploring-Service-Bus-Message-Payloads-and-Serialization/azure-portal-service-bus-queue.jpg)
 
 Below is the code walkthrough for sending and receiving messages with the .NET SDK.
 

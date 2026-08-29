@@ -10,21 +10,21 @@ Welcome to this lesson on deploying ETCD in a high-availability (HA) configurati
 
 ETCD is a distributed, reliable key-value store that is both fast and secure. Unlike traditional databases that store data in tables, ETCD organizes data as documents or pages. Each document holds all necessary information about a specific entity and can be formatted in JSON, YAML, or other structures. Changing one document does not affect others, which makes ETCD an excellent choice for modern, scalable architectures.
 
-![The image lists objectives related to ETCD, including understanding key-value stores, distributed systems, RAFT protocol, and best practices for node numbers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869770/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-in-HA/frame_40.jpg)
+![The image lists objectives related to ETCD, including understanding key-value stores, distributed systems, RAFT protocol, and best practices for node numbers.](https://kodekloud.com/kk-media/image/upload/v1752869770/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-in-HA/frame_40.jpg)
 
 ## Distributed ETCD Clusters
 
 ETCD’s design is inherently distributed. Picture three different servers each running an identical instance of ETCD. This redundancy ensures that if one server (or node) fails, the remaining nodes continue to have an accurate copy of the data.
 
-![The image describes ETCD as a distributed, reliable key-value store that is simple, secure, and fast, with a blue paint splash background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869771/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-in-HA/frame_100.jpg)
+![The image describes ETCD as a distributed, reliable key-value store that is simple, secure, and fast, with a blue paint splash background.](https://kodekloud.com/kk-media/image/upload/v1752869771/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-in-HA/frame_100.jpg)
 
 ETCD supports both read and write operations on any node. However, write operations require careful coordination. While clients might send write requests to any node, only the leader node processes these writes. If a write request lands on a follower, it is forwarded to the leader. The write operation is only confirmed after the leader gets an acknowledgement from a majority of the nodes.
 
-![The image illustrates a consistent data system with three servers, each labeled "2379," supporting read/write operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869771/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-in-HA/frame_140.jpg)
+![The image illustrates a consistent data system with three servers, each labeled "2379," supporting read/write operations.](https://kodekloud.com/kk-media/image/upload/v1752869771/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-in-HA/frame_140.jpg)
 
 Read operations are simpler since every node contains the same data. Despite this, write operations necessitate a leader election through the Raft consensus protocol.
 
-![The image shows three server icons labeled "2379," each with an upward arrow labeled "READ," indicating data reading operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869772/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-in-HA/frame_150.jpg)
+![The image shows three server icons labeled "2379," each with an upward arrow labeled "READ," indicating data reading operations.](https://kodekloud.com/kk-media/image/upload/v1752869772/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-in-HA/frame_150.jpg)
 
 ## The Raft Consensus Protocol
 
@@ -32,7 +32,7 @@ Raft plays a crucial role in ensuring data consistency within an ETCD cluster. W
 
 If the leader fails or experiences network issues, the remaining nodes automatically trigger a new election to establish a new leader. This robust process guarantees that all write requests are processed correctly and that every node's data remains synchronized.
 
-![The image illustrates the RAFT consensus algorithm's leader election process, showing a leader and followers with thumbs-up icons indicating votes or agreement.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869773/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-in-HA/frame_270.jpg)
+![The image illustrates the RAFT consensus algorithm's leader election process, showing a leader and followers with thumbs-up icons indicating votes or agreement.](https://kodekloud.com/kk-media/image/upload/v1752869773/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-in-HA/frame_270.jpg)
 
 ## Quorum and Fault Tolerance
 
@@ -44,7 +44,7 @@ This means a three-node cluster requires a quorum of 2, a five-node cluster requ
 
 Consider a six-node cluster: if a network partition results in subgroups of four and two, the larger group meets quorum and continues operation. However, if the split creates two groups of three, neither side meets the quorum of four nodes. In contrast, a seven-node cluster might split into groups of four and three, allowing the larger group to maintain functionality. For these reasons, odd node counts (e.g., three, five, seven) are strongly recommended for a robust HA cluster.
 
-![The image shows a table of instances, quorum, and fault tolerance, alongside a diagram of nodes with ETCD, API Server, Controller Manager, and Scheduler components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869774/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-in-HA/frame_690.jpg)
+![The image shows a table of instances, quorum, and fault tolerance, alongside a diagram of nodes with ETCD, API Server, Controller Manager, and Scheduler components.](https://kodekloud.com/kk-media/image/upload/v1752869774/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-in-HA/frame_690.jpg)
 
 ## Installing and Configuring ETCD
 
@@ -118,7 +118,7 @@ john
 
 For a highly available environment, a minimum cluster size of three nodes is required. Deploying only one or two nodes is insufficient as it compromises the quorum—if one node fails, the cluster will not have enough nodes to operate. While a three-node cluster provides basic fault tolerance, a five-node cluster typically offers enhanced resilience without unnecessary complexity.
 
-![The image depicts a network design diagram featuring a load balancer, ETCD master nodes, and worker nodes, with logos for Kubernetes and Weaveworks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869776/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-in-HA/frame_740.jpg)
+![The image depicts a network design diagram featuring a load balancer, ETCD master nodes, and worker nodes, with logos for Kubernetes and Weaveworks.](https://kodekloud.com/kk-media/image/upload/v1752869776/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-ETCD-in-HA/frame_740.jpg)
 
 > **triangle-alert** Deploying fewer than three nodes in production may lead to a split-brain scenario during network partitions, severely impacting cluster functionality.
 

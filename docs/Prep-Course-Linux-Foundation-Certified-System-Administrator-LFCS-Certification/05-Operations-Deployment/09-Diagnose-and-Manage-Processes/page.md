@@ -132,9 +132,7 @@ jeremy@kodekloud:~$ renice 7 12238
 jeremy@kodekloud:~$
 ```
 
-<Callout icon="lightbulb">
-  Only superusers can lower the nice value (i.e., increase priority) of a process. Regular users can only increase the niceness value.
-</Callout>
+> **lightbulb** Only superusers can lower the nice value (i.e., increase priority) of a process. Regular users can only increase the niceness value.
 
 ## Sending Signals to Processes
 
@@ -186,9 +184,7 @@ If the list is correct, use:
 jeremy@kodekloud:~$ pkill -KILL bash
 ```
 
-<Callout icon="triangle-alert">
-  Be very careful when terminating processes with signals such as SIGKILL. Stopping critical processes may lead to system instability or disconnect you from your session.
-</Callout>
+> **triangle-alert** Be very careful when terminating processes with signals such as SIGKILL. Stopping critical processes may lead to system instability or disconnect you from your session.
 
 ## Managing Background and Foreground Processes
 
@@ -261,6 +257,4 @@ For more in-depth knowledge, explore additional resources such as:
 * [Linux Process Management](https://www.kernel.org/doc/html/latest/admin-guide/processes.html)
 * [Linux Signal Documentation](https://man7.org/linux/man-pages/man7/signal.7.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/27b96e7e-fd3b-4b86-b622-8b1014ac0b0a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/27b96e7e-fd3b-4b86-b622-8b1014ac0b0a)

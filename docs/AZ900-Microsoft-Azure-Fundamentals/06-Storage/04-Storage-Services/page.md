@@ -26,7 +26,7 @@ Azure Files offers managed file shares that work seamlessly in both cloud and on
 
 Azure Table Storage is a NoSQL data store designed for rapid development and scalable applications. It excels at storing semi-structured data such as user profiles and configuration settings, offering a flexible and efficient solution for many data scenarios.
 
-![The image lists five Azure storage services: Azure Blob, Azure Disk, Azure Queue, Azure Files, and Azure Tables, each with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868535/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Storage-Services/azure-storage-services-list.jpg)
+![The image lists five Azure storage services: Azure Blob, Azure Disk, Azure Queue, Azure Files, and Azure Tables, each with an icon.](https://kodekloud.com/kk-media/image/upload/v1752868535/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Storage-Services/azure-storage-services-list.jpg)
 
 ## Global Accessibility and Endpoints
 
@@ -46,7 +46,7 @@ HTTPS://{storage_account_name}.queue.core.windows.net
 
 Notice how the service name is embedded in the URL, clearly indicating the type of storage being accessed.
 
-![The image is a table listing different storage services and their corresponding endpoints, including Blob Storage, Azure Files, Queue Storage, and Table Storage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868536/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Storage-Services/storage-services-endpoints-table.jpg)
+![The image is a table listing different storage services and their corresponding endpoints, including Blob Storage, Azure Files, Queue Storage, and Table Storage.](https://kodekloud.com/kk-media/image/upload/v1752868536/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Storage-Services/storage-services-endpoints-table.jpg)
 
 ## Demonstration Preview
 

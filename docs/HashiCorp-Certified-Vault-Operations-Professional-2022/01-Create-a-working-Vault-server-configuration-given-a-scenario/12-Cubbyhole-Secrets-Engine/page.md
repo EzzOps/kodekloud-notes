@@ -6,19 +6,13 @@ Vault’s Cubbyhole Secrets Engine provides isolated storage for secrets, ensuri
 
 Vault’s **Cubbyhole Secrets Engine** offers isolated, per-token storage for secrets. Just like kindergarten cubbies, each token gets its own private compartment: when the token is revoked or expires, its cubbyhole and all its contents are destroyed. No other token—even the root token—can access another token’s cubbyhole.
 
-<Callout icon="lightbulb">
-  The Cubbyhole engine is automatically enabled at the `cubbyhole/` path. It cannot be disabled, relocated, or instantiated multiple times.
-</Callout>
+> **lightbulb** The Cubbyhole engine is automatically enabled at the `cubbyhole/` path. It cannot be disabled, relocated, or instantiated multiple times.
 
-<Frame>
-  ![The image is an introduction slide about the Cubbyhole Secrets Engine, explaining its default settings, token linkage, and restrictions on disabling or moving it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878397/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Cubbyhole-Secrets-Engine/cubbyhole-secrets-engine-introduction-slide.jpg)
-</Frame>
+![The image is an introduction slide about the Cubbyhole Secrets Engine, explaining its default settings, token linkage, and restrictions on disabling or moving it.](https://kodekloud.com/kk-media/image/upload/v1752878397/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Cubbyhole-Secrets-Engine/cubbyhole-secrets-engine-introduction-slide.jpg)
 
 Imagine each basket below represents a token’s private cubbyhole. When the token’s TTL ends or it’s revoked, its basket—and everything inside—vanishes.
 
-<Frame>
-  ![The image illustrates the concept of service tokens having individual cubbyholes, with each token stored separately and inaccessible to others, and notes that cubbyholes expire with the tokens.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878399/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Cubbyhole-Secrets-Engine/service-tokens-cubbyholes-expiration-illustration.jpg)
-</Frame>
+![The image illustrates the concept of service tokens having individual cubbyholes, with each token stored separately and inaccessible to others, and notes that cubbyholes expire with the tokens.](https://kodekloud.com/kk-media/image/upload/v1752878399/notes-assets/images/HashiCorp-Certified-Vault-Operations-Professional-2022-Cubbyhole-Secrets-Engine/service-tokens-cubbyholes-expiration-illustration.jpg)
 
 ## Viewing and Using Cubbyhole
 

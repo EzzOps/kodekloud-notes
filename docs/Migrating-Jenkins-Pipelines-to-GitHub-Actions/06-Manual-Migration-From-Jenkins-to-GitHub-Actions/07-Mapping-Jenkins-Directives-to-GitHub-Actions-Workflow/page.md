@@ -20,11 +20,9 @@ Helpful links and references:
 * [GitHub Actions documentation](https://docs.github.com/actions)
 * [Jenkins Documentation](https://www.jenkins.io/doc/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/f63e67f3-f04a-474f-87b9-ae17930e9e67/lesson/3be5d1db-20c1-42b7-b5d4-3871c9ee6cce" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/f63e67f3-f04a-474f-87b9-ae17930e9e67/lesson/3be5d1db-20c1-42b7-b5d4-3871c9ee6cce)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/f63e67f3-f04a-474f-87b9-ae17930e9e67/lesson/6f836c2d-51cf-4f11-9617-3ae359c59646" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/f63e67f3-f04a-474f-87b9-ae17930e9e67/lesson/6f836c2d-51cf-4f11-9617-3ae359c59646)
 
 
 # Mapping Jenkins Directives to GitHub Actions Workflow
@@ -107,9 +105,7 @@ jobs:
         run: npm test
 ```
 
-<Callout icon="lightbulb">
-  Jenkins stages are often sequential by default. In GitHub Actions, implement sequential phases by introducing job dependencies (using `needs`), or keep multiple sequential steps inside one `job`.
-</Callout>
+> **lightbulb** Jenkins stages are often sequential by default. In GitHub Actions, implement sequential phases by introducing job dependencies (using `needs`), or keep multiple sequential steps inside one `job`.
 
 2. Agents, runners, and containers
 
@@ -220,9 +216,7 @@ jobs:
           # Use $DB_PASS securely in commands that accept stdin or env vars
 ```
 
-<Callout icon="warning">
-  Never print secrets to logs. In GitHub Actions, reference secrets using `${{ secrets.YOUR_SECRET }}` and avoid echoing them. Masked secrets are protected, but logging them exposes risk.
-</Callout>
+> **warning** Never print secrets to logs. In GitHub Actions, reference secrets using `${{ secrets.YOUR_SECRET }}` and avoid echoing them. Masked secrets are protected, but logging them exposes risk.
 
 5. Conditional execution
 
@@ -360,6 +354,4 @@ Further reading
 * GitHub Actions concepts: [https://docs.github.com/actions/learn-github-actions/introduction-to-github-actions](https://docs.github.com/actions/learn-github-actions/introduction-to-github-actions)
 * Jenkins Pipeline Syntax: [https://www.jenkins.io/doc/book/pipeline/syntax/](https://www.jenkins.io/doc/book/pipeline/syntax/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/f63e67f3-f04a-474f-87b9-ae17930e9e67/lesson/eb16110d-f902-4456-ab36-52281732b0ba" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/f63e67f3-f04a-474f-87b9-ae17930e9e67/lesson/eb16110d-f902-4456-ab36-52281732b0ba)

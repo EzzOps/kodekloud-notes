@@ -6,9 +6,7 @@ This article explores how traits in Rust define shared behavior across types, en
 
 In this article, we explore how traits in Rust allow you to define shared behavior across different types. Think of a trait as a contract: when a type implements a trait, it promises to provide the behaviors defined by that trait. This is similar to interfaces in languages like Java or C#, but with a unique Rust twist.
 
-<Frame>
-  ![The image is an introduction to traits, explaining that they define shared behavior across types, act like contracts, promise certain behaviors when implemented, and enable polymorphism.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883785/notes-assets/images/Rust-Programming-Traits-Shared-Behavior/introduction-to-traits-polymorphism.jpg)
-</Frame>
+![The image is an introduction to traits, explaining that they define shared behavior across types, act like contracts, promise certain behaviors when implemented, and enable polymorphism.](https://kodekloud.com/kk-media/image/upload/v1752883785/notes-assets/images/Rust-Programming-Traits-Shared-Behavior/introduction-to-traits-polymorphism.jpg)
 
 Traits are crucial for writing reusable and flexible code since they let you define methods common to various types, thereby enabling polymorphism—a key feature in many programming languages.
 
@@ -19,9 +17,7 @@ Traits offer several benefits:
 * **Code Reusability:** Define a set of methods once, and then implement them for various types. This reduces redundancy and makes code maintenance easier.
 * **Polymorphism:** Write functions that operate on any type meeting a specific trait requirement, making your code adaptable and extensible.
 
-<Frame>
-  ![The image explains the benefits of using traits in programming, highlighting "Code Reusability" and "Polymorphism" with brief descriptions for each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883786/notes-assets/images/Rust-Programming-Traits-Shared-Behavior/traits-benefits-code-reusability-polymorphism.jpg)
-</Frame>
+![The image explains the benefits of using traits in programming, highlighting "Code Reusability" and "Polymorphism" with brief descriptions for each.](https://kodekloud.com/kk-media/image/upload/v1752883786/notes-assets/images/Rust-Programming-Traits-Shared-Behavior/traits-benefits-code-reusability-polymorphism.jpg)
 
 ## A Simple Example: The Sendable Trait
 
@@ -89,9 +85,7 @@ Sending email to alice@example.com: Meeting Reminder
 Sending SMS to +1234567890: Your OTP is 123456.
 ```
 
-<Callout icon="lightbulb">
-  The `Sendable` trait acts as a contract ensuring that both `Email` and `SMS` provide a `send` method even though their implementations differ.
-</Callout>
+> **lightbulb** The `Sendable` trait acts as a contract ensuring that both `Email` and `SMS` provide a `send` method even though their implementations differ.
 
 ## Using Traits as Function Parameters
 
@@ -195,9 +189,7 @@ Running this code outputs:
 Sending a message...
 ```
 
-<Callout icon="lightbulb">
-  Default implementations are useful when a specific behavior is not required for a type, yet the type benefits from implementing the trait.
-</Callout>
+> **lightbulb** Default implementations are useful when a specific behavior is not required for a type, yet the type benefits from implementing the trait.
 
 ## Using Trait Bounds with Generics
 
@@ -239,9 +231,7 @@ fn main() {
 
 Here, the trait bound `T: Sendable` guarantees that the generic type `T` implements `Sendable`. This makes the `log_message` function both flexible and type-safe.
 
-<Frame>
-  ![The image is a slide titled "Trait Bounds and Generics," explaining that a generic type must implement a trait and that generics make functions flexible and type-safe.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883787/notes-assets/images/Rust-Programming-Traits-Shared-Behavior/trait-bounds-generics-slide.jpg)
-</Frame>
+![The image is a slide titled "Trait Bounds and Generics," explaining that a generic type must implement a trait and that generics make functions flexible and type-safe.](https://kodekloud.com/kk-media/image/upload/v1752883787/notes-assets/images/Rust-Programming-Traits-Shared-Behavior/trait-bounds-generics-slide.jpg)
 
 ## Summary
 
@@ -252,12 +242,8 @@ Traits in Rust empower developers to define shared behavior with clear contracts
 3. **Default Implementations:** Traits can provide a default behavior that can be overridden by specific types.
 4. **Generics and Trait Bounds:** Traits with generics offer flexibility while maintaining type safety.
 
-<Frame>
-  ![The image is a summary of key points about traits in programming, highlighting shared behavior, implementation, polymorphism, default methods, and generics. It is visually organized with numbered points and a gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883788/notes-assets/images/Rust-Programming-Traits-Shared-Behavior/programming-traits-summary-gradient.jpg)
-</Frame>
+![The image is a summary of key points about traits in programming, highlighting shared behavior, implementation, polymorphism, default methods, and generics. It is visually organized with numbered points and a gradient background.](https://kodekloud.com/kk-media/image/upload/v1752883788/notes-assets/images/Rust-Programming-Traits-Shared-Behavior/programming-traits-summary-gradient.jpg)
 
 By leveraging traits, you can build modular, reusable, and extensible programs in Rust that enforce clear contracts and ensure robust type safety.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/37d4032f-c90d-43ee-a0cd-981b95ab22b0/lesson/2954d325-ac20-4645-b8c3-0aa70b77f30a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/37d4032f-c90d-43ee-a0cd-981b95ab22b0/lesson/2954d325-ac20-4645-b8c3-0aa70b77f30a)

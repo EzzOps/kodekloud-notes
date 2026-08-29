@@ -12,15 +12,11 @@ In this guide, you'll learn how to create a simple Pipeline Job in Jenkins. Foll
 
 Begin by opening the Jenkins UI and clicking on **New Item**. Select the **Pipeline** option and assign a name to your job (for example, "Hello World Pipeline"). Finally, click **OK**.
 
-<Frame>
-  ![The image shows a Jenkins interface where a new item is being created, with the name "hello-world-pipeline" and the "Pipeline" item type selected. Various project types like Freestyle, Multi-configuration, and Folder are also listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879518/notes-assets/images/Jenkins-For-Beginners-Simple-Pipeline-Job/jenkins-hello-world-pipeline-creation.jpg)
-</Frame>
+![The image shows a Jenkins interface where a new item is being created, with the name "hello-world-pipeline" and the "Pipeline" item type selected. Various project types like Freestyle, Multi-configuration, and Folder are also listed.](https://kodekloud.com/kk-media/image/upload/v1752879518/notes-assets/images/Jenkins-For-Beginners-Simple-Pipeline-Job/jenkins-hello-world-pipeline-creation.jpg)
 
 On the job configuration page, you'll encounter several sections including **General**, **Advanced**, **Project Options**, and **Pipeline**. Here, you can add a description and configure project-specific options. One useful configuration is preventing the pipeline from resuming after a controller restart—a feature that was previously discussed with Freestyle Projects.
 
-<Frame>
-  ![The image shows a configuration page for a pipeline project, likely in a CI/CD tool, with various options like discarding old builds, GitHub project integration, and build triggers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879519/notes-assets/images/Jenkins-For-Beginners-Simple-Pipeline-Job/pipeline-project-configuration-ci-cd.jpg)
-</Frame>
+![The image shows a configuration page for a pipeline project, likely in a CI/CD tool, with various options like discarding old builds, GitHub project integration, and build triggers.](https://kodekloud.com/kk-media/image/upload/v1752879519/notes-assets/images/Jenkins-For-Beginners-Simple-Pipeline-Job/pipeline-project-configuration-ci-cd.jpg)
 
 ***
 
@@ -56,13 +52,9 @@ Within this script:
 
 After configuring the pipeline, click **Build Now**. When the build starts, you'll see a visual representation of the pipeline execution. Clicking on the "Hello" stage displays the console logs, where you can observe the "Hello World" output. The raw logs can also be reviewed by clicking on the success icon.
 
-<Frame>
-  ![The image shows a Jenkins dashboard for a "hello-world-pipeline" with build status and history details. It includes options for configuring and managing the pipeline.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879520/notes-assets/images/Jenkins-For-Beginners-Simple-Pipeline-Job/jenkins-dashboard-hello-world-pipeline.jpg)
-</Frame>
+![The image shows a Jenkins dashboard for a "hello-world-pipeline" with build status and history details. It includes options for configuring and managing the pipeline.](https://kodekloud.com/kk-media/image/upload/v1752879520/notes-assets/images/Jenkins-For-Beginners-Simple-Pipeline-Job/jenkins-dashboard-hello-world-pipeline.jpg)
 
-<Frame>
-  ![The image shows a Jenkins pipeline console with a successful build labeled "Build #1" for a "hello-world-pipeline." The stage "Hello" completed successfully, displaying a "Hello World" message.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879521/notes-assets/images/Jenkins-For-Beginners-Simple-Pipeline-Job/jenkins-pipeline-build-hello-world.jpg)
-</Frame>
+![The image shows a Jenkins pipeline console with a successful build labeled "Build #1" for a "hello-world-pipeline." The stage "Hello" completed successfully, displaying a "Hello World" message.](https://kodekloud.com/kk-media/image/upload/v1752879521/notes-assets/images/Jenkins-For-Beginners-Simple-Pipeline-Job/jenkins-pipeline-build-hello-world.jpg)
 
 Additionally, the build log provides detailed execution output similar to the example below:
 
@@ -86,13 +78,9 @@ Finished: SUCCESS
 
 This log includes the execution timings, the pipeline overview, and the individual step logs. The interface also supports restarting from a specific stage or replaying the pipeline if necessary.
 
-<Frame>
-  ![The image shows a Jenkins build interface for "hello-world-pipeline," displaying build #1 with details such as the start time, duration, and user who initiated it. The build status is successful, and various options like console output and pipeline overview are available.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879522/notes-assets/images/Jenkins-For-Beginners-Simple-Pipeline-Job/jenkins-hello-world-pipeline-build1.jpg)
-</Frame>
+![The image shows a Jenkins build interface for "hello-world-pipeline," displaying build #1 with details such as the start time, duration, and user who initiated it. The build status is successful, and various options like console output and pipeline overview are available.](https://kodekloud.com/kk-media/image/upload/v1752879522/notes-assets/images/Jenkins-For-Beginners-Simple-Pipeline-Job/jenkins-hello-world-pipeline-build1.jpg)
 
-<Frame>
-  ![The image shows a Jenkins pipeline interface displaying the steps of a "hello-world-pipeline" with their execution times and statuses. Each step, such as "node" and "stage," is marked as successful.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879523/notes-assets/images/Jenkins-For-Beginners-Simple-Pipeline-Job/jenkins-hello-world-pipeline-interface.jpg)
-</Frame>
+![The image shows a Jenkins pipeline interface displaying the steps of a "hello-world-pipeline" with their execution times and statuses. Each step, such as "node" and "stage," is marked as successful.](https://kodekloud.com/kk-media/image/upload/v1752879523/notes-assets/images/Jenkins-For-Beginners-Simple-Pipeline-Job/jenkins-hello-world-pipeline-interface.jpg)
 
 ***
 
@@ -159,13 +147,9 @@ To resolve this Maven configuration issue, follow these steps:
 
 If you have Maven installed on your node, provide its installation path. Otherwise, you can configure Jenkins to automatically install Maven from Apache. For example, set up Maven version 3.9.8 and assign it a unique name such as **M398**—this naming makes it clear which version is in use.
 
-<Frame>
-  ![The image shows the "Manage Jenkins" dashboard, displaying various configuration options like System, Tools, Plugins, and Security settings. It includes a warning about security issues related to building on the built-in node.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879525/notes-assets/images/Jenkins-For-Beginners-Simple-Pipeline-Job/manage-jenkins-dashboard-settings.jpg)
-</Frame>
+![The image shows the "Manage Jenkins" dashboard, displaying various configuration options like System, Tools, Plugins, and Security settings. It includes a warning about security issues related to building on the built-in node.](https://kodekloud.com/kk-media/image/upload/v1752879525/notes-assets/images/Jenkins-For-Beginners-Simple-Pipeline-Job/manage-jenkins-dashboard-settings.jpg)
 
-<Frame>
-  ![The image shows a Jenkins configuration page for managing Maven installations, with options to install specific versions automatically.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879526/notes-assets/images/Jenkins-For-Beginners-Simple-Pipeline-Job/jenkins-maven-installation-config.jpg)
-</Frame>
+![The image shows a Jenkins configuration page for managing Maven installations, with options to install specific versions automatically.](https://kodekloud.com/kk-media/image/upload/v1752879526/notes-assets/images/Jenkins-For-Beginners-Simple-Pipeline-Job/jenkins-maven-installation-config.jpg)
 
 After configuring Maven, go back to your pipeline configuration and update the `tools` section to reference the newly named installation:
 
@@ -206,9 +190,7 @@ Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "6.8.0-39-generic", arch: "amd64", family: "unix"
 ```
 
-<Frame>
-  ![The image shows a Jenkins dashboard displaying the status of a "hello-world-pipeline" with a visual representation of pipeline stages and build history.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879527/notes-assets/images/Jenkins-For-Beginners-Simple-Pipeline-Job/jenkins-dashboard-hello-world-pipeline-2.jpg)
-</Frame>
+![The image shows a Jenkins dashboard displaying the status of a "hello-world-pipeline" with a visual representation of pipeline stages and build history.](https://kodekloud.com/kk-media/image/upload/v1752879527/notes-assets/images/Jenkins-For-Beginners-Simple-Pipeline-Job/jenkins-dashboard-hello-world-pipeline-2.jpg)
 
 This confirms that Maven has been correctly configured in Jenkins and the pipeline is executing using the Groovy sandbox.
 
@@ -218,12 +200,8 @@ This confirms that Maven has been correctly configured in Jenkins and the pipeli
 
 In this article, we demonstrated how to create a simple Pipeline Job in Jenkins, from setting up a basic "Hello World" pipeline to extending it with GitHub integration and Maven build steps. We also addressed Maven configuration issues and provided steps to resolve them, ensuring smooth pipeline execution.
 
-<Callout icon="lightbulb">
-  For further insights, explore other Jenkins documentation such as the [Jenkins Pipeline Documentation](https://www.jenkins.io/doc/book/pipeline/) to deepen your understanding of more advanced pipeline features.
-</Callout>
+> **lightbulb** For further insights, explore other Jenkins documentation such as the [Jenkins Pipeline Documentation](https://www.jenkins.io/doc/book/pipeline/) to deepen your understanding of more advanced pipeline features.
 
 Thank you for reading, and happy building!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/b4f582ef-4bf9-4cb9-8a31-6d580a94000c/lesson/30a834be-b0d9-4147-9f09-f7dc55b9a0de" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-for-beginners/module/b4f582ef-4bf9-4cb9-8a31-6d580a94000c/lesson/30a834be-b0d9-4147-9f09-f7dc55b9a0de)

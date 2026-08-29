@@ -72,9 +72,7 @@ fn takes_and_gives_back(a_string: String) -> String {
 }
 ```
 
-<Callout icon="lightbulb">
-  Functions returning ownership provide flexibility when modifying data. Keep in mind that once a variable’s ownership is transferred, it cannot be used in its original form unless returned.
-</Callout>
+> **lightbulb** Functions returning ownership provide flexibility when modifying data. Keep in mind that once a variable’s ownership is transferred, it cannot be used in its original form unless returned.
 
 ## Modifying a String by Transferring Ownership
 
@@ -139,6 +137,4 @@ Understanding these patterns is key to effectively managing memory and ensuring 
 
 For more insights on Rust’s ownership rules, check out the [Rust Ownership Guide](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/4f54dfcc-ff3d-4ef6-afe2-98ad64dec5de" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/48702f90-cc95-4c81-939c-a4565969de71/lesson/4f54dfcc-ff3d-4ef6-afe2-98ad64dec5de)

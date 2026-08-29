@@ -9,9 +9,7 @@ Plan: 1 to add, 0 to change, 0 to destroy.
 
 After successful apply, verify the new workspace in Terraform Cloud.
 
-<Frame>
-  ![The image shows a Terraform Cloud interface with a focus on the "Workspaces" section, displaying options to filter and sort workspaces, but no workspaces are currently listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878677/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Automating-Terraform-Cloud/terraform-cloud-workspaces-interface-empty.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface with a focus on the "Workspaces" section, displaying options to filter and sort workspaces, but no workspaces are currently listed.](https://kodekloud.com/kk-media/image/upload/v1752878677/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Automating-Terraform-Cloud/terraform-cloud-workspaces-interface-empty.jpg)
 
 ***
 
@@ -55,9 +53,7 @@ terraform apply \
 
 Confirm in the Terraform Cloud UI under **Variables** that all variables appear correctly.
 
-<Frame>
-  ![The image shows a Terraform Cloud interface displaying the "Variables" section for a workspace named "webserver-aws-stage." It includes details about sensitive variables and workspace variables.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878678/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Automating-Terraform-Cloud/terraform-cloud-variables-webserver-aws.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface displaying the "Variables" section for a workspace named "webserver-aws-stage." It includes details about sensitive variables and workspace variables.](https://kodekloud.com/kk-media/image/upload/v1752878678/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Automating-Terraform-Cloud/terraform-cloud-variables-webserver-aws.jpg)
 
 ***
 
@@ -170,15 +166,11 @@ terraform apply -var "organization=YOUR-ORG"
 
 Verify in the Terraform Cloud UI under **Organization → Teams → classmates** and in each workspace’s Team Access page.
 
-<Frame>
-  ![The image shows a user interface for managing organization access settings, with options to manage policies, workspaces, and other administrative tasks. A success message indicates that a team named "classmates" has been created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878679/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Automating-Terraform-Cloud/organization-access-settings-ui-success.jpg)
-</Frame>
+![The image shows a user interface for managing organization access settings, with options to manage policies, workspaces, and other administrative tasks. A success message indicates that a team named "classmates" has been created.](https://kodekloud.com/kk-media/image/upload/v1752878679/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Automating-Terraform-Cloud/organization-access-settings-ui-success.jpg)
 
 Browse to any workspace’s Team Access settings to confirm the “classmates” team has **read** privileges.
 
-<Frame>
-  ![The image shows a "Team Access" page from a web application, listing different teams and their access privileges, such as "default," "read," and "plan." The sidebar includes various workspace settings options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878681/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Automating-Terraform-Cloud/team-access-page-workspace-settings.jpg)
-</Frame>
+![The image shows a "Team Access" page from a web application, listing different teams and their access privileges, such as "default," "read," and "plan." The sidebar includes various workspace settings options.](https://kodekloud.com/kk-media/image/upload/v1752878681/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Automating-Terraform-Cloud/team-access-page-workspace-settings.jpg)
 
 ***
 
@@ -212,11 +204,9 @@ terraform destroy \
 * Terraform CLI Docs: [https://www.terraform.io/cli](https://www.terraform.io/cli)
 * Terraform Cloud API: [https://www.terraform.io/cloud-docs/api](https://www.terraform.io/cloud-docs/api)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/f7d08e72-e35f-436f-8d42-d0d7364d2532/lesson/71408858-eb30-4c37-9dff-64ae9f8b27e1" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/f7d08e72-e35f-436f-8d42-d0d7364d2532/lesson/71408858-eb30-4c37-9dff-64ae9f8b27e1)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/f7d08e72-e35f-436f-8d42-d0d7364d2532/lesson/b66b19a5-b488-4a90-af69-91ebe54a7a9b" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/f7d08e72-e35f-436f-8d42-d0d7364d2532/lesson/b66b19a5-b488-4a90-af69-91ebe54a7a9b)
 
 
 # Lab Solution Notifications
@@ -232,15 +222,11 @@ Terraform Cloud notifications let you track workspace events—such as runs comp
 1. Log in to Terraform Cloud and select the **DevOps AWS MyApp Dev** workspace.
 2. Navigate to **Settings > Notifications**.
 
-<Frame>
-  ![The image shows a KodeKloud lab interface with instructions for creating Terraform Cloud notifications on the left and a Visual Studio Code editor with a welcome message on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878686/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Notifications/kodekloud-lab-terraform-cloud-notifications.jpg)
-</Frame>
+![The image shows a KodeKloud lab interface with instructions for creating Terraform Cloud notifications on the left and a Visual Studio Code editor with a welcome message on the right.](https://kodekloud.com/kk-media/image/upload/v1752878686/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Notifications/kodekloud-lab-terraform-cloud-notifications.jpg)
 
 If this workspace has no notifications configured, the list will be empty:
 
-<Frame>
-  ![The image shows a Terraform Cloud interface for a workspace named "devops-aws-myapp-dev," with a focus on the Notifications section, where users can create notifications for workspace events.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878687/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Notifications/terraform-cloud-devops-aws-notifications.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface for a workspace named "devops-aws-myapp-dev," with a focus on the Notifications section, where users can create notifications for workspace events.](https://kodekloud.com/kk-media/image/upload/v1752878687/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Notifications/terraform-cloud-devops-aws-notifications.jpg)
 
 Click **Create notification** to begin.
 
@@ -253,9 +239,7 @@ Terraform Cloud supports four notification destinations:
 * Microsoft Teams
 * Generic Webhook
 
-<Frame>
-  ![The image shows a user interface for creating a notification, offering options to send messages via Webhook, Email, Slack, or Microsoft Teams. The sidebar includes workspace settings like Notifications, Run Tasks, and Team Access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878689/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Notifications/notification-creation-user-interface.jpg)
-</Frame>
+![The image shows a user interface for creating a notification, offering options to send messages via Webhook, Email, Slack, or Microsoft Teams. The sidebar includes workspace settings like Notifications, Run Tasks, and Team Access.](https://kodekloud.com/kk-media/image/upload/v1752878689/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Notifications/notification-creation-user-interface.jpg)
 
 ### 2.1 Configure Email Settings
 
@@ -264,19 +248,13 @@ Terraform Cloud supports four notification destinations:
 3. From **Recipient**, choose your Terraform Cloud login email.
 4. Under **Events**, uncheck **All events**, then select only **Completed**.
 
-<Frame>
-  ![The image shows a settings menu for configuring notifications in a software application, with options for different run events like "Created," "Planning," "Needs Attention," "Applying," "Completed," and "Errored."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878690/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Notifications/settings-menu-notifications-configure-options.jpg)
-</Frame>
+![The image shows a settings menu for configuring notifications in a software application, with options for different run events like "Created," "Planning," "Needs Attention," "Applying," "Completed," and "Errored."](https://kodekloud.com/kk-media/image/upload/v1752878690/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Notifications/settings-menu-notifications-configure-options.jpg)
 
 Click **Create notification**. You will see the new email alert listed and enabled:
 
-<Frame>
-  ![The image shows a Terraform Cloud interface with a notification setting for email alerts when a Terraform run is completed. The notification is enabled and set to send to a specified email address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878691/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Notifications/terraform-cloud-email-alerts-notification.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface with a notification setting for email alerts when a Terraform run is completed. The notification is enabled and set to send to a specified email address.](https://kodekloud.com/kk-media/image/upload/v1752878691/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Notifications/terraform-cloud-email-alerts-notification.jpg)
 
-<Callout icon="lightbulb">
-  Use the **Send test** link next to any notification to verify delivery before you rely on real run events.
-</Callout>
+> **lightbulb** Use the **Send test** link next to any notification to verify delivery before you rely on real run events.
 
 ## Step 3: Test and Trigger a Terraform Run
 
@@ -291,9 +269,7 @@ terraform apply
 
 Once the run finishes, you’ll receive a live email with a direct link to the run details in your **DevOps AWS MyApp Dev** workspace:
 
-<Frame>
-  ![The image shows a Terraform Cloud interface with a workspace named "devops-aws-myapp-dev," indicating a successful plan run with no changes needed. A notification about improved navigation is also visible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878692/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Notifications/terraform-cloud-devops-aws-myapp.jpg)
-</Frame>
+![The image shows a Terraform Cloud interface with a workspace named "devops-aws-myapp-dev," indicating a successful plan run with no changes needed. A notification about improved navigation is also visible.](https://kodekloud.com/kk-media/image/upload/v1752878692/notes-assets/images/HashiCorp-Terraform-Cloud-Lab-Solution-Notifications/terraform-cloud-devops-aws-myapp.jpg)
 
 ## Additional Notification Destinations
 
@@ -306,9 +282,7 @@ You can extend alerts to other platforms:
 | Microsoft Teams | Send updates into a Teams channel connector     | Configure Teams incoming webhook    |
 | Generic Webhook | Forward payloads to custom HTTP endpoints       | Enter target URL and authentication |
 
-<Callout icon="triangle-alert">
-  Ensure your webhook endpoints are publicly reachable, and secure them with authentication or IP allowlists to prevent unauthorized requests.
-</Callout>
+> **triangle-alert** Ensure your webhook endpoints are publicly reachable, and secure them with authentication or IP allowlists to prevent unauthorized requests.
 
 You can also subscribe to **health events** (for drift detection) or additional run statuses like **Errored** and **Needs Attention**. Tailor notifications to align with your team’s monitoring and incident response processes.
 
@@ -319,6 +293,4 @@ You can also subscribe to **health events** (for drift detection) or additional 
 * [Incoming Webhooks for Slack](https://api.slack.com/messaging/webhooks)
 * [Microsoft Teams Incoming Webhook Connectors](https://docs.microsoft.com/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/f7d08e72-e35f-436f-8d42-d0d7364d2532/lesson/ffccfca0-a574-41b6-82f5-cc1d6683c083" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/f7d08e72-e35f-436f-8d42-d0d7364d2532/lesson/ffccfca0-a574-41b6-82f5-cc1d6683c083)

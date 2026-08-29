@@ -196,9 +196,7 @@ The output confirms that the tests pass:
 
 ## Final Notes
 
-<Callout icon="lightbulb">
-  Before deleting the `database.py` file, ensure that all tests pass by running your complete test suite. The majority of functionality has now been moved to `conftest.py`.
-</Callout>
+> **lightbulb** Before deleting the `database.py` file, ensure that all tests pass by running your complete test suite. The majority of functionality has now been moved to `conftest.py`.
 
 An example of the `test_posts` fixture used throughout the tests is shown below:
 
@@ -223,14 +221,10 @@ def test_posts(test_user, session, test_user2):
     ]
 ```
 
-<Callout icon="triangle-alert">
-  When writing tests, consider additional scenarios that could potentially break the application by creating individual test cases for each situation. Comprehensive testing is essential for ensuring the stability and reliability of your application.
-</Callout>
+> **triangle-alert** When writing tests, consider additional scenarios that could potentially break the application by creating individual test cases for each situation. Comprehensive testing is essential for ensuring the stability and reliability of your application.
 
 ***
 
 By following this guide, you have now set up a robust test suite covering various edge cases and scenarios for voting and other functionality. This comprehensive approach not only helps in maintaining functionality but also enhances the resilience of your application.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/e293189f-da1c-48b2-993d-3b51153ede70" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/e293189f-da1c-48b2-993d-3b51153ede70)

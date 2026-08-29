@@ -20,9 +20,7 @@ SELECT * FROM posts;
 
 This query returns all posts, but often these posts include an owner ID (e.g., 23) that isn’t very informative on its own. For a more user-friendly display, such as showing the username or email, you would need additional details from the "users" table. Without a join, you might execute separate queries for each post, which is inefficient and complex.
 
-<Callout icon="lightbulb">
-  For more comprehensive examples and theoretical details, consider visiting the [PostgreSQL Tutorial website](https://www.postgresqltutorial.com/postgresql-joins/) which covers various join types like LEFT JOIN, INNER JOIN, RIGHT JOIN, and OUTER JOIN with clear examples.
-</Callout>
+> **lightbulb** For more comprehensive examples and theoretical details, consider visiting the [PostgreSQL Tutorial website](https://www.postgresqltutorial.com/postgresql-joins/) which covers various join types like LEFT JOIN, INNER JOIN, RIGHT JOIN, and OUTER JOIN with clear examples.
 
 Below is a simplified demonstration using two fictitious tables—basket\_a and basket\_b:
 
@@ -188,9 +186,7 @@ WHERE posts.id = 10
 GROUP BY posts.id;
 ```
 
-<Callout icon="lightbulb">
-  SQL joins are powerful tools that enable efficient data retrieval across multiple related tables. Experimenting with different join types in your queries can help build a solid foundation and understanding for more advanced SQL scenarios.
-</Callout>
+> **lightbulb** SQL joins are powerful tools that enable efficient data retrieval across multiple related tables. Experimenting with different join types in your queries can help build a solid foundation and understanding for more advanced SQL scenarios.
 
 ## Final Thoughts
 
@@ -198,6 +194,4 @@ SQL joins are a fundamental element in relational database queries. As you pract
 
 Happy querying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/6136ef89-6dc4-4563-9168-fca799da9de4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/6136ef89-6dc4-4563-9168-fca799da9de4)

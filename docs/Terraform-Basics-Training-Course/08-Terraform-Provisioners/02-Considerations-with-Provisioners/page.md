@@ -28,9 +28,7 @@ Since the instance runs Ubuntu, SSH is the preferred method for remote access. H
 
 When launching an instance manually using the AWS Management Console, you typically create or assign an SSH key pair. In the sections below, we demonstrate how to enable this with Terraform.
 
-<Frame>
-  ![The image illustrates setting up an SSH key pair for an Ubuntu web server, highlighting user access and port 22, with instructions for creating and downloading a key pair.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884196/notes-assets/images/Terraform-Basics-Training-Course-AWS-EC2-with-Terraform/frame_90.jpg)
-</Frame>
+![The image illustrates setting up an SSH key pair for an Ubuntu web server, highlighting user access and port 22, with instructions for creating and downloading a key pair.](https://kodekloud.com/kk-media/image/upload/v1752884196/notes-assets/images/Terraform-Basics-Training-Course-AWS-EC2-with-Terraform/frame_90.jpg)
 
 ## Configuring Key-Based SSH Access
 
@@ -127,9 +125,7 @@ resource "aws_security_group" "ssh-access" {
 }
 ```
 
-<Callout icon="lightbulb">
-  Ensure that the `cidr_blocks` value is exactly `"0.0.0.0/0"` as shown. This setting is suitable for demonstration purposes only.
-</Callout>
+> **lightbulb** Ensure that the `cidr_blocks` value is exactly `"0.0.0.0/0"` as shown. This setting is suitable for demonstration purposes only.
 
 ## Retrieving the Instance Public IP
 
@@ -147,9 +143,7 @@ With these configurations, you have successfully deployed an AWS EC2 instance wi
 
 Happy coding and deploying!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9fcbd3cd-b06d-4816-8646-3639ca3d19cd/lesson/c528041b-a2b7-4a0a-9e1a-f16b1d910dc0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9fcbd3cd-b06d-4816-8646-3639ca3d19cd/lesson/c528041b-a2b7-4a0a-9e1a-f16b1d910dc0)
 
 
 # Considerations with Provisioners
@@ -160,9 +154,7 @@ This article explores considerations for using provisioners in Terraform, emphas
 
 In this lesson, we explore key considerations when using provisioners in Terraform. Provisioners can be very useful for executing tasks such as bootstrapping with a Remote Exec script; however, their use should be limited. Terraform advises caution when using them due to several reasons.
 
-<Callout icon="lightbulb">
-  Provisioners often add complexity to your configuration. Their nature of executing arbitrary system-supported commands means that Terraform cannot fully simulate or validate these actions during the planning phase.
-</Callout>
+> **lightbulb** Provisioners often add complexity to your configuration. Their nature of executing arbitrary system-supported commands means that Terraform cannot fully simulate or validate these actions during the planning phase.
 
 ## Why Use Provisioners Sparingly?
 
@@ -236,9 +228,7 @@ resource "aws_instance" "webserver" {
 }
 ```
 
-<Callout icon="triangle-alert">
-  While using provisioners like remote-exec or User Data can be helpful, it is recommended to limit post-provisioning tasks. Over-relying on them can lead to configuration drift and harder maintenance.
-</Callout>
+> **triangle-alert** While using provisioners like remote-exec or User Data can be helpful, it is recommended to limit post-provisioning tasks. Over-relying on them can lead to configuration drift and harder maintenance.
 
 ## Custom Images and Templating Tools
 
@@ -270,6 +260,4 @@ resource "aws_instance" "webserver" {
 
 By favoring resource-specific configurations and custom-built images, you can reduce the reliance on provisioners and build a more robust, maintainable infrastructure with Terraform.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9fcbd3cd-b06d-4816-8646-3639ca3d19cd/lesson/173688e4-8af2-4dd6-b7e1-60b3d8c68fa4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9fcbd3cd-b06d-4816-8646-3639ca3d19cd/lesson/173688e4-8af2-4dd6-b7e1-60b3d8c68fa4)

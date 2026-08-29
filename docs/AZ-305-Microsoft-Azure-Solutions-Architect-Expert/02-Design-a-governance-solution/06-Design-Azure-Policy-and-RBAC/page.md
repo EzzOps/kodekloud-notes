@@ -37,7 +37,7 @@ The compliance dashboard provides a visual summary of policy assignments and the
 * Identification of resources failing to meet specified standards.
 * Available actions for addressing non-compliance issues.
 
-![The image is a diagram from KodeKloud titled "Design for policy," illustrating the enforcement of organizational standards and compliance through management-level policies, remediation, and compliance dashboards. It includes a flowchart showing allowed locations and specific resource group requirements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866930/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-Azure-Policy-and-RBAC/design-for-policy-diagram.jpg)
+![The image is a diagram from KodeKloud titled "Design for policy," illustrating the enforcement of organizational standards and compliance through management-level policies, remediation, and compliance dashboards. It includes a flowchart showing allowed locations and specific resource group requirements.](https://kodekloud.com/kk-media/image/upload/v1752866930/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-Azure-Policy-and-RBAC/design-for-policy-diagram.jpg)
 
 For example, an Azure initiative enforcing [PCI DSS standards](https://www.pcisecuritystandards.org) can be deployed to handle environments that manage sensitive credit card data. The compliance dashboard then monitors adherence, ensuring any deviations are promptly addressed.
 
@@ -76,7 +76,7 @@ Role-Based Access Control (RBAC) is a key component of managing permissions and 
 
 Azure Privileged Identity Management (PIM) boosts security by requiring activation of elevated privileges only when necessary. Similar to using `sudo` in Linux, even users with Owner permissions must activate their role, provide justification, and specify a duration for elevated access. Once the duration expires, permissions are automatically revoked until reactivation is required.
 
-![The image is a diagram illustrating role-based access controls for Azure RBAC, showing different roles like Reader, Built-in, Custom, Contributor, and Owner across various scopes such as Management Groups, Subscription, Resource Group, and Resources. It includes notes on best practices for access management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866931/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-Azure-Policy-and-RBAC/azure-rbac-access-controls-diagram.jpg)
+![The image is a diagram illustrating role-based access controls for Azure RBAC, showing different roles like Reader, Built-in, Custom, Contributor, and Owner across various scopes such as Management Groups, Subscription, Resource Group, and Resources. It includes notes on best practices for access management.](https://kodekloud.com/kk-media/image/upload/v1752866931/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-Azure-Policy-and-RBAC/azure-rbac-access-controls-diagram.jpg)
 
 ## Integrating Policy and RBAC
 
@@ -97,7 +97,7 @@ When a user attempts to deploy a Virtual Machine, the following checks occur:
 
 If all checks are successful, the deployment proceeds. However, if any constraints are violated (such as deploying in an unsupported region, using an incorrect SKU, or missing required tags), the deployment is automatically blocked.
 
-![The image illustrates the process of combining Azure Policies and Role-Based Access Control (RBAC) to manage resource access and enforce compliance, showing decision points for permissions and restrictions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866933/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-Azure-Policy-and-RBAC/azure-policies-rbac-access-control.jpg)
+![The image illustrates the process of combining Azure Policies and Role-Based Access Control (RBAC) to manage resource access and enforce compliance, showing decision points for permissions and restrictions.](https://kodekloud.com/kk-media/image/upload/v1752866933/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-Azure-Policy-and-RBAC/azure-policies-rbac-access-control.jpg)
 
 This integrated approach guarantees that only compliant resources are deployed while maintaining stringent governance and secure access protocols.
 

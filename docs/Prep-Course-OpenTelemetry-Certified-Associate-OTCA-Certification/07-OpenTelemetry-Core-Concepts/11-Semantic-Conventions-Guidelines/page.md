@@ -6,9 +6,7 @@ Guidelines for using OpenTelemetry semantic conventions to name and reuse attrib
 
 In this lesson we explain how to define consistent names and attributes in OpenTelemetry for spans, metrics, logs, and other telemetry signals. Using established semantic conventions ensures your telemetry is interoperable, easier to analyze, and simpler to correlate across systems.
 
-<Callout icon="lightbulb">
-  Always prefer the established OpenTelemetry semantic conventions. Reusing standardized attribute names ensures interoperability and consistent analysis across traces, metrics, and logs.
-</Callout>
+> **lightbulb** Always prefer the established OpenTelemetry semantic conventions. Reusing standardized attribute names ensures interoperability and consistent analysis across traces, metrics, and logs.
 
 ## Why reuse matters
 
@@ -45,9 +43,7 @@ Below are common OpenTelemetry semantic attributes, their meanings, and guidance
 * When additional context is needed, prefer adding contextual values to existing conventions rather than inventing new keys.
 * Document any organization-specific conventions in a central place and map them to OpenTelemetry keys for compatibility.
 
-<Callout icon="lightbulb">
-  Tip: Instrumentation libraries and many backends provide mappings for common semantic conventions—reuse those mappings where possible to reduce engineering effort and improve interoperability.
-</Callout>
+> **lightbulb** Tip: Instrumentation libraries and many backends provide mappings for common semantic conventions—reuse those mappings where possible to reduce engineering effort and improve interoperability.
 
 ## Where to find the conventions
 
@@ -59,6 +55,4 @@ Consult the official OpenTelemetry semantic conventions specification and relate
 
 These resources provide domain-specific guidance and the authoritative names to use across spans, metrics, and logs. When in doubt, prefer the standardized attribute names to maintain consistency across teams, tools, and platforms.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/365b53ad-668f-476d-9449-2b7a3b1caf43" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/da1c735f-c606-45b0-9bbf-04fe366fbd23/lesson/365b53ad-668f-476d-9449-2b7a3b1caf43)

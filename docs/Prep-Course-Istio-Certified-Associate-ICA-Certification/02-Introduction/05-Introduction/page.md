@@ -16,9 +16,7 @@ Did you know that over 80% of organizations run containerized applications in pr
 
 This course emphasizes practical learning: each module includes labs, real-world scenarios, and practice exercises. To make sure you’re exam-ready, we include a full mock exam modeled after the actual ICA test.
 
-<Callout icon="lightbulb">
-  This course is heavily hands-on. Expect interactive labs, step-by-step tutorials, and a mock exam that mirrors the ICA format to help you assess readiness.
-</Callout>
+> **lightbulb** This course is heavily hands-on. Expect interactive labs, step-by-step tutorials, and a mock exam that mirrors the ICA format to help you assess readiness.
 
 You’ll also practice common troubleshooting commands, for example examining Envoy (Istio sidecar) logs:
 

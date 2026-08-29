@@ -36,13 +36,9 @@ Package summary (what, why, and scope)
   <img alt="The image depicts a layout of a single-node Kubernetes cluster titled &#x22;Our Target Cluster,&#x22; featuring components like database, observability, continuous deployment under &#x22;Cluster Scoped,&#x22; and analytics under &#x22;Namespace Scoped.&#x22;" />
 </Frame>
 
-<Callout icon="lightbulb">
-  You'll receive credentials to access the single-node cluster for hands-on exercises. During the lesson we'll install each package in turn, verify basic functionality, and point out any scope-specific configuration (cluster vs namespace).
-</Callout>
+> **lightbulb** You'll receive credentials to access the single-node cluster for hands-on exercises. During the lesson we'll install each package in turn, verify basic functionality, and point out any scope-specific configuration (cluster vs namespace).
 
-<Callout icon="warning">
-  Cluster-scoped installs typically require elevated permissions (cluster-admin or equivalent). Ensure you run cluster-scoped commands with the appropriate context and credentials to avoid permission errors.
-</Callout>
+> **warning** Cluster-scoped installs typically require elevated permissions (cluster-admin or equivalent). Ensure you run cluster-scoped commands with the appropriate context and credentials to avoid permission errors.
 
 What to expect in the lesson sequence
 
@@ -64,6 +60,4 @@ Links and references
 
 This target cluster layout and installation order will be used as the reference architecture for the hands-on exercises in the remainder of the lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/60afaf37-3ea5-4474-b262-dc8c13c3afd4/lesson/83c10582-965f-4ed7-9c0e-2f802c21abe6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/60afaf37-3ea5-4474-b262-dc8c13c3afd4/lesson/83c10582-965f-4ed7-9c0e-2f802c21abe6)

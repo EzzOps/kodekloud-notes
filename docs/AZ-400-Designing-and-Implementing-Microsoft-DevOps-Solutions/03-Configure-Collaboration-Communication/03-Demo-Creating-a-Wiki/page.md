@@ -47,7 +47,7 @@ To control who can view or edit your wiki:
 
 > **triangle-alert** Follow the principle of least privilege—only grant the minimum permissions each user or group needs.
 
-![The image shows an Azure DevOps interface with a wiki page titled "Welcome to Turkey Time!" and a security settings panel for managing permissions for different user groups.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867443/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Wiki/azure-devops-wiki-security-settings.jpg)
+![The image shows an Azure DevOps interface with a wiki page titled "Welcome to Turkey Time!" and a security settings panel for managing permissions for different user groups.](https://kodekloud.com/kk-media/image/upload/v1752867443/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Wiki/azure-devops-wiki-security-settings.jpg)
 
 ***
 
@@ -69,7 +69,7 @@ Versioning your documentation alongside your source code ensures every change is
    git push origin main
    ```
 
-![The image shows a Visual Studio code editor with a markdown file open, displaying a help section for an application. The text includes contact information for support and a link to an FAQ.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867444/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Wiki/visual-studio-code-markdown-help-section.jpg)
+![The image shows a Visual Studio code editor with a markdown file open, displaying a help section for an application. The text includes contact information for support and a link to an FAQ.](https://kodekloud.com/kk-media/image/upload/v1752867444/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Wiki/visual-studio-code-markdown-help-section.jpg)
 
 ### b. Publish Code as Wiki
 

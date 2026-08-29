@@ -26,9 +26,7 @@ Azure Policy shares some similarities with Role-Based Access Control (RBAC) in t
 
    Once the policy is assigned, Azure continuously evaluates resources for compliance. Policies do not modify existing resources; they only affect future changes. For example, if a new policy restricts resource deployment outside the United States, resources already deployed in other regions will be marked as non-compliant. Administrators can then use compliance reports and remediation tasks to bring these resources into alignment with organizational standards.
 
-<Frame>
-  ![The image is an infographic about Azure Policy, explaining its components: Definition, Scope, Assignment, and Compliance, with a central graphic representing these elements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881794/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-policies/azure-policy-infographic-components.jpg)
-</Frame>
+![The image is an infographic about Azure Policy, explaining its components: Definition, Scope, Assignment, and Compliance, with a central graphic representing these elements.](https://kodekloud.com/kk-media/image/upload/v1752881794/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-policies/azure-policy-infographic-components.jpg)
 
 ## Common Use Cases for Azure Policy
 
@@ -59,9 +57,7 @@ In this lesson, we explore how to interact with Azure Policies using the Azure p
 1. **Accessing Policies:**\
    Launch the Azure portal and search for "Policy." From here, you can view both built-in and custom policy definitions. You will also encounter the concept of an "initiative," which allows grouping multiple policies together. Initiatives simplify management by providing a consolidated compliance score, especially useful for regulatory standards like PCI DSS or FedRAMP.
 
-<Frame>
-  ![The image shows a Microsoft Azure Policy dashboard with an overview of resource compliance, indicating 100% compliance and no non-compliant policies or initiatives. The sidebar includes options like "Definitions" and "Assignments."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881795/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-policies/azure-policy-dashboard-compliance.jpg)
-</Frame>
+![The image shows a Microsoft Azure Policy dashboard with an overview of resource compliance, indicating 100% compliance and no non-compliant policies or initiatives. The sidebar includes options like "Definitions" and "Assignments."](https://kodekloud.com/kk-media/image/upload/v1752881795/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-policies/azure-policy-dashboard-compliance.jpg)
 
 2. **Working with a Policy (Allowed Locations Example):**\
    Consider an example where you configure an “Allowed Locations” policy. In this case, the policy definition requires that the location property for a resource must be within a predefined list of allowed regions (or be designated as a global resource). If the specified condition fails, the policy denies the deployment.
@@ -106,29 +102,21 @@ In this lesson, we explore how to interact with Azure Policies using the Azure p
 
    To assign this policy in the Azure portal, click on "Assign" and select the desired scope (e.g., a specific subscription or resource group). You can also specify exclusions if necessary.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen for setting up a policy assignment with options to define scope, exclusions, and policy details for allowed locations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881796/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-policies/azure-portal-policy-assignment.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen for setting up a policy assignment with options to define scope, exclusions, and policy details for allowed locations.](https://kodekloud.com/kk-media/image/upload/v1752881796/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-policies/azure-portal-policy-assignment.jpg)
 
 3. **Configuring the Assignment:**\
    In the policy assignment configuration, provide a custom name (for example, "Core Cloud Allowed Locations") and a clear description (such as "List of allowed locations for deployment"). Ensure the policy is enabled (not in audit mode) so that it actively blocks non-compliant deployments. Next, configure the policy parameters by selecting "East US" and "West US" as the approved regions.
 
-<Frame>
-  ![The image shows a Microsoft Azure interface for assigning a policy titled "Allowed locations," with fields for scope, assignment name, and description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881797/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-policies/azure-policy-allowed-locations-interface.jpg)
-</Frame>
+![The image shows a Microsoft Azure interface for assigning a policy titled "Allowed locations," with fields for scope, assignment name, and description.](https://kodekloud.com/kk-media/image/upload/v1752881797/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-policies/azure-policy-allowed-locations-interface.jpg)
 
 After reviewing your settings, click on "Review and create" to complete the assignment. Note that policy evaluation might take five to fifteen minutes to fully propagate.
 
 4. **Verifying Compliance:**\
    Once the policy is assigned, navigate to the policy assignments page and refresh it to view the compliance status. Initially, evaluation status may indicate that the policy has not yet been executed. As your resources (such as virtual networks) are evaluated, they will be marked as compliant or non-compliant based on the policy rules.
 
-<Frame>
-  ![The image shows the Microsoft Azure Policy Assignments page, displaying details about policy and initiative assignments within a specific subscription.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881798/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-policies/azure-policy-assignments-page.jpg)
-</Frame>
+![The image shows the Microsoft Azure Policy Assignments page, displaying details about policy and initiative assignments within a specific subscription.](https://kodekloud.com/kk-media/image/upload/v1752881798/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-policies/azure-policy-assignments-page.jpg)
 
-<Callout icon="lightbulb">
-  If you test the policy by attempting to create a resource (for example, a virtual network) in an unapproved region (like Central US), the policy enforcement will block the deployment. There might be a slight delay before the policy fully takes effect. When triggered, the portal will eventually display a "forbidden" error along with detailed information.
-</Callout>
+> **lightbulb** If you test the policy by attempting to create a resource (for example, a virtual network) in an unapproved region (like Central US), the policy enforcement will block the deployment. There might be a slight delay before the policy fully takes effect. When triggered, the portal will eventually display a "forbidden" error along with detailed information.
 
 In such cases, you might see an error JSON similar to the one below:
 
@@ -174,24 +162,18 @@ In such cases, you might see an error JSON similar to the one below:
 }
 ```
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page indicating a deployment failure for "demo-vnet-2" due to a policy disallowance, with details about the error and deployment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881800/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-policies/azure-portal-deployment-failure-demo-vnet-2.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page indicating a deployment failure for "demo-vnet-2" due to a policy disallowance, with details about the error and deployment.](https://kodekloud.com/kk-media/image/upload/v1752881800/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-policies/azure-portal-deployment-failure-demo-vnet-2.jpg)
 
 5. **Additional Testing: Storage Account Example**\
    To further validate your policy, try creating a storage account in an unapproved region (for example, Central US). The deployment attempt will be blocked, and an error will indicate that the allowed locations requirement is not met.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for creating a storage account, with fields for subscription, resource group, storage account name, region, performance, and redundancy options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881801/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-policies/azure-portal-storage-account-creation.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for creating a storage account, with fields for subscription, resource group, storage account name, region, performance, and redundancy options.](https://kodekloud.com/kk-media/image/upload/v1752881801/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-policies/azure-portal-storage-account-creation.jpg)
 
 ## Viewing Policy Definitions and Initiatives
 
 Within the Azure portal, head over to the "Definitions" section to see all built-in and custom policies. Additionally, you will encounter the concept of initiatives—collections of policies that simplify assignment and compliance tracking. For example, regulatory standards like PCI DSS include initiatives containing numerous individual policies, making it easy to apply and manage compliance as a single cohesive unit.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page displaying the PCI DSS v4 policy definitions, including details like name, description, category, version, and a list of policies with their types and evaluation methods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881802/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-policies/azure-portal-pci-dss-policy-definitions.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page displaying the PCI DSS v4 policy definitions, including details like name, description, category, version, and a list of policies with their types and evaluation methods.](https://kodekloud.com/kk-media/image/upload/v1752881802/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Azure-policies/azure-portal-pci-dss-policy-definitions.jpg)
 
 ## Summary
 
@@ -201,6 +183,4 @@ For further details, review your policy assignments in the Azure portal. Remembe
 
 Happy governing your Azure environment!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/3c48a4f2-a6f3-45fd-87d7-c53f36f2fb2a/lesson/cd273da7-9cf7-40e5-a462-bd8cd9aeb50c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/3c48a4f2-a6f3-45fd-87d7-c53f36f2fb2a/lesson/cd273da7-9cf7-40e5-a462-bd8cd9aeb50c)

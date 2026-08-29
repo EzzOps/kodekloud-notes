@@ -26,7 +26,7 @@ This naming convention makes it clear which functionality is being used and help
 
 > **lightbulb** Avoid reusing the package name in the function names. For example, if your package is named `extract`, do not name your function `extractNames` since the package context already implies the functionality.
 
-![The image is a slide titled "Naming packages," explaining how to extract names from a string and format a string, with examples like "extract.Names" and "format.Names."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868741/notes-assets/images/Advanced-Golang-Naming-packages/naming-packages-extract-format.jpg)
+![The image is a slide titled "Naming packages," explaining how to extract names from a string and format a string, with examples like "extract.Names" and "format.Names."](https://kodekloud.com/kk-media/image/upload/v1752868741/notes-assets/images/Advanced-Golang-Naming-packages/naming-packages-extract-format.jpg)
 
 ## Organizing Files and Directories
 

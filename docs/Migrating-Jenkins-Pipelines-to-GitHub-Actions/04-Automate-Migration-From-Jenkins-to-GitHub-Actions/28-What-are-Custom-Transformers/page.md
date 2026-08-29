@@ -155,9 +155,7 @@ transform "sleep" do |item|
 end
 ```
 
-<Callout icon="lightbulb">
-  Ensure the transformer returns a valid Ruby hash (string or symbol keys are acceptable) that the importer can serialize to YAML. Use the actual `item` structure provided by the importer to access nested values correctly.
-</Callout>
+> **lightbulb** Ensure the transformer returns a valid Ruby hash (string or symbol keys are acceptable) that the importer can serialize to YAML. Use the actual `item` structure provided by the importer to access nested values correctly.
 
 Run the importer with your custom transformers
 Save your transformer file (for example, `transformers.rb`) and run a dry run of the importer, passing the file with `--custom-transformers`. Inspect the output directory to verify the converted workflow.
@@ -187,9 +185,7 @@ Expected change (diff-style)
 
 You can author multiple transformers—one per Jenkins identifier or other platform construct—to systematically convert non-standard items across your pipelines.
 
-<Callout icon="warning">
-  Test transformers in a dry run before applying them broadly. Mis-parsed `item` structures or incorrect Ruby hashes can produce invalid YAML or unwanted workflow behavior. Keep backups of original pipeline definitions.
-</Callout>
+> **warning** Test transformers in a dry run before applying them broadly. Mis-parsed `item` structures or incorrect Ruby hashes can produce invalid YAML or unwanted workflow behavior. Keep backups of original pipeline definitions.
 
 Further reading and references
 
@@ -201,6 +197,4 @@ Further reading and references
 
 That's all for now.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/5f14c4a0-c09b-4667-8613-6539513ad19a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/5f14c4a0-c09b-4667-8613-6539513ad19a)

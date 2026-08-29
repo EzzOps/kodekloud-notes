@@ -33,9 +33,7 @@ Next steps and practical advice
 * Iterate: add memory and refine prompt templates to improve quality.
 * Harden: add tests, observability, and version pinning before deploying.
 
-<Callout icon="lightbulb">
-  Tip: Bookmark the LangChain documentation and follow provider changelogs to catch breaking changes and new features early. Also consider subscribing to release notes for any external services you integrate.
-</Callout>
+> **lightbulb** Tip: Bookmark the LangChain documentation and follow provider changelogs to catch breaking changes and new features early. Also consider subscribing to release notes for any external services you integrate.
 
 Links and references
 
@@ -46,6 +44,4 @@ Links and references
 Final thoughts
 The generative AI landscape moves quickly. Use this course as a foundation: keep experimenting, iterate on designs, and combine the core concepts you learned to build more capable systems. I look forward to seeing the applications you create—congratulations again on completing the course.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/58477604-1ae6-41d6-9bd6-07c46720831b/lesson/4032908a-07f5-4835-8566-72a407861e44" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/58477604-1ae6-41d6-9bd6-07c46720831b/lesson/4032908a-07f5-4835-8566-72a407861e44)

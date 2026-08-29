@@ -19,9 +19,7 @@ Aurora delivers higher performance primarily through a distributed, fault-tolera
 
 Because Aurora is compatible with MySQL and PostgreSQL, you rarely need to change database drivers, client libraries, or tooling. Applications written for MySQL or PostgreSQL typically require little or no modification to work with Aurora.
 
-<Callout icon="warning">
-  Aurora is fully managed and optimized for high performance, but that often comes at a higher cost than a comparable standard managed relational instance. Evaluate performance needs and budget before migrating.
-</Callout>
+> **warning** Aurora is fully managed and optimized for high performance, but that often comes at a higher cost than a comparable standard managed relational instance. Evaluate performance needs and budget before migrating.
 
 Typical application flow: a user request reaches the application server (for example on Amazon EC2), the application queries Aurora for data, and the response is returned to the user. Because Aurora separates storage and compute, reader instances can be promoted quickly if the primary fails, reducing downtime.
 
@@ -75,9 +73,7 @@ Endpoint reference (quick lookup)
 | Instance endpoint         | Direct connection to a specific instance           | Specialized maintenance or diagnostics on one instance       |
 | Custom endpoint           | Routes traffic to a subset of instances you define | Segregate workloads (e.g., heavy-read vs. low-latency reads) |
 
-<Callout icon="lightbulb">
-  Use the writer (cluster) endpoint for all write operations and the reader endpoint to distribute read traffic. Custom endpoints are ideal for directing specific workloads to instances with different instance classes or resource profiles.
-</Callout>
+> **lightbulb** Use the writer (cluster) endpoint for all write operations and the reader endpoint to distribute read traffic. Custom endpoints are ideal for directing specific workloads to instances with different instance classes or resource profiles.
 
 Summary
 
@@ -99,6 +95,4 @@ Further reading and references
 * MySQL: [https://www.mysql.com/](https://www.mysql.com/)
 * PostgreSQL: [https://www.postgresql.org/](https://www.postgresql.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/1306f6ad-ca93-4425-a1e0-b5d94649c1cb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-aws-databases/module/001734a9-f7c2-4943-83a3-d64621fedfd2/lesson/1306f6ad-ca93-4425-a1e0-b5d94649c1cb)

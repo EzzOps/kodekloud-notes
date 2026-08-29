@@ -29,18 +29,14 @@ Azure provides multiple certificate options to meet the needs of different appli
 
 Azure offers free managed certificates that are perfect for developers and small-scale applications. These certificates are automatically renewed by Azure, streamlining the certificate management process. When viewing your web app (for example, one hosted on azurewebsites.net) in the Azure portal, you can see a secure connection indicator.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for managing certificates in a web app named "aapsvcaz500." It indicates that there are currently no managed certificates displayed, with an option to add a new one.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881611/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-web-app-certificates/azure-portal-managing-certificates-aapsvcaz500.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for managing certificates in a web app named "aapsvcaz500." It indicates that there are currently no managed certificates displayed, with an option to add a new one.](https://kodekloud.com/kk-media/image/upload/v1752881611/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-web-app-certificates/azure-portal-managing-certificates-aapsvcaz500.jpg)
 
 Clicking the secure connection icon displays certificate details such as:
 
 * Issued to Microsoft Corporation.
 * Common Name: *wildcard.azurewebsites.net* (serving any subdomain under azurewebsites.net).
 
-<Frame>
-  ![The image shows a Microsoft Azure web app page indicating the app is running but waiting for content, alongside a certificate viewer window displaying SSL certificate details for an Azure website.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881612/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-web-app-certificates/azure-web-app-ssl-certificate.jpg)
-</Frame>
+![The image shows a Microsoft Azure web app page indicating the app is running but waiting for content, alongside a certificate viewer window displaying SSL certificate details for an Azure website.](https://kodekloud.com/kk-media/image/upload/v1752881612/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-web-app-certificates/azure-web-app-ssl-certificate.jpg)
 
 Since these certificates are provided by Microsoft, there are no additional costs involved.
 
@@ -61,25 +57,17 @@ If you have acquired a certificate from a third-party vendor, you can store it i
 
 For organizations that already possess a certificate—whether for internal use or public applications—Azure allows you to upload the certificate directly to your App Service.
 
-<Frame>
-  ![The image outlines options for adding certificates in an app service, including creating, purchasing, importing, and uploading certificates. It features a graphic of a certificate with a ribbon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881613/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-web-app-certificates/app-service-certificate-options.jpg)
-</Frame>
+![The image outlines options for adding certificates in an app service, including creating, purchasing, importing, and uploading certificates. It features a graphic of a certificate with a ribbon.](https://kodekloud.com/kk-media/image/upload/v1752881613/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-web-app-certificates/app-service-certificate-options.jpg)
 
 To proceed in the Azure portal, click on "Add Certificate." If you haven't configured a custom domain yet, you'll be prompted to add one. Once your custom domain is set up, you can either purchase a managed certificate or upload your own certificate file.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal interface for adding a public key certificate to a web app. It includes options to upload a .cer file and enter a certificate friendly name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881615/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-web-app-certificates/azure-portal-add-certificate.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal interface for adding a public key certificate to a web app. It includes options to upload a .cer file and enter a certificate friendly name.](https://kodekloud.com/kk-media/image/upload/v1752881615/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-web-app-certificates/azure-portal-add-certificate.jpg)
 
 For purchasing a certificate, select the App Service Certificates option. You'll see the pricing details for both standard and wildcard certificates. After providing the domain hostname and certificate name, you can enable auto-renewal to let Azure manage the certificate lifecycle automatically.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal page for creating an App Service certificate, with options to select subscription, resource group, certificate type (Standard or Wildcard), and auto-renewal settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881616/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-web-app-certificates/azure-portal-app-service-certificate.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal page for creating an App Service certificate, with options to select subscription, resource group, certificate type (Standard or Wildcard), and auto-renewal settings.](https://kodekloud.com/kk-media/image/upload/v1752881616/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Deploy-web-app-certificates/azure-portal-app-service-certificate.jpg)
 
-<Callout icon="lightbulb">
-  Azure's integrated certificate management options provide a cost-effective and streamlined way to secure your applications without the overhead of manual certificate management.
-</Callout>
+> **lightbulb** Azure's integrated certificate management options provide a cost-effective and streamlined way to secure your applications without the overhead of manual certificate management.
 
 ***
 
@@ -91,6 +79,4 @@ The upcoming discussion will focus on data security with an emphasis on storage 
 
 For more in-depth information on securing web applications with certificates, please refer to [Microsoft Azure Documentation](https://docs.microsoft.com/en-us/azure/app-service/overview) and related resources.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c93091f0-246d-47cc-a399-0e33ad87ee7f/lesson/df888c2f-7cf0-4705-9ef2-0c21c7417ab4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c93091f0-246d-47cc-a399-0e33ad87ee7f/lesson/df888c2f-7cf0-4705-9ef2-0c21c7417ab4)

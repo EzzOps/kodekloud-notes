@@ -8,9 +8,7 @@ vault write sys/replication/performance/primary/secondary-token id="secondary-id
 vault write sys/replication/performance/secondary/enable token="secondary-token"
 ```
 
-<Callout icon="triangle-alert">
-  Enabling a secondary will **purge its local data** (including unseal and recovery keys) and sync entirely from the primary.
-</Callout>
+> **triangle-alert** Enabling a secondary will **purge its local data** (including unseal and recovery keys) and sync entirely from the primary.
 
 ### Monitoring Replication
 
@@ -34,9 +32,7 @@ After setup, verify that changes—such as enabling a new auth method—on the p
 * [AWS Documentation](https://aws.amazon.com/documentation/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cfd009a3-718e-46c1-b509-a1354fc1e2a6/lesson/71abdf0b-7c76-4571-a26e-86f3c794a64c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cfd009a3-718e-46c1-b509-a1354fc1e2a6/lesson/71abdf0b-7c76-4571-a26e-86f3c794a64c)
 
 
 # Demo Performance Replication Configuration
@@ -82,9 +78,7 @@ In this guide, you’ll configure performance replication between two Vault clus
    vault write -f sys/replication/performance/primary/enable
    ```
 
-<Callout icon="triangle-alert">
-  Enabling primary replication will make Vault briefly unavailable. Plan for a short maintenance window.
-</Callout>
+> **triangle-alert** Enabling primary replication will make Vault briefly unavailable. Plan for a short maintenance window.
 
 ***
 
@@ -125,9 +119,7 @@ Copy the `wrapping_token` to use in the next step.
        token=<WRAPPING_TOKEN>
    ```
 
-<Callout icon="triangle-alert">
-  Vault will be unavailable until the initial sync and setup tasks complete.
-</Callout>
+> **triangle-alert** Vault will be unavailable until the initial sync and setup tasks complete.
 
 ***
 
@@ -180,6 +172,4 @@ Success confirms that auth methods, users, and policies (along with future secre
 * [Vault CLI Commands](https://www.vaultproject.io/docs/commands)
 * [HashiCorp Vault GitHub](https://github.com/hashicorp/vault)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cfd009a3-718e-46c1-b509-a1354fc1e2a6/lesson/acf15a9d-4551-4abb-868c-ef19d4b560e5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cfd009a3-718e-46c1-b509-a1354fc1e2a6/lesson/acf15a9d-4551-4abb-868c-ef19d4b560e5)

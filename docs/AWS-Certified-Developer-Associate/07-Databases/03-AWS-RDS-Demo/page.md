@@ -12,7 +12,7 @@ In this guide, you'll learn how to set up and manage a PostgreSQL database insta
 2. Search for "RDS" and navigate to the Amazon RDS dashboard.
 3. Click **Create database**. This button might appear at the top of the page or in another prominent location.
 
-![The image shows the Amazon RDS dashboard, displaying options to create a database and manage resources like DB instances and clusters. It also includes recommendations and additional information links on the right side.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858647/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/amazon-rds-dashboard-database-management.jpg)
+![The image shows the Amazon RDS dashboard, displaying options to create a database and manage resources like DB instances and clusters. It also includes recommendations and additional information links on the right side.](https://kodekloud.com/kk-media/image/upload/v1752858647/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/amazon-rds-dashboard-database-management.jpg)
 
 ## Step 2: Choosing the Creation Method
 
@@ -23,7 +23,7 @@ If you're new to the RDS creation page:
   * **Easy Create** applies best practices automatically.
   * For this demo, select **Standard Create** to access all configuration settings.
 
-![The image shows an AWS RDS interface for creating a database, offering options for standard or easy creation methods and various engine types like Aurora, MySQL, and Oracle.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858649/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/aws-rds-database-creation-interface.jpg)
+![The image shows an AWS RDS interface for creating a database, offering options for standard or easy creation methods and various engine types like Aurora, MySQL, and Oracle.](https://kodekloud.com/kk-media/image/upload/v1752858649/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/aws-rds-database-creation-interface.jpg)
 
 ## Step 3: Configuring the Database Engine
 
@@ -48,7 +48,7 @@ Configure your database instance with these details:
 * **Master Username:** The default for PostgreSQL is "postgres."
 * **Password:** Enter a secure password or let AWS generate one.
 
-![The image shows a configuration screen for setting up a database instance on AWS, with options for deployment and settings like the DB instance identifier and master username.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858651/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/aws-database-instance-configuration.jpg)
+![The image shows a configuration screen for setting up a database instance on AWS, with options for deployment and settings like the DB instance identifier and master username.](https://kodekloud.com/kk-media/image/upload/v1752858651/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/aws-database-instance-configuration.jpg)
 
 ### Instance and Storage Settings
 
@@ -60,7 +60,7 @@ Under **Instance Configuration**:
   * Allocate an appropriate amount (e.g., free tier typically requires at least 100 GB).
   * Enable storage autoscaling if desired.
 
-![The image shows a configuration screen for storage settings, including options for storage type, allocated storage, provisioned IOPS, and storage autoscaling. It includes fields for inputting values and informational notes about the settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858652/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/storage-settings-configuration-screen.jpg)
+![The image shows a configuration screen for storage settings, including options for storage type, allocated storage, provisioned IOPS, and storage autoscaling. It includes fields for inputting values and informational notes about the settings.](https://kodekloud.com/kk-media/image/upload/v1752858652/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/storage-settings-configuration-screen.jpg)
 
 ## Step 5: Establishing Connectivity
 
@@ -72,7 +72,7 @@ Move to the **Connectivity** section and configure the following:
 * Create or select a security group; for this demo, create a new security group named "my DB security group."
 * Choose the preferred availability zone.
 
-![The image shows a configuration screen for setting up an Amazon RDS database, including options for DB subnet group, public access, and VPC security group selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858653/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/amazon-rds-database-configuration.jpg)
+![The image shows a configuration screen for setting up an Amazon RDS database, including options for DB subnet group, public access, and VPC security group selection.](https://kodekloud.com/kk-media/image/upload/v1752858653/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/amazon-rds-database-configuration.jpg)
 
 ## Step 6: Additional Configuration Settings
 
@@ -82,19 +82,19 @@ In the **Additional Configuration** section:
 * You can modify authentication methods if needed, but for this demonstration, we'll use the default password authentication.
 * Other options such as monitoring, backup configurations, encryption, and RDS Proxy remain at their default values.
 
-![The image shows a configuration screen for setting up an Amazon RDS database, including options for RDS Proxy, certificate authority, database port, and authentication methods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858654/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/amazon-rds-database-configuration-2.jpg)
+![The image shows a configuration screen for setting up an Amazon RDS database, including options for RDS Proxy, certificate authority, database port, and authentication methods.](https://kodekloud.com/kk-media/image/upload/v1752858654/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/amazon-rds-database-configuration-2.jpg)
 
 ## Step 7: Creating the Database
 
 Review all settings carefully and click **Create database**. The creation process might take several minutes. When completed, the database status will update and display connectivity information.
 
-![The image shows the Amazon RDS dashboard with a successfully created PostgreSQL database named "my-first-db" that is currently available.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858655/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/amazon-rds-postgresql-dashboard-my-first-db.jpg)
+![The image shows the Amazon RDS dashboard with a successfully created PostgreSQL database named "my-first-db" that is currently available.](https://kodekloud.com/kk-media/image/upload/v1752858655/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/amazon-rds-postgresql-dashboard-my-first-db.jpg)
 
 ## Step 8: Retrieving Connection Details
 
 Select your new database to access its details. You will see the endpoint (acting as a domain name or IP address) and the port number (default PostgreSQL port). These details are vital for connecting your applications to the RDS instance.
 
-![The image shows an Amazon RDS dashboard displaying details of a PostgreSQL database instance, including its endpoint, port, CPU usage, and security settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858656/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/amazon-rds-postgresql-dashboard.jpg)
+![The image shows an Amazon RDS dashboard displaying details of a PostgreSQL database instance, including its endpoint, port, CPU usage, and security settings.](https://kodekloud.com/kk-media/image/upload/v1752858656/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/amazon-rds-postgresql-dashboard.jpg)
 
 ### Connection Information
 
@@ -123,11 +123,11 @@ const knex = require("knex")({
 
 > **lightbulb** You can also manage your PostgreSQL database using pgAdmin, a graphical user interface. Simply create a new server connection in pgAdmin using the RDS endpoint and your credentials.
 
-![The image shows the pgAdmin interface, a management tool for PostgreSQL, with options to create a server group or server and links to documentation and support.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858657/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/pgadmin-interface-server-group-options.jpg)
+![The image shows the pgAdmin interface, a management tool for PostgreSQL, with options to create a server group or server and links to documentation and support.](https://kodekloud.com/kk-media/image/upload/v1752858657/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/pgadmin-interface-server-group-options.jpg)
 
 After entering the connection details in pgAdmin, save the configuration. Your AWS RDS PostgreSQL instance should now be visible within the pgAdmin interface.
 
-![The image shows a pgAdmin interface with a "Create - Server" dialog open, where connection details for a PostgreSQL database are being configured.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858658/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/pgadmin-create-server-dialog.jpg)
+![The image shows a pgAdmin interface with a "Create - Server" dialog open, where connection details for a PostgreSQL database are being configured.](https://kodekloud.com/kk-media/image/upload/v1752858658/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/pgadmin-create-server-dialog.jpg)
 
 ## Step 9: Managing the PostgreSQL Database
 
@@ -146,7 +146,7 @@ If you encounter an SQL integrity error, such as:
 
 Adjust your SQL statements or schema definitions accordingly, and then retry the operation.
 
-![The image shows a pgAdmin 4 dashboard displaying server activity and statistics for a PostgreSQL database, including server sessions, transactions per second, and block I/O metrics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858659/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/pgadmin4-postgresql-server-activity.jpg)
+![The image shows a pgAdmin 4 dashboard displaying server activity and statistics for a PostgreSQL database, including server sessions, transactions per second, and block I/O metrics.](https://kodekloud.com/kk-media/image/upload/v1752858659/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/pgadmin4-postgresql-server-activity.jpg)
 
 > **lightbulb** Always verify your SQL schema definitions to avoid UNIQUE constraint errors during data insertion.
 
@@ -156,7 +156,7 @@ If you need to update configurations later:
 
 * Click **Modify** in the AWS Console to change settings such as the DB engine version, instance identifier, or password management options.
 
-![The image shows an Amazon RDS interface for modifying a database instance named "my-first-db," with settings for DB engine version, instance identifier, and password management options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858660/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/amazon-rds-modify-my-first-db.jpg)
+![The image shows an Amazon RDS interface for modifying a database instance named "my-first-db," with settings for DB engine version, instance identifier, and password management options.](https://kodekloud.com/kk-media/image/upload/v1752858660/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/amazon-rds-modify-my-first-db.jpg)
 
 When the database is no longer required:
 
@@ -164,7 +164,7 @@ When the database is no longer required:
 2. Choose whether to retain snapshots and backups.
 3. Acknowledge the deletion confirmation to permanently remove the instance.
 
-![The image shows a confirmation dialog for deleting a database instance named "my-first-db," with options to create a final snapshot and retain automated backups. A warning advises taking a final snapshot before deletion.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858661/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/delete-database-confirmation-dialog.jpg)
+![The image shows a confirmation dialog for deleting a database instance named "my-first-db," with options to create a final snapshot and retain automated backups. A warning advises taking a final snapshot before deletion.](https://kodekloud.com/kk-media/image/upload/v1752858661/notes-assets/images/AWS-Certified-Developer-Associate-AWS-RDS-Demo/delete-database-confirmation-dialog.jpg)
 
 > **triangle-alert** Deleting your database is irreversible. Ensure you have backups or snapshots if you need to restore your data later.
 

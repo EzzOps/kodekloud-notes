@@ -24,13 +24,9 @@ For long-term memory use the following pattern:
 
 This lets memory survive process restarts and scale across multiple users or sessions while keeping the prompt size manageable.
 
-<Callout icon="lightbulb">
-  Short-term memory exists only while a session or process runs. To retain information across sessions, persist it externally (for example `SQLite`, `Redis`, or a vector database). Retrieve and include only the most relevant items to fit within the model's context window.
-</Callout>
+> **lightbulb** Short-term memory exists only while a session or process runs. To retain information across sessions, persist it externally (for example `SQLite`, `Redis`, or a vector database). Retrieve and include only the most relevant items to fit within the model's context window.
 
-<Callout icon="warning">
-  Be mindful of privacy, security, and data retention when storing user data. Persisted memory may contain sensitive information—apply appropriate encryption, access controls, and retention policies.
-</Callout>
+> **warning** Be mindful of privacy, security, and data retention when storing user data. Persisted memory may contain sensitive information—apply appropriate encryption, access controls, and retention policies.
 
 ## Design considerations
 
@@ -51,9 +47,7 @@ When designing memory for your application, consider:
 
 These resources will help you choose the right memory pattern and persistence mechanism for your LLM application.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/87a18942-f7f0-43fa-a0c4-ceed571b426d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/5bedac05-3eaa-4d0d-9892-e05b80c528fb/lesson/87a18942-f7f0-43fa-a0c4-ceed571b426d)
 
 
 # Model IO
@@ -83,9 +77,7 @@ Key responsibilities at a glance:
 | Response parsing & validation  |   Converts free text into structured types and enforces contracts | Parse JSON or apply schema validation (e.g., JSON Schema, Pydantic, Zod)     |
 | Safety & constraints           | Limits harmful or out-of-scope outputs and reduces hallucinations | Add guardrails in prompts and validate outputs before use                    |
 
-<Callout icon="lightbulb">
-  Model I/O is where most prompt-engineering and output-parsing logic lives. Investing effort here yields more predictable LLM behavior and safer, more maintainable integrations.
-</Callout>
+> **lightbulb** Model I/O is where most prompt-engineering and output-parsing logic lives. Investing effort here yields more predictable LLM behavior and safer, more maintainable integrations.
 
 Common patterns and examples
 

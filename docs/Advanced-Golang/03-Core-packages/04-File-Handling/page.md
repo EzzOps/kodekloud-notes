@@ -15,7 +15,7 @@ Golang provides several packages that simplify file handling operations:
 * **filepath**: Functions for parsing and constructing file paths in a portable manner.
 * **fmt**: Formatting functions for I/O operations, including printing output.
 
-![The image is a slide discussing file handling libraries in programming, highlighting packages like os, io, filepath, and fmt for various file operations and I/O functionalities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868724/notes-assets/images/Advanced-Golang-File-Handling/file-handling-libraries-programming.jpg)
+![The image is a slide discussing file handling libraries in programming, highlighting packages like os, io, filepath, and fmt for various file operations and I/O functionalities.](https://kodekloud.com/kk-media/image/upload/v1752868724/notes-assets/images/Advanced-Golang-File-Handling/file-handling-libraries-programming.jpg)
 
 ## File Path Construction Using the filepath Package
 
@@ -29,7 +29,7 @@ The `filepath` package offers methods to build and manipulate file paths portabl
 
 For example, the **Join** method concatenates path elements using the appropriate OS-specific separator:
 
-![The image is a summary of methods for constructing file paths, including "Join" for portable path construction, "Dir" and "Base" for splitting paths, and "IsAbs" for checking if a path is absolute.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868724/notes-assets/images/Advanced-Golang-File-Handling/file-path-construction-methods-summary.jpg)
+![The image is a summary of methods for constructing file paths, including "Join" for portable path construction, "Dir" and "Base" for splitting paths, and "IsAbs" for checking if a path is absolute.](https://kodekloud.com/kk-media/image/upload/v1752868724/notes-assets/images/Advanced-Golang-File-Handling/file-path-construction-methods-summary.jpg)
 
 ### Example: Using filepath.Join
 

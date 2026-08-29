@@ -18,9 +18,7 @@ Fortunately, Python converts slashes based on the operating system, so you can s
 
 When working with files in Python—or any programming language—you don't directly interact with the file itself. Instead, you work with a stream. A stream is an abstraction that provides methods to perform actions on the underlying file. The first step is connecting to the file using Python's built-in `open` function.
 
-<Frame>
-  ![The image contains text explaining the functions of "open" and "close" in the context of a stream, detailing how to open a file in different modes and close the connection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882910/notes-assets/images/PCAP-Python-Certification-Course-Files-IO-Operations/open-close-stream-functions-explained.jpg)
-</Frame>
+![The image contains text explaining the functions of "open" and "close" in the context of a stream, detailing how to open a file in different modes and close the connection.](https://kodekloud.com/kk-media/image/upload/v1752882910/notes-assets/images/PCAP-Python-Certification-Course-Files-IO-Operations/open-close-stream-functions-explained.jpg)
 
 You can open a file in different modes:
 
@@ -40,9 +38,7 @@ There are two types of streams:
 * **Binary Streams:**\
   These streams consist of sequences of bytes (for example, executables, images, or database files) and display content byte by byte or in blocks.
 
-<Frame>
-  ![The image defines "Text Stream" as a sequence of typographical characters and "Binary Stream" as a sequence of bytes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882911/notes-assets/images/PCAP-Python-Certification-Course-Files-IO-Operations/text-stream-binary-stream-definition.jpg)
-</Frame>
+![The image defines "Text Stream" as a sequence of typographical characters and "Binary Stream" as a sequence of bytes.](https://kodekloud.com/kk-media/image/upload/v1752882911/notes-assets/images/PCAP-Python-Certification-Course-Files-IO-Operations/text-stream-binary-stream-definition.jpg)
 
 A key detail about text files is how line endings are managed. On Unix/Linux systems, a line ends with a single character (LF), while Windows systems typically end lines with a combination of carriage return and line feed (CRLF). This difference can affect file portability. To address this, Python's stream classes perform automatic newline conversion when a file is opened in text mode. During read operations, any recognized newline sequence is translated into the single newline character (`\n`). Conversely, when writing, every newline character (`\n`) is converted into the system’s default sequence (LF on Unix/Linux and CRLF on Windows).
 
@@ -62,13 +58,9 @@ The mode options include:
 
 For binary files, simply append a "b" to the mode, such as "rb" for reading or "wb" for writing.
 
-<Frame>
-  ![The image shows a list of text file modes with their descriptions: "r" for read mode, "w" for write mode, "a" for append mode, "r+" for read and update, and "w+" for write and update.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882912/notes-assets/images/PCAP-Python-Certification-Course-Files-IO-Operations/text-file-modes-descriptions.jpg)
-</Frame>
+![The image shows a list of text file modes with their descriptions: "r" for read mode, "w" for write mode, "a" for append mode, "r+" for read and update, and "w+" for write and update.](https://kodekloud.com/kk-media/image/upload/v1752882912/notes-assets/images/PCAP-Python-Certification-Course-Files-IO-Operations/text-file-modes-descriptions.jpg)
 
-<Frame>
-  ![The image lists binary file modes with their descriptions: "rb" for read mode, "wb" for write mode, "ab" for append mode, "r+b" for read and update, and "w+b" for write and update.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882913/notes-assets/images/PCAP-Python-Certification-Course-Files-IO-Operations/binary-file-modes-descriptions.jpg)
-</Frame>
+![The image lists binary file modes with their descriptions: "rb" for read mode, "wb" for write mode, "ab" for append mode, "r+b" for read and update, and "w+b" for write and update.](https://kodekloud.com/kk-media/image/upload/v1752882913/notes-assets/images/PCAP-Python-Certification-Course-Files-IO-Operations/binary-file-modes-descriptions.jpg)
 
 It is also possible to explicitly include the 't' for text mode, although Python defaults to text mode when no such mode character is specified.
 
@@ -93,13 +85,9 @@ In addition to files that you open manually using the `open` function, there are
 * **stderr:**\
   This stream is used to output error messages when the program encounters an error.
 
-<Frame>
-  ![The image describes three Python system streams: sys.stdin for reading input, sys.stdout for outputting data, and sys.stderr for handling errors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882914/notes-assets/images/PCAP-Python-Certification-Course-Files-IO-Operations/python-system-streams-diagram.jpg)
-</Frame>
+![The image describes three Python system streams: sys.stdin for reading input, sys.stdout for outputting data, and sys.stderr for handling errors.](https://kodekloud.com/kk-media/image/upload/v1752882914/notes-assets/images/PCAP-Python-Certification-Course-Files-IO-Operations/python-system-streams-diagram.jpg)
 
-<Callout icon="lightbulb">
-  When working with file I/O, always ensure you close streams after accessing a file to free system resources. Using Python’s context managers (the `with` statement) can simplify this process by automatically closing the file.
-</Callout>
+> **lightbulb** When working with file I/O, always ensure you close streams after accessing a file to free system resources. Using Python’s context managers (the `with` statement) can simplify this process by automatically closing the file.
 
 Errors can occur when working with files and streams. The `IOError` object includes a property called `errno` (sometimes referred to as `error_node`), which holds constants representing various error conditions. For example:
 
@@ -110,8 +98,6 @@ While there are many error codes, familiarity with the common ones can expedite 
 
 That concludes this lesson on file I/O operations in Python. Head over to the hands-on labs to start practicing and apply what you've just learned.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/f130fee7-a5f4-4c7f-bc8e-ffd6f1b8fdc1/lesson/5f14f6c9-b6de-42a2-8645-3a2b73025504" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/f130fee7-a5f4-4c7f-bc8e-ffd6f1b8fdc1/lesson/5f14f6c9-b6de-42a2-8645-3a2b73025504)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/f130fee7-a5f4-4c7f-bc8e-ffd6f1b8fdc1/lesson/c3a95d5f-c634-42a3-b84a-cc0ab120755e" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/f130fee7-a5f4-4c7f-bc8e-ffd6f1b8fdc1/lesson/c3a95d5f-c634-42a3-b84a-cc0ab120755e)

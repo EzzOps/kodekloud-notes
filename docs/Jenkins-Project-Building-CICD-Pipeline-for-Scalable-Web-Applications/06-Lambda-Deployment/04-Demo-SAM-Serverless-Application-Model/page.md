@@ -6,9 +6,7 @@ This article demonstrates how to develop, deploy, and manage AWS Lambda function
 
 In this guide, we explore how AWS Lambda functions can be developed, deployed, and managed using the AWS Serverless Application Model (SAM). Learn how SAM’s CLI streamlines the entire process—from bootstrapping your code to updating your live application—with simple commands.
 
-<Frame>
-  ![The image shows a webpage from the AWS documentation detailing the prerequisites for using the AWS Serverless Application Model (SAM) CLI, including steps for signing up for an AWS account and configuring credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879958/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-SAM-Serverless-Application-Model/aws-sam-cli-prerequisites-docs.jpg)
-</Frame>
+![The image shows a webpage from the AWS documentation detailing the prerequisites for using the AWS Serverless Application Model (SAM) CLI, including steps for signing up for an AWS account and configuring credentials.](https://kodekloud.com/kk-media/image/upload/v1752879958/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-SAM-Serverless-Application-Model/aws-sam-cli-prerequisites-docs.jpg)
 
 SAM simplifies working with Lambda functions, especially when integrated into a CI/CD pipeline (for example, using Jenkins). With SAM, testing your code and deploying updates is as straightforward as running a single command like `sam deploy`.
 
@@ -18,15 +16,11 @@ SAM simplifies working with Lambda functions, especially when integrated into a 
 
 Before you begin, ensure you have the AWS CLI installed. For detailed instructions, refer to the [AWS CLI installation documentation](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html).
 
-<Frame>
-  ![The image shows a webpage from the AWS documentation site, providing instructions on installing or updating the AWS Command Line Interface (CLI). It includes navigation links and a warning about AWS CLI versions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879959/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-SAM-Serverless-Application-Model/aws-cli-install-update-guide.jpg)
-</Frame>
+![The image shows a webpage from the AWS documentation site, providing instructions on installing or updating the AWS Command Line Interface (CLI). It includes navigation links and a warning about AWS CLI versions.](https://kodekloud.com/kk-media/image/upload/v1752879959/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-SAM-Serverless-Application-Model/aws-cli-install-update-guide.jpg)
 
 After installing the AWS CLI, proceed with installing the AWS SAM CLI. The [AWS SAM documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/install-sam-cli.html) offers guidance, including options like Homebrew for macOS users.
 
-<Frame>
-  ![The image shows a webpage from the AWS documentation site, specifically the section on installing the AWS SAM CLI. It includes instructions and notes about using Homebrew for installation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879960/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-SAM-Serverless-Application-Model/aws-sam-cli-installation-homebrew.jpg)
-</Frame>
+![The image shows a webpage from the AWS documentation site, specifically the section on installing the AWS SAM CLI. It includes instructions and notes about using Homebrew for installation.](https://kodekloud.com/kk-media/image/upload/v1752879960/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-SAM-Serverless-Application-Model/aws-sam-cli-installation-homebrew.jpg)
 
 Once the SAM CLI is installed, verify the version using:
 
@@ -72,9 +66,7 @@ Would you like to enable X-Ray tracing on the function(s) in your application? [
 
 You can disable X-Ray tracing and CloudWatch monitoring for this demonstration. Finally, opt for structured JSON logging and provide a project name (keeping the default `sam-app` is acceptable).
 
-<Frame>
-  ![The image shows a terminal window in a code editor where a user is selecting an AWS Quick Start application template for a Lambda function. Various options and configurations are displayed, such as enabling X-Ray tracing and structured logging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879961/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-SAM-Serverless-Application-Model/aws-quick-start-lambda-template.jpg)
-</Frame>
+![The image shows a terminal window in a code editor where a user is selecting an AWS Quick Start application template for a Lambda function. Various options and configurations are displayed, such as enabling X-Ray tracing and structured logging.](https://kodekloud.com/kk-media/image/upload/v1752879961/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-SAM-Serverless-Application-Model/aws-quick-start-lambda-template.jpg)
 
 After confirmation, SAM CLI creates a new directory (e.g., `sam-app`) with the project structure, including the crucial `template.yaml` file that defines AWS resources. Below is an example of a simplified `template.yaml`:
 
@@ -204,9 +196,7 @@ Test the endpoint in a browser or use a tool like curl:
 
 You can also verify the deployment in the AWS Lambda console:
 
-<Frame>
-  ![The image shows the AWS Lambda console with no functions listed, displaying options to create a new function and filter existing ones. The sidebar includes additional resources and related AWS resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879962/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-SAM-Serverless-Application-Model/aws-lambda-console-no-functions.jpg)
-</Frame>
+![The image shows the AWS Lambda console with no functions listed, displaying options to create a new function and filter existing ones. The sidebar includes additional resources and related AWS resources.](https://kodekloud.com/kk-media/image/upload/v1752879962/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-SAM-Serverless-Application-Model/aws-lambda-console-no-functions.jpg)
 
 ***
 
@@ -222,15 +212,11 @@ Enter your AWS access key, secret access key, preferred region (e.g., us-east-1)
 
 If you need to create or manage these credentials, log in to the AWS Management Console, navigate to IAM → Users → \[Your User] → Security credentials, and create a new access key.
 
-<Frame>
-  ![The image shows an AWS Identity and Access Management (IAM) user details page, displaying user summary information, permissions policies, and options to manage access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879964/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-SAM-Serverless-Application-Model/aws-iam-user-details-page.jpg)
-</Frame>
+![The image shows an AWS Identity and Access Management (IAM) user details page, displaying user summary information, permissions policies, and options to manage access.](https://kodekloud.com/kk-media/image/upload/v1752879964/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-SAM-Serverless-Application-Model/aws-iam-user-details-page.jpg)
 
 Follow the on-screen instructions to generate a new access key:
 
-<Frame>
-  ![The image shows an AWS IAM console screen for creating an access key, with options for different use cases like Command Line Interface, local code, and third-party services. The interface includes a navigation menu on the left and a "Next" button at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879965/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-SAM-Serverless-Application-Model/aws-iam-access-key-creation.jpg)
-</Frame>
+![The image shows an AWS IAM console screen for creating an access key, with options for different use cases like Command Line Interface, local code, and third-party services. The interface includes a navigation menu on the left and a "Next" button at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752879965/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Demo-SAM-Serverless-Application-Model/aws-iam-access-key-creation.jpg)
 
 After configuring your credentials, rerun `sam deploy` to complete the deployment process.
 
@@ -326,6 +312,4 @@ With this configuration, integrating SAM deployment commands into a Jenkins-base
 
 This article demonstrates how the AWS SAM CLI can simplify the development, deployment, and updating of serverless applications. With consistent commands for both local environments and CI/CD pipelines, managing Lambda-based applications has never been easier.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/ddd997d7-0eea-4fa7-8265-5feeb01301e8/lesson/432c4bdb-cc32-4c79-a75c-bcd1fab69b82" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/ddd997d7-0eea-4fa7-8265-5feeb01301e8/lesson/432c4bdb-cc32-4c79-a75c-bcd1fab69b82)

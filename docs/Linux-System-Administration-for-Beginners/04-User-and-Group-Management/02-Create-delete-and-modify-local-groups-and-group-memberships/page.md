@@ -69,10 +69,8 @@ You can adjust soft limits on the fly:
 ulimit -u 5000
 ```
 
-<Callout icon="lightbulb">
-  Changes take effect on new sessions. Log out and back in to apply updates.\
+> **lightbulb** Changes take effect on new sessions. Log out and back in to apply updates.\
   Use `ulimit -a` to inspect all current limits.
-</Callout>
 
 ***
 
@@ -82,9 +80,7 @@ ulimit -u 5000
 * [Linux Manual: limits.conf(5)](https://man7.org/linux/man-pages/man5/limits.conf.5.html)
 * [ulimit Builtin](https://www.gnu.org/software/bash/manual/html_node/The-Set-Builtin.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/7e2b6f48-e58c-4d05-82e2-feb0f5f876f5/lesson/62174b1a-cb2b-488e-adb3-47b9a339efc1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/7e2b6f48-e58c-4d05-82e2-feb0f5f876f5/lesson/62174b1a-cb2b-488e-adb3-47b9a339efc1)
 
 
 # Create delete and modify local groups and group memberships
@@ -110,9 +106,7 @@ Instead of adjusting permissions per user, you can:
 3. Change the directory’s group ownership to **developers**
 4. Grant the group read/write rights
 
-<Frame>
-  ![The image shows a diagram of a "Developers" group with members named John, Jack, and Jane, alongside a folder icon labeled "Permission."](../../../../images/kodekloud.com/kk-media/image/upload/v1752881493/notes-assets/images/Linux-System-Administration-for-Beginners-Create-delete-and-modify-local-groups-and-group-memberships/developers-group-john-jack-jane-permission.jpg)
-</Frame>
+![The image shows a diagram of a "Developers" group with members named John, Jack, and Jane, alongside a folder icon labeled "Permission."](https://kodekloud.com/kk-media/image/upload/v1752881493/notes-assets/images/Linux-System-Administration-for-Beginners-Create-delete-and-modify-local-groups-and-group-memberships/developers-group-john-jack-jane-permission.jpg)
 
 Now any member of **developers** automatically has the correct permissions. Remove a user from the group to revoke access, or add new members to grant permissions instantly.
 
@@ -121,9 +115,7 @@ Beyond file access, group membership controls special privileges:
 * **wheel** or **sudo** group → run commands as root
 * **docker** group → manage [Docker containers](https://docs.docker.com/get-started/)
 
-<Callout icon="lightbulb">
-  Each user has one **primary** group (used when creating files or running processes) and zero or more **secondary** groups.
-</Callout>
+> **lightbulb** Each user has one **primary** group (used when creating files or running processes) and zero or more **secondary** groups.
 
 ## Creating a User and a Group
 

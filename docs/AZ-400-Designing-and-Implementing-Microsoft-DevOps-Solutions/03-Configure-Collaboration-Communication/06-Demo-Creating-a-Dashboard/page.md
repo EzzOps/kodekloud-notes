@@ -22,7 +22,7 @@ Simulate a live update to verify automatic refresh:
 2. Find a work item (e.g., “Services has a bug.”).
 3. Open it, assign it to yourself (e.g., Jeremy Morgan), and save.
 
-![The image shows a project management interface with a list of work items, including details like ID, title, assigned person, state, and activity date. A cursor is hovering over an item titled "Services has a bug."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867433/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Dashboard/project-management-interface-work-items-bug.jpg)
+![The image shows a project management interface with a list of work items, including details like ID, title, assigned person, state, and activity date. A cursor is hovering over an item titled "Services has a bug."](https://kodekloud.com/kk-media/image/upload/v1752867433/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Dashboard/project-management-interface-work-items-bug.jpg)
 
 Return to your dashboard. The **Assigned to Me** widget refreshes instantly, showing your newly assigned bug.
 
@@ -51,7 +51,7 @@ Drag each widget onto the grid. For optimal layout:
 * **Center**: Assigned work and cycle time
 * **Right**: Burndown and workload charts
 
-![The image shows a dashboard interface with widgets for build health overview and work assignments, alongside options to add more widgets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867434/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Dashboard/dashboard-interface-build-health-widgets.jpg)
+![The image shows a dashboard interface with widgets for build health overview and work assignments, alongside options to add more widgets.](https://kodekloud.com/kk-media/image/upload/v1752867434/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Dashboard/dashboard-interface-build-health-widgets.jpg)
 
 When done, click **Done Editing**.
 
@@ -59,7 +59,7 @@ When done, click **Done Editing**.
 
 If your project has sparse data, some widgets display **No results** until builds or items populate them.
 
-![The image shows a dashboard interface with various widgets displaying information such as build status, work assignments, and cycle time, all indicating no results or data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867435/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Dashboard/dashboard-interface-widgets-no-data.jpg)
+![The image shows a dashboard interface with various widgets displaying information such as build status, work assignments, and cycle time, all indicating no results or data.](https://kodekloud.com/kk-media/image/upload/v1752867435/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Dashboard/dashboard-interface-widgets-no-data.jpg)
 
 > **lightbulb** Empty widgets may look sparse at first. As your pipelines run and work items update, they’ll populate automatically.
 
@@ -77,7 +77,7 @@ As a development lead, consider adding:
 
 Your morning glance now shows work items, PRs, builds, burndown, and velocity—all at once.
 
-![The image shows a dashboard interface with various widgets displaying project management metrics, such as work assignments, burndown charts, and pull requests. Some widgets indicate no data or require configuration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867437/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Dashboard/project-management-dashboard-widgets-metrics.jpg)
+![The image shows a dashboard interface with various widgets displaying project management metrics, such as work assignments, burndown charts, and pull requests. Some widgets indicate no data or require configuration.](https://kodekloud.com/kk-media/image/upload/v1752867437/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Dashboard/project-management-dashboard-widgets-metrics.jpg)
 
 ## Best Practices
 
@@ -102,13 +102,13 @@ When a widget fails to load (e.g., unhandled exception or invalid JSON), reconfi
 2. Connect to your repo (e.g., **SmartHotel360** under **KodeKloud Hotel**).
 3. Use the starter template, then save and run.
 
-![The image shows a software interface for selecting a repository, with options for "PublicWeb" and "SmartHotel360" under the "KodeKloud Hotel" project. A cursor is hovering over "SmartHotel360."](../../../../images/kodekloud.com/kk-media/image/upload/v1752867438/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Dashboard/kodekloud-hotel-repository-selection-interface.jpg)
+![The image shows a software interface for selecting a repository, with options for "PublicWeb" and "SmartHotel360" under the "KodeKloud Hotel" project. A cursor is hovering over "SmartHotel360."](https://kodekloud.com/kk-media/image/upload/v1752867438/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Dashboard/kodekloud-hotel-repository-selection-interface.jpg)
 
 4. Return to **Dashboards**, edit the widget, attach the new pipeline, and save.
 
 Your dashboard will now render correctly:
 
-![The image shows a project management dashboard for "KodeKloud Hotel Team," featuring various charts and metrics related to work assignments, team velocity, build health, and backlog items. It includes visual elements like pie charts, bar graphs, and tiles displaying work progress and issues.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867440/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Dashboard/kodekloud-hotel-team-dashboard-metrics.jpg)
+![The image shows a project management dashboard for "KodeKloud Hotel Team," featuring various charts and metrics related to work assignments, team velocity, build health, and backlog items. It includes visual elements like pie charts, bar graphs, and tiles displaying work progress and issues.](https://kodekloud.com/kk-media/image/upload/v1752867440/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Dashboard/kodekloud-hotel-team-dashboard-metrics.jpg)
 
 ## Exploring the Widget Gallery
 
@@ -124,7 +124,7 @@ Discover more widgets:
 1. Click **Add Widget**.
 2. Browse categories and click **Add** next to any widget.
 
-![The image shows a project management dashboard with various widgets displaying work items, burndown charts, and backlog information. There is also a sidebar for adding new widgets like lead time, markdown, and pull requests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867441/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Dashboard/project-management-dashboard-widgets.jpg)
+![The image shows a project management dashboard with various widgets displaying work items, burndown charts, and backlog information. There is also a sidebar for adding new widgets like lead time, markdown, and pull requests.](https://kodekloud.com/kk-media/image/upload/v1752867441/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Dashboard/project-management-dashboard-widgets.jpg)
 
 ## Using Extensions
 
@@ -134,7 +134,7 @@ For richer dashboards, explore the [Visual Studio Marketplace](https://marketpla
 2. Search for “Azure DevOps” extensions.
 3. Install free or paid widgets (e.g., [SonarCloud](https://sonarcloud.io/), Gantt charts).
 
-![The image shows a webpage from the Visual Studio Marketplace featuring extensions for Azure DevOps, with sections for "Featured," "Most Popular," and "Recently Added" extensions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867442/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Dashboard/visual-studio-marketplace-azure-devops-extensions.jpg)
+![The image shows a webpage from the Visual Studio Marketplace featuring extensions for Azure DevOps, with sections for "Featured," "Most Popular," and "Recently Added" extensions.](https://kodekloud.com/kk-media/image/upload/v1752867442/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Demo-Creating-a-Dashboard/visual-studio-marketplace-azure-devops-extensions.jpg)
 
 ## Conclusion
 

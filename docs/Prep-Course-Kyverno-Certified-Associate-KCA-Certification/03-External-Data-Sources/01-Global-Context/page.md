@@ -146,9 +146,7 @@ spec:
 
 At KodeKloud, we foster an active learning community where you can ask questions, share insights, and collaborate with fellow learners—enhancing your hands-on experience.
 
-<Callout icon="lightbulb">
-  This course is hands-on: expect labs, real cluster exercises, and mock exams. Apply policies in a live environment to cement your understanding.
-</Callout>
+> **lightbulb** This course is hands-on: expect labs, real cluster exercises, and mock exams. Apply policies in a live environment to cement your understanding.
 
 Are you ready to master Kyverno and become a Kubernetes Policy Expert?
 
@@ -159,9 +157,7 @@ Links and references
 * KCA Exam Overview: [https://kyverno.io/certification/](https://kyverno.io/certification/) (refer to the official Kyverno site for the latest exam details)
 * KodeKloud courses and community: [https://www.kodekloud.com/](https://www.kodekloud.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/fbb5f757-2fb5-45db-89d9-93dca14f77b7/lesson/c7c73ceb-38b3-4300-94f0-b1e9331a8d18" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/fbb5f757-2fb5-45db-89d9-93dca14f77b7/lesson/c7c73ceb-38b3-4300-94f0-b1e9331a8d18)
 
 
 # Global Context
@@ -280,9 +276,7 @@ spec:
         -----END CERTIFICATE-----
 ```
 
-<Callout icon="lightbulb">
-  When using an internal HTTPS `service`, include the `caBundle` only if the service uses a private CA. Public CA-signed certificates do not require `caBundle`.
-</Callout>
+> **lightbulb** When using an internal HTTPS `service`, include the `caBundle` only if the service uses a private CA. Public CA-signed certificates do not require `caBundle`.
 
 ## Choosing the right type — quick comparison
 
@@ -326,9 +320,7 @@ Notes on the example:
 * The `deploymentCount` context variable receives the numeric result of the JMESPath `length(@)` expression.
 * The `validate.deny` condition blocks Pod creation when `deploymentCount` equals `0`.
 
-<Callout icon="lightbulb">
-  The `name` under `globalReference` must exactly match the GlobalContextEntry `metadata.name`. Use JMESPath to shape the cached payload for your policy logic.
-</Callout>
+> **lightbulb** The `name` under `globalReference` must exactly match the GlobalContextEntry `metadata.name`. Use JMESPath to shape the cached payload for your policy logic.
 
 ## Summary
 
@@ -351,6 +343,4 @@ Links and references
 * JMESPath query language: [https://jmespath.org/](https://jmespath.org/)
 * Kubernetes informers (controller pattern): [https://kubernetes.io/docs/reference/using-api/api-concepts/#watch-operations](https://kubernetes.io/docs/reference/using-api/api-concepts/#watch-operations)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/470bb961-febf-41b6-b75b-4c439def6eae/lesson/8f3ed83d-5b87-440c-88e6-c69509e7c582" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/470bb961-febf-41b6-b75b-4c439def6eae/lesson/8f3ed83d-5b87-440c-88e6-c69509e7c582)

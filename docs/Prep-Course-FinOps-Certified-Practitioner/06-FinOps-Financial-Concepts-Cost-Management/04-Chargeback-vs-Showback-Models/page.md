@@ -36,9 +36,7 @@ The table below summarizes core differences and operational requirements between
 | Behavior change           | Moderate — nudges teams to investigate spend.            | Strong — direct incentive to optimize because costs affect budgets.                  |
 | Typical first step?       | Yes — often used to build culture and validate tracking. | After maturity — adopt once allocation is trusted and accepted.                      |
 
-<Callout icon="lightbulb">
-  Showback is a low-friction entry point to FinOps: it builds visibility and cultural awareness. Chargeback delivers stronger incentives but depends on reliable cost allocation, governance, and organizational buy‑in.
-</Callout>
+> **lightbulb** Showback is a low-friction entry point to FinOps: it builds visibility and cultural awareness. Chargeback delivers stronger incentives but depends on reliable cost allocation, governance, and organizational buy‑in.
 
 ## When to use each approach
 
@@ -75,9 +73,7 @@ Requirements and best practices:
   <img alt="The image shows a comparison between &#x22;Showback Use Cases&#x22; and &#x22;Chargeback Use Cases&#x22; for FinOps adoption. It lists contexts like early adoption and shared services for showback, and mature programs and cost optimization for chargeback." />
 </Frame>
 
-<Callout icon="warning">
-  Avoid applying chargeback prematurely—charging dev teams for exploratory or iterative work can reduce velocity and create friction. Only move to chargeback after tagging, allocation methods, and stakeholder alignment are proven.
-</Callout>
+> **warning** Avoid applying chargeback prematurely—charging dev teams for exploratory or iterative work can reduce velocity and create friction. Only move to chargeback after tagging, allocation methods, and stakeholder alignment are proven.
 
 ## Additional considerations
 
@@ -110,6 +106,4 @@ Requirements and best practices:
 
 That’s it for this lesson. See you in the next one.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/852ca356-178d-4de2-b93c-3d3ca8586e68" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/852ca356-178d-4de2-b93c-3d3ca8586e68)

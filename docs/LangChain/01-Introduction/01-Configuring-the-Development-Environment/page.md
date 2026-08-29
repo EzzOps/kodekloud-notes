@@ -1,9 +1,7 @@
 # DB_PASSWORD=password1
 ```
 
-<Callout icon="triangle-alert">
-  Kubernetes does **not** automatically redeploy pods when a referenced ConfigMap or Secret is updated. You must manually trigger a restart.
-</Callout>
+> **triangle-alert** Kubernetes does **not** automatically redeploy pods when a referenced ConfigMap or Secret is updated. You must manually trigger a restart.
 
 ## Manual Rollout Restart
 
@@ -50,9 +48,7 @@ In the next section, we’ll introduce config generators to automate this proces
 * [kubectl rollout restart](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#rollout)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/51823d3e-7be4-4792-836a-2c4690c0c547/lesson/1481509c-b71c-4836-8e1b-d55117f5c673" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/51823d3e-7be4-4792-836a-2c4690c0c547/lesson/1481509c-b71c-4836-8e1b-d55117f5c673)
 
 
 # Configuring the Development Environment

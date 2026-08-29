@@ -32,7 +32,7 @@ It is crucial to note that the subnet block size must be between /16 and /28. Ad
 
 When configuring subnets, refer to the diagram below which illustrates the structure of subnetting within a VPC. It details CIDR ranges, reserved IP addresses, and the division of public subnets across different Availability Zones.
 
-![The image explains subnetting within a VPC, detailing CIDR ranges, reserved IP addresses, and public subnets in availability zones. It includes a diagram showing a default VPC with public subnets in two availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859258/notes-assets/images/AWS-Certified-Developer-Associate-Subnets/subnetting-vpc-cidr-diagram.jpg)
+![The image explains subnetting within a VPC, detailing CIDR ranges, reserved IP addresses, and public subnets in availability zones. It includes a diagram showing a default VPC with public subnets in two availability zones.](https://kodekloud.com/kk-media/image/upload/v1752859258/notes-assets/images/AWS-Certified-Developer-Associate-Subnets/subnetting-vpc-cidr-diagram.jpg)
 
 ## Additional Subnet Considerations
 
@@ -54,7 +54,7 @@ The following diagram presents various subnet configuration options and emphasiz
 * Optionally, a subnet can be assigned an IPv6 CIDR block.
 * Public subnets can be configured to enable external access.
 
-![The image illustrates subnet configuration options within a VPC, highlighting that subnets cannot overlap, can allow optional IPv6 CIDR, and can be configured for IPv6 only. It includes a diagram showing two public subnets in different availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859260/notes-assets/images/AWS-Certified-Developer-Associate-Subnets/vpc-subnet-configuration-diagram.jpg)
+![The image illustrates subnet configuration options within a VPC, highlighting that subnets cannot overlap, can allow optional IPv6 CIDR, and can be configured for IPv6 only. It includes a diagram showing two public subnets in different availability zones.](https://kodekloud.com/kk-media/image/upload/v1752859260/notes-assets/images/AWS-Certified-Developer-Associate-Subnets/vpc-subnet-configuration-diagram.jpg)
 
 ## Summary
 

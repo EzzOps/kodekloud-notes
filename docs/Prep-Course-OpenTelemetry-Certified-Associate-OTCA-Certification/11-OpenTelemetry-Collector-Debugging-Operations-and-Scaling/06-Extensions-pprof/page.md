@@ -14,9 +14,7 @@ extensions:
     endpoint: "0.0.0.0:1777"
 ```
 
-<Callout icon="lightbulb">
-  pprof exposes low-level runtime profiles (CPU, heap, goroutines, mutex contention, etc.). Use it only when diagnosing performance issues or performing targeted profiling—do not leave it exposed in production without access controls.
-</Callout>
+> **lightbulb** pprof exposes low-level runtime profiles (CPU, heap, goroutines, mutex contention, etc.). Use it only when diagnosing performance issues or performing targeted profiling—do not leave it exposed in production without access controls.
 
 Once enabled, the pprof endpoint provides several runtime profiles. The most commonly used profiles are:
 

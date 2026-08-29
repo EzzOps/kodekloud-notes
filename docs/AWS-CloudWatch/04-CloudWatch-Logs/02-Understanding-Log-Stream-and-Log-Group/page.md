@@ -28,7 +28,7 @@ Within a log group, you can configure:
 * **Metric filters**: Generate CloudWatch metrics from log patterns
 * **Access control**: IAM policies governing who can view or manage logs
 
-![The image explains the concepts of AWS CloudWatch Log Stream and Log Group, showing that a Log Group contains multiple Log Streams.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862471/notes-assets/images/AWS-CloudWatch-Understanding-Log-Stream-and-Log-Group/aws-cloudwatch-log-group-streams-diagram.jpg)
+![The image explains the concepts of AWS CloudWatch Log Stream and Log Group, showing that a Log Group contains multiple Log Streams.](https://kodekloud.com/kk-media/image/upload/v1752862471/notes-assets/images/AWS-CloudWatch-Understanding-Log-Stream-and-Log-Group/aws-cloudwatch-log-group-streams-diagram.jpg)
 
 > **triangle-alert** Setting a very long retention period can increase storage costs. Review your compliance requirements before adjusting retention.
 

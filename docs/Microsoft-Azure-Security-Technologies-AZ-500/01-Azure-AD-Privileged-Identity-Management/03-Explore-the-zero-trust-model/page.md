@@ -23,9 +23,7 @@ Zero Trust is built on three fundamental principles:
 
 Integrating Microsoft solutions such as Azure Active Directory (Azure AD), Privileged Identity Management (PIM), and Azure Firewall with Zero Trust principles creates an intelligent, adaptive security structure. Every access request is treated as if it originates from an untrusted source, ensuring ongoing verification and risk mitigation.
 
-<Callout icon="lightbulb">
-  Using Microsoft’s advanced security features in tandem with Zero Trust not only strengthens verification processes but also enhances the resilience of your cybersecurity framework.
-</Callout>
+> **lightbulb** Using Microsoft’s advanced security features in tandem with Zero Trust not only strengthens verification processes but also enhances the resilience of your cybersecurity framework.
 
 ## Security Mechanisms and Policy Enforcement
 
@@ -60,6 +58,4 @@ This guide also highlights Azure AD Privileged Identity Management (PIM) as a cr
 
 Thanks for reading.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/4c177d01-df52-459d-8089-073ff3170c4f/lesson/b3985e46-c6cb-40dd-b696-556011524755" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/4c177d01-df52-459d-8089-073ff3170c4f/lesson/b3985e46-c6cb-40dd-b696-556011524755)

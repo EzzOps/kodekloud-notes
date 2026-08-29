@@ -6,9 +6,7 @@ This article explains the `retryable_errors` attribute in Terragrunt for automat
 
 In this lesson, we’ll dive into the `retryable_errors` attribute in Terragrunt. By defining a list of error messages or regular expressions, you can instruct Terragrunt to automatically retry Terraform commands whenever a matching error occurs. This feature is particularly useful for environments prone to transient failures, such as network glitches or API throttling.
 
-<Frame>
-  ![The image illustrates the "retryable\_errors" attribute, showing a list of errors on the left and their usage with a gear and a logo on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884279/notes-assets/images/Terragrunt-for-Beginners-retryable-errors-Attribute/retryable-errors-attribute-illustration.jpg)
-</Frame>
+![The image illustrates the "retryable\_errors" attribute, showing a list of errors on the left and their usage with a gear and a logo on the right.](https://kodekloud.com/kk-media/image/upload/v1752884279/notes-assets/images/Terragrunt-for-Beginners-retryable-errors-Attribute/retryable-errors-attribute-illustration.jpg)
 
 ## Why Automatic Retries Matter
 
@@ -20,13 +18,9 @@ Automatic retries eliminate the need for manual intervention when fleeting issue
 
 Terragrunt will keep retrying until either the command succeeds or it hits the maximum retry count.
 
-<Callout icon="triangle-alert">
-  Use `retryable_errors` sparingly. Only include patterns that truly represent transient failures to avoid masking legitimate configuration errors.
-</Callout>
+> **triangle-alert** Use `retryable_errors` sparingly. Only include patterns that truly represent transient failures to avoid masking legitimate configuration errors.
 
-<Frame>
-  ![The image explains the "retryable\_errors" attribute, highlighting the benefits of automatic retry commands and the consideration to carefully choose retriable errors.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884280/notes-assets/images/Terragrunt-for-Beginners-retryable-errors-Attribute/retryable-errors-automatic-retry-benefits.jpg)
-</Frame>
+![The image explains the "retryable\_errors" attribute, highlighting the benefits of automatic retry commands and the consideration to carefully choose retriable errors.](https://kodekloud.com/kk-media/image/upload/v1752884280/notes-assets/images/Terragrunt-for-Beginners-retryable-errors-Attribute/retryable-errors-automatic-retry-benefits.jpg)
 
 ## Common Error Categories
 
@@ -70,9 +64,7 @@ retryable_errors = [
 ]
 ```
 
-<Callout icon="lightbulb">
-  Adjust each regex to match the exact error text your builds produce. Test patterns locally with tools like `grep -P` or [regex101](https://regex101.com/) before adding them to your configuration.
-</Callout>
+> **lightbulb** Adjust each regex to match the exact error text your builds produce. Test patterns locally with tools like `grep -P` or [regex101](https://regex101.com/) before adding them to your configuration.
 
 ***
 
@@ -83,6 +75,4 @@ With `retryable_errors` in place, you can run Terragrunt commands with increased
 * [Terragrunt Documentation: retryable\_errors](https://terragrunt.gruntwork.io/docs/reference/config-blocks/retryable_errors/)
 * [Terraform Regular Expressions](https://www.terraform.io/docs/language/expressions/regex.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/b79dae57-7ef4-4381-98c0-6731e850dbc0" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/1a2a45b4-e7d1-4af2-a897-7ebf83a4350e/lesson/b79dae57-7ef4-4381-98c0-6731e850dbc0)

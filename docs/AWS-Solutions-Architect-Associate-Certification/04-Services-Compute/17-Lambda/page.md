@@ -16,13 +16,13 @@ Imagine an e-commerce website experiencing a surge in traffic during the holiday
 
 A typical use case for Lambda is processing files in an [Amazon S3](https://learn.kodekloud.com/user/courses/amazon-simple-storage-service-amazon-s3) bucket. For example, a video-sharing platform might trigger a Lambda function automatically when a user uploads a video file. The function can process the file by converting it into the correct format or generating multiple resolutions (480p, 720p, 1080p, 2K, and 4K) suitable for various devices. This design is illustrated in the diagram below:
 
-![The image illustrates a data flow involving an input S3 bucket, a Lambda function, and an output S3 bucket, showing the process of data transformation or processing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864972/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda/data-flow-s3-lambda-transformation.jpg)
+![The image illustrates a data flow involving an input S3 bucket, a Lambda function, and an output S3 bucket, showing the process of data transformation or processing.](https://kodekloud.com/kk-media/image/upload/v1752864972/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda/data-flow-s3-lambda-transformation.jpg)
 
 ## Building APIs with Amazon API Gateway and Lambda
 
 AWS Lambda can be integrated with Amazon API Gateway to build robust, scalable APIs. In this architecture, API Gateway handles incoming HTTP requests and routes them to designated Lambda functions that process the requests based on the URL and HTTP method. This serverless setup can also connect with databases like Amazon DynamoDB, creating a complete, efficient backend system. The following diagram demonstrates this architecture:
 
-![The image is a flow diagram showing a process involving Amazon API Gateway, a Lambda Function, and Amazon DynamoDB, illustrating a serverless architecture.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864974/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda/amazon-api-gateway-lambda-dynamodb-diagram.jpg)
+![The image is a flow diagram showing a process involving Amazon API Gateway, a Lambda Function, and Amazon DynamoDB, illustrating a serverless architecture.](https://kodekloud.com/kk-media/image/upload/v1752864974/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda/amazon-api-gateway-lambda-dynamodb-diagram.jpg)
 
 ## Key Benefits and Features
 
@@ -35,6 +35,6 @@ AWS Lambda offers several powerful features that make it a preferred solution fo
 
 The diagram below encapsulates these features:
 
-![The image lists four features: Serverless, Event-Driven, Language Support, and Fault Tolerance, each represented with an icon and a gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864975/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda/serverless-event-driven-features-icons.jpg)
+![The image lists four features: Serverless, Event-Driven, Language Support, and Fault Tolerance, each represented with an icon and a gradient background.](https://kodekloud.com/kk-media/image/upload/v1752864975/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Lambda/serverless-event-driven-features-icons.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-solutions-architect-associate-certification/module/afe0c951-fe76-47f2-9fc4-18858721be70/lesson/fe35d9f2-51f1-4fde-8e5e-f2d59586e76d)

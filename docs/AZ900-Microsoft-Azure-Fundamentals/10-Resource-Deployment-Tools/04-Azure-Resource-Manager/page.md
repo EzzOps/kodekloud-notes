@@ -20,7 +20,7 @@ Before the introduction of ARM, Azure deployed resources using the Azure Service
 
 > **lightbulb** Using ARM ensures that all resource management operations are centralized, consistent, and validated, which enhances both reliability and security.
 
-![The image is a diagram of the Azure Resource Manager, showing its integration with Azure Portal, Azure PowerShell, Azure CLI, and REST Client, and its connection to services like Data Store, Web App, Virtual Machine, and Service Management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868490/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Resource-Manager/azure-resource-manager-diagram.jpg)
+![The image is a diagram of the Azure Resource Manager, showing its integration with Azure Portal, Azure PowerShell, Azure CLI, and REST Client, and its connection to services like Data Store, Web App, Virtual Machine, and Service Management.](https://kodekloud.com/kk-media/image/upload/v1752868490/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Resource-Manager/azure-resource-manager-diagram.jpg)
 
 In summary, Azure Resource Manager is a robust management layer that validates and executes requests to create, update, and delete resources, guaranteeing streamlined and secure operations across your Azure environment.
 

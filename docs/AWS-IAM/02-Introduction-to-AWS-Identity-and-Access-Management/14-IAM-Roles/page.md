@@ -13,7 +13,7 @@ AWS Identity and Access Management (IAM) roles enable secure, temporary access t
 | Trust Policy       | Defines which principals (services, users, or accounts) can assume the role | EC2 service: `ec2.amazonaws.com`                 |
 | Temporary Tokens   | Short-lived credentials issued by AWS STS                                   | `AccessKeyId`, `SecretAccessKey`, `SessionToken` |
 
-![The image explains IAM roles, highlighting their use for access control, adherence to the principle of least privilege, creation of temporary credentials, and establishment of trust relationships.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863063/notes-assets/images/AWS-IAM-IAM-Roles/iam-roles-access-control-diagram.jpg)
+![The image explains IAM roles, highlighting their use for access control, adherence to the principle of least privilege, creation of temporary credentials, and establishment of trust relationships.](https://kodekloud.com/kk-media/image/upload/v1752863063/notes-assets/images/AWS-IAM-IAM-Roles/iam-roles-access-control-diagram.jpg)
 
 ## How IAM Roles Enhance Security
 
@@ -28,13 +28,13 @@ Instead of hard-coding long-term AWS keys:
 
 ### Role Assumption Flow
 
-![The image illustrates a process for increasing security using IAM roles, showing the flow from an IAM user assuming a role, applying a policy, accessing an S3 role, and obtaining temporary keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863064/notes-assets/images/AWS-IAM-IAM-Roles/iam-roles-security-process-diagram.jpg)
+![The image illustrates a process for increasing security using IAM roles, showing the flow from an IAM user assuming a role, applying a policy, accessing an S3 role, and obtaining temporary keys.](https://kodekloud.com/kk-media/image/upload/v1752863064/notes-assets/images/AWS-IAM-IAM-Roles/iam-roles-security-process-diagram.jpg)
 
 Roles can be assumed not only by IAM users but also by AWS services such as EC2, Lambda, and ECS. The permissions come from attached policies, while the trust policy specifies who can assume the role.
 
 ### AWS Components Interaction
 
-![The image is a diagram illustrating the relationship between AWS components: EC2 Service, S3 Bucket, IAM Role, IAM Policy, and IAM User. It shows how these components interact with each other in an AWS IAM Role setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863065/notes-assets/images/AWS-IAM-IAM-Roles/aws-ec2-s3-iam-relationship-diagram.jpg)
+![The image is a diagram illustrating the relationship between AWS components: EC2 Service, S3 Bucket, IAM Role, IAM Policy, and IAM User. It shows how these components interact with each other in an AWS IAM Role setup.](https://kodekloud.com/kk-media/image/upload/v1752863065/notes-assets/images/AWS-IAM-IAM-Roles/aws-ec2-s3-iam-relationship-diagram.jpg)
 
 ***
 

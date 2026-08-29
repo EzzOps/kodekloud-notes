@@ -23,7 +23,7 @@ Maintaining control over the components in your software supply chain starts wit
 * **Azure Artifacts for Distribution**\
   Use [Azure Artifacts](https://learn.microsoft.com/en-us/azure/devops/artifacts/overview) to store, share, and manage NuGet, npm, Maven, Gradle, Universal, and Python packages.
 
-![The image outlines package management strategies in software composition analysis, focusing on maintaining a singular source, establishing a local repository, and leveraging Azure Artifacts. It also lists types of packages like NuGet, npm, Maven, Gradle, Universal, and Python.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867997/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Delving-into-Software-Composition-Analysis-SCA/package-management-strategies-software-analysis.jpg)
+![The image outlines package management strategies in software composition analysis, focusing on maintaining a singular source, establishing a local repository, and leveraging Azure Artifacts. It also lists types of packages like NuGet, npm, Maven, Gradle, Universal, and Python.](https://kodekloud.com/kk-media/image/upload/v1752867997/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Delving-into-Software-Composition-Analysis-SCA/package-management-strategies-software-analysis.jpg)
 
 By combining a central repository with a curated internal feed and the flexible distribution model of Azure Artifacts, you can improve traceability, enforce policy, and speed up your release cycle.
 
@@ -53,7 +53,7 @@ Open-source libraries drive innovation but can introduce vulnerabilities if not 
 3. **Verify Package Integrity**\
    Use signatures or checksums to confirm that binaries have not been tampered with.
 
-![The image is an infographic about managing open-source software components, highlighting steps like utilizing the latest versions, recognizing security risks, addressing security issues, and verifying binary files. It mentions that software composition analysis helps in identifying and mitigating security risks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867998/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Delving-into-Software-Composition-Analysis-SCA/open-source-software-management-infographic.jpg)
+![The image is an infographic about managing open-source software components, highlighting steps like utilizing the latest versions, recognizing security risks, addressing security issues, and verifying binary files. It mentions that software composition analysis helps in identifying and mitigating security risks.](https://kodekloud.com/kk-media/image/upload/v1752867998/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Delving-into-Software-Composition-Analysis-SCA/open-source-software-management-infographic.jpg)
 
 > **triangle-alert** Delaying remediation of known vulnerabilities can expose your organization to breaches. Set up automated alerts and prioritize fixes based on risk severity.
 

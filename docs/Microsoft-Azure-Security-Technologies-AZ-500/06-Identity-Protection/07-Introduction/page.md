@@ -15,10 +15,6 @@ Let's take a look at the topics you’ll master in this module:
 * Applying Azure AD Conditional Access policies to further secure your environment.
 * A detailed discussion on access reviews designed to help maintain continuous security compliance.
 
-<Callout icon="lightbulb">
-  Now that you have an overview of the key topics, let’s dive into the specifics of each area to enhance your Azure AD security posture.
-</Callout>
+> **lightbulb** Now that you have an overview of the key topics, let’s dive into the specifics of each area to enhance your Azure AD security posture.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d856cd5d-a782-4723-82b7-5a6e69cba71d/lesson/48927285-6171-4f22-8d73-b442c5f0c5de" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/d856cd5d-a782-4723-82b7-5a6e69cba71d/lesson/48927285-6171-4f22-8d73-b442c5f0c5de)

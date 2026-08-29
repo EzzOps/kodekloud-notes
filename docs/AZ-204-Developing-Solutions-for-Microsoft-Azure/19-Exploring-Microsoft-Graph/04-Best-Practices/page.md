@@ -45,7 +45,7 @@ Streamline the consent process for both end users and administrators. A user-fri
 
 ## Storing Data Locally
 
-![The image outlines best practices for using Microsoft Graph, focusing on authentication, handling responses, consent and authorization, and storing data locally.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866540/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Best-Practices/microsoft-graph-best-practices.jpg)
+![The image outlines best practices for using Microsoft Graph, focusing on authentication, handling responses, consent and authorization, and storing data locally.](https://kodekloud.com/kk-media/image/upload/v1752866540/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Best-Practices/microsoft-graph-best-practices.jpg)
 
 Local data storage should be minimized and used only when necessary. When caching or persisting data locally, implement secure data retention and deletion policies to handle sensitive information in compliance with industry standards and best practices.
 
@@ -84,7 +84,7 @@ To filter the results and include only specific fields (for example, the user pr
 
 Next, navigate to the "Resources" section in Microsoft Graph Explorer and select "Users." You can apply the `$filter` parameter to search for a particular user. For example, setting a filter condition on the user principal name allows you to narrow down results. Additionally, you can utilize parameters such as `$top` to limit the number of records returned, and combine filters, ordering, selection, expansion, and count operations as needed.
 
-![The image shows the Microsoft Graph Explorer interface with a query to retrieve user data. The response preview displays JSON data for users, including fields like displayName and userPrincipalName.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866542/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Best-Practices/microsoft-graph-explorer-user-data-json.jpg)
+![The image shows the Microsoft Graph Explorer interface with a query to retrieve user data. The response preview displays JSON data for users, including fields like displayName and userPrincipalName.](https://kodekloud.com/kk-media/image/upload/v1752866542/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Best-Practices/microsoft-graph-explorer-user-data-json.jpg)
 
 By using Microsoft Graph Explorer effectively, you can optimize your queries and handle data retrieval for your application with ease.
 

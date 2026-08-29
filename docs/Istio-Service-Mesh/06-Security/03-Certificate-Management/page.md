@@ -18,15 +18,11 @@ When a service starts, it must authenticate itself to the mesh control plane bef
 6. The agent continuously monitors the workload certificate to track its expiration.
 7. The process is periodically repeated to enable smooth certificate and key rotation.
 
-<Callout icon="lightbulb">
-  For enhanced security in production-grade clusters, consider integrating a production-ready Certificate Authority (CA) such as [HashiCorp Certified: Vault Associate Certification](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification). This setup allows you to manage certificates securely on an offline machine.
-</Callout>
+> **lightbulb** For enhanced security in production-grade clusters, consider integrating a production-ready Certificate Authority (CA) such as [HashiCorp Certified: Vault Associate Certification](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification). This setup allows you to manage certificates securely on an offline machine.
 
 ## Certificate Management Workflow Diagram
 
-<Frame>
-  ![The image illustrates a certificate management workflow within an Istio mesh, showing the process of certificate and private key handling, involving components like istio-agent, istiod, and a Certificate Authority, with integration to HashiCorp Vault.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879377/notes-assets/images/Istio-Service-Mesh-Certificate-Management/istio-certificate-management-workflow.jpg)
-</Frame>
+![The image illustrates a certificate management workflow within an Istio mesh, showing the process of certificate and private key handling, involving components like istio-agent, istiod, and a Certificate Authority, with integration to HashiCorp Vault.](https://kodekloud.com/kk-media/image/upload/v1752879377/notes-assets/images/Istio-Service-Mesh-Certificate-Management/istio-certificate-management-workflow.jpg)
 
 This diagram visually represents each step of the certificate management process:
 
@@ -39,6 +35,4 @@ By following this structured process, Istio ensures secure and reliable certific
 
 For more detailed concepts and best practices, refer to the [Istio Documentation](https://istio.io/latest/docs/concepts/security/) and other relevant resources on service mesh security.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/e4a2171d-d190-4dc9-873e-a0dad6d3cb62/lesson/dd96a9e5-f3fb-44b8-9270-dbc2db768dd8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/e4a2171d-d190-4dc9-873e-a0dad6d3cb62/lesson/dd96a9e5-f3fb-44b8-9270-dbc2db768dd8)

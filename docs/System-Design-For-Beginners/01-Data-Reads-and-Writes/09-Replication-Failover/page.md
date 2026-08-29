@@ -13,9 +13,7 @@ You will:
 * Simulate a primary failure and promote the replica to primary.
 * Confirm that destructive operations performed on the original primary (for example, deletes) are applied on the replica.
 
-<Callout icon="lightbulb">
-  This article uses generic SQL examples to demonstrate replication and failover behavior. Consult your database vendor's documentation for exact configuration steps and production best practices.
-</Callout>
+> **lightbulb** This article uses generic SQL examples to demonstrate replication and failover behavior. Consult your database vendor's documentation for exact configuration steps and production best practices.
 
 ## High-level overview
 
@@ -127,9 +125,7 @@ SELECT id, name FROM users;
 
 You should now be able to read and write to the promoted server as the new primary.
 
-<Callout icon="warning">
-  Be careful when promoting a replica in production. If replication was asynchronous, you risk losing recent transactions that had not reached the replica. Use fencing, quorum-based elections, and well-defined failover policies to prevent split-brain and data loss.
-</Callout>
+> **warning** Be careful when promoting a replica in production. If replication was asynchronous, you risk losing recent transactions that had not reached the replica. Use fencing, quorum-based elections, and well-defined failover policies to prevent split-brain and data loss.
 
 ## 6) Expected behaviors and best practices
 
@@ -155,8 +151,6 @@ You should now be able to read and write to the promoted server as the new prima
 
 Replace the generic commands in this guide with the precise procedures for your database engine and orchestration tooling to achieve a production-ready, safe setup.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/336f1b7a-a546-4575-b6f3-88126c927acd" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/336f1b7a-a546-4575-b6f3-88126c927acd)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/ed484991-177a-4da3-9fbb-cc20804cf730" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/ed484991-177a-4da3-9fbb-cc20804cf730)

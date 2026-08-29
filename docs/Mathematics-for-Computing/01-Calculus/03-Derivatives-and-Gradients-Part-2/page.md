@@ -123,9 +123,7 @@ The derivative `f'(x)` gives the instantaneous rate of change of distance with r
 f'(0) = 2*0 - 80 = -80
 ```
 
-<Callout icon="lightbulb">
-  `f'(0) = -80` means the distance is decreasing at 80 units per time unit at `x = 0`. The derivative is a signed rate (negative indicates motion toward the roadworks). Speed, as commonly used, is the non-negative magnitude of velocity.
-</Callout>
+> **lightbulb** `f'(0) = -80` means the distance is decreasing at 80 units per time unit at `x = 0`. The derivative is a signed rate (negative indicates motion toward the roadworks). Speed, as commonly used, is the non-negative magnitude of velocity.
 
 <Frame>
   <img alt="The image features a graph displaying a parabolic curve representing distance over time, with a derivative calculation and a question about negative speed. There is also a person gesturing, a cartoon cat, and a road with a car and cones at the bottom." />
@@ -172,6 +170,4 @@ Further reading and references
 * [MIT OpenCourseWare — Single Variable Calculus](https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/)
 * [Stanford — Computer Vision: Edge Detection Concepts](http://cs231n.github.io/convolutional-networks/#conv)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/582ff79b-c012-496e-8612-3ed7a8df5800/lesson/b9578c6e-d4df-4333-b01b-c9f692e767cf" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/582ff79b-c012-496e-8612-3ed7a8df5800/lesson/b9578c6e-d4df-4333-b01b-c9f692e767cf)

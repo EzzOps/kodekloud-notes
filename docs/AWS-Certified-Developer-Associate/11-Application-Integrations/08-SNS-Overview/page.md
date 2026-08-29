@@ -8,7 +8,7 @@ This message indicates a new job submission. After entering your message (and op
 
 To confirm that messages flow correctly, check the **processJob** SQS queue by navigating to the "Send and receive messages" section and polling for messages.
 
-![The image shows an Amazon SQS interface for sending and receiving messages from a queue, with options to enter a message body, set a delivery delay, and poll for messages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858398/notes-assets/images/AWS-Certified-Developer-Associate-SNS-Demo/amazon-sqs-message-interface.jpg)
+![The image shows an Amazon SQS interface for sending and receiving messages from a queue, with options to enter a message body, set a delivery delay, and poll for messages.](https://kodekloud.com/kk-media/image/upload/v1752858398/notes-assets/images/AWS-Certified-Developer-Associate-SNS-Demo/amazon-sqs-message-interface.jpg)
 
 > **lightbulb** If no messages are visible in your SQS queue, it may be due to insufficient permissions allowing SNS to send messages to SQS.
 
@@ -40,9 +40,9 @@ SNS might be publishing messages correctly, but the SQS queue requires the prope
 
 After updating the policy, publish another message to your SNS topic using more detailed content (for example, "job details: ..."). Then, return to the SQS console and use the **Send and receive messages** function to poll for messages. You should now see the message delivered to the queue.
 
-![The image shows an Amazon SNS interface where a message has been successfully published to a topic. It includes fields for message details like subject and message structure options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858399/notes-assets/images/AWS-Certified-Developer-Associate-SNS-Demo/amazon-sns-message-published-interface.jpg)
+![The image shows an Amazon SNS interface where a message has been successfully published to a topic. It includes fields for message details like subject and message structure options.](https://kodekloud.com/kk-media/image/upload/v1752858399/notes-assets/images/AWS-Certified-Developer-Associate-SNS-Demo/amazon-sns-message-published-interface.jpg)
 
-![The image shows an AWS SQS (Simple Queue Service) interface where users can send and receive messages from a queue. It includes fields for entering a message, setting a delivery delay, and options for receiving messages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858400/notes-assets/images/AWS-Certified-Developer-Associate-SNS-Demo/aws-sqs-interface-message-queue.jpg)
+![The image shows an AWS SQS (Simple Queue Service) interface where users can send and receive messages from a queue. It includes fields for entering a message, setting a delivery delay, and options for receiving messages.](https://kodekloud.com/kk-media/image/upload/v1752858400/notes-assets/images/AWS-Certified-Developer-Associate-SNS-Demo/aws-sqs-interface-message-queue.jpg)
 
 ## Examining the SQS Message Structure
 
@@ -95,7 +95,7 @@ AWS SNS leverages a publish/subscribe model that simplifies message distribution
 2. The SNS topic acts as a communication channel, similar to a "radio frequency."
 3. All subscribers listening to that topic receive the message.
 
-![The image is a diagram showing the flow of data from a client to an AWS SNS Topic, which then triggers a Lambda function within an AWS account.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858401/notes-assets/images/AWS-Certified-Developer-Associate-SNS-Overview/aws-sns-topic-lambda-diagram.jpg)
+![The image is a diagram showing the flow of data from a client to an AWS SNS Topic, which then triggers a Lambda function within an AWS account.](https://kodekloud.com/kk-media/image/upload/v1752858401/notes-assets/images/AWS-Certified-Developer-Associate-SNS-Overview/aws-sns-topic-lambda-diagram.jpg)
 
 > **lightbulb** When a message is published, only subscribers who have signed up for that specific topic will process it. This facilitates event-based communication across different system components. For example, a new user registration could trigger both a welcome email and a verification process.
 
@@ -109,7 +109,7 @@ SNS supports a variety of publishers, including several AWS services. Common exa
 * S3 events
 * CodePipeline, among others
 
-![The image is a diagram showing various AWS services as publishers (like CloudWatch, EC2 Auto Scaling, and S3) connected to Amazon SNS (Simple Notification Service).](../../../../images/kodekloud.com/kk-media/image/upload/v1752858402/notes-assets/images/AWS-Certified-Developer-Associate-SNS-Overview/aws-services-publishers-sns-diagram.jpg)
+![The image is a diagram showing various AWS services as publishers (like CloudWatch, EC2 Auto Scaling, and S3) connected to Amazon SNS (Simple Notification Service).](https://kodekloud.com/kk-media/image/upload/v1752858402/notes-assets/images/AWS-Certified-Developer-Associate-SNS-Overview/aws-services-publishers-sns-diagram.jpg)
 
 ## Subscribers in SNS
 
@@ -123,7 +123,7 @@ SNS offers flexible options for subscribers. Typical subscribers include:
 
 In addition to these, SNS can deliver notifications via SMS, email, or mobile push notifications.
 
-![The image is a diagram illustrating SNS subscribers, showing the flow from a publisher to SNS, and then to Application-to-Application (A2A) and Application-to-Person (A2P) subscribers, including services like SQS, AWS Lambda, and email.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858404/notes-assets/images/AWS-Certified-Developer-Associate-SNS-Overview/sns-subscribers-diagram-flow.jpg)
+![The image is a diagram illustrating SNS subscribers, showing the flow from a publisher to SNS, and then to Application-to-Application (A2A) and Application-to-Person (A2P) subscribers, including services like SQS, AWS Lambda, and email.](https://kodekloud.com/kk-media/image/upload/v1752858404/notes-assets/images/AWS-Certified-Developer-Associate-SNS-Overview/sns-subscribers-diagram-flow.jpg)
 
 ## Fan-Out Architecture with SNS and SQS
 

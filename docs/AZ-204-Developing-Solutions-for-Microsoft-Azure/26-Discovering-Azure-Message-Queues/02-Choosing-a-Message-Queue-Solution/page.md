@@ -22,7 +22,7 @@ For instance, in a photo-sharing app where users upload hundreds of images, Stor
 
 > **lightbulb** Opt for Storage Queues for high-volume, straightforward messaging tasks without the need for complex processing requirements.
 
-![The image compares Service Bus queues and Storage queues, highlighting that Service Bus queues are for complex, enterprise-level messaging, while Storage queues are for simple, large-scale message queuing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866268/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Choosing-a-Message-Queue-Solution/service-bus-vs-storage-queues.jpg)
+![The image compares Service Bus queues and Storage queues, highlighting that Service Bus queues are for complex, enterprise-level messaging, while Storage queues are for simple, large-scale message queuing.](https://kodekloud.com/kk-media/image/upload/v1752866268/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Choosing-a-Message-Queue-Solution/service-bus-vs-storage-queues.jpg)
 
 ## Key Considerations for Service Bus Queues
 
@@ -34,7 +34,7 @@ Service Bus queues offer several advanced features that make them well-suited fo
 2. **FIFO Delivery**\
    Messages are processed in a strict First-In-First-Out (FIFO) order—critical for applications demanding sequential operations, such as financial transactions.
 
-![The image illustrates the concept of First-In-First-Out (FIFO) ordered delivery, showing a sequence from "IN" to "OUT" with colored boxes labeled "F," "I," "F," and "O."](../../../../images/kodekloud.com/kk-media/image/upload/v1752866269/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Choosing-a-Message-Queue-Solution/fifo-ordered-delivery-diagram.jpg)
+![The image illustrates the concept of First-In-First-Out (FIFO) ordered delivery, showing a sequence from "IN" to "OUT" with colored boxes labeled "F," "I," "F," and "O."](https://kodekloud.com/kk-media/image/upload/v1752866269/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Choosing-a-Message-Queue-Solution/fifo-ordered-delivery-diagram.jpg)
 
 3. **Automatic Duplicate Detection**\
    Duplicate messages are automatically identified and managed, ensuring each message is processed only once. This feature is particularly useful when accuracy is paramount, such as in inventory management systems.
@@ -45,14 +45,14 @@ Service Bus queues offer several advanced features that make them well-suited fo
 5. **Transactional Operations**\
    It supports processing multiple messages as a single transaction. This means that either all operations succeed or none do, similar to atomic transactions in banking systems.
 
-![The image lists considerations for using service bus queues, including receiving messages without polling, guaranteed FIFO delivery, automatic duplicate detection, processing messages as parallel streams, and transactional behavior for multiple messages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866270/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Choosing-a-Message-Queue-Solution/service-bus-queues-considerations.jpg)
+![The image lists considerations for using service bus queues, including receiving messages without polling, guaranteed FIFO delivery, automatic duplicate detection, processing messages as parallel streams, and transactional behavior for multiple messages.](https://kodekloud.com/kk-media/image/upload/v1752866270/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Choosing-a-Message-Queue-Solution/service-bus-queues-considerations.jpg)
 
-![The image illustrates a process flow where a sender transmits messages through service bus queues to a receiver, highlighting the need for transactional behavior and atomicity for multiple messages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866271/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Choosing-a-Message-Queue-Solution/service-bus-transactional-flow.jpg)
+![The image illustrates a process flow where a sender transmits messages through service bus queues to a receiver, highlighting the need for transactional behavior and atomicity for multiple messages.](https://kodekloud.com/kk-media/image/upload/v1752866271/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Choosing-a-Message-Queue-Solution/service-bus-transactional-flow.jpg)
 
 6. **Handling Larger Messages**\
    With an ability to handle messages up to 256 KB (and in some cases, exceeding 64 KB), Service Bus queues are well-equipped for larger payloads.
 
-![The image lists considerations for using service bus queues, including message reception without polling, FIFO delivery, automatic duplicate detection, parallel processing, transactional behavior, and handling large messages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866273/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Choosing-a-Message-Queue-Solution/service-bus-queues-considerations-2.jpg)
+![The image lists considerations for using service bus queues, including message reception without polling, FIFO delivery, automatic duplicate detection, parallel processing, transactional behavior, and handling large messages.](https://kodekloud.com/kk-media/image/upload/v1752866273/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Choosing-a-Message-Queue-Solution/service-bus-queues-considerations-2.jpg)
 
 ## Key Considerations for Azure Storage Queues
 
@@ -67,7 +67,7 @@ Azure Storage Queues are optimized for high-volume and simpler processing tasks.
 3. **Server-Side Logging**\
    Detailed server-side logs are maintained for all queue transactions, which is invaluable for auditing, compliance, and security monitoring.
 
-![The image outlines considerations for using storage queues, including storing over 80 GB of messages, requiring progress tracking for message processing, and demanding server-side logs for transactions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866274/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Choosing-a-Message-Queue-Solution/storage-queues-considerations-outline.jpg)
+![The image outlines considerations for using storage queues, including storing over 80 GB of messages, requiring progress tracking for message processing, and demanding server-side logs for transactions.](https://kodekloud.com/kk-media/image/upload/v1752866274/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Choosing-a-Message-Queue-Solution/storage-queues-considerations-outline.jpg)
 
 ## Azure Service Bus Tiers: Basic, Standard, and Premium
 
@@ -79,7 +79,7 @@ Understanding the differences between Service Bus tiers is essential to match th
 | Standard Tier | Includes topics and subscriptions, transactional processing, session-based grouping, deduplication, up to 256 KB per message        | Moderately complex applications requiring advanced messaging without resource isolation                         |
 | Premium Tier  | Complete resource isolation, larger message sizes (up to 100 MB), enhanced disaster recovery (GDR), availability zones, JMS support | Enterprise-level applications needing high performance, enhanced security, and guaranteed resource independence |
 
-![The image is a comparison table of features between Basic, Standard, and Premium tiers of a Service Bus, highlighting differences in features like queues, scheduled messages, and message size.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866277/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Choosing-a-Message-Queue-Solution/service-bus-tiers-comparison-table.jpg)
+![The image is a comparison table of features between Basic, Standard, and Premium tiers of a Service Bus, highlighting differences in features like queues, scheduled messages, and message size.](https://kodekloud.com/kk-media/image/upload/v1752866277/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Choosing-a-Message-Queue-Solution/service-bus-tiers-comparison-table.jpg)
 
 ### Tier Breakdown
 

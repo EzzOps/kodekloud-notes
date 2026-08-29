@@ -12,7 +12,7 @@ Imagine multiple instances of your application communicating with an Amazon RDS 
 
 An additional advantage of using RDS Proxy is its robust failover capability. If your primary database instance fails and a failover occurs, RDS Proxy automatically reroutes traffic to the new primary instance. This proactive rerouting helps reduce application errors and ensures a seamless user experience during unexpected database outages.
 
-![The image illustrates an RDS Proxy setup for failover, showing applications connecting through the proxy to an RDS instance, with a failover path to a secondary RDS instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858835/notes-assets/images/AWS-Certified-Developer-Associate-RDS-Proxy/rds-proxy-failover-setup-diagram.jpg)
+![The image illustrates an RDS Proxy setup for failover, showing applications connecting through the proxy to an RDS instance, with a failover path to a secondary RDS instance.](https://kodekloud.com/kk-media/image/upload/v1752858835/notes-assets/images/AWS-Certified-Developer-Associate-RDS-Proxy/rds-proxy-failover-setup-diagram.jpg)
 
 To summarize, Amazon RDS Proxy offers several key benefits:
 
@@ -24,6 +24,6 @@ For exam preparation, keep in mind that when an RDS instance suffers from high C
 
 > **lightbulb** When reviewing for AWS exams, remember that Amazon RDS Proxy is designed to minimize the number of concurrent open database connections, leading to improved performance and overall system resilience.
 
-![The image is a summary slide about Amazon RDS Proxy, highlighting its features such as being a fully managed database proxy, enabling efficient connection pooling, and minimizing open connections to save CPU and memory resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858837/notes-assets/images/AWS-Certified-Developer-Associate-RDS-Proxy/amazon-rds-proxy-summary-slide.jpg)
+![The image is a summary slide about Amazon RDS Proxy, highlighting its features such as being a fully managed database proxy, enabling efficient connection pooling, and minimizing open connections to save CPU and memory resources.](https://kodekloud.com/kk-media/image/upload/v1752858837/notes-assets/images/AWS-Certified-Developer-Associate-RDS-Proxy/amazon-rds-proxy-summary-slide.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/a1267c00-fc48-4a9b-8d41-fd642fa743ea/lesson/3bf8f3b6-a43e-4135-bae9-72bc81f1633e)

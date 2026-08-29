@@ -18,16 +18,12 @@ The course content is organized into several key sections to suit varying levels
 2. **Operations Deployment**\
    Focus on automating system maintenance tasks, controlling startup processes and services, diagnosing and managing processes, scheduling tasks, and tuning kernel runtime parameters.
 
-<Frame>
-  ![The image shows a person wearing glasses and a hoodie, with a list titled "Operations Deployment" that includes tasks like automating system maintenance and managing processes. There's a bookshelf with books and a penguin figurine in the background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881278/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Course-Introduction/operations-deployment-person-glasses-hoodie.jpg)
-</Frame>
+![The image shows a person wearing glasses and a hoodie, with a list titled "Operations Deployment" that includes tasks like automating system maintenance and managing processes. There's a bookshelf with books and a penguin figurine in the background.](https://kodekloud.com/kk-media/image/upload/v1752881278/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Course-Introduction/operations-deployment-person-glasses-hoodie.jpg)
 
 3. **Users and Groups**\
    Understand how to create, modify, and manage local user accounts and groups. This section also covers configuring system-wide environment profiles, adjusting user resource limits, and managing root access.
 
-<Frame>
-  ![The image shows a person speaking in front of a slide titled "Users and Groups," which lists topics like creating and managing local users, configuring system-wide environment profiles, and setting user resource limits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881279/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Course-Introduction/users-and-groups-presentation.jpg)
-</Frame>
+![The image shows a person speaking in front of a slide titled "Users and Groups," which lists topics like creating and managing local users, configuring system-wide environment profiles, and setting user resource limits.](https://kodekloud.com/kk-media/image/upload/v1752881279/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Course-Introduction/users-and-groups-presentation.jpg)
 
 4. **Networking**\
    Dive into configuring both IPv4 and IPv6 networking, managing hostname resolutions, setting up bridge and bonding devices, implementing packet filtering, handling port redirection and NAT, and exploring reverse proxies, load balancers, system time synchronization, as well as SSH server-client configurations.
@@ -35,21 +31,15 @@ The course content is organized into several key sections to suit varying levels
 5. **Storage**\
    Learn about managing physical storage partitions, configuring swap space, mounting filesystems, handling remote file systems and network block devices (NBD), monitoring storage performance, and applying advanced filesystem permissions.
 
-<Frame>
-  ![The image shows a person speaking with a list of storage-related topics displayed beside them, including physical storage partitions, swap space, file systems, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881280/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Course-Introduction/storage-topics-person-speaking.jpg)
-</Frame>
+![The image shows a person speaking with a list of storage-related topics displayed beside them, including physical storage partitions, swap space, file systems, and more.](https://kodekloud.com/kk-media/image/upload/v1752881280/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Course-Introduction/storage-topics-person-speaking.jpg)
 
-<Callout icon="lightbulb">
-  For hands-on experience, the course offers just-in-time access to browser-based, interactive labs. These labs allow you to practice real-world tasks using an integrated terminal, ensuring that you are well-prepared for the practical exam.
-</Callout>
+> **lightbulb** For hands-on experience, the course offers just-in-time access to browser-based, interactive labs. These labs allow you to practice real-world tasks using an integrated terminal, ensuring that you are well-prepared for the practical exam.
 
 ## Interactive Lab Exercises
 
 During these labs, you will execute a variety of system administration tasks and receive immediate feedback on your inputs. This iterative learning experience helps you refine your skills and build confidence before taking the practical exam.
 
-<Callout icon="lightbulb">
-  Throughout the exercises, you will receive immediate feedback on your inputs. While hints and solutions are available, we encourage you to attempt solving the challenges independently to ensure readiness for the exam.
-</Callout>
+> **lightbulb** Throughout the exercises, you will receive immediate feedback on your inputs. While hints and solutions are available, we encourage you to attempt solving the challenges independently to ensure readiness for the exam.
 
 ## Community and Support
 
@@ -67,6 +57,4 @@ Whether you are just beginning your journey in Linux system administration or lo
 
 Happy learning!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/4f2c39b1-cb25-4906-98b4-55de3090a85a/lesson/1c43c91e-2c72-4a84-9daf-4d010427e52e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/4f2c39b1-cb25-4906-98b4-55de3090a85a/lesson/1c43c91e-2c72-4a84-9daf-4d010427e52e)

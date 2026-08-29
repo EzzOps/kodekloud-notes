@@ -13,9 +13,7 @@ Assuming you’ve already installed the Ollama application and CLI on your machi
 * \~2 GB of disk space for the Llama 3.2 model
 * A modern terminal (macOS, Linux, or WSL on Windows)
 
-<Callout icon="triangle-alert">
-  Downloading and storing LLMs locally can consume significant disk space and memory. Ensure you have adequate resources before proceeding.
-</Callout>
+> **triangle-alert** Downloading and storing LLMs locally can consume significant disk space and memory. Ensure you have adequate resources before proceeding.
 
 ## 1. Pulling and Running the Model
 
@@ -40,9 +38,7 @@ success
 
 Once the download completes, Ollama verifies integrity, writes the manifest, and presents an interactive `>>>` prompt.
 
-<Callout icon="lightbulb">
-  All inference happens locally—your data remains on your device and no internet connection is needed after download.
-</Callout>
+> **lightbulb** All inference happens locally—your data remains on your device and no internet connection is needed after download.
 
 ## 2. Basic Interaction
 
@@ -138,6 +134,4 @@ You’ll return to your normal terminal prompt.
 
 You’ve now run and interacted with a large language model locally using Ollama. Explore other models, tweak prompts, and enjoy full offline inference for enhanced privacy and performance. Happy experimenting!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/836a96fe-9951-42b6-83ba-a602299c87c9/lesson/a9c4c459-714f-46a1-98c4-d113115b572a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/836a96fe-9951-42b6-83ba-a602299c87c9/lesson/a9c4c459-714f-46a1-98c4-d113115b572a)

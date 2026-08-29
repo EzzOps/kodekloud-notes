@@ -51,9 +51,7 @@ To later remove this port binding:
 sudo semanage port --delete --type ssh_port_t --proto tcp 2222
 ```
 
-<Callout icon="lightbulb">
-  Any warnings regarding the user sddm may be safely ignored if you are not using sddm.
-</Callout>
+> **lightbulb** Any warnings regarding the user sddm may be safely ignored if you are not using sddm.
 
 ***
 
@@ -63,11 +61,9 @@ SELinux offers a robust mechanism for enforcing security policies by confining p
 
 With continuous study and practice, you can develop tailored SELinux policies that significantly reduce the risk of common attacks. Enjoy your journey to a more secure system!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/c99f9a23-5fd8-44ac-ae35-97c88f7d21dc" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/c99f9a23-5fd8-44ac-ae35-97c88f7d21dc)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/a019d670-0561-47cc-85a2-1ed68680aba1" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/a019d670-0561-47cc-85a2-1ed68680aba1)
 
 
 # Create and Manage Containers
@@ -86,25 +82,17 @@ $ sudo apt install mariadb-server
 
 After the installation, you would need to adjust configurations in the `/etc/mysql` directory, create databases, configure users, assign privileges, and manage log files. When it comes time to migrate this multi-component setup to a cloud server, the scattered pieces across various directories can make the process cumbersome.
 
-<Frame>
-  ![The image illustrates a cloud computing concept with elements like databases, settings, and logs connected to a central server, emphasizing container management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881332/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-and-Manage-Containers/cloud-computing-container-management.jpg)
-</Frame>
+![The image illustrates a cloud computing concept with elements like databases, settings, and logs connected to a central server, emphasizing container management.](https://kodekloud.com/kk-media/image/upload/v1752881332/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-and-Manage-Containers/cloud-computing-container-management.jpg)
 
-<Callout icon="lightbulb">
-  By containerizing your application, such as setting up your MariaDB inside a Docker container, every component—including the daemon, configuration files, logs, and databases—resides within a single container. This makes migration as simple as copying one file.
-</Callout>
+> **lightbulb** By containerizing your application, such as setting up your MariaDB inside a Docker container, every component—including the daemon, configuration files, logs, and databases—resides within a single container. This makes migration as simple as copying one file.
 
 Imagine moving your entire database within a single container to a cloud server or scaling it across multiple servers effortlessly.
 
-<Frame>
-  ![The image illustrates a computer setup with a cloud outline, featuring Docker and MariaDB setup icons on the screen, emphasizing container management. The text suggests that everything will function as before.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881333/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-and-Manage-Containers/computer-setup-docker-mariadb-cloud.jpg)
-</Frame>
+![The image illustrates a computer setup with a cloud outline, featuring Docker and MariaDB setup icons on the screen, emphasizing container management. The text suggests that everything will function as before.](https://kodekloud.com/kk-media/image/upload/v1752881333/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-and-Manage-Containers/computer-setup-docker-mariadb-cloud.jpg)
 
 Containers are designed to encapsulate applications, making them highly portable and scalable. Essentially, they are like copying and pasting an entire application setup in one go.
 
-<Frame>
-  ![The image illustrates the concept of creating and managing containers using Docker, with APIs running on different servers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881335/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-and-Manage-Containers/docker-containers-management-apis.jpg)
-</Frame>
+![The image illustrates the concept of creating and managing containers using Docker, with APIs running on different servers.](https://kodekloud.com/kk-media/image/upload/v1752881335/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-and-Manage-Containers/docker-containers-management-apis.jpg)
 
 In this article, we will explore practical examples of how to work with Docker by running an Nginx web server within a container.
 
@@ -307,9 +295,7 @@ CONTAINER ID   IMAGE     COMMAND                  NAMES
 34ef97c0c6a5   nginx     "/docker-entrypoint..."  mywebserver
 ```
 
-<Callout icon="lightbulb">
-  Remember that `docker ps` only shows running containers. Use `docker ps --all` to list both active and stopped containers.
-</Callout>
+> **lightbulb** Remember that `docker ps` only shows running containers. Use `docker ps --all` to list both active and stopped containers.
 
 To start a stopped container, reference its container ID or name:
 
@@ -400,9 +386,7 @@ To remove a stopped container (for example, one named `determined_perlman`), exe
 $ docker rm determined_perlman
 ```
 
-<Callout icon="lightbulb">
-  Remember: the `docker rm` command removes containers, while `docker rmi` is used to remove images.
-</Callout>
+> **lightbulb** Remember: the `docker rm` command removes containers, while `docker rmi` is used to remove images.
 
 If an image is still in use, such as by the "mywebserver" container, attempting to remove it will result in an error:
 
@@ -441,9 +425,7 @@ $ docker run --detach --publish 8080:80 --name mywebserver --restart always ngin
 
 If the specified image is not available locally, Docker will automatically pull it.
 
-<Frame>
-  ![The image shows a section of a manual page for Docker, detailing the restart policy options for containers, including "no," "on-failure," "always," and "unless-stopped," with explanations for each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881336/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-and-Manage-Containers/docker-restart-policy-manual-page.jpg)
-</Frame>
+![The image shows a section of a manual page for Docker, detailing the restart policy options for containers, including "no," "on-failure," "always," and "unless-stopped," with explanations for each.](https://kodekloud.com/kk-media/image/upload/v1752881336/notes-assets/images/Linux-Foundation-Certified-System-Administrator-LFCS-Create-and-Manage-Containers/docker-restart-policy-manual-page.jpg)
 
 ***
 
@@ -520,6 +502,4 @@ For further details and in-depth tutorials, consider exploring the following res
 
 Happy containerizing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/092c456d-53cd-4b7a-8b9a-f7631ad55cec" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-foundation-certified-system-administrator-lfcs/module/cb813f7f-73bd-40ee-a088-d31ba20c51de/lesson/092c456d-53cd-4b7a-8b9a-f7631ad55cec)

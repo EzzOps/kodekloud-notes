@@ -98,9 +98,7 @@ Copilot can suggest code that is generic, outdated, or insecure. Treat suggestio
 
 Security and data handling are critical concerns for enterprise adoption. Potential problems include code context being sent to cloud services, accidental leakage of sensitive information, and a limited set of built-in security checks.
 
-<Callout icon="warning">
-  Security-sensitive projects should evaluate Copilot’s cloud dependency, data handling, and licensing implications before wide adoption. Always run static analysis and security reviews on generated code.
-</Callout>
+> **warning** Security-sensitive projects should evaluate Copilot’s cloud dependency, data handling, and licensing implications before wide adoption. Always run static analysis and security reviews on generated code.
 
 <Frame>
   <img alt="A slide titled &#x22;Limitations – Security&#x22; showing five panels with icons and labels: Data privacy concerns, Code leakage potential, Limited security feature set, Dependency on cloud services, and Compliance considerations." />
@@ -116,9 +114,7 @@ Copilot should augment human expertise, not replace it. Adopt clear processes an
 * Break complex problems into smaller tasks to produce more accurate suggestions.
 * Combine Copilot with linters, unit tests, and security scanners before merging code.
 
-<Callout icon="lightbulb">
-  Tip: Write short, focused comments that explain intent. Copilot uses those prompts to generate more relevant and maintainable code snippets.
-</Callout>
+> **lightbulb** Tip: Write short, focused comments that explain intent. Copilot uses those prompts to generate more relevant and maintainable code snippets.
 
 <Frame>
   <img alt="A presentation slide titled &#x22;Maximizing Copilot's Value&#x22; showing three numbered tips: &#x22;Write clear comments to guide suggestions,&#x22; &#x22;Use descriptive variable names,&#x22; and &#x22;Break complex tasks into smaller chunks.&#x22; Each tip is displayed in a dark rounded card with a colorful circular icon." />
@@ -159,6 +155,4 @@ GitHub Copilot is a powerful assistant when used with appropriate safeguards. Ba
 * Best practices for code reviews and security scanning: [https://owasp.org](https://owasp.org)
 * Linting and static analysis tools: `eslint`, `flake8`, `gosec`
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/github-copilot-in-action/module/fb848134-d908-42a6-b195-1ea9c9cd1ffe/lesson/46f301e3-df29-4189-acab-3337376df902" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/github-copilot-in-action/module/fb848134-d908-42a6-b195-1ea9c9cd1ffe/lesson/46f301e3-df29-4189-acab-3337376df902)

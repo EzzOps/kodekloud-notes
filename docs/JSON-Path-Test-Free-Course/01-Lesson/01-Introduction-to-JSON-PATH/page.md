@@ -50,9 +50,7 @@ Examples:
 * `$.store.book[?(@.price < 10)]`\
   → Books with a price less than 10.
 
-<Callout icon="lightbulb">
-  JSONPath expressions are **case-sensitive**. Always match the exact key names when querying.
-</Callout>
+> **lightbulb** JSONPath expressions are **case-sensitive**. Always match the exact key names when querying.
 
 ***
 
@@ -73,9 +71,7 @@ JSONPath offers a variety of operators for powerful data selection. Below is a q
 * `<`, `<=`, `>`, `>=`, `==`, `!=`
 * Boolean AND/OR (`&&`, `||`)
 
-<Callout icon="triangle-alert">
-  Ensure your filter syntax is valid. A misplaced parenthesis or comparison operator can lead to no results or errors.
-</Callout>
+> **triangle-alert** Ensure your filter syntax is valid. A misplaced parenthesis or comparison operator can lead to no results or errors.
 
 ***
 
@@ -130,8 +126,6 @@ Follow these steps to query JSON with Python:
 
 By mastering JSONPath, you can dramatically simplify data extraction from nested JSON structures—making your scripts cleaner and more maintainable. Give it a try in your next project!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/735607d5-54ad-4f18-b636-de14fc925a4c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/735607d5-54ad-4f18-b636-de14fc925a4c)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/859d70fa-10cc-4e1b-bbe8-5f61ce5bbd35" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/json-path-test-free-course/module/114e6dee-a9f2-49f3-a0c6-cdfb92f74310/lesson/859d70fa-10cc-4e1b-bbe8-5f61ce5bbd35)

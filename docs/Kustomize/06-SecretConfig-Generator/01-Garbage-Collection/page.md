@@ -48,9 +48,7 @@ Produces:
 namespace: staging
 ```
 
-<Callout icon="lightbulb">
-  This command only updates your `kustomization.yaml`. It does **not** apply changes to your cluster.
-</Callout>
+> **lightbulb** This command only updates your `kustomization.yaml`. It does **not** apply changes to your cluster.
 
 ### Add common labels
 
@@ -162,11 +160,9 @@ If there’s no `kustomization.yaml` in your current directory, you’ll see an 
 * [Kubernetes Configuration](https://kubernetes.io/docs/concepts/overview/config-management/)
 * [GitHub: kustomize](https://github.com/kubernetes-sigs/kustomize)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/060e95ac-e56c-42ed-be87-8701328432c3/lesson/e18c8a87-99db-439e-a8bc-bff7cc658853" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/060e95ac-e56c-42ed-be87-8701328432c3/lesson/e18c8a87-99db-439e-a8bc-bff7cc658853)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kustomize/module/060e95ac-e56c-42ed-be87-8701328432c3/lesson/f83fd542-9130-4e60-8e67-ed2d7548d895" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kustomize/module/060e95ac-e56c-42ed-be87-8701328432c3/lesson/f83fd542-9130-4e60-8e67-ed2d7548d895)
 
 
 # Garbage Collection

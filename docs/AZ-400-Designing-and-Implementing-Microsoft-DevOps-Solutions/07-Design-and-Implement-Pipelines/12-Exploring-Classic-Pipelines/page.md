@@ -6,7 +6,7 @@ This article explores Azure DevOps Classic Pipelines, focusing on a visual appro
 
 In this lesson, we’ll dive into **Azure DevOps Classic Pipelines**, a GUI-driven approach to building and releasing your applications. If you prefer a visual editor over hand-crafting YAML files, Classic Pipelines deliver an intuitive drag-and-drop experience for designing CI/CD workflows.
 
-![The image is a diagram introducing classic pipelines, showing a connection between Azure DevOps and a CI/CD pipeline, highlighting a user-friendly graphical user interface (GUI).](../../../../images/kodekloud.com/kk-media/image/upload/v1752867846/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Classic-Pipelines/azure-devops-cicd-pipeline-diagram.jpg)
+![The image is a diagram introducing classic pipelines, showing a connection between Azure DevOps and a CI/CD pipeline, highlighting a user-friendly graphical user interface (GUI).](https://kodekloud.com/kk-media/image/upload/v1752867846/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Classic-Pipelines/azure-devops-cicd-pipeline-diagram.jpg)
 
 By the end of this guide, you’ll understand:
 
@@ -28,7 +28,7 @@ Classic Pipelines excel at lowering the barrier to entry for continuous integrat
 
 > **lightbulb** Classic Pipelines are perfect for teams that need a fast, low-code approach. For long-term maintainability, consider storing pipeline definitions in source control via YAML.
 
-![The image shows a screenshot of a classic pipeline interface for web app release, highlighting tasks like IIS deployment and PowerShell scripts. It also lists benefits such as ease of use, visual configuration, and integration with Azure services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867847/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Classic-Pipelines/web-app-release-pipeline-interface-screenshot.jpg)
+![The image shows a screenshot of a classic pipeline interface for web app release, highlighting tasks like IIS deployment and PowerShell scripts. It also lists benefits such as ease of use, visual configuration, and integration with Azure services.](https://kodekloud.com/kk-media/image/upload/v1752867847/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Classic-Pipelines/web-app-release-pipeline-interface-screenshot.jpg)
 
 ## Step 1: Selecting Your Source Repository
 
@@ -36,7 +36,7 @@ Classic Pipelines excel at lowering the barrier to entry for continuous integrat
 2. Click **New pipeline** and choose **Classic Editor**.
 3. Select your source: Azure Repos Git, GitHub, Bitbucket, or other supported repositories.
 
-![The image is a guide for creating a classic pipeline, showing step 1: selecting a source, with options like Azure Repos Git and GitHub. It includes dropdowns for team project, repository, and default branch selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867848/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Classic-Pipelines/classic-pipeline-guide-step1-source-selection.jpg)
+![The image is a guide for creating a classic pipeline, showing step 1: selecting a source, with options like Azure Repos Git and GitHub. It includes dropdowns for team project, repository, and default branch selection.](https://kodekloud.com/kk-media/image/upload/v1752867848/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Classic-Pipelines/classic-pipeline-guide-step1-source-selection.jpg)
 
 ## Step 2: Picking a Template
 
@@ -49,7 +49,7 @@ Azure DevOps ships with starter templates to kick-start your pipeline:
 
 Select the template that best matches your tech stack—you can always customize tasks later.
 
-![The image shows a guide for creating a classic pipeline with steps listed on the left and a template selection interface on the right, featuring options like .NET Desktop, Android, and Docker container.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867849/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Classic-Pipelines/classic-pipeline-guide-template-selection.jpg)
+![The image shows a guide for creating a classic pipeline with steps listed on the left and a template selection interface on the right, featuring options like .NET Desktop, Android, and Docker container.](https://kodekloud.com/kk-media/image/upload/v1752867849/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Classic-Pipelines/classic-pipeline-guide-template-selection.jpg)
 
 ## Step 3: Configuring Tasks and Environments
 
@@ -60,7 +60,7 @@ Drag and drop tasks to define your build and release process:
 * Package outputs (ZIP, WAR, Docker image)
 * Deploy to environments (Dev, QA, Production)
 
-![The image shows a guide for creating a classic pipeline with four steps, highlighting "Step 03: Configuring the Pipeline," alongside a screenshot of a pipeline configuration interface.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867850/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Classic-Pipelines/classic-pipeline-guide-step-03-configuring.jpg)
+![The image shows a guide for creating a classic pipeline with four steps, highlighting "Step 03: Configuring the Pipeline," alongside a screenshot of a pipeline configuration interface.](https://kodekloud.com/kk-media/image/upload/v1752867850/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Classic-Pipelines/classic-pipeline-guide-step-03-configuring.jpg)
 
 ## Step 4: Defining Triggers
 
@@ -83,7 +83,7 @@ Azure DevOps offers two pipeline models—choose the one that aligns with your t
 
 > **triangle-alert** Classic Pipelines offer ease of use, but for advanced scenarios and full traceability, **YAML pipelines** provide better versioning, branching, and reuse across projects.
 
-![The image illustrates the transition from Classic to YAML pipelines, highlighting better control and scalability, and includes steps like understanding YAML syntax and converting existing pipelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867851/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Classic-Pipelines/classic-to-yaml-pipelines-transition.jpg)
+![The image illustrates the transition from Classic to YAML pipelines, highlighting better control and scalability, and includes steps like understanding YAML syntax and converting existing pipelines.](https://kodekloud.com/kk-media/image/upload/v1752867851/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Classic-Pipelines/classic-to-yaml-pipelines-transition.jpg)
 
 ## Best Practices for Classic Pipelines
 
@@ -94,7 +94,7 @@ Azure DevOps offers two pipeline models—choose the one that aligns with your t
 * **Security & Compliance**\
   Audit pipeline permissions, enforce branch policies, and scan for vulnerabilities.
 
-![The image outlines best practices for using classic pipelines, highlighting "Modular design" and "Regular updates and testing" with corresponding icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867852/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Classic-Pipelines/best-practices-classic-pipelines-modular-design.jpg)
+![The image outlines best practices for using classic pipelines, highlighting "Modular design" and "Regular updates and testing" with corresponding icons.](https://kodekloud.com/kk-media/image/upload/v1752867852/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Exploring-Classic-Pipelines/best-practices-classic-pipelines-modular-design.jpg)
 
 ## Links and References
 

@@ -31,9 +31,7 @@ vault auth list
 
 ## Disabling Auth Methods
 
-<Callout icon="triangle-alert">
-  Disabling an auth method immediately revokes any credentials issued under that mount.
-</Callout>
+> **triangle-alert** Disabling an auth method immediately revokes any credentials issued under that mount.
 
 ### 1. Remove the Default `userpass` Mount
 
@@ -76,9 +74,7 @@ Descriptions must be provided at mount time. Any existing mount must be disabled
 vault auth disable userpass
 ```
 
-<Callout icon="lightbulb">
-  You cannot add or update a description on an existing mount. Always set it when you enable the backend.
-</Callout>
+> **lightbulb** You cannot add or update a description on an existing mount. Always set it when you enable the backend.
 
 ```bash theme={null}
 vault auth enable \
@@ -156,9 +152,7 @@ Different backends accept different parameters—for example, `approle` uses `ro
    # Success! Data written to: auth/approle/role/bryan
    ```
 
-<Callout icon="lightbulb">
-  AppRole is recommended for machine-to-machine authentication and automated workflows.
-</Callout>
+> **lightbulb** AppRole is recommended for machine-to-machine authentication and automated workflows.
 
 ## Conclusion
 
@@ -179,9 +173,7 @@ These CLI patterns apply to all Vault authentication backends—just adjust path
 * [Userpass Auth Method](https://www.vaultproject.io/docs/auth/userpass)
 * [AppRole Auth Method](https://www.vaultproject.io/docs/auth/approle)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/e69b59fd-06a5-464a-9bf3-5d3e85324e02" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/e69b59fd-06a5-464a-9bf3-5d3e85324e02)
 
 
 # Demo Configuring Auth Methods using the UI
@@ -208,9 +200,7 @@ In this step-by-step guide, you’ll learn how to configure authentication metho
 2. Enter your **Username** and **Password**, then click **Sign In**.
 3. Optionally, choose to save your credentials for future sessions.
 
-<Frame>
-  ![The image shows a login page for "Vault" with fields for method, username, and password, and a "Sign In" button. The method selected is "Okta," and there are options for saving the password.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878013/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Configuring-Auth-Methods-using-the-UI/vault-login-page-okta-sign-in.jpg)
-</Frame>
+![The image shows a login page for "Vault" with fields for method, username, and password, and a "Sign In" button. The method selected is "Okta," and there are options for saving the password.](https://kodekloud.com/kk-media/image/upload/v1752878013/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Configuring-Auth-Methods-using-the-UI/vault-login-page-okta-sign-in.jpg)
 
 After successful authentication, you’ll be redirected to the Vault dashboard.
 
@@ -220,9 +210,7 @@ After successful authentication, you’ll be redirected to the Vault dashboard.
 
 Navigate to **Access → Auth Methods**, then click **Enable new method**. You’ll see categories for Generic, Cloud, and Infra authentication plugins:
 
-<Frame>
-  ![The image shows a web interface for enabling an authentication method in Vault, with options for Generic, Cloud, and Infra authentication types. Various methods like AppRole, AWS, Azure, and Kubernetes are available for selection.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878014/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Configuring-Auth-Methods-using-the-UI/vault-authentication-methods-web-interface.jpg)
-</Frame>
+![The image shows a web interface for enabling an authentication method in Vault, with options for Generic, Cloud, and Infra authentication types. Various methods like AppRole, AWS, Azure, and Kubernetes are available for selection.](https://kodekloud.com/kk-media/image/upload/v1752878014/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Configuring-Auth-Methods-using-the-UI/vault-authentication-methods-web-interface.jpg)
 
 Select **Username & Password** (userpass) and click **Next**. Configure the mount options:
 
@@ -232,15 +220,11 @@ Select **Username & Password** (userpass) and click **Next**. Configure the moun
 * **Token Type**: `service` (default)
 * **Description**: *My cool new Auth Method*
 
-<Callout icon="lightbulb">
-  Default TTL controls how long issued tokens remain valid before renewal.
-</Callout>
+> **lightbulb** Default TTL controls how long issued tokens remain valid before renewal.
 
 If you have Vault Enterprise, you can also enable **Seal Wrap** for enhanced security. When ready, click **Enable method**:
 
-<Frame>
-  ![The image shows a web interface for enabling a username and password authentication method in a Vault application, with various configuration options like path, description, and token type.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878016/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Configuring-Auth-Methods-using-the-UI/vault-username-password-authentication-interface.jpg)
-</Frame>
+![The image shows a web interface for enabling a username and password authentication method in a Vault application, with various configuration options like path, description, and token type.](https://kodekloud.com/kk-media/image/upload/v1752878016/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Configuring-Auth-Methods-using-the-UI/vault-username-password-authentication-interface.jpg)
 
 Your new userpass method is now mounted at `vault/`.
 
@@ -259,9 +243,7 @@ Your new userpass method is now mounted at `vault/`.
 
 4. Click **Save**. The user `bob` is now created and associated with the specified policies.
 
-<Frame>
-  ![The image shows a user interface for creating a new user in a system, with fields for username, password, and token settings. It includes options for configuring generated token policies and settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878016/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Configuring-Auth-Methods-using-the-UI/user-interface-create-new-user-settings.jpg)
-</Frame>
+![The image shows a user interface for creating a new user in a system, with fields for username, password, and token settings. It includes options for configuring generated token policies and settings.](https://kodekloud.com/kk-media/image/upload/v1752878016/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Configuring-Auth-Methods-using-the-UI/user-interface-create-new-user-settings.jpg)
 
 ***
 
@@ -299,13 +281,9 @@ To manage existing mounts:
 
 For example, updating Azure auth settings lets you change Tenant ID, Resource, and Environment:
 
-<Frame>
-  ![The image shows a configuration page for setting up Azure in a Vault application, with fields for Tenant ID, Resource, and Environment. There are options to save the configuration and view method options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878017/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Configuring-Auth-Methods-using-the-UI/azure-vault-configuration-page-settings.jpg)
-</Frame>
+![The image shows a configuration page for setting up Azure in a Vault application, with fields for Tenant ID, Resource, and Environment. There are options to save the configuration and view method options.](https://kodekloud.com/kk-media/image/upload/v1752878017/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-Configuring-Auth-Methods-using-the-UI/azure-vault-configuration-page-settings.jpg)
 
-<Callout icon="triangle-alert">
-  Disabling an auth method permanently removes its data. Make sure you’ve migrated or no longer need it before confirmation.
-</Callout>
+> **triangle-alert** Disabling an auth method permanently removes its data. Make sure you’ve migrated or no longer need it before confirmation.
 
 ***
 
@@ -317,6 +295,4 @@ Configuring Vault auth methods via the UI simplifies access control management. 
 * [Vault UI Overview](https://www.vaultproject.io/docs/upgrading/ui)
 * [Okta Auth Method](https://www.vaultproject.io/docs/auth/okta)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/edecf4ab-342e-453d-9153-9d4d3ed0fc75" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/eebfb593-8885-43b0-a9ba-9f88af87092e/lesson/edecf4ab-342e-453d-9153-9d4d3ed0fc75)

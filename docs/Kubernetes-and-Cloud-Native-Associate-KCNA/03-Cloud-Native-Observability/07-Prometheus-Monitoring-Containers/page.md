@@ -14,23 +14,17 @@ node_disk_discard_time_seconds_total{device="sr0"} 0
 2. **Gauge:**\
    Gauges measure values that can increase or decrease, such as current CPU utilization or memory usage.
 
-<Frame>
-  ![The image is a slide titled "Gauge," explaining its function to show current values that can fluctuate, with examples like CPU utilization and system memory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880535/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Metrics/frame_350.jpg)
-</Frame>
+![The image is a slide titled "Gauge," explaining its function to show current values that can fluctuate, with examples like CPU utilization and system memory.](https://kodekloud.com/kk-media/image/upload/v1752880535/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Metrics/frame_350.jpg)
 
 3. **Histogram:**\
    Histograms record the distribution of values, such as response times or request sizes, by sorting observations into configurable buckets. For example, you might define buckets for requests that take 0.2, 0.5, or 1 second to complete.
 
-<Frame>
-  ![The image explains histograms, showing response time and request size categories, with a bar chart illustrating response times under different conditions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880536/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Metrics/frame_440.jpg)
-</Frame>
+![The image explains histograms, showing response time and request size categories, with a bar chart illustrating response times under different conditions.](https://kodekloud.com/kk-media/image/upload/v1752880536/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Metrics/frame_440.jpg)
 
 4. **Summary:**\
    Summaries provide quantile information (such as percentiles) for durations or sizes, offering an alternative method to histograms for understanding data distributions. For instance, a summary might show that 20% of requests completed in under 0.3 seconds, 50% under 0.8 seconds, and 80% under one second.
 
-<Frame>
-  ![The image summarizes data analysis concepts, comparing histograms and summaries, with response time and request size percentiles, and a bar chart illustrating response time percentiles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880538/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Metrics/frame_560.jpg)
-</Frame>
+![The image summarizes data analysis concepts, comparing histograms and summaries, with response time and request size percentiles, and a bar chart illustrating response time percentiles.](https://kodekloud.com/kk-media/image/upload/v1752880538/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Metrics/frame_560.jpg)
 
 ***
 
@@ -38,9 +32,7 @@ node_disk_discard_time_seconds_total{device="sr0"} 0
 
 Metric names should clearly indicate the system feature being measured. Valid characters include ASCII letters, numbers, underscores, and colons. However, avoid using colons in metric names since they are reserved for recording rules in Prometheus.
 
-<Frame>
-  ![The image lists metric rules, including naming conventions, allowed characters, regex matching, and colon usage for recording rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880539/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Metrics/frame_600.jpg)
-</Frame>
+![The image lists metric rules, including naming conventions, allowed characters, regex matching, and colon usage for recording rules.](https://kodekloud.com/kk-media/image/upload/v1752880539/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Metrics/frame_600.jpg)
 
 ***
 
@@ -86,17 +78,13 @@ These labels ensure that each metric can be traced back to its source, facilitat
   ![The image explains labels as key-value pairs for metrics, allowing criteria-based splitting, multiple labels, and ASCII characters, matching the regex \[a-zA-Z0-9\_\]\*.](https://kodekloud.com/kk-media/image/upload/v1752880540/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Metrics/frame_660.jpg)
 </Frame>
 
-<Frame>
-  ![The image compares two methods for calculating API requests in an e-commerce app, highlighting the ease of using labels for summing requests.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880541/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Metrics/frame_750.jpg)
-</Frame>
+![The image compares two methods for calculating API requests in an e-commerce app, highlighting the ease of using labels for summing requests.](https://kodekloud.com/kk-media/image/upload/v1752880541/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Metrics/frame_750.jpg)
 
 ***
 
 This article has provided a comprehensive overview of Prometheus metrics. You now have a solid foundation in understanding metric structure, timestamp usage during data scraping, the nature of time series, various metric types, naming conventions, and the crucial role that labels play in monitoring. With this knowledge, you are better equipped to model and query your monitoring data effectively in Prometheus.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/70e17eea-7e9b-4f65-87a4-1cdb5631e0dc/lesson/451d5d9a-c017-4fd3-a1bc-a751727a63fd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/70e17eea-7e9b-4f65-87a4-1cdb5631e0dc/lesson/451d5d9a-c017-4fd3-a1bc-a751727a63fd)
 
 
 # Prometheus Monitoring Containers
@@ -107,9 +95,7 @@ Learn to extend Prometheus monitoring from Linux hosts to containerized environm
 
 In this lesson, you will learn how to extend Prometheus monitoring from Linux hosts to containerized environments. By collecting metrics from both the Docker engine and individual containers using cAdvisor, you can gain comprehensive insights into your system’s performance.
 
-<Frame>
-  ![The image illustrates container metrics collection using cAdvisor, highlighting metrics from containerized environments and Docker Engine, with a diagram of servers and containers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880542/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Monitoring-Containers/frame_30.jpg)
-</Frame>
+![The image illustrates container metrics collection using cAdvisor, highlighting metrics from containerized environments and Docker Engine, with a diagram of servers and containers.](https://kodekloud.com/kk-media/image/upload/v1752880542/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Monitoring-Containers/frame_30.jpg)
 
 ## Enabling Docker Engine Metrics
 
@@ -136,9 +122,7 @@ To collect metrics from your Docker engine, perform the following steps on your 
    $ curl localhost:9323/metrics
    ```
 
-<Callout icon="lightbulb">
-  Ensure that the experimental flag is enabled to properly expose Docker engine metrics.
-</Callout>
+> **lightbulb** Ensure that the experimental flag is enabled to properly expose Docker engine metrics.
 
 Once you have verified the endpoint, update your Prometheus configuration to scrape Docker engine metrics. For example:
 
@@ -201,9 +185,7 @@ scrape_configs:
 
 Replace `12.1.13.4` with the IP address where cAdvisor is running.
 
-<Frame>
-  ![The image compares Docker Engine metrics and cAdvisor metrics, highlighting differences in CPU usage, container-specific metrics, and process monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880543/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Monitoring-Containers/frame_180.jpg)
-</Frame>
+![The image compares Docker Engine metrics and cAdvisor metrics, highlighting differences in CPU usage, container-specific metrics, and process monitoring.](https://kodekloud.com/kk-media/image/upload/v1752880543/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Prometheus-Monitoring-Containers/frame_180.jpg)
 
 ## Docker vs. cAdvisor Metrics
 
@@ -223,10 +205,6 @@ Understanding the difference between Docker engine metrics and cAdvisor metrics 
   * Container uptime.\
     Use cAdvisor metrics when you require detailed, container-specific performance data.
 
-<Callout icon="lightbulb">
-  Use Docker engine metrics for a holistic view of your host's performance and cAdvisor for in-depth analysis of each container. Adjust your Prometheus configuration accordingly to ensure efficient monitoring.
-</Callout>
+> **lightbulb** Use Docker engine metrics for a holistic view of your host's performance and cAdvisor for in-depth analysis of each container. Adjust your Prometheus configuration accordingly to ensure efficient monitoring.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/70e17eea-7e9b-4f65-87a4-1cdb5631e0dc/lesson/2318384c-8892-4c7a-869c-ee002e33ed3e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/70e17eea-7e9b-4f65-87a4-1cdb5631e0dc/lesson/2318384c-8892-4c7a-869c-ee002e33ed3e)

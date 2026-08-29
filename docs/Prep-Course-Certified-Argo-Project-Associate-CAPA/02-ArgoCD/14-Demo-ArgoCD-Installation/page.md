@@ -1,9 +1,7 @@
 # (...)
 ```
 
-<Callout icon="lightbulb">
-  The clusters generator reads cluster Secrets in the argocd namespace and exposes fields like `.name` and `.server`. Reference these generated parameters in your ApplicationSet template to target destinations automatically.
-</Callout>
+> **lightbulb** The clusters generator reads cluster Secrets in the argocd namespace and exposes fields like `.name` and `.server`. Reference these generated parameters in your ApplicationSet template to target destinations automatically.
 
 When you manage dozens of clusters, the clusters generator significantly reduces maintenance compared to manually updating a list generator.
 
@@ -63,9 +61,7 @@ kubectl get crds
 No resources found
 ```
 
-<Callout icon="warning">
-  If you target the wrong kubecontext (for example, a cluster without Argo CD installed), kubectl will not find the ApplicationSet CRD. Switch to the context that hosts Argo CD (e.g., your Docker Desktop or kind cluster) and re-run the apply after ensuring the ApplicationSet CRD and controller are installed.
-</Callout>
+> **warning** If you target the wrong kubecontext (for example, a cluster without Argo CD installed), kubectl will not find the ApplicationSet CRD. Switch to the context that hosts Argo CD (e.g., your Docker Desktop or kind cluster) and re-run the apply after ensuring the ApplicationSet CRD and controller are installed.
 
 After switching to the correct context and ensuring the CRDs/controller are present, applying the ApplicationSet should succeed and create the ApplicationSet resource:
 
@@ -122,11 +118,9 @@ In this example the UI shows multiple nginx Applications — one for the in-clus
 
 That's all for this lesson — you should now be able to choose between the list and clusters generators and deploy workloads across multiple clusters using a single ApplicationSet.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/db742489-0b3a-459a-9d8d-0d6fb616dff7" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/db742489-0b3a-459a-9d8d-0d6fb616dff7)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/007a37af-9773-4611-aefe-44fc62967b92" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/007a37af-9773-4611-aefe-44fc62967b92)
 
 
 # Demo ArgoCD Installation

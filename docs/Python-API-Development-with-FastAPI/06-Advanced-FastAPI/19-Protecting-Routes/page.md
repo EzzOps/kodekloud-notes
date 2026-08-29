@@ -95,9 +95,7 @@ def verify_access_token(token: str, credentials_exception):
     return token_data
 ```
 
-<Callout icon="lightbulb">
-  If the token does not include a valid user ID or if an error occurs during decoding, the request fails with an HTTP 401 error.
-</Callout>
+> **lightbulb** If the token does not include a valid user ID or if an error occurs during decoding, the request fails with an HTTP 401 error.
 
 ***
 
@@ -248,14 +246,10 @@ After securing your endpoints, consider testing these common scenarios:
 | DELETE /posts/ | Deleting without proper authentication returns a not found or unauthorized error. |
 | PUT /posts/    | Updating a post without the Bearer token returns "Not authenticated".             |
 
-<Callout icon="triangle-alert">
-  Always include a valid token in your requests for protected endpoints to ensure proper access control.
-</Callout>
+> **triangle-alert** Always include a valid token in your requests for protected endpoints to ensure proper access control.
 
 ***
 
 This concludes our guide on protecting routes using authentication in FastAPI. By enforcing these measures, your API will only allow authenticated users to perform sensitive actions such as creating, updating, and deleting posts.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/aa5e27b8-a5e2-4be2-be99-de62bdcf3515" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/aa5e27b8-a5e2-4be2-be99-de62bdcf3515)

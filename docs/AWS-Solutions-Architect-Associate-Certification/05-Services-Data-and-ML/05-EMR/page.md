@@ -10,7 +10,7 @@ EMR commonly ingests data from repositories such as Amazon S3 into a managed clu
 
 The diagram below illustrates a typical data flow in an EMR environment, where various data sources feed information into Apache Spark running on EMR, which then processes and outputs data to services such as Redshift, S3, or Kinesis.
 
-![The image is a diagram showing Amazon EMR integration with various AWS services, including Amazon DynamoDB, RDS, S3, Redshift, and Kinesis. It illustrates data flow from these services into and out of EMR.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865049/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EMR/amazon-emr-aws-services-diagram.jpg)
+![The image is a diagram showing Amazon EMR integration with various AWS services, including Amazon DynamoDB, RDS, S3, Redshift, and Kinesis. It illustrates data flow from these services into and out of EMR.](https://kodekloud.com/kk-media/image/upload/v1752865049/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EMR/amazon-emr-aws-services-diagram.jpg)
 
 ## EMR Cluster Architecture
 
@@ -22,7 +22,7 @@ At the heart of EMR lies its cluster—a set of Amazon EC2 instances known as no
 
 The diagram below provides a clear visualization of how these nodes interact within an EMR cluster.
 
-![The image illustrates a diagram of an EMR (Elastic MapReduce) cluster architecture, showing a primary node, core node, and task node, with a Hadoop logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865050/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EMR/emr-cluster-architecture-diagram.jpg)
+![The image illustrates a diagram of an EMR (Elastic MapReduce) cluster architecture, showing a primary node, core node, and task node, with a Hadoop logo.](https://kodekloud.com/kk-media/image/upload/v1752865050/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EMR/emr-cluster-architecture-diagram.jpg)
 
 ## How EMR Works
 
@@ -40,7 +40,7 @@ You can submit multiple processing steps to a running EMR cluster. For instance,
 
 The flowchart below outlines this process along with step status indicators.
 
-![The image shows a flowchart for an EMR process with steps like "Submit input Dataset" and "Process with Pig program," along with status indicators such as "Completed," "Failed," and "Cancelled."](../../../../images/kodekloud.com/kk-media/image/upload/v1752865051/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EMR/emr-process-flowchart-steps-status.jpg)
+![The image shows a flowchart for an EMR process with steps like "Submit input Dataset" and "Process with Pig program," along with status indicators such as "Completed," "Failed," and "Cancelled."](https://kodekloud.com/kk-media/image/upload/v1752865051/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EMR/emr-process-flowchart-steps-status.jpg)
 
 ## Key Features of Amazon EMR
 
@@ -54,7 +54,7 @@ Amazon EMR offers several standout features that make it a powerful solution for
 
 The diagram below visually summarizes these key features.
 
-![The image lists five features: Managed Hadoop Framework, Scalability and Flexibility, Cost-Effective Processing, Integration with Other AWS Services, and Security and Compliance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865052/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EMR/hadoop-features-scalability-cost-effective.jpg)
+![The image lists five features: Managed Hadoop Framework, Scalability and Flexibility, Cost-Effective Processing, Integration with Other AWS Services, and Security and Compliance.](https://kodekloud.com/kk-media/image/upload/v1752865052/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EMR/hadoop-features-scalability-cost-effective.jpg)
 
 > **lightbulb** For detailed integration guidelines and best practices, refer to the [Amazon EMR Documentation](https://docs.aws.amazon.com/emr/).
 

@@ -77,9 +77,7 @@ Calculations:
   <img alt="The image is a table detailing the costs and savings of a &#x22;Reserved Instance&#x22; option, including upfront payment, monthly recurring fees, and annual savings. Calculations such as annual total and amortized monthly costs are also displayed." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Key takeaway: In this example, committing to a Reserved Instance reduces annual spend by about 15.5% (roughly $1,360). When amortized, that equates to roughly $113 saved per month. Actual savings depend on the specific offering, term length, and utilization.
-</Callout>
+> **lightbulb** Key takeaway: In this example, committing to a Reserved Instance reduces annual spend by about 15.5% (roughly $1,360). When amortized, that equates to roughly $113 saved per month. Actual savings depend on the specific offering, term length, and utilization.
 
 Why this matters for FinOps
 
@@ -103,6 +101,4 @@ Further reading and references
 
 That’s it for this lesson — speak with you soon.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/51754951-5ba1-449f-8896-5699b456f578" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/e2afb350-04ac-4d29-9094-9c32c6ce938e/lesson/51754951-5ba1-449f-8896-5699b456f578)

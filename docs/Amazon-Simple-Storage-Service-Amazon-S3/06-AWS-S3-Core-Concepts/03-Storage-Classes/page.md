@@ -32,7 +32,7 @@ The default class for frequently accessed (“hot”) data:
   * Data ingress: Free
   * Data egress: per GB (no retrieval fee)
 
-![The image illustrates the AWS S3 Standard storage model, showing data replication across three availability zones in the "us-east-1" region, with charges based on gigabytes used.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869345/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Storage-Classes/aws-s3-standard-storage-replication-diagram.jpg)
+![The image illustrates the AWS S3 Standard storage model, showing data replication across three availability zones in the "us-east-1" region, with charges based on gigabytes used.](https://kodekloud.com/kk-media/image/upload/v1752869345/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Storage-Classes/aws-s3-standard-storage-replication-diagram.jpg)
 
 ## S3 Standard-IA (Infrequent Access)
 
@@ -62,7 +62,7 @@ Cost-optimized for infrequently accessed data **not** requiring multi-AZ resilie
 
 > **triangle-alert** One Zone-IA stores data in a single Availability Zone. If that AZ fails, your objects become unavailable.
 
-![The image is an infographic about AWS S3 One Zone-IA, highlighting its design for infrequently accessed data, charging per GB, retrieval fees, and minimum charges, with a focus on a single availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869346/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Storage-Classes/aws-s3-one-zone-ia-infographic.jpg)
+![The image is an infographic about AWS S3 One Zone-IA, highlighting its design for infrequently accessed data, charging per GB, retrieval fees, and minimum charges, with a focus on a single availability zone.](https://kodekloud.com/kk-media/image/upload/v1752869346/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Storage-Classes/aws-s3-one-zone-ia-infographic.jpg)
 
 ## S3 Glacier Instant Retrieval
 
@@ -78,7 +78,7 @@ Archival storage with immediate access for rare use cases:
 
 > **lightbulb** Not recommended for direct website hosting—use S3 Standard for public assets.
 
-![The image is an informational graphic about AWS S3 Glacier-Instant, highlighting it as a low-cost storage option for rarely accessed data with details on charges and availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869347/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Storage-Classes/aws-s3-glacier-instant-storage-info.jpg)
+![The image is an informational graphic about AWS S3 Glacier-Instant, highlighting it as a low-cost storage option for rarely accessed data with details on charges and availability zones.](https://kodekloud.com/kk-media/image/upload/v1752869347/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Storage-Classes/aws-s3-glacier-instant-storage-info.jpg)
 
 ## S3 Glacier Flexible Retrieval
 
@@ -115,7 +115,7 @@ The lowest-cost class for data accessed once or twice a year:
 * Standard: up to 12 hours
 * Bulk: up to 48 hours
 
-![The image is an infographic about AWS S3 Glacier Deep Archive, highlighting its options, retrieval times, charges, and storage features across availability zones. It emphasizes being the cheapest storage class in S3 with specific retrieval fees and minimum charges.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869348/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Storage-Classes/aws-s3-glacier-deep-archive-infographic.jpg)
+![The image is an infographic about AWS S3 Glacier Deep Archive, highlighting its options, retrieval times, charges, and storage features across availability zones. It emphasizes being the cheapest storage class in S3 with specific retrieval fees and minimum charges.](https://kodekloud.com/kk-media/image/upload/v1752869348/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Storage-Classes/aws-s3-glacier-deep-archive-infographic.jpg)
 
 ## S3 Intelligent Tiering
 
@@ -127,7 +127,7 @@ Automatically optimizes costs for data with unknown or changing access patterns:
 
 > **lightbulb** Enable Intelligent Tiering to reduce manual effort and optimize monthly storage bills.
 
-![The image describes S3 Intelligent Tiering, highlighting its ability to reduce storage costs by moving data to cost-effective tiers and mentioning additional monitoring costs per 1,000 objects.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869349/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Storage-Classes/s3-intelligent-tiering-storage-costs-diagram.jpg)
+![The image describes S3 Intelligent Tiering, highlighting its ability to reduce storage costs by moving data to cost-effective tiers and mentioning additional monitoring costs per 1,000 objects.](https://kodekloud.com/kk-media/image/upload/v1752869349/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Storage-Classes/s3-intelligent-tiering-storage-costs-diagram.jpg)
 
 ***
 
@@ -146,7 +146,7 @@ Use the decision flowchart below to pick the optimal storage class based on acce
      * Almost never → **Glacier Deep Archive**
      * Occasionally → **Glacier Flexible Retrieval**
 
-![The image is a flowchart for selecting storage options based on access frequency and immediacy, featuring options like Standard, Glacier Instant, and Glacier Deep Archive.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869351/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Storage-Classes/storage-options-flowchart-access-frequency.jpg)
+![The image is a flowchart for selecting storage options based on access frequency and immediacy, featuring options like Standard, Glacier Instant, and Glacier Deep Archive.](https://kodekloud.com/kk-media/image/upload/v1752869351/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Storage-Classes/storage-options-flowchart-access-frequency.jpg)
 
 ***
 

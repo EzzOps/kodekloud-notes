@@ -21,9 +21,9 @@ Additionally, KMS enforces resource quotas. Exceeding these quotas triggers a li
 
 Key policies can also be defined to control and restrict key operations to authorized entities.
 
-![The image is an informational graphic about AWS Key Management Service (KMS), detailing its role in cryptographic key management, types of keys offered, and its encryption capabilities.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859358/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-kms-key-management-graphic.jpg)
+![The image is an informational graphic about AWS Key Management Service (KMS), detailing its role in cryptographic key management, types of keys offered, and its encryption capabilities.](https://kodekloud.com/kk-media/image/upload/v1752859358/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-kms-key-management-graphic.jpg)
 
-![The image provides guidelines for managing AWS Key Management Service (KMS), including handling resource quotas, throttling, data key caching, and defining key policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859359/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-kms-management-guidelines.jpg)
+![The image provides guidelines for managing AWS Key Management Service (KMS), including handling resource quotas, throttling, data key caching, and defining key policies.](https://kodekloud.com/kk-media/image/upload/v1752859359/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-kms-management-guidelines.jpg)
 
 ***
 
@@ -40,7 +40,7 @@ AWS Systems Manager Parameter Store securely stores configuration data and secre
 
 AWS Secrets Manager specializes in managing, retrieving, and rotating sensitive information such as database credentials and API keys. While it functions similarly to Parameter Store, its automatic secret rotation feature—managed through AWS Lambda—makes it ideal for handling highly sensitive secrets that require frequent updates. Additionally, secrets in Secrets Manager are encrypted by default.
 
-![The image is a slide explaining the differences between Parameter Store and Secrets Manager, highlighting automatic secret rotation via Lambda and preference for sensitive secrets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859359/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/parameter-store-secrets-manager-differences.jpg)
+![The image is a slide explaining the differences between Parameter Store and Secrets Manager, highlighting automatic secret rotation via Lambda and preference for sensitive secrets.](https://kodekloud.com/kk-media/image/upload/v1752859359/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/parameter-store-secrets-manager-differences.jpg)
 
 ***
 
@@ -48,7 +48,7 @@ AWS Secrets Manager specializes in managing, retrieving, and rotating sensitive 
 
 AWS Certificate Manager (ACM) is designed to provision, manage, and deploy SSL/TLS certificates, which help secure communications for services like CloudFront distributions, load balancers, and API gateways. A key feature of ACM is its regional operation requirement. Certificates must be created in the same region as the resources they secure. For global services such as CloudFront, certificates must be provisioned in the US East (N. Virginia) region.
 
-![The image is an informational slide about AWS Certificate Manager, detailing its functions in handling SSL/TLS certificates, its capability to generate certificates for various AWS services, and its regional operation requirements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859360/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-certificate-manager-info-slide.jpg)
+![The image is an informational slide about AWS Certificate Manager, detailing its functions in handling SSL/TLS certificates, its capability to generate certificates for various AWS services, and its regional operation requirements.](https://kodekloud.com/kk-media/image/upload/v1752859360/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-certificate-manager-info-slide.jpg)
 
 ***
 
@@ -59,7 +59,7 @@ AWS Cognito simplifies the process of managing user identities and authenticatio
 * **User Pools:** These provide a user directory and streamline the sign-up and sign-in process.
 * **Identity Pools:** These allow authenticated users to obtain temporary AWS credentials to access AWS services.
 
-![The image is a slide about AWS Cognito, describing its features such as managing user identities, implementing authentication, integrating with third-party IDPs, and using User and Identity Pools.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859361/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-cognito-user-identity-features.jpg)
+![The image is a slide about AWS Cognito, describing its features such as managing user identities, implementing authentication, integrating with third-party IDPs, and using User and Identity Pools.](https://kodekloud.com/kk-media/image/upload/v1752859361/notes-assets/images/AWS-Certified-Developer-Associate-Exam-Tips/aws-cognito-user-identity-features.jpg)
 
 ***
 

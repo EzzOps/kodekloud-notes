@@ -32,13 +32,9 @@ Before diving into the demo, let's review the core components of a standard Kube
   * kubelet
   * Container Runtime
 
-<Callout icon="lightbulb">
-  Minikube streamlines this process by bundling all these components into a single image, providing a pre-configured, single-node Kubernetes cluster.
-</Callout>
+> **lightbulb** Minikube streamlines this process by bundling all these components into a single image, providing a pre-configured, single-node Kubernetes cluster.
 
-<Frame>
-  ![The image illustrates Minikube components, including kubelet, kube-apiserver, etcd, node-controller, replica-controller, and container runtime, in a diagram format.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884877/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Setup-Introduction-and-Minikube/frame_150.jpg)
-</Frame>
+![The image illustrates Minikube components, including kubelet, kube-apiserver, etcd, node-controller, replica-controller, and container runtime, in a diagram format.](https://kodekloud.com/kk-media/image/upload/v1752884877/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Setup-Introduction-and-Minikube/frame_150.jpg)
 
 ## How Minikube Works
 
@@ -49,9 +45,7 @@ Minikube packages the complete Kubernetes bundle into an ISO image that is autom
 * Hyper-V (for Windows users)
 * KVM (for Linux users)
 
-<Callout icon="triangle-alert">
-  Ensure that a compatible hypervisor (e.g., VirtualBox, Hyper-V, or KVM) is installed on your system before running Minikube.
-</Callout>
+> **triangle-alert** Ensure that a compatible hypervisor (e.g., VirtualBox, Hyper-V, or KVM) is installed on your system before running Minikube.
 
 To interact with your Kubernetes cluster, you also need to install the kubectl command-line tool. Here’s a quick summary of the requirements to get started with Minikube:
 
@@ -61,9 +55,7 @@ To interact with your Kubernetes cluster, you also need to install the kubectl c
 | kubectl             | The official Kubernetes command-line tool                      |
 | Minikube executable | The utility that automates ISO download and cluster deployment |
 
-<Frame>
-  ![The image illustrates Minikube's architecture, showing Minikube.exe and kubectl interacting with a single-node Kubernetes cluster running on VirtualBox, connected to a cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884878/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Setup-Introduction-and-Minikube/frame_200.jpg)
-</Frame>
+![The image illustrates Minikube's architecture, showing Minikube.exe and kubectl interacting with a single-node Kubernetes cluster running on VirtualBox, connected to a cloud.](https://kodekloud.com/kk-media/image/upload/v1752884878/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Kubernetes-Setup-Introduction-and-Minikube/frame_200.jpg)
 
 ## Conclusion
 
@@ -73,6 +65,4 @@ For more detailed information and advanced configurations, check out the [Kubern
 
 Happy clustering!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/5b966a64-54c6-46ff-b284-4299f34c8f84/lesson/3a475c48-8fe1-436c-90c3-b66dbbc5c3e1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/5b966a64-54c6-46ff-b284-4299f34c8f84/lesson/3a475c48-8fe1-436c-90c3-b66dbbc5c3e1)

@@ -45,9 +45,7 @@ To create a service account:
 * Provide a name (optional email)
 * Assign the minimum role required for the automation
 
-<Callout icon="warning">
-  Do not assign a Datadog Admin role to production service accounts. Apply least privilege to reduce blast radius if credentials are exposed.
-</Callout>
+> **warning** Do not assign a Datadog Admin role to production service accounts. Apply least privilege to reduce blast radius if credentials are exposed.
 
 Service account details include creation metadata, assigned roles, and associated application keys.
 
@@ -83,9 +81,7 @@ Federation with SAML/OIDC/Google OAuth allows teams to use existing corporate id
 * Centralized MFA enforcement and conditional access
 * Simplified onboarding and offboarding
 
-<Callout icon="lightbulb">
-  Integrate SAML/OIDC to enforce corporate access controls and centralize user lifecycle, MFA, and group membership management.
-</Callout>
+> **lightbulb** Integrate SAML/OIDC to enforce corporate access controls and centralize user lifecycle, MFA, and group membership management.
 
 ### SAML Group Mappings
 
@@ -220,6 +216,4 @@ Key principles:
 
 I hope this lesson was helpful.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/a62115c0-be96-4928-8050-985df8cfa163" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/a62115c0-be96-4928-8050-985df8cfa163)

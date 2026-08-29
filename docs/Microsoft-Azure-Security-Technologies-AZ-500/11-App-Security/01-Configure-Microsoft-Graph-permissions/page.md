@@ -27,31 +27,23 @@ For example:
 
 Granting consent is a critical step. Users or administrators must consent to the permissions requested by an application; this consent can be applied individually or organization-wide.
 
-<Frame>
-  ![The image is a guide on configuring Microsoft Graph permissions, highlighting granular access control, permission types, and consent, with a section on commonly used Microsoft APIs like Azure Batch and Azure Key Vault.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881603/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Microsoft-Graph-permissions/microsoft-graph-permissions-guide.jpg)
-</Frame>
+![The image is a guide on configuring Microsoft Graph permissions, highlighting granular access control, permission types, and consent, with a section on commonly used Microsoft APIs like Azure Batch and Azure Key Vault.](https://kodekloud.com/kk-media/image/upload/v1752881603/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Microsoft-Graph-permissions/microsoft-graph-permissions-guide.jpg)
 
 ## Configuring Permissions in the Azure Portal
 
 1. Navigate to your [Azure Active Directory](https://portal.azure.com) and open the **App registrations** section. For demonstration purposes, this guide uses an app registration named **AppSecReg**.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal displaying the "App registrations" section under "Kodekloud," listing various applications with their display names, client IDs, creation dates, and certificate statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881605/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Microsoft-Graph-permissions/azure-portal-app-registrations-kodekloud.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal displaying the "App registrations" section under "Kodekloud," listing various applications with their display names, client IDs, creation dates, and certificate statuses.](https://kodekloud.com/kk-media/image/upload/v1752881605/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Microsoft-Graph-permissions/azure-portal-app-registrations-kodekloud.jpg)
 
 2. In the app registration, select **API permissions**. Initially, you may see a delegated permission already configured, enabling the app to perform actions on behalf of the signed-in user.
 
 3. To add additional permissions (for example, to read all users in the directory), select **Microsoft Graph** and then the **Application permissions** option. Under the **Users** section, add the **User.ReadWrite.All** permission.
 
-<Frame>
-  ![The image shows a Microsoft Azure portal screen where API permissions are being configured for an app registration. The "Request API permissions" panel is open, displaying various user-related permissions options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881606/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Microsoft-Graph-permissions/azure-portal-api-permissions-config.jpg)
-</Frame>
+![The image shows a Microsoft Azure portal screen where API permissions are being configured for an app registration. The "Request API permissions" panel is open, displaying various user-related permissions options.](https://kodekloud.com/kk-media/image/upload/v1752881606/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Microsoft-Graph-permissions/azure-portal-api-permissions-config.jpg)
 
 4. After adding new permissions, an administrator must grant consent to enable them. Once granted, revisit the API permissions page to verify that the updated permissions are in effect.
 
-<Frame>
-  ![The image shows the Microsoft Azure portal page displaying API permissions for an app registration named "app-sec-reg." It lists configured permissions for Microsoft Graph API, including "User.Read" and "User.Read.All," with their types, descriptions, and consent statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881607/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Microsoft-Graph-permissions/azure-portal-api-permissions-app-sec-reg.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal page displaying API permissions for an app registration named "app-sec-reg." It lists configured permissions for Microsoft Graph API, including "User.Read" and "User.Read.All," with their types, descriptions, and consent statuses.](https://kodekloud.com/kk-media/image/upload/v1752881607/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Microsoft-Graph-permissions/azure-portal-api-permissions-app-sec-reg.jpg)
 
 ## Testing with Microsoft Graph Explorer
 
@@ -78,9 +70,7 @@ For example, a query to get all user details might return:
 
 After granting the required **User.Read.All** consent, running the query again should return a 200 response with the list of users.
 
-<Frame>
-  ![The image shows the Microsoft Graph Explorer interface, displaying a list of permissions required to run a query, with options to consent to each permission. The response preview section at the bottom shows JSON data from a query result.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881608/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Microsoft-Graph-permissions/microsoft-graph-explorer-permissions-json.jpg)
-</Frame>
+![The image shows the Microsoft Graph Explorer interface, displaying a list of permissions required to run a query, with options to consent to each permission. The response preview section at the bottom shows JSON data from a query result.](https://kodekloud.com/kk-media/image/upload/v1752881608/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Microsoft-Graph-permissions/microsoft-graph-explorer-permissions-json.jpg)
 
 ## Working with Service Principals and Postman
 
@@ -173,9 +163,7 @@ You can inspect the included claims and roles in the JWT token by pasting it int
 }
 ```
 
-<Callout icon="lightbulb">
-  This JWT indicates that only the **User.Read.All** permission is present. To add further capabilities—such as listing groups—you need to add additional permissions like **Group.Read.All**.
-</Callout>
+> **lightbulb** This JWT indicates that only the **User.Read.All** permission is present. To add further capabilities—such as listing groups—you need to add additional permissions like **Group.Read.All**.
 
 ### Adding Group Permissions
 
@@ -231,9 +219,7 @@ You can inspect the included claims and roles in the JWT token by pasting it int
 }
 ```
 
-<Frame>
-  ![The image shows the Microsoft Azure portal displaying the API permissions page for an app registration named "app-sec-reg." It lists configured permissions for Microsoft Graph, including Group.Read.All, User.Read, and User.Read.All, with their types and consent statuses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881609/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Microsoft-Graph-permissions/azure-portal-api-permissions-app-sec-reg-3.jpg)
-</Frame>
+![The image shows the Microsoft Azure portal displaying the API permissions page for an app registration named "app-sec-reg." It lists configured permissions for Microsoft Graph, including Group.Read.All, User.Read, and User.Read.All, with their types and consent statuses.](https://kodekloud.com/kk-media/image/upload/v1752881609/notes-assets/images/Microsoft-Azure-Security-Technologies-AZ-500-Configure-Microsoft-Graph-permissions/azure-portal-api-permissions-app-sec-reg-3.jpg)
 
 ## Summary
 
@@ -248,6 +234,4 @@ Next, we will discuss managed identities—a crucial concept for secure service-
 
 Happy integrating!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c93091f0-246d-47cc-a399-0e33ad87ee7f/lesson/f0ee2d9d-852e-4b24-b675-89157d15096a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500/module/c93091f0-246d-47cc-a399-0e33ad87ee7f/lesson/f0ee2d9d-852e-4b24-b675-89157d15096a)

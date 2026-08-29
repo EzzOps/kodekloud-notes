@@ -6,9 +6,7 @@ This article explores vectors in Rust, covering their creation, manipulation, it
 
 In this article, we dive into vectors in Rust—a versatile, dynamic array data structure that grows and shrinks as needed. Vectors are one of the most commonly used data structures in Rust since they provide efficient, heap-allocated storage for a variable amount of data. By the end of this article, you will understand how to create, update, iterate, and manipulate vectors in Rust while respecting its ownership and borrowing rules.
 
-<Frame>
-  ![The image is a slide titled "Exploring Vectors," explaining that vectors in Rust are commonly used, growable, heap-allocated data structures.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883855/notes-assets/images/Rust-Programming-Vectors/exploring-vectors-rust-data-structures.jpg)
-</Frame>
+![The image is a slide titled "Exploring Vectors," explaining that vectors in Rust are commonly used, growable, heap-allocated data structures.](https://kodekloud.com/kk-media/image/upload/v1752883855/notes-assets/images/Rust-Programming-Vectors/exploring-vectors-rust-data-structures.jpg)
 
 ## Creating Vectors
 
@@ -232,9 +230,7 @@ fn main() {
 }
 ```
 
-<Callout icon="lightbulb">
-  Understanding Rust's ownership and borrowing model is crucial when working with vectors. It helps prevent common bugs related to memory safety.
-</Callout>
+> **lightbulb** Understanding Rust's ownership and borrowing model is crucial when working with vectors. It helps prevent common bugs related to memory safety.
 
 This concludes our exploration of vectors in Rust. By mastering the creation, updating, iteration, and manipulation of vectors—and by understanding Rust’s ownership and borrowing rules—you can unlock the full potential of this flexible data structure in your Rust programs.
 
@@ -243,6 +239,4 @@ This concludes our exploration of vectors in Rust. By mastering the creation, up
 * [Rust Ownership](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html)
 * [Vector Documentation](https://doc.rust-lang.org/std/vec/struct.Vec.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/29fbe393-bae3-4a16-8fc5-a854a2400daa/lesson/2bc9b533-e00f-4eb0-a918-b7546efc09c7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/29fbe393-bae3-4a16-8fc5-a854a2400daa/lesson/2bc9b533-e00f-4eb0-a918-b7546efc09c7)

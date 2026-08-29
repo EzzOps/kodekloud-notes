@@ -21,14 +21,12 @@ data:
   MONGODB_PASSWORD: password
 ```
 
-<Callout icon="lightbulb">
-  In this manifest:
+> **lightbulb** In this manifest:
 
   * The **apiVersion** and **kind** specify that this is a Kubernetes Secret.
   * The **metadata** section includes the namespace (`default`) and the secret's name (`dbpassword`).
   * The **type** `Opaque` means the secret is intended for storing arbitrary user-defined data.
   * The **data** section holds key/value pairs; in this example, `MONGODB_PASSWORD` is paired with its secret value.
-</Callout>
 
 This structure is similar to a ConfigMap, but Secrets are designed for sensitive information.
 
@@ -75,15 +73,11 @@ data:
   MONGODB_PASSWORD: password
 ```
 
-<Frame>
-  ![The image shows the "Secrets" section of the Red Hat OpenShift web console, displaying a list of Kubernetes secrets with options to create new ones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882725/notes-assets/images/OpenShift-4-Demo-Secrets/openshift-secrets-kubernetes-console.jpg)
-</Frame>
+![The image shows the "Secrets" section of the Red Hat OpenShift web console, displaying a list of Kubernetes secrets with options to create new ones.](https://kodekloud.com/kk-media/image/upload/v1752882725/notes-assets/images/OpenShift-4-Demo-Secrets/openshift-secrets-kubernetes-console.jpg)
 
 After creating the secret, you can view its details—including the YAML configuration—to ensure that it has been set up correctly.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift interface displaying details of a secret named "dbpassword" in the default namespace. It includes options to add the secret to a workload and edit labels and annotations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882727/notes-assets/images/OpenShift-4-Demo-Secrets/openshift-secret-dbpassword-interface.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift interface displaying details of a secret named "dbpassword" in the default namespace. It includes options to add the secret to a workload and edit labels and annotations.](https://kodekloud.com/kk-media/image/upload/v1752882727/notes-assets/images/OpenShift-4-Demo-Secrets/openshift-secret-dbpassword-interface.jpg)
 
 ## Referencing Secrets in Deployment Configurations
 
@@ -146,9 +140,7 @@ oc apply -f deployment.yaml
 
 After deployment, review the OpenShift console under **Deployments** and **Pods** to verify that the CartsDB pod is running as expected.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift console displaying details of a deployment named "carts-db," with one running pod listed under the "Pods" tab.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882728/notes-assets/images/OpenShift-4-Demo-Secrets/openshift-console-carts-db-deployment.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift console displaying details of a deployment named "carts-db," with one running pod listed under the "Pods" tab.](https://kodekloud.com/kk-media/image/upload/v1752882728/notes-assets/images/OpenShift-4-Demo-Secrets/openshift-console-carts-db-deployment.jpg)
 
 If you inspect the running pod's YAML, you'll confirm that the `MONGODB_PASSWORD` variable is correctly referencing the secret around the indicated line in the detailed view.
 
@@ -158,6 +150,4 @@ Whether you define your secrets via YAML manifests or through the OpenShift web 
 
 For more detailed information on managing secrets in Kubernetes and OpenShift, review the [Kubernetes Documentation](https://kubernetes.io/docs/) and [OpenShift Documentation](https://docs.openshift.com/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/24f32436-cd2d-4f30-837a-366c1251e60a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/24f32436-cd2d-4f30-837a-366c1251e60a)

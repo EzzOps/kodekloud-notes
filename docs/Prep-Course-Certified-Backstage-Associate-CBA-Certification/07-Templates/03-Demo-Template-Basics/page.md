@@ -134,9 +134,7 @@ This `github-templates` provider will:
 * Only scan the `backstage-templates` repository on the `main` branch.
 * Register any valid entity descriptors it finds, including Template entities.
 
-<Callout icon="lightbulb">
-  Use a glob like `templates/**/*.yaml` in `catalogPath` when your repository stores many template files under a common folder. Ensure the YAML files contain valid entity descriptors (for templates, `kind: Template`).
-</Callout>
+> **lightbulb** Use a glob like `templates/**/*.yaml` in `catalogPath` when your repository stores many template files under a common folder. Ensure the YAML files contain valid entity descriptors (for templates, `kind: Template`).
 
 ## Quick reference — GitHub provider settings
 
@@ -167,9 +165,7 @@ This `github-templates` provider will:
 * Backstage scaffolder docs: [https://backstage.io/docs/features/software-templates/scaffolder-overview](https://backstage.io/docs/features/software-templates/scaffolder-overview)
 * Backstage auth providers: [https://backstage.io/docs/auth/](https://backstage.io/docs/auth/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/1c7142e3-0cb6-40ae-b5b6-77252f8c85b2/lesson/70d3e032-2511-4846-8c95-3d4f3b31f7c9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-backstage-associate-cba/module/1c7142e3-0cb6-40ae-b5b6-77252f8c85b2/lesson/70d3e032-2511-4846-8c95-3d4f3b31f7c9)
 
 
 # Demo Template Basics

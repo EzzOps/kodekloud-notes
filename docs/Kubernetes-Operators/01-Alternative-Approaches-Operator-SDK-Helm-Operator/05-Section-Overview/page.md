@@ -16,9 +16,7 @@ Operator SDK builds on the same controller-runtime building blocks Kubebuilder u
 
 Where Operator SDK differs is in the surrounding tooling and the operator distribution story. It adds first-class workflows for operator bundles, scorecard checks, OLM packaging, and built-in support for non-Go implementations such as Ansible and Helm-based operators. For teams targeting Operator Lifecycle Manager (OLM) or Red Hat ecosystems, these features can significantly reduce integration and packaging effort.
 
-<Callout icon="lightbulb">
-  Operator SDK reuses controller-runtime for reconcile loops and API scaffolding while adding tools for bundles, scorecards, and OLM packaging. It also supports non-Go operator types such as Ansible and Helm.
-</Callout>
+> **lightbulb** Operator SDK reuses controller-runtime for reconcile loops and API scaffolding while adding tools for bundles, scorecards, and OLM packaging. It also supports non-Go operator types such as Ansible and Helm.
 
 When evaluating Operator SDK, ask whether your project needs the additional packaging and CI workflows it provides. If you plan to publish an OLM bundle or want standardized operator checks and packaging, Operator SDK can save substantial development and release work.
 
@@ -83,6 +81,4 @@ Further reading and references
 * [OLM (Operator Lifecycle Manager)](https://olm.operatorframework.io/)
 * [Helm](https://helm.sh/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-operators/module/d2537d70-4008-4d53-ad04-b7731ca0f7c0/lesson/6aac2156-a088-4a51-9f56-b9f3f85bf7c6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-operators/module/d2537d70-4008-4d53-ad04-b7731ca0f7c0/lesson/6aac2156-a088-4a51-9f56-b9f3f85bf7c6)

@@ -14,9 +14,7 @@ When executing the script, a command checks the rocket's status. The possible st
 
 If the launch fails, the script triggers the `rocket-debug` command to investigate the cause of the failure. This command is executed solely when the launch fails, ensuring that no unnecessary operations occur when the launch is successful. The mechanism behind this behavior is implemented via conditional logic in the shell script.
 
-<Callout icon="lightbulb">
-  Conditional logic in shell scripting lets you execute commands only when specific conditions are met. It uses an `if` statement structure similar to natural language constructs, making scripts more readable and maintainable.
-</Callout>
+> **lightbulb** Conditional logic in shell scripting lets you execute commands only when specific conditions are met. It uses an `if` statement structure similar to natural language constructs, making scripts more readable and maintainable.
 
 ## Basic Structure of an If Statement
 
@@ -79,9 +77,7 @@ Below is a summary of common operators used in shell scripting for both string a
   * Greater than: `-gt`
   * Less than: `-lt`
 
-<Frame>
-  ![The image is a table explaining conditional operators with examples and descriptions, showing how to compare strings and numbers for equality and inequality.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883558/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Conditional-Logic/conditional-operators-examples-table.jpg)
-</Frame>
+![The image is a table explaining conditional operators with examples and descriptions, showing how to compare strings and numbers for equality and inequality.](https://kodekloud.com/kk-media/image/upload/v1752883558/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Conditional-Logic/conditional-operators-examples-table.jpg)
 
 ## Enhanced Syntax with Double Square Brackets
 
@@ -137,9 +133,7 @@ fi
 
 Even without the detailed table, the above examples demonstrate how logical operators can be employed to craft effective conditional evaluations.
 
-<Frame>
-  ![The image explains conditional operators in programming, showing examples of using && and || for combining conditions. It includes a table with examples and descriptions of conditions involving the variable A.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883560/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Conditional-Logic/conditional-operators-examples-table-2.jpg)
-</Frame>
+![The image explains conditional operators in programming, showing examples of using && and || for combining conditions. It includes a table with examples and descriptions of conditions involving the variable A.](https://kodekloud.com/kk-media/image/upload/v1752883560/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Conditional-Logic/conditional-operators-examples-table-2.jpg)
 
 ## File Test Operators
 
@@ -153,14 +147,8 @@ Shell scripts also offer file test operators that allow you to check various fil
 
 These operators are essential for creating robust scripts that adapt based on file or directory attributes.
 
-<Frame>
-  ![The image is a table explaining conditional operators in a programming context, with examples and descriptions for checking file existence, directory status, size, executability, and writability.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883561/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Conditional-Logic/conditional-operators-programming-table.jpg)
-</Frame>
+![The image is a table explaining conditional operators in a programming context, with examples and descriptions for checking file existence, directory status, size, executability, and writability.](https://kodekloud.com/kk-media/image/upload/v1752883561/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Conditional-Logic/conditional-operators-programming-table.jpg)
 
-<Callout icon="lightbulb">
-  By mastering these conditional constructions and operators, you can design shell scripts that make intelligent decisions during runtime. This results in more resilient automation workflows and efficient error handling.
-</Callout>
+> **lightbulb** By mastering these conditional constructions and operators, you can design shell scripts that make intelligent decisions during runtime. This results in more resilient automation workflows and efficient error handling.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/9225d80c-3f9d-4e8e-9135-febe7ca37af2/lesson/ea19a0cb-7073-4e17-bca6-cc63fcfc486c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/9225d80c-3f9d-4e8e-9135-febe7ca37af2/lesson/ea19a0cb-7073-4e17-bca6-cc63fcfc486c)

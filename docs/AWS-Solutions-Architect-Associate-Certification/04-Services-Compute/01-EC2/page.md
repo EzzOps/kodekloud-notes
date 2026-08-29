@@ -8,7 +8,7 @@ In this lesson, we explore Amazon EC2 and how it enables you to run your applica
 
 When you create an application, you eventually need to deploy it to a server—a computer that handles client requests, processes your application code, and returns responses. The term "server" originates from the client-server architecture, where a computer provides resources (such as a web application) to the client. For example, when you access a website, your browser sends a request to the server's IP address or domain name, and the server responds by serving the corresponding HTML file.
 
-![The image illustrates a process where a developer deploys an application to a server, labeled as "EC2."](../../../../images/kodekloud.com/kk-media/image/upload/v1752864836/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/developer-deploys-application-ec2.jpg)
+![The image illustrates a process where a developer deploys an application to a server, labeled as "EC2."](https://kodekloud.com/kk-media/image/upload/v1752864836/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/developer-deploys-application-ec2.jpg)
 
 Before the rise of cloud computing, deploying an application involved renting space in a data center, purchasing physical servers (e.g., Dell or HP), installing and securing an operating system like Ubuntu, and manually managing hardware failures. AWS eliminates these complexities by offering EC2 instances—virtual servers for deploying and running your applications without worry about the infrastructure.
 
@@ -20,7 +20,7 @@ An EC2 instance is a virtual server that offers computing power equivalent to a 
 * **Storage Optimized:** Suited for applications with high I/O demands that frequently access disk storage.
 * **GPU Instances:** Perfect for high-performance tasks like machine learning and deep learning that require powerful GPUs.
 
-![The image shows four types of EC2 instance categories: General Purpose, Compute Optimized, Memory Optimized, and Storage Optimized, each represented with an icon and a gradient background.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864837/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ec2-instance-categories-icons.jpg)
+![The image shows four types of EC2 instance categories: General Purpose, Compute Optimized, Memory Optimized, and Storage Optimized, each represented with an icon and a gradient background.](https://kodekloud.com/kk-media/image/upload/v1752864837/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ec2-instance-categories-icons.jpg)
 
 ## Amazon Machine Images (AMIs)
 
@@ -28,7 +28,7 @@ When launching an EC2 instance, you must select an Amazon Machine Image (AMI), w
 
 Think of an AMI as a recipe for creating your server. If you modify an instance (for example, by installing new software or configuring security settings), you can create a new AMI from that instance and use it for future deployments.
 
-![The image illustrates the components of an Amazon Machine Image (AMI), including the operating system and software, and how it relates to an AWS EC2 instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864838/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/amazon-machine-image-ami-ec2-diagram.jpg)
+![The image illustrates the components of an Amazon Machine Image (AMI), including the operating system and software, and how it relates to an AWS EC2 instance.](https://kodekloud.com/kk-media/image/upload/v1752864838/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/amazon-machine-image-ami-ec2-diagram.jpg)
 
 There are three types of AMIs:
 
@@ -36,17 +36,17 @@ There are three types of AMIs:
 * **Private AMIs:** Customized AMIs that remain accessible only to the owner or specified AWS accounts.
 * **Shared AMIs:** Private AMIs explicitly shared with select AWS accounts for controlled collaboration.
 
-![The image shows three types of AMI (Amazon Machine Images): Public AMI, Private AMI, and Shared AMI, each represented by a similar icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864839/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ami-types-public-private-shared.jpg)
+![The image shows three types of AMI (Amazon Machine Images): Public AMI, Private AMI, and Shared AMI, each represented by a similar icon.](https://kodekloud.com/kk-media/image/upload/v1752864839/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ami-types-public-private-shared.jpg)
 
 Once an AMI is defined, you can create multiple, identically configured EC2 instances.
 
-![The image illustrates the concept of Amazon EC2, showing an Amazon Machine Image (AMI) being used to create three separate instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864841/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/amazon-ec2-ami-instances-diagram.jpg)
+![The image illustrates the concept of Amazon EC2, showing an Amazon Machine Image (AMI) being used to create three separate instances.](https://kodekloud.com/kk-media/image/upload/v1752864841/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/amazon-ec2-ami-instances-diagram.jpg)
 
 ## Securely Connecting to an EC2 Instance
 
 After your EC2 instance is deployed, connecting via SSH is the typical method to manage and configure it. For a secure connection, you use a key pair consisting of a public key and a private key. The public key is embedded into the instance during launch, while you use the corresponding private key to connect via SSH. AWS allows you to manage multiple key pairs, enabling different access configurations per instance.
 
-![The image illustrates an SSH connection setup between a user and an Amazon EC2 instance using a private key and a public key.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864841/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ssh-connection-amazon-ec2-keys.jpg)
+![The image illustrates an SSH connection setup between a user and an Amazon EC2 instance using a private key and a public key.](https://kodekloud.com/kk-media/image/upload/v1752864841/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ssh-connection-amazon-ec2-keys.jpg)
 
 ## EC2 Instance Lifecycle
 
@@ -59,25 +59,25 @@ Understanding the lifecycle of an EC2 instance is crucial for effective manageme
 * **Shutting Down:** The instance is preparing to be terminated.
 * **Terminated:** The instance has been permanently deleted and cannot be recovered.
 
-![The image illustrates the EC2 instance lifecycle, showing the transitions between states: Pending, Running, Stopping, and Stopped. It includes actions like Launch, Start, and Stop.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864842/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ec2-instance-lifecycle-diagram.jpg)
+![The image illustrates the EC2 instance lifecycle, showing the transitions between states: Pending, Running, Stopping, and Stopped. It includes actions like Launch, Start, and Stop.](https://kodekloud.com/kk-media/image/upload/v1752864842/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ec2-instance-lifecycle-diagram.jpg)
 
 ## Bootstrapping with User Data
 
 When launching an EC2 instance, you can provide user data—usually a shell script or cloud-init directives—which executes during startup. This automation allows you to install software, configure settings, or download necessary files immediately as the instance launches. Keep in mind that user data scripts have a size limit of 16 kilobytes.
 
-![The image illustrates a user sending a bootstrap script to an Amazon EC2 instance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864843/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/bootstrap-script-ec2-instance.jpg)
+![The image illustrates a user sending a bootstrap script to an Amazon EC2 instance.](https://kodekloud.com/kk-media/image/upload/v1752864843/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/bootstrap-script-ec2-instance.jpg)
 
 ## Security Groups
 
 Security groups in AWS act as virtual firewalls for your EC2 instances, controlling inbound and outbound traffic. For example, if you deploy a web server, you can configure your security group to allow inbound HTTP (port 80) and HTTPS (port 443) traffic. This ensures that only the necessary traffic reaches your instance while maintaining robust security.
 
-![The image illustrates the concept of an Amazon EC2 instance within a VPC, protected by a security group, showing inbound and outbound traffic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864844/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/amazon-ec2-vpc-security-group-diagram.jpg)
+![The image illustrates the concept of an Amazon EC2 instance within a VPC, protected by a security group, showing inbound and outbound traffic.](https://kodekloud.com/kk-media/image/upload/v1752864844/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/amazon-ec2-vpc-security-group-diagram.jpg)
 
 ## Persistent Storage with Elastic Block Store (EBS)
 
 EC2 instances provide computing power, but many applications require persistent data storage. AWS Elastic Block Store (EBS) is a scalable block storage service that can be attached to your instances. EBS is commonly used for boot volumes, databases, file storage, and backup solutions. It also supports snapshots—point-in-time copies of your volumes stored in S3. These snapshots are incremental, saving only changes since the previous snapshot, which helps reduce both storage costs and backup time.
 
-![The image is a diagram illustrating the architecture of EC2 with EBS, showing instances and EBS volumes within availability zones (AZ) inside a VPC, and EBS snapshots outside the VPC.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864846/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ec2-ebs-architecture-diagram.jpg)
+![The image is a diagram illustrating the architecture of EC2 with EBS, showing instances and EBS volumes within availability zones (AZ) inside a VPC, and EBS snapshots outside the VPC.](https://kodekloud.com/kk-media/image/upload/v1752864846/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ec2-ebs-architecture-diagram.jpg)
 
 ## Integration with Elastic Load Balancing and Auto Scaling
 
@@ -86,19 +86,19 @@ EC2 instances can be integrated with other AWS services to enhance performance a
 * **Elastic Load Balancer (ELB):** Automatically distributes incoming traffic across multiple targets such as EC2 instances, containers, or IP addresses, ensuring seamless user experiences.
 * **Auto Scaling Groups:** Automatically adjusts the number of EC2 instances based on traffic demand, scaling out during high-demand periods and scaling in to reduce costs during lower demand.
 
-![The image is a diagram illustrating an AWS architecture with EC2 instances, Elastic Load Balancer (ELB), and Auto Scaling (AS) within a Virtual Private Cloud (VPC), showing HTTP requests being distributed across two subnets.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864847/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/aws-architecture-ec2-elb-as-diagram.jpg)
+![The image is a diagram illustrating an AWS architecture with EC2 instances, Elastic Load Balancer (ELB), and Auto Scaling (AS) within a Virtual Private Cloud (VPC), showing HTTP requests being distributed across two subnets.](https://kodekloud.com/kk-media/image/upload/v1752864847/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/aws-architecture-ec2-elb-as-diagram.jpg)
 
 ## Elastic IP Addresses
 
 By default, public IP addresses assigned to EC2 instances may change when the instance stops and restarts. To maintain a consistent IP, you can use an Elastic IP—a static, reserved IP address associated with your account. Elastic IPs remain constant even if you move the underlying instance between physical hosts, and can be re-assigned to different instances as needed.
 
-![The image illustrates a diagram showing a user making a request to an Amazon EC2 instance using an Elastic IP, with a response returning to the user.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864848/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/amazon-ec2-elastic-ip-diagram.jpg)
+![The image illustrates a diagram showing a user making a request to an Amazon EC2 instance using an Elastic IP, with a response returning to the user.](https://kodekloud.com/kk-media/image/upload/v1752864848/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/amazon-ec2-elastic-ip-diagram.jpg)
 
 ## Launch Templates
 
 Launch templates let you define a set of configuration parameters (such as the AMI, security groups, subnet, and instance type) that can be reused when launching EC2 instances. They are particularly useful with Auto Scaling groups, as AWS uses these templates to automatically launch new instances during scale-out events.
 
-![The image illustrates the process of using an EC2 launch template by cloud professionals to create multiple EC2 instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864849/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ec2-launch-template-instance-creation.jpg)
+![The image illustrates the process of using an EC2 launch template by cloud professionals to create multiple EC2 instances.](https://kodekloud.com/kk-media/image/upload/v1752864849/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ec2-launch-template-instance-creation.jpg)
 
 ## EC2 Instance Placement
 
@@ -108,7 +108,7 @@ AWS automatically selects a suitable physical host in an availability zone when 
 * **Partition Placement Group:** Distributes instances across logical partitions to reduce the risk of simultaneous hardware failures. This is particularly useful for distributed workloads such as Hadoop.
 * **Spread Placement Group:** Distributes instances across distinct physical hardware to minimize the risk of correlated failures, perfect for a few critical instances that must remain isolated.
 
-![The image illustrates three types of EC2 instance placements: Cluster Placement Group, Partition Placement Group, and Spread Placement Group, each with a different arrangement of instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864850/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ec2-instance-placement-groups-diagram.jpg)
+![The image illustrates three types of EC2 instance placements: Cluster Placement Group, Partition Placement Group, and Spread Placement Group, each with a different arrangement of instances.](https://kodekloud.com/kk-media/image/upload/v1752864850/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ec2-instance-placement-groups-diagram.jpg)
 
 ## EC2 Instance Pricing Options
 
@@ -121,7 +121,7 @@ AWS offers a range of pricing models designed to suit various workloads and budg
 * **Dedicated Hosts:** Rent an entire physical server exclusively for your use—ideal for licensing requirements and compliance, ensuring your instances run on the same physical server.
 * **Dedicated Instances:** Similar to Dedicated Hosts, these instances run on hardware isolated for your use, although the specific physical host may change over time.
 
-![The image shows different EC2 instance purchasing options, including On Demand, Spot, Saving Plans, Reserved Instances, Dedicated Hosts, and Dedicated Instances, each represented by a colored box with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864851/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ec2-instance-purchasing-options-diagram.jpg)
+![The image shows different EC2 instance purchasing options, including On Demand, Spot, Saving Plans, Reserved Instances, Dedicated Hosts, and Dedicated Instances, each represented by a colored box with an icon.](https://kodekloud.com/kk-media/image/upload/v1752864851/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ec2-instance-purchasing-options-diagram.jpg)
 
 ### Pricing Analogy
 
@@ -134,15 +134,15 @@ To better understand these pricing models, consider this analogy involving coffe
 * **Dedicated Hosts:** Resembles renting an entire coffee machine exclusively for your use.
 * **Dedicated Instances:** Similar to reserving your own seat in a coffee shop where the machine may be shared, but your seat remains exclusively yours.
 
-![The image illustrates an EC2 instance purchasing option called "Spot Instance," showing a person buying a coffee with a 90% discount at a store.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864852/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/spot-instance-coffee-discount.jpg)
+![The image illustrates an EC2 instance purchasing option called "Spot Instance," showing a person buying a coffee with a 90% discount at a store.](https://kodekloud.com/kk-media/image/upload/v1752864852/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/spot-instance-coffee-discount.jpg)
 
-![The image illustrates the EC2 Instance Purchasing Option - Savings Plan, showing a person planning to spend \$50/month on coffee, with icons of a coffee cup and a store.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864853/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ec2-instance-savings-plan-coffee.jpg)
+![The image illustrates the EC2 Instance Purchasing Option - Savings Plan, showing a person planning to spend \$50/month on coffee, with icons of a coffee cup and a store.](https://kodekloud.com/kk-media/image/upload/v1752864853/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ec2-instance-savings-plan-coffee.jpg)
 
-![The image illustrates the EC2 Instance Purchasing Option for a Reserved Instance, showing a person buying with a 66% discount on an annual subscription.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864855/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ec2-reserved-instance-purchase-discount.jpg)
+![The image illustrates the EC2 Instance Purchasing Option for a Reserved Instance, showing a person buying with a 66% discount on an annual subscription.](https://kodekloud.com/kk-media/image/upload/v1752864855/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ec2-reserved-instance-purchase-discount.jpg)
 
-![The image illustrates an EC2 instance purchasing option labeled "Dedicated Host," featuring a person icon and a coffee machine with a steaming cup, connected by an arrow labeled "Make."](../../../../images/kodekloud.com/kk-media/image/upload/v1752864856/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ec2-dedicated-host-purchase-diagram.jpg)
+![The image illustrates an EC2 instance purchasing option labeled "Dedicated Host," featuring a person icon and a coffee machine with a steaming cup, connected by an arrow labeled "Make."](https://kodekloud.com/kk-media/image/upload/v1752864856/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/ec2-dedicated-host-purchase-diagram.jpg)
 
-![The image shows a stylized illustration of a small shop with a person inside, accompanied by the text "EC2 Instance Purchasing Option – Dedicated Instance."](../../../../images/kodekloud.com/kk-media/image/upload/v1752864857/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/small-shop-ec2-dedicated-instance.jpg)
+![The image shows a stylized illustration of a small shop with a person inside, accompanied by the text "EC2 Instance Purchasing Option – Dedicated Instance."](https://kodekloud.com/kk-media/image/upload/v1752864857/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-EC2/small-shop-ec2-dedicated-instance.jpg)
 
 > **lightbulb** By understanding these pricing options, you can choose the most cost-effective strategy to deploy and manage your applications on AWS EC2.
 

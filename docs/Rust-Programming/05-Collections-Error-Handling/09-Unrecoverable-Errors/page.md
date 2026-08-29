@@ -9,9 +9,7 @@ In this article, we will explore one of the core concepts of error handling in R
 * **Recoverable Errors:** These are conditions that can be handled gracefully, such as a file not being found, allowing your program to continue running.
 * **Unrecoverable Errors:** These represent critical issues (for example, accessing an array out of bounds or unwrapping a None value) that force the program to stop immediately. Such errors usually indicate bugs in your code and are handled in Rust using the `panic!` macro.
 
-<Frame>
-  ![The image is a diagram explaining Rust errors, distinguishing between recoverable errors, which can be handled gracefully, and unrecoverable errors, which represent serious problems and stop program execution. It notes that unrecoverable errors in Rust are typically handled using the panic! macro.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883851/notes-assets/images/Rust-Programming-Unrecoverable-Errors/rust-errors-diagram-recoverable-unrecoverable.jpg)
-</Frame>
+![The image is a diagram explaining Rust errors, distinguishing between recoverable errors, which can be handled gracefully, and unrecoverable errors, which represent serious problems and stop program execution. It notes that unrecoverable errors in Rust are typically handled using the panic! macro.](https://kodekloud.com/kk-media/image/upload/v1752883851/notes-assets/images/Rust-Programming-Unrecoverable-Errors/rust-errors-diagram-recoverable-unrecoverable.jpg)
 
 When the `panic!` macro is invoked, Rust stops execution immediately, unwinds the stack, and cleans up allocated resources before aborting the program. Below is an example that demonstrates this behavior with a vector of three elements:
 
@@ -51,13 +49,9 @@ The `panic!` macro can either unwind the stack or abort the program immediately,
 
    When set to `'abort'`, the program stops execution immediately, which is faster but offers less diagnostic information in the event of an error.
 
-<Frame>
-  ![The image explains how panic works internally in Rust, highlighting the process of unwinding the stack, which involves walking back up the call stack to clean up resources and is useful for debugging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883852/notes-assets/images/Rust-Programming-Unrecoverable-Errors/rust-panic-internal-unwinding-stack.jpg)
-</Frame>
+![The image explains how panic works internally in Rust, highlighting the process of unwinding the stack, which involves walking back up the call stack to clean up resources and is useful for debugging.](https://kodekloud.com/kk-media/image/upload/v1752883852/notes-assets/images/Rust-Programming-Unrecoverable-Errors/rust-panic-internal-unwinding-stack.jpg)
 
-<Callout icon="lightbulb">
-  The `panic!` macro should be used sparingly, only when encountering situations where the program is irrecoverably compromised.
-</Callout>
+> **lightbulb** The `panic!` macro should be used sparingly, only when encountering situations where the program is irrecoverably compromised.
 
 ## When to Use panic!
 
@@ -99,9 +93,7 @@ fn main() {
 
 In this version, if `b` is zero, the function returns an error message rather than panicking. The caller can then handle the error gracefully using a `match` statement, allowing the program to continue running.
 
-<Frame>
-  ![The image provides best practices for using "panic!" in programming, including limiting its use to unrecoverable situations, providing clear error messages, using alternatives like Result or Option, and avoiding catching panics without a compelling reason.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883853/notes-assets/images/Rust-Programming-Unrecoverable-Errors/panic-best-practices-programming.jpg)
-</Frame>
+![The image provides best practices for using "panic!" in programming, including limiting its use to unrecoverable situations, providing clear error messages, using alternatives like Result or Option, and avoiding catching panics without a compelling reason.](https://kodekloud.com/kk-media/image/upload/v1752883853/notes-assets/images/Rust-Programming-Unrecoverable-Errors/panic-best-practices-programming.jpg)
 
 ## Best Practices for Handling Errors in Rust
 
@@ -114,6 +106,4 @@ By following these best practices and understanding how the `panic!` macro works
 
 For further reading, check out [Rust’s official documentation](https://www.rust-lang.org/learn) and [Error Handling in Rust](https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/29fbe393-bae3-4a16-8fc5-a854a2400daa/lesson/800399e7-feed-412d-ad93-98cb67649c0d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/29fbe393-bae3-4a16-8fc5-a854a2400daa/lesson/800399e7-feed-412d-ad93-98cb67649c0d)

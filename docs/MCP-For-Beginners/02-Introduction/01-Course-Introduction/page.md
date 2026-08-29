@@ -14,9 +14,7 @@ I'm Jeremy Morgan, and I'll guide you through MCP so you can confidently apply i
 
 This lesson emphasizes hands-on learning as much as concepts. Each module includes practical labs where you can experiment, break things, and learn by doing—preparing you to solve real-world MCP challenges.
 
-<Callout icon="lightbulb">
-  This lesson emphasizes practical labs alongside conceptual material so you can quickly apply MCP concepts to real use cases.
-</Callout>
+> **lightbulb** This lesson emphasizes practical labs alongside conceptual material so you can quickly apply MCP concepts to real use cases.
 
 ## What we'll cover
 

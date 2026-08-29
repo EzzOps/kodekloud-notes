@@ -41,9 +41,7 @@ Table: Components and responsibilities
 
 Concretely, an adapter implements one or more of the metric APIs the HPA understands (for example, `custom.metrics.k8s.io` or `external.metrics.k8s.io`), mapping monitoring-system metrics into those APIs. A common setup is Prometheus + prometheus-adapter.
 
-<Callout icon="lightbulb">
-  Kubernetes' built-in Metrics Server only provides resource metrics (`metrics.k8s.io`) for CPU and memory. To use application-level custom metrics you must run a monitoring system and an adapter (for example, Prometheus + `prometheus-adapter`) that exposes the metrics through the Kubernetes Custom/External Metrics APIs. See the Kubernetes core metrics pipeline docs for details: [https://kubernetes.io/docs/tasks/debug-application-cluster/core-metrics-pipeline/#metrics-server](https://kubernetes.io/docs/tasks/debug-application-cluster/core-metrics-pipeline/#metrics-server)
-</Callout>
+> **lightbulb** Kubernetes' built-in Metrics Server only provides resource metrics (`metrics.k8s.io`) for CPU and memory. To use application-level custom metrics you must run a monitoring system and an adapter (for example, Prometheus + `prometheus-adapter`) that exposes the metrics through the Kubernetes Custom/External Metrics APIs. See the Kubernetes core metrics pipeline docs for details: [https://kubernetes.io/docs/tasks/debug-application-cluster/core-metrics-pipeline/#metrics-server](https://kubernetes.io/docs/tasks/debug-application-cluster/core-metrics-pipeline/#metrics-server)
 
 <Frame>
   <img alt="A presentation slide titled &#x22;HPA Custom Metrics – Considerations&#x22; showing three colorful icons and labels across the page: &#x22;Metrics server limitation,&#x22; &#x22;Adapter configuration,&#x22; and &#x22;Monitoring systems.&#x22; The design uses gradient buttons and simple line-art icons under the heading." />
@@ -126,8 +124,6 @@ Links and references
 * prometheus-adapter: [https://github.com/kubernetes-sigs/prometheus-adapter](https://github.com/kubernetes-sigs/prometheus-adapter)
 * Kubernetes core metrics pipeline: [https://kubernetes.io/docs/tasks/debug-application-cluster/core-metrics-pipeline/#metrics-server](https://kubernetes.io/docs/tasks/debug-application-cluster/core-metrics-pipeline/#metrics-server)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/20905f7f-a510-48d2-b2e4-d8a81cc8e92c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/20905f7f-a510-48d2-b2e4-d8a81cc8e92c)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/317c9f30-408e-4d4f-beee-10443c4cf002" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/317c9f30-408e-4d4f-beee-10443c4cf002)

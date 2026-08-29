@@ -8,7 +8,7 @@ Azure Container Apps supports versioning through revisions. Each revision repres
 
 For example, you can update parameters such as environment variables, scaling settings, or container images using the Azure Container Apps update command.
 
-![The image is an infographic about Azure Container Apps, focusing on revisions and secrets. It highlights three points: implementing app versioning, controlling active revisions and traffic, and using the AZ containerapp update command for modifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866616/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Revisions-and-Secrets-in-Azure-Container-Apps/azure-container-apps-infographic.jpg)
+![The image is an infographic about Azure Container Apps, focusing on revisions and secrets. It highlights three points: implementing app versioning, controlling active revisions and traffic, and using the AZ containerapp update command for modifications.](https://kodekloud.com/kk-media/image/upload/v1752866616/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Revisions-and-Secrets-in-Azure-Container-Apps/azure-container-apps-infographic.jpg)
 
 If an update includes a revision scope change, the system automatically generates a new revision.
 
@@ -20,7 +20,7 @@ Managing secrets is essential for protecting sensitive data such as API keys and
 
 When creating a Container App, you can define secrets using the `--secrets` parameter in the command line, ensuring that secrets are securely handled during deployment.
 
-![The image explains how secrets are managed in Azure Container Apps, highlighting that secrets are defined at the application level, can be referenced by application revisions, and are set using the --secrets parameter.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866618/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Revisions-and-Secrets-in-Azure-Container-Apps/azure-container-apps-secrets-management.jpg)
+![The image explains how secrets are managed in Azure Container Apps, highlighting that secrets are defined at the application level, can be referenced by application revisions, and are set using the --secrets parameter.](https://kodekloud.com/kk-media/image/upload/v1752866618/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Revisions-and-Secrets-in-Azure-Container-Apps/azure-container-apps-secrets-management.jpg)
 
 ## Configuring Revisions
 
@@ -28,7 +28,7 @@ To enable multiple revisions, first switch your app's revision mode to multi-rev
 
 For example, when using the Microsoft Azure portal, you might encounter an interface like this:
 
-![The image shows the Microsoft Azure portal interface, specifically the "Revisions and replicas" section for a container app named "airportcodeaiapp," with an active revision that has a failed activation status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866619/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Revisions-and-Secrets-in-Azure-Container-Apps/azure-portal-revisions-airportcodeaiapp.jpg)
+![The image shows the Microsoft Azure portal interface, specifically the "Revisions and replicas" section for a container app named "airportcodeaiapp," with an active revision that has a failed activation status.](https://kodekloud.com/kk-media/image/upload/v1752866619/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Revisions-and-Secrets-in-Azure-Container-Apps/azure-portal-revisions-airportcodeaiapp.jpg)
 
 Notice that inspecting another app (e.g., one functioning properly) might display a single node. Converting an app to multi-revision mode allows you to perform actions such as configuring labels, directing traffic flows, and monitoring replicas. You can also deactivate and reactivate revisions—for instance, unchecking a revision deactivates it, while reactivating it returns it to service.
 
@@ -47,7 +47,7 @@ When it comes to updating containers, you have two primary options: using the `k
 
 Consider this portal view for creating a new container app revision:
 
-![The image shows a Microsoft Azure portal interface for creating and deploying a new container app revision. It includes fields for revision details and a list of container images with specifications like CPU cores and memory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866621/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Revisions-and-Secrets-in-Azure-Container-Apps/azure-portal-container-app-revision.jpg)
+![The image shows a Microsoft Azure portal interface for creating and deploying a new container app revision. It includes fields for revision details and a list of container images with specifications like CPU cores and memory.](https://kodekloud.com/kk-media/image/upload/v1752866621/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Revisions-and-Secrets-in-Azure-Container-Apps/azure-portal-container-app-revision.jpg)
 
 You can update a Container App using the following command:
 
@@ -99,25 +99,25 @@ When creating a new revision, you can further customize various aspects of your 
 
 The Microsoft Azure portal provides an intuitive interface to configure these settings:
 
-![The image shows a Microsoft Azure portal interface for creating and deploying a new container app revision. It includes options for adding app or init containers, with details like name, tag, CPU cores, and memory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866622/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Revisions-and-Secrets-in-Azure-Container-Apps/azure-portal-container-app-revision-2.jpg)
+![The image shows a Microsoft Azure portal interface for creating and deploying a new container app revision. It includes options for adding app or init containers, with details like name, tag, CPU cores, and memory.](https://kodekloud.com/kk-media/image/upload/v1752866622/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Revisions-and-Secrets-in-Azure-Container-Apps/azure-portal-container-app-revision-2.jpg)
 
 You can define autoscaling rules by specifying replica counts:
 
-![The image shows a Microsoft Azure portal interface for creating and deploying a new revision of a container app, focusing on setting scale rules for automatic scaling. It includes fields for minimum and maximum replicas, with options to add scale rules.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866623/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Revisions-and-Secrets-in-Azure-Container-Apps/azure-portal-container-app-scaling.jpg)
+![The image shows a Microsoft Azure portal interface for creating and deploying a new revision of a container app, focusing on setting scale rules for automatic scaling. It includes fields for minimum and maximum replicas, with options to add scale rules.](https://kodekloud.com/kk-media/image/upload/v1752866623/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Revisions-and-Secrets-in-Azure-Container-Apps/azure-portal-container-app-scaling.jpg)
 
 Additionally, you can configure persistent storage by mounting volumes from Azure File Storage:
 
-![The image shows a Microsoft Azure portal interface for creating and deploying a new revision of a container app, specifically focusing on adding a volume. The "Add volume" panel is open, with options for volume type, name, and file share.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866624/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Revisions-and-Secrets-in-Azure-Container-Apps/azure-portal-container-app-volume.jpg)
+![The image shows a Microsoft Azure portal interface for creating and deploying a new revision of a container app, specifically focusing on adding a volume. The "Add volume" panel is open, with options for volume type, name, and file share.](https://kodekloud.com/kk-media/image/upload/v1752866624/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Revisions-and-Secrets-in-Azure-Container-Apps/azure-portal-container-app-volume.jpg)
 
 You can also securely mount secrets into your container and add service bindings for popular add-ons like Redis, MariaDB, PostgreSQL, or Kafka:
 
-![The image shows a Microsoft Azure portal interface for creating and deploying a new revision of a container app, with a focus on adding a binding. A dropdown menu is open, displaying options for different add-on types like Redis, MariaDB, and PostgreSQL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866626/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Revisions-and-Secrets-in-Azure-Container-Apps/azure-portal-container-app-binding.jpg)
+![The image shows a Microsoft Azure portal interface for creating and deploying a new revision of a container app, with a focus on adding a binding. A dropdown menu is open, displaying options for different add-on types like Redis, MariaDB, and PostgreSQL.](https://kodekloud.com/kk-media/image/upload/v1752866626/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Revisions-and-Secrets-in-Azure-Container-Apps/azure-portal-container-app-binding.jpg)
 
 ## Managing Traffic Distribution
 
 After creating new revisions, you can manage external traffic distribution between them. For example, you might allocate 50% of the traffic to a new demo revision while keeping 50% on the current active revision. This gradual rollout approach allows continuous monitoring and quick rollback if issues arise.
 
-![The image shows the Microsoft Azure portal displaying the "Revisions and replicas" section for a container app, with details about active revisions, their creation dates, running status, traffic, and replicas.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866628/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Revisions-and-Secrets-in-Azure-Container-Apps/azure-portal-revisions-replicas-container-app.jpg)
+![The image shows the Microsoft Azure portal displaying the "Revisions and replicas" section for a container app, with details about active revisions, their creation dates, running status, traffic, and replicas.](https://kodekloud.com/kk-media/image/upload/v1752866628/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Managing-Revisions-and-Secrets-in-Azure-Container-Apps/azure-portal-revisions-replicas-container-app.jpg)
 
 ## Creating and Managing Secrets Directly
 

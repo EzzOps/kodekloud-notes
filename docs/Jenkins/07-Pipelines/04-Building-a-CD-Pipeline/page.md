@@ -61,26 +61,20 @@ Follow these steps to configure your Jenkins instance for running the pipeline:
 
    Additionally, confirm that Docker is installed on your build server (in this example, our Jenkins server).
 
-<Frame>
-  ![The image shows a plugin manager interface listing various Docker-related plugins, their descriptions, versions, and options to uninstall them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880084/notes-assets/images/Jenkins-Building-a-CD-Pipeline/frame_90.jpg)
-</Frame>
+![The image shows a plugin manager interface listing various Docker-related plugins, their descriptions, versions, and options to uninstall them.](https://kodekloud.com/kk-media/image/upload/v1752880084/notes-assets/images/Jenkins-Building-a-CD-Pipeline/frame_90.jpg)
 
 2. **Create a New Pipeline Job:**
    * Return to the Jenkins dashboard and select **New Item**.
    * Enter a name for your pipeline job, choose **Pipeline**, and click **OK**.
    * In the **Pipeline** section, paste the Jenkinsfile script provided above into the Pipeline script area.
 
-<Frame>
-  ![The image shows a Jenkins interface with "Advanced Project Options" for configuring a pipeline script, including options to save or apply changes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880086/notes-assets/images/Jenkins-Building-a-CD-Pipeline/frame_100.jpg)
-</Frame>
+![The image shows a Jenkins interface with "Advanced Project Options" for configuring a pipeline script, including options to save or apply changes.](https://kodekloud.com/kk-media/image/upload/v1752880086/notes-assets/images/Jenkins-Building-a-CD-Pipeline/frame_100.jpg)
 
 3. **Initiate the Pipeline:**
    * Save the configuration and click **Build Now** to start the pipeline.
    * The pipeline will display both the "Development" and "Building our image" stages. You can monitor its progress from the Jenkins dashboard.
 
-<Frame>
-  ![The image shows a Jenkins pipeline dashboard for "godocker," displaying stage view times and build history options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880087/notes-assets/images/Jenkins-Building-a-CD-Pipeline/frame_120.jpg)
-</Frame>
+![The image shows a Jenkins pipeline dashboard for "godocker," displaying stage view times and build history options.](https://kodekloud.com/kk-media/image/upload/v1752880087/notes-assets/images/Jenkins-Building-a-CD-Pipeline/frame_120.jpg)
 
 ## Monitoring and Verifying the Build
 
@@ -111,9 +105,7 @@ Successfully tagged adminturneddevops/go-webapp-sample:latest
 Finished: SUCCESS
 ```
 
-<Callout icon="lightbulb">
-  Ensure that your build server has sufficient resources and proper Docker configuration to execute the pipeline successfully.
-</Callout>
+> **lightbulb** Ensure that your build server has sufficient resources and proper Docker configuration to execute the pipeline successfully.
 
 ## Conclusion
 
@@ -121,6 +113,4 @@ This guide has walked you through setting up a CI/CD pipeline with Jenkins and D
 
 Happy building and see you in the next article!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/41e3958b-2e37-47f1-85f8-d7e18d5157b3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/4eff829b-dd2c-4051-8090-35e8525b8874/lesson/41e3958b-2e37-47f1-85f8-d7e18d5157b3)

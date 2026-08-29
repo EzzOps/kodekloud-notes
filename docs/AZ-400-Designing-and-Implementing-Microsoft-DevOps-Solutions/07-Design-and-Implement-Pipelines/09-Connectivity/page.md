@@ -54,13 +54,13 @@ Even the best network designs encounter issues. Start with these steps:
 
 > **triangle-alert** Overly broad port rules increase attack surface. Always restrict access to specific IP ranges and protocols.
 
-![The image illustrates best practices for connectivity, emphasizing regular updates and network performance monitoring. It includes icons representing updates and performance metrics, with accompanying text for each practice.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867798/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Connectivity/connectivity-best-practices-updates-monitoring.jpg)
+![The image illustrates best practices for connectivity, emphasizing regular updates and network performance monitoring. It includes icons representing updates and performance metrics, with accompanying text for each practice.](https://kodekloud.com/kk-media/image/upload/v1752867798/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Connectivity/connectivity-best-practices-updates-monitoring.jpg)
 
 ## Conclusion
 
 Robust network connectivity is critical for seamless CI/CD operations in Azure DevOps. By correctly configuring VNets, NSGs, agent pools, and leveraging private or service endpoints, you’ll ensure your pipelines remain secure, reliable, and performant.
 
-![The image is a flowchart illustrating the CI/CD process, including stages like Plan, Code, Build, Test, Release, Deploy, Operate, and Monitor. It emphasizes the importance of connectivity and proper network setup for efficient CI/CD.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867800/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Connectivity/ci-cd-process-flowchart-connectivity.jpg)
+![The image is a flowchart illustrating the CI/CD process, including stages like Plan, Code, Build, Test, Release, Deploy, Operate, and Monitor. It emphasizes the importance of connectivity and proper network setup for efficient CI/CD.](https://kodekloud.com/kk-media/image/upload/v1752867800/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Connectivity/ci-cd-process-flowchart-connectivity.jpg)
 
 ## Further Reading
 

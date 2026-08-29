@@ -127,11 +127,9 @@ kubectl run test-pod --image=nginx
 * [Kyverno Documentation](https://kyverno.io/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/b2e99306-7378-4cf1-93b0-d6f2b3031f2e" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/b2e99306-7378-4cf1-93b0-d6f2b3031f2e)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/a8ce8906-5078-4c36-9fd2-eb27504c3b04" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/a8ce8906-5078-4c36-9fd2-eb27504c3b04)
 
 
 # Demo Preconditions
@@ -151,9 +149,7 @@ Goal
 * Validate Services only when `spec.type` is `NodePort`.
 * Enforce `spec.externalTrafficPolicy: Local` for those NodePort Services.
 
-<Callout icon="lightbulb">
-  Preconditions are evaluated against the incoming admission request. If preconditions pass, the rule's `validate`/`mutate`/`generate` actions run; otherwise the rule is skipped. Use preconditions to make policies highly selective and avoid unnecessary validation on unrelated resources.
-</Callout>
+> **lightbulb** Preconditions are evaluated against the incoming admission request. If preconditions pass, the rule's `validate`/`mutate`/`generate` actions run; otherwise the rule is skipped. Use preconditions to make policies highly selective and avoid unnecessary validation on unrelated resources.
 
 Policy manifest (ClusterPolicy)
 
@@ -249,9 +245,7 @@ validate-nodeport-trafficpolicy:
     at path /spec/externalTrafficPolicy/'
 ```
 
-<Callout icon="warning">
-  The admission webhook will block creation when the policy's `validationFailureAction` is `enforce`. Inspect Kyverno logs and events if an expected create is denied.
-</Callout>
+> **warning** The admission webhook will block creation when the policy's `validationFailureAction` is `enforce`. Inspect Kyverno logs and events if an expected create is denied.
 
 2. Good NodePort Service (should be accepted)
 
@@ -311,8 +305,6 @@ Summary and references
   * Kyverno documentation: [https://kyverno.io/docs/](https://kyverno.io/docs/)
   * Kubernetes Services: [https://kubernetes.io/docs/concepts/services-networking/service/](https://kubernetes.io/docs/concepts/services-networking/service/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/3fd51029-2735-4b64-81c3-a5d8b16584cb" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/3fd51029-2735-4b64-81c3-a5d8b16584cb)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/64e85186-86bd-4f80-b9ad-a07807440c96" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/64e85186-86bd-4f80-b9ad-a07807440c96)

@@ -43,9 +43,7 @@ Datadog supports telemetry collection from many operating systems and dozens of 
 * Configure integrations for cloud providers, databases, and third-party services to enrich telemetry.
 * Create dashboards, monitors, and synthetic tests to observe SLAs and SLOs across systems.
 
-<Callout icon="lightbulb">
-  Start with the Datadog Agent and one APM integration for a quick win: install the Agent, enable tracing for one service, and create a dashboard that correlates traces with host metrics. See [Datadog documentation](https://docs.datadoghq.com/) for step-by-step guides.
-</Callout>
+> **lightbulb** Start with the Datadog Agent and one APM integration for a quick win: install the Agent, enable tracing for one service, and create a dashboard that correlates traces with host metrics. See [Datadog documentation](https://docs.datadoghq.com/) for step-by-step guides.
 
 ## Why teams choose Datadog
 
@@ -62,6 +60,4 @@ Resources and further reading:
 
 That's it for this lesson. I hope you found the overview useful and that it helps you plan your observability and security strategy with Datadog.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/10421186-d141-4fde-9847-73ea4e4e675a/lesson/5bb5e499-7ec6-4dc5-a844-b5694c873fbb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/10421186-d141-4fde-9847-73ea4e4e675a/lesson/5bb5e499-7ec6-4dc5-a844-b5694c873fbb)

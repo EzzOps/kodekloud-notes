@@ -8,7 +8,7 @@ Welcome to this quick AWS Cloud9 demo lesson. In this guide, we'll explore AWS C
 
 For optimal performance, I switched my session to the Ohio region to ensure ample resources were available.
 
-![The image shows the AWS Cloud9 webpage, describing it as a cloud IDE for writing, running, and debugging code, with features and getting started resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862043/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Cloud9-Demo/frame_30.jpg)
+![The image shows the AWS Cloud9 webpage, describing it as a cloud IDE for writing, running, and debugging code, with features and getting started resources.](https://kodekloud.com/kk-media/image/upload/v1752862043/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Cloud9-Demo/frame_30.jpg)
 
 ## Creating Your Cloud9 Environment
 
@@ -16,13 +16,13 @@ To begin, click on **Create Environment**. For this demo, I named the setup "Kod
 
 Additional configuration options include setting up secondary connection methods like Systems Manager or Secure Shell, as well as adjusting VPC settings if required.
 
-![The image shows an AWS Cloud9 setup page, detailing platform, connection, VPC settings, and optional tags for configuring an EC2 instance environment.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862044/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Cloud9-Demo/frame_70.jpg)
+![The image shows an AWS Cloud9 setup page, detailing platform, connection, VPC settings, and optional tags for configuring an EC2 instance environment.](https://kodekloud.com/kk-media/image/upload/v1752862044/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Cloud9-Demo/frame_70.jpg)
 
 > **lightbulb** AWS Cloud9 automatically creates and attaches a service role, access role, and instance profile to the EC2 instance, which simplifies the setup process.
 
 After clicking **Create**, you might notice more than one instance listed—the new instance alongside any previous sessions. An instance could be connected via Secure Shell (SSH) while another uses Systems Manager (SSM); both connection methods work effectively.
 
-![The image shows an AWS Cloud9 dashboard with two environments listed, "AWS-CLI" and "KodeKloudCloud9," both using EC2 instances with different connection methods.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862046/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Cloud9-Demo/frame_120.jpg)
+![The image shows an AWS Cloud9 dashboard with two environments listed, "AWS-CLI" and "KodeKloudCloud9," both using EC2 instances with different connection methods.](https://kodekloud.com/kk-media/image/upload/v1752862046/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Cloud9-Demo/frame_120.jpg)
 
 In my demonstration, I had an older environment open to streamline the process. When I clicked **Open**, the system indicated that the EC2 instance was off—this occurred because a previous instance had been accidentally deleted. Remember, Cloud9 creates the EC2 instance in the background. If you inspect the EC2 dashboard, you will see that only the KodeKloud instance is running. Although its status is “running,” it may still be initializing; a T3 small typically takes about two minutes to fully boot.
 
@@ -30,7 +30,7 @@ In my demonstration, I had an older environment open to streamline the process. 
 
 Let's explore the EC2 console for more details.
 
-![The image shows an AWS EC2 console with a running instance, displaying options for instance management and monitoring, including system logs and instance details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862047/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Cloud9-Demo/frame_200.jpg)
+![The image shows an AWS EC2 console with a running instance, displaying options for instance management and monitoring, including system logs and instance details.](https://kodekloud.com/kk-media/image/upload/v1752862047/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Cloud9-Demo/frame_200.jpg)
 
 After examining the system log and finding no additional information, I checked the EC2 serial console for troubleshooting. Even though the output was minimal, it confirmed that the instance had completed its initialization phase.
 
@@ -38,7 +38,7 @@ After examining the system log and finding no additional information, I checked 
 
 Returning to Cloud9, I clicked on the KodeKloud environment to load the integrated Cloud9 interface. The IDE displays a file directory on the left and multiple tabs along the top for opening files, terminals, or other configurations.
 
-![The image shows the AWS Cloud9 console with two environments listed: "AWS-CLI" and "KodeKloudCloud9," both using EC2 instances with different connection types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862048/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Cloud9-Demo/frame_260.jpg)
+![The image shows the AWS Cloud9 console with two environments listed: "AWS-CLI" and "KodeKloudCloud9," both using EC2 instances with different connection types.](https://kodekloud.com/kk-media/image/upload/v1752862048/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Cloud9-Demo/frame_260.jpg)
 
 Within the interface, you can easily open files (like READMEs) with a double-click or launch a terminal to run commands. For example, to assign an environment variable, you can execute:
 

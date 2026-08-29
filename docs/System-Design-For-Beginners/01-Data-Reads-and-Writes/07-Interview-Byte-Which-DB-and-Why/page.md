@@ -71,9 +71,7 @@ Before an interview, be ready to state which of the ACID properties your system 
 
 Keeping the answer focused on access patterns and guarantees demonstrates both technical understanding and practical design sense.
 
-<Callout icon="lightbulb">
-  When you justify a database choice, explicitly tie ACID (or relaxed consistency models like eventual consistency / BASE) to your application needs — for example, whether user-facing actions require strict transactions or whether background analytics can tolerate eventual consistency.
-</Callout>
+> **lightbulb** When you justify a database choice, explicitly tie ACID (or relaxed consistency models like eventual consistency / BASE) to your application needs — for example, whether user-facing actions require strict transactions or whether background analytics can tolerate eventual consistency.
 
 ## Links and references
 
@@ -82,6 +80,4 @@ Keeping the answer focused on access patterns and guarantees demonstrates both t
 * [CAP Theorem (Wikipedia)](https://en.wikipedia.org/wiki/CAP_theorem)
 * [Designing Data-Intensive Applications — Book](https://dataintensive.net/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/b101cd8e-87f9-406d-8616-354d50412109" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/3ee9409c-c2ff-4102-9a76-af9840dc6e23/lesson/b101cd8e-87f9-406d-8616-354d50412109)

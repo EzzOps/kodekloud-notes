@@ -13,9 +13,7 @@ Visit the official site to fetch the latest Lens installer:
 1. Open your browser and go to [k8slens.dev](https://k8slens.dev).
 2. The site detects your OS automatically—click **Download** for your platform.
 
-<Callout icon="lightbulb">
-  Always download Lens from the official site to ensure you get the latest security fixes and features.
-</Callout>
+> **lightbulb** Always download Lens from the official site to ensure you get the latest security fixes and features.
 
 | Operating System | Installer Type | Download Link                              |
 | ---------------- | -------------- | ------------------------------------------ |
@@ -49,9 +47,7 @@ Follow the steps below for your operating system.
    ./Lens.AppImage
    ```
 
-<Callout icon="triangle-alert">
-  On some Linux distributions you may need to install `fuse` or `libfuse2` before running the AppImage. Check your distro’s package manager if you encounter errors.
-</Callout>
+> **triangle-alert** On some Linux distributions you may need to install `fuse` or `libfuse2` before running the AppImage. Check your distro’s package manager if you encounter errors.
 
 ## 3. Launch Lens & Add Your Cluster
 
@@ -68,6 +64,4 @@ Your cluster appears in the sidebar—click it to view workloads, logs, and live
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Kubernetes Configuration Files (`kubeconfig`)](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/lens-kubernetes-ide/module/5612678e-a690-4e4e-b43d-966183dffdbf/lesson/75bc9837-dae8-4b2e-a969-79c71a2caa9d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/lens-kubernetes-ide/module/5612678e-a690-4e4e-b43d-966183dffdbf/lesson/75bc9837-dae8-4b2e-a969-79c71a2caa9d)

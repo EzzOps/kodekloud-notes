@@ -15,9 +15,7 @@ In an A/B testing experiment for comparing two LLM prompt structures, which of t
 
 Answer: Using the same model for both prompt structures.
 
-<Callout icon="lightbulb">
-  Using the same model for both prompt variants is the primary requirement for isolating the effect of prompt structure. If different models are used, any observed performance differences could be caused by model architecture, training data, or configuration rather than the prompt itself—invalidating the comparison.
-</Callout>
+> **lightbulb** Using the same model for both prompt variants is the primary requirement for isolating the effect of prompt structure. If different models are used, any observed performance differences could be caused by model architecture, training data, or configuration rather than the prompt itself—invalidating the comparison.
 
 Explanation
 
@@ -65,15 +63,11 @@ Further reading and resources
 * A/B testing best practices overview: [https://en.wikipedia.org/wiki/A/B\_testing](https://en.wikipedia.org/wiki/A/B_testing)
 * Inter-rater reliability: [https://en.wikipedia.org/wiki/Inter\_rater\_reliability](https://en.wikipedia.org/wiki/Inter_rater_reliability)
 
-<Callout icon="warning">
-  Do not change the model (or its hidden settings) between variants. Even minor version or configuration differences can produce effects larger than the prompt change you are testing.
-</Callout>
+> **warning** Do not change the model (or its hidden settings) between variants. Even minor version or configuration differences can produce effects larger than the prompt change you are testing.
 
 Summary
 
 * Fix the model and its settings first; that is the single most important control for valid prompt A/B testing.
 * Then ensure randomization, consistent evaluation, adequate sample size (guided by power analysis), logging/versioning, and replication to produce reliable, interpretable results.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/b9abf402-2bd7-4b6a-ae5b-0161f4d1513d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/44b444b3-19d6-4856-95a6-a46628fb2cf0/lesson/b9abf402-2bd7-4b6a-ae5b-0161f4d1513d)

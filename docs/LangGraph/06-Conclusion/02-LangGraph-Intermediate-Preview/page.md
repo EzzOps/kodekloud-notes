@@ -46,9 +46,7 @@ Table: Core topics and production examples
 | Observability & durability | Enables safe rollouts and faster incident triage         | Metrics + replayable state let you diagnose regressions without data loss           |
 | Human-in-the-loop          | Balances automation and oversight                        | Human approvals for high-risk decisions to prevent model drift                      |
 
-<Callout icon="lightbulb">
-  Prerequisites: familiarity with core LangGraph concepts — Paths, State Reducers, Context, Human-in-the-Loop, and Observability — will help you move faster. Basic Python experience and knowledge of [LangChain](https://python.langchain.com/) APIs are helpful but not required; the course emphasizes architecture and production patterns.
-</Callout>
+> **lightbulb** Prerequisites: familiarity with core LangGraph concepts — Paths, State Reducers, Context, Human-in-the-Loop, and Observability — will help you move faster. Basic Python experience and knowledge of [LangChain](https://python.langchain.com/) APIs are helpful but not required; the course emphasizes architecture and production patterns.
 
 <Frame>
   <img alt="The image outlines prerequisites for an intermediate track, highlighting the need to understand core LangGraph components and to have completed prior exercises and demos." />
@@ -75,6 +73,4 @@ Further reading and references
 * [LangChain Documentation](https://python.langchain.com/)
 * Consider resources on distributed systems and observability (tracing, metrics) to complement the course material.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langgraph/module/fba2d122-092f-42c8-bc27-0955ffaf786b/lesson/36726025-bd04-4ff5-9b00-e47eeb8da03f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langgraph/module/fba2d122-092f-42c8-bc27-0955ffaf786b/lesson/36726025-bd04-4ff5-9b00-e47eeb8da03f)

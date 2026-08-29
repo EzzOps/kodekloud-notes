@@ -68,9 +68,7 @@ backend:
     origin: http://localhost:3000
 ```
 
-<Callout icon="warning">
-  Do not commit `app-config.local.yaml` if it contains secrets (API keys, credentials) or machine-specific values. Keep it as a local-only configuration file and add it to `.gitignore` where appropriate.
-</Callout>
+> **warning** Do not commit `app-config.local.yaml` if it contains secrets (API keys, credentials) or machine-specific values. Keep it as a local-only configuration file and add it to `.gitignore` where appropriate.
 
 ## app-config.production.yaml (production overrides)
 
@@ -87,9 +85,7 @@ app:
   baseUrl: "https://${HOST}"
 ```
 
-<Callout icon="lightbulb">
-  Use environment variables in production configs to avoid storing secrets in version control. The `HOST` environment variable in the example above will be substituted at runtime.
-</Callout>
+> **lightbulb** Use environment variables in production configs to avoid storing secrets in version control. The `HOST` environment variable in the example above will be substituted at runtime.
 
 ## Restarting Backstage after config changes
 

@@ -6,7 +6,7 @@ This guide details the process of setting up, deploying, updating, and cleaning 
 
 Before working with Amazon ECS in the AWS Console, visit [Docker Hub](https://hub.docker.com) and review the two images that form the basis of our demo projects. These public repositories—available at [kodekloud.com/ecs-project1](https://kodekloud.com/ecs-project1) and [kodekloud.com/ecs-project2](https://kodekloud.com/ecs-project2)—contain the project images we will use.
 
-![The image shows a webpage displaying a list of repositories under a community organization, with options to search and create a new repository. Each repository entry includes details like the name, last push time, and visibility status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858511/notes-assets/images/AWS-Certified-Developer-Associate-ECS-Demo-Part-1/community-organization-repositories-list.jpg)
+![The image shows a webpage displaying a list of repositories under a community organization, with options to search and create a new repository. Each repository entry includes details like the name, last push time, and visibility status.](https://kodekloud.com/kk-media/image/upload/v1752858511/notes-assets/images/AWS-Certified-Developer-Associate-ECS-Demo-Part-1/community-organization-repositories-list.jpg)
 
 ## Project One Overview
 

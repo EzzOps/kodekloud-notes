@@ -12,9 +12,7 @@ In this guide, you'll learn how to replace a single resource in a Terraform Clou
 
 You have multiple workspaces—**DevOps**, **AWS MyApp Dev**, **Prod**, and **Staging**—all linked to their respective Git branches. The screenshot below shows the Terraform Cloud dashboard with workspace names, run statuses, linked repositories, and last update times.
 
-<Frame>
-  ![The image shows a Terraform Cloud dashboard displaying a list of workspaces with their names, run statuses, repositories, and the latest change timestamps. The sidebar includes options for managing workspaces, registry, and settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878714/notes-assets/images/HashiCorp-Terraform-Cloud-Targeting-Resource-for-Replacement-with-Terraform-Cloud/terraform-cloud-dashboard-workspaces-list.jpg)
-</Frame>
+![The image shows a Terraform Cloud dashboard displaying a list of workspaces with their names, run statuses, repositories, and the latest change timestamps. The sidebar includes options for managing workspaces, registry, and settings.](https://kodekloud.com/kk-media/image/upload/v1752878714/notes-assets/images/HashiCorp-Terraform-Cloud-Targeting-Resource-for-Replacement-with-Terraform-Cloud/terraform-cloud-dashboard-workspaces-list.jpg)
 
 ***
 

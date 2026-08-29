@@ -59,9 +59,7 @@ With these examples, you can seamlessly integrate your fine-tuned OpenAI model i
 * [Fine-Tuning Guide](https://platform.openai.com/docs/guides/fine-tuning)
 * [Authentication](https://platform.openai.com/docs/api-reference/authentication)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/bdd763d1-210d-41de-a60c-607b722e7afe/lesson/edf343a6-eda3-49ae-918b-7cae35254b21" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/bdd763d1-210d-41de-a60c-607b722e7afe/lesson/edf343a6-eda3-49ae-918b-7cae35254b21)
 
 
 # Section Intro
@@ -85,13 +83,11 @@ Fine-tuning enables you to adapt large language models (LLMs) to specialized dom
 
 We’ll start by exploring **why** fine-tuning is critical, then move quickly into a hands-on demo. Let’s dive in!
 
-<Callout icon="lightbulb">
-  Make sure you have:
+> **lightbulb** Make sure you have:
 
   * An OpenAI API key
   * A structured dataset in JSONL or CSV format
   * The `openai` Python package installed (`pip install openai`)
-</Callout>
 
 | Topic                   | Description                                      | Example Command                                 |
 | ----------------------- | ------------------------------------------------ | ----------------------------------------------- |
@@ -114,6 +110,4 @@ Unlike prompt engineering alone, a fine-tuned model will not “forget” your c
 
 Proceed to the next sections for a detailed walkthrough of each step, from data formatting to deploying your specialized model.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/bdd763d1-210d-41de-a60c-607b722e7afe/lesson/bc6c0cbb-ab9b-47d7-9cbf-e830fc01956c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mastering-generative-ai-with-openai/module/bdd763d1-210d-41de-a60c-607b722e7afe/lesson/bc6c0cbb-ab9b-47d7-9cbf-e830fc01956c)

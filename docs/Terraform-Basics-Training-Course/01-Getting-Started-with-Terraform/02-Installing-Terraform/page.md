@@ -18,9 +18,7 @@ Let's recap the key components of the `local.tf` file:
 
 For additional resource types and their required arguments, refer to the [Terraform documentation](https://www.terraform.io/docs/providers/index.html).
 
-<Frame>
-  ![The image shows a diagram and text detailing a provider's argument reference, including optional and required arguments for file creation and permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884178/notes-assets/images/Terraform-Basics-Training-Course-HashiCorp-Configuration-Language-HCL-Basics/frame_590.jpg)
-</Frame>
+![The image shows a diagram and text detailing a provider's argument reference, including optional and required arguments for file creation and permissions.](https://kodekloud.com/kk-media/image/upload/v1752884178/notes-assets/images/Terraform-Basics-Training-Course-HashiCorp-Configuration-Language-HCL-Basics/frame_590.jpg)
 
 ## Conclusion
 
@@ -28,9 +26,7 @@ In this article, we explored the basics of HCL by creating our first Terraform r
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/385de3de-cd58-4925-9a24-207ebd7844b3/lesson/0ceefa60-2911-4a4e-a6b0-9d8efdca7700" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/385de3de-cd58-4925-9a24-207ebd7844b3/lesson/0ceefa60-2911-4a4e-a6b0-9d8efdca7700)
 
 
 # Installing Terraform
@@ -43,9 +39,7 @@ In this lesson, you'll learn how to install Terraform—a powerful tool for mana
 
 Terraform supports Windows, macOS, and a range of Linux distributions. For the purposes of this lesson, all examples and labs will use Terraform version 0.13 on a Linux machine.
 
-<Callout icon="lightbulb">
-  This lesson uses Terraform v0.13. Ensure you download the correct version for your operating system.
-</Callout>
+> **lightbulb** This lesson uses Terraform v0.13. Ensure you download the correct version for your operating system.
 
 ## Installing Terraform 0.13 on Linux
 
@@ -106,10 +100,6 @@ In the initial sections of this lesson, we focus on two simple resource types:
 
 These examples are designed to help you understand key concepts such as resource lifecycle management and the basics of HCL syntax. Once you have a solid grasp of these fundamentals, you'll be better prepared to deploy more complex, real-world infrastructure scenarios later in the lesson.
 
-<Callout icon="lightbulb">
-  With these basic concepts in hand, you're now ready to explore more advanced Terraform configurations and resource management techniques.
-</Callout>
+> **lightbulb** With these basic concepts in hand, you're now ready to explore more advanced Terraform configurations and resource management techniques.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/385de3de-cd58-4925-9a24-207ebd7844b3/lesson/705722ca-8f44-4c90-b62e-079fb8c634ee" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/385de3de-cd58-4925-9a24-207ebd7844b3/lesson/705722ca-8f44-4c90-b62e-079fb8c634ee)

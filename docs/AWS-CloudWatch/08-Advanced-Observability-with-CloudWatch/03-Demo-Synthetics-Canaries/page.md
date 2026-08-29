@@ -13,7 +13,7 @@ In this guide, you’ll learn how to create, configure, and manage Synthetic Can
 3. In the left pane, select **Synthetics** > **Canaries**.
 4. Click **Create Canary**.
 
-![The image shows an AWS console interface for creating synthetic canaries, with options for different monitoring blueprints like heartbeat monitoring and API canary. There's also a section for configuring the canary builder with a name and endpoint URL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862341/notes-assets/images/AWS-CloudWatch-Demo-Synthetics-Canaries/aws-console-synthetic-canaries-monitoring.jpg)
+![The image shows an AWS console interface for creating synthetic canaries, with options for different monitoring blueprints like heartbeat monitoring and API canary. There's also a section for configuring the canary builder with a name and endpoint URL.](https://kodekloud.com/kk-media/image/upload/v1752862341/notes-assets/images/AWS-CloudWatch-Demo-Synthetics-Canaries/aws-console-synthetic-canaries-monitoring.jpg)
 
 CloudWatch provides several built-in blueprints:
 
@@ -32,7 +32,7 @@ For this demo, we’ll select the **Heartbeat monitoring** blueprint.
 2. Enter **Name**: `KodeKloud-monitoring`.
 3. Provide the **Endpoint URL**, e.g., `https://www.kodekloud.com`.
 
-![The image shows an AWS CloudWatch console screen where a user is setting up a Canary for monitoring, with options to add an endpoint URL and take screenshots.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862342/notes-assets/images/AWS-CloudWatch-Demo-Synthetics-Canaries/aws-cloudwatch-canary-setup-monitoring.jpg)
+![The image shows an AWS CloudWatch console screen where a user is setting up a Canary for monitoring, with options to add an endpoint URL and take screenshots.](https://kodekloud.com/kk-media/image/upload/v1752862342/notes-assets/images/AWS-CloudWatch-Demo-Synthetics-Canaries/aws-cloudwatch-canary-setup-monitoring.jpg)
 
 Below the setup, you can review and customize the default script, configure VPC settings, tags, and tracing options.
 
@@ -48,11 +48,11 @@ For this tutorial, choose **Run continuously** and set the frequency to **1 minu
 
 > **lightbulb** Running a canary every minute can increase AWS charges. Adjust the interval to balance cost and monitoring needs.
 
-![The image shows an AWS CloudWatch console screen, specifically the Synthetics Canaries section, where a schedule for running a canary is being configured. Options include running continuously, using a CRON expression, or running once, with a frequency setting of every 5 minutes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862344/notes-assets/images/AWS-CloudWatch-Demo-Synthetics-Canaries/aws-cloudwatch-synthetics-canaries-schedule.jpg)
+![The image shows an AWS CloudWatch console screen, specifically the Synthetics Canaries section, where a schedule for running a canary is being configured. Options include running continuously, using a CRON expression, or running once, with a frequency setting of every 5 minutes.](https://kodekloud.com/kk-media/image/upload/v1752862344/notes-assets/images/AWS-CloudWatch-Demo-Synthetics-Canaries/aws-cloudwatch-synthetics-canaries-schedule.jpg)
 
 Scroll down and click **Create Canary**. Deployment takes about **5–10 minutes**.
 
-![The image shows an AWS CloudWatch console screen where a user is configuring settings for a synthetic canary, including optional CloudWatch alarms, VPC settings, tags, and active tracing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862345/notes-assets/images/AWS-CloudWatch-Demo-Synthetics-Canaries/aws-cloudwatch-synthetic-canary-settings.jpg)
+![The image shows an AWS CloudWatch console screen where a user is configuring settings for a synthetic canary, including optional CloudWatch alarms, VPC settings, tags, and active tracing.](https://kodekloud.com/kk-media/image/upload/v1752862345/notes-assets/images/AWS-CloudWatch-Demo-Synthetics-Canaries/aws-cloudwatch-synthetic-canary-settings.jpg)
 
 ## 4. Monitoring Canary Metrics
 
@@ -61,7 +61,7 @@ After the canary is active, return to the **Synthetics** dashboard to view:
 * A pie chart of passed vs. failed runs
 * Average runtime, status, and success rate
 
-![The image shows an AWS CloudWatch dashboard for Synthetics Canaries, displaying the status of canary tests with a pie chart indicating one passed test and no failures. It also lists details of a specific canary named "kodekloud-monitoring" with a 100% success rate.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862346/notes-assets/images/AWS-CloudWatch-Demo-Synthetics-Canaries/aws-cloudwatch-synthetics-canaries-dashboard.jpg)
+![The image shows an AWS CloudWatch dashboard for Synthetics Canaries, displaying the status of canary tests with a pie chart indicating one passed test and no failures. It also lists details of a specific canary named "kodekloud-monitoring" with a 100% success rate.](https://kodekloud.com/kk-media/image/upload/v1752862346/notes-assets/images/AWS-CloudWatch-Demo-Synthetics-Canaries/aws-cloudwatch-synthetics-canaries-dashboard.jpg)
 
 Click your canary’s name to access the **Runs** view:
 
@@ -71,7 +71,7 @@ Click your canary’s name to access the **Runs** view:
 * **HAR file**: HTTP archive for detailed analysis
 * **Execution info**: Timestamps, duration, runtime environment
 
-![The image shows an AWS CloudWatch dashboard displaying Canary runs with a graph indicating successful and failed checks. The "Steps Executed" section shows one step with a "Passed" status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862347/notes-assets/images/AWS-CloudWatch-Demo-Synthetics-Canaries/aws-cloudwatch-canary-runs-dashboard.jpg)
+![The image shows an AWS CloudWatch dashboard displaying Canary runs with a graph indicating successful and failed checks. The "Steps Executed" section shows one step with a "Passed" status.](https://kodekloud.com/kk-media/image/upload/v1752862347/notes-assets/images/AWS-CloudWatch-Demo-Synthetics-Canaries/aws-cloudwatch-canary-runs-dashboard.jpg)
 
 This insight ensures uptime, measures performance, and validates essential user paths.
 
@@ -83,7 +83,7 @@ To stop a running canary:
 2. Click **Actions** > **Stop**.
 3. Confirm the stop operation.
 
-![The image shows an AWS CloudWatch dashboard for "kodekloud-monitoring," indicating a successful stop of a canary with no issues in the last 24 hours and a 100% success rate in the last 7 days.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862349/notes-assets/images/AWS-CloudWatch-Demo-Synthetics-Canaries/aws-cloudwatch-kodekloud-monitoring-dashboard.jpg)
+![The image shows an AWS CloudWatch dashboard for "kodekloud-monitoring," indicating a successful stop of a canary with no issues in the last 24 hours and a 100% success rate in the last 7 days.](https://kodekloud.com/kk-media/image/upload/v1752862349/notes-assets/images/AWS-CloudWatch-Demo-Synthetics-Canaries/aws-cloudwatch-kodekloud-monitoring-dashboard.jpg)
 
 ## 6. Organizing Canaries into Groups
 
@@ -100,7 +100,7 @@ For advanced end-to-end testing:
 2. Choose a **Visual monitoring** or **Browser-based** blueprint.
 3. Use the **Inline editor** or **Import from S3** for custom Node.js scripts.
 
-![The image shows the AWS CloudWatch console interface for creating a canary, with options to use a blueprint, inline editor, or import from S3, and various blueprint options like heartbeat monitoring and API canary.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862350/notes-assets/images/AWS-CloudWatch-Demo-Synthetics-Canaries/aws-cloudwatch-canary-creation-interface.jpg)
+![The image shows the AWS CloudWatch console interface for creating a canary, with options to use a blueprint, inline editor, or import from S3, and various blueprint options like heartbeat monitoring and API canary.](https://kodekloud.com/kk-media/image/upload/v1752862350/notes-assets/images/AWS-CloudWatch-Demo-Synthetics-Canaries/aws-cloudwatch-canary-creation-interface.jpg)
 
 A GUI workflow canary can:
 
@@ -120,7 +120,7 @@ When a canary is no longer needed:
 
 > **triangle-alert** If deletion fails, ensure the canary is stopped before retrying.
 
-![The image shows an AWS CloudWatch interface where a canary named "kodekloud-monitoring" has been successfully deleted, along with its associated resources. The interface includes options for managing alarms, logs, metrics, and application monitoring.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862352/notes-assets/images/AWS-CloudWatch-Demo-Synthetics-Canaries/aws-cloudwatch-kodekloud-monitoring-deleted.jpg)
+![The image shows an AWS CloudWatch interface where a canary named "kodekloud-monitoring" has been successfully deleted, along with its associated resources. The interface includes options for managing alarms, logs, metrics, and application monitoring.](https://kodekloud.com/kk-media/image/upload/v1752862352/notes-assets/images/AWS-CloudWatch-Demo-Synthetics-Canaries/aws-cloudwatch-kodekloud-monitoring-deleted.jpg)
 
 Deleting a canary cleans up its CloudWatch alarms, logs, metrics, and IAM resources.
 

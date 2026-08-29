@@ -109,9 +109,7 @@ if __name__ == "__main__":
         charge_bank()
 ```
 
-<Callout icon="lightbulb">
-  Using `span.record_exception(err)` will include the exception type, message, and stack trace in the span. You can also set the span status to error with `span.set_status(...)` to make the error state explicit.
-</Callout>
+> **lightbulb** Using `span.record_exception(err)` will include the exception type, message, and stack trace in the span. You can also set the span status to error with `span.set_status(...)` to make the error state explicit.
 
 Best practices and behavior
 
@@ -139,9 +137,7 @@ References
   <img alt="The image shows a Jaeger UI interface displaying the trace timeline of a payment service with multiple spans and logs, including a request to a charge API." />
 </Frame>
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/dbdf3b73-09ff-4daf-b818-93f3ab397891" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/dbdf3b73-09ff-4daf-b818-93f3ab397891)
 
 
 # Demo Exporters
@@ -194,9 +190,7 @@ A typical ConsoleSpanExporter output for a span might look like this JSON repres
 
 Rather than printing spans locally, we’ll send them to Jaeger. Jaeger accepts traces via the OpenTelemetry Protocol (OTLP), so we can use the OTLP HTTP exporter provided by OpenTelemetry instead of a Jaeger‑specific exporter. This keeps your instrumentation portable to any OTLP-compatible backend.
 
-<Callout icon="lightbulb">
-  Jaeger supports OTLP (HTTP and gRPC). Using the OTLP exporter keeps your instrumentation portable to any backend that accepts OTLP, not just Jaeger.
-</Callout>
+> **lightbulb** Jaeger supports OTLP (HTTP and gRPC). Using the OTLP exporter keeps your instrumentation portable to any backend that accepts OTLP, not just Jaeger.
 
 Install the OTLP HTTP exporter package:
 
@@ -246,9 +240,7 @@ Notes:
 * Use `BatchSpanProcessor` in production; it buffers spans and sends them efficiently. `SimpleSpanProcessor` sends synchronously and can hurt performance.
 * OTLP over HTTP commonly uses port `4318` and the `/v1/traces` path. If using OTLP/gRPC or a hosted service, verify the endpoint and protocol in the backend docs.
 
-<Callout icon="warning">
-  Make sure the endpoint, protocol (HTTP vs gRPC), and any required authentication match your Jaeger or hosted OTLP service. Sending to the wrong endpoint or protocol will result in dropped traces.
-</Callout>
+> **warning** Make sure the endpoint, protocol (HTTP vs gRPC), and any required authentication match your Jaeger or hosted OTLP service. Sending to the wrong endpoint or protocol will result in dropped traces.
 
 ## Quick comparison
 

@@ -22,7 +22,7 @@ Boost your exam readiness by exploring these carefully selected materials:
 * **Optional Guides**\
   If you’re looking for additional perspectives, consider reviewing last year’s guide for further insights. Some modules might not have an accompanying case study, so use the search function on Microsoft’s learning website to locate related resources.
 
-![The image shows a webpage titled "Content Directory" with a list of case studies related to Microsoft Azure infrastructure solutions, each linked to a specific design solution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866803/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Conclusion/content-directory-azure-case-studies.jpg)
+![The image shows a webpage titled "Content Directory" with a list of case studies related to Microsoft Azure infrastructure solutions, each linked to a specific design solution.](https://kodekloud.com/kk-media/image/upload/v1752866803/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Conclusion/content-directory-azure-case-studies.jpg)
 
 ## Exam Preparation Hub
 
@@ -32,7 +32,7 @@ For a comprehensive exam preparation experience, visit the official exam webpage
 * **Preparation Videos** – Access additional learning materials on Microsoft Learn.
 * **Study Guides** – Get the latest tips and updates to guide your study process.
 
-![The image is a webpage detailing the Microsoft Azure AZ-305 exam, including information about the exam's content, preparation tips, and scheduling details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866804/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Conclusion/azure-az-305-exam-details.jpg)
+![The image is a webpage detailing the Microsoft Azure AZ-305 exam, including information about the exam's content, preparation tips, and scheduling details.](https://kodekloud.com/kk-media/image/upload/v1752866804/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Conclusion/azure-az-305-exam-details.jpg)
 
 > **lightbulb** Be sure to regularly review these resources to stay current with any updates. A well-rounded preparation using multiple sources will increase your confidence and boost your likelihood of success.
 

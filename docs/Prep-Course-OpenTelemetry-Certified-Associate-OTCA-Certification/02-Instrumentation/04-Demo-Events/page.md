@@ -137,9 +137,7 @@ You can also inspect the charge service traces in [Jaeger](https://www.jaegertra
   <img alt="The image shows the Jaeger UI interface with search parameters for tracing a &#x22;Charge service&#x22; with two resulting traces displayed, including their durations and timestamps." />
 </Frame>
 
-<Callout icon="lightbulb">
-  To correlate client and server spans into a single distributed trace you must propagate the trace context (for example, via HTTP headers). You can accomplish this manually using `opentelemetry.propagate.inject` / `opentelemetry.propagate.extract`, or by enabling automatic instrumentation for your HTTP client and web framework, which will handle propagation for you.
-</Callout>
+> **lightbulb** To correlate client and server spans into a single distributed trace you must propagate the trace context (for example, via HTTP headers). You can accomplish this manually using `opentelemetry.propagate.inject` / `opentelemetry.propagate.extract`, or by enabling automatic instrumentation for your HTTP client and web framework, which will handle propagation for you.
 
 Debugging locally with ConsoleSpanExporter
 
@@ -178,13 +176,9 @@ References and further reading
 * [OTLP Exporter Specification](https://opentelemetry.io/docs/reference/specification/protocol/otlp/)
 * [W3C Trace Context](https://www.w3.org/TR/trace-context/)
 
-<Callout icon="warning">
-  When adding span attributes, never include sensitive information such as full credit card numbers, authentication tokens, or PII. Use truncated or hashed values if you must record identifying information for debugging.
-</Callout>
+> **warning** When adding span attributes, never include sensitive information such as full credit card numbers, authentication tokens, or PII. Use truncated or hashed values if you must record identifying information for debugging.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/1a27cf3b-2e85-40f2-bc52-e0e459aa9d12" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/1a27cf3b-2e85-40f2-bc52-e0e459aa9d12)
 
 
 # Demo Events
@@ -202,9 +196,7 @@ What you'll learn:
 * How to inject trace context into outgoing HTTP requests
 * How to record events on a server span (Flask example)
 
-<Callout icon="lightbulb">
-  Avoid recording sensitive data (such as full account numbers, passwords, or PII) in span attributes or events. When needed, prefer identifiers, truncated values, or hashes.
-</Callout>
+> **lightbulb** Avoid recording sensitive data (such as full account numbers, passwords, or PII) in span attributes or events. When needed, prefer identifiers, truncated values, or hashes.
 
 ## Tracer setup (OTLP HTTP exporter)
 

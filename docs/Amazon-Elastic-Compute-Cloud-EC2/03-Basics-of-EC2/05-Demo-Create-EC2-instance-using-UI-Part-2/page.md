@@ -26,7 +26,7 @@ AWS EC2 offers **Termination Protection** to prevent accidental instance deletio
 
 If termination protection is enabled, you’ll see an error message:
 
-![The image shows an AWS EC2 management console with a running instance named "demo." The instance is selected, and the option to terminate it is highlighted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868976/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-EC2-instance-using-UI-Part-2/aws-ec2-console-running-instance-demo.jpg)
+![The image shows an AWS EC2 management console with a running instance named "demo." The instance is selected, and the option to terminate it is highlighted.](https://kodekloud.com/kk-media/image/upload/v1752868976/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-EC2-instance-using-UI-Part-2/aws-ec2-console-running-instance-demo.jpg)
 
 > **triangle-alert** Error: “Failed to terminate instance. The instance may not be terminated.”\
   This indicates that **Termination Protection** is active.
@@ -51,7 +51,7 @@ The instance state will progress as follows:
 
 Eventually, you’ll see:
 
-![The image shows an AWS EC2 console with an instance labeled "demo" that is in the process of shutting down. The instance type is t2.micro, and it has passed its status checks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868977/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-EC2-instance-using-UI-Part-2/aws-ec2-console-demo-instance-shutting-down.jpg)
+![The image shows an AWS EC2 console with an instance labeled "demo" that is in the process of shutting down. The instance type is t2.micro, and it has passed its status checks.](https://kodekloud.com/kk-media/image/upload/v1752868977/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Demo-Create-EC2-instance-using-UI-Part-2/aws-ec2-console-demo-instance-shutting-down.jpg)
 
 ***
 

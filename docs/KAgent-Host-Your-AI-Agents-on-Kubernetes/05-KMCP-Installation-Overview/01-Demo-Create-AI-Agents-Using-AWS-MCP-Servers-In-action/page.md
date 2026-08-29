@@ -68,23 +68,17 @@ Some of the key features that make K-Agent powerful and extensible:
   <img alt="A dark-themed presentation slide titled &#x22;Summary&#x22; with the &#x22;kagent&#x22; logo and a &#x22;Key Features&#x22; section. Five boxed features read: &#x22;Kubernetes-native,&#x22; &#x22;Built on ADK framework,&#x22; &#x22;Supports multiple LLM providers,&#x22; &#x22;Agent composition (agents as tools),&#x22; and &#x22;Extensible through MCP.&#x22;" />
 </Frame>
 
-<Callout icon="lightbulb">
-  K-Agent’s MCP support and agent-composition features let you extend capabilities incrementally: add new external tools via MCP, and compose focused agents to build higher-level behavior without changing core components.
-</Callout>
+> **lightbulb** K-Agent’s MCP support and agent-composition features let you extend capabilities incrementally: add new external tools via MCP, and compose focused agents to build higher-level behavior without changing core components.
 
 Security and governance (quick note)
 
-<Callout icon="warning">
-  When exposing external tools or agents, carefully manage credentials and RBAC. Grant least-privilege access to MCP adapters and ensure agents cannot perform unauthorized operations in your cluster or cloud account.
-</Callout>
+> **warning** When exposing external tools or agents, carefully manage credentials and RBAC. Grant least-privilege access to MCP adapters and ensure agents cannot perform unauthorized operations in your cluster or cloud account.
 
 Hands-on exercises are available to practice the concepts above—examples include installing MCP adapters, registering AWS tools, creating a PromQL agent, and composing agents to solve end-to-end tasks.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/434776f7-37e5-432d-94f4-db0754f83a8f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/434776f7-37e5-432d-94f4-db0754f83a8f)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/331e8954-80dd-4887-b79f-f7fb1ef54f07" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/331e8954-80dd-4887-b79f-f7fb1ef54f07)
 
 
 # Demo Create AI Agents Using AWS MCP Servers In action

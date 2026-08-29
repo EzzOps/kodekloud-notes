@@ -10,7 +10,7 @@ In modern cloud-native environments, managing infrastructure reliably and predic
 
 Immutable infrastructure treats every change as a brand-new deployment. Once you build an image, you never modify it in place—instead, you replace the entire environment with a fresh image.
 
-![The image illustrates the concept of an immutable environment, showing a process where a base AMI is combined with changes to create a package, which is then used to replace existing environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869083/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Immutable-vs-non-immutable/immutable-environment-ami-process-diagram.jpg)
+![The image illustrates the concept of an immutable environment, showing a process where a base AMI is combined with changes to create a package, which is then used to replace existing environments.](https://kodekloud.com/kk-media/image/upload/v1752869083/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Immutable-vs-non-immutable/immutable-environment-ami-process-diagram.jpg)
 
 How it works:
 
@@ -35,7 +35,7 @@ Key benefits:
 
 Mutable infrastructure updates running servers or containers in place. Over time, manual patches or ad‐hoc scripts can introduce inconsistencies across your fleet.
 
-![The image illustrates a process in a non-immutable environment, showing steps from requiring change, applying changes, to repackaging. It uses icons of boxes and food items to represent these stages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869084/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Immutable-vs-non-immutable/non-immutable-process-change-repackaging-diagram.jpg)
+![The image illustrates a process in a non-immutable environment, showing steps from requiring change, applying changes, to repackaging. It uses icons of boxes and food items to represent these stages.](https://kodekloud.com/kk-media/image/upload/v1752869084/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Immutable-vs-non-immutable/non-immutable-process-change-repackaging-diagram.jpg)
 
 Typical workflow:
 
@@ -70,7 +70,7 @@ Common drawbacks:
 
 ACME Corporation standardized on an immutable approach to guarantee consistency across development, staging, and production.
 
-![The image depicts a flowchart for Acme Corporation's immutable environment, showing an image build process leading to different AMI versions with associated technologies like Nginx, Node.js, and Go.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869086/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Immutable-vs-non-immutable/acme-corporation-immutable-environment-flowchart.jpg)
+![The image depicts a flowchart for Acme Corporation's immutable environment, showing an image build process leading to different AMI versions with associated technologies like Nginx, Node.js, and Go.](https://kodekloud.com/kk-media/image/upload/v1752869086/notes-assets/images/Amazon-Elastic-Compute-Cloud-EC2-Immutable-vs-non-immutable/acme-corporation-immutable-environment-flowchart.jpg)
 
 1. **Automated Image Build**\
    A CI/CD job generates an EC2 AMI including base OS patches plus required services (Nginx, Node.js, Go).

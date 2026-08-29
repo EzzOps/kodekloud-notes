@@ -38,9 +38,7 @@ Beyond Reports and Cost Breakdown, the Billing console provides:
 * Anomalies — automated detection of unusual spend spikes
 * FinOps Hub — an area that consolidates actionable FinOps insights (realized savings, active recommendations, potential monthly savings, and priority items)
 
-<Callout icon="lightbulb">
-  To view consolidated costs for all projects in an organization you need access to the billing account that pays for those projects. If you only have project-level access, you will see costs only for that project.
-</Callout>
+> **lightbulb** To view consolidated costs for all projects in an organization you need access to the billing account that pays for those projects. If you only have project-level access, you will see costs only for that project.
 
 The FinOps Hub surfaces recommendations and signals that help prioritize cost optimization work. Featuring a dedicated FinOps experience inside the Billing console indicates GCP’s effort to integrate FinOps workflows directly into billing and operations.
 
@@ -89,6 +87,4 @@ Use the Documents section to download invoices, monthly PDFs, and CSV exports. S
 
 That wraps up this lesson. Use the Billing console’s Overview, Reports, Cost Breakdown, Budgets & Alerts, Anomalies, FinOps Hub, Pricing, Credits, and Documents to start monitoring, analyzing, and optimizing your GCP spend. See you in the next article.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/b623bd4d-2f47-4afb-a61b-f224315cfbe1/lesson/7c806017-9952-4e34-81fb-4135dbcb62b2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/b623bd4d-2f47-4afb-a61b-f224315cfbe1/lesson/7c806017-9952-4e34-81fb-4135dbcb62b2)

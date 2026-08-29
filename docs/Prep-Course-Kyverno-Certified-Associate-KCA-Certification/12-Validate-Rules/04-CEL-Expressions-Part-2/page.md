@@ -66,9 +66,7 @@ Benefits:
 * Use different parameter resources per namespace or environment and bind policies accordingly.
 * You can use native Kubernetes resources (for example, a `ConfigMap`) as the parameter resource as long as Kyverno can read it.
 
-<Callout icon="lightbulb">
-  Parameter resources can be a custom resource or native types like `ConfigMap`. Kyverno exposes the selected resource to CEL via the `params` variable so your policy logic remains environment-agnostic.
-</Callout>
+> **lightbulb** Parameter resources can be a custom resource or native types like `ConfigMap`. Kyverno exposes the selected resource to CEL via the `params` variable so your policy logic remains environment-agnostic.
 
 ## 2) Filter by content with CEL preconditions
 
@@ -186,14 +184,10 @@ Helpful links and references
 * CEL (Common Expression Language) spec: [https://github.com/google/cel-spec](https://github.com/google/cel-spec)
 * Kubernetes admission control concepts: [https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
 
-<Callout icon="warning">
-  When using `paramKind` with custom resources, ensure the referenced resource exists and Kyverno has permission to read it. A missing or inaccessible parameter resource will prevent the policy from evaluating as intended.
-</Callout>
+> **warning** When using `paramKind` with custom resources, ensure the referenced resource exists and Kyverno has permission to read it. A missing or inaccessible parameter resource will prevent the policy from evaluating as intended.
 
 That's it for this lesson — with `params`, `celPreconditions`, and `variables` you can author Kyverno CEL policies that are configurable, precise, and easy to maintain.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/a2f7ecdd-5b80-48ac-bfdd-ae5c16309bbe" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/a2f7ecdd-5b80-48ac-bfdd-ae5c16309bbe)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/3d530bb8-e36f-4d61-b886-6d088dfd808f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/3d530bb8-e36f-4d61-b886-6d088dfd808f)

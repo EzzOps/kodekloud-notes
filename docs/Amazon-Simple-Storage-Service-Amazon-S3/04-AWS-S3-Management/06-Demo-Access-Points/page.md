@@ -30,15 +30,15 @@ In this tutorial, you’ll learn how to use Amazon S3 Access Points to delegate 
 
 First, set up a new S3 bucket named `kk-accesspoint` with the default settings. Then upload a sample file (`beach.jpg`) for testing.
 
-![The image shows an AWS S3 console screen where a user is configuring settings for a new bucket, including versioning, tags, and default encryption options. The "Create bucket" button is highlighted at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869367/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/aws-s3-console-create-bucket-settings.jpg)
+![The image shows an AWS S3 console screen where a user is configuring settings for a new bucket, including versioning, tags, and default encryption options. The "Create bucket" button is highlighted at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752869367/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/aws-s3-console-create-bucket-settings.jpg)
 
 Upload your test asset:
 
-![The image shows an AWS S3 upload interface where a file named "beach.jpg" is being prepared for upload. The file is 2.7 MB in size, and the "Upload" button is highlighted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869368/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/aws-s3-upload-beach-file-interface.jpg)
+![The image shows an AWS S3 upload interface where a file named "beach.jpg" is being prepared for upload. The file is 2.7 MB in size, and the "Upload" button is highlighted.](https://kodekloud.com/kk-media/image/upload/v1752869368/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/aws-s3-upload-beach-file-interface.jpg)
 
 Once uploaded, as the bucket owner (user1), you can view the object details:
 
-![The image shows an Amazon S3 console page displaying details of an object named "beach.jpg," including its properties, S3 URI, and object URL. It also indicates that bucket versioning is disabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869369/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/amazon-s3-console-beachjpg-properties.jpg)
+![The image shows an Amazon S3 console page displaying details of an object named "beach.jpg," including its properties, S3 URI, and object URL. It also indicates that bucket versioning is disabled.](https://kodekloud.com/kk-media/image/upload/v1752869369/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/amazon-s3-console-beachjpg-properties.jpg)
 
 > **lightbulb** Consider enabling versioning and default encryption on production buckets to protect against accidental data loss or unauthorized access.
 
@@ -48,12 +48,12 @@ Once uploaded, as the bucket owner (user1), you can view the object details:
 
 Assume two IAM users—**user2** and **user3**—each have only CloudShell access. By default, neither can list or retrieve objects from your new bucket.
 
-![The image shows the AWS Identity and Access Management (IAM) console, displaying a list of users with details such as last activity, password age, and active key age.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869370/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/aws-iam-console-user-details.jpg)
+![The image shows the AWS Identity and Access Management (IAM) console, displaying a list of users with details such as last activity, password age, and active key age.](https://kodekloud.com/kk-media/image/upload/v1752869370/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/aws-iam-console-user-details.jpg)
 
-![The image shows an AWS Identity and Access Management (IAM) console screen, displaying user permissions with the "AWSCloudShellFullAccess" policy attached. The console access is enabled without MFA, and no permissions boundary is set.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869372/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/aws-iam-console-user-permissions-policy.jpg)
+![The image shows an AWS Identity and Access Management (IAM) console screen, displaying user permissions with the "AWSCloudShellFullAccess" policy attached. The console access is enabled without MFA, and no permissions boundary is set.](https://kodekloud.com/kk-media/image/upload/v1752869372/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/aws-iam-console-user-permissions-policy.jpg)
 
 In AWS CloudShell, both users attempt to list and copy objects:
 
-![The image shows the AWS Management Console with a search for "CloudShell," displaying services, resources, blogs, and documentation related to AWS CloudShell. The interface is dark-themed, and there are multiple tabs open in the browser.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869373/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/aws-management-console-cloudshell-search-dark-theme.jpg)
+![The image shows the AWS Management Console with a search for "CloudShell," displaying services, resources, blogs, and documentation related to AWS CloudShell. The interface is dark-themed, and there are multiple tabs open in the browser.](https://kodekloud.com/kk-media/image/upload/v1752869373/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Demo-Access-Points/aws-management-console-cloudshell-search-dark-theme.jpg)
 
 ```bash theme={null}

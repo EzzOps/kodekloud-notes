@@ -36,17 +36,13 @@ Hello from Jenkins
 Finished: SUCCESS
 ```
 
-<Callout icon="lightbulb">
-  After each build (manual or auto-triggered), review the console output in Jenkins. This ensures that the repository is cloned correctly and the build steps, including the execution of the shell command, are completed successfully.
-</Callout>
+> **lightbulb** After each build (manual or auto-triggered), review the console output in Jenkins. This ensures that the repository is cloned correctly and the build steps, including the execution of the shell command, are completed successfully.
 
 Now, every time changes are pushed to the `main` branch of your repository, Jenkins will automatically trigger a build using the GitHub webhook integration. For more information on Git and Jenkins integration, check out the [Jenkins Documentation](https://www.jenkins.io/doc/) and [GitHub Docs](https://docs.github.com/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/efdff7d4-fc12-414e-9a26-e287acdf5f2f" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/efdff7d4-fc12-414e-9a26-e287acdf5f2f)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/e502a22e-3b94-4ba5-af3d-9de2b764ec42" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/e502a22e-3b94-4ba5-af3d-9de2b764ec42)
 
 
 # Jenkin Jobs
@@ -71,13 +67,9 @@ A typical Jenkins job can include a variety of stages such as:
 
 Each stage in the Jenkins job provides real-time feedback. After a successful code compilation, Jenkins logs the success of the compilation stage. If errors occur during the testing phase, Jenkins details the specific test failures, making it easier for developers to identify and address the issues.
 
-<Frame>
-  ![The image illustrates a Jenkins job workflow, showing stages like "Compile," "Test," "Deploy to Staging," and "Deploy to Production," with logs and developer interaction.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879902/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Jenkin-Jobs/jenkins-job-workflow-stages-logs.jpg)
-</Frame>
+![The image illustrates a Jenkins job workflow, showing stages like "Compile," "Test," "Deploy to Staging," and "Deploy to Production," with logs and developer interaction.](https://kodekloud.com/kk-media/image/upload/v1752879902/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Jenkin-Jobs/jenkins-job-workflow-stages-logs.jpg)
 
-<Callout icon="lightbulb">
-  Jenkins jobs are central to continuous integration and continuous deployment (CI/CD) processes, ensuring that your code is built, tested, and deployed systematically.
-</Callout>
+> **lightbulb** Jenkins jobs are central to continuous integration and continuous deployment (CI/CD) processes, ensuring that your code is built, tested, and deployed systematically.
 
 ## Types of Jenkins Jobs
 
@@ -104,6 +96,4 @@ Jenkins jobs offer a flexible and robust framework for automating a wide range o
 
 For more detailed information on Jenkins and CI/CD practices, check out the [Jenkins Documentation](https://jenkins.io/doc/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/269028a5-63d3-44da-96dd-51fbfaa954ea" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/4b025d4d-3ef9-479d-a483-3aa7a206a553/lesson/269028a5-63d3-44da-96dd-51fbfaa954ea)

@@ -10,9 +10,7 @@ In this tutorial, we will create new subsets using Destination Rules and route t
 
 Initially, the reviews service has three subsets defined by version labels: V1, V2, and V3. The corresponding Virtual Service configuration routes traffic based on these subsets. However, there may be scenarios when you need to group different deployments under a new rule or label. In our example, we introduce a new label (`test: beta`) to group deployments and update the existing configurations accordingly.
 
-<Callout icon="lightbulb">
-  Ensure that any changes to labels also reflect in the corresponding Destination Rule and Virtual Service configurations to avoid routing mismatches.
-</Callout>
+> **lightbulb** Ensure that any changes to labels also reflect in the corresponding Destination Rule and Virtual Service configurations to avoid routing mismatches.
 
 ## Updating the Reviews Service
 

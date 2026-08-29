@@ -10,7 +10,7 @@ In this lesson, we dive into Amazon CloudFront—a powerful Content Delivery Net
 
 When your web application resides in a single AWS Region (for example, us-east-1 in New York), users nearby see quick responses, but those thousands of miles away suffer high round-trip times. Slow page loads, video buffering, and large downloads frustrate end users.
 
-![The image shows a world map illustrating global content delivery and edge locations, with a central web server connected to various points around the globe.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863400/notes-assets/images/AWS-Networking-Fundamentals-CloudFront/global-content-delivery-map-illustration.jpg)
+![The image shows a world map illustrating global content delivery and edge locations, with a central web server connected to various points around the globe.](https://kodekloud.com/kk-media/image/upload/v1752863400/notes-assets/images/AWS-Networking-Fundamentals-CloudFront/global-content-delivery-map-illustration.jpg)
 
 By deploying dozens of **edge locations** around the globe, CloudFront brings content closer to your users, slashing latency and improving performance.
 
@@ -18,7 +18,7 @@ By deploying dozens of **edge locations** around the globe, CloudFront brings co
 
 Amazon CloudFront is AWS’s global CDN service. It delivers your web assets—HTML, CSS, JavaScript, images, videos, APIs, and dynamic content—via a worldwide network of edge caches. Instead of every user request going back to your origin server, CloudFront routes traffic to the nearest edge location.
 
-![The image is a diagram showing Amazon CloudFront distributing content from an S3 Bucket for static content and Amazon Lightsail or an Application Load Balancer for dynamic content.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863400/notes-assets/images/AWS-Networking-Fundamentals-CloudFront/cloudfront-s3-bucket-lightsail-diagram.jpg)
+![The image is a diagram showing Amazon CloudFront distributing content from an S3 Bucket for static content and Amazon Lightsail or an Application Load Balancer for dynamic content.](https://kodekloud.com/kk-media/image/upload/v1752863400/notes-assets/images/AWS-Networking-Fundamentals-CloudFront/cloudfront-s3-bucket-lightsail-diagram.jpg)
 
 > **lightbulb** Using CloudFront for both static and dynamic assets improves load times, reduces origin load, and can lower data transfer costs.
 
@@ -32,7 +32,7 @@ Amazon CloudFront is AWS’s global CDN service. It delivers your web assets—H
 
 ### Distribution Workflow
 
-![The image illustrates the architecture of CloudFront, showing the flow of data from users to a distribution configuration, which is connected to an origin server and multiple edge locations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863402/notes-assets/images/AWS-Networking-Fundamentals-CloudFront/cloudfront-architecture-data-flow-diagram.jpg)
+![The image illustrates the architecture of CloudFront, showing the flow of data from users to a distribution configuration, which is connected to an origin server and multiple edge locations.](https://kodekloud.com/kk-media/image/upload/v1752863402/notes-assets/images/AWS-Networking-Fundamentals-CloudFront/cloudfront-architecture-data-flow-diagram.jpg)
 
 1. User requests content from your `*.cloudfront.net` domain.
 2. CloudFront routes to the nearest edge location.
@@ -43,7 +43,7 @@ Amazon CloudFront is AWS’s global CDN service. It delivers your web assets—H
 
 ### S3 Bucket as Origin
 
-![The image illustrates the process of CloudFront interacting with an S3 bucket, showing how requests are handled through edge locations, checking for cache, and fetching from the origin if needed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863403/notes-assets/images/AWS-Networking-Fundamentals-CloudFront/cloudfront-s3-bucket-interaction-diagram.jpg)
+![The image illustrates the process of CloudFront interacting with an S3 bucket, showing how requests are handled through edge locations, checking for cache, and fetching from the origin if needed.](https://kodekloud.com/kk-media/image/upload/v1752863403/notes-assets/images/AWS-Networking-Fundamentals-CloudFront/cloudfront-s3-bucket-interaction-diagram.jpg)
 
 * **User → CloudFront edge**
 * **Edge: cache hit** → serve directly
@@ -51,7 +51,7 @@ Amazon CloudFront is AWS’s global CDN service. It delivers your web assets—H
 
 ### Custom HTTP Backend
 
-![The image is a diagram illustrating the process of a request being sent to CloudFront, which then fetches a response from a custom HTTP backend.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863404/notes-assets/images/AWS-Networking-Fundamentals-CloudFront/cloudfront-request-response-diagram.jpg)
+![The image is a diagram illustrating the process of a request being sent to CloudFront, which then fetches a response from a custom HTTP backend.](https://kodekloud.com/kk-media/image/upload/v1752863404/notes-assets/images/AWS-Networking-Fundamentals-CloudFront/cloudfront-request-response-diagram.jpg)
 
 * **User → CloudFront edge**
 * **Edge: cache hit** → serve content
@@ -61,7 +61,7 @@ Amazon CloudFront is AWS’s global CDN service. It delivers your web assets—H
 
 Each cached object at an edge location lives for its **Time To Live (TTL)**. Once TTL expires, the object is evicted and a new request triggers an origin fetch.
 
-![The image is an informational slide about CloudFront Time to Live (TTL), explaining that cached content remains for a set time, with a default TTL of 24 hours, and can be set to expire at specific times.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863405/notes-assets/images/AWS-Networking-Fundamentals-CloudFront/cloudfront-ttl-cached-content-info.jpg)
+![The image is an informational slide about CloudFront Time to Live (TTL), explaining that cached content remains for a set time, with a default TTL of 24 hours, and can be set to expire at specific times.](https://kodekloud.com/kk-media/image/upload/v1752863405/notes-assets/images/AWS-Networking-Fundamentals-CloudFront/cloudfront-ttl-cached-content-info.jpg)
 
 * Default TTL: 24 hours
 * Customize per object or set absolute expiration timestamps
@@ -72,7 +72,7 @@ Each cached object at an edge location lives for its **Time To Live (TTL)**. Onc
 
 Updating assets before their TTL expires requires explicit **cache invalidation**. Otherwise, edge locations will continue to serve the old version.
 
-![The image illustrates the concept of cache invalidation, showing how content cached at edge locations can be invalidated, with a TTL of 24 hours, and the potential issue of receiving outdated content.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863406/notes-assets/images/AWS-Networking-Fundamentals-CloudFront/cache-invalidation-edge-locations-ttl.jpg)
+![The image illustrates the concept of cache invalidation, showing how content cached at edge locations can be invalidated, with a TTL of 24 hours, and the potential issue of receiving outdated content.](https://kodekloud.com/kk-media/image/upload/v1752863406/notes-assets/images/AWS-Networking-Fundamentals-CloudFront/cache-invalidation-edge-locations-ttl.jpg)
 
 **Invalidation process**
 
@@ -93,7 +93,7 @@ CloudFront can publish detailed logs to Amazon S3, Amazon CloudWatch Logs, or th
 * Requested object and HTTP method
 * Response status code
 
-![The image illustrates the flow of CloudFront logs, showing interactions between users, CloudFront, and the origin, with logs being sent to CloudWatch. It also lists details captured in the logs, such as request time, IP address, and response status.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863407/notes-assets/images/AWS-Networking-Fundamentals-CloudFront/cloudfront-logs-flow-diagram.jpg)
+![The image illustrates the flow of CloudFront logs, showing interactions between users, CloudFront, and the origin, with logs being sent to CloudWatch. It also lists details captured in the logs, such as request time, IP address, and response status.](https://kodekloud.com/kk-media/image/upload/v1752863407/notes-assets/images/AWS-Networking-Fundamentals-CloudFront/cloudfront-logs-flow-diagram.jpg)
 
 ## Summary of CloudFront Features
 

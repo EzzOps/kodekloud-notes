@@ -13,9 +13,7 @@ helm show values cilium/cilium > values.yaml
 
 ## CRDs: important note
 
-<Callout icon="warning">
-  Some Cilium chart versions separate CRDs from the main chart. If the chart requires CRDs to be installed separately, apply the CRD manifests or install the cilium-crds chart before installing the main cilium chart. Helm's automatic CRD handling can vary by chart version.
-</Callout>
+> **warning** Some Cilium chart versions separate CRDs from the main chart. If the chart requires CRDs to be installed separately, apply the CRD manifests or install the cilium-crds chart before installing the main cilium chart. Helm's automatic CRD handling can vary by chart version.
 
 If the chart provides a cilium-crds chart or CRD manifests, install/apply them first. Example (if provided by the chart):
 
@@ -81,13 +79,9 @@ kubectl get crds | grep cilium
 
 You can skip creating a values.yaml to use all chart defaults, or generate and edit the values.yaml to apply non-default configuration changes before installing.
 
-<Callout icon="lightbulb">
-  Ensure you have appropriate cluster permissions (cluster-admin or equivalent) when installing Cilium, since it creates cluster-wide resources and CRDs.
-</Callout>
+> **lightbulb** Ensure you have appropriate cluster permissions (cluster-admin or equivalent) when installing Cilium, since it creates cluster-wide resources and CRDs.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/6c872543-3227-4186-90ea-63667adc9995" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/2fded455-95ea-4183-8cce-f17de214691f/lesson/6c872543-3227-4186-90ea-63667adc9995)
 
 
 # Note About Cilium CLI
@@ -107,9 +101,7 @@ There are two separate command-line tools that share the name "cilium," but they
 * A local Cilium CLI binary you install on your workstation. It is used for installing Cilium on a cluster and for higher-level management and checks (for example, `cilium install` and `cilium status`).
 * One or more Cilium binaries that run inside Cilium agent pod(s) in the cluster. These in-pod tools — commonly `cilium` and `cilium-dbg` — are focused on in-cluster diagnostics and advanced debugging.
 
-<Callout icon="lightbulb">
-  These are distinct tools even though they share the same command name. Use the local CLI for installation and cluster-level checks; use the in-pod binaries for deep debugging and diagnostics inside the cluster.
-</Callout>
+> **lightbulb** These are distinct tools even though they share the same command name. Use the local CLI for installation and cluster-level checks; use the in-pod binaries for deep debugging and diagnostics inside the cluster.
 
 Comparison at a glance:
 

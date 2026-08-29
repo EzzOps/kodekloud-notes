@@ -22,7 +22,7 @@ After deploying the NAT Gateway, update the route table for your private subnet 
 
 The following diagram illustrates a typical NAT Gateway setup within a VPC, including public and private subnets, route tables, and internet connectivity:
 
-![The image illustrates a network diagram of a NAT Gateway setup within a VPC, showing public and private subnets, route tables, and internet connectivity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865647/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NAT-Gateways-VPC/nat-gateway-vpc-network-diagram.jpg)
+![The image illustrates a network diagram of a NAT Gateway setup within a VPC, showing public and private subnets, route tables, and internet connectivity.](https://kodekloud.com/kk-media/image/upload/v1752865647/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NAT-Gateways-VPC/nat-gateway-vpc-network-diagram.jpg)
 
 ## NAT Gateway Configuration and Operation
 
@@ -39,7 +39,7 @@ Key aspects of NAT Gateway configurations include:
 
 The diagram below demonstrates the deployment of one NAT Gateway per Availability Zone, illustrating the redundancy required for high availability:
 
-![The image is a diagram illustrating a NAT Gateway setup within a default VPC, showing four availability zones each with a NAT Gateway and associated routing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865649/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NAT-Gateways-VPC/nat-gateway-default-vpc-diagram.jpg)
+![The image is a diagram illustrating a NAT Gateway setup within a default VPC, showing four availability zones each with a NAT Gateway and associated routing.](https://kodekloud.com/kk-media/image/upload/v1752865649/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NAT-Gateways-VPC/nat-gateway-default-vpc-diagram.jpg)
 
 ## Summary of NAT Gateway Features
 
@@ -54,11 +54,11 @@ NAT Gateways provide a secure method for routing outbound internet traffic from 
 
 The following diagram offers a summary of NAT Gateway features, highlighting their deployment characteristics and operational capabilities:
 
-![The image is a summary of NAT Gateways, highlighting their function, deployment on public subnets, use of Elastic IPs, and the need for one gateway per availability zone.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865650/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NAT-Gateways-VPC/nat-gateways-summary-function-deployment.jpg)
+![The image is a summary of NAT Gateways, highlighting their function, deployment on public subnets, use of Elastic IPs, and the need for one gateway per availability zone.](https://kodekloud.com/kk-media/image/upload/v1752865650/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NAT-Gateways-VPC/nat-gateways-summary-function-deployment.jpg)
 
 Further, the NAT Gateway’s routing configuration and AWS management model ensure transparent operation once deployed. This allows private instances to access the internet securely while remaining safeguarded against external unsolicited connections.
 
-![The image is a summary slide with points about NAT Gateway, including routing, AWS management, and charging details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865651/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NAT-Gateways-VPC/nat-gateway-summary-routing-aws.jpg)
+![The image is a summary slide with points about NAT Gateway, including routing, AWS management, and charging details.](https://kodekloud.com/kk-media/image/upload/v1752865651/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-NAT-Gateways-VPC/nat-gateway-summary-routing-aws.jpg)
 
 ## Conclusion
 

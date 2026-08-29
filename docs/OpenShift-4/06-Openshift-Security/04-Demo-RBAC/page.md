@@ -20,9 +20,7 @@ Before diving into role creation, familiarize yourself with the default cluster 
 
 At the console under user management (located just above Administration), options for users, groups, service accounts, roles, and role bindings are available. Let's start with roles.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift web interface displaying a list of roles and their associated namespaces. The interface includes a sidebar with various management options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882721/notes-assets/images/OpenShift-4-Demo-RBAC/red-hat-openshift-roles-namespaces.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift web interface displaying a list of roles and their associated namespaces. The interface includes a sidebar with various management options.](https://kodekloud.com/kk-media/image/upload/v1752882721/notes-assets/images/OpenShift-4-Demo-RBAC/red-hat-openshift-roles-namespaces.jpg)
 
 ## Creating a New Role
 
@@ -67,9 +65,7 @@ rules:
       - list
 ```
 
-<Callout icon="lightbulb">
-  Include the `namespace` field when you want the role to be restricted to that particular namespace.
-</Callout>
+> **lightbulb** Include the `namespace` field when you want the role to be restricted to that particular namespace.
 
 ## A Detailed Role Example
 
@@ -115,32 +111,22 @@ After the service account is created, bind it to the **viewpods** role through a
 3. Set the subject type as a service account and assign the name **podviewer**.
 4. Click **Create** to finalize the binding.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift interface for creating a RoleBinding, allowing users to define access types and resources. It includes options for namespace or cluster-wide role binding and fields for specifying the role name and namespace.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882722/notes-assets/images/OpenShift-4-Demo-RBAC/red-hat-openshift-rolebinding-interface.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift interface for creating a RoleBinding, allowing users to define access types and resources. It includes options for namespace or cluster-wide role binding and fields for specifying the role name and namespace.](https://kodekloud.com/kk-media/image/upload/v1752882722/notes-assets/images/OpenShift-4-Demo-RBAC/red-hat-openshift-rolebinding-interface.jpg)
 
 If you opt for a cluster-wide role binding, the binding can be specified across the entire cluster. However, in this example, we focus on a namespace-scoped binding.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift interface for creating a role binding, with fields for role name, subject type, namespace, and subject name. The role name is set to "viewpods," and the subject name is "podviewer."](../../../../images/kodekloud.com/kk-media/image/upload/v1752882723/notes-assets/images/OpenShift-4-Demo-RBAC/openshift-role-binding-viewpods-podviewer.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift interface for creating a role binding, with fields for role name, subject type, namespace, and subject name. The role name is set to "viewpods," and the subject name is "podviewer."](https://kodekloud.com/kk-media/image/upload/v1752882723/notes-assets/images/OpenShift-4-Demo-RBAC/openshift-role-binding-viewpods-podviewer.jpg)
 
 Once completed, you can search for the role binding using keywords like "viewer". You should find a role binding, such as **pod view for viewer**, linked to the **viewpods** role and associated with the **podviewer** service account.
 
-<Frame>
-  ![The image shows a Red Hat OpenShift interface displaying a list of role bindings filtered by the name "viewer." It includes details such as role references, subject kinds, subject names, and namespaces.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882724/notes-assets/images/OpenShift-4-Demo-RBAC/openshift-role-bindings-viewer-list.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift interface displaying a list of role bindings filtered by the name "viewer." It includes details such as role references, subject kinds, subject names, and namespaces.](https://kodekloud.com/kk-media/image/upload/v1752882724/notes-assets/images/OpenShift-4-Demo-RBAC/openshift-role-bindings-viewer-list.jpg)
 
-<Callout icon="lightbulb">
-  This lesson demonstrated how to:
+> **lightbulb** This lesson demonstrated how to:
 
   1. Create a namespaced role with specific permissions (e.g., view pods).
   2. Set up a service account in the designated namespace.
   3. Bind the service account to the role with a role binding.
-</Callout>
 
 By following these steps, you ensure that a service account like **podviewer** is accurately associated with a role that defines its permissions, thereby streamlining access control within your cluster.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/88ef9cc2-5faa-41a3-9841-570f7b14a0a5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/88ef9cc2-5faa-41a3-9841-570f7b14a0a5)

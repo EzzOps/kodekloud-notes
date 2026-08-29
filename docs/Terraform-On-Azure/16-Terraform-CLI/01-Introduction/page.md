@@ -29,9 +29,7 @@ az ad sp create-for-rbac --name "tf-sp-automation" --role Contributor --scopes /
 
 * Managed identity (when Terraform runs from Azure-hosted compute)
 
-<Callout icon="lightbulb">
-  Common authentication options include interactive `az login` for local development, a service principal for automated pipelines, and managed identities when running from Azure-hosted compute.
-</Callout>
+> **lightbulb** Common authentication options include interactive `az login` for local development, a service principal for automated pipelines, and managed identities when running from Azure-hosted compute.
 
 Choose the method that matches your workflow and security requirements. For CI/CD, use a service principal with least-privilege role assignments and store credentials in your pipeline secret store.
 
@@ -69,9 +67,7 @@ With your environment configured and authentication in place, proceed to create 
 
 This prepares you for the hands-on modules where we’ll initialize a Terraform project, configure the AzureRM provider, and deploy basic infrastructure.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/db2adc19-fa48-4b03-9d9a-8ef71c4c28db/lesson/869116c0-840a-47cd-88cd-e91431d2016e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/db2adc19-fa48-4b03-9d9a-8ef71c4c28db/lesson/869116c0-840a-47cd-88cd-e91431d2016e)
 
 
 # Introduction
@@ -127,9 +123,7 @@ terraform fmt -recursive
 
 Run `terraform fmt` and `terraform validate` in CI pipelines and pre-commit hooks to ensure consistent formatting and to detect configuration issues before they reach shared environments.
 
-<Callout icon="lightbulb">
-  Run `terraform fmt` and `terraform validate` from the root of your configuration directory so they operate across the entire workspace. Integrating these commands into CI or a pre-commit hook reduces diff noise and catches mistakes early.
-</Callout>
+> **lightbulb** Run `terraform fmt` and `terraform validate` from the root of your configuration directory so they operate across the entire workspace. Integrating these commands into CI or a pre-commit hook reduces diff noise and catches mistakes early.
 
 ## 2. Reviewing deployed resources and exported values
 
@@ -223,9 +217,7 @@ Note: Older Terraform versions included a `terraform refresh` command to update 
 
 When changing state directly (for example using `terraform state mv`, `terraform state rm`, or manual edits), always make a backup of the state file or rely on backend versioning.
 
-<Callout icon="warning">
-  Be cautious when manipulating state directly. Always back up your state (or enable backend versioning) before performing state modifications such as `terraform state rm` or `terraform state mv`. Mistakes in state can lead to resource drift or accidental destruction.
-</Callout>
+> **warning** Be cautious when manipulating state directly. Always back up your state (or enable backend versioning) before performing state modifications such as `terraform state rm` or `terraform state mv`. Mistakes in state can lead to resource drift or accidental destruction.
 
 ## 5. Importing existing resources
 
@@ -261,6 +253,4 @@ Links and references:
 * Terraform CLI reference: [https://www.terraform.io/cli](https://www.terraform.io/cli)
 * Graphviz: [https://graphviz.org/](https://graphviz.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-on-azure/module/a87fc0ec-6ef6-409e-91cb-709bdcebb9eb/lesson/24376e48-7a91-47fe-84d6-f47a33552ae5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-on-azure/module/a87fc0ec-6ef6-409e-91cb-709bdcebb9eb/lesson/24376e48-7a91-47fe-84d6-f47a33552ae5)

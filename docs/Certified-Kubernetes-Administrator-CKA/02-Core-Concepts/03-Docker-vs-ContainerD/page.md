@@ -18,7 +18,7 @@ ContainerD, a CRI-compatible runtime, integrates directly with Kubernetes—elim
 
 The diagram below illustrates the relationship between Docker, Kubernetes, and alternative container runtimes (like rkt), highlighting components such as containerd, the Docker Shim, and the Container Runtime Interface (CRI).
 
-![The image illustrates the relationship between Docker, Kubernetes, and rkt, highlighting components like containerd, dockershim, and the Container Runtime Interface (CRI).](../../../../images/kodekloud.com/kk-media/image/upload/v1752869705/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Docker-vs-ContainerD/frame_190.jpg)
+![The image illustrates the relationship between Docker, Kubernetes, and rkt, highlighting components like containerd, dockershim, and the Container Runtime Interface (CRI).](https://kodekloud.com/kk-media/image/upload/v1752869705/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Docker-vs-ContainerD/frame_190.jpg)
 
 Within Docker, several components work together to provide its functionality:
 
@@ -46,7 +46,7 @@ bin/containerd
 
 Once installed, CTR can pull images and execute basic container operations. However, due to its debugging focus and limited functionality, CTR is not recommended for day-to-day container management.
 
-![The image describes the "ctr" CLI tool, bundled with containerD, as not user-friendly and supporting limited features, primarily for debugging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869706/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Docker-vs-ContainerD/frame_320.jpg)
+![The image describes the "ctr" CLI tool, bundled with containerD, as not user-friendly and supporting limited features, primarily for debugging.](https://kodekloud.com/kk-media/image/upload/v1752869706/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Docker-vs-ContainerD/frame_320.jpg)
 
 ### Using CTR
 
@@ -79,7 +79,7 @@ with the equivalent NerdCTL commands by simply substituting "docker" with "nerdc
 
 Another significant CLI utility is CRI CTL (crictl), designed to interact with any CRI-compatible container runtime, including ContainerD, Rocket, and others. Unlike CTR and NerdCTL—which are developed by the ContainerD community—crictl is maintained by the Kubernetes community and is primarily intended for debugging and inspection.
 
-![The image explains "crictl," a CLI for CRI-compatible container runtimes, used for inspecting and debugging, not creating containers, and works across different runtimes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869708/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Docker-vs-ContainerD/frame_470.jpg)
+![The image explains "crictl," a CLI for CRI-compatible container runtimes, used for inspecting and debugging, not creating containers, and works across different runtimes.](https://kodekloud.com/kk-media/image/upload/v1752869708/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Docker-vs-ContainerD/frame_470.jpg)
 
 Crictl is mainly used for tasks such as:
 
@@ -100,9 +100,9 @@ It is important to note that containers manually created using crictl may be rem
 
 A comparison between the Docker CLI and crictl shows many overlapping commands. Both tools support functions such as attach, exec, images, info, inspect, logs, ps, stats, and version, though there are differences in how they handle container creation and management.
 
-![The image compares Docker CLI and crictl commands, describing their functions and listing unsupported features for debugging information retrieval.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869709/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Docker-vs-ContainerD/frame_640.jpg)
+![The image compares Docker CLI and crictl commands, describing their functions and listing unsupported features for debugging information retrieval.](https://kodekloud.com/kk-media/image/upload/v1752869709/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Docker-vs-ContainerD/frame_640.jpg)
 
-![A comparison table of Docker CLI and crictl commands, showing descriptions and unsupported features for container management tasks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869710/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Docker-vs-ContainerD/frame_650.jpg)
+![A comparison table of Docker CLI and crictl commands, showing descriptions and unsupported features for container management tasks.](https://kodekloud.com/kk-media/image/upload/v1752869710/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Docker-vs-ContainerD/frame_650.jpg)
 
 ## Changes in Kubernetes Runtime Endpoints
 
@@ -130,7 +130,7 @@ For further details, refer to the [Kubernetes CLI Tools repository](https://gith
 * NerdCTL offers a Docker-like CLI for general-purpose container operations and advanced ContainerD features.
 * Crictl, maintained by the Kubernetes community, is designed for interacting with all CRI-compatible container runtimes and is mainly used for debugging and inspection.
 
-![The image compares container tools: ctr, nerdctl, and crictl, detailing their purposes, communities, and compatibility with ContainerD and Kubernetes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869712/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Docker-vs-ContainerD/frame_750.jpg)
+![The image compares container tools: ctr, nerdctl, and crictl, detailing their purposes, communities, and compatibility with ContainerD and Kubernetes.](https://kodekloud.com/kk-media/image/upload/v1752869712/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Docker-vs-ContainerD/frame_750.jpg)
 
 Each tool serves a distinct role within the container ecosystem. While CTR and crictl focus on debugging, NerdCTL is the recommended tool for routine container management tasks, offering a familiar interface for users transitioning from Docker CLI commands.
 

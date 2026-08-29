@@ -14,18 +14,14 @@ To achieve true Cloud Native autoscaling, three key elements are necessary:
 2. The autoscaling process must be automated, continuously monitoring workloads and provisioning resources without manual intervention.
 3. Autoscaling needs to be bidirectional, scaling up to handle increased load and scaling down during periods of reduced demand, which in turn improves cost efficiency.
 
-<Frame>
-  ![The image outlines three key factors of autoscaling: designed for scale, automatic, and bidirectional scaling, with simple icons illustrating the concept.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880468/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Autoscaling/frame_70.jpg)
-</Frame>
+![The image outlines three key factors of autoscaling: designed for scale, automatic, and bidirectional scaling, with simple icons illustrating the concept.](https://kodekloud.com/kk-media/image/upload/v1752880468/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Autoscaling/frame_70.jpg)
 
 Before diving deeper into Kubernetes autoscaling, it is important to understand two common scaling strategies:
 
 * **Vertical Scaling:** Involves increasing the resources (CPU, RAM, etc.) of an existing instance. While effective, it is typically constrained by the server's maximum capacity.
 * **Horizontal Scaling:** Focuses on adding more units—such as servers or instances—to distribute the load. This approach provides greater flexibility and enhanced fault tolerance.
 
-<Frame>
-  ![The image compares horizontal and vertical orientations, showing three vertically aligned rectangles labeled "Horizontal."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880469/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Autoscaling/frame_100.jpg)
-</Frame>
+![The image compares horizontal and vertical orientations, showing three vertically aligned rectangles labeled "Horizontal."](https://kodekloud.com/kk-media/image/upload/v1752880469/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Autoscaling/frame_100.jpg)
 
 Kubernetes offers three distinct autoscaling features to optimize resource management:
 
@@ -33,16 +29,10 @@ Kubernetes offers three distinct autoscaling features to optimize resource manag
 * **Vertical Pod Autoscaler (VPA):** Adjusts resource limits and requests for pods based on their actual consumption.
 * **Cluster Autoscaler:** Manages the overall cluster by adding or removing nodes in response to workload requirements.
 
-<Callout icon="lightbulb">
-  Understanding the differences between HPA, VPA, and Cluster Autoscaler is crucial for designing a robust and cost-effective Kubernetes architecture.
-</Callout>
+> **lightbulb** Understanding the differences between HPA, VPA, and Cluster Autoscaler is crucial for designing a robust and cost-effective Kubernetes architecture.
 
 Let's take a closer look at each autoscaling feature and understand how they contribute to a flexible, resilient cloud-native environment.
 
-<Frame>
-  ![The image explains Kubernetes Auto Scaling, listing Horizontal Pod Autoscaler, Vertical Pod Autoscaler, and Cluster Autoscaler, with simple diagrammatic representations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880470/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Autoscaling/frame_120.jpg)
-</Frame>
+![The image explains Kubernetes Auto Scaling, listing Horizontal Pod Autoscaler, Vertical Pod Autoscaler, and Cluster Autoscaler, with simple diagrammatic representations.](https://kodekloud.com/kk-media/image/upload/v1752880470/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-Autoscaling/frame_120.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/c5b96591-7106-4a51-abe1-d77b53e1a92c/lesson/afb40a9c-585e-4c78-989e-c6b3cc2a8f5c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/c5b96591-7106-4a51-abe1-d77b53e1a92c/lesson/afb40a9c-585e-4c78-989e-c6b3cc2a8f5c)

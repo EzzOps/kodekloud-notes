@@ -12,7 +12,7 @@ Amazon EKS and ECS are well-known for deploying containerized applications in AW
 
 > **lightbulb** One significant advantage of using an EKS Anywhere cluster is its integration with the AWS-provided EKS dashboard. This dashboard centralizes monitoring, management, and real-time performance metrics, ensuring streamlined operations regardless of where your cluster is hosted.
 
-![The image illustrates the architecture of "EKS Anywhere," showing an EKS cluster in a data center connected to an AWS Cloud EKS dashboard.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864907/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECSEKS-Anywhere/eks-anywhere-architecture-diagram.jpg)
+![The image illustrates the architecture of "EKS Anywhere," showing an EKS cluster in a data center connected to an AWS Cloud EKS dashboard.](https://kodekloud.com/kk-media/image/upload/v1752864907/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECSEKS-Anywhere/eks-anywhere-architecture-diagram.jpg)
 
 ## Features of EKS Anywhere
 
@@ -24,7 +24,7 @@ Key features include:
 * Compatibility with on-premises infrastructure to meet legal and compliance mandates
 * Ability to leverage the same EKS distribution across various platforms
 
-![The image lists five features of EKS Anywhere: On-Premises Kubernetes, Consistent Kubernetes Experience, Hybrid Deployments, Support for Various Infrastructure, and Maintain Data Sovereignty.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864908/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECSEKS-Anywhere/eks-anywhere-features-list.jpg)
+![The image lists five features of EKS Anywhere: On-Premises Kubernetes, Consistent Kubernetes Experience, Hybrid Deployments, Support for Various Infrastructure, and Maintain Data Sovereignty.](https://kodekloud.com/kk-media/image/upload/v1752864908/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECSEKS-Anywhere/eks-anywhere-features-list.jpg)
 
 ## ECS Anywhere Overview
 
@@ -41,9 +41,9 @@ The following table summarizes the differences and similarities between EKS Anyw
 | Dashboard                  | AWS-provided EKS dashboard                       | Centralized ECS dashboard                                          |
 | Use Case                   | Hybrid cloud and on-premises Kubernetes clusters | Consistent AWS container management across diverse infrastructures |
 
-![The image illustrates an ECS (Elastic Container Service) cluster within a data center, featuring icons representing containers and servers. It also includes a connection to a document icon, suggesting data or configuration management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864909/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECSEKS-Anywhere/ecs-cluster-data-center-diagram.jpg)
+![The image illustrates an ECS (Elastic Container Service) cluster within a data center, featuring icons representing containers and servers. It also includes a connection to a document icon, suggesting data or configuration management.](https://kodekloud.com/kk-media/image/upload/v1752864909/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECSEKS-Anywhere/ecs-cluster-data-center-diagram.jpg)
 
-![The image lists features of ECS Anywhere, including on-premises container management, consistent AWS experience, ECS/SSM agents, support for various infrastructures, and an ECS Anywhere dashboard.](../../../../images/kodekloud.com/kk-media/image/upload/v1752864913/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECSEKS-Anywhere/ecs-anywhere-features-list.jpg)
+![The image lists features of ECS Anywhere, including on-premises container management, consistent AWS experience, ECS/SSM agents, support for various infrastructures, and an ECS Anywhere dashboard.](https://kodekloud.com/kk-media/image/upload/v1752864913/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-ECSEKS-Anywhere/ecs-anywhere-features-list.jpg)
 
 ## Final Thoughts
 

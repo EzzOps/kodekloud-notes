@@ -71,9 +71,7 @@ preconditions:
       value: "1Gi"
 ```
 
-<Callout icon="lightbulb">
-  Numeric and quantity operators understand Kubernetes resource units such as `Ki`, `Mi`, `Gi`, etc., so you can compare memory/CPU values directly.
-</Callout>
+> **lightbulb** Numeric and quantity operators understand Kubernetes resource units such as `Ki`, `Mi`, `Gi`, etc., so you can compare memory/CPU values directly.
 
 ## Wildcard and regex string matching
 
@@ -99,9 +97,7 @@ preconditions:
 
 Because the operator is `NotMatches` and the regex represents `*.mycompany.com`, the precondition is true only when the host does not match the company domain — effectively targeting external hosts.
 
-<Callout icon="warning">
-  When using regex in preconditions, remember to escape special characters (for example, `.` becomes `\\.` in YAML/regex) and validate your expression with a regex tester. Incorrect escaping can cause unexpected behavior or silent mismatches.
-</Callout>
+> **warning** When using regex in preconditions, remember to escape special characters (for example, `.` becomes `\\.` in YAML/regex) and validate your expression with a regex tester. Incorrect escaping can cause unexpected behavior or silent mismatches.
 
 ## Using `message` to debug failing preconditions
 
@@ -146,6 +142,4 @@ If `data.food` is `cheese` but `data.day` is `tuesday`, Kyverno logs will includ
 
 That’s it for this lesson — use these operators and patterns to make Kyverno preconditions precise, readable, and easier to debug.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/d1e63413-95a3-4e6c-8f97-3d1f2603cbfd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/d1e63413-95a3-4e6c-8f97-3d1f2603cbfd)

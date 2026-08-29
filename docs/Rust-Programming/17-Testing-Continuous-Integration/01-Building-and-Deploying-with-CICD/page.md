@@ -6,9 +6,7 @@ Learn to set up a CI/CD pipeline for Rust projects using GitHub Actions to autom
 
 In this lesson, we’ll show you how to set up a continuous integration and continuous deployment (CI/CD) pipeline specifically tailored for Rust projects. You will learn how to automate the building and testing of Rust applications using GitHub Actions, understand the importance of CI/CD pipelines, and implement them to ensure robust and reliable code deployment.
 
-<Frame>
-  ![The image is an agenda slide with a gradient background, listing three points: setting up a CI/CD pipeline, automating Rust application testing, and ensuring reliable code through automation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883995/notes-assets/images/Rust-Programming-Building-and-Deploying-with-CICD/ci-cd-pipeline-agenda-slide.jpg)
-</Frame>
+![The image is an agenda slide with a gradient background, listing three points: setting up a CI/CD pipeline, automating Rust application testing, and ensuring reliable code through automation.](https://kodekloud.com/kk-media/image/upload/v1752883995/notes-assets/images/Rust-Programming-Building-and-Deploying-with-CICD/ci-cd-pipeline-agenda-slide.jpg)
 
 ***
 
@@ -21,9 +19,7 @@ Continuous integration and continuous deployment are essential practices in mode
 * **Quality:** Automated tests catch issues early, reducing the likelihood of bugs reaching production.
 * **Collaboration:** CI/CD helps identify integration issues promptly, encouraging a coordinated development environment.
 
-<Frame>
-  ![The image outlines the benefits of CI/CD, highlighting consistency, speed, quality, and collaboration with brief descriptions for each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883996/notes-assets/images/Rust-Programming-Building-and-Deploying-with-CICD/ci-cd-benefits-consistency-speed-quality.jpg)
-</Frame>
+![The image outlines the benefits of CI/CD, highlighting consistency, speed, quality, and collaboration with brief descriptions for each.](https://kodekloud.com/kk-media/image/upload/v1752883996/notes-assets/images/Rust-Programming-Building-and-Deploying-with-CICD/ci-cd-benefits-consistency-speed-quality.jpg)
 
 ***
 
@@ -35,9 +31,7 @@ GitHub Actions is an integrated CI/CD platform within GitHub that simplifies the
 * **Jobs:** Individual tasks within a workflow, such as building or testing the project.
 * **Steps:** The specific commands or actions that make up a job.
 
-<Frame>
-  ![The image is a diagram explaining GitHub Actions, detailing the components: Workflows, Jobs, and Steps, with brief descriptions of each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883998/notes-assets/images/Rust-Programming-Building-and-Deploying-with-CICD/github-actions-diagram-workflows-jobs-steps.jpg)
-</Frame>
+![The image is a diagram explaining GitHub Actions, detailing the components: Workflows, Jobs, and Steps, with brief descriptions of each.](https://kodekloud.com/kk-media/image/upload/v1752883998/notes-assets/images/Rust-Programming-Building-and-Deploying-with-CICD/github-actions-diagram-workflows-jobs-steps.jpg)
 
 ***
 

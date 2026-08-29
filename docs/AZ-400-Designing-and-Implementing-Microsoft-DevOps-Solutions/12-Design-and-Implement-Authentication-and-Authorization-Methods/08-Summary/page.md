@@ -74,7 +74,7 @@ GitHub supports multiple auth methods for API access, Actions workflows, and int
 
 ## 3. Azure DevOps Authentication
 
-![The image is a slide titled "Implementing and Managing GitHub Authentication," listing topics such as understanding GITHUB\_TOKEN, personal access tokens, comparing authentication methods, and security best practices.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867602/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/implementing-managing-github-authentication-slide.jpg)
+![The image is a slide titled "Implementing and Managing GitHub Authentication," listing topics such as understanding GITHUB\_TOKEN, personal access tokens, comparing authentication methods, and security best practices.](https://kodekloud.com/kk-media/image/upload/v1752867602/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Summary/implementing-managing-github-authentication-slide.jpg)
 
 Azure DevOps pipelines and services require secure authentication to interact with Azure and external systems.
 

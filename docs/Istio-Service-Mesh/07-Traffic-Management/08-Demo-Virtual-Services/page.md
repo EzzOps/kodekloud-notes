@@ -25,9 +25,7 @@ destinationrule.networking.istio.io/ratings created
 destinationrule.networking.istio.io/details created
 ```
 
-<Callout icon="lightbulb">
-  Destination Rules allow Istio to control traffic policies for different versions (or subsets) of an application.
-</Callout>
+> **lightbulb** Destination Rules allow Istio to control traffic policies for different versions (or subsets) of an application.
 
 ──────────────────────────────
 
@@ -178,9 +176,7 @@ spec:
 
 After applying this change, monitor the application to notice the significant traffic shift toward version v1.
 
-<Callout icon="lightbulb">
-  Consider using load testing tools to generate sufficient traffic. This helps in accurately observing the effects of different weight distributions.
-</Callout>
+> **lightbulb** Consider using load testing tools to generate sufficient traffic. This helps in accurately observing the effects of different weight distributions.
 
 ──────────────────────────────
 
@@ -293,8 +289,6 @@ For more detailed information, refer to the following resources:
 
 Happy routing!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/d9b98caf-dee7-4478-939f-fb0304979832" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/d9b98caf-dee7-4478-939f-fb0304979832)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/9d5eeb1f-0f3f-4ae1-b4c9-9331cf619163" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/9d5eeb1f-0f3f-4ae1-b4c9-9331cf619163)

@@ -46,9 +46,7 @@ Created symlink /etc/systemd/system/default.target → /usr/lib/systemd/system/m
 [aaron@LFCS-CentOS ~]$
 ```
 
-<Callout icon="lightbulb">
-  In multi-user mode, you boot into a text-based interface where network services remain active, and multiple users can log in simultaneously.
-</Callout>
+> **lightbulb** In multi-user mode, you boot into a text-based interface where network services remain active, and multiple users can log in simultaneously.
 
 ## Booting into the Multi-User Target
 
@@ -113,9 +111,7 @@ To activate the rescue target:
 sudo systemctl isolate rescue.target
 ```
 
-<Callout icon="triangle-alert">
-  Ensure that a root password is set before using the emergency or rescue targets; without a root password, you won't be able to log in as root.
-</Callout>
+> **triangle-alert** Ensure that a root password is set before using the emergency or rescue targets; without a root password, you won't be able to log in as root.
 
 ## Restoring the Graphical Boot Target
 
@@ -140,6 +136,4 @@ For more information on systemd and Linux boot processes, consider exploring add
 * [Linux Administration Guides](https://www.linux.com/learn/linux-administration/)
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/d8f4e292-d04d-4fe4-931b-72d5b672b731" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/b8d0f7c7-7710-42e5-a184-787d78d41e6f/lesson/d8f4e292-d04d-4fe4-931b-72d5b672b731)

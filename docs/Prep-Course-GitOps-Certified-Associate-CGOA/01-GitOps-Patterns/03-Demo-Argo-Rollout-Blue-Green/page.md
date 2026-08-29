@@ -214,9 +214,7 @@ Or, if using the generic format with a placeholder, run:
 
 Promotion updates the Service selector behind `activeService` so production traffic shifts to green.
 
-<Callout icon="warning">
-  Promoting switches production traffic to the promoted ReplicaSet. Ensure you have validated the preview version before promoting. If `autoPromotionEnabled` is enabled or omitted, promotion can occur automatically once the new ReplicaSet is ready.
-</Callout>
+> **warning** Promoting switches production traffic to the promoted ReplicaSet. Ensure you have validated the preview version before promoting. If `autoPromotionEnabled` is enabled or omitted, promotion can occur automatically once the new ReplicaSet is ready.
 
 Once promoted, the UI and Services will show the new version as active.
 
@@ -238,9 +236,7 @@ Typical rollback sequence:
   <img alt="The image shows a user interface for Argo Rollouts with a blue-green deployment strategy. It displays two revisions, with the second revision marked as stable and active." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Preview Service is optional — include it when you want to route test traffic to the new ReplicaSet without affecting production traffic. If `autoPromotionEnabled` is true (or omitted), promotion happens automatically once the new ReplicaSet is ready.
-</Callout>
+> **lightbulb** Preview Service is optional — include it when you want to route test traffic to the new ReplicaSet without affecting production traffic. If `autoPromotionEnabled` is true (or omitted), promotion happens automatically once the new ReplicaSet is ready.
 
 ## Quick reference
 
@@ -261,6 +257,4 @@ Typical rollback sequence:
 
 That's it — Argo Rollouts’ blue-green strategy gives you a controlled way to deploy, test, promote, and rollback application versions by manipulating ReplicaSets and Services.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/96ccbcfe-8432-4292-b797-10ff9845d3d2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/f1538ace-dc97-454d-b894-15bdd35bcb64/lesson/96ccbcfe-8432-4292-b797-10ff9845d3d2)

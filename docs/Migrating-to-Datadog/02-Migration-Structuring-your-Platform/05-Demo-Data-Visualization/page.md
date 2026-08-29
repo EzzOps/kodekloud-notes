@@ -153,17 +153,13 @@ kubectl apply -f datadog-agent.yaml
 
 If the Agents start without a valid secret or with an incorrect secret reference, they will fail to authenticate. Use `kubectl logs` on the Agent pods to diagnose authentication errors.
 
-<Callout icon="warning">
-  Ensure the secret name and key in the DatadogAgent manifest match the actual Kubernetes secret. Missing or incorrect API key references will prevent the Agent from sending telemetry.
-</Callout>
+> **warning** Ensure the secret name and key in the DatadogAgent manifest match the actual Kubernetes secret. Missing or incorrect API key references will prevent the Agent from sending telemetry.
 
 ## Application instrumentation (Node.js)
 
 This demo uses a simple Node.js REST API with three routes. To enable Datadog tracing for Node.js, install `dd-trace` and initialize it as early as possible — before other imports or application initialization.
 
-<Callout icon="lightbulb">
-  Always require and initialize `dd-trace` at the top of your application entrypoint (before requiring frameworks like `express`) so auto-instrumentation captures requests and internal spans.
-</Callout>
+> **lightbulb** Always require and initialize `dd-trace` at the top of your application entrypoint (before requiring frameworks like `express`) so auto-instrumentation captures requests and internal spans.
 
 Example `index.js` (tracing + basic routes):
 
@@ -376,9 +372,7 @@ Links and references
 * Kubernetes Basics: [https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * k3d: [https://k3d.io/](https://k3d.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/b0118949-6f1c-4ae5-8c71-353a44bee142" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/b0118949-6f1c-4ae5-8c71-353a44bee142)
 
 
 # Demo Data Visualization
@@ -403,9 +397,7 @@ This demo environment reports only standard metrics via the Datadog Agent. There
 
 Standard metrics are typically collected by Datadog agents or integrations and usually do not incur additional per-metric costs. Custom metrics (user-created or high-cardinality metrics) can increase billing, so controlling which tags and metrics you emit is important for cost management and platform health.
 
-<Callout icon="lightbulb">
-  Pay attention to tag cardinality: reducing unnecessary high-cardinality tags (for example, unique container IDs) helps control custom metric growth and platform costs.
-</Callout>
+> **lightbulb** Pay attention to tag cardinality: reducing unnecessary high-cardinality tags (for example, unique container IDs) helps control custom metric growth and platform costs.
 
 ## Metrics by source
 
@@ -425,9 +417,7 @@ Further options list additional metric sources (logs, APM, RUM, processes, event
 
 Datadog alerts you to tag growth because many metrics are created with default tags. Excessive tag cardinality increases ingestion and indexing volume. Where appropriate, remove low-value tags (especially on custom metrics) and prefer higher-level aggregation tags like `kube_namespace`, `kube_deployment`, or `service`.
 
-<Callout icon="warning">
-  Before removing tags, verify Related Assets (dashboards, monitors, alerts) that depend on them — deleting tags can break visualizations and alerts that rely on those tag dimensions.
-</Callout>
+> **warning** Before removing tags, verify Related Assets (dashboards, monitors, alerts) that depend on them — deleting tags can break visualizations and alerts that rely on those tag dimensions.
 
 ## Metrics Summary
 
@@ -567,6 +557,4 @@ Explore these tools to design dashboards and alerts that meet your operational r
 * Datadog APM documentation: [https://docs.datadoghq.com/tracing/](https://docs.datadoghq.com/tracing/)
 * Kubernetes Basics: [https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/cd6bf4bf-a3bf-477b-9880-1757ec0eb4e8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/fd555480-82df-40f4-b8ad-2ea920d51077/lesson/cd6bf4bf-a3bf-477b-9880-1757ec0eb4e8)

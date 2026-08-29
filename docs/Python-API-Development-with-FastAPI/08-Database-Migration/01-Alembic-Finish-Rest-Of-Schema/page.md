@@ -12,9 +12,7 @@ In this guide, we will walk through how to complete your database schema using A
 
 After successfully creating the posts table, the next step is implementing user functionality by creating a users table. This table will allow users to register and log in.
 
-<Callout icon="lightbulb">
-  Before proceeding, ensure that your existing posts table is functioning correctly.
-</Callout>
+> **lightbulb** Before proceeding, ensure that your existing posts table is functioning correctly.
 
 First, we add a new column to the posts table by executing the following migration:
 

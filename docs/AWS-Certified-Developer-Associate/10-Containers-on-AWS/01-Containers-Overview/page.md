@@ -6,7 +6,7 @@ This article explores containers and AWS services for deploying and managing con
 
 In this lesson, we explore containers and the AWS services that help deploy and manage containerized applications. Containers package an application along with all its required code, libraries, and dependencies, ensuring seamless deployment across any environment without additional configuration. Essentially, containers are lightweight versions of virtual machines.
 
-![The image explains what containers are, highlighting their role in packaging applications with necessary files and dependencies, and compares them to lightweight virtual machines. It includes a diagram illustrating containers and their deployment on machines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858493/notes-assets/images/AWS-Certified-Developer-Associate-Containers-Overview/containers-packaging-diagram.jpg)
+![The image explains what containers are, highlighting their role in packaging applications with necessary files and dependencies, and compares them to lightweight virtual machines. It includes a diagram illustrating containers and their deployment on machines.](https://kodekloud.com/kk-media/image/upload/v1752858493/notes-assets/images/AWS-Certified-Developer-Associate-Containers-Overview/containers-packaging-diagram.jpg)
 
 Deploying applications using containers introduces challenges similar to traditional deployments. For instance, hosting an application on a single physical machine can create a single point of failure. To ensure reliability, applications must be distributed across multiple servers, and user traffic should be load balanced across all container instances.
 
@@ -14,7 +14,7 @@ Containerized applications often comprise multiple components and services distr
 
 During periods of high traffic, systems should automatically scale container instances up or down based on demand.
 
-![The image illustrates container challenges, showing multiple hosts with containers and a problematic host with a container error.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858494/notes-assets/images/AWS-Certified-Developer-Associate-Containers-Overview/container-challenges-multiple-hosts.jpg)
+![The image illustrates container challenges, showing multiple hosts with containers and a problematic host with a container error.](https://kodekloud.com/kk-media/image/upload/v1752858494/notes-assets/images/AWS-Certified-Developer-Associate-Containers-Overview/container-challenges-multiple-hosts.jpg)
 
 > **lightbulb** * **Distribution:** Applications must be segmented across multiple servers to prevent single points of failure.
   * **Load Balancing:** User traffic needs to be evenly distributed across container instances.
@@ -32,7 +32,7 @@ These challenges lead to the necessity of a container orchestrator—an intellig
 
 Several container orchestrators are available, such as [Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) (a popular open source option), Apache Mesos, and AWS-specific services like [Amazon ECS](https://learn.kodekloud.com/user/courses/amazon-elastic-container-service-aws-ecs).
 
-![The image is an infographic about container orchestrators, featuring Kubernetes, Apache Mesos, and ECS, along with their responsibilities such as deploying containers, load-balancing, and restarting failed containers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858496/notes-assets/images/AWS-Certified-Developer-Associate-Containers-Overview/container-orchestrators-infographic.jpg)
+![The image is an infographic about container orchestrators, featuring Kubernetes, Apache Mesos, and ECS, along with their responsibilities such as deploying containers, load-balancing, and restarting failed containers.](https://kodekloud.com/kk-media/image/upload/v1752858496/notes-assets/images/AWS-Certified-Developer-Associate-Containers-Overview/container-orchestrators-infographic.jpg)
 
 In the following sections, we will delve deeper into the container ecosystem, examining various features, services, and supporting technologies like managed container registries for storing container images.
 

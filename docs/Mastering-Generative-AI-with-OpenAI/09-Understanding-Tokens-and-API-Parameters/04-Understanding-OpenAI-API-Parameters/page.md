@@ -41,9 +41,7 @@ While `model` and `messages` are the only required fields, the full API offers m
 * **model**: Choose an engine (e.g. `gpt-3.5-turbo`, `gpt-4`).
 * **messages**: An ordered list of `{role, content}` objects. Roles include:
 
-<Frame>
-  ![The image illustrates the three roles of chart completion models: System, Assistant, and User, each represented by a distinct icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881567/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Understanding-OpenAI-API-Parameters/chart-completion-models-roles-icons.jpg)
-</Frame>
+![The image illustrates the three roles of chart completion models: System, Assistant, and User, each represented by a distinct icon.](https://kodekloud.com/kk-media/image/upload/v1752881567/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Understanding-OpenAI-API-Parameters/chart-completion-models-roles-icons.jpg)
 
 | Role      | Purpose                                             |
 | --------- | --------------------------------------------------- |
@@ -62,9 +60,7 @@ Both control how “creative” the output can be. Adjust **one** at a time for 
   * Also called “nucleus sampling.”
   * Model only considers tokens whose cumulative probability ≤ top\_p.
 
-<Callout icon="lightbulb">
-  If you need repeatable outputs, set `temperature=0` and `top_p=0`. For open-ended tasks, start with `temperature=0.7` and `top_p=0.9`.
-</Callout>
+> **lightbulb** If you need repeatable outputs, set `temperature=0` and `top_p=0`. For open-ended tasks, start with `temperature=0.7` and `top_p=0.9`.
 
 ### 3. n (number of completions)
 
@@ -76,9 +72,7 @@ Limits the length of the completion. Remember:
 
 * `prompt_tokens + max_tokens` ≤ model context window (e.g. 4096 for `gpt-3.5-turbo`).
 
-<Callout icon="triangle-alert">
-  If you exceed the context window, the API will return an error. Always calculate prompt size before setting `max_tokens`.
-</Callout>
+> **triangle-alert** If you exceed the context window, the API will return an error. Always calculate prompt size before setting `max_tokens`.
 
 ### 5. presence\_penalty vs. frequency\_penalty
 
@@ -87,17 +81,13 @@ Prevent the model from repeating itself:
 * **presence\_penalty** (–2.0 to 2.0): Encourages new topics by penalizing tokens that have appeared at all.
 * **frequency\_penalty** (–2.0 to 2.0): Penalizes tokens proportionally to how often they’ve already appeared.
 
-<Frame>
-  ![The image is a table outlining key parameters of a Completion API, including columns for parameter names, possible/default values, ranges, whether they are required, and descriptions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881568/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Understanding-OpenAI-API-Parameters/completion-api-parameters-table.jpg)
-</Frame>
+![The image is a table outlining key parameters of a Completion API, including columns for parameter names, possible/default values, ranges, whether they are required, and descriptions.](https://kodekloud.com/kk-media/image/upload/v1752881568/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Understanding-OpenAI-API-Parameters/completion-api-parameters-table.jpg)
 
 ## Interactive Exploration with the Playground
 
 Experiment with all of these settings in real time:
 
-<Frame>
-  ![The image shows the OpenAI Playground interface, featuring sections for entering system and user messages, along with settings for model parameters like temperature and maximum length.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881569/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Understanding-OpenAI-API-Parameters/openai-playground-interface-settings-diagram.jpg)
-</Frame>
+![The image shows the OpenAI Playground interface, featuring sections for entering system and user messages, along with settings for model parameters like temperature and maximum length.](https://kodekloud.com/kk-media/image/upload/v1752881569/notes-assets/images/Mastering-Generative-AI-with-OpenAI-Understanding-OpenAI-API-Parameters/openai-playground-interface-settings-diagram.jpg)
 
 Head over to the [OpenAI Playground](https://platform.openai.com/playground) to tweak parameters and see instant feedback.
 

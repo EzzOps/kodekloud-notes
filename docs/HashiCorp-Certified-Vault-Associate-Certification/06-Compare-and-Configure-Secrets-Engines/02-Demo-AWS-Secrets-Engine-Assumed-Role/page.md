@@ -89,9 +89,7 @@ In Account B, you will create an IAM policy and role that Vault in Account A can
 
 ### 2.1 Inspect Existing Role (Optional)
 
-<Frame>
-  ![The image shows an AWS Identity and Access Management (IAM) console displaying the summary of a role, including its permissions policies and details like Role ARN, creation time, and maximum session duration.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878052/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-Assumed-Role/aws-iam-role-summary-permissions-details.jpg)
-</Frame>
+![The image shows an AWS Identity and Access Management (IAM) console displaying the summary of a role, including its permissions policies and details like Role ARN, creation time, and maximum session duration.](https://kodekloud.com/kk-media/image/upload/v1752878052/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-Assumed-Role/aws-iam-role-summary-permissions-details.jpg)
 
 ### 2.2 Create a Customer-Managed Policy
 
@@ -123,9 +121,7 @@ Navigate to **IAM > Policies > Create policy** in the AWS Console and add S3 acc
 }
 ```
 
-<Frame>
-  ![The image shows the AWS Identity and Access Management (IAM) Management Console with a focus on the "Policies" section, displaying two customer-managed policies related to "vault."](../../../../images/kodekloud.com/kk-media/image/upload/v1752878053/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-Assumed-Role/aws-iam-management-console-policies-vault.jpg)
-</Frame>
+![The image shows the AWS Identity and Access Management (IAM) Management Console with a focus on the "Policies" section, displaying two customer-managed policies related to "vault."](https://kodekloud.com/kk-media/image/upload/v1752878053/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-Assumed-Role/aws-iam-management-console-policies-vault.jpg)
 
 ### 2.3 Create a Role Trusted by Vault’s Account
 
@@ -134,13 +130,9 @@ Navigate to **IAM > Policies > Create policy** in the AWS Console and add S3 acc
 3. Attach the policy you just created (e.g., **vault-role-bucket-access**).
 4. Name the role `vault-role-bucket-access` and complete creation.
 
-<Frame>
-  ![The image shows an AWS IAM Management Console screen for creating a role, with options to select the type of trusted entity and choose a use case. In the background, there is a terminal window with some text.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878055/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-Assumed-Role/aws-iam-management-console-create-role.jpg)
-</Frame>
+![The image shows an AWS IAM Management Console screen for creating a role, with options to select the type of trusted entity and choose a use case. In the background, there is a terminal window with some text.](https://kodekloud.com/kk-media/image/upload/v1752878055/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-Assumed-Role/aws-iam-management-console-create-role.jpg)
 
-<Frame>
-  ![The image shows an AWS IAM Management Console screen where a user is creating a role by selecting a trusted entity type, specifically another AWS account. The background displays a terminal window with some text.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878056/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-Assumed-Role/aws-iam-console-create-role-account.jpg)
-</Frame>
+![The image shows an AWS IAM Management Console screen where a user is creating a role by selecting a trusted entity type, specifically another AWS account. The background displays a terminal window with some text.](https://kodekloud.com/kk-media/image/upload/v1752878056/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-Assumed-Role/aws-iam-console-create-role-account.jpg)
 
 ***
 
@@ -179,9 +171,7 @@ terraform apply
 Apply complete! Resources: 0 added, 1 changed, 0 destroyed.
 ```
 
-<Callout icon="lightbulb">
-  To support multiple target roles or accounts, add additional role ARNs to the `Resource` array in the `PermitAccessToCrossAccountRole` statement.
-</Callout>
+> **lightbulb** To support multiple target roles or accounts, add additional role ARNs to the `Resource` array in the `PermitAccessToCrossAccountRole` statement.
 
 ***
 
@@ -252,9 +242,7 @@ Success! Data written to: aws/roles/s3_access
 
 ## 6. Flowchart
 
-<Frame>
-  ![The image is a flowchart illustrating the "Assumed\_Role Method" for managing dynamic secrets with AWS, detailing the process of requesting, generating, and revoking AWS credentials using Vault and AWS STS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878060/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-Assumed-Role/assumed-role-method-aws-secrets-flowchart.jpg)
-</Frame>
+![The image is a flowchart illustrating the "Assumed\_Role Method" for managing dynamic secrets with AWS, detailing the process of requesting, generating, and revoking AWS credentials using Vault and AWS STS.](https://kodekloud.com/kk-media/image/upload/v1752878060/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Demo-AWS-Secrets-Engine-Assumed-Role/assumed-role-method-aws-secrets-flowchart.jpg)
 
 ***
 
@@ -270,6 +258,4 @@ You have successfully configured Vault’s AWS Secrets Engine to assume a role i
 * [AWS Security Token Service (STS)](https://docs.aws.amazon.com/STS/latest/APIReference/)
 * [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/1749ccdd-f4a7-4d5c-bc1e-08996a004846" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/cb962cde-84d3-4b26-8875-e8f093d77244/lesson/1749ccdd-f4a7-4d5c-bc1e-08996a004846)

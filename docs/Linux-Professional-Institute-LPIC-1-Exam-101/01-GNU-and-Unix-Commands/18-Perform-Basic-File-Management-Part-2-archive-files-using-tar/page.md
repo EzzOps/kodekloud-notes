@@ -30,9 +30,7 @@ rsync [options] [source/] [user@remote_host:/path/to/destination/]
 | `-h`   | Human-readable numbers                                               |
 | `-P`   | Show progress and keep partially transferred files                   |
 
-<Callout icon="lightbulb">
-  Always include a trailing slash on the source directory (`source/`) to copy **its contents** rather than the directory itself.
-</Callout>
+> **lightbulb** Always include a trailing slash on the source directory (`source/`) to copy **its contents** rather than the directory itself.
 
 ### Examples
 
@@ -60,13 +58,11 @@ rsync -avh /path/to/source/ /path/to/destination/
 
 The `dd` command performs a low-level copy of a disk or partition, producing an exact image file. This is ideal for full-system backups or forensic duplication.
 
-<Callout icon="triangle-alert">
-  Before imaging, **unmount** the target partition or disk to prevent data corruption:
+> **triangle-alert** Before imaging, **unmount** the target partition or disk to prevent data corruption:
 
   ```bash theme={null}
   sudo umount /dev/vda1
   ```
-</Callout>
 
 ### Basic dd Command
 
@@ -96,9 +92,7 @@ To write the image back to a disk (this **will overwrite** the target):
 sudo dd if=diskimage.raw of=/dev/vda bs=1M status=progress
 ```
 
-<Callout icon="triangle-alert">
-  Ensure you specify the correct `of=` target. Writing to the wrong device can destroy your data.
-</Callout>
+> **triangle-alert** Ensure you specify the correct `of=` target. Writing to the wrong device can destroy your data.
 
 ***
 
@@ -118,6 +112,4 @@ Continue your journey in Linux file management:
 * [dd (Linux) Manual](https://man7.org/linux/man-pages/man1/dd.1.html)
 * [Linux Backup Strategies](https://linuxconfig.org/linux-backup-and-recovery)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/23101857-c3fb-4384-bd5c-b2b8e9289e36" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/2490f961-886c-4531-be8c-915cccff60a9/lesson/23101857-c3fb-4384-bd5c-b2b8e9289e36)

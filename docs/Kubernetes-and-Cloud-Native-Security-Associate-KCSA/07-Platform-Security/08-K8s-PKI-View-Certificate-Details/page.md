@@ -14,9 +14,7 @@ etcd:
   --peer-trusted-ca-file=/path-to-certs/ca.crt
 ```
 
-<Frame>
-  ![The image illustrates the structure of ETCD servers and peers, showing certificates and keys for secure communication. It includes a visual representation of a certificate labeled "ETCD-SERVER."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880887/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-K8s-PKI-Certificate-Creation/etcd-servers-peers-structure-diagram.jpg)
-</Frame>
+![The image illustrates the structure of ETCD servers and peers, showing certificates and keys for secure communication. It includes a visual representation of a certificate labeled "ETCD-SERVER."](https://kodekloud.com/kk-media/image/upload/v1752880887/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-K8s-PKI-Certificate-Creation/etcd-servers-peers-structure-diagram.jpg)
 
 ### 4.2 kube-apiserver
 
@@ -55,9 +53,7 @@ openssl x509 -req -in apiserver.csr \
   -out apiserver.crt
 ```
 
-<Frame>
-  ![The image shows a digital certificate for a Kube API server, including details like IP addresses and a key icon representing security credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880888/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-K8s-PKI-Certificate-Creation/kube-api-server-digital-certificate.jpg)
-</Frame>
+![The image shows a digital certificate for a Kube API server, including details like IP addresses and a key icon representing security credentials.](https://kodekloud.com/kk-media/image/upload/v1752880888/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-K8s-PKI-Certificate-Creation/kube-api-server-digital-certificate.jpg)
 
 Configure the API server service:
 
@@ -119,9 +115,7 @@ tlsCertFile: "/var/lib/kubelet/kubelet-node01.crt"
 tlsPrivateKeyFile: "/var/lib/kubelet/kubelet-node01.key"
 ```
 
-<Frame>
-  ![The image shows a diagram of Kubernetes nodes with client certificates for three nodes (node01, node02, node03) under the "KUBECTL NODES (CLIENT CERT)" heading, illustrating their authentication setup.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880889/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-K8s-PKI-Certificate-Creation/kubernetes-nodes-client-certificates-diagram.jpg)
-</Frame>
+![The image shows a diagram of Kubernetes nodes with client certificates for three nodes (node01, node02, node03) under the "KUBECTL NODES (CLIENT CERT)" heading, illustrating their authentication setup.](https://kodekloud.com/kk-media/image/upload/v1752880889/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-K8s-PKI-Certificate-Creation/kubernetes-nodes-client-certificates-diagram.jpg)
 
 ***
 
@@ -133,9 +127,7 @@ That completes the Kubernetes PKI certificate generation process. For automation
 * [OpenSSL Documentation](https://www.openssl.org/docs/)
 * [Kubernetes Certificates with kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-certs/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/1ec5483f-4641-4e58-af0c-a9b5b2b1357f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/1ec5483f-4641-4e58-af0c-a9b5b2b1357f)
 
 
 # K8s PKI View Certificate Details
@@ -213,9 +205,7 @@ Extract every file path ending in `.crt`, `.key`, or `.pem` from service units o
 | .key           | Private key                |
 | .pem           | Certificate or private key |
 
-<Callout icon="lightbulb">
-  Track each certificate’s path along with its Common Name (CN), Subject Alternative Names (SANs), issuer, organization (O), and expiration date.
-</Callout>
+> **lightbulb** Track each certificate’s path along with its Common Name (CN), Subject Alternative Names (SANs), issuer, organization (O), and expiration date.
 
 ## 3. Inspect Certificates with OpenSSL
 
@@ -232,17 +222,13 @@ Key fields to verify:
 * **Issuer**: usually the Kubernetes CA (`O=kubernetes`)
 * **Validity**: check `Not Before` and `Not After` dates for expiry
 
-<Callout icon="triangle-alert">
-  Expired or misconfigured certificates can prevent API server communication. Always verify the `Not After` date to avoid downtime!
-</Callout>
+> **triangle-alert** Expired or misconfigured certificates can prevent API server communication. Always verify the `Not After` date to avoid downtime!
 
 ## 4. Document Certificate Metadata
 
 Organize certificate details in a spreadsheet or table for easy tracking. An example layout:
 
-<Frame>
-  ![The image shows a table listing Kubernetes certificate details, including paths, common names, alternative names, organizations, issuers, and expiration dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880891/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-K8s-PKI-View-Certificate-Details/kubernetes-certificate-details-table.jpg)
-</Frame>
+![The image shows a table listing Kubernetes certificate details, including paths, common names, alternative names, organizations, issuers, and expiration dates.](https://kodekloud.com/kk-media/image/upload/v1752880891/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-K8s-PKI-View-Certificate-Details/kubernetes-certificate-details-table.jpg)
 
 Refer to the [official Kubernetes certificates documentation](https://kubernetes.io/docs/concepts/cluster-administration/certificates/) for certificate requirements and best practices.
 
@@ -286,8 +272,6 @@ docker logs <container-id>
 * [OpenSSL x509 Documentation](https://www.openssl.org/docs/man1.1.1/man1/openssl-x509.html)
 * [kubeadm Init Certificates](https://kubernetes.io/docs/reference/setup-tools/kubeadm/kubeadm-init/#certificate-key)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/51d1ce51-9556-426f-96ef-813db6a288b4" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/51d1ce51-9556-426f-96ef-813db6a288b4)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/9c9acf86-2ae2-417b-9f84-c6a476e6edf5" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/9c9acf86-2ae2-417b-9f84-c6a476e6edf5)

@@ -174,9 +174,7 @@ Successfully removed 1 resource instance(s).
 Releasing state lock. This may take a few moments...
 ```
 
-<Callout icon="lightbulb">
-  After removing a resource from the state, remember to also delete or comment out the corresponding resource block in your Terraform configuration file.
-</Callout>
+> **lightbulb** After removing a resource from the state, remember to also delete or comment out the corresponding resource block in your Terraform configuration file.
 
 ***
 
@@ -184,8 +182,6 @@ That concludes this lesson on Terraform state commands. In the next section, you
 
 For more information about Terraform and managing infrastructure as code, be sure to explore the [Terraform Documentation](https://www.terraform.io/docs).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9464f9ce-236c-4f22-a61b-5398307b47b4/lesson/d02940a3-5096-4afc-8114-0110e408380c" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9464f9ce-236c-4f22-a61b-5398307b47b4/lesson/d02940a3-5096-4afc-8114-0110e408380c)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9464f9ce-236c-4f22-a61b-5398307b47b4/lesson/63df6255-7f16-4936-9c6f-e294280fb244" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/9464f9ce-236c-4f22-a61b-5398307b47b4/lesson/63df6255-7f16-4936-9c6f-e294280fb244)

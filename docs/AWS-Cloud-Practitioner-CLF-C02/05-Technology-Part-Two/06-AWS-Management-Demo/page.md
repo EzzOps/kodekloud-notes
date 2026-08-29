@@ -8,7 +8,7 @@ Hi, welcome back Cloud Practitioners!
 
 In this lesson, we will walk through a short demo of AWS CloudFormation—a service that accelerates cloud provisioning by defining your infrastructure as code. Essentially, you create a YAML or JSON file that describes the desired AWS resources, and CloudFormation uses that file to automatically provision and configure them.
 
-![The image explains AWS CloudFormation's process: coding infrastructure, using Amazon S3, deploying with CloudFormation, and outputting resources. It highlights use cases like DevOps management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862254/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Management-Demo/frame_40.jpg)
+![The image explains AWS CloudFormation's process: coding infrastructure, using Amazon S3, deploying with CloudFormation, and outputting resources. It highlights use cases like DevOps management.](https://kodekloud.com/kk-media/image/upload/v1752862254/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Management-Demo/frame_40.jpg)
 
 Let's dive into a simple CloudFormation example.
 
@@ -45,25 +45,25 @@ Switch to the AWS Management Console and navigate to the CloudFormation service.
 2. Select "Upload a template file" and click "Choose file" to locate your simple S3 bucket template.
 3. After uploading, click "Next."
 
-![The image shows an AWS CloudFormation interface for creating a stack, with options to prepare and specify a template using a JSON or YAML file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862257/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Management-Demo/frame_130.jpg)
+![The image shows an AWS CloudFormation interface for creating a stack, with options to prepare and specify a template using a JSON or YAML file.](https://kodekloud.com/kk-media/image/upload/v1752862257/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Management-Demo/frame_130.jpg)
 
 Assign a stack name, such as "mys3demostack." Since the template contains no parameters, simply click "Next."
 
-![The image shows an AWS CloudFormation interface for specifying stack details, with a stack named "mys3demostack" and no parameters defined.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862259/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Management-Demo/frame_150.jpg)
+![The image shows an AWS CloudFormation interface for specifying stack details, with a stack named "mys3demostack" and no parameters defined.](https://kodekloud.com/kk-media/image/upload/v1752862259/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Management-Demo/frame_150.jpg)
 
 Scroll down, click "Next" again, then confirm your settings and submit your stack creation request. The simple five-line template starts provisioning your defined S3 bucket.
 
 You can monitor the progress in the CloudFormation stack’s Events tab, which logs each action during the creation process. In a separate tab, navigate to the Amazon S3 dashboard to verify the presence of your new bucket. Even if there was a previously created demo bucket, the new bucket—named as per your file—should now appear.
 
-![The image shows an Amazon S3 management console with a list of buckets, their regions, access settings, and creation dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862261/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Management-Demo/frame_200.jpg)
+![The image shows an Amazon S3 management console with a list of buckets, their regions, access settings, and creation dates.](https://kodekloud.com/kk-media/image/upload/v1752862261/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Management-Demo/frame_200.jpg)
 
 After refreshing your CloudFormation stack view, you should see that the bucket creation is complete. To confirm, switch back to the S3 console and refresh the page—your bucket (for example, "2023-06-19-777") should be visible.
 
-![The image shows an Amazon S3 dashboard listing multiple buckets, their regions, access settings, and creation dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862263/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Management-Demo/frame_240.jpg)
+![The image shows an Amazon S3 dashboard listing multiple buckets, their regions, access settings, and creation dates.](https://kodekloud.com/kk-media/image/upload/v1752862263/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Management-Demo/frame_240.jpg)
 
 Since no objects have been uploaded to the bucket, its contents appear empty. More advanced CloudFormation templates can include Outputs or even automatically create and manage objects within the bucket, but this simple example clearly illustrates the foundational process.
 
-![The image shows an Amazon S3 bucket interface named "mydemobucket20230619777" with no objects uploaded. Options for uploading and managing files are visible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862265/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Management-Demo/frame_250.jpg)
+![The image shows an Amazon S3 bucket interface named "mydemobucket20230619777" with no objects uploaded. Options for uploading and managing files are visible.](https://kodekloud.com/kk-media/image/upload/v1752862265/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Management-Demo/frame_250.jpg)
 
 > **lightbulb** With just a few lines of YAML, CloudFormation allows you to deploy and manage AWS resources effortlessly.
 
@@ -142,7 +142,7 @@ To remove the resources created by your CloudFormation stack, return to the Clou
 
 > **triangle-alert** If the S3 bucket contains any objects, CloudFormation will prompt you to delete them before the stack can be deleted.
 
-![The image shows an AWS CloudFormation console with stack events, including creation and deletion statuses for "mys3demostack" and other stacks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862266/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Management-Demo/frame_310.jpg)
+![The image shows an AWS CloudFormation console with stack events, including creation and deletion statuses for "mys3demostack" and other stacks.](https://kodekloud.com/kk-media/image/upload/v1752862266/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-AWS-Management-Demo/frame_310.jpg)
 
 ## Conclusion
 

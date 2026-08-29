@@ -107,9 +107,7 @@ A reverse proxy can also distribute requests across multiple backends; in that c
   <img alt="A diagram titled &#x22;Understanding Reverse Proxy&#x22; showing users connecting through a network cloud to an NGINX reverse proxy. The reverse proxy forwards requests to backend web servers (Nginx, Apache, and a generic web server)." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Difference between a reverse proxy and a load balancer: a load balancer’s primary job is to distribute traffic across multiple backends to prevent overload; a reverse proxy’s primary role is to act as the intermediary that forwards client requests to backend servers. In practice, NGINX can be configured to perform both roles simultaneously.
-</Callout>
+> **lightbulb** Difference between a reverse proxy and a load balancer: a load balancer’s primary job is to distribute traffic across multiple backends to prevent overload; a reverse proxy’s primary role is to act as the intermediary that forwards client requests to backend servers. In practice, NGINX can be configured to perform both roles simultaneously.
 
 ## Forward proxy
 
@@ -120,9 +118,7 @@ Note about NGINX forward proxy support:
 * Default NGINX is primarily designed for reverse proxying.
 * Supporting HTTPS forward proxying (CONNECT tunneling) typically requires additional modules such as `ngx_http_proxy_connect_module` or third-party solutions.
 
-<Callout icon="warning">
-  NGINX does not natively support full forward-proxy CONNECT handling in the open-source distribution. Implementing a forward proxy for HTTPS usually requires third‑party modules or custom builds. Evaluate security implications carefully before exposing a forward proxy.
-</Callout>
+> **warning** NGINX does not natively support full forward-proxy CONNECT handling in the open-source distribution. Implementing a forward proxy for HTTPS usually requires third‑party modules or custom builds. Evaluate security implications carefully before exposing a forward proxy.
 
 Minimal example for a basic (HTTP-only) forward proxy:
 
@@ -189,6 +185,4 @@ Further reading and references:
 
 Later in this lesson series we will implement hands-on examples for load balancing, reverse proxying, and caching so you can test these patterns in a lab environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/9e6f72d7-933d-42dd-a948-ae48d66aecb6/lesson/9868630e-34b1-4e4c-8eb6-cb29859824e8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/9e6f72d7-933d-42dd-a948-ae48d66aecb6/lesson/9868630e-34b1-4e4c-8eb6-cb29859824e8)

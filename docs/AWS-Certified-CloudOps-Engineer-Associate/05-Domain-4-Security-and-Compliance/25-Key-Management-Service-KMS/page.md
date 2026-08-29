@@ -10,11 +10,11 @@ Welcome to this comprehensive lesson on the Key Management Service (KMS). In thi
 
 Encryption is vital for protecting data from breaches, man-in-the-middle attacks, and unauthorized access. By encrypting sensitive information, even if data is compromised, it remains unreadable to malicious actors. This layered defense makes unauthorized decryption practically impossible.
 
-![The image illustrates the need for encryption by showing a client, server, and unauthorized access attempt, highlighting that encrypted data cannot be read by unauthorized users.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860533/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/encryption-client-server-unauthorized-access.jpg)
+![The image illustrates the need for encryption by showing a client, server, and unauthorized access attempt, highlighting that encrypted data cannot be read by unauthorized users.](https://kodekloud.com/kk-media/image/upload/v1752860533/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/encryption-client-server-unauthorized-access.jpg)
 
 When discussing encryption in AWS, we refer to the Key Management Service. KMS securely and reliably manages encryption keys for AWS services and applications. As a managed service, it handles critical cryptographic operations such as key creation, rotation, deletion, expiration, signing, and verification.
 
-![The image illustrates a KMS (Key Management Service) concept with icons representing the creation of KMS keys and cryptographic operations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860535/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/kms-key-management-illustration.jpg)
+![The image illustrates a KMS (Key Management Service) concept with icons representing the creation of KMS keys and cryptographic operations.](https://kodekloud.com/kk-media/image/upload/v1752860535/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/kms-key-management-illustration.jpg)
 
 ## Key Metadata and Integration
 
@@ -28,13 +28,13 @@ Each key managed by KMS includes crucial metadata such as:
 
 > **lightbulb** While memorizing these metadata details is not necessary, understanding them is important for secure key management at the SysOps level.
 
-![The image is a diagram titled "Keys Metadata," listing various attributes related to key management, such as Key ID, ARN, Creation Date, Key Usage, and more, with a key icon in the center.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860536/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/keys-metadata-diagram-attributes.jpg)
+![The image is a diagram titled "Keys Metadata," listing various attributes related to key management, such as Key ID, ARN, Creation Date, Key Usage, and more, with a key icon in the center.](https://kodekloud.com/kk-media/image/upload/v1752860536/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/keys-metadata-diagram-attributes.jpg)
 
 KMS integrates with nearly every AWS service that stores data at rest, including Amazon S3, EBS, RDS, EC2, SQS, Glue, ECS, EKS, and EFS. By 2025, almost every AWS service is expected to support some form of encryption. Moreover, KMS works seamlessly with CloudTrail and CloudWatch, allowing you to monitor key management operations, track request counts, analyze latency metrics, and even create custom dashboards.
 
-![The image illustrates the integration of AWS Key Management Service (KMS) with various AWS services, including Amazon S3, Amazon EBS, Amazon RDS, and other AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860538/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/aws-kms-integration-aws-services.jpg)
+![The image illustrates the integration of AWS Key Management Service (KMS) with various AWS services, including Amazon S3, Amazon EBS, Amazon RDS, and other AWS services.](https://kodekloud.com/kk-media/image/upload/v1752860538/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/aws-kms-integration-aws-services.jpg)
 
-![The image illustrates a KMS Monitoring setup, showing a key management service connected to AWS CloudTrail and Amazon CloudWatch.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860539/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/kms-monitoring-aws-cloudtrail-cloudwatch.jpg)
+![The image illustrates a KMS Monitoring setup, showing a key management service connected to AWS CloudTrail and Amazon CloudWatch.](https://kodekloud.com/kk-media/image/upload/v1752860539/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/kms-monitoring-aws-cloudtrail-cloudwatch.jpg)
 
 ## Types of Keys in KMS
 
@@ -48,7 +48,7 @@ KMS supports multiple key types designed for various encryption needs:
 * **Data Keys:**\
   Data keys are used to encrypt and decrypt large volumes of data. Typically, a data key is generated and then protected (encrypted) by a CMK through envelope encryption. In this method, your data is secured with a data key, which is itself encrypted by a CMK, ensuring that even if stored alongside the encrypted data, the data key is protected.
 
-![The image illustrates a Key Management Service (KMS) setup, showing a user interacting with both Customer Managed Keys (CMK) and AWS Managed Keys for services like SQS, S3, and EBS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860540/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/kms-setup-customer-managed-keys.jpg)
+![The image illustrates a Key Management Service (KMS) setup, showing a user interacting with both Customer Managed Keys (CMK) and AWS Managed Keys for services like SQS, S3, and EBS.](https://kodekloud.com/kk-media/image/upload/v1752860540/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/kms-setup-customer-managed-keys.jpg)
 
 ### Envelope Encryption Process
 
@@ -59,11 +59,11 @@ Envelope encryption involves generating both a plaintext data key and an encrypt
 3. The encrypted data key is stored alongside the encrypted data.
 4. To decrypt the data, the encrypted data key is first decrypted using the CMK, and then the plaintext data key decrypts the data.
 
-![The image illustrates the process of encryption and decryption using symmetric and asymmetric Customer Master Keys (CMKs), showing the flow of data and keys.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860541/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/encryption-decryption-customer-master-keys.jpg)
+![The image illustrates the process of encryption and decryption using symmetric and asymmetric Customer Master Keys (CMKs), showing the flow of data and keys.](https://kodekloud.com/kk-media/image/upload/v1752860541/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/encryption-decryption-customer-master-keys.jpg)
 
-![The image illustrates the process of creating a symmetric data key using a KMS key, showing the transformation from a plaintext data key to an encrypted data key through an encryption algorithm.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860543/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/symmetric-data-key-kms-encryption.jpg)
+![The image illustrates the process of creating a symmetric data key using a KMS key, showing the transformation from a plaintext data key to an encrypted data key through an encryption algorithm.](https://kodekloud.com/kk-media/image/upload/v1752860543/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/symmetric-data-key-kms-encryption.jpg)
 
-![The image illustrates the process of encrypting data using a data key, showing plaintext data being converted into ciphertext with an encryption algorithm and stored in an S3 bucket along with the encrypted data key.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860544/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/data-encryption-process-s3-bucket.jpg)
+![The image illustrates the process of encrypting data using a data key, showing plaintext data being converted into ciphertext with an encryption algorithm and stored in an S3 bucket along with the encrypted data key.](https://kodekloud.com/kk-media/image/upload/v1752860544/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/data-encryption-process-s3-bucket.jpg)
 
 For asymmetric keys, the encryption process uses a public key for encrypting data or verifying signatures, while the private key—kept confidential—is used for decryption or signing.
 
@@ -76,7 +76,7 @@ The software-based KMS service offers the following features:
 * Customer-controlled key management, including scheduled and automated key rotations
 * Detailed audit and compliance capabilities through integration with CloudTrail and CloudWatch
 
-![The image lists five features: Centralized Key Management, Integrated with AWS Services, Customer Controlled, Automated Key Rotation, and Audit and Compliance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860545/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/key-management-features-list.jpg)
+![The image lists five features: Centralized Key Management, Integrated with AWS Services, Customer Controlled, Automated Key Rotation, and Audit and Compliance.](https://kodekloud.com/kk-media/image/upload/v1752860545/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/key-management-features-list.jpg)
 
 > **triangle-alert** Please note that the software version of KMS is not FIPS 140 compliant. For environments requiring stricter compliance, consider using the hardware alternative.
 
@@ -91,11 +91,11 @@ Key characteristics of CloudHSM include:
 * Keys never leave the HSM cluster, preserving maximum security.
 * Seamless integration with AWS services, while customers maintain complete control over their keys.
 
-![The image illustrates a CloudHSM system where data is sent to a Hardware Security Module (HSM) for encryption and decryption, with keys securely stored on the HSM.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860546/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/cloudhsm-encryption-decryption-diagram.jpg)
+![The image illustrates a CloudHSM system where data is sent to a Hardware Security Module (HSM) for encryption and decryption, with keys securely stored on the HSM.](https://kodekloud.com/kk-media/image/upload/v1752860546/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/cloudhsm-encryption-decryption-diagram.jpg)
 
-![The image is a diagram illustrating the architecture of AWS CloudHSM, showing an HSM cluster within a VPC, a user managing the HSM, and an EC2 instance running a CloudHSM client and application.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860547/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/aws-cloudhsm-architecture-diagram.jpg)
+![The image is a diagram illustrating the architecture of AWS CloudHSM, showing an HSM cluster within a VPC, a user managing the HSM, and an EC2 instance running a CloudHSM client and application.](https://kodekloud.com/kk-media/image/upload/v1752860547/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/aws-cloudhsm-architecture-diagram.jpg)
 
-![The image lists five features: dedicated hardware security, full control over keys, scalability and resilience, integration with AWS services, and regulatory compliance. Each feature is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860548/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/hardware-security-features-list.jpg)
+![The image lists five features: dedicated hardware security, full control over keys, scalability and resilience, integration with AWS services, and regulatory compliance. Each feature is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752860548/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Key-Management-Service-KMS/hardware-security-features-list.jpg)
 
 ## Summary
 

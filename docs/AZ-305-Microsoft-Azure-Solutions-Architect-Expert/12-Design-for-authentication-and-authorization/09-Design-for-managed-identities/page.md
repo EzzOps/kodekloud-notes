@@ -31,7 +31,7 @@ To enhance security and eliminate embedded credentials, you can enable a Managed
 2. Enable the system-assigned managed identity.
 3. Once the identity is enabled, note its object ID. Use this ID to grant access in Key Vault by creating a dedicated access policy.
 
-![The image shows a Microsoft Azure portal page for managing a system-assigned managed identity within an automation account. The status is set to "On," and a notification confirms successful registration with Azure Active Directory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867241/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-keyvault/azure-portal-managed-identity-status.jpg)
+![The image shows a Microsoft Azure portal page for managing a system-assigned managed identity within an automation account. The status is set to "On," and a notification confirms successful registration with Azure Active Directory.](https://kodekloud.com/kk-media/image/upload/v1752867241/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-keyvault/azure-portal-managed-identity-status.jpg)
 
 ### Using Managed Identity with PowerShell
 

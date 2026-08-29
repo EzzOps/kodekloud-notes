@@ -6,9 +6,7 @@ Guide to FinOps certifications and choosing the right certification path by role
 
 Welcome — in this lesson we’ll map the FinOps certification landscape and help you pick the right certification path based on your role, experience, and career goals. Certifications provide structured learning, common language, and recognition, but they are not required to practice FinOps in your organization.
 
-<Callout icon="lightbulb">
-  FinOps certification is optional. A FinOps practitioner is anyone who understands the FinOps framework and applies it within their organization. Certification adds structured knowledge, frameworks, and recognition, which can accelerate your learning and career progression.
-</Callout>
+> **lightbulb** FinOps certification is optional. A FinOps practitioner is anyone who understands the FinOps framework and applies it within their organization. Certification adds structured knowledge, frameworks, and recognition, which can accelerate your learning and career progression.
 
 ## Why consider a FinOps certification?
 
@@ -85,6 +83,4 @@ As you progress beyond the core tiers, specialized certifications deepen domain-
 
 That’s it for this lesson — see you in the next one.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/24982811-6142-4554-afd8-2b5f3b8a7f28/lesson/d4765452-6b99-46d3-9d51-fe2cc7f6b917" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/24982811-6142-4554-afd8-2b5f3b8a7f28/lesson/d4765452-6b99-46d3-9d51-fe2cc7f6b917)

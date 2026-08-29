@@ -10,7 +10,7 @@ In this guide, we’ll explore the two DNS settings available on an AWS Virtual 
 
 When you create a custom VPC without modifying defaults, the VPC DNS settings look like this (an Internet Gateway is also attached by default):
 
-![The image shows an AWS VPC management console with details of a VPC named "vpcdemo," including its state, CIDR blocks, and associated resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863194/notes-assets/images/AWS-Networking-Fundamentals-DNS-VPC-Demo/aws-vpc-management-console-vpcdemo.jpg)
+![The image shows an AWS VPC management console with details of a VPC named "vpcdemo," including its state, CIDR blocks, and associated resources.](https://kodekloud.com/kk-media/image/upload/v1752863194/notes-assets/images/AWS-Networking-Fundamentals-DNS-VPC-Demo/aws-vpc-management-console-vpcdemo.jpg)
 
 | Setting               | Description                                                                                | Default | Use Case                                                   |
 | --------------------- | ------------------------------------------------------------------------------------------ | ------- | ---------------------------------------------------------- |
@@ -34,7 +34,7 @@ By default, **Enable DNS hostnames** is disabled. Launch an EC2 instance in this
 
 Once it’s running, you’ll see only the private DNS name:
 
-![The image shows an AWS EC2 management console with a list of instances, highlighting one instance named "dnsdemo" that is currently running. The details of the selected instance, including its public IPv4 address and instance type, are displayed below.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863196/notes-assets/images/AWS-Networking-Fundamentals-DNS-VPC-Demo/aws-ec2-console-dnsdemo-instance-details.jpg)
+![The image shows an AWS EC2 management console with a list of instances, highlighting one instance named "dnsdemo" that is currently running. The details of the selected instance, including its public IPv4 address and instance type, are displayed below.](https://kodekloud.com/kk-media/image/upload/v1752863196/notes-assets/images/AWS-Networking-Fundamentals-DNS-VPC-Demo/aws-ec2-console-dnsdemo-instance-details.jpg)
 
 1. Go to **Actions → Edit VPC settings**.
 2. Check **Enable DNS hostnames** and click **Save**.
@@ -60,7 +60,7 @@ $ ssh -i path/to/key.pem ec2-user@35.173.226.213
 
 Return to the VPC console to confirm the CIDR block:
 
-![The image shows an AWS EC2 management console displaying details of a Virtual Private Cloud (VPC) named "vpcdemo," including its ID, state, and CIDR information. The interface includes options for managing subnets, route tables, and other network settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863197/notes-assets/images/AWS-Networking-Fundamentals-DNS-VPC-Demo/aws-ec2-vpcdemo-management-console.jpg)
+![The image shows an AWS EC2 management console displaying details of a Virtual Private Cloud (VPC) named "vpcdemo," including its ID, state, and CIDR information. The interface includes options for managing subnets, route tables, and other network settings.](https://kodekloud.com/kk-media/image/upload/v1752863197/notes-assets/images/AWS-Networking-Fundamentals-DNS-VPC-Demo/aws-ec2-vpcdemo-management-console.jpg)
 
 On the instance, inspect `/etc/resolv.conf`:
 
@@ -93,7 +93,7 @@ Because **Enable DNS resolution** is turned on, lookups succeed. To see what hap
 ;; connection timed out; no servers could be reached
 ```
 
-![The image shows the AWS Management Console with the "Edit VPC settings" page open, displaying options for VPC details, DHCP settings, DNS settings, and network address usage metrics settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863198/notes-assets/images/AWS-Networking-Fundamentals-DNS-VPC-Demo/aws-management-console-edit-vpc-settings.jpg)
+![The image shows the AWS Management Console with the "Edit VPC settings" page open, displaying options for VPC details, DHCP settings, DNS settings, and network address usage metrics settings.](https://kodekloud.com/kk-media/image/upload/v1752863198/notes-assets/images/AWS-Networking-Fundamentals-DNS-VPC-Demo/aws-management-console-edit-vpc-settings.jpg)
 
 > **triangle-alert** With DNS resolution disabled, instances cannot use the Amazon‐provided DNS server. You must configure an alternate DNS server (for example, 8.8.8.8) in your DHCP options or run your own DNS service within the VPC.
 

@@ -85,9 +85,7 @@ Commit and push these manifests to your Git repo.
   <img alt="A dark-themed Gitea web interface showing a &#x22;Commit Changes&#x22; form with fields for a commit message and description, options to commit to the main branch or create a new branch, and blue &#x22;Commit Changes&#x22; and red &#x22;Cancel&#x22; buttons. The footer displays &#x22;Powered by Gitea&#x22; and version information." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Hook phases act like guardrails: a PreSync hook must succeed before Sync proceeds; a failing PreSync stops the synchronization and prevents deployments.
-</Callout>
+> **lightbulb** Hook phases act like guardrails: a PreSync hook must succeed before Sync proceeds; a failing PreSync stops the synchronization and prevents deployments.
 
 How phases work
 
@@ -163,9 +161,7 @@ Links and References
 * Argo CD Sync Waves — [https://argo-cd.readthedocs.io/en/stable/user-guide/sync-waves/](https://argo-cd.readthedocs.io/en/stable/user-guide/sync-waves/)
 * Argo CD CLI docs — [https://argo-cd.readthedocs.io/en/stable/user-guide/commands/](https://argo-cd.readthedocs.io/en/stable/user-guide/commands/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/abb5d85a-bab5-41cc-810d-8e6c04681233" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/abb5d85a-bab5-41cc-810d-8e6c04681233)
 
 
 # Demo Sync Wave 1

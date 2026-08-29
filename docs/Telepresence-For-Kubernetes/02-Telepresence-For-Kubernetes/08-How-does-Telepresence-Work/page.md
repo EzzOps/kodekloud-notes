@@ -1,9 +1,7 @@
 # ...other variables
 ```
 
-<Callout icon="lightbulb">
-  You can choose any filename for the environment file (e.g., `dev.env` or `products.env`). Just update your intercept command accordingly.
-</Callout>
+> **lightbulb** You can choose any filename for the environment file (e.g., `dev.env` or `products.env`). Just update your intercept command accordingly.
 
 ## 4. Load the `.env` File in Your Local Process
 
@@ -25,9 +23,7 @@ Or, if you prefer a one-liner in Bash:
 export $(grep -v '^#' .env | xargs) && npm start
 ```
 
-<Callout icon="triangle-alert">
-  Avoid committing your `.env` file to version control if it contains sensitive data. Add it to your `.gitignore` instead.
-</Callout>
+> **triangle-alert** Avoid committing your `.env` file to version control if it contains sensitive data. Add it to your `.gitignore` instead.
 
 ## 5. Summary of Key Flags
 
@@ -42,9 +38,7 @@ export $(grep -v '^#' .env | xargs) && npm start
 * [GitHub: telepresence-command-reference](https://github.com/telepresenceio/telepresence)
 * [dotenv npm package](https://www.npmjs.com/package/dotenv)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/d6bda8d0-e3f3-4f40-a5ad-3d63a3fe86b2" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/d6bda8d0-e3f3-4f40-a5ad-3d63a3fe86b2)
 
 
 # How does Telepresence Work
@@ -65,23 +59,17 @@ Telepresence lets you develop and debug services locally while connecting seamle
 
 When you issue an intercept, the Traffic Manager injects a **Traffic Agent** sidecar into the target pod. Incoming requests for that pod are proxied through the agent over the tunnel to your local service.
 
-<Frame>
-  ![The image illustrates the Telepresence architecture, showing a laptop connected via a tunnel to a backend pod with a traffic manager, traffic agent, and frontend components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884090/notes-assets/images/Telepresence-For-Kubernetes-How-does-Telepresence-Work/telepresence-architecture-laptop-pod.jpg)
-</Frame>
+![The image illustrates the Telepresence architecture, showing a laptop connected via a tunnel to a backend pod with a traffic manager, traffic agent, and frontend components.](https://kodekloud.com/kk-media/image/upload/v1752884090/notes-assets/images/Telepresence-For-Kubernetes-How-does-Telepresence-Work/telepresence-architecture-laptop-pod.jpg)
 
 ## Prerequisites
 
-<Callout icon="lightbulb">
-  Before you begin, confirm you have:
+> **lightbulb** Before you begin, confirm you have:
 
   * Network access to your Kubernetes cluster
   * `kubectl` configured with the correct context
   * Permissions to install or upgrade cluster components (or a colleague who can)
-</Callout>
 
-<Frame>
-  ![The image lists three requirements: network connection, kubectl access to a cluster, and permissions to deploy a traffic manager to the cluster.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884091/notes-assets/images/Telepresence-For-Kubernetes-How-does-Telepresence-Work/traffic-manager-deployment-requirements.jpg)
-</Frame>
+![The image lists three requirements: network connection, kubectl access to a cluster, and permissions to deploy a traffic manager to the cluster.](https://kodekloud.com/kk-media/image/upload/v1752884091/notes-assets/images/Telepresence-For-Kubernetes-How-does-Telepresence-Work/traffic-manager-deployment-requirements.jpg)
 
 ## Installation
 
@@ -120,9 +108,7 @@ This will:
 * Connect to the Traffic Manager in your cluster
 * Configure routing so cluster pod and service IPs resolve locally
 
-<Frame>
-  ![The image illustrates a "Telepresence connect" setup, showing a laptop connected via a tunnel to a Kubernetes cluster with pods and services, including Kube-DNS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884093/notes-assets/images/Telepresence-For-Kubernetes-How-does-Telepresence-Work/telepresence-connect-kubernetes-setup.jpg)
-</Frame>
+![The image illustrates a "Telepresence connect" setup, showing a laptop connected via a tunnel to a Kubernetes cluster with pods and services, including Kube-DNS.](https://kodekloud.com/kk-media/image/upload/v1752884093/notes-assets/images/Telepresence-For-Kubernetes-How-does-Telepresence-Work/telepresence-connect-kubernetes-setup.jpg)
 
 ## Common Telepresence Commands
 
@@ -188,6 +174,4 @@ This approach removes the overhead of building images or managing port-forwards 
 * [Kubernetes Concepts](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 * [Helm Charts Overview](https://helm.sh/docs/topics/charts/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/46e22602-bab3-4c01-892a-0eabe2aab70e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/telepresence-for-kubernetes/module/0eb5dcb6-2e2a-40d9-9caa-bd3149741aeb/lesson/46e22602-bab3-4c01-892a-0eabe2aab70e)

@@ -14,9 +14,7 @@ Terragrunt’s built-in function `get_parent_terragrunt_dir()` simplifies hierar
 * Reuse of shared configurations defined in a parent folder
 * Cleaner directory structures for multi-environment setups
 
-<Callout icon="lightbulb">
-  Ensure your Terragrunt directory layout follows a clear hierarchy—each child folder must reside under a parent that contains a `terragrunt.hcl`.
-</Callout>
+> **lightbulb** Ensure your Terragrunt directory layout follows a clear hierarchy—each child folder must reside under a parent that contains a `terragrunt.hcl`.
 
 ## Key Benefits
 
@@ -26,9 +24,7 @@ Terragrunt’s built-in function `get_parent_terragrunt_dir()` simplifies hierar
 | Hierarchical Inheritance      | Share backend or provider settings from a top-level `terragrunt.hcl`.       |
 | Modular & Flexible Structures | Keep each environment or component isolated while reusing common logic.     |
 
-<Frame>
-  ![The image describes the benefits of the get\_parent\_terragrunt\_dir function, highlighting its adaptability to parent Terragrunt configs, dynamic path construction, and support for modular and flexible config structures.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884353/notes-assets/images/Terragrunt-for-Beginners-get-parent-terragrunt-dir/get-parent-terragrunt-dir-benefits.jpg)
-</Frame>
+![The image describes the benefits of the get\_parent\_terragrunt\_dir function, highlighting its adaptability to parent Terragrunt configs, dynamic path construction, and support for modular and flexible config structures.](https://kodekloud.com/kk-media/image/upload/v1752884353/notes-assets/images/Terragrunt-for-Beginners-get-parent-terragrunt-dir/get-parent-terragrunt-dir-benefits.jpg)
 
 ## Example Usage
 

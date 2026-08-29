@@ -25,7 +25,7 @@ Suppose you're running Kubernetes 1.10, and new releases 1.11 and 1.12 are avail
 
 An effective upgrade strategy is to upgrade one minor version at a time (e.g., upgrade from 1.10 to 1.11, then from 1.11 to 1.12, and finally from 1.12 to 1.13) rather than attempting a large jump between versions. Keep in mind that the upgrade process may vary depending on your cluster setup. Managed Kubernetes services (such as Google Kubernetes Engine) offer a simple upgrade interface, while clusters deployed using tools like kubeadm or manual installation require more hands-on management.
 
-![The image shows Kubernetes components (kube-apiserver, controller-manager, kube-scheduler, kubectl, kubelet, kube-proxy) all at version 1.10, with a timeline indicating support for versions 1.10, 1.11, and 1.12.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869689/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Cluster-Upgrade-Introduction/frame_140.jpg)
+![The image shows Kubernetes components (kube-apiserver, controller-manager, kube-scheduler, kubectl, kubelet, kube-proxy) all at version 1.10, with a timeline indicating support for versions 1.10, 1.11, and 1.12.](https://kodekloud.com/kk-media/image/upload/v1752869689/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Cluster-Upgrade-Introduction/frame_140.jpg)
 
 ## Upgrade Process Overview
 
@@ -42,7 +42,7 @@ After the master nodes are upgraded (for example, moving from version 1.10 to 1.
 2. Upgrade one worker node at a time, allowing workloads to be shifted and ensuring continuous service.
 3. Add new nodes with the updated software version, migrate workloads to these new nodes, and then decommission the older nodes.
 
-![The image shows a strategy diagram labeled "Strategy - 3" with four labeled boxes (M and W) and arrows pointing to a group of people.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869690/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Cluster-Upgrade-Introduction/frame_400.jpg)
+![The image shows a strategy diagram labeled "Strategy - 3" with four labeled boxes (M and W) and arrows pointing to a group of people.](https://kodekloud.com/kk-media/image/upload/v1752869690/notes-assets/images/CKA-Certification-Course-Certified-Kubernetes-Administrator-Cluster-Upgrade-Introduction/frame_400.jpg)
 
 ## Upgrading with kubeadm
 

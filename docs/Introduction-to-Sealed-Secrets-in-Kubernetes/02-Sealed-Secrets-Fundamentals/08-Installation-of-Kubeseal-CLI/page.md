@@ -11,13 +11,11 @@ Follow these steps to install the Kubeseal CLI on Linux. Kubeseal converts Kuber
 * A working Kubernetes cluster
 * `kubectl` configured and pointed at your cluster
 
-<Callout icon="lightbulb">
-  Kubeseal v0.23.0 is used here as an example. Replace `0.23.0` with the version you need:
+> **lightbulb** Kubeseal v0.23.0 is used here as an example. Replace `0.23.0` with the version you need:
 
   ```bash theme={null}
   export KUBESEAL_VERSION="0.23.0"
   ```
-</Callout>
 
 ## Step 1: Download the Kubeseal Binary
 
@@ -66,9 +64,7 @@ my-release-sealed-secrets-76b49fc554-wk717     1/1     Running   0          21s
 storage-provisioner                            1/1     Running   1          13h
 ```
 
-<Callout icon="lightbulb">
-  Seeing the `my-release-sealed-secrets-*` pod in **Running** state means Kubeseal is installed and ready to use.
-</Callout>
+> **lightbulb** Seeing the `my-release-sealed-secrets-*` pod in **Running** state means Kubeseal is installed and ready to use.
 
 ## References
 
@@ -79,6 +75,4 @@ storage-provisioner                            1/1     Running   1          13h
 
 [sealed-secrets-releases]: https://github.com/bitnami-labs/sealed-secrets/releases
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/0f3ed562-f151-48f9-bb8c-8d3a4dbb4fc3/lesson/f96bad90-6142-49d3-bacd-4714490b1273" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-sealed-secrets-in-kubernetes/module/0f3ed562-f151-48f9-bb8c-8d3a4dbb4fc3/lesson/f96bad90-6142-49d3-bacd-4714490b1273)

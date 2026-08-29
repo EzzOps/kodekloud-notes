@@ -131,9 +131,7 @@ Your system relies on secrets: database passwords, API keys, signing keys, and m
 
 Avoid accidental exposure by auditing repositories, build artifacts, and container images.
 
-<Callout icon="lightbulb">
-  Security checklist for a public API: rate limit clients, encrypt all connections, enforce authentication and authorization, use signed URLs for private content, validate all incoming data, and keep secrets out of source code.
-</Callout>
+> **lightbulb** Security checklist for a public API: rate limit clients, encrypt all connections, enforce authentication and authorization, use signed URLs for private content, validate all incoming data, and keep secrets out of source code.
 
 ## Quick reference table: core controls
 
@@ -149,6 +147,4 @@ Avoid accidental exposure by auditing repositories, build artifacts, and contain
 
 None of the above dives into advanced offensive-security techniques, but these basics are where most real incidents start. Implementing and consistently enforcing these measures will mitigate a large fraction of common attacks and accidental outages.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/c7a8e3b7-9370-4462-a298-4a441dd68f8a/lesson/37c07301-5490-4432-a5a7-666370219ea8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/system-design-for-beginners/module/c7a8e3b7-9370-4462-a298-4a441dd68f8a/lesson/37c07301-5490-4432-a5a7-666370219ea8)

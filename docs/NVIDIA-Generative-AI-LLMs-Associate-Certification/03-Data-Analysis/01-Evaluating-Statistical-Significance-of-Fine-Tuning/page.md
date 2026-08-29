@@ -33,9 +33,7 @@ Links and references
 * [TensorFlow — Official Documentation](https://www.tensorflow.org/)
 * [spaCy — Official Documentation](https://spacy.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/79b0901d-45de-4d1d-95f1-79102272eac4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/875d98e8-3b09-4f35-b877-2758b84443ca/lesson/79b0901d-45de-4d1d-95f1-79102272eac4)
 
 
 # Evaluating Statistical Significance of Fine Tuning
@@ -83,13 +81,9 @@ Table: Common tests and when to use them
 | Permutation test          | Any paired/unpaired comparison; useful when distributional assumptions fail                                                  | Exact or approximate significance from label shuffling |
 | Bootstrap                 | Estimating confidence intervals and stability of metrics                                                                     | Useful for small samples and complex metrics           |
 
-<Callout icon="lightbulb">
-  Use hypothesis testing to determine whether observed improvements are unlikely under the null hypothesis, but always pair p-values with effect sizes and confidence intervals to communicate practical significance.
-</Callout>
+> **lightbulb** Use hypothesis testing to determine whether observed improvements are unlikely under the null hypothesis, but always pair p-values with effect sizes and confidence intervals to communicate practical significance.
 
-<Callout icon="warning">
-  A small [p-value](https://en.wikipedia.org/wiki/P-value) does not guarantee a meaningful improvement. Large evaluation sets can produce tiny p-values for negligible effect sizes—always inspect absolute metric changes and effect sizes before declaring a meaningful gain.
-</Callout>
+> **warning** A small [p-value](https://en.wikipedia.org/wiki/P-value) does not guarantee a meaningful improvement. Large evaluation sets can produce tiny p-values for negligible effect sizes—always inspect absolute metric changes and effect sizes before declaring a meaningful gain.
 
 Why the other options are less appropriate:
 
@@ -99,6 +93,4 @@ Why the other options are less appropriate:
 
 In summary, use an appropriate hypothesis test and report the resulting p-value to assess statistical significance when comparing LLM performance after fine-tuning. Complement p-values with effect sizes, confidence intervals, and absolute metric differences to provide a complete, practically meaningful evaluation.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/b8ad33c7-78ce-4828-a30c-4a8fc01d1781/lesson/e5fdcf29-4ff7-4d68-b8a8-bd39c014d652" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nvidia-generative-ai-llms-associate-certification/module/b8ad33c7-78ce-4828-a30c-4a8fc01d1781/lesson/e5fdcf29-4ff7-4d68-b8a8-bd39c014d652)

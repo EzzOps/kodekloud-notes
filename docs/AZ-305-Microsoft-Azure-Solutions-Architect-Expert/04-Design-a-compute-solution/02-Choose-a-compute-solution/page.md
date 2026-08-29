@@ -50,7 +50,7 @@ For organizations looking to optimize their application for the cloud—by lever
 
 > **lightbulb** The flowchart below is designed to visually represent these decision points, simplifying the process of choosing the right compute solution based on application needs.
 
-![The image is a flowchart from KodeKloud that guides users in choosing a compute solution for their application, with options like Virtual Machines, Azure Batch, and Azure Functions. It includes decision points based on requirements such as full control, HPC workload, and containerization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866844/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Choose-a-compute-solution/compute-solution-flowchart-kodekloud.jpg)
+![The image is a flowchart from KodeKloud that guides users in choosing a compute solution for their application, with options like Virtual Machines, Azure Batch, and Azure Functions. It includes decision points based on requirements such as full control, HPC workload, and containerization.](https://kodekloud.com/kk-media/image/upload/v1752866844/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Choose-a-compute-solution/compute-solution-flowchart-kodekloud.jpg)
 
 This diagram serves as a valuable starting point for navigating compute options within the Azure ecosystem.
 

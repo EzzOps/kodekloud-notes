@@ -30,7 +30,7 @@ Consider this practical pricing example: as of December 2024 in the Virginia reg
 
 Lifecycle rules provide granular control through various filters. You can define transitions based on factors such as object size, last modified date, or even limit the number of versions retained. For example, if you only need to keep the three most recent versions of a file out of 20, you can configure a rule to expire the older versions. This precision not only helps manage costs but also assists in adhering to data retention policies.
 
-![The image is about S3 Lifecycle Filters and Actions, highlighting granular configurations, object size filters for cost optimization, and managing concurrent versions for storage efficiency.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860143/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Implementing-Lifecycle-Rules-on-S3/s3-lifecycle-filters-actions.jpg)
+![The image is about S3 Lifecycle Filters and Actions, highlighting granular configurations, object size filters for cost optimization, and managing concurrent versions for storage efficiency.](https://kodekloud.com/kk-media/image/upload/v1752860143/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Implementing-Lifecycle-Rules-on-S3/s3-lifecycle-filters-actions.jpg)
 
 ## Summary
 

@@ -63,9 +63,7 @@ Notes on what's happening
 * The `PromptTemplate` uses the tool output as `context`. The chain (`prompt | llm | output_parser`) takes the populated prompt, sends it to the LLM, and then parses the output into a simple string using `StrOutputParser`.
 * This follows a retrieve-and-read pattern where the retrieval step is replaced by a tool call that supplies up-to-date context to the LLM.
 
-<Callout icon="lightbulb">
-  This example uses a static response to keep the demonstration simple. For production, replace the static return with a real API call (include robust error handling, retries, and rate limiting). Also ensure the tool returns well-structured, documented data that your prompt and output parser expect.
-</Callout>
+> **lightbulb** This example uses a static response to keep the demonstration simple. For production, replace the static return with a real API call (include robust error handling, retries, and rate limiting). Also ensure the tool returns well-structured, documented data that your prompt and output parser expect.
 
 Next steps
 
@@ -77,11 +75,9 @@ Next steps
 
 By following this pattern you can develop robust tool-backed chains that keep the LLM focused on reasoning while delegating data retrieval and structured logic to external functions.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/06905b96-585d-4c9e-835a-d8fcaca76e2a/lesson/f564445e-f3df-4cae-9d49-986dc4a02a02" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/06905b96-585d-4c9e-835a-d8fcaca76e2a/lesson/f564445e-f3df-4cae-9d49-986dc4a02a02)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/langchain/module/06905b96-585d-4c9e-835a-d8fcaca76e2a/lesson/a39008e8-97e9-4813-a404-3c1006e6e97c" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/langchain/module/06905b96-585d-4c9e-835a-d8fcaca76e2a/lesson/a39008e8-97e9-4813-a404-3c1006e6e97c)
 
 
 # Understanding and Using tools
@@ -180,9 +176,7 @@ Quick reference: RAG vs Tools
 | Retrieval-Augmented Generation (RAG) | Static or pre-indexed content                 | `Search a company's archived policy PDFs`                     |
 |                                Tools | Real-time data, external APIs, or computation | `Call a flight-tracking API` or `Execute a Python simulation` |
 
-<Callout icon="lightbulb">
-  RAG is ideal for retrieving pre-indexed, relatively static content. Use tools when you need real-time data, live API calls, or external computation.
-</Callout>
+> **lightbulb** RAG is ideal for retrieving pre-indexed, relatively static content. Use tools when you need real-time data, live API calls, or external computation.
 
 Next steps
 
@@ -196,6 +190,4 @@ Links and references
 * [YouTube](https://www.youtube.com/)
 * [Python](https://www.python.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/06905b96-585d-4c9e-835a-d8fcaca76e2a/lesson/aa3a1783-f92e-417b-9352-d18c1784a501" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/06905b96-585d-4c9e-835a-d8fcaca76e2a/lesson/aa3a1783-f92e-417b-9352-d18c1784a501)

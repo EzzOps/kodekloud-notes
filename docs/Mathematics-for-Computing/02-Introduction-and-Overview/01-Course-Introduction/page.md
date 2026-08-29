@@ -82,9 +82,7 @@ Reasoning under uncertainty is essential for robust systems. You’ll study:
 Community and learning format
 This course emphasizes hands-on learning and discussion. You’ll work through examples, implement algorithms, and participate in a supportive community where you can ask questions and share solutions.
 
-<Callout icon="lightbulb">
-  This course focuses on the core mathematical concepts that enable computing systems. Expect hands-on examples and intuitive explanations to help bridge theory and practice.
-</Callout>
+> **lightbulb** This course focuses on the core mathematical concepts that enable computing systems. Expect hands-on examples and intuitive explanations to help bridge theory and practice.
 
 Course roadmap (at-a-glance)
 
@@ -104,6 +102,4 @@ Further reading and references
 
 Are you ready to explore how mathematics unlocks computing? Let’s get started.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/6315ce84-788a-46d3-9c27-7ea08705f9e6/lesson/d79d9f32-4e95-4ba9-8b98-44e4cbe46c57" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/mathematics-for-computing/module/6315ce84-788a-46d3-9c27-7ea08705f9e6/lesson/d79d9f32-4e95-4ba9-8b98-44e4cbe46c57)

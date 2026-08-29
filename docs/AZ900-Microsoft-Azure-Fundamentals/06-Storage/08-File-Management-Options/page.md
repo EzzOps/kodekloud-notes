@@ -18,7 +18,7 @@ Azure Storage Explorer is a graphical user interface tool that simplifies browsi
 
 Below is a diagram comparing the features and functions of AzCopy, Azure Storage Explorer, and Azure File Sync:
 
-![The image is a comparison chart of file management options, detailing features and functions of AzCopy, Azure Storage Explorer, and Azure File Sync. It highlights aspects like primary function, use cases, data transfer, ease of use, integration, and best use scenarios.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868527/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-File-Management-Options/file-management-comparison-azcopy-explorer-sync.jpg)
+![The image is a comparison chart of file management options, detailing features and functions of AzCopy, Azure Storage Explorer, and Azure File Sync. It highlights aspects like primary function, use cases, data transfer, ease of use, integration, and best use scenarios.](https://kodekloud.com/kk-media/image/upload/v1752868527/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-File-Management-Options/file-management-comparison-azcopy-explorer-sync.jpg)
 
 ## Azure File Sync
 
@@ -38,7 +38,7 @@ The preview feature further enables you to inspect file contents immediately aft
 
 Below is a snapshot of the Azure Storage Explorer interface displaying a list of JPEG files in a blob container. The image highlights detailed file information such as access tier, modification date, and file size:
 
-![The image shows the Microsoft Azure Storage Explorer interface with a list of JPEG files in a blob container, displaying details like access tier, modification date, and size.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868528/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-File-Management-Options/azure-storage-explorer-jpeg-files.jpg)
+![The image shows the Microsoft Azure Storage Explorer interface with a list of JPEG files in a blob container, displaying details like access tier, modification date, and size.](https://kodekloud.com/kk-media/image/upload/v1752868528/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-File-Management-Options/azure-storage-explorer-jpeg-files.jpg)
 
 With its comprehensive support for file shares, queues, tables, and disks, Azure Storage Explorer offers a streamlined, user-friendly method for managing your Azure environment.
 

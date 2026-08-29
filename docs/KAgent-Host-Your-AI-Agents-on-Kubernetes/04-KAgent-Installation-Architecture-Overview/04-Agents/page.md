@@ -57,9 +57,7 @@ Typical example flow:
 * Agent runs `get pod status` for each pod, collects results.
 * LLM aggregates the results, counts failing pods, formats a response, and returns it to the user.
 
-<Callout icon="lightbulb">
-  Design tool interfaces clearly: provide precise parameter schemas, expected outputs, and error semantics so the LLM can reliably choose and invoke the right tool.
-</Callout>
+> **lightbulb** Design tool interfaces clearly: provide precise parameter schemas, expected outputs, and error semantics so the LLM can reliably choose and invoke the right tool.
 
 Tool types in KAgent:
 
@@ -201,9 +199,7 @@ A centralized registry simplifies sharing, version control, and governance of sk
   <img alt="A flow diagram titled &#x22;Skill Management&#x22; showing steps from Skill Creation to Containerization, into a Skill Registry (built & pushed via AgentRegistry/Claude), and finally Agents that reuse those skills." />
 </Frame>
 
-<Callout icon="lightbulb">
-  When possible, start with an A2A metadata skill to describe the capability and add container-based skills only for actions that require procedural logic, side effects, or external integration.
-</Callout>
+> **lightbulb** When possible, start with an A2A metadata skill to describe the capability and add container-based skills only for actions that require procedural logic, side effects, or external integration.
 
 Links and references
 
@@ -215,6 +211,4 @@ Links and references
 * [Azure OpenAI Service](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service/)
 * [Ollama](https://ollama.com)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/7d947e6a-6983-4a54-800b-c4637ce9a5ba" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/45e1f0ac-8ec5-4cb3-8804-9953a96a67b5/lesson/7d947e6a-6983-4a54-800b-c4637ce9a5ba)

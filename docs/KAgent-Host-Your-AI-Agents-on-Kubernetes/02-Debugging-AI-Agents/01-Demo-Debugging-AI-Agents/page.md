@@ -213,9 +213,7 @@ You can reuse this pattern to integrate agents with other MCP servers (GitHub, P
 * [Kubernetes Documentation](https://kubernetes.io/docs/)
 * [KAgent (project docs)](https://kagent.dev/) (check your cluster's docs for KAgent-specific manifests)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/2f536b48-ed92-4812-ba03-cac21e7bc768/lesson/32df4a4a-b558-4697-b5b6-2e73deea9a5b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kagents-host-your-ai-agents-on-kubernetes/module/2f536b48-ed92-4812-ba03-cac21e7bc768/lesson/32df4a4a-b558-4697-b5b6-2e73deea9a5b)
 
 
 # Demo Debugging AI Agents
@@ -235,9 +233,7 @@ Objectives:
 
 This lab focuses on integrating KAgent with an OTEL backend; Jaeger is used as a simple example. KAgent supports exporting to any OTEL-compatible backend.
 
-<Callout icon="lightbulb">
-  This lesson uses Jaeger in all-in-one (development) mode with in-memory storage. Traces are transient and will be lost if the Jaeger pod restarts.
-</Callout>
+> **lightbulb** This lesson uses Jaeger in all-in-one (development) mode with in-memory storage. Traces are transient and will be lost if the Jaeger pod restarts.
 
 ## 1. Jaeger configuration (all-in-one, in-memory)
 

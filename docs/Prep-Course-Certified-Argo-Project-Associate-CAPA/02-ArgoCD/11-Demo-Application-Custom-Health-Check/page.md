@@ -11,13 +11,9 @@ This hybrid approach produced cascading failures across three main areas:
 * Configuration drift: The cluster’s live state diverged from the intended state in Git, undermining reproducibility.
 * Unreliable disaster recovery: Because manual, unrecorded changes existed, applying what’s in Git would not restore the true working system after an outage.
 
-<Callout icon="lightbulb">
-  Configuration drift: when manual or out-of-band changes cause the live environment to differ from the version-controlled desired state, making reproducibility and recovery unreliable.
-</Callout>
+> **lightbulb** Configuration drift: when manual or out-of-band changes cause the live environment to differ from the version-controlled desired state, making reproducibility and recovery unreliable.
 
-<Callout icon="warning">
-  Storing cluster credentials outside the cluster or granting widespread kubectl access increases risk. Prefer in-cluster controllers and limited, auditable access.
-</Callout>
+> **warning** Storing cluster credentials outside the cluster or granting widespread kubectl access increases risk. Prefer in-cluster controllers and limited, auditable access.
 
 It was a ticking time bomb. Dasho’s core problem was a breakdown of trust: there was no single, reliable source of truth. That translated into instability and high operational risk.
 
@@ -105,9 +101,7 @@ The result: a shift from a chaotic, fragile environment to an automated, secure,
 * Argo Rollouts documentation: [https://argoproj.github.io/argo-rollouts/](https://argoproj.github.io/argo-rollouts/)
 * Argo Events documentation: [https://argoproj.github.io/argo-events/](https://argoproj.github.io/argo-events/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/8b9dba71-6748-4303-8dfa-a0b59b1260ed" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/8b9dba71-6748-4303-8dfa-a0b59b1260ed)
 
 
 # Demo Application Custom Health Check

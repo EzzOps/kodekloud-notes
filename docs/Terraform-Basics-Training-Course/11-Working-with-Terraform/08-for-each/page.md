@@ -62,9 +62,7 @@ argument must be a map, or set of strings, and you have provided a value
 of type list of string.
 ```
 
-<Callout icon="triangle-alert">
-  Ensure that the data type passed to for\_each complies with Terraform's requirements—a map or a set of strings.
-</Callout>
+> **triangle-alert** Ensure that the data type passed to for\_each complies with Terraform's requirements—a map or a set of strings.
 
 ### Correcting the Configuration
 
@@ -181,9 +179,7 @@ pets = {
 }
 ```
 
-<Callout icon="lightbulb">
-  Using for\_each allows the resources to be identified by a unique key (here, the filename), reducing the risk of accidental shifts in resource management compared to using count.
-</Callout>
+> **lightbulb** Using for\_each allows the resources to be identified by a unique key (here, the filename), reducing the risk of accidental shifts in resource management compared to using count.
 
 ## Conclusion
 
@@ -191,8 +187,6 @@ This lesson demonstrated how to implement the for\_each meta-argument in Terrafo
 
 Now that you're familiar with for\_each, try practicing these concepts in your Terraform projects to streamline your infrastructure management. Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/e7b37e45-3b0b-4a6e-baae-e104738188d9" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/e7b37e45-3b0b-4a6e-baae-e104738188d9)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/1666a706-00a3-4bdb-ba19-1e3c7a845daa" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/1666a706-00a3-4bdb-ba19-1e3c7a845daa)

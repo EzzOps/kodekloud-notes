@@ -108,9 +108,7 @@ else
 fi
 ```
 
-<Callout icon="lightbulb">
-  The `if test -f` construct checks whether the archive file exists as a regular file. If it does, the old archive is renamed before creating a new one.
-</Callout>
+> **lightbulb** The `if test -f` construct checks whether the archive file exists as a regular file. If it does, the old archive is renamed before creating a new one.
 
 Make the script executable and run it:
 
@@ -188,15 +186,11 @@ fi
 
 For more detailed tutorials and hands-on practice, explore the [Shell Scripts for Beginners](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners) course on KodeKloud.
 
-<Frame>
-  ![The image is an advertisement for a "Shell Scripts for Beginners" course by KodeKloud, featuring a rocket and penguins on a digital platform, alongside a list of course contents.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883566/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Use-scripting-to-automate-system-maintenance-tasks/shell-scripts-beginners-advertisement.jpg)
-</Frame>
+![The image is an advertisement for a "Shell Scripts for Beginners" course by KodeKloud, featuring a rocket and penguins on a digital platform, alongside a list of course contents.](https://kodekloud.com/kk-media/image/upload/v1752883566/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Use-scripting-to-automate-system-maintenance-tasks/shell-scripts-beginners-advertisement.jpg)
 
 This article is now complete. When you are ready for the next lesson, we look forward to seeing you there.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/9225d80c-3f9d-4e8e-9135-febe7ca37af2/lesson/fd57ea10-0853-41be-aa77-d02578c7f8e1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/9225d80c-3f9d-4e8e-9135-febe7ca37af2/lesson/fd57ea10-0853-41be-aa77-d02578c7f8e1)
 
 
 # Configure disk compression
@@ -207,29 +201,21 @@ This tutorial explains how to configure disk compression using Virtual Data Opti
 
 In this tutorial, you'll learn how to configure disk compression using Virtual Data Optimizer (VDO) in Linux. Although storage has become increasingly abundant and affordable, effective storage management remains crucial. VDO optimizes storage use through three key techniques: zero-block filtering, deduplication, and compression. Below, we explain each concept and provide step-by-step instructions to configure VDO on your system.
 
-<Callout icon="lightbulb">
-  VDO enhances storage performance by filtering out unnecessary data, eliminating redundant blocks, and compressing data in real time.
-</Callout>
+> **lightbulb** VDO enhances storage performance by filtering out unnecessary data, eliminating redundant blocks, and compressing data in real time.
 
 ## Zero-Block Filtering
 
 VDO begins by scanning the storage device for blocks filled only with zeros—data that does not contribute meaningfully to the stored information. This process is similar to draining water from pasta using a colander: the water (empty data) flows away while the pasta (useful data) is retained.
 
-<Frame>
-  ![The image illustrates a "Virtual Data Optimizer (VDO)" process, highlighting "Zero-Block Filtering" with a visual representation of data blocks containing binary numbers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883568/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-disk-compression/virtual-data-optimizer-zero-block-filtering.jpg)
-</Frame>
+![The image illustrates a "Virtual Data Optimizer (VDO)" process, highlighting "Zero-Block Filtering" with a visual representation of data blocks containing binary numbers.](https://kodekloud.com/kk-media/image/upload/v1752883568/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-disk-compression/virtual-data-optimizer-zero-block-filtering.jpg)
 
-<Frame>
-  ![The image illustrates a concept of "Zero-Block Filtering" in a "Virtual Data Optimizer (VDO)" with a visual metaphor of a fork and colander with noodles. It also mentions "Deduplication" and "Compression" as part of the process.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883569/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-disk-compression/zero-block-filtering-vdo-fork-colander.jpg)
-</Frame>
+![The image illustrates a concept of "Zero-Block Filtering" in a "Virtual Data Optimizer (VDO)" with a visual metaphor of a fork and colander with noodles. It also mentions "Deduplication" and "Compression" as part of the process.](https://kodekloud.com/kk-media/image/upload/v1752883569/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-disk-compression/zero-block-filtering-vdo-fork-colander.jpg)
 
 ## Deduplication
 
 Once zero blocks are filtered out, VDO moves on to deduplication. In this step, VDO checks if a block of data is already present elsewhere on the storage device. If a duplicate is found, instead of rewriting the data, VDO updates its metadata to reference the existing block. This method reduces redundant data storage and conserves disk space.
 
-<Frame>
-  ![The image illustrates the Virtual Data Optimizer (VDO) process, highlighting zero-block filtering, deduplication, and compression with a visual representation of data blocks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883571/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-disk-compression/vdo-process-zero-blocks-deduplication.jpg)
-</Frame>
+![The image illustrates the Virtual Data Optimizer (VDO) process, highlighting zero-block filtering, deduplication, and compression with a visual representation of data blocks.](https://kodekloud.com/kk-media/image/upload/v1752883571/notes-assets/images/Red-Hat-Certified-System-AdministratorRHCSA-Configure-disk-compression/vdo-process-zero-blocks-deduplication.jpg)
 
 ## Compression
 
@@ -474,6 +460,4 @@ man lvm vdo
 
 This concludes our comprehensive guide on configuring disk compression with VDO. Enjoy the benefits of optimized storage and improved performance in your Linux environment!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/eb65d854-5137-4776-8ff8-73e274c43a0c/lesson/b456ae40-1ac9-40e2-83cd-1eeb52f36c0e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/red-hat-certified-system-administrator-rhcsa/module/eb65d854-5137-4776-8ff8-73e274c43a0c/lesson/b456ae40-1ac9-40e2-83cd-1eeb52f36c0e)

@@ -24,27 +24,21 @@ Consider this common scenario:
 
 This automated process adheres to a streamlined GitOps workflow.
 
-<Frame>
-  ![The image illustrates a GitOps workflow, showing code pushed to a repository, followed by unit tests, artifact building, Docker image creation, and registry push.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880456/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-CICD-with-GitOps/frame_70.jpg)
-</Frame>
+![The image illustrates a GitOps workflow, showing code pushed to a repository, followed by unit tests, artifact building, Docker image creation, and registry push.](https://kodekloud.com/kk-media/image/upload/v1752880456/notes-assets/images/Kubernetes-and-Cloud-Native-Associate-KCNA-CICD-with-GitOps/frame_70.jpg)
 
 After the new image is available in the container registry, the Kubernetes manifests repository is updated with the new image version. The YAML files referencing the image are modified and the changes are committed to the repository. A pull request is then created to merge these updates into the repository's master branch. After thorough review and approval by a project manager or architect, the pull request is merged.
 
 Once merged, ArgoCD automatically detects these changes and syncs the cluster's state to match the desired configuration by deploying the updated application version. This process ensures a safe and controlled deployment across your cluster.
 
-<Callout icon="lightbulb">
-  Beyond automated deployments, GitOps with ArgoCD provides a reliable rollback mechanism. In case of issues or failures, you can revert to a previously stable version using the following commands:
+> **lightbulb** Beyond automated deployments, GitOps with ArgoCD provides a reliable rollback mechanism. In case of issues or failures, you can revert to a previously stable version using the following commands:
 
   ```bash theme={null}
   argocd app history
   argocd app rollback <APP_NAME> <REVISION>
   ```
-</Callout>
 
 In this lesson, we will explore how to implement this pipeline using Git, ArgoCD, and Kubernetes. Although our primary focus is on continuous deployment (CD) with ArgoCD, the overall process is integrated with a CI pipeline that manages testing and image building.
 
 For more details on implementing GitOps practices, consider reviewing [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) and other relevant documentation.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/7221af3a-169a-4c55-bc00-b7b40e1dceda/lesson/c1fe3915-5d78-4925-aeff-3cc682c8a171" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-associate-kcna/module/7221af3a-169a-4c55-bc00-b7b40e1dceda/lesson/c1fe3915-5d78-4925-aeff-3cc682c8a171)

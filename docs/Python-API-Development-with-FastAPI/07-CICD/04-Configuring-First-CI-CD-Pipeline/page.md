@@ -41,9 +41,7 @@ This example illustrates the basic use of GitHub Actions. In the following secti
 
 As detailed in the [GitHub Actions documentation](https://docs.github.com/en/actions), you need to create a specific folder structure in your project. This structure includes a `.github` folder that contains a `workflows` subfolder, where all your YAML workflow files reside.
 
-<Frame>
-  ![The image shows a webpage from GitHub Docs titled "Quickstart for GitHub Actions," providing instructions on creating a workflow with a sample YAML code snippet. The page includes a sidebar with navigation links related to GitHub Actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883361/notes-assets/images/Python-API-Development-with-FastAPI-Configuring-First-CI-CD-Pipeline/github-actions-quickstart-workflow-yaml.jpg)
-</Frame>
+![The image shows a webpage from GitHub Docs titled "Quickstart for GitHub Actions," providing instructions on creating a workflow with a sample YAML code snippet. The page includes a sidebar with navigation links related to GitHub Actions.](https://kodekloud.com/kk-media/image/upload/v1752883361/notes-assets/images/Python-API-Development-with-FastAPI-Configuring-First-CI-CD-Pipeline/github-actions-quickstart-workflow-yaml.jpg)
 
 Within your project directory, follow these steps:
 
@@ -78,9 +76,7 @@ Console output example:
 46 passed, 5 warnings in 15.14s
 ```
 
-<Callout icon="lightbulb">
-  The Pytest fixture shown above resets the database before running tests, ensuring a clean state for each test session.
-</Callout>
+> **lightbulb** The Pytest fixture shown above resets the database before running tests, ensuring a clean state for each test session.
 
 ***
 
@@ -151,9 +147,7 @@ on:
 
 This configuration ensures that the workflow runs only for pushes and pull requests on the specified branches. For additional details, refer to the [GitHub Actions events documentation](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows).
 
-<Frame>
-  ![The image shows a GitHub documentation page about triggering workflows with scheduled events, including details on using cron syntax.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883362/notes-assets/images/Python-API-Development-with-FastAPI-Configuring-First-CI-CD-Pipeline/github-triggering-workflows-cron.jpg)
-</Frame>
+![The image shows a GitHub documentation page about triggering workflows with scheduled events, including details on using cron syntax.](https://kodekloud.com/kk-media/image/upload/v1752883362/notes-assets/images/Python-API-Development-with-FastAPI-Configuring-First-CI-CD-Pipeline/github-triggering-workflows-cron.jpg)
 
 ***
 
@@ -166,9 +160,7 @@ In GitHub Actions, a job represents a series of steps executed on a runner (a vi
 
 Refer to the [GitHub Actions documentation](https://docs.github.com/en/actions) for more details on available runners, such as Windows and macOS. In this guide, we use Ubuntu since our production environment runs on Linux.
 
-<Frame>
-  ![The image shows a webpage from GitHub Docs about GitHub Actions, featuring a diagram of components like events, jobs, and runners, along with explanatory text on workflows, events, jobs, steps, and actions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883363/notes-assets/images/Python-API-Development-with-FastAPI-Configuring-First-CI-CD-Pipeline/github-actions-diagram-workflows.jpg)
-</Frame>
+![The image shows a webpage from GitHub Docs about GitHub Actions, featuring a diagram of components like events, jobs, and runners, along with explanatory text on workflows, events, jobs, steps, and actions.](https://kodekloud.com/kk-media/image/upload/v1752883363/notes-assets/images/Python-API-Development-with-FastAPI-Configuring-First-CI-CD-Pipeline/github-actions-diagram-workflows.jpg)
 
 Below is an example of a job with two straightforward steps:
 
@@ -193,9 +185,7 @@ In this example:
 
 For more advanced checkout options (e.g., specifying a branch or using SSH), refer to the [actions/checkout documentation](https://github.com/actions/checkout).
 
-<Frame>
-  ![The image shows a GitHub page detailing the usage instructions for the "actions/checkout" action, including configuration options like repository, branch, and personal access token. The browser window displays multiple open tabs and a visible taskbar at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883364/notes-assets/images/Python-API-Development-with-FastAPI-Configuring-First-CI-CD-Pipeline/github-actions-checkout-usage.jpg)
-</Frame>
+![The image shows a GitHub page detailing the usage instructions for the "actions/checkout" action, including configuration options like repository, branch, and personal access token. The browser window displays multiple open tabs and a visible taskbar at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752883364/notes-assets/images/Python-API-Development-with-FastAPI-Configuring-First-CI-CD-Pipeline/github-actions-checkout-usage.jpg)
 
 ***
 
@@ -211,9 +201,7 @@ git push origin main
 
 Once pushed, navigate to the "Actions" tab in your GitHub repository. You will see an entry corresponding to your commit (e.g., "adding first GitHub action"). Click the entry to view the detailed job log, which displays each executed step.
 
-<Frame>
-  ![The image shows a GitHub Actions interface with a job log for a workflow titled "adding first github action Build and Deploy Code #10." The log details various steps such as setting up the job, pulling the git repository, and completing the job.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883365/notes-assets/images/Python-API-Development-with-FastAPI-Configuring-First-CI-CD-Pipeline/github-actions-job-log-build-deploy.jpg)
-</Frame>
+![The image shows a GitHub Actions interface with a job log for a workflow titled "adding first github action Build and Deploy Code #10." The log details various steps such as setting up the job, pulling the git repository, and completing the job.](https://kodekloud.com/kk-media/image/upload/v1752883365/notes-assets/images/Python-API-Development-with-FastAPI-Configuring-First-CI-CD-Pipeline/github-actions-job-log-build-deploy.jpg)
 
 Key highlights from the job log include:
 
@@ -227,12 +215,8 @@ Key highlights from the job log include:
 
 This simple CI/CD pipeline demonstrates how GitHub Actions can automate tasks such as checking out code, running tests, and executing custom commands on a Linux runner. While GitHub Actions offers free build minutes on their hosted solution, you might consider self-hosted runners if your usage needs increase.
 
-<Callout icon="lightbulb">
-  By now, you should have a clear understanding of how to configure your first GitHub Actions workflow and trigger it using pushes or pull requests. Feel free to customize and extend this setup to match your project requirements.
-</Callout>
+> **lightbulb** By now, you should have a clear understanding of how to configure your first GitHub Actions workflow and trigger it using pushes or pull requests. Feel free to customize and extend this setup to match your project requirements.
 
 Happy Coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/4979410a-af57-460b-8f71-5a177fa10d2d/lesson/3f706649-5b36-4005-972a-d9528a21ef63" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/4979410a-af57-460b-8f71-5a177fa10d2d/lesson/3f706649-5b36-4005-972a-d9528a21ef63)

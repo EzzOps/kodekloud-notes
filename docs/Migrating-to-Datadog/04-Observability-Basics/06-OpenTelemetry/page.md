@@ -61,9 +61,7 @@ Telemetry sources send data to the Collector, which ingests, optionally transfor
   <img alt="The image illustrates the components of OpenTelemetry, including microservices, shared infrastructure, client instrumentation, and observability frontends, all connecting through the OTel Collector." />
 </Frame>
 
-<Callout icon="lightbulb">
-  The OpenTelemetry Collector can be deployed as an agent (sidecar or node-level) close to your applications, or as a gateway (centralized) to receive and forward telemetry from multiple sources — choose the deployment model that matches your scaling and security needs.
-</Callout>
+> **lightbulb** The OpenTelemetry Collector can be deployed as an agent (sidecar or node-level) close to your applications, or as a gateway (centralized) to receive and forward telemetry from multiple sources — choose the deployment model that matches your scaling and security needs.
 
 Benefits of using OpenTelemetry
 
@@ -97,6 +95,4 @@ References and further reading
 
 That's it for now.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9d4795bc-91eb-4262-ae9c-f7153c17438e/lesson/6ae3aba8-e817-431e-b178-f53c13806fdc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/9d4795bc-91eb-4262-ae9c-f7153c17438e/lesson/6ae3aba8-e817-431e-b178-f53c13806fdc)

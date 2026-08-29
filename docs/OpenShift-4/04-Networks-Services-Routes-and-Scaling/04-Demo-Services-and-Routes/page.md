@@ -66,15 +66,11 @@ Once the file is ready, use the Import YAML/JSON option in the OpenShift console
 
 After the service is created, click on it to view its details.
 
-<Frame>
-  ![The image shows the OpenShift Origin web console displaying a list of services for a project named "My WebApplication." It includes details like service names, cluster IPs, ports, selectors, and age.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882678/notes-assets/images/OpenShift-4-Demo-Services-and-Routes/openshift-origin-web-console-services.jpg)
-</Frame>
+![The image shows the OpenShift Origin web console displaying a list of services for a project named "My WebApplication." It includes details like service names, cluster IPs, ports, selectors, and age.](https://kodekloud.com/kk-media/image/upload/v1752882678/notes-assets/images/OpenShift-4-Demo-Services-and-Routes/openshift-origin-web-console-services.jpg)
 
 An IP address (for example, 172.30.163.74) is now automatically assigned to your service. This IP address allows internal traffic to reach your application, although it is not exposed for external access.
 
-<Frame>
-  ![The image shows an OpenShift Origin web console displaying details of a service named "simple-webapp-docker," including its IP, hostname, and pod status. The console provides information about traffic routes and pod readiness.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882679/notes-assets/images/OpenShift-4-Demo-Services-and-Routes/openshift-origin-simple-webapp-details.jpg)
-</Frame>
+![The image shows an OpenShift Origin web console displaying details of a service named "simple-webapp-docker," including its IP, hostname, and pod status. The console provides information about traffic routes and pod readiness.](https://kodekloud.com/kk-media/image/upload/v1752882679/notes-assets/images/OpenShift-4-Demo-Services-and-Routes/openshift-origin-simple-webapp-details.jpg)
 
 To verify internal connectivity, log into the OpenShift cluster console (e.g., using the Minishift VM) and run a curl command against the assigned IP address and port.
 
@@ -82,19 +78,13 @@ To verify internal connectivity, log into the OpenShift cluster console (e.g., u
 
 To expose your application to external users, you need to create a route. You can achieve this via a YAML-based approach or through the OpenShift web console. To use the UI, click on the Create Route link and fill in details such as name and hostname. If you leave the hostname blank, OpenShift generates one based on your application name.
 
-<Frame>
-  ![The image shows the OpenShift Web Console interface, specifically the "Create Route" page for setting up a route for an application. It includes fields for name, hostname, path, service, and target port.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882681/notes-assets/images/OpenShift-4-Demo-Services-and-Routes/openshift-web-console-create-route.jpg)
-</Frame>
+![The image shows the OpenShift Web Console interface, specifically the "Create Route" page for setting up a route for an application. It includes fields for name, hostname, path, service, and target port.](https://kodekloud.com/kk-media/image/upload/v1752882681/notes-assets/images/OpenShift-4-Demo-Services-and-Routes/openshift-web-console-create-route.jpg)
 
-<Callout icon="lightbulb">
-  If you opt for a custom hostname (e.g., [www.example.com](http://www.example.com)), ensure your external DNS settings correctly route traffic to your OpenShift cluster. Routes within the cluster will then direct requests to the appropriate application based on the hostname.
-</Callout>
+> **lightbulb** If you opt for a custom hostname (e.g., [www.example.com](http://www.example.com)), ensure your external DNS settings correctly route traffic to your OpenShift cluster. Routes within the cluster will then direct requests to the appropriate application based on the hostname.
 
 After configuring the route with your desired settings (or simply accepting the default configuration), create the route. Once complete, the generated hostname will appear in the service details.
 
-<Frame>
-  ![The image shows the OpenShift web console displaying details of a service named "simple-webapp-docker," including its route, service port, and pod status. The console indicates that the route was successfully created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882682/notes-assets/images/OpenShift-4-Demo-Services-and-Routes/openshift-web-console-simple-webapp.jpg)
-</Frame>
+![The image shows the OpenShift web console displaying details of a service named "simple-webapp-docker," including its route, service port, and pod status. The console indicates that the route was successfully created.](https://kodekloud.com/kk-media/image/upload/v1752882682/notes-assets/images/OpenShift-4-Demo-Services-and-Routes/openshift-web-console-simple-webapp.jpg)
 
 Clicking the generated link will take you directly to your application.
 
@@ -121,6 +111,4 @@ Once the build and deployment processes are complete, refresh your browser to ve
 
 This guide has walked you through the process of setting up services and routes in OpenShift to enable internal and external access for your application. With these configurations, you can efficiently manage how your applications are exposed and accessed. Stay tuned for more in-depth topics in our upcoming sections!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/ec611802-285c-4fb9-b13e-26eb84f4ec7d/lesson/cf54dd72-752d-4535-8dd5-14233161ea75" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/ec611802-285c-4fb9-b13e-26eb84f4ec7d/lesson/cf54dd72-752d-4535-8dd5-14233161ea75)

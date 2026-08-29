@@ -17,9 +17,7 @@ Kubernetes automatically provisions DNS entries in the format:
 * `svc` is the services subdomain
 * `cluster.local` is the default cluster domain
 
-<Callout icon="lightbulb">
-  You can customize the cluster domain via the `--cluster-domain` flag in kubelet and kube-apiserver configurations.
-</Callout>
+> **lightbulb** You can customize the cluster domain via the `--cluster-domain` flag in kubelet and kube-apiserver configurations.
 
 ## Working with Namespaces in kubectl
 
@@ -103,9 +101,7 @@ Rather than appending `--namespace=`, set a default in your current context:
 kubectl config set-context --current --namespace=dev
 ```
 
-<Callout icon="triangle-alert">
-  Switching contexts affects all future `kubectl` commands in your shell. Confirm with `kubectl config view --minify`.
-</Callout>
+> **triangle-alert** Switching contexts affects all future `kubectl` commands in your shell. Confirm with `kubectl config view --minify`.
 
 ## Resource Quotas
 
@@ -140,11 +136,9 @@ kubectl apply -f compute-quota.yaml
 
 Practice creating, configuring, and managing namespaces to master multi-tenant Kubernetes clusters!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/2a7326ae-573b-4f39-b961-5604903fdc26" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/2a7326ae-573b-4f39-b961-5604903fdc26)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/893b87ac-1758-4ac5-9f51-36641dde56ac" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/893b87ac-1758-4ac5-9f51-36641dde56ac)
 
 
 # Isolation and Segmentation Resource Quotas Limits
@@ -165,9 +159,7 @@ kubectl describe pod <pod-name>
 
 and checking for scheduling errors.
 
-<Frame>
-  ![The image shows a Kubernetes scheduling error message indicating insufficient CPU resources, with a visual representation of CPU and memory usage across three nodes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880785/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Resource-Quotas-Limits/kubernetes-scheduling-error-cpu-usage.jpg)
-</Frame>
+![The image shows a Kubernetes scheduling error message indicating insufficient CPU resources, with a visual representation of CPU and memory usage across three nodes.](https://kodekloud.com/kk-media/image/upload/v1752880785/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Resource-Quotas-Limits/kubernetes-scheduling-error-cpu-usage.jpg)
 
 ## Defining Resource Requests
 
@@ -192,13 +184,9 @@ spec:
 
 CPU requests can be specified in cores (e.g., `"2"`) or millicores (e.g., `"200m"` = 0.2 CPU). The smallest unit is `1m`.
 
-<Callout icon="lightbulb">
-  One Kubernetes CPU core maps to one AWS vCPU, one GCP core, one Azure core, or one hyperthread.
-</Callout>
+> **lightbulb** One Kubernetes CPU core maps to one AWS vCPU, one GCP core, one Azure core, or one hyperthread.
 
-<Frame>
-  ![The image is a slide titled "Resource - CPU," showing a diagram of a CPU with a list detailing equivalences: 1 AWS vCPU, 1 GCP Core, 1 Azure Core, and 1 Hyperthread.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880786/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Resource-Quotas-Limits/resource-cpu-diagram-equivalences.jpg)
-</Frame>
+![The image is a slide titled "Resource - CPU," showing a diagram of a CPU with a list detailing equivalences: 1 AWS vCPU, 1 GCP Core, 1 Azure Core, and 1 Hyperthread.](https://kodekloud.com/kk-media/image/upload/v1752880786/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Resource-Quotas-Limits/resource-cpu-diagram-equivalences.jpg)
 
 ## Memory Units and Conversions
 
@@ -209,9 +197,7 @@ Memory can be defined using SI (e.g., `G`, `M`) or binary suffixes (e.g., `Gi`, 
 * `M`  = 10⁶ bytes
 * `Mi` = 2²⁰ bytes
 
-<Frame>
-  ![The image is a slide titled "Resource - Memory" showing a diagram labeled "MEM" with "1G" and a list of byte conversions for gigabytes, megabytes, kilobytes, gibibytes, mebibytes, and kibibytes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880788/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Resource-Quotas-Limits/resource-memory-diagram-byte-conversions.jpg)
-</Frame>
+![The image is a slide titled "Resource - Memory" showing a diagram labeled "MEM" with "1G" and a list of byte conversions for gigabytes, megabytes, kilobytes, gibibytes, mebibytes, and kibibytes.](https://kodekloud.com/kk-media/image/upload/v1752880788/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Resource-Quotas-Limits/resource-memory-diagram-byte-conversions.jpg)
 
 ## Setting Resource Limits
 
@@ -240,13 +226,9 @@ spec:
 * Exceeding the CPU limit results in throttling (slower CPU cycles).
 * Exceeding the memory limit triggers an OOM kill, terminating the container.
 
-<Callout icon="triangle-alert">
-  If a container exceeds its memory `limits`, Kubernetes will kill it with `OOMKilled`. Always set realistic memory limits to avoid unexpected terminations.
-</Callout>
+> **triangle-alert** If a container exceeds its memory `limits`, Kubernetes will kill it with `OOMKilled`. Always set realistic memory limits to avoid unexpected terminations.
 
-<Frame>
-  ![The image illustrates the concept of exceeding resource limits, showing a diagram with CPU and memory constraints, and indicating actions like "THROTTLE" and "TERMINATE" when limits are surpassed, leading to "OOM (Out Of Memory)."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880789/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Resource-Quotas-Limits/resource-limits-cpu-memory-diagram.jpg)
-</Frame>
+![The image illustrates the concept of exceeding resource limits, showing a diagram with CPU and memory constraints, and indicating actions like "THROTTLE" and "TERMINATE" when limits are surpassed, leading to "OOM (Out Of Memory)."](https://kodekloud.com/kk-media/image/upload/v1752880789/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Resource-Quotas-Limits/resource-limits-cpu-memory-diagram.jpg)
 
 ## Default Behavior and Best Practices
 
@@ -259,15 +241,11 @@ Without explicit settings, pods may compete unpredictably for node resources. Be
 | Requests and limits set | Guarantees `requests` and allows bursting up to `limits`.                 | Balanced workloads with predictable load. |
 | Requests set, no limits | Guarantees `requests` and allows bursting (throttled by other pods).      | Flexible, bursty workloads.               |
 
-<Frame>
-  ![The image illustrates different CPU behavior scenarios with varying configurations of requests and limits, using bar graphs to show resource allocation. It compares cases with no requests or limits, requests with limits, and requests without limits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880790/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Resource-Quotas-Limits/cpu-behavior-scenarios-bar-graphs.jpg)
-</Frame>
+![The image illustrates different CPU behavior scenarios with varying configurations of requests and limits, using bar graphs to show resource allocation. It compares cases with no requests or limits, requests with limits, and requests without limits.](https://kodekloud.com/kk-media/image/upload/v1752880790/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Resource-Quotas-Limits/cpu-behavior-scenarios-bar-graphs.jpg)
 
 Memory allocation follows similar patterns, except bursting beyond the limit always results in an immediate OOM kill.
 
-<Frame>
-  ![The image is a diagram illustrating memory behavior with different scenarios of requests and limits, using colored blocks to represent memory allocation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880791/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Resource-Quotas-Limits/memory-behavior-diagram-requests-limits.jpg)
-</Frame>
+![The image is a diagram illustrating memory behavior with different scenarios of requests and limits, using colored blocks to represent memory allocation.](https://kodekloud.com/kk-media/image/upload/v1752880791/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Resource-Quotas-Limits/memory-behavior-diagram-requests-limits.jpg)
 
 ## Enforcing Defaults with LimitRange
 
@@ -295,9 +273,7 @@ spec:
       memory: "1Gi"
 ```
 
-<Callout icon="lightbulb">
-  `LimitRange` only affects pods created after the object is applied. Existing pods retain their original settings.
-</Callout>
+> **lightbulb** `LimitRange` only affects pods created after the object is applied. Existing pods retain their original settings.
 
 ## Namespace-Wide Quotas with ResourceQuota
 
@@ -318,9 +294,7 @@ spec:
 
 This ensures no single team or namespace can exceed its allocated share.
 
-<Frame>
-  ![The image contains a list of documentation references related to managing memory, CPU, and API resources in Kubernetes, with URLs for further reading.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880792/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Resource-Quotas-Limits/kubernetes-memory-cpu-api-docs.jpg)
-</Frame>
+![The image contains a list of documentation references related to managing memory, CPU, and API resources in Kubernetes, with URLs for further reading.](https://kodekloud.com/kk-media/image/upload/v1752880792/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Isolation-and-Segmentation-Resource-Quotas-Limits/kubernetes-memory-cpu-api-docs.jpg)
 
 ## Links and References
 
@@ -331,8 +305,6 @@ This ensures no single team or namespace can exceed its allocated share.
 
 Complete the hands-on labs to reinforce these concepts. Happy clustering!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/b9af56d3-b4cb-4a43-b8e7-d47ad8ed06e0" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/b9af56d3-b4cb-4a43-b8e7-d47ad8ed06e0)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/8e27c03a-c53e-45c3-a0bc-decf1e4e7a50" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/0148994b-9ccc-4725-a77b-a4a63592152f/lesson/8e27c03a-c53e-45c3-a0bc-decf1e4e7a50)

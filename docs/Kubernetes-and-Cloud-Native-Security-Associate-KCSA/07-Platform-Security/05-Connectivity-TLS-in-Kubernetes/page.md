@@ -33,11 +33,9 @@ Before diving into Kubernetes-specific details, let’s recap the core concepts:
 
 ### Naming Conventions
 
-<Callout icon="lightbulb">
-  * Public certificates: use `.crt` or `.pem`
+> **lightbulb** * Public certificates: use `.crt` or `.pem`
   * Private keys: use `.key` or include “key” in the filename
   * Examples: `apiserver.crt` + `apiserver.key`, `client.pem`, `client-key.pem`
-</Callout>
 
 ***
 

@@ -120,9 +120,7 @@ Notes and practical tips
 * Export interval controls how often metrics are pushed to the exporter. In this example the reader is configured with `export_interval_millis=5000` to export every 5 seconds.
 * If your application can raise exceptions during request handling, consider ensuring the decrement always runs (see warning below).
 
-<Callout icon="warning">
-  If a request handler raises an exception, `after_request` may not always run. To guarantee the concurrent counter is decremented in all cases, consider using Flask's `teardown_request` (which runs for both successful and failed requests) or ensure exception paths also decrement the up-down counter.
-</Callout>
+> **warning** If a request handler raises an exception, `after_request` may not always run. To guarantee the concurrent counter is decremented in all cases, consider using Flask's `teardown_request` (which runs for both successful and failed requests) or ensure exception paths also decrement the up-down counter.
 
 Configuration summary
 
@@ -141,9 +139,7 @@ Links and references
 
 This pattern gives you both a cumulative throughput signal (total requests processed) and a live concurrency signal (current in-progress requests), enabling better observability and capacity planning for your web service.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/5fbd3985-9c0d-489f-86a8-88c10f4724ff" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/5fbd3985-9c0d-489f-86a8-88c10f4724ff)
 
 
 # Exemplars
@@ -198,9 +194,7 @@ using var meterProvider = Sdk.CreateMeterProviderBuilder()
     .Build();
 ```
 
-<Callout icon="lightbulb">
-  Setting `SetExemplarFilter(ExemplarFilterType.TraceBased)` tells the OpenTelemetry SDK to attach trace and span IDs to metric measurements when a trace is active, creating exemplars automatically.
-</Callout>
+> **lightbulb** Setting `SetExemplarFilter(ExemplarFilterType.TraceBased)` tells the OpenTelemetry SDK to attach trace and span IDs to metric measurements when a trace is active, creating exemplars automatically.
 
 How exemplars are captured and surfaced
 
@@ -260,6 +254,4 @@ Further reading and references
 
 That concludes this section about exemplars.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/e220557a-1a16-4b3e-9116-5b1d72122635" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/6fce855c-4275-48c0-9297-a7f98a292285/lesson/e220557a-1a16-4b3e-9116-5b1d72122635)

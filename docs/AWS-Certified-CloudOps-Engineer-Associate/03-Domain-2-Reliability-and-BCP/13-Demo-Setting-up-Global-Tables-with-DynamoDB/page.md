@@ -45,11 +45,11 @@ The CloudFormation template above automates the deployment of a DynamoDB table t
 
 After deploying the table, log in to the DynamoDB console to verify its configuration. Navigate to the table details and check the "Exports and streams" tab to ensure that the DynamoDB stream is enabled and configured to capture both new and old images. The following images illustrate the settings you should see:
 
-![The image shows an AWS DynamoDB console displaying details of a table named "CustomerData," including settings, partition key, sort key, and capacity mode. The table is active with no items and on-demand capacity mode.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860088/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-up-Global-Tables-with-DynamoDB/aws-dynamodb-customerdata-console.jpg)
+![The image shows an AWS DynamoDB console displaying details of a table named "CustomerData," including settings, partition key, sort key, and capacity mode. The table is active with no items and on-demand capacity mode.](https://kodekloud.com/kk-media/image/upload/v1752860088/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-up-Global-Tables-with-DynamoDB/aws-dynamodb-customerdata-console.jpg)
 
-![The image shows an AWS DynamoDB console interface focused on the "Exports and streams" tab for a table named "CustomerData," with options to export data to S3 and details about Amazon Kinesis and DynamoDB streams.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860089/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-up-Global-Tables-with-DynamoDB/aws-dynamodb-exports-streams-customerdata.jpg)
+![The image shows an AWS DynamoDB console interface focused on the "Exports and streams" tab for a table named "CustomerData," with options to export data to S3 and details about Amazon Kinesis and DynamoDB streams.](https://kodekloud.com/kk-media/image/upload/v1752860089/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-up-Global-Tables-with-DynamoDB/aws-dynamodb-exports-streams-customerdata.jpg)
 
-![The image shows an AWS DynamoDB console interface with details about data streams, including Amazon Kinesis and DynamoDB stream settings. The DynamoDB stream is active, and the view type is set to "New and old images."](../../../../images/kodekloud.com/kk-media/image/upload/v1752860090/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-up-Global-Tables-with-DynamoDB/aws-dynamodb-console-data-streams.jpg)
+![The image shows an AWS DynamoDB console interface with details about data streams, including Amazon Kinesis and DynamoDB stream settings. The DynamoDB stream is active, and the view type is set to "New and old images."](https://kodekloud.com/kk-media/image/upload/v1752860090/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-up-Global-Tables-with-DynamoDB/aws-dynamodb-console-data-streams.jpg)
 
 ## Creating Global Table Replicas
 
@@ -63,11 +63,11 @@ Currently, the table is set up in the US West 2 region. You have the option to c
 
 During the replica creation, the console displays a status—initially showing that the table is updating. Once replication is complete, the status will change to "active," and the replica region count will update accordingly.
 
-![The image shows a web interface for creating a replica in AWS, with options for selecting replication settings such as consistency type and available regions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860091/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-up-Global-Tables-with-DynamoDB/aws-replica-creation-interface.jpg)
+![The image shows a web interface for creating a replica in AWS, with options for selecting replication settings such as consistency type and available regions.](https://kodekloud.com/kk-media/image/upload/v1752860091/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-up-Global-Tables-with-DynamoDB/aws-replica-creation-interface.jpg)
 
 After completing the replica setup, switch to the North Virginia region to verify that the table has been successfully replicated. The Global Tables tab should display the new replica alongside the original table.
 
-![The image shows an AWS DynamoDB console screen, specifically the "Global tables" tab for a table named "CustomerData," with options to create or delete replicas.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860092/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-up-Global-Tables-with-DynamoDB/aws-dynamodb-global-tables-console.jpg)
+![The image shows an AWS DynamoDB console screen, specifically the "Global tables" tab for a table named "CustomerData," with options to create or delete replicas.](https://kodekloud.com/kk-media/image/upload/v1752860092/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-up-Global-Tables-with-DynamoDB/aws-dynamodb-global-tables-console.jpg)
 
 ## Testing Global Replication
 
@@ -75,7 +75,7 @@ Once the global table is fully configured, test the replication by inserting sam
 
 These entries will help you confirm that changes in one region are automatically replicated to the other. When you inspect the table in both Oregon and North Virginia, the presence of identical records verifies successful replication.
 
-![The image shows an AWS DynamoDB console interface displaying a table named "CustomerData" with options to scan or query items. Two entries are listed with customer IDs and order dates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752860093/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-up-Global-Tables-with-DynamoDB/aws-dynamodb-console-customerdata.jpg)
+![The image shows an AWS DynamoDB console interface displaying a table named "CustomerData" with options to scan or query items. Two entries are listed with customer IDs and order dates.](https://kodekloud.com/kk-media/image/upload/v1752860093/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Setting-up-Global-Tables-with-DynamoDB/aws-dynamodb-console-customerdata.jpg)
 
 ## Monitoring Replication Latency
 

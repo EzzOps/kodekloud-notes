@@ -22,7 +22,7 @@ Lifecycle policies can target:
 
 > **lightbulb** Lifecycle rules only move objects “downhill,” from a higher-cost class to a lower-cost class.
 
-![The image is a flowchart illustrating AWS S3 lifecycle policies, showing transitions between different storage classes like S3 Standard, S3 Intelligent-Tiering, and S3 Glacier Deep Archive.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869288/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Lifecycle-Policies/aws-s3-lifecycle-policies-flowchart.jpg)
+![The image is a flowchart illustrating AWS S3 lifecycle policies, showing transitions between different storage classes like S3 Standard, S3 Intelligent-Tiering, and S3 Glacier Deep Archive.](https://kodekloud.com/kk-media/image/upload/v1752869288/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Lifecycle-Policies/aws-s3-lifecycle-policies-flowchart.jpg)
 
 ## Storage Class Transition Rules
 
@@ -48,7 +48,7 @@ When defining lifecycle rules, observe these key constraints:
 
 For a full list of constraints and examples, see the [official AWS documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html).
 
-![The image is a flowchart showing the transition of AWS S3 storage classes from "S3 Standard" to various other classes like "S3 Standard-IA," "S3 One Zone-IA," and different "S3 Glacier" options, with a 30-day transition period.](../../../../images/kodekloud.com/kk-media/image/upload/v1752869288/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Lifecycle-Policies/aws-s3-storage-classes-flowchart.jpg)
+![The image is a flowchart showing the transition of AWS S3 storage classes from "S3 Standard" to various other classes like "S3 Standard-IA," "S3 One Zone-IA," and different "S3 Glacier" options, with a 30-day transition period.](https://kodekloud.com/kk-media/image/upload/v1752869288/notes-assets/images/Amazon-Simple-Storage-Service-Amazon-S3-Lifecycle-Policies/aws-s3-storage-classes-flowchart.jpg)
 
 ## Next Steps
 

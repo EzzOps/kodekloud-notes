@@ -30,7 +30,7 @@ Knowledge Mining is the process of extracting actionable insights from unstructu
 
 Generative AI is a dynamic field focused on creating original content, including text, images, music, and more. With its creative potential, Generative AI can produce artwork in specific styles or generate human-like text responses to prompts. Notable applications include [ChatGPT](https://openai.com/blog/chatgpt) and [GitHub Copilot in Action](https://learn.kodekloud.com/user/courses/github-copilot-in-action), making it a valuable tool for content creation, design, and software development.
 
-![The image is an infographic titled "Common AI Workloads," depicting six AI functions: Generative AI, Machine Learning, Computer Vision, Natural Language Processing, Document Intelligence, and Knowledge Mining, each with a brief description.](../../../../images/kodekloud.com/kk-media/image/upload/v1752856961/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Common-AI-Workloads/common-ai-workloads-infographic.jpg)
+![The image is an infographic titled "Common AI Workloads," depicting six AI functions: Generative AI, Machine Learning, Computer Vision, Natural Language Processing, Document Intelligence, and Knowledge Mining, each with a brief description.](https://kodekloud.com/kk-media/image/upload/v1752856961/notes-assets/images/AI-900-Microsoft-Certified-Azure-AI-Fundamentals-Common-AI-Workloads/common-ai-workloads-infographic.jpg)
 
 > **lightbulb** Now that you are familiar with the core AI workloads, continue reading to discover the principles of responsible AI in our next section.
 

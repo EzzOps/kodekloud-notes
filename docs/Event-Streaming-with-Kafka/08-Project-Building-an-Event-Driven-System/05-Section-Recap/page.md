@@ -15,9 +15,7 @@ producer.produce(
 )
 ```
 
-<Callout icon="lightbulb">
-  Producer delivery is asynchronous by default. To ensure delivery before shutdown, either call `producer.flush()` on shutdown or supply a delivery callback to confirm the message reached the broker.
-</Callout>
+> **lightbulb** Producer delivery is asynchronous by default. To ensure delivery before shutdown, either call `producer.flush()` on shutdown or supply a delivery callback to confirm the message reached the broker.
 
 Example terminal output from the front-end when placing an order:
 
@@ -41,9 +39,7 @@ Open the warehouse UI app (folder: `final-projects/warehouse`, file: `app.py`) a
   <img alt="The image shows the AWS EC2 dashboard with a running instance named &#x22;kafka-server.&#x22; Details such as the instance ID, state, type, and public IPV4 address are displayed." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Replace `bootstrap.servers` with the EC2 instance’s public IP and Kafka port (for example `54.234.163.236:9092`). This allows the consumer running locally (or from another host) to connect to the Kafka broker.
-</Callout>
+> **lightbulb** Replace `bootstrap.servers` with the EC2 instance’s public IP and Kafka port (for example `54.234.163.236:9092`). This allows the consumer running locally (or from another host) to connect to the Kafka broker.
 
 ### Consumer configuration notes
 
@@ -56,9 +52,7 @@ Below are the important consumer settings used by the warehouse dashboard and wh
 | `auto.offset.reset`  | Where to start when no committed offset exists.                                                                                       | `earliest`                |
 | `enable.auto.commit` | Whether offsets are auto-committed. We disable this to control processing.                                                            | `False`                   |
 
-<Callout icon="warning">
-  If you generate a new unique `group.id` on every run and do not commit offsets, the consumer will re-read messages from the earliest offset each time. For normal operation, use a stable `group.id` and commit offsets to avoid duplicate processing.
-</Callout>
+> **warning** If you generate a new unique `group.id` on every run and do not commit offsets, the consumer will re-read messages from the earliest offset each time. For normal operation, use a stable `group.id` and commit offsets to avoid duplicate processing.
 
 ## Consumer implementation used by the warehouse UI
 
@@ -167,11 +161,9 @@ This completes the end-to-end demo for the warehouse backend UI. See you in the 
 * [Apache Kafka Documentation](https://kafka.apache.org/documentation/)
 * [confluent-kafka-python (Confluent)](https://github.com/confluentinc/confluent-kafka-python)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/event-streaming-with-kafka/module/95f49caf-8e0b-4ed9-b7dd-9f43ff31ed9a/lesson/52d6f4ac-f228-47d9-b3fd-f46e6605c637" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/event-streaming-with-kafka/module/95f49caf-8e0b-4ed9-b7dd-9f43ff31ed9a/lesson/52d6f4ac-f228-47d9-b3fd-f46e6605c637)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/event-streaming-with-kafka/module/95f49caf-8e0b-4ed9-b7dd-9f43ff31ed9a/lesson/b8ac19cd-cf27-4e2b-9b13-059c78ae7c23" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/event-streaming-with-kafka/module/95f49caf-8e0b-4ed9-b7dd-9f43ff31ed9a/lesson/b8ac19cd-cf27-4e2b-9b13-059c78ae7c23)
 
 
 # Section Recap
@@ -210,9 +202,7 @@ Key phases at a glance
 | Consumer (dashboard)    | Consume, deserialize, and update UI | Configure consumer group, offset strategy (earliest/latest), and deserializer       |
 | Validation & monitoring | Confirm end-to-end delivery         | Use producer/consumer CLI tools or integration tests; monitor lag and broker health |
 
-<Callout icon="lightbulb">
-  Testing tip: Validate each stage independently. Produce test events directly to the Kafka topic, consume them with a simple CLI consumer, then verify the dashboard logic. This helps isolate producer, broker, and consumer issues.
-</Callout>
+> **lightbulb** Testing tip: Validate each stage independently. Produce test events directly to the Kafka topic, consume them with a simple CLI consumer, then verify the dashboard logic. This helps isolate producer, broker, and consumer issues.
 
 Links and references
 
@@ -228,6 +218,4 @@ Putting it together, the main steps were:
 
 I hope this recap gives you a clear, end-to-end view of building an event-driven system using Apache Kafka. See you in the next lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/event-streaming-with-kafka/module/95f49caf-8e0b-4ed9-b7dd-9f43ff31ed9a/lesson/e90a6252-9730-42b9-b4ed-f63e2220d9b9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/event-streaming-with-kafka/module/95f49caf-8e0b-4ed9-b7dd-9f43ff31ed9a/lesson/e90a6252-9730-42b9-b4ed-f63e2220d9b9)

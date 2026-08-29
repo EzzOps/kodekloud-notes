@@ -298,9 +298,7 @@ features, labels = next(iter(val_loader))
 print(f"Validation features shape: {features.size()}")
 ```
 
-<Callout icon="lightbulb">
-  Due to the use of random cropping in the training transformations, the spatial dimensions of training images (e.g., 75×75) might differ from the fixed dimensions of the validation images (128×128).
-</Callout>
+> **lightbulb** Due to the use of random cropping in the training transformations, the spatial dimensions of training images (e.g., 75×75) might differ from the fixed dimensions of the validation images (128×128).
 
 ***
 
@@ -317,11 +315,9 @@ Congratulations! You have now learned how to:
 
 With these foundational steps, you are well-equipped to proceed with model training using your custom data. For further guidance, consider reviewing resources like [PyTorch Documentation](https://pytorch.org/docs/stable/index.html) and [TorchVision Transforms](https://pytorch.org/vision/stable/transforms.html). Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/8c9ae3d2-aba2-49a0-808e-3b13de5783bc" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/8c9ae3d2-aba2-49a0-808e-3b13de5783bc)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/f2803cbe-4ce9-431a-9ab1-ca1eed46e8af" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pytorch/module/f9d4b50b-328e-4cf7-a22a-3b236bf0abcd/lesson/f2803cbe-4ce9-431a-9ab1-ca1eed46e8af)
 
 
 # Demo Datasets and Dataloaders

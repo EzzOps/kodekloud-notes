@@ -10,9 +10,9 @@ In this lesson, we will demonstrate how to generate and use pre-signed URLs with
 
 Begin by creating a new S3 bucket. During the bucket creation process, the default settings are maintained, including the configuration that blocks public access. This setting ensures that only authorized users (the root user and those with specific permissions) can access the bucket.
 
-![The image shows an Amazon Web Services (AWS) S3 console screen with settings for blocking public access to a bucket, including options for access control lists and bucket versioning.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859766/notes-assets/images/AWS-Certified-Developer-Associate-S3-Pres-Signed-URLs-Demo/aws-s3-console-block-public-access.jpg)
+![The image shows an Amazon Web Services (AWS) S3 console screen with settings for blocking public access to a bucket, including options for access control lists and bucket versioning.](https://kodekloud.com/kk-media/image/upload/v1752859766/notes-assets/images/AWS-Certified-Developer-Associate-S3-Pres-Signed-URLs-Demo/aws-s3-console-block-public-access.jpg)
 
-![The image shows an Amazon S3 console with a bucket named "kk-presigned-demo" created in the US East (N. Virginia) region. The bucket and objects are not public, and the creation date is April 6, 2023.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859766/notes-assets/images/AWS-Certified-Developer-Associate-S3-Pres-Signed-URLs-Demo/amazon-s3-kk-presigned-demo-bucket.jpg)
+![The image shows an Amazon S3 console with a bucket named "kk-presigned-demo" created in the US East (N. Virginia) region. The bucket and objects are not public, and the creation date is April 6, 2023.](https://kodekloud.com/kk-media/image/upload/v1752859766/notes-assets/images/AWS-Certified-Developer-Associate-S3-Pres-Signed-URLs-Demo/amazon-s3-kk-presigned-demo-bucket.jpg)
 
 > **lightbulb** Leaving public access blocked by default protects your data from unauthorized access.
 
@@ -20,7 +20,7 @@ Begin by creating a new S3 bucket. During the bucket creation process, the defau
 
 After creating the bucket, navigate to your "pre-signed demo" bucket and upload an object—for example, an image. When an authenticated user accesses the object, it loads as expected. However, if an unauthenticated (public) user attempts to access the object, they will encounter an "Access Denied" error due to the strict bucket permissions.
 
-![The image shows an Amazon S3 console interface displaying details of an object named "boat.jpg," including its size, type, and URLs. It also includes information about bucket properties and management configurations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859767/notes-assets/images/AWS-Certified-Developer-Associate-S3-Pres-Signed-URLs-Demo/amazon-s3-console-boatjpg-details.jpg)
+![The image shows an Amazon S3 console interface displaying details of an object named "boat.jpg," including its size, type, and URLs. It also includes information about bucket properties and management configurations.](https://kodekloud.com/kk-media/image/upload/v1752859767/notes-assets/images/AWS-Certified-Developer-Associate-S3-Pres-Signed-URLs-Demo/amazon-s3-console-boatjpg-details.jpg)
 
 The bucket permissions confirm that public access is blocked, and no policy exists to allow anonymous users.
 
@@ -35,7 +35,7 @@ To share an image with someone who does not have an AWS account, you can generat
 
 When someone accesses this URL within the active period, the embedded authentication information permits temporary access to the object.
 
-![The image shows an Amazon S3 permissions overview page, highlighting settings for blocking public access to a bucket. It indicates that public access is blocked and provides options to edit these settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859768/notes-assets/images/AWS-Certified-Developer-Associate-S3-Pres-Signed-URLs-Demo/amazon-s3-permissions-overview.jpg)
+![The image shows an Amazon S3 permissions overview page, highlighting settings for blocking public access to a bucket. It indicates that public access is blocked and provides options to edit these settings.](https://kodekloud.com/kk-media/image/upload/v1752859768/notes-assets/images/AWS-Certified-Developer-Associate-S3-Pres-Signed-URLs-Demo/amazon-s3-permissions-overview.jpg)
 
 ## User Permissions and Pre-Signed URLs
 
@@ -91,7 +91,7 @@ The following error messages illustrate what users might encounter when attempti
 </Error>
 ```
 
-![The image shows an Amazon S3 console screen with a pop-up window for sharing a file named "boat.jpg" using a presigned URL. The window allows setting a time interval for the URL's expiration in minutes or hours.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859769/notes-assets/images/AWS-Certified-Developer-Associate-S3-Pres-Signed-URLs-Demo/amazon-s3-presigned-url-sharing.jpg)
+![The image shows an Amazon S3 console screen with a pop-up window for sharing a file named "boat.jpg" using a presigned URL. The window allows setting a time interval for the URL's expiration in minutes or hours.](https://kodekloud.com/kk-media/image/upload/v1752859769/notes-assets/images/AWS-Certified-Developer-Associate-S3-Pres-Signed-URLs-Demo/amazon-s3-presigned-url-sharing.jpg)
 
 > **triangle-alert** The pre-signed URL only provides temporary authentication based on the permissions of the user who generated it. If the generating user lacks sufficient permissions to access the object, the URL will result in an "Access Denied" error for anyone who tries to use it.
 

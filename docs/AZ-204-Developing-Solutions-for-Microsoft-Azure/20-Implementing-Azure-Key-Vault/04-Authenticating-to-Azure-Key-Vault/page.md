@@ -19,7 +19,7 @@ Another approach is using a service principal. Creating an app registration in A
 * **Service Principal with Certificate:** Create and register a service principal, then generate a certificate for your application to authenticate with Azure Key Vault.
 * **Service Principal with Secret:** Traditionally, a secret is stored in the application for authentication. While this method is common, it is generally less secure compared to managed identities due to the challenges of securely managing secrets in your code.
 
-![The image illustrates three methods for authenticating to Azure Key Vault: managed identities for Azure resources, service principal and certificate, and service principal and secret.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866629/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authenticating-to-Azure-Key-Vault/azure-key-vault-authentication-methods.jpg)
+![The image illustrates three methods for authenticating to Azure Key Vault: managed identities for Azure resources, service principal and certificate, and service principal and secret.](https://kodekloud.com/kk-media/image/upload/v1752866629/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authenticating-to-Azure-Key-Vault/azure-key-vault-authentication-methods.jpg)
 
 ## Authenticating with Code Libraries and APIs
 
@@ -32,7 +32,7 @@ PUT /keys/MYKEY?api-version=<api_version> HTTP/1.1
 Authorization: Bearer <access_token>
 ```
 
-![The image is a table showing how to authenticate to Azure Key Vault using different programming languages (.NET, Python, Java, JavaScript) with their respective Azure Identity SDKs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866630/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authenticating-to-Azure-Key-Vault/azure-key-vault-authentication-table.jpg)
+![The image is a table showing how to authenticate to Azure Key Vault using different programming languages (.NET, Python, Java, JavaScript) with their respective Azure Identity SDKs.](https://kodekloud.com/kk-media/image/upload/v1752866630/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authenticating-to-Azure-Key-Vault/azure-key-vault-authentication-table.jpg)
 
 ## Authenticating from an Azure Function
 
@@ -40,9 +40,9 @@ This section demonstrates how to authenticate to Azure Key Vault from an Azure F
 
 Before you begin, ensure an app registration is created and the corresponding secret is generated. Additionally, verify that your service principal has the necessary permissions (e.g., the "secret user" role) in the Key Vault.
 
-![The image shows a Microsoft Azure portal interface displaying details of a function app named "getmedbstring," including its status, location, and associated functions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866631/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authenticating-to-Azure-Key-Vault/azure-portal-function-app-getmedbstring.jpg)
+![The image shows a Microsoft Azure portal interface displaying details of a function app named "getmedbstring," including its status, location, and associated functions.](https://kodekloud.com/kk-media/image/upload/v1752866631/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authenticating-to-Azure-Key-Vault/azure-portal-function-app-getmedbstring.jpg)
 
-![The image shows the Microsoft Azure portal, specifically the Access Control (IAM) section for a key vault named "akvaz204." It displays options for checking access, role assignments, and managing permissions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866632/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authenticating-to-Azure-Key-Vault/azure-portal-access-control-akvaz204.jpg)
+![The image shows the Microsoft Azure portal, specifically the Access Control (IAM) section for a key vault named "akvaz204." It displays options for checking access, role assignments, and managing permissions.](https://kodekloud.com/kk-media/image/upload/v1752866632/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authenticating-to-Azure-Key-Vault/azure-portal-access-control-akvaz204.jpg)
 
 Below is an example C# Azure Function that retrieves essential environment variables—such as tenant ID, client ID, client secret, Key Vault URL, and secret name—and uses these values to connect to Key Vault, securely retrieving a secret.
 
@@ -138,6 +138,6 @@ The value of the secret 'sql-conn-string' is: Data Source=airports;Database=airp
 
 > **lightbulb** Storing sensitive configuration details, such as client secrets and tenant IDs, directly in environment variables is a common practice but not ideal for long-term security. Consider transitioning to managed identities for enhanced security and simplified credential management.
 
-![The image shows a Microsoft Azure portal displaying environment variables for a function app named "getmedbstring." It lists various variables with options to show their values, edit, or delete them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866634/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authenticating-to-Azure-Key-Vault/azure-portal-function-app-variables.jpg)
+![The image shows a Microsoft Azure portal displaying environment variables for a function app named "getmedbstring." It lists various variables with options to show their values, edit, or delete them.](https://kodekloud.com/kk-media/image/upload/v1752866634/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Authenticating-to-Azure-Key-Vault/azure-portal-function-app-variables.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/az-204-developing-solutions-for-microsoft-azure/module/49244587-2545-429d-974d-1856a8953562/lesson/c0acf6a8-7243-47a5-8863-88a90e4b79ee)

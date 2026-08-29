@@ -14,9 +14,7 @@ This course is practical and hands-on: you’ll work through labs, make mistakes
   <img alt="The image shows a split screen with a text-based task on the left explaining how to access a Gitea server and a terminal window on the right displaying a welcome message from KodeKloud. There is also a video overlay of a person speaking." />
 </Frame>
 
-<Callout icon="lightbulb">
-  This course emphasizes labs and exercises so you can practice GitOps patterns and tooling in realistic scenarios.
-</Callout>
+> **lightbulb** This course emphasizes labs and exercises so you can practice GitOps patterns and tooling in realistic scenarios.
 
 ## What you’ll learn (at a glance)
 
@@ -57,9 +55,7 @@ A common, secure flow to keep secrets in Git using Bitnami Sealed Secrets:
 
 Warning: Never commit plain `Secret` YAML (base64 or otherwise) to public repositories.
 
-<Callout icon="warning">
-  Always ensure the private key for Sealed Secrets remains secure. Only encrypted `SealedSecret` manifests belong in Git. Avoid storing unencrypted secrets or private keys in repositories.
-</Callout>
+> **warning** Always ensure the private key for Sealed Secrets remains secure. Only encrypted `SealedSecret` manifests belong in Git. Avoid storing unencrypted secrets or private keys in repositories.
 
 Example: create a Secret manifest locally and produce a sealed secret
 

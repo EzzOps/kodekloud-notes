@@ -15,9 +15,7 @@ Below are the key components for this integration.
   <img alt="A screenshot of a code editor (likely VS Code) with a project sidebar on the left and an open text file on the right. The document shows an ASCII-style &#x22;KEY COMPONENTS&#x22; section describing a Slack app, a Python Slack bot, and a kagent agent." />
 </Frame>
 
-<Callout icon="lightbulb">
-  This article does not cover Slack app creation specifics because that depends on your organization's Slack configuration. At a minimum you will need a bot token and an app token with appropriate scopes (`chat:write` and `commands`) and [Socket Mode](https://api.slack.com/apis/connections/socket-mode) enabled for local development.
-</Callout>
+> **lightbulb** This article does not cover Slack app creation specifics because that depends on your organization's Slack configuration. At a minimum you will need a bot token and an app token with appropriate scopes (`chat:write` and `commands`) and [Socket Mode](https://api.slack.com/apis/connections/socket-mode) enabled for local development.
 
 ## Key components (overview)
 
@@ -72,9 +70,7 @@ SLACK_APP_TOKEN=xapp-1-...
 KAGENT_A2A_URL=http://127.0.0.1:8083/api/a2a/kagent/my-k8s-agent/
 ```
 
-<Callout icon="warning">
-  Do not commit tokens or secrets to source control. Use Kubernetes Secrets or a secret manager for production credentials. Rotate tokens if they are accidentally exposed.
-</Callout>
+> **warning** Do not commit tokens or secrets to source control. Use Kubernetes Secrets or a secret manager for production credentials. Rotate tokens if they are accidentally exposed.
 
 ## Slack -> KAgent request flow (high-level)
 

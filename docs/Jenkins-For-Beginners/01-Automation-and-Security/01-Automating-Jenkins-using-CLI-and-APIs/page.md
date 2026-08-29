@@ -12,9 +12,7 @@ Jenkins offers powerful automation capabilities that can significantly improve y
 
 The Jenkins CLI allows both users and administrators to interact directly with Jenkins from a shell or script, streamlining daily tasks and integrations. You can access the CLI over SSH or via a downloadable Java-based client. When using SSH, note that the SSH service is disabled by default. Jenkins will select a random port for SSH connections, so you need to determine the port number first.
 
-<Callout icon="lightbulb">
-  Ensure that the SSH service is enabled and your public key is added to the Jenkins user configuration before attempting SSH-based sessions.
-</Callout>
+> **lightbulb** Ensure that the SSH service is enabled and your public key is added to the Jenkins user configuration before attempting SSH-based sessions.
 
 ### Retrieve the SSH Port
 

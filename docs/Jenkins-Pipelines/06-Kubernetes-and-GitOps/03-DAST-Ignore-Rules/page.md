@@ -43,9 +43,7 @@ FAIL-NEW: 0  WARN-INPROG: 0  INFO: 0 IGNORE: 0  PASS: 112
 script returned exit code 2
 ```
 
-<Callout icon="lightbulb">
-  For demonstration purposes, this guide explains how to bypass errors. In production, always address the underlying vulnerabilities.
-</Callout>
+> **lightbulb** For demonstration purposes, this guide explains how to bypass errors. In production, always address the underlying vulnerabilities.
 
 ## Ignoring Warnings During the Scan
 

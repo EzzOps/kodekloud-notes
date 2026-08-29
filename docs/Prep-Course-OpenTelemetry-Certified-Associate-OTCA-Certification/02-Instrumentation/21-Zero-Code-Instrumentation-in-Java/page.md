@@ -11,13 +11,9 @@ OTEL_TRACES_SAMPLER=traceidratio
 OTEL_TRACES_SAMPLER_ARG=0.2
 ```
 
-<Callout icon="lightbulb">
-  Head-based sampling makes the decision at span creation time (in the SDK). Tail-based sampling can make decisions later based on whole-trace information; tail-based sampling is typically implemented in the OpenTelemetry Collector.
-</Callout>
+> **lightbulb** Head-based sampling makes the decision at span creation time (in the SDK). Tail-based sampling can make decisions later based on whole-trace information; tail-based sampling is typically implemented in the OpenTelemetry Collector.
 
-<Callout icon="warning">
-  Avoid AlwaysOn in high-volume production unless you have capacity for the inbound throughput, storage, and query costs. Use rate-limited or ratio-based sampling for scalable production environments.
-</Callout>
+> **warning** Avoid AlwaysOn in high-volume production unless you have capacity for the inbound throughput, storage, and query costs. Use rate-limited or ratio-based sampling for scalable production environments.
 
 Recap — best practices and recommendations
 
@@ -40,9 +36,7 @@ Links and references
 * OpenTelemetry Collector: [https://opentelemetry.io/docs/collector/](https://opentelemetry.io/docs/collector/)
 * SDK sampling configuration: [https://opentelemetry.io/docs/reference/specification/sdk-environment-variables/](https://opentelemetry.io/docs/reference/specification/sdk-environment-variables/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/5f36117a-7eed-41a5-b698-a4d5b22cb5f4" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/5f36117a-7eed-41a5-b698-a4d5b22cb5f4)
 
 
 # Zero Code Instrumentation in Java
@@ -117,9 +111,7 @@ java -javaagent:path/to/opentelemetry-javaagent.jar \
   -jar myapp.jar
 ```
 
-<Callout icon="lightbulb">
-  For container deployments, environment variables (`OTEL_*`) are generally preferable to JVM `-D` properties because they integrate cleanly with container orchestration, secrets, and configuration management.
-</Callout>
+> **lightbulb** For container deployments, environment variables (`OTEL_*`) are generally preferable to JVM `-D` properties because they integrate cleanly with container orchestration, secrets, and configuration management.
 
 Two primary configuration channels:
 

@@ -14,13 +14,9 @@ The `terragrunt init` command sets up your working directory based on `terragrun
 * Module dependency resolution and download
 * Backend initialization for state management
 
-<Callout icon="lightbulb">
-  Terragrunt automatically inherits backend settings from your root `terragrunt.hcl`. If you modify source or backend blocks, re-run `terragrunt init`.
-</Callout>
+> **lightbulb** Terragrunt automatically inherits backend settings from your root `terragrunt.hcl`. If you modify source or backend blocks, re-run `terragrunt init`.
 
-<Frame>
-  ![The image illustrates the "Terragrunt init" process, highlighting components like Terragrunt.hcl, module dependencies, and provider plugins.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884326/notes-assets/images/Terragrunt-for-Beginners-terragrunt-init-and-validate/terragrunt-init-process-diagram.jpg)
-</Frame>
+![The image illustrates the "Terragrunt init" process, highlighting components like Terragrunt.hcl, module dependencies, and provider plugins.](https://kodekloud.com/kk-media/image/upload/v1752884326/notes-assets/images/Terragrunt-for-Beginners-terragrunt-init-and-validate/terragrunt-init-process-diagram.jpg)
 
 After initialization, your directory is ready for planning and applying infrastructure changes.
 
@@ -32,21 +28,15 @@ The `terragrunt validate` command performs a syntax and semantic check on your T
 * Verifies required variables and providers are defined
 * Catches common misconfigurations before planning
 
-<Frame>
-  ![The image illustrates the purpose of "Terragrunt validate," highlighting its role in verifying syntax and semantics and ensuring structured data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884327/notes-assets/images/Terragrunt-for-Beginners-terragrunt-init-and-validate/terragrunt-validate-syntax-semantics-illustration.jpg)
-</Frame>
+![The image illustrates the purpose of "Terragrunt validate," highlighting its role in verifying syntax and semantics and ensuring structured data.](https://kodekloud.com/kk-media/image/upload/v1752884327/notes-assets/images/Terragrunt-for-Beginners-terragrunt-init-and-validate/terragrunt-validate-syntax-semantics-illustration.jpg)
 
 Run `terragrunt validate` early to catch errors in development:
 
-<Frame>
-  ![The image is an infographic about "Terragrunt validate," highlighting its workflow benefits: running before planning, validating changes during development, and helping catch errors early.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884329/notes-assets/images/Terragrunt-for-Beginners-terragrunt-init-and-validate/terragrunt-validate-workflow-infographic.jpg)
-</Frame>
+![The image is an infographic about "Terragrunt validate," highlighting its workflow benefits: running before planning, validating changes during development, and helping catch errors early.](https://kodekloud.com/kk-media/image/upload/v1752884329/notes-assets/images/Terragrunt-for-Beginners-terragrunt-init-and-validate/terragrunt-validate-workflow-infographic.jpg)
 
 Under the hood, Terragrunt calls Terraform’s [`terraform validate`](https://www.terraform.io/cli/commands/validate):
 
-<Frame>
-  ![The image features the text "Terragrunt validate" with a Terraform logo and a magnifying glass icon, along with the phrase "Integration With Terraform" at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884329/notes-assets/images/Terragrunt-for-Beginners-terragrunt-init-and-validate/terragrunt-validate-terraform-integration.jpg)
-</Frame>
+![The image features the text "Terragrunt validate" with a Terraform logo and a magnifying glass icon, along with the phrase "Integration With Terraform" at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752884329/notes-assets/images/Terragrunt-for-Beginners-terragrunt-init-and-validate/terragrunt-validate-terraform-integration.jpg)
 
 ### Parallel Validation Across Modules
 
@@ -56,21 +46,15 @@ In large, modular projects you can run all validations in parallel:
 terragrunt run-all validate
 ```
 
-<Frame>
-  ![The image is a diagram highlighting features of "Terragrunt validate," including multiple modules, improved efficiency, and modular structures, with a focus on parallel execution.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884331/notes-assets/images/Terragrunt-for-Beginners-terragrunt-init-and-validate/terragrunt-validate-features-diagram.jpg)
-</Frame>
+![The image is a diagram highlighting features of "Terragrunt validate," including multiple modules, improved efficiency, and modular structures, with a focus on parallel execution.](https://kodekloud.com/kk-media/image/upload/v1752884331/notes-assets/images/Terragrunt-for-Beginners-terragrunt-init-and-validate/terragrunt-validate-features-diagram.jpg)
 
-<Callout icon="triangle-alert">
-  Running `run-all validate` may trigger API rate limits if modules share provider endpoints. Monitor your quotas during parallel execution.
-</Callout>
+> **triangle-alert** Running `run-all validate` may trigger API rate limits if modules share provider endpoints. Monitor your quotas during parallel execution.
 
 ### Best Practices
 
 Integrate `terragrunt validate` into your CI/CD pipeline to enforce checks before deployment:
 
-<Frame>
-  ![The image is about "Terragrunt validate" and highlights its inclusion in continuous integration pipelines and consistent validation, with a "Best Practices" button at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884332/notes-assets/images/Terragrunt-for-Beginners-terragrunt-init-and-validate/terragrunt-validate-ci-best-practices.jpg)
-</Frame>
+![The image is about "Terragrunt validate" and highlights its inclusion in continuous integration pipelines and consistent validation, with a "Best Practices" button at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752884332/notes-assets/images/Terragrunt-for-Beginners-terragrunt-init-and-validate/terragrunt-validate-ci-best-practices.jpg)
 
 ## Command Reference
 

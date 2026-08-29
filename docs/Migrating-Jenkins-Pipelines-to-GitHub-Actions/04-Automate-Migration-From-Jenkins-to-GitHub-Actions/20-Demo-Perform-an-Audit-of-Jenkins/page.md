@@ -59,9 +59,7 @@ Notes on the conversion:
 * Shell steps are converted into `run` steps using a single `bash` script block.
 * Sensitive values are preserved as secret references when they could be detected.
 
-<Callout icon="lightbulb">
-  Use `dry-run` when you want a local, inspectable conversion of a Jenkins job before migrating it into a repository. It helps validate transformation choices (actions, transformers, secrets) without modifying your repos.
-</Callout>
+> **lightbulb** Use `dry-run` when you want a local, inspectable conversion of a Jenkins job before migrating it into a repository. It helps validate transformation choices (actions, transformers, secrets) without modifying your repos.
 
 ## 4. Why use dry-run instead of audit?
 
@@ -141,9 +139,7 @@ Security tip: prefer environment variables or a credentials file to avoid exposi
 
 That's all for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/d95331a4-18de-4e10-959a-492bfa9930cd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/d95331a4-18de-4e10-959a-492bfa9930cd)
 
 
 # Demo Perform an Audit of Jenkins
@@ -408,16 +404,10 @@ For more about GitHub Actions and runners, see:
 * [GitHub Actions documentation](https://docs.github.com/en/actions)
 * [Jenkins documentation](https://www.jenkins.io/doc/)
 
-<Callout icon="lightbulb">
-  The audit provides a migration plan that highlights what can be auto-converted and what requires manual work. Use the per-job `config.json` and generated YAML as the authoritative reference when migrating each pipeline.
-</Callout>
+> **lightbulb** The audit provides a migration plan that highlights what can be auto-converted and what requires manual work. Use the per-job `config.json` and generated YAML as the authoritative reference when migrating each pipeline.
 
-<Callout icon="warning">
-  Scripted Jenkins pipelines are often unsupported by the importer and will appear as unsupported/failed — they require manual migration. Also, the importer redacts secrets and cannot provision self-hosted runners; you must recreate those manually in GitHub.
-</Callout>
+> **warning** Scripted Jenkins pipelines are often unsupported by the importer and will appear as unsupported/failed — they require manual migration. Also, the importer redacts secrets and cannot provision self-hosted runners; you must recreate those manually in GitHub.
 
 That's a summary of the audit process and how to interpret the generated artifacts. In subsequent lessons you can explore individual generated YAML files and run dry-run conversions for individual pipelines.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/8ceff64a-4fcc-43d0-b5f0-5dbe564aed33" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/8ceff64a-4fcc-43d0-b5f0-5dbe564aed33)

@@ -219,7 +219,7 @@ When you need to accept an unpredictable number of parameters, indexing each one
 
 Both `$@` and `$*` collect *all* positional arguments:
 
-![The image illustrates the special shell variables \$\* and \$@, accompanied by a graphic of twelve cylindrical objects arranged in a grid.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868618/notes-assets/images/Advanced-Bash-Scripting-Args/shell-variables-cylindrical-objects.jpg)
+![The image illustrates the special shell variables \$\* and \$@, accompanied by a graphic of twelve cylindrical objects arranged in a grid.](https://kodekloud.com/kk-media/image/upload/v1752868618/notes-assets/images/Advanced-Bash-Scripting-Args/shell-variables-cylindrical-objects.jpg)
 
 ```bash theme={null}
 #!/usr/bin/env bash
@@ -276,14 +276,14 @@ All arguments: one two three
 Argument: one two three
 ```
 
-![The image illustrates the concept of special shell variables \$\* and \$@, using a visual representation of containers and arrows.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868619/notes-assets/images/Advanced-Bash-Scripting-Args/special-shell-variables-visualization.jpg)
+![The image illustrates the concept of special shell variables \$\* and \$@, using a visual representation of containers and arrows.](https://kodekloud.com/kk-media/image/upload/v1752868619/notes-assets/images/Advanced-Bash-Scripting-Args/special-shell-variables-visualization.jpg)
 
 In the soda‐can analogy:
 
 * `$@` places each can in its own compartment.
 * `$*` pours all the soda into one big bottle—individual cans are no longer separate.
 
-![The image illustrates the difference between special shell variables \$@ and \$\*, using a visual representation of containers to show how they handle arguments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868620/notes-assets/images/Advanced-Bash-Scripting-Args/shell-variables-difference-visual.jpg)
+![The image illustrates the difference between special shell variables \$@ and \$\*, using a visual representation of containers to show how they handle arguments.](https://kodekloud.com/kk-media/image/upload/v1752868620/notes-assets/images/Advanced-Bash-Scripting-Args/shell-variables-difference-visual.jpg)
 
 ***
 
@@ -430,7 +430,7 @@ done
 * Use `"$*"` to aggregate them into a single string with a custom delimiter.
 * Always quote both to maintain consistent behavior across Bash versions and avoid word-splitting pitfalls.
 
-![The image shows a comparison between special shell variables \$@ and \$\*, with a recommendation to surround them with double quotes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868621/notes-assets/images/Advanced-Bash-Scripting-Args/shell-variables-comparison-doubles-quotes.jpg)
+![The image shows a comparison between special shell variables \$@ and \$\*, with a recommendation to surround them with double quotes.](https://kodekloud.com/kk-media/image/upload/v1752868621/notes-assets/images/Advanced-Bash-Scripting-Args/shell-variables-comparison-doubles-quotes.jpg)
 
 ***
 

@@ -44,13 +44,9 @@ The token verification process works as follows:
 3. If the recomputed signature matches the signature in the token, the token is considered valid.
 4. If the signatures do not match, the API rejects the token, ensuring that tampered tokens are not accepted.
 
-<Frame>
-  ![The image illustrates the purpose of a signature in token generation and verification, showing how a secret is used to create a signature that cannot be replicated without it. It includes a diagram of the process and a depiction of a hacker unable to generate an updated signature without the secret.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883329/notes-assets/images/Python-API-Development-with-FastAPI-Jwt-Token-Basics/signature-token-generation-diagram.jpg)
-</Frame>
+![The image illustrates the purpose of a signature in token generation and verification, showing how a secret is used to create a signature that cannot be replicated without it. It includes a diagram of the process and a depiction of a hacker unable to generate an updated signature without the secret.](https://kodekloud.com/kk-media/image/upload/v1752883329/notes-assets/images/Python-API-Development-with-FastAPI-Jwt-Token-Basics/signature-token-generation-diagram.jpg)
 
-<Callout icon="triangle-alert">
-  Always keep your secret key confidential. Exposure of this key compromises the integrity of your token-based system since attackers could generate valid tokens.
-</Callout>
+> **triangle-alert** Always keep your secret key confidential. Exposure of this key compromises the integrity of your token-based system since attackers could generate valid tokens.
 
 ## Summary
 
@@ -70,9 +66,7 @@ For further reading, check out the following resources:
 
 By mastering JWT token-based authentication, you ensure a secure and efficient method for user verification, keeping your API robust and scalable.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/61593d8f-9388-4731-ba31-38b60a4ec3d1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/61593d8f-9388-4731-ba31-38b60a4ec3d1)
 
 
 # Login Process Flow
@@ -87,9 +81,7 @@ When a user submits a login request, they provide an email and password (highlig
 
 The solution is to hash the submitted password using the same function that was used for hashing the original password during registration. If the hashed attempt matches the stored hash, the credentials are validated and an authentication token is generated and returned.
 
-<Frame>
-  ![The image illustrates a user login process involving an API, where an email and password are sent, the password is hashed, and a token is returned if the hashed password matches the stored hashed password.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883330/notes-assets/images/Python-API-Development-with-FastAPI-Login-Process-Flow/user-login-api-process-diagram.jpg)
-</Frame>
+![The image illustrates a user login process involving an API, where an email and password are sent, the password is hashed, and a token is returned if the hashed password matches the stored hashed password.](https://kodekloud.com/kk-media/image/upload/v1752883330/notes-assets/images/Python-API-Development-with-FastAPI-Login-Process-Flow/user-login-api-process-diagram.jpg)
 
 ## Creating the Login Path Operation
 
@@ -124,9 +116,7 @@ def login(user_credentials: schemas.UserLogin, db: Session = Depends(database.ge
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Invalid Credentials")
 ```
 
-<Frame>
-  ![The image shows a Visual Studio Code interface with Python code for a FastAPI application, including imports and a function definition for a login route. The terminal at the bottom displays a command prompt.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883331/notes-assets/images/Python-API-Development-with-FastAPI-Login-Process-Flow/vscode-python-fastapi-login-route.jpg)
-</Frame>
+![The image shows a Visual Studio Code interface with Python code for a FastAPI application, including imports and a function definition for a login route. The terminal at the bottom displays a command prompt.](https://kodekloud.com/kk-media/image/upload/v1752883331/notes-assets/images/Python-API-Development-with-FastAPI-Login-Process-Flow/vscode-python-fastapi-login-route.jpg)
 
 ## Validating the Password
 
@@ -168,13 +158,9 @@ def login(user_credentials: schemas.UserLogin, db: Session = Depends(database.ge
     return {"token": "example token"}
 ```
 
-<Frame>
-  ![The image shows a split-screen view of Visual Studio Code and Postman. Visual Studio Code displays a project directory with Python files, while Postman is set up to send a POST request to a local server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883333/notes-assets/images/Python-API-Development-with-FastAPI-Login-Process-Flow/vscode-postman-python-request.jpg)
-</Frame>
+![The image shows a split-screen view of Visual Studio Code and Postman. Visual Studio Code displays a project directory with Python files, while Postman is set up to send a POST request to a local server.](https://kodekloud.com/kk-media/image/upload/v1752883333/notes-assets/images/Python-API-Development-with-FastAPI-Login-Process-Flow/vscode-postman-python-request.jpg)
 
-<Callout icon="lightbulb">
-  Ensure that your utility functions and hashing mechanisms are consistent across your application to maintain security integrity.
-</Callout>
+> **lightbulb** Ensure that your utility functions and hashing mechanisms are consistent across your application to maintain security integrity.
 
 ## Testing the Login Endpoint
 
@@ -230,9 +216,7 @@ If the credentials are invalid, the API will respond with:
 }
 ```
 
-<Callout icon="triangle-alert">
-  Be cautious with error messages. It's best not to reveal which credential (email or password) is incorrect to enhance security.
-</Callout>
+> **triangle-alert** Be cautious with error messages. It's best not to reveal which credential (email or password) is incorrect to enhance security.
 
 ## Wiring Up the Router
 
@@ -261,6 +245,4 @@ For additional information, check out the following resources:
 * [FastAPI Documentation](https://fastapi.tiangolo.com/)
 * [Python Security Best Practices](https://docs.python.org/3/howto/security.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/a2b7b8c1-2c7d-4f28-8a94-9bd78a327e17" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/ed782f8c-495c-4ff8-8703-c9ab0ab04a4d/lesson/a2b7b8c1-2c7d-4f28-8a94-9bd78a327e17)

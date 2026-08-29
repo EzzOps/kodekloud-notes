@@ -5,9 +5,7 @@ validate:
   deny: {}
 ```
 
-<Callout icon="warning">
-  Use an empty `deny: {}` with caution. It will unconditionally block any request that reaches the rule, so ensure `match` and `exclude` are precise.
-</Callout>
+> **warning** Use an empty `deny: {}` with caution. It will unconditionally block any request that reaches the rule, so ensure `match` and `exclude` are precise.
 
 Best practices and tips
 
@@ -23,11 +21,9 @@ Links and references
 
 That's it for deny rules — they let you express powerful, context-aware policies by evaluating the full admission request in real time.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/79efb0c3-d76b-42e8-b9b5-27ec7a2c4e85" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/79efb0c3-d76b-42e8-b9b5-27ec7a2c4e85)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/59f7d445-cee2-4113-a806-95f1cefd076f" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/59f7d445-cee2-4113-a806-95f1cefd076f)
 
 
 # Failure Action Overrides
@@ -38,9 +34,7 @@ Explains Kyverno's failureActionOverrides for ClusterPolicies, allowing namespac
 
 Kyverno policies operate in two primary modes: `Audit` and `Enforce`. In many clusters you’ll want a single ClusterPolicy to behave differently depending on the target namespace—for example, strict enforcement in production but only auditing elsewhere. The `failureActionOverrides` field enables exactly that by letting you override a rule’s default `failureAction` for specific namespaces.
 
-<Callout icon="lightbulb">
-  Use `failureActionOverrides` to keep one ClusterPolicy that adapts per-namespace behavior instead of duplicating policies. This reduces policy sprawl and makes intent clearer.
-</Callout>
+> **lightbulb** Use `failureActionOverrides` to keep one ClusterPolicy that adapts per-namespace behavior instead of duplicating policies. This reduces policy sprawl and makes intent clearer.
 
 What is `failureActionOverrides`?
 
@@ -111,9 +105,7 @@ spec:
     ...
 ```
 
-<Callout icon="warning">
-  The top-level `validationFailureActionOverrides` is deprecated. Prefer placing `failureActionOverrides` inside each rule for finer-grained control and clearer intent.
-</Callout>
+> **warning** The top-level `validationFailureActionOverrides` is deprecated. Prefer placing `failureActionOverrides` inside each rule for finer-grained control and clearer intent.
 
 Best practices
 
@@ -128,6 +120,4 @@ References
 
 That's it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/8be9924f-5d88-4597-a2f0-51138214d91d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/8be9924f-5d88-4597-a2f0-51138214d91d)

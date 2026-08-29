@@ -8,9 +8,7 @@ In this guide, we explore various methods to compress and decompress files on Li
 
 Most Linux distributions come with several built-in compression utilities. The three most common are gzip, bzip2, and xz. Each of these tools offers a simple command-line interface.
 
-<Callout icon="lightbulb">
-  Using compression can significantly reduce file transfer times over slow networks.
-</Callout>
+> **lightbulb** Using compression can significantly reduce file transfer times over slow networks.
 
 ## Basic Compression Techniques
 
@@ -35,9 +33,7 @@ $ bunzip2 file2.bz2
 $ unxz file3.xz
 ```
 
-<Callout icon="triangle-alert">
-  By default, these commands delete the original uncompressed file. If you need to retain the source file, use the `-k` or `--keep` option.
-</Callout>
+> **triangle-alert** By default, these commands delete the original uncompressed file. If you need to retain the source file, use the `-k` or `--keep` option.
 
 ## Preserving Original Files
 

@@ -60,9 +60,7 @@ Common redirection operators:
 | 2> errors.txt               | Redirect stderr to errors.txt (overwrite) |
 | 2>> errors.txt              | Append stderr to errors.txt               |
 
-<Callout icon="lightbulb">
-  File descriptors: 0 = stdin, 1 = stdout, 2 = stderr. Use 2> to redirect error messages separately from normal output.
-</Callout>
+> **lightbulb** File descriptors: 0 = stdin, 1 = stdout, 2 = stderr. Use 2> to redirect error messages separately from normal output.
 
 ## Discard unwanted output: /dev/null
 
@@ -193,11 +191,9 @@ Pipes are essential for combining simple Unix tools into effective data-processi
 
 That’s all for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/7295b13d-8b26-4d1e-b5a2-6ef87502a7d9" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/7295b13d-8b26-4d1e-b5a2-6ef87502a7d9)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/9a83d820-3004-4b8c-916c-75249ac75581" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/9a83d820-3004-4b8c-916c-75249ac75581)
 
 
 # Introduction
@@ -208,9 +204,7 @@ This course teaches essential Linux skills through hands-on labs and interactive
 
 Welcome to **Linux System Administration for Beginners**! In this course, Aaron Lockhart guides you through essential Linux skills:
 
-<Frame>
-  ![The image shows a list of topics related to system administration skills, such as logging into systems, managing files, and user accounts, alongside a person speaking.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881487/notes-assets/images/Linux-System-Administration-for-Beginners-Introduction/system-administration-skills-topics-list.jpg)
-</Frame>
+![The image shows a list of topics related to system administration skills, such as logging into systems, managing files, and user accounts, alongside a person speaking.](https://kodekloud.com/kk-media/image/upload/v1752881487/notes-assets/images/Linux-System-Administration-for-Beginners-Introduction/system-administration-skills-topics-list.jpg)
 
 * Local and remote host login
 * Reading and using system documentation
@@ -243,9 +237,7 @@ By the end of this course, you'll have a high-level understanding of Linux and h
 
 Each concept includes a challenge-based lab with instant feedback. Try to solve each exercise yourself; hints and full solutions are available if you get stuck.
 
-<Callout icon="lightbulb">
-  Practice labs open directly in your browser—no installation needed. You can retry as many times as necessary before moving on.
-</Callout>
+> **lightbulb** Practice labs open directly in your browser—no installation needed. You can retry as many times as necessary before moving on.
 
 To get the most out of this course, minimize distractions—turn off mobile and desktop notifications—and dedicate focused time to follow the curriculum and complete labs in sequence.
 
@@ -273,6 +265,4 @@ In video demos, I’ll walk you through commands and utilities, showing real-wor
 * [Linux Documentation Project](http://tldp.org/)
 * [Stack Overflow Insights](https://insights.stackoverflow.com/survey)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/c73f5dce-79a1-407b-9924-dc437f02821a/lesson/42c65198-d27c-440f-9e1d-f7c3b357fc83" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/c73f5dce-79a1-407b-9924-dc437f02821a/lesson/42c65198-d27c-440f-9e1d-f7c3b357fc83)

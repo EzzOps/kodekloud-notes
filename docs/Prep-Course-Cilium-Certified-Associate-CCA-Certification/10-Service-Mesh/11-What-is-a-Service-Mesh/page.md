@@ -85,9 +85,7 @@ This separation enables developers to focus on business logic while platform or 
   <img alt="A presentation slide titled &#x22;Service Mesh – Introduction.&#x22; The central text states that a service mesh provides a dedicated infrastructure layer for managing service-to-service communication within a microservices architecture." />
 </Frame>
 
-<Callout icon="lightbulb">
-  A service mesh is the “smart socket” for microservices: attach a sidecar proxy to provide network, security, and observability features uniformly—without changing application code.
-</Callout>
+> **lightbulb** A service mesh is the “smart socket” for microservices: attach a sidecar proxy to provide network, security, and observability features uniformly—without changing application code.
 
 ## Popular service mesh implementations
 
@@ -110,6 +108,4 @@ If you use Cilium as your CNI, many service‑mesh capabilities (transparent enc
 
 These resources provide deeper technical details, deployment guides, and comparisons to help you choose the right mesh approach for your environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/080e2f80-b3f2-498d-b41f-4ecbbf3bc6dc" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/cilium-certified-associate-cca/module/50bb84d0-61e7-4f73-a51b-7da0e8338438/lesson/080e2f80-b3f2-498d-b41f-4ecbbf3bc6dc)

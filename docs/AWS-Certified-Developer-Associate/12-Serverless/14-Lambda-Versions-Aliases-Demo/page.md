@@ -12,7 +12,7 @@ In this guide, we'll explore how to work with AWS Lambda versions and aliases. Y
 
 Begin by creating a new Lambda function. For this demonstration, the function is named "demo Lambda." Once you access the AWS Lambda function creation page, you'll see a setup screen similar to the one below:
 
-![The image shows the AWS Lambda function creation page, where a function named "demo-lambda" is being set up with Node.js 20.x runtime and x86\_64 architecture.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859556/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Versions-Aliases-Demo/aws-lambda-demo-function-setup.jpg)
+![The image shows the AWS Lambda function creation page, where a function named "demo-lambda" is being set up with Node.js 20.x runtime and x86\_64 architecture.](https://kodekloud.com/kk-media/image/upload/v1752859556/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Versions-Aliases-Demo/aws-lambda-demo-function-setup.jpg)
 
 Next, update the function code to indicate that this is the first version of your code:
 
@@ -41,7 +41,7 @@ REPORT RequestId: 524d5615-d8ec-4287-aab8-66910483d1a4 Duration: 13.21 ms Billed
 
 When satisfied with version one, publish it by selecting "Publish new version" from the Actions menu. Use a description such as "This is v1" when prompted. AWS Lambda will then assign this as version 1 and redirect you to a page with the version details.
 
-![The image shows an AWS Lambda console with a function named "demo-lambda" at version 1. It includes options for adding triggers, destinations, and editing code.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859557/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Versions-Aliases-Demo/aws-lambda-console-demo-function.jpg)
+![The image shows an AWS Lambda console with a function named "demo-lambda" at version 1. It includes options for adding triggers, destinations, and editing code.](https://kodekloud.com/kk-media/image/upload/v1752859557/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Versions-Aliases-Demo/aws-lambda-console-demo-function.jpg)
 
 > **lightbulb** When viewing a specific version, note that the function code is read-only. To modify the code, return to the main Lambda page.
 
@@ -95,7 +95,7 @@ Aliases simplify the integration of Lambda functions with services such as API G
 
 Create an alias named "prod" to signify the production environment. Assign version one to the "prod" alias. The alias creation interface appears as follows:
 
-![The image shows an AWS Lambda interface for creating an alias, with fields for name, description, and version selection. The alias name is set to "prod."](../../../../images/kodekloud.com/kk-media/image/upload/v1752859558/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Versions-Aliases-Demo/aws-lambda-alias-creation-prod.jpg)
+![The image shows an AWS Lambda interface for creating an alias, with fields for name, description, and version selection. The alias name is set to "prod."](https://kodekloud.com/kk-media/image/upload/v1752859558/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Versions-Aliases-Demo/aws-lambda-alias-creation-prod.jpg)
 
 Once saved, running a test should confirm the alias invokes version one.
 
@@ -103,7 +103,7 @@ Once saved, running a test should confirm the alias invokes version one.
 
 Next, create an alias named "staging" and point it to version two. After creation, the Lambda console will show the alias:
 
-![The image shows an AWS Lambda console with an alias named "staging" pointing to a function called "demo-lambda." A green notification bar indicates the alias was successfully created and is pointing to version 2.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859559/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Versions-Aliases-Demo/aws-lambda-staging-alias-demo.jpg)
+![The image shows an AWS Lambda console with an alias named "staging" pointing to a function called "demo-lambda." A green notification bar indicates the alias was successfully created and is pointing to version 2.](https://kodekloud.com/kk-media/image/upload/v1752859559/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Versions-Aliases-Demo/aws-lambda-staging-alias-demo.jpg)
 
 Testing verifies that the "staging" alias correctly invokes version two.
 
@@ -132,7 +132,7 @@ Deploy these changes. Running tests on the "playground" alias should now display
 
 The AWS Lambda console showing multiple aliases looks like this:
 
-![The image shows an AWS Lambda console interface with a function named "demo-lambda." It displays details about the function, including aliases like "dev," "playground," "prod," and "staging."](../../../../images/kodekloud.com/kk-media/image/upload/v1752859560/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Versions-Aliases-Demo/aws-lambda-console-demo-function-2.jpg)
+![The image shows an AWS Lambda console interface with a function named "demo-lambda." It displays details about the function, including aliases like "dev," "playground," "prod," and "staging."](https://kodekloud.com/kk-media/image/upload/v1752859560/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Versions-Aliases-Demo/aws-lambda-console-demo-function-2.jpg)
 
 ***
 
@@ -147,7 +147,7 @@ Follow these steps to set up weighted aliases:
 
 The traffic distribution interface appears as follows:
 
-![The image shows an AWS Lambda interface for editing an alias, where traffic is being distributed between two versions with specified weights. Version 1 has a weight of 95%, and an additional version 2 has a weight of 5%.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859561/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Versions-Aliases-Demo/aws-lambda-alias-traffic-distribution.jpg)
+![The image shows an AWS Lambda interface for editing an alias, where traffic is being distributed between two versions with specified weights. Version 1 has a weight of 95%, and an additional version 2 has a weight of 5%.](https://kodekloud.com/kk-media/image/upload/v1752859561/notes-assets/images/AWS-Certified-Developer-Associate-Lambda-Versions-Aliases-Demo/aws-lambda-alias-traffic-distribution.jpg)
 
 After saving, the "prod" alias will route 50% of the traffic to version one and the other 50% to version two. Repeated tests should yield alternating outputs; for instance:
 

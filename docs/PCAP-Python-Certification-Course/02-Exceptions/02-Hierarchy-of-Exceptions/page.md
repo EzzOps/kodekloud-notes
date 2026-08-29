@@ -60,9 +60,7 @@ Invalid input value
 All done!
 ```
 
-<Callout icon="lightbulb">
-  When combining exceptions in a tuple, all specified exceptions are handled by the same code block. This method simplifies your code when similar error handling is required.
-</Callout>
+> **lightbulb** When combining exceptions in a tuple, all specified exceptions are handled by the same code block. This method simplifies your code when similar error handling is required.
 
 ## Raising Exceptions Inside Functions
 
@@ -162,9 +160,7 @@ def calculate_user_input():
 calculate_user_input()
 ```
 
-<Callout icon="triangle-alert">
-  When re-raising exceptions, ensure that you have already performed any necessary cleanup or logging. This practice maintains robust error handling in larger applications.
-</Callout>
+> **triangle-alert** When re-raising exceptions, ensure that you have already performed any necessary cleanup or logging. This practice maintains robust error handling in larger applications.
 
 ## Using the assert Keyword
 
@@ -202,8 +198,6 @@ For more detailed information, refer to the [Python documentation on built-in ex
 
 That concludes this lesson. Continue practicing and applying these concepts to develop robust error handling in your Python applications.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/8db6ee04-f51f-41fc-9539-029474f44a1b/lesson/59f80173-0a33-4128-bcec-6d243f0c34d2" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/8db6ee04-f51f-41fc-9539-029474f44a1b/lesson/59f80173-0a33-4128-bcec-6d243f0c34d2)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/8db6ee04-f51f-41fc-9539-029474f44a1b/lesson/02d42994-18b4-4e1d-8555-bd4e4ef7d6fa" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/pcap-python-certification-course/module/8db6ee04-f51f-41fc-9539-029474f44a1b/lesson/02d42994-18b4-4e1d-8555-bd4e4ef7d6fa)

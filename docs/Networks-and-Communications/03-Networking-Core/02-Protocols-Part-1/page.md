@@ -65,10 +65,8 @@ OSI vs. TCP/IP
 
 You may also hear about the OSI model, which defines seven layers (it separates session and presentation layers). OSI is a useful theoretical reference and helps with teaching and troubleshooting, but in practice the five-layer TCP/IP model is the widely implemented framework for the Internet. When people say "layer 4" in real-world contexts, they usually mean the transport layer.
 
-<Callout icon="lightbulb">
-  Encapsulation: wrapping data with protocol headers/trailers as it moves down the stack.\
+> **lightbulb** Encapsulation: wrapping data with protocol headers/trailers as it moves down the stack.\
   Decapsulation: removing those headers/trailers as it moves up the stack at the receiver.
-</Callout>
 
 Quick quiz
 
@@ -98,6 +96,4 @@ Next steps and references
 
 We’ll continue by examining specific protocols at each layer — their addresses, headers, and how routers, switches, and endpoints coordinate to keep networks running smoothly.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/networks-and-communications/module/a35e2604-798a-4eb8-a204-4c1b8a1d4943/lesson/dd67a653-b3ba-408b-b8b0-41d1339863a8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/networks-and-communications/module/a35e2604-798a-4eb8-a204-4c1b8a1d4943/lesson/dd67a653-b3ba-408b-b8b0-41d1339863a8)

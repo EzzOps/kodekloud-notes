@@ -22,10 +22,6 @@ Outbound rules manage traffic leaving your virtual network. They ensure that res
 
 Session persistence ensures that client requests within the same session are consistently directed to the same back-end instance. This is especially important when the application requires the preservation of state or context across sequential requests, thereby enhancing the overall user experience.
 
-<Callout icon="lightbulb">
-  Collectively, these rules provide a comprehensive framework for managing both inbound and outbound traffic in Azure environments. Implementing these configurations helps achieve optimized performance, high availability, and improved security for your applications.
-</Callout>
+> **lightbulb** Collectively, these rules provide a comprehensive framework for managing both inbound and outbound traffic in Azure environments. Implementing these configurations helps achieve optimized performance, high availability, and improved security for your applications.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/50248c52-4b17-4c2d-87f8-52a42eff2d2f/lesson/e4b6ed95-c6c8-42ca-a804-ae1589e8ff3c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/50248c52-4b17-4c2d-87f8-52a42eff2d2f/lesson/e4b6ed95-c6c8-42ca-a804-ae1589e8ff3c)

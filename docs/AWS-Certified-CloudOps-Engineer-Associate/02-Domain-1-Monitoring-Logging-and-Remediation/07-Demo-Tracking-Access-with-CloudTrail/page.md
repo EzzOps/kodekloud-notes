@@ -23,7 +23,7 @@ When you click on a specific event, detailed information is presented, including
 
 The image below illustrates a typical AWS CloudTrail event history page, showcasing a "ModifyManagedPrefixList" event that includes key details like event time, user name, AWS region, and source IP address.
 
-![The image shows an AWS CloudTrail event history page detailing a "ModifyManagedPrefixList" event, including information such as event time, user name, AWS region, and source IP address.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859935/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Tracking-Access-with-CloudTrail/aws-cloudtrail-modify-managed-prefix-list.jpg)
+![The image shows an AWS CloudTrail event history page detailing a "ModifyManagedPrefixList" event, including information such as event time, user name, AWS region, and source IP address.](https://kodekloud.com/kk-media/image/upload/v1752859935/notes-assets/images/AWS-Certified-SysOps-Administrator-Associate-Demo-Tracking-Access-with-CloudTrail/aws-cloudtrail-modify-managed-prefix-list.jpg)
 
 > **lightbulb** Reviewing the event details confirms any modifications made — such as a change to the network prefix list. The log indicates a successful update, the use of SSL/TLS settings, and the activation of multi-factor authentication (MFA).
 

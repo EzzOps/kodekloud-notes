@@ -10,49 +10,35 @@ DevOps engineering is at a crossroads. As AI accelerates automation, our respons
 
 Gone are the days of manually running `kubectl` commands for every deployment. AI-powered controllers can now handle routine operations, freeing you to design workflows, define policies, and supervise autonomous agents.
 
-<Frame>
-  ![The image outlines the evolving roles of DevOps engineers, highlighting shifts from executors to orchestrators, AI trainers, interpreters, ethical AI stewards, and innovation drivers. It includes a small video thumbnail of a person speaking.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878988/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/devops-engineers-evolving-roles-diagram.jpg)
-</Frame>
+![The image outlines the evolving roles of DevOps engineers, highlighting shifts from executors to orchestrators, AI trainers, interpreters, ethical AI stewards, and innovation drivers. It includes a small video thumbnail of a person speaking.](https://kodekloud.com/kk-media/image/upload/v1752878988/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/devops-engineers-evolving-roles-diagram.jpg)
 
 ## AI Trainers and Supervisors
 
 As AI trust matures, you’ll become the institutional memory for these systems—teaching best practices, validating agent decisions, and intervening in novel or critical scenarios.
 
-<Frame>
-  ![The image outlines the evolving roles of DevOps engineers, highlighting five key areas: from executors to orchestrators, AI trainers and supervisors, interpreters and communicators, ethical AI stewards, and innovation drivers. It also includes a person speaking in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878990/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/devops-engineers-evolving-roles-diagram-2.jpg)
-</Frame>
+![The image outlines the evolving roles of DevOps engineers, highlighting five key areas: from executors to orchestrators, AI trainers and supervisors, interpreters and communicators, ethical AI stewards, and innovation drivers. It also includes a person speaking in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878990/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/devops-engineers-evolving-roles-diagram-2.jpg)
 
-<Callout icon="lightbulb">
-  Supervision isn’t about micromanagement. It’s about crafting validation rules, escalation policies, and confidence thresholds for AI agents.
-</Callout>
+> **lightbulb** Supervision isn’t about micromanagement. It’s about crafting validation rules, escalation policies, and confidence thresholds for AI agents.
 
 ## Interpreters and Communicators
 
 Bridging the gap between AI insights and business stakeholders becomes crucial. You’ll refine prompts, translate technical outputs, and ensure that AI-driven recommendations align with organizational objectives.
 
-<Frame>
-  ![The image outlines the evolving roles of DevOps engineers, highlighting five key areas: from executors to orchestrators, AI trainers and supervisors, interpreters and communicators, ethical AI stewards, and innovation drivers. A person is also visible in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878991/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/devops-engineers-evolving-roles-diagram-3.jpg)
-</Frame>
+![The image outlines the evolving roles of DevOps engineers, highlighting five key areas: from executors to orchestrators, AI trainers and supervisors, interpreters and communicators, ethical AI stewards, and innovation drivers. A person is also visible in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878991/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/devops-engineers-evolving-roles-diagram-3.jpg)
 
 ## Ethical AI Stewards
 
 With regulatory scrutiny on the rise, you must enforce ethical guidelines—monitoring for bias, preventing hallucinations, and ensuring compliance with corporate and regional policies.
 
-<Frame>
-  ![The image outlines the evolving roles of DevOps engineers, highlighting five key areas: from executors to orchestrators, AI trainers and supervisors, interpreters and communicators, ethical AI stewards, and innovation drivers. A person is also visible in the bottom right corner, possibly explaining the content.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878992/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/devops-engineers-evolving-roles-diagram-4.jpg)
-</Frame>
+![The image outlines the evolving roles of DevOps engineers, highlighting five key areas: from executors to orchestrators, AI trainers and supervisors, interpreters and communicators, ethical AI stewards, and innovation drivers. A person is also visible in the bottom right corner, possibly explaining the content.](https://kodekloud.com/kk-media/image/upload/v1752878992/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/devops-engineers-evolving-roles-diagram-4.jpg)
 
-<Callout icon="triangle-alert">
-  Neglecting AI ethics can lead to costly compliance violations and reputational damage. Always audit decision pipelines and maintain transparent logs.
-</Callout>
+> **triangle-alert** Neglecting AI ethics can lead to costly compliance violations and reputational damage. Always audit decision pipelines and maintain transparent logs.
 
 ## Innovation Drivers
 
 Once routine tasks are delegated, your focus turns to ideation: designing new architectures, optimizing cost, and unlocking business value with AI-enhanced pipelines.
 
-<Frame>
-  ![The image outlines the evolving roles of DevOps engineers, highlighting five key areas: orchestrators, AI trainers, communicators, ethical AI stewards, and innovation drivers. It also mentions that automation allows DevOps engineers to focus more on innovation and strategic improvements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878993/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/devops-engineers-evolving-roles-diagram-5.jpg)
-</Frame>
+![The image outlines the evolving roles of DevOps engineers, highlighting five key areas: orchestrators, AI trainers, communicators, ethical AI stewards, and innovation drivers. It also mentions that automation allows DevOps engineers to focus more on innovation and strategic improvements.](https://kodekloud.com/kk-media/image/upload/v1752878993/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/devops-engineers-evolving-roles-diagram-5.jpg)
 
 ***
 
@@ -69,21 +55,13 @@ To excel in AI-driven DevOps, you’ll need a blend of data science, software en
 | Systems Thinking         | Resilient Architectures, Cost Optimization, Self-Healing Design                    |
 | Soft Skills              | Communication, Adaptability, Creative Problem-Solving, Continuous Learning         |
 
-<Frame>
-  ![The image lists new skills and competencies required, including AI and Machine Learning Fundamentals, Data Science and Analytics, Advanced Programming, AI Ethics and Governance, Systems Thinking, and Soft Skills. It also highlights the importance of data preparation, feature engineering, statistical analysis, and data visualization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878994/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/new-skills-ai-machine-learning-data-science.jpg)
-</Frame>
+![The image lists new skills and competencies required, including AI and Machine Learning Fundamentals, Data Science and Analytics, Advanced Programming, AI Ethics and Governance, Systems Thinking, and Soft Skills. It also highlights the importance of data preparation, feature engineering, statistical analysis, and data visualization.](https://kodekloud.com/kk-media/image/upload/v1752878994/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/new-skills-ai-machine-learning-data-science.jpg)
 
-<Frame>
-  ![The image lists new skills and competencies required, including AI and machine learning fundamentals, data science, advanced programming, AI ethics, systems thinking, and soft skills. It also mentions the importance of programming languages and AI frameworks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878996/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/new-skills-ai-machine-learning-data-science-2.jpg)
-</Frame>
+![The image lists new skills and competencies required, including AI and machine learning fundamentals, data science, advanced programming, AI ethics, systems thinking, and soft skills. It also mentions the importance of programming languages and AI frameworks.](https://kodekloud.com/kk-media/image/upload/v1752878996/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/new-skills-ai-machine-learning-data-science-2.jpg)
 
-<Frame>
-  ![The image lists new skills and competencies required, including AI and Machine Learning Fundamentals, Data Science and Analytics, Advanced Programming, AI Ethics and Governance, Systems Thinking, and Soft Skills. It also highlights the importance of ethical AI principles and understanding AI-related regulations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878997/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/new-skills-ai-machine-learning-ethics.jpg)
-</Frame>
+![The image lists new skills and competencies required, including AI and Machine Learning Fundamentals, Data Science and Analytics, Advanced Programming, AI Ethics and Governance, Systems Thinking, and Soft Skills. It also highlights the importance of ethical AI principles and understanding AI-related regulations.](https://kodekloud.com/kk-media/image/upload/v1752878997/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/new-skills-ai-machine-learning-ethics.jpg)
 
-<Frame>
-  ![The image lists new skills and competencies required, including AI and machine learning fundamentals, data science, advanced programming, AI ethics, systems thinking, and soft skills. It also highlights the importance of communication, adaptability, and creativity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878998/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/new-skills-ai-machine-learning-data-science-3.jpg)
-</Frame>
+![The image lists new skills and competencies required, including AI and machine learning fundamentals, data science, advanced programming, AI ethics, systems thinking, and soft skills. It also highlights the importance of communication, adaptability, and creativity.](https://kodekloud.com/kk-media/image/upload/v1752878998/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/new-skills-ai-machine-learning-data-science-3.jpg)
 
 ***
 
@@ -99,9 +77,7 @@ AI augmentation gives rise to specialized positions:
 | DevOps Data Scientist        | Analyzes operational metrics and integrates ML into CI/CD    |
 | Autonomous Systems Architect | Designs self-healing, scalable infrastructures powered by AI |
 
-<Frame>
-  ![The image lists emerging job roles in AI-driven DevOps, including AI Ops Specialist, DevOps AI Trainer, AI Ethics Officer, DevOps Data Scientist, and Autonomous Systems Architect. There's also a person speaking in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878999/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/ai-devops-job-roles-list.jpg)
-</Frame>
+![The image lists emerging job roles in AI-driven DevOps, including AI Ops Specialist, DevOps AI Trainer, AI Ethics Officer, DevOps Data Scientist, and Autonomous Systems Architect. There's also a person speaking in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878999/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/ai-devops-job-roles-list.jpg)
 
 ***
 
@@ -114,9 +90,7 @@ AI empowers new ways of collaborating:
 * **Flatter Hierarchies**: Democratize decision-making with intelligent assistants.
 * **Global Collaboration**: Leverage AI translators and regional models for 24/7 operations.
 
-<Frame>
-  ![The image provides an overview of AI applications in DevOps, highlighting four key areas: cross-functional AI teams, AI center of excellence, flatter hierarchies, and global collaboration. A person is also visible in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879000/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/ai-applications-devops-overview.jpg)
-</Frame>
+![The image provides an overview of AI applications in DevOps, highlighting four key areas: cross-functional AI teams, AI center of excellence, flatter hierarchies, and global collaboration. A person is also visible in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752879000/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-Evolving-Roles-in-an-AI-driven-World/ai-applications-devops-overview.jpg)
 
 ***
 
@@ -129,6 +103,4 @@ By embracing these new roles and honing critical skills, DevOps engineers will l
 * [PyTorch](https://pytorch.org/)
 * [LangChain](https://github.com/langchain-ai/langchain)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-k8sgpt-and-ai-driven-kubernetes-engineering/module/9c3332bd-1119-4acd-a297-b06465d775a9/lesson/47d6b6c9-675f-484d-99dd-28c8676a6ae8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-k8sgpt-and-ai-driven-kubernetes-engineering/module/9c3332bd-1119-4acd-a297-b06465d775a9/lesson/47d6b6c9-675f-484d-99dd-28c8676a6ae8)

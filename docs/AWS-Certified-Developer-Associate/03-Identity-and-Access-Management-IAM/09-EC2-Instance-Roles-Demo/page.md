@@ -115,9 +115,9 @@ To authenticate with AWS, a dedicated IAM user was created for the application. 
 
 The following images illustrate parts of this process:
 
-![The image shows an AWS Identity and Access Management (IAM) console screen, displaying user details and permissions, including an attached policy named "AmazonS3FullAccess."](../../../../images/kodekloud.com/kk-media/image/upload/v1752858903/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Instance-Roles-Demo/aws-iam-console-user-permissions-s3.jpg)
+![The image shows an AWS Identity and Access Management (IAM) console screen, displaying user details and permissions, including an attached policy named "AmazonS3FullAccess."](https://kodekloud.com/kk-media/image/upload/v1752858903/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Instance-Roles-Demo/aws-iam-console-user-permissions-s3.jpg)
 
-![The image shows an AWS IAM interface for creating an access key, with options for different use cases like CLI, local code, and third-party services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858904/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Instance-Roles-Demo/aws-iam-access-key-interface.jpg)
+![The image shows an AWS IAM interface for creating an access key, with options for different use cases like CLI, local code, and third-party services.](https://kodekloud.com/kk-media/image/upload/v1752858904/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Instance-Roles-Demo/aws-iam-access-key-interface.jpg)
 
 After updating the credentials, the application code looked like this:
 
@@ -183,7 +183,7 @@ After refreshing the S3 console, you’ll see that a new bucket (named "IAM Role
 
 The next step is to remove the dependency on hardcoded credentials by using IAM roles. First, delete the bucket to clean up:
 
-![The image shows an AWS S3 console page for deleting a bucket named "iam-role-kodekloud-demo," with warnings about the action being irreversible and requiring confirmation by entering the bucket name.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858905/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Instance-Roles-Demo/aws-s3-delete-bucket-confirmation.jpg)
+![The image shows an AWS S3 console page for deleting a bucket named "iam-role-kodekloud-demo," with warnings about the action being irreversible and requiring confirmation by entering the bucket name.](https://kodekloud.com/kk-media/image/upload/v1752858905/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Instance-Roles-Demo/aws-s3-delete-bucket-confirmation.jpg)
 
 After deleting the bucket, remove the credentials from your code. Without any authentication details, running the application will now fail and display an error such as:
 
@@ -207,15 +207,15 @@ Next, create an IAM role that allows EC2 instances to interact with S3 without t
 
 The image below shows the use case selection screen:
 
-![The image shows an AWS console interface where a user is selecting a use case for the EC2 service, with options like EC2 Systems Manager and Spot Fleet Role.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858906/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Instance-Roles-Demo/aws-ec2-console-use-case-selection.jpg)
+![The image shows an AWS console interface where a user is selecting a use case for the EC2 service, with options like EC2 Systems Manager and Spot Fleet Role.](https://kodekloud.com/kk-media/image/upload/v1752858906/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Instance-Roles-Demo/aws-ec2-console-use-case-selection.jpg)
 
 After creating the role, return to your EC2 instances and modify the instance’s IAM role to assign the newly created role:
 
-![The image shows the AWS Identity and Access Management (IAM) console, specifically the "Roles" section, listing various IAM roles with their trusted entities and last activity details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858908/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Instance-Roles-Demo/aws-iam-console-roles-listing.jpg)
+![The image shows the AWS Identity and Access Management (IAM) console, specifically the "Roles" section, listing various IAM roles with their trusted entities and last activity details.](https://kodekloud.com/kk-media/image/upload/v1752858908/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Instance-Roles-Demo/aws-iam-console-roles-listing.jpg)
 
-![The image shows an AWS EC2 management console with details of two instances, one running and one stopped, including instance IDs, types, and IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858910/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Instance-Roles-Demo/aws-ec2-management-console-instances.jpg)
+![The image shows an AWS EC2 management console with details of two instances, one running and one stopped, including instance IDs, types, and IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752858910/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Instance-Roles-Demo/aws-ec2-management-console-instances.jpg)
 
-![The image shows an AWS console screen where a user is modifying the IAM role for an EC2 instance. The instance ID is displayed, and an IAM role named "aws-sdk-s3" is selected.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858911/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Instance-Roles-Demo/aws-console-iam-role-ec2-instance.jpg)
+![The image shows an AWS console screen where a user is modifying the IAM role for an EC2 instance. The instance ID is displayed, and an IAM role named "aws-sdk-s3" is selected.](https://kodekloud.com/kk-media/image/upload/v1752858911/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Instance-Roles-Demo/aws-console-iam-role-ec2-instance.jpg)
 
 Since the application no longer includes any credentials, running:
 
@@ -229,6 +229,6 @@ allows the EC2 instance to assume the attached IAM role. The application then au
 
 Finally, view the S3 console to see the bucket list:
 
-![The image shows an Amazon S3 console with a list of buckets, their regions, access settings, and creation dates. A notification at the top indicates a bucket was successfully deleted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858912/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Instance-Roles-Demo/amazon-s3-console-bucket-list.jpg)
+![The image shows an Amazon S3 console with a list of buckets, their regions, access settings, and creation dates. A notification at the top indicates a bucket was successfully deleted.](https://kodekloud.com/kk-media/image/upload/v1752858912/notes-assets/images/AWS-Certified-Developer-Associate-EC2-Instance-Roles-Demo/amazon-s3-console-bucket-list.jpg)
 
 - [Watch Video](https://learn.kodekloud.com/user/courses/aws-certified-developer-associate/module/683c50bc-9bd3-4094-b666-354fcc06941f/lesson/dd905a56-7f45-48bc-8490-085e3b7665b2)

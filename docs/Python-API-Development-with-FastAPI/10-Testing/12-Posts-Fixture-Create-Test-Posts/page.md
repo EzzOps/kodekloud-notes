@@ -38,9 +38,7 @@ venv\lib\site-packages\aiofiles\os.py:10
 
 Since our tests will involve operations like updating or deleting posts, having a dedicated fixture to create initial posts is essential. In our test file (for example, `tests/test_posts.py`), this fixture streamlines the setup process for tests that need initial post data.
 
-<Callout icon="lightbulb">
-  Every post must be associated with a test user. Ensure that you have a test user fixture and an active database session before invoking the post fixture.
-</Callout>
+> **lightbulb** Every post must be associated with a test user. Ensure that you have a test user fixture and an active database session before invoking the post fixture.
 
 Below is the complete fixture for creating test posts. This fixture first defines our list of test post data as dictionaries and then uses the SQLAlchemy `add_all` method to add all posts in one go. The Python `map` function converts each dictionary into a model instance.
 
@@ -129,14 +127,10 @@ collected 1 item
 tests/test_posts.py::test_get_all_posts [{'Post': {'title': '2nd title', 'content': '2nd content', 'published': True, 'id': 2, 'owner_id': 1, 'owner': {...}}, {...}, ...] PASSED
 ```
 
-<Callout icon="triangle-alert">
-  If the order of posts retrieved from the database is non-deterministic, consider sorting the results or modifying the assertions to ensure accurate comparisons.
-</Callout>
+> **triangle-alert** If the order of posts retrieved from the database is non-deterministic, consider sorting the results or modifying the assertions to ensure accurate comparisons.
 
 By centralizing the post creation logic through this fixture, you not only simplify the testing environment but also enhance the maintainability of your tests, ensuring smooth transitions as your application evolves.
 
 For additional information on testing best practices and related topics, check out our [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/) and [Kubernetes Documentation](https://kubernetes.io/docs/) pages.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/8e577ef1-c37f-4898-b990-7d1deeca4e0d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/eed445e5-68aa-46b3-9922-0fdf2a57b8f1/lesson/8e577ef1-c37f-4898-b990-7d1deeca4e0d)

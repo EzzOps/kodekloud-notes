@@ -28,9 +28,7 @@ Quick reference:
 
 These are the base definitions from which concrete implementations (for example, specific LLM clients or cloud connectors) are derived. Keeping these abstractions in a small core package helps maintain stability and encourages consistent patterns across integrations.
 
-<Callout icon="lightbulb">
-  LangChain Core is intentionally implementation-agnostic. Integrations and provider-specific implementations are provided by separate packages so the core remains lightweight and stable.
-</Callout>
+> **lightbulb** LangChain Core is intentionally implementation-agnostic. Integrations and provider-specific implementations are provided by separate packages so the core remains lightweight and stable.
 
 The LangChain Community and other integration packages contain concrete implementations and connectors — for example, helpers and clients for OpenAI, other cloud providers, and third‑party tools. Those packages import the core abstractions shown above and extend them with provider-specific behavior, authentication, and convenience helpers.
 
@@ -40,6 +38,4 @@ Links and references
 * [LangChain documentation (core concepts)](https://learn.kodekloud.com/user/courses/langchain)
 * [LangChain community integrations and adapters](https://learn.kodekloud.com/user/courses/langchain)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/f16a86c1-c3fa-45fe-b348-31f0f35783cb" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/b5f7771a-fdbc-45b1-a786-6c84bb7ffc76/lesson/f16a86c1-c3fa-45fe-b348-31f0f35783cb)

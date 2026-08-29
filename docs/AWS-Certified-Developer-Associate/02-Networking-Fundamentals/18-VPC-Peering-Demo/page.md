@@ -9,7 +9,7 @@ This lesson demonstrates how to configure VPC peering to enable communication be
 * **VPC-A**: CIDR block 10.1.0.0/16 (with an EC2 instance named "server one")
 * **VPC-B**: CIDR block 10.2.0.0/16 (with an EC2 instance named "server two")
 
-![The image shows an AWS VPC dashboard displaying a list of Virtual Private Clouds (VPCs) with details such as VPC ID, state, and IPv4 CIDR. The selected VPC is "VPC-B" with additional details shown below.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859261/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering-Demo/aws-vpc-dashboard-vpc-b-details.jpg)
+![The image shows an AWS VPC dashboard displaying a list of Virtual Private Clouds (VPCs) with details such as VPC ID, state, and IPv4 CIDR. The selected VPC is "VPC-B" with additional details shown below.](https://kodekloud.com/kk-media/image/upload/v1752859261/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering-Demo/aws-vpc-dashboard-vpc-b-details.jpg)
 
 At the outset, we try to ping "server two" from "server one". With server one having the private IP address 10.1.1.13 and server two at 10.2.1.139, the ping command fails because VPCs are isolated by default.
 
@@ -30,17 +30,17 @@ To configure connectivity between the VPCs, follow these steps:
    * Choose **VPC-B** as the target VPC.
    * Note that VPC peering connections can be established between different AWS accounts or across regions. In this demo, both VPCs are in the US East 1 region.
 
-![The image shows the AWS VPC Management Console interface for creating a peering connection between two VPCs. It includes fields for selecting a local VPC and specifying the region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859262/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering-Demo/aws-vpc-peering-connection-console.jpg)
+![The image shows the AWS VPC Management Console interface for creating a peering connection between two VPCs. It includes fields for selecting a local VPC and specifying the region.](https://kodekloud.com/kk-media/image/upload/v1752859262/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering-Demo/aws-vpc-peering-connection-console.jpg)
 
 2. **Reviewing and Sending the Request**\
    After configuring the peering request, review the CIDR blocks. It is critical that the CIDR blocks do not overlap to ensure proper routing. Once confirmed, create the peering connection and navigate to the peering connections page to verify its status.
 
-![The image shows an AWS Management Console screen for setting up a VPC peering connection, displaying options for selecting VPCs and regions, along with CIDR details and tagging options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859263/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering-Demo/aws-vpc-peering-setup-console.jpg)
+![The image shows an AWS Management Console screen for setting up a VPC peering connection, displaying options for selecting VPCs and regions, along with CIDR details and tagging options.](https://kodekloud.com/kk-media/image/upload/v1752859263/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering-Demo/aws-vpc-peering-setup-console.jpg)
 
 3. **Accepting the Peering Request**\
    Initially, the peering connection remains in a "pending acceptance" state because VPC-B must accept the request. Since both VPCs are in the same account, select the pending connection, use the **Actions** menu, and click **Accept Request**.
 
-![The image shows an AWS Management Console screen displaying details of a VPC peering connection request, which is pending acceptance. It includes information such as requester and accepter VPC IDs, owner IDs, and expiration date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859265/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering-Demo/aws-vpc-peering-connection-pending.jpg)
+![The image shows an AWS Management Console screen displaying details of a VPC peering connection request, which is pending acceptance. It includes information such as requester and accepter VPC IDs, owner IDs, and expiration date.](https://kodekloud.com/kk-media/image/upload/v1752859265/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering-Demo/aws-vpc-peering-connection-pending.jpg)
 
 ## Updating Route Tables
 
@@ -63,7 +63,7 @@ Examine the route table associated with VPC-A. You will notice:
 
 There is no route directing traffic to VPC-B (10.2.0.0/16).
 
-![The image shows an AWS VPC dashboard displaying route tables, with details of routes, subnet associations, and other configurations. The selected route table includes routes for internet gateway and local traffic.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859266/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering-Demo/aws-vpc-dashboard-route-tables.jpg)
+![The image shows an AWS VPC dashboard displaying route tables, with details of routes, subnet associations, and other configurations. The selected route table includes routes for internet gateway and local traffic.](https://kodekloud.com/kk-media/image/upload/v1752859266/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering-Demo/aws-vpc-dashboard-route-tables.jpg)
 
 To fix this:
 
@@ -72,7 +72,7 @@ To fix this:
 
 You can review these routing updates in the AWS Management Console:
 
-![The image shows the AWS Management Console with a focus on editing route tables. It displays a list of routes with their destinations, targets, statuses, and propagation settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859268/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering-Demo/aws-management-console-route-tables.jpg)
+![The image shows the AWS Management Console with a focus on editing route tables. It displays a list of routes with their destinations, targets, statuses, and propagation settings.](https://kodekloud.com/kk-media/image/upload/v1752859268/notes-assets/images/AWS-Certified-Developer-Associate-VPC-Peering-Demo/aws-management-console-route-tables.jpg)
 
 ## Verifying Connectivity
 

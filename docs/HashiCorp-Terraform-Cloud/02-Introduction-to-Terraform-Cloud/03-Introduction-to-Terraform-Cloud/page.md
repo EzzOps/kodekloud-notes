@@ -12,25 +12,19 @@ I’m Gabe Maentz, HashiCorp Ambassador and Certified Terraform Instructor. I’
 
 Terraform Cloud is HashiCorp’s hosted SaaS platform that extends and enhances Terraform Open Source. It provides remote state management, policy enforcement, collaboration tools, and more—all without managing your own servers.
 
-<Frame>
-  ![The image is an informational graphic about HashiCorp Terraform Cloud, describing it as a hosted service that extends and enhances Terraform Open-Source.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878741/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/hashicorp-terraform-cloud-infographic.jpg)
-</Frame>
+![The image is an informational graphic about HashiCorp Terraform Cloud, describing it as a hosted service that extends and enhances Terraform Open-Source.](https://kodekloud.com/kk-media/image/upload/v1752878741/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/hashicorp-terraform-cloud-infographic.jpg)
 
 ## Terraform “TACOS”
 
 Often nicknamed **TACOS** (Terraform Automation & Collaboration Software), Terraform Cloud enables teams to adopt IaC at scale by automating runs, managing state centrally, and enforcing governance.
 
-<Frame>
-  ![The image features the acronym "TACOS" explained as "Terraform Automation & Collaboration Software" on a green chalkboard background, with the HashiCorp Terraform Cloud logo and two cartoon characters at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878742/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/tacos-terraform-automation-chalkboard.jpg)
-</Frame>
+![The image features the acronym "TACOS" explained as "Terraform Automation & Collaboration Software" on a green chalkboard background, with the HashiCorp Terraform Cloud logo and two cartoon characters at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878742/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/tacos-terraform-automation-chalkboard.jpg)
 
 ## Why Extend Terraform Open Source?
 
 Terraform Open Source excels at defining infrastructure via HCL, supporting hundreds of providers, and offering a straightforward plan/apply workflow. However, as teams grow, you may encounter:
 
-<Frame>
-  ![The image compares Terraform Local with TFC, highlighting the benefits of Terraform such as being open source and easy to use, alongside its limitations like local state management and lack of role-based access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878743/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/terraform-local-vs-tfc-comparison.jpg)
-</Frame>
+![The image compares Terraform Local with TFC, highlighting the benefits of Terraform such as being open source and easy to use, alongside its limitations like local state management and lack of role-based access.](https://kodekloud.com/kk-media/image/upload/v1752878743/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/terraform-local-vs-tfc-comparison.jpg)
 
 * State file management challenges and collaboration risk
 * Scattered sensitive data (API keys, secrets) in local configurations
@@ -39,9 +33,7 @@ Terraform Open Source excels at defining infrastructure via HCL, supporting hund
 
 As projects expand—multiple environments (Dev, Test, Staging, Prod), larger teams, and more resources—the need for centralized workflows becomes critical:
 
-<Frame>
-  ![The image illustrates ways a project grows, highlighting a larger team, more resources, and development stages (Dev, Test, Staging, Prod) with icons. It includes the HashiCorp Terraform Cloud logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878744/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/project-growth-development-stages-terraform.jpg)
-</Frame>
+![The image illustrates ways a project grows, highlighting a larger team, more resources, and development stages (Dev, Test, Staging, Prod) with icons. It includes the HashiCorp Terraform Cloud logo.](https://kodekloud.com/kk-media/image/upload/v1752878744/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/project-growth-development-stages-terraform.jpg)
 
 Without a managed platform, teams end up building and maintaining custom tools for state locking, approval gates, and compliance.
 
@@ -49,9 +41,7 @@ Without a managed platform, teams end up building and maintaining custom tools f
 
 Terraform Cloud addresses these challenges with a unified SaaS offering. Its key benefits include:
 
-<Frame>
-  ![The image outlines the primary benefits of Terraform Cloud (TFC), highlighting organizations, teams & users, workspaces, and automation & orchestration. It includes icons and a logo in the top right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878745/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/terraform-cloud-benefits-outline.jpg)
-</Frame>
+![The image outlines the primary benefits of Terraform Cloud (TFC), highlighting organizations, teams & users, workspaces, and automation & orchestration. It includes icons and a logo in the top right corner.](https://kodekloud.com/kk-media/image/upload/v1752878745/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/terraform-cloud-benefits-outline.jpg)
 
 * **Remote state storage** with encryption, versioning, and locking
 * **Centralized plan/apply** runs with full run history
@@ -64,9 +54,7 @@ Terraform Cloud addresses these challenges with a unified SaaS offering. Its key
 * **Role-Based Access Control (RBAC)** for granular permissions
 * **Ecosystem Integrations** (Kubernetes, ServiceNow, Splunk, and more)
 
-<Frame>
-  ![The image lists features and services of HashiCorp Terraform Cloud, including remote state data, VCS workflows, policy governance, cost estimation, drift detection, private registry, role-based access, and integrations. It also includes the Terraform logo and two illustrated characters at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878747/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/terraform-cloud-features-services-list.jpg)
-</Frame>
+![The image lists features and services of HashiCorp Terraform Cloud, including remote state data, VCS workflows, policy governance, cost estimation, drift detection, private registry, role-based access, and integrations. It also includes the Terraform logo and two illustrated characters at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878747/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/terraform-cloud-features-services-list.jpg)
 
 ## Terraform Cloud Pricing Tiers
 
@@ -79,33 +67,23 @@ Terraform Cloud is available via subscription. Compare the plans to find the rig
 | **Team & Governance** | All Team features + Sentinel, Cost Estimation, Run Tasks                         | Advanced policy and governance      |
 | **Business**          | Audit logging, SSO/SAML, private agents, enhanced support, increased concurrency | Enterprise-scale deployments        |
 
-<Frame>
-  ![The image is a bar chart comparing Terraform Cloud plans, showing increasing features from Free to Business plans. It includes a logo and two cartoon characters at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878748/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/terraform-cloud-plans-bar-chart.jpg)
-</Frame>
+![The image is a bar chart comparing Terraform Cloud plans, showing increasing features from Free to Business plans. It includes a logo and two cartoon characters at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878748/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/terraform-cloud-plans-bar-chart.jpg)
 
-<Callout icon="lightbulb">
-  Use the Free tier to explore Terraform Cloud features for 30 days and decide which plan aligns with your organization’s compliance and scaling needs.
-</Callout>
+> **lightbulb** Use the Free tier to explore Terraform Cloud features for 30 days and decide which plan aligns with your organization’s compliance and scaling needs.
 
 ## Terraform Enterprise (Self-Managed)
 
 For organizations that require on-premises deployment, Terraform Enterprise offers all Business-tier features in a self-managed appliance.
 
-<Frame>
-  ![The image compares Terraform Cloud and Terraform Enterprise, highlighting that Terraform Cloud is hosted and managed with tiered plans, while Terraform Enterprise is on-premises and self-managed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878749/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/terraform-cloud-vs-enterprise-comparison.jpg)
-</Frame>
+![The image compares Terraform Cloud and Terraform Enterprise, highlighting that Terraform Cloud is hosted and managed with tiered plans, while Terraform Enterprise is on-premises and self-managed.](https://kodekloud.com/kk-media/image/upload/v1752878749/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/terraform-cloud-vs-enterprise-comparison.jpg)
 
-<Callout icon="triangle-alert">
-  Terraform Enterprise requires infrastructure and operational overhead for high availability, upgrades, and scaling.
-</Callout>
+> **triangle-alert** Terraform Enterprise requires infrastructure and operational overhead for high availability, upgrades, and scaling.
 
 ## Why Use Terraform Cloud?
 
 Terraform Cloud provides a unified platform for IaC collaboration, security, and governance—eliminating the need to build custom tooling.
 
-<Frame>
-  ![The image lists reasons to use Terraform Cloud, highlighting features like collaboration, governance, secure state storage, centralized module registry, version control integration, audit logs, and role-based access. It also emphasizes reducing the burden of managing infrastructure manually.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878750/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/terraform-cloud-reasons-features-list.jpg)
-</Frame>
+![The image lists reasons to use Terraform Cloud, highlighting features like collaboration, governance, secure state storage, centralized module registry, version control integration, audit logs, and role-based access. It also emphasizes reducing the burden of managing infrastructure manually.](https://kodekloud.com/kk-media/image/upload/v1752878750/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/terraform-cloud-reasons-features-list.jpg)
 
 * Leverage familiar CLI commands (`terraform init`, `plan`, `apply`) with remote execution
 * Secure, encrypted state storage per workspace
@@ -119,9 +97,7 @@ Terraform Cloud provides a unified platform for IaC collaboration, security, and
 
 Terraform Cloud organizes resources using a simple hierarchy:
 
-<Frame>
-  ![The image is a slide titled "Management and Operations" from HashiCorp Terraform Cloud, explaining the concepts of Organization, Workspace, User, and Team. It includes brief definitions for each term.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878752/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/management-operations-hashi-corp-terraform.jpg)
-</Frame>
+![The image is a slide titled "Management and Operations" from HashiCorp Terraform Cloud, explaining the concepts of Organization, Workspace, User, and Team. It includes brief definitions for each term.](https://kodekloud.com/kk-media/image/upload/v1752878752/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/management-operations-hashi-corp-terraform.jpg)
 
 | Concept      | Description                                                                                  |
 | ------------ | -------------------------------------------------------------------------------------------- |
@@ -134,9 +110,7 @@ Terraform Cloud organizes resources using a simple hierarchy:
 
 Adopting Terraform Cloud enhances your current Terraform practice without replacing it:
 
-<Frame>
-  ![The image is a slide discussing how Terraform Cloud impacts workflows, emphasizing that existing code still works, leveraging existing workflows, and adopting as teams are ready. It includes a logo and cartoon characters at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878753/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/terraform-cloud-workflows-impact-slide.jpg)
-</Frame>
+![The image is a slide discussing how Terraform Cloud impacts workflows, emphasizing that existing code still works, leveraging existing workflows, and adopting as teams are ready. It includes a logo and cartoon characters at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752878753/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/terraform-cloud-workflows-impact-slide.jpg)
 
 * Existing Terraform code, modules, and workflows continue to work.
 * Choose between CLI, VCS, or API-based runs.
@@ -150,9 +124,7 @@ Get hands-on by signing up for Terraform Cloud:
 2. Click **Register** and create your user account
 3. Set up your first Organization and Workspace
 
-<Frame>
-  ![The image provides instructions on signing up for Terraform Cloud, highlighting that users can create individual accounts, join multiple teams, and that usernames are global.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878754/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/terraform-cloud-signup-instructions.jpg)
-</Frame>
+![The image provides instructions on signing up for Terraform Cloud, highlighting that users can create individual accounts, join multiple teams, and that usernames are global.](https://kodekloud.com/kk-media/image/upload/v1752878754/notes-assets/images/HashiCorp-Terraform-Cloud-Introduction-to-Terraform-Cloud/terraform-cloud-signup-instructions.jpg)
 
 ## References
 
@@ -162,6 +134,4 @@ Get hands-on by signing up for Terraform Cloud:
 * [Private Module Registry](https://www.terraform.io/cloud-docs/modules/registry)
 * [Sentinel Policy as Code](https://www.hashicorp.com/products/sentinel)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/5be30c4d-ad7e-4fe6-9285-fa36ed0ac151/lesson/5a9a4906-577d-4f25-b745-23f46957abca" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-terraform-cloud/module/5be30c4d-ad7e-4fe6-9285-fa36ed0ac151/lesson/5a9a4906-577d-4f25-b745-23f46957abca)

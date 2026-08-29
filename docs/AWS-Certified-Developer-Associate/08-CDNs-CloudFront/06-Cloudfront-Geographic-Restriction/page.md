@@ -6,7 +6,7 @@ CloudFront geographic restriction controls content access based on users locatio
 
 CloudFront geographic restriction (also known as geo restriction) is a powerful feature that allows you to control content access based on the geographic location of your users. By configuring this feature, you can tailor your content delivery strategy—ensuring that only users from allowed countries can access your content, while users from other regions are restricted.
 
-![The image is a world map showing CloudFront geographic restrictions, with countries marked in red indicating blocked access and countries in green indicating allowed access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858485/notes-assets/images/AWS-Certified-Developer-Associate-Cloudfront-Geographic-Restriction/cloudfront-geographic-restrictions-map.jpg)
+![The image is a world map showing CloudFront geographic restrictions, with countries marked in red indicating blocked access and countries in green indicating allowed access.](https://kodekloud.com/kk-media/image/upload/v1752858485/notes-assets/images/AWS-Certified-Developer-Associate-Cloudfront-Geographic-Restriction/cloudfront-geographic-restrictions-map.jpg)
 
 ## Configuring Geographic Restrictions
 
@@ -17,13 +17,13 @@ There are two main methods to configure geographic restrictions in CloudFront:
 
 > **lightbulb** When a user makes a request, CloudFront checks the relevant whitelist or blacklist to determine if the request should be processed. If the user's geographic location is permitted, the request is forwarded to the origin (such as an S3 bucket via an edge location) and the content is returned.
 
-![The image illustrates CloudFront Geographic Restriction with two options: "Whitelist" represented by an unlocked padlock and "Blacklist" represented by a prohibition symbol.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858485/notes-assets/images/AWS-Certified-Developer-Associate-Cloudfront-Geographic-Restriction/cloudfront-geographic-restriction-options.jpg)
+![The image illustrates CloudFront Geographic Restriction with two options: "Whitelist" represented by an unlocked padlock and "Blacklist" represented by a prohibition symbol.](https://kodekloud.com/kk-media/image/upload/v1752858485/notes-assets/images/AWS-Certified-Developer-Associate-Cloudfront-Geographic-Restriction/cloudfront-geographic-restriction-options.jpg)
 
 If a user’s location does not satisfy the allowed criteria under the configured rules, CloudFront denies access to the content.
 
 > **triangle-alert** Improper configuration of your whitelist or blacklist rules may inadvertently block legitimate users. Always verify your geographic settings to ensure that your content is accessible to the intended audience.
 
-![The image illustrates the process of CloudFront geographic restriction, showing how requests are allowed or denied based on a whitelist/blacklist, with content fetched from an S3 bucket via an edge location.](../../../../images/kodekloud.com/kk-media/image/upload/v1752858487/notes-assets/images/AWS-Certified-Developer-Associate-Cloudfront-Geographic-Restriction/cloudfront-geographic-restriction-diagram.jpg)
+![The image illustrates the process of CloudFront geographic restriction, showing how requests are allowed or denied based on a whitelist/blacklist, with content fetched from an S3 bucket via an edge location.](https://kodekloud.com/kk-media/image/upload/v1752858487/notes-assets/images/AWS-Certified-Developer-Associate-Cloudfront-Geographic-Restriction/cloudfront-geographic-restriction-diagram.jpg)
 
 ## Summary
 

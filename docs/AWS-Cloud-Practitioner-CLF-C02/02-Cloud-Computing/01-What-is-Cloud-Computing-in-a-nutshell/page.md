@@ -17,7 +17,7 @@ Imagine you have a cutting-edge idea in 2023 and need to build a solution using 
 
 This entire process can take anywhere from several days to months, depending on approval processes and hardware availability.
 
-![The image describes traditional IT services, highlighting the process of requesting servers and the associated requirements like hardware, security, and software installation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861604/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_40.jpg)
+![The image describes traditional IT services, highlighting the process of requesting servers and the associated requirements like hardware, security, and software installation.](https://kodekloud.com/kk-media/image/upload/v1752861604/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_40.jpg)
 
 In this traditional model, you are responsible for managing multiple layers of infrastructure, including:
 
@@ -27,11 +27,11 @@ In this traditional model, you are responsible for managing multiple layers of i
 * Database installation and configuration
 * Governance, compliance, patches, migrations, upgrades, and environmental considerations (cooling and power)
 
-![The image lists traditional IT services: networking, storage, security, servers, applications, databases, governance, migrations, and cooling.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861606/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_110.jpg)
+![The image lists traditional IT services: networking, storage, security, servers, applications, databases, governance, migrations, and cooling.](https://kodekloud.com/kk-media/image/upload/v1752861606/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_110.jpg)
 
 While this approach provides increased security, customization, and control through direct management of every system facet, it also comes with significant drawbacks. The overall cost is high relative to the value, and scaling is not immediate. For example, doubling the number of servers—from three to six—may incur delays of days, weeks, or even months.
 
-![The image lists pros and cons of traditional IT, highlighting increased costs, limited scalability, and improved security, with directional arrows indicating positive and negative aspects.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861607/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_130.jpg)
+![The image lists pros and cons of traditional IT, highlighting increased costs, limited scalability, and improved security, with directional arrows indicating positive and negative aspects.](https://kodekloud.com/kk-media/image/upload/v1752861607/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_130.jpg)
 
 ## Cloud Computing: Definition and Operation
 
@@ -39,13 +39,13 @@ Cloud computing offers IT resources on demand, including compute power, applicat
 
 For example, if you need a MySQL database with one terabyte of storage, four CPUs, and 32 GB of RAM, cloud providers like AWS automatically configure and deploy these resources. Instead of investing in physical hardware that is hard to return or repurpose, you only pay for the resources you use over the exact period they are active.
 
-![The image explains cloud computing, illustrating a client-server model where client requests and server responses interact via websites, CLI, or API calls for database access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861608/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_240.jpg)
+![The image explains cloud computing, illustrating a client-server model where client requests and server responses interact via websites, CLI, or API calls for database access.](https://kodekloud.com/kk-media/image/upload/v1752861608/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_240.jpg)
 
 Cloud resources can be provisioned in seconds or minutes. For instance, setting up a basic AWS database might take less than five minutes—often as fast as 30 seconds. Additionally, cloud computing offloads several responsibilities, such as managing physical infrastructure (including cooling, power, and security) as well as aspects of governance, migrations, and upgrades.
 
-![The image explains cloud computing, illustrating a database request and response process, highlighting a 1TB MySQL database with 4 CPUs and 32GB RAM.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861610/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_310.jpg)
+![The image explains cloud computing, illustrating a database request and response process, highlighting a 1TB MySQL database with 4 CPUs and 32GB RAM.](https://kodekloud.com/kk-media/image/upload/v1752861610/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_310.jpg)
 
-![The image lists cloud computing benefits: networking, storage, security, servers, applications, databases, governance, migrations, cooling, and power.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861611/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_370.jpg)
+![The image lists cloud computing benefits: networking, storage, security, servers, applications, databases, governance, migrations, cooling, and power.](https://kodekloud.com/kk-media/image/upload/v1752861611/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_370.jpg)
 
 ## Cloud Deployment Models
 
@@ -60,19 +60,19 @@ Cloud consumption generally falls into three primary models:
 3. **Hybrid Cloud:**\
    This model combines cloud and on-premises resources. Some workloads run in the cloud, while others remain in traditional data centers. Hybrid clouds are designed to leverage the best of both worlds, usually connected through high-speed links. It is important to note that hybrid cloud differs from multi-cloud, which involves using services from multiple cloud providers.
 
-![The image illustrates three cloud computing models: Cloud (all in cloud), On-Premises (not in cloud), and Hybrid (some in cloud and some not in cloud).](../../../../images/kodekloud.com/kk-media/image/upload/v1752861613/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_450.jpg)
+![The image illustrates three cloud computing models: Cloud (all in cloud), On-Premises (not in cloud), and Hybrid (some in cloud and some not in cloud).](https://kodekloud.com/kk-media/image/upload/v1752861613/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_450.jpg)
 
 Modern applications are generally built for cloud environments, although legacy systems may still operate on-premises due to regulatory or security reasons.
 
-![The image describes cloud computing models, highlighting startups using cloud services, migrating projects to the cloud, and running new projects entirely in the cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861614/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_490.jpg)
+![The image describes cloud computing models, highlighting startups using cloud services, migrating projects to the cloud, and running new projects entirely in the cloud.](https://kodekloud.com/kk-media/image/upload/v1752861614/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_490.jpg)
 
 Legacy companies or those with strict compliance requirements may choose to operate entirely on-premises or adopt a hybrid approach. In these instances, third-party providers like Rackspace might manage some of the infrastructure, though typically not as comprehensively as AWS.
 
-![The image explains on-premises computing, highlighting minimal cloud usage, data center reliance, security responsibility, and its use by legacy companies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861615/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_540.jpg)
+![The image explains on-premises computing, highlighting minimal cloud usage, data center reliance, security responsibility, and its use by legacy companies.](https://kodekloud.com/kk-media/image/upload/v1752861615/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_540.jpg)
 
 Hybrid environments typically feature robust, high-speed connections between on-premises data centers and cloud resources, ensuring seamless operational integration.
 
-![The image explains hybrid cloud computing models, highlighting application distribution between cloud and on-premise, migration of existing applications, and fast connectivity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861616/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_590.jpg)
+![The image explains hybrid cloud computing models, highlighting application distribution between cloud and on-premise, migration of existing applications, and fast connectivity.](https://kodekloud.com/kk-media/image/upload/v1752861616/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_590.jpg)
 
 ## Summary
 
@@ -84,7 +84,7 @@ Cloud computing is the on-demand delivery of IT resources, enabling businesses t
 * Providers like AWS offer scalable, cost-effective resources, significantly reducing setup times compared to traditional IT.
 * Cloud computing is ideal for modern applications, although legacy systems may still require on-premises or hybrid solutions.
 
-![The image summarizes cloud computing, highlighting on-demand IT resources, deployment models (Cloud, On-Premises, Hybrid), client-server model, and pay-as-you-go access.](../../../../images/kodekloud.com/kk-media/image/upload/v1752861617/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_690.jpg)
+![The image summarizes cloud computing, highlighting on-demand IT resources, deployment models (Cloud, On-Premises, Hybrid), client-server model, and pay-as-you-go access.](https://kodekloud.com/kk-media/image/upload/v1752861617/notes-assets/images/AWS-Cloud-Practitioner-CLF-C02-What-is-Cloud-Computing-in-a-nutshell/frame_690.jpg)
 
 > **lightbulb** Cloud computing offers unparalleled flexibility and efficiency by provisioning resources as needed, which can significantly reduce operational costs and setup time.
 

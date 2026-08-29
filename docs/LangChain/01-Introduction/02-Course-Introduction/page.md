@@ -78,9 +78,7 @@ pip install -r requirements.txt
   <img alt="The image shows a webpage where a user is creating a new secret API key, with a dialog box for naming the key." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Keep your API key secret. Copy it now because you will not be able to see it again after closing the creation dialog.
-</Callout>
+> **lightbulb** Keep your API key secret. Copy it now because you will not be able to see it again after closing the creation dialog.
 
 Example: export the key for the current shell session (do not paste a real key here — use the key you copied):
 
@@ -104,9 +102,7 @@ To persist the key across sessions:
   <img alt="The image shows a webpage displaying API key management on the OpenAI platform, with options to create a new secret key and set the default organization." />
 </Frame>
 
-<Callout icon="warning">
-  Do not commit your API key to version control or paste it into public forums. Use environment variables or a secrets manager for production applications.
-</Callout>
+> **warning** Do not commit your API key to version control or paste it into public forums. Use environment variables or a secrets manager for production applications.
 
 ## 5) Test the API from the command line (curl)
 
@@ -233,9 +229,7 @@ Next steps: we will dive deeper into tokenization, prompt design, and cost optim
 * [Python Downloads](https://www.python.org/downloads/)
 * [Jupyter Documentation](https://jupyter.org/documentation)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/d5e8b9a9-2511-4d5a-881b-aeeedeb44a4d/lesson/66ce9135-5ded-4123-9234-cfb7335f37c1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/d5e8b9a9-2511-4d5a-881b-aeeedeb44a4d/lesson/66ce9135-5ded-4123-9234-cfb7335f37c1)
 
 
 # Course Introduction

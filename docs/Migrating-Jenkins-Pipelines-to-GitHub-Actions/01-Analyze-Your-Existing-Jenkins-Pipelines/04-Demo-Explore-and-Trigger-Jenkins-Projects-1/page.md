@@ -13,9 +13,7 @@ In this lesson we explore and trigger two Jenkins projects to inspect their conf
 | Generate ASCII Artwork | Freestyle         | None |     None | `curl`, `jq`, `cowsay`                            |
 |      scripted-pipeline | Scripted Pipeline | None |     None | Jenkins Pipeline steps (node, stage, echo, sleep) |
 
-<Callout icon="lightbulb">
-  This walkthrough helps you understand how simple shell-driven Freestyle jobs compare to scripted Pipelines, which is useful when planning migrations (for example, to GitHub Actions).
-</Callout>
+> **lightbulb** This walkthrough helps you understand how simple shell-driven Freestyle jobs compare to scripted Pipelines, which is useful when planning migrations (for example, to GitHub Actions).
 
 ***
 

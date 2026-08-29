@@ -13,24 +13,18 @@ We’ve already covered:
 * Customizing existing models with a `Modelfile` definition
 * Building a new model using the `ollama create` command
 
-<Frame>
-  ![The image is a slide titled "Recap" with two points: customizing existing models using a Modelfile and the "ollama create" command.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883685/notes-assets/images/Running-Local-LLMs-With-Ollama-Uploading-Custom-Models/recap-customizing-models-ollama.jpg)
-</Frame>
+![The image is a slide titled "Recap" with two points: customizing existing models using a Modelfile and the "ollama create" command.](https://kodekloud.com/kk-media/image/upload/v1752883685/notes-assets/images/Running-Local-LLMs-With-Ollama-Uploading-Custom-Models/recap-customizing-models-ollama.jpg)
 
 ## Why Use a Model Registry?
 
 Imagine Jane, an AI developer, has fine-tuned a model for her application. Distributing the raw `Modelfile` means each teammate must pull and rebuild the model locally every time there’s an update—error prone and time-consuming:
 
-<Frame>
-  ![The image illustrates "Jane's Story," showing a flow from Jane to team members, leading to more changes and the development of a new AI application. It includes icons representing communication, media, and AI features.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883686/notes-assets/images/Running-Local-LLMs-With-Ollama-Uploading-Custom-Models/janes-story-flow-ai-development.jpg)
-</Frame>
+![The image illustrates "Jane's Story," showing a flow from Jane to team members, leading to more changes and the development of a new AI application. It includes icons representing communication, media, and AI features.](https://kodekloud.com/kk-media/image/upload/v1752883686/notes-assets/images/Running-Local-LLMs-With-Ollama-Uploading-Custom-Models/janes-story-flow-ai-development.jpg)
 
 A registry-based approach mirrors how container images work with [Docker Hub](https://hub.docker.com):\
 Just push updates once, and everyone can pull the latest version:
 
-<Frame>
-  ![The image illustrates a workflow where Jane pushes a new model to team members, who can then pull the model. It includes icons representing media and data, with a note about a better way to share the model.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883687/notes-assets/images/Running-Local-LLMs-With-Ollama-Uploading-Custom-Models/jane-model-push-workflow.jpg)
-</Frame>
+![The image illustrates a workflow where Jane pushes a new model to team members, who can then pull the model. It includes icons representing media and data, with a note about a better way to share the model.](https://kodekloud.com/kk-media/image/upload/v1752883687/notes-assets/images/Running-Local-LLMs-With-Ollama-Uploading-Custom-Models/jane-model-push-workflow.jpg)
 
 ## Publishing Your Model
 
@@ -48,17 +42,13 @@ Follow these steps to upload and share your custom model on Ollama:
    | Linux    | `~/.ollama/id_ed25519.pub`                   |
    | Windows  | `C:\Users\<username>\.ollama\id_ed25519.pub` |
 
-<Callout icon="lightbulb">
-  If you don’t have an SSH key pair yet, generate one with:
+> **lightbulb** If you don’t have an SSH key pair yet, generate one with:
 
   ```bash theme={null}
   ssh-keygen -t ed25519 -f ~/.ollama/id_ed25519 -C "you@example.com"
   ```
-</Callout>
 
-<Frame>
-  ![The image illustrates the process of adding an Ollama public key from a local machine to an Ollama account, with icons representing each step.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883690/notes-assets/images/Running-Local-LLMs-With-Ollama-Uploading-Custom-Models/ollama-public-key-setup-process.jpg)
-</Frame>
+![The image illustrates the process of adding an Ollama public key from a local machine to an Ollama account, with icons representing each step.](https://kodekloud.com/kk-media/image/upload/v1752883690/notes-assets/images/Running-Local-LLMs-With-Ollama-Uploading-Custom-Models/ollama-public-key-setup-process.jpg)
 
 3. **Tag Your Model for Your Namespace**\
    Prefix your local model name with your Ollama username:
@@ -68,9 +58,7 @@ Follow these steps to upload and share your custom model on Ollama:
    copied 'harris' to 'your_username/harris'
    ```
 
-<Callout icon="triangle-alert">
-  Make sure to replace `your_username` with your actual Ollama username to avoid naming conflicts.
-</Callout>
+> **triangle-alert** Make sure to replace `your_username` with your actual Ollama username to avoid naming conflicts.
 
 4. **Push the Model to the Registry**\
    Upload your tagged model:
@@ -88,9 +76,7 @@ Follow these steps to upload and share your custom model on Ollama:
 5. **View and Run Your Published Model**\
    Open your model’s page to see details like architecture, parameters, and license—similar to [Llama 3.2](https://ai.meta.com/llama/) and other public models. You’ll also find the `ollama run` command to pull and launch the model locally:
 
-<Frame>
-  ![The image shows a user interface for managing an AI model named "harris," displaying details like model architecture, parameters, and system information. It includes options for editing and viewing the model's configuration and license details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883691/notes-assets/images/Running-Local-LLMs-With-Ollama-Uploading-Custom-Models/harris-ai-model-management-ui.jpg)
-</Frame>
+![The image shows a user interface for managing an AI model named "harris," displaying details like model architecture, parameters, and system information. It includes options for editing and viewing the model's configuration and license details.](https://kodekloud.com/kk-media/image/upload/v1752883691/notes-assets/images/Running-Local-LLMs-With-Ollama-Uploading-Custom-Models/harris-ai-model-management-ui.jpg)
 
 Once configured, any update to your `Modelfile` can be published with:
 
@@ -112,6 +98,4 @@ Proceed to the demonstration below to see this process in action!
 * [Docker Hub](https://hub.docker.com/)
 * [Llama 3.2 Model by Meta AI](https://ai.meta.com/llama/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/5785c7c7-5088-4ac3-b82f-8835e72b66d0/lesson/e7eb45f0-d1ae-4dda-82b8-9e07dedc72f6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/running-local-llms-with-ollama/module/5785c7c7-5088-4ac3-b82f-8835e72b66d0/lesson/e7eb45f0-d1ae-4dda-82b8-9e07dedc72f6)

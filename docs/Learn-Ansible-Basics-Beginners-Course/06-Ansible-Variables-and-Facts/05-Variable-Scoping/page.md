@@ -47,9 +47,7 @@ ok: [web3] => {
 }
 ```
 
-<Callout icon="lightbulb">
-  In this case, the `dns_server` variable is only defined for `web2`, so it is accessible solely in the host scope for that specific host.
-</Callout>
+> **lightbulb** In this case, the `dns_server` variable is only defined for `web2`, so it is accessible solely in the host scope for that specific host.
 
 ## Play Scope
 
@@ -92,9 +90,7 @@ ok: [web1] => {
 }
 ```
 
-<Callout icon="lightbulb">
-  Variables set within a play are only available in that play. In the example above, `ntp_server` is defined in the first play and is not accessible in the second play.
-</Callout>
+> **lightbulb** Variables set within a play are only available in that play. In the example above, `ntp_server` is defined in the first play and is not accessible in the second play.
 
 ## Global Variables
 
@@ -141,9 +137,7 @@ ok: [web1] => {
 }
 ```
 
-<Callout icon="lightbulb">
-  Passing `ntp_server` as an extra variable sets it as a global variable, making it accessible to every play and task in the playbook.
-</Callout>
+> **lightbulb** Passing `ntp_server` as an extra variable sets it as a global variable, making it accessible to every play and task in the playbook.
 
 ## Summary of Variable Scopes
 
@@ -157,6 +151,4 @@ Having a solid grasp of these scopes will not only help in writing efficient and
 
 Thank you for reading this article. Happy automating, and see you in the next guide!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/c85e487f-ca75-448b-b7dd-f72e9519d9b9/lesson/c7708e18-56b6-4948-ba73-76ce8ceb6c45" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-ansible-basics-beginners-course/module/c85e487f-ca75-448b-b7dd-f72e9519d9b9/lesson/c7708e18-56b6-4948-ba73-76ce8ceb6c45)

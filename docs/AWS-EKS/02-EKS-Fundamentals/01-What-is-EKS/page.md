@@ -129,7 +129,7 @@ A standard Kubernetes cluster consists of two main layers:
    * Worker nodes (EC2 instances or AWS Fargate)
    * Pods and containers
 
-![The image is a diagram of an EKS (Elastic Kubernetes Service) Cluster, showing the components of the Control Plane (etcd, API server, scheduler) and the Data Plane (worker nodes).](../../../../images/kodekloud.com/kk-media/image/upload/v1752862789/notes-assets/images/AWS-EKS-What-is-EKS/eks-cluster-control-data-plane-diagram.jpg)
+![The image is a diagram of an EKS (Elastic Kubernetes Service) Cluster, showing the components of the Control Plane (etcd, API server, scheduler) and the Data Plane (worker nodes).](https://kodekloud.com/kk-media/image/upload/v1752862789/notes-assets/images/AWS-EKS-What-is-EKS/eks-cluster-control-data-plane-diagram.jpg)
 
 For more on Kubernetes components, see the [Kubernetes Documentation](https://kubernetes.io/docs/concepts/overview/components/).
 
@@ -146,7 +146,7 @@ With Amazon EKS, AWS takes care of the highly available, secure control plane, w
 
 > **lightbulb** AWS provisions a dedicated VPC for the control plane and connects it to your VPC using cross-account Elastic Network Interfaces (ENIs).
 
-![The image is a diagram of an EKS (Elastic Kubernetes Service) cluster, showing the control plane with components like etcd, API server, and scheduler, and the data plane with worker nodes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862791/notes-assets/images/AWS-EKS-What-is-EKS/eks-cluster-diagram-control-data-plane.jpg)
+![The image is a diagram of an EKS (Elastic Kubernetes Service) cluster, showing the control plane with components like etcd, API server, and scheduler, and the data plane with worker nodes.](https://kodekloud.com/kk-media/image/upload/v1752862791/notes-assets/images/AWS-EKS-What-is-EKS/eks-cluster-diagram-control-data-plane.jpg)
 
 ## Control Plane ↔ Data Plane Communication
 

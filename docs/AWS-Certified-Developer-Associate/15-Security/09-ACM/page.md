@@ -16,13 +16,13 @@ Digital certificates offer several key benefits:
 * **Trust:** Issued only after a stringent verification process by trusted authorities.
 * **Compliance:** Meets industry standards for protecting sensitive data.
 
-![The image lists five reasons for the need for certificates: Authentication, Data Encryption, Data Integrity, Trust, and Compliance and Regulation. Each reason is represented with an icon and a number.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859300/notes-assets/images/AWS-Certified-Developer-Associate-ACM/certificate-need-reasons-icons.jpg)
+![The image lists five reasons for the need for certificates: Authentication, Data Encryption, Data Integrity, Trust, and Compliance and Regulation. Each reason is represented with an icon and a number.](https://kodekloud.com/kk-media/image/upload/v1752859300/notes-assets/images/AWS-Certified-Developer-Associate-ACM/certificate-need-reasons-icons.jpg)
 
 ## What is AWS Certificate Manager?
 
 AWS Certificate Manager is a comprehensive service that helps you maintain a secure web presence using TLS. It automates the generation of SSL/TLS certificates for services like Elastic Load Balancer, Amazon CloudFront, and Amazon API Gateway, among other AWS-integrated services.
 
-![The image is a diagram showing the AWS Certificate Manager (ACM) issuing public certificates, which are then used by services like Elastic Load Balancer, Amazon CloudFront, and Amazon API Gateway.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859301/notes-assets/images/AWS-Certified-Developer-Associate-ACM/aws-certificate-manager-diagram.jpg)
+![The image is a diagram showing the AWS Certificate Manager (ACM) issuing public certificates, which are then used by services like Elastic Load Balancer, Amazon CloudFront, and Amazon API Gateway.](https://kodekloud.com/kk-media/image/upload/v1752859301/notes-assets/images/AWS-Certified-Developer-Associate-ACM/aws-certificate-manager-diagram.jpg)
 
 ACM not only simplifies certificate creation but also handles deployment and automated renewals. This seamless process eliminates manual steps, reducing the risk of misconfigurations.
 
@@ -34,7 +34,7 @@ ACM not only simplifies certificate creation but also handles deployment and aut
 * **Centralized Management:** Offers a unified console to manage all your certificates.
 * **AWS Integration:** Works natively across various AWS services for streamlined operations.
 
-![The image lists five features: Automated Certificate Provisioning, Auto-Renewal, Seamless Deployment, Central Management, and AWS Integration, each with a corresponding icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859302/notes-assets/images/AWS-Certified-Developer-Associate-ACM/certificate-provisioning-features-icons.jpg)
+![The image lists five features: Automated Certificate Provisioning, Auto-Renewal, Seamless Deployment, Central Management, and AWS Integration, each with a corresponding icon.](https://kodekloud.com/kk-media/image/upload/v1752859302/notes-assets/images/AWS-Certified-Developer-Associate-ACM/certificate-provisioning-features-icons.jpg)
 
 > **lightbulb** Automating certificate management not only simplifies your workflow but also enhances your application’s overall security posture.
 
@@ -48,7 +48,7 @@ Imagine an application load balancer exposed to the public. To secure user conne
 
 Once the certificate is in place, users connect securely via HTTPS to the load balancer. The load balancer may then communicate with backend instances (such as EC2) over HTTP. Although HTTPS between the load balancer and backend servers is possible, this communication typically remains within the secure confines of AWS.
 
-![The image is a diagram illustrating the use of AWS Certificate Manager (ACM) to provision and maintain TLS certificates for an application load balancer, which communicates with an autoscaling group of EC2 instances.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859302/notes-assets/images/AWS-Certified-Developer-Associate-ACM/aws-certificate-manager-tls-diagram.jpg)
+![The image is a diagram illustrating the use of AWS Certificate Manager (ACM) to provision and maintain TLS certificates for an application load balancer, which communicates with an autoscaling group of EC2 instances.](https://kodekloud.com/kk-media/image/upload/v1752859302/notes-assets/images/AWS-Certified-Developer-Associate-ACM/aws-certificate-manager-tls-diagram.jpg)
 
 ## Supported AWS Services and Regional Considerations
 
@@ -60,11 +60,11 @@ AWS Certificate Manager integrates with several AWS services to secure your web 
 
 However, it is not directly compatible with services like EC2, S3, or Lambda.
 
-![The image is a diagram showing AWS Certificate Manager (ACM) in the center, connecting to services like Elastic Load Balancer, Amazon CloudFront, and Amazon API Gateway on the left, and EC2, S3, and Amazon Lambda on the right.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859304/notes-assets/images/AWS-Certified-Developer-Associate-ACM/aws-certificate-manager-diagram-2.jpg)
+![The image is a diagram showing AWS Certificate Manager (ACM) in the center, connecting to services like Elastic Load Balancer, Amazon CloudFront, and Amazon API Gateway on the left, and EC2, S3, and Amazon Lambda on the right.](https://kodekloud.com/kk-media/image/upload/v1752859304/notes-assets/images/AWS-Certified-Developer-Associate-ACM/aws-certificate-manager-diagram-2.jpg)
 
 ACM is a regional service. This means certificates must be requested in the same region as the resource they will secure. For instance, a certificate for an AWS resource in US East 1 must be provisioned in US East 1. Global services like CloudFront require certificates from US East 1.
 
-![The image shows two AWS Certificate Manager (ACM) icons, one for the "us-east-1" region and one for the "us-west-1" region, each accompanied by certificate icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859304/notes-assets/images/AWS-Certified-Developer-Associate-ACM/aws-acm-us-east-west-certificates.jpg)
+![The image shows two AWS Certificate Manager (ACM) icons, one for the "us-east-1" region and one for the "us-west-1" region, each accompanied by certificate icons.](https://kodekloud.com/kk-media/image/upload/v1752859304/notes-assets/images/AWS-Certified-Developer-Associate-ACM/aws-acm-us-east-west-certificates.jpg)
 
 ## Steps for Working with ACM
 
@@ -74,7 +74,7 @@ ACM is a regional service. This means certificates must be requested in the same
 4. **Automatic Renewal:** ACM autonomously manages certificate renewals prior to expiration.
 5. **Integration with AWS Services:** Attach the certificate to your target AWS service, such as Elastic Load Balancer or CloudFront.
 
-![The image outlines the steps of how ACM (AWS Certificate Manager) works, including requesting a certificate, domain ownership verification, certificate issuance, certificate management, integration with AWS services, and automatic renewal.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859305/notes-assets/images/AWS-Certified-Developer-Associate-ACM/acm-aws-certificate-steps-diagram.jpg)
+![The image outlines the steps of how ACM (AWS Certificate Manager) works, including requesting a certificate, domain ownership verification, certificate issuance, certificate management, integration with AWS services, and automatic renewal.](https://kodekloud.com/kk-media/image/upload/v1752859305/notes-assets/images/AWS-Certified-Developer-Associate-ACM/acm-aws-certificate-steps-diagram.jpg)
 
 > **lightbulb** Always verify that certificates are provisioned in the same region as your resources. For global distributions like CloudFront, remember to use certificates from US East 1.
 

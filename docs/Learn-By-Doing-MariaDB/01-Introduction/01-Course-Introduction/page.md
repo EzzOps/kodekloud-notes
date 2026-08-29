@@ -157,9 +157,7 @@ Kyverno is a Kubernetes-native policy engine that integrates with the admission 
 
 Happy experimenting with Kyverno — it’s a practical way to automate policy enforcement across your cluster.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-by-doing-kubernetes-policies-with-kyverno/module/a3370f08-e378-4285-9305-52025206031a/lesson/88f594b7-4413-486b-9d5a-e1c9615efa5d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-by-doing-kubernetes-policies-with-kyverno/module/a3370f08-e378-4285-9305-52025206031a/lesson/88f594b7-4413-486b-9d5a-e1c9615efa5d)
 
 
 # Course Introduction
@@ -213,9 +211,7 @@ This will prompt for the root password. If you must provide the password inline 
 sudo mariadb -u root -p'Pe$w0rd'
 ```
 
-<Callout icon="lightbulb">
-  For security, prefer the first form (`sudo mariadb -u root -p`) so the password is not visible in your shell history or process list.
-</Callout>
+> **lightbulb** For security, prefer the first form (`sudo mariadb -u root -p`) so the password is not visible in your shell history or process list.
 
 If you get stuck
 
@@ -245,6 +241,4 @@ Further reading and references
 Ready to begin?
 Each lesson builds on the previous one, moving from initial setup to advanced configuration and performance optimization. Start the first hands-on lab to apply these concepts in a practical environment.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learn-by-doing-mariadb/module/115a5ed7-8ec1-46ef-97f7-180305153490/lesson/38929527-a9c8-473b-8a91-8d925956b74a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learn-by-doing-mariadb/module/115a5ed7-8ec1-46ef-97f7-180305153490/lesson/38929527-a9c8-473b-8a91-8d925956b74a)

@@ -1,13 +1,9 @@
 # e.g. 10-244-1-3.default.pod.cluster.local
 ```
 
-<Callout icon="triangle-alert">
-  Pod DNS records change on restart or rescheduling. Always prefer Service DNS names (`my-service.default.svc.cluster.local`) for stable discovery.
-</Callout>
+> **triangle-alert** Pod DNS records change on restart or rescheduling. Always prefer Service DNS names (`my-service.default.svc.cluster.local`) for stable discovery.
 
-<Frame>
-  ![The image illustrates the role of services in Kubernetes, showing how they facilitate service discovery and DNS management, and define pod access with a stable endpoint.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880268/notes-assets/images/Kubernetes-Networking-Deep-Dive-Internal-Kubernetes-Communication-Overview/kubernetes-services-discovery-dns-management.jpg)
-</Frame>
+![The image illustrates the role of services in Kubernetes, showing how they facilitate service discovery and DNS management, and define pod access with a stable endpoint.](https://kodekloud.com/kk-media/image/upload/v1752880268/notes-assets/images/Kubernetes-Networking-Deep-Dive-Internal-Kubernetes-Communication-Overview/kubernetes-services-discovery-dns-management.jpg)
 
 ## Service Mesh
 
@@ -19,9 +15,7 @@ A Service Mesh (e.g., Istio, Linkerd) injects sidecar proxies into each pod. The
 
 No application code changes are needed—network features are handled transparently.
 
-<Frame>
-  ![The image illustrates a service mesh concept with two pods, each having a sidecar proxy, and highlights features like lightweight proxies, sidecar operation, and traffic interception.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880269/notes-assets/images/Kubernetes-Networking-Deep-Dive-Internal-Kubernetes-Communication-Overview/service-mesh-pods-sidecar-proxy-diagram.jpg)
-</Frame>
+![The image illustrates a service mesh concept with two pods, each having a sidecar proxy, and highlights features like lightweight proxies, sidecar operation, and traffic interception.](https://kodekloud.com/kk-media/image/upload/v1752880269/notes-assets/images/Kubernetes-Networking-Deep-Dive-Internal-Kubernetes-Communication-Overview/service-mesh-pods-sidecar-proxy-diagram.jpg)
 
 ***
 
@@ -35,9 +29,7 @@ In this lesson, we reviewed Kubernetes’ pod-to-pod connectivity patterns, netw
 * [Istio Service Mesh](https://istio.io/latest/docs/)
 * [Linkerd Service Mesh](https://linkerd.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/c59b34d8-459c-4088-9cc7-d36f224a061f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/c59b34d8-459c-4088-9cc7-d36f224a061f)
 
 
 # Introduction to Container Network Interface CNI
@@ -48,9 +40,7 @@ This guide explores the Container Network Interface (CNI), its architecture, spe
 
 As your Kubernetes cluster grows and hosts more workloads, networking complexity can quickly become a bottleneck. The Kubernetes networking model requires every pod to communicate seamlessly across nodes, demanding consistent, automated configuration management. In this guide, we’ll explore the Container Network Interface (CNI)—its purpose, architecture, specification, and key features—before surveying the most popular CNI plugins in today’s ecosystem.
 
-<Frame>
-  ![The image lists section objectives related to CNI, including understanding CNI, how it works, its specification, and key features. The background is a gradient of blue and green.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880270/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/cni-objectives-understanding-specification-features.jpg)
-</Frame>
+![The image lists section objectives related to CNI, including understanding CNI, how it works, its specification, and key features. The background is a gradient of blue and green.](https://kodekloud.com/kk-media/image/upload/v1752880270/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/cni-objectives-understanding-specification-features.jpg)
 
 ## What Is CNI?
 
@@ -72,13 +62,9 @@ Under the hood, the container runtime handles network setup by invoking one or m
 4. **Plugin(s) → Runtime**: Return interface details on stdout.
 5. **Runtime → Container**: Launch container in the prepared namespace.
 
-<Frame>
-  ![The image illustrates the workflow of how CNI (Container Network Interface) operates within Kubernetes, showing the interaction between components like Kube API, Kubelet, Runtime, and CNI, along with network namespaces and interfaces.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880271/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/cni-workflow-kubernetes-components-diagram.jpg)
-</Frame>
+![The image illustrates the workflow of how CNI (Container Network Interface) operates within Kubernetes, showing the interaction between components like Kube API, Kubelet, Runtime, and CNI, along with network namespaces and interfaces.](https://kodekloud.com/kk-media/image/upload/v1752880271/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/cni-workflow-kubernetes-components-diagram.jpg)
 
-<Callout icon="lightbulb">
-  CNI plugin binaries must be installed on every node (default: `/opt/cni/bin`). Without them, pods may fail to start.
-</Callout>
+> **lightbulb** CNI plugin binaries must be installed on every node (default: `/opt/cni/bin`). Without them, pods may fail to start.
 
 ## CNI Specification Overview
 
@@ -90,9 +76,7 @@ The CNI spec comprises:
 * A mechanism for chaining multiple plugins.
 * Standard data types for operation results.
 
-<Frame>
-  ![The image is an infographic titled "CNI Specification," featuring a clipboard and gear icon, with a list of five components related to network configuration and execution procedures.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880272/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/cni-specification-infographic-clipboard-gear.jpg)
-</Frame>
+![The image is an infographic titled "CNI Specification," featuring a clipboard and gear icon, with a list of five components related to network configuration and execution procedures.](https://kodekloud.com/kk-media/image/upload/v1752880272/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/cni-specification-infographic-clipboard-gear.jpg)
 
 ### Network Configuration Files
 
@@ -136,9 +120,7 @@ Each object in `plugins` is invoked in sequence for setup or teardown.
 
 CNI relies on environment variables to pass context:
 
-<Frame>
-  ![The image is a slide titled "Protocol for Interaction," listing environment parameters related to container networking, such as CNI\_COMMAND, CNI\_CONTAINERID, and others.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880274/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/protocol-for-interaction-container-networking.jpg)
-</Frame>
+![The image is a slide titled "Protocol for Interaction," listing environment parameters related to container networking, such as CNI\_COMMAND, CNI\_CONTAINERID, and others.](https://kodekloud.com/kk-media/image/upload/v1752880274/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/protocol-for-interaction-container-networking.jpg)
 
 | Variable         | Description                                  |
 | ---------------- | -------------------------------------------- |
@@ -160,9 +142,7 @@ A network attachment is uniquely identified by `CNI_CONTAINERID` + `CNI_IFNAME`.
 
 ### Execution Flow
 
-<Frame>
-  ![The image is a diagram titled "Execution of Network Configurations" showing options for adding or deleting an attachment, with buttons labeled "ADD" and "DELETE."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880275/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/execution-network-configurations-diagram.jpg)
-</Frame>
+![The image is a diagram titled "Execution of Network Configurations" showing options for adding or deleting an attachment, with buttons labeled "ADD" and "DELETE."](https://kodekloud.com/kk-media/image/upload/v1752880275/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/execution-network-configurations-diagram.jpg)
 
 When running **ADD**:
 
@@ -171,15 +151,11 @@ When running **ADD**:
 3. Halt on any failure and return an error.
 4. Persist success data for later `CHECK` or `DEL`.
 
-<Frame>
-  ![The image is a flowchart titled "Execution Order of Operations," showing a sequence of steps: "Derive configuration," "Execute Plugins in order," "Execute CNI\_COMMAND=ADD," and "If failure, halt and return error."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880275/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/execution-order-operations-flowchart.jpg)
-</Frame>
+![The image is a flowchart titled "Execution Order of Operations," showing a sequence of steps: "Derive configuration," "Execute Plugins in order," "Execute CNI\_COMMAND=ADD," and "If failure, halt and return error."](https://kodekloud.com/kk-media/image/upload/v1752880275/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/execution-order-operations-flowchart.jpg)
 
 The **DEL** operation runs plugins in **reverse order**. **CHECK** follows the same sequence as `ADD` but performs validations only.
 
-<Frame>
-  ![The image is a flowchart titled "Execution Order of Operations," showing a sequence of steps: deriving configuration, executing plugins, executing a command, and handling failure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880276/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/execution-order-operations-flowchart-2.jpg)
-</Frame>
+![The image is a flowchart titled "Execution Order of Operations," showing a sequence of steps: deriving configuration, executing plugins, executing a command, and handling failure.](https://kodekloud.com/kk-media/image/upload/v1752880276/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/execution-order-operations-flowchart-2.jpg)
 
 ## Chaining and Delegation
 
@@ -193,9 +169,7 @@ CNI operations return standardized JSON for:
 * **Error**: Includes `code`, `msg`, `details`, `cniVersion`.
 * **Version**: Lists supported spec versions.
 
-<Frame>
-  ![The image shows a diagram of result types with three hexagons labeled "Success," "Error," and "Version," alongside a section labeled "PrevResult" with items "cniVersion" and "Interfaces."](../../../../images/kodekloud.com/kk-media/image/upload/v1752880277/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/result-types-hexagons-diagram.jpg)
-</Frame>
+![The image shows a diagram of result types with three hexagons labeled "Success," "Error," and "Version," alongside a section labeled "PrevResult" with items "cniVersion" and "Interfaces."](https://kodekloud.com/kk-media/image/upload/v1752880277/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/result-types-hexagons-diagram.jpg)
 
 Example **error** response:
 
@@ -210,9 +184,7 @@ Example **error** response:
 
 ## Key Features of CNI
 
-<Frame>
-  ![The image lists five key features: Standardized Interfaces, Flexibility, Dynamic Configuration, Ease of Integration, and Compatibility, each with corresponding icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880278/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/key-features-standardized-flexibility-compatibility.jpg)
-</Frame>
+![The image lists five key features: Standardized Interfaces, Flexibility, Dynamic Configuration, Ease of Integration, and Compatibility, each with corresponding icons.](https://kodekloud.com/kk-media/image/upload/v1752880278/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/key-features-standardized-flexibility-compatibility.jpg)
 
 1. **Standardized Interface**: Unified API for all container runtimes.
 2. **Flexibility**: Supports a vast ecosystem of plugins.
@@ -222,22 +194,16 @@ Example **error** response:
 
 ## Popular CNI Plugins
 
-<Frame>
-  ![The image lists popular Container Network Interfaces (CNIs) including Flannel, Weave Net, Calico, and Cilium, with a focus on Flannel, describing it as a CoreOS creation that offers layer-3 IPv4 networking but lacks advanced features like network policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880280/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/popular-cnis-flannel-weave-calico-cilium.jpg)
-</Frame>
+![The image lists popular Container Network Interfaces (CNIs) including Flannel, Weave Net, Calico, and Cilium, with a focus on Flannel, describing it as a CoreOS creation that offers layer-3 IPv4 networking but lacks advanced features like network policies.](https://kodekloud.com/kk-media/image/upload/v1752880280/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/popular-cnis-flannel-weave-calico-cilium.jpg)
 
 **Flannel** – A CoreOS project providing simple IPv4 layer-3 networking.\
 **Weave Net** – Weaveworks’ layer-2 overlay with built-in encryption and network policies.
 
-<Frame>
-  ![The image is about popular CNIs (Container Network Interfaces) and highlights "Calico," describing it as created by Tigera, known for advanced network security, and employing BGP routing. It features an illustration of a cat with a ball of yarn.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880281/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/popular-cnis-calico-network-security.jpg)
-</Frame>
+![The image is about popular CNIs (Container Network Interfaces) and highlights "Calico," describing it as created by Tigera, known for advanced network security, and employing BGP routing. It features an illustration of a cat with a ball of yarn.](https://kodekloud.com/kk-media/image/upload/v1752880281/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/popular-cnis-calico-network-security.jpg)
 
 **Calico** – Tigera’s solution featuring scalable BGP routing and robust network policies.
 
-<Frame>
-  ![The image lists popular CNIs (Container Network Interfaces) including Flannel, Weave Net, Calico, and Cilium, with a focus on Cilium's features such as enhanced security using eBPF and inter-cluster service mesh support.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880282/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/cni-list-flannel-weave-calico-cilium.jpg)
-</Frame>
+![The image lists popular CNIs (Container Network Interfaces) including Flannel, Weave Net, Calico, and Cilium, with a focus on Cilium's features such as enhanced security using eBPF and inter-cluster service mesh support.](https://kodekloud.com/kk-media/image/upload/v1752880282/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/cni-list-flannel-weave-calico-cilium.jpg)
 
 **Cilium** – Leverages eBPF for deep network and security visibility, plus inter-cluster service mesh capabilities.
 
@@ -254,9 +220,7 @@ Many cloud providers (AWS, Azure, GCP) also offer CNI implementations optimized 
 
 ## Conclusion
 
-<Frame>
-  ![The image is a slide with the title "Conclusion" and a statement about CNI plugins standardizing and simplifying Kubernetes networking. It includes a logo and is copyrighted by KodeKloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880283/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/conclusion-cni-plugins-kubernetes-networking.jpg)
-</Frame>
+![The image is a slide with the title "Conclusion" and a statement about CNI plugins standardizing and simplifying Kubernetes networking. It includes a logo and is copyrighted by KodeKloud.](https://kodekloud.com/kk-media/image/upload/v1752880283/notes-assets/images/Kubernetes-Networking-Deep-Dive-Introduction-to-Container-Network-Interface-CNI/conclusion-cni-plugins-kubernetes-networking.jpg)
 
 CNI delivers a standardized, extensible framework that streamlines Kubernetes networking. By understanding its specification, execution model, and popular plugins, cluster operators can design robust, flexible network architectures.
 
@@ -266,6 +230,4 @@ CNI delivers a standardized, extensible framework that streamlines Kubernetes ne
 * [CNI Specification on GitHub](https://github.com/containernetworking/cni/blob/main/SPEC.md)
 * [Container Network Interface (CNI) Project](https://www.cncf.io/projects/container-network-interface/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/92357493-dc8c-43d3-b0b3-f67ceed4e400" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5eea49e6-caea-4e84-88a0-268ea6f263af/lesson/92357493-dc8c-43d3-b0b3-f67ceed4e400)

@@ -27,7 +27,7 @@ latest: Pulling from library/centos
 74f0853ba93b: Downloading [===============>                ] 13.52MB/72.25MB
 ```
 
-![The image shows a Docker Hub webpage listing official repositories like Postgres, Node, and CentOS, with star ratings and pull counts for each.](../../../../images/kodekloud.com/kk-media/image/upload/v1752874127/notes-assets/images/Docker-Training-Course-for-the-Absolute-Beginner-Demo-Docker-Commands/frame_60.jpg)
+![The image shows a Docker Hub webpage listing official repositories like Postgres, Node, and CentOS, with star ratings and pull counts for each.](https://kodekloud.com/kk-media/image/upload/v1752874127/notes-assets/images/Docker-Training-Course-for-the-Absolute-Beginner-Demo-Docker-Commands/frame_60.jpg)
 
 If you have custom images, use the format "username/repository". For example, if your Docker Hub ID is "Mumshad" and you have an image named "ansible-playbook", reference it as "Mumshad/ansible-playbook".
 
@@ -46,7 +46,7 @@ You can explicitly download an image using:
 docker pull centos
 ```
 
-![The image shows a webpage from Docker Hub, listing official Docker images like nginx, redis, and ubuntu, with their stars and pull counts.](../../../../images/kodekloud.com/kk-media/image/upload/v1752874128/notes-assets/images/Docker-Training-Course-for-the-Absolute-Beginner-Demo-Docker-Commands/frame_130.jpg)
+![The image shows a webpage from Docker Hub, listing official Docker images like nginx, redis, and ubuntu, with their stars and pull counts.](https://kodekloud.com/kk-media/image/upload/v1752874128/notes-assets/images/Docker-Training-Course-for-the-Absolute-Beginner-Demo-Docker-Commands/frame_130.jpg)
 
 > **lightbulb** When using a base image like CentOS without specifying a command, the container will exit immediately since there is no process running. To keep the container active, launch it with an interactive shell:
 
@@ -160,7 +160,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 
 Throughout your Docker sessions, you might have pulled several images such as hello-world, ubuntu, and centos. To list all locally available images, run:
 
-![The image shows a terminal window open in mRemoteNG, connected to a Docker host, displaying a command prompt as root in the /root directory.](../../../../images/kodekloud.com/kk-media/image/upload/v1752874128/notes-assets/images/Docker-Training-Course-for-the-Absolute-Beginner-Demo-Docker-Commands/frame_700.jpg)
+![The image shows a terminal window open in mRemoteNG, connected to a Docker host, displaying a command prompt as root in the /root directory.](https://kodekloud.com/kk-media/image/upload/v1752874128/notes-assets/images/Docker-Training-Course-for-the-Absolute-Beginner-Demo-Docker-Commands/frame_700.jpg)
 
 ```bash theme={null}
 root@Docker:/root # docker images

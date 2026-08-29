@@ -8,11 +8,11 @@ Welcome back, students. Michael here.
 
 In this article, we explore the various types of inferencing used in artificial intelligence (AI). Inferencing is the process of applying a trained AI model to new data in order to generate predictions or classifications. This allows the model to convert learned mathematical patterns into actionable insights—for example, classifying emails as spam, forecasting numerical trends, or detecting fraudulent activities.
 
-![The image contains text explaining that inferencing is the process where AI models make predictions or decisions using new data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857466/notes-assets/images/AWS-Certified-AI-Practitioner-Types-of-Inferencing/ai-inferencing-predictions-explained.jpg)
+![The image contains text explaining that inferencing is the process where AI models make predictions or decisions using new data.](https://kodekloud.com/kk-media/image/upload/v1752857466/notes-assets/images/AWS-Certified-AI-Practitioner-Types-of-Inferencing/ai-inferencing-predictions-explained.jpg)
 
 After training, models can assess new inputs and produce probabilistic predictions. For instance, a spam filter trained on millions of emails will evaluate a new message and predict its likelihood of being spam. AI models find applications in numerous domains including fraud detection, product recommendation, and customer service automation.
 
-![The image is an introduction to AI inferencing, showing a flow from "Training," where a model learns from historical data, to "Inferencing," where the model makes real-time decisions, with examples like fraud detection and product recommendation.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857467/notes-assets/images/AWS-Certified-AI-Practitioner-Types-of-Inferencing/ai-inferencing-training-flow-diagram.jpg)
+![The image is an introduction to AI inferencing, showing a flow from "Training," where a model learns from historical data, to "Inferencing," where the model makes real-time decisions, with examples like fraud detection and product recommendation.](https://kodekloud.com/kk-media/image/upload/v1752857467/notes-assets/images/AWS-Certified-AI-Practitioner-Types-of-Inferencing/ai-inferencing-training-flow-diagram.jpg)
 
 Once a model reaches a sufficient level of accuracy, it is deployed into production environments to make reliable inferences. There are two primary categories of inferencing: real-time inferencing and batch inferencing.
 
@@ -22,11 +22,11 @@ Real-time inferencing generates predictions or classifications instantly as data
 
 [Amazon SageMaker](https://aws.amazon.com/sagemaker/) is one example of a machine learning service that provides endpoints for deploying models capable of real-time inferencing. These endpoints are designed for high scalability and minimal latency.
 
-![The image compares two types of inferencing: real-time inferencing, which processes data instantly, and batch inferencing, which processes data in bulk at scheduled intervals, both using Amazon SageMaker.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857468/notes-assets/images/AWS-Certified-AI-Practitioner-Types-of-Inferencing/real-time-vs-batch-inferencing-sagemaker.jpg)
+![The image compares two types of inferencing: real-time inferencing, which processes data instantly, and batch inferencing, which processes data in bulk at scheduled intervals, both using Amazon SageMaker.](https://kodekloud.com/kk-media/image/upload/v1752857468/notes-assets/images/AWS-Certified-AI-Practitioner-Types-of-Inferencing/real-time-vs-batch-inferencing-sagemaker.jpg)
 
 Real-time inferencing is especially evident in voice assistants. For example, when you ask [Alexa](https://developer.amazon.com/en-US/alexa), "What's the weather today?", the system processes your query immediately and returns the current forecast.
 
-![The image explains real-time inferencing, highlighting its use in making instant predictions and its applications in voice assistants and self-driving cars. It includes a visual of a person asking a voice assistant about the weather.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857470/notes-assets/images/AWS-Certified-AI-Practitioner-Types-of-Inferencing/real-time-inferencing-voice-assistants.jpg)
+![The image explains real-time inferencing, highlighting its use in making instant predictions and its applications in voice assistants and self-driving cars. It includes a visual of a person asking a voice assistant about the weather.](https://kodekloud.com/kk-media/image/upload/v1752857470/notes-assets/images/AWS-Certified-AI-Practitioner-Types-of-Inferencing/real-time-inferencing-voice-assistants.jpg)
 
 ## Batch Inferencing
 

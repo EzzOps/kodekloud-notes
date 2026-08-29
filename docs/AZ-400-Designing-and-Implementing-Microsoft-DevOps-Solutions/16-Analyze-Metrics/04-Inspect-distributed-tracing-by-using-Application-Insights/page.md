@@ -88,7 +88,7 @@ PM> Install-Package Microsoft.ApplicationInsights.AspNetCore
 2. Under **Instrument your application**, select **.NET** and the **Recommended Basic** level.
 3. Enable the **Profiler** and click **Apply**.
 
-![The image shows a Microsoft Azure portal page for "KodeKloudSupport" with a focus on Application Insights settings. It includes options for instrumenting applications with various programming languages and settings for collection level, profiler, and snapshot debugger.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867281/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-portal-kodekloudsupport-application-insights.jpg)
+![The image shows a Microsoft Azure portal page for "KodeKloudSupport" with a focus on Application Insights settings. It includes options for instrumenting applications with various programming languages and settings for collection level, profiler, and snapshot debugger.](https://kodekloud.com/kk-media/image/upload/v1752867281/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-portal-kodekloudsupport-application-insights.jpg)
 
 4. Copy the **Instrumentation Key**, then add it to **appsettings.json**:
 
@@ -133,14 +133,14 @@ The Overview dashboard presents high-level metrics:
 * **Server requests**
 * **Availability**
 
-![The image shows a Microsoft Azure dashboard for "KodeKloudSupport," displaying metrics such as usage, reliability, responsiveness, and browser performance with various graphs and statistics.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867282/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-dashboard-kodekloudsupport-metrics.jpg)
+![The image shows a Microsoft Azure dashboard for "KodeKloudSupport," displaying metrics such as usage, reliability, responsiveness, and browser performance with various graphs and statistics.](https://kodekloud.com/kk-media/image/upload/v1752867282/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-dashboard-kodekloudsupport-metrics.jpg)
 
 ### Live Metrics Stream
 
 1. Go to **Live Metrics** and reset the view.
 2. Generate traffic to monitor request rate, duration, CPU usage, and memory in real time.
 
-![The image shows a Microsoft Azure dashboard displaying live metrics for "KodeKloudSupport," including graphs for incoming and outgoing requests, overall health, and server performance.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867284/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-dashboard-kodekloudsupport-metrics-2.jpg)
+![The image shows a Microsoft Azure dashboard displaying live metrics for "KodeKloudSupport," including graphs for incoming and outgoing requests, overall health, and server performance.](https://kodekloud.com/kk-media/image/upload/v1752867284/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-dashboard-kodekloudsupport-metrics-2.jpg)
 
 Live metrics are ideal for high-load scenarios and can be displayed on a team dashboard.
 
@@ -148,25 +148,25 @@ Live metrics are ideal for high-load scenarios and can be displayed on a team da
 
 The **Application Map** visualizes components, dependencies, instance counts, and response times. It also highlights top failures and slowest requests.
 
-![The image shows a Microsoft Azure Application Insights dashboard for "KodeKloudSupport," displaying an application map with metrics such as 1 instance, 301.7 microseconds response time, and 39,000 calls. It also highlights top failing requests and slowest requests on the right panel.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867285/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-application-insights-kodekloudsupport-dashboard.jpg)
+![The image shows a Microsoft Azure Application Insights dashboard for "KodeKloudSupport," displaying an application map with metrics such as 1 instance, 301.7 microseconds response time, and 39,000 calls. It also highlights top failing requests and slowest requests on the right panel.](https://kodekloud.com/kk-media/image/upload/v1752867285/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-application-insights-kodekloudsupport-dashboard.jpg)
 
 ### Performance
 
 Review operations by response time to identify slow dependencies or endpoints.
 
-![The image shows a Microsoft Azure dashboard displaying performance metrics for "KodeKloudSupport," including graphs of request counts and operation durations. It features various tabs and options for analyzing server performance data.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867286/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-dashboard-kodekloudsupport-metrics-3.jpg)
+![The image shows a Microsoft Azure dashboard displaying performance metrics for "KodeKloudSupport," including graphs of request counts and operation durations. It features various tabs and options for analyzing server performance data.](https://kodekloud.com/kk-media/image/upload/v1752867286/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-dashboard-kodekloudsupport-metrics-3.jpg)
 
 ### Failures
 
 Inspect error types and counts. In this demo, we intentionally generated 4,800 HTTP 404 errors.
 
-![The image shows a Microsoft Azure Application Insights dashboard displaying failure analytics for "KodeKloudSupport," highlighting a high number of 404 response codes.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867287/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-application-insights-failure-analytics.jpg)
+![The image shows a Microsoft Azure Application Insights dashboard displaying failure analytics for "KodeKloudSupport," highlighting a high number of 404 response codes.](https://kodekloud.com/kk-media/image/upload/v1752867287/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-application-insights-failure-analytics.jpg)
 
 ### Availability
 
 Track uptime and response trends over time to assess reliability.
 
-![The image shows a Microsoft Azure dashboard for "KodeKloudSupport" with metrics on failed requests, server response time, server requests, and availability over the past hour. It includes graphs and various monitoring options on the left sidebar.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867288/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-dashboard-kodekloudsupport-metrics-4.jpg)
+![The image shows a Microsoft Azure dashboard for "KodeKloudSupport" with metrics on failed requests, server response time, server requests, and availability over the past hour. It includes graphs and various monitoring options on the left sidebar.](https://kodekloud.com/kk-media/image/upload/v1752867288/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-dashboard-kodekloudsupport-metrics-4.jpg)
 
 ***
 
@@ -184,15 +184,15 @@ Define alert rules to get notified when metrics cross thresholds.
 2. Select the target resource and signal type (e.g., Failed requests).
 3. Set the condition logic and threshold.
 
-![The image shows a Microsoft Azure interface for creating an alert rule, specifically for monitoring failed requests. It includes options for setting alert conditions, logic, and a preview graph of failed request counts over time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867290/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-alert-rule-failed-requests-interface.jpg)
+![The image shows a Microsoft Azure interface for creating an alert rule, specifically for monitoring failed requests. It includes options for setting alert conditions, logic, and a preview graph of failed request counts over time.](https://kodekloud.com/kk-media/image/upload/v1752867290/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-alert-rule-failed-requests-interface.jpg)
 
 4. On **Actions**, choose or create an action group to send email, SMS, or webhook notifications.
 
-![The image shows a Microsoft Azure portal interface for creating an alert rule, specifically on the "Actions" tab, where users can configure quick actions and select notification methods like email.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867291/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-portal-alert-rule-actions-tab.jpg)
+![The image shows a Microsoft Azure portal interface for creating an alert rule, specifically on the "Actions" tab, where users can configure quick actions and select notification methods like email.](https://kodekloud.com/kk-media/image/upload/v1752867291/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-portal-alert-rule-actions-tab.jpg)
 
 Tip: Pin custom metric charts to your dashboard for quick visibility.
 
-![The image shows a Microsoft Azure dashboard for KodeKloudSupport, displaying metrics selection options and chart settings for monitoring application insights.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867292/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-dashboard-kodekloudsupport-metrics-chart.jpg)
+![The image shows a Microsoft Azure dashboard for KodeKloudSupport, displaying metrics selection options and chart settings for monitoring application insights.](https://kodekloud.com/kk-media/image/upload/v1752867292/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-dashboard-kodekloudsupport-metrics-chart.jpg)
 
 ***
 
@@ -200,7 +200,7 @@ Tip: Pin custom metric charts to your dashboard for quick visibility.
 
 1. Under **Diagnostic settings**, configure streaming export of logs and metrics to storage, Event Hubs, or Log Analytics.
 
-![The image shows the "Diagnostic settings" page in Microsoft Azure for "KodeKloudSupport," where users can configure the export of platform logs and metrics. It includes options to add diagnostic settings and lists various data types that can be collected.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867294/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-diagnostic-settings-kodekloudsupport.jpg)
+![The image shows the "Diagnostic settings" page in Microsoft Azure for "KodeKloudSupport," where users can configure the export of platform logs and metrics. It includes options to add diagnostic settings and lists various data types that can be collected.](https://kodekloud.com/kk-media/image/upload/v1752867294/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Inspect-distributed-tracing-by-using-Application-Insights/azure-diagnostic-settings-kodekloudsupport.jpg)
 
 2. Use **Log Analytics** to run Kusto queries on your telemetry and logs for advanced diagnostics.
 

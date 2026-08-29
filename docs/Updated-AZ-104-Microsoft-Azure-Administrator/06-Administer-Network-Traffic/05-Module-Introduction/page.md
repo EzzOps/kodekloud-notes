@@ -30,12 +30,8 @@ This guide is structured around three key Azure components:
    * Diagnosing network issues quickly and effectively.
    * Ensuring compliance with network security standards.
 
-<Callout icon="lightbulb">
-  Before you begin, verify that your Azure subscription is properly configured and that you have the necessary permissions to manage these network services.
-</Callout>
+> **lightbulb** Before you begin, verify that your Azure subscription is properly configured and that you have the necessary permissions to manage these network services.
 
 Let’s start our journey by diving into the configuration of the Azure Load Balancer.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/50248c52-4b17-4c2d-87f8-52a42eff2d2f/lesson/ca43c9ae-6de4-4da7-a65d-f8184bac17f8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/az-104-microsoft-azure-administrator/module/50248c52-4b17-4c2d-87f8-52a42eff2d2f/lesson/ca43c9ae-6de4-4da7-a65d-f8184bac17f8)

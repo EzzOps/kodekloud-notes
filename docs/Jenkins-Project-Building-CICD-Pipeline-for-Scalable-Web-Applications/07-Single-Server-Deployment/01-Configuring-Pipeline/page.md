@@ -16,13 +16,9 @@ The pipeline consists of the following steps:
 6. Connect to the production server to install dependencies.
 7. Restart the Flask application with a command like `systemctl restart flaskapp.service`.
 
-<Callout icon="lightbulb">
-  Ensure SSH access to the production server is available. The Jenkins server must be configured with the appropriate SSH credentials for secure connectivity.
-</Callout>
+> **lightbulb** Ensure SSH access to the production server is available. The Jenkins server must be configured with the appropriate SSH credentials for secure connectivity.
 
-<Frame>
-  ![The image shows a pipeline configuration flowchart with steps for code checkout, dependency installation, code testing, packaging, server copying, and restarting a Flask app. It notes the need for SSH access to the server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879979/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Pipeline/pipeline-configuration-flowchart-flask.jpg)
-</Frame>
+![The image shows a pipeline configuration flowchart with steps for code checkout, dependency installation, code testing, packaging, server copying, and restarting a Flask app. It notes the need for SSH access to the server.](https://kodekloud.com/kk-media/image/upload/v1752879979/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Pipeline/pipeline-configuration-flowchart-flask.jpg)
 
 ## Configuring Jenkins Credentials
 
@@ -33,9 +29,7 @@ To securely connect to the production server, set up two Jenkins credentials:
 
 This configuration enables the Jenkinsfile to dynamically include these credentials.
 
-<Frame>
-  ![The image shows a diagram for configuring pipeline credentials, featuring a central character icon connected to two nodes labeled "ssh-key" and "prod-server-ip."](../../../../images/kodekloud.com/kk-media/image/upload/v1752879981/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Pipeline/pipeline-credentials-diagram.jpg)
-</Frame>
+![The image shows a diagram for configuring pipeline credentials, featuring a central character icon connected to two nodes labeled "ssh-key" and "prod-server-ip."](https://kodekloud.com/kk-media/image/upload/v1752879981/notes-assets/images/Jenkins-Project-Building-CICD-Pipeline-for-Scalable-Web-Applications-Configuring-Pipeline/pipeline-credentials-diagram.jpg)
 
 ## The Jenkinsfile Configuration
 
@@ -119,11 +113,9 @@ pipeline {
 }
 ```
 
-<Callout icon="lightbulb">
-  * The `scp` command securely transfers the `myapp.zip` file to the production server.
+> **lightbulb** * The `scp` command securely transfers the `myapp.zip` file to the production server.
   * The `ssh` command logs into the production server using the same SSH key and executes a sequence of commands separated by a heredoc (`<< EOF`).
   * Ensure that spacing and indentation between `EOF` markers are consistent to prevent issues.
-</Callout>
 
 This example highlights a straightforward approach to deploying your code with a Jenkins pipeline. Depending on your production environment, you may choose to store these commands in a separate script on the production server and execute that script via Jenkins for enhanced maintainability.
 
@@ -136,6 +128,4 @@ By following this structured methodology, you can build a robust and secure CI/C
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/5fe5875c-d1e2-4f35-8161-af0830fe0deb/lesson/ecf32aab-e795-4a37-8a17-485c785d9af7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-project-building-ci-cd-pipeline-for-scalable-web-applications/module/5fe5875c-d1e2-4f35-8161-af0830fe0deb/lesson/ecf32aab-e795-4a37-8a17-485c785d9af7)

@@ -6,7 +6,7 @@ Learn to configure authentication and authorization for your API Gateway using A
 
 In this lesson, you will learn how to configure authentication and authorization for your API Gateway using various methods. We'll walk through setting up method-level authorization with AWS IAM and resource policies, as well as implementing a custom Lambda authorizer.
 
-![The image shows the AWS API Gateway console with a list of four APIs named "ecommerce," "library," "taskmanager," and "taskmanager2," all using the REST protocol. A green notification at the top indicates a successful deletion of an authorizer.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857850/notes-assets/images/AWS-Certified-Developer-Associate-Authentication-Authorization-Demo/aws-api-gateway-apis-list.jpg)
+![The image shows the AWS API Gateway console with a list of four APIs named "ecommerce," "library," "taskmanager," and "taskmanager2," all using the REST protocol. A green notification at the top indicates a successful deletion of an authorizer.](https://kodekloud.com/kk-media/image/upload/v1752857850/notes-assets/images/AWS-Certified-Developer-Associate-Authentication-Authorization-Demo/aws-api-gateway-apis-list.jpg)
 
 ## Configuring Method-Level Authorization
 
@@ -73,7 +73,7 @@ To restrict access based on IP addresses or IP ranges, use a policy similar to t
 
 A Lambda authorizer allows you to implement custom authorization logic in a Lambda function. When configured, API Gateway passes the incoming request's authorization token to your Lambda function, which returns an IAM policy determining whether to allow or deny the request.
 
-![The image shows the "Edit method request" page in AWS API Gateway, where settings like authorization, request validator, and operation name are configured. Options for URL query string parameters, HTTP request headers, and request body are also visible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857851/notes-assets/images/AWS-Certified-Developer-Associate-Authentication-Authorization-Demo/aws-api-gateway-edit-method.jpg)
+![The image shows the "Edit method request" page in AWS API Gateway, where settings like authorization, request validator, and operation name are configured. Options for URL query string parameters, HTTP request headers, and request body are also visible.](https://kodekloud.com/kk-media/image/upload/v1752857851/notes-assets/images/AWS-Certified-Developer-Associate-Authentication-Authorization-Demo/aws-api-gateway-edit-method.jpg)
 
 Below is an example of a simple Lambda authorizer written in JavaScript. This function checks if the token is equal to "abc123" and then returns a corresponding IAM policy:
 
@@ -103,7 +103,7 @@ export const handler = async (event) => {
 
 This Lambda function examines the client-provided header (typically "authorization" or "authorization token"), performs validation, and returns a policy document to either grant or deny access.
 
-![The image shows an AWS API Gateway interface for creating an authorizer, with options to select the authorizer type, Lambda function, and other settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857852/notes-assets/images/AWS-Certified-Developer-Associate-Authentication-Authorization-Demo/aws-api-gateway-authorizer-interface.jpg)
+![The image shows an AWS API Gateway interface for creating an authorizer, with options to select the authorizer type, Lambda function, and other settings.](https://kodekloud.com/kk-media/image/upload/v1752857852/notes-assets/images/AWS-Certified-Developer-Associate-Authentication-Authorization-Demo/aws-api-gateway-authorizer-interface.jpg)
 
 When configuring the Lambda authorizer in API Gateway:
 
@@ -112,7 +112,7 @@ When configuring the Lambda authorizer in API Gateway:
 * Specify the header name (for example, "authorization token") that contains the token.
 * Optionally, configure caching settings (default is set to 300 seconds) for improved performance.
 
-![The image shows a configuration screen for setting up a Lambda authorizer in AWS API Gateway, with options for selecting the authorizer type, Lambda function, and other settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857854/notes-assets/images/AWS-Certified-Developer-Associate-Authentication-Authorization-Demo/lambda-authorizer-aws-api-gateway.jpg)
+![The image shows a configuration screen for setting up a Lambda authorizer in AWS API Gateway, with options for selecting the authorizer type, Lambda function, and other settings.](https://kodekloud.com/kk-media/image/upload/v1752857854/notes-assets/images/AWS-Certified-Developer-Associate-Authentication-Authorization-Demo/lambda-authorizer-aws-api-gateway.jpg)
 
 Once the authorizer is created, you can test it directly from the API Gateway console. Using an incorrect token will return a policy that denies access, while the correct token "abc123" will return a policy that allows access.
 
@@ -146,7 +146,7 @@ After deploying your changes, test your API endpoint to ensure that the authoriz
   }
   ```
 
-![The image shows a Postman interface with a GET request to an AWS API Gateway endpoint, displaying a JSON response. The response body contains a message: "Here is a list of all authors."](../../../../images/kodekloud.com/kk-media/image/upload/v1752857855/notes-assets/images/AWS-Certified-Developer-Associate-Authentication-Authorization-Demo/postman-get-request-aws-api.jpg)
+![The image shows a Postman interface with a GET request to an AWS API Gateway endpoint, displaying a JSON response. The response body contains a message: "Here is a list of all authors."](https://kodekloud.com/kk-media/image/upload/v1752857855/notes-assets/images/AWS-Certified-Developer-Associate-Authentication-Authorization-Demo/postman-get-request-aws-api.jpg)
 
 > **lightbulb** Ensure you deploy your API after making changes to the authorization configuration. This guarantees that your test results reflect the latest settings.
 

@@ -64,9 +64,7 @@ spec:
           maxConnections: 1
 ```
 
-<Callout icon="lightbulb">
-  In this configuration, limiting connections and request queues ensures that when the load exceeds these parameters, the circuit breaker triggers, protecting the service from overload.
-</Callout>
+> **lightbulb** In this configuration, limiting connections and request queues ensures that when the load exceeds these parameters, the circuit breaker triggers, protecting the service from overload.
 
 ## Testing the Circuit Breaker with HTLOAD
 
@@ -125,18 +123,12 @@ While a single concurrent client may succeed, increasing the concurrency will te
    istio-training@local istio-1.10.3 $ h2load -n1000 -c4 'http://"$INGRESS_HOST":"$INGRESS_PORT"/productpage'
    ```
 
-<Callout icon="triangle-alert">
-  Under the strict circuit breaker configuration, you'll observe that the product page starts to fail and deny requests under higher concurrency. This behavior is critical to prevent service overload and maintain overall system stability.
-</Callout>
+> **triangle-alert** Under the strict circuit breaker configuration, you'll observe that the product page starts to fail and deny requests under higher concurrency. This behavior is critical to prevent service overload and maintain overall system stability.
 
 ## Observing Telemetry
 
 Telemetry data captured from the service mesh confirms that the product page fails gracefully when the load exceeds the set limits. This indicates that the circuit breaker is effectively rejecting excessive requests, thereby ensuring the continuous stability of your service under high load conditions.
 
-<Frame>
-  ![The image shows a Kiali dashboard displaying a service mesh graph with nodes representing different services and their interactions, including metrics like HTTP requests and error rates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879386/notes-assets/images/Istio-Service-Mesh-Demo-Circuit-Breaking/kiali-dashboard-service-mesh-graph.jpg)
-</Frame>
+![The image shows a Kiali dashboard displaying a service mesh graph with nodes representing different services and their interactions, including metrics like HTTP requests and error rates.](https://kodekloud.com/kk-media/image/upload/v1752879386/notes-assets/images/Istio-Service-Mesh-Demo-Circuit-Breaking/kiali-dashboard-service-mesh-graph.jpg)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/6128e11c-81c4-4f7d-ad72-b9426c20ef7b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/istio-service-mesh/module/fe135c6a-440a-4e97-b1b5-6a2b032689bd/lesson/6128e11c-81c4-4f7d-ad72-b9426c20ef7b)

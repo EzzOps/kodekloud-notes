@@ -22,7 +22,7 @@ While many organizations continue to rely on VMware for on-premises operations, 
 
 VMware Cloud on AWS enables you to deploy VMware VMs in AWS using the familiar vCenter interface. AWS manages the underlying infrastructure, thus allowing you to focus on your applications without directly engaging with native AWS services.
 
-![The image illustrates a VMware Cloud on AWS setup, showing integration between on-premise and AWS cloud environments using vCenter, with components like vSphere, vSAN, and NSX-T.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865010/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VMware-Cloud-on-AWS/vmware-cloud-aws-setup-diagram.jpg)
+![The image illustrates a VMware Cloud on AWS setup, showing integration between on-premise and AWS cloud environments using vCenter, with components like vSphere, vSAN, and NSX-T.](https://kodekloud.com/kk-media/image/upload/v1752865010/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VMware-Cloud-on-AWS/vmware-cloud-aws-setup-diagram.jpg)
 
 ### Key Benefits
 
@@ -35,7 +35,7 @@ Using a consistent VMware infrastructure across both on-premises and cloud envir
 
 > **lightbulb** This unified approach not only streamlines operations but also opens opportunities for integrating advanced AWS services. This enables the development of next-generation applications that combine the strengths of both VMware's virtualization and AWS’s cutting-edge cloud offerings.
 
-![The image outlines four use cases: extending a data center, simplifying disaster recovery solutions, migrating and scaling rapidly to the cloud, and building next-generation applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865011/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VMware-Cloud-on-AWS/data-center-disaster-recovery-cloud-use-cases.jpg)
+![The image outlines four use cases: extending a data center, simplifying disaster recovery solutions, migrating and scaling rapidly to the cloud, and building next-generation applications.](https://kodekloud.com/kk-media/image/upload/v1752865011/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-VMware-Cloud-on-AWS/data-center-disaster-recovery-cloud-use-cases.jpg)
 
 ## Conclusion
 

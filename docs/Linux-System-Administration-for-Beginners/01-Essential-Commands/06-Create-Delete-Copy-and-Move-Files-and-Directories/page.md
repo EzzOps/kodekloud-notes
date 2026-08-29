@@ -17,9 +17,7 @@ bzip2 --decompress file2.bz2
 xz    --decompress file3.xz
 ```
 
-<Callout icon="triangle-alert">
-  By default, `gzip`, `bzip2`, and `xz` delete the original file after (de)compression. Use `-k` or `--keep` to preserve input files.
-</Callout>
+> **triangle-alert** By default, `gzip`, `bzip2`, and `xz` delete the original file after (de)compression. Use `-k` or `--keep` to preserve input files.
 
 ***
 
@@ -135,9 +133,7 @@ tar xf archive.tar.xz
 * [tar — GNU tar Manual](https://www.gnu.org/software/tar/manual/)
 * [zip & unzip – Info-ZIP](https://infozip.sourceforge.net/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/bf4f9042-d38d-497a-9ed8-51fb7fee3fa8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-system-administration-for-beginners/module/cc1949d1-8171-4c8c-b69f-86f96cad0bbe/lesson/bf4f9042-d38d-497a-9ed8-51fb7fee3fa8)
 
 
 # Create Delete Copy and Move Files and Directories
@@ -199,10 +195,8 @@ Linux files and directories form an inverted tree with `/` as the root. Every pa
   * `/var`
   * `/etc`
 
-<Callout icon="lightbulb">
-  Absolute paths start with `/` and always refer to the same location.\
+> **lightbulb** Absolute paths start with `/` and always refer to the same location.\
   Relative paths begin from your current directory (check with `pwd`).
-</Callout>
 
 ### Absolute Path
 

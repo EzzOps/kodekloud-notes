@@ -18,13 +18,11 @@ Remove the domain definition only:
 virsh undefine TestMachine
 ```
 
-<Callout icon="triangle-alert">
-  `--remove-all-storage` will also delete associated disk images:
+> **triangle-alert** `--remove-all-storage` will also delete associated disk images:
 
   ```bash theme={null}
   virsh undefine TestMachine --remove-all-storage
   ```
-</Callout>
 
 ***
 
@@ -152,9 +150,7 @@ Used memory:  2097152 KiB
 * [KVM on Linux](https://www.linux-kvm.org/)
 * [Cloud Providers Comparison](https://aws.amazon.com/compare/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/6cd15bbf-73f8-4fee-9bfb-c6923d53698e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/linux-professional-institute-lpic-1-exam-101/module/78ca0fa8-2083-408a-bf8a-2775b09fbf1d/lesson/6cd15bbf-73f8-4fee-9bfb-c6923d53698e)
 
 
 # Manage Shared Libraries
@@ -180,9 +176,7 @@ Linking can be:
 * **Static**: Library code is embedded into the executable.
 * **Dynamic**: Executable references shared libraries at runtime.
 
-<Frame>
-  ![The image is an educational slide explaining software libraries, compilers, linkers, and the concept of linking, including static and dynamic linking.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881442/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Manage-Shared-Libraries/software-libraries-compilers-linkers-linking.jpg)
-</Frame>
+![The image is an educational slide explaining software libraries, compilers, linkers, and the concept of linking, including static and dynamic linking.](https://kodekloud.com/kk-media/image/upload/v1752881442/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Manage-Shared-Libraries/software-libraries-compilers-linkers-linking.jpg)
 
 ## 2. Static Libraries vs. Shared Libraries
 
@@ -192,9 +186,7 @@ Linking can be:
 * No runtime dependency on external files.
 * Larger binary size, but fully self-contained.
 
-<Callout icon="lightbulb">
-  Static linking increases the size of the executable since all used library code is included.
-</Callout>
+> **lightbulb** Static linking increases the size of the executable since all used library code is included.
 
 ### Shared (Dynamic) Libraries (.so)
 
@@ -202,9 +194,7 @@ Linking can be:
 * Resolved by the dynamic linker at runtime.
 * Multiple programs can share a single library instance in memory, saving disk and RAM.
 
-<Frame>
-  ![The image explains the difference between static and shared libraries. Static libraries are merged with the program at link time with no runtime dependencies, while shared libraries are not merged and must be available at runtime.](../../../../images/kodekloud.com/kk-media/image/upload/v1752881443/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Manage-Shared-Libraries/static-vs-shared-libraries-explained.jpg)
-</Frame>
+![The image explains the difference between static and shared libraries. Static libraries are merged with the program at link time with no runtime dependencies, while shared libraries are not merged and must be available at runtime.](https://kodekloud.com/kk-media/image/upload/v1752881443/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Manage-Shared-Libraries/static-vs-shared-libraries-explained.jpg)
 
 ## 3. Shared Library Naming Conventions
 
@@ -224,9 +214,7 @@ Example:
 libpthread.so.0
 ```
 
-<Frame>
-  ![The image shows a terminal interface with a section explaining naming conventions for shared libraries, including components like library name, shared object, and version number, with an example given as "libpthread.so.0".](../../../../images/kodekloud.com/kk-media/image/upload/v1752881444/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Manage-Shared-Libraries/terminal-naming-conventions-shared-libraries.jpg)
-</Frame>
+![The image shows a terminal interface with a section explaining naming conventions for shared libraries, including components like library name, shared object, and version number, with an example given as "libpthread.so.0".](https://kodekloud.com/kk-media/image/upload/v1752881444/notes-assets/images/Linux-Professional-Institute-LPIC-1-Exam-101-Manage-Shared-Libraries/terminal-naming-conventions-shared-libraries.jpg)
 
 On Debian 9.9, the GNU C library’s SONAME is `libc.so.6`, typically a symlink to the full version. Static archives end with `.a`, for example `libpthread.a`.
 

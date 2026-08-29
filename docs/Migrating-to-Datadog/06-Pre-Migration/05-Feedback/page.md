@@ -63,12 +63,8 @@ This loop emphasizes why clear communication, defined responsibilities, and an a
   <img alt="The image shows a feedback loop among Platform Engineers, DevOps Engineers, and End Users, highlighting communication issues like platforms not working and metrics not being shown." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Collaboration is essential. Define roles, responsibilities, and escalation paths up front. Use standardized configurations, automated validation checks, and clear documentation to minimize risky changes and speed up resolution. For platform-specific guidance, consult your provider's observability docs (for example, `https://docs.datadoghq.com/`) and align on change management processes before migration.
-</Callout>
+> **lightbulb** Collaboration is essential. Define roles, responsibilities, and escalation paths up front. Use standardized configurations, automated validation checks, and clear documentation to minimize risky changes and speed up resolution. For platform-specific guidance, consult your provider's observability docs (for example, `https://docs.datadoghq.com/`) and align on change management processes before migration.
 
 That's it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/8c4a3624-9a6d-49ad-a294-983fbc61ba81" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/8c4a3624-9a6d-49ad-a294-983fbc61ba81)

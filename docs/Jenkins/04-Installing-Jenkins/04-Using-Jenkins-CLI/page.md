@@ -10,9 +10,7 @@ Learn how to leverage the Jenkins CLI to manage your Jenkins instance step by st
 
 To begin, log into your Jenkins portal and navigate to **Manage Jenkins**. Scroll down to the **Tools and Actions** section and click on **Jenkins CLI**.
 
-<Frame>
-  ![The image shows a Jenkins interface with options for troubleshooting, tools, and actions, including managing old data, reloading configuration, using Jenkins CLI, and preparing for shutdown.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880064/notes-assets/images/Jenkins-Using-Jenkins-CLI/frame_20.jpg)
-</Frame>
+![The image shows a Jenkins interface with options for troubleshooting, tools, and actions, including managing old data, reloading configuration, using Jenkins CLI, and preparing for shutdown.](https://kodekloud.com/kk-media/image/upload/v1752880064/notes-assets/images/Jenkins-Using-Jenkins-CLI/frame_20.jpg)
 
 The displayed page includes documentation for getting started. Next, we will focus on the authentication process.
 
@@ -45,9 +43,7 @@ jenkins-cli.jar
 mike@jenkinshost01:~$
 ```
 
-<Callout icon="lightbulb">
-  Even though you are operating directly on the Jenkins host, authentication is still required for CLI operations.
-</Callout>
+> **lightbulb** Even though you are operating directly on the Jenkins host, authentication is still required for CLI operations.
 
 ## Authenticating with Jenkins
 
@@ -58,9 +54,7 @@ To authenticate via the CLI, follow these steps:
 3. Scroll down to **API Tokens**.
 4. If you do not have an API token, click **Add New Token** to generate one.
 
-<Frame>
-  ![The image shows a dashboard interface for managing API tokens, with options to configure settings and view credentials.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880065/notes-assets/images/Jenkins-Using-Jenkins-CLI/frame_90.jpg)
-</Frame>
+![The image shows a dashboard interface for managing API tokens, with options to configure settings and view credentials.](https://kodekloud.com/kk-media/image/upload/v1752880065/notes-assets/images/Jenkins-Using-Jenkins-CLI/frame_90.jpg)
 
 Once you have your API token, authenticate with the CLI by executing:
 
@@ -89,13 +83,9 @@ At this stage, you might see a single job, such as `test1`. To further explore, 
 3. In the job configuration, scroll down and click **Try Sample Pipeline**, then choose **Hello World**.
 4. Click **Save** to finalize the setup.
 
-<Frame>
-  ![The image shows a Jenkins interface for creating a new project, with options like Freestyle project and Pipeline, and an item name field filled with "test2".](../../../../images/kodekloud.com/kk-media/image/upload/v1752880066/notes-assets/images/Jenkins-Using-Jenkins-CLI/frame_160.jpg)
-</Frame>
+![The image shows a Jenkins interface for creating a new project, with options like Freestyle project and Pipeline, and an item name field filled with "test2".](https://kodekloud.com/kk-media/image/upload/v1752880066/notes-assets/images/Jenkins-Using-Jenkins-CLI/frame_160.jpg)
 
-<Frame>
-  ![The image shows a software interface for configuring a pipeline script, with options like "Hello World" and "GitHub + Maven" in a dropdown menu.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880067/notes-assets/images/Jenkins-Using-Jenkins-CLI/frame_170.jpg)
-</Frame>
+![The image shows a software interface for configuring a pipeline script, with options like "Hello World" and "GitHub + Maven" in a dropdown menu.](https://kodekloud.com/kk-media/image/upload/v1752880067/notes-assets/images/Jenkins-Using-Jenkins-CLI/frame_170.jpg)
 
 Return to your terminal, clear the screen as needed, and run the list-jobs command once more:
 
@@ -115,9 +105,7 @@ mike@jenkinshost01:~$ java -jar jenkins-cli.jar -s http://20.127.124.114:8080/ -
 
 After executing the build command, verify in the Jenkins portal that the job has been built successfully.
 
-<Callout icon="lightbulb">
-  Ensure that you monitor the Jenkins job status in the portal to troubleshoot any issues with job execution.
-</Callout>
+> **lightbulb** Ensure that you monitor the Jenkins job status in the portal to troubleshoot any issues with job execution.
 
 ## Summary
 
@@ -134,8 +122,6 @@ By practicing these commands, you will gain proficiency in Jenkins automation ta
 * [Jenkins Documentation](https://www.jenkins.io/doc/)
 * [Jenkins CLI Overview](https://www.jenkins.io/doc/book/managing/cli/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins/module/d9ec3aa2-1c6e-4512-bee1-f1d811ec7b6e/lesson/1f392b27-d2d6-465c-8fea-d3f149fcc92b" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins/module/d9ec3aa2-1c6e-4512-bee1-f1d811ec7b6e/lesson/1f392b27-d2d6-465c-8fea-d3f149fcc92b)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/jenkins/module/d9ec3aa2-1c6e-4512-bee1-f1d811ec7b6e/lesson/a03c3b99-4095-4ab0-8dc2-ba306e48a0c8" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/jenkins/module/d9ec3aa2-1c6e-4512-bee1-f1d811ec7b6e/lesson/a03c3b99-4095-4ab0-8dc2-ba306e48a0c8)

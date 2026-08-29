@@ -40,7 +40,7 @@ Security is an ongoing process. To keep pace with evolving threats:
 
 By iterating on these practices, your applications will remain resilient against new attack vectors.
 
-![The image outlines strategies for adopting OWASP Secure Coding Guidelines, highlighting fundamental security practices, the role of OWASP, and the publication of best practices. It includes icons and brief descriptions related to each point.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868036/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Strategizing-the-Adoption-of-OWASP-Secure-Coding-Guidelines/owasp-secure-coding-strategies-guidelines.jpg)
+![The image outlines strategies for adopting OWASP Secure Coding Guidelines, highlighting fundamental security practices, the role of OWASP, and the publication of best practices. It includes icons and brief descriptions related to each point.](https://kodekloud.com/kk-media/image/upload/v1752868036/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Strategizing-the-Adoption-of-OWASP-Secure-Coding-Guidelines/owasp-secure-coding-strategies-guidelines.jpg)
 
 ## References
 

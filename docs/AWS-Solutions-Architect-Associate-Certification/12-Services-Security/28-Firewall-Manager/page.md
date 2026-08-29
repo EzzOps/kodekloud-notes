@@ -14,7 +14,7 @@ When managing several AWS accounts, you often find that individual setups requir
 * Slower response times to emerging threats due to manual rule propagation
 * Challenges in enforcing and verifying corporate compliance standards
 
-![The image is a diagram titled "Firewall Manager," showing two sections labeled "Development" and "Production," each containing icons representing security features connected to a central figure icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865796/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Firewall-Manager/firewall-manager-development-production-diagram.jpg)
+![The image is a diagram titled "Firewall Manager," showing two sections labeled "Development" and "Production," each containing icons representing security features connected to a central figure icon.](https://kodekloud.com/kk-media/image/upload/v1752865796/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Firewall-Manager/firewall-manager-development-production-diagram.jpg)
 
 > **lightbulb** Centralized management eliminates the need to log into each account separately, making it easier to maintain consistency, improve efficiency, and respond faster to potential threats.
 
@@ -26,11 +26,11 @@ To overcome these challenges, AWS designed Firewall Manager—a service that sim
 * Manage security groups, network ACLs, and AWS Shield Advanced consistently
 * Streamline auditing and compliance through centralized logging with CloudWatch
 
-![The image is an infographic titled "Firewall Manager," highlighting challenges such as inconsistent rules, complex management, time-consuming updates, lack of centralization, delayed response, and compliance challenges.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865797/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Firewall-Manager/firewall-manager-infographic-challenges.jpg)
+![The image is an infographic titled "Firewall Manager," highlighting challenges such as inconsistent rules, complex management, time-consuming updates, lack of centralization, delayed response, and compliance challenges.](https://kodekloud.com/kk-media/image/upload/v1752865797/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Firewall-Manager/firewall-manager-infographic-challenges.jpg)
 
 By setting up your security protections once, Firewall Manager automatically distributes your firewall and security rules to all associated AWS accounts. This ensures that your policies are uniformly enforced and that your environment remains secure without constant manual interventions.
 
-![The image is a diagram illustrating AWS Firewall Manager, showing its integration with AWS WAF, Security Groups, NACL, and AWS Shield Advanced within the AWS Cloud.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865798/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Firewall-Manager/aws-firewall-manager-diagram.jpg)
+![The image is a diagram illustrating AWS Firewall Manager, showing its integration with AWS WAF, Security Groups, NACL, and AWS Shield Advanced within the AWS Cloud.](https://kodekloud.com/kk-media/image/upload/v1752865798/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Firewall-Manager/aws-firewall-manager-diagram.jpg)
 
 > **triangle-alert** Always ensure that any changes to your central security configurations are thoroughly tested in a non-production environment before being broadly applied. This approach minimizes the risk of unintentional disruptions.
 
@@ -43,7 +43,7 @@ With AWS Firewall Manager, once you define your protection rules, the service au
 * Leverage CloudWatch for real-time monitoring and logging to support auditing and compliance
 * Potentially reduce costs by minimizing redundant configurations
 
-![The image is a diagram illustrating a "Firewall Manager for Multiple Accounts" setup in AWS Cloud, showing separate configurations for Production and Development environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865799/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Firewall-Manager/firewall-manager-multiple-accounts-aws.jpg)
+![The image is a diagram illustrating a "Firewall Manager for Multiple Accounts" setup in AWS Cloud, showing separate configurations for Production and Development environments.](https://kodekloud.com/kk-media/image/upload/v1752865799/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Firewall-Manager/firewall-manager-multiple-accounts-aws.jpg)
 
 ## Key Benefits at a Glance
 
@@ -54,7 +54,7 @@ With AWS Firewall Manager, once you define your protection rules, the service au
 | Enhanced Auditing and Compliance | Utilize CloudWatch logs and alarms to support auditing and monitor security events.       |
 | Operational Efficiency           | Reduce the manual overhead of updating multiple accounts, saving both time and resources. |
 
-![The image lists features of a Firewall Manager, including rule management, WAF and security group management, centralized security policy management, and audit trails and logging.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865800/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Firewall-Manager/firewall-manager-features-list.jpg)
+![The image lists features of a Firewall Manager, including rule management, WAF and security group management, centralized security policy management, and audit trails and logging.](https://kodekloud.com/kk-media/image/upload/v1752865800/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Firewall-Manager/firewall-manager-features-list.jpg)
 
 By leveraging AWS Firewall Manager, you can streamline your security operations, ensuring consistent protection and a more agile security posture across your entire AWS environment.
 

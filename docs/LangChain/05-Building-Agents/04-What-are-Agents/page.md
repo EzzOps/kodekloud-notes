@@ -20,13 +20,9 @@ Explanation:
 * `search` is the Tavily search tool used by the agent to retrieve web results.
 * `MessagesPlaceholder` and `ChatMessageHistory` enable in-memory chat history persistence for a session.
 
-<Callout icon="lightbulb">
-  Using `MessagesPlaceholder("agent_scratchpad")` gives the agent a workspace to append intermediate reasoning and tool calls. This helps the LLM and the tool orchestrator maintain context across a single turn and between turns when history is preserved.
-</Callout>
+> **lightbulb** Using `MessagesPlaceholder("agent_scratchpad")` gives the agent a workspace to append intermediate reasoning and tool calls. This helps the LLM and the tool orchestrator maintain context across a single turn and between turns when history is preserved.
 
-<Callout icon="warning">
-  Be careful with API keys in code or logs. Prefer environment variables, secrets managers, or encrypted stores. If a tool reads the key from the environment, do not hardcode it in production.
-</Callout>
+> **warning** Be careful with API keys in code or logs. Prefer environment variables, secrets managers, or encrypted stores. If a tool reads the key from the environment, do not hardcode it in production.
 
 ## Create LLM, tools, and the message history
 
@@ -125,9 +121,7 @@ print(response["output"])
 
 You may observe the LLM returning an incorrect or imprecise numeric answer (for example, saying "17 days" when the current date or calculation is not accurate). This highlights a limitation.
 
-<Callout icon="warning">
-  LLMs are not always reliable for precise arithmetic or time-based calculations unless you explicitly delegate the calculation to a deterministic tool (like a Python REPL or a date utility). For exact answers (e.g., "days until a date"), add a deterministic tool to the agent that performs the arithmetic and returns the correct result.
-</Callout>
+> **warning** LLMs are not always reliable for precise arithmetic or time-based calculations unless you explicitly delegate the calculation to a deterministic tool (like a Python REPL or a date utility). For exact answers (e.g., "days until a date"), add a deterministic tool to the agent that performs the arithmetic and returns the correct result.
 
 ## How the agent adds value over raw search
 
@@ -164,9 +158,7 @@ Next steps:
 * [Tavily — community tool integrations](/) (check the relevant tool implementation in your SDK)
 * [OpenAI API and Chat Models](https://platform.openai.com/docs/models)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/530ad7de-8948-4806-8824-19eb10923d1d/lesson/cb8e55e0-21b4-4980-8418-ece887303e7a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/530ad7de-8948-4806-8824-19eb10923d1d/lesson/cb8e55e0-21b4-4980-8418-ece887303e7a)
 
 
 # What are Agents
@@ -179,9 +171,7 @@ Welcome back to the final lesson in the "Building Agents" series.
 
 In this lesson we combine prompt engineering, memory, tools, and Retrieval-Augmented Generation (RAG) to build a practical agent. We'll explain why agents are useful, how they address common LLM limitations, and show the typical architecture and operational flow you'll implement with LangChain.
 
-<Callout icon="lightbulb">
-  This lesson ties together previous concepts: prompt engineering, memory systems, tool integration, and RAG. If you followed earlier lessons, you’ll recognize the building blocks used here to create reliable, multi-step agents.
-</Callout>
+> **lightbulb** This lesson ties together previous concepts: prompt engineering, memory systems, tool integration, and RAG. If you followed earlier lessons, you’ll recognize the building blocks used here to create reliable, multi-step agents.
 
 <Frame>
   <img alt="The image lists four prerequisites: Prompt Engineering, Adding Memory, Using Tools, and Performing Retrieval Augmented Generation (RAG)." />
@@ -197,9 +187,7 @@ In this lesson we combine prompt engineering, memory, tools, and Retrieval-Augme
 * Limited precision for math: complex calculations can be incorrect without an external tool.
 * Non-deterministic outputs: repeated prompts can produce different results without strict formatting and output parsing.
 
-<Callout icon="warning">
-  LLMs can hallucinate and produce incorrect or outdated facts. Use retrieval (RAG), authoritative tools, and output validation to ground model outputs before acting on them.
-</Callout>
+> **warning** LLMs can hallucinate and produce incorrect or outdated facts. Use retrieval (RAG), authoritative tools, and output validation to ground model outputs before acting on them.
 
 ## How we address these limitations
 
@@ -323,6 +311,4 @@ This lesson will be followed by demos that build end-to-end agents so you can se
 * [GPT-4 model details](https://platform.openai.com/docs/models/gpt-4)
 * [Python](https://www.python.org/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/530ad7de-8948-4806-8824-19eb10923d1d/lesson/6321298e-ef4e-4acd-b383-4745a68eee9c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/530ad7de-8948-4806-8824-19eb10923d1d/lesson/6321298e-ef4e-4acd-b383-4745a68eee9c)

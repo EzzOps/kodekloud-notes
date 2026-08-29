@@ -21,9 +21,7 @@ mission_name=mars-mission
 
 This update automatically propagates to all commands, eliminating the need for repetitive manual changes.
 
-<Callout icon="lightbulb">
-  Variable names should use only lowercase letters and underscores (e.g., `mission_name`). Avoid using hyphens or other characters, as variable names must consist solely of alphanumeric characters or underscores.
-</Callout>
+> **lightbulb** Variable names should use only lowercase letters and underscores (e.g., `mission_name`). Avoid using hyphens or other characters, as variable names must consist solely of alphanumeric characters or underscores.
 
 ## Capturing Command Output in Variables
 
@@ -61,11 +59,9 @@ Applying these concepts will help you write more robust and maintainable scripts
 
 I look forward to seeing you in the next lesson!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/c5cf2034-a087-42da-ab32-1988042eda61" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/c5cf2034-a087-42da-ab32-1988042eda61)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/cf45ee2d-0c63-4e13-95e8-47bc4ece8174" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/shell-scripts-for-beginners/module/2709b373-3a6f-4b31-9aff-fe8a553898fa/lesson/cf45ee2d-0c63-4e13-95e8-47bc4ece8174)
 
 
 # Conclusion
@@ -76,12 +72,8 @@ This article provides an overview of Spacelift, highlighting its features and be
 
 Throughout this article, we provided an in-depth overview of [Spacelift](https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment), outlining its key features and benefits for efficient infrastructure deployment. We trust that the insights shared here will help you optimize your infrastructure management and deployment strategies.
 
-<Callout icon="lightbulb">
-  For additional resources and further learning, consider exploring related articles and official documentation on Spacelift.
-</Callout>
+> **lightbulb** For additional resources and further learning, consider exploring related articles and official documentation on Spacelift.
 
 Thank you for reading, and we look forward to bringing you more valuable content in our upcoming articles.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/da592756-23c5-405c-abf3-01547572ae74/lesson/01d6256d-5550-48af-b999-1482c2344f03" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/da592756-23c5-405c-abf3-01547572ae74/lesson/01d6256d-5550-48af-b999-1482c2344f03)

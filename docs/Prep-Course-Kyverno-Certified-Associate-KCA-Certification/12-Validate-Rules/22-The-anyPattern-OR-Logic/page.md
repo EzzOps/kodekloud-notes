@@ -74,9 +74,7 @@ How `anyPattern` works
   <img alt="The image introduces &#x22;anyPattern,&#x22; explaining its behavior as a logical OR across patterns and its use case for validating fields defined in multiple locations." />
 </Frame>
 
-<Callout icon="warning">
-  A Kyverno rule must use either a single `pattern` or `anyPattern`. Do not combine `pattern` and `anyPattern` in the same rule.
-</Callout>
+> **warning** A Kyverno rule must use either a single `pattern` or `anyPattern`. Do not combine `pattern` and `anyPattern` in the same rule.
 
 Policy fragment (solution)
 
@@ -132,6 +130,4 @@ References
 
 That's it—using `anyPattern` keeps your validation rules concise while allowing multiple valid configuration models for the same requirement.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/0e34623a-687f-4761-885c-9d663882cc65" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/0e34623a-687f-4761-885c-9d663882cc65)

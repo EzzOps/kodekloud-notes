@@ -35,7 +35,7 @@ Open your browser and go to [https://calculator.aws](https://calculator.aws). No
 2. In **Search all services**, type **Lambda** and select **AWS Lambda**.
 3. Click **Configure**.
 
-![The image shows the AWS Pricing Calculator interface, specifically the "Select service" section, where users can search for and configure AWS services like AWS Lambda, AWS Step Functions, and AWS AppSync.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863183/notes-assets/images/AWS-Lambda-Pricing-Demo/aws-pricing-calculator-select-service.jpg)
+![The image shows the AWS Pricing Calculator interface, specifically the "Select service" section, where users can search for and configure AWS services like AWS Lambda, AWS Step Functions, and AWS AppSync.](https://kodekloud.com/kk-media/image/upload/v1752863183/notes-assets/images/AWS-Lambda-Pricing-Demo/aws-pricing-calculator-select-service.jpg)
 
 ## 3. Configure Your Lambda Estimate
 
@@ -68,13 +68,13 @@ On the Lambda configuration page, enter the following:
 
 After inputting these values, the calculator displays a cost forecast.
 
-![The image shows the AWS Pricing Calculator interface for configuring an AWS Lambda service, with options to include or exclude the free tier and select a region.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863184/notes-assets/images/AWS-Lambda-Pricing-Demo/aws-pricing-calculator-lambda-interface.jpg)
+![The image shows the AWS Pricing Calculator interface for configuring an AWS Lambda service, with options to include or exclude the free tier and select a region.](https://kodekloud.com/kk-media/image/upload/v1752863184/notes-assets/images/AWS-Lambda-Pricing-Demo/aws-pricing-calculator-lambda-interface.jpg)
 
 ## 4. Review the Cost Estimate
 
 With our configuration, the estimated monthly cost is **\$29.80**.
 
-![The image shows the AWS pricing calculator interface for configuring AWS Lambda, with fields for the number of requests, duration, memory, and storage allocation. The total monthly cost is displayed at the bottom.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863185/notes-assets/images/AWS-Lambda-Pricing-Demo/aws-pricing-calculator-lambda-interface-2.jpg)
+![The image shows the AWS pricing calculator interface for configuring AWS Lambda, with fields for the number of requests, duration, memory, and storage allocation. The total monthly cost is displayed at the bottom.](https://kodekloud.com/kk-media/image/upload/v1752863185/notes-assets/images/AWS-Lambda-Pricing-Demo/aws-pricing-calculator-lambda-interface-2.jpg)
 
 ## 5. Experiment with Settings
 

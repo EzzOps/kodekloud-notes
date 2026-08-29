@@ -8,19 +8,13 @@ Interacting with WebAssembly memory from JavaScript enables efficient data excha
 
 When you declare memory in WebAssembly, it behaves like an ArrayBuffer of a defined byte size. This memory is accessible both to Rust and JavaScript, and Rust's Wasm bindings simplify the process of memory allocation and data transfer.
 
-<Frame>
-  ![The image explains WebAssembly linear memory, comparing it to an ArrayBuffer, and mentions how wasm-bindgen facilitates memory allocation and data exchange between JavaScript and WebAssembly.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884018/notes-assets/images/Rust-Programming-Accessing-WebAssembly-Memory-from-JavaScript/wasm-linear-memory-arraybuffer-explained.jpg)
-</Frame>
+![The image explains WebAssembly linear memory, comparing it to an ArrayBuffer, and mentions how wasm-bindgen facilitates memory allocation and data exchange between JavaScript and WebAssembly.](https://kodekloud.com/kk-media/image/upload/v1752884018/notes-assets/images/Rust-Programming-Accessing-WebAssembly-Memory-from-JavaScript/wasm-linear-memory-arraybuffer-explained.jpg)
 
 When you compile Rust to WebAssembly with WasmPack, the module's memory is automatically allocated. Rust’s variables, arrays, and other data structures reside in this memory space, which you can directly access from JavaScript.
 
-<Frame>
-  ![The image explains how memory is automatically allocated in WebAssembly when compiling Rust with wasm-pack, allowing access from JavaScript.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884019/notes-assets/images/Rust-Programming-Accessing-WebAssembly-Memory-from-JavaScript/wasm-memory-allocation-rust-js.jpg)
-</Frame>
+![The image explains how memory is automatically allocated in WebAssembly when compiling Rust with wasm-pack, allowing access from JavaScript.](https://kodekloud.com/kk-media/image/upload/v1752884019/notes-assets/images/Rust-Programming-Accessing-WebAssembly-Memory-from-JavaScript/wasm-memory-allocation-rust-js.jpg)
 
-<Callout icon="lightbulb">
-  In this article, we demonstrate how to share data between WebAssembly and JavaScript. You will learn to transfer data from a JavaScript array into WebAssembly memory, modify it using a Rust function, and retrieve the updated values back in JavaScript.
-</Callout>
+> **lightbulb** In this article, we demonstrate how to share data between WebAssembly and JavaScript. You will learn to transfer data from a JavaScript array into WebAssembly memory, modify it using a Rust function, and retrieve the updated values back in JavaScript.
 
 ## Rust Function for Memory Manipulation
 
@@ -81,15 +75,13 @@ On the JavaScript side, you begin by importing the initialization function (`ini
 </html>
 ```
 
-<Callout icon="lightbulb">
-  This script performs the following steps:
+> **lightbulb** This script performs the following steps:
 
   * Creates a JavaScript array.
   * Allocates a corresponding segment in WebAssembly memory using a typed view (`Int32Array`).
   * Copies the data from JavaScript into WebAssembly memory.
   * Calls the Rust function to modify the array in place.
   * Retrieves and logs the updated array from WebAssembly memory.
-</Callout>
 
 Reload the page, and the console will display each element increased by 10, confirming the successful in-place modification.
 
@@ -111,13 +103,9 @@ cargo new my_wasm_project --lib
 
 After setting up your project, integrate your Rust code for memory manipulation, compile it to WebAssembly, and combine it with JavaScript as demonstrated above.
 
-<Callout icon="triangle-alert">
-  Direct memory access through WebAssembly is highly efficient when handling large datasets. Minimizing data copying between JavaScript and WebAssembly can notably boost performance, making it ideal for simulations, games, and intensive data processing tasks.
-</Callout>
+> **triangle-alert** Direct memory access through WebAssembly is highly efficient when handling large datasets. Minimizing data copying between JavaScript and WebAssembly can notably boost performance, making it ideal for simulations, games, and intensive data processing tasks.
 
-<Frame>
-  ![The image illustrates the benefits of Direct Memory Access, highlighting handling large datasets, performance-critical operations, and custom data types.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884020/notes-assets/images/Rust-Programming-Accessing-WebAssembly-Memory-from-JavaScript/direct-memory-access-benefits-diagram.jpg)
-</Frame>
+![The image illustrates the benefits of Direct Memory Access, highlighting handling large datasets, performance-critical operations, and custom data types.](https://kodekloud.com/kk-media/image/upload/v1752884020/notes-assets/images/Rust-Programming-Accessing-WebAssembly-Memory-from-JavaScript/direct-memory-access-benefits-diagram.jpg)
 
 This guide has detailed the process of allocating WebAssembly memory, transferring data between JavaScript and Rust, and performing in-place modifications using raw pointers. Understanding these techniques is essential for developing high-performance WebAssembly applications.
 
@@ -128,6 +116,4 @@ This guide has detailed the process of allocating WebAssembly memory, transferri
 * [Terraform Registry](https://registry.terraform.io/)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/c16605ac-c7ae-46bc-8864-75c711c07762/lesson/f2800e33-6c35-47ee-8609-1531bc5ddd3f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/c16605ac-c7ae-46bc-8864-75c711c07762/lesson/f2800e33-6c35-47ee-8609-1531bc5ddd3f)

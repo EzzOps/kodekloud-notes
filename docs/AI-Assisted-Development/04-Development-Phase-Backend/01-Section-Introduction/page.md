@@ -15,7 +15,7 @@ In this lesson, we will develop the backend of our application step by step. Our
 * Implementing error handling.
 * Testing the endpoint with Postman.
 
-![The image lists a "Game Plan" with steps for setting up a virtual environment, project structure, Flask API, implementing OpenCV, debugging, validating images, error handling, and testing with Postman.](../../../../images/kodekloud.com/kk-media/image/upload/v1752857059/notes-assets/images/AI-Assisted-Development-Section-Introduction/game-plan-virtual-environment-flask-api.jpg)
+![The image lists a "Game Plan" with steps for setting up a virtual environment, project structure, Flask API, implementing OpenCV, debugging, validating images, error handling, and testing with Postman.](https://kodekloud.com/kk-media/image/upload/v1752857059/notes-assets/images/AI-Assisted-Development-Section-Introduction/game-plan-virtual-environment-flask-api.jpg)
 
 We will achieve these tasks with the assistance of Generative AI and leverage cutting-edge tools such as:
 

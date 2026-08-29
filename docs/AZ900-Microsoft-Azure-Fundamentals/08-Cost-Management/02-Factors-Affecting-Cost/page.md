@@ -20,7 +20,7 @@ Every Azure service is associated with its own billing meter, ensuring that cost
 
 Azure’s pay-as-you-go model directly ties resource usage to cost. Running a Virtual Machine continuously for roughly 730 hours in a month incurs the full monthly cost, while using it only a few hours each day results in lower charges. This model emphasizes that increased usage leads to increased cost.
 
-![The image illustrates a "Consumption Model" with a focus on a "Pay-as-you-go model," highlighting cost as the primary factor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868338/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Factors-Affecting-Cost/consumption-model-pay-as-you-go.jpg)
+![The image illustrates a "Consumption Model" with a focus on a "Pay-as-you-go model," highlighting cost as the primary factor.](https://kodekloud.com/kk-media/image/upload/v1752868338/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Factors-Affecting-Cost/consumption-model-pay-as-you-go.jpg)
 
 ## 3. Lack of Maintenance
 
@@ -28,19 +28,19 @@ Proper management and regular maintenance of your Azure environment are essentia
 
 > **lightbulb** Regularly review your deployed resources to ensure you are not paying for unused or underutilized services.
 
-![The image illustrates a concept titled "Lack of Maintenance," highlighting the importance of regular surveillance, Azure usage, and proactive system management for expense discovery and reduction.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868339/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Factors-Affecting-Cost/lack-of-maintenance-azure-management.jpg)
+![The image illustrates a concept titled "Lack of Maintenance," highlighting the importance of regular surveillance, Azure usage, and proactive system management for expense discovery and reduction.](https://kodekloud.com/kk-media/image/upload/v1752868339/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Factors-Affecting-Cost/lack-of-maintenance-azure-management.jpg)
 
 ## 4. Region
 
 The geographic location of your deployed resources has a direct impact on pricing. For example, running the same service in East US might differ in cost compared to West Europe. Choosing the right region involves weighing both performance requirements and cost implications to optimize your Azure spending.
 
-![The image shows a world map with dollar symbols in different regions, illustrating how location impacts Azure pricing. On the left, there are gear icons labeled "Type of Resource."](../../../../images/kodekloud.com/kk-media/image/upload/v1752868339/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Factors-Affecting-Cost/world-map-azure-pricing-gears.jpg)
+![The image shows a world map with dollar symbols in different regions, illustrating how location impacts Azure pricing. On the left, there are gear icons labeled "Type of Resource."](https://kodekloud.com/kk-media/image/upload/v1752868339/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Factors-Affecting-Cost/world-map-azure-pricing-gears.jpg)
 
 ## 5. Ingress and Egress
 
 Data transfer costs, including ingress (incoming data) and egress (outgoing data), also influence your overall expenditure. Ingress is typically free—comparable to receiving mail without any charge as long as you have an address—while egress incurs fees based on the amount of data transferred and its destination, much like postage charges determined by weight and distance. Azure manages these costs through its billing zones.
 
-![The image illustrates the concepts of ingress (incoming data transfer) and egress (outgoing data transfer) with symbols indicating no cost for ingress and a cost for egress, using the Azure logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868340/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Factors-Affecting-Cost/ingress-egress-azure-illustration.jpg)
+![The image illustrates the concepts of ingress (incoming data transfer) and egress (outgoing data transfer) with symbols indicating no cost for ingress and a cost for egress, using the Azure logo.](https://kodekloud.com/kk-media/image/upload/v1752868340/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Factors-Affecting-Cost/ingress-egress-azure-illustration.jpg)
 
 ## 6. Subscription Type
 
@@ -52,7 +52,7 @@ Choosing the right Azure subscription is akin to selecting the most suitable mem
 * **Azure for Students:** Grants free access along with credits for eligible students.
 * **DevTest Subscriptions:** Tailored for development and testing environments, these subscriptions often come at a lower cost compared to production services.
 
-![The image shows different types of subscriptions, including PAYG, MSDN, Free Trial, Azure for Students, and Dev/Test Type, with a focus on discount rates.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868341/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Factors-Affecting-Cost/subscription-types-discount-rates.jpg)
+![The image shows different types of subscriptions, including PAYG, MSDN, Free Trial, Azure for Students, and Dev/Test Type, with a focus on discount rates.](https://kodekloud.com/kk-media/image/upload/v1752868341/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Factors-Affecting-Cost/subscription-types-discount-rates.jpg)
 
 ## Conclusion
 

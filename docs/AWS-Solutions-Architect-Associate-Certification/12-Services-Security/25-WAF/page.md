@@ -8,7 +8,7 @@ AWS Web Application Firewall (WAF) is a robust security tool designed to protect
 
 When your web application is positioned behind resources like an Elastic Load Balancer or an API Gateway, AWS WAF acts as the first line of defense. It inspects incoming HTTP requests and determines, based on custom-defined rules, whether to allow, block, or count each request. Because AWS WAF operates at Layer 7, it can interpret the HTTP protocol and allow more sophisticated actions like issuing CAPTCHA challenges or redirecting users.
 
-![The image illustrates the concept of a Web Application Firewall (WAF), showing how it monitors HTTP requests from clients (legitimate users or hackers) before they reach web applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865931/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-WAF/web-application-firewall-http-monitoring.jpg)
+![The image illustrates the concept of a Web Application Firewall (WAF), showing how it monitors HTTP requests from clients (legitimate users or hackers) before they reach web applications.](https://kodekloud.com/kk-media/image/upload/v1752865931/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-WAF/web-application-firewall-http-monitoring.jpg)
 
 ## How AWS WAF Works
 
@@ -22,7 +22,7 @@ AWS WAF uses a series of rules organized within what is called a Web Access Cont
 * Specific geographic locations
 * Rate-based conditions to mitigate DDoS attacks
 
-![The image is a diagram illustrating a WebACL setup, showing the flow from a firewall icon through various rules and conditions, to a set of network-related icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865932/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-WAF/webacl-setup-diagram-firewall-rules.jpg)
+![The image is a diagram illustrating a WebACL setup, showing the flow from a firewall icon through various rules and conditions, to a set of network-related icons.](https://kodekloud.com/kk-media/image/upload/v1752865932/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-WAF/webacl-setup-diagram-firewall-rules.jpg)
 
 > **lightbulb** AWS WAF processes each web request as follows:
 
@@ -43,7 +43,7 @@ AWS WAF seamlessly integrates with other AWS services—such as Firewall Manager
 * **Securing Serverless Applications:** Integrate easily with API Gateway to protect serverless applications.
 * **Layer 7 Traffic Filtering:** Filter HTTP traffic based on methods, headers, URI strings, and body content.
 
-![The image lists five use cases for a Web Application Firewall (WAF): protection against common web attacks, API security, protection for serverless applications, application layer firewall, and integration with other AWS services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865934/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-WAF/waf-use-cases-web-security.jpg)
+![The image lists five use cases for a Web Application Firewall (WAF): protection against common web attacks, API security, protection for serverless applications, application layer firewall, and integration with other AWS services.](https://kodekloud.com/kk-media/image/upload/v1752865934/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-WAF/waf-use-cases-web-security.jpg)
 
 > **triangle-alert** Always review and update your Web ACL rules regularly to ensure they encompass the latest security threats and vulnerabilities. Regular monitoring and adjustments can help maintain the integrity of your application's defenses.
 

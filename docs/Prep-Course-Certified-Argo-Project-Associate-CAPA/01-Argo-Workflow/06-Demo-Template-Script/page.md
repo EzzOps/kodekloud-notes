@@ -83,15 +83,11 @@ Example node output (the workflow prints a randomly chosen integer):
   <img alt="A browser screenshot of the Argo Workflows web UI showing a single completed workflow node labeled &#x22;random-number-7krn6&#x22; with a green checkmark. The top toolbar shows buttons like Resubmit, Delete, Logs, Share, and a vertical icon sidebar runs down the left." />
 </Frame>
 
-<Callout icon="lightbulb">
-  The stdout of a script template is captured and available as the template output (`outputs.result`). Reference it in subsequent templates using Argo's templating syntax to pass values between steps.
-</Callout>
+> **lightbulb** The stdout of a script template is captured and available as the template output (`outputs.result`). Reference it in subsequent templates using Argo's templating syntax to pass values between steps.
 
 Further reading and references
 
 * [Argo Workflows documentation](https://argoproj.github.io/argo-workflows/)
 * [Script templates (Argo Workflows)](https://argoproj.github.io/argo-workflows/workflow-templates/#script-templates)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/20d37ece-f531-40a2-90eb-c0a6a63a280f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/20d37ece-f531-40a2-90eb-c0a6a63a280f)

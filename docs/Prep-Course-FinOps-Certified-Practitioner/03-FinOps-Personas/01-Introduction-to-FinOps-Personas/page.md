@@ -36,9 +36,7 @@ The FinOps collaboration cycle is a repeatable process teams use to manage cloud
   <img alt="The image illustrates the &#x22;FinOps Collaboration Cycle,&#x22; depicting a circular process of connecting stakeholders, sharing data, making informed decisions, and optimizing costs." />
 </Frame>
 
-<Callout icon="lightbulb">
-  FinOps is iterative: prefer small, measurable changes and track outcomes so every optimization balances cost with performance and business impact.
-</Callout>
+> **lightbulb** FinOps is iterative: prefer small, measurable changes and track outcomes so every optimization balances cost with performance and business impact.
 
 ## Pillars that Enable FinOps
 
@@ -60,9 +58,7 @@ Table: Pillars and what they enable
 | Collaborative culture | Enables fast, cross-functional decisions                         | Shared ownership of budgets and SLAs                     |
 | Data-driven decisions | Reduces guesswork and prioritizes high-impact actions            | Rightsizing, anomaly detection, tagging-based chargeback |
 
-<Callout icon="warning">
-  Poor or missing tagging, inconsistent billing data, or lack of ownership will undermine FinOps. Establish tagging, naming conventions, and a single source of truth for cost data early.
-</Callout>
+> **warning** Poor or missing tagging, inconsistent billing data, or lack of ownership will undermine FinOps. Establish tagging, naming conventions, and a single source of truth for cost data early.
 
 ## FinOps Personas: Who Does What?
 
@@ -107,6 +103,4 @@ This lesson covered: the collaborative nature of FinOps, the four-step collabora
 
 That’s it for this lesson — see you in the next one.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/17116beb-dcd6-4099-9424-bcb9554af3f3/lesson/050bb0e9-d225-46be-83de-1841b68c23c8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/finops-certified-practitioner/module/17116beb-dcd6-4099-9424-bcb9554af3f3/lesson/050bb0e9-d225-46be-83de-1841b68c23c8)

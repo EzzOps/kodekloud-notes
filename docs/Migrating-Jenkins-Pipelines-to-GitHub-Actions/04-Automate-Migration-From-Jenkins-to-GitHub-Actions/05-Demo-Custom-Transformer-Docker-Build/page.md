@@ -152,9 +152,7 @@ app.js | 79.54 | 33.33 | 70 | 79.06 | 23,49-50,58,62-67
 Error: Process completed with exit code 1.
 ```
 
-<Callout icon="lightbulb">
-  Using `continue-on-error: true` in the converted step mirrors Jenkins `catchError` semantics: it allows the workflow to continue and still upload artifacts even when the coverage command fails. Note that GitHub Actions will mark that step as successful for continuation, so consider also surfacing the failure via annotations, test result upload, or a PR comment if you want to preserve visibility of the failure state.
-</Callout>
+> **lightbulb** Using `continue-on-error: true` in the converted step mirrors Jenkins `catchError` semantics: it allows the workflow to continue and still upload artifacts even when the coverage command fails. Note that GitHub Actions will mark that step as successful for continuation, so consider also surfacing the failure via annotations, test result upload, or a PR comment if you want to preserve visibility of the failure state.
 
 ## Mapping summary
 
@@ -179,9 +177,7 @@ Example of a JSON-like transformer output is represented in the `helper-transfor
 * The importer still converts `publishHTML` to `actions/upload-artifact` automatically, preserving HTML reports as artifacts.
 * This keeps the pipeline behavior consistent: coverage failures do not block downstream jobs while reports remain available for inspection.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/0044ba0c-5480-4569-b99b-4b4a61d94af3" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/3b5e500f-482a-4860-9f2c-d5f9fbc95159/lesson/0044ba0c-5480-4569-b99b-4b4a61d94af3)
 
 
 # Demo Custom Transformer Docker Build

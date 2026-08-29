@@ -49,19 +49,13 @@ Now that the configuration file and the state file are in sync, any subsequent r
 
 In this lesson, we explored how Terraform leverages a state file—initially created during the first successful apply—to track and manage real-world infrastructure. This state file serves as the authoritative record for your resources and is essential for Terraform to efficiently plan and apply configuration changes.
 
-<Callout icon="lightbulb">
-  Managing your Terraform state is crucial for ensuring consistent and predictable infrastructure behavior. For more information, consider reading the [Terraform State documentation](https://www.terraform.io/language/state).
-</Callout>
+> **lightbulb** Managing your Terraform state is crucial for ensuring consistent and predictable infrastructure behavior. For more information, consider reading the [Terraform State documentation](https://www.terraform.io/language/state).
 
-<Frame>
-  ![The image illustrates a comparison between real-world infrastructure and a Terraform state file, using icons for servers, documents, and a dog.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884211/notes-assets/images/Terraform-Basics-Training-Course-Introduction-to-Terraform-State/frame_320.jpg)
-</Frame>
+![The image illustrates a comparison between real-world infrastructure and a Terraform state file, using icons for servers, documents, and a dog.](https://kodekloud.com/kk-media/image/upload/v1752884211/notes-assets/images/Terraform-Basics-Training-Course-Introduction-to-Terraform-State/frame_320.jpg)
 
 In upcoming lectures, we will further explore the significance of state management in Terraform and discuss best practices for handling it effectively. For additional Terraform guides, visit the [Terraform Documentation](https://www.terraform.io/docs).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/153d021a-b7cd-48bb-8249-2de4b55cb6df/lesson/b88b42db-6124-49ec-af8a-34506f4a7ff8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/153d021a-b7cd-48bb-8249-2de4b55cb6df/lesson/b88b42db-6124-49ec-af8a-34506f4a7ff8)
 
 
 # Purpose of State
@@ -205,9 +199,7 @@ Terraform will perform the following actions:
 Plan: 1 to add, 0 to change, 1 to destroy.
 ```
 
-<Callout icon="lightbulb">
-  Using `--refresh=false` can accelerate Terraform operations by using cached state data, but ensure that the cached state is still valid and accurate.
-</Callout>
+> **lightbulb** Using `--refresh=false` can accelerate Terraform operations by using cached state data, but ensure that the cached state is still valid and accurate.
 
 ## Enhancing Team Collaboration with Remote State Storage
 
@@ -251,18 +243,12 @@ Below is an example snippet of a state file you may encounter:
 }
 ```
 
-<Frame>
-  ![The image compares real-world infrastructure icons with Terraform state representations, showing a server, a dog, and a document with corresponding IDs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884213/notes-assets/images/Terraform-Basics-Training-Course-Purpose-of-State/frame_50.jpg)
-</Frame>
+![The image compares real-world infrastructure icons with Terraform state representations, showing a server, a dog, and a document with corresponding IDs.](https://kodekloud.com/kk-media/image/upload/v1752884213/notes-assets/images/Terraform-Basics-Training-Course-Purpose-of-State/frame_50.jpg)
 
-<Frame>
-  ![The image shows a grid with icons of documents, servers, and a dog, some with green check marks, under the title "Performance" and filename "terraform.tfstate".](../../../../images/kodekloud.com/kk-media/image/upload/v1752884214/notes-assets/images/Terraform-Basics-Training-Course-Purpose-of-State/frame_210.jpg)
-</Frame>
+![The image shows a grid with icons of documents, servers, and a dog, some with green check marks, under the title "Performance" and filename "terraform.tfstate".](https://kodekloud.com/kk-media/image/upload/v1752884214/notes-assets/images/Terraform-Basics-Training-Course-Purpose-of-State/frame_210.jpg)
 
 In the upcoming exercises, you will have the opportunity to work directly with Terraform state and see these concepts in action.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/153d021a-b7cd-48bb-8249-2de4b55cb6df/lesson/8d323fc3-0dfb-4242-9764-5d6df2d8f28d" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/153d021a-b7cd-48bb-8249-2de4b55cb6df/lesson/8d323fc3-0dfb-4242-9764-5d6df2d8f28d)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/153d021a-b7cd-48bb-8249-2de4b55cb6df/lesson/0a4b04a9-b5bd-4ef3-a2ac-ec40c2f73713" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/153d021a-b7cd-48bb-8249-2de4b55cb6df/lesson/0a4b04a9-b5bd-4ef3-a2ac-ec40c2f73713)

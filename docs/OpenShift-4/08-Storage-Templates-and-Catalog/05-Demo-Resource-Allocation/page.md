@@ -48,9 +48,7 @@ nodeSelector:
   beta.kubernetes.io/os: linux
 ```
 
-<Callout icon="lightbulb">
-  To update the deployment, open your OpenShift platform, navigate to Workloads > Deployments, and click on "Create New Deployment." Switch to the YAML view and paste the configuration above.
-</Callout>
+> **lightbulb** To update the deployment, open your OpenShift platform, navigate to Workloads > Deployments, and click on "Create New Deployment." Switch to the YAML view and paste the configuration above.
 
 ## Extended Configuration with Additional Environment Variables
 
@@ -94,9 +92,7 @@ containers:
       name: carts-db
 ```
 
-<Callout icon="lightbulb">
-  Reviewing the pod's YAML configuration is an easy way to ensure that your resource settings have been correctly applied.
-</Callout>
+> **lightbulb** Reviewing the pod's YAML configuration is an easy way to ensure that your resource settings have been correctly applied.
 
 ## Managing Resource Allocation in Larger Environments
 
@@ -104,6 +100,4 @@ In environments with many deployments, adjusting resource values individually fo
 
 For further reading, consider exploring additional resources on [Kubernetes Documentation](https://kubernetes.io/docs/) and [OpenShift](https://www.openshift.com/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/ac8a7ab4-0d47-43d9-a009-06b3e865e8df" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/b7e60e62-0f83-422c-8fca-6c9bb3cf4862/lesson/ac8a7ab4-0d47-43d9-a009-06b3e865e8df)

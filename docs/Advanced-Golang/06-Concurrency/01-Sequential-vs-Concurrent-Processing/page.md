@@ -17,13 +17,13 @@ Sequential programming executes instructions one after another in a strict linea
 
 This fixed, step-by-step order is typical for basic, independent operations.
 
-![The image illustrates a sequential processing flow on a CPU core, showing steps to get two numbers, calculate their sum, and return the result.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868714/notes-assets/images/Advanced-Golang-Sequential-vs-Concurrent-Processing/cpu-sequential-processing-flow.jpg)
+![The image illustrates a sequential processing flow on a CPU core, showing steps to get two numbers, calculate their sum, and return the result.](https://kodekloud.com/kk-media/image/upload/v1752868714/notes-assets/images/Advanced-Golang-Sequential-vs-Concurrent-Processing/cpu-sequential-processing-flow.jpg)
 
 ## Multitasking
 
 Modern CPUs enhance sequential execution by employing multitasking. Even on a single-core processor, the CPU rapidly switches between multiple tasks using small time intervals, which gives the illusion of performing several tasks simultaneously.
 
-![The image illustrates concurrent processing on a CPU core, showing a sequence of tasks (Task 1, Task 2, Task 3, Task 1, Task 3, Task 1, Task 2, Task 4) being executed in an interleaved manner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868715/notes-assets/images/Advanced-Golang-Sequential-vs-Concurrent-Processing/concurrent-processing-cpu-tasks.jpg)
+![The image illustrates concurrent processing on a CPU core, showing a sequence of tasks (Task 1, Task 2, Task 3, Task 1, Task 3, Task 1, Task 2, Task 4) being executed in an interleaved manner.](https://kodekloud.com/kk-media/image/upload/v1752868715/notes-assets/images/Advanced-Golang-Sequential-vs-Concurrent-Processing/concurrent-processing-cpu-tasks.jpg)
 
 ## Understanding Concurrency
 
@@ -31,13 +31,13 @@ Concurrency refers to the ability to have multiple tasks or processes in progres
 
 > **lightbulb** Concurrency enables more responsive applications by efficiently managing several tasks at once, even if they do not run in parallel.
 
-![The image explains "Concurrent Processing," defining concurrency as the notion of multiple things happening simultaneously, with the potential for multiple processes to be in progress at the same time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868716/notes-assets/images/Advanced-Golang-Sequential-vs-Concurrent-Processing/concurrent-processing-definition-diagram.jpg)
+![The image explains "Concurrent Processing," defining concurrency as the notion of multiple things happening simultaneously, with the potential for multiple processes to be in progress at the same time.](https://kodekloud.com/kk-media/image/upload/v1752868716/notes-assets/images/Advanced-Golang-Sequential-vs-Concurrent-Processing/concurrent-processing-definition-diagram.jpg)
 
 ### Concurrency in Multicore CPUs
 
 In multicore systems, the benefits of concurrency are amplified. For example, in a system with two cores and two tasks, each core can manage both tasks by switching between them, thereby maximizing the overall processing power. This approach, which leverages multiple cores to handle tasks concurrently, is known as multiprocessing.
 
-![The image illustrates concurrent processing with two CPU cores, each alternating between Task 1 and Task 2.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868717/notes-assets/images/Advanced-Golang-Sequential-vs-Concurrent-Processing/concurrent-processing-cpu-cores-tasks.jpg)
+![The image illustrates concurrent processing with two CPU cores, each alternating between Task 1 and Task 2.](https://kodekloud.com/kk-media/image/upload/v1752868717/notes-assets/images/Advanced-Golang-Sequential-vs-Concurrent-Processing/concurrent-processing-cpu-cores-tasks.jpg)
 
 ## Concurrency vs. Parallelism
 
@@ -46,7 +46,7 @@ It's important to distinguish between concurrency and parallelism:
 * **Concurrency** involves managing multiple tasks at once, often through rapid task switching. An example is a text editor that lets you type and save a file simultaneously.
 * **Parallelism** uses multiple processing units to execute tasks simultaneously. A distributed data processing system that divides tasks across multiple clusters is a typical example of parallel processing.
 
-![The image provides examples of concurrent and parallel processing, with concurrent processing related to user-interactive programs and parallel processing related to distributed data processing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868717/notes-assets/images/Advanced-Golang-Sequential-vs-Concurrent-Processing/concurrent-parallel-processing-examples.jpg)
+![The image provides examples of concurrent and parallel processing, with concurrent processing related to user-interactive programs and parallel processing related to distributed data processing.](https://kodekloud.com/kk-media/image/upload/v1752868717/notes-assets/images/Advanced-Golang-Sequential-vs-Concurrent-Processing/concurrent-parallel-processing-examples.jpg)
 
 > **lightbulb** While concurrency improves the efficiency and responsiveness of applications, parallelism takes advantage of hardware by executing tasks simultaneously across multiple cores or processors.
 

@@ -29,9 +29,7 @@ aws_iam_user_policy_attachment.lucy-admin-access: Creation complete after 0s [id
 Apply complete! Resources: 3 added, 0 changed, 0 destroyed.
 ```
 
-<Callout icon="lightbulb">
-  Double-check your IAM policies and user attachments to ensure you are not inadvertently granting excessive permissions.
-</Callout>
+> **lightbulb** Double-check your IAM policies and user attachments to ensure you are not inadvertently granting excessive permissions.
 
 ## Alternative Approach: Using an External JSON File
 
@@ -62,11 +60,9 @@ For more information on IAM policies and Terraform, refer to:
 * [Terraform AWS Provider - IAM Policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_policy)
 * [AWS IAM Documentation](https://docs.aws.amazon.com/iam/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/35a22034-f257-4b05-9a60-75c6a7d3cf68" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/35a22034-f257-4b05-9a60-75c6a7d3cf68)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/cdc489ff-7591-4875-8d6a-9cddc5f4256a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/cdc489ff-7591-4875-8d6a-9cddc5f4256a)
 
 
 # Introduction to AWS S3
@@ -97,9 +93,7 @@ Once created, the bucket is accessible via a unique DNS endpoint. For example, a
 
 Objects inside the bucket are accessed using the bucket name along with individual object keys.
 
-<Frame>
-  ![The image shows a table listing objects in an AWS S3 bucket, including their names and addresses, with a bucket URL format example.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884237/notes-assets/images/Terraform-Basics-Training-Course-Introduction-to-AWS-S3/frame_180.jpg)
-</Frame>
+![The image shows a table listing objects in an AWS S3 bucket, including their names and addresses, with a bucket URL format example.](https://kodekloud.com/kk-media/image/upload/v1752884237/notes-assets/images/Terraform-Basics-Training-Course-Introduction-to-AWS-S3/frame_180.jpg)
 
 ### Object Structure in S3
 
@@ -109,9 +103,7 @@ An object in S3 consists of:
 * **Key:** The unique identifier or name of the file.
 * **Metadata:** Additional information such as creation time, owner, and file size.
 
-<Frame>
-  ![The image illustrates a storage bucket containing a file named "dog.jpg" with metadata, including owner "Lucy," size 5MB, and last modified date.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884238/notes-assets/images/Terraform-Basics-Training-Course-Introduction-to-AWS-S3/frame_200.jpg)
-</Frame>
+![The image illustrates a storage bucket containing a file named "dog.jpg" with metadata, including owner "Lucy," size 5MB, and last modified date.](https://kodekloud.com/kk-media/image/upload/v1752884238/notes-assets/images/Terraform-Basics-Training-Course-Introduction-to-AWS-S3/frame_200.jpg)
 
 ### Access Control
 
@@ -120,13 +112,9 @@ By default, AWS restricts access to a bucket and its objects so that only the bu
 * **Bucket Policies:** These policies apply permissions at the bucket level.
 * **Access Control Lists (ACLs):** ACLs provide granular control over individual object permissions.
 
-<Frame>
-  ![The image illustrates a cloud storage bucket with access control lists for a file named "dog.jpg," secured by bucket policies labeled "all-pets."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884239/notes-assets/images/Terraform-Basics-Training-Course-Introduction-to-AWS-S3/frame_240.jpg)
-</Frame>
+![The image illustrates a cloud storage bucket with access control lists for a file named "dog.jpg," secured by bucket policies labeled "all-pets."](https://kodekloud.com/kk-media/image/upload/v1752884239/notes-assets/images/Terraform-Basics-Training-Course-Introduction-to-AWS-S3/frame_240.jpg)
 
-<Callout icon="lightbulb">
-  For enhanced security, consider applying both bucket policies and ACLs to fine-tune access permissions in your AWS S3 environment.
-</Callout>
+> **lightbulb** For enhanced security, consider applying both bucket policies and ACLs to fine-tune access permissions in your AWS S3 environment.
 
 ## Bucket Policies in Practice
 
@@ -156,9 +144,7 @@ Below is an example policy that allows an IAM user named Lucy to retrieve all ob
 
 Bucket policies function similarly to IAM policies and can be used to provide cross-account access or public permissions when necessary.
 
-<Callout icon="triangle-alert">
-  Avoid exposing your buckets publicly unless absolutely required. Improper bucket policy configurations can lead to unauthorized data access.
-</Callout>
+> **triangle-alert** Avoid exposing your buckets publicly unless absolutely required. Improper bucket policy configurations can lead to unauthorized data access.
 
 ## Summary
 
@@ -175,6 +161,4 @@ For more detailed information, consider exploring additional resources:
 * [AWS S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
 * [Kubernetes Basics](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/06e93745-c92e-4381-973c-79231772f01e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/e1d12378-f838-46c9-9b2e-28d86daa1e1e/lesson/06e93745-c92e-4381-973c-79231772f01e)

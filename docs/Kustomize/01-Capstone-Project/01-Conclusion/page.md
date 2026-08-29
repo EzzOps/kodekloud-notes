@@ -9,9 +9,7 @@ docker save nginx:1.18.0 > nginx.tar
 trivy image --input nginx.tar
 ```
 
-<Callout icon="triangle-alert">
-  Using `--ignore-unfixed` can hide critical risks if no patch is available. Always review the full report before deployment.
-</Callout>
+> **triangle-alert** Using `--ignore-unfixed` can hide critical risks if no patch is available. Always review the full report before deployment.
 
 ## Reduce Your Image’s Attack Surface
 
@@ -24,9 +22,7 @@ Smaller base images generally contain fewer vulnerabilities. Compare these scan 
 
 Always prefer minimal, official base images.
 
-<Frame>
-  ![The image lists best practices for image scanning, including continuous rescanning, using Kubernetes Admission Controllers, maintaining a repository of pre-scanned images, and integrating scanning into the CI/CD pipeline.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880920/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Supply-Chain-Security-Scan-images-for-known-vulnerabilities/image-scanning-best-practices.jpg)
-</Frame>
+![The image lists best practices for image scanning, including continuous rescanning, using Kubernetes Admission Controllers, maintaining a repository of pre-scanned images, and integrating scanning into the CI/CD pipeline.](https://kodekloud.com/kk-media/image/upload/v1752880920/notes-assets/images/Kubernetes-and-Cloud-Native-Security-Associate-KCSA-Supply-Chain-Security-Scan-images-for-known-vulnerabilities/image-scanning-best-practices.jpg)
 
 ## Image Scanning Best Practices
 
@@ -43,9 +39,7 @@ Always prefer minimal, official base images.
 * [CVSS v3 Specification](https://www.first.org/cvss/specification-document)
 * [Trivy GitHub Repository](https://github.com/aquasecurity/trivy)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/119c1f94-b919-4aa9-a597-7e077869b89a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-and-cloud-native-security-associate-kcsa/module/8f0d5517-7d43-4d97-871d-234bb4503f7f/lesson/119c1f94-b919-4aa9-a597-7e077869b89a)
 
 
 # Conclusion
@@ -66,9 +60,7 @@ In this lesson, you’ve gained a solid understanding of Kustomize and its role 
 | Imperative Commands     | Using `kubectl kustomize` flags for on-the-fly customization without editing source files   |
 | Generators              | Automatically creating Secrets and ConfigMaps from literals and files                       |
 
-<Callout icon="lightbulb">
-  Your feedback helps us improve! If there’s a topic you’d like us to explore in more depth—such as advanced patching strategies or multi-environment workflows—let us know.
-</Callout>
+> **lightbulb** Your feedback helps us improve! If there’s a topic you’d like us to explore in more depth—such as advanced patching strategies or multi-environment workflows—let us know.
 
 ## Further Reading
 
@@ -76,6 +68,4 @@ In this lesson, you’ve gained a solid understanding of Kustomize and its role 
 * [Kubernetes Configuration Best Practices](https://kubernetes.io/docs/concepts/cluster-administration/manage-deployment/)
 * [Customization Patterns in Kubernetes](https://www.cncf.io/blog/2020/11/19/kustomize-building-and-maintaining-a-custom-kubernetes-configuration/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kustomize/module/8ee78739-877b-4e11-a7a6-82ef7210468b/lesson/6b0f71b0-af8d-4394-bf24-0952d3f8f787" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kustomize/module/8ee78739-877b-4e11-a7a6-82ef7210468b/lesson/6b0f71b0-af8d-4394-bf24-0952d3f8f787)

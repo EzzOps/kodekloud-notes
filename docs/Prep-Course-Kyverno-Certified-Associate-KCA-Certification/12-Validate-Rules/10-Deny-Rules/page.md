@@ -77,9 +77,7 @@ Links and references
 * [Kubernetes admission controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
 * [Kubernetes resource requests and limits](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/8ae5a794-f7d4-4fcf-ab65-8f6c8a1ff2af" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/f5dd3064-bb37-41e2-8092-362f4cd56c57/lesson/8ae5a794-f7d4-4fcf-ab65-8f6c8a1ff2af)
 
 
 # Deny Rules
@@ -105,9 +103,7 @@ Key conceptual shift:
 * `pattern` describes what a good resource looks like; if it matches, Kyverno allows the request.
 * `deny` describes what constitutes a forbidden situation; if a deny condition evaluates to true, Kyverno blocks the request.
 
-<Callout icon="lightbulb">
-  Deny rules evaluate the admission request context — for example, `request.userInfo.username`, `request.operation`, or anything inside `request.object`. If a deny condition becomes true, Kyverno denies the request.
-</Callout>
+> **lightbulb** Deny rules evaluate the admission request context — for example, `request.userInfo.username`, `request.operation`, or anything inside `request.object`. If a deny condition becomes true, Kyverno denies the request.
 
 Deny rules may reference admission request variables and JMESPath expressions to look at real-time values such as `request.operation`, `request.userInfo.username`, or fields inside `request.object`.
 

@@ -14,9 +14,7 @@ kubectl -n argocd get pods -l app.kubernetes.io/name=argocd-repo-server
 kubectl -n argocd describe pod <argocd-repo-server-pod-name> | grep -i "ARGOCD_RECONCILIATION_TIMEOUT:" -B1
 ```
 
-<Callout icon="lightbulb">
-  When setting `timeout.reconciliation`, always include a time unit (for example `300s` or `5m`). Very short polling intervals increase load on your Git provider and Argo CD components — pick an interval that balances responsiveness and resource usage for your environment.
-</Callout>
+> **lightbulb** When setting `timeout.reconciliation`, always include a time unit (for example `300s` or `5m`). Very short polling intervals increase load on your Git provider and Argo CD components — pick an interval that balances responsiveness and resource usage for your environment.
 
 Polling introduces a small delay between a Git push and Argo CD reconciling that change (three minutes by default). If you require near-instant synchronization, configure push-based notifications (webhooks) from your Git provider so Argo CD is notified immediately when commits are pushed.
 
@@ -30,9 +28,7 @@ To use webhooks, create a webhook in your Git provider (for example, [GitHub](ht
 
 A push event to the repository will notify Argo CD immediately, prompting it to pull the committed changes and reconcile without waiting for the next poll. Ensure the Argo CD API server is reachable from your Git provider (directly or via a secure proxy), and secure the webhook (TLS, secret/signature verification, and network restrictions).
 
-<Callout icon="warning">
-  Make sure the Argo CD API server endpoint used for webhooks is accessible from your Git provider. Protect webhook traffic using TLS, verify payload signatures or secrets, and restrict network access to reduce risk.
-</Callout>
+> **warning** Make sure the Argo CD API server endpoint used for webhooks is accessible from your Git provider. Protect webhook traffic using TLS, verify payload signatures or secrets, and restrict network access to reduce risk.
 
 Links and references
 
@@ -40,9 +36,7 @@ Links and references
 * [Kubernetes kubectl reference](https://kubernetes.io/docs/reference/kubectl/)
 * Git provider docs: [GitHub Webhooks](https://docs.github.com/en/developers/webhooks-and-events/creating-webhooks), [GitLab Webhooks](https://docs.gitlab.com/ee/user/project/integrations/webhooks/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/197dd1cb-9df3-4352-ada6-e62e5ca364f8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/197dd1cb-9df3-4352-ada6-e62e5ca364f8)
 
 
 # Sync Hooks
@@ -60,9 +54,7 @@ Use cases for Sync Hooks:
 * Run integration tests or notify systems after a successful deployment.
 * Clean up temporary resources after syncs.
 
-<Callout icon="lightbulb">
-  Sync hooks are defined with annotations in your Kubernetes manifests (for example, `argocd.argoproj.io/hook: PreSync`). ArgoCD will create the hook resource (a Job, Pod, etc.) and wait for its completion where applicable, before proceeding to the next phase.
-</Callout>
+> **lightbulb** Sync hooks are defined with annotations in your Kubernetes manifests (for example, `argocd.argoproj.io/hook: PreSync`). ArgoCD will create the hook resource (a Job, Pod, etc.) and wait for its completion where applicable, before proceeding to the next phase.
 
 ## Sync phases
 
@@ -157,12 +149,10 @@ spec:
 
 If the migration Job fails, the sync is marked as failed and ArgoCD will not proceed to the main Deployment step. You can use SyncFail hooks to run remediation tasks when this happens.
 
-<Callout icon="warning">
-  Hooks create real Kubernetes resources (Jobs, Pods, etc.). Without a cleanup strategy, completed or failed hook resources accumulate in the cluster and can cause:
+> **warning** Hooks create real Kubernetes resources (Jobs, Pods, etc.). Without a cleanup strategy, completed or failed hook resources accumulate in the cluster and can cause:
 
   * Cluster clutter — harder to inspect and manage.
   * Sync failures — a future sync may fail if it attempts to create a resource with the same name as an existing completed hook.
-</Callout>
 
 <Frame>
   <img alt="A slide titled &#x22;Sync Hooks – CleanUp&#x22; explaining that without cleanup completed/failed sync hooks pile up, causing &#x22;Cluster Clutter&#x22; (making the cluster noisy and hard to inspect) and &#x22;Sync Failures&#x22; (reused job names blocking subsequent syncs)." />
@@ -235,6 +225,4 @@ In this setup:
 * [Kubernetes Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/job/)
 * [Argo CD Application health and sync](https://argo-cd.readthedocs.io/en/stable/user-guide/health/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/2a5355a9-53a3-4283-a64e-df13c7d39ba5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/9facbd04-7a3f-4200-9d6e-53936e93d875/lesson/2a5355a9-53a3-4283-a64e-df13c7d39ba5)

@@ -16,9 +16,7 @@ Key advantages of Cilium Ingress
 * Uses Envoy only where required: L7 processing, TLS termination (if configured), and policy enforcement.
 * Supports both traditional Kubernetes Ingress and the Gateway API for modern traffic routing.
 
-<Callout icon="lightbulb">
-  When you enable Cilium's ingress controller (ingressController.enabled = true), Cilium automatically configures Envoy where needed. eBPF handles most routing and load-balancing tasks for better performance and lower resource usage.
-</Callout>
+> **lightbulb** When you enable Cilium's ingress controller (ingressController.enabled = true), Cilium automatically configures Envoy where needed. eBPF handles most routing and load-balancing tasks for better performance and lower resource usage.
 
 ## Enabling Cilium Ingress (Helm values)
 

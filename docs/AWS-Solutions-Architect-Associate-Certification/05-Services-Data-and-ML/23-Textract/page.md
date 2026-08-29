@@ -21,7 +21,7 @@ In addition to text extraction, AWS Textract also supports form and table extrac
 
 In my own experience, I have tested Textract with some of the most challenging handwritten notes in English. Despite encountering a few minor errors with technical jargon, the service consistently produced meaningful, usable text with very little editing required.
 
-![The image lists five features: Text Extraction, Data Extraction From Forms and Tables, Integration, Handwriting Recognition, and Scalability, each represented with an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865099/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Textract/features-text-extraction-data-integration.jpg)
+![The image lists five features: Text Extraction, Data Extraction From Forms and Tables, Integration, Handwriting Recognition, and Scalability, each represented with an icon.](https://kodekloud.com/kk-media/image/upload/v1752865099/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Textract/features-text-extraction-data-integration.jpg)
 
 Textract's scalability is practically limitless. I have processed millions of documents in just a few hours—all without the need for specialized machine learning expertise.
 
@@ -36,7 +36,7 @@ For those new to AWS Textract, I recommend uploading a sample document with hand
 
 In another example workflow, after Textract processes a document uploaded to S3 through a Lambda function, the extracted text is stored in a DynamoDB table. This structured data can then be retrieved for further processing or analysis.
 
-![The image is a flowchart illustrating a process involving Amazon S3, AWS Lambda, Amazon Textract, and Amazon DynamoDB. It shows the sequence of data processing from storage to database.](../../../../images/kodekloud.com/kk-media/image/upload/v1752865100/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Textract/amazon-s3-aws-lambda-flowchart.jpg)
+![The image is a flowchart illustrating a process involving Amazon S3, AWS Lambda, Amazon Textract, and Amazon DynamoDB. It shows the sequence of data processing from storage to database.](https://kodekloud.com/kk-media/image/upload/v1752865100/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-Textract/amazon-s3-aws-lambda-flowchart.jpg)
 
 > **lightbulb** This article has covered the core functionality of AWS Textract: extracting text from scanned documents and converting it into a digital format for further use. If you have any questions or need further assistance, please join us on Slack. We look forward to connecting with you in our next lesson.
 

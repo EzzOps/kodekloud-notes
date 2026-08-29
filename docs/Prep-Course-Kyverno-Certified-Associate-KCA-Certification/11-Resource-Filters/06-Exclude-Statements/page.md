@@ -117,9 +117,7 @@ spec:
       ...
 ```
 
-<Callout icon="lightbulb">
-  If a rule uses identity filters (for example, `subjects`, `roles`, or `clusterRoles`), always set `spec.background: false` so Kyverno does not try to evaluate the rule during background scans where request identity is unavailable.
-</Callout>
+> **lightbulb** If a rule uses identity filters (for example, `subjects`, `roles`, or `clusterRoles`), always set `spec.background: false` so Kyverno does not try to evaluate the rule during background scans where request identity is unavailable.
 
 Further reading and references
 
@@ -128,6 +126,4 @@ Further reading and references
 
 That's it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/a93a7785-714d-441c-98d7-dd3bb966c3f6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/a93a7785-714d-441c-98d7-dd3bb966c3f6)

@@ -72,9 +72,7 @@ How Object URL vs Console Open works
 * Object URL (public): attempts to fetch the object anonymously. This will be denied unless you explicitly allow public reads via object ACLs, a bucket policy, or another mechanism.
 * Open (authenticated): uses your signed console session credentials, allowing you to view the object while signed in.
 
-<Callout icon="lightbulb">
-  By default, S3 buckets and objects are private. To serve assets publicly (for a website, for example), you must explicitly change the object or bucket settings (object ACL, bucket policy, or use a `signed URL` or a `CloudFront distribution`) to allow public or authorized access. See: [Pre-signed URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html) and [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html).
-</Callout>
+> **lightbulb** By default, S3 buckets and objects are private. To serve assets publicly (for a website, for example), you must explicitly change the object or bucket settings (object ACL, bucket policy, or use a `signed URL` or a `CloudFront distribution`) to allow public or authorized access. See: [Pre-signed URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html) and [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html).
 
 Creating a “folder” and uploading multiple objects
 
@@ -125,9 +123,7 @@ To empty a bucket using the console, choose Empty and confirm by typing `permane
   <img alt="A screenshot of the Amazon S3 console showing the &#x22;Empty bucket&#x22; confirmation for bucket &#x22;kk-demo-123,&#x22; including warnings and instructions to type &#x22;permanently delete.&#x22; The text field contains &#x22;permanently delete&#x22; and there are Cancel and orange &#x22;Empty&#x22; buttons at the bottom." />
 </Frame>
 
-<Callout icon="warning">
-  If versioning is enabled, “emptying” a bucket requires removing all object versions and delete markers. Failing to remove versions means the bucket is still not empty and cannot be deleted. Consider using lifecycle rules or scripted solutions (AWS CLI, SDKs) to remove versions at scale.
-</Callout>
+> **warning** If versioning is enabled, “emptying” a bucket requires removing all object versions and delete markers. Failing to remove versions means the bucket is still not empty and cannot be deleted. Consider using lifecycle rules or scripted solutions (AWS CLI, SDKs) to remove versions at scale.
 
 Summary
 
@@ -147,8 +143,6 @@ Further reading and references
 * [Pre-signed URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html)
 * [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/crash-course-aws-basics/module/76d6cbfc-c16d-4f87-a93c-31cfa5f795f7/lesson/7a985991-7238-406a-aad7-75e86682e644" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/crash-course-aws-basics/module/76d6cbfc-c16d-4f87-a93c-31cfa5f795f7/lesson/7a985991-7238-406a-aad7-75e86682e644)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/crash-course-aws-basics/module/76d6cbfc-c16d-4f87-a93c-31cfa5f795f7/lesson/da40c2da-86d7-4b8b-8d24-747177b20379" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/crash-course-aws-basics/module/76d6cbfc-c16d-4f87-a93c-31cfa5f795f7/lesson/da40c2da-86d7-4b8b-8d24-747177b20379)

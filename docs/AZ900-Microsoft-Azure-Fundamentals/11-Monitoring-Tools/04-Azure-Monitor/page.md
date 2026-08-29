@@ -6,7 +6,7 @@ This guide explores Azure Monitor, a solution for monitoring CPU, memory, and di
 
 Pilla Innovations IT team needs to monitor CPU, memory, and disk usage of their servers. In this guide, we explore Azure Monitor—a robust monitoring solution within Azure that collects, analyzes, and acts upon telemetry data from both Azure and on-premises environments.
 
-![The image is a diagram illustrating the Azure Monitor process, showing steps to collect, analyze, and act on data, with icons representing each stage.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868462/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Monitor/azure-monitor-process-diagram.jpg)
+![The image is a diagram illustrating the Azure Monitor process, showing steps to collect, analyze, and act on data, with icons representing each stage.](https://kodekloud.com/kk-media/image/upload/v1752868462/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Monitor/azure-monitor-process-diagram.jpg)
 
 Azure Monitor provides a centralized way to track not only application performance but also the underlying infrastructure and networking elements. Its key features include:
 
@@ -16,7 +16,7 @@ Azure Monitor provides a centralized way to track not only application performan
 * **Log Analytics:** An integral component that stores and analyzes logs, enabling you to query data for troubleshooting and in-depth analysis.
 * **Application Insights:** Delivers real-time performance insights for live applications, helping ensure an optimal user experience.
 
-![The image lists the key features of Azure Monitor, including Data Collection, Alerts and Notifications, Dashboards and Visualization, Log Analytics, and Application Insights.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868464/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Monitor/azure-monitor-key-features.jpg)
+![The image lists the key features of Azure Monitor, including Data Collection, Alerts and Notifications, Dashboards and Visualization, Log Analytics, and Application Insights.](https://kodekloud.com/kk-media/image/upload/v1752868464/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Monitor/azure-monitor-key-features.jpg)
 
 Although Log Analytics and Application Insights operate as separate services, they integrate seamlessly with Azure Monitor to provide a unified monitoring solution.
 
@@ -29,7 +29,7 @@ Azure Monitor offers several significant benefits, making it an essential tool f
 * **Performance Optimization:** Quickly identify performance bottlenecks and pinpoint areas for enhancement, ensuring your applications remain efficient.
 * **Unified Diagnostic Tool:** Simplify troubleshooting by obtaining integrated views of network, application, and infrastructure diagnostics.
 
-![The image lists the benefits of Azure Monitor, including centralized monitoring, automated responses, performance optimization, and a unified diagnostic tool.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868465/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Monitor/azure-monitor-benefits-list.jpg)
+![The image lists the benefits of Azure Monitor, including centralized monitoring, automated responses, performance optimization, and a unified diagnostic tool.](https://kodekloud.com/kk-media/image/upload/v1752868465/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Monitor/azure-monitor-benefits-list.jpg)
 
 Azure Monitor is widely used for IT operations and is also a favorite among DevOps teams and developers for tracking application health and infrastructure performance.
 
@@ -45,11 +45,11 @@ These basic metrics are accessible for all services at no extra cost. However, i
 
 > **lightbulb** When analyzing logs for in-depth insights, remember that extended data retention and advanced queries may incur extra charges.
 
-![The image shows a Microsoft Azure portal interface displaying monitoring metrics for a storage account, including graphs for total egress, total ingress, request breakdown, and average latency.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868466/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Monitor/azure-portal-storage-metrics.jpg)
+![The image shows a Microsoft Azure portal interface displaying monitoring metrics for a storage account, including graphs for total egress, total ingress, request breakdown, and average latency.](https://kodekloud.com/kk-media/image/upload/v1752868466/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Monitor/azure-portal-storage-metrics.jpg)
 
 Furthermore, Azure Monitor allows the setup of custom alerts and personalized views. For instance, you can analyze egress traffic by adjusting the display period (e.g., viewing the last three days) to better understand traffic patterns.
 
-![The image shows a Microsoft Azure Metrics dashboard displaying a line chart of data egress over time, with a noticeable spike in activity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868467/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Monitor/azure-metrics-dashboard-line-chart.jpg)
+![The image shows a Microsoft Azure Metrics dashboard displaying a line chart of data egress over time, with a noticeable spike in activity.](https://kodekloud.com/kk-media/image/upload/v1752868467/notes-assets/images/AZ900-Microsoft-Azure-Fundamentals-Azure-Monitor/azure-metrics-dashboard-line-chart.jpg)
 
 Azure Monitor’s robust features are critical for maintaining high performance and reliability. Its capabilities are frequently highlighted in certification exams such as [AZ900: Microsoft Azure Fundamentals](https://learn.kodekloud.com/user/courses/az900-microsoft-azure-fundamentals) and [Microsoft Azure Security Technologies (AZ-500)](https://learn.kodekloud.com/user/courses/microsoft-azure-security-technologies-az-500).
 

@@ -6,9 +6,7 @@ Vault provides three interfaces for managing secrets  a web UI, CLI, and HTTP AP
 
 Vault offers three primary interfaces for interacting with secrets and configurations: the web-based UI, the Command-Line Interface (CLI), and the HTTP API. Each interface targets different use cases, from human operators to fully automated applications.
 
-<Frame>
-  ![The image is a slide titled "Vault Interfaces," explaining the three interfaces to interact with Vault: UI, CLI, and HTTP API, and highlighting key points about their usage and requirements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878239/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Interfaces/vault-interfaces-ui-cli-http-api.jpg)
-</Frame>
+![The image is a slide titled "Vault Interfaces," explaining the three interfaces to interact with Vault: UI, CLI, and HTTP API, and highlighting key points about their usage and requirements.](https://kodekloud.com/kk-media/image/upload/v1752878239/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Interfaces/vault-interfaces-ui-cli-http-api.jpg)
 
 The relationship between these interfaces is straightforward:
 
@@ -22,9 +20,7 @@ When you initialize and start a Vault server, the CLI and HTTP API are active by
 ui = true
 ```
 
-<Callout icon="lightbulb">
-  Enabling the UI requires Vault to be served over TLS in production environments to prevent credentials leakage.
-</Callout>
+> **lightbulb** Enabling the UI requires Vault to be served over TLS in production environments to prevent credentials leakage.
 
 Before executing any operations, authenticate to Vault. For example:
 
@@ -32,9 +28,7 @@ Before executing any operations, authenticate to Vault. For example:
 vault login
 ```
 
-<Callout icon="triangle-alert">
-  Keep your tokens secure. Avoid committing them to source control or sharing them in logs.
-</Callout>
+> **triangle-alert** Keep your tokens secure. Avoid committing them to source control or sharing them in logs.
 
 Once authenticated, you can:
 
@@ -49,9 +43,7 @@ Once authenticated, you can:
 
 Different personas leverage Vault’s interfaces to manage secrets at varying levels of automation and scale.
 
-<Frame>
-  ![The image illustrates different Vault interfaces: User Interface, Command Line, and HTTP API, along with their users: Humans/Users, Orchestration, and Applications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878241/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Interfaces/vault-interfaces-user-command-http-api.jpg)
-</Frame>
+![The image illustrates different Vault interfaces: User Interface, Command Line, and HTTP API, along with their users: Humans/Users, Orchestration, and Applications.](https://kodekloud.com/kk-media/image/upload/v1752878241/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Interfaces/vault-interfaces-user-command-http-api.jpg)
 
 | Interface                                                                                       | Typical User                 | Example Usage                                       |
 | ----------------------------------------------------------------------------------------------- | ---------------------------- | --------------------------------------------------- |
@@ -79,9 +71,7 @@ Different personas leverage Vault’s interfaces to manage secrets at varying le
 
 In subsequent sections, aligned with the Vault Associate Exam objectives, we will explore each interface in depth:
 
-<Frame>
-  ![The image outlines three learning objectives related to using Vault: utilizing the command line, user interface, and HTTP API. Each section includes an icon and a brief description of the objective.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878242/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Interfaces/vault-learning-objectives-command-line-ui-api.jpg)
-</Frame>
+![The image outlines three learning objectives related to using Vault: utilizing the command line, user interface, and HTTP API. Each section includes an icon and a brief description of the objective.](https://kodekloud.com/kk-media/image/upload/v1752878242/notes-assets/images/HashiCorp-Certified-Vault-Associate-Certification-Vault-Interfaces/vault-learning-objectives-command-line-ui-api.jpg)
 
 1. **Objective 6:** Utilize the Vault CLI
 2. **Objective 7:** Utilize the Vault UI
@@ -95,6 +85,4 @@ In subsequent sections, aligned with the Vault Associate Exam objectives, we wil
 * [Vault CLI Commands](https://www.vaultproject.io/docs/commands)
 * [Vault HTTP API](https://www.vaultproject.io/api-docs)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/6d027509-202b-4628-b65b-50e1cb55080d" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/hashicorp-certified-vault-associate-certification/module/f544757d-0901-47a3-a0e6-d9ab7822ef7a/lesson/6d027509-202b-4628-b65b-50e1cb55080d)

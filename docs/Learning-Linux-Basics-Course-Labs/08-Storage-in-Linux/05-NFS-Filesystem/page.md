@@ -8,13 +8,9 @@ In this guide, we explore how the Network File System (NFS) differs from block d
 
 NFS utilizes a server-client model to share directories seamlessly across the network. For instance, consider a software repository server that maintains a directory at `/software/repos`. By exporting this directory using NFS, employee laptops can access its contents as if the files were stored locally—even though they reside on the server.
 
-<Frame>
-  ![The image illustrates an NFS server setup, showing a server connected to multiple client laptops via a network, sharing the directory "/software/repos".](../../../../images/kodekloud.com/kk-media/image/upload/v1752881152/notes-assets/images/Learning-Linux-Basics-Course-Labs-NFS-Filesystem/frame_40.jpg)
-</Frame>
+![The image illustrates an NFS server setup, showing a server connected to multiple client laptops via a network, sharing the directory "/software/repos".](https://kodekloud.com/kk-media/image/upload/v1752881152/notes-assets/images/Learning-Linux-Basics-Course-Labs-NFS-Filesystem/frame_40.jpg)
 
-<Callout icon="lightbulb">
-  In NFS terminology, "exporting" refers to the process of sharing a directory with client systems.
-</Callout>
+> **lightbulb** In NFS terminology, "exporting" refers to the process of sharing a directory with client systems.
 
 On the NFS server, directory sharing is managed through the exports configuration file located at `/etc/exports`. This file specifies which clients are permitted to access the shared directories. For example, if the allowed client IP addresses are 10.61.35.201, 10.61.35.202, and 10.61.35.203, and the NFS server has an IP of 10.61.112.101, the configuration in `/etc/exports` might look like this:
 
@@ -44,10 +40,6 @@ mount 10.61.112.101:/software/repos /mnt/software/repos
 
 With these steps, the NFS share should now be successfully mounted on the client system, enabling seamless file access from the server.
 
-<Callout icon="lightbulb">
-  While there are several advanced options available with the `exportfs` command, the examples provided above cover the fundamentals necessary to get started with NFS.
-</Callout>
+> **lightbulb** While there are several advanced options available with the `exportfs` command, the examples provided above cover the fundamentals necessary to get started with NFS.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/e0021af2-9983-4bde-97a2-29255d3ea1da/lesson/b9ec0d67-ff19-45f5-a5ef-200d1d80758a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/learning-linux-basics-course-labs/module/e0021af2-9983-4bde-97a2-29255d3ea1da/lesson/b9ec0d67-ff19-45f5-a5ef-200d1d80758a)

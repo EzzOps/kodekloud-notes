@@ -47,9 +47,7 @@ The main difference between GET and POST requests lies in how data is transmitte
 
 Imagine your device—a web browser or mobile app—as the client. In a GET request, the client asks for data, whereas in a POST request, the client submits data for the server to handle.
 
-<Callout icon="lightbulb">
-  While the demonstration URL "/createposts" is used here for clarity, best practices recommend using a resource-oriented endpoint name.
-</Callout>
+> **lightbulb** While the demonstration URL "/createposts" is used here for clarity, best practices recommend using a resource-oriented endpoint name.
 
 ## Creating a POST Path Operation
 
@@ -112,15 +110,11 @@ To test your new POST endpoint, follow these steps using Postman:
 
 You can also save multiple GET and POST requests within Postman. This allows you to quickly verify that all endpoints are operating correctly.
 
-<Frame>
-  ![The image shows a Postman interface within Visual Studio Code, displaying an HTTP request to a local server with various HTTP methods available in a dropdown menu.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883445/notes-assets/images/Python-API-Development-with-FastAPI-Post-Requests/postman-vscode-http-request-dropdown.jpg)
-</Frame>
+![The image shows a Postman interface within Visual Studio Code, displaying an HTTP request to a local server with various HTTP methods available in a dropdown menu.](https://kodekloud.com/kk-media/image/upload/v1752883445/notes-assets/images/Python-API-Development-with-FastAPI-Post-Requests/postman-vscode-http-request-dropdown.jpg)
 
 Next, explore the full configuration options in Postman by examining the parameters, headers, and body setup options.
 
-<Frame>
-  ![The image shows a Postman interface within Visual Studio Code, displaying a POST request setup to "http://127.0.0.1:8000/createposts" with options for parameters, authorization, headers, and body. The left sidebar includes options for collections, APIs, environments, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883446/notes-assets/images/Python-API-Development-with-FastAPI-Post-Requests/postman-vscode-post-request-setup.jpg)
-</Frame>
+![The image shows a Postman interface within Visual Studio Code, displaying a POST request setup to "http://127.0.0.1:8000/createposts" with options for parameters, authorization, headers, and body. The left sidebar includes options for collections, APIs, environments, and more.](https://kodekloud.com/kk-media/image/upload/v1752883446/notes-assets/images/Python-API-Development-with-FastAPI-Post-Requests/postman-vscode-post-request-setup.jpg)
 
 ## Sending Data in the Body of a POST Request
 
@@ -211,12 +205,8 @@ The response from the API will be:
 * The payload from POST requests is parsed into a Python dictionary.
 * The server prints and returns values extracted from the payload, simulating how data would be handled or stored in a real-world application.
 
-<Callout icon="lightbulb">
-  In production applications, the data received via POST requests would typically be validated and stored in a database.
-</Callout>
+> **lightbulb** In production applications, the data received via POST requests would typically be validated and stored in a database.
 
 Happy coding!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/8a4b3163-e512-41f2-b037-c0c5176aee47" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/python-api-development-with-fastapi/module/b1fa1425-07bf-49c6-b19d-ccded17d940d/lesson/8a4b3163-e512-41f2-b037-c0c5176aee47)

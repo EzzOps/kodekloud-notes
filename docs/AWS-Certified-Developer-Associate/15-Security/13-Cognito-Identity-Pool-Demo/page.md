@@ -8,7 +8,7 @@ In this lesson, you will learn how to set up a Cognito identity pool to grant us
 
 Begin by navigating to the AWS Cognito console and selecting the option to "Grant access to AWS services." This is the core purpose of an identity pool—enabling secure interactions with AWS. Click on **Create identity pool** to start the setup.
 
-![The image shows the Amazon Cognito page on the AWS website, highlighting secure identity and access management for apps, with sections on benefits, features, and pricing.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859307/notes-assets/images/AWS-Certified-Developer-Associate-Cognito-Identity-Pool-Demo/amazon-cognito-aws-identity-management.jpg)
+![The image shows the Amazon Cognito page on the AWS website, highlighting secure identity and access management for apps, with sections on benefits, features, and pricing.](https://kodekloud.com/kk-media/image/upload/v1752859307/notes-assets/images/AWS-Certified-Developer-Associate-Cognito-Identity-Pool-Demo/amazon-cognito-aws-identity-management.jpg)
 
 When configuring your identity pool, you can enable one or both of the following access types:
 
@@ -40,7 +40,7 @@ If you opt for authenticated access, you need to assign a role that authenticate
 
 > **lightbulb** These limited permissions ensure that users can only retrieve credentials for their identities. You can later update this role in [AWS IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) to add additional permissions (such as S3 access) when necessary.
 
-![The image shows an AWS Cognito Identity Pools configuration screen where a new IAM role is being created, with options to create or use an existing IAM role.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859308/notes-assets/images/AWS-Certified-Developer-Associate-Cognito-Identity-Pool-Demo/aws-cognito-identity-pools-iam-role.jpg)
+![The image shows an AWS Cognito Identity Pools configuration screen where a new IAM role is being created, with options to create or use an existing IAM role.](https://kodekloud.com/kk-media/image/upload/v1752859308/notes-assets/images/AWS-Certified-Developer-Associate-Cognito-Identity-Pool-Demo/aws-cognito-identity-pools-iam-role.jpg)
 
 ## Configuring Guest Access
 
@@ -52,7 +52,7 @@ After setting up both roles, you have the option to connect your identity provid
 
 Once your identity pool has been created, ensure that users (whether authenticated or guests) log in via the chosen authentication provider. Upon successful login, they can retrieve temporary AWS credentials that allow them to interact with AWS services according to the permissions defined in their respective roles. Should you need to grant additional permissions later (for example, S3 access), simply update the role in IAM with the necessary policies.
 
-![The image shows the AWS Identity and Access Management (IAM) console, specifically the "Roles" section, with a search for roles related to "Cognito." Three roles are listed with their trusted entities and last activity details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752859309/notes-assets/images/AWS-Certified-Developer-Associate-Cognito-Identity-Pool-Demo/aws-iam-console-roles-cognito.jpg)
+![The image shows the AWS Identity and Access Management (IAM) console, specifically the "Roles" section, with a search for roles related to "Cognito." Three roles are listed with their trusted entities and last activity details.](https://kodekloud.com/kk-media/image/upload/v1752859309/notes-assets/images/AWS-Certified-Developer-Associate-Cognito-Identity-Pool-Demo/aws-iam-console-roles-cognito.jpg)
 
 This concludes the lesson on configuring a Cognito identity pool. We hope you found this walkthrough informative and helpful.
 

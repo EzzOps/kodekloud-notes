@@ -129,9 +129,7 @@ cargo run -- list --help
 
 Callout — Docker socket and Docker Desktop
 
-<Callout icon="lightbulb">
-  Ensure Docker is running ([Docker Desktop](https://www.docker.com/products/docker-desktop) or a daemon on Linux). The typical Docker socket path on Linux is /var/run/docker.sock. On Docker Desktop (macOS/Windows) the socket path may differ — use `docker context inspect` to find the "Host" value and adjust the socket path in DockerClient::new if needed.
-</Callout>
+> **lightbulb** Ensure Docker is running ([Docker Desktop](https://www.docker.com/products/docker-desktop) or a daemon on Linux). The typical Docker socket path on Linux is /var/run/docker.sock. On Docker Desktop (macOS/Windows) the socket path may differ — use `docker context inspect` to find the "Host" value and adjust the socket path in DockerClient::new if needed.
 
 Example output of docker context inspect (used to discover socket path):
 
@@ -401,9 +399,7 @@ Notes and behavior
 
 Callout — Permissions and socket path
 
-<Callout icon="warning">
-  If you use a Unix socket (e.g., /var/run/docker.sock) your user needs permission to access that socket (membership in the docker group, or run the binary with appropriate privileges). On macOS/Windows with Docker Desktop, the socket path may differ — use `docker context inspect` to find the socket path and adjust DockerClient::new accordingly.
-</Callout>
+> **warning** If you use a Unix socket (e.g., /var/run/docker.sock) your user needs permission to access that socket (membership in the docker group, or run the binary with appropriate privileges). On macOS/Windows with Docker Desktop, the socket path may differ — use `docker context inspect` to find the socket path and adjust DockerClient::new accordingly.
 
 Extending the project
 
@@ -428,9 +424,7 @@ Links and references
 * Tokio (async runtime): [https://tokio.rs/](https://tokio.rs/)
 * Docker documentation: [https://docs.docker.com/](https://docs.docker.com/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/bb7ae445-2739-4b78-a1f2-e30c0b7944e3/lesson/c5c8c607-696c-4114-b7db-33feef33b563" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/bb7ae445-2739-4b78-a1f2-e30c0b7944e3/lesson/c5c8c607-696c-4114-b7db-33feef33b563)
 
 
 # Closures
@@ -445,15 +439,11 @@ Closures in Rust are powerful, anonymous functions that can capture variables fr
 
 Closures are similar to regular functions but with the added ability to automatically capture variables from their defining scope. This means that closures can access variables defined outside their immediate scope without requiring explicit parameter passing.
 
-<Frame>
-  ![The image explains closures, highlighting that they can use variables defined outside their immediate scope, unlike regular functions which require variables to be passed explicitly as arguments. It features two arrows pointing in opposite directions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883831/notes-assets/images/Rust-Programming-Closures/closures-variable-scope-diagram.jpg)
-</Frame>
+![The image explains closures, highlighting that they can use variables defined outside their immediate scope, unlike regular functions which require variables to be passed explicitly as arguments. It features two arrows pointing in opposite directions.](https://kodekloud.com/kk-media/image/upload/v1752883831/notes-assets/images/Rust-Programming-Closures/closures-variable-scope-diagram.jpg)
 
 Closures are particularly useful in scenarios like iterating over collections or handling events, where the encapsulated behavior benefits from access to external variables.
 
-<Frame>
-  ![The image is a slide titled "Closures – Use Cases" with two colored boxes labeled "Iterators" and "Callbacks in event-driven programming."](../../../../images/kodekloud.com/kk-media/image/upload/v1752883832/notes-assets/images/Rust-Programming-Closures/closures-use-cases-iterators-callbacks.jpg)
-</Frame>
+![The image is a slide titled "Closures – Use Cases" with two colored boxes labeled "Iterators" and "Callbacks in event-driven programming."](https://kodekloud.com/kk-media/image/upload/v1752883832/notes-assets/images/Rust-Programming-Closures/closures-use-cases-iterators-callbacks.jpg)
 
 ## Basic Syntax
 
@@ -479,9 +469,7 @@ Rust’s type inference allows you to omit parameter types in many cases, stream
 
 One of the key features of closures in Rust is their ability to capture variables from the surrounding environment. This enables the closure to maintain context without explicitly passing all dependencies.
 
-<Callout icon="lightbulb">
-  Closures can capture variables by value, by reference, or by mutable reference. Rust automatically determines the most appropriate capture semantics based on how the closure is used.
-</Callout>
+> **lightbulb** Closures can capture variables by value, by reference, or by mutable reference. Rust automatically determines the most appropriate capture semantics based on how the closure is used.
 
 Consider the following example where the closure captures the variable `num` from its scope:
 
@@ -619,16 +607,10 @@ When using closures in Rust, consider the following best practices:
 2. **Choose the Right Trait**: Select between `Fn`, `FnMut`, or `FnOnce` based on whether the closure reads, modifies, or takes ownership of its captured variables.
 3. **Be Aware of Lifetime Issues**: Understand how closures interact with Rust’s lifetime system to avoid borrowing conflicts and ownership errors.
 
-<Frame>
-  ![The image outlines three best practices: minimizing the captured environment, choosing the right trait, and being aware of lifetime issues, presented in a colorful, numbered format.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883833/notes-assets/images/Rust-Programming-Closures/best-practices-captured-environment.jpg)
-</Frame>
+![The image outlines three best practices: minimizing the captured environment, choosing the right trait, and being aware of lifetime issues, presented in a colorful, numbered format.](https://kodekloud.com/kk-media/image/upload/v1752883833/notes-assets/images/Rust-Programming-Closures/best-practices-captured-environment.jpg)
 
 Understanding and effectively leveraging closures is essential for writing efficient and expressive Rust code. Their ability to capture their environment in various ways—by immutable reference, mutable reference, or by taking ownership—empowers developers to write clean, concise, and powerful functions while maintaining Rust’s strong safety guarantees.
 
-<Callout icon="lightbulb">
-  Learn more about Rust and closures by exploring the [Rust Programming Language](https://doc.rust-lang.org/book/) and [Rust by Example](https://doc.rust-lang.org/rust-by-example/).
-</Callout>
+> **lightbulb** Learn more about Rust and closures by exploring the [Rust Programming Language](https://doc.rust-lang.org/book/) and [Rust by Example](https://doc.rust-lang.org/rust-by-example/).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/ec5f51b7-2bd4-4b24-bff0-94947cac5257/lesson/21fbcda1-2e3c-40ab-b0a8-8e3a9763d22a" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/ec5f51b7-2bd4-4b24-bff0-94947cac5257/lesson/21fbcda1-2e3c-40ab-b0a8-8e3a9763d22a)

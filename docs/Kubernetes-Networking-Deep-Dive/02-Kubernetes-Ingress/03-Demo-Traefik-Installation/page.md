@@ -39,9 +39,7 @@ time="2024-07-18T23:21:05Z" level=info msg="GoDaddy: 3 changes will be done"
 
 This confirms that ExternalDNS is creating the DNS record.
 
-<Callout icon="lightbulb">
-  If you use a cloud provider’s `LoadBalancer` service type, omit the `external-dns.alpha.kubernetes.io/target` annotation. ExternalDNS will automatically use the LoadBalancer’s IP.
-</Callout>
+> **lightbulb** If you use a cloud provider’s `LoadBalancer` service type, omit the `external-dns.alpha.kubernetes.io/target` annotation. ExternalDNS will automatically use the LoadBalancer’s IP.
 
 ***
 
@@ -52,9 +50,7 @@ This confirms that ExternalDNS is creating the DNS record.
 * [Kubernetes Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 * [Helm Charts](https://helm.sh/docs/topics/charts/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/19677663-2b7d-4c3d-92ee-06df9f5530eb/lesson/b562f81a-4ce6-404a-85de-01ed64dc8a03" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/19677663-2b7d-4c3d-92ee-06df9f5530eb/lesson/b562f81a-4ce6-404a-85de-01ed64dc8a03)
 
 
 # Demo Traefik Installation
@@ -135,9 +131,7 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 
-<Callout icon="lightbulb">
-  Ensure your cluster’s RBAC is enabled. If you run into `Forbidden` errors, verify that the ServiceAccount and ClusterRoleBinding are created correctly.
-</Callout>
+> **lightbulb** Ensure your cluster’s RBAC is enabled. If you run into `Forbidden` errors, verify that the ServiceAccount and ClusterRoleBinding are created correctly.
 
 ### 1.2 Deploy the Traefik Controller
 
@@ -179,9 +173,7 @@ spec:
               containerPort: 8080
 ```
 
-<Callout icon="triangle-alert">
-  The `--api.insecure` flag enables an unsecured dashboard. Do **not** use this in production environments. For secure dashboards, configure TLS and authentication.
-</Callout>
+> **triangle-alert** The `--api.insecure` flag enables an unsecured dashboard. Do **not** use this in production environments. For secure dashboards, configure TLS and authentication.
 
 #### Expose Traefik with LoadBalancer Services
 

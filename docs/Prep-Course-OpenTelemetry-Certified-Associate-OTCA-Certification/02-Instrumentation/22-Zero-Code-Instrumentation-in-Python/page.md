@@ -22,9 +22,7 @@ Real-world extension examples
   <img alt="The image lists five practical extension use cases: disabling unnecessary spans, editing attributes, editing attributes based on database connection, removing certain attributes, and redesigning span behavior. Each use case is visually represented with icons." />
 </Frame>
 
-<Callout icon="warning">
-  Do not confuse Java agent extensions with OpenTelemetry Collector extensions — they are different concepts in different components. Collector extensions apply to the Collector pipeline, while Java agent extensions modify agent behavior inside the JVM.
-</Callout>
+> **warning** Do not confuse Java agent extensions with OpenTelemetry Collector extensions — they are different concepts in different components. Collector extensions apply to the Collector pipeline, while Java agent extensions modify agent behavior inside the JVM.
 
 Terminology and best practices
 
@@ -46,9 +44,7 @@ Links and references
 * OpenTelemetry Java instrumentation releases: [https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases](https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases)
 * Agent documentation and configuration: [https://opentelemetry.io/docs/instrumentation/java/](https://opentelemetry.io/docs/instrumentation/java/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/a2a1b13b-ea70-4348-932c-c888b08dfdee" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/a2a1b13b-ea70-4348-932c-c888b08dfdee)
 
 
 # Zero Code Instrumentation in Python
@@ -99,9 +95,7 @@ opentelemetry-instrument \
   python myapp.py
 ```
 
-<Callout icon="lightbulb">
-  For production, send telemetry to an OTLP Collector or backend instead of the console. Use the console exporter only for quick testing or troubleshooting.
-</Callout>
+> **lightbulb** For production, send telemetry to an OTLP Collector or backend instead of the console. Use the console exporter only for quick testing or troubleshooting.
 
 ## Configuration via environment variables
 

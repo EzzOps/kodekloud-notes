@@ -71,7 +71,7 @@ In this guide, we’ll dive into how Unix-like shells handle pipelines, why erro
 
 When you connect commands with a pipe (`|`), each command’s standard output (`stdout`) feeds into the next command’s standard input (`stdin`). However, if a middle command writes to standard error (`stderr`), that error goes straight to your terminal—even though the rest of the pipeline keeps running.
 
-![The image illustrates a "Pipe Fail" concept, showing data flow between a computer and processes using standard input (stdin), standard output (stdout), and standard error (stderr).](../../../../images/kodekloud.com/kk-media/image/upload/v1752868645/notes-assets/images/Advanced-Bash-Scripting-Pipefail/pipe-fail-data-flow-diagram.jpg)
+![The image illustrates a "Pipe Fail" concept, showing data flow between a computer and processes using standard input (stdin), standard output (stdout), and standard error (stderr).](https://kodekloud.com/kk-media/image/upload/v1752868645/notes-assets/images/Advanced-Bash-Scripting-Pipefail/pipe-fail-data-flow-diagram.jpg)
 
 ## Behavior Without `pipefail`
 

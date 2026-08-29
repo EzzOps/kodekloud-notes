@@ -98,9 +98,7 @@ charging bank
 
 If you inspect the "Starting Payment" span in your tracing backend (for example, [Jaeger](https://www.jaegertracing.io/)), you'll typically see the attributes attached to the span (often displayed as tags): `user`, `account_number`, and `bank`.
 
-<Callout icon="lightbulb">
-  Avoid placing highly sensitive data (such as full credit card numbers, passwords, or unmasked PII) into span attributes. Traces may be accessible to multiple teams and stored long term. Instead, consider hashing, tokenizing, truncating, or excluding sensitive fields.
-</Callout>
+> **lightbulb** Avoid placing highly sensitive data (such as full credit card numbers, passwords, or unmasked PII) into span attributes. Traces may be accessible to multiple teams and stored long term. Instead, consider hashing, tokenizing, truncating, or excluding sensitive fields.
 
 ## Quick reference: attribute methods
 
@@ -122,6 +120,4 @@ If you inspect the "Starting Payment" span in your tracing backend (for example,
 * [OpenTelemetry for Python](https://opentelemetry.io/docs/instrumentation/python/)
 * [Jaeger — Distributed Tracing](https://www.jaegertracing.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/f1fdd2bb-7498-48f9-a149-47d09d172baa" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/prep-course-opentelemetry-certified-associate-certification-otca/module/d97970ef-6201-45c2-813e-e03bc75ad77a/lesson/f1fdd2bb-7498-48f9-a149-47d09d172baa)

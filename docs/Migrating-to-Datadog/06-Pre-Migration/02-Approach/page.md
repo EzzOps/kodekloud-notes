@@ -17,9 +17,7 @@ Quick comparison of migration strategies:
   <img alt="The image compares two approaches: the &#x22;Phased Approach,&#x22; which is safer and slower with features moved one at a time, and the &#x22;Big-Bang Approach,&#x22; which involves a full, fast switch with higher risk and less planning." />
 </Frame>
 
-<Callout icon="lightbulb">
-  For most organizations, a phased migration is the recommended pattern. It enables feedback-driven improvements, reduces risk, and produces repeatable artifacts (charts, config, documentation) that accelerate subsequent teams.
-</Callout>
+> **lightbulb** For most organizations, a phased migration is the recommended pattern. It enables feedback-driven improvements, reduces risk, and produces repeatable artifacts (charts, config, documentation) that accelerate subsequent teams.
 
 Most migration tasks (agent rollout, integrations, telemetry validation) are similar regardless of approach; the difference is how and when you cut over traffic and retire the old platform. Below we walk through a validated sequence you can adapt to either strategy.
 
@@ -37,9 +35,7 @@ Before installing agents or flipping integrations, gather access and artifacts s
 3. Prepare environment-specific credentials
    * Cloud account access, API keys, and any secrets needed to onboard telemetry (metrics, traces, logs, and profiling).
 
-<Callout icon="warning">
-  Request IAM roles and service account permissions early. Missing privileges are a common cause of migration delays—apply least privilege principles and document required scopes for onboarding.
-</Callout>
+> **warning** Request IAM roles and service account permissions early. Missing privileges are a common cause of migration delays—apply least privilege principles and document required scopes for onboarding.
 
 Make these requests early so platform engineers and application teams can proceed without delays.
 
@@ -97,6 +93,4 @@ That’s it for this article. Thanks for reading and good luck with your observa
 * [Microsoft Entra ID (Azure AD)](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis)
 * [AWS IAM documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/8fe0e8e3-3694-4f06-850e-f423c23a8be1" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-to-datadog/module/3287c1cc-cc8d-4c6d-8ec0-824c87c9eb1b/lesson/8fe0e8e3-3694-4f06-850e-f423c23a8be1)

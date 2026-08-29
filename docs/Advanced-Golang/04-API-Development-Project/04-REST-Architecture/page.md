@@ -8,7 +8,7 @@ In this article, we take an in-depth look at REST (Representational State Transf
 
 When a client interacts with a RESTful API, it receives a representation of the requested resource's state via HTTP. Although several formats—such as JSON, HTML, XML, Python, or plain text—can be used, JSON remains the most popular. In our forthcoming lessons, we will primarily focus on JSON.
 
-![The image is an informational slide about REST (Representational State Transfer), explaining its role as a set of architectural constraints and its use in transferring data in various formats like JSON and HTML.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868687/notes-assets/images/Advanced-Golang-REST-Architecture/rest-architectural-constraints-info-slide.jpg)
+![The image is an informational slide about REST (Representational State Transfer), explaining its role as a set of architectural constraints and its use in transferring data in various formats like JSON and HTML.](https://kodekloud.com/kk-media/image/upload/v1752868687/notes-assets/images/Advanced-Golang-REST-Architecture/rest-architectural-constraints-info-slide.jpg)
 
 > **lightbulb** REST defines guidelines that ensure APIs remain robust and user-friendly. These constraints support the creation of APIs that are efficient and straightforward to maintain.
 
@@ -29,7 +29,7 @@ For an API to be considered RESTful, it must adhere to the following principles:
 5. **Optional: Code-on-Demand**\
    Although not a requirement, servers can deliver executable code to clients when beneficial, thereby extending functionality on demand.
 
-![The image describes REST, highlighting its client-server architecture, stateless communication, uniform interface, and optional code-on-demand feature.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868688/notes-assets/images/Advanced-Golang-REST-Architecture/rest-client-server-architecture-diagram.jpg)
+![The image describes REST, highlighting its client-server architecture, stateless communication, uniform interface, and optional code-on-demand feature.](https://kodekloud.com/kk-media/image/upload/v1752868688/notes-assets/images/Advanced-Golang-REST-Architecture/rest-client-server-architecture-diagram.jpg)
 
 In summary, RESTful architecture might seem intricate at first glance, but its defined constraints create efficient and scalable web services. In our upcoming projects, we will apply these principles to design and manage our API endpoints for optimal performance and maintainability.
 

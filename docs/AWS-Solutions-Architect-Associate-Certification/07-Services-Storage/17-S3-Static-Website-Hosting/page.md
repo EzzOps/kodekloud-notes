@@ -15,7 +15,7 @@ When a user enters a URL in a browser, an HTTP GET request is sent to a web serv
 * **JavaScript**: Adds dynamic behavior and interactivity.
 * **Assets**: Includes images, videos, audio, and other media files.
 
-![The image illustrates components of static hosting, including HTML for structure, CSS for visual elements, JavaScript for dynamic functionality, and media files like images, videos, and audio.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866081/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting/static-hosting-components-html-css-js.jpg)
+![The image illustrates components of static hosting, including HTML for structure, CSS for visual elements, JavaScript for dynamic functionality, and media files like images, videos, and audio.](https://kodekloud.com/kk-media/image/upload/v1752866081/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting/static-hosting-components-html-css-js.jpg)
 
 All these elements can be stored in an S3 bucket. Since S3 is designed for object storage, it can efficiently house and serve all files necessary for a static website.
 
@@ -27,7 +27,7 @@ Amazon S3 supports static website hosting by offering a configuration option to 
 
 > **triangle-alert** If you plan to use a custom domain (e.g., bestcars.com), ensure that your S3 bucket is named exactly as your custom domain.
 
-![The image is an infographic about static hosting, explaining that it allows access to website files through HTTP and provides a URL via S3. It notes that this is used only for static websites and requires a specific format for domain customization.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866083/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting/static-hosting-infographic-s3.jpg)
+![The image is an infographic about static hosting, explaining that it allows access to website files through HTTP and provides a URL via S3. It notes that this is used only for static websites and requires a specific format for domain customization.](https://kodekloud.com/kk-media/image/upload/v1752866083/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting/static-hosting-infographic-s3.jpg)
 
 ## Pricing Considerations
 
@@ -38,7 +38,7 @@ When hosting a static website on S3, you incur two main types of costs:
 
 For instance, if you're using S3 Standard Infrequent Access (IA) and reviewing GET request pricing, you might pay around \$0.0004 per thousand GET requests. It’s essential to consider these costs as part of your overall budget for hosting your static website on AWS.
 
-![The image illustrates a pricing model for cloud services, showing costs per gigabyte for storage and egress, and per request, with icons representing storage and cloud services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866084/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting/cloud-services-pricing-model-diagram.jpg)
+![The image illustrates a pricing model for cloud services, showing costs per gigabyte for storage and egress, and per request, with icons representing storage and cloud services.](https://kodekloud.com/kk-media/image/upload/v1752866084/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting/cloud-services-pricing-model-diagram.jpg)
 
 ## Accessing Your Static Website
 
@@ -52,7 +52,7 @@ Replace "bucketname" with your actual S3 bucket name and "\<region-name>" with t
 
 If you prefer to use a custom domain, you can integrate Amazon Route 53 with your S3 bucket to map your domain (for example, [http://bestcars.com](http://bestcars.com)) directly to your hosted site.
 
-![The image illustrates a process involving a custom domain name, showing a user, a Route 53 icon, a URL (http://bestcars.com), and a server, indicating a flow from the user to the server.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866084/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting/custom-domain-process-user-server.jpg)
+![The image illustrates a process involving a custom domain name, showing a user, a Route 53 icon, a URL (http://bestcars.com), and a server, indicating a flow from the user to the server.](https://kodekloud.com/kk-media/image/upload/v1752866084/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting/custom-domain-process-user-server.jpg)
 
 ## Summary
 
@@ -68,7 +68,7 @@ If you prefer to use a custom domain, you can integrate Amazon Route 53 with you
 
 * **Custom Domain Setup**: To use your own domain (e.g., example.com), ensure your S3 bucket's name matches your domain name exactly.
 
-![The image is a summary slide about using S3 for hosting static websites, highlighting key points such as limitations with server-side logic, cost considerations, URL access, and custom domain requirements.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866085/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting/s3-static-website-hosting-summary.jpg)
+![The image is a summary slide about using S3 for hosting static websites, highlighting key points such as limitations with server-side logic, cost considerations, URL access, and custom domain requirements.](https://kodekloud.com/kk-media/image/upload/v1752866085/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Static-Website-Hosting/s3-static-website-hosting-summary.jpg)
 
 In summary, Amazon S3 static website hosting provides a cost-effective and scalable solution for serving static content. By understanding its configuration options, pricing models, and domain requirements, you can efficiently host and manage your static website on AWS.
 

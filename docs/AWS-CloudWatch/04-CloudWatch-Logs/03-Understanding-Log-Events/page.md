@@ -6,7 +6,7 @@ This article explains log events in AWS CloudWatch Logs, covering their structur
 
 When your application performs an action—such as a user login or a data update—it generates a **log event**, capturing metadata and a message about that action. AWS CloudWatch Logs ingests millions of log events per second by organizing them into **log streams**, which are then grouped under **log groups**.
 
-![The image is a diagram explaining the flow of log events in Amazon CloudWatch Logs, showing how log events are organized into log streams and grouped under a log group.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862467/notes-assets/images/AWS-CloudWatch-Understanding-Log-Events/cloudwatch-logs-event-flow-diagram.jpg)
+![The image is a diagram explaining the flow of log events in Amazon CloudWatch Logs, showing how log events are organized into log streams and grouped under a log group.](https://kodekloud.com/kk-media/image/upload/v1752862467/notes-assets/images/AWS-CloudWatch-Understanding-Log-Events/cloudwatch-logs-event-flow-diagram.jpg)
 
 A **log group** is a container for one or more **log streams**. Each log stream represents an ordered sequence of log events from the same source—for example, an EC2 instance, Lambda function, or on-premises server.
 
@@ -53,7 +53,7 @@ CloudWatch Logs supports both structured and unstructured log data:
 
 Once ingested, log events in CloudWatch Logs are **immutable**—you cannot alter or delete individual records. To remove data, you must delete the entire log stream or log group.
 
-![The image explains log events, showing a log stream with icons and a section on immutable log events, highlighting their immutability, inability to be deleted or modified, and ensuring data integrity.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862468/notes-assets/images/AWS-CloudWatch-Understanding-Log-Events/log-events-immutable-data-integrity.jpg)
+![The image explains log events, showing a log stream with icons and a section on immutable log events, highlighting their immutability, inability to be deleted or modified, and ensuring data integrity.](https://kodekloud.com/kk-media/image/upload/v1752862468/notes-assets/images/AWS-CloudWatch-Understanding-Log-Events/log-events-immutable-data-integrity.jpg)
 
 > **triangle-alert** Immutable logs ensure data integrity and compliance. Plan your retention policies carefully: removing sensitive data requires deleting the whole stream or group.
 
@@ -63,7 +63,7 @@ Once ingested, log events in CloudWatch Logs are **immutable**—you cannot alte
 
 To reduce costs and enhance signal-to-noise in your logs, apply **pre-ingestion filtering**. This lets you filter, transform, or drop unwanted log data on the client side before sending to CloudWatch Logs.
 
-![The image illustrates the concept of understanding log events, showing a log stream with icons representing logs and a section on pre-ingestion filtering, which includes filtering and processing log data on the client side before sending to CloudWatch Logs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862469/notes-assets/images/AWS-CloudWatch-Understanding-Log-Events/log-events-pre-ingestion-filtering-diagram.jpg)
+![The image illustrates the concept of understanding log events, showing a log stream with icons representing logs and a section on pre-ingestion filtering, which includes filtering and processing log data on the client side before sending to CloudWatch Logs.](https://kodekloud.com/kk-media/image/upload/v1752862469/notes-assets/images/AWS-CloudWatch-Understanding-Log-Events/log-events-pre-ingestion-filtering-diagram.jpg)
 
 Key benefits of pre-ingestion filtering:
 

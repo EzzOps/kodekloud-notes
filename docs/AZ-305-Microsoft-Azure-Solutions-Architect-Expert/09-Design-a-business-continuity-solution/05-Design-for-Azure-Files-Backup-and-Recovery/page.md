@@ -12,7 +12,7 @@ Snapshots in Azure are incremental, storing only the changes (delta) from the pr
 
 Backup policies further enhance data protection by automating the backup process. These policies allow you to schedule regular backups of your Azure File Share to the Recovery Services vault by associating specific backup schedules and retention periods.
 
-![The image is an informational graphic about Azure files backup and recovery, explaining the use of share snapshots and their features. It includes a screenshot of a backup configuration interface on a computer monitor.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866810/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Files-Backup-and-Recovery/azure-files-backup-recovery-graphic.jpg)
+![The image is an informational graphic about Azure files backup and recovery, explaining the use of share snapshots and their features. It includes a screenshot of a backup configuration interface on a computer monitor.](https://kodekloud.com/kk-media/image/upload/v1752866810/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Files-Backup-and-Recovery/azure-files-backup-recovery-graphic.jpg)
 
 In this guide, we will walk through the process of taking a snapshot and configuring a backup policy using the Azure Portal.
 
@@ -26,13 +26,13 @@ After uploading files, create a snapshot by following these steps:
 
 * Click the **Snapshot** option. If manual snapshots already exist, you may see them listed here. You can delete any unwanted snapshots if necessary.
 
-![The image shows a Microsoft Azure portal interface displaying a list of file share snapshots for "kodekloud," with options to add, refresh, or delete snapshots. A notification indicates that file share snapshots are being deleted.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866811/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Files-Backup-and-Recovery/azure-portal-file-share-snapshots.jpg)
+![The image shows a Microsoft Azure portal interface displaying a list of file share snapshots for "kodekloud," with options to add, refresh, or delete snapshots. A notification indicates that file share snapshots are being deleted.](https://kodekloud.com/kk-media/image/upload/v1752866811/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Files-Backup-and-Recovery/azure-portal-file-share-snapshots.jpg)
 
 4. Create a new snapshot. Once it is created, inspect its contents to confirm that all files and folders have been captured.
 5. For a recovery test, delete some files from the current file share. For instance, if you delete two CSV files while retaining a JSON file and an error CSV file, the snapshot will still preserve the deleted CSV files.
 6. Return to the snapshots list, open the most recent snapshot, and select the **Restore** option. During restoration, you can choose to overwrite the original file or restore it as a copy. If the original file is missing, restoring it with the same name is appropriate.
 
-![The image shows a Microsoft Azure portal interface with a file share snapshot named "kodekloud" and a dialog box for restoring a CSV file, offering options to restore as a copy or overwrite the original file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866813/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Files-Backup-and-Recovery/azure-portal-file-share-snapshot.jpg)
+![The image shows a Microsoft Azure portal interface with a file share snapshot named "kodekloud" and a dialog box for restoring a CSV file, offering options to restore as a copy or overwrite the original file.](https://kodekloud.com/kk-media/image/upload/v1752866813/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Files-Backup-and-Recovery/azure-portal-file-share-snapshot.jpg)
 
 7. After restoration, the file will reappear in the file share.
 
@@ -44,7 +44,7 @@ While manual snapshots are effective, automating backups ensures that your file 
 2. Choose a backup policy that meets your requirements. Editing the policy allows you to specify the backup schedule (for example, daily at a designated time) and the retention period.
 3. Enable the backup for the file share. Once configured, the file share will automatically be backed up according to the defined schedule, ensuring you always have an up-to-date snapshot available for recovery.
 
-![The image shows a Microsoft Azure interface for setting up a backup for file shares, with options to select a recovery services vault and backup policy. The backup frequency is set to daily at 7:30 PM UTC, with a retention period of 30 days.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866814/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Files-Backup-and-Recovery/azure-backup-file-shares-setup.jpg)
+![The image shows a Microsoft Azure interface for setting up a backup for file shares, with options to select a recovery services vault and backup policy. The backup frequency is set to daily at 7:30 PM UTC, with a retention period of 30 days.](https://kodekloud.com/kk-media/image/upload/v1752866814/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-Files-Backup-and-Recovery/azure-backup-file-shares-setup.jpg)
 
 ## Next Steps
 

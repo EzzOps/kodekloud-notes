@@ -15,13 +15,13 @@ Azure Pipelines supports four primary trigger types:
 | Scheduled    | Run pipelines at defined times (nightly, weekly) | `schedules`  |
 | Manual       | Launch pipelines on demand via UI or CLI         | N/A          |
 
-![The image shows four types of triggers: Continuous Integration (CI) triggers, Pull Request (PR) triggers, Scheduled triggers, and Manual triggers, each represented with a distinct color and icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867883/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Pipeline-triggers/triggers-ci-pr-scheduled-manual.jpg)
+![The image shows four types of triggers: Continuous Integration (CI) triggers, Pull Request (PR) triggers, Scheduled triggers, and Manual triggers, each represented with a distinct color and icon.](https://kodekloud.com/kk-media/image/upload/v1752867883/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Pipeline-triggers/triggers-ci-pr-scheduled-manual.jpg)
 
 ## Continuous Integration (CI) Triggers
 
 Continuous Integration (CI) triggers automatically queue a pipeline run whenever new commits are pushed to selected branches. This immediate feedback loop helps catch build failures or integration errors early.
 
-![The image illustrates a Continuous Integration (CI) trigger process, showing a flow from "Code" to "Repository" with an automatic build initiation when code is pushed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867884/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Pipeline-triggers/ci-trigger-process-code-repository.jpg)
+![The image illustrates a Continuous Integration (CI) trigger process, showing a flow from "Code" to "Repository" with an automatic build initiation when code is pushed.](https://kodekloud.com/kk-media/image/upload/v1752867884/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Pipeline-triggers/ci-trigger-process-code-repository.jpg)
 
 In YAML pipelines, enable CI by defining the `trigger` section:
 
@@ -46,7 +46,7 @@ trigger:
 
 Scheduled triggers run pipelines at specified intervals or cron schedules—ideal for nightly builds, periodic tests, or routine deployments.
 
-![The image shows a screenshot of a scheduled trigger setup in a classic pipeline, with options to enable the trigger and set specific days and times for release. It includes a section for adding artifacts and setting a new schedule time.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867885/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Pipeline-triggers/scheduled-trigger-setup-classic-pipeline.jpg)
+![The image shows a screenshot of a scheduled trigger setup in a classic pipeline, with options to enable the trigger and set specific days and times for release. It includes a section for adding artifacts and setting a new schedule time.](https://kodekloud.com/kk-media/image/upload/v1752867885/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Pipeline-triggers/scheduled-trigger-setup-classic-pipeline.jpg)
 
 To disable CI and add a schedule in YAML:
 
@@ -71,7 +71,7 @@ schedules:
 
 PR triggers automatically validate code changes when a pull request is opened or updated. This enforces quality gates before merging to protected branches.
 
-![The image illustrates a "Pull Request (PR) Triggers" concept, showing a CI/CD pipeline that automatically starts when a pull request is created or updated.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867886/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Pipeline-triggers/pull-request-triggers-cicd-pipeline.jpg)
+![The image illustrates a "Pull Request (PR) Triggers" concept, showing a CI/CD pipeline that automatically starts when a pull request is created or updated.](https://kodekloud.com/kk-media/image/upload/v1752867886/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Pipeline-triggers/pull-request-triggers-cicd-pipeline.jpg)
 
 Example YAML configuration:
 
@@ -95,7 +95,7 @@ pr:
 
 Manual triggers allow teams to start pipelines on demand for production rollouts, hotfix deployments, or ad hoc testing.
 
-![The image shows two use cases for manual triggers: "On-Demand deployments" and "Manual approvals," each represented with a colorful card and an icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867886/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Pipeline-triggers/manual-triggers-use-cases-deployments-approvals.jpg)
+![The image shows two use cases for manual triggers: "On-Demand deployments" and "Manual approvals," each represented with a colorful card and an icon.](https://kodekloud.com/kk-media/image/upload/v1752867886/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Pipeline-triggers/manual-triggers-use-cases-deployments-approvals.jpg)
 
 You can invoke a manual run via:
 
@@ -121,7 +121,7 @@ Adopt these recommendations to keep your pipelines efficient and reliable:
 * Implement manual approvals for production or compliance-sensitive deployments.
 * Regularly review and clean up stale schedules or branch patterns.
 
-![The image lists best practices for using triggers, including being selective with branches, using conditions to control pipeline execution, and incorporating manual approvals for sensitive environments.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867888/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Pipeline-triggers/best-practices-triggers-pipeline-approval.jpg)
+![The image lists best practices for using triggers, including being selective with branches, using conditions to control pipeline execution, and incorporating manual approvals for sensitive environments.](https://kodekloud.com/kk-media/image/upload/v1752867888/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Pipeline-triggers/best-practices-triggers-pipeline-approval.jpg)
 
 ## References
 

@@ -6,9 +6,7 @@ Explains how to run Node unit tests in GitHub Actions and upload JUnit XML test 
 
 This lesson shows how to upload unit test results from a CI job in GitHub Actions. We walk through a compact, production-ready GitHub Actions workflow that runs Node.js unit tests (Mocha/Jest) and uploads the JUnit-style XML output as an artifact. We also show an equivalent Jenkins declarative pipeline snippet and explain the key inputs for the `actions/upload-artifact@v4` action.
 
-<Callout icon="lightbulb">
-  Use artifact uploads to preserve test outputs (JUnit XML, coverage reports, screenshots) for later inspection, release pipelines, or when adding richer PR annotations with a test-reporting action.
-</Callout>
+> **lightbulb** Use artifact uploads to preserve test outputs (JUnit XML, coverage reports, screenshots) for later inspection, release pipelines, or when adding richer PR annotations with a test-reporting action.
 
 ## Why upload test results as artifacts?
 
@@ -17,9 +15,7 @@ This lesson shows how to upload unit test results from a CI job in GitHub Action
 * Enables downstream workflows or release jobs to consume test output.
 * Works well with parsers that convert JUnit/Jest XML into GitHub annotations or PR test summaries.
 
-<Callout icon="warning">
-  Never commit secrets (e.g., full connection strings with credentials) into source control. Use GitHub `secrets` or `vars` as shown in the examples below.
-</Callout>
+> **warning** Never commit secrets (e.g., full connection strings with credentials) into source control. Use GitHub `secrets` or `vars` as shown in the examples below.
 
 ## GitHub Actions: Solar System CI (unit-testing + upload artifact)
 
@@ -116,9 +112,7 @@ pipeline {
 }
 ```
 
-<Callout icon="lightbulb">
-  When migrating from Jenkins, keep the same test command and JUnit output filename to minimize changes: your GitHub Actions job can reuse the same reporting files as Jenkins did.
-</Callout>
+> **lightbulb** When migrating from Jenkins, keep the same test command and JUnit output filename to minimize changes: your GitHub Actions job can reuse the same reporting files as Jenkins did.
 
 ## actions/upload-artifact\@v4 — key inputs and behavior
 
@@ -201,6 +195,4 @@ You can also run it manually from the Actions UI using `workflow_dispatch`.
 
 That's all for this lesson — you now have a compact CI job that runs Node unit tests and preserves JUnit-style results as downloadable artifacts.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/f63e67f3-f04a-474f-87b9-ae17930e9e67/lesson/a9fa17c6-7019-4e6b-a6ba-aced1554f1bd" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/f63e67f3-f04a-474f-87b9-ae17930e9e67/lesson/a9fa17c6-7019-4e6b-a6ba-aced1554f1bd)

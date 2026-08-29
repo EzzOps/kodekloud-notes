@@ -198,7 +198,7 @@ Some users might consider consolidating all object definitions in a single YAML 
 
 Enter Helm—a tool designed specifically to address these challenges. Helm is often referred to as the package manager for Kubernetes because it treats a collection of interrelated objects (like PV, Deployment, Secret, and Service) as one cohesive package.
 
-![The image is a diagram illustrating a Helm deployment setup, featuring components like Service, Deployment, Secret, PVC, and PV, with a WordPress logo.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878965/notes-assets/images/Helm-for-Beginners-What-is-Helm/helm-deployment-setup-diagram.jpg)
+![The image is a diagram illustrating a Helm deployment setup, featuring components like Service, Deployment, Secret, PVC, and PV, with a WordPress logo.](https://kodekloud.com/kk-media/image/upload/v1752878965/notes-assets/images/Helm-for-Beginners-What-is-Helm/helm-deployment-setup-diagram.jpg)
 
 With Helm, you only need to specify the package (for example, your WordPress app package) and Helm will automatically identify and modify the necessary objects—no matter how many there are.
 

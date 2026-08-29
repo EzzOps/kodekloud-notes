@@ -26,11 +26,11 @@ At a minimum, every log entry should include:
 
 The Go standard library includes a basic log package. While it does not offer multiple log levels (like debug, warn, or error), it provides the essentials needed for a simple logging strategy—especially useful during local development when quick feedback is preferred over complex, structured logging.
 
-![The image is a slide discussing the Go programming language's built-in log package, highlighting its basic logging features and suitability for local development.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868728/notes-assets/images/Advanced-Golang-Logging/go-log-package-features-slide.jpg)
+![The image is a slide discussing the Go programming language's built-in log package, highlighting its basic logging features and suitability for local development.](https://kodekloud.com/kk-media/image/upload/v1752868728/notes-assets/images/Advanced-Golang-Logging/go-log-package-features-slide.jpg)
 
 For advanced logging requirements, consider adopting a framework that standardizes log data. This approach simplifies reading, aggregating, and analyzing logs, especially when consolidating data from multiple sources.
 
-![The image is a slide discussing logging frameworks, highlighting their role in standardizing log data and making it easier to read and understand.](../../../../images/kodekloud.com/kk-media/image/upload/v1752868729/notes-assets/images/Advanced-Golang-Logging/logging-frameworks-standardizing-log-data.jpg)
+![The image is a slide discussing logging frameworks, highlighting their role in standardizing log data and making it easier to read and understand.](https://kodekloud.com/kk-media/image/upload/v1752868729/notes-assets/images/Advanced-Golang-Logging/logging-frameworks-standardizing-log-data.jpg)
 
 Two popular logging frameworks used in [Golang](https://learn.kodekloud.com/user/courses/golang) are GLog and Logrus. This article focuses on Logrus, a well-maintained package used in projects like Docker.
 

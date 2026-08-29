@@ -22,7 +22,7 @@ User flows are essential for defining how users sign in and manage their profile
 
 Azure AD B2C supports a broad range of identity providers, including Amazon, Facebook, Google, and Microsoft. When architecting your application, select the identity providers that best serve your audience's needs.
 
-![The image is an infographic from KodeKloud outlining best practices for Azure AD B2C, including creating user flows, choosing identity providers, customizing user experience, adding attributes, and third-party verification.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867198/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-AD-B2C/azure-ad-b2c-best-practices-infographic.jpg)
+![The image is an infographic from KodeKloud outlining best practices for Azure AD B2C, including creating user flows, choosing identity providers, customizing user experience, adding attributes, and third-party verification.](https://kodekloud.com/kk-media/image/upload/v1752867198/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-AD-B2C/azure-ad-b2c-best-practices-infographic.jpg)
 
 ### Customize User Experience
 
@@ -47,7 +47,7 @@ The following comparison highlights the key differences between Azure AD B2B and
 | Directory Structure    | Employees and guest users share the same directory        | Customer accounts are isolated to ensure privacy   |
 | Social Sign-In Support | Limited or not applicable                                 | Enables seamless sign-ins through social providers |
 
-![The image is a comparison between B2B and B2C models in Azure AD, highlighting differences in user management, interaction, and customization. It includes bullet points detailing specific features of each model.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867199/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-AD-B2C/b2b-b2c-azure-ad-comparison.jpg)
+![The image is a comparison between B2B and B2C models in Azure AD, highlighting differences in user management, interaction, and customization. It includes bullet points detailing specific features of each model.](https://kodekloud.com/kk-media/image/upload/v1752867199/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Azure-AD-B2C/b2b-b2c-azure-ad-comparison.jpg)
 
 ### Interactions Between Users
 

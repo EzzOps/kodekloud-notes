@@ -60,9 +60,7 @@ spec:
     clusterScope: true
 ```
 
-<Callout icon="lightbulb">
-  When referencing cluster-scoped templates (ClusterWorkflowTemplate), always set clusterScope: true in templateRef or workflowTemplateRef. ClusterWorkflowTemplates are not namespaced, so this flag tells Argo the reference is to a cluster-level resource.
-</Callout>
+> **lightbulb** When referencing cluster-scoped templates (ClusterWorkflowTemplate), always set clusterScope: true in templateRef or workflowTemplateRef. ClusterWorkflowTemplates are not namespaced, so this flag tells Argo the reference is to a cluster-level resource.
 
 ## Quick comparison
 
@@ -79,9 +77,7 @@ spec:
 * [Kubernetes API Concepts](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/)
 * [Argo Workflows Templates Reference](https://argoproj.github.io/argo-workflows/workflow-templates/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/a1959e6c-b723-4274-8009-79ea570a924c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/44223b5d-ccc3-4dcb-8292-66036e2ea023/lesson/a1959e6c-b723-4274-8009-79ea570a924c)
 
 
 # Course Overview
@@ -100,9 +96,7 @@ Why this course matters:
 * GitOps is now a core pattern for scalable, auditable deployments.
 * This course emphasizes labs and practice so you can learn by doing and recover from mistakes confidently.
 
-<Callout icon="lightbulb">
-  This course is lab-focused. Expect guided exercises, break/fix scenarios, and mock exams designed to mirror real certification tasks.
-</Callout>
+> **lightbulb** This course is lab-focused. Expect guided exercises, break/fix scenarios, and mock exams designed to mirror real certification tasks.
 
 Course modules at a glance:
 
@@ -172,9 +166,7 @@ kubectl apply -n argo -f "https://github.com/argoproj/argo-workflows/releases/do
 argo submit -n argo --watch https://raw.githubusercontent.com/argoproj/argo-workflows/master/examples/hello-world.yaml
 ```
 
-<Callout icon="lightbulb">
-  Replace ARGO\_WORKFLOWS\_VERSION with the release tag you want to install (for example, "v3.4.8"). The sample `hello-world.yaml` run demonstrates a basic workflow submission and live watch.
-</Callout>
+> **lightbulb** Replace ARGO\_WORKFLOWS\_VERSION with the release tag you want to install (for example, "v3.4.8"). The sample `hello-world.yaml` run demonstrates a basic workflow submission and live watch.
 
 <Frame>
   <img alt="A presentation slide titled &#x22;Argo Workflows for Data Processing&#x22; showing feature cards for Orchestration, Dependencies, Scaling, and a fourth item describing what Argo handles. A small circular video thumbnail of a presenter appears in the bottom-right corner." />
@@ -245,6 +237,4 @@ Links and references
 * [Helm](https://helm.sh/)
 * [Prometheus](https://prometheus.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/c88c4a06-cdc7-4152-b2aa-a1fb02589846/lesson/37456d07-6b5b-4b45-a5cf-654fbe881941" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/certified-argo-project-associate-capa/module/c88c4a06-cdc7-4152-b2aa-a1fb02589846/lesson/37456d07-6b5b-4b45-a5cf-654fbe881941)

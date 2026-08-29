@@ -81,13 +81,9 @@ When to choose `batch`:
 * Workloads that can tolerate increased concurrency and API calls.
 * Bulk processing where responses do not depend on each other.
 
-<Callout icon="lightbulb">
-  Streaming improves perceived responsiveness and enables typing-style UIs. Confirm your LLM client supports streaming and remember that chunks may contain partial words or tokens — plan to reassemble or display incremental content safely.
-</Callout>
+> **lightbulb** Streaming improves perceived responsiveness and enables typing-style UIs. Confirm your LLM client supports streaming and remember that chunks may contain partial words or tokens — plan to reassemble or display incremental content safely.
 
-<Callout icon="warning">
-  Batch/parallel execution increases concurrency and API usage. Monitor rate limits, quotas, and cost when using batch mode, and apply throttling or retries as needed.
-</Callout>
+> **warning** Batch/parallel execution increases concurrency and API usage. Monitor rate limits, quotas, and cost when using batch mode, and apply throttling or retries as needed.
 
 ## Quick comparison
 
@@ -109,9 +105,7 @@ When to choose `batch`:
 * [OpenAI API — Responses & Streaming](https://platform.openai.com/docs/guides/response-streaming)
 * [LangChain — Chat Models & Streaming Patterns](https://github.com/langchain-ai/langchain)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/73409062-5bca-4e9b-86cf-48d797f1050b" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/754457c5-1386-422b-98ad-3342dfc6aab3/lesson/73409062-5bca-4e9b-86cf-48d797f1050b)
 
 
 # LCEL Demo 3

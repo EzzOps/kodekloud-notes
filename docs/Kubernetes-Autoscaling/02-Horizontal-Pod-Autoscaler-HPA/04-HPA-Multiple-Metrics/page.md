@@ -89,9 +89,7 @@ When NOT to use multiple metrics
   <img alt="A presentation slide titled &#x22;Using Multiple Metrics for Scaling – When to Avoid&#x22; showing three colored columns—Non-Correlated Metrics, Complex Adapters Metrics, and Different Sampling Rates—with icons and bullet points describing when not to use multiple metrics. The slide also includes a small © Copyright KodeKloud notice." />
 </Frame>
 
-<Callout icon="lightbulb">
-  Ensure your cluster has a working metrics pipeline (`metrics-server`) and a compatible adapter (for example, the Prometheus Adapter) before relying on custom metrics for HPA. Verify sampling intervals, metric names, and scope (pods vs. external) to avoid surprising behavior.
-</Callout>
+> **lightbulb** Ensure your cluster has a working metrics pipeline (`metrics-server`) and a compatible adapter (for example, the Prometheus Adapter) before relying on custom metrics for HPA. Verify sampling intervals, metric names, and scope (pods vs. external) to avoid surprising behavior.
 
 Best practices
 
@@ -112,8 +110,6 @@ Links and references
 
 We will get hands-on with this setup so you can see it in action.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/37304e76-3ec9-447e-ba1c-ace3bf95d336" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/37304e76-3ec9-447e-ba1c-ace3bf95d336)
 
-  <Card title="Practice Lab" icon="flask-conical" href="https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/7582ead6-af77-4e82-bf0d-7c12b99adf4a" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-autoscaling/module/245fe895-fa01-4adf-b796-ce7f28666043/lesson/7582ead6-af77-4e82-bf0d-7c12b99adf4a)

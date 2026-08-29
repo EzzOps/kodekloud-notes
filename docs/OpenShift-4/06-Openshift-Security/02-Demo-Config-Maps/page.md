@@ -81,9 +81,7 @@ spec:
               key: MONGODB_ADMIN_PASSWORD
 ```
 
-<Callout icon="triangle-alert">
-  The environment variable `MONGODB_ADMIN_PASSWORD` references a key that is not defined in the provided ConfigMap. Ensure that this key is added to the ConfigMap, or consider using a Secret to handle sensitive data and prevent runtime errors.
-</Callout>
+> **triangle-alert** The environment variable `MONGODB_ADMIN_PASSWORD` references a key that is not defined in the provided ConfigMap. Ensure that this key is added to the ConfigMap, or consider using a Secret to handle sensitive data and prevent runtime errors.
 
 Before deploying the Deployment, confirm that the ConfigMap is successfully applied in the cluster.
 
@@ -133,9 +131,7 @@ After deploying, refresh the cluster view. You might observe that although the D
 
 If you encounter errors related to the ConfigMap, inspect your Deployment file in VS Code and review the OpenShift console for additional error details. An example screenshot from the OpenShift console illustrating the error is shown below:
 
-<Frame>
-  ![The image shows a Red Hat OpenShift console displaying details of a pod named "carts-db-67d8869bbf-lxwrx" with a "CreateContainerConfigError" and events related to a missing config map.](../../../../images/kodekloud.com/kk-media/image/upload/v1752882717/notes-assets/images/OpenShift-4-Demo-Config-Maps/openshift-console-pod-createcontainerconfigerror.jpg)
-</Frame>
+![The image shows a Red Hat OpenShift console displaying details of a pod named "carts-db-67d8869bbf-lxwrx" with a "CreateContainerConfigError" and events related to a missing config map.](https://kodekloud.com/kk-media/image/upload/v1752882717/notes-assets/images/OpenShift-4-Demo-Config-Maps/openshift-console-pod-createcontainerconfigerror.jpg)
 
 To resolve the misconfiguration, delete the problematic Deployment using:
 
@@ -197,6 +193,4 @@ This demonstration showcased how to use a ConfigMap to inject environment variab
 
 By confirming that the ConfigMap is properly deployed before applying the Deployment, you can avoid runtime configuration errors and ensure a smooth deployment process.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/4b17b12d-e0d3-44b8-ba95-b05c1f11133c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/openshift-4/module/413252bb-7455-41fa-86eb-e3e9370c8f08/lesson/4b17b12d-e0d3-44b8-ba95-b05c1f11133c)

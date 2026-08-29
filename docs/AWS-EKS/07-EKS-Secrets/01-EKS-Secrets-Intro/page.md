@@ -14,7 +14,7 @@ A **Secret** follows nearly the same API as a ConfigMap but is designed for sens
 
 Here’s a quick visual comparison:
 
-![The image shows icons representing a Kubernetes Secret and a Config Map, with labels and a checkmark on the left icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862812/notes-assets/images/AWS-EKS-EKS-Secrets-Intro/kubernetes-secret-config-map-icons.jpg)
+![The image shows icons representing a Kubernetes Secret and a Config Map, with labels and a checkmark on the left icon.](https://kodekloud.com/kk-media/image/upload/v1752862812/notes-assets/images/AWS-EKS-EKS-Secrets-Intro/kubernetes-secret-config-map-icons.jpg)
 
 ## Secret vs. ConfigMap: Feature Comparison
 
@@ -42,7 +42,7 @@ This flexibility ensures your applications always read the latest values.
 
 By default, Kubernetes stores Secret data in etcd after applying only base64 encoding. Base64 is an encoding mechanism, **not** encryption. Anyone with API read access can decode it back to plain text.
 
-![The image is a diagram titled "Kubernetes Secret" showing a circle labeled "base 64" with the text "Base 64 Encoded Data" below it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862813/notes-assets/images/AWS-EKS-EKS-Secrets-Intro/kubernetes-secret-base64-encoded-diagram.jpg)
+![The image is a diagram titled "Kubernetes Secret" showing a circle labeled "base 64" with the text "Base 64 Encoded Data" below it.](https://kodekloud.com/kk-media/image/upload/v1752862813/notes-assets/images/AWS-EKS-EKS-Secrets-Intro/kubernetes-secret-base64-encoded-diagram.jpg)
 
 Key considerations:
 
@@ -63,7 +63,7 @@ Even though base64 encoding isn’t encryption, you can limit who reads Secrets 
 2. **RBAC Policies**\
    Grant minimal permissions so service accounts or users in one namespace cannot access Secrets in another.
 
-![The image illustrates a Kubernetes Secret setup with namespaces and RBAC (Role-Based Access Control), showing a user accessing secrets in two different namespaces.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862814/notes-assets/images/AWS-EKS-EKS-Secrets-Intro/kubernetes-secret-setup-rbac-namespaces.jpg)
+![The image illustrates a Kubernetes Secret setup with namespaces and RBAC (Role-Based Access Control), showing a user accessing secrets in two different namespaces.](https://kodekloud.com/kk-media/image/upload/v1752862814/notes-assets/images/AWS-EKS-EKS-Secrets-Intro/kubernetes-secret-setup-rbac-namespaces.jpg)
 
 > **lightbulb** Namespaces and RBAC scoping help restrict access, but they do **not** encrypt data at rest or in transit.
 

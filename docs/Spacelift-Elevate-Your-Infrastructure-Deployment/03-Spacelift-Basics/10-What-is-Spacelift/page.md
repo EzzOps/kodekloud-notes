@@ -10,17 +10,13 @@ In addition to its powerful plan preview capabilities, Spacelift offers advanced
 
 If you don’t have a dedicated backend for storing your IaC state, Spacelift can handle state management seamlessly. With built-in drift detection, the platform continuously ensures that your infrastructure remains consistent with its configuration.
 
-<Callout icon="lightbulb">
-  Spacelift not only simplifies CI/CD but also provides a robust framework for managing the lifecycle of your infrastructure deployments.
-</Callout>
+> **lightbulb** Spacelift not only simplifies CI/CD but also provides a robust framework for managing the lifecycle of your infrastructure deployments.
 
 ## Core Concepts in Spacelift
 
 At the heart of Spacelift is the concept of a "stack." A stack represents the combination of your Infrastructure as Code source, the current state of your managed infrastructure (similar to a Terraform state file), and any associated environment variables or configurations. In the Spacelift UI, each repository and backend state you manage is organized as a separate stack.
 
-<Frame>
-  ![The image illustrates Spacelift concepts, showing a central "Stacks" icon connected to "Repo," "State," and "ENV Variables" components.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884083/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-What-is-Spacelift/spacelift-stacks-repo-state-env.jpg)
-</Frame>
+![The image illustrates Spacelift concepts, showing a central "Stacks" icon connected to "Repo," "State," and "ENV Variables" components.](https://kodekloud.com/kk-media/image/upload/v1752884083/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-What-is-Spacelift/spacelift-stacks-repo-state-env.jpg)
 
 ## Policy Management with Spacelift
 
@@ -32,14 +28,8 @@ Spacelift leverages the Open Policy Agent (OPA) to enable you to write policies 
 
 For more detailed information on Spacelift policies, please refer to the official Spacelift documentation.
 
-<Frame>
-  ![The image is a slide describing how Spacelift uses Open Policy Agent (OPA) to write policies as code, detailing various aspects like login, access, approval, and notifications.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884084/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-What-is-Spacelift/spacelift-opa-policies-as-code.jpg)
-</Frame>
+![The image is a slide describing how Spacelift uses Open Policy Agent (OPA) to write policies as code, detailing various aspects like login, access, approval, and notifications.](https://kodekloud.com/kk-media/image/upload/v1752884084/notes-assets/images/Spacelift-Elevate-Your-Infrastructure-Deployment-What-is-Spacelift/spacelift-opa-policies-as-code.jpg)
 
-<Callout icon="lightbulb">
-  For further details on how to implement and customize policies in Spacelift, check out the [Spacelift Documentation](https://spacelift.io/docs).
-</Callout>
+> **lightbulb** For further details on how to implement and customize policies in Spacelift, check out the [Spacelift Documentation](https://spacelift.io/docs).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/74dbb4df-716f-4fa2-92e9-a223a3a697ca/lesson/6a055f27-2d48-4c0b-87dc-2c65b3063097" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/spacelift-elevate-your-infrastructure-deployment/module/74dbb4df-716f-4fa2-92e9-a223a3a697ca/lesson/6a055f27-2d48-4c0b-87dc-2c65b3063097)

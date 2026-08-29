@@ -3,9 +3,7 @@ prompt = chat_prompt.format_prompt(text="LangChain connects components to build 
 messages = prompt.to_messages()  # messages can be sent to a ChatModel/LLM
 ```
 
-<Callout icon="lightbulb">
-  Use prompt templates to keep prompts consistent, enforce style or constraints, and share reusable patterns across your application or organization.
-</Callout>
+> **lightbulb** Use prompt templates to keep prompts consistent, enforce style or constraints, and share reusable patterns across your application or organization.
 
 ## Prompt template types and common uses
 
@@ -37,9 +35,7 @@ messages = prompt.to_messages()  # messages can be sent to a ChatModel/LLM
 
 Next, we’ll walk through demos showing how to construct these prompt templates and use them inside chains.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/4c4472e9-fd82-4691-860a-55d9fad2f7f5" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/langchain/module/ae260750-791b-496c-991f-0d0333f61e40/lesson/4c4472e9-fd82-4691-860a-55d9fad2f7f5)
 
 
 # Setting up Environment
@@ -75,9 +71,7 @@ Before you begin, install the required Python packages and pin the package versi
 | Python packages | Install LangChain and OpenAI client     | `pip install langchain==0.1.10 openai==1.13.3` |
 | OpenAI API key  | Authenticate requests to the OpenAI API | `export OPENAI_API_KEY=YOUR_OPENAI_API_KEY`    |
 
-<Callout icon="lightbulb">
-  Use the exact package versions listed to match the code and APIs in this lesson. Version mismatches are a common source of errors.
-</Callout>
+> **lightbulb** Use the exact package versions listed to match the code and APIs in this lesson. Version mismatches are a common source of errors.
 
 Install and configure
 
@@ -90,9 +84,7 @@ export OPENAI_API_KEY=YOUR_OPENAI_API_KEY
 
 Security best practices
 
-<Callout icon="warning">
-  Never commit API keys to source control. Store secrets in environment variables or a secrets manager. If you use a `.env` file during development, load it securely (for example with `python-dotenv`) and ensure the file is excluded from version control.
-</Callout>
+> **warning** Never commit API keys to source control. Store secrets in environment variables or a secrets manager. If you use a `.env` file during development, load it securely (for example with `python-dotenv`) and ensure the file is excluded from version control.
 
 Verify your environment
 

@@ -20,9 +20,7 @@ Notes:
 * The order of `server_name` matching: exact names, longest wildcard starting with `*`, longest wildcard ending with `*`, then regex.
 * Use `listen 443 ssl;` and certificate directives in the HTTPS server block.
 
-<Callout icon="lightbulb">
-  When you add a new domain, create a dedicated `server` block and test the config using `nginx -t` before reloading with `systemctl reload nginx` (or `nginx -s reload`).
-</Callout>
+> **lightbulb** When you add a new domain, create a dedicated `server` block and test the config using `nginx -t` before reloading with `systemctl reload nginx` (or `nginx -s reload`).
 
 ## Redirects using `return`
 
@@ -50,9 +48,7 @@ server {
 
 Use `301` for permanent redirects and `302` for temporary ones.
 
-<Callout icon="warning">
-  Avoid using `rewrite` when a simple `return` covers your use case—`return` is easier to read and slightly more efficient.
-</Callout>
+> **warning** Avoid using `rewrite` when a simple `return` covers your use case—`return` is easier to read and slightly more efficient.
 
 ## Rewriting URLs with `rewrite` and regex
 
@@ -171,9 +167,7 @@ Key points:
 * `proxy_cache_valid` sets caching durations by status code.
 * `X-Proxy-Cache` header helps verify whether a response was served from cache (`HIT`) or passed to the backend (`MISS`).
 
-<Callout icon="lightbulb">
-  Design cache keys carefully (including query strings or authentication headers when needed) and have a strategy for cache invalidation. For advanced cache purging, consider modules like `ngx_cache_purge` or manage via short TTLs and revalidation.
-</Callout>
+> **lightbulb** Design cache keys carefully (including query strings or authentication headers when needed) and have a strategy for cache invalidation. For advanced cache purging, consider modules like `ngx_cache_purge` or manage via short TTLs and revalidation.
 
 ## Final notes and best practices
 
@@ -190,9 +184,7 @@ Key points:
 
 This lesson prepares you to host multiple sites, redirect and rewrite URLs, load-balance proxied backends, and cache responses effectively using NGINX.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/4ab9e29b-b87b-47ca-b1dc-0a13b41351ed" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/4ab9e29b-b87b-47ca-b1dc-0a13b41351ed)
 
 
 # Load Balancer
@@ -205,9 +197,7 @@ A load balancer is software that distributes incoming network traffic across mul
 
 One key advantage of a load balancer is avoiding requests being forwarded to unhealthy backends. NGINX Open Source uses passive health checks by default: when a backend repeatedly fails to respond or returns errors, NGINX marks it unavailable and stops sending it new requests. Active health checks — where the load balancer proactively probes backends — are provided by NGINX Plus.
 
-<Callout icon="lightbulb">
-  NGINX Open Source performs passive health checks by default (it detects failures from error responses/timeouts). Active health checks that periodically probe backends are available in NGINX Plus.
-</Callout>
+> **lightbulb** NGINX Open Source performs passive health checks by default (it detects failures from error responses/timeouts). Active health checks that periodically probe backends are available in NGINX Plus.
 
 <Frame>
   <img alt="A diagram titled &#x22;Load Balancing With Nginx&#x22; showing clients connecting through a network cloud to an NGINX load balancer that distributes traffic to multiple web servers. Health checks are illustrated, with one server marked as unhealthy." />
@@ -339,9 +329,7 @@ server {
 
 The `least_time` algorithm selects the backend with the lowest recent response time. Options like `last_byte` or `header` control whether NGINX measures time until the last response byte or until the first byte, respectively. This method is available in NGINX Plus.
 
-<Callout icon="warning">
-  The `least_time` balancing method (and active health checks) are available in NGINX Plus — the commercial edition.
-</Callout>
+> **warning** The `least_time` balancing method (and active health checks) are available in NGINX Plus — the commercial edition.
 
 ```nginx theme={null}
 upstream backend {
@@ -393,6 +381,4 @@ References:
 
 Now we'll implement a few of these algorithms in practice to see how they behave under load.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/4356e2fa-9121-4fb3-9d11-8b96f964df6c" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/nginx-for-beginners/module/c78ff9cb-c15d-4f85-92fc-abee5ed98b20/lesson/4356e2fa-9121-4fb3-9d11-8b96f964df6c)

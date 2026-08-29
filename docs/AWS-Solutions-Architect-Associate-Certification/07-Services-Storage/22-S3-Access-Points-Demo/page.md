@@ -12,15 +12,15 @@ In this lesson, we explore how to work with AWS S3 Access Points. You will learn
 
 Begin by creating a new bucket in the AWS S3 console and naming it "KodeKloud access point". Retain all the default settings.
 
-![The image shows the AWS S3 console interface for creating a new bucket, with options for configuring the bucket name, region, and object ownership settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866018/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points-Demo/aws-s3-console-create-bucket.jpg)
+![The image shows the AWS S3 console interface for creating a new bucket, with options for configuring the bucket name, region, and object ownership settings.](https://kodekloud.com/kk-media/image/upload/v1752866018/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points-Demo/aws-s3-console-create-bucket.jpg)
 
 After the bucket is created, upload a demo file for testing purposes.
 
-![The image shows an Amazon S3 console with a bucket named "kk-access-point" in the US East (N. Virginia) region, indicating that the bucket and objects are not public.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866019/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points-Demo/amazon-s3-console-kk-access-point.jpg)
+![The image shows an Amazon S3 console with a bucket named "kk-access-point" in the US East (N. Virginia) region, indicating that the bucket and objects are not public.](https://kodekloud.com/kk-media/image/upload/v1752866019/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points-Demo/amazon-s3-console-kk-access-point.jpg)
 
 Click the "Open" button within the bucket to view the file as the bucket owner. Next, inspect the details of the object (e.g., "beach.jpg"):
 
-![The image shows an Amazon S3 console interface displaying details of an object named "beach.jpg," including its size, type, and S3 URL.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866020/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points-Demo/amazon-s3-console-beachjpg-details.jpg)
+![The image shows an Amazon S3 console interface displaying details of an object named "beach.jpg," including its size, type, and S3 URL.](https://kodekloud.com/kk-media/image/upload/v1752866020/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points-Demo/amazon-s3-console-beachjpg-details.jpg)
 
 ***
 
@@ -34,7 +34,7 @@ To simulate different access permissions, open several browser tabs representing
 
 Verify user permissions in the AWS IAM Management Console. You’ll notice that while user one has full S3 access as the bucket owner, user two and user three have limited access (primarily to Cloud Shell) without direct S3 permissions.
 
-![The image shows an AWS Identity and Access Management (IAM) dashboard displaying a list of users with details such as last activity, MFA status, password age, and active key age.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866024/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points-Demo/aws-iam-dashboard-user-details.jpg)
+![The image shows an AWS Identity and Access Management (IAM) dashboard displaying a list of users with details such as last activity, MFA status, password age, and active key age.](https://kodekloud.com/kk-media/image/upload/v1752866024/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points-Demo/aws-iam-dashboard-user-details.jpg)
 
 Using Cloud Shell (which already includes the AWS CLI), run the following test commands. As a general user (not the bucket owner), attempting to copy the object produces a 403 Forbidden error:
 
@@ -79,15 +79,15 @@ We now create access points to delegate specific access permissions for differen
 * Choose the bucket "KodeKloud access point".
 * Enable the option to allow requests from the Internet.
 
-![The image shows an Amazon S3 console interface for creating an access point, with fields for access point name, bucket selection, AWS region, and network origin settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866027/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points-Demo/amazon-s3-access-point-interface.jpg)
+![The image shows an Amazon S3 console interface for creating an access point, with fields for access point name, bucket selection, AWS region, and network origin settings.](https://kodekloud.com/kk-media/image/upload/v1752866027/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points-Demo/amazon-s3-access-point-interface.jpg)
 
 For now, skip setting an access point policy; you can modify it later as needed.
 
-![The image shows an Amazon Web Services (AWS) console screen with settings for an S3 Access Point policy. It indicates that public access is blocked due to Block Public Access settings being enabled.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866029/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points-Demo/aws-s3-access-point-policy.jpg)
+![The image shows an Amazon Web Services (AWS) console screen with settings for an S3 Access Point policy. It indicates that public access is blocked due to Block Public Access settings being enabled.](https://kodekloud.com/kk-media/image/upload/v1752866029/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points-Demo/aws-s3-access-point-policy.jpg)
 
 After creation, the developers access point appears alongside the bucket's access points:
 
-![The image shows an Amazon S3 console page displaying access points for a bucket named "kk-access-point," with one access point named "developers" listed.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866031/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points-Demo/amazon-s3-access-points-kk.jpg)
+![The image shows an Amazon S3 console page displaying access points for a bucket named "kk-access-point," with one access point named "developers" listed.](https://kodekloud.com/kk-media/image/upload/v1752866031/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points-Demo/amazon-s3-access-points-kk.jpg)
 
 Repeat the process to create an additional access point for user three (finance team). Use open Internet access with default policy settings.
 
@@ -171,11 +171,11 @@ A sample bucket policy after replacing placeholders might appear as:
 
 After saving, the bucket now delegates management to its access points. Review the current access point settings for the bucket:
 
-![The image shows an Amazon S3 console screen with settings for a bucket named "kk-access-point," focusing on permissions and public access settings. The interface indicates that public access is blocked for the account and bucket.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866032/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points-Demo/amazon-s3-kk-access-point-settings.jpg)
+![The image shows an Amazon S3 console screen with settings for a bucket named "kk-access-point," focusing on permissions and public access settings. The interface indicates that public access is blocked for the account and bucket.](https://kodekloud.com/kk-media/image/upload/v1752866032/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points-Demo/amazon-s3-kk-access-point-settings.jpg)
 
 Switch to the "Permissions" tab for the "developers" access point:
 
-![The image shows an Amazon S3 console screen focused on the "Permissions" tab for an access point named "developers." It displays settings for blocking public access, with options to block access through access control lists and public bucket policies.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866033/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points-Demo/amazon-s3-permissions-developers.jpg)
+![The image shows an Amazon S3 console screen focused on the "Permissions" tab for an access point named "developers." It displays settings for blocking public access, with options to block access through access control lists and public bucket policies.](https://kodekloud.com/kk-media/image/upload/v1752866033/notes-assets/images/AWS-Solutions-Architect-Associate-Certification-S3-Access-Points-Demo/amazon-s3-permissions-developers.jpg)
 
 ***
 

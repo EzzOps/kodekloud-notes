@@ -17,9 +17,7 @@ Welcome to this lesson on **K8sGPT**, a CNCF Sandbox project that brings AI-driv
 | Data Anonymization        | Strips sensitive details before sending telemetry to the AI backend.        |
 | Plugin Architecture       | Supports custom analyzers and integrations via an extensible plugin system. |
 
-<Frame>
-  ![The image lists five key features: Cluster Scanning, Issue Diagnosis, Plain English Explanation, Actionable Advice, and Anonymization. There is also a person speaking in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878975/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-K8sGPT-Features-and-Capabilities/key-features-cluster-scanning-diagram.jpg)
-</Frame>
+![The image lists five key features: Cluster Scanning, Issue Diagnosis, Plain English Explanation, Actionable Advice, and Anonymization. There is also a person speaking in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878975/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-K8sGPT-Features-and-Capabilities/key-features-cluster-scanning-diagram.jpg)
 
 ## Supported AI Backends
 
@@ -34,14 +32,10 @@ K8sGPT integrates seamlessly with major AI providers. You can choose from:
 | Cohere         | High-quality embeddings and language models            |
 | LocalAI        | On-prem or local model hosting for stricter compliance |
 
-<Frame>
-  ![The image lists supported AI backends, including OpenAI, Azure OpenAI, LocalAI, Cohere, Amazon Bedrock, and Gemini, with a person speaking in the bottom right corner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878976/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-K8sGPT-Features-and-Capabilities/ai-backends-supported-list-person-speaking.jpg)
-</Frame>
+![The image lists supported AI backends, including OpenAI, Azure OpenAI, LocalAI, Cohere, Amazon Bedrock, and Gemini, with a person speaking in the bottom right corner.](https://kodekloud.com/kk-media/image/upload/v1752878976/notes-assets/images/Introduction-to-K8sGPT-and-AI-Driven-Kubernetes-Engineering-K8sGPT-Features-and-Capabilities/ai-backends-supported-list-person-speaking.jpg)
 
-<Callout icon="triangle-alert">
-  Before running the analysis, verify your kubeconfig and context by running `kubectl get nodes`.\
+> **triangle-alert** Before running the analysis, verify your kubeconfig and context by running `kubectl get nodes`.\
   Ensure you have network access to both your cluster and the configured AI backend.
-</Callout>
 
 ## Quickstart: Cluster Analysis
 
@@ -118,6 +112,4 @@ You will also see a live demo and hands-on lab with K8sGPT in the next module.
 
 [k8s-basics]: https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/introduction-to-k8sgpt-and-ai-driven-kubernetes-engineering/module/6791a255-403d-4a0e-9cef-81c6a8abdfe8/lesson/e06d1908-c50c-4aaa-a149-db1ae3378e35" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/introduction-to-k8sgpt-and-ai-driven-kubernetes-engineering/module/6791a255-403d-4a0e-9cef-81c6a8abdfe8/lesson/e06d1908-c50c-4aaa-a149-db1ae3378e35)

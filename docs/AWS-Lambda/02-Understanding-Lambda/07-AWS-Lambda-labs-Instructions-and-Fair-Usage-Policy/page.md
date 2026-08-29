@@ -40,7 +40,7 @@ In this hands-on AWS Lambda lab, you’ll deploy and test serverless functions i
    aws lambda get-function-metrics --function-name MyFunction
    ```
 
-![The image outlines the instructions and fair usage policy for AWS Lambda labs, including details like a 60-minute lab session, US-EAST-1 region usage, and a maximum of 300 invocations.](../../../../images/kodekloud.com/kk-media/image/upload/v1752863164/notes-assets/images/AWS-Lambda-AWS-Lambda-labs-Instructions-and-Fair-Usage-Policy/aws-lambda-labs-instructions-policy.jpg)
+![The image outlines the instructions and fair usage policy for AWS Lambda labs, including details like a 60-minute lab session, US-EAST-1 region usage, and a maximum of 300 invocations.](https://kodekloud.com/kk-media/image/upload/v1752863164/notes-assets/images/AWS-Lambda-AWS-Lambda-labs-Instructions-and-Fair-Usage-Policy/aws-lambda-labs-instructions-policy.jpg)
 
 ## Links and References
 

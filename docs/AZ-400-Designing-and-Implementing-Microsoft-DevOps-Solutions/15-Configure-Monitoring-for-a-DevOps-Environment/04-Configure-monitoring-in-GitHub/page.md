@@ -10,7 +10,7 @@ Monitoring your GitHub repositories is essential for maintaining code quality, i
 
 Start by reviewing the structure of your repository. For example, here’s the **KodeKloudCoffee** project:
 
-![The image shows a GitHub repository named "KodeKloudCoffee" with various files and folders, including .github/workflows, public, and several JavaScript files. The repository has 20 commits and no description provided.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867486/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/kodekloudcoffee-github-repo-files-folders.jpg)
+![The image shows a GitHub repository named "KodeKloudCoffee" with various files and folders, including .github/workflows, public, and several JavaScript files. The repository has 20 commits and no description provided.](https://kodekloud.com/kk-media/image/upload/v1752867486/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/kodekloudcoffee-github-repo-files-folders.jpg)
 
 Understanding the layout—workflows, source files, documentation—helps you pinpoint where to add monitoring hooks, automated scans, and notifications.
 
@@ -18,7 +18,7 @@ Understanding the layout—workflows, source files, documentation—helps you pi
 
 Navigate to **Insights** in your repository to see an at-a-glance summary of activity:
 
-![The image shows a GitHub repository insights page for "KodeKloudCoffee," displaying an overview of activity from October 2, 2024, to October 9, 2024, with no active pull requests or issues and 20 commits by one author.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867488/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-repo-insights-kodekloudcoffee.jpg)
+![The image shows a GitHub repository insights page for "KodeKloudCoffee," displaying an overview of activity from October 2, 2024, to October 9, 2024, with no active pull requests or issues and 20 commits by one author.](https://kodekloud.com/kk-media/image/upload/v1752867488/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-repo-insights-kodekloudcoffee.jpg)
 
 This dashboard highlights:
 
@@ -42,7 +42,7 @@ A healthy repository shows steady commit frequency, prompt PR reviews, and low i
 
 Discover who’s driving development. Under **Insights ▶ Contributors**, you’ll see a timeline and per-author breakdown:
 
-![The image shows a GitHub contributions graph for a user, displaying commits over time from September 28, 2024, to October 5, 2024. The graph indicates a steady increase in contributions, with a total of 20 commits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867489/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-contributions-graph-commits-2024.jpg)
+![The image shows a GitHub contributions graph for a user, displaying commits over time from September 28, 2024, to October 5, 2024. The graph indicates a steady increase in contributions, with a total of 20 commits.](https://kodekloud.com/kk-media/image/upload/v1752867489/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-contributions-graph-commits-2024.jpg)
 
 This helps identify:
 
@@ -53,7 +53,7 @@ This helps identify:
 
 For **public** repositories, use **Insights ▶ Community Standards** to surface missing files:
 
-![The image shows a GitHub repository page focused on "Community Standards," with a checklist for items like description, README, code of conduct, and more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867490/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-community-standards-checklist.jpg)
+![The image shows a GitHub repository page focused on "Community Standards," with a checklist for items like description, README, code of conduct, and more.](https://kodekloud.com/kk-media/image/upload/v1752867490/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-community-standards-checklist.jpg)
 
 Enable templates and policy files to onboard new contributors quickly:
 
@@ -65,7 +65,7 @@ Enable templates and policy files to onboard new contributors quickly:
 
 Track repository popularity and usage patterns:
 
-![The image shows a GitHub traffic analytics page with graphs displaying data on clones and visitors over a period of time. It highlights a spike in views and unique visitors on October 7, 2024.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867492/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-traffic-analytics-clones-visitors.jpg)
+![The image shows a GitHub traffic analytics page with graphs displaying data on clones and visitors over a period of time. It highlights a spike in views and unique visitors on October 7, 2024.](https://kodekloud.com/kk-media/image/upload/v1752867492/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-traffic-analytics-clones-visitors.jpg)
 
 Key metrics:
 
@@ -79,7 +79,7 @@ Key metrics:
 
 Review commit spikes and identify possible friction in your CI/CD pipeline:
 
-![The image shows a GitHub insights page with a graph displaying commit activity over time, highlighting a peak of 20 commits on a Monday.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867493/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-insights-commit-activity-graph.jpg)
+![The image shows a GitHub insights page with a graph displaying commit activity over time, highlighting a peak of 20 commits on a Monday.](https://kodekloud.com/kk-media/image/upload/v1752867493/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-insights-commit-activity-graph.jpg)
 
 > **triangle-alert** High “churn” (many commits in quick succession) often signals failing tests or deployment loops. Investigate CI logs when you see unusual peaks.
 
@@ -96,7 +96,7 @@ Neither high additions nor deletions are inherently good or bad, but sudden swin
 
 Stay ahead of security vulnerabilities by enabling Dependabot:
 
-![The image shows a GitHub repository page with the "Dependency graph" section open, indicating that Dependabot version updates aren't configured yet. There is an option to create a config file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867494/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-repo-dependency-graph-dependabot.jpg)
+![The image shows a GitHub repository page with the "Dependency graph" section open, indicating that Dependabot version updates aren't configured yet. There is an option to create a config file.](https://kodekloud.com/kk-media/image/upload/v1752867494/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-repo-dependency-graph-dependabot.jpg)
 
 Add a `.github/dependabot.yml`:
 
@@ -111,13 +111,13 @@ updates:
 
 This schedules weekly PRs for dependency updates, reducing your security risk.
 
-![The image shows a GitHub repository page named "KodeKloudCoffee" with a list of files and folders, including .github, public, and README.md. The repository has 21 commits and no stars or forks.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867496/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/kodekloudcoffee-github-repo-files-list.jpg)
+![The image shows a GitHub repository page named "KodeKloudCoffee" with a list of files and folders, including .github, public, and README.md. The repository has 21 commits and no stars or forks.](https://kodekloud.com/kk-media/image/upload/v1752867496/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/kodekloudcoffee-github-repo-files-list.jpg)
 
 ## Network Graph
 
 Visualize branching patterns and merges under **Insights ▶ Network**:
 
-![The image shows a GitHub network graph for the repository "KodeKloudCoffee," displaying a timeline of recent commits by the owner "jeremykodekloud" on the main branch. The interface includes navigation options like Pulse, Contributors, and Community.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867498/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-network-graph-kodekloud-coffee.jpg)
+![The image shows a GitHub network graph for the repository "KodeKloudCoffee," displaying a timeline of recent commits by the owner "jeremykodekloud" on the main branch. The interface includes navigation options like Pulse, Contributors, and Community.](https://kodekloud.com/kk-media/image/upload/v1752867498/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-network-graph-kodekloud-coffee.jpg)
 
 Use it to spot long-lived feature branches and merge bottlenecks.
 
@@ -129,7 +129,7 @@ The **Forks** counter shows how often others have cloned your repo to contribute
 
 Monitor CI/CD costs and performance in **Settings ▶ Actions ▶ Usage**:
 
-![The image shows a GitHub Actions Usage Metrics page, displaying total minutes and job runs for workflows in a repository. It includes details of specific jobs, their total minutes, job runs, runner type, and runtime OS.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867499/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-actions-usage-metrics-page.jpg)
+![The image shows a GitHub Actions Usage Metrics page, displaying total minutes and job runs for workflows in a repository. It includes details of specific jobs, their total minutes, job runs, runner type, and runtime OS.](https://kodekloud.com/kk-media/image/upload/v1752867499/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-actions-usage-metrics-page.jpg)
 
 Consider self-hosted runners if your minutes exceed the free tier.
 
@@ -137,7 +137,7 @@ Consider self-hosted runners if your minutes exceed the free tier.
 
 Under **Actions**, inspect each workflow’s history and timings:
 
-![The image shows a GitHub Actions page for the repository "KodeKloudCoffee," displaying a list of workflow runs with their statuses and details.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867501/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-actions-kodekloudcoffee-workflows.jpg)
+![The image shows a GitHub Actions page for the repository "KodeKloudCoffee," displaying a list of workflow runs with their statuses and details.](https://kodekloud.com/kk-media/image/upload/v1752867501/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-actions-kodekloudcoffee-workflows.jpg)
 
 Example deployment step in `azure/webapps-deploy@v2`:
 
@@ -160,7 +160,7 @@ Optimize slow steps by caching dependencies and parallelizing jobs.
 
 Set up email alerts in **Settings ▶ Notifications**:
 
-![The image shows a GitHub settings page for configuring email notifications, with options to set email addresses and activate notifications for push events.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867502/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-settings-email-notifications-config.jpg)
+![The image shows a GitHub settings page for configuring email notifications, with options to set email addresses and activate notifications for push events.](https://kodekloud.com/kk-media/image/upload/v1752867502/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-settings-email-notifications-config.jpg)
 
 Configure organizational mailing lists or approved headers to prevent alerts from being marked as spam.
 
@@ -168,7 +168,7 @@ Configure organizational mailing lists or approved headers to prevent alerts fro
 
 Use **Settings ▶ Webhooks** to push real-time event data to external systems:
 
-![The image shows the "Webhooks" settings page of a GitHub repository, where users can add webhooks to notify external services of certain events.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867503/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-webhooks-settings-page.jpg)
+![The image shows the "Webhooks" settings page of a GitHub repository, where users can add webhooks to notify external services of certain events.](https://kodekloud.com/kk-media/image/upload/v1752867503/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Configure-monitoring-in-GitHub/github-webhooks-settings-page.jpg)
 
 Webhooks enable integrations with Slack, Jira, or custom dashboards for immediate feedback.
 

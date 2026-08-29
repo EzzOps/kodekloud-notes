@@ -38,9 +38,7 @@ spec:
 
 Layer 4 rules govern transport-layer connectivity (TCP/UDP). By default, Cilium blocks ICMP unless explicitly permitted.
 
-<Frame>
-  ![The image describes Layer 4 policies, including integration with Layer 3, control over UDP/TCP traffic, and default behavior, alongside a diagram of the OSI model layers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880389/notes-assets/images/Kubernetes-Networking-Deep-Dive-CNI-Network-Policies-Overview/layer-4-policies-osi-model-diagram.jpg)
-</Frame>
+![The image describes Layer 4 policies, including integration with Layer 3, control over UDP/TCP traffic, and default behavior, alongside a diagram of the OSI model layers.](https://kodekloud.com/kk-media/image/upload/v1752880389/notes-assets/images/Kubernetes-Networking-Deep-Dive-CNI-Network-Policies-Overview/layer-4-policies-osi-model-diagram.jpg)
 
 ### Example: Restrict Egress to TCP Port 80
 
@@ -68,9 +66,7 @@ This policy permits only TCP traffic on port 80 for pods labeled `app=myService`
 
 Layer 7 policies enable application-layer inspection and enforcement for HTTP, gRPC, Kafka, and more.
 
-<Frame>
-  ![The image illustrates Layer 7 policies, showing supported protocols (HTTP, gRPC, Kafka) and attributes used (HTTP methods, URL paths, request headers), alongside a diagram of the OSI Model layers.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880390/notes-assets/images/Kubernetes-Networking-Deep-Dive-CNI-Network-Policies-Overview/layer-7-policies-supported-protocols-diagram.jpg)
-</Frame>
+![The image illustrates Layer 7 policies, showing supported protocols (HTTP, gRPC, Kafka) and attributes used (HTTP methods, URL paths, request headers), alongside a diagram of the OSI Model layers.](https://kodekloud.com/kk-media/image/upload/v1752880390/notes-assets/images/Kubernetes-Networking-Deep-Dive-CNI-Network-Policies-Overview/layer-7-policies-supported-protocols-diagram.jpg)
 
 ### Example: HTTP Methods, Paths & Headers
 
@@ -114,13 +110,9 @@ Cilium supports two scope levels:
 | CiliumNetworkPolicy            | Single Namespace |
 | CiliumClusterwideNetworkPolicy | All Namespaces   |
 
-<Callout icon="lightbulb">
-  Combining namespace-specific and cluster-wide policies ensures both granular control and consistent, global security enforcement.
-</Callout>
+> **lightbulb** Combining namespace-specific and cluster-wide policies ensures both granular control and consistent, global security enforcement.
 
-<Frame>
-  ![The image compares CiliumNetworkPolicy and CiliumClusterwideNetworkPolicy, highlighting their scope and application within Kubernetes clusters. CiliumNetworkPolicy is namespace-specific, while CiliumClusterwideNetworkPolicy is cluster-wide.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880390/notes-assets/images/Kubernetes-Networking-Deep-Dive-CNI-Network-Policies-Overview/cilium-network-policy-comparison-kubernetes.jpg)
-</Frame>
+![The image compares CiliumNetworkPolicy and CiliumClusterwideNetworkPolicy, highlighting their scope and application within Kubernetes clusters. CiliumNetworkPolicy is namespace-specific, while CiliumClusterwideNetworkPolicy is cluster-wide.](https://kodekloud.com/kk-media/image/upload/v1752880390/notes-assets/images/Kubernetes-Networking-Deep-Dive-CNI-Network-Policies-Overview/cilium-network-policy-comparison-kubernetes.jpg)
 
 ***
 
@@ -135,9 +127,7 @@ Now that we’ve covered the theory behind CNI network policies, explore our han
 * [Istio Service Mesh](https://istio.io)
 * [Linkerd Service Mesh](https://linkerd.io)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/213062d7-7c18-4532-81dd-0a42de9333e6" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-networking/module/5a70ab6c-2094-4bf2-9f49-e441919fc8c2/lesson/213062d7-7c18-4532-81dd-0a42de9333e6)
 
 
 # Cert Manager and Lets Encrypt Overview
@@ -152,9 +142,7 @@ In this guide, you’ll learn how to use cert-manager and Let’s Encrypt togeth
 2. An introduction to Let’s Encrypt and its ACME workflow.
 3. How to integrate cert-manager with Let’s Encrypt for automatic certificate issuance and renewal.
 
-<Frame>
-  ![The image shows an agenda with two items: discussing Cert-Manager and its installation in the cluster, and an overview of Let's Encrypt and how to begin using it.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880391/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cert-Manager-and-Lets-Encrypt-Overview/agenda-cert-manager-lets-encrypt-overview.jpg)
-</Frame>
+![The image shows an agenda with two items: discussing Cert-Manager and its installation in the cluster, and an overview of Let's Encrypt and how to begin using it.](https://kodekloud.com/kk-media/image/upload/v1752880391/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cert-Manager-and-Lets-Encrypt-Overview/agenda-cert-manager-lets-encrypt-overview.jpg)
 
 ***
 
@@ -169,17 +157,13 @@ Key features include:
 * Kubernetes-native CRDs: Issuer, ClusterIssuer, and Certificate
 * Secrets storage for TLS key/cert pairs
 
-<Frame>
-  ![The image is an overview of Cert-Manager, highlighting its features: it's an open-source add-on, can issue, renew, and create certificates, supports multiple issuers, and enhances security.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880392/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cert-Manager-and-Lets-Encrypt-Overview/cert-manager-overview-features-security.jpg)
-</Frame>
+![The image is an overview of Cert-Manager, highlighting its features: it's an open-source add-on, can issue, renew, and create certificates, supports multiple issuers, and enhances security.](https://kodekloud.com/kk-media/image/upload/v1752880392/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cert-Manager-and-Lets-Encrypt-Overview/cert-manager-overview-features-security.jpg)
 
 ### cert-manager Architecture
 
 cert-manager runs as a set of controllers that watch CRDs and reconcile the desired certificate state. Each controller interacts with the Kubernetes API to request, store, and renew certificates.
 
-<Frame>
-  ![The image is a diagram explaining how Cert-Manager works within a Kubernetes cluster, showing the relationship between Kubernetes APIs, Cert-Manager Controllers, and CRDs (Certificate, Issuer, ClusterIssuer).](../../../../images/kodekloud.com/kk-media/image/upload/v1752880394/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cert-Manager-and-Lets-Encrypt-Overview/cert-manager-kubernetes-diagram-architecture.jpg)
-</Frame>
+![The image is a diagram explaining how Cert-Manager works within a Kubernetes cluster, showing the relationship between Kubernetes APIs, Cert-Manager Controllers, and CRDs (Certificate, Issuer, ClusterIssuer).](https://kodekloud.com/kk-media/image/upload/v1752880394/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cert-Manager-and-Lets-Encrypt-Overview/cert-manager-kubernetes-diagram-architecture.jpg)
 
 Table: cert-manager CRDs at a Glance
 
@@ -191,13 +175,9 @@ Table: cert-manager CRDs at a Glance
 
 When an Issuer or ClusterIssuer is created, cert-manager requests a certificate from the configured CA, then stores the key and certificate in a Kubernetes Secret. Controllers monitor expiry dates and perform automatic renewals.
 
-<Frame>
-  ![The image explains how Cert-Manager works, detailing the process of requesting, issuing, and renewing SSL certificates, along with a workflow for issuer creation, certificate management, and automatic renewal.](../../../../images/kodekloud.com/kk-media/image/upload/v1752880395/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cert-Manager-and-Lets-Encrypt-Overview/cert-manager-ssl-certificates-workflow.jpg)
-</Frame>
+![The image explains how Cert-Manager works, detailing the process of requesting, issuing, and renewing SSL certificates, along with a workflow for issuer creation, certificate management, and automatic renewal.](https://kodekloud.com/kk-media/image/upload/v1752880395/notes-assets/images/Kubernetes-Networking-Deep-Dive-Cert-Manager-and-Lets-Encrypt-Overview/cert-manager-ssl-certificates-workflow.jpg)
 
-<Callout icon="lightbulb">
-  cert-manager can issue both standard and wildcard certificates. Use wildcard certificates to secure multiple subdomains with a single certificate.
-</Callout>
+> **lightbulb** cert-manager can issue both standard and wildcard certificates. Use wildcard certificates to secure multiple subdomains with a single certificate.
 
 ***
 
@@ -221,9 +201,7 @@ Alternatively, install via `kubectl`:
 kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/<VERSION>/cert-manager.yaml
 ```
 
-<Callout icon="triangle-alert">
-  Always match the `<VERSION>` placeholder with the latest stable release from the [cert-manager GitHub releases](https://github.com/jetstack/cert-manager/releases).
-</Callout>
+> **triangle-alert** Always match the `<VERSION>` placeholder with the latest stable release from the [cert-manager GitHub releases](https://github.com/jetstack/cert-manager/releases).
 
 For diagnostics and manual operations, use `cmctl`:
 

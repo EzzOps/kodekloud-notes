@@ -6,9 +6,7 @@ Pattern matching in Rust using the match statement allows comparing values again
 
 Pattern matching using the match statement in Rust is one of the language's most powerful control flow constructs. It allows you to compare a value against a series of patterns and execute corresponding code blocks for the first pattern that matches. This approach is more robust than traditional switch statements in other languages because Rust's match statement supports an extensive range of pattern types—such as literals, variables, wildcards, tuples, and enums—enabling you to write concise, expressive, and maintainable code.
 
-<Frame>
-  ![The image is an introduction slide explaining the match statement in Rust, highlighting its power compared to switch statements, its ability to handle various patterns, and its use for writing concise and expressive code.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883982/notes-assets/images/Rust-Programming-Control-Flow-Pattern-matching-with-match/rust-match-statement-introduction.jpg)
-</Frame>
+![The image is an introduction slide explaining the match statement in Rust, highlighting its power compared to switch statements, its ability to handle various patterns, and its use for writing concise and expressive code.](https://kodekloud.com/kk-media/image/upload/v1752883982/notes-assets/images/Rust-Programming-Control-Flow-Pattern-matching-with-match/rust-match-statement-introduction.jpg)
 
 ## Basic Syntax
 
@@ -145,9 +143,7 @@ This code will produce the output:
 The first number is: 2
 ```
 
-<Callout icon="lightbulb">
-  Rust’s match statement ensures that all cases are covered at compile time, providing a safeguard against unexpected values.
-</Callout>
+> **lightbulb** Rust’s match statement ensures that all cases are covered at compile time, providing a safeguard against unexpected values.
 
 ## Summary
 
@@ -158,14 +154,10 @@ Pattern matching with the match statement in Rust provides a flexible and elegan
 * Matching ranges of values with the `..=` syntax.
 * Destructuring complex data types such as tuples and selectively ignoring parts of a pattern.
 
-<Frame>
-  ![The image is a summary of four programming concepts related to pattern matching, including basic match statements, matching multiple patterns, matching ranges, and destructuring with match.](../../../../images/kodekloud.com/kk-media/image/upload/v1752883983/notes-assets/images/Rust-Programming-Control-Flow-Pattern-matching-with-match/pattern-matching-programming-summary.jpg)
-</Frame>
+![The image is a summary of four programming concepts related to pattern matching, including basic match statements, matching multiple patterns, matching ranges, and destructuring with match.](https://kodekloud.com/kk-media/image/upload/v1752883983/notes-assets/images/Rust-Programming-Control-Flow-Pattern-matching-with-match/pattern-matching-programming-summary.jpg)
 
 Thank you for reading this article on Rust's pattern matching. For more information and advanced examples, consider exploring [Rust’s official documentation](https://www.rust-lang.org/learn).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/b4e48ad2-2244-4420-95eb-63d81ab37a31" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/b4e48ad2-2244-4420-95eb-63d81ab37a31)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/a59f7a9a-f842-4ffb-92d4-41849c8d0a37" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/rust/module/f232d417-91e4-49e7-b538-be7db1e23daf/lesson/a59f7a9a-f842-4ffb-92d4-41849c8d0a37)

@@ -42,7 +42,7 @@ There are two primary deployment models:
 
 Post-deployment, a release phase ensures that migrated workloads are thoroughly tested, optimized, and governed. Workloads are validated for performance and efficiency; instance sizes and configurations might require adjustments after initial testing.
 
-![The image illustrates the "Azure Migration Framework" by KodeKloud, detailing the process of assessing, deploying, and releasing workloads to the cloud, with stages labeled as Plan, Ready, and Adopt.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867025/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Azure-Migration-Framework/azure-migration-framework-kodekloud.jpg)
+![The image illustrates the "Azure Migration Framework" by KodeKloud, detailing the process of assessing, deploying, and releasing workloads to the cloud, with stages labeled as Plan, Ready, and Adopt.](https://kodekloud.com/kk-media/image/upload/v1752867025/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Azure-Migration-Framework/azure-migration-framework-kodekloud.jpg)
 
 ## Migration Strategies: The Four R's
 
@@ -57,7 +57,7 @@ Choosing the right migration strategy is essential to align with your business r
 
 In some cases, organizations may opt for a fifth strategy: **Replace**, where an on-premises solution is substituted with a SaaS alternative to avoid complex migrations.
 
-![The image is a diagram from KodeKloud outlining four cloud migration strategies: Rehost, Refactor, Rearchitect, and Rebuild, each with a brief description of what they entail and when to use them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867026/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Azure-Migration-Framework/cloud-migration-strategies-diagram.jpg)
+![The image is a diagram from KodeKloud outlining four cloud migration strategies: Rehost, Refactor, Rearchitect, and Rebuild, each with a brief description of what they entail and when to use them.](https://kodekloud.com/kk-media/image/upload/v1752867026/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Azure-Migration-Framework/cloud-migration-strategies-diagram.jpg)
 
 > **lightbulb** Always choose the migration strategy that best suits your workloads and business needs. A well-defined strategy leads to a successful assessment and smooth migration process.
 

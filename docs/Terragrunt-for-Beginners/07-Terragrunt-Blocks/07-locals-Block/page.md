@@ -82,9 +82,7 @@ This approach ensures both remote-state settings and shared locals (like `projec
 * [Terragrunt Remote State](https://terragrunt.gruntwork.io/docs/features/remote-state/)
 * [Terraform AWS VPC Module](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/8dea68bf-2d0d-4db6-996e-6c0bf277226e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/8dea68bf-2d0d-4db6-996e-6c0bf277226e)
 
 
 # locals Block
@@ -104,21 +102,15 @@ Encapsulating expressions or static values into named local variables offers cle
 | Code readability | Improves comprehension by giving meaningful names to expressions         |
 | Code reusability | Follows DRY (Don’t Repeat Yourself) by reusing values in multiple places |
 
-<Frame>
-  ![The image is a diagram titled "Locals Block" highlighting two benefits: "Code readability" and "Code reusability."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884308/notes-assets/images/Terragrunt-for-Beginners-locals-Block/locals-block-code-readability-reusability-diagram.jpg)
-</Frame>
+![The image is a diagram titled "Locals Block" highlighting two benefits: "Code readability" and "Code reusability."](https://kodekloud.com/kk-media/image/upload/v1752884308/notes-assets/images/Terragrunt-for-Beginners-locals-Block/locals-block-code-readability-reusability-diagram.jpg)
 
 ## Considerations
 
 Local variables are strictly confined to the configuration where they’re declared. They won’t be shared across sibling or parent Terragrunt files.
 
-<Callout icon="triangle-alert">
-  `locals` in Terragrunt are not global. You cannot reference a local variable defined in one directory from another unless explicitly passed through inputs or shared via a common config.
-</Callout>
+> **triangle-alert** `locals` in Terragrunt are not global. You cannot reference a local variable defined in one directory from another unless explicitly passed through inputs or shared via a common config.
 
-<Frame>
-  ![The image is a diagram titled "Locals Block" with two points: "Limited to the scope" and "Cannot be shared across configs," accompanied by icons. At the bottom, there's a label "Considerations."](../../../../images/kodekloud.com/kk-media/image/upload/v1752884308/notes-assets/images/Terragrunt-for-Beginners-locals-Block/locals-block-scope-considerations-diagram.jpg)
-</Frame>
+![The image is a diagram titled "Locals Block" with two points: "Limited to the scope" and "Cannot be shared across configs," accompanied by icons. At the bottom, there's a label "Considerations."](https://kodekloud.com/kk-media/image/upload/v1752884308/notes-assets/images/Terragrunt-for-Beginners-locals-Block/locals-block-scope-considerations-diagram.jpg)
 
 ## Best Practices
 
@@ -127,9 +119,7 @@ Local variables are strictly confined to the configuration where they’re decla
 * Avoid overusing locals for trivial values; reserve them for expressions or values reused multiple times.
 * Document complex locals with inline comments for future maintainers.
 
-<Frame>
-  ![The image is a slide titled "Locals Block" with a purple icon and text explaining it is used to reduce complexity by defining variables. It also includes a "Best Practices" button.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884309/notes-assets/images/Terragrunt-for-Beginners-locals-Block/locals-block-reduce-complexity-best-practices.jpg)
-</Frame>
+![The image is a slide titled "Locals Block" with a purple icon and text explaining it is used to reduce complexity by defining variables. It also includes a "Best Practices" button.](https://kodekloud.com/kk-media/image/upload/v1752884309/notes-assets/images/Terragrunt-for-Beginners-locals-Block/locals-block-reduce-complexity-best-practices.jpg)
 
 ## Example Usage
 
@@ -185,6 +175,4 @@ This `cidr` variable is available only within the current VPC configuration, ens
 * [Terragrunt Documentation](https://terragrunt.gruntwork.io/docs/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/1c5c1958-10fe-4912-964d-5478cecc3b1f" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terragrunt-for-beginners/module/bab279d4-de1d-4e8d-8376-ea420c71c9e1/lesson/1c5c1958-10fe-4912-964d-5478cecc3b1f)

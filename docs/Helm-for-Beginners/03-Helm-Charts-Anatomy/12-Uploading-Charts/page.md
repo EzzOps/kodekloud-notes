@@ -106,7 +106,7 @@ Once the files are uploaded, share the URL of the storage location with users. T
 
 > **lightbulb** Ensure that the URL provided in the `--url` flag during index generation and in the Helm repository command is accessible to users and correctly points to your storage location.
 
-![The image shows logos of cloud service providers and GitHub, along with a URL and icons representing a package, index.yaml, and provenance file.](../../../../images/kodekloud.com/kk-media/image/upload/v1752878957/notes-assets/images/Helm-for-Beginners-Uploading-Charts/cloud-service-logos-github-icons.jpg)
+![The image shows logos of cloud service providers and GitHub, along with a URL and icons representing a package, index.yaml, and provenance file.](https://kodekloud.com/kk-media/image/upload/v1752878957/notes-assets/images/Helm-for-Beginners-Uploading-Charts/cloud-service-logos-github-icons.jpg)
 
 This completes the guide on uploading Helm charts. Continue exploring advanced topics on Helm chart management to further enhance your Kubernetes deployments.
 

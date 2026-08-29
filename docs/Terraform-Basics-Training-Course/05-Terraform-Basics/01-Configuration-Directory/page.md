@@ -34,9 +34,7 @@ resource "local_file" "cat" {
 }
 ```
 
-<Callout icon="lightbulb">
-  When you apply your configuration, Terraform automatically processes every file in the directory with the .tf extension. This ensures that both pets.txt and cat.txt will be created as specified.
-</Callout>
+> **lightbulb** When you apply your configuration, Terraform automatically processes every file in the directory with the .tf extension. This ensures that both pets.txt and cat.txt will be created as specified.
 
 It is also common practice to consolidate resource definitions into one configuration file, often named main.tf. To further organize your configuration, you can use additional files such as:
 
@@ -50,8 +48,6 @@ These topics will be discussed in detail later in the lesson.
 
 Now, let's continue with practical exercises to explore working with providers.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/9d45dfd4-cf12-4da1-81d0-11b37cd4ef50" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/9d45dfd4-cf12-4da1-81d0-11b37cd4ef50)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/d4fa4075-6b74-4223-afc4-ee20d1163098" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/df2660a4-c959-4fa7-bfa8-0700885b598e/lesson/d4fa4075-6b74-4223-afc4-ee20d1163098)

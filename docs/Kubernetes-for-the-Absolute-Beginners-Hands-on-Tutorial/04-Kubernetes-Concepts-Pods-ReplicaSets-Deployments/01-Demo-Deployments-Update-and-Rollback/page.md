@@ -8,9 +8,7 @@ In this guide, we demonstrate how to update and rollback Kubernetes deployments 
 
 Previously, a deployment named "myapp-deployment" was defined in a YAML file located in the project’s deployment directory. Initially, this deployment ran three replicas of an NGINX container. In our updated configuration, the deployment now uses six replicas.
 
-<Callout icon="lightbulb">
-  Ensure that your Kubernetes cluster is running and you have the necessary permissions to create, update, and delete deployments.
-</Callout>
+> **lightbulb** Ensure that your Kubernetes cluster is running and you have the necessary permissions to create, update, and delete deployments.
 
 ***
 
@@ -379,14 +377,10 @@ All six pods should be running the stable image with the faulty pods replaced.
 
 Kubernetes deployments employ a rolling update strategy designed to ensure continuous application availability during updates. New replicas are only promoted when they are confirmed healthy, reducing downtime and mitigating risks even when faulty updates occur.
 
-<Frame>
-  ![The image lists supported tags and Dockerfile links for NGINX Docker images, maintained by the NGINX Docker Maintainers, with help resources provided.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884853/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Demo-Deployments-Update-and-Rollback/frame_340.jpg)
-</Frame>
+![The image lists supported tags and Dockerfile links for NGINX Docker images, maintained by the NGINX Docker Maintainers, with help resources provided.](https://kodekloud.com/kk-media/image/upload/v1752884853/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Demo-Deployments-Update-and-Rollback/frame_340.jpg)
 
 This concludes our demonstration on handling updates and rollbacks in Kubernetes deployments. In upcoming segments, we will explore advanced deployment patterns and troubleshooting techniques for more complex scenarios.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/e7f6fa85-5813-4b23-a8b2-324717f39ddc" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/e7f6fa85-5813-4b23-a8b2-324717f39ddc)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/7b60c293-831f-4f72-a153-da6d3563cb08" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/0919dae3-bc94-479f-b205-d52156817c98/lesson/7b60c293-831f-4f72-a153-da6d3563cb08)

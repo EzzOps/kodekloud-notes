@@ -72,9 +72,7 @@ Benefits of embedding these checks into CI/CD:
 | Lower operational risk       | Frequent scans and gating reduce the chance of critical issues reaching prod |
 | Continuous learning          |         Security findings feed back into code reviews and developer training |
 
-<Callout icon="lightbulb">
-  Shift-left security isn't about blocking delivery; it's about automated, actionable feedback. Use strict fail conditions for high-severity issues and advisory checks for low-severity findings so teams can deliver features quickly while keeping risk low.
-</Callout>
+> **lightbulb** Shift-left security isn't about blocking delivery; it's about automated, actionable feedback. Use strict fail conditions for high-severity issues and advisory checks for low-severity findings so teams can deliver features quickly while keeping risk low.
 
 ## Practical next steps to adopt DevSecOps
 
@@ -94,6 +92,4 @@ By embedding security tooling and policies into CI/CD and the developer lifecycl
 
 That's all for now.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/673786b2-bedb-4405-a2c9-835aea1a9dd4/lesson/fa4ffd27-b501-4cf5-9ee3-e74e9cdd6ec9" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/673786b2-bedb-4405-a2c9-835aea1a9dd4/lesson/fa4ffd27-b501-4cf5-9ee3-e74e9cdd6ec9)

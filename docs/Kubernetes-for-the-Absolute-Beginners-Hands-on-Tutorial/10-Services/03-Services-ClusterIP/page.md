@@ -8,19 +8,13 @@ Welcome to this article where we explore the Kubernetes service type known as Cl
 
 Consider the scenario: the front-end server needs to communicate with multiple back-end pods. Each pod receives an IP address, but these addresses can change as pods are terminated and recreated. Thus, it’s impractical to rely on pod IPs for internal communication. Additionally, if a request comes from the front-end (for example, from IP 10.244.0.3), it must be intelligently routed to one of the several available back-end pods.
 
-<Frame>
-  ![The image shows a network diagram with front-end, back-end, and Redis pods, each labeled with IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884968/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Services-ClusterIP/frame_70.jpg)
-</Frame>
+![The image shows a network diagram with front-end, back-end, and Redis pods, each labeled with IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752884968/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Services-ClusterIP/frame_70.jpg)
 
 A Kubernetes service overcomes these challenges by grouping related pods and exposing a single, stable interface. When you create a service for the back-end pods, Kubernetes aggregates them and provides a unified endpoint. Incoming requests are automatically load balanced across the available pods, ensuring efficient resource utilization and high availability. Similarly, additional services can be set up for components like Redis, facilitating seamless communication between different parts of your application.
 
-<Frame>
-  ![The image shows a Kubernetes ClusterIP setup with front-end, back-end, and Redis pods, each labeled with IP addresses.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884969/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Services-ClusterIP/frame_120.jpg)
-</Frame>
+![The image shows a Kubernetes ClusterIP setup with front-end, back-end, and Redis pods, each labeled with IP addresses.](https://kodekloud.com/kk-media/image/upload/v1752884969/notes-assets/images/Kubernetes-for-the-Absolute-Beginners-Hands-on-Tutorial-Services-ClusterIP/frame_120.jpg)
 
-<Callout icon="lightbulb">
-  ClusterIP is the default service type in Kubernetes. When you omit the `type` field in your service specification, Kubernetes automatically assumes ClusterIP.
-</Callout>
+> **lightbulb** ClusterIP is the default service type in Kubernetes. When you omit the `type` field in your service specification, Kubernetes automatically assumes ClusterIP.
 
 ## Creating a ClusterIP Service
 
@@ -88,6 +82,4 @@ For further reading, explore:
 * [Docker Hub](https://hub.docker.com/)
 * [Terraform Registry](https://registry.terraform.io/)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/7e491918-c5e6-47e3-b4b2-54e6e311292c/lesson/d0f606f1-1412-481a-91f3-0658bcc98cfa" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kubernetes-for-the-absolute-beginners-hands-on-tutorial/module/7e491918-c5e6-47e3-b4b2-54e6e311292c/lesson/d0f606f1-1412-481a-91f3-0658bcc98cfa)

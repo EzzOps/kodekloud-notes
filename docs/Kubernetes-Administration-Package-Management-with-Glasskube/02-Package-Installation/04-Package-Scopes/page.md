@@ -114,13 +114,11 @@ kubectl get secret <grafana-secret-name> -n kube-prometheus-stack -o jsonpath="{
 kubectl get secret <grafana-secret-name> -n kube-prometheus-stack -o jsonpath="{.data.admin-password}" | base64 --decode; echo
 ```
 
-<Callout icon="lightbulb">
-  Default Grafana credentials for many kube-prometheus-stack installs are:
+> **lightbulb** Default Grafana credentials for many kube-prometheus-stack installs are:
 
   * Username: `admin`
   * Password: `prom-operator`
     Always confirm by decoding the actual Kubernetes secret in your cluster (see command above) — some releases or charts may override defaults.
-</Callout>
 
 After logging into Grafana, dashboards will populate as Prometheus begins scraping metrics. It may take a few minutes for metrics to appear and for panels to show data.
 
@@ -168,9 +166,7 @@ Further reading and references:
 
 This concludes the monitoring section.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/c3806869-7f9e-4cc2-8dc5-aa10304e3d1c/lesson/1a7fb216-b12c-4abf-a4af-a61c2c935d36" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/c3806869-7f9e-4cc2-8dc5-aa10304e3d1c/lesson/1a7fb216-b12c-4abf-a4af-a61c2c935d36)
 
 
 # Package Scopes
@@ -207,9 +203,7 @@ How to choose a scope
 | Cluster-scoped | `ClusterRole`, `ClusterRoleBinding`, `CustomResourceDefinition`     | Shared services, global controllers, CRD providers                |
 | Namespaced     | `Role`, `RoleBinding`, `Deployment`, `Service` (within a namespace) | Per-team or per-environment isolation, application-scoped tooling |
 
-<Callout icon="lightbulb">
-  Cluster-scoped packages are ideal for functionality that must be installed only once per cluster (e.g., an operator that provides CRDs). Namespaced packages are best when you need repeatable, isolated deployments across namespaces.
-</Callout>
+> **lightbulb** Cluster-scoped packages are ideal for functionality that must be installed only once per cluster (e.g., an operator that provides CRDs). Namespaced packages are best when you need repeatable, isolated deployments across namespaces.
 
 Glasskube UI and where scopes appear
 
@@ -233,9 +227,7 @@ spec:
     version: v2.11.7+1
 ```
 
-<Callout icon="warning">
-  Be cautious when authoring cluster-scoped packages: because they affect cluster-wide state, changes can impact all namespaces. Test cluster-scoped manifests in a safe environment before deploying to production clusters.
-</Callout>
+> **warning** Be cautious when authoring cluster-scoped packages: because they affect cluster-wide state, changes can impact all namespaces. Test cluster-scoped manifests in a safe environment before deploying to production clusters.
 
 Links and references
 
@@ -245,6 +237,4 @@ Links and references
 
 Now that you know how package scopes work and how to pick between them, you’re ready to move on to installing and configuring packages with Glasskube.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/c3806869-7f9e-4cc2-8dc5-aa10304e3d1c/lesson/2f9b77f1-bc91-4775-bf0f-c7f9bcb33428" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/k8s-administration-package-management-with-glasskube/module/c3806869-7f9e-4cc2-8dc5-aa10304e3d1c/lesson/2f9b77f1-bc91-4775-bf0f-c7f9bcb33428)

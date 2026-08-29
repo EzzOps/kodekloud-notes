@@ -64,9 +64,7 @@ Kubernetes resources often contain optional fields. A JMESPath expression that a
   <img alt="The image explains how to handle non-existent fields using the OR ('||') operator, suggesting it as a solution to provide default values when a field doesn't exist." />
 </Frame>
 
-<Callout icon="lightbulb">
-  When a field may not exist, append `|| ''` (or another safe default) to the JMESPath expression to prevent errors and make your policy resilient.
-</Callout>
+> **lightbulb** When a field may not exist, append `|| ''` (or another safe default) to the JMESPath expression to prevent errors and make your policy resilient.
 
 Example: safely check for a label
 
@@ -144,6 +142,4 @@ Links and references
 
 That's it for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/7c0df95e-d281-477d-a235-35a1b2441ce7" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/kyverno-certified-associate/module/65cbd27d-801d-4468-b4c5-47391c833127/lesson/7c0df95e-d281-477d-a235-35a1b2441ce7)

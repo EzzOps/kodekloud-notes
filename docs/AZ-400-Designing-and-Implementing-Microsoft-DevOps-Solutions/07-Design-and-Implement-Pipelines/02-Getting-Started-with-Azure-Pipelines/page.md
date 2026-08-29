@@ -14,7 +14,7 @@ Azure Pipelines automates the three core stages of continuous delivery:
 * **Test:** Execute unit, integration, and automated tests.
 * **Deploy:** Release to any cloud or on-premises environment.
 
-![The image illustrates the Azure Pipelines process, showing stages of Build, Test, and Deploy, as part of a cloud service for automating CI/CD.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867864/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/azure-pipelines-ci-cd-process-diagram.jpg)
+![The image illustrates the Azure Pipelines process, showing stages of Build, Test, and Deploy, as part of a cloud service for automating CI/CD.](https://kodekloud.com/kk-media/image/upload/v1752867864/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/azure-pipelines-ci-cd-process-diagram.jpg)
 
 Azure Pipelines fits into any DevOps toolchain, providing scalable, reliable automation for teams of all sizes.
 
@@ -24,31 +24,31 @@ Azure Pipelines fits into any DevOps toolchain, providing scalable, reliable aut
 
 Connect to GitHub, Azure Repos, Bitbucket, or GitLab in minutes. Every push or pull request can trigger a pipeline, ensuring consistent automation.
 
-![The image illustrates the integration of Azure Pipelines with any Git repository, featuring their respective icons.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867865/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/azure-pipelines-git-repository-integration.jpg)
+![The image illustrates the integration of Azure Pipelines with any Git repository, featuring their respective icons.](https://kodekloud.com/kk-media/image/upload/v1752867865/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/azure-pipelines-git-repository-integration.jpg)
 
 ### 2. Cross-Platform and Scalable
 
 Run builds and deployments on Microsoft-hosted agents for Windows, Linux, and macOS—or bring your own agents. Scale from a single developer to hundreds of parallel jobs.
 
-![The image illustrates that Azure Pipelines supports Windows, Linux, and macOS operating systems.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867866/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/azure-pipelines-windows-linux-macos-support.jpg)
+![The image illustrates that Azure Pipelines supports Windows, Linux, and macOS operating systems.](https://kodekloud.com/kk-media/image/upload/v1752867866/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/azure-pipelines-windows-linux-macos-support.jpg)
 
 ### 3. Accelerating Release Cycles
 
 Automate repetitive tasks to reduce human error and deliver features faster. Continuous integration and delivery enable rapid feedback loops.
 
-![The image is a slide titled "Azure Pipelines – Why?" featuring a circular diagram with colorful gears, indicating the acceleration of release cycles.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867866/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/azure-pipelines-why-circular-diagram.jpg)
+![The image is a slide titled "Azure Pipelines – Why?" featuring a circular diagram with colorful gears, indicating the acceleration of release cycles.](https://kodekloud.com/kk-media/image/upload/v1752867866/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/azure-pipelines-why-circular-diagram.jpg)
 
 ### 4. Enhanced Team Collaboration
 
 Centralize build and release definitions, share artifacts, and monitor pipeline status—all in one platform to improve transparency and communication.
 
-![The image is a slide titled "Azure Pipelines – Why?" featuring four colorful icons representing people, with the text "Enhances team collaboration" below them.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867868/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/azure-pipelines-why-team-collaboration.jpg)
+![The image is a slide titled "Azure Pipelines – Why?" featuring four colorful icons representing people, with the text "Enhances team collaboration" below them.](https://kodekloud.com/kk-media/image/upload/v1752867868/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/azure-pipelines-why-team-collaboration.jpg)
 
 ### 5. Language and Framework Agnostic
 
 Support for virtually any language, runtime, or framework gives you the freedom to choose the right tools for your applications.
 
-![The image is a diagram illustrating Azure Pipelines, highlighting its support for multiple languages and frameworks. It features interconnected colored squares and language symbols.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867869/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/azure-pipelines-multiple-languages-diagram.jpg)
+![The image is a diagram illustrating Azure Pipelines, highlighting its support for multiple languages and frameworks. It features interconnected colored squares and language symbols.](https://kodekloud.com/kk-media/image/upload/v1752867869/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/azure-pipelines-multiple-languages-diagram.jpg)
 
 ### 6. Integration with Other Tools
 
@@ -78,7 +78,7 @@ Embed testing throughout the pipeline:
 * **Shift Left Testing:** Run unit tests, linting, security scans, and smoke tests early in the build.
 * **Shift Right Testing:** Conduct performance tests, A/B testing, and monitoring in staging or production environments.
 
-![The image illustrates the concept of continuous testing, showing a process flow from testing new requirements to testing production, highlighting the benefits of automated testing within CI/CD.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867870/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/continuous-testing-process-flow-diagram.jpg)
+![The image illustrates the concept of continuous testing, showing a process flow from testing new requirements to testing production, highlighting the benefits of automated testing within CI/CD.](https://kodekloud.com/kk-media/image/upload/v1752867870/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/continuous-testing-process-flow-diagram.jpg)
 
 ## Supported Languages and Package Management
 
@@ -92,7 +92,7 @@ Azure Pipelines supports a broad range of languages and integrates with major pa
 | C#         | NuGet           | .NET Core, ASP.NET            |
 | Go         | Go Modules      | Microservices, CLI tools      |
 
-![The image displays logos of various programming languages and applications, including Python, Java, PHP, JavaScript, C++, Ruby, Scala, Node.js, and C#. It highlights support for a wide range of languages.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867871/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/programming-languages-logos-support.jpg)
+![The image displays logos of various programming languages and applications, including Python, Java, PHP, JavaScript, C++, Ruby, Scala, Node.js, and C#. It highlights support for a wide range of languages.](https://kodekloud.com/kk-media/image/upload/v1752867871/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/programming-languages-logos-support.jpg)
 
 ## Prerequisites
 
@@ -102,7 +102,7 @@ Before you begin, make sure you have:
 2. Source code in a Git repository (GitHub, Azure Repos, etc.).
 3. Defined requirements for your build and release pipeline.
 
-![The image lists prerequisites for using Azure Pipelines: an Azure DevOps account, source code in a version control system, and defined build and release pipelines.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867872/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/azure-pipelines-prerequisites-list.jpg)
+![The image lists prerequisites for using Azure Pipelines: an Azure DevOps account, source code in a version control system, and defined build and release pipelines.](https://kodekloud.com/kk-media/image/upload/v1752867872/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/azure-pipelines-prerequisites-list.jpg)
 
 > **lightbulb** Creating an Azure DevOps organization is free. You can start with the free tier to experiment with pipelines before scaling up.
 
@@ -116,7 +116,7 @@ Azure Pipelines is free for open source projects and includes:
 
 Additional parallel jobs, users, and services incur charges.
 
-![The image is a slide about Azure DevOps pricing, showing a gradient background with a table for jobs and users, and notes on free tier availability, pricing based on parallel jobs and users, and additional costs for extra services.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867873/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/azure-devops-pricing-table-slide.jpg)
+![The image is a slide about Azure DevOps pricing, showing a gradient background with a table for jobs and users, and notes on free tier availability, pricing based on parallel jobs and users, and additional costs for extra services.](https://kodekloud.com/kk-media/image/upload/v1752867873/notes-assets/images/AZ-400-Designing-and-Implementing-Microsoft-DevOps-Solutions-Getting-Started-with-Azure-Pipelines/azure-devops-pricing-table-slide.jpg)
 
 > **triangle-alert** Exceeding free tier limits or adding advanced services (e.g., Test Plans, Artifacts) will increase costs. Review the [Azure DevOps pricing page](https://azure.microsoft.com/pricing/details/devops/) before scaling.
 

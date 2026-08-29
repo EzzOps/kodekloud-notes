@@ -14,9 +14,7 @@ We use a simple WebApp composite resource with the following spec fields:
 
 The platform (Composition) decides the actual resource configuration that will be created from those inputs — in this example the Composition constructs a Kubernetes ConfigMap.
 
-<Callout icon="lightbulb">
-  When you modify an existing Composition, append new patches/transforms to the existing `patches` array — do not replace the existing entries. Appending preserves prior behavior while adding new transformations.
-</Callout>
+> **lightbulb** When you modify an existing Composition, append new patches/transforms to the existing `patches` array — do not replace the existing entries. Appending preserves prior behavior while adding new transformations.
 
 ***
 

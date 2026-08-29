@@ -98,9 +98,7 @@ jobs:
           cat advice.message | cowsay -f "$(ls /usr/share/cowsay/cows | shuf -n 1)"
 ```
 
-<Callout icon="lightbulb">
-  Best practice: Put package installation at the top of your step so required tools are available before they are referenced. If you need persistent environment variables or secrets, declare them at the workflow or job level using `env:` or GitHub Secrets.
-</Callout>
+> **lightbulb** Best practice: Put package installation at the top of your step so required tools are available before they are referenced. If you need persistent environment variables or secrets, declare them at the workflow or job level using `env:` or GitHub Secrets.
 
 Quick mapping: Jenkins freestyle fields to GitHub Actions equivalents
 
@@ -158,9 +156,7 @@ Advice - Never cut your own fringe. has 5 words or less
 Error: Process completed with exit code 1.
 ```
 
-<Callout icon="warning">
-  Note: When a script exits with a non-zero status, GitHub Actions marks the step and job as failed. Design your exit codes intentionally if you rely on failure vs. success conditions for downstream steps or notifications.
-</Callout>
+> **warning** Note: When a script exits with a non-zero status, GitHub Actions marks the step and job as failed. Design your exit codes intentionally if you rely on failure vs. success conditions for downstream steps or notifications.
 
 References and useful links:
 
@@ -175,9 +171,7 @@ Next steps:
 * To split work into stages, convert sequential shell steps into separate jobs and use `needs:` to express dependencies.
 * A follow-up lesson will cover converting a multi-stage Jenkins pipeline into a multi-job GitHub Actions workflow.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/f63e67f3-f04a-474f-87b9-ae17930e9e67/lesson/4ba668de-f1a8-4b73-826d-416dd231e069" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/f63e67f3-f04a-474f-87b9-ae17930e9e67/lesson/4ba668de-f1a8-4b73-826d-416dd231e069)
 
 
 # Demo Convert Solar system pipeline to GA Workflow 1
@@ -366,9 +360,7 @@ Notes:
 * To run the job inside the same Node Docker image used by Jenkins, uncomment `container: node:24`. Then all steps execute inside that container.
 * The app’s unit tests may require MongoDB connection details. In Jenkins these were injected via credentials — in Actions you must supply equivalent secrets (see the callout below).
 
-<Callout icon="lightbulb">
-  Store sensitive values like `MONGO_URI`, `MONGO_USERNAME`, and `MONGO_PASSWORD` as GitHub Secrets (Repository → Settings → Secrets & variables → Actions). Reference them in the workflow with `env:` or per-step `env:` using the `secrets.` context (for example `env: MONGO_URI: ${{ secrets.MONGO_URI }}`).
-</Callout>
+> **lightbulb** Store sensitive values like `MONGO_URI`, `MONGO_USERNAME`, and `MONGO_PASSWORD` as GitHub Secrets (Repository → Settings → Secrets & variables → Actions). Reference them in the workflow with `env:` or per-step `env:` using the `secrets.` context (for example `env: MONGO_URI: ${{ secrets.MONGO_URI }}`).
 
 ### Example: passing secrets to the job
 
@@ -466,6 +458,4 @@ That's all for this lesson. A follow-up article will show:
 * Converting the remainder of the Jenkins pipeline with `needs:` and containerized jobs,
 * Using the GitHub Actions importer to help automate the migration.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/f63e67f3-f04a-474f-87b9-ae17930e9e67/lesson/cb98d5be-f443-4623-9787-5ea5287a36e8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/migrating-jenkins-pipelines-to-github-actions/module/f63e67f3-f04a-474f-87b9-ae17930e9e67/lesson/cb98d5be-f443-4623-9787-5ea5287a36e8)

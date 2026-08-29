@@ -37,7 +37,7 @@ Imagine you set up an alarm on an RDS instance to fire when CPU utilization exce
 
 If the CPU then drops below 70% for three consecutive periods, the alarm returns to **OK**.
 
-![The image illustrates alarm states with a graph showing "OK State" and "ALARM State" based on metric thresholds, accompanied by explanations for each state.](../../../../images/kodekloud.com/kk-media/image/upload/v1752862370/notes-assets/images/AWS-CloudWatch-Alarm-States/alarm-states-graph-metric-thresholds.jpg)
+![The image illustrates alarm states with a graph showing "OK State" and "ALARM State" based on metric thresholds, accompanied by explanations for each state.](https://kodekloud.com/kk-media/image/upload/v1752862370/notes-assets/images/AWS-CloudWatch-Alarm-States/alarm-states-graph-metric-thresholds.jpg)
 
 ## References
 

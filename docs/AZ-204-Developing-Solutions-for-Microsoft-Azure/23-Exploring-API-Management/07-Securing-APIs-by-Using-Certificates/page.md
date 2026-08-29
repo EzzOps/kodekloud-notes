@@ -34,7 +34,7 @@ API Management employs several methods to verify certificates, safeguarding the 
 2. **Validating the Certificate's Origin:**\
    Ensure the certificate was issued by the expected partner or service, solidifying its authenticity and trustworthiness.
 
-![The image illustrates two certificate verification methods: verifying the certificate issuer and validating the certificate's origin by confirming it was issued by the partner.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866330/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-APIs-by-Using-Certificates/certificate-verification-methods-illustration.jpg)
+![The image illustrates two certificate verification methods: verifying the certificate issuer and validating the certificate's origin by confirming it was issued by the partner.](https://kodekloud.com/kk-media/image/upload/v1752866330/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-APIs-by-Using-Certificates/certificate-verification-methods-illustration.jpg)
 
 These verification steps are key to detecting any tampering or misuse of client certificates.
 
@@ -42,7 +42,7 @@ These verification steps are key to detecting any tampering or misuse of client 
 
 In API Management's consumption tier, client certificates are used to authenticate clients. By defining clear certificate properties like thumbprint, issuer, and subject fields, you create rules that enforce secure access. These policies ensure that only certificates meeting your security criteria are allowed to access your APIs.
 
-![The image shows a software interface for managing APIs, specifically highlighting the "Employee API" and its operations. It includes sections for inbound processing policies and a banner about accepting client certificates in the consumption tier.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866331/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-APIs-by-Using-Certificates/employee-api-management-interface.jpg)
+![The image shows a software interface for managing APIs, specifically highlighting the "Employee API" and its operations. It includes sections for inbound processing policies and a banner about accepting client certificates in the consumption tier.](https://kodekloud.com/kk-media/image/upload/v1752866331/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-APIs-by-Using-Certificates/employee-api-management-interface.jpg)
 
 ## Example Policy Implementation
 
@@ -88,7 +88,7 @@ Both examples employ a conditional check using an OR statement to enforce strict
 
 To implement these policies, upload your client certificates into Azure API Management. You can either store the certificates in Azure Key Vault or directly upload them via the Azure portal. Once uploaded, these certificates can be referenced in your API Management policies.
 
-![The image shows a Microsoft Azure portal interface for uploading client certificates in the API Management service, with fields for ID, certificate selection, and password.](../../../../images/kodekloud.com/kk-media/image/upload/v1752866333/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-APIs-by-Using-Certificates/azure-portal-upload-client-certificates.jpg)
+![The image shows a Microsoft Azure portal interface for uploading client certificates in the API Management service, with fields for ID, certificate selection, and password.](https://kodekloud.com/kk-media/image/upload/v1752866333/notes-assets/images/AZ-204-Developing-Solutions-for-Microsoft-Azure-Securing-APIs-by-Using-Certificates/azure-portal-upload-client-certificates.jpg)
 
 By following these steps, you can effectively secure your APIs using certificate-based authentication in Azure API Management, ensuring that your services handle only trusted communications.
 

@@ -14,19 +14,19 @@ This service is ideal for managing large datasets (potentially terabytes of data
 
 Below is a diagram that illustrates the key concepts of Table Storage as a NoSQL data store, showcasing benefits like scalability, simplicity, and efficient querying.
 
-![The image is a diagram explaining "Table Storage" for storing NoSQL data in the cloud, showing how data is organized into containers, files, tables, and queues, with examples of entities. It highlights benefits like handling large data, simplicity, easy querying, and cost-effectiveness.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867127/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/table-storage-nosql-diagram.jpg)
+![The image is a diagram explaining "Table Storage" for storing NoSQL data in the cloud, showing how data is organized into containers, files, tables, and queues, with examples of entities. It highlights benefits like handling large data, simplicity, easy querying, and cost-effectiveness.](https://kodekloud.com/kk-media/image/upload/v1752867127/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/table-storage-nosql-diagram.jpg)
 
 ### Working with Table Storage Using Azure Storage Explorer
 
 1. **Create a Table in Azure Portal**\
    Log in to the Azure portal, navigate to your storage account, and select "Tables." Click "Add a table," provide a unique name (e.g., "customers"), and create the table. Note that clicking on the table name in the portal does not show its data—you need Azure Storage Explorer to view or modify its contents.
 
-![The image shows a Microsoft Azure portal interface displaying a storage account named "eventanalyticsab46" with a table named "customers" successfully created.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867128/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-portal-storage-account-customers.jpg)
+![The image shows a Microsoft Azure portal interface displaying a storage account named "eventanalyticsab46" with a table named "customers" successfully created.](https://kodekloud.com/kk-media/image/upload/v1752867128/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-portal-storage-account-customers.jpg)
 
 2. **Connecting via Azure Storage Explorer**\
    Open Azure Storage Explorer and click on the Connect button. Choose to connect to a storage account using access keys. Retrieve the account name and key from the Azure portal ("Account access keys" section), paste the key into Storage Explorer, and connect. Once connected, navigate to the "Tables" section to find your "customers" table.
 
-![The image shows a Microsoft Azure interface with a pop-up window for connecting to Azure Storage. It includes fields for display name, account name, account key, and storage domain options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867129/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-storage-connection-popup.jpg)
+![The image shows a Microsoft Azure interface with a pop-up window for connecting to Azure Storage. It includes fields for display name, account name, account key, and storage domain options.](https://kodekloud.com/kk-media/image/upload/v1752867129/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-storage-connection-popup.jpg)
 
 3. **Inserting Data into the Table**\
    Within the "customers" table, you work with two default fields: partition key and row key—which function like XY coordinates for fast querying. For example, you might assign the partition key as a country and the row key as a unique user ID.
@@ -51,9 +51,9 @@ Below is a diagram that illustrates the key concepts of Table Storage as a NoSQL
 
 > **lightbulb** New properties (columns) are dynamically added to entities without recreating the table, and a system-maintained "timestamp" is automatically updated.
 
-![The image shows a Microsoft Azure Storage Explorer interface displaying a table named "customers" with a single entry, alongside a list of storage accounts on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867130/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-storage-explorer-customers-table.jpg)
+![The image shows a Microsoft Azure Storage Explorer interface displaying a table named "customers" with a single entry, alongside a list of storage accounts on the left.](https://kodekloud.com/kk-media/image/upload/v1752867130/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-storage-explorer-customers-table.jpg)
 
-![The image shows a Microsoft Azure Storage Explorer interface displaying a table named "customers" with data entries, alongside a list of storage accounts on the left.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867131/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-storage-explorer-customers-table-2.jpg)
+![The image shows a Microsoft Azure Storage Explorer interface displaying a table named "customers" with data entries, alongside a list of storage accounts on the left.](https://kodekloud.com/kk-media/image/upload/v1752867131/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-storage-explorer-customers-table-2.jpg)
 
 4. **Querying Data**\
    Data retrieval is based on the partition and row keys. For instance, you might query all users belonging to the US partition and delete a specific record if necessary. In many real-world applications, such operations are executed via the Azure Storage SDK for tables or through its REST API.
@@ -62,14 +62,14 @@ Below is a diagram that illustrates the key concepts of Table Storage as a NoSQL
 
 Cosmos DB is a fully managed NoSQL database service on Azure that offers enhanced availability options compared to Table Storage. Unlike Table Storage, which uses the storage account's default redundancy, Cosmos DB replicates data across multiple global regions, allowing both read and write operations on any replica.
 
-![The image is a diagram illustrating when to use Azure Cosmos DB, showing its integration with Azure services like App Service, Functions, and Cache for Redis across active and standby regions. It highlights features such as automatic scalability, enterprise-grade security, multi-region replication, and platform management.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867132/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-cosmos-db-integration-diagram.jpg)
+![The image is a diagram illustrating when to use Azure Cosmos DB, showing its integration with Azure services like App Service, Functions, and Cache for Redis across active and standby regions. It highlights features such as automatic scalability, enterprise-grade security, multi-region replication, and platform management.](https://kodekloud.com/kk-media/image/upload/v1752867132/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-cosmos-db-integration-diagram.jpg)
 
 ### Creating a Cosmos DB Account
 
 1. **Account Creation**\
    Create a Cosmos DB account in the Azure portal. Cosmos DB supports six APIs: NoSQL, MongoDB, Apache Cassandra, Table API, Gremlin API, and PostgreSQL. Choose the appropriate API based on your application requirements and skill set. For this lesson, we will use the NoSQL (SQL API).
 
-![The image shows a Microsoft Azure portal page for creating an Azure Cosmos DB account, offering various API options like NoSQL, MongoDB, Apache Cassandra, Table, Apache Gremlin, and PostgreSQL. Each option includes a brief description and buttons to create or learn more.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867133/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-cosmos-db-account-creation.jpg)
+![The image shows a Microsoft Azure portal page for creating an Azure Cosmos DB account, offering various API options like NoSQL, MongoDB, Apache Cassandra, Table, Apache Gremlin, and PostgreSQL. Each option includes a brief description and buttons to create or learn more.](https://kodekloud.com/kk-media/image/upload/v1752867133/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-cosmos-db-account-creation.jpg)
 
 2. **Configuration**
    * Select your subscription and create a new resource group if needed.
@@ -78,11 +78,11 @@ Cosmos DB is a fully managed NoSQL database service on Azure that offers enhance
    * Optionally, apply the free tier discount and configure global distribution settings (geo-redundancy, multi-region writes, availability zones).
    * Configure networking and backup policies based on your application's needs.
 
-![The image shows a Microsoft Azure portal page for creating an Azure Cosmos DB account, with fields for subscription, resource group, account name, location, and capacity mode.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867134/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-cosmos-db-account-creation-2.jpg)
+![The image shows a Microsoft Azure portal page for creating an Azure Cosmos DB account, with fields for subscription, resource group, account name, location, and capacity mode.](https://kodekloud.com/kk-media/image/upload/v1752867134/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-cosmos-db-account-creation-2.jpg)
 
-![The image shows a Microsoft Azure portal page for creating an Azure Cosmos DB account, specifically focusing on the "Global Distribution" settings, with options for enabling or disabling geo-redundancy, multi-region writes, and availability zones.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867135/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-cosmos-db-global-distribution-settings.jpg)
+![The image shows a Microsoft Azure portal page for creating an Azure Cosmos DB account, specifically focusing on the "Global Distribution" settings, with options for enabling or disabling geo-redundancy, multi-region writes, and availability zones.](https://kodekloud.com/kk-media/image/upload/v1752867135/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-cosmos-db-global-distribution-settings.jpg)
 
-![The image shows a Microsoft Azure portal page for creating an Azure Cosmos DB account, specifically focusing on setting the backup policy options. It includes choices for periodic and continuous backup policies, backup intervals, retention, and storage redundancy options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867137/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-cosmos-db-backup-policy.jpg)
+![The image shows a Microsoft Azure portal page for creating an Azure Cosmos DB account, specifically focusing on setting the backup policy options. It includes choices for periodic and continuous backup policies, backup intervals, retention, and storage redundancy options.](https://kodekloud.com/kk-media/image/upload/v1752867137/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-cosmos-db-backup-policy.jpg)
 
 Creation of the account typically takes two to three minutes. Once completed, you can set up a container (similar to a table in Table Storage) to store your data.
 
@@ -92,18 +92,18 @@ Creation of the account typically takes two to three minutes. Once completed, yo
    * Set the throughput (for example, 1000 RU/s) and create a container named "customer" within the "customers" database.
    * Specify a partition key (for instance, using the "ID" field).
 
-![The image shows the Microsoft Azure Data Explorer interface with a welcome message explaining that Azure Cosmos DB is a fully managed NoSQL database service. The interface includes navigation options and learning resources.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867138/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-cosmos-db-data-explorer.jpg)
+![The image shows the Microsoft Azure Data Explorer interface with a welcome message explaining that Azure Cosmos DB is a fully managed NoSQL database service. The interface includes navigation options and learning resources.](https://kodekloud.com/kk-media/image/upload/v1752867138/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-cosmos-db-data-explorer.jpg)
 
-![The image shows a Microsoft Azure Data Explorer interface for a Cosmos DB account, displaying a "ToDoList" database with options for items, stored procedures, and other settings. The main panel suggests creating or working with existing documents.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867139/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-data-explorer-cosmosdb-todolist.jpg)
+![The image shows a Microsoft Azure Data Explorer interface for a Cosmos DB account, displaying a "ToDoList" database with options for items, stored procedures, and other settings. The main panel suggests creating or working with existing documents.](https://kodekloud.com/kk-media/image/upload/v1752867139/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-data-explorer-cosmosdb-todolist.jpg)
 
-![The image shows the Microsoft Azure Data Explorer interface, where a user is setting up a new database with options for database ID, throughput, and autoscale settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867141/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-data-explorer-database-setup.jpg)
+![The image shows the Microsoft Azure Data Explorer interface, where a user is setting up a new database with options for database ID, throughput, and autoscale settings.](https://kodekloud.com/kk-media/image/upload/v1752867141/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-data-explorer-database-setup.jpg)
 
 4. **Data Import Using the Cosmos DB Data Migration Tool**\
    Prepare a JSON file containing customer details and use the Cosmos DB Data Migration Tool provided by Microsoft to import data:
 
    * Add your JSON file.
 
-![The image shows a Microsoft Azure Data Explorer interface with a file explorer window open, displaying a JSON file named "customers" ready to be selected.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867142/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-data-explorer-json-file.jpg)
+![The image shows a Microsoft Azure Data Explorer interface with a file explorer window open, displaying a JSON file named "customers" ready to be selected.](https://kodekloud.com/kk-media/image/upload/v1752867142/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-data-explorer-json-file.jpg)
 
 * Retrieve the primary connection string from the Cosmos DB account's "Keys" section.
 * In the migration tool, enter the connection string, specify the database name ("customers"), container name ("customers"), and the partition key ("ID").
@@ -156,11 +156,11 @@ While Table Storage provides fast access, it does not guarantee strict latency o
 * **Pricing Models:** Offers both consumption-based (serverless) and provisioned capacity models.
 * **SLA:** Guarantees 99.99% availability in single-region accounts and up to 99.999% read availability in multi-region accounts.
 
-![The image is a comparison table highlighting the benefits of moving from Table Storage to Cosmos DB, covering aspects like latency, throughput, global distribution, indexing, query, consistency, pricing, and SLAs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867144/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/table-storage-to-cosmos-db-comparison.jpg)
+![The image is a comparison table highlighting the benefits of moving from Table Storage to Cosmos DB, covering aspects like latency, throughput, global distribution, indexing, query, consistency, pricing, and SLAs.](https://kodekloud.com/kk-media/image/upload/v1752867144/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/table-storage-to-cosmos-db-comparison.jpg)
 
 To enable multi-region replication, access your Cosmos DB account in the Azure portal, add the desired regions, and (if needed) enable availability zones. Be aware that increasing throughput might be required to support multiple regions.
 
-![The image shows a Microsoft Azure portal interface for configuring global data replication in Azure Cosmos DB. It includes a world map with selectable regions and a warning about throughput limits.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867144/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-cosmos-db-replication-portal.jpg)
+![The image shows a Microsoft Azure portal interface for configuring global data replication in Azure Cosmos DB. It includes a world map with selectable regions and a warning about throughput limits.](https://kodekloud.com/kk-media/image/upload/v1752867144/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/azure-cosmos-db-replication-portal.jpg)
 
 ## Choosing the Right Cosmos DB API
 
@@ -181,7 +181,7 @@ When deciding which API to use, consider the following:
 
 The following flowchart outlines the decision-making process for selecting the most appropriate Cosmos DB API based on your requirements:
 
-![The image is a flowchart from KodeKloud titled "Choosing Cosmos DB API," outlining decision paths for migrating or building new applications using various APIs like NoSQL, MongoDB, and PostgreSQL. It guides users based on their optimization needs and existing skills.](../../../../images/kodekloud.com/kk-media/image/upload/v1752867146/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/choosing-cosmos-db-api-flowchart.jpg)
+![The image is a flowchart from KodeKloud titled "Choosing Cosmos DB API," outlining decision paths for migrating or building new applications using various APIs like NoSQL, MongoDB, and PostgreSQL. It guides users based on their optimization needs and existing skills.](https://kodekloud.com/kk-media/image/upload/v1752867146/notes-assets/images/AZ-305-Microsoft-Azure-Solutions-Architect-Expert-Design-for-Cosmos-DB-and-tables/choosing-cosmos-db-api-flowchart.jpg)
 
 ## Conclusion
 

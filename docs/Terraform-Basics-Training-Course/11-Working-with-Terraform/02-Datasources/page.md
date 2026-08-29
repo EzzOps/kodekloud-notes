@@ -95,9 +95,7 @@ After applying these changes, the `/root` directory will properly contain the th
 
 ***
 
-<Callout icon="triangle-alert">
-  Modifying a list that drives the count parameter can lead to resource replacements due to index shifts. This may trigger unwanted service interruptions or data loss if the resources are critical.
-</Callout>
+> **triangle-alert** Modifying a list that drives the count parameter can lead to resource replacements due to index shifts. This may trigger unwanted service interruptions or data loss if the resources are critical.
 
 ## A Pitfall: List Element Removal and Resource Replacement
 
@@ -217,9 +215,7 @@ Practice using the count meta-argument in your Terraform projects to automate re
 
 For more detailed information on Terraform and its resource management, refer to the [Terraform Documentation](https://www.terraform.io/docs).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/7a326097-ef01-44ef-99b1-f4ca9402a910" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/7a326097-ef01-44ef-99b1-f4ca9402a910)
 
 
 # Datasources
@@ -232,15 +228,11 @@ In this lesson, we explore how Terraform utilizes data sources to read informati
 
 For instance, consider a database instance that was manually provisioned in the AWS cloud. Even though Terraform does not manage this resource, it can still read attributes—such as the database name, host address, or DB user details—and use that information to provision an application resource managed by Terraform.
 
-<Frame>
-  ![The image illustrates infrastructure management tools, highlighting Terraform's role in managing real-world infrastructure and state files, alongside other tools like CloudFormation and Ansible.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884244/notes-assets/images/Terraform-Basics-Training-Course-Datasources/frame_50.jpg)
-</Frame>
+![The image illustrates infrastructure management tools, highlighting Terraform's role in managing real-world infrastructure and state files, alongside other tools like CloudFormation and Ansible.](https://kodekloud.com/kk-media/image/upload/v1752884244/notes-assets/images/Terraform-Basics-Training-Course-Datasources/frame_50.jpg)
 
 Now, consider a simpler scenario with a local file resource named "pet" containing the text "We love pets!" When Terraform creates this resource, it generates the file `/root/pets.txt` and stores its information in the state file. Meanwhile, another file—created by an external shell script—is located at `/root/dog.txt` and contains "Dogs are awesome!" Because `dog.txt` is not managed by Terraform, we can use it as a data source to supply content for our managed resource `pets.txt`.
 
-<Callout icon="lightbulb">
-  Data sources in Terraform enable you to use attributes from external resources, integrating them into your Terraform-managed infrastructure.
-</Callout>
+> **lightbulb** Data sources in Terraform enable you to use attributes from external resources, integrating them into your Terraform-managed infrastructure.
 
 Data sources are defined using the `data` block in your configuration. Although these blocks resemble resource blocks, they start with the keyword `data` instead of `resource`. Below is an example configuration that demonstrates this process:
 
@@ -272,9 +264,7 @@ According to the Terraform documentation on the [Terraform Registry](https://reg
 
 This feature allows you to easily integrate external data into your Terraform configurations.
 
-<Frame>
-  ![The image shows a documentation page for a local provider, detailing argument references and exported attributes for reading a file, including filename, content, and base64 encoding.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884245/notes-assets/images/Terraform-Basics-Training-Course-Datasources/frame_210.jpg)
-</Frame>
+![The image shows a documentation page for a local provider, detailing argument references and exported attributes for reading a file, including filename, content, and base64 encoding.](https://kodekloud.com/kk-media/image/upload/v1752884245/notes-assets/images/Terraform-Basics-Training-Course-Datasources/frame_210.jpg)
 
 To clearly distinguish between resources and data sources in Terraform:
 
@@ -285,14 +275,10 @@ To clearly distinguish between resources and data sources in Terraform:
 
 This distinction is further illustrated in the following comparison diagram:
 
-<Frame>
-  ![The image compares Terraform resources and data sources, highlighting their keywords, functions, and alternative names, alongside a "terraform.tfstate" file icon.](../../../../images/kodekloud.com/kk-media/image/upload/v1752884246/notes-assets/images/Terraform-Basics-Training-Course-Datasources/frame_240.jpg)
-</Frame>
+![The image compares Terraform resources and data sources, highlighting their keywords, functions, and alternative names, alongside a "terraform.tfstate" file icon.](https://kodekloud.com/kk-media/image/upload/v1752884246/notes-assets/images/Terraform-Basics-Training-Course-Datasources/frame_240.jpg)
 
 That concludes this article on data sources in Terraform. For further information on utilizing Terraform with external resources, refer to the official [Terraform Documentation](https://www.terraform.io/docs).
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/891baedf-ffb0-4f4c-969f-c9ac9668fedf" />
+- [Watch Video](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/891baedf-ffb0-4f4c-969f-c9ac9668fedf)
 
-  <Card title="Practice Lab" icon="installation" href="https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/0a7ce33b-d179-4a84-ad51-665242858993" />
-</CardGroup>
+  - [Practice Lab](https://learn.kodekloud.com/user/courses/terraform-basics-training-course/module/98de9b33-985e-4ec4-9903-b39856d309e8/lesson/0a7ce33b-d179-4a84-ad51-665242858993)

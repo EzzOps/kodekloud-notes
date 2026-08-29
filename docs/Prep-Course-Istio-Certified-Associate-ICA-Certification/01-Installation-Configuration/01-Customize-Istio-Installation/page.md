@@ -120,9 +120,7 @@ Once the manifest bundle is published, configure your GitOps operator (e.g., Flu
 
 That's all for this lesson.
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/f1ba2352-52cb-4d07-868d-026818023a60" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/gitops-certified-associate-cgoa/module/24630e6a-9f49-42d1-abd0-75bafc02ce01/lesson/f1ba2352-52cb-4d07-868d-026818023a60)
 
 
 # Customize Istio Installation
@@ -137,9 +135,7 @@ You can customize Istio installations instead of relying on the default profile.
   <img alt="The image depicts a table of Istio profiles and their core components, showing different profiles like default, demo, and others with checkmarks indicating their inclusion of specific components like &#x22;istio-egressgateway&#x22; and &#x22;ztunnel.&#x22;" />
 </Frame>
 
-<Callout icon="lightbulb">
-  The `istioctl profile dump` command that produced a ready-to-edit IstioOperator manifest was removed. You now author an IstioOperator manifest yourself to customize an installation. If you need to find an option in the operator schema, consult the Istio Operator reference: [https://istio.io/latest/docs/reference/config/installation-options/](https://istio.io/latest/docs/reference/config/installation-options/)
-</Callout>
+> **lightbulb** The `istioctl profile dump` command that produced a ready-to-edit IstioOperator manifest was removed. You now author an IstioOperator manifest yourself to customize an installation. If you need to find an option in the operator schema, consult the Istio Operator reference: [https://istio.io/latest/docs/reference/config/installation-options/](https://istio.io/latest/docs/reference/config/installation-options/)
 
 Below are practical examples and a recommended workflow for customizing Istio with an IstioOperator manifest, patch overlays, resource overrides, and Helm alternatives.
 
@@ -365,9 +361,7 @@ helm show values istio/gateway > istio_gateway.yaml
 
 After editing values files, apply changes with `helm upgrade`.
 
-<Callout icon="warning">
-  Be careful when running `istioctl uninstall --purge`. This removes Istio resources and CRDs and can destroy stored configuration and telemetry. Always back up important configuration before purging.
-</Callout>
+> **warning** Be careful when running `istioctl uninstall --purge`. This removes Istio resources and CRDs and can destroy stored configuration and telemetry. Always back up important configuration before purging.
 
 ## Upgrade and uninstall
 

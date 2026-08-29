@@ -15,9 +15,7 @@ To install the Job Restrictions plugin:
 3. Find and install the **Job Restrictions** plugin.
 4. Restart Jenkins after the installation is complete.
 
-<Frame>
-  ![The image shows a Jenkins interface displaying the download progress of plugins, with some tasks marked as successful and others pending. The sidebar includes options like updates, available plugins, and advanced settings.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879665/notes-assets/images/Jenkins-Pipelines-Job-Restrictions/jenkins-plugin-download-progress-interface.jpg)
-</Frame>
+![The image shows a Jenkins interface displaying the download progress of plugins, with some tasks marked as successful and others pending. The sidebar includes options like updates, available plugins, and advanced settings.](https://kodekloud.com/kk-media/image/upload/v1752879665/notes-assets/images/Jenkins-Pipelines-Job-Restrictions/jenkins-plugin-download-progress-interface.jpg)
 
 ## Configuring Job Restrictions on a Node
 
@@ -36,17 +34,11 @@ Dasher_.*
 
 This pattern ensures that only jobs beginning with "Dasher\_" are permitted on the node. Save the configuration after adding this restriction.
 
-<Callout icon="lightbulb">
-  You can combine conditions using AND, OR, or NOT operators for finer control. For instance, you might require that a job name follows a certain pattern or is triggered by a specific user.
-</Callout>
+> **lightbulb** You can combine conditions using AND, OR, or NOT operators for finer control. For instance, you might require that a job name follows a certain pattern or is triggered by a specific user.
 
-<Frame>
-  ![The image shows a Jenkins configuration screen with options for setting the number of executors and usage restrictions. A dropdown menu is open, displaying various job restriction options.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879667/notes-assets/images/Jenkins-Pipelines-Job-Restrictions/jenkins-configuration-executors-dropdown.jpg)
-</Frame>
+![The image shows a Jenkins configuration screen with options for setting the number of executors and usage restrictions. A dropdown menu is open, displaying various job restriction options.](https://kodekloud.com/kk-media/image/upload/v1752879667/notes-assets/images/Jenkins-Pipelines-Job-Restrictions/jenkins-configuration-executors-dropdown.jpg)
 
-<Frame>
-  ![The image shows a Jenkins configuration screen for a node, with options for build executor status, node properties, and job restrictions using a regular expression.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879668/notes-assets/images/Jenkins-Pipelines-Job-Restrictions/jenkins-node-configuration-screen.jpg)
-</Frame>
+![The image shows a Jenkins configuration screen for a node, with options for build executor status, node properties, and job restrictions using a regular expression.](https://kodekloud.com/kk-media/image/upload/v1752879668/notes-assets/images/Jenkins-Pipelines-Job-Restrictions/jenkins-node-configuration-screen.jpg)
 
 ## Testing the Restriction
 
@@ -57,9 +49,7 @@ Once configured, return to the Jenkins dashboard to test the plugin by triggerin
 
 Since the job name does not start with "Dasher\_", it will remain in a pending state and will not start automatically.
 
-<Frame>
-  ![The image shows a Jenkins dashboard for a project named "npm-version-test," displaying build history and permalinks for recent builds. The sidebar includes options like Workspace, Build Now, and Configure.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879669/notes-assets/images/Jenkins-Pipelines-Job-Restrictions/jenkins-dashboard-npm-version-test.jpg)
-</Frame>
+![The image shows a Jenkins dashboard for a project named "npm-version-test," displaying build history and permalinks for recent builds. The sidebar includes options like Workspace, Build Now, and Configure.](https://kodekloud.com/kk-media/image/upload/v1752879669/notes-assets/images/Jenkins-Pipelines-Job-Restrictions/jenkins-dashboard-npm-version-test.jpg)
 
 ## Creating a Job That Meets the Restriction
 
@@ -72,9 +62,7 @@ After saving the job, trigger the build. Because the job name starts with "Dashe
 
 Once verified, you might consider adding further conditions, such as restricting execution by user ID. For example, you can configure the node to also require that the job is triggered by a user with the ID "Emma".
 
-<Frame>
-  ![The image shows a Jenkins configuration screen for a built-in node, with options for usage, node properties, and job restrictions using a regular expression. The "Restrict jobs execution at node" option is checked, and a regular expression is being entered.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879671/notes-assets/images/Jenkins-Pipelines-Job-Restrictions/jenkins-node-configuration-screen-2.jpg)
-</Frame>
+![The image shows a Jenkins configuration screen for a built-in node, with options for usage, node properties, and job restrictions using a regular expression. The "Restrict jobs execution at node" option is checked, and a regular expression is being entered.](https://kodekloud.com/kk-media/image/upload/v1752879671/notes-assets/images/Jenkins-Pipelines-Job-Restrictions/jenkins-node-configuration-screen-2.jpg)
 
 To enforce multiple conditions:
 
@@ -83,26 +71,18 @@ To enforce multiple conditions:
 | Job Name Restriction           | Regular Expression: `Dasher_.*` | Ensures job names start with "Dasher\_"                 |
 | User ID Restriction (Optional) | Specific User: "Emma"           | Only allows jobs triggered by "Emma" to run on the node |
 
-<Frame>
-  ![The image shows a Jenkins configuration screen for a built-in node, with options for restricting job execution and a dropdown menu for job restrictions.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879672/notes-assets/images/Jenkins-Pipelines-Job-Restrictions/jenkins-configuration-built-in-node.jpg)
-</Frame>
+![The image shows a Jenkins configuration screen for a built-in node, with options for restricting job execution and a dropdown menu for job restrictions.](https://kodekloud.com/kk-media/image/upload/v1752879672/notes-assets/images/Jenkins-Pipelines-Job-Restrictions/jenkins-configuration-built-in-node.jpg)
 
 Save your configurations. Now, if you trigger a job that does not satisfy at least one of these conditions—for example, a job not initiated by "Emma" or having an incorrect name—it will remain in a pending state. When logged in as "Emma", the job should execute as expected.
 
 Finally, verify the setup using the OR condition by revisiting **Manage Jenkins** > **Nodes** > **Configure**.
 
-<Frame>
-  ![The image shows a Jenkins configuration screen for a built-in node, with options for restricting job execution using regular expressions and user IDs.](../../../../images/kodekloud.com/kk-media/image/upload/v1752879673/notes-assets/images/Jenkins-Pipelines-Job-Restrictions/jenkins-configuration-built-in-node-2.jpg)
-</Frame>
+![The image shows a Jenkins configuration screen for a built-in node, with options for restricting job execution using regular expressions and user IDs.](https://kodekloud.com/kk-media/image/upload/v1752879673/notes-assets/images/Jenkins-Pipelines-Job-Restrictions/jenkins-configuration-built-in-node-2.jpg)
 
 This configuration demonstrates how the Job Restrictions plugin can secure your Jenkins environment by combining multiple conditions to control job execution.
 
-<Callout icon="lightbulb">
-  The Job Restrictions plugin empowers you to enforce stringent execution conditions, allowing only jobs that meet specific criteria to run on designated nodes. This enhances both workflow control and overall security in your Jenkins setup.
-</Callout>
+> **lightbulb** The Job Restrictions plugin empowers you to enforce stringent execution conditions, allowing only jobs that meet specific criteria to run on designated nodes. This enhances both workflow control and overall security in your Jenkins setup.
 
 That concludes our lesson on using the Job Restrictions plugin in Jenkins. Happy building!
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/f046d5d1-6fa6-4156-b38d-202ed885b64d/lesson/1fba91c5-e806-4227-9c47-b4758b7902c8" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/jenkins-pipelines/module/f046d5d1-6fa6-4156-b38d-202ed885b64d/lesson/1fba91c5-e806-4227-9c47-b4758b7902c8)

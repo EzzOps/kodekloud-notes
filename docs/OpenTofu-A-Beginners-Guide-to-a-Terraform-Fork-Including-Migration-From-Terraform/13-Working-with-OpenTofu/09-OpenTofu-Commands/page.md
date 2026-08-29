@@ -38,9 +38,7 @@ Here, each instance tag is assigned by its `count.index`:
 * `count.index = 1` → `Name = "web2"`
 * `count.index = 2` → `Name = "web3"`
 
-<Callout icon="triangle-alert">
-  Removing or reordering items in the `webservers` list causes all subsequent resources to be reindexed. This can lead to unintended in-place updates instead of only removing the orphaned resource.
-</Callout>
+> **triangle-alert** Removing or reordering items in the `webservers` list causes all subsequent resources to be reindexed. This can lead to unintended in-place updates instead of only removing the orphaned resource.
 
 Example plan when deleting `"web1"`:
 
@@ -101,9 +99,7 @@ This ensures stable resource addressing and prevents unnecessary updates.
 * [Terraform `count` Meta-Argument](https://developer.hashicorp.com/terraform/meta-arguments/count)
 * [Terraform `for_each` Meta-Argument](https://developer.hashicorp.com/terraform/meta-arguments/for_each)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/c0fe2879-c597-4c61-857d-cc2debd2f337" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/c0fe2879-c597-4c61-857d-cc2debd2f337)
 
 
 # OpenTofu Commands
@@ -136,9 +132,7 @@ $ tofu validate
 Success! The configuration is valid.
 ```
 
-<Callout icon="lightbulb">
-  When validation fails, OpenTofu highlights the incorrect attribute. For example, replace `file permission` with `file_permission` to match HCL naming conventions.
-</Callout>
+> **lightbulb** When validation fails, OpenTofu highlights the incorrect attribute. For example, replace `file permission` with `file_permission` to match HCL naming conventions.
 
 ```hcl theme={null}
 resource "local_file" "pet" {
@@ -264,13 +258,11 @@ digraph {
 }
 ```
 
-<Callout icon="lightbulb">
-  Save the DOT output (e.g., `graph.dot`) and render it with:
+> **lightbulb** Save the DOT output (e.g., `graph.dot`) and render it with:
 
   ```bash theme={null}
   dot -Tpng graph.dot -o graph.png
   ```
-</Callout>
 
 ## References
 
@@ -278,6 +270,4 @@ digraph {
 * [HCL Language Guide](https://github.com/hashicorp/hcl)
 * [GraphViz](https://graphviz.org)
 
-<CardGroup>
-  <Card title="Watch Video" icon="video" href="https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/4cf2f489-9c9f-4ede-99d6-5cdfa7df908e" />
-</CardGroup>
+- [Watch Video](https://learn.kodekloud.com/user/courses/opentofu-a-beginners-guide-to-a-terraform-fork-including-migration-from-terraform/module/69432d48-55d0-4340-a56d-9f9a7819d26c/lesson/4cf2f489-9c9f-4ede-99d6-5cdfa7df908e)
